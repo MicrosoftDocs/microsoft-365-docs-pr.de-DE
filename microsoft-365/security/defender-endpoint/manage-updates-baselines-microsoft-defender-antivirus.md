@@ -8,18 +8,20 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: normal
+audience: ITPro
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b70cf96cde7d4dff8e2a4db6ce2469090dba7eb1
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: ae17aa6e2cb0cefd460ef0db0730570af8c84bb8
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765611"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995033"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Verwalten von Microsoft Defender Antivirus-Updates und Anwenden von Basiswerten
 
@@ -34,7 +36,8 @@ Es gibt zwei Arten von Updates im Zusammenhang mit der Aktualisierung von Micros
 - Produktupdates
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus auf dem neuesten Stand zu halten, ist wichtig, um sicherzustellen, dass Ihre Geräte über die neuesten Technologien und Features verfügen, die zum Schutz vor neuer Schadsoftware und Angriffstechniken erforderlich sind.  
+> Microsoft Defender Antivirus auf dem neuesten Stand zu halten, ist wichtig, um sicherzustellen, dass Ihre Geräte über die neuesten Technologien und Features verfügen, die zum Schutz vor neuer Schadsoftware und Angriffstechniken erforderlich sind.
+> 
 > Achten Sie darauf, Ihren Antivirenschutz zu aktualisieren, auch wenn Microsoft Defender Antivirus im [passiven Modus ausgeführt wird.](./microsoft-defender-antivirus-compatibility.md)
 > 
 > Informationen zum aktuellen Modul, zur Plattform und zum Signaturdatum finden Sie unter [Security Intelligence updates for Microsoft Defender Antivirus and other Microsoft anmalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
@@ -147,7 +150,7 @@ Nachdem eine neue Paketversion veröffentlicht wurde, wird die Unterstützung f�
 &ensp;Veröffentlicht: **03. Dezember 2020**  
 &ensp;Plattform: **4.18.2011.6**  
 &ensp;Modul: **1.1.17700.4**  
-&ensp;Supportphase: **Sicherheits- und kritische Updates**
+&ensp;Supportphase: **Support für technische Upgrades (nur)**
     
 ### <a name="whats-new"></a>Neuerungen
 
@@ -163,7 +166,7 @@ Keine bekannten Probleme
 &ensp;Veröffentlicht: **29. Oktober 2020**  
 &ensp;Plattform: **4.18.2010.7**  
 &ensp;Modul: **1.1.17600.5**  
-&ensp;Supportphase: **Sicherheits- und kritische Updates**
+&ensp;Supportphase: **Support für technische Upgrades (nur)**
     
 ### <a name="whats-new"></a>Neuerungen
 
@@ -565,5 +568,5 @@ Weitere Informationen finden Sie unter [Microsoft Defender update for Windows op
 |[Verwalten, wie Schutzupdates heruntergeladen und angewendet werden](manage-protection-updates-microsoft-defender-antivirus.md) | Schutzupdates können über viele Quellen zugestellt werden. |
 |[Verwalten, wann Schutzupdates heruntergeladen und angewendet werden sollen](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Sie können planen, wann Schutzupdates heruntergeladen werden sollen. |
 |[Verwalten von Updates für veraltete Endpunkte](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Wenn ein Endpunkt ein Update oder einen geplanten Scan verpasst, können Sie ein Update erzwingen oder bei der nächsten Benutzeran meldet. |
-|[Verwalten ereignisbasierter erzwungener Updates](manage-event-based-updates-microsoft-defender-antivirus.md) | Sie können festlegen, dass Schutzupdates beim Start oder nach bestimmten in der Cloud übermittelten Schutzereignissen heruntergeladen werden. |
-|[Verwalten von Updates für mobile Geräte und virtuelle Computer (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Sie können Einstellungen angeben, z. B. ob Updates für die Akkuleistung erfolgen sollen, die besonders für mobile Geräte und virtuelle Computer nützlich sind. |
+|[Verwalten von ereignisbasierten erzwungenen Updates](manage-event-based-updates-microsoft-defender-antivirus.md) | Sie können festlegen, dass Schutzupdates beim Start oder nach bestimmten in der Cloud übermittelten Schutzereignissen heruntergeladen werden. |
+|[Verwalten von Updates für Mobilgeräte und virtuelle Computer (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)| Sie können Einstellungen angeben, z. B. ob Updates für die Akkuleistung erfolgen sollen, die besonders für mobile Geräte und virtuelle Computer nützlich sind. |

@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Grundlegende Mobilität und Sicherheit können Ihnen dabei helfen, mobile Geräte zu sichern und zu verwalten.
-ms.openlocfilehash: 468f06edf16eb6ea00fd4d26c716bc145474dd25
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 60de4e3f36427a69ecf0bf52e5dfd34f089991f3
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904276"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994973"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Funktionen von grundlegender Mobilität und Sicherheit
 
@@ -47,11 +47,9 @@ Sie können basic Mobility and Security verwenden, um die folgenden Geräte zu s
 
 <sup>1</sup> Die Zugriffssteuerung für Windows 8.1 RT-Geräte ist auf Exchange ActiveSync.
 
-<sup>2</sup> Die Zugriffssteuerung für Windows 8.1 RT-Geräte ist auf Exchange ActiveSync.
-Die Zugriffssteuerung für Windows 10 erfordert ein Abonnement, das Azure AD Premium enthält und das Gerät mit Azure Active Directory verbunden werden muss.
+<sup>2</sup> Die Zugriffssteuerung für Windows 10 erfordert ein Abonnement, das Azure AD Premium enthält und das Gerät mit Azure Active Directory verbunden werden muss.
 
-<sup>3</sup> Die Zugriffssteuerung für Windows 8.1 RT-Geräte ist auf Exchange ActiveSync.
-Nach Juni 2020 können Android-Versionen nach 9 keine Kennworteinstellungen mehr verwalten, außer auf Samsung -Knox-Geräten.
+<sup>3</sup> Nach Juni 2020 können Android-Versionen nach 9 keine Kennworteinstellungen mehr verwalten, außer auf Samsung -Knox-Geräten.
 
 >[!NOTE]
 >Geräte, die bereits mit früheren Betriebssystemversionen registriert wurden, funktionieren weiterhin, obwohl sich die Funktionen ohne vorherige Ankündigung ändern können.
@@ -62,10 +60,10 @@ Wenn Personen in Ihrer Organisation mobile Geräte verwenden, die von Basic Mobi
 
 Die unterstützten Apps für die verschiedenen Typen von mobilen Geräten in der folgenden Tabelle forderten Benutzer auf, sich bei Basic Mobility and Security zu registrieren, wenn es eine neue Verwaltungsrichtlinie für mobile Geräte gibt, die auf das Gerät eines Benutzers angewendet wird und der Benutzer das Gerät noch nicht registriert hat. Wenn das Gerät eines Benutzers einer Richtlinie nicht entspricht, wird einem Benutzer je nach Einrichtung der Richtlinie möglicherweise der Zugriff auf Microsoft 365-Ressourcen in diesen Apps blockiert, oder er hat möglicherweise Zugriff, microsoft 365 meldet jedoch einen Richtlinienverstoß.
 
-|**Produkt**|**iOS 10.0 oder höher**|**Android 5.0 oder höher**|
+|**Product**|**iOS 10.0 oder höher**|**Android 5.0 oder höher**|
 |:-----|:-----|:-----|
 |**Exchange** Exchange ActiveSync enthält integrierte E-Mail- und Drittanbieter-Apps wie TouchDown, die Exchange ActiveSync Version 14.1 oder höher verwenden. |E-Mail |E-Mail senden |
-|**Office**   und  **OneDrive for Business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**Auf Smartphones und Tablets:**<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Nur auf Telefonen:** <br/> Office Mobile |
+|**Office**   und  **OneDrive for Business** |Outlook </br>Microsoft OneDrive-App </br>Word </br>Excel </br>PowerPoint|**Auf Smartphones und Tablets:**<br/>Outlook <br/> Microsoft OneDrive-App <br/> Word <br/> Excel <br/> PowerPoint <br/> **Nur auf Telefonen:** <br/> Office Mobile |
 
 >[!NOTE]
 - >Die Unterstützung für iOS 10.0 und höher umfasst iPhone- und iPad-Geräte.

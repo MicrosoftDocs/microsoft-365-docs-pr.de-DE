@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: 121f2059e4a13684169ab40b7bfdaae13ef6045e
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
-ms.translationtype: HT
+ms.openlocfilehash: 8e3e6fb228445823481b52d27e5a7b6c623349e2
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899248"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995021"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktionen während der Migrationsphasen und Auswirkungen für die Migration von Microsoft Cloud Deutschland
 
@@ -195,7 +195,7 @@ Um mehr über die Unterschiede zwischen Organisationen bei der Migration und nac
 
 **Gilt für:** Alle Kunden, die Exchange Online verwenden<br>
 
-Die Backend-Funktionen von Exchange Online Protection (EOP) werden in die neue Region "Deutschland" kopiert. Exchange Online ermöglicht das Routing von externen Hosts zu Office 365, und historielle Mandantendetails werden migriert, was auch Back-End-Dienste für Sicherheits- und Compliancefeatures umfasst.
+Die Backend-Funktionen von Exchange Online Protection (EOP) werden in die neue Region "Deutschland" kopiert. Exchange Online ermöglicht das Routing von externen Hosts zu Office 365, und historische Mandantendetails werden migriert, was auch Back-End-Dienste für Sicherheits- und Compliancefeatures umfasst.
 
 Kunden, die nur Exchange Online-Funktionen verwenden (Nichthybrid), müssen zu diesem Zeitpunkt nicht aufpassen.
 
@@ -226,6 +226,7 @@ In dieser Phase wird Skype for Business zu Microsoft Teams migriert. Bestehende 
 - Kontakte und Besprechungen werden zu Microsoft Teams migriert.
 - Benutzer können sich während der Umstellung von Diensten auf Office 365-Dienste nicht in Skype for Business anmelden und auch nicht, bevor die Kunden-DNS-Einträge abgeschlossen sind.
 - Kontakte und bestehende Besprechungen werden weiterhin als Skype for Business-Besprechungen funktionieren.
+- Die Webbrowserversion von Microsoft Teams funktioniert nach Abschluss von Phase 9 nicht mehr.
 
 Wenn Sie nach Abschluss der Migrationsphase 9 eine Verbindung mit Skype for Business Online mit PowerShell herstellen müssen, verwenden Sie den folgenden PowerShell-Code, um eine Verbindung herzustellen:
 

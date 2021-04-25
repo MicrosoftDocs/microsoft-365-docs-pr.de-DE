@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 5175d630dd5d80b62451b3a1eafc4c2f6350ac32
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 71c2391361c645d26cdaddff0bff86796da50391
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876337"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995081"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Behandeln von Leistungsproblemen im Zusammenhang mit dem Echtzeitschutz
 
@@ -33,7 +33,7 @@ ms.locfileid: "51876337"
 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2146631)
  
-Wenn ihr System eine hohe CPU-Auslastung oder Leistungsprobleme im Zusammenhang mit dem Echtzeitschutzdienst in Microsoft Defender for Endpoint hat, können Sie ein Ticket an den Microsoft-Support übermitteln. Führen Sie die Schritte unter [Sammeln von Microsoft Defender AV-Diagnosedaten aus.](/collect-diagnostic-data.md)
+Wenn ihr System eine hohe CPU-Auslastung oder Leistungsprobleme im Zusammenhang mit dem Echtzeitschutzdienst in Microsoft Defender for Endpoint hat, können Sie ein Ticket an den Microsoft-Support übermitteln. Führen Sie die Schritte unter [Sammeln von Microsoft Defender Antivirus-Diagnosedaten aus.](collect-diagnostic-data.md)
 
 Als Administrator können Sie diese Probleme auch selbst beheben. 
 
@@ -132,7 +132,6 @@ Process Monitor (ProcMon) ist ein erweitertes Überwachungstool, das Echtzeitpro
  
     >[!TIP] 
     >Warten Sie, bis das Problem vollständig reproduziert ist, und notieren Sie sich den Zeitstempel, als die Ablaufverfolgung gestartet wurde.
-    
 
 10. Sobald Sie während der hohen CPU-Auslastung zwei bis vier Minuten Prozessaktivität haben, beenden Sie die Aufnahme, indem Sie das Vergrößerungsglassymbol auswählen.
 
@@ -221,7 +220,7 @@ Alternativ können Sie auch das Befehlszeilentool *wpr.exe* verwenden, das in Wi
     >[!TIP]
     >Halten Sie die Datensammlung auf nicht länger als fünf Minuten. Zwei bis drei Minuten sind ein guter Bereich, da viele Daten gesammelt werden.
 
-12. Klicken Sie auf **Speichern**.
+12. Wählen Sie **Speichern** aus.
 
     ![Speichern auswählen](images/wpr-10.png)
 
@@ -230,7 +229,7 @@ Alternativ können Sie auch das Befehlszeilentool *wpr.exe* verwenden, das in Wi
     ![Ausfüllen von Details](images/wpr-12.png)
 
     1. Wählen **Sie Dateiname:** aus, um zu bestimmen, wo Ihre Ablaufverfolgungsdatei gespeichert wird. Standardmäßig wird 1.is `%user%\Documents\WPR Files\` gespeichert.
-    1. Klicken Sie auf **Speichern**.
+    1. Wählen Sie **Speichern** aus.
 
 14. Warten Sie, während die Ablaufverfolgung zusammengeführt wird.
 
@@ -250,7 +249,7 @@ Das Befehlszeilentool *wpr.exe* Teil des Betriebssystems ab Windows 8. So erfass
 
 1. Laden **[Sie Microsoft Defender for Endpoint-Analyseprofil](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** für Leistungsverfolgungen in eine Datei mit dem Namen in einem lokalen Verzeichnis wie `WD.wprp` `C:\traces` herunter.
 
-3. Klicken Sie mit der **rechten** Maustaste auf das Symbol Startmenü, und wählen Sie **Windows Powershell (Admin)** oder Eingabeaufforderung **(Administrator)** aus, um ein Eingabeaufforderungsfenster für Administratoren zu öffnen.
+3. Klicken Sie mit der rechten **Maustaste** auf das **Symbol Startmenü, und wählen Windows PowerShell (Administrator)** oder Eingabeaufforderung **(Administrator)** aus, um ein Eingabeaufforderungsfenster für Administratoren zu öffnen.
 
 4. Wenn das Dialogfeld Benutzerkontensteuerung angezeigt wird, wählen Sie **Ja aus.**
 
@@ -280,5 +279,5 @@ Das Befehlszeilentool *wpr.exe* Teil des Betriebssystems ab Windows 8. So erfass
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Sammeln von Microsoft Defender AV-Diagnosedaten](collect-diagnostic-data.md)
+- [Sammeln von Microsoft Defender Antivirus-Diagnosedaten](collect-diagnostic-data.md)
 - [Konfigurieren und Überprüfen von Ausschlüssen für Microsoft Defender Antivirus-Scans](configure-exclusions-microsoft-defender-antivirus.md)

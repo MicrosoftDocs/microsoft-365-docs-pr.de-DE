@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: edbabf83c7bf1ac8dbe1ca9451ad191b45a862ac
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: a1e07ac2e2e544605f04e9090177004db64d2f04
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932727"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994997"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Neues in Microsoft Defender for Endpoint auf Mac
 
@@ -38,10 +38,14 @@ ms.locfileid: "51932727"
 > [!IMPORTANT]
 > Unter macOS 11 (Big Sur) erfordert Microsoft Defender for Endpoint zusätzliche Konfigurationsprofile. Wenn Sie ein vorhandenes Kunden-Upgrade von früheren Versionen von macOS sind, stellen Sie sicher, dass Sie die zusätzlichen Konfigurationsprofile bereitstellen, die auf dieser [Seite aufgeführt sind.](mac-sysext-policies.md)
 
+## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0)
+
+- Fix, um den Ablauf des Apple-Zertifikats für macOS Catalina und früher zu verwenden. Mit diesem Fix wird die & (Vulnerability Management, TVM) von Bedrohungen wiederhergestellt.
+
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0)
 
 - Microsoft Defender for Endpoint auf macOS ist jetzt in der Vorschau für Us Government-Kunden verfügbar. Weitere Informationen finden Sie unter [Microsoft Defender for Endpoint for US Government customers](gov.md).
-- Leistungsverbesserungen (insbesondere für die Situation, in der die & verwendet wird) & Fehlerbehebungen
+- Leistungsverbesserungen (insbesondere für die Situation, in der die & verwendet wird) & Fehlerbehebungen.
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
 

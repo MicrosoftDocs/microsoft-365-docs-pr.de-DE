@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Übersicht über die Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
-ms.openlocfilehash: 99c05c18f3825680824854f86e469ab4aa8bbcba
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: c3ce053ecc859d3ac0cf53b0a132a7032ce6a87a
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860863"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994677"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Netzwerkkonnektivität im Microsoft 365 Admin Center (Vorschau)
 
@@ -152,7 +152,9 @@ Die Zusammenfassungsseite des Standorts zeigt außerdem die Netzwerkbewertung de
 
 Vergleiche zwischen Kunden in derselben Stadt basieren auf der Erwartung, dass alle Kunden gleichen Zugriff auf Netzwerkdienstanbieter, Telekommunikationsinfrastruktur und in der Nähe von Microsoft-Netzwerkpunkten haben.
 
-Auf der Registerkarte Details auf der Seite Bürostandort werden die spezifischen Messergebnisse angezeigt, die verwendet wurden, um Einblicke, Empfehlungen und die Netzwerkbewertung zu erhalten. Dies wird bereitgestellt, damit Netzwerktechniker die Empfehlungen überprüfen und alle Einschränkungen oder Besonderheiten in ihrer Umgebung überprüfen können.
+Ortsnamen können angepasst werden, wenn ein neuer Speicherort hinzugefügt oder ein vorhandener Speicherort im Standortf flyout bearbeitet wird. Dies bietet Ihnen die Flexibilität, Ihre Standortnamen jederzeit anzupassen. Darüber hinaus wird beim Hinzufügen von LAN-Subnetzen direkt im Standortf flyout eine Dropdownliste mit soft-abgestimmten LAN-Subnetzen angezeigt, aus denen Sie auswählen können. Leitungsnamen für bestimmte Office-Ausgangs-IP-Adressen können ebenfalls hinzugefügt und bearbeitet werden.
+
+Auf der Registerkarte Details auf der Seite Bürostandort werden die spezifischen Messergebnisse angezeigt, die verwendet wurden, um Einblicke, Empfehlungen und die Netzwerkbewertung zu erhalten. Dies wird bereitgestellt, damit Netzwerktechniker die Empfehlungen überprüfen und alle Einschränkungen oder Besonderheiten in ihrer Umgebung überprüfen können. Außerdem finden Sie die geschätzte Anzahl von Benutzern für die gesammelten Beispiele an diesem Bürostandort sowie die Remotemitarbeiter in dieser Stadt.
 
 > [!div class="mx-imgBorder"]
 > ![Standortspezifische Details](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)

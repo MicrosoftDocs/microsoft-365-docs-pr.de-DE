@@ -19,12 +19,12 @@ description: Erfahren Sie, wie EOP und Office 365 Sie mit Spam, Phishing und Sch
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1820cab63abbbac09aa60a9c1684f3672882451
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 659a83c73b4fef9097aa317332c9951d53b09a33
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205663"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994985"
 ---
 # <a name="safety-tips-in-email-messages"></a>Sicherheitstipps in E-Mail-Nachrichten
 
@@ -55,6 +55,6 @@ Der Sicherheitstipp – eine farblich codierte Nachricht – warnt Sie vor poten
 
 ## <a name="working-with-safety-tips"></a>Arbeiten mit Sicherheitstipps
 
-Sicherheitstipps sind für Outlook im Web immer aktiviert, auch wenn nicht jede Nachricht eine erhält. Administratoren können Sicherheitstipps für andere E-Mail-Clients wie Outlook deaktivieren. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
+Administratoren können Sicherheitstipps in Antispamrichtlinien aktivieren oder deaktivieren. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
 
 Wenn Sie nicht damit einverstanden sind, wie EOP eine Nachricht kategorisiert hat (d. h., die Nachricht ist kein Spam oder sie sollte als Spam gekennzeichnet sein), können Sie die Nachrichten zur Analyse an Microsoft übermitteln, um Ihre Erfahrung zu verbessern. Anweisungen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md). Sie können auch auf den Link Feedback im Sicherheitstipp klicken, um Kommentare direkt an Microsoft zu übermitteln, um uns bei der Verbesserung zu helfen.
