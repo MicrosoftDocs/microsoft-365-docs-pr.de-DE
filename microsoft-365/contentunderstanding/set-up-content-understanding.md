@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Einrichten des Inhaltsverständnisses in Projekt Cortex
-ms.openlocfilehash: cc6fbfbfc130cc6e64b5d7c30e0a9db5f39036ac
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2f9fd4e035152a127f9f1c254f4c489a6ca4c976
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051567"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994701"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Einrichten von SharePoint Syntex
 
@@ -59,6 +59,8 @@ Wenn Sie 300 oder mehr SharePoint Syntex-Lizenzen für SharePoint Syntex in Ihre
 
 Sie können die für Sie geeignete KI-Generator-Kapazität mit dem [KI-Generator-Rechner](https://powerapps.microsoft.com/ai-builder-calculator) abschätzen.
 
+Wenn Sie planen, eine benutzerdefinierte Power Platform-Umgebung zu verwenden, [weisen Sie dieser Umgebung Guthaben zu](/power-platform/admin/capacity-add-on).
+
 Wechseln Sie zum [Power Platform Admin Center](https://admin.powerplatform.microsoft.com/resources/capacity), um Ihre Punkte und deren Nutzung zu überprüfen.
 
 ## <a name="to-set-up-sharepoint-syntex"></a>So richten Sie SharePoint Syntex ein
@@ -80,11 +82,21 @@ Wechseln Sie zum [Power Platform Admin Center](https://admin.powerplatform.micro
       - **Keine SharePoint-Bibliotheken**, wenn Sie die Option nicht auf Websites verfügbar machen möchten (Sie können dies nach der Einrichtung ändern).
 
    > [!div class="mx-imgBorder"]
-   > ![Konfigurieren der Formularverarbeitung](../media/content-understanding/admin-configforms.png)
+   > ![Konfigurieren der Websiteoptionen für die Formularverarbeitung](../media/content-understanding/admin-configforms.png)
 
    > [!Note]
    > Wenn Sie eine Website entfernen, nachdem sie hinzugefügt wurde, hat dies keine Auswirkung auf vorhandene Modelle, die auf die Bibliotheken auf dieser Website angewendet werden, oder die Möglichkeit, Dokumentverständnismodelle auf eine Bibliothek anzuwenden. 
     
+    Wenn Sie mehrere Power Platform-Umgebungen konfiguriert haben, können Sie wählen, welche Sie für die Formularverarbeitung verwenden möchten. (Diese Option wird nicht angezeigt, wenn Sie nur eine Umgebung konfiguriert haben).
+
+    ![Konfigurieren der Power Platform-Optionen für die Formularverarbeitung](../media/content-understanding/setup-power-platform-env.png)
+
+    Für **Power Platform-Umgebung** können Sie wählen:
+    - **Standardumgebung verwenden**, um Ihre standardmäßige Power Platform-Umgebung zu verwenden.
+    - **Benutzerdefinierte Umgebung verwenden**, um eine benutzerdefinierte Umgebung zu verwenden. Wählen Sie die zu verwendende Umgebung aus der Liste aus. Sie müssen die App *KI-Generator für Project Cortex* in dieser Umgebung installieren und ihr KI-Generator-Guthaben zuweisen, bevor Sie Modelle zur Formularverarbeitung erstellen können.
+
+    Klicken Sie auf **Weiter**.
+
 5. Auf der Seite **Inhaltscenter erstellen** können Sie eine Website im SharePoint-Inhaltscenter erstellen, auf der Ihre Benutzer Modelle zum Dokumentverständnis erstellen und verwalten können.
 
     1. Geben Sie für den **Websitenamen** den Namen ein, den Sie Ihrer Inhaltscenter-Website zuweisen möchten.
@@ -126,3 +138,5 @@ So weisen Sie Lizenzen zu
 [Übersicht über das Formularverarbeitungsmodell](/ai-builder/form-processing-model-overview)
 
 [Schrittweise Anleitung zum Erstellen eines Modells für das Dokumentverständnis (Video)](https://www.youtube.com/watch?v=DymSHObD-bg)
+
+[Erstellen und Verwalten von Umgebungen im Power Platform Admin Center](/power-platform/admin/create-environment)
