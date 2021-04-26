@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Häufig gestellte Fragen zu Basic Mobility and Security.
-ms.openlocfilehash: a538c0b3f9fa6a4bf1861734fc9dea94030760a3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 14e12678ec210325f63914594fb6debcf7abb880
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906264"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023893"
 ---
 # <a name="basic-mobility-and-security-frequently-asked-questions-faq"></a>Häufig gestellte Fragen zu Grundlegenden Fragen zu Mobilität und Sicherheit (FAQ)
 
@@ -51,7 +51,7 @@ Weitere Informationen finden Sie unter [Set up Basic Mobility and Security](set-
 
 ## <a name="im-trying-to-set-up-basic-mobility-and-security-but-it-seems-stuck-the-microsoft-365-service-health-has-been-showing-provisioning-for-a-while-what-can-i-do"></a>Ich versuche, grundlegende Mobilität und Sicherheit zu einrichten, aber es scheint hängen geblieben zu sein. Der Microsoft 365 Service Health zeigt seit einer Weile "Bereitstellung" an. Wie gehe ich vor?
 
-Es kann einige Zeit dauern, bis der Dienst für Sie bereit ist. Nach Abschluss der Bereitstellung wird die Seite Grundlegende Mobilität und Sicherheit angezeigt. Wenn Sie 24 Stunden gewartet haben und der Status weiterhin bereitgestellt wird, wenden Sie sich bitte an den Support, und wir helfen Ihnen, herauszufinden, was das Problem ist. Supportoptionen finden Sie unter [Immer noch Hilfe benötigen?](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp).
+Es kann einige Zeit dauern, bis der Dienst für Sie bereit ist. Nach Abschluss der Bereitstellung wird die Seite Grundlegende Mobilität und Sicherheit angezeigt. Wenn Sie 24 Stunden gewartet haben und der Status weiterhin bereitgestellt wird, wenden Sie sich bitte an den Support, und wir helfen Ihnen, herauszufinden, was das Problem ist.
 
 ## <a name="what-can-i-do-if-device-enrollment-fails"></a>Was kann ich tun, wenn die Geräteregistrierung fehlschlägt?
 
@@ -73,7 +73,7 @@ Grundlegende Mobilität und Sicherheit werden vom Intune-Dienst gehostet. Es han
 
 ## <a name="how-do-policies-work-for-basic-mobility-and-security-how-do-i-set-them-up-disable-them"></a>Wie funktionieren Richtlinien für grundlegende Mobilität und Sicherheit? Wie kann ich sie einrichten? Deaktivieren Sie sie?
 
-Nachdem Sie die Ersteinrichtung für Grundlegende Mobilität und Sicherheit abgeschlossen haben, erstellen Sie Richtlinien und wenden sie auf Benutzergruppen im Security & Compliance Center an. Richtlinien erfordern, dass Benutzer der Richtlinien ihre Geräte in Basic Mobility and Security registrieren, bevor das Gerät für den Zugriff auf Microsoft 365-Daten verwendet werden kann. Die von Ihnen eingerichteten Richtlinien bestimmen Einstellungen für mobile Geräte, z. B. wie oft Kennwörter zurückgesetzt werden müssen oder ob Datenverschlüsselung erforderlich ist. Weitere Informationen finden Sie unter [Erstellen von Gerätesicherheitsrichtlinien in Basic Mobility and Security](create-device-security-policies.md)und Microsoft   [365 Compliance Center](https://support.microsoft.com/office/7e696a40-b86b-4a20-afcc-559218b7b1b8).
+Nachdem Sie die Ersteinrichtung für Grundlegende Mobilität und Sicherheit abgeschlossen haben, erstellen Sie Richtlinien und wenden sie auf Benutzergruppen im Security & Compliance Center an. Richtlinien erfordern, dass Benutzer der Richtlinien ihre Geräte in Basic Mobility and Security registrieren, bevor das Gerät für den Zugriff auf Microsoft 365-Daten verwendet werden kann. Die von Ihnen eingerichteten Richtlinien bestimmen Einstellungen für mobile Geräte, z. B. wie oft Kennwörter zurückgesetzt werden müssen oder ob Datenverschlüsselung erforderlich ist. Weitere Informationen finden Sie unter [Erstellen von Gerätesicherheitsrichtlinien in Basic Mobility and Security](create-device-security-policies.md)und Microsoft   [365 Compliance Center](../../compliance/microsoft-365-compliance-center.md).
 
 Schrittweise Anweisungen zum Erstellen und Bereitstellen von Geräterichtlinien finden Sie unter [Create device security policies in Basic Mobility and Security](create-device-security-policies.md).
 

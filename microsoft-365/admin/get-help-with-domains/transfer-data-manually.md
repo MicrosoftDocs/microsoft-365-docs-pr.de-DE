@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc5d983-84b2-4802-bef0-602ae1780a42
 description: Hier erfahren Sie, wie Sie Daten manuell zwischen zwei Microsoft 365-Konten übertragen, wenn Sie den Plan oder Firmennamen geändert oder mehrere Abonnements in eins kombiniert haben.
-ms.openlocfilehash: 9916da50f4589f949d35466ca6aa8f1d79cc40ea
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b240ffbbdbfb6ed7d20a9ead9b1ee90a3af4570d
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915506"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023833"
 ---
 # <a name="transfer-data-manually-between-two-accounts"></a>Manuelles Übertragen von Daten zwischen zwei Konten
 
@@ -91,11 +91,11 @@ Es gibt mehrere Möglichkeiten zum Speichern oder Übertragen von Teamwebsitedat
   
 - Sie können die alte Website als Vorlage speichern und die Vorlage in die neue Website importieren.
 
-- Um Dokumente zu übertragen, erstellen Sie zunächst die Hierarchie auf der neuen Website manuell neu. Sie können dann beide SharePoint-Teamwebsites zur gleichen Zeit öffnen, beide Dokumentbibliotheken mit Windows-Explorer öffnen und die Dokumente kopieren und einfügen. Weitere Informationen finden Sie im [Video: Kopieren oder Verschieben von Bibliotheksdateien mit dem Befehl "Mit Explorer öffnen"](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+- Um Dokumente zu übertragen, erstellen Sie zunächst die Hierarchie auf der neuen Website manuell neu. Sie können dann beide SharePoint-Teamwebsites zur gleichen Zeit öffnen, beide Dokumentbibliotheken mit Windows-Explorer öffnen und die Dokumente kopieren und einfügen. Weitere Informationen finden Sie im [Video: Kopieren oder Verschieben von Bibliotheksdateien mit dem Befehl "Mit Explorer öffnen"](../../business-video/store-files.md).
 
 - Speichern Sie zum Übertragen von Listendaten eine [Listenvorlage](https://support.microsoft.com/office/c3884ad1-bc49-44b8-b3d6-3bc6a01eb393), und verwenden Sie die gespeicherte Vorlage, um die Liste auf der neuen Website neu zu erstellen.
 
-- Informationen zum Speichern einer Dokumentbibliothek oder eines Listeninhalts aus einer SharePoint #A0 (OneDrive for Business oder Teamwebsites) in Dateifreigaben oder auf einem lokalen Computer finden Sie unter Informationen zur manuellen Migration von [SharePoint Online-Inhalten.](https://support.microsoft.com/kb/2783484)
+- Informationen zum Speichern einer Dokumentbibliothek oder eines Listeninhalts aus einer SharePoint #A0 (OneDrive for Business oder Teamwebsites) in Dateifreigaben oder auf einem lokalen Computer finden Sie unter Informationen zur manuellen Migration von [SharePoint Online-Inhalten.](/sharepoint/troubleshoot/migration-tool/content-manual-migration)
 
 ## <a name="transfer-users-data-between-subscriptions"></a>Übertragen von Benutzerdaten zwischen Abonnements
 

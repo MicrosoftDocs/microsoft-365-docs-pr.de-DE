@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Verwenden Sie Grundlegende Mobilität und Sicherheit, um Geräterichtlinien zu erstellen, die Ihre Unternehmensinformationen schützen.
-ms.openlocfilehash: f31930f1a753259622520e50da8c255e7cd410e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5abd27f963208140a53cfd885152301992830b5e
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904288"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023905"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Erstellen von Gerätesicherheitsrichtlinien in Basic Mobility and Security
 
@@ -36,7 +36,7 @@ Sie können grundlegende Mobilität und Sicherheit verwenden, um Geräterichtlin
 
 - Erfahren Sie mehr über die Von Basic Mobility and Security unterstützten Geräte, Apps für mobile Geräte und Sicherheitseinstellungen. Weitere [Informationen finden Sie unter Capabilities of Basic Mobility and Security](capabilities.md).
 - Erstellen Sie Sicherheitsgruppen, die Microsoft 365-Benutzer umfassen, für die Sie Richtlinien bereitstellen möchten, und für Benutzer, die Sie möglicherweise vom blockierten Zugriff auf Microsoft 365 ausschließen möchten. Vor der Bereitstellung einer neuen Richtlinie für Ihre Organisation sollten Sie die Richtlinie testen, indem Sie diese für eine geringe Benutzeranzahl bereitstellen. Sie können eine Sicherheitsgruppe erstellen und verwenden, die nur sich selbst oder eine kleine Anzahl von Microsoft 365-Benutzern umfasst, die die Richtlinie für Sie testen können. Weitere Informationen zu Sicherheitsgruppen finden Sie unter Erstellen, Bearbeiten oder Löschen [einer Sicherheitsgruppe.](../email/create-edit-or-delete-a-security-group.md)
-- Zum Erstellen und Bereitstellen grundlegender Mobilitäts- und Sicherheitsrichtlinien in Microsoft 365 müssen Sie ein globaler Microsoft 365-Administrator sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](https://support.microsoft.com/office/d10608af-7934-490a-818e-e68f17d0e9c1).
+- Zum Erstellen und Bereitstellen grundlegender Mobilitäts- und Sicherheitsrichtlinien in Microsoft 365 müssen Sie ein globaler Microsoft 365-Administrator sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](../../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 - Bevor Sie Richtlinien bereitstellen, teilen Sie Ihrer Organisation die potenziellen Auswirkungen der Registrierung eines Geräts in Basic Mobility and Security mit. Je nachdem, wie Sie die Richtlinien einrichten, können nicht kompatible Geräte den Zugriff auf Microsoft 365 und Daten, einschließlich installierter Anwendungen, Fotos und personenbezogener Informationen auf einem registrierten Gerät, blockieren, und Daten können gelöscht werden.
 
 >[!NOTE]
@@ -85,7 +85,7 @@ Die Richtlinie wird auf das mobile Gerät jedes Benutzers übertragen, auf das d
 
 ## <a name="step-4-block-email-access-for-unsupported-devices"></a>Schritt 4: Blockieren des E-Mail-Zugriffs für nicht unterstützte Geräte
 
-Um Ihre Unternehmensinformationen zu schützen, sollten Sie den App-Zugriff auf Microsoft 365-E-Mails für mobile Geräte blockieren, die von Basic Mobility and Security nicht unterstützt werden. Eine Liste der unterstützten Geräte finden Sie unter [Supported devices](https://support.microsoft.com/office/capabilities-of-basic-mobility-and-security-a1da44e5-7475-4992-be91-9ccec25905b0#bkmk_supporteddevices).
+Um Ihre Unternehmensinformationen zu schützen, sollten Sie den App-Zugriff auf Microsoft 365-E-Mails für mobile Geräte blockieren, die von Basic Mobility and Security nicht unterstützt werden. Eine Liste der unterstützten Geräte finden Sie unter [Supported devices](../../admin/basic-mobility-security/capabilities.md).
 
 **So blockieren Sie den App-Zugriff:**
 

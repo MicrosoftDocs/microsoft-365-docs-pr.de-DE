@@ -21,12 +21,12 @@ description: Das Microsoft 365 Admin Center – Erfahren Sie mehr über die Feat
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 0c17c6840d73c5b0a2714c6c6a832c154e2a9640
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 90f75b0c1ea38833325c51399108551286f55e92
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768721"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024193"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neues im Microsoft 365 Admin Center
 
@@ -231,7 +231,7 @@ Vor ein paar Monaten haben wir eine Einstellung hinzugefügt, mit der Sie die Ne
 
 ### <a name="docs-training-and-videos-june"></a>Dokumente, Schulungen und Videos (Juni)
 
-- [Erste Schritte mit Teams](https://support.microsoft.com/office/184f1aba-2f91-43f0-86e1-9fae607e24f6)
+- [Erste Schritte mit Teams](../business-video/get-started-teams-small-business.md)
 
 ## <a name="may-2020"></a>Mai 2020
 
@@ -274,11 +274,11 @@ Erst in diesem Monat haben wir eine neue Website mit dem Namen [https://docs.mic
 - Neues in **der Microsoft 365-Videoreihe:** In diesem Monat werden die neue Supporterfahrung in den Teams Admin and Security and Compliance Center, die Planner-Integration in das Message Center und das neue 3x3-Videolayout in Microsoft Teams themat. 
 - Die [Hilfehubseite des Microsoft 365 Admin Center](./index.yml) wurde aktualisiert, um Schneller zu finden, was Sie benötigen. Und wenn Sie diese Seite jetzt betrachten, haben wir eine Karte hinzugefügt, um Sie über wichtige Updates und Änderungen zu informieren.
 
-## <a name="april-2020"></a>April 2020
+## <a name="april-2020"></a>April 2020
 
 ### <a name="intune-roles-management"></a>Verwaltung von Intune-Rollen
 
-[April 2020](#april-2020)
+[April 2020](#april-2020)
 
 Nun, wir haben es getan! Wir haben den zweiten Schritt zu einer einheitlichen Rollenerfahrung gemacht, und Sie können jetzt Intune-Rollen im Microsoft 365 Admin Center verwalten. Sie können auch Features nutzen, z. B. die Möglichkeit, nach Rollen zu suchen und Rollenberechtigungen anzeigen. Dies bedeutet, dass Sie keine zwei separaten Tools zum Verwalten von Rollen für Microsoft 365 und Intune benötigen. Wenn Sie sich beim Microsoft 365 Admin Center anmelden, werden Sie sehen, dass es zwei Pivots auf der Seite Rollen gibt, eines für Azure AD und eines für Intune.
 
@@ -333,19 +333,19 @@ Neues in **der Microsoft 365-Videoreihe:** In diesem Monat werden Tipps und Ress
 
 #### <a name="for-your-users"></a>Für Ihre Benutzer
 
-- [Planen einer Besprechung](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)
+- [Planen einer Besprechung](../business-video/schedule-guest-meeting.md)
 - [Teilnehmen an einer Teams-Besprechung](https://support.microsoft.com/office/078e9868-f1aa-4414-8bb9-ee88e9236ee4)
-- [Erstellen eines organisationsweiten Teams](https://support.microsoft.com/office/037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [Erstellen eines Teams mit Gästen](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7)
-- [Teilnehmen an einem Team als Gast](https://support.microsoft.com/office/928d1eef-61e2-49ec-b754-c2fe86b34824)
-- [Erstellen einer Gruppen-E-Mail-Adresse](https://support.microsoft.com/office/ded875f9-a9de-437f-b559-2ae4f235bb2b)
+- [Erstellen eines organisationsweiten Teams](../business-video/org-wide-team.md)
+- [Erstellen eines Teams mit Gästen](../business-video/team-with-guests.md)
+- [Teilnehmen an einem Team als Gast](../business-video/join-team-guest.md)
+- [Erstellen einer Gruppen-E-Mail-Adresse](../business-video/group-email.md)
 
 #### <a name="for-admins-and-business-owners"></a>Für Administratoren und Geschäftsbesitzer
 
 - [Remotearbeit kann auch Ihrem Kleinunternehmen weiterhelfen](https://support.microsoft.com/office/9b91a85a-39b4-40a6-a590-0f9bea0ba8e6)
-- [Ausführen eines Remote-Kleinunternehmens](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Registrieren für Microsoft Business Basic](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
-- [Einrichten der zwei-Faktor-Anmeldung](https://support.microsoft.com/office/9ac1a0f1-789b-4143-b954-5821d5d89298)
+- [Ausführen eines Remote-Kleinunternehmens](../business-video/sign-up.md)
+- [Registrieren für Microsoft Business Basic](../business-video/sign-up.md)
+- [Einrichten der zwei-Faktor-Anmeldung](../business-video/sign-up.md)
 
 ## <a name="march-2020"></a>März 2020
 
@@ -384,8 +384,8 @@ Die neuen Produktnamen treten am 21. April 2020 in Kraft. Dies ist nur eine Änd
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365 Apps for Business       |
-|Office 365 ProPlus    |   Microsoft 365-Apps für Unternehmen      |
+|Office 365 Business     |    Microsoft 365 Apps for Business       |
+|Office 365 ProPlus    |   Microsoft 365-Apps für Unternehmen      |
 
 ### <a name="videos-training-and-docs"></a>Videos, Schulungen und Dokumente
 

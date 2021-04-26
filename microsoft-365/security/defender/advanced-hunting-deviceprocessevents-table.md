@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 88c0692e776146b54ff559dd51b7ca48d10c6be3
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b5e57fec83217c8df00d333bb4c71f375cac23bb
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933037"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024259"
 ---
 # <a name="deviceprocessevents"></a>DeviceProcessEvents
 
@@ -34,6 +34,7 @@ ms.locfileid: "51933037"
 
 **Gilt für:**
 - Microsoft 365 Defender
+- Microsoft Defender für Endpunkt
 
 
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 006539e75ba4e26f409f08993f12a94fc8f37b75
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: a3d151eab91d496a3cdb5301959f37e77fee5388
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50549472"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024145"
 ---
 # <a name="payment-information-for-belgium"></a>Zahlungsinformationen für Belgien
 
@@ -43,3 +43,5 @@ SWIFT/Code: CITIIE2X\
 IBAN-Code: IE54CITI99005170000125\
 Kontonummer: 70000125\
 Kontoname: MICROSOFT
+
+Von einer lokalen Microsoft-Niederlassung ausgestellte Rechnungen werden mit dem Standardsatz der Mehrwertsteuer/Mehrwertsteuer/GST ausgestellt und gelten als inländische Dienstleistungen für Zwecke der Mehrwertsteuer/Mehrwertsteuer/GST.

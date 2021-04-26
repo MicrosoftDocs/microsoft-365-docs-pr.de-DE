@@ -19,15 +19,14 @@ description: Verwenden Sie Explorer und Echtzeiterkennungen im Security Complian
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0dcda063fc544c88157cff21b8a28f7a84a6a6fb
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c6bea6cb60579263515d21e159c4032fe4281cad
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934705"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024181"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Bedrohungs-Explorer und Echtzeiterkennungen
-
 
 **Gilt für**
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
@@ -35,6 +34,9 @@ ms.locfileid: "51934705"
 
 Wenn Ihre Organisation [Über Microsoft Defender für Office 365](defender-for-office-365.md)verfügt und Sie über die erforderlichen Berechtigungen [verfügen,](#required-licenses-and-permissions)verfügen Sie entweder über **Explorer-** oder Echtzeiterkennungen **(ehemals** Echtzeitberichte *–* siehe neues [!).](#new-features-in-threat-explorer-and-real-time-detections) Wechseln Sie im Security & Compliance Center zu Bedrohungsverwaltung, und wählen Sie dann **Explorer**  oder  **Echtzeiterkennungen aus.**
 
+<br>
+
+****
 
 |Mit Microsoft Defender für Office 365 Plan 2 sehen Sie:|Mit Microsoft Defender für Office 365 Plan 1 sehen Sie:|
 |---|---|
@@ -55,8 +57,9 @@ Mit diesem Bericht können Sie:
 ## <a name="improvements-to-threat-hunting-experience"></a>Verbesserungen bei der Bedrohungssuche
 
 ### <a name="introduction-of-alert-id-for-mdo-alerts-within-explorerreal-time-detections-preview"></a>Einführung der Warnungs-ID für MDO-Warnungen in Explorer/Echtzeiterkennungen (Vorschau)
+
 Wenn Sie heute von einer Warnung zum Bedrohungs-Explorer navigieren, wird im Explorer eine gefilterte Ansicht geöffnet, deren Ansicht nach der Warnungsrichtlinien-ID gefiltert ist (Richtlinien-ID ist ein eindeutiger Bezeichner für eine Warnungsrichtlinie).
-Wir machen diese Integration relevanter, indem wir die Warnungs-ID (siehe ein Beispiel für die Warnungs-ID unten) im Bedrohungs-Explorer und in Echtzeiterkennungen einführen, sodass Nachrichten angezeigt werden, die für die jeweilige Warnung relevant sind, sowie eine Anzahl von E-Mails. Sie können auch sehen, ob eine Nachricht Teil einer Warnung war, und von dieser Nachricht zu der spezifischen Warnung navigieren.  
+Wir machen diese Integration relevanter, indem wir die Warnungs-ID (siehe ein Beispiel für die Warnungs-ID unten) im Bedrohungs-Explorer und in Echtzeiterkennungen einführen, sodass Nachrichten angezeigt werden, die für die jeweilige Warnung relevant sind, sowie eine Anzahl von E-Mails. Sie können auch sehen, ob eine Nachricht Teil einer Warnung war, und von dieser Nachricht zu der spezifischen Warnung navigieren.
 
 Die Warnungs-ID ist innerhalb der URL verfügbar, wenn Sie eine einzelne Warnung anzeigen. Ein Beispiel ist `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1` .
 
@@ -66,11 +69,13 @@ Die Warnungs-ID ist innerhalb der URL verfügbar, wenn Sie eine einzelne Warnung
 > [!div class="mx-imgBorder"]
 > ![Warnungs-ID im Detailf flyout](../../media/AlertID-DetailsFlyout.png)
 
- 
-### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>Erweitern des Speicher- und Suchgrenzwerts für Explorer (und Echtzeiterkennungen) für Test-Mandanten von 7 auf 30 Tage (Vorschau)  
-Im Rahmen dieser Änderung können Sie E-Mail-Daten innerhalb von 30 Tagen (gegenüber den vorherigen 7 Tagen) in Threat Explorer/Echtzeiterkennungen für Defender für Office P1 und P2-Test-Mandanten suchen und filtern. Dies wirkt sich nicht auf Produktions mandanten für P1- und P2/E5-Kunden aus, die bereits über die 30-tägigen Funktionen zur Datenspeicherung und -suche verfügen. 
+### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>Erweitern des Speicher- und Suchgrenzwerts für Explorer (und Echtzeiterkennungen) für Test-Mandanten von 7 auf 30 Tage (Vorschau)
 
-### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>Aktualisierte Grenzwerte für den Export von Datensätzen für Den Bedrohungs-Explorer (Vorschau) 
+Im Rahmen dieser Änderung können Sie E-Mail-Daten innerhalb von 30 Tagen (gegenüber den vorherigen 7 Tagen) in Threat Explorer/Echtzeiterkennungen für Defender für Office P1 und P2-Test-Mandanten suchen und filtern.
+Dies wirkt sich nicht auf Produktions mandanten für P1- und P2/E5-Kunden aus, die bereits über die 30-tägigen Funktionen zur Datenspeicherung und -suche verfügen.
+
+### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>Aktualisierte Grenzwerte für den Export von Datensätzen für Den Bedrohungs-Explorer (Vorschau)
+
 Im Rahmen dieses Updates wird die Anzahl der Zeilen für E-Mail-Datensätze, die aus dem Bedrohungs-Explorer exportiert werden können, von 9990 auf 200.000 Datensätze erhöht. Der Satz von Spalten, die derzeit exportiert werden können, bleibt unverändert, die Anzahl der Zeilen wird jedoch vom aktuellen Grenzwert an zunehmen.
 
 ### <a name="tags-in-threat-explorer"></a>Tags im Bedrohungs-Explorer
@@ -99,6 +104,7 @@ Sie können Tags als Filter verwenden. Suche nur über Prioritätskonten oder be
 > ![Keine Filtertags](../../media/tags-filter-not.png)
 
 #### <a name="email-detail-flyout"></a>Flyout für E-Mail-Details
+
 Um die einzelnen Tags für Absender und Empfänger anzuzeigen, wählen Sie den Betreff aus, um das Flyout für Nachrichtendetails zu öffnen. Auf der **Registerkarte Zusammenfassung** werden die Absender- und Empfängertags separat angezeigt, wenn sie für eine E-Mail vorhanden sind.
 Die Informationen zu einzelnen Tags für Absender und Empfänger erstrecken sich auch auf exportierte CSV-Daten, in denen diese Details in zwei separaten Spalten angezeigt werden.
 
@@ -107,13 +113,12 @@ Die Informationen zu einzelnen Tags für Absender und Empfänger erstrecken sich
 
 Tags-Informationen werden auch im Flyout "URL-Klicks" angezeigt. Wechseln Sie zum Anzeigen zu Phish oder Alle E-Mail-Ansicht und dann zur Registerkarte **URLs** oder **URL-Klicks.** Wählen Sie ein einzelnes URL-Flyout aus, um zusätzliche Details zu Klicks für diese URL anzuzeigen, einschließlich tags, die diesem Klick zugeordnet sind.
 
-
 ### <a name="updated-timeline-view"></a>Aktualisierte Zeitachsenansicht
 
 > [!div class="mx-imgBorder"]
 > ![URL-Tags](../../media/tags-urls.png)
-> 
-Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4) ansehen. 
+>
+Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4) ansehen.
 
 ## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>Verbesserungen bei der Bedrohungssuche (anstehender)
 
@@ -174,6 +179,7 @@ Derzeit wird der Zustellungsspeicherort im E-Mail-Raster und im E-Mail-Flyout an
 *Zusätzliche Aktionen* wurden nach der Zustellung der E-Mail angewendet. Sie können *ZAP,* manuelle Korrektur *(von* einem Administrator ergriffene Aktion, z. B. soft *delete),* dynamische Zustellung und erneute Verarbeitung *(für* eine E-Mail, die rückwirkend als gut erkannt wurde) umfassen.
 
 > [!NOTE]
+>
 > - Im Rahmen der ausstehenden Änderungen geht der Wert "Entfernt von ZAP", der derzeit im Filter Zustellungsaktion angezeigt wird, weg. Sie haben eine Möglichkeit, mit dem ZAP-Versuch über zusätzliche Aktionen nach allen E-Mails **zu suchen.**
 >
 > - Es gibt neue Felder und Werte **für** Erkennungstechnologien und **zusätzliche Aktionen** (insbesondere für ZAP-Szenarien). Sie müssen Ihre vorhandenen gespeicherten und nachverfolgten Abfragen auswerten, um sicherzustellen, dass sie mit den neuen Werten funktionieren.
@@ -207,12 +213,9 @@ Zu den Verbesserungen gehören:
 - Zeigen Sie die vollständig geklickte URL (einschließlich aller Abfrageparameter, die Teil der URL sind) im Abschnitt **Klicks** des URL-Flyouts an. Derzeit werden die URL-Domäne und der Pfad in der Titelleiste angezeigt. Wir erweitern diese Informationen, um die vollständige URL anzeigen zu können.
 
 - Korrekturen über URL-Filter hinweg (*URL* versus *URL-Domäne* im Vergleich zu *URL-Domäne* und -Pfad ): Die Updates wirken sich auf die Suche nach Nachrichten aus, die eine URL/Klick-Urteil enthalten. Wir haben die Unterstützung für protokollagnostische Suchen aktiviert, sodass Sie ohne verwendung nach einer URL suchen `http` können. Standardmäßig wird die URL-Suche http zugestellt, es sei denn, ein anderer Wert wird explizit angegeben. Beispiel:
-
-   -  Suchen Sie mit und ohne präfix `http://` in den **Feldern URL,** **URL Domain** und URL Domain and **Path.** Die Suchergebnisse sollten die gleichen Ergebnisse anzeigen.
-
-   -  Suchen Sie in `https://` URL nach dem **Präfix.** Wenn kein Wert angegeben wird, wird `http://` das Präfix angenommen.
-
-   - `/`wird am Anfang und Ende der Felder **URL-Pfad,** **URL-Domäne,** **URL-Domäne und Pfad ignoriert.** `/` am Ende des **URL-Felds** wird ignoriert.
+  - Suchen Sie mit und ohne präfix `http://` in den **Feldern URL,** **URL Domain** und URL Domain and **Path.** Die Suchergebnisse sollten die gleichen Ergebnisse anzeigen.
+  - Suchen Sie in `https://` URL nach dem **Präfix.** Wenn kein Wert angegeben wird, wird `http://` das Präfix angenommen.
+  - `/`wird am Anfang und Ende der Felder **URL-Pfad,** **URL-Domäne,** **URL-Domäne und Pfad ignoriert.** `/` am Ende des **URL-Felds** wird ignoriert.
 
 ### <a name="phish-confidence-level"></a>Phish confidence level
 
@@ -290,16 +293,16 @@ Sie können sowohl die GUID als auch den Namen der Transportregeln anzeigen, die
 
 > [!IMPORTANT]
 > Die Verfügbarkeit von ETR-Such- und -Namen hängt von der bestimmten Rolle ab, die Ihnen zugewiesen ist. Sie benötigen eine der folgenden Rollen/Berechtigungen, um die ETR-Namen und die Suche anzeigen zu können. Wenn Ihnen keine dieser Rollen zugewiesen ist, können Sie die Namen der Transportregeln nicht anzeigen oder mithilfe von ETR-Namen nach Nachrichten suchen. In den E-Mail-Details können Sie jedoch die ETR-Bezeichnung und GUID-Informationen sehen. Andere Aufzeichnungsansichtserfahrungen in E-Mail-Rastern, E-Mail-Flyouts, Filtern und Export sind nicht betroffen.
-> 
+>
 > - Nur EXO – Verhinderung von Datenverlust: Alle
 > - Nur EXO - O365SupportViewConfig: Alle
 > - Microsoft Azure Active Directory oder EXO – Sicherheitsadministrator: Alle
 > - AAD oder EXO - Security Reader: Alle
 > - Nur EXO - Transportregeln: Alle
 > - Nur EXO – View-Only Konfiguration: Alle
-> 
+>
 > Innerhalb des E-Mail-Rasters, des Details-Flyouts und des exportierten CSV erhalten die ETRs eine Name/GUID, wie unten gezeigt.
-> 
+>
 > > [!div class="mx-imgBorder"]
 > > ![Exchange-Transportregeln](../../media/ETR_Details.png)
 
@@ -315,7 +318,7 @@ Die Suche nach Connectors ist "enthält", was bedeutet, dass auch teilweise Stic
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Neue Features in Threat Explorer und Echtzeiterkennungen
 
 - [Anzeigen von Phishing-E-Mails, die an imitierte Benutzer und Domänen gesendet werden](#view-phishing-emails-sent-to-impersonated-users-and-domains)
--  [Vorschau des E-Mail-Headers und des E-Mail-Textkörpers herunterladen](#preview-email-header-and-download-email-body)
+- [Vorschau des E-Mail-Headers und des E-Mail-Textkörpers herunterladen](#preview-email-header-and-download-email-body)
 - [E-Mail-Zeitachse](#email-timeline)
 - [Exportieren von URL-Klickdaten](#export-url-click-data)
 
@@ -339,7 +342,7 @@ In diesem Beispiel wird Der Bedrohungs-Explorer verwendet.
 
 4. Wählen Sie den Betreff einer Nachricht unter der Registerkarte E-Mail-> Details aus, um zusätzliche Identitätswechselinformationen wie Identitätswechseldomäne /Erkannter Speicherort anzuzeigen.
 
-    **OR** 
+    **OR**
 
     Wählen **Sie Imitierter Benutzer aus,** und geben Sie die E-Mail-Adresse eines geschützten Benutzers in das Textfeld ein.
 
@@ -351,7 +354,7 @@ In diesem Beispiel wird Der Bedrohungs-Explorer verwendet.
     :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Der Detailbereich des Bedrohungs-Explorers für einen geschützten Benutzer, der den Erkennungsspeicherort und die erkannte Bedrohung (hier den Identitätswechsel eines Benutzers) zeigt.":::
 
 > [!NOTE]
-> Wenn Sie in Schritt 3 oder 5  Erkennungstechnologie auswählen  und Identitätswechseldomäne bzw. Identitätswechselbenutzer auswählen, werden die Informationen auf der Registerkarte    >   *E-Mail-Details* über den Benutzer oder die Domäne und der Speicherort "Erkannt" nur in den Nachrichten angezeigt, die mit dem Benutzer oder der Domäne im Zusammenhang stehen, die auf der Seite Antiphishingrichtlinien aufgeführt sind. 
+> Wenn Sie in Schritt 3 oder 5  Erkennungstechnologie auswählen  und Identitätswechseldomäne bzw. Identitätswechselbenutzer auswählen, werden die Informationen auf der Registerkarte    >   *E-Mail-Details* über den Benutzer oder die Domäne und der Speicherort "Erkannt" nur in den Nachrichten angezeigt, die mit dem Benutzer oder der Domäne im Zusammenhang stehen, die auf der Seite Antiphishingrichtlinien aufgeführt sind.
 
 ### <a name="preview-email-header-and-download-email-body"></a>Vorschau des E-Mail-Headers und des E-Mail-Textkörpers herunterladen
 
@@ -366,16 +369,26 @@ Wie wird dies durchgeführt? Der Zustellungsstatus ist nun in zwei Spalten aufge
 
 *Übermittlungsaktion* ist die Aktion, die aufgrund vorhandener Richtlinien oder Erkennungen für eine E-Mail ergriffen wird. Hier sind die möglichen Aktionen für eine E-Mail:
 
+<br>
+
+****
+
 |Zugestellt|Junked|Gesperrt|Ersetzt|
 |---|---|---|---|
 |E-Mails wurden an den Posteingang oder Ordner eines Benutzers übermittelt, und der Benutzer kann darauf zugreifen.|E-Mails wurden an den Junk- oder Den Gelöschten Ordner des Benutzers gesendet, und der Benutzer kann darauf zugreifen.|E-Mails, die isoliert, fehlgeschlagen oder gelöscht wurden. Auf diese E-Mails kann der Benutzer nicht zugegriffen werden.|Bei E-Mails wurden schädliche Anlagen durch TXT-Dateien ersetzt, in deren Zustand die Anlage schädlich war.|
+|
 
 Dies ist das, was der Benutzer sehen kann und nicht:
+
+<br>
+
+****
 
 |Für Endbenutzer zugänglich|Zugriff für Endbenutzer nicht möglich|
 |---|---|
 |Zugestellt|Gesperrt|
 |Junked|Ersetzt|
+|
 
 **Der Zustellungsspeicherort** zeigt die Ergebnisse von Richtlinien und Erkennungen an, die nach der Zustellung ausgeführt werden. Es ist mit der **_Zustellungsaktion verknüpft._** Dies sind die möglichen Werte:
 

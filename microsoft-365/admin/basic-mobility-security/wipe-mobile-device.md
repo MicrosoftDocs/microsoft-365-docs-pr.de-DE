@@ -18,18 +18,18 @@ ms.custom:
 search.appverid:
 - MET150
 description: Verwenden Sie integrierte Grundlegende Mobilität und Sicherheit, um Informationen von registrierten Geräten zu entfernen.
-ms.openlocfilehash: ddf13ef6627d70128064e2d8bd185203244b12e4
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 7830a0f4ef609f6465c171ecab2c9e3c48198424
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819808"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023857"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Wischen eines mobilen Geräts in Basic Mobility and Security
 
 Sie können die integrierte Grundlegende Mobilität und Sicherheit für Microsoft 365 verwenden, um nur Organisationsinformationen zu entfernen oder eine Werkszurücksetzung durchzuführen, um alle Informationen von einem mobilen Gerät zu löschen und in den Werkseinstellungen wiederherzustellen.
 
-## <a name="before-you-begin"></a>Bevor Sie loslegen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Mobile Geräte können vertrauliche Organisationsinformationen speichern und Zugriff auf die Microsoft 365-Ressourcen Ihrer Organisation bieten. Um die Informationen Ihrer Organisation zu schützen, können Sie die Werkseinstellungen zurücksetzen oder Unternehmensdaten entfernen:
 
@@ -45,7 +45,7 @@ Mobile Geräte können vertrauliche Organisationsinformationen speichern und Zug
 
 ## <a name="wipe-a-mobile-device"></a>Wischen eines mobilen Geräts
 
-1. Wechseln Sie zum [Microsoft 365 Admin Center](https://support.microsoft.com/office/758befc4-0888-4009-9f14-0d147402fd23).
+1. Wechseln Sie zum [Microsoft 365 Admin Center](../../admin/admin-overview/about-the-admin-center.md).
 
 2. Geben Sie mobile Geräteverwaltung in das Suchfeld ein, und wählen Sie **mobile Geräteverwaltung** in der Liste der Ergebnisse aus.
 

@@ -12,12 +12,12 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 818ec8e364a8ea1f24e22bac56b0e9e875000743
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 53ede4863d92f52292ee3ce5b5966997c39408af
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50542884"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024037"
 ---
 # <a name="payment-information-for-norway"></a>Zahlungsinformationen für Norwegen
 
@@ -42,3 +42,5 @@ SWIFT/Code: CITIIE2X\
 IBAN-Code: IE43CITI99005170000129\
 Kontonummer: 70000129\
 Kontoname: MICROSOFT
+
+Von einer lokalen Microsoft-Niederlassung ausgestellte Rechnungen werden mit dem Standardsatz der Mehrwertsteuer/Mehrwertsteuer/GST ausgestellt und gelten als inländische Dienstleistungen für Zwecke der Mehrwertsteuer/Mehrwertsteuer/GST.

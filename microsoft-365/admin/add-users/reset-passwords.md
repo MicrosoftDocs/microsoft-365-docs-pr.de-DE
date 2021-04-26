@@ -1,5 +1,5 @@
 ---
-title: Zurücksetzen von Passwörtern
+title: Kennwörter zurücksetzen
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -27,14 +27,14 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Erfahren Sie, wie Sie das Kennwort für einen Benutzer in Microsoft 365 Business-Abonnement zurücksetzen.
-ms.openlocfilehash: da2f2b7aced29cd121f7d597af5a518462d2623d
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 24fc6581837f71659a2ecc0359c6967e3969d868
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222051"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023977"
 ---
-# <a name="reset-passwords"></a>Zurücksetzen von Passwörtern
+# <a name="reset-passwords"></a>Kennwörter zurücksetzen
 
 In diesem Artikel wird erläutert, wie Sie Kennwörter für sich selbst und für Ihre Benutzer zurücksetzen, wenn Sie über ein Microsoft 365 Business-Abonnement verfügen.
 
@@ -50,7 +50,7 @@ Sehen Sie sich ein kurzes Video zum Zurücksetzen von Benutzerkennwörtern an.<b
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-Wenn Sie dieses Video hilfreich fanden, schauen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an.
+Wenn Sie dieses Video hilfreich fanden, schauen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](../../business-video/index.yml), an.
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>Schritte: Zurücksetzen eines Geschäftskennworts für einen Benutzer
 
@@ -150,4 +150,4 @@ Lesen Sie den Artikel [Ich habe den Benutzernamen oder das Kennwort für das Kon
 
 [Entfernen eines ehemaligen Mitarbeiters](remove-former-employee.md)
 
-[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 für Unternehmen-Schulungsvideos](../../business-video/index.yml)

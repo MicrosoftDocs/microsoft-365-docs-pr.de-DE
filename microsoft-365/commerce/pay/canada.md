@@ -12,12 +12,12 @@ ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 909cd6a7e3d1334ab2aa5ad2ad000de55e3a1224
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 94febae2ba015ebc102473937443129bcfc56e9c
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50551800"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52024133"
 ---
 # <a name="payment-information-for-canada"></a>Zahlungsinformationen für Kanada
 
@@ -44,3 +44,5 @@ Routingnummer: 032820012\
 BIC/SWIFT-Code: CITICATTBCH\
 Kontonummer: 3003600001\
 Kontoname: MICROSOFT
+
+Von einer lokalen Microsoft-Niederlassung ausgestellte Rechnungen werden mit dem Standardsatz der Mehrwertsteuer/Mehrwertsteuer/GST ausgestellt und gelten als inländische Dienstleistungen für Zwecke der Mehrwertsteuer/Mehrwertsteuer/GST.

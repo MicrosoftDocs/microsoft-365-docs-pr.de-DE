@@ -243,6 +243,8 @@
 ##### [Manuelle Bereitstellung](linux-install-manually.md)
 ##### [Puppet-basierte Bereitstellung](linux-install-with-puppet.md)
 ##### [Ansible-basierte Bereitstellung](linux-install-with-ansible.md)
+##### [Microsoft Defender für Endpunkt unter Linux mit Chef bereitstellen](linux-deploy-defender-for-endpoint-with-chef.md)
+
 
 #### [Update](linux-updates.md)
 
@@ -253,7 +255,6 @@
 ##### [Erkennen und Blockieren von potenziell unerwünschten Anwendungen](linux-pua.md)
 ##### [Scans planen mit Microsoft Defender für Endpunkt unter Linux](linux-schedule-scan-atp.md)
 ##### [Planen eines Updates von Microsoft Defender für Endpunkt (Linux)](linux-update-MDE-Linux.md)
-##### [Microsoft Defender für Endpunkt unter Linux mit Chef bereitstellen](linux-deploy-defender-for-endpoint-with-chef.md)
 
 #### [Problembehandlung]()
 ##### [Problembehandlung bei Installationsproblemen](linux-support-install.md)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 22d26dac6b7ee502d6934349d22b1d40532f575f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: eb6dfa628488239e3953d19d5e78b338e76f50a2
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935773"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023785"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schema der erweiterten Suche – Benennungsänderungen
 
@@ -99,8 +99,9 @@ Namensänderungen werden automatisch auf Abfragen angewendet, die im Security Ce
 | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Kundenfeedback |
 | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Kundenfeedback |
 
+## <a name="march-2021"></a>März 2021
 
-
+Die `DeviceTvmSoftwareInventoryVulnerabilities` Tabelle ist veraltet. Ersetzen sind die `DeviceTvmSoftwareInventory` Tabellen `DeviceTvmSoftwareVulnerabilities` und.
 
 
 

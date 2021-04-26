@@ -27,12 +27,12 @@ search.appverid:
 ms.assetid: 9b23c065-eef9-4bf7-acf5-127eb46d5e67
 ROBOTS: NOINDEX
 description: 'Verstehen Sie, was Sie wissen müssen, bevor Sie den Anmeldevorgang für Office 365 durchgehen. '
-ms.openlocfilehash: 93d3f58db24e4233e8d7b2929fd2471707614097
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f2a4f555540b801441644af28435170f82229909
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904372"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023917"
 ---
 # <a name="how-to-sign-up---admin-help"></a>So registrieren Sie sich – Administratorhilfe
 
@@ -70,7 +70,7 @@ Sehen Sie sich ein kurzes Video zur Auswahl eines Microsoft 365 For Business-Pla
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](../../business-video/index.yml) an.
 
 Benötigen Sie Hilfe bei der Auswahl eines Plans? Unsere Vertriebsberater unterstützen Sie gerne und beantworten alle Ihre Fragen. Wechseln Sie [zu Alle Produkte vergleichen,](https://products.office.com/compare-all-microsoft-office-products?tab=2) und wählen Sie eine der unten auf der Seite aufgeführten Kontaktsupportoptionen aus.
   
@@ -135,6 +135,6 @@ Sie müssen Ihre Testversion nicht abbrechen. Wenn Sie das Testabonnement nicht 
     > [!IMPORTANT]
     >  Achten Sie bei der Anmeldung darauf, die beste Zahlungsoption für Ihre Organisation zu wählen. Das Ändern der Zahlungsoptionen setzt einen Anruf beim Abrechnungssupport voraus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Microsoft 365 für Unternehmen-Schulungsvideos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business Schulungsvideos](../../business-video/index.yml) (Links)

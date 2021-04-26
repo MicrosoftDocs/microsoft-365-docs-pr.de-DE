@@ -1,5 +1,5 @@
 ---
-title: Lokalisieren der Benutzeroberfläche
+title: Lokalisieren der Benutzererfahrung
 description: So lokalisieren Sie Geräte für Benutzer
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
@@ -12,14 +12,14 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 20456ce837be60b707569ae07d4fb00b695b3a98
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 354f61284bbd95c1c7ca4cd50459a1644a89d090
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445981"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023261"
 ---
-# <a name="localize-the-user-experience"></a>Lokalisieren der Benutzeroberfläche
+# <a name="localize-the-user-experience"></a>Lokalisieren der Benutzererfahrung
 
 Benutzer von Microsoft Managed Desktop-Geräten können die Sprache ihrer Wahl entweder während des Setupvorgangs (die "out-of-box"-Erfahrung) oder danach auswählen.
 
@@ -62,43 +62,43 @@ Wenn Sie vorhandene Geräte erneut verwenden, müssen Sie möglicherweise mit Ih
 
 Das [von](../service-description/device-images.md#universal-image) Microsoft Managed Desktop bereitgestellte universelle Bild umfasst die folgenden Sprachen und für Windows 10:
 
+- Arabisch
+- Bulgarisch
+- Chinesisch (vereinfacht)
+- Chinesisch (traditionell)
+- Kroatisch
+- Tschechisch
+- Dänisch  
+- Niederländisch  
 - Englisch (US, GB, AU, CA, IN)
-- Spanisch (Spanien, Mexiko)
-- Japanisch
+- Estnisch
+- Finnisch 
 - Französisch (Frankreich, Kanada)
 - Deutsch
-- Portugiesisch (Brasilien)
-- Italienisch
-- Chinese Simplified
-- Niederländisch  
-- Schwedisch
-- Dänisch  
-- Finnisch 
-- Russisch 
-- Norwegisch (Bokmal)
-- Koreanisch
-- Chinese Traditional
-- Polnisch
-- Türkisch
-- Arabisch
-- Hebräisch
-- Portugiesisch (Portugal)
-- Tschechisch
-- Ungarisch
-- Thailändisch
-- Indonesisch
 - Griechisch
-- Slowakisch
-- Vietnamesisch
-- Slowenisch
-- Kroatisch
-- Rumänisch
-- Litauisch
-- Bulgarisch
-- Serbisch (lateinisches Alphabet)
+- Hebräisch
+- Ungarisch
+- Indonesisch
+- Italienisch
+- Japanisch
+- Koreanisch
 - Lettisch
+- Litauisch
+- Norwegisch (Bokmål)
+- Polnisch
+- Portugiesisch (Brasilien)
+- Portugiesisch (Portugal)
+- Rumänisch
+- Russisch 
+- Serbisch (lateinisches Alphabet)
+- Slowakisch
+- Slowenisch
+- Spanisch (Spanien, Mexiko)
+- Schwedisch
+- Thailändisch
+- Türkisch
 - Ukrainisch
-- Estnisch
+- Vietnamesisch
 
 Microsoft 365 Apps for Enterprise unterstützt möglicherweise eine etwas andere Liste.
 

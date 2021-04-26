@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Erfahren Sie, wie Sie gelöschte Benutzerkonten und alle zugeordneten Daten wiederherstellen.
-ms.openlocfilehash: 75e664c68dec13b857e4bd308d49e5b58d5edfc8
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 4893f7468a8ab5919dd3be1cce233917323f2076
+ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471013"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52023965"
 ---
 # <a name="restore-a-user"></a>Wiederherstellen eines Benutzers
    
@@ -38,7 +38,7 @@ Nachfolgend ein paar Tipps:
   
 - Stellen Sie sicher, dass Lizenzen verfügbar sind, die dem Konto zugewiesen werden können.
     
-- Wenn Ihr Unternehmen Active Directory verwendet, lesen Sie die unter [Behandeln von Problemen mit gelöschten Benutzerkonten in Office 365](https://support.microsoft.com/kb/2619308) aufgeführten Anweisungen zum Wiederherstellen eines Benutzerkontos. 
+- Wenn Ihr Unternehmen Active Directory verwendet, lesen Sie die unter [Behandeln von Problemen mit gelöschten Benutzerkonten in Office 365](/office365/troubleshoot/active-directory/restore-deleted-user-accounts.md) aufgeführten Anweisungen zum Wiederherstellen eines Benutzerkontos. 
     
 ## <a name="restore-one-or-more-user-accounts"></a>Wiederherstellen eines oder mehrerer Benutzerkonten
 
