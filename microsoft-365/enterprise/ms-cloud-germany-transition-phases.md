@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: 8e3e6fb228445823481b52d27e5a7b6c623349e2
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 5764b5cedf17487320fbfd05885120de86da3a84
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995021"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029062"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktionen während der Migrationsphasen und Auswirkungen für die Migration von Microsoft Cloud Deutschland
 
@@ -226,7 +226,7 @@ In dieser Phase wird Skype for Business zu Microsoft Teams migriert. Bestehende 
 - Kontakte und Besprechungen werden zu Microsoft Teams migriert.
 - Benutzer können sich während der Umstellung von Diensten auf Office 365-Dienste nicht in Skype for Business anmelden und auch nicht, bevor die Kunden-DNS-Einträge abgeschlossen sind.
 - Kontakte und bestehende Besprechungen werden weiterhin als Skype for Business-Besprechungen funktionieren.
-- Die Webbrowserversion von Microsoft Teams funktioniert nach Abschluss von Phase 9 nicht mehr.
+- Die Webbrowserversion von Microsoft Teams funktioniert erst, wenn Phase 9 abgeschlossen ist.
 
 Wenn Sie nach Abschluss der Migrationsphase 9 eine Verbindung mit Skype for Business Online mit PowerShell herstellen müssen, verwenden Sie den folgenden PowerShell-Code, um eine Verbindung herzustellen:
 

@@ -1,10 +1,10 @@
 ---
-title: Contosos COVID-19-Antwort und Unterstützung für Remote-und Onsite-Arbeit
+title: Contosos COVID-19-Antwort und -Unterstützung für Remote- und Vor-Ort-Arbeit
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
 ms.author: josephd
-manager: laurawi
+manager: dansimp
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -13,63 +13,63 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Erfahren Sie, wie die Contoso Corporation auf die COVID-19-Pandemie reagiert und die Infrastruktur für die Installation und Aktualisierung von Software für Remote-und Onsite-Arbeit entwickelt hat.
-ms.openlocfilehash: d04b4efcdd4dd04315ad37311cdd2cfbc2e64e88
-ms.sourcegitcommit: e53234b1f64ebca00e121da1706c02b3337c35f0
+description: Verstehen Sie, wie die Contoso Corporation auf die COVID-19-Pandemie reagierte und ihre Softwareinstallations- und Updateinfrastruktur für Remote- und Vor-Ort-Arbeit entwickelt hat.
+ms.openlocfilehash: 0bded43f03dd529ffdf463818a93af70e10eed89
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/05/2020
-ms.locfileid: "49580673"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52028980"
 ---
-# <a name="contosos-covid-19-response-and-support-for-remote-and-onsite-work"></a>Contosos COVID-19-Antwort und Unterstützung für Remote-und Onsite-Arbeit
+# <a name="contosos-covid-19-response-and-support-for-remote-and-onsite-work"></a>Contosos COVID-19-Antwort und -Unterstützung für Remote- und Vor-Ort-Arbeit
 
-Contoso hat seine Remotemitarbeiter stets unterstützt, die über einen zentralen VPN-Server in der Pariser zentrale auf lokale Ressourcen zugegriffen haben. Contoso hat allen Remotemitarbeitern einen verwalteten Laptop ausgestellt. Lokale Arbeitskräfte hatten eine Mischung aus Desktopcomputern und Laptops.
+Contoso hatte seine Remotemitarbeiter immer unterstützt, die über einen zentralen VPN-Server in der Pariser Zentrale auf lokale Ressourcen zugegriffen haben. Contoso hatte allen Remotemitarbeitern einen verwalteten Laptop ausgestellt. Lokale Mitarbeiter hatten eine Mischung aus Desktopcomputern und Laptops.
 
 ## <a name="contosos-response-to-covid-19"></a>Contosos Antwort auf COVID-19
 
-Mit dem Ausbruch der COVID-19-Pandemie waren plötzlich alle außer wesentlichen Arbeitskräfte Remote Arbeiter. Contoso reagierte mit der Verlagerung seiner Arbeitskräfte auf die Arbeit von zu Hause aus und durchführen seiner primären Aktivitäten über den Remotezugriff auf lokale Ressourcen und Online mithilfe von Microsoft 365 Cloud Services.
+Mit Dem Beginn der COVID-19-Pandemie waren plötzlich alle, bis auf wesentliche Mitarbeiter, Remotemitarbeiter. Contoso reagierte, indem seine Mitarbeiter von zu Hause aus arbeiten und ihre primären Aktivitäten über den Remotezugriff auf lokale Ressourcen und online mithilfe von Microsoft 365-Clouddiensten durchführen.
 
-Contoso hatte Remotezugriffs-VPN-Server in der Zentrale von Paris, um die 25% seiner bereits Remote-Mitarbeiter zu unterstützen, aber schnell verschoben, um seine RAS-Kapazität zu skalieren, um 90% seiner Mitarbeiter zu unterstützen. Contoso hat Remotezugriffs-VPN-Server in jeder Satelliten Niederlassung bereitgestellt, sodass Remotemitarbeiter einen regionalen close-Einstiegspfad für den Zugriff auf das Contoso-Intranet verwenden würden.
+Contoso hatte remote access-VPN-Server in der Pariser Zentrale, um die 25 % seiner bereits Remote-Mitarbeiter zu unterstützen, aber schnell verschoben, um die Remotezugriffskapazität zu skalieren, um 90 % der Mitarbeiter zu unterstützen. Contoso hat in jedem Satellitenbüro REMOTEzugriffs-VPN-Server bereitgestellt, sodass Remotemitarbeiter einen regional engen Einstiegspunkt für den Zugriff auf das Contoso-Intranet verwenden.
 
-Contoso hat auch die Konfiguration von VPN-Clients, die auf Laptops, Tablets und Smartphones installiert sind, für den geteilten Tunnel aktualisiert, sodass der Datenverkehr für die Optimierungs Gruppe von Office 365 Endpunkten die VPN-Verbindung überbrückt und direkt über das Internet gesendet wurde. Weitere Informationen finden Sie unter [optimieren Office 365 Konnektivität für Remotebenutzer mithilfe von VPN-Split-Tunneling](../enterprise/microsoft-365-vpn-split-tunnel.md).
+Contoso hat außerdem die Konfiguration der auf Laptops, Tablets und Smartphones installierten VPN-Clients für den geteilten Tunneling aktualisiert, sodass Datenverkehr für den Optimize-Satz von Office 365-Endpunkten die VPN-Verbindung umgangen und direkt über das Internet gesendet wurde. Weitere Informationen finden Sie unter [Optimize Office 365 connectivity for remote users using VPN split tunneling](../enterprise/microsoft-365-vpn-split-tunnel.md).
 
-Hier ist die resultierende Konfiguration mit VPN-Geräten, die in der Pariser zentrale und in jedem der Niederlassungen installiert sind. 
+Hier sehen Sie die resultierende Konfiguration mit VPN-Geräten, die in der Pariser Zentrale und in jedem der Satellitenbüros installiert sind. 
 
 ![Contosos VPN-Infrastruktur](../media/contoso-remote-onsite-work/contoso-vpn-infrastructure.png)
 
-Ein Remotemitarbeiter mit dem installierten VPN-Client verwendet DNS, um das Regional nächstgelegene Büro zu finden und eine Verbindung mit dem dort installierten VPN-Gerät herstellen. Bei Split-Tunneling wird der Datenverkehr zu Microsoft 365 Optimize Endpoint direkt an den Regional nächstgelegenen Microsoft 365-Netzwerkspeicherort gesendet. Der gesamte andere Datenverkehr wird über die VPN-Verbindung an das VPN-Gerät gesendet.
+Ein Remotemitarbeiter mit dem installierten VPN-Client verwendet DNS, um das regional nächstgelegene Büro zu finden und stellt eine Verbindung mit dem dort installierten VPN-Gerät ein. Bei geteilten Tunneln wird der Datenverkehr zu Microsoft 365 Optimize-Endpunkten direkt an den regional nächstgelegenen Microsoft 365-Netzwerkstandort gesendet. Der ganze andere Datenverkehr wird über die VPN-Verbindung zum VPN-Gerät gesendet.
 
-## <a name="contosos-support-for-remote-and-onsite-work"></a>Unterstützung von Contoso für Remote-und Onsite-Arbeit
+## <a name="contosos-support-for-remote-and-onsite-work"></a>Contosos Unterstützung für Remote- und Vor-Ort-Arbeit
 
-Nachdem die ersten Änderungen vorgenommen wurden, um hauptsächlich Remote Arbeitskräfte während regionaler Sperrungen zu unterstützen, hat Contoso Infrastrukturänderungen zur Unterstützung von Remote-und Onsite-Arbeit vorgenommen, in der eine Arbeitskraft sein könnte:
+Nachdem die anfänglichen Änderungen vorgenommen wurden, um hauptsächlich Remotemitarbeiter während regionaler Sperrungen zu unterstützen, hat Contoso Infrastrukturänderungen vorgenommen, um Remote- und Vor-Ort-Arbeit zu unterstützen, bei der es sich bei einem Mitarbeiter um:
 
-- Immer Remote.
+- Immer remote.
 - Immer vor Ort.
-- Eine Kombination aus Onsite und Remote.
+- Eine Kombination aus vor Ort und Remote.
 
-Die Funktionen von Microsoft 365 Identity, Security und Compliance sind auf Null-Vertrauen ausgelegt und funktionieren unabhängig vom Standort des Benutzers und des Geräts. Weitere Informationen finden Sie unter [zero Trust](https://www.microsoft.com/security/business/zero-trust).
+Microsoft 365-Identitäts-, Sicherheits- und Compliancefeatures sind für Zero Trust konzipiert und funktionieren unabhängig vom Standort des Benutzers und des Geräts. Weitere Informationen finden Sie unter [Zero Trust](https://www.microsoft.com/security/business/zero-trust).
 
-Das Verwalten neuer Installationen und Softwareupdates hängt jedoch vom Speicherort des Geräts ab, da die zu installierende Software von einer lokalen oder einer Internetquelle stammen kann. Contoso IT Architects hat die Infrastruktur für neue Installationen und Updates basierend auf dem Standort des Geräts und nicht der Arbeitskraft entwickelt.
+Die Verwaltung neuer Installationen und Updates von Software hängt jedoch vom Standort des Geräts ab, da die zu installierende Software von einer lokalen oder einer Internetquelle stammen könnte. Contoso-IT-Architekten haben ihre neue Installations- und Aktualisierungsinfrastruktur basierend auf dem Standort des Geräts und nicht nach dem Worker entworfen.
 
-Sie haben zwei Gerätetypen festgelegt: dediziertes lokales und Roaming.
+Sie haben zwei Arten von Geräten festgelegt: dedizierte lokale Geräte und Roaming.
 
-### <a name="dedicated-on-premises"></a>Dedizierte lokale
+### <a name="dedicated-on-premises"></a>Dedizierte lokales
 
-Ein dediziertes lokales Gerät ist ein Desktop-oder Server Computer, der das Contoso-Intranet niemals verlässt und kein VPN-Client installiert ist. Diese lokalen Geräte verwenden weiterhin den Microsoft Endpoint Configuration Manager und die zugehörigen Verteilungspunkte für Installationen und Updates von Windows 10, Microsoft 365 Apps für Unternehmen und den Edge-Browser.
+Ein dediziertes lokales Gerät ist ein Desktop- oder Servercomputer, der das Contoso-Intranet nie verlässt und keinen VPN-Client installiert hat. Diese lokalen Geräte verwenden weiterhin Microsoft Endpoint Configuration Manager und seine Verteilungspunkte für Installationen und Updates von Windows 10, Microsoft 365 Apps for Enterprise und dem Edgebrowser.
 
-### <a name="roaming"></a>Roamingeinstellungen
+### <a name="roaming"></a>Roaming
 
-Ein Roaming-Gerät kann das Contoso-Intranet verlassen und umfasst Laptops, die für viele Office-Mitarbeiter und alle Remote-Mitarbeiter und andere Geräte in der Organisation wie Smartphones und Tablets mit dem Contoso-VPN-Client installiert wurden. 
+Ein Roaminggerät kann das Contoso-Intranet verlassen und Laptops enthalten, die für viele Büromitarbeiter und alle Remotemitarbeiter und andere Geräte im Besitz der Organisation ausgestellt wurden, z. B. Smartphones und Tablets, auf dem der Contoso-VPN-Client installiert ist. 
 
-Da diese Geräte zu einem bestimmten Zeitpunkt mit dem Internet verbunden werden können, verwenden Sie InTune oder andere Cloud-basierte Dienste für Installationen und Updates von Windows 10, Microsoft 365 apps for Enterprise und Edge. Sie verwenden nicht die vorhandenen lokalen Configuration Manager-Verteilungspunkte.
+Da diese Geräte jederzeit mit dem Internet verbunden werden können, verwenden sie Intune oder andere cloudbasierte Dienste für Installationen und Updates von Windows 10, Microsoft 365 Apps for Enterprise und Edge. Sie verwenden nicht die vorhandenen lokalen Configuration Manager-Verteilungspunkte.
 
-Dies bedeutet, dass einige der Installationen und Updates für das Roaming-Gerät über das Internet ausgeführt werden, während Sie lokal und mit dem Intranet verbunden sind. Die IT-Architekten von Contoso haben jedoch entschieden, dass die Einfachheit der Konfiguration wichtiger ist als die Optimierung der Intranet-Bandbreite im Internet, vor allem dann, wenn die meisten Remote Arbeitskräfte selten mit dem Intranet verbunden sind.
+Dies bedeutet, dass einige der Installationen und Updates für Roaminggeräte über das Internet erfolgen, während sie lokal und mit dem Intranet verbunden sind. Contoso-IT-Architekten haben jedoch entschieden, dass einfachheit der Konfiguration wichtiger ist als die Optimierung der Intranetbandbreite mit dem Internet, insbesondere dann, wenn die meisten Remotemitarbeiter nur selten mit dem Intranet verbunden sind.
 
-Hier ist die resultierende Infrastruktur.
+Hier sehen Sie die resultierende Infrastruktur.
 
-![Installierte und aktualisierte Infrastruktur von Contoso](../media/contoso-remote-onsite-work/contoso-updates-infrastructure.png)
+![Die Installations- und Aktualisierungsinfrastruktur von Contoso](../media/contoso-remote-onsite-work/contoso-updates-infrastructure.png)
 
-Das Installations-und Aktualisierungsverhalten wird bestimmt, indem die Computerkonten von Geräten als Mitglied einer dieser Gruppen festgelegt werden:
+Das Installations- und Updateverhalten wird bestimmt, indem die Computerkonten von Geräten Mitglied einer der folgenden Gruppen werden:
 
 - OnPremDevices
 
@@ -77,14 +77,14 @@ Das Installations-und Aktualisierungsverhalten wird bestimmt, indem die Computer
 
 - RoamingDevices
 
-  InTune und andere Einstellungen auf dem Gerät geben die Verwendung des Microsoft 365-Netzwerks für Installationen und Updates an.
+  Intune und andere Einstellungen auf dem Gerät geben die Verwendung des Microsoft 365-Netzwerks für Installationen und Updates an.
 
-## <a name="new-onboarding-process"></a>Neuer Onboarding-Prozess
+## <a name="new-onboarding-process"></a>Neuer Onboardingprozess
 
-Für ein neues dediziertes lokales Gerät, das für eine neue Arbeitskraft oder für einen neuen Server in einem Datencenter ausgestellt wird, lädt der Configuration Manager-Client, der auf der Mitgliedschaft des Geräts in der OnPremDevices-Gruppe basiert, die neuesten Updates für Windows 10, Microsoft 365 apps for Enterprise und Edge von lokalen Configuration Manager-Verteilungspunkten herunter und installiert diese. Wenn dieser Vorgang abgeschlossen ist, ist das dedizierte lokale Gerät für die Verwendung bereit und verwendet diese Verteilungspunkte für laufende Updates.
+Für ein neues dediziertes lokales Gerät, das einem neuen Mitarbeiter oder einem neuen Server in einem Datencenter ausgestellt wurde, lädt der Configuration Manager-Client, der auf der Mitgliedschaft des Geräts in der OnPremDevices-Gruppe basiert, die neuesten Updates für Windows 10, Microsoft 365 Apps for Enterprise und Edge von lokalen Configuration Manager-Verteilungspunkten herunter und installiert sie. Nach Abschluss des Vorgangs ist das dedizierte lokale Gerät einsatzbereit und verwendet diese Verteilungspunkte für laufende Updates.
 
-Für ein neues Remotegerät, das an eine neue Arbeitskraft ausgestellt wird, wenn sich die Arbeitskraft anmeldet, kontaktiert das Gerät, basierend auf seiner Mitgliedschaft in der Gruppe "RoamingDevices", den InTune-clouddienst und andere Dienste und lädt die neuesten Updates für Windows 10, Microsoft 365 apps for Enterprise und Edge herunter und installiert diese. Wenn dieser Vorgang abgeschlossen ist, ist das Remotegerät betriebsbereit und verwendet den installierten VPN-Client für den Zugriff auf lokale Ressourcen und das Microsoft 365-Netzwerk, um laufende Aktualisierungen durchführen zu können.
+Bei einem neuen Remotegerät, das für einen neuen Mitarbeiter ausgestellt wurde, kontaktiert das Gerät, basierend auf seiner Mitgliedschaft in der Gruppe RoamingDevices, den Intune-Clouddienst und andere Dienste und lädt die neuesten Updates für Windows 10, Microsoft 365 Apps for Enterprise und Edge herunter und installiert diese. Nach Abschluss des Vorgangs ist das Remotegerät einsatzbereit und verwendet den installierten VPN-Client für den Zugriff auf lokale Ressourcen und das Microsoft 365-Netzwerk für laufende Updates.
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Bevollmächtigen Sie die Remotemitarbeiter](empower-people-to-work-remotely.md) in Ihrer Organisation.
+[Unterstützen Sie die Remotemitarbeiter](empower-people-to-work-remotely.md) in Ihrer Organisation.

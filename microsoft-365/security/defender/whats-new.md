@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 9f4cc36172b0ac598b2719bee8ce56bf0f8a1b84
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 91029f03e089f44f49800bfe2d18536a8d415411
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933385"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029028"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Neuerungen in Microsoft 365 Defender
 
@@ -38,6 +38,12 @@ RSS-Feed: Erhalten Sie eine Benachrichtigung, wenn diese Seite aktualisiert wird
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
+
+## <a name="april-2021"></a>April 2021
+- Verbessertes Microsoft 365 Security Center <br> Das verbesserte [Microsoft 365 Security Center](https://security.microsoft.com) ist jetzt in der öffentlichen Vorschau verfügbar. Diese neue Umgebung integriert Microsoft Defender für Endpunkt, Microsoft Defender für Office, 365 Microsoft 365 Defender und mehr in das Microsoft 365 Security Center. Dies ist das neue Zuhause für die Verwaltung Ihrer Sicherheitssteuerelemente. [Erfahren Sie, was es Neues gibt](./overview-security-center.md).
+
+- [Microsoft 365 Defender Threat Analytics-Bericht](threat-analytics.md)<br>
+ Die Bedrohungsanalyse hilft Ihnen, auf die Auswirkungen aktiver Angriffe zu reagieren und diese zu minimieren. Sie können auch mehr über Angriffsversuche erfahren, die von Microsoft 365 Defender-Lösungen blockiert werden, und präventive Maßnahmen ergreifen, um das Risiko einer weiteren Gefährdung zu mindern und die Ausfallsicherheit zu erhöhen. Als Teil der einheitlichen Sicherheitserfahrung ist die Bedrohungsanalyse jetzt für Microsoft Defender for Endpoint und Microsoft Defender für Office E5-Lizenzinhaber verfügbar.
 
 ## <a name="march-2021"></a>März 2021
 - [CloudAppEvents-Tabelle](advanced-hunting-cloudappevents-table.md) <br>Hier finden Sie Informationen zu Ereignissen in verschiedenen Cloud-Apps und -Diensten, die von Microsoft Cloud App Security abgedeckt werden. Diese Tabelle enthält auch Informationen, die zuvor in verfügbar `AppFileEvents` waren.

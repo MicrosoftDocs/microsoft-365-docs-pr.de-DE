@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 291ee6d2f72579a6daf731c121265164b2aaa547
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c82e1abf9e539ad169bbc488ade9cd21bb8e6727
+ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066743"
+ms.lasthandoff: 04/26/2021
+ms.locfileid: "52029074"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender -Vorschaufeatures
 
@@ -68,10 +68,6 @@ Sie wissen, dass Sie Vorschaufeatures aktiviert haben, wenn Sie sehen, dass das 
 
 Die folgenden Features und Verbesserungen sind derzeit in der Vorschau verfügbar:
 
-### <a name="improved-microsoft-365-security-center"></a>Verbessertes Microsoft 365 Security Center
-Das verbesserte [Microsoft 365 Security Center](https://security.microsoft.com) ist jetzt in der öffentlichen Vorschau verfügbar. Diese neue Umgebung integriert Microsoft Defender für Endpunkt, Microsoft Defender für Office, 365 Microsoft 365 Defender und mehr in das Microsoft 365 Security Center. Dies ist das neue Zuhause für die Verwaltung Ihrer Sicherheitssteuerelemente. [Erfahren Sie, was es Neues gibt](./overview-security-center.md).
-
-- **[Microsoft 365 Defender Threat Analytics Report](threat-analytics.md)** – Bedrohungsanalyse hilft Ihnen, auf aktive Angriffe zu reagieren und die Auswirkungen zu minimieren. Sie können auch mehr über Angriffsversuche erfahren, die von Microsoft 365 Defender-Lösungen blockiert werden, und präventive Maßnahmen ergreifen, um das Risiko einer weiteren Gefährdung zu mindern und die Ausfallsicherheit zu erhöhen. Als Teil der einheitlichen Sicherheitserfahrung ist die Bedrohungsanalyse jetzt für Microsoft Defender for Endpoint und Microsoft Defender für Office E5-Lizenzinhaber verfügbar.
 - **[Microsoft 365 Defender-APIs](api-overview.md)** – Mit den Microsoft 365 Defender-APIs auf oberster Ebene können Sie Workflows basierend auf dem freigegebenen Vorfall und erweiterten Tabellen für die Suche automatisieren. 
 - **[Ergreifen Sie Maßnahmen bei der erweiterten Suche](advanced-hunting-take-action.md)**– Enthalten Sie schnell Bedrohungen oder adressieren sie gefährdete Objekte, die Sie bei der [erweiterten Suche finden.](advanced-hunting-overview.md)
 - **[In-Portal-Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**– Informationen zu Schematabellen für die erweiterte Suche direkt im Security Center erhalten. Zusätzlich zu Tabellen- und Spaltenbeschreibungen enthält dieser Verweis unterstützte Ereignistypen ( `ActionType` Werte) und Beispielabfragen.
