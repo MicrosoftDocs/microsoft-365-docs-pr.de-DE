@@ -2,10 +2,10 @@
 title: Windows and Office deployment lab kit
 f1.keywords:
 - NOCSH
-ms.author: josephd
-author: JoeDavies-MSFT
+ms.author: greglin
+author: greg-lindsay
 manager: laurawi
-ms.date: 08/10/2020
+ms.date: 04/26/2021
 ms.audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: efbcec6417b082311d3f094b0251702d8e0dbeac
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: c0cf3ce239ed91261bd6e53cf317a7053168509a
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028664"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060873"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Windows and Office deployment lab kit
 
@@ -104,23 +104,15 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 ## <a name="additional-guidance"></a>Zusätzliche Anleitung
 
   - [Videos zur Videoreihe über die Desktopbereitstellung von Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
-
   - [Betriebssystembereitstellung mit Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
-
   - [Planen der Windows 10-Bereitstellung](/windows/deployment/planning/index)
-
   - [Bereitstellungshandbuch für Microsoft 365-Apps](/deployoffice/deployment-guide-microsoft-365-apps)
-
   - [Erste Schritte mit Intune](/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
   - [Einführung in Microsoft 365](https://www.microsoft.com/microsoft-365/default.aspx)
-
   - [Office 365 for business](https://products.office.com/business/office)
-
   - [Einführung in Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
-
   - [Windows 10 für große Unternehmen](https://www.microsoft.com/WindowsForBusiness/windows-for-enterprise)
-
   - [Windows 10 für kleine und mittelständische Unternehmen](https://www.microsoft.com/WindowsForBusiness/windows-for-small-business)

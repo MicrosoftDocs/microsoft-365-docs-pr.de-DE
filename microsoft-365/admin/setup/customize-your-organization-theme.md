@@ -22,67 +22,140 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: 'Erfahren Sie, wie Sie das Standarddesign von Microsoft 365 ändern und es an Ihr Firmenlogo oder Ihre Farben anpassen können. '
-ms.openlocfilehash: 9d17ac800fb0fe38627fcb7842ed5555d2ac28ae
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
-ms.translationtype: HT
+ms.openlocfilehash: b7a0b142b8bd465a9e3258aaaeb951b72bc53fc7
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926882"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060910"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Passen Sie das Microsoft 365-Design für Ihr Unternehmen an
 
-Als Administrator Ihres Microsoft 365 for Business-Abonnements können Sie das Standarddesign ändern, das in der oberen Navigationsleiste für alle Mitarbeiter der Organisation angezeigt wird:
+Als Administrator Ihrer Organisation können Sie mehrere Designs für die Personen in Ihrer Organisation erstellen und auswählen, welche Designs für unterschiedliche Mitglieder Ihrer Organisation gelten. Das Organisationsdesign wird in der oberen Navigationsleiste für Personen in Ihrer Organisation angezeigt.
 
-- Fügen Sie Ihr Firmenlogo hinzu.
-- Ändern Sie die Farben, um sie an den Rest Ihrer Marke anzupassen.
-- Fügen Sie einen Ziellink hinzu, zu dem Benutzer gehen, wenn sie Ihr Logo auswählen.
+Sie können ein Standarddesign hinzufügen oder aktualisieren, das für alle Benutzer in Ihrer Organisation gilt. Sie können auch bis zu vier zusätzliche Gruppenthemen erstellen, die mehreren Microsoft 365-Gruppen zugewiesen werden können.
   
-## <a name="customize-your-theme-in-the-admin-center"></a>Anpassen Ihres Designs im Admin Center
+## <a name="add-or-update-your-organizations-theme"></a>Hinzufügen oder Aktualisieren des Designs Ihrer Organisation
 
 1. Gehen Sie im Admin-Center auf die Seite **Einstellungen** \> **Org-Einstellungen** und wählen Sie dann die Registerkarte **Organisationsprofil**.
 
-2. Wählen Sie auf der Registerkarte **Organisationsprofil** die Option **Benutzerdefinierte Designs**.
+2. Wählen Sie **auf der Registerkarte** Organisationsprofil die Option **Organisationsdesign aus.**
 
-3. Ändern Sie im Bedienfeld **Benutzerdefinierte Designs** die gewünschten Designelemente für Ihr Unternehmen:
+Alle Designs können mithilfe der folgenden Registerkarten angepasst werden.
 
-    - **Benutzerdefiniertes Logobild verwenden**: Wählen Sie, ob Sie ein Bild aus einer URL verwenden oder ein Bild hochladen möchten. Wenn Sie eine URL verwenden, stellen Sie sicher, dass die URL HTTPS verwendet und dass das Bild ein Format von 200 x 30 Pixeln in beliebiger Größe hat. Sie können ein Logo unter 10 KB hochladen, das 200 x 30 Pixel groß ist, im JPG-, PNG-, GIF- oder SVG-Format.
+|**Tab**|**What can you do?**|
+|:-----|:-----|
+|[Allgemein](#general-modify-a-theme) <br/> |Ändern Eines Designnamens und Zuweisen zu bis zu fünf Gruppen (sofern zutreffend).  <br/> |
+|[Logos](#logos-specify-your-theme-logos) <br/> |Fügen Sie Ihr Designlogo hinzu, einschließlich des dunklen Office-Designs und mobiler Optionen.  <br/> |
+|[Colors](#colors-choose-theme-colors) <br/> |Passen Sie ein Farbschema an, indem Sie Navigationsleisten-, Akzent-, Text- und Symbolfarben angeben. <br/> |
 
-      > [!NOTE]
-      > Damit das Logo in der SharePoint Mobile App erscheint, verwenden Sie nur SVG-Bilder. Bilder, die in einem anderen Format hochgeladen werden, werden in der App nicht angezeigt. Logos sind in der SharePoint Mobile App nicht anklickbar.
+## <a name="general-modify-a-theme"></a>Allgemein: Ändern eines Designs
 
-    - **Logo anklickbar machen**: Sie können Ihr Logo in der Navigationsleiste als Link zu einer beliebigen Unternehmensressource verwenden. Sie können hier die URL für das Logo eingeben, beginnend mit http:// oder https://. Dies ist optional.
+Ihre Erfahrung auf der Registerkarte Allgemein hängt davon ab, ob Sie das Standarddesign oder ein Gruppendesign hinzufügen oder ändern.
 
-    - **Hintergrundbild auswählen**: Wählen Sie das Bild aus und laden Sie Ihr eigenes JPG, PNG oder GIF mit einer Auflösung von 1366 x 50 Pixeln, nicht größer als 15 KB, hoch. Das Hintergrundbild erscheint in der oberen Navigationsleiste auf jeder Seite.
+### <a name="update-the-default-theme"></a>Aktualisieren des Standarddesigns
 
-      > [!NOTE]
-      > Bilder, die Text enthalten, werden möglicherweise nicht wie erwartet angezeigt. Eingebaute Elemente, die auf der rechten und linken Seite der Navigationsleiste erscheinen, können bei verschiedenen Diensten unterschiedlich sein, und Ihr Text wird möglicherweise von diesen Elementen verdeckt.
+Das Standarddesign ist das erste angezeigte Design.  
 
-    - **Farbe der Navigationsleiste**: Wählen Sie eine Farbe, die für den Hintergrund der Navigationsleiste verwendet werden soll. Die Navigationsleiste erscheint oben auf jeder Seite.
+1. Wenn Sie zuvor ein Design für Ihre Organisation angepasst haben, wählen Sie **Standarddesign aus,** und verwenden Sie eine Ihrer gespeicherten Anpassungen, oder wählen Sie **Design hinzufügen aus.**
+2. Auf der **Seite Allgemein** können Sie verhindern, dass Benutzer ihr Design überschreiben und den Anzeigenamen des Benutzers anzeigen.
+3. Wählen Sie **Speichern** aus, um Ihre Änderungen zu speichern.  
 
-    - **Text und Symbole**: Wählen Sie eine Farbe für den Text und die Symbole in der oberen Navigationsleiste aus.
+> [!IMPORTANT]
+> Das Standarddesign ist eindeutig, kann nicht umbenannt werden und gilt für alle Benutzer in Ihrer Organisation. Zum Löschen des Standarddesigns müssen Sie zuerst alle anderen Designs löschen.
 
-    - **Akzentfarbe**: Wählen Sie eine Farbe aus, die für die Schwebefarbe der Navigationsleistenschaltfläche und für Seitenakzente wie Schaltflächen und Text in bestimmten Anwendungen verwendet werden soll.
+:::image type="content" source="../../media/default-theme-general.png" alt-text="Screenshot: Registerkarte Allgemein mit dem Standarddesign für Ihre Organisation":::
 
-    - **Benutzer am Überschreiben des Designs hindern**: Schalten Sie diesen Schalter um, um zu verhindern, dass Benutzer ihr eigenes Designs aus unserer Designauswahl auswählen. Dies hindert den Benutzer nicht daran, ein kontrastreiches Design einzustellen.
+### <a name="create-a-group-theme"></a>Erstellen eines Gruppendesigns
 
-    - **Den Benutzernamen anzeigen**: Wählen Sie, ob der vollständige Name eines Benutzers am Einstiegspunkt zum Kontomanager oben rechts auf der Seite angezeigt werden soll, wenn der Benutzer angemeldet ist. Standardmäßig sehen Benutzer ihr Foto oder ihre Initialen, wenn kein Foto hochgeladen wurde.
+Sie können bis zu vier zusätzliche Gruppenthemen erstellen.
 
-4. Wählen Sie **Änderungen speichern** aus.
+1. Geben Sie **auf** der Seite Allgemein einen Namen für Ihr Design ein.
 
-Sie können Ihr neues Design sofort im Admin-Center sehen. Nach einer kurzen Verzögerung können Sie es in ganz Microsoft 365 sehen, einschließlich auf Seiten in Outlook, SharePoint, [SharePoint Mobile App für iOS](https://support.microsoft.com/office/339402ce-16bb-4c97-9475-0c5375ccef7a) und [SharePoint Mobile App für Android](https://support.microsoft.com/office/d875654b-fb0a-4dbe-a17a-a676cf936284).
+2. Unter **Gruppen** können Sie bis zu 5 Microsoft 365-Gruppen auswählen, die Ihr Gruppendesign sehen können, anstatt das Standarddesign zu verwenden. Sie können auch verhindern, dass Benutzer ihr Design überschreiben und den Anzeigenamen des Benutzers anzeigen.
 
-Sie können das benutzerdefinierte Symbol oder die benutzerdefinierten Farben jederzeit entfernen. Kehren Sie einfach zur Designseite zurück, und wählen Sie **Benutzerdefiniertes Design entfernen** aus.
+3. Wählen Sie **Speichern** aus.
+
+:::image type="content" source="../../media/default-theme-general-users.png" alt-text="Screenshot: Registerkarte Allgemein mit dem Standarddesign für eine Gruppe von Benutzern in Ihrer Organisation":::
+
+## <a name="logos-specify-your-theme-logos"></a>Logos: Geben Sie Ihre Designlogos an
+
+Auf der **Seite Logos** können Sie Ihre Logos hinzufügen und die URL angeben, zu der Benutzer navigieren, wenn sie das Logo auswählen.
+
+- **Standardlogo:** Fügen Sie einen URL-Speicherort hinzu, der auf Ihr Logo verweist. Stellen Sie sicher, dass die URL HTTPS verwendet und dass das Bild mindestens 200 x 30 Pixel groß ist. Ihr Standardlogo kann im JPG-, PNG-, GIF- oder SVG-Format vorliegen.
+- **Alternatives Logo:** Fügen Sie einen URL-Speicherort hinzu, der auf Ihr Logo verweist. Ihr alternatives Logo sollte für die Verwendung in dunklen Office-Designs optimiert werden. Dieselben Anforderungen wie das Standardlogo.
+- **Kleines Standardlogo:** Fügen Sie einen URL-Speicherort hinzu, der auf Ihr Logo verweist. Das Bild muss mindestens 48 x 48 Pixel groß sein. Sie können dieses Bild so skalieren, dass es auf kleineren oder mobilen Geräten passt.
+- **Kleines alternatives Logo:** Fügen Sie einen URL-Speicherort hinzu, der auf Ihr Logo verweist. Dieses Bild hat die gleichen Anforderungen wie das kleine Standardlogo.
+- **On-Click-Link**: Fügen Sie einen URL-Speicherort hinzu, der auf Ihr Logo verweist. Sie können Ihr Logo als Link zu einer beliebigen Unternehmensressource verwenden, z. B. der Website Ihres Unternehmens.
+
+Wählen Sie **Speichern** aus, um Ihre Änderungen zu speichern.
+
+Sie können Ihre Logos jederzeit entfernen. Kehren Sie einfach zur **Seite Logos** zurück, und wählen Sie **Entfernen aus.**
+
+:::image type="content" source="../../media/default-theme-logos.png" alt-text="Screenshot: Registerkarte Logos mit dem Standarddesignlogo für Ihre Organisation":::
+
+> [!NOTE]
+> Standardmäßig zeigen wir zuerst die Logoauswahl an, die von den meisten Organisationen verwendet wird. Um alle Logoauswahlen anzuzeigen, wechseln Sie zum Ende der Liste, und wählen **Sie Erweiterte Optionen sehen aus.**
   
-## <a name="best-practices"></a>Bewährte Methoden
+## <a name="colors-choose-theme-colors"></a>Farben: Wählen Sie Designfarben aus
 
-- **Logobild**: Verwenden Sie einen SVG-Dateityp, damit Ihr Logo in hoher Auflösung auf allen Bildschirmen und in allen Zoomstufen erscheint.
+Auf der **Seite Farben** können Sie die Standardfarben festlegen und auswählen, welches Logo verwendet werden soll.
 
-- **Benutzerdefinierte Farben**: Wählen Sie eine **Hintergrundfarbe für die Navigationsleiste** mit einem hohen Kontrastverhältnis zu dem von Ihnen gewählten **Logo-Bild**. Wählen Sie eine **Text- und Symbolfarbe** mit einem hohen Kontrastverhältnis zur **Hintergrundfarbe der Navigationsleiste**, damit alle Texte und Symbole gut sichtbar sind.
-
+- **Farbe der Navigationsleiste**: Wählen Sie eine Farbe, die für den Hintergrund der Navigationsleiste verwendet werden soll. Die Navigationsleiste erscheint oben auf jeder Seite.
+- **Text- und Symbolfarbe:** Wählen Sie eine Farbe aus, die für den Text und Symbole in der oberen Navigationsleiste verwendet werden soll.
 - **Akzentfarbe**: Wählen Sie eine Farbe, die auf einem weißen oder hellen Hintergrund gut zur Geltung kommt. Die Akzentfarbe wird verwendet, um einige Links und Schaltflächen einzufärben, die auf einem weißen oder hellen Hintergrund angezeigt werden. Die Akzentfarbe wird z. B. zur Einfärbung von Elementen im Posteingang eines Benutzers und auf seiner Office.com-Portalseite verwendet.
-  
-- **Kontrastverhältnis**: Das empfohlene Kontrastverhältnis zwischen Text-, Symbol- oder Tastenfarbe und Hintergrundfarbe beträgt 4,5:1.
+- **Farbe zurücksetzen:** Wählen Sie diesen Link aus, um Farben auf die Standardfarben zurückzusetzen.
+- **Welches Logo sollte verwendet werden?**: Wählen Sie Standardlogos oder andere Logos aus, die Sie selbst erstellt haben.
+
+:::image type="content" source="../../media/default-theme-colors.png" alt-text="Screenshot: Registerkarte Farben mit Standarddesignfarben für Ihre Organisation":::
+
+## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
+
+### <a name="my-organization-already-has-a-theme-for-all-employees-how-will-this-change"></a>Meine Organisation verfügt bereits über ein Design für alle Mitarbeiter. Wie wird sich dies ändern?
+
+Das Standarddesign wird weiterhin allen Mitarbeitern angezeigt.Das Hinzufügen eines neuen Gruppendesigns wird nur für die Microsoft 365-Gruppen verfügbar gemacht, die diesem Design zugeordnet sind.
+
+### <a name="whydont-isee-group-themes-in-the-admin-center"></a>Warum werden im Admin Center keine Gruppenthemen zu sehen sein?
+
+Nur globale Administratoren können Unternehmensthemen anpassen.Globale Leser haben schreibgeschützten Zugriff.
+
+### <a name="how-many-different-themes-can-i-set-up-for-my-organization"></a>Wie viele verschiedene Designs kann ich für meine Organisation einrichten?  
+
+Es können bis zu fünf Designs erstellt werden. Ein Standarddesign und vier Gruppendesigns.  
+
+### <a name="can-i-use-security-groups-or-distribution-groups-instead-of-microsoft-365-groups"></a>Kann ich Sicherheitsgruppen oder Verteilergruppen anstelle von Microsoft 365-Gruppen verwenden?
+
+Nein, neue Gruppenthemen müssen einer oder mehreren Microsoft 365-Gruppen und nicht Sicherheitsgruppen oder Verteilergruppen zugeordnet werden.
+
+> [!NOTE]
+> Sie können [Verteilergruppen in Microsoft 365-Gruppen](../manage/upgrade-distribution-lists.md) in Outlook konvertieren.
+
+### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>Kann ich ein design unabhängig von Microsoft 365-Gruppen manuell zuweisen?  
+
+Nein, neue Gruppenthemen müssen einer oder mehreren Microsoft 365-Gruppen zugeordnet werden. Benutzer, die Mitglieder der Microsoft 365-Gruppe sind, erhalten das Design, das auf ihre Gruppe angewendet wird. Sie können [neue Mitglieder einer Microsoft 365-Gruppe](../create-groups/create-groups.md)  **** erstellen und hinzufügen, indem Sie zu den Einstellungsgruppen im Admin   >  **** Center gehen.
+
+### <a name="what-happens-if-a-user-is-assigned-to-multiple-group-themes"></a>Was geschieht, wenn einem Benutzer mehrere Gruppenthemen zugewiesen sind?  
+
+Benutzern, die mehreren Gruppendesigns zugewiesen sind, wird das Standarddesign angezeigt.  
+
+### <a name="why-cant-i-delete-the-default-theme"></a>Warum kann ich das Standarddesign nicht löschen?  
+
+Das Standarddesign kann nur gelöscht werden, wenn alle Gruppendesigns gelöscht wurden. Stellen Sie sicher, dass Sie alle Gruppendesigns löschen, bevor Sie versuchen, das Gruppendesign zu löschen.
+
+### <a name="why-am-i-receiving-an-error-message-every-time-i-uploadalogo-url"></a>Warum erhält ich jedes Mal eine Fehlermeldung, wenn ich eine Logo-URL hochlade.  
+
+Stellen Sie sicher, dass das von Ihnen verwendete Logo als öffentlich adressierbare URL angegeben ist. Führen Sie die folgenden Schritte [aus, um Logos in Azure Blob Storage](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet) oder das Office [365 Content Delivery Network mit SharePoint Online hochzuladen.](../../enterprise/use-microsoft-365-cdn-with-spo.md)
+
+### <a name="why-am-i-receiving-themessagedoesnt-meet-minimum-color-contrast-ratio-of-451"></a>Warum erhält ich die Meldung "Erfüllt das minimale Farbkontrastverhältnis von 4,5:1 nicht"?
+
+Das empfohlene Kontrastverhältnis zwischen Text, Symbol- oder Schaltflächenfarbe und Hintergrundfarbe ist 4,5:1. Sie können diese Empfehlung außer Kraft setzen und dennoch Ihr Design speichern, da dies nicht erforderlich ist.
+
+### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Wenn ich ein Design definieren, welche Orte in Microsoft 365 wird dies verwendet?
+
+Jedes Design wird in der oberen Navigationsleiste für alle Personen in der Organisation als Teil der Microsoft 365-Suite-Kopfzeile angezeigt.  
   
 ## <a name="related-articles"></a>Verwandte Artikel
 
 [Hinzufügen benutzerdefinierter Kacheln zur Seite "Meine Apps" und zum App-Startprogramm](../manage/customize-the-app-launcher.md)
+
+[Übersicht über Microsoft 365-Gruppen für Administratoren](https://docs.microsoft.com/microsoft-365/admin/create-groups/office-365-groups)

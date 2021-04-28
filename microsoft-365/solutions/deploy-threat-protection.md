@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: ea28e9c244b6b8faaeb9b1f3685d57169605cbb9
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 0edc3847d6b832f254c6f289355570a3a044b1f4
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650314"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52061037"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Bereitstellen von Bedrohungsschutzfunktionen in Microsoft 365 E5
 
-Diese Lösung beschreibt leistungsstarke Funktionen zum Schutz vor Bedrohungen in Microsoft 365 E5. Lesen Sie diese Lösung, um einen Überblick darüber zu erhalten, was enthalten ist, wie sie funktioniert und wie Sie mit der Bereitstellung dieser Funktionen in Ihrer Organisation beginnen können.
+Diese Lösung beschreibt leistungsstarke Funktionen zum Schutz vor Bedrohungen in Microsoft 365 E5 und warum diese Funktionen wichtig sind. Lesen Sie diese Lösung, um einen Überblick darüber zu erhalten, was in Microsoft 365 E5 enthalten ist, wie Funktionen zum Schutz vor Bedrohungen funktionieren und wie Sie den Bedrohungsschutz in Ihrer Organisation einrichten und konfigurieren.
 
-## <a name="why-protecting-against-threats-is-important"></a>Warum der Schutz vor Bedrohungen wichtig ist 
+## <a name="why-threat-protection-is-important"></a>Warum Bedrohungsschutz wichtig ist 
 
 [Schadsoftware](/windows/security/threat-protection/intelligence/understanding-malware)und komplexe Cyberangriffe, z. B. [dateilose](/windows/security/threat-protection/intelligence/fileless-threats)Bedrohungen, sind häufig vorkommen. Unternehmen müssen sich und ihre Kunden mit effektiven IT-Sicherheitsfunktionen schützen. Cyberangriffe können große Probleme für Ihre Organisation verursachen, von Vertrauensverlusten bis hin zu finanziellen Problemen, geschäftsbedrohlichen Ausfallzeiten und vielem mehr. Der Schutz vor Bedrohungen ist wichtig, es kann jedoch schwierig sein, zu bestimmen, wo die Zeit, der Aufwand und die Ressourcen Ihrer Organisation konzentriert werden sollen. Microsoft 365 E5 kann ihnen helfen. 
 
