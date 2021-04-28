@@ -26,7 +26,7 @@
 |STICKY NOTES|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|✔|
 |STREAM|Geplant|Geplant|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
 |SWAY|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|✔|
-|TEAMS|✔|✔|Geplant|Geplant|Nicht zutreffend|
+|TEAMS|✔|✔|Geplant|✔|Nicht zutreffend|
 |TO-DO|✔|✔|Nicht zutreffend|Nicht zutreffend|✔|
 |VISIO|Nicht zutreffend|✔|Nicht zutreffend|✔|Nicht zutreffend|
 |WHITEBOARD|Nicht zutreffend|✔|Nicht zutreffend|Nicht zutreffend|✔|

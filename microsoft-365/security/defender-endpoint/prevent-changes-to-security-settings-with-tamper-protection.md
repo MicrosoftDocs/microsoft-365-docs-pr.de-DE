@@ -15,12 +15,12 @@ author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 84864965d7a18902a01307c1dcf373fa7c0534e8
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: ff98b78d113a67ad6bd816753c691e8afe71dd77
+ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765575"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52065073"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Schützen von Sicherheitseinstellungen mit Manipulationsschutz
 
@@ -61,6 +61,8 @@ Manipulationsschutz sperrt Im Wesentlichen Microsoft Defender Antivirus und verh
 
 Manipulationsschutz verhindert nicht, dass Sie Ihre Sicherheitseinstellungen anzeigen. Und der Manipulationsschutz hat keine Auswirkungen darauf, wie sich Antiviren-Apps von Drittanbietern bei der Windows Security-App registrieren. Wenn Ihre Organisation Windows 10 Enterprise E5 verwendet, können einzelne Benutzer die Einstellung zum Schutz vor Manipulationen nicht ändern. In diesen Fällen wird der Manipulationsschutz von Ihrem Sicherheitsteam verwaltet.
 
+
+
 ### <a name="what-do-you-want-to-do"></a>Was möchten Sie machen?
 
 | So führen Sie diese Aufgabe aus... | Siehe diesen Abschnitt... |
@@ -73,6 +75,19 @@ Manipulationsschutz verhindert nicht, dass Sie Ihre Sicherheitseinstellungen anz
 | Überprüfen Ihrer Sicherheitsempfehlungen | [Überprüfen von Sicherheitsempfehlungen](#review-your-security-recommendations) |
 | Überprüfen der Liste der häufig gestellten Fragen (FAQs) | [Durchsuchen der FAQs](#view-information-about-tampering-attempts) |
 
+Abhängig von der Methode oder dem Verwaltungstool, die Sie zum Aktivieren des Manipulationsschutzes verwenden, kann es eine Abhängigkeit von MAPS (Cloud-delivered Protection) gibt. 
+
+Die folgende Tabelle enthält Details zu den Methoden, Tools und Abhängigkeiten.
+
+
+
+|     Aktivieren des Schutzes von Manipulationen                                         |     Abhängigkeit von MAPS (Cloud-zugestellter Schutz)    |
+|------------------------------------------------------------------------------|--------------------------------------------------------|
+|     Microsoft Intune                                                         |     Nein                                                 |
+| Microsoft Endpoint Configuration Manager + Tenant Attach                     |     Nein                                                 |
+|     Microsoft Defender for Endpoint Portal (securitycenter.microsoft.com)    |     Ja                                                |
+|     Microsoft 365 Defender Portal (security.microsoft.com)                   |     Ja                                                |
+
 ## <a name="manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center"></a>Verwalten des Manipulationsschutzes für Ihre Organisation mithilfe des Microsoft Defender Security Center
 
 Der Manipulationsschutz kann für Ihren Mandanten über das Microsoft Defender Security Center ( ) aktiviert oder deaktiviert [https://securitycenter.windows.com](https://securitycenter.windows.com) werden. Hier sind einige Punkte, die Sie beachten sollten:
@@ -84,6 +99,9 @@ Der Manipulationsschutz kann für Ihren Mandanten über das Microsoft Defender S
 - Wenn Sie den Manipulationsschutz im Microsoft Defender Security Center verwalten, wird die Einstellung mandantenweit angewendet, was sich auf alle Geräte mit Windows 10, Windows Server 2016 oder Windows Server 2019 ausdingt. Verwenden Sie zum Optimieren des Manipulationsschutzes (z. B. den Manipulationsschutz für einige Geräte, aber für andere deaktiviert), [entweder Intune](#manage-tamper-protection-for-your-organization-using-intune) oder [Configuration Manager mit Mandantenattachgabe](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006).
 
 - Wenn Sie über eine Hybridumgebung verfügen, haben in Intune konfigurierte Manipulationsschutzeinstellungen Vorrang vor einstellungen, die im Microsoft Defender Security Center konfiguriert sind. 
+
+
+
 
 ### <a name="requirements-for-managing-tamper-protection-in-the-microsoft-defender-security-center"></a>Anforderungen für die Verwaltung von Manipulationsschutz im Microsoft Defender Security Center
 
@@ -297,4 +315,4 @@ Ihr Sicherheitsteam kann auch Suchabfragen verwenden, z. B. das folgende Beispie
 
 [Verschaffen Sie sich einen Überblick über Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint)
 
-[Besser zusammen: Microsoft Defender Antivirus und Microsoft Defender for Endpoint](why-use-microsoft-defender-antivirus.md)
+[Noch besser zusammen: Microsoft Defender Antivirus und Microsoft Defender für Endpunkt](why-use-microsoft-defender-antivirus.md)

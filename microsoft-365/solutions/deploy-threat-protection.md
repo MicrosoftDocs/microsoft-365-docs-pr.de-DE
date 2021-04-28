@@ -1,7 +1,7 @@
 ---
 title: Bereitstellen von Bedrohungsschutzfunktionen in Microsoft 365
 description: Verschaffen Sie sich einen Überblick über Die Bedrohungsschutzdienste und Sicherheitsfunktionen in Microsoft 365 E5. Schützen Sie Ihre Benutzerkonten, Geräte, E-Mail-Inhalte und mehr mit Microsoft 365 E5.
-keywords: advanced threat protection, security, microsoft 365 E5, solution, protect devices, defender
+keywords: lösung, setup, advanced threat protection, atp, security, microsoft 365 E5, protect devices, defender, m365
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 0edc3847d6b832f254c6f289355570a3a044b1f4
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 04e9ed3d108fa68bdfbf3b34de618d904e3f2cba
+ms.sourcegitcommit: ddb1bf56bcba4f03c803f79492e8cd0dc41a3d7a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061037"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52065097"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Bereitstellen von Bedrohungsschutzfunktionen in Microsoft 365 E5
 
-Diese Lösung beschreibt leistungsstarke Funktionen zum Schutz vor Bedrohungen in Microsoft 365 E5 und warum diese Funktionen wichtig sind. Lesen Sie diese Lösung, um einen Überblick darüber zu erhalten, was in Microsoft 365 E5 enthalten ist, wie Funktionen zum Schutz vor Bedrohungen funktionieren und wie Sie den Bedrohungsschutz in Ihrer Organisation einrichten und konfigurieren.
+Diese Lösung beschreibt leistungsstarke Funktionen zum Schutz vor Bedrohungen in Microsoft 365 E5 und erläutert, warum Der Schutz vor Bedrohungen wichtig ist. Lesen Sie diesen Artikel, um einen Überblick über den Bedrohungsschutz in Microsoft 365 E5 zu erhalten und wie Sie setup and configuration for your organization vorgehen.
 
 ## <a name="why-threat-protection-is-important"></a>Warum Bedrohungsschutz wichtig ist 
 
@@ -60,7 +60,7 @@ Die folgende Abbildung zeigt einen empfohlenen Pfad für die Bereitstellung dies
 |Lösung/Funktionen  |Beschreibung  |
 |---------|---------|
 |Mehrstufige Authentifizierung und bedingter Zugriff     |Schutz vor gefährdeten Identitäten und Geräten. Beginnen Sie mit diesem Schutz, da er grundsindlich ist. Die in diesem Leitfaden empfohlene Konfiguration umfasst Azure AD Identity Protection als Voraussetzung.     |
-|Microsoft Defender for Identity     |  Eine cloudbasierte Sicherheitslösung, die Ihre lokalen Active Directory Domain Services (AD DS)-Signale nutzt, um erweiterte Bedrohungen, gefährdete Identitäten und schädliche Insideraktionen zu identifizieren, zu erkennen und zu untersuchen, die an Ihre Organisation gerichtet sind. Konzentrieren Sie sich als Nächstes auf Microsoft Defender for Identity, da es Ihre lokale und Cloudinfrastruktur schützt, keine Abhängigkeiten oder Voraussetzungen hat und sofortige Sicherheitsvorteile bieten kann. | 
+|Microsoft Defender for Identity     |  Eine cloudbasierte Sicherheitslösung, die Ihre lokalen Active Directory Domain Services (AD DS)-Signale verwendet, um erweiterte Bedrohungen, gefährdete Identitäten und schädliche Insideraktionen zu identifizieren, zu erkennen und zu untersuchen, die an Ihre Organisation gerichtet sind. Konzentrieren Sie sich als Nächstes auf Microsoft Defender for Identity, da es Ihre lokale und Cloudinfrastruktur schützt, keine Abhängigkeiten oder Voraussetzungen hat und sofortige Sicherheitsvorteile bieten kann. | 
 |Microsoft Defender für Office 365     | Schützt Ihre Organisation vor böswilligen Bedrohungen durch E-Mail-Nachrichten, Links (URLs) und Tools für die Zusammenarbeit. Schutz vor Schadsoftware, Phishing, Spoofing und anderen Angriffstypen. Als Nächstes wird die Konfiguration von Microsoft Defender für Office 365 empfohlen, da die Änderungssteuerung, das Migrieren von Einstellungen vom etablierten System und andere Überlegungen länger dauern können. <p>**HINWEIS**: Stellen Sie sicher, dass Sie die Bedrohungsschutzfunktionen konfigurieren, die in allen Office 365-Abonnements (Exchange Online Protection) enthalten sind.       |
 |Microsoft Defender für Endpunkt    | Eine Endpunktschutzplattform, die hilft, erweiterte Bedrohungen zu verhindern, zu erkennen, zu untersuchen und auf sie zu reagieren.  Die Bereitstellung von Defender for Endpoint kann einige Zeit in Dauern dauern, die Konfiguration kann jedoch parallel zu anderen Funktionen ausgeführt werden.   |
 |Microsoft Cloud App Security     |   Ein Cloudzugriffssicherheitsbroker für Ermittlung, Untersuchung und Governance. Sie können Microsoft Cloud App Security frühzeitig aktivieren, um mit dem Sammeln von Daten und Erkenntnissen zu beginnen. Die Implementierung von Informationen und anderen gezielten Schutz in Ihren SaaS-Apps umfasst die Planung und kann mehr Zeit in Sich nehmen.       | 
@@ -74,7 +74,7 @@ Das folgende Diagramm veranschaulicht den prozess auf hoher Ebene für die Berei
 
 ![Prozess für die Bereitstellung von Funktionen zum Schutz vor Bedrohungen](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png)
 
-Um sicherzustellen, dass Ihre Organisation über den bestmöglichen Schutz verfügt, richten Sie Ihre Sicherheitslösung mithilfe eines Prozesses ein, der die folgenden Schritte umfasst:
+Um sicherzustellen, dass Ihre Organisation über den bestmöglichen Schutz verfügt, richten Sie Ihre Sicherheitslösung mit einem Prozess ein, der die folgenden Schritte umfasst:
 
 1. [Einrichten von mehrstufiger Authentifizierung und Richtlinien für bedingten Zugriff](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies).
 2. [Konfigurieren von Microsoft Defender for Identity](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity).
@@ -89,6 +89,6 @@ Ihre Bedrohungsschutzfeatures können parallel konfiguriert werden. Wenn Sie als
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Fahren Sie [mit Configure threat protection capabilities across Microsoft 365 fort.](deploy-threat-protection-configure.md)
+Fahren Sie mit [Configure threat protection capabilities across Microsoft 365 fort.](deploy-threat-protection-configure.md)
 
 
