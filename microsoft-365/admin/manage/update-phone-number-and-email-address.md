@@ -20,18 +20,20 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Aktualisieren Sie Ihre Administratortelefonnummer und E-Mail-Adresse im Admin Center. Sie benötigen diese Informationen, wenn Sie Ihr eigenes Administratorkennwort zurücksetzen möchten.
-ms.openlocfilehash: 39b68905c0d43608a0d0ce1d37167fd7d9aff8fb
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 49e3cd3e861499d41107b9c76da175a95e74bb0e
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470917"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073777"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Aktualisieren Ihrer Administratortelefonnummer und E-Mail-Adresse
 
 In diesem Artikel wird erläutert, wie Sie, der Administrator, Ihr Geschäftstelefon und Ihre E-Mail-Adresse in Microsoft 365 ändern können.
   
 Wenn Sie wissen möchten, wie Sie die Profilinformationen Ihres Unternehmens, z. B. Unternehmensname und -adresse, Telefonnummer des Unternehmens und technische Kontaktinformationen, ändern können, lesen Sie [Ändern der Adress- und anderen Profilinformationen Ihrer Organisation](change-address-contact-and-more.md).
+
+Weitere Informationen zum Ändern von Benutzerkontaktinformationen oder zum Entfernen ehemaliger Mitarbeiter finden Sie unter [Verwandte Inhalte](#related-content).
   
 ## <a name="to-update-your-phone-number-and-email-address"></a>So aktualisieren Sie Ihre Telefonnummer und E-Mail-Adresse
 
@@ -53,3 +55,13 @@ Bei Fragen zur Abrechnung werden Sie hier fündig:
 - [Ändern Ihrer Rechnungsadressen für Microsoft 365 Business](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
 - [Zahlungsmethoden verwalten](../../commerce/billing-and-payments/manage-payment-methods.md)
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Ändern eines Benutzernamens und einer E-Mail-Adresse](../add-users/change-a-user-name-and-email-address.md) (Video)
+
+[Hinzufügen eines neuen Mitarbeiters](../add-users/add-new-employee.md) (Video)
+
+[Entfernen eines ehemaligen Mitarbeiters](../add-users/remove-former-employee.md) (Video)
+
+[Zugreifen auf und Sichern der Daten](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) eines ehemaligen Benutzers (Artikel)

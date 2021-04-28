@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: df48ec921dee7d8f3b441ed3f68ed148c5c6c857
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f43d3bf9575f00649a2b5015a8be16351bebd11b
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932977"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073961"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Proaktive Suche nach Bedrohungen mit erweiterter Suche in Microsoft 365 Defender
 
@@ -40,7 +40,7 @@ ms.locfileid: "51932977"
 >
 
 Bei der erweiterten Suche handelt es sich um ein abfragebasiertes Tool für die Bedrohungssuche, mit dem Sie Rohdaten von bis zu 30 Tagen erkunden können. Sie können Ereignisse in Ihrem Netzwerk proaktiv überprüfen, um Bedrohungsindikatoren und -entitäten zu finden. Der flexible Zugriff auf Daten ermöglicht die ungesübte Suche nach bekannten und potenziellen Bedrohungen.
-<p></p>
+<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bp7O]
 
@@ -55,17 +55,6 @@ Diese Funktion ähnelt der [erweiterten Suche in Microsoft Defender for Endpoint
 
 Um die erweiterte Suche zu verwenden, [aktivieren Sie Microsoft 365 Defender](m365d-enable.md).
 
-### <a name="before-you-begin"></a>Bevor Sie beginnen:
-
-Benutzer benötigen eine der folgenden Berechtigungsstufen für den Zugriff auf Microsoft Defender:
-
-- Vollzugriff (Lese- und Schreibzugriff)
-- Schreibgeschützter Zugriff
-
-**Vollzugriff:** Benutzer mit Vollzugriff können eine Abfrage speichern, ändern und freigeben. Zum Zuweisen von Vollzugriffsrechten müssen die Benutzer den integrierten Rollen "Sicherheitsadministrator" oder "Globaler Administrator" in Azure Active Directory (AAD) hinzugefügt werden.
-
-**Schreibgeschützter Zugriff:** Benutzer mit schreibgeschützten Zugriff können sich anmelden und alle Warnungen und zugehörigen Informationen anzeigen. Sie können eine Abfrage nicht speichern, ändern oder freigeben. Zum Zuweisen von schreibgeschützten Zugriffsrechten müssen die Benutzer der integrierten Rolle "Security Reader" in AAD hinzugefügt werden.
-
 ## <a name="get-started-with-advanced-hunting"></a>Erste Schritte mit der erweiterten Suche
 
 Es wird empfohlen, mehrere Schritte zu unternehmen, um schnell mit der erweiterten Suche zu beginnen.
@@ -73,14 +62,17 @@ Es wird empfohlen, mehrere Schritte zu unternehmen, um schnell mit der erweitert
 | Lernziel | Beschreibung | Ressource |
 |--|--|--|
 | **Erlernen der Sprache** | Die erweiterte Suche basiert auf [der Kusto-Abfragesprache](/azure/kusto/query/)und unterstützt dieselbe Syntax und Operatoren. Beginnen Sie, die Abfragesprache zu erlernen, indem Sie die erste Abfrage ausführen. | [Übersicht über die Abfragesprache](advanced-hunting-query-language.md) |
-| **Informationen zur Verwendung der Abfrageergebnisse** | Erfahren Sie mehr über Diagramme und verschiedene Möglichkeiten zum Anzeigen oder Exportieren Ihrer Ergebnisse. Erfahren Sie, wie Sie Abfragen schnell optimieren, einen Drilldown durchführen können, um reichhaltigere Informationen zu erhalten und Reaktionsaktionen zu ergreifen. | - [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)<br>- [Ergreifen von Aktionen für Abfrageergebnisse](advanced-hunting-take-action.md) |
-| **Grundlegendes zum Schema** | Verschaffen Sie sich einen allgemeinen Überblick über die Tabellen im Schema und die zugehörigen Spalten. Erfahren Sie, wo Sie beim Erstellen Ihrer Abfragen nach Daten suchen können. | - [Schemareferenz](advanced-hunting-schema-tables.md)<br>- [Übergang von Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md) |
-| **Erhalten von Expertentipps und Beispielen** | Kostenloses Trainieren mit Anleitungen von Microsoft-Experten. Erkunden Sie Sammlungen vordefinierten Abfragen, die unterschiedliche Bedrohungssuchszenarien umfassen. | - [Expertenschulungen erhalten](advanced-hunting-expert-training.md)<br>- [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md)<br>- [Auf Die Suche gehen](advanced-hunting-go-hunt.md)<br>- [Suche nach Bedrohungen auf allen Geräten, E-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md) |
-| **Optimieren von Abfragen und Behandeln von Fehlern** | Erfahren Sie, wie Sie effiziente und fehlerfreie Abfragen erstellen. | - [Bewährte Methoden für Abfragen](advanced-hunting-best-practices.md)<br>- [Behandeln von Fehlern](advanced-hunting-errors.md) |
-| **Erstellen von benutzerdefinierten Erkennungsregeln** | Erfahren Sie, wie Sie erweiterte Suchabfragen verwenden können, um Warnungen auszulösen und automatisch Reaktionsaktionen zu ergreifen. | - [Übersicht über benutzerdefinierte Erkennungen](custom-detections-overview.md)<br>- [Benutzerdefinierte Erkennungsregeln](custom-detection-rules.md) |
+| **Informationen zur Verwendung der Abfrageergebnisse** | Erfahren Sie mehr über Diagramme und verschiedene Möglichkeiten zum Anzeigen oder Exportieren Ihrer Ergebnisse. Erfahren Sie, wie Sie Abfragen schnell optimieren, einen Drilldown durchführen können, um reichhaltigere Informationen zu erhalten und Reaktionsaktionen zu ergreifen. | - [Arbeiten mit Abfrageergebnissen](advanced-hunting-query-results.md)<br /> - [Ergreifen von Aktionen für Abfrageergebnisse](advanced-hunting-take-action.md) |
+| **Grundlegendes zum Schema** | Verschaffen Sie sich einen allgemeinen Überblick über die Tabellen im Schema und die zugehörigen Spalten. Erfahren Sie, wo Sie beim Erstellen Ihrer Abfragen nach Daten suchen können. | - [Schemareferenz](advanced-hunting-schema-tables.md) <br />- [Übergang von Microsoft Defender for Endpoint](advanced-hunting-migrate-from-mde.md) |
+| **Erhalten von Expertentipps und Beispielen** | Kostenloses Trainieren mit Anleitungen von Microsoft-Experten. Erkunden Sie Sammlungen vordefinierten Abfragen, die unterschiedliche Bedrohungssuchszenarien umfassen. | - [Expertenschulungen erhalten](advanced-hunting-expert-training.md) <br />- [Verwenden freigegebener Abfragen](advanced-hunting-shared-queries.md) <br />- [Auf Die Suche gehen](advanced-hunting-go-hunt.md) <br />- [Suche nach Bedrohungen auf allen Geräten, E-Mails, Apps und Identitäten](advanced-hunting-query-emails-devices.md) |
+| **Optimieren von Abfragen und Behandeln von Fehlern** | Erfahren Sie, wie Sie effiziente und fehlerfreie Abfragen erstellen. | - [Bewährte Methoden für Abfragen](advanced-hunting-best-practices.md)<br />- [Behandeln von Fehlern](advanced-hunting-errors.md) |
+| **Erstellen von benutzerdefinierten Erkennungsregeln** | Erfahren Sie, wie Sie erweiterte Suchabfragen verwenden können, um Warnungen auszulösen und automatisch Reaktionsaktionen zu ergreifen. | - [Übersicht über benutzerdefinierte Erkennungen](custom-detections-overview.md) <br />- [Benutzerdefinierte Erkennungsregeln](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>Zugriff erhalten
-Um erweiterte Suche oder andere [Microsoft 365 Defender-Funktionen](microsoft-365-defender.md) zu verwenden, benötigen Sie eine entsprechende Rolle in Azure Active Directory. Außerdem wird Ihr Zugriff auf Endpunktdaten durch rollenbasierte Zugriffssteuerungseinstellungen in Microsoft Defender for Endpoint bestimmt. [Informationen zum Verwalten des Zugriffs auf Microsoft 365 Defender](m365d-permissions.md)
+Um erweiterte Suche oder andere [Microsoft 365 Defender-Funktionen](microsoft-365-defender.md) zu verwenden, benötigen Sie eine entsprechende Rolle in Azure Active Directory. [Lesen Sie mehr über die erforderlichen Rollen und Berechtigungen für die erweiterte Suche.](custom-roles.md)
+
+Außerdem wird Ihr Zugriff auf Endpunktdaten durch rollenbasierte Zugriffssteuerungseinstellungen in Microsoft Defender for Endpoint bestimmt. [Informationen zum Verwalten des Zugriffs auf Microsoft 365 Defender](m365d-permissions.md).
+
 
 ## <a name="data-freshness-and-update-frequency"></a>Datenfrischheit und Aktualisierungshäufigkeit
 Erweiterte Suchesdaten können in zwei unterschiedliche Typen kategorisiert werden, die jeweils unterschiedlich konsolidiert werden.

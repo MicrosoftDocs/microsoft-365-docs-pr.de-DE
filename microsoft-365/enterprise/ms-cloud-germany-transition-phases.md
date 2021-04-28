@@ -18,18 +18,18 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: 5764b5cedf17487320fbfd05885120de86da3a84
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 354ca55bae7704c011af5a76a1112e4d2ecb47ca
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029062"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073925"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktionen während der Migrationsphasen und Auswirkungen für die Migration von Microsoft Cloud Deutschland
 
 Mandanten-Migrationen von Microsoft Cloud Deutschland (MCD) in die Region "Deutschland" der Office 365 Global-Dienste von Microsoft erfolgen in mehreren Phasen mit entsprechenden konfigurierten Aktionen für jeden Workload. Diese Abbildung zeigt die zehn Phasen der Migration in die neuen deutschen Rechenzentren.
 
-![Die zehn Phasen der Migration in die neuen deutschen Rechenzentren](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+[![Die zehn Phasen der Migration in die neuen Deutschen Rechenzentren ](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)](../media/ms-cloud-germany-migration-opt-in/migration-organization.png#lightbox)
 
 Der Migrationsprozess dauert mehrere Wochen, abhängig von der Gesamtgröße und Komplexität der Organisation. Während der Migration können Benutzer und Administratoren die Dienste weiterhin nutzen, jedoch mit wichtigen Änderungen, die in dieser Dokumentation beschrieben werden. In der Grafik und der Tabelle sind die Phasen und Schritte während der Migration dargestellt.
 
@@ -125,7 +125,7 @@ Wenn Sie immer noch SharePoint 2013-Workflows verwenden, schränken Sie die Verw
 |:-------|:-----|:-------|
 | SharePoint und OneDrive werden überführt. | SharePoint Online und OneDrive for Business werden in dieser Phase von Microsoft Cloud Deutschland zu Office 365 Global-Diensten migriert.<br><ul><li>Bestehende Microsoft Cloud Deutschland-URLs bleiben erhalten (Beispiel: `contoso.sharepoint.de`).</li><li>Bestehende Websites bleiben erhalten.</li><li>Clientseitige Authentifizierungstoken, die vom Security Token Service (STS) in der Microsoft Cloud Deutschland- oder Office 365 Global-Dienstinstanz ausgegeben wurden, sind während der Überführung gültig.</li></ul>|<ul><li>Inhalte werden für zwei kurze Zeiträume während der Migration schreibgeschützt sein. Währen dieser Zeit wird ein Banner mit der Mitteilung "Sie können Inhalte nicht bearbeiten" in SharePoint angezeigt.</li><li>Der Suchindex bleibt nicht erhalten, und es kann bis zu 10 Tage dauern, bis er wieder erstellt ist.</li><li>SharePoint Online-/OneDrive for Business-Inhalte werden für zwei kurze Zeiträume während der Migration schreibgeschützt sein. Benutzern wird während dieser Zeit kurzfristig ein Banner mit der Mitteilung "Sie können Inhalte nicht bearbeiten" angezeigt.</li><li>Nach Abschluss der SharePoint Online-Migration sind möglicherweise keine Suchergebnisse für SharePoint Online- und OneDrive for Business-Inhalte verfügbar, während der Index neu erstellt wird. Während dieses Zeitraums werden bei Suchabfragen möglicherweise unvollständige Resultate zurückgegeben. Funktionen, die von Suchindizes abhängig sind, könnten betroffen sein, bis die Neuindizierung abgeschlossen ist.</li><li>SharePoint 2013-Workflows werden während der Migration unterbrochen und müssen nach der Migration erneut veröffentlicht werden.</li></ul>
 |**SPO-Administratoren**: Erneute Veröffentlichung von SharePoint 2013-Workflows| Ein SharePoint Online-Administrator veröffentlicht nach der Migration die SharePoint 2013-Workflows erneut.|SharePoint 2013-Workflows sind verfügbar.
-|**PowerShell-Benutzer**: Update auf neues Modul| Alle Benutzer des SharePoint Online PowerShell-Moduls müssen nach Abschluss der SharePoint Online-Migration module/Microsoft.SharePointOnline.CSOM auf Version 16.0.20717.12000 oder höher aktualisieren. Der erfolgte Abschluss wird im Nachrichtencenter mitgeteilt.| Es kommt nicht mehr zu Fehlern bei SharePoint Online über PowerShell oder dem clientseitigen Objektmodell.
+|**PowerShell-Benutzer**: Update auf neues Modul| Alle Benutzer des SharePoint Online PowerShell-Moduls müssen module/Microsoft.SharePointOnline.CSOM nach Abschluss der SharePoint Online-Migration auf Version 16.0.20717.12000 oder höher aktualisieren. Der erfolgte Abschluss wird im Nachrichtencenter mitgeteilt.| Es kommt nicht mehr zu Fehlern bei SharePoint Online über PowerShell oder dem clientseitigen Objektmodell.
 ||||
 
 Zusätzliche Überlegungen:
@@ -264,18 +264,26 @@ Kunden mit Dynamics 365 müssen zusätzliche Aktionen ausführen, um die Dynamic
 
 ## <a name="phase-9-office-apps"></a>Phase 9: Office-Apps
 
-**Gilt für:** Alle Kunden, die Office-Desktopanwendungen (Word, Excel, PowerPoint, Outlook, ...) verwenden
+**Gilt für:** Alle Kunden, die Office-Desktopanwendungen verwenden (Word, Excel, PowerPoint, Outlook, OneDrive ...)
+
+In dieser Phase werden alle Clientanwendungen und Office Online die Clientübergabe durchführen. Azure AD finalisiert den Mandantenbereich, um auf die Office 365-Dienste und die zugehörigen Endpunkte zu verweisen.
 
 Die Umstellung von Office 365-Mandanten auf die Region „Deutschland“ erfordert, dass alle Benutzer Anwendungen schließen, sich von Office 365 abmelden und für alle Office-Desktopanwendungen (Word, Excel, PowerPoint, Outlook usw.) und den OneDrive for Business-Client erneut anmelden, nachdem die Mandantenmigration Phase 9 erreicht hat. Durch das Ab- und Anmelden können die Office-Dienste neue Authentifizierungstoken vom globalen Azure AD-Dienst abrufen.
+
+Falls die Office-Desktopanwendungen nach dem Ab- und Anmelden bei den Anwendungen nicht funktionieren, wird dringend empfohlen, das [Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT) auf dem betroffenen Computer zu verwenden, um das Problem zu beheben.
+
+Wenn das [Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT) vorab auf Windows-Clients bereitgestellt und geplant wurde, ist das Anmelde-/Anmeldeverfahren nicht erforderlich.
 
 Die beste Benutzererfahrung kann sichergestellt werden, indem Sie die neuesten Office-Anwendungen verwenden. Unternehmen sollten die Nutzung des monatlichen Enterprise-Kanals in Betracht ziehen.
 
 Stellen Sie sicher, dass Sie den Vorgang [Vorbereitung für Mobilgeräte](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) abgeschlossen haben.
 
-| Schritte: | Beschreibung | Auswirkung |
-|:-------|:-------|:-------|
-| Clients, Office Online während der Office-Client-Übernahmemigration, Azure AD finalisiert den Mandantenbereich so, dass er auf die Office 365-Dienste verweist. | Mit dieser Konfigurationsänderung können Office-Clients aktualisiert und auf die Office 365-Dienstendpunkte verweisen. | <ul><li>Benachrichtigen Sie die Benutzer, dass _alle_ Office-Apps geschlossen werden müssen, und sich dann erneut anzumelden (oder erzwingen Sie den Neustart der Clients und die Anmeldung der Benutzer), damit die Office-Clients die Änderung übernehmen können. </li><li>Informieren Sie die Benutzer und Mitarbeiter des Helpdesks, dass Benutzern *möglicherweise* ein Office-Banner angezeigt wird, das sie dazu auffordert, Office-Apps innerhalb von 72 Stunden nach der Umstellung zu reaktivieren. </li><li>Alle Office-Anwendungen auf privaten Computern müssen geschlossen werden, und die Benutzer müssen sich abmelden und dann erneut anmelden. Melden Sie sich in der gelben Aktivierungsleiste an, um die Office 365-Dienste zu reaktivieren.</li><li>Gemeinsam genutzte Computer erfordern Aktionen, die mit jenen für private Computer vergleichbar sind, erfordern aber keine spezielle Vorgehensweise. </li><li>Auf mobilen Geräten müssen sich die Benutzer von Apps abmelden, sie schließen und sich dann erneut anmelden.</li></ul>|
-||||
+Zusätzliche Überlegungen:
+- Benachrichtigen Sie die Benutzer, dass alle Office-Apps geschlossen werden müssen, und sich dann erneut anzumelden (oder erzwingen Sie den Neustart der Clients und die Anmeldung der Benutzer), damit die Office-Clients die Änderung übernehmen können.
+- Informieren Sie die Benutzer und Mitarbeiter des Helpdesks, dass Benutzern möglicherweise ein Office-Banner angezeigt wird, das sie dazu auffordert, Office-Apps innerhalb von 72 Stunden nach der Umstellung zu reaktivieren.
+- Alle Office-Anwendungen auf privaten Computern müssen geschlossen werden, und die Benutzer müssen sich abmelden und dann erneut anmelden. Melden Sie sich in der gelben Aktivierungsleiste an, um die Office 365-Dienste zu reaktivieren.
+- Gemeinsam genutzte Computer erfordern Aktionen, die mit jenen für private Computer vergleichbar sind, erfordern aber keine spezielle Vorgehensweise.
+- Auf mobilen Geräten müssen sich die Benutzer von Apps abmelden, sie schließen und sich dann erneut anmelden.
 
 ## <a name="phase-9-line-of-business-apps"></a>Phase 9: Vorbereiten branchenspezifischer Apps
 
