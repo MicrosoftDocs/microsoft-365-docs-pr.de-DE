@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: 6d2534a2-c19c-4a99-be5e-33a0cee5d3bd
 description: Erfahren Sie, wie Sie Azure ExpressRoute mit Office 365 verwenden und das Netzwerkimplementierungsprojekt planen, wenn Sie damit bereitstellen.
-ms.openlocfilehash: d4c14d97cff2952f5f7052a8aa2940f05d644737
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 8047cdaa1325df487709660b558420609afffd42
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023725"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073949"
 ---
 # <a name="azure-expressroute-for-office-365"></a>Azure ExpressRoute für Office 365
 
@@ -39,9 +39,7 @@ Erfahren Sie, wie Azure ExpressRoute mit Office 365 verwendet wird und wie Sie d
 > Microsoft Defender for Endpoint wird in Azure Express Route nicht unterstützt.
 
 > [!NOTE]
-> Die Microsoft-Autorisierung ist erforderlich, um ExpressRoute für Office 365 zu verwenden. Microsoft überprüft jede Kundenanforderung und autorisiert expressRoute für die Office 365-Nutzung, wenn die behördliche Anforderung eines Kunden eine direkte Konnektivität vorsingt. Wenn Sie solche Anforderungen haben, wenden Sie sich bitte an Ihren Microsoft-Kontomitarbeiter, um mit einer Microsoft-Überprüfung zu beginnen. Nicht autorisierte Abonnements, die Routenfilter für Office 365 erstellen möchten, erhalten [eine Fehlermeldung.](https://support.microsoft.com/kb/3181709)
-
-Sie können jetzt eine direkte Netzwerkverbindung zu Office 365 für ausgewählten Office 365-Netzwerkdatenverkehr hinzufügen. Azure ExpressRoute bietet eine direkte Verbindung, eine vorhersagbare Leistung und verfügt über eine Sla zu 99,95 % für die Microsoft-Netzwerkkomponenten. Sie benötigen weiterhin eine Internetverbindung für Dienste, die über Azure ExpressRoute nicht unterstützt werden.
+> ExpressRoute für Microsoft 365 wird nicht empfohlen, da es unter den meisten Umständen nicht das beste Konnektivitätsmodell für den Dienst bietet. Daher ist die Microsoft-Autorisierung erforderlich, um dieses Konnektivitätsmodell für Microsoft 365 zu verwenden. Wir überprüfen jede Kundenanforderung und autorisieren ExpressRoute für Microsoft 365 nur in den seltenen Fällen, in denen dies erforderlich ist. Weitere Informationen finden Sie im [ExpressRoute für Microsoft 365-Handbuch,](https://aka.ms/erguide) und nach einer umfassenden Überprüfung des Dokuments mit Ihren Produktivitäts-, Netzwerk- und Sicherheitsteams arbeiten Sie mit Ihrem Microsoft-Kontoteam zusammen, um bei Bedarf eine Ausnahme zu übermitteln. Nicht autorisierte Abonnements, die Routenfilter für Office 365 erstellen möchten, erhalten [eine Fehlermeldung.](https://support.microsoft.com/kb/3181709)
 
 ## <a name="planning-azure-expressroute-for-office-365"></a>Planen von Azure ExpressRoute für Office 365
 
@@ -64,7 +62,7 @@ Möchten Sie noch weitere Informationen? Erfahren Sie, [wie Sie Ihren Netzwerkda
 
 In der folgenden Tabelle sind die Office 365-Dienste aufgeführt, die über ExpressRoute unterstützt werden. Lesen Sie den [Artikel Office 365-Endpunkte,](./urls-and-ip-address-ranges.md) um zu verstehen, welche Netzwerkanforderungen für diese Anwendungen eine Internetverbindung erfordern.
 
-|**Enthaltene Anwendungen**|
+| Enthaltene Anwendungen |
 |:-----|
 |Exchange Online<sup>1</sup> <br/> Exchange Online Protection<sup>1</sup> <br/> Delve<sup>1</sup> <br/> |
 |Skype for Business Online<sup>1</sup> <br/> Microsoft Teams <sup>1</sup> <br/> |

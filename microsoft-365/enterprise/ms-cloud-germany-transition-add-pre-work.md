@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: ce7aad932482d7a9d1681957c06b85ab22a82149
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
-ms.translationtype: HT
+ms.openlocfilehash: 9c3aff56f5d85cd1b98747ef5b747720af74fe02
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760392"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073937"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Prä-Migrationsaktivitäten für die Migration von Microsoft Cloud Deutschland
 
@@ -33,7 +33,7 @@ Wenn Sie
 
 - **Office 365 in Microsoft Cloud Deutschland**: führen Sie [diese Schritte](#general-tenant-migration-considerations) aus.
 - **Benutzerdefinierte Domänen**: führen Sie [diesen Schritt](#dns-entries-for-custom-domains) aus.
-
+- **Office Apps**, ziehen Sie [diesen Schritt in Betracht.](#office-apps)
 - **SharePoint Online**: führen Sie [diesen Schritt](#sharepoint-online) aus.
 - **Exchange Online** oder **Exchange Hybrid**: führen Sie [diesen Schritt](#exchange-online) aus.
 - **Skype for Business Online**: führen Sie [diesen Schritt](#skype-for-business-online) aus.
@@ -83,6 +83,19 @@ Wenn die Befehlszeile einen DNS-Datensatz zurückgibt, entfernen Sie das _msoid_
 
 > [!NOTE]
 > Wenn Sie eine benutzerdefinierte Domäne für Exchange Online verwenden, müssen Sie Zugriff auf Ihren DNS-Hostinganbieter haben. Bitte stellen Sie sicher, dass Sie auf Ihre DNS-Einstellungen zugreifen und diese bearbeiten können, Sie werden die DNS-Datensätze während der Migration anpassen.
+
+## <a name="office-apps"></a>Office-Apps
+
+**Gilt für**: Kunden, die Office Apps verwenden, insbesondere auf Windows-Clients <br>
+**Anwendung :** Immer vor Beginn von Phase 9
+
+Die Umstellung von Office 365-Mandanten auf die Region „Deutschland“ erfordert, dass alle Benutzer Anwendungen schließen, sich von Office 365 abmelden und für alle Office-Desktopanwendungen (Word, Excel, PowerPoint, Outlook usw.) und den OneDrive for Business-Client erneut anmelden, nachdem die Mandantenmigration Phase 9 erreicht hat. Durch das Ab- und Anmelden können die Office-Dienste neue Authentifizierungstoken vom globalen Azure AD-Dienst abrufen.
+
+Dies ist für alle Clients erforderlich. Um eine reibungslose Migrationserfahrung sicherzustellen, wird dringend empfohlen, alle betroffenen Benutzer vorab und frühzeitig über diese bevorstehende Aktivität zu informieren und zu informieren.
+
+Kunden mit verwalteten Windows-Clients können Windows-Computer mit dem [Office Client Cutover Tool (OCCT) vorbereiten.](https://github.com/microsoft/OCCT) Der OCCT ist so konzipiert, dass er regelmäßig auf Windows-Clients ausgeführt wird, bis der Mandant Phase 9 der Migration erreicht hat. Wenn Phase 9 erreicht ist, führt das OCCT alle erforderlichen Änderungen auf dem Computer automatisch ohne Benutzerinteraktion durch.
+
+Der OCCT kann jederzeit vor Phase 9 auf Windows-Clients bereitgestellt werden. Wenn das OCCT die Migrationserfahrung unterstützen soll, wird empfohlen, die Bereitstellung so bald wie möglich zu starten, um eine maximale Anzahl von Clients auszustatten.
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory-Verbunddienste (AD FS)
 
