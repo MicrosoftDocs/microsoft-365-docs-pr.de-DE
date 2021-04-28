@@ -362,7 +362,7 @@
         - name: Filtern von Daten beim Importieren von PST-Dateien
           href: filter-data-when-importing-pst-files.md
         - name: Häufig gestellte Fragen zum Importieren von PST-Dateien
-          href: faqimporting-pst-files-to-office-365.md
+          href: faqimporting-pst-files-to-office-365.yml
     - name: Archivieren von Drittanbieterdaten
       items:
         - name: Übersicht über das Archivieren von Drittanbieterdaten
