@@ -118,8 +118,6 @@
           href: create-a-keyword-dictionary.md
         - name: Dokumentfingerabdrücke
           href: document-fingerprinting.md
-        - name: DLP-Funktionen für vertrauliche Informationen
-          href: what-the-dlp-functions-look-for.md
     - name: Trainierbare Klassifizierungsmerkmale
       items:
         - name: Weitere Informationen zu trainierbaren Klassifizierern

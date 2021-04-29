@@ -204,18 +204,10 @@
           href: ../../compliance/alert-policies.md
         - name: Intelligente Berichte und Einblicke im Security & Compliance Center
           href: reports-and-insights-in-security-and-compliance.md
-        - name: Aktivieren des Add-Ins „Nachrichten melden“
-          href: enable-the-report-message-add-in.md
-        - name: Aktivieren des Add-Ins „Phishing melden“
-          href: enable-the-report-phish-add-in.md
-        - name: Installieren und Verwenden des Add-Ins „Melden von Junk-E-Mails“
-          href: junk-email-reporting-add-in-for-microsoft-outlook.md
-        - name: Regeln für den Nachrichtenfluss (Transportregeln) in EOP als eigenständige Lösung
+        - name: Melden falsch positiver und falsch negativer Ergebnisse in Outlook
+          href: report-false-positives-and-false-negatives.md
+        - name: Nachrichtenflussregeln (Transportregeln) in EOP als eigenständige Lösung
           href: mail-flow-rules-transport-rules-0.md
-        - name: Melden von Junk-E-Mails und Phishing in Outlook im Web
-          href: report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md
-        - name: Melden von Junk-E-Mails und Phishing in Outlook für iOS und Android
-          href: report-junk-email-and-phishing-scams-in-outlook-for-ios-and-android.md
         - name: Ausführen eines Administrator-Rollengruppenberichts in EOP als eigenständige Lösung
           href: run-an-administrator-role-group-report-in-eop-eop.md
     - name: Untersuchen
