@@ -539,12 +539,6 @@
 ####### [Auflisten von Computern nach Empfehlung](get-recommendation-machines.md)
 ####### [Auflisten von Sicherheitsrisiken nach Empfehlung](get-recommendation-vulnerabilities.md)
 
-###### [Korrekturaktivität]()
-####### [Methoden und Eigenschaften der Korrekturaktivität](get-remediation-methods-properties.md)
-####### [Erhalten einer Korrekturaktivität nach ID](get-remediation-one-activity.md)
-####### [Auflisten aller Korrekturaktivitäten](get-remediation-all-activities.md)
-####### [Auflisten verfügbarer Geräte einer Korrekturaktivität](get-remediation-exposed-devices-activities.md)
-
 ###### [Bewertung]()
 ####### [Bewertungsmethoden und -eigenschaften](score.md)
 ####### [Bewertung der Gefährdungsliste nach Computergruppe](get-machine-group-exposure-score.md)
