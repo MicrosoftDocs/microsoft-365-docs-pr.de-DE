@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: Suchen Sie Ihre Rechnung oder Ihren Kontoauszug im Microsoft 365 Admin Center. Sie können auch eine Kopie Ihrer Rechnung speichern und ausdrucken.
 ms.date: 07/31/2020
-ms.openlocfilehash: b117071fa708ad9d425d578833d8b0ad85537151
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: d391d99f5d5870d964fc4c420a105f25032e3640
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939486"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060967"
 ---
 # <a name="view-your-bill-or-invoice"></a>Anzeigen Ihrer Rechnung
 
@@ -62,7 +62,7 @@ Sie müssen ein Global- oder Billing-Administrator sein, um die in diesem Artike
 
 Sie können Ihre Fapiao-Anfrage an unser [Fapiao-Managementsystem](https://go.microsoft.com/fwlink/p/?linkid=837465) übermitteln, ungefähr drei (3) Tage, nachdem Sie bezahlt haben.
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Rechnungen und Zahlungen**.
+1. Gehen Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Rechnungen & Zahlungen**.
 
 2. Suchen Sie die Rechnung, die Sie wünschen und wählen Sie dann **Fapiaos erhalten** aus.
 

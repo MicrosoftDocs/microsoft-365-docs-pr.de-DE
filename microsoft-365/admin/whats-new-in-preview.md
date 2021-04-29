@@ -21,12 +21,12 @@ description: Das Microsoft 365 Admin Center – Erfahren Sie mehr über die Feat
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 90f75b0c1ea38833325c51399108551286f55e92
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: b226f48edd5f65100c81e95d2026c7c172959c8d
+ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024193"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52077311"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neues im Microsoft 365 Admin Center
 
@@ -83,7 +83,7 @@ Wir haben das Nachrichtencenter überarbeitet, um Ihnen bei der Entdeckung relev
 
 :::image type="content" source="../media/message-center.png" alt-text="Screenshot: Startseite des Nachrichtencenters mit Posteingang und Nachrichten":::
 
-Weitere Informationen zu den neuen Features finden Sie unter [Verwalten von Nachrichten im Nachrichtencenter](manage/manage-messages.md).
+Weitere Informationen zu den neuen Features finden Sie unter [Message Center](manage/message-center.md).
 
 ### <a name="whats-new-features"></a>Neue Features
 
@@ -384,7 +384,7 @@ Die neuen Produktnamen treten am 21. April 2020 in Kraft. Dies ist nur eine Änd
 |Office 365 Business Essentials     |   Microsoft 365 Business Basic      |
 |Office 365 Business Premium     |    Microsoft 365 Business Standard     |
 |Microsoft 365 Business     |    Microsoft 365 Business Premium     |
-|Office 365 Business     |    Microsoft 365 Apps for Business       |
+|Office 365 Business     |    Microsoft 365 Apps for Business       |
 |Office 365 ProPlus    |   Microsoft 365-Apps für Unternehmen      |
 
 ### <a name="videos-training-and-docs"></a>Videos, Schulungen und Dokumente
