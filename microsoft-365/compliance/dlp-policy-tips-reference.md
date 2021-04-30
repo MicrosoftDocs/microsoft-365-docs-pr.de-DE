@@ -6,7 +6,7 @@ author: chrfox
 manager: laurawi
 ms.date: ''
 audience: Admin
-ms.topic: article
+ms.topic: reference
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
@@ -16,18 +16,19 @@ ms.assetid: 6501b5ef-6bf7-43df-b60d-f65781847d6c
 ms.collection:
 - M365-security-compliance
 - SPO_Content
+recommendations: false
 description: Hier erfahren Sie, wie Sie einer Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) einen Benutzer benachrichtigen, dass er mit Inhalten arbeitet, die mit einer DLP-Richtlinie in Konflikt stehen.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 36e4d4f96146b51e0b31731c9e93222eed767045
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0c42569da3fcac40d3121a59f7dc004f25dd3f74
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903802"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086759"
 ---
 # <a name="data-loss-prevention-policy-tips-reference"></a>Referenz: Richtlinientipps zur Verhinderung von Datenverlust (Data Loss Prevention, DLP)
 
-DLP-Richtlinientipps in Outlook Web Access werden für alle Bedingungen, Ausnahmen und Aktionen unterstützt, die für die Exchange-Arbeitsauslastung in einer DLP-Richtlinie gelten, mit Ausnahme der folgenden:
+DLP-Richtlinientipps in Outlook Web Access werden für alle Bedingungen, Ausnahmen und Aktionen unterstützt, die für Exchange Arbeitsauslastung in einer DLP-Richtlinie gelten, mit Ausnahme der folgenden:
 
 **Bedingungen:**
 
@@ -71,11 +72,11 @@ Derzeit unterstützt Outlook 2013 und höher das Anzeigen von Richtlinientipps f
 - Inhalt enthält (funktioniert nur für Typen vertraulicher Informationen. Vertraulichkeitsbezeichnungen werden nicht unterstützt)
 - Inhalt wird freigegeben
 
-Beachten Sie, dass alle Bedingungen für E-Mails funktionieren, die in der Outlook-Client-App verfasst wurden und inhalte übereinstimmen und Schutzmaßnahmen für Inhalte erzwingen. Das Anzeigen von Richtlinientipps für Benutzer wird jedoch für bedingungen, die abgesehen von den oben genannten bedingungen verwendet werden, nicht unterstützt.
+Beachten Sie, dass alle Bedingungen für E-Mails funktionieren, die in Outlook-Client-App verfasst wurden, wo sie mit Inhalten übereinstimmen und Schutzmaßnahmen für Inhalte erzwingen. Das Anzeigen von Richtlinientipps für Benutzer wird jedoch für bedingungen, die abgesehen von den oben genannten bedingungen verwendet werden, nicht unterstützt.
 
-## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Unterstützung für Outlook 2013 und höher und Office-Apps auf Desktop mit Richtlinientipps für nur einige typen von vertraulichen Informationen
+## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 und höher und Office-Apps auf Desktop unterstützen Richtlinientipps für nur einige Typen vertraulicher Informationen
 
-Die Liste der sofort verwendeten typen vertraulicher Informationen, die für die Anzeige von DLP-Richtlinientipps in Outlook on Desktop (2013 und höher) und Office-Apps (Word, Excel, PowerPoint) auf Desktop erkannt werden, sind die folgenden:
+Die Liste der sofort verwendeten Typen vertraulicher Informationen, die für die Anzeige von DLP-Richtlinientipps in Outlook on Desktop (2013 und höher) und Office-Apps (Word, Excel, PowerPoint) auf Desktop erkannt werden, sind die folgenden:
 
 - ABA Routing Number (US-Bankleitzahl)
 - Argentina National Identity (DNI) Number
@@ -85,13 +86,13 @@ Die Liste der sofort verwendeten typen vertraulicher Informationen, die für die
 - Australische Steuernummer
 - Azure DocumentDB-Authentifizierungsschlüssel  
 - Azure IAAS Database Connection String und Azure SQL Connection String  
-- Azure IoT-Verbindungszeichenfolge  
+- Azure IoT Verbindungszeichenfolge  
 - Azure Publish Setting Password  
 - Azure Redis Cache Connection String  
 - Azure SAS  
-- Azure Service Bus Connection String  
-- Azure Storage Account Key  
-- Azure Storage Account Key (Generisch)  
+- Azure Service Bus-Verbindungszeichenfolge  
+- Azure Storage Kontoschlüssel  
+- Azure Storage Kontoschlüssel (Generisch)  
 - Nationale belgische Nummer
 - Brazil CPF Number
 - Brasilien – Juristische Personennummer (CNPJ)
@@ -171,7 +172,7 @@ Die Liste der sofort verwendeten typen vertraulicher Informationen, die für die
 - Vereinigtes Königreich – Wählerverzeichnisnummer
 - UK-Gesundheitsdienstnummer
 - UK-Sozialversicherungsnummer (National Insurance Number, NINO)
-- USA/Vereinigtes Königreich Passport Number
+- US-amerikanische/britische Reisepassnummer
 - US-Bankkontonummer
 - US-Führerscheinnummer
 - US-Steueridentifikationsnummer (ITIN)
@@ -199,13 +200,13 @@ Die Liste der sofort verwendeten Typen vertraulicher Informationen, die in Dokum
 - Austria Value Added Tax (VAT) Number 
 - Azure DocumentDB-Authentifizierungsschlüssel 
 - Azure IAAS Database Connection String und Azure SQL Connection String 
-- Azure IoT-Verbindungszeichenfolge 
+- Azure IoT Verbindungszeichenfolge 
 - Azure Publish Setting Password 
 - Azure Redis Cache Connection String 
 - Azure SAS 
-- Azure Service Bus Connection String 
-- Azure Storage Account Key 
-- Azure Storage Account Key (Generisch) 
+- Azure Service Bus-Verbindungszeichenfolge 
+- Azure Storage Kontoschlüssel 
+- Azure Storage Kontoschlüssel (Generisch) 
 - Belgische Führerscheinnummer 
 - Nationale belgische Nummer 
 - Belgische Reisepassnummer 
@@ -230,7 +231,7 @@ Die Liste der sofort verwendeten Typen vertraulicher Informationen, die in Dokum
 - Kroatische Nationale ID-Kartennummer 
 - Kroatische Reisepassnummer 
 - Kroatische persönliche ID-Nummer (OIB) 
-- CSCAN-AZURE0060 Azure Storage Account Shared Access Signature 
+- CSCAN-AZURE0060 Azure Storage kontosignatur für gemeinsamen Zugriff 
 - CSCAN-GENERAL0140 Allgemeiner symmetrischer Schlüssel 
 - Zyprische Führerscheinnummer 
 - Identitätskarte für Zypern 
@@ -379,7 +380,7 @@ Die Liste der sofort verwendeten Typen vertraulicher Informationen, die in Dokum
 - UK-Gesundheitsdienstnummer 
 - UK-Sozialversicherungsnummer (National Insurance Number, NINO) 
 - Vereinigtes Königreich Eindeutige Steuernummer 
-- USA/Vereinigtes Königreich Passport Number 
+- US-amerikanische/britische Reisepassnummer 
 - US-Bankkontonummer 
 - US-Führerscheinnummer 
 - US-Steueridentifikationsnummer (ITIN) 
@@ -393,17 +394,17 @@ Bitte beachten Sie, dass zusätzlich zu den oben genannten sofort verwendeten Ty
 
 |**App und Plattform**|**Unterstützung von DLP-Richtlinientipps**|**Unterstützte Typen vertraulicher Informationen**|**Unterstützte Prädikate und Aktionen**|**Kommentare**|
 |:--|:--|:--|:--|:--|
-|**Outlook Web Access**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Alle|Subset|Siehe [Hinweise zu Richtlinientipps zur](#data-loss-prevention-policy-tips-reference) Verhinderung von Datenverlust|
-|**Outlook Win32 (Outlook 2013 und darüber hinaus)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|Subset|Unter Outlook 2013 und höher finden Sie Richtlinientipps für nur einige Bedingungen und Ausnahmen sowie Unterstützung für [Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) und höher und Office-Apps auf Desktop mit Richtlinientipps für nur einige typen vertraulicher Informationen. Weitere Informationen zur Unterstützung vertraulicher Informationstypen sowie von DLP-Bedingungen und -Aktionen, die für die Anzeige von DLP-Richtlinientipps in Outlook Win32 unterstützt werden, finden Sie unter Outlook [2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) und höher.|
-|**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Keine|Keine|DLP-Richtlinientipps werden auf Outlook mobilen Geräten nicht unterstützt|
+|**Outlook WebZugriff**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Alle|Subset|Siehe [Hinweise zu Richtlinientipps zur](#data-loss-prevention-policy-tips-reference) Verhinderung von Datenverlust|
+|**Outlook Win32 (Outlook 2013 und darüber hinaus)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|Subset|Unter [Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) und höher werden Richtlinientipps für nur einige Bedingungen und Ausnahmen sowie [Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) und höher sowie Office-Apps auf Desktop angezeigt, in denen Richtlinientipps für nur einige typen von vertraulichen Informationen angezeigt werden. Weitere Informationen zur Unterstützung vertraulicher Informationstypen sowie zu DLP-Bedingungen und -Aktionen, die für die Anzeige von Tipps zu DLP-Richtlinien auf Outlook Win32 unterstützt werden.|
+|**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Keine|Keine|DLP-Richtlinientipps werden auf mobilen Geräten Outlook unterstützt|
 |**Sharepoint Online/One Drive for Business Web Client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Alle|Alle SPO/ODB-Prädikate und -Aktionen in DLP||
-|**Sharepoint Win32/ One Drive for Business Win32-Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Keine|Keine|#A0 werden in Sharepoint- oder OneDrive-Desktopclient-Apps nicht unterstützt|
+|**Sharepoint Win32/ One Drive for Business Win32-Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Keine|Keine|DLP-Richtlinientipps werden in Sharepoint- oder OneDrive-Client-Apps nicht unterstützt|
 |**Word, Excel, PowerPoint Web Client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Alle|Alle SPO/ODB-Prädikate und -Aktionen in DLP|Der Tipp für die DLP-Richtlinie wird unterstützt, wenn das Dokument in spo- oder ODB-Web-App gehostet wird und die DLP-Richtlinie bereits gestempelt ist.|
-|**Word, Excel, PowerPoint Mobile Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Keine|Keine|DLP-Richtlinientipps werden in mobilen Apps für Office nicht unterstützt.|
-|**Teams Web/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Alle|Alle Teams-Prädikate in der DLP-Richtlinie|Richtlinientipps werden angezeigt, wenn eine Nachricht mit "Diese Nachricht wurde gekennzeichnet" gekennzeichnet ist. Was kann ich tun?" Wenn der Benutzer auf den Link klickt, kann er die erkannten Typen vertraulicher Informationen überprüfen und ein Problem außer Kraft setzen oder melden, wenn dies vom Administrator zulässig ist. Beachten Sie, dass keine Richtlinientipps für Dateien angezeigt werden. Wenn der Empfänger versucht, auf das Dokument zu zugreifen, erhält er möglicherweise zugriff verweigert, wenn er nicht zugelassen ist.|
+|**Word, Excel, PowerPoint Mobile Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Keine|Keine|DLP-Richtlinientipps werden in mobilen Apps für Apps Office.|
+|**Teams Web/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Alle|Alle Teams in der DLP-Richtlinie|Richtlinientipps werden angezeigt, wenn eine Nachricht mit "Diese Nachricht wurde gekennzeichnet" gekennzeichnet ist. Was kann ich tun?" Wenn der Benutzer auf den Link klickt, kann er die erkannten Typen vertraulicher Informationen überprüfen und ein Problem außer Kraft setzen oder melden, wenn dies vom Administrator zulässig ist. Beachten Sie, dass keine Richtlinientipps für Dateien angezeigt werden. Wenn der Empfänger versucht, auf das Dokument zu zugreifen, erhält er möglicherweise zugriff verweigert, wenn er nicht zugelassen ist.|
 |**Win32-Endpunktgeräte**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Subset|Alle Endpunkt-DLP-Prädikate und -Aktionen in der DLP-Richtlinie|Weitere [Informationen finden Sie unter Data Loss Prevention on Endpoint supports policy tips for only some sensitive information types.](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
 |**Mac-Geräte**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Keine|Keine|Richtlinien zur Verhinderung von Datenverlust sind heute auf Mac-Geräten nicht durchsetzbar|
 |**Cloud-Apps von Drittanbietern**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Keine|Keine|Richtlinientipps zur Verhinderung von Datenverlust werden in Cloud-Apps von Drittanbietern nicht unterstützt.|
 |**On-Prem**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Keine|Keine||
-|**Word, Excel, PowerPoint Win32 Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Subset|Subset|Informationen zur Liste der unterstützten Typen vertraulicher Informationen finden Sie unter Unterstützung von [Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) und höher sowie unter Unterstützung von Office-Apps auf Desktop mit Richtlinientipps für nur einige Typen vertraulicher Informationen.</br></br>Richtlinientipps für WXP-Client-Apps funktionieren für Dokumente, die auf Sharepoint Online- oder One Drive for Business-Websites gespeichert sind, für alle DLP-Richtlinien, die genau die folgende oder eine Teilmenge von Bedingungen oder Aktionen in der DLP-Richtlinie enthalten:</br> <ul><li>Inhalt enthält Typen vertraulicher Informationen</li><li>Zugriffsbereich (Inhalt wird intern/extern freigegeben)</li><li>Benutzer benachrichtigen (Richtlinientipps/Benutzerbenachrichtigungen)</li><li>Blockieren von allen</li><li>Schadensberichte</li></ul></br> Wenn eine andere Bedingung oder Aktion vorhanden ist, wird der DLP-Richtlinientipp für diese Richtlinie nicht in den Desktop-Apps von Word, Excel oder PowerPoint angezeigt.</br>Weitere [Informationen finden Sie unter Richtlinientipps in Excel, PowerPoint](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) und Word|
+|**Word, Excel, PowerPoint Win32 Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Subset|Subset|Unter [Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) und höher und Office-Apps auf Desktop finden Sie Richtlinientipps für nur einige typen vertraulicher Informationen für die Liste der unterstützten Typen vertraulicher Informationen.</br></br>Richtlinientipps für WXP-Client-Apps funktionieren für Dokumente, die auf Sharepoint Online- oder One Drive for Business-Websites gespeichert sind, für alle DLP-Richtlinien, die genau die folgende oder eine Teilmenge von Bedingungen oder Aktionen in der DLP-Richtlinie enthalten:</br> <ul><li>Inhalt enthält Typen vertraulicher Informationen</li><li>Zugriffsbereich (Inhalt wird intern/extern freigegeben)</li><li>Benutzer benachrichtigen (Richtlinientipps/Benutzerbenachrichtigungen)</li><li>Blockieren von allen</li><li>Schadensberichte</li></ul></br> Wenn eine andere Bedingung oder Aktion vorhanden ist, wird der DLP-Richtlinientipp für diese Richtlinie nicht in den Desktop-Apps von Word, Excel oder PowerPoint.</br>Weitere Informationen finden Sie unter [Richtlinientipps in Excel, PowerPoint](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) und Word|
 ||||||

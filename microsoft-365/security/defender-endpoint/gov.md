@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 16a7d289889940754a6d56058544a675b31192be
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 1f0005ed4614a8d01d2a64e8853be99a204825c8
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933997"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086814"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender für Endpunkt für Kunden der US-Regierung
 
@@ -30,10 +30,10 @@ ms.locfileid: "51933997"
 
 Microsoft Defender for Endpoint für Us Government-Kunden, die in der Azure US Government-Umgebung erstellt wurden, verwendet dieselben zugrunde liegenden Technologien wie Defender for Endpoint in Azure Commercial.
 
-Dieses Angebot steht GCC-, GCC High- und DoD-Kunden zur Verfügung und basiert auf der gleichen Prävention, Erkennung, Untersuchung und Behebung wie die kommerzielle Version. Es gibt jedoch einige Unterschiede bei der Verfügbarkeit von Funktionen für dieses Angebot.
+Dieses Angebot steht GCC, GCC High- und DoD-Kunden zur Verfügung und basiert auf der gleichen Prävention, Erkennung, Untersuchung und Behebung wie die kommerzielle Version. Es gibt jedoch einige Unterschiede bei der Verfügbarkeit von Funktionen für dieses Angebot.
 
 > [!NOTE]
-> Wenn Sie GCC-Kunde sind, der Defender for Endpoint in Commercial verwendet, lesen Sie die öffentlichen Dokumentationsseiten.
+> Wenn Sie ein GCC, der Defender for Endpoint in Commercial verwendet, lesen Sie die öffentlichen Dokumentationsseiten.
 
 ## <a name="licensing-requirements"></a>Lizenzierungsanforderungen
 Microsoft Defender for Endpoint for US Government-Kunden benötigen eines der folgenden Microsoft-Volumenlizenzangebote:
@@ -43,13 +43,13 @@ GCC | GCC High | DoD
 :---|:---|:---
 Windows 10 Enterprise E5 GCC | Windows 10 Enterprise E5 für GCC High | Windows 10 Enterprise E5 für DOD
 | | Microsoft 365 E5 für GCC High | Microsoft 365 G5 für DOD
-| | Microsoft 365 G5 Security for GCC High | Microsoft 365 G5 Security for DOD
+| | Microsoft 365 G5 Sicherheit für GCC Hoch | Microsoft 365 G5 Sicherheit für DOD
 Microsoft Defender for Endpoint – GCC | Microsoft Defender for Endpoint for GCC High | Microsoft Defender for Endpoint for DOD
 
 ### <a name="server-licensing"></a>Serverlizenzierung
 GCC | GCC High | DoD
 :---|:---|:---
-Microsoft Defender für Endpoint Server GCC | Microsoft Defender für Endpoint Server für GCC High | Microsoft Defender für Endpunktserver für DOD
+Microsoft Defender for Endpoint Server GCC | Microsoft Defender for Endpoint Server for GCC High | Microsoft Defender für Endpunktserver für DOD
 Azure Defender für Server | Azure Defender for Servers – Government | Azure Defender for Servers – Government
 
 <br />
@@ -86,7 +86,7 @@ Windows Server 2012 R2 | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/chec
 Windows Server 2008 R2 SP1 | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Windows 8.1 Enterprise | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Windows 8 Pro | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
-Windows 7 SP1 Enterprise | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Windows 7 SP1-Enterprise | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Windows 7 SP1 Pro | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Linux | ![Ja](images/svg/check-yes.svg) In der Vorschau<br />Siehe Hinweis unten | ![Ja](images/svg/check-yes.svg) In der Vorschau<br />Siehe Hinweis unten | ![Ja](images/svg/check-yes.svg) In der Vorschau<br />Siehe Hinweis unten
 macOS | ![Ja](images/svg/check-yes.svg) In der Vorschau<br />Siehe Hinweis unten | ![Ja](images/svg/check-yes.svg) In der Vorschau<br />Siehe Hinweis unten | ![Ja](images/svg/check-yes.svg) In der Vorschau<br />Siehe Hinweis unten
@@ -97,16 +97,17 @@ iOS | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/s
 > Wenn ein Patch angegeben ist, muss er vor dem Geräte onboarding bereitgestellt werden, um Defender for Endpoint für die richtige Umgebung zu konfigurieren.
 
 > [!NOTE]
-> Versuchen Sie, Windows-Geräte, die älter als Windows 10 oder Windows Server 2019 sind, mithilfe von [Microsoft Monitoring Agent zu integrieren?](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) Sie müssen "Azure US Government" unter "Azure Cloud" [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)auswählen, wenn Sie [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) den Setup-Assistenten verwenden oder wenn Sie eine Befehlszeile oder ein Skript [verwenden–](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) legen Sie den Parameter "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" auf 1.
+> Versuchen Sie, Windows geräte, die älter als Windows 10 oder Windows Server 2019 sind, mithilfe von [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? Sie müssen "Azure US Government" unter "Azure Cloud" [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)auswählen, wenn Sie [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) den Setup-Assistenten verwenden oder wenn Sie eine Befehlszeile oder ein Skript [verwenden–](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) legen Sie den Parameter "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" auf 1.
 
 > [!NOTE]
-> Sie benötigen Version 101.25.72 und höher für Linux und Version 101.25.69 und höher für macOS. Während der Vorschau sind diese Versionen nur im Kanal "Insider Fast" verfügbar. Anweisungen [finden Sie unter Configure the Linux software repository](linux-install-manually.md#configure-the-linux-software-repository) oder Set the channel name [(macOS).](mac-updates.md#set-the-channel-name)
+> Sie benötigen Version 101.25.72 und höher für Linux und Version 101.25.69 und höher für macOS.
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>Betriebssystemversionen bei Verwendung von Azure Defender für Server
 Die folgenden Betriebssystemversionen werden bei Verwendung von [Azure Defender für Server unterstützt:](https://docs.microsoft.com/azure/security-center/security-center-wdatp)
 
 Betriebssystemversion | GCC | GCC High | DoD
 :---|:---|:---|:---
+Windows Server 2019 | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung
 Windows Server 2016 | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
@@ -159,28 +160,17 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 ## <a name="feature-parity-with-commercial"></a>Featureparität mit kommerziellen
 Kunden von Defender for Endpoint für US Government haben keine vollständige Parität mit dem kommerziellen Angebot. Unser Ziel besteht zwar in der Bereitstellung aller kommerziellen Features und Funktionen für unsere Kunden in den USA, es gibt jedoch noch nicht verfügbare Funktionen, die wir hervorheben möchten.
 
-Dies sind die bekannten Lücken ab März 2021:
+Dies sind die bekannten Lücken ab April 2021:
 
 Featurename | GCC | GCC High | DoD
 :---|:---|:---|:---
-Automatisierte Untersuchung und Behebung: Liveantwort | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
-Automatisierte Untersuchung und Behebung: Reaktion auf Office 365-Warnungen | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog
-E-Mail-Benachrichtigungen | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
-Evaluierungslabor | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
-Verwaltung und APIs: Bericht über geräteintehitäts- und compliance | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
-Verwaltung und APIs: Integration in Drittanbieterprodukte | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Verwaltung und APIs: Streaming-API | ![Ja](images/svg/check-yes.svg) | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung
-Verwaltung und APIs: Bedrohungsschutzbericht | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
-Bedrohungs- und Sicherheitsrisikomanagement | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
-Bedrohungsanalyse | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Internet-Inhaltsfilterung | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung
-Integrationen: Azure Sentinel | ![Ja](images/svg/check-yes.svg) | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung
-Integrationen: Microsoft Cloud App Security | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog
-Integrationen: Microsoft Compliance Manager | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog
-Integrationen: Microsoft Defender for Identity | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog
-Integrationen: Microsoft Defender für Office 365 | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog
-Integrationen: Microsoft Endpoint DLP | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog
+Integrationen: Azure Sentinel | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) Warnungen <br /> ![Nein](images/svg/check-no.svg) Vorfälle & Rohdaten: In der Entwicklung | ![Ja](images/svg/check-yes.svg) Warnungen <br /> ![Nein](images/svg/check-no.svg) Vorfälle & Rohdaten: In der Entwicklung
+Integrationen: Microsoft Cloud App Security | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung
+Integrationen: Microsoft Compliance Manager | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung
+Integrationen: Microsoft Defender for Identity | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung
+Integrationen: Microsoft Endpoint DLP | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog
 Integrationen: Microsoft Intune | ![Ja](images/svg/check-yes.svg) | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung
 Integrationen: Microsoft Power Automate & Azure Logic Apps | ![Ja](images/svg/check-yes.svg) | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung
-Integrationen: Skype for Business / Teams | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Microsoft-Bedrohungsexperten | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog

@@ -16,93 +16,93 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-overview
 ms.custom: ''
-description: Konfigurieren Sie die Sicherheits-und Dienstinfrastruktur, um Ihre Informationen zu schützen und Datenschutzbestimmungen einzuhalten.
-ms.openlocfilehash: 9af0a113d9b0eb2cbca07fdf457cd8bb7db3e094
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Konfigurieren des Informationsschutzes in Microsoft 365 datenschutzbestimmungen wie der DSGVO und dem California Consumer Privacy Act (CCPA), einschließlich Microsoft Teams, SharePoint und E-Mail.
+ms.openlocfilehash: cae3a559c2bce39ecb02afa9be0878ff5e19ba48
+ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842296"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100771"
 ---
 # <a name="deploy-information-protection-for-data-privacy-regulations-with-microsoft-365"></a>Bereitstellen des Informationsschutzes für Datenschutzbestimmungen mit Microsoft 365
 
-Ihre Organisation unterliegt möglicherweise regionalen Datenschutzbestimmungen, die Sie zum Schutz, zur Verwaltung und zur Bereitstellung von Rechten und zur Steuerung persönlicher Informationen benötigen, die in Ihrer IT-Infrastruktur gespeichert sind, sowohl lokal als auch in der Cloud. Das beste Beispiel für eine Datenschutzverordnung ist die allgemeine Datenschutzverordnung (dsgvo) der Europäischen Union. Die Nichteinhaltung von Datenschutzbestimmungen kann zu erheblichen Geldbußen führen.
+Ihre Organisation unterliegt möglicherweise regionalen Datenschutzbestimmungen, nach denen Sie Rechte und Kontrolle über in Ihrer IT-Infrastruktur gespeicherte persönliche Informationen, einschließlich lokal und in der Cloud, schützen, verwalten und bereitstellen müssen. Das beste Beispiel für eine Datenschutzverordnung ist die Datenschutz-Grundverordnung (DSGVO) der Europäischen Union. Die Nichteinhaltung von Datenschutzbestimmungen kann zu erheblichen Bußgeldern führen.
 
-Beispiele für die Datentypen in Microsoft 365 sind Chatsitzungen in Microsoft Teams, e-Mails in Exchange und Dateien in SharePoint und OneDrive. Diese Lösung bietet Anleitungen zum Bewerten von Risiken und zur Identifikation von Informationen, zum Schutz, zur Steuerung und zur Reaktion auf Datenschutz Vorfälle für personenbezogene Daten, die in Microsoft 365-Diensten gespeichert sind und Datenschutzbestimmungen unterliegen.
+Beispiele für die Typen von Daten in Microsoft 365 sind Chatsitzungen in Microsoft Teams, E-Mails in Exchange und Dateien in SharePoint und OneDrive. Diese Lösung bietet Anleitungen zum Bewerten von Risiken und zum Ergreifen geeigneter Maßnahmen zum Schutz personenbezogener Daten in Microsoft 365. Dazu gehört das Identifizieren personenbezogener Informationen, damit Sie Datenschutzvorfälle schützen, steuern und darauf reagieren können.
 
-![Was ist der Informationsschutz für Datenschutzbestimmungen?](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png)
+![Was ist Informationsschutz für Datenschutzbestimmungen?](../media/information-protection-deploy/information-protection-data-privacy-regulations-overview.png#lightbox)
 
-Weitere Informationen finden Sie auch unter Verwendung von Microsoft 365-Steuerelementen für Identitäts-, Geräte-und Bedrohungsschutz für die Datenschutzanforderungen. 
+Darüber hinaus werden zusätzliche Informationen zur Verwendung von Microsoft 365, Geräten und Bedrohungsschutzkontrollen für Ihre Datenschutzanforderungen bereitgestellt. 
 
-Verwenden Sie die folgenden Microsoft 365-Funktionen und-Features, um die Kriterien zum Schutz von Informationen zur Einhaltung der Datenschutzbestimmungen zu erfüllen.
+Diese Microsoft 365 und Features helfen Ihnen, die Kriterien für den Schutz von Informationen zu erfüllen.
 
 | Funktion oder Feature | Beschreibung | Lizenzierung |
 |:-------|:-----|:-------|
-| Compliance-Manager | Verwalten Sie behördliche Compliance-Aktivitäten, erhalten Sie eine Gesamtpunktzahl Ihrer aktuellen Konformitäts Konfiguration und finden Sie Empfehlungen für Verbesserungen in diesem workflowbasierten Risiko Bewertungstool im Microsoft 365 Compliance Center. | Microsoft 365 E3 und E5 |
+| Compliance-Manager | Verwalten Sie Aktivitäten zur Einhaltung gesetzlicher Vorschriften, erhalten Sie eine Gesamtpunktzahl Ihrer aktuellen Compliancekonfiguration und finden Sie Empfehlungen zur Verbesserung. Dies ist ein workflowbasiertes Risikobewertungstool im Microsoft 365 Compliance Center. | Microsoft 365 E3 und E5 |
 | Microsoft Defender für Office 365 | Schützen Sie Ihre Microsoft 365-Apps und-Daten vor Angriffen, beispielsweise E-Mails, Office-Dokumente und Tools für die Zusammenarbeit. | Microsoft 365 E3 und E5 | 
-| Vertraulichkeitsbezeichnungen | Sie können die Daten Ihrer Organisation klassifizieren und schützen, ohne die Produktivität der Benutzer und ihre Fähigkeit zur Zusammenarbeit zu behindern, indem Sie Bezeichnungen mit unterschiedlichen Schutzgraden für E-Mails, Dateien oder Websites platzieren. | Microsoft 365 E3 und E5 |
-| Schutz vor Datenverlust (DLP) | Sie können eine riskante, unbeabsichtigte oder unangebrachte Freigabe erkennen, warnen und blockieren. Beispielsweise die Weitergabe von Daten, die persönliche Informationen enthalten, sowohl intern als auch extern. | Microsoft 365 E3 und E5 | 
-| Aufbewahrungsbezeichnungen und Bezeichnungsrichtlinien | Implementieren Sie Kontrollmechanismen für die Informationsgovernance, z. B. wie lange Daten aufbewahrt werden und die Anforderungen für die Speicherung von persönlichen Daten von Kunden, um die Richtlinien oder Datenvorschriften Ihrer Organisation einzuhalten. | Microsoft 365 E3 und E5 |
-| E-Mail-Verschlüsselung | Senden und empfangen von verschlüsselten E-Mails zwischen Personen innerhalb und außerhalb Ihrer Organisation, die geregelte Daten enthalten, z. B. persönliche Daten von Kunden. | Microsoft 365 E3 und E5 |
+| Vertraulichkeitsbezeichnungen | Klassifizieren und schützen Sie die Daten Ihrer Organisation, ohne die Produktivität der Benutzer und ihre Fähigkeit zur Zusammenarbeit zu beeinträchtigen. Platzieren Sie Bezeichnungen mit verschiedenen Schutzebenen für E-Mails, Dateien oder Websites. | Microsoft 365 E3 und E5 |
+| Schutz vor Datenverlust (DLP) | Erkennen, warnen und blockieren Sie riskante, unbeabsichtigte oder unangemessene Freigabe von Daten, die persönliche Informationen enthalten, sowohl intern als auch extern. | Microsoft 365 E3 und E5 | 
+| Aufbewahrungsbezeichnungen und Bezeichnungsrichtlinien | Implementieren von Steuerungssteuerelementen für die Informationsverwaltung. Dazu kann auch die Bestimmung gehören, wie lange Daten (z. B. personenbezogene Daten im Zusammenhang mit Kunden) gespeichert werden müssen, um die Richtlinien oder Datenbestimmungen Ihrer Organisation einzuhalten. | Microsoft 365 E3 und E5 |
+| E-Mail-Verschlüsselung | Schützen Sie personenbezogene Daten, indem Sie verschlüsselte E-Mail-Nachrichten zwischen Personen innerhalb und außerhalb Ihrer Organisation senden und empfangen. | Microsoft 365 E3 und E5 |
 ||||
 
 ## <a name="organization-of-the-guidance-in-this-solution"></a>Organisation der Anleitungen in dieser Lösung
 
-Damit Sie sich mit den Microsoft 365-Tools vertraut machen können, die zum identifizieren, verwalten, Steuern und Überwachen von personenbezogenen Daten unter einer oder mehreren datenschutzbezogenen Bestimmungen verfügbar sind, sind diese Anleitungen in Abschnitten gegliedert.
+Damit Sie die verfügbaren tools Microsoft 365, die Ihnen bei der Erfüllung einer oder mehreren datenschutzbezogenen Bestimmungen helfen, sind diese Anleitungen in Abschnitte unterteilt.
  
-![Schritte zur Implementierung des Informationsschutzes für Datenschutzbestimmungen](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
+![Schritte zum Implementieren des Informationsschutzes für Datenschutzbestimmungen](../media/information-protection-deploy/information-protection-data-privacy-regulations-steps.png)
 
 Jeder dieser Abschnitte entspricht einem separaten Artikel in dieser Lösung.
 
 >[!Note]
->Wenn Sie bereits mit ihren Datenschutzverpflichtungen vertraut sind und gegen einen vorhandenen Plan ausgeführt werden, können Sie sich auf die Anleitungen zum verhindern, schützen, beibehalten und untersuchen konzentrieren.
+>Wenn Sie bereits mit Ihren Datenschutzverpflichtungen vertraut sind und gegen einen vorhandenen Plan ausgeführt werden, sollten Sie sich auf die Richtlinien Prevent, Protect, Retain und Investigate konzentrieren.
 
 >[!Important]
->Wenn Sie diese Anleitung befolgen, müssen Sie nicht unbedingt mit den Datenschutzbestimmungen konform sein, insbesondere im Hinblick auf die Anzahl der erforderlichen Schritte, die außerhalb des Kontexts der Features liegen. Sie sind dafür verantwortlich, dass Sie Ihre Einhaltung sicherstellen und ihre Rechts-und Compliance-Teams konsultieren oder sich von Drittanbietern beraten lassen, die sich auf die Einhaltung von Richtlinien spezialisieren.
+>Die Einhaltung dieser Anleitungen führt nicht unbedingt dazu, dass Sie mit einer Datenschutzverordnung konform sind, insbesondere unter Berücksichtigung der Anzahl der erforderlichen Schritte, die außerhalb des Kontexts der Features liegen. Sie sind dafür verantwortlich, Ihre Compliance sicherzustellen und Ihre Rechts- und Complianceteams zu konsultieren oder Sichten und Rat von Dritten zu erkundigen, die sich auf Compliance spezialisieren.
 >
 
-## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>Plan: Bewerten der Datenschutzrisiken und identifizieren vertraulicher Elemente
+## <a name="plan-assess-data-privacy-risks-and-identify-sensitive-items"></a>Plan: Bewerten von Datenschutzrisiken und Identifizieren vertraulicher Elemente
 
-Die Bewertung der Datenschutzbestimmungen und der Risiken, denen Ihre Organisation unterliegt, ist ein wichtiger erster Schritt, bevor Sie mit der Implementierung von Verbesserungen beginnen, einschließlich der durch die Konfiguration von Microsoft 365 erreichbaren. Dies kann eine allgemeine Eignungsbewertung oder die Identifizierung bestimmter vertraulicher Informationstypen sein, die den von Ihrer Organisation einzuhaltenden behördlichen Kontrollen unterliegen, sowie deren Auftreten in Ihrer Microsoft 365-Umgebung.
+Die Bewertung von Datenschutzbestimmungen und Risiken, denen Ihre Organisation unterliegt, ist ein wichtiger erster Schritt, bevor Sie mit der Implementierung von Verbesserungen beginnen, einschließlich der Konfiguration von Funktionen in Microsoft 365. Diese Arbeit kann eine allgemeine Bereitschaftsbewertung oder Identifikation bestimmter vertraulicher Informationstypen umfassen, die behördlichen Kontrollen unterliegen, die Ihre Organisation erfüllen muss.
 
-Weitere Informationen finden Sie unter [bewerten von Datenschutzrisiken und identifizieren vertraulicher Elemente](information-protection-deploy-assess.md).
+Weitere Informationen finden Sie unter [Bewerten von Datenschutzrisiken und Identifizieren vertraulicher Elemente.](information-protection-deploy-assess.md)
 
-## <a name="track-run-risk-assessments-and-check-your-compliance-score"></a>Track: Ausführen von Risikobewertungen und Überprüfen der Konformitätsbewertung
+## <a name="track-run-risk-assessments-and-check-your-compliance-score"></a>Track: Führen Sie Risikobewertungen aus, und überprüfen Sie Ihre Compliancebewertung.
 
-Compliance-Manager, verfügbar im Microsoft 365 Compliance Center, bietet Ihnen eine integrierte Möglichkeit zum Nachverfolgen und Verwalten von Verbesserungs Aktionen insgesamt sowie in Bezug auf mehrere Datenschutzbestimmungen, die für Sie gelten.
+Der Compliance-Manager, der im Microsoft 365 Compliance Center verfügbar ist, bietet Ihnen die integrierte Möglichkeit, Verbesserungsmaßnahmen insgesamt sowie im Zusammenhang mit mehreren Datenschutzbestimmungen, die für Sie gelten, nachverfolgt und zu verwalten.
 
-Nutzen Sie die in den einzelnen Verordnungen spezifischen Bewertungs Vorlagen, in denen Sie Aktionselemente für jede ausgewählte Bewertungs Vorlage nachverfolgen sowie bestimmte regulatorische Steuerelemente anzeigen und mit bestimmten Aktionen verknüpfen können.
+Sie können integrierte Bewertungsvorlagen verwenden, die für jede Verordnung spezifisch sind. Hier können Sie Aktionselemente für jede ausgewählte Bewertungsvorlage nachverfolgen sowie bestimmte behördliche Steuerelemente anzeigen und mit bestimmten Aktionen in Beziehung setzen.
 
-Weitere Informationen finden Sie unter [Verwenden des Compliance-Managers zum Verwalten von Verbesserungs Aktionen](information-protection-deploy-compliance.md).
+Weitere Informationen finden Sie unter [Use Compliance Manager to manage improvement actions](information-protection-deploy-compliance.md).
 
 ## <a name="prevent-protect-personal-data"></a>Verhindern: Schützen von personenbezogenen Daten
 
-Microsoft 365 bietet eine Reihe von Identitäts-, Geräte-und Bedrohungsschutz Funktionen, mit denen Sie die Einhaltung von Datenschutzbestimmungen in Einklang bringen können. 
+Microsoft 365 bietet Identitäts-, Geräte- und Bedrohungsschutzfunktionen, mit deren Hilfe Sie die Einhaltung gesetzlicher Datenschutzbestimmungen unterstützen können. 
 
-Weitere Informationen finden Sie unter [Verwenden von Identität, Gerät und Bedrohungsschutz für die Datenschutzverordnung](information-protection-deploy-identity-device-threat.md).
+Weitere Informationen finden Sie unter [Use identity, device, and threat protection for data privacy regulation](information-protection-deploy-identity-device-threat.md).
 
-In diesem Artikel wird kurz beschrieben, was die Datenschutzbestimmungen in diesen Bereichen allgemein betreffen, und enthält eine Liste der zugehörigen Microsoft 365-Lösungen mit Links zu weiteren Informationen, die Sie bei der Erfüllung von Implementierungsanforderungen unterstützen. 
+In diesem Artikel wird kurz beschrieben, was die Datenschutzbestimmungen in diesen Bereichen im Allgemeinen erfordern, und enthält eine Liste verwandter Microsoft 365-Lösungen mit Links zu weiteren Informationen, die Ihnen bei der Lösung aller Implementierungsanforderungen helfen. 
 
-## <a name="protect-information-subject-to-data-privacy-regulation"></a>Schützen von Informationen unterliegen der Datenschutzverordnung
+## <a name="protect-information-subject-to-data-privacy-regulation"></a>Datenschutzbestimmungen unterliegende Informationen schützen
 
-Die Datenschutzbestimmungen diktieren eine Reihe von Steuerelementen für den Schutz personenbezogener Daten, die in Ihrer Umgebung eingesetzt werden können, einschließlich mehr als 40 Schutz von Informations Steuerelementen in den vier Datenschutzbestimmungen in unserem Beispielsatz von dsgvo, California Consumer Protection Act (CCPA), HIPAA-HITECH (United States Health Care Privacy Act) und dem Brazil Data Protection Act (LGPD).
+Datenschutzbestimmungen diktieren eine Reihe von Kontrollen zum Schutz personenbezogener Informationen, die in Ihrer Umgebung verwendet werden können, einschließlich mehr als 40 Kontrollen zum Schutz von Informationen in nur den vier Datenschutzbestimmungen in unserem Beispielsatz von DSGVO, California Consumer Protection Act (CCPA), HIPAA-HITECH (United States Health Care Privacy Act) und dem Brazil Data Protection Act (LGPD).
 
-Weitere Informationen finden Sie unter [Schützen von Informationen unterliegender Datenschutzbestimmungen in Ihrer Organisation](information-protection-deploy-protect-information.md).
+Weitere Informationen finden Sie unter [Protect information subject to data privacy regulation in your organization](information-protection-deploy-protect-information.md).
 
-In diesem Artikel werden die wichtigsten steuerungsschemas erläutert, die für die Adressierung von Informationsschutz Anforderungen für den Datenschutz in Ihrer Organisation verwendet werden können.
+In diesem Artikel werden die wichtigsten Kontrollschemas beschrieben, die für die Behandlung der Anforderungen des Informationsschutzes an den Datenschutz in Ihrer Organisation verwendet werden können.
 
-## <a name="retain-govern-information-subject-to-data-privacy-regulation"></a>Beibehalten: Informationen zur Datenschutzrichtlinie unterliegen Regeln
+## <a name="retain-govern-information-subject-to-data-privacy-regulation"></a>Aufbewahrung: Regeln von Informationen, die der Datenschutzverordnung unterliegen
 
-Datenschutzbestimmungen rufen Sie die Steuerelemente für die Steuerung personenbezogener Informationen, die in Ihrer Umgebung eingesetzt werden können, einschließlich mehr als vierundzwanzig Steuerelemente in den vier Datenschutzbestimmungen in unserem Beispielsatz von dsgvo, CCPA, HIPAA-HITECH und LGPD auf.
+Datenschutzbestimmungen fordern Steuerungssteuerelemente für persönliche Informationen, die in Ihrer Umgebung verwendet werden können, einschließlich mehr als 24 Kontrollen in den vier Datenschutzbestimmungen in unserem Beispielsatz von DSGVO, CCPA, HIPAA-HITECH und LGPD.
 
-Weitere Informationen finden Sie unter [Steuern von Informationen unterliegen der Datenschutzbestimmungen in Ihrer Organisation](information-protection-deploy-govern.md).
+Weitere Informationen finden Sie unter [Govern information subject to data privacy regulation in your organization](information-protection-deploy-govern.md).
 
-Während die Datenschutzbestimmungen vage hinsichtlich der Informationssteuerung sein können &mdash; , wie zum Beispiel gezielte Aufbewahrung, Löschung und Archivierung, werden &mdash; in diesem Artikel die primären steuerungsschemas erläutert, die Sie für den Datenschutz in Ihrer Organisation mit den Anforderungen an die Informationssteuerung verwenden können.
+Während die Datenschutzbestimmungen im Hinblick auf informationspolitische Steuerung, wie z. B. zwecks Aufbewahrung, Löschung und Archivierung, vage sein können, enthält dieser Artikel die primären Kontrollschemas, die Sie für den Datenschutz in Ihrer Organisation verwenden &mdash; &mdash; können.
 
-## <a name="investigate-monitor-investigate-and-respond-to-data-privacy-incidents"></a>Untersuchen: überwachen, untersuchen und reagieren auf Datenschutz Vorfälle
+## <a name="investigate-monitor-investigate-and-respond-to-data-privacy-incidents"></a>Untersuchen: Überwachen, Untersuchen und Reagieren auf Datenschutzvorfälle
 
-Es stehen Microsoft 365-Features zur Verfügung, die Sie bei der Überprüfung, Untersuchung und Reaktion auf Datenschutz Vorfälle in Ihrer Organisation unterstützen, wenn Sie verwandte Funktionen nutzen. 
+Es stehen Microsoft 365 zur Verfügung, mit deren Hilfe Sie Datenschutzvorfälle in Ihrer Organisation überwachen, untersuchen und darauf reagieren können, während Sie verwandte Funktionen operationalisieren. 
 
-Es kann wichtig sein, Prozesse, Verfahren und andere Dokumentationen für diese zu untersuchen, um die Einhaltung von Regulierungsstellen zu demonstrieren.
+Prozesse, Verfahren und andere Dokumentationen für die Verwendung dieser Features können wichtig sein, um die Einhaltung von Vorschriften zu demonstrieren.
 
-Weitere Informationen finden Sie unter [überwachen und reagieren auf Datenschutz Vorfälle in Ihrer Organisation](information-protection-deploy-monitor-respond.md).
+Weitere Informationen finden Sie unter Überwachen und Reagieren auf Datenschutzvorfälle [in Ihrer Organisation.](information-protection-deploy-monitor-respond.md)
