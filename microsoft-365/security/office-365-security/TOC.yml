@@ -376,7 +376,7 @@
             - name: Verwalten von Rollengruppen in EOP als eigenständige Lösung
               href: manage-admin-role-group-permissions-in-eop.md
     - name: Microsoft 365 Defender
-      href: ../index.yml
+      href: ../defender/index.yml
     - name: Microsoft Defender für Endpunkt
       href: ../defender-endpoint/index.yml
     - name: Microsoft Defender for Identity
