@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: Wir veröffentlichen neue Warnungsrichtlinien für Microsoft Defender für Office 365. Es werden außerdem zwei bestehende Warnungsrichtlinien eingestellt, die durch die neuen ersetzt wurden.
-ms.openlocfilehash: 247b8c8be26016a8492f25243b8c5bcc555d35b3
-ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
+ms.openlocfilehash: 7074002a78d6e776f24395bf6492177c1d789033
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51760716"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086771"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Neue Warnungsrichtlinien in Microsoft Defender für Office 365
 
@@ -47,7 +47,7 @@ In der nachstehenden Tabelle sind die neuen sowie die bestehenden Warnungsrichtl
 
 ## <a name="alert-severity-enhancements"></a>Verbesserungen bei der Schweregradeinstufung
 
-In der folgenden Tabelle sind die Standardwarnungsrichtlinien aufgeführt, deren Schweregradklassifizierungen geändert werden. Wir ändern die Schweregradklassifizierung für diese Warnungsrichtlinien zur besseren Ausrichtung an den potenziellen Risiken und Auswirkungen auf Ihre Organisation und um Ihren Sicherheitsteams dabei zu helfen, die durch diese Richtlinien generierten Warnungen zu priorisieren.
+In der folgenden Tabelle sind die Standard-Alarmrichtlinien aufgeführt, deren Schweregradklassifizierungen geändert werden. Wir ändern die Schweregradklassifizierung für diese Alarmrichtlinien, um sie besser an das potenzielle Risiko und die Auswirkungen auf Ihr Unternehmen anzupassen und Ihren Sicherheitsteams zu helfen, die von diesen Richtlinien generierten Alarme zu priorisieren.
 
 | Warnung| ID der Warnungsrichtlinie| Alter Schweregrad| Neuer Schweregrad  |
 |:----------|:---------------|:------------|:--------------|
@@ -67,17 +67,17 @@ In der folgenden Tabelle ist aufgeführt, wann die neuen Warnungsrichtlinien dam
 |:------------|:-----|
 | **E-Mail-Nachrichten mit schädlicher URL wurden nach der Zustellung entfernt** (neu) | Warnungen werden ab dem 11. April 2021 ausgelöst.|
 | **E-Mail-Nachrichten mit schädlicher Datei wurden nach der Übermittlung entfernt** (neu) | Warnungen werden ab dem 11. April 2021 ausgelöst. |
-| **E-Mail-Nachrichten aus einer Kampagne wurden zugestellt und später entfernt** (neu) | Warnungen werden ab dem 30. April 2021 ausgelöst.|
-| **Schädliche E-Mails wurden zugestellt und später entfernt** (neu) | Warnungen werden ab dem 30. April 2021 ausgelöst.|
-| **E-Mail-Nachrichten mit Phishing-URLs wurden nach der Zustellung entfernt** (bestehend, wird entfernt)| Die Warnungsrichtlinie wird am 30. April 2021 entfernt. Lesen Sie hierzu den Abschnitt [Was Sie tun müssen, um sich auf diese Änderungen vorzubereiten](#what-you-need-to-do-to-prepare-for-these-changes).|
-| **E-Mail-Nachrichten mit Schadsoftware wurden nach der Zustellung entfernt** (bestehend, wird entfernt) | Die Warnungsrichtlinie wird am 30. April 2021 entfernt. Lesen Sie hierzu den Abschnitt [Was Sie tun müssen, um sich auf diese Änderungen vorzubereiten](#what-you-need-to-do-to-prepare-for-these-changes). |
+| **E-Mail-Nachrichten aus einer Kampagne wurden zugestellt und später entfernt** (neu) | Warnungen werden ab dem 14. Mai 2021 ausgelöst.|
+| **Schädliche E-Mails wurden zugestellt und später entfernt** (neu) | Warnungen werden ab dem 14. Mai 2021 ausgelöst.|
+| **E-Mail-Nachrichten mit Phishing-URLs wurden nach der Zustellung entfernt** (bestehend, wird entfernt)| Die Warnungsrichtlinie wird am 14. Mai 2021 entfernt. Lesen Sie hierzu den Abschnitt [Was Sie tun müssen, um sich auf diese Änderungen vorzubereiten](#what-you-need-to-do-to-prepare-for-these-changes).|
+| **E-Mail-Nachrichten mit Schadsoftware wurden nach der Zustellung entfernt** (bestehend, wird entfernt) | Die Warnungsrichtlinie wird am 14. Mai 2021 entfernt. Lesen Sie hierzu den Abschnitt [Was Sie tun müssen, um sich auf diese Änderungen vorzubereiten](#what-you-need-to-do-to-prepare-for-these-changes). |
 |||
 
-Die Änderungen an den Warnungsschweregraden werden bis zum 30. April 2021 für alle Organisationen veröffentlicht.
+Die Änderungen an den Warnungsschweregraden werden bis zum 14. Mai 2021 für alle Organisationen veröffentlicht.
 
 ## <a name="how-this-will-affect-your-organization"></a>Auswirkungen auf Ihre Organisation
 
-Die neuen Warnungen werden ab den oben genannten Terminen ausgelöst und beginnen mit dem Triggern von AIR-Untersuchungen in Ihrer Organisation. Um die Auswirkungen auf Sicherheitsorganisationen zu verringern, die die zwei zu entfernenden Warnungen implementiert haben, werden zwischen dem 5. April 2021 und dem 30. April 2021 durch die bestehenden *und* die neuen Warnungsrichtlinien ausgelöste Warnungen angezeigt. Dadurch haben Sicherheitsteams ausreichend Zeit, die erforderlichen Änderungen vorzunehmen. Um die Sicherheitsteams das Handling des erhöhten Warnungsvolumen während dieser kurzen Dauer zu erleichtern, werden sowohl die alten als auch die neuen Warnungen in derselben AIR-Untersuchung und im selben Vorfall korreliert. Dies schließt insbesondere das folgende Verhalten für Warnungen, AIR-Untersuchungen und Vorfälle ein:
+Die neuen Warnungen werden ab den oben genannten Terminen ausgelöst und beginnen mit dem Triggern von AIR-Untersuchungen in Ihrer Organisation. Um die Auswirkungen auf Sicherheitsorganisationen zu verringern, die die zwei zu entfernenden Warnungen implementiert haben, werden zwischen dem 5. April 2021 und dem 14. Mai 2021 durch die bestehenden *und* die neuen Warnungsrichtlinien ausgelöste Warnungen angezeigt. Dadurch haben Sicherheitsteams ausreichend Zeit, die erforderlichen Änderungen vorzunehmen. Um die Sicherheitsteams das Handling des erhöhten Warnungsvolumen während dieser kurzen Dauer zu erleichtern, werden sowohl die alten als auch die neuen Warnungen in derselben AIR-Untersuchung und im selben Vorfall korreliert. Dies schließt insbesondere das folgende Verhalten für Warnungen, AIR-Untersuchungen und Vorfälle ein:
 
 - **Warnungen**: Standardmäßig werden alte und neue Warnungen als folgende Warnungspaare angezeigt:
 
@@ -109,11 +109,11 @@ Was Sie zur Vorbereitung tun müssen, hängt davon ab, wie Ihre Organisation die
 
   - **E-Mail-Nachrichten mit Schadsoftware wurden nach der Zustellung entfernt**
 
-- Nichts tun. Die bestehenden Warnungsrichtlinien werden am 30. April 2021 deaktiviert.
+- Nichts tun. Die bestehenden Warnungsrichtlinien werden am 14. Mai 2021 deaktiviert.
 
 **Wenn Sie diese Warnungen implentiert haben:**
 
-- Beginnen Sie vor der Entfernung der bestehenden Warnungsrichtlinie am 30. April 2021, die neuen Warnungen im Rahmen Ihrer Workflows zu nutzen. Im Falle einer benutzerdefinierten Logik in Ihrem Ticketingsystem, einem Sicherheitspostfach, über das Sie Warnungs-E-Mail-Benachrichtigungen erhalten, oder einer SIEM-Lösung, die vom Warnungsnamen oder der Warnungsrichtlinien-ID (CorrelationId) abhängt, müssen Sie die Logik an die Änderung anpassen.
+- Beginnen Sie damit, die neuen Alarme als Teil Ihrer Arbeitsabläufe zu verwenden, in Erwartung der Entfernung der bestehenden Alarm-Richtlinie am 14. Mai 2021. Im Falle einer benutzerdefinierten Logik in Ihrem Ticketingsystem, einem Sicherheitspostfach, über das Sie Warnungs-E-Mail-Benachrichtigungen erhalten, oder einer SIEM-Lösung, die vom Warnungsnamen oder der Warnungsrichtlinien-ID (CorrelationId) abhängt, müssen Sie die Logik an die Änderung anpassen.
 
   > [!NOTE]
   > An den Informationen in den Warnungen, Untersuchungen und Vorfällen hat sich nicht geändert. Diese Informationen wurden vielmehr durch zusätzliche Details zu den damit verbundenen Bedrohungen verbessert.
@@ -124,4 +124,4 @@ Was Sie zur Vorbereitung tun müssen, hängt davon ab, wie Ihre Organisation die
 
   - **E-Mail-Nachrichten mit Schadsoftware wurden nach der Zustellung entfernt**
 
-  Alternativ können Sie diese Warnungsrichtlinien aktiviert lassen, bis sie am 30. April 2021 gelöscht werden.
+  Alternativ können Sie diese Warnungsrichtlinien aktiviert lassen, bis sie am 14. Mai 2021 gelöscht werden.

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Erfahren Sie, wie Sie Ihre Organisation vor Kennwortangriffen schützen und warum Sie häufig verwendete Kennwörter verbieten und die risikobasierte mehrstufige Authentifizierung aktivieren sollten.
-ms.openlocfilehash: ca9a88b0bb154416837254d785cf9cfee8876ae6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d3f86a6e85ab2f8e469a57ea98a661e4cc453673
+ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914726"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52073865"
 ---
 # <a name="password-policy-recommendations"></a>Empfehlungen für Kennwortrichtlinien
 
@@ -34,7 +34,15 @@ Als Administrator einer Organisation sind Sie für das Einrichten der Kennwortri
   
 Um zu ermitteln, wie oft Microsoft 365-Kennwörter in Ihrer Organisation ablaufen, lesen Sie die Informationen unter [Festlegen der Kennwortablaufrichtlinie für Microsoft 365](../manage/set-password-expiration-policy.md).
 
-Weitere Informationen über Microsoft 365-Kennwörter finden Sie in diesen [verwandten Artikeln](#related-articles).
+Weitere Informationen über Microsoft 365-Kennwörter finden Sie unter:
+
+[Kennwörter zurücksetzen](../add-users/reset-passwords.md) (Artikel)
+
+[Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft](../add-users/set-password-to-never-expire.md) (Artikel)
+
+[Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten](../add-users/let-users-reset-passwords.md) (Artikel)
+
+[Erneutes Senden eines Benutzerkennworts – Administratorhilfe](../add-users/resend-user-password.md) (Artikel)
   
 ## <a name="understanding-password-recommendations"></a>Grundlegendes zu Kennwortempfehlungen
 
@@ -134,12 +142,12 @@ Durch die risikobasierte mehrstufige Authentifizierung wird sichergestellt, dass
 
 - [Liste der schlechtesten Kennwörter 2015](https://go.microsoft.com/fwlink/p/?linkid=861020)
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Zurücksetzen von Kennwörtern](../add-users/reset-passwords.md)
+[Kennwörter zurücksetzen](../add-users/reset-passwords.md) (Artikel)
 
-[Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft](../add-users/set-password-to-never-expire.md)
+[Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft](../add-users/set-password-to-never-expire.md) (Artikel)
 
-[Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten](../add-users/let-users-reset-passwords.md)
+[Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten](../add-users/let-users-reset-passwords.md) (Artikel)
 
-[Erneutes Senden eines Benutzerkennworts – Administratorhilfe](../add-users/resend-user-password.md)
+[Erneutes Senden eines Benutzerkennworts – Administratorhilfe](../add-users/resend-user-password.md) (Artikel)
