@@ -12,21 +12,21 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- commcerce_billing
+- PPM_jmueller
+ms.reviewer: tugu
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- GEA150
-ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Erfahren Sie, wie Sie Änderungen an Ihrem Organisationsprofil, beispielsweise Bezeichnung der Organisation, Adresse, Telefonnummer, technischer Kontakt und E-Mail-Adresse vornehmen können.
-ms.openlocfilehash: 93f0777ba5f1cd20cca6e286a4b4366c403fc9da
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.date: 03/30/2021
+ms.openlocfilehash: d27ad65b9f58d4da6c01b32c9441c0296a17e3bd
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470559"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107014"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Ändern der Adresse, des technischen Kontakts und anderer Informationen Ihrer Organisation
   

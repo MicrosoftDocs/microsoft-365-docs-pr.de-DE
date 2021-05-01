@@ -19,12 +19,12 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie das Übermittlungsportal im Security & Compliance Center verwenden, um verdächtige E-Mails, verdächtige Phishing-E-Mails, Spam und andere potenziell schädliche Nachrichten, URLs und Dateien zur Überprüfung an Microsoft zu übermitteln.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0975d5b6c2d29c94a30f7bbc703221b80217761
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: d0b91808aa9008f467f66b8200f2c05a120fbcd9
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599875"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107230"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Verwenden von Administrator-Übermittlung, um verdächtige Spam- oder Phishing-Nachrichten, URLs und Dateien an Microsoft zu übermitteln
 
@@ -35,7 +35,7 @@ ms.locfileid: "51599875"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online können Administratoren das Übermittlungsportal im Security & Compliance Center verwenden, um E-Mail-Nachrichten, URLs und Anlagen zur Überprüfung an Microsoft zu übermitteln.
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online können Administratoren das Übermittlungsportal im Security & Compliance Center verwenden, um E-Mail-Nachrichten, URLs und Anlagen zur Überprüfung an Microsoft zu übermitteln.
 
 Wenn Sie eine E-Mail-Nachricht übermitteln, erhalten Sie:
 
@@ -78,7 +78,7 @@ Weitere Möglichkeiten zum Übermitteln von E-Mail-Nachrichten, URLs und Anlagen
    - **Datei**: Klicken Sie **auf Datei auswählen**. Suchen Und wählen Sie im geöffneten Dialogfeld die Datei EML oder MSG aus, und klicken Sie dann auf **Öffnen**.
 
    > [!NOTE]
-   > Die Möglichkeit, Nachrichten so alt wie 30 Tage zu übermitteln, wurde für Defender for Office 365-Kunden vorübergehend angehalten. Administratoren können nur 7 Tage zurück.
+   > Die Möglichkeit, Nachrichten ab einem Alter von 30 Tagen zu übermitteln, wurde für Defender für Office 365 ausgesetzt. Administratoren können nur 7 Tage zurück.
 
 2. Geben Sie **im Abschnitt Empfänger** einen oder mehrere Empfänger an, für die Sie eine Richtlinienüberprüfung ausführen möchten. Die Richtlinienüberprüfung bestimmt, ob die E-Mail-Überprüfung aufgrund von Benutzer- oder Organisationsrichtlinien umgangen wurde.
 
@@ -90,7 +90,7 @@ Weitere Möglichkeiten zum Übermitteln von E-Mail-Nachrichten, URLs und Anlagen
 
 4. Wenn Sie fertig sind, klicken Sie auf **die** Schaltfläche Absenden.
 
-   ![Beispiel für die URL-Übermittlung](../../media/submission-flyout-email.PNG)
+   ![Neues URL-Übermittlungsbeispiel](../../media/submission-flyout-email.PNG)
 
 ### <a name="send-a-suspect-url-to-microsoft"></a>Senden einer verdächtigen URL an Microsoft
 
@@ -104,7 +104,7 @@ Weitere Möglichkeiten zum Übermitteln von E-Mail-Nachrichten, URLs und Anlagen
 
 3. Wenn Sie fertig sind, klicken Sie auf **die** Schaltfläche Absenden.
 
-   ![Beispiel für die E-Mail-Übermittlung](../../media/submission-url-flyout.png)
+   ![Beispiel für neue E-Mail-Übermittlung](../../media/submission-url-flyout.png)
 
 ### <a name="submit-a-suspected-file-to-microsoft"></a>Übermitteln einer verdächtigen Datei an Microsoft
 
@@ -120,7 +120,7 @@ Weitere Möglichkeiten zum Übermitteln von E-Mail-Nachrichten, URLs und Anlagen
 
 4. Wenn Sie fertig sind, klicken Sie auf **die** Schaltfläche Absenden.
 
-   ![Beispiel für anlagenübermittlung](../../media/submission-file-flyout.PNG)
+   ![Beispiel für die Übermittlung neuer Anlagen](../../media/submission-file-flyout.PNG)
 
 ## <a name="view-items-submitted-for-analysis"></a>Zur Analyse übermittelte Elemente anzeigen
 
@@ -136,9 +136,9 @@ Klicken Sie zum Ändern der Filterkriterien auf die Schaltfläche **Übermittlun
 - **Übermittlungstyp**
 - **Status**
 
-![Filteroptionen für Administratorübermittlungen](../../media/admin-submission-email-filter-options.png)
+![Neue Filteroptionen für Administratorübermittlungen](../../media/admin-submission-email-filter-options.png)
 
-Klicken Sie zum Exportieren der Ergebnisse **am** oberen Rand der Seite auf Exportieren, und wählen Sie **Diagrammdaten** oder **Tabelle aus.** Speichern Sie im angezeigten Dialogfeld die CSV-Datei.
+Klicken Sie zum Exportieren der Ergebnisse **am** oberen Rand der Seite auf Exportieren, und wählen Sie **Diagrammdaten** oder **Tabelle aus.** Speichern Sie im angezeigten Dialogfeld die .csv Datei.
 
 Unterhalb des Diagramms befinden sich drei Registerkarten: **E-Mail** (Standard), **URL** und **Anlage**.
 
@@ -203,7 +203,7 @@ Sie können auf die Schaltfläche **Spaltenoptionen** am unteren Rand der Seite 
 
 ## <a name="view-user-submissions-to-microsoft"></a>Anzeigen von Benutzerübermittlungen an Microsoft
 
-Wenn Sie das Berichtsnachrichten-Add-In , das  [Phishing-Add-In](enable-the-report-phish-add-in.md)Melden oder Personen, die die integrierte Berichterstellung [in Outlook](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)im Web verwenden, bereitgestellt haben, können Sie auf der Registerkarte Benutzerübermittlungen anzeigen, welche Benutzer melden. [](enable-the-report-message-add-in.md)
+Wenn Sie das Berichtsnachrichten-Add-In , das  Phishing-Add-In Melden oder Personen, die die integrierte Berichterstellung in Outlook im Web verwenden, bereitgestellt haben, können Sie auf der Registerkarte Benutzerübermittlungen [anzeigen, welche](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)Benutzer melden. [](enable-the-report-message-add-in.md) [](enable-the-report-phish-add-in.md)
 
 1. Wechseln Sie im Security & Compliance Center zu Übermittlungen **der** \> **Bedrohungsverwaltung.**
 
@@ -230,9 +230,9 @@ Klicken Sie zum Ändern der Filterkriterien auf die Schaltfläche **Absender,** 
 - **Übermittlungstyp**
 - **Sender-IP**
 
-![Filteroptionen für Benutzerübermittlungen](../../media/user-submissions-filter-options.png)
+![Neue Filteroptionen für Benutzerübermittlungen](../../media/user-submissions-filter-options.png)
 
-Klicken Sie zum Exportieren der Ergebnisse **am** oberen Rand der Seite auf Exportieren, und wählen Sie **Diagrammdaten** oder **Tabelle aus.** Speichern Sie im angezeigten Dialogfeld die CSV-Datei.
+Klicken Sie zum Exportieren der Ergebnisse **am** oberen Rand der Seite auf Exportieren, und wählen Sie **Diagrammdaten** oder **Tabelle aus.** Speichern Sie im angezeigten Dialogfeld die .csv Datei.
 
 ## <a name="view-user-submissions-to-the-custom-mailbox"></a>Anzeigen von Benutzerübermittlungen an das benutzerdefinierte Postfach
 
@@ -253,7 +253,7 @@ Sie können auf die Schaltfläche **Spaltenoptionen** am unteren Rand der Seite 
 
 Am oberen Rand der Seite können Sie ein Startdatum, ein Enddatum eingeben und nach **Übermittelt** filtern, indem Sie in das Feld einen Wert eingeben und auf Aktualisieren ![ ](../../media/scc-quarantine-refresh.png) klicken. Mehrere Werte können durch Kommata getrennt eingegeben werden.
 
-Klicken Sie zum Exportieren der Ergebnisse **am** oberen Rand der Seite auf Exportieren, und wählen Sie **Diagrammdaten** oder **Tabelle aus.** Speichern Sie im angezeigten Dialogfeld die CSV-Datei.
+Klicken Sie zum Exportieren der Ergebnisse **am** oberen Rand der Seite auf Exportieren, und wählen Sie **Diagrammdaten** oder **Tabelle aus.** Speichern Sie im angezeigten Dialogfeld die .csv Datei.
 
 > [!NOTE]
 > Wenn Organisationen nur für das Senden an benutzerdefinierte Postfächer konfiguriert sind, werden die gemeldeten Nachrichten nicht zum erneuten Scannen gesendet, und die Ergebnisse im Portal für vom Benutzer gemeldete Nachrichten sind immer leer.
@@ -266,11 +266,11 @@ Sobald ein Benutzer eine verdächtige E-Mail an das benutzerdefinierte Postfach 
 
 Wenn Sie das benutzerdefinierte Postfach so konfiguriert haben, dass von Benutzern gemeldete Nachrichten abgefangen werden, ohne die Nachrichten an Microsoft zu senden, können Sie bestimmte Nachrichten zur Analyse finden und an Microsoft senden. Dadurch wird eine Benutzerübermittlung effektiv in eine Administratorübermittlung verlagert.
 
-Wählen Sie **auf der** Registerkarte Benutzerdefiniertes Postfach  eine Nachricht in der Liste aus, klicken Sie auf die Schaltfläche Aktion, und treffen Sie eine der folgenden Auswahlen:
+Wählen Sie **auf** der Registerkarte Benutzer gemeldete Nachrichten  eine Nachricht in der Liste aus, klicken Sie auf die Schaltfläche Aktion, und treffen Sie eine der folgenden Auswahlen:
 
 - **Bericht bereinigen**
 - **Melden von Phishing**
 - **Melden von Schadsoftware**
 - **Melden von Spam**
 
-![Optionen auf der Schaltfläche Aktion](../../media/user-submission-custom-mailbox-action-button.png)
+![Neue Optionen auf der Schaltfläche Aktion](../../media/user-submission-custom-mailbox-action-button.png)

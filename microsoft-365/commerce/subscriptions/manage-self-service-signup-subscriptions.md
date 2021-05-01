@@ -12,18 +12,21 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
-- Adm_NonTOC
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie kostenlose Self-Service-Anmeldeabonnements für Ihre Organisation verwalten.
-ms.openlocfilehash: 5910ed5d65f93a4dab15c681610d4d59d0427fb0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: 64648151d7761bd8bb0d2301d59fb093de98b127
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920168"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107616"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Verwalten von Self-Service-Anmeldeabonnements
 
@@ -38,7 +41,7 @@ Es gibt eine begrenzte Anzahl kostenloser Self-Service-Anmeldeabonnements, für 
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>Wie unterscheiden sich diese Abonnements von Self-Service-Kaufabonnements?
 
-Self-Service-Anmeldeabonnements sind kostenlos und stehen für eine größere Liste von Produkten zur Verfügung als Self-Service-Kaufabonnements. Wenn sich ein Benutzer für ein Self-Service-Kaufabonnement einschreibt, ist er für die Zahlung verantwortlich. Self-Service-Kaufabonnements sind nur für Power Platform-Produkte (Power BI, Power Apps und Power Automate), Project und Visio verfügbar. Weitere Informationen finden Sie unter Häufig gestellte Fragen [zum Self-Service-Kauf.](self-service-purchase-faq.md)
+Self-Service-Anmeldeabonnements sind kostenlos und stehen für eine größere Liste von Produkten zur Verfügung als Self-Service-Kaufabonnements. Wenn sich ein Benutzer für ein Self-Service-Kaufabonnement einschreibt, ist er für die Zahlung verantwortlich. Self-Service-Kaufabonnements sind nur für Power Platform-Produkte (Power BI, Power Apps und Power Automate), Project und Visio. Weitere Informationen finden Sie unter Häufig gestellte Fragen [zum Self-Service-Kauf.](self-service-purchase-faq.md)
 
 ## <a name="block-users-from-signing-up"></a>Blockieren der Anmeldung von Benutzern
 
@@ -57,4 +60,4 @@ Sie verwenden das [**Cmdlet Set-MsolCompanySettings**](/powershell/module/msonli
 
 ## <a name="i-have-a-self-service-sign-up-subscription-that-blocks-directory-deletion"></a>Ich habe ein Self-Service-Anmeldeabonnement, das die Verzeichnislöschung blockiert
 
-Die Self-Service-Anmeldeprodukte, für die sich einzelne Benutzer registrieren können, erstellen auch einen Gastbenutzer für die Authentifizierung in Ihrem Azure AD-Verzeichnis. Um Datenverluste zu vermeiden, blockieren diese Self-Service-Produkte Verzeichnislöschungen, bis sie vollständig aus dem Verzeichnis gelöscht werden. Sie können nur vom Azure AD-Administrator gelöscht werden. Weitere Informationen finden Sie [unter Löschen eines Verzeichnisses in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-delete-howto).
+Die Self-Service-Anmeldeprodukte, für die sich einzelne Benutzer registrieren können, erstellen auch einen Gastbenutzer für die Authentifizierung in Ihrem Azure AD-Verzeichnis. Um Datenverluste zu vermeiden, blockieren diese Self-Service-Produkte Verzeichnislöschungen, bis sie vollständig aus dem Verzeichnis gelöscht werden. Sie können nur vom Azure AD-Administrator gelöscht werden. Weitere Informationen finden Sie unter [Löschen eines Verzeichnisses in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-delete-howto).

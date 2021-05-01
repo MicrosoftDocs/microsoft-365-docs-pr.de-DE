@@ -1,5 +1,5 @@
 ---
-title: Geben Sie Ihren Product Key für Microsoft 365 Business Standard ein.
+title: Geben Sie Ihren Product Key für Microsoft 365 Business Standard
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,57 +12,59 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
-- Adm_NonTOC
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: Erfahren Sie, wie Sie einen Microsoft 365 Business Standard Product Key einlösen, der in einem Einzelhandelsgeschäft erworben wurde.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 1c647efaa880096a9fc7713aa28960d563eff69d
-ms.sourcegitcommit: fcc1b40732f28f075d95faffc1655473e262dd95
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
+description: Erfahren Sie, wie Sie einen Microsoft 365 Business Standard, der in einem Einzelhandelsgeschäft erworben wurde, einlösen.
+ms.date: 11/13/2020
+ms.openlocfilehash: 0e647b8d52d024750b3944a03133755c1257ee4c
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "49072747"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107448"
 ---
-# <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Geben Sie Ihren Product Key für Microsoft 365 Business Standard ein.
+# <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Geben Sie Ihren Product Key für Microsoft 365 Business Standard
 
-Wenn Sie Microsoft 365 Business Standard in einem Einzelhandelsgeschäft erworben haben, hilft Ihnen dieser Artikel bei der Aktivierung Ihres Abonnements.
+Wenn Sie Microsoft 365 Business Standard in einem Einzelhandelsgeschäft erworben haben, hilft Ihnen dieser Artikel, Ihr Abonnement zu aktivieren.
   
  **Benötigen Sie etwas anderes?**
- **Hilfe zur Microsoft 365-Familie oder zu Microsoft 365 Personal** finden Sie unter [Verwenden von Product Keys mit Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
- **Sind Sie ein Volumenlizenzkunde?** Wenn Sie Microsoft 365 for Business über ein [Microsoft Open License-Programm](https://go.microsoft.com/fwlink/p/?LinkID=613298)erworben haben, lesen Sie den Artikel geben Sie den [von Microsoft Open erworbenen Product Key](purchases-from-microsoft-open.md)ein.
+ **Hilfe zu Microsoft 365 Family oder Microsoft 365 Single** finden Sie unter Verwenden von Product Keys with [Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).  
+ **Sind Sie ein Volumenlizenzkunde?** Wenn Sie Microsoft 365 Microsoft [Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298)erworben haben, lesen Sie den Artikel Geben Sie Ihren Product Key ein, der von Microsoft Open erworben [wurde.](purchases-from-microsoft-open.md)
   
 ## <a name="activate-a-new-subscription"></a>Aktivieren eines neuen Abonnements
 
 1. Wechseln Sie zu <a href="https://go.microsoft.com/fwlink/p/?LinkId=839911" target="_blank">https://microsoft365.com/setupbusiness</a>.
 
-2. Geben Sie Ihren Product Key ein, und wählen Sie dann **weiter** aus.
+2. Geben Sie Ihren Product Key ein, und wählen Sie dann **Weiter aus.**
 
-3. Geben Sie Ihren Namen, geschäftliche e-Mail-Adresse, geschäftliche Telefonnummer, Firmennamen und Land oder Region ein, und wählen Sie dann **weiter** aus.
+3. Geben Sie Ihren Namen, Ihre Geschäftliche E-Mail-Adresse, Ihre Geschäftstelefonnummer, den Firmennamen und das Land oder die Region ein, und wählen Sie dann **Weiter aus.**
 
 4. Geben Sie eine Telefonnummer ein, um entweder einen Text oder einen Anruf zu erhalten, um Ihre Identität zu überprüfen.
 
-5. Sie können eine neue Domäne abrufen, einen bereits vorhandenen Domänennamen verwenden oder später eine Domäne hinzufügen. Die Schritte können variieren, daher folgen Sie den Anweisungen, je nachdem, welche Option Sie auswählen.
+5. Sie können eine neue Domäne erhalten, einen domänennamen verwenden, den Sie bereits besitzen, oder später eine Domäne hinzufügen. Die Schritte können variieren, folgen Sie daher den Eingabeaufforderungen, je nachdem, welche Option Sie auswählen.
 
     > [!NOTE]
-    > Wenn Sie sicherstellen möchten, dass Ihr Abonnement am Ende seiner Laufzeit automatisch verlängert wird, können Sie eine Kreditkarte oder ein Bankkonto hinzufügen und dann die [wiederkehrende Abrechnung](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) für dieses Abonnement aktivieren.
+    > Wenn Sie sicherstellen möchten, dass Ihr Abonnement am Ende der Laufzeit automatisch verlängert wird, können [](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on) Sie eine Kreditkarte oder ein Bankkonto hinzufügen und dann wiederkehrende Abrechnung für dieses Abonnement aktivieren.
 
-6. Wenn Sie fertig sind, wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin Center</a> , um Ihr Abonnement zu verwalten.
+6. Wenn Sie fertig sind, wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin Center,</a> um Ihr Abonnement zu verwalten.
 
-## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Verlängern des Ablaufdatums oder Hinzufügen einer Lizenz zu einem vorhandenen Abonnement
+## <a name="extend-the-expiration-date-or-add-a-license-to-an-existing-subscription"></a>Erweitern des Ablaufdatums oder Hinzufügen einer Lizenz zu einem vorhandenen Abonnement
 
-Wenn Sie das Ablaufdatum verlängern oder eine Lizenz zu Ihrem vorhandenen Microsoft 365 Business Standard-Abonnement hinzufügen möchten, verwenden Sie einen neuen und nicht verwendeten Schlüssel für denselben Microsoft 365-Plan. Das Eingeben Ihres ursprünglichen Microsoft 365-Product Keys funktioniert nicht, da ein bereits eingelöster Schlüssel nicht erneut verwendet werden kann. Weitere Informationen finden Sie unter [Hinzufügen von Lizenzen oder verlängern eines Abonnements, das mit einem Product Key bezahlt](licenses/add-licenses-using-product-key.md)wurde.
+Verwenden Sie einen neuen und nicht verwendeten Schlüssel für den gleichen Microsoft 365, um das Ablaufdatum zu verlängern oder ihrem vorhandenen Microsoft 365 Business Standard eine Lizenz hinzuzufügen. Das Eingeben des ursprünglichen Microsoft 365 funktioniert nicht, da ein bereits eingelöster Schlüssel nicht erneut verwendet werden kann. Weitere Informationen finden Sie unter Hinzufügen von [Lizenzen zu oder Erweitern eines Abonnements, das für die Verwendung eines Product Key bezahlt wird.](licenses/add-licenses-using-product-key.md)
 
 ## <a name="whats-next"></a>Nächste Schritte
 
-Wenn Sie neu bei Microsoft 365 for Business sind, erfahren Sie, wie Sie [Microsoft 365 einrichten](../admin/setup/setup.md).
+Wenn Sie neu in Microsoft 365 Business sind, erfahren Sie, wie [Sie Microsoft 365.](../admin/setup/setup.md)
   
-## <a name="still-having-trouble-with-product-keys"></a>Sie haben immer noch Probleme mit Produktschlüsseln?
+## <a name="still-having-trouble-with-product-keys"></a>Haben Sie weiterhin Probleme mit Product Keys?
 
-Sehen Sie sich diese Liste der häufigsten Fehler und Lösungen an: [Probleme mit Ihrem Product Key für Microsoft 365 for Business?](product-key-errors-and-solutions.md)
+Sehen Sie sich diese Liste gängiger Fehler und Lösungen an: [Probleme mit Microsoft 365 Business Product Key?](product-key-errors-and-solutions.md)
   
 Oder [rufen Sie den Microsoft-Support an](../admin/contact-support-for-business-products.md).

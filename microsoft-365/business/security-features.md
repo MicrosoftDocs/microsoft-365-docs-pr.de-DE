@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Business Premium-Sicherheits- und Compliancefeatures
+title: Microsoft 365 Business Premium- und Compliancefeatures
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -23,41 +23,41 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c123694a-1efb-459e-a8d5-2187975373dc
-description: Erfahren Sie mehr über die Sicherheitsfeatures von Microsoft 365 Business Premium, um Ihre Daten auf PCs, Smartphones und Tablets zu schützen.
-ms.openlocfilehash: bca20a7a03a93f7ac2bf8752476046f0db43cc70
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Erfahren Sie mehr über die Sicherheitsfeatures, die Microsoft 365 Business Premium, um Ihre Daten auf PCs, Smartphones und Tablets zu schützen.
+ms.openlocfilehash: 974204e100d3228f78406aca4acce67a889b08c3
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578145"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113464"
 ---
-# <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 Business Premium-Sicherheits- und Compliancefeatures
+# <a name="microsoft-365-business-premium-security-and-compliance-features"></a>Microsoft 365 Business Premium- und Compliancefeatures
 
 Microsoft 365 Business Premium bietet vereinfachte Sicherheitsfeatures zum Schutz Ihrer Daten auf PCs, Smartphones und Tablets.
     
-## <a name="microsoft-365-admin-center-security-features"></a>Sicherheitsfeatures für Microsoft 365 Admin Center
+## <a name="microsoft-365-admin-center-security-features"></a>Microsoft 365 Admin Center-Sicherheitsfeatures
 
-Sie können viele der Microsoft 365 Business Premium-Sicherheitsfeatures im Admin Center verwalten, wodurch Sie diese Features einfacher aktivieren oder deaktivieren können. Im Admin Center können Sie folgendes tun:
+Sie können viele der Microsoft 365 Business Premium im Admin Center verwalten, wodurch Sie diese Features einfacher aktivieren oder deaktivieren können. Im Admin Center können Sie folgendes tun:
   
 - [Festlegen von Anwendungsverwaltungseinstellungen für Android- oder iOS-Geräte](app-protection-settings-for-android-and-ios.md) . 
     
     Zu diesen Einstellungen gehören das Löschen von Dateien von einem inaktiven Gerät nach einem festgelegten Zeitraum, das Verschlüsseln von Arbeitsdateien, das Festlegen einer PIN durch Benutzer und so weiter.
     
-- [Festlegen von Anwendungsschutzeinstellungen für Windows 10-Geräte](protection-settings-for-windows-10-devices.md) . 
+- [Festlegen von Anwendungsschutzeinstellungen für Windows 10 Geräte](protection-settings-for-windows-10-devices.md) . 
     
     Diese Einstellungen können auf Unternehmensdaten auf unternehmenseigenen oder persönlichen Geräten angewendet werden.
     
-- [Festlegen von Geräteschutzeinstellungen für Windows 10-Geräte](protection-settings-for-windows-10-pcs.md) . 
+- [Festlegen von Geräteschutzeinstellungen für Windows 10 Geräte](protection-settings-for-windows-10-pcs.md) . 
     
-    Sie können die [BitLocker-Verschlüsselung](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions) aktivieren, um Daten zu schützen, falls ein Gerät verloren geht oder gestohlen wird, und [Windows Exploit Guard](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) einen erweiterten Schutz vor Ransomware ermöglichen. 
+    Sie können die [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-frequently-asked-questions) aktivieren, um Daten zu schützen, falls ein Gerät verloren geht oder gestohlen wird, und Windows [Exploit Guard](/windows/security/threat-protection/microsoft-defender-atp/enable-exploit-protection) erweiterten Schutz vor Ransomware bieten. 
     
 - [Entfernen von Unternehmensdaten von Geräten](remove-company-data.md)
     
     Sie können Unternehmensdaten remote wischen, wenn ein Gerät verloren geht, gestohlen wird oder ein Mitarbeiter Ihr Unternehmen verlässt.
     
-- [Setzen Sie Windows 10-Geräte auf ihre Werkseinstellungen zurück.](reset-devices-to-factory-settings.md) 
+- [Setzen Windows 10 Geräte auf ihre Werkseinstellungen zurück.](reset-devices-to-factory-settings.md) 
     
-    Sie können alle Windows 10-Geräte zurücksetzen, auf die Geräteschutzeinstellungen angewendet wurden.
+    Sie können alle Windows 10, auf die Geräteschutzeinstellungen angewendet wurden, zurücksetzen.
     
 ## <a name="additional-security-features"></a>Zusätzliche Sicherheitsfeatures 
 
@@ -65,7 +65,7 @@ Die erweiterten Features in Microsoft 365 Business Premium helfen Ihnen, Ihr Unt
   
 - **[Microsoft Defender für Office 365](../security/office-365-security/defender-for-office-365.md)**
     
-    Microsoft Defender für Office 365 schützt Ihr Unternehmen vor ausgefeilten Phishing- und Ransomwareangriffen, die Mitarbeiter- oder Kundeninformationen gefährdet. Zu den Features gehören:
+    Microsoft Defender for Office 365 schützt Ihr Unternehmen vor ausgeklügelten Phishing- und Ransomwareangriffen, die Mitarbeiter- oder Kundeninformationen gefährdet. Zu den Features gehören:
     
   - Ausgefeilte Anlagenscans und AI-betriebene Analysen zum Erkennen und Verwerfen von gefährlichen Nachrichten.
     
@@ -73,7 +73,7 @@ Die erweiterten Features in Microsoft 365 Business Premium helfen Ihnen, Ihr Unt
 
 - **[Die vollständigen Funktionen von Intune im Azure-Portal](/mem/intune/fundamentals/what-is-intune)**
     
-    Durch den Zugriff auf das Intune Admin Center im Azure-Portal können Sie zusätzliche Sicherheitsfeatures einrichten, z. B. die Verwaltung von MacOS-, iPhone- und Android-Geräten sowie erweiterte Geräteverwaltung für Windows, die nicht über das Microsoft 365 Admin Center verfügbar sind.
+    Durch den Zugriff auf das Intune Admin Center im Azure-Portal können Sie zusätzliche Sicherheitsfeatures einrichten, z. B. die Verwaltung von MacOS-, iPhone- und Android-Geräten sowie eine erweiterte Geräteverwaltung für Windows, die nicht über das Microsoft 365 Admin Center verfügbar sind.
 - **Gleicher [bedingter Zugriff](/azure/active-directory/conditional-access/overview) wie Azure AD Premium P1-Plan**
 
 
@@ -94,9 +94,9 @@ Die erweiterten Features in Microsoft 365 Business Premium helfen Ihnen, Ihr Unt
     
 ## <a name="compliance-features"></a>Compliance-Features
 
-Ihr Microsoft 365 Business Premium-Abonnement enthält Features, mit deren Hilfe Sie Compliance- und behördliche Standards einhalten können.
+Ihr Microsoft 365 Business Premium umfasst Features, mit deren Hilfe Sie Compliance- und behördliche Standards beibehalten können.
 
-- **[Übersicht über Richtlinien zur Verhinderung von Datenverlust](../compliance/data-loss-prevention-policies.md)** (Data Loss Prevention Policies, DLP). 
+- **[Informationen zur Verhinderung von Datenverlust](../compliance/dlp-learn-about-dlp.md))** (DLP). 
     
     Sie können DLP so einrichten, dass vertrauliche Informationen wie Kreditkartennummern, Sozialversicherungsnummern und so weiter automatisch erkannt werden, um die unbeabsichtigte Freigabe außerhalb Ihres Unternehmens zu verhindern.
     
@@ -106,9 +106,9 @@ Ihr Microsoft 365 Business Premium-Abonnement enthält Features, mit deren Hilfe
     
 - **[Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels.md)**
 
-   Microsoft 365 Business Premium enthält alle Features von [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Mit diesem Plan können  Sie Vertraulichkeitsbezeichnungen erstellen, mit denen Sie den Zugriff auf vertrauliche Informationen in E-Mails und Dokumenten steuern können, mit Steuerelementen wie "Nicht weiterleiten" und "Nicht kopieren". Sie können vertrauliche Informationen auch als "Vertraulich" klassifizieren und angeben, wie klassifizierte Informationen außerhalb und innerhalb des Unternehmens freigegeben werden können. Die Verschlüsselung auf Unternehmensebene ist einfach auf E-Mails und Dokumente anzuwenden, um Ihre Informationen privat zu halten. Sie können auch das Azure Information Protection-Client-Add-In für Office-Apps installieren. Weitere Informationen finden Sie unter [Einheitlicher Bezeichnungsclient für Azure Information Protection](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Installieren Sie für Vertraulichkeitsbezeichnungen **dieAzInfoProtection_UL.exe**.
+   Microsoft 365 Business Premium enthält alle Features von [Azure Information Protection Plan 1](https://go.microsoft.com/fwlink/p/?linkid=871407). Mit diesem Plan können  Sie Vertraulichkeitsbezeichnungen erstellen, mit denen Sie den Zugriff auf vertrauliche Informationen in E-Mails und Dokumenten steuern können, mit Steuerelementen wie "Nicht weiterleiten" und "Nicht kopieren". Sie können vertrauliche Informationen auch als "Vertraulich" klassifizieren und angeben, wie klassifizierte Informationen außerhalb und innerhalb des Unternehmens freigegeben werden können. Enterprise verschlüsselung ist einfach auf E-Mails und Dokumente anzuwenden, um Ihre Informationen privat zu halten. Sie können auch das Azure Information Protection-Client-Add-In für Office installieren. Weitere Informationen finden Sie unter [Einheitlicher Bezeichnungsclient für Azure Information Protection](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history). Installieren Sie für Vertraulichkeitsbezeichnungen **dieAzInfoProtection_UL.exe**.
 
-Sie können diese Features im Security Compliance Center und &amp; im Intune Admin Center verwalten. Im Laufe der Zeit werden die vereinfachten Steuerelemente dem Microsoft 365 Admin Center hinzugefügt.
+Sie können diese Features im Security Compliance Center und &amp; im Intune Admin Center verwalten. Im Laufe der Zeit werden die vereinfachten Steuerelemente dem Microsoft 365 hinzugefügt.
   
     
 ## <a name="faq"></a>Häufig gestellte Fragen
@@ -119,10 +119,10 @@ Ja, diese Features sind in allen Märkten verfügbar, in denen Microsoft 365 Bus
   
 ### <a name="how-do-i-find-the-security-amp-compliance-center"></a>Wie finde ich das Security &amp; Compliance Center?
   
-1. Melden Sie sich mit Ihren Administratoranmeldeinformationen bei [Microsoft 365 Business Premium](https://portal.microsoft.com/) an. 
+1. [Melden Sie sich bei Microsoft 365 Business Premium](https://portal.microsoft.com/) mit Ihren Administratoranmeldeinformationen an. 
     
 2. Suchen Sie im linken Navigations navig **nach Admin Center,** und erweitern Sie es. 
     
-    ![Wählen Sie im linken Navigations navi im Microsoft 365 Admin Center Admin Center aus.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
+    ![Wählen Sie im linken Navigationsgerät im Microsoft 365 Admin Center Admin Center aus.](../media/fa4484f8-c637-45fd-a7bd-bdb3abfd6c03.png)
   
 3. Wählen **Sie &amp; Sicherheitskonformität** aus, um zum Security &amp; Compliance Center zu wechseln.

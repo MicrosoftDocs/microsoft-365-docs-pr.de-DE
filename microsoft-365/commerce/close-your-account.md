@@ -10,25 +10,30 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
+- M365-subscription-management
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - fwlink 2133922 to Delete subscription heading
+- commerce_subscription
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Ihr Konto bei Microsoft schließen.
-ms.openlocfilehash: 44428654946d31ad249bfd3e7a3609da3e3634a6
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.date: 04/02/2021
+ms.openlocfilehash: 4fa1366186f0a37d3319208224628332d958a0ea
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860547"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107472"
 ---
 # <a name="close-your-account"></a>Schließen Ihres Kontos
 
 Wenn Sie Ihr Microsoft-Konto schließen, werden alle Informationen zu Ihrem Konto gelöscht. Diese Informationen umfassen Abonnements, Lizenzen, Zahlungsmethoden, Benutzer und Benutzerdaten.
 
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Bevor Sie diesen Vorgang starten, stellen Sie sicher, dass Sie alle Daten gesichert haben, die Sie beibehalten möchten.
 
@@ -38,13 +43,13 @@ Sie müssen ein globaler oder ein Rechnungsadministrator sein, um die in diesem 
 
 Löschen Sie alle Benutzer mit Ausnahme eines globalen Administrators. Der globale Administrator schließt die Schritte zum Schließen des Kontos. Bevor Sie das Verzeichnis am Ende dieses Vorgangs löschen können, müssen Sie alle anderen Benutzer löschen.
 
-Wenn Benutzer lokal synchronisiert werden, deaktivieren Sie zuerst die Synchronisierung, und löschen Sie dann die Benutzer im Cloudverzeichnis mithilfe des Azure-Portals oder der Azure PowerShell-Cmdlets.
+Wenn Benutzer lokal synchronisiert werden, deaktivieren Sie zuerst die Synchronisierung, und löschen Sie dann die Benutzer im Cloudverzeichnis mithilfe des Azure-Portals oder Azure PowerShell Cmdlets.
 
-Informationen zum Löschen von Benutzern finden Sie unter <a href="/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">Benutzerverwaltungsadministrator: Löschen eines oder mehrere Benutzer</a>.
+Informationen zum Löschen von Benutzern finden Sie unter [Benutzerverwaltungsadministrator: Löschen eines oder mehrere Benutzer](../admin/add-users/delete-a-user.md#user-management-admin-delete-one-or-more-users-from-office-365).
 
-Sie können auch das <a href="https://docs.microsoft.com/powershell/module/msonline/remove-msoluser">Remove-MsolUser</a> PowerShell-Cmdlet verwenden, um Benutzer massenlos zu löschen.
+Sie können auch das [Remove-MsolUser](/powershell/module/msonline/remove-msoluser) PowerShell-Cmdlet verwenden, um Benutzer massenlos zu löschen.
 
-Wenn Ihre Organisation Active Directory verwendet, das mit Microsoft Azure Active Directory (Azure AD) synchronisiert wird, löschen Sie stattdessen das Benutzerkonto aus Active Directory. Anweisungen finden Sie unter <a href="/azure/active-directory/users-groups-roles/users-bulk-delete">Massenlöschen von Benutzern in Azure Active Directory</a>.
+Wenn Ihre Organisation Active Directory verwendet, das mit Microsoft Azure Active Directory (Azure AD) synchronisiert, löschen Sie stattdessen das Benutzerkonto aus Active Directory. Anweisungen finden Sie unter [Massenlöschen von Benutzern in Azure Active Directory](/azure/active-directory/users-groups-roles/users-bulk-delete).
 
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Schritt 2: Kündigen aller aktiven Abonnements
 
@@ -64,7 +69,7 @@ Wenn Ihre Organisation Active Directory verwendet, das mit Microsoft Azure Activ
 6. Wiederholen Sie für jedes deaktivierte Abonnement die Schritte 3 bis 5, bis alle Abonnements gelöscht werden.
 
 > [!NOTE]
-> Wenn Sie ein deaktiviertes Abonnement nicht sofort löschen können, wenden <a href="/microsoft-365/Admin/contact-support-for-business-products" target="_blank">Sie sich an den Support.</a>
+> Wenn Sie ein deaktiviertes Abonnement nicht sofort löschen können, wenden [Sie sich an den Support.](../admin/contact-support-for-business-products.md)
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>Schritt 4: Deaktivieren der mehrstufigen Authentifizierung
 
@@ -73,7 +78,8 @@ Wenn Ihre Organisation Active Directory verwendet, das mit Microsoft Azure Activ
 3. Wählen **Sie Mehrstufige Authentifizierung aus.**
 4. Deaktivieren Sie auf der Seite mehrstufige Authentifizierung alle Konten mit Ausnahme des globalen Administratorkontos, das Sie derzeit verwenden.
 
-Sie können <a href="/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell">PowerShell auch verwenden, um die mehrstufige</a>Authentifizierung für mehrere Benutzer zu deaktivieren.
+Sie können [PowerShell auch verwenden, um die mehrstufige](/azure/active-directory/authentication/howto-mfa-userstates#change-state-using-powershell)Authentifizierung für mehrere Benutzer zu deaktivieren.
+
 
 ## <a name="step-5-delete-the-directory-in-azure-active-directory"></a>Schritt 5: Löschen des Verzeichnisses in Azure Active Directory
 

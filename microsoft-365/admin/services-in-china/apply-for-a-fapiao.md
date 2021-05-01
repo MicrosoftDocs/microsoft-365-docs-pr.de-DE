@@ -1,5 +1,5 @@
 ---
-title: Beantragen eines Fapiao für Office 365, betrieben von 21Vianet
+title: Beantragen eines Fapiao für Office 365 betrieben von 21Vianet
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,23 +12,25 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 - GEA150
-ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
-description: Erfahren Sie, wie Sie Ihre Fapiao-Anforderung an das 21Vianet Fapiao-Verwaltungssystem übermitteln, nachdem Sie eine Zahlung im Office 365 durchgeführt von 21Vianet in China durchgeführt haben.
+description: Erfahren Sie, wie Sie Ihre Fapiao-Anforderung an das 21Vianet Fapiao-Verwaltungssystem übermitteln, nachdem Sie eine Zahlung im Office 365 von 21Vianet in China durchgeführt haben.
 monikerRange: o365-21vianet
-ms.openlocfilehash: d9f75dfd00bb547e9d2e0f53826e5bc50926de39
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.date: 03/30/2021
+ms.openlocfilehash: 1f2dec1ca224b7f8c6c22d5d9d0d2a0cac8630ea
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470953"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107460"
 ---
-# <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Beantragen eines Fapiao für Office 365, betrieben von 21Vianet
+# <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Beantragen eines Fapiao für Office 365 betrieben von 21Vianet
 
 Sie können Ihre Fapiao-Anforderung an das 21Vianet-Fapiao-Verwaltungssystem etwa drei Tage nach der 21Vianet-Fapiao-Verwaltung übermitteln. Nachdem Sie Ihre Fapiao-Anforderung übermittelt haben, wird sie in zwei Tagen verarbeitet.
   
@@ -38,9 +40,9 @@ Sie können Ihre Fapiao-Anforderung an das 21Vianet-Fapiao-Verwaltungssystem etw
 
 Es gibt zwei Möglichkeiten, sich für einen Fapiao zu bewerben:
   
-1. Nachdem Sie eine Zahlung auf der Office 365 betrieben von 21Vianet-Website durchgeführt haben, erhalten Sie eine Auftragsbestätigungs-E-Mail mit Ihrer Bestellnummer und einem Link zum Fapiao-Verwaltungssystem. Sie können den Link in der E-Mail verwenden, um ein Konto im <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao-Informationsverwaltungssystem zu erstellen.</a>
+1. Nachdem Sie eine Zahlung auf der Office 365 von der 21Vianet-Website durchgeführt haben, erhalten Sie eine Auftragsbestätigungs-E-Mail mit Ihrer Bestellnummer und einem Link zum Fapiao-Verwaltungssystem. Sie können den Link in der E-Mail verwenden, um ein Konto im <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao-Informationsverwaltungssystem zu erstellen.</a>
 
-    Oder:
+    Oder
 
 2. Sie können einen Fapiao im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center beantragen.</a>
 
@@ -49,7 +51,7 @@ Es gibt zwei Möglichkeiten, sich für einen Fapiao zu bewerben:
 ## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>Schritt 2: Registrieren beim 21Vianet Fapiao-Verwaltungssystem
 
 > [!NOTE]
-> Sie können denselben E-Mail-Namen und dasselbe Kennwort wie Ihr Office 365-Konto verwenden, oder Sie können etwas anderes verwenden.
+> Sie können den gleichen E-Mail-Namen und das gleiche Kennwort wie Ihr Office 365 verwenden, oder Sie können etwas anderes verwenden.
   
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao Information Management System</a>.
 
@@ -108,7 +110,7 @@ Wenn Fapiao nicht mehr verwendet wird, zeigt das System einen Hinweis an und gib
   
 ![Die Fehlermeldung, die angezeigt wird, wenn das 21Vianet Fapiao-Verwaltungssystem nicht mehr verwendet wird.](../../media/effe0796-83aa-4a91-a488-15d6f58c01dc.png)
   
-## <a name="faqs"></a>FAQs
+## <a name="faqs"></a>Häufig gestellte Fragen
 
 ### <a name="what-services-can-i-get-from-online-support"></a>Welche Dienste kann ich vom Onlinesupport erhalten?
 

@@ -12,38 +12,39 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 - SPO_Content
 ms.custom:
 - MAX_CampaignID
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: drjones
 search.appverid:
 - MET150
-description: Erfahren Sie, wie Sie Dateispeicher in Ihrem Microsoft 365-Abonnement hinzufügen und reduzieren. Mit zusätzlichem Dateispeicher können Sie weitere Inhalte in SharePoint Online und OneDrive speichern.
-ms.date: ''
-ms.openlocfilehash: d65677b9c078026343410b53acd48932258cb4b1
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Erfahren Sie, wie Sie Dateispeicher in Ihrem Abonnement hinzufügen und Microsoft 365 können. Mit zusätzlichem Dateispeicher können Sie weitere Inhalte in SharePoint Online und OneDrive.
+ms.date: 04/02/2021
+ms.openlocfilehash: 576efee4ba0e1ad8fb43b3d8475d6c3a949ee1e8
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576961"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107388"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Hinzufügen von Speicherplatz für Ihr Abonnement
 
-Wenn sich im Laufe der Zeit herausstellt, dass Sie nicht mehr über genügend Speicherplatz für Ihre SharePoint Online-Websitesammlungen verfügen, können Sie im Rahmen Ihres Abonnements zusätzlich weiteren Speicherplatz erwerben, wenn Sie gemäß Ihrem Plan dazu berechtigt sind.  Wenn der zusätzliche **Office 365-Dateispeicher** nicht in der Liste der verfügbaren Add-Ons angezeigt wird, bedeutet dies, dass Ihr Plan nicht berechtigt ist. Weitere Informationen finden Sie unter [Ist mein Plan berechtigt?](#is-my-plan-eligible-for-office-365-extra-file-storage)
+Wenn sich im Laufe der Zeit herausstellt, dass Sie nicht mehr über genügend Speicherplatz für Ihre SharePoint Online-Websitesammlungen verfügen, können Sie im Rahmen Ihres Abonnements zusätzlich weiteren Speicherplatz erwerben, wenn Sie gemäß Ihrem Plan dazu berechtigt sind.  Wenn die Office 365 Zusätzliche Datei **Storage** in der Liste der verfügbaren Add-Ons nicht angezeigt wird, bedeutet dies, dass Ihr Plan nicht berechtigt ist. Weitere Informationen finden Sie unter [Ist mein Plan berechtigt?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
 > [!NOTE]
-> Wenn Sie Ihr Abonnement über Volumenlizenzierung oder einen CSP erworben haben, können Sie **Office 365 Extra File Storage** für Ihre Organisation nicht direkt von Microsoft kaufen. Wenden Sie sich an Ihren Vertreter oder Partner, um Hilfe zu finden.
+> Wenn Sie Ihr Abonnement über Volumenlizenzierung oder einen CSP erworben haben, können Sie Office 365 Zusätzliche Datei **Storage** für Ihre Organisation nicht direkt von Microsoft kaufen. Wenden Sie sich an Ihren Vertreter oder Partner, um Hilfe zu finden.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Sie müssen ein globaler oder sharePoint-Administrator sein, um die Aufgaben in diesem Artikel ausführen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../admin/add-users/about-admin-roles.md).
+Sie müssen ein globaler oder SharePoint administrator sein, um die Aufgaben in diesem Artikel ausführen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../admin/add-users/about-admin-roles.md).
 
 ## <a name="view-available-storage"></a>Anzeigen des verfügbaren Speichers
 
-1. Wechseln Sie im SharePoint Admin Center zur Seite <a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank">Aktive</a> Websites, und melden Sie sich mit einem Konto an, das über [Administratorberechtigungen](/sharepoint/sharepoint-admin-role) für Ihre Organisation verfügt.
+1. Wechseln Sie SharePoint Admin Center zur Seite <a href="https://admin.microsoft.com/sharepoint?page=siteManagement&modern=true" target="_blank">Aktive</a> Websites, und melden Sie sich mit einem Konto an, das über [Administratorberechtigungen](/sharepoint/sharepoint-admin-role) für Ihre Organisation verfügt.
 
 2. Oben rechts auf der Seite sehen Sie die Menge des verwendeten Speichers für alle Websites und den Gesamtspeicher für Ihr Abonnement. Wenn Ihre Organisation Multi-Geo in Office 365 konfiguriert hat, zeigt die Leiste auch die Speichermenge an, die an allen geografischen Standorten verwendet wird.
 
@@ -61,7 +62,7 @@ Informationen zum Festlegen von Speichergrenzwerte für Websitesammlungen finden
 Wenn Sie noch keinen zusätzlichen Speicher für Ihr Abonnement erworben haben, können Sie dies tun.
 
 1. Wechseln Sie im Admin  Center zur Seite \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Abrechnungskaufdienste.</a>
-2. Suchen Sie unten auf der **Seite** Dienste kaufen im Abschnitt **Add-Ons** nach **Office 365 Extra File Storage,** und wählen Sie **Details aus.**
+2. Suchen Sie unten auf **der** Seite Dienste kaufen im Abschnitt **Add-Ons** nach Office 365 **Zusätzliche Datei Storage**, und wählen Sie Details **aus.**
 3. Wählen Sie auf der Seite Produktdetails die Option **Weiter aus.**
 4. Wählen Sie bei Bedarf das Basisabonnement aus, und geben Sie die Speicheranzahl ein, die Sie hinzufügen möchten.
 5. Wählen **Sie Jetzt auschecken aus.**
@@ -70,12 +71,12 @@ Wenn Sie noch keinen zusätzlichen Speicher für Ihr Abonnement erworben haben, 
 
 ## <a name="increase-or-decrease-storage"></a>Vergrößern oder Verkleinern des Speicherplatzes
 
-Wenn Sie bereits über das **Office 365 Extra File** Storage-Add-On zusätzlichen Dateispeicher erworben haben, können Sie diese Schritte ausführen, um den zusätzlichen Speicherplatz für Ihr Abonnement zu vergrößern oder zu verringern. Sie können den Speicher auf bis zu 1 Gigabyte reduzieren. Wenden Sie sich an den Support, um den zusätzlichen Speicherplatz [zu entfernen.](../admin/contact-support-for-business-products.md)
+Wenn Sie bereits zusätzlichen Dateispeicher über das Office 365 Extra File Storage-Add-On erworben haben, können Sie diese Schritte ausführen, um den zusätzlichen Speicherplatz für Ihr Abonnement zu vergrößern oder zu verringern.  Sie können den Speicher auf bis zu 1 Gigabyte reduzieren. Wenden Sie sich an den Support, um den zusätzlichen Speicherplatz [zu entfernen.](../admin/contact-support-for-business-products.md)
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-2. Wählen Sie **auf der** Registerkarte Produkte das Abonnement aus, das das **Office 365 Extra File Storage-Add-On** enthält.
+2. Wählen Sie **auf der** Registerkarte Produkte das Abonnement aus, das Office 365 Zusätzliche **Datei Storage** enthält.
 3. Wählen Sie auf der Seite Produktdetails im Abschnitt **Add-Ons** die Option **Add-Ons verwalten aus.**
-4. Wählen Sie **im Bereich Add-Ons** verwalten in der Liste **Add-On** die Option **Office 365 Extra File Storage aus.**
+4. Wählen Sie **im Bereich Add-Ons** verwalten in der Liste **Add-On** die Option **Office 365 Extra File Storage** aus.
 5. Geben Sie **im** Textfeld Menge die Anzahl der GBs des Speicherplatzes ein, den Sie für das Abonnement wünschen.
 6. Klicken Sie auf **Speichern**.
 
@@ -100,9 +101,9 @@ Office 365 Extra File Storage steht im Rahmen der folgenden Abonnements zur Verf
 - Microsoft 365 F1
 
 > [!NOTE]
-> Office 365 Extra File Storage ist auch für GCC-, GCC High- und DOD-Pläne verfügbar.
+> Office 365 Zusätzliche Datei Storage ist auch für GCC, GCC High- und DOD-Pläne verfügbar.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Verwalten von Websitespeichergrenzwerte](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (Artikel)\
-[Festlegen des Standardspeicherplatzes für #A0](/onedrive/set-default-storage-space)(Artikel)
+[Festlegen des Standardspeicherplatzes für OneDrive Benutzer](/onedrive/set-default-storage-space)(Artikel)

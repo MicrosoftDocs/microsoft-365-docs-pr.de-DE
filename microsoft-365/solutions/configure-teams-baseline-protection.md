@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie Teams mit grundlegendem Schutz bereitstellen.
-ms.openlocfilehash: 728a41bd521ed32c57c981be576e46eaee344099
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: db1a58fd06a62240cbcfcc74f83ba6196f33df80
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222743"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114294"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Konfigurieren von Teams mit grundlegendem Schutz
 
@@ -96,7 +96,7 @@ Microsoft 365 bietet zusätzliche Methoden zum Schützen Ihrer Inhalte. Prüfen 
 
 - Lassen Sie Gäste den [Nutzungsbedingungen](/azure/active-directory/conditional-access/terms-of-use) zustimmen.
 - Konfigurieren Sie eine [Richtlinie für Sitzungstimeout](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) für Gastbenutzer.
-- Erstellen Sie [Typen vertraulicher Informationen](../compliance/sensitive-information-type-learn-about.md) und verwenden Sie [Schutz vor Datenverlust](../compliance/data-loss-prevention-policies.md) zum Festlegen von Richtlinien für den Zugriff auf vertrauliche Informationen.
+- Erstellen Sie [Typen vertraulicher Informationen](../compliance/sensitive-information-type-learn-about.md) und verwenden Sie [Schutz vor Datenverlust](../compliance/dlp-learn-about-dlp.md) zum Festlegen von Richtlinien für den Zugriff auf vertrauliche Informationen.
 
 ## <a name="see-also"></a>Siehe auch
 

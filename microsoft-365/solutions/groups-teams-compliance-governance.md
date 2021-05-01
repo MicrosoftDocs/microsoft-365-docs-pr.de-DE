@@ -1,5 +1,5 @@
 ---
-title: Complianceoptionen für Microsoft 365-Gruppen, Teams und SharePoint-Zusammenarbeit
+title: Complianceoptionen für Microsoft 365, Teams und SharePoint Zusammenarbeit
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,31 +14,31 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Erfahren Sie mehr über Complianceoptionen für Microsoft 365-Gruppen, Teams und SharePoint-Zusammenarbeit.
-ms.openlocfilehash: 5006f0cf9f7eb174082d4fc2508bf112864fcba3
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+description: Erfahren Sie mehr über Complianceoptionen Microsoft 365 Gruppen, Teams und SharePoint Zusammenarbeit.
+ms.openlocfilehash: 92b668c5cbf5d105ccd1373a6ef8550400e4539f
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899352"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114028"
 ---
-# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Complianceoptionen für Microsoft 365-Gruppen, Teams und SharePoint-Zusammenarbeit
+# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Complianceoptionen für Microsoft 365, Teams und SharePoint Zusammenarbeit
 
 Microsoft 365 bietet eine vollständige Suite von Tools zur Aufrechterhaltung der Compliance, während Ihre Benutzer zusammenarbeiten. Überprüfen Sie diese Optionen, und überlegen Sie, wie sie Ihren Geschäftlichen Anforderungen, der Vertraulichkeit Ihrer Daten und dem Umfang der Personen entsprechen, mit der Ihre Benutzer zusammenarbeiten müssen.
 
-Die folgende Tabelle enthält eine Kurzübersicht zu den in Microsoft 365 verfügbaren Kompatibilitätssteuerelementen. Weitere Informationen finden Sie in den folgenden Abschnitten.
+In der folgenden Tabelle finden Sie eine Kurzübersicht zu den compliance-Steuerelementen, die in Microsoft 365. Weitere Informationen finden Sie in den folgenden Abschnitten.
 
 |Kategorie|Beschreibung|Referenz|
 |:-------|:----------|:--------|
 |Aufbewahrung von Informationen|||
-||Beibehalten von Gruppen-E-Mails und SharePoint-Inhalten|[Informationen zu Aufbewahrungsrichtlinien für SharePoint und OneDrive](../compliance/retention-policies-sharepoint.md)|
+||Beibehalten von E-Mail- und SharePoint Gruppeninhalten|[Informationen zu Aufbewahrungsrichtlinien für SharePoint und OneDrive](../compliance/retention-policies-sharepoint.md)|
 ||Beibehalten von Chats und Nachrichten|[Informationen zu Aufbewahrungsrichtlinien für Microsoft Teams.](../compliance/retention-policies-teams.md)|
 |Informationsklassifizierung|||
 ||Klassifizieren von Gruppen und Teams|[Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Automatisches Klassifizieren vertraulicher Inhalte|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](../compliance/apply-sensitivity-label-automatically.md)|
 ||Verschlüsseln vertraulicher Inhalte|[Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung](../compliance/encryption-sensitivity-labels.md)|
-|Information Protection|||
-||Verhindern des Verlusts vertraulicher Informationen|[Übersicht über die Verhinderung von Datenverlust](../compliance/data-loss-prevention-policies.md)|
+|Schutz von Daten|||
+||Verhindern des Verlusts vertraulicher Informationen|[Informationen zur Verhinderung von Datenverlust](../compliance/dlp-learn-about-dlp.md)|
 ||Schützen sie vertrauliche Informationen im Chat.|[Verhinderung von Datenverlust (DLP) und Microsoft Teams](../compliance/dlp-microsoft-teams.md).|
 ||Definieren der vertraulichen Informationen Ihrer Organisation|[Benutzerdefinierte vertrauliche Informationstypen](../compliance/sensitive-information-type-learn-about.md)|
 |Benutzersegmentierung|||
@@ -48,11 +48,11 @@ Die folgende Tabelle enthält eine Kurzübersicht zu den in Microsoft 365 verfü
 
 Aufbewahrungsrichtlinien stehen zum Beibehalten oder Löschen von Elementen zur Verfügung, die für die Zusammenarbeit in Gruppen und Teams verwendet werden, einschließlich Dateien, Nachrichten und E-Mails. Richtlinien können so festgelegt werden, dass sie beibehalten und gelöscht werden, nur beibehalten oder nur gelöscht werden. Informationen, die von einer Aufbewahrungsrichtlinie abgedeckt werden, werden für den Fall geschützt, dass die Gruppe oder das Team abläuft oder anderweitig gelöscht wird.
 
-Das Konfigurieren einer Aufbewahrungsrichtlinie für Microsoft 365-Gruppen deckt das Gruppenpostfach und die zugehörige SharePoint-Website und -Dateien ab.
+Das Konfigurieren einer Aufbewahrungsrichtlinie für Microsoft 365 umfasst das Gruppenpostfach und die zugehörigen SharePoint und Dateien.
 
 - [Informationen zu Aufbewahrungsrichtlinien für SharePoint und OneDrive](../compliance/retention-policies-sharepoint.md)
 
-Aufbewahrungsrichtlinien für Teams behalten Chat- und Kanalnachrichten bei. Chat- und Kanalnachrichten werden zwar in Exchange-Postfächern gespeichert, sind jedoch nicht von Exchange-Aufbewahrungsrichtlinien betroffen. Sie müssen Ihre Aufbewahrungsrichtlinien so festlegen, dass sie auf Teams-Chats und Teams-Kanalnachrichten angewendet werden. 
+Aufbewahrungsrichtlinien für Teams Chat- und Kanalnachrichten beibehalten. Chat- und Kanalnachrichten werden zwar in Exchange gespeichert, sie sind jedoch nicht von den aufbewahrungsrichtlinien Exchange betroffen. Sie müssen ihre Aufbewahrungsrichtlinien so festlegen, dass sie für Teams und Teams gelten. 
 
 Benutzerchats werden auch dann unbegrenzt aufbewahrt, wenn ein Benutzerkonto gelöscht wird. Wenn Sie diese Daten nicht unbegrenzt speichern möchten, sollten Sie eine Aufbewahrungsrichtlinie verwenden, um Benutzerchats nach einer bestimmten Zeit zu löschen, oder fügen Sie diesen Löschvorgang in Ihren Benutzerlöschvorgang ein.
 
@@ -60,7 +60,7 @@ Benutzerchats werden auch dann unbegrenzt aufbewahrt, wenn ein Benutzerkonto gel
 
 - [Aufbewahrungsrichtlinien in Microsoft Teams](/microsoftteams/retention-policies)
 
-Eine einzelne Aufbewahrungsrichtlinie kann so festgelegt werden, dass sie auf Teams-Chat- und Teams-Kanalnachrichten angewendet wird. 
+Eine einzelne Aufbewahrungsrichtlinie kann so festgelegt werden, dass sie auf chat- und Teams und Teams angewendet wird. 
 
 Zusätzliche Ressourcen:
 
@@ -89,13 +89,13 @@ Zusätzliche Ressourcen:
 - [Weitere Informationen zu Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels.md)
 
 
-## <a name="information-protection"></a>Information Protection
+## <a name="information-protection"></a>Schutz von Daten
 
-DLP-Richtlinien können die versehentliche Freigabe vertraulicher Informationen in SharePoint, Exchange und Teams verhindern. Sie können Richtlinien erstellen, die aktionen (z. B. Sperren des Zugriffs) basierend auf einer Reihe von Regeln angeben.
+DLP-Richtlinien können verhindern, dass vertrauliche Informationen versehentlich SharePoint, Exchange und Teams. Sie können Richtlinien erstellen, die aktionen (z. B. Sperren des Zugriffs) basierend auf einer Reihe von Regeln angeben.
 
-- [Übersicht über die Verhinderung von Datenverlust](../compliance/data-loss-prevention-policies.md)
+- [Informationen zur Verhinderung von Datenverlust](../compliance/dlp-learn-about-dlp.md)
 
-DLP in Teams kann dazu beitragen, vertrauliche Informationen in Teams-Chat- und -Kanalnachrichten zu schützen, indem Nachrichten gelöscht werden, die vertrauliche Informationen enthalten.
+DLP in Teams kann zum Schutz vertraulicher Informationen in chat- Teams Kanalnachrichten beitragen, indem Nachrichten gelöscht werden, die vertrauliche Informationen enthalten.
 
 - [Verhinderung von Datenverlust (DLP) und Microsoft Teams](../compliance/dlp-microsoft-teams.md).
 

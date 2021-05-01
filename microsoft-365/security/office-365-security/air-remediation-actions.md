@@ -1,5 +1,5 @@
 ---
-title: Korrekturaktionen in Microsoft Defender für Office 365
+title: Korrekturaktionen in Microsoft Defender for Office 365
 keywords: AIR, AutoIR, Microsoft Defender for Endpoint, automatisiert, Untersuchung, Antwort, Korrektur, Bedrohungen, erweitert, Bedrohung, Schutz
 f1.keywords:
 - NOCSH
@@ -15,20 +15,20 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Erfahren Sie mehr über Korrekturaktionen nach der automatisierten Untersuchung in Microsoft Defender für Office 365.
-ms.date: 02/09/2021
+description: Erfahren Sie mehr über Korrekturaktionen nach der automatisierten Untersuchung in Microsoft Defender for Office 365.
+ms.date: 04/30/2021
 ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 37953ad1125d5dad10eb5c6933b1ed9931d5de60
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ffaa7c46d81070a6443bf2233bbfdfd741ceb915
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933661"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114330"
 ---
-# <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Korrekturaktionen in Microsoft Defender für Office 365
+# <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Korrekturaktionen in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -38,18 +38,18 @@ ms.locfileid: "51933661"
 
 ## <a name="remediation-actions"></a>Wartungsaktionen
 
-Zu den Bedrohungsschutzfeatures in [Microsoft Defender for Office 365](defender-for-office-365.md) gehören bestimmte Korrekturaktionen. Solche Korrekturaktionen können Folgendes umfassen:
+Zu den Bedrohungsschutzfeatures in [Microsoft Defender for Office 365](defender-for-office-365.md) gehören bestimmte Abhilfemaßnahmen. Solche Korrekturaktionen können Folgendes umfassen:
 
 - E-Mail-Nachrichten oder Cluster vorläufig löschen
 - URL blockieren (Zeitpunkt des Klickens)
 - Externe E-Mail-Weiterleitung deaktivieren
 - Deaktivieren der Delegierung
 
-In Microsoft Defender für Office 365 werden Korrekturaktionen nicht automatisch ausgeführt. Stattdessen werden Korrekturaktionen nur nach Genehmigung durch das Sicherheitsteam Ihrer Organisation ergriffen.
+In Microsoft Defender for Office 365 werden Korrekturaktionen nicht automatisch ausgeführt. Stattdessen werden Korrekturaktionen nur nach Genehmigung durch das Sicherheitsteam Ihrer Organisation ergriffen.
 
 ## <a name="threats-and-remediation-actions"></a>Bedrohungen und Abhilfemaßnahmen
 
-Microsoft Defender für Office 365 umfasst Korrekturaktionen zur Behebung verschiedener Bedrohungen. Automatisierte Untersuchungen führen häufig zu einer oder mehreren Korrekturaktionen, die überprüft und genehmigt werden müssen. In einigen Fällen führt eine automatisierte Untersuchung nicht zu einer bestimmten Korrekturaktion. Verwenden Sie die Anleitung in der folgenden Tabelle, um die entsprechenden Aktionen weiter zu untersuchen und zu ergreifen.
+Microsoft Defender for Office 365 enthält Abhilfemaßnahmen zur Behebung verschiedener Bedrohungen. Automatisierte Untersuchungen führen häufig zu einer oder mehreren Korrekturaktionen, die überprüft und genehmigt werden müssen. In einigen Fällen führt eine automatisierte Untersuchung nicht zu einer bestimmten Korrekturaktion. Verwenden Sie die Anleitung in der folgenden Tabelle, um die entsprechenden Aktionen weiter zu untersuchen und zu ergreifen.
 
 |Kategorie|Bedrohung/Risiko|Korrekturaktion(en)|
 |:---|:---|:---|
@@ -64,13 +64,13 @@ Microsoft Defender für Office 365 umfasst Korrekturaktionen zur Behebung versch
 |Benutzer|Ein Benutzer sendet Schadsoftware/Phishing|Eine automatisierte Untersuchung führt nicht zu einer bestimmten ausstehenden Aktion. <p> Der Benutzer meldet möglicherweise Schadsoftware/Phishing, oder ein Benutzer kann den Benutzer im Rahmen eines Angriffs [spoofing.](anti-spoofing-protection.md) Verwenden [Sie Threat Explorer,](threat-explorer.md) um E-Mails mit [Schadsoftware oder](threat-explorer-views.md#email--malware) Phishing ein- und zu [behandeln.](threat-explorer-views.md#email--phish)|
 |Benutzer|E-Mail-Weiterleitung <br> (Postfach forwarding rules are configured, which could be used for data exfiltration.)|Weiterleitungsregel entfernen <p> Verwenden [Sie Einblicke in den Nachrichtenfluss,](mail-flow-insights-v2.md)einschließlich des Berichts für automatisch [weitergeleitete](mfi-auto-forwarded-messages-report.md)Nachrichten, um spezifischere Details zu weitergeleiteten E-Mails anzuzeigen.|
 |Benutzer|Regeln für die E-Mail-Delegierung <br> (Für das Konto eines Benutzers wurde eine Delegierung eingerichtet.)|Delegierungsregel entfernen <p> Wenn Ihre Organisation [Microsoft Defender for Endpoint verwendet,](/windows/security/threat-protection/)sollten Sie den Benutzer untersuchen, der die Delegierungsberechtigung erhalten hat. [](/microsoft-365/security/defender-endpoint/investigate-user)|
-|Benutzer|Datenexﬁltration <br> (Ein Benutzer hat gegen E-Mail- oder [Dateifreigabe-DLP-Richtlinien verstoßen.)](../../compliance/data-loss-prevention-policies.md)|Eine automatisierte Untersuchung führt nicht zu einer bestimmten ausstehenden Aktion. <p> [Anzeigen von DLP-Berichten und Ergreifen von Aktionen](../../compliance/view-the-dlp-reports.md).|
+|Benutzer|Datenexﬁltration <br> (Ein Benutzer hat gegen E-Mail- oder [Dateifreigabe-DLP-Richtlinien verstoßen](../../compliance/dlp-learn-about-dlp.md) |Eine automatisierte Untersuchung führt nicht zu einer bestimmten ausstehenden Aktion. <p> [Anzeigen von DLP-Berichten und Ergreifen von Aktionen](../../compliance/view-the-dlp-reports.md).|
 |Benutzer|Anomales Senden von E-Mails <br> (Ein Benutzer hat kürzlich mehr E-Mails als in den vorherigen 7-10 Tagen gesendet.)|Eine automatisierte Untersuchung führt nicht zu einer bestimmten ausstehenden Aktion. <p> Das Senden einer großen Menge von E-Mails ist für sich allein nicht schädlich. Möglicherweise hat der Benutzer gerade eine E-Mail an eine große Gruppe von Empfängern für ein Ereignis gesendet. Verwenden Sie zum Untersuchen Einblicke [in den](mail-flow-insights-v2.md)Nachrichtenfluss, einschließlich des Berichts zur [Nachrichtenflusszuordnung,](mfi-mail-flow-map-report.md) um zu bestimmen, was vor sich geht und Maßnahmen zu ergreifen.|
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Anzeigen von Details und Ergebnissen einer automatisierten Untersuchung in Microsoft Defender für Office 365](air-view-investigation-results.md)
-- [Anzeigen ausstehender oder abgeschlossener Korrekturaktionen nach einer automatisierten Untersuchung in Microsoft Defender für Office 365](air-review-approve-pending-completed-actions.md)
+- [Anzeigen von Details und Ergebnissen einer automatisierten Untersuchung in Microsoft Defender for Office 365](air-view-investigation-results.md)
+- [Anzeigen ausstehender oder abgeschlossener Korrekturaktionen nach einer automatisierten Untersuchung in Microsoft Defender for Office 365](air-review-approve-pending-completed-actions.md)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

@@ -14,21 +14,24 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-description: Erfahren Sie, wie Sie Add-Ons für Ihr Microsoft 365 Business-Abonnement kaufen und verwalten.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- Commerce
-ms.openlocfilehash: b470fb727ed55ba066cd0371e2e707c72b50ae99
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
+description: Erfahren Sie, wie Sie Add-Ons für Ihr Microsoft 365 Business-Abonnement kaufen und verwalten.
+ms.date: 04/02/2021
+ms.openlocfilehash: c0b5a76f8690c64723782640738ac3817bc64714
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576925"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107436"
 ---
 # <a name="buy-or-manage-add-ons"></a>Kaufen oder Verwalten von Add-Ons 
 
-Viele Microsoft 365 For Business-Pläne verfügen über Add-Ons, die Sie für Ihre Abonnements kaufen können. Add-Ons bieten weitere Features, um Ihre Abonnementerfahrung zu verbessern.
+Viele Microsoft 365 business-Pläne verfügen über Add-Ons, die Sie für Ihre Abonnements kaufen können. Add-Ons bieten weitere Features, um Ihre Abonnementerfahrung zu verbessern.
 
 Es gibt zwei Arten von Add-Ons:
 

@@ -1,6 +1,6 @@
 ---
 title: Update incidents API
-description: Informationen zum Aktualisieren von Vorfällen mithilfe der Microsoft 365 Defender-API
+description: Informationen zum Aktualisieren von Vorfällen mithilfe Microsoft 365 Defender-API
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 549f9bf2b9dc2ea5d1c734a809ad10a168c8123e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d6872a7a4b1b2d2c131066076af02a65b4ef6d8a
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060803"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107604"
 ---
 # <a name="update-incidents-api"></a>Update incidents API
 
@@ -80,10 +80,10 @@ Stellen Sie im Anforderungstext die Werte für die Felder zur Verfügung, die ak
 
 Eigenschaft | Typ | Beschreibung
 -|-|-
-status | Enum | Gibt den aktuellen Status der Warnung an. Mögliche Werte sind: ```Active``` ```Resolved``` , , und ```Redirected``` .
-assignedTo | Zeichenfolge | Besitzer des Vorfalls.
-classification | Enum | Spezifikation der Warnung. Mögliche Werte sind: ```Unknown```, ```FalsePositive``` und ```TruePositive```.
-Bestimmung | Enum | Gibt die Bestimmung der Warnung an. Mögliche Werte: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
+status | Enum | Gibt den aktuellen Status des Vorfalls an. Mögliche Werte sind: ```Active``` ```Resolved``` , , und ```Redirected``` .
+assignedTo | string | Besitzer des Vorfalls.
+classification | Enum | Spezifikation des Vorfalls. Mögliche Werte sind: ```Unknown```, ```FalsePositive``` und ```TruePositive```.
+Bestimmung | Enum | Gibt die Ermittlung des Vorfalls an. Mögliche Werte: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | Zeichenfolgenliste | Liste der Incident-Tags.
 
 ## <a name="response"></a>Antwort

@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15ee02d90e81c48bf5ec718e669bf8f88f6424ff
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 12ff9834e2853c1745c20847f869bc2cba4e082e
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934777"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114270"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Bereitstellen von Microsoft Defender for Endpoint unter Linux mit Ansible
 
@@ -49,13 +49,13 @@ Bevor Sie beginnen, finden Sie auf der Hauptseite [von Defender for Endpoint unt
 
 Darüber hinaus müssen Sie für die Ansible-Bereitstellung mit ansiblen Verwaltungsaufgaben vertraut sein, ansible konfigurieren und wissen, wie Sie Playbooks und Aufgaben bereitstellen. Ansible hat viele Möglichkeiten, dieselbe Aufgabe auszuführen. Diese Anweisungen setzen voraus, dass unterstützte Ansible-Module verfügbar sind, z. B. *apt* und *unarchive,* um das Paket bereitstellen zu können. Ihre Organisation kann einen anderen Workflow verwenden. Ausführliche Informationen finden Sie in [der Ansible-Dokumentation.](https://docs.ansible.com/)
 
-- Ansible muss auf mindestens einem Computer installiert werden (wir nennen ihn den primären Computer).
-- SSH muss für ein Administratorkonto zwischen dem primären Computer und allen Clients konfiguriert sein, und es wird empfohlen, die Authentifizierung mit öffentlichen Schlüsseln zu verwenden.
-- Die folgende Software muss auf allen Clients installiert sein:
+- Ansible muss auf mindestens einem Computer installiert werden (Ansible ruft dies als Kontrollknoten auf).
+- SSH muss für ein Administratorkonto zwischen dem Steuerelementknoten und allen verwalteten Knoten konfiguriert sein (Geräte, auf der Defender for Endpoint installiert ist), und es wird empfohlen, mit der Authentifizierung mit öffentlichen Schlüsseln konfiguriert zu werden.
+- Die folgende Software muss auf allen verwalteten Knoten installiert sein:
   - locken
   - python-apt
 
-- Alle Hosts müssen in der oder den relevanten Dateien im folgenden `/etc/ansible/hosts` Format aufgeführt werden:
+- Alle verwalteten Knoten müssen in der oder den relevanten Dateien im folgenden `/etc/ansible/hosts` Format aufgeführt werden:
 
     ```bash
     [servers]
@@ -71,13 +71,13 @@ Darüber hinaus müssen Sie für die Ansible-Bereitstellung mit ansiblen Verwalt
 
 ## <a name="download-the-onboarding-package"></a>Herunterladen des Onboardingpakets
 
-Laden Sie das Onboardingpaket aus dem Microsoft Defender Security Center herunter:
+Laden Sie das Onboardingpaket von Microsoft Defender Security Center:
 
-1. Wechseln Sie im Microsoft Defender Security Center zu **Einstellungen > Geräteverwaltung > Onboarding**.
+1. Wechseln Microsoft Defender Security Center zu Einstellungen > **Device Management > Onboarding**.
 2. Wählen Sie im ersten Dropdownmenü **Linux Server** als Betriebssystem aus. Wählen Sie im zweiten Dropdownmenü **Ihr bevorzugtes Linux-Konfigurationsverwaltungstool** als Bereitstellungsmethode aus.
 3. Wählen **Sie Onboardingpaket herunterladen aus.** Speichern Sie die Datei WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Screenshot des Microsoft Defender Security Center](images/atp-portal-onboarding-linux-2.png)
+    ![Microsoft Defender Security Center Screenshot](images/atp-portal-onboarding-linux-2.png)
 
 4. Überprüfen Sie an einer Eingabeaufforderung, ob Sie über die Datei verfügen. Extrahieren sie den Inhalt des Archivs:
 

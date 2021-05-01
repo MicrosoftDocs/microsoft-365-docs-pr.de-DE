@@ -19,12 +19,12 @@ description: Während und nach einer automatisierten Untersuchung in Microsoft 3
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ebdd25e9bddf53682f747fff7477d49dd1c94755
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b6ec188f37faeed283d49f68b0cb381fcb1af86e
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933493"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114204"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Details und Ergebnisse einer automatisierten Untersuchung in Microsoft 365
 
@@ -32,10 +32,10 @@ ms.locfileid: "51933493"
 - [Microsoft Defender für Office 365 – Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Wenn eine [automatisierte Untersuchung](office-365-air.md) in Microsoft Defender für [Office 365](defender-for-office-365.md)stattfindet, sind Details zu dieser Untersuchung während und nach dem automatisierten Untersuchungsprozess verfügbar. Wenn Sie über die erforderlichen Berechtigungen verfügen, können Sie diese Details im Microsoft 365 Security Center anzeigen. Untersuchungsdetails bieten Ihnen den aktuellen Status und die Möglichkeit, ausstehende Aktionen zu genehmigen.
+Wenn eine [automatisierte Untersuchung](office-365-air.md) in [Microsoft Defender](defender-for-office-365.md)für Office 365 erfolgt, sind Details zu dieser Untersuchung während und nach dem automatisierten Untersuchungsprozess verfügbar. Wenn Sie über die erforderlichen Berechtigungen verfügen, können Sie diese Details im Microsoft 365 anzeigen. Untersuchungsdetails bieten Ihnen den aktuellen Status und die Möglichkeit, ausstehende Aktionen zu genehmigen.
 
 > [!TIP]
-> Sehen Sie sich die neue, einheitliche Untersuchungsseite im Microsoft 365 Security Center an. Weitere Informationen finden Sie unter [(NEU!) Vereinheitlichte Untersuchungsseite](../defender/m365d-autoir-results.md#new-unified-investigation-page).
+> Sehen Sie sich die neue, einheitliche Untersuchungsseite im Microsoft 365 an. Weitere Informationen finden Sie unter [(NEU!) Vereinheitlichte Untersuchungsseite](../defender/m365d-autoir-results.md#new-unified-investigation-page).
 
 ## <a name="investigation-status"></a>Untersuchungsstatus
 
@@ -46,7 +46,7 @@ Der Untersuchungsstatus gibt den Fortschritt der Analyse und der Aktionen an. W�
 |**Wird gestartet**|Die Untersuchung wurde ausgelöst und wartet auf die Ausführung.|
 |**Wird ausgeführt**|Der Untersuchungsprozess wurde gestartet und läuft. Dieser Zustand tritt auch auf, wenn [ausstehende Aktionen](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) genehmigt werden.|
 |**Keine Bedrohungen gefunden**|Die Untersuchung ist abgeschlossen, und es wurden keine Bedrohungen (Benutzerkonto, E-Mail-Nachricht, URL oder Datei) identifiziert. <p> **TIPP:** Wenn Sie vermuten, dass etwas verpasst wurde (z. B. ein falsch negatives Objekt), können Sie mithilfe des [Bedrohungs-Explorers Maßnahmen ergreifen.](threat-explorer.md)|
-|**Bedrohungen gefunden**|Bei der automatisierten Untersuchung wurden Probleme gefunden, es gibt jedoch keine spezifischen Abhilfemaßnahmen, um diese Probleme zu beheben. <p> Der **Status "Gefundene** Bedrohungen" kann auftreten, wenn eine Art von Benutzeraktivität identifiziert wurde, aber keine Bereinigungsaktionen verfügbar sind. Beispiele hierfür sind die folgenden Benutzeraktivitäten: <br/>- Ein Ereignis zur Verhinderung von Datenverlust (Data [Loss Prevention,](../../compliance/data-loss-prevention-policies.md) DLP)<br/>– Eine Anomalie beim Senden von E-Mails<br/>- Gesendete Schadsoftware<br/>- Gesendeter Phish <p> Bei der Untersuchung wurden keine schädlichen URLs, Dateien oder E-Mail-Nachrichten gefunden, die behoben werden sollten, und keine zu behebenden Postfachaktivitäten, z. B. das Deaktivieren von Weiterleitungsregeln oder delegierung. <p> **TIPP:** Wenn Sie vermuten, dass etwas verpasst wurde (z. B. ein falsch negatives Objekt), können Sie mithilfe des Bedrohungs-Explorers untersuchen und [Maßnahmen ergreifen.](threat-explorer.md)|
+|**Bedrohungen gefunden**|Bei der automatisierten Untersuchung wurden Probleme gefunden, es gibt jedoch keine spezifischen Abhilfemaßnahmen, um diese Probleme zu beheben. <p> Der **Status "Gefundene** Bedrohungen" kann auftreten, wenn eine Art von Benutzeraktivität identifiziert wurde, aber keine Bereinigungsaktionen verfügbar sind. Beispiele hierfür sind die folgenden Benutzeraktivitäten: <br/>- Ein [Ereignis zur Verhinderung von Datenverlust](../../compliance/dlp-learn-about-dlp.md)<br/>– Eine Anomalie beim Senden von E-Mails<br/>- Gesendete Schadsoftware<br/>- Gesendeter Phish <p> Bei der Untersuchung wurden keine schädlichen URLs, Dateien oder E-Mail-Nachrichten gefunden, die behoben werden sollten, und keine zu behebenden Postfachaktivitäten, z. B. das Deaktivieren von Weiterleitungsregeln oder delegierung. <p> **TIPP:** Wenn Sie vermuten, dass etwas verpasst wurde (z. B. ein falsch negatives Objekt), können Sie mithilfe des Bedrohungs-Explorers untersuchen und [Maßnahmen ergreifen.](threat-explorer.md)|
 |**Vom System beendet**|Die Untersuchung wurde beendet. Eine Untersuchung kann aus mehreren Gründen beendet werden: <br/>– Die ausstehenden Aktionen der Untersuchung sind abgelaufen. Ausstehende Aktionen sind nach einer Genehmigung für eine Woche nicht mehr zeitig.<br/>– Es gibt zu viele Aktionen. Wenn beispielsweise zu viele Benutzer auf bösartige URLs klicken, kann dies die Fähigkeit der Untersuchung überschreiten, alle Analysegeräte ausführen zu können, sodass die Untersuchung beendet wird.<p> **TIPP:** Wenn eine Untersuchung beendet wird, [](threat-explorer.md) bevor Aktionen ergriffen wurden, versuchen Sie, den Bedrohungs-Explorer zu verwenden, um Bedrohungen zu finden und zu bekämpfen.|
 |**Ausstehende Aktion**|Die Untersuchung hat eine Bedrohung gefunden, z. B. eine schädliche E-Mail, eine schädliche URL oder eine Einstellung für riskante Postfächer sowie eine Aktion zur Behebung dieser Bedrohung, die auf die Genehmigung [wartet.](air-review-approve-pending-completed-actions.md) <p> Der **Status Ausstehende Aktion** wird ausgelöst, wenn eine Bedrohung mit einer entsprechenden Aktion gefunden wird. Die Liste der ausstehenden Aktionen kann jedoch mit dem Ausführen einer Untersuchung zunehmen. Zeigen Sie Untersuchungsdetails an, um zu sehen, ob andere Elemente noch ausstehen.|
 |**Bereinigt**|Die Untersuchung wurde abgeschlossen, und alle Abhilfemaßnahmen wurden genehmigt (als vollständig behoben notiert). <p> **HINWEIS**: Genehmigte Korrekturaktionen können Fehler enthalten, die verhindern, dass die Aktionen ergriffen werden. Unabhängig davon, ob Korrekturaktionen erfolgreich abgeschlossen wurden, ändert sich der Untersuchungsstatus nicht. Anzeigen von Untersuchungsdetails.|
@@ -66,7 +66,7 @@ Der Untersuchungsstatus gibt den Fortschritt der Analyse und der Aktionen an. W�
 
 ## <a name="view-details-about-an-alert-related-to-an-investigation"></a>Anzeigen von Details zu einer Warnung im Zusammenhang mit einer Untersuchung
 
-Bestimmte Arten von Warnungen lösen eine automatisierte Untersuchung in Microsoft 365 aus. Weitere Informationen finden Sie unter [Warnungsrichtlinien, die automatisierte Untersuchungen auslösen.](office-365-air.md#which-alert-policies-trigger-automated-investigations)
+Bestimmte Arten von Warnungen lösen eine automatisierte Untersuchung in Microsoft 365. Weitere Informationen finden Sie unter [Warnungsrichtlinien, die automatisierte Untersuchungen auslösen.](office-365-air.md#which-alert-policies-trigger-automated-investigations)
 
 1. Wechseln Sie zum Microsoft 365 Security Center ( <https://security.microsoft.com> ) und melden Sie sich an.
 2. Wählen Sie im Navigationsbereich **Aktionscenter aus.**
