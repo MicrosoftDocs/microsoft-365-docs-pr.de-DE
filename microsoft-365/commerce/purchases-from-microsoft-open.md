@@ -1,5 +1,5 @@
 ---
-title: Geben Sie den von Microsoft Open erworbenen Product Key ein.
+title: Geben Sie Ihren product key ein, der von Microsoft Open erworben wurde.
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -12,60 +12,59 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.custom:
+- AdminSurgePortfolio
+- commerce_purchase
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
-- BCS160
 - MET150
-- MOE150
-- BEA160
-ms.assetid: d7138188-086e-4a54-a155-11fa953c3930
 ROBOTS: NOINDEX
-description: Informationen zum Aktivieren, verlängern oder Hinzufügen von Lizenzen zu einem Microsoft 365 for Business-Abonnement.
-ms.openlocfilehash: 59235c7af5ec39ba830f77aca6170727fedf91c5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Erfahren Sie, wie Sie Lizenzen zu einem Abonnement für Microsoft 365 aktivieren, verlängern oder hinzufügen.
+ms.date: 10/21/2020
+ms.openlocfilehash: e0e317dc0917876c6299fe1eea5812b7bfe0cd8b
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647879"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107592"
 ---
-# <a name="enter-your-product-key-purchased-from-microsoft-open"></a><span data-ttu-id="7ebb8-103">Geben Sie den von Microsoft Open erworbenen Product Key ein.</span><span class="sxs-lookup"><span data-stu-id="7ebb8-103">Enter your product key purchased from Microsoft Open</span></span>
+# <a name="enter-your-product-key-purchased-from-microsoft-open"></a><span data-ttu-id="f82ff-103">Geben Sie Ihren product key ein, der von Microsoft Open erworben wurde.</span><span class="sxs-lookup"><span data-stu-id="f82ff-103">Enter your product key purchased from Microsoft Open</span></span>
 
-<span data-ttu-id="7ebb8-104">Wenn Sie Microsoft 365 for Business über ein [Microsoft Open License-Programm](https://go.microsoft.com/fwlink/p/?LinkID=613298)erworben haben, ist dieser Artikel für Sie.</span><span class="sxs-lookup"><span data-stu-id="7ebb8-104">If you purchased Microsoft 365 for business from a [Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298), this article is for you.</span></span> <span data-ttu-id="7ebb8-105">Volumenlizenzkunden, die einen Product Key gekauft haben, können diesem Thema folgen, um Lizenzen zu aktivieren, zu verlängern oder einem Abonnement hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="7ebb8-105">Volume licensing customers who purchased a product key can follow this topic to activate, renew, or add licenses to a subscription.</span></span>
+<span data-ttu-id="f82ff-104">Wenn Sie Microsoft 365 microsoft [Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298)erworben haben, ist dieser Artikel für Sie da.</span><span class="sxs-lookup"><span data-stu-id="f82ff-104">If you purchased Microsoft 365 for business from a [Microsoft Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298), this article is for you.</span></span> <span data-ttu-id="f82ff-105">Volumenlizenzkunden, die einen Product Key gekauft haben, können diesem Thema folgen, um Lizenzen zu aktivieren, zu verlängern oder einem Abonnement hinzuzufügen.</span><span class="sxs-lookup"><span data-stu-id="f82ff-105">Volume licensing customers who purchased a product key can follow this topic to activate, renew, or add licenses to a subscription.</span></span>
   
- <span data-ttu-id="7ebb8-106">**Benötigen Sie sofort Hilfe?**</span><span class="sxs-lookup"><span data-stu-id="7ebb8-106">**Need help immediately?**</span></span> <span data-ttu-id="7ebb8-107">[Rufen Sie den Microsoft-Support an](../admin/contact-support-for-business-products.md) .</span><span class="sxs-lookup"><span data-stu-id="7ebb8-107">[Call Microsoft Support](../admin/contact-support-for-business-products.md) .</span></span> 
+ <span data-ttu-id="f82ff-106">**Benötigen Sie sofort Hilfe?**</span><span class="sxs-lookup"><span data-stu-id="f82ff-106">**Need help immediately?**</span></span> <span data-ttu-id="f82ff-107">[Rufen Sie den Microsoft Support an.](../admin/contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="f82ff-107">[Call Microsoft Support](../admin/contact-support-for-business-products.md) .</span></span> 
   
- <span data-ttu-id="7ebb8-108">**Benötigen Sie etwas anderes?**</span><span class="sxs-lookup"><span data-stu-id="7ebb8-108">**Need something else?**</span></span>
+ <span data-ttu-id="f82ff-108">**Benötigen Sie etwas anderes?**</span><span class="sxs-lookup"><span data-stu-id="f82ff-108">**Need something else?**</span></span>
  
- <span data-ttu-id="7ebb8-109">**Hilfe zu Microsoft 365 Home oder persönliche**Informationen finden Sie unter [Verwenden von Product Keys mit Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).</span><span class="sxs-lookup"><span data-stu-id="7ebb8-109">**For help with Microsoft 365 Home, or Personal**, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).</span></span>
+ <span data-ttu-id="f82ff-109">**Hilfe zu Microsoft 365 Home oder Personal** finden Sie unter Verwenden von Product Keys with [Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).</span><span class="sxs-lookup"><span data-stu-id="f82ff-109">**For help with Microsoft 365 Home, or Personal**, see [Using product keys with Office](https://support.microsoft.com/office/12a5763a-d45c-4685-8c95-a44500213759.aspx).</span></span>
   
- <span data-ttu-id="7ebb8-110">**Hilfe zu Microsoft 365 Business Standard, der von einem Einzelhandelsgeschäft erworben**wurde, finden Sie unter [eingeben des von einem Einzelhandelsgeschäft erworbenen Product Keys](enter-your-product-key.md).</span><span class="sxs-lookup"><span data-stu-id="7ebb8-110">**For help with Microsoft 365 Business Standard purchased from a retail store**, see [Enter your product key purchased from a retail store](enter-your-product-key.md).</span></span> 
+ <span data-ttu-id="f82ff-110">**Hilfe zu Microsoft 365 Business Standard, die sie über einen** Einzelhandel erworben haben, finden Sie unter Geben Sie Ihren Product Key ein, der in einem [Einzelhandelsgeschäft erworben wurde.](enter-your-product-key.md)</span><span class="sxs-lookup"><span data-stu-id="f82ff-110">**For help with Microsoft 365 Business Standard purchased from a retail store**, see [Enter your product key purchased from a retail store](enter-your-product-key.md).</span></span> 
   
-## <a name="activate-renew-or-add-licenses-to-a-subscription-purchased-from-microsoft-open"></a><span data-ttu-id="7ebb8-111">Aktivieren, Verlängern oder Hinzufügen von Lizenzen zu einem Abonnement, das über Microsoft Open erworben wurde</span><span class="sxs-lookup"><span data-stu-id="7ebb8-111">Activate, renew, or add licenses to a subscription purchased from Microsoft Open</span></span>
+## <a name="activate-renew-or-add-licenses-to-a-subscription-purchased-from-microsoft-open"></a><span data-ttu-id="f82ff-111">Aktivieren, Verlängern oder Hinzufügen von Lizenzen zu einem Abonnement, das über Microsoft Open erworben wurde</span><span class="sxs-lookup"><span data-stu-id="f82ff-111">Activate, renew, or add licenses to a subscription purchased from Microsoft Open</span></span>
 
-<span data-ttu-id="7ebb8-112">Wenn Sie Microsoft 365 über ein Microsoft Open License-Programm erworben haben, wird der Schlüssel automatisch in das System eingegeben, wenn Sie Lizenzen zu einem Abonnement aktivieren, verlängern oder hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="7ebb8-112">If you bought Microsoft 365 from a Microsoft Open License Program, the system automatically enters the key for you when you activate, renew, or add licenses to a subscription.</span></span>
+<span data-ttu-id="f82ff-112">Wenn Sie Microsoft 365 eines Microsoft Open License Program erworben haben, gibt das System automatisch den Schlüssel für Sie ein, wenn Sie lizenzen zu einem Abonnement aktivieren, verlängern oder hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="f82ff-112">If you bought Microsoft 365 from a Microsoft Open License Program, the system automatically enters the key for you when you activate, renew, or add licenses to a subscription.</span></span>
   
-1. <span data-ttu-id="7ebb8-113">Nachdem Sie einen Schlüssel von einem Microsoft 365-Partner erworben haben, überprüfen Sie Ihren Posteingang auf eine e-Mail von Microsoft, die einen Aktivierungslink enthält.</span><span class="sxs-lookup"><span data-stu-id="7ebb8-113">After you purchase a key from an Microsoft 365 partner, check your inbox for an email from Microsoft containing an activation link.</span></span>
+1. <span data-ttu-id="f82ff-113">Nachdem Sie einen Schlüssel von einem Microsoft 365 haben, suchen Sie in Ihrem Posteingang nach einer E-Mail von Microsoft, die einen Aktivierungslink enthält.</span><span class="sxs-lookup"><span data-stu-id="f82ff-113">After you purchase a key from an Microsoft 365 partner, check your inbox for an email from Microsoft containing an activation link.</span></span>
     
     > [!TIP]
-    >  <span data-ttu-id="7ebb8-114">Diese E-Mail wird an die Person gesendet, die im Volumenlizenzvertrag als Online-Administrator aufgeführt ist.</span><span class="sxs-lookup"><span data-stu-id="7ebb8-114">The email is sent to the person listed as the online administrator in the volume licensing agreement.</span></span> <span data-ttu-id="7ebb8-115">Wenn Sie nicht sicher sind, wer als Online Administrator festgelegt ist, Fragen Sie Ihren Microsoft 365-Partner.</span><span class="sxs-lookup"><span data-stu-id="7ebb8-115">If you're not sure who is designated as the online administrator, ask your Microsoft 365 partner.</span></span> 
+    >  <span data-ttu-id="f82ff-114">Diese E-Mail wird an die Person gesendet, die im Volumenlizenzvertrag als Online-Administrator aufgeführt ist.</span><span class="sxs-lookup"><span data-stu-id="f82ff-114">The email is sent to the person listed as the online administrator in the volume licensing agreement.</span></span> <span data-ttu-id="f82ff-115">Wenn Sie nicht sicher sind, wer als Onlineadministrator festgelegt ist, fragen Sie Ihren Microsoft 365 Partner.</span><span class="sxs-lookup"><span data-stu-id="f82ff-115">If you're not sure who is designated as the online administrator, ask your Microsoft 365 partner.</span></span> 
   
-2. <span data-ttu-id="7ebb8-116">Klicken Sie auf den Link in der e-Mail, um sich mit Ihrem Geschäfts-oder Schulkonto anzumelden, den offenen Lizenzvertrag zu akzeptieren und das Abonnement zu erneuern.</span><span class="sxs-lookup"><span data-stu-id="7ebb8-116">Follow the link in the email to sign in with your work or school account, accept the Open License Agreement, and renew the subscription.</span></span> <span data-ttu-id="7ebb8-117">Für eine exemplarische Vorgehensweise können Sie den PDF-Leitfaden, [Aktivieren von Online Diensten: Microsoft 365-Abonnement](https://go.microsoft.com/fwlink/p/?LinkId=618100), in dem das Aktivieren eines neuen Abonnements, das Erneuern eines vorhandenen Abonnements oder das Hinzufügen von Lizenzen zu einem vorhandenen Abonnement erläutert wird, heruntergeladen werden.</span><span class="sxs-lookup"><span data-stu-id="7ebb8-117">For a step-by-step walkthrough, download the PDF guide, [Activate Online Services: Microsoft 365 Subscription](https://go.microsoft.com/fwlink/p/?LinkId=618100), which covers how to activate a new subscription, renew an existing subscription, or add licenses to an existing subscription.</span></span>
+2. <span data-ttu-id="f82ff-116">Folgen Sie dem Link in der E-Mail, um sich mit Ihrem Arbeits- oder Schulkonto zu anmelden, den Open License Agreement zu akzeptieren und das Abonnement zu verlängern.</span><span class="sxs-lookup"><span data-stu-id="f82ff-116">Follow the link in the email to sign in with your work or school account, accept the Open License Agreement, and renew the subscription.</span></span> <span data-ttu-id="f82ff-117">Laden Sie für eine schrittweise exemplarische Vorgehensweise das PDF-Handbuch Activate [Online Services: Microsoft 365 Subscription](https://go.microsoft.com/fwlink/p/?LinkId=618100)herunter, in dem beschrieben wird, wie Sie ein neues Abonnement aktivieren, ein vorhandenes Abonnement verlängern oder einem vorhandenen Abonnement Lizenzen hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="f82ff-117">For a step-by-step walkthrough, download the PDF guide, [Activate Online Services: Microsoft 365 Subscription](https://go.microsoft.com/fwlink/p/?LinkId=618100), which covers how to activate a new subscription, renew an existing subscription, or add licenses to an existing subscription.</span></span>
     
 > [!NOTE]
-> <span data-ttu-id="7ebb8-118">Volumenlizenzkunden können auch Abonnements im [Volumen Lizenzierungs-Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016)aktivieren.</span><span class="sxs-lookup"><span data-stu-id="7ebb8-118">Volume licensing customers can also choose to activate subscriptions in the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016).</span></span> <span data-ttu-id="7ebb8-119">Wie das geht, erfahren Sie, wenn Sie den PDF-Leitfaden [Aktivieren von Onlinediensten im Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkId=618096) herunterladen.</span><span class="sxs-lookup"><span data-stu-id="7ebb8-119">To learn how, download the PDF guide, [Activate Online Services in the Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkId=618096).</span></span> 
+> <span data-ttu-id="f82ff-118">Volumenlizenzierungskunden können abonnements auch im [Volume Licensing Service Center aktivieren.](https://go.microsoft.com/fwlink/p/?LinkID=282016)</span><span class="sxs-lookup"><span data-stu-id="f82ff-118">Volume licensing customers can also choose to activate subscriptions in the [Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkID=282016).</span></span> <span data-ttu-id="f82ff-119">Wie das geht, erfahren Sie, wenn Sie den PDF-Leitfaden [Aktivieren von Onlinediensten im Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkId=618096) herunterladen.</span><span class="sxs-lookup"><span data-stu-id="f82ff-119">To learn how, download the PDF guide, [Activate Online Services in the Volume Licensing Service Center](https://go.microsoft.com/fwlink/p/?LinkId=618096).</span></span> 
   
-## <a name="whats-next"></a><span data-ttu-id="7ebb8-120">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="7ebb8-120">What's next?</span></span>
+## <a name="whats-next"></a><span data-ttu-id="f82ff-120">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="f82ff-120">What's next?</span></span>
 
-<span data-ttu-id="7ebb8-121">Wenn Sie neu bei Microsoft 365 for Business sind, erfahren Sie, wie Sie [Microsoft 365 für Ihre Organisation einrichten](../admin/setup/setup.md).</span><span class="sxs-lookup"><span data-stu-id="7ebb8-121">If you're new to Microsoft 365 for business, learn how to [set up Microsoft 365 for your organization](../admin/setup/setup.md).</span></span>
+<span data-ttu-id="f82ff-121">Wenn Sie neu in Microsoft 365 Business sind, erfahren Sie, wie Sie Microsoft 365 [Für Ihre Organisation einrichten.](../admin/setup/setup.md)</span><span class="sxs-lookup"><span data-stu-id="f82ff-121">If you're new to Microsoft 365 for business, learn how to [set up Microsoft 365 for your organization](../admin/setup/setup.md).</span></span>
   
-## <a name="still-having-trouble-with-product-keys"></a><span data-ttu-id="7ebb8-122">Sie haben immer noch Probleme mit Produktschlüsseln?</span><span class="sxs-lookup"><span data-stu-id="7ebb8-122">Still having trouble with product keys?</span></span>
+## <a name="still-having-trouble-with-product-keys"></a><span data-ttu-id="f82ff-122">Haben Sie weiterhin Probleme mit Product Keys?</span><span class="sxs-lookup"><span data-stu-id="f82ff-122">Still having trouble with product keys?</span></span>
 
-<span data-ttu-id="7ebb8-123">Schauen Sie sich diese Liste der häufigsten Fehler und Lösungen an: [Probleme mit Ihrem Product Key?](product-key-errors-and-solutions.md)</span><span class="sxs-lookup"><span data-stu-id="7ebb8-123">Check out this list of common errors and solutions: [Problems with your product key?](product-key-errors-and-solutions.md)</span></span>
+<span data-ttu-id="f82ff-123">Sehen Sie sich diese Liste gängiger Fehler und Lösungen an: [Probleme mit Ihrem Product Key?](product-key-errors-and-solutions.md)</span><span class="sxs-lookup"><span data-stu-id="f82ff-123">Check out this list of common errors and solutions: [Problems with your product key?](product-key-errors-and-solutions.md)</span></span>
   
-<span data-ttu-id="7ebb8-124">Partner informieren sich unter [Partner: Einrichten eines Kundenabonnements mithilfe eines Product Keys](https://support.microsoft.com/office/cf22c50f-95c9-4fa2-b959-c264de256d40).</span><span class="sxs-lookup"><span data-stu-id="7ebb8-124">Partners, see [Partners: use a product key to set up a customer subscription](https://support.microsoft.com/office/cf22c50f-95c9-4fa2-b959-c264de256d40).</span></span>
+<span data-ttu-id="f82ff-124">Partner informieren sich unter [Partner: Einrichten eines Kundenabonnements mithilfe eines Product Keys](https://support.microsoft.com/office/cf22c50f-95c9-4fa2-b959-c264de256d40).</span><span class="sxs-lookup"><span data-stu-id="f82ff-124">Partners, see [Partners: use a product key to set up a customer subscription](https://support.microsoft.com/office/cf22c50f-95c9-4fa2-b959-c264de256d40).</span></span>
   
-<span data-ttu-id="7ebb8-125">Volumenlizenzkunden finden weitere Informationen unter [Microsoft Volume Licensing Service Center - Schulungen und Ressourcen](https://go.microsoft.com/fwlink/p/?LinkId=618103).</span><span class="sxs-lookup"><span data-stu-id="7ebb8-125">Volume licensing customers can learn more by visiting [Microsoft Volume Licensing Service Center training and resources](https://go.microsoft.com/fwlink/p/?LinkId=618103).</span></span>
+<span data-ttu-id="f82ff-125">Volumenlizenzkunden finden weitere Informationen unter [Microsoft Volume Licensing Service Center - Schulungen und Ressourcen](https://go.microsoft.com/fwlink/p/?LinkId=618103).</span><span class="sxs-lookup"><span data-stu-id="f82ff-125">Volume licensing customers can learn more by visiting [Microsoft Volume Licensing Service Center training and resources](https://go.microsoft.com/fwlink/p/?LinkId=618103).</span></span>
   
-<span data-ttu-id="7ebb8-126">Wenn Sie mit einer Person sprechen möchten, wenden Sie sich an den [Microsoft-Support](../admin/contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="7ebb8-126">Or, if you want to talk to a person, [call Microsoft Support](../admin/contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="f82ff-126">Wenn Sie mit einer Person sprechen möchten, rufen Sie [den Microsoft Support an.](../admin/contact-support-for-business-products.md)</span><span class="sxs-lookup"><span data-stu-id="f82ff-126">Or, if you want to talk to a person, [call Microsoft Support](../admin/contact-support-for-business-products.md).</span></span>
