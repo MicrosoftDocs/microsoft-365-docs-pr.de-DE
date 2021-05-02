@@ -40,6 +40,8 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: Verschieben von Benutzern zu einem anderen Abonnement
       href: subscriptions/move-users-different-subscription.md
+    - name: Verwalten von Drittanbieter-App-Lizenzen
+      href: licenses/manage-third-party-app-licenses.md
     - name: Verwalten von Richtlinien für automatischen Anspruch
       href: licenses/manage-auto-claim-policies.md
     - name: Grundlegendes zu Abonnements und Lizenzen
