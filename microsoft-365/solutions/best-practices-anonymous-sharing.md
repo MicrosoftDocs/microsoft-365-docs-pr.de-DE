@@ -17,18 +17,18 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: In diesem Artikel werden Sie bewährte Methoden zum Freigeben von Dateien und Ordnern für nicht authentifizierte Benutzer lernen.
-ms.openlocfilehash: acc825a8fc445d224fbc91dd12dace2a5e1b25c8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1e696611d37cd1b57f881457025464dccea54496
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199525"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114318"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Bewährte Methoden zum Freigeben von Dateien und Ordnern für nicht authentifizierte Benutzer
 
 Die Freigabe ohne Authentifizierung (über *Jeder*-Links) kann zweckmäßig sein und eignet sich in verschiedenen Szenarien. *Jeder*-Links sind die einfachste Möglichkeit zur Freigabe: Personen können den Link ohne Authentifizierung öffnen und ihn an andere Personen weiterleiten.
 
-In der Regel eignet sich nicht der gesamte Inhalt einer Organisation für die Freigabe ohne Authentifizierung. In diesem Artikel werden die Möglichkeiten beschrieben, die Ihnen beim Erstellen einer Umgebung helfen, in der Ihre Benutzer die Freigabe von Dateien und Ordner ohne Authentifizierung verwenden können, in der aber Sicherheitsvorkehrungen vorhanden sind, um den Inhalt Ihrer Organisation zu schützen.
+Normalerweise eignen sich nicht alle Inhalte in an einer Organisation für die nicht authentifizierte Freigabe. In diesem Artikel werden die Möglichkeiten beschrieben, die Ihnen beim Erstellen einer Umgebung helfen, in der Ihre Benutzer die Freigabe von Dateien und Ordner ohne Authentifizierung verwenden können, in der aber Sicherheitsvorkehrungen vorhanden sind, um den Inhalt Ihrer Organisation zu schützen.
 
 > [!NOTE]
 > Damit die Freigabe ohne Authentifizierung funktioniert, müssen Sie sie für Ihre Organisation und für die jeweilige Website oder das betreffende Team aktivieren, das die anonyme Freigabe verwenden soll. Das Szenario, das Sie aktivieren möchten, finden Sie unter [Zusammenarbeit mit Personen außerhalb Ihres Unternehmens](collaborate-with-people-outside-your-organization.md).
@@ -103,7 +103,7 @@ So legen Sie den Standardfreigabelink für Dateien und Ordner für eine bestimmt
 
 ## <a name="prevent-unauthenticated-sharing-of-sensitive-content"></a>So verhindern Sie die nicht authentifizierte Freigabe von vertraulichen Inhalten
 
-Sie können Informationen über das [Verhindern von Datenverlust (Data Loss Prevention – DLP)](../compliance/data-loss-prevention-policies.md) verwenden, um die nicht authentifizierte Freigabe von vertraulichen Inhalten zu verhindern. Maßnahmen zur Verhinderung von Datenverlust können auf Basis der Bezeichnungen für Sensitivität oder Aufbewahrung einer Datei oder den vertraulichen Informationen in der Datei selbst ergriffen werden.
+Sie können Informationen über das [Verhindern von Datenverlust (Data Loss Prevention – DLP)](../compliance/dlp-learn-about-dlp.md) verwenden, um die nicht authentifizierte Freigabe von vertraulichen Inhalten zu verhindern. Maßnahmen zur Verhinderung von Datenverlust können auf Basis der Bezeichnungen für Sensitivität oder Aufbewahrung einer Datei oder den vertraulichen Informationen in der Datei selbst ergriffen werden.
 
 So erstellen Sie eine DLP-Regel
 1. Wechseln Sie im Microsoft 365 Compliance Admin Center zur Seite[Verhinderung von Datenverlust](https://compliance.microsoft.com/datalossprevention).

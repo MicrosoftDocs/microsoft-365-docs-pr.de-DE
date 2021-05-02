@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Hier erfahren Sie, wie Sie ein Team mit einer eindeutigen Vertraulichkeitsbezeichnung für Sicherheit erstellen.
-ms.openlocfilehash: 7c9b770c712d2468369482ba3a6256e57f621f74
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4d305e952d48d42afffe91466121c67621aa9d85
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51042686"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113402"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Konfigurieren eines Teams mit Sicherheitsisolierung
 
@@ -60,8 +60,8 @@ Sehen Sie in [dieser Fallstudie](contoso-team-for-top-secret-project.md), wie di
 ## <a name="initial-protections"></a>Erste Schutzmaßnahmen
 
 Wenn Sie den Zugriff auf das Team und die zugrunde liegende SharePoint-Website schützen möchten, überprüfen Sie die folgenden bewährten Methoden:
-- [Identitäts- und Gerätezugriffsrichtlinien](../security/defender-365-security/identity-access-policies.md)
-- [SharePoint-Online-Zugriffsrichtlinien](../security/defender-365-security/sharepoint-file-access-policies.md)
+- [Identitäts- und Gerätezugriffsrichtlinien](../security/office-365-security/identity-access-policies.md)
+- [SharePoint-Online-Zugriffsrichtlinien](../security/office-365-security/sharepoint-file-access-policies.md)
 - [Bereitstellen von Teams mit grundlegendem Schutz](configure-teams-baseline-protection.md)
 
 ## <a name="guest-sharing"></a>Gastfreigabe
@@ -111,7 +111,7 @@ Erstellen einer Vertraulichkeitsbezeichnung
 1. Öffnen Sie das [Microsoft 365 Compliance Center](https://compliance.microsoft.com).
 2. Klicken Sie unter **Lösungen** auf **Informationsschutz**.
 3. Klicken Sie auf **Bezeichnung erstellen**.
-4. Weisen Sie der Bezeichnung einen Namen zu. Wir schlagen vor, ihn nach dem Team zu benennen, mit dem Sie ihn verwenden möchten.
+4. Benennen Sie die Bezeichnung. Wir schlagen vor, sie nach dem Team zu benennen, mit dem Sie sie verwenden möchten.
 5. Fügen Sie einen Namen und eine Beschreibung hinzu, und klicken Sie auf **Weiter**.
 6. Wählen Sie auf der Seite **Definieren des Bereichs für diese Bezeichnung** die Option **Dateien & E-Mails** und **Gruppen & Websites** aus und klicken Sie **Weiter**.
 7. Wählen Sie auf der Seite **Schutzeinstellungen für Dateien und E-Mails auswählen** die Option **Dateien und E-Mails verschlüsseln** aus und klicken Sie dann **Weiter**.
@@ -231,7 +231,7 @@ Microsoft 365 bietet zusätzliche Methoden zum Schützen Ihrer Inhalte. Prüfen 
 
 - Lassen Sie Ihre Gastbenutzer den [Nutzungsbedingungen](/azure/active-directory/conditional-access/terms-of-use) zustimmen.
 - Konfigurieren Sie eine [Richtlinie für Sitzungstimeout](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) für Gastbenutzer.
-- Erstellen Sie [Typen vertraulicher Informationen](../compliance/sensitive-information-type-learn-about.md) und verwenden Sie [Schutz vor Datenverlust](../compliance/data-loss-prevention-policies.md) zum Festlegen von Richtlinien für den Zugriff auf vertrauliche Informationen.
+- Erstellen Sie [Typen vertraulicher Informationen](../compliance/sensitive-information-type-learn-about.md) und verwenden Sie [Schutz vor Datenverlust](../compliance/dlp-learn-about-dlp.md) zum Festlegen von Richtlinien für den Zugriff auf vertrauliche Informationen.
 - Verwenden Sie [Azure Active Directory Zugriffsüberprüfungen](/azure/active-directory/governance/access-reviews-overview), um den Zugriff und die Mitgliedschaft des Teams regelmäßig zu überprüfen.
 
 ## <a name="drive-user-adoption-for-team-members"></a>Fördern der Benutzerakzeptanz für Teammitglieder

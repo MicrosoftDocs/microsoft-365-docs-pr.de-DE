@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Erfahren Sie mehr über die verfügbaren Optionen zum Erstellen einer sicheren Gastfreigabeumgebung in Microsoft 365, die Gastzugriff für eine bessere Zusammenarbeit bietet.
-ms.openlocfilehash: 0eb999d48bc0976d7c2bb32ff1bdba8d63409d81
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a04ee4a96b5e9124ca94a4ece16c32ccc6b072d1
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918466"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114306"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Erstellen einer sicheren Gastfreigabeumgebung
 
@@ -72,7 +72,7 @@ Nun müssen sich Gäste über die mehrstufige Authentifizierung anmelden, bevor 
 
 In einigen Situationen könnten Gäste keine Geheimhaltungsvereinbarung oder andere rechtliche Vereinbarungen mit Ihrer Organisation unterzeichnet haben. Sie können festlegen, dass Gäste Ihren Nutzungsbedingungen zustimmen müssen, bevor sie auf für sie freigegebene Dateien zugreifen können. Diese Nutzungsbedingungen können angezeigt werden, wenn ein Gast zum ersten Mal versucht, auf eine freigegebene Datei oder Website zuzugreifen.
 
-Wenn Sie Nutzungsbedingungen erstellen möchten, müssen Sie das entsprechende Dokument zuerst in Word oder einem anderen Dokumenterstellungsprogramm erstellen, und es dann als PDF-Datei speichern. Diese Datei kann dann in Azure AD hochgeladen werden.
+Wenn Sie Nutzungsbedingungen erstellen möchten, müssen Sie das entsprechende Dokument zuerst in Word oder einem anderen Dokumenterstellungsprogramm erstellen, und es dann als PDF-Datei speichern. Diese Datei kann dann nach Azure AD hochgeladen werden.
 
 So richten Sie Azure AD-Nutzungsbedingungen ein
 
@@ -256,7 +256,7 @@ Wenn ein Benutzer bei aktivierter Richtlinie "Projekt Saturn" in ein Dokument ei
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Erstellen einer DLP-Richtlinie zum Entfernen des Gastzugriffs auf streng vertrauliche Dateien
 
-Sie können über die [Verhinderung von Datenverlust (Data Loss Prevention – DLP)](../compliance/data-loss-prevention-policies.md) die unerwünschte Freigabe von vertraulichen Inhalten für Gäste verhindern. Eine DLP-Richtlinie kann basierend auf der Vertraulichkeitsbezeichnung einer Datei Maßnahmen ergreifen und den Gastzugriff entfernen.
+Sie können über die [Verhinderung von Datenverlust (Data Loss Prevention – DLP)](../compliance/dlp-learn-about-dlp.md) die unerwünschte Freigabe von vertraulichen Inhalten für Gäste verhindern. Eine DLP-Richtlinie kann basierend auf der Vertraulichkeitsbezeichnung einer Datei Maßnahmen ergreifen und den Gastzugriff entfernen.
 
 So erstellen Sie eine DLP-Regel
 
