@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
 ms.openlocfilehash: 9c3aff56f5d85cd1b98747ef5b747720af74fe02
 ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 04/28/2021
 ms.locfileid: "52073937"
@@ -33,7 +33,7 @@ Wenn Sie
 
 - **Office 365 in Microsoft Cloud Deutschland**: führen Sie [diese Schritte](#general-tenant-migration-considerations) aus.
 - **Benutzerdefinierte Domänen**: führen Sie [diesen Schritt](#dns-entries-for-custom-domains) aus.
-- **Office Apps**, ziehen Sie [diesen Schritt in Betracht.](#office-apps)
+- **Office-Apps**: erwägen Sie [diesen Schritt](#office-apps).
 - **SharePoint Online**: führen Sie [diesen Schritt](#sharepoint-online) aus.
 - **Exchange Online** oder **Exchange Hybrid**: führen Sie [diesen Schritt](#exchange-online) aus.
 - **Skype for Business Online**: führen Sie [diesen Schritt](#skype-for-business-online) aus.
@@ -86,16 +86,16 @@ Wenn die Befehlszeile einen DNS-Datensatz zurückgibt, entfernen Sie das _msoid_
 
 ## <a name="office-apps"></a>Office-Apps
 
-**Gilt für**: Kunden, die Office Apps verwenden, insbesondere auf Windows-Clients <br>
-**Anwendung :** Immer vor Beginn von Phase 9
+**Gilt für**: Kunden, die Office-Apps verwenden, speziell auf Windows-Clients <br>
+**Wann angewendet**: Jederzeit vor Beginn der Phase 9
 
-Die Umstellung von Office 365-Mandanten auf die Region „Deutschland“ erfordert, dass alle Benutzer Anwendungen schließen, sich von Office 365 abmelden und für alle Office-Desktopanwendungen (Word, Excel, PowerPoint, Outlook usw.) und den OneDrive for Business-Client erneut anmelden, nachdem die Mandantenmigration Phase 9 erreicht hat. Durch das Ab- und Anmelden können die Office-Dienste neue Authentifizierungstoken vom globalen Azure AD-Dienst abrufen.
+Die Umstellung von Office 365-Mandanten auf die Region „Deutschland“ erfordert, dass sich alle Benutzer von Office 365 abmelden, alle Anwendungen schließen, und sich für alle Office-Desktopanwendungen (Word, Excel, PowerPoint, Outlook usw.) und den OneDrive for Business-Client erneut anmelden, nachdem die Mandantenmigration Phase 9 erreicht hat. Das Ab- und Anmelden erlaubt den Office-Diensten das Abrufen neuer Authentifizierungstokens vom globalen Azure AD-Dienst.
 
-Dies ist für alle Clients erforderlich. Um eine reibungslose Migrationserfahrung sicherzustellen, wird dringend empfohlen, alle betroffenen Benutzer vorab und frühzeitig über diese bevorstehende Aktivität zu informieren und zu informieren.
+Dieser Schritt ist für alle Clients erforderlich. Um eine reibungslose Migrationserfahrung zu gewährleisten, wird dringend empfohlen, alle betroffenen Benutzer im Voraus und frühzeitig über diese bevorstehende Aktivität zu informieren und anzuweisen.
 
-Kunden mit verwalteten Windows-Clients können Windows-Computer mit dem [Office Client Cutover Tool (OCCT) vorbereiten.](https://github.com/microsoft/OCCT) Der OCCT ist so konzipiert, dass er regelmäßig auf Windows-Clients ausgeführt wird, bis der Mandant Phase 9 der Migration erreicht hat. Wenn Phase 9 erreicht ist, führt das OCCT alle erforderlichen Änderungen auf dem Computer automatisch ohne Benutzerinteraktion durch.
+Kunden mit verwalteten Windows-Clients können Windows-Computer mit dem [Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT) vorbereiten. Das OCCT ist so konzipiert, dass es periodisch auf Windows-Clients läuft, bis der Mandant die Phase 9 der Migration erreicht hat. Wenn die Phase 9 erreicht ist, wird das OCCT automatisch ohne Benutzer-Interaktion alle notwendigen Änderungen auf dem Computer durchführen.
 
-Der OCCT kann jederzeit vor Phase 9 auf Windows-Clients bereitgestellt werden. Wenn das OCCT die Migrationserfahrung unterstützen soll, wird empfohlen, die Bereitstellung so bald wie möglich zu starten, um eine maximale Anzahl von Clients auszustatten.
+Das OCCT kann jederzeit vor der Phase 9 auf Windows-Clients bereitgestellt werden. Wenn das OCCT die Migrationserfahrung unterstützen soll, empfehlen wir die Bereitstellung so früh wie möglich zu beginnen, um die größtmögliche Zahl von Clients auszurüsten.
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory-Verbunddienste (AD FS)
 
@@ -155,8 +155,8 @@ Verzeichnisattribute werden zwischen Office 365 und Azure AD synchronisiert, mit
 | Schritte: | Beschreibung | Auswirkung |
 |:-------|:-------|:-------|
 | Stellen Sie den Microsoft Teams-Desktopclient für Benutzer bereit, die auf Skype for Business in Deutschland zugreifen. | Durch die Migration werden Skype for Business-Benutzer für die Zusammenarbeit, für Anrufe und Chats auf Microsoft Teams umgestellt. Stellen Sie entweder den Microsoft Teams-Desktopclient bereit, oder stellen Sie sicher, dass ein unterstützter Browser verfügbar ist. | Wenn keine Aktion ausgeführt wird, führt dies dazu, dass Microsoft Teams-Dienste für die Zusammenarbeit nicht verfügbar sind. |
-| Überprüfen und Vorbereiten von migrationsbezogenen DNS-Änderungen. | Änderungen an DNS-Zonen von Kunden für Skype for Business Online. |<ul><li>Es wird empfohlen, die Gültigkeitsdauer (Time-to-Live, TTL) für alle kundeneigenen DNS-Einträge auf 5 Minuten zu aktualisieren, um die Aktualisierung von DNS-Einträgen zu beschleunigen. Allerdings kann die von Microsoft verwaltete Umstellung im Zusammenhang mit dieser DNS-Änderung jederzeit innerhalb des bereitgestellten 24-Stunden-Änderungsfensters erfolgen. </li><li>Eine Dienstunterbrechung in der Zukunft ist möglich. Benutzer können sich nicht bei Skype for Business anmelden und werden in den Office 365-Diensten zu der migrierten Teams-Erfahrung umgeleitet. </li></ul>|
-| Vorbereiten der Endbenutzer- und Administratorschulung und der Bereitschaft für den Umstieg auf Microsoft Teams. | Wenn Sie die Benutzerkommunikation und -bereitschaft planen wird der Umstieg von Skype auf Teams erfolgreich verlaufen. | <ul><li>Kunden müssen über die neuen Dienste und die Verwendung der Dienste informiert sein, sobald ihre Dienste auf die Office 365-Dienste umgestellt wurden. </li><li>Nachdem DNS-Änderungen sowohl für die Vanity-Domänen des Kunden als auch für die ursprüngliche Domäne vorgenommen wurden, melden sich die Benutzer bei Skype for Business an und sehen, dass sie nun zu Microsoft Teams migriert wurden. Dadurch wird auch der Desktopclient für Microsoft Teams im Hintergrund heruntergeladen. </li></ul>|
+| Überprüfen und Vorbereiten von migrationsbezogenen DNS-Änderungen. | Änderungen an DNS-Zonen von Kunden für Skype for Business Online. |<ul><li>Es wird empfohlen, die Gültigkeitsdauer (Time-to-Live, TTL) für alle kundeneigenen DNS-Einträge auf 5 Minuten zu aktualisieren, um die Aktualisierung von DNS-Einträgen zu beschleunigen. Allerdings kann die von Microsoft verwaltete Umstellung im Zusammenhang mit dieser DNS-Änderung jederzeit innerhalb des bereitgestellten 24-Stunden-Änderungsfensters erfolgen. </li><li>Eine Dienstunterbrechung ist in der Zukunft möglich. Benutzer können sich nicht bei Skype for Business anmelden und werden in den Office 365-Diensten zu der migrierten Teams-Erfahrung umgeleitet. </li></ul>|
+| Vorbereiten der Endbenutzer- und Administratorschulung und der Bereitschaft für den Umstieg auf Microsoft Teams. | Wenn Sie die Benutzerkommunikation und -bereitschaft planen wird der Umstieg von Skype auf Teams erfolgreich verlaufen. | <ul><li>Kunden müssen über die neuen Dienste und die Verwendung der Dienste informiert sein, sobald ihre Dienste auf die Office 365-Dienste umgestellt wurden. </li><li>Nachdem DNS-Änderungen sowohl für die Vanity-Domänen des Kunden als auch für die ursprüngliche Domäne vorgenommen wurden, würden sich die Benutzer bei Skype for Business anmelden und sehen, dass sie nun zu Microsoft Teams migriert wurden. Dies würde auch den Desktopclient für Teams im Hintergrund herunterladen. </li></ul>|
 ||||
 
 ## <a name="mobile-device-management"></a>Verwaltung mobiler Geräte
@@ -180,7 +180,7 @@ Wenn Sie Drittanbieterdienste oder branchenspezifische Apps verwenden, die mit O
 
 | Schritte: | Beschreibung | Auswirkung |
 |:-------|:-------|:-------|
-| Ermitteln Sie, ob eine Neukonfiguration nach der Migration erforderlich ist. | Dienste und Anwendungen von Drittanbietern, die in Office 365 integriert sind, können so programmiert werden, dass sie IP-Adressen und URLs von Microsoft Cloud Deutschland erwarten. | Erforderliche Aktion. Wenn keine Aktion ausgeführt wird, kann dies zu Fehlern beim Dienst oder bei der Clientsoftware führen. |
+| Ermitteln Sie, ob eine Neukonfiguration nach der Migration erforderlich ist. | Dienste und Anwendungen von Drittanbietern, die in Office 365 integriert sind, können so programmiert werden, dass sie IP-Adressen und URLs von Microsoft Cloud Deutschland erwarten. | Erforderliche Aktion. Wenn die Aktion nicht ausgeführt wird, kann dies zu Fehlern beim Dienst oder bei der Clientsoftware führen. |
 ||||
 
 ## <a name="dynamics-365"></a>Dynamics 365
