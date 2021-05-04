@@ -20,18 +20,18 @@ search.appverid:
 - MED150
 - MET150
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
-description: 'Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Microsoft 365 Compliance Center auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte von SharePoint- und OneDrive for #A0 werden als systemeigene #A1 exportiert.'
+description: Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Microsoft 365 Compliance Center auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte von SharePoint und OneDrive for Business werden als systemeigene Office exportiert.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3103bfda4269b7d66e4171b4481d259f2ae3e3de
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3bb46966ddd8d4b2ae61091b126daea1413039ac
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906941"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994860"
 ---
 # <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen
 
-Nachdem eine Inhaltssuche erfolgreich ausgeführt wurde, können Sie die Suchergebnisse auf einen lokalen Computer exportieren. Wenn Sie E-Mail-Ergebnisse exportieren, werden diese als PST-Dateien auf Ihren Computer heruntergeladen. Wenn Sie Inhalte von SharePoint- und OneDrive for #A0 exportieren, werden Kopien systemeigener #A1 exportiert. In den exportierten Suchergebnissen sind weitere Dokumente und Berichte enthalten.
+Nachdem eine Inhaltssuche erfolgreich ausgeführt wurde, können Sie die Suchergebnisse auf einen lokalen Computer exportieren. Wenn Sie E-Mail-Ergebnisse exportieren, werden diese als PST-Dateien auf Ihren Computer heruntergeladen. Wenn Sie Inhalte aus SharePoint und OneDrive for Business exportieren, werden Kopien systemeigener Office exportiert. In den exportierten Suchergebnissen sind weitere Dokumente und Berichte enthalten.
   
 Beim Exportieren der Ergebnisse einer Inhaltssuche werden die Ergebnisse vorbereitet und dann auf einen lokalen Computer heruntergeladen.
   
@@ -41,7 +41,7 @@ Beim Exportieren der Ergebnisse einer Inhaltssuche werden die Ergebnisse vorbere
 
 - Der Computer, den Sie zum Exportieren der Suchergebnisse verwenden, muss die folgenden Voraussetzungen erfüllen:
   
-  - 32-Bit- oder 64-Bit-Versionen von Windows 7 und höher
+  - Neueste Version von Windows (32-Bit- oder 64-Bit-Version)
   
   - Microsoft .NET Framework 4.7
   
@@ -57,19 +57,19 @@ Beim Exportieren der Ergebnisse einer Inhaltssuche werden die Ergebnisse vorbere
   > <sup>1</sup> Microsoft stellt keine Erweiterungen oder Add-Ons von Drittanbietern für ClickOnce her. Das Exportieren von Suchergebnissen mithilfe eines nicht unterstützten Browsers mit Drittanbietererweiterungen oder -add-ons wird nicht unterstützt.<br/>
   > <sup>2</sup> Als Ergebnis der letzten Änderungen an Microsoft Edge ist ClickOnce unterstützung standardmäßig nicht mehr aktiviert. Anweisungen zum Aktivieren ClickOnce in Edge finden Sie unter [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
   
-- Es wird empfohlen, Suchergebnisse auf einen lokalen Computer herunterzuladen. Um jedoch zu vermeiden, dass die Firewall oder Proxyinfrastruktur Ihres Unternehmens beim Herunterladen von Suchergebnissen Probleme verursacht, können Sie das Herunterladen von Suchergebnissen auf einen virtuellen Desktop außerhalb Ihres Netzwerks in Betracht ziehen. Dadurch können Timeouts verringert werden, die in Azure-Datenverbindungen beim Exportieren einer großen Anzahl von Dateien auftreten. Weitere Informationen zu virtuellen Desktops finden Sie unter [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop). 
+- Es wird empfohlen, Suchergebnisse auf einen lokalen Computer herunterzuladen. Um jedoch zu vermeiden, dass die Firewall oder Proxyinfrastruktur Ihres Unternehmens beim Herunterladen von Suchergebnissen Probleme verursacht, können Sie das Herunterladen von Suchergebnissen auf einen virtuellen Desktop außerhalb Ihres Netzwerks in Betracht ziehen. Dadurch können Timeouts verringert werden, die in Azure-Datenverbindungen beim Exportieren einer großen Anzahl von Dateien auftreten. Weitere Informationen zu virtuellen Desktops finden Sie [unter Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop). 
 
 - Um die Leistung beim Herunterladen von Suchergebnissen zu verbessern, sollten Sie Suchen, die einen großen Satz von Ergebnissen zurückgeben, in kleinere Suchen unterteilen. Beispielsweise können Sie Datumsbereiche in Suchabfragen verwenden, um einen kleineren Satz von Ergebnissen zurückzukehren, die schneller heruntergeladen werden können.
   
-- Wenn Sie Suchergebnisse exportieren, werden die Daten vorübergehend an einem von Microsoft bereitgestellten Azure Storage-Speicherort in der Microsoft Cloud gespeichert, bevor sie auf Ihren lokalen Computer heruntergeladen werden. Stellen Sie sicher, dass Ihre Organisation eine Verbindung mit dem Endpunkt in Azure herstellen kann, der **\* .blob.core.windows.net** ist (der Platzhalter stellt einen eindeutigen Bezeichner für Ihren Export dar). Die Suchergebnisse werden zwei Wochen nach dem Erstellen aus dem Azure Storage-Speicherort gelöscht. 
+- Wenn Sie Suchergebnisse exportieren, werden die Daten vorübergehend an einem von Microsoft bereitgestellten Azure Storage in der Microsoft Cloud gespeichert, bevor sie auf Ihren lokalen Computer heruntergeladen werden. Stellen Sie sicher, dass Ihre Organisation eine Verbindung mit dem Endpunkt in Azure herstellen kann, der **\* .blob.core.windows.net** ist (der Platzhalter stellt einen eindeutigen Bezeichner für Ihren Export dar). Die Suchergebnisse werden zwei Wochen nach der Azure Storage aus dem Speicherort gelöscht. 
   
-- Wenn Ihre Organisation einen Proxyserver verwendet, um mit dem Internet zu kommunizieren, müssen Sie die Proxyservereinstellungen auf dem Computer definieren, den Sie zum Exportieren der Suchergebnisse verwenden (damit das Exporttool von Ihrem Proxyserver authentifiziert werden kann). Öffnen Sie dazu die datei  *machine.config*  an dem Speicherort, der Ihrer Version von Windows entspricht. 
+- Wenn Ihre Organisation einen Proxyserver verwendet, um mit dem Internet zu kommunizieren, müssen Sie die Proxyservereinstellungen auf dem Computer definieren, den Sie zum Exportieren der Suchergebnisse verwenden (damit das Exporttool von Ihrem Proxyserver authentifiziert werden kann). Öffnen Sie dazu  diemachine.config-Datei an dem Speicherort, der Ihrer Version von Windows. 
   
   - **32-Bit:**`%windir%\Microsoft.NET\Framework\[version]\Config\machine.config`
   
   - **64-Bit:**`%windir%\Microsoft.NET\Framework64\[version]\Config\machine.config`
   
-    Fügen Sie der Datei die  *folgenden Zeilenmachine.config*  zwischen den Tags und  `<configuration>`  `</configuration>` hinzu. Achten Sie darauf, die richtigen Werte für Ihre Organisation zu ersetzen, z.  `ProxyServer`  `Port` B.  `proxy01.contoso.com:80` . 
+    Fügen Sie der Datei die  *folgenden Zeilenmachine.config*  zwischen den Tags und  `<configuration>`  `</configuration>` hinzu. Achten Sie darauf, die richtigen Werte für Ihre Organisation zu ersetzen, z.  `ProxyServer`  `Port` B. `proxy01.contoso.com:80` . 
   
     ```xml
     <system.net>
@@ -84,7 +84,7 @@ Beim Exportieren der Ergebnisse einer Inhaltssuche werden die Ergebnisse vorbere
 
 ## <a name="step-1-prepare-search-results-for-export"></a>Schritt 1: Vorbereiten der Suchergebnisse für Export
 
-Der erste Schritt besteht in der Vorbereitung der Suchergebnisse für den Export. Wenn Sie Ergebnisse vorbereiten, werden sie an einen von Microsoft bereitgestellten Azure Storage-Speicherort in der Microsoft-Cloud hochgeladen. Inhalte von Postfächern und Websites werden mit einer maximalen Rate von 2 GB pro Stunde hochgeladen.
+Der erste Schritt besteht in der Vorbereitung der Suchergebnisse für den Export. Wenn Sie Ergebnisse vorbereiten, werden sie in einen von Microsoft bereitgestellten Azure Storage in der Microsoft Cloud hochgeladen. Inhalte von Postfächern und Websites werden mit einer maximalen Rate von 2 GB pro Stunde hochgeladen.
   
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
   
@@ -109,11 +109,11 @@ Der erste Schritt besteht in der Vorbereitung der Suchergebnisse für den Export
   
     Im Abschnitt [Weitere Informationen finden](#more-information) Sie eine Beschreibung, wie teilweise indizierte Elemente exportiert werden. Weitere Informationen zu teilweise indizierten Elementen finden Sie unter [Teilweise indizierte Elemente in der Inhaltssuche](partially-indexed-items-in-content-search.md).
   
-7. Wählen **Sie unter Exportieren von** Exchange-Inhalten als eine der folgenden Optionen aus:
+7. Wählen **Sie unter Exchange Inhalt exportieren als** eine der folgenden Optionen aus:
   
     - **Eine PST-Datei für jedes Postfach:** Exportiert eine PST-Datei für jedes Benutzerpostfach, das Suchergebnisse enthält. Alle Ergebnisse aus dem Archivpostfach des Benutzers sind in derselben PST-Datei enthalten. Mit dieser Option wird die Postfachordnerstruktur aus dem Quellpostfach reproduziert.
   
-    - **Eine PST-Datei mit allen Nachrichten:** Exportiert eine einzelne PST-Datei *(exchange.pst),* die die Suchergebnisse aus allen Quellpostfächern enthält, die in der Suche enthalten sind. Mit dieser Option wird die Postfachordnerstruktur für jede Nachricht reproduziert.
+    - **Eine PST-Datei mit allen Nachrichten:** Exportiert eine einzelne PST-Datei *(Exchange.pst*), die die Suchergebnisse aus allen Quellpostfächern enthält, die in der Suche enthalten sind. Mit dieser Option wird die Postfachordnerstruktur für jede Nachricht reproduziert.
   
     - **Eine PST-Datei, die alle Nachrichten in einem einzigen Ordner enthält:** Exportiert Suchergebnisse in eine einzelne PST-Datei, in der sich alle Nachrichten in einem einzigen Ordner auf oberster Ebene befinden. Mit dieser Option können Prüfer Elemente in chronologischer Reihenfolge überprüfen (Elemente werden nach gesendeten Datums sortiert), ohne in der ursprünglichen Postfachordnerstruktur für jedes Element navigieren zu müssen.
   
@@ -122,21 +122,21 @@ Der erste Schritt besteht in der Vorbereitung der Suchergebnisse für den Export
       > [!IMPORTANT]
       > Zum Entschlüsseln von RMS-geschützten Nachrichten beim Exportieren müssen Sie E-Mail-Suchergebnisse als einzelne Nachrichten exportieren. Verschlüsselte Nachrichten bleiben verschlüsselt, wenn Sie die Suchergebnisse als PST-Datei exportieren. Weitere Informationen finden Sie unter Entschlüsseln von [RMS-geschützten E-Mail-Nachrichten und verschlüsselten Dateianlagen](#decrypting-rms-protected-email-messages-and-encrypted-file-attachments) in diesem Artikel.
   
-8. Klicken Sie **auf das Kontrollkästchen Deduplizierung** aktivieren, um doppelte Nachrichten auszuschließen. Diese Option wird nur angezeigt, wenn die Inhaltsquellen der Suche Exchange-Postfächer oder öffentliche Ordner enthalten. 
+8. Klicken Sie **auf das Kontrollkästchen Deduplizierung** aktivieren, um doppelte Nachrichten auszuschließen. Diese Option wird nur angezeigt, wenn die Inhaltsquellen der Suche Exchange postfächern oder öffentlichen Ordnern enthalten. 
   
     Wenn Sie diese Option auswählen, wird nur eine Kopie einer Nachricht exportiert, auch wenn in den durchsuchten Postfächern mehrere Kopien derselben Nachricht gefunden werden. Der Exportergebnisbericht (Results.csv) enthält eine Zeile für jede Kopie einer doppelten Nachricht, sodass Sie die Postfächer (oder öffentlichen Ordner) identifizieren können, die eine Kopie der doppelten Nachricht enthalten. Weitere Informationen zur Deduplizierung und zur Ermittlung doppelter Elemente finden Sie unter [Deduplizierung in eDiscovery-Suchergebnissen.](de-duplication-in-ediscovery-search-results.md)
   
-9. Klicken Sie **auf das Kontrollkästchen Versionen für SharePoint-Dokumente** enthalten, um alle Versionen von SharePoint-Dokumenten zu exportieren. Diese Option wird nur angezeigt, wenn die Inhaltsquellen der Suche SharePoint- oder OneDrive for #A0 enthalten. 
+9. Klicken Sie auf das **Kontrollkästchen Versionen für SharePoint dokumente** enthalten, um alle Versionen von Dokumenten SharePoint exportieren. Diese Option wird nur angezeigt, wenn die Inhaltsquellen der Suche SharePoint oder OneDrive for Business enthalten. 
   
-10. Klicken Sie **auf das Kontrollkästchen Dateien in einem komprimierten (gezippten)** Ordner exportieren, um Suchergebnisse in komprimierte Ordner zu exportieren. Diese Option ist nur verfügbar, wenn Sie #A0 als einzelne Nachrichten exportieren möchten und wenn die Suchergebnisse SharePoint- oder #A1 enthalten. Diese Option wird in erster Linie verwendet, um den Grenzwert von 260 Zeichen in Windows-Dateinamen beim Exportieren von Elementen zu begrenzen. Weitere Informationen finden Sie unter "Dateinamen [](#more-information) exportierter Elemente". 
+10. Klicken Sie **auf das Kontrollkästchen Dateien in einem komprimierten (gezippten)** Ordner exportieren, um Suchergebnisse in komprimierte Ordner zu exportieren. Diese Option ist nur verfügbar, wenn Sie auswählen, Exchange Elemente als einzelne Nachrichten zu exportieren und wenn die Suchergebnisse SharePoint oder OneDrive enthalten. Diese Option wird in erster Linie verwendet, um den Grenzwert von 260 Zeichen in Windows dateinamen beim Exportieren von Elementen zu verwenden. Weitere Informationen finden Sie unter "Dateinamen [](#more-information) exportierter Elemente". 
   
-11. Klicken Sie auf **Export starten**. Die Suchergebnisse werden zum Herunterladen vorbereitet, d. h. sie werden an einen Azure Storage-Speicherort in der Microsoft-Cloud hochgeladen. Dieser Vorgang kann einige Minuten in Anspruch nehmen.
+11. Klicken Sie auf **Export starten**. Die Suchergebnisse werden zum Herunterladen vorbereitet, d. h., sie werden an einen Azure Storage in der Microsoft Cloud hochgeladen. Dieser Vorgang kann einige Minuten in Anspruch nehmen.
 
 Anweisungen zum Herunterladen der exportierten Suchergebnisse finden Sie im nächsten Abschnitt.
   
 ## <a name="step-2-download-the-search-results"></a>Schritt 2: Herunterladen der Suchergebnisse
 
-Im nächsten Schritt laden Sie die Suchergebnisse aus dem Azure Storage-Speicherort auf Ihren lokalen Computer herunter.
+Im nächsten Schritt laden Sie die Suchergebnisse aus dem Azure Storage auf Ihren lokalen Computer herunter.
   
 1. Klicken Sie **auf der Seite Inhaltssuche** auf **die** Registerkarte Exporte. 
   
@@ -160,7 +160,7 @@ Im nächsten Schritt laden Sie die Suchergebnisse aus dem Azure Storage-Speicher
   
       > [!IMPORTANT]
       >  Aufgrund der hohen Netzwerkaktivität während des Downloads sollten Sie Suchergebnisse nur an einen Speicherort auf einem internen Laufwerk auf Ihrem lokalen Computer herunterladen. Befolgen Sie die folgenden Richtlinien, um die beste Downloaderfahrung zu bieten: <br/>
-      >- Laden Sie keine Suchergebnisse in einen #A0, ein zugeordnetes Netzwerklaufwerk, ein externes #A1 oder ein synchronisiertes OneDrive for #A1 herunter.<br/>
+      >- Laden Sie keine Suchergebnisse in einen UNC-Pfad, ein zugeordnetes Netzwerklaufwerk, ein externes USB-Laufwerk oder ein synchronisiertes OneDrive for Business herunter.<br/>
       >- Deaktivieren Sie die Virenschutzprüfung für den Ordner, in den Sie das Suchergebnis herunterladen.<br/>
       >- Laden Sie Suchergebnisse für gleichzeitige Downloadaufträge in verschiedene Ordner herunter.
 
@@ -179,8 +179,6 @@ Hier finden Sie weitere Informationen zum Exportieren von Suchergebnissen.
 [Exportieren teilweise indizierter Elemente](#exporting-partially-indexed-items)
 
 [Exportieren einzelner Nachrichten oder PST-Dateien](#exporting-individual-messages-or-pst-files)
-  
-[Exportieren von Ergebnissen aus mehr als 100.000 Postfächern](#exporting-results-from-more-than-100000-mailboxes)
 
 [Entschlüsseln von RMS-geschützten E-Mail-Nachrichten und verschlüsselten Dateianlagen](#decrypting-rms-protected-email-messages-and-encrypted-file-attachments)
 
@@ -196,11 +194,11 @@ Informationen zu Beschränkungen beim Exportieren von Inhaltssuchergebnissen fin
   
 - Wenn Sie Suchergebnisse exportieren, werden zusätzlich zu den Suchergebnissen die folgenden Berichte einbezogen.
   
-  - **Exportzusammenfassung** Ein Excel-Dokument, das eine Zusammenfassung des Exports enthält. Dazu gehören Informationen wie die Anzahl der durchsuchten Inhaltsquellen, die geschätzten und heruntergeladenen Größen der Suchergebnisse sowie die geschätzte und heruntergeladene Anzahl der exportierten Elemente.
+  - **Exportzusammenfassung** Ein Excel, das eine Zusammenfassung des Exports enthält. Dazu gehören Informationen wie die Anzahl der durchsuchten Inhaltsquellen, die geschätzten und heruntergeladenen Größen der Suchergebnisse sowie die geschätzte und heruntergeladene Anzahl der exportierten Elemente.
   
   - **Manifest** Eine Manifestdatei (im XML-Format), die Informationen zu jedem Element enthält, das in den Suchergebnissen enthalten ist.
   
-  - **Ergebnisse** Ein Excel-Dokument, das Informationen zu jedem Element enthält, das als Suchergebnis heruntergeladen wird. Für E-Mails enthält das Ergebnisprotokoll Informationen zu jeder Nachricht, einschließlich:
+  - **Ergebnisse** Ein Excel, das Informationen zu jedem Element enthält, das als Suchergebnis heruntergeladen wird. Für E-Mails enthält das Ergebnisprotokoll Informationen zu jeder Nachricht, einschließlich:
   
     - Der Speicherort der Nachricht im Quellpostfach (einschließlich der Angabe, ob die Nachricht sich im primären oder im Archivpostfach befindet).
   
@@ -212,7 +210,7 @@ Informationen zu Beschränkungen beim Exportieren von Inhaltssuchergebnissen fin
 
     - Gibt an, ob es sich bei der Nachricht um eine doppelte Nachricht handelt, wenn Sie die Deduplizierungsoption beim Exportieren der Suchergebnisse aktiviert haben. Doppelte Nachrichten haben einen Wert in der Spalte **Duplizieren** in Element, der die Nachricht als Duplikat identifiziert. Der Wert in der **Spalte Duplizieren** in Element enthält die Elementidentität der nachricht, die exportiert wurde. Weitere Informationen finden Sie unter [Deduplizierung in eDiscovery-Suchergebnissen](de-duplication-in-ediscovery-search-results.md).
 
-      Für Dokumente von SharePoint- und OneDrive for #A0 enthält das Ergebnisprotokoll Informationen zu jedem Dokument, einschließlich:
+      Für Dokumente von SharePoint und OneDrive for Business enthält das Ergebnisprotokoll Informationen zu jedem Dokument, einschließlich:
 
       - Die URL für das Dokument.
 
@@ -222,11 +220,11 @@ Informationen zu Beschränkungen beim Exportieren von Inhaltssuchergebnissen fin
 
       - Der Name des Dokuments (das sich in der Spalte Betreff im Ergebnisprotokoll befindet).
 
-  - **Nicht indizierte Elemente** Ein Excel-Dokument, das Informationen zu teilweise indizierten Elementen enthält, die in den Suchergebnissen enthalten wären. Wenn Sie beim Generieren des Suchergebnissesberichts nicht teilweise indizierte Elemente enthalten, wird dieser Bericht weiterhin heruntergeladen, ist jedoch leer.
+  - **Nicht indizierte Elemente** Ein Excel, das Informationen zu teilweise indizierten Elementen enthält, die in den Suchergebnissen enthalten wären. Wenn Sie beim Generieren des Suchergebnissesberichts nicht teilweise indizierte Elemente enthalten, wird dieser Bericht weiterhin heruntergeladen, ist jedoch leer.
 
   - **Fehler und Warnungen** Enthält Fehler und Warnungen für Dateien, die beim Export aufgetreten sind. Informationen zu den einzelnen Fehlern oder Warnungen finden Sie in der Spalte Fehlerdetails.
 
-  - **Übersprungene Elemente** Wenn Sie Suchergebnisse von SharePoint- und OneDrive for SkippedItems.csv exportieren, enthält der Export in der Regel einen Bericht übersprungene Elemente (SkippedItems.csv). Bei den in diesem Bericht genannten Elementen handelt es sich in der Regel um Elemente, die nicht heruntergeladen werden, z. B. ein Ordner oder eine Dokumentenmappe. Das Nichtexportieren dieser Arten von Elementen ist entwurfsweise. Für andere Elemente, die übersprungen wurden, zeigen das Feld "Fehlertyp" und "Fehlerdetails" im Bericht übersprungene Elemente den Grund an, warum das Element übersprungen wurde und nicht mit den anderen Suchergebnissen heruntergeladen wurde.
+  - **Übersprungene Elemente** Wenn Sie Suchergebnisse aus websites SharePoint und OneDrive for Business exportieren, enthält der Export in der Regel einen Bericht über übersprungene Elemente (SkippedItems.csv). Bei den in diesem Bericht genannten Elementen handelt es sich in der Regel um Elemente, die nicht heruntergeladen werden, z. B. ein Ordner oder eine Dokumentenmappe. Das Nichtexportieren dieser Arten von Elementen ist entwurfsweise. Für andere Elemente, die übersprungen wurden, zeigen das Feld "Fehlertyp" und "Fehlerdetails" im Bericht übersprungene Elemente den Grund an, warum das Element übersprungen wurde und nicht mit den anderen Suchergebnissen heruntergeladen wurde.
 
   - **Ablaufverfolgungsprotokoll** Enthält detaillierte Protokollierungsinformationen zum Exportprozess und kann beim Aufdecken von Problemen während des Exports helfen.
   
@@ -247,23 +245,23 @@ Informationen zu Beschränkungen beim Exportieren von Inhaltssuchergebnissen fin
 
     ![Verwenden der dritten Exportoption zum Exportieren nur nicht indizierter Elemente](../media/5d7be338-a0e5-425f-8ba5-92769c24bf75.png)
   
-- Beim Exportieren von Suchergebnissen aus SharePoint- oder OneDrive for #A0 hängt die Möglichkeit zum Exportieren nicht indizierter Elemente auch von der ausgewählten Exportoption und davon ab, ob eine durchsuchte Website ein indiziertes Element enthält, das den Suchkriterien entspricht. Wenn Sie beispielsweise bestimmte SharePoint- oder OneDrive for #A0 durchsuchen und keine Suchergebnisse gefunden werden, werden keine nicht indizierten Elemente von diesen Websites exportiert, wenn Sie die zweite Exportoption zum Exportieren indizierter und nicht indizierter Elemente auswählen. Wenn ein indiziertes Element von einer Website den Suchkriterien entspricht, werden alle nicht indizierten Elemente von dieser Website exportiert, wenn indizierte und nicht indizierte Elemente exportiert werden. In der folgenden Abbildung werden die Exportoptionen beschrieben, die darauf basieren, ob eine Website ein indiziertes Element enthält, das den Suchkriterien entspricht.
+- Beim Exportieren von Suchergebnissen von SharePoint- oder OneDrive for Business-Websites hängt die Möglichkeit zum Exportieren nicht indizierter Elemente auch von der ausgewählten Exportoption und davon ab, ob eine durchsuchte Website ein indiziertes Element enthält, das den Suchkriterien entspricht. Wenn Sie beispielsweise bestimmte SharePoint- oder OneDrive for Business-Websites durchsuchen und keine Suchergebnisse gefunden werden, werden keine nicht indizierten Elemente von diesen Websites exportiert, wenn Sie die zweite Exportoption zum Exportieren indizierter und nicht indizierter Elemente auswählen. Wenn ein indiziertes Element von einer Website den Suchkriterien entspricht, werden alle nicht indizierten Elemente von dieser Website exportiert, wenn indizierte und nicht indizierte Elemente exportiert werden. In der folgenden Abbildung werden die Exportoptionen beschrieben, die darauf basieren, ob eine Website ein indiziertes Element enthält, das den Suchkriterien entspricht.
 
     ![Wählen Sie die Exportoption basierend darauf aus, ob eine Website ein indiziertes Element enthält, das den Suchkriterien entspricht.](../media/94f78786-c6bb-42fb-96b3-7ea3998bcd39.png)
 
-    1. Nur indizierte Elemente, die den Suchkriterien entsprechen, werden exportiert. Es werden keine teilweise indizierten Elemente exportiert.
+    a. Nur indizierte Elemente, die den Suchkriterien entsprechen, werden exportiert. Es werden keine teilweise indizierten Elemente exportiert.
 
-    2. Wenn keine indizierten Elemente von einer Website den Suchkriterien entsprechen, werden teilweise indizierte Elemente von derselben Website nicht exportiert. Wenn indizierte Elemente von einer Website in den Suchergebnissen zurückgegeben werden, werden die teilweise indizierten Elemente von dieser Website exportiert. Anders ausgedrückt: Nur die teilweise indizierten Elemente von Websites, die Elemente enthalten, die den Suchkriterien entsprechen, werden exportiert.
+    b. Wenn keine indizierten Elemente von einer Website den Suchkriterien entsprechen, werden teilweise indizierte Elemente von derselben Website nicht exportiert. Wenn indizierte Elemente von einer Website in den Suchergebnissen zurückgegeben werden, werden die teilweise indizierten Elemente von dieser Website exportiert. Anders ausgedrückt: Nur die teilweise indizierten Elemente von Websites, die Elemente enthalten, die den Suchkriterien entsprechen, werden exportiert.
 
-    3. Alle teilweise indizierten Elemente von allen Websites in der Suche werden exportiert, unabhängig davon, ob eine Website Elemente enthält, die den Suchkriterien entsprechen.
+    c. Alle teilweise indizierten Elemente von allen Websites in der Suche werden exportiert, unabhängig davon, ob eine Website Elemente enthält, die den Suchkriterien entsprechen.
 
-    Wenn Sie teilweise indizierte Elemente exportieren möchten, werden teilweise indizierte Postfachelemente unabhängig von der Option, die Sie unter Exportieren von Exchange-Inhalten als auswählen, in eine separate PST-Datei **exportiert.**
+    Wenn Sie teilweise indizierte Elemente exportieren möchten, werden teilweise indizierte Postfachelemente in eine separate PST-Datei exportiert, unabhängig von der Option, die Sie unter **Export Exchange content as auswählen.**
 
 - Wenn teilweise indizierte Elemente in den Suchergebnissen zurückgegeben werden (da andere Eigenschaften teilweise indizierter Elemente den Suchkriterien entsprechen), werden diese teilweise indizierten Elemente mit den regulären Suchergebnissen exportiert. Wenn Sie also sowohl indizierte als auch teilweise indizierte Elemente exportieren möchten (indem Sie die Option Alle Elemente auswählen, einschließlich der Elemente, die ein nicht unbekanntes Format **haben,** verschlüsselt sind oder aus anderen Gründen nicht indiziert wurden), werden die teilweise indizierten Elemente, die mit den regulären Ergebnissen exportiert wurden, im Results.csv-Bericht aufgeführt. Sie werden nicht im Bericht Nicht indizierte items.csv aufgeführt.
   
 ### <a name="exporting-individual-messages-or-pst-files"></a>Exportieren einzelner Nachrichten oder PST-Dateien
   
-- Wenn der Dateipfadname einer Nachricht den maximalen Zeichengrenzwert für Windows überschreitet, wird der Dateipfadname abgeschnitten. Der ursprüngliche Dateipfadname wird jedoch im Manifest und im ResultsLog aufgeführt.
+- Wenn der Dateipfadname einer Nachricht den maximalen Zeichengrenzwert für Windows, wird der Dateipfadname abgeschnitten. Der ursprüngliche Dateipfadname wird jedoch im Manifest und im ResultsLog aufgeführt.
   
 - Wie bereits erläutert, werden E-Mail-Suchergebnisse in einen Ordner im Dateisystem exportiert. Der Ordnerpfad für einzelne Nachrichten würde den Ordnerpfad im Postfach des Benutzers replizieren. Bei einer Suche mit dem Namen "ContosoCase101" befinden sich beispielsweise Nachrichten im Posteingang eines Benutzers im Ordnerpfad  `~ContosoCase101\\<date of export\Exchange\user@contoso.com (Primary)\Top of Information Store\Inbox` .
 
@@ -271,28 +269,6 @@ Informationen zu Beschränkungen beim Exportieren von Inhaltssuchergebnissen fin
 
 - Wie bereits erwähnt, müssen Sie E-Mail-Suchergebnisse als einzelne Nachrichten exportieren, um RMS-geschützte Nachrichten zu entschlüsseln, wenn sie exportiert werden. Verschlüsselte Nachrichten bleiben verschlüsselt, wenn Sie E-Mail-Suchergebnisse als PST-Datei exportieren.
   
-### <a name="exporting-results-from-more-than-100000-mailboxes"></a>Exportieren von Ergebnissen aus mehr als 100.000 Postfächern
-
-- Wie bereits erläutert, müssen Sie Security & Compliance Center PowerShell verwenden, um die Suchergebnisse aus mehr als 100.000 Postfächern herunterzuladen. Sie können das folgende Skript in diesem Abschnitt ausführen, um diese Suchergebnisse herunterzuladen. Bei Verwendung dieses Skripts wird davon ausgegangen, dass Sie die Suchergebnisse  bereits exportiert haben (der Exportauftrag wird auf der Registerkarte Exporte im Tool für die Inhaltssuche angezeigt) und diese jetzt herunterladen möchten.
-
-   ```powershell
-   $export=Get-ComplianceSearchAction SEARCHNAME_Export -IncludeCredential;
-   $exportUrl=   [System.Uri]::EscapeDataString(($export.Results.Split(";") | ?{$_ -like '*Container url*'} | %{$_.Split(":",2)} | select -last 1).Trim());
-   $exportToken=($export.Results.Split(";") | ?{$_ -like '*SAS Token*'} | %{$_.Split(":",2)} | select -last 1).Trim();
-   ."$env:ProgramFiles\Internet Explorer\IEXPLORE.EXE" "https://complianceclientsdf.blob.core.windows.net/v16/Microsoft.Office.Client.Discovery.UnifiedExportTool.application?name=$($export.Name)&source=$exportUrl&zip=allow&trace=1";
-   $exportToken | clip;
-   ```
-
-  Im Skript müssen Sie den Namen der Suche angeben, für die Sie Ergebnisse exportieren möchten. Ersetzen Sie z. B. für eine Suche namens `SearchAllMailboxes` SEARCHNAME_Export `SearchAllMailboxes_Export` durch .
-
-  Nachdem Sie dem Skript den Namen der Suche hinzugefügt haben, können Sie den Skripttext kopieren und dann in ein Windows PowerShell-Fenster einfügen, das mit [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)verbunden ist. Nachdem Sie das Skript eingefügt haben, wird das eDiscovery-Exporttool angezeigt (wie beim Herunterladen von Suchergebnissen über die Benutzeroberfläche):
-
-  ![eDiscovery-Exporttool](../media/eDiscoveryExportTool.png)
-
-  Klicken Sie in das Feld Exporttaste, und drücken Sie dann, um die Exporttaste einzufügen (das Skript kopiert die Exporttaste `CTRL + V` in die Zwischenablage). Klicken **Sie auf Durchsuchen,** um den Speicherort anzugeben, an dem Sie die Dateien herunterladen möchten, und starten Sie dann den Download.
-
-  Wie bereits erwähnt, wird empfohlen, die Suchergebnisse aufgrund der hohen Datenträgeraktivität (Lese- und Schreibvorgänge) auf ein lokales Datenträgerlaufwerk herunterzuladen. Laden Sie keine Suchergebnisse auf ein zugeordnetes Netzlaufwerk oder einen anderen Netzwerkspeicherort herunter.
-
 ### <a name="decrypting-rms-protected-email-messages-and-encrypted-file-attachments"></a>Entschlüsseln von RMS-geschützten E-Mail-Nachrichten und verschlüsselten Dateianlagen
 
 Alle rechtegeschützten (RMS-geschützten) E-Mail-Nachrichten, die in den Ergebnissen einer Inhaltssuche enthalten sind, werden beim Exportieren entschlüsselt. Darüber hinaus wird jede Datei, [](encryption.md) die mit einer Microsoft-Verschlüsselungstechnologie verschlüsselt ist und an eine E-Mail-Nachricht angefügt ist, die in den Suchergebnissen enthalten ist, auch entschlüsselt, wenn sie exportiert wird. Diese Entschlüsselungsfunktion ist standardmäßig für Mitglieder der Rollengruppe eDiscovery-Manager aktiviert. Dies liegt daran, dass dieser Rollengruppe standardmäßig die Verwaltungsrolle RMS Decrypt zugewiesen ist. Beachten Sie beim Exportieren verschlüsselter E-Mail-Nachrichten und Anlagen folgendes:
@@ -303,7 +279,7 @@ Alle rechtegeschützten (RMS-geschützten) E-Mail-Nachrichten, die in den Ergebn
 
 - Neben dem Entschlüsseln von Dateianlagen beim Exportieren von Suchergebnissen können Sie auch eine Vorschau der entschlüsselten Datei anzeigen, wenn Sie eine Vorschau der Suchergebnisse anzeigen. Sie können die durch Rechte geschützte E-Mail-Nachricht nur anzeigen, nachdem Sie sie exportiert haben.
 
-- Derzeit umfasst die Entschlüsselungsfunktion beim Exportieren von Suchergebnissen keine verschlüsselten Inhalte von SharePoint- und OneDrive for #A0 . In Kürze wird jedoch Unterstützung für Dokumente verfügbar sein, die mit #A0 verschlüsselt und in SharePoint Online und OneDrive for Business gespeichert sind.
+- Zu diesem Zeitpunkt umfasst die Entschlüsselungsfunktion beim Exportieren von Suchergebnissen keine verschlüsselten Inhalte von SharePoint und OneDrive for Business Websites. In Kürze wird jedoch Unterstützung für Dokumente verfügbar sein, die mit Microsoft-Verschlüsselungstechnologien verschlüsselt und in SharePoint Online und OneDrive for Business.
 
 - Wenn Sie verhindern müssen, dass eine Person RMS-schutznachrichten und verschlüsselte Dateianlagen entschlüsselt, müssen Sie eine benutzerdefinierte Rollengruppe erstellen (indem Sie die integrierte eDiscovery-Manager-Rollengruppe kopieren) und dann die Verwaltungsrolle RMS Decrypt aus der benutzerdefinierten Rollengruppe entfernen. Fügen Sie dann die Person hinzu, die Sie nachrichten nicht entschlüsseln möchten, als Mitglied der benutzerdefinierten Rollengruppe.
   
@@ -311,28 +287,28 @@ Alle rechtegeschützten (RMS-geschützten) E-Mail-Nachrichten, die in den Ergebn
   
 - Für den vollständigen Pfadnamen für E-Mail-Nachrichten und Websitedokumente, die auf Ihren lokalen Computer exportiert werden, gibt es eine Beschränkung von 260 Zeichen (vom Betriebssystem auferlegt). Der vollständige Pfadname für exportierte Elemente enthält den ursprünglichen Speicherort des Elements und den Ordnerspeicherort auf dem lokalen Computer, auf den die Suchergebnisse heruntergeladen werden. Wenn Sie beispielsweise angeben, dass die Suchergebnisse in das  `C:\Users\Admin\Desktop\SearchResults` eDiscovery-Export-Tool heruntergeladen werden sollen, ist der vollständige Pfadname für ein heruntergeladenes E-Mail-Element  `C:\Users\Admin\Desktop\SearchResults\ContentSearch1\03.15.2017-1242PM\Exchange\sarad@contoso.com (Primary)\Top of Information Store\Inbox\Insider trading investigation.msg` .
 
-    Wenn der Grenzwert von 260 Zeichen überschritten wird, wird der vollständige Pfadname für ein Element abgeschnitten.
+- Wenn der Grenzwert von 260 Zeichen überschritten wird, wird der vollständige Pfadname für ein Element gekürzt, basierend auf den folgenden Bedingungen:
 
   - Wenn der vollständige Pfadname länger als 260 Zeichen ist, wird der Dateiname verkürzt, um den Grenzwert zu überschreiten. Beachten Sie, dass der abgeschnittene Dateiname (mit Ausnahme der Dateierweiterung) nicht weniger als acht Zeichen lang ist.
 
   - Wenn der vollständige Pfadname nach dem Kürzen des Dateinamens noch zu lang ist, wird das Element vom aktuellen Speicherort in den übergeordneten Ordner verschoben. Wenn der Pfadname noch zu lang ist, wird der Vorgang wiederholt: Kürzen Sie den Dateinamen, und verschieben Sie gegebenenfalls erneut in den übergeordneten Ordner. Dieser Vorgang wird wiederholt, bis der vollständige Pfadname unter dem Grenzwert von 260 Zeichen liegt.
 
-  - Wenn bereits ein abgeschnittener vollständiger Pfadname vorhanden ist, wird am Ende des Dateinamens eine Versionsnummer hinzugefügt. Beispiel:  `statusmessage(2).msg` .
+  - Wenn bereits ein abgeschnittener vollständiger Pfadname vorhanden ist, wird am Ende des Dateinamens eine Versionsnummer hinzugefügt. Beispiel: `statusmessage(2).msg` .
 
     Um dieses Problem zu beheben, sollten Sie das Herunterladen von Suchergebnissen an einen Speicherort mit einem kurzen Pfadnamen in Betracht ziehen. Beispielsweise würde das Herunterladen von Suchergebnissen in einen Ordner namens weniger Zeichen zu den Pfadnamen exportierter Elemente hinzufügen als das Herunterladen in einen  `C:\Results` Ordner namens  `C:\Users\Admin\Desktop\Results` .
 
-- Wenn Sie Websitedokumente exportieren, ist es auch möglich, dass der ursprüngliche Dateiname eines Dokuments geändert wird. Dies geschieht insbesondere für Dokumente, die von einer SharePoint- oder OneDrive for #A0 gelöscht wurden, die in einem Haltepunkt platziert wurden. Nachdem ein Dokument, das sich auf einer Website befindet, die sich im Haltezustand befindet, gelöscht wurde, wird das gelöschte Dokument automatisch in die Erhaltungsarchivbibliothek für die Website verschoben (die erstellt wurde, als die Website in den Haltezustand verschoben wurde). Wenn das gelöschte Dokument in die Erhaltungsarchivbibliothek verschoben wird, wird eine zufällig generierte und eindeutige ID an den ursprünglichen Dateinamen des Dokuments angefügt. Wenn beispielsweise der Dateiname für ein Dokument ist und dieses Dokument später gelöscht und in die Erhaltungsarchivbibliothek verschoben wird, wird der Dateiname des Dokuments, das in die Erhaltungsarchivbibliothek verschoben wird, in etwa  `FY2017Budget.xlsx`  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` geändert. Wenn ein Dokument in der Erhaltungsarchivbibliothek der Abfrage einer Inhaltssuche entspricht und Sie die Ergebnisse dieser Suche exportieren, hat die exportierte Datei den geänderten Dateinamen. In diesem Beispiel ist der Dateiname des exportierten Dokuments  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
+- Wenn Sie Websitedokumente exportieren, ist es auch möglich, dass der ursprüngliche Dateiname eines Dokuments geändert wird. Dies geschieht insbesondere für Dokumente, die aus einer SharePoint oder OneDrive for Business gelöscht wurden, die in einem Halteraum platziert wurden. Nachdem ein Dokument, das sich auf einer Website befindet, die sich im Haltezustand befindet, gelöscht wurde, wird das gelöschte Dokument automatisch in die Erhaltungsarchivbibliothek für die Website verschoben (die erstellt wurde, als die Website in den Haltezustand verschoben wurde). Wenn das gelöschte Dokument in die Erhaltungsarchivbibliothek verschoben wird, wird eine zufällig generierte und eindeutige ID an den ursprünglichen Dateinamen des Dokuments angefügt. Wenn beispielsweise der Dateiname für ein Dokument ist und dieses Dokument später gelöscht und in die Erhaltungsarchivbibliothek verschoben wird, wird der Dateiname des Dokuments, das in die Erhaltungsarchivbibliothek verschoben wird, in etwa  `FY2017Budget.xlsx`  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` geändert. Wenn ein Dokument in der Erhaltungsarchivbibliothek der Abfrage einer Inhaltssuche entspricht und Sie die Ergebnisse dieser Suche exportieren, hat die exportierte Datei den geänderten Dateinamen. In diesem Beispiel ist der Dateiname des exportierten Dokuments  `FY2017Budget_DEAF727D-0478-4A7F-87DE-5487F033C81A2000-07-05T10-37-55.xlsx` .
 
     Wenn ein Dokument auf einer Website geändert wird, die sich im Haltezustand befindet (und die Versionsierung für die Dokumentbibliothek auf der Website aktiviert wurde), wird automatisch eine Kopie der Datei in der Erhaltungsarchivbibliothek erstellt. In diesem Fall wird auch eine zufällig generierte und eindeutige ID an den Dateinamen des Dokuments angefügt, das in die Erhaltungsarchivbibliothek kopiert wird.
 
-    Der Grund, warum Dateinamen von Dokumenten, die verschoben oder in die Erhaltungsarchivbibliothek kopiert werden, sind, um in Konflikt konfliktende Dateinamen zu verhindern. Weitere Informationen zum Platzieren eines Haltezustands auf Websites und der Bibliothek für das Aufbewahrungsarchiv finden Sie unter [Overview of in-place hold in SharePoint Server 2016](https://support.office.com/article/5e400d68-cd51-444a-8fe6-e4df1d20aa95).
+    Der Grund, warum Dateinamen von Dokumenten, die verschoben oder in die Erhaltungsarchivbibliothek kopiert werden, sind, um in Konflikt konfliktende Dateinamen zu verhindern. Weitere Informationen zum Platzieren eines Haltezustands auf Websites und zur Bibliothek für das Aufbewahrungsarchiv finden Sie unter [Overview of in-place hold in SharePoint Server 2016](https://support.office.com/article/5e400d68-cd51-444a-8fe6-e4df1d20aa95).
 
 ### <a name="miscellaneous"></a>Sonstiges
   
-- Beim Herunterladen von Suchergebnissen mithilfe des eDiscovery-Exporttools wird möglicherweise der folgende Fehler angezeigt: Dies ist ein vorübergehender Fehler, der in der Regel am `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` Azure Storage-Speicherort auftritt. Um dieses Problem zu beheben, versuchen Sie es erneut, [die Suchergebnisse herunterzuladen,](#step-2-download-the-search-results)wodurch das eDiscovery-Exporttool neu gestartet wird.
+- Beim Herunterladen von Suchergebnissen mithilfe des eDiscovery-Exporttools wird möglicherweise der folgende Fehler angezeigt: Dies ist ein vorübergehender Fehler, der in der Regel am Speicherort Azure Storage `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` wird. Um dieses Problem zu beheben, versuchen Sie es erneut, [die Suchergebnisse herunterzuladen,](#step-2-download-the-search-results)wodurch das eDiscovery-Exporttool neu gestartet wird.
 
 - Alle Suchergebnisse und Exportberichte sind in einem Ordner enthalten, der denselben Namen wie die Inhaltssuche hat. Die E-Mail-Nachrichten, die exportiert wurden, befinden sich in einem Ordner mit dem Namen **Exchange**. Dokumente befinden sich in einem Ordner namens **SharePoint**.
 
-- Die Dateisystemmetadaten für Dokumente auf SharePoint- und OneDrive for #A0 werden beibehalten, wenn Dokumente auf Ihren lokalen Computer exportiert werden. Das bedeutet, dass Dokumenteigenschaften, z. B. erstellte und zuletzt geänderte Datumsangaben, beim Exportieren von Dokumenten nicht geändert werden.
+- Die Dateisystemmetadaten für Dokumente auf SharePoint und OneDrive for Business werden beibehalten, wenn Dokumente auf Ihren lokalen Computer exportiert werden. Das bedeutet, dass Dokumenteigenschaften, z. B. erstellte und zuletzt geänderte Datumsangaben, beim Exportieren von Dokumenten nicht geändert werden.
 
-- Wenn Ihre Suchergebnisse ein Listenelement aus SharePoint enthalten, das der Suchabfrage entspricht, werden alle Zeilen in der Liste zusätzlich zu dem Element exportiert, das der Suchabfrage und allen Anlagen in der Liste entspricht. Der Grund für dieses Verhalten besteht in der Bereitstellung eines Kontexts für Listenelemente, die in den Suchergebnissen zurückgegeben werden. Beachten Sie außerdem, dass die zusätzlichen Listenelemente und Anlagen dazu führen können, dass die Anzahl der exportierten Elemente von der ursprünglichen Schätzung der Suchergebnisse abhing.
+- Wenn ihre Suchergebnisse ein Listenelement aus SharePoint enthalten, das der Suchabfrage entspricht, werden alle Zeilen in der Liste zusätzlich zu dem Element exportiert, das der Suchabfrage und allen Anlagen in der Liste entspricht. Der Grund für dieses Verhalten besteht in der Bereitstellung eines Kontexts für Listenelemente, die in den Suchergebnissen zurückgegeben werden. Die zusätzlichen Listenelemente und Anlagen können dazu führen, dass die Anzahl der exportierten Elemente von der ursprünglichen Schätzung der Suchergebnisse abhing.

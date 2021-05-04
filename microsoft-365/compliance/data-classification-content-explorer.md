@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mit dem Inhalts-Explorers zur Datenklassifizierung können Sie beschriftete Elemente systemintern anzeigen.
-ms.openlocfilehash: 19ad68d3c32046754e366919e8c4e66336945624
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: b39dd09012e7cde6c19ea88a0915154da84c712a
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080724"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114215"
 ---
 # <a name="get-started-with-content-explorer"></a>Erste Schritte mit dem Inhalts-Explorer
 
@@ -82,7 +82,7 @@ Der Inhalts-Explorer zeigt eine aktuelle Momentaufnahme der Elemente mit einer V
 
 ### <a name="sensitive-information-types"></a>Typen vertraulicher Informationen
 
-Mithilfe einer [DLP-Richtlinie](data-loss-prevention-policies.md) können vertrauliche Informationen geschützt werden, die als **vertraulicher Informationstyp** definiert sind. Microsoft 365 umfasst [Definitionen für viele gängige Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md) aus vielen verschiedenen Regionen, die für Sie verfügbar sind. Beispielsweise Kreditkartennummern, Bankkontonummern, Personalausweisnummern und Windows Live ID-Dienstnummern.
+Mithilfe einer [DLP-Richtlinie](dlp-learn-about-dlp.md) können vertrauliche Informationen geschützt werden, die als **vertraulicher Informationstyp** definiert sind. Microsoft 365 umfasst [Definitionen für viele gängige Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md) aus vielen verschiedenen Regionen, die für Sie verfügbar sind. Beispielsweise Kreditkartennummern, Bankkontonummern, Personalausweisnummern und Windows Live ID-Dienstnummern.
 
 > [!NOTE]
 > Der Inhalts-Explorer sucht derzeit nicht nach vertraulichen Informationstypen in Exchange Online.
@@ -145,4 +145,4 @@ Sie können nach folgendem suchen:
 - [Weitere Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
 - [Weitere Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md)
 - [Entitätsdefinitionen für Typen vertraulicher Informationstypen.md](sensitive-information-type-entity-definitions.md)
-- [Übersicht über die Verhinderung von Datenverlust](data-loss-prevention-policies.md)
+- [Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)

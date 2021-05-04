@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: d645d185524d111af4eafed4b5fba06483525a85
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 23320d962b52e1a443d459cb6b57d444fca91592
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920075"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939309"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -52,14 +52,14 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
 
 - **Dienstseitige Kennzeichnung, wenn der Inhalt bereits gespeichert (in SharePoint oder OneDrive) oder per E-Mail versandt (von Exchange Online verarbeitet) wurde**: Verwenden Sie eine automatische Bezeichnungsrichtlinie. 
     
-    Möglicherweise wird sie auch automatische Bezeichnung für ruhende Daten (Dokumente in Microsoft Office SharePoint Online und OneDrive) und Daten im Transit (E-Mails, die von Exchange gesendet oder empfangen werden) genannt. Bei Exchange sind keine ruhenden E-Mail-Nachrichten enthalten (Postfächer).
+    Möglicherweise spricht man bei dieser Methode auch vom automatischen Bezeichnen von ruhenden Daten (Dokumente in Microsoft Office SharePoint Online und OneDrive) und Daten bei der Übertragung (E-Mails, die von Exchange gesendet oder empfangen werden). Bei Exchange sind keine ruhenden E-Mail-Nachrichten enthalten (Postfächer).
     
     Da diese Bezeichnung eher von Diensten als von Anwendungen angewendet wird, müssen Sie sich keine Gedanken darüber machen, welche Apps-Benutzer über welche Version verfügen. Dies hat zur Folge, dass diese Funktion sofort in ihrer gesamten Organisation zur Verfügung steht, und sie eignet sich für Bezeichnungen jeder Größe. Richtlinien zum automatischen Bezeichnen unterstützen die empfohlene Bezeichnung nicht, da der Benutzer nicht mit dem Bezeichnungsprozess interagiert. Stattdessen führt der Administrator die Richtlinien im Simulationsmodus aus, um sicherzustellen, dass der Inhalt korrekt bezeichnet wird, bevor die Bezeichnung tatsächlich angewendet wird.
     
     Konfigurationsanweisungen finden Sie unter [Konfigurieren von Richtlinien zum automatischen Bezeichnen für Microsoft Office SharePoint Online, OneDrive und Exchange](#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange) auf dieser Seite.
     
     Speziell für die automatische Bezeichnung von Microsoft Office SharePoint Online und OneDrive gilt:
-    - Office-Dateien für Word, PowerPoint und Excel werden unterstützt. Das Open XML-Format wird unterstützt (z. B. DOCX und XLSX), aber nicht das Microsoft Office 97–2003-Format (z. B. DOC und XLS).
+    - Office-Dateien Word, PowerPoint und Excel werden unterstützt . Das Open XML-Format wird unterstützt (z. B. DOCX und XLSX), aber nicht das Microsoft Office 97–2003-Format (z. B. DOC und XLS).
         - Diese Dateien können automatisch im Ruhezustand mit einer Bezeichnung versehen werden, bevor oder nachdem die Richtlinien für automatische Bezeichnungen erstellt wurden. Beachten Sie, dass Dateien nicht automatisch mit einer Bezeichnung versehen werden können, wenn sie Teil einer offenen Sitzung sind (d. h., wenn die Datei geöffnet ist).
     - Maximal 25.000 automatisch bezeichnete Dateien in Ihrem Mandanten pro Tag.
     - Maximal 10 Richtlinien zum automatischen Bezeichnen pro Mandant, die für jeweils bis zu 10 Websites (SharePoint oder OneDrive) vorgesehen sind.
@@ -67,11 +67,13 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
     - Wenn das Etikett die Verschlüsselung anwendet, ist der [Rechteverwaltungaussteller und Rechteverwaltungbesitzer](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) das Konto, welches die Datei zuletzt geändert hat.
 
     Spezifisch für die automatische Bezeichnung für Exchange gilt:
-    - Im Gegensatz zur manuellen oder automatischen Bezeichnung von Office-Apps werden Office-Anlagen (Word-, Excel- und PowerPoint-Dateien) ebenfalls auf die Bedingungen überprüft, die Sie in der Richtlinie zur automatischen Bezeichnung angeben. Wenn es eine Übereinstimmung gibt, wird die E-Mail-Adresse, aber nicht die Anlage bezeichnet.
+    - Im Gegensatz zum manuellen oder automatischen Bezeichnen von Office-Apps werden Office-Anlagen (Word-, Excel- und PowerPoint-Dateien) ebenfalls auf die Bedingungen überprüft, die Sie in der Richtlinie zum automatischen Bezeichnen angeben. Wenn es eine Übereinstimmung gibt, wird die E-Mail-Adresse, aber nicht die Anlage bezeichnet.
         - Bei diesen Office-Dateien wird das Open XML-Format unterstützt (z. B. DOCX und XLSX), aber nicht das Microsoft Office 97–2003-Format (z. B. DOC und XLS).
     - Wenn Sie über Exchange-Mailflussregeln oder DLP-Richtlinien (Verhinderung von Datenverlust) verfügen, welche die IRM-Verschlüsselung anwenden: Wenn Inhalte durch diese Regeln oder Richtlinien und eine Richtlinie zum automatischen Bezeichnen identifiziert werden, wird die Bezeichnung angewendet. Wenn diese Bezeichnung Verschlüsselung anwendet, werden die IRM-Einstellungen aus den Exchange-E-Mail-Flussregeln oder DLP-Richtlinien ignoriert. Wenn diese Bezeichnung jedoch keine Verschlüsselung anwendet, werden die IRM-Einstellungen aus den E-Mail-Flussregeln oder DLP-Richtlinien zusätzlich zu der Bezeichnung angewendet.
     - E-Mails, die eine IRM-Verschlüsselung ohne Bezeichnung haben, werden durch eine Bezeichnung mit beliebigen Verschlüsselungseinstellungen ersetzt, wenn eine Übereinstimmung durch die Verwendung automatischer Bezeichnung vorliegt.
-    - Eingehende E-Mails werden bezeichnet, wenn eine Übereinstimmung mit den Bedingungen für die automatische Bezeichnung vorliegt. Wenn die Bezeichnung für die Verschlüsselung konfiguriert ist, wird diese Verschlüsselung jedoch nicht angewendet.
+    - Eingehende E-Mails werden bezeichnet, wenn eine Übereinstimmung mit den Bedingungen für automatische Bezeichnungen vorliegt:
+        - Wenn die Bezeichnung jedoch für die [Verschlüsselung](encryption-sensitivity-labels.md) konfiguriert ist, wird diese Verschlüsselung jedoch nicht angewendet.
+        - Wenn die Bezeichnung so konfiguriert ist, dass sie [dynamische Markierungen](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)anwendet, beachten Sie, dass sich dadurch Namen von Personen außerhalb Ihrer Organisation ergeben können.
     - Wenn über die Bezeichnung Verschlüsselung angewendet wird, ist der [Rights Management-Aussteller und -Besitzer](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) jene Person, die diese E-Mail versendet.
     
 
@@ -168,15 +170,15 @@ Wenn Sie es vorziehen, können Sie Ihren Benutzern empfehlen, die Bezeichnung an
 
 ![Option zum Empfehlen einer Vertraulichkeitsbezeichnung](../media/Sensitivity-labels-Recommended-label-option.png)
 
-Im Folgenden finden Sie ein Beispiel für eine Aufforderung des Azure Information Protection-Clients mit einheitlichen Bezeichnungen, wenn Sie eine Bedingung zum Anwenden einer Bezeichnung als empfohlene Aktion konfigurieren, und einen benutzerdefinierten Richtlinientipp. Sie können den Text festlegen, der im Richtlinientipp angezeigt wird.
+Im Folgenden finden Sie ein Beispiel für eine Aufforderung des Azure Information Protection-Clients für einheitliche Bezeichnungen, wenn Sie eine Bedingung zum Anwenden einer Bezeichnung als empfohlene Aktion konfigurieren, und einen benutzerdefinierten Richtlinientipp. Sie können den Text festlegen, der im Richtlinientipp angezeigt wird.
 
 ![Aufforderung zum Anwenden einer empfohlene Bezeichnung](../media/Sensitivity-label-Prompt-for-required-label.png)
 
 ### <a name="when-automatic-or-recommended-labels-are-applied"></a>Anwenden automatischer oder empfohlener Bezeichnungen
 
-Die Implementierung der automatischen und empfohlenen Bezeichnung in Office-Apps hängt davon ab, ob Sie eine in Office integrierte Bezeichnung oder den Azure Information Protection-Client mit einheitlichen Bezeichnungen verwenden. In beiden Fällen gilt jedoch:
+Die Implementierung automatischer und empfohlener Bezeichnungen in Office-Apps hängt davon ab, ob Sie in Office integrierte Bezeichnungen oder den Azure Information Protection-Client für einheitliche Bezeichnungen verwenden. In beiden Fällen gilt jedoch:
 
-- Sie können keine automatische Zuweisung von Bezeichnungen für Dokumente und E-Mails verwenden, die zuvor manuell bezeichnet oder automatisch mit einer höheren Vertraulichkeit gekennzeichnet wurden. Denken Sie daran, dass Sie einem Dokument oder einer E-Mail-Nachricht nur eine einzige Vertraulichkeitsbezeichnung zuweisen können (zusätzlich zu einer einzigen Aufbewahrungsbezeichnung).
+- Sie können keine automatischen Bezeichnungen für Dokumente und E-Mails verwenden, die zuvor manuell bezeichnet oder automatisch mit einer höheren Vertraulichkeit bezeichnet wurden. Denken Sie daran, dass Sie einem Dokument oder einer E-Mail-Nachricht nur eine einzige Vertraulichkeitsbezeichnung zuweisen können (zusätzlich zu einer einzigen Aufbewahrungsbezeichnung).
 
 - Sie können die empfohlenen Bezeichnungen für Dokumente oder E-Mails, die zuvor mit einer höheren Vertraulichkeit gekennzeichnet wurden, nicht verwenden. Wenn der Inhalt bereits mit einer höheren Vertraulichkeit gekennzeichnet ist, wird dem Benutzer die Eingabeaufforderung mit der Empfehlung und dem Richtlinientipp nicht angezeigt.
 
@@ -204,7 +206,7 @@ Vergewissern Sie sich, dass Sie die Voraussetzungen kennen, bevor Sie automatisc
 
 - Simulationsmodus:
     - Die Überwachung von Microsoft 365 muss aktiviert sein. Wenn Sie die Überwachung aktivieren müssen oder sich nicht sicher sind, ob die Überwachung bereits aktiviert ist, lesen Sie [Aktivieren oder Deaktivieren der Überwachungsprotokollsuche](turn-audit-log-search-on-or-off.md).
-    - Um die Dateiinhalte in der Quellansicht anzuzeigen, müssen Sie über die Rolle zur **Inhalts-Explorer-Inhaltsanzeige** verfügen. Globale Administratoren haben diese Rolle nicht standardmäßig. Wenn Sie nicht über diese Berechtigung verfügen, wird der Vorschaubereich nicht angezeigt, wenn Sie ein Element auf der Registerkarte **Übereinstimmende Elemente** auswählen.
+    - Um die Datei- oder E-Mail-Inhalte in der Quellansicht anzuzeigen, müssen Sie über die Rolle zur **Inhalts-Explorer-Inhaltsanzeige** verfügen. Globale Administratoren haben diese Rolle nicht standardmäßig. Wenn Sie nicht über diese Berechtigung verfügen, wird der Vorschaubereich nicht angezeigt, wenn Sie ein Element auf der Registerkarte **Übereinstimmende Elemente** auswählen.
 
 - Automatisches Bezeichnen von Dateien in Microsoft Office SharePoint Online und OneDrive:
     - Sie haben [Vertraulichkeitsbezeichnungen für Office-Dateien in Microsoft Office SharePoint Online und OneDrive aktiviert](sensitivity-labels-sharepoint-onedrive-files.md).

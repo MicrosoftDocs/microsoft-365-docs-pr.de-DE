@@ -19,16 +19,16 @@ ms.collection:
 search.appverid:
 - MET150
 description: Die Microsoft Compliance-Erweiterung erweitert die Überwachung von Dateiaktivitäten und Schutzaktionen auf den Google Chrome-Browser
-ms.openlocfilehash: 38609b6920478085a28c7ec510bc5c9c4229543d
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: c8a5795b3be8b393fd3a934504449bf6db0c2f01
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826256"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113381"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension-preview"></a>Erfahren Sie mehr über das Microsoft Compliance-Erweiterung (Vorschau)
 
-[Verhinderung von Datenverlust am Endpunkt (Endpunkt-DLP)](endpoint-dlp-learn-about.md) erweitert die Aktivitätsüberwachung und die Schutzfunktionen von [Microsoft 365-Verhinderung von Datenverlust](data-loss-prevention-policies.md) auf sensible Elemente auf Windows 10-Geräten. Sobald Geräte in den Microsoft 365 Compliance-Lösungen eingebunden wurden, werden die Informationen zu den Aktionen, die Benutzer mit und an vertraulichen Elementen ausführen, im [Aktivitäten-Explorer](data-classification-activity-explorer.md) angezeigt, und Sie können Schutzmaßnahmen für diese Elemente über [DLP-Richtlinien](create-test-tune-dlp-policy.md) erzwingen.
+[Verhinderung von Datenverlust am Endpunkt (Endpunkt-DLP)](endpoint-dlp-learn-about.md) erweitert die Aktivitätsüberwachung und die Schutzfunktionen von [Microsoft 365-Verhinderung von Datenverlust](dlp-learn-about-dlp.md) auf sensible Elemente auf Windows 10-Geräten. Sobald Geräte in den Microsoft 365 Compliance-Lösungen eingebunden wurden, werden die Informationen zu den Aktionen, die Benutzer mit und an vertraulichen Elementen ausführen, im [Aktivitäten-Explorer](data-classification-activity-explorer.md) angezeigt, und Sie können Schutzmaßnahmen für diese Elemente über [DLP-Richtlinien](create-test-tune-dlp-policy.md) erzwingen.
 
 Sobald die Microsoft Compliance-Erweiterung auf einem Windows 10-Gerät installiert ist, werden Organisationen überwachen können, ob ein Benutzer versucht ein vertrauliches Element auf einen Clouddienst mittels Google Chrome hochzuladen, und sie werden Schutzaktionen mittels des DLP erzwingen können.  
 
@@ -60,7 +60,7 @@ Lesen Sie [Erste Schritte mit der Microsoft Compliance-Erweiterung](dlp-chrome-g
 - [Informationen zu Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust)](endpoint-dlp-learn-about.md)
 - [Erste Schritte mit Microsoft Endpunkt-DLP](endpoint-dlp-getting-started.md)
 - [Nutzung von Microsoft Endpunkt-DLP ](endpoint-dlp-using.md)
-- [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)
+- [Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)
 - [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 - [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/)

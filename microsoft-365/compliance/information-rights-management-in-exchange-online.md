@@ -16,22 +16,22 @@ ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie Exchange Online IRM für die Verwendung des lokalen Active Directory Rights Management Service (AD RMS) konfigurieren, um Ihre Organisationsanforderungen zu erfüllen.
-ms.openlocfilehash: 6a9759fce102c60dd766dd86ba8c9e6d4a02d85b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d98cf5c762cd4dac0cbad6d25a3cc766d5c5310a
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924989"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876274"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>Exchange Online-E-Mailverschlüsselung mit AD RMS
 
-Um Informationsverluste zu verhindern, enthält Exchange Online eine IRM-Funktion (Verwaltung von Informationsrechten), die Online- und Offlineschutz für E-Mails und Anlagen bereitstellt. Sie können Exchange Online IRM so konfigurieren, dass es bei Bedarf den lokalen Active Directory Rights Management Service (AD RMS) verwendet, um Die Anforderungen Ihrer Organisation zu erfüllen. Dies ist nicht die Regel. Wenn Sie keine Anforderung zur Verwendung von AD RMS haben, verwenden Sie stattdessen [die Office 365-Nachrichtenverschlüsselung.](ome.md) 
+Um Informationsverluste zu verhindern, enthält Exchange Online eine IRM-Funktion (Verwaltung von Informationsrechten), die Online- und Offlineschutz für E-Mails und Anlagen bereitstellt. Sie können irm Exchange Online, um bei Bedarf den lokalen Active Directory Rights Management Service (AD RMS) zu verwenden, um Die Anforderungen Ihrer Organisation zu erfüllen. Dies ist nicht die Regel. Wenn Sie keine Anforderung zur Verwendung von AD RMS haben, verwenden Sie [stattdessen Office 365-Nachrichtenverschlüsselung.](ome.md) 
 
 IRM-Schutz kann von Benutzern in Microsoft Outlook oder Outlook im Web und zudem von Administratoren mithilfe von Transportschutzregeln oder Outlook-Schutzregeln angewendet werden. Mithilfe von IRM können Sie und Ihre Benutzer steuern, wer auf vertrauliche Daten in einer E-Mail zugreifen und E-Mails weiterleiten, drucken oder kopieren kann.
   
 ## <a name="changes-to-how-irm-works-with-office-365-message-encryption-ome-and-azure-active-directory"></a>Änderungen an der Funktionsweise von IRM mit Office 365-Nachrichtenverschlüsselung (OME) und Azure Active Directory
 
-Ab September 2017: Wenn Sie die neuen Funktionen von Office 365-Nachrichtenverschlüsselung für Ihre Organisation einrichten, richten Sie auch IRM für die Verwendung mit Azure Rights Management (Azure RMS) ein. Sie richten IRM nicht mehr separat mit Azure RMS ein. Stattdessen arbeiten OME und Rights Management nahtlos zusammen. Ausführliche Informationen über die neuen Funktionen finden Sie in den [Häufig gestellten Fragen zur Office 365-Nachrichtenverschlüsselung](./ome-faq.md). Wenn Sie die neuen OME-Funktionen in Ihrer Organisation verwenden möchten, finden Sie unter [Einrichten von neuen Funktionen für die Office 365-Nachrichtenverschlüsselung, die auf Azure Information Protection aufbauen](./set-up-new-message-encryption-capabilities.md) weitere Informationen dazu.
+Ab September 2017: Wenn Sie die neuen Funktionen von Office 365-Nachrichtenverschlüsselung für Ihre Organisation einrichten, richten Sie auch IRM für die Verwendung mit Azure Rights Management (Azure RMS) ein. Sie richten IRM nicht mehr separat mit Azure RMS ein. Stattdessen arbeiten OME und Rights Management nahtlos zusammen. Ausführliche Informationen über die neuen Funktionen finden Sie in den [Häufig gestellten Fragen zur Office 365-Nachrichtenverschlüsselung](./ome-faq.yml). Wenn Sie die neuen OME-Funktionen in Ihrer Organisation verwenden möchten, finden Sie unter [Einrichten von neuen Funktionen für die Office 365-Nachrichtenverschlüsselung, die auf Azure Information Protection aufbauen](./set-up-new-message-encryption-capabilities.md) weitere Informationen dazu.
   
 ## <a name="how-irm-works-with-exchange-online-and-active-directory-rights-management-services"></a>Funktionsweise von IRM in Exchange Online und Active Directory Rights Management Services
 

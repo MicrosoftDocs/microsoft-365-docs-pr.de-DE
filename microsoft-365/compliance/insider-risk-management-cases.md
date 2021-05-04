@@ -1,6 +1,6 @@
 ---
 title: Fälle des Insiderrisikomanagements
-description: Informationen zu Insider risk management cases in Microsoft 365
+description: Erfahren Sie mehr über Insider risk management cases in Microsoft 365
 keywords: Microsoft 365, Insider-Risikomanagement, Risikomanagement, Compliance
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 1648c648401086b296bd267fc1a9e7b011930e74
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 5b59fb57ebd17050624ce36805558dcd1eef0503
+ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445643"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51939253"
 ---
 # <a name="insider-risk-management-cases"></a>Fälle des Insiderrisikomanagements
 
@@ -28,7 +28,7 @@ Nachdem Sie die Details eines Falls untersucht haben, können Sie maßnahmen:
 - Senden einer Benachrichtigung an den Benutzer
 - Lösen des Falls als gutartig
 - Freigeben des Falls mit Ihrer ServiceNow-Instanz oder mit einem E-Mail-Empfänger
-- Eskalieren des Falls für eine Erweiterte eDiscovery-Untersuchung
+- Eskalieren des Falls für eine Advanced eDiscovery Untersuchung
 
 Eine Übersicht darüber, wie Fälle im Insider Risk Management untersucht und verwaltet werden, finden Sie im Video zu [Insider Risk Management Investigation and Escalation.](https://www.youtube.com/watch?v=UONUSmkRC8s)
 
@@ -47,7 +47,7 @@ In der Fallwarteschlange werden neben dem aktuellen Status der folgenden Fallatt
 - **User**: Der Benutzer für den Fall. Wenn die Anonymisierung für Benutzernamen aktiviert ist, werden anonymisierte Informationen angezeigt.
 - **Time case opened**: Die Zeit, die seit dem Öffnen des Falls vergangen ist.
 - **Richtlinienwarnungen insgesamt:** Die Anzahl der in dem Fall enthaltenen Richtlinien übereinstimmungen. Diese Zahl kann steigen, wenn neue Warnungen zu dem Fall hinzugefügt werden.
-- **Last updated**: The time that has passed since there has been an added case note or change in the case state.
+- **Fall zuletzt aktualisiert:** Die Zeit, die seit dem Hinzufügen einer Fallnotiz oder änderung im Fallstatus vergangen ist.
 - **Last updated by:** The name of the insider risk management analyst or investigator that last updated the case.
 
 ![Dashboard für Insider-Risikomanagementfälle](../media/insider-risk-cases-dashboard.png)
@@ -74,19 +74,22 @@ Wenn Sie einen Fall auswählen, werden die Fall-Verwaltungstool geöffnet. Diese
 
 ### <a name="case-overview"></a>Fallübersicht
 
-Die Registerkarte **Fallübersicht** fasst die Warnungsaktivitäten und den Verlauf der Risikostufe für jeden Fall zusammen. 
+Auf **der Registerkarte Fallübersicht** werden die Falldetails für Risikoanalysten und Ermittler zusammengefasst. Sie enthält die folgenden Informationen im Bereich **Informationen zu diesem Fall.**
 
-- Das **Widget Warnungen** zeigt die Übereinstimmungen der Richtlinie für den Fall an, einschließlich des Status der Warnung, des Schweregrads des Warnungsrisikos und des Erkennens der Warnung. 
-- Das Diagramm **Risikostufenverlauf** zeigt die Risikostufe des entsprechenden Benutzers in den letzten 30 Tagen. Das Liniendiagramm ermöglicht es Analysten und Ermittlern, die Entwicklung des allgemeinen Benutzerrisikos im Laufe der Zeit schnell auf einen Blick zu erfassen. 
-- Das Widget **Inhalt der Risikoaktivität** fasst die Daten- und Inhaltstypen zusammen, die in Fall-Warnungen enthalten sind. Dieses Widget bietet einen Gesamtüberblick über alle Daten und Inhalte, die in diesem Fall gefährdet sind.
+- **Status**: Der aktuelle Status des Falls, entweder Aktiv oder Geschlossen.
+- **Case created on**: The date and time the case was created.
+- **Risikopunktzahl des Benutzers:** Die aktuelle berechnete Risikostufe des Benutzers für den Fall. Diese Bewertung wird alle 24 Stunden berechnet und verwendet Die Bewertung der Warnungsrisiken aus allen aktiven Warnungen, die dem Benutzer zugeordnet sind.
+- **E-Mail:** Der E-Mail-Alias des Benutzers für den Fall.
+- **Organisation oder Abteilung:** Die Organisation oder Abteilung, der der Benutzer zugewiesen ist.
+- **Managername**: Der Name des Vorgesetzten des Benutzers.
+- **Manager-E-Mail:** Der E-Mail-Alias des Vorgesetzten des Benutzers.
 
-Der **Bereich** Falldetails ist auf allen Registerkarten für die Fallverwaltung verfügbar und fasst die Falldetails für Risikoanalysten und Ermittler zusammen. Es umfasst die folgenden Bereiche:
+Die **Registerkarte Fallübersicht** enthält außerdem einen **Abschnitt "Alerts",** der die folgenden Informationen zu Richtlinienübersingwarnungen enthält, die dem Fall zugeordnet sind:
 
-- **Fallname**: Der Name des Falls, dem eine automatisch generierte Fallsequenznummer vorangestellt ist, und der Name des Risikos, das der Richtlinienvorlage zugeordnet ist, mit der die erste bestätigte Warnung entspricht. 
-- **Fallstatus**: Der aktuelle Status des Falls, entweder *Active* oder *Closed*.
-- **Risikopunktzahl des Benutzers:** Die aktuelle berechnete Risikostufe des Benutzers für den Fall. Dieser Wert wird alle 24 Stunden berechnet, und bezieht die Risikobewertungen aller aktiver Warnungen für den betreffenden Benutzer in die Berechnung mit ein.
-- **Warnungen bestätigt**: Liste der Warnungen für den Benutzer, die für den Fall bestätigt wurden.
-- **Zugehöriger Inhalt:** Liste der Inhalte, sortiert nach Inhaltsquellen und -typen. Beispielsweise würden Sie für gefährdete Inhalte in SharePoint Online eine Liste mit Ordner- oder Dateinamen sehen, die der Risikoaktivität für Warnungen im entsprechenden Fall zugeordnet sind.
+- **Richtlinien übereinstimmungen:** Der Name der Insider-Risikomanagementrichtlinie, die den Übereinstimmungswarnungen für Benutzeraktivitäten zugeordnet ist.
+- **Status**: Status der Warnung.
+- **Schweregrad**: Schweregrad der Warnung.
+- **Erkannte Zeit:** Die Zeit, die seit der Benachrichtigung vergangen ist.
 
 ![Details zu Insider risk management case](../media/insider-risk-case-details.png)
 
@@ -148,7 +151,7 @@ Weitere Informationen zum Aktivitäts-Explorer finden Sie im [Artikel insider ri
 
 ### <a name="content-explorer"></a>Inhaltsexplorer
 
-Die Registerkarte **Inhaltsexplorer** ermöglicht es Risikoanalysten und Ermittlern, Kopien aller einzelnen Dateien und E-Mail-Nachrichten zu überprüfen, die mit der Risiko-Warnung verknüpft sind. Wenn beispielsweise eine Warnung erstellt wird, wenn ein Benutzer Hunderte von Dateien aus SharePoint Online herunterläutet und die Aktivität eine Richtlinienwarnung auslöst, werden alle heruntergeladenen Dateien für die Warnung erfasst und aus ursprünglichen Speicherquellen in den Fall des Insiderrisikomanagements kopiert.
+Die Registerkarte **Inhaltsexplorer** ermöglicht es Risikoanalysten und Ermittlern, Kopien aller einzelnen Dateien und E-Mail-Nachrichten zu überprüfen, die mit der Risiko-Warnung verknüpft sind. Wenn beispielsweise eine Warnung erstellt wird, wenn ein Benutzer Hunderte von Dateien von SharePoint Online herunterläutet und die Aktivität eine Richtlinienwarnung auslöst, werden alle heruntergeladenen Dateien für die Warnung erfasst und aus ursprünglichen Speicherquellen in den Fall für das Insiderrisikomanagement kopiert.
 
 Der Inhalts-Explorer ist ein leistungsstarkes Tool mit einfachen und erweiterten Such- und Filterfunktionen. Weitere Informationen zur Verwendung des Inhalts-Explorers finden Sie unter [Insider risk management Content explorer](insider-risk-management-content-explorer.md).
 
@@ -162,14 +165,14 @@ Das Dashboard für Fallnotizen zeigt Notizen des Benutzers an, der die Notiz ers
 
 So fügen Sie einem Fall eine Notiz hinzu:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Fälle** aus.
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Fälle** aus.
 2. Wählen Sie einen Fall aus, und wählen Sie dann die Registerkarte **Fallnotizen** aus.
 3. Wählen **Sie Fallnotiz hinzufügen aus.**
 4. Geben Sie **im Dialogfeld Fallnotiz** hinzufügen Ihre Notiz für den Fall ein. Wählen **Sie Speichern** aus, um die Notiz dem Fall hinzuzufügen, oder wählen Sie **Abbrechen** schließen aus, ohne die Notiz im Fall zu speichern.
 
 ### <a name="contributors"></a>Mitwirkende
 
-Auf der Registerkarte **Mitwirkende** können Risikoanalysten und Ermittler weitere Mitwirkende zu dem Fall hinzufügen. Standardmäßig werden alle Benutzer, denen die Rollen **Insider Risk Management Analysts** und **Insider Risk Management Investigators** zugewiesen sind, als Mitwirkende für jeden aktiven und geschlossenen Fall aufgeführt. Nur Benutzer, denen die **Rolle Insider Risk Management Investigators** zugewiesen ist, verfügen über die Berechtigung zum Anzeigen von Dateien und Nachrichten im Inhalts-Explorer.
+Auf der Registerkarte **Mitwirkende** können Risikoanalysten und Ermittler weitere Mitwirkende zu dem Fall hinzufügen. Standardmäßig werden alle Benutzer, denen die **Rollen Insider Risk Management Analysts** und Insider Risk Management **Investigators** zugewiesen sind, als Mitwirkende für jeden aktiven und geschlossenen Fall aufgeführt. Nur Benutzer, denen die **Rolle Insider Risk Management Investigators** zugewiesen ist, verfügen über die Berechtigung zum Anzeigen von Dateien und Nachrichten im Inhalts-Explorer.
 
 Temporärer Zugriff auf einen Fall kann gewährt werden, indem ein Benutzer als Mitwirkender hinzugefügt wird. Mitwirkende haben alle Fallverwaltungssteuerelemente für den jeweiligen Fall, mit Ausnahme von:
 
@@ -179,15 +182,15 @@ Temporärer Zugriff auf einen Fall kann gewährt werden, indem ein Benutzer als 
 
 So fügen Sie einem Fall einen Mitwirkenden hinzu:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Fälle** aus.
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Fälle** aus.
 2. Wählen Sie einen Fall aus, und wählen Sie dann die Registerkarte **Mitwirkende** aus.
 3. Wählen **Sie Mitwirkender hinzufügen aus.**
-4. Geben Sie **im** Dialogfeld Mitwirkender hinzufügen den Namen des Benutzers ein, den Sie hinzufügen möchten, und wählen Sie dann den Benutzer aus der Vorgeschlagenen Benutzerliste aus. Diese Liste wird aus dem Azure Active Directory Ihres Mandantenabonnements generiert.
+4. Geben Sie **im** Dialogfeld Mitwirkender hinzufügen den Namen des Benutzers ein, den Sie hinzufügen möchten, und wählen Sie dann den Benutzer aus der Vorgeschlagenen Benutzerliste aus. Diese Liste wird aus der Azure Active Directory Ihres Mandantenabonnements generiert.
 5. Wählen **Sie Hinzufügen** aus, um den Benutzer als Mitwirkenden hinzuzufügen, oder wählen Sie **Abbrechen** schließen das Dialogfeld aus, ohne den Benutzer als Mitwirkenden hinzuzufügen.
 
 ## <a name="case-actions"></a>Fallmaßnahmen
 
-Risikoanalysten und Ermittler können in einem Fall in einer von mehreren Methoden Maßnahmen ergreifen, je nach Schweregrad des Falls, Risikoverlauf des Benutzers und Risikorichtlinien Ihrer Organisation. In einigen Situationen müssen Sie möglicherweise einen Fall an einen Benutzer oder eine Datenuntersuchung eskalieren, um mit anderen Bereichen Ihrer Organisation zusammenzuarbeiten und tiefer in Risikoaktivitäten zu gehen. Das Insider-Risikomanagement ist eng in andere Microsoft 365-Compliancelösungen integriert, um Ihnen bei der End-to-End-Lösungsverwaltung zu helfen.
+Risikoanalysten und Ermittler können in einem Fall in einer von mehreren Methoden Maßnahmen ergreifen, je nach Schweregrad des Falls, Risikoverlauf des Benutzers und Risikorichtlinien Ihrer Organisation. In einigen Situationen müssen Sie möglicherweise einen Fall an einen Benutzer oder eine Datenuntersuchung eskalieren, um mit anderen Bereichen Ihrer Organisation zusammenzuarbeiten und tiefer in Risikoaktivitäten zu gehen. Das Insider-Risikomanagement ist eng in andere Compliancelösungen Microsoft 365 integriert, um Ihnen bei der End-to-End-Lösungsverwaltung zu helfen.
 
 ### <a name="send-email-notice"></a>Senden von E-Mail-Benachrichtigungen
 
@@ -197,7 +200,7 @@ Es ist wichtig zu bedenken, dass das Senden einer E-Mail-Nachricht an einen Benu
 
 So senden Sie eine Benachrichtigung an den Benutzer, der einem Fall zugewiesen ist:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Fälle** aus.
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Fälle** aus.
 2. Wählen Sie einen Fall aus, und wählen **Sie** dann auf der Symbolleiste der Fallaktion die Schaltfläche E-Mail-Benachrichtigung senden aus.
 3. Wählen Sie **im Dialogfeld E-Mail-Benachrichtigung senden** das **Dropdownsteuerelement** Eine Benachrichtigungsvorlage auswählen aus, um die Benachrichtigungsvorlage für den Hinweis auszuwählen. Diese Auswahl füllt die anderen Felder im Hinweis vorab aus.
 4. Überprüfen Sie die Benachrichtigungsfelder, und aktualisieren Sie sie entsprechend. Die hier eingegebenen Werte überschreiben die Werte in der Vorlage.
@@ -209,40 +212,40 @@ Eskalieren Sie den Fall für die Benutzeruntersuchung in Situationen, in denen e
 
 So eskalieren Sie einen Fall an eine Benutzeruntersuchung:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Fälle** aus.
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Fälle** aus.
 2. Wählen Sie einen Fall aus, und wählen Sie dann die Schaltfläche **Eskalieren** für Untersuchung auf der Symbolleiste der Fallaktion aus.
 3. Geben Sie **im Dialogfeld Eskalieren für Untersuchung** einen Namen für die neue Benutzeruntersuchung ein. Geben Sie bei Bedarf Notizen zu dem Fall ein, und wählen Sie **Eskalieren aus.**
 4. Überprüfen Sie die Benachrichtigungsfelder, und aktualisieren Sie sie entsprechend. Die hier eingegebenen Werte überschreiben die Werte in der Vorlage.
 5. Wählen **Sie Bestätigen** aus, um den Benutzeruntersuchungsfall zu erstellen, oder wählen Sie **Abbrechen** aus, um das Dialogfeld zu schließen, ohne einen neuen Benutzeruntersuchungsfall zu erstellen.
 
-Nachdem der Fall des Insider-Risikomanagements zu einem neuen Benutzeruntersuchungsfall eskaliert wurde, können Sie den neuen Fall im **Bereich eDiscovery** Advanced im  >   Microsoft 365 Compliance Center überprüfen.
+Nachdem der Fall des Insiderrisikomanagements zu einem neuen Fall für die Benutzeruntersuchung eskaliert wurde, können Sie den neuen Fall im **Bereich eDiscovery** Advanced im Microsoft 365  >   Compliance Center überprüfen.
 
-### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Ausführen automatisierter Aufgaben mit Power Automate-Flüssen für den Fall
+### <a name="run-automated-tasks-with-power-automate-flows-for-the-case"></a>Ausführen automatisierter Aufgaben mit Power Automate für den Fall
 
-Mithilfe empfohlener Power Automate-Flüsse können Risikoermittler und Analysten schnell Maßnahmen ergreifen, um:
+Mithilfe empfohlener Power Automate können Risikoermittler und Analysten schnell Maßnahmen ergreifen, um:
 
 - Anfordern von Informationen von Personal oder Unternehmen zu einem Benutzer in einem Insiderrisikofall
 - Benachrichtigen des Managers, wenn ein Benutzer über eine Benachrichtigung über Insiderrisiken verfügt
-- Hinzufügen einer Kalendererinnerung zum Folgen eines Insiderrisikofalles
 - Erstellen eines Datensatzes für einen Insider-Risikomanagementfall in ServiceNow
+- Benachrichtigen von Benutzern, wenn sie einer Insiderrisikorichtlinie hinzugefügt werden
 
-So führen, verwalten oder erstellen Sie Power Automate-Flüsse für einen Insider-Risikomanagementfall:
+So führen, verwalten oder erstellen Power Automate für einen Insider-Risikomanagementfall:
 
 1. Wählen **Sie automatisieren** auf der Symbolleiste für Fallaktion aus. 
-2. Wählen Sie den zu ausführende Power Automate-Fluss aus, und wählen Sie **dann Flow ausführen aus.** 
+2. Wählen Sie den Power Automate, der ausgeführt werden soll, und wählen Sie **dann Fluss ausführen aus.** 
 3. Nachdem der Fluss abgeschlossen ist, wählen Sie **Fertig aus.**
 
-Weitere Informationen zu Power Automate-Flüssen für insider risk management finden Sie unter [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview).
+Weitere Informationen zu Power Automate Abläufen für insider risk management finden Sie unter [Erste Schritte mit Insider-Risikomanagement-Einstellungen](insider-risk-management-settings.md#power-automate-flows-preview).
 
-### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Anzeigen oder Erstellen eines Microsoft Teams-Teams für den Fall
+### <a name="view-or-create-a-microsoft-teams-team-for-the-case"></a>Anzeigen oder Erstellen eines Microsoft Teams für den Fall
 
-Wenn die Microsoft Teams-Integration für insider risk management in den Einstellungen aktiviert ist, wird jedes Mal, wenn eine Warnung bestätigt und ein Fall erstellt wird, automatisch ein Microsoft Teams-Team erstellt. Risikoermittler und Analysten können Microsoft Teams schnell öffnen und direkt zum Team für einen Fall navigieren, indem Sie **Microsoft Teams-Team** anzeigen auf der Symbolleiste für Fallaktion auswählen.
+Wenn Microsoft Teams integration für insider risk management in einstellungen aktiviert ist, wird automatisch ein Microsoft Teams-Team erstellt, wenn eine Warnung bestätigt wird und ein Fall erstellt wird. Risikoermittler und Analysten können schnell Microsoft Teams öffnen und direkt zum Team für einen Fall navigieren, indem Sie **Microsoft Teams** Team anzeigen auf der Symbolleiste für Fallaktion auswählen.
 
-Bei Fällen, die vor der Aktivierung der Microsoft Team-Integration geöffnet wurden, können Risikoermittler und Analysten ein neues Microsoft Teams-Team für einen Fall erstellen, indem Sie **Microsoft Teams-Team** erstellen auf der Symbolleiste für Fallaktion auswählen.
+Bei Fällen, die vor der Aktivierung der Microsoft Team-Integration geöffnet wurden, können Risikoermittler und Analysten ein neues Microsoft Teams-Team für einen Fall erstellen, indem Sie auf der Symbolleiste **für** Fallaktion die Option Microsoft Teams-Team erstellen auswählen.
 
 Wenn ein Fall aufgelöst wird, wird das zugeordnete Microsoft Team automatisch archiviert (ausgeblendet und schreibgeschützt).
 
-Weitere Informationen zu Microsoft Teams for Insider Risk Management finden Sie unter [Getting started with insider risk management settings](insider-risk-management-settings.md#microsoft-teams-preview).
+Weitere Informationen zu Microsoft Teams insider risk management finden Sie unter [Getting started with insider risk management settings](insider-risk-management-settings.md#microsoft-teams-preview).
 
 ### <a name="resolve-the-case"></a>Auflösen des Falls
 
@@ -253,7 +256,7 @@ Nachdem Risikoanalysten und Ermittler ihre Überprüfung und Untersuchung abgesc
 
 So lösen Sie einen Fall auf:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Fälle** aus.
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Fälle** aus.
 2. Wählen Sie einen Fall aus, und wählen Sie dann die Schaltfläche **Fall** auflösen auf der Symbolleiste der Fallaktion aus.
 3. Wählen Sie **im Dialogfeld** Fall auflösen das **Dropdownsteuerelement Auflösen als** aus, um die Lösungsklassifikation für den Fall auszuwählen. Die Optionen sind **Benign oder** **Confirmed policy violation**.
 4. Geben Sie **im Dialogfeld Fall** auflösen die Gründe für die Lösungsklassifizierung in das Textfeld Aktion **ergriffen** ein.

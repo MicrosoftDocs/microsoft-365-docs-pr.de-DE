@@ -12,12 +12,12 @@ ms.service: exchange-online
 ms.collection: M365-security-compliance
 localization_priority: Normal
 description: Information-Worker in Ihrer Organisation verarbeiten im Lauf eines Arbeitstags viele Arten von vertraulichen Informationen. Dokumentfingerabdrücke erleichtern Ihnen den Schutz dieser Informationen durch Identifikation von Standardformularen, die in Ihrer gesamten Organisation verwendet werden. In diesem Thema werden die Konzepte der Dokumentfingerabdrücke und das Erstellen eines Dokuments mithilfe von PowerShell beschrieben.
-ms.openlocfilehash: 1542b956d0a1f662e059ca59ea346a8afc439c83
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 392b42e779de249dddc0acb4c7c757a009f9f743
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918501"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086738"
 ---
 # <a name="document-fingerprinting"></a>Dokumentfingerabdrücke
 
@@ -39,13 +39,13 @@ Ideal wäre es, wenn es in Ihrer Organisation bereits eine etablierte Routine be
 Wahrscheinlich haben Sie schon erraten, dass sich auf den Dokumenten keine echten Fingerabdrücke befinden - aber der Name erklärt sehr gut die Funktion. Genauso, wie der Fingerabdruck eines Menschen einzigartige Muster hat, haben Dokumente eine einzigartige Wortstruktur. Wenn Sie eine Datei hochladen, identifiziert DLP das eindeutige Wortmuster im Dokument, erstellt einen Dokumentfingerabdruck basierend auf diesem Muster und verwendet diesen Dokumentfingerabdruck, um ausgehende Dokumente zu erkennen, die dasselbe Muster enthalten. Aus diesem Grund werden die effektivsten Dokumentfingerabdrücke durch Hochladen von Formularen oder Vorlagen erstellt. Jede Person, die ein Formular ausfüllt, verwendet denselben Originalsatz von Wörtern und fügt dann ihre eigenen Wörter in das Dokument ein. Solange das ausgehende Dokument nicht kennwortgeschützt ist und den gesamten Text aus dem ursprünglichen Formular enthält, kann DLP bestimmen, ob das Dokument dem Dokumentfingerabdruck entspricht.
 
 > [!IMPORTANT]
-> Derzeit kann DLP die Dokumentfingerabdrücke nur als Erkennungsmethode in Exchange online verwenden.
+> Derzeit kann DLP die Dokumentfingerabdrücke als Erkennungsmethode nur in Exchange verwenden.
 
 Im folgenden Beispiel wird gezeigt, was passiert, wenn Sie einen Dokumentfingerabdruck auf Grundlage einer Patentvorlage erstellen. Sie können aber auch jedes andere Formular dafür verwenden.
   
 ### <a name="example-of-a-patent-document-matching-a-document-fingerprint-of-a-patent-template"></a>Beispiel für ein Patentdokument, das zum Fingerabdruck einer Patentvorlage passt
 
-![Document-Fingerprinting-diagram.png](../media/Document-Fingerprinting-diagram.png)
+![Diagramm der Dokumentfingerabdrücke.](../media/Document-Fingerprinting-diagram.png)
   
 Die Patentvorlage enthält die leeren Felder "Patenttitel", "Inventors" und "Beschreibung" sowie Beschreibungen für jedes dieser Felder– das ist das Wortmuster. Wenn Sie die ursprüngliche Patentvorlage hochladen, wird sie in einem der unterstützten Dateitypen und im Nur-Text-Zustand angezeigt. DLP konvertiert dieses Wortmuster in einen Dokumentfingerabdruck, eine kleine #A0 mit einem eindeutigen Hashwert, der den ursprünglichen Text darstellt, und der Fingerabdruck wird als Datenklassifizierung in Active Directory gespeichert. (Als Sicherheitsmaßnahme wird das ursprüngliche Dokument selbst nicht im Dienst gespeichert; nur der Hashwert wird gespeichert, und das ursprüngliche Dokument kann nicht aus dem Hashwert rekonstruiert werden.) Der Patentfingerabdruck wird dann zu einem vertraulichen Informationstyp, den Sie einer DLP-Richtlinie zuordnen können. Nachdem Sie den Fingerabdruck einer DLP-Richtlinie zugeordnet haben, erkennt DLP ausgehende E-Mails, die Dokumente enthalten, die mit dem Patentfingerabdruck übereinstimmen, und behandelt diese gemäß der Richtlinie Ihrer Organisation. 
 
@@ -62,10 +62,11 @@ Dokumentfingerabdrücke erkennen in den folgenden Fällen keine vertraulichen In
 - Kennwortgeschützte Dateien
 - Dateien, die nur Bilder enthalten
 - Dokumente, die nicht den gesamten Text aus dem Originalformular enthalten, aus dem der Dokumentfingerabdruck erstellt wurde
+- Dateien mit mehr als 10 MB
 
 ## <a name="use-powershell-to-create-a-classification-rule-package-based-on-document-fingerprinting"></a>Verwenden von PowerShell zum Erstellen eines Klassifizierungsregelpakets auf der Grundlage von Dokumentfingerabdrücken
 
-Beachten Sie, dass Sie derzeit einen Dokumentfingerabdruck nur mithilfe von PowerShell im Security &amp; Compliance Center erstellen können. Informationen zum Herstellen einer Verbindung finden Sie [unter Connect to Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+Beachten Sie, dass Sie derzeit einen Dokumentfingerabdruck nur mithilfe von PowerShell im Security &amp; Compliance Center erstellen können. Informationen zum Herstellen einer Verbindung [finden Verbinden mit Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 DLP verwendet Klassifizierungsregelpakete, um vertrauliche Inhalte zu erkennen. Verwenden Sie die **Cmdlets New-DlpFingerprint** und **New-DlpSensitiveInformationType,** um ein Klassifizierungsregelpaket basierend auf einem Dokumentfingerabdruck zu erstellen. Da die Ergebnisse von **New-DlpFingerprint** nicht außerhalb der Datenklassifizierungsregel gespeichert werden, führen Sie **New-DlpFingerprint** und **New-DlpSensitiveInformationType** oder **Set-DlpSensitiveInformationType** immer in derselben PowerShell-Sitzung aus. Im folgenden Beispiel wird ein neuer Dokumentfingerabdruck basierend auf der Datei "C:\Eigene Dateien\Contoso Employee Template.docx" erstellt. Sie speichern den neuen Fingerabdruck als Variable, damit Sie ihn mit dem Cmdlet **New-DlpSensitiveInformationType** in derselben PowerShell-Sitzung verwenden können.
   
@@ -90,7 +91,7 @@ Fügen Sie schließlich das Datenklassifizierungsregelpaket "Contoso Customer Co
 New-DlpComplianceRule -Name "ContosoConfidentialRule" -Policy "ConfidentialPolicy" -ContentContainsSensitiveInformation @{Name="Contoso Customer Confidential"} -BlockAccess $True
 ```
 
-Sie können das Datenklassifizierungsregelpaket auch in Nachrichtenflussregeln in Exchange Online verwenden, wie im folgenden Beispiel gezeigt. Zum Ausführen dieses Befehls müssen Sie zunächst eine Verbindung [mit Exchange Online PowerShell herstellen.](/powershell/exchange/connect-to-exchange-online-powershell) Beachten Sie außerdem, dass die Synchronisierung des Regelpakets vom Security Compliance Center mit dem &amp; Exchange Admin Center dauert.
+Sie können das Datenklassifizierungsregelpaket auch in Nachrichtenflussregeln in Exchange Online verwenden, wie im folgenden Beispiel gezeigt. Zum Ausführen dieses Befehls müssen Sie zunächst [Verbinden powerShell Exchange Online ausführen.](/powershell/exchange/connect-to-exchange-online-powershell) Beachten Sie außerdem, dass die Synchronisierung des Regelpakets vom Security Compliance Center mit dem Exchange &amp; dauert.
   
 ```powershell
 New-TransportRule -Name "Notify :External Recipient Contoso confidential" -NotifySender NotifyOnly -Mode Enforce -SentToScope NotInOrganization -MessageContainsDataClassification @{Name=" Contoso Customer Confidential"}

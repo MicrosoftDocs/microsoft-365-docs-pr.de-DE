@@ -1,5 +1,5 @@
 ---
-title: Benachrichtigungen für DLP-Richtlinien konfigurieren und anzeigen (Preview)
+title: Konfigurieren und Anzeigen von Warnungen für Richtlinien zur Verhinderung von Datenverlust
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,23 +19,25 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Erfahren Sie, wie Sie Warnungen für DLP-Richtlinien definieren und verwalten.
-ms.openlocfilehash: 0594cee5208049aef16dee6fa03954faae2a1cdd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Erfahren Sie, wie Sie Warnungen für Richtlinien zur Verhinderung von Datenverlust definieren und verwalten.
+ms.openlocfilehash: ee04f6080edcde86dc39c7f4aa43130223fee8bf
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917861"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51750037"
 ---
-# <a name="configure-and-view-alerts-for-dlp-polices-preview"></a>Konfigurieren und Anzeigen von Warnungen für DLP-Richtlinien (Vorschau)
+# <a name="configure-and-view-alerts-for-data-loss-prevention-polices"></a>Konfigurieren und Anzeigen von Warnungen für Die Verhinderung von Datenverlust
 
-In diesem Artikel erfahren Sie, wie Sie umfassende Warnungsrichtlinien definieren, die mit Ihren Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) verknüpft sind. Sie erfahren, wie Sie das neue DLP-Warnungsverwaltungsdashboard im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) verwenden, um Warnungen, Ereignisse und zugehörige Metadaten für Verstöße gegen DLP-Richtlinien anzuzeigen.
+DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) können Schutzmaßnahmen ergreifen, um die unbeabsichtigte Freigabe vertraulicher Elemente zu verhindern. Wenn eine Aktion für ein vertrauliches Element ergriffen wird, können Sie benachrichtigt werden, indem Sie Warnungen für DLP konfigurieren. In diesem Artikel erfahren Sie, wie Sie umfassende Warnungsrichtlinien definieren, die mit Ihren Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) verknüpft sind. Sie erfahren, wie Sie das neue DLP-Warnungsverwaltungsdashboard im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) verwenden, um Warnungen, Ereignisse und zugehörige Metadaten für Verstöße gegen DLP-Richtlinien anzuzeigen.
+
+<!-- LEFT OFF HERE-->
 
 ## <a name="features"></a>Features
 
-Die folgenden Features sind Teil dieser Vorschau:
+Dazu gehören die folgenden Features:
 
--   **DLP-Dashboard** für die Warnungsverwaltung: Im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)zeigt dieses Dashboard Warnungen für DLP-Richtlinien an, die für die folgenden Arbeitsauslastungen erzwungen werden:
+-   **DLP Alert Management Dashboard**: Im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)zeigt dieses Dashboard Warnungen für DLP-Richtlinien an, die für die folgenden Arbeitsauslastungen erzwungen werden:
 
     -   Exchange
     -   SharePoint
@@ -54,9 +56,9 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie über die erforderlichen Voraus
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>Lizenzierung für das DLP-Warnungsverwaltungsdashboard
 
-Alle berechtigten Mandanten für Office 365 DLP können auf das neue DLP-Warnungsverwaltungsdashboard zugreifen. Für die ersten Schritte sollten Sie für Office 365 DLP für Exchange Online, SharePoint Online und OneDrive for Business berechtigt sein. Weitere Informationen zu den Lizenzierungsanforderungen für Office 365 DLP finden Sie unter Welche Lizenzen bieten die Rechte für einen Benutzer, von dem [Dienst zu profitieren?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
+Alle berechtigten Mandanten für Office 365 DLP können auf das neue DLP-Warnungsverwaltungsdashboard zugreifen. Für die ersten Schritte sollten Sie berechtigt sein, Office 365 DLP für Exchange Online, SharePoint Online und OneDrive for Business. Weitere Informationen zu den Lizenzierungsanforderungen für Office 365 DLP finden Sie unter Welche Lizenzen bieten die Rechte für einen Benutzer, von dem Dienst [zu profitieren?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
 
-Kunden, die an der öffentlichen [Endpoint DLP-Vorschau](./endpoint-dlp-learn-about.md?view=o365-worldwide) teilnehmen oder für [Teams DLP](./dlp-microsoft-teams.md?view=o365-worldwide) berechtigt sind, werden ihre DLP-Richtlinienwarnungen und Teams -DLP-Richtlinienwarnungen im DLP-Warnungsverwaltungsdashboard angezeigt.
+Kunden, die [Endpoint DLP](endpoint-dlp-learn-about.md) verwenden, die für Teams [DLP](dlp-microsoft-teams.md) berechtigt sind, sehen ihre DLP-Richtlinienwarnungen für Endpunkte und Teams im DLP-Warnungsverwaltungsdashboard.
 
 ### <a name="licensing-for-alert-configuration-options"></a>Lizenzierung für Warnungskonfigurationsoptionen
 
@@ -99,7 +101,7 @@ Wenn Sie für [](#licensing-for-alert-configuration-options)Konfigurationsoption
 
 So arbeiten Sie mit dem DLP-Warnungsverwaltungsdashboard:
 
-1.  Wechseln Sie [im Microsoft 365 Compliance Center](https://www.compliance.microsoft.com)zu Verhinderung von **Datenverlust.**
+1.  Wechseln Sie [Microsoft 365 Compliance Center](https://www.compliance.microsoft.com)zu Verhinderung von **Datenverlust.**
 
 2.  Wählen Sie die **Registerkarte Warnungen** aus, um das DLP-Benachrichtigungsdashboard anzuzeigen.
 
@@ -121,16 +123,16 @@ So arbeiten Sie mit dem DLP-Warnungsverwaltungsdashboard:
     |  | Benutzer                          | Benutzer, der die DLP-Verletzung verursacht hat                                          | Alle Ereignisse                               |
     |                   | Hostname                      | Hostname des Computers, auf dem die DLP-Verletzung erkannt wurde              | Geräteereignisse                           |
     |                   | IP-Adresse                    | IP-Adresse des Computers                                                  | Geräteereignisse                           |
-    |                   | Dateipfad                     | Absoluter Pfad der Datei, die an der Verletzung beteiligt ist                        | SharePoint-, OneDrive- und #A0 |
+    |                   | Dateipfad                     | Absoluter Pfad der Datei, die an der Verletzung beteiligt ist                        | SharePoint-, OneDrive- und Geräteereignisse |
     |                   | E-Mail-Empfänger              | Empfänger der E-Mails, die gegen die DLP-Richtlinie verstoßen haben                       | Exchange-Ereignisse                          |
     |                   | E-Mail-Betreff                 | Betreff der E-Mail, die gegen die DLP-Richtlinie verstoßen hat                          | Exchange-Ereignisse                          |
     |                   | E-Mail-Anlagen             | Namen der Anlagen in der E-Mail, die gegen die DLP-Richtlinie verstoßen haben         | Exchange-Ereignisse                          |
-    |                   | Websitebesitzer                    | Name des Websitebesitzers                                                     | #A0 und #A1           |
-    |                   | Website-URL                      | Vollständige URL der SharePoint- oder #A0                                | #A0 und #A1           |
-    |                   | Datei erstellt                  | Zeitpunkt der Dateierstellung                                                      | #A0 und #A1           |
-    |                   | Zuletzt geänderte Datei            | Zeitpunkt der letzten Änderung der Datei                                  | #A0 und #A1           |
-    |                   | Dateigröße                     | Größe der Datei                                                           | #A0 und #A1           |
-    |                   | Dateibesitzer                    | Besitzer der Datei                                                          | #A0 und #A1           |
+    |                   | Websitebesitzer                    | Name des Websitebesitzers                                                     | SharePoint und OneDrive Ereignisse           |
+    |                   | Website-URL                      | Vollständige URL der SharePoint oder OneDrive Website                                | SharePoint und OneDrive Ereignisse           |
+    |                   | Datei erstellt                  | Zeitpunkt der Dateierstellung                                                      | SharePoint und OneDrive Ereignisse           |
+    |                   | Zuletzt geänderte Datei            | Zeitpunkt der letzten Änderung der Datei                                  | SharePoint und OneDrive Ereignisse           |
+    |                   | Dateigröße                     | Größe der Datei                                                           | SharePoint und OneDrive Ereignisse           |
+    |                   | Dateibesitzer                    | Besitzer der Datei                                                          | SharePoint und OneDrive Ereignisse           |
     |*Richtliniendetails*||
     |     | Übereinstimmung der DLP-Richtlinie            | Name der übereinstimmende DLP-Richtlinie                                    | Alle Ereignisse                               |
     |                   | Regel wurde übereinstimmend                  | Name der DLP-Regel in der übereinstimmende DLP-Richtlinie                    | Alle Ereignisse                               |

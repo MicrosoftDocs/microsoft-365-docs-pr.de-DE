@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: 'Eine Anforderung für alle Microsoft Information Protection-Lösungen: Erstellen, Konfigurieren und Veröffentlichen Sie Vertraulichkeitsbezeichnungen, um die Dokumente und E-Mails Ihres Unternehmens zu klassifizieren und zu schützen.'
-ms.openlocfilehash: 34cbea7199ed50de8e65a48f8087e6475fb41a50
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 'Eine Anforderung für alle Microsoft Information Protection-Lösungen: Erstellen, Konfigurieren und Veröffentlichen Sie Vertraulichkeitsbezeichnungen, um die Daten Ihres Unternehmens zu klassifizieren und zu schützen.'
+ms.openlocfilehash: c34025d2b68eb0ee179c98ce9c97a59193f782e3
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926643"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994952"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Alle Microsoft Information Protection-Lösungen (gelegentlich als MIP abgekürzt) werden mithilfe von [Vertraulichkeitsbezeichnungen](sensitivity-labels.md) implementiert. Um diese Bezeichnungen zu erstellen und zu veröffentlichen, navigieren Sie zu Ihrem Admin Center für Bezeichnungen, z. B. zum [Microsoft 365 Compliance Center](https://compliance.microsoft.com/). Sie können auch das Microsoft 365 Security Center oder das Security & Compliance Center verwenden.
+Alle Microsoft Information Protection-Lösungen (gelegentlich als MIP abgekürzt) werden mithilfe von [Vertraulichkeitsbezeichnungen](sensitivity-labels.md) implementiert. Um diese Bezeichnungen zu erstellen und zu veröffentlichen, navigieren Sie zum [Microsoft 365 Compliance Center](https://compliance.microsoft.com/). Sie können auch das ältere Portal (Office 365 Security & Compliance Center) verwenden.
 
 Erstellen und konfigurieren Sie zunächst die Vertraulichkeitsbezeichnungen, die Sie für Apps und andere Dienste zur Verfügung stellen möchten, zum Beispiel die Bezeichnungen, die Benutzer in Office-Apps sehen und anwenden sollen. 
 
@@ -46,9 +46,6 @@ Der globale Administrator für Ihre Organisation verfügt über vollständige Be
         - **Lösungen** > **Informationsschutz**
         
         Wenn diese Option nicht sofort angezeigt wird, wählen Sie zunächst **Alle anzeigen** aus. 
-    
-    - Microsoft 365 Security Center: 
-        - **Klassifizierung** > **Vertraulichkeitsbezeichnungen**
     
     - Security & Compliance Center:
         - **Klassifizierung** > **Vertraulichkeitsbezeichnungen**
@@ -144,9 +141,6 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
         
         Wenn diese Option nicht sofort angezeigt wird, wählen Sie zunächst **Alle anzeigen** aus. 
     
-    - Microsoft 365 Security Center: 
-        - **Klassifizierung** > **Vertraulichkeitsbezeichnungen**
-    
     - Security & Compliance Center:
         - **Klassifizierung** > **Vertraulichkeitsbezeichnungen**
 
@@ -186,13 +180,13 @@ Um eine vorhandene Bezeichnungsrichtlinie zu bearbeiten, markieren Sie sie, und 
 
 Über diese Schaltfläche wird der Assistent **Richtlinie erstellen** gestartet, mit dem Sie die Bezeichnungen und die Bezeichnungseinstellungen bearbeiten können. Wenn Sie den Assistenten abschließen, werden alle Änderungen automatisch für die ausgewählten Benutzer und Dienste repliziert.
 
-Wenn Sie die integrierte Beschriftung für Office-Apps unter Windows, MacOS, iOS und Android verwenden, sehen Benutzer neue Beschriftungen innerhalb von vier Stunden und innerhalb einer Stunde für Word, Excel und PowerPoint im Web, wenn Sie den Browser aktualisieren. Es kann jedoch bis zu 24 Stunden dauern, bis die Änderungen für alle Apps und Dienste repliziert wurden.
+Wenn Sie integrierte Bezeichnungen für Office-Apps unter Windows, MacOS, iOS und Android verwenden, sehen Benutzer neue Bezeichnungen innerhalb von vier Stunden und innerhalb einer Stunde für Word, Excel und PowerPoint im Web, wenn Sie den Browser aktualisieren. Es kann jedoch bis zu 24 Stunden dauern, bis die Änderungen für alle Apps und Dienste repliziert wurden.
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Zusätzliche Bezeichnungsrichtlinieneinstellungen mit Security & Compliance Center PowerShell
 
 Zusätzliche Bezeichnungsrichtlinieneinstellungen sind mit dem Cmdlet [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) von [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell) verfügbar.
 
-Nur für den Azure Information Protection-Client für einheitliche Bezeichnungen können Sie [erweiterte Einstellungen](/azure/information-protection/rms-client/clientv2-admin-guide-customizations) festlegen, die das Festlegen einer anderen Standardbezeichnung für Outlook und das Implementieren von Popupmeldungen in Outlook zum Warnen, Rechtfertigen oder Blockieren des Versendens von E-Mails umfassen. Die vollständige Liste finden Sie unter [Verfügbare erweiterte Einstellungen für Bezeichnungsrichtlinien](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) im Administratorhandbuch für diesen Client.
+Der Azure Information Protection-Client für einheitliche Bezeichnungen unterstützt viele [erweiterte Einstellungen](/azure/information-protection/rms-client/clientv2-admin-guide-customizations), die das Migrieren von anderen Bezeichnungslösungen sowie Popupmeldungen in Outlook zum Warnen, Rechtfertigen oder Blockieren des Versendens von E-Mails umfassen. Die vollständige Liste finden Sie unter [Verfügbare erweiterte Einstellungen für Bezeichnungsrichtlinien](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#available-advanced-settings-for-label-policies) im Administratorhandbuch für diesen Client.
 
 ## <a name="use-powershell-for-sensitivity-labels-and-their-policies"></a>Verwenden von PowerShell für Vertraulichkeitsbezeichnungen und deren Richtlinien
 
@@ -225,7 +219,7 @@ Anders verhält es sich beim Löschen einer Bezeichnung:
 
 - Für Office im Web: Der Bezeichnungsnamen wird nicht in der Statusleiste oder in der Spalte **Vertraulichkeit** angezeigt. Die Bezeichnungsinformationen in den Metadaten bleiben nur erhalten, wenn die Bezeichnung keine Verschlüsselung angewendet hat. Wenn die Bezeichnung Verschlüsselung angewendet hat und Sie [Vertraulichkeitsbezeichnungen für SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)aktiviert haben, werden die Bezeichnungsinformationen in den Metadaten entfernt und die Verschlüsselung wird aufgehoben. 
 
-Wenn Sie eine Vertraulichkeitsbezeichnung aus einer Bezeichnungsrichtlinie entfernen oder eine Vertraulichkeitsbezeichnung löschen, kann es bis zu einer Stunde dauern, bis diese Änderungen für alle Benutzer und Dienste repliziert wurden.
+Wenn Sie eine Vertraulichkeitsbezeichnung aus einer Bezeichnungsrichtlinie entfernen oder eine Vertraulichkeitsbezeichnung löschen, kann es bis zu 24 Stunden dauern, bis diese Änderungen für alle Benutzer und Dienste repliziert wurden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

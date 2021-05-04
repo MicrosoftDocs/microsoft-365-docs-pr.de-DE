@@ -22,12 +22,12 @@ description: Verwenden Sie Vertraulichkeitsbezeichnungen aus dem Microsoft Infor
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 467960f2faf6c6262083ff238ee3b085e0e99129
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 1e21da114154a5258f81a48e39d46ae875ee3930
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499675"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892928"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informationen zu Vertraulichkeitsbezeichnungen
 
@@ -190,7 +190,7 @@ Wenn Sie eine Kennzeichnungsrichtlinie konfigurieren, können Sie:
 
 - **Fordern Sie Benutzer dazu auf, eine Bezeichnung** mit einer Option für E-Mails und Dokumente und einer weiteren für Container anzuwenden. Diese Optionen werden auch obligatorische Bezeichnung genannt, und stellen sicher, dass eine Bezeichnung angewendet werden muss, bevor Benutzer Dokumente speichern, E-Mails senden oder neue Gruppen und Sites erstellen können.
     
-    Die Bezeichnung kann vom Benutzer manuell, und zwar automatisch als Ergebnis einer von Ihnen konfigurierten Bedingung, oder standardmäßig zugewiesen werden (die oben beschriebene Option der Standardbezeichnung). Eine Beispielaufforderung, die in Outlook angezeigt wird, wenn ein Benutzer eine Bezeichnung zuweisen muss, lautet:
+    Die Bezeichnung kann vom Benutzer manuell, und zwar automatisch als Ergebnis einer von Ihnen konfigurierten Bedingung, oder standardmäßig zugewiesen werden (die oben beschriebene Option der Standardbezeichnung). Eine Beispielaufforderung, die in Outlook angezeigt wird, wenn ein Benutzer eine Bezeichnung zuweisen muss:
 
     ![Eingabeaufforderung in Outlook, durch die der Benutzer zum Anwenden der erforderlichen Bezeichnung aufgefordert wird](../media/sensitivity-labels-mandatory-prompt-aipv2-outlook.PNG)
     
@@ -201,7 +201,7 @@ Wenn Sie eine Kennzeichnungsrichtlinie konfigurieren, können Sie:
     
     Erwägen Sie die Verwendung dieser Option, um dafür zu sorgen, dass Bezeichnungen in höherem Maß verwendet werden. Ohne Benutzerschulungen können diese Einstellungen jedoch zu ungenauen Bezeichnungen führen. Außerdem kann die obligatorische Kennzeichnung, sofern Sie keine entsprechende Standardbezeichnung festlegen, dazu führen, dass Ihre Benutzer mit den häufig auftretenden Eingabeaufforderungen frustriert sind.
 
-- **Link zu einer benutzerdefinierten Hilfeseite bereitstellen** Wenn Ihre Benutzer nicht genau wissen, was Vertraulichkeitsbezeichnungen sind oder wie sie verwendet werden sollten, können Sie eine URL zu weiteren Informationen angeben, die unten im Menü der **Vertraulichkeitsbezeichnungen** in den Office-Apps angezeigt wird:
+- **Link zu einer benutzerdefinierten Hilfeseite bereitstellen.** Wenn Ihre Benutzer nicht genau wissen, was Vertraulichkeitsbezeichnungen bedeuten oder wie sie verwendet werden sollten, können Sie eine URL zu weiteren Informationen angeben, die unten im Menü der **Vertraulichkeitsbezeichnungen** in den Office-Apps angezeigt wird:
 
     ![Links zu weiteren Informationen auf der Schaltfläche „Vertraulichkeit“ im Menüband](../media/Sensitivity-label-learn-more.png)
 
@@ -219,7 +219,7 @@ Eine Bezeichnungsrichtlinie besteht aus:
 - Die Benutzer und Gruppen, denen die Richtlinien über die Bezeichnungen zugewiesen wird.
 - Der Bereich der Richtlinie und die Richtlinieneinstellungen für diesen Bereich (wie eine Standardbezeichnung für Dateien und E-Mails).
 
-Sie können einen Benutzer in mehrere Bezeichnungsrichtlinien einschließen, und der Benutzer sieht sämtliche Vertraulichkeitsbezeichnungen aus diesen Richtlinien. Ein Benutzer sieht jedoch nur die Richtlinieneinstellungen der Bezeichnungsrichtlinie mit der höchsten Priorität.
+Sie können einen Benutzer in mehrere Bezeichnungsrichtlinien einschließen, und der Benutzer erhält sämtliche Vertraulichkeitsbezeichnungen und Einstellungen aus diesen Richtlinien. Bei einem Konflikt zwischen den Einstellungen mehrerer Richtlinien wird Einstellung aus der Richtlinie mit der höchsten Priorität angewendet. Mit anderen Worten: Die höchste Priorität hat für jede Einstellung Vorrang.
 
 Wenn Ihnen die für einen Benutzer oder eine Gruppe erwartete Bezeichnungs oder Bezeichnungsrichtlinieneinstellung nicht angezeigt wird, überprüfen Sie die Reihenfolge der Vertraulichkeitsbezeichnungsrichtlinien. Wenn Sie die Bezeichnungsrichtlinien neu anordnen möchten, wählen Sie eine Vertraulichkeits-Bezeichnungsrichtlinie aus > wählen Sie die drei Punkte auf der rechten Seite aus > bewegen Sie sie nach **unten** oder **oben**.
 

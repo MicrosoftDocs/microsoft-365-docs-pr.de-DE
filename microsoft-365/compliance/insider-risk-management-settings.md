@@ -1,6 +1,6 @@
 ---
 title: Einstellungen für das Insider-Risikomanagement
-description: Informationen zu Insider-Risikomanagementeinstellungen in Microsoft 365
+description: Erfahren Sie mehr über insider risk management settings in Microsoft 365
 keywords: Microsoft 365, Insider-Risikomanagement, Risikomanagement, Compliance
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: b3a555ba41cee7c8272467de20962eb1e7f25cfc
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: f48b6e8b43f65a6ee919095ea299bd80c81e01c9
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445613"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687251"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Erste Schritte mit Insider-Risikomanagementeinstellungen
 
@@ -33,7 +33,7 @@ Insider-Risikomanagementeinstellungen gelten für alle Richtlinien für das Insi
 - Exportieren von Warnungen (Vorschau)
 - Prioritätsbenutzergruppen (Vorschau)
 - Physische Ressourcen mit Priorität (Vorschau)
-- Power Automate-Flüsse (Vorschau)
+- Power Automate (Vorschau)
 - Microsoft Teams (Vorschau)
 - Analytics (Vorschau)
 
@@ -54,16 +54,16 @@ Vorlagen für Insiderrisikorichtlinien definieren die Art von Risikoaktivitäten
 
 Warnungen werden durch Richtlinien ausgelöst, wenn Benutzer Aktivitäten im Zusammenhang mit Richtlinienindikatoren ausführen, die einen erforderlichen Schwellenwert erfüllen. Das Risikomanagement von Insidern verwendet zwei Arten von Indikatoren:
 
-- **Auslösen von Ereignissen:** Ereignisse, die bestimmen, ob ein Benutzer in einer Insider-Risikomanagementrichtlinie aktiv ist. Wenn ein Benutzer einer Insider-Risikomanagementrichtlinie hinzugefügt wird, verfügt er nicht über ein auslösendes Ereignis, die Benutzeraktivität wird von der Richtlinie nicht ausgewertet. Beispielsweise wird Benutzer A einer Richtlinie hinzugefügt, die aus dem Datendiebstahl durch ausgehende Benutzerrichtlinienvorlage erstellt wurde, und die Richtlinie und der Microsoft 365 HR-Connector sind ordnungsgemäß konfiguriert.  Solange Benutzer A nicht über ein vom Personalconnector gemeldetes Beendigungsdatum verfügt, werden Benutzer-A-Aktivitäten nicht von dieser Insider-Risikomanagementrichtlinie auf Risiken ausgewertet. Ein weiteres Beispiel für ein auslösendes  Ereignis ist, wenn ein Benutzer eine DLP-Richtlinienwarnung mit hohem Schweregrad hat, wenn *datenlecks-Richtlinien verwendet* werden.
-- **Richtlinienindikatoren:** Indikatoren, die in Insider-Risikomanagementrichtlinien enthalten sind, mit deren Rahmen ein Risikobewertungsergebnis für einen Benutzer in einem Bereich bestimmt wird. Diese Richtlinienindikatoren werden nur aktiviert, nachdem ein auslösendes Ereignis für einen Benutzer auftritt. Einige Beispiele für Richtlinienindikatoren sind, wenn ein Benutzer Daten in persönliche Cloudspeicherdienste oder tragbare Speichergeräte kopiert, wenn ein Benutzerkonto aus Azure Active Directory entfernt wird oder wenn ein Benutzer interne Dateien und Ordner mit nicht autorisierten externen Parteien teilt.
+- **Auslösen von Ereignissen:** Ereignisse, die bestimmen, ob ein Benutzer in einer Insider-Risikomanagementrichtlinie aktiv ist. Wenn ein Benutzer einer Insider-Risikomanagementrichtlinie hinzugefügt wird, verfügt er nicht über ein auslösendes Ereignis, die Benutzeraktivität wird von der Richtlinie nicht ausgewertet. Beispielsweise wird Benutzer A einer Richtlinie hinzugefügt, die aus dem Datendiebstahl durch ausgehende Benutzerrichtlinienvorlage erstellt wurde, und die Richtlinie und der Microsoft 365 hr connector sind ordnungsgemäß konfiguriert.  Solange Benutzer A nicht über ein vom Personalconnector gemeldetes Beendigungsdatum verfügt, werden Benutzer-A-Aktivitäten nicht von dieser Insider-Risikomanagementrichtlinie auf Risiken ausgewertet. Ein weiteres Beispiel für ein auslösendes  Ereignis ist, wenn ein Benutzer eine DLP-Richtlinienwarnung mit hohem Schweregrad hat, wenn *datenlecks-Richtlinien verwendet* werden.
+- **Richtlinienindikatoren:** Indikatoren, die in Insider-Risikomanagementrichtlinien enthalten sind, mit deren Rahmen ein Risikobewertungsergebnis für einen Benutzer in einem Bereich bestimmt wird. Diese Richtlinienindikatoren werden nur aktiviert, nachdem ein auslösendes Ereignis für einen Benutzer auftritt. Einige Beispiele für Richtlinienindikatoren sind, wenn ein Benutzer Daten in persönliche Cloudspeicherdienste oder tragbare Speichergeräte kopiert, wenn ein Benutzerkonto aus Azure Active Directory entfernt wird oder wenn ein Benutzer interne Dateien und Ordner für nicht autorisierte externe Parteien freigegeben hat.
 
 Richtlinienindikatoren sind in die folgenden Bereiche segmentiert. Sie können die Indikatoren zum Aktivieren und Anpassen von Indikatorereignisgrenzwerte für jede Indikatorstufe beim Erstellen einer Insiderrisikorichtlinie auswählen:
 
-- **Office-Indikatoren:** Dazu gehören Richtlinienindikatoren für SharePoint-Websites, Microsoft Teams und E-Mail-Nachrichten.
-- **Geräteindikatoren:** Dazu gehören Richtlinienindikatoren für Aktivitäten wie das Freigeben von Dateien über das Netzwerk oder mit Geräten. Zu den Indikatoren gehören Aktivitäten Microsoft Office Dateien, CSV-Dateien (durch Kommas getrennte Werte) und PDF-Dateien (portables Dokumentformat). Wenn Sie Geräteindikatoren **auswählen,** wird die Aktivität nur für Geräte mit Windows 10 Build 1809 oder höher verarbeitet, und Sie müssen zuerst Geräte in das Compliance Center integrieren. Weitere Informationen zum Konfigurieren von Geräten für die [](insider-risk-management-settings.md#OnboardDevices) Integration mit Insiderrisiken finden Sie im abschnitt Aktivieren von Geräteindikatoren und onboard-Geräten in diesem Artikel.
+- **Office:** Dazu gehören Richtlinienindikatoren für websites SharePoint, Microsoft Teams und E-Mail-Nachrichten.
+- **Geräteindikatoren:** Dazu gehören Richtlinienindikatoren für Aktivitäten wie das Freigeben von Dateien über das Netzwerk oder mit Geräten. Zu den Indikatoren gehören Aktivitäten Microsoft Office Dateien, .csv (durch Kommas getrennte Werte) und .pdf (portables Dokumentformat). Wenn Sie Geräteindikatoren **auswählen,** wird die Aktivität nur für Geräte mit Windows 10 Build 1809 oder höher verarbeitet, und Sie müssen zuerst Geräte in das Compliance Center integrieren. Weitere Informationen zum Konfigurieren von Geräten für die [](insider-risk-management-settings.md#OnboardDevices) Integration mit Insiderrisiken finden Sie im abschnitt Aktivieren von Geräteindikatoren und onboard-Geräten in diesem Artikel.
 - **Sicherheitsrichtlinienverletzungsindikator (Vorschau):** Dazu gehören Indikatoren von Microsoft Defender for Endpoint im Zusammenhang mit nicht genehmigter oder bösartiger Softwareinstallation oder Umgehen von Sicherheitssteuerelementen. Um Benachrichtigungen im Insider risk management zu erhalten, müssen Sie eine aktive Defender for Endpoint-Lizenz und die Integration von Insiderrisiken aktiviert haben. Weitere Informationen zum Konfigurieren von Defender for Endpoint für insider risk management integration finden Sie unter [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 - **Indikatoren für den physischen Zugriff (Vorschau):** Dazu gehören Richtlinienindikatoren für den physischen Zugriff auf vertrauliche Ressourcen. Beispielsweise kann versuchter Zugriff auf einen eingeschränkten Bereich in Ihren Systemprotokollen für physische Risikomanagementrichtlinien für Insider freigegeben werden. Um diese Arten von Warnungen im Insider-Risikomanagement zu erhalten, müssen sie für das Insiderrisikomanagement und den [Connector](import-physical-badging-data.md) für physische Risikomanagementdaten konfiguriert sein. Weitere Informationen zum Konfigurieren des physischen Zugriffs finden Sie im Abschnitt [Priority physical access](#priority-physical-assets-preview) in diesem Artikel.
-- **Microsoft Cloud App Sicherheitsindikatoren (Vorschau):** Dazu gehören Richtlinienindikatoren aus freigegebenen Warnungen von Cloud App Security. Die automatisch aktivierte Anomalieerkennung in Cloud App Security beginnt sofort mit der Erkennung und Sortierung von Ergebnissen und zielt auf zahlreiche Verhaltensanomalien in Ihren Benutzern sowie auf den Computern und Geräten ab, die mit Ihrem Netzwerk verbunden sind. Wählen Sie in diesem Abschnitt einen oder mehrere Indikatoren aus, um diese Aktivitäten in Warnungen zu Insider-Risikomanagementrichtlinien zu enthalten. Weitere Informationen zur Cloud App Security-Analyse und Anomalieerkennung finden Sie unter [Get behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy).
+- **Microsoft Cloud App Security (Vorschau):** Dazu gehören Richtlinienindikatoren aus freigegebenen Warnungen von Cloud App Security. Die automatisch aktivierte Anomalieerkennung in Cloud App Security beginnt sofort mit der Erkennung und Sortierung von Ergebnissen und zielt auf zahlreiche Verhaltensanomalien in Ihren Benutzern und den Computern und Geräten ab, die mit Ihrem Netzwerk verbunden sind. Wählen Sie in diesem Abschnitt einen oder mehrere Indikatoren aus, um diese Aktivitäten in Warnungen zu Insider-Risikomanagementrichtlinien zu enthalten. Weitere Informationen zur Cloud App Security und Anomalieerkennung finden Sie unter [Get behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy).
 - **Risk score boosts:** Dazu gehört die Erhöhung des Risikos für ungewöhnliche Aktivitäten oder frühere Richtlinienverstöße. Das Aktivieren von Risikoscore-Verstärkungen erhöht die Risikoergebnisse und die Wahrscheinlichkeit von Warnungen für diese Arten von Aktivitäten. Bei ungewöhnlichen Aktivitäten wird die Punktzahl erhöht, wenn die erkannte Aktivität vom typischen Verhalten des Benutzers abweicht. Beispielsweise eine erhebliche Zunahme der täglichen Dateidownloads. Ungewöhnliche Aktivität wird als Prozentualer Anstieg (z. B. "100 % über der üblichen Aktivität") dargestellt und wirkt sich je nach Aktivität unterschiedlich auf die Risikosentwertung aus. Bei Benutzern mit vorherigen Richtlinienverstößen werden die Bewertungen erhöht, wenn ein Benutzer zuvor mehrere Fälle als bestätigten Richtlinienverstoß aufgelöst hat. Risikoergebnis-Verstärkungen können nur ausgewählt werden, wenn ein oder mehrere Indikatoren ausgewählt sind.
 
 In einigen Fällen können Sie die Richtlinienindikatoren für Insiderrisiken einschränken, die auf Insiderrisikorichtlinien in Ihrer Organisation angewendet werden. Sie können die Richtlinienindikatoren für bestimmte Bereiche deaktivieren, indem Sie sie von allen Richtlinien für Insiderrisiken deaktivieren. Auslösen von Ereignissen kann für Richtlinienvorlagen für Insiderrisiken nicht geändert werden.
@@ -80,22 +80,22 @@ Um die Überwachung von Risikoaktivitäten auf Geräten zu ermöglichen und Rich
 
 #### <a name="step-1-prepare-your-endpoints"></a>Schritt 1: Vorbereiten der Endpunkte
 
-Stellen Sie sicher, dass die Windows 10-Geräte, die Sie für die Berichterstellung im Insiderrisikomanagement planen, diese Anforderungen erfüllen.
+Stellen Sie sicher, dass Windows 10 Geräte, die Sie für die Berichterstellung im Insider risk management planen, diese Anforderungen erfüllen.
 
-1. Muss Windows 10 x64 Build 1809 oder höher ausführen und das [Windows 10-Update (Betriebssystem Build 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) vom 20. Februar 2020 installiert haben.
+1. Muss Windows 10 x64 Build 1809 oder höher ausgeführt werden und muss das [Windows 10-Update (Os Build 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) vom 20. Februar 2020 installiert haben.
 2. Alle Geräte müssen in [Azure Active Directory (AAD)](/azure/active-directory/devices/concept-azure-ad-join), oder in Azure AD Hybrid eingebunden sein.
-3. Installieren Sie den Microsoft Chromium Edge-Browser auf dem Endpunktgerät, um Aktionen für die Clouduploadaktivität zu überwachen. Weitere Informationen finden Sie unter [Herunterladen des auf Chromium basierenden neuen Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
+3. Installieren Sie Microsoft Chromium Edgebrowser auf dem Endpunktgerät, um Aktionen für die Clouduploadaktivität zu überwachen. Weitere Informationen finden Sie unter [Herunterladen des auf Chromium basierenden neuen Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 #### <a name="step-2-onboarding-devices"></a>Schritt 2: Onboarding von Geräten
 <a name="OnboardStep2"> </a>
 
-Sie müssen die Geräteüberwachung aktivieren und Ihre Endpunkte integrieren, bevor Sie Insider-Risikomanagementaktivitäten auf einem Gerät überwachen können. Beide Aktionen werden im Microsoft 365 Compliance-Portal ergriffen.
+Sie müssen die Geräteüberwachung aktivieren und Ihre Endpunkte integrieren, bevor Sie Insider-Risikomanagementaktivitäten auf einem Gerät überwachen können. Beide Aktionen werden im Microsoft 365-Compliance-Portal ergriffen.
 
 Wenn Sie Geräte integrieren möchten, die noch nicht onboarded wurden, laden Sie das entsprechende Skript herunter und stellen es wie in den folgenden Schritten beschrieben bereit.
 
 Wenn bereits Geräte in [Microsoft Defender für Endpunkt](/windows/security/threat-protection/) eingebunden sind, werden sie in der Liste der verwalteten Geräte angezeigt. Folgen [Sie Schritt 3: Wenn Geräte](insider-risk-management-settings.md#OnboardStep3) in Microsoft Defender for Endpoint im nächsten Abschnitt onboardiert sind.
 
-In diesem Bereitstellungsszenario integrieren Sie Geräte, die noch nicht onboardiert wurden, und Sie möchten nur Insiderrisikoaktivitäten auf Windows 10-Geräten überwachen.
+In diesem Bereitstellungsszenario integrieren Sie Geräte, die noch nicht onboarded wurden, und Sie möchten nur Insiderrisikoaktivitäten auf Windows 10 überwachen.
 
 1. Öffnen Sie das [Microsoft Compliance Center](https://compliance.microsoft.com).
 2. Öffnen Sie die Seite "Einstellungen", und wählen Sie **Geräte-Onboarding** aus.
@@ -144,16 +144,16 @@ Sobald der Endpunkt fertig ist und der  Endpunkt onboardiert ist, sollte er unte
 
 Beim Erstellen einer Richtlinie im Richtlinien-Assistenten können Sie konfigurieren, wie die tägliche Anzahl von Risikoereignissen die Risikobewertung für Insiderrisikowarnungen beeinflussen soll. Mit diesen Indikatoreinstellungen können Sie steuern, wie sich die Anzahl der Vorkommen von Risikoereignissen in Ihrer Organisation auf die Risikobewertung und damit den zugehörigen Warnungsschweregrad für diese Ereignisse auswirken soll. Wenn es Ihnen lieber ist, können Sie auch festlegen, dass die von Microsoft empfohlenen Standardereignisschwellenwerte für alle aktivierten Indikatoren erhalten bleiben.
 
-Sie entscheiden sich beispielsweise für die Aktivierung von SharePoint-Indikatoren in den Insiderrisikorichtlinieneinstellungen und das Festlegen benutzerdefinierter Schwellenwerte für SharePoint-Ereignisse beim Konfigurieren von Indikatoren für eine neue Richtlinie für Insiderrisiken *Datenlecks.* Während Sie im Assistenten für Insiderrisikorichtlinien drei unterschiedliche tägliche Ereignisstufen für jeden SharePoint-Indikator konfigurieren, um die Risikobewertung für Warnungen im Zusammenhang mit diesen Ereignissen zu beeinflussen.
+Sie entscheiden beispielsweise, SharePoint in den Insiderrisikorichtlinieneinstellungen zu aktivieren und benutzerdefinierte Schwellenwerte für SharePoint-Ereignisse beim Konfigurieren  von Indikatoren für eine neue Richtlinie für Insiderrisikodatenlecks zu konfigurieren. Während Sie im Assistenten für Insiderrisikorichtlinien drei unterschiedliche tägliche Ereignisstufen für jeden SharePoint-Indikator konfigurieren, um die Risikobewertung für Warnungen im Zusammenhang mit diesen Ereignissen zu beeinflussen.
 
 ![Einstellungen für benutzerdefinierte Indikatoren für das Insider-Risikomanagement](../media/insider-risk-custom-indicators.png)
 
 Für die erste tägliche Ereignisebene legen Sie den Schwellenwert auf *10* oder mehr Ereignisse pro Tag fest, um eine niedrigere Auswirkung auf die Risikopunktzahl für die Ereignisse, *20* oder mehr Ereignisse pro Tag für eine mittlere Auswirkung auf das Risikoergebnis für die Ereignisse und *30* oder mehr Ereignisse pro Tag eine höhere Auswirkung auf die Risikopunktzahl für die Ereignisse zu erzielen. Diese Einstellungen bedeuten effektiv:
 
-- Wenn 1 bis 9 SharePoint-Ereignisse nach dem Auslösen eines Ereignisses stattfinden, werden die Risikoergebnisse minimal betroffen und würden in der Regel keine Warnung generieren.
-- Wenn nach einem auslösenden Ereignis 10-19 SharePoint-Ereignisse stattfinden, ist die Risikosentwertung grundsätzlich niedriger, und der Schweregrad der Warnung würde sich in der Regel auf einem niedrigen Niveau befinden.
-- Wenn es 20 bis 29 SharePoint-Ereignisse gibt, die nach einem Auslösen stattfinden, ist die Risikosentwertung grundsätzlich höher, und der Schweregrad der Warnung würde sich in der Regel auf mittlerer Ebene befinden.
-- Wenn nach einem Auslösen 30 oder mehr SharePoint-Ereignisse stattfinden, ist die Risikosentwertung grundsätzlich höher, und der Schweregrad der Warnung würde sich in der Regel auf einem hohen Niveau befinden.
+- Wenn nach dem Auslösen des Ereignisses 1 bis 9 SharePoint ereignisse stattfinden, werden die Risikobewertungen minimal betroffen und würden in der Regel keine Warnung generieren.
+- Wenn 10 bis 19 SharePoint Ereignisse nach einem auslösenden Ereignis stattfinden, ist die Risikopunktzahl grundsätzlich niedriger, und der Schweregrad der Warnung würde sich in der Regel auf einem niedrigen Niveau befinden.
+- Wenn nach einem Auslösen 20 bis 29 SharePoint ereignisse stattfinden, ist die Risikosentwertung grundsätzlich höher, und der Schweregrad der Warnung würde sich in der Regel auf mittlerer Ebene befinden.
+- Wenn nach einem Auslösen 30 oder mehr SharePoint ereignisse stattfinden, ist die Risikosentwertung grundsätzlich höher, und der Schweregrad der Warnung würde sich in der Regel auf einem hohen Niveau befinden.
 
 ## <a name="policy-timeframes"></a>Zeitrahmen für Richtlinien
 
@@ -215,7 +215,7 @@ Für jede der folgenden Domäneneinstellungen können Sie bis zu 500 Domänen ei
 
     - An externe Domänen gesendete E-Mails
     - Dateien, Ordner, Websites, die für externe Domänen freigegeben sind
-    - In externe Domänen hochgeladene Dateien (mithilfe des Microsoft Edge-Browsers)
+    - In externe Domänen hochgeladene Dateien (Microsoft Edge Browser)
 
     Durch das Angeben zulässiger Domänen in Einstellungen wird diese Aktivität mit diesen Domänen ähnlich behandelt wie die Behandlung interner Organisationsaktivitäten. Die hier hinzugefügten Domänen können z. B. die Freigabe von Inhalten für eine Person außerhalb Ihrer Organisation umfassen (z. B. das Senden von E-Mails an jemanden mit gmail.com Adresse).
 
@@ -223,17 +223,17 @@ Für jede der folgenden Domäneneinstellungen können Sie bis zu 500 Domänen ei
 
 ## <a name="export-alerts-preview"></a>Exportieren von Warnungen (Vorschau)
 
-Insider-Risikomanagement-Warnungsinformationen können über das [Office 365-Verwaltungsaktivitäts-API-Schema](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema)in Sicherheitsinformationen und Ereignisverwaltungsdienste exportiert werden. Sie können die Office 365-Verwaltungsaktivitäts-APIs verwenden, um Benachrichtigungsinformationen in andere Anwendungen zu exportieren, die Ihre Organisation möglicherweise zum Verwalten oder Aggregieren von Insiderrisikoinformationen verwendet.
+Warnungsinformationen für insider risk management können über das Office 365 Management Activity API schema in Sicherheitsinformationen und Ereignisverwaltungsdienste [exportiert werden.](/office/office-365-management-api/office-365-management-activity-api-schema#security-and-compliance-alerts-schema) Sie können die Office 365 Management Activity APIs verwenden, um Benachrichtigungsinformationen in andere Anwendungen zu exportieren, die Ihre Organisation möglicherweise zum Verwalten oder Aggregieren von Insiderrisikoinformationen verwendet.
 
 So verwenden Sie die APIs, um Informationen zu Insiderrisiken zu überprüfen:
 
-1. Aktivieren Sie office 365 Management Activity API support in **Insider risk management** settings  >  **Export**  >  **alerts**. Diese Einstellung ist standardmäßig für Ihre Microsoft 365-Organisation deaktiviert.
-2. Filtern Der allgemeinen Office 365-Überwachungsaktivitäten nach *SecurityComplianceAlerts*.
+1. Aktivieren Office 365 Unterstützung der Management Activity API in **Insider risk management**  >  **Einstellungen**  >  **Export alerts**. Diese Einstellung ist standardmäßig für Ihre Organisation Microsoft 365 deaktiviert.
+2. Filtern sie die Office 365 Überwachungsaktivitäten nach *SecurityComplianceAlerts*.
 3. Filter *securityComplianceAlerts* nach der *Kategorie InsiderRiskManagement.*
 
 ![Exportbenachrichtigungseinstellungen für Insider-Risikomanagement](../media/insider-risk-settings-export.png)
 
-Warnungsinformationen enthalten Informationen aus dem Sicherheits- und Kompatibilitätswarnungsschema und dem allgemeinen Schema der Office 365 Management Activity API.
+Warnungsinformationen enthalten Informationen aus dem Sicherheits- und Kompatibilitätswarnungsschema und dem Office 365 allgemeinen Schema der Verwaltungsaktivitäts-API.
 
 Die folgenden Felder und Werte werden für Insider-Risikomanagementwarnungen für das Security & Compliance Alert Schema exportiert:
 
@@ -242,7 +242,7 @@ Die folgenden Felder und Werte werden für Insider-Risikomanagementwarnungen fü
 | AlertType | Der Typ der Warnung ist *Custom*.  |
 | AlertId | Die GUID der Warnung. Warnungen zum Risikomanagement von Insidern können stummgeschaltet werden. Wenn sich der Warnungsstatus ändert, wird ein neues Protokoll mit derselben AlertID generiert. Diese AlertID kann verwendet werden, um Updates für eine Warnung zu korrelieren. |
 | Kategorie | Die Kategorie der Warnung ist *InsiderRiskManagement*. Diese Kategorie kann verwendet werden, um von diesen Warnungen von anderen Sicherheits- und & zu unterscheiden. |
-| Anmerkungen | Standardkommentare für die Warnung. Die Werte *sind Neue Warnung* (protokolliert, wenn eine Warnung erstellt wird) und Warnung *aktualisiert* (protokolliert, wenn eine Warnung aktualisiert wird). Verwenden Sie die AlertID, um Updates für eine Warnung zu korrelieren. |
+| Kommentare | Standardkommentare für die Warnung. Die Werte *sind Neue Warnung* (protokolliert, wenn eine Warnung erstellt wird) und Warnung *aktualisiert* (protokolliert, wenn eine Warnung aktualisiert wird). Verwenden Sie die AlertID, um Updates für eine Warnung zu korrelieren. |
 | Daten | Die Daten für die Warnung enthalten die eindeutige Benutzer-ID, den Benutzerprinzipalnamen sowie Datum und Uhrzeit (UTC), als der Benutzer in eine Richtlinie ausgelöst wurde. |
 | Name | Richtlinienname für insider risk management policy that generated the alert. |
 | PolicyId | Die GUID der Insider-Risikomanagementrichtlinie, die die Warnung ausgelöst hat. |
@@ -251,7 +251,7 @@ Die folgenden Felder und Werte werden für Insider-Risikomanagementwarnungen fü
 | Status | Der Status der Warnung. Die Werte sind *Aktiv* (*Needs Review* in insider risk), *Investigating* (*Confirmed* in insider risk), Resolved ( *Resolved* in insider risk), *Dismissed* (*Dismissed* in insider risk). |
 | Version | Die Version des Sicherheits- und Kompatibilitätsbenachrichtigungsschemas. |
 
-Die folgenden Felder und Werte werden für Insider-Risikomanagementwarnungen für das allgemeine Schema der [Office 365 Management Activity API exportiert.](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)
+Die folgenden Felder und Werte werden für Insider-Risikomanagementwarnungen für das allgemeine Schema Office 365 [Management Activity API exportiert.](/office/office-365-management-api/office-365-management-activity-api-schema#common-schema)
 
 - UserId
 - Id
@@ -268,7 +268,7 @@ Benutzer in Ihrer Organisation können je nach Position, Zugriffsebene auf vertr
 
 ![Benutzergruppeneinstellungen für Insider-Risikomanagementpriorität](../media/insider-risk-settings-priority-users.png)
 
-Beispielsweise müssen Sie datenlecks für ein streng vertrauliches Projekt schützen, bei dem Benutzer Zugriff auf vertrauliche Informationen haben. Sie möchten eine Benutzergruppe *für vertrauliche Projektbenutzer*  mit Priorität für Benutzer in Ihrer Organisation erstellen, die an diesem Projekt arbeiten. Mithilfe des Richtlinien-Assistenten und der Richtlinienvorlage "Datenlecks nach  Prioritätsbenutzern" erstellen Sie eine neue Richtlinie und weisen der Richtlinie die Benutzergruppe Vertrauliche Projektbenutzer zu.  Aktivitäten, die von der  Richtlinie für Mitglieder der Benutzergruppe "Vertrauliche Projektbenutzer" untersucht werden, sind risikoempfindlicher, und Aktivitäten dieser Benutzer generieren mit höherer Wahrscheinlichkeit eine Warnung und verfügen über Warnungen mit höherem Schweregrad.
+Beispielsweise müssen Sie datenlecks für ein streng vertrauliches Projekt schützen, bei dem Benutzer Zugriff auf vertrauliche Informationen haben. Sie wählen die Option *Vertraulich Project* *benutzerpriorität* benutzergruppe für Benutzer in Ihrer Organisation zu erstellen, die an diesem Projekt arbeiten. Mithilfe des Richtlinien-Assistenten und der Richtlinienvorlage Datenlecks nach Prioritätsbenutzern erstellen Sie eine neue Richtlinie und weisen der Richtlinie die Gruppe Vertrauliche *Project* Benutzer priorität zu.  Aktivitäten, die von der Richtlinie für Mitglieder der Benutzergruppe "Vertrauliche Project Benutzer" *untersucht* werden, sind risikoempfindlicher, und Aktivitäten dieser Benutzer generieren wahrscheinlicher eine Warnung und verfügen über Warnungen mit höherem Schweregrad.
 
 ### <a name="create-a-priority-user-group"></a>Erstellen einer Benutzergruppe mit Priorität
 
@@ -276,7 +276,7 @@ Zum Erstellen einer neuen Benutzergruppe mit Priorität verwenden Sie Einstellun
 
 Führen Sie die folgenden Schritte aus, um eine Benutzergruppe mit Priorität zu erstellen:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings aus.**
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings aus.**
 2. Auswählen der **Registerkarte Priorität von Benutzergruppen**
 3. Wählen Sie auf der Registerkarte Priorität **Benutzergruppen** die Option **Benutzergruppe** mit Priorität erstellen aus, um den Assistenten zum Erstellen von Gruppen zu starten.
 4. Füllen Sie **auf der** Seite Gruppe definieren die folgenden Felder aus:
@@ -294,7 +294,7 @@ Zum Aktualisieren einer vorhandenen Benutzergruppe mit Priorität verwenden Sie 
 
 Führen Sie die folgenden Schritte aus, um eine Benutzergruppe mit Priorität zu bearbeiten:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings aus.**
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings aus.**
 2. Auswählen der **Registerkarte Priorität von Benutzergruppen**
 3. Wählen Sie die Prioritätsbenutzergruppe aus, die Sie bearbeiten möchten, und wählen Sie **Gruppe bearbeiten aus.**
 4. Aktualisieren Sie **auf der Seite** Gruppe definieren das Feld Beschreibung bei Bedarf. Der Name der Prioritätsbenutzergruppe kann nicht aktualisiert werden. Wählen **Sie Weiter aus,** um fortzufahren.
@@ -311,7 +311,7 @@ Zum Löschen einer vorhandenen Benutzergruppe mit Priorität verwenden Sie Einst
 
 Führen Sie die folgenden Schritte aus, um eine Benutzergruppe mit Priorität zu löschen:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings aus.**
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings aus.**
 2. Auswählen der **Registerkarte Priorität von Benutzergruppen**
 3. Wählen Sie die Prioritätsbenutzergruppe aus, die Sie bearbeiten möchten, und wählen **Sie im** Dashboardmenü Löschen aus.
 4. Wählen Sie **im Dialogfeld** Löschen die Option **Ja** aus, um die Prioritätsbenutzergruppe zu löschen, oder wählen Sie **Abbrechen** aus, um zum Dashboard zurückzukehren.
@@ -324,25 +324,25 @@ Da physische Ressourcen mit Priorität aktiviert sind und der [Datenconnector](i
 
 Beispielsweise verfügt Ihre Organisation über ein System zur Verletzung von Benutzern, das den physischen Zugriff auf normale Arbeits- und vertrauliche Projektbereiche überwacht und genehmigt. Sie haben mehrere Benutzer, die an einem vertraulichen Projekt arbeiten, und diese Benutzer kehren nach Abschluss des Projekts in andere Bereiche Ihrer Organisation zurück. Da das vertrauliche Projekt kurz vor dem Abschluss steht, sollten Sie sicherstellen, dass die Projektarbeit vertraulich bleibt und der Zugriff auf die Projektbereiche streng kontrolliert wird.
 
-Sie möchten den Physischen Datenconnector in Microsoft 365 aktivieren, um Zugriffsinformationen aus Ihrem physischen Badging-System zu importieren und physische Ressourcen mit Priorität im Insider-Risikomanagement anzugeben. Durch das Importieren von Informationen aus Ihrem Schadenssystem und das Korrelieren von physischen Zugriffsinformationen mit anderen Risikoaktivitäten, die im Insider risk management identifiziert werden, stellen Sie fest, dass einer der Benutzer des Projekts nach den normalen Arbeitszeiten auf die Projektbüros zutritt und große Datenmengen aus seinem normalen Arbeitsbereich in einen persönlichen Cloudspeicherdienst exportiert. Diese physische Zugriffsaktivität im Zusammenhang mit der Onlineaktivität kann auf möglichen Datendiebstahl hinweisen, und Complianceermittler und Analysten können entsprechend den Umständen für diesen Benutzer geeignete Maßnahmen ergreifen.
+Sie können den Physischen Datenconnector in Microsoft 365 aktivieren, um Zugriffsinformationen aus Ihrem physischen System zu importieren und physische Ressourcen mit Priorität im Insiderrisikomanagement anzugeben. Durch das Importieren von Informationen aus Ihrem Schadenssystem und das Korrelieren von physischen Zugriffsinformationen mit anderen Risikoaktivitäten, die im Insider risk management identifiziert werden, stellen Sie fest, dass einer der Benutzer des Projekts nach den normalen Arbeitszeiten auf die Projektbüros zutritt und große Datenmengen aus seinem normalen Arbeitsbereich in einen persönlichen Cloudspeicherdienst exportiert. Diese physische Zugriffsaktivität im Zusammenhang mit der Onlineaktivität kann auf möglichen Datendiebstahl hinweisen, und Complianceermittler und Analysten können entsprechend den Umständen für diesen Benutzer geeignete Maßnahmen ergreifen.
 
 ![Physische Ressourcen der Priorität des Insiderrisikomanagements](../media/insider-risk-settings-priority-assets.png)
 
 ### <a name="configure-priority-physical-assets"></a>Konfigurieren von physischen Ressourcen mit Priorität
 
-Um physische Ressourcen mit Priorität zu konfigurieren, konfigurieren Sie den Konnektor für physische Badging und verwenden Einstellungssteuerelemente in der **Insider-Risikomanagementlösung** im Microsoft 365 Compliance Center. Zum Konfigurieren von physischen Ressourcen mit Priorität müssen Sie Mitglied der Rollengruppe *Insider Risk Management* oder Insider Risk Management Admin *sein.*
+Um physische Ressourcen mit Priorität zu konfigurieren, konfigurieren Sie den Connector für physisches Badging und verwenden Einstellungssteuerelemente in der **Insider-Risikomanagementlösung** im Microsoft 365 Compliance Center. Zum Konfigurieren von physischen Ressourcen mit Priorität müssen Sie Mitglied der Rollengruppe *Insider Risk Management* oder Insider Risk Management Admin *sein.*
 
 Führen Sie die folgenden Schritte aus, um physische Ressourcen mit Priorität zu konfigurieren:
 
 1. Befolgen Sie die Konfigurationsschritte für das Insider-Risikomanagement im [Artikel Erste Schritte mit Insider-Risikomanagement.](insider-risk-management-configure.md) Stellen Sie in Schritt 3 sicher, dass Sie den Konnektor für physische Badging konfigurieren.
 
     >[!IMPORTANT]
-    >Damit Insider-Risikomanagementrichtlinien Signaldaten im Zusammenhang mit ausscheidenden und beendeten Benutzern mit Ereignisdaten ihrer physischen Steuerungs- und Zugriffsplattformen verwenden und korrelieren können, müssen Sie auch den Microsoft 365 HR-Connector konfigurieren. Wenn Sie den Connector für physisches Badging aktivieren, ohne den Microsoft 365 HR-Connector zu aktivieren, verarbeiten Insider-Risikomanagementrichtlinien nur Ereignisse für physische Zugriffsaktivitäten für Benutzer in Ihrer Organisation.
+    >Damit Insider-Risikomanagementrichtlinien Signaldaten im Zusammenhang mit ausscheidenden und beendeten Benutzern mit Ereignisdaten aus Ihren physischen Kontroll- und Zugriffsplattformen verwenden und korrelieren können, müssen Sie auch den Microsoft 365 konfigurieren. Wenn Sie den Connector für physisches Badging aktivieren, ohne den Microsoft 365 hr-Connector zu aktivieren, verarbeiten Insiderrisikomanagementrichtlinien nur Ereignisse für physische Zugriffsaktivitäten für Benutzer in Ihrer Organisation.
 
-2. Wechseln Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider risk settings** Priority physical assets  >  **aus.**
-3. Auf  der Seite physische Ressourcenpriorität können Sie entweder manuell die physischen Ressourcen-IDs hinzufügen, die Sie auf die vom Connector für physischen Badging importierten Objektereignisse überwachen möchten, oder eine CSV-Datei aller vom Connector für physisches Badging importierten physischen Ressourcen-IDs importieren: a) Wählen Sie Zum manuellen Hinzufügen physischer Ressourcen-IDs die Option Priorität physische Ressourcen hinzufügen **aus,** geben Sie eine physische Ressourcen-ID ein, und wählen Sie dann **Hinzufügen aus.** Geben Sie andere IDs für physische Objekte ein, und wählen Sie **dann Physische** Ressourcen mit Priorität hinzufügen aus, um alle eingegebenen Ressourcen zu speichern.
-    b) Wenn Sie eine Liste der physischen Ressourcen-IDs aus einer CSV-Datei hinzufügen möchten, wählen Sie Physische Ressourcen mit Priorität **importieren aus.** Wählen Sie im Dialogfeld Datei-Explorer die CSV-Datei aus, die Sie importieren möchten, und wählen Sie **dann Öffnen aus.** Die physischen Objekt-IDs aus den CSV-Dateien werden der Liste hinzugefügt.
-4. Navigieren Sie unter Einstellungen **zur** Registerkarte Richtlinienindikatoren.
+2. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings** Priority physical assets  >  **aus.**
+3. Auf  der Seite physische Ressourcen priorität können Sie entweder manuell die physischen Ressourcen-IDs hinzufügen, die Sie auf die vom Connector für physischen Badging importierten Objektereignisse überwachen möchten, oder eine .csv-Datei aller vom Connector für physisches Badging importierten physischen Ressourcen-IDs importieren: a) Wählen Sie Zum manuellen Hinzufügen physischer Ressourcen-IDs die Option Physische Ressourcen hinzufügen **aus,** geben Sie eine physische Ressourcen-ID ein, und wählen Sie dann **Hinzufügen** aus. Geben Sie andere IDs für physische Objekte ein, und wählen Sie **dann Physische** Ressourcen mit Priorität hinzufügen aus, um alle eingegebenen Ressourcen zu speichern.
+    b) Wenn Sie eine Liste der physischen Objekt-IDs aus einer .csv hinzufügen möchten, wählen Sie Physische Ressourcen mit Priorität **importieren aus.** Wählen Sie im Dialogfeld Datei-Explorer die .csv, die Sie importieren möchten, und wählen Sie **dann Öffnen aus.** Die physischen Objekt-IDs aus .csv werden der Liste hinzugefügt.
+4. Navigieren Sie zur **Registerkarte Richtlinienindikatoren** in Einstellungen.
 5. Navigieren Sie **auf** der Seite  Richtlinienindikatoren zum Abschnitt Physische Zugriffsindikatoren, und aktivieren Sie das Kontrollkästchen Physischer Zugriff nach Beendigung oder fehlgeschlagener Zugriff **auf vertrauliche Ressourcen.**
 6. Wählen **Sie Speichern aus,** um zu konfigurieren und zu beenden.
 
@@ -355,61 +355,59 @@ Zum Löschen einer vorhandenen physischen Prioritätsanlage verwenden Sie Einste
 
 Führen Sie die folgenden Schritte aus, um ein physisches Prioritätsinventar zu löschen:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider risk settings** Priority physical assets  >  **aus.**
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings** Priority physical assets  >  **aus.**
 2. Wählen Sie **auf der Seite Physische** Ressourcen priorität die Ressource aus, die Sie löschen möchten.
 3. Wählen **Sie im** Aktionsmenü Löschen aus, um das Objekt zu löschen.
 
-## <a name="power-automate-flows-preview"></a>Power Automate-Flüsse (Vorschau)
+## <a name="power-automate-flows-preview"></a>Power Automate (Vorschau)
 
-[Microsoft Power Automate ist](/power-automate/getting-started) ein Workflowdienst, der Aktionen in verschiedenen Anwendungen und Diensten automatisiert. Durch die Verwendung von Vorlagenflüssen oder manuell erstellten Aufgaben können Sie allgemeine Aufgaben automatisieren, die diesen Anwendungen und Diensten zugeordnet sind. Wenn Sie Power Automate-Flüsse für das Insiderrisikomanagement aktivieren, können Sie wichtige Aufgaben für Fälle und Benutzer automatisieren. Sie können Power Automate-Flüsse konfigurieren, um Benutzer-, Warnungs- und Fallinformationen abzurufen und diese Informationen an Beteiligte und andere Anwendungen zu teilen sowie Aktionen im Insider-Risikomanagement zu automatisieren, z. B. das Veröffentlichen von Fallnotizen. Power Automate-Flüsse gelten für Fälle und alle Benutzer im Bereich einer Richtlinie.
+[Microsoft Power Automate](/power-automate/getting-started) ist ein Workflowdienst, der Aktionen in verschiedenen Anwendungen und Diensten automatisiert. Durch die Verwendung von Vorlagenflüssen oder manuell erstellten Aufgaben können Sie allgemeine Aufgaben automatisieren, die diesen Anwendungen und Diensten zugeordnet sind. Wenn Sie Power Automate für das Insiderrisikomanagement aktivieren, können Sie wichtige Aufgaben für Fälle und Benutzer automatisieren. Sie können Power Automate konfigurieren, um Benutzer-, Warnungs- und Fallinformationen abzurufen und diese Informationen für Beteiligte und andere Anwendungen zu teilen sowie Aktionen im Insider risk management zu automatisieren, z. B. das Veröffentlichen von Fallnotizen. Power Automate Abläufe gelten für Fälle und alle Benutzer, die für eine Richtlinie gelten.
 
-Kunden mit Microsoft 365-Abonnements, die insider risk management enthalten, benötigen keine zusätzlichen Power Automate-Lizenzen, um die empfohlenen Power Automate-Vorlagen für insider risk management zu verwenden. Diese Vorlagen können angepasst werden, um Ihre Organisation zu unterstützen und zentrale Szenarien des Insiderrisikomanagements zu abdecken. Wenn Sie premium Power Automate-Features in diesen Vorlagen verwenden, eine benutzerdefinierte Vorlage mit dem Microsoft 365-Complianceconnector erstellen oder Power Automate-Vorlagen für andere Compliancebereiche in Microsoft 365 verwenden, benötigen Sie möglicherweise weitere Power Automate-Lizenzen.
+Kunden mit Microsoft 365, die insider risk management enthalten, benötigen keine zusätzlichen Power Automate Lizenzen, um die empfohlenen Insider risk management Power Automate verwenden. Diese Vorlagen können angepasst werden, um Ihre Organisation zu unterstützen und zentrale Szenarien des Insiderrisikomanagements zu abdecken. Wenn Sie premium Power Automate-Features in diesen Vorlagen verwenden, mithilfe des Microsoft 365-Complianceconnector eine benutzerdefinierte Vorlage erstellen oder Power Automate-Vorlagen für andere Compliancebereiche in Microsoft 365 verwenden, benötigen Sie möglicherweise mehr Power Automate-Lizenzen.
 
-Die folgenden Power Automate-Vorlagen werden Kunden zur Unterstützung der Prozessautomatisierung für Insider-Risikomanagement-Benutzer und -Fälle bereitgestellt:
+Die folgenden Power Automate werden Kunden bereitgestellt, um die Prozessautomatisierung für Insider-Risikomanagementbenutzer und -fälle zu unterstützen:
 
-- Benutzer benachrichtigen, wenn sie einer Insiderrisikorichtlinie hinzugefügt **werden:** Diese Vorlage ist für Organisationen mit internen Richtlinien, Datenschutz- oder behördlichen Anforderungen, dass Benutzer benachrichtigt werden müssen, wenn sie Richtlinien für das Insiderrisikomanagement unterliegen. Wenn dieser Fluss für einen Benutzer auf der Benutzerseite konfiguriert und ausgewählt ist, erhalten Benutzer und ihre Vorgesetzten eine E-Mail-Nachricht, wenn der Benutzer einer Insider-Risikomanagementrichtlinie hinzugefügt wird. Diese Vorlage unterstützt auch das Aktualisieren einer auf einer SharePoint-Website gehosteten SharePoint-Liste, um Benachrichtigungsdetails wie Datum/Uhrzeit und den Nachrichtenempfänger nachverfolgt zu können. Wenn Sie sich für die Anonymisierung von Benutzern in den Datenschutzeinstellungen entschieden **haben,** funktionieren flüsse, die aus dieser Vorlage erstellt wurden, nicht wie beabsichtigt, sodass der Datenschutz des Benutzers erhalten bleibt. Power Automate-Flüsse, die diese Vorlage verwenden, sind im **Benutzerdashboard verfügbar.**
-- Anfordern von Informationen von Personal oder Unternehmen über einen Benutzer **in** einem Insiderrisikofall: Wenn Sie in einem Fall handeln, müssen Insiderrisikoanalysten und Ermittler möglicherweise mit hr oder anderen Beteiligten sprechen, um den Kontext der Fallaktivitäten zu verstehen. Wenn dieser Fluss für einen Fall konfiguriert und ausgewählt ist, senden Analysten und Ermittler eine E-Mail-Nachricht an Personal- und Geschäftsbeteiligten, die für diesen Fluss konfiguriert sind. Jedem Empfänger wird eine Nachricht mit vorkonfigurierten oder anpassbaren Antwortoptionen gesendet. Wenn Empfänger eine Antwortoption auswählen, wird die Antwort als Fallnotiz aufgezeichnet und enthält Empfänger- und Datums-/Uhrzeitinformationen. Wenn Sie sich für die Anonymisierung von Benutzern in den Datenschutzeinstellungen entschieden **haben,** funktionieren flüsse, die aus dieser Vorlage erstellt wurden, nicht wie beabsichtigt, sodass der Datenschutz des Benutzers erhalten bleibt. Power Automate-Flüsse, die diese Vorlage verwenden, sind im **Falldashboard verfügbar.**
+- Benutzer benachrichtigen, wenn sie einer Insiderrisikorichtlinie hinzugefügt **werden:** Diese Vorlage ist für Organisationen mit internen Richtlinien, Datenschutz- oder behördlichen Anforderungen, dass Benutzer benachrichtigt werden müssen, wenn sie Richtlinien für das Insiderrisikomanagement unterliegen. Wenn dieser Fluss für einen Benutzer auf der Benutzerseite konfiguriert und ausgewählt ist, erhalten Benutzer und ihre Vorgesetzten eine E-Mail-Nachricht, wenn der Benutzer einer Insider-Risikomanagementrichtlinie hinzugefügt wird. Diese Vorlage unterstützt auch das Aktualisieren einer SharePoint, die auf einer SharePoint-Website gehostet wird, um Benachrichtigungsdetails wie Datum/Uhrzeit und den Nachrichtenempfänger nachverfolgt zu können. Wenn Sie sich für die Anonymisierung von Benutzern in den Datenschutzeinstellungen entschieden **haben,** funktionieren flüsse, die aus dieser Vorlage erstellt wurden, nicht wie beabsichtigt, sodass der Datenschutz des Benutzers erhalten bleibt. Power Automate, die diese Vorlage verwenden, sind im Benutzerdashboard **verfügbar.**
+- Anfordern von Informationen von Personal oder Unternehmen über einen Benutzer **in** einem Insiderrisikofall: Wenn Sie in einem Fall handeln, müssen Insiderrisikoanalysten und Ermittler möglicherweise mit hr oder anderen Beteiligten sprechen, um den Kontext der Fallaktivitäten zu verstehen. Wenn dieser Fluss für einen Fall konfiguriert und ausgewählt ist, senden Analysten und Ermittler eine E-Mail-Nachricht an Personal- und Geschäftsbeteiligten, die für diesen Fluss konfiguriert sind. Jedem Empfänger wird eine Nachricht mit vorkonfigurierten oder anpassbaren Antwortoptionen gesendet. Wenn Empfänger eine Antwortoption auswählen, wird die Antwort als Fallnotiz aufgezeichnet und enthält Empfänger- und Datums-/Uhrzeitinformationen. Wenn Sie sich für die Anonymisierung von Benutzern in den Datenschutzeinstellungen entschieden **haben,** funktionieren flüsse, die aus dieser Vorlage erstellt wurden, nicht wie beabsichtigt, sodass der Datenschutz des Benutzers erhalten bleibt. Power Automate, die diese Vorlage verwenden, sind im **Falldashboard verfügbar.**
 - **Benachrichtigen des Managers, wenn** ein Benutzer über eine Benachrichtigung über Insiderrisiken verfügt: Einige Organisationen benötigen möglicherweise eine sofortige Verwaltungsbenachrichtigung, wenn ein Benutzer über eine Benachrichtigung zum Insiderrisikomanagement verfügt. Wenn dieser Fluss konfiguriert und ausgewählt ist, wird dem Vorgesetzten für den Fallbenutzer eine E-Mail mit den folgenden Informationen zu allen Fallwarnungen gesendet:
     - Anwendbare Richtlinie für die Warnung
     - Datum/Uhrzeit der Warnung
     - Schweregrad der Warnung
 
-    Der Fluss aktualisiert automatisch die Fallnotizen, dass die Nachricht gesendet wurde und dass der Fluss aktiviert wurde. Wenn Sie sich für die Anonymisierung von Benutzern in den Datenschutzeinstellungen entschieden **haben,** funktionieren flüsse, die aus dieser Vorlage erstellt wurden, nicht wie beabsichtigt, sodass der Datenschutz des Benutzers erhalten bleibt. Power Automate-Flüsse, die diese Vorlage verwenden, sind im **Falldashboard verfügbar.**
+    Der Fluss aktualisiert automatisch die Fallnotizen, dass die Nachricht gesendet wurde und dass der Fluss aktiviert wurde. Wenn Sie sich für die Anonymisierung von Benutzern in den Datenschutzeinstellungen entschieden **haben,** funktionieren flüsse, die aus dieser Vorlage erstellt wurden, nicht wie beabsichtigt, sodass der Datenschutz des Benutzers erhalten bleibt. Power Automate, die diese Vorlage verwenden, sind im **Falldashboard verfügbar.**
+- **Datensatz für Insiderrisikofälle in ServiceNow** erstellen: Diese Vorlage ist für Organisationen, die ihre ServiceNow-Lösung verwenden möchten, um Insider-Risikomanagementfälle nachverfolgt zu werden.  In einem Fall können Insiderrisikoanalysten und Ermittler einen Datensatz für den Fall in ServiceNow erstellen. Sie können diese Vorlage anpassen, um ausgewählte Felder in ServiceNow basierend auf den Anforderungen Ihrer Organisation auffüllen zu können. Power Automate, die diese Vorlage verwenden, sind im **Falldashboard verfügbar.** Weitere Informationen zu verfügbaren ServiceNow-Feldern finden Sie im [ServiceNow Connector-Referenzartikel.](/connectors/service-now/)
 
-- **Kalendererinnerung hinzufügen,** um einen Insiderrisikofall zu verfolgen: Mit dieser Vorlage können Risikoermittler und Analysten Kalendererinnerungen für Fälle zu ihrem Office 365 -Outlook-Kalender hinzufügen. Dieser Fluss entfällt, dass Benutzer den Insider-Risikomanagementworkflow beenden oder aus dem Workflow für das Insiderrisikomanagement verlassen müssen, wenn Sie Fälle verarbeiten und Warnungen triagingen. Wenn dieser Fluss konfiguriert und ausgewählt ist, wird dem Office 365 -Outlook-Kalender für den Benutzer, der den Fluss ausgeführt hat, eine Erinnerung hinzugefügt. Power Automate-Flüsse, die diese Vorlage verwenden, sind im **Falldashboard verfügbar.**
-- **Datensatz für Insiderrisikofälle in ServiceNow** erstellen: Diese Vorlage ist für Organisationen, die ihre ServiceNow-Lösung verwenden möchten, um Insider-Risikomanagementfälle nachverfolgt zu werden.  In einem Fall können Insiderrisikoanalysten und Ermittler einen Datensatz für den Fall in ServiceNow erstellen. Sie können diese Vorlage anpassen, um ausgewählte Felder in ServiceNow basierend auf den Anforderungen Ihrer Organisation auffüllen zu können. Power Automate-Flüsse, die diese Vorlage verwenden, sind im **Falldashboard verfügbar.** Weitere Informationen zu verfügbaren ServiceNow-Feldern finden Sie im [ServiceNow Connector-Referenzartikel.](/connectors/service-now/)
+### <a name="create-a-power-automate-flow-from-insider-risk-management-template"></a>Erstellen eines Power Automate aus der Vorlage für insider risk management
 
-### <a name="create-a-power-automate-flow-from-insider-risk-management-template"></a>Erstellen eines Power Automate-Fluss aus vorlage für insider risk management
+Um einen Power Automate-Fluss aus einer empfohlenen Vorlage für insider risk management zu erstellen, verwenden Sie die **Einstellungssteuerelemente** in der **Insider-Risikomanagement-Lösung** im Microsoft 365  Compliance Center oder die Option **Power Automate-Flüsse** verwalten über das **Steuerelement Automatisieren,** wenn Sie direkt in den Dashboards Fälle oder Benutzer arbeiten.
 
-Um einen Power Automate-Fluss aus einer empfohlenen Vorlage für insider risk management zu erstellen, verwenden Sie die **Einstellungssteuerelemente** in der **Insider-Risikomanagement-Lösung** im Microsoft 365 Compliance Center oder die Option Power **Automate-Flüsse** verwalten über das **Steuerelement Automatisieren,** wenn Sie direkt in den Fällen oder Benutzerdashboards arbeiten. 
+Um einen Power Automate im Einstellungsbereich zu erstellen, müssen Sie Mitglied der Rollengruppe *Insider Risk Management* oder Insider Risk Management *Admin* sein. Um einen Power Automate mit der  Option Power Automate verwalten zu erstellen, müssen Sie Mitglied mindestens einer Rollengruppe für insider risk management sein.
 
-Um einen Power Automate-Fluss im Einstellungsbereich zu erstellen, müssen Sie Mitglied der Rollengruppe *Insider Risk Management* oder Insider Risk Management *Admin* sein. Um einen Power Automate-Fluss mit der Option **Power Automate-Flüsse** verwalten zu erstellen, müssen Sie Mitglied mindestens einer Rollengruppe für insider risk management sein.
+Führen Sie die folgenden Schritte aus, um einen Power Automate aus einer empfohlenen Vorlage für insider risk management zu erstellen:
 
-Führen Sie die folgenden Schritte aus, um einen Power Automate-Fluss aus einer empfohlenen Vorlage für insider risk management zu erstellen:
-
-1. Wechseln Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com/)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings** Power Automate flows  >  **aus.** Sie können auch auf den Seiten **Fälle oder** Benutzerdashboards zugreifen, indem Sie **Automatisieren** von Power   >  **Automate-Flüssen auswählen.**
-2. Wählen Sie auf der **Seite Power Automate-Flüsse** eine empfohlene Vorlage aus den Vorlagen für das **Insider-Risikomanagement** aus, die Ihnen auf der Seite gefällt.
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com/)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings** Power Automate Flows  >  **aus.** Sie können auch auf den Seiten **Fälle oder** Benutzerdashboards zugreifen, indem Sie **Automatisieren** der Verwaltung von Power Automate   >  **auswählen.**
+2. Wählen Sie **auf Power Automate Seite** "Flüsse" eine empfohlene Vorlage aus den Vorlagen für das **Insider-Risikomanagement** aus, die Ihnen auf der Seite gefällt.
 3. Der Fluss listet die für den Fluss erforderlichen eingebetteten Verbindungen auf und notiert, ob die Verbindungsstatus verfügbar sind. Aktualisieren Sie bei Bedarf alle Verbindungen, die nicht als verfügbar angezeigt werden. Wählen Sie **Weiter** aus.
-4. Standardmäßig sind die empfohlenen Flüsse mit den empfohlenen Insider-Risikomanagement- und Microsoft 365-Dienstdatenfeldern vorkonfiguriert, die zum Abschließen der zugewiesenen Aufgabe für den Fluss erforderlich sind. Passen Sie bei Bedarf die  Flusskomponenten mithilfe des Steuerelements Erweiterte Optionen anzeigen an und konfigurieren Sie die verfügbaren Eigenschaften für die Flusskomponente.
+4. Standardmäßig sind die empfohlenen Flüsse mit den empfohlenen Insiderrisikomanagement- und Microsoft 365-Dienstdatenfeldern vorkonfiguriert, die zum Abschließen der zugewiesenen Aufgabe für den Fluss erforderlich sind. Passen Sie bei Bedarf die  Flusskomponenten mithilfe des Steuerelements Erweiterte Optionen anzeigen an und konfigurieren Sie die verfügbaren Eigenschaften für die Flusskomponente.
 5. Fügen Sie bei Bedarf weitere Schritte zum Fluss hinzu, indem Sie die Schaltfläche **Neuer Schritt** auswählen. In den meisten Fällen sollte dies für die empfohlenen Standardvorlagen nicht erforderlich sein.
 6. Wählen **Sie Entwurf speichern** aus, um den Fluss für weitere Konfiguration zu speichern, oder wählen Sie **Speichern** aus, um die Konfiguration für den Fluss zu vervollständigen.
-7. Wählen **Sie Schließen** aus, um zur Power **Automate-Flussseite zurückzukehren.** Die neue Vorlage wird als Fluss  auf den Registerkarten Meine Flüsse aufgeführt und steht automatisch im **Dropdownsteuerelement** Automatisieren zur Verfügung, wenn Sie mit Insider-Risikomanagementfällen für den Benutzer arbeiten, der den Fluss erstellt.
+7. Wählen **Sie Schließen** aus, um zur Power Automate **zurückzukehren.** Die neue Vorlage wird als Fluss  auf den Registerkarten Meine Flüsse aufgeführt und steht automatisch im **Dropdownsteuerelement** Automatisieren zur Verfügung, wenn Sie mit Insider-Risikomanagementfällen für den Benutzer arbeiten, der den Fluss erstellt.
 
 >[!IMPORTANT]
 >Wenn andere Benutzer in Ihrer Organisation Zugriff auf den Fluss benötigen, muss der Fluss freigegeben werden.
 
 ![Insider risk management power automate flows](../media/insider-risk-settings-power-automate-flows.png)
 
-### <a name="create-a-custom-power-automate-flow-for-insider-risk-management"></a>Erstellen eines benutzerdefinierten Power Automate-Ablaufs für insider risk management
+### <a name="create-a-custom-power-automate-flow-for-insider-risk-management"></a>Erstellen eines benutzerdefinierten Power Automate für insider risk management
 
-Einige Prozesse und Workflows für Ihre Organisation sind möglicherweise außerhalb der empfohlenen Vorlagen für insider risk management flow, und Sie müssen möglicherweise benutzerdefinierte Power Automate-Flüsse für Insider-Risikomanagementbereiche erstellen. Power Automate-Flüsse sind flexibel und unterstützen umfassende Anpassungen, es müssen jedoch Schritte zur Integration in Insider-Risikomanagementfunktionen unternommen werden.
+Einige Prozesse und Workflows für Ihre Organisation sind möglicherweise außerhalb der empfohlenen Vorlagen für insider risk management flow, und Sie müssen möglicherweise benutzerdefinierte Power Automate für Insider-Risikomanagementbereiche erstellen. Power Automate sind flexibel und unterstützen umfassende Anpassungen, es müssen jedoch Schritte zur Integration in Insider-Risikomanagementfunktionen unternommen werden.
 
-Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Power Automate-Vorlage für das Insiderrisikomanagement zu erstellen:
+Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Power Automate für das Insider-Risikomanagement zu erstellen:
 
-1. **Überprüfen Sie Ihre Power Automate-Flusslizenz:** Zum Erstellen angepasster Power Automate-Flüsse, die Insider-Risikomanagement-Trigger verwenden, benötigen Sie eine Power Automate-Lizenz. Die empfohlenen Vorlagen für insider risk management flow erfordern keine zusätzliche Lizenzierung und sind Teil Ihrer Insider-Risikomanagementlizenz.
+1. **Überprüfen Sie Power Automate Ablauflizenz:** Um benutzerdefinierte Power Automate zu erstellen, die Insider-Risikomanagement-Trigger verwenden, benötigen Sie eine Power Automate Lizenz. Die empfohlenen Vorlagen für insider risk management flow erfordern keine zusätzliche Lizenzierung und sind Teil Ihrer Insider-Risikomanagementlizenz.
 2. **Erstellen eines automatisierten Ablaufs:** Erstellen Sie einen Fluss, der eine oder mehrere Aufgaben ausführt, nachdem er von einem Insider-Risikomanagementereignis ausgelöst wurde. Weitere Informationen zum Erstellen eines automatisierten Ablaufs finden Sie unter [Create a flow in Power Automate](/power-automate/get-started-logic-flow).
-3. **Wählen Sie den Microsoft 365-Complianceconnector** aus: Suchen Sie nach dem Microsoft 365-Complianceconnector, und wählen Sie diesen aus. Dieser Connector ermöglicht Insider-Risikomanagement-Trigger und -Aktionen. Weitere Informationen zu Connectors finden Sie im [Übersichtsartikel zur Connectorreferenz.](/connectors/connector-reference/)
-4. **Wählen Sie Insider-Risikomanagement-Trigger für Ihren** Fluss aus: Das Insider-Risikomanagement verfügt über zwei Trigger für benutzerdefinierte Power Automate-Flüsse:
+3. **Wählen Sie Microsoft 365 Complianceconnector** aus: Suchen Und wählen Sie den Microsoft 365 Complianceconnector aus. Dieser Connector ermöglicht Insider-Risikomanagement-Trigger und -Aktionen. Weitere Informationen zu Connectors finden Sie im [Übersichtsartikel zur Connectorreferenz.](/connectors/connector-reference/)
+4. **Wählen Sie Insider-Risikomanagement-Trigger für Ihren** Fluss aus: Das Insider-Risikomanagement verfügt über zwei Trigger für benutzerdefinierte Power Automate Flüsse:
     - **Für einen ausgewählten Fall für insider risk management**: Flüsse mit diesem Trigger können auf der Dashboardseite insider risk management cases ausgewählt werden.
     - **Für einen ausgewählten Insider-Risikomanagement-Benutzer:** Flüsse mit diesem Trigger können auf der Dashboardseite Insider risk management Users ausgewählt werden.
 5. Wählen Sie Insider-Risikomanagementaktionen für Ihren Fluss aus: Sie können aus mehreren Aktionen für das Insider-Risikomanagement auswählen, die in Ihren benutzerdefinierten Fluss einpassen:
@@ -419,80 +417,80 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Power Automat
     - Erhalten von Benachrichtigungen zum Risikomanagement von Insidern für einen Fall
     - Hinzufügen einer Insider-Risikomanagement-Fallnotiz
 
-### <a name="share-a-power-automate-flow"></a>Freigeben eines Power Automate-Ablaufs
+### <a name="share-a-power-automate-flow"></a>Freigeben eines Power Automate Ablaufs
 
-Standardmäßig sind von einem Benutzer erstellte Power Automate-Flüsse nur für diesen Benutzer verfügbar. Damit andere Benutzer des Insiderrisikomanagements Zugriff auf einen Fluss haben und einen Fluss verwenden können, muss der Fluss vom Flussersteller freigegeben werden. Um einen Fluss gemeinsam zu nutzen, verwenden Sie die Einstellungssteuerelemente in der **Insider-Risikomanagementlösung** im Microsoft 365  Compliance  Center oder die Option Power **Automate-Flüsse** verwalten über das Steuerelement Automatisieren, wenn Sie direkt auf den Dashboardseiten Fälle oder Benutzer arbeiten. Nachdem Sie einen Fluss freigegeben haben, kann jeder, für den er freigegeben  wurde, im **Dropdownmenü** Steuerelement automatisieren in den Fall- und **Benutzerdashboards** auf den Fluss zugreifen.
+Standardmäßig sind Power Automate, die von einem Benutzer erstellt werden, nur für den Benutzer verfügbar. Damit andere Benutzer des Insiderrisikomanagements Zugriff auf einen Fluss haben und einen Fluss verwenden können, muss der Fluss vom Flussersteller freigegeben werden. Um einen Fluss gemeinsam zu nutzen, verwenden  Sie die Einstellungssteuerelemente in der Insider-Risikomanagementlösung im Microsoft 365 Compliance Center oder  die  Option **Power Automate-Flüsse** verwalten über das Steuerelement Automatisieren, wenn Sie direkt auf den Dashboardseiten Fälle oder Benutzer arbeiten. Nachdem Sie einen Fluss freigegeben haben, kann jeder, für den er freigegeben  wurde, im **Dropdownmenü** Steuerelement automatisieren in den Fall- und **Benutzerdashboards** auf den Fluss zugreifen.
 
-Um einen Power Automate-Fluss im Einstellungsbereich gemeinsam verwenden zu können, müssen Sie Mitglied der Rollengruppe *Insider Risk Management* oder Insider Risk Management *Admin* sein. Um einen Power Automate-Fluss mit der Option **Power Automate-Flüsse** verwalten zu teilen, müssen Sie Mitglied mindestens einer Insider-Rollengruppe für das Risikomanagement sein.
+Um einen Power Automate im Einstellungsbereich zu teilen, müssen Sie Mitglied der Rollengruppe *Insider Risk Management* oder Insider Risk Management *Admin* sein. Um einen Power Automate mit der  Option Power Automate Verwalten von Flüssen zu teilen, müssen Sie Mitglied mindestens einer Rollengruppe für insider risk management sein.
 
-Führen Sie die folgenden Schritte aus, um einen Power Automate-Fluss zu teilen:
+Führen Sie die folgenden Schritte aus, um einen Power Automate zu teilen:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings** Power Automate flows  >  **aus.** Sie können auch auf den Seiten **Fälle oder** Benutzerdashboards zugreifen, indem Sie **Automatisieren** von Power   >  **Automate-Flüssen auswählen.**
-2. Wählen Sie **auf der Seite Power Automate Flows** die Registerkarte Meine **Flüsse** oder **Teamflüsse** aus.
+1. Wechseln Sie [Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings** Power Automate Flows  >  **aus.** Sie können auch auf den Seiten **Fälle oder** Benutzerdashboards zugreifen, indem Sie **Automatisieren** der Verwaltung von Power Automate   >  **auswählen.**
+2. Wählen Sie **Power Automate Seite "Meine**  Flüsse" oder **"Teamflüsse"** aus.
 3. Wählen Sie den zu teilende Fluss aus, und wählen Sie **dann im** Menü Flussoptionen die Option Freigeben aus.
 4. Geben Sie auf der Seite Flussfreigabe den Namen des Benutzers oder der Gruppe ein, den Sie als Besitzer für den Fluss hinzufügen möchten.
 5. Wählen Sie **im Dialogfeld Verbindung verwendet** **ok** aus, um zu bestätigen, dass der hinzugefügte Benutzer oder die hinzugefügte Gruppe Vollzugriff auf den Fluss hat.
 
-### <a name="edit-a-power-automate-flow"></a>Bearbeiten eines Power Automate-Ablaufs
+### <a name="edit-a-power-automate-flow"></a>Bearbeiten eines Power Automate Ablaufs
 
-Zum Bearbeiten eines Ablaufs verwenden Sie die Einstellungssteuerelemente in der **Insider-Risikomanagementlösung** im Microsoft 365 Compliance Center  oder die Option Power **Automate-Flüsse** verwalten über das **Steuerelement** Automatisieren, wenn Sie direkt in den Fällen oder Benutzerdashboards arbeiten. 
+Zum Bearbeiten eines Ablaufs verwenden Sie die  Einstellungssteuerelemente in der Insider-Risikomanagement-Lösung im Microsoft 365 Compliance Center oder die Option  **Power Automate-Flüsse** verwalten über das **Steuerelement** Automatisieren, wenn Sie direkt in den Fall- oder Benutzerdashboards arbeiten. 
 
-Um einen Power Automate-Fluss im Einstellungsbereich zu bearbeiten, müssen Sie Mitglied der Rollengruppe *Insider Risk Management* oder Insider Risk Management *Admin* sein. Um einen Power Automate-Fluss mit der Option **Power Automate-Flüsse** verwalten zu bearbeiten, müssen Sie Mitglied mindestens einer Rollengruppe für insider risk management sein.
+Um einen Power Automate im Einstellungsbereich zu bearbeiten, müssen Sie Mitglied der Rollengruppe *Insider Risk Management* oder Insider Risk Management *Admin* sein. Um einen Power Automate mit der  Option Power Automate verwalten zu bearbeiten, müssen Sie Mitglied mindestens einer Rollengruppe für insider risk management sein.
 
-Führen Sie die folgenden Schritte aus, um einen Power Automate-Fluss zu bearbeiten:
+Führen Sie die folgenden Schritte aus, um einen Power Automate zu bearbeiten:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings** Power Automate flows  >  **aus.** Sie können auch auf den Seiten **Fälle oder** Benutzerdashboards zugreifen, indem Sie **Automatisieren** von Power   >  **Automate-Flüssen auswählen.**
-2. Wählen Sie auf der **Seite Power Automate Flows** einen zu bearbeitende Fluss aus, und wählen Sie **im** Menü Flusssteuerelement bearbeiten aus.
-3. Wählen Sie **die Auslassungseinstellungen** aus, um eine Flusskomponenteneinstellung zu ändern, oder die  >   **Auslassungspunkte**  >  **Löschen,** um eine Flusskomponente zu löschen.
+1. Wechseln Sie [Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings** Power Automate Flows  >  **aus.** Sie können auch auf den Seiten **Fälle oder** Benutzerdashboards zugreifen, indem Sie **Automatisieren** der Verwaltung von Power Automate   >  **auswählen.**
+2. Wählen Sie **auf Power Automate Der Fluss** einen zu bearbeitende Fluss aus, und wählen Sie **im** Menü Flusssteuerelement bearbeiten aus.
+3. Wählen Sie **die Auslassungspunkte**  >  **Einstellungen,** um eine Flusskomponenteneinstellung zu ändern, oder die Auslassungspunkte  >  **Löschen,** um eine Flusskomponente zu löschen.
 4. Wählen **Sie Speichern** und dann Schließen **aus,** um die Bearbeitung des Ablaufs zu abschließen.
 
-### <a name="delete-a-power-automate-flow"></a>Löschen eines Power Automate-Ablaufs
+### <a name="delete-a-power-automate-flow"></a>Löschen eines Power Automate Ablaufs
 
-Zum Löschen eines Ablaufs verwenden Sie die **Einstellungssteuerelemente** in der **Insider-Risikomanagementlösung** im Microsoft 365 Compliance Center  oder die Option Power **Automate-Flüsse** verwalten über das **Steuerelement** Automatisieren, wenn Sie direkt in den Fällen oder Benutzerdashboards arbeiten. Wenn ein Fluss gelöscht wird, wird er als Option für alle Benutzer entfernt.
+Um einen Fluss zu löschen, verwenden Sie  die Einstellungssteuerelemente in der Insider-Risikomanagementlösung im Microsoft 365 Compliance Center oder die  Option **Power Automate-Flüsse** verwalten über das **Steuerelement** Automatisieren, wenn Sie direkt in den Fällen oder Benutzerdashboards arbeiten.  Wenn ein Fluss gelöscht wird, wird er als Option für alle Benutzer entfernt.
 
-Um einen Power Automate-Fluss im Einstellungsbereich zu löschen, müssen Sie Mitglied der Rollengruppe *Insider Risk Management* oder Insider Risk Management *Admin* sein. Um einen Power Automate-Fluss mit der Option **Power Automate-Flüsse** verwalten zu löschen, müssen Sie Mitglied mindestens einer Rollengruppe für insider risk management sein.
+Um einen Power Automate im Einstellungsbereich zu löschen, müssen Sie Mitglied der Rollengruppe *Insider Risk Management* oder Insider Risk Management *Admin* sein. Um einen Power Automate mit der  Option Power Automate Verwalten von Flüssen zu löschen, müssen Sie Mitglied mindestens einer Rollengruppe für insider risk management sein.
 
-Führen Sie die folgenden Schritte aus, um einen Power Automate-Fluss zu löschen:
+Führen Sie die folgenden Schritte aus, um einen Power Automate löschen:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings** Power Automate flows  >  **aus.** Sie können auch auf den Seiten **Fälle oder** Benutzerdashboards zugreifen, indem Sie **Automatisieren** von Power   >  **Automate-Flüssen auswählen.**
-2. Wählen Sie **auf der Seite Power Automate Flows** einen zu löschende Fluss aus, und wählen Sie **im** Menü Flusssteuerelement die Option Löschen aus.
+1. Wechseln Sie [Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings** Power Automate Flows  >  **aus.** Sie können auch auf den Seiten **Fälle oder** Benutzerdashboards zugreifen, indem Sie **Automatisieren** der Verwaltung von Power Automate   >  **auswählen.**
+2. Wählen Sie **auf Power Automate Flussseite** einen zu löschende Fluss aus, und wählen Sie **im** Menü Flusssteuerelement die Option Löschen aus.
 3. Wählen Sie im Dialogfeld Löschbestätigung die Option **Löschen** aus, um den Fluss zu entfernen, oder wählen Sie **Abbrechen** aus, um die Löschaktion zu beenden.
 
 ## <a name="microsoft-teams-preview"></a>Microsoft Teams (Vorschau)
 
-Complianceanalysten und Ermittler können Microsoft Teams problemlos für die Zusammenarbeit bei Insider-Risikomanagementfällen verwenden. Sie können sich koordinieren und mit anderen Beteiligten in Microsoft Teams kommunizieren, um:
+Complianceanalysten und Ermittler können die Microsoft Teams für die Zusammenarbeit bei Insider-Risikomanagementfällen verwenden. Sie können sich koordinieren und mit anderen Beteiligten in der Microsoft Teams:
 
-- Koordinieren und Überprüfen von Reaktionsaktivitäten für Fälle in privaten Teams-Kanälen
+- Koordinieren und Überprüfen von Reaktionsaktivitäten für Fälle in privaten Teams Kanälen
 - Sicheres Freigeben und Speichern von Dateien und Nachweisen im Zusammenhang mit einzelnen Fällen
 - Nachverfolgen und Überprüfen von Reaktionsaktivitäten von Analysten und Ermittlern
 
-Nachdem Microsoft Teams für das Insiderrisikomanagement aktiviert wurde, wird jedes Mal, wenn eine Warnung bestätigt und ein Fall erstellt wird, ein dediziertes Microsoft Teams-Team erstellt. Standardmäßig umfasst das Team automatisch alle Mitglieder der Rollengruppen *Insider Risk Management,* *Insider Risk Management Analysts* und *Insider Risk Management Investigators* (bis zu 100 anfängliche Benutzer). Weitere Mitwirkende der Organisation können dem Team hinzugefügt werden, nachdem es erstellt wurde, und gegebenenfalls. Bei vorhandenen Fällen, die vor der Aktivierung von Microsoft Teams erstellt wurden, können Analysten und Ermittler bei Bedarf ein neues Microsoft Teams-Team erstellen, wenn sie in einem Fall arbeiten.  Sobald Sie den zugeordneten Fall im Insider risk management aufgelöst haben, wird das Team automatisch archiviert (in ausgeblendet und schreibgeschützt verschoben).
+Nachdem Microsoft Teams für das Risikomanagement von Insidern aktiviert ist, wird jedes Mal, wenn eine Warnung bestätigt und ein Fall erstellt wird, ein dediziertes Microsoft Teams-Team erstellt. Standardmäßig umfasst das Team automatisch alle Mitglieder der Rollengruppen *Insider Risk Management,* *Insider Risk Management Analysts* und *Insider Risk Management Investigators* (bis zu 100 anfängliche Benutzer). Weitere Mitwirkende der Organisation können dem Team hinzugefügt werden, nachdem es erstellt wurde, und gegebenenfalls. Bei vorhandenen Fällen, die vor der Aktivierung der Microsoft Teams erstellt wurden, können Analysten und Ermittler bei Bedarf ein neues Microsoft Teams-Team erstellen.  Sobald Sie den zugeordneten Fall im Insider risk management aufgelöst haben, wird das Team automatisch archiviert (in ausgeblendet und schreibgeschützt verschoben).
 
-Weitere Informationen zur Verwendung von Teams und Kanälen in Microsoft Teams finden Sie unter Übersicht über Teams [und Kanäle in Microsoft Teams](/MicrosoftTeams/teams-channels-overview).
+Weitere Informationen zur Verwendung von Teams und Kanälen in Microsoft Teams finden Sie unter [Overview of teams and channels in Microsoft Teams](/MicrosoftTeams/teams-channels-overview).
 
-Die Aktivierung der Microsoft Teams-Unterstützung für Fälle ist schnell und einfach zu konfigurieren. Führen Sie die folgenden Schritte aus, um Microsoft Teams für das Insiderrisikomanagement zu aktivieren:
+Die Microsoft Teams unterstützung für Fälle ist schnell und einfach zu konfigurieren. Führen Sie die folgenden Schritte aus, um Microsoft Teams insider risk management zu aktivieren:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider risk **management** Insider  >  **risk settings**.
-2. Wählen Sie die **Registerkarte Microsoft Teams** aus.
-3. Aktivieren sie die Microsoft Teams-Integration für das Insider-Risikomanagement.
+1. Wechseln Sie [Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider risk **management** Insider  >  **risk settings**.
+2. Wählen Sie **die Microsoft Teams** aus.
+3. Aktivieren Microsoft Teams Integration für insider risk management.
 4. Wählen **Sie Speichern aus,** um zu konfigurieren und zu beenden.
 
-![Insider-Risikomanagement Microsoft Teams](../media/insider-risk-settings-teams.png)
+![Insider risk management Microsoft Teams](../media/insider-risk-settings-teams.png)
 
-### <a name="create-a-microsoft-teams-team-for-existing-cases"></a>Erstellen eines Microsoft Teams-Teams für vorhandene Fälle
+### <a name="create-a-microsoft-teams-team-for-existing-cases"></a>Erstellen eines Microsoft Teams für vorhandene Fälle
 
-Wenn Sie die Unterstützung von Microsoft Teams für das Insiderrisikomanagement aktivieren, nachdem Sie über vorhandene Fälle verfügen, müssen Sie bei Bedarf manuell ein Team für jeden Fall erstellen. Nach der Aktivierung der Microsoft Teams-Unterstützung in Insider-Risikomanagementeinstellungen erstellen neue Fälle automatisch ein neues Microsoft Teams-Team.
+Wenn Sie Microsoft Teams Unterstützung für das Insider risk management aktivieren, nachdem Sie über vorhandene Fälle verfügen, müssen Sie bei Bedarf manuell ein Team für jeden Fall erstellen. Nachdem sie Microsoft Teams unterstützung in Insider-Risikomanagementeinstellungen aktiviert haben, erstellen neue Fälle automatisch ein neues Microsoft Teams Team.
 
-Benutzer benötigen die Berechtigung zum Erstellen von Microsoft 365-Gruppen in Ihrer Organisation, um ein Microsoft Teams-Team aus einem Fall zu erstellen. Weitere Informationen zum Verwalten von Berechtigungen für Microsoft 365-Gruppen finden Sie [unter Manage who can create Microsoft 365 Groups](../solutions/manage-creation-of-groups.md).
+Benutzer benötigen die Berechtigung zum Erstellen Microsoft 365 Gruppen in Ihrer Organisation, um ein Microsoft Teams aus einem Fall zu erstellen. Weitere Informationen zum Verwalten von Berechtigungen für gruppen Microsoft 365 finden Sie unter [Manage who can create Microsoft 365 Groups](../solutions/manage-creation-of-groups.md).
 
 Zum Erstellen eines Teams für einen Fall verwenden Sie das Steuerelement Microsoft Team erstellen, wenn Sie direkt in einem vorhandenen Fall arbeiten. Führen Sie die folgenden Schritte aus, um ein neues Team zu erstellen:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management**  >  **Cases,** und wählen Sie einen vorhandenen Fall aus.
+1. Wechseln Sie [Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management**  >  **Cases,** und wählen Sie einen vorhandenen Fall aus.
 2. Wählen Sie im Menü Fallaktion die Option **Microsoft Team erstellen aus.**
-3. Geben Sie **im Feld Teamname** einen Namen für das neue Microsoft Teams-Team ein.
+3. Geben Sie **im Feld Teamname** einen Namen für das neue Microsoft Teams ein.
 4. Wählen **Sie Microsoft-Team erstellen** aus, und wählen Sie dann Schließen **aus.**
 
-Abhängig von der Anzahl der Benutzer, die Rollengruppen des Insiderrisikomanagements zugewiesen sind, kann es 15 Minuten dauern, bis alle Ermittler und Analysten dem Microsoft Teams-Team für einen Fall hinzugefügt werden.
+Abhängig von der Anzahl der Benutzer, die Rollengruppen für das Insiderrisikomanagement zugewiesen sind, kann es 15 Minuten dauern, bis alle Ermittler und Analysten dem Microsoft Teams für einen Fall hinzugefügt werden.
 
 ## <a name="analytics-preview"></a>Analytics (Vorschau)
 
@@ -506,19 +504,19 @@ Sehen Sie sich [das Video zu Insider Risk Management Analytics](https://www.yout
 
 Analysescans auf Risikoaktivitätsereignisse aus mehreren Quellen, um Einblicke in potenzielle Risikobereiche zu ermitteln. Je nach aktueller Konfiguration sucht die Analyse nach qualifizierenden Risikoaktivitäten in den folgenden Bereichen:
 
-- **Microsoft 365-Überwachungsprotokolle:** Dies ist die primäre Quelle für die Identifizierung der meisten potenziell riskanter Aktivitäten, die in allen Scans enthalten sind.
-- **Exchange Online**: Exchange Online-Aktivitäten, die in allen Scans enthalten sind, helfen dabei, Aktivitäten zu identifizieren, bei denen Daten in Anlagen per E-Mail an externe Kontakte oder Dienste gesendet werden.
-- **Azure Active Directory**: Der Azure Active Directory-Verlauf, der in allen Scans enthalten ist, hilft, riskante Aktivitäten zu identifizieren, die Benutzern mit gelöschten Benutzerkonten zugeordnet sind.
-- **Microsoft 365 HR-Datenconnector:** Wenn konfiguriert, helfen Hr-Connector-Ereignisse, riskante Aktivitäten zu identifizieren, die Benutzern mit Kündigungs- oder bevorstehenden Beendigungsterminen zugeordnet sind.
+- **Microsoft 365 Überwachungsprotokolle**: Dies ist die primäre Quelle für die Identifizierung der meisten potenziell riskanter Aktivitäten, die in allen Scans enthalten sind.
+- **Exchange Online**: In allen Scans enthalten, hilft Exchange Online Aktivitäten zu identifizieren, bei denen Daten in Anlagen per E-Mail an externe Kontakte oder Dienste gesendet werden.
+- **Azure Active Directory**: In allen Scans enthalten, hilft Azure Active Directory, riskante Aktivitäten zu identifizieren, die Benutzern mit gelöschten Benutzerkonten zugeordnet sind.
+- **Microsoft 365 Hr Data Connector:** Wenn konfiguriert, helfen Hr Connector-Ereignisse, riskante Aktivitäten zu identifizieren, die Benutzern mit Kündigungs- oder bevorstehenden Beendigungsterminen zugeordnet sind.
 
 Analyseeinblicke aus Scans basieren auf denselben Risikoaktivitätssignalen, die von Insider-Risikomanagementrichtlinien verwendet werden, und melden Ergebnisse basierend auf einzel- und sequenzbezogenen Benutzeraktivitäten. Die Risikobewertung für Analysen basiert jedoch auf bis zu 30 Tagen Aktivität, während Insiderrisikorichtlinien tägliche Aktivitäten für Einblicke verwenden. Wenn Sie die Analyse zum ersten Mal in Ihrer Organisation aktivieren und ausführen, werden die Scanergebnisse für einen Tag angezeigt. Wenn Sie die Analyse aktiviert lassen, sehen Sie die Ergebnisse jeder täglichen Überprüfung, die den Einblicksberichten für einen maximalen Bereich der vorherigen 30 Tage der Aktivität hinzugefügt wurde.
 
 ### <a name="enable-analytics-and-start-your-scan"></a>Aktivieren der Analyse und Starten des Scans
 
-Um insider risk analytics zu aktivieren, müssen Sie Mitglied der Rollengruppe Insider Risk Management, Insider Risk Management Admin oder Microsoft 365 Global admin sein.
+Um insider risk analytics zu aktivieren, müssen Sie Mitglied der Rollengruppe "Insider Risk Management", "Insider Risk Management Admin" oder "Microsoft 365 Globaler Administrator" sein.
 Führen Sie die folgenden Schritte aus, um insider risk analytics zu aktivieren:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management**.
+1. Wechseln Sie [Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management**.
 2. Wählen **Sie auf** der Registerkarte Übersicht über insider risk management die Option Überprüfung auf Insiderrisiken **auf** Ihrer Organisationskarte **ausführen** aus. Dadurch wird die Analyseprüfung für Ihre Organisation aktiviert. Sie können die Überprüfung auch in Ihrer Organisation aktivieren, indem Sie zu **Insider** risk settings Analytics navigieren und die Benutzeraktivität Ihres Mandanten überprüfen aktivieren, um potenzielle  >   **Insiderrisiken zu identifizieren.**
 3. Wählen Sie **im Detailbereich** Analyse die Option **Scan ausführen** aus, um die Überprüfung für Ihre Organisation zu starten. Die Analysescanergebnisse können bis zu 24 Stunden dauern, bis Einblicke als Berichte zur Überprüfung zur Verfügung stehen.
 
@@ -544,10 +542,10 @@ Um weitere Informationen für einen Einblick anzuzeigen, wählen Sie **Details a
 
 ### <a name="turn-off-analytics"></a>Deaktivieren der Analyse
 
-Um insider risk analytics zu deaktivieren, müssen Sie Mitglied der Rollengruppe *Insider Risk Management,* *Insider Risk Management Admin* oder Microsoft 365 Global *admin* sein. Nach dem Deaktivieren der Analyse bleiben Analyseberichte statisch und werden nicht für neue Risiken aktualisiert.
+Um insider risk analytics zu deaktivieren, müssen Sie Mitglied der Rollengruppe *"Insider Risk Management",* *"Insider Risk Management Admin"* oder "Microsoft 365 *Globaler* Administrator" sein. Nach dem Deaktivieren der Analyse bleiben Analyseberichte statisch und werden nicht für neue Risiken aktualisiert.
 
 Führen Sie die folgenden Schritte aus, um die Insiderrisikoanalyse zu deaktivieren:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management**.
+1. Wechseln Sie [Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management**.
 2. Wählen **Sie Die Seite Insider risk settings**  >  **Analytics** aus.
 3. Deaktivieren Sie auf der **Seite** Analyse die Benutzeraktivität Ihres Mandanten überprüfen, **um potenzielle Insiderrisiken zu identifizieren.**

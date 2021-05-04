@@ -17,64 +17,64 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Eine Microsoft 365-schulungsable-Klassifizierung ist ein Tool, mit dem Sie verschiedene Arten von Inhalten erkennen können, indem Sie positive und negative Beispiele für Ihre Untersuchung geben. Nach der Schulung der Klassifizierung bestätigen Sie, dass die Ergebnisse korrekt sind. Anschließend können Sie die Inhalte Ihrer Organisation durchsuchen und klassifizieren, um Aufbewahrungs-oder Vertraulichkeits Bezeichnungen anzuwenden oder Sie in Datenverlust Verhinderung (DLP) oder in Aufbewahrungsrichtlinien einzubeziehen.
-ms.openlocfilehash: 0e5f712b76af2fba3d456997a47352773d92d766
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+description: Ein Microsoft 365 trainierbarer Klassifikator ist ein Tool, das Sie trainieren können, um verschiedene Arten von Inhalten zu erkennen, indem Sie ihm positive und negative Beispiele zum Betrachten geben. Sobald der Klassifizierer geschult wurde, bestätigen Sie, dass die Ergebnisse korrekt sind. Anschließend verwenden Sie es, um die Inhalte Ihrer Organisation zu durchsuchen und zu klassifizieren, um Aufbewahrungs- oder Vertraulichkeitsbezeichnungen anzuwenden oder sie in Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) oder Aufbewahrungsrichtlinien einzubehalten.
+ms.openlocfilehash: 1881e4de87fd41f21bb1f2236d46391b3a1ed785
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759899"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114051"
 ---
 # <a name="learn-about-trainable-classifiers"></a>Weitere Informationen zu trainierbaren Klassifizierern
 
-Das klassifizieren und kennzeichnen von Inhalten, damit es geschützt und ordnungsgemäß behandelt werden kann, ist der Ausgangspunkt für die Informationsschutz Disziplin. Microsoft 365 verfügt über drei Möglichkeiten zum Klassifizieren von Inhalten.
+Die Klassifizierung und Bezeichnung von Inhalten, damit sie geschützt und ordnungsgemäß behandelt werden können, ist der Ausgangspunkt für die Informationsschutz-Disziplin. Microsoft 365 bietet drei Möglichkeiten zum Klassifizieren von Inhalten.
 
 ## <a name="manually"></a>Manuell
 
-Für diese Methode ist menschliches Urteilen und Handeln erforderlich. Ein Administrator kann entweder die bereits vorhandenen Bezeichnungen und Typen vertraulicher Informationen verwenden oder eigene erstellen und diese dann veröffentlichen. Benutzer und Administratoren wenden diese auf Inhalte an, wenn Sie darauf stoßen. Anschließend können Sie den Inhalt schützen und seine Disposition verwalten.
+Diese Methode erfordert menschliches Urteilsvermögen und Handeln. Ein Administrator kann entweder die bereits vorhandenen Bezeichnungen und Typen vertraulicher Informationen verwenden oder eigene erstellen und diese dann veröffentlichen. Benutzer und Administratoren wenden sie auf Inhalte an, wenn sie auf sie stoßen. Anschließend können Sie den Inhalt schützen und dessen Disposition verwalten.
 
-## <a name="automated-pattern-matching"></a>Automatischer Musterabgleich
+## <a name="automated-pattern-matching"></a>Automatisierte Musterabgleich
 
-Diese Kategorie von Klassifizierungsmechanismen umfasst die Suche nach Inhalten nach folgenden Themen:
+Diese Kategorie von Klassifizierungsmechanismen umfasst die Suche nach Inhalten nach:
 
-- Schlüsselwörter oder Metadatenwerte (Stichwortabfrage Sprache).
-- Verwenden zuvor identifizierter Muster vertraulicher Informationen wie soziale Sicherheit, Kreditkarten-oder Bank Kontonummern [(vertrauliche Informationstypen – Entitätsdefinitionen)](sensitive-information-type-entity-definitions.md).
-- Erkennen eines Elements, da es sich um eine Variation einer Vorlage handelt [(Dokumentieren des Finger Drucks)](document-fingerprinting.md).
-- Verwenden des Vorhandenseins exakter Zeichenfolgen [(exakte Datenübereinstimmung)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
+- Schlüsselwörter oder Metadatenwerte (Stichwortabfragesprache).
+- Verwenden zuvor identifizierter Muster vertraulicher Informationen wie z. B. Sozialversicherung, Kreditkarten- oder Bankkontonummern (Entitätsdefinitionen vom Typ ["Vertrauliche Informationen")](sensitive-information-type-entity-definitions.md).
+- Erkennen eines Elements, da es sich um eine Variation auf einer Vorlage [(Dokumentfingerdruck) ist.](document-fingerprinting.md)
+- Verwenden von exakten Zeichenfolgen [(genaue Daten übereinstimmend)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md).
 
-Sensitivitäts-und Aufbewahrungs Bezeichnungen können dann automatisch angewendet werden, um die Inhalte für die Verwendung in [Datenverlust Verhinderung (DLP)](data-loss-prevention-policies.md) und [automatisch anwenden von Policen für Aufbewahrungs Bezeichnungen](apply-retention-labels-automatically.md)verfügbar zu machen.
+Vertraulichkeits- und Aufbewahrungsbezeichnungen können dann automatisch angewendet werden, um die Inhalte für die Verwendung in [Informationen](dlp-learn-about-dlp.md)zur Verhinderung von Datenverlust zur Verfügung zu stellen und die Polizei für [Aufbewahrungsbezeichnungen](apply-retention-labels-automatically.md)automatisch anzuwenden.
 
 ## <a name="classifiers"></a>Klassifizierungen
 
-Diese Klassifizierungsmethode eignet sich besonders gut für Inhalte, die nicht einfach durch die manuellen oder automatisierten Mustervergleichsmethoden identifiziert werden können. Bei dieser Klassifizierungsmethode geht es eher darum, einen Klassifizierer so zu trainieren, dass er ein Element anhand dessen identifiziert, was das Element ist, und nicht anhand von Elementen, die sich im Element befinden (Musterabgleich). Eine Klassifizierung zeigt, wie Sie einen Inhaltstyp identifizieren, indem Sie sich Hunderte Beispiele für die Inhalte ansehen, die Sie bei der Klassifizierung interessieren. Sie beginnen mit dem Füttern von IT-Beispielen, die definitiv in der Kategorie sind. Nachdem diese verarbeitet wurden, testen Sie Sie, indem Sie eine Kombination aus sowohl passenden als auch nicht passenden Beispielen zuweisen. Die Klassifizierung legt dann Vorhersagen fest, ob ein bestimmtes Element in die Kategorie fällt, die Sie erstellen. Anschließend bestätigen Sie die Ergebnisse, sortieren die wahren positiven Werte, true negative, falsch positive Ergebnisse und falsche Negative, um die Genauigkeit der Vorhersagen zu verbessern. 
+Diese Klassifizierungsmethode eignet sich besonders gut für Inhalte, die weder von den manuellen noch von automatisierten Mustervergleichsmethoden leicht identifiziert werden können. Bei dieser Klassifizierungsmethode geht es eher darum, einen Klassifizierer so zu trainieren, dass er ein Element anhand dessen identifiziert, was das Element ist, und nicht anhand von Elementen, die sich im Element befinden (Musterabgleich). Ein Klassifikator lernt, wie sie einen Inhaltstyp identifizieren, indem er sich Hunderte von Beispielen der Inhalte anschaut, die Sie für die Klassifizierung interessieren. Sie beginnen mit dem Einfüttern von Beispielen, die definitiv in der Kategorie sind. Nachdem sie diese verarbeitet haben, testen Sie sie, indem Sie ihm eine Mischung aus übereinstimmenden und nicht übereinstimmenden Beispielen geben. Der Klassifikator gibt dann Vorhersagen darüber ab, ob ein bestimmtes Element in die Kategorie fällt, die Sie erstellen. Anschließend bestätigen Sie die Ergebnisse und sortieren die wahren Positiven, echten Negativen, falsch positiven und falsch negativen Ergebnisse aus, um die Genauigkeit der Vorhersagen zu erhöhen. 
 
-Wenn Sie die Klassifizierung veröffentlichen, werden Elemente an Speicherorten wie SharePoint Online, Exchange und OneDrive sortiert, und der Inhalt wird klassifiziert. Nachdem Sie die Klassifizierung veröffentlicht haben, können Sie Sie mit einem Feedbackprozess weiterbilden, der dem anfänglichen Schulungsprozess ähnelt.
+Wenn Sie den Klassifizierer veröffentlichen, sortiert er Elemente an Speicherorten wie SharePoint Online, Exchange und OneDrive und ordnet den Inhalt ein. Nachdem Sie den Klassifizierer veröffentlicht haben, können Sie ihn mithilfe eines Feedbackprozesses weiter schulen, der dem anfänglichen Schulungsvorgang ähnelt.
 
-### <a name="where-you-can-use-trainable-classifiers"></a>Wo Sie Schulungs Klassifizierer verwenden können
-Sowohl integrierte Klassifizierungen als auch eingestufte Klassifizierungen stehen als Bedingung für die automatische [Kennzeichnung von Office mit Vertraulichkeits Bezeichnungen](apply-sensitivity-label-automatically.md), [automatisch angewendete Aufbewahrungs Bezeichnungsrichtlinie basierend auf einer Bedingung](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) und in der [Kommunikations Konformität](communication-compliance.md)zur Verfügung. 
+### <a name="where-you-can-use-trainable-classifiers"></a>Wo Sie trainierbare Klassifikatoren verwenden können
+Sowohl integrierte Klassifikatoren als auch trainierbare Klassifikatoren sind als Bedingung für Office [autolabeling mit](apply-sensitivity-label-automatically.md)Vertraulichkeitsbezeichnungen, [](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) automatisch angewendete Aufbewahrungsbezeichnungsrichtlinie basierend auf einer Bedingung und in der Kommunikationskonformität [verfügbar.](communication-compliance.md) 
 
-Vertraulichkeits Bezeichnungen können Klassifizierungen als Bedingungen verwenden, siehe [Anwenden einer Vertraulichkeits Bezeichnung auf Inhalte automatisch](apply-sensitivity-label-automatically.md).
+Vertraulichkeitsbezeichnungen können Klassifizierungen als Bedingungen verwenden. Weitere Informationen finden Sie unter [Apply a sensitivity label to content automatically](apply-sensitivity-label-automatically.md).
 
 > [!IMPORTANT]
-> Klassifizierungen funktionieren nur mit Elementen, die nicht verschlüsselt sind und sich in Englisch befinden.
+> Klassifizierungen funktionieren nur mit Elementen, die nicht verschlüsselt sind und auf Englisch sind.
 
 ## <a name="types-of-classifiers"></a>Typen von Klassifizierungen
 
-- **vorab ausgebildete Klassifizierungen** – Microsoft hat eine Reihe von Klassifizierungen erstellt und vorab geschult, die Sie verwenden können, ohne Sie zu Schulen. Diese Klassifizierungen werden mit dem Status von angezeigt `Ready to use` .
-- **benutzerdefinierte** Klassifizierungen – wenn Klassifizierungsanforderungen über das hinausgehen, was die vorgeschulten Klassifizierungen umfassen, können Sie eigene Klassifizierungen erstellen und Schulen.
+- **vorab geschulte Klassifikatoren** – Microsoft hat eine Reihe von Klassifizierungen erstellt und vortrainiert, die Sie verwenden können, ohne sie zu trainieren. Diese Klassifizierungen werden mit dem Status `Ready to use` angezeigt.
+- **Benutzerdefinierte Klassifikatoren** – Wenn Sie Klassifizierungsanforderungen haben, die über das hinausgehen, was die vordefinierten Klassifizierungen abdecken, können Sie Eigene Klassifikatoren erstellen und schulen.
 
-### <a name="pre-trained-classifiers"></a>Vorab ausgebildete Klassifizierungen
+### <a name="pre-trained-classifiers"></a>Vortrainierte Klassifikatoren
 
-Microsoft 365 verfügt über fünf vorab ausgebildete Klassifizierungen:
+Microsoft 365 verfügt über fünf vordefinierte Klassifikatoren:
 
 > [!CAUTION]
-> Wir verwerfen die vorab ausgebildete Klassifizierung der **offensiven Sprache** , da Sie eine hohe Anzahl falsch positiver Ergebnisse erzeugt. Verwenden Sie es nicht, und wenn Sie es derzeit verwenden, sollten Sie Ihre Geschäftsprozesse aus dieser entfernen. Es wird empfohlen, stattdessen die vorab ausgebildeten Klassifizierungen " **Bedrohung**", " **Profanität**" und " **Belästigung** " zu verwenden.
+> Der vortrainierte Klassifikator Anstößige Sprache wird veraltet, da er eine hohe Anzahl falsch positiver Ergebnisse erzeugt hat.  Verwenden Sie es nicht, und wenn Sie es derzeit verwenden, sollten Sie Ihre Geschäftsprozesse davon abziehen. Es wird empfohlen, stattdessen die Klassifikatoren **Threat,** **Profanity** und **Harassment** zu verwenden.
 
-- **Lebensläufe**: erkennt Elemente, bei denen es sich um Text Konten für persönliche, pädagogische, berufliche Qualifikationen, Berufserfahrung und andere personenbezogene Informationen handelt.
-- **Quellcode**: erkennt Elemente, die eine Reihe von Anweisungen und Anweisungen enthalten, die in den Top 25 verwendeten Computer Programmiersprachen auf GitHub geschrieben wurden.
+- **Resumes**: erkennt Elemente, bei denen es sich um Textkonten der persönlichen, bildungsbezogenen, beruflichen Qualifikationen, Arbeitserfahrungen und anderer persönlich identifizierenden Informationen eines Antragstellers handelt.
+- **Quellcode**: erkennt Elemente, die eine Reihe von Anweisungen und Anweisungen enthalten, die in den 25 am meisten verwendeten Computerprogrammiersprachen auf GitHub
     - ActionScript
     - C
-    - C#
+    - C #
     - C++
     - Clojure
     - CoffeeScript
@@ -92,52 +92,52 @@ Microsoft 365 verfügt über fünf vorab ausgebildete Klassifizierungen:
     - Ruby
     - Scala
     - Shell
-    - SWIFT
+    - Swift
     - Tex
     - Vim-Skript
 
 > [!NOTE]
-> Der Quellcode wird geschult, um zu erkennen, wann der Hauptteil des Texts Quellcode ist. Es wird kein quellcodetext erkannt, der mit nur-Text vermischt wird.
+> Der Quellcode wird geschult, um zu erkennen, ob der Großteil des Texts Quellcode ist. Es erkennt keinen Quellcodetext, der mit Nur-Text durchsperrt ist.
 
-- **Belästigung**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache im Zusammenhang mit anstößigem Verhalten, das auf eine oder mehrere Personen basierend auf den folgenden Merkmalen ausgerichtet ist: Rasse, Ethnizität, Religion, nationale Herkunft, Geschlecht, sexuelle Orientierung, Alter, Behinderung
-- **Profanität**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache, die Ausdrücke enthalten, die die meisten Personen in Verlegenheit bringen
-- **Threat**: erkennt eine bestimmte Kategorie von Textelementen anstößiger Sprache im Zusammenhang mit Bedrohungen, um Gewalt zu begehen oder physischen Schaden oder einer Person oder einer Eigenschaft zu Schaden
+- **Belästigung**: Erkennt eine bestimmte Kategorie von anstößigen Sprachtextelementen im Zusammenhang mit anstößigem Verhalten, das auf eine oder mehrere Personen ausgerichtet ist, basierend auf den folgenden Merkmalen: Rasse, Ethnischer Zugehörigkeit, Religiöser, nationaler Ursprung, Geschlecht, sexuelle Ausrichtung, Alter, Behinderung
+- **Profanity**: Erkennt eine bestimmte Kategorie von anstößigen Sprachtextelementen, die Ausdrücke enthalten, die die meisten Personen in Verlegenheit setzen
+- **Bedrohung**: erkennt eine bestimmte Kategorie anstößiger Sprachtextelemente im Zusammenhang mit Bedrohungen, um Gewalt zu begehen oder physischen Schaden an einer Person oder Eigenschaft zu verursachen.
 
-Diese werden in der Ansicht **Microsoft 365 Compliance Center**  >  -**Klassifizierungs**  >  **Schulung** mit dem Status `Ready to use` .
+Diese werden in der Ansicht **Microsoft 365 Compliance Center**  >  **Datenklassifizierung**  >  **Trainierbare Klassifizierungen** mit dem Status `Ready to use` angezeigt.
 
-![Klassifizierungen – vorab geschulte-Klassifizierungen](../media/classifiers-ready-to-use-classifiers.png)
+![classifiers-pre-trained-classifiers](../media/classifiers-ready-to-use-classifiers.png)
 
 > [!IMPORTANT]
-> Bitte beachten Sie, dass die beleidigende Sprache, Belästigung, Profanität und Bedrohungs Klassifizierungen nur mit durchsuchbarem Text funktionieren, die nicht erschöpfend oder vollständig sind.  Außerdem ändern sich die Sprach-und Kulturstandards ständig, und in Anbetracht dieser Gegebenheiten behält sich Microsoft das Recht vor, diese Klassifizierungen nach eigenem Ermessen zu aktualisieren. Während die Klassifizierungen Ihre Organisation bei der Überwachung von anstößigen und anderen Sprachen unterstützen können, befassen sich die Klassifizierungsverfahren nicht mit den Konsequenzen dieser Sprache und dienen nicht dazu, die Verwendung dieser Sprache allein zu überwachen oder zu beantworten. Ihre Organisation und nicht Microsoft oder ihre Niederlassungen bleiben für alle Entscheidungen im Zusammenhang mit der Überwachung, Durchsetzung, Sperrung, Entfernung und Aufbewahrung von Inhalten, die von einer vorab ausgebildeten Klassifizierung identifiziert werden, verantwortlich.
+> Bitte beachten Sie, dass die anstößigen Sprach-, Schikanen-, Profanitäts- und Bedrohungsklassifikatoren nur mit durchsuchbarem Text funktionieren, nicht vollständig oder vollständig sind.  Darüber hinaus ändern sich die Sprach- und Kulturstandards ständig, und angesichts dieser Realität behält sich Microsoft das Recht vor, diese Klassifizierungen nach eigenem Ermessen zu aktualisieren. Während die Klassifizierungen Ihre Organisation bei der Überwachung von Anstößigen und anderen verwendeten Sprachen unterstützen können, gehen die Klassifikatoren nicht auf die Folgen einer solchen Sprache ein und sind nicht dafür vorgesehen, die alleinigen Mittel ihrer Organisation zur Überwachung oder Reaktion auf die Verwendung dieser Sprache zur Verfügung zu stellen. Ihre Organisation und nicht Microsoft oder seine Tochtergesellschaften sind weiterhin für alle Entscheidungen im Zusammenhang mit der Überwachung, Durchsetzung, Blockierung, Entfernung und Aufbewahrung von Inhalten verantwortlich, die von einem vortrainierten Klassifikator identifiziert werden.
 
 ### <a name="custom-classifiers"></a>Benutzerdefinierte Klassifizierungen
 
-Wenn die vorab ausgebildeten Klassifizierungen nicht Ihren Anforderungen entsprechen, können Sie eigene Klassifizierungen erstellen und Schulen. Es gibt wesentlich mehr Arbeit bei der Erstellung Ihrer eigenen, aber Sie werden viel besser auf ihre Organisationen zugeschnitten werden muss. 
+Wenn die vordefinierten Klassifikatoren Ihre Anforderungen nicht erfüllen, können Sie Ihre eigenen Klassifizierungen erstellen und schulen. Es ist wesentlich mehr Arbeit an der Erstellung Eigener beteiligt, aber sie sind viel besser auf Die Anforderungen Ihrer Organisation zugeschnitten. 
 
-Sie können beispielsweise Schulungs Klassifizierer für Folgendes erstellen:
+Sie können z. B. trainierbare Klassifikatoren für folgende Informationen erstellen:
  
-- Legal Documents-wie Anwalt Client Privileg, Closing Sets, Statement of Work
-- Strategische Geschäftsdokumente wie Pressemitteilungen, Fusionen und Akquisitionen, Abschlüsse, Geschäfts-oder Marketingpläne, geistiges Eigentum, Patente, Design Dokumente
-- Preisinformationen – wie Rechnungen, Preis Anführungszeichen, Arbeitsaufträge, Gebots Dokumente 
-- Finanzinformationen wie organisatorische Investitionen, Quartals-oder Jahresergebnisse    
+- Rechtliche Dokumente – z. B. Anwalts-Clientrechte, Schließende Sätze, Arbeitsanweisung
+- Strategische Geschäftsdokumente – wie Pressemitteilungen, Fusionen und Übernahmen, Deals, Geschäfts- oder Marketingpläne, geistiges Eigentum, Patente, Entwurfsdokumente
+- Preisinformationen – wie Rechnungen, Preisangebote, Arbeitsaufträge, Bietdokumente 
+- Finanzinformationen – z. B. Unternehmensinvestitionen, Quartals- oder Jahresergebnisse    
 
-#### <a name="process-flow-for-creating-custom-classifiers"></a>Prozessablauf zum Erstellen benutzerdefinierter Klassifizierungen
+#### <a name="process-flow-for-creating-custom-classifiers"></a>Prozessablauf zum Erstellen benutzerdefinierter Klassifikatoren
 
-Das Erstellen und Veröffentlichen einer Klassifizierung für die Verwendung in Compliance-Lösungen wie Aufbewahrungsrichtlinien und Kommunikationsüberwachung folgt diesem Fluss. Weitere Informationen zum Erstellen einer benutzerdefinierten Klassifizierer-Klassifizierung finden Sie unter [Erstellen einer benutzerdefinierten Klassifizierung](classifier-get-started-with.md).
+Das Erstellen und Veröffentlichen eines Klassifizierer für die Verwendung in Compliancelösungen, z. B. Aufbewahrungsrichtlinien und Kommunikationsüberwachung, folgt diesem Fluss. Weitere Informationen zum Erstellen eines benutzerdefinierten trainierbaren Klassifikierers finden Sie unter [Creating a custom classifier](classifier-get-started-with.md).
 
-![benutzerdefinierte Prozessablauf Klassifizierung](../media/classifier-trainable-classifier-flow.png)
+![benutzerdefinierter Klassifikator für Prozessfluss](../media/classifier-trainable-classifier-flow.png)
 
-### <a name="retraining-classifiers"></a>Umschulungs Klassifizierungen
+### <a name="retraining-classifiers"></a>Umschulung von Klassifizierungen
 
-Sie können die Genauigkeit aller benutzerdefinierten Klassifizierungen und einiger vorab ausgebildeter Klassifizierungen verbessern, indem Sie Ihnen Feedback zur Genauigkeit der von Ihnen durchgeführten Klassifizierung liefern. Dies wird als Umschulung bezeichnet und folgt diesem Workflow.
+Sie können dazu beitragen, die Genauigkeit aller benutzerdefinierten Klassifikatoren und einiger vordefinierter Klassifizierungen zu verbessern, indem Sie ihnen Feedback zur Genauigkeit der von ihnen durchzuführenden Klassifizierung geben. Dies wird als Umschulung bezeichnet und folgt diesem Workflow.
 
-![Klassifizierungs Umschulungs Workflow](../media/classifier-retraining-workflow.png)
+![Klassifizierer-Umschulungsworkflow](../media/classifier-retraining-workflow.png)
 
 ## <a name="see-also"></a>Siehe auch
 
 - [Aufbewahrungsbezeichnungen](retention.md)
-- [Verhinderung von Datenverlust (Data Loss Prevention, DLP)](data-loss-prevention-policies.md)
+- [Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)
 - [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
 - [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
-- [Dokumentieren des Finger Drucks](document-fingerprinting.md)
-- [Exakte Datenübereinstimmung](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Drucken von Dokumentenfingern](document-fingerprinting.md)
+- [Genaue Übereinstimmung der Daten](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen für IT-Administratoren zur Verwaltung von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobilgeräte und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3aa5c8065b882dff670d6b829141955bf615d933
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 55c22c9901f163fdf64e6148d5b2c19e51136bc1
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599840"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086802"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -65,7 +65,7 @@ Die aufgelisteten Zahlen sind die minimale Office-Anwendungsversion, die für je
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Benutzern das Zuweisen von Berechtigungen gestatten: <br /> – Benutzer auffordern](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | Wird überprüft   | Wird überprüft         | Wird überprüft                                                        |
 |[Überwachung bezeichnungsbezogener Benutzeraktivitäten](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | Rollout: 16.0.13628+ | Ja <sup>\*</sup>                                                        |
-|[Von Benutzern fordern, dass sie eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | Rollout: 16.45+         | Vorschau: [Betakanal](https://office.com/insider) | Rollout: 16.0.13628+ | Wird überprüft                                            
+|[Von Benutzern fordern, dass sie eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | Rollout: 16.45+         | Rollout: 2.47+ | Rollout: 16.0.13628+ | Rollout                                            
 |[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Rollout: 16.44+ | Wird überprüft | Wird überprüft | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Unterstützung von gemeinsame Erstellung und AutoSpeichern](sensitivity-labels-coauthoring.md) für beschriftete und verschlüsselte Dokumente | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider) | Vorschau: [Betakanal](https://office.com/insider) | Wird überprüft | Wird überprüft | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
@@ -85,20 +85,19 @@ Die aufgelisteten Zahlen sind die minimale Office-Anwendungsversion, die für je
 |[Eine Begründung für die Änderung einer Beschriftung verlangen](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Link zu einer benutzerdefinierten Hilfeseite bereitstellen](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Inhalt markieren](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
-|[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables) <sup>1</sup>                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
+|[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Benutzern das Zuweisen von Berechtigungen gestatten: <br /> – Nicht weiterleiten](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
-|[Benutzern das Zuweisen von Berechtigungen gestatten: <br /> – Nur verschlüsseln](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | Wird überprüft | Wird überprüft  | Wird überprüft | Rollout |
-|[Von Benutzern fordern, dass sie eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | Rollout: 2101+                        | 16.43+ <sup>2</sup>                    | Wird überprüft            | Wird überprüft                | Ja                |
+|[Benutzern das Zuweisen von Berechtigungen gestatten: <br /> – Nur verschlüsseln](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ | 4.2112.0+  | 4.2112.0+ | Ja |
+|[Von Benutzern fordern, dass sie eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | Rollout: 4.2111+            | Rollout: 4.2111+                | Ja                |
 |[Überwachung bezeichnungsbezogener Benutzeraktivitäten](data-classification-activity-explorer.md) | 2011+ | Wird überprüft | Wird überprüft           | Wird überprüft               | Wird überprüft |
-|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>2</sup>                    | Wird überprüft           | Wird überprüft               | Ja |
+|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Wird überprüft           | Wird überprüft               | Ja |
+|[Verschiedene Einstellungen für Standardbezeichnungen und obligatorische Bezeichnungen](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Rollout in der Vorschau: [Betakanal](https://office.com/insider)                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | Ja |
 |
 
 **Fußnoten:**
 
-<sup>1</sup> Derzeit werden nur die [Item.Label- und If.App-Variablen](#dynamic-markings-with-variables) unterstützt
-<br />
-<sup>2</sup> Erfordert das [neue Outlook für Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
+<sup>\*</sup> Erfordert das [neue Outlook für Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
 
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Office-integrierter Bezeichnungs-Assistent und andere Bezeichnungslösungen
@@ -106,8 +105,7 @@ Die aufgelisteten Zahlen sind die minimale Office-Anwendungsversion, die für je
 Der in Office integrierte Bezeichnungs-Assistent lädt Vertraulichkeitsbezeichnungen und Richtlinieneinstellungen für Vertraulichkeitsbezeichnungen von den folgenden Verwaltungszentren herunter:
 
 - Microsoft 365 Compliance Center
-- Microsoft 365 Security Center
-- Office 365 Security & Compliance Center
+- Office 365 Security & Compliance Center (das ältere Verwaltungsportal)
 
 Um den in Office integrierten Bezeichnungs-Assistent zu verwenden, müssen Sie über eine oder mehrere [Bezeichnungsrichtlinien](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) verfügen, die von einem der aufgeführten Admin-Centern für Benutzer veröffentlicht wurden, sowie über eine [unterstützte Version von Office](#support-for-sensitivity-label-capabilities-in-apps).
 
@@ -134,6 +132,7 @@ Geben Sie für Microsoft Word 2016, Excel 2016, PowerPoint 2016 und Outlook 2016
 |PowerPoint     |   `MSIP.PowerPointAddin`      |
 |Outlook | `MSIP.OutlookAddin` |
 | | | 
+
 
 Stellen Sie diese Einstellung unter Verwendung der Gruppenrichtlinie oder dem [Office-Cloudrichtliniendienst](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service) bereit.
 
@@ -167,11 +166,13 @@ Vertraulichkeitsbezeichnungen, die Sie für die Anwendung der Verschlüsselung k
 - Für ein Dokument:  **Datei** > **-Info** > **Dokument schützen** > **Zugriff einschränken**
 - für eine E-Mail: Auf der Registerkarte **Optionen** > **Verschlüsseln** 
   
-Wenn Benutzer ein Dokument oder eine E-Mail zum ersten Mal beschriften, können sie Ihre Konfigurationseinstellungen für die Bezeichnung jederzeit mit ihren eigenen Verschlüsselungseinstellungen überschreiben. Zum Beispiel:
+Wenn Benutzer ein Dokument oder eine E-Mail zum ersten Mal mit einer Bezeichnung versehen, können sie Ihre Konfigurationseinstellungen für die Bezeichnung mit ihren eigenen Verschlüsselungseinstellungen überschreiben. Zum Beispiel:
 
 - Ein Benutzer wendet die Bezeichnung **Vertraulich \ Alle Mitarbeiter** auf ein Dokument an und diese Bezeichnung ist so konfiguriert, dass die Verschlüsselungseinstellungen für alle Benutzer in der Organisation gelten. Dieser Benutzer konfiguriert dann manuell die IRM-Einstellungen, um den Zugriff auf einen Benutzer außerhalb Ihrer Organisation zu beschränken. Das Endergebnis ist ein Dokument, das als **Vertraulich \ für alle Mitarbeiter** gekennzeichnet und verschlüsselt ist, aber die Benutzer in Ihrer Organisation können es nicht wie erwartet öffnen.
 
-- Ein Benutzer versieht eine E-Mail mit der Bezeichnung **Vertraulich\ Nur Empfänger** und diese E-Mail ist so konfiguriert, dass die Verschlüsselungseinstellung **Nicht weiterleiten** gilt. Dieser Benutzer konfiguriert dann manuell die IRM-Einstellungen, so dass die E-Mail nicht eingeschränkt ist. Das Endergebnis ist, dass die E-Mail von den Empfängern weitergeleitet werden kann, obwohl sie die Bezeichnung **Vertraulich \ Nur Empfänger** trägt.
+- Ein Benutzer versieht eine E-Mail mit der Bezeichnung **Vertraulich\ Nur Empfänger** und diese E-Mail ist so konfiguriert, dass die Verschlüsselungseinstellung **Nicht weiterleiten** gilt. In der Outlook-App konfiguriert dieser Benutzer dann manuell die IRM-Einstellungen, sodass die E-Mail nicht eingeschränkt ist. Das Endergebnis ist, dass die E-Mail von den Empfängern weitergeleitet werden kann, obwohl sie die Bezeichnung **Vertraulich \ Nur Empfänger** trägt.
+    
+    Ausnahmsweise stehen Benutzern bei Outlook im Web die Optionen aus dem Menü **Verschlüsseln** nicht zur Auswahl, wenn die aktuell ausgewählte Bezeichnung Verschlüsselung anwendet.
 
 - Ein Benutzer wendet das Etikett **Allgemein** auf ein Dokument an, und diese Bezeichnung ist nicht für die Anwendung von Verschlüsselung konfiguriert. Dieser Benutzer konfiguriert dann manuell die IRM-Einstellungen, um den Zugriff auf das Dokument zu beschränken. Das Endergebnis ist ein Dokument, das als **Allgemein** bezeichnet ist, aber auch verschlüsselt wird, so dass einige Benutzer es nicht wie erwartet öffnen können.
 
@@ -181,7 +182,7 @@ Um eine einheitlichere Bezeichnung mit aussagekräftigen Berichten zu erreichen,
 
 - Für Ausnahmefälle, in denen Benutzer ihre eigenen Berechtigungen zuweisen müssen, stellen Sie Bezeichnungen bereit, mit denen [Benutzer ihre eigenen Berechtigungen](encryption-sensitivity-labels.md#let-users-assign-permissions) zuweisen können. 
 
-- Anstatt dass Benutzer die Verschlüsselung manuell entfernen, nachdem sie eine Bezeichnung ausgewählt haben, das die Verschlüsselung anwendet, bieten Sie eine Alternative für untergeordnete Bezeichnungen an, wenn Benutzer eine Bezeichnung mit der gleichen Klassifizierung, aber ohne Verschlüsselung benötigen. Wie zum Beispiel:
+- Anstatt dass Benutzer die Verschlüsselung manuell entfernen, nachdem sie eine Bezeichnung ausgewählt haben, das die Verschlüsselung anwendet, bieten Sie eine Alternative für untergeordnete Bezeichnungen an, wenn Benutzer eine Bezeichnung mit der gleichen Klassifizierung, aber ohne Verschlüsselung benötigen. Zum Beispiel:
     - **Vertraulich \ Alle Mitarbeiter**
     - **Vertraulich \ Jeder (keine Verschlüsselung)** 
 
@@ -276,7 +277,7 @@ Office-Apps wenden die Inhaltsmarkierung und die Verschlüsselung mit einem Vert
 
 Lösungen, die Vertraulichkeitsbezeichnungen auf Dateien außerhalb von Office-Anwendungen anwenden, tun dies, indem sie Bezeichnungsmetadaten auf die Datei anwenden. In diesem Szenario wird die Inhaltsmarkierung aus der Konfiguration der Bezeichnung nicht in die Datei eingefügt, sondern die Verschlüsselung wird angewendet. 
 
-Wenn diese Dateien in einer Office-Desktop-Anwendung geöffnet werden, werden die Inhaltsmarkierungen automatisch durch den einheitlichen Bezeichnungs-Assistent von Azure Information Protection angewendet. Die Inhaltsmarkierungen werden nicht automatisch angewendet, wenn Sie die integrierte Bezeichnung für Desktop-, Mobil- oder Web-Apps verwenden.
+Werden diese Dateien in einer Office-Desktop-App geöffnet, werden die Inhaltsmarkierungen automatisch durch den Azure Information Protection-Client für einheitliche Bezeichnungen angewendet, wenn die Datei zum ersten Mal gespeichert wird. Die Inhaltsmarkierungen werden nicht automatisch angewendet, wenn Sie die integrierte Bezeichnung für Desktop-, Mobil- oder Web-Apps verwenden.
 
 Zu den Szenarien, die das Anwenden einer Vertraulichkeitsbezeichnungen außerhalb von Office-Apps beinhalten, gehören:
 
@@ -295,18 +296,18 @@ Für diese Szenarien kann ein Benutzer mit seinen Office-Apps die Inhaltsmarkier
 > [!IMPORTANT]
 > Derzeit unterstützen nicht alle Apps auf allen Plattformen dynamische Inhaltsmarkierungen, die Sie für Ihre Kopf- und Fußzeilen sowie Wasserzeichen festlegen können. Bei Apps, welche diese Fähigkeit nicht unterstützen, wenden sie die Markierungen als den in der Bezeichnungskonfiguration angegebenen Originaltext an, anstatt die Variablen aufzulösen.
 > 
-> Der einheitliche Bezeichnungs-Client von Azure Information Protection unterstützt dynamische Markierungen und alle aufgelisteten Variablen. Für die in Office integrierte Bezeichnung finden Sie die Mindestversionen in den Tabellen im Abschnitt [Funktionen](#support-for-sensitivity-label-capabilities-in-apps) auf dieser Seite, und dann in der folgenden Tabelle, um die unterstützten Variablen zu identifizieren.
+> Der Azure Information Protection-Client für einheitliche Bezeichnungen unterstützt dynamische Markierungen. Für die in Office integrierten Bezeichnungen finden Sie in den Tabellen im Abschnitt [Funktionen](#support-for-sensitivity-label-capabilities-in-apps) auf dieser Seite Informationen zu den unterstützten Mindestversionen.
 
 Wenn Sie eine Vertraulichkeitsbezeichnungen für Inhaltsmarkierungen konfigurieren, können Sie die folgenden Variablen in der Textzeichenfolge für Ihre Kopf- und Fußzeile oder Ihr Wasserzeichen verwenden:
 
 | Variable | Beschreibung | Beispiel beim Aufbringen der Bezeichnung |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Bezeichnungs-Anzeigename der angewendeten Bezeichnung <br /><br> Integrierte Bezeichnung: Unterstützt durch Word, Excel, PowerPoint und Outlook | **Allgemein**|
-| `${Item.Name}` | Dateiname oder E-Mail-Betreff des zu bezeichnenden Inhalts <br /><br> Integrierte Bezeichnung: Unterstützt durch Word, Excel, PowerPoint | **Sales.docx** |
-| `${Item.Location}` | Pfad und Dateiname des zu bezeichnenden Dokuments bzw. der E-Mail-Betreff für eine zu bezeichnenden E-Mail <br /><br> Integrierte Bezeichnung: Unterstützt durch Word, Excel, PowerPoint | **\\\Sales\2020\Q3\Report.docx**|
-| `${User.Name}` | Anzeigename des Benutzers, der die Bezeichnung anbringt <br /><br> Integrierte Bezeichnung: Unterstützt durch Word, Excel, PowerPoint | **Richard Simone** |
-| `${User.PrincipalName}` | Azure AD-Benutzerprinzipalname (UPN) des Benutzers, der die Bezeichnung anwendet <br /><br> Integrierte Bezeichnung: Unterstützt durch Word, Excel, PowerPoint  | **rsimone\@contoso.com** |
-| `${Event.DateTime}` | Datum und Uhrzeit, zu der der Inhalt bezeichnet wird, in der lokalen Zeitzone des Benutzers, der die Bezeichnung anbringt <br /><br> Integrierte Bezeichnung: Unterstützt durch Word, Excel, PowerPoint  | **10.08.2020 13:30 UHR** |
+| `${Item.Label}` | Bezeichnungs-Anzeigename der angewendeten Bezeichnung | **Allgemein**|
+| `${Item.Name}` | Dateiname oder E-Mail-Betreff des zu bezeichnenden Inhalts | **Sales.docx** |
+| `${Item.Location}` | Pfad und Dateiname des zu bezeichnenden Dokuments bzw. der E-Mail-Betreff für eine zu bezeichnenden E-Mail | **\\\Sales\2020\Q3\Report.docx**|
+| `${User.Name}` | Anzeigename des Benutzers, der die Bezeichnung anbringt | **Richard Simone** |
+| `${User.PrincipalName}` | Azure AD-Benutzerprinzipalname (UPN) des Benutzers, der die Bezeichnung anwendet | **rsimone\@contoso.com** |
+| `${Event.DateTime}` | Datum und Uhrzeit, zu der der Inhalt bezeichnet wird, in der lokalen Zeitzone des Benutzers, der die Bezeichnung anbringt | **10.08.2020 13:30 UHR** |
 
 > [!NOTE]
 > Bei der Syntax für diese Variablen wird zwischen Groß- und Kleinschreibung unterschieden.
@@ -321,7 +322,7 @@ Verwenden Sie die folgende Syntax:
 ${If.App.<application type>}<your visual markings text> ${If.End}
 ```
 
-Wie bei den anderen dynamischen visuellen Markierungen wird bei der Syntax zwischen Groß- und Kleinschreibung unterschieden.
+Wie bei den anderen dynamischen visuellen Markierungen muss bei der Syntax die Groß-/Kleinschreibung beachtet werden. Dies gilt auch für die Abkürzungen für die einzelnen Anwendungstypen (WEPO).
 
 Beispiele:
 
@@ -346,11 +347,12 @@ Beispiele:
 ## <a name="require-users-to-apply-a-label-to-their-email-and-documents"></a>Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden
 
 > [!IMPORTANT]
-> Auch als obligatorische Bezeichnung bekannt, unterstützen derzeit nicht alle Apps auf allen Plattformen die Richtlinieneinstellung **Benutzer müssen ihre E-Mails und Dokumente mit einer Bezeichnung versehen**.
 > 
-> Der [einheitliche Bezeichnungs-Assistent von Azure Information Protection](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) unterstützt die obligatorische Bezeichnung und die in Office-Apps integrierte Bezeichnung, siehe die Tabellen im Abschnitt [Fähigkeiten](#support-for-sensitivity-label-capabilities-in-apps) auf dieser Seite.
+> Der [Azure Information Protection-Client für einheitliche Bezeichnungen](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) unterstützt diese Konfiguration, die auch obligatorisches Bezeichnen genannt wird. Für die in Office-Apps integrierten Bezeichnungen finden Sie in den Tabellen im Abschnitt [Funktionen](#support-for-sensitivity-label-capabilities-in-apps) auf dieser Seite Informationen zu den Mindestversionen.
+>
+> Wenn Sie obligatorische Bezeichnungen für Dokumente, aber nicht für E-Mails verwenden möchten, lesen Sie die Anweisungen im nächsten Abschnitt, in dem erklärt wird, wie Sie Outlook-spezifische Optionen konfigurieren.
 
-Wenn diese Richtlinieneinstellung ausgewählt ist, müssen Benutzer, denen die Richtlinie zugewiesen ist, in den folgenden Szenarien eine Vertraulichkeitsbezeichnungen auswählen und anwenden:
+Wenn die Richtlinieneinstellung **Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden** ausgewählt ist, müssen Benutzer, denen die Richtlinie zugewiesen ist, in den folgenden Szenarien eine Vertraulichkeitsbezeichnungen auswählen und anwenden:
 
 - Für den einheitlichen Bezeichnungs-Assistent von Azure Information Protection:
     - Für Dokumente (Word, Excel, PowerPoint): Wenn ein nicht bezeichnetes Dokument gespeichert wird oder Benutzer das Dokument schließen.
@@ -373,8 +375,61 @@ Eine Anleitung, wann diese Einstellung verwendet werden sollte, finden Sie in de
 >
 > Die Standardbezeichnung hat immer Vorrang vor der obligatorischen Bezeichnung. Bei Dokumenten wendet der Assistent für einheitliche Bezeichnungen von Azure Information Protection die Standardbezeichnung jedoch auf alle Dokumente ohne Bezeichnung an, während die integrierte Bezeichnung die Standardbezeichnung auf neue Dokumente und nicht auf vorhandene Dokumente ohne Bezeichnung anwendet. Dieser Verhaltensunterschied bedeutet, dass Benutzer bei der Verwendung einer obligatorischen Bezeichnung mit der standardmäßigen Bezeichnungseinstellung aufgefordert werden, häufiger eine Vertraulichkeitsbezeichnung anzuwenden, wenn sie integrierte Bezeichnungen verwenden, als wenn sie den Assistenten für einheitliche Bezeichnungen von Azure Information Protection verwenden.
 
+## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>Outlook-spezifische Optionen für Standardbezeichnungen und obligatorische Bezeichnungen
+
+Für integrierte Bezeichnungen ermitteln Sie die Mindestversionen von Outlook, die diese Features unterstützen, anhand der [Funktionstabelle für Outlook](#sensitivity-label-capabilities-in-outlook) auf dieser Seite und der Zeile **Verschiedene Einstellungen für Standardbezeichnungen und obligatorische Bezeichnungen**.
+
+Wenn Sie die Bezeichnungsrichtlinieneinstellungen **Diese Bezeichnung standardmäßig auf Dokumente und E-Mails anwenden** und **Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden** auswählen, gilt Ihre Konfigurationsauswahl standardmäßig sowohl für E-Mails als auch für Dokumente.
+
+Wenn Sie unterschiedliche Einstellungen auf E-Mails anwenden möchten, verwenden Sie die erweiterten PowerShell-Einstellungen:
+
+- **OutlookDefaultLabel**: Verwenden Sie diese Einstellung, wenn Sie möchten, dass Outlook eine andere Standardbezeichnung oder keine Bezeichnung anwendet.
+
+- **DisableMandatoryInOutlook**: Verwenden Sie diese Einstellung, wenn Sie möchten, dass Outlook die Benutzer nicht auffordert, eine Bezeichnung für nicht bezeichnete E-Mail-Nachrichten auszuwählen.
+
+Weitere Informationen zum Konfigurieren dieser Einstellungen mithilfe von PowerShell finden Sie im nächsten Abschnitt.
+
+### <a name="powershell-advanced-settings-outlookdefaultlabel-and-disablemandatoryinoutlook"></a>Erweiterte PowerShell-Einstellungen „OutlookDefaultLabel“ und „DisableMandatoryInOutlook“
+
+Diese Einstellungen werden unter Verwendung von PowerShell mit dem Parameter *AdvancedSettings* sowie den Cmdlets [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) und [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) aus [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell) unterstützt. Diese beiden erweiterten Einstellungen wurden zuvor nur vom Azure Information Protection-Client für einheitliche Bezeichnungen unterstützt, werden jetzt jedoch auch für integrierte Bezeichnungen unterstützt.
+
+PowerShell-Beispiele mit der Bezeichnungsrichtlinie namens **Global**:
+
+- So legen Sie fest, dass Outlook keine Standardbezeichnung festlegen muss:
+    
+    ````powershell
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel="None"}
+    ````
+
+- So legen Sie fest, dass Outlook keine obligatorischen Bezeichnungen verwenden muss:
+    
+    ````powershell
+    Set-LabelPolicy -Identity Global -AdvancedSettings @{DisableMandatoryInOutlook="True"}
+    ````
+
+Derzeit sind „OutlookDefaultLabel“ und „DisableMandatoryInOutlook“ die einzigen erweiterten PowerShell-Einstellungen, die sowohl für integrierte Bezeichnungen als auch den Azure Information Protection-Client unterstützt werden.
+
+Die anderen erweiterten PowerShell-Einstellungen werden nur für den Azure Information Protection-Client unterstützt. Weitere Informationen zur Verwendung erweiterter Einstellungen für den Azure Information Protection-Client finden Sie im [Handbuch für Administratoren: Benutzerdefinierte Konfigurationen für den Azure Information Protection-Client für einheitliche Bezeichnungen](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell).
+
+#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>PowerShell-Tipps zum Festlegen der erweiterten Einstellungen
+
+Um eine andere Standardbezeichnung für Outlook festzulegen, müssen Sie die Bezeichnungs-GUID angeben. Diesen Wert können Sie mit dem folgenden Befehl abrufen:
+
+````powershell
+Get-Label | Format-Table -Property DisplayName, Name, Guid
+````
+
+Wenn Sie eine dieser erweiterten Einstellungen aus einer Bezeichnungsrichtlinie entfernen möchten, verwenden Sie die gleiche AdvancedSettings-Parametersyntax, allerdings mit einem leeren Zeichenfolgenwert (null) an. Zum Beispiel:
+
+````powershell
+Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}
+````
+
+
 ## <a name="end-user-documentation"></a>Dokumentation für Endbenutzer
 
-- [Anwenden von Vertraulichkeits-Beschriftungen auf Ihre Dokumente und E-Mails in Office](https://support.microsoft.com/de-DE/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+- [Verwenden von Vertraulichkeitsbezeichnungen auf Ihre Dateien und E-Mails in Office](https://support.microsoft.com/de-DE/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9)
+    - [Bekannte Probleme mit Vertraulichkeitsbezeichnungen in Office](https://support.microsoft.com/de-DE/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
 
-- [Bekannte Probleme beim Anwenden von Vertraulichkeits-Beschriftungen auf Ihren Office-Dateien](https://support.microsoft.com/de-DE/office/known-issues-with-sensitivity-labels-in-office-b169d687-2bbd-4e21-a440-7da1b2743edc)
+- [Automatisches Anwenden oder Empfehlen von Vertraulichkeitsbezeichnungen für Ihre Dateien und E-Mails in Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
+    - [Bekannte Probleme beim automatischen Anwenden oder Empfehlen von Vertraulichkeitsbezeichnungen](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)

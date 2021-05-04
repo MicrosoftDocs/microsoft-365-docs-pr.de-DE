@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Erfahren Sie mehr über die neuen Funktionen der Office 365-Nachrichtenverschlüsselung, die die geschützte E-Mail-Kommunikation mit Personen innerhalb und außerhalb Ihrer Organisation ermöglichen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1519748c4bd535e0a3ea1cc3ee653e2c81e807bd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cf37826c3e1e349947ab83fe211f9406a765e5ea
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919391"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876304"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Einrichten neuer Nachrichtenverschlüsselungsfunktionen
 
@@ -44,7 +44,7 @@ Azure RMS wird auch bei den meisten berechtigenden Plänen automatisch aktiviert
 
 Weitere Informationen finden Sie unter:
 
-- Lesen Sie [Welche Abonnements benötige ich, um die neuen OME-Funktionen nutzen zu können?](ome-faq.md#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities), um zu überprüfen, ob Ihr Abonnementplan Azure Information Protection umfasst (das Azure RMS-Funktionen beinhaltet).
+- Lesen Sie [Welche Abonnements benötige ich, um die neuen OME-Funktionen nutzen zu können?](ome-faq.yml#what-subscriptions-do-i-need-to-use-the-new-ome-capabilities-), um zu überprüfen, ob Ihr Abonnementplan Azure Information Protection umfasst (das Azure RMS-Funktionen beinhaltet).
 - Informationen zum Kauf eines berechtigenden Abonnements finden Sie unter [Azure Information Protection](https://azure.microsoft.com/services/information-protection/).  
 
 ### <a name="manually-activating-azure-rights-management"></a>Manuelles Aktivieren von Azure Rights Management
@@ -112,7 +112,7 @@ Sie können überprüfen, ob Ihr Microsoft 365-Mandant für die Verwendung der n
 
 ## <a name="next-steps-define-mail-flow-rules-to-use-new-ome-capabilities"></a>Nächste Schritte: Definieren von Nachrichtenflussregeln, um neue OME-Funktionen zu verwenden
 
-Wenn zuvor konfigurierte Nachrichtenflussregeln zum Verschlüsseln von E-Mails in Ihrer Organisation konfiguriert wurden, müssen Sie die vorhandenen Regeln zur Verwendung der neuen OME-Funktionen aktualisieren. Für neue Bereitstellungen müssen Sie neue Nachrichtenflussregeln erstellen.
+Wenn es zuvor konfigurierte Nachrichtenflussregeln zum Verschlüsseln von E-Mails in Ihrer Organisation gibt, müssen Sie die vorhandenen Regeln aktualisieren, um die neuen OME-Funktionen verwenden zu können. Für neue Bereitstellungen müssen Sie neue Nachrichtenflussregeln erstellen.
 
 >[!IMPORTANT]
 >Wenn Sie vorhandene Nachrichtenflussregeln nicht aktualisieren, werden Ihre Benutzer weiterhin verschlüsselte E-Mails empfangen, bei denen das vorherige HTML-Anlagenformat statt der neuen, nahtlosen OME-Erfahrung verwendet wird.

@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: markjjo
 author: markjjo
 manager: laurawi
-ms.date: 3/13/2018
+ms.date: ''
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -16,12 +16,12 @@ description: Erfahren Sie, wie Sie ein Postfach in einem Prozesssicherungsverfah
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: 046ee6fdc7c42026b1a69805883175982e3100b7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 81d3bf7bba0aadbcd2d52b5f7707caeea96e26c1
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908399"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51750059"
 ---
 # <a name="create-a-litigation-hold"></a>Erstellen einer Aufbewahrung für juristische Zwecke
 
@@ -30,21 +30,23 @@ Sie können ein Postfach in das Prozesssicherungsverfahren einbehalten, um alle 
 Hier sehen Sie, was passiert, wenn Sie ein Prozesssicherungsverfahren erstellen.
   
 - Elemente, die vom Benutzer dauerhaft gelöscht werden, werden für die Dauer des Haltezustands im Ordner "Wiederherstellbare Elemente" im Postfach des Benutzers aufbewahrt.
-    
+
 - Elemente, die vom Benutzer aus dem Ordner "Wiederherstellbare Elemente" gelöscht werden, werden für die Dauer der Haltedauer aufbewahrt.
-    
+
 - Das Speicherkontingent für den Ordner "Wiederherstellbare Elemente" wird von 30 GB auf 110 GB erhöht.
-    
+
 - Elemente im primären Postfach des Benutzers und in den Archivpostfächern werden beibehalten.
-    
+
 ## <a name="assign-an-exchange-online-plan-2-license"></a>Zuweisen einer Exchange Online Plan 2-Lizenz
 
-- Um ein Exchange Online-Postfach in das Prozesssicherungsverfahren zu setzen, muss ihm eine Exchange Online Plan 2-Lizenz zugewiesen werden. Wenn einem Postfach eine Exchange Online Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online-Archivierung zuweisen, um es in den Halteraum zu setzen.
-    
+Um ein Exchange Online in das Prozesssicherungsverfahren zu setzen, muss ihm eine Exchange Online Plan 2-Lizenz zugewiesen werden. Wenn einem Postfach eine Exchange Online Plan 1-Lizenz zugewiesen ist, müssen Sie ihm eine separate Exchange Online-Archivierung zuweisen, um es in die Warteschleife zu setzen.
+
+> [!NOTE]
+> Für Office 365 Education Organisationen wird das Prozesssicherungsverfahren in Office 365 A1 unterstützt, die eine Exchange Online Plan 1-Lizenz mit zusätzlichen Features enthalten. Weitere Informationen finden Sie im Abschnitt "Exchange Online Features" in der [Office 365 Education Dienstbeschreibung](/office365/servicedescriptions/office-365-platform-service-description/office-365-education#exchange-online-features).
 
 ## <a name="place-a-mailbox-on-litigation-hold"></a>Aktivieren des Beweissicherungsverfahrens für ein Postfach
 
-Im Folgenden finden Sie die Schritte zum Platzieren eines Postfachs im Prozesssicherungsverfahren mithilfe des Exchange Admin Centers.
+Hier sind die Schritte zum Platzieren eines Postfachs im Prozesssicherungsverfahren mithilfe des Exchange Admin Center.
 
 1. Wechseln Sie [https://outlook.office.com/ecp](https://outlook.office.com/ecp) zu, und melden Sie sich mit Ihrem globalen Administratorkonto an.
 
@@ -60,15 +62,15 @@ Im Folgenden finden Sie die Schritte zum Platzieren eines Postfachs im Prozesssi
     
     - **Dauer des Rechtsstreitigkeitens (Tage)** – Verwenden Sie dieses Feld, um einen zeitbasierten Haltezeitspeicher zu erstellen und anzugeben, wie lange Postfachelemente gespeichert werden, wenn das Postfach in das Prozesssicherungsverfahren verschoben wird. Der Zeitraum beginnt mit dem Datum, an dem das Postfachelement empfangen oder erstellt wurde. Wenn die Haltedauer für ein bestimmtes Element abläuft, wird dieses Element nicht mehr beibehalten. Wenn Sie dieses Feld leer lassen, werden Elemente auf unbestimmte Zeit oder bis zum Entfernen des Haltefelds aufbewahrt. Geben Sie die Dauer in Tagen an.
     
-    - **Hinweis** : Verwenden Sie dieses Feld, um den Benutzer darüber zu informieren, dass sich sein Postfach im Prozesssicherungsverfahren befindet. Die Notiz wird auf der Seite Kontoinformationen im Postfach des Benutzers angezeigt, wenn sie Outlook 2010 oder höher verwenden. Um auf diese Seite zu gelangen, können Benutzer in **Outlook auf Datei** klicken.
+    - **Hinweis** : Verwenden Sie dieses Feld, um den Benutzer darüber zu informieren, dass sich sein Postfach im Prozesssicherungsverfahren befindet. Die Notiz wird auf der Seite Kontoinformationen im Postfach des Benutzers angezeigt, wenn sie Outlook 2010 oder höher verwenden. Um auf diese Seite zu zugreifen, können Benutzer auf **Datei** in Outlook.
     
-    - **URL** – Verwenden Sie dieses Feld, um den Benutzer zu einer Website zu führen, um weitere Informationen zum Prozesssicherungsverfahren zu erhalten. Diese URL wird auf der Seite Kontoinformationen im Postfach des Benutzers angezeigt, wenn sie Outlook 2010 oder höher verwenden. Um auf diese Seite zu zugreifen, können Benutzer in Outlook auf **Datei** klicken.
+    - **URL** – Verwenden Sie dieses Feld, um den Benutzer zu einer Website zu führen, um weitere Informationen zum Prozesssicherungsverfahren zu erhalten. Diese URL wird auf der Seite Kontoinformationen im Postfach des Benutzers angezeigt, wenn Outlook 2010 oder höher verwendet. Um auf diese Seite zu zugreifen, können Benutzer auf **Datei** in Outlook.
 
 7. Klicken **Sie auf** der Seite **Rechtsstreitigkeiten auf** Speichern, und klicken Sie dann auf der Seite Postfacheigenschaften auf Speichern. 
 
 ### <a name="create-a-litigation-hold-using-powershell"></a>Erstellen eines Rechtsstreits mit PowerShell
 
-Sie können auch ein Prozessaufforderungsverfahren erstellen, indem Sie den folgenden Befehl in [Exchange Online PowerShell ausführen:](/powershell/exchange/connect-to-exchange-online-powershell)
+Sie können auch ein Prozesssicherungsverfahren erstellen, indem Sie den folgenden Befehl in [Exchange Online PowerShell ausführen:](/powershell/exchange/connect-to-exchange-online-powershell)
 
 ```powershell
 Set-Mailbox <username> -LitigationHoldEnabled $true

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) so konfigurieren können, dass Microsoft 365-EPDLP-Speicherorte (Endpoint Data Loss Prevention) verwendet werden.
-ms.openlocfilehash: 91e8a25c2a15e82cd7f286d1110b1c87bedf31d5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1b918346467f9878582dfb301f48e530bfb400f8
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926433"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114093"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Nutzen der Verhinderung von Datenverlust am Endpunkt
 
@@ -122,7 +122,8 @@ Damit Sie sich mit Endpunkt-DLP-Features und deren Wirkungsweise in DLP-Richtlin
 
 > [!IMPORTANT]
 > Diese Endpunkt-DLP-Szenarien stellen nicht die offiziellen Verfahren zum Erstellen und Optimieren von DLP-Richtlinien dar. In den folgenden Beiträgen finden Sie Informationen zum Arbeiten mit DLP-Richtlinien in Situationen allgemeiner Art:
->- [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)
+
+>- [Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)
 >- [Erste Schritte mit der standardmäßigen DLP-Richtlinie](get-started-with-the-default-dlp-policy.md)
 >- [Erstellen einer DLP-Richtlinie aus einer Vorlage](create-a-dlp-policy-from-a-template.md)
 >- [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
@@ -216,7 +217,7 @@ Bei diesen Szenarien ist es erforderlich, dass Sie bereits über Geräte verfüg
 
 - [Informationen zu Endpunkt-DLP](endpoint-dlp-learn-about.md)
 - [Endpunkt-DLP – Erste Schritte](endpoint-dlp-getting-started.md)
-- [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)
+- [Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)
 - [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 - [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender für Endpunkt](/windows/security/threat-protection/)

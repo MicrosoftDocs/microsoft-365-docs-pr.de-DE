@@ -12,22 +12,23 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - TopSMBIssues
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
+- commerce_billing
+- PPM_jmueller
+ms.reviewer: jamitche
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie Ihre Zahlungsmethoden im Microsoft 365 Admin Center verwalten können.
-ms.date: ''
-ms.openlocfilehash: 1d28d082c0a7c123aadaa2230930326139fdcb8e
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.date: 04/02/2021
+ms.openlocfilehash: 4b35b7b8e874915e5f9c792686ff0e368292c802
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579782"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107039"
 ---
 # <a name="manage-payment-methods"></a>Verwalten von Zahlungsmethoden
 
@@ -35,7 +36,7 @@ Wenn Sie Business-Produkte oder -Dienste von Microsoft kaufen, können Sie eine 
 
 Wenn Ihr Geschäftskonto über ein Abrechnungsprofil verfügt und Sie Besitzer oder Mitwirkender an dem Abrechnungsprofil sind, können Sie über das Abrechnungsprofil, das durch eine Kreditkarte oder Zahlung per Rechnung abgesichert ist, Einkäufe tätigen oder Rechnungen bezahlen. Wenn Sie Rechnungsadministrator sind, können Sie zum Bezahlen von Rechnungen nur ein Abrechnungsprofil verwenden. Weitere Informationen zu Abrechnungsprofilen und Rollen finden Sie unter [Verwalten von Abrechnungsprofilen](manage-billing-profiles.md).
 
-Wenn Ihr Geschäftskonto nicht über ein Abrechnungsprofil verfügt, kann jeder globale oder Rechnungsadministrator jedes Bankkonto verwalten und verwenden, das dem Geschäftskonto hinzugefügt wurde. Sie können jedoch nur von Ihnen hinzugefügte Kreditkarten verwalten oder verwenden.
+Wenn Ihr Geschäftskonto nicht über ein Abrechnungsprofil verfügt, kann jeder globale oder Rechnungsadministrator jedes Bankkonto verwalten und verwenden, das dem Geschäftskonto hinzugefügt wurde. Sie können hingegen nur Kreditkarten verwalten oder verwenden, die Sie hinzufügen.
 
 > [!NOTE]
 > Die Option zum Bezahlen über ein Bankkonto ist in einigen Ländern oder Regionen nicht verfügbar.
@@ -122,7 +123,7 @@ Wenn einer Zahlungsmethode Abonnements oder Abrechnungsprofile zugeordnet sind, 
 | Problem | Schritte zur Problembehandlung |
 |:----------|:-----|
 |**Ich erhalte eine Fehlermeldung, die Folgendes besagt: "In Ihrem Browser werden Cookies derzeit blockiert."** |Konfigurieren Sie Ihren Browser so, dass er Cookies von Drittanbietern zulässt, und versuchen Sie es dann erneut. |
-|**Meine Debit- oder Kreditkarte wurde abgelehnt.** |Wenn Sie mit Debit- oder Kreditkarte bezahlen und Ihre Karte wird abgelehnt, erhalten Sie eine E-Mail, in der Sie darüber informiert werden, dass Microsoft die Zahlung nicht verarbeitet konnte. Prüfen Sie zunächst sorgfältig, ob Sie die Kartendetails &mdash; Nummer, Ablaufdatum, Name des Karteninhabers und Adresse einschließlich Ort, Bundesland und PLZ &mdash; genau so angegeben haben, wie sie auf der Karte und auf der Abrechnung aufgeführt sind. Sie können Ihre Karteninformationen aktualisieren und die Zahlung sofort senden, indem Sie auf den Link **Saldo ausgleichen** im Abschnitt **Abrechnung** der Seite mit den Abonnementdetails klicken. Weitere Informationen finden Sie unter [Was passiert, wenn noch eine Saldoforderung besteht?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Wenn die Kreditkarte dann immer noch abgelehnt wird, wenden Sie sich an Ihre Bank. Es kann sein, dass Ihre Karte nicht aktiv ist. Wenn Sie die Karte vor Kurzem mit einem aktualisierten Ablaufdatum per Post erhalten haben, vergewissern Sie sich, dass sie aktiviert ist. Von Ihrer Bank können Sie außerdem erfahren, ob Ihre Kreditkarte nicht für Online-, internationale oder wiederkehrende Transaktionen zugelassen ist. |
+|**Meine Debit- oder Kreditkarte wurde abgelehnt.** |Wenn Sie mit Debit- oder Kreditkarte bezahlen und Ihre Karte wird abgelehnt, erhalten Sie eine E-Mail, in der Sie darüber informiert werden, dass Microsoft die Zahlung nicht verarbeitet konnte. Prüfen Sie zunächst sorgfältig, ob Sie die Kartendetails &mdash; Nummer, Ablaufdatum, Name des Karteninhabers und Adresse einschließlich Ort, Bundesland und PLZ &mdash; genau so angegeben haben, wie sie auf der Karte und auf der Abrechnung aufgeführt sind. Sie können Ihre Karteninformationen aktualisieren und die Zahlung sofort senden, indem Sie auf den Link **Saldo ausgleichen** im Abschnitt **Abrechnung** der Seite mit den Abonnementdetails klicken. Weitere Informationen finden Sie unter [Was passiert, wenn noch eine Saldoforderung besteht?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Wenn die Kreditkarte dann immer noch abgelehnt wird, wenden Sie sich an Ihre Bank. Es ist möglich, dass Ihre Kreditkarte nicht aktiv ist. Wenn Sie die Karte mit einem aktualisierten Ablaufdatum vor Kurzem per Post erhalten haben, müssen Sie sicherstellen, dass sie aktiviert ist. Ihre Bank kann Ihnen ebenfalls mitteilen, ob Ihre Kreditkarte für Online-, internationale oder wiederkehrende Transaktionen zugelassen ist oder nicht. |
 |**Ich möchte eine Karten- oder Kontonummer aktualisieren.** |Die Kreditkarten- oder Kontonummer einer vorhandenen Zahlungsmethode kann nicht geändert werden. Wenn sich Ihre Karten- oder Kontonummer geändert hat, [ersetzen Sie diese durch eine andere Zahlungsmethode](#replace-a-payment-method), wodurch alle aktiven Abonnements von der alten zur neuen Zahlungsmethode wechseln, und [löschen Sie dann die alte Zahlungsmethode](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
 |**In meinem Konto gibt es nur eine Kreditkarte oder nur ein Bankkonto, und ich möchte sie/es entfernen.** |Wenn Sie nur über eine Zahlungsmethode verfügen, müssen Sie diese [durch eine neue Zahlungsmethode ersetzen](#replace-a-payment-method), bevor Sie sie löschen können. |
 |**Ich kann meine Karte bzw. mein Bankkonto nicht hinzufügen.**  |Sie müssen eine Zahlungsmethode verwenden, die im Land Ihres Mandanten ausgestellt wurde. Wenn es bei der Eingabe Ihrer Karten- bzw. Bankkontoinformationen Probleme gibt, können Sie [den Support kontaktieren](../../admin/contact-support-for-business-products.md). |

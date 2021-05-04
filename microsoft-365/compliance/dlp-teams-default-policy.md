@@ -1,5 +1,5 @@
 ---
-title: Informationen zur standardmäßigen Richtlinie zur Verhinderung von Datenverlust in Microsoft Teams (Vorschau)
+title: Weitere Informationen zur Standardrichtlinie zur Verhinderung von Datenverlust in Microsoft Teams (Vorschau)
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -14,21 +14,21 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Informationen zur standardmäßigen Richtlinie zur Verhinderung von Datenverlust in Microsoft Teams
-ms.openlocfilehash: 3992daf9431dbd87ed5e947a1e5a2b0acd20edce
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+description: Erfahren Sie mehr über die standardmäßige Richtlinie zur Verhinderung von Datenverlust in Microsoft Teams
+ms.openlocfilehash: 0663c370373708009346d4f858729e17436f0f62
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826233"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114143"
 ---
-# <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Informationen zur standardmäßigen Richtlinie zur Verhinderung von Datenverlust in Microsoft Teams (Vorschau)
+# <a name="learn-about-the-default-data-loss-prevention-policy-in-microsoft-teams-preview"></a>Weitere Informationen zur Standardrichtlinie zur Verhinderung von Datenverlust in Microsoft Teams (Vorschau)
 
-Die Funktionen zur Verhinderung von Datenverlust [(Data Loss Prevention,](data-loss-prevention-policies.md) DLP) wurden um Microsoft Teams-Chat- und Kanalnachrichten erweitert, einschließlich Nachrichten im privaten Kanal. Als Teil dieser Version haben wir eine Standard-DLP-Richtlinie für Erstkunden im Compliance Center erstellt.
+[Die Funktionen zur Verhinderung von](dlp-learn-about-dlp.md) Datenverlust wurden um chat- Microsoft Teams Kanalnachrichten erweitert, einschließlich Nachrichten im privaten Kanal. Als Teil dieser Version haben wir eine Standard-DLP-Richtlinie für Erstkunden im Compliance Center erstellt.
 
 ## <a name="applies-to"></a>Betrifft
 
-Jeder Mandant, der mit einer oder mehreren der folgenden Lizenzen lizenziert ist und über aktive Teams-Benutzer verfügt
+Jeder Mandant, der mit einer oder mehreren der folgenden Lizenzen lizenziert ist und über aktive Teams verfügt
  
 - ME5, 
 - MA5, 
@@ -47,7 +47,7 @@ Administratoren können diese Richtlinie auf der Seite Compliance [Center >](htt
 
 
 > [!div class="mx-imgBorder"]
-> ![Standardmäßige Teams-DLP-Richtlinie](../media/default-teams-dlp-policy.png)
+> ![Standardrichtlinie Teams DLP](../media/default-teams-dlp-policy.png)
 
 ## <a name="edit-or-delete-the-default-policy"></a>Bearbeiten oder Löschen der Standardrichtlinie
 

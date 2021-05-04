@@ -21,21 +21,21 @@ search.appverid:
 ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
-description: Erfahren Sie, wie Sie Daten von Drittanbietern von Plattformen für soziale Medien, Chatplattformen und Plattformen für die Dokumentzusammenarbeit in Microsoft 365-Postfächer importieren.
-ms.openlocfilehash: 83ba81907a9db8dd1f4e95e5df3306366838c1ba
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+description: Erfahren Sie, wie Sie Daten von Drittanbietern von Plattformen für soziale Medien, Chatplattformen und Plattformen für die Dokumentzusammenarbeit in Microsoft 365 importieren.
+ms.openlocfilehash: 22a2e6dbadc3c259896348fc89754882db85cfb4
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163650"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764110"
 ---
 # <a name="archive-third-party-data"></a>Archivieren von Drittanbieterdaten
 
-Mit Microsoft 365 können Administratoren Datenconnectors verwenden, um Daten von Drittanbietern von Plattformen für soziale Medien, Chatplattformen und Plattformen für die Dokumentzusammenarbeit in Postfächer in Ihrer Microsoft 365-Organisation zu importieren und zu archivieren. Ein Hauptvorteil der Verwendung von Datenconnectors zum Importieren und Archivieren von Drittanbieterdaten in Microsoft 365 besteht in der Anwendung verschiedener Microsoft 365-Compliancelösungen, nachdem sie importiert wurden. Auf diese Weise stellen Sie sicher, dass die Nicht-Microsoft-Daten Ihrer Organisation den Vorschriften und Standards entsprechen, die sich auf Ihre Organisation auswirken.
+Microsoft 365 können Administratoren Datenconnectors verwenden, um Daten von Drittanbietern von Plattformen für soziale Medien, Chatplattformen und Plattformen für die Dokumentzusammenarbeit in Postfächer in Ihrer Organisation Microsoft 365 archivieren. Ein Hauptvorteil der Verwendung von Datenconnectors zum Importieren und Archivieren von Drittanbieterdaten in Microsoft 365 besteht in der Anwendung verschiedener Microsoft 365-Compliancelösungen auf diese, nachdem sie importiert wurden. Auf diese Weise stellen Sie sicher, dass die Nicht-Microsoft-Daten Ihrer Organisation den Vorschriften und Standards entsprechen, die sich auf Ihre Organisation auswirken.
 
 ## <a name="third-party-data-connectors"></a>Daten-Connectoren von Drittanbietern
 
-In der folgenden Tabelle sind die im Microsoft 365 Compliance Center verfügbaren Datenconnectors von Drittanbietern aufgeführt. In der Tabelle werden auch die Compliancelösungen zusammengefasst, die Sie nach dem Importieren und Archivieren in Microsoft 365 auf Daten von Drittanbietern anwenden können. Im nächsten [Abschnitt finden](#overview-of-compliance-solutions-that-support-third-party-data) Sie eine ausführlichere Beschreibung der einzelnen Compliancelösungen und deren Vorteile für Drittanbieterdaten.
+In der folgenden Tabelle sind die Datenconnectors von Drittanbietern aufgeführt, die im Microsoft 365 Compliance Center verfügbar sind. In der Tabelle werden auch die Compliancelösungen zusammengefasst, die Sie auf Drittanbieterdaten anwenden können, nachdem Sie daten importiert und Microsoft 365. Im nächsten [Abschnitt finden](#overview-of-compliance-solutions-that-support-third-party-data) Sie eine ausführlichere Beschreibung der einzelnen Compliancelösungen und deren Vorteile für Drittanbieterdaten.
 
 > [!TIP]
 > Klicken Sie auf  den Link in der Datenspalte Drittanbieter, um die schrittweisen Anweisungen zum Erstellen eines Connectors für diesen Datentyp zu erhalten.
@@ -47,17 +47,19 @@ In der folgenden Tabelle sind die im Microsoft 365 Compliance Center verfügbare
 |[Bell Network <sup>1</sup>](archive-bell-network-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[Bloomberg Message](archive-bloomberg-message-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[CellTrust <sup>2</sup>](archive-celltrust-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
-|[Cisco Jabber <sup>2</sup>](archive-ciscojabberonmssql-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Cisco Jabber auf MS SQL <sup>2</sup>](archive-ciscojabberonmssql-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Cisco Jabber auf Oracle <sup>2</sup>](archive-ciscojabberonoracle-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Cisco Jabber auf PostgreSQL <sup>2</sup>](archive-ciscojabberonpostgresql-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[EML <sup>2</sup>](archive-eml-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
-|[<sup>Enterprise-Nummer 1</sup>](archive-enterprise-number-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[Enterprise Zahl <sup>1</sup>](archive-enterprise-number-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[Facebook](archive-facebook-data-with-sample-connector.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
-|[FX Connect <sup>2</sup>](archive-fxconnect-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
+|[FX Verbinden <sup>2</sup>](archive-fxconnect-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[Personalwesen (HR)](import-hr-data.md) ||||||![Häkchen](../media/checkmark.png)
 |[ICE Chat](archive-icechat-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[Instant Bloomberg](archive-instant-bloomberg-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[Jive <sup>2</sup>](archive-jive-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[LinkedIn](archive-linkedin-data.md)   |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
-|[MS SQL Database <sup>2</sup>](archive-mssqldatabaseimporter-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
+|[MS SQL-Datenbank <sup>2</sup>](archive-mssqldatabaseimporter-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
 |[O2 Network <sup>1</sup>](archive-o2-network-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[Physisches Badging](import-physical-badging-data.md) ||||||![Häkchen](../media/checkmark.png)|
 |[Pivot <sup>2</sup>](archive-pivot-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
@@ -90,7 +92,7 @@ Die in der vorherigen Tabelle aufgeführten Drittanbieterdaten (mit Ausnahme von
 
 ## <a name="overview-of-compliance-solutions-that-support-third-party-data"></a>Übersicht über Compliancelösungen, die Drittanbieterdaten unterstützen
 
-In den folgenden Abschnitten werden einige Dinge beschrieben, die Ihnen die Microsoft 365-Compliancelösungen bei der Verwaltung der in der vorherigen Tabelle aufgeführten Drittanbieterdaten helfen können.
+In den folgenden Abschnitten werden einige dinge beschrieben, die Microsoft 365 Compliancelösungen Ihnen bei der Verwaltung der in der vorherigen Tabelle aufgeführten Drittanbieterdaten helfen können.
 
 ### <a name="litigation-hold"></a>Prozesssicherungsverfahren
 
@@ -98,7 +100,7 @@ Sie setzen ein [Verfahrensverfahren für](create-a-litigation-hold.md) ein Benut
 
 ### <a name="ediscovery"></a>eDiscovery
 
-Die drei wichtigsten eDiscovery-Tools in Microsoft 365 sind Inhaltssuche, Core eDiscovery und Advanced eDiscovery.
+Die drei primären eDiscovery-Tools in Microsoft 365 sind Inhaltssuche, Core eDiscovery und Advanced eDiscovery.
 
 - **[Inhaltssuche](content-search.md).** Sie können das Inhaltssuchtool verwenden, um Postfächer nach importierten Drittanbieterdaten zu durchsuchen. Sie können Suchabfragen und -bedingungen verwenden, um Ihre Suchergebnisse zu einenten und die Suchergebnisse zu exportieren.
 
@@ -106,7 +108,7 @@ Die drei wichtigsten eDiscovery-Tools in Microsoft 365 sind Inhaltssuche, Core e
 
 - **[Advanced eDiscovery](overview-ediscovery-20.md).** Mit diesem leistungsstarken Tool wird die Fallfunktionalität von Core eDiscovery erweitert, indem Sie einem Fall Custodians hinzufügen, die Daten des Custodians in der Warteschleife platzieren und dann die Drittanbieterdaten eines Verwahrers in eine Überprüfung laden, um weitere Analysen wie Designs und Duplikaterkennung durchzuführen. Nachdem Sie Daten von Drittanbietern in einen Überprüfungssatz geladen haben, können Sie diese abfragen und in ein schmales Ergebnisset filtern.
 
-   Mit Core eDiscovery und Advanced eDiscovery können Sie Daten von Drittanbietern verwalten, die für die rechtlichen oder internen Untersuchungen Ihrer Organisation relevant sein können.
+   Sowohl core eDiscovery als auch Advanced eDiscovery können Sie Daten von Drittanbietern verwalten, die für die rechtlichen oder internen Untersuchungen Ihrer Organisation relevant sein können.
 
 ### <a name="retention-settings"></a>Aufbewahrungseinstellungen
 
@@ -114,7 +116,7 @@ Sie können eine [Aufbewahrungsrichtlinie](retention.md) auf Benutzerpostfächer
 
 ### <a name="records-management"></a>Datensatzverwaltung
 
-Mit [der Datensatzverwaltungsfunktion](records-management.md) in Microsoft 365 können Sie Drittanbieterdaten als Datensatz deklarieren. Dies kann manuell von Benutzern erfolgen, die eine Aufbewahrungsbezeichnung anwenden, die Daten von Drittanbietern in ihrem Postfach als Datensatz kennzeichnet. Oder Sie können Aufbewahrungsbezeichnungen automatisch anwenden, indem Sie vertrauliche Informationen, Schlüsselwörter oder Inhaltstypen in Drittanbieterdaten identifizieren.
+Mit [dem Datensatzverwaltungsfeature](records-management.md) in Microsoft 365 Können Sie Drittanbieterdaten als Datensatz deklarieren. Dies kann manuell von Benutzern erfolgen, die eine Aufbewahrungsbezeichnung anwenden, die Daten von Drittanbietern in ihrem Postfach als Datensatz kennzeichnet. Oder Sie können Aufbewahrungsbezeichnungen automatisch anwenden, indem Sie vertrauliche Informationen, Schlüsselwörter oder Inhaltstypen in Drittanbieterdaten identifizieren.
 
 ### <a name="communication-compliance"></a>Kommunikationscompliance
 
@@ -126,6 +128,6 @@ Signale von Drittanbieterdaten, z. B. selektive [](insider-risk-management.md) P
 
 ## <a name="working-with-a-microsoft-partner-to-archive-third-party-data"></a>Arbeiten mit einem Microsoft-Partner zum Archivieren von Drittanbieterdaten
 
-Eine weitere Möglichkeit zum Importieren und Archivieren von Drittanbieterdaten besteht in der Zusammenarbeit Ihrer Organisation mit einem Microsoft-Partner. Wenn ein Drittanbieterdatentyp von den im Microsoft Compliance Center verfügbaren Datenconnectors nicht unterstützt wird, können Sie mit einem Partner zusammenarbeiten, der einen benutzerdefinierten Connector bereitstellen kann, der so konfiguriert wird, dass Elemente regelmäßig aus der Datenquelle eines Drittanbieters extrahiert werden, und anschließend eine Verbindung mit der Microsoft Cloud über eine Drittanbieter-API hergestellt und diese Elemente in Microsoft 365 importiert werden. Der Partnerconnector konvertiert auch den Inhalt eines Elements aus der Datenquelle eines Drittanbieters in eine E-Mail-Nachricht und importiert es dann in ein Postfach in Microsoft 365.
+Eine weitere Möglichkeit zum Importieren und Archivieren von Drittanbieterdaten besteht in der Zusammenarbeit Ihrer Organisation mit einem Microsoft-Partner. Wenn ein Drittanbieterdatentyp von den im Microsoft Compliance Center verfügbaren Datenconnectors nicht unterstützt wird, können Sie mit einem Partner zusammenarbeiten, der einen benutzerdefinierten Connector bereitstellen kann, der so konfiguriert wird, dass Elemente regelmäßig aus der Datenquelle eines Drittanbieters extrahiert werden, und anschließend eine Verbindung mit der Microsoft Cloud über eine Drittanbieter-API hergestellt wird, und diese Elemente in Microsoft 365 importieren. Der Partnerconnector konvertiert auch den Inhalt eines Elements aus der Datenquelle eines Drittanbieters in eine E-Mail-Nachricht und importiert es dann in ein Postfach in Microsoft 365.
 
 Eine Liste der Partner, mit der Sie zusammenarbeiten können, und den schrittweisen Prozess für diese Methode finden Sie unter Arbeiten mit einem Partner zum Archivieren von Drittanbieterdaten [in Microsoft 365](work-with-partner-to-archive-third-party-data.md).

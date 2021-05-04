@@ -3,7 +3,6 @@ title: Kundenschlüssel für Microsoft 365 auf der Mandantenebene (öffentliche 
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 3/26/2021
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,61 +13,61 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-description: Erfahren Sie, wie Sie Kundenschlüssel für Ihre Daten in Microsoft 365 auf Mandantenebene einrichten.
-ms.openlocfilehash: 811b153d5b0a472c6e542851fec45f1f42bca59b
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+description: Erfahren Sie, wie Sie Kundenschlüssel für Ihre Daten innerhalb Microsoft 365 Mandantenebene einrichten.
+ms.openlocfilehash: 90ad08059d6b71583850368a70e32167b9defe88
+ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394703"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100794"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Übersicht über den Kundenschlüssel für Microsoft 365 auf Mandantenebene (öffentliche Vorschau)
 
 Mithilfe von schlüsseln, die Sie bereitstellen, können Sie eine Datenverschlüsselungsrichtlinie (Data Encryption Policy, DEP) erstellen und sie dem Mandanten zuweisen. Die mandantenweite DEP, die Sie erstellen, verschlüsselt die folgenden Daten:
 
-- Teams-Chatnachrichten (1:1-Chats, Gruppenchats, Besprechungschats und Kanalunterhaltungen)
-- Teams-Mediennachrichten (Bilder, Codeausschnitte, Videonachrichten, Audionachrichten, Wiki-Bilder)
-- Im Speicher von Teams gespeicherte Anruf- und Besprechungsaufzeichnungen von Teams
-- Teams-Chatbenachrichtigungen
-- Vorschläge für Teams-Chats von Cortana
-- Teams-Statusmeldungen
+- Teams Chatnachrichten (1:1-Chats, Gruppenchats, Besprechungschats und Kanalunterhaltungen)
+- Teams (Bilder, Codeausschnitte, Videonachrichten, Audionachrichten, Wiki-Bilder)
+- Teams von Anruf- und Besprechungsaufzeichnungen, die im Teams gespeichert sind
+- Teams Chatbenachrichtigungen
+- Teams von Cortana
+- Teams Statusmeldungen
 - Benutzer- und Signalinformationen für Exchange Online
-- Exchange Online-Postfächer, die nicht bereits verschlüsselte Kundenschlüsseldeps auf Anwendungsebene sind
+- Exchange Online postfächern, die noch nicht verschlüsselte Kundenschlüssel-DEPs auf Anwendungsebene sind
 - #A0 (EDM)-Daten – (Datendateischemas, Regelpakete und die zum Hashen der vertraulichen Daten verwendeten Salts)
 
-Für Microsoft Information Protection und Microsoft Teams verschlüsselt der Kundenschlüssel auf Mandantenebene neue Daten ab dem Zeitpunkt, zu dem Sie die DEP dem Mandanten zuweisen. Die öffentliche Vorschau unterstützt das Verschlüsseln vergangener Daten nicht. Für Exchange Online verschlüsselt der Customer Key alle vorhandenen und neuen Daten.
+Für Microsoft Information Protection und Microsoft Teams verschlüsselt der Kundenschlüssel auf Mandantenebene neue Daten ab dem Zeitpunkt, zu dem Sie dem Mandanten die DEP zuweisen. Die öffentliche Vorschau unterstützt das Verschlüsseln vergangener Daten nicht. Für Exchange Online werden mit dem Kundenschlüssel alle vorhandenen und neuen Daten verschlüsselt.
 
 Sie können mehrere DEPs pro Mandant erstellen, aber nur eine DEP gleichzeitig zuweisen. Wenn Sie die DEP zuweisen, beginnt die Verschlüsselung automatisch, dauert jedoch je nach Größe Ihres Mandanten einige Zeit.
 
-## <a name="tenant-level-policies-add-broader-control-to-customer-key-for-microsoft-365"></a>Richtlinien auf Mandantenebene fügen dem Kundenschlüssel für Microsoft 365 eine umfassendere Kontrolle hinzu
+## <a name="tenant-level-policies-add-broader-control-to-customer-key-for-microsoft-365"></a>Richtlinien auf Mandantenebene fügen dem Kundenschlüssel für kundenspezifische Microsoft 365
 
-Wenn Sie bereits den Kundenschlüssel für Exchange Online und Sharepoint Online eingerichtet haben, passt die neue öffentliche Vorschau auf Mandantenebene dazu.
+Wenn Sie bereits den Kundenschlüssel für Exchange Online und Sharepoint Online eingerichtet haben, passt die neue öffentliche Vorschau auf Mandantenebene.
 
-Die von Ihnen erstellten Verschlüsselungsrichtlinien auf Mandantenebene verschlüsselt alle Daten für die Microsoft Teams- und Exchange Online-Workloads in Microsoft 365. Wenn Sie für Exchange Online jedoch bereits Kundenschlüssel-DEPs einzelnen Postfächern zugewiesen haben, setzt die Richtlinie auf Mandantenebene diese DEPs nicht außer Kraft. Die Richtlinie auf Mandantenebene verschlüsselt nur Postfächer, denen noch keine Kundenschlüssel-DEP auf Postfachebene zugewiesen ist. Wenn Sie ein Benutzerpostfach mithilfe einer Mandanten-DEP verschlüsseln, werden alle Inhalte verschlüsselt. Informationen dazu, was mit einer DEP auf Anwendungsebene verschlüsselt wird, finden Sie unter [Service encryption with Customer Key](customer-key-overview.md).
+Die von Ihnen erstellte Verschlüsselungsrichtlinie auf Mandantenebene verschlüsselt alle Daten für Microsoft Teams und Exchange Online Arbeitsauslastungen in Microsoft 365. Wenn Sie Exchange Online Kundenschlüssel-DEPs einzelnen Postfächern zugewiesen haben, setzt die Richtlinie auf Mandantenebene diese DEPs jedoch nicht außer Kraft. Die Richtlinie auf Mandantenebene verschlüsselt nur Postfächer, denen noch keine Kundenschlüssel-DEP auf Postfachebene zugewiesen ist. Wenn Sie ein Benutzerpostfach mithilfe einer Mandanten-DEP verschlüsseln, werden alle Inhalte verschlüsselt. Informationen dazu, was mit einer DEP auf Anwendungsebene verschlüsselt wird, finden Sie unter [Service encryption with Customer Key](customer-key-overview.md).
 
 ## <a name="data-that-isnt-encrypted-with-customer-key-at-the-tenant-level"></a>Daten, die nicht mit dem Kundenschlüssel auf Mandantenebene verschlüsselt werden
 
 Der Customer Key verschlüsselt die folgenden Datentypen nicht auf Mandantenebene. Stattdessen verwendet Microsoft 365 andere Verschlüsselungstypen, um diese Daten zu schützen.
 
-- Exchange-Onlinepostfächer, die Sie bereits mit einer Customer Key DEP auf Anwendungsebene verschlüsselt haben. Postfächer, denen keine Kundenschlüssel-DEP zugewiesen ist, werden mithilfe der Mandanten-DEP verschlüsselt. Diese Anordnung bedeutet, dass einige Postfächer mit einer Mandanten-DEP und einige Postfächer mit DEPs auf Anwendungsebene verschlüsselt sind.
-- SharePoint und OneDrive for Business verwenden Kundenschlüssel auf Anwendungsebene. Eine einzelne DEP verschlüsselt Inhalte in SharePoint für einen einzelnen Geografischen.
-- Microsoft #A0 und einige #A1 und Besprechungsaufzeichnungen, die in OneDrive for Business und SharePoint gespeichert sind, werden durch eine SharePoint Online-DEP verschlüsselt.
+- Exchange Onlinepostfächer, die Sie bereits mit einer Kundenschlüssel-DEP auf Anwendungsebene verschlüsselt haben. Postfächer, denen keine Kundenschlüssel-DEP zugewiesen ist, werden mithilfe der Mandanten-DEP verschlüsselt. Diese Anordnung bedeutet, dass einige Postfächer mit einer Mandanten-DEP und einige Postfächer mit DEPs auf Anwendungsebene verschlüsselt sind.
+- SharePoint und OneDrive for Business Verwenden des Kundenschlüssels auf Anwendungsebene. Eine einzelne DEP verschlüsselt Inhalte in SharePoint für einen einzelnen Geografischen.
+- Microsoft Teams dateien und einige Teams Anruf- und Besprechungsaufzeichnungen, die in OneDrive for Business und SharePoint gespeichert sind, werden durch eine SharePoint Online-DEP verschlüsselt.
 
-Arbeitsauslastungen oder Szenarien, die derzeit nicht vom Kundenschlüssel für Microsoft 365 unterstützt werden.
+Alle Workloads oder Szenarien, die derzeit nicht vom Kundenschlüssel für Microsoft 365.
 
-- Andere Microsoft 365-Workloads wie Yammer, Planner und so weiter.
-- Teams Live Events und Q&A in Live Events. Für Teams ist dieses Szenario das einzige Szenario, das nicht mit dem Kundenschlüssel auf Mandantenebene verschlüsselt wird.
+- Andere Microsoft 365 Arbeitsauslastungen wie Yammer, Planner und so weiter.
+- Teams Liveereignisse und Fragen&A in Liveereignissen. Für Teams ist dieses Szenario das einzige Szenario, das nicht durch den Kundenschlüssel auf Mandantenebene verschlüsselt wird.
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>Einrichten des Kundenschlüssels auf Mandantenebene (öffentliche Vorschau)
 
-Diese Schritte sind ähnlich, aber nicht identisch mit den Schritten zum Einrichten des Kundenschlüssels auf Anwendungsebene. Verwenden Sie diese öffentliche Vorschau nur mit Testdaten in Test-Mandanten. Verwenden Sie diese Version nicht mit Produktionsdaten oder in Ihrer Produktionsumgebung. Wenn Sie bereits über eine Produktionsbereitstellung des Kundenschlüssels verfügen, verwenden Sie diese Schritte, um den Kundenschlüssel auf Mandantenebene in einer Testumgebung zu einrichten. Nachdem Sie Ihrem Mandanten eine Mandantenebenen-DEP zugewiesen haben, können Sie den Überprüfungsprozess starten und m365ck@microsoft.com fragen oder bedenken. Dokumentierte Überprüfungsschritte finden Sie auch in der öffentlichen Vorschau der Validierungsanweisungen für [die Daten-at-Rest-Verschlüsselung für Microsoft 365](https://aka.ms/CustomerKey/PublicPreviewValidation).
+Diese Schritte sind ähnlich, aber nicht identisch mit den Schritten zum Einrichten des Kundenschlüssels auf Anwendungsebene. Verwenden Sie diese öffentliche Vorschau nur mit Testdaten in Test-Mandanten. Verwenden Sie diese Version nicht mit Produktionsdaten oder in Ihrer Produktionsumgebung. Wenn Sie bereits über eine Produktionsbereitstellung des Kundenschlüssels verfügen, verwenden Sie diese Schritte, um den Kundenschlüssel auf Mandantenebene in einer Testumgebung zu einrichten. Nachdem Sie Ihrem Mandanten eine Mandantenebenen-DEP zugewiesen haben, können Sie den Überprüfungsprozess starten und m365ck@microsoft.com fragen oder bedenken. Dokumentierte Überprüfungsschritte finden Sie auch in der öffentlichen Vorschau von Validation [Instructions for Data-at-rest Encryption for Microsoft 365](https://aka.ms/CustomerKey/PublicPreviewValidation).
 
-Sie führen die meisten dieser Aufgaben durch eine Remoteverbindung mit Azure PowerShell aus. Um optimale Ergebnisse zu erzielen, sollten Sie Version 4.4.0 oder höher von Azure PowerShell verwenden.
+Sie werden die meisten dieser Aufgaben ausführen, indem Sie eine Remoteverbindung mit Azure PowerShell. Um optimale Ergebnisse zu erzielen, sollten Sie Version 4.4.0 oder höher von Azure PowerShell verwenden.
 
 Bevor Sie beginnen:
 
 - Sie müssen ein Arbeits- oder Schulkonto verwenden, das über die Administratorrolle "Compliance" verfügt, um den Kundenschlüssel auf Mandantenebene einrichten zu können.
-- Stellen Sie sicher, dass Sie über die entsprechende Lizenzierung für Ihre Organisation verfügen. Verwenden Sie ein kostenpflichtiges, in Rechnung gestelltes Azure-Abonnement mithilfe Konzernvertrag oder eines Clouddienstanbieters. Azure-Abonnements, die mit Pay As You Go-Plänen oder mit einer Kreditkarte erworben wurden, werden für den Kundenschlüssel nicht unterstützt. Ab dem 1. April 2020 wird der Kundenschlüssel in Office 365 in Office 365 E5, Microsoft 365 E5, Microsoft 365 E5 Compliance und Microsoft 365 E5 Information Protection & Governance SKUs angeboten. Office 365 Advanced Compliance SKU ist für neue Lizenzen nicht mehr verfügbar. Vorhandene Office 365 Advanced Compliance-Lizenzen werden weiterhin unterstützt. Während der Dienst mit mindestens einem entsprechend lizenzierten Benutzer unter dem Mandanten aktiviert werden kann, sollten Sie dennoch sicherstellen, dass alle Benutzer, die von dem Dienst profitieren, über entsprechende Lizenzen verfügen.
+- Stellen Sie sicher, dass Sie über die entsprechende Lizenzierung für Ihre Organisation verfügen. Verwenden Sie ein kostenpflichtiges, in Rechnung gestelltes Azure-Abonnement mithilfe Enterprise Agreement oder eines Clouddienstanbieters. Azure-Abonnements, die mit Pay As You Go-Plänen oder mit einer Kreditkarte erworben wurden, werden für den Kundenschlüssel nicht unterstützt. Ab dem 1. April 2020 wird der Kundenschlüssel in Office 365 in Office 365 E5, Microsoft 365 E5, Microsoft 365 E5 Compliance und Microsoft 365 E5 Information Protection & Governance SKUs angeboten. Office 365 Advanced Compliance SKU ist für neue Lizenzen nicht mehr verfügbar. Vorhandene Office 365 Advanced Compliance werden weiterhin unterstützt. Während der Dienst mit mindestens einem entsprechend lizenzierten Benutzer unter dem Mandanten aktiviert werden kann, sollten Sie dennoch sicherstellen, dass alle Benutzer, die von dem Dienst profitieren, über entsprechende Lizenzen verfügen.
 
 ### <a name="create-two-new-azure-subscriptions"></a>Zwei neue Azure-Abonnements erstellen
 
@@ -80,9 +79,9 @@ Es gibt praktisch keine Beschränkung hinsichtlich der Anzahl von Azure-Abonneme
 
 Der temporäre oder dauerhafte Verlust von Stammverschlüsselungsschlüsseln kann für den Dienstbetrieb störend oder sogar katastrophal sein und zu Datenverlusten führen. Aus diesem Grund ist für die mit Customer Key verwendeten Ressourcen ein starker Schutz erforderlich. Alle Azure-Ressourcen, die mit Customer Key verwendet werden, bieten Schutzmechanismen, die weit über die Standardkonfiguration hinaus gehen. Azure-Abonnements können derart gekennzeichnet oder registriert werden, dass eine sofortige und unwiderrufliche Kündigung vermieden wird. Dieser Vorgang wird als Registrierung für einen obligatorischen Aufbewahrungszeitraum bezeichnet. Die schritte, die zum Registrieren von Azure-Abonnements für einen obligatorischen Aufbewahrungszeitraum erforderlich sind, erfordern die Zusammenarbeit mit Microsoft. Dieser Vorgang kann bis zu fünf Arbeitstage dauern. Zuvor wurde dieser Prozess manchmal als "Do Not Cancel" bezeichnet.
   
-Bevor Sie sich an das Microsoft 365-Team wenden, müssen Sie die folgenden Schritte für jedes Azure-Abonnement ausführen, das Sie mit Dem Kundenschlüssel verwenden. Stellen Sie sicher, dass Das [Azure PowerShell Az-Modul](/powershell/azure/new-azureps-module-az) installiert ist, bevor Sie beginnen.
+Bevor Sie das Microsoft 365 kontaktieren, müssen Sie die folgenden Schritte für jedes Azure-Abonnement ausführen, das Sie mit Customer Key verwenden. Stellen Sie sicher, dass das [Azure PowerShell Az-Modul](/powershell/azure/new-azureps-module-az) installiert ist, bevor Sie beginnen.
 
-1. Melden Sie sich mit Azure PowerShell an. Anweisungen finden Sie unter [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
+1. Melden Sie sich mit Azure PowerShell. Anweisungen finden Sie unter [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
 2. Führen Sie Register-AzProviderFeature cmdlet aus, um Ihre Abonnements für die Verwendung eines obligatorischen Aufbewahrungszeitraums zu registrieren. Führen Sie diese Aktion für jedes Abonnement aus.
 
@@ -136,7 +135,7 @@ Für jeden Schlüsseltresor müssen Sie je nach Implementierung drei separate Be
   > [!IMPORTANT]
   > Die Berechtigungsgruppe, die Schlüsseltresor-Administratoren zugewiesen ist, beinhaltet keine Berechtigung zum Löschen von Schlüsseln. Dies ist beabsichtigt und eine wichtige Vorgehensweise. Kryptografische Schlüssel werden normalerweise nicht gelöscht, da dadurch Daten dauerhaft vernichtet werden. Eine bewährte Methode besteht darin, den Schlüsseltresor-Administratoren diese Berechtigung nicht standardmäßig zuzuweisen. Behalten Sie stattdessen diese Berechtigung den Schlüsseltresor-Mitwirkenden vor und weisen Sie diese einem Administrator nur kurzfristig und lediglich, sofern die damit verbundenen Folgen klar verstanden wurden, zu.
   
-  Um diesen Berechtigungen einem Benutzer in Ihrer Organisation zuzuordnen, melden Sie sich bei Ihrem Azure-Abonnement mit Azure PowerShell an. Anweisungen finden Sie unter [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
+  Um diesen Berechtigungen einem Benutzer in Ihrer Organisation zuzuordnen, melden Sie sich bei Ihrem Azure-Abonnement mit Azure PowerShell. Anweisungen finden Sie unter [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
    Führen Sie Set-AzKeyVaultAccessPolicy cmdlet aus, um die erforderlichen Berechtigungen zu erteilen.
 
@@ -152,17 +151,17 @@ Für jeden Schlüsseltresor müssen Sie je nach Implementierung drei separate Be
 
 - **Schlüsseltresor-Mitwirkenden**, die Berechtigungen für den Azure Key Vault selbst ändern können. Sie müssen diese Berechtigungen ändern, wenn Mitarbeiter Ihr Team verlassen oder ihrem Team beitreten, oder in der seltenen Situation, dass die Schlüsseltresoradministratoren berechtigterweise die Berechtigung zum Löschen oder Wiederherstellen eines Schlüssels benötigen. Dieser Gruppe von Schlüsseltresor-Mitwirkenden muss die Rolle Mitwirkender für Ihren Schlüsseltresor zugewiesen werden. Sie können diese Rolle mithilfe des Azure-Ressourcenmanagers zuweisen. Ausführliche Schritte finden Sie unter [Use Role-Based Access Control](/azure/active-directory/role-based-access-control-configure) to manage access to your Azure subscription resources. Der Administrator, der ein Abonnement erstellt, verfügt standardmäßig über diesen Zugriff und kann der Mitwirkendenrolle andere Administratoren zuweisen.
 
-- **Microsoft 365-Daten im** Ruhedienst, der die Arbeit des Kundenschlüssels auf Mandantenebene vor sich hat. Führen Sie zum Erteilen von Berechtigungen für Microsoft 365 das **Cmdlet Set-AzKeyVaultAccessPolicy** mit der folgenden Syntax aus:
+- **Microsoft 365 daten im Ruhedienst,** der die Arbeit des Kundenschlüssels auf Mandantenebene vor sich hat. Führen Sie zum Erteilen Microsoft 365 das **Cmdlet Set-AzKeyVaultAccessPolicy** mit der folgenden Syntax aus:
 
    ```powershell
    Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Microsoft 365 appID>
    ```
 
-  Dabei gilt Folgendes:
+  Dabei gilt:
 
   - *Vaultname* ist der Name des schlüsseltresor, den Sie erstellt haben.
 
-  Beispiel: Ersetzen Sie für den Microsoft 365 Data at Rest Encryption-Dienst  *Microsoft 365 appID* durch `c066d759-24ae-40e7-a56f-027002b5d3e4`
+  Beispiel: Ersetzen Sie für Microsoft 365 Daten bei Restverschlüsselungsdienst Microsoft 365 *appID* durch`c066d759-24ae-40e7-a56f-027002b5d3e4`
 
   ```powershell
   Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName c066d759-24ae-40e7-a56f-027002b5d3e4
@@ -201,7 +200,7 @@ Führen Sie das [Cmdlet Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-az
 Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
 ```
 
-Dabei gilt Folgendes:
+Dabei gilt:
 
 - *Vaultname* ist der Name des Schlüsseltresor, in dem Sie den Schlüssel erstellen möchten.
 
@@ -220,7 +219,7 @@ Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-V
 
 ### <a name="check-the-recovery-level-of-your-keys"></a>Überprüfen der Wiederherstellungsebene Ihrer Schlüssel
 
-Microsoft 365 setzt voraus, dass das Azure Key Vault-Abonnement auf Do Not Cancel festgelegt ist und dass die von Customer Key verwendeten Schlüssel für die soft delete aktiviert sind. Sie können diese Einstellungen bestätigen, indem Sie sich die Wiederherstellungsstufe ihrer Schlüssel anschauen.
+Microsoft 365 erfordert, dass das Azure Key Vault-Abonnement auf Do Not Cancel festgelegt ist und dass für die vom Kundenschlüssel verwendeten Schlüssel das soft delete aktiviert ist. Sie können diese Einstellungen bestätigen, indem Sie sich die Wiederherstellungsstufe ihrer Schlüssel anschauen.
   
 Führen Sie zum Überprüfen der Wiederherstellungsstufe eines Schlüssels in Azure PowerShell das cmdlet Get-AzKeyVaultKey wie folgt aus:
   
@@ -263,7 +262,7 @@ Führen Sie [das Cmdlet Get-AzKeyVault](/powershell/module/az.keyvault/get-azkey
 Get-AzKeyVault -VaultName <vault name>
 ```
 
-Suchen Sie in der Ausgabe nach der Zugriffsrichtlinie und nach der Microsoft 365-App-ID (GUID). Alle drei Vorgänge get, wrapKey und unwrapKey müssen unter Berechtigungen für Schlüssel angezeigt werden.
+Suchen Sie in der Ausgabe nach der Zugriffsrichtlinie und nach der Microsoft 365 App-ID (GUID). Alle drei Vorgänge get, wrapKey und unwrapKey müssen unter Berechtigungen für Schlüssel angezeigt werden.
   
 Wenn die Zugriffsrichtlinienkonfiguration falsch ist, führen Sie das cmdlet Set-AzKeyVaultAccessPolicy wie folgt aus:
   
@@ -271,7 +270,7 @@ Wenn die Zugriffsrichtlinienkonfiguration falsch ist, führen Sie das cmdlet Set
 Set-AzKeyVaultAccessPolicy -VaultName <vault name> -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName <Microsoft 365 appID>
 ```
 
-Beispiel: Ersetzen Sie für den Microsoft 365 Data at Rest Encryption-Dienst  *Microsoft 365 appID* durch `c066d759-24ae-40e7-a56f-027002b5d3e4`
+Beispiel: Ersetzen Sie für Microsoft 365 Daten bei Restverschlüsselungsdienst Microsoft 365 *appID* durch`c066d759-24ae-40e7-a56f-027002b5d3e4`
 
   ```powershell
   Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName c066d759-24ae-40e7-a56f-027002b5d3e4
@@ -283,7 +282,7 @@ Führen Sie das [Cmdlet Get-AzKeyVaultKey](/powershell/module/az.keyvault/get-az
 Get-AzKeyVaultKey -VaultName <vault name>
 ```
 
-Ein abgelaufener Schlüssel kann nicht vom Kundenschlüssel verwendet werden, und Vorgänge, die mit einem abgelaufenen Schlüssel versucht werden, führen möglicherweise zu einem Dienstausfall. Es wird dringend empfohlen, dass mit Customer Key verwendete Schlüssel kein Ablaufdatum aufweisen. Ein einmal festgelegtes Ablaufdatum kann nicht gelöscht werden, es kann jedoch eine Datumänderung vorgenommen werden. Wenn ein Schlüssel verwendet werden muss, für den ein Ablaufdatum festgelegt ist, ändern Sie bitte das Ablaufdatum auf 31.12.9999. Schlüssel mit einem Ablaufdatum, das auf ein anderes Datum als den 31.12.9999 festgelegt ist, bestehen die Microsoft 365-Überprüfung nicht.
+Ein abgelaufener Schlüssel kann nicht vom Kundenschlüssel verwendet werden, und Vorgänge, die mit einem abgelaufenen Schlüssel versucht werden, führen möglicherweise zu einem Dienstausfall. Es wird dringend empfohlen, dass mit Customer Key verwendete Schlüssel kein Ablaufdatum aufweisen. Ein einmal festgelegtes Ablaufdatum kann nicht gelöscht werden, es kann jedoch eine Datumänderung vorgenommen werden. Wenn ein Schlüssel verwendet werden muss, für den ein Ablaufdatum festgelegt ist, ändern Sie bitte das Ablaufdatum auf 31.12.9999. Schlüssel mit einem Ablaufdatum, das auf ein anderes Datum als den 31.12.9999 festgelegt ist, bestehen Microsoft 365 Überprüfung.
   
 Führen Sie das [Cmdlet Update-AzKeyVaultKey](/powershell/module/az.keyvault/update-azkeyvaultkey) wie folgt aus, um ein Ablaufdatum zu ändern, das auf einen anderen Wert als den 31.12.9999 festgelegt wurde:
   
@@ -418,12 +417,12 @@ Beschreibung: Dieses Cmdlet listet die Richtlinie auf, die dem Mandanten derzeit
 
 ## <a name="offboarding-from-customer-key-at-the-tenant-level"></a>Offboarding vom Kundenschlüssel auf Mandantenebene
 
-Wenn Sie zu von Microsoft verwalteten Schlüsseln zurückkehren müssen, können Sie dies. Beim Offboard werden Ihre Daten mithilfe der standardverschlüsselten Verschlüsselung, die von jeder einzelnen Arbeitsauslastung unterstützt wird, erneut verschlüsselt. Exchange Online unterstützt beispielsweise die Standardverschlüsselung mithilfe von von Microsoft verwalteten Schlüsseln.
+Wenn Sie zu von Microsoft verwalteten Schlüsseln zurückkehren müssen, können Sie dies. Beim Offboard werden Ihre Daten mithilfe der standardverschlüsselten Verschlüsselung, die von jeder einzelnen Arbeitsauslastung unterstützt wird, erneut verschlüsselt. Beispielsweise unterstützt Exchange Online Standardverschlüsselung mithilfe von von Microsoft verwalteten Schlüsseln.
 
 Wenn Sie ihren Mandanten vom Kundenschlüssel auf Mandantenebene [](mailto:m365ck@microsoft.com) aus offboarden möchten, wird m365ck@microsoft.com eine Anforderung zum "Deaktivieren" des Diensts für den Mandanten gesendet.
 
 > [!IMPORTANT]
-> Offboarding ist nicht identisch mit einer Datenbereinigung. Eine Datenbereinigung löscht die Daten Ihrer Organisation dauerhaft aus Microsoft 365, offboarding nicht. Sie können keine Datenbereinigung für eine Richtlinie auf Mandantenebene ausführen. Informationen zum Datenbereinigungspfad finden Sie unter [Revoke your keys and start the data purge path process](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process).
+> Offboarding ist nicht identisch mit einer Datenbereinigung. Eine Datenbereinigung löscht die Daten Ihrer Organisation dauerhaft aus Microsoft 365 offboarding nicht. Sie können keine Datenbereinigung für eine Richtlinie auf Mandantenebene ausführen. Informationen zum Datenbereinigungspfad finden Sie unter [Revoke your keys and start the data purge path process](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process).
 
 ## <a name="about-the-availability-key"></a>Informationen zum Verfügbarkeitsschlüssel
 
@@ -433,13 +432,9 @@ Weitere Informationen zum Verfügbarkeitsschlüssel finden Sie [unter Informatio
 
 Informationen zum Drehen oder Rollen von Schlüsseln, die Sie mit dem Kundenschlüssel verwenden, finden Sie unter [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md). Wenn Sie die DEP so aktualisieren, dass die neue Version der Schlüssel verwendet wird, führen Sie das cmdlet Set-M365DataAtRestEncryptionPolicy aus, wie weiter oben in diesem Artikel beschrieben.
 
-## <a name="known-issues"></a>Bekannte Probleme
-
-Wenn Sie Kundenschlüssel auf Mandantenebene aktivieren, können Sie kein neues Team in Microsoft Teams erstellen.
-
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Dienstverschlüsselung mit Kundenschlüssel](customer-key-overview.md)
+- [Dienstverschlüsselung mit dem Kundenschlüssel](customer-key-overview.md)
 
 - [Rollen oder Drehen eines Kundenschlüssels oder eines Verfügbarkeitsschlüssels](customer-key-availability-key-roll.md)
 

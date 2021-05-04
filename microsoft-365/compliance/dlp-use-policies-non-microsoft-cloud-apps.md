@@ -20,16 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie dlp-Richtlinien für Nicht-Microsoft-Cloud-Apps verwenden.
-ms.openlocfilehash: 6787add3ef8b2d6ded22bd05c0ff9658c4b7fbfc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4c5170cab01b1ca22701b13c7afbf4f2e0ba7da
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922081"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114133"
 ---
 # <a name="use-data-loss-prevention-policies-for-non-microsoft-cloud-apps-preview"></a>Verwenden von Richtlinien zur Verhinderung von Datenverlust für Nicht-Microsoft-Cloud-Apps (Vorschau)
 
-#A0 (Data Loss Prevention, Verhinderung von Datenverlust) für Nicht-Microsoft-Cloud-Apps sind Teil der Microsoft 365 DLP-Suite mit Features. Mithilfe dieser Features können Sie vertrauliche Elemente in microsoft 365-Diensten ermitteln und schützen. Weitere Informationen zu allen Microsoft DLP-Angeboten finden Sie unter [Overview of data loss prevention](./data-loss-prevention-policies.md?view=o365-worldwide).
+#A0 (Data Loss Prevention, Verhinderung von Datenverlust) für Nicht-Microsoft-Cloud-Apps sind Teil der Microsoft 365#A1 von Features. Mithilfe dieser Features können Sie vertrauliche Elemente in verschiedenen Diensten Microsoft 365 schützen. Weitere Informationen zu allen Microsoft DLP-Angeboten finden Sie [unter Learn about Data Loss Prevention](dlp-learn-about-dlp.md).
 
 Sie können DLP-Richtlinien verwenden, um Nicht-Microsoft-Cloud-Apps zu überwachen und zu erkennen, wenn vertrauliche Elemente über Nicht-Microsoft-Cloud-Apps verwendet und freigegeben werden. Die Verwendung dieser Richtlinien bietet Ihnen die Sichtbarkeit und Kontrolle, die Sie sicherstellen müssen, dass sie ordnungsgemäß verwendet und geschützt sind, und verhindert riskantes Verhalten, das sie gefährden könnte.
 
@@ -43,31 +43,31 @@ Bevor Sie mit der Verwendung von DLP-Richtlinien für Nicht-Microsoft-Cloud-Apps
 - Microsoft 365 E5 Compliance
 - Microsoft 365 E5 Security
 
-### <a name="prepare-your-cloud-app-security-environment"></a>Vorbereiten Ihrer Cloud App Security-Umgebung
+### <a name="prepare-your-cloud-app-security-environment"></a>Vorbereiten der Cloud App Security Umgebung
 
-DLP-Richtlinien für Nicht-Microsoft-Cloud-Apps verwenden Cloud App Security DLP-Funktionen. Um es zu verwenden, sollten Sie Ihre Cloud App Security-Umgebung vorbereiten. Anweisungen finden Sie unter [Set instant visibility, protection, and governance actions for your apps](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps).
+DLP-Richtlinien für Nicht-Microsoft-Cloud-Apps verwenden Cloud App Security DLP-Funktionen. Um es zu verwenden, sollten Sie Ihre Umgebung Cloud App Security vorbereiten. Anweisungen finden Sie unter [Set instant visibility, protection, and governance actions for your apps](/cloud-app-security/getting-started-with-cloud-app-security#step-1-set-instant-visibility-protection-and-governance-actions-for-your-apps).
 
 ### <a name="connect-a-non-microsoft-cloud-app"></a>Verbinden einer Nicht-Microsoft-Cloud-App
 
-Um die DLP-Richtlinie für eine bestimmte Cloud-App zu verwenden, die keine Microsoft-App ist, muss die App mit Cloud App Security verbunden sein. Diesbezügliche Informationen finden Sie unter:
+Um eine DLP-Richtlinie mit einer bestimmten Cloud-App zu verwenden, die keine Microsoft-App ist, muss die App mit einer Cloud App Security. Diesbezügliche Informationen finden Sie unter:
 
-- [Connect Box](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
-- [Verbinden von Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
-- [Connect G-Suite](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
-- [Verbinden von Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
-- [Verbinden von Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
+- [Verbinden Box](/cloud-app-security/connect-box-to-microsoft-cloud-app-security)
+- [Verbinden Dropbox](/cloud-app-security/connect-dropbox-to-microsoft-cloud-app-security)
+- [Verbinden G-Suite](/cloud-app-security/connect-google-apps-to-microsoft-cloud-app-security)
+- [Verbinden Salesforce](/cloud-app-security/connect-salesforce-to-microsoft-cloud-app-security)
+- [Verbinden Cisco Webex](/cloud-app-security/connect-webex-to-microsoft-cloud-app-security)
 
-Nachdem Sie Ihre Cloud-Apps mit Cloud App Security verbinden, können Sie für sie Microsoft 365-DLP-Richtlinien erstellen.
+Nachdem Sie Ihre Cloud-Apps mit Cloud App Security verbinden, können Sie Microsoft 365 DLP-Richtlinien für sie erstellen.
 
 >[!NOTE]
->Es ist auch möglich, Microsoft Cloud App Security zum Erstellen von DLP-Richtlinien für Microsoft-Cloud-Apps zu verwenden. Es wird jedoch empfohlen, Microsoft 365 zum Erstellen und Verwalten von DLP-Richtlinien für Microsoft-Cloud-Apps zu verwenden.
+>Es ist auch möglich, mithilfe von Microsoft Cloud App Security DLP-Richtlinien für Microsoft-Cloud-Apps zu erstellen. Es wird jedoch empfohlen, die Microsoft 365 zum Erstellen und Verwalten von DLP-Richtlinien für Microsoft-Cloud-Apps zu verwenden.
 
 ## <a name="create-a-dlp-policy-to-a-non-microsoft-cloud-app"></a>Erstellen einer DLP-Richtlinie für eine Nicht-Microsoft-Cloud-App
 
-Wenn Sie einen Speicherort für die DLP-Richtlinie auswählen, aktivieren Sie den **Microsoft Cloud App Security-Speicherort.**
+Wenn Sie einen Speicherort für die DLP-Richtlinie auswählen, aktivieren Sie **den Microsoft Cloud App Security** Speicherort.
 
 - Wählen Sie Instanz auswählen aus, um eine bestimmte App oder Instanz **auszuwählen.**
-- Wenn Sie keine Instanz auswählen, verwendet die Richtlinie alle verbundenen Apps in Ihrem Microsoft Cloud App Security-Mandanten.
+- Wenn Sie keine Instanz auswählen, verwendet die Richtlinie alle verbundenen Apps in Ihrem Microsoft Cloud App Security Mandanten.
 
    ![Speicherorte, an die die Richtlinie angewendet werden soll](../media/1-dlp-non-microsoft-cloud-app-choose-instance.png)
 

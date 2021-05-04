@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Die erweiterte Überwachung in Microsoft 365 bietet neue Überwachungsfunktionen, die Ihre Organisation bei forensischen und Complianceuntersuchungen unterstützen.
-ms.openlocfilehash: 88308d173df79f55f38aba4b70d4b561667941bf
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 4df9cda05d4b5febbc5b7beb505365e449accf04
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574654"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892906"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Erweiterte Überwachung in Microsoft 365
 
@@ -41,7 +41,7 @@ Die erweiterte Überwachung bewahrt alle Exchange-, SharePoint- und Azure Active
 Außerdem wird es zukünftig möglich sein, Überwachungsprotokolle 10 Jahre lang aufzubewahren. Die zehnjährige Aufbewahrung von Überwachungsprotokollen ist bei langfristigen Untersuchungen und zur Einhaltung behördlicher, rechtlicher und interner Vorgaben hilfreich.
 
 > [!NOTE]
-> Für die zehnjährige Aufbewahrung von Überwachungsprotokollen wird eine zusätzliche Lizenz erforderlich sein. Diese neue Lizenz wird Anfang 2021 verfügbar sein. Weitere Informationen hierzu finden Sie im Abschnitt [Häufig gestellte Fragen zur erweiterten Überwachung](#faqs-for-advanced-audit) in diesem Artikel.
+> Für die zehnjährige Aufbewahrung von Überwachungsprotokollen wird eine zusätzliche Lizenz erforderlich sein. Weitere Informationen hierzu finden Sie im Abschnitt [Häufig gestellte Fragen zur erweiterten Überwachung](#faqs-for-advanced-audit) in diesem Artikel.
 
 ### <a name="audit-log-retention-policies"></a>Aufbewahrungsrichtlinien für Überwachungsprotokolle
 
@@ -63,9 +63,12 @@ Die erweiterte Überwachung hilft Organisationen dabei, forensische und Complian
 
 - [Send](#send)
 
-- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)
+- [SearchQueryInitiatedExchange](#searchqueryinitiatedexchange)<sup>*</sup>
 
-- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)
+- [SearchQueryInitiatedSharePoint](#searchqueryinitiatedsharepoint)<sup>*</sup>
+
+> [!NOTE]
+> <sup>*</sup> Derzeit ist dieses Ereignis in Umgebungen von Office 365 und Microsoft 365 Government nicht verfügbar. Dazu gehören GCC-, GCC High- und DoD-Umgebungen.
 
 ### <a name="mailitemsaccessed"></a>MailItemsAccessed
 
@@ -197,17 +200,13 @@ Dem Benutzer muss eine E5-Lizenz zugewiesen werden, um von der erweiterten Über
 
 Für berechtigte Kunden und Benutzer, denen eine entsprechende Lizenz zugewiesen ist, gibt es keine Aktion, mit der sie Zugriff auf wichtige Überwachungsereignisse erlangen können.
 
-**Wann wird die neue Add-On-Lizenz für die zehnjährige Aufbewahrung von Überwachungsprotokollen verfügbar sein?**
+**Was passiert mit den Überwachungsprotokolldaten meiner Organisation, wenn ich eine 10-Jahres-Richtlinie zur Aufbewahrung von Überwachungsprotokollen erstellt habe, als die Funktion für die allgemeine Verfügbarkeit freigegeben wurde, bevor die erforderliche Zusatzlizenz verfügbar gemacht wurde?**
 
-Das neue 10-Jahres-Add-On zur Aufbewahrung von Überwachungsprotokollen kann jetzt von Kunden mit E5-Abonnements erworben werden.
-
-**Was passiert mit den Überwachungsprotokolldaten meiner Organisation, wenn ich eine 10-Jahres-Richtlinie zur Aufbewahrung von Überwachungsprotokollen erstellt habe, als die Funktion für die allgemeine Verfügbarkeit freigegeben wurde, bevor die erforderliche Zusatzlizenz im Februar 2021 verfügbar gemacht wurde?**
-
-Alle Überwachungsprotokolldaten, die durch eine 10-Jahres-Richtlinie zur Aufbewahrung von Überwachungsprotokollen abgedeckt sind, die Sie nach der allgemeinen Verfügbarkeit erstellt haben, werden 10 Jahre lang aufbewahrt. Wenn die Add-On-Lizenz für die zehnjährige Aufbewahrung von Überwachungsprotokollen Anfang 2021 verfügbar ist, müssen Sie Add-On-Lizenzen für Benutzer erwerben, deren Überwachungsdaten durch eine bestehende 10-Jahres- Aufbewahrungsrichtlinie für Überwachungsprotokolle aufbewahrt werden.
+Alle Überwachungsprotokolldaten, die durch eine 10-Jahres-Richtlinie zur Aufbewahrung von Überwachungsprotokollen abgedeckt sind, die Sie erstellt haben, nachdem die Funktion im letzten Quartal 2020 zur allgemeinen Verfügbarkeit freigegeben wurde, werden 10 Jahre lang aufbewahrt. Dies umfasst 10-Jahres-Richtlinien zur Aufbewahrung von Überwachungsprotokollen, die erstellt wurden, bevor die erforderliche Add-On-Lizenz zum Kauf freigegeben wurde. Da jedoch jetzt die 10-Jahres-Add-On-Lizenz für die Aufbewahrung von Überwachungsprotokollen verfügbar ist, müssen Sie diese Add-On-Lizenzen für alle Benutzer erwerben und zuweisen, deren Überwachungsdaten unter eine 10-Jahres-Richtlinie für die Aufbewahrung von Überwachungsdaten fallen.
 
 **Sind die neuen Ereignisse in der erweiterten Überwachung in der Office 365-Verwaltungsaktivitäts-API verfügbar?**
 
-Ja. Solange Überwachungsdatensätze für Benutzer mit der entsprechenden Lizenz generiert werden, können Sie auf diese Datensätze über die Office 365-Verwaltungsaktivitäts-API zugreifen.
+Ja. Solange Überwachungsaufzeichnungen für Benutzer mit der entsprechenden Lizenz generiert werden, können Sie über die Office 365-Verwaltungsaktivitäts-API auf diese Aufzeichnungen zugreifen.
 
 **Bedeutet eine höhere Bandbreite eine bessere Latenz oder eine höhere SLA?**
 

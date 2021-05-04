@@ -20,18 +20,18 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: a5eab2aaecd3d0c339fdc2e58af17dcfd9feb199
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9d9c439704b6837cec086b390cde9c480d2d69ba
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919881"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860396"
 ---
 # <a name="learn-about-communication-compliance-in-microsoft-365"></a>Informationen zur Kommunikationskonformität in Microsoft 365
 
-Kommunikationskonformität ist eine Lösung für Insiderrisiken in Microsoft 365, mit der Sie Kommunikationsrisiken minimieren können, indem Sie unangemessene Nachrichten in Ihrer Organisation erkennen, erfassen und darauf eingehen. Mit vordefinierten und benutzerdefinierten Richtlinien können Sie die interne und externe Kommunikation auf Richtlinien übereinstimmungen überprüfen, damit sie von bestimmten Prüfern geprüft werden können. Prüfer können gescannte E-Mails, Microsoft Teams, Yammer oder Drittanbieterkommunikationen in Ihrer Organisation untersuchen und geeignete Maßnahmen ergreifen, um sicherzustellen, dass sie den Nachrichtenstandards Ihrer Organisation entsprechen.
+Kommunikationskonformität ist eine Insiderrisikolösung in Microsoft 365, die Ihnen hilft, Kommunikationsrisiken zu minimieren, indem Sie unangemessene Nachrichten in Ihrer Organisation erkennen, erfassen und darauf eingehen. Mit vordefinierten und benutzerdefinierten Richtlinien können Sie die interne und externe Kommunikation auf Richtlinien übereinstimmungen überprüfen, damit sie von bestimmten Prüfern geprüft werden können. Prüfer können die gescannte E-Mail-, Microsoft Teams-, Yammer- oder Drittanbieterkommunikation in Ihrer Organisation untersuchen und geeignete Maßnahmen ergreifen, um sicherzustellen, dass sie den Nachrichtenstandards Ihrer Organisation entsprechen.
 
-Richtlinien zur Kommunikationskonformität in Microsoft 365 helfen Ihnen bei der Bewältigung vieler moderner Herausforderungen im Zusammenhang mit Compliance und interner und externer Kommunikation, einschließlich:
+Kommunikationskonformitätsrichtlinien in Microsoft 365 Ihnen bei der Bewältigung vieler moderner Herausforderungen im Zusammenhang mit Compliance und interner und externer Kommunikation, einschließlich:
 
 - Scannen zunehmender Arten von Kommunikationskanälen
 - Das wachsende Volumen von Nachrichtendaten
@@ -44,9 +44,9 @@ Die neuesten Ignite-Präsentationen zur Kommunikationskonformität finden Sie in
 - [Fördern einer Kultur der Sicherheit und Inklusion mit Kommunikationskonformität](https://www.youtube.com/watch?v=oLVzxcaef3w)
 - [Erfahren Sie, wie Sie Kommunikationsrisiken innerhalb Ihrer Organisation reduzieren können](https://www.youtube.com/watch?v=vzARb1YaxGo)
 - [Erfüllen gesetzlicher Complianceanforderungen mit Kommunikationskonformität](https://www.youtube.com/watch?v=gagOhtCBfgU)
-- [Besser mit Microsoft Teams – Erfahren Sie mehr über die neuesten integrierten Microsoft Teams-Features in der Kommunikationskonformität](https://www.youtube.com/watch?v=m4jukD5Fh-o)
+- [Besser mit Microsoft Teams – Erfahren Sie mehr über die neuesten systemeigenen Teams integrierte Features in der Kommunikationskonformität](https://www.youtube.com/watch?v=m4jukD5Fh-o)
 
-Einen schnellen Überblick über die Kommunikationskonformität finden Sie im Video "Erkennen von Belästigungen am Arbeitsplatz und Reagieren mit Kommunikationskonformität [in Microsoft 365"](https://youtu.be/z33ji7a7Zho) im [Microsoft Mechanics-Kanal.](https://www.youtube.com/user/OfficeGarageSeries)
+Eine kurze Übersicht über die Kommunikationskonformität finden Sie unter Erkennen von Belästigungen am Arbeitsplatz und Reagieren mit Kommunikationskonformität [in](https://youtu.be/z33ji7a7Zho) Microsoft 365 im [Microsoft Mechanics-Kanal](https://www.youtube.com/user/OfficeGarageSeries).
 
 ## <a name="scenarios-for-communication-compliance"></a>Szenarien für Kommunikationscompliance
 
@@ -87,10 +87,10 @@ Intelligente anpassbare Vorlagen in der Kommunikationskonformität ermöglichen 
 Mit integrierten Korrekturworkflows können Sie Nachrichten mit Richtlinien übereinstimmungen in Ihrer Organisation schnell identifizieren und Maßnahmen ergreifen. Die folgenden neuen Features erhöhen die Effizienz für Untersuchungs- und Behebungsaktivitäten:
 
 - **Flexibler** Korrekturworkflow: Neuer Korrekturworkflow hilft Ihnen, schnell Maßnahmen zu Richtlinien übereinstimmungen zu ergreifen, einschließlich neuer Optionen zum Eskalieren von Nachrichten an andere Prüfer und zum Senden von E-Mail-Benachrichtigungen an Benutzer mit Richtlinien übereinstimmungen.
-- **Unterhaltungsthreading:** Nachrichten werden nun visuell nach ursprünglichen Nachrichten und allen zugehörigen Antwortnachrichten gruppieren, was Ihnen einen besseren Kontext während der Untersuchungs- und Korrekturaktionen gibt.
+- **Abgleich von** Unterhaltungsrichtlinien: Nachrichten in Unterhaltungen werden nach Richtlinienabgleichen gruppieren, um Ihnen einen besseren Einblick in den Zusammenhang von Unterhaltungen mit Ihren Kommunikationsrichtlinien zu bieten. Beispielsweise werden beim Abgleich von Unterhaltungsrichtlinien in der Ansicht *Ausstehende* Warnungen automatisch alle Nachrichten in einem Teams angezeigt, die Übereinstimmungen für Ihre Richtlinie für anstößige Sprache enthalten. Andere Nachrichten in der Unterhaltung, die nicht mit der Richtlinie "Anstößige Sprache" übereinstimmen, werden nicht angezeigt.
 - **Hervorheben von Schlüsselwörtern**: Begriffe, die mit Richtlinienbedingungen übereinstimmen, werden in der Nachrichtentextansicht hervorgehoben, damit die Prüfer Richtlinienwarnungen schnell finden und korrigieren können.
 - **Genaue und beinahe** doppelte Erkennung: Neben der Suche nach genauen Übereinstimmungsrichtlinien für Begriffe für die Kommunikationskonformität werden nahezu doppelte Erkennungsgruppen textlich ähnliche Begriffe und Nachrichten gemeinsam verwendet, um den Überprüfungsprozess zu beschleunigen.
-- **Optische Zeichenerkennung (OcR) (Vorschau):** Scannen, Erkennen und Untersuchen von gedrucktem und handschriftlichem Text in Bildern, die eingebettet oder an E-Mail- oder Microsoft Teams-Chatnachrichten angefügt sind.
+- **Optische Zeichenerkennung (OcR) (Vorschau):** Scannen, Erkennen und Untersuchen von gedrucktem und handschriftlichem Text in Bildern, die eingebettet oder an E-Mail- oder Microsoft Teams angefügt sind.
 - **Neue Filter**: Untersuchen und Behebung von Richtlinienwarnungen schneller mit Nachrichtenfiltern für verschiedene Felder, z. B. Absender, Empfänger, Datum, Domänen und vieles mehr.
 - **Verbesserte Nachrichtenansichten:** Untersuchungs- und Korrekturaktionen sind jetzt mit neuen Nachrichtenquellen-, Text- und Anmerkungsansichten schneller. Nachrichtenanlagen können nun angezeigt werden, um den vollständigen Kontext beim Ausführen von Korrekturaktionen zu bieten.
 - **Ansicht der Benutzerhistorie**: Die historische Ansicht aller Aktivitäten im Rahmen der Korrekturmaßnahmen für Benutzernachrichten, wie z. B. frühere Benachrichtigungen und Eskalationen bei Richtlinienübereinstimmungen, bietet Prüfern jetzt mehr Kontext während des Korrektur-Workflow-Prozesses. Erst- oder Wiederholungsinstanzen von Richtlinien übereinstimmungen für Benutzer werden jetzt archiviert und können leicht angezeigt werden.
@@ -103,17 +103,17 @@ Neue interaktive Dashboards für Benachrichtigungen, Richtlinienübereinstimmung
 
 - **Proaktive intelligente Warnungen**: Zu den Warnmeldungen bei Richtlinienübereinstimmungen, die sofortige Aufmerksamkeit erfordern, gehören neue, nach Schweregrad sortierte Dashboards für ausstehende Punkte und neue automatische E-Mail-Benachrichtigungen, die an bestimmte Prüfer gesendet werden.
 - **Interaktive Dashboards**: Neue Dashboards zeigen Richtlinienübereinstimmungen, ausstehende und gelöste Aktionen sowie Trends nach Benutzern und Richtlinien an.
-- **Überwachungsunterstützung:** Ein vollständiges Protokoll mit Richtlinien- und Überprüfungsaktivitäten kann problemlos aus dem Microsoft 365 Compliance Center exportiert werden, um Überwachungsüberprüfungsanforderungen zu unterstützen.
+- **Überwachungsunterstützung:** Ein vollständiges Protokoll mit Richtlinien- und Überprüfungsaktivitäten kann problemlos aus dem Microsoft 365 Compliance Center exportiert werden, um Überprüfungsanforderungen zu unterstützen.
 
-## <a name="integration-with-microsoft-365-services"></a>Integration in Microsoft 365-Dienste
+## <a name="integration-with-microsoft-365-services"></a>Integration in Microsoft 365 Dienste
 
 Kommunikationskonformitätsrichtlinien überprüfen und erfassen Nachrichten über verschiedene Kommunikationskanäle, um Complianceprobleme schnell zu überprüfen und zu beheben:
 
-- **Microsoft Teams**: Die Chatkommunikation für öffentliche und private [Microsoft Teams-Kanäle](/MicrosoftTeams/Teams-overview) und einzelne Chats wird bei der Kommunikationskonformität als eigenständige Kanalquelle oder mit anderen Microsoft 365-Diensten unterstützt. Sie müssen einzelne Benutzer, Verteilergruppen oder bestimmte Microsoft Teams-Kanäle manuell hinzufügen, wenn Sie Benutzer und Gruppen auswählen, die in einer Kommunikationskonformitätsrichtlinie überwacht werden.
-- **Exchange Online:** Alle postfächer, die in [Exchange Online](/Exchange/exchange-online) in Ihrer Microsoft 365-Organisation gehostet werden, sind für die Überprüfung berechtigt. E-Mails und Anlagen, die die Richtlinienbedingungen für die Kommunikationskonformität erfüllen, sind sofort für die Überwachung und in Complianceberichten verfügbar. Exchange Online ist jetzt ein optionaler Quellkanal und ist in Kommunikationskonformitätsrichtlinien nicht mehr erforderlich.
+- **Microsoft Teams**: Chatkommunikation für öffentliche und private [Microsoft Teams](/MicrosoftTeams/Teams-overview) Kanäle und einzelne Chats werden bei der Kommunikationskonformität als eigenständige Kanalquelle oder mit anderen Microsoft 365 unterstützt. Sie müssen einzelne Benutzer, Verteilergruppen oder bestimmte Microsoft Teams manuell hinzufügen, wenn Sie Benutzer und Gruppen auswählen, die in einer Kommunikationskonformitätsrichtlinie überwacht werden.
+- **Exchange Online**: Alle Postfächer, die auf Exchange Online [in](/Exchange/exchange-online) Ihrer Microsoft 365 gehostet werden, sind für die Überprüfung berechtigt. E-Mails und Anlagen, die die Richtlinienbedingungen für die Kommunikationskonformität erfüllen, sind sofort für die Überwachung und in Complianceberichten verfügbar. Exchange Online ist jetzt ein optionaler Quellkanal und ist in Richtlinien zur Kommunikationskonformität nicht mehr erforderlich.
 - **Yammer**: Private Nachrichten und öffentliche Unterhaltungen in [Yammer](/yammer/yammer-landing-page) sind in Richtlinien zur Kommunikationscompliance unterstützt. Yammer ist ein optionaler Kanal und muss sich im [nativen Modus](/yammer/configure-your-yammer-network/overview-native-mode) befinden, um die Überprüfung von Nachrichten und Anlagen zu unterstützen.
 - **Skype for Business Online:** Richtlinien zur Kommunikationskonformität unterstützen das Scannen von Chatkommunikation und zugehörigen Anlagen in [Skype for Business Online.](/SkypeForBusiness/skype-for-business-online)
-- **Drittanbieterquellen:** Sie können Nachrichten aus [Drittanbieterquellen](archiving-third-party-data.md) auf Daten überprüfen, die in Postfächer in Ihrer Microsoft 365-Organisation importiert wurden. Die Kommunikationskonformität unterstützt Verbindungen zu verschiedenen beliebten Plattformen, einschließlich Instant Bloomberg und anderen.
+- **Drittanbieterquellen:** Sie können Nachrichten [](archiving-third-party-data.md) aus Drittanbieterquellen auf Daten überprüfen, die in Postfächer in Ihrer Organisation Microsoft 365 werden. Die Kommunikationskonformität unterstützt Verbindungen zu verschiedenen beliebten Plattformen, einschließlich Instant Bloomberg und anderen.
 
 Weitere Informationen zur Unterstützung von Messagingkanälen in Kommunikationskonformitätsrichtlinien finden Sie unter [Unterstützte Kommunikationstypen](communication-compliance-feature-reference.md#supported-communication-types).
 
@@ -121,7 +121,7 @@ Weitere Informationen zur Unterstützung von Messagingkanälen in Kommunikations
 
 Die Kommunikationskonformität hilft Ihnen, häufige Probleme im Zusammenhang mit der Einhaltung interner Richtlinien und behördlicher Complianceanforderungen zu adressieren. Mit fokussierten Richtlinienvorlagen und einem flexiblen Workflow können Sie aktionenfähige Einblicke verwenden, um erkannte Complianceprobleme schnell zu beheben.
 
-Das Identifizieren und Beheben von Complianceproblemen bei der Kommunikationskonformität in Microsoft 365 verwendet den folgenden Workflow:
+Das Identifizieren und Beheben von Kompatibilitätsproblemen bei der Kommunikationskonformität in Microsoft 365 verwendet den folgenden Workflow:
 
 ![Workflow der Kommunikationscompliance](../media/communication-compliance-workflow.png)
 
@@ -144,7 +144,7 @@ Im Microsoft 365 Compliance Center können Sie aus den folgenden Richtlinienvorl
 
 In diesem Schritt befassen Sie sich eingehender mit den Problemen, die im Zusammenhang mit Ihren Kommunikationscompliancerichtlinien festgestellt wurden. Dieser Schritt umfasst die folgenden Aktionen, die im Microsoft 365 Compliance Center verfügbar sind:
 
-- **Warnungen**: Wenn eine Nachricht einer Richtlinienbedingung entspricht, wird automatisch eine Warnung generiert. Für jede Warnung können Sie den Status, den Schweregrad, die erkannte Zeit und den Status eines Advanced eDiscovery-Falls anzeigen. Neue Warnungen werden auf der Homepage  für die Kommunikationskonformität und auf der Seite Warnungen angezeigt und nach Schweregrad aufgelistet.
+- **Warnungen**: Wenn eine Nachricht einer Richtlinienbedingung entspricht, wird automatisch eine Warnung generiert. Für jede Warnung können Sie den Status, den Schweregrad, die erkannte Zeit und den Status eines Advanced eDiscovery und dessen Status anzeigen. Neue Warnungen werden auf der Homepage  für die Kommunikationskonformität und auf der Seite Warnungen angezeigt und nach Schweregrad aufgelistet.
 - **Problemverwaltung**: Sie können für jede Warnung Untersuchungsmaßnahmen ergreifen, um Korrekturmaßnahmen für die Probleme in der Nachricht zu ergreifen.
 - **Dokumentüberprüfung:** Während der Untersuchung eines Problems können Sie mehrere Ansichten der Nachricht verwenden, um das erkannte Problem ordnungsgemäß auszuwerten. Die Ansichten umfassen eine Zusammenfassung der Unterhaltung, nur Text, Anmerkungs- und Detailansichten der Kommunikationsunterhaltung.
 - Überprüfen des Verlaufs der Benutzeraktivität: Anzeigen des Verlaufs von Benutzernachrichtenaktivitäten und Korrekturaktionen, z. **B.** früheren Benachrichtigungen und Eskalationen, für Richtlinien übereinstimmungen.
@@ -159,8 +159,8 @@ Der nächste Schritt besteht in der Behebung von Problemen mit der Kommunikation
 - **Benachrichtigen Sie den Benutzer:** Häufig verletzen Benutzer versehentlich oder versehentlich eine Kommunikationskonformitätsrichtlinie. Sie können das Benachrichtigungsfeature verwenden, um dem Benutzer eine Warnmeldung zu senden und das Problem zu beheben.
 - **Eskalieren an einen anderen Prüfer**: Manchmal benötigt der Erstprüfer eines Problems Input von anderen Prüfern, um den Vorfall zu beheben. Sie können Nachrichtenprobleme als Teil des Lösungsprozesses leicht an Prüfer in anderen Bereichen Ihrer Organisation eskalieren.
 - **Als falsches positives Ergebnis kennzeichnen**: Nachrichten, die fälschlicherweise als Übereinstimmungen von Compliancerichtlinien erkannt wurden, werden gelegentlich in den Überprüfungsvorgang übertragen. Sie können diese Arten von Warnungen als falsch positive Ergebnisse markieren und das Problem automatisch beheben.
-- **Nachricht in Teams entfernen (Vorschau):** Unangemessene Nachrichten können aus der Anzeige in Microsoft Teams-Kanälen oder persönlichen Chatnachrichten und Gruppennachrichten entfernt werden. Unangemessene Nachrichten, die entfernt werden, werden durch eine Benachrichtigung ersetzt, dass die Nachricht wegen einer Richtlinienverletzung entfernt wurde.
-- **Eskalieren zur Untersuchung:** In den schwerwiegendsten Situationen müssen Sie möglicherweise Informationen zur Kommunikationskonformität mit anderen Prüfern in Ihrer Organisation teilen. Die Kommunikationscompliance ist eng mit anderen Compliance-Funktionen von Microsoft 365 integriert, um Sie bei der End-to-End-Risikobehebung zu unterstützen. Wenn Sie einen Untersuchungsfall eskalieren, können Sie Daten und die Verwaltung des Falls an Advanced eDiscovery in Microsoft 365 übertragen. Advanced eDiscovery bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen Ermittlungen Ihrer Organisation abgestimmt sind. Dies ermöglicht es juristischen Teams, den gesamten Warnungs-Workflow für die gesetzliche Aufbewahrungspflicht zu verwalten. Weitere Informationen zu den Advanced eDiscovery-Fällen finden Sie unter [Übersicht über Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
+- **Nachricht in Teams (Vorschau)** entfernen: Unangemessene Nachrichten können aus der Anzeige in Microsoft Teams kanälen oder persönlichen Chatnachrichten und Gruppennachrichten entfernt werden. Unangemessene Nachrichten, die entfernt werden, werden durch eine Benachrichtigung ersetzt, dass die Nachricht wegen einer Richtlinienverletzung entfernt wurde.
+- **Eskalieren zur Untersuchung:** In den schwerwiegendsten Situationen müssen Sie möglicherweise Informationen zur Kommunikationskonformität mit anderen Prüfern in Ihrer Organisation teilen. Die Kommunikationscompliance ist eng mit anderen Compliance-Funktionen von Microsoft 365 integriert, um Sie bei der End-to-End-Risikobehebung zu unterstützen. Durch das Eskalieren eines Untersuchungsfalles können Sie Daten und die Verwaltung des Falls Advanced eDiscovery in Microsoft 365. Advanced eDiscovery bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen Ermittlungen Ihrer Organisation abgestimmt sind. Dies ermöglicht es juristischen Teams, den gesamten Warnungs-Workflow für die gesetzliche Aufbewahrungspflicht zu verwalten. Weitere Informationen zu den Advanced eDiscovery-Fällen finden Sie unter [Übersicht über Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
 ### <a name="monitor"></a>Überwachen
 
@@ -171,5 +171,5 @@ Das Nachverfolgen und Verwalten von Complianceproblemen, die von Kommunikationsk
 ## <a name="ready-to-get-started"></a>Sind Sie bereit zu beginnen?
 
 - Informationen zur Planung finden Sie unter [Plan for communication compliance](communication-compliance-plan.md).
-- Sehen Sie sich die [Fallstudie für Contoso](communication-compliance-case-study.md) an, und erfahren Sie, wie sie schnell eine Kommunikationskonformitätsrichtlinie für die Überwachung auf anstößige Sprache in Microsoft Teams, Exchange Online und Yammer konfiguriert haben.
-- Informationen zum Konfigurieren der Kommunikationskonformität für Ihre Microsoft 365-Organisation finden Sie unter [Configure communication compliance for Microsoft 365](communication-compliance-configure.md).
+- Sehen Sie sich die [Fallstudie](communication-compliance-case-study.md) für Contoso an, und erfahren Sie, wie sie schnell eine Kommunikationskonformitätsrichtlinie für die Überwachung auf anstößige Sprache in Microsoft Teams, Exchange Online und Yammer konfiguriert haben.
+- Informationen zum Konfigurieren der Kommunikationskonformität Microsoft 365 Organisation finden Sie unter [Configure communication compliance for Microsoft 365](communication-compliance-configure.md).

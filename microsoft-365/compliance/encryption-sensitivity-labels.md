@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f670a3cdefb7b6cd78d24a17fc2e6276274efff3
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 6163e48e3e80b76506d970b77d6cd66f7a050d51
+ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222418"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52079258"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung
 
@@ -45,7 +45,7 @@ Als Administrator können Sie bei der Konfigurierung einer Vertraulichkeitsbezei
 - **Berechtigungen sofort zuweisen**, um genau zu bestimmen, welche Benutzer welche Berechtigungen für Inhalte mit dieser Bezeichnung erhalten.
 - **Benutzern die Zuweisung von Berechtigungen überlassen**, wenn sie die Bezeichnung auf Inhalte anwenden. Auf diese Weise ermöglichen Sie Personen in Ihrer Organisation eine gewisse Flexibilität, die sie möglicherweise benötigen, um untereinander zusammenarbeiten und ihre Aufgaben erfüllen zu können.
 
-Die Verschlüsselungseinstellungen stehen zur Verfügung, wenn Sie im Microsoft 365 Compliance Center, Microsoft 365 Security Center oder Security & Compliance Center [eine Vertraulichkeitsbezeichnung erstellen](create-sensitivity-labels.md).
+Die Verschlüsselungseinstellungen stehen zur Verfügung, wenn Sie im Microsoft 365 Compliance Center [eine Vertraulichkeitsbezeichnung erstellen](create-sensitivity-labels.md). Sie können auch das ältere Portal (Security & Compliance Center) verwenden.
 
 ## <a name="understand-how-the-encryption-works"></a>Grundlegendes zur Funktionsweise der Verschlüsselung
 
@@ -228,7 +228,7 @@ Weitere Informationen, Voraussetzungen und Konfigurationsanweisungen finden Sie 
 ## <a name="let-users-assign-permissions"></a>Benutzern die Zuweisung von Berechtigungen überlassen
 
 > [!IMPORTANT]
-> Nicht alle Bezeichnungs-Assistenten unterstützen alle Optionen, mit denen Benutzer ihre eigenen Berechtigungen zuweisen können. Verwenden Sie diesen Abschnitt, um mehr zu erfahren.
+> Nicht alle Bezeichnungsclients unterstützen alle Optionen, mit denen Benutzer ihre eigenen Berechtigungen zuweisen können. Verwenden Sie diesen Abschnitt, um mehr zu erfahren.
 
 Sie können die folgenden Optionen verwenden, um Benutzern zu erlauben, Berechtigungen zuweisen zu können, wenn sie eine Vertraulichkeitsbezeichnung manuell auf Inhalte anwenden:
 
@@ -236,7 +236,7 @@ Sie können die folgenden Optionen verwenden, um Benutzern zu erlauben, Berechti
     
     Die Option "Nicht weiterleiten" wird von allen E-Mail-Clients unterstützt, die Vertraulichkeitsbezeichnungen unterstützen. Die Anwendung der Option **Nur verschlüsseln** mit einer Vertraulichkeitsbezeichnung ist jedoch eine neue Version, die nur von der integrierten Kennzeichnung und nicht vom Azure Information Protection-Client für einheitliche Bezeichnungen unterstützt wird. Bei E-Mail-Clients, die diese Funktion nicht unterstützen, wird die Bezeichnung nicht sichtbar sein.
     
-    Um zu überprüfen, welche Outlook-Apps, die die integrierte Bezeichnung verwenden, die Anwendung der Option "Nur verschlüsseln" mit einer Vertraulichkeitsbezeichnung unterstützen, verwenden Sie die [Funktionstabelle für Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) und die Zeile **Benutzer Berechtigungen zuweisen lassen: – Nur verschlüsseln**.
+    Um die Mindestversionen für Outlook-Apps zu überprüfen, die integrierten Bezeichnungen verwenden, um die Anwendung der Option „Nur verschlüsseln“ mit einer Vertraulichkeitsbezeichnung zu unterstützen, verwenden Sie die [Funktionstabelle für Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) und die Zeile **Benutzern die Zuweisung von Berechtigungen überlassen: – Nur verschlüsseln**.
 
 - In Word, PowerPoint und Excel wird ein Benutzer aufgefordert, ihre eigenen Berechtigungen für bestimmte Benutzer, Gruppen oder Organisationen auszuwählen.
 
@@ -406,7 +406,7 @@ Durch die Verschlüsselung Ihrer sensibelsten Dokumente und E-Mails können Sie 
 
 - Wenn beim [Auschecken des Dokuments in SharePoint](https://support.microsoft.com/office/check-out-check-in-or-discard-changes-to-files-in-a-library-7e2c12a9-a874-4393-9511-1378a700f6de) mithilfe einer Office-App eine Bezeichnung hinzugefügt wird, die Verschlüsselung anwendet, und der Benutzer dann das Auschecken verwirft, bleibt das Dokument mit der Bezeichnung versehen und wird verschlüsselt.
 
-- Die folgenden Aktionen für verschlüsselte Dateien werden von Office-Apps (Windows, Mac, Android und IOS) nicht unterstützt und Benutzern wird eine Fehlermeldung angezeigt, dass etwas schief gelaufen ist. Allerdings kann die SharePoint-Funktionalität als Alternative verwendet werden:
+- Die folgenden Aktionen für verschlüsselte Dateien werden von Office-Apps (Windows, Mac, Android und IOS) nicht unterstützt, und Benutzern wird eine Fehlermeldung angezeigt, dass etwas schief gelaufen ist. Allerdings kann die SharePoint-Funktionalität als Alternative verwendet werden:
 
   - Anzeigen, wiederherstellen und speichern von Kopien früherer Versionen. Alternativ können Benutzer diese Aktionen mit Office im Web durchführen, wenn sie Folgendes verwenden: [Aktivieren und Konfigurieren der Versionsverwaltung für eine Liste oder Bibliothek](https://support.office.com/article/enable-and-configure-versioning-for-a-list-or-library-1555d642-23ee-446a-990a-bcab618c7a37).
   - Ändern des Namens oder des Speicherorts der Dateien. Alternativ können Benutzer in SharePoint [eine Datei, einen Ordner oder einen Link in einer Dokumentbibliothek umbenennen](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185).

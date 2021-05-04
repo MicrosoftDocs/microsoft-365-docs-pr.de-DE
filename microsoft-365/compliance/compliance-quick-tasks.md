@@ -12,27 +12,27 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-compliance
 localization_priority: Normal
-description: Erfahren Sie mehr über Aufgaben, mit deren Hilfe Sie schnell mit der Compliance in Microsoft 365 beginnen können.
-ms.openlocfilehash: 503e15c8b363dcd63c010d31384565f6e1a8af61
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+description: Erfahren Sie mehr über Aufgaben, mit deren Hilfe Sie schnell mit der Compliance in Microsoft 365.
+ms.openlocfilehash: 3f93eb31800d158a33b1f3c0acdd48d650b2153e
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197922"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113391"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Schnelle Aufgaben für die ersten Schritte mit Microsoft 365 Compliance
 
-Wenn Sie mit der Microsoft 365-Compliance neu sind und sich fragen, wo sie beginnen sollten, enthält dieser Artikel Anleitungen zu den Grundlagen und priorisiert wichtige Complianceaufgaben. Dieser Artikel hilft Ihnen, schnell mit der Verwaltung und Überwachung Ihrer Daten, dem Schutz von Informationen und der Minimierung von Insiderrisiken zu beginnen.
+Wenn Sie sich noch nicht mit Microsoft 365 und fragen, wo Sie beginnen sollten, enthält dieser Artikel Anleitungen zu den Grundlagen und priorisiert wichtige Complianceaufgaben. Dieser Artikel hilft Ihnen, schnell mit der Verwaltung und Überwachung Ihrer Daten, dem Schutz von Informationen und der Minimierung von Insiderrisiken zu beginnen.
 
 Dieser Artikel ist auch hilfreich, wenn Sie herausfinden, wie Sie Risiken am besten verwalten, Ihre Daten schützen und die Vorschriften und Standards mit einer neuen Remote-Belegschaft einhalten können. Mitarbeiter arbeiten jetzt auf neue Weise zusammen und verbinden sich miteinander, und dies bedeutet, dass ihre vorhandenen Complianceprozesse und -steuerelemente möglicherweise angepasst werden müssen. Die Identifizierung und Verwaltung dieser neuen Compliancerisiken in Ihrer Organisation ist entscheidend für den Schutz Ihrer Daten und die Minimierung von Bedrohungen und Risiken.
 
-Nachdem Sie diese grundlegenden Complianceaufgaben abgeschlossen haben, sollten Sie die Complianceabdeckung in Ihrer Organisation erweitern, indem Sie zusätzliche Microsoft 365-Compliancelösungen implementieren.
+Nachdem Sie diese grundlegenden Complianceaufgaben abgeschlossen haben, sollten Sie die Complianceabdeckung in Ihrer Organisation erweitern, indem Sie zusätzliche Lösungen Microsoft 365 implementieren.
 
 ## <a name="task-1-configure-compliance-permissions"></a>Aufgabe 1: Konfigurieren von Complianceberechtigungen
 
-Es ist wichtig zu verwalten, wer in Ihrer Organisation Zugriff auf das Microsoft 365 Compliance Center hat, um Inhalte anzuzeigen und Verwaltungsaufgaben auszuführen. Microsoft 365 stellt administrative Rollen bereit, die speziell auf die Compliance und die Verwendung der Tools im Microsoft 365 Compliance Center spezifisch sind.
+Es ist wichtig zu verwalten, wer in Ihrer Organisation Zugriff auf das Microsoft 365 Compliance Center hat, um Inhalte anzuzeigen und Verwaltungsaufgaben auszuführen. Microsoft 365 bietet administrative Rollen, die speziell auf die Compliance und die Verwendung der Tools im compliance Center Microsoft 365 sind.
 
-Weisen Sie zunächst den Personen in Ihrer Organisation Complianceberechtigungen zu, damit sie diese Aufgaben ausführen können, und um zu verhindern, dass nicht autorisierte Personen Zugriff auf Bereiche haben, die außerhalb ihrer Zuständigkeiten stehen. Sie sollten sicherstellen, dass Sie dem Compliancedatenadministrator  und den Administratorrollen des Complianceadministrators die richtigen Personen zugewiesen haben, bevor Sie mit der Konfiguration und Implementierung von Compliancelösungen beginnen, die in Microsoft 365 enthalten sind.  Außerdem müssen Sie der globalen Azure Active Directory-Leserolle Benutzer zuweisen, um Daten im Compliance-Manager anzeigen zu können.
+Weisen Sie zunächst den Personen in Ihrer Organisation Complianceberechtigungen zu, damit sie diese Aufgaben ausführen können, und um zu verhindern, dass nicht autorisierte Personen Zugriff auf Bereiche haben, die außerhalb ihrer Zuständigkeiten stehen. Sie sollten sicherstellen, dass Sie dem Compliancedatenadministrator  und den Administratorrollen des Complianceadministrators die richtigen Personen zugewiesen haben, bevor Sie mit der Konfiguration und Implementierung von Compliancelösungen beginnen, die im Lieferumfang enthalten Microsoft 365.  Außerdem müssen Sie der globalen Leserolle benutzer Azure Active Directory, um Daten im Compliance-Manager anzeigen zu können.
 
 Schrittweise Anleitungen zum Konfigurieren von Berechtigungen und Zuweisen von Personen zu Administratorrollen finden Sie unter Permissions in the [Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
@@ -47,7 +47,7 @@ Eine schrittweise Anleitung für die ersten Schritte mit Compliance Manager find
 >[!IMPORTANT]
 >Sicherheit und Compliance sind für die meisten Organisationen eng integriert. Es ist wichtig, dass Ihre Organisation grundlegende Sicherheits-, Bedrohungsschutz- und Identitäts- und Zugriffsverwaltungsbereiche behandelt, um einen detaillierten Schutzansatz für Sicherheit und Compliance zu bieten.
 >
->Überprüfen Sie [Ihre Microsoft 365 Secure Score](../security/defender/microsoft-secure-score.md) im Microsoft 365 Security Center, und erfüllen Sie die in den folgenden Artikeln beschriebenen Aufgaben:
+>Überprüfen Sie [Microsoft 365 Secure Score](../security/defender/microsoft-secure-score.md) im Microsoft 365 Security Center, und erledigen Sie die in den folgenden Artikeln beschriebenen Aufgaben:
 >
 > - [Security Roadmap – Die wichtigsten Prioritäten für die ersten 30 Tage, 90 Tage und darüber hinaus](../security/office-365-security/security-roadmap.md)
 > - [Top 12 Aufgaben für Sicherheitsteams zur Unterstützung der Arbeit von zu Hause aus](../security/top-security-tasks-for-remote-work.md)
@@ -74,7 +74,7 @@ Im Rahmen ihrer Arbeit müssen Personen in Ihrer Organisation mit anderen Person
 
 [Mit Vertraulichkeitsbezeichnungen](sensitivity-labels.md) können Sie die Daten Ihrer Organisation klassifizieren und schützen und gleichzeitig sicherstellen, dass die Benutzerproduktivität und ihre Zusammenarbeitsfähigkeit nicht beeinträchtigt werden. Verwenden Sie Vertraulichkeitsbezeichnungen, um Verschlüsselung zu erzwingen, und Verwendungseinschränkungen wenden visuelle Markierungen an und schützen Sie Informationen auf Plattformen und Geräten, lokal und in der Cloud.
 
-Schrittweise Anleitungen zum Konfigurieren und Verwenden von Vertraulichkeitsbezeichnungen finden Sie unter [Erste Schritte mit Vertraulichkeitsbezeichnungen](get-started-with-sensitivity-labels.md). Informationen zur Lizenzierung von Vertraulichkeitsbezeichnungen finden Sie unter [Microsoft 365 Licensing Guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
+Schrittweise Anleitungen zum Konfigurieren und Verwenden von Vertraulichkeitsbezeichnungen finden Sie unter [Erste Schritte mit Vertraulichkeitsbezeichnungen](get-started-with-sensitivity-labels.md). Informationen zur Lizenzierung von Vertraulichkeitsbezeichnungen finden Sie [unter Microsoft 365 Lizenzierungsleitfade für & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection).
 
 ## <a name="task-6-configure-a-retention-policy"></a>Aufgabe 6: Konfigurieren einer Aufbewahrungsrichtlinie
 
@@ -82,23 +82,23 @@ Mit [einer Aufbewahrungsrichtlinie](retention.md) können Sie proaktiv entscheid
 
 Wenn Inhalte einer Aufbewahrungsrichtlinie unterliegen, können Die Benutzer den Inhalt weiterhin bearbeiten und bearbeiten, als würde sich nichts ändern. Der Inhalt wird an seinem ursprünglichen Speicherort beibehalten. Wenn jedoch jemand Inhalte bearbeitet oder löscht, die der Aufbewahrungsrichtlinie unterliegen, wird eine Kopie des ursprünglichen Inhalts an einem sicheren Speicherort gespeichert, an dem er aufbewahrt wird, während die Aufbewahrungsrichtlinie für diesen Inhalt wirksam ist.
 
-Sie können schnell eine Aufbewahrungsrichtlinie für mehrere Speicherorte in Ihrer Microsoft 365-Umgebung wie Exchange-E-Mails, #A0, #A1 und Microsoft 365-Gruppen erstellen. Es gibt keine Beschränkungen für die Anzahl von Postfächern oder Websites, die diese Richtlinie automatisch umfassen kann. Wenn Sie jedoch selektiver werden müssen, können Sie dazu eine Aufbewahrungsrichtlinie für bestimmte Speicherorte konfigurieren und Websites oder Benutzer ein- oder ausschließen.
+Sie können schnell eine Aufbewahrungsrichtlinie für mehrere Speicherorte in Ihrer Microsoft 365-Umgebung wie Exchange-E-Mails, SharePoint-Websites, OneDrive-Konten und Microsoft 365 erstellen. Es gibt keine Beschränkungen für die Anzahl von Postfächern oder Websites, die diese Richtlinie automatisch umfassen kann. Wenn Sie jedoch selektiver werden müssen, können Sie dazu eine Aufbewahrungsrichtlinie für bestimmte Speicherorte konfigurieren und Websites oder Benutzer ein- oder ausschließen.
 
 Schrittweise Anleitungen zum Konfigurieren einer Aufbewahrungsrichtlinie finden Sie unter [Create and configure retention policies](create-retention-policies.md). Wenn Sie die Konfiguration der Datenaufbewahrung in Microsoft 365 zum ersten Mal durchführen möchten, lesen Sie [Erste Schritte mit Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](get-started-with-retention.md).
 
 ## <a name="task-7-configure-sensitive-information-and-offensive-language-policies"></a>Aufgabe 7: Konfigurieren vertraulicher Informationen und anstößige Sprachrichtlinien
 
-Der Schutz vertraulicher Informationen sowie das Erkennen und Reagieren auf Belästigungsvorfälle am Arbeitsplatz ist ein wichtiger Bestandteil der Einhaltung interner Richtlinien und Standards. [Die Kommunikationskonformität](communication-compliance-feature-reference.md) in Microsoft 365 trägt dazu bei, diese Risiken zu minimieren, indem Sie E-Mail- und Microsoft Teams-Kommunikation schnell erkennen, erfassen und Abhilfemaßnahmen ergreifen können. Dazu gehören unangemessene Kommunikationen, die Anstößigkeit, Bedrohungen sowie Belästigungen und Kommunikationen enthalten, die vertrauliche Informationen innerhalb und außerhalb Ihrer Organisation freigeben.
+Der Schutz vertraulicher Informationen sowie das Erkennen und Reagieren auf Belästigungsvorfälle am Arbeitsplatz ist ein wichtiger Bestandteil der Einhaltung interner Richtlinien und Standards. [Die Kommunikationskonformität](communication-compliance-feature-reference.md) in Microsoft 365 hilft, diese Risiken zu minimieren, indem Sie E-Mail- und Kommunikationsmaßnahmen schnell erkennen, erfassen und Microsoft Teams können. Dazu gehören unangemessene Kommunikationen, die Anstößigkeit, Bedrohungen sowie Belästigungen und Kommunikationen enthalten, die vertrauliche Informationen innerhalb und außerhalb Ihrer Organisation freigeben.
 
-Mit einer vordefinierten Richtlinienvorlage für Anstößige Sprache und *Anti-Mobbing* können Sie interne und externe Kommunikation auf Richtlinien übereinstimmungen überprüfen, damit sie von bestimmten Prüfern geprüft werden können. Prüfer können gescannte E-Mails, Microsoft Teams, Yammer oder Drittanbieterkommunikationen in Ihrer Organisation untersuchen und geeignete Korrekturmaßnahmen ergreifen, um sicherzustellen, dass sie den Standards Ihrer Organisation entsprechen.
+Mit einer vordefinierten Richtlinienvorlage für Anstößige Sprache und *Anti-Mobbing* können Sie interne und externe Kommunikation auf Richtlinien übereinstimmungen überprüfen, damit sie von bestimmten Prüfern geprüft werden können. Prüfer können gescannte E-Mails, Microsoft Teams, Yammer- oder Drittanbieterkommunikationen in Ihrer Organisation untersuchen und geeignete Abhilfemaßnahmen ergreifen, um sicherzustellen, dass sie den Standards Ihrer Organisation entsprechen.
 
 Mit der  vordefinierten Vorlage für Richtlinien für vertrauliche Informationen können Sie schnell eine Richtlinie zum Überprüfen von E-Mails und Microsoft Teams-Kommunikationen erstellen, die definierte Typen vertraulicher Informationen oder Schlüsselwörter enthalten, um sicherzustellen, dass wichtige Daten nicht für Personen freigegeben werden, die keinen Zugriff haben sollten. Diese Aktivitäten können eine nicht autorisierte Kommunikation über vertrauliche Projekte oder branchenspezifische Regeln für Insiderhandel oder andere Zusammenarbeitsaktivitäten umfassen.
 
-Schrittweise Anleitungen zum Planen und Konfigurieren der Kommunikationskonformität finden Sie unter [Plan for communication compliance](communication-compliance-plan.md) und Get started with communication [compliance](communication-compliance-configure.md). Informationen zur Lizenzierung von Kommunikationskonformität finden Sie unter [Microsoft 365 Licensing Guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
+Schrittweise Anleitungen zum Planen und Konfigurieren der Kommunikationskonformität finden Sie unter [Plan for communication compliance](communication-compliance-plan.md) und Get started with communication [compliance](communication-compliance-configure.md). Informationen zur Lizenzierung von Kommunikationskonformität finden Sie [unter Microsoft 365 Lizenzierungsleitfade für & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#communication-compliance).
 
 ## <a name="task-8-see-whats-happening-with-your-sensitive-items"></a>Aufgabe 8: Sehen Sie, was mit Ihren vertraulichen Elementen geschieht
 
-Vertraulichkeitsbezeichnungen, Typen vertraulicher Informationen, Aufbewahrungsbezeichnungen und Richtlinien sowie trainierbare Klassifizierungen können verwendet werden, um vertrauliche Elemente in Exchange, SharePoint und OneDrive zu klassifizieren und zu beschriften, wie Sie es in den vorherigen Aufgaben gesehen haben. Der letzte Schritt ihrer schnellen Aufgabenreise besteht darin, zu sehen, welche Elemente mit bezeichnungen versehen wurden und welche Aktionen Ihre Benutzer für diese vertraulichen Elemente ausführen. [Inhalts-Explorer](data-classification-content-explorer.md) und [Aktivitäts-Explorer](data-classification-activity-explorer.md) bieten diese Sichtbarkeit.
+Vertraulichkeitsbezeichnungen, Typen vertraulicher Informationen, Aufbewahrungsbezeichnungen und Richtlinien sowie trainierbare Klassifizierungen können verwendet werden, um vertrauliche Elemente in Exchange, SharePoint und OneDrive zu klassifizieren und zu beschriften, wie Sie in den vorherigen Aufgaben gesehen haben. Der letzte Schritt ihrer schnellen Aufgabenreise besteht darin, zu sehen, welche Elemente mit bezeichnungen versehen wurden und welche Aktionen Ihre Benutzer für diese vertraulichen Elemente ausführen. [Inhalts-Explorer](data-classification-content-explorer.md) und [Aktivitäts-Explorer](data-classification-activity-explorer.md) bieten diese Sichtbarkeit.
 
 ### <a name="content-explorer"></a>Inhaltsexplorer
  Mit dem Inhalts-Explorer können Sie im systemeigenen Format alle Elemente anzeigen, die als vertraulicher Informationstyp klassifiziert wurden oder zu einer bestimmten Klassifizierung durch einen trainierbaren Klassifikator gehören, sowie alle Elemente, auf die Vertraulichkeits- oder Aufbewahrungsbezeichnungen angewendet wurden.
@@ -107,7 +107,7 @@ Schrittweise Anleitungen zur Verwendung des Inhalts-Explorers finden Sie unter [
 
 ### <a name="activity-explorer"></a>Aktivitäten-Explorer
 Der Aktivitäts-Explorer hilft Ihnen zu überwachen, was mit Ihren klassifizierten und mit Bezeichnungen versehenen vertraulichen Elementen geschieht:
-- Microsoft Office SharePoint Online
+- SharePoint
 - Exchange
 - OneDrive
 
@@ -126,11 +126,11 @@ Schrittweise Anleitungen zur Verwendung des Aktivitäts-Explorers finden Sie unt
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Sie die Grundlagen für das Compliancemanagement für Ihre Organisation konfiguriert haben, sollten Sie die folgenden Compliancelösungen in Microsoft 365 in Betracht ziehen, um Vertrauliche Informationen zu schützen und zusätzliche Insiderrisiken zu erkennen und zu reagieren.
+Nachdem Sie nun die Grundlagen für das Compliancemanagement für Ihre Organisation konfiguriert haben, sollten Sie die folgenden Compliancelösungen in Microsoft 365 in Betracht ziehen, um Ihnen zu helfen, vertrauliche Informationen zu schützen und zusätzliche Insiderrisiken zu erkennen und zu reagieren.
 
 ### <a name="configure-retention-labels"></a>Aufbewahrungsbezeichnungen konfigurieren
 
-Während Aufbewahrungsrichtlinien auf Containerebene auf Speicherorte wie SharePoint-Websites und Exchange-Postfächer angewendet [werden,](retention.md#retention-labels) ermöglichen Aufbewahrungsbezeichnungen eine spezifischere Ausrichtung für Ihre Aufbewahrungs- und Löschrichtlinien. Beispielsweise auf der Dokument- oder E-Mail-Nachrichtenebene, die Endbenutzer zusätzlich zur automatischen Anwendung durch Administratoren manuell anwenden können. Sie können auch eine Aufbewahrungsbezeichnung auf eine Dokumentbibliothek, einen Ordner oder einen Dokumentensatz in SharePoint anwenden, sodass alle an diesem Speicherort gespeicherten Dokumente die Standardaufbewahrungsbezeichnung erben.
+Aufbewahrungsrichtlinien gelten zwar auf Containerebene für Speicherorte wie SharePoint-Websites und [](retention.md#retention-labels) Exchange-Postfächer, aufbewahrungsbezeichnungen ermöglichen jedoch eine spezifischere Ausrichtung ihrer Aufbewahrungs- und Löschrichtlinien. Beispielsweise auf der Dokument- oder E-Mail-Nachrichtenebene, die Endbenutzer zusätzlich zur automatischen Anwendung durch Administratoren manuell anwenden können. Sie können eine Aufbewahrungsbezeichnung auch auf eine Dokumentbibliothek, einen Ordner oder einen Dokumentensatz in SharePoint anwenden, sodass alle an diesem Speicherort gespeicherten Dokumente die Standardaufbewahrungsbezeichnung erben.
 
 Darüber hinaus unterstützen Aufbewahrungsbezeichnungen [die Datensatzverwaltung,](records-management.md) um Inhalte als Datensatz zu kennzeichnen. In diesem Fall legt die Bezeichnung zusätzliche Einschränkungen für die Inhalte fest, die möglicherweise erforderlich sind, um Ihre Organisation bei der Einhaltung gesetzlicher Anforderungen zu unterstützen.
 
@@ -148,14 +148,14 @@ Schrittweise Anleitungen zum Definieren benutzerdefinierter typen vertraulicher 
 
 ### <a name="prevent-data-loss"></a>Verhindern von Datenverlust
 
-Mit Den Richtlinien zur Verhinderung von Datenverlust [(Data Loss Prevention, DLP)](data-loss-prevention-policies.md) können Sie vertrauliche Informationen in Ihrer Microsoft 365-Organisation identifizieren, überwachen und automatisch schützen. Verwenden Sie DLP-Richtlinien, um vertrauliche Elemente in allen Microsoft-Diensten zu identifizieren, die versehentliche Freigabe vertraulicher Elemente zu verhindern und Benutzern zu helfen, richtlinienkonform zu bleiben, ohne ihren Workflow zu unterbrechen.
+Richtlinien zur Verhinderung von Datenverlust [(Data Loss Prevention, DLP)](dlp-learn-about-dlp.md) ermöglichen ihnen das Identifizieren, Überwachen und automatische Schützen vertraulicher Informationen in Microsoft 365 Organisation. Verwenden Sie DLP-Richtlinien, um vertrauliche Elemente Microsoft-Dienste zu identifizieren, die versehentliche Freigabe vertraulicher Elemente zu verhindern und Benutzern zu helfen, richtlinienkonform zu bleiben, ohne ihren Workflow zu unterbrechen.
 
-Für schrittweise Anleitungen zum Konfigurieren von DLP-Richtlinien erstellen, testen und optimieren Sie [eine DLP-Richtlinie.](create-test-tune-dlp-policy.md) Informationen zur Lizenzierung zur Verwaltung von Datenverlusten finden Sie unter [Microsoft 365 Licensing Guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
+Für schrittweise Anleitungen zum Konfigurieren von DLP-Richtlinien erstellen, testen und optimieren Sie [eine DLP-Richtlinie.](create-test-tune-dlp-policy.md) Informationen zur Lizenzierung zur Verwaltung von Datenverlusten finden Sie [unter Microsoft 365 Lizenzierungsleitfader für & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#office-365-data-loss-prevention-for-exchange-online-sharepoint-online-and-onedrive-for-business).
 
 ### <a name="detect-and-act-on-insider-risks"></a>Erkennen und Handeln bei Insiderrisiken
 
 Mitarbeiter haben immer mehr Zugriff auf das Erstellen, Verwalten und Freigeben von Daten über ein breites Spektrum von Plattformen und Diensten hinweg. In den meisten Fällen verfügen Organisationen über begrenzte Ressourcen und Tools, um organisationsweite Risiken zu identifizieren und zu mindern und gleichzeitig Complianceanforderungen und Datenschutzstandards für Mitarbeiter zu erfüllen. Diese Risiken können Datendiebstahl durch ausscheidende Mitarbeiter und Datenlecks von Informationen außerhalb Ihrer Organisation durch versehentliche Überschatten oder böswillige Absichten umfassen.
 
-[Das Insider-Risikomanagement](insider-risk-management-policies.md) in Microsoft 365 verwendet die gesamte Bandbreite des Diensts und Drittanbieterindikatoren, um riskante Benutzeraktivitäten schnell zu identifizieren, zu verdingen und zu reagieren. Mithilfe von Protokollen aus Microsoft 365 und Microsoft Graph können Sie mithilfe des Insiderrisikomanagements bestimmte Richtlinien definieren, um Risikoindikatoren zu identifizieren und Maßnahmen zur Minderung dieser Risiken zu ergreifen.
+[Das Risikomanagement](insider-risk-management-policies.md) von Insidern in Microsoft 365 verwendet die gesamte Bandbreite an Dienst- und Drittanbieterindikatoren, um riskante Benutzeraktivitäten schnell zu identifizieren, zu verdingen und zu reagieren. Mithilfe von Protokollen von Microsoft 365 und Microsoft Graph können Sie bestimmte Richtlinien definieren, um Risikoindikatoren zu identifizieren und Maßnahmen zur Minderung dieser Risiken zu ergreifen.
 
-Schrittweise Anleitungen zum Planen und Konfigurieren von Insider-Risikomanagementrichtlinien finden Sie unter [Plan for insider risk management](insider-risk-management-plan.md) und Get started with insider risk [management](insider-risk-management-configure.md). Informationen zur Lizenzierung von Insidern im Risikomanagement finden Sie unter [Microsoft 365 Licensing Guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management).
+Schrittweise Anleitungen zum Planen und Konfigurieren von Insider-Risikomanagementrichtlinien finden Sie unter [Plan for insider risk management](insider-risk-management-plan.md) und Get started with insider risk [management](insider-risk-management-configure.md). Informationen zur Lizenzierung von Insidern im Risikomanagement finden Sie [unter Microsoft 365 Lizenzierungsleitfade für & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#insider-risk-management).

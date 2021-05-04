@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mithilfe einer Aufbewahrungsrichtlinie können Sie die Inhalte, die Benutzer mit E-Mails, Dokumenten und Unterhaltungen generieren, effizient verwalten. Bewahren Sie auf, was Sie wollen, und werden Sie los, was Sie nicht mehr wollen.
-ms.openlocfilehash: 63670b157a66bad963f02355cbed2bdd95690081
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b2ce9670e9f297c89ed70e1b37c17aa59b80844
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908289"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687271"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -83,6 +83,15 @@ Wenn Sie über mehr als eine Aufbewahrungsrichtlinie verfügen und außerdem Auf
 5. Schließen Sie den Assistenten ab, damit Ihre Einstellungen gespeichert werden.
 
 Weitere Informationen zu Aufbewahrungsrichtlinien für Teams finden Sie unter [Aufbewahrungsrichtlinien in Microsoft Teams](/microsoftteams/retention-policies) in der Teams-Dokumentation.
+
+#### <a name="known-configuration-issues"></a>Bekannte Probleme mit der Konfiguration
+
+- Sie können zwar die Option auswählen, den Aufbewahrungszeitraum zu starten, wenn Elemente zuletzt geändert wurden, aber es wird immer der Wert **Wenn Elemente erstellt wurden** verwendet. Für bearbeitete Nachrichten wird eine Kopie der ursprünglichen Nachricht mit ihrem ursprünglichen Zeitstempel gespeichert, um zu erkennen, wann diese Nachricht vor der Bearbeitung erstellt wurde. Die Nachricht hat nach der Bearbeitung einen neueren Zeitstempel.
+
+- Wenn Sie die Option **Teams auswählen** für den Speicherort **Microsoft Teams-Kanalnachrichten** auswählen, werden möglicherweise Microsoft 365-Gruppen angezeigt, die nicht auch Teams sind. Wählen Sie diese Gruppen nicht aus.
+
+- Wenn Sie den Speicherort **Benutzer für Teams-Chats auswählen** auswählen, werden möglicherweise Gäste und Nicht Postfachbenutzer angezeigt. Aufbewahrungsrichtlinien sind nicht auf diese Benutzer ausgerichtet, deshalb sollten Sie sie nicht auswählen.
+
 
 #### <a name="additional-retention-policy-needed-to-support-teams"></a>Weitere für die Unterstützung von Teams benötigte Aufbewahrungsrichtlinie
 
@@ -194,9 +203,16 @@ Informationen zum Überprüfen der Syntax für Ihren Mandanten und zum Identifiz
 
 ### <a name="configuration-information-for-microsoft-365-groups"></a>Konfigurationsinformationen für Microsoft 365-Gruppen
 
-Wenn Sie Inhalte für eine Microsoft 365-Gruppe (früher „Office 365-Gruppe“) aufbewahren oder löschen möchten, verwenden Sie den Speicherort **Microsoft 365-Gruppen**. Obwohl eine Microsoft 365-Gruppe über ein Exchange-Postfach verfügt, bezieht eine Aufbewahrungsrichtlinie, die den gesamten **Exchange-E-Mail-Speicherort** umfasst, keine Inhalte in Microsoft 365-Gruppenpostfächern mit ein. Obwohl der **Exchange-E-Mail-Speicherort** zunächst die Angabe eines Gruppenpostfachs zum Einschließen oder Ausschließen zulässt, erhalten Sie beim Versuch, die Aufbewahrungsrichtlinie zu speichern, die Fehlermeldung, dass "RemoteGroupMailbox" keine gültige Auswahl für den Exchange-Speicherort ist.
+Wenn Sie Inhalte für eine Microsoft 365-Gruppe (früher „Office 365-Gruppe“) aufbewahren oder löschen möchten, verwenden Sie den Speicherort **Microsoft 365-Gruppen**. Obwohl eine Microsoft 365-Gruppe über ein Exchange-Postfach verfügt, bezieht eine Aufbewahrungsrichtlinie, die den gesamten **Exchange-E-Mail-Speicherort** umfasst, keine Inhalte in Microsoft 365-Gruppenpostfächern mit ein. Obwohl der **Exchange-E-Mail-Speicherort** zunächst die Angabe eines Gruppenpostfachs zum Einschließen oder Ausschließen zulässt, erhalten Sie beim Versuch, die Aufbewahrungsrichtlinie zu speichern, die Fehlermeldung, dass „RemoteGroupMailbox“ keine gültige Auswahl für den Exchange-Speicherort ist.
 
-Eine auf eine Microsoft 365-Gruppe angewendete Aufbewahrungsrichtlinie umfasst das Gruppenpostfach und die SharePoint-Teamwebsite. Dateien, die auf der SharePoint-Teamwebsite gespeichert sind, werden mit diesem Standort abgedeckt. Nicht jedoch Teams-Chats oder Nachrichten im Teams-Channel, die ihre eigenen Standorte für Aufbewahrungsrichtlinien haben.
+Eine auf eine Microsoft 365-Gruppe angewendete Aufbewahrungsrichtlinie umfasst standardmäßig das Gruppenpostfach und die SharePoint-Teamwebsite. Dateien, die auf der SharePoint-Teamwebsite gespeichert sind, werden mit diesem Standort abgedeckt. Nicht jedoch Teams-Chats oder Nachrichten im Teams-Channel, die ihre eigenen Standorte für Aufbewahrungsrichtlinien haben.
+
+Wenn Sie den Standardwert ändern möchten, weil die Aufbewahrungsrichtlinie entweder nur für Microsoft 365-Postfächer oder nur für die verbundenen SharePoint-Teamwebsites gelten soll, verwenden Sie das PowerShell-Cmdlet [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) mit dem Parameter *Applications* mit einem der folgenden Werte:
+
+- `Group:Exchange` nur für Microsoft 365-Postfächer, die mit der Gruppe verbunden sind.
+- `Group:SharePoint` nur für SharePoint-Websites, die mit der Gruppe verbunden sind.
+
+Um zum Standardwert für das Postfach und die SharePoint-Website für die ausgewählten Microsoft 365-Gruppen zurückzukehren, geben Sie `Group:Exchange,SharePoint` ein.
 
 ### <a name="configuration-information-for-skype-for-business"></a>Konfigurationsinformationen für Skype for Business
 

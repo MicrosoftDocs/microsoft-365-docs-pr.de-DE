@@ -17,29 +17,18 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
-description: Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Security Compliance Center umfasst 80 Typen vertraulicher Informationen, die für Die Verwendung in Ihren &amp; DLP-Richtlinien bereit sind. Dieser Artikel enthält eine Liste aller typen vertraulicher Informationen und zeigt, nach welcher DLP-Richtlinie beim Erkennen der einzelnen Typen sucht.
-ms.openlocfilehash: 341ded0c4c7f6ff31074d17624c029e7f6187480
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+recommendations: false
+description: Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Security Compliance Center umfasst mehr als 200 typen vertraulicher Informationen, die für Die Verwendung in Ihren &amp; DLP-Richtlinien bereit sind. Dieser Artikel enthält eine Liste aller typen vertraulicher Informationen und zeigt, nach welcher DLP-Richtlinie beim Erkennen der einzelnen Typen sucht.
+ms.openlocfilehash: 0f3de14466cf9d2ebf5550eaec002bd4dea6e435
+ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919711"
+ms.lasthandoff: 04/29/2021
+ms.locfileid: "52086728"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Entitätsdefinitionen für Typen vertraulicher Informationstypen
 
-Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Compliance Center umfasst viele vertrauliche Informationstypen, die in Ihren DLP-Richtlinien verwendet werden können. Dieser Artikel enthält eine Liste aller typen vertraulicher Informationen und zeigt, nach welcher DLP-Richtlinie beim Erkennen der einzelnen Typen sucht. Ein vertraulicher Informationstyp wird durch ein Muster definiert, das durch einen regulären Ausdruck oder eine Funktion identifiziert werden kann. Bestätigende Nachweise, z. B. Schlüsselwörter und Prüfsummen, können verwendet werden, um einen vertraulichen Informationstyp zu identifizieren. Beim Auswertungsprozess können auch die Zuverlässigkeitsstufe und die Näherung herangezogen werden.
-
-Vertrauliche Informationstypen erfordern eines der folgenden Abonnements:
-- Microsoft 365 E3
-- Microsoft 365 E5
-
-Typen vertraulicher Informationen werden in folgenden Bereichen verwendet:
-
-- [Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md) 
-- [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
-- [Aufbewahrungsbezeichnungen](retention.md)
-- [Kommunikationscompliance](communication-compliance.md)
-- [Richtlinien für die automatische Kennzeichnung](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+Die Verhinderung von Datenverlust (Data Loss Prevention, DLP) im Compliance Center umfasst viele vertrauliche Informationstypen, die in Ihren DLP-Richtlinien verwendet werden können. Dieser Artikel enthält eine Liste aller typen vertraulicher Informationen und zeigt, nach welcher DLP-Richtlinie beim Erkennen der einzelnen Typen sucht. Weitere Informationen zu Typen vertraulicher Informationen finden Sie unter [Typen vertraulicher Informationen.](sensitive-information-type-learn-about.md)
 
 ## <a name="aba-routing-number"></a>ABA-Routingnummer
 
@@ -154,6 +143,89 @@ Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher In
 - documento numero 
 - registro nacional de las personas 
 - rnp 
+   
+## <a name="argentina-unique-tax-identification-key-cuitcuil"></a>Argentinien Eindeutiger Steueridentifikationsschlüssel (CUIT/CUIL)
+
+### <a name="format"></a>Format
+
+Elf Ziffern mit Strich
+
+### <a name="pattern"></a>Muster
+
+Elf Ziffern mit einem Strich:
+- zwei Ziffern in 20, 23, 24, 27, 30, 33 oder 34
+- ein Bindestrich (-)
+- acht Ziffern
+- ein Bindestrich (-)
+- eine Prüfziffer
+
+### <a name="checksum"></a>Prüfsumme
+
+Ja
+
+### <a name="definition"></a>Definition
+
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Die Funktion `Func_Argentina_Unique_Tax_Key` findet Inhalte, die dem Muster entsprechen.
+- Es wird ein `Keyword_Argentina_Unique_Tax_Key` Schlüsselwort aus gefunden.
+
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Die Funktion `Func_Argentina_Unique_Tax_Key` findet Inhalte, die dem Muster entsprechen.
+
+```xml
+    <!-- Argentina Unique Tax Identification Key (CUIT/CUIL) -->
+      <Entity id="98da3da1-9199-4571-b7c4-b6522980b507" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_Argentina_Unique_Tax_Key" />
+          <Match idRef="Keyword_Argentina_Unique_Tax_Key" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_Argentina_Unique_Tax_Key" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Schlüsselwörter
+
+#### <a name="keyword_argentina_unique_tax_key"></a>Keyword_Argentina_Unique_Tax_Key
+
+- Clave Unica de Identificacion Tributaria
+- CUIT
+- Eindeutiger Code für die Identifizierung von Arbeit 
+- Clave Única de Identificación Tributaria
+- Eindeutiger Arbeitskostenidentifikationscode
+- CUIL
+- Eindeutiger Steueridentifikationsschlüssel
+- Eindeutiger Identifikationsschlüssel für Arbeit
+- Eindeutiger Schlüssel zur Identifizierung von Arbeit
+- Eindeutiger Arbeitsidentifizierungscode
+- Eindeutige Code of Work Identification
+- Eindeutiger Identifikationsschlüssel für Arbeit
+- Eindeutige Identifikation des Schlüssels der Arbeit
+- Eindeutiger Code für die Steueridentifikation
+- Eindeutiger Schlüssel zur Steueridentifikation
+- Eindeutiger Arbeitsidentifizierungscode
+- Eindeutiger Code der Arbeitsidentifizierung
+- Eindeutiger Identifikationsschlüssel für Arbeit
+- Eindeutiger Schlüssel der Arbeitsidentifikation
+- Steuer-ID
+- taxID #
+- taxId
+- taxdnumber
+- Steuernummer
+- Steuer nein
+- Tax #
+- Tax #
+- Steuerzahler-ID
+- Steuernummer
+- steuerzahler nein
+- taxpayer #
+- taxpayer #
+- Steueridentität
+- tax identification
+- Número de Identificación Fiscal
+- número de contribuyente
+   
    
 ## <a name="australia-bank-account-number"></a>Australische Bankkontonummer
 
@@ -1286,7 +1358,7 @@ Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Inform
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="azure-iot-connection-string"></a>Azure IoT-Verbindungszeichenfolge
+## <a name="azure-iot-connection-string"></a>Azure IoT Verbindungszeichenfolge
 
 ### <a name="format"></a>Format
 
@@ -1612,7 +1684,7 @@ Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Inform
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="azure-storage-account-key-generic"></a>Azure Storage-Kontoschlüssel (generisch)
+## <a name="azure-storage-account-key-generic"></a>Azure Storage Kontoschlüssel (generisch)
 
 ### <a name="format"></a>Format
 
@@ -2193,7 +2265,7 @@ Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher In
 - Legal entities 
 - Registration Status 
 - Business 
-- Company
+- Unternehmen
 - CNPJ 
 - Cadastro Nacional da Pessoa Jurídica 
 - Cadastro Geral de Contribuintes 
@@ -3392,9 +3464,12 @@ Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertrauliche
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
-- cód. segurança
+- 
+cód. segurança
 - cod. seguranca
+
 - cod. segurança
+
 - cód. seguranca
 - cód segurança
 - cod seguranca
@@ -3574,7 +3649,8 @@ Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertrauliche
 - no do cartão
 - no do cartao
 - Nein. do cartão
-- Nein. do cartao
+- no. do cartao
+
 - クレジットカード番号
 - クレジットカードナンバー
 - クレジットカード＃
@@ -5606,11 +5682,15 @@ Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Inform
 - no de tarjeta 
 - no do cartao 
 - no do cartão 
-- Nein. de tarjeta 
-- Nein. do cartao 
-- Nein. do cartão 
+- no. de tarjeta
+ 
+- no. do cartao
+ 
+- no. do cartão
+ 
 - nr carta 
-- nr. carta 
+- nr. carta
+ 
 - numeri di scheda 
 - numero carta 
 - numero de cartao 
@@ -5629,7 +5709,8 @@ Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Inform
 - nº de tarjeta 
 - nº do cartao 
 - nº do cartão 
-- nº. do cartão 
+- nº. do cartão
+ 
 - número de cartao 
 - número de cartão 
 - número de tarjeta 
@@ -5681,10 +5762,14 @@ Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Inform
 - cod seguranca 
 - cod segurança 
 - cod sicurezza 
-- cod. seg 
-- cod. seguranca 
-- cod. segurança 
-- cod. sicurezza 
+- cod. seg
+ 
+- cod. seguranca
+ 
+- cod. segurança
+ 
+- cod. sicurezza
+ 
 - codice di sicurezza 
 - codice di verifica 
 - codigo 
@@ -5701,8 +5786,10 @@ Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Inform
 - cvv2 
 - cód seguranca 
 - cód segurança 
-- cód. seguranca 
-- cód. segurança 
+- cód. seguranca
+ 
+- cód. segurança
+ 
 - código 
 - código de seguranca 
 - código de segurança 
@@ -5714,8 +5801,10 @@ Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Inform
 - kreditkartenprufnummer 
 - kreditkartenprüfnummer 
 - kwestieaantal 
-- Nein. dell'edizione 
-- Nein. di sicurezza 
+- no. dell'edizione
+ 
+- no. di sicurezza
+ 
 - numero de securite 
 - numero de verificacao 
 - numero dell'edizione 
@@ -6759,14 +6848,16 @@ Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher In
 - national id
 - national identification
 - no d'identité
-- Nein. d'identité
+- 
+no. d'identité
 - numéro d'assurance
 - numéro d'identité
 - numero d'identite
 - numéro de sécu
 - numéro de sécurité sociale
 - no d'identite
-- Nein. d'identite
+- 
+no. d'identite
 - ssn
 - ssn #
 - sécurité sociale
@@ -11685,6 +11776,132 @@ Eine DLP-Richtlinie hat eine geringe Sicherheit, dass sie diese Art vertrauliche
 - eindeutige Identitätsnummer
 - uniqueidentityno #
 
+
+## <a name="medicare-beneficiary-identifier-mbi-card"></a>Medicare-Empfänger-ID (MBI)-Karte
+
+### <a name="format"></a>Format
+
+alphanumerisches Muster mit elf Zeichen
+  
+### <a name="pattern"></a>Muster
+
+- eine Ziffer zwischen 1 und 9
+- ein Buchstabe ohne S, L, O, I, B, Z
+- eine Ziffer oder ein Buchstabe ohne S, L, O, I, B, Z
+- eine Ziffer
+- optionaler Bindestrich
+- ein Buchstabe ohne S, L, O, I, B, Z
+- eine Ziffer oder ein Buchstabe ohne S, L, O, I, B, Z
+- eine Ziffer
+- optionaler Bindestrich
+- zwei Buchstaben ohne S, L, O, I, B, Z
+- zwei Ziffern
+    
+### <a name="checksum"></a>Prüfsumme
+
+Nein
+  
+### <a name="definition"></a>Definition
+
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Der reguläre Ausdruck  `Regex_mbi_card` findet Inhalte, die dem Muster entsprechen. 
+- Es wird ein  `Keyword_mbi_card` Schlüsselwort aus gefunden. 
+    
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Der reguläre Ausdruck  `Regex_mbi_card` findet Inhalte, die dem Muster entsprechen. 
+    
+```xml
+    <!-- Medicare Beneficiary Identifier (MBI) card -->
+      <Entity id="f753a286-f5cc-47e6-a592-4be25fd02591" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Regex_mbi_card" />
+          <Match idRef="Keyword_mbi_card" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Regex_mbi_card" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Schlüsselwörter
+
+#### <a name="keyword_mbi_card"></a>Keyword_mbi_card
+
+- mbi
+- mbi #
+- medicare-Empfänger #
+- medicare-Empfänger-ID
+- medicare-Empfänger nein
+- medicare-Empfängernummer
+- medicare-Empfänger #
+
+
+## <a name="mexico-unique-population-registry-code-curp"></a>Mexico Unique Population Registry Code (CURP)
+
+### <a name="format"></a>Format
+
+18 Zeichen alphanumerisches Muster
+  
+### <a name="pattern"></a>Muster
+
+- vier Buchstaben (Groß-/Kleinschreibung nicht beachtet)
+- sechs Ziffern, die ein gültiges Datum angeben
+- ein Buchstabe – H/h oder M/m
+- zwei Buchstaben, die einen gültigen code für den Bundesstaat Mexiko angeben
+- drei Buchstaben
+- ein Buchstabe oder eine Ziffer
+- eine Ziffer
+    
+### <a name="checksum"></a>Prüfsumme
+
+Nein
+  
+### <a name="definition"></a>Definition
+
+Eine DLP-Richtlinie hat hohe Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb von 300 Zeichen:
+- Die Funktion  `Func_mexico_population_registry_code` findet Inhalte, die dem Muster entsprechen. 
+- Es wird ein  `Keyword_mexico_population_registry_code` Schlüsselwort aus gefunden. 
+    
+Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher Informationen erkannt hat, wenn innerhalb einer Nähe von 300 Zeichen:
+- Die Funktion  `Func_mexico_population_registry_code` findet Inhalte, die dem Muster entsprechen. 
+    
+```xml
+    <!-- Mexico Unique Population Registry Code (CURP) -->
+      <Entity id="e905ad4d-5a74-406d-bf36-b1efca798af4" patternsProximity="300" recommendedConfidence="75" relaxProximity="true">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_mexico_population_registry_code" />
+          <Match idRef="Keyword_mexico_population_registry_code" />
+        </Pattern>
+        <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_mexico_population_registry_code" />
+        </Pattern>
+      </Entity>
+```
+
+### <a name="keywords"></a>Schlüsselwörter
+
+#### <a name="keyword_mexico_population_registry_code"></a>Keyword_mexico_population_registry_code
+
+- Clave Única de Registro de Población
+- Clave Unica de Registro de Poblacion
+- Eindeutiger Registrierungscode für die Grundgesamtheit 
+- Eindeutiger Grundgesamtheitscode
+- CURP
+- Persönliche ID
+- Eindeutige ID
+- personalid
+- personalidnumber
+- uniqueidkey
+- uniqueidnumber
+- clave única
+- clave unica
+- clave personal Identidad
+- persönliche Identidad Clave
+- ClaveÚnica
+- claveunica
+- clavepersonalIdentidad
+
+
 ## <a name="netherlands-citizens-service-bsn-number"></a>Nummer des niederländischen Bürgerdiensts (BSN)
 
 ### <a name="format"></a>Format
@@ -12788,6 +13005,7 @@ Eine DLP-Richtlinie hat mittlere Sicherheit, dass sie diese Art vertraulicher In
 - Nazwa i nr dowodu tożsamości
 - Dowód Tożsamości
 - dow. os.
+
 
    
 ## <a name="poland-national-id-pesel"></a>Nationale POLNISCHE ID (PESEL)

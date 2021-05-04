@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie den Microsoft 365-Scanner zur Verhinderung von Datenverlust vor Ort verwenden, um ruhende Daten zu scannen und Schutzmaßnahmen für lokale Dateifreigaben sowie lokale SharePoint-Ordner und Dokumentbibliotheken zu implementieren.
-ms.openlocfilehash: c46b67ca392732616329bad138166c892cd06640
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0abe36af5588c1828da106779a144b6e7f37d6a8
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917821"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114153"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Verwenden Sie den lokalen Microsoft 365-Scanner zur Verhinderung von Datenverlust (Vorschau).
 
@@ -32,7 +32,7 @@ Um Sie mit den lokalen DLP-Funktionen und deren Darstellung in DLP-Richtlinien v
 
 > [!IMPORTANT]
 > Diese lokalen DLP-Szenarien sind nicht die offiziellen Verfahren zum Erstellen und Optimieren von DLP-Richtlinien. In den folgenden Beiträgen finden Sie Informationen zum Arbeiten mit DLP-Richtlinien in Situationen allgemeiner Art:
->- [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)
+>- [Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)
 >- [Erste Schritte mit der standardmäßigen DLP-Richtlinie](get-started-with-the-default-dlp-policy.md)
 >- [Erstellen einer DLP-Richtlinie aus einer Vorlage](create-a-dlp-policy-from-a-template.md)
 >- [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
@@ -80,6 +80,6 @@ Wenn Sie DLP-Regeln für die gescannten Dateien erzwingen möchten, muss die Dur
 
 - [Erfahren Sie mehr über den lokalen DLP-Scanner (Vorschau)](dlp-on-premises-scanner-learn.md)
 - [Erste Schritte mit dem lokalen DLP-Scanner (Vorschau)](dlp-on-premises-scanner-get-started.md)
-- [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)
+- [Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)
 - [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 - [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)

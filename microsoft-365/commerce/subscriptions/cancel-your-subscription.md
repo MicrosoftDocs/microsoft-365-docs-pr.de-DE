@@ -12,20 +12,21 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
 - AdminSurgePortfolio
-- commerce
+- commerce_subscriptions
+- PPM_jmueller
+ms.reviewer: jkinma
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Microsoft 365 für Business-Testversion oder ein kostenpflichtiges Abonnement kündigen können.
-ms.date: ''
-ms.openlocfilehash: 2163462ae206871d66155331096337c29d6a87c2
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.date: 04/08/2021
+ms.openlocfilehash: f052a08cfe0e7582690864556cfc3039d6caf99c
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644644"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107002"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
@@ -101,9 +102,9 @@ Bei Verwendung einer benutzerdefinierten Domäne mit Ihrem Abonnement müssen ei
 
 #### <a name="change-your-domain-nameserver-records-if-needed"></a>Ändern der Namenservereinträge Ihrer Domäne (falls erforderlich)
 
-Wenn Sie eine benutzerdefinierte Domäne einrichten, haben Sie DNS-Einträge hinzugefügt, damit die Domäne mit Microsoft 365-Diensten funktioniert. Bevor Sie Ihre Domäne entfernen, stellen Sie sicher, dass Sie die DNS-Einträge wie den MX-Eintrag der Domäne bei Ihrem DNS-Host aktualisieren.
+Wenn Sie eine benutzerdefinierte Domäne eingerichtet haben, haben Sie auch DNS-Einträge hinzugefügt, damit die Domäne mit den Microsoft 365-Diensten zusammenarbeitet. Bevor Sie Ihre Domäne entfernen, stellen Sie sicher, dass Sie die DNS-Einträge, beispielsweise Ihren MX-Eintrag der Domäne, bei Ihrem DNS-Host aktualisieren.
 
-So müssen Sie beispielsweise den MX-Eintrag bei Ihrem DNS-Host ändern, An Ihre Domain gesendete E-Mails werden nicht mehr an Ihre Microsoft-Adresse gesendet, sondern an Ihren neuen E-Mail-Anbieter. (Mit einem MX-Eintrag wird festgelegt, wohin E-Mails für Ihre Domäne gesendet werden.)
+Ändern Sie beispielsweise den MX-Eintrag bei Ihrem DNS-Host ändern. An Ihre Domäne gesendete E-Mails werden nicht mehr an Ihre Microsoft-Adresse geliefert, sondern an den neuen E-Mail-Anbieter. (Ein MX-Eintrag legt fest, wohin E-Mails für Ihre Domäne gesendet werden.)
 
 - Wenn Ihre Nameserver-Einträge (NS) [auf Microsoft 365-Nameserver verweisen](../../admin/setup/add-domain.md), werden Änderungen an Ihrem MX-Eintrag erst wirksam, wenn Sie Ihre NS-Einträge so ändern, dass sie auf Ihren neuen DNS-Host verweisen (siehe Schritt 2).
 
@@ -121,7 +122,7 @@ Wenn Sie die NS-Einträge ändern möchten, lesen Sie [Entfernen einer Domäne](
 
 ### <a name="save-your-data"></a>Speichern Ihrer Daten
 
-Wenn die Kündigung wirksam wird, verlieren Ihre Benutzer den Zugriff auf ihre Daten. Bevor Sie das Abonnement kündigen, fordern Sie die Benutzer auf, ihre OneDrive for Business- oder SharePoint Online-Dateien an einem anderen Speicherort zu speichern. Alle Kundendaten, die Sie zurücklassen, werden möglicherweise nach 30 Tagen, spätestens aber 180 Tage nach der Kündigung gelöscht.
+Wenn die Kündigung wirksam wird, verlieren Ihre Benutzer den Zugriff auf ihre Daten. Bevor Sie das Abonnement kündigen, lassen Sie diese ihre OneDrive for Business- oder SharePoint Online-Dateien an einem anderen Speicherort speichern. Alle Kundendaten, die Sie zurücklassen, werden möglicherweise nach 30 Tagen gelöscht, aber spätestens 180 Tage nach der Kündigung.
 
 - Informationen zum Verschieben von E-Mails, Kontakten, Aufgaben und Kalenderinformationen in ein anderes Konto finden Sie unter [Exportieren oder Sichern von E-Mails, Kontakten und Kalendern in einer Outlook PST-Datei](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 

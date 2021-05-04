@@ -13,21 +13,21 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Administratoren können einen Datenconnector einrichten, um Daten aus dem physischen System ihrer Organisation zu Microsoft 365 zu importieren. Auf diese Weise können Sie diese Daten in Insider-Risikomanagementrichtlinien verwenden, um Ihnen zu helfen, den Zugriff auf Ihre physischen Gebäude durch bestimmte Benutzer zu erkennen, die auf eine mögliche interne Bedrohung für Ihre Organisation hinweisen können.
-ms.openlocfilehash: c07dfcbefa338f7499f2c45f595bf2ccda6387fa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Administratoren können einen Datenconnector einrichten, um Daten aus dem physischen System ihrer Organisation zu importieren, um Microsoft 365. Auf diese Weise können Sie diese Daten in Insider-Risikomanagementrichtlinien verwenden, um Ihnen zu helfen, den Zugriff auf Ihre physischen Gebäude durch bestimmte Benutzer zu erkennen, die auf eine mögliche interne Bedrohung für Ihre Organisation hinweisen können.
+ms.openlocfilehash: a300107af1d3fe07f208f7e3f239f75a9cd6e5af
+ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911365"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51994826"
 ---
 # <a name="set-up-a-connector-to-import-physical-badging-data-preview"></a>Einrichten eines Connectors zum Importieren physischer Daten (Vorschau)
 
-Sie können einen Datenconnector im Microsoft 365 Compliance Center einrichten, um physische Daten zu importieren, z. B. unformatierte physische Zugriffsereignisse des Mitarbeiters oder physische Zugriffsalarme, die durch das Schlechtungssystem Ihrer Organisation generiert werden. Beispiele für physische Zugriffspunkte sind ein Eintrag in ein Gebäude oder ein Eintrag in server room oder data center. Physische Schaddaten können von der Microsoft [](insider-risk-management.md) 365-Insider-Risikomanagementlösung verwendet werden, um Ihre Organisation vor böswilligen Aktivitäten oder Datendiebstahl in Ihrer Organisation zu schützen.
+Sie können einen Datenconnector im Microsoft 365 Compliance Center einrichten, um physische datenbehinderte Daten zu importieren, z. B. die unformatierten physischen Zugriffsereignisse des Mitarbeiters oder alle physischen Zugriffsalarme, die durch das System für die Lädung Ihrer Organisation generiert werden. Beispiele für physische Zugriffspunkte sind ein Eintrag in ein Gebäude oder ein Eintrag in server room oder data center. Physische Schaddaten können von der Microsoft 365-Insider-Risikomanagementlösung verwendet werden, um Ihre Organisation vor böswilligen Aktivitäten oder Datendiebstahl in Ihrer Organisation zu schützen. [](insider-risk-management.md)
 
 Das Einrichten eines physischen Verbindungsstücks besteht aus den folgenden Aufgaben:
 
-- Erstellen einer App in Azure Active Directory (Azure AD), um auf einen API-Endpunkt zu zugreifen, der eine JSON-Nutzlast akzeptiert, die physische Daten enthält.
+- Erstellen einer App in Azure Active Directory (Azure AD), um auf einen API-Endpunkt zu zugreifen, der eine JSON-Nutzlast akzeptiert, die datenbelastende physische Daten enthält.
 
 - Erstellen der JSON-Nutzlast mit einem Schema, das durch einen physischen Datenconnector definiert ist.
 
@@ -39,7 +39,7 @@ Das Einrichten eines physischen Verbindungsstücks besteht aus den folgenden Auf
 
 ## <a name="before-you-set-up-the-connector"></a>Vor dem Einrichten des Connectors
 
-- Dem Benutzer, der in Schritt 3 den konnektor für physische Verfeinerungen erstellt, muss die Rolle Postfachimportexport in Exchange Online zugewiesen werden. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle Postfachimportexport zur Rollengruppe Organisationsverwaltung in Exchange Online hinzufügen. Sie können auch eine neue Rollengruppe erstellen, die Rolle Postfachimportexport zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten Erstellen von [Rollengruppen](/Exchange/permissions-exo/role-groups#create-role-groups) oder [Ändern](/Exchange/permissions-exo/role-groups#modify-role-groups) von Rollengruppen im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Dem Benutzer, der in Schritt 3 den connector für physische Verfeindung erstellt, muss die Rolle Postfachimportexport in der Exchange Online. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle Postfachimportexport zur Rollengruppe Organisationsverwaltung in der Exchange Online. Sie können auch eine neue Rollengruppe erstellen, die Rolle Postfachimportexport zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten [Erstellen](/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern](/Exchange/permissions-exo/role-groups#modify-role-groups) von Rollengruppen im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
 - Sie müssen bestimmen, wie Sie die Daten aus dem physischen System für die Verletzung Ihrer Organisation (täglich) abrufen oder exportieren und eine JSON-Datei erstellen, die in Schritt 2 beschrieben wird. Das Skript, das Sie in Schritt 4 ausführen, pusht die Daten in der JSON-Datei an den API-Endpunkt.
 
@@ -55,7 +55,7 @@ Der erste Schritt besteht im Erstellen und Registrieren einer neuen App in Azure
 
 - Mandanten-ID (auch *Verzeichnis-ID genannt)*
 
-Schrittweise Anweisungen zum Erstellen einer App in Azure AD finden Sie unter Registrieren einer Anwendung [bei der Microsoft Identity Platform](/azure/active-directory/develop/quickstart-register-app).
+Schrittweise Anweisungen zum Erstellen einer App in Azure AD finden Sie unter Registrieren einer Anwendung bei [der Microsoft Identity Platform](/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-2-prepare-a-json-file-with-physical-badging-data"></a>Schritt 2: Vorbereiten einer JSON-Datei mit datenbearbeitenden Daten
 
@@ -63,13 +63,13 @@ Im nächsten Schritt erstellen Sie eine JSON-Datei, die Informationen zu den phy
 
 Die JSON-Datei muss der vom Connector erforderlichen Schemadefinition entsprechen. Im Folgenden finden Sie Beschreibungen der erforderlichen Schemaeigenschaften für die JSON-Datei:
 
-| Eigenschaft | Beschreibung | Datentyp |
-|:-----------|:--------------|:------------|
-|UserId|Ein Mitarbeiter kann über mehrere digitale Identitäten in den Systemen verfügen. Für die Eingabe muss die Azure AD-ID bereits vom Quellsystem aufgelöst werden. |UPN oder E-Mail-Adresse|
-|AssetId|Die Referenz-ID der physischen Ressource oder des physischen Zugriffspunkts.| Alphanumerische Zeichenfolge|
+|Eigenschaft|Beschreibung|Datentyp|
+|---|---|---|
+|UserId|Ein Mitarbeiter kann über mehrere digitale Identitäten in den Systemen verfügen. Für die Eingabe muss die Azure AD-ID bereits vom Quellsystem aufgelöst werden.|UPN oder E-Mail-Adresse|
+|AssetId|Die Referenz-ID der physischen Ressource oder des physischen Zugriffspunkts.|Alphanumerische Zeichenfolge|
 |AssetName|Der Anzeigename der physischen Ressource oder des physischen Zugriffspunkts.|Alphanumerische Zeichenfolge|
 |EventTime|Der Zeitstempel des Zugriffs.|Datum und Uhrzeit im UTC-Format|
-|AccessStatus|Wert von `Success` oder `Failed`| String|
+|AccessStatus|Wert von `Success` oder `Failed`|String|
 |||
 
 Im Folgenden finden Sie ein Beispiel für eine JSON-Datei, die dem erforderlichen Schema entspricht:
@@ -84,67 +84,68 @@ Im Folgenden finden Sie ein Beispiel für eine JSON-Datei, die dem erforderliche
         "AccessStatus":"Failed",
     },
     {
-        "UserId":"pilarp@contoso.com",        
+        "UserId":"pilarp@contoso.com",
         "AssetId":"Mid-Sec-7",
         "AssetName":"Main Building 1st Floor Mid Section",
-        "EventTime":"2019-07-04T02:57:49",        
+        "EventTime":"2019-07-04T02:57:49",
         "AccessStatus":"Success",
     }
 ]
 ```
+
 Sie können auch die folgende Schemadefinition für die JSON-Datei aus dem Assistenten herunterladen, wenn Sie den konnektor für physische Sperre in Schritt 3 erstellen.
 
 ```text
 {
-    "title" : "Physical Badging Signals",
-    "description" : "Access signals from physical badging systems",
-    "DataType" : {
-        "description" : "Identify what is the data type for input signal",
-        "type" : "string",
-    },
-    "type" : "object",
-    "properties": {
-        "UserId" : {
-            "description" : "Unique identifier AAD Id resolved by the source system",
-            "type" : "string",
-        },
-        "AssetId": {
-            "description" : "Unique ID of the physical asset/access point",
-            "type" : "string",
-        },
-        "AssetName": {
-            "description" : "friendly name of the physical asset/access point",
-            "type" : "string",
-        },
-        "EventTime" : {
-            "description" : "timestamp of access",
-            "type" : "string",
-        },
-        "AccessStatus" : {
-            "description" : "what was the status of access attempt - Success/Failed",
-            "type" : "string",
-        },
-    }
-    "required" : ["UserId", "AssetId", "EventTime" "AccessStatus"]
+   "title" : "Physical Badging Signals",
+   "description" : "Access signals from physical badging systems",
+   "DataType" : {
+      "description" : "Identify what is the data type for input signal",
+      "type" : "string",
+   },
+   "type" : "object",
+   "properties": {
+      "UserId" : {
+         "description" : "Unique identifier AAD Id resolved by the source system",
+         "type" : "string",
+      },
+      "AssetId": {
+         "description" : "Unique ID of the physical asset/access point",
+         "type" : "string",
+      },
+      "AssetName": {
+         "description" : "friendly name of the physical asset/access point",
+         "type" : "string",
+      },
+      "EventTime" : {
+         "description" : "timestamp of access",
+         "type" : "string",
+      },
+      "AccessStatus" : {
+         "description" : "what was the status of access attempt - Success/Failed",
+         "type" : "string",
+      },
+   }
+   "required" : ["UserId", "AssetId", "EventTime" "AccessStatus"]
 }
 ```
 
 ## <a name="step-3-create-the-physical-badging-connector"></a>Schritt 3: Erstellen des physischen Badgingconnector
 
-Im nächsten Schritt erstellen Sie im Microsoft 365 Compliance Center einen physischen Badging Connector. Nachdem Sie das Skript in Schritt 4 ausgeführt haben, wird die in Schritt 3 erstellte JSON-Datei verarbeitet und an den in Schritt 1 konfigurierten API-Endpunkt gesendet. Kopieren Sie in diesem Schritt unbedingt die JobId, die beim Erstellen des Connectors generiert wird. Sie verwenden die JobId, wenn Sie das Skript ausführen.
+Der nächste Schritt besteht im Erstellen eines physischen Verbinders für Microsoft 365 Compliance Center. Nachdem Sie das Skript in Schritt 4 ausgeführt haben, wird die in Schritt 3 erstellte JSON-Datei verarbeitet und an den in Schritt 1 konfigurierten API-Endpunkt gesendet. Kopieren Sie in diesem Schritt unbedingt die JobId, die beim Erstellen des Connectors generiert wird. Sie verwenden die JobId, wenn Sie das Skript ausführen.
 
-1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com/) zu,  und klicken Sie dann im linken Navigations navi auf Datenconnectors.
+1. Wechseln Sie <https://compliance.microsoft.com> zu,  und klicken Sie dann im linken Navigations navi auf Datenconnectors.
 
 2. Klicken Sie **auf der Seite** Datenconnectors unter **Physisches Badging** auf **Ansicht**.
 
 3. Klicken Sie **auf der Seite Physisches Badging** auf **Connector hinzufügen.**
 
 4. Gehen Sie auf der Seite **Authentifizierungsanmeldeinformationen** wie folgt vor, und klicken Sie dann auf **Weiter**:
-  
+
    1. Geben Sie die Azure AD-Anwendungs-ID für die Azure-App ein, die Sie in Schritt 1 erstellt haben, oder fügen Sie sie ein.
-  
+
    2. Laden Sie das Beispielschema für Ihren Verweis herunter, um die JSON-Datei zu erstellen.
-  
+
    3. Geben Sie einen eindeutigen Namen für den physischen Badgingconnector ein.
 
 5. Überprüfen Sie **auf** der Seite Überprüfen Ihre Einstellungen, und klicken Sie dann auf **Fertig** stellen, um den Connector zu erstellen.
@@ -163,12 +164,12 @@ Im nächsten Schritt erstellen Sie im Microsoft 365 Compliance Center einen phys
 
 Der nächste Schritt beim Einrichten eines Konnektors für physische Badging besteht in der Ausführung eines Skripts, das die physischen Daten in der JSON-Datei (die Sie in Schritt 2 erstellt haben) an den in Schritt 1 erstellten API-Endpunkt pusht. Wir stellen ein Beispielskript für Ihren Verweis bereit, und Sie können es verwenden oder ein eigenes Skript erstellen, um die JSON-Datei an den API-Endpunkt zu posten.
 
-Nachdem Sie das Skript ausgeführt haben, wird die JSON-Datei mit den physischen Daten zum Risikomanagement per Push an Ihre Microsoft 365-Organisation gesendet, auf die die Insider-Risikomanagementlösung zugreifen kann. Es wird empfohlen, physische Daten täglich zu veröffentlichen. Sie können dies tun, indem Sie den Prozess automatisieren, um die JSON-Datei täglich aus Ihrem physischen System zu generieren, und dann das Skript zum Pushen der Daten planen.
+Nachdem Sie das Skript ausgeführt haben, wird die JSON-Datei, die die physischen Daten enthält, an Ihre Microsoft 365-Organisation, auf die die Insider-Risikomanagement-Lösung zugreifen kann. Es wird empfohlen, physische Daten täglich zu veröffentlichen. Sie können dies tun, indem Sie den Prozess automatisieren, um die JSON-Datei täglich aus Ihrem physischen System zu generieren, und dann das Skript zum Pushen der Daten planen.
 
 > [!NOTE]
 > Die maximale Anzahl von Datensätzen in der JSON-Datei, die von der API verarbeitet werden können, beträgt 50.000 Datensätze.
 
-1. Wechseln Sie [zu dieser GitHub-Website,](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) um auf das Beispielskript zu zugreifen.
+1. Wechseln Sie [zu GitHub Website, um](https://github.com/microsoft/m365-hrconnector-sample-scripts/blob/master/upload_termination_records.ps1) auf das Beispielskript zu zugreifen.
 
 2. Klicken Sie auf **die Schaltfläche Raw,** um das Skript in der Textansicht anzeigen zu können.
 
@@ -176,7 +177,7 @@ Nachdem Sie das Skript ausgeführt haben, wird die JSON-Datei mit den physischen
 
 4. Ändern Sie bei Bedarf das Beispielskript für Ihre Organisation.
 
-5. Speichern Sie die Textdatei als Windows PowerShell Skriptdatei, indem Sie ein Dateinamensuffix von .ps1 verwenden. Beispiel: PhysicalBadging.ps1.
+5. Speichern Sie die Textdatei als Windows PowerShell Skriptdatei, indem Sie ein Dateinamensuffix von .ps1; Beispiel: PhysicalBadging.ps1.
 
 6. Öffnen Sie eine Eingabeaufforderung auf dem lokalen Computer, und wechseln Sie zu dem Verzeichnis, in dem Sie das Skript gespeichert haben.
 
@@ -188,13 +189,13 @@ Nachdem Sie das Skript ausgeführt haben, wird die JSON-Datei mit den physischen
 
    In der folgenden Tabelle werden die Parameter beschrieben, die mit diesem Skript verwendet werden müssen, und deren erforderliche Werte. Informationen, die Sie in den vorherigen Schritten erhalten haben, werden in den Werten für diese Parameter verwendet.
 
-   | Parameter | Beschreibung |
-   |:-------------|:--------------|
-   |tenantId | Dies ist die ID für Ihre Microsoft 365-Organisation, die Sie in Schritt 1 erhalten haben. Sie können die tenantId für Ihre Organisation auch auf dem **Blatt Übersicht im** Azure AD Admin Center abrufen. Dies wird verwendet, um Ihre Organisation zu identifizieren. |
-   |appId | Dies ist die Azure AD-Anwendungs-ID für die App, die Sie in Azure AD in Schritt 1 erstellt haben. Dies wird von Azure AD für die Authentifizierung verwendet, wenn das Skript versucht, auf Ihre Microsoft 365-Organisation zu zugreifen.                    |
-   |appSecret | Dies ist der geheime Azure AD-Anwendungsgeheimnis für die App, die Sie in Azure AD in Schritt 1 erstellt haben. Dies wird auch für die Authentifizierung verwendet.                                                        |
-   |jobId | Dies ist die Auftrags-ID für den in Schritt 3 erstellten connector für physische Badging. Dies wird verwendet, um die physischen Daten zu zuordnen, die an die Microsoft Cloud gesendet werden, dem physischen Badging-Connector.              |
-   |JsonFilePath | Dies ist der Dateipfad auf dem lokalen Computer (der Dateipfad, den Sie zum Ausführen des Skripts verwenden) für die JSON-Datei, die Sie in Schritt 2 erstellt haben. Diese Datei muss dem in Schritt 3 beschriebenen Beispielschema folgen.|
+   |Parameter|Beschreibung|
+   |---|---|
+   |tenantId|Dies ist die ID für Microsoft 365 Organisation, die Sie in Schritt 1 erhalten haben. Sie können die tenantId für Ihre Organisation auch auf dem **Blatt Übersicht im** Azure AD Admin Center abrufen. Dies wird verwendet, um Ihre Organisation zu identifizieren.|
+   |appId|Dies ist die Azure AD-Anwendungs-ID für die App, die Sie in Azure AD in Schritt 1 erstellt haben. Dies wird von Azure AD für die Authentifizierung verwendet, wenn das Skript versucht, auf Ihre Microsoft 365 zu greifen.|
+   |appSecret|Dies ist der geheime Azure AD-Anwendungsgeheimnis für die App, die Sie in Azure AD in Schritt 1 erstellt haben. Dies wird auch für die Authentifizierung verwendet.|
+   |jobId|Dies ist die Auftrags-ID für den in Schritt 3 erstellten connector für physische Badging. Dies wird verwendet, um die physischen Daten zu zuordnen, die an die Microsoft Cloud gesendet werden, dem physischen Badging-Connector.|
+   |JsonFilePath|Dies ist der Dateipfad auf dem lokalen Computer (der Dateipfad, den Sie zum Ausführen des Skripts verwenden) für die JSON-Datei, die Sie in Schritt 2 erstellt haben. Diese Datei muss dem in Schritt 3 beschriebenen Beispielschema folgen.|
    |||
 
    Im Folgenden finden Sie ein Beispiel für die Syntax für das Skript für das physische Badging Connector, das die tatsächlichen Werte für jeden Parameter verwendet:
@@ -203,7 +204,7 @@ Nachdem Sie das Skript ausgeführt haben, wird die JSON-Datei mit den physischen
    .\PhysicalBadging.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\physical_badging_data.json'
    ```
 
-   Wenn der Upload erfolgreich war, zeigt das Skript die **Meldung Erfolgreich hochladen** an.
+   Wenn der Upload erfolgreich war, zeigt das Skript die Hochladen **Meldung Erfolgreich** an.
 
    Wenn Sie über mehrere JSON-Dateien verfügen, müssen Sie das Skript für jede Datei ausführen.
 
@@ -212,9 +213,9 @@ Nachdem Sie das Skript ausgeführt haben, wird die JSON-Datei mit den physischen
 
 ## <a name="step-5-monitor-the-physical-badging-connector"></a>Schritt 5: Überwachen des physischen Verbindungsstücks
 
-Nachdem Sie den connector für physische Meldungen erstellt und Ihre physischen Daten zum Ausschmieren übertragen haben, können Sie den Connector und den Uploadstatus im Microsoft 365 Compliance Center anzeigen. Wenn Sie planen, dass das Skript regelmäßig automatisch ausgeführt wird, können Sie auch den aktuellen Status nach dem letzten Ausführen des Skripts anzeigen.
+Nachdem Sie den connector für physische Sicherheitsbeschmieren erstellt und Ihre physischen Daten zum Ausschmieren übertragen haben, können Sie den Connector anzeigen und den Status im compliance center Microsoft 365 hochladen. Wenn Sie planen, dass das Skript regelmäßig automatisch ausgeführt wird, können Sie auch den aktuellen Status nach dem letzten Ausführen des Skripts anzeigen.
 
-1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com/) zu, und klicken Sie **im** linken Navigations navi auf Datenconnectors.
+1. Wechseln Sie <https://compliance.microsoft.com> zu, und klicken Sie **im** linken Navigations navi auf Datenconnectors.
 
 2. Klicken Sie auf **die** Registerkarte Connectors, und wählen Sie dann den physischen Verbinder aus, um die Flyoutseite anzeigen zu können. Diese Seite enthält die Eigenschaften und Informationen zum Connector.
 
@@ -232,9 +233,9 @@ Wenn Sie das Skript in Schritt 4 nicht ausgeführt haben, wird unter Letzter Imp
 
 Um sicherzustellen, dass tools wie der Insider-Risikomanagement-Lösung die neuesten physischen Daten aus Ihrer Organisation zur Verfügung stehen, wird empfohlen, dass Sie das Skript so planen, dass es regelmäßig ausgeführt wird, z. B. einmal am Tag. Dies erfordert auch, dass Sie die physischen Daten in der JSON-Datei nach einem ähnlichen (wenn nicht demselben) Zeitplan aktualisieren, damit sie die neuesten Informationen zu Mitarbeitern enthält, die Ihre Organisation verlassen. Das Ziel besteht in dem Hochladen der aktuellen Daten zu physischen Gefährdungsrisiken, damit der Connector für physisches Badging diese für die Lösung für das Insiderrisikomanagement zur Verfügung stellen kann.
 
-Sie können die TaskPlaner-App in Windows verwenden, um das Skript täglich automatisch auszuführen.
+Sie können die TaskPlaner-App in Windows, um das Skript täglich automatisch auszuführen.
 
-1. Klicken Sie auf dem lokalen Computer auf die Schaltfläche Windows **Start,** und geben Sie **task scheduler ein.**
+1. Klicken Sie auf dem lokalen Computer auf Windows **Schaltfläche Start,** und geben Sie **task scheduler ein.**
 
 2. Klicken Sie auf **die TaskPlaner-App,** um sie zu öffnen.
 
@@ -250,7 +251,7 @@ Sie können die TaskPlaner-App in Windows verwenden, um das Skript täglich auto
 
 6. Wählen Sie **die Registerkarte Trigger aus,** klicken Sie auf **Neu**, und gehen Sie dann wie folgt vor:
 
-   1. Wählen **Sie unter** Einstellungen die Option **Täglich** aus, und wählen Sie dann Datum und Uhrzeit aus, um das Skript zum ersten Mal auszuführen. Das Skript wird jeden Tag zur angegebenen Zeit ausgeführt.
+   1. Wählen **Einstellungen** die Option **Täglich** aus, und wählen Sie dann Datum und Uhrzeit aus, um das Skript zum ersten Mal auszuführen. Das Skript wird jeden Tag zur angegebenen Zeit ausgeführt.
 
    2. Stellen **Sie unter Erweiterte Einstellungen** sicher, dass das Kontrollkästchen Aktiviert aktiviert ist. 
 

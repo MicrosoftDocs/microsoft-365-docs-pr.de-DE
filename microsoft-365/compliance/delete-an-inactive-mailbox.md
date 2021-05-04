@@ -17,20 +17,20 @@ search.appverid:
 ms.assetid: f5caf497-5e8d-4b7a-bfff-d02942f38150
 ms.custom:
 - seo-marvel-apr2020
-description: Wenn Sie den Inhalt eines inaktiven Microsoft 365-Postfachs nicht mehr beibehalten müssen, können Sie das inaktive Postfach dauerhaft löschen.
-ms.openlocfilehash: 94a20bee1ca3d11a193a25efeb6d73f356e1d58d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Wenn Sie den Inhalt eines inaktiven Postfachs Microsoft 365 müssen, können Sie das inaktive Postfach dauerhaft löschen.
+ms.openlocfilehash: 077a71bfdd82721e0992e5d14073aa037b7cfd1b
+ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909925"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52100824"
 ---
 # <a name="delete-an-inactive-mailbox"></a>Löschen eines inaktiven Postfachs
 
 Ein inaktives Postfach wird verwendet, um die E-Mails eines ehemaligen Mitarbeiters zu erhalten, nachdem sie Ihre Organisation verlassen haben. Wenn Sie die Inhalte eines inaktiven Postfachs nicht mehr aufbewahren müssen, können Sie das inaktive Postfach durch Entfernen des Haltebereichs endgültig löschen. Darüber hinaus ist es möglich, mehrere Haltebereiche für ein inaktives Postfach festzulegen. Beispielsweise kann für ein inaktives Postfach ein Beweissicherungsverfahren aktiviert oder das Postfach in einem oder mehreren In-Situ-Speichern abgelegt werden. Darüber hinaus kann eine Aufbewahrungsrichtlinie (erstellt im Security and Compliance Center in Office 365 oder Microsoft 365) auf das inaktive Postfach angewendet werden. Sie müssen alle Aufbewahrungs- und Aufbewahrungsrichtlinien aus einem inaktiven Postfach entfernen, um es zu löschen. Nach dem Entfernen der Haltebereiche und Aufbewahrungsrichtlinien wird das inaktive Postfach zum Löschen markiert und endgültig gelöscht, nachdem es verarbeitet wurde.
   
 > [!IMPORTANT]
-> Da wir weiterhin auf unterschiedliche Weise investieren, um Postfachinhalte zu erhalten, wird der In-Place im Exchange Admin Center angekündigt. Das bedeutet, dass Sie zum Erstellen eines inaktiven Postfachs Aufbewahrungs- und Aufbewahrungsrichtlinien verwenden sollten. Ab dem 1. Juli 2020 können Sie keine neuen In-Place in Exchange Online erstellen. Sie können jedoch weiterhin die Haltedauer eines In-Place inaktiven Postfachs ändern. Ab dem 1. Oktober 2020 können Sie die Haltedauer jedoch nicht mehr ändern. Sie können nur ein inaktives Postfach löschen, indem Sie die In-Place entfernen. Vorhandene inaktive Postfächer, die sich im In-Place befinden, bleiben bis zum Entfernen des Haltespeichers erhalten. Weitere Informationen zum Austritt von In-Place finden Sie unter [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
+> Da wir weiterhin auf unterschiedliche Weise investieren, um Postfachinhalte zu erhalten, wird die Rente von In-Place Holds im Exchange Admin Center angekündigt. Das bedeutet, dass Sie zum Erstellen eines inaktiven Postfachs Aufbewahrungs- und Aufbewahrungsrichtlinien verwenden sollten. Ab dem 1. Juli 2020 können Sie keine neuen In-Place in Exchange Online. Sie können jedoch weiterhin die Haltedauer eines In-Place inaktiven Postfachs ändern. Ab dem 1. Oktober 2020 können Sie die Haltedauer jedoch nicht mehr ändern. Sie können nur ein inaktives Postfach löschen, indem Sie die In-Place entfernen. Vorhandene inaktive Postfächer, die sich im In-Place befinden, bleiben bis zum Entfernen des Haltespeichers erhalten. Weitere Informationen zum Austritt von In-Place finden Sie unter [Retirement of legacy eDiscovery tools](legacy-ediscovery-retirement.md).
   
 Eine Beschreibung dessen, was geschieht, wenn Haltebereiche von einem inaktiven Postfach entfernt werden, finden Sie im Abschnitt [Weitere Informationen](#more-information).
   
@@ -92,7 +92,7 @@ Set-Mailbox -InactiveMailbox -Identity <identity of inactive mailbox> -Litigatio
   
 ### <a name="remove-an-inactive-mailbox-from-a-retention-policy"></a>Entfernen eines inaktiven Postfachs aus einer Aufbewahrungsrichtlinie
 
-Das Verfahren zum Entfernen eines inaktiven Postfachs aus einer Microsoft 365-Aufbewahrungsrichtlinie hängt davon ab, ob die dem inaktiven Postfach zugewiesene Aufbewahrungsrichtlinie organisationsweit oder explizit ist. für den Typ der Aufbewahrungsrichtlinie, die dem inaktiven Postfach zugewiesen ist.
+Das Verfahren zum Entfernen eines inaktiven Postfachs aus Microsoft 365 Aufbewahrungsrichtlinie hängt davon ab, ob die dem inaktiven Postfach zugewiesene Aufbewahrungsrichtlinie organisationsweit oder explizit ist. für den Typ der Aufbewahrungsrichtlinie, die dem inaktiven Postfach zugewiesen ist.
 
 - Organisationsweite Aufbewahrungsrichtlinien, die allen Postfächern in der Organisation zugewiesen sind. Verwenden Sie **das Cmdlet Get-OrganizationConfig** in Exchange Online PowerShell, um Informationen zu organisationsweiten Aufbewahrungsrichtlinien zu erhalten.
 
@@ -206,25 +206,26 @@ Wenn der In-Situ-Speicher eine große Anzahl von Postfächern enthält, ist das 
 
 ## <a name="more-information"></a>Weitere Informationen
 
-- **Ein inaktives Postfach ist ein Typ des vorläufig gelöschten Postfachs.** In Exchange Online ist ein vorläufig gelöschtes Postfach, das zwar gelöscht wurde, aber innerhalb einer bestimmten Beibehaltungsdauer wiederhergestellt werden kann. Die Aufbewahrungsdauer für vorläufig gelöschte Postfächer beträgt in Exchange Online 30 Tage. Das bedeutet, dass das Postfach innerhalb von 30 Tagen nach dem vorläufigen Löschen wiederhergestellt werden kann. Nach 30 Tagen wird ein vorläufig gelöschtes Postfach zum dauerhaften Löschen markiert und kann nicht wiederhergestellt werden.
+- **Ein inaktives Postfach ist ein Typ des vorläufig gelöschten Postfachs.** In Exchange Online ist ein vorläufig gelöschtes Postfach, das zwar gelöscht wurde, aber innerhalb einer bestimmten Beibehaltungsdauer wiederhergestellt werden kann. Ein zuvor inaktives Postfach steht als soft-deleted-Postfach in Exchange Online 183 Tage zur Verfügung. Dies bedeutet, dass das Postfach innerhalb von 183 Tagen nach dem Soft-Deleted wiederhergestellt werden kann. Nach 183 Tagen wird ein unbefristetes Postfach zum dauerhaften Löschen markiert und kann nicht wiederhergestellt werden.
 
-- **Was geschieht, nachdem Sie den Haltebereich für ein inaktives Postfach entfernt haben?** Das Postfach wird wie andere vorläufig gelöschte Postfächer behandelt und wird für die dauerhafte Löschung markiert, nachdem die 30-tägige Beibehaltungsdauer für das vorläufig gelöschte Postfach abgelaufen ist. Dieser Aufbewahrungszeitraum beginnt an dem Datum, an dem das Postfach erstmals inaktiv gemacht wurde. Dieses Datum wird als datumsaktiv gelöscht bezeichnet, d. h. das Datum, an dem das entsprechende Benutzerkonto gelöscht wurde oder das Exchange Online-Postfach mit dem **Cmdlet Remove-Mailbox** gelöscht wurde. Das Datum für das vorläufige Löschen ist nicht das Datum, an dem Sie den Haltebereich entfernt haben.
+- **Was geschieht, nachdem Sie den Haltebereich für ein inaktives Postfach entfernt haben?** Das Postfach wird wie andere soft-deleted-Postfächer behandelt und nach Ablauf des Aufbewahrungszeitraums von 183 -tägigen soft-deleted-Postfächern zum dauerhaften Löschen markiert. Dieser Aufbewahrungszeitraum beginnt an dem Datum, an dem das Postfach erstmals inaktiv gemacht wurde. Dieses Datum wird als datumsaktiv gelöscht bezeichnet, d. h. das Datum, an dem das entsprechende Benutzerkonto gelöscht wurde, oder wenn das Exchange Online-Postfach mit dem **Cmdlet Remove-Mailbox** gelöscht wurde. Das Datum für das vorläufige Löschen ist nicht das Datum, an dem Sie den Haltebereich entfernt haben.
 
-- **Wird ein inaktives Postfach sofort nach dem Entfernen des Haltebereichs dauerhaft gelöscht?** Wenn das Datum für vorläufig gelöschte Elemente für ein inaktives Postfach mehr als 30 Tage zurückliegt, wird das Postfach nicht sofort dauerhaft gelöscht, sobald Sie den Haltebereich entfernen. Das Postfach wird zum endgültigen Löschen markiert und bei der nächsten Verarbeitung gelöscht.
-
-- **Wie wirkt sich die Beibehaltungsdauer für das vorläufig gelöschte Postfach auf inaktive Postfächer aus?** Wenn das Datum für vorläufig gelöschte Elemente für ein inaktives Postfach über 30 Tage vor dem Datum liegt, an dem der Haltebereich entfernt wurde, wird das Postfach für die dauerhafte Löschung markiert. Wenn jedoch ein inaktives Postfach über ein Datum für das vorläufige Löschen innerhalb der letzten 30 Tage verfügt und Sie den Haltebereich entfernen, können Sie das Postfach bis zum Ablauf des Aufbewahrungszeitraums für das vorläufige Löschen wiederherstellen. Weitere Informationen finden Sie unter [Löschen oder Wiederherstellen von Benutzerpostfächern in Exchange Online](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes). Nach Ablauf des Aufbewahrungszeitraums für weiche gelöschte Postfächer müssen Sie die Verfahren zum Wiederherstellen eines inaktiven Postfachs befolgen. Weitere Informationen finden Sie unter [Recover an inactive mailbox in Office 365](recover-an-inactive-mailbox.md).
+- **Wird ein inaktives Postfach sofort nach dem Entfernen des Haltebereichs dauerhaft gelöscht?** Ein zuvor inaktives Postfach steht 183 Tage lang im Zustand "Soft-Deleted" zur Verfügung. Nach 183 Tagen wird das Postfach zum dauerhaften Löschen markiert.
 
 - **Wie können Informationen über ein inaktives Postfach angezeigt werden, nachdem der Haltebereich entfernt wurde?** Nachdem ein Haltefeld entfernt wurde und das inaktive Postfach wieder auf ein soft-deleted-Postfach zurückgesetzt wurde, wird es nicht mithilfe des  *Parameters InactiveMailboxOnly*  mit dem **Cmdlet Get-Mailbox** zurückgegeben. Sie können jedoch Informationen über das Postfach anzeigen, indem Sie den Befehl **Get-Mailbox -SoftDeletedMailbox** verwenden. Beispiel:
 
   ```text
   Get-Mailbox -SoftDeletedMailbox -Identity pilarp | FL Name,Identity,LitigationHoldEnabled,In
-  Placeholds,WhenSoftDeleted,IsInactiveMailbox
+  Placeholds,WhenSoftDeleted,IsInactiveMailbox,WasInactiveMailbox,InactiveMailboxRetireTime
   Name                   : pilarp
   Identity               : Soft Deleted Objects\pilarp
   LitigationHoldEnabled  : False
   InPlaceHolds           : {}
-  WhenSoftDeleted        : 10/30/2014 1:19:04 AM
+  WhenSoftDeleted        : 6/16/2020 1:19:04 AM
   IsInactiveMailbox      : False
+  WasInactiveMailbox     : True
+  InactiveMailboxRetireTime : 9/30/2020 11:16:23 PM
   ```
 
-  Im obigen Beispiel identifiziert die *WhenSoftDeleted-Eigenschaft* das datumsweich gelöschte Datum, das in diesem Beispiel den 30. Oktober 2014 ist. Wenn dieses unbefristete Postfach zuvor ein inaktives Postfach war, für das das Archiv entfernt wurde, wird es 30 Tage nach dem Wert der *WhenSoftDeleted-Eigenschaft* endgültig gelöscht. In diesem Fall wird das Postfach nach dem 30. November 2014 endgültig gelöscht.
+  Im obigen Beispiel identifiziert die *WhenSoftDeleted-Eigenschaft* das datumsweich gelöschte Datum, das in diesem Beispiel den 16. Juni 2020 ist. Die *WasInactiveMailbox-Eigenschaft* wird als `True` aufgelistet, da sie zuvor ein inaktives Postfach war. Das Postfach wird 183 Tage nach dem 30. September 2020 endgültig gelöscht.
+

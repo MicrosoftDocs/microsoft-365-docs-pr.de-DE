@@ -18,17 +18,17 @@ ms.collection:
 - m365initiative-compliance
 search.appverid:
 - MET150
-description: Der lokale Scanner zur Verhinderung von Datenverlust in Microsoft 365 erweitert die Überwachung von Dateiaktivitäten und Schutzmaßnahmen für diese Dateien auf lokale Dateifreigaben sowie SharePoint-Ordner und Dokumentbibliotheken. Dateien werden mit dem Azure Information Protection (AIP) -Scanner gescannt und geschützt
-ms.openlocfilehash: fa1c14520c8ad0afa4856fdd8a1c59a0f71f400d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Der lokale Scanner zur Verhinderung von Datenverlust in Microsoft 365 erweitert die Überwachung von Dateiaktivitäten und Schutzmaßnahmen für diese Dateien auf lokale Dateifreigaben sowie SharePoint-Ordner und Dokumentbibliotheken. Dateien werden vom AIP-Scanner (Azure Information Protection) gescannt und geschützt
+ms.openlocfilehash: f0a34a13630e42c5dd29734ad708b3c11bb1d587
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917811"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114163"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Erfahren Sie mehr über den lokalen Microsoft 365-Scanner zur Verhinderung von Datenverlust (Vorschau)
 
-Der lokale Scanner zur Verhinderung von Datenverlust von Microsoft ist Teil der Microsoft 365 DLP-Suite (Data Loss Prevention), mit der Sie vertrauliche Elemente in allen Microsoft 365-Diensten erkennen und schützen können. Weitere Informationen zu den Microsoft-DLP-Angeboten finden Sie unter [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md).
+Der lokale Scanner zur Verhinderung von Datenverlust von Microsoft ist Teil der Microsoft 365 DLP-Suite (Data Loss Prevention), mit der Sie vertrauliche Elemente in allen Microsoft 365-Diensten erkennen und schützen können. Weitere Informationen zu den Microsoft-DLP-Angeboten finden Sie unter [Verhinderung von Datenverlust](dlp-learn-about-dlp.md).
 
 Der **lokale DLP-Scanner** durchsucht lokale ruhende Daten in Dateifreigaben und SharePoint-Dokumentbibliotheken und -Ordnern nach vertraulichen Elementen, die bei einer undichten Stelle ein Risiko für Ihr Unternehmen darstellen oder das Risiko eines Verstoßes gegen Compliance-Richtlinien darstellen. Dies gibt Ihnen die Sichtbarkeit und Kontrolle, die Sie benötigen, um sicherzustellen, dass sensible Elemente ordnungsgemäß verwendet und geschützt werden, und um riskantes Verhalten zu vermeiden, das sie gefährden könnte. Der lokale DLP-Scanner erkennt vertrauliche Informationen mithilfe [integrierter](sensitive-information-type-entity-definitions.md) oder [benutzerdefinierter vertraulicher Informations](create-a-custom-sensitive-information-type.md)typen, [Vertraulichkeitsbezeichnungen](sensitivity-labels.md) oder Dateieigenschaften. Die Informationen darüber, was Benutzer mit vertraulichen Elementen tun, werden im [Aktivitäts-Explorer](data-classification-activity-explorer.md) sichtbar gemacht, und Sie können Schutzaktionen für diese Elemente über [DLP-Richtlinien](create-test-tune-dlp-policy.md) erzwingen.
 
@@ -89,6 +89,6 @@ Nachdem Sie sich mit dem lokalen DLP-Scanner vertraut gemacht haben, sind Ihre n
 
 - [Erste Schritte mit dem lokalen Microsoft-Scanner zur Verhinderung von Datenverlust](dlp-on-premises-scanner-get-started.md)
 - [Verwenden Sie den lokalen Scanner zur Verhinderung von Datenverlust von Microsoft](dlp-on-premises-scanner-use.md)
-- [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)
+- [Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)
 - [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 - [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)

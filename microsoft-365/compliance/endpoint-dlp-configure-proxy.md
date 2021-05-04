@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Erfahren Sie Näheres über das Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen für die Verhinderung von Datenverlust am Endpunkt (Data Loss Prevention, DLP).
-ms.openlocfilehash: 4d1aa3b75ec0a0720f3d92c847bf7c6cde6d966f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5da9161f2f59ef8a40ca8a7d302dc7de578dba39
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199274"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114123"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen für die Verhinderung von Datenverlust am Endpunkt
 
@@ -63,7 +63,7 @@ Der statische Proxy kann mithilfe von Gruppenrichtlinien konfiguriert werden. Di
 
 ![Abbildung der Gruppenrichtlinieneinstellungen 2](../media/atp-gpo-proxy2.png)
 
-Die Richtlinie setzt zwei Registrierungswerte (`TelemetryProxyServer` als "REG_SZ" und `DisableEnterpriseAuthProxy` als "REG_DWORD") unter dem Registrierungsschlüssel `HKLM\Software\Policies\Microsoft\Windows\DataCollection` fest.
+Die Richtlinie setzt zwei Registrierungswerte (`TelemetryProxyServer` als "REG_SZ&quot; und `DisableEnterpriseAuthProxy` als &quot;REG_DWORD") unter dem Registrierungsschlüssel `HKLM\Software\Policies\Microsoft\Windows\DataCollection` fest.
 
 Der TelemetryProxyServer-Registrierungswert weist dieses Format auf: \<server name or ip\>:\<port\>. Beispiel: **10.0.0.6:8080**.
 
@@ -142,7 +142,7 @@ Verwandte Themen • Onboarding von Windows 10-Geräten • Microsoft Endpunkt-D
 
 - [Informationen zur Verhinderung von Datenverlust am Endpunkt](endpoint-dlp-learn-about.md)
 - [Verwenden der Verhinderung von Datenverlust am Endpunkt](endpoint-dlp-using.md)
-- [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)
+- [Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)
 - [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 - [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender für Endpunkt](/windows/security/threat-protection/)

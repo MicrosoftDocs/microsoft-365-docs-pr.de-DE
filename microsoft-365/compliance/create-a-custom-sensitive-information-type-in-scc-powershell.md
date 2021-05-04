@@ -15,18 +15,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie einen benutzerdefinierten Typ für vertrauliche Informationen für Richtlinien im Compliance Center erstellen und importieren können.
-ms.openlocfilehash: 7ba807dce8b1d67280aeab929901327b7bfe03ef
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 18679e171fa704341094dee582124f36a950f8a5
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908533"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113987"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Erstellen eines benutzerdefinierten vertraulichen Informationstyps mit PowerShell
 
 In diesem Thema wird gezeigt, wie Sie PowerShell verwenden können, um eine XML-*Regelpaket*-Datei zu erstellen, in der Ihre eigenen [benutzerdefinierten vertraulichen Informationstypen](sensitive-information-type-entity-definitions.md) definiert werden. Sie müssen wissen, wie ein regulärer Ausdruck erstellt wird. In diesem Thema wird als Beispiel ein benutzerdefinierter vertraulicher Informationstyp erstellt, der eine Mitarbeiter-ID identifiziert. Sie können diese XML-Beispieldatei als Ausgangspunkt für Ihre eigene XML-Datei verwenden. Wenn Sie noch nicht mit Typen vertraulicher Informationen vertraut sind, wechseln Sie zu [Informationen zu Typen vertraulicher Informationen](sensitive-information-type-learn-about.md).
 
-Nachdem Sie eine wohlgeformte XML-Datei erstellt haben, können Sie sie mit Microsoft 365 PowerShell in Microsoft 365 hochladen. Anschließend können Sie den benutzerdefinierten vertraulichen Informationstyp in Ihren Richtlinien verwenden und testen, ob die vertraulichen Informationen wie beabsichtigt erkannt werden.
+Nachdem Sie eine wohlgeformte XML-Datei erstellt haben, können Sie sie mit Microsoft 365 PowerShell in Microsoft 365 hochladen. Sie können dann den benutzerdefinierten Typ vertraulicher Informationen in Ihren Richtlinien verwenden und testen, ob er die vertraulichen Informationen wie beabsichtigt erkennt.
 
 > [!NOTE]
 > Wenn Sie die differenzierte Kontrolle, die Ihne PowerShell bietet, nicht benötigen, können Sie benutzerdefinierte Typen vertraulicher Informationen im Compliance Center erstellen. Weitere Informationen finden Sie unter [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md).
@@ -61,15 +61,15 @@ Unten sehen Sie die Beispiel-XML für das Regelpaket, das Sie in diesem Thema er
 </RulePack>
 <Rules>
 <!-- Employee ID -->
-    <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="70">
-        <Pattern confidenceLevel="60">
+    <Entity id="E1CC861E-3FE9-4A58-82DF-4BD259EAB378" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="65">
             <IdMatch idRef="Regex_employee_id"/>
         </Pattern>
-        <Pattern confidenceLevel="70">
+        <Pattern confidenceLevel="75">
             <IdMatch idRef="Regex_employee_id"/>
             <Match idRef="Func_us_date"/>
         </Pattern>
-        <Pattern confidenceLevel="80">
+        <Pattern confidenceLevel="85">
             <IdMatch idRef="Regex_employee_id"/>
             <Match idRef="Func_us_date"/>
             <Any minMatches="1">
@@ -128,13 +128,13 @@ Unten sehen Sie die Beispiel-XML für das Regelpaket, das Sie in diesem Thema er
 
 Bevor Sie beginnen, ist es hilfreich, die grundlegende Struktur des XML-Schemas für eine Regel zu kennen, und wie Sie diese Struktur verwenden können, um den benutzerdefinierten vertraulichen Informationstyp zu definieren, damit die richtigen Inhalte erkannt werden.
   
-Eine Regel definiert eine oder mehrere Entitäten (vertrauliche Informationstypen), und jede Entität definiert ein oder mehrere Muster. Ein Muster ist das, wonach eine Richtlinie bei der Auswertung von Inhalten wie E-Mails und Dokumenten sucht.
+Eine Regel definiert eine oder mehrere Entitäten (Typen vertraulicher Informationen), und jede Entität definiert ein oder mehrere Muster (Patterns). Die Richtlinie sucht nach einem Muster, wenn sie Inhalte auswertet, wie z. B. E-Mails und Dokumente. 
 
-In diesem Thema bezeichnet der Begriff Regel im Zusammenhang mit dem XML-Markup die Muster, die eine Entität definieren. Dies wird auch als vertraulicher Informationstyp bezeichnet. Wenn Sie also in diesem Thema das Wort Regel lesen, denken Sie an eine Entität oder einen vertraulichen Informationstyp und nicht an Bedingungen und Aktionen.
+In diesem Thema bezeichnet der Begriff Regel im Zusammenhang mit dem XML-Markup die Muster, die eine Entität definieren. Dies wird auch als Typ vertraulicher Informationen bezeichnet. Wenn Sie also in diesem Thema das Wort „Regel“ lesen, denken Sie an eine Entität oder einen Typ vertraulicher Informationen und nicht an Bedingungen und Aktionen.
   
 ### <a name="simplest-scenario-entity-with-one-pattern"></a>Einfachstes Szenario: Entität mit einem Muster
 
-Hier ist das einfachste Szenario. Mit Ihrer Richtlinie sollen Inhalte erkannt werden, die die Mitarbeiter-ID Ihrer Organisation enthalten, die als neunstellige Nummer formatiert ist. Das Muster verweist also auf einen regulären Ausdruck, der in der Regel enthalten ist und neunstellige Nummern erkennt. Jeder Inhalt, der eine neunstellige Nummer umfasst, entspricht dem Muster.
+Hier sehen Sie das das einfachste Szenario. Sie möchten, dass Ihre Richtlinie Inhalt identifiziert, der die Mitarbeiter-ID Ihrer Organisation enthält. Diese ist als neunstellige Zahl formatiert. Das Muster bezieht sich also auf einen regulären Ausdruck, der in der Regel enthalten ist, die neunstellige Zahlen erkennt. Jeder Inhalt, der eine neunstellige Zahl beinhaltet, entspricht dem Muster.
   
 ![Diagramm einer Entität mit einem Muster](../media/4cc82dcf-068f-43ff-99b2-bac3892e9819.png)
   
@@ -150,7 +150,7 @@ Um zum Beispiel die Wahrscheinlichkeit zu erhöhen, Inhalt zu erkennen, der eine
   
 Beachten Sie einige wichtige Aspekte dieser Struktur:
   
-- Muster, die mehr Nachweise erfordern, weisen ein höheres Konfidenzniveau auf. Dies ist nützlich, denn wenn Sie später diesen vertraulichen Informationstyp in einer Richtlinie verwenden, können Sie restriktivere Aktionen (z. B. Inhalt blockieren) nur für Übereinstimmungen mit höherem Konfidenzniveau und weniger restriktive Aktionen (z. B. Benachrichtigung senden) für Übereinstimmungen mit geringerem Konfidenzniveau verwenden.
+- Muster, die mehr Nachweise erfordern, weisen ein höheres Konfidenzniveau auf. Dies ist nützlich, denn wenn Sie später diesen vertraulichen Informationstyp in einer Richtlinie verwenden, können Sie restriktivere Aktionen (z. B. Inhalt blockieren) nur für Übereinstimmungen mit höherem Konfidenzniveau und weniger restriktive Aktionen (z. B. Benachrichtigung senden) für Übereinstimmungen mit geringerem Konfidenzniveau verwenden.
 
 - Die unterstützenden Elemente "IdMatch" und "Match" verweisen auf reguläre Ausdrücke und Schlüsselwörter, die tatsächlich untergeordnete Elemente des Elements "Rule" und nicht des Elements "Pattern" sind. Auf diese unterstützenden Elemente wird von "Pattern" Bezug genommen, sie sind aber in "Rule" enthalten. Das bedeutet, dass auf eine einzelne Definition eines unterstützenden Elements, z. B. einen regulären Ausdruck oder eine Schlüsselwortliste, von mehreren Entitäten und Mustern Bezug genommen werden kann.
 
@@ -161,7 +161,7 @@ Eine Entität ist ein vertraulicher Informationstyp (z. B. eine Kreditkartennumm
 ### <a name="name-the-entity-and-generate-its-guid"></a>Benennen der Entität und Generieren der GUID
 
 1. Fügen Sie im XML-Editor Ihrer Wahl die Elemente „Regeln“ und „Element“ hinzu.
-2. Fügen Sie einen Kommentar hinzu, der den Namen Ihrer benutzerdefinierten Entität enthält – in diesem Beispiel "Mitarbeiter-ID". Fügen Sie später den Entitätsnamen zum Abschnitt mit den lokalisierten Zeichenfolgen hinzu, und dieser Name wird beim Erstellen einer Richtlinie auf der Benutzeroberfläche angezeigt.
+2. Fügen Sie einen Kommentar hinzu, der den Namen der benutzerdefinierten Entität enthält – in diesem Beispiel „Employee ID“. Später fügen Sie den Entitätsnamen zum Abschnitt mit den lokalisierten Zeichenfolgen hinzu, und dieser Name wird beim Erstellen einer Richtlinie in der Benutzeroberfläche angezeigt.
 3. Generieren Sie eine GUID für die Entität. GUIDs können auf verschiedene Arten generiert werden, besonders einfach ist es aber in PowerShell. Dort müssen Sie nur **[guid]::NewGuid()** eingeben. Später fügen Sie auch die Entitäts-GUID zum Abschnitt mit den lokalisierten Zeichenfolgen hinzu.
   
 ![XML-Markup mit den Elementen "Regeln" und "Entität"](../media/c46c0209-0947-44e0-ac3a-8fd5209a81aa.png)
@@ -174,7 +174,7 @@ Allen der folgenden Muster ist gemeinsam, dass sie sich alle auf denselben regul
   
 ![XML-Markup mit mehreren Pattern-Elementen, die auf ein einzelnes Regex-Element verweisen](../media/8f3f497b-3b8b-4bad-9c6a-d9abf0520854.png)
   
-Wenn eine Übereinstimmung gefunden wird, gibt ein Muster eine Anzahl und ein Konfidenzniveau zurück, die Sie in den Bedingungen Ihrer Richtlinie verwenden können. Wenn Sie eine Bedingung für das Erkennen eines vertraulichen Informationstyps zu einer Richtlinie hinzufügen, können Sie die Anzahl und das Konfidenzniveau bearbeiten, wie es hier gezeigt wird. Das Konfidenzniveau (auch als Übereinstimmungsgenauigkeit bezeichnet) wird weiter unten in diesem Thema erläutert.
+Wenn eine Übereinstimmung gefunden wurde, gibt ein Muster eine Anzahl und einen Zuverlässigkeitsgrad zurück, die Sie in den Bedingungen Ihrer Richtlinie verwenden können. Wenn Sie eine Bedingung zum Erkennen eines Typs vertraulicher Informationen zu einer Richtlinie hinzufügen, können Sie die Anzahl und den Zuverlässigkeitsgrad wie hier gezeigt bearbeiten. Der Zuverlässigkeitsgrad (auch als „Übereinstimmungsgenauigkeit“ bezeichnet) wird weiter unten in diesem Thema erläutert.
   
 ![Instanzenanzahl und Optionen für die Übereinstimmungsgenauigkeit](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
@@ -210,7 +210,7 @@ In diesem Beispiel verwendet die Entität „Employee ID“ bereits das IdMatch-
   
 ### <a name="additional-patterns-such-as-dates-or-addresses-built-in-functions"></a>Zusätzliche Muster wie Datumsangaben oder Adressen [integrierte Funktionen]
 
-Zusätzlich zu den integrierten vertraulichen Informationstypen können Typen vertraulicher Informationen auch integrierte Funktionen verwenden, mit denen bestätigende Nachweise wie ein US-Datum, EU-Datum, ein Ablaufdatum oder eine US-Adresse identifiziert werden können. Microsoft 365 bietet keine Unterstützung für das Hochladen eigener benutzerdefinierter Funktionen, doch wenn Sie einen benutzerdefinierten vertraulichen Informationstyp erstellen, kann die Entität auf die integrierten Funktionen verweisen.
+Zusätzlich zu den integrierten Typen vertraulicher Informationen können Typen vertraulicher Informationen auch integrierte Funktionen verwenden, mit denen bestätigende Nachweise wie ein US-Datum, ein EU-Datum, ein Ablaufdatum oder eine US-Adresse identifiziert werden können. Microsoft 365 bietet keine Unterstützung für das Hochladen eigener benutzerdefinierter Funktionen. Wenn Sie jedoch einen benutzerdefinierten Typ vertraulicher Informationen erstellen, kann die Entität auf die integrierten Funktionen verweisen.
   
 Beispielsweise steht auf einem Mitarbeiterausweis außer der Mitarbeiter-ID auch ein Einstellungsdatum, sodass diese benutzerdefinierte Entität die integrierte Funktion `Func_us_date` verwenden kann, um ein Datum im US-typischen Format zu identifizieren. 
   
@@ -294,15 +294,15 @@ Beachten Sie, dass bei E-Mails der Text und jede Anlage als separate Elemente be
 
 Je mehr Nachweise für ein Muster erforderlich sind, desto höher ist der Zuverlässigkeitsgrad, dass eine tatsächliche Entität (z. B. Mitarbeiter-ID) beim Abgleich des Musters identifiziert wurde. So ist die Zuverlässigkeit beispielsweise größer bei einem Muster, für das eine neunstellige ID, das Einstellungsdatum und ein Stichwort in nächster Nähe erforderlich sind, als bei einem Muster, das nur eine neue neunstellige ID erfordert.
   
-Das Element "Pattern" weist ein erforderliches Attribut "confidenceLevel" auf. Sie können sich den Wert für "confidenceLevel" (eine ganze Zahl zwischen 1 und 100) als eine eindeutige ID für jedes Muster in einer Entität vorstellen – die Muster in einer Entität müssen unterschiedliche Konfidenzniveaus aufweisen, die von Ihnen zugewiesen werden. Der genaue Wert der Zahl spielt keine Rolle – wählen Sie einfach Zahlen aus, die Ihrem Complianceteam sinnvoll erscheinen. Nachdem Sie den benutzerdefinierten vertraulichen Informationstyp hochgeladen und anschließend eine Richtlinie erstellt haben, können Sie in den Bedingungen der von Ihnen erstellten Regeln auf diese Konfidenzniveaus verweisen.
+Das Pattern-Element hat ein erforderliches confidenceLevel-Attribut. Sie können sich den Wert für „confidenceLevel“ (eine ganze Zahl zwischen 1 und 100) als eine eindeutige ID für jedes Muster in einer Entität vorstellen – Sie müssen den Mustern in einer Entität unterschiedlichen Zuverlässigkeitsgrade zuweisen. Der genaue Wert der ganzen Zahl spielt keine Rolle – wählen Sie einfach Zahlen aus, die Ihrem Complianceteam sinnvoll erscheinen. Nachdem Sie den benutzerdefinierten Typ für vertrauliche Informationen hochgeladen und anschließend eine Richtlinie erstellt haben, können Sie in den Bedingungen der von Ihnen erstellten Regeln auf diese Zuverlässigkeitsgrade verweisen.
   
 ![XML-Markup mit "Muster"-Elementen und verschiedenen Werten für das Attribut "Konfidenzniveau"](../media/301e0ba1-2deb-4add-977b-f6e9e18fba8b.png)
   
 Zusätzlich zu "confidenceLevel" für jedes Muster weist "Entity" ein Attribut "recommendedConfidence" auf. Dieses Attribut für die empfohlene Konfidenz kann man sich als das Standardkonfidenzniveau für die Regel vorstellen. Wenn Sie beim Erstellen einer Regel in einer Richtlinie kein zu verwendendes Konfidenzniveau für die Regel angeben, erfolgt der Abgleich für diese Regel basierend auf dem empfohlenen Konfidenzniveau für die Entität. Bitte beachten Sie, dass das recommendedConfidence-Attribut für jede Entitäts-ID im Regelpaket zwingend erforderlich ist. Wenn es nicht vorhanden ist, können Sie keine Richtlinien speichern, die den Typ „vertrauliche Informationen“ verwenden. 
   
-## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>Möchten Sie in der Benutzeroberfläche des Compliance Center andere Sprachen unterstützen? [LocalizedStrings-Element]
+## <a name="do-you-want-to-support-other-languages-in-the-ui-of-the-compliance-center-localizedstrings-element"></a>Möchten Sie in der Benutzeroberfläche von Compliance Center andere Sprachen unterstützen? [Element „LocalizedStrings“]
 
-Wenn Ihr Complianceteam das Microsoft 365 Compliance Center zum Erstellen von Richtlinien in verschiedenen Gebietsschemas und in verschiedenen Sprachen verwendet, können Sie lokalisierte Versionen des Namens und der Beschreibung Ihres benutzerdefinierten vertraulichen Informationstyps bereitstellen. Wenn Ihr Complianceteam Microsoft 365 in einer von Ihnen unterstützten Sprache verwendet, wird der lokalisierte Name auf der Benutzeroberfläche angezeigt.
+Wenn Ihr Complianceteam Microsoft 365 Compliance Center zum Erstellen von Richtlinien in verschiedenen Gebietsschemas und in verschiedenen Sprachen verwendet, können Sie lokalisierte Versionen des Namens und der Beschreibung Ihres benutzerdefinierten Typs für vertrauliche Informationen bereitstellen. Wenn Ihr Complianceteam Microsoft 365 in einer anderen, von Ihnen unterstützten Sprache verwendet, wird der lokalisierte Name in der Benutzeroberfläche angezeigt.
   
 ![Instanzenanzahl und Optionen für die Übereinstimmungsgenauigkeit](../media/11d0b51e-7c3f-4cc6-96d8-b29bcdae1aeb.png)
   
@@ -310,7 +310,7 @@ Das Rules-Element muss ein LocalizedStrings-Element enthalten, das ein Resource-
   
 ![XML-Markup mit Inhalt des LocalizedStrings-Elements](../media/a96fc34a-b93d-498f-8b92-285b16a7bbe6.png)
   
-Beachten Sie, dass Sie lokalisierte Zeichenfolgen nur für die Anzeige Ihres benutzerdefinierten vertraulichen Informationstyps auf der Benutzeroberfläche des Compliance Centers verwenden. Sie können lokalisierte Zeichenfolgen nicht verwenden, um verschiedene lokalisierte Versionen einer Schlüsselwortliste oder eines regulären Ausdrucks bereitzustellen.
+Beachten Sie, dass Sie lokalisierte Zeichenfolgen nur für die Anzeige Ihres benutzerdefinierten Typs vertraulicher Informationen in der Benutzeroberfläche von Compliance Center verwenden. Sie können keine lokalisierte Zeichenfolgen verwenden, um verschiedene lokalisierte Versionen einer Stichwortliste oder eines regulären Ausdrucks bereitzustellen.
   
 ## <a name="other-rule-package-markup-rulepack-guid"></a>Sonstige Regelpaket-Markups [RulePack-GUID]
 
@@ -348,7 +348,7 @@ Wenn es fertig ist, sollte das RulePack-Element wie folgt aussehen.
   
 ## <a name="changes-for-exchange-online"></a>Änderungen für Exchange Online
 
-Sie haben bisher möglicherweise Exchange Online PowerShell verwendet, um Ihre benutzerdefinierten Typen für vertrauliche Informationen für DLP zu importieren. Nun können Ihre benutzerdefinierten vertraulichen Informationstypen sowohl im Exchange Admin Center als auch im Compliance Center verwendet werden. Im Rahmen dieser Verbesserung sollten Sie Compliance Center-PowerShell verwenden, um Ihre benutzerdefinierten vertraulichen Informationstypen zu importieren. Sie können sie nicht mehr aus Exchange PowerShell importieren. Ihre benutzerdefinierten vertraulichen Informationstypen funktionieren weiterhin wie zuvor, es kann jedoch bis zu einer Stunde dauern, bis Änderungen, die Sie im Compliance Center an benutzerdefinierten vertraulichen Informationstypen vorgenommen haben, im Exchange Admin Center angezeigt werden.
+Sie haben bisher möglicherweise Exchange Online PowerShell verwendet, um Ihre benutzerdefinierten Typen vertraulicher Informationen für DLP zu importieren. Nun können Ihre benutzerdefinierten Typen vertraulicher Informationen sowohl im Exchange Admin Center als auch im Compliance Center verwendet werden. Als Teil dieser Verbesserung sollten Sie die Compliance Center-PowerShell verwenden, um Ihre benutzerdefinierten Typen vertraulicher Informationen zu importieren. Sie können sie nicht mehr aus Exchange PowerShell importieren. Ihre benutzerdefinierten Typen vertraulicher Informationen funktionieren weiterhin wie zuvor, es kann jedoch bis zu einer Stunde dauern, bis Änderungen, die Sie im Compliance Center an benutzerdefinierten Typen vertraulicher Informationen vorgenommen haben, im Exchange Admin Center angezeigt werden.
   
 Beachten Sie, dass Sie im Compliance Center das Cmdlet **[New-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/new-dlpsensitiveinformationtyperulepackage)** verwenden, um ein Regelpaket hochzuladen. (Im Exchange Admin Center wurde früher das Cmdlet **ClassificationRuleCollection** verwendet.) 
   
@@ -453,7 +453,7 @@ Wenn ein benutzerdefinierter Typ für vertrauliche Informationen ein Problem ent
     
 ## <a name="recrawl-your-content-to-identify-the-sensitive-information"></a>Neues Durchforsten des Inhalts, um die Typen für vertrauliche Informationen zu identifizieren
 
-Microsoft 365 verwendet den Suchcrawler zum Erkennen und Klassifizieren vertraulicher Informationen in Websiteinhalten. Inhalte von SharePoint Online- und OneDrive for Business-Websites werden automatisch erneut durchforstet, sobald sie aktualisiert wurden. Um aber den neuen benutzerdefinierten vertraulichen Informationstyp in allen vorhandenen Inhalten zu identifizieren, müssen diese Inhalte erneut durchforstet werden.
+Microsoft 365 verwendet den Suchcrawler zum Identifizieren und Klassifizieren von vertraulichen Informationen in Websiteinhalten. Inhalte in SharePoint Online- und OneDrive for Business-Websites werden bei jeder Aktualisierung automatisch erneut durchforstet. Damit der neue benutzerdefinierte Typ vertraulicher Informationen im gesamten vorhandenen Inhalt identifiziert werden kann, muss der Inhalt erneut durchforstet werden.
   
 In Microsoft 365 können Sie das erneute Durchforsten des gesamten Mandanten nicht manuell anfordern, für eine Websitesammlung, Liste oder Bibliothek ist dies jedoch möglich. Weitere Informationen finden Sie unter [Manuelles Durchforsten und erneutes Indizieren einer Website, einer Bibliothek oder Liste](/sharepoint/crawl-site-content).
   
@@ -532,7 +532,7 @@ Informationen zum Herstellen der Verbindung zu Compliance Center PowerShell find
    ```
 
    > [!NOTE]
-   > Das integrierte Regelpaket mit den integrierten vertraulichen Informationstypen trägt den Namen Microsoft-Regelpaket. Das Regelpaket, das die benutzerdefinierten vertraulichen Informationstypen enthält, die Sie in der Benutzeroberfläche des Compliance Centers erstellt haben, trägt den Namen "Microsoft. SCCManaged.CustomRulePack".
+   > Das integrierte Regelpaket, das die integrierten Typen vertraulicher Informationen enthält, heißt „Microsoft Regelpaket“. Das Regelpaket, das die benutzerdefinierten Typen vertraulicher Informationen enthält, die Sie in der Benutzeroberfläche von Compliance Center erstellt haben, heißt „Microsoft.SCCManaged.CustomRulePack“.
 
 2. Verwenden Sie das Cmdlet [Get-DlpSensitiveInformationTypeRulePackage](/powershell/module/exchange/get-dlpsensitiveinformationtyperulepackage), um das benutzerdefinierte Regelpaket in einer Variablen zu speichern:
 
@@ -921,7 +921,7 @@ Sie können dieses Markup kopieren, als eine XSD-Datei speichern und diese zum �
 
 ## <a name="more-information"></a>Weitere Informationen
 
-- [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md)
+- [Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)
 
 - [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
 

@@ -12,21 +12,19 @@ localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365_Setup
-- Adm_O365_TOC
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-- manage_licenses
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie gleichzeitig mehrere Benutzer hinzufügen und Lizenzen für Microsoft 365 zuweisen können.
 ms.date: 07/01/2020
-ms.openlocfilehash: 97b7118f4052d4ab4e0ffe8ecec96f32e4042108
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 6a1361d9cfebd2b305a71248fcbb461d0a68a052
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024013"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107086"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Gleichzeitiges Hinzufügen von Benutzern und Zuweisen von Lizenzen
 
@@ -36,22 +34,43 @@ Jede Person in Ihrem Team benötigt ein Benutzerkonto, um sich bei [Microsoft 3
 
 Sie müssen ein globaler, Lizenz- oder Benutzeradministrator sein, um Benutzer hinzufügen und Lizenzen zuweisen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
-## <a name="watch-add-users-in-the-admin-center"></a>Video: Hinzufügen von Benutzern im Admin Center
+## <a name="add-a-user-in-the-admin-simplified-view"></a>Hinzufügen eines Benutzers in der vereinfachten Administrator-Ansicht
+
+Wenn Sie diese Seite im Admin Center sehen, dann befinden Sie sich auf der **vereinfachten Administrator-Ansicht**. Führen Sie die folgenden Schritte aus, um einen Benutzer hinzuzufügen.
+
+:::image type="content" source="../../media/vsb-add-user-view.png" alt-text="Screenshot: Vereinfachte Admin Center-Ansicht":::
+
+1. Wechseln Sie zum Admin Center unter <https://admin.microsoft.com>.
+2. Wählen Sie **Ein Konto für eine andere Person erstellen** aus.
+3. Geben Sie auf der Seite **Benutzerkonto hinzufügen** die Vor- und Nachnamen ein, den Anzeigenamen und den Benutzernamen, den die Person für die Anmeldung verwenden wird.
+4. Fügen Sie die E-Mail-Adresse des Benutzers im Textfeld **Bis zu 5 E-Mail-Adressen...** hinzu. Dies wird sicherstellen, dass der neue Benutzer die Informationen erhält, die er für die Anmeldung bei den Microsoft 365-Diensten benötigt.
+5. Wählen Sie **Benutzer hinzufügen** und **Anmeldeinformation herunterladen** aus, wenn Sie diese Info speichern wollen.
+
+## <a name="watch-add-users-in-the-dashboard-view"></a>Video: Hinzufügen von Benutzern in der Dashboard-Ansicht
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
 > [!NOTE]
 > Die im Video verwendeten Schritte beginnen mit dem Hinzufügen von Benutzern bei einem anderen Ausgangspunkt, aber die übrigen Schritte sind mit dem folgenden Verfahren identisch.
 
-## <a name="add-users-one-at-a-time"></a>Hinzufügen von jeweils einem Benutzer
+## <a name="add-users-one-at-a-time-in-the-dashboard-view"></a>Benutzer einzeln in der Dashboard-Ansicht hinzufügen
 
  ::: moniker range="o365-worldwide"
 
-1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+:::image type="content" source="../../media/classic-admin-center.png" alt-text="Screenshot: Dashboard-Ansicht des Admin Centers":::
 
-::: moniker-end
+1. Wechseln Sie zum Admin Center unter <https://admin.microsoft.com>.
+2. Wählen Sie **Benutzer** > **Aktive Benutzer** und **Benutzer hinzufügen** aus.
+3. Geben Sie im Bereich **Grundlagen einrichten** die grundlegenden Benutzerinformationen ein, und wählen Sie dann **Weiter** aus.
+    - **Name** Geben Sie den Vor- und Nachnamen, den Anzeigenamen und den Benutzernamen ein.
+    - **Domäne** Wählen Sie die Domäne für das Konto des Benutzers aus. Wenn beispielsweise der Benutzername des Benutzers „Jakob“ ist und die Domäne „contoso.com“ heißt, meldet er sich durch Eingabe von „jakob@contoso.com“ an.
+    - **Kennworteinstellungen** Wählen Sie, ob Sie das automatisch generierte Kennwort verwenden oder Ihr eigenes sicheres Kennwort für den Benutzer erstellen möchten.
+    - Der Benutzer muss sein Kennwort nach 90 Tagen ändern. Sie können aber auch Folgendes auswählen: **Vom Benutzer verlangen, dass er sein Kennwort bei der ersten Anmeldung ändern muss**.
+    - Wählen Sie aus, ob das Kennwort per E-Mail gesendet werden soll, wenn der Benutzer hinzugefügt wird.
+4. Wählen Sie im Bereich **Produktlizenzen zuweisen** den Speicherort und die entsprechende Lizenz für den Benutzer aus. Wenn Sie keine Lizenzen zur Verfügung haben, können Sie trotzdem einen Benutzer hinzufügen und zusätzliche Lizenzen kaufen. Erweitern Sie **Apps**, und aktivieren oder deaktivieren Sie Apps, um die Apps einzuschränken, für die der Benutzer eine Lizenz hat. Wählen Sie **Weiter** aus.
+5. Erweitern Sie auf der Seite **Optionale Einstellungen** die Option **Rollen**, um diesen Benutzer als Administrator festzulegen. Erweitern Sie **Profilinformationen**, um weitere Informationen zum Benutzer hinzuzufügen.
+6. Wählen Sie **Weiter** aus, überprüfen Sie die Einstellungen des neuen Benutzers, nehmen Sie eventuell Änderungen vor, und wählen Sie dann **Hinzufügen fertig stellen** > **Schließen** aus.
 
-::: moniker range="o365-germany"
 
 1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
@@ -66,9 +85,9 @@ Sie müssen ein globaler, Lizenz- oder Benutzeradministrator sein, um Benutzer h
 2. Wählen Sie **Benutzer** > **Aktive Benutzer** und **Benutzer hinzufügen** aus.
 3. Geben Sie im Bereich **Grundlagen einrichten** die grundlegenden Benutzerinformationen ein, und wählen Sie dann **Weiter** aus.
     - **Name** Geben Sie den Vor- und Nachnamen, den Anzeigenamen und den Benutzernamen ein.
-    - **Domäne** Wählen Sie die Domäne für das Konto des Benutzers aus. Wenn beispielsweise der Benutzername des Benutzers „Jan“ ist und die Domäne „contoso.com“ heißt, meldet er sich durch Eingabe von „jan@contoso.com“ an.
-    - **Kennworteinstellungen** Wählen Sie das automatisch generierte Kennwort aus, oder erstellen Sie ein sicheres Kennwort für den Benutzer.
-    - Der Benutzer muss sein Kennwort nach 90 Tagen ändern. Sie können aber auch die folgende Option auswählen: **Anfordern, dass dieser Benutzer bei der ersten Anmeldung sein Kennwort ändert**.
+    - **Domäne** Wählen Sie die Domäne für das Konto des Benutzers aus. Wenn beispielsweise der Benutzername des Benutzers „Jakob“ ist und die Domäne „contoso.com“ heißt, meldet er sich durch Eingabe von „jakob@contoso.com“ an.
+    - **Kennworteinstellungen** Wählen Sie, ob Sie das automatisch generierte Kennwort verwenden oder Ihr eigenes sicheres Kennwort für den Benutzer erstellen möchten.
+    - Der Benutzer muss sein Kennwort nach 90 Tagen ändern. Sie können aber auch Folgendes auswählen: **Vom Benutzer verlangen, dass er sein Kennwort bei der ersten Anmeldung ändern muss**.
     - Wählen Sie aus, ob das Kennwort per E-Mail gesendet werden soll, wenn der Benutzer hinzugefügt wird.
 4. Wählen Sie im Bereich **Produktlizenzen zuweisen** den Speicherort und die entsprechende Lizenz für den Benutzer aus. Wenn Sie keine Lizenzen zur Verfügung haben, können Sie trotzdem einen Benutzer hinzufügen und zusätzliche Lizenzen kaufen. Erweitern Sie **Apps**, und aktivieren oder deaktivieren Sie Apps, um die Apps einzuschränken, für die der Benutzer eine Lizenz hat. Wählen Sie **Weiter** aus.
 5. Erweitern Sie auf der Seite **Optionale Einstellungen** die Option **Rollen**, um diesen Benutzer als Administrator festzulegen. Erweitern Sie **Profilinformationen**, um weitere Informationen zum Benutzer hinzuzufügen.

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in SharePoint- und Microsoft Teams-Websites sowie in Microsoft 365-Gruppen.
-ms.openlocfilehash: 501df9b167e917d79957d8b156597af67e6240af
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4914a5911ffb493eded46631d7682c1e48cf1426
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919581"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860874"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden
 
@@ -245,7 +245,7 @@ Stellen Sie sicher, dass Sie über die Version 16.0.19418.12000 oder höher der 
    $sites | ForEach-Object {Set-SPOTenant $_.url -SensitivityLabel $Id}
    ```
 
-Wenn Sie unterschiedliche Bezeichnungen auf unterschiedliche Websites anwenden möchten, wiederholen Sie den folgenden Befehl für jede Website: `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
+Mit dieser Reihe von Befehlen können Sie mehrere Websites in Ihrem Mandanten mit derselben Vertraulichkeitsbezeichnung beschriften. Daher verwenden Sie das Cmdlet „Set-SPOTenant“ anstelle des Cmdlets „Set-SPOSite“, das für die Konfiguration pro Website verwendet wird. Das Cmdlet „Set-SPOSite“ verwenden Sie hingegen, wenn Sie eine andere Bezeichnung auf bestimmte Websites anwenden müssen. Wiederholen Sie für jede dieser Websites den folgenden Befehl: `Set-SPOSite -Identity <URL> -SensitivityLabel "<labelguid>"`
 
 ## <a name="view-and-manage-sensitivity-labels-in-the-sharepoint-admin-center"></a>Vertraulichkeitsbezeichnungen im SharePoint Admin Center aufrufen und verwalten
 

@@ -16,15 +16,15 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Erfahren Sie mehr über grundlegende Schritte zur Problembehandlung, die Sie zum Beheben gängiger Probleme in Office 365 eDiscovery ausführen können.
+description: Erfahren Sie mehr über grundlegende Schritte zur Problembehandlung, die Sie zum Beheben gängiger Probleme in eDiscovery Office 365 können.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a867ed2e55c73fe4bbd890273d78cf57f4bfbd2c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3d3d0830ac677ea812a0d09793de8214245d6b2a
+ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926545"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52060990"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Untersuchen, Beheben und Beheben gängiger eDiscovery-Probleme
 
@@ -32,13 +32,13 @@ In diesem Thema werden grundlegende Schritte zur Problembehandlung behandelt, mi
 
 ## <a name="errorissue-ambiguous-location"></a>Fehler/Problem: Mehrdeutiger Speicherort
 
-Wenn Sie versuchen, den Postfachspeicherort des Benutzers zur Suche hinzuzufügen, und im Exchange Online Protection (EOP)-Verzeichnis doppelte objekte vorhanden sind oder sich Konflikte mit derselben userID befinden, wird der fehler angezeigt: `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` .
+Wenn Sie versuchen, den Postfachspeicherort des Benutzers zur Suche hinzuzufügen, und im Verzeichnis Exchange Online Protection (EOP) doppelte oder in Konflikt konfliktende Objekte mit derselben userID vorhanden sind, wird der fehler angezeigt: `The compliance search contains the following invalid location(s):useralias@contoso.com. The location "useralias@contoso.com" is ambiguous` .
 
 ### <a name="resolution"></a>Lösung
 
 Suchen Sie nach doppelten Benutzern oder Verteilerlisten mit derselben Benutzer-ID.
 
-1. Verbinden mit [Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
+1. Verbinden [security & Compliance Center PowerShell .](/powershell/exchange/connect-to-scc-powershell)
 
 2. Führen Sie den folgenden Befehl aus, um alle Instanzen des Benutzernamens abzurufen:
 
@@ -66,7 +66,7 @@ Eine eDiscovery- oder Inhaltssuche kann den folgenden Fehler ergeben: `This sear
 
 Wenn dieser Fehler angezeigt wird, wird empfohlen, dass Sie die Speicherorte überprüfen, die bei der Suche fehlgeschlagen sind, und dann die Suche nur an den fehlgeschlagenen Speicherorten erneut ausführen.
 
-1. Stellen Sie [eine Verbindung & Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) ein, und führen Sie dann den folgenden Befehl aus:
+1. Verbinden [Security & Compliance Center PowerShell,](/powershell/exchange/connect-to-scc-powershell) und führen Sie dann den folgenden Befehl aus:
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -82,11 +82,11 @@ Wenn dieser Fehler angezeigt wird, wird empfohlen, dass Sie die Speicherorte üb
 
 Wenn Sie eine eDiscovery-Suche ausführen, die SharePoint Online- und One Drive For Business-Speicherorte enthält, wird möglicherweise der Fehler angezeigt, obwohl sich die Datei auf der `File Not Found` Website befindet. Dieser Fehler ist in den Exportwarnungen und errors.csv oder übersprungen items.csv. Dies kann auftreten, wenn die Datei nicht auf der Website gefunden werden kann oder der Index veraltet ist. Hier ist der Text eines tatsächlichen Fehlers (mit hinzugefügter Betonung).
 
-> 28.06.2019 10:02:19_FailedToExportItem_Failed Inhalte herunterladen. Zusätzliche Diagnoseinformationen: Microsoft.Office.Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Fehler beim Herunterladen von Inhalten 6ea52149-91cd-4965-b5bb-82ca6a3ec9be vom Typ Document. Korrelations-ID: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft.SharePoint.Client.ServerException: ***Datei nicht gefunden***. at Microsoft.SharePoint.Client.ClientRequest.ProcessResponseStream(Stream responseStream) at Microsoft.SharePoint.Client.ClientRequest.ProcessResponse() --- End of inner exception stack trace ---
+> 28.06.2019 10:02:19_FailedToExportItem_Failed Inhalte herunterladen. Zusätzliche Diagnoseinformationen: Microsoft. Office. Compliance.EDiscovery.ExportWorker.Exceptions.ContentDownloadTemporaryFailure: Fehler beim Herunterladen von Inhalten 6ea52149-91cd-4965-b5bb-82ca6a3ec9be vom Typ Document. Korrelations-ID: 3bd84722-937b-4c23-b61b-08d6fba9ec32. ServerErrorCode: -2147024894 ---> Microsoft. SharePoint. Client.ServerException: ***Datei nicht gefunden***. bei Microsoft. SharePoint. Client.ClientRequest.ProcessResponseStream(Stream responseStream) bei Microsoft. SharePoint. Client.ClientRequest.ProcessResponse() --- Ende der inneren ---
 
 ### <a name="resolution"></a>Lösung
 
-1. Überprüfen Sie den in der Suche identifizierten Speicherort, um sicherzustellen, dass der Speicherort der Datei korrekt ist und an den Suchspeicherorten hinzugefügt wird.
+1. Überprüfen Sie den in der Suche identifizierten Speicherort, um sicherzustellen, dass der Speicherort der Datei korrekt ist und in den Suchspeicherorten hinzugefügt wird.
 
 2. Verwenden Sie die Verfahren unter [Manuelles Anfordern](/sharepoint/crawl-site-content) der Durchforstung und erneuten Indizierung einer Website, Bibliothek oder Liste, um die Website neu zu indizieren.
 
@@ -98,7 +98,7 @@ Bei einer eDiscovery-Suche tritt ein Fehler auf, der `recipient not found` . Die
 
 1. Stellen Sie eine Verbindung mit [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) her.
 
-2. Führen Sie den folgenden Befehl aus, um zu überprüfen, ob der Benutzer mit Exchange Online Protection synchronisiert ist:
+2. Führen Sie den folgenden Befehl aus, um zu überprüfen, ob der Benutzer mit Exchange Online Protection:
 
    ```powershell
    Get-Recipient <userId> | FL
@@ -112,7 +112,7 @@ Beim Exportieren von Suchergebnissen aus eDiscovery oder Inhaltssuche im Securit
 
 ### <a name="resolution"></a>Lösung
 
-1. Stellen Sie [eine Verbindung & Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) ein, und führen Sie dann den folgenden Befehl aus:
+1. Verbinden [Security & Compliance Center PowerShell,](/powershell/exchange/connect-to-scc-powershell) und führen Sie dann den folgenden Befehl aus:
 
    ```powershell
    Get-ComplianceSearch <searchname> | FL
@@ -142,7 +142,7 @@ Wenn beim Ausführen einer eDiscovery-Suche der Fehler "Interner Serverfehler (5
 
 1. Unterbrechen Sie die Suche in kleinere Suchen, und führen Sie die Suche erneut aus.  Versuchen Sie, einen kleineren Datumsbereich zu verwenden oder die Anzahl der durchsuchten Speicherorte zu begrenzen.
 
-2. Stellen Sie [eine Verbindung & Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) ein, und führen Sie dann den folgenden Befehl aus:
+2. Verbinden [Security & Compliance Center PowerShell,](/powershell/exchange/connect-to-scc-powershell) und führen Sie dann den folgenden Befehl aus:
 
    ```powershell Set-CaseHoldPolicy <policyname> -RetryDistribution
    Get-ComplianceSearch <searchname> | FL
@@ -162,7 +162,7 @@ eDiscovery Case Hold Policy Sync Distribution Fehler. Der Fehler lautet:
 
 ### <a name="resolution"></a>Lösung
 
-1. Stellen Sie [eine Verbindung & Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell) ein, und führen Sie dann den folgenden Befehl für eine eDiscovery-Fallsicherung aus:
+1. Verbinden [security & Compliance Center PowerShell,](/powershell/exchange/connect-to-scc-powershell) und führen Sie dann den folgenden Befehl für eine eDiscovery-Fallaufbehebung aus:
 
    ```powershell
    Get-CaseHoldPolicy <policyname> - DistributionDetail | FL
@@ -196,7 +196,7 @@ eDiscovery Case Hold Policy Sync Distribution Fehler. Der Fehler lautet:
 
 ## <a name="error-the-condition-specified-using-http-conditional-headers-is-not-met"></a>Fehler: "Die bedingungsbedingte HTTP-Kopfzeile ist nicht erfüllt"
 
-Beim Herunterladen von Suchergebnissen mithilfe des eDiscovery-Exporttools wird möglicherweise der folgende Fehler angezeigt: Dies ist ein vorübergehender Fehler, der in der Regel am `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` Azure Storage-Speicherort auftritt.
+Beim Herunterladen von Suchergebnissen mithilfe des eDiscovery-Exporttools wird möglicherweise der folgende Fehler angezeigt: Dies ist ein vorübergehender Fehler, der in der Regel am Speicherort Azure Storage `System.Net.WebException: The remote server returned an error: (412) The condition specified using HTTP conditional header(s) is not met.` wird.
 
 ### <a name="resolution"></a>Lösung
 
@@ -212,12 +212,14 @@ Dies ist ein clientseitiges Problem, und um es zu beheben, gehen Sie wie folgt v
 
 1. Versuchen Sie, einen anderen Client/Computer zum Herunterladen zu verwenden.
 
-2. Stellen Sie sicher, dass Sie auf ein lokales Laufwerk herunterladen.
+2. Entfernen Sie alte Suchen, die nicht mehr benötigt werden, mithilfe des Cmdlets [Remove-ComplianceSearch][/powershell/module/exchange/remove-compliancesearch].
 
-3. Stellen Sie sicher, dass der Virenscanner nicht ausgeführt wird.
+3. Stellen Sie sicher, dass Sie auf ein lokales Laufwerk herunterladen.
 
-4. Stellen Sie sicher, dass kein anderer Export in denselben Ordner oder übergeordneten Ordner heruntergeladen wird.
+4. Stellen Sie sicher, dass der Virenscanner nicht ausgeführt wird.
 
-5. Wenn die vorherigen Schritte nicht funktioniert haben, deaktivieren Sie das Zipping und die Deduplizierung.
+5. Stellen Sie sicher, dass kein anderer Export in denselben Ordner oder übergeordneten Ordner heruntergeladen wird.
 
-6. Wenn dies funktioniert, liegt das Problem an einem lokalen Virenscanner oder einem Datenträgerproblem.
+6. Wenn die vorherigen Schritte nicht funktioniert haben, deaktivieren Sie das Zipping und die Deduplizierung.
+
+7. Wenn dies funktioniert, liegt das Problem an einem lokalen Virenscanner oder einem Datenträgerproblem.

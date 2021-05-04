@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Vorbereitung und Bereitstellung der Microsoft Compliance Erweiterung.
-ms.openlocfilehash: c6f56c65de6428374d912545db38337d34720c94
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 6ae44a86d415161cd3d7adf40671f02d93fb83c6
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838348"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52113863"
 ---
 # <a name="get-started-with-microsoft-compliance-extension-preview"></a>Erste Schritte mit Microsoft Compliance Erweiterung (Vorschau)
 
@@ -35,7 +35,7 @@ Verwenden Sie diese Verfahren, um die Microsoft Compliance Erweiterung auszuroll
 Um Microsoft Compliance Erweiterung zu verwenden, muss das Gerät in Endpunkt-DLP eingebunden sein. Lesen Sie diese Artikel, wenn Sie neu im Bereich DLP oder Endpunkt-DLP sind
 
 - [Erfahren Sie mehr über die Microsoft Compliance Erweiterung](dlp-chrome-learn-about.md)
-- [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)
+- [Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)
 - [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 - [Erstellen einer DLP-Richtlinie aus einer Vorlage](create-a-dlp-policy-from-a-template.md)
 - [Informationen zur Verhinderung von Datenverlust am Endpunkt](endpoint-dlp-learn-about.md)
@@ -76,7 +76,7 @@ Endpunkt-DLP-Daten können im [Aktivitäten-Explorer](data-classification-activi
 
 ### <a name="overall-installation-workflow"></a>Gesamter Installationsablauf
 
-Die Bereitstellung von Microsoft Compliance Erweiterung ist ein mehrstufiger Prozess. Sie können wählen, ob Sie die Installation auf einem einzelnen Computer durchführen möchten, oder ob Sie den Microsoft Endpoint Manager oder die Gruppenrichtlinie für eine unternehmensweite Bereitstellung verwenden möchten.
+Die Bereitstellung der Microsoft Compliance-Erweiterung ist ein mehrstufiger Prozess. Sie können sich für die Installation auf einem Computer entscheiden oder Microsoft Endpoint Manager oder Gruppenrichtlinien für organisationsweite Bereitstellungen verwenden.
 
 1. [Bereiten Sie Ihre Geräte vor](#prepare-your-devices).
 2. [Grundlegende Einrichtung Einzel Computer Selfhost](#basic-setup-single-machine-selfhost)
@@ -274,7 +274,7 @@ Jetzt, da Geräte eingebunden sind und entsprechende Aktivitätsdaten im Aktivit
 
 - [Informationen zur Verhinderung von Datenverlust am Endpunkt](endpoint-dlp-learn-about.md)
 - [Verwenden der Verhinderung von Datenverlust am Endpunkt](endpoint-dlp-using.md)
-- [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)
+- [Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)
 - [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 - [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/)

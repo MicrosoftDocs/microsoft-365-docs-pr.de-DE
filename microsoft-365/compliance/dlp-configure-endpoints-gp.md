@@ -13,43 +13,43 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Verwenden Sie Gruppenrichtlinien, um das Konfigurationspaket auf Windows 10-Geräten so zu bereitstellen, dass sie in den Dienst onboardiert werden.
-ms.openlocfilehash: b786d011a46f69e7bcac846e726e2aeb3031ae08
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Verwenden Sie Gruppenrichtlinien, um das Konfigurationspaket auf Windows 10 bereitstellen, sodass sie in den Dienst onboardiert werden.
+ms.openlocfilehash: 284de5169324b6da4038cfe0b50b2f2ffa40e3fd
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918021"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893286"
 ---
-# <a name="onboard-windows-10-devices-using-group-policy"></a>Onboarding von Windows 10-Geräten mithilfe von Gruppenrichtlinien 
+# <a name="onboard-windows-10-devices-using-group-policy"></a>Onboarding Windows 10 Geräte mithilfe von Gruppenrichtlinien 
 
 **Gilt für:**
 
-- [Microsoft 365 Endpoint Data Loss Prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Microsoft 365 Verhinderung von Endpunktdatenverlusten (Endpoint Data Loss Prevention, DLP)](./endpoint-dlp-learn-about.md)
 - Gruppenrichtlinien
 
 > [!NOTE]
-> Um Gruppenrichtlinienupdates (GP)-Updates zum Bereitstellen des Pakets zu verwenden, müssen Sie sich auf Windows Server 2008 R2 oder höher.
+> Zum Verwenden von Gruppenrichtlinienupdates zum Bereitstellen des Pakets müssen Sie sich auf Windows Server 2008 R2 oder höher befinden.
 
-> Für Windows Server 2019 müssen Sie möglicherweise NT AUTHORITY\Well-Known-System-Account durch NT AUTHORITY\SYSTEM der XML-Datei ersetzen, die von der Gruppenrichtlinieneinstellung erstellt wird.
+> Für Windows Server 2019 müssen Sie möglicherweise NT AUTHORITY\Well-Known-System-Account durch NT AUTHORITY\SYSTEM der VON der Gruppenrichtlinieneinstellung erstellten XML-Datei ersetzen.
 
 ## <a name="onboard-devices-using-group-policy"></a>Onboarding von Geräten mithilfe von Gruppenrichtlinien
 
-1. Öffnen Sie die ZIP-Datei des *GP-Konfigurationspakets*(DeviceComplianceOnboardingPackage.zip), die Sie aus dem Assistenten zum Onboarding des Diensts heruntergeladen haben. Sie können das Paket auch über das [Microsoft Compliance Center erhalten.](https://compliance.microsoft.com/compliancesettings/deviceonboarding)
+1. Öffnen Sie die Gp.zip datei (*DeviceComplianceOnboardingPackage.zip*), die Sie aus dem Assistenten zum Onboarding des Diensts heruntergeladen haben. Sie können das Paket auch über das [Microsoft Compliance Center erhalten.](https://compliance.microsoft.com/compliancesettings/deviceonboarding)
 
-2. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Geräte onboarding aus.**
+2. Wählen Sie im Navigationsbereich die **option Einstellungen**  >  **Device Onboarding aus.**
 
 3. Wählen Sie **im Feld Bereitstellungsmethode** die Option **Gruppenrichtlinie aus.**
 
-4. Klicken **Sie auf Paket herunterladen,** und speichern Sie die ZIP-Datei.
+4. Klicken **Sie auf Paket** herunterladen, und speichern .zip Datei.
 
-5. Extrahieren Sie den Inhalt der ZIP-Datei an einen freigegebenen schreibgeschützten Speicherort, auf den das Gerät zugreifen kann. Sie sollten über einen Ordner *namens OptionalParamsPolicy* und die Datei *DeviceComplianceLocalOnboardingScript.cmd verfügen.*
+5. Extrahieren Sie den Inhalt der .zip an einen freigegebenen, schreibgeschützten Speicherort, auf den das Gerät zugreifen kann. Sie sollten über einen Ordner *namens OptionalParamsPolicy* und die Datei *DeviceComplianceLocalOnboardingScript.cmd verfügen.*
 
 6. Öffnen Sie die Gruppenrichtlinienverwaltungskonsole (Group [Policy Management Console,](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) GPMC), klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt(GPO), das Sie konfigurieren möchten, und klicken Sie auf **Bearbeiten**.
 
 7. Wechseln Sie **im Gruppenrichtlinienverwaltungs-Editor** zu **Computerkonfiguration,** dann Einstellungen und dann **Systemsteuerungseinstellungen**. 
 
-8. Klicken Sie mit der rechten Maustaste auf Geplante **Vorgänge,** zeigen Sie auf **Neu,** und klicken Sie dann auf **Sofortaufgabe (Mindestens Windows 7).**
+8. Klicken Sie mit der rechten Maustaste auf Geplante **Vorgänge,** zeigen Sie auf **Neu,** und klicken Sie dann auf **Sofortaufgabe (mindestens Windows 7).**
 
 9. Wechseln Sie **im** geöffneten Aufgabenfenster zur Registerkarte **Allgemein.** Klicken **Sie unter Sicherheitsoptionen** **auf Benutzer oder Gruppe ändern,** und geben Sie SYSTEM ein, und klicken Sie dann **auf Namen überprüfen** und dann **OK**. NT AUTHORITY\SYSTEM wird als Benutzerkonto angezeigt, unter dem die Aufgabe ausgeführt wird.
 
@@ -68,13 +68,13 @@ Aus Sicherheitsgründen läuft das für Offboard-Geräte verwendete Paket 30 Tag
 
 1. Holen Sie sich das offboarding-Paket aus [dem Microsoft Compliance Center](https://compliance.microsoft.com/compliancesettings/deviceonboarding).
 
-2. Wählen Sie im Navigationsbereich **Einstellungen**  >  **/Device onboarding**  >  **Offboarding aus.**
+2. Wählen Sie im Navigationsbereich **die option Einstellungen**  >  **/Device onboarding**  >  **Offboarding aus.**
 
 3. Wählen Sie **im Feld Bereitstellungsmethode** die Option **Gruppenrichtlinie aus.**
 
-4. Klicken **Sie auf Paket herunterladen,** und speichern Sie die ZIP-Datei.
+4. Klicken **Sie auf Paket** herunterladen, und speichern .zip Datei.
 
-5. Extrahieren Sie den Inhalt der ZIP-Datei an einen freigegebenen schreibgeschützten Speicherort, auf den das Gerät zugreifen kann. Sie sollten über eine Datei namens *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd verfügen.*
+5. Extrahieren Sie den Inhalt der .zip an einen freigegebenen, schreibgeschützten Speicherort, auf den das Gerät zugreifen kann. Sie sollten über eine Datei namens *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd verfügen.*
 
 6. Öffnen Sie die Gruppenrichtlinienverwaltungskonsole (Group [Policy Management Console,](/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) GPMC), klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt(GPO), das Sie konfigurieren möchten, und klicken Sie auf **Bearbeiten**.
 
@@ -107,9 +107,9 @@ Mit Gruppenrichtlinien gibt es keine Option zum Überwachen der Bereitstellung v
 
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Onboarding von Windows 10-Geräten mithilfe von Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
+- [Onboarding Windows 10 Geräte mithilfe Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [Onboarding von Windows 10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten](dlp-configure-endpoints-mdm.md)
 - [Onboarding von Windows 10-Geräten mithilfe eines lokalen Skripts](dlp-configure-endpoints-script.md)
 - [Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)](dlp-configure-endpoints-vdi.md)
-- [Ausführen eines Erkennungstests auf einem neu integrierten Microsoft Defender ATP-Gerät](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
-- [Behandeln von Problemen mit dem Microsoft Defender Advanced Threat Protection-Onboarding](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Ausführen eines Erkennungstests auf einem neu integrierten Microsoft Defender for Endpoint-Gerät](/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [Problembehandlung bei Microsoft Defender Advanced Threat Protection Onboardingproblemen](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
