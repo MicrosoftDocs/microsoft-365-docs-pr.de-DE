@@ -25,20 +25,20 @@ search.appverid:
 - MOE150
 ms.assetid: 5bc3f460-13cc-48c0-abd6-b80bae72d04a
 description: Erfahren Sie, wie Sie Ihre Kennwörter mithilfe des Self-Service-Kennwortzurücksetzungstools zurücksetzen können.
-ms.openlocfilehash: 0842430eda8c96647dd12d0da6d0c9e0481346dc
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: d24e826287f69f867fdaf9a5c8b424dbad4e0ebb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023761"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241832"
 ---
 # <a name="let-users-reset-their-own-passwords"></a>Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten
 
-Als Microsoft 365-Administrator können Sie es Personen gestatten, das [Self-Service-Kennwortzurücksetzungstool](https://go.microsoft.com/fwlink/p/?LinkId=522677) zu verwenden, damit Sie keine Kennwörter für sie zurücksetzen müssen. Geringerer Arbeitsaufwand!
+Als Microsoft 365 können Sie es Personen gestatten, das [Self-Service-Kennwortzurücksetzungstool](https://go.microsoft.com/fwlink/p/?LinkId=522677) zu verwenden, damit Sie keine Kennwörter für sie zurücksetzen müssen. Geringerer Arbeitsaufwand!
   
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorabinformationen
   
-- Sie erhalten die Self-Service-Kennwortzurücksetzung für Cloudbenutzer kostenlos mit einem beliebigen kostenpflichtigen Microsoft 365-Geschäfts-, Bildungs- oder gemeinnützigen Plan.  Es funktioniert nicht mit Microsoft 365-Testversion.
+- Sie erhalten die Self-Service-Kennwortzurücksetzung für Cloudbenutzer kostenlos mit Microsoft 365, Bildungseinrichtungen oder gemeinnützigen kostenpflichtigen Dienstleistungen.  Es funktioniert nicht mit Microsoft 365 Testversion.
 
 - Hierfür wird Azure verwendet. Sie erhalten dieses Feature in Azure automatisch **kostenlos**, wenn Sie diese Schritte ausführen. Die Aktivierung der Self-Service-Kennwortzurücksetzung kostet Sie nichts, falls Sie keine weiteren Azure-Features verwenden.
 
@@ -57,24 +57,8 @@ Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schu
 ## <a name="steps-let-people-reset-their-own-passwords"></a>Schritte: Personen können ihre eigenen Kennwörter zurücksetzen
 
 Mit diesen Schritten aktivieren Sie die Self-Service-Kennwortzurücksetzung für jeden Benutzer in Ihrem Unternehmen.
-  
-::: moniker range="o365-worldwide"
 
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">im Admin Center</a>zur **Einstellungsseite** > **"Organisationseinstellungen".**
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zur Seite **Einstellungen** \> **Sicherheit &amp; Datenschutz.**
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite **Einstellungen** \> **Einstellungen** \> **Sicherheit &amp; Datenschutz.**
-
-::: moniker-end
+1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">im Admin Center</a>zur Seite **Einstellungen**  >  **Organisationseinstellungen.**
 
 2. Wählen Sie oben auf der Seite **Organisationseinstellungen** die Registerkarte **Sicherheit & Datenschutz** aus.
   

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Aktivieren Sie eine Einstellung, die gemeinsame Erstellung und AutoSave in Desktop-Apps für beschriftete und verschlüsselte Dokumente in SharePoint und OneDrive aktiviert.
-ms.openlocfilehash: 34c674dc5fb9be9cb5572ce1f14e11a0f8ab14ae
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: a35e9fe818d697667ecf002a232d84f90cf53a61
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034224"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764364"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Aktivieren Sie die gemeinsame Erstellung für Dateien, die mit Vertraulichkeitsbezeichnungen verschlüsselt sind
 
@@ -60,7 +60,7 @@ Weitere Informationen zu dieser Metadatenänderung finden Sie in den folgenden R
 
 - Öffnen von Spezifikationen: [2.6.3 Bezeichnungsinfos im Vergleich zu benutzerdefinierten Dokumenteigenschaften](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
-Aufgrund dieser Änderungen aktivieren Sie diese Einstellung nicht, wenn Sie in Ihrer Organisation über Apps, Dienste, Skripts oder Tools verfügen, die Bezeichnungsmetadaten lesen oder in den alten Speicherort schreiben. Sollten Sie es tun, sind dies einige Beispielfolgen:
+Aufgrund dieser Änderungen sollten Sie diese Einstellung nicht aktivieren, wenn Sie in Ihrer Organisation über Apps, Dienste, Skripts oder Tools verfügen, die Bezeichnungsmetadaten lesen oder in den alten Speicherort schreiben. Wenn Sie dies tun, sind Folgendes Beispiele von Konsequenzen:
 
 - Ein bezeichnetes Dokument wird Benutzern als nicht bezeichnet angezeigt
 
@@ -140,7 +140,7 @@ Diese Vorschau-Version des gemeinsamen Erstellens für Dateien, die mit Vertraul
 ## <a name="how-to-enable-co-authoring-for-files-with-sensitivity-labels"></a>So aktivieren Sie die gemeinsame Erstellung für Dateien mit Vertraulichkeitsbezeichnungen
 
 > [!CAUTION]
-> Das Aktivieren dieser Einstellung ist eine unidirektionale Aktion. Während sich das Feature in der Vorschau befindet, testen Sie nur in einer Nicht-Produktionsumgebung, und erst, nachdem Sie die auf dieser Seite dokumentierten Metadatenänderungen, Voraussetzungen, Einschränkungen und bekannten Probleme gelesen und verstanden haben.
+> Die Aktivierung dieses Features kann nicht rückgängig gemacht werden. Während sich das Feature in der Vorschau befindet, testen Sie es nur in einer Nicht-Produktionsumgebung, und erst, nachdem Sie die auf dieser Seite dokumentierten Metadatenänderungen, Voraussetzungen, Einschränkungen und bekannten Probleme gelesen und verstanden haben.
 
 Während der Vorschau müssen Sie eine bestimmte URL verwenden, um auf diese Einstellung im Microsoft 365 Compliance Center zuzugreifen.
 
@@ -179,6 +179,6 @@ Wenn ein Supporttechniker diese Einstellung für Ihren Mandanten deaktiviert:
 
 - Das neue Metadatenformat und der neue Speicherort für Office-Dokumente, die bei aktivierter Einstellung verwendet wurden, werden nicht in das ursprüngliche Format und den ursprünglichen Speicherort kopiert. Infolgedessen gehen diese Bezeichnungsinformationen für unverschlüsselte Word-, Excel- und PowerPoint-Dateien verloren.
 
-- Die gemeinsame Erstellung und AutoSave funktionieren in Ihrem Mandanten nicht mehr.
+- Die gemeinsame Dokumenterstellung und das AutoSpeichern für beschriftete und verschlüsselte Dokumente in Ihrem Mandanten funktionieren nicht mehr.
 
 - Vertraulichkeitsbezeichnungen bleiben für Office-Dateien in OneDrive und SharePoint aktiviert.

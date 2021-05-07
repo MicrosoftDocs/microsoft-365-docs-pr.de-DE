@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 12a4e8873cb7212bfa7dde12bba9e98528cd859a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 01dd5feab17c68eed1da9d66c4310c50e90032c6
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919671"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114225"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Weitere Informationen zu Typen vertraulicher Informationen
 
@@ -35,9 +35,10 @@ Typen vertraulicher Informationen sind musterbasierte Klassifizierungen. Sie erk
 
 ## <a name="sensitive-information-types-are-used-in"></a>Typen vertraulicher Informationen werden in
 
-- [Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md) 
+- [Richtlinien zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md) 
 - [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
 - [Aufbewahrungsbezeichnungen](retention.md)
+- [Insider-Risikomanagement](insider-risk-management.md)
 - [Kommunikationscompliance](communication-compliance.md)
 - [Richtlinien für die automatische Kennzeichnung](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
@@ -143,7 +144,7 @@ Zum Erstellen von benutzerdefinierten Typen für vertrauliche Informationen im S
 
 
 > [!NOTE]
-> Verbesserte Vertrauensebenen stehen für die sofortige Verwendung in der Verhinderung von Datenverlust für Microsoft 365-Dienste, Microsoft Information Protection für Microsoft 365-Dienste, Kommunikationskonformität, Informations-Governance und Datensatzverwaltung zur Verfügung.
+> Verbesserte Vertrauensebenen stehen für die sofortige Verwendung in der Verhinderung von Datenverlust für Microsoft 365-Dienste, Microsoft Information Protection für Microsoft 365-Dienste, Kommunikationskonformität, Informationsverwaltung und Datensatzverwaltung zur Verfügung.
 
 > Microsoft 365 Information Protection unterstützt jetzt in der Vorschau Doppelbyte-Zeichensatz-Sprachen für:
 > - Chinesisch (vereinfacht)

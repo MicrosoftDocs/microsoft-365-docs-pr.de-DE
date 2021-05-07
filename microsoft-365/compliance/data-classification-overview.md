@@ -1,5 +1,5 @@
 ---
-title: Datenklassifizierung – Erste Schritte
+title: Informationen zur Datenklassifizierung
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -18,14 +18,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Anhand des Dashboards für die Datenklassifizierung können Sie sehen, wie viele vertrauliche Daten in Ihrer Organisation gefunden und klassifiziert wurden.
-ms.openlocfilehash: 8f3bb2da1e7011fef334ec345a02d7facedc25fc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2867e545221061f5f99bf7ff669f9655b3777ba8
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922679"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899385"
 ---
-# <a name="know-your-data---data-classification-overview"></a>Kennen Sie Ihre Daten – Überblick über die Datenklassifizierung
+# <a name="learn-about-data-classification"></a>Informationen zur Datenklassifizierung
 
 Als Microsoft 365-Administrator oder Compliance-Administrator können Sie Inhalte in Ihrer Organisation auswerten und diese dann markieren, um zu steuern, wohin diese sich bewegen, sie zu schützen, unabhängig davon, an welchem Ort sie sich befinden, und sicherstellen, dass sie gemäß den Anforderungen Ihrer Organisation beibehalten oder gelöscht werden. Dies erfolgt über die Anwendung von [Vertraulichkeitsbezeichnungen](sensitivity-labels.md), [Aufbewahrungsbezeichnungen](retention.md#retention-labels) und der Klassifizierung von Typen vertraulicher Informationen. Es gibt verschiedene Möglichkeiten für die Ermittlung, die Auswertung und die Kennzeichnung, das Endergebnis ist aber immer, dass Sie möglicherweise eine sehr große Anzahl von Dokumenten und E-Mails haben, die mit einer oder beiden Bezeichnungen gekennzeichnet und klassifiziert werden. Nachdem Sie Ihre Aufbewahrungsbezeichnungen und Vertraulichkeitsbezeichnungen angewendet haben, können Sie überprüfen, wie die Bezeichnungen mandantenübergreifend verwendet und wofür diese Elemente eingesetzt werden. Auf der Datenklassifizierungsseite erhalten Sie einen Einblick darin. Insbesondere wird Folgendes erläutert:
 
@@ -36,8 +36,12 @@ Als Microsoft 365-Administrator oder Compliance-Administrator können Sie Inhalt
 - Die Speicherorte Ihrer vertraulichen und aufbewahrten Daten.
 
 Diese Merkmale können Sie auch auf der Datenklassifizierungsseite verwalten:
+
 - [trainierbare Klassifizierungsmerkmale](classifier-learn-about.md)
-- [Typen vertraulicher Informationen](./sensitive-information-type-entity-definitions.md)
+- [Typen vertraulicher Informationen](sensitive-information-type-learn-about.md)
+- [genaue Datenübereinstimmungen](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
+- [Inhaltsexplorer](data-classification-content-explorer.md)
+- [Aktivitätenexplorer](data-classification-activity-explorer.md)
 
 Sie finden die Datenklassifizierung im **Microsoft 365 Compliance Center** oder unter **Microsoft 365 Security Center** > **Klassifizierung** > **Datenklassifizierung**.
 
@@ -96,7 +100,7 @@ Auf der Karte mit der Vertraulichkeitsbezeichnung wird die Anzahl von Elementen 
 ![Screenshot mit Platzhalter für die Aufteilung des Inhalts nach Vertraulichkeitsbezeichnung mit Klassifizierung](../media/data-classification-top-sensitivity-labels-applied.png)
 
 > [!NOTE]
-> Wenn Sie keine Vertraulichkeitsbezeichnungen erstellt oder veröffentlicht haben oder keine Vertraulichkeitsbezeichnung auf Inhalte angewendet wurde, wird auf dieser Karte die Meldung angezeigt, dass keine Vertraulichkeitsbezeichnungen gefunden wurden. Informationen zu den ersten Schritten mit Vertraulichkeitsbezeichnungen finden Sie unter:
+> Wenn Sie keine Vertraulichkeitsbezeichnungen erstellt oder veröffentlicht haben oder keine Vertraulichkeitsbezeichnung auf Inhalte angewendet wurde, wird auf dieser Karte die Meldung angezeigt, dass keine Vertraulichkeitsbezeichnungen gefunden wurden. Für erste Schritte mit Vertraulichkeitsbezeichnungen lesen Sie:
 >- [Erste Schritte mit Vertraulichkeitsbezeichnungen](get-started-with-sensitivity-labels.md) oder für AIP [Konfigurieren der Azure Information Protection-Richtlinie](/azure/information-protection/configure-policy)
 
 ## <a name="top-retention-labels-applied-to-content"></a>Die am häufigsten auf Inhalte angewendeten Aufbewahrungsbezeichnungen
@@ -113,10 +117,10 @@ Die Karte mit den am häufigsten angewendeten Aufbewahrungsbezeichnungen zeigt, 
 
 ## <a name="top-activities-detected"></a>Am häufigsten erkannte Aktivitäten
 
-Diese Karte bietet eine schnelle Übersicht über die am häufigsten verwendeten Aktionen, die Benutzer auf Elemente mit Vertraulichkeitsbezeichnungen anwenden. Sie können den [Aktivitäts-Explorer](data-classification-activity-explorer.md) verwenden, um acht verschiedene Aktivitäten anzuzeigen, die von Microsoft 365 im Zusammenhang mit beschrifteten Inhalten und Inhalten, die sich auf Windows 10-Endpunkten befinden, nachverfolgt werden.
+Diese Karte bietet eine schnelle Übersicht über die am häufigsten verwendeten Aktionen, die Benutzer auf Elemente mit Vertraulichkeitsbezeichnungen anwenden. Sie können den [Aktivitätenexplorer](data-classification-activity-explorer.md) verwenden, um die verschiedenen Aktivitäten anzuzeigen, die von Microsoft 365 im Zusammenhang mit beschrifteten Inhalten und Inhalten, die sich auf Windows 10-Endpunkten befinden, nachverfolgt werden.
 
 > [!NOTE]
-> Wenn auf dieser Karte die Meldung angezeigt wird, dass keine Aktivität erkannt wurde, bedeutet dies, dass keine Aktivität in den Dateien zu verzeichnen war oder dass die Überprüfung durch Benutzer und Administratoren nicht aktiviert ist. Weitere Informationen zur Aktivierung der Überwachungsprotokolle finden Sie unter:
+> Wenn auf dieser Karte die Meldung angezeigt wird, dass keine Aktivität erkannt wurde, bedeutet dies, dass keine Aktivität in den Dateien zu verzeichnen war oder dass die Überwachung durch Benutzer und Administratoren nicht aktiviert ist. So aktivieren Sie die Überwachungsprotokolle:
 >- [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md)
 
 ## <a name="sensitivity-and-retention-labeled-data-by-location"></a>Daten mit Vertraulichkeits- und Aufbewahrungsbezeichnung nach Ort
@@ -124,7 +128,7 @@ Diese Karte bietet eine schnelle Übersicht über die am häufigsten verwendeten
 Der Zweck der Berichterstellung über die Datenklassifizierung besteht darin, Transparenz für eine Vielzahl von Elementen bezüglich Bezeichnung und Ort zu schaffen. Auf diesen Karten erfahren Sie, wie viele beschriftete Elemente in Exchange, SharePoint und OneDrive usw. vorhanden sind.
 
 > [!NOTE]
-> Wenn auf dieser Karte die Meldung angezeigt wird, dass keine Standorte gefunden wurden, bedeutet dies, dass Sie keine Vertraulichkeitsbezeichnungen erstellt oder veröffentlicht haben oder keine Aufbewahrungsbezeichnung auf Inhalte angewendet wurde. Informationen zu den ersten Schritten mit Vertraulichkeitsbezeichnungen finden Sie unter:
+> Wenn auf dieser Karte die Meldung angezeigt wird, dass keine Speicherorte gefunden wurden, bedeutet dies, dass Sie keine Vertraulichkeitsbezeichnungen erstellt oder veröffentlicht haben, oder dass keine Aufbewahrungsbezeichnung auf Inhalte angewendet wurde. Für erste Schritte mit Vertraulichkeitsbezeichnungen lesen Sie:
 >- [Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
 
 ## <a name="see-also"></a>Siehe auch
@@ -133,5 +137,6 @@ Der Zweck der Berichterstellung über die Datenklassifizierung besteht darin, Tr
 - [Anzeigen von Inhalt mit Bezeichnungen](data-classification-content-explorer.md)
 - [Weitere Informationen zu Vertraulichkeitsbezeichnungen](sensitivity-labels.md)
 - [Weitere Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](retention.md)
+- [Informationen zu Typen vertraulicher Informationen](sensitive-information-type-learn-about.md)
 - [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
 - [Weitere Informationen zu trainierbaren Klassifizierern (Vorschau)](classifier-learn-about.md)

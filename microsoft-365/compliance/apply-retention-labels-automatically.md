@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie Aufbewahrungsbezeichnungen und Richtlinien für das automatische Anwenden von Bezeichnungen, damit Sie Bezeichnungen automatisch auf Inhalte anwenden können, die Sie beibehalten möchten, und nicht benötigte Inhalte löschen können.
-ms.openlocfilehash: 6b7e8f91706a9d12135069f0a6753c76eaff1fb4
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 12e909964422d0c15312c1794ce3d9aacc2a1da8
+ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920018"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52107637"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aufbewahrungsbezeichnungen automatisch anwenden, um Inhalte beizubehalten oder zu löschen
 
@@ -44,7 +44,7 @@ Das automatische Anwenden von Aufbewahrungsbezeichnungen ist aus den folgenden G
 Sie können Aufbewahrungsbezeichnungen automatisch auf Inhalte anwenden, wenn diese Inhalte vertrauliche Informationen, Schlüsselwörter oder durchsuchbare Eigenschaften aufweisen oder [trainierbaren Klassifizierungsmerkmalen](classifier-get-started-with.md) entsprechen.
 
 > [!TIP]
-> Verwenden Sie jetzt in der Vorschau durchsuchbare Eigenschaften, um [Aufnahmen von Teams-Besprechungen](#microsoft-teams-meeting-recordings) zu ermitteln.
+> Verwenden Sie die kürzlich veröffentlichten durchsuchbaren Eigenschaften, um [Aufnahmen von Teams-Besprechungen](#microsoft-teams-meeting-recordings) zu identifizieren.
 
 Folgende Prozesse können eine Aufbewahrungsbezeichnung entsprechend dieser Bedingungen automatisch anwenden:
 
@@ -134,9 +134,9 @@ Aufbewahrungsbezeichnungen können automatisch auf Inhalte angewendet werden, we
 
 Wenn Sie automatisch angewendete Richtlinien für Aufbewahrungsbezeichnungen für vertrauliche Informationen erstellen, wird dieselbe Liste von Richtlinienvorlagen wie beim Erstellen einer DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) angezeigt. Jede Vorlage ist für die Suche nach bestimmten Typen vertraulicher Informationen vorkonfiguriert. Die hier gezeigte Vorlage sucht beispielsweise nach US ITIN-, SSN- und Reisepassnummern aus der **Datenschutz**-Kategorie und der Vorlage **USA – Daten mit persönlich identifizierbaren Informationen (PII)**:
 
-![Richtlinienvorlagen für Arten von vertraulichen Informationen](../media/dafd87d4-c7bb-439a-ac7b-193c018f98a5.png)
+![Richtlinienvorlagen für Arten von vertraulichen Informationen](../media/sensitive-info-configuration.png)
 
-Weitere Informationen zu Typen vertraulicher Informationen finden Sie unter [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md).
+Weitere Informationen zu Typen vertraulicher Informationen finden Sie unter [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md). Derzeit werden [genaue Datenübereinstimmungen](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) und [Erstellen eines digitalen Dokumentfingerabdrucks](document-fingerprinting.md) für dieses Szenario nicht unterstützt.
 
 Nach der Auswahl einer Richtlinienvorlage können Sie beliebige Typen vertraulicher Informationen hinzufügen oder entfernen, und Sie können die Instanzenzahl und die Übereinstimmungsgenauigkeit ändern. Im folgenden Beispielscreenshot wird eine Aufbewahrungsbezeichnung nur dann automatisch angewendet, wenn Folgendes zutrifft:
   
@@ -228,7 +228,7 @@ Beachten Sie, dass dieses letzte Beispiel die bewährte Methode verwendet, zwisc
 ##### <a name="microsoft-teams-meeting-recordings"></a>Aufnahmen von Microsoft Teams-Besprechungen
 
 > [!NOTE]
-> Die Möglichkeit zum Aufbewahren und Löschen von Teams-Besprechungsaufzeichnungen befindet sich in der Vorschau und funktioniert erst, nachdem die Aufzeichnungen auf OneDrive oder Microsoft Office SharePoint Online gespeichert werden. Weitere Informationen finden Sie unter [Verwenden von OneDrive for Business und SharePoint Online oder Stream für Besprechungsaufzeichnungen](/MicrosoftTeams/tmr-meeting-recording-change).
+> Die Möglichkeit zum Aufbewahren und Löschen von Teams-Besprechungsaufzeichnungen funktioniert erst, nachdem die Aufzeichnungen auf OneDrive oder SharePoint gespeichert wurden. Weitere Informationen finden Sie unter [Verwenden von OneDrive for Business und SharePoint Online oder Stream für Besprechungsaufzeichnungen](/MicrosoftTeams/tmr-meeting-recording-change).
 
 Wenn Sie Aufnahmen von Microsoft Teams-Besprechungen ermitteln möchten, die in den OneDrive-Konten von Benutzern oder in SharePoint gespeichert sind, geben Sie im **Stichwortabfrage-Editor** Folgendes an:
 
@@ -236,7 +236,7 @@ Wenn Sie Aufnahmen von Microsoft Teams-Besprechungen ermitteln möchten, die in 
 ProgID:Media AND ProgID:Meeting
 ```
 
-Meistens werden die Besprechungsaufnahmen auf OneDrive gespeichert. Bei Kanalbesprechungen werden sie jedoch in SharePoint gespeichert.
+Meistens werden Besprechungsaufnahmen auf OneDrive gespeichert, aber für Kanalbesprechungen werden sie in SharePoint gespeichert.
 
 
 #### <a name="auto-apply-labels-to-content-by-using-trainable-classifiers"></a>Automatisches Anwenden von Bezeichnungen auf Inhalte mithilfe von trainierbare Klassifizierungen
@@ -285,7 +285,7 @@ Einige Einstellungen können nicht geändert werden, nachdem die Bezeichnung ode
 
 ### <a name="deleting-retention-labels"></a>Löschen von Aufbewahrungsbezeichnungen.
 
-Sie können Aufbewahrungsbezeichnungen löschen, die derzeit in keiner Richtlinie für Aufbewahrungsbezeichnungen enthalten sind, die nicht für die ereignisbasierte Aufbewahrung konfiguriert sind oder Elemente als regulatorische Datensätze kennzeichnen. Die Möglichkeit, Aufbewahrungsbezeichnungen zu löschen, die Elemente als Datensätze kennzeichnen, wird derzeit als Rollout in der Vorschau eingeführt.
+Sie können Aufbewahrungsbezeichnungen löschen, die derzeit in keiner Richtlinie für Aufbewahrungsbezeichnungen enthalten sind, die nicht für die ereignisbasierte Aufbewahrung konfiguriert sind oder Elemente als regulatorische Datensätze kennzeichnen.
 
 Das Löschen von löschbaren Aufbewahrungsbezeichnungen schlägt fehl, wenn diese auf Elemente angewendet wurden. Es wird ein Link zum Inhaltsexplorer angezeigt, um die mit Bezeichnungen versehenen Elemente zu identifizieren.
 

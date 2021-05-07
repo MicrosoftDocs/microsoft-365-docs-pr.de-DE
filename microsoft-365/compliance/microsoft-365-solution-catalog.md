@@ -11,12 +11,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 description: 'Erfahren Sie mehr über den Microsoft 365-Lösungskatalog: was er enthält, wie Sie ihn erhalten, die nächsten Schritte und mehr.'
 ms.collection: M365-security-compliance
-ms.openlocfilehash: ea184b406c721601c76829c02496b2d9201eb1d1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 22110290f3d025a3e4c30b460a2381757fd481ca
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926343"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114423"
 ---
 # <a name="microsoft-365-solution-catalog"></a>Microsoft 365-Lösungskatalog
 
@@ -44,7 +44,7 @@ Im Abschnitt **Information Protection & Governance** sehen Sie auf einen Blick, 
 
 Hier sehen Sie Karten für die folgenden Lösungen:
 
-- [Verhinderung von Datenverlust](data-loss-prevention-policies.md): Ermittelt vertrauliche Inhalte, die in der gesamten Organisation, in der Cloud und auf Geräten verwendet und freigegeben werden, und hilft bei der Vorbeugung von versehentlichem Datenverlust.
+- [Verhinderung von Datenverlust](dlp-learn-about-dlp.md): Ermittelt vertrauliche Inhalte, die in der gesamten Organisation, in der Cloud und auf Geräten verwendet und freigegeben werden, und hilft bei der Vorbeugung von versehentlichem Datenverlust.
 - [Information Governance](manage-information-governance.md): Verwaltet Ihren Inhaltslebenszyklus mithilfe von Lösungen zum Importieren, Speichern und Klassifizieren geschäftskritischer Daten, damit Sie die benötigten Daten behalten und nicht löschen können.
 - [Schutz von Daten](information-protection.md): Ermittelt, klassifiziert und schützt vertrauliche und unternehmensrelevante Inhalte organisationsweit über ihren gesamten Lebenszyklus hinweg.
 - [Datensatzverwaltung](records-management.md): Nutzt eine intelligente Klassifizierung zum Automatisieren und Vereinfachen des Aufbewahrungszeitplans für gesetzlich vorgeschriebene, rechts- und unternehmensrelevante Datensätze in Ihrer Organisation.

@@ -1,7 +1,7 @@
 ---
 title: Auflisten verfügbarer Geräte einer Korrekturaktivität
 description: Gibt Informationen zu verfügbar gemachten Geräten für die angegebene Behebungsaufgabe zurück.
-keywords: apis, remediation, remediation api, get, remediation tasks,
+keywords: apis, remediation, remediation api, get, remediation tasks, remediation exposed devices
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 097d8d784ca7c02fce1fc0e9fc51bdc272951f4a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: 92b5a93e86a20f36469d2b5cb606a8ddc2e97077
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061145"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241712"
 ---
 # <a name="list-exposed-devices-of-one-remediation-activity"></a>Auflisten verfügbarer Geräte einer Korrekturaktivität
 
@@ -49,24 +49,33 @@ Gibt Informationen zu verfügbar gemachten Geräten für die angegebene Behebung
 
 **URL:** GET: /api/remediationTasks/ \{ id \} /machineReferences
 
-**Eigenschaftendetails**
+## <a name="permissions"></a>Berechtigungen
+
+Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Use Microsoft Defender for Endpoint APIs for Details.](apis-intro.md)
+
+Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
+:---|:---|:---
+Anwendung | RemediationTask.Read.All | \'Informationen zu Sicherheitslücken in Bedrohungs- und Sicherheitsrisikoverwaltung lesen\'
+Delegiert (Geschäfts-, Schul- oder Unikonto) | RemediationTask.Read.Read | \'Informationen zu Sicherheitslücken in Bedrohungs- und Sicherheitsrisikoverwaltung lesen\'
+
+## <a name="properties-details"></a>Eigenschaftendetails
 
 Property (id) | Datentyp | Beschreibung | Beispiel
 :---|:---|:---|:---
-id | String | Geräte-ID | w2957837fwda8w9ae7f023dba081059dw8d94503
-computerDnsName | String | Gerätename | PC-SRV2012R2Foo.UserNameVldNet.local
-osPlatform | String | Gerätebetriebssystem | WindowsServer2012R2
-rbacGroupName | String | Name der Gerätegruppe, der dieses Gerät zugeordnet ist | Server
+id | Zeichenfolge | Geräte-ID | w2957837fwda8w9ae7f023dba081059dw8d94503
+computerDnsName | Zeichenfolge | Gerätename | PC-SRV2012R2Foo.UserNameVldNet.local
+osPlatform | Zeichenfolge | Gerätebetriebssystem | WindowsServer2012R2
+rbacGroupName | Zeichenfolge | Name der Gerätegruppe, der dieses Gerät zugeordnet ist | Server
 
 ## <a name="example"></a>Beispiel
 
-**Anforderungsbeispiel**
+### <a name="request-example"></a>Anforderungsbeispiel
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 
-**Antwortbeispiel**
+### <a name="response-example"></a>Anforderungsbeispiel
 
 ```json
 {
@@ -108,10 +117,10 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 
 - [Korrekturmethoden und -eigenschaften](get-remediation-methods-properties.md)
 
-- [Get one remediation activity by Id](get-remediation-one-activity.md)
+- [Erhalten einer Korrekturaktivität nach ID](get-remediation-one-activity.md)
 
 - [Auflisten aller Korrekturaktivitäten](get-remediation-all-activities.md)
 
-- [Risikobasiertes Bedrohungsmanagement & Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md)
+- [Risikobasierte Bedrohungsrisiken & Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 
 - [Sicherheitsrisiken in Ihrer Organisation](tvm-weaknesses.md)

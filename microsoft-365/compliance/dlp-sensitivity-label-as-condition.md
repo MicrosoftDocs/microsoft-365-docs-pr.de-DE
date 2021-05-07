@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Vertraulichkeitsbezeichnungen als Bedingungen in DLP-Richtlinien (Vorschau)
+title: Verwenden von Vertraulichkeitsbezeichnungen als Bedingungen in DLP-Richtlinien
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -20,14 +20,14 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über die Dienste und Elementtypen, die Sie mit Vertraulichkeitsbezeichnungen als Bedingungen in DLP-Richtlinien verwenden können.
-ms.openlocfilehash: 2f8eb30e23d722a5e8faf7d0ddaca6b9a94e279b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 19bd80de225f703b5c280163e94826498fa097bd
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649634"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876294"
 ---
-# <a name="use-sensitivity-labels-as-conditions-in-dlp-policies-preview"></a>Verwenden von Vertraulichkeitsbezeichnungen als Bedingungen in DLP-Richtlinien (Vorschau)
+# <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Verwenden von Vertraulichkeitsbezeichnungen als Bedingungen in DLP-Richtlinien
 
 Sie können [Vertraulichkeitsbezeichnungen](sensitivity-labels.md) als Bedingung in DLP-Richtlinien für folgende Speicherorte verwenden:
 
@@ -42,7 +42,7 @@ Vertraulichkeitsbezeichnungen werden als Option in der Liste **Inhalt enthält**
 > ![Vertraulichkeitsbezeichnungen als Bedingung](../media/dlp-sensitivity-label-as-a-condition.png)
 
 > [!IMPORTANT]
-> **Vertraulichkeitsbezeichnungen** als Bedingung werden nicht verfügbar sein, wenn Sie **Teams-Chat und Kanalnachrichten**als Ort für die Anwendung der DLP-Richtlinie ausgewählt haben.
+> **Vertraulichkeitsbezeichnungen** als Bedingung werden nicht verfügbar sein, wenn Sie **Teams-Chat und Kanalnachrichten** als Ort für die Anwendung der DLP-Richtlinie ausgewählt haben.
 
 
 ## <a name="supported-items-scenarios-and-policy-tips"></a>Unterstützte Elemente, Szenarien und Richtlinientipps
@@ -54,15 +54,15 @@ Sie können Vertraulichkeitsbezeichnungen als Bedingungen für diese Elemente un
 |Dienst  |Elementtyp  |Verfügbar für Richtlinientipps  |Durchsetzbar  |
 |---------|---------|---------|---------|
 |Exchange    |E-Mail-Nachricht         |ja         |ja         |
-|Exchange    |E-Mail-Anlage         |nein *         |nein *         |
+|Exchange    |E-Mail-Anlage         |nein *         |ja *         |
 |Microsoft Office SharePoint Online     |Elemente in Microsoft Office SharePoint Online         |ja         |ja         |
 |OneDrive for Business     |Elemente         |ja         |ja         |
 |Teams     |Microsoft Teams- und Kanalnachrichten         |nicht zutreffend         |nicht zutreffend         |
 |Teams     |Anlagen         |ja **         |ja **         |
-|Windows 10-Geräte (Vorschau)     |Elemente         |ja         |ja         |
+|Windows 10-Geräte     |Elemente         |ja         |ja         |
 |MCAS (Vorschau) |Elemente         |ja         |ja         |
 
-\* DLP-Erkennung von Vertraulichkeitsbezeichnungen in E-Mails wird unterstützt. DLP-Erkennung von Vertraulichkeitsbezeichnungen in E-Mails wird nicht unterstützt.
+\* Die DLP-Erkennung und das Erzwingen von Vertraulichkeitsbezeichnungen auf E-Mails und Anlagen während der Übertragung werden unterstützt. DLP-Richtlinientipps für Vertraulichkeitsbezeichnungen in E-Mails werden nicht unterstützt.
 
 \** Anlagen, die in Teams über einen 1:1-Chat oder über Kanäle gesendet werden, werden automatisch auf OneDrive for Business und Microsoft Office SharePoint Online hochgeladen. Wenn also Microsoft Office SharePoint Online oder OneDrive for Business als Speicherorte in ihrer DLP-Richtlinie enthalten sind, werden bezeichnete Anlagen, die in Teams gesendet wurden, automatisch in den Umfang dieser Bedingung einbezogen. Teams muss in der DLP-Richtlinie nicht als Speicherort ausgewählt werden.
 

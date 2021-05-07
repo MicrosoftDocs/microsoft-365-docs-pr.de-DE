@@ -27,16 +27,16 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Erfahren Sie, wie Sie das Kennwort für einen Benutzer in Microsoft 365 Business-Abonnement zurücksetzen.
-ms.openlocfilehash: 24fc6581837f71659a2ecc0359c6967e3969d868
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: fa368c7f44d4df847cf007568853c11970e7adc1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023977"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241700"
 ---
 # <a name="reset-passwords"></a>Kennwörter zurücksetzen
 
-In diesem Artikel wird erläutert, wie Sie Kennwörter für sich selbst und für Ihre Benutzer zurücksetzen, wenn Sie über ein Microsoft 365 Business-Abonnement verfügen.
+In diesem Artikel wird erläutert, wie Sie Kennwörter für sich selbst und für Ihre Benutzer zurücksetzen, wenn Sie über Microsoft 365 Business-Abonnement verfügen.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
@@ -54,23 +54,7 @@ Wenn Sie dieses Video hilfreich fanden, schauen Sie sich bitte die [komplette Sc
   
 ## <a name="steps-reset-a-business-password-for-a-user"></a>Schritte: Zurücksetzen eines Geschäftskennworts für einen Benutzer
 
-::: moniker range="o365-worldwide"
-
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
-
-::: moniker-end
 
 2. Wählen Sie auf der Seite **Aktive Benutzer** den gewünschten Benutzer aus, und klicken Sie dann auf **Kennwort zurücksetzen**.
 
@@ -84,7 +68,7 @@ Es wird dringend empfohlen, dass Sie die Self-Service-Kennwortzurücksetzung ein
 
 ## <a name="reset-my-admin-password"></a>Zurücksetzen meines Administratorkennworts
 
-Verwenden Sie die folgenden Schritte, wenn Sie Ihr Kennwort vergessen haben, sich aber bei Microsoft 365 anmelden können, da Ihr Kennwort beispielsweise in Ihrem Browser gespeichert wird:
+Verwenden Sie die folgenden Schritte, wenn Sie Ihr Kennwort vergessen haben, sich aber bei Microsoft 365 anmelden können, da Ihr Kennwort z. B. in Ihrem Browser gespeichert wird:
 
 1. Wählen Sie Ihren Namen (Symbol) in der oberen rechten Ecke > **Persönliche Informationen zu Meinem Konto**  >  **aus.**
 
@@ -126,7 +110,7 @@ Verwenden Sie PowerShell! Lesen Sie diesen Beitrag von Eyal Doron: [Verwalten vo
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-Übersichtsinformationen finden Sie [unter Manage Microsoft 365 with PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
+Übersichtsinformationen finden Sie unter [Manage Microsoft 365 with PowerShell](../../enterprise/manage-microsoft-365-with-microsoft-365-powershell.md).
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Erzwingen einer Kennwortänderung für alle Benutzer in Ihrem Unternehmen
 

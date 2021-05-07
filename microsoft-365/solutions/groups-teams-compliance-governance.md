@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Erfahren Sie mehr über Complianceoptionen Microsoft 365 Gruppen, Teams und SharePoint Zusammenarbeit.
-ms.openlocfilehash: 92b668c5cbf5d105ccd1373a6ef8550400e4539f
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: a9a94f0c1886ac5b60292f5f4d4b9b9d6d84380c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114028"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52241676"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Complianceoptionen für Microsoft 365, Teams und SharePoint Zusammenarbeit
 
@@ -43,6 +43,8 @@ In der folgenden Tabelle finden Sie eine Kurzübersicht zu den compliance-Steuer
 ||Definieren der vertraulichen Informationen Ihrer Organisation|[Benutzerdefinierte vertrauliche Informationstypen](../compliance/sensitive-information-type-learn-about.md)|
 |Benutzersegmentierung|||
 ||Einschränken der Kommunikation zwischen Benutzersegmenten|[Informationsbarrieren](../compliance/information-barriers.md)|
+|Datenaufbewahrung|||
+||Store daten an bestimmten geografischen Standorten|[Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)|
 
 ## <a name="information-retention"></a>Aufbewahrung von Informationen
 
@@ -112,6 +114,14 @@ Mit Informationsbarrieren können Sie Ihre Daten und Benutzer segmentieren, um u
 - [Informationsbarrieren in Microsoft Teams](/microsoftteams/information-barriers-in-teams)
 
 - [Verwenden von Informationsbarrieren mit SharePoint](/sharepoint/information-barriers)
+
+## <a name="data-residency"></a>Datenaufbewahrung
+
+Mit Microsoft 365 Multi-Geo können Sie Ruhedaten an den geografischen Standorten bereitstellen und speichern, die Sie ausgewählt haben, um die Anforderungen an die Datenresidenz zu erfüllen. In einer Multi-Geo-Umgebung besteht Ihr Microsoft 365-Mandant aus einem zentralen Standort (an dem Ihr Microsoft 365-Abonnement ursprünglich bereitgestellt wurde) und einem oder mehreren Satellitenstandorten, an denen Sie Daten speichern können.
+
+- [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)
+
+- [Plan für Microsoft 365 Multi-Geo](/microsoft-365/enterprise/plan-for-multi-geo)
 
 ## <a name="related-topics"></a>Verwandte Themen
 

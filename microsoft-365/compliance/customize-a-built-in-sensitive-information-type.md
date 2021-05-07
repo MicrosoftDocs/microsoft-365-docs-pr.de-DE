@@ -18,12 +18,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie einen benutzerdefinierten vertraulichen Informationstyp erstellen, der es Ihnen ermöglicht, Regeln zu verwenden, die den Anforderungen Ihrer Organisation entsprechen.
-ms.openlocfilehash: 79d79a220e0cd8de0755f6cdac99cf7cceb2997f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7b24313c54fdf49876c58d1809cbb29159f4508f
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922659"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114259"
 ---
 # <a name="customize-a-built-in-sensitive-information-type"></a>Anpassen eines benutzerdefinierten vertraulichen Informationstyps
 
@@ -232,7 +232,7 @@ Nachfolgend finden Sie Definitionen der Begriffe, die in diesem Verfahren vorkom
 |Funktionen|Die XML-Datei verweist auf `Func_credit_card`, eine Funktion im kompilierten Code. Funktionen dienen zur Ausführung komplexer regulärer Ausdrücke und prüfen, ob Prüfsummen mit den integrierten Regeln übereinstimmen. Da dies im Code geschieht, werden einige der Variablen nicht in der XML-Datei angezeigt.|
 |IdMatch|Dies ist die Kennung, die das Muster abgleichen möchte – beispielsweise eine Kreditkartennummer.|
 |Schlüsselwortliste|Die XML-Datei verweist außerdem auf `keyword_cc_verification` und `keyword_cc_name`. Dies sind Schlüsselwortlisten, anhand derer nach Übereinstimmungen mit dem Attribut `patternsProximity` für die Entität gesucht wird. Diese werden zurzeit nicht in der XML-Datei angezeigt.|
-|Muster|Das Muster enthält die Liste der Informationen, anhand derer der vertrauliche Informationstyp sucht. Hierzu zählen Schlüsselwörter, reguläre Ausdrücke und interne Funktionen, die Aufgaben ausführen, wie beispielsweise die Überprüfung von Prüfsummen. Vertrauliche Informationstypen können mehrere Muster mit eindeutigen Angaben zur Vertrauenswürdigkeit aufweisen. Dies ist nützlich, wenn ein vertraulicher Informationstyp erstellt wird, der eine hohe Vertrauenswürdigkeit zurückgibt, falls ein bestätigender Nachweis gefunden wurde, und der eine niedrige Vertrauenswürdigkeit zurückgibt, wenn nur ein geringer oder gar kein bestätigender Nachweis gefunden wurde.|
+|Muster|Das Muster enthält die Liste der Informationen, anhand derer der Typ vertraulicher Informationen sucht. Hierzu zählen Schlüsselwörter, reguläre Ausdrücke und interne Funktionen, welche Aufgaben ausführen wie beispielsweise die Überprüfung von Prüfsummen. Vertrauliche Informationstypen können mehrere Muster mit eindeutigen Angaben zur Vertrauenswürdigkeit aufweisen. Dies ist nützlich, wenn ein vertraulicher Informationstyp erstellt wird, der eine hohe Vertrauenswürdigkeit zurückgibt, falls ein bestätigender Nachweis gefunden wurde, und der eine niedrige Vertrauenswürdigkeit zurückgibt, wenn nur ein geringer oder gar kein bestätigender Nachweis gefunden wurde.|
 |Pattern confidenceLevel|Dies ist die Vertrauensstufe, für die das DLP-Modul eine Übereinstimmung gefunden hat. Diese Vertrauensstufe wird einer Übereinstimmung für das Muster zugeordnet, wenn die Anforderungen des Musters erfüllt sind. Es handelt sich hierbei um das Maß an Vertrauenswürdigkeit, das Sie bei Verwendung von Exchange-E-Mail-Flussregeln (auch als Transportregeln bezeichnet) erwägen sollten.|
 |patternsProximity|Wird etwas gefunden, das wie ein Kreditkartennummer-Muster aussieht, handelt es sich bei dem Attribut `patternsProximity` um die Umgebung der Nummer, in der nach einem bestätigenden Nachweis gesucht wird.|
 |recommendedConfidence|Dies ist die Vertrauensstufe, die für diese Regel empfohlen wird. Die empfohlene Vertrauensstufe gilt für Entitäten und Affinitäten. Für Entitäten wird diese Zahl niemals anhand des Attributs `confidenceLevel` für das Muster ausgewertet. Es ist lediglich eine Empfehlung, die Ihnen bei der Auswahl einer Vertrauensstufe helfen soll, falls Sie eine solche zuweisen möchten. Für Affinitäten muss das Attribut `confidenceLevel` des Musters höher sein als die Zahl des Attributs `recommendedConfidence` für eine aufzurufende E-Mail-Flussregel-Aktion. Das Attribut `recommendedConfidence` ist die in E-Mail-Flussregeln verwendete Standardvertrauensstufe, die eine Aktion aufruft. Bei Bedarf können Sie stattdessen die aufzurufende E-Mail-Flussregel manuell basierend auf der Vertrauensstufe des Musters ändern.|
@@ -240,7 +240,5 @@ Nachfolgend finden Sie Definitionen der Begriffe, die in diesem Verfahren vorkom
 ## <a name="for-more-information"></a>Weitere Informationen
 
 - [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
-    
 - [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md)
-    
-- [Übersicht über die Richtlinien zur Verhinderung von Datenverlust](data-loss-prevention-policies.md)
+- [Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)

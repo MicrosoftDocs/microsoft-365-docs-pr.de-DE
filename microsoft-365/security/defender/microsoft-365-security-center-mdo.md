@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: a0ab671f879119c1ab490bcb726f08224e59bfdd
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 62a917b36355335c8eb52d83caecdbba691f8175
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114412"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52242132"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender für Office 365 im Microsoft 365 Security Center
 
@@ -45,14 +45,20 @@ Wenn Sie nach Elementen im Zusammenhang mit der Compliance suchen, besuchen Sie 
 
 Diese Tabelle ist eine Kurzübersicht zu den Bereichen "E-Mail“ und „Zusammenarbeit", bei denen es im **Security & Compliance Center** und im **Microsoft 365 Security**-Portal zu Änderungen gekommen ist. Klicken Sie auf die Links, um weitere Informationen zu diesen Bereichen zu lesen.
 
-|**Bereich**  |**Beschreibung der Änderung**  |
-|---------|---------|
-| [Die Seite "E-Mail-Entität"](../office-365-security/mdo-email-entity-page.md) | Auf dieser Seite werden E-Mail-Informationen **zusammengeführt**, die in der Vergangenheit über verschiedene Seiten oder Ansichten verteilt waren. Die Untersuchung von E-Mails auf Bedrohungen und Trends ist *zentralisiert*. Auf Kopfzeileninformationen und die E-Mail-Vorschau sowie auf andere nützliche E-Mail-bezogene Informationen kann über dieselbe E-Mail-Seite zugegriffen werden. Ebenso ist der Detonationsstatus für schädliche Dateianlagen oder URLs auf einer Registerkarte derselben Seite zu finden. Die Seite "E-Mail-Entität" versetzt Administratoren und Sicherheitsteams in die Lage, eine E-Mail-Bedrohung und deren Status schnell zu ermitteln, und dann schnell die Reaktion darauf zu bestimmen.  |
-| [Untersuchung](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center) | Vereint die AIR-Funktionen in [Defender für Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) und [Defender für Endpunkt](../defender-endpoint/automated-investigations.md). Dank dieser Updates und Verbesserungen kann Ihr Sicherheitsteam Details zu automatisierten Untersuchungen und Abhilfemaßnahmen für Ihre E-Mails, von mehreren Personen gemeinsam erstellte/genutzte Inhalte, Benutzerkonten und Geräte an einem Ort anzeigen.  | 
-| [Warnungsansicht](../../compliance/alert-policies.md) | Der Flyoutbereich **Warnungen anzeigen** im Office Security & Compliance Center enthält nun Links zum Microsoft 365 Security Center. Klicken Sie auf den Link **Warnungsseite öffnen**, und das Microsoft 365 Security Center wird geöffnet. Auf die Seite **Warnungen anzeigen** gelangen Sie, indem Sie in der "Warnungen"-Warteschlange auf eine beliebige Office 365-Warnung klicken. |
-| [Angriffssimulationstraining](../office-365-security/attack-simulation-training-insights.md)   | Nutzen Sie das Angriffssimulationstraining, um realistische Angriffsszenarien in Ihrer Organisation zu erstellen. Mithilfe dieser simulierten Angriffe können Ihre Mitarbeiter geschult werden, bevor Ihre Organisation von echten Angriffen betroffen ist. Das Angriffssimulationstraining umfasst verschiedene Optionen, erweiterte Berichte und verbesserte Schulungsabläufe, die die Bereitstellung und Verwaltung Ihrer Angriffssimulation und Schulungszenarien vereinfachen.  |
+<br>
+
+****
+
+|Bereich|Beschreibung der Änderung|
+|---|---|
+|[Die Seite "E-Mail-Entität"](../office-365-security/mdo-email-entity-page.md)|Auf dieser Seite werden E-Mail-Informationen **zusammengeführt**, die in der Vergangenheit über verschiedene Seiten oder Ansichten verteilt waren. Die Untersuchung von E-Mails auf Bedrohungen und Trends ist *zentralisiert*. Auf Kopfzeileninformationen und die E-Mail-Vorschau sowie auf andere nützliche E-Mail-bezogene Informationen kann über dieselbe E-Mail-Seite zugegriffen werden. Ebenso ist der Detonationsstatus für schädliche Dateianlagen oder URLs auf einer Registerkarte derselben Seite zu finden. Die Seite "E-Mail-Entität" versetzt Administratoren und Sicherheitsteams in die Lage, eine E-Mail-Bedrohung und deren Status schnell zu ermitteln, und dann schnell die Reaktion darauf zu bestimmen.|
+|[Untersuchung](../office-365-security/office-365-air.md#changes-are-coming-soon-in-your-security-center)|Vereint die AIR-Funktionen in [Defender für Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) und [Defender für Endpunkt](../defender-endpoint/automated-investigations.md). Dank dieser Updates und Verbesserungen kann Ihr Sicherheitsteam Details zu automatisierten Untersuchungen und Abhilfemaßnahmen für Ihre E-Mails, von mehreren Personen gemeinsam erstellte/genutzte Inhalte, Benutzerkonten und Geräte an einem Ort anzeigen.|
+|[Warnungsansicht](../../compliance/alert-policies.md)|Der Flyoutbereich **Warnungen anzeigen** im Office Security & Compliance Center enthält nun Links zum Microsoft 365 Security Center. Klicken Sie auf den Link **Warnungsseite öffnen**, und das Microsoft 365 Security Center wird geöffnet. Auf die Seite **Warnungen anzeigen** gelangen Sie, indem Sie in der "Warnungen"-Warteschlange auf eine beliebige Office 365-Warnung klicken.|
+|[Angriffssimulationstraining](../office-365-security/attack-simulation-training-insights.md)|Nutzen Sie das Angriffssimulationstraining, um realistische Angriffsszenarien in Ihrer Organisation zu erstellen. Mithilfe dieser simulierten Angriffe können Ihre Mitarbeiter geschult werden, bevor Ihre Organisation von echten Angriffen betroffen ist. Das Angriffssimulationstraining umfasst verschiedene Optionen, erweiterte Berichte und verbesserte Schulungsabläufe, die die Bereitstellung und Verwaltung Ihrer Angriffssimulation und Schulungszenarien vereinfachen.|
+|
 
 Keine Änderungen an diesen Bereichen:
+
 - [Explorer](../office-365-security/threat-explorer.md)
 - [Richtlinien und Regeln](../../compliance/alert-policies.md)
 - [Kampagnen](../office-365-security/campaigns.md)
@@ -66,7 +72,7 @@ Lesen Sie auch den Abschnitt **Verwandte Informationen** am Ende dieses Artikels
 > Das Microsoft 365-Sicherheitsportal (https://security.microsoft.com) führt Sicherheitsfeatures von https://securitycenter.windows.comund https://protection.office.com zusammen. Was Sie darin sehen, hängt jedoch von Ihrem Abonnement ab. Wenn Sie z. B. nur über Microsoft Defender für Office 365 Plan 1 oder 2 als eigenständige Abonnements verfügen, werden Sie keine Funktionen für die Sicherheit von Endpunkten sehen, und Kunden mit Defender für Office Plan 1 werden Elemente wie "Bedrohungsanalyse" nicht angezeigt.
 
 > [!TIP]
->  Alle Exchange Online Protection (EOP)-Funktionen werden in das Microsoft 365 Security Center einbezogen, da EOP ein Kernelement von Defender für Office 365.
+> Alle Exchange Online Protection (EOP)-Funktionen werden in das Microsoft 365 Security Center einbezogen, da EOP ein Kernelement von Defender für Office 365.
 
 ## <a name="microsoft-365-security-center-home-page"></a>Microsoft 365 Security Center-Startseite
 
@@ -80,7 +86,7 @@ Auf der Startseite des Portals wird Folgendes angezeigt:
 - Tweets aus dem Twitter-Feed "Security Intelligence" von Microsoft
 - sowie weitere Kurzinformationen.
 
-Auf einer **Geführten Tour** können Sie eine schnelle Tour durch die Seiten "Endpunkt" oder "E-Mail und Zusammenarbeit" unternehmen. Beachten Sie bitte: Was Sie hier sehen, hängt davon ab, ob Sie über eine Lizenz für Defender für Office 365 und/oder Defender für Endpunkt verfügen.  
+Auf einer **Geführten Tour** können Sie eine schnelle Tour durch die Seiten "Endpunkt" oder "E-Mail und Zusammenarbeit" unternehmen. Beachten Sie bitte: Was Sie hier sehen, hängt davon ab, ob Sie über eine Lizenz für Defender für Office 365 und/oder Defender für Endpunkt verfügen.
 
 Ebenfalls enthalten ist ein Link zum **Office 365 Security & Compliance Center** für einen Vergleich. Der letzte Link führt zur Seite **Neuigkeiten**, auf der die neuesten Updates erläutert werden.
 
@@ -89,6 +95,7 @@ Ebenfalls enthalten ist ein Link zum **Office 365 Security & Compliance Center**
 Die linke Navigationsleiste oder Schnellstartleiste wird Ihnen vertraut vorkommen. Dieses Sicherheitscenter enthält jedoch einige neue und aktualisierte Elemente.
 
 ### <a name="incidents-and-alerts"></a>Vorfälle und Warnungen
+
 Vereint die Verwaltung von Vorfällen und Warnungen über Ihre E-Mails, Geräte und Identitäten hinweg. Warnungen sind jetzt unter dem Knoten "Untersuchung" verfügbar und helfen dabei, sich einen umfassenderen Überblick über einen Angriff zu verschaffen. Die Warnungsseite bietet den vollständigen Kontext zu einer Warnung durch die Kombination von Angriffssignalen, um einen detaillierten Ablauf zu erstellen. Zuvor waren Warnungen auf verschiedene Arbeitslasten bezogen. Eine neue, zentralisierte Ansicht führt nun Warnungen über Workloads hinweg zusammen. Sie können die Daten schnell sichten, untersuchen und entsprechende effektive Maßnahmen ergreifen.
 
 - [Weitere Informationen zu Untersuchungen](incidents-overview.md)
@@ -96,8 +103,8 @@ Vereint die Verwaltung von Vorfällen und Warnungen über Ihre E-Mails, Geräte 
 
 ![Die Schnellstartleiste für Warnungen und Aktionen](../../media/converge-1-alerts-and-actions.png)
 
-
 ### <a name="hunting"></a>Suche
+
 Suchen Sie proaktiv mithilfe von [erweiterten Suchabfragen](advanced-hunting-overview.md) über Ihre Endpunkte, Office 365-Postfächer und mehr hinweg nach Bedrohungen, Schadsoftware und schädlichen Aktivitäten. Diese leistungsstarken Abfragen können zum Suchen und Überprüfen von Bedrohungsindikatoren und Entitäten sowohl für bekannte als auch potenzielle Bedrohungen verwendet werden.
 
 [Benutzerdefinierte Erkennungsregeln](/windows/security/threat-protection/microsoft-defender-atp/custom-detection-rules) können aus erweiterten Suchabfragen erstellt werden, die Ihnen dabei helfen, proaktiv nach Ereignissen zu suchen, die ein Zeichen für Sicherheitsverletzungen und falsch konfigurierte Geräte sein könnten.
@@ -109,11 +116,13 @@ Im Info-Center zeigt werden die Untersuchungen angezeigt, die durch automatisier
 [Erfahren Sie mehr über das Info-Center](m365d-action-center.md)
 
 #### <a name="threat-analytics"></a>Bedrohungsanalyse
+
 Nutzen Sie Informationen zu Bedrohungen von erfahrenen Microsoft-Sicherheitsexperten. Die Bedrohungsanalyse ermöglicht es Sicherheitsteams, aufkommenden Bedrohungen und Risiken effizienter zu begegnen. Die Bedrohungsanalyse umfasst:
 
 - E-Mail-bezogene Erkennungen und Gegenmaßnahmen durch Microsoft Defender für Office 365 zusätzlich zu den Endpunktdaten, die bereits über Microsoft Defender für Endpunkt verfügbar sind.
-- Anzeigen von Vorfällen im Zusammenhang mit den Bedrohungen. 
-- Verbesserte Benutzeroberfläche für die schnelle Identifizierung und Verwendung nützlicher Informationen in den Berichten. Sie können auf Bedrohungsanalysen entweder über die obere linke Navigationsleiste im Microsoft 365 Security Center oder über eine dedizierte Dashboardkarte zugreifen, auf der die wichtigsten Bedrohungen für Ihre Organisation angezeigt werden. 
+- Anzeigen von Vorfällen im Zusammenhang mit den Bedrohungen.
+- Verbesserte Benutzeroberfläche für die schnelle Identifizierung und Verwendung nützlicher Informationen in den Berichten.
+Sie können auf Bedrohungsanalysen entweder über die obere linke Navigationsleiste im Microsoft 365 Security Center oder über eine dedizierte Dashboardkarte zugreifen, auf der die wichtigsten Bedrohungen für Ihre Organisation angezeigt werden.
 
 Erfahren Sie mehr über das [Nachverfolgen und Reagieren auf neue Bedrohungen mit Bedrohungsanalysen](./threat-analytics.md).
 
@@ -129,22 +138,22 @@ Zeigen Sie Berichte an, und nehmen Sie Änderungen an Einstellungen und Benutzer
 
 :::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="Das Schnellstartmenü für Berechtigungen und Berichte im Microsoft 365 Security Center auf der linken Seite des Sicherheitscenters.":::
 
-
 > [!NOTE]
-> Für Defender für Office 365-Benutzer: Jetzt können Sie DKIM-Schlüssel (DomainKeys Identified Mail) über das Microsoft 365 Security Center (https://security.microsoft.com/threatpolicy) oder über **Richtlinien und Regeln > Bedrohungsrichtlinien > DKIM** *verwalten und wechseln*.
+> Für Defender für Office 365-Benutzer können  Sie jetzt Domänenschlüssel identifizierte E-Mail-Schlüssel (DomainKeys Identified Mail, DKIM) über das Microsoft 365 Security Center verwalten und drehen: , oder navigieren Sie zu Richtlinien & Regeln Bedrohungsrichtlinien <https://security.microsoft.com/threatpolicy>  \>  \> **DKIM**.
 
 ## <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Beispiel für erweiterte Bedrohungssuche für Microsoft Defender für Office 365
+
 Möchten Sie mit der erweiterten Bedrohungssuche nach E-Mail-Bedrohungen beginnen? Dann probieren Sie Folgendes aus:
 
 Der Abschnitt [Erste Schritte](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started) im Artikel [Microsoft Defender für Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) enthält logische erste Konfigurationsblöcke, die so aussehen:
 
 1. Konfigurieren Sie alles mit "anti" im Namen.
-- Antischadsoftware
-- Antiphishing
-- Antispam
+   - Antischadsoftware
+   - Antiphishing
+   - Antispam
 2. Richten Sie alles mit "sicher" im Namen ein.
-- Sichere Links
-- Sichere Anlagen
+   - Sichere Links
+   - Sichere Anlagen
 3. Sichern Sie die Workloads (z. B. SharePoint Online, OneDrive, und Teams)
 4. Schutz durch automatische Bereinigung zur Nullstunde
 
@@ -152,12 +161,11 @@ Zusammen mit einem [Link](../office-365-security/protect-against-threats.md) fü
 
 Der letzte Schritt in **Erste Schritte** dient dem Schutz von Benutzern mittels **automatischer Bereinigung zur Nullstunde**, auch bekannt als ZAP (Zero-Hour auto purge). Es kann sehr wichtig sein zu wissen, ob Ihre Bemühungen, ZAP auf verdächtige oder schädliche E-Mails nach der Zustellung anzuwenden, erfolgreich waren.
 
-Der schnelle Wechsel zur Kusto-Abfragesprache, um nach Problemen zu suchen, stellt einen Vorteil der Zusammenführung dieser beiden Sicherheitscenter dar. Sicherheitsteams können verpasste ZAP-Elemente überwachen, indem sie die nächsten Schritte [hier](https://security.microsoft.com/advanced-hunting) unter **Suche** > **Erweiterte Bedrohungssuche** ausführen.
+Der schnelle Wechsel zur Kusto-Abfragesprache, um nach Problemen zu suchen, stellt einen Vorteil der Zusammenführung dieser beiden Sicherheitscenter dar. Sicherheitsteams können ZAP-Verpasste überwachen, indem sie hier [unter](https://security.microsoft.com/advanced-hunting) **Hunting** Advanced Hunting die \> **nächsten Schritte ausführen.**
 
 1. Klicken Sie auf der Seite "Erweiterte Bedrohungssuche" auf "Abfrage".
 1. Kopieren Sie die nachstehende Abfrage in das Abfragefenster.
 1. Wählen Sie "Abfrage ausführen" aus.
-
 
 ```kusto
 EmailPostDeliveryEvents 
@@ -178,6 +186,7 @@ LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, Lo
 Die Daten aus dieser Abfrage werden im Ergebnisbereich unterhalb der Abfrage selbst angezeigt. Die Ergebnisse enthalten Informationen wie "DeviceName", "AccountDisplayName" und "ZapTime" in einem anpassbaren Ergebnisset. Die Ergebnisse können auch zur Dokumentation exportiert werden. Wenn die Abfrage später erneut benötigt wird, wählen Sie **Speichern** > **Speichern unter**, und fügen Sie die Abfrage Ihrer Liste von Abfragen, freigegebenen oder Communityabfragen hinzu.
 
 ## <a name="related-information"></a>Verwandte Informationen
+
 - [Microsoft Defender für Office 365 im Microsoft 365 Security Center](microsoft-365-security-center-mdo.md)
 - [Das Info-Center](./m365d-action-center.md)
 - [Warnungen für E-Mail & Zusammenarbeit](../../compliance/alert-policies.md#default-alert-policies)

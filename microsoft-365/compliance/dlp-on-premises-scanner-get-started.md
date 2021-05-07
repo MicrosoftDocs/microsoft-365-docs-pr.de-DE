@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Einrichten des lokalen Microsoft 365-Scanners zur Verhinderung von Datenverlust
-ms.openlocfilehash: 7e190a1d6e902af3406f7e8f317efe80e825e7f2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 242956a3c6469756481fb823340e715a210562af
+ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917831"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "52114173"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>Erste Schritte mit dem lokalen Scanner zur Verhinderung von Datenverlust (Vorschau)
 
@@ -55,7 +55,7 @@ Daten vom lokalen DLP-Scanner können im [Aktivitäts-Explorer](data-classificat
 
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>Voraussetzungen für den lokalen DLP-Scanner
 
-- Der Azure Information Protection (AIP) -Scanner implementiert den DLP-Richtlinienabgleich und die Durchsetzung von Richtlinien. Der Scanner wird als Teil des AIP-Clients installiert, sodass Ihre Installation alle Voraussetzungen für AIP, den AIP-Client und den AIP Unified Labeling-Scanner erfüllen muss.
+- Der Azure Information Protection (AIP)-Scanner implementiert DLP-Richtlinienabgleich und -Richtliniendurchsetzung. Der Scanner wird als Teil des AIP-Clients installiert, sodass Ihre Installation alle Voraussetzungen für AIP, den AIP-Client und den AIP Unified Labeling-Scanner (Scanner für einheitliche Bezeichnungen) erfüllen muss.
 - Bereitstellen des AIP-Clients und Scanners Weitere Informationen finden Sie unter: [Installieren des einheitlichen AIP-Bezeichnungsclients](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) und [], unter [Konfigurieren und Installieren des Azure Information Protection Unified Labeling-Scanners](/azure/information-protection/deploy-aip-scanner-configure-install).
 - Es muss mindestens ein Etikett und eine Richtlinie im Mandanten veröffentlicht sein, auch wenn alle Ihre Erkennungsregeln nur auf vertraulichen Informationstypen basieren.
 
@@ -66,7 +66,7 @@ Daten vom lokalen DLP-Scanner können im [Aktivitäts-Explorer](data-classificat
     1. Die Konfiguration von Netzwerkerkennungsaufträgen ist ein optionaler Schritt. Sie können es überspringen und bestimmte Repositorys definieren, die in Ihrem Inhaltsscanauftrag gescannt werden sollen.
     2. Sie müssen einen Inhaltsscanauftrag erstellen und die Repositorys angeben, in denen Dateien gehostet werden, die vom DLP-Modul ausgewertet werden müssen.
     3. Aktivieren Sie DLP-Regeln im erstellten Inhaltsscanauftrag und setzen Sie die Option **Erzwingen** auf **Aus**, es sei denn, Sie möchten direkt mit der DLP-Durchsetzungsphase fortfahren.
-3. Stellen Sie sicher, dass Ihr Inhaltsscanauftrag dem richtigen Cluster zugewiesen ist. Wenn Sie noch keinen Inhaltsscanauftrag erstellt haben, erstellen Sie einen neuen Auftrag und weisen Sie ihn dem Cluster zu, der die Scannerknoten enthält, auf denen die öffentliche Public Preview-Version ausgeführt wird.
+3. Bestätigen Sie, das Ihr Inhaltsscanauftrag dem richtigen Cluster zugewiesen ist. Wenn Sie noch keinen Inhaltsscanauftrag erstellt haben, erstellen Sie einen neuen Auftrag und weisen Sie ihn dem Cluster zu, der die Scannerknoten enthält, auf denen die Public Preview-Version ausgeführt wird.
 
 4. Stellen Sie eine Verbindung her zur [Azure Information Protection-Erweiterung im Azure-Portal](https://portal.azure.com/#blade/Microsoft_Azure_InformationProtection/DataClassGroupEditBlade/scannerProfilesBlade) und fügen Sie Ihre Repositorys dem Inhaltsscanauftrag hinzu, der den Scan ausführt.
 
@@ -127,7 +127,7 @@ Nachdem Sie eine Testrichtlinie für lokale DLP-Standorte bereitgestellt haben u
 
 - [Erfahren Sie mehr über den lokalen DLP-Scanner (Vorschau)](dlp-on-premises-scanner-learn.md)
 - [Verwenden Sie den lokalen DLP-Scanner (Vorschau)](dlp-on-premises-scanner-use.md)
-- [Verhinderung von Datenverlust – Übersicht](data-loss-prevention-policies.md)
+- [Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)
 - [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 - [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)
 - [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
