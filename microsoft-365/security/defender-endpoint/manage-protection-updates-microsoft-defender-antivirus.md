@@ -1,27 +1,28 @@
 ---
-title: Verwalten, wie und wo Microsoft Defender Antivirus Updates empfängt
-description: Verwalten Sie die Fallbackreihenfolge, wie Microsoft Defender Antivirus Schutzupdates erhält.
+title: Verwalten, wie und wo Microsoft Defender Antivirus Updates erhält
+description: Verwalten Sie die Fallbackreihenfolge, wie Microsoft Defender Antivirus Schutzupdates empfängt.
 keywords: Updates, Sicherheitsgrundwerte, Schutz, Fallbackreihenfolge, ADL, MMPC, UNC, Dateipfad, Freigabe, wsus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: 9b1c9bc8c86c5b348e3c4d2a51e0bfafaf3e7174
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: c6961c4eac375ea36d801e278f5208f16d2558d9
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765467"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275024"
 ---
-# <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Verwalten der Quellen für Microsoft Defender Antivirus-Schutzupdates
+# <a name="manage-the-sources-for-microsoft-defender-antivirus-protection-updates"></a>Verwalten der Quellen für Updates für Microsoft Defender Antivirus-Schutz
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,10 +38,10 @@ Es ist wichtig, Ihren Antivirenschutz auf dem neuesten Stand zu halten. Es gibt 
 - *Wo* die Updates heruntergeladen werden; und 
 - *Wenn* Updates heruntergeladen und angewendet werden. 
 
-In diesem Artikel wird beschrieben, wie Sie angeben, von wo Updates heruntergeladen werden sollen (dies wird auch als Fallbackreihenfolge bezeichnet). Unter [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md) topic finden Sie eine Übersicht über die Funktionsweise von Updates und die Konfiguration anderer Aspekte von Updates (z. B. planen von Updates).
+In diesem Artikel wird beschrieben, wie Sie angeben, von wo Updates heruntergeladen werden sollen (dies wird auch als Fallbackreihenfolge bezeichnet). Unter [Manage Microsoft Defender Antivirus updates and apply baselines](manage-updates-baselines-microsoft-defender-antivirus.md) finden Sie eine Übersicht über die Funktionsweise von Updates und die Konfiguration anderer Aspekte von Updates (z. B. planung von Updates).
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus Security Intelligence Updates werden über Windows Update zugestellt, und ab Montag, dem 21. Oktober 2019, werden alle Sicherheitsintelligenzupdates ausschließlich sha-2 signiert. Ihre Geräte müssen aktualisiert werden, um SHA-2 zu unterstützen, um Ihre Sicherheitsintelligenz zu aktualisieren. Weitere Informationen finden Sie unter [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).  
+> Microsoft Defender Antivirus Sicherheitsintelligenzupdates werden über Windows Update zugestellt, und ab Montag, 21. Oktober 2019, werden alle Sicherheitsintelligenzupdates ausschließlich sha-2 signiert. Ihre Geräte müssen aktualisiert werden, um SHA-2 zu unterstützen, um Ihre Sicherheitsintelligenz zu aktualisieren. Weitere Informationen finden Sie unter [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).  
 
 
 <a id="fallback-order"></a>
@@ -58,15 +59,15 @@ Je älter die Updates auf einem Endpunkt sind, desto größer ist der Download. 
 Es gibt fünf Speicherorte, an denen Sie angeben können, wo ein Endpunkt Updates abrufen soll: 
 
 - [Microsoft Update](https://support.microsoft.com/help/12373/windows-update-faq)
-- [Windows Server Update Service](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
+- [Windows Serverupdatedienst](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
 - [Microsoft Endpoint Configuration Manager](/configmgr/core/servers/manage/updates)
 - [Netzwerkdateifreigabe](#unc-share)
-- [Sicherheitsintelligenzupdates](https://www.microsoft.com/en-us/wdsi/defenderupdates) für Microsoft Defender Antivirus und andere Antischalware von Microsoft (Ihre Richtlinie und Registrierung kann als Microsoft Center zum Schutz vor Malware (MMPC)-Sicherheitsintelligenz, ihren früheren Namen, aufgeführt sein.)
+- Sicherheitsintelligenzupdates für [Microsoft Defender Antivirus](https://www.microsoft.com/en-us/wdsi/defenderupdates) und andere Microsoft-Antischammungsware (Ihre Richtlinie und Registrierung kann diese als Microsoft Center zum Schutz vor Malware (MMPC)-Sicherheitsintelligenz, ihren früheren Namen, aufgeführt haben.)
 
-Um ein optimales Schutzniveau sicherzustellen, ermöglicht Microsoft Update schnelle Versionen, was häufig kleinere Downloads bedeutet. Die Updatesquellen Windows Server Update Service, Microsoft Endpoint Configuration Manager und Microsoft Security Intelligence liefern weniger häufige Updates. Daher kann das Delta größer sein, was zu größeren Downloads führt. 
+Um ein optimales Schutzniveau sicherzustellen, ermöglicht Microsoft Update schnelle Versionen, was häufig kleinere Downloads bedeutet. Die Windows Server Update Service, Microsoft Endpoint Configuration Manager und Microsoft Security Intelligence Updates liefern weniger häufige Updates. Daher kann das Delta größer sein, was zu größeren Downloads führt. 
 
 > [!IMPORTANT]
-> Wenn Sie Microsoft Security Intelligence-Seitenupdates nach Windows Server Update Service oder Microsoft Update als Ausweichquelle festgelegt haben, werden Updates nur aus Sicherheitsintelligenzupdates heruntergeladen, wenn das aktuelle Update als veraltet angesehen wird. [](https://www.microsoft.com/security/portal/definitions/adl.aspx) (Standardmäßig sind dies sieben aufeinander folgende Tage, an dem keine Updates vom Windows Server Update Service oder von Microsoft Update-Diensten angewendet werden können).
+> Wenn Sie Microsoft Security Intelligence-Seitenupdates nach Windows Server Update Service oder Microsoft Update als Ausweichquelle festgelegt haben, werden Updates nur aus Sicherheitsintelligenzupdates heruntergeladen, wenn das aktuelle Update als veraltet angesehen wird. [](https://www.microsoft.com/security/portal/definitions/adl.aspx) (Standardmäßig sind dies sieben aufeinander folgende Tage, an dem keine Updates von Windows Server Update Service oder Microsoft Update Services angewendet werden können).
 > Sie können jedoch die Anzahl der Tage festlegen, bevor der Schutz [als veraltet gemeldet wird.](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)<p>
 > Ab Montag, 21. Oktober 2019, werden Sicherheitsintelligenzupdates ausschließlich sha-2 signiert. Geräte müssen aktualisiert werden, um SHA-2 zu unterstützen, um die neuesten Sicherheitsintelligenzupdates zu erhalten. Weitere Informationen finden Sie unter [2019 SHA-2 Code Signing Support requirement for Windows and WSUS](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus).
 
@@ -74,16 +75,16 @@ Jede Quelle verfügt über typische Szenarien, die davon abhängen, wie Ihr Netz
 
 |Speicherort | Beispielszenario |
 |---|---|
-|Windows Server Update Service | Sie verwenden Windows Server Update Service, um Updates für Ihr Netzwerk zu verwalten.|
-|Microsoft Update | Sie möchten, dass Ihre Endpunkte eine direkte Verbindung mit Microsoft Update herstellen. Dies kann für Endpunkte nützlich sein, die unregelmäßig eine Verbindung mit Ihrem Unternehmensnetzwerk herstellen, oder wenn Sie den Windows Server Update Service nicht zum Verwalten Ihrer Updates verwenden.|
+|Windows Serverupdatedienst | Sie verwenden Windows Server Update Service, um Updates für Ihr Netzwerk zu verwalten.|
+|Microsoft Update | Sie möchten, dass Ihre Endpunkte eine direkte Verbindung mit Microsoft Update herstellen. Dies kann für Endpunkte nützlich sein, die unregelmäßig eine Verbindung mit Ihrem Unternehmensnetzwerk herstellen, oder wenn Sie nicht Windows Server Update Service verwenden, um Ihre Updates zu verwalten.|
 |Dateifreigabe | Sie verfügen über nicht mit dem Internet verbundene Geräte (z. B. VMs). Sie können Ihren mit dem Internet verbundenen VM-Host verwenden, um die Updates auf eine Netzwerkfreigabe herunterzuladen, von der die virtuellen Computer die Updates abrufen können. Im [VDI-Bereitstellungshandbuch](deployment-vdi-microsoft-defender-antivirus.md) erfahren Sie, wie Dateifreigaben in VDI-Umgebungen (Virtual Desktop Infrastructure) verwendet werden können.|
 |Microsoft Endpoint Manager | Sie verwenden Microsoft Endpoint Manager, um Ihre Endpunkte zu aktualisieren.|
-|Sicherheitsintelligenzupdates für Microsoft Defender Antivirus und andere Microsoft-Antischammsoftware (früher als MMPC bezeichnet) |[Stellen Sie sicher, dass Ihre Geräte aktualisiert werden, um SHA-2 zu unterstützen.](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus) Microsoft Defender Antivirus Security Intelligence-Updates werden über Windows Update zugestellt, und ab Montag, dem 21. Oktober 2019, werden Sicherheitsintelligenzupdates ausschließlich sha-2 signiert. <br/>Laden Sie die neuesten Schutzupdates aufgrund einer kürzlichen Infektion herunter oder helfen Sie bei der Bereitstellung eines starken Basisimages für [die VDI-Bereitstellung.](deployment-vdi-microsoft-defender-antivirus.md) Diese Option sollte im Allgemeinen nur als endgültige Fallbackquelle und nicht als primäre Quelle verwendet werden. Es wird nur verwendet, wenn Updates für eine bestimmte Anzahl von Tagen nicht von Windows Server Update Service oder Microsoft Update [heruntergeladen werden können.](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)|
+|Security Intelligence updates for Microsoft Defender Antivirus and other Microsoft anmalware (formerly referred to as MMPC) |[Stellen Sie sicher, dass Ihre Geräte aktualisiert werden, um SHA-2 zu unterstützen.](https://support.microsoft.com/help/4472027/2019-sha-2-code-signing-support-requirement-for-windows-and-wsus) Microsoft Defender Antivirus Sicherheitsintelligenzupdates werden über Windows Update zugestellt, und ab Montag, dem 21. Oktober 2019, werden Sicherheitsintelligenzupdates ausschließlich sha-2 signiert. <br/>Laden Sie die neuesten Schutzupdates aufgrund einer kürzlichen Infektion herunter oder helfen Sie bei der Bereitstellung eines starken Basisimages für [die VDI-Bereitstellung.](deployment-vdi-microsoft-defender-antivirus.md) Diese Option sollte im Allgemeinen nur als endgültige Fallbackquelle und nicht als primäre Quelle verwendet werden. Es wird nur verwendet, wenn Updates für eine bestimmte Anzahl von Tagen nicht von Windows Server Update Service oder Microsoft Update [heruntergeladen werden können.](/windows/threat-protection/microsoft-defender-antivirus/manage-outdated-endpoints-microsoft-defender-antivirus#set-the-number-of-days-before-protection-is-reported-as-out-of-date)|
 
 Sie können die Reihenfolge verwalten, in der Aktualisierungsquellen mit Gruppenrichtlinien, Microsoft Endpoint Configuration Manager, PowerShell-Cmdlets und WMI verwendet werden.
 
 > [!IMPORTANT]
-> Wenn Sie Windows Server Update Service als Downloadspeicherort festlegen, müssen Sie die Updates genehmigen, unabhängig vom Verwaltungstool, das Sie zum Angeben des Speicherorts verwenden. Sie können eine automatische Genehmigungsregel mit Windows Server Update Service einrichten, was nützlich sein kann, wenn Updates mindestens einmal am Tag eintreffen. Weitere Informationen finden Sie unter [Synchronisieren von Endpunktschutzupdates im eigenständigen Windows Server Update Service](/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
+> Wenn Sie Windows Serverupdatedienst als Downloadspeicherort festlegen, müssen Sie die Updates genehmigen, unabhängig vom Verwaltungstool, das Sie zum Angeben des Speicherorts verwenden. Sie können eine automatische Genehmigungsregel mit Windows Server Update Service einrichten, was nützlich sein kann, wenn Updates mindestens einmal am Tag eintreffen. Weitere Informationen finden Sie unter [Synchronisieren von Endpunktschutzupdates in eigenständigen Windows Server Update Service](/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
 In den Verfahren in diesem Artikel wird zunächst beschrieben, wie  Sie die Reihenfolge festlegen und dann die Dateifreigabeoption einrichten, wenn Sie sie aktiviert haben.
 
@@ -95,7 +96,7 @@ In den Verfahren in diesem Artikel wird zunächst beschrieben, wie  Sie die Reih
 
 3. Klicken **Sie auf Richtlinien** und dann auf Administrative **Vorlagen.**
 
-4. Erweitern Sie die Struktur auf **Windows-> Windows Defender > Signaturupdates,** und konfigurieren Sie die folgenden Einstellungen:
+4. Erweitern Sie die Struktur, **um Windows zu > Windows Defender > Signaturupdates zu verwenden,** und konfigurieren Sie die folgenden Einstellungen:
 
    1.  Doppelklicken Sie auf **die Einstellung Die Reihenfolge der Quellen** für das Herunterladen von Sicherheitsintelligenzupdates definieren, und legen Sie die Option auf Aktiviert **fest.**
 
@@ -112,11 +113,11 @@ In den Verfahren in diesem Artikel wird zunächst beschrieben, wie  Sie die Reih
    6. Klicken Sie auf **OK**. Dadurch wird die Reihenfolge der Dateifreigaben festgelegt, wenn auf diese Quelle in der Gruppenrichtlinieneinstellung Definieren der Reihenfolge der **Quellen...** verwiesen wird.
 
 > [!NOTE]
-> Für Windows 10, Versionen 1703 bis einschließlich 1809, ist der Richtlinienpfad Windows-Komponenten **> Microsoft Defender Antivirus >** Signaturupdates für Windows 10, Version 1903, der Richtlinienpfad ist **Windows-Komponenten > Microsoft Defender Antivirus > Security Intelligence Updates**
+> Für Windows 10 Versionen 1703 bis einschließlich 1809 ist der Richtlinienpfad Windows Komponenten **> Microsoft Defender Antivirus >** Signaturupdates Für Windows 10, Version 1903, ist der Richtlinienpfad **Windows Components > Microsoft Defender Antivirus > Security Intelligence Updates**
 
 ## <a name="use-configuration-manager-to-manage-the-update-location"></a>Verwenden von Configuration Manager zum Verwalten des Updatespeicherorts
 
-Weitere Informationen zum Konfigurieren von Microsoft Endpoint Manager (current branch) finden Sie unter [Configure Security Intelligence Updates for Endpoint Protection.](/configmgr/protect/deploy-use/endpoint-definition-updates)
+Weitere Informationen zum Konfigurieren von Microsoft Endpoint Manager (current branch) finden Sie unter Configure [Security intelligence Updates for Endpoint Protection.](/configmgr/protect/deploy-use/endpoint-definition-updates)
 
 
 ## <a name="use-powershell-cmdlets-to-manage-the-update-location"></a>Verwenden von PowerShell-Cmdlets zum Verwalten des Updatespeicherorts
@@ -133,7 +134,7 @@ Weitere Informationen finden Sie in den folgenden Artikeln:
 - [Verwenden von PowerShell-Cmdlets zum Konfigurieren und Ausführen von Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 - [Defender-Cmdlets](/powershell/module/defender/index)
 
-## <a name="use-windows-management-instruction-wmi-to-manage-the-update-location"></a>Verwalten des Updatespeicherorts mithilfe von Windows Management Instruction (WMI)
+## <a name="use-windows-management-instruction-wmi-to-manage-the-update-location"></a>Verwenden Windows Management Instruction (WMI) zum Verwalten des Updatespeicherorts
 
 Verwenden Sie [ **die Set-Methode** **der MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) für die folgenden Eigenschaften:
 
@@ -151,12 +152,12 @@ Weitere Informationen zum Konfigurieren von MDM finden Sie unter [Policy CSP - D
 
 ## <a name="what-if-were-using-a-third-party-vendor"></a>Was passiert, wenn wir einen Drittanbieter verwenden?
 
-In diesem Artikel wird beschrieben, wie Sie Updates für Microsoft Defender Antivirus konfigurieren und verwalten. Drittanbieter können jedoch verwendet werden, um diese Aufgaben auszuführen. 
+In diesem Artikel wird das Konfigurieren und Verwalten von Updates für Microsoft Defender Antivirus. Drittanbieter können jedoch verwendet werden, um diese Aufgaben auszuführen. 
 
-Angenommen, Contoso hat Fabrikam für die Verwaltung ihrer Sicherheitslösung eingestellt, die Microsoft Defender Antivirus umfasst. Fabrikam verwendet in der Regel [die Windows-Verwaltungsinstrumentierung,](./use-wmi-microsoft-defender-antivirus.md) [PowerShell-Cmdlets](./use-powershell-cmdlets-microsoft-defender-antivirus.md)oder die [Windows-Befehlszeile,](./command-line-arguments-microsoft-defender-antivirus.md) um Patches und Updates zu bereitstellen. 
+Angenommen, Contoso hat Fabrikam beauftragt, seine Sicherheitslösung zu verwalten, einschließlich Microsoft Defender Antivirus. Fabrikam verwendet normalerweise [Windows Management Instrumentation,](./use-wmi-microsoft-defender-antivirus.md) [PowerShell-Cmdlets](./use-powershell-cmdlets-microsoft-defender-antivirus.md)oder Windows [Befehlszeile,](./command-line-arguments-microsoft-defender-antivirus.md) um Patches und Updates zu bereitstellen. 
 
 > [!NOTE]
-> Microsoft teste keine Drittanbieterlösungen für die Verwaltung von Microsoft Defender Antivirus.
+> Microsoft teste keine Drittanbieterlösungen für die Verwaltung Microsoft Defender Antivirus.
 
 <a id="unc-share"></a>
 ## <a name="create-a-unc-share-for-security-intelligence-updates"></a>Erstellen einer UNC-Freigabe für Sicherheitsintelligenzupdates
@@ -259,9 +260,9 @@ Richten Sie eine Netzwerkdateifreigabe (UNC/zugeordnetes Laufwerk) ein, um Siche
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Bereitstellen von Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
-- [Verwalten von Microsoft Defender Antivirus-Updates und Anwenden von Basiswerten](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Bereitstellen Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Verwalten Microsoft Defender Antivirus Updates und Anwenden von Baselines](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Verwalten von Updates für veraltete Endpunkte](manage-outdated-endpoints-microsoft-defender-antivirus.md)
-- [Verwalten ereignisbasierter erzwungener Updates](manage-event-based-updates-microsoft-defender-antivirus.md)
+- [Verwalten von ereignisbasierten erzwungenen Updates](manage-event-based-updates-microsoft-defender-antivirus.md)
 - [Verwalten von Updates für mobile Geräte und VMs](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

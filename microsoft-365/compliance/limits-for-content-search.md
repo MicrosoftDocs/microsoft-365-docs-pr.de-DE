@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
 description: Erfahren Sie mehr über die grenzwerte für das Inhaltssuchfeature im Microsoft 365 Compliance Center, z. B. die maximale Anzahl gleichzeitiger Suchen. Diese Suchgrenzwerte gelten auch für Suchen, die Core eDiscovery-Fällen zugeordnet sind.
-ms.openlocfilehash: 3ed7c97f633bc7e110ac5d4a84142abf612ec5b3
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: e4cfc79d35b4dc6a22e8e7a872699d906b39a901
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860908"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244320"
 ---
 # <a name="limits-for-content-search"></a>Grenzwerte für die Inhaltssuche 
 Verschiedene Grenzwerte werden auf das Inhaltssuchtool im compliance center Microsoft 365 angewendet. Dazu gehören Auf der  Seite Inhaltssuche ausgeführte Suchen und Suchen, die einem eDiscovery-Fall auf der Seite **Core eDiscovery zugeordnet** sind. Diese Beschränkungen helfen, die Integrität und Qualität der für Organisationen bereitgestellten Dienste zu erhalten. Es gibt auch Einschränkungen im Zusammenhang mit der Indizierung von E-Mail-Nachrichten in Exchange Online Suche. Sie können die Grenzwerte für die Inhaltssuche oder die E-Mail-Indizierung nicht ändern, sie sollten jedoch beachten, damit Sie diese Einschränkungen bei der Planung, Ausführung und Problembehandlung von Inhaltssuchen berücksichtigen können.
@@ -45,7 +45,7 @@ In der folgenden Tabelle sind die Suchgrenzwerte für die Verwendung des Inhalts
 |Die maximale Anzahl von Elementen pro Postfach für öffentliche Ordner, die bei der Vorschau der Inhaltssuchergebnisse auf der Vorschauseite angezeigt werden.  <br/> |100  <br/> |
 |Die maximale Anzahl von Elementen in allen Postfächern für öffentliche Ordner, die auf der Vorschauseite angezeigt werden, wenn die Vorschau der Inhaltssuchergebnisse angezeigt wird.  <br/> |200  <br/> |
 |Die maximale Anzahl von öffentlichen Postfächern, die für Suchergebnisse in der Vorschau angezeigt werden können. Wenn mehr als 500 Postfächer für öffentliche Ordner vorhanden sind, die Inhalte enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die 500 Postfächer für öffentliche Ordner mit den meisten Suchergebnissen für die Vorschau zur Verfügung.  <br/> |500  <br/> |
-|Die maximale Anzahl von Zeichen für die Suchabfrage (einschließlich Operatoren und Bedingungen) für eine Suche.  <br/><br/> **Hinweis:** Dieser Grenzwert wird wirksam, nachdem die Abfrage erweitert wurde, was bedeutet, dass die Abfrage für jedes Schlüsselwort erweitert wird. Wenn eine Suchabfrage beispielsweise 15 Schlüsselwörter und zusätzliche Parameter und Bedingungen enthält, wird die Abfrage 15-mal erweitert, jeweils mit den anderen Parametern und Bedingungen in der Abfrage. Auch wenn die Anzahl der Zeichen in der Suchabfrage unter dem Grenzwert liegt, kann die erweiterte Abfrage dazu beitragen, diesen Grenzwert zu überschreiten.  <br/> |**Postfächer:** 10.000  <br/> **Websites:** 4.000 beim Durchsuchen aller Websites oder 2.000 beim Durchsuchen von bis zu 20 Websites <sup>2</sup> <br/> |
+|Die maximale Anzahl von Zeichen für die Suchabfrage (einschließlich Operatoren und Bedingungen) für eine Suche.  <br/><br/> **Hinweis:** Dieser Grenzwert wird wirksam, nachdem die Abfrage erweitert wurde und Zeichen aus der Schlüsselwortabfrage, auf den Benutzer angewendete Suchberechtigungsfilter und die URLs aller Websitestandorte enthält. Dies bedeutet, dass die Abfrage für jedes Schlüsselwörter erweitert wird. Wenn eine Suchabfrage beispielsweise 15 Schlüsselwörter und zusätzliche Parameter und Bedingungen enthält, wird die Abfrage 15-mal erweitert, jeweils mit den anderen Parametern und Bedingungen in der Abfrage. Auch wenn die Anzahl der Zeichen in der Suchabfrage unter dem Grenzwert liegt, kann die erweiterte Abfrage dazu beitragen, diesen Grenzwert zu überschreiten.  <br/> |**Postfächer:** 10.000  <br/> **Websites:** 4.000 beim Durchsuchen aller Websites oder 2.000 beim Durchsuchen von bis zu 20 Websites <sup>2</sup> <br/> |
 |Maximale Anzahl von Varianten, die zurückgegeben werden, wenn ein Präfix-Platzhalter zum Suchen nach einem exakten Ausdruck in einer Suchabfrage oder bei Verwendung eines Präfix-Platzhalters und des **NEAR** Boolean-Operators verwendet wird.  <br/> |10.000 <sup>3</sup> <br/> |
 |Die Mindestanzahl von Alphazeichen für Präfix-Platzhalter. z. B.  `time*`  `one*` , oder  `set*` .  <br/> |3  <br/> |
 |Die maximale Anzahl von Postfächern in einer Suche, in der Sie Elemente löschen können, indem Sie eine Aktion "Suchen und Löschen" ausführen (mithilfe des **Befehls New-ComplianceSearchAction -Purge).** Wenn die Suche, für die Sie eine Reinigungsaktion erstellen, über mehr Quellpostfächer verfügt als dieser Grenzwert, wird bei der Reinigungsaktion ein Fehler angezeigt. Weitere Informationen zum Suchen und Löschen finden Sie unter Suchen und Löschen von E-Mail-Nachrichten [in Ihrer Organisation.](search-for-and-delete-messages-in-your-organization.md)  <br/> |50.000  <br/> |

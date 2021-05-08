@@ -1,13 +1,13 @@
 ---
-title: Sammeln von Diagnosedaten von Microsoft Defender Antivirus
-description: Verwenden eines Tools zum Sammeln von Daten zur Problembehandlung bei Microsoft Defender Antivirus
+title: Sammeln von Diagnosedaten Microsoft Defender Antivirus
+description: Verwenden eines Tools zum Sammeln von Daten zur Problembehandlung Microsoft Defender Antivirus
 keywords: Problembehandlung, Fehler, Behebung, Updatekonformität, Oms, Monitor, Bericht, Microsoft Defender av, Gruppenrichtlinienobjekt, Einstellung, Diagnosedaten
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,12 +15,13 @@ ms.date: 06/29/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d74a8921af677f6ed66580bd00830440d59cf1aa
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: ccf6da0e1bc91a29865868305b5333f7ef9c47cc
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764723"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274784"
 ---
 # <a name="collect-microsoft-defender-av-diagnostic-data"></a>Sammeln von Microsoft Defender AV-Diagnosedaten
 
@@ -36,7 +37,7 @@ In diesem Artikel wird beschrieben, wie Sie Diagnosedaten sammeln, die von Micro
 > [!NOTE]
 > Im Rahmen des Untersuchungs- oder Reaktionsprozesses können Sie ein Untersuchungspaket von einem Gerät erfassen. So geht's: [Erfassen des Untersuchungspakets von Geräten](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices).
 
-Rufen Sie auf mindestens zwei Geräten mit demselben Problem die Cab-Diagnosedatei ab, indem Sie die folgenden Schritte ausführen:
+Rufen Sie auf mindestens zwei Geräten mit demselben Problem die .cab diagnosedatei ab, indem Sie die folgenden Schritte ausführen:
 
 1. Öffnen Sie eine Administratorversion der Eingabeaufforderung wie folgt:
 
@@ -57,12 +58,12 @@ Rufen Sie auf mindestens zwei Geräten mit demselben Problem die Cab-Diagnosedat
     mpcmdrun.exe -GetFiles
     ```
   
-4. Es wird eine CAB-Datei generiert, die verschiedene Diagnoseprotokolle enthält. Der Speicherort der Datei wird in der Ausgabe in der Eingabeaufforderung angegeben. Standardmäßig ist der Speicherort `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
+4. Eine .cab wird generiert, die verschiedene Diagnoseprotokolle enthält. Der Speicherort der Datei wird in der Ausgabe in der Eingabeaufforderung angegeben. Standardmäßig ist der Speicherort `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
 
 > [!NOTE]
 > Verwenden Sie den folgenden Befehl, um die Cabdatei an einen anderen Pfad oder eine andere UNC-Freigabe umzuleiten: `mpcmdrun.exe -GetFiles -SupportLogLocation <path>`  <br/>Weitere Informationen finden Sie unter [Redirect diagnostic data to a UNC share](#redirect-diagnostic-data-to-a-unc-share).
 
-5. Kopieren Sie diese CAB-Dateien an einen Speicherort, auf den vom Microsoft-Support zugegriffen werden kann. Ein Beispiel könnte ein kennwortgeschützter OneDrive-Ordner sein, den Sie für uns freigeben können.
+5. Kopieren Sie .cab Dateien an einen Speicherort, auf den vom Microsoft-Support zugegriffen werden kann. Ein Beispiel könnte ein kennwortgeschützter OneDrive sein, den Sie für uns freigeben können.
 
 > [!NOTE]
 >Wenn Sie ein Problem mit der Updatekonformität haben, senden Sie eine E-Mail mithilfe der Update Compliance-Support-E-Mail-Vorlage, und füllen Sie die Vorlage mit den folgenden Informationen aus: <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a"></a>
@@ -102,7 +103,7 @@ Wenn der Parameter SupportLogLocation verwendet wird, wird eine Ordnerstruktur w
 
 ## <a name="specify-location-where-diagnostic-data-is-created"></a>Angeben des Speicherorts, an dem Diagnosedaten erstellt werden
 
-Sie können auch angeben, wo die Diagnose-CAB-Datei mithilfe eines Gruppenrichtlinienobjekts (Group Policy Object, GPO) erstellt wird. 
+Sie können auch angeben, wo die Diagnosedatei .cab mithilfe eines Gruppenrichtlinienobjekts (Group Policy Object, GPO) erstellt wird. 
 
 1. Öffnen Sie den Editor für lokale Gruppenrichtlinien, und suchen Sie das SupportLogLocation-GPO unter: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\SupportLogLocation`
    
@@ -119,4 +120,4 @@ Sie können auch angeben, wo die Diagnose-CAB-Datei mithilfe eines Gruppenrichtl
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Behandeln von Microsoft Defender Antivirus-Berichten](troubleshoot-reporting.md)
+- [Problembehandlung Microsoft Defender Antivirus Berichterstellung](troubleshoot-reporting.md)

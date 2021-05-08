@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Eine Anforderung für alle Microsoft Information Protection-Lösungen: Erstellen, Konfigurieren und Veröffentlichen Sie Vertraulichkeitsbezeichnungen, um die Daten Ihres Unternehmens zu klassifizieren und zu schützen.'
-ms.openlocfilehash: c34025d2b68eb0ee179c98ce9c97a59193f782e3
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: fc7debbe2fe1d59d4d172fd23587d0b2a1e6705e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994952"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244624"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
@@ -215,9 +215,9 @@ Anders verhält es sich beim Löschen einer Bezeichnung:
 
 - Wenn die Bezeichnung Verschlüsselung angewendet hat, wird die zugrundeliegende Schutzvorlage archiviert, sodass zuvor geschützte Inhalte weiterhin geöffnet werden können. Aufgrund dieser Archivierung von Schutzvorlagen können Sie keine neue Bezeichnung mit dem gleichen Namen erstellen. Obwohl es möglich ist, eine Schutzvorlage mithilfe von [PowerShell-](/powershell/module/aipservice/remove-aipservicetemplate) zu löschen, tun Sie dies nur, wenn Sie sicher sind, dass Sie keine mit der archivierten Vorlage verschlüsselten Inhalte öffnen müssen.
 
-- Bei Desktop-Apps: Die Bezeichnungsinformationen in den Metadaten bleiben erhalten, aber da eine Bezeichnungs-ID- und -Namenszuordnung nicht mehr möglich ist, wird der angewendete Bezeichnungsname nicht angezeigt (z. B. in der Statusleiste), sodass Benutzer davon ausgehen werden, dass der Inhalt nicht gekennzeichnet ist. Wenn die Bezeichnung Verschlüsselung angewendet hat, bleibt die Verschlüsselung aufrecht, und beim Öffnen des Inhalts werden weiterhin der Name und die Beschreibung der nun archivierten Schutzvorlage angezeigt.
+- Bei Desktop-Apps: Die Bezeichnungsinformationen in den Metadaten bleiben erhalten, aber da eine Bezeichnungs-ID- und -Namenszuordnung nicht mehr möglich ist, wird der angewendete Bezeichnungsname nicht angezeigt (z. B. in der Statusleiste), sodass Benutzer davon ausgehen werden, dass der Inhalt nicht gekennzeichnet ist. Wenn die Bezeichnung eine Verschlüsselung angewendet hat, bleibt die Verschlüsselung bestehen, und beim Öffnen des Inhalts werden Benutzer weiterhin den Namen und die Beschreibung der jetzt archivierten Schutzvorlage sehen.
 
-- Für Office im Web: Der Bezeichnungsnamen wird nicht in der Statusleiste oder in der Spalte **Vertraulichkeit** angezeigt. Die Bezeichnungsinformationen in den Metadaten bleiben nur erhalten, wenn die Bezeichnung keine Verschlüsselung angewendet hat. Wenn die Bezeichnung Verschlüsselung angewendet hat und Sie [Vertraulichkeitsbezeichnungen für SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)aktiviert haben, werden die Bezeichnungsinformationen in den Metadaten entfernt und die Verschlüsselung wird aufgehoben. 
+- Für Office im Web: Benutzer sehen den Bezeichnungsnamen in der Statusleiste oder in der Spalte **Vertraulichkeit** nicht. Die Bezeichnungsinformationen in den Metadaten bleiben nur erhalten, wenn die Bezeichnung keine Verschlüsselung angewendet hat. Wenn die Bezeichnung Verschlüsselung angewendet hat und Sie [Vertraulichkeitsbezeichnungen für SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)aktiviert haben, werden die Bezeichnungsinformationen in den Metadaten entfernt und die Verschlüsselung wird aufgehoben. 
 
 Wenn Sie eine Vertraulichkeitsbezeichnung aus einer Bezeichnungsrichtlinie entfernen oder eine Vertraulichkeitsbezeichnung löschen, kann es bis zu 24 Stunden dauern, bis diese Änderungen für alle Benutzer und Dienste repliziert wurden.
 

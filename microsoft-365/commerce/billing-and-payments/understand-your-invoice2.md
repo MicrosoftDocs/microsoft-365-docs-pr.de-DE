@@ -25,14 +25,17 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Hier erfahren Sie, wie Sie die Informationen zu Gebühren, Abrechnung und Zahlung auf Ihrer Rechnung für Microsoft 365 für Unternehmen interpretieren sowie die Auftragsnummer ändern können.
-ms.openlocfilehash: 56f1ba3e7cc328593873aaf06ddfe6dc82fc1a17
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: b89ca38bf5d7b1d82982668dcd98e9979f1657be
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615375"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245016"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Grundlegendes zu Ihrer Rechnung für Microsoft 365 für Unternehmen
+
+> [!IMPORTANT]
+> Ab dem 26. Januar 2021 werden neue Bankkonten für Kunden in Belgien, Frankreich, Italien, Luxemburg, Portugal, Spanien und den USA nicht mehr unterstützt. Wenn Sie ein vorhandener Kunde in einem dieser Länder sind, können Sie ihr Abonnement weiterhin mit einem vorhandenen Bankkonto bezahlen, und Sie können ihm neue Abonnements hinzufügen, aber nur, solange das Bankkonto in einem guten Zustand ist.
 
 Entweder monatlich oder jährlich (je nachdem, welche Option Sie beim Kauf Ihres Abonnements gewählt haben) erhalten Sie eine E-Mail, in der Sie informiert werden, dass Ihre neue Rechnung im Admin Center zur Verfügung steht. [Erfahren Sie, wie Sie Ihre Rechnung finden und anzeigen](view-your-bill-or-invoice.md).
   

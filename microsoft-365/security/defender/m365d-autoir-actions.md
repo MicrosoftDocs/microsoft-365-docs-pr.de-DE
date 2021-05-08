@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: e3e842f812c5675334cc25fa35544165129db2b4
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f3dba2116e0f13f265937ef65fd3b69bcb1e725b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245888"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274652"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Anzeigen und Verwalten von Aktionen im Aktionscenter
 
@@ -36,25 +36,26 @@ ms.locfileid: "52245888"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Bedrohungsschutzfeatures in Microsoft 365 Defender können zu bestimmten Korrekturaktionen führen. Im Folgenden finden Sie einige Beispiele:
-- [Automatisierte Untersuchungen](m365d-autoir.md) können zu Korrekturaktionen führen, die automatisch ausgeführt werden oder auf die Genehmigung warten.
+Bedrohungsschutzfeatures in Microsoft 365 Defender können zu bestimmten Abhilfemaßnahmen führen. Im Folgenden finden Sie einige Beispiele:
+
+- [Automatisierte Untersuchungen](m365d-autoir.md) können zu Korrekturmaßnahmen führen, die automatisch ausgeführt werden oder auf Ihre Genehmigung warten.
 - Antivirus-, Antischamalware- und andere Bedrohungsschutzfeatures können zu Abhilfemaßnahmen führen, z. B. das Blockieren einer Datei, URL oder eines Prozesses oder das Senden eines Artefakts in Quarantäne.
 - Ihr Sicherheitsteam kann Korrekturaktionen manuell ausführen, [](advanced-hunting-overview.md) z. B. während der erweiterten Suche oder bei der Untersuchung von [Warnungen](investigate-alerts.md) oder [Vorfällen.](investigate-incidents.md)
 
 > [!NOTE]
-> Sie müssen über [geeignete Berechtigungen verfügen](m365d-action-center.md#required-permissions-for-action-center-tasks), um Abhilfemaßnahmen genehmigen oder ablehnen zu können. Weitere Informationen finden Sie unter [Voraussetzungen für die automatisierte Untersuchung und](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)Reaktion in Microsoft 365 Defender .
+> Sie müssen über [geeignete Berechtigungen verfügen](m365d-action-center.md#required-permissions-for-action-center-tasks), um Abhilfemaßnahmen genehmigen oder ablehnen zu können. Weitere Informationen finden Sie unter [Voraussetzungen](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
 
 ## <a name="review-pending-actions-in-the-action-center"></a>Überprüfen ausstehender Aktionen im Aktionscenter
 
 Es ist wichtig, ausstehende Aktionen so bald wie möglich zu genehmigen (oder abzulehnen), damit Ihre automatisierten Untersuchungen zeitnah fortgesetzt und abgeschlossen werden können. 
 
-![Genehmigen oder Ablehnen einer Aktion](../../media/air-actioncenter-itemselected.png)
-
 1. Gehen Sie zu [https://security.microsoft.com](https://security.microsoft.com), und melden Sie sich an. 
 
 2. Wählen Sie im Navigationsbereich **Info-Center** aus. 
 
-3. Wählen Sie im Info-Center auf der Registerkarte **Ausstehend** ein Element in der Liste aus. Der Flyoutbereich wird geöffnet.
+3. Wählen Sie im Info-Center auf der Registerkarte **Ausstehend** ein Element in der Liste aus. Der Flyoutbereich wird geöffnet. Im Folgenden sehen Sie ein Beispiel.
+
+   ![Genehmigen oder Ablehnen einer Aktion](../../media/air-actioncenter-itemselected.png)
 
 4. Überprüfen Sie die Informationen im Flyoutbereich, und gehen Sie dann wie folgt vor:
    - Wählen **Sie Die Seite Untersuchung öffnen aus,** um weitere Details zur Untersuchung anzuzeigen.
@@ -90,11 +91,11 @@ Wenn Sie festgestellt haben, dass ein Gerät oder eine Datei keine Bedrohung dar
 
 1. Wechseln Sie zum Aktionscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) und melden Sie sich an.
 
-2. Wählen Sie **auf der Registerkarte** Verlauf eine Datei mit dem Aktionstyp **Quarantänedatei aus.**
+2. Wählen Sie **auf der Registerkarte** Verlauf eine Datei mit dem Aktionstyp **Quarantänedatei** aus.
 
 3. Wählen Sie im Bereich auf der rechten Seite des Bildschirms Anwenden auf **X** weitere Instanzen dieser Datei aus, und wählen Sie **dann Rückgängig aus.**
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Anzeigen der Details und Ergebnisse einer automatischen Untersuchung](m365d-autoir-results.md)
-- [Erfahren Sie, wie Sie falsch positive/negative Ergebnisse behandeln (wenn Sie eins erhalten)](m365d-autoir-report-false-positives-negatives.md)
+- [Adress false positives oder false negatives)](m365d-autoir-report-false-positives-negatives.md)

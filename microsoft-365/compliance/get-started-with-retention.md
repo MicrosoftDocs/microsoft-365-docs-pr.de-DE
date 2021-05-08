@@ -18,19 +18,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Sie sind bereit, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen zum Schutz der Daten Ihrer Organisation zu implementieren, sind sich aber nicht sicher, wie Sie dies bewerkstelligen sollten? Hier finden Sie einige praktische Anweisungen für die ersten Schritte.
-ms.openlocfilehash: 65c196f8838378a10263370b1377b3eb43b14915
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: Sie sind bereit, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen zum Schutz der Daten Ihrer Organisation zu implementieren, sind aber nicht sicher, wo Sie starten sollen? Lesen Sie einige praxisbezogene Anleitungen für den Einstieg.
+ms.openlocfilehash: b39f6246fc9265319e0d4e5b053db6dfddc0d43a
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051907"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244588"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Erste Schritte zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Sind Sie bereit, die Daten Ihrer Organisation zu verwalten, indem Sie benötigte Inhalte beibehalten und nicht benötigte Inhalte löschen? Verwenden Sie diese ausführliche Anleitung für Ihre ersten Schritte:
+Sind Sie bereit, die Daten Ihrer Organisation zu verwalten, indem Sie die Inhalte aufbewahren, die Sie behalten müssen, und die Inhalte löschen, die Sie nicht mehr benötigen? Verwenden Sie die folgende Anleitung für den Einstieg:
 
 1. **Informieren Sie sich über die Funktionsweise der Aufbewahrung** in Microsoft 365 und ermitteln Sie anschließend, ob Aufbewahrungsrichtlinien, Aufbewahrungsbezeichnungen oder eine entsprechende Kombination erforderlich sind: [Weitere Informationen zur Aufbewahrung](retention.md)
 
@@ -56,9 +56,9 @@ Die Mitglieder Ihres Complianceteams, die Aufbewahrungsrichtlinien und Aufbewahr
 
 Alternativ zur Verwendung dieser Standardrolle können Sie eine neue Rollengruppe erstellen und die Rolle **Aufbewahrungsverwaltung** zu dieser Gruppe hinzufügen. Für eine schreibgeschützte Rolle verwenden Sie **Aufbewahrungsverwaltung – nur Leserechte**. 
 
-Weitere Informationen zu Rollengruppen und Rollen finden Sie unter [Berechtigungen im Security & Compliance Center](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
+Weitere Informationen zu Rollengruppen und Rollen finden Sie unter [Berechtigungen im Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
 
-Anweisungen zum Hinzufügen von Benutzern zu Rollengruppen und zum Zuweisen von Rollen finden Sie unter [Freigeben des Benutzerzugriffs auf das Security & Compliance Center](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Anweisungen zum Hinzufügen von Benutzern zu Rollengruppen und zum Zuweisen von Rollen finden Sie unter [Freigeben des Benutzerzugriffs auf das Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Diese Berechtigungen sind nur erforderlich, um Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen zu erstellen und anzuwenden. Die Person, die die Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen konfiguriert, benötigt keinen Zugriff auf die Inhalte.
 
@@ -86,8 +86,6 @@ Wenn Sie Aufbewahrungsbezeichnungen für die Datensatzverwaltung verwenden, gibt
 
 Die meisten Aufbewahrungsrichtlinien arbeiten unauffällig im Hintergrund ohne Benutzerinteraktion und benötigen daher nur wenig Dokumentation für Benutzer. Aufbewahrungsrichtlinien für Teams informieren Benutzer, wenn ihre Nachrichten gelöscht wurden, mit einem Link zu [Teams-Nachrichten über Aufbewahrungsrichtlinien](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
 
-Da Aufbewahrungsbezeichnungen in Microsoft 365-Apps über eine Benutzeroberfläche verfügen, sollten Sie den Endbenutzern und Ihrem Helpdesk eine Anleitung geben, bevor Sie diese Bezeichnungen in Ihrem Produktionsnetzwerk bereitstellen.
+Da Aufbewahrungsbezeichnungen in Microsoft 365-Apps über eine Benutzeroberfläche verfügen, sollten Sie den Endbenutzern und Ihrem Helpdesk eine Anleitung geben, bevor Sie diese Bezeichnungen in Ihrem Produktionsnetzwerk bereitstellen. Informationen zum Anwenden von Aufbewahrungsbezeichnungen in SharePoint und OneDrive, finden Sie unter [Anwenden von Aufbewahrungsbezeichnungen auf Dateien in SharePoint oder OneDrive ](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
 
-Die effektivste Art der Dokumentation für Endbenutzer umfasst maßgeschneiderte Anleitungen und Anweisungen zu den von Ihnen gewählten Namen und Konfigurationen von Aufbewahrungsbezeichnungen. Lesen Sie den folgenden Blogbeitrag für ein Downloadpaket, mit dem sie Benutzer trainieren und Einführungen nutzen können: [Endbenutzertraining in Aufbewahrungsbezeichnungen in M365 – Wie Sie Ihre Einführung beschleunigen können](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
-
-Sie können auch Grundanweisungen im folgenden Abschnitt finden: [Manuelles Anwenden von Aufbewahrungsbezeichnungen](create-apply-retention-labels.md#manually-apply-retention-labels).
+Die effektivste Art der Dokumentation für Endbenutzer sind jedoch maßgeschneiderte Anleitungen und Anweisungen zu den von Ihnen gewählten Namen und Konfigurationen von Aufbewahrungsbezeichnungen. Lesen Sie den folgenden Blogbeitrag für ein Downloadpaket, mit dem sie Benutzer trainieren und Einführungen nutzen können: [Endbenutzertraining in Aufbewahrungsbezeichnungen in M365 – Wie Sie Ihre Einführung beschleunigen können](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).

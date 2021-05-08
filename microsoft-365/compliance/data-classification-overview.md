@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Anhand des Dashboards für die Datenklassifizierung können Sie sehen, wie viele vertrauliche Daten in Ihrer Organisation gefunden und klassifiziert wurden.
-ms.openlocfilehash: 2867e545221061f5f99bf7ff669f9655b3777ba8
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+ms.openlocfilehash: d9c53d1f4679fbea9f5a7cded7f4bb6b6eb15b98
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899385"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244383"
 ---
 # <a name="learn-about-data-classification"></a>Informationen zur Datenklassifizierung
 
@@ -112,7 +112,7 @@ Die Karte mit den am häufigsten angewendeten Aufbewahrungsbezeichnungen zeigt, 
 ![Screenshot mit Platzhalter der am häufigsten angewendeten Aufbewahrungsbezeichnungen](../media/data-classification-top-retention-labels-applied.png)
 
 > [!NOTE]
-> Wenn auf dieser Karte die Meldung angezeigt wird, dass keine Aufbewahrungsbezeichnungen gefunden wurden, bedeutet dies, dass Sie keine Aufbewahrungsbezeichnungen erstellt oder veröffentlicht haben oder keine Aufbewahrungsbezeichnung auf Inhalte angewendet wurde. Informationen zu den ersten Schritten mit Aufbewahrungsbezeichnungen finden Sie unter:
+> Wenn auf dieser Karte die Meldung angezeigt wird, dass keine Speicherorte gefunden wurden, bedeutet dies, dass Sie keine Vertraulichkeitsbezeichnungen erstellt oder veröffentlicht haben, oder dass keine Aufbewahrungsbezeichnung auf Inhalte angewendet wurde. Für erste Schritte mit Vertraulichkeitsbezeichnungen lesen Sie:
 >- [Erste Schritte zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](get-started-with-retention.md)
 
 ## <a name="top-activities-detected"></a>Am häufigsten erkannte Aktivitäten
@@ -140,3 +140,5 @@ Der Zweck der Berichterstellung über die Datenklassifizierung besteht darin, Tr
 - [Informationen zu Typen vertraulicher Informationen](sensitive-information-type-learn-about.md)
 - [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
 - [Weitere Informationen zu trainierbaren Klassifizierern (Vorschau)](classifier-learn-about.md)
+
+Um zu erfahren, wie die Datenklassifizierung verwendet wird, um Datenschutzbestimmungen einzuhalten, lesen Sie: [Bereitstellen des Informationsschutzes für Datenschutzbestimmungen mit Microsoft 365](../solutions/information-protection-deploy.md)  (aka.ms/m365dataprivacy).

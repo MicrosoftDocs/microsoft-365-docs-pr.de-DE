@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Erfahren Sie, wie Sie eine Exchange Server für die Verwendung der hybriden modernen Authentifizierung (Hybrid Modern Authentication, HMA) konfigurieren und Ihnen eine sicherere Benutzerauthentifizierung und -autorisierung bieten.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9cb6d25a346ac48c9875a26f385cb733f1ff051f
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 2ae7a09387b62abc9e8c74f4a38c2fe8750bab19
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259451"
+ms.locfileid: "52244551"
 ---
 # <a name="how-to-configure-exchange-server-on-premises-to-use-hybrid-modern-authentication"></a>Lokale Konfiguration von Exchange Server derart, dass die moderne Hybridauthentifizierung verwendet wird
 
@@ -140,7 +140,7 @@ Wenn OAuth auf einem Server und einem der vier virtuellen Verzeichnisse fehlt, m
 Kehren Sie zum lokalen Exchange Verwaltungsshell für diesen letzten Befehl zurück. Jetzt können Sie überprüfen, ob Ihr lokales Konto über einen Eintrag für den evoSTS-Authentifizierungsanbieter verfügt:
 
 ```powershell
-Get-AuthServer | where {$_.Name -like "EvoSts"}
+Get-AuthServer | where {$_.Name -eq "EvoSts"}
 ```
 
 Ihre Ausgabe sollte einen AuthServer des Namens "EvoSts" anzeigen, und der Status "Enabled" sollte True sein. Wenn dies nicht angezeigt wird, sollten Sie die neueste Version des Assistenten für die Hybridkonfiguration herunterladen und ausführen.

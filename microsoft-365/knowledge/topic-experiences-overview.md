@@ -1,7 +1,7 @@
 ---
 title: Microsoft Viva Topics – Übersicht
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Übersicht über Viva-Themen.
-ms.openlocfilehash: 4598c47b07287789a7a194914232799de5ca7b85
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: b37572087794055724cb9533246f83794d88fb93
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488157"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275198"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics – Übersicht 
 
@@ -40,8 +40,12 @@ Viva Topics verwendet KI, um automatisch nach **Themen** in Ihrer Organisation z
 
 Wenn ein Thema in Inhalten auf SharePoint-Nachrichten und -Seiten erwähnt wird, wird es hervorgehoben. Sie können die Themenübersicht über die Markierung öffnen. Öffnen Sie die Themendetails aus dem Titel der Zusammenfassung. Das erwähnte Thema kann automatisch identifiziert werden oder wurde der Seite mit einem direkten Verweis auf das Thema durch den Seitenautor hinzugefügt. 
 
-   ![Themenhighlights](../media/knowledge-management/saturn.png) </br> 
+   ![Themenhighlights](../media/knowledge-management/saturn.png) 
 
+
+   ![Screenshot der Suche in Word über das Suchfeld.](../media/knowledge-management/word-search-2.png)
+
+   ![Screenshot, der die Suche in Word über das Kontextmenü Suchen zeigt.](../media/knowledge-management/word-search-1.png)
 
 ## <a name="knowledge-indexing"></a>Wissensindizierung
 
@@ -99,7 +103,7 @@ Weitere Informationen finden Sie unter [Verwalten von Themen im Themencenter](ma
 
 ## <a name="admin-controls"></a>Administratorsteuerelemente
 
-Mit Administratorsteuerelementen im Microsoft 365 Admin Center können Sie Themen von "Viva" verwalten. Mit ihnen können Microsoft 365 Global- oder SharePoint-Administrator:
+Administratorsteuerelemente im Microsoft 365 Admin Center ermöglichen ihnen die Verwaltung von Themen von "Viva". Mit ihnen können Microsoft 365 Global- oder SharePoint-Administrator:
 
 - Steuern, welche Benutzer in Ihrer Organisation Themen auf modernen SharePoint-Seiten oder in SharePoint-Suchergebnissen anzeigen dürfen.
 - Steuern, welche SharePoint-Websites durchsucht werden, um Themen zu identifizieren.

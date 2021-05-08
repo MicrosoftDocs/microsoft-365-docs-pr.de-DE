@@ -18,15 +18,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können sich in Exchange Online Protection (EOP) über Spambenachrichtigungen für Endbenutzer für isolierte Nachrichten informieren.
+description: Administratoren können mehr über Spambenachrichtigungen von Endbenutzern für isolierte Nachrichten in Exchange Online Protection (EOP) erfahren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9cff91be399bd98eb7e6e5a2a6d91a4a8bb602ec
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3f5eafbb51cd0ff32c69fa0cff85729ef95d3d1f
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206083"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274988"
 ---
 # <a name="use-user-spam-notifications-to-release-and-report-quarantined-messages"></a>Verwenden von Spambenachrichtigungen von Benutzern zum Veröffentlichen und Melden isolierter Nachrichten
 
@@ -56,7 +56,7 @@ Eine Spambenachrichtigung für Endbenutzer enthält die folgenden Informationen 
 
 - **Date**: Das Datum und die Uhrzeit (in UTC), zu der die Nachricht isoliert wurde.
 
-- **Absender blockieren**: Klicken Sie auf diesen Link, um den Absender ihrer Liste blockierter Absender hinzuzufügen. Weitere Informationen finden Sie unter [Blockieren eines E-Mail-Absenders.](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
+- **Absender blockieren**: Klicken Sie auf diesen Link, um den Absender der Liste blockierter Absender in Ihrem Postfach hinzuzufügen. Weitere Informationen finden Sie unter [Blockieren eines E-Mail-Absenders.](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
 
 - **Release**: Für Spamnachrichten (keine Phishing)-Nachrichten können Sie die Nachricht hier veröffentlichen, ohne das Security & Compliance Center unter Quarantäne zu stellen.
 

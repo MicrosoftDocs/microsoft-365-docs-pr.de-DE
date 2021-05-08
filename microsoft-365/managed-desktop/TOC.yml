@@ -48,6 +48,8 @@
           href: service-description/support.md
         - name: Vorgänge und Überwachung
           href: service-description/operations-and-monitoring.md
+        - name: Diagnoseprotokolle
+          href: service-description/diagnostic-logs.md
         - name: Anwendungsanforderungen
           href: service-description/mmd-app-requirements.md
         - name: Anwendungssteuerung

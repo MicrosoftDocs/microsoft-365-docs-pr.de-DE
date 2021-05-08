@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Erfahren Sie, wie Sie Ihr Microsoft 365 Business Standard-Abonnement einrichten.
-ms.openlocfilehash: 9efd14af2955e85b9b13c437ad869710f69a90f6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: ce45b4869000892b5640730e765dbfc9c21386ed
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579086"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244455"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Einrichten von Microsoft Business Standard
 
@@ -139,4 +139,4 @@ Microsoft 365 enthält keine öffentliche Website für Ihr Unternehmen. Wenn Sie
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-Mehr dazu unter [Verwenden einer öffentlichen Website](https://support.microsoft.com/office/3325d50e-d131-403c-a278-7f3296fe33a9).
+Mehr dazu unter [Verwenden einer öffentlichen Website](../../business-video/create-web-site.md).

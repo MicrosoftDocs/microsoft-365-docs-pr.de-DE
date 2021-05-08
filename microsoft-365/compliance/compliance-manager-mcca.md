@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie Microsoft Compliance Configuration Analyzer verwenden, um mit Microsoft Compliance Manager schnell in Betrieb zu gehen.
-ms.openlocfilehash: 2b91ac274d7270f5be9530742cf711a3918b287d
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 5d74d9980daf7f6ff7f013578cb11be83d18948e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570374"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244636"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Microsoft Compliance Configuration Analyzer for Compliance Manager (Vorschau)
 
@@ -27,13 +27,13 @@ ms.locfileid: "51570374"
 
 ## <a name="microsoft-compliance-configuration-analyzer-mcca-preview-overview"></a>Übersicht über Microsoft Compliance Configuration Analyzer (MCCA) (Vorschau)
 
-Die Microsoft Compliance Configuration Analyzer (MCCA) ist ein Vorschautool, mit dem Sie mit [Microsoft Compliance Manager beginnen können.](compliance-manager.md) MCCA ist ein PowerShell-basiertes Hilfsprogramm, das die aktuellen Konfigurationen Ihrer Organisation abruft und anhand der von Microsoft 365 empfohlenen bewährten Methoden überprüft. Diese bewährten Methoden basieren auf einer Reihe von Kontrollen, die wichtige Vorschriften und Standards für Datenschutz und Datenkontrolle enthalten.
+Die Microsoft Compliance Configuration Analyzer (MCCA) ist ein Vorschautool, mit dem Sie mit [Microsoft Compliance Manager beginnen können.](compliance-manager.md) MCCA ist ein PowerShell-basiertes Hilfsprogramm, das die aktuellen Konfigurationen Ihrer Organisation abruft und anhand der empfohlenen Microsoft 365 überprüft. Diese bewährten Methoden basieren auf einer Reihe von Kontrollen, die wichtige Vorschriften und Standards für Datenschutz und Datenkontrolle enthalten.
 
-MCCA kann Ihnen dabei helfen, schnell zu erkennen, welche Verbesserungsmaßnahmen in Compliance Manger für Ihre aktuelle Microsoft 365-Umgebung gelten. Jede von MCCA identifizierte Aktion gibt Ihnen Empfehlungen für die Implementierung, mit direkten Links zum Compliance Manager und der entsprechenden Lösung, um Korrekturmaßnahmen zu ergreifen.
+MCCA kann Ihnen dabei helfen, schnell zu erkennen, welche Verbesserungsmaßnahmen im Compliance Manager für Ihre aktuelle Umgebung Microsoft 365 sind. Jede von MCCA identifizierte Aktion gibt Ihnen Empfehlungen für die Implementierung, mit direkten Links zum Compliance Manager und der entsprechenden Lösung, um Korrekturmaßnahmen zu ergreifen.
 
-Eine weitere Ressource zum Verständnis von MCCA ist der Besuch der [README-Anweisungen auf GitHub](https://github.com/OfficeDev/MCCA#overview). Diese Seite enthält detaillierte Informationen zu den Voraussetzungen und enthält vollständige Installationsanweisungen. Sie benötigen kein GitHub-Konto, um auf diese Seite zu zugreifen.
+Eine weitere Ressource zum Verständnis von MCCA ist der Besuch der [README-Anweisungen auf GitHub.](https://github.com/OfficeDev/MCCA#overview) Diese Seite enthält detaillierte Informationen zu den Voraussetzungen und enthält vollständige Installationsanweisungen. Sie benötigen kein GitHub, um auf diese Seite zu zugreifen.
 
-**Verfügbarkeit**: MCCA ist für alle Organisationen mit Office 365- und Microsoft 365-Lizenzen und Kunden der US Government Community (GCC) Moderate, GCC High und Department of Defense (DoD) verfügbar.
+**Verfügbarkeit**: MCCA ist für alle Organisationen mit Office 365- und Microsoft 365-Lizenzen und Kunden des US Government Community (GCC) Moderate, GCC High und Department of Defense (DoD) verfügbar.
 
 ## <a name="install-mcca-and-run-a-report"></a>Installieren von MCCA und Ausführen eines Berichts
 
@@ -46,8 +46,8 @@ Zu Beginn benötigen Sie das Exchange Online PowerShell-Modul (v2.0.3 oder höhe
 
 Um MCCA zu installieren, verwenden Sie zunächst PowerShell im Administratormodus. Führen Sie die folgenden Schritte aus:
 
-1. Wählen Sie die Schaltfläche Windows **Start** aus.
-2. Geben **Sie PowerShell** ein, klicken Sie mit der rechten Maustaste **auf Windows PowerShell** und wählen Sie dann Als Administrator ausführen **aus.**
+1. Wählen Sie die Windows **Startschaltfläche** aus.
+2. Geben **Sie PowerShell ein,** klicken Sie mit der rechten Maustaste **auf Windows PowerShell** und wählen Sie dann Als Administrator ausführen **aus.**
 1. Geben Sie an der Eingabeaufforderung Folgendes ein:
 
     ```powershell
@@ -65,13 +65,13 @@ Nach der Installation von MCCA können Sie MCCA ausführen und einen Bericht gen
     Get-MCCAReport
     ```
 
-   Wenn Sie ein GCC High-Kunde sind, müssen Sie einen zusätzlichen Eingabeparameter angeben, um den Bericht ausführen zu können:
+   Wenn Sie ein GCC Kunden sind, müssen Sie einen zusätzlichen Eingabeparameter angeben, um den Bericht ausführen zu können:
 
     ```powershell
     Get-MCCAReport -ExchangeEnvironmentName O365USGovGCCHigh
     ```
 
-3. Sobald MCCA ausgeführt wird, wird eine erste Version überprüft und nach Anmeldeinformationen gefragt. Melden Sie sich an der Eingabeaufforderung des Benutzernamens mit Ihrer Microsoft 365-Konto-E-Mail-Adresse an ( zeigen Sie die Zum Erstellen von Berichten berechtigten Rollen[an).](#role-based-reporting) Geben Sie dann Ihr Kennwort an der Kennwortaufforderung ein.
+3. Sobald MCCA ausgeführt wird, wird eine erste Version überprüft und nach Anmeldeinformationen gefragt. Melden Sie sich an der Eingabeaufforderung für den Benutzernamen mit Ihrer Microsoft 365 E-Mail-Adresse ihres Kontos an ( zeigen Sie die Zum Erstellen von Berichten berechtigten Rollen[an).](#role-based-reporting) Geben Sie dann Ihr Kennwort an der Kennwortaufforderung ein.
 
 Der Bericht dauert dann ca. 2 bis 5 Minuten. Wenn sie fertig ist, wird ein Browserfenster geöffnet und Ihr HTML-Bericht angezeigt. Jedes Mal, wenn Sie das Tool ausführen, werden Ihre Anmeldeinformationen gefragt und ein neuer Bericht generiert. Dieser Bericht wird lokal im folgenden Verzeichnis gespeichert:
 
@@ -85,7 +85,7 @@ Ihr Bericht spiegelt Daten basierend auf dem Datum und der Uhrzeit wider, zu der
 
 #### <a name="geolocation-based-reporting"></a>Geolocationbasierte Berichterstellung
 
-Der **Abschnitt Note** zeigt, dass Ihr Bericht basierend auf dem geografischen Standort Ihres Mandanten angepasst wird. Die im Tool aufgeführten Empfehlungen sind spezifisch für Ihr Land oder Ihre Region.
+Der **Abschnitt Note** zeigt, dass Ihr Bericht basierend auf dem geografischen Standort Ihres Mandanten angepasst wird. Empfehlungen, die im Tool aufgeführt sind, ist für Ihr Land oder Ihre Region spezifisch.
 
 Ihre Geolocationauswahl wird verwendet, um typen von vertraulichen Informationen (SENSITIVE Information Types, SITs) zu bewerten, die für diese Geolocation relevant sind, und einen Bericht zu generieren, der an Ihrem Land oder Ihrer Region ausgerichtet ist. Wählen Sie Geolocations basierend auf Daten aus, die Sie in Ihrem Mandanten haben.
 
@@ -129,11 +129,11 @@ Die folgende Tabelle zeigt, welche Rollen Zugriff auf welche Abschnitte des Beri
 ![MCCA – Rollen](../media/compliance-manager-mcca-roles.png "MCCA-Rollen")
 
 Ausnahmen:
-1. Abgesehen vom Abschnitt "Verwenden von IRM für Exchange Online" können Benutzer keinen Bericht für IP generieren.
-2. Benutzer können unabhängig vom Abschnitt "Verwenden von IRM für Exchange Online" berichte für IP generieren.
+1. Benutzer können keinen Bericht für IP generieren, abgesehen vom Abschnitt "Verwenden von IRM für Exchange Online".
+2. Benutzer können den Bericht für IP außerhalb des Abschnitts "Verwenden von IRM für Exchange Online" generieren.
 3. Benutzer können unabhängig vom Abschnitt "Kommunikationskonformität in O365 aktivieren" berichte für IP generieren.
 4. Benutzer können keinen Bericht für IP generieren, abgesehen vom Abschnitt "Überwachung in Office 365 aktivieren".
-5. Benutzer können den Bericht für IP außerhalb des Abschnitts "Überwachung in Office 365 aktivieren" generieren.
+5. Benutzer können einen Bericht für IP generieren, abgesehen vom Abschnitt "Überwachung in Office 365 aktivieren".
 
 #### <a name="solutions-summary-section"></a>Abschnitt "Lösungszusammenfassung"
 
@@ -153,7 +153,7 @@ Wählen Sie ein Feld aus, um Verbesserungen und Empfehlungen anzeigen zu können
 
 **Elemente mit dem Verbesserungsstatus**
 
-Wählen Sie das Dropdown neben der **Bezeichnung Verbesserung** rechts neben der Verbesserungsaktion aus. Sie sehen eine kurze Zusammenfassung und Details zu Ihren aktuellen Einstellungen und den empfohlenen Verbesserungsmaßnahmen. Die Zusammenfassung enthält direkte Links zum Compliance Manager, die entsprechende Lösung im Microsoft 365 Compliance Center und die entsprechende Dokumentation.
+Wählen Sie das Dropdown neben der **Bezeichnung Verbesserung** rechts neben der Verbesserungsaktion aus. Sie sehen eine kurze Zusammenfassung und Details zu Ihren aktuellen Einstellungen und den empfohlenen Verbesserungsmaßnahmen. Die Zusammenfassung enthält direkte Links zum Compliance Manager, die entsprechende Lösung im Microsoft 365 Compliance Center und relevante Dokumentation.
 
 Durch Klicken auf den Link Compliance-Manager erhalten Sie eine gefilterte Ansicht aller Verbesserungsmaßnahmen innerhalb dieser Lösung, die Sie noch nicht implementiert haben. Von dort aus können Sie die Anzahl der Punkte sehen, die Sie erreichen können, um Ihre Compliancebewertung zu [erhöhen,](compliance-score-calculation.md)und die Bewertungen, auf die sie angewendet werden, sowie die anwendbaren Vorschriften und Zertifizierungen.
 
@@ -161,10 +161,10 @@ Für DLP gibt es eine Schaltfläche **"Korrekturskript",** mit der Sie ein vorab
 
 **Elemente mit Empfehlungsstatus**
 
-Wählen Sie das Dropdown neben der **Empfehlungsbezeichnung** rechts neben der Verbesserungsaktion aus. Es wird eine Zusammenfassung der aktuellen Microsoft 365-Umgebung Ihrer Organisation im Zusammenhang mit der Verbesserungsaktion sowie empfohlene bewährte Methoden angezeigt.
+Wählen Sie das Dropdown neben der **Empfehlungsbezeichnung** rechts neben der Verbesserungsaktion aus. Es wird eine Zusammenfassung der aktuellen Umgebung Microsoft 365 Ihrer Organisation im Zusammenhang mit der Verbesserungsaktion sowie empfohlene bewährte Methoden angezeigt.
 
 ## <a name="resources"></a>Ressourcen
 
-Weitere Informationen zum Installieren, Einrichten und Verwenden von MCCA finden Sie in den [README-Anweisungen](https://github.com/OfficeDev/MCCA#overview) auf GitHub (kein GitHub-Konto erforderlich).
+Ausführlichere Informationen zum Installieren, Einrichten und Verwenden von MCCA finden Sie in den [README-Anweisungen](https://github.com/OfficeDev/MCCA#overview) zu GitHub (kein GitHub erforderlich).
 
 Weitere Informationen zu Windows PowerShell finden Sie unter [Verwenden der PowerShell-Dokumentation](/powershell/scripting/how-to-use-docs?view=powershell-7). Siehe auch [Starten Windows PowerShell](/powershell/scripting/windows-powershell/starting-windows-powershell?view=powershell-7).

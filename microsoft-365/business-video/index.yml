@@ -25,21 +25,21 @@ productDirectory:
       url: sign-up.md
     - title: Einrichten von Computern
       imageSrc: 'https://docs.microsoft.com/office/media/icons/device-desktop-download-blue.svg'
-      summary: 'Installieren von Office, Einrichten von E-Mails, Migrieren von Dateien...'
+      summary: 'Installieren Office, Einrichten von E-Mails, Migrieren von Dateien...'
       url: upgrade.md
     - title: Einrichten mobiler Geräte
       imageSrc: 'https://docs.microsoft.com/office/media/icons/device-mobile-download-blue.svg'
-      summary: Installieren von Office-Apps auf mobilen Geräten.
+      summary: Installieren Office Apps auf mobilen Geräten.
       url: work-from-anywhere.md
     - title: Zusammenarbeit mit anderen Personen
       imageSrc: 'https://docs.microsoft.com/office/media/icons/collaborate-blue.svg'
-      summary: Arbeiten Sie mit Mitarbeitern und Kunden in Teams zusammen.
+      summary: Arbeiten Sie mit Mitarbeitern und Kunden in Teams.
       url: collab-outlook-teams.md
-    - title: Speichern und Freigeben von Dateien
+    - title: Store und Freigeben von Dateien
       imageSrc: 'https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg'
-      summary: Speichern Sie Dateien sicher und greifen Sie von überall aus zu.
+      summary: Store dateien sicher und zugriff von überall aus.
       url: overview-file-sharing.md
-    - title: Einrichten von Business Voice
+    - title: Business Voice einrichten
       imageSrc: 'https://docs.microsoft.com/office/media/icons/call-phone-blue.svg'
       summary: Einrichten von Telefondienst und Konferenzen.
       url: business-voice.md
@@ -62,13 +62,13 @@ productDirectory:
     - title: Anfordern von Support
       imageSrc: 'https://docs.microsoft.com/office/media/icons/headset-blue.svg'
       summary: Erhalten Sie Hilfe zu Microsoft 365 Business.
-      url: find-help-answers.md
+      url: get-help-support.md
 additionalContent:
   sections:
     - title: Weitere Informationen
       items:
         - title: Erfahren Sie mehr über Office
-          summary: 'Erfahren Sie, wie Sie Word, Excel, PowerPoint und andere Office-Apps verwenden.'
+          summary: 'Erfahren Sie, wie Sie Word, Excel, PowerPoint und andere Office verwenden.'
           url: 'https://support.microsoft.com/training'
         - title: Schulungen für ITPros erhalten
           summary: Vollständige Lernpfade für Kleinunternehmen und Unternehmen.

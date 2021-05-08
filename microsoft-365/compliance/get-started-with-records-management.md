@@ -16,19 +16,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Benötigen Sie eine Lösung für die Datensatzverwaltung für Microsoft 365, die hochwertige Inhalte für rechtliche, geschäftliche oder behördliche Verpflichtungen verwaltet, aber Sie sind sich nicht sicher, wo Sie anfangen sollen? Hier finden Sie einige praktische Anweisungen für die ersten Schritte.
-ms.openlocfilehash: 2ab5eaa494094dcbf0723f426fcbd644901c22bb
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: Benötigen Sie eine Lösung für die Datensatzverwaltung für Microsoft 365, die hochwertige Inhalte für rechtliche, geschäftliche oder behördliche Verpflichtungen verwaltet, aber Sie sind sich nicht sicher, wo Sie anfangen sollen? Lesen Sie einige praxisorientierte Anleitungen für den Einstieg.
+ms.openlocfilehash: 0382c1419654e4c1d2c809b3a9c32252fd50f554
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051897"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244344"
 ---
 # <a name="get-started-with-records-management"></a>Erste Schritte mit der Datensatzverwaltung
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Sind Sie bereit, mit der Verwaltung der hochwertigen Inhalte Ihrer Organisation für rechtliche, geschäftliche oder behördliche Verpflichtungen mithilfe einer Datensatzverwaltungslösung in Microsoft 365 zu beginnen? Verwenden Sie diese ausführliche Anleitung für Ihre ersten Schritte:
+Sind Sie bereit, mit der Verwaltung der hochwertigen Inhalte Ihrer Organisation für rechtliche, geschäftliche oder behördliche Verpflichtungen mithilfe einer Datensatzverwaltungslösung in Microsoft 365 zu beginnen? Verwenden Sie die nachfolgende Anleitung für den Einstieg:
 
 1. **Grundlegendes zur Datensatzverwaltungslösung** und welche Aktionen zulässig bzw. blockiert sind, wenn Dokumente und E-Mails als Datensätze deklariert werden: [Mehr zur Datensatzverwaltung](records-management.md). 
 
@@ -53,9 +53,9 @@ Die Mitglieder Ihres Complianceteams, die für die Datensatzverwaltung verantwor
 
 Für eine schreibgeschützte Rolle können Sie eine neue Rollengruppe erstellen und die Rolle **Datensatzverwaltung – nur Leserechte** zu dieser Gruppe hinzufügen. 
 
-Weitere Informationen zu Rollengruppen und Rollen finden Sie unter [Berechtigungen im Security & Compliance Center](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
+Weitere Informationen zu Rollengruppen und Rollen finden Sie unter [Berechtigungen im Security & Compliance Center](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
 
-Anweisungen zum Hinzufügen von Benutzern zu Rollengruppen und zum Zuweisen von Rollen finden Sie unter [Freigeben des Benutzerzugriffs auf das Security & Compliance Center](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Anweisungen zum Hinzufügen von Benutzern zu Rollengruppen und zum Zuweisen von Rollen finden Sie unter [Freigeben des Benutzerzugriffs auf das Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Diese Berechtigungen sind nur erforderlich, um Aufbewahrungsbezeichnungen zu erstellen, zu konfigurieren und anzuwenden, die Datensätze deklarieren, um Löschungen zu verwalten. Die Person, die die Bezeichnungen konfiguriert, benötigt keinen Zugriff auf die Inhalte.
 
@@ -84,8 +84,8 @@ Anhand der folgenden Tabelle können Sie Ihre geschäftlichen Anforderungen ents
 
 ## <a name="end-user-documentation-for-records"></a>Dokumentation zu Datensätzen für Endbenutzer
 
-Aufbewahrungsbezeichnungen, die für die Datensatzverwaltung verwendet werden, sind in Microsoft 365-Apps in der Benutzeroberfläche vorhanden. Vergewissern Sie sich, Ihren Endbenutzern und Ihrem Helpdesk Anleitungen bereitstellen, bevor Sie Ihrem Produktionsnetzwerk Aufbewahrungsbezeichnungen bereitstellen.
+Aufbewahrungsbezeichnungen, die für die Datensatzverwaltung verwendet werden, verfügen in Microsoft 365-Apps über eine Benutzeroberfläche. Stellen Sie sicher, dass Sie den Endbenutzern und Ihrem Helpdesk eine Anleitung geben, bevor Sie Aufbewahrungsbezeichnungen in Ihrem Produktionsnetzwerk bereitstellen.
 
-Die effektivste Art der Dokumentation für Endbenutzer umfasst maßgeschneiderte Anleitungen und Anweisungen zu den von Ihnen gewählten Namen und Konfigurationen von Aufbewahrungsbezeichnungen. Lesen Sie den folgenden Beitrag für ein Downloadpaket, mit dem sie Benutzer trainieren und Einführungen nutzen können: [Endbenutzertraining in Aufbewahrungsbezeichnungen in M365 – Wie Sie Ihre Einführung beschleunigen können](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
+Informationen zum Anwenden von Aufbewahrungsbezeichnungen in SharePoint und OneDrive, die auch Informationen zum Entsperren von Datensätzen für die Bearbeitung enthalten, finden Sie unter [Anwenden von Aufbewahrungsbezeichnungen auf Dateien in SharePoint oder OneDrive ](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
 
-Sie können auch Grundanweisungen im folgenden Abschnitt finden: [Manuelles Anwenden von Aufbewahrungsbezeichnungen](create-apply-retention-labels.md#manually-apply-retention-labels).
+Die effektivste Art der Dokumentation für Endbenutzer sind jedoch maßgeschneiderte Anleitungen und Anweisungen zu den von Ihnen gewählten Namen und Konfigurationen von Aufbewahrungsbezeichnungen. Lesen Sie den folgenden Blogbeitrag für ein Downloadpaket, mit dem sie Benutzer trainieren und Einführungen nutzen können: [Endbenutzertraining in Aufbewahrungsbezeichnungen in M365 – Wie Sie Ihre Einführung beschleunigen können](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).

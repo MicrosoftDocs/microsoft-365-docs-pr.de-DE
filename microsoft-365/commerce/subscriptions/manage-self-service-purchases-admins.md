@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Administratoren können erfahren, wie Sie Self-Service-Käufe von Benutzern in ihrer Organisation verwalten.
-ms.openlocfilehash: febf0ee470e735a454dc7a9e747de5025c7a4a51
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 59d64c047ddf4f33c2ef3277f3139f1b7692b891
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398181"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244992"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Self-Service-Einkäufe (Administrator) verwalten
 
@@ -43,14 +43,13 @@ Sie können auch steuern, ob Benutzer in Ihrer Organisation Self-Service-Käufe 
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zur Seite **Abrechnung** > **Ihre Produkte.**
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Ihre Produkte</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite **Abrechnung** > **Ihre Produkte.**
-
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ihre Produkte</a>.
 ::: moniker-end
 
 2. Wählen Sie **auf der** Registerkarte Produkte das Filtersymbol aus, und wählen Sie **dann Self-Service aus.**
@@ -59,7 +58,7 @@ Sie können auch steuern, ob Benutzer in Ihrer Organisation Self-Service-Käufe 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Anzeigen von Lizenzen für ein Self-Service-Kaufabonnement
 
 > [!NOTE]
-> Als Administrator können Sie keine Lizenzen für ein Self-Service-Kaufabonnement zuweisen oder zuweisen, das von einem Benutzer in Ihrer Organisation erworben wurde. Sie können [ein Self-Service-Kaufabonnement übernehmen](#take-over-a-self-service-purchase-subscription)und dann Lizenzen zuweisen oder zuweisen.
+> Als Administrator können Sie keine Lizenzen für ein Self-Service-Kaufabonnement zuweisen oder aufheben, die von einem Benutzer in Ihrer Organisation erworben wurden. Sie können ein [Self-Service-Kaufabonnement übernehmen](#take-over-a-self-service-purchase-subscription)und dann Lizenzen zuweisen oder die Zuweisung von Lizenzen kündigen.
 
 ::: moniker range="o365-worldwide"
 
@@ -69,12 +68,13 @@ Sie können auch steuern, ob Benutzer in Ihrer Organisation Self-Service-Käufe 
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zur Seite  > **Abrechnungslizenzen.**
+ 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Lizenzen</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite  > **Abrechnungslizenzen.**
+ 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Lizenzen</a>.
 
 ::: moniker-end
 
@@ -189,7 +189,7 @@ Wenn Sie ein Self-Service-Kaufabonnement kündigen, verlieren Benutzer mit Lizen
 ::: moniker-end
 
 2. Wählen Sie **auf der** Registerkarte Produkte das Filtersymbol aus, und wählen Sie **dann Self-Service aus.**
-3. Wählen Sie das Abonnement aus, das Sie kündigen möchten.
+3. Wählen Sie das Abonnement aus, das Sie stornieren möchten.
 4. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Abonnements und** Einstellungen die Option Kontrolle über dieses Abonnement **übernehmen aus.**
 5. Wählen Sie im rechten Bereich Abonnement **abbrechen aus.**
 6. Wählen Sie in der Dropdownliste einen Grund für Ihre Kündigung aus, und wählen Sie Dann **Abonnement abbrechen aus.**

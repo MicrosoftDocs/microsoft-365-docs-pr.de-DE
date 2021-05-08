@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Erfahren Sie, wie Sie Ihr Microsoft 365-Apps für Business-Abonnement einrichten.
-ms.openlocfilehash: 56eb3eb0f28ee99aab1c50a970626c61514335cd
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 6978a5402792906ef773934e5201b3ea6671c010
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579098"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244479"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Microsoft 365 Apps for Business einrichten
 
@@ -99,7 +99,7 @@ Zeigen Sie die Schritte für Ihr Gerät an: [Android](https://support.microsoft.
   
 ## <a name="store-files-online"></a>Onlinespeichern von Dateien
 
-Microsoft macht die Onlinespeicherung zu einem Kinderspiel. Wenn Sie erfahren möchten, welche Speicherorte für Ihr Unternehmen am besten geeignet sind, lesen Sie [Mögliche Speicherorte für Dateien in Office 365](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790).
+Microsoft macht die Onlinespeicherung zu einem Kinderspiel. Wenn Sie erfahren möchten, welche Speicherorte für Ihr Unternehmen am besten geeignet sind, lesen Sie [Mögliche Speicherorte für Dateien in Office 365](../../business-video/store-files.md).
   
 Jeder erhält automatisch einen **OneDrive**-Cloudspeicherort, wenn Sie Microsoft-Konten für diese Person erstellen. Mit OneDrive können Sie über Computer, Smartphones und Tablets auf Dateien zugreifen.
   

@@ -23,14 +23,17 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie Ihre Zahlungsmethoden im Microsoft 365 Admin Center verwalten können.
 ms.date: 04/02/2021
-ms.openlocfilehash: 4b35b7b8e874915e5f9c792686ff0e368292c802
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: b69096bb05ada6ce7a1ee619aa78bc04639e7004
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107039"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244720"
 ---
 # <a name="manage-payment-methods"></a>Verwalten von Zahlungsmethoden
+
+> [!IMPORTANT]
+> Seit dem 26. Januar 2021 werden neue Bankkonten für Kunden in Belgien, Frankreich, Italien, Luxemburg, Portugal, Spanien und in den Vereinigte Staaten nicht mehr unterstützt. Wenn Sie ein bestehender Kunde in einem dieser Länder sind, können Sie weiterhin mit einem bestehenden Bankkonto für Ihr Abonnement bezahlen, und Sie können neue Abonnements hinzufügen, aber nur, solange Ihr Bankkonto sich in gutem Zustand befindet.
 
 Wenn Sie Business-Produkte oder -Dienste von Microsoft kaufen, können Sie eine vorhandene Zahlungsmethode verwenden oder eine neue hinzufügen. Die Bezahlung von gekauften Produkten kann über eine Kreditkarte, eine Debitkarte oder ein Bankkonto erfolgen.
 

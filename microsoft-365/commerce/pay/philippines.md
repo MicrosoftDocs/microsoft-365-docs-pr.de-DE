@@ -8,16 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.collection: Adm_Commerce_Pay
+ms.custom: CommercePayInfo
 localization_priority: Normal
 description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6a57b62080e5f76977299f5c38ca705d93865cad
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 18f86a6ab61cc3f9ccc4fac70f61da3ee2083fc1
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50542812"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52273068"
 ---
 # <a name="payment-information-for-philippines"></a>Zahlungsinformationen für Philippinen
 

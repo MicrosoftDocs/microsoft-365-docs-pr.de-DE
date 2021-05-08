@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Erfahren Sie mehr über Microsoft 365 Business Premium, einen Abonnementdienst, der Office-Produktivitäts-Apps und erweiterten Schutz für Ihr Unternehmen gegen Cyberbedrohungen umfasst.
-ms.openlocfilehash: d6b0ded25e0478f85e73b807789463e4d55b1bb0
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: a355c9856ead4a66f6876cc7cb5aa8eb469d7f12
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578345"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244854"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Überblick über Microsoft 365 Business Premium
 
@@ -46,7 +46,7 @@ Schauen Sie sich dieses Video an, um einen schnellen Überblick über Microsoft 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816), an. 
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](../business-video/index.yml), an. 
 
 Microsoft 365 Business Premium ist für bis zu 300 Lizenzen vorgesehen. Wenn Sie weitere Lizenzen benötigen, lesen Sie die Dokumentation zu [Microsoft 365 Enterprise](../enterprise/index.yml), um weitere Informationen zu erhalten.
 
@@ -75,7 +75,7 @@ So hilft Microsoft 365 Business Premium bei dem **Schutz vor Bedrohungen**:
 
 - Durchführen einer erweiterten Analyse von E-Mail-Anlagen in einer Sandkastenumgebung zum Erkennen neu entwickelter Schadsoftware (Sichere Anlagen). 
 
-- Aktivieren von Antiphishingrichtlinien, die Computerlernmodelle und Identitätswechselerkennung verwenden, um Schutz vor erweiterten Angriffen zu bieten (Antiphishing in Defender for Office 365 Intelligence). 
+- Aktivieren von Antiphishingrichtlinien, die Computerlernmodelle und Identitätswechselerkennung verwenden, um Schutz vor erweiterten Angriffen zu bieten (Antiphishing in Defender für Office 365 Intelligence). 
 
 - Einrichten von erweiterten Richtlinien, die den Zugriff von nicht vertrauenswürdigen Speicherorten deaktivieren oder die mehrstufige Authentifizierung von vertrauenswürdigen Orten wie Ihrem Office-Netzwerk umgehen (Azure MFA mit vertrauenswürdigen IPs und bedingtem Zugriff). 
 
@@ -111,6 +111,6 @@ Eine vollständige Liste der Sicherheitsfunktionen finden Sie unter [Microsoft 3
 
 - Wenn Sie noch über keinen Partner verfügen und Microsoft 365 Business Premium erhalten möchten, [kaufen Sie es hier](https://www.microsoft.com/microsoft-365/business) und folgen Sie den Anweisungen unter [Registrieren](sign-up.md).
 
-## <a name="see-also"></a>Siehe auch
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Microsoft 365 Business Premium-Schulungsvideos](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816)
+[Microsoft 365 Business Premium Schulungsvideos](../business-video/index.yml) (Linkseite)

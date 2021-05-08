@@ -19,12 +19,12 @@ ms.collection:
 description: Was sind bewährte Methoden für Exchange Online Protection (EOP) und Defender for Office 365-Sicherheitseinstellungen? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Defender für Office 365 verwenden?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8ba88f9b9ebcc34e0ea146a74c01dea8f200ee0b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3a4447d6eaeeb907eb750d2ad668fdbb9031c28b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206651"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274868"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Empfohlene Einstellungen für EOP und Microsoft Defender für Office 365-Sicherheit
 
@@ -57,6 +57,8 @@ Antispam, Schadsoftware und Antiphishing sind EOP-Features, die von Administrato
 
 Informationen zum Erstellen und Konfigurieren von Antispamrichtlinien finden Sie unter [Configure anti-spam policies in Office 365](configure-your-spam-filter-policies.md).
 
+<br>
+
 ****
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
@@ -83,6 +85,8 @@ Informationen zum Erstellen und Konfigurieren von Antispamrichtlinien finden Sie
 Es gibt mehrere andere Erweiterte Spamfiltereinstellungen (Advanced Spam Filter, ASF) in Antispamrichtlinien, die derzeit veraltet sind. Weitere Informationen zu den Zeitachsen für die Abschreibung dieser Features werden außerhalb dieses Artikels mitgeteilt.
 
 Es wird empfohlen, diese ASF-Einstellungen **für Standard-** und  **Strict-Ebenen zu** deaktivieren. Weitere Informationen zu den ASF-Einstellungen finden Sie unter [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
+
+<br>
 
 ****
 
@@ -111,6 +115,8 @@ Informationen zum Erstellen und Konfigurieren ausgehender Spamrichtlinien finden
 
 Weitere Informationen zu den standardmäßigen Sendegrenzwerte im Dienst finden Sie unter [Senden von Grenzwerten](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-1).
 
+<br>
+
 ****
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
@@ -125,11 +131,13 @@ Weitere Informationen zu den standardmäßigen Sendegrenzwerte im Dienst finden 
 
 Informationen zum Erstellen und Konfigurieren von An malware-Richtlinien finden Sie unter [Configure anti-malware policies in Office 365](configure-anti-malware-policies.md).
 
+<br>
+
 ****
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Möchten Sie Empfänger benachrichtigen, wenn ihre Nachrichten unter Quarantäne gestellt werden?** <p> _Aktion_|Nein <p> _DeleteMessage_|Nein <p> _DeleteMessage_|Nein <p> _DeleteMessage_|Wenn Schadsoftware in einer E-Mail-Anlage erkannt wird, wird die Nachricht in Quarantäne gestellt und kann nur von einem Administrator freigegeben werden.|
+|**Möchten Sie Empfänger benachrichtigen, wenn ihre Nachrichten unter Quarantäne gestellt werden?** <p> _Action_|Nein <p> _DeleteMessage_|Nein <p> _DeleteMessage_|Nein <p> _DeleteMessage_|Wenn Schadsoftware in einer E-Mail-Anlage erkannt wird, wird die Nachricht in Quarantäne gestellt und kann nur von einem Administrator freigegeben werden.|
 |**Filter für häufige Anlagentypen** <p> _EnableFileFilter_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`|Mit dieser Einstellung werden Nachrichten isoliert, die ausführbare Anlagen basierend auf dem Dateityp enthalten, unabhängig vom Anlageninhalt.|
 |**Schadsoftware Null-Stunden-Autobereinigung** <p> _ZapEnabled_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
 |**Benachrichtigen interner Absender** über die nicht zugestellte Nachricht <p> _EnableInternalSenderNotifications_|Deaktiviert <p> `$false`|Deaktiviert <p> `$false`|Deaktiviert <p> `$false`||
@@ -139,6 +147,8 @@ Informationen zum Erstellen und Konfigurieren von An malware-Richtlinien finden 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>EOP-Standardeinstellungen für Antiphishingrichtlinien
 
 Weitere Informationen zu diesen Einstellungen finden Sie unter [Spoof-Einstellungen](set-up-anti-phishing-policies.md#spoof-settings). Informationen zum Konfigurieren dieser Einstellungen finden Sie [unter Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md).
+
+<br>
 
 ****
 
@@ -171,6 +181,8 @@ EOP-Kunden erhalten grundlegende Antiphishing, wie zuvor beschrieben, aber Micro
 
 Weitere Informationen zu diesen Einstellungen finden Sie unter [Identitätswechseleinstellungen in Antiphishingrichtlinien in Microsoft Defender für Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
+<br>
+
 ****
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
@@ -194,6 +206,8 @@ Weitere Informationen zu diesen Einstellungen finden Sie unter [Identitätswechs
 
 Beachten Sie, dass es sich um dieselben Einstellungen handelt, die in den [Antispamrichtlinieneinstellungen in EOP verfügbar sind.](#eop-anti-spam-policy-settings)
 
+<br>
+
 ****
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
@@ -206,6 +220,8 @@ Beachten Sie, dass es sich um dieselben Einstellungen handelt, die in den [Antis
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Erweiterte Einstellungen in Antiphishingrichtlinien in Microsoft Defender für Office 365
 
 Weitere Informationen zu dieser Einstellung finden Sie unter [Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365). Informationen zum Konfigurieren dieser Einstellung finden Sie [unter Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
+
+<br>
 
 ****
 
@@ -224,6 +240,8 @@ Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [Configure
 
 In PowerShell verwenden Sie das [Cmdlet Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) für diese Einstellungen.
 
+<br>
+
 ****
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
@@ -241,6 +259,8 @@ In PowerShell verwenden Sie die [Cmdlets New-SafeLinksPolicy](/powershell/module
 
 > [!NOTE]
 > Wie bereits beschrieben, gibt es keine Standardmäßige Richtlinie für sichere Links. Die Werte in der Spalte Standard sind die Standardwerte in den neuen Richtlinien für sichere Links, die Sie erstellen.
+
+<br>
 
 ****
 
@@ -265,6 +285,8 @@ Informationen zum Konfigurieren dieser Einstellungen finden Sie unter Aktivieren
 
 In PowerShell verwenden Sie das [Cmdlet Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) für diese Einstellungen.
 
+<br>
+
 ****
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
@@ -283,11 +305,13 @@ In PowerShell verwenden Sie die [Cmdlets New-SafeAttachmentPolicy](/powershell/m
 > [!NOTE]
 > Wie bereits beschrieben, gibt es keine Standardmäßige Richtlinie für sichere Anlagen. Die Werte in der Spalte Standard sind die Standardwerte in den neuen Richtlinien für sichere Anlagen, die Sie erstellen.
 
+<br>
+
 ****
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Sichere Anlagen unbekannte Schadsoftwareantwort** <p> _Aktion_|Blockieren <p> `Block`|Blockieren <p> `Block`|Blockieren <p> `Block`||
+|**Sichere Anlagen unbekannte Schadsoftwareantwort** <p> _Action_|Blockieren <p> `Block`|Blockieren <p> `Block`|Blockieren <p> `Block`||
 |**Umleitungsanlage bei Erkennung:** **Umleitung aktivieren** <p> _Redirect_ <p> _RedirectAddress_|Aus und keine E-Mail-Adresse angegeben. <p> `$true` <p> keine|Ein, und geben Sie eine E-Mail-Adresse an. <p> `$true` <p> eine E-Mail-Adresse|Ein, und geben Sie eine E-Mail-Adresse an. <p> `$true` <p> eine E-Mail-Adresse|Umleiten von Nachrichten an einen Sicherheitsadministrator zur Überprüfung.|
 |**Wenden Sie die oben aufgeführte Auswahl an, wenn bei der Schadsoftwareprüfung auf Anlagen ein Zeitfehler auftritt oder ein Fehler auftritt.** <p> _ActionOnError_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
 |

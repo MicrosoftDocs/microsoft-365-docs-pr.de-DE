@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Implementieren Sie die Microsoft-Informationsgovernance-Funktionen, um Ihre Daten mit Blick auf die Einhaltung von Compliance-Vorschriften oder behördlichen Anforderungen zu kontrollieren.
-ms.openlocfilehash: 6a0db63f218db72dbda9afc510cb5ef5f5e13eaa
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 304b4e57702c55242e49fae7fdf4a36e9b2f7cdb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107703"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244564"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft-Informationsgovernance in Microsoft 365
 
@@ -31,6 +31,8 @@ Verwenden Sie die Microsoft Information Governance (MIG)-Funktionen, um Ihre Dat
 ![Kontrollieren Sie Ihre Daten – Informationsverwaltung und Datensatzverwaltung](../media/information-governance-records-management.png)
 
 Wollen Sie Ihre Daten schützen? Erfahren Sie mehr in [Microsoft Information Protection in Microsoft 365](information-protection.md).
+
+Um Sie bei der Einhaltung der Datenschutzbestimmungen zu unterstützen, haben wir einen Workflow entwickelt, der Sie durch einen End-to-End-Prozess zur Planung und Implementierung von Funktionen in Microsoft 365 führt, einschließlich sicherem Zugriff, Bedrohungsschutz, Informationsschutz und Data Governance. Weiter Informationen finden Sie unter [Bereitstellen des Informationsschutzes für Datenschutzbestimmungen mit Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
 
 ## <a name="information-governance"></a>Informationsverwaltung
 

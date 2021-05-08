@@ -1,6 +1,6 @@
 ---
 title: Melden falsch positiver oder falsch negativer Ergebnisse nach automatisierter Untersuchung in Microsoft Defender für Office 365
-description: Wurde etwas von AIR in Microsoft Defender für Office 365 verpasst oder falsch erkannt? Erfahren Sie, wie Sie falsch positive oder falsch negative Ergebnisse zur Analyse an Microsoft übermitteln.
+description: Wurde etwas verpasst oder falsch von AIR in Microsoft Defender für die Office 365? Erfahren Sie, wie Sie falsch positive oder falsch negative Ergebnisse zur Analyse an Microsoft übermitteln.
 keywords: automatisiert, Untersuchung, Warnung, Trigger, Aktion, Korrektur, falsch positiv, falsch negativ
 search.appverid: met150
 ms.mktglfcycl: deploy
@@ -8,8 +8,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 ms.prod: m365-security
 ms.date: 01/29/2021
 localization_priority: Normal
@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 4476578939f2ece90c638c919c7e4d134ea2d9ec
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 036ef1c97788f310c5b906ae5f80076ca2359cdb
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206844"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275084"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Melden falsch positiver/negativer Ergebnisse in automatisierten Untersuchungs- und Reaktionsfunktionen
 
@@ -37,7 +37,7 @@ ms.locfileid: "51206844"
 - [Microsoft Defender für Office 365 – Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Wenn automatisierte Untersuchungs- und Reaktionsfunktionen [(AIR) in Office 365](automated-investigation-response-office.md) etwas verpasst oder falsch erkannt haben, gibt es Schritte, die Ihr Sicherheitsbetriebsteam unternehmen kann, um dies zu beheben. Zu diesen Aktionen gehören:
+Wenn automatisierte Untersuchungs- und Reaktionsfunktionen [(AIR) in](automated-investigation-response-office.md) Office 365 etwas verpasst oder falsch erkannt wurden, gibt es Schritte, die Ihr Sicherheitsbetriebsteam unternehmen kann, um dies zu beheben. Zu diesen Aktionen gehören:
 
 - [Melden eines falsch positiven/negativen Werts an Microsoft](#report-a-false-positivenegative-to-microsoft-for-analysis);
 - [Anpassen von Warnungen](#adjust-an-alert-to-prevent-false-positives-from-recurring) (falls erforderlich); und
@@ -47,15 +47,15 @@ Verwenden Sie diesen Artikel als Leitfaden.
 
 ## <a name="report-a-false-positivenegative-to-microsoft-for-analysis"></a>Melden eines falsch positiven/negativen Werts an Microsoft zur Analyse
 
-Wenn AIR in Microsoft Defender für Office 365 eine E-Mail-Nachricht, eine E-Mail-Anlage, eine URL in einer E-Mail-Nachricht oder eine URL in einer Office-Datei verpasst hat, können Sie verdächtige Spam-, Phishing-, URLs- und Dateien an [Microsoft for Office 365-Überprüfung übermitteln.](admin-submission.md)
+Wenn AIR in Microsoft Defender für Office 365 eine E-Mail-Nachricht, eine E-Mail-Anlage, eine URL in einer E-Mail-Nachricht oder eine URL in einer Office-Datei verpasst hat, können Sie mutmaßliche [Spam-, Phishing-, URLs-](admin-submission.md)und Dateien zur überprüfung an Microsoft Office 365 senden.
 
 Sie können auch [eine Datei zur Schadsoftwareanalyse an Microsoft übermitteln.](https://www.microsoft.com/wdsi/filesubmission)
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Anpassen einer Warnung, um zu verhindern, dass falsch positive Ergebnisse wiederholt werden
 
-Wenn eine Warnung durch legitime Verwendung ausgelöst wird oder die Warnung ungenau ist, können Sie Warnungen im [Cloud App Security-Portal verwalten.](/cloud-app-security/managing-alerts)
+Wenn eine Warnung durch legitime Verwendung ausgelöst wird oder die Warnung ungenau ist, können Sie Warnungen im Cloud App Security [verwalten.](/cloud-app-security/managing-alerts)
 
-Wenn Ihre Organisation [Microsoft Defender for Endpoint](/windows/security/threat-protection) zusätzlich zu Office 365 verwendet und eine Datei, EINE IP-Adresse, URL oder Domäne auf einem Gerät als Schadsoftware behandelt wird, obwohl sie sicher ist, können Sie einen benutzerdefinierten Indikator mit der Aktion ["Zulassen"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)für Ihr Gerät erstellen.
+Wenn Ihre Organisation [microsoft Defender for Endpoint](/windows/security/threat-protection) zusätzlich zu Office 365 verwendet und eine Datei, EINE IP-Adresse, URL oder Domäne als Schadsoftware auf einem Gerät behandelt wird, obwohl es sicher ist, können Sie einen benutzerdefinierten Indikator mit einer Aktion ["Zulassen"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)für Ihr Gerät erstellen.
 
 ## <a name="undo-a-remediation-action"></a>Rückgängig machen einer Korrekturaktion
 
@@ -70,7 +70,7 @@ Mit dem Bedrohungs-Explorer kann Ihr Sicherheitsteam eine E-Mail finden, die von
 
 |Szenario|Rückgängig-Optionen|Weitere Informationen|
 |---|---|---|
-|Eine E-Mail-Nachricht wurde an den Junk-E-Mail-Ordner eines Benutzers geroutet.|- Verschieben der Nachricht in den Ordner "Gelöschte Elemente" des Benutzers<br/>- Verschieben der Nachricht in den Posteingang des Benutzers<br/>- Löschen der Nachricht|[Suchen und Untersuchen schädlicher E-Mails, die in Office 365 zugestellt wurden](investigate-malicious-email-that-was-delivered.md)|
+|Eine E-Mail-Nachricht wurde an den Junk-E-Mail-Ordner eines Benutzers geroutet.|- Verschieben der Nachricht in den Ordner "Gelöschte Elemente" des Benutzers<br/>- Verschieben der Nachricht in den Posteingang des Benutzers<br/>- Löschen der Nachricht|[Suchen und untersuchen Sie schädliche E-Mails, die in diesem Office 365](investigate-malicious-email-that-was-delivered.md)|
 |Eine E-Mail-Nachricht oder eine Datei wurde unter Quarantäne gestellt|– Lassen Sie die E-Mail oder Datei frei<br/>– Löschen der E-Mail oder Datei|[Verwalten isolierter Nachrichten als Administrator](manage-quarantined-messages-and-files.md)|
 |
 

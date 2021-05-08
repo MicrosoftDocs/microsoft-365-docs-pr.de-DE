@@ -1,35 +1,36 @@
 ---
-title: Häufige Fehler beim Definieren von Ausschlüssen
-description: Vermeiden Sie häufige Fehler beim Definieren von Ausschlüssen für Microsoft Defender Antivirus-Scans.
+title: Häufige Fehler, die beim Festlegen von Ausschlüssen vermieden werden sollten
+description: Vermeiden Sie häufige Fehler beim Definieren von Ausschlüssen für Microsoft Defender Antivirus Scans.
 keywords: Ausschlüsse, Dateien, Erweiterung, Dateityp, Ordnername, Dateiname, Scans
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: eb3ac89eb05b39ff3337aa8e9c5ead1c308fbefb
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: de739ca3c6a4ab305b575fa7e2f419d044d997a8
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764915"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274971"
 ---
-# <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Häufige Fehler beim Definieren von Ausschlüssen
+# <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Häufige Fehler, die beim Festlegen von Ausschlüssen vermieden werden sollten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-Sie können eine Ausschlussliste für Elemente definieren, die von Microsoft Defender Antivirus nicht gescannt werden sollen. Solche ausgeschlossenen Elemente können Bedrohungen enthalten, die Ihr Gerät anfällig machen. 
+Sie können eine Ausschlussliste für Elemente definieren, die nicht von Microsoft Defender Antivirus werden sollen. Solche ausgeschlossenen Elemente können Bedrohungen enthalten, die Ihr Gerät anfällig machen. 
 
 In diesem Artikel werden einige häufige Fehler beschrieben, die Sie beim Definieren von Ausschlüssen vermeiden sollten. 
 
-Informationen zum Definieren der Ausschlusslisten finden Sie [unter Empfehlungen zum Definieren von Ausschlüssen](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
+Informationen zum Definieren von Ausschlusslisten finden Sie [Empfehlungen zum Definieren von Ausschlüssen](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
 
 ## <a name="excluding-certain-trusted-items"></a>Ausschließen bestimmter vertrauenswürdiger Elemente
 
@@ -54,13 +55,13 @@ Verwenden Sie keine einzelne Ausschlussliste, um Ausschlüsse für mehrere Serve
 
 ## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>Verwenden falscher Umgebungsvariablen als Platzhalter in den Listen für Dateinamen- und Ordnerpfad oder Erweiterungsausschluss
 
-Microsoft Defender Antivirus Service wird im Systemkontext mit dem LocalSystem-Konto ausgeführt, d. h., er ruft Informationen aus der Systemumgebungsvariablen ab, nicht von der Benutzerumgebungsvariablen. Die Verwendung von Umgebungsvariablen als Platzhalter in Ausschlusslisten ist auf Systemvariablen und auf Prozesse beschränkt, die als NT AUTHORITY\SYSTEM-Konto ausgeführt werden. Verwenden Sie daher beim Hinzufügen von Microsoft Defender Antivirus-Ordnern und Prozessausschlüssen keine Benutzerumgebungsvariablen als Platzhalter. Eine vollständige Liste der Systemumgebungsvariablen [finden](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) Sie in der Tabelle unter Systemumgebungsvariablen.
+Microsoft Defender Antivirus Der Dienst wird im Systemkontext mit dem LocalSystem-Konto ausgeführt, d. h., er ruft Informationen von der Variablen systemumgebung ab, nicht von der Benutzerumgebungsvariablen. Die Verwendung von Umgebungsvariablen als Platzhalter in Ausschlusslisten ist auf Systemvariablen und auf Prozesse beschränkt, die als NT AUTHORITY\SYSTEM-Konto ausgeführt werden. Verwenden Sie daher keine Benutzerumgebungsvariablen als Platzhalter, wenn Microsoft Defender Antivirus und Prozessausschlüsse hinzufügen. Eine vollständige Liste der Systemumgebungsvariablen [finden](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) Sie in der Tabelle unter Systemumgebungsvariablen.
 
 Informationen zur Verwendung [von Platzhaltern in](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) Ausschlusslisten finden Sie unter Verwenden von Platzhaltern in den Listen für Dateinamen und Ordnerpfad oder Erweiterungsausschluss.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Konfigurieren und Überprüfen von Ausschlüssen in Microsoft Defender Antivirus-Scans](configure-exclusions-microsoft-defender-antivirus.md)
+- [Konfigurieren und Überprüfen von Ausschlüssen in Microsoft Defender Antivirus Scans](configure-exclusions-microsoft-defender-antivirus.md)
 - [Konfigurieren und Überprüfen von Ausschlüssen basierend auf Dateierweiterung und Ordnerspeicherort](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Konfigurieren und Überprüfen von Ausschlüssen für Dateien, die von Prozessen geöffnet werden](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Konfigurieren von Microsoft Defender Antivirus-Ausschlüssen unter Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Konfigurieren Microsoft Defender Antivirus Ausschlüssen auf Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)

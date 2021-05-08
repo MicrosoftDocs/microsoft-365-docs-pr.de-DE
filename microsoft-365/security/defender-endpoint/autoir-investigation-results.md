@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: 8ecf39090d368427c103c7ec78e22bc13f7c339f
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: c593dfe384649b1599d5c0bab8fa6a8204d105dc
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591768"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274832"
 ---
 # <a name="view-the-details-and-results-of-an-automated-investigation"></a>Anzeigen der Details und Ergebnisse einer automatischen Untersuchung
 
@@ -37,7 +37,7 @@ Wenn eine automatisierte Untersuchung [](automated-investigations.md) mit Micros
 
 ## <a name="new-unified-investigation-page"></a>(NEU!) Seite "Einheitliche Untersuchung"
 
-Die Untersuchungsseite wurde kürzlich aktualisiert, um Informationen auf Ihren Geräten, E-Mail- und Zusammenarbeitsinhalten zu enthalten. Die neue, einheitliche Untersuchungsseite definiert eine gemeinsame Sprache und bietet eine einheitliche Erfahrung für automatische Untersuchungen in [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)  und Microsoft Defender für Office [365](/microsoft-365/security/office-365-security/office-365-atp). 
+Die Untersuchungsseite wurde kürzlich aktualisiert, um Informationen auf Ihren Geräten, E-Mail- und Zusammenarbeitsinhalten zu enthalten. Die neue, einheitliche Untersuchungsseite definiert eine gemeinsame Sprache und bietet eine einheitliche Erfahrung für automatische Untersuchungen in [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) und Microsoft Defender für [Office 365.](/microsoft-365/security/office-365-security/office-365-atp) 
 
 > [!TIP]
 > Weitere Informationen zu den Änderungen finden Sie unter [(NEU!) Vereinheitlichte Untersuchungsseite](/microsoft-365/security/mtp/mtp-autoir-results).
@@ -83,7 +83,7 @@ In der Anzeige mit Untersuchungsdetails können Sie Informationen im **Untersuch
 | Registerkarte | Beschreibung |
 |:--------|:--------|
 | **Untersuchungsdiagramm**   | Bietet eine visuelle Darstellung der Untersuchung. Stellt Entitäten dar und listet gefundene Bedrohungen zusammen mit Warnungen und Informationen dazu auf, ob Aktionen genehmigt werden müssen.<br/>Sie können ein Element im Diagramm auswählen, um weitere Details anzuzeigen. Wenn Sie z. B. das **Symbol Nachweis** auswählen, werden Sie zur Registerkarte **Nachweis** angezeigt, auf der Sie erkannte Entitäten und deren Urteile sehen können. |
-| **Benachrichtigungen**    | Listet die mit der Untersuchung verbundenen Warnungen auf. Warnungen können von Bedrohungsschutzfeatures auf dem Gerät eines Benutzers, in Office-Apps, Cloud App Security und anderen Microsoft 365 Defender-Features stammen.|
+| **Benachrichtigungen**    | Listet die mit der Untersuchung verbundenen Warnungen auf. Warnungen können von Bedrohungsschutzfeatures auf dem Gerät eines Benutzers, in Office Apps, Cloud App Security und anderen Funktionen Microsoft 365 werden.|
 | **Geräte** | Listet die in der Untersuchung enthaltenen Geräte zusammen mit ihrer Behebungsstufe auf. (Korrekturstufen entsprechen der [Automatisierungsebene für Gerätegruppen.)](automation-levels.md) |
 | **Postfächer** |Listet Postfächer auf, die von erkannten Bedrohungen betroffen sind.  |
 | **Benutzer**  | Listet Benutzerkonten auf, die von erkannten Bedrohungen betroffen sind. |

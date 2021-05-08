@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über die Freigabe Ihrer Geschäftsdateien.
-ms.openlocfilehash: a28830b9dc863c38ff45e2d6a140ab764ae66b06
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 408979728e4f834acb57f39a6eed3ac40057feba
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580522"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244908"
 ---
 # <a name="overview-of-sharing-business-files"></a>Übersicht über die Freigabe von Geschäftsdateien
 
@@ -41,34 +41,34 @@ Laden Sie eine Infografik herunter, um einen schnellen Überblick über die Mög
 ## <a name="share-a-file-with-someone-outside-of-your-company"></a>Freigeben einer Datei für eine Person außerhalb Ihres Unternehmens
 
 - Teilen Sie eine Datei mit einer Person außerhalb Ihres Unternehmens (z. B. einem Kunden oder einem Kunden) per E-Mail, wenn Sie sie nur für einen Weg benötigen.
-- Wenn Sie eine Antwort benötigen oder möchten, dass sie einige Informationen ausfüllen und zurücksennen, können Sie SharePoint oder Microsoft Teams verwenden, um sie über einen Bearbeitungslink zu teilen.
+- Wenn Sie eine Antwort benötigen oder möchten, dass sie einige Informationen ausfüllen und zurücksennen, können Sie SharePoint oder Microsoft Teams verwenden, um sie mit einem Bearbeitungslink zu teilen.
 
 Erfahren Sie mehr darüber, wie [Sie Dateien](securely-share-files-externally.md) außerhalb Ihrer Organisation mit sicheren Links freigeben und wie Sie Dateien für [einen Jeder-Link freigeben.](share-files-externally.md)
 
 ## <a name="share-and-collaborate-with-a-client-or-business-partner"></a>Freigeben und Zusammenarbeit mit einem Client oder Geschäftspartner
 
-Freigabe als Teil eines Projekts? Oder als Teil einer laufenden Beziehung mit einem Geschäftspartner oder Lieferanten? Sie können etwas mehr Zeit ein- und ein Team in Microsoft Teams einrichten und einen fortlaufenden Ort zum Teilen und Zusammenarbeiten haben. Es ist einfach, mit Personen außerhalb Ihres Unternehmens zu arbeiten, und Sie können sogar separate Kanäle für zusätzliche Lieferanten oder Partner einrichten, um alles direkt zu halten.
+Freigabe als Teil eines Projekts? Oder als Teil einer laufenden Beziehung mit einem Geschäftspartner oder Lieferanten? Sie können etwas mehr Zeit ein- und ein Team in Microsoft Teams einrichten und einen kontinuierlichen Ort zum Teilen und Zusammenarbeiten haben. Es ist einfach, mit Personen außerhalb Ihres Unternehmens zu arbeiten, und Sie können sogar separate Kanäle für zusätzliche Lieferanten oder Partner einrichten, um alles direkt zu halten.
 
 1. Erstellen Sie das Team.
-1. Laden Sie Ihre Dateien hoch.
+1. Hochladen Ihre Dateien.
 1. Laden Sie Ihre Partner oder Lieferanten als "Gastbenutzer" zum Team ein, um ihnen Zugriff zu geben.
 
-Erfahren Sie mehr über das Freigeben [von Dateien außerhalb Ihrer Organisation mit sicheren Links](https://support.microsoft.com/office/7266f44e-3e06-4736-b9d3-0580c24bba34)s.
+Erfahren Sie mehr darüber, wie [Sie Dateien außerhalb Ihrer Organisation über einen sicheren Link freigeben.](securely-share-files-externally.md)
 
 ## <a name="share-inside-your-business"></a>Teilen innerhalb Ihres Unternehmens
 
-Wenn Sie mit Dateien arbeiten, die Sie in Ihrem Unternehmen freigeben, empfiehlt es sich auch, ein Team in Microsoft Teams zu einrichten. Teilen Sie Ihre Dateien dort, und jeder in Ihrem Unternehmen kann sie leicht finden und bearbeiten, und Sie wissen, dass Sie alle auf derselben Seite arbeiten.
+Wenn Sie mit Dateien arbeiten, die Sie in Ihrem Unternehmen freigeben, ist es auch eine gute Idee, ein Team in Microsoft Teams. Teilen Sie Ihre Dateien dort, und jeder in Ihrem Unternehmen kann sie leicht finden und bearbeiten, und Sie wissen, dass Sie alle auf derselben Seite arbeiten.
 
 1. Erstellen Sie das Team, und laden Sie Ihr Team dazu ein.
-1. Laden Sie Ihre Dateien hoch.
+1. Hochladen Ihre Dateien.
 
-Erfahren Sie mehr über [den Unternehmensdateispeicher und](https://support.microsoft.com/office/e4d98e10-3532-4eed-85d6-92728454e32b) [die Mitarbeiterdateispeicherung.](https://support.microsoft.com/office/12dbe3e4-dbef-48f8-a90e-87f1bc607073)
+Erfahren Sie mehr über [den Unternehmensdateispeicher und](files-to-sharepoint.md) [die Mitarbeiterdateispeicherung.](files-to-onedrive.md)
 
 ## <a name="how-to-get-it-done"></a>How to get it done
 
 Benötigen Sie ein wenig Hilfe? Hier lernen Sie Folgendes:
 
-- [Senden und Empfangen von Anlagen](https://support.microsoft.com/en-us/office/sending-and-receiving-attachments-d32cd5ad-c7c5-49df-814d-4c17a5d3beb0)
-- [Freigeben von Dateien und Ordnern mit OneDrive](https://support.microsoft.com/en-us/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
-- [Erstellen eines unternehmensweiten Teams](https://support.microsoft.com/en-us/office/create-an-org-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
-- [Hinzufügen von Gästen zu einem Team](https://support.microsoft.com/en-us/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f)
+- [Senden und Empfangen von Anlagen](https://support.microsoft.com/office/sending-and-receiving-attachments-d32cd5ad-c7c5-49df-814d-4c17a5d3beb0)
+- [Freigeben von Dateien und Ordnern für OneDrive](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
+- [Erstellen eines unternehmensweiten Teams](org-wide-team.md)
+- [Hinzufügen von Gästen zu einem Team](https://support.microsoft.com/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f)

@@ -9,8 +9,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 ms.date: 02/02/2021
 localization_priority: Normal
 manager: dansimp
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: 5ea869d4016cc794b3046a664c1519f6b3250c67
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d4b0751938b66cc22dd59e2e7035077c5ef59ff9
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933973"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274820"
 ---
 # <a name="overview-of-automated-investigations"></a>Übersicht über automatisierte Untersuchungen
 
@@ -77,7 +77,7 @@ Je nach [Automatisierungsstufe](automation-levels.md) für Ihre Organisation und
 Alle Korrekturaktionen, ob ausstehend oder abgeschlossen, werden im [Aktionscenter nachverfolgt.](auto-investigation-action-center.md) Bei Bedarf kann ihr Sicherheitsbetriebsteam eine Korrekturaktion rückgängig machen. Weitere Informationen finden Sie unter [Review and approve remediation actions following an automated investigation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-auto-investigation).
 
 > [!TIP]
-> Sehen Sie sich die neue, einheitliche Untersuchungsseite im Microsoft 365 Security Center an. Weitere Informationen finden Sie unter [(NEU!) Vereinheitlichte Untersuchungsseite](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
+> Sehen Sie sich die neue, einheitliche Untersuchungsseite im Microsoft 365 an. Weitere Informationen finden Sie unter [(NEU!) Vereinheitlichte Untersuchungsseite](/microsoft-365/security/defender/m365d-autoir-results#new-unified-investigation-page).
 
 
 ## <a name="requirements-for-air"></a>Anforderungen für AIR
@@ -86,8 +86,8 @@ Ihre Organisation muss über Defender for Endpoint verfügen (siehe [Mindestanfo
 
 Derzeit unterstützt AIR nur die folgenden Betriebssystemversionen:
 - Windows Server 2019
-- Windows 10, Version 1709 (Betriebssystem build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) oder höher
-- Windows 10, Version 1803 (Betriebssystem build 17134.704 mit [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) oder höher
+- Windows 10 Version 1709 (Betriebssystem build 16299.1085 with [KB4493441](https://support.microsoft.com/help/4493441/windows-10-update-kb4493441)) oder höher
+- Windows 10 Version 1803 (Betriebssystem build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464/windows-10-update-kb4493464)) oder höher
 - Windows 10, Version [1803](https://docs.microsoft.com/windows/release-information/status-windows-10-1809-and-windows-server-2019) oder höher
 
 ## <a name="next-steps"></a>Nächste Schritte

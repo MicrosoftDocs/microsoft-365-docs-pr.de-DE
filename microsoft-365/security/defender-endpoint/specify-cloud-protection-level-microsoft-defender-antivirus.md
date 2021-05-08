@@ -1,13 +1,13 @@
 ---
-title: Angeben der in der Cloud übermittelten Schutzstufe für Microsoft Defender Antivirus
-description: Legen Sie Die Stufe des cloudbasierten Schutzes für Microsoft Defender Antivirus ein.
+title: Geben Sie die in der Cloud zugestellte Schutzstufe für Microsoft Defender Antivirus
+description: Legen Sie Ihren Grad an Cloud-zugestellten Schutz für Microsoft Defender Antivirus.
 keywords: Microsoft Defender Antivirus, Antischalware, Sicherheit, Verteidiger, Cloud, Aggressivität, Schutzstufe
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.date: 10/26/2020
@@ -15,14 +15,15 @@ ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: a0c73c8dd341c4940e3eddd4ede75240e57502d6
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: f441b1bd444cd70fb5b00dfcb5ebcddadf62b220
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764121"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274904"
 ---
-# <a name="specify-the-cloud-delivered-protection-level"></a>Angeben der in der Cloud übermittelten Schutzstufe
+# <a name="specify-the-cloud-delivered-protection-level"></a>Stufe des über die Cloud bereitgestellten Schutzes festlegen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,13 +32,13 @@ ms.locfileid: "51764121"
 
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 
-Sie können Ihren Grad an cloudbasiertem Schutz angeben, der von Microsoft Defender Antivirus angeboten wird, indem Sie Microsoft Endpoint Manager (empfohlen) oder Gruppenrichtlinien verwenden.
+Sie können Ihre Von der Cloud übermittelte Schutzstufe angeben, die von Microsoft Defender Antivirus mithilfe von Microsoft Endpoint Manager (empfohlen) oder Gruppenrichtlinien angeboten wird.
 
 > [!TIP]
-> Cloudschutz ist nicht nur Schutz für Dateien, die in der Cloud gespeichert sind. Der Microsoft Defender Antivirus-Clouddienst ist ein Mechanismus zum Bereitstellen aktualisierten Schutzes für Ihr Netzwerk und Ihre Geräte (auch Endpunkte genannt). Der Cloudschutz mit Microsoft Defender Antivirus verwendet verteilte Ressourcen und maschinelles Lernen, um Ihren Endpunkten Schutz zu bieten, die wesentlich schneller als herkömmliche Sicherheitsintelligenzupdates ist. Microsoft Intune und Microsoft Endpoint Manager sind jetzt Teil von [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). 
+> Cloudschutz ist nicht nur Schutz für Dateien, die in der Cloud gespeichert sind. Der Microsoft Defender Antivirus cloud service ist ein Mechanismus zum Bereitstellen aktualisierten Schutzes für Ihr Netzwerk und Ihre Geräte (auch Endpunkte genannt). Cloud protection with Microsoft Defender Antivirus uses distributed resources and machine learning to deliver protection to your endpoints at a rate that is far faster than traditional security intelligence updates. Microsoft Intune und Microsoft Endpoint Manager sind jetzt Teil von [Microsoft Endpoint Manager](/mem/endpoint-manager-overview). 
 
 
-## <a name="use-microsoft-endpoint-manager-to-specify-the-level-of-cloud-delivered-protection"></a>Verwenden von Microsoft Endpoint Manager zum Angeben der Ebene des in der Cloud zugestellten Schutzes
+## <a name="use-microsoft-endpoint-manager-to-specify-the-level-of-cloud-delivered-protection"></a>Verwenden Microsoft Endpoint Manager, um die Ebene des in der Cloud zugestellten Schutzes anzugeben
 
 1. Wechseln Sie zum Microsoft Endpoint Manager Admin Center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) und melden Sie sich an.
 
@@ -57,7 +58,7 @@ Sie können Ihren Grad an cloudbasiertem Schutz angeben, der von Microsoft Defen
 
 > [!TIP]
 > Benötigen Sie Hilfe? Informationen finden Sie in den folgenden Ressourcen:
-> - [Konfigurieren von Endpunktschutz](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
+> - [Konfigurieren Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 > - [Hinzufügen von Endpunktschutzeinstellungen in Intune](/mem/intune/protect/endpoint-protection-configure)
   
 
@@ -69,7 +70,7 @@ Sie können Ihren Grad an cloudbasiertem Schutz angeben, der von Microsoft Defen
 
 3.  Wechseln Sie **im Gruppenrichtlinienverwaltungs-Editor** zu **Computerkonfiguration**  >  **Administrative Vorlagen**.
 
-4.  Erweitern Sie die Struktur **auf Windows-Komponenten**  >  **Microsoft Defender Antivirus**  >  **MpEngine**.
+4.  Erweitern Sie die **Struktur, Windows Komponenten**  >  **Microsoft Defender Antivirus**  >  **MpEngine .**
 
 5.  Doppelklicken Sie auf **die Einstellung Cloudschutzstufe auswählen,** und legen Sie sie auf **Aktiviert .** Wählen Sie die Schutzebene aus:
     - **Die Standardblockierstufe** bietet eine starke Erkennung, ohne das Risiko zu erhöhen, legitime Dateien zu erkennen.
@@ -86,7 +87,7 @@ Sie können Ihren Grad an cloudbasiertem Schutz angeben, der von Microsoft Defen
 7. Stellen Sie ihr aktualisiertes Gruppenrichtlinienobjekt zur Bereitstellung. Siehe [Gruppenrichtlinienverwaltungskonsole](/windows/win32/srvnodes/group-policy)
 
 > [!TIP]
-> Verwenden Sie Gruppenrichtlinienobjekte lokal? Sehen Sie, wie sie in der Cloud übersetzen. [Analysieren Sie Ihre lokalen Gruppenrichtlinienobjekte mithilfe von Gruppenrichtlinienanalysen in Microsoft Endpoint Manager – Vorschau](/mem/intune/configuration/group-policy-analytics). 
+> Verwenden Sie Gruppenrichtlinienobjekte lokal? Sehen Sie, wie sie in der Cloud übersetzen. [Analysieren Sie Ihre lokalen Gruppenrichtlinienobjekte mithilfe der Gruppenrichtlinienanalyse in Microsoft Endpoint Manager – Vorschau](/mem/intune/configuration/group-policy-analytics). 
   
 ## <a name="related-articles"></a>Verwandte Artikel
 

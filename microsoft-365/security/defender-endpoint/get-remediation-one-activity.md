@@ -1,7 +1,7 @@
 ---
-title: Get one remediation activity by Id
+title: Erhalten einer Korrekturaktivität nach ID
 description: Gibt Informationen für die angegebene Korrekturaktivität zurück.
-keywords: apis, remediation, remediation api, get, remediation tasks, list
+keywords: apis, remediation, remediation api, get, remediation tasks, remediation by ID,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,14 +15,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 40a7102a8c7dbf63641daaf47bbd9aa9f2e54649
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: e0f68e8a28b302f0ae1ca06a2f892fea38a219b2
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52061132"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244443"
 ---
-# <a name="get-one-remediation-activity-by-id"></a>Get one remediation activity by Id
+# <a name="get-one-remediation-activity-by-id"></a>Erhalten einer Korrekturaktivität nach ID
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -49,48 +49,57 @@ Gibt Informationen für die angegebene Korrekturaktivität zurück. Stellt die g
 
 **URL:** GET: /api/remediationTasks/ \{ id\}
 
-**Eigenschaftendetails**
+## <a name="permissions"></a>Berechtigungen
+
+Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Use Microsoft Defender for Endpoint APIs for Details.](apis-intro.md)
+
+Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
+:---|:---|:---
+Anwendung | RemediationTask.Read.All | \'Informationen zu Sicherheitslücken in Bedrohungs- und Sicherheitsrisikoverwaltung lesen\'
+Delegiert (Geschäfts-, Schul- oder Unikonto) | RemediationTask.Read.Read | \'Informationen zu Sicherheitslücken in Bedrohungs- und Sicherheitsrisikoverwaltung lesen\'
+
+## <a name="properties"></a>Eigenschaften
 
 Property (id) | Datentyp | Beschreibung | Beispiel für einen zurückgegebenen Wert
 :---|:---|:---|:---
 category | String | Kategorie der Korrekturaktivität (Software-/Sicherheitskonfiguration) | Software
-completerEmail | String | Wenn die Korrekturaktivität manuell von einer Person abgeschlossen wurde, enthält diese Spalte ihre E-Mails. | null
-completerId | String | Wenn die Korrekturaktivität manuell von einer Person abgeschlossen wurde, enthält diese Spalte ihre Objekt-ID. | null
-completionMethod | String | Eine Korrekturaktivität kann "automatisch" (wenn alle Geräte gepatcht sind) oder "manuell" von einer Person abgeschlossen werden, die "als abgeschlossen markieren" auswählt. | Automatisch
+completerEmail | Zeichenfolge | Wenn die Korrekturaktivität manuell von einer Person abgeschlossen wurde, enthält diese Spalte ihre E-Mails. | null
+completerId | Zeichenfolge | Wenn die Korrekturaktivität manuell von einer Person abgeschlossen wurde, enthält diese Spalte ihre Objekt-ID. | null
+completionMethod | Zeichenfolge | Eine Korrekturaktivität kann "automatisch" (wenn alle Geräte gepatcht sind) oder "manuell" von einer Person abgeschlossen werden, die "als abgeschlossen markieren" auswählt. | Automatisch
 createdOn | DateTime | Zeitpunkt, zu dem diese Korrekturaktivität erstellt wurde | 2021-01-12T18:54:11.5499478Z
-description | String | Beschreibung dieser Korrekturaktivität | Aktualisieren Sie Chrome auf eine spätere Version, um 1248 bekannte Sicherheitsrisiken zu verringern, die Ihre Geräte betreffen.
+description | Zeichenfolge | Beschreibung dieser Korrekturaktivität | Aktualisieren Sie Microsoft Silverlight auf eine spätere Version, um bekannte Sicherheitsrisiken für Ihre Geräte zu mindern.
 dueOn | DateTime | Fälligkeitsdatum, das der Ersteller für diese Korrekturaktivität festgelegt hat | 2021-01-13T00:00:00Z
 fixedDevices |  | Die Anzahl der geräte, die behoben wurden | 2
-id | String | ID dieser Korrekturaktivität | 097d9735-5479-4899-b1b7-77398899df92
-nameId | String | Verwandter Produktname | chrome
-priority | String | Priorität, die der Ersteller für diese Korrekturaktivität festgelegt hat (High\Medium\Low) | Hoch
-productId | String | Verwandte Produkt-ID | google-_-chrome
-productivityImpactRemediationType | String | Einige Konfigurationsänderungen konnten nur für Geräte ohne Benutzerwirkung angefordert werden. Dieser Wert gibt die Auswahl zwischen "allen verfügbar gemachten Geräten" oder "nur Geräten ohne Benutzerwirkung" an. | AllExposedAssets
-rbacGroupNames | String | Verwandte Gerätegruppennamen | [ "Windows Servers", "Windows 10" ]
-recommendedProgram | String | Empfohlenes Programm zum Upgrade auf | null
-recommendedVendor | String | Empfohlener Anbieter zum Upgrade auf | null
-recommendedVersion | String | Empfohlene Version zum Aktualisieren/Aktualisieren auf | null
-relatedComponent | String | Verwandte Komponente dieser Korrekturaktivität (ähnlich der zugehörigen Komponente für eine Sicherheitsempfehlung) | Google Chrome
-requesterEmail | String | E-Mail-Adresse des Erstellers | globaladmin@UserName.contoso.com
-requesterId | String | Creator-Objekt-ID | r647211f-2e16-43f2-a480-16ar3a2a796r
-requesterNotes | String | Die Notizen (Freitext), die der Ersteller für diese Korrekturaktivität hinzugefügt hat | null
-scid | String | SCID der zugehörigen Sicherheitsempfehlung | null
-status | String | Status der Korrekturaktivität (Aktiv/Abgeschlossen) | Aktiv
+id | Zeichenfolge | ID dieser Korrekturaktivität | 097d9735-5479-4899-b1b7-77398899df92
+nameId | Zeichenfolge | Verwandter Produktname | Microsoft Silverlight
+priority | Zeichenfolge | Priorität, die der Ersteller für diese Korrekturaktivität festgelegt hat (High\Medium\Low) | Hoch
+productId | Zeichenfolge | Verwandte Produkt-ID | microsoft-_-silverlight
+productivityImpactRemediationType | Zeichenfolge | Einige Konfigurationsänderungen konnten nur für Geräte ohne Benutzerwirkung angefordert werden. Dieser Wert gibt die Auswahl zwischen "allen verfügbar gemachten Geräten" oder "nur Geräten ohne Benutzerwirkung" an. | AllExposedAssets
+rbacGroupNames | Zeichenfolge | Verwandte Gerätegruppennamen | [ "Windows Server", "Windows 10" ]
+recommendedProgram | Zeichenfolge | Empfohlenes Programm zum Upgrade auf | null
+recommendedVendor | Zeichenfolge | Empfohlener Anbieter zum Upgrade auf | null
+recommendedVersion | Zeichenfolge | Empfohlene Version zum Aktualisieren/Aktualisieren auf | null
+relatedComponent | Zeichenfolge | Verwandte Komponente dieser Korrekturaktivität (ähnlich der zugehörigen Komponente für eine Sicherheitsempfehlung) | Microsoft Microsoft Silverlight
+requesterEmail | Zeichenfolge | E-Mail-Adresse des Erstellers | globaladmin@UserName.contoso.com
+requesterId | Zeichenfolge | Creator-Objekt-ID | r647211f-2e16-43f2-a480-16ar3a2a796r
+requesterNotes | Zeichenfolge | Die Notizen (Freitext), die der Ersteller für diese Korrekturaktivität hinzugefügt hat | null
+scid | Zeichenfolge | SCID der zugehörigen Sicherheitsempfehlung | null
+status | Zeichenfolge | Status der Korrekturaktivität (Aktiv/Abgeschlossen) | Aktiv
 statusLastModifiedOn | DateTime | Datum, an dem das Statusfeld aktualisiert wurde | 2021-01-12T18:54:11.5499487Z
 targetDevices | Long | Anzahl der verfügbar gemachten Geräte, auf die diese Behebung anwendbar ist | 43
-title | String | Titel dieser Korrekturaktivität | Aktualisieren von Google Chrome
-type | String | Behebungstyp | Update
-vendorId | String | Verwandter Herstellername | google
+title | String | Titel dieser Korrekturaktivität | Microsoft Silverlight
+type | Zeichenfolge | Behebungstyp | Aktualisieren
+vendorId | Zeichenfolge | Verwandter Herstellername | Microsoft
 
 ## <a name="example"></a>Beispiel
 
-**Anforderungsbeispiel**
+### <a name="request-example"></a>Anforderungsbeispiel
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c
 ```
 
-**Antwortbeispiel**
+### <a name="response-example"></a>Anforderungsbeispiel
 
 ```json
 { 
@@ -137,6 +146,6 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 
 - [Auflisten verfügbarer Geräte einer Korrekturaktivität](get-remediation-exposed-devices-activities.md)
 
-- [Risikobasiertes Bedrohungsmanagement & Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md)
+- [Risikobasierte Bedrohungsrisiken & Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 
 - [Sicherheitsrisiken in Ihrer Organisation](tvm-weaknesses.md)

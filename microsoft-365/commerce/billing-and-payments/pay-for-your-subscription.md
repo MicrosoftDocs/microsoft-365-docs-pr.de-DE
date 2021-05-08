@@ -21,14 +21,17 @@ ms.custom:
 - fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 582ecb0f9b46d877c30aa29334b30b9209c93993
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 65454dcc71645b370d2ebfc875474151c0954a3c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576937"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245004"
 ---
 # <a name="how-to-pay-for-your-subscription"></a>Bezahlen Ihres Abonnements
+
+> [!IMPORTANT]
+> Seit dem 26. Januar 2021 werden neue Bankkonten für Kunden in Belgien, Frankreich, Italien, Luxemburg, Portugal, Spanien und in den Vereinigte Staaten nicht mehr unterstützt. Wenn Sie ein bestehender Kunde in einem dieser Länder sind, können Sie weiterhin mit einem bestehenden Bankkonto für Ihr Abonnement bezahlen, und Sie können neue Abonnements hinzufügen, aber nur, solange Ihr Bankkonto sich in gutem Zustand befindet.
 
 Die Bezahlung eines Abonnements kann über eine Kreditkarte, eine Debitkarte oder ein Bankkonto erfolgen. In einigen Fällen können Sie per Rechnung, per Scheck oder über elektronische Überweisungen (EFT) bezahlen. Wenn Sie über ein Abrechnungsprofil verfügen, unterscheiden sich Ihre Optionen geringfügig. Weitere Informationen finden Sie unter [So zahlen Sie für Ihr Abonnement mit einem Abrechnungsprofil](pay-for-subscription-billing-profile.md). Wenn Sie nicht genau wissen, ob Ihr Konto über ein Abrechnungsprofil verfügt, lesen Sie [Informationen zu Abrechnungsprofilen](manage-billing-profiles.md).
 
@@ -37,7 +40,7 @@ Die Bezahlung eines Abonnements kann über eine Kreditkarte, eine Debitkarte ode
 ## <a name="before-you-begin"></a>Bevor Sie loslegen
 
 - Sie müssen ein Global- oder Billing-Administrator sein, um die in diesem Artikel beschriebenen Schritte durchführen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
-- Die Zahlungsmethode, die Sie während der Kaufabwicklung auswählen, ist die Zahlungsmethode, die wir für alle zukünftigen Abrechnungszeiträume verwenden werden. Sie können sie jederzeit wieder ändern.
+- Die Zahlungsmethode, die Sie während der Kaufabwicklung auswählen, ist die Zahlungsmethode, die wir für alle zukünftigen Abrechnungszeiträume verwenden werden. Sie können diese jederzeit ändern.
 
 ## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Bezahlen mit Kreditkarte, Debitkarte oder über Bankkonto
 

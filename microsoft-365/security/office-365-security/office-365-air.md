@@ -3,8 +3,8 @@ title: Automatisierte Untersuchung und Reaktion in Microsoft Defender für Offic
 keywords: AIR, AutoIR, Microsoft Defender for Endpoint, automatisiert, Untersuchung, Antwort, Korrektur, Bedrohungen, erweitert, Bedrohung, Schutz
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -16,18 +16,18 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Erste Schritte mit automatisierten Untersuchungs- und Reaktionsfunktionen in Microsoft Defender für Office 365.
+description: Erste Schritte mit automatisierten Untersuchungs- und Reaktionsfunktionen in Microsoft Defender for Office 365.
 ms.custom:
 - air
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 89421348d858a869e033380802e402465949c554
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c9cd9ef649ec60fc8d880ae525469980a00f69b2
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935173"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275000"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatisierte Untersuchung und Reaktion (AIR) in Microsoft Defender für Office 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "51935173"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Microsoft Defender für Office 365](defender-for-office-365.md) umfasst leistungsstarke Funktionen für automatisierte Untersuchung und Reaktion (AIR), mit derEntsprechungsteam Zeit und Aufwand sparen kann. Wenn Warnungen ausgelöst werden, ist es an Ihrem Sicherheitsbetriebsteam, diese Warnungen zu überprüfen, zu priorisieren und darauf zu reagieren. Das Halten mit dem Volumen eingehender Warnungen kann überwältigend sein. Das Automatisieren einiger dieser Aufgaben kann hilfreich sein.
+[Microsoft Defender for Office 365](defender-for-office-365.md) umfasst leistungsstarke funktionen für automatisierte Untersuchung und Reaktion (AIR), die Ihrem Sicherheitsbetriebsteam Zeit und Aufwand sparen können. Wenn Warnungen ausgelöst werden, ist es an Ihrem Sicherheitsbetriebsteam, diese Warnungen zu überprüfen, zu priorisieren und darauf zu reagieren. Das Halten mit dem Volumen eingehender Warnungen kann überwältigend sein. Das Automatisieren einiger dieser Aufgaben kann hilfreich sein.
 
 AIR ermöglicht Es Ihrem Sicherheitsteam, effizienter und effektiver zu arbeiten. Zu den AIR-Funktionen gehören automatisierte Untersuchungsprozesse als Reaktion auf bekannte Bedrohungen, die heute vorhanden sind. Geeignete Abhilfemaßnahmen warten auf die Genehmigung, sodass Ihr Sicherheitsbetriebsteam effektiv auf erkannte Bedrohungen reagieren kann. Mit AIR kann sich Ihr Sicherheitsbetriebsteam auf Aufgaben mit höherer Priorität konzentrieren, ohne wichtige ausgelöste Warnungen aus den Augen zu verlieren.
 
@@ -62,7 +62,7 @@ Eine Warnung wird ausgelöst, und ein Sicherheitsspielbuch startet eine automati
 4. Ihr Sicherheitsteam überprüft die Untersuchungsergebnisse [und Empfehlungen](air-view-investigation-results.md)und genehmigt oder lehnt [Korrekturaktionen ab.](air-review-approve-pending-completed-actions.md)
 5. Wenn ausstehende Korrekturaktionen genehmigt (oder abgelehnt) werden, wird die automatisierte Untersuchung abgeschlossen.
 
-In Microsoft Defender für Office 365 werden keine Korrekturaktionen automatisch ausgeführt. Abhilfemaßnahmen werden nur nach Genehmigung durch das Sicherheitsteam Ihrer Organisation ausgeführt. Air-Funktionen sparen Ihrem Sicherheitsbetriebsteam Zeit, indem Sie Korrekturaktionen identifizieren und die Details bereitstellen, die für eine fundierte Entscheidung erforderlich sind.
+In Microsoft Defender for Office 365 werden keine Korrekturaktionen automatisch ausgeführt. Abhilfemaßnahmen werden nur nach Genehmigung durch das Sicherheitsteam Ihrer Organisation ausgeführt. Air-Funktionen sparen Ihrem Sicherheitsbetriebsteam Zeit, indem Sie Korrekturaktionen identifizieren und die Details bereitstellen, die für eine fundierte Entscheidung erforderlich sind.
 
 Während und nach jeder automatisierten Untersuchung kann Ihr Sicherheitsteam:
 
@@ -75,7 +75,7 @@ Während und nach jeder automatisierten Untersuchung kann Ihr Sicherheitsteam:
 
 ## <a name="how-to-get-air"></a>So erhalten Sie AIR
 
-Air-Funktionen sind in [Microsoft Defender für Office 365](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)enthalten, sofern Ihre Richtlinien und Warnungen konfiguriert sind. Benötigen Sie Hilfe? Befolgen Sie die Anweisungen unter [Schützen vor Bedrohungen](protect-against-threats.md) zum Einrichten oder Konfigurieren der folgenden Schutzeinstellungen:
+Air-Funktionen sind in [Microsoft Defender for Office 365](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)enthalten, sofern Ihre Richtlinien und Warnungen konfiguriert sind. Benötigen Sie Hilfe? Befolgen Sie die Anweisungen unter [Schützen vor Bedrohungen](protect-against-threats.md) zum Einrichten oder Konfigurieren der folgenden Schutzeinstellungen:
 
 - [Überwachungsprotokollierung](../../compliance/turn-audit-log-search-on-or-off.md) (sollte aktiviert sein)
 - [Richtlinien für Antischadsoftware](protect-against-threats.md#part-1---anti-malware-protection)
@@ -89,14 +89,14 @@ Air-Funktionen sind in [Microsoft Defender für Office 365](defender-for-office-
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>Welche Warnungsrichtlinien lösen automatisierte Untersuchungen aus?
 
-Microsoft 365 bietet viele integrierte Warnungsrichtlinien, mit denen Missbrauch von Exchange-Administratorberechtigungen, Schadsoftwareaktivitäten, potenzielle externe und interne Bedrohungen und Risiken der Informationsverwaltung identifiziert werden können. Mehrere der [Standardmäßigen Warnungsrichtlinien können](../../compliance/alert-policies.md#default-alert-policies) automatisierte Untersuchungen auslösen. In der folgenden Tabelle werden die Warnungen beschrieben, die automatisierte Untersuchungen auslösen, ihren Schweregrad im Microsoft 365 Security Center und deren Generierung:
+Microsoft 365 Exchange bietet viele integrierte Warnungsrichtlinien, die helfen, missbrauchte Administratorberechtigungen, Schadsoftwareaktivitäten, potenzielle externe und interne Bedrohungen und Risiken der Informationsverwaltung zu identifizieren. Mehrere der [Standardmäßigen Warnungsrichtlinien können](../../compliance/alert-policies.md#default-alert-policies) automatisierte Untersuchungen auslösen. In der folgenden Tabelle werden die Warnungen beschrieben, die automatisierte Untersuchungen auslösen, ihren Schweregrad im Microsoft 365 Security Center und deren Generierung:
 
 |Warnung|Severity|So wird die Warnung generiert|
 |---|---|---|
-|Ein potenziell schädlicher URL-Klick wurde erkannt.|**High**|Diese Warnung wird generiert, wenn eine der folgenden Schritte auftritt: <ul><li>Ein durch sichere [Links](safe-links.md) in Ihrer Organisation geschützter Benutzer klickt auf einen schädlichen Link.</li><li>Diktieränderungen für URLs werden von Microsoft Defender für Office 365 identifiziert</li><li>Benutzer überschreiben Warnseiten für sichere Links (basierend auf der Richtlinie für sichere Links in [Ihrer Organisation).](set-up-safe-links-policies.md)</li></ul> <p> Weitere Informationen zu Ereignissen, die diese Warnung auslösen, finden Sie unter [Set up Safe Links policies](set-up-safe-links-policies.md).|
+|Ein potenziell schädlicher URL-Klick wurde erkannt.|**High**|Diese Warnung wird generiert, wenn eine der folgenden Schritte auftritt: <ul><li>Ein durch sichere [Links](safe-links.md) in Ihrer Organisation geschützter Benutzer klickt auf einen schädlichen Link.</li><li>Diktieränderungen für URLs werden von Microsoft Defender für die Office 365</li><li>Benutzer überschreiben Warnseiten für sichere Links (basierend auf der Richtlinie für sichere Links in [Ihrer Organisation).](set-up-safe-links-policies.md)</li></ul> <p> Weitere Informationen zu Ereignissen, die diese Warnung auslösen, finden Sie unter [Set up Safe Links policies](set-up-safe-links-policies.md).|
 |Eine E-Mail-Nachricht wird von einem Benutzer als Schadsoftware oder Phishing gemeldet.|**Zur Information**|Diese Warnung wird generiert, wenn Benutzer in Ihrer Organisation Nachrichten mithilfe des [Berichtsnachrichten-Add-Ins](enable-the-report-message-add-in.md) oder [des Phishing-Add-Ins melden als Phishing-E-Mail melden.](enable-the-report-phish-add-in.md)|
-|E-Mail-Nachrichten, die Schadsoftware enthalten, werden nach der Zustellung entfernt|**Zur Information**|Diese Warnung wird generiert, wenn E-Mail-Nachrichten, die Schadsoftware enthalten, an Postfächer in Ihrer Organisation zugestellt werden. Wenn dieses Ereignis auftritt, entfernt Microsoft die infizierten Nachrichten aus Exchange Online-Postfächern mithilfe der automatischen [Null-Stunden-Bereinigung](zero-hour-auto-purge.md).|
-|E-Mail-Nachrichten, die Phish-URLs enthalten, werden nach der Zustellung entfernt|**Zur Information**|Diese Warnung wird generiert, wenn Nachrichten mit Phish an Postfächer in Ihrer Organisation zugestellt werden. Wenn dieses Ereignis auftritt, entfernt Microsoft die infizierten Nachrichten aus Exchange Online-Postfächern mithilfe der automatischen [Null-Stunden-Bereinigung](zero-hour-auto-purge.md).|
+|E-Mail-Nachrichten, die Schadsoftware enthalten, werden nach der Zustellung entfernt|**Zur Information**|Diese Warnung wird generiert, wenn E-Mail-Nachrichten, die Schadsoftware enthalten, an Postfächer in Ihrer Organisation zugestellt werden. Wenn dieses Ereignis auftritt, entfernt Microsoft die infizierten Nachrichten aus Exchange Online Postfächern mithilfe der automatischen [Null-Stunden-Bereinigung](zero-hour-auto-purge.md).|
+|E-Mail-Nachrichten, die Phish-URLs enthalten, werden nach der Zustellung entfernt|**Zur Information**|Diese Warnung wird generiert, wenn Nachrichten mit Phish an Postfächer in Ihrer Organisation zugestellt werden. Wenn dieses Ereignis auftritt, entfernt Microsoft die infizierten Nachrichten aus Exchange Online Postfächern mithilfe der automatischen [Null-Stunden-Bereinigung](zero-hour-auto-purge.md).|
 |Verdächtige E-Mail-Sendemuster werden erkannt|**Medium**|Diese Warnung wird generiert, wenn jemand in Ihrer Organisation verdächtige E-Mails gesendet hat und das Risiko besteht, dass das Senden von E-Mails eingeschränkt wird. Die Warnung ist eine frühzeitige Warnung für das Verhalten, die darauf hinweisen kann, dass das Konto gefährdet ist, aber nicht streng genug, um den Benutzer einzuschränken. <p> Obwohl es selten ist, kann eine von dieser Richtlinie generierte Warnung eine Anomalie sein. Es ist jedoch eine gute Idee, zu überprüfen, ob [das Benutzerkonto gefährdet ist.](responding-to-a-compromised-email-account.md)|
 |Ein Benutzer kann keine E-Mails senden|**High**|Diese Warnung wird generiert, wenn jemand in Ihrer Organisation am Senden ausgehender E-Mails eingeschränkt ist. Diese Warnung führt in der Regel dazu, dass ein [E-Mail-Konto gefährdet ist.](responding-to-a-compromised-email-account.md) <p> Weitere Informationen zu eingeschränkten Benutzern finden Sie unter [Remove blocked users from the Restricted Users portal in Microsoft 365](removing-user-from-restricted-users-portal-after-spam.md).|
 |
@@ -110,8 +110,8 @@ Berechtigungen werden über bestimmte Rollen erteilt, z. B. über die in der fol
 
 |Aufgabe|Erforderliche Rollen|
 |---|---|
-|Einrichten von AIR-Features|Eine der folgenden Rollen: <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li></ul> <p> Diese Rollen können in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im Security & Compliance Center zugewiesen [werden.](permissions-in-the-security-and-compliance-center.md)|
-|Beginnen einer automatische Untersuchung <p> --- oder --- <p> Genehmigen oder Ablehnen empfohlener Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im Security & Compliance Center zugewiesen [sind:](permissions-in-the-security-and-compliance-center.md) <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li><li>Sicherheitsoperator</li><li>Sicherheitsleseberechtigter <br> --- und --- </li><li>Suchen und Löschen (diese Rolle wird nur im [Security & Compliance Center zugewiesen.](permissions-in-the-security-and-compliance-center.md) Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und der neuen Rollengruppe die Rolle Suchen und Löschen hinzufügen.</li></ul>|
+|Einrichten von AIR-Features|Eine der folgenden Rollen: <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li></ul> <p> Diese Rollen können im [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im Security & Compliance Center zugewiesen [werden.](permissions-in-the-security-and-compliance-center.md)|
+|Beginnen einer automatische Untersuchung <p> --- oder --- <p> Genehmigen oder Ablehnen empfohlener Aktionen|Eine der folgenden Rollen, die [in](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) Azure Active Directory oder im Security & Compliance Center [zugewiesen sind:](permissions-in-the-security-and-compliance-center.md) <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li><li>Sicherheitsoperator</li><li>Sicherheitsleseberechtigter <br> --- und --- </li><li>Suchen und Löschen (diese Rolle wird nur im [Security & Compliance Center zugewiesen.](permissions-in-the-security-and-compliance-center.md) Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und der neuen Rollengruppe die Rolle Suchen und Löschen hinzufügen.</li></ul>|
 
 ## <a name="required-licenses"></a>Erforderliche Lizenzen
 
@@ -123,11 +123,11 @@ Berechtigungen werden über bestimmte Rollen erteilt, z. B. über die in der fol
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>Änderungen werden in Kürze in Ihrem Security Center vorgenommen
 
-Wenn Sie bereits die AIR-Funktionen in Microsoft Defender für Office 365 verwenden, sehen Sie einige Änderungen im verbesserten [Microsoft 365 Security Center](../defender/overview-security-center.md).
+Wenn Sie bereits die AIR-Funktionen in Microsoft Defender für Office 365 verwenden, sehen Sie einige Änderungen im verbesserten Microsoft 365 [Security Center](../defender/overview-security-center.md).
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Einheitliches Aktionscenter":::
 
-Das neue und verbesserte Sicherheitscenter vereint die AIR-Funktionen in [Microsoft Defender für Office 365](defender-for-office-365.md) und in Microsoft Defender for [Endpoint](../defender-endpoint/automated-investigations.md). Dank dieser Updates und Verbesserungen kann Ihr Sicherheitsteam Details zu automatisierten Untersuchungen und Abhilfemaßnahmen für Ihre E-Mails, von mehreren Personen gemeinsam erstellte/genutzte Inhalte, Benutzerkonten und Geräte an einem Ort anzeigen.
+Das neue und verbesserte Sicherheitscenter vereint die AIR-Funktionen in [Microsoft Defender for Office 365](defender-for-office-365.md) und in Microsoft Defender for [Endpoint](../defender-endpoint/automated-investigations.md). Dank dieser Updates und Verbesserungen kann Ihr Sicherheitsteam Details zu automatisierten Untersuchungen und Abhilfemaßnahmen für Ihre E-Mails, von mehreren Personen gemeinsam erstellte/genutzte Inhalte, Benutzerkonten und Geräte an einem Ort anzeigen.
 
 > [!TIP]
 > Das neue Microsoft 365 Security Center ( <https://security.microsoft.com> ) ersetzt die folgenden Center:
@@ -139,7 +139,7 @@ Das neue und verbesserte Sicherheitscenter vereint die AIR-Funktionen in [Micros
 
 ### <a name="what-to-expect"></a>Das erwartet Sie
 
-In der folgenden Tabelle sind Änderungen und Verbesserungen aufgeführt, die air in Microsoft Defender für Office 365 bietet.
+In der folgenden Tabelle sind Änderungen und Verbesserungen aufgeführt, die air in Microsoft Defender für Office 365.
 
 |Element|Was ändert sich?|
 |---|---|

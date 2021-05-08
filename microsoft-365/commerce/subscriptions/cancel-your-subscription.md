@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Microsoft 365 für Business-Testversion oder ein kostenpflichtiges Abonnement kündigen können.
 ms.date: 04/08/2021
-ms.openlocfilehash: f052a08cfe0e7582690864556cfc3039d6caf99c
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 15ab7ed31af24fa4cb1c83c6babc945871584375
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107002"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244660"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
@@ -126,7 +126,7 @@ Wenn die Kündigung wirksam wird, verlieren Ihre Benutzer den Zugriff auf ihre D
 
 - Informationen zum Verschieben von E-Mails, Kontakten, Aufgaben und Kalenderinformationen in ein anderes Konto finden Sie unter [Exportieren oder Sichern von E-Mails, Kontakten und Kalendern in einer Outlook PST-Datei](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 
-- Informationen zum Speichern einer Dokumentbibliothek oder von Listeninhalten (z. B. Kontakten) aus einer SharePoint Online-Umgebung (OneDrive for Business oder Teamwebsites) auf Dateifreigaben oder einem lokalen Computer finden Sie unter [Manuelle Migration von SharePoint Online-Inhalten](https://support.microsoft.com/kb/2783484).
+- Informationen zum Speichern einer Dokumentbibliothek oder von Listeninhalten (z. B. Kontakten) aus einer SharePoint Online-Umgebung (OneDrive for Business oder Teamwebsites) auf Dateifreigaben oder einem lokalen Computer finden Sie unter [Manuelle Migration von SharePoint Online-Inhalten](https://docs.microsoft.com/sharepoint/troubleshoot/migration-tool/content-manual-migration).
 
 ### <a name="uninstall-office-optional"></a>Deinstallieren von Office (optional)
 

@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: b26574c85e498209f8d0233495d3fe0e44733909
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ad774fc36f4f167cb7a4e695b9f572ceb55b968b
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245876"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274676"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Details und Ergebnisse einer automatisierten Untersuchung
 
@@ -35,20 +35,22 @@ ms.locfileid: "52245876"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Bei Microsoft 365 Defender stehen [](m365d-autoir.md) Bei der automatischen Untersuchung details zu dieser Untersuchung sowohl während als auch nach dem automatisierten Untersuchungsprozess zur Verfügung. Wenn Sie über die [erforderlichen Berechtigungen](m365d-action-center.md#required-permissions-for-action-center-tasks) verfügen, können Sie diese Details in einer unter Anzeige mit Untersuchungsdetails anzeigen. Die Anzeige mit Untersuchungsdetails bieten Ihnen den aktuellen Status sowie die Möglichkeit, ausstehende Aktionen zu genehmigen. 
+Wenn eine automatisierte Untersuchung mit [](m365d-autoir.md) Microsoft 365 Defender ausgeführt wird, sind Details zu dieser Untersuchung sowohl während als auch nach dem automatisierten Untersuchungsprozess verfügbar. Wenn Sie über die [erforderlichen Berechtigungen](m365d-action-center.md#required-permissions-for-action-center-tasks) verfügen, können Sie diese Details in einer unter Anzeige mit Untersuchungsdetails anzeigen. Diese Ansicht bietet Ihnen den aktuellen Status und die Möglichkeit, ausstehende Aktionen zu genehmigen. 
 
 ![Untersuchungsdetails](../../media/mtp-air-investdetails.png)
 
 ## <a name="new-unified-investigation-page"></a>(NEU!) Seite "Einheitliche Untersuchung"
 
-Die Untersuchungsseite wurde kürzlich aktualisiert, um Informationen auf Ihren Geräten, E-Mail- und Zusammenarbeitsinhalten zu enthalten. Die neue, einheitliche Untersuchungsseite definiert eine gemeinsame Sprache und bietet eine einheitliche Erfahrung für automatische Untersuchungen in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) und Microsoft Defender für [Office 365.](../office-365-security/defender-for-office-365.md) Um auf die Seite "Einheitliche Untersuchung" zu zugreifen, wählen Sie den Link im gelben Banner aus, auf dem Sie sehen werden:
+Die Untersuchungsseite wurde kürzlich aktualisiert, um Informationen auf Ihren Geräten, E-Mail- und Zusammenarbeitsinhalten zu enthalten. Die neue, einheitliche Untersuchungsseite definiert eine gemeinsame Sprache und bietet eine einheitliche Erfahrung für automatische Untersuchungen in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) und Microsoft Defender für Office [365](../office-365-security/defender-for-office-365.md). Um auf die Seite "Einheitliche Untersuchung" zu zugreifen, wählen Sie den Link im gelben Banner aus, auf dem Sie sehen werden:
+
 - Jede Untersuchungsseite im Office 365 Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) )
 - Beliebige Untersuchungsseite im Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
-- Jede Vorfall- oder Aktionscentererfahrung in der verbesserten Microsoft 365 Security Center ( [https://security.microsoft.com](https://security.microsoft.com) )
+- Vorfall oder Action Center-Erfahrung im Microsoft 365 Security Center ( [https://security.microsoft.com](https://security.microsoft.com) )
 
 ## <a name="open-the-investigation-details-view"></a>Öffnen der Anzeige mit Untersuchungsdetails
 
 Mit einer der folgenden Methoden können Sie die Anzeige mit Untersuchungsdetails öffnen:
+
 - [Auswählen eines Elements im Info-Center](#select-an-item-in-the-action-center)
 - [Auswählen einer Untersuchung von einer Vorfalldetailsseite](#open-an-investigation-from-an-incident-details-page)
 
@@ -75,8 +77,6 @@ Im [verbesserten Aktionscenter](m365d-action-center.md) ( ) werden Korrekturakti
 
 Verwenden Sie die Seite „Vorfalldetails“, um detaillierte Informationen zu einem Vorfall anzuzeigen, einschließlich ausgelöster Warnungen und Informationen zu betroffenen Geräten, Benutzerkonten oder Postfächern.
 
-![Vorfalldetails](../../media/mtp-incidentdetails-tabs.png)
-
 1. Gehen Sie zu [https://security.microsoft.com](https://security.microsoft.com), und melden Sie sich an. 
 
 2. Wählen Sie im Navigationsbereich **Incidents & Alerts**  >  **Incidents aus.** 
@@ -87,9 +87,13 @@ Verwenden Sie die Seite „Vorfalldetails“, um detaillierte Informationen zu e
 
 5. Wählen **Sie Untersuchungsseite öffnen aus.** 
 
+Im Folgenden sehen Sie ein Beispiel.
+
+![Vorfalldetails](../../media/mtp-incidentdetails-tabs.png)
+
 ## <a name="investigation-details"></a>Untersuchungsdetails
 
-Verwenden Sie die Anzeige mit Untersuchungsdetails, um vergangene, aktuelle und ausstehende Aktivitäten im Zusammenhang mit einer Untersuchung anzuzeigen. Die Anzeige mit Untersuchungsdetails sieht wie in der folgenden Abbildung aus:
+Verwenden Sie die Anzeige mit Untersuchungsdetails, um vergangene, aktuelle und ausstehende Aktivitäten im Zusammenhang mit einer Untersuchung anzuzeigen. Im Folgenden sehen Sie ein Beispiel.
 
 ![Untersuchungsdetails](../../media/mtp-air-investdetails.png)
 
@@ -101,16 +105,16 @@ In der Anzeige mit Untersuchungsdetails können Sie Informationen im **Untersuch
 | Registerkarte | Beschreibung |
 |:--------|:--------|
 | **Untersuchungsdiagramm**   | Bietet eine visuelle Darstellung der Untersuchung. Stellt Entitäten dar und listet gefundene Bedrohungen zusammen mit Warnungen und Informationen dazu auf, ob Aktionen genehmigt werden müssen.<br/>Sie können ein Element im Diagramm auswählen, um weitere Details anzuzeigen. Wenn Sie z. B. das **Symbol Nachweis** auswählen, werden Sie zur Registerkarte **Nachweis** angezeigt, auf der Sie erkannte Entitäten und deren Urteile sehen können. |
-| **Benachrichtigungen**    | Listet die mit der Untersuchung verbundenen Warnungen auf. Warnungen können von Bedrohungsschutzfeatures auf dem Gerät eines Benutzers, in Office Apps, Cloud App Security und anderen Funktionen Microsoft 365 werden.|
+| **Benachrichtigungen**    | Listet die mit der Untersuchung verbundenen Warnungen auf. Warnungen können von Bedrohungsschutzfeatures auf dem Gerät eines Benutzers, in Office-Apps, Microsoft Cloud App Security und anderen Microsoft 365 Defender-Features stammen.|
 | **Geräte** | Listet die in der Untersuchung enthaltenen Geräte zusammen mit ihrer Behebungsstufe auf. (Korrekturstufen entsprechen der [Automatisierungsebene für Gerätegruppen.)](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) |
 | **Postfächer** |Listet Postfächer auf, die von erkannten Bedrohungen betroffen sind.  |
 | **Benutzer**  | Listet Benutzerkonten auf, die von erkannten Bedrohungen betroffen sind. |
-| **Nachweise** | Listet Nachweise auf, die durch Warnungen/Untersuchungen ausgelöst wurden. Umfasst Urteile (*Bösartig*, *Verdächtig* oder *Keine Bedrohungen gefunden*) und den Behebungsstatus. |
+| **Nachweise** | Listet Nachweise auf, die durch Warnungen oder Untersuchungen ausgelöst wurden. Umfasst Urteile (*Bösartig*, *Verdächtig*, *Unbekannt* oder *Keine Gefundenen* Bedrohungen ) und Den Behebungsstatus. |
 | **Entities**  | Enthält Details zu jeder analysierten Entität, einschließlich eines Urteils für jeden Entitätstyp (*Bösartige* *,* Verdächtige oder Keine *gefundenen Bedrohungen*).|
 |**Log**    | Bietet eine chronologische, detaillierte Ansicht aller Untersuchungsaktionen, die nach dem Auslösen einer Warnung ergriffen wurden.|
-| **Ausstehende Aktionen** | Listet Elemente auf, für die eine Genehmigung erforderlich, um fortzufahren. Wechseln Sie zum Aktionscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ), um ausstehende Aktionen zu genehmigen. |
+| **Verlauf ausstehender Aktionen** | Listet Elemente auf, für die eine Genehmigung erforderlich, um fortzufahren. Wechseln Sie zum Aktionscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ), um ausstehende Aktionen zu genehmigen. |
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Genehmigen oder Ablehnen von Korrekturaktionen nach einer automatisierten Untersuchung](m365d-autoir-actions.md)
+- [Anzeigen und Verwalten von Korrekturaktionen](m365d-autoir-actions.md)
 - [Weitere Informationen zu Korrekturaktionen](m365d-remediation-actions.md)

@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34274e260da2e8acc8088fcff6d324b6b31fc2ef
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 0e09a313b512135785050abd5aa61bb9576ce1d8
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935941"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274940"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender für Endpunkt unter Linux
 
@@ -39,16 +39,23 @@ ms.locfileid: "51935941"
 In diesem Thema wird beschrieben, wie Sie Microsoft Defender for Endpoint unter Linux installieren, konfigurieren, aktualisieren und verwenden.
 
 > [!CAUTION]
-> Das Ausführen anderer Endpunktschutzprodukte von Drittanbietern neben Microsoft Defender for Endpoint unter Linux führt wahrscheinlich zu Leistungsproblemen und unvorhersehbaren Nebenwirkungen. Wenn der Schutz von Nicht-Microsoft-Endpunkten in Ihrer Umgebung eine absolute Anforderung ist, können Sie die Funktionen von Defender for Endpoint unter Linux EDR weiterhin sicher nutzen, nachdem Sie die Antivirenfunktionen so konfiguriert haben, dass sie im passiven Modus [ausgeführt werden.](linux-preferences.md#enable--disable-passive-mode)
+> Das Ausführen anderer Endpunktschutzprodukte von Drittanbietern neben Microsoft Defender for Endpoint unter Linux führt wahrscheinlich zu Leistungsproblemen und unvorhersehbaren Nebenwirkungen. Wenn der Nicht-Microsoft-Endpunktschutz in Ihrer Umgebung eine absolute Anforderung ist, können Sie die Funktionen von Defender for Endpoint unter Linux EDR weiterhin sicher nutzen, nachdem Sie die Antivirenfunktionen so konfiguriert haben, dass sie im passiven Modus [ausgeführt werden.](linux-preferences.md#enable--disable-passive-mode)
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>Installieren von Microsoft Defender for Endpoint unter Linux
 
 ### <a name="prerequisites"></a>Voraussetzungen
 
-- Zugriff auf das Microsoft Defender Security Center-Portal
+- Zugriff auf das Microsoft Defender Security Center Portal
 - Linux-Verteilung mithilfe des [systemd System](https://systemd.io/) Managers
 - Anfängererfahrung in Linux- und BASH-Skripting
 - Administratorrechte auf dem Gerät (bei manueller Bereitstellung)
+
+> [!NOTE]
+>  Microsoft Defender for Endpoint on Linux Agent ist unabhängig vom [OMS-Agent.](/azure/azure-monitor/agents/agents-overview#log-analytics-agent) Microsoft Defender for Endpoint basiert auf einer eigenen unabhängigen Telemetriepipeline.
+> 
+> Microsoft Defender for Endpoint unter Linux ist noch nicht in Azure Security Center integriert.
+
+
 
 ### <a name="installation-instructions"></a>Installationsanweisungen
 
@@ -66,6 +73,8 @@ Im Allgemeinen müssen Sie die folgenden Schritte ausführen:
 
 Wenn Installationsfehler auft werden, finden Sie informationen unter [Troubleshooting installation failures in Microsoft Defender for Endpoint on Linux](linux-support-install.md).
 
+
+
 ### <a name="system-requirements"></a>Systemanforderungen
 
 - Unterstützte Linux-Serververteilungen und -versionen:
@@ -77,14 +86,23 @@ Wenn Installationsfehler auft werden, finden Sie informationen unter [Troublesho
   - SUSE Linux Enterprise Server 12 oder höher
   - Oracle Linux 7.2 oder höher
 
+    > [!NOTE]
+    > Nicht explizit aufgeführte Verteilungen und Versionen werden nicht unterstützt (auch wenn sie von den offiziell unterstützten Verteilungen abgeleitet sind).
+
+
 - Minimale Kernelversion 3.10.0-327
+
 - Die `fanotify` Kerneloption muss aktiviert sein
+
   > [!CAUTION]
   > Das Ausführen von Defender for Endpoint auf Linux neben anderen -basierten Sicherheitslösungen `fanotify` wird nicht unterstützt. Dies kann zu unvorhersehbaren Ergebnissen führen, einschließlich des Aufhängens des Betriebssystems.
 
 - Speicherplatz: 1 GB
+
 - /opt/microsoft/mdatp/sbin/wdavdaemon erfordert ausführbare Berechtigungen. Weitere Informationen finden Sie unter "Sicherstellen, dass der Daemon über ausführbare Berechtigungen verfügt" unter [Problembehandlung](/microsoft-365/security/defender-endpoint/linux-support-install)von Installationsproblemen für Microsoft Defender for Endpoint unter Linux .
+
 - Arbeitsspeicher: 1 GB
+
     > [!NOTE]
     > Stellen Sie sicher, dass Sie freien Speicherplatz in /var haben.
 
@@ -117,7 +135,7 @@ Nachdem Sie den Dienst aktiviert haben, müssen Sie möglicherweise Ihr Netzwerk
 
 In der folgenden herunterladbaren Kalkulationstabelle sind die Dienste und die zugehörigen URLs aufgeführt, mit deren Netzwerk eine Verbindung herstellen kann. Sie sollten sicherstellen, dass es keine Firewall- oder Netzwerkfilterregeln gibt, die den Zugriff auf diese URLs verweigern würden. Falls dies derFall ist, müssen Sie möglicherweise eine *speziell* für sie zulässige Regel erstellen.
 
-|**Tabellenkalkulation der Domänenliste**|**Beschreibung**|
+| Tabellenkalkulation der Domänenliste | Beschreibung |
 |:-----|:-----|
 |![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Tabellenkalkulation bestimmter DNS-Einträge für Dienststandorte, geografische Standorte und Betriebssysteme. <br><br>[Laden Sie die Tabelle hier herunter.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)
 

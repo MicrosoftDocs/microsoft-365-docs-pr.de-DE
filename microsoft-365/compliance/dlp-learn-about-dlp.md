@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Ihre vertraulichen Informationen mithilfe Microsoft 365 Richtlinien und Tools zur Verhinderung von Datenverlust schützen und einen Rundgang durch den DLP-Lebenszyklus unternehmen.
-ms.openlocfilehash: 451622d15b1f422304dd498264ff2fe4a343bb6c
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 88cf913f62d28c89bce7054473eb577217de9489
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52127789"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244612"
 ---
 # <a name="learn-about-data-loss-prevention"></a>Informationen zur Verhinderung von Datenverlust
 
@@ -212,3 +212,5 @@ Weitere Informationen zu Microsoft 365 DLP finden Sie unter:
 - [Erfahren Sie mehr über den lokalen Microsoft 365-Scanner zur Verhinderung von Datenverlust (Vorschau)](dlp-on-premises-scanner-learn.md)
 - [Erfahren Sie mehr über die Microsoft Compliance-Erweiterung (Vorschau)](dlp-chrome-learn-about.md)
 - [Informationen zum Dashboard zur Verhinderung von Datenverlust](dlp-alerts-dashboard-learn.md)
+
+Informationen zur Verhinderung von Datenverlust zur Einhaltung von Datenschutzbestimmungen finden Sie unter [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).

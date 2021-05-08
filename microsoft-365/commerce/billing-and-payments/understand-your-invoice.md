@@ -19,16 +19,23 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Ihre Rechnung für Microsoft Business-Produkte lesen und verstehen können.
 keywords: Abrechnungskonten, Unternehmensinformationen, Rechnungen
-ms.openlocfilehash: 3752254fc6068381cd6effed0be4d5b8295f8a27
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 344877a4b97f5c77dc3381aa49d7bf0f60bd628e
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579758"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244708"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Erläuterungen zu Ihrer Rechnung
 
 Die Rechnung enthält eine Zusammenfassung Ihrer Belastungen und die Zahlungsanweisungen. Sie können im Microsoft 365 Admin Center [Ihre Online-Rechnung anzeigen](#view-your-online-invoice). Sie können Sie auch im PDF-Format (Portable Document Format) herunterladen, um sie mit E-Mail zu versenden.
+
+So zeigen Sie Ihre Rechnung an und drucken sie:
+
+1. Wählen Sie auf der Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rechnungen und Zahlungen</a>einen Datumsbereich aus. 
+2. Wenn Sie eine PDF-Kopie der Rechnung drucken oder speichern möchten, wählen Sie **PDF-Rechnung herunterladen** aus, und drucken Sie dann das PDF.
+
+Weitere Informationen hierzu finden Sie unter [Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md).
 
 Wenn Sie nur ein Microsoft 365-Abonnement haben, lesen Sie [Erläuterungen zu Ihrer Rechnung für Microsoft 365 für Unternehmen](understand-your-invoice2.md).
 
@@ -133,13 +140,6 @@ Die Zahlungsanweisungen hängen von Ihrer Zahlungsmethode ab und werden am Ende 
 
 - **Dienstzeitraum:** Der Zeitraum, für den Ihnen die Nutzung des Diensts in Rechnung gestellt wird.
 - **Abrechnungszeitraum:** Der Zeitraum seit dem letzten Rechnungsdatum.
-
-### <a name="how-do-i-view-and-print-my-bill"></a>Wie kann ich meine Rechnung anzeigen und drucken?
-
-1. Wählen Sie auf der Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rechnungen und Zahlungen</a>einen Datumsbereich aus. 
-2. Wenn Sie eine PDF-Kopie der Rechnung drucken oder speichern möchten, wählen Sie **PDF-Rechnung herunterladen** aus, und drucken Sie dann das PDF.
-
-Weitere Informationen hierzu finden Sie unter [Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md).
 
 ### <a name="why-dont-i-see-azure-prepayment-as-a-payment-method"></a>Warum sehe ich Azure-Vorauszahlungen nicht als Zahlungsmethode?
 

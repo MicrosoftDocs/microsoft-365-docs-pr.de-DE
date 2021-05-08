@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: how-to
 ms.date: 01/29/2021
 ms.technology: mde
-ms.openlocfilehash: 48674292e5a72ccc371ff4bf43dc499f19b3886d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b0c983f4ba939cee6485570af774c8a728c73944
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064055"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274928"
 ---
 # <a name="review-remediation-actions-following-an-automated-investigation"></a>Überprüfen von Korrekturmaßnahmen nach einer automatisierten Untersuchung
 
@@ -107,7 +107,7 @@ Automatisierungsebenen wirken sich darauf aus, ob bestimmte Korrekturaktionen au
 |**Vollständig – Automatische Behebung von Bedrohungen** (empfohlene Einstellung) |Für einen Beweis wird ein Urteil *von "Bösartig"* erreicht. <br/><br/>Entsprechende Korrekturaktionen werden automatisch ausgeführt. |[Überprüfen abgeschlossener Aktionen](#review-completed-actions) |
 |**Vollständig – Automatische Behebung von Bedrohungen** |Ein *Verdächtiges-Urteil* wird für ein Beweisstück erreicht. <br/><br/>Behebungsaktionen stehen noch aus, damit die Genehmigung fortgesetzt wird. | [Genehmigen (oder Ablehnen) ausstehender Aktionen](#review-pending-actions) |
 |**Semi – Genehmigung für alle Korrekturen erforderlich**  |Für einen Beweis wird  ein Urteil *von "Bösartig"* oder "Verdächtig" erreicht. <br/><br/>Behebungsaktionen stehen noch aus, damit die Genehmigung fortgesetzt wird.  |[Genehmigen (oder Ablehnen) ausstehender Aktionen](#review-pending-actions) |
-|**Semi – Erfordert die Genehmigung für die Korrektur von Kernordnern** |Für einen Beweis wird ein Urteil *von "Bösartig"* erreicht. <br/><br/>Wenn es sich bei dem Artefakt um eine Datei oder ausführbare Datei handelt und sich in einem Betriebssystemverzeichnis befindet, z. B. im Ordner "Windows" oder "Programmdateien", stehen Korrekturaktionen noch aus. <br/><br/>Wenn sich das Artefakt *nicht* in einem Betriebssystemverzeichnis befindet, werden korrekturaktionen automatisch ausgeführt. |1. [Genehmigen (oder Ablehnen) ausstehender Aktionen](#review-pending-actions)<br/><br/>2. [Überprüfen abgeschlossener Aktionen](#review-completed-actions) |
+|**Semi – Erfordert die Genehmigung für die Korrektur von Kernordnern** |Für einen Beweis wird ein Urteil *von "Bösartig"* erreicht. <br/><br/>Wenn das Artefakt eine Datei oder ausführbare Datei ist und sich in einem Betriebssystemverzeichnis befindet, z. B. im Ordner Windows oder im Ordner "Programme", stehen Korrekturaktionen aus. <br/><br/>Wenn sich das Artefakt *nicht* in einem Betriebssystemverzeichnis befindet, werden korrekturaktionen automatisch ausgeführt. |1. [Genehmigen (oder Ablehnen) ausstehender Aktionen](#review-pending-actions)<br/><br/>2. [Überprüfen abgeschlossener Aktionen](#review-completed-actions) |
 |**Semi – Erfordert die Genehmigung für die Korrektur von Kernordnern** |Ein *Verdächtiges-Urteil* wird für ein Beweisstück erreicht. <br/><br/>Korrekturaktionen stehen noch aus.  |[Genehmigen (oder Ablehnen) ausstehender Aktionen](#review-pending-actions).|
 |**Semi – Genehmigung für nicht temporäre Ordnerbehebung erforderlich** |Für einen Beweis wird ein Urteil *von "Bösartig"* erreicht. <br/><br/>Wenn es sich bei dem Artefakt um eine Datei oder ausführbare Datei handelt, die sich nicht in einem temporären Ordner befindet, z. B. im Downloadordner oder temporären Ordner des Benutzers, stehen Korrekturaktionen aus. <br/><br/>Wenn es sich bei dem Artefakt um eine Datei oder ausführbare Datei *handelt,* die sich in einem temporären Ordner befindet, werden korrekturaktionen automatisch ausgeführt.  |1. [Genehmigen (oder Ablehnen) ausstehender Aktionen](#review-pending-actions)<br/><br/>2. [Überprüfen abgeschlossener Aktionen](#review-completed-actions)  |
 |**Semi – Genehmigung für nicht temporäre Ordnerbehebung erforderlich** |Ein *Verdächtiges-Urteil* wird für ein Beweisstück erreicht. <br/><br/>Korrekturaktionen stehen noch aus. |[Genehmigen (oder Ablehnen) ausstehender Aktionen](#review-pending-actions)  | 
@@ -120,7 +120,7 @@ In Microsoft Defender for Endpoint werden alle Urteile im [Aktionscenter nachver
 
 - [Informationen zu Liveantwortfunktionen](live-response.md)
 - [Proaktive Suche nach Bedrohungen mit erweiterter Suche](advanced-hunting-overview.md)
-- [Adress false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Adressiert falsch positive/negative Ergebnisse in Microsoft Defender für Endpunkt](defender-endpoint-false-positives-negatives.md)
 
 ## <a name="see-also"></a>Siehe auch
 
