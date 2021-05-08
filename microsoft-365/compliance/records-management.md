@@ -21,18 +21,18 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Mit der Datensatzverwaltung in Microsoft 365 können Sie Ihre Aufbewahrungszeitpläne auf einen Dateiplan anwenden, der die Aufbewahrung, die Datensatzdeklaration und die Löschung verwaltet.
-ms.openlocfilehash: ac8e9bf2ac9ac47518788cd19a197818c13078a1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 853303dcaffcbacfcf805b8617b836254cf31ad8
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051687"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245432"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Weitere Informationen zur Datensatzverwaltung in Microsoft 365
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Organisationen aller Art benötigen eine Datensatzverwaltungslösung, um gesetzliche, rechtliche sowie unternehmenskritische Datensätze in ihren Unternehmensdaten zu verwalten. Die Datensatzverwaltung in Microsoft 365 unterstützt eine Organisation bei der Verwaltung ihrer gesetzlichen Verpflichtungen, bietet die Möglichkeit, die Einhaltung von Vorschriften nachzuweisen und erhöht die Effizienz bei der regelmäßigen Disposition von Elementen, die nicht mehr aufbewahrt werden müssen oder nicht mehr von Wert oder für Geschäftszwecke erforderlich sind.
+Organisationen jeder Art benötigen eine Datensatzverwaltungslösung, um ihre regulatorischen, gesetzlichen und geschäftskritischen Datensätze über alle Unternehmensdaten hinweg zu verwalten. Die Datensatzverwaltung in Microsoft 365 unterstützt eine Organisation bei der Verwaltung ihrer gesetzlichen Verpflichtungen, bietet die Möglichkeit, die Einhaltung von Vorschriften nachzuweisen und erhöht die Effizienz bei der regelmäßigen Löschung von Elementen, die nicht mehr aufbewahrt werden müssen, keinen Wert mehr besitzen oder für Geschäftszwecke nicht länger erforderlich sind.
 
 Verwenden Sie die folgenden Funktionen zur Unterstützung Ihrer Datensatzverwaltungslösung in Microsoft 365:
 
@@ -48,7 +48,7 @@ Verwenden Sie die folgenden Funktionen zur Unterstützung Ihrer Datensatzverwalt
 
 - **Exportieren Sie Informationen zu allen Elementen**, die mit der [Exportoption](disposition.md#filter-and-export-the-views) verworfen wurden.
 
-- **Legen Sie spezifische Berechtigungen für Datensatzverwalterfunktionen in Ihrer Organisation fest**, um [über den richtigen Zugriff zu verfügen](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md).
+- **Legen Sie spezifische Berechtigungen für Datensatzverwalterfunktionen in Ihrer Organisation fest**, um [über den richtigen Zugriff zu verfügen](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
 
 Mit diesen Funktionen können Sie die Aufbewahrungspläne Ihrer Organisation und die Anforderungen in eine Lösung für die Datensatzverwaltung integrieren, mit der Aufbewahrung, Deklaration von Datensätzen und Disposition zur Unterstützung des gesamten Inhaltslebenszyklus verwaltet werden.
 
@@ -111,6 +111,4 @@ Wenn Sie eine Aufbewahrungsbezeichnung auf ein Listenelement anwenden, das eine 
 
 ## <a name="configuration-guidance"></a>Konfigurationsleitfaden
 
-Siehe [Erste Schritte mit der Datensatzverwaltung](get-started-with-records-management.md).
-
-Mehr zu Inhalte als Datensatz markieren finden Sie unter [Datensätze mithilfe von Aufbewahrungsbezeichnungen deklarieren](declare-records.md).
+Siehe [Erste Schritte mit der Datensatzverwaltung](get-started-with-records-management.md). Dieser Artikel enthält Informationen über Abonnements, Berechtigungen und Links zu End-to-End-Konfigurationsanleitungen für Datensatzverwaltungsszenarien.

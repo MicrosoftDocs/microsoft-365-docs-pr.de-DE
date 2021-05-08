@@ -1,5 +1,5 @@
 ---
-title: Nach Antworten und Hilfe suchen
+title: Suchen von Dokumenten und Schulungen
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,33 +20,28 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie die Administratorhilfe für Microsoft 365 Business Premium finden.
-ms.openlocfilehash: 6d16f3ece9782a33c3377e4a6bc2a93b29d54c1a
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Erfahren Sie, wie Sie die Administratorhilfe für Microsoft 365 Business Premium.
+ms.openlocfilehash: 18a50c34f87fa47fe5777e87f8dafa62fb0ac04b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578903"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245228"
 ---
-# <a name="find-answers-and-help-for-admins"></a>Suchen von Antworten und Hilfe für Administratoren
+# <a name="find-docs-and-training"></a>Suchen von Dokumenten und Schulungen
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGn5?autoplay=false]
+Wenn Sie eine Frage haben oder Unterstützung bei Microsoft 365 Business Premium benötigen, haben Sie mehrere Möglichkeiten, Hilfe zu erhalten.
 
-Wenn Sie eine Frage haben oder Unterstützung bei Microsoft 365 Business Premium benötigen, haben Sie mehrere Optionen, um Hilfe zu erhalten.
+## <a name="browse-all-small-business-training"></a>Durchsuchen aller Schulungen für kleine Unternehmen
 
-## <a name="try-it"></a>Probieren Sie es aus!
+Links zu allen Schulungsunterstützungen, die Sie für die Verwendung von Microsoft 365 Kleinunternehmen benötigen, finden Sie unter [Microsoft 365 Small Business Training](index.yml). 
 
-1. Melden Sie sich [an, office.com](https://office.com) Anmeldeinformationen für Ihre Arbeit zu verwenden, und wählen Sie **Administrator aus.**
-1. Wählen Sie auf der Admin Center-Homepage Schulung für **Administratoren** aus, um die für Sie verfügbaren Schulungsoptionen anzuzeigen.
-1. Wählen **Sie Geschäftsbesitzer und Administratoren für** kleine bis mittelgroße Schulungen aus.
-1. Wählen **Sie Enterprise-IT-Experten** für größere oder komplexere Unternehmen aus.
-1. Kehren Sie zum Admin Center  zurück, und wählen Sie diesmal Angepasste Setupanleitungen aus, um eine Reihe von Anleitungen zu sehen, die Sie durch bestimmte Setupaufgaben führt.
-1. Kehren Sie zur Admin Center-Homepage zurück, und wählen Sie **Schulung** für Benutzer aus, um Hilfe zu bestimmten Apps zu erhalten, und erfahren Sie, wie Sie die Features, die Sie täglich verwenden, am besten nutzen können.
-1. Kehren Sie zum Admin Center zurück, und wählen **Sie Hilfe zum** Öffnen des Support-Assistenten benötigen aus. Geben Sie Ihre Frage oder das Thema ein, mit dem Sie Hilfe wünschen, und wählen Sie **Dann Senden aus.** Wählen Sie den Link im Admin Center oder zu dem Artikel aus, der Ihre Frage beantwortet.
-1. Wenn Sie keine Antwort auf Ihre Frage finden, können Sie sich immer an den Support wenden, und ein Supporttechniker antwortet Ihnen in Kürze.
+## <a name="search-for-microsoft-365-admin-center-docs-and-resources"></a>Suchen nach Microsoft 365 Admin Center-Dokumenten und -Ressourcen
 
-Sie können auch die folgenden Ressourcen verwenden, um Hilfe bei Ihrem Problem zu erhalten:
+Informationen zur Suche nach administratorbezogenen Aufgaben und Hilfen, z. B. zurücksetzen von Kennwörtern und Zuweisen von [Microsoft-Abonnements,](../admin/index.yml)finden Sie unter Microsoft 365 Admin Center-Hilfe .
 
-- [aka.ms/learn365admin](../admin/index.yml), um nach allen administratorbezogenen Aufgaben und Hilfen zu suchen, z. B. zurücksetzen von Kennwörtern und Zuweisen von Microsoft-Abonnements.
-- [answers.microsoft.com](https://answers.microsoft.com), um nach Antworten zu suchen, eine Diskussion zu starten und Fragen von anderen Benutzern zu stellen.
-- [techcommunity.microsoft.com](https://techcommunity.microsoft.com), um einer Experten-Community bei treten und bewährte Methoden mit Microsoft 365 für Ihr Unternehmen zu finden.
+## <a name="join-the-community"></a>Der Community beitreten
+
+Starten Sie eine Unterhaltung, folgen Sie Diskussionen, und teilen Sie Ihr Wissen mit anderen Microsoft 365, indem Sie der [Microsoft Small Business](https://smallbusiness.microsoft.com/)Community .
+
+Wenn Sie spezifische Fragen zu anderen Produkten und Diensten haben, stellen Sie Fragen und folgen Sie den relevanten Diskussionen unter [Ask the Microsoft Community](https://answers.microsoft.com).

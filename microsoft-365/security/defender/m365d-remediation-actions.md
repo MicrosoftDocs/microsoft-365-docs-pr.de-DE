@@ -1,6 +1,6 @@
 ---
 title: Korrekturaktionen in Microsoft 365 Defender
-description: Erhalten Sie eine Übersicht über Abhilfemaßnahmen, die automatisierte Untersuchungen in Microsoft 365 Defender durchführen
+description: Erhalten Sie eine Übersicht über Abhilfemaßnahmen, die automatisierten Untersuchungen in Microsoft 365 Defender folgen
 keywords: automatisch, Untersuchung, Warnung, Trigger, Aktion, Wartung
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 41d8b91cbc905da982f8a344392398635f8d3632
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 31162944f4728f2c84efbe2cd5eafbd0c70e00f6
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591852"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245852"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Korrekturaktionen in Microsoft 365 Defender
 
@@ -38,7 +38,7 @@ ms.locfileid: "51591852"
 
 ## <a name="remediation-actions"></a>Wartungsaktionen
 
-Während und nach einer automatisierten Untersuchung in Microsoft 365 Defender werden Korrekturaktionen für schädliche oder verdächtige Elemente identifiziert. Einige Arten von Korrekturaktionen werden auf Geräten, auch als Endpunkte bezeichnet, ergriffen. Andere Korrekturaktionen werden für E-Mail-Inhalte ergriffen. Automatisierte Untersuchungen werden abgeschlossen, nachdem Korrekturmaßnahmen ergriffen, genehmigt oder abgelehnt wurden.
+Während und nach einer automatisierten Untersuchung in Microsoft 365 Defender werden Abhilfemaßnahmen für schädliche oder verdächtige Elemente identifiziert. Einige Arten von Korrekturaktionen werden auf Geräten, auch als Endpunkte bezeichnet, ergriffen. Andere Korrekturaktionen werden für E-Mail-Inhalte ergriffen. Automatisierte Untersuchungen werden abgeschlossen, nachdem Korrekturmaßnahmen ergriffen, genehmigt oder abgelehnt wurden.
 
 > [!IMPORTANT]
 > Ob Korrekturaktionen automatisch oder nur nach Genehmigung ausgeführt werden, hängt von bestimmten Einstellungen ab, z. B. von automatisierungsstufen. Weitere Informationen finden Sie in den folgenden Artikeln:
@@ -46,7 +46,7 @@ Während und nach einer automatisierten Untersuchung in Microsoft 365 Defender w
 > - [Wie Bedrohungen auf Geräten behoben werden](../defender-endpoint/automated-investigations.md)
 > - [Bedrohungen und Abhilfemaßnahmen für E-Mail-& Inhalte der Zusammenarbeit](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
-In der folgenden Tabelle sind Korrekturaktionen zusammengefasst, die derzeit in Microsoft 365 Defender unterstützt werden: 
+In der folgenden Tabelle sind Die Behebungsaktionen zusammengefasst, die derzeit in Defender Microsoft 365 werden: 
 
 |Korrekturaktionen für Geräte (Endpunkte)  |Wartungsaktionen für E-Mails  |
 |:---------|:---------|

@@ -1,6 +1,6 @@
 ---
-title: Verwalten von Microsoft Defender Antivirus-Updates und Anwenden von Basiswerten
-description: Verwalten, wie Microsoft Defender Antivirus Schutz- und Produktupdates erhält.
+title: Verwalten Microsoft Defender Antivirus Updates und Anwenden von Baselines
+description: Verwalten, Microsoft Defender Antivirus Schutz- und Produktupdates erhält.
 keywords: updates, security baselines, protection, schedule updates, force updates, mobile updates, wsus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,35 +16,35 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: ae17aa6e2cb0cefd460ef0db0730570af8c84bb8
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 92f903f750ea5e7f2cb971b535c50bfecced65a2
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995033"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52242312"
 ---
-# <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Verwalten von Microsoft Defender Antivirus-Updates und Anwenden von Basiswerten
+# <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Verwalten Microsoft Defender Antivirus Updates und Anwenden von Baselines
 
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender Antivirus
 
-Es gibt zwei Arten von Updates im Zusammenhang mit der Aktualisierung von Microsoft Defender Antivirus:
+Es gibt zwei Arten von Updates, die Microsoft Defender Antivirus aktualisiert werden:
 
 - Sicherheitsintelligenzupdates
 - Produktupdates
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus auf dem neuesten Stand zu halten, ist wichtig, um sicherzustellen, dass Ihre Geräte über die neuesten Technologien und Features verfügen, die zum Schutz vor neuer Schadsoftware und Angriffstechniken erforderlich sind.
+> Die Microsoft Defender Antivirus ist wichtig, um sicherzustellen, dass Ihre Geräte über die neuesten Technologien und Features verfügen, die zum Schutz vor neuer Schadsoftware und Angriffstechniken erforderlich sind.
 > 
-> Achten Sie darauf, Ihren Antivirenschutz zu aktualisieren, auch wenn Microsoft Defender Antivirus im [passiven Modus ausgeführt wird.](./microsoft-defender-antivirus-compatibility.md)
+> Achten Sie darauf, den Antivirenschutz zu aktualisieren, auch wenn Microsoft Defender Antivirus im [passiven Modus ausgeführt wird.](./microsoft-defender-antivirus-compatibility.md)
 > 
 > Informationen zum aktuellen Modul, zur Plattform und zum Signaturdatum finden Sie unter [Security Intelligence updates for Microsoft Defender Antivirus and other Microsoft anmalware](https://www.microsoft.com/en-us/wdsi/defenderupdates).
 
 ## <a name="security-intelligence-updates"></a>Sicherheitsintelligenzupdates
 
-Microsoft Defender Antivirus verwendet in der [Cloud](cloud-protection-microsoft-defender-antivirus.md) übermittelten Schutz (auch Microsoft Advanced Protection Service oder MAPS genannt) und lädt regelmäßig Sicherheitsintelligenzupdates herunter, um Schutz zu bieten.
+Microsoft Defender Antivirus verwendet [von der Cloud](cloud-protection-microsoft-defender-antivirus.md) übermittelten Schutz (auch Microsoft Advanced Protection Service oder MAPS genannt) und lädt regelmäßig Sicherheitsintelligenzupdates herunter, um Schutz zu bieten.
 
 > [!NOTE]
 > Updates werden unter den folgenden KB-Nummern veröffentlicht:  
@@ -59,13 +59,13 @@ Modulupdates sind in Sicherheitsintelligenzupdates enthalten und werden monatlic
 
 ## <a name="product-updates"></a>Produktupdates
 
-Microsoft Defender Antivirus erfordert [monatliche Updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (auch als Plattformupdates bezeichnet) und erhält wichtige Featureupdates zusammen mit Windows 10-Versionen. 
+Microsoft Defender Antivirus erfordert [monatliche Updates (KB4052623)](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform) (auch als Plattformupdates *bezeichnet)* und erhält wichtige Featureupdates neben Windows 10 Versionen.
 
 Sie können die Verteilung von Updates über eine der folgenden Methoden verwalten: 
 
 - [Windows Server Update Service (WSUS)](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus)
 - [Microsoft Endpoint Configuration Manager](/configmgr/sum/understand/software-updates-introduction)
-- Die übliche Methode, mit der Sie Microsoft- und Windows-Updates auf Endpunkten in Ihrem Netzwerk bereitstellen.
+- Die übliche Methode, die Sie zum Bereitstellen von Microsoft und Windows für Endpunkte in Ihrem Netzwerk verwenden.
 
 Weitere Informationen finden Sie unter [Manage the sources for Microsoft Defender Antivirus protection updates](/mem/configmgr/protect/deploy-use/endpoint-definitions-wsus#to-synchronize-endpoint-protection-definition-updates-in-standalone-wsus).
 
@@ -74,16 +74,33 @@ Weitere Informationen finden Sie unter [Manage the sources for Microsoft Defende
 
 ## <a name="monthly-platform-and-engine-versions"></a>Monatliche Plattform- und Modulversionen
 
-Weitere Informationen zum Aktualisieren oder Installieren des Plattformupdates finden Sie unter [Update for Windows Defender anmalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
+Informationen zum Aktualisieren oder Installieren des Plattformupdates finden Sie unter [Update for Windows Defender anmalware platform](https://support.microsoft.com/help/4052623/update-for-windows-defender-antimalware-platform).
 
 Alle unsere Updates enthalten 
 - Leistungsverbesserungen;
 - Verbesserungen bei der Dienstbarkeit; und 
 - Integrationsverbesserungen (Cloud, Microsoft 365 Defender).
-<br/><br/>
+<br/>
+<details>
+<summary> April-2021 (Plattform: 4.19.2104.9| Modul: 1.1.18100.5)</summary>
+
+&ensp;Version des Security Intelligence-Updates: **1.337.2.0**  
+&ensp;Veröffentlicht: **1. April 2021**  
+&ensp;Plattform: **4.19.2104.9**  
+&ensp;Modul: **1.1.18100.5**  
+&ensp;Supportphase: **Sicherheits- und kritische Updates**
+    
+### <a name="whats-new"></a>Neuerungen
+- Zusätzliche Verhaltensüberwachungslogik
+- Verbesserte Keyloggererkennung im Kernelmodus
+
+### <a name="known-issues"></a>Bekannte Probleme
+Keine bekannten Probleme  
+<br/>
+</details>
 
 <details>
-<summary> März-2021 (Plattform: 4.18.2103.7 | Modul: 1.1.18000.5)</summary>
+<summary> März-2021 (Plattform: 4.19.2103.7 | Modul: 1.1.18000.5)</summary>
 
 &ensp;Version des Security Intelligence-Updates: **1.335.36.0**  
 &ensp;Veröffentlicht: **1. April 2021**  
@@ -101,7 +118,7 @@ Alle unsere Updates enthalten
 Keine bekannten Probleme  
 <br/>
 </details><details>
-<summary> Februar-2021 (Plattform: 4.18.2102.3 | Modul: 1.1.17900.7)</summary>
+<summary> Februar-2021 (Plattform: 4.19.2102.3 | Modul: 1.1.17900.7)</summary>
 
 &ensp;Version des Security Intelligence-Updates: **1.333.7.0**  
 &ensp;Veröffentlicht: **9. März 2021**  
@@ -117,26 +134,6 @@ Keine bekannten Probleme
 ### <a name="known-issues"></a>Bekannte Probleme
 Keine bekannten Probleme  
 <br/>
-</details><details>
-<summary> Januar-2021 (Plattform: 4.18.2101.9 | Modul: 1.1.17800.5)</summary>
-
-&ensp;Updateversion der Sicherheitsintelligenz: **1.327.1854.0**  
-&ensp;Veröffentlicht: **2. Februar 2021**  
-&ensp;Plattform: **4.18.2101.9**  
-&ensp;Modul: **1.1.17800.5**  
-&ensp;Supportphase: **Sicherheits- und kritische Updates**
-    
-### <a name="whats-new"></a>Neuerungen
-
-- Verbesserungen bei der Erkennung von Shellcode-Exploits
-- Verbesserte Sichtbarkeit für Versuche zum Stehlen von Anmeldeinformationen
-- Verbesserungen bei antitampering-Features in Microsoft Defender Antivirus-Diensten
-- Verbesserte Unterstützung für ARM x64-Emulation
-- Fix: EDR Block notification remains in threat history after real-time protection performed initial detection
-
-### <a name="known-issues"></a>Bekannte Probleme
-Keine bekannten Probleme  
-<br/>
 </details>
 
 ### <a name="previous-version-updates-technical-upgrade-support-only"></a>Updates früherer Versionen: Nur support für technische Upgrades
@@ -144,6 +141,26 @@ Keine bekannten Probleme
 Nachdem eine neue Paketversion veröffentlicht wurde, wird die Unterstützung für die beiden vorherigen Versionen auf den technischen Support reduziert. Versionen, die älter sind als die in diesem Abschnitt aufgeführten, werden nur für technischen Upgradesupport bereitgestellt. 
 <br/><br/>
 <details>
+<summary> Januar-2021 (Plattform: 4.18.2101.9 | Modul: 1.1.17800.5)</summary>
+
+&ensp;Updateversion der Sicherheitsintelligenz: **1.327.1854.0**  
+&ensp;Veröffentlicht: **2. Februar 2021**  
+&ensp;Plattform: **4.18.2101.9**  
+&ensp;Modul: **1.1.17800.5**  
+&ensp;Supportphase: **Support für technische Upgrades (nur)**
+    
+### <a name="whats-new"></a>Neuerungen
+
+- Verbesserungen bei der Erkennung von Shellcode-Exploits
+- Verbesserte Sichtbarkeit für Versuche zum Stehlen von Anmeldeinformationen
+- Verbesserungen bei Antitamperingfeatures in Microsoft Defender Antivirus Diensten
+- Verbesserte Unterstützung für ARM x64-Emulation
+- Fix: EDR Sperrbenachrichtigung verbleibt im Bedrohungsverlauf, nachdem der Echtzeitschutz die ersterkennung durchgeführt hat
+
+### <a name="known-issues"></a>Bekannte Probleme
+Keine bekannten Probleme  
+<br/>
+</details><details>
 <summary> November-2020 (Plattform: 4.18.2011.6 | Modul: 1.1.17700.4)</summary>
 
 &ensp;Updateversion der Sicherheitsintelligenz: **1.327.1854.0**  
@@ -198,7 +215,7 @@ Keine bekannten Probleme
    - Netzwerkschutz auf Server 2019
    - IP-Adressausschlüsse für Netzwerkschutz
 - Verbesserte Sichtbarkeit von TPM-Messungen
-- Verbesserte Überprüfung des Office VBA-Moduls
+- Verbesserte überprüfung Office VBA-Moduls
 
 ### <a name="known-issues"></a>Bekannte Probleme
 
@@ -221,7 +238,7 @@ Keine bekannten Probleme
 - Verbesserte Verhaltensüberwachung für Speicherscans
 - Verbesserte Überprüfung von Makrodatenströmen
 - Hinzugefügt `AMRunningMode` zu Get-MpComputerStatus PowerShell-Cmdlet
-- [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) wird ignoriert. Microsoft Defender Antivirus schaltet sich automatisch aus, wenn ein anderes Antivirenprogramm erkannt wird.
+- [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) wird ignoriert. Microsoft Defender Antivirus automatisch deaktiviert, wenn ein anderes Antivirenprogramm erkannt wird.
 
 
 ### <a name="known-issues"></a>Bekannte Probleme
@@ -335,7 +352,7 @@ Keine bekannten Probleme
 - Verbessern der Benachrichtigung für prozessblockierung
    
 ### <a name="known-issues"></a>Bekannte Probleme
-[**Fixed**] Microsoft Defender Antivirus überspringt Dateien beim Ausführen einer Überprüfung.
+[**Fixed**] Microsoft Defender Antivirus beim Ausführen einer Überprüfung werden Dateien übersprungen.
 
 <br/>
 </details>
@@ -371,7 +388,7 @@ Modul: **1.1.16700.2**
      
 ### <a name="whats-new"></a>Neuerungen
 
-- Feste BSOD auf WS2016 mit Exchange
+- BSOD auf WS2016 mit Exchange
 - Unterstützen von Plattformupdates, wenn TMP zum Netzwerkpfad umgeleitet wird
 - Plattform- und Modulversionen werden [WDSI hinzugefügt](https://www.microsoft.com/en-us/wdsi/defenderupdates) <!-- The preceding URL must include "/en-us" -->
 - Erweitern des Notfallsignaturupdates auf [den passiven Modus](./microsoft-defender-antivirus-compatibility.md)
@@ -379,7 +396,7 @@ Modul: **1.1.16700.2**
    
 ### <a name="known-issues"></a>Bekannte Probleme
 
-[**Fixed**] Geräte, [die](/windows-hardware/design/device-experiences/modern-standby) den modernen Standbymodus verwenden, können eine Hängerung mit dem Windows Defender-Filtertreibers erleben, was zu einer Schutzlücke führt.  Betroffene Computer scheinen dem Kunden nicht auf die neueste Antischalwareplattform aktualisiert zu sein.  
+[**Fixed**] Geräte, [die](/windows-hardware/design/device-experiences/modern-standby) den modernen Standbymodus verwenden, können mit dem Windows Defender-Filtertreibers hängen, was zu einer Schutzlücke führt.  Betroffene Computer scheinen dem Kunden nicht auf die neueste Antischalwareplattform aktualisiert zu sein.  
 <br/>
 > [!IMPORTANT]
 > Dieses Update ist:
@@ -387,7 +404,7 @@ Modul: **1.1.16700.2**
 > - verfügt über ein Neustart-Flag für Systeme mit hängenden Problemen.
 > - wird im April 2020 erneut veröffentlicht und wird nicht durch neuere Updates ersetzt, um die zukünftige Verfügbarkeit zu gewährleisten.  
 > - wird aufgrund der Neustartanforderung als Update kategorisiert; und
-> - wird nur mit [Windows Update angeboten.](https://support.microsoft.com/help/4027667/windows-10-update)
+> - wird nur mit dem [update Windows angeboten.](https://support.microsoft.com/help/4027667/windows-10-update)
 <br/>
 </details>
 
@@ -413,21 +430,21 @@ Wenn dieses Update installiert ist, benötigt das Gerät das Sprungpaket 4.10.20
 </details>
 
 
-## <a name="microsoft-defender-antivirus-platform-support"></a>Unterstützung der Microsoft Defender Antivirus-Plattform
+## <a name="microsoft-defender-antivirus-platform-support"></a>Microsoft Defender Antivirus Plattformunterstützung
 Plattform- und Modulupdates werden monatlich bereitgestellt. Um vollständig unterstützt zu werden, halten Sie die neuesten Plattformupdates auf dem neuesten Stand. Unsere Supportstruktur ist dynamisch und entwickelt sich je nach Verfügbarkeit der neuesten Plattformversion in zwei Phasen:
 
 - **Wartungsphase** für Sicherheits- und kritische Updates– Wenn Sie die neueste Plattformversion ausführen, sind Sie berechtigt, sowohl Sicherheitsupdates als auch kritische Updates für die Anti-Malware-Plattform zu erhalten.
  
 - **Phase des technischen Support (nur)** – Nachdem eine neue Plattformversion veröffentlicht wurde, wird die Unterstützung für ältere Versionen (N-2) auf nur noch technischen Support reduziert. Plattformversionen, die älter als N-2 sind, werden nicht mehr unterstützt.*
 
-\* Der technische Support wird weiterhin für Upgrades von der Windows 10-Version (siehe In [Windows 10-Versionen](#platform-version-included-with-windows-10-releases)enthaltene Plattformversion) auf die neueste Plattformversion bereitgestellt.
+\*Der technische Support wird weiterhin für Upgrades von der Windows 10-Version (siehe Plattformversion, die in [Windows 10](#platform-version-included-with-windows-10-releases)Versionen enthalten ist) auf die neueste Plattformversion bereitgestellt.
 
 Während der Phase des technischen Support (nur) werden kommerziell angemessene Supportvorfälle über den Microsoft Customer Service & Support und die von Microsoft verwalteten Supportangebote (z. B. Premier Support) bereitgestellt. Wenn für einen Supportvorfall eine Eskalation zur Entwicklung erforderlich ist, ein nicht sicherheitsunsicherheitsupdate erforderlich ist oder ein Sicherheitsupdate erforderlich ist, werden Kunden aufgefordert, ein Upgrade auf die neueste Plattformversion oder ein Zwischenupdate (*) zu durchführen.
 
-### <a name="platform-version-included-with-windows-10-releases"></a>In Windows 10-Versionen enthaltene Plattformversion
-Die folgende Tabelle enthält die Microsoft Defender Antivirus-Plattform- und Modulversionen, die mit den neuesten Windows 10-Versionen ausgeliefert werden:    
+### <a name="platform-version-included-with-windows-10-releases"></a>Plattformversion, die in Windows 10 enthalten ist
+Die folgende Tabelle enthält die Microsoft Defender Antivirus Plattform- und Modulversionen, die mit den neuesten Versionen der Windows 10 ausgeliefert werden:    
 
-|Windows 10-Version  |Plattformversion  |Modulversion |Supportphase |
+|Windows 10 Release  |Plattformversion  |Modulversion |Supportphase |
 |:---|:---|:---|:---|
 |2004 (20H1/20H2) |4.18.1909.6 |1.1.17000.2 | Support für technische Upgrades (nur) |
 |1909 (19H2) |4.18.1902.5 |1.1.16700.3 | Support für technische Upgrades (nur) |
@@ -438,13 +455,13 @@ Die folgende Tabelle enthält die Microsoft Defender Antivirus-Plattform- und Mo
 |1703 (RS2) |4.11.15603.2 |1.1.13504.0 | Support für technische Upgrades (nur) |
 |1607 (RS1) |4.10.14393.3683 |1.1.12805.0 | Support für technische Upgrades (nur) |  
 
-Informationen zur Windows 10-Version finden Sie im [Windows-Lifecycle-Factsheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
+Informationen Windows 10 Veröffentlichung finden Sie im [Windows-Lifecycle-Factsheet](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
 ## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>Updates für die Bereitstellungsimagewartung und -verwaltung (DISM)
 
-Es wird empfohlen, Ihre Windows 10 (Enterprise-, Pro- und Home-Editionen), Windows Server 2019 und Windows Server 2016 -Betriebssysteminstallationsabbilder mit den neuesten Antiviren- und Antischantischungsupdates zu aktualisieren. Wenn Sie Ihre Betriebssysteminstallationsabbilder auf dem neuesten Stand halten, können Sie eine Lücke beim Schutz vermeiden. 
+Es wird empfohlen, ihre Windows 10 (Enterprise-, Pro- und Home-Editionen), Windows Server 2019 und Windows Server 2016 Betriebssysteminstallationsabbilder mit den neuesten Antiviren- und Antischalwareupdates zu aktualisieren. Wenn Sie Ihre Betriebssysteminstallationsabbilder auf dem neuesten Stand halten, können Sie eine Lücke beim Schutz vermeiden. 
 
-Weitere Informationen finden Sie unter [Microsoft Defender update for Windows operating system installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
+Weitere Informationen finden Sie unter [Microsoft Defender update for Windows installation images](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images).
 
 <details>
 <summary>1.1.2104.01</summary>
@@ -528,7 +545,7 @@ Weitere Informationen finden Sie unter [Microsoft Defender update for Windows op
 - Keine
 
 ### <a name="additional-information"></a>Weitere Informationen
-- Aktualisierte Microsoft Defender Antivirus-Signaturen  
+- Aktualisierte Microsoft Defender Antivirus Signaturen  
 <br/>
 </details><details>
 <summary>1.1.2011.01</summary>
@@ -556,7 +573,7 @@ Weitere Informationen finden Sie unter [Microsoft Defender update for Windows op
 - Keine
 
 ### <a name="additional-information"></a>Weitere Informationen
-- Unterstützung für Windows 10 RS1 oder höher Betriebssysteminstallationsabbilder hinzugefügt.  
+- Unterstützung für Windows 10 RS1 oder höher hinzugefügt.  
 <br/>
 </details>
 
@@ -564,7 +581,7 @@ Weitere Informationen finden Sie unter [Microsoft Defender update for Windows op
 
 | Artikel | Beschreibung  |
 |:---|:---|
-|[Microsoft Defender Update für Windows-Betriebssysteminstallationsabbilder](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Überprüfen Sie Antischadwareupdatepakete für Ihre Betriebssysteminstallationsabbilder (WIM- und VHD-Dateien). Hier erhalten Sie Microsoft Defender Antivirus-Updates für Windows 10 (Enterprise-, Pro- und Home-Editionen), Windows Server 2019- und Windows Server 2016-Installationsabbilder.  |
+|[Microsoft Defender Update für Windows Betriebssysteminstallationsabbilder](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)  | Überprüfen Sie Antischadwareupdatepakete für Ihre Betriebssysteminstallationsabbilder (WIM- und VHD-Dateien). Erhalten Microsoft Defender Antivirus Updates für Windows 10 (Enterprise, Pro und Home-Editionen), Windows Server 2019 und Windows Server 2016 Installationsabbilder.  |
 |[Verwalten, wie Schutzupdates heruntergeladen und angewendet werden](manage-protection-updates-microsoft-defender-antivirus.md) | Schutzupdates können über viele Quellen zugestellt werden. |
 |[Verwalten, wann Schutzupdates heruntergeladen und angewendet werden sollen](manage-protection-update-schedule-microsoft-defender-antivirus.md) | Sie können planen, wann Schutzupdates heruntergeladen werden sollen. |
 |[Verwalten von Updates für veraltete Endpunkte](manage-outdated-endpoints-microsoft-defender-antivirus.md) | Wenn ein Endpunkt ein Update oder einen geplanten Scan verpasst, können Sie ein Update erzwingen oder bei der nächsten Benutzeran meldet. |

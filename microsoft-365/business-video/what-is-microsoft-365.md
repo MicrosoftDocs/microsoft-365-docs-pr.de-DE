@@ -20,12 +20,12 @@ search.appverid:
 description: Informationen zu Microsoft 365 Business Premium-Features.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: f4c41e86f3a98c2af076a58e311aa14be79704e9
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 336d206b3853baa2bdde5d925113dc0887919da7
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580330"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245180"
 ---
 # <a name="microsoft-365-business-premium"></a>Microsoft 365 Business Premium
 
@@ -45,5 +45,7 @@ Wenn Sie sich für Microsoft 365 Business Premium anmelden, erhalten Sie alle Pr
 | Schützen Ihrer Geschäftsdaten | Ihre persönlichen Daten werden auf persönlichen Geräten mit PIN-Zugriff und eingeschränkten Möglichkeiten zum Kopieren und Speichern geschützt. Sie können auch einen Informationsschutz hinzufügen, um sicherzustellen, dass nur autorisierte Personen auf vertrauliche Informationen zugreifen können. |
 | Schützen Ihrer Geräte | Sie können Ihre Arbeitsdateien auf Geräten schützen, indem Sie den mobilen Zugriff, z. B. Kopieren und Einfügen, einschränken. Sie können auch selektiv Geschäftsdaten von registrierten mobilen Geräten löschen, die verloren gegangen sind oder gestohlen wurden. |
 | Zusätzliche Sicherheitsfeatures | Die erweiterten Features in Microsoft 365 Business Premium helfen Ihnen, Ihr Unternehmen vor Cyberbedrohungen zu bewahren und vertrauliche Informationen zu schützen. Zu den Funktionen gehören Office 365 Advanced Threat Protection, Richtlinien zur Verhinderung von Datenverlust (DLP), Exchange Online-Archivierung, Azure Information Protection und Intune. |
+
+Wenn Sie über Microsoft Business Premium verfügen, können Sie die Sicherheit am schnellsten einrichten und mit der sicheren Zusammenarbeit beginnen, wenn Sie die Anweisungen in dieser Bibliothek befolgen: [Microsoft 365 für kleinere Unternehmen und Kampagnen](../campaigns/index.md). Diese Anleitung wurde in Zusammenarbeit mit dem Microsoft-Team „Defending Democracy“ entwickelt, um alle kleinen Unternehmenskunden vor Cyberbedrohungen zu schützen, die von raffinierten Hackern gestartet werden. 
 
 Alle Details finden Sie unter [Microsoft 365 Business-Inhalte](../business/index.yml).

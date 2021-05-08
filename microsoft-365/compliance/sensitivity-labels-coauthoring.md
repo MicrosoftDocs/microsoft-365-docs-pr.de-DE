@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Aktivieren Sie eine Einstellung, die gemeinsame Erstellung und AutoSave in Desktop-Apps für beschriftete und verschlüsselte Dokumente in SharePoint und OneDrive aktiviert.
-ms.openlocfilehash: a35e9fe818d697667ecf002a232d84f90cf53a61
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 990ab13508565fb910abe0d5e759a93e54766915
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764364"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245720"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Aktivieren Sie die gemeinsame Erstellung für Dateien, die mit Vertraulichkeitsbezeichnungen verschlüsselt sind
 
@@ -134,6 +134,8 @@ Diese Vorschau-Version des gemeinsamen Erstellens für Dateien, die mit Vertraul
 - Benutzer können in Office für das Web keine Bezeichnungen für Word-, Excel- und PowerPoint-Dateien anwenden, die größer als 300 MB sind. Für diese Dateien können Sie die Office-Desktop-Apps verwenden, um eine Bezeichnung anzuwenden. Sie müssen jedoch die einzige Person sein, welche die Datei geöffnet hat.
 
 - Wenn Sie [DLP-Richtlinien mit Vertraulichkeitsbezeichnungen als Bedingungen](dlp-sensitivity-label-as-condition.md) verwenden, werden unverschlüsselte Anhänge für E-Mails nicht unterstützt.
+
+- Einige Dokumente sind aufgrund von Features wie [Kennwortschutz](https://support.microsoft.com/office/require-a-password-to-open-or-modify-a-workbook-10579f0e-b2d9-4c05-b9f8-4109a6bce643), [gemeinsam genutzten Arbeitsmappen](https://support.microsoft.com/office/about-the-shared-workbook-feature-49b833c0-873b-48d8-8bf2-c1c59a628534) oder Inhalten, die ActiveX-Steuerelemente enthalten, nicht mit Vertraulichkeitsbezeichnungen kompatibel. Weitere Gründe sind in [Problembehandlung bei der gemeinsamen Dokumenterstellung in Office](https://support.microsoft.com/office/troubleshoot-co-authoring-in-office-bd481512-3f3a-4b6d-b7eb-ebf9d3626ae7) dokumentiert. Bei diesen Dokumenten wird die Meldung **FEHLER BEIM HOCHLADEN** angezeigt. Wählen Sie die Option **Änderungen verwerfen** aus. Bis dieses Problem behoben ist, sollten Sie Dokumente, die mit dieser Fehlermeldung gekennzeichnet sind, nicht mit Bezeichnungen versehen.
 
 - Office-Apps für iOS und Android werden nicht unterstützt.
 

@@ -19,19 +19,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 2c63f668cd4ccbad55a883aaf2b245c4936e25eb
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 89a3544c390fdeceea3741a950aad8fe29da25c4
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860954"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245588"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Wenn Sie Nachrichten über Aufbewahrungsrichtlinien in Ihren Apps angezeigt erhalten, wenden Sie sich an Ihre IT-Abteilung, um zu erfahren, wie diese für Sie konfiguriert wurden. Wenn es sich bei diesen Nachrichten um Teams-Chat- oder Kanalnachrichten handelt, ziehen Sie [Teams-Nachrichten über Aufbewahrungsrichtlinien](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b) zurate.
+> Wenn Sie Nachrichten über Aufbewahrungsrichtlinien in Teams angezeigt erhalten, oder wenn Sie Fragen zu Aufbewahrungsrichtlinien in Ihren Apps haben, wenden Sie sich an Ihre IT-Abteilung, um zu erfahren, wie diese für Sie konfiguriert wurden. In der Zwischenzeit finden Sie die folgenden Artikel möglicherweise hilfreich:
+> -  [Teams-Nachrichten zu Aufbewahrungsrichtlinien](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
+> - [Aufbewahrungsbezeichnungen auf Dateien in SharePoint oder OneDrive anwenden](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)
 >
 > Die Informationen auf dieser Seite richten sich an IT-Administratoren, die aus Compliancegründen Aufbewahrungsrichtlinien und -bezeichnungen erstellen können.
 
@@ -470,8 +472,4 @@ Wenn Sie SharePoint-Websites für Inhaltstyprichtlinien oder Informationsverwalt
 
 ## <a name="configuration-guidance"></a>Konfigurationsleitfaden
 
-Wenn Sie bereit sind, Aufbewahrungsrichtlinien zu erstellen, lesen Sie [Erstellen und Konfigurieren von Aufbewahrungsrichtlinien](create-retention-policies.md).
-
-Erstellen und Anwenden von Aufbewahrungsbezeichnungen:
-- [Erstellen von Aufbewahrungsbezeichnungen und Anwenden in Apps](create-apply-retention-labels.md)
-- [Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md)
+Lesen Sie [Erste Schritte mit Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](get-started-with-retention.md). Dieser Artikel enthält Informationen über Abonnements, Berechtigungen und Links zu End-to-End-Konfigurationsanleitungen für Aufbewahrungsszenarien.

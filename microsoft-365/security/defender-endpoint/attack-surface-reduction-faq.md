@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: cf41dda4ff61137d6b60b2fc735227f15418477e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3ca429ca1fea125450fdbb8d1f3a0e3a745513d8
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935593"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245696"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>Häufig gestellte Fragen (FAQ) zur Reduzierung der Angriffsfläche
 
@@ -32,15 +32,15 @@ ms.locfileid: "51935593"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-## <a name="is-attack-surface-reduction-asr-part-of-windows"></a>Ist attack surface reduction (ASR) Teil von Windows?
+## <a name="is-attack-surface-reduction-asr-part-of-windows"></a>Ist die Attack Surface Reduction (ASR) Teil Windows?
 
-ASR war ursprünglich ein Feature der Suite von Exploit Guard-Features, die als wichtiges Update für Microsoft Defender Antivirus in Windows 10, Version 1709, eingeführt wurde. Microsoft Defender Antivirus ist die systemeigene Antischalwarekomponente von Windows. Das vollständige ASR-Featureset ist jedoch nur mit einer Windows Enterprise-Lizenz verfügbar. Beachten Sie außerdem, dass ASR-Regelausschlüsse getrennt von Microsoft Defender Antivirus-Ausschlüssen verwaltet werden.
+ASR war ursprünglich ein Feature der Suite von Exploit Guard-Features, die als wichtiges Update für Microsoft Defender Antivirus, in Windows 10, Version 1709, eingeführt wurde. Microsoft Defender Antivirus ist die systemeigene Antischalwarekomponente von Windows. Das vollständige ASR-Featureset ist jedoch nur mit einer Windows verfügbar. Beachten Sie außerdem, dass ASR-Regelausschlüsse getrennt von Microsoft Defender Antivirus verwaltet werden.
 
 ## <a name="do-i-need-to-have-an-enterprise-license-to-run-asr-rules"></a>Muss ich über eine Unternehmenslizenz zum Ausführen von ASR-Regeln verfügen?
 
-Der vollständige Satz von ASR-Regeln und -Features wird nur unterstützt, wenn Sie über eine Unternehmenslizenz für Windows 10 verfügen. Eine begrenzte Anzahl von Regeln kann ohne Unternehmenslizenz funktionieren. Wenn Sie über Microsoft 365 Business verfügen, legen Sie Microsoft Defender Antivirus als primäre Sicherheitslösung ein, und aktivieren Sie die Regeln über PowerShell. Die Verwendung von ASR ohne Unternehmenslizenz wird offiziell nicht unterstützt, und Sie können nicht die vollständigen Funktionen von ASR nutzen.
+Der vollständige Satz von ASR-Regeln und -Features wird nur unterstützt, wenn Sie über eine Unternehmenslizenz für Windows 10. Eine begrenzte Anzahl von Regeln kann ohne Unternehmenslizenz funktionieren. Wenn Sie über Microsoft 365 Business verfügen, Microsoft Defender Antivirus Als primäre Sicherheitslösung festlegen und die Regeln über PowerShell aktivieren. Die Verwendung von ASR ohne Unternehmenslizenz wird offiziell nicht unterstützt, und Sie können nicht die vollständigen Funktionen von ASR nutzen.
 
-Weitere Informationen zur Windows-Lizenzierung finden Sie unter [Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) und im Handbuch zur [Volumenlizenzierung für Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
+Weitere Informationen zur lizenzierung Windows finden Sie [unter Windows 10 Licensing](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) and get the Volume Licensing guide for [Windows 10](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf).
 
 ## <a name="is-asr-supported-if-i-have-an-e3-license"></a>Wird ASR unterstützt, wenn ich eine E3-Lizenz habe?
 
@@ -74,17 +74,15 @@ Beachten Sie die folgenden Elemente zu ASR-Regelausschlüssen (einschließlich P
 - AsR-Regelausschlüsse sind unabhängig von Defender AV-Ausschlüssen
 - Platzhalter können nicht zum Definieren eines Laufwerkbuchstabens verwendet werden
 - Wenn Sie mehrere Ordner ausschließen möchten, verwenden Sie in einem Pfad mehrere Instanzen von \, um mehrere geschachtelte Ordner anzugeben (z. B. \* c:\Folder \* \* \Test)
-- Microsoft Endpoint Configuration Manager *unterstützt keine* Platzhalter (* oder ?)
-- Wenn Sie eine Datei ausschließen möchten, die zufällige Zeichen enthält (automatisierte Dateigenerierung), können Sie das Symbol "?" verwenden (z. B. C:\Folder\fileversion?. docx)
+- Microsoft Endpoint Configuration Manager unterstützt *keine* Platzhalter (* oder ?)
+- Wenn Sie eine Datei ausschließen möchten, die zufällige Zeichen enthält (automatisierte Dateigenerierung), können Sie das Symbol "?" verwenden (z. B. C:\Folder\fileversion?.docx)
 - AsR-Ausschlüsse in Gruppenrichtlinien unterstützen keine Anführungszeichen (das Modul wird den langen Pfad, Leerzeichen usw. nativ verarbeiten, sodass keine Anführungszeichen verwendet werden müssen)
 - ASR-Regeln werden unter NT AUTHORITY\SYSTEM-Konto ausgeführt, sodass Umgebungsvariablen auf Computervariablen beschränkt sind.
-
-
 
 ## <a name="how-do-i-know-what-i-need-to-exclude"></a>Wo kann ich wissen, was ich ausschließen muss?
 Unterschiedliche ASR-Regeln haben unterschiedliche Schutzflüsse. Denken Sie immer darüber nach, wofür die von Ihnen konfigurierte ASR-Regel schützt und wie der tatsächliche Ausführungsfluss verfing.
 
-Beispiel: Das Blockieren des Diebstahls von Anmeldeinformationen aus dem **Windows-Subsystem** für lokale Sicherheitsbehörden, das Lesen direkt aus dem LSASS-Prozess (Local Security Authority Subsystem) kann ein Sicherheitsrisiko darstellen, da Unternehmensanmeldeinformationen verfügbar gemacht werden können.
+Beispiel: Das Blockieren des Diebstahls von **Anmeldeinformationen** aus dem Windows-Subsystem der lokalen Sicherheitsbehörden, das Lesen direkt aus dem LSASS-Prozess (Local Security Authority Subsystem) kann ein Sicherheitsrisiko darstellen, da Unternehmensanmeldeinformationen verfügbar gemacht werden können.
 
 Diese Regel verhindert, dass nicht vertrauenswürdige Prozesse direkten Zugriff auf den LSASS-Speicher haben. Wenn ein Prozess versucht, die OpenProcess()-Funktion für den Zugriff auf LSASS mit dem Zugriffsrecht von PROCESS_VM_READ zu verwenden, blockiert die Regel dieses Zugriffsrecht ausdrücklich.
 
@@ -96,10 +94,10 @@ Wenn Sie im obigen Beispiel eine Ausnahme für den Prozess erstellen mussten, da
 
 ## <a name="what-are-the-rules-microsoft-recommends-enabling"></a>Welche Regeln empfiehlt Microsoft zu aktivieren?
 
-Es wird empfohlen, jede mögliche Regel zu aktivieren. Es gibt jedoch einige Fälle, in denen Sie keine Regel aktivieren sollten. Beispielsweise wird nicht empfohlen, die Aus PSExec- und WMI-Befehlsregel stammenden Prozesserstellungen blockieren zu aktivieren, wenn Sie Microsoft Endpoint Configuration Manager (oder System Center Configuration Manager - SCCM) zum Verwalten Ihrer Endpunkte verwenden.
+Es wird empfohlen, jede mögliche Regel zu aktivieren. Es gibt jedoch einige Fälle, in denen Sie keine Regel aktivieren sollten. Es wird beispielsweise nicht empfohlen, die Aus psExec- und WMI-Befehlsregel stammenden Prozesserstellungen blockieren zu aktivieren, wenn Sie ihre Endpunkte mithilfe von Microsoft Endpoint Configuration Manager (oder System Center Configuration Manager - SCCM) verwalten.
 
 Es wird dringend empfohlen, dass Sie alle regelspezifischen Informationen und/oder Warnungen lesen, die in unserer öffentlichen [Dokumentation verfügbar sind.](/microsoft-365/security/defender-endpoint/attack-surface-reduction.md)
-Umfasst mehrere Schutzsäulen, z. B. Office, Anmeldeinformationen, Skripts, E-Mail usw. Alle ASR-Regeln, mit Ausnahme von Block persistence through WMI event subscription, werden unter Windows 1709 und höher unterstützt:
+Über mehrere Schutzpfeiler hinweg, z. B. Office, Anmeldeinformationen, Skripts, E-Mail usw. Alle ASR-Regeln mit Ausnahme von Block persistence through WMI event subscription werden unter Windows 1709 und höher unterstützt:
 
 * [Ausführbare Inhalte aus E-Mail-Client und Web-E-Mail blockieren](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
 * [Alle Office-Anwendungen am Erstellen von untergeordneten Prozessen hindern](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
@@ -107,13 +105,13 @@ Umfasst mehrere Schutzsäulen, z. B. Office, Anmeldeinformationen, Skripts, E-Ma
 * [Office-Anwendungen am Einfügen von Code in untergeordnete Prozesse hindern](attack-surface-reduction.md#block-office-applications-from-injecting-code-into-other-processes)
 * [JavaScript und VBScript am Starten heruntergeladener ausführbarer Inhalte hindern](attack-surface-reduction.md#block-javascript-or-vbscript-from-launching-downloaded-executable-content)
 * [Ausführung potenziell verborgener Skripts blockieren](attack-surface-reduction.md#block-execution-of-potentially-obfuscated-scripts)
-* [Blockieren von Win32-API-Aufrufen von Office-Makros](attack-surface-reduction.md#block-win32-api-calls-from-office-macros)
+* [Blockieren von Win32-API-Aufrufen Office Makros](attack-surface-reduction.md#block-win32-api-calls-from-office-macros)
 * [Erweiterten Schutz vor Ransomware verwenden](attack-surface-reduction.md#use-advanced-protection-against-ransomware)
-* [Blockieren des Diebstahls von Anmeldeinformationen aus dem Windows Local Security Authority Subsystem](attack-surface-reduction.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) (lsass.exe)
+* [Blockieren des Diebstahls von Anmeldeinformationen aus Windows lokalen](attack-surface-reduction.md#block-credential-stealing-from-the-windows-local-security-authority-subsystem) Sicherheitsbehördensubsystem (lsass.exe)
 * [Erstellung von Prozessen durch PSExec- und WMI-Befehle blockieren](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)
 * [Nicht vertrauenswürdige und nicht signierte Prozess, die von USB ausgeführt werden, blockieren](attack-surface-reduction.md#block-untrusted-and-unsigned-processes-that-run-from-usb)
 * [Blockieren der Ausführung ausführbarer Dateien, es sei denn, sie erfüllen ein Prävalenz-, Alters- oder vertrauenswürdiges Listenkriterium](attack-surface-reduction.md#block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion)
-* [Blockieren der Erstellung untergeordneter Prozesse durch Office-Kommunikationsanwendungen](attack-surface-reduction.md#block-office-communication-application-from-creating-child-processes)
+* [Blockieren Office von Kommunikationsanwendungen am Erstellen untergeordneter Prozesse](attack-surface-reduction.md#block-office-communication-application-from-creating-child-processes)
 * [Adobe Reader am Erstellen von untergeordneten Prozessen hindern](attack-surface-reduction.md#block-adobe-reader-from-creating-child-processes)
 * [Persistenz durch WMI-Ereignisabonnement blockieren](attack-surface-reduction.md#block-persistence-through-wmi-event-subscription)
 
@@ -141,7 +139,7 @@ Ja. Weitere Informationen zum Ausschließen von Dateien oder Ordnern von [ASR-Re
 
 ## <a name="do-asr-rules-cover-all-applications-by-default"></a>Gelten asr-Regeln standardmäßig für alle Anwendungen?
 
-Dies hängt von der Regel ab. Die meisten ASR-Regeln decken das Verhalten von Microsoft Office und Diensten ab, z. B. Word, Excel, PowerPoint und OneNote oder Outlook. Bestimmte ASR-Regeln, z. B. Die Ausführung *von* potenziell verschleierten Skripts blockieren, sind allgemeiner.
+Dies hängt von der Regel ab. Die meisten ASR-Regeln umfassen das Verhalten Microsoft Office Produkten und Diensten, z. B. Word, Excel, PowerPoint und OneNote oder Outlook. Bestimmte ASR-Regeln, z. B. Die Ausführung *von* potenziell verschleierten Skripts blockieren, sind allgemeiner.
 
 ## <a name="does-asr-support-third-party-security-solutions"></a>Unterstützt ASR Sicherheitslösungen von Drittanbietern?
 
@@ -153,9 +151,9 @@ Wenn eine Benachrichtigung lokal durch eine ASR-Regel ausgelöst wird, wird auch
 
 ## <a name="i-applied-a-rule-using-gpo-now-when-i-try-to-check-the-indexing-options-for-the-rule-in-microsoft-outlook-i-get-a-message-stating-access-denied"></a>Ich habe eine Regel mit GPO angewendet. Wenn ich nun versuche, die Indizierungsoptionen für die Regel in Microsoft Outlook zu überprüfen, wird eine Meldung mit der Meldung "Zugriff verweigert" angezeigt.
 
-Versuchen Sie, die Indizierungsoptionen direkt aus Windows 10 zu öffnen.
+Versuchen Sie, die Indizierungsoptionen direkt aus Windows 10.
 
-1. Wählen Sie **auf der** Windows-Taskleiste das Symbol Suchen aus.
+1. Wählen Sie **auf** der Taskleiste das Windows aus.
 
 1. Geben **Sie Indizierungsoptionen** in das Suchfeld ein.
 
@@ -169,13 +167,13 @@ Diese Regel basiert darauf, dass jede Anwendung einen bekannten Ruf hat, gemesse
 
 In der Regel kann der Cloudschutz feststellen, dass eine neue Version einer Anwendung so ähnlich wie frühere Versionen ist, dass sie nicht länger neu bewertet werden muss. Es kann jedoch einige Zeit dauern, bis die App nach dem Wechseln von Versionen, insbesondere nach einem größeren Update, eine Reputation aufbaut. In der Zwischenzeit können Sie die Anwendung der Ausschlussliste hinzufügen, um zu verhindern, dass diese Regel wichtige Anwendungen blockiert. Wenn Sie häufig neue Versionen von Anwendungen aktualisieren und mit diesen arbeiten, können Sie diese Regel stattdessen im Überwachungsmodus ausführen.
 
-## <a name="i-recently-enabled-the-asr-rule-block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe-and-i-am-getting-a-large-number-of-notifications-what-is-going-on"></a>Ich habe kürzlich die ASR-Regel aktiviert, den Diebstahl von Anmeldeinformationen aus dem Windows Local Security Authority Subsystem *(lsass.exe)* blockieren, und ich habe eine große Anzahl von Benachrichtigungen erhalten. Was ist los?
+## <a name="i-recently-enabled-the-asr-rule-block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe-and-i-am-getting-a-large-number-of-notifications-what-is-going-on"></a>Ich habe kürzlich die ASR-Regel aktiviert, den Diebstahl von Anmeldeinformationen aus dem *Windows-Subsystem der* lokalen Sicherheitsbehörde (lsass.exe) blockieren, und ich habe eine große Anzahl von Benachrichtigungen erhalten. Was ist los?
 
 Eine von dieser Regel generierte Benachrichtigung weist nicht unbedingt auf böswillige Aktivitäten hin. Diese Regel ist jedoch weiterhin hilfreich, um schädliche Aktivitäten zu blockieren, da Schadsoftware häufig lsass.exe, um unrechtmäßigen Zugriff auf Konten zu erhalten. Der lsass.exe speichert Benutzeranmeldeinformationen im Arbeitsspeicher, nachdem sich ein Benutzer angemeldet hat. Windows verwendet diese Anmeldeinformationen, um Benutzer zu überprüfen und lokale Sicherheitsrichtlinien anzuwenden.
 
 Da viele legitime Prozesse an einem typischen Tag lsass.exe Anmeldeinformationen aufrufen, kann diese Regel besonders laut sein. Wenn eine bekannte legitime Anwendung bewirkt, dass diese Regel eine übermäßig viele Benachrichtigungen generiert, können Sie sie der Ausschlussliste hinzufügen. Die meisten anderen ASR-Regeln generieren eine relativ kleinere Anzahl von Benachrichtigungen im Vergleich zu diesem, da das Aufrufen von lsass.exe für die normale Funktionsweise vieler Anwendungen typisch ist.
 
-## <a name="is-it-a-good-idea-to-enable-the-rule-block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe-alongside-lsa-protection"></a>Ist es eine gute Idee, die Regel Blockieren des Diebstahls von Anmeldeinformationen aus dem Lokalen Windows-Sicherheitsbehörde-Subsystem *(lsass.exe)* neben dem LSA-Schutz zu aktivieren?
+## <a name="is-it-a-good-idea-to-enable-the-rule-block-credential-stealing-from-the-windows-local-security-authority-subsystem-lsassexe-alongside-lsa-protection"></a>Ist es eine gute Idee, die Regel Blockieren des Diebstahls von Anmeldeinformationen aus dem Windows der lokalen Sicherheitsbehörden *(lsass.exe)* neben dem LSA-Schutz zu aktivieren?
 
 Wenn Sie diese Regel aktivieren, bietet dies keinen zusätzlichen Schutz, wenn Sie [auch den LSA-Schutz](https://docs.microsoft.com/windows-server/security/credentials-protection-and-management/configuring-additional-lsa-protection#BKMK_HowToConfigure) aktiviert haben. Sowohl der Regel- als auch der LSA-Schutz funktionieren auf dieselbe Weise, sodass beide gleichzeitig ausgeführt werden, wäre redundant. Manchmal können Sie den LSA-Schutz jedoch nicht aktivieren. In diesen Fällen können Sie diese Regel aktivieren, um einen gleichwertigen Schutz vor Schadsoftware zu bieten, die auf lsass.exe.
 
@@ -186,3 +184,5 @@ Wenn Sie diese Regel aktivieren, bietet dies keinen zusätzlichen Schutz, wenn S
 * [Anpassen der Regeln zur Verringerung der Angriffsfläche](customize-attack-surface-reduction.md)
 * [Aktivieren der Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md)
 * [Kompatibilität von Microsoft Defender mit anderen Antiviren-/Antischasoftwareprogrammen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+
+

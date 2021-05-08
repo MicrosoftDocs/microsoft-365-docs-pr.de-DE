@@ -1,5 +1,5 @@
 ---
-title: Bericht über anfällige Geräte – Bedrohungs- und Sicherheitsrisikoverwaltung
+title: Bericht über anfällige Geräte – Bedrohungs- und Sicherheitsrisikomanagement
 description: Ein Bericht mit anfälligen Gerätetrends und aktuellen Statistiken. Das Ziel ist, dass Sie den Atem und umfang Ihrer Gerätebelichtung verstehen.
 keywords: Microsoft Defender for Endpoint-tvm vulnerable devices, Microsoft Defender for Endpoint, tvm, reduce threat & vulnerability exposure, reduce threat and vulnerability, monitor security configuration
 search.product: eADQiWindows 10XVcnh
@@ -18,26 +18,26 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4b2b581d570bd0924970a845c66a599495ff9829
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 355561936642b1fa38228bfa07ad59269c48d817
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933709"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245480"
 ---
-# <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>Bericht über anfällige Geräte – Bedrohungs- und Sicherheitsrisikoverwaltung
+# <a name="vulnerable-devices-report---threat-and-vulnerability-management"></a>Bericht über anfällige Geräte – Bedrohungs- und Sicherheitsrisikomanagement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Bedrohungs- und Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md)
+- [Bedrohung und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Der Bericht zeigt Diagramme und Balkendiagramme mit anfälligen Gerätetrends und aktuellen Statistiken. Das Ziel ist, dass Sie den Atem und umfang Ihrer Gerätebelichtung verstehen. 
+Der Bericht zeigt Diagramme und Balkendiagramme mit anfälligen Gerätetrends und aktuellen Statistiken. Das Ziel ist, dass Sie den Atem und umfang Ihrer Gerätebelichtung verstehen.
 
 Greifen Sie auf den Bericht im Microsoft Defender Security Center zu Berichte **> gefährdeten Geräten zu**
 
@@ -46,7 +46,7 @@ Es gibt zwei Spalten:
 - Trends (im Laufe der Zeit). Kann die letzten 30 Tage, 3 Monate, 6 Monate oder einen benutzerdefinierten Datumsbereich anzeigen.
 - Heute (aktuelle Informationen)
 
-**Filter**: Sie können die Daten nach Schweregraden der Sicherheitsanfälligkeit, Exploitverfügbarkeit, Sicherheitsrisikoalter, Betriebssystemplattform, Windows 10-Version oder Gerätegruppe filtern.
+**Filter**: Sie können die Daten nach Schweregraden der Sicherheitsanfälligkeit, Exploitverfügbarkeit, Sicherheitsrisikoalter, Betriebssystemplattform, Windows 10 Version oder Gerätegruppe filtern.
 
 **Drilldown**: Wenn Sie einen Einblick erhalten möchten, wählen Sie das entsprechende Balkendiagramm aus, um eine gefilterte Liste von Geräten auf der Seite Geräteinventar anzeigen zu können. Von dort können Sie die Liste exportieren.
 
@@ -74,13 +74,13 @@ Die Anzahl der Geräte auf jedem Betriebssystem, die aufgrund von Softwarerisike
 
 ![Ein Diagramm der aktuellen anfälligen Geräte nach Betriebssystemplattform und ein Diagramm, das anfällige Geräte nach Betriebssystemplattformen im Laufe der Zeit zeigt.](images/tvm-report-os.png)
 
-## <a name="vulnerable-devices-by-windows-10-version-graphs"></a>Anfällige Geräte nach Windows 10-Versionsdiagrammen
+## <a name="vulnerable-devices-by-windows-10-version-graphs"></a>Anfällige Geräte nach Windows 10 Versionsdiagrammen
 
-Die Anzahl der Geräte auf jeder Windows 10-Version, die aufgrund anfälliger Anwendungen oder Betriebssysteme verfügbar gemacht werden.
+Die Anzahl der Geräte auf jedem Windows 10, die aufgrund anfälliger Anwendungen oder Betriebssysteme verfügbar gemacht werden.
 
-![Ein Diagramm der aktuellen anfälligen Geräte nach Windows 10-Version und ein Diagramm mit anfälligen Geräten nach Windows 10-Version im Laufe der Zeit.](images/tvm-report-version.png)
+![Ein Diagramm der aktuellen anfälligen Geräte nach Windows 10 Version und ein Diagramm mit anfälligen Geräten nach Windows 10 im Laufe der Zeit.](images/tvm-report-version.png)
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Übersicht über die Verwaltung von Bedrohungen und Sicherheitslücken](next-gen-threat-and-vuln-mgt.md)
+- [Übersicht über Bedrohungen Sicherheitsrisikomanagement Bedrohungen](next-gen-threat-and-vuln-mgt.md)
 - [Sicherheitsempfehlungen](tvm-security-recommendation.md)

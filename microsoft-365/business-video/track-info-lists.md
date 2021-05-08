@@ -16,12 +16,12 @@ ms.custom:
 - AdminSurgePortfolio
 - adminvideo
 description: Erfahren Sie mehr über Microsoft Lists. Mit Microsoft Lists können Sie Kundendetails nachverfolgen, z. B. Kundentyp, Auftragserfüllung und Auftragsfortschritt.
-ms.openlocfilehash: 79094c6b039e62ba88720424985814354bd299b4
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: bbe88fb5a241c5991c7f7532f3ea70930e550ab5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509425"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245192"
 ---
 # <a name="use-microsoft-lists-to-track-business-info"></a>Verwenden von Microsoft-Listen zum Nachverfolgen von Geschäftsinformationen
 
@@ -29,7 +29,7 @@ ms.locfileid: "50509425"
 
 ## <a name="try-it"></a>Ausprobieren
 
-Nachverfolgen von Informationen und Organisieren der Arbeit mit Microsoft Lists. Erstellen Sie eine Liste von Grund auf neu, aus Excel, aus einer vorhandenen Liste oder aus einer Vorlage. Sie können mit Microsoft 365, Microsoft Teams oder SharePoint beginnen.
+Nachverfolgen von Informationen und Organisieren der Arbeit mit Microsoft Lists. Erstellen Sie eine Liste von Grund auf neu, Excel, aus einer vorhandenen Liste oder aus einer Vorlage. Sie können mit Microsoft 365, Microsoft Teams oder SharePoint.
 
 ### <a name="add-an-item-to-the-list"></a>Hinzufügen eines Elements zur Liste
 
@@ -72,6 +72,6 @@ Sie können den Fortschritt sofort nachverfolgen:
 
 - Doppelklicken Sie auf ein Element, um es zu öffnen, und aktualisieren Sie den Status der Bestellung.
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-content"></a>Verwandte Inhalte
 
 [Erstellen einer Liste aus der Listen-App](https://support.microsoft.com/office/create-a-list-from-the-lists-app-b5e0b7f8-136f-425f-a108-699586f8e8bd)

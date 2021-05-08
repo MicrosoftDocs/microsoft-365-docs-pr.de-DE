@@ -12,12 +12,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 9a263cbc6bdd0d521e835f086967a6f7236c6948
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 00943eb85abbfd2d237ae5544eb69d3ec4d9f875
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166657"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245504"
 ---
 # <a name="device-images"></a>Gerätebilder
 
@@ -25,13 +25,13 @@ ms.locfileid: "51166657"
 Unabhängig davon, ob [](#existing-devices) Sie [neue Geräte bestellen](#new-devices) oder vorhandene geräte wiederverwenden, haben Sie mehrere Optionen, um sicherzustellen, dass das Bild auf dem Gerät unsere [Geräteanforderungen erfüllt.](device-requirements.md#check-hardware-requirements)
 
 ## <a name="new-devices"></a>Neue Geräte
-Wenn Sie ein neues Gerät von einem genehmigten Hersteller [bestellen,](device-requirements.md#minimum-requirements)führen Sie die folgenden Schritte aus, um sicherzustellen, dass Geräte mit der richtigen Microsoft Managed Desktop-Image- und Softwarekonfiguration gesendet werden.
+Wenn Sie ein neues Gerät bei einem genehmigten Hersteller [bestellen,](device-requirements.md#minimum-requirements)führen Sie die folgenden Schritte aus, um sicherzustellen, dass geräte mit der richtigen Microsoft Managed Desktop und Softwarekonfiguration versandt werden.
 
 ### <a name="dell"></a>Dell
-Arbeiten Sie direkt mit dem Dell-Vertriebsmitarbeiter zusammen, der dafür sorgt, dass das von Microsoft Managed Desktop genehmigte Image auf Geräte für Ihre Bestellung angewendet wird. Weitere Fragen zu Dell-Geräten, dem Bild und dem Bestellvorgang finden Sie unter MMD_at_dell@dell.com.
+Arbeiten Sie direkt mit dem Dell-Vertriebsmitarbeiter zusammen, der dafür sorgt, dass das von Microsoft Managed Desktop genehmigte Bild auf Geräte für Ihre Bestellung angewendet wird. Weitere Fragen zu Dell-Geräten, dem Bild und dem Bestellvorgang finden Sie unter MMD_at_dell@dell.com.
 
 ### <a name="hp"></a>HP 
-Wenn Sie neue Geräte bei HP bestellen, verwenden Sie unbedingt die spezifische SKU, die im Abschnitt Zusätzliche Anforderungen für jedes Modell aufgeführt ist, wie unter [Programmgeräte gezeigt.](device-list.md#hp)
+Wenn Sie neue Geräte bei HP bestellen, verwenden Sie unbedingt die spezifische SKU, die im Abschnitt Zusätzliche Anforderungen für jedes Modell auf der Website [Geschäft Windows 10 Pro](https://www.microsoft.com/windowsforbusiness/view-all-devices) Geschäftsgeräte aufgeführt ist (filtern Sie die Ansicht, um Microsoft Managed Desktop anzeigen).
 
 Wenn Sie ein Gerät von HP bestellen, [](customizing.md) das als Ausnahme genehmigt wurde, aber derzeit nicht auf der Seite Geräteliste aufgeführt ist, müssen Sie die SKU für Ihr Modell anfordern. Wir arbeiten mit HP zusammen, um Diese Informationen mithilfe Ihrer Ausnahmeanforderung zu erhalten. Sie können hp auch direkt kontaktieren, wenn Sie Fragen zu Geräten und Anweisungen zur Gerätebestellung erhalten, indem Sie die folgenden Adressen verwenden:
  
@@ -41,9 +41,9 @@ Wenn Sie ein Gerät von HP bestellen, [](customizing.md) das als Ausnahme genehm
 - Global: mmd@hp.com
 
 ### <a name="lenovo"></a>Lenovo
-Wenn Sie Geräte von Lenovo für die Verwendung in Microsoft Managed Desktop bestellen, müssen Sie eine bestimmte Teilnummer angeben, die im Rahmen der Bestellung enthalten ist. Wenden Sie sich an Ihren Lenovo Vertriebsmitarbeiter oder Lenovo Channel Partner, und bitten Sie ihn, ein *spezielles* Angebotsmodell mit einem System zu erstellen, das unsere [Geräteanforderungen erfüllt.](device-requirements.md#minimum-requirements) Bitten Sie den Vertriebsmitarbeiter, auf "System building block part *number SBB0Q94938 – MMD Enablement"* zu verweisen, um ein vorab geladenes Bild zu verwenden, das mit Microsoft Managed Desktop kompatibel ist.
+Wenn Sie Geräte von Lenovo für die Verwendung in Microsoft Managed Desktop bestellen, müssen Sie eine bestimmte Teilnummer angeben, die im Rahmen der Bestellung enthalten ist. Wenden Sie sich an Ihren Lenovo Vertriebsmitarbeiter oder Lenovo Channel Partner, und bitten Sie ihn, ein *spezielles* Angebotsmodell mit einem System zu erstellen, das unsere [Geräteanforderungen erfüllt.](device-requirements.md#minimum-requirements) Bitten Sie den Vertriebsmitarbeiter, auf "System *building block part number SBB0Q94938 – MMD Enablement"* zu verweisen, um ein mit Microsoft Managed Desktop kompatibles vorab geladenes Bild zu verwenden.
 
-Die folgenden Produkte sind derzeit für den Microsoft Managed Desktop-Support aktiviert:
+Die folgenden Produkte sind derzeit für den Microsoft Managed Desktop aktiviert:
 
 - L13 Gen 1
 - L13-Yoga Gen 1
@@ -60,7 +60,7 @@ Die folgenden Produkte sind derzeit für den Microsoft Managed Desktop-Support a
 
 
 ### <a name="microsoft"></a>Microsoft
-Alle Microsoft-Geräte, die Geräteanforderungen erfüllen, verfügen über ein Image, das mit Microsoft Managed Desktop funktioniert. Es sind keine weiteren Schritte erforderlich.
+Alle Microsoft-Geräte, die Geräteanforderungen erfüllen, verfügen über ein Bild, das mit Microsoft Managed Desktop. Es sind keine weiteren Schritte erforderlich.
 
 Um das neueste Bild, das in der Fabrik auf einem Microsoft-Gerät verfügbar ist, zu erhalten, arbeiten Sie mit Ihrem Surface-Spezialisten zusammen, um den Surface "Pegged PO"-Prozess zu verwenden.
 
@@ -68,7 +68,7 @@ Um das neueste Bild, das in der Fabrik auf einem Microsoft-Gerät verfügbar ist
 
 Sie können vorhandene Geräte wiederverwenden, solange sie sowohl die [Geräteanforderungen als](device-requirements.md#minimum-requirements) auch die [Softwareanforderungen erfüllen.](device-requirements.md#installed-software) Führen Sie die für Ihren Hersteller relevanten Schritte aus.
 
-Sie können Geräte entweder mit einem Bild des Herstellers oder mithilfe des "universellen Images" von Microsoft Managed Desktop neu abbilden. Um ein entsprechendes Herstellerimage zu erhalten, können Sie mindestens ein [neues](#new-devices) Gerät des Modells bestellen, das Sie erneut verwenden. Anschließend können Sie das Bild von diesem Gerät abrufen und auf andere Geräte desselben Modells anwenden.
+Sie können Geräte entweder mit einem Bild des Herstellers oder mithilfe der Microsoft Managed Desktop "universelles Bild" nachbilden. Um ein entsprechendes Herstellerimage zu erhalten, können Sie mindestens ein [neues](#new-devices) Gerät des Modells bestellen, das Sie erneut verwenden. Anschließend können Sie das Bild von diesem Gerät abrufen und auf andere Geräte desselben Modells anwenden.
 
 > [!NOTE]
 > Sie sind dafür verantwortlich, Bilder zu erstellen, zu testen und zu bereitstellen. Es wird auch empfohlen, nach Möglichkeit geeignete Bilder des Herstellers anstelle von benutzerdefinierten Bildern zu verwenden , einschließlich des "universellen Bilds".
@@ -95,17 +95,17 @@ Mit diesen Schritten werden alle Daten auf dem Gerät entfernt. Daher sollten Si
 
 Microsoft Surface geräte enthalten "Bare Metal [Recovery"-Bilder,](https://support.microsoft.com/en-us/surfacerecoveryimage) die für jedes Modell spezifisch sind. Sie können diese Bilder verwenden, um Geräte neu zu abbilden.
 
-Diese Bilder verwenden die Windows-Wiederherstellungsumgebung (WinRE), und dies ist ein manueller Prozess (nicht automatisiert). Führen Sie die Schritte unter [Erstellen und Verwenden eines USB-Wiederherstellungslaufwerks für Surface aus.](https://support.microsoft.com/surface/creating-and-using-a-usb-recovery-drive-for-surface-677852e2-ed34-45cb-40ef-398fc7d62c07)
+Diese Bilder verwenden die Windows Recovery Environment (WinRE), und dies ist ein manueller Prozess (nicht automatisiert). Führen Sie die Schritte unter [Erstellen und Verwenden eines USB-Wiederherstellungslaufwerks für Surface aus.](https://support.microsoft.com/surface/creating-and-using-a-usb-recovery-drive-for-surface-677852e2-ed34-45cb-40ef-398fc7d62c07)
 
 
 ### <a name="universal-image"></a>Universelles Bild
-Microsoft Managed Desktop hat ein Image mit Windows 10 Pro und Microsoft 365 Apps for Enterprise erstellt, das Sie mit Microsoft Managed Desktop verwenden können. Es empfiehlt sich jedoch, nach Möglichkeit Bilder zu verwenden, die dem vom Hersteller bereitgestellten Microsoft Managed Desktop entsprechen, auch wenn dies eine ältere Windows-Version bedeutet, die dann aktualisiert werden muss, sobald sich der Benutzer meldet. Die Verwendung des universellen Microsoft Managed Desktop-Images sollte eine letzte Option sein.
+Microsoft Managed Desktop hat ein Bild mit Windows 10 Pro und Microsoft 365 Apps für Enterprise erstellt, das Sie mit Microsoft Managed Desktop. Es ist jedoch am besten, bilder zu verwenden, die Microsoft Managed Desktop vom Hersteller bereitgestellt werden, wann immer möglich, auch wenn dies eine ältere Windows-Version bedeutet, die nach der Benutzera0 aktualisiert werden muss. Die Verwendung Microsoft Managed Desktop Universelles Bild sollte eine letzte Option sein.
 
-- Wir aktualisieren das Image mit den neuesten monatlichen Windows-Qualitätsupdates alle 30-60 Tage und Microsoft 365 Apps for Enterprise-Updates mindestens zweimal pro Jahr.
-- Das Bild enthält ein Wiederherstellungsbereitstellungspaket, um sicherzustellen, dass Microsoft 365 Apps for Enterprise nach Windows-Wiederherstellungsszenarien wiederhergestellt wird.
+- Wir aktualisieren das Bild mit den neuesten Windows monatlichen Qualitätsupdates alle 30-60 Tage und Microsoft 365 Apps für Enterprise mindestens zweimal pro Jahr.
+- Das Bild enthält ein Wiederherstellungsbereitstellungspaket, um sicherzustellen, Microsoft 365 Apps wiederhergestellt Enterprise wiederhergestellt Windows Wiederherstellungsszenarien.
 - Sie können das Image mit USB-Laufwerken bereitstellen. Es enthält einen skriptbaren Prozess zum Einfügen von Treibern (in der Im Bild enthaltenen Dokumentation beschrieben).
 - Sie können die enthaltenen Skripts und Ordner für die Verwendung mit anderen Anpassungen ändern, z. B. das Hinzufügen bestimmter kumulativer Updates, Dateikopiencode oder andere Prüfungen.
-- Treiber und Qualitätsupdates werden Windows während der Bereitstellung über das USB-Laufwerk hinzugefügt.
+- Treiber und Qualitätsupdates werden Windows Bereitstellung über das USB-Laufwerk hinzugefügt.
 
 > [!NOTE]
 > Es liegt in Ihrer Verantwortung, alle erforderlichen Treiber hinzuzufügen, alle Tests durchzuführen und sicherzustellen, dass keine Probleme mit dem endgültigen bereitgestellten Image auftreten. Wir stellen das universelle Bild "as-is" zur Verfügung, stellen jedoch technische Anleitungen zur Verfügung und beantworten Fragen. Kontakt MMDImage@microsoft.com.

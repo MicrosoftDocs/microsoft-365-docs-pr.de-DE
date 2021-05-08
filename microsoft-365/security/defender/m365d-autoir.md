@@ -1,6 +1,6 @@
 ---
 title: Automatisierte Untersuchung und Reaktion in Microsoft 365 Defender
-description: Verschaffen Sie sich in Microsoft 365 Defender einen Überblick über automatisierte Untersuchungs- und Reaktionsfunktionen, auch Selbstheilung genannt.
+description: Verschaffen Sie sich einen Überblick über automatisierte Untersuchungs- und Reaktionsfunktionen, auch selbstheilend genannt, in Microsoft 365 Defender
 keywords: automatisiert, Untersuchung, Warnung, Trigger, Aktion, Korrektur, Selbstheilung
 search.appverid: met150
 ms.prod: m365-security
@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: be0423b0af8251347420d9e970dcfe10db0bb72b
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 356d843420856c8e7ec4f00ff0f6f0781cfed6b5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591923"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245456"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Automatisierte Untersuchung und Reaktion in Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "51591923"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Wenn Ihre Organisation [Microsoft 365 Defender](microsoft-365-defender.md)verwendet, erhält Ihr Sicherheitsteam eine Warnung, wenn ein bösartiges oder verdächtiges Artefakt erkannt wird. Angesichts des scheinbar nie endenden Bedrohungsflusses stehen Sicherheitsteams häufig vor Herausforderungen bei der Behandlung des hohen Benachrichtigungsvolumens. Glücklicherweise umfasst Microsoft 365 Defender funktionen für die automatisierte Untersuchung und Behebung (AIR), die Ihrem Sicherheitsteam bei der effizienteren und effektiveren Lösung von Bedrohungen helfen können.
+Wenn Ihre Organisation Microsoft 365 [Defender](microsoft-365-defender.md)verwendet, empfängt Ihr Sicherheitsteam eine Warnung, wenn ein bösartiges oder verdächtiges Artefakt erkannt wird. Angesichts des scheinbar nie endenden Bedrohungsflusses stehen Sicherheitsteams häufig vor Herausforderungen bei der Behandlung des hohen Benachrichtigungsvolumens. Glücklicherweise umfasst Microsoft 365 Defender funktionen für die automatisierte Untersuchung und Korrektur (AIR), die Ihrem Sicherheitsteam bei der effizienteren und effektiveren Lösung von Bedrohungen helfen können.
 
 Dieser Artikel bietet eine Übersicht über AIR und enthält Links zu den nächsten Schritten und zusätzlichen Ressourcen.
 
@@ -44,7 +44,7 @@ Dieser Artikel bietet eine Übersicht über AIR und enthält Links zu den nächs
 
 ## <a name="how-automated-investigation-and-self-healing-works"></a>Funktionsweise der automatisierten Untersuchung und Selbstheilung
 
-Wenn Sicherheitswarnungen ausgelöst werden, ist es an Ihrem Sicherheitsbetriebsteam, diese Warnungen zu betrachten und Schritte zum Schutz Ihrer Organisation zu ergreifen. Die Priorisierung und Untersuchung von Warnungen kann sehr zeitaufwändig sein, insbesondere dann, wenn ständig neue Benachrichtigungen während einer laufenden Untersuchung eingehen. Sicherheitsteams können sich angesichts des enormen Volumens der Bedrohungen, die sie überwachen müssen, überfordert fühlen. Automatisierte Untersuchungs- und Reaktionsfunktionen mit Selbstheilung in Microsoft 365 Defender können helfen.
+Wenn Sicherheitswarnungen ausgelöst werden, ist es an Ihrem Sicherheitsbetriebsteam, diese Warnungen zu betrachten und Schritte zum Schutz Ihrer Organisation zu ergreifen. Die Priorisierung und Untersuchung von Warnungen kann sehr zeitaufwändig sein, insbesondere dann, wenn ständig neue Benachrichtigungen während einer laufenden Untersuchung eingehen. Sicherheitsteams können sich angesichts des enormen Volumens der Bedrohungen, die sie überwachen müssen, überfordert fühlen. Automatisierte Untersuchungs- und Reaktionsfunktionen mit Selbstheilung in Microsoft 365 Defender kann helfen.
 
 Sehen Sie sich das folgende Video an, um zu sehen, wie die Selbstheilung funktioniert: <p>
 
@@ -53,11 +53,11 @@ Sehen Sie sich das folgende Video an, um zu sehen, wie die Selbstheilung funktio
 In Microsoft 365 Defender funktioniert die automatisierte Untersuchung und Reaktion mit Selbstheilungsfunktionen auf Allen Geräten, E-Mail-& und Identitäten.
  
 > [!TIP]
-> In diesem Artikel wird beschrieben, wie automatisierte Untersuchungen und Reaktionen funktionieren. Informationen zum Konfigurieren dieser Funktionen finden Sie [unter Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
+> In diesem Artikel wird beschrieben, wie automatisierte Untersuchungen und Reaktionen funktionieren. Informationen zum Konfigurieren dieser Funktionen finden Sie unter [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
 
 ## <a name="your-own-virtual-analyst"></a>Ihr eigener virtueller Analyst
 
-Stellen Sie sich vor, sie haben einen virtuellen Analysten in Ihrem Sicherheitsteam der Stufe 1 oder Ebene 2. Der virtuelle Analyst imitiert die idealen Schritte, die das Sicherheitsteam zur Untersuchung und Behebung von Bedrohungen ausführen würde. Der virtuelle Assistent kann rund um die Uhr mit unbegrenzter Kapazität arbeiten und eine hohe Anzahl von Untersuchungen und Bedrohungen bearbeiten. Ein solcher virtueller Assistent kann die Reaktionszeit erheblich reduzieren, sodass Ihr Sicherheitsteam andere wichtige strategische Projekte übernehmen kann. Wenn dieses Szenario nach Science Fiction klingt, ist dies nicht der Fall! Ein solcher virtueller Analytiker ist Teil Ihrer Microsoft 365 Defender-Suite, und sein Name ist *automatisierte Untersuchung und Antwort.*
+Imagine einen virtuellen Analysten in Ihrem Sicherheitsteam der Stufe 1 oder Ebene 2 haben. Der virtuelle Analyst imitiert die idealen Schritte, die das Sicherheitsteam zur Untersuchung und Behebung von Bedrohungen ausführen würde. Der virtuelle Assistent kann rund um die Uhr mit unbegrenzter Kapazität arbeiten und eine hohe Anzahl von Untersuchungen und Bedrohungen bearbeiten. Ein solcher virtueller Assistent kann die Reaktionszeit erheblich reduzieren, sodass Ihr Sicherheitsteam andere wichtige strategische Projekte übernehmen kann. Wenn dieses Szenario nach Science Fiction klingt, ist dies nicht der Fall! Ein solcher virtueller Analyst ist Teil Ihrer Microsoft 365 Defender Suite, und der Name ist *automatisierte Untersuchung und Antwort.*
 
 Automatisierte Untersuchungs- und Reaktionsfunktionen ermöglichen Es Ihrem Sicherheitsteam, die Kapazität Ihrer Organisation zur Verarbeitung von Sicherheitswarnungen und Vorfällen erheblich zu erhöhen. Mit der automatisierten Untersuchung und Reaktion können Sie die Kosten für die Behandlung von Untersuchungs- und Behebungsaktivitäten reduzieren und das Beste aus Ihrer Bedrohungsschutzsuite nutzen. Automatisierte Untersuchungs- und Reaktionsfunktionen unterstützen Ihr Sicherheitsteam durch:
 
@@ -78,13 +78,13 @@ Behebungsaktionen für bösartige oder verdächtige Entitäten werden identifizi
 - Beenden eines Prozesses;
 - Isolieren eines Geräts;
 - Blockieren einer URL; und 
-- andere Aktionen. (Siehe [Korrekturaktionen in Microsoft 365 Defender](m365d-remediation-actions.md).)
+- andere Aktionen. (Weitere Informationen finden Sie unter [Remediation actions in Microsoft 365 Defender](m365d-remediation-actions.md).)
 
 Je [nachdem, wie automatisierte Untersuchungs-](m365d-configure-auto-investigation-response.md) und Reaktionsfunktionen für Ihre Organisation konfiguriert sind, werden Korrekturaktionen automatisch oder nur nach Genehmigung durch Ihr Sicherheitsteam ausgeführt. Alle Aktionen, ob ausstehend oder abgeschlossen, werden im [Aktionscenter aufgelistet.](m365d-action-center.md)
 
 Während eine Untersuchung läuft, werden alle anderen zugehörigen Warnungen zur Untersuchung hinzugefügt, bis diese abgeschlossen ist. Wenn eine inkriminierte Entität an anderer Stelle gesehen wird, erweitert die automatisierte Untersuchung ihren Bereich, um diese Entität zu umfassen, und der Untersuchungsprozess wiederholt sich. 
 
-In Microsoft 365 Defender korreliert jede automatisierte Untersuchung Signale in Microsoft Defender for Identity, Microsoft Defender for Endpoint und Defender für Office 365, wie in der folgenden Tabelle zusammengefasst: 
+In Microsoft 365 Defender korreliert jede automatisierte Untersuchung Signale über Microsoft Defender for Identity, Microsoft Defender for Endpoint und Defender für Office 365, wie in der folgenden Tabelle zusammengefasst: 
 
 |Entitäten |Dienste für den Bedrohungsschutz  |
 |:---------|:---------|
@@ -92,7 +92,7 @@ In Microsoft 365 Defender korreliert jede automatisierte Untersuchung Signale in
 |E-Mail-Inhalt (E-Mail-Nachrichten, die Dateien und URLs enthalten können)     |[Microsoft Defender für Office 365](../office-365-security/defender-for-office-365.md)         |
 
 > [!NOTE]
-> Nicht jede Warnung löst eine automatisierte Untersuchung aus, und nicht jede Untersuchung führt zu automatisierten Abhilfemaßnahmen. es hängt davon ab, wie die automatisierte Untersuchung und Reaktion für Ihre Organisation konfiguriert ist. Weitere Informationen finden Sie unter [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
+> Nicht jede Warnung löst eine automatisierte Untersuchung aus, und nicht jede Untersuchung führt zu automatisierten Abhilfemaßnahmen. es hängt davon ab, wie die automatisierte Untersuchung und Reaktion für Ihre Organisation konfiguriert ist. Weitere [Informationen finden Sie unter Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
 
 ## <a name="viewing-a-list-of-investigations"></a>Anzeigen einer Liste von Untersuchungen
 
@@ -101,6 +101,6 @@ Wenn Sie Untersuchungen anzeigen möchten, wechseln Sie zur **Seite Vorfälle.**
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Informationen zu den Voraussetzungen für die automatisierte Untersuchung und Reaktion in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
+- [Sehen Sie sich die Voraussetzungen für eine automatisierte Untersuchung und Reaktion in Microsoft 365 Defender an.](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)
 - [Konfigurieren der automatisierten Untersuchung und Reaktion für Ihre Organisation](m365d-configure-auto-investigation-response.md)
 - [Erfahren Sie mehr über das Info-Center](m365d-action-center.md)

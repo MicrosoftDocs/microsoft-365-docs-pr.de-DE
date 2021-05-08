@@ -6,19 +6,20 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
+ms.topic: article
 localization_priority: Normal
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.reviewer: ''
+ms.reviewer: dansimp
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 07573fd92643ce5fdf3e9140031bf5f15ae8f7aa
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 73b23427ff401f2a37c399131d6aa01330ff9de5
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570339"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245300"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Auswerten der Regeln zur Verringerung der Angriffsfläche
 
@@ -26,15 +27,18 @@ ms.locfileid: "51570339"
 
 
 **Gilt für:**
+
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Attack surface reduction rules help prevent actions typically used by malware to compromise devices or networks. Legen Sie Regeln zur Reduzierung der Angriffsfläche für Geräte mit einer der folgenden Editionen und Versionen von Windows ein:
+Attack surface reduction rules help prevent actions typically used by malware to compromise devices or networks. Regeln zur Reduzierung der Angriffsfläche helfen dabei, viele der häufig von Schadsoftware und Ransomware verwendeten Einstiegspunkte zu schließen. 
 
-- Windows 10 Pro, [Version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) oder höher
-- Windows 10 Enterprise, [Version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) oder höher
+Legen Sie Regeln zur Reduzierung der Angriffsfläche für Geräte mit einer der folgenden Editionen und Versionen von Windows:
+
+- Windows 10 Pro, Version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) oder höher
+- Windows 10 Enterprise, Version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) oder höher
 - Windows Server, [Version 1803 (Halbjährskanal)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) oder höher
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
@@ -66,9 +70,9 @@ Verwenden Sie das folgende PowerShell-Cmdlet, um alle hinzugefügten Regeln zur 
 
 Sie können die Einstellung auch mithilfe von Gruppenrichtlinien, Intune oder Konfigurationsdienstanbietern für die mobile Geräteverwaltung (Mobile Device Management, MDM) konfigurieren und bereitstellen. Weitere Informationen finden Sie im Hauptartikel [attack surface reduction rules.](attack-surface-reduction.md)
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Überprüfen von Ereignissen zur Reduzierung der Angriffsfläche in der Windows-Ereignisanzeige
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Überprüfen von Ereignissen zur Reduzierung der Angriffsfläche in Windows Ereignisanzeige
 
-Öffnen Sie die Ereignisanzeige, und filtern Sie im Microsoft-Windows-Windows Defender/Operational-Protokoll nach Ereignis-ID 1121, um apps zu überprüfen, die blockiert worden wären. In der folgenden Tabelle sind alle Netzwerkschutzereignisse aufgeführt.
+Um Apps zu überprüfen, die blockiert wurden, öffnen Sie die Ereignisanzeige, und filtern Sie im Microsoft-Windows-Windows Defender/Operational-Protokoll nach Ereignis-ID 1121. In der folgenden Tabelle sind alle Netzwerkschutzereignisse aufgeführt.
 
 Ereignis-ID | Beschreibung
 -|-

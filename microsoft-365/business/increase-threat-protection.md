@@ -21,25 +21,25 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Richten Sie Microsoft Defender für Office 365 ein, und schützen Sie vertrauliche Daten vor Phishing, Schadsoftware und anderen Bedrohungen.
-ms.openlocfilehash: 8fb2c3881876cabea6d8907a85bc9397212126dc
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Richten Sie Microsoft Defender für Office 365 und schützen Sie vertrauliche Daten vor Phishing, Schadsoftware und anderen Bedrohungen.
+ms.openlocfilehash: 4b5142efbf4392f017cd9b96f6a9c36ef2000bb7
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580192"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245142"
 ---
 # <a name="increase-threat-protection"></a>Erhöhen des Bedrohungsschutzes
 
-Dieser Artikel hilft Ihnen, den Schutz in Ihrem Microsoft 365-Abonnement zu erhöhen, um sich vor Phishing, Schadsoftware und anderen Bedrohungen zu schützen. Diese Empfehlungen sind für Organisationen mit erhöhtem Sicherheitsbedarf geeignet, z. B. für Anwaltskanzleien und Gesundheitseinrichtungen.
+Dieser Artikel hilft Ihnen, den Schutz in Ihrem Microsoft 365 zu erhöhen, um sich vor Phishing, Schadsoftware und anderen Bedrohungen zu schützen. Diese Empfehlungen sind für Organisationen mit erhöhtem Sicherheitsbedarf geeignet, z. B. für Anwaltskanzleien und Gesundheitseinrichtungen.
 
-Bevor Sie beginnen, überprüfen Sie Ihre Office 365 Secure Score. Office 365 Secure Score analysiert die Sicherheit Ihrer Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen und weist eine Bewertung zu. Notieren Sie sich zunächst Ihre aktuelle Bewertung. Um Ihre Bewertung zu erhöhen, führen Sie die in diesem Artikel empfohlenen Aktionen aus. Das Ziel ist nicht, die maximale Punktzahl zu erreichen, sondern die Möglichkeiten zum Schutz Ihrer Umgebung zu kennen, die sich nicht negativ auf die Produktivität ihrer Benutzer auswirken.
+Bevor Sie beginnen, überprüfen Sie Office 365 Secure Score. Office 365 Secure Score analysiert die Sicherheit Ihrer Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen und weist eine Bewertung zu. Notieren Sie sich zunächst Ihre aktuelle Bewertung. Um Ihre Bewertung zu erhöhen, führen Sie die in diesem Artikel empfohlenen Aktionen aus. Das Ziel ist nicht, die maximale Punktzahl zu erreichen, sondern die Möglichkeiten zum Schutz Ihrer Umgebung zu kennen, die sich nicht negativ auf die Produktivität ihrer Benutzer auswirken.
 
 Weitere Informationen finden Sie unter [Microsoft Secure Score](../security/defender/microsoft-secure-score.md).
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Erhöhen des Schutzniveaus vor Schadsoftware in E-Mails
 
-Ihre Office 365- oder Microsoft 365-Umgebung umfasst Schutz vor Schadsoftware. Sie können diesen Schutz erhöhen, indem Sie Anlagen mit Dateitypen blockieren, die häufig für Schadsoftware verwendet werden. So erhöhen Sie den Schadsoftwareschutz in E-Mails:
+Ihre Office 365 oder Microsoft 365 umfasst Schutz vor Schadsoftware. Sie können diesen Schutz erhöhen, indem Sie Anlagen mit Dateitypen blockieren, die häufig für Schadsoftware verwendet werden. So erhöhen Sie den Schadsoftwareschutz in E-Mails:
 
 1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu und melden Sie sich mit Ihren Administratorkontoanmeldeinformationen an.
 
@@ -65,11 +65,11 @@ Ransomware schränkt den Zugriff auf Daten ein, indem Dateien verschlüsselt ode
 
 Erstellen Sie zum Schutz vor Ransomware eine oder mehrere Nachrichtenflussregeln, um Dateierweiterungen zu blockieren, die häufig für Ransomware verwendet werden. (Sie haben diese Regeln im Schritt erhöhen des Schutzes vor [Schadsoftware in E-Mail hinzugefügt.)](#raise-the-level-of-protection-against-malware-in-mail) Sie können auch Benutzer warnen, die diese Anlagen in E-Mails erhalten.
 
-Zusätzlich zu den Dateien, die Sie im vorherigen Schritt blockiert haben, ist es eine bewährte Methode, eine Regel zum Warnen von Benutzern zu erstellen, bevor Sie Office-Dateianlagen öffnen, die Makros enthalten. Ransomware kann in Makros ausgeblendet werden, also warnen Sie Benutzer davor, diese Dateien von Personen zu öffnen, die sie nicht kennen.
+Zusätzlich zu den Dateien, die Sie im vorherigen Schritt blockiert haben, ist es eine bewährte Methode, eine Regel zum Warnen von Benutzern zu erstellen, bevor sie Office Dateianlagen öffnen, die Makros enthalten. Ransomware kann in Makros ausgeblendet werden, also warnen Sie Benutzer davor, diese Dateien von Personen zu öffnen, die sie nicht kennen.
 
 So erstellen Sie eine E-Mail-Transportregel:
 
-1. Wechseln Sie zum Admin Center unter <https://admin.microsoft.com> , und wählen Sie Admin **Center** \> **Exchange aus.**
+1. Wechseln Sie zum Admin Center unter <https://admin.microsoft.com> , und wählen Sie Admin Center  \> **Exchange**.
 
 2. Wählen Sie **in der** Kategorie Nachrichtenfluss Regeln **aus.**
 
@@ -81,7 +81,7 @@ So erstellen Sie eine E-Mail-Transportregel:
 
 6. Klicken Sie auf **Speichern**.
 
-|Einstellung|Warnen von Benutzern vor dem Öffnen von Anlagen von Office-Dateien||
+|Einstellung|Warnen Von Benutzern vor dem Öffnen von Anlagen Office Dateien||
 |---|---|---|
 |Name|Anti-Ransomware-Regel: Benutzer warnen|
 |Wenden Sie diese Regel an, wenn . . .|Jede Anlage . . . Dateierweiterung entspricht . . .|
@@ -93,15 +93,15 @@ Weitere Informationen finden Sie unter:
 
 - [Ransomware: Verringern des Risikos](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
-- [Wiederherstellen Ihres OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
+- [Wiederherstellen ihrer OneDrive](https://support.microsoft.com/office/fa231298-759d-41cf-bcd0-25ac53eb8a15.aspx)
 
 ## <a name="stop-auto-forwarding-for-email"></a>Beenden der automatischen Weiterleitung für E-Mails
 
 Hacker, die Zugriff auf das Postfach eines Benutzers erhalten, können E-Mails stehlen, indem sie das Postfach so festlegen, dass E-Mails automatisch weitergeleitet werden. Dies kann auch ohne das Bewusstsein des Benutzers geschehen. Um dies zu verhindern, konfigurieren Sie eine Nachrichtenflussregel.
 
-Um eine E-Mail-Transportregel zu erstellen, sehen Sie sich entweder [dieses kurze Video an,](https://support.microsoft.com/office/f9d693ba-5c78-47c0-b156-8e461e062aa7) oder führen Sie die folgenden Schritte aus:
+Um eine E-Mail-Transportregel zu erstellen, sehen Sie sich entweder [dieses kurze Video an,](../business-video/stop-email-auto-forward.md) oder führen Sie die folgenden Schritte aus:
 
-1. Wählen Sie im Microsoft 365 Admin Center die Option **Admin Center** \> **Exchange aus.**
+1. Wählen Sie Microsoft 365 Admin Center admin center **Exchange** \> aus.
 
 2. Wählen Sie **in der** Kategorie Nachrichtenfluss Regeln **aus.**
 
@@ -113,7 +113,7 @@ Um eine E-Mail-Transportregel zu erstellen, sehen Sie sich entweder [dieses kurz
 
 6. Klicken Sie auf **Speichern**.
 
-|Einstellung|Warnen von Benutzern vor dem Öffnen von Anlagen von Office-Dateien|
+|Einstellung|Warnen Von Benutzern vor dem Öffnen von Anlagen Office Dateien|
 |---|---|
 |Name|Verhindern der automatischen Weiterleitung von E-Mails an externe Domänen|
 |Wenden Sie diese Regel an, wenn ...|Der Absender . . . ist extern/intern . . . Innerhalb der Organisation|
@@ -124,11 +124,11 @@ Um eine E-Mail-Transportregel zu erstellen, sehen Sie sich entweder [dieses kurz
 
 ## <a name="protect-your-email-from-phishing-attacks"></a>Schützen Ihrer E-Mails vor Phishingangriffen
 
-Wenn Sie eine oder mehrere benutzerdefinierte Domänen für Ihre Office 365- oder Microsoft 365-Umgebung konfiguriert haben, können Sie gezielten Antiphishingschutz konfigurieren. Der Antiphishingschutz, der Teil von Microsoft Defender für Office 365 ist, kann Ihre Organisation vor phishingbasierten Phishingangriffen und anderen Phishingangriffen durch böswilligen Identitätswechsel schützen. Wenn Sie keine benutzerdefinierte Domäne konfiguriert haben, müssen Sie dies nicht tun.
+Wenn Sie eine oder mehrere benutzerdefinierte Domänen für Ihre Office 365 oder Microsoft 365 konfiguriert haben, können Sie gezielten Antiphishingschutz konfigurieren. Der Antiphishingschutz, der Teil von Microsoft Defender for Office 365 ist, kann Ihre Organisation vor phishingbasierten Phishingangriffen und anderen Phishingangriffen durch böswilligen Identitätswechsel schützen. Wenn Sie keine benutzerdefinierte Domäne konfiguriert haben, müssen Sie dies nicht tun.
 
 Es wird empfohlen, mit diesem Schutz zu beginnen, indem Sie eine Richtlinie zum Schutz Ihrer wichtigsten Benutzer und Ihrer benutzerdefinierten Domäne erstellen.
 
-Um eine Antiphishingrichtlinie in Microsoft Defender für Office 365 zu erstellen, sehen Sie sich dieses kurze Schulungsvideo  [an,](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)oder führen Sie die folgenden Schritte aus:
+Um eine Antiphishingrichtlinie in Microsoft Defender for Office 365 zu erstellen, sehen Sie sich dieses kurze Schulungsvideo [an,](../business-video/setup-anti-phishing.md)oder führen Sie die folgenden Schritte aus:
 
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
 
@@ -147,7 +147,7 @@ Um eine Antiphishingrichtlinie in Microsoft Defender für Office 365 zu erstelle
 |Name|Domänen- und wertvollste Mitarbeiter für Kampagnen|
 |Beschreibung|Stellen Sie sicher, dass die wichtigsten Mitarbeiter und unsere Domäne nicht als Identitätswechsel verwendet werden.|
 |Zu schützende Benutzer hinzufügen|Select **+ Add a condition, The recipient is**. Geben Sie Benutzernamen ein, oder geben Sie die E-Mail-Adresse des Kandidaten, des Kampagnenmanagers und anderer wichtiger Mitarbeiter ein. Sie können bis zu 20 interne und externe Adressen hinzufügen, die Sie vor Identitätswechseln schützen möchten.|
-|Zu schützende Domänen hinzufügen|Select **+ Add a condition, The recipient domain is**. Geben Sie die benutzerdefinierte Domäne ein, die Ihrem Microsoft 365-Abonnement zugeordnet ist, wenn Sie eine definiert haben. Sie können mehrere Domänen eingeben.|
+|Zu schützende Domänen hinzufügen|Select **+ Add a condition, The recipient domain is**. Geben Sie die benutzerdefinierte Domäne ein, die Ihrem Microsoft 365 zugeordnet ist, wenn Sie eine definiert haben. Sie können mehrere Domänen eingeben.|
 |Aktionen auswählen|Wenn E-Mails von einem identitätswechselten Benutzer gesendet werden: Wählen Sie **Nachricht** an eine andere E-Mail-Adresse umleiten aus, und geben Sie dann die E-Mail-Adresse des Sicherheitsadministrators ein. Beispiel: *Alice <span> <span> @contoso.com*. Wenn eine E-Mail von einer imitierten Domäne gesendet wird: Wählen Sie **Nachricht in Quarantäne verschieben** aus.|
 |Mailbox Intelligence|Standardmäßig wird die Mailbox Intelligence ausgewählt, wenn Sie eine neue Anti-Phishing-Richtlinie erstellen. Lassen Sie diese Einstellung auf **Ein**, um optimale Ergebnisse zu erzielen.|
 |Vertrauenswürdige Absender und Domänen hinzufügen|Hier können Sie Ihre eigene Domäne oder andere vertrauenswürdige Domänen hinzufügen.|
@@ -155,9 +155,9 @@ Um eine Antiphishingrichtlinie in Microsoft Defender für Office 365 zu erstelle
 
 ## <a name="protect-against-malicious-attachments-and-files-with-safe-attachments"></a>Schützen vor schädlichen Anlagen und Dateien mit sicheren Anlagen
 
-Personen senden, empfangen und teilen anlagen, z. B. Dokumente, Präsentationen, Tabellen und vieles mehr. Es ist nicht immer einfach zu bestimmen, ob eine Anlage sicher oder bösartig ist, indem Sie sich eine E-Mail-Nachricht anschauen. Microsoft Defender für Office 365 umfasst sicheren Anlagenschutz, dieser Schutz ist jedoch nicht standardmäßig aktiviert. Es wird empfohlen, eine neue Regel zu erstellen, um mit der Verwendung dieses Schutzes zu beginnen. Dieser Schutz erstreckt sich auf Dateien in SharePoint, OneDrive und Microsoft Teams.
+Personen senden, empfangen und teilen anlagen, z. B. Dokumente, Präsentationen, Tabellen und vieles mehr. Es ist nicht immer einfach zu bestimmen, ob eine Anlage sicher oder bösartig ist, indem Sie sich eine E-Mail-Nachricht anschauen. Microsoft Defender for Office 365 enthält sicheren Anlagenschutz, dieser Schutz ist jedoch nicht standardmäßig aktiviert. Es wird empfohlen, eine neue Regel zu erstellen, um mit der Verwendung dieses Schutzes zu beginnen. Dieser Schutz erstreckt sich auf Dateien in SharePoint, OneDrive und Microsoft Teams.
 
-Um eine Richtlinie für sichere Anlagen zu erstellen, sehen Sie sich entweder dieses [kurze](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)Video an, oder führen Sie die folgenden Schritte aus:
+Um eine Richtlinie für sichere Anlagen zu erstellen, sehen Sie sich entweder dieses [kurze](../business-video/safe-attachments.md)Video an, oder führen Sie die folgenden Schritte aus:
 
 1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu , und melden Sie sich mit Ihrem Administratorkonto an.
 
@@ -165,7 +165,7 @@ Um eine Richtlinie für sichere Anlagen zu erstellen, sehen Sie sich entweder di
 
 3. Wählen Sie auf der Seite Richtlinie die Option **Sichere Anlagen aus.**
 
-4. Wenden Sie diesen Schutz auf der Seite Sichere Anlagen allgemein an, indem Sie das **Kontrollkästchen ATP für SharePoint, OneDrive** und Microsoft Teams aktivieren aktivieren.
+4. Wenden Sie diesen Schutz auf der Seite Sichere Anlagen allgemein an, indem Sie das Kontrollkästchen ATP für **SharePoint,** OneDrive und Microsoft Teams aktivieren aktivieren.
 
 5. Wählen **+** Sie diese Option aus, um eine neue Richtlinie zu erstellen.
 
@@ -185,7 +185,7 @@ Weitere Informationen finden Sie unter [Einrichten von Antiphishingrichtlinien i
 
 ## <a name="protect-against-phishing-attacks-with-safe-links"></a>Schützen vor Phishingangriffen mit sicheren Links
 
-Hacker verbergen bösartige Websites manchmal in Links in E-Mails oder anderen Dateien. Sichere Links, die Teil von Microsoft Defender für Office 365 sind, können Ihre Organisation schützen, indem sie die Überprüfung von Webadressen (URLs) in E-Mail-Nachrichten und Office-Dokumenten per Mausklick bereitstellen. Der Schutz wird durch Richtlinien für sichere Links definiert.
+Hacker verbergen bösartige Websites manchmal in Links in E-Mails oder anderen Dateien. Sichere Links, die Teil von Microsoft Defender for Office 365 sind, können Zum Schutz Ihrer Organisation beitragen, indem Sie die Überprüfung von Webadressen (URLs) in E-Mail-Nachrichten und dokumenten Office bereitstellen. Der Schutz wird durch Richtlinien für sichere Links definiert.
 
 Es wird empfohlen, die folgenden Schritte zu tun:
 
@@ -193,7 +193,7 @@ Es wird empfohlen, die folgenden Schritte zu tun:
 
 - Fügen Sie eine neue Richtlinie für alle Empfänger in Ihrer Domäne hinzu.
 
-Zum Einrichten sicherer Links sehen Sie sich [dieses kurze Schulungsvideo an,](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)oder führen Sie die folgenden Schritte aus:
+Zum Einrichten sicherer Links sehen Sie sich [dieses kurze Schulungsvideo an,](../business-video/safe-links.md)oder führen Sie die folgenden Schritte aus:
 
 1. Wechseln Sie [https://protection.office.com](https://protection.office.com) zu , und melden Sie sich mit Ihrem Administratorkonto an.
 
@@ -205,7 +205,7 @@ So ändern Sie die Standardrichtlinie:
 
 1. Wählen Sie auf der Seite Sichere Links unter **Richtlinien, die für** die gesamte Organisation gelten, die **Standardrichtlinie** aus.
 
-2. Wählen **Sie unter Einstellungen, die für Inhalte außer** E-Mail gelten, Microsoft **365 Apps for Enterprise, Office für iOS und Android aus.**
+2. Wählen **Einstellungen, die für Inhalte** außer E-Mail gelten, **Microsoft 365 Apps for Enterprise, Office für iOS und Android aus.**
 
 3. Klicken Sie auf **Speichern**.
 
@@ -232,6 +232,6 @@ Weitere Informationen finden Sie unter [Sichere Links](../security/office-365-se
 
 2. Wählen **Sie Alle Dienste** aus, und geben Sie in *Intune* im **Suchfeld ein.**
 
-3. Sobald die Ergebnisse angezeigt werden, wählen Sie den Start neben **Microsoft Intune** aus, um ihn zu einem Favoriten zu machen und später leicht zu finden.
+3. Sobald die Ergebnisse angezeigt werden, wählen Sie den Start neben **Microsoft Intune,** um ihn zu einem Favoriten zu machen und später leicht zu finden.
 
 Zusätzlich zum Admin Center können Sie Intune verwenden, um die Geräte Ihrer Organisation zu registrieren und zu verwalten. Weitere Informationen finden Sie unter [Capabilities by enrollment method for Windows devices](/intune/enrollment/enrollment-method-capab) and Enrollment options for devices managed by [Intune](/intune/enrollment-options).

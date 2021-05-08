@@ -22,16 +22,16 @@ search.appverid:
 - BCS160
 - MET150
 description: Richten Sie Compliancefeatures ein, um Datenverluste zu verhindern und die vertraulichen Informationen Ihrer und Ihrer Kunden zu schützen.
-ms.openlocfilehash: c0accc37d3dcda9ba75813f01a98a3233c5a8369
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 945f8a283b90b89da2fbe67a073e0807b80d198f
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579952"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245082"
 ---
 # <a name="set-up-compliance-features"></a>Einrichten von Compliancefeatures
 
-Ihr Microsoft 365 Business Premium verfügt über Features zum Schutz Ihrer Daten und Geräte und hilft Ihnen, die vertraulichen Informationen Ihrer Kunden und Ihrer Kunden zu schützen.
+Ihre Microsoft 365 Business Premium bietet Features zum Schutz Ihrer Daten und Geräte und hilft Ihnen, die vertraulichen Informationen Ihrer Kunden und Ihrer Kunden zu schützen.
 
 ## <a name="set-up-dlp-features"></a>Einrichten von DLP-Features
 
@@ -41,7 +41,7 @@ DLP enthält viele einsatzbereite Richtlinienvorlagen für viele verschiedene Lo
   
 ## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Einrichten der E-Mail-Aufbewahrung mit Exchange Online-Archivierung
 
- **Exchange Online-Archivierung** Lizenzfeatures helfen bei der Aufrechterhaltung von Compliance- und behördlichen Standards, indem E-Mail-Inhalte für eDiscovery beibehalten werden. Es hilft auch, Ihr Risiko zu reduzieren, wenn eine Klage vorlag, und bietet eine Möglichkeit, Daten nach einer Sicherheitsverletzung oder wenn Sie gelöschte Elemente wiederherstellen müssen. Sie können das Verfahrensverfahren verwenden, um alle Inhalte eines Benutzers zu erhalten, oder Aufbewahrungsrichtlinien verwenden, um die Aufbewahrungsrichtlinien anzupassen.
+  Exchange Online-Archivierung-Lizenzfeatures helfen bei der Aufrechterhaltung von Compliance- und behördlichen Standards, indem E-Mail-Inhalte für eDiscovery beibehalten werden. Es hilft auch, Ihr Risiko zu reduzieren, wenn eine Klage vorlag, und bietet eine Möglichkeit, Daten nach einer Sicherheitsverletzung oder wenn Sie gelöschte Elemente wiederherstellen müssen. Sie können das Verfahrensverfahren verwenden, um alle Inhalte eines Benutzers zu erhalten, oder Aufbewahrungsrichtlinien verwenden, um die Aufbewahrungsrichtlinien anzupassen.
   
 **Halterecht für Rechtsstreitigkeiten:** Sie können alle Postfachinhalte, einschließlich gelöschter Elemente, beibehalten, indem Sie das gesamte Postfach eines Benutzers in einem Rechtsstreit zurückhalten. 
     
@@ -49,7 +49,7 @@ So platzieren Sie ein Postfach in einem Rechtsstreit im Admin Center:
     
 1. Wechseln Sie im linken Navigations navi zu **Benutzer** \> **Aktive Benutzer**.
     
-2. Wählen Sie einen Benutzer aus, dessen Postfach Sie in einem Prozesssicherungsverfahren platzieren möchten. Erweitern Sie im Benutzerbereich **E-Mail-Einstellungen,** und wählen Sie neben **Weitere Einstellungen** die Option **Exchange-Eigenschaften bearbeiten aus.**
+2. Wählen Sie einen Benutzer aus, dessen Postfach Sie in einem Prozesssicherungsverfahren platzieren möchten. Erweitern Sie im Benutzerbereich **E-Mail-Einstellungen,** und wählen Sie neben Weitere Einstellungen die Option **Bearbeiten Exchange Eigenschaften aus.** 
     
 3. Wählen Sie auf der Postfachseite für den Benutzer ** Postfachfunktionen ** im linken Navigationsgerät aus, und wählen Sie dann den Link Aktivieren **unter** **Rechtsstreitigkeiten aus.**
     
@@ -61,7 +61,7 @@ So platzieren Sie ein Postfach in einem Rechtsstreit im Admin Center:
 
 Vertraulichkeitsbezeichnungen sind in Azure Information Protection (AIP) Plan 1 enthalten und helfen Ihnen, Ihre Dokumente und E-Mails durch Anwenden von Bezeichnungen zu klassifizieren und optional zu schützen. Bezeichnungen können automatisch von Administratoren angewendet werden, die Regeln und Bedingungen definieren, manuell von Benutzern oder mithilfe einer Kombination, in der Benutzern Empfehlungen gegeben werden.
 
-Zum Einrichten von Vertraulichkeitsbezeichnungen zeigen Sie video [zum Erstellen und Verwalten von Vertraulichkeitsbezeichnungen](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) an.
+Zum Einrichten von Vertraulichkeitsbezeichnungen zeigen Sie video [zum Erstellen und Verwalten von Vertraulichkeitsbezeichnungen](../business-video/create-sensitivity-labels.md) an.
 
 
 

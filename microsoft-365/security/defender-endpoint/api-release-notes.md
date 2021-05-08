@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7bae413028a0add7e5288e52bc3184e30f319c46
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+ms.openlocfilehash: 5c8e9d8e1c8ec020b4d742f61d276c93f6730bec
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073838"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245552"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>Versionshinweise zur Microsoft Defender for Endpoint-API
 
@@ -37,7 +37,11 @@ In den folgenden Informationen werden die an den Microsoft Defender for Endpoint
 > https://docs.microsoft.com/api/search/rss?search=%22Release+notes+for+updates+made+to+the+Microsoft+Defender+for+Endpoint+set+of+APIs%22&locale=en-us&facet=&%24filter=scopes%2Fany%28t%3A+t+eq+%27Windows+10%27%29
 > ```
 
-## <a name="release-notes---newest-to-oldest"></a>Versionshinweise – neueste bis älteste Version
+## <a name="release-notes---newest-to-oldest-ddmmyyyy"></a>Versionshinweise – neueste bis älteste (dd.mm.yyyy)
+
+### <a name="03052021"></a>03.05.2021
+
+- Neue API hinzugefügt: [Methoden und Eigenschaften der Korrekturaktivität](get-remediation-methods-properties.md).
 
 ### <a name="10022021"></a>10.02.2021
 

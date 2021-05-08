@@ -1,5 +1,5 @@
 ---
-title: Übersicht über die Geräteerkennung
+title: Übersicht über die Geräteermittlung
 description: Erfahren Sie, wie Sie die Endpunkterkennung in Microsoft 365 Defender nutzen, um nicht verwaltete Geräte in Ihrem Netzwerk zu finden.
 keywords: Geräteerkennung, Ermittlung, passiv, proaktiv, Netzwerk, Sichtbarkeit, Server, Arbeitsstation, onboard, nicht verwaltete Geräte
 search.product: eADQiWindows 10XVcnh
@@ -20,14 +20,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: c549d5d2a7c30892a9272b4ac3e03cb8979bc1a5
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 2dee1193e9f852e66df324927bf38d37d736d251
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764987"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245948"
 ---
-# <a name="device-discovery-overview"></a>Übersicht über die Geräteerkennung
+# <a name="device-discovery-overview"></a>Übersicht über die Geräteermittlung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -96,10 +96,11 @@ Geräte, die entdeckt wurden, aber noch nicht von Microsoft Defender for Endpoin
 
 ![Abbildung des Geräteinventardashboards](images/2b62255cd3a9dd42f3219e437b956fb9.png)
 
-
+> [!TIP]
+> Sie können filter immer anwenden, um nicht verwaltete Geräte aus der Gerätebestandsliste auszuschließen. Sie können auch die Spalte Onboardingstatus in API-Abfragen verwenden, um nicht verwaltete Geräte herausfiltern. 
 
 ## <a name="vulnerability-assessment-on-discovered-devices"></a>Sicherheitsrisikobewertung auf erkannten Geräten
-Sicherheitsrisiken und Risiken auf Ihren Geräten sowie andere ermittelte nicht verwaltete Geräte im Netzwerk sind Teil der aktuellen TVM-Flüsse unter "Sicherheitsempfehlungen" und werden auf Entitätsseiten im Portal dargestellt. Suchen Sie nach "SSH"-bezogenen Sicherheitsempfehlungen, um SSH-Sicherheitsrisiken zu finden, die für nicht verwaltete und verwaltete Geräte im Zusammenhang stehen. 
+Sicherheitsrisiken und Risiken auf Ihren Geräten sowie andere ermittelte nicht verwaltete Geräte im Netzwerk sind Teil der aktuellen TVM-Flüsse unter "Security Empfehlungen" und werden auf Entitätsseiten im gesamten Portal dargestellt. Suchen Sie nach "SSH"-bezogenen Sicherheitsempfehlungen, um SSH-Sicherheitsrisiken zu finden, die für nicht verwaltete und verwaltete Geräte im Zusammenhang stehen. 
 
 ![Abbildung des Dashboards für Sicherheitsempfehlungen](images/1156c82ffadd356ce329d1cf551e806c.png)  
 
@@ -131,8 +132,8 @@ DeviceNetworkEvents
 ```
 
 
-## <a name="changed-behaviour"></a>Geändertes Verhalten
-Im folgenden Abschnitt werden die Änderungen aufgeführt, die Sie in Microsoft Defender for Endpoint und/oder Microsoft 365 Security Center beobachten werden, wenn diese Funktion aktiviert ist. 
+## <a name="changed-behavior"></a>Geändertes Verhalten
+Im folgenden Abschnitt werden die Änderungen aufgeführt, die Sie in Microsoft Defender for Endpoint und/oder Microsoft 365 Security Center beobachten, wenn diese Funktion aktiviert ist. 
  
 1.  Geräte, die nicht in Microsoft Defender to Endpoint onboarded sind, werden voraussichtlich im Geräteinventar, in der erweiterten Suche und in API-Abfragen angezeigt. Dadurch kann die Größe der Abfrageergebnisse erheblich erhöht werden. 
     1. Die Tabellen "DeviceInfo" und "DeviceNetworkInfo" in Advanced Hunting enthalten nun ermitteltes Gerät. Sie können diese Geräte mithilfe des Attributs "OnboardingStatus" herausfiltern.

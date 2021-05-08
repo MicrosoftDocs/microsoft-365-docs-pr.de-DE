@@ -19,12 +19,12 @@ description: Verwenden Sie Explorer und Echtzeiterkennungen im Security Complian
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6bea6cb60579263515d21e159c4032fe4281cad
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 810b5c99aa239f295fd930c1d13a6a817012b18b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52024181"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245564"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Bedrohungs-Explorer und Echtzeiterkennungen
 
@@ -32,7 +32,7 @@ ms.locfileid: "52024181"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Wenn Ihre Organisation [Über Microsoft Defender für Office 365](defender-for-office-365.md)verfügt und Sie über die erforderlichen Berechtigungen [verfügen,](#required-licenses-and-permissions)verfügen Sie entweder über **Explorer-** oder Echtzeiterkennungen **(ehemals** Echtzeitberichte *–* siehe neues [!).](#new-features-in-threat-explorer-and-real-time-detections) Wechseln Sie im Security & Compliance Center zu Bedrohungsverwaltung, und wählen Sie dann **Explorer**  oder  **Echtzeiterkennungen aus.**
+Wenn Ihre Organisation [Über Microsoft Defender für Office 365](defender-for-office-365.md)verfügt und Sie über die erforderlichen Berechtigungen verfügen, verfügen Sie entweder über **Explorer-** oder Echtzeiterkennungen (früher  Echtzeitberichte – siehe neues [!).](#new-features-in-threat-explorer-and-real-time-detections) [](#required-licenses-and-permissions)  Wechseln Sie im Security & Compliance Center zu Bedrohungsverwaltung, und wählen Sie dann **Explorer**  oder  **Echtzeiterkennungen aus.**
 
 <br>
 
@@ -49,7 +49,7 @@ Explorer- oder Echtzeiterkennungen helfen Ihrem Sicherheitsteam dabei, Bedrohung
 
 Mit diesem Bericht können Sie:
 
-- [Siehe Schadsoftware, die von Microsoft 365-Sicherheitsfeatures erkannt wird](#see-malware-detected-in-email-by-technology)
+- [Siehe Schadsoftware, die von Microsoft 365 erkannt wird](#see-malware-detected-in-email-by-technology)
 - [Anzeigen der Phishing-URL und Klicken auf Verdingungsdaten](#view-phishing-url-and-click-verdict-data)
 - [Starten eines automatisierten Untersuchungs-](#start-automated-investigation-and-response) und Reaktionsprozesses aus einer Ansicht im Explorer (nur Defender für Office 365 Plan 2)
 - [Untersuchen bösartiger E-Mails und mehr](#more-ways-to-use-explorer-and-real-time-detections)
@@ -71,7 +71,7 @@ Die Warnungs-ID ist innerhalb der URL verfügbar, wenn Sie eine einzelne Warnung
 
 ### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>Erweitern des Speicher- und Suchgrenzwerts für Explorer (und Echtzeiterkennungen) für Test-Mandanten von 7 auf 30 Tage (Vorschau)
 
-Im Rahmen dieser Änderung können Sie E-Mail-Daten innerhalb von 30 Tagen (gegenüber den vorherigen 7 Tagen) in Threat Explorer/Echtzeiterkennungen für Defender für Office P1 und P2-Test-Mandanten suchen und filtern.
+Im Rahmen dieser Änderung können Sie E-Mail-Daten innerhalb von 30 Tagen (eine Erhöhung gegenüber den vorherigen 7 Tagen) in Threat Explorer/Echtzeiterkennungen für Defender für Office P1- und P2-Test-Mandanten suchen und filtern.
 Dies wirkt sich nicht auf Produktions mandanten für P1- und P2/E5-Kunden aus, die bereits über die 30-tägigen Funktionen zur Datenspeicherung und -suche verfügen.
 
 ### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>Aktualisierte Grenzwerte für den Export von Datensätzen für Den Bedrohungs-Explorer (Vorschau)
@@ -81,7 +81,7 @@ Im Rahmen dieses Updates wird die Anzahl der Zeilen für E-Mail-Datensätze, die
 ### <a name="tags-in-threat-explorer"></a>Tags im Bedrohungs-Explorer
 
 > [!NOTE]
-> Das Feature für Benutzertags befindet sich in *der Vorschau,* ist nicht für alle verfügbar und kann geändert werden. Informationen zum Veröffentlichungszeitplan finden Sie in der Microsoft 365-Roadmap.
+> Das Feature für Benutzertags befindet sich in *der Vorschau,* ist nicht für alle verfügbar und kann geändert werden. Informationen zum Veröffentlichungszeitplan finden Sie in der Microsoft 365 Roadmap.
 
 Benutzertags identifizieren bestimmte Benutzergruppen in Microsoft Defender für Office 365. Weitere Informationen zu Tags, einschließlich Lizenzierung und Konfiguration, finden Sie unter [User tags](user-tags.md).
 
@@ -179,10 +179,7 @@ Derzeit wird der Zustellungsspeicherort im E-Mail-Raster und im E-Mail-Flyout an
 *Zusätzliche Aktionen* wurden nach der Zustellung der E-Mail angewendet. Sie können *ZAP,* manuelle Korrektur *(von* einem Administrator ergriffene Aktion, z. B. soft *delete),* dynamische Zustellung und erneute Verarbeitung *(für* eine E-Mail, die rückwirkend als gut erkannt wurde) umfassen.
 
 > [!NOTE]
->
-> - Im Rahmen der ausstehenden Änderungen geht der Wert "Entfernt von ZAP", der derzeit im Filter Zustellungsaktion angezeigt wird, weg. Sie haben eine Möglichkeit, mit dem ZAP-Versuch über zusätzliche Aktionen nach allen E-Mails **zu suchen.**
->
-> - Es gibt neue Felder und Werte **für** Erkennungstechnologien und **zusätzliche Aktionen** (insbesondere für ZAP-Szenarien). Sie müssen Ihre vorhandenen gespeicherten und nachverfolgten Abfragen auswerten, um sicherzustellen, dass sie mit den neuen Werten funktionieren.
+> Im Rahmen der ausstehenden Änderungen geht der Wert "Entfernt von ZAP", der derzeit im Filter Zustellungsaktion angezeigt wird, weg. Sie haben eine Möglichkeit, mit dem ZAP-Versuch über zusätzliche Aktionen nach allen E-Mails **zu suchen.**
 
 > [!div class="mx-imgBorder"]
 > ![Zusätzliche Aktionen im Explorer](../../media/Additional_Actions.png)
@@ -195,7 +192,7 @@ Derzeit wird der Zustellungsspeicherort im E-Mail-Raster und im E-Mail-Flyout an
 
 - Durch Benutzerrichtlinie blockiert: Ein Benutzer erstellt Richtlinien auf Postfachebene, um Domänen oder Absender zu blockieren.
 
-- Durch Organisationsrichtlinie zulässig: Die Sicherheitsteams der Organisation legen Richtlinien oder Exchange-Nachrichtenflussregeln (auch als Transportregeln bezeichnet) fest, um Absendern und Domänen für Benutzer in ihrer Organisation zu ermöglichen. Dies kann für eine Gruppe von Benutzern oder die gesamte Organisation sein.
+- Von der Organisationsrichtlinie zugelassen: Die Sicherheitsteams der Organisation legen Richtlinien oder Exchange Nachrichtenflussregeln (auch als Transportregeln bezeichnet) fest, um Absendern und Domänen für Benutzer in ihrer Organisation zu ermöglichen. Dies kann für eine Gruppe von Benutzern oder die gesamte Organisation sein.
 
 - Durch Organisationsrichtlinie blockiert: Die Sicherheitsteams der Organisation legen Richtlinien oder Nachrichtenflussregeln zum Blockieren von Absendern, Domänen, Nachrichtensprachen oder Quell-IPs für Benutzer in ihrer Organisation bereit. Dies kann auf eine Gruppe von Benutzern oder die gesamte Organisation angewendet werden.
 
@@ -285,9 +282,9 @@ Sie können die Liste der zielorientierten Benutzer bis zu einem Grenzwert von 3
 > [!div class="mx-imgBorder"]
 > ![Benutzer mit den meisten Zielbenutzern](../../media/Top_Targeted_Users.png)
 
-### <a name="exchange-transport-rules"></a>Exchange-Transportregeln
+### <a name="exchange-transport-rules"></a>Exchange Transportregeln
 
-Im Rahmen der Datenerweiterung können Sie alle verschiedenen Exchange-Transportregeln (EXCHANGE Transport Rules, ETR) anzeigen, die auf eine Nachricht angewendet wurden. Diese Informationen sind in der Ansicht E-Mail-Raster verfügbar. Wählen Sie zum Anzeigen im Raster **Spaltenoptionen** aus, und fügen Sie dann in den Spaltenoptionen **Exchange-Transportregel** hinzu. Sie wird auch im **Flyout Details** in der E-Mail angezeigt.
+Im Rahmen der Datenerweiterung können Sie alle unterschiedlichen transportregeln (ETR Exchange, die auf eine Nachricht angewendet wurden, anzeigen. Diese Informationen sind in der Ansicht E-Mail-Raster verfügbar. Wählen Sie zum Anzeigen **im** Raster Spaltenoptionen aus, und fügen Sie dann **Exchange Transportregel** in den Spaltenoptionen hinzu. Sie wird auch im **Flyout Details** in der E-Mail angezeigt.
 
 Sie können sowohl die GUID als auch den Namen der Transportregeln anzeigen, die auf die Nachricht angewendet wurden. Sie können mithilfe des Namens der Transportregel nach den Nachrichten suchen. Dies ist eine "Contains"-Suche, was bedeutet, dass Sie auch Teilsuchen machen können.
 
@@ -304,11 +301,11 @@ Sie können sowohl die GUID als auch den Namen der Transportregeln anzeigen, die
 > Innerhalb des E-Mail-Rasters, des Details-Flyouts und des exportierten CSV erhalten die ETRs eine Name/GUID, wie unten gezeigt.
 >
 > > [!div class="mx-imgBorder"]
-> > ![Exchange-Transportregeln](../../media/ETR_Details.png)
+> > ![Exchange Transportregeln](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>Eingehende Connectors
 
-Connectors sind eine Sammlung von Anweisungen, die anpassen, wie Ihre E-Mails zu Und von Ihrer Microsoft 365- oder Office 365-Organisation fließen. Sie ermöglichen ihnen das Anwenden von Sicherheitseinschränkungen oder -steuerelementen. Im Bedrohungs-Explorer können Sie jetzt die Connectors anzeigen, die mit einer E-Mail in Zusammenhang stehen, und mithilfe von Connectornamen nach E-Mails suchen.
+Connectors sind eine Sammlung von Anweisungen, die anpassen, wie Ihre E-Mails zu ihrer Organisation Microsoft 365 oder Office 365 werden. Sie ermöglichen ihnen das Anwenden von Sicherheitseinschränkungen oder -steuerelementen. Im Bedrohungs-Explorer können Sie jetzt die Connectors anzeigen, die mit einer E-Mail in Zusammenhang stehen, und mithilfe von Connectornamen nach E-Mails suchen.
 
 Die Suche nach Connectors ist "enthält", was bedeutet, dass auch teilweise Stichwortsuchen funktionieren sollten. In der Hauptrasteransicht, dem Flyout Details und der exportierten CSV werden die Connectors im Name/GUID-Format wie hier gezeigt angezeigt:
 
@@ -375,7 +372,7 @@ Wie wird dies durchgeführt? Der Zustellungsstatus ist nun in zwei Spalten aufge
 
 |Zugestellt|Junked|Gesperrt|Ersetzt|
 |---|---|---|---|
-|E-Mails wurden an den Posteingang oder Ordner eines Benutzers übermittelt, und der Benutzer kann darauf zugreifen.|E-Mails wurden an den Junk- oder Den Gelöschten Ordner des Benutzers gesendet, und der Benutzer kann darauf zugreifen.|E-Mails, die isoliert, fehlgeschlagen oder gelöscht wurden. Auf diese E-Mails kann der Benutzer nicht zugegriffen werden.|Bei E-Mails wurden schädliche Anlagen durch TXT-Dateien ersetzt, in deren Zustand die Anlage schädlich war.|
+|E-Mails wurden an den Posteingang oder Ordner eines Benutzers übermittelt, und der Benutzer kann darauf zugreifen.|E-Mails wurden an den Junk- oder Den Gelöschten Ordner des Benutzers gesendet, und der Benutzer kann darauf zugreifen.|E-Mails, die isoliert, fehlgeschlagen oder gelöscht wurden. Auf diese E-Mails kann der Benutzer nicht zugegriffen werden.|E-Mail-Anlagen wurden durch .txt ersetzt, in deren Zustand die Anlage schädlich war.|
 |
 
 Dies ist das, was der Benutzer sehen kann und nicht:
@@ -408,11 +405,11 @@ Weitere Informationen finden Sie unter [Investigate and remediate malicious emai
 
 ### <a name="export-url-click-data"></a>Exportieren von URL-Klickdaten
 
-Sie können jetzt Berichte für URL-Klicks  nach Microsoft Excel exportieren, um ihre Netzwerknachrichten-ID ein- und auf **"Verdict"** zu klicken. Dadurch wird erläutert, woher der URL-Klickdatenverkehr stammt. So funktioniert's: Folgen Sie in Threat Management auf der Office 365-Schnellstartleiste dieser Kette:
+Sie können jetzt Berichte für URL-Klicks exportieren,  um Microsoft Excel, um ihre Netzwerknachrichten-ID anzeigen zu können, und auf **"Verdict"** klicken, um zu erklären, wo ihre URL auf Datenverkehr geklickt hat. So funktioniert es: Folgen Sie in Threat Management auf der Office 365 Schnellstartleiste dieser Kette:
 
 **Explorer** \> **Phish anzeigen** \> **Klicks** \> **Top URLs or** **URL Top Clicks** \> select any record to open the URL flyout.
 
-Wenn Sie eine URL in der Liste auswählen, wird eine neue Schaltfläche **Exportieren** im Fly-Out-Bereich angezeigt. Verwenden Sie diese Schaltfläche, um Daten zur einfacheren Berichterstellung in eine Excel-Kalkulationstabelle zu verschieben.
+Wenn Sie eine URL in der Liste auswählen, wird eine neue Schaltfläche **Exportieren** im Fly-Out-Bereich angezeigt. Verwenden Sie diese Schaltfläche, um Daten in eine Excel zu verschieben, um die Berichterstellung zu vereinfachen.
 
 Gehen Sie wie folgt vor, um an denselben Ort im Bericht über Echtzeiterkennungen zu kommen:
 
@@ -426,7 +423,7 @@ Gehen Sie wie folgt vor, um an denselben Ort im Bericht über Echtzeiterkennunge
 
 ## <a name="see-malware-detected-in-email-by-technology"></a>Siehe Schadsoftware, die in E-Mails durch Technologie erkannt wurde
 
-Angenommen, Sie möchten Schadsoftware in E-Mails nach Microsoft 365-Technologie sortiert sehen. Verwenden Sie dazu die [E-Mail->-Ansicht](threat-explorer-views.md#email--malware) von Explorer (oder Erkennungen in Echtzeit).
+Angenommen, Sie möchten sehen, dass Schadsoftware in E-Mails nach Microsoft 365 wird. Verwenden Sie dazu die [E-Mail->-Ansicht](threat-explorer-views.md#email--malware) von Explorer (oder Erkennungen in Echtzeit).
 
 1. Wählen Sie im Security & Compliance Center ( <https://protection.office.com> ) die Option Bedrohungsverwaltungs-Explorer  \>  (oder **Echtzeiterkennungen) aus.** (In diesem Beispiel wird Explorer verwendet.)
 
@@ -516,12 +513,12 @@ Angenommen, Sie möchten [E-Mail-Nachrichten](enable-the-report-message-add-in.m
    > [!div class="mx-imgBorder"]
    > ![Vom Benutzer gemeldeter Phish](../../media/EmailUserReportedReportType.png)
 
-Der Bericht wird aktualisiert, um Daten zu E-Mail-Nachrichten zu zeigen, die Personen in Ihrer Organisation als Phishingversuch gemeldet haben. Sie können diese Informationen verwenden, um weitere Analysen durchzuführen und bei Bedarf Ihre [Antiphishingrichtlinien in Microsoft Defender für Office 365 anzupassen.](configure-atp-anti-phishing-policies.md)
+Der Bericht wird aktualisiert, um Daten zu E-Mail-Nachrichten zu zeigen, die Personen in Ihrer Organisation als Phishingversuch gemeldet haben. Sie können diese Informationen verwenden, um weitere Analysen durchzuführen und bei Bedarf Ihre [Antiphishingrichtlinien in Microsoft Defender](configure-atp-anti-phishing-policies.md)für Office 365.
 
 ## <a name="start-automated-investigation-and-response"></a>Starten einer automatisierten Untersuchung und Reaktion
 
 > [!NOTE]
-> Automatisierte Untersuchungs- und Reaktionsfunktionen sind in *Microsoft Defender für Office 365 Plan 2* und Office *365 E5 verfügbar.*
+> Automatisierte Untersuchungs- und Reaktionsfunktionen sind in Microsoft Defender für Office 365 *Plan 2* und *Office 365 E5 verfügbar.*
 
 [Automatisierte Untersuchung und Reaktion können](automated-investigation-response-office.md) Ihrem Sicherheitsteam Zeit und Aufwand für die Untersuchung und Minderung von Cyberangriffen sparen. Zusätzlich zum Konfigurieren von Warnungen, die ein Sicherheitsspielbuch auslösen können, können Sie einen automatisierten Untersuchungs- und Reaktionsprozess aus einer Ansicht im Explorer starten. Weitere Informationen finden Sie [unter Beispiel: Ein Sicherheitsadministrator löst eine Untersuchung aus Explorer aus.](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
 
@@ -530,18 +527,18 @@ Der Bericht wird aktualisiert, um Daten zu E-Mail-Nachrichten zu zeigen, die Per
 Zusätzlich zu den in diesem Artikel beschriebenen Szenarien stehen Ihnen mit Explorer (oder Echtzeiterkennungen) viele weitere Berichterstellungsoptionen zur Verfügung. Lesen Sie die folgenden Artikel:
 
 - [Suchen und Untersuchen von bösartigen E-Mails, die zugestellt wurden](investigate-malicious-email-that-was-delivered.md)
-- [Anzeigen schädlicher Dateien in SharePoint Online, OneDrive und Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
+- [Anzeigen von schädlichen Dateien, die in SharePoint Online, OneDrive und Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [Erhalten Sie eine Übersicht über die Ansichten im Bedrohungs-Explorer (und Echtzeiterkennungen)](threat-explorer-views.md)
 - [Threat Protection-Statusbericht](view-email-security-reports.md#threat-protection-status-report)
 - [Automatisierte Untersuchung und Reaktion in Microsoft 365 Defender](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>Erforderliche Lizenzen und Berechtigungen
 
-Sie müssen [über Microsoft Defender für Office 365 verfügen,](defender-for-office-365.md) um Explorer oder Echtzeiterkennungen verwenden zu können.
+Sie müssen [über Microsoft Defender verfügen, Office 365](defender-for-office-365.md) Explorer oder Echtzeiterkennungen verwenden können.
 
 - Explorer ist in Defender for Office 365 Plan 2 enthalten.
-- Der Bericht über Echtzeiterkennungen ist in Defender for Office 365 Plan 1 enthalten.
-- Planen Sie die Zuweisung von Lizenzen für alle Benutzer, die von Defender für Office 365 geschützt werden sollten. Explorer- und Echtzeiterkennungen zeigen Erkennungsdaten für lizenzierte Benutzer an.
+- Der Bericht "Echtzeiterkennungen" ist in Defender for Office 365 Plan 1 enthalten.
+- Planen Sie die Zuweisung von Lizenzen für alle Benutzer, die von Defender für alle Benutzer geschützt Office 365. Explorer- und Echtzeiterkennungen zeigen Erkennungsdaten für lizenzierte Benutzer an.
 
 Zum Anzeigen und Verwenden von Explorer- oder Echtzeiterkennungen müssen Sie über entsprechende Berechtigungen verfügen, z. B. über berechtigungen, die einem Sicherheitsadministrator oder Einem Sicherheitsleser erteilt wurden.
 
@@ -551,7 +548,7 @@ Zum Anzeigen und Verwenden von Explorer- oder Echtzeiterkennungen müssen Sie ü
   - Sicherheitsadministrator (dies kann im Azure Active Directory Admin Center zugewiesen werden ( <https://aad.portal.azure.com> )
   - Sicherheitsleseberechtigter
 
-- Für Exchange Online muss eine der folgenden Rollen entweder im Exchange Admin Center ( <https://admin.protection.outlook.com/ecp/> ) oder in Exchange Online [PowerShell zugewiesen sein:](/powershell/exchange/exchange-online-powershell)
+- Für Exchange Online müssen Sie eine der folgenden Rollen entweder im Exchange Admin Center ( ) oder Exchange Online <https://admin.protection.outlook.com/ecp/> [PowerShell zugewiesen haben:](/powershell/exchange/exchange-online-powershell)
 
   - Organisationsverwaltung
   - Organisationsverwaltung – nur Leserechte
@@ -565,7 +562,7 @@ Weitere Informationen zu Rollen und Berechtigungen finden Sie in den folgenden R
 
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>Unterschiede zwischen Bedrohungs-Explorer und Echtzeiterkennung
 
-- Der *Bericht über Echtzeiterkennungen* ist in Defender for Office 365 Plan 1 verfügbar. *Der Bedrohungs-Explorer* ist in Defender for Office 365 Plan 2 verfügbar.
+- Der *Bericht "Echtzeiterkennungen"* ist in Defender for Office 365 Plan 1 verfügbar. *Der Bedrohungs-Explorer* ist in Defender for Office 365 Plan 2 verfügbar.
 - Mit dem Bericht über Echtzeiterkennungen können Sie Erkennungen in Echtzeit anzeigen. Der Bedrohungs-Explorer führt dies ebenfalls aus, bietet aber auch zusätzliche Details für einen bestimmten Angriff.
 - Eine *Alle-E-Mail-Ansicht* ist im Bedrohungs-Explorer verfügbar, jedoch nicht im Bericht über Echtzeiterkennungen.
 - Weitere Filterfunktionen und verfügbare Aktionen sind im Bedrohungs-Explorer enthalten. Weitere Informationen finden Sie unter [Microsoft Defender for Office 365 Service Description: Feature availability across Defender for Office 365 plans](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans).

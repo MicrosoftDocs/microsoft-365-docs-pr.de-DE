@@ -19,12 +19,12 @@ description: Administratoren können sich über die Nachrichtenflussberichte inf
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 13871908c3b09660906b9233d23495830cf31ba9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 38beac44af191a027db722ade25ca7fd0e505d9b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206234"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245672"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Anzeigen von Nachrichtenflussberichten im Berichtedashboard im Security & Compliance Center
 
@@ -35,7 +35,7 @@ ms.locfileid: "51206234"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Zusätzlich zu den Nachrichtenflussberichten, [](mail-flow-insights-v2.md) die im Nachrichtenflussdashboard im Security & Compliance Center verfügbar sind, stehen im Dashboard Berichte eine Vielzahl zusätzlicher Nachrichtenflussberichte zur Verfügung, mit deren Hilfe Sie Ihre Microsoft 365-Organisation überwachen können.
+Zusätzlich zu den Nachrichtenflussberichten, [](mail-flow-insights-v2.md) die im Nachrichtenflussdashboard im Security & Compliance Center verfügbar sind, stehen im Dashboard Berichte eine Vielzahl zusätzlicher Nachrichtenflussberichte zur Verfügung, mit deren Hilfe Sie Ihre Organisation Microsoft 365 können.
 
 Wenn Sie über die [erforderlichen Berechtigungen verfügen,](#what-permissions-are-needed-to-view-these-reports)können Sie diese Berichte im [Security & Compliance Center](https://protection.office.com) anzeigen, indem Sie zu **Reports** \> **Dashboard gehen.** Öffnen Sie , um direkt zum Dashboard Berichte zu <https://protection.office.com/insightdashboard> wechseln.
 
@@ -95,29 +95,29 @@ Wenn Sie in einer **Detailtabelle** auf Filter klicken, können Sie einen Datums
 
 Klicken Sie auf Bericht anzeigen, um zur Berichtsansicht **zurück zu wechseln.**
 
-## <a name="exchange-transport-rule-report"></a>Exchange-Transportregelbericht
+## <a name="exchange-transport-rule-report"></a>Exchange Transportregelbericht
 
-Der **Exchange-Transportregelbericht** zeigt die Auswirkungen von Nachrichtenflussregeln (auch als Transportregeln bezeichnet) auf eingehende und ausgehende Nachrichten in Ihrer Organisation.
+Der **Exchange-Transportregelbericht** zeigt die Auswirkungen von Nachrichtenflussregeln (auch als Transportregeln bezeichnet) auf ein- und ausgehende Nachrichten in Ihrer Organisation.
 
-Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie **zu** Berichtsdashboard, und wählen \>  Sie **Exchange-Transport-Regel aus.** Öffnen Sie , um direkt zum Bericht zu <https://protection.office.com/reportv2?id=ETRRuleReport> wechseln.
+Öffnen Sie zum Anzeigen des Berichts das Security  [& Compliance Center,](https://protection.office.com)wechseln Sie zu Berichtsdashboard, und wählen Sie \>  **Exchange Transportregel aus.** Öffnen Sie , um direkt zum Bericht zu <https://protection.office.com/reportv2?id=ETRRuleReport> wechseln.
 
-![Exchange-Transportregel-Widget im Berichtedashboard](../../media/transport-rule-report-widget.png)
+![Exchange-Transportregel-Widget im Dashboard "Berichte"](../../media/transport-rule-report-widget.png)
 
-### <a name="report-view-for-the-exchange-transport-rule-report"></a>Berichtsansicht für den Exchange-Transportregelbericht
+### <a name="report-view-for-the-exchange-transport-rule-report"></a>Berichtsansicht für den Exchange Transportregelbericht
 
 Die folgenden Diagramme sind in der Berichtsansicht verfügbar:
 
-- **Anzeigen von Daten nach: Exchange-Transportregeln** \> **Nach: Richtung aufbrechen:** Dieses  Diagramm zeigt  die Anzahl der eingehenden und ausgehenden Nachrichten, die von Transportregeln betroffen waren.
+- **Anzeigen von Daten nach: Exchange Transportregeln** \> **Nach: Richtung aufbrechen:** Dieses  Diagramm zeigt  die Anzahl der eingehenden und ausgehenden Nachrichten, die von Transportregeln betroffen waren.
 
-- **Anzeigen von Daten nach: Exchange-Transportregeln** \> **Aufbrechen nach: Schweregrad**: Dieses  Diagramm zeigt die Anzahl der Nachrichten mit hohem Schweregrad und mittlerem Schweregrad und niedriger **Schweregrad.** Sie legen den Schweregrad als Aktion in der Regel (**Diese** Regel mit schweregrad oder _SetAuditSeverity überwachen) festgelegt._ Weitere Informationen finden Sie unter [Nachrichtenflussregelaktionen in Exchange Online](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
+- **Anzeigen von Daten nach: Exchange Transportregeln** \> **Aufbrechen nach: Schweregrad**: Dieses  Diagramm zeigt die Anzahl der Nachrichten mit hohem Schweregrad und mittlerem Schweregrad und niedriger **Schweregrad.** Sie legen den Schweregrad als Aktion in der Regel (**Diese** Regel mit schweregrad oder _SetAuditSeverity überwachen) festgelegt._ Weitere Informationen finden Sie unter [Nachrichtenflussregelaktionen in Exchange Online](//Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).
 
-- **Anzeigen von Daten nach: DLP Exchange-Transportregeln** \> **Nach: Richtung** aufbrechen: Dieses  Diagramm zeigt  die Anzahl der eingehenden und ausgehenden Nachrichten, die von DLP-Transportregeln (Data Loss Prevention, Verhinderung von Datenverlust) betroffen waren. Sie können das Diagramm weiter verfeinern, indem Sie die folgenden Optionen auswählen:
+- **Anzeigen von Daten nach: DLP Exchange Transportregeln** \> **Nach: Richtung** aufbrechen: Dieses  Diagramm zeigt  die Anzahl der eingehenden und ausgehenden Nachrichten, die von DLP-Transportregeln (Data Loss Prevention, Verhinderung von Datenverlust) betroffen waren. Sie können das Diagramm weiter verfeinern, indem Sie die folgenden Optionen auswählen:
 
   - **Anzeigen von Daten für: Alle DLP-Transportregeln**
   - **Anzeigen von Daten für: gefährdete Benutzer**
   - **Anzeigen von Daten für: Geringes Inhaltsvolumen, das vom U.S. Patriot Act erkannt wurde**
 
-- **Anzeigen von Daten nach: DLP Exchange-Transportregeln** \> **Nach: Richtung** aufbrechen: Diese  Ansicht zeigt die Anzahl der  Nachrichten mit hohem schweregrad und mittlerem Schweregrad und niedriger Schweregrad, die von DLP-Transportregeln betroffen waren.  Sie können das Diagramm weiter verfeinern, indem Sie die folgenden Optionen auswählen:
+- **Anzeigen von Daten nach: DLP Exchange Transportregeln** \> **Nach: Richtung** aufbrechen: Diese  Ansicht zeigt die Anzahl der  Nachrichten mit hohem schweregrad und mittlerem Schweregrad und niedriger Schweregrad, die von DLP-Transportregeln betroffen waren.  Sie können das Diagramm weiter verfeinern, indem Sie die folgenden Optionen auswählen:
 
   - **Anzeigen von Daten für: Alle DLP-Transportregeln**
   - **Anzeigen von Daten für: gefährdete Benutzer**
@@ -129,13 +129,13 @@ Wenn Sie **in** einer Berichtsansicht auf Filter klicken, können Sie die Ergebn
 - Richtungswerte
 - Schweregradwerte
 
-![Berichtsansicht im Exchange-Transportregelbericht](../../media/transport-rule-report-report-view.png)
+![Berichtsansicht im Exchange Transportregelbericht](../../media/transport-rule-report-report-view.png)
 
-### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Detailtabelle für den Exchange-Transportregelbericht
+### <a name="details-table-view-for-the-exchange-transport-rule-report"></a>Detailtabelle für den bericht Exchange Transportregel
 
 Wenn Sie auf **Detailtabelle anzeigen klicken,** hängen die angezeigten Informationen von dem Diagramm ab, das Sie sich angeschaut haben:
 
-- **Anzeigen von Daten nach: Exchange-Transport-Regeln**:
+- **Daten anzeigen nach: Exchange Transportregeln**:
 
   - **Date**
   - **Transportregel**
@@ -145,7 +145,7 @@ Wenn Sie auf **Detailtabelle anzeigen klicken,** hängen die angezeigten Informa
   - **Schweregrad**
   - **Richtung**
 
-- **Anzeigen von Daten nach: DLP Exchange-Transportregeln**:
+- **Anzeigen von Daten nach: DLP Exchange Transportregeln**:
 
   - **Date**
   - **DLP-Richtlinie**
@@ -166,7 +166,7 @@ Klicken Sie auf Bericht anzeigen, um zur Berichtsansicht **zurück zu wechseln.*
 
 ## <a name="forwarding-report"></a>Weiterleitungsbericht
 
-Der **Weiterleitungsbericht zeigt** die automatisch weitergeleiteten Nachrichten Ihrer Organisation an externe Domänen aus Exchange Online-Postfächern an. Weitergeleitete Nachrichten können ein Sicherheits- oder Compliancerisiko darstellen und möglicherweise auf ein gefährdetes Konto hinweisen.
+Der **Weiterleitungsbericht zeigt** die automatisch weitergeleiteten Nachrichten Ihrer Organisation an externe Domänen aus Exchange Online Postfächern an. Weitergeleitete Nachrichten können ein Sicherheits- oder Compliancerisiko darstellen und möglicherweise auf ein gefährdetes Konto hinweisen.
 
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie **zu** Berichtsdashboard, und wählen \>  Sie **Weiterleitungsbericht aus.** Öffnen Sie , um direkt zum Bericht zu <https://protection.office.com/reportv2?id=MailFlowForwarding> wechseln.
 
@@ -214,7 +214,7 @@ Klicken Sie auf Bericht anzeigen, um zur Berichtsansicht **zurück zu wechseln.*
 
 ## <a name="mailflow-status-report"></a>E-Mailflow-Statusbericht
 
-Der **E-Mailflow-Statusbericht** ähnelt dem Bericht "Gesendete und empfangene E-Mail", [](#sent-and-received-email-report)mit zusätzlichen Informationen zu E-Mails, die am Edge zulässig oder blockiert sind. Dies ist der einzige Bericht, der Edgeschutzinformationen enthält und zeigt, wie viele E-Mails blockiert werden, bevor sie von Exchange Online Protection (EOP) zur Auswertung in den Dienst zugelassen werden. Es ist wichtig zu wissen, dass eine Nachricht, wenn sie an fünf Empfänger gesendet wird, als fünf verschiedene Nachrichten und nicht als eine Nachricht gezählt wird.
+Der **E-Mailflow-Statusbericht** ähnelt dem Bericht "Gesendete und empfangene E-Mail", [](#sent-and-received-email-report)mit zusätzlichen Informationen zu E-Mails, die am Edge zulässig oder blockiert sind. Dies ist der einzige Bericht, der Edgeschutzinformationen enthält und zeigt, wie viele E-Mails blockiert werden, bevor sie zur Auswertung durch EOP (EOP) in den Dienst zugelassen Exchange Online Protection werden. Es ist wichtig zu wissen, dass eine Nachricht, wenn sie an fünf Empfänger gesendet wird, als fünf verschiedene Nachrichten und nicht als eine Nachricht gezählt wird.
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie **zu** Berichtsdashboard, und wählen Sie \>  **E-Mailflow-Statusbericht aus.** Öffnen Sie , um direkt zum **Nachrichtenflussstatusbericht zu** <https://protection.office.com/mailflowStatusReport> wechseln.
 
 ![E-Mailflow-Statusbericht-Widget im Berichtsdashboard](../../media/mail-flow-status-report-widget.png)
@@ -264,9 +264,9 @@ Wenn Sie auf **Kategorie auswählen klicken,** können Sie aus den folgenden Wer
 
 Für die Detailansicht können Sie Daten nur für einen Tag exportieren. Wenn Sie Also Daten für 7 Tage exportieren möchten, müssen Sie 7 verschiedene Exportaktionen ausführen.
 
-Jede exportierte CSV-Datei ist auf 150.000 Zeilen beschränkt. Wenn die Daten für den Tag mehr als 150.000 Zeilen enthalten, werden mehrere CSV-Dateien erstellt.
+Jede exportierte .csv ist auf 150.000 Zeilen beschränkt. Wenn die Daten für den Tag mehr als 150.000 Zeilen enthalten, werden mehrere .csv erstellt.
 
-![Typansicht im Mailflow-Statusbericht ](../../media/mail-flow-status-report-type-view.png)
+![Typansicht im Mailflow-Statusbericht](../../media/mail-flow-status-report-type-view.png)
 
 ### <a name="direction-view-for-the-mailflow-status-report"></a>Richtungsansicht für den Mailflow-Statusbericht
 
@@ -284,9 +284,9 @@ Die **Option Kategorie auswählen für weitere Details,** die auswahl- und verha
 
 Für die Detailansicht können Sie Daten nur für einen Tag exportieren. Wenn Sie Also Daten für 7 Tage exportieren möchten, müssen Sie 7 verschiedene Exportaktionen ausführen.
 
-Jede exportierte CSV-Datei ist auf 150.000 Zeilen beschränkt. Wenn die Daten für den Tag mehr als 150.000 Zeilen enthalten, werden mehrere CSV-Dateien erstellt.
+Jede exportierte .csv ist auf 150.000 Zeilen beschränkt. Wenn die Daten für den Tag mehr als 150.000 Zeilen enthalten, werden mehrere .csv erstellt.
 
-![Richtungsansicht im Mailflow-Statusbericht ](../../media/mail-flow-status-report-direction-view.png)
+![Richtungsansicht im Mailflow-Statusbericht](../../media/mail-flow-status-report-direction-view.png)
 
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>Trichteransicht für den Mailflow-Statusbericht
 
@@ -317,9 +317,9 @@ Dieses Diagramm zeigt die E-Mail-Anzahl, die nach folgendem Geordneten organisie
 - **E-Mail nach Datei- und URL-Detonation**<sup>1</sup>
 - **E-Mails, die nach der Zustellung als gutartig erkannt wurden (URL-Klickzeitschutz)**
 
-<sup>Nur 1</sup> Defender für Office 365
+<sup>1</sup> Defender für Office 365
 
-Klicken Sie auf den Wert in der Diagrammlegende, um die von EOP oder Defender für Office 365 gefilterte E-Mail separat anzeigen zu können.
+Klicken Sie auf den Wert in der Diagrammlegende, um die von EOP oder Defender für Office 365 gefilterte E-Mail-Nachricht separat anzeigen zu können.
 
 Die Datentabelle enthält die folgenden Informationen in absteigender Datumsreihenfolge:
 
@@ -335,10 +335,10 @@ Die Datentabelle enthält die folgenden Informationen in absteigender Datumsreih
   - **Antis spoof**: Nachrichten, die aufgrund der Nachricht gefiltert wurden, die versucht, eine Domäne zu spoofen, zu der der Empfänger gehört, oder eine Domäne, die der Nachrichtensender nicht besitzt.
 - **Antispam, Massen-E-Mail-Filterung**:
   - Massen-E-Mail-Filterung: Nachrichten, die aufgrund eines Versuches gefiltert wurden, Massen-E-Mails an die Empfänger zu senden.
-- Identitätswechsel von Benutzern und Domänen **(Defender für Office 365)**:
+- Identitätswechsel von Benutzern und Domänen **(Defender for Office 365)**:
   - **Benutzerwechsel:** Nachrichten, die aufgrund eines Versuches gefiltert wurden, einen Benutzer (Nachrichtensender) zu imitieren, der in den Identitätswechselschutzeinstellungen einer Antiphishingrichtlinie definiert ist.
   - **Domänenwechsel:** Nachrichten, die aufgrund eines Versuches gefiltert wurden, eine Domäne zu imitieren, die in den Identitätswechselschutzeinstellungen einer Antiphishingrichtlinie definiert ist.
-- **Datei- und URL-Detonation (Defender für Office 365)**:
+- **Datei- und URL-Detonation (Defender for Office 365)**:
   - **Dateidetonation:** Nachrichten, die nach einer Richtlinie für sichere Anlagen gefiltert werden.
   - **URL-Detonation:** Nachricht, die nach einer Richtlinie für sichere Links gefiltert wurde.
 - **Post-Delivery Protection und ZAP (ATP) oder ZAP (EOP):** ZAP gibt null Stunden automatisches Löschen an.
@@ -352,11 +352,11 @@ Nachdem Sie unter **Optionen** auf **Exportieren** geklickt haben, können Sie e
 - **Zusammenfassung (mit Daten für die letzten 90 Tage)**
 - **Details (mit Daten für die letzten 30 Tage)**
 
-Wählen Sie unter **Datum** einen Bereich aus, und klicken Sie dann auf **Übernehmen**. Daten für die aktuellen Filter werden in eine CSV-Datei exportiert.
+Wählen Sie unter **Datum** einen Bereich aus, und klicken Sie dann auf **Übernehmen**. Daten für die aktuellen Filter werden in eine datei .csv exportiert.
 
-Jede exportierte CSV-Datei ist auf 150.000 Zeilen beschränkt. Wenn die Daten mehr als 150.000 Zeilen enthalten, werden mehrere CSV-Dateien erstellt.
+Jede exportierte .csv ist auf 150.000 Zeilen beschränkt. Wenn die Daten mehr als 150.000 Zeilen enthalten, werden mehrere .csv erstellt.
 
- ![Trichteransicht im Mailflow-Statusbericht ](../../media/mail-flow-status-report-funnel-view.png)
+ ![Trichteransicht im Mailflow-Statusbericht](../../media/mail-flow-status-report-funnel-view.png)
 
 ### <a name="tech-view-for-the-mailflow-status-report"></a>Tech-Ansicht für den Mailflow-Statusbericht
 
@@ -386,7 +386,7 @@ Dieses Diagramm zeigt Nachrichten, die in die folgenden Kategorien unterteilt si
 - **Keine Spam-** und  **Spamnachrichten**
 - **Nicht schädliche E-Mails,** **Erkennung sicherer** <sup>\*</sup> Links und **ZAP**
 
-<sup>\*</sup> Defender für Office 365
+<sup>\*</sup>Defender für Office 365
 
 Wenn Sie den Mauszeiger auf eine Kategorie im Diagramm zeigen, wird die Anzahl der Nachrichten in dieser Kategorie angezeigt.
 
@@ -413,11 +413,11 @@ Wenn Sie auf **Exportieren** klicken, können Sie unter **Optionen** einen der f
 - **Zusammenfassung (mit Daten für die letzten 90 Tage)**
 - **Details (mit Daten für die letzten 30 Tage)**
 
-Wählen Sie unter **Datum** einen Bereich aus, und klicken Sie dann auf **Übernehmen**. Daten für die aktuellen Filter werden in eine CSV-Datei exportiert.
+Wählen Sie unter **Datum** einen Bereich aus, und klicken Sie dann auf **Übernehmen**. Daten für die aktuellen Filter werden in eine datei .csv exportiert.
 
-Jede exportierte CSV-Datei ist auf 150.000 Zeilen beschränkt. Wenn die Daten mehr als 150.000 Zeilen enthalten, werden mehrere CSV-Dateien erstellt.
+Jede exportierte .csv ist auf 150.000 Zeilen beschränkt. Wenn die Daten mehr als 150.000 Zeilen enthalten, werden mehrere .csv erstellt.
 
- ![Tech-Ansicht im Mailflow-Statusbericht ](../../media/mail-flow-status-report-Tech-view.png)
+ ![Tech-Ansicht im Mailflow-Statusbericht](../../media/mail-flow-status-report-Tech-view.png)
 
 ## <a name="sent-and-received-email-report"></a>Gesendeter und empfangener E-Mail-Bericht
 
@@ -440,7 +440,7 @@ Die folgenden Diagramme sind in der Berichtsansicht verfügbar:
   - **Schadsoftware (Anti-Malware)** (EOP)
   - **Spamerkennungen**
   - **Regelmeldungen**
-  - **Erweiterte Schadsoftware** (Microsoft Defender für Office 365)
+  - **Erweiterte Schadsoftware** (Microsoft Defender for Office 365)
 
   Wenn Sie den Mauszeiger auf einen Tag (Datenpunkt) im Diagramm zeigen, werden Details für den Tag angezeigt.
 

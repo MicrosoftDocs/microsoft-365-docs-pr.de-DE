@@ -1,6 +1,6 @@
 ---
 title: Microsoft-Sicherheitsbewertung
-description: Beschreibt microsoft Secure Score im Microsoft 365 Security Center, wie Sie Ihre Sicherheitslage verbessern und was Sicherheitsadministratoren erwarten können.
+description: Beschreibt microsoft Secure Score im Microsoft 365 Security Center, wie Sie Ihre Sicherheitslage verbessern und welche Sicherheitsadministratoren erwarten können.
 keywords: Microsoft Secure Score, Secure Score, Office 365 Secure Score, Microsoft Security Score, microsoft 365 Security Center, Verbesserungsmaßnahmen
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 19b83fe7dd733bb8a0668039d4df2b692a398ad4
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 4a2c220cab15751671b9b38c3bb2fda3db12c9e1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570463"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245377"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -34,7 +34,7 @@ ms.locfileid: "51570463"
 
 Die Microsoft-Sicherheitsbewertung ist ein Maßstab für den Sicherheitsstatus eines Unternehmens. Eine höhere Zahl bedeutet, dass mehr Verbesserungsmaßnahmen vorgenommen wurden. Sie finden sie unter https://security.microsoft.com/securescore im [Microsoft 365 Security Center ](overview-security-center.md).
 
-Wenn Sie den Empfehlungen der Sicherheitsbewertung folgen, können Sie Ihre Organisation vor Bedrohungen schützen. Über ein zentrales Dashboard im Microsoft 365 Security Center können Organisationen die Sicherheit ihrer Microsoft 365-Identitäten, Apps und Geräte überwachen und arbeiten.
+Wenn Sie den Empfehlungen der Sicherheitsbewertung folgen, können Sie Ihre Organisation vor Bedrohungen schützen. Über ein zentrales Dashboard im Microsoft 365 Security Center können Organisationen die Sicherheit ihrer Microsoft 365, Apps und Geräte überwachen und arbeiten.
 
 Sicherheitsbewertung hilft Organisationen auf diese Arten:  
 
@@ -44,7 +44,7 @@ Sicherheitsbewertung hilft Organisationen auf diese Arten:
 
 Organisationen erhalten Zugriff auf zuverlässige Visualisierungen von Metriken und Trends, die Integration in andere Microsoft-Produkte, einen Vergleich mit ähnlichen Organisationen und vieles mehr. Die Bewertung zeigt auch, wenn Lösungen von Drittanbietern empfohlene Maßnahmen behandelt haben.
 
-![Startseite der Sicherheitsbewertung](../../media/secure-score/secure-score-homepage-new.png)
+![Startseite der Sicherheitsbewertung](../../media/secure-score/secure-score-home-page.png)
 
 ## <a name="how-it-works"></a>Funktionsweise
 
@@ -82,13 +82,13 @@ Derzeit gibt es Empfehlungen für die folgenden Produkte:
 - Microsoft Defender für Endpunkt
 - Microsoft Defender for Identity
 - Cloud-App-Sicherheit
-- Microsoft Teams
+- Microsoft Teams
 
 Empfehlungen für andere Sicherheitsprodukte werden in Kürze verfügbar sein. Die Empfehlungen umfassen nicht alle Angriffsflächen, die mit jedem Produkt verknüpft sind, aber sie sind eine gute Basis. Sie können die Verbesserungsmaßnahmen auch als „über Drittanbieter abgedeckt“ oder „ durch alternative Korrektur abgedeckt“ markieren.
 
 ### <a name="security-defaults"></a>Sicherheitsstandards
 
-Microsoft Secure Score hat Verbesserungsmaßnahmen aktualisiert, um Sicherheitseinstellungen [in Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)zu unterstützen, die es einfacher machen, Ihre Organisation mit vorkonfigurierten Sicherheitseinstellungen für häufige Angriffe zu schützen.
+Microsoft Secure Score hat verbesserungsaktionen aktualisiert, um Sicherheitseinstellungen [in Azure Active Directory](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)zu unterstützen, die es ihnen erleichtern, Ihre Organisation mit vordefinierten Sicherheitseinstellungen für häufige Angriffe zu schützen.
 
 Wenn Sie Sicherheitseinstellungen aktivieren, erhalten Sie vollständige Punkte für die folgenden Verbesserungsmaßnahmen:
 

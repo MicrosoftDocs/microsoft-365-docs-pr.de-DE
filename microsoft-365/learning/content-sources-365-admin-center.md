@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Erfahren Sie, wie Sie Lerninhaltsquellen für Microsoft Viva Learning (Preview) im Microsoft 365 konfigurieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a1bbe65db9dee028f57849de8a5538c996c3e2a4
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: b2e6ab6306db9a5ac9d91226431e5876cc244499
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100973"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245420"
 ---
 # <a name="configure-learning-content-sources-for-microsoft-viva-learning-preview-in-the-microsoft-365-admin-center"></a>Konfigurieren von Lerninhaltsquellen für Microsoft Viva Learning (Vorschau) im Microsoft 365 Admin Center
 
@@ -35,7 +35,7 @@ Der Administrator wählt aus, welche anderen Lerninhaltsquellen (z. B. SharePoin
 > [!NOTE]
 >  Benutzer melden sich bei Nicht-Microsoft- und LinkedIn Learning-Pro in einem Browser oder eingebetteten Viewer an. Dieses konfigurierte Lernen unterliegt den separaten Lizenz-, Datenschutz- und Dienstbedingungen zwischen Ihrer Organisation und dem Drittanbieter und nicht den Bedingungen von Viva Learning (Preview). Vergewissern Sie sich vor der Auswahl dieser Art von Lernprozess, dass eine Vereinbarung für Ihre Organisation und Ihre Benutzer vor sich geht.
 
-## <a name="assign-the-knowledge-admin-role-optional"></a>Zuweisen der Rolle "Wissensadministrator" [Optional]
+## <a name="assign-the-knowledge-admin-role-optional"></a>Zuweisen der Rolle "Wissensadministrator" (optional)
 
 Sie müssen ein globaler Administrator Microsoft 365, um diese Aufgaben ausführen zu können.
 
@@ -78,11 +78,11 @@ Führen Sie die folgenden Schritte aus, um Einstellungen für Lerninhaltsquellen
 
 1.  Wechseln Sie in der linken Navigation des Microsoft 365 Admin Center zu **Einstellungen**  >  **Organisationseinstellungen**.
 
-2.  Wählen Sie **auf der** Seite Organisationseinstellungen auf der Registerkarte **Dienste** die Option **Lern-App (Vorschau)** aus.
+2.  Wählen Sie **auf der** Seite Organisationseinstellungen auf der Registerkarte **Dienste** die Option Viva **Learning (Vorschau)** aus.
 
      ![Einstellungen seite im Microsoft 365 Admin Center mit der aufgelisteten Lern-App.](../media/learning/learning-sharepoint-configure1.png)
 
-3.  Wählen Sie **im Bereich Lern-App (Vorschau)** die Lerninhaltsquellen aus, die Sie für die Organisation konfigurieren möchten, und wählen Sie dann **Speichern aus.**
+3.  Wählen Sie **im Bereich Viva Learning (Vorschau)** die Lerninhaltsquellen aus, die Sie für die Organisation konfigurieren möchten, und wählen Sie dann Speichern **aus.**
 
      ![Lernbereich im Microsoft 365 Admin Center mit Optionen für Inhaltsquellen.](../media/learning/learning-sharepoint-configure2.png)
 

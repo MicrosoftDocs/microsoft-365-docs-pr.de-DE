@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: b3fef3479fa2d36806e6657b31f5152c54b9251f
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 1c61e69b5c8d414ab229fa8bf64eb657a6e40304
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764999"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245960"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Häufig gestellte Fragen zur Geräteerkennung
 
@@ -49,16 +49,20 @@ Sie haben die Möglichkeit, die Geräteerkennung über die Seite Erweiterte [Fea
  In diesem Modus können in Microsoft Defender for Endpoint integrierte Endpunkte beobachtete Geräte im Netzwerk aktiv austesten, um die gesammelten Daten (mit einer vernachlässigbaren Menge an Netzwerkdatenverkehr) zu bereichern. Dieser Modus wird dringend empfohlen, um einen zuverlässigen und zusammenhängenden Gerätebestand zu erstellen. Wenn Sie diesen Modus deaktivieren und den Basisermittlungsmodus auswählen, erhalten Sie wahrscheinlich nur eingeschränkte Sichtbarkeit nicht verwalteter Endpunkte in Ihrem Netzwerk.
 
 ## <a name="can-i-control-which-devices-perform-standard-discovery"></a>Kann ich steuern, welche Geräte die Standarderkennung ausführen?
- Sie können die Liste der Geräte anpassen, die zum Ausführen der Standardermittlung verwendet werden. Sie können entweder die Standarderkennung auf allen integrierten Geräten aktivieren, die diese Funktion unterstützen (derzeit nur Windows 10-Geräte), oder Sie können eine Teilmenge oder Teilmenge Ihrer Geräte auswählen, indem Sie ihre Gerätetags angeben. In diesem Fall werden alle anderen Geräte so konfiguriert, dass nur die Grundlegende Ermittlung ausgeführt wird. Die Konfiguration ist auf der Seite Geräteermittlungseinstellungen verfügbar.
+ Sie können die Liste der Geräte anpassen, die zum Ausführen der Standardermittlung verwendet werden. Sie können entweder die Standardermittlung auf allen integrierten Geräten aktivieren, die diese Funktion auch unterstützen (derzeit nur Windows 10 Geräten), oder Sie können eine Teilmenge oder Teilmenge Ihrer Geräte auswählen, indem Sie ihre Gerätetags angeben. In diesem Fall werden alle anderen Geräte so konfiguriert, dass nur die Grundlegende Ermittlung ausgeführt wird. Die Konfiguration ist auf der Seite Geräteermittlungseinstellungen verfügbar.
+
+## <a name="can-i-exclude-unmanaged-devices-from-the-device-inventory-list"></a>Kann ich nicht verwaltete Geräte aus der Gerätebestandsliste ausschließen?
+Ja, Sie können Filter anwenden, um nicht verwaltete Geräte aus der Gerätebestandsliste auszuschließen. Sie können auch die Spalte Onboardingstatus in API-Abfragen verwenden, um nicht verwaltete Geräte herausfiltern. 
+
 
 ## <a name="which-onboarded-devices-can-perform-discovery"></a>Welche integrierten Geräte können die Ermittlung durchführen?
- Integrierte Geräte, die unter Windows 10, Version 1809 oder höher ausgeführt werden, können eine Ermittlung durchführen.
+ Onboarded devices running on Windows 10 version 1809 or later can perform discovery.
 
 ## <a name="what-happens-if-my-onboarded-devices-is-connected-to-my-home-network-or-to-public-access-point"></a>Was geschieht, wenn meine integrierten Geräte mit meinem Heimnetzwerk oder mit dem öffentlichen Zugriffspunkt verbunden sind?
- Das Ermittlungsmodul unterscheidet zwischen Netzwerkereignissen, die im Unternehmensnetzwerk empfangen werden, und außerhalb des Unternehmensnetzwerks. Durch korrelieren von Netzwerkbezeichnern für alle Mandantenclients werden Ereignisse zwischen Ereignissen unterschieden, die von privaten Netzwerken und Unternehmensnetzwerken empfangen wurden. Private Netzwerkgeräte werden nicht im Bestand aufgeführt und nicht aktiv untersucht.
+ Das Ermittlungsmodul unterscheidet zwischen Netzwerkereignissen, die im Unternehmensnetzwerk empfangen werden, und außerhalb des Unternehmensnetzwerks. Durch korrelieren von Netzwerkbezeichnern für alle Mandantenclients werden Ereignisse zwischen Ereignissen unterschieden, die von privaten Netzwerken und Unternehmensnetzwerken empfangen wurden. Wenn die Mehrzahl der Geräte im Netzwerk beispielsweise berichtet, dass sie mit demselben Netzwerknamen verbunden sind, mit demselben Standardgateway und der gleichen DHCP-Serveradresse, kann davon ausgegangen werden, dass es sich bei diesem Netzwerk wahrscheinlich um ein Unternehmensnetzwerk handelt. Private Netzwerkgeräte werden nicht im Bestand aufgeführt und nicht aktiv untersucht.
 
 ## <a name="what-protocols-are-you-capturing-and-analyzing"></a>Welche Protokolle erfassen und analysieren Sie?
- Standardmäßig erfassen und analysieren alle integrierten Geräte, die unter Windows 10, Version 1809 oder höher ausgeführt werden, die folgenden Protokolle: ARP, CDP, DHCP, DHCPv6, IP (Header), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (Header), UDP (Header), WSD
+ Standardmäßig erfassen und analysieren alle integrierten Geräte, die auf Windows 10 Version 1809 oder höher ausgeführt werden: ARP, CDP, DHCP, DHCPv6, IP (Header), LLDP, LLMNR, mDNS, MNDP, NBNS, SSDP, TCP (Header), UDP (Header), WSD
 
 ## <a name="which-protocols-do-you-use-for-active-probing-in-standard-discovery"></a>Welche Protokolle verwenden Sie für aktives Sondieren in der Standarderkennung?
  Wenn ein Gerät für die Ausführung der Standardermittlung konfiguriert ist, werden verfügbar gemachte Dienste mithilfe der folgenden Protokolle untersucht: ARP, FTP, HTTP, ICMP, LLMNR, NBNS, RDP, SIP, SMTP, SNMP, SSH, Telnet, UPNP, WSD, SMB, NBSS, IPP, PJL

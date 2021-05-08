@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365-Berichte im Admin Center – Formularaktivität
+title: Microsoft 365 Berichte im Admin Center – Formularaktivität
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -14,28 +14,27 @@ ms.collection:
 - Adm_O365
 - Adm_NonTOC
 ms.custom: AdminSurgePortfolio
-ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - BCS160
 - MST160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie einen Microsoft Forms-Aktivitätsbericht mithilfe des Microsoft 365 Reports-Dashboards im Microsoft 365 Admin Center erhalten.
-ms.openlocfilehash: f4cd021003ad9d9bca4f986a33f49e62e2df1889
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Erfahren Sie, wie Sie einen Microsoft Forms-Aktivitätsbericht mithilfe des Dashboards Microsoft 365 Berichte im Microsoft 365 erhalten.
+ms.openlocfilehash: 977ee360d91df0b15e25e86d052d852f9acafe6c
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579686"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52242324"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365-Berichte im Admin Center – Formularaktivität
+# <a name="microsoft-365-reports-in-the-admin-center---forms-activity"></a>Microsoft 365 Berichte im Admin Center – Formularaktivität
 
-Das Microsoft 365 **Reports-Dashboard** zeigt Ihnen die Übersicht über die Aktivitäten in den Produkten in Ihrer Organisation. Sie können Drilldowns zu Einzelberichten auf Produktebene ausführen und auf diese Weise genauere Einblicke in die Aktivitäten innerhalb der einzelnen Produkte erhalten. Sehen Sie sich die [Übersicht zu Berichten](activity-reports.md) an.
+Das Microsoft 365 **-Dashboard** zeigt Ihnen die Übersicht über die Aktivitäten in den Produkten in Ihrer Organisation. Sie können Drilldowns zu Einzelberichten auf Produktebene ausführen und auf diese Weise genauere Einblicke in die Aktivitäten innerhalb der einzelnen Produkte erhalten. Sehen Sie sich die [Übersicht zu Berichten](activity-reports.md) an.
   
 Beispielsweise können Sie die Aktivität jedes Benutzers verstehen, der für die Verwendung von Microsoft Forms lizenziert ist, indem Sie sich deren Interaktion mit Formularen anschauen. Es hilft Ihnen auch, den Grad der Zusammenarbeit zu verstehen, indem Sie sich die Anzahl der erstellten Und Formulare anschauen, auf die der Benutzer geantwortet hat.
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, globaler Leser oder Berichtleser in Microsoft 365 oder ein Exchange-, SharePoint-, Teams-Dienst-, Teams Communications- oder Skype for Business-Administrator sein, um Berichte anzeigen zu können.  
+> Sie müssen ein globaler Administrator, globaler Leser oder Berichtleser in Microsoft 365 oder ein Exchange-, SharePoint-, Teams-Dienst-, Teams-Kommunikations- oder Skype for Business-Administrator sein, um Berichte anzeigen zu können.  
  
 ## <a name="how-to-get-to-the-forms-activity-report"></a>So erhalten Sie den Formularaktivitätsbericht
 
@@ -44,7 +43,7 @@ Beispielsweise können Sie die Aktivität jedes Benutzers verstehen, der für di
   
 ## <a name="interpret-the-forms-activity-report"></a>Interpretieren des Formularaktivitätsberichts
 
-Sie können die Aktivitäten im Formularbericht anzeigen, indem Sie die Registerkarte **Aktivität** auswählen.<br/>![Microsoft 365-Berichte – Microsoft Forms-Aktivitätsbericht.](../../media/275fb0a1-b9d9-4233-8aaf-e7df73cc705f.png)
+Sie können die Aktivitäten im Formularbericht anzeigen, indem Sie die Registerkarte **Aktivität** auswählen.<br/>![Microsoft 365 - Microsoft Forms-Aktivitätsbericht.](../../media/275fb0a1-b9d9-4233-8aaf-e7df73cc705f.png)
 
 Wählen **Sie Spalten auswählen** aus, um Spalten aus dem Bericht hinzuzufügen oder zu entfernen.  <br/> ![Formularaktivitätsbericht – Spalten auswählen](../../media/0c9b0b69-5dc7-43ea-8e2c-54407b6ce2ab.png)
 
@@ -53,7 +52,7 @@ Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren
 |Element|Beschreibung|
 |:-----|:-----|
 |**Metrik**|**Definition**|
-|Username  <br/> |Die E-Mail-Adresse des Benutzers, der die Aktivität in Microsoft Forms ausgeführt hat.  <br/> |
+|Benutzername  <br/> |Die E-Mail-Adresse des Benutzers, der die Aktivität in Microsoft Forms ausgeführt hat.  <br/> |
 |Datum der letzten Aktivität (UTC)  <br/> |Das letzte Datum, an dem eine Formularaktivität vom Benutzer für den ausgewählten Datumsbereich ausgeführt wurde. Um Aktivitäten anzuzeigen, die an einem bestimmten Datum stattfanden, wählen Sie das Datum direkt im Diagramm aus.<br/><br/>Dadurch wird die Tabelle so gefiltert, dass Dateiaktivitätsdaten nur für Benutzer angezeigt werden, die die Aktivität an diesem bestimmten Tag ausgeführt haben.  <br/> |
 |Anzahl der erstellten Formulare  <br/> |Die Anzahl der formulare, die der Benutzer erstellt hat.   <br/> |
 |Anzahl der beantworteten Formulare  <br/> |Die Anzahl der Formulare, auf die der Benutzer Antworten übermittelt hat.|

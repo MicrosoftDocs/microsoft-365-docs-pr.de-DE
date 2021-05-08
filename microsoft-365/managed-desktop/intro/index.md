@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 73ce64bd83b475cc7cc0f78b6ac4a06683264144
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 36745a0aafb70e7921c19db7c28984dcca1e2a63
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445554"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245528"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Was ist Microsoft Managed Desktop?
 
@@ -57,7 +57,7 @@ Ihre IT-Administratoren profitieren von folgenden Funktionen:
 ## <a name="device-management"></a>Geräteverwaltung
 Microsoft Managed Desktop übernimmt die Verwaltung registrierter Geräte und der von ihnen verwendeten Microsoft-Software.
 
-- **Hardware:** Anstatt dass Ihre IT-Abteilung Geräte (und deren Treiber) recherchieren und testen muss, werden bestimmte Geräte von Microsoft Managed Desktop sorgfältig getestet. Dies führt zu einer kuratierten [Liste von Geräten](../service-description/device-list.md), die die Leistungsanforderungen auf Unternehmensebene erfüllen und mit denen garantiert funktionieren Bedienung. Sie können Geräte entweder selbst beziehen (oder mit einem Partner zusammenarbeiten) oder bereits vorhandene Geräte wiederverwenden, sofern sie auf der genehmigten Liste stehen. Das Registrieren von Geräten ist einfach und unkompliziert. Bevor sie bereitgestellt werden, können Sie auch bestimmte Aspekte der Geräteerfahrung für Ihre Benutzer [anpassen](../working-with-managed-desktop/config-setting-overview.md).
+- **Hardware:** Anstatt dass Ihre IT-Abteilung recherchieren und herausfinden muss, ob ein Gerät mit dem Dienst kompatibel ist, haben wir spezifische Hardware- und Softwareanforderungen, Tools und Prozesse zur Verfügung gestellt, um die Auswahl zu beschleunigen, damit Sie Geräte mit Konfidenz auswählen können. Sie können empfohlene Geräte finden, indem Sie auf der Website [Windows 10 Pro-Geräte für Unternehmen einkaufen](https://www.microsoft.com/windowsforbusiness/view-all-devices) nach Microsoft Managed Desktop filtern. Sie können Geräte entweder selbst beziehen (oder mit einem Partner zusammenarbeiten) oder bereits vorhandene Geräte wiederverwenden, sofern sie auf der genehmigten Liste stehen. Das Registrieren von Geräten ist einfach und unkompliziert. Bevor sie bereitgestellt werden, können Sie auch bestimmte Aspekte der Geräteerfahrung für Ihre Benutzer [anpassen](../working-with-managed-desktop/config-setting-overview.md).
 
 - **Updates:** Microsoft Managed Desktop richtet alle Aspekte von [Bereitstellungsgruppen](../service-description/updates.md) für Windows 10-Qualitäts- und Funktionsupdates, Treiber, Firmware, Antivirendefinitionen und Microsoft 365 Apps für Unternehmensupdates ein und verwaltet sie. Dies umfasst umfangreiche Tests und Überprüfungen aller Aktualisierungen, um sicherzustellen, dass registrierte Geräte immer auf dem neuesten Stand sind, und um Minimierungen von Störungen, wodurch Ihre IT-Abteilung von dieser laufenden Aufgabe befreit wird.
 
@@ -66,7 +66,7 @@ Microsoft Managed Desktop übernimmt die Verwaltung registrierter Geräte und de
 
 ## <a name="device-monitoring"></a>Geräteüberwachung
 
-Wir helfen bei der Aufrechterhaltung der Sicherheit Ihrer Geräte mit einem speziellen Sicherheits-Operations-Center, das Ihre Geräte überwacht und Daten aus den speziellen Bedrohungen verwendet, die Microsoft jeden Monat analysiert. Diese Sicherheitsfunktionen sind integriert, anstatt später hinzugefügt zu werden.
+Wir helfen bei der Aufrechterhaltung der Sicherheit Ihrer Geräte mit einem speziellen Security Operations Center, das Ihre Geräte überwacht und Daten aus den einzigartigen Bedrohungen verwendet, die Microsoft jeden Monat analysiert. Diese Sicherheitsfunktionen sind eingebaut, anstatt später hinzugefügt zu werden.
 
 Wir überwachen auch den Gerätezustand und geben Ihnen Einblicke in die Geräteleistung. Weitere Informationen finden Sie unter [Microsoft Managed Desktop-Betrieb und -Überwachung](../service-description/operations-and-monitoring.md).
 

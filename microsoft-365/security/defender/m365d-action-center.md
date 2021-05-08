@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: edf809c5fbc257e1dacafeed931da1a2d1471f4a
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 7853c6c535a9b4daf9f29a1125c805c29ca6f93f
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592084"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245912"
 ---
 # <a name="the-action-center"></a>Das Info-Center
 
@@ -42,20 +42,20 @@ Das Info-Center bietet eine einzige Oberfläche für folgende Aufgaben:
 - Anzeigen eines Überwachungsprotokolls von bereits genehmigten Wartungsaktionen und
 - Überprüfen abgeschlossener Wartungsaktionen
 
-Ihr Sicherheitsteam kann effektiver und effizienter arbeiten, da das Action Center eine umfassende Ansicht von Microsoft 365 Defender bei der Arbeit bietet.
+Ihr Sicherheitsteam kann effektiver und effizienter arbeiten, da das Action Center eine umfassende Ansicht der Microsoft 365 defender bei der Arbeit bietet.
 
 ## <a name="a-new-unified-action-center"></a>Ein neues, einheitliches Aktionscenter
 
 Wir freuen uns, ein neues, einheitliches Aktionscenter ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) )! 
 
-:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action center in Microsoft 365 Defender":::
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Unified Action Center in Microsoft 365 Defender":::
 
 Das verbesserte Aktionscenter listet ausstehende und abgeschlossene Korrekturaktionen für Ihre Geräte, E-Mail-& Inhalte der Zusammenarbeit und Identitäten an einem Ort auf.
 - Wenn Sie zuvor das Office 365 Security & Compliance Center ( ) verwendet haben, testen Sie das neue, einheitliche [https://protection.office.com](https://protection.office.com) Action Center im Microsoft 365 Security Center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
-- Wenn Sie das Action Center im Microsoft Defender Security Center ( ) verwendet haben, versuchen Sie es mit dem neuen, einheitlichen [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) Action Center im Microsoft 365 Security Center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
-- Wenn Sie bereits das Microsoft 365 Security Center ( verwendet haben), werden im Action Center ( ) mehrere [https://security.microsoft.com](https://security.microsoft.com) Verbesserungen [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) angezeigt.
+- Wenn Sie das Aktionscenter im Microsoft Defender Security Center ( ) verwendet haben, versuchen Sie es mit dem neuen, einheitlichen [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) Aktionscenter im Microsoft 365 Security Center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Wenn Sie bereits das Microsoft 365 Security Center ( ) verwendet haben, werden verschiedene Verbesserungen [https://security.microsoft.com](https://security.microsoft.com) im Action Center ( ) [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) angezeigt.
 
-Das einheitliche Action Center vereint Korrekturaktionen in Defender for Endpoint und Defender für Office 365. Es definiert eine gemeinsame Sprache für alle Korrekturaktionen und bietet eine einheitliche Untersuchungserfahrung. Das Aktionscenter bietet Ihrem Sicherheitsbetriebsteam eine "einzelne Glasfenster"-Erfahrung zum Anzeigen und Verwalten von Korrekturaktionen.  
+Im einheitlichen Aktionscenter werden Korrekturaktionen in Defender for Endpoint und Defender for Office 365. Es definiert eine gemeinsame Sprache für alle Korrekturaktionen und bietet eine einheitliche Untersuchungserfahrung. Das Aktionscenter bietet Ihrem Sicherheitsbetriebsteam eine "einzelne Glasfenster"-Erfahrung zum Anzeigen und Verwalten von Korrekturaktionen.  
 
 Sie können das einheitliche Aktionscenter verwenden, wenn Sie über entsprechende Berechtigungen und mindestens eines der folgenden Abonnements verfügen:
 
@@ -87,7 +87,7 @@ Sie können Daten im Aktionscenter anpassen, sortieren, filtern und exportieren.
 - Wählen Sie die Spalten aus, die Sie anzeigen möchten.
 - Geben Sie an, wie viele Elemente auf jeder Datenseite enthalten sein müssen.
 - Verwenden Sie Filter, um nur die Elemente zu sehen, die Sie anzeigen möchten.
-- Wählen **Sie Exportieren** aus, um Ergebnisse in eine CSV-Datei zu exportieren.
+- Wählen **Sie Exportieren** aus, um Ergebnisse in eine .csv exportieren.
 
 ## <a name="actions-tracked-in-the-action-center"></a>Im Aktionscenter nachverfolgte Aktionen
 
@@ -114,7 +114,7 @@ Neben Denkmaßnahmen, die automatisch als Ergebnis automatisierter Untersuchunge
 | **Manuelle Geräteaktion** | Eine manuelle Aktion auf einem Gerät. Beispiele hierfür [sind Geräteisolation](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) oder [Dateiquarantäne.](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files) |
 | **Manuelle E-Mail-Aktion** | Eine manuelle Aktion für E-Mails. Ein Beispiel umfasst das Soft-Deleting von E-Mail-Nachrichten oder [das Löschen einer E-Mail-Nachricht.](../office-365-security/remediate-malicious-email-delivered-office-365.md) |
 | **Automatische Geräteaktion** | Eine automatisierte Aktion für eine Entität, z. B. eine Datei oder einen Prozess. Beispiele für automatisierte Aktionen sind das Senden einer Datei in quarantäne, das Beenden eines Prozesses und das Entfernen eines Registrierungsschlüssels. (Siehe [Korrekturaktionen in Microsoft Defender for Endpoint](../defender-endpoint/manage-auto-investigation.md#remediation-actions).) |
-| **Automatisierte E-Mail-Aktion** | Eine automatisierte Aktion für E-Mail-Inhalte, z. B. eine E-Mail-Nachricht, anlage oder URL. Beispiele für automatisierte Aktionen sind das soft-deleting von E-Mail-Nachrichten, das Blockieren von URLs und das Deaktivieren der externen E-Mail-Weiterleitung. (Siehe [Korrekturaktionen in Microsoft Defender für Office 365](../office-365-security/air-remediation-actions.md).) |
+| **Automatisierte E-Mail-Aktion** | Eine automatisierte Aktion für E-Mail-Inhalte, z. B. eine E-Mail-Nachricht, anlage oder URL. Beispiele für automatisierte Aktionen sind das soft-deleting von E-Mail-Nachrichten, das Blockieren von URLs und das Deaktivieren der externen E-Mail-Weiterleitung. (Weitere [Informationen finden Sie unter Korrekturaktionen in Microsoft Defender Office 365](../office-365-security/air-remediation-actions.md).) |
 | **Erweiterte Suche** | Aktionen auf Geräten oder E-Mails mit [erweiterter Suche](./advanced-hunting-overview.md). |
 | **Explorer-Aktion** | Aktionen für E-Mail-Inhalte mit [Explorer](../office-365-security/threat-explorer.md). |
 | **Manuelle Liveantwortaktion** | Aktionen, die auf einem Gerät mit [Liveantwort ergriffen werden.](../defender-endpoint/live-response.md) Beispiele hierfür sind das Löschen einer Datei, das Beenden eines Prozesses und das Entfernen einer geplanten Aufgabe. |
@@ -127,7 +127,7 @@ Zum Ausführen von Aufgaben, z. B. genehmigen oder ablehnen ausstehende Aktionen
 |Wartungsaktion |Erforderliche Rollen und Berechtigungen |
 |--|----|
 |Microsoft Defender for Endpoint Remediation (Devices) |**Sicherheitsadministratorrolle** in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) oder im Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- oder ---<br/>In Microsoft Defender for Endpoint **zugewiesene** Rolle für aktive Korrekturaktionen <br/> <br/> Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Erstellen und Verwalten von Rollen für die rollenbasierte Zugriffssteuerung (Microsoft Defender for Endpoint)](../defender-endpoint/user-roles.md)  |
-|Microsoft Defender for Office 365-Korrektur (Office-Inhalt und E-Mail)  |**Sicherheitsadministratorrolle** in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) oder im Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- und --- <br/>**Search and Purge** role assigned the Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**WICHTIG:** Wenn Die  Rolle "Sicherheitsadministrator" nur im Office 365 Security & Compliance Center ( ) zugewiesen ist, können Sie nicht auf die [https://protection.office.com](https://protection.office.com) Funktionen "Action Center" oder "Microsoft 365 Defender" zugreifen. Die Rolle **"Sicherheitsadministrator"** muss in Azure Active Directory oder im Microsoft 365 Admin Center zugewiesen sein. <br/><br/>Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Berechtigungen im Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender for Office 365 remediation (Office content and email)  |**Sicherheitsadministratorrolle** in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) oder im Microsoft 365 Admin Center ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- und --- <br/>**Search and Purge** role assigned the Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**WICHTIG**: Wenn  Die Rolle "Sicherheitsadministrator" nur im Office 365 Security & Compliance Center ( ) zugewiesen ist, können Sie nicht auf das Action Center oder die [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender-Funktionen zugreifen. Sie müssen die Rolle **"Sicherheitsadministrator"** in Azure Active Directory oder Microsoft 365 Admin Center zugewiesen haben. <br/><br/>Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Berechtigungen im Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > Benutzer, denen in Azure Active Directory die Rolle **Globaler Administrator** zugewiesen ist, können alle ausstehenden Aktionen im Info-Center genehmigen oder ablehnen. Als bewährte Methode sollte Ihre Organisation jedoch die Anzahl der Personen begrenzen, denen die Rolle **"Globaler Administrator"** zugewiesen ist. Es wird empfohlen, die in der vorherigen Tabelle aufgeführten Rollen **"Sicherheitsadministrator",**"Aktive Korrekturmaßnahmen" und "Suchen und Löschen" für Berechtigungen im Aktionscenter zu verwenden.  

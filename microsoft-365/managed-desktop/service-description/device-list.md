@@ -1,6 +1,6 @@
 ---
-title: Microsoft Managed Desktop-Geräte
-description: In diesem Artikel werden die Spezifikationen für Geräte aufgeführt, die für Microsoft Managed Desktop genehmigt wurden.
+title: Microsoft Managed Desktop Geräte
+description: In diesem Artikel werden die Spezifikationen für Geräte aufgeführt, die für die Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -8,30 +8,35 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 59609da65701112ced43b73b67650881bc81be8a
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 636d32f47c4fd9fdd5c0409a4ebbc2d9e79a166d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218664"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245936"
 ---
-# <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop-Geräte 
+# <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop Geräte
 
-Microsoft Managed Desktop wertet regelmäßig Geräte aus, die in den Dienst einbezogen werden sollen. In diesem Artikel werden die spezifischen Geräte aufgeführt, die derzeit unterstützt werden. Eine allgemeinere Anweisung der Geräteanforderungen finden Sie unter [Geräteanforderungen](device-requirements.md).
+> [!NOTE]
+> Microsoft Managed Desktop ist nicht mehr erforderlich, dass Gerätemodelle aus dieser Liste vorhanden sind. Ab dem 3. Mai 2021 sollten alle Geräte eines genehmigten Herstellers unsere bereitgestellten Hardware- und Softwareanforderungen erfüllen. Sie können geräte in dieser Liste weiterhin mit Sicherheit verwenden. Weitere Geräte, die für die Microsoft Managed Desktop empfohlen werden, finden Sie auf der Windows 10 Pro [Geschäftsgeräte.](https://www.microsoft.com/windowsforbusiness/view-all-devices) Zeigen Sie an diesem Standort die empfohlenen Geräte an, indem Sie **Features** im Bereich **Filter nach** erweitern und dann **Microsoft Managed Desktop.** Wann immer Sie planen, ein bestimmtes Gerätemodell zum ersten Mal im Dienst zu registrieren, sollten Sie ein Beispiel testen, um sicherzustellen, dass es die von Ihnen erwartet Benutzererfahrung bietet. Weitere Informationen finden Sie unter [Validate new devices](../get-started/validate-device.md).
 
-Weitere Informationen zu Microsoft Managed Desktop finden Sie unter [Microsoft Managed Desktop documentation and resources](../index.yml). 
+Microsoft Managed Desktop evaluiert regelmäßig Geräte, die in den Dienst einbezogen werden sollen. In diesem Artikel werden die spezifischen Geräte aufgeführt, die derzeit unterstützt werden. Eine allgemeinere Anweisung der Geräteanforderungen finden Sie unter [Geräteanforderungen](device-requirements.md).
+
+Weitere Informationen zu Microsoft Managed Desktop finden Sie [Microsoft Managed Desktop Dokumentation und Ressourcen](../index.yml). 
+
+[Auswählen und Überprüfen neuer Geräte](../get-started/validate-device.md)
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
 Um in Microsoft Managed Desktop registriert zu werden, muss ein Gerät eines der folgenden Modelle sein und die aufgeführten Spezifikationen für RAM, Prozessorfamilie und Speicherplatz erfüllen oder überschreiten. 
 
-Die Links zu Geräten hier sind nur für Ihre Referenz. Wenn Sie Geräte bestellen möchten, arbeiten Sie mit Ihren kommerziellen Kanalkontakten zusammen, um sicherzustellen, dass Sie die richtigen Konfigurationen auswählen. In dieser Tabelle ist das *Archivdatum* das Datum, an dem diese Modelle einer kürzeren Microsoft Managed #A0 unterliegen. Alle nach diesem Datum integrierten Geräte erhalten keine vollständige Drei-Jahres-Supportlaufzeit von Microsoft Managed Desktop. Archivierte Geräte sind auch in [archivierten Microsoft Managed Desktop-Geräten aufgeführt.](archived-device-list.md) *Das Fälligkeitsdatum* ist das Datum, an dem dieses Modell von Microsoft Managed Desktop überhaupt nicht mehr unterstützt wird. An diesem Datum werden alle registrierten Geräte dieses Modells aus Microsoft Managed Desktop entfernt, unabhängig davon, wann sie registriert wurden.
+Die Links zu Geräten hier sind nur für Ihre Referenz. Wenn Sie Geräte bestellen möchten, arbeiten Sie mit Ihren kommerziellen Kanalkontakten zusammen, um sicherzustellen, dass Sie die richtigen Konfigurationen auswählen. In dieser Tabelle ist das *Archivdatum* das Datum, an dem diese Modelle einer kürzeren Lebensdauer Microsoft Managed Desktop unterliegen. Alle nach diesem Datum integrierten Geräte erhalten keine vollständige Drei-Jahres-Supportlaufzeit von Microsoft Managed Desktop. Archivierte Geräte werden auch in Microsoft Managed Desktop [aufgelistet.](archived-device-list.md) *Das Fälligkeitsdatum* ist das Datum, an dem dieses Modell nicht mehr von der Microsoft Managed Desktop unterstützt wird. An diesem Datum werden alle registrierten Geräte dieses Modells aus Microsoft Managed Desktop entfernt, unabhängig davon, wann sie registriert wurden.
 
 >[!NOTE]
 >Geräte können dieser Tabelle jederzeit hinzugefügt werden, aber wir stellen 90 Tage Benachrichtigung für Änderungen zur Verfügung, die sich auf das Archiv- oder das Fälligkeitsdatum ausdingen. Die zuletzt hinzugefügten Geräte sind mit **\*** gekennzeichnet.
 
 
-## <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop Devices
+## <a name="microsoft-managed-desktop-devices"></a>Microsoft Managed Desktop Geräte
 
 ### <a name="dell"></a>Dell
 
@@ -76,13 +81,13 @@ Die Links zu Geräten hier sind nur für Ihre Referenz. Wenn Sie Geräte bestell
 
 Darüber hinaus muss das Gerät auch die folgenden Kriterien erfüllen:     
 
-- Wenn eine bestimmte SKU in den Geräteanforderungen aufgeführt ist, stellen Sie sicher, dass Sie sie bei der Bestellung verwenden. Dadurch wird sichergestellt, dass Geräte den Microsoft Managed Desktop-Softwareanforderungen entsprechen. 
-- Die Windows-Erstlauferfahrung wurde noch nicht abgeschlossen.
-- Registrieren bei Microsoft Managed Desktop mithilfe des [Geräteregistrierungsfeatures](../get-started/register-devices-self.md)
+- Wenn eine bestimmte SKU in den Geräteanforderungen aufgeführt ist, stellen Sie sicher, dass Sie sie bei der Bestellung verwenden. Dadurch wird sichergestellt, dass Geräte den anforderungen Microsoft Managed Desktop entsprechen. 
+- Die erste Ausführungserfahrung Windows noch nicht abgeschlossen.
+- Registrieren mit Microsoft Managed Desktop geräteregistrierungsfeature [](../get-started/register-devices-self.md)
 
 >[!NOTE]
 >Geräte mit einem Prozessor mit 2,0 GHz oder schneller bieten benutzern, die an diesen Aktivitäten beteiligt sind, eine wesentlich bessere Erfahrung:
->- Verwenden von Videokonferenzen mit Teams. Weitere [Informationen finden Sie unter Hardwareanforderungen](/microsoftteams/hardware-requirements-for-the-teams-app) für Microsoft Teams.
+>- Verwenden von Videokonferenzen mit Teams. Weitere [Informationen finden Sie unter Hardware requirements for Microsoft Teams.](/microsoftteams/hardware-requirements-for-the-teams-app)
 >-  Verwenden eines Geräts für verschiedene Workloads.
 >- Verwenden mehrerer Monitore.
 

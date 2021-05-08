@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: deniseb
-author: denisebmsft
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 7106f5d2e740d2b4cacbcaeb0b9391095bbeb356
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: e3e842f812c5675334cc25fa35544165129db2b4
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592024"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245888"
 ---
 # <a name="view-and-manage-actions-in-the-action-center"></a>Anzeigen und Verwalten von Aktionen im Aktionscenter
 
@@ -36,13 +36,13 @@ ms.locfileid: "51592024"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Bedrohungsschutzfeatures in Microsoft 365 Defender können zu bestimmten Abhilfemaßnahmen führen. Im Folgenden finden Sie einige Beispiele:
+Bedrohungsschutzfeatures in Microsoft 365 Defender können zu bestimmten Korrekturaktionen führen. Im Folgenden finden Sie einige Beispiele:
 - [Automatisierte Untersuchungen](m365d-autoir.md) können zu Korrekturaktionen führen, die automatisch ausgeführt werden oder auf die Genehmigung warten.
 - Antivirus-, Antischamalware- und andere Bedrohungsschutzfeatures können zu Abhilfemaßnahmen führen, z. B. das Blockieren einer Datei, URL oder eines Prozesses oder das Senden eines Artefakts in Quarantäne.
 - Ihr Sicherheitsteam kann Korrekturaktionen manuell ausführen, [](advanced-hunting-overview.md) z. B. während der erweiterten Suche oder bei der Untersuchung von [Warnungen](investigate-alerts.md) oder [Vorfällen.](investigate-incidents.md)
 
 > [!NOTE]
-> Sie müssen über [geeignete Berechtigungen verfügen](m365d-action-center.md#required-permissions-for-action-center-tasks), um Abhilfemaßnahmen genehmigen oder ablehnen zu können. Weitere Informationen finden Sie unter [Voraussetzungen für die automatisierte Untersuchung und Reaktion in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender).
+> Sie müssen über [geeignete Berechtigungen verfügen](m365d-action-center.md#required-permissions-for-action-center-tasks), um Abhilfemaßnahmen genehmigen oder ablehnen zu können. Weitere Informationen finden Sie unter [Voraussetzungen für die automatisierte Untersuchung und](m365d-configure-auto-investigation-response.md#prerequisites-for-automated-investigation-and-response-in-microsoft-365-defender)Reaktion in Microsoft 365 Defender .
 
 ## <a name="review-pending-actions-in-the-action-center"></a>Überprüfen ausstehender Aktionen im Aktionscenter
 

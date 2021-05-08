@@ -1,6 +1,6 @@
 ---
-title: Microsoft Managed Desktop-Geräte Dienste
-description: In diesem Thema werden Geräte Dienste und Einschränkungen für Microsoft Managed Desktop aufgeführt.
+title: Microsoft Managed Desktop Gerätedienste
+description: In diesem Thema werden Gerätedienste und Einschränkungen für Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,42 +9,42 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8048a26fd24697f9df77ff439e6bd3883f34f5aa
-ms.sourcegitcommit: 126d22d8abd190beb7101f14bd357005e4c729f0
+ms.openlocfilehash: 4d7101899a204d1785d94c2475bcd433b0b99e98
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46529457"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245288"
 ---
-# <a name="microsoft-managed-desktop-device-services"></a>Microsoft Managed Desktop-Geräte Dienste
+# <a name="microsoft-managed-desktop-device-services"></a>Microsoft Managed Desktop Gerätedienste
 
-In diesem Thema werden die Dienste und Diensteinschränkungen für von Microsoft verwaltete Desktop Geräte aufgelistet.
+In diesem Thema werden die Dienst- und Diensteinschränkungen für Microsoft Managed Desktop aufgeführt.
 
 ## <a name="device-services"></a>Gerätedienste
 
-Microsoft stellt diese Dienste für von Microsoft verwaltete Desktop Geräte bereit. Informationen zu Microsoft Managed Desktop-Programm Geräten finden Sie unter [Microsoft Managed Desktop Devices](device-list.md).
+Microsoft stellt diese Dienste für Microsoft Managed Desktop zur Verfügung. Eine Liste der empfohlenen Microsoft Managed Desktop, filtern Sie auf der Microsoft Managed Desktop Auf der Website ["Windows 10 Pro Geschäftsgeräte"](https://www.microsoft.com/windowsforbusiness/view-all-devices) nach Informationen.
 
  | 
  --- | ---
-Support | Support-Agents beantworten Fragen, die sich direkt auf Gerätefunktionen beziehen, und diagnostizieren Geräteprobleme.
-Bestandsaufnahme | Alle Geräte werden im Verwaltungsportal von Microsoft Managed Desktop zur Inventarisierung und Statusverfolgung nachverfolgt.
-Firmware/Treiberupdates | Standardmäßig werden von Microsoft verwaltete Desktop Gerätefirmware-und Treiberupdates von Windows Update empfangen. Nicht alle Hardware Partner stellen Ihre Updates über Windows Update bereit. Updates, die nicht als automatisch veröffentlicht werden, erfordern eine Ausnahme und müssen vom Kunden bereitgestellt werden.
-Zubehör | Zubehörteile, die mit Ihrem Gerät geliefert werden, werden von denselben Diensten wie das Gerät selbst abgedeckt, die Gewährleistungsbedingungen können jedoch unterschiedlich sein. Lesen Sie die Gewährleistungsbedingungen, die Sie bei der Auswahl Ihrer Geräte getroffen haben. 
-Geräte Einrichtung    | Geräte werden mit der aktuellen Version von Windows vorkonfiguriert und erhalten Ihre apps und Konfigurationen über die Cloud. 
+Support | Support-Agents beantworten Fragen direkt im Zusammenhang mit der Gerätefunktionalität und diagnostizieren Geräteprobleme.
+Bestandsaufnahme | Alle Geräte werden im Administratorportal Microsoft Managed Desktop für die Bestands- und Statusverfolgung nachverfolgt.
+Firmware-/Treiberupdates | Standardmäßig erhalten Microsoft Managed Desktop Geräte Firmware- und Treiberupdates von Windows Update. Nicht alle Hardwarepartner stellen ihre Updates über Windows Zur Verfügung. Updates, die nicht als Automatisch veröffentlicht werden, erfordern eine Ausnahme und müssen vom Kunden bereitgestellt werden.
+Zubehör | Zubehör, das mit Ihrem Gerät geliefert wird, wird von den gleichen Diensten wie das Gerät selbst abgedeckt, die Garantiebedingungen können jedoch abweichen. Lesen Sie die Garantiebedingungen, die bei der Auswahl Ihrer Geräte ausgewählt wurden. 
+Geräteeinrichtung    | Geräte werden mit der aktuellen Version von Windows vorkonfiguriert und empfangen ihre Apps und Konfigurationen über die Cloud. 
 
-Informationen zu Geräte Ersetzungen, Upgrades und Supportbedingungen finden Sie in ihrer Vereinbarung mit Ihrem Geräteanbieter und ihren Gewährleistungsbedingungen.
+Informationen zu Geräteersatz, Upgrades und Supportbedingungen finden Sie unter Ihrer Vereinbarung mit Ihrem Geräteanbieter und Ihren Garantiebedingungen.
 
-Informationen zur Gewährleistung von Oberflächen und Reparaturen:
-- [Surface for Business-Hilfe Center](https://support.microsoft.com/hub/4339296/surface-for-business-help)
-- [Garantien, erweiterte Servicepläne und Nutzungsbedingungen für Ihr Gerät](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
+Weitere Informationen zu Surface-Gewährleistungen und -Reparaturen finden Sie unter:
+- [Surface for Business Help Center](https://support.microsoft.com/hub/4339296/surface-for-business-help)
+- [Gewährleistungen, erweiterte Dienstpläne und Geschäftsbedingungen für Ihr Gerät](https://support.microsoft.com/help/4040687/info-about-warranties-extended-service-plans-and-terms-conditions)
 
 
-## <a name="device-service-limitations"></a>Einschränkungen des Geräte Diensts
+## <a name="device-service-limitations"></a>Einschränkungen des Gerätediensts
 
-Microsoft stellt keine Dienste für diese Elemente bereit.
+Microsoft stellt keinen Dienst für diese Elemente zur Verfügung.
 
  | 
  --- | ---
-Personalisierungs | Geräte und Zubehör, die mit dem Dienst bereitgestellt werden, können nicht angepasst werden. Alle Geräte und Zubehörteile sind mit standardmäßigen Branding-, Spezifikations-und Farbkombinationen ausgestattet. Anwendungsbereitstellung und Richtlinienkonfigurationen werden über IT-as-a-Service behandelt.
-Datenwiederherstellung | Benutzer-und Team Daten, einschließlich Personalisierung, werden in OneDrive für Unternehmen gespeichert, wobei sich nur Cachedaten lokal befinden. Wenn Daten absichtlich auf dem internen Speichersystem des Geräts gespeichert werden, muss vor dem Zurückgeben des Geräts an Microsoft eine Datenwiederherstellung versucht und abgeschlossen werden.
-Geräte Einrichtung | Geräte werden an die Kundenadresse zugestellt, an die Sie vom Kunden eingespeist und eingerichtet werden müssen.
+Personalisierung | Geräte und Zubehör, die mit dem Dienst bereitgestellt werden, können nicht angepasst werden. Alle Geräte und Zubehörteile sind mit Standardkombinationen für Branding, Spezifikation und Farbe ausgestattet. Anwendungsbereitstellung und Richtlinienkonfigurationen werden über IT-as-a-Service behandelt.
+Datenwiederherstellung | Benutzer- und Teamdaten, einschließlich Personalisierung, werden in OneDrive for Business gespeichert, nur Cachedaten befinden sich lokal. Wenn Daten absichtlich im internen Speichersystem des Geräts gespeichert werden, muss eine Datenwiederherstellung versucht und abgeschlossen werden, bevor das Gerät an Microsoft zurück gesendet wird.
+Geräteeinrichtung | Geräte werden an die Kundenadresse zugestellt, wo sie vom Kunden eingeschaltet und eingerichtet werden müssen.

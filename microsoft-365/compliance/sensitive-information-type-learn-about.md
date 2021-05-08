@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 01dd5feab17c68eed1da9d66c4310c50e90032c6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 7d23230ebe4321f355128d1f3268e967a35a0a89
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114225"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245648"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Weitere Informationen zu Typen vertraulicher Informationen
 
@@ -158,5 +158,7 @@ Zum Erstellen von benutzerdefinierten Typen für vertrauliche Informationen im S
 - [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md)
 - [Erstellen eines benutzerdefinierten vertraulichen Informationstyps](create-a-custom-sensitive-information-type.md)
 - [Erstellen eines benutzerdefinierten vertraulichen Informationstyps in PowerShell](create-a-custom-sensitive-information-type-in-scc-powershell.md)
+
+Informationen zur Verwendung vertraulicher Informationstypen zur Einhaltung von Datenschutzbestimmungen finden Sie unter [Deploy information protection for data privacy regulations with Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy).
 
 <!-- fwlink for this topic https://go.microsoft.com/fwlink/?linkid=2135644-->
