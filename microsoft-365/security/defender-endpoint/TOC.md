@@ -144,6 +144,7 @@
  
 ##### [Problembehandlung]()
 ###### [Problembehandlung bei Installationsproblemen](linux-support-install.md)
+###### [Untersuchen von Problemen mit der Agent-Integrität](health-status.md)
 ###### [Behandlung von Cloudverbindungsproblemen](linux-support-connectivity.md)
 ###### [Behandlung von Leistungsproblemen](linux-support-perf.md)
 ###### [Behandeln von Problemen mit fehlenden Ereignissen](linux-support-events.md)

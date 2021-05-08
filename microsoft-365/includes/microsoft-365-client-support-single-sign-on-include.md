@@ -29,6 +29,6 @@
 |TEAMS|✔|✔|Geplant|✔|Nicht zutreffend|
 |TO-DO|✔|✔|Nicht zutreffend|Nicht zutreffend|✔|
 |VISIO|Nicht zutreffend|✔|Nicht zutreffend|✔|Nicht zutreffend|
-|WHITEBOARD|Nicht zutreffend|✔|Nicht zutreffend|Nicht zutreffend|✔|
+|WHITEBOARD|✔|✔|Nicht zutreffend|Nicht zutreffend|✔|
 |WORD|✔|✔|✔|✔|✔|
 |YAMMER|✔|✔|Nicht zutreffend|Geplant|–|

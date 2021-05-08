@@ -22,7 +22,7 @@
 |POWER APPS|Geplant|Geplant|Nicht zutreffend|Nicht zutreffend|Geplant|
 |POWER AUTOMATE|Geplant|Geplant|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
 |POWER BI|Geplant|Geplant|Nicht zutreffend|Geplant|Geplant|
-|POWERPOINT|✔|Geplant|Geplant|Geplant|Geplant|
+|POWERPOINT|✔|Geplant|Geplant|Geplant|Nicht zutreffend|
 |PROJECT|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Geplant|Nicht zutreffend|
 |PUBLISHER|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|✔|Nicht zutreffend|
 |SHAREPOINT ADMIN|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Geplant|Nicht zutreffend|
@@ -34,6 +34,6 @@
 |TO-DO|Geplant|Geplant|Geplant|Nicht zutreffend|Geplant|
 |VISIO|Nicht zutreffend|✔|Nicht zutreffend|Geplant|Nicht zutreffend|
 |WHITEBOARD|✔|Geplant|Nicht zutreffend|Nicht zutreffend|Geplant|
-|WORD|✔|Geplant|Geplant|Geplant|✔|
+|WORD|✔|Geplant|Geplant|Geplant|Nicht zutreffend|
 |WORKPLACE ANALYTICS|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
 |YAMMER|Geplant|Geplant|Geplant|Geplant|–|

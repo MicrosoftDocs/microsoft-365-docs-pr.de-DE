@@ -11,17 +11,17 @@ localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: tewchen, pahuijbr, shwjha
+ms.reviewer: tewchen, pahuijbr
 ms.topic: article
 manager: dansimp
 ms.technology: mde
-ms.date: 05/05/2021
-ms.openlocfilehash: 99ed714939161347dea71f1cbd53a56c628ce0a1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/06/2021
+ms.openlocfilehash: e3ec35e777469fec3cda762f7e670490c0963f8d
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246489"
+ms.locfileid: "52259691"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Microsoft Defender Antivirus Kompatibilität
 
@@ -31,9 +31,15 @@ ms.locfileid: "52246489"
 
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 
-## <a name="overview"></a>Übersicht
+## <a name="summary"></a>Zusammenfassung
 
-Microsoft Defender Antivirus wird automatisch aktiviert und auf Endpunkten und Geräten installiert, auf Windows 10. Was geschieht jedoch, wenn eine andere (nicht von Microsoft) verwendete Antiviren-/Antischalwarelösung verwendet wird? Es hängt davon ab, ob Sie [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) zusammen mit Ihrem Antivirenschutz verwenden.
+Microsoft Defender Antivirus wird automatisch aktiviert und auf Endpunkten und Geräten installiert, auf Windows 10. Was geschieht jedoch, wenn eine andere (nicht von Microsoft) verwendete Antiviren-/Antischalwarelösung verwendet wird? Es hängt davon ab, ob Sie [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) zusammen mit Ihrem Antivirenschutz verwenden. In diesem Artikel wird beschrieben, was mit Antiviren-/Antischalwarelösungen geschieht, wenn Endpunkte in Microsoft Defender for Endpoint onboardiert werden.
+
+## <a name="why-defender-for-endpoint-matters"></a>Warum Defender for Endpoint wichtig ist
+
+Erwägen Sie das Onboarding Ihrer Endpunkte in Defender for Endpoint, auch wenn Sie eine Nicht-Microsoft-Antiviren-/Antischalwarelösung verwenden. Wenn Sie Ihre Geräte in Defender for Endpoint integrieren, können Sie in den meisten Fällen Microsoft Defender Antivirus ihrer Nicht-Microsoft-Antivirenlösung für zusätzlichen Schutz verwenden. Sie können z. B. EDR im Blockmodus [verwenden,](edr-in-block-mode.md)der schädliche Artefakte blockiert und repariert, die Ihre primäre Antivirenlösung möglicherweise verpasst hat. 
+
+Funktionsweise:
 
 - Wenn die Clientgeräte Ihrer Organisation durch eine Nicht-Microsoft-Antiviren-/Antimwalware-Lösung geschützt sind, wechselt Microsoft Defender Antivirus automatisch in den passiven Modus, wenn diese Geräte in Defender for Endpoint integrierte werden. In diesem Fall treten Bedrohungserkennungen auf, aber Echtzeitschutz und Bedrohungen werden nicht von der Microsoft Defender Antivirus. **HINWEIS:** Dieses spezielle Szenario gilt nicht für Endpunkte, die Windows Server ausführen.
 
@@ -48,24 +54,24 @@ Microsoft Defender Antivirus wird automatisch aktiviert und auf Endpunkten und G
 
 ## <a name="antivirus-and-microsoft-defender-for-endpoint"></a>Antivirus und Microsoft Defender for Endpoint
 
-In der folgenden Tabelle wird zusammengefasst, was mit Microsoft Defender Antivirus geschieht, wenn Antivirenprodukte von Drittanbietern zusammen oder ohne Microsoft Defender for Endpoint verwendet werden. 
+In der folgenden Tabelle wird zusammengefasst, was mit Microsoft Defender Antivirus geschieht, wenn Nicht-Microsoft-Antiviren-/Antischalwarelösungen zusammen oder ohne Microsoft Defender for Endpoint verwendet werden. 
 
-| Windows-Version   | Antivirus-/Antischalwareprodukt  | Defender for Endpoint-Registrierung | Microsoft Defender Antivirus Status     |
+| Windows-Version   | Antivirus-/Antischalwarelösung  | Onboarded to <br/> Defender for Endpoint? | Microsoft Defender Antivirus Status     |
 |------|------|-------|-------|
 | Windows 10  | Microsoft Defender Antivirus | Ja  | Aktiver Modus | 
 | Windows 10  | Microsoft Defender Antivirus | Nein   | Aktiver Modus |
-| Windows 10  | Ein Drittanbieterprodukt, das nicht von Microsoft angeboten oder entwickelt wird | Ja  | Passiver Modus (automatisch) |
-| Windows 10  | Ein Drittanbieterprodukt, das nicht von Microsoft angeboten oder entwickelt wird | Nein   | Deaktivierter Modus (automatisch)    |
+| Windows 10  | Eine Nicht-Microsoft-Antiviren-/Antischalwarelösung | Ja  | Passiver Modus (automatisch) |
+| Windows 10  | Eine Nicht-Microsoft-Antiviren-/Antischalwarelösung | Nein   | Deaktivierter Modus (automatisch)    |
 | Windows Server, Version 1803 oder neuer <p> Windows Server 2019 | Microsoft Defender Antivirus  | Ja |         Aktiver Modus  |
 | Windows Server, Version 1803 oder neuer <p> Windows Server 2019 | Microsoft Defender Antivirus | Nein  | Aktiver Modus |
-| Windows Server, Version 1803 oder neuer <p> Windows Server 2019 | Ein Drittanbieterprodukt, das nicht von Microsoft angeboten oder entwickelt wird | Ja  | Microsoft Defender Antivirus muss auf den passiven Modus festgelegt werden (manuell) <sup> [[1](#fn1)]<sup>  | 
-| Windows Server, Version 1803 oder neuer <p> Windows Server 2019 | Ein Drittanbieterprodukt, das nicht von Microsoft angeboten oder entwickelt wird | Nein  | Microsoft Defender Antivirus muss deaktiviert sein (manuell) <sup> [[2](#fn2)]<sup></sup>  |
+| Windows Server, Version 1803 oder neuer <p> Windows Server 2019 | Eine Nicht-Microsoft-Antiviren-/Antischalwarelösung | Ja  | Microsoft Defender Antivirus muss auf den passiven Modus festgelegt werden (manuell) <sup> [[1](#fn1)]<sup>  | 
+| Windows Server, Version 1803 oder neuer <p> Windows Server 2019 | Eine Nicht-Microsoft-Antiviren-/Antischalwarelösung | Nein  | Microsoft Defender Antivirus muss deaktiviert sein (manuell) <sup> [[2](#fn2)]<sup></sup>  |
 | Windows Server 2016 | Microsoft Defender Antivirus | Ja | Aktiver Modus |
 | Windows Server 2016 | Microsoft Defender Antivirus | Nein | Aktiver Modus |
-| Windows Server 2016 | Ein Drittanbieterprodukt, das nicht von Microsoft angeboten oder entwickelt wird | Ja | Microsoft Defender Antivirus muss deaktiviert sein (manuell) <sup> [[2](#fn2)]<sup> |
-| Windows Server 2016 | Ein Drittanbieterprodukt, das nicht von Microsoft angeboten oder entwickelt wird | Nein | Microsoft Defender Antivirus muss deaktiviert sein (manuell) <sup> [[2](#fn2)]<sup> |
+| Windows Server 2016 | Eine Nicht-Microsoft-Antiviren-/Antischalwarelösung | Ja | Microsoft Defender Antivirus muss deaktiviert sein (manuell) <sup> [[2](#fn2)]<sup> |
+| Windows Server 2016 | Eine Nicht-Microsoft-Antiviren-/Antischalwarelösung | Nein | Microsoft Defender Antivirus muss deaktiviert sein (manuell) <sup> [[2](#fn2)]<sup> |
 
-(<a id="fn1">1</a>) Auf Windows Server, Version 1803 oder neuer, oder Windows Server 2019 wechselt Microsoft Defender Antivirus nicht automatisch in den passiven Modus, wenn Sie ein Nicht-Microsoft-Antivirenprodukt installieren. Legen Sie in diesen Fällen [Microsoft Defender Antivirus passiven](microsoft-defender-antivirus-on-windows-server.md#need-to-set-microsoft-defender-antivirus-to-passive-mode) Modus ein, um Probleme zu vermeiden, die durch die Installation mehrerer Antivirenprodukte auf einem Server verursacht werden. Sie können den Microsoft Defender Antivirus mit PowerShell, Gruppenrichtlinien oder einem Registrierungsschlüssel auf den passiven Modus festlegen.
+(<a id="fn1">1</a>) Auf Windows Server, Version 1803 oder neuer, oder Windows Server 2019 wechselt Microsoft Defender Antivirus nicht automatisch in den passiven Modus, wenn Sie ein Nicht-Microsoft-Antivirenprodukt installieren. Legen Sie in diesen Fällen [Microsoft Defender Antivirus passiven](microsoft-defender-antivirus-on-windows-server.md#need-to-set-microsoft-defender-antivirus-to-passive-mode) Modus ein, um Probleme zu vermeiden, die durch die Installation mehrerer Antivirenprodukte auf einem Server verursacht werden. Sie können Microsoft Defender Antivirus mit PowerShell, Gruppenrichtlinien oder einem Registrierungsschlüssel auf den passiven Modus festlegen.
 
 Wenn Sie Windows Server, Version 1803 oder neuer, oder Windows Server 2019 verwenden, können Sie Microsoft Defender Antivirus auf den passiven Modus festlegen, indem Sie den folgenden Registrierungsschlüssel festlegen:
 - Pfad: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
@@ -74,7 +80,7 @@ Wenn Sie Windows Server, Version 1803 oder neuer, oder Windows Server 2019 verwe
 - Wert: `1`
 
 > [!NOTE]
-> Der `ForcePassiveMode` Registrierungsschlüssel wird auf der Windows Server 2016.
+> Der passive Modus wird auf der Windows Server 2016. Der `ForcePassiveMode` Registrierungsschlüssel gilt nicht für Windows Server 2016. 
 
 (<a id="fn2">2</a>) Wenn Windows Server 2016 ein Nicht-Microsoft-Antivirenprodukt verwenden, können Sie Microsoft Defender Antivirus nicht im passiven oder aktiven Modus ausführen. Deaktivieren/deinstallieren Sie in [Microsoft Defender Antivirus,](microsoft-defender-antivirus-on-windows-server.md#are-you-using-windows-server-2016) um Probleme zu vermeiden, die durch die Installation mehrerer Antivirenprodukte auf einem Server verursacht werden.
 
@@ -124,7 +130,6 @@ In der Tabelle in diesem Abschnitt werden die Funktionen und Features zusammenge
 - Wenn Microsoft Defender Antivirus sich im passiven Modus befindet, können Sie weiterhin Updates [für Microsoft Defender Antivirus](manage-updates-baselines-microsoft-defender-antivirus.md); Sie können jedoch nicht Microsoft Defender Antivirus in den aktiven Modus verschieben, wenn Ihre Geräte über ein aktuelles, nicht von Microsoft entferntes Antivirenprodukt verfügen, das Echtzeitschutz vor Schadsoftware bietet. Um eine optimale Sicherheit und Erkennungseffizienz zu gewährleisten, müssen Sie den [Microsoft Defender Antivirus-Schutz (Security Intelligence Update, Engine und Platform) aktualisieren,](manage-updates-baselines-microsoft-defender-antivirus.md) auch wenn Microsoft Defender Antivirus im passiven Modus ausgeführt wird.
 
 - Wenn Microsoft Defender Antivirus automatisch deaktiviert ist, kann sie automatisch wieder aktiviert werden, wenn der von einem Nicht-Microsoft-Antivirenprodukt angebotene Schutz abläuft oder anderweitig nicht mehr den Echtzeitschutz vor Viren, Schadsoftware oder anderen Bedrohungen bietet. Die automatische Erneute Aktivierung trägt dazu bei, sicherzustellen, dass der Virenschutz auf Ihren Geräten beibehalten wird. Außerdem können Sie eine eingeschränkte regelmäßige Überprüfung [aktivieren,](limited-periodic-scanning-microsoft-defender-antivirus.md)die das Microsoft Defender Antivirus-Modul verwendet, um zusätzlich zu Ihrer Haupt-Antivirus-App regelmäßig nach Bedrohungen zu suchen.
-
 
 > [!WARNING]
 > Deaktivieren, beenden oder ändern Sie keine der zugeordneten Dienste, die von Microsoft Defender Antivirus, Microsoft Defender for Endpoint oder der Windows-Sicherheit werden. Diese Empfehlung umfasst *die wscsvc-,* *SecurityHealthService-,* *MsSense-,* *Sense-,* *WinDefend-* oder *MsMpEng-Dienste* und -Prozesse. Das manuelle Ändern dieser Dienste kann zu schwerwiegenden Instabilitäten auf Ihren Geräten führen und Ihr Netzwerk anfällig machen. Das Deaktivieren, Beenden oder Ändern dieser Dienste kann auch Probleme bei der Verwendung von Nicht-Microsoft-Antivirenlösungen und bei der Anzeige ihrer Informationen in der Windows-Sicherheit [verursachen.](microsoft-defender-security-center-antivirus.md)

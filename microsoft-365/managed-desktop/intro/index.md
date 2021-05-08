@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 36745a0aafb70e7921c19db7c28984dcca1e2a63
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: d058cfefbc31be6d355ed61e745c36af684829b4
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245528"
+ms.locfileid: "52259667"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Was ist Microsoft Managed Desktop?
 
@@ -57,7 +57,7 @@ Ihre IT-Administratoren profitieren von folgenden Funktionen:
 ## <a name="device-management"></a>Geräteverwaltung
 Microsoft Managed Desktop übernimmt die Verwaltung registrierter Geräte und der von ihnen verwendeten Microsoft-Software.
 
-- **Hardware:** Anstatt dass Ihre IT-Abteilung recherchieren und herausfinden muss, ob ein Gerät mit dem Dienst kompatibel ist, haben wir spezifische Hardware- und Softwareanforderungen, Tools und Prozesse zur Verfügung gestellt, um die Auswahl zu beschleunigen, damit Sie Geräte mit Konfidenz auswählen können. Sie können empfohlene Geräte finden, indem Sie auf der Website [Windows 10 Pro-Geräte für Unternehmen einkaufen](https://www.microsoft.com/windowsforbusiness/view-all-devices) nach Microsoft Managed Desktop filtern. Sie können Geräte entweder selbst beziehen (oder mit einem Partner zusammenarbeiten) oder bereits vorhandene Geräte wiederverwenden, sofern sie auf der genehmigten Liste stehen. Das Registrieren von Geräten ist einfach und unkompliziert. Bevor sie bereitgestellt werden, können Sie auch bestimmte Aspekte der Geräteerfahrung für Ihre Benutzer [anpassen](../working-with-managed-desktop/config-setting-overview.md).
+- **Hardware:** Anstatt dass Ihre IT-Abteilung recherchieren und herausfinden muss, ob ein Gerät mit dem Dienst kompatibel ist, haben wir spezifische Hardware- und Softwareanforderungen, Tools und Prozesse zur Verfügung gestellt, um die Auswahl zu beschleunigen, damit Sie Geräte mit Konfidenz auswählen können. Sie können empfohlene Geräte finden, indem Sie auf der Website [Windows 10 Pro-Geräte für Unternehmen einkaufen](https://www.microsoft.com/windowsforbusiness/view-all-devices) nach Microsoft Managed Desktop filtern. Sie können entweder selbst Geräte beziehen (oder mit einem Partner zusammenarbeiten) oder bereits vorhandene Geräte wiederverwenden. Das Registrieren von Geräten ist einfach und unkompliziert. Bevor sie bereitgestellt werden, können Sie auch bestimmte Aspekte der Geräteerfahrung für Ihre Benutzer [anpassen](../working-with-managed-desktop/config-setting-overview.md).
 
 - **Updates:** Microsoft Managed Desktop richtet alle Aspekte von [Bereitstellungsgruppen](../service-description/updates.md) für Windows 10-Qualitäts- und Funktionsupdates, Treiber, Firmware, Antivirendefinitionen und Microsoft 365 Apps für Unternehmensupdates ein und verwaltet sie. Dies umfasst umfangreiche Tests und Überprüfungen aller Aktualisierungen, um sicherzustellen, dass registrierte Geräte immer auf dem neuesten Stand sind, und um Minimierungen von Störungen, wodurch Ihre IT-Abteilung von dieser laufenden Aufgabe befreit wird.
 

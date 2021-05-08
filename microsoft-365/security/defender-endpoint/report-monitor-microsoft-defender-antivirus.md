@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,14 +15,15 @@ ms.date: 12/07/2020
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a31dfa7e5eba36937f4ab50205df938614e80b76
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 5780daaa65a4d83376dd7977e03e88e2d828befc
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765767"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52269588"
 ---
-# <a name="report-on-microsoft-defender-antivirus"></a>Bericht über Microsoft Defender Antivirus
+# <a name="report-on-microsoft-defender-antivirus"></a>Berichte zu Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -50,5 +51,5 @@ Informationen zum Überwachen oder Bestimmen des Status mit PowerShell, WMI oder
 ## <a name="related-articles"></a>Verwandte Artikel
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Microsoft Defender Antivirus unter Windows Server 2016 und 2019](microsoft-defender-antivirus-on-windows-server.md)
+- [Microsoft Defender Antivirus auf Windows Server 2016 und 2019](microsoft-defender-antivirus-on-windows-server.md)
 - [Bereitstellen von Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)

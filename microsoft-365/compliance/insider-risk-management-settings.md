@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: f48b6e8b43f65a6ee919095ea299bd80c81e01c9
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: aad0f00292a1a1182fc4b731e562b2e4c78d97f8
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687251"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259511"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Erste Schritte mit Insider-Risikomanagementeinstellungen
 
@@ -83,7 +83,7 @@ Um die Überwachung von Risikoaktivitäten auf Geräten zu ermöglichen und Rich
 Stellen Sie sicher, dass Windows 10 Geräte, die Sie für die Berichterstellung im Insider risk management planen, diese Anforderungen erfüllen.
 
 1. Muss Windows 10 x64 Build 1809 oder höher ausgeführt werden und muss das [Windows 10-Update (Os Build 17763.1075)](https://support.microsoft.com/help/4537818/windows-10-update-kb4537818) vom 20. Februar 2020 installiert haben.
-2. Alle Geräte müssen in [Azure Active Directory (AAD)](/azure/active-directory/devices/concept-azure-ad-join), oder in Azure AD Hybrid eingebunden sein.
+2. Das Benutzerkonto, das zum Anmelden beim Windows 10 verwendet wird, muss ein aktives Azure Active Directory (AAD) sein. Das Windows 10 kann [AAD,](/azure/active-directory/devices/concept-azure-ad-join)Hybrid-AAD oder Active Directory- oder AAD-registriert sein.
 3. Installieren Sie Microsoft Chromium Edgebrowser auf dem Endpunktgerät, um Aktionen für die Clouduploadaktivität zu überwachen. Weitere Informationen finden Sie unter [Herunterladen des auf Chromium basierenden neuen Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 
 #### <a name="step-2-onboarding-devices"></a>Schritt 2: Onboarding von Geräten
@@ -425,7 +425,7 @@ Um einen Power Automate im Einstellungsbereich zu teilen, müssen Sie Mitglied d
 
 Führen Sie die folgenden Schritte aus, um einen Power Automate zu teilen:
 
-1. Wechseln Sie [Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings** Power Automate Flows  >  **aus.** Sie können auch auf den Seiten **Fälle oder** Benutzerdashboards zugreifen, indem Sie **Automatisieren** der Verwaltung von Power Automate   >  **auswählen.**
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings** Power Automate Flows  >  **aus.** Sie können auch auf den Seiten **Fälle oder** Benutzerdashboards zugreifen, indem Sie **Automatisieren** der Verwaltung von Power Automate   >  **auswählen.**
 2. Wählen Sie **Power Automate Seite "Meine**  Flüsse" oder **"Teamflüsse"** aus.
 3. Wählen Sie den zu teilende Fluss aus, und wählen Sie **dann im** Menü Flussoptionen die Option Freigeben aus.
 4. Geben Sie auf der Seite Flussfreigabe den Namen des Benutzers oder der Gruppe ein, den Sie als Besitzer für den Fluss hinzufügen möchten.
@@ -439,7 +439,7 @@ Um einen Power Automate im Einstellungsbereich zu bearbeiten, müssen Sie Mitgli
 
 Führen Sie die folgenden Schritte aus, um einen Power Automate zu bearbeiten:
 
-1. Wechseln Sie [Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings** Power Automate Flows  >  **aus.** Sie können auch auf den Seiten **Fälle oder** Benutzerdashboards zugreifen, indem Sie **Automatisieren** der Verwaltung von Power Automate   >  **auswählen.**
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings** Power Automate Flows  >  **aus.** Sie können auch auf den Seiten **Fälle oder** Benutzerdashboards zugreifen, indem Sie **Automatisieren** der Verwaltung von Power Automate   >  **auswählen.**
 2. Wählen Sie **auf Power Automate Der Fluss** einen zu bearbeitende Fluss aus, und wählen Sie **im** Menü Flusssteuerelement bearbeiten aus.
 3. Wählen Sie **die Auslassungspunkte**  >  **Einstellungen,** um eine Flusskomponenteneinstellung zu ändern, oder die Auslassungspunkte  >  **Löschen,** um eine Flusskomponente zu löschen.
 4. Wählen **Sie Speichern** und dann Schließen **aus,** um die Bearbeitung des Ablaufs zu abschließen.
@@ -452,7 +452,7 @@ Um einen Power Automate im Einstellungsbereich zu löschen, müssen Sie Mitglied
 
 Führen Sie die folgenden Schritte aus, um einen Power Automate löschen:
 
-1. Wechseln Sie [Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings** Power Automate Flows  >  **aus.** Sie können auch auf den Seiten **Fälle oder** Benutzerdashboards zugreifen, indem Sie **Automatisieren** der Verwaltung von Power Automate   >  **auswählen.**
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie **Insider Risk Settings** Power Automate Flows  >  **aus.** Sie können auch auf den Seiten **Fälle oder** Benutzerdashboards zugreifen, indem Sie **Automatisieren** der Verwaltung von Power Automate   >  **auswählen.**
 2. Wählen Sie **auf Power Automate Flussseite** einen zu löschende Fluss aus, und wählen Sie **im** Menü Flusssteuerelement die Option Löschen aus.
 3. Wählen Sie im Dialogfeld Löschbestätigung die Option **Löschen** aus, um den Fluss zu entfernen, oder wählen Sie **Abbrechen** aus, um die Löschaktion zu beenden.
 
@@ -470,7 +470,7 @@ Weitere Informationen zur Verwendung von Teams und Kanälen in Microsoft Teams f
 
 Die Microsoft Teams unterstützung für Fälle ist schnell und einfach zu konfigurieren. Führen Sie die folgenden Schritte aus, um Microsoft Teams insider risk management zu aktivieren:
 
-1. Wechseln Sie [Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider risk **management** Insider  >  **risk settings**.
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider risk **management** Insider  >  **risk settings**.
 2. Wählen Sie **die Microsoft Teams** aus.
 3. Aktivieren Microsoft Teams Integration für insider risk management.
 4. Wählen **Sie Speichern aus,** um zu konfigurieren und zu beenden.
@@ -485,7 +485,7 @@ Benutzer benötigen die Berechtigung zum Erstellen Microsoft 365 Gruppen in Ihre
 
 Zum Erstellen eines Teams für einen Fall verwenden Sie das Steuerelement Microsoft Team erstellen, wenn Sie direkt in einem vorhandenen Fall arbeiten. Führen Sie die folgenden Schritte aus, um ein neues Team zu erstellen:
 
-1. Wechseln Sie [Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management**  >  **Cases,** und wählen Sie einen vorhandenen Fall aus.
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management**  >  **Cases,** und wählen Sie einen vorhandenen Fall aus.
 2. Wählen Sie im Menü Fallaktion die Option **Microsoft Team erstellen aus.**
 3. Geben Sie **im Feld Teamname** einen Namen für das neue Microsoft Teams ein.
 4. Wählen **Sie Microsoft-Team erstellen** aus, und wählen Sie dann Schließen **aus.**
@@ -516,7 +516,7 @@ Analyseeinblicke aus Scans basieren auf denselben Risikoaktivitätssignalen, die
 Um insider risk analytics zu aktivieren, müssen Sie Mitglied der Rollengruppe "Insider Risk Management", "Insider Risk Management Admin" oder "Microsoft 365 Globaler Administrator" sein.
 Führen Sie die folgenden Schritte aus, um insider risk analytics zu aktivieren:
 
-1. Wechseln Sie [Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management**.
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management**.
 2. Wählen **Sie auf** der Registerkarte Übersicht über insider risk management die Option Überprüfung auf Insiderrisiken **auf** Ihrer Organisationskarte **ausführen** aus. Dadurch wird die Analyseprüfung für Ihre Organisation aktiviert. Sie können die Überprüfung auch in Ihrer Organisation aktivieren, indem Sie zu **Insider** risk settings Analytics navigieren und die Benutzeraktivität Ihres Mandanten überprüfen aktivieren, um potenzielle  >   **Insiderrisiken zu identifizieren.**
 3. Wählen Sie **im Detailbereich** Analyse die Option **Scan ausführen** aus, um die Überprüfung für Ihre Organisation zu starten. Die Analysescanergebnisse können bis zu 24 Stunden dauern, bis Einblicke als Berichte zur Überprüfung zur Verfügung stehen.
 
@@ -546,6 +546,6 @@ Um insider risk analytics zu deaktivieren, müssen Sie Mitglied der Rollengruppe
 
 Führen Sie die folgenden Schritte aus, um die Insiderrisikoanalyse zu deaktivieren:
 
-1. Wechseln Sie [Microsoft 365 Compliance Center](htttps://compliance.microsoft.com)zu Insider Risk **Management**.
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management**.
 2. Wählen **Sie Die Seite Insider risk settings**  >  **Analytics** aus.
 3. Deaktivieren Sie auf der **Seite** Analyse die Benutzeraktivität Ihres Mandanten überprüfen, **um potenzielle Insiderrisiken zu identifizieren.**

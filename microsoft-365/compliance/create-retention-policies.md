@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mithilfe einer Aufbewahrungsrichtlinie können Sie die Inhalte, die Benutzer mit E-Mails, Dokumenten und Unterhaltungen generieren, effizient verwalten. Bewahren Sie auf, was Sie wollen, und werden Sie los, was Sie nicht mehr wollen.
-ms.openlocfilehash: 2b2ce9670e9f297c89ed70e1b37c17aa59b80844
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9e7ab359297ef1402fa64bc754591a4be3140af0
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687271"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52269504"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -74,7 +74,10 @@ Wenn Sie über mehr als eine Aufbewahrungsrichtlinie verfügen und außerdem Auf
 
    Bei **Teams-Kanalnachrichten** sind Nachrichten von Standardkanälen, jedoch nicht von [privaten Kanälen](/microsoftteams/private-channels) eingeschlossen. Zurzeit werden private Kanäle von Aufbewahrungsrichtlinien nicht unterstützt.
 
-   Standardmäßig sind [alle Teams und alle Benutzer ausgewählt](#a-policy-that-applies-to-entire-locations), aber Sie können dies verfeinern, indem Sie die Optionen [**Auswählen** und **Ausschließen** auswählen](#a-policy-with-specific-inclusions-or-exclusions).
+   Standardmäßig sind [alle Teams und alle Benutzer ausgewählt](#a-policy-that-applies-to-entire-locations), aber Sie können dies verfeinern, indem Sie die Optionen [**Auswählen** und **Ausschließen** auswählen](#a-policy-with-specific-inclusions-or-exclusions). Beachten Sie vor dem Ändern der Standardeinstellungen die folgenden Auswirkungen auf eine Aufbewahrungsrichtlinie, die Nachrichten löscht, wenn diese für das Aus- oder Einschließen konfiguriert sind:
+    
+    - Für Gruppenchats, da eine Kopie der Nachrichten im Postfach jedes Benutzers gespeichert wird, der am Chat beteiligt ist. Kopien von Nachrichten von Benutzern, auf die die Richtlinie nicht zutrifft, werden weiterhin in eDiscovery-Ergebnissen angezeigt.
+    - Benutzern, auf die die Richtlinie nicht zutrifft, werden die gelöschten Nachrichten in deren Teams-Suchergebnissen angezeigt. Jedoch wird aufgrund der dauerhaften Löschung in der dem Benutzer zugewiesenen Richtlinie, der Inhalt der Nachricht nicht angezeigt.
 
 4. Geben Sie auf der Assistentenseite **Entscheiden, ob Inhalte beibehalten werden, gelöscht werden oder beides** die Konfigurationsoptionen für das Beibehalten und Löschen von Inhalten an.
 
@@ -82,7 +85,9 @@ Wenn Sie über mehr als eine Aufbewahrungsrichtlinie verfügen und außerdem Auf
 
 5. Schließen Sie den Assistenten ab, damit Ihre Einstellungen gespeichert werden.
 
-Weitere Informationen zu Aufbewahrungsrichtlinien für Teams finden Sie unter [Aufbewahrungsrichtlinien in Microsoft Teams](/microsoftteams/retention-policies) in der Teams-Dokumentation.
+Weiterführende Informationen zur Verwendung von Aufbewahrungsrichtlinien für Teams finden Sie unter [Aufbewahrungsrichtlinien in Microsoft Teams](/microsoftteams/retention-policies) in der Teams-Dokumentation.
+
+Technische Details zur Funktionsweise der Aufbewahrung für Teams, einschließlich Informationen dazu, welche Elemente von Nachrichten bei der Aufbewahrung unterstützt werden sowie Informationen zum Timing mitsamt Anwendungsbeispielen, finden Sie unter [Informationen zur Aufbewahrung für Microsoft Teams](retention-policies-teams.md).
 
 #### <a name="known-configuration-issues"></a>Bekannte Probleme mit der Konfiguration
 
@@ -250,9 +255,9 @@ Als Beginn des Aufbewahrungszeitraums können Sie auch auswählen, wann der Inha
 
 Beispiele:
 
-- SharePoint: Wenn Elemente einer Websitesammlung sieben Jahre lang nach der letzten Änderung des Inhalts aufbewahrt werden sollen, und ein Dokument in dieser Websitesammlung seit sechs Jahren nicht geändert wurde, wird es nur noch ein weiteres Jahr aufbewahrt, sofern es in diesem Zeitraum nicht geändert wird. Falls das Dokument wieder geändert wird, wird das Alter des Dokuments ab dem neuen Datum der letzten Änderung berechnet und weitere sieben Jahre lang aufbewahrt.
+- SharePoint: Wenn Sie Elemente in einer Websitesammlung nach der letzten Änderung ihres Inhalts während sieben Jahren aufbewahren möchten und ein Dokument in dieser Websitesammlung seit sechs Jahren nicht mehr geändert wurde, wird dieses Dokument nur ein weiteres Jahr aufbewahrt, wenn es nicht geändert wird. Wenn das Dokument nun erneut bearbeitet wird, dann wird das Alter des Dokuments ab dem neuen Datum der letzten Änderung berechnet und für weitere sieben Jahre aufbewahrt.
 
-- Exchange: Wenn Elemente in einem Postfach für sieben Jahre aufbewahrt werden sollen und eine Nachricht vor sechs Jahren gesendet wurde, wird sie nur noch ein Jahr aufbewahrt. Bei Exchange-Elementen basiert das Alter auf dem Empfangsdatum für eingehende E-Mails oder dem Sendedatum für ausgehende E-Mails. Die Aufbewahrung von Elementen basierend auf der letzten Änderung gilt nur für Websiteinhalte in OneDrive und SharePoint.
+- Exchange: Wenn Sie Elemente in einem Postfach während sieben Jahren aufbewahren möchten und eine Nachricht vor sechs Jahren gesendet wurde, wird die Nachricht nur noch ein Jahr lang aufbewahrt. Bei Exchange-Elementen basiert das Alter auf dem Eingangsdatum für eingehende E-Mails oder dem Sendedatum für ausgehenden E-Mails. Das Aufbewahren von Elementen basierend auf dem Zeitpunkt der letzten Änderung gilt nur für Websiteinhalte in OneDrive und SharePoint.
 
 Am Ende des Aufbewahrungszeitraums können Sie wählen, ob der Inhalt dauerhaft gelöscht werden soll:
 
@@ -264,7 +269,7 @@ Eine Aufbewahrungsrichtlinie kann Elemente sowohl aufbewahren und dann löschen,
 
 In beiden Fällen ist es wichtig zu wissen, dass wenn Ihre Aufbewahrungsrichtlinie Elemente löscht, der für eine Aufbewahrungsrichtlinie festgelegte Zeitraum jedes Mal ab dem Zeitpunkt berechnet wird, als das betreffende Element erstellt oder geändert wurde und nicht ab dem Zeitpunkt, als die die Richtlinie zugewiesen wurde.
 
-Sie sollten also vor dem erstmaligen Zuweisen einer Aufbewahrungsrichtlinie, und vor allem wenn diese Richtlinie Elemente löscht, zunächst das Alter des vorhandenen Inhalts und die möglichen Auswirkungen der Richtlinie auf diesen vorhandenen Inhalt bedenken. Sie könnten außerdem vor dem Zuweisen Ihre Benutzer über die neue Richtlinie informieren, um ihnen Zeit zur Auswertung der möglichen Auswirkungen zu geben.
+Bevor Sie also eine Aufbewahrungsrichtlinie zum ersten Mal zuweisen, insbesondere wenn diese Richtlinie Elemente löscht, sollten Sie zunächst das Alter des vorhandenen Inhalts und die möglichen Auswirkungen der Richtlinie auf diesen Inhalt berücksichtigen. Sie sollten Ihre Benutzer auch über die neue Richtlinie informieren, bevor Sie diese zuweisen, um so den Benutzern Zeit für die Beurteilung möglicher Auswirkungen zu geben.
 
 ### <a name="a-policy-that-applies-to-entire-locations"></a>Eine Richtlinie, die für ganze Speicherorte gilt
 
@@ -272,7 +277,7 @@ Wenn Sie Speicherorte auswählen – mit Ausnahme von Skype for Business – lau
 
 Wenn eine Aufbewahrungsrichtlinie auf eine beliebige Kombination ganzer Speicherorte zutrifft, gibt es keine Beschränkung für die Anzahl der Empfänger, Websites, Konton, Gruppen, etc., die diese Richtlinie umfassen kann.
 
-Wenn eine Richtlinie beispielsweise alle Exchange-E-Mails und alle SharePoint-Websites umfasst, werden alle Websites und Empfänger einbezogen, ganz gleich, wie viele es sind. Bei Exchange erben alle neuen Postfächer, die nach der Anwendung der Richtlinie erstellt werden, die Richtlinie automatisch.
+Wenn eine Richtlinie beispielsweise alle Exchange-E-Mails und alle SharePoint-Websites enthält, werden alle Websites und Empfänger eingeschlossen, unabhängig von der Anzahl. Bei Exchange erbt jedes neue Postfach, das nach dem Anwenden der Richtlinie erstellt wird, automatisch die Richtlinie.
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Richtlinien, die bestimmte Elemente einschließen oder ausschließen
 

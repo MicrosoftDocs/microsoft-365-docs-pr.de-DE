@@ -1,6 +1,6 @@
 ---
 title: Erstellen und Verwalten von Gerätegruppen in Microsoft Defender for Endpoint
-description: Erstellen von Gerätegruppen und Festlegen automatisierter Behebungsstufen für diese Gruppen, indem Sie die regeln, die für die Gruppe gelten, verwechseln
+description: Erstellen von Gerätegruppen und Festlegen automatisierter Korrekturstufen für diese Gruppen, indem Sie die regeln bestätigen, die für die Gruppe gelten
 keywords: Gerätegruppen, Gruppen, Korrektur, Ebene, Regeln,Ad-Gruppe, Rolle, Zuweisen, Rang
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: acd24e5c87a74bbb32835ec170a121c5c0b6bb33
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 4fc2768392e818f74600e3c2d749b6e95bf957e4
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860303"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259415"
 ---
 # <a name="create-and-manage-device-groups"></a>Erstellen und Verwalten von Gerätegruppen
 
@@ -41,7 +41,7 @@ In Microsoft Defender for Endpoint können Sie Gerätegruppen erstellen und verw
 - Einschränken des Zugriffs auf verwandte Warnungen und Daten auf bestimmte Azure AD-Benutzergruppen mit [zugewiesenen ROLLEN-ROLLEN](rbac.md) 
 - Konfigurieren verschiedener Einstellungen für die automatische Korrektur für verschiedene Gerätegruppen
 - Zuweisen bestimmter Korrekturstufen, die während automatisierter Untersuchungen angewendet werden
-- Filtern Sie in einer Untersuchung die **Liste Geräte** mithilfe des Gruppenfilters nach **bestimmten Gerätegruppen.**
+- Filtern Sie in einer Untersuchung die **Liste Geräte mithilfe** des Gruppenfilters nach **bestimmten Gerätegruppen.**
 
 Sie können Gerätegruppen im Kontext des rollenbasierten Zugriffs (Role-Based Access, RBAC) erstellen, um zu steuern, wer bestimmte Aktionen ergreifen kann, oder Informationen sehen, indem Sie die Gerätegruppen einer Benutzergruppe zuweisen. Weitere Informationen finden Sie unter [Verwalten des Portalzugriffs mithilfe der rollenbasierten Zugriffssteuerung](rbac.md).
 
@@ -81,18 +81,34 @@ Im Rahmen des Erstellens einer Gerätegruppe werden Sie:
 
 Sie können die Rangfolge einer Gerätegruppe höher oder tieferstufen, sodass sie beim Abgleich eine höhere oder niedrigere Priorität hat. Wenn ein Gerät mit mehreren Gruppen abgestimmt ist, wird es nur der gruppe mit der höchsten Rangranggruppe hinzugefügt. Sie können auch Gruppen bearbeiten und löschen.
 
+
+
 >[!WARNING]
 >Das Löschen einer Gerätegruppe kann sich auf E-Mail-Benachrichtigungsregeln auswirken. Wenn eine Gerätegruppe unter einer E-Mail-Benachrichtigungsregel konfiguriert ist, wird sie aus dieser Regel entfernt. Wenn die Gerätegruppe die einzige Gruppe ist, die für eine E-Mail-Benachrichtigung konfiguriert ist, wird diese E-Mail-Benachrichtigungsregel zusammen mit der Gerätegruppe gelöscht.
 
 Standardmäßig sind Gerätegruppen für alle Benutzer mit Portalzugriff zugänglich. Sie können das Standardverhalten ändern, indem Sie der Gerätegruppe Azure AD-Benutzergruppen zuweisen.
 
-Geräte, die nicht mit Gruppen übereinstimmen, werden der Gruppe Nicht gruppierende Geräte (Standard)-Gruppe hinzugefügt. Sie können den Rang dieser Gruppe nicht ändern oder löschen. Sie können jedoch die Behebungsstufe dieser Gruppe ändern und die Azure AD-Benutzergruppen definieren, die auf diese Gruppe zugreifen können.
+Geräte, die nicht mit Gruppen übereinstimmen, werden der Gruppe Nichtgruppierte Geräte (Standard)-Gruppe hinzugefügt. Sie können den Rang dieser Gruppe nicht ändern oder löschen. Sie können jedoch die Behebungsstufe dieser Gruppe ändern und die Azure AD-Benutzergruppen definieren, die auf diese Gruppe zugreifen können.
 
 >[!NOTE]
 > Das Anwenden von Änderungen an der Gerätegruppenkonfiguration kann bis zu mehrere Minuten dauern.
+
+
+### <a name="add-device-group-definitions"></a>Hinzufügen von Gerätegruppendefinitionen
+Gerätegruppendefinitionen können auch mehrere Werte für jede Bedingung enthalten. Sie können mehrere Tags, Gerätenamen und Domänen auf die Definition einer einzelnen Gerätegruppe festlegen.
+
+1. Erstellen Sie eine neue Gerätegruppe, und wählen Sie dann Die Registerkarte **Geräte** aus.
+2. Fügen Sie den ersten Wert für eine der Bedingungen hinzu.
+3. Wählen `+` Sie diese Option aus, um weitere Zeilen desselben Eigenschaftentyps hinzuzufügen.
+
+>[!TIP]
+> Verwenden Sie den Operator "OR" zwischen Zeilen desselben Bedingungstyps, der mehrere Werte pro Eigenschaft zulässt.
+> Sie können bis zu 10 Zeilen (Werte) für jeden Eigenschaftentyp hinzufügen – Tag, Gerätename, Domäne.
+
+Weitere Informationen zum Verknüpfen mit Gerätegruppendefinitionen finden Sie unter [Device groups - Microsoft 365 security](https://sip.security.microsoft.com/homepage).
 
 ## <a name="related-topics"></a>Verwandte Themen
 
 - [Verwalten des Portalzugriffs mithilfe der rollenbasierten Zugriffssteuerung](rbac.md)
 - [Erstellen und Verwalten von Gerätekategorien](machine-tags.md)
-- [Abrufen einer Liste der Mandantengerätegruppen mithilfe der Graph-API](https://docs.microsoft.com/graph/api/device-list-memberof)
+- [Abrufen einer Liste der Mandantengerätegruppen mithilfe Graph API](https://docs.microsoft.com/graph/api/device-list-memberof)

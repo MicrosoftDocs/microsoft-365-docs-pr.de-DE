@@ -16,12 +16,12 @@ ms.collection:
 localization_priority: None
 description: Erfahren Sie, wie Sie SharePoint als Lerninhaltsquelle für Microsoft Viva Learning (Vorschau) konfigurieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: da75ec0573519ed73507994afeac995c0461de0c
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: fc702f57b75b78ab523226ba7d8a8eb6505f2975
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100962"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244131"
 ---
 # <a name="coming-soon-configure-sharepoint-as-a-learning-content-source-for-microsoft-viva-learning-preview"></a>In Kürze: Konfigurieren SharePoint als Lerninhaltsquelle für Microsoft Viva Learning (Vorschau)
 
@@ -40,7 +40,7 @@ Viva Learning (Preview) unterstützt die folgenden Dokumenttypen:
 - Audio (.m4a)
 - Video (.mov, .mp4, .avi)
 
-Weitere Informationen finden Sie in der [SharePoint Onlinedokumentation](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498). 
+Weitere Informationen finden Sie unter [SharePoint Limits](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits?redirectSourcePath=%252farticle%252fSharePoint-Online-limits-8f34ff47-b749-408b-abc0-b605e1f6d498). 
 
 ## <a name="permissions"></a>Berechtigungen
 
@@ -70,11 +70,11 @@ Führen Sie die folgenden SharePoint aus, um die Inhalte als Lerninhaltsquellen 
 
 1.  Wechseln Sie in der linken Navigation des Microsoft 365 Admin Center zu **Einstellungen**  >  **Organisationseinstellungen**.
  
-2.  Wählen Sie **auf der** Seite Organisationseinstellungen auf der Registerkarte **Dienste** die Option **Lern-App (Vorschau)** aus.
+2.  Wählen Sie **auf der** Seite Organisationseinstellungen auf der Registerkarte **Dienste** die Option Viva **Learning (Vorschau)** aus.
 
      ![Einstellungen seite im Microsoft 365 Admin Center, in dem Das Viva Learning aufgeführt ist.](../media/learning/learning-sharepoint-configure1.png)
 
-3.  Stellt im Bereich Lern-App **(Vorschau)** unter SharePoint die Website-URL für die SharePoint-Website zur Verfügung, auf der Sie ein zentrales Repository von Viva Learning erstellen möchten.
+3.  Im **Bereich "Viva Learning(Preview)"** unter SharePoint wird die Website-URL zur SharePoint-Website angegeben, auf der Sie ein zentrales Repository von Viva Learning (Preview) erstellen möchten.
 
      ![Lernbereich im Microsoft 365 Admin Center, in dem SharePoint angezeigt wird.](../media/learning/learning-sharepoint-configure2.png)
 

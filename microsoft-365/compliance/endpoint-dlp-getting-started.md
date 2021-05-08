@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Richten Sie Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ein, um Dateiaktivitäten zu überwachen und schützende Maßnahmen für diese Dateien auf Endpunkten anzuwenden.
-ms.openlocfilehash: 0410d4d09354ca716c83a63da9c1fdd22eda8551
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 118c2f3f87df5ac9930bebd1338157d323b1e5e1
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114113"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52259499"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Erste Schritte mit Endpunkt-DLP
 
@@ -102,7 +102,7 @@ Vergewissern Sie sich, dass die Windows 10-Geräte, auf die Sie Endpunkt-DLP anw
     - Für Windows 10 2004 – KB4568831, KB4577063
     - Für Geräte mit Office 2016 (und keine andere Office-Version) – KB4577063 
 
-4. Alle Geräte müssen in [Azure Active Directory (Azure AD)](/azure/active-directory/devices/concept-azure-ad-join), oder Azure AD Hybrid eingebunden sein.
+4. Alle Geräte müssen in [Azure Active Directory (Azure AD) eingebunden sein](/azure/active-directory/devices/concept-azure-ad-join), in AD eingebunden, hybrid, in Azure AD eingebunden, oder in AAD registriert sein.
 
 5. Installieren Sie den Microsoft Edge-Browser auf dem Endpunktgerät, um Richtlinienaktionen für die Aktivität „Hochladen in die Cloud“ durchzusetzen. Weitere Informationen finden Sie unter [Herunterladen des auf Chromium basierenden neuen Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium).
 

@@ -36,7 +36,7 @@
 |TEAMS|✔|✔|✔|✔|Nicht zutreffend|
 |TO-DO|✔|✔|✔|Nicht zutreffend|✔|
 |VISIO|Nicht zutreffend|✔|Nicht zutreffend|✔|Nicht zutreffend|
-|WHITEBOARD|Nicht zutreffend|✔|Nicht zutreffend|Nicht zutreffend|✔|
+|WHITEBOARD|✔|✔|Nicht zutreffend|Nicht zutreffend|✔|
 |WORD|✔|✔|✔|✔|✔|
 |WORKPLACE ANALYTICS|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
 |YAMMER|✔|✔|✔|✔|–|

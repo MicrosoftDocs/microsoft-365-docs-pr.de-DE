@@ -7,21 +7,22 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 826e1456de2aadf4031a91e30925a1e771d44f70
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 143b0cb4bac1d3307e440f98fa4278f38e07c7f2
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765587"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52269540"
 ---
-# <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>Verwalten von Updates für mobile Geräte und virtuelle Computer (VMs)
+# <a name="manage-updates-for-mobile-devices-and-virtual-machines-vms"></a>Verwalten von Updates für Mobilgeräte und virtuelle Computer (VMs)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,7 +41,7 @@ Es gibt zwei Einstellungen, die für diese Geräte nützlich sind:
 Die folgenden Artikel können auch in diesen Situationen hilfreich sein:
 - [Konfigurieren geplanter Und Nachholscans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
 - [Verwalten von Updates für veraltete Endpunkte](manage-outdated-endpoints-microsoft-defender-antivirus.md)
-- [Bereitstellungshandbuch für Microsoft Defender Antivirus in einer Virtuellen Desktopinfrastruktur (Virtual Desktop Infrastructure, VDI)-Umgebung](deployment-vdi-microsoft-defender-antivirus.md)
+- [Bereitstellungshandbuch für Microsoft Defender Antivirus in einer VDI-Umgebung (Virtual Desktop Infrastructure)](deployment-vdi-microsoft-defender-antivirus.md)
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>Opt in to Microsoft Update on mobile computers without a WSUS connection
 

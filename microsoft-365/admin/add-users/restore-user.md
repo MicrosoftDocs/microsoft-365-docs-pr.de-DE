@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
 description: Erfahren Sie, wie Sie gelöschte Benutzerkonten und alle zugeordneten Daten wiederherstellen.
-ms.openlocfilehash: 4893f7468a8ab5919dd3be1cce233917323f2076
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 9cdc4100f963ed450b50caa0f07a3863bc87992d
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023965"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244032"
 ---
 # <a name="restore-a-user"></a>Wiederherstellen eines Benutzers
    
@@ -42,30 +42,12 @@ Nachfolgend ein paar Tipps:
     
 ## <a name="restore-one-or-more-user-accounts"></a>Wiederherstellen eines oder mehrerer Benutzerkonten
 
-Sie müssen ein globaler Microsoft 365-Administrator oder Benutzerverwaltungsadministrator sein, um diese Schritte ausführen zu können. 
-  
- 
-::: moniker range="o365-worldwide"
+Sie müssen ein globaler Microsoft 365 oder Benutzerverwaltungsadministrator sein, um diese Schritte ausführen zu können. 
 
 1. Wechseln Sie im Admin Center zur **Seite** Benutzer \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">gelöschte</a> Benutzer.
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=848041)und wählen Sie **dann Benutzer** \> **Gelöschte Benutzer aus.**
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=850627)und wählen Sie **dann Benutzer** \> **Gelöschte Benutzer aus.**
-
-::: moniker-end
-
 2. Wählen Sie **auf der** Seite Gelöschte Benutzer die Namen der Benutzer aus, die Sie wiederherstellen möchten, und wählen Sie dann **Wiederherstellen aus.**
     
- 
 3. Folgen Sie den Aufforderungen zum Festlegen ihres Kennworts, und wählen Sie dann **Wiederherstellen aus.**
     
 4. Wenn der Benutzer erfolgreich wiederhergestellt wurde, wählen Sie **E-Mail senden und schließen aus.** Wenn ein Namens- oder Proxyadressenkonflikt vorliegt, lesen Sie die nachstehenden Anweisungen, um zu erfahren, wie Sie diese Konten wiederherstellen können.
@@ -73,31 +55,12 @@ Sie müssen ein globaler Microsoft 365-Administrator oder Benutzerverwaltungsadm
 Nachdem Sie einen Benutzer wiederhergestellt haben, müssen Sie ihn darüber informieren, dass sich sein Kennwort geändert hat, und folgen Sie ihm.
   
 ## <a name="restore-a-user-that-has-a-user-name-conflict"></a>Wiederherstellen eines Benutzers mit einem Benutzernamenskonflikt
-<a name="RestoreUserNameConflict"> </a>
 
 Ein Benutzernamenskonflikt tritt auf, wenn Sie ein Benutzerkonto löschen, ein neues Benutzerkonto mit demselben Benutzernamen (für denselben Benutzer oder für einen anderen Benutzer mit einem ähnlichen Namen) erstellen und dann später versuchen, das gelöschte Konto wiederherzustellen.
   
 Um diesen Konflikt zu lösen, können Sie entweder das aktive Benutzerkonto durch das wiederherzustellende Konto ersetzen oder dem Konto, das Sie wiederherstellen, einen anderen Benutzernamen zuweisen, damit nicht zwei Konten mit demselben Benutzernamen vorhanden sind. Gehen Sie dazu wie folgt vor:
-  
-
-::: moniker range="o365-worldwide"
 
 1. Wechseln Sie im Admin Center zur **Seite** Benutzer \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">gelöschte</a> Benutzer.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=848041)und wählen Sie **dann Benutzer** \> **Gelöschte Benutzer aus.**
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=850627)und wählen Sie **dann Benutzer** \> **Gelöschte Benutzer aus.**
-
-::: moniker-end
-
   
 2. Wählen Sie **auf der Seite** Gelöschte Benutzer die Namen der Benutzer aus, die Sie wiederherstellen möchten, und wählen Sie dann **Wiederherstellen aus.**
     
@@ -118,26 +81,9 @@ Um diesen Konflikt zu lösen, können Sie entweder das aktive Benutzerkonto durc
 
 Ein Proxyadressenkonflikt tritt auf, wenn Sie ein Benutzerkonto löschen, das eine Proxyadresse enthält, dieselbe Proxyadresse einem anderen Konto zuweisen und dann versuchen, das gelöschte Konto wiederherzustellen. Führen Sie die nachstehenden Schritte aus, um das Problem zu beheben.
   
-Dazu müssen Sie [über Administratorberechtigungen](about-admin-roles.md) in Microsoft 365 verfügen. 
-  
-
-::: moniker range="o365-worldwide"
+Dazu müssen [Sie über Administratorberechtigungen](about-admin-roles.md) Microsoft 365 verfügen. 
 
 1. Wechseln Sie im Admin Center zur **Seite** Benutzer \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2071581" target="_blank">gelöschte</a> Benutzer.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=848041)und wählen Sie **dann Benutzer** \> **Gelöschte Benutzer aus.**
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie zum [Admin Center,](https://go.microsoft.com/fwlink/p/?linkid=850627)und wählen Sie **dann Benutzer** \> **Gelöschte Benutzer aus.**
-
-::: moniker-end
 
 2. Wählen Sie auf der Seite **Gelöschte Benutzer** den Benutzer aus, den Sie wiederherstellen möchten, und wählen Sie dann **Wiederherstellen** aus. 
     
