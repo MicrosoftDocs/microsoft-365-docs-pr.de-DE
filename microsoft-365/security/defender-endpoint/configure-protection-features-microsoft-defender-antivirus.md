@@ -7,21 +7,22 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 9fc51682b659670a21c3c293ea8996beb228802a
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 53b1e1474e0870388ec1cfaf214190eb0bdf7beb
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765071"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274605"
 ---
-# <a name="configure-behavioral-heuristic-and-real-time-protection"></a>Konfigurieren von Verhaltens-, Heuristik- und Echtzeitschutz
+# <a name="configure-behavioral-heuristic-and-real-time-protection"></a>Konfigurieren von verhaltensbasiertem, heuristischem und Echtzeitschutz
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,5 +47,5 @@ Informationen zum Aktivieren und Konfigurieren des cloudbasierten Schutzes von M
 
  Thema | Beschreibung
 ---|---
-[Erkennen und Blockieren potenziell unerwünschter Anwendungen](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | Erkennen und Blockieren von Apps, die in Ihrem Netzwerk möglicherweise nicht erwünscht sind, z. B. Adware, Browsermodifizierer und Symbolleisten sowie nicht autorisierte oder gefälschte Antiviren-Apps
+[Erkennen und Blockieren von potenziell unerwünschten Anwendungen](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md) | Erkennen und Blockieren von Apps, die in Ihrem Netzwerk möglicherweise nicht erwünscht sind, z. B. Adware, Browsermodifizierer und Symbolleisten sowie nicht autorisierte oder gefälschte Antiviren-Apps
 [Aktivieren und Konfigurieren von Microsoft Defender Antivirus-Schutzfunktionen](configure-real-time-protection-microsoft-defender-antivirus.md) | Aktivieren und Konfigurieren von Echtzeitschutz, Heuristik und anderen immer aktivierten Microsoft Defender Antivirus-Überwachungsfeatures

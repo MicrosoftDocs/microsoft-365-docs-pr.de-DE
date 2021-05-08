@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 15909684d07bac46fd42163cee545bc4752b61d4
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 87305f28975b8997afce211ffa4de3711d26be6b
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995009"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246368"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Konfigurieren erweiterter Features in Defender for Endpoint
 
@@ -75,13 +75,13 @@ Diese Konfiguration kann für Szenarien verwendet werden, in denen lokale SOC-Vo
 >[!NOTE]
 >Das Ändern dieser Einstellung wirkt sich nur auf zukünftige Warnungskorrelation aus.
 
-## <a name="enable-edr-in-block-mode"></a>Aktivieren von EDR im Blockmodus
-Endpunkterkennung und -reaktion (Endpoint Detection and Response, EDR) im Blockmodus bietet Schutz vor schädlichen Artefakten, auch wenn Microsoft Defender Antivirus im passiven Modus ausgeführt wird. Bei aktivierter EDR im Blockmodus werden schädliche Artefakte oder Verhaltensweisen blockiert, die auf einem Gerät erkannt werden. EDR im Blockmodus arbeitet hinter den Kulissen, um bösartige Artefakte zu bewerkden, die nach der Verletzung erkannt werden.
+## <a name="enable-edr-in-block-mode"></a>Aktivieren EDR im Blockmodus
+Endpunkterkennung und -reaktion (EDR) im Blockmodus bietet Schutz vor schädlichen Artefakten, auch wenn Microsoft Defender Antivirus im passiven Modus ausgeführt wird. Bei aktivierter EDR Blockmodus schädliche Artefakte oder Verhaltensweisen blockiert, die auf einem Gerät erkannt werden. EDR im Blockmodus funktioniert hinter den Kulissen, um bösartige Artefakte zu bewerkden, die nach der Verletzung erkannt werden.
 
 
 ## <a name="autoresolve-remediated-alerts"></a>Behebung von Warnungen durch Autoresolve
 
-Für Mandanten, die unter oder nach Windows 10, Version 1809, erstellt wurden, ist die automatische Untersuchungs- und Behebungsfunktion standardmäßig so konfiguriert, dass Warnungen aufgelöst werden, bei denen der Ergebnisstatus der automatisierten Analyse "Keine Bedrohungen gefunden" oder "Behoben" ist.  Wenn Warnungen nicht automatisch aufgelöst werden sollen, müssen Sie das Feature manuell deaktivieren.
+Für Mandanten, die mit oder nach Windows 10, Version 1809, erstellt wurden, ist die automatische Untersuchungs- und Behebungsfunktion standardmäßig so konfiguriert, dass Warnungen aufgelöst werden, bei denen der Ergebnisstatus der automatisierten Analyse "Keine Bedrohungen gefunden" oder "Behoben" ist.  Wenn Warnungen nicht automatisch aufgelöst werden sollen, müssen Sie das Feature manuell deaktivieren.
 
 > [!TIP]
 > Für Mandanten, die vor dieser Version erstellt wurden, müssen Sie dieses Feature manuell auf der Seite Erweiterte [Features aktivieren.](https://securitycenter.windows.com/preferences2/integration)
@@ -95,14 +95,14 @@ Für Mandanten, die unter oder nach Windows 10, Version 1809, erstellt wurden, i
 
 Das Blockieren ist nur verfügbar, wenn Ihre Organisation die folgenden Anforderungen erfüllt:
 
-- Verwendet Microsoft Defender Antivirus als aktive Antischasoftwarelösung und,
+- Verwendet Microsoft Defender Antivirus als aktive Antischalwarelösung und,
 - Das cloudbasierte Schutzfeature ist aktiviert
 
 Mit diesem Feature können Sie potenziell schädliche Dateien in Ihrem Netzwerk blockieren. Durch das Blockieren einer Datei wird verhindert, dass sie auf Geräten in Ihrer Organisation gelesen, geschrieben oder ausgeführt wird.
 
 So aktivieren **Sie Dateien zulassen oder** blockieren:
 
-1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Erweiterte Features**  >  **Zulassen oder Blockieren von Datei aus.**
+1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Erweiterte Features** Datei zulassen oder blockieren  >  **aus.**
 
 1. Umschalten der Einstellung zwischen **Ein** und **Aus**.
 
@@ -116,7 +116,7 @@ Nachdem Sie dieses Feature aktivieren, können [Sie](respond-file-alerts.md#allo
 
 Wenn Sie dieses Feature aktivieren, können Sie Indikatoren für IP-Adressen, Domänen oder URLs erstellen, die basierend auf Ihrer benutzerdefinierten Indikatorliste bestimmen, ob sie zugelassen oder blockiert werden.
 
-Um dieses Feature verwenden zu können, müssen auf Geräten Windows 10, Version 1709 oder höher, ausgeführt werden. Sie sollten auch über Netzwerkschutz im Blockmodus und Version 4.18.1906.3 oder höher der Antischalwareplattform verfügen, siehe [KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834).
+Um dieses Feature verwenden zu können, müssen Geräte Windows 10 Version 1709 oder höher ausgeführt werden. Sie sollten auch über Netzwerkschutz im Blockmodus und Version 4.18.1906.3 oder höher der Antischalwareplattform verfügen, siehe [KB 4052623](https://go.microsoft.com/fwlink/?linkid=2099834).
 
 Weitere Informationen finden Sie unter [Manage indicators](manage-indicators.md).
 
@@ -126,16 +126,16 @@ Weitere Informationen finden Sie unter [Manage indicators](manage-indicators.md)
 ## <a name="tamper-protection"></a>Schutz vor Manipulationen
 Bei einigen Arten von Cyberangriffen versuchen schlechte Akteure, Sicherheitsfeatures, z. B. Virenschutz, auf Ihren Computern zu deaktivieren. Schlechte Akteure möchten Ihre Sicherheitsfeatures deaktivieren, um leichteren Zugriff auf Ihre Daten zu erhalten, Schadsoftware zu installieren oder Ihre Daten, Identität und Geräte anderweitig auszunutzen.
 
-Manipulationsschutz sperrt Im Wesentlichen Microsoft Defender Antivirus und verhindert, dass Ihre Sicherheitseinstellungen über Apps und Methoden geändert werden.
+Der Manipulationsschutz sperrt Microsoft Defender Antivirus und verhindert, dass Ihre Sicherheitseinstellungen über Apps und Methoden geändert werden.
 
-Dieses Feature ist verfügbar, wenn Ihre Organisation Microsoft Defender Antivirus verwendet und der cloudbasierte Schutz aktiviert ist. Weitere Informationen finden Sie unter [Use next-generation technologies in Microsoft Defender Antivirus through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md).
+Dieses Feature ist verfügbar, wenn Ihre Organisation Microsoft Defender Antivirus und der cloudbasierte Schutz aktiviert ist. Weitere Informationen finden Sie unter [Use next-generation technologies in Microsoft Defender Antivirus through cloud-delivered protection](cloud-protection-microsoft-defender-antivirus.md).
 
 Halten Sie den Manipulationsschutz aktiviert, um unerwünschte Änderungen an Ihrer Sicherheitslösung und ihren wesentlichen Features zu verhindern.
 
 
 ## <a name="show-user-details"></a>Anzeigen von Benutzerdetails
 
-Aktivieren Sie dieses Feature, damit Benutzerdetails in Azure Active Directory gespeichert sind. Details umfassen das Bild, den Namen, den Titel und die Abteilungsinformationen eines Benutzers bei der Untersuchung von Benutzerkontenentitäten. Informationen zum Benutzerkonto finden Sie in den folgenden Ansichten:
+Aktivieren Sie dieses Feature, damit Benutzerdetails angezeigt werden, die in der Azure Active Directory. Details umfassen das Bild, den Namen, den Titel und die Abteilungsinformationen eines Benutzers bei der Untersuchung von Benutzerkontenentitäten. Informationen zum Benutzerkonto finden Sie in den folgenden Ansichten:
 
 - Dashboard für Sicherheitsvorgänge
 - Warnungswarteschlange
@@ -144,12 +144,12 @@ Aktivieren Sie dieses Feature, damit Benutzerdetails in Azure Active Directory g
 Weitere Informationen finden Sie unter [Untersuchen eines Benutzerkontos](investigate-user.md).
 
 
-## <a name="skype-for-business-integration"></a>Skype for Business-Integration
+## <a name="skype-for-business-integration"></a>Skype for Business Integration
 
-Wenn Sie die Skype for Business-Integration aktivieren, können Sie mit Benutzern über Skype for Business, E-Mail oder Telefon kommunizieren. Dies kann nützlich sein, wenn Sie mit dem Benutzer kommunizieren und Risiken mindern müssen.
+Wenn Sie Skype for Business integration aktivieren, können Sie mit Benutzern über Skype for Business, E-Mail oder Telefon kommunizieren. Dies kann nützlich sein, wenn Sie mit dem Benutzer kommunizieren und Risiken mindern müssen.
 
 > [!NOTE]
-> Wenn ein Gerät vom Netzwerk isoliert wird, gibt es ein Popup, in dem Sie die Outlook- und Skype-Kommunikation aktivieren können, wodurch die Kommunikation mit dem Benutzer ermöglicht wird, während er vom Netzwerk getrennt ist. Diese Einstellung gilt für die Skype- und Outlook-Kommunikation, wenn sich Geräte im Isolationsmodus befinden.
+> Wenn ein Gerät vom Netzwerk isoliert wird, gibt es ein Popup, in dem Sie die Outlook- und Skype-Kommunikation aktivieren können, wodurch die Kommunikation mit dem Benutzer ermöglicht wird, während die Verbindung mit dem Netzwerk getrennt ist. Diese Einstellung gilt für Skype und Outlook Kommunikation, wenn sich Geräte im Isolationsmodus befinden.
 
 ## <a name="microsoft-defender-for-identity-integration"></a>Microsoft Defender for Identity-Integration
 
@@ -160,27 +160,27 @@ Die Integration in Microsoft Defender for Identity ermöglicht es Ihnen, direkt 
 
 ## <a name="office-365-threat-intelligence-connection"></a>Office 365 Threat Intelligence-Verbindung
 
-Dieses Feature ist nur verfügbar, wenn Sie über ein aktives Office 365 E5 oder das Threat Intelligence-Add-On verfügen. Weitere Informationen finden Sie auf der Office 365 Enterprise E5-Produktseite.
+Dieses Feature ist nur verfügbar, wenn Sie über eine aktive Office 365 E5 oder das Threat Intelligence-Add-On verfügen. Weitere Informationen finden Sie auf der Office 365 Enterprise E5-Produktseite.
 
-Wenn Sie dieses Feature aktivieren, können Sie Daten aus Microsoft Defender für Office 365 in das Microsoft Defender Security Center integrieren, um eine umfassende Sicherheitsuntersuchung auf Office 365-Postfächern und Windows-Geräten durchführen zu können.
+Wenn Sie dieses Feature aktivieren, können Sie Daten von Microsoft Defender for Office 365 in Microsoft Defender Security Center integrieren, um eine umfassende Sicherheitsuntersuchung für Office 365 Postfächer und Windows durchführen.
 
 > [!NOTE]
 > Sie benötigen die entsprechende Lizenz, um dieses Feature zu aktivieren.
 
 Um kontextbezogene Geräteintegration in Office 365 Threat Intelligence zu erhalten, müssen Sie die Defender for Endpoint-Einstellungen im Security & Compliance-Dashboard aktivieren. Weitere Informationen finden Sie unter [Threat investigation and response](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-ti).
 
-## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft Threat Experts – Benachrichtigungen über gezielte Angriffe
+## <a name="microsoft-threat-experts---targeted-attack-notifications"></a>Microsoft-Bedrohungsexperten – Benachrichtigungen über gezielte Angriffe
 
-Von den beiden Microsoft Threat Expert-Komponenten ist eine gezielte Angriffsbenachrichtigung allgemein verfügbar. Die Experten-bei-Bedarf-Funktion befindet sich noch in der Vorschau. Sie können die Experten-bei-Bedarf-Funktion nur verwenden, wenn Sie eine Vorschau beantragt haben und Ihre Anwendung genehmigt wurde. Sie können gezielte Angriffsbenachrichtigungen von Microsoft Threat Experts über das Benachrichtigungsdashboard ihres Defender for Endpoint-Portals und per E-Mail empfangen, wenn Sie es konfigurieren.
+Von den beiden Microsoft Threat Expert-Komponenten ist eine gezielte Angriffsbenachrichtigung allgemein verfügbar. Die Experten-bei-Bedarf-Funktion befindet sich noch in der Vorschau. Sie können die Experten-bei-Bedarf-Funktion nur verwenden, wenn Sie eine Vorschau beantragt haben und Ihre Anwendung genehmigt wurde. Sie können gezielte Angriffsbenachrichtigungen von Microsoft-Bedrohungsexperten über das Benachrichtigungsdashboard ihres Defender for Endpoint-Portals und per E-Mail empfangen, wenn Sie es konfigurieren.
 
 > [!NOTE]
-> Die Microsoft Threat Experts-Funktion in Defender for Endpoint ist mit einer E5-Lizenz für [Enterprise Mobility + Security verfügbar.](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
+> Die Microsoft-Bedrohungsexperten in Defender for Endpoint ist mit einer E5-Lizenz für [Enterprise Mobility + Security.](https://www.microsoft.com/cloud-platform/enterprise-mobility-security)
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 
-Wenn Sie diese Einstellung aktivieren, werden Defender for Endpoint-Signale an Microsoft Cloud App Security weitergeleitet, um einen tieferen Einblick in die Verwendung von Cloudanwendung zu erhalten. Weitergeleitete Daten werden am gleichen Speicherort wie Ihre Cloud App Security-Daten gespeichert und verarbeitet.
+Wenn Sie diese Einstellung aktivieren, werden Defender for Endpoint-Signale Microsoft Cloud App Security, um einen tieferen Einblick in die Verwendung von Cloudanwendung zu erhalten. Weitergeleitete Daten werden an demselben Speicherort gespeichert und verarbeitet wie Cloud App Security Daten.
 
 > [!NOTE]
-> Dieses Feature ist mit einer E5-Lizenz für [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) auf Geräten mit Windows 10, Version 1709 (Os Build 16299.1085 mit [KB4493441),](https://support.microsoft.com/help/4493441)Windows 10, verfügbar. Version 1803 (Betriebssystem build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, Version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)) oder höher Windows 10-Versionen.
+> Dieses Feature ist mit einer E5-Lizenz für [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) auf Geräten verfügbar, die Windows 10, Version 1709 (Os Build 16299.1085 mit [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, Version 1803 (Betriebssystem build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, Version 1809 (Os Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)) oder höher Windows 10 Versionen.
 
 ## <a name="microsoft-secure-score"></a>Microsoft-Sicherheitsbewertung
 
@@ -204,15 +204,15 @@ Blockieren Sie den Zugriff auf Websites, die unerwünschte Inhalte enthalten, un
 
 
 ## <a name="share-endpoint-alerts-with-microsoft-compliance-center"></a>Freigeben von Endpunktwarnungen mit Microsoft Compliance Center
-Weitergeleitet Endpunktsicherheitswarnungen und deren Triagestatus an das Microsoft Compliance Center, sodass Sie Insider-Risikomanagementrichtlinien mit Warnungen verbessern und interne Risiken vor schaden verursachen können. Weitergeleitete Daten werden am gleichen Speicherort wie Ihre Office 365-Daten verarbeitet und gespeichert.
+Weitergeleitet Endpunktsicherheitswarnungen und deren Triagestatus an das Microsoft Compliance Center, sodass Sie Insider-Risikomanagementrichtlinien mit Warnungen verbessern und interne Risiken vor schaden verursachen können. Weitergeleitete Daten werden verarbeitet und am gleichen Speicherort wie Ihre Office 365 gespeichert.
 
 Nach dem Konfigurieren der [Sicherheitsrichtlinienverletzungsindikatoren](/microsoft-365/compliance/insider-risk-management-settings#indicators) in den Einstellungen für das Insiderrisikomanagement werden Defender for Endpoint-Warnungen für das Insiderrisikomanagement für anwendbare Benutzer freigegeben.
 
 
 
-## <a name="microsoft-intune-connection"></a>Microsoft Intune-Verbindung
+## <a name="microsoft-intune-connection"></a>Microsoft Intune Verbindung
 
-Defender for Endpoint kann in [Microsoft Intune](https://docs.microsoft.com/intune/what-is-intune) integriert werden, um den [risikobasierten bedingten](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)Zugriff auf Geräte zu ermöglichen. Wenn Sie [dieses Feature aktivieren,](configure-conditional-access.md)können Sie Defender for Endpoint-Geräteinformationen für Intune freigeben und so die Richtliniendurchsetzung verbessern.
+Defender for Endpoint kann in Microsoft Intune [integriert](https://docs.microsoft.com/intune/what-is-intune) werden, um den [risikobasierten bedingten](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)Zugriff auf Geräte zu ermöglichen. Wenn Sie [dieses Feature aktivieren,](configure-conditional-access.md)können Sie Defender for Endpoint-Geräteinformationen für Intune freigeben und so die Richtliniendurchsetzung verbessern.
 
 > [!IMPORTANT]
 > Sie müssen die Integration in Intune und Defender for Endpoint aktivieren, um dieses Feature verwenden zu können. Weitere Informationen zu bestimmten Schritten finden Sie unter [Configure Conditional Access in Defender for Endpoint](configure-conditional-access.md).
@@ -220,7 +220,7 @@ Defender for Endpoint kann in [Microsoft Intune](https://docs.microsoft.com/intu
 Dieses Feature ist nur verfügbar, wenn Sie über Folgendes verfügen:
 
 - Ein lizenzierter Mandant für Enterprise Mobility + Security E3 und Windows E5 (oder Microsoft 365 Enterprise E5)
-- Eine aktive Microsoft Intune-Umgebung, bei der Intune-verwaltete Windows [10-Geräte Azure AD beigetreten sind.](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/)
+- Eine aktive Microsoft Intune mit Intune-verwalteten Windows 10 [Azure AD-beigetretenen Geräten.](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join/)
 
 
 ### <a name="conditional-access-policy"></a>Richtlinie für bedingten Zugriff
@@ -234,9 +234,12 @@ Wenn Sie die Intune-Integration aktivieren, erstellt Intune automatisch eine kla
 ## <a name="device-discovery"></a>Geräteermittlung
 Hilft Ihnen, nicht verwaltete Geräte zu finden, die mit Ihrem Unternehmensnetzwerk verbunden sind, ohne dass zusätzliche Appliances oder aufwändige Prozessänderungen nötig sind. Mithilfe von integrierten Geräten können Sie nicht verwaltete Geräte in Ihrem Netzwerk finden und Sicherheitsrisiken und Risiken bewerten. Weitere Informationen finden Sie unter [Device discovery](device-discovery.md).
 
+> [!NOTE]
+> Sie können filter immer anwenden, um nicht verwaltete Geräte aus der Gerätebestandsliste auszuschließen. Sie können auch die Spalte Onboardingstatus in API-Abfragen verwenden, um nicht verwaltete Geräte herausfiltern. 
+
 ## <a name="preview-features"></a>Vorschaufeatures
 
-Erfahren Sie mehr über neue Features in der Defender for Endpoint-Vorschauversion, und testen Sie als erstes die kommenden Features, indem Sie die Vorschaufunktion aktivieren.
+Erfahren Sie mehr über neue Features in der Defender for Endpoint-Vorschauversion. Probieren Sie anstehende Features aus, indem Sie die Vorschaufunktion aktivieren.
 
 Sie haben Zugriff auf anstehende Features, zu denen Sie Feedback geben können, um die Allgemeine Erfahrung zu verbessern, bevor Features allgemein verfügbar sind.
 

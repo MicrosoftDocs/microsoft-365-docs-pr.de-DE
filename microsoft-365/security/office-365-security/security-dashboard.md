@@ -3,7 +3,7 @@ title: Übersicht über das Sicherheitsdashboard
 f1.keywords:
 - NOCSH
 ms.author: siosulli
-author: denisebmsft
+author: siosulli
 manager: dansimp
 audience: ITPro
 ms.topic: article
@@ -19,12 +19,12 @@ ms.custom:
 description: Verwenden Sie das neue Sicherheitsdashboard, um den Status von Office 365 Threat Protection zu überprüfen und Sicherheitswarnungen anzuzeigen und zu reagieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7114776f686d25808c141a07b8cb2868cc67615d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8c9a49b9b8fc1edd9b2928250e8cae135acb75f4
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205642"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274412"
 ---
 # <a name="security-dashboard"></a>Sicherheitsdashboard
 
@@ -87,7 +87,7 @@ Die Metriken werden wie in der folgenden Tabelle beschrieben berechnet:
 |---|---|
 |Gescannte Nachrichten|Anzahl der gescannten E-Mail-Nachrichten multipliziert mit der Anzahl der Empfänger|
 |Bedrohungen beendet|Anzahl der als Schadsoftware gekennzeichneten E-Mail-Nachrichten multipliziert mit der Anzahl der Empfänger|
-|Von [Defender für Office 365 blockiert ](defender-for-office-365.md)|Anzahl der von Defender for Office 365 blockierten E-Mail-Nachrichten multipliziert mit der Anzahl der Empfänger|
+|Von [Defender für Office 365 blockiert](defender-for-office-365.md)|Anzahl der von Defender for Office 365 blockierten E-Mail-Nachrichten multipliziert mit der Anzahl der Empfänger|
 |Nach der Zustellung entfernt|Anzahl der Nachrichten, die durch [automatisches](zero-hour-auto-purge.md) Löschen in null Stunden multipliziert mit der Anzahl der Empfänger entfernt wurden|
 
 ## <a name="malware"></a>Schadsoftware

@@ -24,7 +24,7 @@
 |POWER BI|Geplant|Geplant|Nicht zutreffend|Geplant|Geplant|
 |POWERPOINT|✔|Geplant|Geplant|Geplant|Geplant|
 |PROJECT|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Geplant|Nicht zutreffend|
-|PUBLISHER|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Geplant|Nicht zutreffend|
+|PUBLISHER|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|✔|Nicht zutreffend|
 |SHAREPOINT ADMIN|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Geplant|Nicht zutreffend|
 |SHAREPOINT|Geplant|Geplant|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
 |STICKY NOTES|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Geplant|
@@ -33,7 +33,7 @@
 |TEAMS|✔|✔|✔|Geplant|Nicht zutreffend|
 |TO-DO|Geplant|Geplant|Geplant|Nicht zutreffend|Geplant|
 |VISIO|Nicht zutreffend|✔|Nicht zutreffend|Geplant|Nicht zutreffend|
-|WHITEBOARD|Nicht zutreffend|Geplant|Nicht zutreffend|Nicht zutreffend|Geplant|
+|WHITEBOARD|✔|Geplant|Nicht zutreffend|Nicht zutreffend|Geplant|
 |WORD|✔|Geplant|Geplant|Geplant|✔|
 |WORKPLACE ANALYTICS|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
 |YAMMER|Geplant|Geplant|Geplant|Geplant|–|

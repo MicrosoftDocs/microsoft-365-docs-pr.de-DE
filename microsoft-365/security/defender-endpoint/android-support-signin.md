@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5f57d14427ef68280a065489e068955db9e5045a
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 18afd4aa160ec345839d23719d1b3fcce21654ec
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934801"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246356"
 ---
 # <a name="troubleshooting-issues-on-microsoft-defender-for-endpoint-on-android"></a>Problembehandlung bei Microsoft Defender for Endpoint unter Android
 
@@ -51,11 +51,11 @@ Unerwarteter Fehler, versuchen Sie es später
 
 **Ursache:**
 
-Auf Ihrem Gerät ist eine ältere Version der "Microsoft Authenticator"-App installiert.
+Sie haben eine ältere Version von "Microsoft Authenticator"-App auf Ihrem Gerät installiert.
 
 **Lösung:**
 
-Installieren Sie die neueste Version und [Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) aus dem Google Play Store, und versuchen Sie es erneut.
+Installieren Sie die neueste Version [und Microsoft Authenticator](https://play.google.com/store/apps/details?androidid=com.azure.authenticator) von Google Play Store und versuchen Sie es erneut.
 
 ## <a name="sign-in-failed---invalid-license"></a>Anmelden fehlgeschlagen – ungültige Lizenz
 
@@ -67,11 +67,15 @@ Installieren Sie die neueste Version und [Microsoft Authenticator](https://play.
 
 **Ursache:**
 
-Ihnen ist keine Microsoft 365-Lizenz zugewiesen, oder Ihre Organisation verfügt nicht über eine Lizenz für Microsoft 365 Enterprise-Abonnements.
+Ihnen ist keine Microsoft 365 zugewiesen, oder Ihre Organisation verfügt nicht über eine Lizenz für Microsoft 365 Enterprise Abonnement.
 
 **Lösung:**
 
 Weitere Informationen erhalten Sie von Ihrem Administrator.
+
+## <a name="report-unsafe-site"></a>Unsichere Website melden
+
+Phishingwebsites geben sich als vertrauenswürdige Websites aus, um Ihre persönlichen oder finanziellen Informationen zu erhalten. Besuchen Sie [die Seite Feedback zum Netzwerkschutz](https://www.microsoft.com/wdsi/filesubmission/exploitguard/networkprotection) bereitstellen, wenn Sie eine Website melden möchten, bei der es sich um eine Phishingwebsite handelt.
 
 ## <a name="phishing-pages-arent-blocked-on-some-oem-devices"></a>Phishingseiten werden auf einigen OEM-Geräten nicht blockiert
 

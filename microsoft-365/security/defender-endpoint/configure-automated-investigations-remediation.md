@@ -9,8 +9,8 @@ ms.technology: mde
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: deniseb
-author: denisebmsft
+author: JoeDavies-MSFT
+ms.author: josephd
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: how-to
 ms.date: 01/27/2021
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
-ms.openlocfilehash: 31a1c79440a8c1edc2bc8e2f2a163ded2a92fd64
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 23d6c8c87a6cbcc7b8060440ba2c0cae6182767d
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165765"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274544"
 ---
 # <a name="configure-automated-investigation-and-remediation-capabilities-in-microsoft-defender-for-endpoint"></a>Konfigurieren automatisierter Untersuchungs- und Korrekturfunktionen in Microsoft Defender for Endpoint
 
@@ -48,7 +48,7 @@ Zum Konfigurieren der automatisierten Untersuchung und Behebung
 3. Wählen Sie **im Abschnitt Allgemein** die Option Erweiterte Features **aus.**
 4. Aktivieren Sie sowohl **die automatische Untersuchung als** auch die automatische Behebung von **Warnungen.**
 
-## <a name="set-up-device-groups"></a>Einrichten von Gerätegruppen
+## <a name="set-up-device-groups"></a>Gerätegruppen einrichten
 
 1. Wählen Sie im Microsoft Defender Security Center ( ) auf der Seite [https://securitycenter.windows.com](https://securitycenter.windows.com) **Einstellungen** unter **Berechtigungen** **Gerätegruppen aus.**
 2. Wählen **Sie + Gerätegruppe hinzufügen aus.**
@@ -66,4 +66,4 @@ Zum Konfigurieren der automatisierten Untersuchung und Behebung
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Adress false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Adressiert falsch positive/negative Ergebnisse in Microsoft Defender für Endpunkt](defender-endpoint-false-positives-negatives.md)

@@ -14,12 +14,12 @@ ms.custom:
 description: Administratoren können die Nachrichtenverfolgung im Security & Compliance Center verwenden, um herauszufinden, was mit Nachrichten passiert ist.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78a7a2bda41f721b9e2084615b9eca1e70cf1f35
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 292c59563d0fd42da62cb071e07d19f545f5eb20
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204071"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274472"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Nachrichtenablaufverfolgung im Security & Compliance Center
 
@@ -30,32 +30,30 @@ ms.locfileid: "51204071"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-## <a name="message-trace-features"></a>Nachrichtenverfolgungsfeatures
-
 Nachrichtenverfolgung im Security & Compliance Center folgt E-Mail-Nachrichten, während sie durch Ihre Exchange Online-Organisation reisen. Sie können bestimmen, ob eine Nachricht vom Dienst empfangen, abgelehnt, zurückgestellt oder zugestellt wurde. Außerdem werden die Aktionen der Nachricht gezeigt, bevor diese ihren finalen Status erreicht hat.
 
-Die Nachrichtenverfolgung im Security & Compliance Center verbessert die ursprüngliche Nachrichtenverfolgung, die im Exchange Admin Center (EAC) verfügbar war. Sie können die Informationen aus der Nachrichtenablaufverfolgung verwenden, um Benutzerfragen effizient zu beantworten, was mit Nachrichten passiert ist, Probleme mit dem Nachrichtenfluss zu beheben und Richtlinienänderungen zu überprüfen.
+Sie können die Informationen aus der Nachrichtenablaufverfolgung verwenden, um Benutzerfragen effizient zu beantworten, was mit Nachrichten passiert ist, Probleme mit dem Nachrichtenfluss zu beheben und Richtlinienänderungen zu überprüfen.
 
-> [!NOTE]
->
-> - Um eine Nachrichtenverfolgung zu erstellen, müssen Sie Mitglied der Rollengruppen Organisationsverwaltung, Complianceverwaltung oder HelpDesk sein. Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
->
-> - Die maximale Anzahl von Nachrichten, die in den Ergebnissen angezeigt werden, hängt vom ausgewählten Berichtstyp ab (Weitere Informationen finden Sie im Abschnitt [Berichtstyp](#choose-report-type) auswählen). Das [Cmdlet Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) in Exchange Online PowerShell oder eigenständiger EOP PowerShell gibt alle Nachrichten in den Ergebnissen zurück.
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
+
+- Sie müssen Mitglied der Rollengruppen **Organisationsverwaltung,** **Complianceverwaltung** oder **HelpDesk** in **Exchange Online** sein, um die Nachrichtenverfolgung verwenden zu können. Weitere Informationen finden Sie unter [Berechtigungen in Exchange Online](/exchange/permissions-exo/permissions-exo).
+
+  **Hinweise**: Die Mitgliedschaft in der entsprechenden Azure Active Directory-Rolle im  Microsoft 365 Admin Center bietet Benutzern die erforderlichen Berechtigungen und Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+
+- Die maximale Anzahl von Nachrichten, die in den Ergebnissen einer Nachrichtenverfolgung angezeigt [](#choose-report-type) werden, hängt vom ausgewählten Berichtstyp ab (Weitere Informationen finden Sie im Abschnitt Berichtstyp auswählen). Das [Cmdlet Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) in Exchange Online PowerShell oder eigenständiger EOP PowerShell gibt alle Nachrichten in den Ergebnissen zurück.
 
 ## <a name="open-message-trace"></a>Öffnen der Nachrichtenverfolgung
 
-1. Öffnen Sie das Security & Compliance Center unter <https://protection.office.com> .
+Öffnen Sie das Security & Compliance Center unter , und wechseln Sie <https://protection.office.com/> dann zu **Nachrichtenfluss** \> **Nachrichtenablaufverfolgung**.
 
-2. Erweitern **Sie den Nachrichtenfluss,** und wählen Sie **dann Nachrichtenablaufverfolgung aus.**
+Öffnen Sie , um direkt zur **Seite Nachrichtenverfolgung zu** <https://protection.office.com/messagetrace> wechseln.
 
 ## <a name="message-trace-page"></a>Seite "Nachrichtenverfolgung"
 
 Von hier aus können Sie eine neue Standardverfolgung starten, indem Sie auf die Schaltfläche **Ablaufverfolgung starten** klicken. Dadurch werden alle Nachrichten für alle Absender und Empfänger für die letzten zwei Tage gesucht. Sie können auch eine der gespeicherten Abfragen aus den verfügbaren Abfragekategorien verwenden und sie entweder wie vorhanden ausführen oder als Ausgangspunkt für Ihre eigenen Abfragen verwenden:
 
 - **Standardabfragen:** Von Microsoft 365 bereitgestellte integrierte Abfragen.
-
 - **Benutzerdefinierte Abfragen:** Abfragen, die von Administratoren in Ihrer Organisation zur zukünftigen Verwendung gespeichert werden.
-
 - **Automatisch gespeicherte Abfragen:** Die letzten zehn zuletzt ausgeführten Abfragen. Diese Liste macht es einfach, die Stelle zu finden, an der Sie auf der Stelle aufbließen.
 
 Außerdem finden Sie auf dieser Seite einen Abschnitt **zum** Herunterladen von Berichten für die von Ihnen übermittelten Anforderungen sowie die Berichte selbst, wenn sie zum Download verfügbar sind.
@@ -67,13 +65,11 @@ Außerdem finden Sie auf dieser Seite einen Abschnitt **zum** Herunterladen von 
 Die Standardwerte sind **Alle Absender** und **Alle** Empfänger. Sie können jedoch die folgenden Felder verwenden, um die Ergebnisse zu filtern:
 
 - **By these people**: Click in this field to select one or more senders from your organization. Sie können auch mit der Eingabe eines Namens beginnen, und die Elemente in der Liste werden nach dem Typ gefiltert, ähnlich wie sich eine Suchseite verhält.
-
 - **Für diese Personen**: Klicken Sie in dieses Feld, um einen oder mehrere Empfänger in Ihrer Organisation auszuwählen.
 
 > [!NOTE]
 >
 > - Sie können auch die E-Mail-Adressen externer Absender und Empfänger eingeben. Platzhalter werden unterstützt (z. B. ), sie können jedoch nicht mehrere Platzhaltereinträge gleichzeitig im gleichen `*@contoso.com` Feld verwenden.
->
 > - Sie können mehrere Absender oder Empfängerlisten einfügen, die durch Semikolons ( ) getrennt `;` sind. Leerzeichen ( `\s` ), Wagenrücklauf ( `\r` ) oder nächste Zeilen ( `\n` ).
 
 ### <a name="time-range"></a>Zeitbereich
@@ -104,17 +100,11 @@ Der Standardwert ist **2 Tage,** Sie können jedoch Datums-/Uhrzeitbereiche von 
 Sie können den Standardwert **Alle** ausgewählt lassen, oder Sie können einen der folgenden Werte auswählen, um die Ergebnisse zu filtern:
 
 - **Zugestellt**: Die Nachricht wurde erfolgreich an das beabsichtigte Ziel übermittelt.
-
 - **Ausstehend**: Die Zustellung der Nachricht wird versucht oder erneut versucht.
-
 - **Erweitert:** Ein Verteilergruppenempfänger wurde vor der Zustellung an die einzelnen Mitglieder der Gruppe erweitert.
-
 - **Fehler:** Die Nachricht wurde nicht zugestellt.
-
 - **Quarantäne:** Die Nachricht wurde isoliert (als Spam, Massen-E-Mail oder Phishing). Weitere Informationen finden Sie unter [Quarantined email messages in EOP](quarantine-email-messages.md).
-
 - **Als Spam gefiltert:** Die Nachricht wurde als Spam identifiziert und abgelehnt oder blockiert (nicht isoliert).
-
 - **Status abrufen:** Die Nachricht wurde kürzlich von Microsoft 365 empfangen, es sind jedoch noch keine weiteren Statusdaten verfügbar. Check back in a few minutes.
 
 > [!NOTE]
@@ -144,15 +134,12 @@ Sie können die Ergebnisse nach Client-IP-Adresse filern, um gehackte Computer z
 Die verfügbaren Berichtstypen sind:
 
 - **Zusammenfassung**: Verfügbar, wenn der Zeitraum weniger als 10 Tage beträgt und keine zusätzlichen Filteroptionen erforderlich sind. Die Ergebnisse sind unmittelbar nach dem Klicken auf **Suchen verfügbar.** Der Bericht gibt bis zu 20.000 Ergebnisse zurück.
-
 - **Erweiterte Zusammenfassung** oder **Erweitert:** Diese Berichte sind nur als herunterladbare CSV-Dateien verfügbar und erfordern eine oder mehrere der folgenden Filteroptionen unabhängig vom Zeitraum: Von **diesen** Personen , **An** diese Personen oder **Nachrichten-ID**. Sie können Platzhalter für die Absender oder Empfänger verwenden (z. B. \* @contoso.com). Der Erweiterte Zusammenfassende Bericht gibt bis zu 50.000 Ergebnisse zurück. Der erweiterte Bericht gibt bis zu 1000 Ergebnisse zurück.
 
 > [!NOTE]
 >
 > - Erweiterte Zusammenfassungsberichte und erweiterte Berichte werden mithilfe archivierter Nachrichtenverfolgungsdaten vorbereitet, und es kann bis zu mehrere Stunden dauern, bis Ihr Bericht heruntergeladen werden kann. Je nachdem, wie viele andere Administratoren auch Berichtsanforderungen zur gleichen Zeit übermittelt haben, können Sie auch eine Verzögerung bemerken, bevor Die Anforderung in der Warteschlange verarbeitet wird.
->
 > - Sie können zwar eine erweiterte Zusammenfassung oder einen erweiterten Bericht für einen beliebigen Datums-/Uhrzeitbereich auswählen, aber in der Regel stehen die letzten vier Stunden archivierter Daten für diese beiden Berichtstypen noch nicht zur Verfügung.
->
 > - Die maximale Größe für einen herunterladbaren Bericht beträgt 500 MB. Wenn ein herunterladbarer Bericht mehr als 500 MB überschreitet, können Sie den Bericht nicht in Excel oder Editor öffnen.
 
 Wenn Sie auf **Weiter** klicken, wird eine Zusammenfassungsseite mit den ausgewählten Filteroptionen, einem eindeutigen (bearbeitbaren) Titel für den Bericht und der E-Mail-Adresse angezeigt, die die Benachrichtigung empfängt, wenn die Nachrichtenverfolgung abgeschlossen ist (auch bearbeitbar und muss sich in einer der akzeptierten Domänen Ihrer Organisation befinden). Klicken **Sie auf Bericht vorbereiten,** um die Nachrichtenverfolgung zu übermitteln. Auf der **Hauptseite Nachrichtenverfolgung** sehen Sie den Status des Berichts im Abschnitt **Herunterladbare Berichte.**
@@ -172,13 +159,9 @@ Nach dem Ausführen der Nachrichtenverfolgung werden die Ergebnisse aufgelistet,
 Der Zusammenfassende Bericht enthält die folgenden Informationen:
 
 - **Date**: Das Datum und die Uhrzeit, zu der die Nachricht vom Dienst empfangen wurde, unter Verwendung der konfigurierten UTC-Zeitzone.
-
 - **Absender**: Die E-Mail-Adresse des Absenders ( @ *Aliasdomäne*).
-
 - **Recipient**: Die E-Mail-Adresse des Empfängers oder empfängers. Für eine Nachricht, die an mehrere Empfänger gesendet wird, gibt es eine Zeile pro Empfänger. Wenn es sich bei dem Empfänger um eine Verteilergruppe, eine dynamische Verteilergruppe oder eine E-Mail-aktivierte Sicherheitsgruppe handelt, ist die Gruppe der erste Empfänger, und dann befindet sich jedes Mitglied der Gruppe in einer separaten Zeile.
-
 - **Betreff**: Die ersten 256 Zeichen des Felds **Betreff:** der Nachricht.
-
 - **Status**: Diese Werte werden im Abschnitt [Zustellungsstatus](#delivery-status) beschrieben.
 
 Standardmäßig sind die ersten 250 Ergebnisse geladen und sofort verfügbar. Wenn Sie einen Bildlauf nach unten durchführen, gibt es eine leichte Pause, wenn der nächste Ergebnisbatch geladen wird. Anstelle eines Bildlaufs können Sie auf **Alle** Laden klicken, um alle Ergebnisse bis zu maximal 10.000 zu laden.
@@ -202,7 +185,6 @@ Weitere Informationen zur Nachrichten-ID finden Sie weiter oben in diesem Artike
 In der Zusammenfassungsberichtausgabe können Sie Details zu einer Nachricht mithilfe einer der folgenden Methoden anzeigen:
 
 - Wählen Sie die Zeile aus (klicken Sie auf eine beliebige Stelle in der Zeile mit Ausnahme des Kontrollkästchens).
-
 - Aktivieren Sie das Kontrollkästchen der Zeile, und klicken Sie auf **Weitere Optionen** ![ Weitere ](../../media/1ea52bbf-9d00-48ce-9362-307f7f6fb7fe.png) \> **Nachrichtendetails anzeigen**.
 
    ![Details nach dem Doppelklicken auf eine Zeile in der Nachrichtenverfolgung des Sammelberichts im Security & Compliance Center](../../media/e50ee7cd-810a-4c06-8b58-e56ffd7028d1.png)
@@ -210,37 +192,24 @@ In der Zusammenfassungsberichtausgabe können Sie Details zu einer Nachricht mit
 Die Details zur Nachrichtenverfolgung enthalten die folgenden zusätzlichen Informationen, die im Zusammenfassenden Bericht nicht vorhanden sind:
 
 - **Nachrichtenereignisse:** Dieser Abschnitt enthält Klassifizierungen, die helfen, die Aktionen zu kategorisieren, die der Dienst für Nachrichten übernimmt. **Einige der interessanteren Ereignisse,** auf die Sie stoßen können, sind:
-
   - **Receive**: Die Nachricht wurde vom Dienst empfangen.
-
   - **Senden**: Die Nachricht wurde vom Dienst gesendet.
-
   - **Fail**: Die Nachricht konnte nicht zugestellt werden.
-
   - **Zugestellt:** Die Nachricht wurde an ein Postfach zugestellt.
-
   - **Expand**: Die Nachricht wurde an eine Verteilergruppe gesendet, die erweitert wurde.
-
   - **Übertragung:** Empfänger wurden aufgrund von Inhaltskonvertierung, Beschränkungen von Nachrichtenempfängern oder Agents in eine bifurcierte Nachricht verschoben.
-
   - **Zurückgestellt:** Die Nachrichtenzustellung wurde verschoben und kann später erneut versucht werden.
-
   - **Resolved**: Die Nachricht wurde basierend auf einer Active Directory-Suche an eine neue Empfängeradresse umgeleitet. Wenn dies geschieht, wird die ursprüngliche Empfängeradresse zusammen mit dem abschließenden Zustellungsstatus in der Nachrichtenablaufverfolgung einer separaten Zeile aufgeführt.
 
   > [!NOTE]
-  > 
+  >
   > - Eine ungleichmäßige Nachricht, die erfolgreich zugestellt wird, generiert mehrere **Ereigniseinträge** in der Nachrichtenverfolgung.
-  > 
   > - Diese Liste soll nicht vollständig sein. Beschreibungen von weiteren Ereignissen finden Sie unter [Ereignistypen im Nachrichtenverfolgungsprotokoll](/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Beachten Sie, dass dieser Link ein Exchange Server (lokales Exchange)-Thema ist.
 
 - **Weitere Informationen**: Dieser Abschnitt enthält die folgenden Details:
-
   - **Nachrichten-ID**: Dieser Wert wird weiter oben in diesem Artikel im Abschnitt [Nachrichten-ID](#message-id) beschrieben. Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
-
   - **Nachrichtengröße**
-
   - **Von IP**: Die IP-Adresse des Computers, der die Nachricht gesendet hat. Für ausgehende Nachrichten, die von Exchange Online gesendet wurden, wird kein Wert angegeben.
-
   - **To IP**: The IP address or addresses where the service attempted to deliver the message. Wenn die Nachricht mehrere Empfänger hat, werden diese angezeigt. Für eingehende Nachrichten, die an Exchange Online gesendet wurden, wird kein Wert angegeben.
 
 ### <a name="enhanced-summary-reports"></a>Erweiterte Zusammenfassungsberichte
@@ -248,31 +217,18 @@ Die Details zur Nachrichtenverfolgung enthalten die folgenden zusätzlichen Info
 Verfügbare (abgeschlossene) Erweiterte Zusammenfassungsberichte sind im Abschnitt **Herunterladbare Berichte** am Anfang der Nachrichtenverfolgung verfügbar. Die folgenden Informationen sind im Bericht verfügbar:
 
 - **origin_timestamp**: Datum und Uhrzeit, zu dem die Nachricht vom Dienst unter Verwendung der konfigurierten <sup>*</sup> UTC-Zeitzone empfangen wurde.
-
 - **sender_address**: Die E-Mail-Adresse des Absenders ( @ *Aliasdomäne*).
-
 - **Recipient_status**: Der Status der Zustellung der Nachricht an den Empfänger. Wenn die Nachricht an mehrere Empfänger gesendet wurde, werden alle Empfänger und der entsprechende Status im Format angezeigt: \<*email address*\> ## \<*status*\> . Beispiel:
-
   - **##Receive, Send** bedeutet, dass die Nachricht vom Dienst empfangen und an das beabsichtigte Ziel gesendet wurde.
-
   - **##Receive, Fail** bedeutet, dass die Nachricht vom Dienst empfangen wurde, aber die Zustellung an das beabsichtigte Ziel fehlgeschlagen ist.
-
   - **##Receive, Deliver** bedeutet, dass die Nachricht vom Dienst empfangen und an das Postfach des Empfängers zugestellt wurde.
-
 - **message_subject**: Die ersten 256 Zeichen des **Betrefffelds** der Nachricht.
-
 - **total_bytes**: Die Größe der Nachricht in Bytes, einschließlich Anlagen.
-
 - **message_id**: Dieser Wert wird weiter oben in diesem Artikel im Abschnitt [Nachrichten-ID](#message-id) beschrieben. Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
-
 - **network_message_id**: Ein eindeutiger Nachrichten-ID-Wert, der in allen Kopien der Nachricht beibehalten wird, die aufgrund von Verfuellung oder Erweiterung von Verteilergruppen erstellt werden können. Ein Beispielwert ist `1341ac7b13fb42ab4d4408cf7f55890f` .
-
 - **original_client_ip**: Die IP-Adresse des Clients des Absenders.
-
 - **directionality**: Gibt an, ob die Nachricht eingehenden (1) an Ihre Organisation gesendet wurde oder ob sie ausgehend (2) von Ihrer Organisation gesendet wurde.
-
 - **connector_id**: Der Name des Quell- oder Zielconnector. Weitere Informationen zu Connectors in Exchange Online finden Sie unter [Configure mail flow using connectors in Office 365](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
-
 - **delivery_priority**: Gibt an, ob die Nachricht mit der Priorität <sup>*</sup> **"Hoch",** **"Niedrig"** oder **"Normal" gesendet** wurde.
 
 <sup>*</sup> Diese Eigenschaften sind nur in erweiterten Zusammenfassungsberichten verfügbar.
@@ -282,65 +238,34 @@ Verfügbare (abgeschlossene) Erweiterte Zusammenfassungsberichte sind im Abschni
 Verfügbare (abgeschlossene) Erweiterte Berichte sind im Abschnitt **Herunterladbare Berichte** am Anfang der Nachrichtenverfolgung verfügbar. Praktisch alle Informationen aus einem erweiterten Zusammenfassenden Bericht sind in einem erweiterten Bericht verfügbar (mit Ausnahme von origin_timestamp **und** **delivery_priority**). Die folgenden zusätzlichen Informationen sind nur in einem erweiterten Bericht verfügbar:
 
 - **client_ip**: Die IP-Adresse des E-Mail-Servers oder Messagingclients, der die Nachricht übermittelt hat.
-
 - **client_hostname**: Der Hostname oder FQDN des E-Mail-Servers oder Messagingclients, der die Nachricht übermittelt hat.
-
 - **server_ip**: Die IP-Adresse des Quell- oder Zielservers.
-
 - **server_hostname**: Der Hostname oder FQDN des Zielservers.
-
 - **source_context**: Zusätzliche Informationen, die dem **Quellfeld zugeordnet** sind. Beispiel:
-
   - `Protocol Filter Agent`
-
   - `3489061114359050000`
-
 - **source**: Die Exchange Online-Komponente, die für das Ereignis verantwortlich ist. Beispiel:
-
   - `AGENT`
-
   - `MAILBOXRULE`
-
   - `SMTP`
-
 - **event_id**: Diese entsprechen den **Message-Ereigniswerten,** die im Abschnitt Suchen verwandter Datensätze [für diese Nachricht erläutert](#find-related-records-for-this-message) werden.
-
 - **internal_message_id**: Eine Nachrichten-ID, die vom Exchange Online-Server zugewiesen wird, der die Nachricht derzeit verarbeitet.
-
 - **recipient_address**: Die E-Mail-Adressen der Empfänger der Nachricht. Mehrere E-Mail-Adressen sind durch ein Semikolon (;) getrennt.
-
 - **recipient_count**: Die Gesamtanzahl der Empfänger in der Nachricht.
-
 - **related_recipient_address**: Wird mit , und -Ereignissen zum Anzeigen anderer E-Mail-Empfängeradressen verwendet, `EXPAND` die der Nachricht zugeordnet `REDIRECT` `RESOLVE` sind.
-
 - **reference**: Dieses Feld enthält zusätzliche Informationen für bestimmte Ereignistypen. Beispiel:
-
   - **DSN**: Enthält den Berichtslink, bei dem es sich um den **message_id-Wert** der zugeordneten Zustellungsstatusbenachrichtigung (auch als DSN, Unzustellbarkeitsbericht, Unzustellbarkeitsbericht oder Unzustellbarkeitsnachricht bezeichnet) handelt, wenn ein DSN nach diesem Ereignis generiert wird. Wenn es sich um eine DSN-Nachricht handelt, enthält dieses Feld den message_id der ursprünglichen Nachricht, für die der DSN generiert wurde. 
-
   - **EXPAND**: Enthält den **related_recipient_address** der zugehörigen Nachrichten.
-
   - **RECEIVE**: Kann den **message_id** der zugehörigen Nachricht enthalten, wenn die Nachricht von anderen Prozessen generiert wurde (z. B. Posteingangsregeln).
-
   - **SEND**: Enthält **internal_message_id** wert aller DSN-Nachrichten.
-
   - **TRANSFER**: Enthält den **internal_message_id** der Nachricht, die gegabelt wird (z. B. durch Inhaltskonvertierung, Nachrichtenempfängerbeschränkungen oder Agents).
-
-  - **MAILBOXRULE**: Enthält **den internal_message_id** der eingehenden Nachricht, die dazu führte, dass die Posteingangsregel die ausgehende Nachricht generierte.
-
-    Für andere Ereignistypen ist dieses Feld zumeist leer.
-
+  - **MAILBOXRULE**: Enthält **den internal_message_id** der eingehenden Nachricht, die dazu führte, dass die Posteingangsregel die ausgehende Nachricht generierte. Für andere Ereignistypen ist dieses Feld zumeist leer.
 - **return_path**: Die durch den Befehl **MAIL FROM** angegebene E-Mail-Adresse, die die Nachricht gesendet hat. Obwohl dieses Feld nie leer ist, kann der Wert der Null-Absenderadresse als dargestellt `<>` werden.
-
 - **message_info**: Zusätzliche Informationen zur Nachricht. Beispiel:
-
   - Die Datums-/Uhrzeit der Nachrichtenherkunft in UTC für `DELIVER` und `SEND` Ereignisse. Die Ursprungsdatumszeit ist der Zeitpunkt, zu dem die Nachricht zum ersten Mal in die Exchange Online-Organisation eingegeben wurde. Die UTC-Datums-Uhrzeit wird im Datums-Uhrzeit-Format iso 8601 dargestellt: , wobei = Jahr, = Monat, = Tag den Anfang der Zeitkomponente `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` `mm` `dd` `T` angibt, `hh` = Stunde, `mm` = Minute, = Sekunde, `ss` = `fff` `Z` `Zulu` Bruchteile einer Sekunde, und bedeutet , was eine weitere Möglichkeit zum Bezeichnen von UTC ist.
-
   - Authentifizierungsfehler. Beispielsweise können der Wert und der Authentifizierungstyp angezeigt werden, der beim `11a` Aufgetretenen des Authentifizierungsfehlers verwendet wurde.
-
 - **tenant_id**: Ein GUID-Wert, der die Exchange Online-Organisation darstellt (z. B. `39238e87-b5ab-4ef6-a559-af54c6b07b42` ).
-
 - **original_server_ip**: Die IP-Adresse des ursprünglichen Servers.
-
 - **custom_data**: Enthält Daten zu bestimmten Ereignistypen. Weitere Informationen finden Sie in den folgenden Abschnitten.
 
 #### <a name="custom_data-values"></a>custom_data-Werte
@@ -350,6 +275,8 @@ Das **custom_data** für ein Ereignis wird von einer Vielzahl von `AGENTINFO` Ex
 #### <a name="spam-filter-agent"></a>Spamfilter-Agent
 
 Ein **custom_data,** der mit `S:SFA` beginnt, ist vom Spamfilter-Agent. Die wichtigsten Details werden in der folgenden Tabelle beschrieben:
+
+<br>
 
 ****
 
@@ -381,6 +308,8 @@ Ein Beispiel **custom_data** wert für eine Nachricht, die nach Spam wie dem fol
 
 Ein **custom_data,** der mit `S:AMA` beginnt, ist vom Schadsoftwarefilter-Agent. Die wichtigsten Details werden in der folgenden Tabelle beschrieben:
 
+<br>
+
 ****
 
 |Wert|Beschreibung|
@@ -406,6 +335,8 @@ Ein Beispiel **custom_data** für eine Nachricht, die Schadsoftware enthält, si
 #### <a name="transport-rule-agent"></a>Transportregel-Agent
 
 Ein **custom_data,** der mit beginnt, ist vom Transport Rule Agent für `S:TRA` Nachrichtenflussregeln (auch transport rules). Die wichtigsten Details werden in der folgenden Tabelle beschrieben:
+
+<br>
 
 ****
 

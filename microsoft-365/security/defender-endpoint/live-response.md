@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4898081103faa27c19d3a09ffba1b59670833dd8
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: fc1c1e0d3f68016651c04521e04ce348e5ab9a65
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860797"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246465"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Untersuchen von Entitäten auf Geräten mithilfe von Liveantworten
 
@@ -44,15 +44,15 @@ Mit einer Liveantwort können Analysten alle folgenden Aufgaben ausführen:
 - Führen Sie grundlegende und erweiterte Befehle aus, um Ermittlungsarbeit auf einem Gerät auszuführen.
 - Laden Sie Dateien wie Schadsoftwarebeispiele und Ergebnisse von PowerShell-Skripts herunter.
 - Laden Sie Dateien im Hintergrund herunter (neu!).
-- Laden Sie ein PowerShell-Skript oder eine ausführbare Datei in die Bibliothek hoch, und führen Sie es auf einem Gerät auf Mandantenebene aus.
+- Hochladen sie ein PowerShell-Skript oder eine ausführbare Datei in die Bibliothek ein, und führen Sie es auf einem Gerät auf Mandantenebene aus.
 - Ausführen oder Rückgängig machen von Korrekturaktionen.
 
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Vorabinformationen
 
 Bevor Sie eine Sitzung auf einem Gerät initiieren können, stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen:
 
-- **Stellen Sie sicher, dass Sie eine unterstützte Version von Windows ausführen.** <br/>
-Auf Geräten muss eine der folgenden Versionen von Windows ausgeführt werden
+- **Vergewissern Sie sich, dass Sie eine unterstützte Version von Windows.** <br/>
+Auf Geräten muss eine der folgenden Versionen von Windows
 
   - **Windows 10**
     - [Version 1909](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1909) oder höher  
@@ -101,20 +101,20 @@ Sie müssen mindestens die Minimale Korrekturstufe für eine bestimmte Gerätegr
 ## <a name="live-response-dashboard-overview"></a>Übersicht über das Liveantwortdashboard
 Wenn Sie eine Liveantwortsitzung auf einem Gerät initiieren, wird ein Dashboard geöffnet. Das Dashboard enthält Informationen zur Sitzung, z. B.: 
 
-- Wer die Sitzung erstellt hat
+- Wer die Sitzung erstellt
 - Beim Starten der Sitzung
 - Die Dauer der Sitzung
 
 Das Dashboard bietet Ihnen außerdem Zugriff auf:
 - Trennen einer Sitzung
-- Hochladen von Dateien in die Bibliothek 
+- Hochladen dateien in die Bibliothek 
 - Befehlskonsole
 - Befehlsprotokoll
 
 
 ## <a name="initiate-a-live-response-session-on-a-device"></a>Initiieren einer Liveantwortsitzung auf einem Gerät 
 
-1. Melden Sie sich beim Microsoft Defender Security Center an.
+1. Melden Sie sich bei Microsoft Defender Security Center.
 
 2. Navigieren Sie zur Seite Geräteliste, und wählen Sie ein gerät aus, das untersucht werden soll. Die Seite "Geräte" wird geöffnet.
 
@@ -143,7 +143,6 @@ Die folgenden Befehle stehen für Benutzerrollen zur  Verfügung, für die grund
 |`connect` | Initiiert eine Liveantwortsitzung an das Gerät. |
 |`connections` | Zeigt alle aktiven Verbindungen an. |
 |`dir` | Zeigt eine Liste der Dateien und Unterverzeichnisse in einem Verzeichnis an. |
-|`download <file_path> &` | Lädt eine Datei im Hintergrund herunter. |
 |`drivers` |  Zeigt alle auf dem Gerät installierten Treiber an. |
 |`fg <command ID>` | Platzieren Sie den angegebenen Auftrag im Vordergrund, wodurch er zum aktuellen Auftrag wird. <br> HINWEIS: fg verwendet eine "Befehls-ID", die von Aufträgen und nicht von einer PID verfügbar ist. |
 |`fileinfo` | Abrufen von Informationen zu einer Datei. |
@@ -173,7 +172,7 @@ Die folgenden Befehle sind für Benutzerrollen verfügbar, für die erweiterte *
 
 ## <a name="use-live-response-commands"></a>Verwenden von Liveantwortbefehlen
 
-Die Befehle, die Sie in der Konsole verwenden können, folgen ähnlichen Prinzipien wie [Windows-Befehle](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c).
+Die Befehle, die Sie in der Konsole verwenden können, folgen ähnlichen Prinzipien wie [Windows Befehle](https://docs.microsoft.com/windows-server/administration/windows-commands/windows-commands#BKMK_c).
 
 Die erweiterten Befehle bieten eine stabilere Reihe von Aktionen, mit denen Sie leistungsstärkere Aktionen ausführen können, z. B. das Herunterladen und Hochladen einer Datei, das Ausführen von Skripts auf dem Gerät und das Ausführen von Korrekturaktionen für eine Entität.
 
@@ -200,7 +199,7 @@ Im Folgenden finden Sie einige Beispiele:
 
 |Befehl  |Funktion  |
 |---------|---------|
-|`Download "C:\windows\some_file.exe" &`     |Startet das Herunterladen einer Datei *namenssome_file.exe* im Hintergrund.         |
+|`getfile "C:\windows\some_file.exe" &`     |Startet das Herunterladen einer Datei *namenssome_file.exe* im Hintergrund.         |
 |`fg 1234`     |Gibt einen Download mit der Befehls-ID *1234 in* den Vordergrund zurück.         |
 
 
@@ -214,7 +213,7 @@ Sie können über eine Sammlung von PowerShell-Skripts verfügen, die auf Gerät
 
 #### <a name="to-upload-a-file-in-the-library"></a>So laden Sie eine Datei in die Bibliothek hoch
 
-1. Klicken **Sie auf Datei in Bibliothek hochladen.** 
+1. Klicken **Sie Hochladen datei in die Bibliothek**. 
 
 2. Klicken **Sie auf Durchsuchen,** und wählen Sie die Datei aus.
 
@@ -234,16 +233,6 @@ Jederzeit während einer Sitzung können Sie einen Befehl abbrechen, indem Sie S
 
 >[!WARNING]
 >Wenn Sie diese Verknüpfung verwenden, wird der Befehl auf der Agentseite nicht beendet. Es wird nur der Befehl im Portal abgebrochen. Das Ändern von Vorgängen wie "Remediate" kann also fortgesetzt werden, während der Befehl abgebrochen wird. 
-
-### <a name="automatically-run-prerequisite-commands"></a>Automatisches Ausführen von Befehlen für erforderliche Komponenten
-
-Einige Befehle verfügen über erforderliche Befehle, die ausgeführt werden müssen. Wenn Sie den Befehl "Voraussetzungen" nicht ausführen, wird ein Fehler angezeigt. Wenn Sie beispielsweise den Befehl `download` ohne `fileinfo` ausführen, wird ein Fehler zurückgegeben.
-
-Sie können das automatische Flag verwenden, um erforderliche Befehle automatisch auszuführen, z. B.:
-
-```console
-getfile c:\Users\user\Desktop\work.txt -auto
-```
 
 ## <a name="run-a-powershell-script"></a>Ausführen eines PowerShell-Skripts 
 
@@ -286,7 +275,7 @@ Die Liveantwort unterstützt Ausgabetypen im Tabellen- und JSON-Format. Für jed
 
 ## <a name="supported-output-pipes"></a>Unterstützte Ausgabepipes
 
-Die Liveantwort unterstützt die Ausgabepipette an CLI und Datei. CLI ist das Standardausgabeverhalten. Sie können die Ausgabe mithilfe des folgenden Befehls an eine Datei weitersingen: [Befehl] > [filename].txt.  
+Die Liveantwort unterstützt die Ausgabepipette an CLI und Datei. CLI ist das Standardausgabeverhalten. Sie können die Ausgabe mithilfe des folgenden Befehls an eine Datei umleitungsen: [Befehl] > [filename].txt.  
 
 Beispiel:
 
@@ -302,7 +291,7 @@ Wählen Sie **die Registerkarte Befehlsprotokoll** aus, um die Befehle anzuzeige
 - Dauer
 - Status- und Eingabe- oder Ausgabeleiste
 
-## <a name="limitations"></a>Begrenzungen
+## <a name="limitations"></a>Einschränkungen
 
 - Liveantwortsitzungen sind auf 25 Liveantwortsitzungen gleichzeitig beschränkt.
 - Inaktiver Timeoutwert der Liveantwortsitzung beträgt 30 Minuten. 

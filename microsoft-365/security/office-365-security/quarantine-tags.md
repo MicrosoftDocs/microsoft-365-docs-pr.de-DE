@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Administratoren können erfahren, wie Sie Mithilfe von Quarantänetags steuern, was Benutzer mit ihren isolierten Nachrichten tun können.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 580cf2bad690d0fc6508d11178527ad218df763b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 512c589572502deacb5529ca9d6f2876861bf050
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205786"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274460"
 ---
 # <a name="quarantine-tags"></a>Quarantänetags
 
@@ -42,6 +42,10 @@ Die einzelnen Berechtigungen werden in den folgenden vordefinierten Berechtigung
 - Vollzugriff
 
 Die verfügbaren individuellen Berechtigungen und was in den vordefinierten Berechtigungsgruppen enthalten ist oder nicht, werden in der folgenden Tabelle beschrieben:
+
+<br>
+
+****
 
 |Berechtigung|Kein Zugriff|Eingeschränkter Zugriff|Vollzugriff|
 |---|:---:|:---:|:---:|
@@ -126,6 +130,8 @@ Der _Parameter EndUserQuarantinePermissionsValue_ verwendet einen Dezimalwert, d
 
 Die erforderliche Reihenfolge und werte für jede einzelne Berechtigung in vordefinierten Berechtigungsgruppen werden in der folgenden Tabelle beschrieben:
 
+<br>
+
 ****
 
 |Berechtigung|Kein Zugriff|Eingeschränkter Zugriff|Vollzugriff|
@@ -140,6 +146,7 @@ Die erforderliche Reihenfolge und werte für jede einzelne Berechtigung in vorde
 |PermissionToViewHeader<sup>\*</sup>|0|0|0|
 |Binärwert|00000000|01101010|11101100|
 |Zu verwendende Dezimalwert|0|106|236|
+|
 
 <sup>\*</sup> Derzeit ist dieser Wert immer 0. Für PermissionToViewHeader blendet der Wert 0 die Schaltfläche Nachrichtenkopf anzeigen nicht in den Details der isolierten Nachricht aus (die Schaltfläche ist immer verfügbar). 
 
@@ -224,6 +231,8 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-Quara
 ## <a name="step-2-assign-a-quarantine-tag-to-supported-features"></a>Schritt 2: Zuweisen eines Quarantänetags zu unterstützten Features
 
 In _unterstützten_ Schutzfunktionen, die Nachrichten oder Dateien unter Quarantäne stellen (automatisch oder als konfigurierbare Aktion), können Sie den verfügbaren Quarantäneaktionen ein Quarantänetag zuweisen. Features zum Isolieren von Nachrichten und zur Verfügbarkeit von Quarantänetags werden in der folgenden Tabelle beschrieben:
+
+<br>
 
 ****
 

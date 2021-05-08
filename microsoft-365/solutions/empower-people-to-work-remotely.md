@@ -1,5 +1,5 @@
 ---
-title: Fördern von Remotemitarbeitern mit Microsoft 365
+title: Einrichten der Infrastruktur für Remotearbeit mit Microsoft 365
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -17,17 +17,20 @@ ms.collection:
 - m365solution-overview
 - M365initiative-coredeploy
 ms.custom: seo-marvel-jun2020
-description: Vergewissern Sie sich, dass Sie alle Features in Microsoft 365 aktiviert haben, um die Produktivität der Remotearbeitskraft zu maximieren und den sicheren Zugriff auf Ihre Server, Daten und die Cloud aufrechtzuerhalten.
-ms.openlocfilehash: e811b0ea40c38d3c8de0dfdc17a24ce0d7aabe2f
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+keywords: von Zuhause arbeiten, Heimarbeit, hybrid, Remotearbeitskraft, hybride Arbeit, Remote-Angestellte, hybride Verbindung, Remotezugriff, Fernarbeit, Telearbeit, Telearbeiten, Mobilarbeit, Remote-Job, arbeiten von überall, flexibler Arbeitsplatz
+description: Gehen Sie durch die Schichten der Infrastruktur hindurch, damit Ihre Remote-Mitarbeiter sicher auf lokale und Microsoft 365-Ressourcen zugreifen können.
+ms.openlocfilehash: 1a8cf471cf92e1301c231f395ed0238bb35359cb
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029122"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52246320"
 ---
-# <a name="empower-remote-workers-with-microsoft-365"></a>Fördern von Remotemitarbeitern mit Microsoft 365
+# <a name="set-up-your-infrastructure-for-remote-work-with-microsoft-365"></a>Einrichten der Infrastruktur für Remotearbeit mit Microsoft 365
 
-Ihr Unternehmen muss möglicherweise Ihren Arbeitnehmern von zu Hause aus einen sicheren Zugang zu den Informationen, Tools und Ressourcen Ihres Unternehmens vor Ort und in der Cloud ermöglichen. Es ist für viele Organisationen wichtig, den Mitarbeitern das Arbeiten außerhalb des Büros zu ermöglichen:
+Um die Produktivität und Zusammenarbeit Ihrer Remote-Mitarbeiter zu sichern und zu optimieren, müssen Sie Ihre IT- und Cloud-Infrastruktur so konfigurieren, dass sie Remotearbeit ermöglicht und den Zugriff auf die lokalen und Cloud-basierten Informationen, Tools und Ressourcen Ihres Unternehmens ermöglicht. Diese Lösung führt Sie schrittweise durch die Bereitstellung wichtiger Schichten der Infrastruktur, die Ihre Mitarbeiter in die Lage versetzen, ihre beste Arbeit zu leisten, egal wo sie sind.
+
+Es ist für viele Organisationen wichtig, den Mitarbeitern das Arbeiten außerhalb des Büros zu ermöglichen:
 
 - Einsparen von Bürofläche.
 - Einstellung und Bindung von Arbeitnehmern, die nicht bereit sind, umzuziehen.
@@ -125,8 +128,6 @@ Nutzen Sie diese Schritte, um den Zugriff auf die Server und Clouddienste Ihres 
 5. [Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter](empower-people-to-work-remotely-teams-productivity-apps.md)
 6. [Schulung von Remotemitarbeitern und Ansprechen von Nutzungsrückmeldungen](empower-people-to-work-remotely-train-monitor-usage.md)
 
-[![Die Schritte zum Fördern von Remotemitarbeitern mit Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
+[![Die Schritte zum Einrichten der Infrastruktur für Remotearbeit mit Microsoft 365](../media/empower-people-to-work-remotely/remote-workers-step-grid.png)](empower-people-to-work-remotely-secure-sign-in.md)
 
-Die neuesten Informationen von Microsoft zur Unterstützung von Remotemitarbeitern finden Sie auf der Website [Hybrides Arbeiten mit Microsoft Teams Website ermöglichen](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/).
-
-Sehen Sie sich hier an, wie eine fiktive aber repräsentative, multinationale Organisation ihre Remotemitarbeiter unterstützen könnte [Die COVID-19-Reaktion von Contoso und seine Infrastruktur, die Remote- und Vor-Ort-Arbeiten ermöglicht](contoso-remote-onsite-work.md).
+Sehen Sie sich hier an, wie eine fiktive aber repräsentative, multinationale Organisation ihre Infrastruktur für Remotearbeit einrichtete: [Die COVID-19-Reaktion von Contoso und seine Infrastruktur, die Remote- und Vor-Ort-Arbeit ermöglicht](contoso-remote-onsite-work.md).

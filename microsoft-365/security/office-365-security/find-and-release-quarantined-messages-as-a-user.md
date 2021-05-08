@@ -20,12 +20,12 @@ ms.custom:
 description: Benutzer können erfahren, wie sie in Exchange Online Protection (EOP) isolierte (unter Quarantäne gestellte) Nachrichten anzeigen und verwalten, die sie hätten empfangen sollen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e9a9da170dc0d3effba495c29672fb8f6bb02031
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 036aa164b8b77efd2365d56c07d26870eac243f5
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599935"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274448"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Suchen und Freigeben von isolierten Nachrichten als Benutzer in EOP
 
@@ -156,7 +156,9 @@ Nachdem Sie eine Nachricht ausgewählt haben, haben Sie Optionen, was mit den Na
 
 - **Aus Quarantäne entfernen**: Nachdem Sie in der angezeigten Warnung auf **Ja** geklickt haben, wird die Nachricht sofort gelöscht.
 
-- **Absender blockieren**: Verhindert, dass der Absender Nachrichten an Sie sendet.
+- **Absender blockieren**: Fügen Sie den Absender zur Liste blockierter Absender für Ihr Postfach hinzu. Weitere Informationen finden Sie unter [E-Mail-Absender blockieren](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
+
+Fügen Sie den Absender zur Liste blockierter Absender für Ihr Postfach hinzu. Weitere Informationen finden Sie unter [E-Mail-Absender blockieren](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 Klicken Sie nach Abschluss des Vorgangs auf **Schließen**.
 

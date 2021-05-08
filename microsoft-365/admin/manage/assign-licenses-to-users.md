@@ -22,12 +22,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Benutzern Lizenzen zuweisen.
-ms.openlocfilehash: 9fa8981949215c4cf7779a21ff7089d7534e1ef0
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: ae088ab5c26df9b782bd4433bbd0c9f2d0ed9348
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023749"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274376"
 ---
 # <a name="assign-licenses-to-users"></a>Zuweisen von Lizenzen an Benutzer
 
@@ -41,9 +41,10 @@ Sie können Benutzern entweder auf der Seite **Aktive Benutzer** oder auf der Se
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Sie müssen ein globaler, Lizenz- oder Benutzeradministrator sein, um Lizenzen zuweisen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](../add-users/about-admin-roles.md).
-- Sie können [Lizenzen zu Benutzerkonten mit Office 365 PowerShell zuweisen](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
+- Sie können [Microsoft 365-Lizenzen mit PowerShell zu Benutzerkonten zuweisen](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
 - Informationen zur gruppenbasierten Lizenzierung finden Sie unter [Zuweisen von Lizenzen zu Benutzern mithilfe der Gruppenmitgliedschaft in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 - Einige Dienste, z. B. Sway, werden Benutzern automatisch zugewiesen und müssen nicht einzeln zugewiesen werden.
+
 
 ## <a name="use-the-licenses-page-to-assign-licenses-to-users"></a>Verwenden der Seite "Lizenzen", um Benutzern Lizenzen zuzuweisen
 
@@ -128,6 +129,10 @@ Wenn Sie Lizenzen über die Seite **Aktive Benutzer** zuweisen, weisen Sie einze
 5. Setzen Sie im Bereich **Zu vorhandenen Produktlizenzzuweisungen hinzufügen** die Umschaltfläche für die Lizenz, die der ausgewählten Benutzer erhalten soll, auf die Stellung **Ein**.\
     Standardmäßig werden alle diesen Lizenzen zugeordneten Dienste dem Benutzer automatisch zugewiesen. Sie können die für die Benutzer verfügbaren Dienste einschränken. Setzen Sie die Umschaltfläche für die Dienste, die die Benutzer nicht erhalten sollen, auf die Stellung **Aus**.
 6. Wählen Sie am unteren Rand des Bereichs **Hinzufügen** \> **Schließen** aus.  
+
+
+> [!NOTE]
+> Wenn Sie Lizenzen für eine größere Anzahl an Benutzern zuweisen möchten, nutzen Sie [Lizenzen an Benutzer nach Gruppenmitgliedschaft in Azure Active Directory zuweisen](/azure/active-directory/enterprise-users/licensing-groups-assign)
 
 ### <a name="assign-licenses-to-one-user"></a>Zuweisen von Lizenzen an einen Benutzer
 

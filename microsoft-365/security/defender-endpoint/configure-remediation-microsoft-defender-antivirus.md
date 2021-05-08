@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren der Korrektur für Microsoft Defender Antivirus-Erkennungen
+title: Festlegen von Gegenmaßnahmen für Microsoft Defender Antivirus-Erkennungen
 description: Konfigurieren, was Microsoft Defender Antivirus beim Erkennen einer Bedrohung tun soll und wie lange isolierte Dateien im Quarantäneordner aufbewahrt werden sollen
 keywords: Beheben, Beheben, Entfernen, Bedrohungen, Quarantäne, Scannen, Wiederherstellen
 search.product: eADQiWindows 10XVcnh
@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,14 +15,15 @@ ms.date: 03/16/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 98bc079bcfd772ada52d699d5f873a187d4ab4c1
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 45886b94ec5ea11f01bfe23092eef4bd72691554
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765059"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274508"
 ---
-# <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Konfigurieren der Korrektur für Microsoft Defender Antivirus-Erkennungen
+# <a name="configure-remediation-for-microsoft-defender-antivirus-detections"></a>Festlegen von Gegenmaßnahmen für Microsoft Defender Antivirus-Erkennungen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -69,9 +70,9 @@ Weitere Informationen [finden Sie unter Configure remediation-required scheduled
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Konfigurieren von Microsoft Defender Antivirus-Überprüfungsoptionen](configure-advanced-scan-types-microsoft-defender-antivirus.md)
+- [Konfigurieren der Scanoptionen von Microsoft Defender Antivirus](configure-advanced-scan-types-microsoft-defender-antivirus.md)
 - [Konfigurieren geplanter Microsoft Defender Antivirus-Scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Konfigurieren und Ausführen von Bedarfsscans von Microsoft Defender Antivirus](run-scan-microsoft-defender-antivirus.md)
+- [Konfigurieren und Ausführen von bedarfsgesteuerten Scans durch Microsoft Defender Antivirus](run-scan-microsoft-defender-antivirus.md)
 - [Konfigurieren der Benachrichtigungen, die auf Endpunkten angezeigt werden](configure-notifications-microsoft-defender-antivirus.md)
 - [Konfigurieren der Microsoft Defender Antivirus-Endbenutzerinteraktion](configure-end-user-interaction-microsoft-defender-antivirus.md)
 - [Anpassen, Initiieren und Überprüfen der Ergebnisse von Microsoft Defender Antivirus-Scans und -Korrekturen](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)

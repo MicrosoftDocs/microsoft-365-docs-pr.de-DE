@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Erfahren Sie hier mehr über das von 21Vianet betriebene Office 365. Es erfüllt die Anforderungen an sichere, zuverlässige und skalierbare Clouddienste in China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 92b69cc77f5c48af63651f2fd37761981ca45ad5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1ee7ba7be2e350195350a5c00e92ed10924657ac
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914342"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274364"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365, betrieben von 21Vianet
 
@@ -233,3 +233,11 @@ Die DSGVO gewährt Personen (auch als „betroffene Personen“ bezeichnet) best
 - Vom System generierte Protokolle für Microsoft-Dienste, die von 21Vianet betrieben werden, können von Mandantenadministratoren mithilfe des Datenprotokollexports exportiert werden.
     
 Ausführliche Informationen und Anweisungen finden Sie unter [Anträge betroffener Personen im Rahmen der DSGVO](https://www.trustcenter.cn/privacy/gdpr-office365.mdl).
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Testen oder Kaufen eines Microsoft 365 business-Abonnements](../../commerce/try-or-buy-microsoft-365.md) (Artikel)
+
+[Azure Information Protection-Unterstützung für Office 365 betrieben von 21Vianet](parity-between-azure-information-protection.md) (Artikel)
+
+[Anzeigen Ihrer Rechnung oder Erhalten eines Fapiao](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (Artikel)
