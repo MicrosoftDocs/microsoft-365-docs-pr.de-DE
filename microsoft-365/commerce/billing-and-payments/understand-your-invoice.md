@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 f1_keywords:
@@ -12,19 +13,22 @@ f1_keywords:
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
+- M365-subscription-management
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-search.appverid:
-- MET150
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: Erfahren Sie, wie Sie Ihre Rechnung für Microsoft Business-Produkte lesen und verstehen können.
 keywords: Abrechnungskonten, Unternehmensinformationen, Rechnungen
-ms.openlocfilehash: 344877a4b97f5c77dc3381aa49d7bf0f60bd628e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 819db7eb999344d2736015dd766453c07f2ed86f
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244708"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280835"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Erläuterungen zu Ihrer Rechnung
 
@@ -103,17 +107,13 @@ Wenn Sie Dienstleistungen von Dritten in Ihrer Rechnung haben, dann finden Sie d
 Rechnungen sind online verfügbar. Ein Link zu Ihrer Online-Rechnung ist auf der PDF-Rechnung verfügbar und aus einer E-Mail-Benachrichtigung. Die Online-Rechnung ist erweiterbar und so können Sie die Belastungen auf Ihrer Rechnung und weitere Details zu jeder Position anzeigen. Die Online-Rechnung beinhaltet:
 
 - **Abrechnungsdetails**&mdash;Zusätzliche Informationen inklusive Details über Rabatte und Produktpreise.
-
 - **Online-Bezahlung**&mdash;Sie können aus der Rechnung heraus eine Online-Zahlung machen.
-
 - **Azure-Kostenverwaltung**&mdash; Online-Rechnungen von Azure-Kunden erhalten einen Link zur Azure-Kostenverwaltung.
 
 ### <a name="to-view-your-online-invoice"></a>Um Ihre Rechnung online anzuzeigen
 
 1. Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rechnungen & Zahlungen</a>.
-
 2. Um die PDF-Version Ihrer Rechnung herunterzuladen, wählen Sie **PDF-Rechnung herunterladen** aus in der Zeile für die Rechnung, die Sie sehen wollen.
-
 3. Um Ihre Online-Rechnung anzusehen, wählen Sie eine Rechnung aus der Liste aus. Sie können das PDF auch über die Detailseite der Rechnung herunterladen.
 
 ## <a name="invoice-faq"></a>Rechnung – FAQ
@@ -145,8 +145,8 @@ Die Zahlungsanweisungen hängen von Ihrer Zahlungsmethode ab und werden am Ende 
 
 Azure-Vorauszahlungen sind nur für berechtigte Azure-Produkte und -Dienste als Zahlungsmethode verfügbar.
 
-## <a name="need-help-contact-support"></a>Benötigen Sie Hilfe? Kontaktieren Sie den Support.
+## <a name="need-help-contact-support"></a>Benötigen Sie Hilfe? wenden Sie sich an den Support,
 
 Wenn Sie Fragen haben oder Hilfe mit Ihren Azure-Gutschriften benötigen, dann <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">erstellen Sie beim Azure-Support eine Support-Anforderung</a>.
 
-Wenn Sie Fragen haben oder Hilfe mit Ihrer Rechnung im Microsoft 365 Admin Center benötigen, dann [kontaktieren Sie den Support für Unternehmensprodukte](../../admin/contact-support-for-business-products.md).
+Wenn Sie Fragen haben oder Hilfe mit Ihrer Rechnung im Microsoft 365 Admin Center benötigen, dann [kontaktieren Sie den Support für Unternehmensprodukte](../../business-video/get-help-support.md).

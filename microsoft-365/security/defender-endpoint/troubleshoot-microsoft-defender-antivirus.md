@@ -1,12 +1,12 @@
 ---
 title: Microsoft Defender AV-Ereignis-IDs und Fehlercodes
-description: Suchen der Ursachen und Lösungen für Microsoft Defender Antivirus-Ereignis-IDs und -Fehler
+description: Suchen der Ursachen und Lösungen für Microsoft Defender Antivirus und Fehler
 keywords: Ereignis, Fehlercode, Siem, Protokollierung, Problembehandlung, Wef, Windows-Ereignis-Weiterleitung
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,14 +14,15 @@ ms.date: 09/11/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f7e8d6428360e5fe45a377f3ed6611a76f0a7911
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: cd222760f3a5cc005c679bf28365237cc70e8950
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765815"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275348"
 ---
-# <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Überprüfen von Ereignisprotokollen und Fehlercodes zur Problembehandlung bei Microsoft Defender Antivirus
+# <a name="review-event-logs-and-error-codes-to-troubleshoot-issues-with-microsoft-defender-antivirus"></a>Überprüfen von Ereignisprotokollen und Fehlercodes zum Behandeln von Problemen mit Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,34 +31,34 @@ ms.locfileid: "51765815"
 
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 
-Wenn sie ein Problem mit Microsoft Defender Antivirus haben, können Sie in den Tabellen in diesem Thema nach einem übereinstimmenden Problem und einer potenziellen Lösung suchen.
+Wenn sie ein Problem mit Microsoft Defender Antivirus, können Sie in den Tabellen in diesem Thema nach einem übereinstimmenden Problem und einer potenziellen Lösung suchen.
 
 Die Tabellenliste:
 
-- [Microsoft Defender Antivirus-Ereignis-IDs](#windows-defender-av-ids) (diese gelten für Windows 10 und Windows Server 2016)
-- [Microsoft Defender Antivirus-Clientfehlercodes](#error-codes)
-- [Interne Microsoft Defender Antivirus-Clientfehlercodes (die von Microsoft während der Entwicklung und beim Testen verwendet werden)](#internal-error-codes)
+- [Microsoft Defender Antivirus -Ereignis-IDs](#windows-defender-av-ids) (diese gelten für Windows 10 und Windows Server 2016)
+- [Microsoft Defender Antivirus Clientfehlercodes](#error-codes)
+- [Interne Microsoft Defender Antivirus Clientfehlercodes (die von Microsoft während der Entwicklung und beim Testen verwendet werden)](#internal-error-codes)
 
 > [!TIP]
 > Sie können auch die Microsoft Defender for Endpoint-Demowebsite unter [demo.wd.microsoft.com,](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) um zu bestätigen, dass die folgenden Features funktionieren:
 > 
-> - In der Cloud zugestellter Schutz
+> - Aus der Cloud gelieferter Schutz
 > - Schnelles Lernen (einschließlich "Bei erster Sicht blockieren")
 > - Potenziell unerwünschte Anwendungsblockierung
 
 <a id="windows-defender-av-ids"></a>
 ## <a name="microsoft-defender-antivirus-event-ids"></a>Microsoft Defender Antivirus-Ereignis-IDs
 
-Microsoft Defender Antivirus zeichnet Ereignis-IDs im Windows-Ereignisprotokoll auf.
+Microsoft Defender Antivirus-Ereignis-IDs im Windows auf.
 
-Sie können das Ereignisprotokoll direkt anzeigen, oder wenn Sie über ein Tool für die Sicherheitsinformationen und Ereignisverwaltung (SIEM) eines Drittanbieters verfügen, können Sie auch [Microsoft Defender Antivirus-Clientereignis-IDs](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids) verwenden, um bestimmte Ereignisse und Fehler von Ihren Endpunkten zu überprüfen.
+Sie können das Ereignisprotokoll direkt anzeigen, oder wenn Sie über ein Tool für die Sicherheitsinformations- und Ereignisverwaltung eines Drittanbieters verfügen, können Sie auch [Microsoft Defender Antivirus-Clientereignis-IDs](troubleshoot-microsoft-defender-antivirus.md#windows-defender-av-ids) verwenden, um bestimmte Ereignisse und Fehler von Ihren Endpunkten zu überprüfen.
 
-In der Tabelle in diesem Abschnitt sind die wichtigsten Microsoft Defender Antivirus-Ereignis-IDs aufgeführt und, sofern möglich, Lösungsvorschläge zum Beheben oder Beheben des Fehlers. 
+In der Tabelle in diesem Abschnitt sind die Microsoft Defender Antivirus-Ereignis-IDs aufgeführt und, sofern möglich, vorgeschlagene Lösungen zum Beheben oder Beheben des Fehlers. 
 
-## <a name="to-view-a-microsoft-defender-antivirus-event"></a>So zeigen Sie ein Microsoft Defender Antivirus-Ereignis an
+## <a name="to-view-a-microsoft-defender-antivirus-event"></a>So zeigen Sie ein Microsoft Defender Antivirus an
 
 1.  Öffnen **Sie die Ereignisanzeige**.
-2.  Erweitern Sie in der Konsolenstruktur **Anwendungen- und Dienstprotokolle,** dann **Microsoft**, dann **Windows** und **dann Windows Defender**.
+2.  Erweitern Sie in der **Konsolenstruktur** **Anwendungen-** und Dienstprotokolle, dann **Microsoft**, und Windows **,** und Windows Defender .
 3.  Doppelklicken Sie auf **Betriebs .**
 4.  Zeigen Sie im Detailbereich die Liste der einzelnen Ereignisse an, um Ihr Ereignis zu finden.
 5.  Klicken Sie auf das Ereignis, um bestimmte Details zu einem Ereignis im unteren Bereich unter den Registerkarten **Allgemein** und **Details** anzuzeigen.
@@ -320,7 +321,7 @@ Beschreibung:
 Benutzeraktion:
 </td>
 <td >
-Beim Antivirusclient ist ein Fehler aufgetreten, und die aktuelle Überprüfung wurde beendet. Die Überprüfung kann aufgrund eines clientseitigen Problems fehlschlagen. Dieser Ereignisdatensatz enthält die Scan-ID, den Scantyp (Microsoft Defender Antivirus, Antischa spyware, Antischansoftware), Scanparameter, den Benutzer, der die Überprüfung gestartet hat, den Fehlercode und eine Beschreibung des Fehlers.
+Beim Antivirusclient ist ein Fehler aufgetreten, und die aktuelle Überprüfung wurde beendet. Die Überprüfung kann aufgrund eines clientseitigen Problems fehlschlagen. Dieser Ereignisdatensatz enthält die Scan-ID, den Scantyp (Microsoft Defender Antivirus, Antischayware, Antischantischung), Scanparameter, den Benutzer, der die Überprüfung gestartet hat, den Fehlercode und eine Beschreibung des Fehlers.
 So behandeln Sie dieses Ereignis:
 <ol>
 <li>Führen Sie den Scan erneut aus.</li>
@@ -386,7 +387,7 @@ Weitere Informationen finden Sie unter den folgenden Themen:
 <li>Benutzer: Vom Benutzer initiiert</li>
 <li>System: System initiiert</li>
 <li>Echtzeit: In Echtzeit initiierte Echtzeitkomponente</li>
-<li>IOAV: IE Downloads und Outlook Express Attachments initiiert</li>
+<li>IOAV: IE-Downloads und -Outlook von Express Attachments initiiert</li>
 <li>NIS: Netzwerkinspektionssystem</li>
 <li>IEPROTECT: IE - IExtensionValidation; Dies schützt vor schädlichen Webseitensteuerelementen</li>
 <li>Early Launch Antimalware (ELAM). Dies schließt Schadsoftware ein, die von der Startsequenz erkannt wird.</li>
@@ -396,8 +397,8 @@ Weitere Informationen finden Sie unter den folgenden Themen:
 <dt>#A0 : &lt; &gt; Statusbenutzer:</dt>
 <dt>Domäne &lt; &gt; \& lt; &gt;Benutzername:</dt>
 <dt>Prozess in der &lt; &gt; PID-Signaturversion:</dt>
-<dt> &lt; &gt; Version</dt>des Definitionsmoduls:
-<dt> &lt; Antischalwaremodulversion &gt; </dt>
+<dt> &lt; Version &gt; </dt>des Definitionsmoduls: Antischadsoftware-Engine
+<dt> &lt; Version &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -424,7 +425,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus hat Maßnahmen ergriffen, um diesen Computer vor Schadsoftware oder anderer potenziell unerwünschter Software zu schützen. Weitere Informationen finden Sie unter den folgenden Themen:
+Microsoft Defender Antivirus maßnahmen ergriffen, um diesen Computer vor Schadsoftware oder anderer potenziell unerwünschter Software zu schützen. Weitere Informationen finden Sie unter den folgenden Themen:
 <dl>
 <dt>Benutzer: &lt; Domain &gt; \& lt; &gt;Benutzername:</dt>
 <dt>Id des &lt; &gt; Bedrohungsnamens:</dt>Schweregrad der
@@ -448,8 +449,8 @@ Microsoft Defender Antivirus hat Maßnahmen ergriffen, um diesen Computer vor Sc
 </ul>
 </dt>
 <dt>Status: &lt; &gt;</dt>
-<dt>Statussignaturversion: &lt; Version &gt; des Definitionsmoduls:</dt>
-<dt>Version des &lt; Antischalwaremoduls &gt; </dt>
+<dt>Statussignaturversion: &lt; Version des &gt; Definitionsmoduls:</dt>
+<dt>Antischadsoftware-Engine &lt; Version &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -476,7 +477,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus ist beim Ergreifen von Maßnahmen gegen Schadsoftware oder andere potenziell unerwünschte Software auf einen Fehler gestoßen. Weitere Informationen finden Sie unter den folgenden Themen:
+Microsoft Defender Antivirus beim Ergreifen von Maßnahmen gegen Schadsoftware oder andere potenziell unerwünschte Software ist ein Fehler aufgetreten. Weitere Informationen finden Sie unter den folgenden Themen:
 <dl>
 <dt>Benutzer: &lt; Domain &gt; \& lt; &gt;Benutzername:</dt>
 <dt>Id des &lt; &gt; Bedrohungsnamens:</dt>Schweregrad der
@@ -503,8 +504,8 @@ Microsoft Defender Antivirus ist beim Ergreifen von Maßnahmen gegen Schadsoftwa
 <dt>Fehlercode: &lt; Fehlercode &gt; Ergebniscode, der dem Bedrohungsstatus zugeordnet ist. Standard-HRESULT-Werte. </dt> 
 <dt>Fehlerbeschreibung: &lt; Fehlerbeschreibung &gt; Beschreibung des Fehlers.</dt> 
 <dt>Status: &lt; &gt;</dt>
-<dt>Statussignaturversion: &lt; Version &gt; des Definitionsmoduls:</dt>
-<dt>Version des &lt; Antischalwaremoduls &gt; </dt>
+<dt>Statussignaturversion: &lt; Version des &gt; Definitionsmoduls:</dt>
+<dt>Antischadsoftware-Engine &lt; Version &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -531,7 +532,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus hat ein Element aus der Quarantäne wiederhergestellt. Weitere Informationen finden Sie unter den folgenden Themen:
+Microsoft Defender Antivirus ein Element aus der Quarantäne wiederhergestellt. Weitere Informationen finden Sie unter den folgenden Themen:
 <dl>
 <dt>Name: &lt; &gt;Bedrohungsname-ID:</dt>Schweregrad der
 <dt> &lt; &gt; Bedrohungs-ID:</dt> 
@@ -545,8 +546,8 @@ Microsoft Defender Antivirus hat ein Element aus der Quarantäne wiederhergestel
 <dt>Kategorie: &lt; &gt;Kategoriebeschreibung, z. B. jeder Bedrohungs- oder Schadsoftwaretyp.</dt> 
 <dt>Pfad: &lt; Dateipfad &gt; </dt>
 <dt>Benutzer: &lt; Domain &gt; \& lt; &gt;</dt>
-<dt>Benutzersignaturversion: &lt; Version &gt; des Definitionsmoduls:</dt>
-<dt>Version des &lt; Antischalwaremoduls &gt; </dt>
+<dt>Benutzersignaturversion: &lt; Version des &gt; Definitionsmoduls:</dt>
+<dt>Antischadsoftware-Engine &lt; Version &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -573,7 +574,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Beim Versuch, ein Element aus der Quarantäne wiederherzustellen, ist ein Fehler bei Microsoft Defender Antivirus aufgetreten. Weitere Informationen finden Sie unter den folgenden Themen:
+Microsoft Defender Antivirus fehler beim Wiederherstellen eines Elements aus der Quarantäne aufgetreten. Weitere Informationen finden Sie unter den folgenden Themen:
 <dl>
 <dt>Name: &lt; &gt;Bedrohungsname-ID:</dt>Schweregrad der
 <dt> &lt; &gt; Bedrohungs-ID:</dt> 
@@ -590,7 +591,7 @@ Beim Versuch, ein Element aus der Quarantäne wiederherzustellen, ist ein Fehler
 <dt>Benutzerfehlercode: &lt; Fehlercode &gt; Ergebniscode, der dem Bedrohungsstatus zugeordnet ist. Standard-HRESULT-Werte. </dt> 
 <dt>Fehlerbeschreibung: &lt; Fehlerbeschreibung &gt; Beschreibung des Fehlers.</dt> 
 <dt>Signaturversion: &lt; Version &gt; des</dt>
-<dt>Definitionsmoduls: &lt; Antischalwaremodulversion &gt; </dt>
+<dt>Definitionsmoduls: &lt; Antischadsoftware-Engine &gt; Version</dt>
 </dl>
 </td>
 </tr>
@@ -617,7 +618,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus hat ein Element aus der Quarantäne gelöscht.<br/>Weitere Informationen finden Sie unter den folgenden Themen:
+Microsoft Defender Antivirus ein Element aus der Quarantäne gelöscht.<br/>Weitere Informationen finden Sie unter den folgenden Themen:
 <dl>
 <dt>Name: &lt; &gt;Bedrohungsname-ID:</dt>Schweregrad der
 <dt> &lt; &gt; Bedrohungs-ID:</dt> 
@@ -631,8 +632,8 @@ Microsoft Defender Antivirus hat ein Element aus der Quarantäne gelöscht.<br/>
 <dt>Kategorie: &lt; &gt;Kategoriebeschreibung, z. B. jeder Bedrohungs- oder Schadsoftwaretyp.</dt> 
 <dt>Pfad: &lt; Dateipfad &gt; </dt>
 <dt>Benutzer: &lt; Domain &gt; \& lt; &gt;</dt>
-<dt>Benutzersignaturversion: &lt; Version &gt; des Definitionsmoduls:</dt>
-<dt>Version des &lt; Antischalwaremoduls &gt; </dt>
+<dt>Benutzersignaturversion: &lt; Version des &gt; Definitionsmoduls:</dt>
+<dt>Antischadsoftware-Engine &lt; Version &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -659,7 +660,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Beim Versuch, ein Element aus der Quarantäne zu löschen, ist ein Fehler bei Microsoft Defender Antivirus aufgetreten.
+Microsoft Defender Antivirus fehler beim Löschen eines Elements aus der Quarantäne aufgetreten.
 Weitere Informationen finden Sie unter den folgenden Themen:
 <dl>
 <dt>Name: &lt; &gt;Bedrohungsname-ID:</dt>Schweregrad der
@@ -677,7 +678,7 @@ Weitere Informationen finden Sie unter den folgenden Themen:
 <dt>Benutzerfehlercode: &lt; Fehlercode &gt; Ergebniscode, der dem Bedrohungsstatus zugeordnet ist. Standard-HRESULT-Werte. </dt> 
 <dt>Fehlerbeschreibung: &lt; Fehlerbeschreibung &gt; Beschreibung des Fehlers.</dt> 
 <dt>Signaturversion: &lt; Version &gt; des</dt>
-<dt>Definitionsmoduls: &lt; Antischalwaremodulversion &gt; </dt>
+<dt>Definitionsmoduls: &lt; Antischadsoftware-Engine &gt; Version</dt>
 </dl>
 </td>
 </tr>
@@ -704,7 +705,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus hat den Verlauf von Schadsoftware und anderer potenziell unerwünschter Software entfernt.
+Microsoft Defender Antivirus verlauf von Schadsoftware und anderer potenziell unerwünschter Software entfernt.
 <dl>Zeit: Der Zeitpunkt, zu dem das Ereignis aufgetreten ist, z. B. 
 <dt>wenn der Verlauf gelöscht wird. Dieser Parameter wird nicht in Bedrohungsereignissen verwendet, sodass keine Verwirrung darüber besteht, ob es sich um Korrekturzeit oder Infektionszeit handelt. Für diese werden sie speziell als Aktionszeit oder Erkennungszeit bezeichnet.</dt> 
 <dt>Benutzer: &lt; Domain &gt; \& lt; User &gt; </dt>
@@ -734,7 +735,7 @@ Die Antischalwareplattform konnte den Verlauf von Schadsoftware und anderer pote
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus hat einen Fehler beim Entfernen des Verlaufs von Schadsoftware und anderer potenziell unerwünschter Software festgestellt.
+Microsoft Defender Antivirus fehler beim Entfernen des Verlaufs von Schadsoftware und anderer potenziell unerwünschter Software.
 <dl>Zeit: Der Zeitpunkt, zu dem das Ereignis aufgetreten ist, z. B. 
 <dt>wenn der Verlauf gelöscht wird. Dieser Parameter wird nicht in Bedrohungsereignissen verwendet, sodass keine Verwirrung darüber besteht, ob es sich um Korrekturzeit oder Infektionszeit handelt. Für diese werden sie speziell als Aktionszeit oder Erkennungszeit bezeichnet.</dt> 
 <dt>Benutzer: &lt; Domain &gt; \& lt; &gt;</dt>
@@ -800,7 +801,7 @@ Microsoft Defender Antivirus hat ein verdächtiges Verhalten erkannt.<br/>Weiter
 <li>Benutzer: Vom Benutzer initiiert</li>
 <li>System: System initiiert</li>
 <li>Echtzeit: In Echtzeit initiierte Echtzeitkomponente</li>
-<li>IOAV: IE Downloads und Outlook Express Attachments initiiert</li>
+<li>IOAV: IE-Downloads und -Outlook von Express Attachments initiiert</li>
 <li>NIS: Netzwerkinspektionssystem</li>
 <li>IEPROTECT: IE - IExtensionValidation; Dies schützt vor schädlichen Webseitensteuerelementen</li>
 <li>Early Launch Antimalware (ELAM). Dies schließt Schadsoftware ein, die von der Startsequenz erkannt wird.</li>
@@ -812,7 +813,7 @@ Microsoft Defender Antivirus hat ein verdächtiges Verhalten erkannt.<br/>Weiter
 <dt>Prozess in der &lt; &gt; PID-Signatur-ID:</dt>
 <dt>Aufzählungsvergleichsschweregrad.</dt> 
 <dt>Signaturversion: &lt; Version &gt; des</dt>
-<dt>Definitionsmoduls: &lt; &gt; Antischalwaremodulversion</dt>
+<dt>Definitionsmoduls: &lt; Antischadsoftware-Engine &gt; Version</dt>
 <dt>Fidelity Label:</dt>
 <dt>Zieldateiname: &lt; Dateiname Name der &gt; Datei.</dt>
 </dl>
@@ -841,7 +842,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus hat Schadsoftware oder andere potenziell unerwünschte Software erkannt.<br/>Weitere Informationen finden Sie unter den folgenden Themen:
+Microsoft Defender Antivirus Schadsoftware oder andere potenziell unerwünschte Software erkannt.<br/>Weitere Informationen finden Sie unter den folgenden Themen:
 <dl>
 <dt>Name: &lt; &gt;Bedrohungsname-ID:</dt>Schweregrad der
 <dt> &lt; &gt; Bedrohungs-ID:</dt> 
@@ -875,7 +876,7 @@ Microsoft Defender Antivirus hat Schadsoftware oder andere potenziell unerwünsc
 <li>Benutzer: Vom Benutzer initiiert</li>
 <li>System: System initiiert</li>
 <li>Echtzeit: In Echtzeit initiierte Echtzeitkomponente</li>
-<li>IOAV: IE Downloads und Outlook Express Attachments initiiert</li>
+<li>IOAV: IE-Downloads und -Outlook von Express Attachments initiiert</li>
 <li>NIS: Netzwerkinspektionssystem</li>
 <li>IEPROTECT: IE - IExtensionValidation; Dies schützt vor schädlichen Webseitensteuerelementen</li>
 <li>Early Launch Antimalware (ELAM). Dies schließt Schadsoftware ein, die von der Startsequenz erkannt wird.</li>
@@ -884,8 +885,8 @@ Microsoft Defender Antivirus hat Schadsoftware oder andere potenziell unerwünsc
 </dt>
 <dt>UAC-Benutzer: &lt; Domain &gt; \& lt; &gt;Benutzername:</dt>
 <dt>Prozess in der &lt; &gt; PID-Signaturversion:</dt>
-<dt> &lt; &gt; Version</dt>des Definitionsmoduls:
-<dt> &lt; Antischalwaremodulversion &gt; </dt>
+<dt> &lt; Version &gt; </dt>des Definitionsmoduls: Antischadsoftware-Engine
+<dt> &lt; Version &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -894,7 +895,7 @@ Microsoft Defender Antivirus hat Schadsoftware oder andere potenziell unerwünsc
 Benutzeraktion:
 </td>
 <td >
-Es ist keine Aktion erforderlich. Microsoft Defender Antivirus kann diese Bedrohung anhalten und Routinemaßnahmen ergreifen. Wenn Sie die Bedrohung manuell entfernen möchten, klicken Sie auf der Microsoft Defender Antivirus-Schnittstelle auf <b>Clean Computer</b>.
+Es ist keine Aktion erforderlich. Microsoft Defender Antivirus kann diese Bedrohung anhalten und Routinemaßnahmen ergreifen. Wenn Sie die Bedrohung manuell entfernen möchten, klicken Sie auf der Microsoft Defender Antivirus auf <b>Clean Computer</b>.
 </td>
 </tr>
 <tr>
@@ -920,7 +921,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus hat Maßnahmen ergriffen, um diesen Computer vor Schadsoftware oder anderer potenziell unerwünschter Software zu schützen.<br/>Weitere Informationen finden Sie unter den folgenden Themen:
+Microsoft Defender Antivirus maßnahmen ergriffen, um diesen Computer vor Schadsoftware oder anderer potenziell unerwünschter Software zu schützen.<br/>Weitere Informationen finden Sie unter den folgenden Themen:
 <dl>
 <dt>Name: &lt; &gt;Bedrohungsname-ID:</dt>Schweregrad der
 <dt> &lt; &gt; Bedrohungs-ID:</dt> 
@@ -954,7 +955,7 @@ Microsoft Defender Antivirus hat Maßnahmen ergriffen, um diesen Computer vor Sc
 <li>Benutzer: Vom Benutzer initiiert</li>
 <li>System: System initiiert</li>
 <li>Echtzeit: In Echtzeit initiierte Echtzeitkomponente</li>
-<li>IOAV: IE Downloads und Outlook Express Attachments initiiert</li>
+<li>IOAV: IE-Downloads und -Outlook von Express Attachments initiiert</li>
 <li>NIS: Netzwerkinspektionssystem</li>
 <li>IEPROTECT: IE - IExtensionValidation; Dies schützt vor schädlichen Webseitensteuerelementen</li>
 <li>Early Launch Antimalware (ELAM). Dies schließt Schadsoftware ein, die von der Startsequenz erkannt wird.</li>
@@ -977,14 +978,14 @@ Microsoft Defender Antivirus hat Maßnahmen ergriffen, um diesen Computer vor Sc
 <dt>Fehlercode: &lt; Fehlercode &gt; Ergebniscode, der dem Bedrohungsstatus zugeordnet ist. Standard-HRESULT-Werte.</dt> 
 <dt>Fehlerbeschreibung: &lt; Fehlerbeschreibung &gt; Beschreibung des Fehlers.</dt> 
 <dt>Signaturversion: &lt; Version &gt; des</dt>Definitionsmoduls:
-<dt> &lt; &gt; AntischalwaremodulVersion</dt> HINWEIS: Wenn Microsoft Defender Antivirus, Microsoft Security Essentials, Tool zum Entfernen bösartiger Software oder System Center Endpoint Protection eine Schadsoftware erkennt, werden die folgenden Systemeinstellungen und Dienste wiederhergestellt, die die Schadsoftware möglicherweise geändert hat:<ul>
-<li>Standardeinstellung für Internet Explorer oder Microsoft Edge</li>
+<dt> &lt; Antischadsoftware-Engine &gt; </dt> Version HINWEIS: Wenn Microsoft Defender Antivirus, Microsoft Security Essentials, Tool zum Entfernen bösartiger Software oder System Center Endpoint Protection eine Schadsoftware erkennt, werden die folgenden Systemeinstellungen und Dienste wiederhergestellt, die die Schadsoftware möglicherweise geändert hat:<ul>
+<li>Standardeinstellung für Internet Explorer Microsoft Edge Internet Explorer</li>
 <li>Einstellungen für die Benutzerzugriffssteuerung</li>
 <li>Chrome-Einstellungen</li>
 <li>Startsteuerungsdaten</li>
 <li>Registrierungseinstellungen für Regedit und Task Manager</li>
 <li>Windows Update-, Background Intelligent Transfer Service- und Remoteprozedur-Anrufdienst</li>
-<li>Windows-Betriebssystemdateien</li></ul>
+<li>Windows Betriebssystemdateien</li></ul>
 Der obige Kontext gilt für die folgenden Client- und Serverversionen:
 <table>
 <tr>
@@ -1016,7 +1017,7 @@ Windows Server 2008, Windows Server 2008 R2, Windows Server 2012 und Windows Ser
 Benutzeraktion:
 </td>
 <td >
-Es ist keine Aktion erforderlich. Microsoft Defender Antivirus hat eine Bedrohung entfernt oder isoliert. 
+Es ist keine Aktion erforderlich. Microsoft Defender Antivirus eine Bedrohung entfernt oder isoliert. 
 </td>
 </tr>
 <tr>
@@ -1042,7 +1043,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus ist beim Ergreifen von Maßnahmen gegen Schadsoftware oder andere potenziell unerwünschte Software auf einen nicht kritischen Fehler gestoßen.<br/>Weitere Informationen finden Sie unter den folgenden Themen:
+Microsoft Defender Antivirus beim Ergreifen von Maßnahmen gegen Schadsoftware oder andere potenziell unerwünschte Software ist ein nicht kritischer Fehler aufgetreten.<br/>Weitere Informationen finden Sie unter den folgenden Themen:
 <dl>
 <dt>Name: &lt; &gt;Bedrohungsname-ID:</dt>Schweregrad der
 <dt> &lt; &gt; Bedrohungs-ID:</dt> 
@@ -1076,7 +1077,7 @@ Microsoft Defender Antivirus ist beim Ergreifen von Maßnahmen gegen Schadsoftwa
 <li>Benutzer: Vom Benutzer initiiert</li>
 <li>System: System initiiert</li>
 <li>Echtzeit: In Echtzeit initiierte Echtzeitkomponente</li>
-<li>IOAV: IE Downloads und Outlook Express Attachments initiiert</li>
+<li>IOAV: IE-Downloads und -Outlook von Express Attachments initiiert</li>
 <li>NIS: Netzwerkinspektionssystem</li>
 <li>IEPROTECT: IE - IExtensionValidation; Dies schützt vor schädlichen Webseitensteuerelementen</li>
 <li>Early Launch Antimalware (ELAM). Dies schließt Schadsoftware ein, die von der Startsequenz erkannt wird.</li>
@@ -1099,7 +1100,7 @@ Microsoft Defender Antivirus ist beim Ergreifen von Maßnahmen gegen Schadsoftwa
 <dt>Fehlercode: &lt; Fehlercode &gt; Ergebniscode, der dem Bedrohungsstatus zugeordnet ist. Standard-HRESULT-Werte.</dt> 
 <dt>Fehlerbeschreibung: &lt; Fehlerbeschreibung &gt; Beschreibung des Fehlers.</dt> 
 <dt>Signaturversion: &lt; Version &gt; des</dt>
-<dt>Definitionsmoduls: &lt; Antischalwaremodulversion &gt; </dt>
+<dt>Definitionsmoduls: &lt; Antischadsoftware-Engine &gt; Version</dt>
 </dl>
 </td>
 </tr>
@@ -1134,7 +1135,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus hat einen kritischen Fehler beim Ergreifen von Maßnahmen gegen Schadsoftware oder andere potenziell unerwünschte Software festgestellt.<br/>Weitere Informationen finden Sie unter den folgenden Themen:
+Microsoft Defender Antivirus beim Ergreifen von Maßnahmen gegen Schadsoftware oder andere potenziell unerwünschte Software ist ein kritischer Fehler aufgetreten.<br/>Weitere Informationen finden Sie unter den folgenden Themen:
 <dl>
 <dt>Name: &lt; &gt;Bedrohungsname-ID:</dt>Schweregrad der
 <dt> &lt; &gt; Bedrohungs-ID:</dt> 
@@ -1168,7 +1169,7 @@ Microsoft Defender Antivirus hat einen kritischen Fehler beim Ergreifen von Maß
 <li>Benutzer: Vom Benutzer initiiert</li>
 <li>System: System initiiert</li>
 <li>Echtzeit: In Echtzeit initiierte Echtzeitkomponente</li>
-<li>IOAV: IE Downloads und Outlook Express Attachments initiiert</li>
+<li>IOAV: IE-Downloads und -Outlook von Express Attachments initiiert</li>
 <li>NIS: Netzwerkinspektionssystem</li>
 <li>IEPROTECT: IE - IExtensionValidation; Dies schützt vor schädlichen Webseitensteuerelementen</li>
 <li>Early Launch Antimalware (ELAM). Dies schließt Schadsoftware ein, die von der Startsequenz erkannt wird.</li>
@@ -1191,7 +1192,7 @@ Microsoft Defender Antivirus hat einen kritischen Fehler beim Ergreifen von Maß
 <dt>Fehlercode: &lt; Fehlercode &gt; Ergebniscode, der dem Bedrohungsstatus zugeordnet ist. Standard-HRESULT-Werte.</dt> 
 <dt>Fehlerbeschreibung: &lt; Fehlerbeschreibung &gt; Beschreibung des Fehlers.</dt> 
 <dt>Signaturversion: &lt; Version &gt; des</dt>
-<dt>Definitionsmoduls: &lt; Antischalwaremodulversion &gt; </dt>
+<dt>Definitionsmoduls: &lt; Antischadsoftware-Engine &gt; Version</dt>
 </dl>
 </td>
 </tr>
@@ -1200,7 +1201,7 @@ Microsoft Defender Antivirus hat einen kritischen Fehler beim Ergreifen von Maß
 Benutzeraktion:
 </td>
 <td >
-Der Microsoft Defender Antivirus-Client ist aufgrund kritischer Probleme auf diesen Fehler gestoßen. Der Endpunkt ist möglicherweise nicht geschützt. Überprüfen Sie die Fehlerbeschreibung, und führen Sie dann die unten aufgeführten Schritte <b>für die Benutzeraktion</b> aus.
+Der Microsoft Defender Antivirus client ist aufgrund kritischer Probleme auf diesen Fehler gestoßen. Der Endpunkt ist möglicherweise nicht geschützt. Überprüfen Sie die Fehlerbeschreibung, und führen Sie dann die unten aufgeführten Schritte <b>für die Benutzeraktion</b> aus.
 <table>
 <tr>
 <th>Aktion</th>
@@ -1271,7 +1272,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Der Microsoft Defender Antivirus-Client ist in einem fehlerfreien Zustand ausgeführt.
+Microsoft Defender Antivirus client ist in einem fehlerfreien Zustand ausgeführt.
 <dl>
 <dt>Aktuelle Plattformversion: &lt; Aktuelle Plattformversion &gt; </dt>
 <dt>Bedrohungsressourcenpfad: &lt; &gt; Pfadhashes:</dt>
@@ -1309,11 +1310,11 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Der Microsoft Defender Antivirus-Client ist in einem fehlerfreien Zustand ausgeführt.
+Microsoft Defender Antivirus client ist in einem fehlerfreien Zustand ausgeführt.
 <dl>
 <dt>Plattformversion: &lt; Signaturversion &gt; der aktuellen</dt>
-<dt>Plattformversion: &lt; Version &gt; des Definitionsmoduls:</dt>
-<dt> &lt; Antischalwaremodulversion &gt; </dt>
+<dt>Plattformversion: &lt; Version &gt; des</dt>Definitionsmoduls: Antischadsoftware-Engine
+<dt> &lt; Version &gt; </dt>
 </dl>
 </td>
 </tr>
@@ -1341,7 +1342,7 @@ Symbolischer Name:
 Meldung:
 </td>
 <td >
-<b>Endpoint Protection-Clientinte health report (Time in UTC) </b>
+<b>Endpoint Protection client health report (Zeit in UTC)</b>
 </td>
 </tr>
 <tr>
@@ -1351,21 +1352,21 @@ Beschreibung:
 <td >
 Antivirusclientinte health report.
 <dl>
-<dt>Plattformversion: &lt; &gt;</dt>Aktuelle Plattformversion
-<dt>Modulversion: &lt; &gt; </dt>Antischalwaremodulversion Netzwerk Echtzeitprüfungsmodulversion: Version des
-<dt> &lt; Netzwerk-Realtime-Inspektionsmoduls &gt; </dt>Antivirussignaturversion:
-<dt> &lt; &gt; Antivirussignaturversion</dt>
-<dt>Anspoywaresignaturversion Netzwerk &lt; &gt; </dt>Echtzeitprüfung Signaturversion: Network
-<dt> &lt; Realtime Inspection &gt; </dt>Signature Version
-<dt>RTP state: &lt; Realtime protection state &gt; (Enabled or Disabled)</dt>
-<dt>OA state: On Access state &lt; &gt; (Enabled or Disabled)</dt>
-<dt>IOAV state: Status "IE Downloads and Outlook Express &lt; Attachments" (Aktiviert oder &gt; Deaktiviert):</dt>Status der Verhaltensüberwachung (Aktiviert oder
-<dt> &lt; &gt; Deaktiviert)</dt>Antivirussignaturalter: Alter der Antivirussignatur
-<dt> &lt; &gt; (in Tagen)</dt>
-<dt>Antisywaresignaturalter: Alter der Ansywaresignatur &lt; &gt; (in Tagen)</dt>Alter der letzten Schnellscan: Alter der letzten Schnellscan
-<dt> &lt; &gt; (in Tagen)</dt>Alter der letzten vollständigen Überprüfung: Alter der letzten vollständigen Überprüfung
-<dt> &lt; &gt; (in Tagen)</dt>Erstellungszeit der Antivirussignatur:
-<dt>? &lt; Erstellungszeit für &gt; AntivirensignaturEntschmieren</dt>
+<dt>Plattformversion: &lt; &gt;</dt>Aktuelle Version des Plattformmoduls:
+<dt> &lt; &gt; Antischadsoftware-Engine-Version</dt>Network
+<dt>Realtime Inspection Engine Version: &lt; Network Realtime Inspection Engine &gt; Version</dt>
+<dt>Antivirussignaturversion: &lt; Antivirussignaturversion &gt; </dt>
+<dt>Antipywaresignaturversion: Anspoywaresignaturversion &lt; &gt; </dt>Netzwerk EchtzeitPrüfung Signaturversion RTP-Status:
+<dt> &lt; &gt; </dt>Echtzeitschutzstatus (Aktiviert oder Deaktiviert): On Access State
+<dt> &lt; &gt; (Enabled or</dt>
+<dt> &lt; &gt; Disabled)</dt>
+<dt>IOAV state: I E-Downloads und Outlook Status "Express &lt; Attachments" (Aktiviert oder &gt; Deaktiviert)</dt>
+<dt>BM-Status: Status der Verhaltensüberwachung (Aktiviert oder &lt; &gt; Deaktiviert)</dt>Antivirussignaturalter: Alter der Antivirussignatur
+<dt> &lt; &gt; (in Tagen)</dt>Antisywaresignaturalter: Alter der Ansywaresignatur
+<dt> &lt; &gt; (in Tagen)</dt>Alter der letzten Schnellscan: Alter der letzten Schnellscan
+<dt> &lt; &gt; (in Tagen)</dt>Alter der letzten vollständigen Überprüfung: Zeitpunkt der Erstellung der Antivirensignatur
+<dt> &lt; &gt; (in</dt>
+<dt>Tagen): ? &lt; Erstellungszeit für &gt; AntivirensignaturEntschmieren</dt>
 <dt>der Signatur antispyware: ? &lt; Erstellungszeit der &gt; Ansywaresignatur</dt>letzte
 <dt>Schnellscanstartzeit: ? &lt; Startzeit der &gt; letzten Schnellscans</dt>
 <dt>Letzte Endzeit des Schnellscans: ? &lt; &gt;Endzeit</dt>der letzten Schnellscans Letzte Schnellscanquelle: Quelle der letzten Schnellscans (0 = Scan&#39;wurde nicht
@@ -1450,7 +1451,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Bei Microsoft Defender Antivirus ist ein Fehler beim Aktualisieren von Signaturen aufgetreten.
+Microsoft Defender Antivirus fehler beim Aktualisieren von Signaturen aufgetreten.
 <dl>
 <dt>Neue Security Intelligence-Version: &lt; Neue Versionsnummer &gt; </dt>
 <dt>Frühere Sicherheitsintelligenzversion: &lt; Vorherige &gt; </dt>Version 
@@ -1465,12 +1466,12 @@ Bei Microsoft Defender Antivirus ist ein Fehler beim Aktualisieren von Signature
 </dt>
 <dt>Updatephase: &lt; Updatephase &gt; , z. B.:
 <ul>
-<li>Suchen</li>
+<li>Suche</li>
 <li>Herunterladen</li>
 <li>Installieren</li>
 </ul>
 </dt>
-<dt>Quellpfad: Dateifreigabename für universelle Benennungskonvention (Universal Naming Convention, UNC), Servername für Windows Server Update Services (WSUS)/Microsoft Update/ADL.</dt> 
+<dt>Quellpfad: Dateifreigabename für unc(Universal Naming Convention), Servername für Windows Server Update Services (WSUS)/Microsoft Update/ADL.</dt> 
 <dt> Signaturtyp: &lt; Signaturtyp &gt; , z. B.: <ul>
 <li>Antivirus</li>
 <li>Ansyware</li>
@@ -1525,7 +1526,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Die Version des Microsoft Defender Antivirus-Moduls wurde aktualisiert.
+Microsoft Defender Antivirus Modulversion wurde aktualisiert.
 <dl>
 <dt>Aktuelle Modulversion: &lt; Aktuelle Modulversion &gt; </dt>
 <dt>Vorherige Modulversion: &lt; &gt; Modultyp</dt>der vorherigen Modulversion: Modultyp , entweder Antischalwaremodul oder
@@ -1565,7 +1566,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Beim Versuch, das Modul zu aktualisieren, ist ein Fehler bei Microsoft Defender Antivirus aufgetreten.
+Microsoft Defender Antivirus fehler beim Aktualisieren des Moduls aufgetreten.
 <dl>
 <dt>Neue Modulversion:</dt>
 <dt>Frühere Modulversion: &lt; &gt; Modultyp</dt>der vorherigen Modulversion: Modultyp , entweder Antischalwaremodul
@@ -1581,7 +1582,7 @@ Beim Versuch, das Modul zu aktualisieren, ist ein Fehler bei Microsoft Defender 
 Benutzeraktion:
 </td>
 <td >
-Fehler beim Microsoft Defender Antivirus-Clientupdate. Dieses Ereignis tritt auf, wenn der Client sich selbst nicht aktualisieren kann. Dieses Ereignis ist in der Regel auf eine Unterbrechung der Netzwerkverbindung während eines Updates bedingt.
+Fehler Microsoft Defender Antivirus Clientupdates. Dieses Ereignis tritt auf, wenn der Client sich selbst nicht aktualisieren kann. Dieses Ereignis ist in der Regel auf eine Unterbrechung der Netzwerkverbindung während eines Updates bedingt.
 So behandeln Sie dieses Ereignis:
 <ol>
 <li><a href="manage-updates-baselines-microsoft-defender-antivirus.md" data-raw-source="[Update definitions](manage-updates-baselines-microsoft-defender-antivirus.md)">Aktualisieren Sie Definitionen,</a> und erzwingen Sie einen erneuten Scan direkt auf dem Endpunkt.</li>
@@ -1613,7 +1614,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus hat einen Fehler beim Laden von Signaturen festgestellt und versucht, zu einem bekannten Satz von Signaturen zurück zu kehren.
+Microsoft Defender Antivirus beim Laden von Signaturen ist ein Fehler aufgetreten, und es wird versucht, zu einem bekannten Satz von Signaturen zurück zu kehren.
 <dl>
 <dt>Signaturen versucht:</dt>
 <dt>Fehlercode: &lt; Fehlercode &gt; Ergebniscode, der dem Bedrohungsstatus zugeordnet ist. Standard-HRESULT-Werte.</dt> 
@@ -1628,11 +1629,11 @@ Microsoft Defender Antivirus hat einen Fehler beim Laden von Signaturen festgest
 Benutzeraktion:
 </td>
 <td >
-Der Microsoft Defender Antivirus-Client hat versucht, die neueste Definitionsdatei herunterzuladen und zu installieren, und es ist ein Fehler fehlgeschlagen. Dieser Fehler kann auftreten, wenn auf dem Client beim Laden der Definitionen ein Fehler auftritt oder wenn die Datei beschädigt ist. Microsoft Defender Antivirus versucht, zu einem bekannten Satz von Definitionen zurück zu kehren.
+Der Microsoft Defender Antivirus client hat versucht, die neueste Definitionsdatei herunterzuladen und zu installieren, und es ist ein Fehler fehlgeschlagen. Dieser Fehler kann auftreten, wenn auf dem Client beim Laden der Definitionen ein Fehler auftritt oder wenn die Datei beschädigt ist. Microsoft Defender Antivirus versucht, zu einem bekannten Satz von Definitionen zurück zu kehren.
 So behandeln Sie dieses Ereignis:
 <ol>
 <li>Starten Sie den Computer neu, und versuchen Sie es erneut.</li>
-<li>Laden Sie die neuesten Definitionen von der <a href="https://aka.ms/wdsi">Microsoft Security Intelligence-Website herunter.</a>
+<li>Laden Sie die neuesten Definitionen von der <a href="https://aka.ms/wdsi">Microsoft Security Intelligence herunter.</a>
 Hinweis: Die Größe der von der Website heruntergeladenen Definitionsdatei kann 60 MB überschreiten und sollte nicht als langfristige Lösung zum Aktualisieren von Definitionen verwendet werden.
 </li>
 <li>Kontaktieren Sie den <a href="https://go.microsoft.com/fwlink/?LinkId=215491">technischen Support von Microsoft</a>.
@@ -1663,7 +1664,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus konnte das Antischalwaremodul nicht laden, da die aktuelle Plattformversion nicht unterstützt wird. Microsoft Defender Antivirus kehrt zum letzten bekannten Modul zurück, und es wird versucht, ein Plattformupdate zu installieren.
+Microsoft Defender Antivirus konnte das Antischalwaremodul nicht geladen werden, da die aktuelle Plattformversion nicht unterstützt wird. Microsoft Defender Antivirus wird zum letzten bekannten Modul zurückgesetzt, und es wird versucht, ein Plattformupdate zu installieren.
 <dl>
 <dt>Aktuelle Plattformversion: &lt; Aktuelle Plattformversion&gt;</dt>
 </dl>
@@ -1692,7 +1693,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Beim Versuch, die Plattform zu aktualisieren, ist ein Fehler bei Microsoft Defender Antivirus aufgetreten.
+Microsoft Defender Antivirus beim Versuch, die Plattform zu aktualisieren, ist ein Fehler aufgetreten.
 <dl>
 <dt>Aktuelle Plattformversion: &lt; Fehlercode &gt; der aktuellen</dt>
 <dt>Plattformversion: &lt; Fehlercode &gt; Ergebniscode, der dem Bedrohungsstatus zugeordnet ist. Standard-HRESULT-Werte.</dt> 
@@ -1723,7 +1724,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus benötigt in Kürze eine neuere Plattformversion, um zukünftige Versionen des Antischammungsmoduls zu unterstützen. Laden Sie die neueste Microsoft Defender Antivirus-Plattform herunter, um den bestmöglichen Schutz zu gewährleisten.
+Microsoft Defender Antivirus benötigen bald eine neuere Plattformversion, um zukünftige Versionen des Antischalwaremoduls zu unterstützen. Laden Sie die neueste Microsoft Defender Antivirus herunter, um das beste verfügbare Schutzniveau zu gewährleisten.
 <dl>
 <dt>Aktuelle Plattformversion: &lt; Aktuelle Plattformversion&gt;</dt>
 </dl>
@@ -1752,7 +1753,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus hat <i>den Dynamischen Signaturdienst verwendet,</i> um zusätzliche Signaturen abzurufen, um Ihren Computer zu schützen.
+Microsoft Defender Antivirus dynamische <i>Signaturdienst</i> verwendet, um zusätzliche Signaturen abzurufen, um Ihren Computer zu schützen.
 <dl>
 <dt>Aktuelle Signaturversion: &lt; Signaturtyp &gt; der aktuellen</dt> 
 <dt> Signaturversion: &lt; &gt; Signaturtyp , z. B.: <ul>
@@ -1808,7 +1809,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus hat <i>den dynamischen Signaturdienst verwendet,</i> um veraltete Signaturen zu verwerfen.
+Microsoft Defender Antivirus dynamische <i>Signaturdienst verwendet,</i> um veraltete Signaturen zu verwerfen.
 <dl>
 <dt>Aktuelle Signaturversion: &lt; Signaturtyp &gt; der aktuellen</dt> 
 <dt> Signaturversion: &lt; &gt; Signaturtyp , z. B.: <ul>
@@ -1873,7 +1874,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus hat einen Fehler beim Verwenden des <i>Dynamischen Signaturdiensts festgestellt.</i>
+Microsoft Defender Antivirus beim Versuch, den dynamischen Signaturdienst <i>zu verwenden, ist ein Fehler aufgetreten.</i>
 <dl>
 <dt>Aktuelle Signaturversion: &lt; Signaturtyp &gt; der aktuellen</dt> 
 <dt> Signaturversion: &lt; &gt; Signaturtyp , z. B.: <ul>
@@ -1939,7 +1940,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus hat alle <i>Signaturen des dynamischen Signaturdiensts</i> verworfen.
+Microsoft Defender Antivirus alle <i>Signaturen des dynamischen Signaturdiensts</i> verworfen.
 <dl>
 <dt>Aktuelle Signaturversion: &lt; Aktuelle Signaturversion&gt;</dt>
 </dl>
@@ -1968,7 +1969,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus hat eine neue Datei heruntergeladen.
+Microsoft Defender Antivirus eine bereinigende Datei heruntergeladen.
 <dl>
 <dt>Dateiname: &lt; Dateiname &gt; Name der Datei.</dt> 
 <dt>Aktuelle Signaturversion: &lt; Aktuelle Signaturversion &gt; </dt>
@@ -1999,7 +2000,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Bei Microsoft Defender Antivirus ist ein Fehler beim Herunterladen einer sauberen Datei aufgetreten.
+Microsoft Defender Antivirus fehler beim Herunterladen einer sauberen Datei aufgetreten.
 <dl>
 <dt>Dateiname: &lt; Dateiname &gt; Name der Datei.</dt> 
 <dt>Aktuelle Signaturversion: &lt; Aktuelle Signaturversion &gt; </dt>
@@ -2015,7 +2016,7 @@ Benutzeraktion:
 </td>
 <td >
 Überprüfen Sie ihre Internetverbindungseinstellungen.
-Beim Microsoft Defender Antivirus-Client ist ein Fehler aufgetreten, wenn er den dynamischen Signaturdienst zum Herunterladen der neuesten Definitionen für eine bestimmte Bedrohung verwendet. Dieser Fehler wird wahrscheinlich durch ein Netzwerkverbindungsproblem verursacht. 
+Der Microsoft Defender Antivirus beim Verwenden des dynamischen Signaturdiensts zum Herunterladen der neuesten Definitionen für eine bestimmte Bedrohung einen Fehler festgestellt. Dieser Fehler wird wahrscheinlich durch ein Netzwerkverbindungsproblem verursacht. 
 </td>
 </tr>
 <tr>
@@ -2041,7 +2042,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus hat den Offline antivirus heruntergeladen und so konfiguriert, dass er beim nächsten Neustart ausgeführt wird.
+Microsoft Defender Antivirus heruntergeladene und konfigurierte Offline-Antivirus für die Ausführung beim nächsten Neustart.
 </td>
 </tr>
 <tr>
@@ -2067,7 +2068,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Bei Microsoft Defender Antivirus ist ein Fehler beim Herunterladen und Konfigurieren von Offline antivirus aufgetreten.
+Microsoft Defender Antivirus beim Herunterladen und Konfigurieren von Offline antivirus ist ein Fehler aufgetreten.
 <dl>
 <dt>Fehlercode: &lt; Fehlercode &gt; Ergebniscode, der dem Bedrohungsstatus zugeordnet ist. Standard-HRESULT-Werte.</dt> 
 <dt>Fehlerbeschreibung: &lt; Fehlerbeschreibung &gt; Beschreibung des Fehlers.</dt>
@@ -2097,7 +2098,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Die Unterstützung für Ihr Betriebssystem läuft in Kürze ab. Das Ausführen von Microsoft Defender Antivirus auf einem Betriebssystem ohne Support ist keine geeignete Lösung zum Schutz vor Bedrohungen.
+Die Unterstützung für Ihr Betriebssystem läuft in Kürze ab. Das Microsoft Defender Antivirus auf einem betriebssystem ohne Support ist keine geeignete Lösung zum Schutz vor Bedrohungen.
 </td>
 </tr>
 <tr>
@@ -2123,7 +2124,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Die Unterstützung für Ihr Betriebssystem ist abgelaufen. Das Ausführen von Microsoft Defender Antivirus auf einem Betriebssystem ohne Support ist keine geeignete Lösung zum Schutz vor Bedrohungen.
+Die Unterstützung für Ihr Betriebssystem ist abgelaufen. Das Microsoft Defender Antivirus auf einem betriebssystem ohne Support ist keine geeignete Lösung zum Schutz vor Bedrohungen.
 </td>
 </tr>
 <tr>
@@ -2175,19 +2176,19 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus Real-Time Protection-Funktion ist auf einen Fehler und einen Fehler gestoßen.
+Microsoft Defender Antivirus Real-Time Protection-Funktion ist ein Fehler aufgetreten und fehlgeschlagen.
 <dl>
 <dt>Feature: &lt; Feature &gt; , z. B.:
 <ul>
 <li>On Access</li>
-<li>Internet Explorer-Downloads und Microsoft Outlook Express-Anlagen</li>
+<li>Internet Explorer-Downloads und Microsoft Outlook -Express-Anlagen</li>
 <li>Verhaltensüberwachung</li>
 <li>Netzwerkinspektionssystem</li>
 </ul>
 </dt>
 <dt>Fehlercode: &lt; Fehlercode &gt; Ergebniscode, der dem Bedrohungsstatus zugeordnet ist. Standard-HRESULT-Werte.</dt> 
 <dt>Fehlerbeschreibung: &lt; Fehlerbeschreibung &gt; Beschreibung des Fehlers.</dt> 
-<dt>Grund: Der Grund, warum Microsoft Defender Antivirus echtzeitschutz ein Feature neu gestartet hat.</dt>
+<dt>Grund: Der Grund Microsoft Defender Antivirus Echtzeitschutz ein Feature neu gestartet hat.</dt>
 </dl>
 </td>
 </tr>
@@ -2197,7 +2198,7 @@ Benutzeraktion:
 </td>
 <td >
 Starten Sie das System neu, und führen Sie dann einen vollständigen Scan aus,&#39;das System möglicherweise einige Zeit nicht geschützt war.
-Der Microsoft Defender Antivirus-Client&#39;Echtzeitschutzfunktion auf einen Fehler gestoßen, da einer der Dienste nicht gestartet werden konnte. Wenn darauf eine 3007-Ereignis-ID folgt, war der Fehler temporär, und der Antischalwareclient wurde nach dem Fehler wiederhergestellt. 
+Der Microsoft Defender Antivirus Client&#39;Echtzeitschutzfunktion ist auf einen Fehler gestoßen, da einer der Dienste nicht gestartet werden konnte. Wenn darauf eine 3007-Ereignis-ID folgt, war der Fehler temporär, und der Antischalwareclient wurde nach dem Fehler wiederhergestellt. 
 </td>
 </tr>
 <tr>
@@ -2223,17 +2224,17 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Microsoft Defender Antivirus Real-time Protection hat ein Feature neu gestartet. Es wird empfohlen, dass Sie eine vollständige Systemscan ausführen, um Elemente zu erkennen, die während des Herunters dieses Agents möglicherweise verpasst wurden.
+Microsoft Defender Antivirus Echtzeitschutz hat ein Feature neu gestartet. Es wird empfohlen, dass Sie eine vollständige Systemscan ausführen, um Elemente zu erkennen, die während des Herunters dieses Agents möglicherweise verpasst wurden.
 <dl>
 <dt>Feature: &lt; Feature &gt; , z. B.:
 <ul>
 <li>On Access</li>
-<li>IE-Downloads und Outlook Express-Anlagen</li>
+<li>IE-Downloads und Outlook -Express-Anlagen</li>
 <li>Verhaltensüberwachung</li>
 <li>Netzwerkinspektionssystem</li>
 </ul>
 </dt>
-<dt>Grund: Der Grund, warum Microsoft Defender Antivirus echtzeitschutz ein Feature neu gestartet hat.</dt>
+<dt>Grund: Der Grund Microsoft Defender Antivirus Echtzeitschutz ein Feature neu gestartet hat.</dt>
 </dl>
 </td>
 </tr>
@@ -2268,7 +2269,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Die Echtzeitschutzprüfung von Microsoft Defender Antivirus auf Schadsoftware und andere potenziell unerwünschte Software wurde aktiviert.
+Microsoft Defender Antivirus Echtzeitschutzprüfung auf Schadsoftware und andere potenziell unerwünschte Software wurde aktiviert.
 </td>
 </tr>
 <tr>
@@ -2294,7 +2295,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Die Echtzeitschutzprüfung von Microsoft Defender Antivirus auf Schadsoftware und andere potenziell unerwünschte Software wurde deaktiviert. 
+Microsoft Defender Antivirus Echtzeitschutzprüfung auf Schadsoftware und andere potenziell unerwünschte Software wurde deaktiviert. 
 </td>
 </tr>
 <tr>
@@ -2320,12 +2321,12 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Die Konfiguration von Microsoft Defender Antivirus-Echtzeitschutzfeatures hat sich geändert.
+Microsoft Defender Antivirus Konfiguration der Echtzeitschutzfeatures hat sich geändert.
 <dl>
 <dt>Feature: &lt; Feature &gt; , z. B.:
 <ul>
 <li>On Access</li>
-<li>IE-Downloads und Outlook Express-Anlagen</li>
+<li>IE-Downloads und Outlook -Express-Anlagen</li>
 <li>Verhaltensüberwachung</li>
 <li>Netzwerkinspektionssystem</li>
 </ul>
@@ -2357,7 +2358,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Die Microsoft Defender Antivirus-Konfiguration hat sich geändert. Wenn dies ein unerwartetes Ereignis ist, sollten Sie die Einstellungen überprüfen, da dies das Ergebnis von Schadsoftware sein kann.
+Microsoft Defender Antivirus Konfiguration hat sich geändert. Wenn dies ein unerwartetes Ereignis ist, sollten Sie die Einstellungen überprüfen, da dies das Ergebnis von Schadsoftware sein kann.
 <dl>
 <dt>Alter Wert: &lt; Alter Wert Zahl &gt; Alter Antiviruskonfigurationswert.</dt> 
 <dt>Neuer Wert: &lt; Neue Wertnummer &gt; Neuer Antiviruskonfigurationswert.</dt>
@@ -2387,7 +2388,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Das Microsoft Defender Antivirus-Modul wurde aufgrund eines unerwarteten Fehlers beendet.
+Microsoft Defender Antivirus Modul wurde aufgrund eines unerwarteten Fehlers beendet.
 <dl>
 <dt>Fehlertyp: &lt; Fehlertyp &gt; , z. B.: Crash or Hang</dt>Exception
 <dt>Code: Error &lt; code &gt; </dt>
@@ -2416,7 +2417,7 @@ So behandeln Sie dieses Ereignis:<ol>
 Benutzeraktion:
 </td>
 <td >
-Das Microsoft Defender Antivirus-Clientmodul wurde aufgrund eines unerwarteten Fehlers beendet.
+Das Microsoft Defender Antivirus Clientmodul wurde aufgrund eines unerwarteten Fehlers beendet.
 So behandeln Sie dieses Ereignis:
 <ol>
 <li>Führen Sie den Scan erneut aus.</li>
@@ -2449,7 +2450,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Die Überprüfung von Microsoft Defender Antivirus auf Schadsoftware und andere potenziell unerwünschte Software wurde aktiviert.
+Microsoft Defender Antivirus überprüfung auf Schadsoftware und andere potenziell unerwünschte Software wurde aktiviert.
 </td>
 </tr>
 <tr>
@@ -2475,7 +2476,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Die Überprüfung von Microsoft Defender Antivirus auf Schadsoftware und andere potenziell unerwünschte Software ist deaktiviert.
+Microsoft Defender Antivirus überprüfung auf Schadsoftware und andere potenziell unerwünschte Software ist deaktiviert.
 </td>
 </tr>
 <tr>
@@ -2501,7 +2502,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Die Überprüfung von Microsoft Defender Antivirus auf Viren wurde aktiviert. 
+Microsoft Defender Antivirus Überprüfung auf Viren wurde aktiviert. 
 </td>
 </tr>
 <tr>
@@ -2527,7 +2528,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Die Überprüfung von Microsoft Defender Antivirus auf Viren ist deaktiviert. 
+Microsoft Defender Antivirus Überprüfung auf Viren ist deaktiviert. 
 </td>
 </tr>
 <tr>
@@ -2555,8 +2556,8 @@ Beschreibung:
 <td >
 Microsoft Defender Antivirus hat eine Nachfrist eingegeben und läuft bald ab. Nach ablaufen deaktiviert dieses Programm den Schutz vor Viren, Spyware und anderer potenziell unerwünschter Software.
 <dl>
-<dt>Ablaufgrund: Der Grund, warum Microsoft Defender Antivirus abläuft.</dt> 
-<dt>Ablaufdatum: Das Datum, an dem Microsoft Defender Antivirus abläuft.</dt>
+<dt>Ablaufgrund: Der Grund, Microsoft Defender Antivirus ablaufen wird.</dt> 
+<dt>Ablaufdatum: Das Datum Microsoft Defender Antivirus ablaufen.</dt>
 </dl>
 </td>
 </tr>
@@ -2583,7 +2584,7 @@ Meldung:
 Beschreibung:
 </td>
 <td >
-Die Kulanzfrist für Microsoft Defender Antivirus ist abgelaufen. Der Schutz vor Viren, Spyware und anderer potenziell unerwünschter Software ist deaktiviert.
+Microsoft Defender Antivirus Nachfrist abgelaufen. Der Schutz vor Viren, Spyware und anderer potenziell unerwünschter Software ist deaktiviert.
 <dl>
 <dt>Ablaufgrund:</dt>
 <dt>Ablaufdatum: </dt> 
@@ -2595,11 +2596,11 @@ Die Kulanzfrist für Microsoft Defender Antivirus ist abgelaufen. Der Schutz vor
 </table>
 
 <a id="error-codes"></a>
-## Microsoft Defender Antivirus-Clientfehlercodes Wenn Microsoft Defender Antivirus Probleme hat, erhalten Sie in der Regel einen Fehlercode, der Ihnen bei der Problembehandlung hilft. Meistens bedeutet ein Fehler, dass beim Installieren eines Updates ein Problem aufgetreten ist.
-Dieser Abschnitt enthält die folgenden Informationen zu Microsoft Defender Antivirus-Clientfehlern.
+##Microsoft Defender Antivirus Clientfehlercodes Wenn Microsoft Defender Antivirus Probleme auftreten, erhalten Sie in der Regel einen Fehlercode, der Ihnen bei der Problembehandlung hilft. Meistens bedeutet ein Fehler, dass beim Installieren eines Updates ein Problem aufgetreten ist.
+Dieser Abschnitt enthält die folgenden Informationen zu Microsoft Defender Antivirus Clientfehlern.
 -   Der Fehlercode -   Der mögliche Grund für den Fehler Hinweise zu den jetzt zu -   tunen
 
-Verwenden Sie die Informationen in diesen Tabellen, um Bei der Problembehandlung von Microsoft Defender Antivirus-Fehlercodes zu helfen.
+Verwenden Sie die Informationen in diesen Tabellen, um Probleme mit Microsoft Defender Antivirus zu beheben.
 
 
 <table> 
@@ -2642,9 +2643,9 @@ Dieser Fehler gibt an, dass möglicherweise ein Problem mit Ihrem Sicherheitspro
 </tr><tr><td>Lösung</td><td>
 <ol>
 <li>Aktualisieren Sie die Definitionen. Eine der beiden:<ol>
-<li>Klicken Sie <b>auf der</b> Registerkarte <b>Update</b> in Microsoft Defender Antivirus auf die Schaltfläche Definitionen aktualisieren. <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>Oder:
+<li>Klicken Sie <b>auf</b> der <b></b> Registerkarte Aktualisieren in Microsoft Defender Antivirus. <img src="images/defender-updatedefs2.png" alt="Update definitions in Microsoft Defender Antivirus"/>Oder:
 </li>
-<li>Laden Sie die neuesten Definitionen von der <a href="https://aka.ms/wdsi">Microsoft Security Intelligence-Website herunter.</a>
+<li>Laden Sie die neuesten Definitionen von der <a href="https://aka.ms/wdsi">Microsoft Security Intelligence herunter.</a>
 Hinweis: Die Größe der von der Website heruntergeladenen Definitionsdatei kann 60 MB überschreiten und sollte nicht als langfristige Lösung zum Aktualisieren von Definitionen verwendet werden.
 </li>
 </ol>
@@ -2671,7 +2672,7 @@ Dieser Fehler weist darauf hin, dass möglicherweise ein Modulkonfigurationsfehl
 <td><b>ERR_MP_QUARANTINE_FAILED </b>
 </td></tr><tr><td>Möglicher Grund</td>
 <td>
-Dieser Fehler weist darauf hin, dass Microsoft Defender Antivirus eine Bedrohung nicht unter Quarantäne stellen konnte. 
+Dieser Fehler weist darauf hin, Microsoft Defender Antivirus bedrohung nicht isoliert werden konnte. 
 </td>
 </tr>
 <tr>
@@ -2696,7 +2697,7 @@ Dieser Fehler weist darauf hin, dass die Bedrohung möglicherweise nicht mehr au
 </tr><tr><td>Lösung
 </td>
 <td>
-Führen Sie <a href="https://www.microsoft.com/security/scanner/default.aspx">den Microsoft Safety Scanner</a> aus, und aktualisieren Sie die Sicherheitssoftware, und versuchen Sie es erneut. 
+Führen Sie <a href="https://www.microsoft.com/security/scanner/default.aspx">die Microsoft Safety Scanner,</a> aktualisieren Sie die Sicherheitssoftware, und versuchen Sie es erneut. 
 </td>
 </tr>
 <tr>
@@ -2733,7 +2734,7 @@ Führen Sie die manuellen Korrekturschritte aus, die in <a href="https://www.mic
 <td>
 Dieser Fehler gibt an, dass das Entfernen innerhalb des Containertyps möglicherweise nicht unterstützt wird. 
 </td></tr><tr><td>Lösung</td><td>
-Microsoft Defender Antivirus ist nicht in der Lage, im Archiv erkannte Bedrohungen zu beabwehren. Erwägen Sie, die erkannten Ressourcen manuell zu entfernen. 
+Microsoft Defender Antivirus ist nicht in der Lage, innerhalb des Archivs erkannte Bedrohungen zu be behebung. Erwägen Sie, die erkannten Ressourcen manuell zu entfernen. 
 </td>
 </tr>
 <tr>
@@ -2769,7 +2770,7 @@ Führen Sie eine vollständige Systemscan aus.
 <td>
 Dieser Fehler gibt an, dass eine Offlinescan erforderlich ist. 
 </td></tr><tr><td>Lösung</td><td>
-Führen Sie Microsoft Defender Antivirus offline aus. Informationen dazu finden Sie im <a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">Microsoft Defender Antivirus-Offlineartikel</a>.
+Führen Sie offline Microsoft Defender Antivirus. Informationen dazu finden Sie im <a href="https://windows.microsoft.com/windows/what-is-windows-defender-offline">Offline-Microsoft Defender Antivirus Artikel</a>.
 </td>
 </tr>
 <tr>
@@ -2779,13 +2780,13 @@ Führen Sie Microsoft Defender Antivirus offline aus. Informationen dazu finden 
 <td><b>ERROR_MP_PLATFORM_OUTDATED<br/></b>
 </td></tr><tr><td>Möglicher Grund</td>
 <td>
-Dieser Fehler gibt an, dass Microsoft Defender Antivirus die aktuelle Version der Plattform nicht unterstützt und eine neue Version der Plattform erfordert. 
+Dieser Fehler gibt an, Microsoft Defender Antivirus die aktuelle Version der Plattform nicht unterstützt und eine neue Version der Plattform erforderlich ist. 
 </td></tr><tr><td>Lösung</td><td>
-Sie können Microsoft Defender Antivirus nur unter Windows 10 verwenden. Für Windows 8 Windows 7 und Windows Vista können Sie <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection verwenden.</a><br/></td>
+Sie können nur Microsoft Defender Antivirus in Windows 10. Für Windows 8, Windows 7 und Windows Vista können Sie <a href="https://www.microsoft.com/server-cloud/system-center/endpoint-protection-2012.aspx">System Center Endpoint Protection</a>.<br/></td>
 </tr>
 </table>
 
-<a id="internal-error-codes"></a> Die folgenden Fehlercodes werden bei internen Tests von Microsoft Defender Antivirus verwendet.
+<a id="internal-error-codes"></a>Die folgenden Fehlercodes werden bei internen Tests von Microsoft Defender Antivirus.
 
 Wenn diese Fehler angezeigt werden, können Sie versuchen, Definitionen [zu](manage-updates-baselines-microsoft-defender-antivirus.md) aktualisieren und einen erneuten Scan direkt auf dem Endpunkt zu erzwingen.
 
@@ -3114,5 +3115,5 @@ Interner Fehler. Es kann ausgelöst worden sein, wenn eine Überprüfung nicht a
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Bericht zum Schutz von Microsoft Defender Antivirus](report-monitor-microsoft-defender-antivirus.md)
+- [Bericht über Microsoft Defender Antivirus Schutz](report-monitor-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

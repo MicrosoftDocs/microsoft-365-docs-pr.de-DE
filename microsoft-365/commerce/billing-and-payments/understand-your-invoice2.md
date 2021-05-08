@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,30 +13,26 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_smb
 - AdminSurgePortfolio
-search.appverid:
-- BCS160
-- MET150
-- MOE150
-- BEA160
-ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
+- commerce_billing
+- PPM_jmueller
+search.appverid: MET150
 description: Hier erfahren Sie, wie Sie die Informationen zu Gebühren, Abrechnung und Zahlung auf Ihrer Rechnung für Microsoft 365 für Unternehmen interpretieren sowie die Auftragsnummer ändern können.
-ms.openlocfilehash: b89ca38bf5d7b1d82982668dcd98e9979f1657be
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.date: 05/04/2021
+ms.openlocfilehash: 9eb9d063b3634269600d5f6566e9e5f373ab08c2
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245016"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280487"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Grundlegendes zu Ihrer Rechnung für Microsoft 365 für Unternehmen
 
 > [!IMPORTANT]
-> Ab dem 26. Januar 2021 werden neue Bankkonten für Kunden in Belgien, Frankreich, Italien, Luxemburg, Portugal, Spanien und den USA nicht mehr unterstützt. Wenn Sie ein vorhandener Kunde in einem dieser Länder sind, können Sie ihr Abonnement weiterhin mit einem vorhandenen Bankkonto bezahlen, und Sie können ihm neue Abonnements hinzufügen, aber nur, solange das Bankkonto in einem guten Zustand ist.
+> Seit dem 26. Januar 2021 werden neue Bankkonten für Kunden in Belgien, Frankreich, Italien, Luxemburg, Portugal, Spanien und in den Vereinigte Staaten nicht mehr unterstützt. Wenn Sie ein bestehender Kunde in einem dieser Länder sind, können Sie weiterhin mit einem bestehenden Bankkonto für Ihr Abonnement bezahlen, und Sie können neue Abonnements hinzufügen, aber nur, solange Ihr Bankkonto sich in gutem Zustand befindet.
 
 Entweder monatlich oder jährlich (je nachdem, welche Option Sie beim Kauf Ihres Abonnements gewählt haben) erhalten Sie eine E-Mail, in der Sie informiert werden, dass Ihre neue Rechnung im Admin Center zur Verfügung steht. [Erfahren Sie, wie Sie Ihre Rechnung finden und anzeigen](view-your-bill-or-invoice.md).
   
@@ -96,7 +93,7 @@ In der folgenden Tabelle sind die Felder beschrieben, die möglicherweise auf Ih
 |Dienstnutzungsadresse|Die Adresse, an der der Dienst genutzt wird, in der Regel mit der Auftraggeberadresse identisch. Wenn Sie Ihre Dienstnutzungsadresse ändern möchten, gehen Sie so vor, wie unter [Ändern Ihrer Rechnungsadressen](change-your-billing-addresses.md) beschrieben wird.|
 |Auftraggeber|Der Name und die Adresse Ihres Unternehmens. Wenn Sie diese Informationen ändern möchten, gehen sie so vor, wie unter [Ändern der Adresse Ihrer Organisation, der E-Mail-Adresse für den technischen Kontakt und anderer Informationen](../../admin/manage/change-address-contact-and-more.md) beschrieben.  |
 |Zwischensumme|Jedes Abonnement, das auf Ihrer Rechnung aufgeführt ist, hat eine eigene "Zwischensumme"-Zeile für die Spalten "Gebühren", "Rabatte", "Gutschriften", "Zwischensumme", "Steuer" und "Summe".|
-|Steuer|Auf Seite 1 Ihrer Rechnung ist der Gesamtbetrag für Steuern angegeben. Auf Seite 2 sind der zutreffende Steuersatz und der Gesamtsteuerbetrag für jeden Einzelposten angegeben. Enthält Ihre Rechnung Steuern, ist Ihr Unternehmen aber steuerbefreit, [wenden Sie sich bitte an den Support](../../admin/contact-support-for-business-products.md).  |
+|Steuer|Auf Seite 1 Ihrer Rechnung ist der Gesamtbetrag für Steuern angegeben. Auf Seite 2 sind der zutreffende Steuersatz und der Gesamtsteuerbetrag für jeden Einzelposten angegeben. Enthält Ihre Rechnung Steuern, ist Ihr Unternehmen aber steuerbefreit, [wenden Sie sich bitte an den Support](../../business-video/get-help-support.md).  |
 |Summe|Der Betrag, der für den Abrechnungszeitraum der Rechnung fällig ist.|
 
 ## <a name="change-your-purchase-order-number"></a>Ändern Ihrer Auftragsnummer
@@ -109,6 +106,7 @@ Wenn Sie per Rechnung bezahlen, können Sie Ihrem Abonnement die Auftragsnummer 
 ::: moniker range="o365-worldwide"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
@@ -120,16 +118,16 @@ Wenn Sie per Rechnung bezahlen, können Sie Ihrem Abonnement die Auftragsnummer 
 ::: moniker range="o365-21vianet"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ihre Produkte</a>.
+
 ::: moniker-end
 
 1. Wählen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie ändern möchten.
 
-1. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Abonnement- und** Zahlungseinstellungen die Option **Rechnung bearbeiten aus.** 
+1. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Abonnement- und** Zahlungseinstellungen die Option **Rechnung bearbeiten aus.**
 
 1. Geben Sie unten im Bereich Details für die Zahlung **per** Sprachsteuerung bearbeiten Ihre Postfachnummer ein, und wählen Sie dann **Speichern aus.**
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Bezahlen Ihres Microsoft 365 Business-Abonnements](pay-for-your-subscription.md)
-
-[Minecraft Education Edition - Zahlungsoptionen](/education/windows/school-get-minecraft)
+[Bezahlen Sie für Microsoft 365 für Ihr Geschäftsabonnement](pay-for-your-subscription.md) (Artikel)\
+[Minecraft: Education Edition – Zahlungsoptionen](/education/windows/school-get-minecraft) (Artikel)

@@ -5,27 +5,33 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jamitche
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 ms.localizationpriority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+- PPM_jmueller
 search.appverid: MET150
-description: Erfahren Sie, wie Sie Apps von Drittanbietern im Microsoft 365 Admin Center aktivieren und verwalten.
-ms.openlocfilehash: 457545282801829ca34de0318dd9eb7791866214
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+description: Erfahren Sie, wie Sie Apps von Drittanbietern in Microsoft 365 Admin Center aktivieren und verwalten.
+ms.date: 04/15/2021
+ms.openlocfilehash: eece8154640dcdd55239511ed099abcdca39e807
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860535"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280523"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Verwalten von Drittanbieter-App-Abonnements für Ihre Organisation
 
-Sie können Lizenzen und Abrechnungen für Apps von Drittanbietern im neuen Microsoft 365 Admin Center verwalten. Zu den aktualisierten Features gehören eine erweiterte Abonnementverwaltung, ein verbesserter Zugriff auf Abrechnungsinformationen und eine verbesserte Flexibilität beim Verwalten von Rechnungen. Die Abonnementverwaltung basiert auf der aktualisierten Handelsplattform von Microsoft. Dies gilt für Software-as-a-Service-Apps, die Kunden direkt oder von einem Drittanbieter erwerben.
+Sie können Lizenzen und Abrechnungen für Apps von Drittanbietern im neuen Microsoft 365 verwalten. Zu den aktualisierten Features gehören eine erweiterte Abonnementverwaltung, ein verbesserter Zugriff auf Abrechnungsinformationen und eine verbesserte Flexibilität beim Verwalten von Rechnungen. Die Abonnementverwaltung basiert auf der aktualisierten Handelsplattform von Microsoft. Dies gilt für Software-as-a-Service-Apps, die Kunden direkt oder von einem Drittanbieter erwerben.
 
-Sie können Lizenzen und Abrechnungen für Apps von Drittanbietern im Microsoft 365 Admin Center verwalten, wenn der Vorschaumodus aktiviert ist. Zu den aktualisierten Features gehören eine erweiterte Abonnementverwaltung, ein verbesserter Zugriff auf Abrechnungsinformationen und eine verbesserte Flexibilität beim Verwalten von Rechnungen. Die Abonnementverwaltung basiert auf der aktualisierten Handelsplattform von Microsoft. Dies gilt für Software-as-a-Service-Apps, die Kunden direkt kaufen, oder für Drittanbieter.
+Sie können Lizenzen und Abrechnungen für Apps von Drittanbietern in Microsoft 365 Admin Center verwalten, wenn der Vorschaumodus aktiviert ist. Zu den aktualisierten Features gehören eine erweiterte Abonnementverwaltung, ein verbesserter Zugriff auf Abrechnungsinformationen und eine verbesserte Flexibilität beim Verwalten von Rechnungen. Die Abonnementverwaltung basiert auf der aktualisierten Handelsplattform von Microsoft. Dies gilt für Software-as-a-Service-Apps, die Kunden direkt kaufen, oder für Drittanbieter.
 
 ## <a name="how-to-get-software-as-a-service-apps"></a>So erhalten Sie Software-as-a-Service-Apps
 
@@ -35,7 +41,7 @@ Es gibt verschiedene Möglichkeiten, Apps von Drittanbietern zu erwerben.
 - **Partnerkauf** – Arbeiten Sie mit einem Partner über das Partner Center zusammen, um Abonnements zu erwerben.
 - **Microsoft-Vorschlag** – Reagieren Sie auf einen Vorschlag von Microsoft Sales, der Apps von Drittanbietern enthält.
 
-Sobald Kunden die Apps kaufen und den Microsoft-Kundenvertrag akzeptieren, können sie sie im Microsoft 365 Admin Center oder im Microsoft Store für Unternehmen verwalten.
+Sobald Kunden die Apps erwerben und den Microsoft-Kundenvertrag akzeptieren, können sie sie in Microsoft 365 Admin Center verwalten oder Microsoft Store für Unternehmen.
 
 App-Anbieter verkaufen ihre Apps entweder pauschal oder indem sie Lizenzen für Benutzer erwerben.
 
@@ -65,17 +71,17 @@ Administratoren müssen Apps von Drittanbietern aktivieren, bevor sie Benutzern 
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnung**  >  **Ihre Produkte**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps.</a>
 2. Suchen Und wählen Sie die App aus, die Sie verwalten möchten.
-3. Wählen **Sie unter Einstellungen & Aktionen** im Portal des **Herausgebers verwalten aus.**
+3. Wählen **Einstellungen & Aktionen** im Portal des **Herausgebers verwalten aus.**
 
 Sie werden zur Website des App-Herausgebers geleitet, auf der Sie die App aktivieren können.
 
 ## <a name="manage-third-party-apps"></a>Apps von Drittanbietern verwalten
 
-Administratoren verwalten Drittanbieter-Apps an zwei Standorten: Microsoft 365 Admin Center und das Portal des Drittanbieter-App-Anbieters.
+Administratoren verwalten Apps von Drittanbietern an zwei Orten: Microsoft 365 Admin Center und dem Portal des Drittanbieter-App-Anbieters.
 
 Hier sehen Sie, was Sie in den einzelnen Portalen tun können.
 
-| Microsoft 365 Admin Center | App-Publisher-Portal |
+| Microsoft 365 Admin Center | App-Publisher-Portal |
 | --- | --- |
 | Ändern der Lizenzmenge <br> Verwalten, wie Sie Ihre Rechnung bezahlen <br> Verwalten, wie Sie Ihre Rechnung bezahlen <br> Ändern der Zahlungsmethode (Kreditkarte) <br> Rechnung anzeigen <br> Kündigen des App-Abonnements | Einrichten der App (einmal für jede App) <br> Zuweisen von Lizenzen an Benutzer <br> Technischer Support |
 
@@ -83,11 +89,11 @@ Nachdem die App aktiviert wurde, bleibt sie aktiv, es sei denn, sie wird abgebro
 
 ## <a name="assign-licenses"></a>Lizenzen zuweisen
 
-Administratoren müssen Apps von Drittanbietern aktivieren, bevor sie Benutzern zugewiesen werden. Sie werden im Portal des Drittanbieterherausgebers aktiviert. Wählen Sie auf der Seite App unter Einstellungen **&** den Link zum Zuweisen von Lizenzen aus.
+Administratoren müssen Apps von Drittanbietern aktivieren, bevor sie Benutzern zugewiesen werden. Sie werden im Portal des Drittanbieterherausgebers aktiviert. Wählen Sie auf der Seite App **unter Einstellungen & den** Link zum Zuweisen von Lizenzen aus.
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnung**  >  **Ihre Produkte**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps.</a>
 2. Suchen Und wählen Sie die App aus, die Sie verwalten möchten.
-3. Wählen **Sie unter Einstellungen & Aktionen** den Link zum Verwalten im **Herausgeberportal aus.**
+3. Wählen **Einstellungen & Unter aktionen** wählen Sie den Link zum Verwalten im **Publisher-Portal aus.**
 
 ## <a name="change-license-quantity"></a>Ändern der Lizenzmenge
 
@@ -121,4 +127,4 @@ Sie können eine Software-as-a-Service-App über die App-Seite abbrechen.
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnung**  >  **Ihre Produkte**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps.</a>
 2. Suchen Und wählen Sie die App aus, die Sie verwalten möchten.
-3. Wählen **Sie unter Einstellungen & Aktionen** Die Option Abonnement abbrechen **aus.**
+3. Wählen **Einstellungen & Aktionen** Abonnement **abbrechen aus.**

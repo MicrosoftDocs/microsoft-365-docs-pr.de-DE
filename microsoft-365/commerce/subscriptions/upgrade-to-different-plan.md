@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,20 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_NonTOC
-- commerce
 ms.custom:
 - SaRA
 - AdminSurgePortfolio
-search.appverid:
-- MET150
+- commerce_subscriptions
+- PPM_jmueller
+search.appverid: MET150
 description: Erfahren Sie, wie Sie ein Upgrade auf einen anderen Plan durchführen.
-ms.openlocfilehash: c8d71e6ab79bfea35334f2c034dbc13f60397227
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.date: 04/21/2021
+ms.openlocfilehash: d9adf8bb18279d5057278a7c55cd751838325bc2
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939172"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280439"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Zu einem anderen Plan wechseln
 
@@ -36,20 +37,13 @@ Wenn sich Ihr Unternehmen ändert oder Sie weitere Features benötigen, können 
 Wenn Sie die **Registerkarte Upgrade** verwenden, werden Sie durch den Kauf eines neuen Plans geführt. Allen Benutzern werden im neuen Plan automatisch Lizenzen zugewiesen, und Ihr alter Plan wird für Sie abgebrochen.
 
 1. Wechseln Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihrer Produkte.</a>
-
 2. Wählen Sie das Abonnement aus, das Sie aktualisieren möchten.
-
 3. Wählen Sie auf der Seite Abonnementdetails die Option **Upgrade aus.**
-
 4. Suchen Sie den Plan, auf den Sie ein Upgrade durchführen möchten, und wählen Sie dann die **Schaltfläche Upgrade** aus.
-
 5. Geben Sie die Anzahl der benötigten Lizenzen ein, wählen Sie aus, ob Sie jeden Monat oder das ganze Jahr bezahlen möchten, und wählen Sie dann Zum Auschecken **wechseln aus.**
-
     > [!NOTE]
     > Stellen Sie sicher, dass Sie genügend Lizenzen kaufen, um alle Benutzer zu abdecken.
-
 6. Überprüfen Sie auf der nächsten Seite die **Adressen Verkauft an** Adresse, In **Rechnung** geordnete Informationen und Elemente in **dieser Reihenfolge.** In diesem Schritt können Sie die Standardzahlungsmethode ändern. Wenn Sie Änderungen vornehmen müssen, wählen Sie **Neben** dem entsprechenden Abschnitt Ändern aus.
-
 7. Wenn Sie fertig sind, wählen Sie **Bestellung platzieren aus.**
 
 Wenn Sie das Auschecken abgeschlossen haben, kann es einige Minuten dauern, bis das Upgrade abgeschlossen ist. Sie können mit der Nutzung Ihres neuen Abonnements sofort beginnen. Wählen **Sie Upgradestatus überprüfen** aus, um den Fortschritt des Upgrades zu überprüfen. Sie werden benachrichtigt, wenn das Upgrade abgeschlossen ist. Die Benachrichtigung wird auf der Seite **Ihre Produkte** neben Ihrem neuen Abonnement angezeigt.
@@ -62,7 +56,7 @@ Wenn die **Registerkarte Upgrade** leer ist, wird eine Erläuterung angezeigt, w
 
 Wenn Sie die Registerkarte **Upgrade** verwenden, werden die Pläne, auf die Sie aktualisieren können, basierend auf den Diensten in Ihrem aktuellen Plan angezeigt. Sie können die Registerkarte **Upgrade** nur verwenden, um zu einem Plan mit den gleichen datenbezogenen Diensten oder zu einer höheren Version zu wechseln. Dadurch wird sichergestellt, dass Benutzer während der Änderung keine Daten im Zusammenhang mit diesen Diensten verlieren.
 
-Wenn Sie zu einem Plan mit weniger Diensten wechseln möchten, können Sie Pläne [manuell ändern](change-plans-manually.md)oder [den Support](../../admin/contact-support-for-business-products.md) anrufen, um Hilfe zu erhalten.
+Wenn Sie zu einem Plan mit weniger Diensten wechseln möchten, können Sie Pläne [manuell ändern](change-plans-manually.md)oder [den Support](../../business-video/get-help-support.md) anrufen, um Hilfe zu erhalten.
 
 ## <a name="i-only-want-to-upgrade-some-of-my-users-how-do-i-do-that"></a>Ich möchte nur einige meiner Benutzer aktualisieren. Wie kann ich das tun?
 
@@ -80,43 +74,43 @@ Wenn auf der Registerkarte Upgrade keine Pläne angezeigt **werden,** bedeutet d
 
 ### <a name="why-are-there-no-plans-listed-to-upgrade"></a>Warum sind keine Pläne für ein Upgrade aufgeführt?
 
-#### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Sie können abonnements jetzt nicht aktualisieren, da Sie über mehr Benutzer als Lizenzen verfügen.
+#### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Sie können abonnements jetzt nicht aktualisieren, da Sie mehr Benutzer als Lizenzen haben
 
-Zum automatischen Upgrade von Plänen müssen allen Benutzern gültige Lizenzen zugewiesen werden. Wenn Sie mehr Lizenzen zugewiesen als erworben haben, werden Sie auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> in einer Warnung darüber informiert, dass ein Lizenzkonflikt vorliegt, der gelöst werden muss. [Hier finden Sie Informationen zum Lösen von Lizenzkonflikten](../../commerce/licenses/buy-licenses.md). Nachdem Sie Lizenzierungskonflikte behoben haben, sollten Sie pläne auf der Registerkarte **Upgrade** anzeigen. Andern falls nicht, können Sie [Pläne manuell ändern](change-plans-manually.md)oder den Support [anrufen.](../../admin/contact-support-for-business-products.md)
+Zum automatischen Upgrade von Plänen müssen allen Benutzern gültige Lizenzen zugewiesen werden. Wenn Sie mehr Lizenzen zugewiesen als erworben haben, werden Sie auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a> in einer Warnung darüber informiert, dass ein Lizenzkonflikt vorliegt, der gelöst werden muss. [Hier finden Sie Informationen zum Lösen von Lizenzkonflikten](../../commerce/licenses/buy-licenses.md). Nachdem Sie Lizenzierungskonflikte behoben haben, sollten Sie pläne auf der Registerkarte **Upgrade** anzeigen. Andern falls nicht, können Sie [Pläne manuell ändern](change-plans-manually.md)oder den Support [anrufen.](../../business-video/get-help-support.md)
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Sie können abonnements derzeit nicht aktualisieren, da dieses Abonnement nicht vollständig eingerichtet ist oder der Dienst nicht verfügbar ist.
 
 Wenn beispielsweise einer der Dienste einen Vorfall hat, können Sie das Upgrade erst durchführen, wenn alle Dienste fehlerfrei sind. Um zu sehen, ob Bereitstellungs- oder Dienstinte health-Probleme auftreten, wechseln Sie im Admin Center zur Integritätsseite **des** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Integritätsdiensts.</a>
 
-Wenn Sie feststellen, dass ein Dienst nicht vollständig bereitgestellt wurde, oder wenn ein Dienstintegritätsproblem vorliegt, warten Sie einige Stunden, bis der Dienst wieder zur Verfügung steht, und versuchen Sie es dann erneut. Wenn sie weiterhin ein Problem haben, rufen Sie [bitte den Support an.](../../admin/contact-support-for-business-products.md)
+Wenn Sie feststellen, dass ein Dienst nicht vollständig bereitgestellt wurde, oder wenn ein Dienstintegritätsproblem vorliegt, warten Sie einige Stunden, bis der Dienst wieder zur Verfügung steht, und versuchen Sie es dann erneut. Wenn sie weiterhin ein Problem haben, rufen Sie [bitte den Support an.](../../business-video/get-help-support.md)
 
-#### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>Sie können keine Pläne aktualisieren, da ein anderer Plan gerade aktualisiert wird oder eine Kreditwürdigkeitsprüfung aussteht.
+#### <a name="you-cant-upgrade-plans-because-another-plan-is-in-the-process-of-being-upgraded-or-is-pending-a-credit-check"></a>Pläne können nicht aktualisiert werden, da ein anderer Plan gerade aktualisiert wird oder eine Kreditwürdigkeitsprüfung aussteht
 
 Warten Sie, bis die Kreditwürdigkeitsprüfung abgeschlossen ist, bevor Sie pläne aktualisieren. Die Bonitätsprüfung kann bis zu zwei Arbeitstage dauern.
 
 #### <a name="currently-this-subscription-is-not-eligible-to-upgrade"></a>Derzeit kann dieses Abonnement nicht aktualisiert werden.
 
-Sie können [Pläne manuell ändern oder](change-plans-manually.md) den Support [anrufen.](../../admin/contact-support-for-business-products.md)
+Sie können [Pläne manuell ändern oder](change-plans-manually.md) den Support [anrufen.](../../business-video/get-help-support.md)
 
-#### <a name="i-see-a-different-message-than-whats-listed-here"></a>Die mir angezeigte Meldung ist hier nicht aufgeführt.
+#### <a name="i-see-a-different-message-than-whats-listed-here"></a>Ich sehe eine andere Nachricht als die hier aufgeführten.
 
-Sie können [Pläne manuell ändern oder](change-plans-manually.md) den Support [anrufen.](../../admin/contact-support-for-business-products.md)
+Sie können [Pläne manuell ändern oder](change-plans-manually.md) den Support [anrufen.](../../business-video/get-help-support.md)
 
 ### <a name="additional-reasons-you-cant-upgrade"></a>Zusätzliche Gründe, warum Sie kein Upgrade durchführen können
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>Sie haben zwei oder mehr Pläne für dasselbe Produkt
 
-Sie können die Registerkarte **Upgrade nur** verwenden, wenn alle Benutzer denselben Plan abonnieren. Wenn Sie beispielsweise über zwei Microsoft 365 Business Standard-Pläne verfügen, können Sie einen dieser Pläne nicht automatisch auf einen anderen Plan aktualisieren.
+Sie können die Registerkarte **Upgrade nur** verwenden, wenn alle Benutzer denselben Plan abonnieren. Wenn Sie z. B. über zwei Microsoft 365 Business Standard verfügen, können Sie einen dieser Pläne nicht automatisch auf einen anderen Plan aktualisieren.
 
 #### <a name="you-have-a-prepaid-plan"></a>Sie verfügen über einen im Voraus bezahlten Plan
 
 Wenn Sie Ihr Abonnement im Voraus bezahlt haben, können Sie pläne [möglicherweise manuell ändern.](change-plans-manually.md) Sie erhalten jedoch keine Gutschrift für nicht genutzte Zeit, die für Ihr aktuelles Abonnement verbleibt, wenn Sie Pläne aktualisieren, bevor der aktuelle Plan abläuft.
 
-Sie können auch [Unterstützung für Hilfe](../../admin/contact-support-for-business-products.md) anrufen.
+Sie können auch [Unterstützung für Hilfe](../../business-video/get-help-support.md) anrufen.
 
 #### <a name="you-have-a-government-or-non-profit-plan"></a>Sie verfügen über einen Plan für Behörden oder gemeinnützige Einrichtungen
 
-Wenn Sie über einen Regierungsplan oder einen gemeinnützigen Plan verfügen, können Sie Pläne [manuell ändern](change-plans-manually.md) oder Den [Support anrufen,](../../admin/contact-support-for-business-products.md) um Hilfe zu erhalten.
+Wenn Sie über einen Regierungsplan oder einen gemeinnützigen Plan verfügen, können Sie Pläne [manuell ändern](change-plans-manually.md) oder Den [Support anrufen,](../../business-video/get-help-support.md) um Hilfe zu erhalten.
 
 #### <a name="the-subscription-that-you-want-to-upgrade-from-has-a-temporary-issue"></a>Das Abonnement, von dem Sie ein Upgrade durchführen möchten, hat ein temporäres Problem
 
@@ -124,9 +118,9 @@ Möglicherweise werden auf der  Registerkarte Upgrade keine Pläne angezeigt, da
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>Der Plan, auf den Sie ein Upgrade durchführen möchten, ist keine unterstützte Option.
 
-Beim Upgrade von Plänen werden die Pläne, auf die Sie upgraden können, basierend auf den Diensten in Ihrem aktuellen Plan angezeigt. Sie können nur ein Upgrade auf einen Plan durchführen, der über dieselben datenbezogenen Dienste wie Exchange Online oder SharePoint Online verfügt, oder auf eine höhere Version davon. Dadurch wird sichergestellt, dass Benutzer während des Upgrades keine Daten im Zusammenhang mit diesen \' Diensten verlieren.
+Beim Upgrade von Plänen werden die Pläne, auf die Sie upgraden können, basierend auf den Diensten in Ihrem aktuellen Plan angezeigt. Sie können nur ein Upgrade auf einen Plan durchführen, der über dieselben datenbezogenen Dienste verfügt, z. B. Exchange Online oder SharePoint Online, oder auf eine höhere Version davon. Dadurch wird sichergestellt, dass Benutzer während des Upgrades keine Daten im Zusammenhang mit diesen \' Diensten verlieren.
 
-Wenn Ihr Plan nicht berechtigt ist, Pläne automatisch zu aktualisieren, können Sie pläne stattdessen möglicherweise [manuell](change-plans-manually.md)ändern. Sie können auch [Unterstützung für Hilfe](../../admin/contact-support-for-business-products.md) anrufen.
+Wenn Ihr Plan nicht berechtigt ist, Pläne automatisch zu aktualisieren, können Sie pläne stattdessen möglicherweise [manuell](change-plans-manually.md)ändern. Sie können auch [Unterstützung für Hilfe](../../business-video/get-help-support.md) anrufen.
 
 #### <a name="your-subscription-has-an-add-on"></a>Ihr Abonnement verfügt über ein Add-On
 
@@ -142,19 +136,19 @@ Wenn Sie Pläne mithilfe  der Schaltfläche Pläne wechseln (oder auf der Regist
 
 ### <a name="access-to-services"></a>Zugriff auf Dienste
 
- **Administratoren können** das Admin Center nicht verwenden, während der Plan aktualisiert wird. Dies kann bis zu einer Stunde dauern.
+**Administratoren können** das Admin Center nicht verwenden, während der Plan aktualisiert wird. Dies kann bis zu einer Stunde dauern.
   
- Für die **Benutzer** ergibt sich keine Dienstunterbrechung. Sie verfügen weiterhin über den vorhandenen Dienst, bis das Upgrade vollständig abgeschlossen ist.
+Für die **Benutzer** ergibt sich keine Dienstunterbrechung. Sie verfügen weiterhin über den vorhandenen Dienst, bis das Upgrade vollständig abgeschlossen ist.
   
 ### <a name="users-and-licenses"></a>Benutzer und Lizenzen
 
 Benutzer Ihres alten Abonnements werden automatisch in das neue Abonnement übernommen.
   
-Wenn Ihr altes Abonnement mehrere Dienste umfasst und Sie geändert haben, welche dieser Dienste Ihren Benutzern zugewiesen sind, sollten Sie dies beachten, bevor Sie Pläne aktualisieren, damit Sie diese Änderungen anschließend neu erstellen können. Unter dem neuen Abonnement erhalten alle Benutzer Zugriff auf alle Dienste. Wenn Sie beispielsweise zuvor Microsoft 365 Business Premium für alle 100 Benutzer erworben haben, den SharePoint Online-Dienst jedoch von 50 benutzern nicht zugewiesen haben, wird diese Änderung nach dem Upgrade von Plänen nicht beibehalten.
+Wenn Ihr altes Abonnement mehrere Dienste umfasst und Sie geändert haben, welche dieser Dienste Ihren Benutzern zugewiesen sind, sollten Sie dies beachten, bevor Sie Pläne aktualisieren, damit Sie diese Änderungen anschließend neu erstellen können. Unter dem neuen Abonnement erhalten alle Benutzer Zugriff auf alle Dienste. Wenn Sie z. B. zuvor Microsoft 365 Business Premium für alle 100 Benutzer erworben haben, den SharePoint Online-Dienst jedoch von 50 benutzern nicht zugewiesen haben, wird diese Änderung nach dem Upgrade von Plänen nicht beibehalten.
   
 Wenn Sie vor dem Upgrade von Plänen über mehr als ein Abonnement verfügen und Benutzern Lizenzen für mehrere Abonnements zugewiesen haben, wird dieses Zuweisungsmuster so weit wie möglich im neuen Abonnement beibehalten.
   
-Alle Benutzerdaten werden während des Upgrades aufbewahrt, einschließlich Exchange-Postfächern und SharePoint Online-Dokumenten, Listen und anderen Informationen.
+Alle Benutzerdaten werden während des Upgrades aufbewahrt, einschließlich Exchange Postfächern und SharePoint Onlinedokumenten, Listen und anderen Informationen.
   
 ### <a name="billing"></a>Abrechnung
 
@@ -167,10 +161,9 @@ An dem Tag, an dem Das Planupgrade abgeschlossen ist, wird die Abrechnung für I
 
 ## <a name="call-support-to-help-you-upgrade-plans"></a>Rufen Sie support auf, um Ihnen beim Upgrade von Plänen zu helfen
 
-[Rufen Sie den Microsoft-Support an](../../admin/contact-support-for-business-products.md)
+[Rufen Sie den Microsoft-Support an](../../business-video/get-help-support.md)
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Manuelles Ändern von Plänen](change-plans-manually.md)
-
-[Sichern von Daten vor dem Wechseln von Microsoft 365 Business-Plänen](back-up-data-before-switching-plans.md)
+[Pläne manuell ändern](change-plans-manually.md) (Artikel)\
+[Sichern von Daten vor dem Microsoft 365 für Geschäftspläne](back-up-data-before-switching-plans.md) (Artikel)

@@ -5,23 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: presharm
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
-search.appverid:
-- MET150
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- commerce_purchase
+- PPM_jmueller
+search.appverid: MET150
 description: Erfahren Sie mehr über Vorschläge, mit deren Hilfe Sie Microsoft-Produkte und -Dienste kaufen können.
 ROBOTS: NOINDEX
-ms.openlocfilehash: b7165db7acd33f9175b6d9d3c86b1f93b2486c43
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/17/2021
+ms.openlocfilehash: a3c91168c90b91d83a9aa116c1ff57d103b3c48c
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921804"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280871"
 ---
 # <a name="understand-the-proposal-workflow"></a>Verstehen des Vorschlagsworkflows
 
@@ -59,23 +64,18 @@ Wenn es sich um ein neues Abrechnungskonto handelt und niemand einen Vertrag akz
 
 - Sind die im Vorschlag benannte Person\
     ODER
-- Sind bereits ein [globaler Azure Active Directory-Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) für Ihre Organisation
+- Sind bereits ein [Azure Active Directory für](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) Ihre Organisation
 
 ## <a name="what-is-the-overall-workflow"></a>Was ist der gesamte Workflow?
 
 Der Allgemeine Vorschlagsworkflow sieht wie dies aus:
 
 - Ihr Microsoft-Vertreter erstellt einen Vorschlag und sendet ihnen einen Link in einer E-Mail.
-
 - Sie verwenden den Link, um zur Anmeldeseite des Vorschlags zu wechseln.
-
 - Sie überprüfen die Informationen Ihrer Organisation.
-
 - Sie überprüfen den Vorschlag, akzeptieren die MCA bei Bedarf und schließen den Auscheckvorgang ab.
-
     > [!IMPORTANT]
     > Sie müssen über die Befugnis verfügen, eine MCA im Namen Ihrer Organisation zu signieren. Wenn Sie nicht über diese Autorität verfügen, muss jemand, der dies tut, diesen Schritt tun.
-
 - Nach Abschluss des Checkouts erhalten Sie zusätzliche Links zum Einrichten Ihrer Produkte und Dienste.
 
 ## <a name="proposal-terms"></a>Vorschlagsbegriffe
@@ -86,7 +86,7 @@ Die folgende Tabelle enthält Begriffe und Definitionen, die in Ihrem Vorschlag 
 |------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Abrechnungskonto | Ein Konto, das zum Verwalten von Kontoeinstellungen, Rechnungen, Zahlungsmethoden und Produkten verwendet wird. |
 | Abrechnungsprofil | Informationen zu Ihrer Organisation, mit der Sie anpassen können, welche Elemente in Ihrer Rechnung enthalten sind und wie Sie Ihre Rechnungen bezahlen. Das Abrechnungsprofil enthält den Namen des Abrechnungskontos, die zahlungsmethoden, die für das spezifische Abrechnungsprofil verwendet werden, Kontaktinformationen, Rechnungseinstellungen und Berechtigungen, mit deren Inhalt Sie das Abrechnungsprofil ändern, Rechnungen bezahlen und Produkte und Dienste kaufen können. |
-| Vorhandene Vereinbarungen | Jede Vereinbarung, über die Ihre Organisation bereits mit Microsoft verfügt. Dies kann z. B. einen Konzernvertrag, einen Microsoft Product &-Servicevertrag oder einen Microsoft-Kundenvertrag umfassen. |
+| Vorhandene Vereinbarungen | Jede Vereinbarung, über die Ihre Organisation bereits mit Microsoft verfügt. Dies kann z. B. eine Enterprise Agreement, einen Microsoft Product &-Servicevertrag oder einen Microsoft-Kundenvertrag umfassen. |
 | Microsoft Customer Agreement (MCA) | Eine Vereinbarung, die die Geschäftsbedingungen des Kontos beschreibt, das Von Ihrer Organisation bei Microsoft gehalten wird. |
 | Microsoft-Vertreter | Ein autorisierter Microsoft-Vertreter, der einen Vorschlag für Sie und Ihre Organisation vorbereitet. |
 | Organisation | Eine juristische Person, die Microsoft-Produkte, -Technologien oder -Dienste verwendet. |
@@ -101,7 +101,7 @@ Nach der Anmeldung überprüfen Sie zunächst die Informationen Ihrer Organisati
 
 Im **Abschnitt Ihre Organisation** wird das zugehörige Abrechnungskonto angezeigt. Die Abrechnungskontoinformationen werden entweder aus einem vorhandenen Abrechnungskonto gezogen oder vom Microsoft-Vertreter für Sie erstellt. Wenn Ihre Organisation ein Partner einer anderen Organisation ist, wird auch ein **Abschnitt lead organization** mit dem Namen und der Adresse dieser Organisation angezeigt.
 
-Wenn Dies das erste Mal ist, dass Ihre Organisation eine Geschäftsbeziehung mit Microsoft aufbaut  und Sie  noch keine MCA signiert haben, wenden Sie sich an den Vertreter, um Änderungen für Sie vorzunehmen, wenn die Informationen unter Ihrer Organisation oder Ihrer Leadorganisation falsch sind. Nachdem Sie eine McA akzeptiert haben, können Sie die Adresse und [](https://go.microsoft.com/fwlink/p/?linkid=2084771) Kontaktinformationen Ihrer Organisation auf der Seite Abrechnungskonten im Microsoft 365 Admin Center überprüfen und ändern. Wenn sich der Name Ihrer Organisation ändert, öffnen Sie eine Dienstanforderung, damit sie aktualisiert wird. [Informationen zum Öffnen einer Dienstanforderung](../admin/contact-support-for-business-products.md)
+Wenn Dies das erste Mal ist, dass Ihre Organisation eine Geschäftsbeziehung mit Microsoft aufbaut  und Sie  noch keine MCA signiert haben, wenden Sie sich an den Vertreter, um Änderungen für Sie vorzunehmen, wenn die Informationen unter Ihrer Organisation oder Ihrer Leadorganisation falsch sind. Nachdem Sie eine McA akzeptiert haben, können Sie die Adresse und [](https://go.microsoft.com/fwlink/p/?linkid=2084771) Kontaktinformationen Ihrer Organisation auf der Seite Abrechnungskonten im Microsoft 365 ändern. Wenn sich der Name Ihrer Organisation ändert, öffnen Sie eine Dienstanforderung, damit sie aktualisiert wird. [Informationen zum Öffnen einer Dienstanforderung](../business-video/get-help-support.md)
 
 ### <a name="your-information"></a>Ihre Informationen
 
@@ -155,18 +155,15 @@ Informationen zu Abrechnungsprofilen finden Sie unter [Verwalten von Abrechnungs
 Dieser Abschnitt enthält eine Liste aller elemente, die im Vorschlag enthalten sind. Die Liste kann eine oder mehrere der folgenden Kategorien enthalten:
 
 - **Ergänzende Begriffe** Eine Liste aller Änderungen an der MCA, die Bedingungen für Ihre Organisation enthalten. Diese Liste kann z. B. HIPAA- oder DSGVO-Begriffe enthalten.
-
 - **Jetzt kaufen** Eine Liste der Elemente, die Sie beim Auschecken am Ende des Vorschlagsakzeptanzworkflows bezahlen.
-
 - **Rabatte (angewendet auf zukünftige Gebühren)** Eine Liste der Rabatte, die Sie als Teil des Vorschlags erhalten.
-
 - **Eingeschlossen** Eine Liste der Elemente, die als Teil des Vorschlagspakets ohne zusätzliche Kosten enthalten sind. Für einige dieser Elemente sind möglicherweise in Zukunft Kosten verbunden.
 
 ### <a name="summary"></a>Zusammenfassung
 
 Dieser Abschnitt zeigt die Anzahl der zu zahlenden Elemente, das Teilsummen, die geschätzten Steuern und den Gesamtbetrag für den Auftrag.
 
-Um die Bestellung zu platzieren, wählen Sie Bestellung **platzieren** oder **Vertrag annehmen & Bestellung.**
+Um die Bestellung zu platzieren, wählen Sie **Bestellung platzieren** oder Vereinbarung **akzeptieren &amp; Ortsbestellung aus.**
 
 Nachdem Sie die Bestellung bestellt haben, erhalten Sie eine Bestätigung mit den nächsten Schritten. Wenn Sie einen Azure-Plan erworben haben, besteht Ihr nächster Schritt in der Einrichtung Ihres Abrechnungskontos im Azure-Portal.
 
@@ -174,7 +171,7 @@ Nachdem Sie die Bestellung bestellt haben, erhalten Sie eine Bestätigung mit de
 
 Wenn Sie ein neuer Kunde sind und Azure-Produkte im Rahmen des Vorschlags erworben haben, besteht Ihr nächster Schritt in der Einrichtung Ihres neuen Abrechnungskontos. Weitere Informationen finden Sie unter [Einrichten Ihres Abrechnungskontos für einen Microsoft-Kundenvertrag](/azure/cost-management-billing/manage/mca-setup-account).
 
-Wenn Sie ein vorhandener Azure-Kunde mit einem Konzernvertrag sind und sie zum ersten Mal eine MCA signieren, besteht Ihr nächster Schritt in den Informationen zu den Änderungen zwischen den Vereinbarungen und zum Abschließen von Aufgaben mit Ihrem neuen Abrechnungskonto. Weitere Informationen finden Sie unter [Complete Konzernvertrag tasks in your billing account for a Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-enterprise-operations).
+Wenn Sie ein vorhandener Azure-Kunde mit einem Enterprise Agreement sind und sie zum ersten Mal eine MCA signieren, besteht Ihr nächster Schritt in den Informationen zu den Änderungen zwischen den Vereinbarungen und zum Abschließen von Aufgaben mit Ihrem neuen Abrechnungskonto. Weitere Informationen finden Sie unter [Complete Enterprise Agreement tasks in your billing account for a Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-enterprise-operations).
 
 ## <a name="understand-invoicing"></a>Verstehen der Rechnungsstellung
 

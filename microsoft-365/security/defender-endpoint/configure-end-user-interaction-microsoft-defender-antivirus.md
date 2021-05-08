@@ -1,25 +1,26 @@
 ---
-title: Konfigurieren der Interaktion von Benutzern mit Microsoft Defender AV
-description: Konfigurieren Sie, wie Endbenutzer mit Microsoft Defender AV interagieren, welche Benachrichtigungen angezeigt werden und ob sie Einstellungen außer Kraft setzen können.
+title: Konfigurieren der Interaktion von Benutzern mit Microsoft Defender Antivirus
+description: Konfigurieren Sie, wie Endbenutzer mit Microsoft Defender Antivirus interagieren, welche Benachrichtigungen angezeigt werden und ob sie Einstellungen außer Kraft setzen können.
 keywords: Endpunkt, Benutzer, Interaktion, Benachrichtigungen, Ui-Sperrmodus, Kopflosmodus, Ausblenden der Schnittstelle
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: normal
+localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: df9f87e725575bad2f36cf7b016d257e766e523b
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 711765ca9638e310ab03f841ba3aba558b4fd1cb
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765227"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52275288"
 ---
 # <a name="configure-end-user-interaction-with-microsoft-defender-antivirus"></a>Konfigurieren der Endbenutzerinteraktion mit Microsoft Defender Antivirus
 
@@ -30,14 +31,12 @@ ms.locfileid: "51765227"
 
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 
-Sie können konfigurieren, wie Benutzer der Endpunkte in Ihrem Netzwerk mit Microsoft Defender Antivirus interagieren können.
+Sie können konfigurieren, wie Benutzer der Endpunkte in Ihrem Netzwerk mit Microsoft Defender Antivirus. Sie können konfigurieren, ob benutzern die Microsoft Defender Antivirus angezeigt wird, welche Benachrichtigungen angezeigt werden und ob sie global bereitgestellte Gruppenrichtlinieneinstellungen lokal außer Kraft setzen können.
 
-Dies umfasst, ob die Microsoft Defender Antivirus-Schnittstelle angezeigt wird, welche Benachrichtigungen angezeigt werden und ob die Einstellungen für global bereitgestellte Gruppenrichtlinien lokal überschrieben werden können.
+Verwenden Sie die folgenden Artikel, um die Endbenutzerinteraktion mit Microsoft Defender Antivirus
 
-## <a name="in-this-section"></a>Inhalt dieses Abschnitts
+- [Konfigurieren von Benachrichtigungen, die auf Endpunkten angezeigt werden](configure-notifications-microsoft-defender-antivirus.md) Konfigurieren und Anpassen von Benachrichtigungen, angepassten Text für Benachrichtigungen und Benachrichtigungen über Neustarts zur Behebung
 
-Thema | Beschreibung 
----|---
-[Konfigurieren von Benachrichtigungen, die auf Endpunkten angezeigt werden](configure-notifications-microsoft-defender-antivirus.md) | Konfigurieren und Anpassen zusätzlicher Benachrichtigungen, angepasster Text für Benachrichtigungen und Benachrichtigungen über Neustarts zur Behebung
-[Verhindern, dass Benutzer die Benutzeroberfläche von Microsoft Defender Antivirus sehen oder mit ihr interagieren](prevent-end-user-interaction-microsoft-defender-antivirus.md) | Ausblenden der Benutzeroberfläche vor Benutzern
-[Verhindern, dass Benutzer Richtlinieneinstellungen lokal ändern](configure-local-policy-overrides-microsoft-defender-antivirus.md) | Verhindern (oder zulassen), dass Benutzer Richtlinieneinstellungen auf ihren einzelnen Endpunkten außer Kraftsetzen
+- [Verhindern, dass Benutzer die Benutzeroberfläche](prevent-end-user-interaction-microsoft-defender-antivirus.md) Microsoft Defender Antivirus sehen oder interagieren Ausblenden der Benutzeroberfläche vor Benutzern
+
+- [Verhindern, dass Benutzer Richtlinieneinstellungen lokal ändern](configure-local-policy-overrides-microsoft-defender-antivirus.md) Verhindern (oder zulassen), dass Benutzer Richtlinieneinstellungen auf ihren einzelnen Endpunkten außer Kraftsetzen

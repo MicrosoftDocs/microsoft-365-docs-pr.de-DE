@@ -19,12 +19,12 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie isolierte Nachrichten für alle Benutzer in Exchange Online Protection (EOP) anzeigen und verwalten. Administratoren in Organisationen mit Microsoft Defender für Office 365 können auch isolierte Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams verwalten.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7dc7fd26d7a81bc76850af4799363c8d17fc1c83
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599535"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52272204"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP
 
@@ -196,7 +196,7 @@ Nachdem Sie eine Nachricht ausgewählt haben, stehen Ihnen im  Flyoutbereich Det
 
 - **Nachricht herunterladen**: Wählen Sie im daraufhin angezeigten Flyout-Fenster **Ich verstehe die Risiken beim Herunterladen dieser Nachricht** aus, um eine lokale Kopie der Nachricht im eml-Format zu speichern.
 
-- **Absender blockieren:** Verhindert, dass der Absender Nachrichten an Empfänger in der Organisation sendet.
+- **Absender blockieren:** Fügen Sie den Absender der Liste blockierter Absender in Ihrem Postfach hinzu. Weitere Informationen finden Sie unter [Blockieren eines E-Mail-Absenders.](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
 
 - **Nachricht senden**: Wählen Sie im angezeigten Flyoutbereich die folgenden Optionen aus:
 
@@ -225,12 +225,12 @@ Wenn Sie mehrere isolierte Nachrichten in der Liste auswählen (bis zu 100), ers
 
 Klicken Sie nach Abschluss des Vorgangs auf **Schließen**.
 
-## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>Nur Microsoft Defender für Office 365: Verwenden des Security & Compliance Center zum Verwalten isolierter Dateien
+## <a name="microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files"></a>Microsoft Defender for Office 365 Only: Verwenden des Security & Compliance Center zum Verwalten isolierter Dateien
 
 > [!NOTE]
-> Die Verfahren für isolierte Dateien in diesem Abschnitt sind nur für Microsoft Defender für Office 365 Plan 1- und Plan 2-Abonnenten verfügbar.
+> Die Verfahren für isolierte Dateien in diesem Abschnitt sind nur für Microsoft Defender für Office 365 Plan 1 und Plan 2 verfügbar.
 
-In Organisationen mit Defender for Office 365 können Administratoren isolierte Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams verwalten. Informationen zum Aktivieren des Schutzes für diese Dateien finden Sie [unter Aktivieren sicherer Anlagen für SharePoint, OneDrive und Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
+In Organisationen mit Defender for Office 365 können Administratoren isolierte Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams. Informationen zum Aktivieren des Schutzes für diese Dateien finden Sie unter [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md).
 
 ### <a name="view-quarantined-files"></a>Anzeigen von isolierten Dateien
 

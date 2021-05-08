@@ -110,7 +110,7 @@
                       href: first-incident-analyze.md
                     - name: "Schritt\_2. Korrigieren"
                       href: first-incident-remediate.md
-                    - name: Schritt 3. Überprüfung
+                    - name: 'Schritt 3: Überprüfung'
                       href: first-incident-post.md
                     - name: Zusätzliche Vorfallbeispiele
                       items:
@@ -130,11 +130,11 @@
               href: m365d-remediation-actions.md
             - name: Aufrufen des Aktionszentrums
               href: m365d-action-center.md
-            - name: Genehmigen oder Ablehnen ausstehender Korrekturaktionen
+            - name: Anzeigen und Verwalten von Korrekturaktionen
               href: m365d-autoir-actions.md
             - name: Anzeigen von Details und Ergebnissen von automatischen Untersuchungen
               href: m365d-autoir-results.md
-            - name: Melden falsch-positiver/negativer Ergebnisse
+            - name: Adress false positives/negatives
               href: m365d-autoir-report-false-positives-negatives.md
         - name: Erweiterte Suche
           items:

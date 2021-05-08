@@ -24,18 +24,18 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Microsoft 365-Sicherheits- und Zusammenarbeitsempfehlungen für kleinere Unternehmen, einschließlich kleinerer Firmen, Praxen und politischer Kampagnen.
-ms.openlocfilehash: 621ebe483683f68ccb9332f9c8b2802bd9b98867
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+description: Microsoft 365 Business Premium-Sicherheits- und Zusammenarbeitsempfehlungen für kleinere Unternehmen, einschließlich kleinerer Firmen, Praxen und politischer Kampagnen.
+ms.openlocfilehash: 6c836f5abb118bb3902ecdfaa37acd759faca1fe
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100783"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245028"
 ---
 <a name="microsoft-365-for-smaller-businesses-and-campaigns"></a>Microsoft 365 für kleinere Unternehmen und Kampagnen
 ===========================
 
-Heutzutage ist es mehr denn je wichtig, Daten und Kommunikation zu sichern. Das gilt besonders für Arztpraxen und Kanzleien, politische Kampagnen sowie viele weitere kleinere Unternehmen. Diese Lösung bietet eine Reihe an Empfehlungen, die Ihnen dabei helfen sollen, sich und Ihre Daten zu schützen. Diese Bibliothek enthält außerdem Hilfestellung für die Einrichtung und Verwendung der empfohlenen Umgebung, unabhängig von Ihrer Unternehmensart.
+Wenn Sie über Microsoft 365 Business Premium verfügen, zeigen Ihnen die Anleitungen in dieser Bibliothek den schnellsten Weg zum Einrichten der Sicherheit und zum Start der sicheren Zusammenarbeit. Heutzutage ist es mehr denn je wichtig, Daten und Kommunikation zu sichern. Das gilt besonders für Arztpraxen und Kanzleien, politische Kampagnen sowie viele weitere kleinere Unternehmen. Diese Lösung bietet eine Reihe an Empfehlungen, die Ihnen dabei helfen sollen, sich und Ihre Daten zu schützen. Diese Bibliothek enthält außerdem Hilfestellung für die Einrichtung und Verwendung der empfohlenen Umgebung, unabhängig von Ihrer Unternehmensart.
 
 
 ![Microsoft 365 Business Premium schützt Ihre Tools für Produktivität und Zusammenarbeit, Ihren Datenspeicher sowie Ihre E-Mails, Geräte und Identitäten](../media/M365-WhatIsIt-SecurityFocus.png)

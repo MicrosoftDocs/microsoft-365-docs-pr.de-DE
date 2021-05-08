@@ -5,27 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: micurn
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- Adm_TOC
-- commerce
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - manage_licenses
-search.appverid:
-- MET150
+- commerce_subscriptions
+- PPM_nicholak
+search.appverid: MET150
 description: Erfahren Sie, wie Sie Benutzer zwischen Abonnements verschieben.
 ms.date: 07/01/2020
-ms.openlocfilehash: e0c6aabbdfd50fa66d846c76d317d940dc0cd819
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 7adaa0eba1ccc06029ab5f4e1ada1d961155e66b
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615111"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280475"
 ---
 # <a name="move-users-to-a-different-subscription"></a>Verschieben von Benutzern zu einem anderen Abonnement
 
@@ -73,5 +74,4 @@ Wenn Sie die nicht verwendeten Lizenzen nicht anderen Benutzern [](../../commerc
 [Entfernen von Lizenzen aus Ihrem Abonnement](../licenses/buy-licenses.md) (Artikel)\
 [Pläne manuell ändern](change-plans-manually.md) (Artikel)\
 [Verstehen von Abonnements und Lizenzen in Microsoft 365 Business](../licenses/subscriptions-and-licenses.md) (Artikel)\
-[Kaufen eines weiteren Microsoft 365 Business-Abonnements](../try-or-buy-microsoft-365.md) (Artikel)
-
+[Kaufen eines Microsoft 365 business-Abonnements](../try-or-buy-microsoft-365.md) (Artikel)

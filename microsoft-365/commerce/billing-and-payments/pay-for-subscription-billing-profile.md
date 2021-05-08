@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,19 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Erfahren Sie, welche Zahlungsoptionen für Ihr Abonnement mit einem Abrechnungsprofil verfügbar sind.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-- commerce
-ms.openlocfilehash: be89c2d355202dd8ca8698ac735cbb384bb8ef06
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+- commerce_billing
+- PPM_jmueller
+ms.date: 04/02/2021
+ms.openlocfilehash: 00c1fdca0f1ba227dcd10dffb7c46b03618593e7
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579770"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280859"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>So bezahlen Sie Ihr Abonnement mit einem Abrechnungsprofil
 
@@ -62,6 +64,7 @@ Wenn Ihr Abrechnungsprofil durch eine Rechnung gesichert ist, erhalten Sie eine 
  **Wählen Sie im nachstehend gezeigten Dropdownmenü das Land oder die Region für den "Rechnungsempfänger" aus.**
 
 > [!div class="op_single_selector"]
+>
 > - **Auswählen Ihres Landes oder Ihrer Region**
 > - [Afghanistan](../pay/afghanistan.md)
 > - [Albanien](../pay/albania.md)
@@ -217,7 +220,7 @@ Wenn Ihr Abrechnungsprofil durch eine Rechnung gesichert ist, erhalten Sie eine 
 
 ## <a name="can-i-pay-my-invoice-online"></a>Kann ich meine Rechnung online begleichen?
 
-Wenn die wiederkehrende Abrechnung für Ihr Abrechnungsprofil deaktiviert ist, können Sie Ihre Rechnung mit einer Kreditkarte online bezahlen. Um eine Zahlung zu machen, verwenden Sie **die** Schaltfläche Jetzt bezahlen auf Ihrer Rechnung im Microsoft 365 Admin Center. Informationen zur Rechnung finden Sie unter [Anzeigen Ihrer Rechnung oder Rechnung.](view-your-bill-or-invoice.md)
+Wenn die wiederkehrende Abrechnung für Ihr Abrechnungsprofil deaktiviert ist, können Sie Ihre Rechnung mit einer Kreditkarte online bezahlen. Um eine Zahlung zu machen, verwenden **Sie** die Schaltfläche Jetzt bezahlen auf Ihrer Rechnung im Microsoft 365 Admin Center. Informationen zur Rechnung finden Sie unter [Anzeigen Ihrer Rechnung oder Rechnung.](view-your-bill-or-invoice.md)
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Kann ich von meiner aktuellen Zahlungsmethode zur Zahlung per Rechnung wechseln?
 

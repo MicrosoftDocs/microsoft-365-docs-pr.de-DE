@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,29 +13,30 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
-search.appverid:
-- MET150
-description: 'Erfahren Sie, wie viel Steuern Ihnen für Ihr Microsoft 365 Business-Abonnement in verschiedenen Regionen in Rechnung gestellt werden. '
+search.appverid: MET150
+description: 'Erfahren Sie, wie viel Steuern Für Ihr Microsoft 365 business-Abonnement in verschiedenen Regionen berechnet wird. '
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
-ms.openlocfilehash: 11a7aa1e1825e41f463de17eebd676d8168a56d8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+- commerce_billing
+- PPM_jmueller
+ms.date: 03/17/2021
+ms.openlocfilehash: fc1e2924a6b28c30841f890396d5d82ed2944bea
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911710"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280595"
 ---
 # <a name="tax-information"></a>Steuerinformationen
 
-Wenn Sie Microsoft 365-Produkte und -Dienste kaufen, werden die steuern, die Sie zahlen, durch eine der beiden Dinge bestimmt: Ihre Geschäftsadresse oder Ihre Lieferadresse, falls sie sich unterscheiden. Wenn Sich Ihre Organisation in den USA befindet, müssen Sie eine Federal Employer Identification Number (FEIN) bereitstellen.
+Wenn Sie Microsoft 365 Produkte und Dienstleistungen kaufen, werden die steuern, die Sie zahlen, durch eine der beiden Dinge bestimmt: Ihre Geschäftsadresse oder Ihre Versandadresse, falls sie sich unterscheiden. Wenn Sich Ihre Organisation in den USA befindet, müssen Sie eine Federal Employer Identification Number (FEIN) bereitstellen.
 
 Unternehmen in den folgenden Ländern können ihre Umsatzsteuernummer oder ein lokales Äquivalent bereitstellen:
 
 :::row:::
     :::column:::
+
 - Armenien
 - Australien
 - Österreich
@@ -99,13 +101,13 @@ Unternehmen in den folgenden Ländern können ihre Umsatzsteuernummer oder ein l
 
 ## <a name="europe-the-middle-east-and-africa-emea"></a>Europa, Nahost und Afrika (EMEA)
 
-Wenn Sie Microsoft 365-Dienste in der Region EMEA kaufen, kann dieser Kauf einer Value-Added (Vat) unterliegen.
+Wenn Sie Microsoft 365 in der Region EMEA erwerben, kann dieser Kauf einer Value-Added (Vat) unterliegen.
   
 - Wenn Sie sich in einem Mitgliedsland der Europäischen Union, in Armenien, Belarus, Norwegen, der Türkei oder den Vereinigten Arabischen Emiraten befinden und Ihre gültige lokale Mehrwertsteuer-ID nicht bereitstellen, wenden Microsoft Ireland Operations Ltd. den aktuellen lokalen Mehrwertsteuersatz basierend auf dem Abrechnungsland an, auf das Ihr Konto festgelegt ist.
 
 - Wenn Sie sich in Liechtenstein, Russland, Serbien, Südafrika oder der Schweiz befinden, wird die Mehrwertsteuer angewendet, unabhängig davon, ob Sie Ihre Umsatzsteuer-ID bereitstellen oder nicht.
 
-- Bevor wir Ihre Umsatzsteuer-ID überprüfen können, muss sie für die Überprüfung im Vat Information Exchange System (VIES) verfügbar sein. Wenn Ihre Umsatzsteuer-ID nicht überprüft werden kann, wenden Sie sich an Ihre lokale Steuerbehörde.
+- Bevor wir Ihre Umsatzsteuer-ID überprüfen können, müssen SIE für die Überprüfung im Mehrwertsteuerinformationssystem (VAT Information Exchange System, VIES) verfügbar sein. Wenn Ihre Umsatzsteuer-ID nicht überprüft werden kann, wenden Sie sich an Ihre lokale Steuerbehörde.
 
 Sie können für die Mehrwertsteuer-Null-Bewertung berechtigt sein, wenn:
   
@@ -131,7 +133,7 @@ Wenn Sie von einem der folgenden Speicherorte abgerechnet werden, wird die aktue
 
 In den USA, Kanada, Mexiko, Chile und Kolumbien gelten verschiedene Steuersätze je nach Produkt und Standort.
   
-Wenn Ihre Abrechnung durch die Microsoft Corporation[erfolgt](view-your-bill-or-invoice.md)( siehe Ihre Rechnung ), und Sie sich für Microsoft 365 außerhalb der USA, Kanada, Puerto Rico, Chile und Kolumbien angemeldet haben, wird die Steuer in der Regel nicht belastet.
+Wenn Ihre Abrechnung von der Microsoft Corporation[durchgeführt](view-your-bill-or-invoice.md)wird ( siehe Ihre Rechnung ), und Sie sich für Microsoft 365 außerhalb der USA, Kanada, Puerto Rico, Chile und Kolumbien angemeldet haben, wird die Steuer in der Regel nicht belastet.
 
 ## <a name="add-your-vat-id"></a>Hinzufügen Ihrer Umsatzsteuer-ID
 
@@ -145,7 +147,7 @@ Wenn Ihre Abrechnung durch die Microsoft Corporation[erfolgt](view-your-bill-or-
 
 Umsatzsteuern werden anhand des Einheitspreises berechnet und dann aggregiert.
 
-Zum Beispiel:
+Beispiel:
 
 >*(Einheitspreis X Steuersatz) X-Menge = Mehrwertsteuer insgesamt*
 
@@ -155,7 +157,7 @@ Zum Beispiel:
 
 ## <a name="apply-for-tax-exempt-status"></a>Beantragen des Status "Steuerfrei"
 
-Wenn Sie für den Status "Steuerfrei" in Ihrem Markt berechtigt [sind,](/office365/admin/contact-support-for-business-products) starten Sie eine Dienstanfrage, um den Steuerbefreiungsstatus für Ihre Organisation zu erstellen.
+Wenn Sie für den Status "Steuerfrei" in Ihrem Markt berechtigt [sind,](../../business-video/get-help-support.md) starten Sie eine Dienstanfrage, um den Steuerbefreiungsstatus für Ihre Organisation zu erstellen.
 
 |Land oder Locale | Dokumentation |
 |------------------|----------------|

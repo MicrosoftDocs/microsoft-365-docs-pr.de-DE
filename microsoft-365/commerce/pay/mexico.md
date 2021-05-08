@@ -8,16 +8,16 @@ manager: scotv
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.collection: Adm_Commerce_Pay
 localization_priority: Normal
 description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 37546e213631b43a6797c7c12f37cf0cad783cd9
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 71762b16925a21238894af7d241e4f1ed112cbdd
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273296"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244684"
 ---
 # <a name="payment-information-by-deposit-or-electronic-transfer-only-for-mexico"></a>Zahlungsinformationen per Einzahlung oder elektronischer Überweisung (nur für Mexiko)
 

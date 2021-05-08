@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: b7bc84307f0db580995e039618cb01d25d6ecd66
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: db167894f32bcc1e30054b9cc4738af300b6d704
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932858"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280799"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informationen zur Aufbewahrung für Microsoft Teams
 
@@ -163,13 +163,13 @@ An Tag 1 erstellt ein Benutzer eine Chat- oder Kanalnachricht.
 
 Beispiel für ein Aufbewahrungsergebnis, wenn der Benutzer die Nachricht nicht bearbeitet oder löscht:
 
-- Tag 5 (in der Regel 1–7 Tage nach Beginn des Aufbewahrungszeitraums an Tag 3):
+- Tag 5 (in der Regel 1-7 Tage nach Beginn des Aufbewahrungszeitraums an Tag 2):
     - Die Nachricht wird in den Ordner "SubstrateHolds" verschoben und verbleibt dort für mindestens 1 Tag, wo sie weiterhin mit eDiscovery-Tools durchsucht werden kann.
 
 - Tag 9 (in der Regel 1–7 Tage nach mindestens 1 Tag im Ordner "SubstrateHolds"):
     - Die Nachricht wird endgültig gelöscht und kann dann nicht mehr mit eDiscovery-Suchvorgängen zurückgegeben werden.
 
-Wie dieses Beispiel zeigt, können Sie zwar eine Aufbewahrungsrichtlinie so konfigurieren, dass Nachrichten bereits nach einem Tag gelöscht werden, der Dienst durchläuft jedoch mehrere Prozesse, um eine konforme Löschung zu gewährleisten. Infolgedessen kann es bei einer Löschaktion nach 1 Tag 18 Tage dauern, bis die Nachricht endgültig gelöscht ist, so dass sie nicht mehr mit eDiscovery-Suchvorgängen zurückgegeben wird.
+Wie dieses Beispiel zeigt, können Sie zwar eine Aufbewahrungsrichtlinie so konfigurieren, dass Nachrichten bereits nach einem Tag gelöscht werden, der Dienst durchläuft jedoch mehrere Prozesse, um eine konforme Löschung zu gewährleisten. Infolgedessen kann eine Löschaktion nach 1 Tag 16 Tage dauern, bis die Nachricht endgültig gelöscht wurde, sodass sie in eDiscovery-Suchvorgängen nicht mehr zurückgegeben wird.
 
 ## <a name="skype-for-business-and-teams-interop-chats"></a>Interop-Chats in Skype for Business und Microsoft Teams
 
@@ -197,7 +197,7 @@ Wenn der Benutzer Dateien in Teams gespeichert hat, lesen Sie den Abschnitt [Äq
 
 ## <a name="limitations"></a>Einschränkungen
 
-Wir arbeiten kontinuierlich an der Verbesserung der Aufbewahrungsfunktionen in Microsoft Teams. Es gibt folgende Einschränkungen, die Sie bei der Verwendung von Aufbewahrungsrichtlinien für Teams-Kanalnachrichten und -Chats beachten sollten:
+Wir arbeiten kontinuierlich an der Optimierung der Aufbewahrungsfunktionalität in Teams. Beachten Sie in der Zwischenzeit die folgende Einschränkung bei der Verwendung von Aufbewahrungsrichtlinien für Kanalnachrichten und Chats in Teams:
 
 - **Falsche Anzeige in Outlook**. Wenn Sie Aufbewahrungsrichtlinien für Skype- oder Microsoft Teams-Speicherorte erstellen, wird eine dieser Richtlinien als Standard-Ordnerrichtlinie angezeigt, wenn ein Benutzer die Eigenschaften eines Postfachordners im Outlook Desktop-Client einsieht. Hierbei handelt es sich um ein Anzeigeproblem in Outlook und [ein bekanntes Problem](https://support.microsoft.com/help/4491013/outlook-client-displays-teams-or-skype-for-business-retention-policies). Stattdessen sollte die Aufbewahrungsrichtlinie für Postfächer angezeigt werden, die auf den Ordner angewendet wird. Die Aufbewahrungsrichtlinie für Skype oder Microsoft Teams wird nicht auf das Postfach des Benutzers angewendet.
 

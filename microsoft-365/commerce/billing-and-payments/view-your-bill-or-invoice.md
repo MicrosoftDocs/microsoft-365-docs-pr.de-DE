@@ -5,35 +5,31 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Priority
-search.appverid:
-- MET150
+search.appverid: MET150
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 ms.custom:
 - TopSMBIssues
 - okr_smb
-- BCS160
-- MET150
-- MOE150
-- BEA160
 - TRN_M365B
 - OKR_SMB_Videos
 - AdminSurgePortfolio
+- commerce_billing
+- PPM_jmueller
 description: Suchen Sie Ihre Rechnung oder Ihren Kontoauszug im Microsoft 365 Admin Center. Sie können auch eine Kopie Ihrer Rechnung speichern und ausdrucken.
 ms.date: 07/31/2020
-ms.openlocfilehash: d391d99f5d5870d964fc4c420a105f25032e3640
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: f9dc6fb9be765e6e221ddf43f703d64737870f01
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060967"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280823"
 ---
 # <a name="view-your-bill-or-invoice"></a>Anzeigen Ihrer Rechnung
 
@@ -49,25 +45,39 @@ Sie müssen ein Global- oder Billing-Administrator sein, um die in diesem Artike
   
 ## <a name="view-a-bill-or-invoice"></a>Anzeigen einer Rechnung
 
+::: moniker range="o365-worldwide"
+
 1. Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rechnungen & Zahlungen</a>.
-    - Wenn Sie Office 365 Deutschland verwenden, rufen Sie diese Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Rechnungen und Zahlungen</a> auf.
-    - Wenn Sie Office 365 verwenden, das von 21Vianet betrieben wird, gehen Sie zu dieser Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Rechnungen und Zahlungen</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848040" target="_blank">Rechnungen & Zahlungen</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">Rechnungen & Zahlungen</a>.
+
+::: moniker-end
+
 2. Wählen Sie auf der Registerkarte **Rechnungen** einen Datumsbereich aus der Dropdown-Liste aus und dann die Reihenfolge, die Sie anzeigen möchten.
 3. Auf der Zusammenfassungsseite können Sie die Artikel, die Menge, den Preis, den Rabatt und den Gesamtbetrag für alle Artikel in der Rechnung sehen.
 4. Um eine PDF-Kopie der Rechnung zu drucken oder zu speichern, wählen Sie **PDF herunterladen** aus.
 
-::: moniker region="o365-21vianet"
+::: moniker range="o365-21vianet"
 
 ## <a name="request-a-fapiao"></a>Anfordern eines Fapiaos
 
 Sie können Ihre Fapiao-Anfrage an unser [Fapiao-Managementsystem](https://go.microsoft.com/fwlink/p/?linkid=837465) übermitteln, ungefähr drei (3) Tage, nachdem Sie bezahlt haben.
 
-1. Gehen Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Rechnungen & Zahlungen**.
-
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2127421" target="_blank">**Rechnungen und Zahlungen**</a>.
 2. Suchen Sie die Rechnung, die Sie wünschen und wählen Sie dann **Fapiaos erhalten** aus.
 
 > [!NOTE]
-
+>
 > Sie benötigen ein registriertes Konto, um auf das [Fapiao-Managementsystem](https://go.microsoft.com/fwlink/p/?linkid=837465) zugreifen zu können. Wenn Sie noch kein Konto eingerichtet haben, lesen Sie [Beantragen eines Fapiaos für Office 365, betrieben von 21Vianet](../../admin/services-in-china/apply-for-a-fapiao.md).
 
 ::: moniker-end
