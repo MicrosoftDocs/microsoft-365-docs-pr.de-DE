@@ -26,12 +26,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Verstehen Sie, was Sie wissen müssen, bevor Sie den Anmeldevorgang für Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 37cbe20a5cc1a7506e8db218c3e9ffe2b4e64478
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 77fe0252a267b13fda19a6842ce0e07b1b8307b1
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107026"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52244008"
 ---
 # <a name="how-to-sign-up---admin-help"></a>So registrieren Sie sich – Administratorhilfe
 
@@ -136,4 +136,4 @@ Sie müssen Ihre Testversion nicht abbrechen. Wenn Sie das Testabonnement nicht 
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Microsoft 365 Für Unternehmen Schulungsvideos](../../business-video/index.yml) (Links)
+[Microsoft 365 Für Unternehmen Schulungsvideos](../../business-video/index.yml) (Linkseite)

@@ -22,19 +22,19 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Hier erfahren Sie, welche Arten von Gruppen Sie verwenden können.
-ms.openlocfilehash: 7b67fa5e7dc661163ce6c2c8933ebdafd0a5940d
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 9f36688972f00a27a274b6a974d958d1d590aa93
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023845"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52243984"
 ---
 # <a name="compare-groups"></a>Vergleichen von Gruppen
 
 Im Microsoft 365 Admin Center können Sie im Bereich **Gruppen** die folgenden Gruppentypen erstellen und verwalten: 
 
 - **Microsoft 365-Gruppen** (vormals Office 365-Gruppen) werden für die Zusammenarbeit zwischen Benutzern innerhalb und außerhalb Ihres Unternehmens verwendet.
-- **Verteilergruppen** werden verwendet, um Benachrichtigungen an eine Gruppe von Personen zu senden.
+- **Verteilergruppen** werden verwendet, um E-Mail-Benachrichtigungen an eine Gruppe von Personen zu senden.
 - **Sicherheitsgruppen** werden verwendet, um Zugriff auf Ressourcen wie z. B. SharePoint-Sites zu gewähren.
 - **E-Mail-aktivierte Sicherheitsgruppen** werden verwendet, um Zugriff auf Ressourcen wie z. B. Microsoft Office SharePoint Online zu gewähren und Benachrichtigungen per E-Mail an diese Benutzer zu senden.
 - **Freigegebene Postfächer** werden verwendet, wenn mehrere Personen Zugriff auf dasselbe Postfach benötigen, z. B. eine E-Mail-Adresse für Unternehmensinformationen oder Support.
@@ -59,13 +59,17 @@ Verteilergruppen eignen sich am besten für Situationen, in denen Sie Informatio
 
 Verteilergruppen können[auf Microsoft 365-Gruppen aktualisiert werden](../manage/upgrade-distribution-lists.md).
 
+Verteilergruppen können in Microsoft Teams zu einem Team hinzugefügt werden.
+
 ## <a name="security-groups"></a>Sicherheitsgruppen
 
 [Sicherheitsgruppen](../email/create-edit-or-delete-a-security-group.md) werden verwendet, um den Zugriff auf Microsoft 365-Ressourcen wie z. B. SharePoint zu gewähren. Sicherheitsgruppen können die Verwaltung vereinfachen, weil Sie nur die Gruppe verwalten müssen, anstatt Benutzer zu jeder Ressource einzeln hinzuzufügen.
 
-Sicherheitsgruppen können Benutzer oder Geräte enthalten. Das Erstellen einer Sicherheitsgruppe für Geräte kann mit Verwaltungsdiensten für mobile Geräte (z. B. Intune) erfolgen.
+Sicherheitsgruppen können Benutzer oder Geräte enthalten. Das Erstellen einer Sicherheitsgruppe für Geräte kann mit Verwaltungsdiensten für mobile Geräte (z. B. Intune) verwendet werden.
 
 Sicherheitsgruppen können [für die dynamische Mitgliedschaft in Azure Active Directory-konfiguriert](/azure/active-directory/users-groups-roles/groups-change-type) werden, sodass Gruppenmitglieder oder Geräte basierend auf Benutzerattributen wie Abteilung, Standort oder Position bzw. Geräteattributen wie Betriebssystemversion automatisch hinzugefügt oder entfernt werden können.
+
+Sicherheitsgruppen können zu einem Team hinzugefügt werden.
 
 ## <a name="mail-enabled-security-groups"></a>E-Mail-aktivierte Sicherheitsgruppen
 
@@ -73,11 +77,15 @@ E-Mail-aktivierte Sicherheitsgruppen funktionieren wie normale Sicherheitsgruppe
 
 Sie bieten die Möglichkeit, E-Mails an alle Mitglieder der Gruppe zu senden.
 
+E-Mail-aktivierte Sicherheitsgruppen können zu einem Team hinzugefügt werden.
+
 ## <a name="shared-mailboxes"></a>Freigegebene Postfächer
 
 [Freigegebene Postfächer](../email/create-a-shared-mailbox.md) werden verwendet, wenn mehrere Personen Zugriff auf dasselbe Postfach benötigen, z. B. eine E-Mail-Adresse für Unternehmensinformationen oder Support, den Empfangstresen oder andere Funktionen, die von mehreren Personen geteilt werden.
 
 Freigegebene Postfächer können externe E-Mails empfangen, wenn der Administrator dieses Feature aktiviert hat.
+
+Freigegebene Postfächer beinhalten einen Kalender, der für die Zusammenarbeit verwendet werden kann.
 
 Benutzer, die über Berechtigungen für das Gruppenpostfach verfügen, können Nachrichten mit der "Senden als"- oder "Senden im Auftrag von"-Postfach-E-Mail-Adresse senden, sofern der Administrator dem jeweiligen Benutzer die entsprechende Berechtigung erteilt hat. Dies ist besonders nützlich für Hilfe- und Support-Postfächer, da Benutzer E-Mails von "Contoso-Support" oder der "Rezeption von Gebäude A" senden können.
 
