@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Übersicht über Viva-Themen.
-ms.openlocfilehash: b37572087794055724cb9533246f83794d88fb93
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1d66751d55c0144149fa8325e89be404e3df19ed
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275198"
+ms.locfileid: "52281029"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics – Übersicht 
 
-Viva Topics verwendet Microsoft KI-Technologie, Microsoft 365, Microsoft Graph, Search und andere Komponenten und Dienste, um Ihren Benutzern Wissen in Microsoft 365-Apps zu vermitteln, die sie täglich verwenden, beginnend mit modernen SharePoint-Seiten und Microsoft Search.
+Viva Topics verwendet Microsoft AI-Technologie, Microsoft 365, Microsoft Graph, Suche und andere Komponenten und Dienste, um Ihren Benutzern Wissen in Microsoft 365-Apps zu vermitteln, die sie täglich verwenden, beginnend mit SharePoint modernen Seiten, Microsoft Search und Search in Word und PowerPoint.
 
 </br>
 
@@ -42,6 +42,7 @@ Wenn ein Thema in Inhalten auf SharePoint-Nachrichten und -Seiten erwähnt wird,
 
    ![Themenhighlights](../media/knowledge-management/saturn.png) 
 
+Wenn Sie Die Suche in Word oder PowerPoint, entweder über das Suchfeld oder durch Auswählen von **Suchen** im Kontextmenü verwenden, werden die angezeigten Ergebnisse möglicherweise auch die Themenzusammenfassung angezeigt.
 
    ![Screenshot der Suche in Word über das Suchfeld.](../media/knowledge-management/word-search-2.png)
 

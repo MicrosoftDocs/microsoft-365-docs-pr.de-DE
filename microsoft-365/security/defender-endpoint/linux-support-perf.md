@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9964b27f29654a7cc474dc4fb8f84334ddaf381c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 998d8c500613ffa9fc6d790535e555ff9503f590
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933217"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52281017"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Behandeln von Leistungsproblemen für Microsoft Defender for Endpoint unter Linux
 
@@ -57,7 +57,7 @@ Die folgenden Schritte können verwendet werden, um diese Probleme zu beheben un
 
     Wenn Ihr Gerät von Ihrer Organisation verwaltet wird, kann der Echtzeitschutz von Ihrem Administrator mithilfe der Anweisungen unter Festlegen von Einstellungen für [Defender for Endpoint unter Linux deaktiviert werden.](linux-preferences.md)
 
-    Wenn das Leistungsproblem weiterhin besteht, während der Echtzeitschutz deaktiviert ist, könnte der Ursprung des Problems die Endpunkterkennungs- und Reaktionskomponente sein. In diesem Fall wenden Sie sich an den Kundensupport, um weitere Anweisungen und Gegenmaßnahmen zu erhalten.
+    Wenn das Leistungsproblem weiterhin besteht, während der Echtzeitschutz deaktiviert ist, könnte der Ursprung des Problems die EDR sein. In diesem Fall wenden Sie sich an den Kundensupport, um weitere Anweisungen und Gegenmaßnahmen zu erhalten.
 
 2. Um die Anwendungen zu finden, die die meisten Scans auslösen, können Sie Echtzeitstatistiken verwenden, die von Defender for Endpoint unter Linux gesammelt wurden.
 
@@ -148,3 +148,6 @@ Die folgenden Schritte können verwendet werden, um diese Probleme zu beheben un
 5. Konfigurieren Sie Microsoft Defender for Endpoint unter Linux mit Ausschlüssen für die Prozesse oder Datenträgerspeicherorte, die zu Leistungsproblemen beitragen, und aktivieren Sie den Echtzeitschutz erneut.
 
     Weitere Informationen finden Sie unter [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md).
+
+## <a name="see-also"></a>Siehe auch
+- [Untersuchen von Problemen mit der Integrität von Agents](health-status.md)

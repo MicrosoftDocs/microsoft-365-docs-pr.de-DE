@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Für Administratoren: Sie erfahren, wie Sie über den Netzwerkupload einen Massenimport mehrerer PST-Dateien in Benutzerpostfächer in Microsoft 365 ausführen.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cf7f471a4323c4c03f232e93d2f00b930e53aefe
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 6ff645589337260cd8e29d1e1d066abdf60c1f1a
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114341"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280921"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Verwenden Sie Netzwerkuploads zum Importieren von PST-Dateien Ihrer Organisation in Microsoft 365
 
@@ -173,7 +173,7 @@ Als optionalen Schritt können Sie den Microsoft Azure Storage-Explorer (ein kos
 
 - Sie können den Dateinamen (und den Pfadnamen des Unterordners, sofern eingeschlossen) für jede PST-Datei prüfen, die in den Azure-Blob hochgeladen wurde. Dies ist hilfreich, wenn Sie die PST-Zuordnungsdatei im nächsten Schritt erstellen, da Sie sowohl den Pfadnamen des Ordners als auch den Dateinamen für jede PST-Datei angeben müssen. Durch Überprüfen dieser Namen können mögliche Fehler in der PST-Zuordnungsdatei verhindert werden.
 
-Der Microsoft Azure Storage-Explorer befindet sich in der Vorschau. 
+Die eigenständige Azure Storage Explorer-Anwendung ist allgemein verfügbar. Sie können die neueste Version über den Link in der folgenden Prozedur herunterladen.
   
 > [!IMPORTANT]
 > Sie können den Azure Storage-Explorer nicht verwenden, um PST-Dateien hochzuladen oder zu ändern. Die einzige unterstützte Methode zum Importieren von PST-Dateien besteht in der Verwendung von AzCopy. Außerdem können Sie keine PST-Dateien löschen, die Sie in das Azure-Blob hochgeladen haben. Wenn Sie versuchen, eine PST-Datei zu löschen, wird eine Fehlermeldung angezeigt, in der Sie darauf hingewiesen werden, dass Sie nicht über die erforderlichen Berechtigungen verfügen. Beachten Sie, die alle PST-Dateien automatisch aus dem Azure-Speicherbereich gelöscht werden. Wenn keine Importaufträge in Bearbeitung sind, werden alle PST-Dateien im Container **Erfassungsdaten** 30 Tage nach Erstellung des letzten Importauftrags gelöscht.

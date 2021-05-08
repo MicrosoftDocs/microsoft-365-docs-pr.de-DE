@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a59d09aa4de2644e9904eb854c183d0352aa65c9
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 00e57d03ae636837120b53c0de16861ad142ef76
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861167"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52280933"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Vorbereiten der Bereitstellung von Microsoft Defender für Endpunkte
 
@@ -76,16 +76,16 @@ Dieser Abschnitt wird verwendet, um sicherzustellen, dass Ihre Umgebung von den 
 
 | Was                                  | Beschreibung |
 |---------------------------------------|-------------|
-| Anzahl der Endpunkte                        |             |
-| Serveranzahl                          |             |
-| Verwaltungsmodul                     |             |
-| #A0                     |             |
-| Sicherheitsinformationen und -ereignisse (SIEM) |             |
+| Anzahl der Endpunkte                        |    Gesamtanzahl der Endpunkte nach Betriebssystem.         |
+| Serveranzahl                          |    Gesamtanzahl der Server nach Betriebssystemversion.    |
+| Verwaltungsmodul                     |    Name und Version des Verwaltungsmoduls (z. B. System Center Configuration Manager Current Branch 1803).         |
+| #A0                     |    High level CDOC structure (for example, Tier 1 outsourced to Contoso, Tier 2 and Tier 3 in-house distributed across Europe and Asia).         |
+| Sicherheitsinformationen und -ereignisse (SIEM) |    SIEM-Technologie im Einsatz.         |
 
 
 ## <a name="role-based-access-control"></a>Rollenbasierte Zugriffssteuerung
 
-Microsoft empfiehlt die Verwendung des Konzepts der geringsten Rechte. Defender for Endpoint nutzt integrierte Rollen in Azure Active Directory. Microsoft [empfiehlt, die verschiedenen verfügbaren](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) Rollen zu überprüfen und die richtige zu wählen, um Ihre Anforderungen für jede Persona für diese Anwendung zu erfüllen. Einige Rollen müssen möglicherweise vorübergehend angewendet und entfernt werden, nachdem die Bereitstellung abgeschlossen wurde.
+Microsoft empfiehlt die Verwendung des Konzepts der geringsten Rechte. Defender for Endpoint nutzt integrierte Rollen innerhalb Azure Active Directory. Microsoft [empfiehlt, die verschiedenen verfügbaren](https://docs.microsoft.com/azure/active-directory/active-directory-assign-admin-roles-azure-portal) Rollen zu überprüfen und die richtige zu wählen, um Ihre Anforderungen für jede Persona für diese Anwendung zu erfüllen. Einige Rollen müssen möglicherweise vorübergehend angewendet und entfernt werden, nachdem die Bereitstellung abgeschlossen wurde.
 
 | Personas                     | Rollen | Azure AD Role (falls erforderlich) | Zuweisen zu |
 |------------------------------|-------|-----------------------------|-----------|
@@ -95,11 +95,11 @@ Microsoft empfiehlt die Verwendung des Konzepts der geringsten Rechte. Defender 
 | Infrastrukturadministrator |       |                             |           |
 | Geschäftsbesitzer/Stakeholder   |       |                             |           |
 
-Microsoft empfiehlt die [Verwendung von Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) zum Verwalten Ihrer Rollen, um benutzern mit Verzeichnisberechtigungen zusätzliche Überwachung, Kontrolle und Zugriffsüberprüfung zur Verfügung zu stellen.
+Microsoft empfiehlt die [Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure) zum Verwalten Ihrer Rollen, um benutzern mit Verzeichnisberechtigungen zusätzliche Überwachung, Kontrolle und Zugriffsüberprüfung zu ermöglichen.
 
 Defender for Endpoint unterstützt zwei Möglichkeiten zum Verwalten von Berechtigungen:
 
--   **Grundlegende Berechtigungsverwaltung:** Legen Sie Berechtigungen auf Vollzugriff oder schreibgeschützt. Bei grundlegenden Berechtigungen haben Benutzer mit globaler Administrator- oder Sicherheitsadministratorrolle in Azure Active Directory Vollzugriff, während die Rolle "Sicherheitsleser" über schreibgeschützten Zugriff verfügt.
+-   **Grundlegende Berechtigungsverwaltung:** Legen Sie Berechtigungen auf Vollzugriff oder schreibgeschützt. Im Fall der grundlegenden Berechtigungsverwaltung haben Benutzer mit der Rolle "Globaler Administrator" oder "Sicherheitsadministrator" in Azure Active Directory Vollzugriff, während die Rolle "Sicherheitsleser" über schreibgeschützten Zugriff verfügt.
 
 -   **Rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC):** Legen Sie präzise Berechtigungen durch Definieren von Rollen, Zuweisen von Azure AD-Benutzergruppen zu den Rollen und Gewähren von Benutzergruppenzugriff auf Gerätegruppen. Weitere Informationen. Weitere [Informationen finden Sie unter Verwalten des Portalzugriffs mithilfe der rollenbasierten Zugriffssteuerung](rbac.md).
 
@@ -118,7 +118,7 @@ In der folgenden Beispieltabelle wird die Cyber Defense Operations Center-Strukt
 
 
 ## <a name="adoption-order"></a>Adoptionsreihenfolge
-In vielen Fällen verfügen Organisationen über vorhandene Endpunktsicherheitsprodukte. Das Mindeste, was jede Organisation hätte als Antivirenlösung verwenden müssen. In einigen Fällen hat eine Organisation jedoch möglicherweise bereits eine EDR-Lösung implantiert.
+In vielen Fällen verfügen Organisationen über vorhandene Endpunktsicherheitsprodukte. Das Mindeste, was jede Organisation hätte als Antivirenlösung verwenden müssen. In einigen Fällen hat eine Organisation jedoch möglicherweise bereits eine lösung EDR implantiert.
 
 In der Vergangenheit war das Ersetzen einer Sicherheitslösung zeitintensiv und aufgrund der engen Hooks in die Anwendungsschicht und Infrastrukturabhängigkeiten schwierig. Da Defender for Endpoint jedoch in das Betriebssystem eingebaut ist, ist das Ersetzen von Drittanbieterlösungen jetzt einfach zu erreichen.
 
@@ -126,12 +126,12 @@ Wählen Sie die Komponente von Defender for Endpoint aus, die verwendet werden s
 
 | Komponente                               | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Rang der Adoptionsreihenfolge |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Endpoint Detection & Response (EDR)     | Defender for Endpoint-Endpunkterkennungs- und -reaktionsfunktionen bieten erweiterte Angriffserkennungen, die nahezu in Echtzeit und mit Aktionen verbunden sind. Sicherheitsanalysten können Benachrichtigungen effektiv priorisieren, Einblick in den gesamten Umfang einer Sicherheitsverletzung erhalten und Aktionen ergreifen, um Bedrohungen zu beheben. <br> [Weitere Informationen.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)                                                                                                                                                                                                                                             | 1                   |
-|Threat & Vulnerability Management (TVM)|Threat & Vulnerability Management ist eine Komponente von Microsoft Defender for Endpoint und bietet sowohl Sicherheitsadministratoren als auch Sicherheitsbetriebsteams einen eindeutigen Wert, einschließlich: <br> – Einblicke in Die Erkennung und Reaktion von Echtzeitendpunkten (EDR) korreliert mit Endpunktrisiken <br> – Unbezahlbarer Sicherheitsrisikokontext für Geräte bei Vorfalluntersuchungen <br> – Integrierte Korrekturprozesse über Microsoft Intune und Microsoft System Center Configuration Manager <br> [Weitere Informationen](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845).| 2 |
+| Endpoint Detection & Response (EDR)     | Defender for Endpoint EDR bietet erweiterte Angriffserkennungen, die nahezu in Echtzeit und mit Aktionen verbunden sind. Sicherheitsanalysten können Benachrichtigungen effektiv priorisieren, Einblick in den gesamten Umfang einer Sicherheitsverletzung erhalten und Aktionen ergreifen, um Bedrohungen zu beheben. <br> [Weitere Informationen.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)                                                                                                                                                                                                                                             | 1                   |
+|Threat & Vulnerability Management (TVM)|Threat & Vulnerability Management ist eine Komponente von Microsoft Defender for Endpoint und bietet sowohl Sicherheitsadministratoren als auch Sicherheitsbetriebsteams einen eindeutigen Wert, einschließlich: <br> – Echtzeit-EDR (EDR) mit Endpunktrisiken korreliert <br> – Unbezahlbarer Sicherheitsrisikokontext für Geräte bei Vorfalluntersuchungen <br> – Integrierte Korrekturprozesse über Microsoft Intune und Microsoft System Center Configuration Manager <br> [Weitere Informationen](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845).| 2 |
 | Next-Generation Protection (NGP)        | Microsoft Defender Antivirus ist eine integrierte Antischantischantischungslösung, die Schutz der nächsten Generation für Desktops, tragbare Computer und Server bietet. Microsoft Defender Antivirus umfasst: <br> -Cloud-delivered protection for near-instant detection and blocking of new and emerging threats. Zusammen mit maschinellem Lernen und Intelligent Security Graph gehört der von der Cloud bereitgestellte Schutz zu den Technologien der neuen Generation von Microsoft Defender Antivirus.   <br> - Kontinuierliche Überprüfung mit erweiterter Datei- und Prozessverhaltensüberwachung und anderen Heuristiken (auch als "Echtzeitschutz" bezeichnet). <br> – Dedizierte Schutzupdates basierend auf maschinellem Lernen, humaner und automatisierter Big-Data-Analyse und detaillierter Forschung zur Bedrohungsabwehr. <br> [Weitere Informationen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 | Attack Surface Reduction (ASR)          | Funktionen zur Reduzierung der Angriffsfläche in Microsoft Defender for Endpoint schützen die Geräte und Anwendungen in der Organisation vor neuen und neuen Bedrohungen. <br> [Weitere Informationen.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction)                                                                                                                                                                                                                                                                                                                                                                                       | 4                    |
 | Auto Investigation & Remediation (AIR)  | Microsoft Defender for Endpoint verwendet automatisierte Untersuchungen, um das Volumen der Warnungen, die einzeln untersucht werden müssen, erheblich zu reduzieren. Das Feature für die automatisierte Untersuchung nutzt verschiedene Überprüfungsalgorithmen und Prozesse, die von Analysten (z. B. Playbooks) verwendet werden, um Warnungen zu untersuchen und sofortige Abhilfemaßnahmen zur Behebung von Verstößen zu ergreifen. Auf diese Weise wird das Warnungsvolumen erheblich reduziert, sodass sich Sicherheitsexperten auf komplexere Bedrohungen und andere Initiativen mit hoher Wertschöpfung konzentrieren können. <br>[Weitere Informationen.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) | Nicht zutreffend      |
-| Microsoft Threat Experts (MTE)          | Microsoft Threat Experts ist ein verwalteter Suchesdienst, der Security Operation Centers (SOCs) mit Überwachung und Analyse auf Expertenebene bietet, um sicherzustellen, dass kritische Bedrohungen in ihren einzigartigen Umgebungen nicht übersehen werden. <br>[Weitere Informationen.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | Nicht zutreffend      |
+| Microsoft-Bedrohungsexperten (MTE)          | Microsoft-Bedrohungsexperten ist ein verwalteter Suchesdienst, der Security Operation Centers (SOCs) mit Überwachung und Analyse auf Expertenebene bietet, um sicherzustellen, dass kritische Bedrohungen in ihren einzigartigen Umgebungen nicht übersehen werden. <br>[Weitere Informationen.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | Nicht zutreffend      |
 
 ## <a name="next-step"></a>Nächster Schritt
 |||
