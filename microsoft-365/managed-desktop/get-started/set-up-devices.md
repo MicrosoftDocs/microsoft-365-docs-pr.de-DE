@@ -1,49 +1,56 @@
 ---
 title: Einrichten von Geräten für Microsoft Managed Desktop
-description: So erhalten Sie neue Geräte oder verwenden vorhandene Geräte, die qualifiziert sind
+description: So können Sie neue Geräte erhalten oder vorhandene Geräte wiederverwenden, die qualifiziert sind
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 65c7c0c938b376a1b53910e7ca783b7bfe8a7ea8
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+manager: laurawi
+ms.topic: article
+audience: Admin
+ms.openlocfilehash: 7cc63c9a911c772d1723233dd311ab3489f16be2
+ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840503"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52245396"
 ---
-# <a name="set-up-microsoft-managed-desktop-devices"></a><span data-ttu-id="75dcf-104">Richten Sie Microsoft Managed Desktop-Geräte ein</span><span class="sxs-lookup"><span data-stu-id="75dcf-104">Set up Microsoft Managed Desktop devices</span></span>
+# <a name="set-up-microsoft-managed-desktop-devices"></a><span data-ttu-id="81ffe-104">Richten Sie Microsoft Managed Desktop-Geräte ein</span><span class="sxs-lookup"><span data-stu-id="81ffe-104">Set up Microsoft Managed Desktop devices</span></span>
 
-<span data-ttu-id="75dcf-105">Sie können neue und vorhandene Geräte in Microsoft Managed Desktop verwenden.</span><span class="sxs-lookup"><span data-stu-id="75dcf-105">You can use both new and existing devices in Microsoft Managed Desktop.</span></span>
+<span data-ttu-id="81ffe-105">Sie können sowohl neue als auch vorhandene Geräte in Microsoft Managed Desktop.</span><span class="sxs-lookup"><span data-stu-id="81ffe-105">You can use both new and existing devices in Microsoft Managed Desktop.</span></span>
 
-## <a name="to-obtain-new-devices"></a><span data-ttu-id="75dcf-106">So erhalten Sie neue Geräte</span><span class="sxs-lookup"><span data-stu-id="75dcf-106">To obtain new devices</span></span>
+## <a name="to-obtain-new-devices"></a><span data-ttu-id="81ffe-106">So erhalten Sie neue Geräte</span><span class="sxs-lookup"><span data-stu-id="81ffe-106">To obtain new devices</span></span>
 
-<span data-ttu-id="75dcf-107">Wir empfehlen, mit einem unserer genehmigten Gerätepartner zusammen zu arbeiten.</span><span class="sxs-lookup"><span data-stu-id="75dcf-107">We recommend working with one of our approved device partners.</span></span> <span data-ttu-id="75dcf-108">Sie können mit Ihrem Microsoft-Konto-Kontakt zusammenarbeiten, um weitere Hilfe beim Einrichten einer Gerätepartnerschaft zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="75dcf-108">You can work with your Microsoft account contact for more help setting up a device partnership.</span></span> <span data-ttu-id="75dcf-109">Im Wesentlichen ist der Vorgang jedoch wie hier:</span><span class="sxs-lookup"><span data-stu-id="75dcf-109">In essence, however, the process is like this:</span></span>
+<span data-ttu-id="81ffe-107">Wir empfehlen die Zusammenarbeit mit einem unserer genehmigten Gerätepartner.</span><span class="sxs-lookup"><span data-stu-id="81ffe-107">We recommend working with one of our approved device partners.</span></span> <span data-ttu-id="81ffe-108">Sie können mit Ihrem Microsoft-Kontokontakt zusammenarbeiten, um weitere Hilfe beim Einrichten einer Gerätepartnerschaft zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="81ffe-108">You can work with your Microsoft account contact for more help setting up a device partnership.</span></span> <span data-ttu-id="81ffe-109">Im Wesentlichen ist der Vorgang jedoch wie dies:</span><span class="sxs-lookup"><span data-stu-id="81ffe-109">In essence, however, the process is like this:</span></span>
 
-1. <span data-ttu-id="75dcf-110">Überprüfen Sie die Liste der [derzeit genehmigten Geräte.](../service-description/device-list.md)</span><span class="sxs-lookup"><span data-stu-id="75dcf-110">Review the list of [currently approved devices](../service-description/device-list.md).</span></span>
-2. <span data-ttu-id="75dcf-111">Bestellen Sie die Geräte, und arbeiten Sie mit einem genehmigten Gerätepartner.</span><span class="sxs-lookup"><span data-stu-id="75dcf-111">Order the devices, working with an approved device partner.</span></span>
-3. <span data-ttu-id="75dcf-112">Nachdem sie angekommen sind, gehen Sie wie folgt vor:</span><span class="sxs-lookup"><span data-stu-id="75dcf-112">Once they've arrived, do either of the following:</span></span>
-    - [<span data-ttu-id="75dcf-113">Selbstregistrieren neuer Geräte</span><span class="sxs-lookup"><span data-stu-id="75dcf-113">Register new devices yourself</span></span>](register-devices-self.md)
-    - <span data-ttu-id="75dcf-114">Zusammenarbeit mit einem Partner zum Registrieren der Geräte</span><span class="sxs-lookup"><span data-stu-id="75dcf-114">Work with a partner to register the devices</span></span>
-4. <span data-ttu-id="75dcf-115">[Bereiten Sie Ihre Benutzer auf die](get-started-devices.md) Verwendung von Microsoft Managed Desktop-Geräten vor</span><span class="sxs-lookup"><span data-stu-id="75dcf-115">[Get your users ready](get-started-devices.md) to use Microsoft Managed Desktop devices</span></span>
+1. <span data-ttu-id="81ffe-110">Überprüfen Sie die Liste der derzeit empfohlenen Geräte, indem Sie Microsoft Managed Desktop auf der Website [Geschäft Windows 10 Pro Geschäftsgeräte](https://www.microsoft.com/windowsforbusiness/view-all-devices) filtern.</span><span class="sxs-lookup"><span data-stu-id="81ffe-110">Review the list of currently recommended devices by filtering for Microsoft Managed Desktop on the [Shop Windows 10 Pro business devices](https://www.microsoft.com/windowsforbusiness/view-all-devices) site.</span></span>
+2. <span data-ttu-id="81ffe-111">Bestellen Sie ein oder mehrere Beispiele der Geräte, die Sie mit einem kompatiblen Bild verwenden möchten.</span><span class="sxs-lookup"><span data-stu-id="81ffe-111">Order one or a few examples of the devices you want to use with a compliant image.</span></span> <span data-ttu-id="81ffe-112">Für die Sortierung sind [möglicherweise bestimmte Bestellschritte erforderlich.](../service-description/device-images.md)</span><span class="sxs-lookup"><span data-stu-id="81ffe-112">Ordering might require [specific ordering steps](../service-description/device-images.md).</span></span>
+3. <span data-ttu-id="81ffe-113">[Überprüfen](validate-device.md) Sie die Beispielgeräte.</span><span class="sxs-lookup"><span data-stu-id="81ffe-113">[Validate](validate-device.md) the example devices.</span></span>
+5. <span data-ttu-id="81ffe-114">Nach erfolgreicher Überprüfung müssen Sie die Geräte in Zusammenarbeit mit einem genehmigten Gerätepartner bestellen.</span><span class="sxs-lookup"><span data-stu-id="81ffe-114">After successful validation, order the devices, working with an approved device partner.</span></span>
+6. <span data-ttu-id="81ffe-115">Nachdem sie angekommen sind, gehen Sie wie folgt vor:</span><span class="sxs-lookup"><span data-stu-id="81ffe-115">Once they've arrived, do either of the following:</span></span>
+    - [<span data-ttu-id="81ffe-116">Selbstregistrieren neuer Geräte</span><span class="sxs-lookup"><span data-stu-id="81ffe-116">Register new devices yourself</span></span>](register-devices-self.md)
+    - <span data-ttu-id="81ffe-117">Zusammenarbeit mit einem Partner zum Registrieren der Geräte</span><span class="sxs-lookup"><span data-stu-id="81ffe-117">Work with a partner to register the devices</span></span>
+7. <span data-ttu-id="81ffe-118">[Machen Sie Ihre Benutzer bereit,](get-started-devices.md) Microsoft Managed Desktop verwenden</span><span class="sxs-lookup"><span data-stu-id="81ffe-118">[Get your users ready](get-started-devices.md) to use Microsoft Managed Desktop devices</span></span>
 
-## <a name="to-reuse-existing-devices"></a><span data-ttu-id="75dcf-116">So verwenden Sie vorhandene Geräte wieder</span><span class="sxs-lookup"><span data-stu-id="75dcf-116">To reuse existing devices</span></span>
+## <a name="to-reuse-existing-devices"></a><span data-ttu-id="81ffe-119">So verwenden Sie vorhandene Geräte wiederverwenden</span><span class="sxs-lookup"><span data-stu-id="81ffe-119">To reuse existing devices</span></span>
 
-1. <span data-ttu-id="75dcf-117">Überprüfen Sie die Liste der [derzeit genehmigten Geräte,](../service-description/device-list.md) um zu ermitteln, welche Ihrer Geräte für die Verwendung mit Microsoft Managed Desktop genehmigt wurden.</span><span class="sxs-lookup"><span data-stu-id="75dcf-117">Review the list of [currently approved devices](../service-description/device-list.md) to identify which of your devices is approved for use with Microsoft Managed Desktop.</span></span> <span data-ttu-id="75dcf-118">Wenn Sie ein vorhandenes Gerät wiederverwenden, müssen Sie es neu abbilden.</span><span class="sxs-lookup"><span data-stu-id="75dcf-118">If you reuse an existing device, you will have to reimage it.</span></span>
-2. <span data-ttu-id="75dcf-119">Gehen Sie wie folgt vor:</span><span class="sxs-lookup"><span data-stu-id="75dcf-119">Do either of the following:</span></span>
-    - [<span data-ttu-id="75dcf-120">Selbstregistrieren vorhandener Geräte</span><span class="sxs-lookup"><span data-stu-id="75dcf-120">Register existing devices yourself</span></span>](register-reused-devices-self.md)
-    - <span data-ttu-id="75dcf-121">Zusammenarbeit mit einem Partner zum Registrieren der Geräte</span><span class="sxs-lookup"><span data-stu-id="75dcf-121">Work with a partner to register the devices</span></span>
-3. <span data-ttu-id="75dcf-122">[Bereiten Sie Ihre Benutzer auf die](get-started-devices.md) Verwendung von Microsoft Managed Desktop-Geräten vor</span><span class="sxs-lookup"><span data-stu-id="75dcf-122">[Get your users ready](get-started-devices.md) to use Microsoft Managed Desktop devices</span></span>
+1. <span data-ttu-id="81ffe-120">Überprüfen Sie, ob Ihre vorhandenen Geräte unsere [Geräteanforderungen erfüllen.](../service-description/device-requirements.md)</span><span class="sxs-lookup"><span data-stu-id="81ffe-120">Check that your existing devices meet our [device requirements](../service-description/device-requirements.md).</span></span> <span data-ttu-id="81ffe-121">Sie können auch die Überprüfung der [Herunterladbaren](../get-ready/readiness-assessment-downloadable.md) Bereitschaftsbewertung verwenden, um zu überprüfen, ob ein bestimmtes Gerät die erforderlichen Anforderungen erfüllt.</span><span class="sxs-lookup"><span data-stu-id="81ffe-121">You can also use the downloadable [readiness assessment checker](../get-ready/readiness-assessment-downloadable.md) to verify that a given device meets the necessary requirements.</span></span> 
+2. <span data-ttu-id="81ffe-122">Wenn Sie ein vorhandenes Gerät wiederverwenden, müssen Sie es möglicherweise erneut abbilden.</span><span class="sxs-lookup"><span data-stu-id="81ffe-122">If you reuse an existing device, you may have to reimage it.</span></span> <span data-ttu-id="81ffe-123">Bildoptionen finden Sie unter [Gerätebilder](../service-description/device-images.md).</span><span class="sxs-lookup"><span data-stu-id="81ffe-123">For image options, see [Device images](../service-description/device-images.md).</span></span>
+3. <span data-ttu-id="81ffe-124">Wählen Sie ein oder mehrere Beispiele für die Geräte aus, die Sie wiederverwenden möchten, und überprüfen Sie [sie dann.](validate-device.md)</span><span class="sxs-lookup"><span data-stu-id="81ffe-124">Select one or a few examples of the devices you want to reuse, and then [validate them](validate-device.md).</span></span>
+4. <span data-ttu-id="81ffe-125">Gehen Sie nach erfolgreicher Überprüfung wie folgt vor:</span><span class="sxs-lookup"><span data-stu-id="81ffe-125">After successful validation, do either of the following:</span></span>
+    - [<span data-ttu-id="81ffe-126">Selbstregistrieren vorhandener Geräte</span><span class="sxs-lookup"><span data-stu-id="81ffe-126">Register existing devices yourself</span></span>](register-reused-devices-self.md)
+    - <span data-ttu-id="81ffe-127">Zusammenarbeit mit einem Partner zum Registrieren der Geräte</span><span class="sxs-lookup"><span data-stu-id="81ffe-127">Work with a partner to register the devices</span></span>
+5. <span data-ttu-id="81ffe-128">[Machen Sie Ihre Benutzer bereit,](get-started-devices.md) Microsoft Managed Desktop verwenden</span><span class="sxs-lookup"><span data-stu-id="81ffe-128">[Get your users ready](get-started-devices.md) to use Microsoft Managed Desktop devices</span></span>
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="75dcf-123">Schritte für die ersten Schritte mit Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="75dcf-123">Steps to get started with Microsoft Managed Desktop</span></span>
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a><span data-ttu-id="81ffe-129">Schritte zum Einstieg in Microsoft Managed Desktop</span><span class="sxs-lookup"><span data-stu-id="81ffe-129">Steps to get started with Microsoft Managed Desktop</span></span>
 
-1. [<span data-ttu-id="75dcf-124">Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal</span><span class="sxs-lookup"><span data-stu-id="75dcf-124">Add and verify admin contacts in the Admin portal</span></span>](add-admin-contacts.md)
-2. [<span data-ttu-id="75dcf-125">Bedingten Zugriff anpassen</span><span class="sxs-lookup"><span data-stu-id="75dcf-125">Adjust conditional access</span></span>](conditional-access.md)
-3. [<span data-ttu-id="75dcf-126">Zuweisen von Lizenzen</span><span class="sxs-lookup"><span data-stu-id="75dcf-126">Assign licenses</span></span>](assign-licenses.md)
-4. [<span data-ttu-id="75dcf-127">Intune-Unternehmensportal bereitstellen</span><span class="sxs-lookup"><span data-stu-id="75dcf-127">Deploy Intune Company Portal</span></span>](company-portal.md)
-5. [<span data-ttu-id="75dcf-128">Aktivieren von Enterprise State Roaming</span><span class="sxs-lookup"><span data-stu-id="75dcf-128">Enable Enterprise State Roaming</span></span>](enterprise-state-roaming.md)
-6. <span data-ttu-id="75dcf-129">Einrichten von Geräten (dieser Artikel)</span><span class="sxs-lookup"><span data-stu-id="75dcf-129">Set up devices (this article)</span></span>
-7. [<span data-ttu-id="75dcf-130">Vorbereiten Ihrer Benutzer für die Verwendung von Geräten</span><span class="sxs-lookup"><span data-stu-id="75dcf-130">Get your users ready to use devices</span></span>](get-started-devices.md)
-8. [<span data-ttu-id="75dcf-131">Bereitstellen von Apps</span><span class="sxs-lookup"><span data-stu-id="75dcf-131">Deploy apps</span></span>](deploy-apps.md)
+1. [<span data-ttu-id="81ffe-130">Hinzufügen und Überprüfen von Administrator-Kontakten im-Administratorportal</span><span class="sxs-lookup"><span data-stu-id="81ffe-130">Add and verify admin contacts in the Admin portal</span></span>](add-admin-contacts.md)
+2. [<span data-ttu-id="81ffe-131">Bedingten Zugriff anpassen</span><span class="sxs-lookup"><span data-stu-id="81ffe-131">Adjust conditional access</span></span>](conditional-access.md)
+3. [<span data-ttu-id="81ffe-132">Zuweisen von Lizenzen</span><span class="sxs-lookup"><span data-stu-id="81ffe-132">Assign licenses</span></span>](assign-licenses.md)
+4. [<span data-ttu-id="81ffe-133">Intune-Unternehmensportal bereitstellen</span><span class="sxs-lookup"><span data-stu-id="81ffe-133">Deploy Intune Company Portal</span></span>](company-portal.md)
+5. [<span data-ttu-id="81ffe-134">Aktivieren von Enterprise State Roaming</span><span class="sxs-lookup"><span data-stu-id="81ffe-134">Enable Enterprise State Roaming</span></span>](enterprise-state-roaming.md)
+6. <span data-ttu-id="81ffe-135">Einrichten von Geräten (in diesem Artikel)</span><span class="sxs-lookup"><span data-stu-id="81ffe-135">Set up devices (this article)</span></span>
+7. [<span data-ttu-id="81ffe-136">Vorbereiten Ihrer Benutzer für die Verwendung von Geräten</span><span class="sxs-lookup"><span data-stu-id="81ffe-136">Get your users ready to use devices</span></span>](get-started-devices.md)
+8. [<span data-ttu-id="81ffe-137">Bereitstellen von Apps</span><span class="sxs-lookup"><span data-stu-id="81ffe-137">Deploy apps</span></span>](deploy-apps.md)

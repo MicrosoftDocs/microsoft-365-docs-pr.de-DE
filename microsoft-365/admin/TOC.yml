@@ -107,16 +107,30 @@
               href: create-groups/manage-guest-access-in-groups.md
             - name: Ändern von Benutzernamen und -E-Mail-Adressen
               href: add-users/change-a-user-name-and-email-address.md
-            - name: Entfernen eines ehemaligen Mitarbeiters
-              href: add-users/remove-former-employee.md
-            - name: Zugriff und Sicherung der Daten eines ehemaligen Benutzers
-              href: add-users/get-access-to-and-back-up-a-former-user-s-data.md
             - name: Wiederherstellen eines Benutzers
               href: add-users/restore-user.md
             - name: Vorlage zum Hinzufügen von Benutzern erstellen
               href: add-users/create-and-use-a-template-to-add-users.md
             - name: Aktualisieren Sie Benutzer auf die neuesten Apps
               href: setup/upgrade-users-to-latest-office-client.md
+        - name: Entfernen eines ehemaligen Mitarbeiters
+          items:
+            - name: Übersicht
+              href: add-users/remove-former-employee.md
+            - name: Schritt 1. Verhindern der Anmeldung eines Mitarbeiters und Blockieren des Zugriffs auf Microsoft 365-Dienste
+              href: add-users/remove-former-employee-step-1.md
+            - name: "Schritt\_2. Speichern der Inhalte des Postfachs eines ehemaligen Mitarbeiters"
+              href: add-users/remove-former-employee-step-2.md
+            - name: 'Schritt 3: Weiterleiten der E-Mails eines ehemaligen Mitarbeiters an einen anderen Mitarbeiter oder Konvertieren des Benutzerpostfachs in ein freigegebenes Postfach'
+              href: add-users/remove-former-employee-step-3.md
+            - name: "Schritt\_4. Einem anderen Mitarbeiter Zugriff auf OneDrive- und Outlook-Daten geben"
+              href: add-users/remove-former-employee-step-4.md
+            - name: Schritt 5. Zurücksetzen und Blockieren des mobilen Geräts eines ehemaligen Mitarbeiters
+              href: add-users/remove-former-employee-step-5.md
+            - name: 'Schritt 6: Entfernen der Microsoft 365-Lizenz eines ehemaligen Mitarbeiters'
+              href: add-users/remove-former-employee-step-6.md
+            - name: 'Schritt 7: Löschen des Benutzerkontos eines ehemaligen Mitarbeiters'
+              href: add-users/remove-former-employee-step-7.md
         - name: Gruppen
           items:
             - name: Gruppenübersicht
