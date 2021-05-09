@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mithilfe einer Aufbewahrungsrichtlinie können Sie die Inhalte, die Benutzer mit E-Mails, Dokumenten und Unterhaltungen generieren, effizient verwalten. Bewahren Sie auf, was Sie wollen, und werden Sie los, was Sie nicht mehr wollen.
-ms.openlocfilehash: 9e7ab359297ef1402fa64bc754591a4be3140af0
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1faeae5dc145d6f908f9137387b875c890d22e14
+ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269504"
+ms.locfileid: "52280427"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -85,7 +85,7 @@ Wenn Sie über mehr als eine Aufbewahrungsrichtlinie verfügen und außerdem Auf
 
 5. Schließen Sie den Assistenten ab, damit Ihre Einstellungen gespeichert werden.
 
-Weiterführende Informationen zur Verwendung von Aufbewahrungsrichtlinien für Teams finden Sie unter [Aufbewahrungsrichtlinien in Microsoft Teams](/microsoftteams/retention-policies) in der Teams-Dokumentation.
+Eine Anleitung, wann Sie Aufbewahrungsrichtlinien für Teams verwenden und die Endbenutzererfahrung verstehen, finden Sie unter [Aufbewahrungsrichtlinien für Microsoft Teams Verwalten](/microsoftteams/retention-policies) in der Teams-Dokumentation.
 
 Technische Details zur Funktionsweise der Aufbewahrung für Teams, einschließlich Informationen dazu, welche Elemente von Nachrichten bei der Aufbewahrung unterstützt werden sowie Informationen zum Timing mitsamt Anwendungsbeispielen, finden Sie unter [Informationen zur Aufbewahrung für Microsoft Teams](retention-policies-teams.md).
 
