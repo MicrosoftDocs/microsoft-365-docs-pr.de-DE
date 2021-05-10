@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Hier erfahren Sie, was mit Ihren Daten geschieht, wenn Ihr Microsoft 365-Abonnement abläuft, deaktiviert wird oder Sie es kündigen.
-ms.openlocfilehash: 8f853000ebd20ab8f6625df9f773bbb182bdb7fd
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 45f331fd14abb2f851c8ff84e729b8443a60b59b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644656"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297272"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Microsoft 365 Business-Abonnement endet?
 
 Wenn Ihr Abonnement endet – weil es entweder abläuft oder Sie es zu kündigen beschließen – durchläuft Ihr Zugriff auf Microsoft 365-Dienste, -Anwendungen und -Kundendaten mehrere Stadien, bevor das Abonnement vollständig deaktiviert oder *gelöscht* wird. Wenn Ihnen dieser Ablauf bewusst ist, sind Sie besser gerüstet, um das Abonnement auf einen aktiven Status zurückzusetzen, bevor es zu spät ist. Andererseits wissen Sie, dass Sie Ihre Daten vor dem Verlassen von Microsoft 365 unbedingt sichern sollten, bevor sie endgültig gelöscht werden.
 
-Lesen Sie diese wichtigen Informationen, bevor Sie sich mit dem [Microsoft 365-Support](../../admin/contact-support-for-business-products.md) in Verbindung setzen.
+Lesen Sie diese wichtigen Informationen, bevor Sie sich mit dem [Microsoft 365-Support](../../business-video/get-help-support.md) in Verbindung setzen.
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>Was geschieht beim Ablauf eines Abonnements mit den Daten?
 
@@ -73,7 +73,7 @@ Wenn Sie sich über das Kündigen informieren möchten, lesen Sie [Kündigen Ihr
 
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>Welche Möglichkeiten habe ich, wenn mein Abonnement bald abläuft?
 
-Während Ihr Abonnement aktiv ist, verfügen Sie und ihre Endbenutzer über normalen Zugriff auf Ihre Daten, Dienste wie E-Mail und OneDrive for Business sowie Office-Anwendungen. Wenn sich Ihr Abonnement dem Ablaufdatum nähert, erhalten Sie als Administrator per E-Mail und im Admin Center eine Reihe entsprechender Benachrichtigungen.
+Während ein Abonnement aktiv ist, haben Sie und Ihre Endbenutzer normalen Zugriff auf Ihre Daten, Dienste wie E-Mail und OneDrive for Business sowie Office-Anwendungen. Als Administrator erhalten Sie eine Reihe von Benachrichtigungen per E-Mail und im Admin Center, wenn sich Ihr Abonnement dem Ablaufdatum nähert.
   
 Bevor das Abonnement tatsächlich sein Laufzeit-Enddatum erreicht, haben Sie ein paar Möglichkeiten:
   
@@ -99,7 +99,7 @@ Bevor das Abonnement tatsächlich sein Laufzeit-Enddatum erreicht, haben Sie ein
 
 ## <a name="what-happens-after-my-subscription-expires"></a>Was geschieht nach Ablauf meines Abonnements?
 
-Wenn Sie Ihr Abonnement ablaufen lassen, durchläuft es mehrere Stadien, bevor es endgültig gelöscht wird. Damit erhalten Sie als Administrator Zeit zum Reaktivieren, wenn Sie den Dienst doch fortsetzen möchten, oder Zeit zum Sichern Ihrer Daten, falls Sie entscheiden, dass Sie das Abonnement nicht mehr nutzen möchten.
+Wenn Sie Ihr Abonnement ablaufen lassen, durchläuft es mehrere Zustände, bevor es schließlich gelöscht wird. Dies gibt Ihnen als Administrator Zeit, es zu reaktivieren, wenn Sie den Dienst fortsetzen möchten, oder Ihre Daten zu sichern, wenn Sie entscheiden, dass Sie das Abonnement nicht mehr möchten.
   
 Nachstehend wird aufgeführt, womit im jeweiligen Stadium Ihres Abonnements zu rechnen ist.
   
@@ -123,9 +123,9 @@ Als globaler Administrator oder Abechnungsadministrator können Sie [das Abonnem
   
  **Was Sie erwarten können:** Wenn Sie Ihr Abonnement nicht reaktivieren, während die Nachfrist läuft oder es deaktiviert ist, wird es gelöscht.
   
-Administratoren und Benutzer können nicht mehr auf die im Abonnement enthaltenen Dienste oder Office-Anwendungen zugreifen. Alle Kundendaten – von Benutzerdaten bis zu Dokumenten und E-Mails – werden endgültig gelöscht und können nicht wiederhergestellt werden.
+Admins und Benutzer haben keinen Zugriff mehr auf die Dienste oder Office-Anwendungen, die mit dem Abonnement geliefert wurden. Alle Daten der Kunden – von Benutzerdaten über Dokumente bis hin zu E-Mails – werden dauerhaft gelöscht und sind nicht wiederherstellbar.
   
-Zu diesem Zeitpunkt können Sie das Abonnement nicht mehr reaktivieren. Als globaler Administrator oder Abrechnungsadministrator können Sie jedoch weiterhin auf das Admin Center zugreifen, um andere Abonnements zu verwalten oder um neue Abonnements zur Erfüllung Ihrer Geschäftsanforderungen zu kaufen.
+Zu diesem Zeitpunkt können Sie das Abonnement nicht mehr reaktivieren. Als globaler Administrator oder Rechnungsadministrator können Sie jedoch weiterhin auf das Admin Center zugreifen, um andere Abonnements zu verwalten oder neue Abonnements zu erwerben, die Sie für Ihre geschäftlichen Anforderungen benötigen.
   
 > [!NOTE]
 > - Durch Hinzufügen eines neuen Abonnements desselben Typs wie das Abonnement, das gelöscht wurde, werden die diesem Abonnement zuvor zugeordneten Daten nicht wiederhergestellt.
@@ -133,7 +133,7 @@ Zu diesem Zeitpunkt können Sie das Abonnement nicht mehr reaktivieren. Als glob
 
 ### <a name="what-happens-when-my-trial-ends"></a>Was geschieht, wenn meine Testversion endet?
 
-Wenn Ihre Testversion endet, können Sie Microsoft 365 nicht weiterhin kostenlos nutzen. Es gibt ein paar Optionen:
+Wenn Ihre Testphase endet, können Sie Microsoft 365 nicht mehr kostenlos nutzen. Sie haben ein paar Möglichkeiten:
 
 - **Microsoft 365 kaufen.** Wenn Ihre Testversion abläuft, beginnt das Stadium „Abgelaufen“. So erhalten Sie (bei den meisten Testversionen, in den meisten Ländern und Regionen) weitere 30 Tage zum Kauf von Microsoft 365. Wenn Sie Ihre Testversion in ein kostenpflichtiges Abonnement umwandeln möchten, lesen Sie [Erwerb eines Abonnements aus Ihrer kostenlosen Testversion](../try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial).
 

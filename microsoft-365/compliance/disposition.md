@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und Verwalten der Entsorgung von Inhalten, unabhängig davon, ob Sie die Löschungsprüfung verwenden oder Inhalte automatisch entsprechend den von Ihnen konfigurierten Einstellungen gelöscht werden.
-ms.openlocfilehash: c49f669498424169a89fa99fcdd259de1f5c720b
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: b64db336aa619313f2ff744e94d48e44c13856a0
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488168"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296756"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -52,7 +52,7 @@ Vergewissern Sie sich, dass die Überwachung mindestens einen Tag vor der ersten
 
 ## <a name="disposition-reviews"></a>Löschungsprüfungen
 
-Wenn Inhalte das Ende des Aufbewahrungszeitraums erreichen, kann es verschiedene Gründe geben, die Inhalte zu überprüfen und sicherzustellen, dass sie endgültig gelöscht („verworfen“) werden können. Anstatt den Inhalt zu löschen, ist es möglicherweise erforderlich, folgende Schritte auszuführen:
+Wenn Inhalte das Ende des Aufbewahrungszeitraums erreichen, können Sie aus mehreren Gründen überprüfen und bestätigen, ob sie dauerhaft gelöscht ("verworfen") werden können. Anstatt den Inhalt zu löschen, müssen Sie möglicherweise Folgendes:
   
 - Aussetzten der Löschung relevanter Inhalte im Falle eines Rechtsstreits oder einer Prüfung.
 
@@ -114,7 +114,7 @@ Wie Sie im Bild sehen können, sind die unterstützten Aktionen:
 
 Wenn Sie über Berechtigungen für den Speicherort und den Inhalt verfügen, können Sie den Link in der Spalte **Speicherort** verwenden, um Dokumente am ursprünglichen Speicherort anzuzeigen. Während einer Löschungsprüfung werden die Inhalte nie von ihrem ursprünglichen Speicherort fort bewegt und in keinem Fall gelöscht, es sei denn, der Prüfer entscheidet dies.
 
-Die E-Mail-Benachrichtigungen werden wöchentlich automatisch an Prüfer gesendet. Dieser geplante Vorgang bedeutet: Wenn der Inhalt das Ende des Aufbewahrungszeitraums erreicht, kann es bis zu sieben Tage dauern, bis Prüfer die E-Mail-Benachrichtigung erhalten, dass Inhalte auf Disposition warten.
+Die E-Mail-Benachrichtigungen werden automatisch wöchentlich an die Überprüfer gesendet. Dieser geplante Prozess bedeutet, dass es möglicherweise bis zu sieben Tage dauern kann, bis die Überprüfer die E-Mail-Benachrichtigung erhalten, dass der Inhalt zur Disposition steht, wenn der Inhalt das Ende seiner Aufbewahrungszeitraum erreicht.
   
 Alle Dispositionsaktionen können überwacht werden, und der vom Prüfer eingegebene Begründungstext wird gespeichert und in der Spalte **Kommentar** auf der Seite **Verworfene Elemente** angezeigt.
   
@@ -133,7 +133,7 @@ Diese Elemente zeigen **Verworfene Datensätze** in der Spalte **Typ** an. Beisp
 
 ![Elemente, die ohne eine Löschungsprüfung verworfen wurden](../media/records-disposed2.png)
 
-Elemente, die in der Registerkarte **Verworfene Elemente** angezeigt werden, werden bis zu sieben Jahre nach der Verwerfung des Elements gespeichert, und es wird ein Limit von 1 Million Elementen pro Datensatz für diesen Zeitraum angezeigt. Wenn sich die **Anzahl** dem Limit von 1 Million nähert und Sie einen Dispositionsnachweis benötigen, wenden Sie sich an [Microsoft-Support](/office365/admin/contact-support-for-business-products).
+Elemente, die in der Registerkarte **Verworfene Elemente** angezeigt werden, werden bis zu sieben Jahre nach der Verwerfung des Elements gespeichert, und es wird ein Limit von 1 Million Elementen pro Datensatz für diesen Zeitraum angezeigt. Wenn sich die **Anzahl** dem Limit von 1 Million nähert und Sie einen Dispositionsnachweis benötigen, wenden Sie sich an [Microsoft-Support](../business-video/get-help-support.md).
 
 > [!NOTE]
 > Diese Funktionalität verwendet Informationen aus dem [einheitlichen Überwachungsprotokoll](search-the-audit-log-in-security-and-compliance.md) und erfordert daher, dass die Überwachung [aktiviert und durchsuchbar ist](turn-audit-log-search-on-or-off.md) damit die entsprechenden Ereignisse erfasst werden.
