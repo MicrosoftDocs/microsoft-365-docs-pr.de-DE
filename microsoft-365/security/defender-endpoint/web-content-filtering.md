@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c9a069deded237c5ded6bcd9f6c6a77f644e65a2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 47211e187d1f9f883745f008c6d94d04ee762e98
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689341"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302064"
 ---
 # <a name="web-content-filtering"></a>Internet-Inhaltsfilterung
 
@@ -36,7 +36,8 @@ ms.locfileid: "51689341"
 > Diese Vorschauversion wird ohne Vereinbarung zum Servicelevel bereitgestellt und wird für Produktionsworkloads nicht empfohlen. Bestimmte Features werden möglicherweise nicht unterstützt oder verfügen möglicherweise über eingeschränkte Funktionen.
 > Weitere Informationen finden Sie unter [Microsoft Defender for Endpoint Preview Features](preview.md).
 
->Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> [!TIP]
+> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
 Die Webinhaltsfilterung ist Teil der [Webschutzfunktionen](web-protection-overview.md) in Microsoft Defender for Endpoint. Sie ermöglicht Es Ihrer Organisation, den Zugriff auf Websites basierend auf ihren Inhaltskategorien nachverfolgt und zu regeln. Viele dieser Websites sind zwar nicht bösartig, können jedoch aufgrund von Compliancebestimmungen, Bandbreitennutzung oder anderen Bedenken problematisch sein.
 
@@ -47,36 +48,32 @@ Die Webinhaltsfilterung ist in den wichtigsten Webbrowsern mit Blöcken verfügb
 Zusammenfassung der Vorteile:
 
 - Benutzer werden am Zugriff auf Websites in blockierten Kategorien gehindert, unabhängig davon, ob sie lokal oder fern surfen
-- Bereitstellen von Richtlinien für Benutzergruppen mithilfe von Gerätegruppen, die in [rollenbasierten](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/rbac) Zugriffssteuerungseinstellungen von Microsoft Defender for Endpoint definiert sind
-- Zugreifen auf Webberichte am gleichen zentralen Speicherort mit Sichtbarkeit über tatsächliche Blöcke und Webnutzung
+- Ihr Sicherheitsteam kann Richtlinien mithilfe von Gerätegruppen, die in rollenbasierten Zugriffssteuerungseinstellungen von Microsoft Defender for Endpoint definiert sind, bequem für Benutzergruppen [bereitstellen.](/microsoft-365/security/defender-endpoint/rbac)
+- Ihr Sicherheitsteam kann auf Webberichte am gleichen zentralen Speicherort zugreifen, mit Sichtbarkeit über tatsächliche Blöcke und Webnutzung
 
 ## <a name="user-experience"></a>Verwendung durch den Benutzer
 
-Die Sperrerfahrung für von Drittanbietern unterstützte Browser wird von Network Protection bereitgestellt, das ein Popup auf Systemebene bietet, das den Benutzer über eine blockierte Verbindung informiert. 
-
-Um eine benutzerfreundlichere Browsererfahrung zu ermöglichen, sollten Sie Microsoft Edge verwenden.
+Die Sperrerfahrung für von Drittanbietern unterstützte Browser wird von Network Protection bereitgestellt, das ein Popup auf Systemebene bietet, das den Benutzer über eine blockierte Verbindung informiert. Für eine benutzerfreundlichere, browserfreundlichere Benutzeroberfläche sollten Sie die Verwendung von Microsoft Edge.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
 Stellen Sie vor dem Ausprobieren dieses Features sicher, dass Die folgenden Anforderungen erfüllt sind:
 
-- Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security Add-On oder die eigenständige Microsoft Defender for Endpoint-Lizenz. 
-- Zugriff auf das Microsoft Defender Security Center-Portal
+- Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security oder die eigenständige Microsoft Defender for Endpoint-Lizenz. 
+- Zugriff auf Microsoft Defender Security Center Portal ( https://securitycenter.windows.com) .
 - Geräte mit Windows 10 Anniversary Update (Version 1607) oder höher mit dem neuesten MoCAMP-Update.
-
-Wenn Windows Defender SmartScreen nicht aktiviert ist, übernimmt Network Protection die Blockierung. Es erfordert [das Aktivieren von Netzwerkschutz](enable-network-protection.md) auf dem Gerät. Chrome, Firefox, Brave und Opera sind derzeit Browser von Drittanbietern, in denen dieses Feature aktiviert ist.
 
 ## <a name="data-handling"></a>Datenverarbeitung
 
-Wir folgen der Region, die Sie als Teil Ihrer [Microsoft Defender for Endpoint-Datenverarbeitungseinstellungen verwendet haben.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/data-storage-privacy) Ihre Daten verlassen das Rechenzentrum nicht in dieser Region. Darüber hinaus werden Ihre Daten nicht an Dritte, einschließlich unserer Datenanbieter, weitergegeben.
+Wir folgen der Region, die Sie als Teil Ihrer [Microsoft Defender for Endpoint-Datenverarbeitungseinstellungen verwendet haben.](data-storage-privacy.md) Ihre Daten verlassen das Rechenzentrum nicht in dieser Region. Darüber hinaus werden Ihre Daten nicht an Dritte, einschließlich unserer Datenanbieter, weitergegeben.
 
 ## <a name="turn-on-web-content-filtering"></a>Aktivieren der Webinhaltsfilterung
 
-Wählen Sie im linken Navigationsmenü Einstellungen **> Allgemeine > Erweiterte Features aus.** Scrollen Sie nach unten, bis der Eintrag für die **Webinhaltsfilterung angezeigt wird.** Wechseln Sie zum Umschalten zu **Ein** und **Speichern der Einstellungen**.
+Wählen Sie im linken Navigationsmenü die **Option Einstellungen**  >  **Erweiterte Features**  >  **aus.** Scrollen Sie nach unten, bis der Eintrag für die **Webinhaltsfilterung angezeigt wird.** Wechseln Sie zum Umschalten zu **Ein** und **Speichern der Einstellungen**.
 
 ### <a name="configure-web-content-filtering-policies"></a>Konfigurieren von Webinhaltsfilterrichtlinien
 
-Web content filtering policies specify which site categories are blocked on which device groups. Um die Richtlinien zu verwalten, wechseln Sie zu **Einstellungen > Regeln > Webinhaltsfilterung**.
+Web content filtering policies specify which site categories are blocked on which device groups. Um die Richtlinien zu verwalten, wechseln Sie **zu Einstellungen**  >  **Rules**  >  **Web content filtering**.
 
 Verwenden Sie den Filter, um Richtlinien zu finden, die bestimmte blockierte Kategorien enthalten oder auf bestimmte Gerätegruppen angewendet werden.
 
@@ -84,13 +81,18 @@ Verwenden Sie den Filter, um Richtlinien zu finden, die bestimmte blockierte Kat
 
 So fügen Sie eine neue Richtlinie hinzu:
 
-1. Wählen **Sie auf der** **Webinhaltsfilterseite** unter Einstellungen die Option Richtlinie hinzufügen **aus.**
+1. Wählen **Sie Richtlinie hinzufügen** auf der **Webinhaltsfilterseite** in **Einstellungen**.
+
 2. Geben Sie einen Namen an.
+
 3. Wählen Sie die zu blockierende Kategorie aus. Verwenden Sie das Erweiterungssymbol, um alle übergeordneten Kategorien vollständig zu erweitern und bestimmte Webinhaltskategorien auszuwählen.
+
 4. Geben Sie den Richtlinienbereich an. Wählen Sie die Gerätegruppen aus, um anzugeben, wo die Richtlinie angewendet werden soll. Nur Geräte in den ausgewählten Gerätegruppen können nicht auf Websites in den ausgewählten Kategorien zugreifen.
+
 5. Überprüfen Sie die Zusammenfassung, und speichern Sie die Richtlinie. Die Richtlinienaktualisierung kann bis zu 2 Stunden dauern, bis sie auf ihre ausgewählten Geräte angewendet wird.
 
-Tipp: Sie können eine Richtlinie bereitstellen, ohne eine Kategorie in einer Gerätegruppe auswählen zu müssen. Mit dieser Aktion wird eine Nur-Überwachung-Richtlinie erstellt, damit Sie das Benutzerverhalten besser verstehen können, bevor Sie eine Sperrrichtlinie erstellen.
+> [!TIP]
+> Sie können eine Richtlinie bereitstellen, ohne eine Kategorie in einer Gerätegruppe auswählen zu müssen. Mit dieser Aktion wird eine Nur-Überwachung-Richtlinie erstellt, damit Sie das Benutzerverhalten besser verstehen können, bevor Sie eine Sperrrichtlinie erstellen.
 
 >[!NOTE]
 >Wenn Sie gleichzeitig eine Richtlinie entfernen oder Gerätegruppen ändern, kann dies zu verzögerungen bei der Richtlinienbereitstellung führen.
@@ -102,15 +104,17 @@ Tipp: Sie können eine Richtlinie bereitstellen, ohne eine Kategorie in einer Ge
 
 Es ist möglich, die blockierte Kategorie in der Webinhaltsfilterung außer Kraft zu setzen, um eine einzelne Website durch Erstellen einer benutzerdefinierten Indikatorrichtlinie zu ermöglichen. Die benutzerdefinierte Indikatorrichtlinie ersetzt die Webinhaltsfilterrichtlinie, wenn sie auf die entsprechende Gerätegruppe angewendet wird.
 
-1. Erstellen eines benutzerdefinierten Indikators im Microsoft Defender Security Center, indem Sie zu  >  **Einstellungsindikatoren**  >  **URL/Domänen-Add-Element**  >  **gehen**
-2. Eingeben der Domäne der Website
+1. Erstellen Sie einen benutzerdefinierten Indikator im Microsoft Defender Security Center, indem Sie **Einstellungen**  >    >  **Indikatoren-URL/Domänen-Add-Element**  >  **.**
+
+2. Geben Sie die Domäne der Website ein.
+
 3. Legen Sie die Richtlinienaktion auf **Zulassen .**  
 
 ### <a name="reporting-inaccuracies"></a>Melden von Ungenauigkeiten
 
-Wenn Eine Domäne fälschlicherweise kategorisiert wurde, können Sie Ungenauigkeiten direkt über die Seite Web content filtering reports melden. Dieses Feature ist nur im neuen Microsoft 365 Security Center (security.microsoft.com).
+Wenn Eine Domäne fälschlicherweise kategorisiert wurde, können Sie Ungenauigkeiten direkt über die Seite Web content filtering reports melden. Dieses Feature ist nur im neuen Microsoft 365 Security Center (security.microsoft.com) verfügbar.
 
-Navigieren Sie zum Melden einer Ungenauigkeit zu Berichte **> web protection > Web Content Filtering Details > Domains**. Auf der Registerkarte Domänen unserer Web Content Filtering-Berichte wird neben jeder Domäne ein Auslassungsauslassungsblatt angezeigt. Zeigen Sie auf diese Auslassungspunkte, und wählen **Sie Ungenauigkeit melden aus.**
+Um eine Ungenauigkeit zu melden, navigieren Sie zu **Berichte**  >  **Webschutz Web** Content Filtering  >  **Details**  >  **Domains**. Auf der Registerkarte Domänen unserer Web Content Filtering-Berichte wird neben jeder Domäne ein Auslassungsauslassungsblatt angezeigt. Zeigen Sie auf diese Auslassungspunkte, und wählen **Sie Ungenauigkeit melden aus.**
 
 Ein Bereich wird geöffnet, in dem Sie die Priorität auswählen und zusätzliche Details hinzufügen können, z. B. die vorgeschlagene Kategorie für die erneute Kategorisierung. Nachdem Sie das Formular abgeschlossen haben, wählen Sie **Absenden aus.** Unser Team überprüft die Anforderung innerhalb eines Arbeitstags. Erstellen Sie zum sofortigen Aufheben der Blockierung einen [benutzerdefinierten Zulässigen Indikator](indicator-ip-domain.md).
 
@@ -156,11 +160,11 @@ Verwenden Sie den Zeitbereichsfilter oben links auf der Seite, um einen Zeitraum
 
 ### <a name="limitations-and-known-issues-in-this-preview"></a>Einschränkungen und bekannte Probleme in dieser Vorschau
 
-- Nur Microsoft Edge wird unterstützt, wenn die Betriebssystemkonfiguration Ihres Geräts Server ist (cmd > Systeminfo > Betriebssystemkonfiguration). Network Protection wird nur im Inspect-Modus auf Servergeräten unterstützt, der für die Sicherung des Datenverkehrs über unterstützte Browser von Drittanbietern verantwortlich ist.
+- Nur Microsoft Edge wird unterstützt, wenn die Betriebssystemkonfiguration Ihres Geräts Server (**cmd**  >  **Systeminfo** OS Configuration )  >  **ist.** Network Protection wird nur im Inspect-Modus auf Servergeräten unterstützt, der für die Sicherung des Datenverkehrs über unterstützte Browser von Drittanbietern verantwortlich ist.
 
-- Auf nicht zugewiesenen Geräten werden falsche Daten im Bericht angezeigt. Im Pivot "Berichtdetails" > Gerätegruppen wird möglicherweise eine Zeile mit einem leeren Feld Gerätegruppe angezeigt. Diese Gruppe enthält Ihre nicht zugewiesenen Geräte, bevor sie in Ihre angegebene Gruppe eingesenert werden. Der Bericht für diese Zeile enthält möglicherweise keine genaue Anzahl von Geräten oder Zugriffsanzahlen.
+- Auf nicht zugewiesenen Geräten werden falsche Daten im Bericht angezeigt. Im **Pivot "Berichtdetails**  >  **Gerätegruppen"** wird möglicherweise eine Zeile mit einem leeren Feld Gerätegruppe angezeigt. Diese Gruppe enthält Ihre nicht zugewiesenen Geräte, bevor sie in Ihre angegebene Gruppe eingesenert werden. Der Bericht für diese Zeile enthält möglicherweise keine genaue Anzahl von Geräten oder Zugriffsanzahlen.
 
-- Web content filtering reports are currently limited to showing the top 5000 records. Der Bericht "Domänen" zeigt beispielsweise nur maximal 5000 Domänen für eine bestimmte Filterabfrage an, sofern zutreffend. 
+- Web content filtering reports are currently limited to showing the top 5000 records. Der Domänenbericht zeigt beispielsweise nur maximal 5000 Domänen für eine bestimmte Filterabfrage an, sofern zutreffend. 
 
 ## <a name="related-topics"></a>Verwandte Themen
 

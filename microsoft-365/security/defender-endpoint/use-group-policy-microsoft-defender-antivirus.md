@@ -10,18 +10,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 05/07/2021
+ms.date: 05/08/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 81cba445482b1fceb8bd520f2be88d55db2a47fb
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 74f58959c22313806ebc95aef14e8ccb2d75326b
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296731"
+ms.locfileid: "52302100"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Verwenden von Gruppenrichtlinieneinstellungen zum Konfigurieren und Verwalten Microsoft Defender Antivirus
 
@@ -55,7 +55,7 @@ Im Allgemeinen können Sie das folgende Verfahren verwenden, um gruppenrichtlini
 In der folgenden Tabelle in diesem Thema sind die gruppenrichtlinieneinstellungen aufgeführt, die in Windows 10, Version 1703, verfügbar sind, und enthält Links zum entsprechenden Thema in dieser Dokumentationsbibliothek (sofern zutreffend). 
 
 > [!TIP]
-> [Laden Sie das Gruppenrichtlinien-Einstellungen-Referenzkalkulationstabelle für Windows 10 May 2020 Update (2004) herunter.](https://www.microsoft.com/download/101451) In dieser Tabellenkalkulation sind die Richtlinieneinstellungen für Computer- und Benutzerkonfigurationen aufgeführt, die in den administrativen Vorlagendateien enthalten sind, die für Windows 10 May 2020 Update (2004) ausgeliefert wurden. Sie können diese Richtlinieneinstellungen konfigurieren, wenn Sie Gruppenrichtlinienobjekte bearbeiten.
+> [Laden Sie das Gruppenrichtlinien-Einstellungen-Referenzkalkulationstabelle für Windows 10 May 2020 Update (2004) herunter.](https://www.microsoft.com/download/101451) In dieser Tabellenkalkulation sind die Richtlinieneinstellungen für Computer- und Benutzerkonfigurationen aufgeführt, die in den administrativen Vorlagendateien enthalten sind, die für Windows 10 May 2020 Update (2004) ausgeliefert wurden. Sie können beim Bearbeiten von Gruppenrichtlinienobjekten den Bezug auf die Kalkulationstabelle konfigurieren.
 
 | Speicherort | Setting | Artikel |
 |:---|:---|:---|

@@ -12,19 +12,18 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
-ROBOTS: NOINDEX, NOFOLLOW
+ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: 290c06d95c6569b5a446a7a7410d34ff3b57055d
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: bdb49af4ac43976a1ad734e507902781d63c5670
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904070"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301788"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Übersicht über das Thema Center in Microsoft Viva Topics
 
-
-In Microsoft Viva Topics ist das Themencenter eine moderne SharePoint-Website, die als Wissenscenter für Ihre Organisation dient. Sie wird während des [Setups von "Viva Topics"](set-up-topic-experiences.md) im Microsoft 365 Admin Center erstellt.
+In Microsoft Viva Topics ist das Themencenter eine moderne SharePoint, die als Wissenscenter für Ihre Organisation dient. Es wird während des [Setups von "Viva Topics"](set-up-topic-experiences.md) im Microsoft 365 erstellt.
 
 Das Themencenter verfügt über eine  Standard-Homepage mit dem Themenwebteil, auf der alle lizenzierten Benutzer die Themen sehen können, mit denen sie eine Verbindung haben. 
 
@@ -35,10 +34,10 @@ Während alle lizenzierten Benutzer, die Themen anzeigen können, Zugriff auf da
 Das Themencenter wird während des Setups von "Viva Topics" erstellt. Nach Abschluss des Setups kann ein Administrator die URL auf der [Seite "Topic Center Management" finden.](./topic-experiences-administration.md#to-access-topics-management-settings)
 
 
-1. Wählen Sie im Microsoft 365 Admin Center **Einstellungen** aus, und wählen Sie dann **Organisationseinstellungen aus.**
+1. Wählen Sie Microsoft 365 Admin Center **Einstellungen** aus, und wählen Sie dann **Organisationseinstellungen aus.**
 2. Wählen Sie **auf der** Registerkarte Dienste die Option **Themenerfahrungen aus.**
 
-    ![Verbinden von Personen mit Wissen](../media/admin-org-knowledge-options-completed.png) </br>
+    ![Verbinden personen zum Wissen](../media/admin-org-knowledge-options-completed.png) </br>
 
 3. Wählen Sie die **Registerkarte Themencenter** aus. Unter **Websiteadresse** befindet sich ein Link zu Ihrem Themencenter.
 
@@ -57,7 +56,7 @@ Das Themencenter wird während des Setups von "Viva Topics" erstellt. Nach Absch
 
 Auf der Startseite des Themencenters sehen Sie die Themen in Ihrer Organisation, mit denen Sie eine Verbindung haben.
 
-- Vorgeschlagene Verbindungen – Unter Wir haben Sie zu diesen Themen aufgelistete **Themen angezeigt. Haben wir es richtig gemacht?**. Dies sind Themen, in denen Ihre Verbindung mit dem Thema über KI vorgeschlagen wurde. Sie können z. B. Autor einer verwandten Datei oder Website sein. Sie werden aufgefordert, zu bestätigen, dass Sie als verwandte Person für das Thema aufgeführt bleiben sollten.
+- Vorgeschlagene Verbindungen – Unter Wir haben Sie zu diesen Themen aufgelistete **Themen angezeigt. Haben wir es richtig gemacht?** Dies sind Themen, in denen Ihre Verbindung mit dem Thema über KI vorgeschlagen wurde. Sie können z. B. Autor einer verwandten Datei oder Website sein. Sie werden aufgefordert, zu bestätigen, dass Sie als verwandte Person für das Thema aufgeführt bleiben sollten.
 
    ![Vorgeschlagene Verbindungen](../media/knowledge-management/my-topics.png) </br>
  
@@ -70,12 +69,12 @@ Sobald ein Benutzer seine Verbindung zu einem Thema bestätigt hat, kann er Änd
 
 ## <a name="manage-topics-page"></a>Seite "Themen verwalten"
 
-Damit Sie im Abschnitt **Themen** verwalten im Themencenter arbeiten können, benötigen Sie die erforderlichen Berechtigungen zum Verwalten von Themen, die für die Rolle des Wissensmanagers erforderlich sind. Ihr Administrator kann diese Berechtigungen Benutzern während der Einrichtung [](topic-experiences-knowledge-rules.md) der Wissensverwaltung [zuweisen,](set-up-topic-experiences.md)oder neue Benutzer können anschließend von einem Administrator über das Microsoft 365 Admin Center hinzugefügt werden.
+Damit Sie im Abschnitt **Themen** verwalten im Themencenter arbeiten können, benötigen Sie die erforderlichen Berechtigungen zum Verwalten von Themen, die für die Rolle des Wissensmanagers erforderlich sind. Ihr Administrator kann diese Berechtigungen Benutzern während der Einrichtung [](topic-experiences-knowledge-rules.md) der Wissensverwaltung [zuweisen,](set-up-topic-experiences.md)oder neue Benutzer können anschließend von einem Administrator über das Microsoft 365 hinzugefügt werden.
 
 Auf der Seite Themen verwalten zeigt das Themendashboard alle Themen an, auf die Sie Zugriff haben, die von Den angegebenen Quellstandorten identifiziert wurden. Jedes Thema zeigt das Datum an, an dem das Thema entdeckt wurde. Ein Benutzer, dem Berechtigungen zum Verwalten von Themen zugewiesen wurden, kann die nicht bestätigten Themen überprüfen und folgende Aufgaben auswählen:
 - Bestätigen Sie das Thema: Gibt Benutzern an, dass ein von AI vorgeschlagenes Thema von einem menschlichen Konservator überprüft wurde. 
 - Veröffentlichen Sie das Thema: Bearbeiten Sie die Themeninformationen, um die Qualität des anfangs identifizierten Themas zu verbessern, und hebt das Thema für alle Benutzer hervor, die Zugriff auf Themen haben. 
-- Ablehnen des Themas: Macht das Thema für Endbenutzer nicht wiederherstellbar. Das Thema wird auf die Registerkarte **Abgelehnt** verschoben und kann bei Bedarf später bestätigt werden. 
+- Entfernen Sie das Thema: Macht das Thema für Endbenutzer nicht wiederherstellbar. Das Thema wird auf die Registerkarte **Entfernt** verschoben und kann bei Bedarf später bestätigt werden. 
 
 > [!Note] 
 > Weitere [Informationen zur Themenverwaltung](manage-topics.md) finden Sie unter Verwalten von Themen auf der Seite Themen verwalten.
@@ -88,7 +87,7 @@ Wenn Sie über Berechtigungen zum Erstellen und Bearbeiten von Themen verfügen,
 - [Neue Themen erstellen:](create-a-topic.md)Sie können neue Themen für Themen erstellen, die nicht durch Die Ermittlung gefunden wurden, oder ob die AI-Tools nicht genügend Nachweise zum Erstellen eines Themas gefunden haben.
 
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 [Themen im Topic Center verwalten](manage-topics.md)
 

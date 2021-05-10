@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b5af93e82f72bac900682b2e231453e448b267d9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 365fed8b5f7c7fc617ea068e324da541f7f1b187
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934189"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301776"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender für Endpoint auf Dem Mac
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934189"
 In diesem Thema wird beschrieben, wie Sie Defender for Endpoint auf Dem Mac installieren, konfigurieren, aktualisieren und verwenden.
 
 > [!CAUTION]
-> Das Ausführen anderer Endpunktschutzprodukte von Drittanbietern zusammen mit Microsoft Defender for Endpoint auf Mac führt wahrscheinlich zu Leistungsproblemen und unvorhersehbaren Nebenwirkungen. Wenn in Ihrer Umgebung kein Microsoft-Endpunktschutz eine absolute Anforderung ist, können Sie die Funktionen von Defender for Endpoint auf Mac EDR weiterhin sicher nutzen, nachdem Sie die Antivirenfunktionen so konfiguriert haben, dass sie im passiven Modus [ausgeführt werden.](mac-preferences.md#enable--disable-passive-mode)
+> Das Ausführen anderer Endpunktschutzprodukte von Drittanbietern zusammen mit Microsoft Defender for Endpoint auf Mac führt wahrscheinlich zu Leistungsproblemen und unvorhersehbaren Nebenwirkungen. Wenn in Ihrer Umgebung kein Microsoft-Endpunktschutz eine absolute Anforderung ist, können Sie die Funktionen von Defender for Endpoint auf Mac EDR weiterhin nutzen, nachdem Sie die Antivirenfunktionen für die Ausführung im passiven Modus konfiguriert [haben.](mac-preferences.md#enable--disable-passive-mode)
 
 ## <a name="whats-new-in-the-latest-release"></a>Neuigkeiten in der neuesten Version
 
@@ -50,13 +50,13 @@ In diesem Thema wird beschrieben, wie Sie Defender for Endpoint auf Dem Mac inst
 > [!TIP]
 > Wenn Sie Feedback haben, das Sie freigeben möchten, übermitteln Sie es, indem Sie Microsoft Defender for Endpoint auf Dem Mac auf Ihrem Gerät öffnen und navigieren, um Feedback zu  >  senden.
 
-Um die neuesten Features, einschließlich Vorschaufunktionen (z. B. Endpunkterkennung und -antwort für Ihre Mac-Geräte), zu erhalten, konfigurieren Sie Ihr macOS-Gerät, auf dem Microsoft Defender for Endpoint ausgeführt wird, als "Insider"-Gerät.
+Um die neuesten Features, einschließlich Vorschaufunktionen (z. B. EDR für Ihre Mac-Geräte), zu erhalten, konfigurieren Sie Ihr macOS-Gerät, auf dem Microsoft Defender for Endpoint ausgeführt wird, als "Insider"-Gerät.
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Installieren von Microsoft Defender for Endpoint auf Dem Mac
 
 ### <a name="prerequisites"></a>Voraussetzungen
 
-- Ein Defender for Endpoint-Abonnement und Zugriff auf das Microsoft Defender Security Center-Portal
+- Ein Defender for Endpoint-Abonnement und Zugriff auf das Microsoft Defender Security Center Portal
 - Erfahrung auf Anfängerebene in macOS- und BASH-Skripting
 - Administratorrechte auf dem Gerät (bei manueller Bereitstellung)
 
@@ -98,6 +98,8 @@ Microsoft Defender für Endpoint auf Mac erfordert eines der folgenden Microsoft
 - Microsoft 365 E5 (M365 E5)
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 (M365 A5)
+- Windows 10 Enterprise E5
+- Microsoft Defender für Endpunkt
 
 > [!NOTE]
 > Berechtigte lizenzierte Benutzer können Microsoft Defender for Endpoint auf bis zu fünf gleichzeitigen Geräten verwenden.

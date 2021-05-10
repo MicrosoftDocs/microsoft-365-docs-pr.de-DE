@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 76abde885aa16c174bb81d22e5939d47894a59bf
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 64a96256ff4bb4b77ec634195f6d89b92252142a
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934969"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301764"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Neues in Microsoft Defender for Endpoint unter iOS
 
@@ -37,11 +37,13 @@ Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich fü
 
 ## <a name="1115140101"></a>1.1.15140101
 
-- Der Microsoft Defender ATP-Produktname wurde jetzt auf Microsoft Defender for Endpoint im App Store aktualisiert.
+- **Die Jailbreakerkennung** befindet sich in der Vorschau. Weitere Informationen finden Sie unter [Setup Conditional Access Policy based on device risk signals](ios-configure-features.md#conditional-access-with-defender-for-endpoint-on-ios).
+- **Die automatische Einrichtung des** VPN-Profils befindet sich in der Vorschau für registrierte Geräte über Microsoft Endpoint Manager (Intune). Weitere Informationen finden Sie unter [Auto-Setup VPN profile for enrolled iOS devices](ios-install.md#auto-onboarding-of-vpn-profile-simplified-onboarding).
+- Der Microsoft Defender ATP Produktname wurde jetzt auf Microsoft Defender for Endpoint im App Store aktualisiert.
 - Verbesserte Anmeldeerfahrung.
 - Fehlerbehebungen.
 
 ## <a name="1115010101"></a>1.1.15010101
 
-- Mit dieser Version wird die Unterstützung für iPadOS/iPad-Geräte angekündigt.
+- Mit dieser Version wird unterstützung für iPadOS/iPad angekündigt.
 - Fehlerbehebungen.

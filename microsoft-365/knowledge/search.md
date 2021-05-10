@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Erfahren Sie, wie Sie in Microsoft Viva nach Themen suchen können.
-ms.openlocfilehash: 15b42c9d3689a73c865be53bb29f298fcbf896bd
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 54a143ea0960bf56a0d1c5224658bea404c7621e
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281042"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52301716"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Verwenden der Microsoft Search zum Suchen von Themen in Microsoft Viva Topics
 
@@ -36,7 +36,7 @@ Die Antwort des Themas wird angezeigt:
 
 Die Themenseite kann auch dann in den Suchergebnissen angezeigt werden, wenn die Antwortkarte des Themas nicht angezeigt wird.
 
-In den Suchergebnissen in Word und PowerPoint wird auch die Themaantwort angezeigt, wenn eine gefunden wird.
+Die Suchergebnisse in Word, PowerPoint, Outlook und Excel zeigen auch die Antwort des Themas an, wenn eine gefunden wird.
 
 
 ## <a name="acronyms"></a>Akronyme

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 77ff780d-ab19-4553-adea-09cb65ad0f1f
 description: Verschaffen Sie sich einen Überblick darüber, wie Ihre Organisation Microsoft 365 dienste zur Kommunikation und Zusammenarbeit einnimmt.
-ms.openlocfilehash: 7d267dcbbb35a03794567991fddb2e3a573d47dc
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: ac54e8bbc24393b7140fbc32efd48047beca2a1c
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297392"
+ms.locfileid: "52301740"
 ---
 # <a name="microsoft-365-usage-analytics"></a>Analysen zur Nutzung von Microsoft 365
 
@@ -89,6 +89,9 @@ Benutzeraktivitätsberichte sind für bestimmte einzelne Dienste verfügbar. Die
 Es ist nicht kostenlos, Sie benötigen eine Power BI Pro Lizenz. Weitere Informationen finden [Sie unter Voraussetzungen](/power-bi/service-template-apps-install-distribute#prerequisites) für die Installation, Anpassung und Verteilung einer Vorlagen-App.
 
 Weitere Informationen zum Freigeben der Dashboards für andere Finden Sie unter [Freigeben von Dashboards und Berichten](/power-bi/service-how-to-collaborate-distribute-dashboards-reports#share-dashboards-and-reports).
+### <a name="is-the-usage-summary-reports-reader-role-enough-to-view-the-usage-analytics"></a>Ist die Rolle "Leser für Verwendungszusammenfassungsberichte" ausreichend, um die Verwendungsanalyse anzeigen zu können?
+
+Die Leserrolle Verwendungszusammenfassungsberichte ermöglicht nur den Zugriff auf Aggregate auf Mandantenebene in Microsoft 365 Verwendungsanalyse.  Die Leserrolle Berichteleser oder Verwendungszusammenfassungsberichte wird jedem empfohlen, der für die Änderungsverwaltung und -einführung zuständig ist, aber nicht unbedingt ein IT-Administrator ist.
 
 ### <a name="who-can-connect-to-microsoft-365-usage-analytics"></a>Wer kann eine Verbindung zu Microsoft 365-Nutzungsanalysen herstellen?
 

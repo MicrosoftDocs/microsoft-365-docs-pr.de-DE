@@ -14,22 +14,22 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Übersicht über Viva-Themen.
-ms.openlocfilehash: 1d66751d55c0144149fa8325e89be404e3df19ed
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: ecd090036f35a3cfdaffe532c800244c8174183b
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281029"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302124"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics – Übersicht 
 
-Viva Topics verwendet Microsoft AI-Technologie, Microsoft 365, Microsoft Graph, Suche und andere Komponenten und Dienste, um Ihren Benutzern Wissen in Microsoft 365-Apps zu vermitteln, die sie täglich verwenden, beginnend mit SharePoint modernen Seiten, Microsoft Search und Search in Word und PowerPoint.
+Viva Topics verwendet Microsoft AI-Technologie, Microsoft 365, Microsoft Graph, Suche und andere Komponenten und Dienste, um Ihren Benutzern Wissen in Microsoft 365-Apps zu vermitteln, die sie täglich verwenden, beginnend mit SharePoint modernen Seiten, Microsoft Search und Search in Word, PowerPoint, Outlook und Excel.
 
-</br>
+<br/>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LhZP]  
 
-</br>
+<br/>
 
 Viva Topics hilft bei der Lösung eines wichtigen Geschäftsproblems in vielen Unternehmen – indem Sie die Informationen für Benutzer bereitstellen, wenn diese benötigt werden. Beispielsweise müssen neue Mitarbeiter schnell viele neue Informationen lernen und beim Lesen von Unternehmensinformationen auf Begriffe stoßen, über die sie nichts wissen. Um mehr zu erfahren, muss der Benutzer möglicherweise seine Aktivitäten unterbrechen und wertvolle Zeit damit verbringen, nach Details zu suchen, z. B. nach Informationen über den Begriff, wer in der Organisation Fachexperte ist, und möglicherweise nach Websites und Dokumenten im Zusammenhang mit dem Begriff.
 
@@ -42,7 +42,7 @@ Wenn ein Thema in Inhalten auf SharePoint-Nachrichten und -Seiten erwähnt wird,
 
    ![Themenhighlights](../media/knowledge-management/saturn.png) 
 
-Wenn Sie Die Suche in Word oder PowerPoint, entweder über das Suchfeld oder durch Auswählen von **Suchen** im Kontextmenü verwenden, werden die angezeigten Ergebnisse möglicherweise auch die Themenzusammenfassung angezeigt.
+Wenn Sie Die Suche in Word, PowerPoint, Outlook oder Excel verwenden, entweder über das  Suchfeld oder durch Auswählen von Suchen im Kontextmenü, werden die angezeigten Ergebnisse möglicherweise auch die Themenzusammenfassung angezeigt.
 
    ![Screenshot der Suche in Word über das Suchfeld.](../media/knowledge-management/word-search-2.png)
 
@@ -71,7 +71,7 @@ Wenn ein Thema identifiziert wird und KI feststellt, dass es über genügend Inf
 
 Ihre Wissensmanager können wählen, ob sie alle SharePoint-Sites in Ihrem Mandanten nach Themen durchsuchen oder nur bestimmte auswählen möchten.
 
-Siehe [Themenentdeckung und Kuration](./topic-experiences-discovery-curation.md)
+Weitere [Informationen finden Sie unter Topic discovery and curation](./topic-experiences-discovery-curation.md).
 
 ## <a name="roles"></a>Rollen
 
@@ -97,7 +97,7 @@ Wissensverwalter können:
 
 - Themen bestätigen oder entfernen, die in Ihrem Mandanten entdeckt wurden.
 - Neue Themen nach Bedarf manuell erstellen (z. B. wenn nicht genügend Informationen bereitgestellt wurden, um über KI erkannt zu werden).
-- Vorhandene Themenseiten bearbeiten.</br>
+- Vorhandene Themenseiten bearbeiten.<br/>
 
 Weitere Informationen finden Sie unter [Verwalten von Themen im Themencenter](manage-topics.md).  
 
@@ -125,7 +125,8 @@ Benutzer, denen Sie Zugriff gewähren, um Themen in ihrer täglichen Arbeit anzu
 
 Darüber hinaus können Benutzer mit entsprechenden Berechtigungen Elemente wie die Yammer-Konversation, die für ein Thema relevant sind, mit Tags versehen und einem bestimmten Thema hinzufügen. 
 
-Siehe [Themenentdeckung und Kuration](./topic-experiences-discovery-curation.md)
+Weitere [Informationen finden Sie unter Topic discovery and curation](./topic-experiences-discovery-curation.md).
 
-
-## <a name="see-also"></a>Weitere Informationen:
+<!--
+## See also
+-->

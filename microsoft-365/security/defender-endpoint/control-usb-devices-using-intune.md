@@ -12,12 +12,12 @@ ms.reviewer: dansimp
 manager: dansimp
 audience: ITPro
 ms.technology: mde
-ms.openlocfilehash: 4d5479336588a78599f8e8a868503257964adb3a
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: eb7043451c4d80e3eca8b0703703ac6d7a459161
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893831"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302088"
 ---
 # <a name="how-to-control-usb-devices-and-other-removable-media-using-microsoft-defender-for-endpoint"></a>Steuern von USB-Geräten und anderen Wechselmedien mithilfe von Microsoft Defender for Endpoint
 
@@ -28,10 +28,10 @@ Microsoft [empfiehlt](https://aka.ms/devicecontrolblog)einen mehrschichtigen Ans
 1. [Entdecken Sie plug and play connected events for peripherals in Microsoft Defender for Endpoint Advanced Hunting](#discover-plug-and-play-connected-events). Identifizieren oder untersuchen Sie verdächtige Nutzungsaktivitäten.
 
 2. Konfigurieren, um nur bestimmte Wechselmedien zu erlauben oder zu blockieren und Bedrohungen zu verhindern.
-    1. [Zulassen oder Blockieren von](#allow-or-block-removable-devices) Wechselmedien basierend auf einer differenzierten Konfiguration, um schreibzugriff auf Wechseldatenträger zu verweigern und Geräte mithilfe von USB-Geräte-IDs zu genehmigen oder zu verweigern. Flexible Richtlinienzuweisung von Geräteinstallationseinstellungen basierend auf einer Einzelnen oder Gruppe von Azure Active Directory (Azure AD)-Benutzern und -Geräten.
+    1. [Zulassen oder Blockieren von](#allow-or-block-removable-devices) Wechselmedien basierend auf einer differenzierten Konfiguration, um schreibzugriff auf Wechseldatenträger zu verweigern und Geräte mithilfe von USB-Geräte-IDs zu genehmigen oder zu verweigern. Flexible Richtlinienzuweisung von Geräteinstallationseinstellungen basierend auf einer person oder einer Gruppe von Azure Active Directory (Azure AD)-Benutzern und -Geräten.
 
     2. [Verhindern Von Wechselmedien eingeführte](#prevent-threats-from-removable-storage) Bedrohungen durch Wechselmedien, indem Sie:  
-        - Microsoft Defender Antivirus Real-Time Protection (RTP), um Wechseldatenträger auf Schadsoftware zu überprüfen.  
+        - Microsoft Defender Antivirus Echtzeitschutz (Real-Time Protection, RTP) zum Überprüfen des Wechselspeichers auf Schadsoftware.  
         - Die Attack Surface Reduction (ASR)-USB-Regel zum Blockieren nicht vertrauenswürdiger und nicht signierter Prozesse, die über USB ausgeführt werden.  
         - Schutzeinstellungen für den direkten Arbeitsspeicherzugriff (Direct Memory Access, DMA), um DMA-Angriffe zu mindern, einschließlich Kernel-DMA-Schutz für Thunderbolt und Blockieren von DMA, bis sich ein Benutzer meldet.  
 
@@ -40,14 +40,14 @@ Microsoft [empfiehlt](https://aka.ms/devicecontrolblog)einen mehrschichtigen Ans
 4. [Reagieren Sie auf Bedrohungen](#respond-to-threats) von Peripheriegeräten in Echtzeit basierend auf den von jedem Peripheriegerät gemeldeten Eigenschaften.
 
 >[!Note]
->Diese Maßnahmen zur Bedrohungsminderung verhindern, dass Schadsoftware in Ihre Umgebung kommt. Um Unternehmensdaten vor dem Verlassen Ihrer Umgebung zu schützen, können Sie auch Maßnahmen zur Verhinderung von Datenverlust konfigurieren. Beispielsweise können Sie auf Windows 10-Geräten [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview.md) und [Windows Information Protection](/windows/security/information-protection/create-wip-policy-using-intune-azure.md)konfigurieren, die Unternehmensdaten verschlüsseln, auch wenn sie auf einem persönlichen Gerät gespeichert sind, oder den [Speicher-/WechseldatenträgerDiskDenyWriteAccess-CSP](/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) verwenden, um den Schreibzugriff auf Wechseldatenträger zu verweigern. Darüber hinaus können Sie Dateien auf [Windows-Geräten](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview) (einschließlich ihrer bereitgestellten USB-Geräte) mithilfe von Microsoft Defender for Endpoint und Azure Information Protection klassifizieren und schützen.
+>Diese Maßnahmen zur Bedrohungsminderung verhindern, dass Schadsoftware in Ihre Umgebung kommt. Um Unternehmensdaten vor dem Verlassen Ihrer Umgebung zu schützen, können Sie auch Maßnahmen zur Verhinderung von Datenverlust konfigurieren. Beispielsweise können Sie auf Windows 10-Geräten [BitLocker](/windows/security/information-protection/bitlocker/bitlocker-overview.md) und [Windows Information Protection](/windows/security/information-protection/create-wip-policy-using-intune-azure.md)konfigurieren, die Unternehmensdaten verschlüsseln, auch wenn sie auf einem persönlichen Gerät gespeichert sind, oder den [CSP Storage/RemovableDiskDenyWriteAccess](/windows/client-management/mdm/policy-csp-storage#storage-removablediskdenywriteaccess) verwenden, um den Schreibzugriff auf Wechseldatenträger zu verweigern. Darüber hinaus können Sie Dateien auf Windows [Geräten](/windows/security/threat-protection/windows-defender-atp/information-protection-in-windows-overview) (einschließlich ihrer bereitgestellten USB-Geräte) mithilfe von Microsoft Defender for Endpoint und Azure Information Protection klassifizieren und schützen.
 
 ## <a name="discover-plug-and-play-connected-events"></a>Entdecken von verbundenen Plug -and-Play-Ereignissen
 
 Sie können verbundene Ereignisse in Microsoft Defender for Endpoint advanced hunting anzeigen und wiederverspielen, um verdächtige Nutzungsaktivitäten zu identifizieren oder interne Untersuchungen durchzuführen.
-Beispiele für Erweiterte Suchabfragen von Defender for Endpoint finden Sie im [GitHub-Repository von Microsoft Defender for Endpoint-Suchabfragen.](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries)
+Beispiele für erweiterte Suchabfragen von Defender for Endpoint finden Sie unter [Microsoft Defender for Endpoint hunting queries GitHub repository](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries).
 
-Beispielvorlagen für Power BI-Berichte sind für Microsoft Defender for Endpoint verfügbar, die Sie für erweiterte Suchabfragen verwenden können. Mit diesen Beispielvorlagen, einschließlich einer für die Gerätesteuerung, können Sie die Leistung der erweiterten Suche in Power BI integrieren. Weitere Informationen [finden Sie im GitHub-Repository](https://github.com/microsoft/MDATP-PowerBI-Templates) für PowerBI-Vorlagen. Weitere Informationen zur Power BI-Integration finden Sie unter Erstellen [benutzerdefinierter](/microsoft-365/security/defender-endpoint/api-power-bi) Berichte mit Power BI.
+Beispielvorlagen Power BI berichtsvorlagen sind für Microsoft Defender for Endpoint verfügbar, die Sie für erweiterte Suchabfragen verwenden können. Mit diesen Beispielvorlagen, einschließlich einer für die Gerätesteuerung, können Sie die Leistung der erweiterten Suche in Power BI. Weitere Informationen [finden GitHub Repository für PowerBI-Vorlagen.](https://github.com/microsoft/MDATP-PowerBI-Templates) Weitere Informationen zur integration finden Sie unter [Erstellen benutzerdefinierter Power BI](/microsoft-365/security/defender-endpoint/api-power-bi) mit Power BI.
 
 ## <a name="allow-or-block-removable-devices"></a>Zulassen oder Blockieren von Wechselmedien
 In der folgenden Tabelle wird beschrieben, wie Wechselmedien von Microsoft Defender for Endpoint basierend auf einer differenzierten Konfiguration zulässig oder blockiert werden können.
@@ -124,11 +124,11 @@ Wenn Sie die Installation einer Geräteklasse oder bestimmter Geräte verhindern
 > [!Note]
 > Die Richtlinien für die Geräteinstallation verhindern haben Vorrang vor den Richtlinien für die Zulässige Geräteinstallation.
 
-Mit der Richtlinie Installation von Geräten verhindern, die mit einer dieser **Geräte-IDs-Richtlinie** übereinstimmen, können Sie eine Liste der Geräte angeben, die von Windows nicht installiert werden können. 
+Mit der Richtlinie Installation von Geräten verhindern, die mit einer dieser **Geräte-IDs-Richtlinie** übereinstimmen, können Sie eine Liste der Geräte angeben, Windows nicht installiert werden können. 
 
 So verhindern Sie die Installation von Geräten, die mit diesen Geräte-IDs übereinstimmen: 
 
-1. [Suchen Sie nach der Geräte-ID](#look-up-device-id) für Geräte, die von Windows nicht installiert werden sollten.
+1. [Suchen Sie nach der Geräte-ID](#look-up-device-id) für Geräte, die sie Windows installieren möchten.
 
    ![Anbieter- oder Produkt-ID nachschauen](images/lookup-vendor-product-id.png)
 
@@ -158,7 +158,7 @@ Get-WMIObject -Class Win32_DiskDrive |
 Select-Object -Property * 
 ```
 
-Mit der Richtlinie Verhindern **der Installation von** Geräten mithilfe von Treibern, die diesen Geräteeinrichtungsklassen entsprechen, können Sie Geräteeinrichtungsklassen angeben, die von Windows nicht installiert werden können. 
+Mit **der Richtlinie** Verhindern der Installation von Geräten mithilfe von Treibern, die diesen Geräteeinrichtungsklassen entsprechen, können Sie Geräteeinrichtungsklassen angeben, Windows nicht installiert werden können. 
 
 So verhindern Sie die Installation bestimmter Geräteklassen: 
 
@@ -171,9 +171,9 @@ So verhindern Sie die Installation bestimmter Geräteklassen:
 
 ### <a name="block-installation-and-usage-of-removable-storage"></a>Blockieren der Installation und Verwendung von Wechselspeicher
 
-1. Melden Sie sich im [Microsoft Azure-Portal](https://portal.azure.com/) an.
+1. Melden Sie sich beim [Microsoft Endpoint Manager Admin Center an.](https://endpoint.microsoft.com/)
 
-2. Klicken **Sie auf**  >  **Intune-Gerätekonfigurationsprofile**  >    >  **Profil erstellen.**
+2. Klicken **Sie auf**  >  **Gerätekonfigurationsprofile**  >  **Profil erstellen.**
 
     > [!div class="mx-imgBorder"]
     > ![Erstellen eines Gerätekonfigurationsprofils](images/create-device-configuration-profile.png)
@@ -226,7 +226,7 @@ Sie können die Installation der verbotenen Peripheriegeräte mit übereinstimme
 
 ### <a name="limit-services-that-use-bluetooth"></a>Einschränken von Diensten, die Bluetooth
 
-Mithilfe von Intune können Sie die Dienste einschränken, die Bluetooth über die ["Bluetooth dienste" verwenden können.](/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) Der Standardstatus "Bluetooth zugelassene Dienste" bedeutet, dass alles zulässig ist.  Sobald ein Dienst hinzugefügt wird, wird dies zur zulässigen Liste. Wenn der Kunde die Werte Keyboards und Mice hinzufügt und die Dateiübertragungs-GUIDs nicht hinzufügt, sollte die Dateiübertragung blockiert werden.
+Mithilfe von Intune können Sie die Dienste einschränken, die Bluetooth über die ["Bluetooth dienste" verwenden können.](/windows/client-management/mdm/policy-csp-bluetooth#servicesallowedlist-usage-guide) Der Standardstatus "Bluetooth dienste" bedeutet, dass alles zulässig ist.  Sobald ein Dienst hinzugefügt wird, wird dies zur zulässigen Liste. Wenn der Kunde die Werte Keyboards und Mice hinzufügt und die Dateiübertragungs-GUIDs nicht hinzufügt, sollte die Dateiübertragung blockiert werden.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot der Bluetooth Einstellungsseite](images/bluetooth.png)
@@ -255,23 +255,23 @@ Weitere Informationen zum Steuern von USB-Geräten finden Sie im [Microsoft Defe
 
 | Steuerelement  | Beschreibung |
 |----------|-------------|
-| [Aktivieren der Microsoft Defender Antivirus-Überprüfung](#enable-microsoft-defender-antivirus-scanning) | Aktivieren Sie die Microsoft Defender Antivirus-Überprüfung für Echtzeitschutz oder geplante Scans.|
+| [Aktivieren Microsoft Defender Antivirus Überprüfung](#enable-microsoft-defender-antivirus-scanning) | Aktivieren Microsoft Defender Antivirus Überprüfung auf Echtzeitschutz oder geplante Scans.|
 | [Blockieren nicht vertrauenswürdiger und nicht signierter Prozesse auf USB-Peripheriegeräten](#block-untrusted-and-unsigned-processes-on-usb-peripherals) | Blockieren sie USB-Dateien, die nicht signiert oder nicht vertrauenswürdig sind. |
 | [Schutz vor Direct Memory Access (DMA)-Angriffen](#protect-against-direct-memory-access-dma-attacks) | Konfigurieren Von Einstellungen zum Schutz vor DMA-Angriffen. |
 
 >[!NOTE]
 >Da ein nicht autorisiertes USB-Peripheriegerät über Firmware verfügen kann, die seine USB-Eigenschaften spooft, wird empfohlen, nur speziell genehmigte USB-Peripheriegeräte zu erlauben und die Benutzer zu beschränken, die darauf zugreifen können.
 
-### <a name="enable-microsoft-defender-antivirus-scanning"></a>Aktivieren der Microsoft Defender Antivirus-Überprüfung
+### <a name="enable-microsoft-defender-antivirus-scanning"></a>Aktivieren Microsoft Defender Antivirus Überprüfung
 
-Der Schutz autorisierter Wechseldatenträger [](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus) mit Microsoft Defender Antivirus erfordert die Aktivierung des Echtzeitschutzes oder die Planung von Scans und das Konfigurieren von Wechseldatenträgern für Scans.
+Der Schutz autorisierter Wechseldatenträger mit [](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus) Microsoft Defender Antivirus erfordert die Aktivierung des Echtzeitschutzes oder die Planung von Scans und das Konfigurieren von Wechseldatenträgern für Scans.
 
 - Wenn der Echtzeitschutz aktiviert ist, werden Die Dateien überprüft, bevor auf sie zugegriffen und ausgeführt wird. Der Überprüfungsbereich umfasst alle Dateien, einschließlich der Dateien auf angeschlossenen Wechselmedien wie USB-Laufwerken. Sie können optional ein [PowerShell-Skript](/samples/browse/?redirectedfrom=TechNet-Gallery) ausführen, um eine benutzerdefinierte Überprüfung eines USB-Laufwerks durchzuführen, nachdem es bereitgestellt wurde, sodass Microsoft Defender Antivirus alle Dateien auf einem Wechselmedium scannt, sobald das Wechselmedium angeschlossen ist. Es wird jedoch empfohlen, den Echtzeitschutz zu aktivieren, um die Scanleistung zu verbessern, insbesondere bei großen Speichergeräten.
 
 - Wenn geplante Scans verwendet werden, müssen Sie die Einstellung DisableRemovableDriveScanning deaktivieren (standardmäßig aktiviert), um das Wechselgerät während einer vollständigen Überprüfung zu überprüfen. Wechselmedien werden während einer schnellen oder benutzerdefinierten Überprüfung unabhängig von der DisableRemovableDriveScanning-Einstellung überprüft.
 
 >[!NOTE]
->Es wird empfohlen, die Echtzeitüberwachung für die Überprüfung zu aktivieren. In Intune können Sie die Echtzeitüberwachung für Windows 10 unter **Geräteeinschränkungen**  >  **Konfigurieren der** Microsoft Defender  >  **Antivirus**  >  **Echtzeitüberwachung aktivieren.**
+>Es wird empfohlen, die Echtzeitüberwachung für die Überprüfung zu aktivieren. In Intune können Sie die Echtzeitüberwachung für Windows 10 unter **Geräteeinschränkungen**  >  **konfigurieren**  >  **Microsoft Defender Antivirus**  >  **Echtzeitüberwachung aktivieren.**
 
 <!-- Need to build out point in the preceding note. 
 -->
@@ -283,13 +283,13 @@ Um Infektionen zu verhindern, kann ein Unternehmen NICHT signierte oder nicht ve
 Alternativ können Unternehmen das Überwachungsfeature von Regeln zur Reduzierung der Angriffsfläche nutzen, um die Aktivität nicht vertrauenswürdiger und nicht signierter Prozesse zu überwachen, die auf einem USB-Peripheriegerät ausgeführt werden. [](/microsoft-365/security/defender-endpoint/attack-surface-reduction)
 Dazu können Sie nicht vertrauenswürdige und **nicht signierte** Prozesse, die von USB ausgeführt werden, entweder **auf Nur blockieren** oder **nur** überwachen festlegen.
 Mit dieser Regel können Administratoren verhindern, dass nicht signierte oder nicht vertrauenswürdige ausführbare Dateien von USB-Wechseldatenträgern ausgeführt werden, einschließlich SD-Karten.
-Zu den betroffenen Dateitypen gehören ausführbare Dateien (z. B. EXE, DLL oder SCR) und Skriptdateien wie powerShell (.ps), VisualBasic (.vbs) oder JavaScript -Dateien (JS).
+Zu den betroffenen Dateitypen gehören ausführbare Dateien (z. B. .exe, .dll oder SCR) und Skriptdateien wie powerShell (.ps), VisualBasic (VBS) oder JavaScript (.js).
 
 Diese Einstellungen erfordern [die Aktivierung des Echtzeitschutzes.](/microsoft-365/security/defender-endpoint/configure-real-time-protection-microsoft-defender-antivirus)
 
 1. Melden Sie sich beim [Microsoft Endpoint Manager an.](https://endpoint.microsoft.com/)
 
-2. Klicken **Sie auf Geräte**  >    >  **Windows-Konfigurationsrichtlinien Profil**  >  **erstellen.** 
+2. Klicken **Sie auf** Geräte  >  **Windows**  >  **Konfigurationsrichtlinien Profil**  >  **erstellen**. 
 
     ![Erstellen eines Gerätekonfigurationsprofils](images/create-device-configuration-profile.png)
 
@@ -312,13 +312,13 @@ Diese Einstellungen erfordern [die Aktivierung des Echtzeitschutzes.](/microsoft
 
 DMA-Angriffe können zur Offenlegung vertraulicher Informationen auf einem PC oder sogar zur Einschleusung von Schadsoftware führen, mit der Angreifer den Sperrbildschirm umgehen oder PCs remote steuern können. Die folgenden Einstellungen helfen, DMA-Angriffe zu verhindern:
 
-1. Ab Windows 10, Version 1803, hat Microsoft [den Kernel-DMA-Schutz für "Thunderbolt"](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md) eingeführt, um systemeigenen Schutz vor DMA-Angriffen über Thunderbolt-Ports zu bieten. Kernel-DMA-Schutz für Thunderbolt wird von Systemherstellern aktiviert und kann von Benutzern nicht aktiviert oder deaktiviert werden.
+1. Ab Windows 10 Version 1803 hat Microsoft [den Kernel-DMA-Schutz](/windows/security/information-protection/kernel-dma-protection-for-thunderbolt.md) für Thunderbolt eingeführt, um systemeigenen Schutz vor DMA-Angriffen über Thunderbolt-Ports zu bieten. Kernel-DMA-Schutz für Thunderbolt wird von Systemherstellern aktiviert und kann von Benutzern nicht aktiviert oder deaktiviert werden.
 
-   Ab Windows 10, Version 1809, können Sie die Ebene des Kernel-DMA-Schutzes anpassen, indem Sie den [DMA Guard CSP konfigurieren.](/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy) Dies ist ein zusätzliches Steuerelement für Peripheriegeräte, die keine Gerätespeicherisolation unterstützen (auch als DMA-remapping bekannt). Mit der Speicherisolation kann das Betriebssystem die E/A-Speicherverwaltungseinheit (IOMMU) eines Geräts nutzen, um nicht zugelassene E/A- oder Arbeitsspeicherzugriffe über das Peripheriegerät zu blockieren (Speicher-Sandboxing). Anders ausgedrückt: Das Betriebssystem weist dem Peripheriegerät einen bestimmten Speicherbereich zu. Wenn das Peripheriegerät versucht, den Speicher außerhalb des zugewiesenen Bereichs zu lesen/zu schreiben, blockiert das Betriebssystem ihn.
+   Ab Windows 10 Version 1809 können Sie die Ebene des Kernel-DMA-Schutzes anpassen, indem Sie den [DMA Guard CSP konfigurieren.](/windows/client-management/mdm/policy-csp-dmaguard#dmaguard-deviceenumerationpolicy) Dies ist ein zusätzliches Steuerelement für Peripheriegeräte, die keine Gerätespeicherisolation unterstützen (auch als DMA-remapping bekannt). Mit der Speicherisolation kann das Betriebssystem die E/A-Speicherverwaltungseinheit (IOMMU) eines Geräts nutzen, um nicht zugelassene E/A- oder Arbeitsspeicherzugriffe über das Peripheriegerät zu blockieren (Speicher-Sandboxing). Anders ausgedrückt: Das Betriebssystem weist dem Peripheriegerät einen bestimmten Speicherbereich zu. Wenn das Peripheriegerät versucht, den Speicher außerhalb des zugewiesenen Bereichs zu lesen/zu schreiben, blockiert das Betriebssystem ihn.
 
    Peripheriegeräte, die die Gerätespeicherisolation unterstützen, können immer eine Verbindung herstellen. Peripheriegeräte, die nicht blockiert, zugelassen oder nur zugelassen werden können, nachdem sich der Benutzer (Standard) meldet.
 
-2. Unter Windows 10-Systemen, die kernel-DMA-Schutz nicht unterstützen, können Sie:
+2. Auf Windows 10 Systemen, die den Kernel-DMA-Schutz nicht unterstützen, können Sie:
 
    - [DMA blockieren, bis sich ein Benutzer meldet](/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
    - [Blockieren aller Verbindungen über die Thunderbolt-Ports (einschließlich USB-Geräte)](https://support.microsoft.com/help/2516445/blocking-the-sbp-2-driver-and-thunderbolt-controllers-to-reduce-1394-d)
@@ -333,7 +333,7 @@ Sie können benutzerdefinierte Warnungen und Reaktionsaktionen mit dem WDATP-Con
 
 **Bedrohungsscan** auf USB-Geräten.
 
-**Einschränken der Ausführung** aller Anwendungen auf dem Computer mit Ausnahme eines vordefinierten MDATP-Connectors ist einer von mehr als 200 vordefinierten Connectors, einschließlich Outlook, Teams, Slack usw. Benutzerdefinierte Connectors können erstellt werden.
+**Einschränken** der Ausführung aller Anwendungen auf dem Computer mit Ausnahme eines vordefinierten MDATP-Connectors ist einer von über 200 vordefinierten Connectors, einschließlich Outlook, Teams, Slack usw. Benutzerdefinierte Connectors können erstellt werden.
 - [Weitere Informationen zu Reaktionsaktionen des WDATP-Connectors](/connectors/wdatp/)
 
 **Reaktionsaktion für benutzerdefinierte Erkennungsregeln:** Aktionen auf Computer- und Dateiebene können angewendet werden.
@@ -343,9 +343,9 @@ Informationen zu Ereignissen der Gerätesteuerung und Beispiele zum Erstellen be
 
 ## <a name="respond-to-threats"></a>Reagieren auf Bedrohungen
 
-Sie können benutzerdefinierte Warnungen und automatische Reaktionsaktionen mit den benutzerdefinierten Erkennungsregeln von [Microsoft Defender for Endpoint erstellen.](/microsoft-365/security/defender-endpoint/custom-detection-rules) Reaktionsaktionen innerhalb der benutzerdefinierten Erkennung umfassen Aktionen auf Computer- und Dateiebene. Sie können auch Warnungen und automatische [Reaktionsaktionen](https://powerapps.microsoft.com/) mithilfe von PowerApps und [Flow mit](https://flow.microsoft.com/) dem Microsoft Defender for [Endpoint-Connector erstellen.](/connectors/wdatp/) Der Connector unterstützt Aktionen zur Untersuchung, Überprüfung von Bedrohungen und zum Einschränken ausgeführter Anwendungen. Es ist einer von mehr als 200 vordefinierten Connectors, einschließlich Outlook, Teams, Slack und mehr. Benutzerdefinierte Connectors können ebenfalls erstellt werden. Weitere Informationen zu Connectors finden Sie unter [Connectors.](/connectors/)
+Sie können benutzerdefinierte Warnungen und automatische Reaktionsaktionen mit den benutzerdefinierten Erkennungsregeln von [Microsoft Defender for Endpoint erstellen.](/microsoft-365/security/defender-endpoint/custom-detection-rules) Reaktionsaktionen innerhalb der benutzerdefinierten Erkennung umfassen Aktionen auf Computer- und Dateiebene. Sie können auch Warnungen und automatische Reaktionsaktionen mithilfe von [PowerApps](https://powerapps.microsoft.com/) und [Flow](https://flow.microsoft.com/) [Microsoft Defender for Endpoint Connector erstellen.](/connectors/wdatp/) Der Connector unterstützt Aktionen zur Untersuchung, Überprüfung von Bedrohungen und zum Einschränken ausgeführter Anwendungen. Es handelt sich um einen von mehr als 200 vordefinierten Connectors, einschließlich Outlook, Teams, Slack und mehr. Benutzerdefinierte Connectors können ebenfalls erstellt werden. Weitere Informationen zu Connectors finden Sie unter [Connectors.](/connectors/)
  
-Bei beiden Vorgehensweisen können Sie z. B. das Microsoft Defender Antivirus automatisch ausführen lassen, wenn ein USB-Gerät auf einem Computer bereitgestellt wird.
+Bei beiden Vorgehensweisen können Sie beispielsweise automatisch die Microsoft Defender Antivirus ausführen lassen, wenn ein USB-Gerät auf einem Computer installiert ist.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

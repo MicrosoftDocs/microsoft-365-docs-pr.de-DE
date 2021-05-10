@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5c7a2d943ec1813623065e70330b914a3911d1eb
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: a2bc36f9d3a3e9179f07662da8d97f4c55e72a24
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768998"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302052"
 ---
 # <a name="turn-on-network-protection"></a>Netzwerkschutz aktivieren
 
@@ -43,7 +43,7 @@ ms.locfileid: "51768998"
 
 2. Wählen **HKEY_LOCAL_MACHINE** im Seitenmenü aus
 
-3. Navigieren Sie durch die geschachtelten Menüs zu  >  **SOFTWARERichtlinien**  >  **Microsoft**  >  **Windows Defender**  >  **Windows Defender Exploit Guard** Network  >  **Protection**
+3. Navigieren Sie durch die geschachtelten Menüs zu  >  **SOFTWARERichtlinien**  >  **Microsoft**  >  **Windows Defender**  >  **Policy Manager** 
 
 4. Wählen **Sie EnableNetworkProtection** aus, um den aktuellen Status des Netzwerkschutzes auf dem Gerät zu sehen.
 
@@ -89,7 +89,7 @@ Verwenden Sie [den ./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection]
 
 2. Erstellen oder Bearbeiten eines [Konfigurationsprofils für den Endpunktschutz](/mem/intune/protect/endpoint-protection-configure)
 
-3. Wechseln **Sie unter Konfigurationseinstellungen** im Profilfluss zu **Microsoft Defender Exploit Guard** Network  >  **filtering**  >  **Network Protection**  >  **Enable** or **Audit only**
+3. Wechseln **Sie Einstellungen** im Profilfluss unter Netzwerkfilterung Netzwerkschutz aktivieren oder überwachen zu  >    >    >   **Microsoft Defender Exploit Guard Netzwerkfilterung aktivieren** oder überwachen
 
 ### <a name="group-policy"></a>Gruppenrichtlinien
 
@@ -101,17 +101,17 @@ Verwenden Sie das folgende Verfahren, um den Netzwerkschutz auf Computern mit Do
 
     Öffnen Sie auf einem In der [](https://technet.microsoft.com/library/cc731212.aspx)Domäne beigetretenen Gruppenrichtlinienverwaltungscomputer die Gruppenrichtlinienverwaltungskonsole, klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt, das Sie konfigurieren möchten, und wählen Sie **Bearbeiten aus.**
 
-2. Wechseln Sie **im Gruppenrichtlinienverwaltungs-Editor** zu **Computerkonfiguration,** und wählen Sie **Administrative Vorlagen aus.**
+2. Wechseln Sie im **Gruppenrichtlinien-Verwaltungs-Editor** zu **Computerkonfiguration**, und wählen Sie **Administrative Vorlagen** aus.
 
-3. Erweitern Sie die Struktur **auf Windows-Komponenten**  >  **Microsoft Defender Antivirus** Windows Defender Exploit  >  **Guard** Network  >  **Protection**.
+3. Erweitern Sie die **Struktur, Windows komponenten**  >  **Microsoft Defender Antivirus**  >  **Windows Defender Exploit Guard** Network Protection  >  **.**
 
 > [!NOTE]
-> Bei älteren Versionen von Windows kann der Gruppenrichtlinienpfad "Windows Defender Antivirus" anstelle von "Microsoft Defender Antivirus" sagen.
+> Bei älteren Versionen von Windows kann der Gruppenrichtlinienpfad "Windows Defender Antivirus" statt "Microsoft Defender Antivirus" sagen.
 
 4. Doppelklicken Sie auf die Einstellung Benutzer **und Apps am** Zugriff auf gefährliche Websites hindern, und legen Sie die Option auf Aktiviert **.** Im Abschnitt Optionen müssen Sie eine der folgenden Optionen angeben:
     * **Blockieren** – Benutzer können nicht auf schädliche IP-Adressen und Domänen zugreifen
     * **Disable (Standard)** – Das Netzwerkschutzfeature funktioniert nicht. Benutzer werden nicht am Zugriff auf schädliche Domänen blockiert
-    * **Überwachungsmodus** : Wenn ein Benutzer eine schädliche IP-Adresse oder Domäne besucht, wird ein Ereignis im Windows-Ereignisprotokoll aufgezeichnet. Der Benutzer wird jedoch nicht am Besuch der Adresse blockiert.
+    * **Überwachungsmodus** – Wenn ein Benutzer eine schädliche IP-Adresse oder Domäne besucht, wird ein Ereignis im Ereignisprotokoll Windows aufgezeichnet. Der Benutzer wird jedoch nicht am Besuch der Adresse blockiert.
 
 > [!IMPORTANT]
 > Um den Netzwerkschutz vollständig zu aktivieren, müssen Sie  die Option Gruppenrichtlinie auf **Aktiviert** festlegen und im Dropdownmenü Optionen auch Blockieren auswählen.
