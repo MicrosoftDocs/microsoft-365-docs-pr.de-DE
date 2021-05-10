@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b275665c62368e87832bc0e863d03875039ba427
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 2e4ee234b18a42103d4e1a7014af54090cffb015
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548068"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296780"
 ---
 # <a name="contact-support-for-colombia"></a>Kontaktieren des Support für Kolumbien
 
-[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
+[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 01 800 518 1781

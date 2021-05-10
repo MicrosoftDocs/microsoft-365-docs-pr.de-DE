@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d0d449a35aad057dd84e52a1e454672750878b88
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: a87177597235fbc1f0c147a16b18a6557084473b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546700"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296047"
 ---
 # <a name="contact-support-for-ireland"></a>Kontaktieren des Support für Irland
 
-[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
+[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 1 800 995309
@@ -35,6 +35,6 @@ Englisch: Mo-Fr 9:00 bis 17:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefonnummer: 01 656 9837
+Alternative Telefon Nummer: 01 656 9837
 
 Es gelten die Ortstarife.

@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 615170c8fd6bc044bca41963502392ff2f3be57e
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 788641b549119229307a179dbfebed09b2a4c0b0
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547396"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296215"
 ---
 # <a name="contact-support-for-french-guiana"></a>Kontaktieren des Support für Französisch-Guiana
 
-[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
+[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 +1 312 843 5147

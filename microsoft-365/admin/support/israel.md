@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a1b25b1565a025f7815eede30ada87d1e0f18aff
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: b90dfb8708c3a7b9917d88cf6ea013b7dbfca3eb
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546667"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296035"
 ---
 # <a name="contact-support-for-israel"></a>Kontaktieren des Support für Israel
 
-[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
+[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 1 809 344 179

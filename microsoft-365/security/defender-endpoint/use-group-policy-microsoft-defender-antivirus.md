@@ -10,18 +10,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 04/13/2021
+ms.date: 05/07/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
 audience: ITPro
 ms.topic: how-to
-ms.openlocfilehash: 8db14b016491ac10872f29f04b8166e548d6c63b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 81cba445482b1fceb8bd520f2be88d55db2a47fb
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275336"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296731"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Verwenden von Gruppenrichtlinieneinstellungen zum Konfigurieren und Verwalten Microsoft Defender Antivirus
 
@@ -33,6 +33,8 @@ ms.locfileid: "52275336"
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 
 Sie können [Gruppenrichtlinien verwenden,](/windows/win32/srvnodes/group-policy) um Diebst Microsoft Defender Antivirus Endpunkten zu konfigurieren und zu verwalten.
+
+## <a name="configure-microsoft-defender-antivirus-using-group-policy"></a>Konfigurieren Microsoft Defender Antivirus mithilfe von Gruppenrichtlinien
 
 Im Allgemeinen können Sie das folgende Verfahren verwenden, um gruppenrichtlinieneinstellungen Microsoft Defender Antivirus zu konfigurieren oder zu ändern:
 
@@ -48,7 +50,12 @@ Im Allgemeinen können Sie das folgende Verfahren verwenden, um gruppenrichtlini
 
 6. [Stellen Sie das aktualisierte Gruppenrichtlinienobjekt wie gewohnt bereitstellen.](/windows/win32/srvnodes/group-policy) 
 
-In der folgenden Tabelle in diesem Thema sind die gruppenrichtlinieneinstellungen aufgeführt, die in Windows 10, Version 1703, verfügbar sind, und enthält Links zum entsprechenden Thema in dieser Dokumentationsbibliothek (sofern zutreffend).
+## <a name="group-policy-settings-and-resources"></a>Gruppenrichtlinieneinstellungen und -ressourcen
+
+In der folgenden Tabelle in diesem Thema sind die gruppenrichtlinieneinstellungen aufgeführt, die in Windows 10, Version 1703, verfügbar sind, und enthält Links zum entsprechenden Thema in dieser Dokumentationsbibliothek (sofern zutreffend). 
+
+> [!TIP]
+> [Laden Sie das Gruppenrichtlinien-Einstellungen-Referenzkalkulationstabelle für Windows 10 May 2020 Update (2004) herunter.](https://www.microsoft.com/download/101451) In dieser Tabellenkalkulation sind die Richtlinieneinstellungen für Computer- und Benutzerkonfigurationen aufgeführt, die in den administrativen Vorlagendateien enthalten sind, die für Windows 10 May 2020 Update (2004) ausgeliefert wurden. Sie können diese Richtlinieneinstellungen konfigurieren, wenn Sie Gruppenrichtlinienobjekte bearbeiten.
 
 | Speicherort | Setting | Artikel |
 |:---|:---|:---|
@@ -61,14 +68,14 @@ In der folgenden Tabelle in diesem Thema sind die gruppenrichtlinieneinstellunge
 | Ausschlüsse | Prozessausschlüsse | [Konfigurieren und Überprüfen von Ausschlüssen in Microsoft Defender Antivirus Scans](configure-exclusions-microsoft-defender-antivirus.md) | 
 | Ausschlüsse | Automatische Ausschlüsse deaktivieren | [Konfigurieren und Überprüfen von Ausschlüssen in Microsoft Defender Antivirus Scans](configure-exclusions-microsoft-defender-antivirus.md) |
 | MAPS | Konfigurieren des Features "Bei erster Sicht blockieren" | [Aktivieren von Block bei erster Sicht](configure-block-at-first-sight-microsoft-defender-antivirus.md) |
-| MAPS | Microsoft MAPS beitreten | [Aktivieren des in der Cloud übermittelten Schutzes](enable-cloud-protection-microsoft-defender-antivirus.md) |
-| MAPS | Senden von Dateibeispielen, wenn eine weitere Analyse erforderlich ist | [Aktivieren des in der Cloud übermittelten Schutzes](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| MAPS | Microsoft MAPS beitreten | [Aus der Cloud bereitgestellten Schutz aktivieren](enable-cloud-protection-microsoft-defender-antivirus.md) |
+| MAPS | Senden von Dateibeispielen, wenn eine weitere Analyse erforderlich ist | [Aus der Cloud bereitgestellten Schutz aktivieren](enable-cloud-protection-microsoft-defender-antivirus.md) |
 | MAPS | Konfigurieren der Außerkraftsetzung lokaler Einstellungen für die Berichterstellung an Microsoft MAPS | [Verhindern oder Zulassen, dass Benutzer Richtlinieneinstellungen lokal ändern](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | MpEngine | Konfigurieren der erweiterten Cloudüberprüfung | [Konfigurieren des Timeoutzeitraums für Cloudblockierung](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) |
 | MpEngine | Auswählen der Cloudschutzstufe | [Stufe des über die Cloud bereitgestellten Schutzes festlegen](specify-cloud-protection-level-microsoft-defender-antivirus.md) |
-| Netzwerkinspektionssystem | Angeben zusätzlicher Definitionssätze für die Überprüfung des Netzwerkdatenverkehrs | Nicht mehr relevant |
-| Netzwerkinspektionssystem | Aktivieren der Definitionentgrenzung | Nicht mehr relevant |
-| Netzwerkinspektionssystem | Aktivieren der Protokollerkennung | Nicht mehr relevant |
+| Netzwerkinspektionssystem | Angeben zusätzlicher Definitionssätze für die Überprüfung des Netzwerkdatenverkehrs | [Angeben zusätzlicher Definitionssätze für die Überprüfung des Netzwerkdatenverkehrs](specify-additional-definitions-network-traffic-inspection-mdav.md) |
+| Netzwerkinspektionssystem | Aktivieren der Definitionentgrenzung | [Konfigurieren der Definitionentgrenzung](turn-on-definition-retirement.md)  |
+| Netzwerkinspektionssystem | Aktivieren der Protokollerkennung | [Aktivieren der Protokollerkennung](turn-on-protocol-recognition.md)  |
 | Quarantäne | Konfigurieren der Außerkraftsetzung lokaler Einstellungen für das Entfernen von Elementen aus dem Quarantäneordner | [Verhindern oder Zulassen, dass Benutzer Richtlinieneinstellungen lokal ändern](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Quarantäne | Konfigurieren des Entfernens von Elementen aus dem Quarantäneordner | [Konfigurieren der Korrektur für Microsoft Defender Antivirus Scans](configure-remediation-microsoft-defender-antivirus.md) |
 | Echtzeitschutz | Konfigurieren der Außerkraftsetzung lokaler Einstellungen für Überwachungsdatei- und Programmaktivitäten auf Ihrem Computer | [Verhindern oder Zulassen, dass Benutzer Richtlinieneinstellungen lokal ändern](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
@@ -144,8 +151,7 @@ In der folgenden Tabelle in diesem Thema sind die gruppenrichtlinieneinstellunge
 | Risiken | Angeben von Warnungsstufen für Bedrohungen, bei denen beim Erkennen keine Standardaktion ergriffen werden soll | [Konfigurieren der Korrektur für Microsoft Defender Antivirus Scans](configure-remediation-microsoft-defender-antivirus.md) |
 | Risiken | Angeben von Bedrohungen, bei denen die Standardaktion beim Erkennen nicht ergriffen werden soll | [Konfigurieren der Korrektur für Microsoft Defender Antivirus Scans](configure-remediation-microsoft-defender-antivirus.md) |
 
-
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Referenzthemen für Verwaltungs- und Konfigurationstools](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

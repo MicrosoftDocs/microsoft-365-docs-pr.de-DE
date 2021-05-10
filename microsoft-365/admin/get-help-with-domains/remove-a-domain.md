@@ -22,18 +22,18 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Erfahren Sie, wie Sie eine alte Domäne aus Microsoft 365 entfernen und Benutzer und Gruppen in eine andere Domäne verschieben.
-ms.openlocfilehash: 916730975e9e17c42b01d9fa0ff55b3cb7078f66
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: ca12a886c508024bf39ae9e619744a355376a80d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470965"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296707"
 ---
 # <a name="remove-a-domain"></a>Entfernen einer Domäne
   
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
-Entfernen Sie Ihre Domäne, weil Sie sie einem anderen Microsoft 365-Abonnementplan hinzufügen möchten? Oder möchten Sie Ihr Abonnement einfach nur kündigen? Sie können [Ihren Plan oder Ihr Abonnement ändern](../../commerce/subscriptions/switch-to-a-different-plan.md) oder [Ihr Abonnement kündigen](../../commerce/subscriptions/cancel-your-subscription.md).
+Entfernen Sie Ihre Domäne, weil Sie sie zu einem anderen Abonnementplan Microsoft 365 möchten? Oder möchten Sie Ihr Abonnement einfach nur kündigen? Sie können [Ihren Plan oder Ihr Abonnement ändern](../../commerce/subscriptions/switch-to-a-different-plan.md) oder [Ihr Abonnement kündigen](../../commerce/subscriptions/cancel-your-subscription.md).
   
 ### <a name="step-1-move-users-to-another-domain"></a>Schritt 1: Verschieben von Benutzern in eine andere Domäne
 
@@ -203,7 +203,7 @@ Sie können Sie auch PowerShell verwenden, um Benutzer in eine andere Domäne zu
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>Wie lange dauert es, bis eine Domäne entfernt wurde?
 
-Es kann bis zu 5 Minuten dauern, bis Microsoft 365 eine Domäne entfernt, wenn an vielen Stellen wie Sicherheitsgruppen, Verteilerlisten, Benutzern und Microsoft 365-Gruppen nicht auf sie verwiesen wird. Wenn es viele Verweise gibt, die die Domäne verwenden, kann es mehrere Stunden (pro Tag) dauern, bis die Domäne entfernt wird.
+Es kann bis zu 5 Minuten dauern, bis Microsoft 365 eine Domäne entfernt, wenn nicht an vielen Stellen wie Sicherheitsgruppen, Verteilerlisten, Benutzern und anderen Gruppen Microsoft 365 wird. Wenn es viele Verweise gibt, die die Domäne verwenden, kann es mehrere Stunden (pro Tag) dauern, bis die Domäne entfernt wird.
   
 Wenn Sie über Hunderte oder Tausende von Benutzern verfügen, verwenden Sie PowerShell, um alle Benutzer abzufragen und in eine andere Domäne zu verschieben. Andernfalls könnte es passieren, dass einige Benutzer der Benutzeroberfläche vergessen werden. Wenn dann das Entfernen der Domäne nicht möglich ist, wissen Sie nicht, warum. Weitere Informationen finden Sie unter [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Wenn die Standarddomäne festlegen möchten, verwenden Sie [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
@@ -214,7 +214,7 @@ Wenn Sie über Hunderte oder Tausende von Benutzern verfügen, verwenden Sie Pow
 > [!NOTE]
 > Sie können die [".onmicrosoft.com"](../setup/domains-faq.yml)-Domäne nicht aus Ihrem Konto entfernen. Wenn Sie eine Domäne entfernen, werden Benutzerkonten wieder zur Adresse ".onmicrosoft.com" als primärer SMTP/UserprincipalName zurückgesetzt.
   
-Funktioniert es immer noch nicht? Die Domäne muss möglicherweise manuell entfernt werden. [Rufen Sie uns an](../contact-support-for-business-products.md), und wir helfen Ihnen bei der Problemlösung!
+Funktioniert es immer noch nicht? Die Domäne muss möglicherweise manuell entfernt werden. [Rufen Sie uns an](../../business-video/get-help-support.md), und wir helfen Ihnen bei der Problemlösung!
   
 ::: moniker-end
 

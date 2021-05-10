@@ -19,72 +19,72 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
-description: Ermitteln Sie, ob Der Mandant und die Benutzer die Anforderungen erfüllen, sodass Sie die zentrale Bereitstellung zum Bereitstellen von Office-Add-Ins verwenden können.
-ms.openlocfilehash: 7eb15563ca11e8fcce17dc6b505347475d18641e
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+description: Ermitteln Sie, ob Der Mandant und die Benutzer die Anforderungen erfüllen, sodass Sie die zentrale Bereitstellung zum Bereitstellen Office-Add-Ins verwenden können.
+ms.openlocfilehash: 8f73deb1059097640946fcf7dad1ca97cb2831b1
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860691"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296719"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert
 
-Die zentrale Bereitstellung ist die empfohlene und funktionsreichste Möglichkeit für die meisten Kunden, Office-Add-Ins für Benutzer und Gruppen in Ihrer Organisation zu bereitstellen. Wenn Sie Administrator sind, verwenden Sie diese Anleitung, um festzustellen, ob Ihre Organisation und Ihre Benutzer die Anforderungen erfüllen, sodass Sie die zentrale Bereitstellung verwenden können.
+Die zentrale Bereitstellung ist die empfohlene und funktionsreichste Möglichkeit für die meisten Kunden, Office-Add-Ins für Benutzer und Gruppen in Ihrer Organisation bereitstellen. Wenn Sie Administrator sind, verwenden Sie diese Anleitung, um festzustellen, ob Ihre Organisation und Ihre Benutzer die Anforderungen erfüllen, sodass Sie die zentrale Bereitstellung verwenden können.
 
 Die zentrale Bereitstellung bietet die folgenden Vorteile:
   
 - Ein globaler Administrator kann einem Benutzer, mehreren Benutzern über eine Gruppe oder allen Benutzern in der Organisation ein Add-In direkt zuweisen.
     
-- Wenn die relevante Office-Anwendung gestartet wird, wird das Add-In automatisch heruntergeladen. Wenn das Add-In Add-In-Befehle unterstützt, wird das Add-In automatisch im Menüband in der Office-Anwendung angezeigt.
+- Wenn die Office anwendung startet, wird das Add-In automatisch heruntergeladen. Wenn das Add-In Add-In-Befehle unterstützt, wird das Add-In automatisch im Menüband innerhalb der Office angezeigt.
     
 - Add-Ins werden für Benutzer nicht mehr angezeigt, wenn der Administrator das Add-In deaktiviert oder löscht oder wenn der Benutzer aus Azure Active Directory oder aus einer Gruppe entfernt wird, der das Add-In zugewiesen ist.
 
-Die zentrale Bereitstellung unterstützt drei Desktopplattformen windows-, mac- und online-Office-Apps. Die zentrale Bereitstellung unterstützt auch iOS und Android (Nur Outlook Mobile-Add-Ins).
+Die zentrale Bereitstellung unterstützt drei Desktopplattformen Windows, Mac und Online Office Apps. Die zentrale Bereitstellung unterstützt auch iOS und Android (nur Outlook Mobile Add-Ins).
 
 Es kann bis zu 24 Stunden dauern, bis ein Add-In für den Client für alle Benutzer verfügbar ist.
   
 ## <a name="requirements"></a>Anforderungen
 
-Die zentrale Bereitstellung von Add-Ins erfordert, dass die Benutzer Microsoft 365 Enterprise SKUs verwenden: E3/E5/F3 oder Business SKUs: Business Basic, Business Standard, Business Premium (und mit ihrer Organisations-ID bei Office angemeldet sind) und über Exchange Online- und aktive Exchange Online-Postfächer verfügen. Ihr Abonnementverzeichnis muss sich entweder in oder in einem Verbund mit Azure Active Directory befinden.
-Sie können unten bestimmte Anforderungen für Office und Exchange anzeigen oder die Kompatibilitätsprüfung für die zentrale [Bereitstellung verwenden.](#centralized-deployment-compatibility-checker)
+Die zentrale Bereitstellung von Add-Ins erfordert, dass die Benutzer Microsoft 365 Enterprise SKUs verwenden: E3/E5/F3 oder Business SKUs: Business Basic, Business Standard, Business Premium (und mit ihrer Organisations-ID bei Office angemeldet sind) und über Exchange Online- und aktive Exchange Online-Postfächer verfügen. Ihr Abonnementverzeichnis muss sich entweder in oder in einem Verbund mit Azure Active Directory.
+Sie können bestimmte Anforderungen für Office und Exchange oder die Kompatibilitätsprüfung für die zentrale Bereitstellung [verwenden.](#centralized-deployment-compatibility-checker)
 
 Folgendes wird von der zentralen Bereitstellung nicht unterstützt:
   
 - Add-Ins, die Word, Excel oder PowerPoint in Office 2013 zum Ziel haben 
 - Ein lokaler Verzeichnisdienst
-- Add-In-Bereitstellung in einem Exchange On-Prem-Postfach
+- Add-In-Bereitstellung für ein Exchange-On-Prem-Postfach
 - Add-In-Bereitstellung in SharePoint  
-- Teams-Apps
-- Bereitstellung von Component Object Model (COM) oder Visual Studio Tools for Office (VSTO)-Add-Ins.
-- Bereitstellungen von Microsoft 365 ohne Exchange Online, z. B. SKUs: Microsoft 365 Apps for Business und Microsoft 365 Apps for Enterprise.
+- Teams Apps
+- Bereitstellung von Component Object Model (COM) oder Visual Studio-Tools für Office (VSTO)-Add-Ins.
+- Bereitstellungen von Microsoft 365, die keine Exchange Online wie SKUs: Microsoft 365 Apps for Business und Microsoft 365 Apps für Enterprise.
 
-### <a name="office-requirements"></a>Office-Anforderungen
+### <a name="office-requirements"></a>Office Anforderungen
 
 - Für Word-, Excel- und PowerPoint-Add-Ins müssen Ihre Benutzer eine der folgenden Optionen verwenden:
-  - Auf einem Windows-Gerät, Version 1704 oder höher von Microsoft 365 Enterprise SKUs: E3/E5/F3 oder Business SKUs: Business Basic, Business Standard, Business Premium.
+  - Auf einem Windows, Version 1704 oder höher von Microsoft 365 Enterprise SKUs: E3/E5/F3 oder Business SKUs: Business Basic, Business Standard, Business Premium.
   - Auf einem Mac, Version 15.34 oder höher.
 
-- Für Outlook müssen Ihre Benutzer eine der folgenden Optionen verwenden: 
+- Für Outlook müssen Ihre Benutzer einen der folgenden Optionen verwenden: 
   - Version 1701 oder höher von Microsoft 365 Enterprise SKUs: E3/E5/F3 oder Business SKUs: Business Basic, Business Standard, Business Premium.
   - Version 1808 oder höher von Office Professional Plus 2019 oder Office Standard 2019.
   - Version 16.0.4494.1000 oder höher von Office Professional Plus 2016 (MSI) oder Office Standard 2016 (MSI)\*
   - Version 15.0.4937.1000 oder höher von Office Professional Plus 2013 (MSI) oder Office Standard 2013 (MSI)\*
   - Version 16.0.9318.1000 oder höher von Office 2016 für Mac 
-- Version 2.75.0 oder höher von Outlook mobile für iOS 
-- Version 2.2.145 oder höher von Outlook mobile für Android 
+- Version 2.75.0 oder höher von Outlook für iOS 
+- Version 2.2.145 oder höher von Outlook für Android 
     
-    *#A0 von Outlook zeigen admin-installierte #A1 im entsprechenden #A1 an, nicht im Abschnitt "Meine Add-Ins".
+    *#A0 von Outlook admin-installed add-ins in the appropriate Outlook ribbon, not the "My add-ins" section.
 
-### <a name="exchange-online-requirements"></a>Exchange Online-Anforderungen
+### <a name="exchange-online-requirements"></a>Exchange Online Anforderungen
 
-Microsoft Exchange speichert die Add-In-Manifeste im Mandanten Ihrer Organisation. Der Administrator, der Add-Ins bereitgestellt, und die Benutzer, die diese Add-Ins empfangen, müssen sich in einer Version von Exchange Online mit Unterstützung der OAuth-Authentifizierung begnnen.
+Microsoft Exchange speichert die Add-In-Manifeste im Mandanten Ihrer Organisation. Der Administrator, der Add-Ins bereitgestellt, und die Benutzer, die diese Add-Ins empfangen, müssen sich auf einer Version von Exchange Online, die die OAuth-Authentifizierung unterstützt.
   
 Informieren Sie sich beim Exchange-Administrator Ihrer Organisation, um herauszufinden, welche Konfiguration verwendet wird. Die OAuth-Verbindung pro Benutzer kann überprüft werden, indem Sie das PowerShell-Cmdlet [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity) verwenden. 
 
 
 ### <a name="centralized-deployment-compatibility-checker"></a>Kompatibilitätsprüfung für die zentrale Bereitstellung
 
-Mithilfe der Kompatibilitätsprüfung für die zentrale Bereitstellung können Sie überprüfen, ob die Benutzer in Ihrem Mandanten für die Verwendung der zentralen Bereitstellung für Word, Excel und PowerPoint eingerichtet sind. Die Kompatibilitätsprüfung ist für die Unterstützung von Outlook nicht erforderlich. Laden Sie die Kompatibilitätsprüfung [hier](https://aka.ms/officeaddindeploymentorgcompatibilitychecker) herunter.
+Mithilfe der Kompatibilitätsprüfung für die zentrale Bereitstellung können Sie überprüfen, ob die Benutzer in Ihrem Mandanten für die Verwendung der zentralen Bereitstellung für Word, Excel und PowerPoint. Die Kompatibilitätsprüfung ist für die Unterstützung von Outlook nicht erforderlich. Laden Sie die Kompatibilitätsprüfung [hier](https://aka.ms/officeaddindeploymentorgcompatibilitychecker) herunter.
   
 #### <a name="run-the-compatibility-checker"></a>Ausführen der Kompatibilitätsprüfung
   
@@ -114,7 +114,7 @@ Sobald die Ausführung des Tools abgeschlossen ist, wird eine Ausgabedatei im CS
     
 - Zentrale Bereitstellung bereit - Wenn die übrigen Punkte zutreffen
     
-- Office-Plan – Der Plan von Office, für den sie lizenziert sind
+- Office Plan – Der Plan der Office, für die sie lizenziert sind
     
 - Office aktiviert - Wenn Office aktiviert ist
     
@@ -125,7 +125,7 @@ Sobald die Ausführung des Tools abgeschlossen ist, wird eine Ausgabedatei im CS
   
 ## <a name="user-and-group-assignments"></a>Benutzer- und Gruppenzuordnungen
 
-Das Feature für die zentrale Bereitstellung unterstützt derzeit die Meisten von Azure Active Directory unterstützten Gruppen, einschließlich Microsoft 365-Gruppen, Verteilerlisten und Sicherheitsgruppen.
+Das Feature für die zentrale Bereitstellung unterstützt derzeit die mehrzahl der von Azure Active Directory unterstützten Gruppen, einschließlich Microsoft 365, Verteilerlisten und Sicherheitsgruppen.
   
 > [!NOTE]
 > Nicht für E-Mail aktivierte Sicherheitsgruppen werden derzeit nicht unterstützt. 
@@ -141,17 +141,17 @@ Schauen Sie sich das folgende Beispiel an, in dem Sandra, Sofia und die Gruppe "
 
 Die einfachste Methode, um herauszufinden, ob eine Gruppe geschachtelte Gruppen enthält, besteht darin, in Outlook die Gruppenvisitenkarte anzuzeigen. Wenn Sie den Gruppennamen im Feld **An** einer E-Mail eingeben und dann den Gruppennamen auswählen, wenn er aufgelöst wird, wird angezeigt, ob er Benutzer oder geschachtelte Gruppen enthält. Im nachfolgenden Beispiel werden auf der Registerkarte **Mitglieder** der Outlook-Visitenkarte der Testgruppe keine Benutzer und nur zwei Untergruppen angezeigt. 
   
-![Registerkarte Mitglieder der Outlook-Visitenkarte](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
+![Registerkarte Mitglieder Outlook Visitenkarte](../../media/d9db88c4-d752-426c-a480-b11a5b3adcd6.png)
   
 Sie können die umgekehrte Abfrage durchführen, indem Sie die Gruppe auflösen, um zu sehen, ob sie Mitglied einer anderen Gruppe ist. Im Beispiel unten können Sie auf der Registerkarte **Mitgliedschaft** der Outlook-Visitenkarte sehen, dass Untergruppe 1 ein Mitglied der Testgruppe ist. 
   
-![Registerkarte "Mitgliedschaft" der Outlook-Visitenkarte](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
+![Registerkarte "Mitgliedschaft" der Outlook Visitenkarte](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
   
 Alternativ können Sie die Azure Active Directory Graph-API verwenden, um Abfragen auszuführen, um die Liste der Gruppen innerhalb einer Gruppe zu finden. Weitere Informationen finden Sie unter [Vorgänge mit Gruppen | Graph-API-Referenz](/previous-versions/azure/ad/graph/api/groups-operations).
   
 ### <a name="contacting-microsoft-for-support"></a>Kontaktaufnahme mit dem Microsoft-Support
 
-Wenn bei der Verwendung von Office-Apps für das Web (Word, Excel usw.), die zentral bereitgestellt wurden, Probleme beim Laden des Add-Ins auftreten, müssen Sie sich möglicherweise an den Microsoft-Support wenden ( Erfahren[Sie,](../contact-support-for-business-products.md)wie ). Geben Sie im Supportticket die folgenden Informationen zu Ihrer Microsoft 365-Umgebung an.
+Wenn bei der Verwendung von Office-Apps für das Web (Word, Excel usw.), die zentral bereitgestellt wurden, Probleme beim Laden des Add-Ins auftreten, müssen Sie sich möglicherweise an den Microsoft-Support[wenden](../../business-video/get-help-support.md)( Erfahren Sie, wie ). Geben Sie die folgenden Informationen zu Microsoft 365 Umgebung im Supportticket an.
   
 |**Plattform**|**Debuginformationen**|
 |:-----|:-----|

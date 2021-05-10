@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Referenzmaterial zur Verhinderung von Datenverlust
-ms.openlocfilehash: a94dde0bba3fdfc869746f51687ed7709a96639a
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: a039b8d99bd92be0040f6207803981e8a2937c6f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114401"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296768"
 ---
 # <a name="data-loss-prevention-reference"></a>Referenz zur Verhinderung von Datenverlust
  
@@ -385,7 +385,7 @@ Wenn Sie eine zuvor erstellte und veröffentlichte [Aufbewahrungsbezeichnung](re
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>Verwenden einer Vertraulichkeitsbezeichnung als Bedingung in einer DLP-Richtlinie
 
-Vertraulichkeitsbezeichnung als Bedingung in DLP-Richtlinien befindet sich derzeit in der Vorschau. [Weitere Informationen](./dlp-sensitivity-label-as-condition.md).
+[Erfahren Sie mehr](./dlp-sensitivity-label-as-condition.md) über die Verwendung der Vertraulichkeitsbezeichnung als Bedingung in DLP-Richtlinien.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Die Beziehung dieses Features zu anderen Features
 

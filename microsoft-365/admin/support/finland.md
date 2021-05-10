@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f6c8a8e0b58fe31e7dcaba91b81ca36bd03e9f06
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 9a634f05c1d4a7adbe7df16b328429e91dbb20ce
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547420"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296227"
 ---
 # <a name="contact-support-for-finland"></a>Wenden Sie sich an den Support für Finnland
 
-[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
+[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 0800 98462
@@ -35,6 +35,6 @@ Englisch: Mo-Fr 9:00 bis 17:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefonnummer: 09 72 51 96 30
+Alternative Telefon Nummer: 09 72 51 96 30
 
 Es gelten die Ortstarife.

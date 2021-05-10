@@ -94,12 +94,14 @@
               href: manage-incidents.md
             - name: Reaktion auf Sicherheitsvorfälle
               items:
-                - name: Analysieren von Vorfällen
+                - name: Untersuchen von Vorfällen
                   href: investigate-incidents.md
-                - name: Analysieren von Benachrichtigungen
+                - name: Untersuchen von Warnungen
                   href: investigate-alerts.md
-                - name: Analysieren von Benutzern
+                - name: Untersuchen von Benutzern
                   href: investigate-users.md
+                - name: Playbooks zur Reaktion auf Vorfälle
+                  href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
                 - name: Reagieren auf Ihren ersten Vorfall
                   items:
                     - name: Einführung
