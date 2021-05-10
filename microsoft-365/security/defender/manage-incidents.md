@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5f66189979f401430353f4c15978a85276b48840
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 09c391d6b02e1273f55070283a6e11454f677114
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939754"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300001"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Verwalten von Vorfällen in Microsoft 365 Defender
 
@@ -98,8 +98,16 @@ Wenn es sich um eine echte Warnung handeln sollte, sollten Sie auch angeben, um 
 
 Sie können einem Vorfall mit dem Feld Kommentar mehrere **Kommentare** hinzufügen. Jeder Kommentar wird den historischen Ereignissen des Vorfalls hinzugefügt. Sie können die Kommentare und den Verlauf eines Vorfalls über den Link **Kommentare und** Verlauf auf der **Seite Zusammenfassung** anzeigen.
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="next-steps"></a>Nächste Schritte
+
+Beginnen Sie bei neuen Vorfällen mit ihrer [Untersuchung.](investigate-incidents.md)
+
+Bei In-Process-Vorfällen setzen Sie Ihre Untersuchung [fort.](investigate-incidents.md)
+
+Führen Sie bei gelösten Vorfällen eine [Überprüfung nach dem Vorfall durch.](first-incident-post.md)
+
+## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über Vorfälle](incidents-overview.md)
 - [Priorisieren von Vorfällen](incident-queue.md)
-- [Analysieren von Vorfällen](investigate-incidents.md)
+- [Untersuchen von Vorfällen](investigate-incidents.md)

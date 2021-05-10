@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e2e29015d4cb5e04510577118eb847b9b596a6c5
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 93751a8297e61a969e0049e27a847324a3d16872
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114282"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300013"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Vorfälle in Microsoft 365 Defender
 
@@ -62,7 +62,7 @@ Durch das Gruppieren verwandter Warnungen zu einem Vorfall erhalten Sie eine umf
 - Der Umfang des Angriffs, z. B. wie viele Geräte, Benutzer und Postfächer betroffen waren. 
 - Alle dem Angriff zugeordneten Daten.
 
-Wenn [aktiviert,](m365d-enable.md)Microsoft 365 Defender automatisch Warnungen durch Automatisierung und künstliche Intelligenz untersuchen und auflösen. Sie können auch zusätzliche Korrekturschritte ausführen, um den Angriff zu beheben. 
+Wenn [aktiviert,](m365d-enable.md)Microsoft 365 Defender [automatisch](m365d-autoir.md) Warnungen durch Automatisierung und künstliche Intelligenz untersuchen und auflösen. Sie können auch zusätzliche Korrekturschritte ausführen, um den Angriff zu beheben. 
 
 ## <a name="incidents-and-alerts-in-the-microsoft-365-security-center"></a>Vorfälle und Warnungen im Microsoft 365 Security Center
 
@@ -94,11 +94,15 @@ Die zusätzlichen Registerkarten für einen Vorfall sind:
 
 - Untersuchungen
 
-  Alle automatisierten Untersuchungen, die durch Warnungen im Vorfall ausgelöst wurden.
+  Alle [automatisierten Untersuchungen,](m365d-autoir.md) die durch Warnungen im Vorfall ausgelöst wurden.
 
 - Nachweis und Antwort
 
   Alle unterstützten Ereignisse und verdächtigen Entitäten in den Warnungen im Vorfall.
+
+- Graph (in der Vorschau)
+
+  Eine Abbildung, die die Verbindung von Warnungen mit den in Ihrer Organisation betroffenen Ressourcen zeigt.
 
 Hier sehen Sie die Beziehung zwischen einem Vorfall und seinen Daten und den Registerkarten eines Vorfalls im Microsoft 365 Security Center.
 
@@ -115,7 +119,7 @@ Identifizieren Sie fortlaufend die Vorfälle mit der höchsten Priorität für d
 - [Triaging](incident-queue.md) zur Ermittlung der Vorfälle mit höchster Priorität durch Filtern und Sortieren der Vorfallwarteschlange.
 - [Verwalten](manage-incidents.md) von Vorfällen durch Ändern des Titels, Zuweisen zu einem Analysten und Hinzufügen von Tags und Kommentaren.
 
-1. Beginnen Sie für jeden Vorfall mit einer [Angriffs- und Warnungsanalyse:](investigate-incidents.md)
+1. Beginnen Sie für jeden Vorfall mit [einer Angriffs- und Warnungsuntersuchung und -analyse:](investigate-incidents.md)
  
    a. Zeigen Sie die Zusammenfassung des Vorfalls an, um den Umfang und den Schweregrad des Vorfalls sowie die betroffenen Entitäten zu verstehen (registerkarte **Zusammenfassung).**
 
@@ -123,7 +127,7 @@ Identifizieren Sie fortlaufend die Vorfälle mit der höchsten Priorität für d
 
    c. Sammeln Sie bei Bedarf Informationen zu betroffenen Geräten, Benutzern und Postfächern (die Registerkarten **Geräte,** **Benutzer** **und** Postfächer).
 
-   d. Erfahren Sie Microsoft 365 wie Defender einige Warnungen automatisch aufgelöst hat (registerkarte **Untersuchungen).**
+   d. Erfahren Sie, Microsoft 365 Defender einige Warnungen automatisch [aufgelöst](m365d-autoir.md) hat (registerkarte **Untersuchungen).**
    
    e. Verwenden Sie bei Bedarf Informationen im Datensatz für den Vorfall, um weitere Informationen zu erhalten (registerkarte **Nachweis und** Antwort).
 
@@ -149,7 +153,7 @@ Im Folgenden finden Sie ein Beispiel für Sicherheitsvorgänge für Microsoft 36
 Zu den täglichen Aufgaben gehören:
 
 - [Verwalten von](manage-incidents.md) Vorfällen
-- Überprüfen [automatisierter Untersuchungs- und Reaktionsaktionen (AIR)](m365d-action-center.md)
+- Überprüfen [automatisierter Untersuchungs- und Reaktionsaktionen im](m365d-action-center.md) Aktionscenter
 - Überprüfen der neuesten [Bedrohungsanalyse](threat-analytics.md)
 - [Reagieren auf](investigate-incidents.md) Vorfälle
 
@@ -167,8 +171,19 @@ Tägliche, monatliche, vierteljährliche und jährliche Aufgaben können verwend
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-In der Warteschleife auf der **Seite** Vorfälle werden die neuesten Vorfälle aufgeführt. Hier haben Sie folgende Möglichkeiten:
+**Wenn Sie mit der Sicherheitsanalyse** und der Reaktion auf Vorfälle neu sind:
 
-- Sehen Sie sich an, welche [Vorfälle](incident-queue.md) basierend auf dem Schweregrad und anderen Faktoren priorisiert werden sollen. 
-- [Verwalten von Vorfällen,](manage-incidents.md)einschließlich Umbenennen, Zuweisen, Klassifizieren und Hinzufügen von Tags und Kommentaren für Ihren Workflow für die Vorfallverwaltung.
-- Führen Sie [eine Analyse](investigate-incidents.md) eines Vorfalls durch.
+- In [der](first-incident-overview.md) exemplarischen Vorgehensweise Antworten auf Ihren ersten Vorfall finden Sie eine geführte Tour durch einen typischen Analyse-, Korrektur- und Nachvorfallüberprüfungsprozess im Microsoft 365 Security Center mit einem Beispiel für einen Angriff.
+
+**Wenn Sie Erfahrung mit der** Sicherheitsanalyse und der Reaktion auf Vorfälle haben:
+
+- Beginnen Sie mit der Vorfallwarteschlange auf **der** Seite Vorfälle des Microsoft 365 Security Center. Hier haben Sie folgende Möglichkeiten:
+
+  - Sehen Sie sich an, welche [Vorfälle](incident-queue.md) basierend auf dem Schweregrad und anderen Faktoren priorisiert werden sollen. 
+
+  - [Verwalten von Vorfällen,](manage-incidents.md)einschließlich Umbenennen, Zuweisen, Klassifizieren und Hinzufügen von Tags und Kommentaren basierend auf Ihrem Workflow für die Vorfallverwaltung.
+
+  - Führen [Sie Untersuchungen](investigate-incidents.md) von Vorfällen durch.
+
+- Ausführliche [Anleitungen für](https://docs.microsoft.com/security/compass/incident-response-playbooks) Phishing-, Kennwort-Spray- und App-Zustimmungszuserteilungsangriffe finden Sie in diesen Playbooks zur Reaktion auf Vorfälle.
+

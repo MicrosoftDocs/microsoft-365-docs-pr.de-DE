@@ -1,6 +1,6 @@
 ---
-title: Analysieren von Vorfällen in Microsoft 365 Defender
-description: Analysieren Sie Vorfälle in Bezug auf Geräte, Nutzer und Postfächer.
+title: Untersuchen von Vorfällen in Microsoft 365 Defender
+description: Untersuchen von Vorfällen im Zusammenhang mit Geräten, Benutzern und Postfächern.
 keywords: Incident, Incidents, analyze, response, machines, devices, users, identities, mail, email, mailbox, investigation, graph, evidence
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72e1efb8a06fb7fa64b83ab6522fe4cdcfd1a73e
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 7abc99a14ec538afea8cdbd4d8f3b4940bcccd9f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259636"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300085"
 ---
-# <a name="analyze-incidents-in-microsoft-365-defender"></a>Analysieren von Vorfällen in Microsoft 365 Defender
+# <a name="investigate-incidents-in-microsoft-365-defender"></a>Untersuchen von Vorfällen in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ Microsoft 365 Defender aggregiert alle zugehörigen Warnungen, Ressourcen, Unter
 
 Innerhalb eines Vorfalls analysieren Sie die Warnungen, die sich auf Ihr Netzwerk auswirken, verstehen, was sie bedeuten, und erstellen die Nachweise, damit Sie einen effektiven Korrekturplan entwickeln können.
 
-## <a name="initial-analysis"></a>Erste Analyse
+## <a name="initial-investigation"></a>Erste Untersuchung
 
 Bevor Sie in die Details eintauchen, sehen Sie sich die Eigenschaften und die Zusammenfassung des Vorfalls an.
 
@@ -88,7 +88,7 @@ Im Folgenden sehen Sie ein Beispiel.
 
 Standardmäßig werden die Warnungen chronologisch geordnet, damit Sie sehen können, wie sich der Vorfall im Laufe der Zeit abgespielt hat. Wenn Sie jede Warnung auswählen, gelangen Sie zur Hauptseite der Warnung, auf der Sie eine eingehende Analyse dieser Warnung durchführen können. 
 
-Informationen zur Verwendung der Warnungswarteschlange und der Warnungsseiten bei [der Analyse von Warnungen](investigate-alerts.md)
+Erfahren Sie, wie Sie die Warnungswarteschlange und die Benachrichtigungsseiten verwenden, um [Warnungen zu untersuchen.](investigate-alerts.md)
 
 ## <a name="devices"></a>Geräte
 
@@ -123,11 +123,13 @@ Sie können das Häkchen für ein Postfach aktivieren, um eine Liste aktiver War
 
 ## <a name="investigations"></a>Untersuchungen
 
-Auf **der Registerkarte** Untersuchungen sind alle automatisierten Untersuchungen aufgeführt, die durch Warnungen in diesem Vorfall ausgelöst wurden. Die Untersuchungen führen Korrekturmaßnahmen durch oder warten auf die Genehmigung von Aktionen durch analysten, je nachdem, wie Sie Ihre automatisierten Untersuchungen für die Ausführung in Microsoft Defender for Endpoint und Defender für Office 365.
+Auf **der Registerkarte** Untersuchungen sind alle [automatisierten Untersuchungen aufgeführt, die](m365d-autoir.md) durch Warnungen in diesem Vorfall ausgelöst wurden. Die Untersuchungen führen Korrekturmaßnahmen durch oder warten auf die Genehmigung von Aktionen durch analysten, je nachdem, wie Sie Ihre automatisierten Untersuchungen für die Ausführung in Microsoft Defender for Endpoint und Defender für Office 365.
 
 :::image type="content" source="../../media/investigate-incidents/incident-investigations.png" alt-text="Beispiel für eine Seite &quot;Untersuchungen&quot; für einen Vorfall":::
 
 Wählen Sie eine Untersuchung aus, um zur Seite mit den Untersuchungsdetails zu navigieren und vollständige Informationen zum Untersuchungs- und Behebungsstatus zu erhalten. Wenn im Rahmen der Untersuchung Aktionen zur Genehmigung ausstehen, werden sie auf der Registerkarte Ausstehende Aktionen angezeigt. Ergreifen Sie Maßnahmen im Rahmen der Vorfallbehebung.
+
+Weitere Informationen finden Sie unter [Automatisierte Untersuchung und Reaktion in Microsoft 365 Defender](m365d-autoir.md).
 
 ## <a name="evidence-and-response"></a>Nachweis und Antwort
 
@@ -155,8 +157,14 @@ Das Vorfalldiagramm hilft Ihnen, den vollständigen Umfang des Angriffs schnell 
 
 Jetzt können Sie verstehen, wie sich der Angriff im Laufe der Zeit über Ihr Netzwerk ausbreitet, wo er begonnen hat und wie weit der Angriff gegangen ist.
 
+## <a name="next-steps"></a>Nächste Schritte
 
-## <a name="related-topics"></a>Verwandte Themen
+Bei Bedarf:
+
+- [Untersuchen der Warnungen eines Vorfalls](investigate-alerts.md)
+- [Untersuchen der Benutzer eines Vorfalls](investigate-users.md)
+
+## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über Vorfälle](incidents-overview.md)
 - [Priorisieren von Vorfällen](incident-queue.md)

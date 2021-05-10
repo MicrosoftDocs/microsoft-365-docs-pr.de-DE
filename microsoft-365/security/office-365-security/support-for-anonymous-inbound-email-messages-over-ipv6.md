@@ -15,15 +15,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren erfahren, wie Sie die Unterstützung für anonyme eingehende E-Mails aus IPv6-Quellen in Exchange Online und Exchange Online Protection konfigurieren.
+description: Administratoren erfahren, wie Sie die Unterstützung für anonyme eingehende E-Mails aus IPv6-Quellen in Exchange Online und Exchange Online Protection.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df06891401802d212cbfdb55085662901f5546e9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 80fdcc9dcfe3006ef8b21aa19856fe8c0ea3ff70
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206474"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300049"
 ---
 # <a name="add-support-for-anonymous-inbound-email-over-ipv6-in-microsoft-365"></a>Hinzufügen von Unterstützung für anonyme eingehende E-Mails über IPv6 in Microsoft 365
 
@@ -34,13 +34,13 @@ ms.locfileid: "51206474"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365-Organisationen mit Exchange Online-Postfächern und eigenständige Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer unterstützen anonyme eingehende E-Mails über IPv6. Der Quell-IPv6-E-Mail-Server muss die beiden folgenden Anforderungen erfüllen:
+Microsoft 365 Organisationen mit Exchange Online postfächern und eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online unterstützen anonyme eingehende E-Mails über IPv6. Der Quell-IPv6-E-Mail-Server muss die beiden folgenden Anforderungen erfüllen:
 
 - Die Quell-IPv6-Adresse muss über einen gültigen Reverse-DNS-Nachschlagedatensatz (Reverse DNS Lookup, PTR) verfügen, mit dem das Ziel den Domänennamen von der IPv6-Adresse finden kann.
 
 - Der Absender muss entweder die SPF-Verifizierung (definiert in [RFC 7208](https://tools.ietf.org/html/rfc7208)) oder die [DKIM-Verifizierung](http://dkim.org/) (definiert in [RFC 6376](https://www.rfc-editor.org/rfc/rfc6376.txt)) bestehen.
 
-Bevor Ihre Organisation anonyme eingehende E-Mails über IPv6 empfangen kann, muss sich ein Administrator an den Microsoft-Support wenden und diese fragen. Anweisungen zum Öffnen einer Supportanfrage finden Sie unter [Contact support for business products - Admin Help](../../admin/contact-support-for-business-products.md).
+Bevor Ihre Organisation anonyme eingehende E-Mails über IPv6 empfangen kann, muss sich ein Administrator an den Microsoft-Support wenden und diese fragen. Anweisungen zum Öffnen einer Supportanfrage finden Sie unter [Contact support for business products - Admin Help](../../business-video/get-help-support.md).
 
 Nachdem die Unterstützung für anonyme eingehende IPv6-Nachrichten in Ihrer Organisation aktiviert wurde, wird die Nachricht durch die normale Nachrichtenfilterung durchgehen, die vom Dienst bereitgestellt wird.
 

@@ -1,5 +1,5 @@
 ---
-title: Vorfallbenachrichtigungen per E-Mail in Microsoft 365 Defender erhalten
+title: Erhalten von Vorfallbenachrichtigungen per E-Mail in Microsoft 365 Defender
 description: Informationen zum Erstellen von Regeln zum Erhalten von E-Mail-Benachrichtigungen für Vorfälle in Microsoft 365 Defender
 keywords: Incident, email, email notfications, configure, users, mailbox, email, incidents, analyze, response
 search.product: eADQiWindows 10XVcnh
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7ba21e08f72760654993335764df00e78abc87b2
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 8d29291c63bdc437163feecce8164089d958d71d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939718"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299964"
 ---
 # <a name="get-incident-notifications-by-email"></a>Vorfallbenachrichtigungen per E-Mail erhalten
 
@@ -37,13 +37,13 @@ ms.locfileid: "51939718"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Sie können Microsoft 365 Defender einrichten, um Ihre Mitarbeiter per E-Mail über neue Vorfälle oder Updates zu vorhandenen Vorfällen zu benachrichtigen. Sie können Benachrichtigungen basierend auf:
+Sie können einen Microsoft 365 einrichten, um Ihre Mitarbeiter per E-Mail über neue Vorfälle oder Updates zu vorhandenen Vorfällen zu benachrichtigen. Sie können Benachrichtigungen basierend auf:
 
 - Schweregrad des Vorfalls.
 - Gerätegruppe.
 - Nur beim ersten Update pro Vorfall.
 
-Die E-Mail-Benachrichtigung enthält wichtige Details zu dem Vorfall, z. B. den Vorfallnamen, schweregrad und Kategorien. Sie können auch direkt zu dem Vorfall wechseln und ihre Analyse sofort starten. Weitere Informationen finden Sie unter [Analysieren von Vorfällen](investigate-incidents.md).
+Die E-Mail-Benachrichtigung enthält wichtige Details zu dem Vorfall, z. B. den Vorfallnamen, schweregrad und Kategorien. Sie können auch direkt zu dem Vorfall wechseln und ihre Analyse sofort starten. Weitere Informationen finden Sie unter [Investigate incidents](investigate-incidents.md).
 
 Sie können Empfänger in den E-Mail-Benachrichtigungen hinzufügen oder entfernen. Neue Empfänger werden über Vorfälle benachrichtigt, nachdem sie hinzugefügt wurden. 
 
@@ -55,7 +55,7 @@ Wenn Ihre Organisation rollenbasierte Zugriffssteuerung (Role-Based Access Contr
 
 Führen Sie die folgenden Schritte aus, um eine neue Regel zu erstellen und E-Mail-Benachrichtigungseinstellungen anzupassen.
 
-1. Wählen Sie im Navigationsbereich Einstellungen **> Microsoft 365 Defender > Vorfall-E-Mail-Benachrichtigungen aus.**
+1. Wählen Sie im Navigationsbereich **die Option Einstellungen > Microsoft 365 Defender > Vorfall-E-Mail-Benachrichtigungen aus.**
 2. Wählen **Sie Element hinzufügen aus.**
 3. Geben Sie **auf der** Seite Grundlagen den Regelnamen und eine Beschreibung ein, und wählen Sie dann **Weiter aus.**
 4. Konfigurieren Sie **auf der** Seite Benachrichtigungseinstellungen:
@@ -63,7 +63,7 @@ Führen Sie die folgenden Schritte aus, um eine neue Regel zu erstellen und E-Ma
     - **Gerätegruppenbereich** : Sie können alle Gerätegruppen angeben oder aus der Liste der Gerätegruppen in Ihrem Mandanten auswählen.
     - **Nur beim ersten Auftreten pro Vorfall** benachrichtigen – Wählen Sie aus, wenn Sie eine Benachrichtigung nur für die erste Warnung wünschen, die Mit Ihrer anderen Auswahl entspricht. Spätere Updates oder Warnungen im Zusammenhang mit dem Vorfall senden keine zusätzlichen Benachrichtigungen.
     - **Organisationsname in die E-Mail eingeben** – Wählen Sie aus, ob Ihr Organisationsname in der E-Mail-Benachrichtigung angezeigt werden soll.
-    - **Mandantenspezifischer Portallink hinzufügen** – Wählen Sie aus, ob Sie einen Link mit der Mandanten-ID in der E-Mail-Benachrichtigung für den Zugriff auf einen bestimmten Microsoft 365-Mandanten hinzufügen möchten.
+    - **Mandantenspezifischer Portallink hinzufügen** – Wählen Sie aus, ob Sie einen Link mit der Mandanten-ID in der E-Mail-Benachrichtigung für den Zugriff auf einen bestimmten Mandanten Microsoft 365 möchten.
 
     :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Benachrichtigungseinstellungen für Vorfall-E-Mail-Benachrichtigungen":::
 
@@ -77,4 +77,4 @@ Um eine vorhandene Regel zu bearbeiten, wählen Sie sie aus der Liste der Regeln
 ## <a name="see-also"></a>Siehe auch
 - [Übersicht über Vorfälle](incidents-overview.md)
 - [Priorisieren von Vorfällen](incident-queue.md)
-- [Analysieren von Vorfällen](investigate-incidents.md)
+- [Untersuchen von Vorfällen](investigate-incidents.md)

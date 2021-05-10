@@ -1,6 +1,6 @@
 ---
-title: Analysieren von Benutzern im Microsoft 365 Security Center
-description: Analysieren von Benutzern im Microsoft 365 Security Center
+title: Untersuchen von Benutzern im Microsoft 365 Security Center
+description: Untersuchen von Benutzern im Microsoft 365 Security Center
 keywords: Security, Malware, Microsoft 365, M365, Security Center, monitor, report, identities, data, devices, apps, incident, analyze, response
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -19,14 +19,14 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 2fd9b958cdbdaf22346f8171c789f2ca9a8336d1
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: c03e4d5bd94eb6105ffab91c6dad2b74d7159dde
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957607"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300061"
 ---
-# <a name="analyze-users-in-microsoft-365-security-center"></a>Analysieren von Benutzern im Microsoft 365 Security Center
+# <a name="investigate-users-in-microsoft-365-security-center"></a>Untersuchen von Benutzern im Microsoft 365 Security Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,16 +34,16 @@ ms.locfileid: "51957607"
 
 - Microsoft 365 Defender
 
-Ein Teil ihrer Vorfallanalyse kann Benutzerkonten enthalten. Beginnen Sie mit der **Registerkarte Benutzer** für einen Vorfall von & Warnungen **>** *Vorfall* **> Benutzer**. 
+Ein Teil Ihrer Vorfalluntersuchung kann Benutzerkonten enthalten. Beginnen Sie mit der **Registerkarte Benutzer** für einen Vorfall von & Warnungen **>** *Vorfall* **> Benutzer**. 
 
 :::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Beispiel einer Benutzerseite für einen Vorfall":::
 
 Um eine kurze Zusammenfassung eines Benutzerkontos für den Vorfall zu erhalten, aktivieren Sie das Kontrollkästchen neben dem Benutzernamen. Im Folgenden sehen Sie ein Beispiel.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Beispiel für den Zusammenfassungsbereich des Benutzerkontos für einen Vorfall im Microsoft 365 Security Center":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Beispiel für den Zusammenfassungsbereich eines Benutzerkontos für einen Vorfall im Microsoft 365 Security Center":::
 
 > [!NOTE]
-> Auf der Seite Benutzer werden die Azure Active Directory (AD)-Organisation sowie Gruppen angezeigt, die Ihnen dabei helfen, die Gruppen und Berechtigungen zu verstehen, die einem Benutzer zugeordnet sind.
+> Auf der Seite Benutzer Azure Active Directory (AD)-Organisation sowie Gruppen angezeigt, die Ihnen helfen, die Gruppen und Berechtigungen zu verstehen, die einem Benutzer zugeordnet sind.
 
 Auf dieser Fly-Out-Seite können Sie Informationen zu Benutzerbedrohungen überprüfen, einschließlich aktueller Vorfälle, aktiver Warnungen und Risikostufe sowie benutzerexposition, Konten, Geräte und mehr.
 
@@ -64,7 +64,7 @@ Auf dieser Seite können Sie die folgenden zusätzlichen Aktionen ausführen:
 - Kennzeichnen des Benutzerkontos als gefährdet
 - Benutzer erneut anmelden
 - Anhalten des Benutzerkontos
-- Weitere Informationen finden Sie unter Azure Active Directory (Azure AD)-Benutzerkonteneinstellungen.
+- Siehe die Azure Active Directory (Azure AD)
 - Anzeigen der Dateien im Besitz des Benutzerkontos
 - Anzeigen von Dateien, die für diesen Benutzer freigegeben sind. 
 
@@ -80,7 +80,11 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 --> 
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="next-steps"></a>Nächste Schritte
+
+Setzen Sie ihre Untersuchung nach Bedarf für Prozessvorfälle [fort.](investigate-incidents.md)
+
+## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über Vorfälle](incidents-overview.md)
 - [Priorisieren von Vorfällen](incident-queue.md)

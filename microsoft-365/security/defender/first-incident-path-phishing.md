@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: fb3656a9d3f67d979c012d9cc316a10e65a72042
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 41a2c73ce5e1c3060d88572f4fa7afe63e193f46
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114642"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52299988"
 ---
 # <a name="example-of-a-phishing-email-attack"></a>Beispiel für einen Phishing-E-Mail-Angriff
 
@@ -67,5 +67,5 @@ Weitere Informationen finden Sie [unter Identitätsbasierter](first-incident-pat
 ## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über Vorfälle](incidents-overview.md)
-- [Analysieren von Vorfällen](investigate-incidents.md)
+- [Untersuchen von Vorfällen](investigate-incidents.md)
 - [Verwalten von Vorfällen](manage-incidents.md)

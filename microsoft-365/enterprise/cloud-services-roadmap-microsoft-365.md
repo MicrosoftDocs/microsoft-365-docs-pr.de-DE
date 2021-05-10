@@ -13,25 +13,25 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Die Roadmap zum Einrichten Ihrer Clouddienste für Microsoft 365.
-ms.openlocfilehash: 5049d24a2cff696ee44429f809b2b91c15a4b4d1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3303d91b5ec72090c69ae0b1fb14434e03c83729
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928260"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300025"
 ---
 # <a name="cloud-services-roadmap-for-microsoft-365"></a>Roadmap für Clouddienste für Microsoft 365
 
-Um die Vorteile von Kreativität, Teamarbeit und Produktivität von Microsoft 365 Enterprise zu nutzen, stellen Sie die Clouddienste zur Verfügung, die den Anforderungen Ihrer Organisation am besten entsprechen.
+Um die Vorteile von Kreativität, Teamarbeit und Produktivität von Microsoft 365 Unternehmen zu nutzen, stellen Sie die Clouddienste zur Verfügung, die den Anforderungen Ihrer Organisation am besten entsprechen.
 
-Wenn Sie über vorhandene serverbasierte Bereitstellungen für Exchange, SharePoint oder Skype for Business verfügen und Ihre gesamte [](client-server-software-roadmap-microsoft-365.md)Organisation zu Microsoft 365 Enterprise migrieren möchten, lesen Sie die Client- und Serversoftware-Roadmap . Diese Roadmap enthält Microsoft Office Clientprodukte, lokale Office Server-Produkte und Microsoft &ndash; Windows-basierte Geräte.
+Wenn Sie über vorhandene serverbasierte Bereitstellungen für Exchange, SharePoint oder Skype for Business verfügen und Ihre gesamte Organisation zu Microsoft 365 for [](client-server-software-roadmap-microsoft-365.md)Enterprise migrieren möchten, lesen Sie die Client- und Serversoftware-Roadmap . Diese Roadmap enthält Microsoft Office Clientprodukte, lokale Office Serverprodukte und Microsoft Windows &ndash; Geräte.
 
 ## <a name="deploy"></a>Bereitstellen
 
 So stellen Sie Ihre Clouddienste zur Verfügung:
 
 - [Bereiten Sie Ihre Dienste vor](configure-services-and-applications.md)
-- [Migrieren Ihrer lokalen Daten zu Microsoft 365](migrate-data-to-office-365.md)
+- [Migrieren Sie Ihre lokalen Daten zu Microsoft 365](migrate-data-to-office-365.md)
 - Einrichten Ihrer Clouddienste für Ihre Benutzer
   - [Exchange Online](/Exchange/exchange-online)
   - [SharePoint Online](/sharepoint/sharepoint-online)
@@ -45,7 +45,7 @@ So stellen Sie Ihre Clouddienste zur Verfügung:
 So verwalten Sie Ihre Clouddienste: 
 
 - [Überprüfen des Dienstzustands](view-service-health.md)
-- [Verstehen Ihrer Supportoptionen](https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+- [Verstehen Ihrer Supportoptionen](../business-video/get-help-support.md)
 - Verwalten Ihrer Clouddienste
   - [Exchange Online](/Exchange/exchange-online)
   - [SharePoint Online](https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a)
@@ -54,14 +54,14 @@ So verwalten Sie Ihre Clouddienste:
   - [Yammer](https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe)
 - [Durchführen einer Leistungsoptimierung für Ihre Clouddienste](tune-microsoft-365-performance.md)
 
-## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>So führt Microsoft Clouddienste für Microsoft 365 aus
+## <a name="how-microsoft-does-cloud-services-for-microsoft-365"></a>Wie Microsoft Clouddienste für Microsoft 365
 
-Weitere Informationen zur Bereitstellung oder Verwaltung von Microsoft 365-Clouddiensten finden Sie unter:
+Weitere Informationen zur Bereitstellung oder Verwaltung von Clouddiensten Microsoft 365 Microsoft IT finden Sie unter:
 
 1. Wechseln Sie zu [Microsoft IT Showcase](https://www.microsoft.com/itshowcase).
 2. Wählen Sie **Suchinhalt aus.**
-3. Wählen **Sie unter Ergebnisse verfeinern** die Option **IT-Pro** unter **Zielgruppe** aus, und wählen Sie dann unter **Produkt** einen Clouddienst aus.
+3. Wählen **Sie unter** Ergebnisse verfeinern die Option **PRO** unter **Zielgruppe** aus, und wählen Sie dann unter **Produkt** einen Clouddienst aus.
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Starten Sie ihre Clouddiensteimplementierung. Anleitungen finden Sie [unter Configure Microsoft 365 Enterprise services and applications](configure-services-and-applications.md).
+Starten Sie ihre Clouddiensteimplementierung. Anleitungen finden Sie unter [Configure Microsoft 365 Enterprise services and applications](configure-services-and-applications.md).
