@@ -12,31 +12,31 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: fc87852f2190663ecead62831dcfe6ec87a2b39a
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 9caa80c2f0f768f2d89bb4a1fdc3f43beb225cf2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545764"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295807"
 ---
-# <a name="contact-support-for-mexico"></a><span data-ttu-id="680e1-103">Kontaktieren des Support für Mexiko</span><span class="sxs-lookup"><span data-stu-id="680e1-103">Contact support for Mexico</span></span>
+# <a name="contact-support-for-mexico"></a><span data-ttu-id="70691-103">Kontaktieren des Support für Mexiko</span><span class="sxs-lookup"><span data-stu-id="70691-103">Contact support for Mexico</span></span>
 
-<span data-ttu-id="680e1-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="680e1-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="70691-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="70691-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="680e1-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="680e1-105">Phone number</span></span>
+## <a name="phone-number"></a><span data-ttu-id="70691-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="70691-105">Phone number</span></span>
 
-<span data-ttu-id="680e1-106">800 563 0605</span><span class="sxs-lookup"><span data-stu-id="680e1-106">800 563 0605</span></span>
+<span data-ttu-id="70691-106">800 563 0605</span><span class="sxs-lookup"><span data-stu-id="70691-106">800 563 0605</span></span>
 
-## <a name="hours"></a><span data-ttu-id="680e1-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="680e1-107">Hours</span></span>
+## <a name="hours"></a><span data-ttu-id="70691-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="70691-107">Hours</span></span>
 
-### <a name="billing-support"></a><span data-ttu-id="680e1-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="680e1-108">Billing Support:</span></span>
+### <a name="billing-support"></a><span data-ttu-id="70691-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="70691-108">Billing Support:</span></span>
 
-<span data-ttu-id="680e1-109">Spanisch: Mon-Fri 9:00-17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="680e1-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="70691-109">Spanisch: Mon-Fri 9:00-17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="70691-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="680e1-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="680e1-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="70691-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="70691-110">Technical Support:</span></span>
 
-<span data-ttu-id="680e1-111">Spanisch: 24 Stunden am Tag, 7 Tage die Woche</span><span class="sxs-lookup"><span data-stu-id="680e1-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="70691-111">Spanisch: 24 Stunden am Tag, 7 Tage die Woche</span><span class="sxs-lookup"><span data-stu-id="70691-111">Spanish: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="680e1-112">Alternative Telefonnummer: 55 4738 6567</span><span class="sxs-lookup"><span data-stu-id="680e1-112">Alternative Phone Number: 55 4738 6567</span></span>
+<span data-ttu-id="70691-112">Alternative Telefon Nummer: 55 4738 6567</span><span class="sxs-lookup"><span data-stu-id="70691-112">Alternative Phone Number: 55 4738 6567</span></span>
 
-<span data-ttu-id="680e1-113">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="680e1-113">Local call charges apply</span></span>
+<span data-ttu-id="70691-113">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="70691-113">Local call charges apply</span></span>

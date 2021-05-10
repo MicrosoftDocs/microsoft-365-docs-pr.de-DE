@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d3cd1baed308fc9c1005ae35232759f805786f52
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 27c6b5ce80c580dd51fbc3a86f76f8f4f19ff819
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548992"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296635"
 ---
-# <a name="contact-support-for-argentina"></a><span data-ttu-id="6a51b-103">Kontaktieren des Support für Argentinien</span><span class="sxs-lookup"><span data-stu-id="6a51b-103">Contact support for Argentina</span></span>
+# <a name="contact-support-for-argentina"></a><span data-ttu-id="8ed50-103">Kontaktieren des Support für Argentinien</span><span class="sxs-lookup"><span data-stu-id="8ed50-103">Contact support for Argentina</span></span>
 
-<span data-ttu-id="6a51b-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="6a51b-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="8ed50-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="8ed50-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="6a51b-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="6a51b-105">Phone number</span></span>
-<span data-ttu-id="6a51b-106">0800 266 1512</span><span class="sxs-lookup"><span data-stu-id="6a51b-106">0800 266 1512</span></span>
+## <a name="phone-number"></a><span data-ttu-id="8ed50-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="8ed50-105">Phone number</span></span>
+<span data-ttu-id="8ed50-106">0800 266 1512</span><span class="sxs-lookup"><span data-stu-id="8ed50-106">0800 266 1512</span></span>
 
-## <a name="hours"></a><span data-ttu-id="6a51b-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="6a51b-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="6a51b-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="6a51b-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="8ed50-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="8ed50-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="8ed50-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="8ed50-108">Billing Support:</span></span>
 
-<span data-ttu-id="6a51b-109">Spanisch: Mon-Fri 9:00-17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="6a51b-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="8ed50-109">Spanisch: Mon-Fri 9:00-17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="8ed50-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="6a51b-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="6a51b-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="8ed50-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="8ed50-110">Technical Support:</span></span>
 
-<span data-ttu-id="6a51b-111">Spanisch: 24 Stunden am Tag, 7 Tage die Woche</span><span class="sxs-lookup"><span data-stu-id="6a51b-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="8ed50-111">Spanisch: 24 Stunden am Tag, 7 Tage die Woche</span><span class="sxs-lookup"><span data-stu-id="8ed50-111">Spanish: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="6a51b-112">Alternative Telefonnummer: 011 5354 2347</span><span class="sxs-lookup"><span data-stu-id="6a51b-112">Alternative Phone Number: 011 5354 2347</span></span>
+<span data-ttu-id="8ed50-112">Alternative Telefon Nummer: 011 5354 2347</span><span class="sxs-lookup"><span data-stu-id="8ed50-112">Alternative Phone Number: 011 5354 2347</span></span>
 
-<span data-ttu-id="6a51b-113">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="6a51b-113">Local call charges apply</span></span>
+<span data-ttu-id="8ed50-113">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="8ed50-113">Local call charges apply</span></span>

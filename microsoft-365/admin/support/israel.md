@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a1b25b1565a025f7815eede30ada87d1e0f18aff
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: b90dfb8708c3a7b9917d88cf6ea013b7dbfca3eb
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546667"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296035"
 ---
-# <a name="contact-support-for-israel"></a><span data-ttu-id="be5ed-103">Kontaktieren des Support für Israel</span><span class="sxs-lookup"><span data-stu-id="be5ed-103">Contact support for Israel</span></span>
+# <a name="contact-support-for-israel"></a><span data-ttu-id="c9b91-103">Kontaktieren des Support für Israel</span><span class="sxs-lookup"><span data-stu-id="c9b91-103">Contact support for Israel</span></span>
 
-<span data-ttu-id="be5ed-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="be5ed-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="c9b91-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="c9b91-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="be5ed-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="be5ed-105">Phone number</span></span>
-<span data-ttu-id="be5ed-106">1 809 344 179</span><span class="sxs-lookup"><span data-stu-id="be5ed-106">1 809 344 179</span></span>
+## <a name="phone-number"></a><span data-ttu-id="c9b91-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="c9b91-105">Phone number</span></span>
+<span data-ttu-id="c9b91-106">1 809 344 179</span><span class="sxs-lookup"><span data-stu-id="c9b91-106">1 809 344 179</span></span>
 
-## <a name="hours"></a><span data-ttu-id="be5ed-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="be5ed-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="be5ed-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="be5ed-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="c9b91-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="c9b91-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="c9b91-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="c9b91-108">Billing Support:</span></span>
 
-<span data-ttu-id="be5ed-109">Hebräisch: Sun-Thu 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="be5ed-109">Hebrew: Sun-Thu 9 AM-6 PM</span></span>
+<span data-ttu-id="c9b91-109">Hebräisch: Sun-Thu 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="c9b91-109">Hebrew: Sun-Thu 9 AM-6 PM</span></span>
 
-<span data-ttu-id="be5ed-110">Englisch: Mon-Fri 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="be5ed-110">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="c9b91-110">Englisch: Mon-Fri 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="c9b91-110">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="be5ed-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="be5ed-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="c9b91-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="c9b91-111">Technical Support:</span></span>
 
-<span data-ttu-id="be5ed-112">Hebräisch: Sun-Thu 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="be5ed-112">Hebrew: Sun-Thu 9 AM-6 PM</span></span>
+<span data-ttu-id="c9b91-112">Hebräisch: Sun-Thu 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="c9b91-112">Hebrew: Sun-Thu 9 AM-6 PM</span></span>
 
-<span data-ttu-id="be5ed-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="be5ed-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="c9b91-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="c9b91-113">English: 24 hours a day, 7 days a week</span></span>

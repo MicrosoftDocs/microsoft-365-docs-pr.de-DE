@@ -12,29 +12,29 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 86e638411bd62778cd20b99ef2edd90a56933ad5
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 602812fb866e5d4940b2ccedfb90c46ddd9893a6
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50548560"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52296888"
 ---
-# <a name="contact-support-for-bonaire"></a><span data-ttu-id="ec78b-103">Kontaktieren des Support für Bonaire</span><span class="sxs-lookup"><span data-stu-id="ec78b-103">Contact support for Bonaire</span></span>
+# <a name="contact-support-for-bonaire"></a><span data-ttu-id="1c60a-103">Kontaktieren des Support für Bonaire</span><span class="sxs-lookup"><span data-stu-id="1c60a-103">Contact support for Bonaire</span></span>
 
-<span data-ttu-id="ec78b-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="ec78b-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="1c60a-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="1c60a-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="ec78b-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="ec78b-105">Phone number</span></span>
-<span data-ttu-id="ec78b-106">+1 312 843 5146</span><span class="sxs-lookup"><span data-stu-id="ec78b-106">+1 312 843 5146</span></span>
+## <a name="phone-number"></a><span data-ttu-id="1c60a-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="1c60a-105">Phone number</span></span>
+<span data-ttu-id="1c60a-106">+1 312 843 5146</span><span class="sxs-lookup"><span data-stu-id="1c60a-106">+1 312 843 5146</span></span>
 
-## <a name="hours"></a><span data-ttu-id="ec78b-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="ec78b-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="ec78b-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="ec78b-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="1c60a-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="1c60a-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="1c60a-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="1c60a-108">Billing Support:</span></span>
 
-<span data-ttu-id="ec78b-109">Niederländisch: Mon-Fri 04:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="ec78b-109">Dutch: Mon-Fri 4 AM-noon</span></span>
+<span data-ttu-id="1c60a-109">Niederländisch: Mon-Fri 04:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="1c60a-109">Dutch: Mon-Fri 4 AM-noon</span></span>
 
-<span data-ttu-id="ec78b-110">Englisch: Mon-Fri 04:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="ec78b-110">English: Mon-Fri 4 AM-noon</span></span>
+<span data-ttu-id="1c60a-110">Englisch: Mon-Fri 04:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="1c60a-110">English: Mon-Fri 4 AM-noon</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="ec78b-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="ec78b-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="1c60a-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="1c60a-111">Technical Support:</span></span>
 
-<span data-ttu-id="ec78b-112">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="ec78b-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="1c60a-112">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="1c60a-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="ec78b-113">Internationale Anrufgebühren</span><span class="sxs-lookup"><span data-stu-id="ec78b-113">International call charges apply</span></span>
+<span data-ttu-id="1c60a-113">Internationale Anrufgebühren</span><span class="sxs-lookup"><span data-stu-id="1c60a-113">International call charges apply</span></span>
