@@ -22,84 +22,92 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5f66189979f401430353f4c15978a85276b48840
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: 09c391d6b02e1273f55070283a6e11454f677114
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939754"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52300001"
 ---
-# <a name="manage-incidents-in-microsoft-365-defender"></a><span data-ttu-id="8e5b6-104">Verwalten von Vorfällen in Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="8e5b6-104">Manage incidents in Microsoft 365 Defender</span></span>
+# <a name="manage-incidents-in-microsoft-365-defender"></a><span data-ttu-id="d0d71-104">Verwalten von Vorfällen in Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="d0d71-104">Manage incidents in Microsoft 365 Defender</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="8e5b6-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="8e5b6-105">**Applies to:**</span></span>
-- <span data-ttu-id="8e5b6-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="8e5b6-106">Microsoft 365 Defender</span></span>
+<span data-ttu-id="d0d71-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="d0d71-105">**Applies to:**</span></span>
+- <span data-ttu-id="d0d71-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="d0d71-106">Microsoft 365 Defender</span></span>
 
-<span data-ttu-id="8e5b6-107">Die Vorfallverwaltung ist von entscheidender Bedeutung, um sicherzustellen, dass Bedrohungen eindämmt und behoben werden.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-107">Incident management is critical in ensuring that threats are contained and addressed.</span></span>
+<span data-ttu-id="d0d71-107">Die Vorfallverwaltung ist von entscheidender Bedeutung, um sicherzustellen, dass Bedrohungen eindämmt und behoben werden.</span><span class="sxs-lookup"><span data-stu-id="d0d71-107">Incident management is critical in ensuring that threats are contained and addressed.</span></span>
 
-<span data-ttu-id="8e5b6-108">Sie verwalten Vorfälle aus Vorfällen **& Warnungen > Vorfällen** beim Schnellstart des Microsoft 365 Security Centers ([security.microsoft.com](https://security.microsoft.com)).</span><span class="sxs-lookup"><span data-stu-id="8e5b6-108">You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).</span></span> <span data-ttu-id="8e5b6-109">Im Folgenden sehen Sie ein Beispiel.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-109">Here's an example.</span></span>
+<span data-ttu-id="d0d71-108">Sie verwalten Vorfälle aus Vorfällen **& Warnungen > Vorfällen** beim Schnellstart des Microsoft 365 Security Centers ([security.microsoft.com](https://security.microsoft.com)).</span><span class="sxs-lookup"><span data-stu-id="d0d71-108">You manage incidents from **Incidents & alerts > Incidents** on the quick launch of the Microsoft 365 security center ([security.microsoft.com](https://security.microsoft.com)).</span></span> <span data-ttu-id="d0d71-109">Im Folgenden sehen Sie ein Beispiel.</span><span class="sxs-lookup"><span data-stu-id="d0d71-109">Here's an example.</span></span>
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Beispiel für die Warteschlange für Vorfälle":::
 
-<span data-ttu-id="8e5b6-111">Hier sind die Möglichkeiten, wie Sie Ihre Vorfälle verwalten können:</span><span class="sxs-lookup"><span data-stu-id="8e5b6-111">Here are the ways you can manage your incidents:</span></span>
+<span data-ttu-id="d0d71-111">Hier sind die Möglichkeiten, wie Sie Ihre Vorfälle verwalten können:</span><span class="sxs-lookup"><span data-stu-id="d0d71-111">Here are the ways you can manage your incidents:</span></span>
 
-- <span data-ttu-id="8e5b6-112">Ändern des Vorfallnamens</span><span class="sxs-lookup"><span data-stu-id="8e5b6-112">Change the incident name</span></span>
-- <span data-ttu-id="8e5b6-113">Fügen Sie Vorfalltags hinzu.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-113">Add incident tags.</span></span>
-- <span data-ttu-id="8e5b6-114">Zuweisen des Vorfalls zu einem Benutzerkonto</span><span class="sxs-lookup"><span data-stu-id="8e5b6-114">Assign the incident to a user account</span></span>
-- <span data-ttu-id="8e5b6-115">Auflösen</span><span class="sxs-lookup"><span data-stu-id="8e5b6-115">Resolve them</span></span> 
-- <span data-ttu-id="8e5b6-116">Festlegen der Klassifizierung und Bestimmung</span><span class="sxs-lookup"><span data-stu-id="8e5b6-116">Set its classification and determination</span></span>
-- <span data-ttu-id="8e5b6-117">Fügen Sie Kommentare hinzu.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-117">Add comments.</span></span>
+- <span data-ttu-id="d0d71-112">Ändern des Vorfallnamens</span><span class="sxs-lookup"><span data-stu-id="d0d71-112">Change the incident name</span></span>
+- <span data-ttu-id="d0d71-113">Fügen Sie Vorfalltags hinzu.</span><span class="sxs-lookup"><span data-stu-id="d0d71-113">Add incident tags.</span></span>
+- <span data-ttu-id="d0d71-114">Zuweisen des Vorfalls zu einem Benutzerkonto</span><span class="sxs-lookup"><span data-stu-id="d0d71-114">Assign the incident to a user account</span></span>
+- <span data-ttu-id="d0d71-115">Auflösen</span><span class="sxs-lookup"><span data-stu-id="d0d71-115">Resolve them</span></span> 
+- <span data-ttu-id="d0d71-116">Festlegen der Klassifizierung und Bestimmung</span><span class="sxs-lookup"><span data-stu-id="d0d71-116">Set its classification and determination</span></span>
+- <span data-ttu-id="d0d71-117">Fügen Sie Kommentare hinzu.</span><span class="sxs-lookup"><span data-stu-id="d0d71-117">Add comments.</span></span>
 
-<span data-ttu-id="8e5b6-118">Sie können Vorfälle im Bereich Vorfall verwalten **für** einen Vorfall verwalten.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-118">You can manage incidents from the **Manage incident** pane for an incident.</span></span> <span data-ttu-id="8e5b6-119">Im Folgenden sehen Sie ein Beispiel.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-119">Here's an example.</span></span>
+<span data-ttu-id="d0d71-118">Sie können Vorfälle im Bereich Vorfall verwalten **für** einen Vorfall verwalten.</span><span class="sxs-lookup"><span data-stu-id="d0d71-118">You can manage incidents from the **Manage incident** pane for an incident.</span></span> <span data-ttu-id="d0d71-119">Im Folgenden sehen Sie ein Beispiel.</span><span class="sxs-lookup"><span data-stu-id="d0d71-119">Here's an example.</span></span>
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Beispiel für den Bereich &quot;Vorfall verwalten&quot; eines Vorfalls":::
 
-<span data-ttu-id="8e5b6-121">Sie können diesen Bereich über **den** Link Vorfall verwalten auf der folgenden Seite anzeigen:</span><span class="sxs-lookup"><span data-stu-id="8e5b6-121">You can display this pane from the **Manage incident** link on the:</span></span>
+<span data-ttu-id="d0d71-121">Sie können diesen Bereich über **den** Link Vorfall verwalten auf der folgenden Seite anzeigen:</span><span class="sxs-lookup"><span data-stu-id="d0d71-121">You can display this pane from the **Manage incident** link on the:</span></span>
 
-- <span data-ttu-id="8e5b6-122">Eigenschaftenbereich eines Vorfalls in der Vorfallwarteschlange.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-122">Properties pane of an incident in the incident queue.</span></span>
-- <span data-ttu-id="8e5b6-123">**Zusammenfassungsseite** eines Vorfalls.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-123">**Summary** page of an incident.</span></span>
+- <span data-ttu-id="d0d71-122">Eigenschaftenbereich eines Vorfalls in der Vorfallwarteschlange.</span><span class="sxs-lookup"><span data-stu-id="d0d71-122">Properties pane of an incident in the incident queue.</span></span>
+- <span data-ttu-id="d0d71-123">**Zusammenfassungsseite** eines Vorfalls.</span><span class="sxs-lookup"><span data-stu-id="d0d71-123">**Summary** page of an incident.</span></span>
 
-<span data-ttu-id="8e5b6-124">In Fällen, in denen Sie während der Analyse Warnungen von einem Vorfall  zu einem anderen verschieben möchten, können Sie dies auch auf der Registerkarte Warnungen tun, wodurch ein größerer oder kleinerer Vorfall erstellt wird, der alle relevanten Warnungen enthält.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-124">In cases where, while analyzing you would like to move alerts from one incident to another, you can also do so from the **Alerts** tab, thus creating a larger or smaller incident that includes all relevant alerts.</span></span>
+<span data-ttu-id="d0d71-124">In Fällen, in denen Sie während der Analyse Warnungen von einem Vorfall  zu einem anderen verschieben möchten, können Sie dies auch auf der Registerkarte Warnungen tun, wodurch ein größerer oder kleinerer Vorfall erstellt wird, der alle relevanten Warnungen enthält.</span><span class="sxs-lookup"><span data-stu-id="d0d71-124">In cases where, while analyzing you would like to move alerts from one incident to another, you can also do so from the **Alerts** tab, thus creating a larger or smaller incident that includes all relevant alerts.</span></span>
 
-## <a name="edit-the-incident-name"></a><span data-ttu-id="8e5b6-125">Bearbeiten des Vorfallnamens</span><span class="sxs-lookup"><span data-stu-id="8e5b6-125">Edit the incident name</span></span>
+## <a name="edit-the-incident-name"></a><span data-ttu-id="d0d71-125">Bearbeiten des Vorfallnamens</span><span class="sxs-lookup"><span data-stu-id="d0d71-125">Edit the incident name</span></span>
 
-<span data-ttu-id="8e5b6-126">Microsoft 365 Defender weist automatisch einen Namen basierend auf Warnungsattributen zu, z. B. der Anzahl betroffener Endpunkte, betroffener Benutzer, Erkennungsquellen oder Kategorien.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-126">Microsoft 365 Defender automatically assigns a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories.</span></span> <span data-ttu-id="8e5b6-127">Auf diese Weise können Sie den Umfang des Vorfalls schnell verstehen.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-127">This allows you to quickly understand the scope of the incident.</span></span> <span data-ttu-id="8e5b6-128">Beispiel: *Mehrstufiger Vorfall auf mehreren Endpunkten, die von mehreren Quellen gemeldet wurden.*</span><span class="sxs-lookup"><span data-stu-id="8e5b6-128">For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*</span></span>
+<span data-ttu-id="d0d71-126">Microsoft 365 Defender weist automatisch einen Namen basierend auf Warnungsattributen zu, z. B. der Anzahl betroffener Endpunkte, betroffener Benutzer, Erkennungsquellen oder Kategorien.</span><span class="sxs-lookup"><span data-stu-id="d0d71-126">Microsoft 365 Defender automatically assigns a name based on alert attributes such as the number of endpoints affected, users affected, detection sources or categories.</span></span> <span data-ttu-id="d0d71-127">Auf diese Weise können Sie den Umfang des Vorfalls schnell verstehen.</span><span class="sxs-lookup"><span data-stu-id="d0d71-127">This allows you to quickly understand the scope of the incident.</span></span> <span data-ttu-id="d0d71-128">Beispiel: *Mehrstufiger Vorfall auf mehreren Endpunkten, die von mehreren Quellen gemeldet wurden.*</span><span class="sxs-lookup"><span data-stu-id="d0d71-128">For example: *Multi-stage incident on multiple endpoints reported by multiple sources.*</span></span>
 
-<span data-ttu-id="8e5b6-129">Sie können den Vorfallnamen im Feld **Vorfallname** im Bereich Vorfall **verwalten** bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-129">You can edit the incident name from the **Incident name** field on the **Manage incident** pane.</span></span>
+<span data-ttu-id="d0d71-129">Sie können den Vorfallnamen im Feld **Vorfallname** im Bereich Vorfall **verwalten** bearbeiten.</span><span class="sxs-lookup"><span data-stu-id="d0d71-129">You can edit the incident name from the **Incident name** field on the **Manage incident** pane.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="8e5b6-130">Vorfälle, die vor dem Rollout der funktion für die automatische Benennung von Vorfällen vorhanden waren, behalten ihren Namen.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-130">Incidents that existed before the rollout of the automatic incident naming feature will retain their name.</span></span>
+> <span data-ttu-id="d0d71-130">Vorfälle, die vor dem Rollout der funktion für die automatische Benennung von Vorfällen vorhanden waren, behalten ihren Namen.</span><span class="sxs-lookup"><span data-stu-id="d0d71-130">Incidents that existed before the rollout of the automatic incident naming feature will retain their name.</span></span>
 
-## <a name="add-incident-tags"></a><span data-ttu-id="8e5b6-131">Hinzufügen von Ereigniskategorien</span><span class="sxs-lookup"><span data-stu-id="8e5b6-131">Add incident tags</span></span>
+## <a name="add-incident-tags"></a><span data-ttu-id="d0d71-131">Hinzufügen von Ereigniskategorien</span><span class="sxs-lookup"><span data-stu-id="d0d71-131">Add incident tags</span></span>
 
-<span data-ttu-id="8e5b6-132">Sie können einem Vorfall benutzerdefinierte Tags hinzufügen, um beispielsweise eine Gruppe von Vorfällen mit einem gemeinsamen Merkmal zu kennzeichnen.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-132">You can add custom tags to an incident, for example to flag a group of incidents with a common characteristic.</span></span> <span data-ttu-id="8e5b6-133">Sie können die Vorfallwarteschlange später nach allen Vorfällen filtern, die ein bestimmtes Tag enthalten.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-133">You can later filter the incident queue for all incidents that contain a specific tag.</span></span>
+<span data-ttu-id="d0d71-132">Sie können einem Vorfall benutzerdefinierte Tags hinzufügen, um beispielsweise eine Gruppe von Vorfällen mit einem gemeinsamen Merkmal zu kennzeichnen.</span><span class="sxs-lookup"><span data-stu-id="d0d71-132">You can add custom tags to an incident, for example to flag a group of incidents with a common characteristic.</span></span> <span data-ttu-id="d0d71-133">Sie können die Vorfallwarteschlange später nach allen Vorfällen filtern, die ein bestimmtes Tag enthalten.</span><span class="sxs-lookup"><span data-stu-id="d0d71-133">You can later filter the incident queue for all incidents that contain a specific tag.</span></span>
 
-<span data-ttu-id="8e5b6-134">Wenn Sie mit der Eingabe beginnen, haben Sie die Möglichkeit, aus einer Liste ausgewählter Tags auszuwählen.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-134">When you start typing, you have the option to select from a list of selected tags.</span></span>
+<span data-ttu-id="d0d71-134">Wenn Sie mit der Eingabe beginnen, haben Sie die Möglichkeit, aus einer Liste ausgewählter Tags auszuwählen.</span><span class="sxs-lookup"><span data-stu-id="d0d71-134">When you start typing, you have the option to select from a list of selected tags.</span></span>
 
-## <a name="assign-incidents"></a><span data-ttu-id="8e5b6-135">Zuweisen von Vorfällen</span><span class="sxs-lookup"><span data-stu-id="8e5b6-135">Assign incidents</span></span>
+## <a name="assign-incidents"></a><span data-ttu-id="d0d71-135">Zuweisen von Vorfällen</span><span class="sxs-lookup"><span data-stu-id="d0d71-135">Assign incidents</span></span>
 
-<span data-ttu-id="8e5b6-136">Wenn ein Vorfall noch nicht zugewiesen wurde, können Sie **Zuweisen zu** auswählen und das Benutzerkonto angeben.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-136">If an incident has not yet been assigned, you can select **Assign to** and specify the user account.</span></span> <span data-ttu-id="8e5b6-137">Dadurch wird der Besitz des Vorfalls und aller damit verbundenen Warnungen zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-137">Doing so assigns ownership of the incident and all the alerts associated with it.</span></span>
+<span data-ttu-id="d0d71-136">Wenn ein Vorfall noch nicht zugewiesen wurde, können Sie **Zuweisen zu** auswählen und das Benutzerkonto angeben.</span><span class="sxs-lookup"><span data-stu-id="d0d71-136">If an incident has not yet been assigned, you can select **Assign to** and specify the user account.</span></span> <span data-ttu-id="d0d71-137">Dadurch wird der Besitz des Vorfalls und aller damit verbundenen Warnungen zugewiesen.</span><span class="sxs-lookup"><span data-stu-id="d0d71-137">Doing so assigns ownership of the incident and all the alerts associated with it.</span></span>
 
-## <a name="resolve-incident"></a><span data-ttu-id="8e5b6-138">Beheben eines Vorfalls</span><span class="sxs-lookup"><span data-stu-id="8e5b6-138">Resolve incident</span></span>
+## <a name="resolve-incident"></a><span data-ttu-id="d0d71-138">Beheben eines Vorfalls</span><span class="sxs-lookup"><span data-stu-id="d0d71-138">Resolve incident</span></span>
 
-<span data-ttu-id="8e5b6-139">Wenn der Vorfall behoben wurde, wählen Sie **Vorfall** beheben aus, um den Umschalter nach rechts zu verschieben.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-139">If the incident has been remediated, select **Resolve incident** to move the toggle to the right.</span></span> <span data-ttu-id="8e5b6-140">Beachten Sie, dass beim Auflösen eines Vorfalls auch alle verknüpften und aktiven Warnungen im Zusammenhang mit dem Vorfall behoben werden.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-140">Note that resolving an incident also resolves all the linked and active alerts related to the incident.</span></span>
+<span data-ttu-id="d0d71-139">Wenn der Vorfall behoben wurde, wählen Sie **Vorfall** beheben aus, um den Umschalter nach rechts zu verschieben.</span><span class="sxs-lookup"><span data-stu-id="d0d71-139">If the incident has been remediated, select **Resolve incident** to move the toggle to the right.</span></span> <span data-ttu-id="d0d71-140">Beachten Sie, dass beim Auflösen eines Vorfalls auch alle verknüpften und aktiven Warnungen im Zusammenhang mit dem Vorfall behoben werden.</span><span class="sxs-lookup"><span data-stu-id="d0d71-140">Note that resolving an incident also resolves all the linked and active alerts related to the incident.</span></span>
 
-<span data-ttu-id="8e5b6-141">Ein nicht aufgelöster Vorfall wird als **Aktiv angezeigt.**</span><span class="sxs-lookup"><span data-stu-id="8e5b6-141">An incident that is not resolved displays as **Active**.</span></span>
+<span data-ttu-id="d0d71-141">Ein nicht aufgelöster Vorfall wird als **Aktiv angezeigt.**</span><span class="sxs-lookup"><span data-stu-id="d0d71-141">An incident that is not resolved displays as **Active**.</span></span>
 
-## <a name="set-the-classification-and-determination"></a><span data-ttu-id="8e5b6-142">Festlegen der Klassifizierung und Ermittlung</span><span class="sxs-lookup"><span data-stu-id="8e5b6-142">Set the classification and determination</span></span>
+## <a name="set-the-classification-and-determination"></a><span data-ttu-id="d0d71-142">Festlegen der Klassifizierung und Ermittlung</span><span class="sxs-lookup"><span data-stu-id="d0d71-142">Set the classification and determination</span></span>
 
-<span data-ttu-id="8e5b6-143">Die Vorfallklassifizierung ist, ob es sich um eine echte warnung oder eine falsche Warnung handelt, die Sie im Feld **Klassifizierung konfigurieren.**</span><span class="sxs-lookup"><span data-stu-id="8e5b6-143">The incident classification is whether it was a true alert or a false alert, which you configure from the **Classification** field.</span></span> 
+<span data-ttu-id="d0d71-143">Die Vorfallklassifizierung ist, ob es sich um eine echte warnung oder eine falsche Warnung handelt, die Sie im Feld **Klassifizierung konfigurieren.**</span><span class="sxs-lookup"><span data-stu-id="d0d71-143">The incident classification is whether it was a true alert or a false alert, which you configure from the **Classification** field.</span></span> 
 
-<span data-ttu-id="8e5b6-144">Wenn es sich um eine echte Warnung handeln sollte, sollten Sie auch angeben, um welche Art von Bedrohung es sich bei dem Feld **Bestimmung handeln** sollte.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-144">If it was a true alert, you should also specify what type of threat it was with the **Determination** field.</span></span> <span data-ttu-id="8e5b6-145">Das Angeben des Bedrohungstyps hilft Ihrem Sicherheitsteam, Bedrohungsmuster zu erkennen und zu handeln, um Ihre Organisation vor ihnen zu schützen.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-145">Specifying the threat type helps your security team see threat patterns and act to defend your organization from them.</span></span> 
+<span data-ttu-id="d0d71-144">Wenn es sich um eine echte Warnung handeln sollte, sollten Sie auch angeben, um welche Art von Bedrohung es sich bei dem Feld **Bestimmung handeln** sollte.</span><span class="sxs-lookup"><span data-stu-id="d0d71-144">If it was a true alert, you should also specify what type of threat it was with the **Determination** field.</span></span> <span data-ttu-id="d0d71-145">Das Angeben des Bedrohungstyps hilft Ihrem Sicherheitsteam, Bedrohungsmuster zu erkennen und zu handeln, um Ihre Organisation vor ihnen zu schützen.</span><span class="sxs-lookup"><span data-stu-id="d0d71-145">Specifying the threat type helps your security team see threat patterns and act to defend your organization from them.</span></span> 
 
-## <a name="add-comments"></a><span data-ttu-id="8e5b6-146">Kommentare hinzufügen</span><span class="sxs-lookup"><span data-stu-id="8e5b6-146">Add comments</span></span>
+## <a name="add-comments"></a><span data-ttu-id="d0d71-146">Kommentare hinzufügen</span><span class="sxs-lookup"><span data-stu-id="d0d71-146">Add comments</span></span>
 
-<span data-ttu-id="8e5b6-147">Sie können einem Vorfall mit dem Feld Kommentar mehrere **Kommentare** hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-147">You can add multiple comments to an incident with the **Comment** field.</span></span> <span data-ttu-id="8e5b6-148">Jeder Kommentar wird den historischen Ereignissen des Vorfalls hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-148">Each comment gets added to the historical events of the incident.</span></span> <span data-ttu-id="8e5b6-149">Sie können die Kommentare und den Verlauf eines Vorfalls über den Link **Kommentare und** Verlauf auf der **Seite Zusammenfassung** anzeigen.</span><span class="sxs-lookup"><span data-stu-id="8e5b6-149">You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.</span></span>
+<span data-ttu-id="d0d71-147">Sie können einem Vorfall mit dem Feld Kommentar mehrere **Kommentare** hinzufügen.</span><span class="sxs-lookup"><span data-stu-id="d0d71-147">You can add multiple comments to an incident with the **Comment** field.</span></span> <span data-ttu-id="d0d71-148">Jeder Kommentar wird den historischen Ereignissen des Vorfalls hinzugefügt.</span><span class="sxs-lookup"><span data-stu-id="d0d71-148">Each comment gets added to the historical events of the incident.</span></span> <span data-ttu-id="d0d71-149">Sie können die Kommentare und den Verlauf eines Vorfalls über den Link **Kommentare und** Verlauf auf der **Seite Zusammenfassung** anzeigen.</span><span class="sxs-lookup"><span data-stu-id="d0d71-149">You can see the comments and history of an incident from the **Comments and history** link on the **Summary** page.</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="8e5b6-150">Verwandte Themen</span><span class="sxs-lookup"><span data-stu-id="8e5b6-150">Related topics</span></span>
+## <a name="next-steps"></a><span data-ttu-id="d0d71-150">Nächste Schritte</span><span class="sxs-lookup"><span data-stu-id="d0d71-150">Next steps</span></span>
 
-- [<span data-ttu-id="8e5b6-151">Übersicht über Vorfälle</span><span class="sxs-lookup"><span data-stu-id="8e5b6-151">Incidents overview</span></span>](incidents-overview.md)
-- [<span data-ttu-id="8e5b6-152">Priorisieren von Vorfällen</span><span class="sxs-lookup"><span data-stu-id="8e5b6-152">Prioritize incidents</span></span>](incident-queue.md)
-- [<span data-ttu-id="8e5b6-153">Analysieren von Vorfällen</span><span class="sxs-lookup"><span data-stu-id="8e5b6-153">Analyze incidents</span></span>](investigate-incidents.md)
+<span data-ttu-id="d0d71-151">Beginnen Sie bei neuen Vorfällen mit ihrer [Untersuchung.](investigate-incidents.md)</span><span class="sxs-lookup"><span data-stu-id="d0d71-151">For new incidents, begin your [investigation](investigate-incidents.md).</span></span>
+
+<span data-ttu-id="d0d71-152">Bei In-Process-Vorfällen setzen Sie Ihre Untersuchung [fort.](investigate-incidents.md)</span><span class="sxs-lookup"><span data-stu-id="d0d71-152">For in-process incidents, continue your [investigation](investigate-incidents.md).</span></span>
+
+<span data-ttu-id="d0d71-153">Führen Sie bei gelösten Vorfällen eine [Überprüfung nach dem Vorfall durch.](first-incident-post.md)</span><span class="sxs-lookup"><span data-stu-id="d0d71-153">For resolved incidents, perform a [post-incident review](first-incident-post.md).</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="d0d71-154">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="d0d71-154">See also</span></span>
+
+- [<span data-ttu-id="d0d71-155">Übersicht über Vorfälle</span><span class="sxs-lookup"><span data-stu-id="d0d71-155">Incidents overview</span></span>](incidents-overview.md)
+- [<span data-ttu-id="d0d71-156">Priorisieren von Vorfällen</span><span class="sxs-lookup"><span data-stu-id="d0d71-156">Prioritize incidents</span></span>](incident-queue.md)
+- [<span data-ttu-id="d0d71-157">Untersuchen von Vorfällen</span><span class="sxs-lookup"><span data-stu-id="d0d71-157">Investigate incidents</span></span>](investigate-incidents.md)

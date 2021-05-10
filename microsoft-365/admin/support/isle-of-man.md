@@ -12,27 +12,27 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 42e972303f2e4409a50aa7bde8dea8aeda0b1f27
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 44272c6d0442b02b2155f7581d389002dfc6f1a3
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546652"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298611"
 ---
-# <a name="contact-support-for-isle-of-man"></a><span data-ttu-id="93a79-103">Kontaktieren des Support für Isle of Man</span><span class="sxs-lookup"><span data-stu-id="93a79-103">Contact support for Isle of Man</span></span>
+# <a name="contact-support-for-isle-of-man"></a><span data-ttu-id="f52b5-103">Kontaktieren des Support für Isle of Man</span><span class="sxs-lookup"><span data-stu-id="f52b5-103">Contact support for Isle of Man</span></span>
 
-<span data-ttu-id="93a79-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="93a79-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="f52b5-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="f52b5-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="93a79-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="93a79-105">Phone number</span></span>
-<span data-ttu-id="93a79-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="93a79-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="f52b5-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="f52b5-105">Phone number</span></span>
+<span data-ttu-id="f52b5-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="f52b5-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="93a79-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="93a79-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="93a79-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="93a79-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="f52b5-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="f52b5-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="f52b5-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="f52b5-108">Billing Support:</span></span>
 
-<span data-ttu-id="93a79-109">Englisch: Mon-Fri 10:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="93a79-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="f52b5-109">Englisch: Mon-Fri 10:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="f52b5-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="93a79-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="93a79-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="f52b5-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="f52b5-110">Technical Support:</span></span>
 
-<span data-ttu-id="93a79-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="93a79-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="f52b5-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="f52b5-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="93a79-112">Internationale Anrufgebühren</span><span class="sxs-lookup"><span data-stu-id="93a79-112">International call charges apply</span></span>
+<span data-ttu-id="f52b5-112">Internationale Anrufgebühren</span><span class="sxs-lookup"><span data-stu-id="f52b5-112">International call charges apply</span></span>

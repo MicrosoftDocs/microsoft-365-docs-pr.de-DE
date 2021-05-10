@@ -12,25 +12,25 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 68cef42e76f8148114f0f022b0cc8c99438c5420
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 72f4b3d43b765943fc83e70c6e47e60c1fdaa6fb
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50545500"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297980"
 ---
-# <a name="contact-support-for-nepal"></a><span data-ttu-id="ed4ec-103">Kontaktieren des Support für Nepal</span><span class="sxs-lookup"><span data-stu-id="ed4ec-103">Contact support for Nepal</span></span>
+# <a name="contact-support-for-nepal"></a><span data-ttu-id="4225b-103">Kontaktieren des Support für Nepal</span><span class="sxs-lookup"><span data-stu-id="4225b-103">Contact support for Nepal</span></span>
 
-<span data-ttu-id="ed4ec-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="ed4ec-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="4225b-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="4225b-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="ed4ec-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="ed4ec-105">Phone number</span></span>
-<span data-ttu-id="ed4ec-106">Telefonsupport nicht verfügbar; nur Onlinesupport.</span><span class="sxs-lookup"><span data-stu-id="ed4ec-106">Telephone support not available; only online support.</span></span>
+## <a name="phone-number"></a><span data-ttu-id="4225b-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="4225b-105">Phone number</span></span>
+<span data-ttu-id="4225b-106">Telefonsupport nicht verfügbar; nur Onlinesupport.</span><span class="sxs-lookup"><span data-stu-id="4225b-106">Telephone support not available; only online support.</span></span>
 
-## <a name="hours"></a><span data-ttu-id="ed4ec-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="ed4ec-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="ed4ec-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="ed4ec-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="4225b-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="4225b-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="4225b-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="4225b-108">Billing Support:</span></span>
 
-<span data-ttu-id="ed4ec-109">Telefonisch nicht verfügbar</span><span class="sxs-lookup"><span data-stu-id="ed4ec-109">Not available by phone</span></span>
+<span data-ttu-id="4225b-109">Telefonisch nicht verfügbar</span><span class="sxs-lookup"><span data-stu-id="4225b-109">Not available by phone</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="ed4ec-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="ed4ec-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="4225b-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="4225b-110">Technical Support:</span></span>
 
-<span data-ttu-id="ed4ec-111">Telefonisch nicht verfügbar</span><span class="sxs-lookup"><span data-stu-id="ed4ec-111">Not available by phone</span></span>
+<span data-ttu-id="4225b-111">Telefonisch nicht verfügbar</span><span class="sxs-lookup"><span data-stu-id="4225b-111">Not available by phone</span></span>

@@ -12,37 +12,37 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e2cb2465575d2d65dbfe9d8580ed371fb985c92d
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 5d73b54a60b22ac74a55c301b3bd9344ee83352f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50547252"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298818"
 ---
-# <a name="contact-support-for-georgia"></a><span data-ttu-id="f3012-103">Kontaktieren des Support für Georgien</span><span class="sxs-lookup"><span data-stu-id="f3012-103">Contact support for Georgia</span></span>
+# <a name="contact-support-for-georgia"></a><span data-ttu-id="59855-103">Kontaktieren des Support für Georgien</span><span class="sxs-lookup"><span data-stu-id="59855-103">Contact support for Georgia</span></span>
 
-<span data-ttu-id="f3012-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="f3012-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="59855-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="59855-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="f3012-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="f3012-105">Phone number</span></span>
-<span data-ttu-id="f3012-106">032 297 0124</span><span class="sxs-lookup"><span data-stu-id="f3012-106">032 297 0124</span></span>
+## <a name="phone-number"></a><span data-ttu-id="59855-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="59855-105">Phone number</span></span>
+<span data-ttu-id="59855-106">032 297 0124</span><span class="sxs-lookup"><span data-stu-id="59855-106">032 297 0124</span></span>
 
-<span data-ttu-id="f3012-107">Option 2 auswählen</span><span class="sxs-lookup"><span data-stu-id="f3012-107">Select option 2</span></span>
+<span data-ttu-id="59855-107">Option 2 auswählen</span><span class="sxs-lookup"><span data-stu-id="59855-107">Select option 2</span></span>
 
-<span data-ttu-id="f3012-108">Option 9 auswählen</span><span class="sxs-lookup"><span data-stu-id="f3012-108">Select option 9</span></span>
+<span data-ttu-id="59855-108">Option 9 auswählen</span><span class="sxs-lookup"><span data-stu-id="59855-108">Select option 9</span></span>
 
-<span data-ttu-id="f3012-109">Eingabecode 7700</span><span class="sxs-lookup"><span data-stu-id="f3012-109">Enter code 7700</span></span>
+<span data-ttu-id="59855-109">Eingabecode 7700</span><span class="sxs-lookup"><span data-stu-id="59855-109">Enter code 7700</span></span>
 
-## <a name="hours"></a><span data-ttu-id="f3012-110">Stunden</span><span class="sxs-lookup"><span data-stu-id="f3012-110">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="f3012-111">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="f3012-111">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="59855-110">Stunden</span><span class="sxs-lookup"><span data-stu-id="59855-110">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="59855-111">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="59855-111">Billing Support:</span></span>
 
-<span data-ttu-id="f3012-112">Russisch: Mon-Fri 10:00-19:00 Uhr Moskau</span><span class="sxs-lookup"><span data-stu-id="f3012-112">Russian: Mon-Fri 10 AM-7 PM Moscow</span></span>
+<span data-ttu-id="59855-112">Russisch: Mon-Fri 10:00-19:00 Uhr Moskau</span><span class="sxs-lookup"><span data-stu-id="59855-112">Russian: Mon-Fri 10 AM-7 PM Moscow</span></span>
 
-<span data-ttu-id="f3012-113">Englisch: Mon-Fri 09:00-17:00 Uhr London</span><span class="sxs-lookup"><span data-stu-id="f3012-113">English: Mon-Fri 9 AM-5 PM London</span></span>
+<span data-ttu-id="59855-113">Englisch: Mon-Fri 09:00-17:00 Uhr London</span><span class="sxs-lookup"><span data-stu-id="59855-113">English: Mon-Fri 9 AM-5 PM London</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="f3012-114">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="f3012-114">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="59855-114">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="59855-114">Technical Support:</span></span>
 
-<span data-ttu-id="f3012-115">Russisch: Mon-Fri 07:00-20:00 Uhr In Moskau</span><span class="sxs-lookup"><span data-stu-id="f3012-115">Russian: Mon-Fri 7 AM-8 PM Moscow</span></span>
+<span data-ttu-id="59855-115">Russisch: Mon-Fri 07:00-20:00 Uhr In Moskau</span><span class="sxs-lookup"><span data-stu-id="59855-115">Russian: Mon-Fri 7 AM-8 PM Moscow</span></span>
 
-<span data-ttu-id="f3012-116">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="f3012-116">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="59855-116">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="59855-116">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="f3012-117">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="f3012-117">Local call charges apply</span></span>
+<span data-ttu-id="59855-117">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="59855-117">Local call charges apply</span></span>

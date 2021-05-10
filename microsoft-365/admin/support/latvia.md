@@ -12,25 +12,25 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4d06a8beca5670fec4c03bdad7ae52f3f2130ac8
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 7b52cdc7eee24989febd6d69dc0e4603a20bfa4c
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50546295"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52298445"
 ---
-# <a name="contact-support-for-latvia"></a><span data-ttu-id="2f971-103">Wenden Sie sich an den Support für Lettland</span><span class="sxs-lookup"><span data-stu-id="2f971-103">Contact support for Latvia</span></span>
+# <a name="contact-support-for-latvia"></a><span data-ttu-id="c7117-103">Wenden Sie sich an den Support für Lettland</span><span class="sxs-lookup"><span data-stu-id="c7117-103">Contact support for Latvia</span></span>
 
-<span data-ttu-id="2f971-104">[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="2f971-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="c7117-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="c7117-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="2f971-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="2f971-105">Phone number</span></span>
-<span data-ttu-id="2f971-106">8000 42 33</span><span class="sxs-lookup"><span data-stu-id="2f971-106">8000 42 33</span></span>
+## <a name="phone-number"></a><span data-ttu-id="c7117-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="c7117-105">Phone number</span></span>
+<span data-ttu-id="c7117-106">8000 42 33</span><span class="sxs-lookup"><span data-stu-id="c7117-106">8000 42 33</span></span>
 
-## <a name="hours"></a><span data-ttu-id="2f971-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="2f971-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="2f971-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="2f971-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="c7117-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="c7117-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="c7117-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="c7117-108">Billing Support:</span></span>
 
-<span data-ttu-id="2f971-109">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="2f971-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="c7117-109">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="c7117-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="2f971-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="2f971-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="c7117-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="c7117-110">Technical Support:</span></span>
 
-<span data-ttu-id="2f971-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="2f971-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="c7117-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="c7117-111">English: 24 hours a day, 7 days a week</span></span>
