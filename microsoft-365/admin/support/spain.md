@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8de63fad7741171dc628ff9064796d64dccd96da
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 55b2406147272cf1aff69e0469f1cc7e6fce9ef2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544252"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295175"
 ---
 # <a name="contact-support-for-spain"></a>Kontaktieren des Support für Spanien
 
-[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
+[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 900 814 197
@@ -39,6 +39,6 @@ Spanisch: Mon-Fri 08:00-21:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefonnummer: 912 718 160
+Alternative Telefon Nummer: 912 718 160
 
 Es gelten die Ortstarife.

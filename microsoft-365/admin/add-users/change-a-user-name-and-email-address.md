@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Erfahren Sie, wie ein globaler Administrator die E-Mail-Adresse und den Anzeigenamen eines Benutzers ändern kann. '
-ms.openlocfilehash: 94ed05d87fa290f2ae1059ae04c62c5d0d5e6860
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: a785ef17f0823429ad5eb216a330dc6f04dc7761
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023773"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291019"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändern von Benutzernamen und -E-Mail-Adressen
 
@@ -50,7 +50,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
     
 2. Wählen Sie den Namen des Benutzers aus, und wählen Sie dann in der Registerkarte **Konto** **Benutzernamen verwalten** aus.
     
-3. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, wählen Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste aus. 
+3. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen. 
 
 4. Wählen Sie **Änderungen speichern** aus.
 
@@ -65,7 +65,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 3. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen.
 
-4. Wählen Sie **Speichern** aus.
+4. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -221,7 +221,7 @@ Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam 
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>„Es wurde kein Parameter gefunden, der dem Parameternamen ‚E-Mail-Adressen‘ entspricht“
 
-Wenn die Fehlermeldung „**Es wurde kein Parameter gefunden, der dem Parameternamen 'EmailAddresses' entspricht**“ angezeigt wird, bedeutet dies, dass es etwas länger dauert, bis das Einrichten Ihres Mandanten oder Ihrer benutzerdefinierten Domäne (falls Sie kürzlich eine hinzugefügt haben) abgeschlossen ist. Der Setupvorgang kann bis zu 4 Stunden dauern. Warten Sie eine Zeitlang, damit dieser Vorgang abgeschlossen werden kann. Versuchen Sie es dann erneut. Sollte das Problem weiterhin bestehen, rufen Sie den [Support](../contact-support-for-business-products.md) an und bitten Sie um eine vollständige Synchronisierung.
+Wenn die Fehlermeldung „**Es wurde kein Parameter gefunden, der dem Parameternamen 'EmailAddresses' entspricht**“ angezeigt wird, bedeutet dies, dass es etwas länger dauert, bis das Einrichten Ihres Mandanten oder Ihrer benutzerdefinierten Domäne (falls Sie kürzlich eine hinzugefügt haben) abgeschlossen ist. Der Setupvorgang kann bis zu 4 Stunden dauern. Warten Sie eine Zeitlang, damit dieser Vorgang abgeschlossen werden kann. Versuchen Sie es dann erneut. Sollte das Problem weiterhin bestehen, rufen Sie den [Support](../../business-video/get-help-support.md) an und bitten Sie um eine vollständige Synchronisierung.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>„Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen und versuchen Sie es noch einmal“
 

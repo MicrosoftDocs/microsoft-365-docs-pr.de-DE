@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Administratoren können sich über die Anti-Spoofing-Funktionen informieren, die in Exchange Online Protection (EOP) verfügbar sind und die dazu beitragen können, Phishing-Angriffe von gefälschten Absendern und Domänen abzuschwächen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 20294bf00c62e59da33b54ea0c8ee85f7b1372af
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 76ad8ac14de7b176ae12dc02272e31e790b6b410
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769022"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291031"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Schutz vor Spoofing in EOP
 
@@ -80,7 +80,7 @@ Spoofingnachrichten weisen die folgenden negativen Auswirkungen für Benutzer au
 
   ![Seriöse Nachricht zur Kennwortzurücksetzung von Microsoft](../../media/58a3154f-e83d-4f86-bcfe-ae9e8c87bd37.jpg)
 
-  Die Nachricht stammt tatsächlich von Microsoft, jedoch sind Benutzer inzwischen darauf konditioniert, misstrauisch zu sein. Da es schwierig ist, zwischen einer echten Nachricht zur Kennwortzurücksetzung und einer gefälschten zu unterscheiden, könnten Benutzer diese Nachricht ignorieren, sie als Spam melden oder sie unnötigerweise als Phishing-Versuch an Microsoft melden.
+  Die Nachricht kam wirklich von Microsoft, aber die Benutzer wurden als verdächtig eingestuft. Da es schwierig ist, zwischen einer echten und einer gefälschten Nachricht zum Zurücksetzen des Kennworts zu unterscheiden, können Benutzer die Nachricht ignorieren, als Spam melden oder sie unnötigerweise als Phishing an Microsoft melden.
 
 ## <a name="different-types-of-spoofing"></a>Verschiedene Typen von Spoofing
 
@@ -139,11 +139,11 @@ Mailinglisten (auch bekannt als Diskussionslisten) haben bekanntermaßen Problem
 
 Beispielsweise interessiert sich Gabriela Laureano (glaureano@contoso.com) für Vogelbeobachtung, schließt sich der Diskussionsliste birdwatchers@fabrikam.com an und schickt folgende Nachricht an die Liste:
 
-> **Von:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br> **Betreff:** Großartiger Blick auf Eichelhäher am Mount Rainier diese Woche <p> Jemand Interesse an diesem Ausblick von dieser Woche am Mount Rainier?
+> **Von:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br> **Betreff:** Großartiger Blick auf Eichelhäher am Mount Rainier diese Woche <p> Möchten Sie sich den Ausblick dieser Woche vom Mount Rainier anschauen?
 
 Der Diskussionslisten-Server empfängt die Nachricht, ändert deren Inhalt und sendet sie an die Mitglieder der Liste. Die an die Mitglieder ausgesendete Nachricht hat zwar die gleiche „Von“-Adresse (glaureano@contoso.com), jedoch wurde der Betreffzeile ein Tag und eine der Nachricht eine Fußzeile hinzugefügt. Diese Art von Änderung ist in Diskussionslisten üblich und kann zu falsch-positiven Ergebnissen der Spoofing-Prüfung führen.
 
-> **Von:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br> **Betreff:** [BIRDWATCHERS] Großartiger Blick auf Eichelhäher am Mount Rainier diese Woche <p> Jemand Interesse an diesem Ausblick von dieser Woche am Mount Rainier? <p> Diese Nachricht wurde an die Diskussionsgruppe Vögelbeobachtung gesendet. Sie können sich jederzeit wieder abmelden.
+> **Von:** "Gabriela Laureano" \<glaureano@contoso.com\> <br> **To:** Birdwatcher's Discussion List \<birdwatchers@fabrikam.com\> <br> **Betreff:** [BIRDWATCHERS] Großartiger Blick auf Eichelhäher am Mount Rainier diese Woche <p> Möchten Sie sich den Ausblick dieser Woche vom Mount Rainier anschauen? <p> Diese Nachricht wurde an die Diskussionsgruppe Vögelbeobachtung gesendet. Sie können sich jederzeit wieder abmelden.
 
 Um Nachrichten aus Diskussionslisten dabei zu helfen, die Anti-Spoofing-Prüfungen zu bestehen, führen Sie die folgenden Schritte aus, je nachdem, ob Sie die Diskussionsliste kontrollieren:
 
@@ -163,7 +163,7 @@ Um Nachrichten aus Diskussionslisten dabei zu helfen, die Anti-Spoofing-Prüfung
 
   - Erstellen Sie in Ihrem E-Mail-Client Regeln, um die Nachrichten in den Posteingang zu verschieben. Sie können auch Ihre Administratoren bitten, Außerkraftsetzungen so zu konfigurieren, wie dies in [Spoof-Intelligenz zur Konfiguration zulässiger Absender unauthentifizierter E-Mails verwenden](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email) beschrieben ist.
 
-  - Erstellen Sie ein Supportticket für Microsoft 365, um eine Außerkraftsetzung für die Diskussionsliste zu erstellen, damit sie als seriöser Empfänger gehandhabt wird. Weitere Informationen finden Sie unter [Kontaktieren des Supports für Business-Produkte – Administratorhilfe](../../admin/contact-support-for-business-products.md).
+  - Erstellen Sie ein Supportticket für Microsoft 365, um eine Außerkraftsetzung für die Diskussionsliste zu erstellen, damit sie als seriöser Empfänger gehandhabt wird. Weitere Informationen finden Sie unter [Kontaktieren des Supports für Business-Produkte – Administratorhilfe](../../business-video/get-help-support.md).
 
 Falls alles andere fehlschlägt, können Sie die Nachricht als falsch-positiv an Microsoft melden. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 

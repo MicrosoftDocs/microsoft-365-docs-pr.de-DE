@@ -12,16 +12,16 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 93e61b4da34ebf6e843bef16d1b928a3467243d2
-ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
+ms.openlocfilehash: 98bfea4fb7665a2cee22f704b2f73a9c49ef4a2f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "50544036"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52295127"
 ---
 # <a name="contact-support-for-switzerland"></a>Kontaktieren des Support für die Schweiz
 
-[Suchen Sie ein anderes Land oder eine andere Region](../contact-support-for-business-products.md).
+[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).
 
 ## <a name="phone-number"></a>Telefonnummer
 0800 000 300
@@ -47,6 +47,6 @@ Italienisch: Mon-Fri 08:00-21:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefonnummer: 022 76 141 14
+Alternative Telefon Nummer: 022 76 141 14
 
 Es gelten die Ortstarife.

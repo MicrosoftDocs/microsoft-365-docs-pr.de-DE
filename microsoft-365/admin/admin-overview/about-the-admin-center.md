@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Über das Admin Center können Sie Ihre Organisation in der Cloud einrichten sowie Benutzer und Abonnements verwalten. Beginnen Sie, indem Sie sich bei einem Konto mit Administratorberechtigungen anmelden.
-ms.openlocfilehash: f2b8a22019e3292c93d07161f3825dfe90629ccc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: db88904e16cf9410d3eb4e4aac161f714993150b
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241748"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52290983"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Informationen zum Microsoft 365 Admin Center
 
@@ -64,7 +64,7 @@ Hier die Funktionen und Einstellungen, die sich in der Navigationsleiste auf der
 |**Gruppen** <br/> |Erstellen und verwalten Sie Gruppen in Ihrer Organisation, z. B. eine Microsoft 365-Gruppe, Verteilergruppe, Sicherheitsgruppe oder ein freigegebenes Postfach. Weitere Informationen zum [Erstellen](../create-groups/create-groups.md) und [Verwalten](../create-groups/manage-groups.md) von Gruppen.  <br/> |
 |**Ressourcen** <br/> |Erstellen und verwalten Sie Ressourcen wie eine SharePoint-Websitesammlung. Weitere Informationen zum [Erstellen von Websitesammlungen](/sharepoint/create-site-collection).  <br/> |
 |**Abrechnung** <br/> |Sie können Abonnements für Ihre Organisation anzeigen, kaufen oder kündigen. Zeigen Sie ältere Abrechnungen oder die Anzahl der Lizenzen an, die einzelnen Benutzern zugewiesen wurden. Erfahren Sie, wie Sie [Abrechnungen verwalten](../../commerce/index.yml).  <br/> |
-|**Support** <br/> | Sie können vorhandene Serviceanfragen anzeigen oder neue erstellen. Weitere Informationen finden Sie unter [Kontakt mit dem Support für Geschäftsprodukte aufnehmen – Hilfe für Administratoren](../contact-support-for-business-products.md). |
+|**Support** <br/> | Sie können vorhandene Serviceanfragen anzeigen oder neue erstellen. Weitere Informationen finden Sie unter [Kontakt mit dem Support für Geschäftsprodukte aufnehmen – Hilfe für Administratoren](../../business-video/get-help-support.md). |
 |**Einstellungen** <br/> |Verwalten Sie globale Einstellungen für Apps wie E-Mail, Websites und die Office-Suite. Ändern Sie Ihre Kennwortrichtlinie und das Ablaufdatum. Fügen Sie Domänennamen wie "contoso.com" hinzu, und aktualisieren Sie diese. Ändern Sie Ihr Organisationsprofil und die Veröffentlichungseinstellungen. Und wählen Sie aus, ob Partner auf Ihr Admin Center zugreifen können.  <br/> |
 |**Setup** <br/> |Verwalten Sie vorhandene Domänen, aktivieren und verwalten Sie die mehrstufige Authentifizierung, verwalten Sie den Administratorzugriff, migrieren Sie Benutzerpostfächer zu Office 365, verwalten Sie Featureupdates, und helfen Sie den Benutzern beim Installieren ihrer Office-Apps. |
 |**Berichte** <br/> |Sehen Sie auf einen Blick, wie Ihre Organisation Microsoft 365 verwendet, dank detaillierter Berichte zur E-Mail-Verwendung, zu Office-Aktivierungen und mehr. Weitere Informationen zur Verwendung der neuen [Aktivitätsberichte](../activity-reports/activity-reports.md).  <br/> |

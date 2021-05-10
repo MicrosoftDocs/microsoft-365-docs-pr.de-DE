@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 00e57d03ae636837120b53c0de16861ad142ef76
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: e3df1286c69132c960c412f6f74512bb49c32b28
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280933"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52291043"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Vorbereiten der Bereitstellung von Microsoft Defender für Endpunkte
 
@@ -60,7 +60,7 @@ Fügen Sie der tabelle unten aufgeführten Projektbeteiligten entsprechend Ihrer
 
 -   I = Informiert über dieses Projekt
 
-| Name                 | Rolle                                                                                                                                                                                                          | Aktion |
+| Name                 | Rolle                                                                                                                                                                                                          | Maßnahme |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | Geben Sie Namen und E-Mail ein. | **Chief Information Security Officer (CISO)** Ein Leitender Vertreter, der innerhalb der Organisation als Sponsor für die *neue Technologiebereitstellung fungiert.*                                                  | Also     |
 | Geben Sie Namen und E-Mail ein. | **Leiter des Cyber Defense Operations Center (CDOC)** Ein Vertreter des CDOC-Teams, der die Ausrichtung dieser Änderung an den Prozessen im Sicherheitsteam der Kunden *definiert.*       | Also     |
@@ -134,7 +134,6 @@ Wählen Sie die Komponente von Defender for Endpoint aus, die verwendet werden s
 | Microsoft-Bedrohungsexperten (MTE)          | Microsoft-Bedrohungsexperten ist ein verwalteter Suchesdienst, der Security Operation Centers (SOCs) mit Überwachung und Analyse auf Expertenebene bietet, um sicherzustellen, dass kritische Bedrohungen in ihren einzigartigen Umgebungen nicht übersehen werden. <br>[Weitere Informationen.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/microsoft-threat-experts)                                                                                                                                                                                                                                                                                                                     | Nicht zutreffend      |
 
 ## <a name="next-step"></a>Nächster Schritt
-|||
-|:-------|:-----|
-|![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) | Einrichten der Bereitstellung von Microsoft Defender for Endpoint
+
+![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) | Einrichten der Bereitstellung von Microsoft Defender for Endpoint
 
