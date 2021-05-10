@@ -22,12 +22,12 @@ ms.custom:
 ms.reviewer: jkinma
 description: Erfahren Sie, wie Sie Add-Ons für Ihr Microsoft 365 Business-Abonnement kaufen und verwalten.
 ms.date: 04/02/2021
-ms.openlocfilehash: c0b5a76f8690c64723782640738ac3817bc64714
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: d60503cd7ab7be219c3ed813dd1d9aef480cd4dc
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107436"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297332"
 ---
 # <a name="buy-or-manage-add-ons"></a>Kaufen oder Verwalten von Add-Ons 
 
@@ -71,7 +71,7 @@ Sie verwalten ein herkömmliches Add-On, indem Sie zu dem Abonnement gehen, das 
 
 Um ein eigenständiges Add-On-Abonnement zu entfernen, [kündigen](subscriptions/cancel-your-subscription.md)Sie das Abonnement wie jedes andere Abonnement. Sie können auch [wiederkehrende Abrechnung deaktivieren.](subscriptions/renew-your-subscription.md)
 
-Ein herkömmliches Add-On kann nicht entfernt werden. Wenn Sie ein herkömmliches Add-On entfernen möchten, wenden Sie [sich an den Support, um Hilfe zu erhalten.](../admin/contact-support-for-business-products.md)
+Ein herkömmliches Add-On kann nicht entfernt werden. Wenn Sie ein herkömmliches Add-On entfernen möchten, wenden Sie [sich an den Support, um Hilfe zu erhalten.](../business-video/get-help-support.md)
   
 ## <a name="related-content"></a>Verwandte Inhalte
 

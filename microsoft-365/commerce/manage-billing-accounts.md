@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie mehr über Abrechnungskonten und deren Verwaltung.
 ms.date: 03/17/2021
-ms.openlocfilehash: 504811e8cdfb84569a4bc3cea021c3c37030fca7
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: ecac005b8b49739cb74efc4ca2fae44667f37bad
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107580"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293643"
 ---
 # <a name="manage-billing-accounts"></a>Abrechnungskonten verwalten
 
@@ -56,7 +56,7 @@ In der folgenden Tabelle sind die wichtigen Begriffe aufgeführt, die auf der De
 | Abrechnungsprofile | Ein Abrechnungsprofil definiert Eigenschaften Ihrer Rechnung, z. B. wer die Rechnung empfängt, wie die Rechnung zugestellt wird, Zahlungsbedingungen und eine Postfachnummer. Zum Verteilen der Abrechnung in Ihrer Organisation können Sie mehrere Abrechnungsprofile erstellen und das entsprechende Abrechnungsprofil zum Zeitpunkt des Kaufs identifizieren. Weitere Informationen zu Abrechnungsprofilen und deren Verwendung zum Erstellen flexiblerer Abrechnungsoptionen für Ihre Organisation finden Sie unter Verstehen von [Abrechnungsprofilen.](billing-and-payments/manage-billing-profiles.md) |
 
 > [!NOTE]
-> Wenn Sie den **Sold-to-Namen** oder die Adresse ändern  müssen, aber [](../admin/contact-support-for-business-products.md) keinen Link Bearbeiten sehen, müssen Sie sich an den Support wenden, um ihn zu ändern. Anforderungen für eine **Namensänderung** für Verkaufte Namen erfordern eine Kreditwürdigkeitsprüfung. Füllen [Sie dieses Formular](https://www.microsoft.com/download/details.aspx?id=102732)aus, und teilen Sie eines der folgenden Dokumente mit Microsoft, wenn Sie sich an den Support wenden:
+> Wenn Sie den **Sold-to-Namen** oder die Adresse ändern  müssen, aber [](../business-video/get-help-support.md) keinen Link Bearbeiten sehen, müssen Sie sich an den Support wenden, um ihn zu ändern. Anforderungen für eine **Namensänderung** für Verkaufte Namen erfordern eine Kreditwürdigkeitsprüfung. Füllen [Sie dieses Formular](https://www.microsoft.com/download/details.aspx?id=102732)aus, und teilen Sie eines der folgenden Dokumente mit Microsoft, wenn Sie sich an den Support wenden:
 >
 > - Vom Staat ausgestelltes Dokument oder Registrierungsschreiben
 > - Ausdrucken der Registrierung des lokalen Unternehmens

@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-overview
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8123bdf610b30407e5d262296f9c3639bc21b12f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 5aeaa51e5ab8974c8ca26453534396dac14b5853
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893485"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297218"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-in-rings"></a>Bereitstellen von Microsoft Defender for Endpoint in Ringen
 
@@ -82,7 +82,7 @@ In der folgenden Tabelle sind die unterstützten Endpunkte und das entsprechende
 | Endpunkt     | Bereitstellungstool                       |
 |--------------|------------------------------------------|
 | **Windows**  |  [Lokales Skript (bis zu 10 Geräte)](configure-endpoints-script.md) <br> HINWEIS: Wenn Sie mehr als 10 Geräte in einer Produktionsumgebung bereitstellen möchten, verwenden Sie stattdessen die Gruppenrichtlinienmethode oder die anderen unten aufgeführten unterstützten Tools.<br>  [Gruppenrichtlinie](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI-Skripts](configure-endpoints-vdi.md)   |
-| **macOS**    | [Lokales Skript](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Verwaltung mobiler Geräte - Mobile Device Management](mac-install-with-other-mdm.md) |
+| **macOS**    | [Lokales Skript](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF-Pro](mac-install-with-jamf.md) <br> [Verwaltung mobiler Geräte - Mobile Device Management](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Lokales Skript](linux-install-manually.md) <br> [100](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [App-basiert](ios-install.md)                                |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
@@ -96,7 +96,7 @@ In dieser Phase können Sie das [Bereitstellungsmaterial planen](deployment-stra
 
 Verwenden Sie das folgende Material, um die geeignete Microsoft Defender for Endpoint-Architektur auszuwählen, die am besten in Ihrer Organisation verwendet wird.
 
-|**Item**|**Beschreibung**|
+|**Aspekt**|**Beschreibung**|
 |:-----|:-----|
 |[![Thumb image for Microsoft Defender for Endpoint deployment strategy](images/mdatp-deployment-strategy.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)<br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) | Das Architekturmaterial hilft Ihnen bei der Planung der Bereitstellung für die folgenden Architekturen: <ul><li> Cloudspezifisch </li><li> Co-Management </li><li> Lokal</li><li>Auswertung und lokales Onboarding</li>
 
@@ -106,24 +106,24 @@ Verwenden Sie das folgende Material, um die geeignete Microsoft Defender for End
 ## <a name="existing-deployments"></a>Vorhandene Bereitstellungen
 
 ### <a name="windows-endpoints"></a>Windows-Endpunkte
-Für Windows- und/oder Windows-Server wählen Sie mehrere Computer aus, die Sie mit dem Security **Update Validation Program (SUVP)** im Voraus testen möchten (vor patch Tuesday).
+Für Windows und/oder Windows-Server wählen Sie mehrere Computer aus, die Sie mit dem Security **Update Validation Program (SUVP)** im Voraus testen möchten (vor patch Tuesday).
 
 Weitere Informationen finden Sie unter:
 - [Was ist das Validierungsprogramm für Sicherheitsupdates?](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
-- [Softwareupdatevalidierungsprogramm und Microsoft Center zum Schutz vor Malware Einrichtung – Interaktive TwC-Zeitachse Teil 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
+- [Software Update Validation Program and Microsoft Center zum Schutz vor Malware Establishment - TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
 
-### <a name="non-windows-endpoints"></a>Nicht-Windows-Endpunkte
-Mit macOS und Linux können Sie einige Systeme verwenden und im Kanal "InsidersFast" ausführen.
+### <a name="non-windows-endpoints"></a>Nicht Windows Endpunkte
+Mit macOS und Linux können Sie einige Systeme verwenden und im Betakanal ausführen.
 
 >[!NOTE]
->Idealerweise mindestens ein Sicherheitsadministrator und ein Entwickler, damit Sie Kompatibilitäts-, Leistungs- und Zuverlässigkeitsprobleme finden können, bevor der Build den Build in den "Production"-Kanal schafft.
+>Idealerweise mindestens ein Sicherheitsadministrator und ein Entwickler, damit Sie Kompatibilitäts-, Leistungs- und Zuverlässigkeitsprobleme finden können, bevor der Build den Build in den aktuellen Kanal schafft.
 
-Die Auswahl des Kanals bestimmt den Typ und die Häufigkeit der Updates, die auf Ihrem Gerät angeboten werden. Geräte in insiders-fast sind die ersten, die Updates und neue Features erhalten, gefolgt von insiders-slow und schließlich von prod.
+Die Auswahl des Kanals bestimmt den Typ und die Häufigkeit der Updates, die auf Ihrem Gerät angeboten werden. Geräte in beta sind die ersten, die Updates und neue Features erhalten, gefolgt von Preview und zuletzt von Current.
 
 ![Bild von Insiderringen](images/insider-rings.png)
 
-Um eine Vorschau neuer Features anzuzeigen und frühzeitig Feedback zu geben, empfiehlt es sich, einige Geräte in Ihrem Unternehmen so zu konfigurieren, dass sie entweder insider-schnell oder insider-slow verwenden.
+Um eine Vorschau neuer Features anzuzeigen und frühzeitig Feedback zu geben, wird empfohlen, einige Geräte in Ihrem Unternehmen für die Verwendung von Beta oder Preview zu konfigurieren.
 
 >[!WARNING]
 >Wenn Sie den Kanal nach der Erstinstallation wechseln, muss das Produkt neu installiert werden. Um den Produktkanal zu wechseln: Deinstallieren Sie das vorhandene Paket, konfigurieren Sie Ihr Gerät neu, um den neuen Kanal zu verwenden, und führen Sie die Schritte in diesem Dokument aus, um das Paket vom neuen Speicherort aus zu installieren.

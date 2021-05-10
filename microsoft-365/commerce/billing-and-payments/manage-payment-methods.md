@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie Ihre Zahlungsmethoden im Microsoft 365 Admin Center verwalten können.
 ms.date: 04/02/2021
-ms.openlocfilehash: b69096bb05ada6ce7a1ee619aa78bc04639e7004
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 82b2880eed830bd3b65cce14635c4fa10f618740
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244720"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297368"
 ---
 # <a name="manage-payment-methods"></a>Verwalten von Zahlungsmethoden
 
@@ -129,7 +129,7 @@ Wenn einer Zahlungsmethode Abonnements oder Abrechnungsprofile zugeordnet sind, 
 |**Meine Debit- oder Kreditkarte wurde abgelehnt.** |Wenn Sie mit Debit- oder Kreditkarte bezahlen und Ihre Karte wird abgelehnt, erhalten Sie eine E-Mail, in der Sie darüber informiert werden, dass Microsoft die Zahlung nicht verarbeitet konnte. Prüfen Sie zunächst sorgfältig, ob Sie die Kartendetails &mdash; Nummer, Ablaufdatum, Name des Karteninhabers und Adresse einschließlich Ort, Bundesland und PLZ &mdash; genau so angegeben haben, wie sie auf der Karte und auf der Abrechnung aufgeführt sind. Sie können Ihre Karteninformationen aktualisieren und die Zahlung sofort senden, indem Sie auf den Link **Saldo ausgleichen** im Abschnitt **Abrechnung** der Seite mit den Abonnementdetails klicken. Weitere Informationen finden Sie unter [Was passiert, wenn noch eine Saldoforderung besteht?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  Wenn die Kreditkarte dann immer noch abgelehnt wird, wenden Sie sich an Ihre Bank. Es ist möglich, dass Ihre Kreditkarte nicht aktiv ist. Wenn Sie die Karte mit einem aktualisierten Ablaufdatum vor Kurzem per Post erhalten haben, müssen Sie sicherstellen, dass sie aktiviert ist. Ihre Bank kann Ihnen ebenfalls mitteilen, ob Ihre Kreditkarte für Online-, internationale oder wiederkehrende Transaktionen zugelassen ist oder nicht. |
 |**Ich möchte eine Karten- oder Kontonummer aktualisieren.** |Die Kreditkarten- oder Kontonummer einer vorhandenen Zahlungsmethode kann nicht geändert werden. Wenn sich Ihre Karten- oder Kontonummer geändert hat, [ersetzen Sie diese durch eine andere Zahlungsmethode](#replace-a-payment-method), wodurch alle aktiven Abonnements von der alten zur neuen Zahlungsmethode wechseln, und [löschen Sie dann die alte Zahlungsmethode](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached). |
 |**In meinem Konto gibt es nur eine Kreditkarte oder nur ein Bankkonto, und ich möchte sie/es entfernen.** |Wenn Sie nur über eine Zahlungsmethode verfügen, müssen Sie diese [durch eine neue Zahlungsmethode ersetzen](#replace-a-payment-method), bevor Sie sie löschen können. |
-|**Ich kann meine Karte bzw. mein Bankkonto nicht hinzufügen.**  |Sie müssen eine Zahlungsmethode verwenden, die im Land Ihres Mandanten ausgestellt wurde. Wenn es bei der Eingabe Ihrer Karten- bzw. Bankkontoinformationen Probleme gibt, können Sie [den Support kontaktieren](../../admin/contact-support-for-business-products.md). |
+|**Ich kann meine Karte bzw. mein Bankkonto nicht hinzufügen.**  |Sie müssen eine Zahlungsmethode verwenden, die im Land Ihres Mandanten ausgestellt wurde. Wenn es bei der Eingabe Ihrer Karten- bzw. Bankkontoinformationen Probleme gibt, können Sie [den Support kontaktieren](../../business-video/get-help-support.md). |
 
 ## <a name="related-content"></a>Verwandte Inhalte
 

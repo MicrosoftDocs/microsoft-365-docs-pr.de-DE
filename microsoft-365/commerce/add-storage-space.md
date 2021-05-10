@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Dateispeicher in Ihrem Abonnement hinzufügen und Microsoft 365 können. Mit zusätzlichem Dateispeicher können Sie weitere Inhalte in SharePoint Online und OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: 576efee4ba0e1ad8fb43b3d8475d6c3a949ee1e8
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 14f72f59493be04165f0e7b28f26b14f8ae01a08
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107388"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293679"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Hinzufügen von Speicherplatz für Ihr Abonnement
 
@@ -71,7 +71,7 @@ Wenn Sie noch keinen zusätzlichen Speicher für Ihr Abonnement erworben haben, 
 
 ## <a name="increase-or-decrease-storage"></a>Vergrößern oder Verkleinern des Speicherplatzes
 
-Wenn Sie bereits zusätzlichen Dateispeicher über das Office 365 Extra File Storage-Add-On erworben haben, können Sie diese Schritte ausführen, um den zusätzlichen Speicherplatz für Ihr Abonnement zu vergrößern oder zu verringern.  Sie können den Speicher auf bis zu 1 Gigabyte reduzieren. Wenden Sie sich an den Support, um den zusätzlichen Speicherplatz [zu entfernen.](../admin/contact-support-for-business-products.md)
+Wenn Sie bereits zusätzlichen Dateispeicher über das Office 365 Extra File Storage-Add-On erworben haben, können Sie diese Schritte ausführen, um den zusätzlichen Speicherplatz für Ihr Abonnement zu vergrößern oder zu verringern.  Sie können den Speicher auf bis zu 1 Gigabyte reduzieren. Wenden Sie sich an den Support, um den zusätzlichen Speicherplatz [zu entfernen.](../business-video/get-help-support.md)
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 2. Wählen Sie **auf der** Registerkarte Produkte das Abonnement aus, das Office 365 Zusätzliche **Datei Storage** enthält.

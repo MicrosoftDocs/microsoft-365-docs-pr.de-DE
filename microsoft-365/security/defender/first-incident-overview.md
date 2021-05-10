@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f66c9821e5db00cc3da5718f52b8aaaeff5a431e
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 5ea847e822e094049dd8f0b941f22f3bb4f7eff4
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114629"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297176"
 ---
 # <a name="introduction-to-responding-to-your-first-incident"></a>Einführung in die Reaktion auf Ihren ersten Vorfall
 
@@ -58,6 +58,17 @@ Stellen Sie sicher, dass Ihre Organisation Microsoft 365 Mandanten [für die Beh
 
 ## <a name="see-also"></a>Siehe auch
 
+Anleitung zur Reaktion auf Vorfälle für Microsoft 365 Defender:
+
 - [Übersicht über Vorfälle](incidents-overview.md)
-- [Analysieren von Vorfällen](investigate-incidents.md)
+- [Untersuchen von Vorfällen](investigate-incidents.md)
 - [Verwalten von Vorfällen](manage-incidents.md)
+
+Zusätzliche Beispiele für erste Reaktionen auf Vorfälle:
+
+- [Phishing-E-Mail](first-incident-path-phishing.md)
+- [Identitätsbasisangriff](first-incident-path-identity.md)
+
+[Detaillierte Spielbücher zur Reaktion auf Vorfälle](https://docs.microsoft.com/security/compass/incident-response-playbooks)
+
+

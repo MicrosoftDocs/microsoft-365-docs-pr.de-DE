@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1ceea1dbdb3f9d149f4e5a0bd892eda2bb9128aa
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 44f583d32de166fe3d68a182406eb3a2ee814084
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114641"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297152"
 ---
-# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Schritt 3. Durchführen einer Überprüfung Ihres ersten Vorfalls nach dem Vorfall
+# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Schritt 3: Durchführen einer Überprüfung Ihres ersten Vorfalls nach dem Vorfall
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -61,5 +61,5 @@ Sehen Sie sich die folgenden zusätzlichen Untersuchungspfade an:
 ## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über Vorfälle](incidents-overview.md)
-- [Analysieren von Vorfällen](investigate-incidents.md)
+- [Untersuchen von Vorfällen](investigate-incidents.md)
 - [Verwalten von Vorfällen](manage-incidents.md)

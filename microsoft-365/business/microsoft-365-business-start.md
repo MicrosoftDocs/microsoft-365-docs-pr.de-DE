@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Erfahren Sie Microsoft 365 Unternehmens, wie Sie sie einrichten und wie Sie die Geräte und PCs Ihrer Benutzer vorbereiten, um sicherzustellen, dass sie von Microsoft 365 geschützt sind.
-ms.openlocfilehash: cc54147e75a27fbb93255d6f706b4f9044c75858
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ddf6f8d12587c6fb562a599a41c190ffef32c147
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245122"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293705"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Erste Schritte mit Microsoft 365 Business
 
@@ -65,7 +65,7 @@ Sehen Sie sich dieses Video an, um eine Übersicht Microsoft 365 Unternehmensein
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](../business-video/index.yml) an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](../business-video/index.yml), an.
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: Einrichten Microsoft 365 business (Admin)
@@ -99,13 +99,13 @@ Wenn Ihre Organisation Windows Server Active Directory lokal verwendet, können 
 Wenn Sie ein lokales Active Directory beibehalten, das einige lokale Ressourcen (z. B. Dateifreigaben und Drucker) enthält, können Sie Ihren **Azure AD-beigetretenen** Geräten Zugriff auf diese Ressourcen geben, indem Sie die folgenden Schritte ausführen: Zugreifen auf lokale Ressourcen von einem [Azure AD-beigetretenen](access-resources.md)Gerät in Microsoft 365 business .
   
   
-## <a name="contact-support"></a>Support kontaktieren
+## <a name="contact-support"></a>wenden Sie sich an den Support,
 
  **Wenn Sie den Support kontaktieren müssen:**
   
 - Wenden Sie sich an Ihren Partner.
     
-- Als Microsoft 365 für Geschäftsadministratoren haben Sie Zugriff auf unser Kundensupportteam: **[Kontakt support for business products - Admin Help](../admin/contact-support-for-business-products.md)**
+- Als Microsoft 365 für Geschäftsadministratoren haben Sie Zugriff auf unser Kundensupportteam: **[Kontakt support for business products - Admin Help](../business-video/get-help-support.md)**
     
 ## <a name="related-content"></a>Verwandte Inhalte
 

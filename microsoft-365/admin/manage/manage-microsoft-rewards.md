@@ -15,17 +15,18 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
+ROBOTS: NOINDEX, NOFOLLOW
 description: Benutzer mit persönlichen Microsoft-Konten können Microsoft Rewards-Punkte im Zusammenhang mit ihren Arbeitssuchen sammeln, wenn link AAD with Rewards aktiviert ist.
-ms.openlocfilehash: 7ae88c9fd355251c47747ef8460bab1f0b30bbaa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 92a319d5917c49f0457a560fe52212608bd26dc2
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929489"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297068"
 ---
 # <a name="manage-microsoft-rewards"></a>Verwalten von Microsoft Rewards
 
-Benutzer mit persönlichen Microsoft-Konten können [Microsoft Rewards-Punkte](https://www.microsoft.com/rewards) im Zusammenhang mit ihren Arbeitssuchen sammeln, wenn das *Feature Microsoft Azure Active Directory (Azure AD)* mit Prämien verknüpfen aktiviert ist.
+Benutzer mit persönlichen Microsoft-Konten können [Microsoft Rewards-Punkte](https://www.microsoft.com/rewards) im Zusammenhang mit ihren Arbeitssuchen sammeln, wenn das *Feature Link Microsoft Azure Active Directory (Azure AD) mit Prämien* aktiviert ist.
 
 Wenn der Benutzer dieses Feature nicht abmeldet, wird sein persönliches Microsoft-Konto seinem Azure AD-Arbeitsplatzkonto zugeordnet. Microsoft Rewards empfängt und protokolliert Informationen, dass eine Suche stattgefunden hat, erhält jedoch keine Informationen über den Inhalt der Suche. Der Inhalt von Abfragen aus Ihrer Organisation wird im Rahmen dieses Features nicht für Microsoft Rewards freigegeben.
 

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Änderungen an Ihrem Organisationsprofil, beispielsweise Bezeichnung der Organisation, Adresse, Telefonnummer, technischer Kontakt und E-Mail-Adresse vornehmen können.
 ms.date: 03/30/2021
-ms.openlocfilehash: d27ad65b9f58d4da6c01b32c9441c0296a17e3bd
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 05908de7c4fc899669da2ba2a3d3024855f4b394
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107014"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297092"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Ändern der Adresse, des technischen Kontakts und anderer Informationen Ihrer Organisation
   
@@ -55,7 +55,7 @@ Nachfolgend finden Sie eine Erläuterung der einzelnen Felder.
 |---------|---------|
 |Name  <br/>   | Der hier eingegebene Name wird den Benutzern auf den folgenden Seiten angezeigt:  <br/>  Anmeldeseite: Wenn Ihre Benutzer andere Microsoft-Konten mit ihrer geschäftlichen E-Mail-Adresse bzw. der E-Mail-Adresse ihrer Schule eingerichtet haben, wird auf der Anmeldeseite möglicherweise der Organisationsname angezeigt. Auf diese Weise können sie zwischen ihrem Firmen- oder Schulkonto und ihren anderen Konten besser unterscheiden und identifizieren, welches Konto beim Anmelden zu verwenden ist.  <br/>  Link und Seite mit dem Organisationsprofil: Im Link zum Profil Ihrer Organisation wird der Organisationsname angezeigt.  <br/>  Yammer-Navigation: In Yammer nutzt die linke Navigationsleiste die Bezeichnung der Organisation als Namen für den Standort des Yammer-Netzwerks.  <br/> OneDrive-Synchronisierungsclient: Die Bezeichnung der Organisation wird im Datei-Explorer unter Windows und dem Finder auf Mac, den Dateipfaden, dem OneDrive-Aktivitätscenter, der QuickInfo des OneDrive-Cloud-Symbols und dem Fenster mit den OneDrive-Einstellungen angezeigt. Derzeit führt die Aktualisierung der Bezeichnung der Organisation nicht zu einem Update konfigurierter Clients. <br/> MS Teams: Organisations-Schnellzugriff in Teams zeigt den Organisationsnamen an <br/>  |
 |Straße, Ort, Bundesland/Kanton, Postleitzahl  <br/>     | Die hier eingegebene Adresse wird auf Ihrer Rechnung, unter „Käufer“ angezeigt. Die „Käufer“-Adresse auf Ihrer Rechnung ist mit der Organisationsadresse auf Ihrer Profilseite identisch (siehe [Grundlegendes zu Ihrer Rechnung für Microsoft 365 Business](../../commerce/billing-and-payments/understand-your-invoice2.md)).  <br/>        |
-|Land oder Region  <br/>    | Dies ist das Land oder die Region, in dem/der sich der Hauptsitz des Unternehmens befindet. Das ausgewählte Land bzw. die Region bestimmt, welche Dienste für Sie verfügbar sind, die Steuern und die Abrechnungswährung für Ihr Land bzw. Ihre Region sowie den Standort des Ihnen am nächsten gelegenen Rechenzentrums (siehe [Microsoft Office-Lizenzeinschränkungen](https://office.microsoft.com/redir/FX103037529)).  <br/>BITTE BEACHTEN: Nachdem Sie das Land bzw. die Region ausgewählt haben, ist eine Änderung nicht mehr möglich. Wenn Sie die Auswahl ändern möchten, müssen Sie Ihr Abonnement kündigen und sich erneut registrieren. Wenn Sie für diesen Vorgang Hilfe benötigen, [wenden Sie sich bitte an den Support](../contact-support-for-business-products.md).        |
+|Land oder Region  <br/>    | Dies ist das Land oder die Region, in dem/der sich der Hauptsitz des Unternehmens befindet. Das ausgewählte Land bzw. die Region bestimmt, welche Dienste für Sie verfügbar sind, die Steuern und die Abrechnungswährung für Ihr Land bzw. Ihre Region sowie den Standort des Ihnen am nächsten gelegenen Rechenzentrums (siehe [Microsoft Office-Lizenzeinschränkungen](https://office.microsoft.com/redir/FX103037529)).  <br/>BITTE BEACHTEN: Nachdem Sie das Land bzw. die Region ausgewählt haben, ist eine Änderung nicht mehr möglich. Wenn Sie die Auswahl ändern möchten, müssen Sie Ihr Abonnement kündigen und sich erneut registrieren. Wenn Sie für diesen Vorgang Hilfe benötigen, [wenden Sie sich bitte an den Support](../../business-video/get-help-support.md).        |
 |Telefon  <br/>     | Dies ist die primäre Nummer für Ihr Unternehmen. Normalerweise ist dies die Nummer Ihrer Unternehmenszentrale.  <br/>        |
 |Technischer Kontakt  <br/> |Dies ist die E-Mail-Adresse des primären Technikers, der Ihr Microsoft 365-Abonnement verwaltet. Diese Person empfängt die Kommunikation zum Microsoft 365-Dienststatus.  <br/> |
 |Bevorzugte Sprache  <br/> |Die bevorzugte Sprache bestimmt die Sprache, in der alle Mitteilungen von Microsoft an Ihre Organisation gesendet werden. Bei der Registrierung bestimmt diese Einstellung die von SharePoint Online verwendete Sprache, die Ihren Benutzern auf Ihrer Teamwebsite angezeigt wird. Wenn Sie die Spracheinstellung nach Ihrer Registrierung ändern, werden alle zukünftigen Mitteilungen in der zuletzt ausgewählten Sprache gesendet.  <br/> BITTE BEACHTEN: Die von SharePoint Online verwendete Sprache kann nicht geändert werden.           |

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1890b4f9b4c71efebe833ebaee62debedbf0fb72
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 83889123067897483478aec3d881a5a7b6ec14cc
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114925"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297224"
 ---
 # <a name="step-1-triage-and-analyze-your-first-incident"></a>Schritt 1. Triagen und Analysieren Des ersten Vorfalls
 
@@ -97,9 +97,9 @@ Im Folgenden finden Sie nur einen Ansatz für die Triage:
 
 Das Verständnis des Kontexts von Warnungen ist gleichermaßen wichtig. Häufig handelt es sich bei einer Warnung nicht um ein einzelnes unabhängiges Ereignis. Es gibt eine Kette von Prozessen, die erstellt wurden, Befehle und Aktionen, die möglicherweise nicht gleichzeitig aufgetreten sind. Daher muss ein Analyst die ersten und letzten Aktivitäten der verdächtigen Entität in Gerätezeitachsen suchen, um den Kontext der Warnungen zu verstehen.
 
-Es gibt mehrere Möglichkeiten, Daten mithilfe von Microsoft 365 Defender zu lesen und zu analysieren, aber das Endziel für Analysten ist es, auf Vorfälle so schnell wie möglich zu reagieren. Während Microsoft 365 Defender die Mittlere Zeit bis zur Behebung [(MtTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) durch das branchenführende Feature für die automatische Korrektur erheblich reduzieren kann, gibt es immer Fälle, die eine manuelle Analyse erfordern. 
+Es gibt mehrere Möglichkeiten, Daten mithilfe von Microsoft 365 Defender zu lesen und zu analysieren, aber das Endziel für Analysten ist es, auf Vorfälle so schnell wie möglich zu reagieren. Während Microsoft 365 Defender die mittlere Zeit bis zur Behebung [(MtTR)](https://www.microsoft.com/security/blog/2020/05/04/lessons-learned-microsoft-soc-part-3c/) durch [](m365d-autoir.md) die branchenführende automatisierte Untersuchungs- und Reaktionsfunktion erheblich reduzieren kann, gibt es immer Fälle, die eine manuelle Analyse erfordern. 
 
-Hier ein Beispiel:
+Hier ist ein Beispiel:
 
 1. Nachdem die Triagepriorität ermittelt wurde, beginnt ein Analyst eine eingehende Analyse, indem er den Vorfallnamen aus wählt. Auf dieser Seite wird die **Vorfallzusammenfassung angezeigt,** in der Daten auf Registerkarten angezeigt werden, um die Analyse zu unterstützen. Auf der **Registerkarte Warnungen** wird der Benachrichtigungstyp angezeigt. Analysten können auf jede Warnung klicken, um einen Drilldown zur jeweiligen Erkennungsquelle zu erhalten. 
 
@@ -136,5 +136,5 @@ Hier erfahren [Sie, wie Sie Vorfälle be behebungen.](first-incident-remediate.m
 ## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über Vorfälle](incidents-overview.md)
-- [Analysieren von Vorfällen](investigate-incidents.md)
+- [Untersuchen von Vorfällen](investigate-incidents.md)
 - [Verwalten von Vorfällen](manage-incidents.md)

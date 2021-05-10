@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 88001dc7126a55539213d4c560127d573a09f4bd
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 76bead8fd855e4119db6297d2ab1a3d08d64a48c
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114653"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297164"
 ---
 # <a name="prepare-your-security-posture-for-your-first-incident"></a>Vorbereiten Ihrer Sicherheitslage für Ihren ersten Vorfall
 
@@ -53,7 +53,7 @@ Komponenten von Microsoft 365 Defender können Verstöße gegen Regeln anzeigen,
 
 Das Geräterisiko wirkt sich direkt darauf aus, auf welche Ressourcen der Benutzer dieses Geräts zugreifen kann. Die Verweigerung des Zugriffs auf Ressourcen basierend auf bestimmten Kriterien ist das Hauptthema von Zero Trust, und Microsoft 365 Defender stellt Informationen zur Verfügung, die zum Bestimmen der Kriterien auf Vertrauensebene erforderlich sind. Beispielsweise kann Microsoft 365 Defender die Softwareversionsebene eines Geräts über die Seite Bedrohungs- und Sicherheitsrisikoverwaltung bereitstellen, während Richtlinien für bedingten Zugriff Geräte mit veralteten oder anfälligen Versionen einschränken.
 
-Die Automatisierung ist ein wichtiger Bestandteil der Implementierung und Aufrechterhaltung einer Zero Trust-Umgebung und reduziert gleichzeitig die Anzahl der Warnungen, die potenziell zu Vorfallreaktionsereignissen führen würden. Komponenten von Microsoft 365 Defender können automatisiert werden, z. B. Korrekturaktionen (auch als Untersuchungen für einen Vorfall im Microsoft 365 Security Center bezeichnet), Benachrichtigungsaktionen und sogar das Erstellen von Supporttickets wie in [ServiceNow](https://microsoft.service-now.com/sp/).
+Die Automatisierung ist ein wichtiger Bestandteil der Implementierung und Aufrechterhaltung einer Zero Trust-Umgebung und reduziert gleichzeitig die Anzahl der Warnungen, die potenziell zu Vorfallreaktionsereignissen führen würden. Komponenten von Microsoft 365 Defender können automatisiert werden, z. B. Korrekturaktionen [(auch](m365d-autoir.md) als Untersuchungen für einen Vorfall im Microsoft 365 Security Center bezeichnet), Benachrichtigungsaktionen und sogar das Erstellen von Supporttickets wie in [ServiceNow](https://microsoft.service-now.com/sp/).
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>Schritt 2. Bestimmen der Sicherheitslage Ihrer Organisation
 
@@ -61,7 +61,7 @@ Als Nächstes können Organisationen die [Microsoft Secure Score](microsoft-secu
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Beispiel für Microsoft Secure Score im Microsoft Security Center":::
  
-## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>Schritt 3. Bewerten der Sicherheitsrisikorisiken In Ihrer Organisation
+## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>Schritt 3: Bewerten der Sicherheitsrisikorisiken In Ihrer Organisation
 
 Die Verhinderung von Vorfällen kann dazu beitragen, die Sicherheitsvorgänge zu optimieren, um sich auf wichtige und wichtige Sicherheitsvorfälle zu konzentrieren. Softwarerisiken sind häufig ein verhinderbarer Einstiegspunkt für Angriffe, die zu Datendiebstahl, Datenverlust oder Unterbrechungen des Geschäftsbetriebs führen können. Wenn keine Angriffe im Einsatz sind, müssen Sicherheitsvorgänge bestrebt sein, ein akzeptables Maß an Sicherheitsrisiko [in](../defender-endpoint/tvm-exposure-score.md) ihrer Organisation zu erreichen und auf dem Niveau zu halten.
 
@@ -92,5 +92,5 @@ Erfahren Sie, [wie Sie Vorfälle triagen und analysieren.](first-incident-analyz
 ## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über Vorfälle](incidents-overview.md)
-- [Analysieren von Vorfällen](investigate-incidents.md)
+- [Untersuchen von Vorfällen](investigate-incidents.md)
 - [Verwalten von Vorfällen](manage-incidents.md)

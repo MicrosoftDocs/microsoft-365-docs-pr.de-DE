@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Erfahren Sie mehr über die Anforderungen und Überlegungen für den Wechsel zu Microsoft 365 Unternehmen.
-ms.openlocfilehash: ba97253beed1544d8f993a462559037a0a1a4281
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b4d2b5d500b73b62c67d3f8126b6313484e2bc78
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244503"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297032"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Planen der Einrichtung von Microsoft 365 Business
 
@@ -56,7 +56,7 @@ Der Setup-Assistent führt Sie durch das Installieren der Microsoft 365-Apps auf
   
 Wenn Sie den Setup-Assistenten nicht abschließen, können Sie setup tasks jederzeit über [das Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339)Setup  >  **ausführen.** Von hier aus können Sie E-Mails und Kontakte von einem anderen E-Mail-Dienst migrieren, die Domäne Ihres Administratorkontos ändern, Ihre Abrechnungsinformationen verwalten, Benutzer hinzufügen oder entfernen, Kennwörter zurücksetzen und andere Geschäftsfunktionen ausführen. Weitere Informationen zu den Unterschieden zwischen dem Setup-Assistenten und der Seite **"Setup"** finden Sie unter Unterschiede zwischen dem Microsoft 365-Setup-Assistenten und [der Setupseite](o365-setup-wizard-and-setup-page.md).
 
-Wenn Sie an einer Stelle nicht weiterkommen, rufen Sie uns an. [Wir helfen Ihnen gerne!](../contact-support-for-business-products.md)
+Wenn Sie an einer Stelle nicht weiterkommen, rufen Sie uns an. [Wir helfen Ihnen gerne!](../../business-video/get-help-support.md)
   
 ## <a name="when-not-to-use-the-setup-wizard-active-directory-synchronization-and-hybrid-environments"></a>Wann der Setup-Assistent nicht verwendet werden sollte Active Directory-Synchronisierung und Hybridumgebungen
 
@@ -138,7 +138,7 @@ Für größere Organisationen oder wenn Sie mit Skype for Business, lokalen oder
 - **Wenn Sie weniger als 50 Mitarbeiter beschäftigen:**
 
   - **Bitten Sie um Hilfe, und wir rufen Sie an.** Nachdem Sie Microsoft 365 gekauft haben, können Sie auf das Admin Center zugreifen (Sie müssen setup nicht ausführen, um es zu erhalten). Wählen Sie unten im Admin Center Hilfe **benötigen aus.** Beschreiben Sie Ihr Problem, und wir rufen Sie auf. 
-  - **Rufen [Microsoft 365 business Support mit](../contact-support-for-business-products.md) Ihren Fragen an.** We're here to help! 
+  - **Rufen [Microsoft 365 business Support mit](../../business-video/get-help-support.md) Ihren Fragen an.** We're here to help! 
   - **Erwägen Sie das Hinzuziehen eines [Microsoft-Partners](https://go.microsoft.com/fwlink/?linkid=391089)**. Wenn Sie wenig Zeit haben oder über erweiterte Anforderungen verfügen (z. B. Tausende von Dateien Microsoft 365 Cloudspeicher verschieben oder in andere Software integrieren), kann ein erfahrener Partner eine große Hilfe sein. 
 
 - **Wenn Sie mehr als 50 Mitarbeiter beschäftigen**, steht das [FastTrack Onboarding Center](https://go.microsoft.com/fwlink/?LinkId=517115) bereit, um Sie bei Ihrer Bereitstellung zu unterstützen.

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Aktivieren Sie eine Einstellung, die gemeinsame Erstellung und AutoSave in Desktop-Apps für beschriftete und verschlüsselte Dokumente in SharePoint und OneDrive aktiviert.
-ms.openlocfilehash: 990ab13508565fb910abe0d5e759a93e54766915
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4b2c4551579d2609b66b5cd8fa8857f98b966a7d
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245720"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297260"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Aktivieren Sie die gemeinsame Erstellung für Dateien, die mit Vertraulichkeitsbezeichnungen verschlüsselt sind
 
@@ -173,7 +173,7 @@ Nachdem Sie die gemeinsame Erstellung für Dateien mit Vertraulichkeitsbezeichnu
 
 ![Option, bei der die gemeinsame Erstellung für Vertraulichkeitsbezeichnungen aktiviert ist](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-Wie Sie auf dem Screenshot sehen, nachdem diese Einstellung aktiviert wurde, können Sie sich an den [Microsoft-Support](/office365/admin/contact-support-for-business-products) wenden und das Deaktivieren dieser Einstellung anfordern. Diese Anfrage kann mehrere Tage dauern und Sie müssen nachweisen, dass Sie ein globaler Administrator für Ihren Mandanten sind. Gehen Sie davon aus, dass die üblichen Supportgebühren anfallen. 
+Wie Sie auf dem Screenshot sehen, nachdem diese Einstellung aktiviert wurde, können Sie sich an den [Microsoft-Support](../business-video/get-help-support.md) wenden und das Deaktivieren dieser Einstellung anfordern. Diese Anfrage kann mehrere Tage dauern und Sie müssen nachweisen, dass Sie ein globaler Administrator für Ihren Mandanten sind. Gehen Sie davon aus, dass die üblichen Supportgebühren anfallen. 
 
 Wenn ein Supporttechniker diese Einstellung für Ihren Mandanten deaktiviert:
 

@@ -24,12 +24,12 @@ ms.custom:
 - PPM_jmueller
 description: Suchen Sie Ihre Rechnung oder Ihren Kontoauszug im Microsoft 365 Admin Center. Sie können auch eine Kopie Ihrer Rechnung speichern und ausdrucken.
 ms.date: 07/31/2020
-ms.openlocfilehash: f9dc6fb9be765e6e221ddf43f703d64737870f01
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: eff193689817c1c89fff7c8ffbc5335fff64ee0f
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280823"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297356"
 ---
 # <a name="view-your-bill-or-invoice"></a>Anzeigen Ihrer Rechnung
 
@@ -37,7 +37,7 @@ Dieser Artikel richtet sich an Personen, die über ein Microsoft 365 for Busines
   
 Wenn Sie Hilfe beim Verständnis der auf Ihrer Rechnung ausgewiesenen Gebühren benötigen, finden Sie unter [Rechnung verstehen](understand-your-invoice2.md) eine detaillierte Erklärung.
   
-**Haben Sie ein Problem mit Ihrer Rechnung?** [Wenden Sie sich an den Support für Business-Produkte](../../admin/contact-support-for-business-products.md).
+**Haben Sie ein Problem mit Ihrer Rechnung?** [Wenden Sie sich an den Support für Business-Produkte](../../business-video/get-help-support.md).
 
 ## <a name="before-you-begin"></a>Bevor Sie loslegen
 

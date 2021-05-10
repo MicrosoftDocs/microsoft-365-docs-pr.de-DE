@@ -21,16 +21,16 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Microsoft 365 für Business-Testversion oder ein kostenpflichtiges Abonnement kündigen können.
 ms.date: 04/08/2021
-ms.openlocfilehash: 15ab7ed31af24fa4cb1c83c6babc945871584375
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 329bc10adbe6c2ad0efe3609e7cb72141ae346bd
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244660"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297308"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
-*Teilnahmeberechtigung:* Wenn Sie weniger als 25 Lizenzen für Benutzer zugewiesen haben, können Sie Ihre Microsoft 365 für Business-Testversion oder Ihr kostenpflichtiges Abonnement online im Microsoft 365 Admin Center jederzeit kündigen. Wenn Sie mehr als 25 Lizenzen für Benutzer zugewiesen haben, reduzieren Sie sie auf weniger als 25 oder [rufen Sie den Support an, um Ihr Abonnement zu kündigen](../../admin/contact-support-for-business-products.md).
+*Teilnahmeberechtigung:* Wenn Sie weniger als 25 Lizenzen für Benutzer zugewiesen haben, können Sie Ihre Microsoft 365 für Business-Testversion oder Ihr kostenpflichtiges Abonnement online im Microsoft 365 Admin Center jederzeit kündigen. Wenn Sie mehr als 25 Lizenzen für Benutzer zugewiesen haben, reduzieren Sie sie auf weniger als 25 oder [rufen Sie den Support an, um Ihr Abonnement zu kündigen](../../business-video/get-help-support.md).
 
 *Rückerstattung:* Eine anteilsmäßige Gutschrift wird Ihnen mit dem nächsten Abrechnungszyklus erstattet.
 

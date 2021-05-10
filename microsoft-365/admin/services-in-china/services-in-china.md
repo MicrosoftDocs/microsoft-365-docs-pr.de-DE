@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Erfahren Sie hier mehr über das von 21Vianet betriebene Office 365. Es erfüllt die Anforderungen an sichere, zuverlässige und skalierbare Clouddienste in China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 1ee7ba7be2e350195350a5c00e92ed10924657ac
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 00710d53033648764ed0e55eeb51ee66518e36f7
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274364"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297056"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365, betrieben von 21Vianet
 
@@ -56,7 +56,7 @@ Wenn Sie wissen möchten, wie Sie die ersten Schritte mit allgemeinen Office 365
 |||
 |:-----|:-----|
 |Benutzerdefinierte Domänen  <br/> |Administratoren können benutzerdefinierte Domänen erstellen und/oder solche verwenden, die über Chinesisch-spezifische Domänenanbieter registriert wurden. Wenn Sie keine benutzerdefinierte Domäne besitzen, können Sie [einen Domänennamen von einer Domänenregistrierungsstelle erwerben](../get-help-with-domains/buy-a-domain-name.md). Sollten Sie hingegen eine besitzen, [finden Sie Ihre Domänenregistrierungsstelle oder Ihren DNS-Hostinganbieter](../get-help-with-domains/find-your-domain-registrar.md)  <br/> Wenn Sie eine öffentliche Website mit dem Office 365 SharePoint Online-Dienst erstellen, erfordert die Compliancerichtlinie für das Internet in China außerdem, dass Sie eine ICP-Nummer (Internet Content Provider, Internetinhaltsanbieter) beziehen.  **Hinweis:** Die automatische Überprüfung von nicht zulässigen Wörtern in benutzerdefinierten Domänennamen ist nicht verfügbar.           |
-|Abonnements, Abrechnung und technischer Support  <br/> |Bereitgestellt von 21Vianet. Informationen zum Kontaktieren des Supports finden Sie unter [Kontaktieren des Supports für Office 365 Business](../contact-support-for-business-products.md).  <br/> |
+|Abonnements, Abrechnung und technischer Support  <br/> |Bereitgestellt von 21Vianet. Informationen zum Kontaktieren des Supports finden Sie unter [Kontaktieren des Supports für Office 365 Business](../../business-video/get-help-support.md).  <br/> |
 |Zurücksetzen von Kennwörtern durch den Benutzer  <br/> |Nur für Administratoren verfügbar. Weitere Informationen finden Sie unter [Ändern oder Zurücksetzen Ihres Kennworts in Office 365, betrieben von 21Vianet](https://support.microsoft.com/office/d8eb5b62-9d0e-4267-a9bf-2aa491ee6d0b).  <br/> |
 |Sicherheit, Datenschutz, Compliance und Details zu den Ebenen des Supports  <br/> |Bereitgestellt von 21Vianet.  <br/> |
 |Office-Desktopsetup  <br/> |Das Office-Desktopsetup ist für Office 2010 und Office 2007 nicht verfügbar. Administratoren können jedoch [aktuelle Office-Desktopanwendungen so konfigurieren, dass sie mit Office 365 funktionieren](https://support.microsoft.com/office/85646aba-7e6c-4e24-a047-8fd9ce4f9d2e).  <br/> |

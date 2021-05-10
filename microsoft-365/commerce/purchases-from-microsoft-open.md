@@ -22,18 +22,18 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Erfahren Sie, wie Sie Lizenzen zu einem Abonnement für Microsoft 365 aktivieren, verlängern oder hinzufügen.
 ms.date: 10/21/2020
-ms.openlocfilehash: e0e317dc0917876c6299fe1eea5812b7bfe0cd8b
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 04df3b24693ac92875cc667aea61e0e9b35cb270
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107592"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293631"
 ---
 # <a name="enter-your-product-key-purchased-from-microsoft-open"></a>Geben Sie Ihren product key ein, der von Microsoft Open erworben wurde.
 
 Wenn Sie Microsoft 365 microsoft [Open License Program](https://go.microsoft.com/fwlink/p/?LinkID=613298)erworben haben, ist dieser Artikel für Sie da. Volumenlizenzkunden, die einen Product Key gekauft haben, können diesem Thema folgen, um Lizenzen zu aktivieren, zu verlängern oder einem Abonnement hinzuzufügen.
   
- **Benötigen Sie sofort Hilfe?** [Rufen Sie den Microsoft Support an.](../admin/contact-support-for-business-products.md) 
+ **Benötigen Sie sofort Hilfe?** [Rufen Sie den Microsoft Support an.](..//business-video/get-help-support.md) 
   
  **Benötigen Sie etwas anderes?**
  
@@ -67,4 +67,4 @@ Partner informieren sich unter [Partner: Einrichten eines Kundenabonnements mith
   
 Volumenlizenzkunden finden weitere Informationen unter [Microsoft Volume Licensing Service Center - Schulungen und Ressourcen](https://go.microsoft.com/fwlink/p/?LinkId=618103).
   
-Wenn Sie mit einer Person sprechen möchten, rufen Sie [den Microsoft Support an.](../admin/contact-support-for-business-products.md)
+Wenn Sie mit einer Person sprechen möchten, rufen Sie [den Microsoft Support an.](../business-video/get-help-support.md)

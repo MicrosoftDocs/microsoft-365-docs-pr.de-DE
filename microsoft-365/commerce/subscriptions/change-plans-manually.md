@@ -22,12 +22,12 @@ search.appverid:
 ROBOTS: NOINDEX
 description: Ändern Sie Abonnements manuell, indem Sie ein neues Abonnement kaufen und sicherstellen, dass die Abonnements aufgelistet und aktiv sind.
 ms.date: 03/17/2021
-ms.openlocfilehash: 1dc7ff8cd6b8a43db7d70ab6c17aec16a020baac
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 7361b459e61961efbb729d80dcbb55dfdad65933
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107680"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293619"
 ---
 # <a name="change-plans-manually"></a>Manuelles Ändern von Plänen
 
@@ -74,7 +74,7 @@ Schließen Sie eine Lizenz für jeden Benutzer ein, der auf den anderen Plan wec
 
 - **Wenn Sie zwei Abonnements gekauft haben und diese hier nicht aufgeführt werden**, wurden Sie möglicherweise für unterschiedliche Organisationen (für unterschiedliche Domänen) gekauft. Abonnements können nicht über Organisationsgrenzen hinweg eingesetzt werden.
 
-- **Wenn Sie wissen, dass Sie über ein zusätzliches** Abonnement verfügen und es hier nicht aufgeführt ist oder nicht aktiv ist, rufen Sie [den Microsoft-Support an.](../../admin/contact-support-for-business-products.md)
+- **Wenn Sie wissen, dass Sie über ein zusätzliches** Abonnement verfügen und es hier nicht aufgeführt ist oder nicht aktiv ist, rufen Sie [den Microsoft-Support an.](../../business-video/get-help-support.md)
 
 ### <a name="what-about-the-old-licenses"></a>Was passiert mit den alten Lizenzen?
 
@@ -115,4 +115,4 @@ Wenn Sie alle Benutzer von einem Abonnement in das andere verschoben haben und S
 Wenn Sie nur einige Benutzer in ein anderes Abonnement verschoben haben, können Sie die [Lizenzen entfernen](../licenses/buy-licenses.md), die Sie nicht mehr benötigen.
 
 ## <a name="call-support-to-help-you-change-plans"></a>Rufen Sie den Support auf, um Ihnen beim Ändern von Plänen zu helfen
-[Rufen Sie den Microsoft-Support an](../../admin/contact-support-for-business-products.md)
+[Rufen Sie den Microsoft-Support an](../../business-video/get-help-support.md)

@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Ihr Konto bei Microsoft schließen.
 ms.date: 04/02/2021
-ms.openlocfilehash: 4fa1366186f0a37d3319208224628332d958a0ea
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 86232e3f433526cc60ef369eda03ef8d20ab08c9
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107472"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52293667"
 ---
 # <a name="close-your-account"></a>Schließen Ihres Kontos
 
@@ -69,7 +69,7 @@ Wenn Ihre Organisation Active Directory verwendet, das mit Microsoft Azure Activ
 6. Wiederholen Sie für jedes deaktivierte Abonnement die Schritte 3 bis 5, bis alle Abonnements gelöscht werden.
 
 > [!NOTE]
-> Wenn Sie ein deaktiviertes Abonnement nicht sofort löschen können, wenden [Sie sich an den Support.](../admin/contact-support-for-business-products.md)
+> Wenn Sie ein deaktiviertes Abonnement nicht sofort löschen können, wenden [Sie sich an den Support.](../business-video/get-help-support.md)
 
 ## <a name="step-4-disable-multi-factor-authentication"></a>Schritt 4: Deaktivieren der mehrstufigen Authentifizierung
 

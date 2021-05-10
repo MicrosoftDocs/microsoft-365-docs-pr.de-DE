@@ -22,12 +22,12 @@ description: Verwenden Sie Vertraulichkeitsbezeichnungen aus dem Microsoft Infor
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: da660f79cd218c4b97cd2159f2811985d4651cef
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: bd3cc0a71fab9f2ceb6d3219a371bb4d5c030744
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245624"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297248"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informationen zu Vertraulichkeitsbezeichnungen
 
@@ -49,7 +49,9 @@ Hier ein Beispiel zur Anzeige verfügbarer Vertraulichkeitsbezeichnungen aus der
 Um Vertraulichkeitsbezeichnungen anwenden zu können müssen die Benutzer mit ihrem Microsoft 365-Geschäfts-, -Schul- oder -Unikonto angemeldet sein.
 
 > [!NOTE]
-> Für US Government-Mandanten werden Vertraulichkeitsbezeichnungen [jetzt für GCC- und GCC-High-Umgebungen unterstützt](/officeupdates/current-channel#version-2101-january-26), zudem erfolgt derzeit das Rollout für DoD-Umgebungen.
+> Für Mandanten der US-Regierung werden jetzt Vertraulichkeitsbezeichnungen für alle Plattformen unterstützt:
+> - Für GCC- und GCC High-Umgebungen: Versionshinweise für [Office für Windows](/officeupdates/current-channel#version-2101-january-26) und [Office für Mac](/officeupdates/release-notes-office-for-mac#feature-updates-2)
+> - Für DoD-Umgebungen: Versionshinweise für [Office für Windows](/officeupdates/current-channel#version-2103-march-30)
 >
 > Wenn Sie den Azure Information Protection-Client und -Scanner mit einheitlichen Bezeichnungen für diese Umgebungen verwenden, lesen Sie [Azure Information Protection Premium – Dienstbeschreibung für Behörden](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
@@ -71,7 +73,7 @@ Sie können Vertraulichkeitsbezeichnungen zu Folgendem verwenden:
 
 - **Klassifizieren von Inhalten ohne Verwendung von Schutzeinstellungen.** Sie können auch einfach eine Bezeichnung als Ergebnis der Klassifizierung des Inhalts zuweisen. Auf diese Weise erhalten die Benutzer eine visuelle Zuordnung der Klassifizierung zu den Bezeichnungen Ihrer Organisation. Sie können die Bezeichnungen verwenden, um Nutzungsberichte zu erstellen und Aktivitätsdaten für Ihre vertrauliche Inhalte anzuzeigen. Anhand dieser Informationen können Sie jederzeit auswählen, dass später Schutzeinstellungen angewendet werden.
 
-In allen diesen Fällen können Ihnen Vertraulichkeitsbezeichnungen in Microsoft 365 dabei helfen, die richtigen Aktionen an den richtigen Inhalten auszuführen. Mit Vertraulichkeitsbezeichnungen können Sie Daten organisationsweit klassifizieren und Schutzeinstellungen auf der Grundlage dieser Klassifizierung erzwingen.
+In all diesen Fällen können Vertraulichkeitsbezeichnungen in Microsoft 365 Ihnen dabei helfen, die richtigen Maßnahmen für die entsprechenden Inhalte zu treffen. Mit Vertraulichkeitsbezeichnungen können Sie Daten organisationsweit klassifizieren und Schutzeinstellungen basierend auf dieser Klassifizierung durchsetzen.
 
 Weitere Informationen zu diesen und anderen Szenarien, die von Vertraulichkeitsbezeichnungen unterstützt werden, finden Sie unter [Allgemeine Szenarien für Vertraulichkeitsbezeichnungen](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels). Es werden ständig neue Funktionen entwickelt, die Vertraulichkeitsbezeichnungen unterstützen. Daher kann es nützlich sein, die [Roadmap von Microsoft 365](https://aka.ms/MIPC/Roadmap) zu Rate zu ziehen.
 
@@ -154,7 +156,7 @@ Die Reihenfolge der Unterbezeichnungen wird allerdings mit [automatischen Bezeic
 
 ### <a name="sublabels-grouping-labels"></a>Unterbezeichnungen (Gruppierungsbezeichnungen)
 
-Mit Unterbezeichnungen können Sie ein oder mehrere Bezeichnungen unter einer übergeordneten Bezeichnung gruppieren, die ein Benutzer in einer Office-App sieht. Unter "Vertraulich" kann Ihr Unternehmen beispielsweise mehrere verschiedene Bezeichnungen für bestimmte Arten dieser Klassifizierung verwenden. In diesem Beispiel ist die übergeordnete Bezeichnung "Vertraulich" einfach eine Textbezeichnung ohne Schutzeinstellungen, und da sie Unterbezeichnungen enthält, kann sie nicht auf Inhalt angewendet werden. Stattdessen müssen Benutzer "Vertraulich" auswählen, um die Unterbezeichnungen anzuzeigen, und können dann eine Unterbezeichnung auswählen, die auf Inhalt angewendet wird.
+Mit Unterbezeichnungen können Sie eine oder mehrere Bezeichnungen unterhalb einer übergeordneten Bezeichnung gruppieren, die ein Benutzer in einer Office App sieht. Möglicherweise verwendet Ihre Organisation unter Vertraulich mehrere verschiedene Bezeichnungen für bestimmte Typen dieser Klassifizierung. In diesem Beispiel ist die übergeordnete Bezeichnung "Vertraulich" einfach eine Textbezeichnung ohne Schutzeinstellungen, und da sie Unterbezeichnungen hat, kann sie nicht auf Inhalte angewendet werden. Stattdessen müssen Benutzer "Vertraulich" wählen, um die Unterbezeichnungen anzuzeigen, und können dann eine Unterbezeichnung wählen, die sie auf den Inhalt anwenden möchten.
 
 Unterbezeichnungen sind einfach eine Möglichkeit, Benutzern Bezeichnungen in logischen Gruppen zu bereitzustellen. Unterbezeichnungen erben keine Einstellungen von ihrer übergeordneten Bezeichnung. Wenn Sie eine Unterbezeichnung für einen Benutzer veröffentlichen, kann dieser Benutzer diese Unterbezeichnung auf den Inhalt anwenden, aber er kann nicht nur die übergeordnete Bezeichnung anwenden.
 
@@ -219,13 +221,14 @@ Eine Bezeichnungsrichtlinie besteht aus:
 - Die Benutzer und Gruppen, denen die Richtlinien über die Bezeichnungen zugewiesen wird.
 - Der Bereich der Richtlinie und die Richtlinieneinstellungen für diesen Bereich (wie eine Standardbezeichnung für Dateien und E-Mails).
 
-Sie können einen Benutzer in mehrere Bezeichnungsrichtlinien einschließen, und der Benutzer erhält sämtliche Vertraulichkeitsbezeichnungen und Einstellungen aus diesen Richtlinien. Bei einem Konflikt zwischen den Einstellungen mehrerer Richtlinien wird Einstellung aus der Richtlinie mit der höchsten Priorität angewendet. Mit anderen Worten: Die höchste Priorität hat für jede Einstellung Vorrang.
+Sie können einen Benutzer in mehrere Bezeichnungsrichtlinien einschließen, und der Benutzer erhält sämtliche Vertraulichkeitsbezeichnungen und Einstellungen aus diesen Richtlinien. Wenn es einen Konflikt bei Einstellungen aus mehreren Richtlinien gibt, werden die Einstellungen aus der Richtlinie mit der höchsten Priorität (niedrigste Position) angewendet. Mit anderen Worten: Die höchste Priorität hat für jede Einstellung Vorrang.
 
-Wenn Ihnen die für einen Benutzer oder eine Gruppe erwartete Bezeichnungs oder Bezeichnungsrichtlinieneinstellung nicht angezeigt wird, überprüfen Sie die Reihenfolge der Vertraulichkeitsbezeichnungsrichtlinien. Wenn Sie die Bezeichnungsrichtlinien neu anordnen möchten, wählen Sie eine Vertraulichkeits-Bezeichnungsrichtlinie aus > wählen Sie die drei Punkte auf der rechten Seite aus > bewegen Sie sie nach **unten** oder **oben**.
+Wenn Ihnen die für einen Benutzer oder eine Gruppe erwartete Bezeichnungs oder Bezeichnungsrichtlinieneinstellung nicht angezeigt wird, überprüfen Sie die Reihenfolge der Vertraulichkeitsbezeichnungsrichtlinien. Möglicherweise müssen Sie die Richtlinie nach unten verschieben. Wenn Sie die Bezeichnungsrichtlinien neu anordnen möchten, wählen Sie eine Vertraulichkeits-Bezeichnungsrichtlinie aus > wählen Sie die drei Punkte auf der rechten Seite aus > bewegen Sie sie nach **unten** oder **oben**.
 
 ![Option „Verschieben“ auf der Seite für Vertraulichkeits Bezeichnungsrichtlinien](../media/sensitivity-label-policy-priority.png)
 
-Wenn Sie zusätzlich zu Vertraulichkeits- auch Aufbewahrungsbezeichnungen verwenden, ist es wichtig, dass Vorrang für Vertraulichkeits-, nicht jedoch für [Aufbewahrungsbezeichnungen](retention.md#the-principles-of-retention-or-what-takes-precedence) von Bedeutung ist.
+> [!NOTE]
+> Zur Erinnerung: Wenn es bei einem Benutzer, der mehrere Richtlinien zugewiesen hat, einen Einstellungskonflikt gibt, wird die Einstellung aus der Richtlinie mit der höchsten Priorität (niedrigste Position) angewendet.
 
 ## <a name="sensitivity-labels-and-azure-information-protection"></a>Vertraulichkeitsbezeichnungen und Azure Information Protection
 

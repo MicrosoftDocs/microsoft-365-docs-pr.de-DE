@@ -21,12 +21,12 @@ search.appverid: MET150
 description: Erfahren Sie, wie Sie ein Upgrade von einem Office 365 E4-Abonnement durchführen.
 ms.date: 08/14/2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f9143497ac2ee15009a3a2b3af9e76426d408d38
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 0e30ece58cfc10ea258a684f9ac6ca4dba1b8692
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280511"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297284"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Upgrade von einem Office 365 E4-Abonnement
 
@@ -63,7 +63,7 @@ Wenn Sie Pläne manuell aktualisieren, müssen Sie die folgenden separaten Verfa
 3. Wählen Sie die **Registerkarte Upgrade** aus. Wenn andere Pläne aufgeführt sind, bedeutet dies, dass Sie Pläne automatisch aktualisieren können.
 4. Wenn Sie nicht automatisch aktualisieren können, wird eine Meldung angezeigt, in der der Grund für das Nichtupgrade beschrieben wird.
 
-Es gibt mehrere Gründe, warum Sie Pläne nicht automatisch aktualisieren können. Die meisten der Probleme sind vorübergehender Natur, wie Probleme mit dem Dienststatus, die Sie beheben können. Weitere Informationen finden Sie unter [Why can't I upgrade plans?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) Wenn Sie Hilfe bei Ihrem Upgrade benötigen, wenden Sie [sich an den Support.](../../admin/contact-support-for-business-products.md)
+Es gibt mehrere Gründe, warum Sie Pläne nicht automatisch aktualisieren können. Die meisten der Probleme sind vorübergehender Natur, wie Probleme mit dem Dienststatus, die Sie beheben können. Weitere Informationen finden Sie unter [Why can't I upgrade plans?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) Wenn Sie Hilfe bei Ihrem Upgrade benötigen, wenden Sie [sich an den Support.](../../business-video/get-help-support.md)
 
 ## <a name="will-a-credit-check-be-required"></a>Ist eine Kreditwürdigkeitsprüfung erforderlich?
 

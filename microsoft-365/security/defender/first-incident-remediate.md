@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2fe6c5b1b0feea2163c0a2bcc871921a885abb85
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: ed597c55a646eb00d6e6d256c287b22c119f8148
+ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114988"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52297344"
 ---
 # <a name="step-2-remediate-your-first-incident"></a>Schritt 2. Behebung Des ersten Vorfalls
 
@@ -36,7 +36,7 @@ ms.locfileid: "52114988"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender bietet nicht nur Erkennungs- und Analysefunktionen, sondern bietet auch Eindämmung und Beseitigung von Schadsoftware. Containment umfasst Schritte, um die Auswirkungen des Angriffs zu reduzieren, während die Auslöschung sicherstellt, dass alle Spuren von Angreiferaktivitäten aus dem Netzwerk entfernt werden.  Microsoft 365 Defender bietet verschiedene Korrekturaktionen, die je nach Betriebssystem und Angriffstyp für die automatische Behebung konfiguriert werden können.
+Microsoft 365 Defender bietet nicht nur Erkennungs- und Analysefunktionen, sondern bietet auch Eindämmung und Beseitigung von Schadsoftware. Containment umfasst Schritte, um die Auswirkungen des Angriffs zu reduzieren, während die Auslöschung sicherstellt, dass alle Spuren von Angreiferaktivitäten aus dem Netzwerk entfernt werden.  Microsoft 365 Defender bietet verschiedene Korrekturaktionen, die je [](m365d-autoir.md) nach Betriebssystem und Angriffstyp für die automatische Behebung konfiguriert werden können.
 
 Microsoft 365 Defender bietet mehrere Korrekturaktionen, die Analysten manuell initiieren können. Aktionen sind in zwei Kategorien unterteilt: Aktionen auf Geräten und Aktionen für Dateien. Einige Aktionen können verwendet werden, um die Bedrohung sofort zu beenden, während andere Aktionen bei der weiteren forensischen Analyse helfen.
 
@@ -98,5 +98,5 @@ Erfahren Sie, [wie Sie eine Überprüfung eines Vorfalls nach einem Vorfall durc
 ## <a name="see-also"></a>Siehe auch
 
 - [Übersicht über Vorfälle](incidents-overview.md)
-- [Analysieren von Vorfällen](investigate-incidents.md)
+- [Untersuchen von Vorfällen](investigate-incidents.md)
 - [Verwalten von Vorfällen](manage-incidents.md)
