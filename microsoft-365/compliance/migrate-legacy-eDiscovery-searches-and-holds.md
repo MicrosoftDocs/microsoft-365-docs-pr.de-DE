@@ -1,5 +1,5 @@
 ---
-title: Migrieren von älteren eDiscovery-Suchen und -Haltedaten zum Microsoft 365 Compliance Center
+title: Migrieren von eDiscovery-Legacysuchen und -halte in das Microsoft 365 Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,16 +14,16 @@ search.appverid:
 ms.collection: M365-security-compliance
 ROBOTS: NOINDEX, NOFOLLOW
 description: ''
-ms.openlocfilehash: ef5562aa6f5c7519d19452100b55dd4bc30d4126
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: aaae5e6bddc48f29cc0766fe26a1976672c7dd49
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926323"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52310795"
 ---
-# <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migrieren von älteren eDiscovery-Suchen und -Haltedaten zum Microsoft 365 Compliance Center
+# <a name="migrate-legacy-ediscovery-searches-and-holds-to-the-microsoft-365-compliance-center"></a>Migrieren von eDiscovery-Legacysuchen und -halte in das Microsoft 365 Compliance Center
 
-Das Microsoft 365 Compliance Center bietet eine verbesserte Erfahrung für die eDiscovery-Verwendung, einschließlich: höhere Zuverlässigkeit, bessere Leistung und viele Features, die auf eDiscovery-Workflows zugeschnitten sind, einschließlich Fällen, in denen Ihre Inhalte nach Inhalten organisiert werden, Überprüfungssätze zur Überprüfung von Inhalten und Analysen, um daten für die Überprüfung zu überprüfen, z. B. beinahe duplizierte Gruppierungen, E-Mail-Threading, Designsanalyse und Vorhersagecodierung.
+Das Microsoft 365 Compliance Center bietet eine verbesserte Erfahrung für die eDiscovery-Nutzung, einschließlich: höhere Zuverlässigkeit, bessere Leistung und viele Features, die auf eDiscovery-Workflows zugeschnitten sind, einschließlich Fällen, in denen Ihre Inhalte nach Inhalten organisiert werden, Überprüfungssätze zur Überprüfung von Inhalten und Analysen, um daten für die Überprüfung zu überprüfen, z. B. beinahe duplizierte Gruppierungen, E-Mail-Threading, Designsanalyse und Vorhersagecodierung.
 
 Damit Kunden die neuen und verbesserten Funktionen nutzen können, enthält dieser Artikel grundlegende Anleitungen zum Migrieren von In-Place eDiscovery-Suchen und -Haltefunktionen vom Exchange Admin Center zum Microsoft 365 Compliance Center.
 
@@ -32,11 +32,11 @@ Damit Kunden die neuen und verbesserten Funktionen nutzen können, enthält dies
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Sie müssen Mitglied der Rollengruppe eDiscovery Manager im Security & Compliance Center sein, um die in diesem Artikel beschriebenen PowerShell-Befehle auszuführen. Sie müssen auch Mitglied der Rollengruppe Discoveryverwaltung im Exchange Admin Center sein.
+- Sie müssen Mitglied der Rollengruppe eDiscovery Manager im Security & Compliance Center sein, um die in diesem Artikel beschriebenen PowerShell-Befehle auszuführen. Sie müssen auch Mitglied der Rollengruppe "Discoveryverwaltung" im Exchange sein.
 
 - Dieser Artikel enthält Anleitungen zum Erstellen eines eDiscovery-Halteraums. Die Halterichtlinie wird über einen asynchronen Prozess auf Postfächer angewendet. Beim Erstellen eines eDiscovery-Halteraums müssen Sie sowohl caseHoldPolicy als auch CaseHoldRule erstellen, andernfalls wird der Halteraum nicht erstellt, und Inhaltsstandorte werden nicht in die Warteschleife gesetzt.
 
-## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>Schritt 1: Herstellen einer Verbindung mit Exchange Online PowerShell und & Compliance Center PowerShell
+## <a name="step-1-connect-to-exchange-online-powershell-and-security--compliance-center-powershell"></a>Schritt 1: Verbinden, Exchange Online PowerShell und Security & Compliance Center PowerShell zu
 
 Der erste Schritt besteht im Herstellen einer Verbindung mit Exchange Online PowerShell und Security & Compliance Center PowerShell. Sie können das folgende Skript kopieren, in ein PowerShell-Fenster einfügen und dann ausführen. Sie werden zur Eingabe von Anmeldeinformationen für die Organisation aufgefordert, mit der Sie eine Verbindung herstellen möchten. 
 
@@ -136,15 +136,15 @@ Um sicherzustellen, dass alles ordnungsgemäß eingerichtet ist, wechseln Sie zu
 
 ![Microsoft 365 Compliance Center eDiscovery](../media/MigrateLegacyeDiscovery7.png)
 
-Der fall, den Sie in Schritt 3 erstellt haben, wird auf der **Seite Core eDiscovery** aufgeführt. Öffnen Sie den Fall, und beachten Sie dann den halte, den Sie in Schritt 4 in auf der Registerkarte Halte **halte erstellt** haben. Sie können auf den Haltestatus klicken, um Details anzuzeigen, einschließlich der Anzahl der Postfächer, auf die der Haltestatus angewendet wird, und den Verteilungsstatus.
+Der fall, den Sie in Schritt 3 erstellt haben, wird auf der **Seite Core eDiscovery** aufgeführt. Öffnen Sie den Fall, und beachten Sie dann den Haltestopp, den Sie in Schritt 4 in auf der Registerkarte Halten **erstellt** haben. Sie können den Haltestatus auswählen, um Details auf der Flyoutseite anzuzeigen, einschließlich der Anzahl der Postfächer, auf die der Haltestatus angewendet wird, und den Verteilungsstatus.
 
-![eDiscovery im Microsoft 365 Compliance Center](../media/MigrateLegacyeDiscovery8.png)
+![eDiscovery hält im Microsoft 365 Compliance Center](../media/MigrateLegacyeDiscovery8.png)
 
-Die suche, die Sie in Schritt 7  erstellt haben, wird auf der Registerkarte Suchen des eDiscovery-Falls aufgeführt.
+Die suche, die Sie in Schritt 7 erstellt haben, wird auf der **Registerkarte** Suchen des Falls aufgeführt.
 
 ![eDiscovery-Fallsuche im Microsoft 365 Compliance Center](../media/MigrateLegacyeDiscovery9.png)
 
-Wenn Sie eine In-Place eDiscovery-Suche migrieren, sie jedoch keinem eDiscovery-Fall zuordnen, wird sie auf der Seite Inhaltssuche im Microsoft 365 Compliance Center aufgeführt.
+Wenn Sie eine In-Place eDiscovery-Suche migrieren, sie jedoch keinem eDiscovery-Fall zuordnen, wird sie auf der Seite Inhaltssuche im compliance center Microsoft 365 aufgelistet.
 
 ## <a name="more-information"></a>Weitere Informationen
 
@@ -170,4 +170,4 @@ Wenn Sie eine In-Place eDiscovery-Suche migrieren, sie jedoch keinem eDiscovery-
 
   - [Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch)
 
-- Weitere Informationen zum Microsoft 365 Compliance Center finden Sie [unter Overview of the Microsoft 365 Compliance Center](microsoft-365-compliance-center.md).
+- Weitere Informationen zum Microsoft 365 Compliance Center finden Sie unter [Overview of the Microsoft 365 Compliance Center](microsoft-365-compliance-center.md).

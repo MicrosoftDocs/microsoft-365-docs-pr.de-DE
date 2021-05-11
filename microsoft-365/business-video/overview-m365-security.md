@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über die Sicherheitsfeatures, die in Microsoft 365 Business enthalten sind.
-ms.openlocfilehash: 0cbb13d08b52484d69c50de7e45dafb5020a9192
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a1195ee1296936f3f0106b845f641aa5aaad0dac
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245204"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311436"
 ---
 # <a name="overview-of-security"></a>Übersicht über die Sicherheit
 
@@ -39,25 +39,25 @@ Microsoft 365 Business Premium bietet Bedrohungsschutz, Datenschutz und Gerätev
 
 ## <a name="threat-protection"></a>Bedrohungsschutz
 
-Microsoft 365 Business Premium umfasst Office 365 Advanced Threat Protection (ATP), einen cloudbasierten E-Mail-Filterdienst, der Sie vor Schadsoftware, Ransomware, schädlichen Links und vielem mehr schützt. AtP Safe Links schützt Sie vor bösartigen URLs in E-Mails oder Office Dokumenten. AtP Sichere Anlagen schützen Sie vor Schadsoftware und Viren, die an Nachrichten oder Dokumente angefügt sind.
+Microsoft 365 Business Premium umfasst [Office 365 Advanced Threat Protection (ATP),](safe-links.md)einen cloudbasierten E-Mail-Filterdienst, der Sie vor Schadsoftware, Ransomware, schädlichen Links und vielem mehr schützt. AtP Safe Links schützt Sie vor bösartigen URLs in E-Mails oder Office Dokumenten. AtP Sichere Anlagen schützen Sie vor Schadsoftware und Viren, die an Nachrichten oder Dokumente angefügt sind.
 
-Die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) oder die zweistufige Überprüfung erfordert, dass Sie eine zweite Form der Authentifizierung, z. B. einen Überprüfungscode, präsentieren, um Ihre Identität zu bestätigen, bevor Sie auf Ressourcen zugreifen können.  
+Die mehrstufige Authentifizierung [(Multi-Factor Authentication, MFA)](turn-on-mfa.md)oder die zweistufige Überprüfung erfordert, dass Sie eine zweite Form der Authentifizierung, z. B. einen Überprüfungscode, präsentieren, um Ihre Identität zu bestätigen, bevor Sie auf Ressourcen zugreifen können.  
 
-Windows Defender bietet umfassenden Schutz für Ihr System, Ihre Dateien und Onlineaktivitäten vor Viren, Schadsoftware, Spyware und anderen Bedrohungen.
+[Windows Defender](https://docs.microsoft.com/windows/security/threat-protection/overview-of-threat-mitigations-in-windows-10) bietet umfassenden Schutz für Ihr System, Ihre Dateien und Onlineaktivitäten vor Viren, Schadsoftware, Spyware und anderen Bedrohungen.
 
 ## <a name="data-protection"></a>Datenschutz
 
 Datenschutzfeatures in Microsoft 365 Business Premium sorgen dafür, dass wichtige Daten sicher bleiben und nur autorisierte Personen Darauf zugreifen können.
 
-Sie können Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) verwenden, um vertrauliche Informationen, z. B. sozialversicherungs- oder kreditkartennummern, zu identifizieren und zu verwalten, dass sie nicht fälschlicherweise freigegeben werden. 
+Sie können Richtlinien zur Verhinderung von Datenverlust [(Data Loss Prevention, DLP)](set-up-dlp.md) verwenden, um vertrauliche Informationen, z. B. sozialversicherungs- oder kreditkartennummern, zu identifizieren und zu verwalten, dass sie nicht fälschlicherweise freigegeben werden. 
 
-Office 365-Nachrichtenverschlüsselung kombiniert Verschlüsselungs- und Zugriffsrechtefunktionen, um sicherzustellen, dass nur beabsichtigte Empfänger Nachrichteninhalte anzeigen können. Office 365-Nachrichtenverschlüsselung funktioniert mit Outlook.com, Yahoo!, Gmail und anderen E-Mail-Diensten.
+[Office 365-Nachrichtenverschlüsselung](https://docs.microsoft.com/microsoft-365/compliance/ome) kombiniert Verschlüsselungs- und Zugriffsrechtefunktionen, um sicherzustellen, dass nur beabsichtigte Empfänger Nachrichteninhalte anzeigen können. Office 365-Nachrichtenverschlüsselung funktioniert mit Outlook.com, Yahoo!, Gmail und anderen E-Mail-Diensten.
 
-Exchange Online-Archivierung ist eine cloudbasierte Archivierungslösung, die mit Microsoft Exchange oder Exchange Online zusammenarbeiten, um erweiterte Archivierungsfunktionen wie Speicher und Datenredundanz zu bieten. Sie können Aufbewahrungsrichtlinien verwenden, um Ihre Organisation dabei zu unterstützen, die Verpflichtungen im Zusammenhang mit E-Mails und anderen Kommunikationen zu reduzieren. Wenn Ihr Unternehmen die Kommunikation im Zusammenhang mit Rechtsstreitigkeiten beibehalten muss, können Sie In-Place und Rechtsstreitigkeiten zum Beibehalten verwandter E-Mails verwenden.
+[Exchange Online-Archivierung](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-archiving-service-description/exchange-online-archiving-service-description) ist eine cloudbasierte Archivierungslösung, die mit Microsoft Exchange oder Exchange Online zusammenarbeiten, um erweiterte Archivierungsfunktionen wie Speicher und Datenredundanz zu bieten. Sie können Aufbewahrungsrichtlinien verwenden, um Ihre Organisation dabei zu unterstützen, die Verpflichtungen im Zusammenhang mit E-Mails und anderen Kommunikationen zu reduzieren. Wenn Ihr Unternehmen die Kommunikation im Zusammenhang mit Rechtsstreitigkeiten beibehalten muss, können Sie In-Place und Rechtsstreitigkeiten zum Beibehalten verwandter E-Mails verwenden.
 
 ## <a name="device-management"></a>Geräteverwaltung
 
-Microsoft 365 Business Premium erweiterten Geräteverwaltungsfunktionen können Sie überwachen und steuern, was Benutzer mit registrierten Geräten tun können. Zu diesen Features gehören bedingter Zugriff, Mobile Device Management (MDM), BitLocker und automatische Updates.
+Microsoft 365 Business Premium erweiterten Geräteverwaltungsfunktionen können Sie überwachen und steuern, was Benutzer mit registrierten Geräten tun können. Zu diesen Features gehören bedingter Zugriff, [Mobile Device Management (MDM),](https://docs.microsoft.com/microsoft-365/admin/basic-mobility-security/manage-enrolled-devices)BitLocker und automatische Updates.
 
 Sie können Richtlinien für bedingten Zugriff verwenden, um zusätzliche Sicherheitsmaßnahmen für bestimmte Benutzer und Aufgaben zu erfordern. Beispielsweise können Sie eine mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) erfordern oder Clients blockieren, die keinen bedingten Zugriff unterstützen.
 
@@ -69,4 +69,4 @@ Sie können automatische Updates so konfigurieren, dass die neuesten Sicherheits
 
 ## <a name="recommended-security-guidance"></a>Empfohlene Sicherheitsleitfäden
 
-Wenn Sie über Microsoft Business Premium verfügen, können Sie die Sicherheit am schnellsten einrichten und sicher zusammenarbeiten, wenn Sie die Anleitungen in dieser Bibliothek befolgen: Microsoft 365 für kleinere Unternehmen und [Kampagnen](../campaigns/index.md). Diese Anleitung wurde in Zusammenarbeit mit dem Microsoft-Team "Abwehrdemonsistenz" entwickelt, um alle Kleinunternehmen vor Cyberbedrohungen zu schützen, die von anspruchsvollen Hackern gestartet wurden.
+Wenn Sie über Microsoft Business Premium verfügen, können Sie die Sicherheit am schnellsten einrichten und mit der sicheren Zusammenarbeit beginnen, wenn Sie die Anweisungen in dieser Bibliothek befolgen: [Microsoft 365 für kleinere Unternehmen und Kampagnen](../campaigns/index.md). Diese Anleitung wurde in Zusammenarbeit mit dem Microsoft-Team „Defending Democracy“ entwickelt, um alle kleinen Unternehmenskunden vor Cyberbedrohungen zu schützen, die von raffinierten Hackern gestartet werden.

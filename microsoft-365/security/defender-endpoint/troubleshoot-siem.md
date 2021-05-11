@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 60220d00ca1b612564b72103b9206e3d6d89dc60
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 9c4f3da57796903fc22314574f389bcdd92ca4b3
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689449"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311988"
 ---
 # <a name="troubleshoot-siem-tool-integration-issues"></a>Behandeln von Problemen mit der Integration von SIEM-Tools
 
@@ -51,7 +51,7 @@ Wenn Ihr Geheimer Clientgeheimnis abläuft oder Sie die beim Aktivieren der SIEM
 
 4. Klicken Sie **auf App-Registrierungen**. Wählen Sie dann in der Liste Anwendungen die Anwendung aus.
 
-5. Wählen **Sie Den** Abschnitt Schlüssel aus, geben Sie eine Schlüsselbeschreibung an, und geben Sie die Gültigkeitsdauer des Schlüssels an.
+5. Wählen **Sie Zertifikate & Geheime** Schlüssel aus, klicken Sie auf Neuer Geheimer Client, geben Sie eine Beschreibung ein, und geben Sie die Gültigkeitsdauer an.
 
 6. Klicken Sie auf **Speichern**. Der Schlüsselwert wird angezeigt.
 
@@ -59,7 +59,7 @@ Wenn Ihr Geheimer Clientgeheimnis abläuft oder Sie die beim Aktivieren der SIEM
 
 
 ## <a name="error-when-getting-a-refresh-access-token"></a>Fehler beim Abrufen eines Aktualisierungszugriffstokens
-Wenn beim Versuch, ein Aktualisierungstoken zu erhalten, beim Verwenden der Threat Intelligence-API oder der SIEM-Tools ein Fehler auftritt, müssen Sie die Antwort-URL für die relevante Anwendung in Azure Active Directory hinzufügen.
+Wenn beim Versuch, ein Aktualisierungstoken zu erhalten, beim Verwenden der Threat Intelligence-API oder der SIEM-Tools ein Fehler auftritt, müssen Sie die Antwort-URL für die relevante Anwendung in Azure Active Directory.
 
 1. Melden Sie sich beim [Azure-Verwaltungsportal an.](https://ms.portal.azure.com)
 

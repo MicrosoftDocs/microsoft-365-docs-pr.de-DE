@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Verwalten von Erweiterten eDiscovery-Fällen in Microsoft 365
+title: Erstellen und Verwalten Advanced eDiscovery Fällen in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -18,53 +18,51 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: In diesem Artikel wird beschrieben, wie Advanced eDiscovery-Fälle erstellt und verwaltet werden. Der erste Schritt besteht in der Erstellung eines Falls und der Verwendung von Advanced eDiscovery-Features und -Funktionen.
-ms.openlocfilehash: d0f63bca90945c3dfe13b08fa0f1d139da8a9189
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: In diesem Artikel wird das Erstellen und Verwalten von Advanced eDiscovery beschrieben. Der erste Schritt besteht in der Erstellung eines Falls und der Verwendung Advanced eDiscovery Funktionen.
+ms.openlocfilehash: 95e88bb071476de1ed66b3ffaa8942f0a9df89c2
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908361"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311640"
 ---
-# <a name="create-and-manage-an-advanced-ediscovery-case"></a>Erstellen und Verwalten eines Advanced eDiscovery-Falls
+# <a name="create-and-manage-an-advanced-ediscovery-case"></a>Erstellen und Verwalten eines Advanced eDiscovery Fall
 
-Nach dem Einrichten von Advanced eDiscovery und dem Zuweisen von Berechtigungen zu [eDiscovery-Managern](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) in Ihrer Organisation, die Fälle verwalten, besteht der nächste Schritt im Erstellen und Verwalten eines Falls.
+Nach dem Einrichten Advanced eDiscovery und dem Zuweisen von Berechtigungen zu [eDiscovery-Managern](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) in Ihrer Organisation, die Fälle verwalten, besteht der nächste Schritt im Erstellen und Verwalten eines Falls.
 
-Dieser Artikel bietet außerdem einen umfassenden Überblick über die Verwendung von Fällen zum Verwalten des Advanced eDiscovery-Workflows für einen Rechtsstreit oder andere Arten von Untersuchungen.
+Dieser Artikel bietet außerdem einen umfassenden Überblick über die Verwendung von Fällen zum Verwalten Advanced eDiscovery Workflow für einen Rechtsstreit oder andere Arten von Untersuchungen.
 
 ## <a name="create-a-case"></a>Erstellen eines Falls
 
-Führen Sie die folgenden Schritte aus, um einen Fall zu erstellen und Mitglieder hinzuzufügen. Der Benutzer, der den Fall erstellt, wird automatisch als Mitglied hinzugefügt. Mitglieder des Falls können auf den Fall im Microsoft 365 Compliance Center zugreifen und Erweiterte eDiscovery-Aufgaben ausführen.
+Führen Sie die folgenden Schritte aus, um einen Fall zu erstellen und Mitglieder hinzuzufügen. Der Benutzer, der den Fall erstellt, wird automatisch als Mitglied hinzugefügt. Mitglieder des Falls können auf den Fall im Microsoft 365 zugreifen und Advanced eDiscovery ausführen.
 
-1. Wechseln Sie zu, und melden Sie sich mit den Anmeldeinformationen für ein Benutzerkonto <https://compliance.microsoft.com> an, dem eDiscovery-Berechtigungen zugewiesen wurden. Mitglieder der Rollengruppe Organisationsverwaltung können auch Erweiterte eDiscovery-Fälle erstellen.
+1. Wechseln Sie zu, und melden Sie sich mit den Anmeldeinformationen für ein Benutzerkonto <https://compliance.microsoft.com> an, dem eDiscovery-Berechtigungen zugewiesen wurden. Mitglieder der Rollengruppe Organisationsverwaltung können auch Advanced eDiscovery erstellen.
 
 2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Centers auf **Ale anzeigen**, und klicken Sie dann auf **eDiscovery > Advanced**.
 
-3. Klicken Sie auf der **Seite Erweiterte eDiscovery** auf **die** Registerkarte Fälle, und klicken Sie dann auf **Fall erstellen.**
+3. Klicken Sie **Advanced eDiscovery** Seite auf **die** Registerkarte Fälle, und klicken Sie dann auf **Fall erstellen**.
 
 4. Geben Sie auf der Flyoutseite Neuer **eDiscovery-Fall** dem Fall einen Namen (erforderlich) zu, und geben Sie dann eine optionale Fallnummer und Beschreibung ein. Der Fallname muss in Ihrer Organisation eindeutig sein.
 
 5. Klicken **Sie auf Speichern,** um den Fall zu erstellen.
 
-   Der neue Fall wird erstellt, **und** die Registerkarte Einstellungen im neuen Fall wird angezeigt.
+   Der neue Fall wird erstellt, und **die Einstellungen** im neuen Fall wird angezeigt.
 
-6. Klicken Sie **auf &** Registerkarte Einstellungen  auf **Auswählen,** und klicken Sie dann auf **Aktualisieren**.
+6. Klicken Sie **auf &** Registerkarte Zugriff **Einstellungen** Berechtigungen auf **Auswählen**.
 
-7. Klicken Sie auf **Aktualisieren**.
+7. Klicken Sie **auf der Seite** Flyout für diesen Fall verwalten unter Mitglieder **verwalten** auf **Hinzufügen,** um dem Fall Mitglieder hinzuzufügen.
 
-8. Klicken Sie **auf der Seite** Flyout für diesen Fall verwalten unter Mitglieder **verwalten** auf **Hinzufügen,** um dem Fall Mitglieder hinzuzufügen.
+8. Aktivieren Sie in der Liste der Personen das Kontrollkästchen neben den Namen der Personen, die Sie dem Fall hinzufügen möchten. Stellen Sie wie bereits erläutert sicher, dass den Personen, die Sie dem Fall hinzufügen, die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden.
 
-9. Aktivieren Sie in der Liste der Personen das Kontrollkästchen neben den Namen der Personen, die Sie dem Fall hinzufügen möchten. Stellen Sie wie bereits erläutert sicher, dass den Personen, die Sie dem Fall hinzufügen, die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden.
+9. Nachdem Sie die Personen ausgewählt haben, die als Mitglieder des Falls hinzugefügt werden, klicken Sie auf **Hinzufügen**.
 
-10. Nachdem Sie die Personen ausgewählt haben, die als Mitglieder des Falls hinzugefügt werden, klicken Sie auf **Hinzufügen**.
+10. Klicken Sie auf der Flyout-Seite **Fall verwalten** auf **Speichern**, um die neue Liste der Fallbeteiligten zu speichern.
 
-11. Klicken Sie auf der Flyout-Seite **Fall verwalten** auf **Speichern**, um die neue Liste der Fallbeteiligten zu speichern.
-
-12. Klicken Sie auf **die Registerkarte Start,** um zur Fall-Homepage zu wechseln.
+11. Klicken Sie auf **die Registerkarte Start,** um zur Fall-Homepage zu wechseln.
 
 ## <a name="manage-the-workflow"></a>Verwalten des Workflows
 
-Damit Sie mit Advanced eDiscovery beginnen können, finden Sie hier einen grundlegenden Workflow, der auf gängige [eDiscovery-Methoden ausgerichtet ist.](advanced-ediscovery-edrm.md) In jedem dieser Schritte werden auch einige erweiterte Erweiterte eDiscovery-Funktionen hervorgehoben, die Sie erkunden können.
+Hier finden Sie einen Advanced eDiscovery, der an gängigen [eDiscovery-Methoden ausgerichtet ist.](advanced-ediscovery-edrm.md) In jedem dieser Schritte werden auch einige erweiterte Funktionen Advanced eDiscovery, die Sie erkunden können.
 
 ![Advanced eDiscovery-Workflow](../media/AeDWorkflow.png)
 
@@ -72,13 +70,13 @@ Damit Sie mit Advanced eDiscovery beginnen können, finden Sie hier einen grundl
 
    Hier sind einige Dinge, die passieren (oder die Sie tun können), wenn Sie einem Fall Custodians hinzufügen:
 
-   - Daten im #A0 des Verwahrers, im #A1 und in allen Microsoft Teams- oder Yammer-Gruppen, in der der Custodian Mitglied ist, können in dem Fall als Verwahrerdaten "markiert" werden.
+   - Daten im Exchange-Postfach, im OneDrive-Konto und in allen Microsoft Teams- oder Yammer-Gruppen, in der der Custodian Mitglied ist, können in dem Fall als Verwahrerdaten "markiert" werden.
   
    - Verwahrerdaten werden neu indiziert (durch einen Prozess namens *Erweiterte Indizierung*). Dies trägt dazu bei, die Suche im nächsten Schritt zu optimieren.
   
    - Sie können Personenbezogene Daten in einem Halterecht speichern. Dadurch werden Daten beibehalten, die für den Fall während der Untersuchung relevant sein können.
   
-   - Sie können einem Verwahrer andere Datenquellen zuordnen (z. B. können Sie eine #A0 oder eine Microsoft 365-Gruppe einem Verwahrer zuordnen), damit diese Daten wie die Daten im Postfach oder im #A1 des Verwahrers neu indiziert, in den Haltepunkt gesetzt und durchsucht werden können.
+   - Sie können einem Verwahrer andere Datenquellen zuordnen (z. B. können Sie eine SharePoint-Website oder eine Microsoft 365-Gruppe einem Verwahrer zuordnen), damit diese Daten wie die Daten im Postfach oder im OneDrive-Konto des Verwahrers neu indiziert, gespeichert und durchsucht werden können.
 
    - Sie können den [Kommunikationsworkflow](managing-custodian-communications.md) in Advanced eDiscovery verwenden, um eine Benachrichtigung über das gesetzliche Halterecht an Custodians zu senden.
 
@@ -90,9 +88,9 @@ Damit Sie mit Advanced eDiscovery beginnen können, finden Sie hier einen grundl
 
    - Überarbeiten Sie eine Abfrage, und führen Sie die Auflistung erneut aus.
 
-3. **[Commit-Auflistung an einen Überprüfungssatz](commit-draft-collection.md)**. Nachdem Sie konfiguriert und überprüft haben, ob eine Suche die gewünschten Daten zurückgibt, fügen Sie im nächsten Schritt die Suchergebnisse zu einem Überprüfungssatz hinzu. Wenn Sie einem Überprüfungssatz Daten hinzufügen, werden Elemente vom ursprünglichen Speicherort an einen sicheren Azure Storage-Speicherort kopiert. Die Daten werden erneut indiziert, um sie für eine sorgfältige und schnelle Suche beim Überprüfen und Analysieren von Elementen im Überprüfungssatz zu optimieren. Darüber hinaus können Sie einem Überprüfungssatz auch [Nicht-Office 365-Daten hinzufügen.](load-non-office-365-data-into-a-review-set.md)
+3. **[Commit-Auflistung an einen Überprüfungssatz](commit-draft-collection.md)**. Nachdem Sie konfiguriert und überprüft haben, ob eine Suche die gewünschten Daten zurückgibt, fügen Sie im nächsten Schritt die Suchergebnisse zu einem Überprüfungssatz hinzu. Wenn Sie einem Überprüfungssatz Daten hinzufügen, werden Elemente vom ursprünglichen Speicherort an einen sicheren Speicherort Azure Storage kopiert. Die Daten werden erneut indiziert, um sie für eine sorgfältige und schnelle Suche beim Überprüfen und Analysieren von Elementen im Überprüfungssatz zu optimieren. Darüber hinaus können Sie [einem Überprüfungssatz Office 365](load-non-office-365-data-into-a-review-set.md)Daten hinzufügen.
 
-   Es gibt auch eine spezielle Art von Überprüfungssatz, dem Sie Daten hinzufügen können, die als *Unterhaltungsüberprüfungssatz bezeichnet werden.* Diese Arten von Rezensionssätzen bieten Unterhaltungsrekonstruktionsfunktionen zum Rekonstruieren, Überprüfen und Exportieren von Threadunterhaltungen wie in Microsoft Teams. Weitere Informationen finden Sie [unter Überprüfen von Unterhaltungen in Advanced eDiscovery](conversation-review-sets.md).
+   Es gibt auch eine spezielle Art von Überprüfungssatz, dem Sie Daten hinzufügen können, die als *Unterhaltungsüberprüfungssatz bezeichnet werden.* Diese Arten von Rezensionssätzen bieten Unterhaltungsrekonstruktionsfunktionen zum Rekonstruieren, Überprüfen und Exportieren von Threadunterhaltungen wie in Microsoft Teams. Weitere Informationen finden Sie unter [Überprüfen von Unterhaltungen in Advanced eDiscovery](conversation-review-sets.md).
 
 4. **Überprüfen und Analysieren von Daten in einem Überprüfungssatz**. Da sich Die Daten nun in einem Überprüfungssatz befindet, können Sie eine Vielzahl von Tools und Funktionen verwenden, um die Falldaten mit dem Ziel zu anzeigen und zu analysieren, um den Datensatz auf das zu reduzieren, was für den fall, den Sie untersuchen, am relevantesten ist. Hier finden Sie eine Liste einiger Tools und Funktionen, die Sie während dieses Prozesses verwenden können.
 
@@ -106,16 +104,16 @@ Damit Sie mit Advanced eDiscovery beginnen können, finden Sie hier einen grundl
 
    - [Analysieren von Falldaten](analyzing-data-in-review-set.md). Die Analysefunktionalität in Advanced eDiscovery ist leistungsstark. Nachdem Sie Analysen für die Daten im Überprüfungssatz ausgeführt haben, führen wir Analysen durch, z. B. in der Nähe von Duplikaterkennung, E-Mail-Threading und Designs, die dazu beitragen können, die Menge an Dokumenten zu reduzieren, die Sie überprüfen müssen. Außerdem generieren wir einen Analysebericht, der das Ergebnis der ausgeführten Analyse zusammenfasst. Wie bereits erläutert, wird bei der Ausführung der Analyse auch [das Erkennungsmodell der Anwalts-Client-Rechte ausgeführt.](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)
 
-5. **Exportieren und Herunterladen von Falldaten**. Ein letzter Schritt nach dem Sammeln, Überprüfen und Analysieren von Falldaten besteht im Exportieren aus Advanced eDiscovery zur externen Überprüfung oder zur Überprüfung durch Personen außerhalb des Untersuchungsteams. Das Exportieren von Daten ist ein Zwei-Schritt-Prozess. Der erste Schritt [](export-documents-from-review-set.md) besteht im Exportieren von Daten aus dem Überprüfungssatz und kopieren Sie sie an einen anderen Azure Storage-Speicherort (einen von Microsoft oder einen von Ihrer Organisation verwalteten). Anschließend verwenden Sie Azure Storage Explorer, um [die Daten](download-export-jobs.md) auf einen lokalen Computer herunterzuladen. Zusätzlich zu den exportierten Datendateien enthält der Inhalt des Exportpakets auch einen Exportbericht, einen Zusammenfassenden Bericht und einen Fehlerbericht.
+5. **Exportieren und Herunterladen von Falldaten**. Ein letzter Schritt nach dem Sammeln, Überprüfen und Analysieren von Falldaten besteht im Exportieren aus Advanced eDiscovery zur externen Überprüfung oder zur Überprüfung durch Personen außerhalb des Untersuchungsteams. Das Exportieren von Daten ist ein Zwei-Schritt-Prozess. Der erste Schritt [](export-documents-from-review-set.md) besteht im Exportieren von Daten aus dem Überprüfungssatz und kopieren Sie sie an einen anderen Azure Storage (einer von Microsoft oder einer, der von Ihrer Organisation verwaltet wird). Anschließend verwenden Sie Azure Storage-Explorer, [um die Daten auf](download-export-jobs.md) einen lokalen Computer herunterzuladen. Zusätzlich zu den exportierten Datendateien enthält der Inhalt des Exportpakets auch einen Exportbericht, einen Zusammenfassenden Bericht und einen Fehlerbericht.
 
-## <a name="advanced-ediscovery-architecture"></a>Erweiterte eDiscovery-Architektur
+## <a name="advanced-ediscovery-architecture"></a>Advanced eDiscovery Architektur
 
 Hier ist ein Architekturdiagramm, das den Advanced eDiscovery-End-to-End-Workflow in einer Einzel-Geo-Umgebung und in einer Multi-Geo-Umgebung sowie den End-to-End-Datenfluss zeigt, der mit dem elektronischen Discoveryreferenzmodell abgestimmt [ist.](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)
 
-[![Modellposter: Advanced eDiscovery Architecture in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+[![Modellposter: Advanced eDiscovery Architektur in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [Anzeigen als Bild](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
 
 [Herunterladen als PDF-Datei](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
 
-[Herunterladen als Visio-Datei](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)
+[Herunterladen als Visio Datei](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)

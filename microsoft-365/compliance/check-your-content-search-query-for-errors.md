@@ -1,5 +1,5 @@
 ---
-title: Überprüfen der Inhaltssuchabfrage auf Fehler
+title: Überprüfen Ihrer Suchabfrage auf Fehler
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,17 +15,17 @@ search.appverid:
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
-description: Erfahren Sie, wie Sie Fehler und Tippfehler in Ihrer Schlüsselwortabfrage für die Inhaltssuche erkennen, bevor Sie die Suche ausführen.
-ms.openlocfilehash: 939ac3d227f176a0b74138107ced5dd5b7142bcd
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+description: Erfahren Sie, wie Sie Fehler und Tippfehler in Ihrer Schlüsselwortabfrage für eDiscovery-Suchen erkennen, bevor Sie die Suche ausführen.
+ms.openlocfilehash: 9c041ca690df3306347cbca77df3ba9639801245
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488212"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311688"
 ---
-# <a name="check-your-content-search-query-for-errors"></a>Überprüfen der Inhaltssuchabfrage auf Fehler
+# <a name="check-your-search-query-for-errors"></a>Überprüfen Ihrer Suchabfrage auf Fehler
   
-Hier finden Sie eine Liste der nicht unterstützten Zeichen, nach deren Überprüfung wir suchen. Nicht unterstützte Zeichen werden häufig ausgeblendet und verursachen in der Regel einen Suchfehler oder geben unbeabsichtigte Ergebnisse zurück.
+Hier ist eine Liste der nicht unterstützten Zeichen, die wir in Suchabfragen für die Inhaltssuche und Core eDiscovery suchen. Nicht unterstützte Zeichen werden häufig ausgeblendet und verursachen in der Regel einen Suchfehler oder geben unbeabsichtigte Ergebnisse zurück.
   
 - **Intelligente Anführungszeichen** – Intelligente einfache und doppelte Anführungszeichen (auch als geschweifte Anführungszeichen bezeichnet) werden nicht unterstützt. Nur gerade Anführungszeichen können in einer Suchabfrage verwendet werden. 
 
@@ -45,4 +45,4 @@ Hier sehen Sie ein Beispiel für die Warnmeldung,  die angezeigt wird, nachdem S
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>Verhindern nicht unterstützter Zeichen in Suchabfragen
 
-Nicht unterstützte Zeichen werden in der Regel einer Abfrage hinzugefügt, wenn Sie die Abfrage oder Teile der Abfrage aus anderen Anwendungen (z. B. Microsoft Word oder Microsoft Excel) kopieren und sie in das Schlüsselwortfeld auf der Abfrageseite einer Inhaltssuche einfügen. Die beste Möglichkeit zur Verhinderung nicht unterstützter Zeichen besteht darin, die Abfrage direkt in das Schlüsselwortfeld einzugeben. Sie können auch eine Abfrage aus Word oder Excel kopieren und dann in einen Nur-Text-Editor einfügen, z. B. Microsoft Notepad. Speichern Sie die Textdatei, und wählen **Sie INSI** in der **Dropdownliste Codierung** aus. Dadurch werden alle Formatierungen und nicht unterstützten Zeichen entfernt. Anschließend können Sie die Abfrage aus der Textdatei kopieren und im Schlüsselwort-Abfragefeld einfügen. 
+Nicht unterstützte Zeichen werden in der Regel einer Abfrage hinzugefügt, wenn Sie die Abfrage oder Teile der Abfrage aus anderen Anwendungen (z. B. Microsoft Word oder Microsoft Excel) kopieren und in das Schlüsselwortfeld auf der Abfrageseite einer Inhaltssuche einfügen. Die beste Möglichkeit zur Verhinderung nicht unterstützter Zeichen besteht darin, die Abfrage direkt in das Schlüsselwortfeld einzugeben. Sie können auch eine Abfrage aus Word oder Excel kopieren und dann in einen Nur-Text-Editor einfügen, z. B. Microsoft Editor. Speichern Sie die Textdatei, und wählen **Sie INSI** in der **Dropdownliste Codierung** aus. Dadurch werden alle Formatierungen und nicht unterstützten Zeichen entfernt. Anschließend können Sie die Abfrage aus der Textdatei kopieren und im Schlüsselwort-Abfragefeld einfügen.

@@ -21,19 +21,19 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie lizenzen von Benutzerkonten wegzuweisen.
 ms.date: 07/01/2020
-ms.openlocfilehash: 550136c2cfa8d81a31e52a4313dc9c967a55d56e
-ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
+ms.openlocfilehash: 87bb8f6fe0e85fc4ac832f2bc4ad746e8d6386eb
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51398193"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52310992"
 ---
 # <a name="unassign-licenses-from-users"></a>Aufheben der Zuweisung von Benutzerlizenzen
 
 Sie können lizenzen von Benutzern entweder auf der Seite **Aktive** Benutzer oder auf der Seite **Lizenzen zuweisen.** Die methode, die Sie verwenden, hängt davon ab, ob Sie Produktlizenzen von bestimmten Benutzern oder Benutzerlizenzen von einem bestimmten Produkt zuweisen möchten.
 
 > [!NOTE]
-> Als Administrator können Sie keine Lizenzen für ein Self-Service-Kaufabonnement zuweisen oder zuweisen, das von einem Benutzer in Ihrer Organisation erworben wurde. Sie können [ein Self-Service-Kaufabonnement übernehmen](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)und dann Lizenzen zuweisen oder zuweisen.
+> Als Administrator können Sie keine Lizenzen für ein Self-Service-Kaufabonnement zuweisen oder aufheben, die von einem Benutzer in Ihrer Organisation erworben wurden. Sie können ein [Self-Service-Kaufabonnement übernehmen](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)und dann Lizenzen zuweisen oder die Zuweisung von Lizenzen kündigen.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
@@ -53,12 +53,12 @@ Wenn Sie die Seite **Lizenzen** zum Zuweisen von Lizenzen verwenden, wird die Zu
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zur Seite  > **Abrechnungslizenzen.**
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Lizenzen**.
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite  > **Abrechnungslizenzen.**
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Lizenzen**.
 
 ::: moniker-end
 
@@ -81,13 +81,13 @@ Wenn Sie die Seite **Aktive Benutzer** verwenden, um lizenzen zuzuweisen, wird d
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zur Seite Aktive  > **Benutzer** abrechnung.
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Aktive Benutzer**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite Aktive  > **Benutzer** abrechnung.
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Aktive Benutzer**.
 
 ::: moniker-end
 
@@ -105,13 +105,13 @@ Wenn Sie die Seite **Aktive Benutzer** verwenden, um lizenzen zuzuweisen, wird d
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zur Seite Aktive  > **Benutzer** abrechnung.
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Aktive Benutzer**.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite Aktive  > **Benutzer** abrechnung.
+1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Aktive Benutzer**.
 
 ::: moniker-end
 
@@ -123,11 +123,11 @@ Wenn Sie die Seite **Aktive Benutzer** verwenden, um lizenzen zuzuweisen, wird d
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Was geschieht mit den Daten eines Benutzers, wenn Sie die Lizenz entfernen?
 
 - Wenn eine Lizenz von einem Benutzer entfernt wird, werden daten, die diesem Konto zugeordnet sind, 30 Tage lang gespeichert. Nach der 30-tägigen Nachfrist werden die Daten gelöscht und können nicht wiederhergestellt werden.
-- In OneDrive for Business gespeicherte Dateien werden nur gelöscht, wenn der Benutzer aus dem Microsoft 365 Admin Center gelöscht oder über die Active #A0 entfernt wird. Weitere Informationen finden Sie unter [OneDrive retention and deletion](/onedrive/retention-and-deletion).
-- Wenn die Lizenz entfernt wird, kann das Postfach des Benutzers nicht mehr mit einem eDiscovery-Tool wie inhaltssuche oder advanced eDiscovery durchsucht werden. Weitere Informationen finden Sie unter "Suchen getrennter oder nicht lizenzierter Postfächer" [in Der Inhaltssuche in Microsoft 365](../../compliance/content-search.md#searching-disconnected-or-de-licensed-mailboxes).
-- Wenn Sie über ein Enterprise-Abonnement wie Office 365 Enterprise E3 verfügen, können Sie mit Exchange Online die Postfachdaten eines gelöschten Benutzerkontos mithilfe inaktiver [Postfächer beibehalten.](../../compliance/inactive-mailboxes-in-office-365.md) Weitere Informationen finden Sie unter [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
-- Informationen zum Blockieren des Zugriffs eines Benutzers auf Microsoft 365-Daten nach dem Entfernen der Lizenz und zum anschließenden Zugriff auf die Daten finden Sie unter Entfernen eines ehemaligen [Mitarbeiters.](../add-users/remove-former-employee.md)
-- Wenn Sie die Lizenz eines Benutzers entfernen und weiterhin Office-Apps installiert sind, werden [unlizenzierte Produkt-](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) und Aktivierungsfehler in Office angezeigt, wenn sie Office-Apps verwenden.
+- In der OneDrive for Business gespeicherte Dateien werden nur gelöscht, wenn der Benutzer aus dem Microsoft 365 Admin Center gelöscht oder über die Active Directory-Synchronisierung entfernt wird. Weitere Informationen finden Sie unter [OneDrive Aufbewahrung und Löschung](/onedrive/retention-and-deletion).
+- Wenn die Lizenz entfernt wird, kann das Postfach des Benutzers nicht mehr mithilfe eines eDiscovery-Tools wie Inhaltssuche oder -Advanced eDiscovery. Weitere Informationen finden Sie unter "Suchen getrennter oder nicht lizenzierter Postfächer" in [Inhaltssuchreferenz](../../compliance/content-search-reference.md#searching-disconnected-or-de-licensed-mailboxes).
+- Wenn Sie über ein Enterprise wie Office 365 Enterprise E3 verfügen, können Exchange Online die Postfachdaten eines gelöschten Benutzerkontos mithilfe inaktiver Postfächer [beibehalten.](../../compliance/inactive-mailboxes-in-office-365.md) Weitere Informationen finden Sie unter [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
+- Informationen zum Blockieren des Zugriffs eines Benutzers auf Microsoft 365 Daten nach dem Entfernen der Lizenz und zum anschließenden Zugriff auf die Daten finden Sie unter Entfernen eines ehemaligen [Mitarbeiters](../add-users/remove-former-employee.md).
+- Wenn Sie die Lizenz eines Benutzers entfernen und weiterhin Office Installierte Apps installiert haben, werden in [Office unlizenzierte](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) Produkt- und Aktivierungsfehler angezeigt, wenn Office apps verwenden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

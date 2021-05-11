@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 12f648ce476f6e29cbb6b038cc42f2e744d77104
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: dc1e8707dc0810c0986698674a64e969792b5fb8
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933301"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311232"
 ---
 # <a name="troubleshoot-installation-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Beheben von Installationsproblemen für Microsoft Defender for Endpoint unter Linux
 
@@ -40,8 +40,8 @@ ms.locfileid: "51933301"
 
 Ein Fehler bei der Installation kann zu einer aussagekräftigen Fehlermeldung des Paket-Managers führen. Um zu überprüfen, ob die Installation erfolgreich war, rufen Sie die Installationsprotokolle ab, und überprüfen Sie sie mit:
 
- ```bash
- sudo journalctl | grep 'microsoft-mdatp'  > installation.log
+```bash
+ sudo journalctl --no-pager | grep 'microsoft-mdatp' > installation.log
 ```
 
 ```bash
@@ -50,7 +50,7 @@ Ein Fehler bei der Installation kann zu einer aussagekräftigen Fehlermeldung de
 
 ```Output
  microsoft-mdatp-installer[102243]: postinstall end [2020-03-26 07:04:43OURCE +0000] 102216
- ```
+```
 
 Eine Ausgabe des vorherigen Befehls mit dem richtigen Datum und der richtigen Installationszeit zeigt den Erfolg an.
 
@@ -77,6 +77,7 @@ Stellen Sie bei der [manuellen](linux-install-manually.md)Bereitstellung sicher,
 ```bash
 systemctl status mdatp
 ```
+
 ```Output
  ● mdatp.service - Microsoft Defender for Endpoint
    Loaded: loaded (/lib/systemd/system/mdatp.service; enabled; vendor preset: enabled)
@@ -119,7 +120,7 @@ systemctl status mdatp
     sudo cp /opt/microsoft/mdatp/conf/mdatp.service <systemd_path>
     ```
 
-    Dabei handelt es sich um Ubuntu- und ```<systemd_path>``` ```/lib/systemd/system``` Debian-Distributionen sowie für ```/usr/lib/systemd/system``` Rhel, CentOS, Oracle und SLES.
+    Dabei handelt es sich um Ubuntu- und `<systemd_path>` `/lib/systemd/system` Debian-Distributionen sowie für `/usr/lib/systemd/system` Rhel, CentOS, Oracle und SLES.
    Führen Sie dann Schritt 2 erneut aus.
 
 4. Wenn die oben genannten Schritte nicht funktionieren, überprüfen Sie, ob SELinux installiert ist und ob der Erzwingungsmodus aktiviert ist. Wenn ja, versuchen Sie, ihn auf den zulässigen (vorzugsweise) oder deaktivierten Modus zu setzen. Dies kann durch Festlegen des Parameters auf "zulässig" oder "deaktiviert" in der Datei, gefolgt von `SELINUX` `/etc/selinux/config` einem Neustart, geschehen. Weitere Informationen finden Sie auf der Man-Seite von selinux.

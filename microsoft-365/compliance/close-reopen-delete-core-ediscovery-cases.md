@@ -1,5 +1,5 @@
 ---
-title: Schließen, erneutes Öffnen und Löschen von zentralen eDiscovery-Fällen
+title: Schließen, Erneut öffnen und Löschen von Core eDiscovery-Fällen
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,96 +16,98 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: In diesem Artikel wird beschrieben, wie Sie zentrale eDiscovery-Fälle verwalten. Dazu gehört das Schließen einer Anfrage, das erneute Öffnen eines geschlossenen Falls und das Löschen einer Anfrage.
-ms.openlocfilehash: 17b243a7207fd6927188b42e585101ff1d258b76
-ms.sourcegitcommit: 5c96d06496d40d2523edbea336f7355c3c77cc80
+description: In diesem Artikel wird die Verwaltung von Core eDiscovery-Fällen beschrieben. Dies umfasst das Schließen eines Falls, das erneute Öffnen eines geschlossenen Falls und das Löschen eines Falls.
+ms.openlocfilehash: 251ca932954071cf949c45343130f122464dcf01
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44412794"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52310880"
 ---
-# <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Schließen, erneutes Öffnen und Löschen eines zentralen eDiscovery-Falls
+# <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Schließen, Erneut öffnen und Löschen eines Core eDiscovery-Falls
 
-In diesem Artikel wird beschrieben, wie Sie zentrale eDiscovery-Fälle in Microsoft 365 schließen, erneut öffnen und löschen.
+In diesem Artikel wird beschrieben, wie Sie Core eDiscovery-Fälle in einem Microsoft 365.
 
-## <a name="close-a-case"></a>Schließen einer Anfrage
+## <a name="close-a-case"></a>Schließen eines Falls
 
-Wenn die von einem zentralen eDiscovery-Fall unterstützte Rechtssache oder Untersuchung abgeschlossen ist, können Sie den Fall schließen. Hier erfahren Sie, was passiert, wenn Sie einen Fall schließen:
+Wenn der von einem Core eDiscovery-Fall unterstützte Rechtsstreit oder die Untersuchung abgeschlossen ist, können Sie den Fall schließen. Dies geschieht, wenn Sie einen Fall schließen:
   
-- Wenn der Fall inhaltsspeicherorte in der eDiscovery-Aufbewahrungsstelle enthält, werden diese Haltestatus deaktiviert. Nachdem der Haltestatus deaktiviert wurde, wird eine 30-tägige Kulanzfrist (so genannte *Verzögerungs*Speicher) auf Aufbewahrungsorte für Inhalte angewendet. Dadurch wird verhindert, dass Inhalte sofort gelöscht werden, und Administratoren können den Inhalt suchen und wiederherstellen, bevor er nach Ablauf des Verzögerungszeitraums endgültig gelöscht wird. Weitere Informationen finden Sie unter [Entfernen von Inhaltsspeicherorten aus einer eDiscovery-Aufbewahrung](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
+- Wenn der Fall eDiscovery-Halte halte enthält, werden sie deaktiviert. Nachdem der Haltezeitraum deaktiviert wurde, wird eine 30-tägige Nachfrist (als Verzögerungsverzögerung *bezeichnet)* auf Inhaltsstandorte angewendet, die sich im Haltezeitraum befinden. Dadurch wird verhindert, dass Inhalte sofort gelöscht werden, und Administratoren können Inhalte suchen und wiederherstellen, bevor sie nach Ablauf des Verzögerungszeitraums endgültig gelöscht werden können. Weitere Informationen finden Sie unter [Entfernen von Inhaltsstandorten aus einem eDiscovery-Halteraum.](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)
 
-- Durch das Schließen eines Case werden nur die haltebereiche deaktiviert, die diesem Fall zugeordnet sind. Wenn andere haltebereiche an einem Inhaltsspeicherort (beispielsweise ein Beweissicherungsverfahren, eine Aufbewahrungsrichtlinie oder ein Haltestatus von einem anderen zentralen eDiscovery-Fall) gespeichert werden, werden diese Aufbewahrungsorte weiterhin beibehalten.
+- Durch das Abschließen eines Falls werden nur die Haltebereiche deaktiviert, die diesem Fall zugeordnet sind. Wenn andere Aufbewahrungsspeicherorts an einem Inhaltsspeicherort platziert werden (z. B. ein Prozessaufbewahrungsverfahren, eine Aufbewahrungsrichtlinie oder ein Haltebereich aus einem anderen Core eDiscovery-Fall), werden diese Aufbewahrungsspeicher weiterhin beibehalten.
 
-- Der Fall wird weiterhin auf der zentralen eDiscovery-Seite im Microsoft 365 Compliance Center aufgeführt. Die Details, Aufbewahrungen, Suchvorgänge und Elemente eines geschlossenen Falls werden beibehalten.
+- Der Fall wird weiterhin auf der Seite Core eDiscovery im Microsoft 365 Compliance Center aufgeführt. Die Details, Haltebereiche, Suchvorgänge und Mitglieder eines abgeschlossenen Falls bleiben erhalten.
 
-- Sie können einen Fall bearbeiten, nachdem er geschlossen wurde. Beispielsweise können Sie Mitglieder hinzufügen oder entfernen, suchen erstellen und Suchergebnisse exportieren. Der Hauptunterschied zwischen aktiven und geschlossenen Fällen besteht darin, dass eDiscovery-Haltestatus deaktiviert sind, wenn ein Fall geschlossen wird.
+- Sie können einen Fall bearbeiten, nachdem er geschlossen wurde. Beispielsweise können Sie Mitglieder hinzufügen oder entfernen, Suchen erstellen und Suchergebnisse exportieren. Der Hauptunterschied zwischen aktiven und geschlossenen Fällen besteht in der Deaktiviertheit von eDiscovery-Haltefällen, wenn ein Fall geschlossen wird.
 
-So schließen Sie einen Fall:
+So schließen Sie einen Fall ab
   
-1. Klicken Sie im Microsoft 365 Compliance Center auf **eDiscovery**  >  **Core** , um die Liste der zentralen eDiscovery-Fälle in Ihrer Organisation anzuzeigen.
+1. Klicken Sie Microsoft 365 Compliance Center auf **eDiscovery** Core, um die Liste der  >   Core eDiscovery-Fälle in Ihrer Organisation anzeigen zu können.
 
-2. Klicken Sie auf den Namen der Groß-/Kleinschreibung, die Sie schließen möchten.
+2. Klicken Sie auf den Namen des Falls, den Sie schließen möchten.
 
-    Die Dropdown Seite **diesen Fall verwalten** wird angezeigt.
+   ![Close case on case home page](../media/eDiscoveryCaseHomePage.png)
 
-3. Klicken Sie unter **Fall Status verwalten**auf **Schließ Fall**.
+3. Klicken Sie auf der Startseite unter **Status** auf **Fall schließen**.
 
-    Es wird eine Warnung angezeigt, die besagt, dass die dem Fall zugeordneten Haltestatus deaktiviert werden.
+    Es wird eine Warnung angezeigt, dass die dem Fall zugeordneten Haltezeichen deaktiviert werden.
 
-4. Klicken Sie auf **Ja** , um den Fall zu schließen.
+4. Klicken **Sie auf Ja,** um den Fall zu schließen.
 
-    Der Status auf der Flyout-Seite " **diesen Fall verwalten** " wird von " **aktiv** " in " **Schließen**" geändert.
+    Der Status auf der Fall-Homepage wird von **Aktiv** in **Schließen geändert.**
 
-5. Schließen Sie die Seite **diesen Fall verwalten** .
+5. Klicken Sie **auf der Seite Core eDiscovery** auf **Aktualisieren,** um den Status des geschlossenen Falls zu aktualisieren. Es kann bis zu 60 Minuten dauern, bis der Abschlussvorgang abgeschlossen ist.
 
-6. Klicken Sie auf der **zentralen eDiscovery** -Seite auf **Aktualisieren** , um den Status des geschlossenen Falls zu aktualisieren. Es kann bis zu 60 Minuten dauern, bis der Abschlussprozess abgeschlossen ist.
+    Wenn der Prozess abgeschlossen ist, wird der Status des Falls auf der Seite Core **eDiscovery** in **Closed** geändert.
 
-    Wenn der Prozess abgeschlossen ist, wird der Status der Anfrage in **geschlossen** auf der **zentralen eDiscovery** -Seite geändert. Klicken Sie erneut auf den Namen der Anfrage, um die Flyout-Seite " **diesen Fall verwalten** " anzuzeigen, die Informationen dazu enthält, wann der Fall geschlossen wurde und wer ihn geschlossen hat.
+## <a name="reopen-a-closed-case"></a>Erneuter Öffnen eines geschlossenen Falls
 
-## <a name="reopen-a-closed-case"></a>Erneutes Öffnen eines geschlossenen Falls
-
-Wenn Sie einen Fall erneut öffnen, werden alle eDiscovery-Aufbewahrungsorte, die bei der Schließung des Falles abgeschlossen wurden, nicht automatisch wieder eingesetzt. Nachdem der Fall erneut geöffnet wurde, müssen Sie zur Seite "halte **Status** " wechseln und die vorherigen Haltestatus aktivieren. Zum Aktivieren eines haltebereichs wählen Sie ihn aus, um die Flyout-Seite anzuzeigen, und legen Sie dann die **Status** Umschalttaste **auf**ein fest.
+Wenn Sie einen Fall erneut öffnen, werden alle eDiscovery-Haltewerte, die beim Schließen des Falls aktiviert waren, nicht automatisch wiederhergestellt. Nachdem der Fall erneut geöffnet wurde, müssen  Sie zur Seite Halte halte wechseln und die vorherigen Halte halte aktivieren. Wenn Sie einen Haltebereich aktivieren möchten, wählen Sie ihn aus, um die Flyout-Seite anzuzeigen, und legen Sie dann den **Status** auf **Ein** fest.
   
-1. Klicken Sie im Microsoft 365 Compliance Center auf **eDiscovery**  >  **Core** , um die Liste der zentralen eDiscovery-Fälle in Ihrer Organisation anzuzeigen.
+1. Klicken Sie Microsoft 365 Compliance Center auf **eDiscovery** Core, um die Liste der  >   Core eDiscovery-Fälle in Ihrer Organisation anzeigen zu können.
 
-2. Klicken Sie auf den Namen der Groß-/Kleinschreibung, die Sie erneut öffnen möchten.
+2. Klicken Sie auf den Namen des Falls, den Sie erneut öffnen möchten.
 
-    Die Dropdown Seite **diesen Fall verwalten** wird angezeigt. 
+   ![Erneuter Öffnen eines geschlossenen Falls](../media/eDiscoveryCaseHomePageReopen.png)
 
-3. Klicken Sie unter **Fall Status verwalten**auf **erneuter Fall öffnen**.
+3. Klicken Sie auf der Startseite unter **Status** auf **Erneuter Fall .**
 
-    Es wird eine Warnung angezeigt, die besagt, dass die haltebereiche, die dem Fall beim Schließen zugeordnet waren, nicht automatisch aktiviert werden.
+    Es wird eine Warnung angezeigt, dass die halte, die dem Fall zugeordnet waren, als er geschlossen wurde, nicht automatisch aktiviert werden.
 
-4. Klicken Sie auf **Ja** , um die Anfrage erneut zu öffnen.
+4. Klicken Sie **auf Ja,** um den Fall erneut zu öffnen.
 
-    Der Status auf der Flyout-Seite " **diesen Fall verwalten** " wird von " **geschlossen** " in " **aktiv**" geändert.
+    Der Status auf der Flyoutseite für die Fall-Homepage wird von **Closed in** **Active geändert.**
 
-5. Schließen Sie die Seite **diesen Fall verwalten** . 
+5. Klicken Sie **auf der Seite Core eDiscovery** auf **Aktualisieren,** um den Status des erneut geöffneten Falls zu aktualisieren. Es kann bis zu 60 Minuten dauern, bis der Erneutes Öffnen abgeschlossen ist. 
 
-6. Klicken Sie auf der **zentralen eDiscovery** -Seite auf **Aktualisieren** , um den Status des erneut geöffneten Falls zu aktualisieren. Es kann bis zu 60 Minuten dauern, bis der Vorgang zum erneuten Öffnen abgeschlossen ist. 
+    Wenn der Prozess abgeschlossen ist, wird der Status des Falls auf der Seite Core **eDiscovery** in **Aktiv** geändert.
 
-    Wenn der Prozess abgeschlossen ist, wird der Status der Groß-/Kleinschreibung auf der **zentralen eDiscovery** -Seite in " **aktiv** " geändert. 
+7. (Optional) Um alle halte, die dem erneut geöffneten Fall zugeordnet sind, zu aktivieren, wechseln Sie zur Registerkarte Halte, wählen Sie einen Haltestatus aus, und aktivieren Sie dann das Kontrollkästchen unter **Status** auf der Flyoutseite für halte. 
   
-## <a name="delete-a-case"></a>Löschen einer Anfrage
+## <a name="delete-a-case"></a>Löschen eines Falls
 
-Sie können auch aktive und geschlossene Haupt-eDiscovery-Fälle löschen. Wenn Sie einen Fall löschen, werden alle Suchvorgänge und Exporte gelöscht, und der Fall wird aus der Liste der Fälle auf der **zentralen eDiscovery** -Seite im Microsoft 365 Compliance Center entfernt. Sie können einen gelöschten Fall nicht erneut öffnen.
+Sie können auch aktive und geschlossene Core eDiscovery-Fälle löschen. Wenn Sie einen Fall löschen, werden alle Such- und Exporte in dem Fall gelöscht, und der Fall wird aus der Liste der Fälle auf der Seite Core **eDiscovery** im Microsoft 365 Compliance Center entfernt. Sie können einen gelöschten Fall nicht erneut öffnen.
 
-Bevor Sie einen Fall löschen können (ob er aktiv oder geschlossen ist), müssen Sie zuerst *alle* eDiscovery-Haltestatus löschen, die mit der Anfrage verknüpft sind. Dies umfasst das Löschen von Haltebereichen mit dem Status **Off**. 
+Bevor Sie einen Fall löschen können (unabhängig davon, ob  er aktiv oder geschlossen ist), müssen Sie zunächst alle eDiscovery-Löscher löschen, die dem Fall zugeordnet sind. Dazu gehört das Löschen von Haltestatus mit dem Status **Aus**. 
 
-So löschen Sie eine eDiscovery-Sperre:
+So löschen Sie einen eDiscovery-Halteraum:
 
-1. Wechseln Sie zur Registerkarte halte **Status** in dem Fall, den Sie löschen möchten.
+1. Wechseln Sie **in** dem Fall, den Sie löschen möchten, auf die Registerkarte Halte haltet.
 
-2. Klicken Sie auf den Haltestatus, den Sie löschen möchten.
+2. Wählen Sie den Halteraum aus, den Sie löschen möchten.
 
-3. Klicken Sie auf der Flyout-Seite auf **Haltestatus löschen**.
+3. Klicken Sie auf der Flyoutseite auf **Löschen**.
 
-So löschen Sie einen Fall:
+      ![Löschen eines eDiscovery-Halteraums](../media/DeleteeDiscoveryHold.png)
 
-1. Klicken Sie im Microsoft 365 Compliance Center auf **eDiscovery**  >  **Core** , um die Liste der zentralen eDiscovery-Fälle in Ihrer Organisation anzuzeigen.
+So löschen Sie einen Fall
 
-2. Klicken Sie auf den Namen der Groß-/Kleinschreibung, die Sie löschen möchten.
+1. Klicken Sie Microsoft 365 Compliance Center auf **eDiscovery** Core, um die Liste der  >   Core eDiscovery-Fälle in Ihrer Organisation anzeigen zu können.
 
-3. Klicken Sie unter **Fall Status verwalten** auf der Flyout-Seite auf **Fall löschen**.
+2. Klicken Sie auf den Namen des Falls, den Sie löschen möchten.
 
-Wenn der Fall, den Sie löschen möchten, weiterhin eDiscovery-Haltestatus enthält, erhalten Sie eine Fehlermeldung. Sie müssen alle dem Fall zugeordneten haltebereiche löschen und dann erneut versuchen, die Groß-/Kleinschreibung zu löschen.
+3. Klicken Sie auf der Fall-Startseite unter **Status** auf **Fall löschen**.
+
+      ![Erneuter Öffnen eines geschlossenen Falls](../media/eDiscoveryCaseHomePageDelete.png)
+
+Wenn der Fall, den Sie löschen möchten, weiterhin eDiscovery-Halte halte enthält, erhalten Sie eine Fehlermeldung. Sie müssen alle dem Fall zugeordneten Halte halte löschen und dann erneut versuchen, den Fall zu löschen.

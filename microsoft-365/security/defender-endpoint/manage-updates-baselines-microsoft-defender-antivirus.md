@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 05/08/2021
-ms.openlocfilehash: 4f2b931018d49affa2d94ddf1a147c4fd2e02085
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.date: 05/10/2021
+ms.openlocfilehash: 5b599e9d5a5c3d098033af1f1df96ee9f26025ee
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302076"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52312012"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Verwalten Microsoft Defender Antivirus Updates und Anwenden von Baselines
 
@@ -83,7 +83,7 @@ Alle unsere Updates enthalten
 - Integrationsverbesserungen (Cloud, Microsoft 365 Defender).
 <br/>
 <details>
-<summary> April-2021 (Plattform: 4.18.2104.9| Modul: 1.1.18100.5)</summary>
+<summary> April-2021 (Plattform: 4.18.2104.9 | Modul: 1.1.18100.5)</summary>
 
 &ensp;Version des Security Intelligence-Updates: **1.337.2.0**  
 &ensp;Veröffentlicht: **1. April 2021**  

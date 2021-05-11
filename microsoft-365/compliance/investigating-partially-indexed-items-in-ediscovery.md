@@ -18,12 +18,12 @@ ms.assetid: 4e8ff113-6361-41e2-915a-6338a7e2a1ed
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie teilweise indizierte Elemente (auch als nicht indizierte Elemente bezeichnet) aus Exchange, SharePoint und OneDrive for Business in Ihrer Organisation verwalten.
-ms.openlocfilehash: c24fb2d9b633181538d76cf35e27dae1824b311d
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 539fd2687735a5ee14be543750becca8c6c3154c
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994804"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311454"
 ---
 # <a name="investigating-partially-indexed-items-in-ediscovery"></a>Untersuchen teilweise indizierter Elemente in eDiscovery
 
@@ -49,9 +49,9 @@ Nachdem Sie eine eDiscovery-Suche ausgeführt haben, werden die Gesamtanzahl und
   
 ## <a name="calculating-the-ratio-of-partially-indexed-items-in-your-organization"></a>Berechnen des Verhältnisses teilweise indizierter Elemente in Ihrer Organisation
 
-Um die Belastung Ihrer Organisation gegenüber teilweise indizierten Elementen zu verstehen, können Sie eine Suche nach allen Inhalten in allen Postfächern (mithilfe einer leeren Schlüsselwortabfrage) ausführen. Im folgenden Beispiel sind 56.208 (4.830 MB) vollständig indizierte Elemente und 470 (316 MB) teilweise indizierte Elemente.
+Um die Belastung Ihrer Organisation gegenüber teilweise indizierten Elementen zu verstehen, können Sie eine Suche nach allen Inhalten in allen Postfächern (mithilfe einer leeren Schlüsselwortabfrage) ausführen. Im folgenden Beispiel sind 1.629.904 (146,46 GB) vollständig indizierte Elemente und 10.025 (10,27 GB) teilweise indizierte Elemente.
   
-![Beispiel für Suchstatistiken mit teilweise indizierten Elementen](../media/0f6a5cf7-4c98-44a0-a0dd-5aed67124641.png)
+![Beispiel für Suchstatistiken mit teilweise indizierten Elementen](../media/PartiallyIndexedItemsTest.png)
   
 Sie können den Prozentsatz teilweise indizierter Elemente mithilfe der folgenden Berechnungen bestimmen.
   
@@ -59,23 +59,23 @@ Sie können den Prozentsatz teilweise indizierter Elemente mithilfe der folgende
 
 `(Total number of partially indexed items/Total number of items) x 100`
 
-`(470/56,208) x 100 = 0.84%`
+`(10025/1629904) x 100 = 0.62%`
 
-Mithilfe der Suchergebnisse aus dem vorherigen Beispiel werden 84 % aller Postfachelemente teilweise indiziert.
+Mithilfe der Suchergebnisse aus dem vorherigen Beispiel werden 0,62 % aller Postfachelemente teilweise indiziert.
   
  **So berechnen Sie den Prozentsatz der Größe teilweise indizierter Elemente in Ihrer Organisation:**
 
 `(Size of all partially indexed items/Size of all items) x 100`
 
-`(316 MB/4830 MB) x 100 = 6.54%`
+`(10.27 GB/146.46 MB) x 100 = 7.0%`
 
-Im vorherigen Beispiel sind also 6,54 % der Gesamtgröße von Postfachelementen aus teilweise indizierten Elementen. Wie bereits erwähnt, verfügen die meisten Organisationen über weniger als 1 % des Inhalts nach Volumen und weniger als 12 % des Teils indizierten Inhalts.
+Im vorherigen Beispiel sind also 7 % der Gesamtgröße von Postfachelementen aus teilweise indizierten Elementen. Wie bereits erwähnt, verfügen die meisten Organisationen über weniger als 1 % des Inhalts nach Volumen und weniger als 12 % des Teils indizierten Inhalts.
 
 ## <a name="working-with-partially-indexed-items"></a>Arbeiten mit teilweise indizierten Elementen
 
 In Fällen, in denen Sie teilweise Elemente untersuchen müssen, um zu [](export-a-content-search-report.md) überprüfen, ob sie keine relevanten Informationen enthalten, können Sie einen Inhaltssuchbericht exportieren, der Informationen zu teilweise indizierten Elementen enthält. Wenn Sie einen Inhaltssuchbericht exportieren, müssen Sie eine der Exportoptionen auswählen, die teilweise indizierte Elemente enthalten.
   
-![Auswählen der zweiten oder dritten Option zum Exportieren teilweise indizierter Elemente](../media/624a62b4-78f7-4329-ab5d-e62e3b369885.png)
+![Auswählen der zweiten oder dritten Option zum Exportieren teilweise indizierter Elemente](../media/PartiallyIndexedItemsExportOptions.png)
   
 Wenn Sie eDiscovery-Suchergebnisse oder einen Suchbericht mit einer dieser Optionen exportieren, enthält der Export einen Bericht namens Unindexed Items.csv. Dieser Bericht enthält die meisten der gleichen Informationen wie die ResultsLog.csv Datei. Die Datei Nicht indizierte Items.csv enthält jedoch auch zwei Felder im Zusammenhang mit teilweise indizierten Elementen: **Fehlertags** und **Fehlereigenschaften**. Diese Felder enthalten Informationen zum Indizierungsfehler für jedes teilweise indizierte Element. Mithilfe der Informationen in diesen beiden Feldern können Sie ermitteln, ob sich der Indizierungsfehler für eine bestimmte Untersuchung auf Ihre Untersuchung aus wirkt. In diesem Fall können Sie eine gezielte Suche durchführen und bestimmte E-Mail-Nachrichten und SharePoint- oder OneDrive-Dokumente abrufen und exportieren, damit Sie diese untersuchen können, um festzustellen, ob sie für Ihre Untersuchung relevant sind. Schrittweise Anweisungen finden Sie unter [Prepare a CSV file for a targeted search in Office 365](csv-file-for-an-id-list-content-search.md).
 

@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Microsoft 365 Compliance Center auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte von SharePoint und OneDrive for Business werden als systemeigene Office exportiert.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3bb46966ddd8d4b2ae61091b126daea1413039ac
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: b5e900d44e59c2c37263c1162a7e631b1635cb06
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994860"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311962"
 ---
 # <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen
 
@@ -35,9 +35,9 @@ Nachdem eine Inhaltssuche erfolgreich ausgeführt wurde, können Sie die Sucherg
   
 Beim Exportieren der Ergebnisse einer Inhaltssuche werden die Ergebnisse vorbereitet und dann auf einen lokalen Computer heruntergeladen.
   
-## <a name="before-you-export-content-search-results"></a>Vor dem Exportieren von Inhaltssuchergebnissen
+## <a name="before-you-export-search-results"></a>Vor dem Exportieren von Suchergebnissen
 
-- Zum Exportieren von Suchergebnissen muss Ihnen die Verwaltungsrolle Export im Security & Compliance Center zugewiesen werden. Diese Rolle wird der integrierten Rollengruppe eDiscovery Manager zugewiesen. Sie ist nicht standardmäßig der Rollengruppe Organisationsverwaltung zugewiesen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
+- Zum Exportieren von Suchergebnissen muss Ihnen die Rolle "Exportverwaltung" im Security & Compliance Center zugewiesen werden. Diese Rolle wird der integrierten Rollengruppe eDiscovery Manager zugewiesen. Sie ist nicht standardmäßig der Rollengruppe Organisationsverwaltung zugewiesen. Weitere Informationen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen](assign-ediscovery-permissions.md).
 
 - Der Computer, den Sie zum Exportieren der Suchergebnisse verwenden, muss die folgenden Voraussetzungen erfüllen:
   
@@ -57,7 +57,7 @@ Beim Exportieren der Ergebnisse einer Inhaltssuche werden die Ergebnisse vorbere
   > <sup>1</sup> Microsoft stellt keine Erweiterungen oder Add-Ons von Drittanbietern für ClickOnce her. Das Exportieren von Suchergebnissen mithilfe eines nicht unterstützten Browsers mit Drittanbietererweiterungen oder -add-ons wird nicht unterstützt.<br/>
   > <sup>2</sup> Als Ergebnis der letzten Änderungen an Microsoft Edge ist ClickOnce unterstützung standardmäßig nicht mehr aktiviert. Anweisungen zum Aktivieren ClickOnce in Edge finden Sie unter [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
   
-- Es wird empfohlen, Suchergebnisse auf einen lokalen Computer herunterzuladen. Um jedoch zu vermeiden, dass die Firewall oder Proxyinfrastruktur Ihres Unternehmens beim Herunterladen von Suchergebnissen Probleme verursacht, können Sie das Herunterladen von Suchergebnissen auf einen virtuellen Desktop außerhalb Ihres Netzwerks in Betracht ziehen. Dadurch können Timeouts verringert werden, die in Azure-Datenverbindungen beim Exportieren einer großen Anzahl von Dateien auftreten. Weitere Informationen zu virtuellen Desktops finden Sie [unter Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop). 
+- Es wird empfohlen, Suchergebnisse auf einen lokalen Computer herunterzuladen. Um zu vermeiden, dass die Firewall oder Proxyinfrastruktur Ihres Unternehmens beim Herunterladen von Suchergebnissen Probleme verursacht, können Sie das Herunterladen von Suchergebnissen auf einen virtuellen Desktop außerhalb Ihres Netzwerks in Betracht ziehen. Dadurch können Timeouts verringert werden, die in Azure-Datenverbindungen beim Exportieren einer großen Anzahl von Dateien auftreten. Weitere Informationen zu virtuellen Desktops finden Sie [unter Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop).
 
 - Um die Leistung beim Herunterladen von Suchergebnissen zu verbessern, sollten Sie Suchen, die einen großen Satz von Ergebnissen zurückgeben, in kleinere Suchen unterteilen. Beispielsweise können Sie Datumsbereiche in Suchabfragen verwenden, um einen kleineren Satz von Ergebnissen zurückzukehren, die schneller heruntergeladen werden können.
   
@@ -82,55 +82,57 @@ Beim Exportieren der Ergebnisse einer Inhaltssuche werden die Ergebnisse vorbere
     </system.net>
     ```
 
+- Wenn die Ergebnisse einer Inhaltssuche älter als 7 Tage sind und Sie einen Exportauftrag übermitteln, wird eine Fehlermeldung angezeigt, in der Sie aufgefordert werden, die Suche erneut zu führen, um die Suchergebnisse zu aktualisieren. Brechen Sie in diesem Fall den Export ab, führen Sie die Suche erneut aus, und starten Sie den Export erneut.
+
 ## <a name="step-1-prepare-search-results-for-export"></a>Schritt 1: Vorbereiten der Suchergebnisse für Export
 
 Der erste Schritt besteht in der Vorbereitung der Suchergebnisse für den Export. Wenn Sie Ergebnisse vorbereiten, werden sie in einen von Microsoft bereitgestellten Azure Storage in der Microsoft Cloud hochgeladen. Inhalte von Postfächern und Websites werden mit einer maximalen Rate von 2 GB pro Stunde hochgeladen.
   
-1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
+1. Wählen Sie Microsoft 365 Compliance Center die Inhaltssuche aus, aus der Sie Ergebnisse exportieren möchten.
   
-2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
+2. Klicken Sie **im** Menü Aktionen unten auf der Flyoutseite auf **Ergebnisse exportieren.**
+
+   ![Export results option in Actions menu](../media/ActionMenuExportResults.png)
+
+   Die **Flyoutseite** Ergebnisse exportieren wird angezeigt. Die zum Exportieren von Inhalten verfügbaren Exportoptionen hängen davon ab, ob sich Suchergebnisse in Postfächern oder Websites befinden oder ob beides kombiniert wird.
+
+3. Wählen **Sie unter** Ausgabeoptionen eine der folgenden Optionen aus:
   
-3. Klicken Sie im linken Bereich des Security & Compliance Center auf **Inhaltssuche** \> **durchsuchen.**
+   ![Exportausgabeoptionen](../media/ExportOutputOptions.png)
+
+    - **Alle Elemente, mit Ausnahme von** Elementen, die nicht ein unbekanntes Format haben, sind verschlüsselt oder wurden aus anderen Gründen nicht indiziert. Mit dieser Option werden nur indizierte Elemente exportiert.
   
-4. Wählen Sie **auf der Seite Inhaltssuche** eine Suche aus. 
+    - **Alle Elemente, einschließlich** der Elemente, die ein nicht unbekanntes Format haben, sind verschlüsselt oder wurden aus anderen Gründen nicht indiziert. Mit dieser Option werden indizierte und nicht indizierte Elemente exportiert.
   
-5. Klicken Sie im Detailbereich unter **Ergebnisse auf einem Computer exportieren** auf **Export starten**. 
+    - **Nur Elemente, die ein nicht unbekanntes** Format haben, verschlüsselt sind oder aus anderen Gründen nicht indiziert wurden. Mit dieser Option werden nur nicht indizierte Elemente exportiert.
+
+      Im Abschnitt [Weitere Informationen finden](#more-information) Sie eine Beschreibung, wie teilweise indizierte Elemente exportiert werden. Weitere Informationen zu teilweise indizierten Elementen finden Sie unter [Teilweise indizierte Elemente in der Inhaltssuche](partially-indexed-items-in-content-search.md).
+
+4. Wählen **Sie unter Exchange Inhalt exportieren als** eine der folgenden Optionen aus:
   
-    > [!NOTE]
-    > Wenn die Suchergebnisse älter als 7 Tage sind, werden Sie aufgefordert, die Suchergebnisse zu aktualisieren. Brechen Sie in diesem Fall den Export ab, klicken Sie im Detailbereich für die ausgewählte Suche auf **Suchergebnisse aktualisieren** und starten Sie dann den Export erneut, nachdem die Ergebnisse aktualisiert wurden.  
-  
-6. Wählen Sie **auf der Seite** Suchergebnisse exportieren unter **Ausgabeoptionen** eine der folgenden Optionen aus:
-  
-    - Alle Elemente, mit Ausnahme von Elementen mit unbekanntem Format, sind verschlüsselt oder wurden aus anderen Gründen nicht indiziert.
-  
-    - Alle Elemente, einschließlich der Elemente, die ein nicht unbekanntes Format haben, sind verschlüsselt oder wurden aus anderen Gründen nicht indiziert.
-  
-    - Nur Elemente, die ein nicht unbekanntes Format haben, verschlüsselt sind oder aus anderen Gründen nicht indiziert wurden
-  
-    Im Abschnitt [Weitere Informationen finden](#more-information) Sie eine Beschreibung, wie teilweise indizierte Elemente exportiert werden. Weitere Informationen zu teilweise indizierten Elementen finden Sie unter [Teilweise indizierte Elemente in der Inhaltssuche](partially-indexed-items-in-content-search.md).
-  
-7. Wählen **Sie unter Exchange Inhalt exportieren als** eine der folgenden Optionen aus:
-  
+   ![Exchange-Optionen](../media/ExchangeExportOptions.png)
+
     - **Eine PST-Datei für jedes Postfach:** Exportiert eine PST-Datei für jedes Benutzerpostfach, das Suchergebnisse enthält. Alle Ergebnisse aus dem Archivpostfach des Benutzers sind in derselben PST-Datei enthalten. Mit dieser Option wird die Postfachordnerstruktur aus dem Quellpostfach reproduziert.
   
-    - **Eine PST-Datei mit allen Nachrichten:** Exportiert eine einzelne PST-Datei *(Exchange.pst*), die die Suchergebnisse aus allen Quellpostfächern enthält, die in der Suche enthalten sind. Mit dieser Option wird die Postfachordnerstruktur für jede Nachricht reproduziert.
+    - **Eine PST-Datei,** die alle Nachrichten enthält: Exportiert eine einzelne PST-Datei *(Exchange.pst),* die die Suchergebnisse aus allen Quellpostfächern enthält, die in der Suche enthalten sind. Mit dieser Option wird die Postfachordnerstruktur für jede Nachricht reproduziert.
   
-    - **Eine PST-Datei, die alle Nachrichten in einem einzigen Ordner enthält:** Exportiert Suchergebnisse in eine einzelne PST-Datei, in der sich alle Nachrichten in einem einzigen Ordner auf oberster Ebene befinden. Mit dieser Option können Prüfer Elemente in chronologischer Reihenfolge überprüfen (Elemente werden nach gesendeten Datums sortiert), ohne in der ursprünglichen Postfachordnerstruktur für jedes Element navigieren zu müssen.
+    - **Eine PST-Datei,** die alle Nachrichten in einem einzigen Ordner enthält: Exportiert Suchergebnisse in eine einzelne PST-Datei, in der sich alle Nachrichten in einem einzigen Ordner auf oberster Ebene befinden. Mit dieser Option können Prüfer Elemente in chronologischer Reihenfolge überprüfen (Elemente werden nach gesendeten Datums sortiert), ohne in der ursprünglichen Postfachordnerstruktur für jedes Element navigieren zu müssen.
   
-    - **Einzelne Nachrichten:** Exportiert Suchergebnisse als einzelne E-Mail-Nachrichten im MSG-Format. Wenn Sie diese Option auswählen, werden die E-Mail-Suchergebnisse in einen Ordner im Dateisystem exportiert. Der Ordnerpfad für einzelne Nachrichten ist identisch mit dem, der verwendet wird, wenn Sie die Ergebnisse in PST-Dateien exportiert haben.
+    - **Einzelne Nachrichten:** Exportiert Suchergebnisse als einzelne E-Mail-Nachrichten im MSG-Format. Wenn Sie diese Option auswählen, werden die E-Mail-Suchergebnisse in einen Ordner im Dateisystem exportiert. Der Ordnerpfad für einzelne Nachrichten ist identisch mit dem, der verwendet wird, wenn Sie die Ergebnisse in eine PST-Datei exportiert haben.
   
-      > [!IMPORTANT]
-      > Zum Entschlüsseln von RMS-geschützten Nachrichten beim Exportieren müssen Sie E-Mail-Suchergebnisse als einzelne Nachrichten exportieren. Verschlüsselte Nachrichten bleiben verschlüsselt, wenn Sie die Suchergebnisse als PST-Datei exportieren. Weitere Informationen finden Sie unter Entschlüsseln von [RMS-geschützten E-Mail-Nachrichten und verschlüsselten Dateianlagen](#decrypting-rms-protected-email-messages-and-encrypted-file-attachments) in diesem Artikel.
+5. Konfigurieren Sie die folgenden zusätzlichen Optionen:
+
+   ![Exchange-Optionen](../media/OtherExportOptions.png)
+
+   1. Aktivieren Sie **das Kontrollkästchen Deduplizierung für Exchange aktivieren,** um doppelte Nachrichten auszuschließen.
   
-8. Klicken Sie **auf das Kontrollkästchen Deduplizierung** aktivieren, um doppelte Nachrichten auszuschließen. Diese Option wird nur angezeigt, wenn die Inhaltsquellen der Suche Exchange postfächern oder öffentlichen Ordnern enthalten. 
+      Wenn Sie diese Option auswählen, wird nur eine Kopie einer Nachricht exportiert, auch wenn in den durchsuchten Postfächern mehrere Kopien derselben Nachricht gefunden werden. Der Exportergebnisbericht (eine Datei mit dem Namen Results.csv) enthält eine Zeile für jede Kopie einer doppelten Nachricht, sodass Sie die Postfächer (oder öffentlichen Ordner) identifizieren können, die eine Kopie der doppelten Nachricht enthalten. Weitere Informationen zur Deduplizierung und zur Ermittlung doppelter Elemente finden Sie unter [Deduplizierung in eDiscovery-Suchergebnissen.](de-duplication-in-ediscovery-search-results.md)
   
-    Wenn Sie diese Option auswählen, wird nur eine Kopie einer Nachricht exportiert, auch wenn in den durchsuchten Postfächern mehrere Kopien derselben Nachricht gefunden werden. Der Exportergebnisbericht (Results.csv) enthält eine Zeile für jede Kopie einer doppelten Nachricht, sodass Sie die Postfächer (oder öffentlichen Ordner) identifizieren können, die eine Kopie der doppelten Nachricht enthalten. Weitere Informationen zur Deduplizierung und zur Ermittlung doppelter Elemente finden Sie unter [Deduplizierung in eDiscovery-Suchergebnissen.](de-duplication-in-ediscovery-search-results.md)
+   2. Aktivieren Sie das Kontrollkästchen Versionen **für SharePoint dateien enthalten,** um alle Versionen von Dokumenten SharePoint exportieren. Diese Option wird nur angezeigt, wenn die Inhaltsquellen der Suche SharePoint oder OneDrive for Business enthalten.
   
-9. Klicken Sie auf das **Kontrollkästchen Versionen für SharePoint dokumente** enthalten, um alle Versionen von Dokumenten SharePoint exportieren. Diese Option wird nur angezeigt, wenn die Inhaltsquellen der Suche SharePoint oder OneDrive for Business enthalten. 
+   3. Wählen Sie **die Datei exportieren in einem komprimierten (gezippten) Ordner aus. Enthält nur einzelne Nachrichten und SharePoint, um** Suchergebnisse in komprimierte Ordner zu exportieren. Diese Option wird nur angezeigt, wenn Sie auswählen, Exchange Elemente als einzelne Nachrichten zu exportieren und wenn die Suchergebnisse SharePoint oder OneDrive enthalten. Diese Option wird in erster Linie verwendet, um den Grenzwert von 260 Zeichen in Windows dateinamen beim Exportieren von Elementen zu verwenden. Weitere Informationen finden Sie unter "Dateinamen [](#more-information) exportierter Elemente".
   
-10. Klicken Sie **auf das Kontrollkästchen Dateien in einem komprimierten (gezippten)** Ordner exportieren, um Suchergebnisse in komprimierte Ordner zu exportieren. Diese Option ist nur verfügbar, wenn Sie auswählen, Exchange Elemente als einzelne Nachrichten zu exportieren und wenn die Suchergebnisse SharePoint oder OneDrive enthalten. Diese Option wird in erster Linie verwendet, um den Grenzwert von 260 Zeichen in Windows dateinamen beim Exportieren von Elementen zu verwenden. Weitere Informationen finden Sie unter "Dateinamen [](#more-information) exportierter Elemente". 
-  
-11. Klicken Sie auf **Export starten**. Die Suchergebnisse werden zum Herunterladen vorbereitet, d. h., sie werden an einen Azure Storage in der Microsoft Cloud hochgeladen. Dieser Vorgang kann einige Minuten in Anspruch nehmen.
+6. Klicken **Sie auf Exportieren,** um den Exportvorgang zu starten. Die Suchergebnisse werden zum Herunterladen vorbereitet, d. h. sie werden von den ursprünglichen Inhaltsspeicherorten gesammelt und dann an einen Azure Storage in der Microsoft Cloud hochgeladen. Dieser Vorgang kann einige Minuten in Anspruch nehmen.
 
 Anweisungen zum Herunterladen der exportierten Suchergebnisse finden Sie im nächsten Abschnitt.
   
@@ -138,7 +140,7 @@ Anweisungen zum Herunterladen der exportierten Suchergebnisse finden Sie im näc
 
 Im nächsten Schritt laden Sie die Suchergebnisse aus dem Azure Storage auf Ihren lokalen Computer herunter.
   
-1. Klicken Sie **auf der Seite Inhaltssuche** auf **die** Registerkarte Exporte. 
+1. Wählen Sie **auf der** Seite Inhaltssuche im Microsoft 365 Compliance Center die Registerkarte **Exporte** aus.
   
    Möglicherweise müssen Sie auf **Aktualisieren klicken,** um die Liste der Exportaufträge so zu aktualisieren, dass der erstellte Exportauftrag angezeigt wird. Exportaufträge haben denselben Namen wie die entsprechende Suche mit **_Export** an den Suchnamen angefügt.
   
@@ -146,7 +148,10 @@ Im nächsten Schritt laden Sie die Suchergebnisse aus dem Azure Storage auf Ihre
 
 3. Klicken Sie auf der Flyoutseite unter **Export key** auf Kopieren in **die Zwischenablage**. Sie verwenden diesen Schlüssel in Schritt 6, um die Suchergebnisse herunterzuladen.
   
-4. Klicken Sie auf **Ergebnisse herunterladen**.
+   > [!IMPORTANT]
+   > Da jeder benutzer das eDiscovery-Exporttool installieren und starten kann und diesen Schlüssel zum Herunterladen der Suchergebnisse verwenden kann, sollten Sie Vorkehrungen treffen, um diesen Schlüssel zu schützen, so wie Sie Kennwörter oder andere sicherheitsrelevante Informationen schützen würden.
+
+4. Klicken Sie oben auf der Flyoutseite auf **Ergebnisse herunterladen.**
 
 5. Wenn Sie aufgefordert werden, das **eDiscovery-Exporttool zu** installieren, klicken Sie auf **Installieren**.
 
@@ -226,10 +231,10 @@ Informationen zu Beschränkungen beim Exportieren von Inhaltssuchergebnissen fin
 
   - **Übersprungene Elemente** Wenn Sie Suchergebnisse aus websites SharePoint und OneDrive for Business exportieren, enthält der Export in der Regel einen Bericht über übersprungene Elemente (SkippedItems.csv). Bei den in diesem Bericht genannten Elementen handelt es sich in der Regel um Elemente, die nicht heruntergeladen werden, z. B. ein Ordner oder eine Dokumentenmappe. Das Nichtexportieren dieser Arten von Elementen ist entwurfsweise. Für andere Elemente, die übersprungen wurden, zeigen das Feld "Fehlertyp" und "Fehlerdetails" im Bericht übersprungene Elemente den Grund an, warum das Element übersprungen wurde und nicht mit den anderen Suchergebnissen heruntergeladen wurde.
 
-  - **Ablaufverfolgungsprotokoll** Enthält detaillierte Protokollierungsinformationen zum Exportprozess und kann beim Aufdecken von Problemen während des Exports helfen.
+  - **Trace.log** Enthält detaillierte Protokollierungsinformationen zum Exportprozess und kann beim Aufdecken von Problemen während des Exports helfen. Wenn Sie ein Ticket mit dem Microsoft Support zu einem Problem im Zusammenhang mit dem Exportieren von Suchergebnissen öffnen, werden Sie möglicherweise aufgefordert, dieses Ablaufverfolgungsprotokoll zur Verfügung zu stellen.
   
     > [!NOTE]
-    > Sie können diese Dokumente einfach exportieren, ohne die tatsächlichen Suchergebnisse exportieren zu müssen. Weitere [Informationen finden Sie unter Export a Content Search report](export-a-content-search-report.md). 
+    > Sie können diese Dokumente einfach exportieren, ohne die tatsächlichen Suchergebnisse exportieren zu müssen. Weitere [Informationen finden Sie unter Exportieren eines Inhaltssuchberichts.](export-a-content-search-report.md)
   
 ### <a name="exporting-partially-indexed-items"></a>Exportieren teilweise indizierter Elemente
   

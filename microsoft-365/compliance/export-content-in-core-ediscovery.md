@@ -1,5 +1,5 @@
 ---
-title: Exportieren und Herunterladen von Inhalten aus einem zentralen eDiscovery-Fall
+title: Exportieren und Herunterladen von Inhalten aus einem Core eDiscovery-Fall
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,92 +16,53 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: In diesem Artikel wird beschrieben, wie Sie Inhalte aus einem zentralen eDiscovery-Fall exportieren und herunterladen.
-ms.openlocfilehash: 30fc30943bd570cf4d79ce88b5bef5836b3dfe14
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+description: Beschreibt das Exportieren und Herunterladen von Inhalten aus einem Core eDiscovery-Fall in Microsoft 365.
+ms.openlocfilehash: 8eb54e23369ef682e8aa1ebf7e681eb34444f1cd
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49760299"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52310842"
 ---
-# <a name="export-content-from-a-core-ediscovery-case"></a>Exportieren von Inhalten aus einem zentralen eDiscovery-Fall
+# <a name="export-content-from-a-core-ediscovery-case"></a>Exportieren von Inhalten aus einem Core eDiscovery-Fall
 
-Nachdem eine Suche erfolgreich ausgeführt wurde, können Sie die Suchergebnisse exportieren. Wenn Sie Suchergebnisse exportieren, werden Postfachelemente in PST-Dateien oder als einzelne Nachrichten heruntergeladen. Wenn Sie Inhalte aus SharePoint und OneDrive für Unternehmen Websites exportieren, werden Kopien von systemeigenen Office-Dokumenten und anderen Dokumenten exportiert. Eine Results.csv Datei, die Informationen zu jedem exportierten Element enthält, und eine Manifestdatei (im XML-Format), die Informationen zu jedem Suchergebnis enthält, wird ebenfalls exportiert.
+Nachdem eine Einem Core eDiscovery-Fall zugeordnete Suche erfolgreich ausgeführt wurde, können Sie die Suchergebnisse exportieren. Beim Exportieren von Suchergebnissen werden Postfachelemente in PST-Dateien oder als einzelne Nachrichten heruntergeladen. Wenn Sie Inhalte aus SharePoint und OneDrive for Business exportieren, werden Kopien von systemeigenen Office und anderen Dokumenten exportiert. Eine Results.csv, die Informationen zu jedem exportierten Element enthält, und eine Manifestdatei (im XML-Format), die Informationen zu jedem Suchergebnis enthält, wird ebenfalls exportiert.
   
-Sie können die Ergebnisse einer einzelnen Suche exportieren, die [einem Fall zugeordnet](#export-the-results-of-a-single-search) ist, oder Sie können die Ergebnisse [mehrerer Suchvorgänge exportieren, die einem Fall zugeordnet sind](#export-the-results-of-multiple-searches).
+## <a name="export-search-results"></a>Exportieren von Suchergebnissen
+
+1. Wechseln Sie zu, und melden Sie sich mit den Anmeldeinformationen für ein Benutzerkonto an, dem die entsprechenden [https://compliance.microsoft.com](https://compliance.microsoft.com) eDiscovery-Berechtigungen zugewiesen wurden.
+
+2. Klicken Sie im linken Navigationsbereich Microsoft 365 Compliance Center auf Alle **anzeigen,** und klicken Sie dann auf **eDiscovery > Core**.
+
+3. Klicken Sie auf der Seite **Core eDiscovery** auf den Namen des Falls, in dem Sie den Haltebereich erstellen möchten.
+
+4. Klicken Sie **auf der** Startseite für den Fall auf **die** Registerkarte Suchen.
+
+5. Klicken Sie **im** Menü Aktionen unten auf der Flyoutseite auf **Ergebnisse exportieren.**
+
+   ![Export results option in Actions menu](../media/ActionMenuExportResults.png)
+
+   Der Workflow zum Exportieren der Ergebnisse einer Suche, die einem Core eDiscovery-Fall zugeordnet ist, entspricht dem Exportieren der Suchergebnisse für eine Suche auf der Seite **Inhaltssuche.** Schrittweise Anweisungen finden Sie unter [Exportieren von Inhaltssuchergebnissen](export-search-results.md).
+
+   > [!NOTE]
+   > Beim Exportieren von Suchergebnissen haben Sie die Möglichkeit, die Deduplizierung zu aktivieren, sodass nur eine Kopie einer E-Mail-Nachricht exportiert wird, obwohl in den durchsuchten Postfächern möglicherweise mehrere Instanzen derselben Nachricht gefunden wurden. Weitere Informationen zur Deduplizierung und zur Ermittlung doppelter Elemente finden Sie unter [Deduplizierung in eDiscovery-Suchergebnissen.](de-duplication-in-ediscovery-search-results.md)
+
+   Nachdem Sie den Export gestartet haben, werden die Suchergebnisse zum Herunterladen vorbereitet, d. h. sie werden an einen von Microsoft bereitgestellten Azure Storage in der Microsoft Cloud übertragen.
   
-## <a name="export-the-results-of-a-single-search"></a>Exportieren der Ergebnisse einer einzelnen Suche
-
-1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und melden Sie sich mit den Anmeldeinformationen für das Benutzerkonto an, dem die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden.
-
-2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Center auf **Alle anzeigen**, und klicken Sie dann auf **eDiscovery > Kern**.
-
-3. Wählen Sie auf der **zentralen eDiscovery** -Seite den Fall aus, aus dem Sie Suchergebnisse exportieren möchten, und klicken Sie dann auf **Groß-/Kleinschreibung öffnen**.
-
-4. Klicken Sie auf der **Start** Seite für den Fall auf die Registerkarte **Suchen** .
-
-5. Klicken Sie in der Liste der Suchvorgänge für den Fall auf die Suche, aus der Sie Suchergebnisse exportieren möchten, und klicken Sie dann im Flyout auf **Ergebnisse exportieren** .
-
-    Die Seite **Ergebnisse exportieren** wird angezeigt. 
-
-    ![Seite "Ergebnisse exportieren"](../media/ab0bb46d-310b-4374-8644-717146df6676.png)
+6. Klicken Sie **in der Fall** auf die Registerkarte Exporte, um die Liste der Exportaufträge anzeigen zu können.
   
-    Der Workflow zum Exportieren der Ergebnisse einer Suche, die einem zentralen eDiscovery-Fall zugeordnet ist, entspricht dem Exportieren der Suchergebnisse für eine Suche auf der Seite **Inhaltssuche** . Eine Schritt-für-Schritt-Anleitung finden Sie unter [Exportieren von Inhalts Suchergebnissen](export-search-results.md).
+   ![Exportieren von Aufträgen auf der Registerkarte Export im Fall Core eDiscovery](../media/CoreeDiscoveryExport.png)
 
-    > [!NOTE]
-    > Wenn Sie Suchergebnisse exportieren, haben Sie die Möglichkeit, die Deduplizierung zu aktivieren, sodass nur eine Kopie einer e-Mail-Nachricht exportiert wird, obwohl in den durchsuchten Postfächern möglicherweise mehrere Instanzen derselben Nachricht gefunden wurden. Weitere Informationen zur Deduplizierung und zur Identifizierung von doppelten Elementen finden Sie unter [Deduplizierung in eDiscovery-Suchergebnissen](de-duplication-in-ediscovery-search-results.md).
+   Möglicherweise müssen Sie auf **Aktualisieren klicken,** um die Liste der Exportaufträge so zu aktualisieren, dass der erstellte Exportauftrag angezeigt wird. Exportaufträge haben denselben Namen wie die entsprechende Suche mit **_Export** an den Suchnamen angefügt.
 
-    Nachdem Sie den Export gestartet haben, werden die Suchergebnisse zum Herunterladen vorbereitet, was bedeutet, dass Sie in einen von Microsoft bereitgestellten Azure-Speicherort in der Microsoft-Cloud hochgeladen werden.
-  
-6. Klicken Sie auf die Registerkarte **exportieren** , um die Liste der Exportaufträge für den Fall anzuzeigen.
-  
-    Möglicherweise müssen Sie auf **Aktualisieren** klicken, um die Liste der Exportaufträge so zu aktualisieren, dass der von Ihnen erstellte Exportauftrag angezeigt wird. Export Aufträge haben den gleichen Namen wie die entsprechende Suche, wobei **_Export** an den Such Namen angehängt wird.
+7. Klicken Sie auf den exportauftrag, den Sie erstellt haben, um Statusinformationen auf der Flyoutseite anzeigen zu können. Diese Informationen enthalten den Prozentsatz der Elemente, die an den Speicherort Azure Storage wurden.
 
-7. Klicken Sie auf den von Ihnen erstellten Exportauftrag, um Statusinformationen auf der Flyout-Seite anzuzeigen. Diese Informationen enthalten den Prozentsatz der Elemente, die an den Azure-Speicherort übertragen wurden.
+8. Nachdem alle Elemente übertragen wurden, klicken Sie auf **Ergebnisse herunterladen,** um die Suchergebnisse auf Ihren lokalen Computer herunterzuladen. Weitere Informationen zum Herunterladen von Suchergebnissen finden Sie unter Schritt 2 unter [Exportieren von Inhaltssuchergebnissen.](export-search-results.md#step-2-download-the-search-results)
 
-8. Nachdem alle Elemente übertragen wurden, klicken Sie auf **Ergebnisse herunterladen** , um die Suchergebnisse auf den lokalen Computer herunterzuladen. Weitere Informationen zum Herunterladen von Suchergebnissen finden Sie unter Schritt 2 in [Exportieren von Inhalts Suchergebnissen](export-search-results.md#step-2-download-the-search-results)
+### <a name="more-information-about-exporting-searches-from-a-case"></a>Weitere Informationen zum Exportieren von Suchen aus einem Fall
 
-## <a name="export-the-results-of-multiple-searches"></a>Exportieren der Ergebnisse mehrerer Suchvorgänge
+- Weitere Informationen zu den Exportdateien, die beim Exportieren von Suchergebnissen enthalten sind, finden Sie unter [Export a Content search report](export-a-content-search-report.md#whats-included-in-the-report).
 
-Als Alternative zum Exportieren der Ergebnisse einer einzelnen Suche, die einem Fall zugeordnet ist, können Sie die Ergebnisse mehrerer Suchvorgänge aus demselben Fall in einem einzelnen Exportauftrag exportieren. Das Exportieren der Ergebnisse von mehreren Suchvorgängen ist schneller und einfacher als das Exportieren der Ergebnisse um die Suche nach dem anderen.
-  
-> [!NOTE]
-> Sie können die Ergebnisse mehrerer Suchvorgänge nicht exportieren, wenn eine dieser Suchvorgänge für Suchspeicher Orte in der Warteschleife konfiguriert wurde.
+- Wenn Sie den Export neu starten, wirken sich alle Änderungen an den Abfragen der Suchanfragen, aus der der Exportauftrag ist, nicht auf die abgerufenen Suchergebnisse aus. Wenn Sie einen Export neu starten, wird derselbe kombinierte Suchabfrageauftrag, der beim Erstellen des Exportauftrags ausgeführt wurde, erneut ausgeführt.
 
-1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und melden Sie sich mit den Anmeldeinformationen für das Benutzerkonto an, dem die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden.
-
-2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Center auf **Alle anzeigen**, und klicken Sie dann auf **eDiscovery > Kern**.
-
-3. Wählen Sie auf der **zentralen eDiscovery** -Seite den Fall aus, aus dem Sie Suchergebnisse exportieren möchten, und klicken Sie dann auf **Groß-/Kleinschreibung öffnen**.
-
-4. Klicken Sie auf der **Start** Seite für den Fall auf die Registerkarte **Suchen** .
-    
-5. Aktivieren Sie in der Liste der Suchvorgänge für den Fall das Kontrollkästchen neben mindestens zwei Suchvorgängen, aus denen Suchergebnisse exportiert werden sollen. 
-
-   Die Flyout-Seite für **Massenaktionen** wird angezeigt. 
-
-    ![Klicken Sie auf der Seite Massenaktionen auf Ergebnisse exportieren.](../media/f34e3707-a9c1-494f-91a4-da1165aa730a.png)
-  
-6. Klicken Sie auf **Ergebnisse exportieren**.
-
-   Die Seite **Ergebnisse exportieren** wird angezeigt. 
-
-    ![Seite "Ergebnisse exportieren"](../media/ab0bb46d-310b-4374-8644-717146df6676.png)
-  
-    An diesem Punkt ist der Workflow zum Exportieren der Ergebnisse mehrerer Suchvorgänge, die einem zentralen eDiscovery-Fall zugeordnet sind, identisch mit dem Exportieren der Suchergebnisse für eine einzelne Suche. Siehe Schritt 5 im vorherigen Abschnitt.
-
-### <a name="more-information-about-exporting-the-results-of-multiple-searches"></a>Weitere Informationen zum Exportieren der Ergebnisse mehrerer Suchvorgänge
-
-- Wenn Sie die Ergebnisse mehrerer Suchvorgänge exportieren, werden die Suchabfragen von allen suchen mit **oder** -Operatoren kombiniert, und dann wird die kombinierte Suche gestartet. Die geschätzten Ergebnisse der kombinierten Suche werden auf der Flyout-Seite des ausgewählten Exportauftrags angezeigt. Die Suchergebnisse werden dann in den Azure-Speicherort in der Microsoft-Cloud kopiert. Der Status des Kopierauftrags wird auch auf der Flyout-Seite angezeigt. Wie bereits erwähnt, können Sie Sie nach dem Kopieren aller Suchergebnisse auf einen lokalen Computer herunterladen.
-
-- Die maximale Anzahl von Schlüsselwörtern aus Abfragen für alle Suchvorgänge, die Sie exportieren möchten, lautet 500. Dies ist der gleiche Grenzwert für eine einzelne Suche. Das liegt daran, dass der Exportauftrag alle Suchabfragen mit dem **or** -Operator kombiniert. Wenn Sie diesen Grenzwert überschreiten, wird ein Fehler zurückgegeben. In diesem Fall müssen Sie die Ergebnisse aus weniger Suchvorgängen exportieren oder die Suchabfragen der ursprünglichen Suchvorgänge vereinfachen, die Sie exportieren möchten.
-
-- Die exportierten Suchergebnisse werden nach dem Inhaltsspeicherort organisiert, in dem das Element gefunden wurde. Das bedeutet, dass für eine Inhaltsposition in den Export Ergebnissen möglicherweise Elemente von unterschiedlichen Suchvorgängen zurückgegeben werden. Wenn Sie beispielsweise e-Mail-Nachrichten in einer PST-Datei für jedes Postfach exportieren möchten, hat die PST-Datei möglicherweise Ergebnisse aus mehreren Suchvorgängen.
-
-- Wenn dasselbe e-Mail-Element oder Dokument vom gleichen Inhaltsspeicherort von mehr als einer der Suchvorgänge zurückgegeben wird, die Sie exportieren, wird nur eine Kopie des Elements exportiert.
-
-- Sie können einen Export für mehrere Suchvorgänge nach dem Erstellen nicht bearbeiten. Beispielsweise können Sie dem Exportauftrag keine Suchvorgänge hinzufügen oder daraus entfernen. Sie müssen einen Exportauftrag erstellen, um die exportierten Suchergebnisse zu ändern. Nachdem ein Exportauftrag erstellt wurde, können Sie die Ergebnisse nur auf einen Computer herunterladen, den Export neu starten oder den Exportauftrag löschen.
-
-- Wenn Sie den Export neu starten, wirken sich Änderungen an den Abfragen der Suchvorgänge, aus denen der Exportauftrag besteht, nicht auf die abgerufenen Suchergebnisse aus. Wenn Sie einen Export neu starten, wird derselbe kombinierte Suchabfrage Auftrag, der beim Erstellen des Exportauftrags ausgeführt wurde, erneut ausgeführt.
-
-- Wenn Sie einen Export neu starten, überschreiben die Suchergebnisse, die an den Azure-Speicherort kopiert werden, auch die vorherigen Ergebnisse. Die vorherigen Ergebnisse, die kopiert wurden, stehen nicht zum Herunterladen zur Verfügung.
+- Wenn Sie einen Export neu starten, werden die Suchergebnisse, die an den Speicherort Azure Storage, die vorherigen Ergebnisse überschrieben. Die vorherigen kopierten Ergebnisse stehen nicht zum Herunterladen zur Verfügung.

@@ -17,16 +17,28 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung von Vertraulichkeitsbezeichnungen für Word-, Excel- und PowerPoint in SharePoint und OneDrive.
-ms.openlocfilehash: c3d4320937b441510424454197c4eb4ffa46d9fe
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: f610e04a9115b7654332bcc1f479144b4d100618
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245636"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311928"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
+
+> [!NOTE]
+> Es gibt ein aktuelles Problem, das dazu führt, dass gekennzeichnete und verschlüsselte Dateien nicht in einem Office im Web:
+>
+> Während wir ein Problem im Zusammenhang mit bestimmten Dokumenteigenschaften untersuchen, können Sie nicht viele Dateien in Office im Web. Für diese Dateien können Sie sie weiterhin in Ihren Desktop- und mobilen Apps öffnen und Office bearbeiten. Gehen Sie auch wie folgt vor:
+>
+> 1. Öffnen Sie die Datei in Office Desktop-App.
+> 2. Entfernen Sie die Bezeichnung, für die die Verschlüsselung angewendet wird.
+> 3. Speichern Sie die Datei am ursprünglichen Speicherort (SharePoint oder OneDrive), und schließen Sie die Desktop-App.
+> 4. Öffnen Sie die Datei in Office im Web, und verwenden Sie die ursprüngliche Bezeichnung, die die Verschlüsselung angewendet hat, erneut.
+> 
+> Dateien, die nur in einem Office im Web erstellt und bearbeitet werden, sind nicht betroffen.
 
 Aktivieren Sie Vertraulichkeitsbezeichnungen für Office Dateien in SharePoint und OneDrive, damit Benutzer Ihre Vertraulichkeitsbezeichnungen [in](sensitivity-labels.md) Office web anwenden können. Wenn dieses Feature aktiviert ist,  wird den Benutzern die Schaltfläche Vertraulichkeit auf dem Menüband angezeigt, damit sie Bezeichnungen anwenden und einen beliebigen angewendeten Bezeichnungsnamen auf der Statusleiste sehen können.
 
@@ -71,14 +83,6 @@ Diese neuen Funktionen funktionieren nur mit [Vertraulichkeitsbezeichnungen.](se
 Verwenden Sie die OneDrive Synchronisierungs-App, Version 19.002.0121.0008 oder höher auf Windows und Version 19.002.0107.0008 oder höher auf dem Mac. Beide Versionen wurden am 28. Januar 2019 veröffentlicht und sind derzeit für alle Ringe freigegeben. Weitere Informationen finden Sie unter [OneDrive Versionshinweise .](https://support.office.com/article/845dcf18-f921-435e-bf28-4e24b95e5fc0) Nachdem Sie Vertraulichkeitsbezeichnungen für Office Dateien in SharePoint und OneDrive aktiviert haben, werden Benutzer, die eine ältere Version der Synchronisierungs-App ausführen, aufgefordert, sie zu aktualisieren.
 
 ## <a name="limitations"></a>Einschränkungen
-
-- Power Query und benutzerdefinierte Add-Ins mit Excel im Web: Wenn diese Dateien mit einer Vertraulichkeitsbezeichnung verschlüsselt sind, können SharePoint und OneDrive die Dateien nicht verarbeiten, sodass Benutzer sie nicht in Office im Web. Wenden Sie für diese Dateien entweder eine Bezeichnung ohne Verschlüsselung an, damit sie in Office im Web geöffnet werden können, oder anweisen Sie die Benutzer, die Dateien in ihren Desktop-Apps zu öffnen.
-
-- Wenn Probleme beim Öffnen von gekennzeichneten und verschlüsselten Dateien in Office im Web, versuchen Sie Folgendes:
-    1. Öffnen Sie die Datei in Office Desktop-App.
-    2. Entfernen Sie die Bezeichnung, für die die Verschlüsselung angewendet wird.
-    3. Speichern Sie die Datei am ursprünglichen Speicherort (SharePoint oder OneDrive), und schließen Sie die Desktop-App.
-    4. Öffnen Sie die Datei in Office im Web, und verwenden Sie die ursprüngliche Bezeichnung, die die Verschlüsselung angewendet hat, erneut.
 
 - SharePoint und OneDrive nicht automatisch Vertraulichkeitsbezeichnungen auf vorhandene Dateien anwenden, die Sie bereits mit Azure Information Protection-Bezeichnungen verschlüsselt haben. Damit die Features funktionieren, nachdem Sie Vertraulichkeitsbezeichnungen für Office dateien in SharePoint und OneDrive aktiviert haben, führen Sie stattdessen die folgenden Aufgaben aus:
     
@@ -173,7 +177,8 @@ Verwenden Sie zum Aktivieren der neuen Funktionen das [Cmdlet Set-SPOTenant](/po
 
 1. Stellen Sie mithilfe eines Arbeits- oder Schulkontos, das über globale Administrator- oder SharePoint Administratorrechte in Microsoft 365 verfügt, eine Verbindung mit SharePoint. Eine Anleitung dazu finden Sie unter [Erste Schritte mit der Microsoft Office SharePoint Online-Verwaltungsshell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online).
     
-    Hinweis: Wenn Sie multi-geo Microsoft 365 haben, verwenden Sie den Parameter -Url mit [Verbinden-SPOService,](/powershell/module/sharepoint-online/connect-sposervice)und geben Sie die Website-URL des SharePoint Online Administration Center für einen Ihrer geografischen Standorte an.
+   > [!NOTE]
+   > Wenn Sie Microsoft 365 Multi-Geo verwendet haben, verwenden Sie den -Url-Parameter mit [Verbinden-SPOService,](/powershell/module/sharepoint-online/connect-sposervice)und geben Sie die Website-URL des SharePoint Online Administration Center für einen Ihrer geografischen Standorte an.
 
 2. Führen Sie den folgenden Befehl aus, und drücken **Sie Y,** um dies zu bestätigen:
 

@@ -1,5 +1,5 @@
 ---
-title: Grenzwerte für die Inhaltssuche und Core eDiscovery im Compliance Center
+title: Grenzwerte für inhaltssuche und Core eDiscovery im Compliance Center
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,16 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 78fe3147-1979-4c41-83bb-aeccf244368d
-description: Erfahren Sie mehr über die grenzwerte für das Inhaltssuchfeature im Microsoft 365 Compliance Center, z. B. die maximale Anzahl gleichzeitiger Suchen. Diese Suchgrenzwerte gelten auch für Suchen, die Core eDiscovery-Fällen zugeordnet sind.
-ms.openlocfilehash: e4cfc79d35b4dc6a22e8e7a872699d906b39a901
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Erfahren Sie mehr über die geltenden Grenzwerte für die Inhaltssuche und core eDiscovery-Features im Microsoft 365 Compliance Center.
+ms.openlocfilehash: 47004473efe3407e9123fd15a7b1bf5f23e9fb23
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244320"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311412"
 ---
-# <a name="limits-for-content-search"></a>Grenzwerte für die Inhaltssuche 
-Verschiedene Grenzwerte werden auf das Inhaltssuchtool im compliance center Microsoft 365 angewendet. Dazu gehören Auf der  Seite Inhaltssuche ausgeführte Suchen und Suchen, die einem eDiscovery-Fall auf der Seite **Core eDiscovery zugeordnet** sind. Diese Beschränkungen helfen, die Integrität und Qualität der für Organisationen bereitgestellten Dienste zu erhalten. Es gibt auch Einschränkungen im Zusammenhang mit der Indizierung von E-Mail-Nachrichten in Exchange Online Suche. Sie können die Grenzwerte für die Inhaltssuche oder die E-Mail-Indizierung nicht ändern, sie sollten jedoch beachten, damit Sie diese Einschränkungen bei der Planung, Ausführung und Problembehandlung von Inhaltssuchen berücksichtigen können.
+# <a name="limits-for-ediscovery-search"></a>Grenzwerte für die eDiscovery-Suche 
+
+Auf eDiscovery-Suchtools im Compliance Center werden verschiedene Microsoft 365 angewendet. Dazu gehören Auf der  Seite Inhaltssuche ausgeführte Suchen und Suchen, die einem eDiscovery-Fall auf der Seite **Core eDiscovery zugeordnet** sind. Diese Beschränkungen helfen, die Integrität und Qualität der für Organisationen bereitgestellten Dienste zu erhalten. Es gibt auch Einschränkungen im Zusammenhang mit der Indizierung von E-Mail-Nachrichten in Exchange Online Suche. Sie können die Grenzwerte für eDiscovery-Suchen oder E-Mail-Indizierungen nicht ändern, sie sollten jedoch beachten, damit Sie diese Grenzwerte bei der Planung, Ausführung und Problembehandlung von eDiscovery-Suchen berücksichtigen können.
+
+Einschränkungen im Zusammenhang mit dem Advanced eDiscovery finden Sie unter [Limits in Advanced eDiscovery](limits-ediscovery20.md)
   
 ## <a name="search-limits"></a>Suchgrenzen
 

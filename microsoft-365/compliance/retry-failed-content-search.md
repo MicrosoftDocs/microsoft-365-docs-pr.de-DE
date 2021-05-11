@@ -1,5 +1,5 @@
 ---
-title: Wiederholen einer Inhaltssuche zum Beheben eines Inhaltsspeicher Fehlers
+title: Wiederholen einer Inhaltssuche zum Beheben eines Inhaltsspeicherortfehlers
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,18 +14,18 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Während einer Untersuchung können Sie die Schaltfläche Wiederholen verwenden, um Inhalts Suchvorgänge mit Inhaltsspeicherort Fehlern aufzulösen.
+description: Während einer Untersuchung können Sie die Schaltfläche Wiederholen verwenden, um Inhaltssuchen mit Fehlern beim Speicherort von Inhalten zu beheben.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b3aed9c1d2d1fe3c40adb64b4854ef359f931bcb
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: fb85a882ef111aa38a73dbe155a9ad0ef57dd3de
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47357555"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311820"
 ---
-# <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Wiederholen einer Inhaltssuche zum Beheben eines Inhaltsspeicher Fehlers
+# <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Wiederholen einer Inhaltssuche zum Beheben eines Inhaltsspeicherortfehlers
 
-Wenn Sie die Inhaltssuche im Security and Compliance Center verwenden, um eine große Anzahl von Postfächern zu durchsuchen, erhalten Sie möglicherweise Suchfehler, die dem Fehler ähneln:
+Wenn Sie die Inhaltssuche im Security and Compliance Center zum Durchsuchen einer großen Anzahl von Postfächern verwenden, werden möglicherweise Suchfehler angezeigt, die dem Fehler ähneln:
 
 ```text
 Error
@@ -38,35 +38,35 @@ User1@contoso.com: Problem in processing the request. Please try again later. If
 User2@contoso.com: Application error occurred. Please try again later. (CS012-002)
 ```
 
-Diese Fehler (mit Fehlercodes von CS001-002, CS003-002, CS008-009, CS012-002 und anderen Fehlern im Format CS0XX-0xx) deuten darauf hin, dass die Inhaltssuche keine bestimmten inhaltsspeicherorte durchsucht; in diesem Beispiel wurden zwei Postfächer nicht durchsucht. Diese Fehler werden auf der Dropdown Seite Statusdetails der Inhaltssuche angezeigt.
+Diese Fehler (mit Fehlercodes von CS001-002, CS003-002, CS008-009, CS012-002 und anderen Fehlern des Formulars CS0XX-0XX) deuten darauf hin, dass die Inhaltssuche bestimmte Inhaltsorte nicht durchsucht hat. In diesem Beispiel wurden zwei Postfächer nicht durchsucht. Diese Fehler werden auf der Flyoutseite für Statusdetails der Inhaltssuche angezeigt.
 
-## <a name="cause-of-content-location-errors"></a>Ursache für Fehler bei Inhaltsverzeichnissen
+## <a name="cause-of-content-location-errors"></a>Ursache von Fehlern beim Speicherort von Inhalten
 
-Beim Durchsuchen einer großen Anzahl von Postfächern wird die Suche auf Tausende von Servern in einem Microsoft-Rechenzentrum verteilt. Zu einem bestimmten Zeitpunkt können bestimmte Server im Neustart Zustand sein oder bei einem Failover auf redundante Kopien. In beiden Fällen wird bei der Anforderung der Inhaltssuche zum Abrufen von Daten ein Timeout auftritt. Im vorherigen Beispiel waren die Fehler für die Postfächer, bei denen ein Fehler aufgetreten ist, das Ergebnis der Such Zeitüberschreitung.
+Beim Durchsuchen einer großen Anzahl von Postfächern wird die Suche auf Tausende von Servern in einem Microsoft-Rechenzentrum verteilt. Zu einem beliebigen Zeitpunkt könnten sich bestimmte Server im Neustartzustand befinden oder einen Fehler bei redundanten Kopien durchführen. In einem dieser Fälle ist die Anforderung der Inhaltssuche zum Abrufen von Daten zu einem Zeitergebnis. Im vorherigen Beispiel waren die Fehler für die fehlgeschlagenen Postfächer das Ergebnis des Timeouts der Suche.
 
-## <a name="resolving-content-location-errors"></a>Beheben von Inhaltsspeicherort Fehlern
+## <a name="resolving-content-location-errors"></a>Beheben von Fehlern beim Speicherort von Inhalten
 
-Das Neustarten der Suche führt häufig zu ähnlichen Fehlern auf unterschiedlichen Servern. Anstatt die Suche neu zu starten, klicken Sie auf die Schaltfläche wieder **holen** , die oben auf der Suchergebnisseite angezeigt wird.
+Ein Neustart der Suche führt häufig zu ähnlichen Fehlern auf verschiedenen Servern. Klicken Sie anstatt die Suche neu zu starten, klicken Sie auf die Schaltfläche **Wiederholen,** die oben auf der Suchergebnissetseite angezeigt wird.
 
-![Klicken Sie auf die Schaltfläche wiederholen, um Fehler des Inhaltsspeichers zu beheben](../media/retrycontentsearch3.png)
+![Klicken Sie auf die Schaltfläche Wiederholen, um Fehler beim Speicherort von Inhalten zu beheben.](../media/retrycontentsearch3.png)
 
-Dies führt dazu, dass die Suche nur für die nicht erfolgreichen Postfächer erneut versucht wird. Wenn Sie die Suche wiederholen, werden die anderen Ergebnisse, die erfolgreich zurückgegeben wurden, beibehalten.
+Dies führt dazu, dass die Suche nur nach den fehlgeschlagenen Postfächern erneutversucht wird. Wenn Sie die Suche wiederholen, werden die anderen Ergebnisse, die erfolgreich zurückgegeben wurden, beibehalten.
 
-## <a name="tips-to-avoid-content-location-errors"></a>Tipps zum Vermeiden von Inhaltsspeicherort Fehlern
+## <a name="tips-to-avoid-content-location-errors"></a>Tipps, um Fehler beim Speicherort von Inhalten zu vermeiden
 
-Hier finden Sie einige zusätzliche Ursachen für Fehler bei der Inhalts Lokalisierung und einige Tipps, die Sie beim Durchsuchen einer großen Anzahl von Postfächern vermeiden können.
+Im Folgenden finden Sie einige zusätzliche Ursachen für Fehler beim Speicherort von Inhalten und einige Tipps, die Sie beim Durchsuchen einer großen Anzahl von Postfächern vermeiden können.
 
-- Das durchsuchte Postfach ist aufgrund von Benutzeraktivitäten möglicherweise ausgelastet. In diesem Fall kann sich der Suchdienst selbst Drosseln, um zu verhindern, dass das Postfach nicht mehr verfügbar ist. Um dies zu vermeiden, versuchen Sie, Suchvorgänge außerhalb der Geschäftszeiten auszuführen.
+- Das durchsuchte Postfach ist möglicherweise aufgrund von Benutzeraktivitäten ausgelastet. In diesem Fall kann der Suchdienst sich selbst drosseln, um zu verhindern, dass das Postfach nicht verfügbar wird. Um dies zu vermeiden, versuchen Sie, Suchbegriffe außerhalb der Geschäftszeiten zu führen.
 
-- Die Suchabfrage Ruft möglicherweise zu viel Inhalt aus dem Postfach ab. Versuchen Sie nach Möglichkeit, den Suchbereich mithilfe von Schlüsselwörtern, Datumsbereichen und Suchbedingungen einzuschränken.
+- Die Suchabfrage ruft möglicherweise zu viel Inhalt aus dem Postfach ab. Versuchen Sie nach Möglichkeit, den Suchbereich mithilfe von Schlüsselwörtern, Datumsbereichen und Suchbedingungen zu einenten.
 
-- Zu viele Stichwörter oder Keyword-Phrasen beim Erstellen einer Suchabfrage mithilfe der [Liste Stichwörter](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-content-searches). Wenn Sie eine Suchabfrage ausführen, die die Liste Stichwörter verwendet, führt der Dienst im Wesentlichen eine separate Suche für jede Zeile in der Stichwortliste aus, sodass Statistiken generiert werden können. Wenn Sie die Liste Stichwörter in Suchabfragen verwenden, minimieren Sie die Anzahl der Zeilen in der Stichwortliste, oder Teilen Sie die Zahlen Schlüsselwörter in kleinere Listen auf, und erstellen Sie eine andere Suche für jede Stichwortliste.
+- Zu viele Schlüsselwörter oder Stichwortausdrücke, wenn Sie eine Suchabfrage mithilfe der [Stichwörterliste erstellen.](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-searches) Wenn Sie eine Suchabfrage ausführen, die die Stichwörterliste verwendet, führt der Dienst im Wesentlichen eine separate Suche für jede Zeile in der Stichwortliste aus, sodass Statistiken generiert werden können. Wenn Sie die Stichwörterliste in Suchabfragen verwenden, minimieren Sie die Anzahl der Zeilen in der Stichwortliste, oder teilen Sie die Stichwörter in kleinere Listen auf, und erstellen Sie eine andere Suche für jede Stichwortliste.
 
   > [!NOTE]
-  > Um Probleme aufgrund großer Stichwortlisten zu verringern, sind Sie jetzt auf maximal 20 Zeilen in der Stichwortliste einer Suchabfrage eingeschränkt.
+  > Um Probleme zu reduzieren, die durch große Stichwortlisten verursacht werden, sind Sie jetzt auf maximal 20 Zeilen in der Stichwortliste einer Suchabfrage beschränkt.
 
-- Zu viele Suchvorgänge werden gleichzeitig für dasselbe Postfach ausgeführt. Versuchen Sie nach Möglichkeit, eine Suche auf einem Postfach gleichzeitig auszuführen.
+- Es werden zu viele Suchdurchsuchungen für dasselbe Postfach gleichzeitig ausgeführt. Versuchen Sie nach Möglichkeit, eine Suche für jedes Postfach gleichzeitig ausführen.
 
-- Durchsuchen zu vieler Postfächer in einer einzigen Suche. Die Wahrscheinlichkeit von Inhaltsspeicherort Fehlern steigt beim Durchsuchen einer großen Anzahl von Postfächern. Versuchen Sie nach Möglichkeit, mehrere Suchvorgänge auszuführen, damit jede Suche eine Teilmenge von Postfächern in Ihrer Organisation enthält.
+- Zu viele Postfächer in einer einzigen Suche durchsuchen. Die Wahrscheinlichkeit von Fehlern beim Speicherort von Inhalten steigt beim Durchsuchen einer großen Anzahl von Postfächern. Versuchen Sie nach Möglichkeit, mehrere Suchen ausführen, sodass jede Suche eine Teilmenge von Postfächern in Ihrer Organisation enthält.
 
-- Die erforderliche Wartung wird für das Postfach ausgeführt. Obwohl diese Ursache wahrscheinlich selten auftritt, warten Sie eine Weile, nachdem Sie den Inhaltsspeicherort Fehler erhalten haben, und wiederholen Sie die Suche.
+- Die erforderliche Wartung wird für das Postfach ausgeführt. Obwohl diese Ursache wahrscheinlich selten auftritt, warten Sie ein wenig, nachdem Sie den Fehler zum Speicherort des Inhalts erhalten haben, und wiederholen Sie dann die Suche.

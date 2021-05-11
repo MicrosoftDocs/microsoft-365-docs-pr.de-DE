@@ -17,13 +17,13 @@ search.appverid:
 - MET150
 ms.assetid: aaca8987-5b62-458b-9882-c28476a66918
 ms.custom: seo-marvel-apr2020
-description: Die Postfachüberwachungsprotokollierung ist in Microsoft 365 standardmäßig aktiviert (standardmäßig auch als Standardpostfachüberwachung oder Postfachüberwachung bezeichnet). Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch in einem Postfach-Überwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten suchen können, die für das Postfach ausgeführt werden.
-ms.openlocfilehash: 4b2016b4eee68d336cc2f77f2eb6fef6f3ee2fd9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Die Postfachüberwachungsprotokollierung ist standardmäßig in Microsoft 365 aktiviert (standardmäßig auch als Standardpostfachüberwachung oder Postfachüberwachung bezeichnet). Dies bedeutet, dass bestimmte Aktionen, die von Postfachbesitzern, Stellvertretern und Administratoren ausgeführt werden, automatisch in einem Postfach-Überwachungsprotokoll protokolliert werden, in dem Sie nach Aktivitäten suchen können, die für das Postfach ausgeführt werden.
+ms.openlocfilehash: 859bd0dc633ece887fe11d57068fab4eb1395cdd
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927855"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311172"
 ---
 # <a name="manage-mailbox-auditing"></a>Verwalten der Postfächern
 
@@ -45,7 +45,7 @@ Hier sind einige Vorteile der Postfachüberwachung standardmäßig:
 
 ## <a name="verify-mailbox-auditing-on-by-default-is-turned-on"></a>Überprüfen, ob die Postfachüberwachung standardmäßig aktiviert ist
 
-Führen Sie den folgenden Befehl in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)aus, um zu überprüfen, ob die Postfachüberwachung für Ihre Organisation standardmäßig aktiviert ist:
+Um zu überprüfen, ob die Postfachüberwachung für Ihre Organisation standardmäßig aktiviert ist, führen Sie den folgenden Befehl in [Exchange Online PowerShell aus:](/powershell/exchange/connect-to-exchange-online-powershell)
 
 ```PowerShell
 Get-OrganizationConfig | Format-List AuditDisabled
@@ -66,7 +66,7 @@ In der folgenden Tabelle sind die Postfachtypen aufgeführt, die derzeit standar
 |:---------|:---------:|:---------:|
 |Benutzerpostfächer|![Häkchen](../media/checkmark.png)||
 |Freigegebene Postfächer|![Häkchen](../media/checkmark.png)||
-|Microsoft 365-Gruppenpostfächer|![Häkchen](../media/checkmark.png)||
+|Microsoft 365 Gruppenpostfächer|![Häkchen](../media/checkmark.png)||
 |Ressourcenpostfächer||![Häkchen](../media/checkmark.png)|
 |Postfächer für öffentliche Ordner||![Häkchen](../media/checkmark.png)|
 
@@ -113,7 +113,7 @@ In der folgenden Tabelle werden die Postfachaktionen beschrieben, die in der Pos
 |**Default**||![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|
 |**FolderBind**|Auf einen Postfachordner wurde zugegriffen. Diese Aktion wird auch protokolliert, wenn der Administrator oder der delegierte Benutzer das Postfach öffnet.<br/><br/> **Hinweis:** Überwachungsdatensätze für Ordnerbindungsaktionen, die von Stellvertretern ausgeführt werden, werden konsolidiert. Ein Überwachungsdatensatz wird für den Zugriff auf einzelne Ordner innerhalb eines Zeitraums von 24 Stunden generiert.|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |**HardDelete**|Eine Nachricht wurde endgültig aus dem Ordner "Wiederherstellbare Elemente" gelöscht.|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|
-|**MailItemsAccessed**|Auf E-Mail-Daten wird über E-Mail-Protokolle und -Clients zugegriffen. Dieser Wert ist nur für E5- oder E5-Compliance-Add-On-Abonnementbenutzer verfügbar. Weitere Informationen finden Sie unter [Einrichten der erweiterten Überwachung für Benutzer](advanced-audit.md#set-up-advanced-audit-for-users).|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|
+|**MailItemsAccessed**|Auf E-Mail-Daten wird über E-Mail-Protokolle und -Clients zugegriffen. Dieser Wert ist nur für E5- oder E5-Compliance-Add-On-Abonnementbenutzer verfügbar. Weitere Informationen finden Sie unter [Einrichten der erweiterten Überwachung ](set-up-advanced-audit.md).|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|
 |**MailboxLogin**|Der Benutzer hat sich bei ihrem Postfach angemeldet. |||![Häkchen](../media/checkmark.png)|
 |**MessageBind**|Eine Nachricht wurde im Vorschaubereich angezeigt oder von einem Administrator geöffnet. **Hinweis:** Obwohl dieser Wert als Postfachaktion akzeptiert wird, werden diese Aktionen nicht mehr protokolliert.|![Häkchen](../media/checkmark.png)|||
 |**ModifyFolderPermissions**|**Hinweis**: Obwohl dieser Wert als Postfachaktion akzeptiert wird, ist er bereits in der **UpdateFolderPermissions-Aktion** enthalten und wird nicht separat überwacht. Mit anderen Worten: Verwenden Sie diesen Wert nicht.||||
@@ -121,7 +121,7 @@ In der folgenden Tabelle werden die Postfachaktionen beschrieben, die in der Pos
 |**MoveToDeletedItems**|Eine Nachricht wurde gelöscht und in den Ordner „Gelöschte Objekte“ verschoben.|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|
 |**RecordDelete**|Ein Element, das als Datensatz gekennzeichnet ist, wurde soft-deleted (in den Ordner "Wiederherstellbare Elemente" verschoben). Elemente, die als Datensätze bezeichnet werden, können nicht dauerhaft gelöscht werden (werden aus dem Ordner "Wiederherstellbare Elemente" gelöscht).|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|
 |**RemoveFolderPermissions**|**Hinweis**: Obwohl dieser Wert als Postfachaktion akzeptiert wird, ist er bereits in der **UpdateFolderPermissions-Aktion** enthalten und wird nicht separat überwacht. Mit anderen Worten: Verwenden Sie diesen Wert nicht.||||
-|**Send**|Der Benutzer sendet eine E-Mail-Nachricht, antwortet auf eine E-Mail-Nachricht oder leitet eine E-Mail-Nachricht weiter. Dieser Wert ist nur für E5- oder E5-Compliance-Add-On-Abonnementbenutzer verfügbar. Weitere Informationen finden Sie unter [Einrichten der erweiterten Überwachung für Benutzer](advanced-audit.md#set-up-advanced-audit-for-users).|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|
+|**Send**|Der Benutzer sendet eine E-Mail-Nachricht, antwortet auf eine E-Mail-Nachricht oder leitet eine E-Mail-Nachricht weiter. Dieser Wert ist nur für E5- oder E5-Compliance-Add-On-Abonnementbenutzer verfügbar. Weitere Informationen finden Sie unter [Einrichten der erweiterten Überwachung für Benutzer](set-up-advanced-audit.md).|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|
 |**SendAs**|Eine Nachricht wurde mithilfe der SendAs-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht so gesendet hat, dass sie vom Postfachbesitzer zu kommen scheint.|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>||
 |**SendOnBehalf**|Eine Nachricht wurde mithilfe der SendOnBehalf-Berechtigung gesendet. Das bedeutet, dass ein anderer Benutzer die Nachricht im Namen des Postfachbesitzers gesendet hat. Für den Empfänger ist in der Nachricht angegeben, in wessen Namen die Nachricht gesendet wurde und wer die Nachricht tatsächlich gesendet hat.|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>||
 |**SoftDelete**|Eine Nachricht wurde dauerhaft gelöscht oder aus dem Ordner „Gelöschte Objekte“ gelöscht. Vorübergehend gelöschte Elemente werden in den Ordner „Wiederherstellbare Elemente“ verschoben.|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|![Häkchen](../media/checkmark.png)<sup>\*</sup>|
@@ -134,13 +134,13 @@ In der folgenden Tabelle werden die Postfachaktionen beschrieben, die in der Pos
 > [!IMPORTANT]
 > Wenn Sie die Postfachaktionen so angepasst  haben, dass sie für einen beliebigen Anmeldetyp überwacht werden, bevor die Postfachüberwachung standardmäßig in Ihrer Organisation aktiviert wurde, werden die angepassten Einstellungen für das Postfach beibehalten und nicht von den Standardpostfachaktionen überschrieben, wie in diesem Abschnitt beschrieben. Informationen zum Wiederherstellen der Überwachungspostfachaktionen auf ihre Standardwerte (die Sie jederzeit ausführen können) finden Sie im Abschnitt [Wiederherstellen](#restore-the-default-mailbox-actions) der Standardpostfachaktionen weiter in diesem Thema.
 
-### <a name="mailbox-actions-for-microsoft-365-group-mailboxes"></a>Postfachaktionen für Microsoft 365-Gruppenpostfächer
+### <a name="mailbox-actions-for-microsoft-365-group-mailboxes"></a>Postfachaktionen für Microsoft 365 Gruppenpostfächer
 
-Die Postfachüberwachung aktiviert standardmäßig die Postfachüberwachungsprotokollierung für Microsoft 365-Gruppenpostfächer, Sie können jedoch nicht anpassen, was protokolliert wird (Sie können keine Postfachaktionen hinzufügen oder entfernen, die für jeden Anmeldetyp protokolliert werden).
+Die Postfachüberwachung aktiviert standardmäßig die Postfachüberwachungsprotokollierung Microsoft 365 Gruppenpostfächern, Sie können jedoch nicht anpassen, was protokolliert wird (Sie können keine Postfachaktionen hinzufügen oder entfernen, die für einen beliebigen Anmeldetyp protokolliert werden).
 
-In der folgenden Tabelle werden die Postfachaktionen beschrieben, die für jeden Anmeldetyp standardmäßig in Microsoft 365-Gruppenpostfächern protokolliert werden.
+In der folgenden Tabelle werden die Postfachaktionen beschrieben, die standardmäßig für Microsoft 365 Gruppenpostfächer für jeden Anmeldetyp protokolliert werden.
 
-Denken Sie daran, dass ein Administrator mit vollzugriffsberechtigung für ein Microsoft 365-Gruppenpostfach als Stellvertretung betrachtet wird.
+Denken Sie daran, dass ein Administrator mit vollzugriffsberechtigung für Microsoft 365 Gruppenpostfach als Stellvertretung betrachtet wird.
 
 |**Postfachaktion**|**Beschreibung**|**Administrator**|**Stellvertretung**|**Besitzer**|
 |:---------|:---------|:---------:|:---------:|:---------:|
@@ -162,7 +162,7 @@ Ersetzen Sie zum Anzeigen des Werts für Benutzerpostfächer oder freigegebene P
 Get-Mailbox -Identity <MailboxIdentity> | Format-List DefaultAuditSet
 ```
 
-Ersetzen Sie zum Anzeigen des Werts in Microsoft 365-Gruppenpostfächern durch den Namen, alias oder die E-Mail-Adresse des freigegebenen Postfachs, und führen Sie den folgenden Befehl \<MailboxIdentity\> in Exchange Online PowerShell aus:
+Ersetzen Sie zum Anzeigen des Werts für Microsoft 365 Gruppenpostfächer durch den Namen, alias oder die E-Mail-Adresse des freigegebenen Postfachs, und führen Sie den folgenden Befehl \<MailboxIdentity\> in Exchange Online PowerShell aus:
 
 ```PowerShell
 Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAuditSet
@@ -170,7 +170,7 @@ Get-Mailbox -Identity <MailboxIdentity> -GroupMailbox | Format-List DefaultAudit
 
 Der Wert `Admin, Delegate, Owner` gibt an:
 
-- Die Standardpostfachaktionen für alle drei Anmeldetypen werden überwacht. Dies ist der einzige Wert, den Sie in Microsoft 365-Gruppenpostfächern sehen.
+- Die Standardpostfachaktionen für alle drei Anmeldetypen werden überwacht. Dies ist der einzige Wert, den Sie auf Microsoft 365 Gruppenpostfächern sehen.
 
 - Ein Administrator *hat die* überwachten Postfachaktionen für jeden Anmeldetyp für ein Benutzerpostfach oder ein freigegebenes Postfach nicht geändert. Beachten Sie, dass dies der Standardzustand ist, nachdem die Postfachüberwachung standardmäßig in Ihrer Organisation aktiviert wurde.
 
@@ -188,10 +188,10 @@ Weitere Informationen finden Sie im Abschnitt [Standardmäßig](#change-or-resto
 
 ### <a name="display-the-mailbox-actions-that-are-being-logged-on-mailboxes"></a>Anzeigen der Postfachaktionen, die in Postfächern protokolliert werden
 
-Um die Postfachaktionen anzuzeigen, die derzeit in Benutzerpostfächern oder freigegebenen Postfächern protokolliert werden, ersetzen Sie durch den Namen, den Alias, die E-Mail-Adresse oder den Benutzernamen (Benutzername) des Postfachs, und führen Sie einen oder mehrere der folgenden Befehle \<MailboxIdentity\> in Exchange Online PowerShell aus.
+Um die Postfachaktionen anzuzeigen, die derzeit in Benutzerpostfächern oder freigegebenen Postfächern protokolliert werden, ersetzen Sie durch den Namen, alias, die E-Mail-Adresse oder den Benutzernamen (Benutzername) des Postfachs, und führen Sie einen oder mehrere der folgenden Befehle \<MailboxIdentity\> in Exchange Online PowerShell aus.
 
 > [!NOTE]
-> Obwohl Sie die Option zu den folgenden `-GroupMailbox` **Get-Mailbox-Befehlen** für Microsoft 365-Gruppenpostfächer hinzufügen können, glauben Sie nicht, dass die zurückgegebenen Werte zurückgegeben werden. Die standardmäßigen und statischen Postfachaktionen, die für Microsoft 365-Gruppenpostfächer überwacht werden, werden weiter oben in diesem Thema im Abschnitt Postfachaktionen für [Microsoft 365-Gruppenpostfächer](#mailbox-actions-for-microsoft-365-group-mailboxes) beschrieben.
+> Sie können die Option zwar den folgenden `-GroupMailbox` **Get-Mailbox-Befehlen** für Microsoft 365 hinzufügen, glauben Sie jedoch nicht, dass die zurückgegebenen Werte zurückgegeben werden. Die standardmäßigen und statischen Postfachaktionen, die für Microsoft 365 Gruppenpostfächer überwacht werden, werden im Abschnitt [Postfachaktionen](#mailbox-actions-for-microsoft-365-group-mailboxes) für Microsoft 365 Gruppenpostfächer weiter oben in diesem Thema beschrieben.
 
 #### <a name="owner-actions"></a>Besitzeraktionen
 
@@ -264,7 +264,7 @@ Set-Mailbox -Identity <MailboxIdentity> -DefaultAuditSet <Admin | Delegate | Own
 
 Sie können mehrere *DefaultAuditSet-Werte* durch Kommas getrennt angeben.
 
-**Hinweis**: Die folgenden Verfahren gelten nicht für Microsoft 365-Gruppenpostfächer (sie sind auf die Standardaktionen beschränkt, wie hier [beschrieben).](#mailbox-actions-for-microsoft-365-group-mailboxes)
+**Hinweis**: Die folgenden Verfahren gelten nicht für Microsoft 365 Gruppenpostfächer (sie sind auf die Standardaktionen beschränkt, wie hier [beschrieben).](#mailbox-actions-for-microsoft-365-group-mailboxes)
 
 In diesem Beispiel werden die standardmäßigen überwachten Postfachaktionen für alle Anmeldetypen auf dem Postfachserver mark@contoso.onmicrosoft.com.
 
@@ -308,7 +308,7 @@ Das standardmäßige Deaktivieren der Postfachüberwachung hat die folgenden Erg
 
 ### <a name="turn-on-mailbox-auditing-on-by-default"></a>Aktivieren der Postfachüberwachung standardmäßig
 
-Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um die Postfachüberwachung für Ihre Organisation wieder zu aktivieren:
+Um die Postfachüberwachung für Ihre Organisation wieder zu aktivieren, führen Sie den folgenden Befehl in Exchange Online PowerShell aus:
 
 ```PowerShell
 Set-OrganizationConfig -AuditDisabled $false
@@ -318,7 +318,7 @@ Set-OrganizationConfig -AuditDisabled $false
 
 Derzeit können Sie die Postfachüberwachung nicht für bestimmte Postfächer deaktivieren, wenn die Postfachüberwachung in Ihrer Organisation standardmäßig aktiviert ist. Beispielsweise wird das Festlegen der *AuditEnabled-Postfacheigenschaft* auf **False** ignoriert.
 
-Sie können jedoch weiterhin das **Cmdlet Set-MailboxAuditBypassAssociation** in Exchange  Online PowerShell verwenden, um zu verhindern, dass alle Postfachaktionen der angegebenen Benutzer protokolliert werden, unabhängig davon, wo die Aktionen ausgeführt werden. Beispiel:
+Sie können jedoch weiterhin das **Cmdlet Set-MailboxAuditBypassAssociation** in Exchange Online PowerShell verwenden, um zu verhindern, dass alle Postfachaktionen der angegebenen Benutzer protokolliert werden, unabhängig davon, wo die Aktionen ausgeführt werden.  Beispiel:
 
 - Postfachbesitzeraktionen, die von den umgangenen Benutzern ausgeführt werden, werden nicht protokolliert.
 
@@ -342,7 +342,7 @@ Der Wert **True** gibt an, dass die Postfach-Überwachungsprotokollierung für d
 
 ## <a name="more-information"></a>Weitere Informationen
 
-- Obwohl die Postfach-Überwachungsprotokollierung standardmäßig für alle Organisationen aktiviert ist, geben nur Benutzer mit E5-Lizenzen Postfach-Überwachungsprotokollereignisse in Überwachungsprotokollsuchen im [Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md) oder über die Office [365 Management Activity API](/office/office-365-management-api/office-365-management-activity-api-reference) standardmäßig **zurück.**
+- Obwohl die Postfach-Überwachungsprotokollierung standardmäßig für alle Organisationen aktiviert ist, geben nur Benutzer mit E5-Lizenzen Standardmäßig Postfach-Überwachungsprotokollereignisse in Überwachungsprotokollsuchen im [Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md) oder über die Office 365 Management Activity [API](/office/office-365-management-api/office-365-management-activity-api-reference) **zurück.**
 
   Zum Abrufen von Postfach-Überwachungsprotokolleinträgen für Benutzer ohne E5-Lizenzen können Sie:
 
@@ -357,19 +357,19 @@ Der Wert **True** gibt an, dass die Postfach-Überwachungsprotokollierung für d
 
     - [New-MailboxAuditLogSearch](/powershell/module/exchange/new-mailboxauditlogsearch) zum Durchsuchen des Postfach-Überwachungsprotokolls nach bestimmten Benutzern und zum Senden der Ergebnisse per E-Mail an angegebene Empfänger.
 
-  - Verwenden Sie das Exchange Admin Center (EAC) in Exchange Online, um die folgenden Aktionen zu ausführen:
+  - Verwenden Sie Exchange Admin Center (EAC) in Exchange Online, um die folgenden Aktionen zu ausführen:
 
     - [Exportieren von Postfachüberwachungsprotokollen](/Exchange/security-and-compliance/exchange-auditing-reports/export-mailbox-audit-logs)
 
     - [Ausführen eines Berichts zum Postfachzugriff durch Nicht-Besitzer](/Exchange/security-and-compliance/exchange-auditing-reports/non-owner-mailbox-access-report)
 
-- Standardmäßig werden Postfach-Überwachungsprotokolleinträge 90 Tage lang aufbewahrt, bevor sie gelöscht werden. Sie können die Altersgrenze für Überwachungsprotokolleinträge mithilfe des *Parameters AuditLogAgeLimit* im **Cmdlet Set-Mailbox** in Exchange Online PowerShell ändern. Wenn Sie diesen Wert erhöhen, können Sie jedoch nicht nach Ereignissen suchen, die älter als 90 Tage im Überwachungsprotokoll sind.
+- Standardmäßig werden Postfach-Überwachungsprotokolleinträge 90 Tage lang aufbewahrt, bevor sie gelöscht werden. Sie können die Altersgrenze für Überwachungsprotokolleinträge ändern, indem Sie den *Parameter AuditLogAgeLimit* im **Cmdlet Set-Mailbox** in Exchange Online PowerShell verwenden. Wenn Sie diesen Wert erhöhen, können Sie jedoch nicht nach Ereignissen suchen, die älter als 90 Tage im Überwachungsprotokoll sind.
 
   Wenn Sie die Altersgrenze erhöhen, müssen Sie das [Cmdlet Search-MailboxAuditLog](/powershell/module/exchange/search-mailboxauditlog) in Exchange Online PowerShell verwenden, um das Postfach-Überwachungsprotokoll des Benutzers nach Datensätzen zu durchsuchen, die älter als 90 Tage sind.
 
 - Wenn Sie die *AuditLogAgeLimit-Eigenschaft* für ein Postfach geändert haben, bevor die Postfachüberwachung standardmäßig für die Organisation aktiviert ist, wird das vorhandene Alterslimit für Überwachungsprotokolle des Postfachs nicht geändert. Anders ausgedrückt: Die Standardmäßige Postfachüberwachung wirkt sich nicht auf die aktuelle Altersgrenze für Postfachüberwachungseinträge aus.
 
-- Um den *AuditLogAgeLimit-Wert* für ein Microsoft 365-Gruppenpostfach zu ändern, müssen Sie die Option in den `-GroupMailbox` Befehl **Set-Mailbox** verwenden.
+- Um den *AuditLogAgeLimit-Wert* für ein Microsoft 365 zu ändern, müssen Sie die Option in den `-GroupMailbox` Befehl **Set-Mailbox** einbeigen.
 
 - Postfach-Überwachungsprotokolleinträge werden in einem Unterordner (namens *"Audits")* im Ordner "Wiederherstellbare Elemente" im Postfach jedes Benutzers gespeichert. Beachten Sie die folgenden Punkte zu Postfach-Überwachungsdatensätzen und dem Ordner "Wiederherstellbare Elemente":
 
@@ -384,7 +384,7 @@ Der Wert **True** gibt an, dass die Postfach-Überwachungsprotokollierung für d
     > [!NOTE]
     > Es ist unwahrscheinlich, dass sich die Postfachüberwachung standardmäßig auf das Speicherkontingent oder die Ordnerbeschränkung für den Ordner "Wiederherstellbare Elemente" auswirken wird.
 
-    - Sie können den folgenden Befehl in Exchange Online PowerShell ausführen, um die Größe und Anzahl der Elemente im Unterordner Überwachungen im Ordner "Wiederherstellbare Elemente" anzeigen zu können:
+    - Sie können den folgenden Befehl in Exchange Online PowerShell ausführen, um die Größe und Anzahl der Elemente im Unterordner Überwachungen im Ordner "Wiederherstellbare Elemente" anzeigen:
 
       ```PowerShell
       Get-MailboxFolderStatistics -Identity <MailboxIdentity> -FolderScope RecoverableItems | Where-Object {$_.Name -eq 'Audits'} | Format-List FolderPath,FolderSize,ItemsInFolder

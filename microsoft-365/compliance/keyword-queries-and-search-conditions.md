@@ -1,12 +1,12 @@
 ---
-title: Stichwortabfragen und Suchbedingungen für die Inhaltssuche
+title: Schlüsselwortabfragen und Suchbedingungen für eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
 author: markjjo
 manager: laurawi
 audience: Admin
-ms.topic: reference
+ms.topic: article
 f1_keywords:
 - ms.o365.cc.SearchQueryLearnMore
 ms.service: O365-seccomp
@@ -21,17 +21,17 @@ search.appverid:
 ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
-description: Erfahren Sie mehr über E-Mail- und Dateieigenschaften, die Sie mithilfe der Such- und eDiscovery-Tools in Microsoft 365.
-ms.openlocfilehash: 10b2af333d5eeef6dd70541a86b9114929c0c94c
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+description: Erfahren Sie mehr über E-Mail- und Dateieigenschaften, die Sie mithilfe der eDiscovery-Suchtools in Microsoft 365.
+ms.openlocfilehash: a9a178eb9b139cacd803c8ab168b3143b75b5f92
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114017"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311848"
 ---
-# <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>Schlüsselwortabfragen und Suchbedingungen für inhaltssuche und eDiscovery
+# <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Schlüsselwortabfragen und Suchbedingungen für eDiscovery
 
-In diesem Thema werden die E-Mail- und Dokumenteigenschaften beschrieben, die Sie in E-Mail-Elementen in Exchange Online und auf SharePoint- und OneDrive for Business-Websites mithilfe des Inhaltssuchfeatures im Microsoft 365 Compliance Center suchen können. Sie können auch die **\* Cmdlets -ComplianceSearch** in Security & Compliance Center PowerShell verwenden, um nach diesen Eigenschaften zu suchen. Das Thema beschreibt außerdem:
+In diesem Thema werden die E-Mail- und Dokumenteigenschaften beschrieben, nach der Sie in E-Mail-Elementen und Microsoft Teams Chatunterhaltungen in Exchange Online suchen können, sowie Dokumente, die auf SharePoint- und OneDrive for Business-Websites mithilfe der eDiscovery-Suchtools im Microsoft 365 Compliance Center gespeichert sind. Dies umfasst inhaltssuche, Core eDiscovery und Advanced eDiscovery (eDiscovery-Suchen in Advanced eDiscovery als Sammlungen *bezeichnet* werden). Sie können auch die **\* Cmdlets -ComplianceSearch** in Security & Compliance Center PowerShell verwenden, um nach diesen Eigenschaften zu suchen. Das Thema beschreibt außerdem:
   
 - Verwenden von booleschen Suchoperatoren, Suchbedingungen und anderen Suchabfragetechniken, um Ihre Suchergebnisse zu verfeinern.
 
@@ -39,14 +39,20 @@ In diesem Thema werden die E-Mail- und Dokumenteigenschaften beschrieben, die Si
 
 - Suchen nach Websiteinhalten, die für Benutzer außerhalb Ihrer Organisation freigegeben werden
 
-Schrittweise Anweisungen zum Erstellen einer Inhaltssuche finden Sie unter [Inhaltssuche](content-search.md).
+Schrittweise Anweisungen zum Erstellen unterschiedlicher eDiscovery-Suchbegriffe finden Sie unter:
+
+- [Inhaltssuche](content-search.md)
+
+- [Suchen nach Inhalten in Core eDiscovery](search-for-content-in-core-ediscovery.md)
+
+- [Erstellen einer Entwurfssammlung in Advanced eDiscovery](create-draft-collection.md)
 
 > [!NOTE]
-> Die Inhaltssuche im Microsoft 365 Compliance Center und die entsprechenden **\* Cmdlets -ComplianceSearch** in Security & Compliance Center PowerShell verwenden die Schlüsselwortabfragesprache (Keyword Query Language, KQL). Ausführlichere Informationen finden Sie unter [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference). 
+> eDiscovery sucht im Microsoft 365 Compliance Center und die entsprechenden **\* Cmdlets -ComplianceSearch** in Security & Compliance Center PowerShell verwenden die Schlüsselwortabfragesprache (Keyword Query Language, KQL). Ausführlichere Informationen finden Sie unter [Keyword Query Language syntax reference](/sharepoint/dev/general-development/keyword-query-language-kql-syntax-reference).
   
 ## <a name="searchable-email-properties"></a>Durchsuchbare E-Mail-Eigenschaften
 
-In der folgenden Tabelle sind **E-Mail-Nachrichteneigenschaften** aufgeführt, die mithilfe des Inhaltssuchfeatures im Microsoft 365 Compliance Center oder mithilfe der New-ComplianceSearch oder des **Cmdlets Set-ComplianceSearch** durchsucht werden können. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. Sie können diese Paare  `property:value` in das Schlüsselwortfeld für eine Inhaltssuche eingeben. 
+In der folgenden Tabelle sind **E-Mail-Nachrichteneigenschaften** aufgeführt, die mithilfe der eDiscovery-Suchtools im Microsoft 365 Compliance Center oder mithilfe der New-ComplianceSearch oder des **Cmdlets Set-ComplianceSearch** durchsucht werden können. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. Sie können diese Paare  `property:value` in das Schlüsselwortfeld für eine eDiscovery-Suche eingeben. 
 
 > [!NOTE]
 > Beim Durchsuchen von E-Mail-Eigenschaften ist es nicht möglich, nach Elementen zu suchen, in denen die angegebene Eigenschaft leer oder leer ist. Wenn Sie beispielsweise das *Property:Value-Paar* **subject:""** verwenden, um nach E-Mail-Nachrichten mit einer leeren Betreffzeile zu suchen, werden null Ergebnisse angezeigt. Dies gilt auch beim Durchsuchen von Website- und Kontakteigenschaften.
@@ -57,12 +63,12 @@ In der folgenden Tabelle sind **E-Mail-Nachrichteneigenschaften** aufgeführt, d
 |Bcc|Das Feld Bcc einer E-Mail-Nachricht. <sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|In allen Beispielen werden Nachrichten mit dem Namen "Pilar Pinilla" im Bcc-Feld zurückgegeben.|
 |Kategorie| Die Kategorien, nach denen gesucht wird. Kategorien können von Benutzern mithilfe von Outlook oder Outlook (früher als "Outlook Web App" bezeichnet) definiert werden. Die folgenden Werte sind möglich:  <br/><br/>  blau  <br/>  grün  <br/>  orange  <br/>  violett  <br/>  rot  <br/>  gelb|`category:"Red Category"`|Nachrichten, denen in den Quellpostfächern die rote Kategorie zugewiesen wurde.|
 |Cc|Das Cc-Feld einer E-Mail-Nachricht. <sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|In beiden Beispielen werden Nachrichten mit Pilar Pinilla im Feld Cc angegeben.|
-|Folderid|Die Ordner-ID (GUID) eines bestimmten Postfachordners. Wenn Sie diese Eigenschaft verwenden, achten Sie darauf, das Postfach zu durchsuchen, in dem sich der angegebene Ordner befindet. Es wird nur der angegebene Ordner durchsucht. Alle Unterordner im Ordner werden nicht durchsucht. Zum Durchsuchen von Unterordnern müssen Sie die Folderid-Eigenschaft für den Zu durchsuchenden Unterordner verwenden.  <br/> Weitere Informationen zum Suchen nach der Folderid-Eigenschaft und zum Verwenden eines Skripts zum Abrufen der Ordner-IDs für ein bestimmtes Postfach finden Sie unter [Use Content Search for targeted collections](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|Im ersten Beispiel werden alle Elemente im angegebenen Postfachordner zurückgegeben. Im zweiten Beispiel werden alle Elemente im angegebenen Postfachordner zurückgegeben, die von der Garthf@contoso.com.|
+|Folderid|Die Ordner-ID (GUID) eines bestimmten Postfachordners. Wenn Sie diese Eigenschaft verwenden, achten Sie darauf, das Postfach zu durchsuchen, in dem sich der angegebene Ordner befindet. Es wird nur der angegebene Ordner durchsucht. Alle Unterordner im Ordner werden nicht durchsucht. Zum Durchsuchen von Unterordnern müssen Sie die Folderid-Eigenschaft für den Zu durchsuchenden Unterordner verwenden.  <br/> Weitere Informationen zum Suchen nach der Folderid-Eigenschaft und zum Verwenden eines Skripts zum Abrufen der Ordner-IDs für ein bestimmtes Postfach finden Sie unter [Use Content search for targeted collections](use-content-search-for-targeted-collections.md).|`folderid:4D6DD7F943C29041A65787E30F02AD1F00000000013A0000`  <br/> `folderid:2370FB455F82FC44BE31397F47B632A70000000001160000 AND participants:garthf@contoso.com`|Im ersten Beispiel werden alle Elemente im angegebenen Postfachordner zurückgegeben. Im zweiten Beispiel werden alle Elemente im angegebenen Postfachordner zurückgegeben, die von der Garthf@contoso.com.|
 |Von|Der Absender einer E-Mail-Nachricht.<sup>1</sup>|`from:pilarp@contoso.com`  <br/> `from:contoso.com`|Nachrichten, die vom angegebenen Benutzer oder einer bestimmten Domäne gesendet wurden.|
 |HasAttachment|Gibt an, ob eine Nachricht über eine Anlage verfügt. Verwenden Sie die **Werte true** oder **false**.|`from:pilar@contoso.com AND hasattachment:true`|Nachrichten, die vom angegebenen Benutzer mit Anlagen gesendet werden.|
 |Wichtigkeit|Die Wichtigkeit einer E-Mail-Nachricht, die ein Absender festlegen kann, wenn er eine Nachricht sendet. Standardmäßig werden Nachrichten mit normaler Wichtigkeit gesendet, außer wenn der Absender die Wichtigkeit auf **Hoch** oder **Niedrig** setzt.  |`importance:high`  <br/> `importance:medium`  <br/> `importance:low`|Nachrichten, deren Wichtigkeit auf "Hoch", "Mittel" bzw. "Niedrig" eingestellt ist.|
 |IsRead|Gibt an, ob Nachrichten gelesen wurden. Verwenden Sie die **Werte true** oder **false**.|`isread:true`  <br/> `isread:false`|Im ersten Beispiel werden Nachrichten zurückgegeben, deren IsRead-Eigenschaft auf **True festgelegt ist.** Im zweiten Beispiel werden Nachrichten zurückgegeben, deren IsRead-Eigenschaft auf **False festgelegt ist.**|
-|ItemClass|Verwenden Sie diese Eigenschaft, um bestimmte Drittanbieterdatentypen zu durchsuchen, die Von Ihrer Organisation in die Office 365. Verwenden Sie die folgende Syntax für diese Eigenschaft:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|Im ersten Beispiel werden Facebook-Elemente zurückgegeben, die das Wort "contoso" in der Subject-Eigenschaft enthalten. Im zweiten Beispiel werden Twitter-Elemente zurückgegeben, die von Ann Beebe gepostet wurden und den Stichwortbegriff "Northwind Traders" enthalten.  <br/> Eine vollständige Liste der Werte, die für Drittanbieterdatentypen für die ItemClass-Eigenschaft verwendet werden sollen, finden Sie unter [Use Content Search to search third-party data that was imported to Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).|
+|ItemClass|Verwenden Sie diese Eigenschaft, um bestimmte Drittanbieterdatentypen zu durchsuchen, die Von Ihrer Organisation in die Office 365. Verwenden Sie die folgende Syntax für diese Eigenschaft:  `itemclass:ipm.externaldata.<third-party data type>*`|`itemclass:ipm.externaldata.Facebook* AND subject:contoso`  <br/> `itemclass:ipm.externaldata.Twitter* AND from:"Ann Beebe" AND "Northwind Traders"`|Im ersten Beispiel werden Facebook-Elemente zurückgegeben, die das Wort "contoso" in der Subject-Eigenschaft enthalten. Im zweiten Beispiel werden Twitter-Elemente zurückgegeben, die von Ann Beebe gepostet wurden und den Stichwortbegriff "Northwind Traders" enthalten.  <br/> Eine vollständige Liste der Werte, die für Drittanbieterdatentypen für die ItemClass-Eigenschaft verwendet werden sollen, finden Sie unter [Use Content search to search third-party data that was imported to Office 365](use-content-search-to-search-third-party-data-that-was-imported.md).|
 |Art| Der Typ der E-Mail-Nachricht, nach der gesucht werden soll. Mögliche Werte:  <br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams (gibt Elemente aus Chats, Besprechungen und Anrufen in Microsoft Teams)  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|`kind:email`  <br/> `kind:email OR kind:im OR kind:voicemail`  <br/> `kind:externaldata`|Im ersten Beispiel werden E-Mail-Nachrichten zurückgegeben, die den Suchkriterien entsprechen. Im zweiten Beispiel werden E-Mail-Nachrichten, Chatunterhaltungen (einschließlich Skype for Business Unterhaltungen und Chats in Microsoft Teams) und Sprachnachrichten zurückgegeben, die den Suchkriterien entsprechen. Im dritten Beispiel werden Elemente zurückgegeben, die in Postfächer in Microsoft 365 aus Datenquellen von Drittanbietern wie Twitter, Facebook und Cisco Jabber importiert wurden, die die Suchkriterien erfüllen. Weitere Informationen finden Sie unter [Archivierung von Drittanbieterdaten in Office 365](https://www.microsoft.com/?ref=go).|
 |Teilnehmer|Alle Personenfelder in einer E-Mail-Nachricht. Diese Felder sind From, To, Cc und Bcc.<sup>1</sup>|`participants:garthf@contoso.com`  <br/> `participants:contoso.com`|Nachrichten, die von oder an garthf@contoso.com gesendet wurden. Im zweiten Beispiel werden alle Nachrichten zurückgegeben, die von oder an einen Benutzer in der Domäne contoso.com gesendet wurden.|
 |Empfangen|Das Datum, an dem eine E-Mail-Nachricht von einem Empfänger empfangen wurde.|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|Nachrichten, die am 15. April 2016 empfangen wurden. Im zweiten Beispiel werden alle Nachrichten zurückgegeben, die zwischen dem 1. Januar 2016 und dem 31. März 2016 empfangen wurden.|
@@ -89,9 +95,9 @@ Beachten Sie jedoch, dass das Verhindern der Empfängererweiterung in der Suchab
 
 ## <a name="searchable-site-properties"></a>Durchsuchbare Websiteeigenschaften
 
-In der folgenden Tabelle sind einige der SharePoint- und OneDrive for Business-Eigenschaften aufgeführt, die mithilfe des Inhaltssuchfeatures im Security & Compliance Center oder mithilfe des **Cmdlets New-ComplianceSearch** oder **set-ComplianceSearch** durchsucht werden können. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. 
+In der folgenden Tabelle sind einige der SharePoint- und OneDrive for Business-Eigenschaften aufgeführt, die mithilfe der eDiscovery-Suchtools im Microsoft 365 Compliance Center oder mithilfe der **New-ComplianceSearch** oder des **Cmdlets Set-ComplianceSearch** durchsucht werden können. Die Tabelle enthält ein Beispiel für die  _property:value_-Syntax für jede Eigenschaft und eine Beschreibung der für jedes Beispiel zurückgegebenen Suchergebnisse. 
   
-Eine vollständige Liste der SharePoint, die durchsucht werden können, finden Sie unter [Overview of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Eigenschaften, die **in** der Spalte **"Abfragebar"** mit "Ja" gekennzeichnet sind, können durchsucht werden. 
+Eine vollständige Liste der SharePoint, die durchsucht werden können, finden Sie unter [Overview of crawled and managed properties in SharePoint](/SharePoint/technical-reference/crawled-and-managed-properties-overview). Eigenschaften, die **in** der Spalte **"Abfragebar"** mit "Ja" gekennzeichnet sind, können durchsucht werden.
   
 | Eigenschaft | Beschreibung der Eigenschaft | Beispiel | Von den Beispielen zurückgegebene Suchergebnisse |
 |:-----|:-----|:-----|:-----|
@@ -100,7 +106,7 @@ Eine vollständige Liste der SharePoint, die durchsucht werden können, finden S
 |Erstellt|Das Datum, an dem ein Element erstellt wird.|`created>=06/01/2016`|Alle Elemente, die am oder nach dem 1. Juni 2016 erstellt wurden.|
 |CreatedBy|Die Person, die ein Element erstellt oder hochgeladen hat. Achten Sie darauf, den Anzeigenamen des Benutzers für diese Eigenschaft zu verwenden.|`createdby:"Garth Fort"`|Alle von Garth Fort erstellten oder hochgeladenen Elemente.|
 |DetectedLanguage|Die Sprache eines Elements.|`detectedlanguage:english`|Alle Elemente in Englisch.|
-|DocumentLink|Der Pfad (URL) eines bestimmten Ordners auf einer SharePoint oder OneDrive for Business Website. Wenn Sie diese Eigenschaft verwenden, achten Sie darauf, die Website zu durchsuchen, auf der sich der angegebene Ordner befindet.  <br/> Zum Zurückgeben von Elementen in Unterordnern des Ordners, den Sie für die documentlink-Eigenschaft angeben, müssen Sie /zur URL des angegebenen \* Ordners hinzufügen. Beispiel:  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Weitere Informationen zum Suchen nach der documentlink-Eigenschaft und zum Verwenden eines Skripts zum Abrufen der documentlink-URLs für Ordner auf einer bestimmten Website finden Sie unter [Use Content Search for targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|Im ersten Beispiel werden alle Elemente im angegebenen Ordner OneDrive for Business zurückgegeben. Im zweiten Beispiel werden Dokumente im angegebenen Websiteordner (und allen Unterordnern) zurückgegeben, die das Wort "vertraulich" im Dateinamen enthalten.|
+|DocumentLink|Der Pfad (URL) eines bestimmten Ordners auf einer SharePoint oder OneDrive for Business Website. Wenn Sie diese Eigenschaft verwenden, achten Sie darauf, die Website zu durchsuchen, auf der sich der angegebene Ordner befindet.  <br/> Zum Zurückgeben von Elementen in Unterordnern des Ordners, den Sie für die documentlink-Eigenschaft angeben, müssen Sie /zur URL des angegebenen \* Ordners hinzufügen. Beispiel:  `documentlink: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/>Weitere Informationen zum Suchen nach der documentlink-Eigenschaft und zum Verwenden eines Skripts zum Abrufen der documentlink-URLs für Ordner auf einer bestimmten Website finden Sie unter [Use Content search for targeted collections](use-content-search-for-targeted-collections.md).|`documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Private"`  <br/> `documentlink:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/Documents/Shared with Everyone/*" AND filename:confidential`|Im ersten Beispiel werden alle Elemente im angegebenen Ordner OneDrive for Business zurückgegeben. Im zweiten Beispiel werden Dokumente im angegebenen Websiteordner (und allen Unterordnern) zurückgegeben, die das Wort "vertraulich" im Dateinamen enthalten.|
 |FileExtension|Die Erweiterung einer Datei; Beispiel: docx, one, pptx oder xlsx.|`fileextension:xlsx`|Alle Excel (Excel 2007 und höher)|
 |FileName|Der Name einer Datei.|`filename:"marketing plan"`  <br/> `filename:estimate`|Im ersten Beispiel werden Dateien mit dem exakten Ausdruck "Marketingplan" im Titel zurückgegeben. Im zweiten Beispiel werden Dateien mit dem Wort "estimate" im Dateinamen zurückgegeben.|
 |LastModifiedTime|Das Datum, an dem ein Element zuletzt geändert wurde.|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|Im ersten Beispiel werden Elemente zurückgegeben, die am oder nach dem 1. Mai 2016 geändert wurden. Im zweiten Beispiel werden Elemente zurückgegeben, die zwischen dem 1. Mai 2016 und dem 1. Juni 2016 geändert wurden.|
@@ -114,7 +120,7 @@ Eine vollständige Liste der SharePoint, die durchsucht werden können, finden S
 
 ## <a name="searchable-contact-properties"></a>Durchsuchbare Kontakteigenschaften
 
-In der folgenden Tabelle sind die Kontakteigenschaften aufgeführt, die indiziert sind und nach der Sie mithilfe der Inhaltssuche suchen können. Dies sind die Eigenschaften, die Benutzer für die Kontakte (auch persönliche Kontakte genannt) konfigurieren können, die sich im persönlichen Adressbuch des Postfachs eines Benutzers befinden. Zum Suchen nach Kontakten können Sie die zu durchsuchenden Postfächer auswählen und dann eine oder mehrere Kontakteigenschaften in der Stichwortabfrage verwenden.
+In der folgenden Tabelle sind die Kontakteigenschaften aufgeführt, die indiziert sind und nach der Sie mithilfe von eDiscovery-Suchtools suchen können. Dies sind die Eigenschaften, die Benutzer für die Kontakte (auch persönliche Kontakte genannt) konfigurieren können, die sich im persönlichen Adressbuch des Postfachs eines Benutzers befinden. Zum Suchen nach Kontakten können Sie die zu durchsuchenden Postfächer auswählen und dann eine oder mehrere Kontakteigenschaften in der Stichwortabfrage verwenden.
   
 > [!TIP]
 > Verwenden Sie doppelte Anführungszeichen (" ") zum Suchen nach Werten, die Leerzeichen oder Sonderzeichen enthalten. Beispiel: `businessaddress:"123 Main Street"` .
@@ -216,7 +222,7 @@ Erstellen Sie eine Bedingung mit allgemeinen Eigenschaften beim Durchsuchen von 
 |Absender/Autor|Bei E-Mails: Die Person, die eine Nachricht gesendet hat.  Bei Dokumenten wird die im Feld Autor aus den Dokumenten Office zitiert. Sie können mehrere Namen eingeben, getrennt durch Kommas. Zwei oder mehr Werte werden logisch durch den **OR-Operator** verbunden.|
 |Größe (in Bytes)|Für E-Mails und Dokumente die Größe des Elements (in Bytes).|
 |Betreff/Titel|Bei E-Mails: Der Text in der Betreffzeile einer Nachricht.   Bei Dokumenten der Titel des Dokuments. Wie bereits erläutert, handelt es sich bei der Title-Eigenschaft um Metadaten, die in Microsoft Office angegeben sind. Sie können den Namen von mehreren Betreff/Titeln eingeben, getrennt durch Kommas. Zwei oder mehr Werte werden logisch durch den **OR-Operator** verbunden.|
-|Compliancebezeichnung|Für E-Mails und Dokumente Aufbewahrungsbezeichnungen, die Nachrichten und Dokumenten automatisch durch Richtlinien für automatische Bezeichnungen oder Aufbewahrungsbezeichnungen zugewiesen wurden, die von Benutzern manuell zugewiesen wurden. Aufbewahrungsbezeichnungen werden verwendet, um E-Mails und Dokumente für die Informationsverwaltung zu klassifizieren und Aufbewahrungsregeln basierend auf den von der Bezeichnung definierten Einstellungen zu erzwingen. Sie können einen Teil des Aufbewahrungsbezeichnungsnamens eingeben und einen Platzhalter verwenden oder den vollständigen Bezeichnungsnamen eingeben. Weitere Informationen zu Aufbewahrungsbezeichnungen finden Sie [unter Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen.](retention.md)|
+|Aufbewahrungsbezeichnung|Für E-Mails und Dokumente Aufbewahrungsbezeichnungen, die Nachrichten und Dokumenten automatisch durch Richtlinien für automatische Bezeichnungen oder Aufbewahrungsbezeichnungen zugewiesen wurden, die von Benutzern manuell zugewiesen wurden. Aufbewahrungsbezeichnungen werden verwendet, um E-Mails und Dokumente für die Informationsverwaltung zu klassifizieren und Aufbewahrungsregeln basierend auf den von der Bezeichnung definierten Einstellungen zu erzwingen. Sie können einen Teil des Aufbewahrungsbezeichnungsnamens eingeben und einen Platzhalter verwenden oder den vollständigen Bezeichnungsnamen eingeben. Weitere Informationen zu Aufbewahrungsbezeichnungen finden Sie [unter Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen.](retention.md)|
 |||
   
 ### <a name="conditions-for-mail-properties"></a>Bedingungen für E-Mail-Eigenschaften
@@ -291,66 +297,66 @@ Beachten Sie Folgendes bei der Verwendung von Suchbedingungen:
     
 - Sie können das Drag and Drop-Steuerelement verwenden, um die Reihenfolge der Bedingungen neu zu setzen. Klicken Sie auf das Steuerelement für eine Bedingung, und verschieben Sie es nach oben oder unten.
     
-- Wie bereits beschrieben können bei einigen Bedingungseigenschaften mehrere Werte eingegeben werden. Diese Werte werden mit **OR**-Operator logisch verknüpft. Das Ergebnis ist das gleiche wie beim Verwenden mehrerer Instanzen der gleichen Bedingung, wobei jede jeweils einen einzelnen Wert aufweist. Die folgenden Abbildungen zeigen ein Beispiel für eine einzelne Bedingung mit mehreren Werten und ein Beispiel für mehrere Bedingungen (für dieselbe Eigenschaft) mit einem einzelnen Wert. Beide Beispiele führen zu derselben Abfrage:  `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)`
-    
-    ![Eine Nachricht muss allen Bedingungen in der Regel entsprechen. Wenn eine bestimmte Bedingung erfüllt werden muss, verwenden Sie für jede Bedingung separate Regeln. Wenn Sie Nachrichten mit Anlagen und Nachrichten mit Inhalt, der einem Muster entspricht, z. B. die gleichen Haftungsausschlusserklärung hinzufügen möchten, erstellen Sie für jede Bedingung eine Regel. Sie können eine Regel problemlos kopieren.](../media/9880aa29-d117-4531-be20-6d53f1d21341.gif)
+- Wie bereits erläutert, können Sie mit einigen Bedingungseigenschaften mehrere Werte (durch Semikolon getrennt) eingeben. Jeder Wert ist logisch durch den **OR-Operator** verbunden und führt zu der `(filetype:docx) OR (filetype:pptx) OR (filetype:xlsx)` Abfrage. Die folgende Abbildung zeigt ein Beispiel für eine Bedingung mit mehreren Werten.
+
+    ![Eine Nachricht muss allen Bedingungen in der Regel entsprechen. Wenn eine bestimmte Bedingung erfüllt werden muss, verwenden Sie für jede Bedingung separate Regeln. Wenn Sie Nachrichten mit Anlagen und Nachrichten mit Inhalt, der einem Muster entspricht, z. B. die gleichen Haftungsausschlusserklärung hinzufügen möchten, erstellen Sie für jede Bedingung eine Regel. Sie können eine Regel problemlos kopieren.](../media/SearchConditions1.png)
   
-    ![Mehrere Suchkriterien für die gleiche Eigenschaft](../media/1e63d37d-6d8d-4c9b-a509-a7e1c3a05193.gif)
-  
-> [!TIP]
-> Wenn für eine Bedingung mehrere Werte zulässig sind, wird empfohlen, eine einzelne Bedingung mit mehreren Werten (durch Kommas oder Semikolons getrennt) zu verwenden. Auf diese Weise können Sie leichter sicherstellen, dass Sie die gewünschte Abfragelogik erhalten. 
+  > [!NOTE]
+  > Sie können nicht mehrere Bedingungen hinzufügen (indem Sie für **dieselbe** Eigenschaft auf Bedingung hinzufügen klicken. Stattdessen müssen Sie mehrere Werte für die Bedingung (durch Semikolon getrennt) bereitstellen, wie im vorherigen Beispiel gezeigt.
   
 ### <a name="examples-of-using-conditions-in-search-queries"></a>Beispiele
 
-Die folgenden Beispiele zeigen die GUI-basierte Version einer Suchabfrage mit Bedingungen, die Suchabfragesyntax, die im Detailbereich der ausgewählten Suche angezeigt wird (die auch vom **Cmdlet Get-ComplianceSearch** zurückgegeben wird) und die Logik der entsprechenden KQL-Abfrage. 
+Die folgenden Beispiele zeigen die GUI-basierte Version einer Suchabfrage mit Bedingungen, die Suchabfragesyntax, die im Detailbereich der ausgewählten Suche angezeigt wird (die auch vom **Cmdlet Get-ComplianceSearch** zurückgegeben wird) und die Logik der entsprechenden KQL-Abfrage.
   
 #### <a name="example-1"></a>Beispiel 1
 
-In diesem Beispiel werden Dokumente auf SharePoint und OneDrive for Business zurückgegeben, die eine Kreditkartennummer enthalten und zuletzt vor dem 1. Januar 2016 geändert wurden.
+In diesem Beispiel werden Dokumente auf SharePoint und OneDrive for Business zurückgegeben, die eine Kreditkartennummer enthalten und zuletzt vor dem 1. Januar 2021 geändert wurden.
   
  **GUI**
   
-![Erstes Beispiel für Suchbedingungen](../media/099515ba-d4ee-474e-af25-3aa48816b87b.gif)
+![Erstes Beispiel für Suchbedingungen](../media/SearchConditions2.png)
   
  **Suchabfragesyntax**
   
- `SensitiveType:"Credit Card Number"(c:c)(lastmodifiedtime<2016-01-01)`
+ `SensitiveType:"Credit Card Number"(c:c)(lastmodifiedtime<2021-01-01)`
   
  **Suchabfragelogik**
   
- `SensitiveType:"Credit Card Number" AND (lastmodifiedtime<2016-01-01)`
+ `SensitiveType:"Credit Card Number" AND (lastmodifiedtime<2021-01-01)`
   
+Beachten Sie im vorherigen Screenshot, dass die Suchbenutzeroberfläche verstärkt, dass die Schlüsselwortabfrage und -bedingung durch den **AND-Operator verbunden** sind.
+
 #### <a name="example-2"></a>Beispiel 2
 
-In diesem Beispiel werden E-Mail-Elemente oder Dokumente zurückgegeben, die das Schlüsselwort "report" enthalten, die vor dem 1. April 2105 gesendet oder erstellt wurden und das Wort "northwind" im Betrefffeld von E-Mail-Nachrichten oder in der title-Eigenschaft von Dokumenten enthalten. Die Abfrage schließt Webseiten aus, die die anderen Suchkriterien erfüllen.
+In diesem Beispiel werden E-Mail-Elemente oder Dokumente zurückgegeben, die das Schlüsselwort "report" enthalten, die vor dem 1. April 2021 gesendet oder erstellt wurden und das Wort "northwind" im Betrefffeld von E-Mail-Nachrichten oder in der title-Eigenschaft von Dokumenten enthalten. Die Abfrage schließt Webseiten aus, die die anderen Suchkriterien erfüllen.
   
  **GUI**
   
-![Zweites Beispiel für Suchbedingungen](../media/fe07d495-df81-42da-8106-3cdb409c6e7f.gif)
+![Zweites Beispiel für Suchbedingungen](../media/SearchConditions3.png)
   
  **Suchabfragesyntax**
   
- `report(c:c)(date<2016-04-01)(subjecttitle:"northwind")(-filetype:aspx)`
+ `report(c:c)(date<2021-04-01)(subjecttitle:"northwind")(-filetype:aspx)`
   
  **Suchabfragelogik**
   
- `report AND (date<2016-04-01) AND (subjecttitle:"northwind") NOT (filetype:aspx)`
+ `report AND (date<2021-04-01) AND (subjecttitle:"northwind") NOT (filetype:aspx)`
   
 #### <a name="example-3"></a>Beispiel 3
 
-In diesem Beispiel werden E-Mail-Nachrichten oder Kalenderbesprechungen zurückgegeben, die zwischen dem 1.12.2016 und dem 30.11.2016 gesendet wurden und Wörter enthalten, die mit "Telefon" oder "Smartphone" beginnen.
+In diesem Beispiel werden E-Mail-Nachrichten oder Kalenderbesprechungen zurückgegeben, die zwischen dem 1.12.2019 und dem 30.11.2020 gesendet wurden und Wörter enthalten, die mit "Telefon" oder "Smartphone" beginnen.
   
  **GUI**
   
-![Drittes Beispiel für Suchbedingungen](../media/973d45fc-0923-43d6-9d0a-25e4a625f057.gif)
+![Drittes Beispiel für Suchbedingungen](../media/SearchConditions4.png)
   
  **Suchabfragesyntax**
   
- `phone* OR smartphone*(c:c)(sent=2016-12-01..2016-11-30)(kind="email")(kind="meetings")`
+ `phone* OR smartphone*(c:c)(sent=2019-12-01..2020-11-30)(kind="email")(kind="meetings")`
   
  **Suchabfragelogik**
   
- `phone* OR smartphone* AND (sent=2016-12-01..2016-11-30) AND ((kind="email") OR (kind="meetings"))`
+ `phone* OR smartphone* AND (sent=2029-12-01..2020-11-30) AND ((kind="email") OR (kind="meetings"))`
   
 ## <a name="special-characters"></a>Sonderzeichen
 
@@ -360,32 +366,32 @@ Einige Sonderzeichen sind nicht im Suchindex enthalten und daher nicht durchsuch
 
 ## <a name="searching-for-site-content-shared-with-external-users"></a>Suchen nach Websiteinhalten, die für externe Benutzer freigegeben sind
 
-Sie können die Inhaltssuche im Security & Compliance Center auch verwenden, um nach Dokumenten zu suchen, die auf SharePoint- und OneDrive for Business-Websites gespeichert sind, die für Personen außerhalb Ihrer Organisation freigegeben wurden. Dadurch können Sie vertrauliche oder proprietäre Informationen identifizieren, die außerhalb Ihrer Organisation freigegeben werden. Dazu können Sie die Eigenschaft  `ViewableByExternalUsers` in einer Schlüsselwortabfrage verwenden. Diese Eigenschaft gibt Dokumente oder Websites zurück, die mit einer der folgenden Freigabemethoden für externe Benutzer freigegeben wurden: 
+Sie können auch eDiscovery-Suchtools im Compliance Center verwenden, um nach Dokumenten zu suchen, die auf SharePoint- und OneDrive for Business-Websites gespeichert sind, die für Personen außerhalb Ihrer Organisation freigegeben wurden. Dadurch können Sie vertrauliche oder proprietäre Informationen identifizieren, die außerhalb Ihrer Organisation freigegeben werden. Dazu können Sie die Eigenschaft  `ViewableByExternalUsers` in einer Schlüsselwortabfrage verwenden. Diese Eigenschaft gibt Dokumente oder Websites zurück, die mit einer der folgenden Freigabemethoden für externe Benutzer freigegeben wurden: 
   
 - Eine Freigabeeinladung, bei der sich Benutzer als authentifizierter Benutzer bei Ihrer Organisation anmelden müssen.
-    
+
 - Ein anonymer Gastlink, über den jeder benutzer mit diesem Link auf die Ressource zugreifen kann, ohne authentifiziert werden zu müssen.
-    
-Im Folgenden finden Sie einige Beispiele:
+
+Hier sind einige Beispiele:
   
-- Die Abfrage gibt alle Elemente zurück, die für Personen außerhalb Ihrer Organisation freigegeben wurden  `ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"` und eine Kreditkartennummer enthalten. 
-    
-- Die Abfrage gibt eine Liste der Dokumente auf allen Teamwebsites in der Organisation zurück, die für externe  `ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"` Benutzer freigegeben wurden. 
-    
+- Die Abfrage gibt alle Elemente zurück, die für Personen außerhalb Ihrer Organisation freigegeben wurden  `ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"` und eine Kreditkartennummer enthalten.
+  
+- Die Abfrage gibt eine Liste der Dokumente auf allen Teamwebsites in der Organisation zurück, die für externe  `ViewableByExternalUsers:true AND ContentType:document AND site:"https://contoso.sharepoint.com/Sites/Teams"` Benutzer freigegeben wurden.
+
 > [!TIP]
-> Eine Suchabfrage,  `ViewableByExternalUsers:true AND ContentType:document` z. B. kann viele ASPX-Dateien in den Suchergebnissen zurückgeben. Um diese (oder andere Dateitypen) auszuschließen, können Sie die Eigenschaft verwenden, um  `FileExtension` bestimmte Dateitypen auszuschließen, z. B.  `ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx` . 
+> Eine Suchabfrage,  `ViewableByExternalUsers:true AND ContentType:document` z. B. kann viele ASPX-Dateien in den Suchergebnissen zurückgeben. Um diese (oder andere Dateitypen) auszuschließen, können Sie die Eigenschaft verwenden, um  `FileExtension` bestimmte Dateitypen auszuschließen, z. B.  `ViewableByExternalUsers:true AND ContentType:document NOT FileExtension:aspx` .
   
 Was wird als Inhalt betrachtet, der für Personen außerhalb Ihrer Organisation freigegeben wird? Dokumente in den SharePoint und OneDrive for Business Ihrer Organisation, die durch Senden einer Freigabeeinladung freigegeben werden oder an öffentlichen Orten freigegeben werden. Die folgenden Benutzeraktivitäten führen beispielsweise zu Inhalten, die von externen Benutzern angezeigt werden können:
   
 - Ein Benutzer teilt eine Datei oder einen Ordner für eine Person außerhalb Ihrer Organisation.
-    
+  
 - Ein Benutzer erstellt und sendet einen Link zu einer freigegebenen Datei an eine Person außerhalb Ihrer Organisation. Über diesen Link kann der externe Benutzer die Datei anzeigen (oder bearbeiten).
-    
+  
 - Ein Benutzer sendet eine Freigabeeinladung oder einen Gastlink an eine Person außerhalb Ihrer Organisation, um eine freigegebene Datei anzeigen (oder bearbeiten) zu können.
-    
+  
 ### <a name="issues-using-the-viewablebyexternalusers-property"></a>Probleme mit der ViewableByExternalUsers-Eigenschaft
 
-Während die Eigenschaft den Status darstellt, ob ein Dokument oder eine Website für externe Benutzer freigegeben wird, gibt es einige Vorbehalte, was diese Eigenschaft tut und nicht  `ViewableByExternalUsers` widerspiegelt. In den folgenden Szenarien wird der Wert der Eigenschaft nicht aktualisiert, und die Ergebnisse einer Inhaltssuchabfrage, die diese Eigenschaft verwendet,  `ViewableByExternalUsers` sind möglicherweise ungenau. 
+Während die Eigenschaft den Status darstellt, ob ein Dokument oder eine Website für externe Benutzer freigegeben wird, gibt es einige Vorbehalte, was diese Eigenschaft tut und nicht  `ViewableByExternalUsers` widerspiegelt. In den folgenden Szenarien wird der Wert der Eigenschaft nicht aktualisiert, und die Ergebnisse einer Suchabfrage, die diese Eigenschaft verwendet,  `ViewableByExternalUsers` sind möglicherweise ungenau. 
   
 - Änderungen an Freigaberichtlinien, z. B. Deaktivieren der externen Freigabe für eine Website oder für die Organisation. Die Eigenschaft zeigt weiterhin zuvor freigegebene Dokumente als extern zugänglich an, auch wenn der externe Zugriff möglicherweise widerrufen wurde.
     
@@ -429,7 +435,7 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 
 ## <a name="search-tips-and-tricks"></a>Tipps und Tricks für die Suche
 
-- Bei Stichwortsuchen wird die Zwischen-/Kleinschreibung nicht beachtet. Beispielsweise geben **katze** und **KATZE** dieselben Ergebnisse zurück. 
+- Bei Stichwortsuchen wird die Zwischen-/Kleinschreibung nicht beachtet. Beispielsweise geben **katze** und **KATZE** dieselben Ergebnisse zurück.
 
 - Die booleschen **Operatoren AND**, **OR**, **NOT** und **NEAR** müssen Großbuchstaben sein. 
 

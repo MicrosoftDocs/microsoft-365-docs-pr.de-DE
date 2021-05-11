@@ -16,76 +16,70 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Sie können nach Inhalten suchen, die möglicherweise für einen zentralen eDiscovery-Fall relevant sind.
-ms.openlocfilehash: d17a9d16643ec9077e02b5438597237b80f09af5
-ms.sourcegitcommit: 6007dbe2cf758c683de399f94023122c678bcada
+description: Suchen Sie nach Inhalten, die für einen Core eDiscovery-Fall relevant sein können.
+ms.openlocfilehash: 8d2e2a20135312a8f111a071abbe77b03b8e8363
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44224622"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311777"
 ---
-# <a name="search-for-content-in-a-core-ediscovery-case"></a>Suchen nach Inhalten in einem zentralen eDiscovery-Fall
+# <a name="search-for-content-in-a-core-ediscovery-case"></a>Suchen nach Inhalten in einem Core eDiscovery-Fall
 
-Nachdem ein zentraler eDiscovery-Fall erstellt wurde und Personen mit Interesse im Fall in der Warteschleife gespeichert wurden, können Sie eine oder mehrere Suchen nach Inhalten erstellen und ausführen, die für den Fall relevant sind. Suchvorgänge im Zusammenhang mit einem zentralen eDiscovery-Fall werden nicht auf der Seite **Inhaltssuche** im Microsoft 365 Compliance Center aufgeführt. Diese Suchvorgänge werden auf der Seite **Suchvorgänge** im Kern eDiscover-Fall aufgeführt, dem die Suchvorgänge zugeordnet sind. Dies bedeutet auch, dass Suchvorgängen, die einem Fall zugeordnet sind, nur von Fall Mitgliedern zugegriffen werden kann.
+Nachdem ein Core eDiscovery-Fall erstellt wurde und Personen, die für den Fall von Interesse sind, in einem Haltebereich platziert wurden, können Sie eine oder mehrere Suchen nach für den Fall relevanten Inhalten erstellen und ausführen. Einem Core eDiscovery-Fall zugeordnete Suchen werden  nicht auf der Seite Inhaltssuche im compliance center Microsoft 365 aufgelistet. Diese Suchen werden auf  der Seite Suchen des Core eDiscover-Falls aufgeführt, dem die Suchen zugeordnet sind. Dies bedeutet auch, dass auf Die einem Fall zugeordneten Suchen nur von Fallmitgliedern zugegriffen werden kann.
 
-So erstellen Sie eine zentrale eDiscovery-Suche:
+So erstellen Sie eine Core eDiscovery-Suche:
   
-1. Wechseln Sie zu, [https://compliance.microsoft.com](https://compliance.microsoft.com) und melden Sie sich mit den Anmeldeinformationen für das Benutzerkonto an, dem die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden.
+1. Wechseln Sie zu, und melden Sie sich mit den Anmeldeinformationen für ein Benutzerkonto an, dem die entsprechenden eDiscovery-Berechtigungen zugewiesen wurden und Mitglied <https://compliance.microsoft.com> des Falls ist.
 
-2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Center auf **Alle anzeigen**, und klicken Sie dann auf **eDiscovery > Kern**.
+2. Klicken Sie im linken Navigationsbereich Microsoft 365 Compliance Center auf Alle **anzeigen,** und klicken Sie dann auf **eDiscovery > Core**.
 
-3. Wählen Sie auf der **zentralen eDiscovery** -Seite den Fall aus, dass Sie eine zugeordnete Suche erstellen möchten, und klicken Sie dann auf **Groß-/Kleinschreibung öffnen**.
+3. Wählen Sie auf der Seite Core **eDiscovery** den Fall aus, für den Sie eine zugeordnete Suche erstellen möchten, und klicken Sie dann auf **Fall öffnen**.
 
-4. Klicken Sie auf der **Start** Seite für den Fall auf die Registerkarte **Suchen** .
+4. Klicken Sie **auf der** Startseite für den Fall auf **die** Registerkarte Suchen, und klicken Sie dann auf **Neue Suche**.
+
+   ![Klicken Sie auf Neue Suche, um eine Core eDiscovery-Suchsuche zu erstellen.](../media/CoreeDiscoverySearch1.png)
+
+   > [!NOTE]
+   > Mit **der Listenoption** Nach ID suchen können Sie nach bestimmten E-Mail-Nachrichten und anderen Postfachelementen mithilfe einer Liste von Exchange suchen. Um eine ID-Listensuche zu erstellen, übermitteln Sie eine durch Kommata getrennte Wertedatei (CSV), in der Sie die spezifischen Postfachelemente angeben, nach denen Sie suchen. Eine Anleitung finden Sie unter [CSV-Datei für eine ID-Listensuche vorbereiten](csv-file-for-an-id-list-content-search.md).
+
+5. Geben Sie **im Assistenten** Für neue Suchfunktion einen Namen für die Suche und eine optionale Beschreibung ein, mit der die Suche identifiziert werden kann. Der Name der Suche muss in Ihrer Organisation eindeutig sein.
+
+6. Wählen Sie **auf** der Seite Speicherorte die Inhaltsorte aus, die Sie durchsuchen möchten. Sie können Postfächer, Websites und öffentliche Ordner durchsuchen.
+
+    ![Wählen Sie Inhaltsspeicherorte aus, die im Haltebereich platziert werden sollen.](../media/ContentSearchLocations.png)
   
-5. Klicken Sie auf der Seite **Suchen** auf **neue Suche**.
+   1. **Exchange Postfächer:** Legen Sie den Umschalter auf **Ein** fest, und klicken Sie dann auf **Benutzer, Gruppen** oder Teams auswählen, um die Postfächer anzugeben, die in der Warteschleife gespeichert werden. Verwenden Sie das Suchfeld, um Benutzerpostfächer und Verteilergruppen zu finden (um die Postfächer von Gruppenmitgliedern in den Halteraum zu setzen). Sie können auch das Postfach durchsuchen, das einem Microsoft Team zugeordnet ist (nach Kanalnachrichten), Office 365 Gruppe und Yammer Gruppe. Weitere Informationen zu den in Postfächern gespeicherten Anwendungsdaten finden Sie unter Inhalt, der in Postfächern für [eDiscovery gespeichert ist.](what-is-stored-in-exo-mailbox.md)
 
-6. Auf der Seite **Neue Suche** können Sie Schlüsselwörter und Bedingungen zum Erstellen der Suchabfrage hinzufügen. 
-
-    ![Neue Suche](../media/0e9954e7-c0ea-4e05-820b-e4b81dc5f81d.png)
+   2. **SharePoint** Websites: Legen Sie die Umschaltflächen auf  **Ein** fest, und klicken Sie dann auf Websites auswählen, um SharePoint websites und OneDrive konten anzugeben, die in der Warteschleife platzieren werden. Geben Sie die URL für jede Website ein, die Sie in der Warteschleife platzieren möchten. Sie können auch die URL für die SharePoint für ein Microsoft Team, eine Office 365 oder eine Yammer hinzufügen.
   
-   a. Sie können Schlüsselwörter, Nachrichteneigenschaften wie gesendete und empfangene Datumsangaben oder Dokumenteigenschaften angeben, beispielsweise Dateinamen oder das Datum, an dem ein Dokument zuletzt geändert wurde. Sie können komplexere Abfragen verwenden, die einen booleschen Operator verwenden, beispielsweise **and**, **or**, **Not**oder **near**. Sie können auch nach vertraulichen Informationen (z. B. Sozialversicherungsnummern) in Dokumenten oder nach Dokumenten suchen, die extern freigegeben wurden. Wenn Sie das Feld Schlüsselwort leer lassen, werden alle Inhalte, die sich an den angegebenen Inhaltsspeicherorten befinden, in die Suchergebnisse eingeschlossen.
-
-   b. Sie können auf das Kontrollkästchen **Schlüsselwortliste anzeigen** und in jede Zeile ein Stichwort eingeben. Wenn Sie dies tun, werden die Schlüsselwörter für jede Zeile durch den **or** -Operator in der erstellten Suchabfrage miteinander verbunden. Sie können maximal 20 Stichwörter für die Liste eingeben.
-
-    ![Stichwortliste](../media/29cceb5d-2817-4fc4-b91a-ced1c5824a17.png)
+   3. **Exchange öffentlichen Ordner**: Legen Sie die Umschalte auf **Ein** fest, um alle öffentlichen Ordner in Exchange Online organisation zu speichern. Sie können keine bestimmten öffentlichen Ordner auswählen, die in der Warteschleife gespeichert werden. Lassen Sie den Umschalter deaktiviert, wenn Sie öffentliche Ordner nicht in den Halteraum setzen möchten.
   
-    Gründe für die Verwendung der Schlüsselwortliste Sie können Statistiken abrufen, die zeigen, wie viele Elemente den einzelnen Schlüsselwörtern entsprechen. Dadurch können Sie schnell erkennen, welche Schlüsselwörter am effektivsten (und am wenigsten effektiv) sind. Sie können auch einen (in Klammern eingeschlossenen) Schlüsselwortausdruck in einer Zeile verwenden. Weitere Informationen zu Suchstatistiken finden Sie unter [Anzeigen der Schlüsselwortstatistik für Inhaltssuchergebnisse](view-keyword-statistics-for-content-search.md).
+   4. Aktivieren Sie dieses Kontrollkästchen, um nach inhalten Teams lokalen Benutzern zu suchen. Wenn Sie beispielsweise alle Exchange-Postfächer in der Organisation durchsuchen und dieses Kontrollkästchen aktiviert ist, wird der cloudbasierte Speicher zum Speichern von Teams-Chatdaten für lokale Benutzer in den Bereich der Suche einbezogen. Weitere Informationen finden Sie unter [Nach Teams-Chatdaten für lokale Benutzer suchen](search-cloud-based-mailboxes-for-on-premises-users.md).
 
-    Weitere Informationen zur Verwendung der Liste Stichwörter finden Sie unter [Erstellen einer Suchabfrage](content-search.md#building-a-search-query).
+7. Geben Sie **auf der Seite Suchbedingungen** definieren eine Schlüsselwortabfrage ein, und fügen Sie der Suchabfrage bei Bedarf Bedingungen hinzu.
 
-   c. Sie können auf **Bedingungen** klicken und einer Suchabfrage Bedingungen hinzufügen, um eine Suche einzuschränken und eine verfeinerte Ergebnisgruppe zurückzugeben. Jede Bedingung fügt eine Klausel zu der KQL-Suchabfrage hinzu, die beim Starten der Suche erstellt und ausgeführt wird. Eine Bedingung ist durch **AND**-Operator logisch mit der (im Schlüsselwortfeld angegebenen) Schlüsselwortabfrage verbunden. Das bedeutet, dass Elemente sowohl die Keyword-Abfrage als auch jede Bedingung erfüllen müssen, um in die Ergebnisse einbezogen zu werden. Auf diese Weise können die Suchergebnisse mithilfe von Bedingungen weiter eingegrenzt werden.
+   ![Konfigurieren der Suchabfrage](../media/ContentSearchQuery.png)
 
-    Weitere Informationen zum Erstellen einer Suchabfrage sowie zur Verwendung von Bedingungen finden Sie unter [Keyword queries for Content Search](keyword-queries-and-search-conditions.md).
+   1. Geben Sie Schlüsselwörter, Nachrichteneigenschaften wie gesendete und empfangene Datumsangaben oder Dokumenteigenschaften wie Dateinamen oder das Datum an, an dem ein Dokument zuletzt geändert wurde. Sie können auch komplexere Abfragen mit booleschen Operatoren wie **AND**, **OR**, **NOT** und **NEAR** verwenden. Wenn Sie das Schlüsselwortfeld leer lassen, werden alle Inhalte in den angegebenen Inhaltsspeicherorten in die Suchergebnisse eingeschlossen. Weitere Informationen finden Sie unter [Schlüsselwortabfragen und Suchbedingungen für eDiscovery](keyword-queries-and-search-conditions.md).
 
-7. Wählen Sie unter **Standorte: Aufbewahrungsorte**die inhaltsspeicherorte aus, die Sie durchsuchen möchten. Sie können Postfächer, Websites und öffentliche Ordner in derselben Suche durchsuchen.
+   2. Alternativ können Sie auf das Kontrollkästchen **Schlüsselwortliste anzeigen** klicken, und dann in jede Zeile ein Schlüsselwort eingeben. Wenn Sie dies tun, werden die Schlüsselwörter in den einzelnen Zeilen der erstellten Suchabfrage mit einem logischen (**c:s**)-Operator verknüpft. Dessen Funktionsweise ist mit jener des **OR**-Operators vergleichbar.
 
-    ![Speicherorte, Aufbewahrungsorte](../media/d56398aa-0b20-4500-8e26-494eab92a99f.png)
-  
-    - **Alle Standorte**. Wählen Sie diese Option aus, um alle inhaltsspeicherorte in Ihrer Organisation zu durchsuchen. Wenn Sie diese Option auswählen, können Sie auswählen, dass alle Exchange-Postfächer durchsucht werden sollen (einschließlich der Postfächer für alle Microsoft Teams, Jammer Gruppen und Office 365 Gruppen), alle SharePoint-und OneDrive für Unternehmen-Websites (einschließlich der Websites für alle Microsoft Teams, Jammer Gruppen und Office 365 Gruppen) sowie aller öffentlichen Ordner.
-    
-    - **Alle Aufbewahrungsorte**. Wählen Sie diese Option aus, um alle inhaltsspeicherorte zu durchsuchen, die in der Anfrage für eDiscovery gespeichert wurden. Wenn die Groß-/Kleinschreibung mehrere Haltestatus enthält, werden die inhaltsspeicherorte aus allen Haltebereichen durchsucht. Wenn ein Inhaltsspeicherort in einem abfragebasierten Speicherplatz gefunden wurde, werden beim Ausführen der Inhaltssuche, die Sie in diesem Schritt erstellen, nur die Elemente durchsucht, die in der Warteschleife gespeichert sind. Wenn beispielsweise ein Benutzer auf Abfrage basiertem Case Hold gesetzt wurde, der Elemente aufrecht erhält, die vor einem bestimmten Datum gesendet oder erstellt wurden, werden nur diese Elemente durchsucht. Dies wird erreicht, indem die Case Hold-Abfrage und die Inhalts Suchabfrage durch einen **and-** Operator verbunden werden. Weitere Informationen finden Sie unter [Suchorte in eDiscovery Hold](create-ediscovery-holds.md#search-locations-on-ediscovery-hold).
-    
-    - **Bestimmte Standorte**. Wählen Sie diese Option aus, um die Postfächer und Websites auszuwählen, die Sie durchsuchen möchten. Wenn Sie diese Option auswählen und auf **ändern**klicken, wird eine Liste der Speicherorte angezeigt. Sie können auswählen, ob Sie einen oder alle Benutzer, Gruppen, Teams oder Website Standorte durchsuchen möchten. Sie können auch die öffentlichen Ordner in Ihrer Organisation durchsuchen.
-    
-      ![Auswählen bestimmter Standorte](../media/97469b15-7be1-4aee-be27-f8343636152c.png)
-  
-     Wenn Sie diese Option auswählen und einen beliebigen Inhaltsspeicherort durchsuchen, wird keine Abfrage von einem abfragebasierten Aufbewahrungs Fall auf die Suchabfrage angewendet. In anderen Worten wird der gesamte Inhalt durchsucht, und nicht nur der Inhalt, der von einem abfragebasierten Aufbewahrungsplatz beibehalten wird.
+      Gründe für die Verwendung der Schlüsselwortliste Sie können Statistiken abrufen, die zeigen, wie viele Elemente den einzelnen Schlüsselwörtern entsprechen. Dadurch können Sie schnell erkennen, welche Schlüsselwörter am effektivsten (und am wenigsten effektiv) sind. Sie können auch einen (in Klammern eingeschlossenen) Schlüsselwortausdruck in einer Zeile verwenden. Weitere Informationen zur Stichwortliste und suchstatistik finden Sie unter [Get keyword statistics for searches](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-searches).
 
-8. Nachdem Sie die zu durchsuchenden inhaltsspeicherorte ausgewählt haben, klicken Sie auf **Fertig** und dann auf **Speichern**.
+      > [!NOTE]
+      > Um Probleme zu reduzieren, die durch große Stichwortlisten verursacht werden, sind Sie auf maximal 20 Zeilen in der Stichwortliste beschränkt.
 
-9. Klicken Sie auf der Seite **neue Suche** auf **& ausführen speichern** , und geben Sie dann einen Namen für die Suche ein. Suchvorgänge im Zusammenhang mit einem zentralen eDiscovery-Fall müssen Namen enthalten, die innerhalb Ihrer Office 365 Organisation eindeutig sind.
+   3. Sie können Suchbedingungen hinzufügen, um eine Suche zu eindrücken und einen verfeinerten Satz von Ergebnissen zurücksennen. Jede Bedingung fügt eine Klausel zur Suchabfrage hinzu, die beim Starten der Suche erstellt und ausgeführt wird. Eine Bedingung ist logisch mit der Schlüsselwortabfrage (im Feld „Schlüsselwort“ angegeben) durch einen logischen (**c:s**)-Operator verknüpft. Dessen Funktionsweise ist mit jener des **OR**-Operators vergleichbar. Dies bedeutet, dass Elemente sowohl die Schlüsselwortabfrage als auch eine oder mehrere Bedingungen erfüllen muss, damit sie in die Suchergebnisse aufgenommen werden. Auf diese Weise können die Suchergebnisse mithilfe von Bedingungen weiter eingegrenzt werden. Eine Liste und Beschreibung der Bedingungen, die Sie in einer Suchabfrage verwenden können, finden Sie unter [Suchbedingungen](keyword-queries-and-search-conditions.md#search-conditions).
 
-10. Klicken Sie auf **Speichern** , um die Sucheinstellungen zu speichern und die Suche zu starten.
+8. Überprüfen Sie die Sucheinstellungen (und bearbeiten Sie bei Bedarf), und übermitteln Sie die Suche, um sie zu starten.
 
-  Wenn die Suche abgeschlossen ist, können Sie eine Vorschau der Suchergebnisse anzeigen. Klicken Sie bei Bedarf auf der Seite **Suchvorgänge** auf **Aktualisieren** , um die in der Liste erstellte Suche anzuzeigen.
+Wenn die Suche abgeschlossen ist, können Sie eine Vorschau der Suchergebnisse anzeigen. Klicken Sie bei Bedarf **auf der** Seite **Suchen** auf Aktualisieren, um die von Ihnen erstellte Suche anzeigen zu können.
 
-11. Klicken Sie auf die Suche, um die Flyout-Seite anzuzeigen, die Statistiken zur Suche enthält, und um andere Aufgaben wie das Anzeigen von Suchstatistiken und das Exportieren der Suchergebnisse auszuführen.
+## <a name="more-information-about-searching-content-locations"></a>Weitere Informationen zum Durchsuchen von Inhaltsstandorten
 
-## <a name="more-information-about-searching-content-locations"></a>Weitere Informationen zum Durchsuchen von Inhaltsspeicherorten
+- Wenn Sie auf **Benutzer, Gruppen** oder Teams auswählen klicken, um zu suchende Postfächer anzugeben, ist die angezeigte Postfachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Klicken Sie zum Hinzufügen von Empfängern zu dieser Liste auf **Benutzer,** Gruppen oder Teams auswählen, geben Sie einen Namen (mindestens drei Zeichen) in das Suchfeld ein, aktivieren Sie das Kontrollkästchen neben dem Namen, und klicken Sie dann auf **Auswählen**.
 
-- Wenn Sie auf **Benutzer, Gruppen oder Teams auswählen** klicken, um die zu durchsuchenden Postfächer anzugeben, ist die angezeigte Post Fachauswahl leer. Dies ist beabsichtigt, um die Leistung zu verbessern. Klicken Sie zum Hinzufügen von Empfängern zu dieser Liste auf **Benutzer, Gruppen oder Teams auswählen**, geben Sie einen Namen (mindestens 3 Zeichen) in das Suchfeld ein, aktivieren Sie das Kontrollkästchen neben dem Namen, und klicken Sie dann auf **auswählen**.
+- Sie können inaktive Postfächer, Microsoft Teams, Yammer Gruppen, Office 365 Gruppen und Verteilergruppen zur Liste der zu durchsuchende Postfächer hinzufügen. Dynamische Verteilergruppen werden nicht unterstützt. Wenn Sie Microsoft Teams, Yammer gruppen oder Office 365 hinzufügen, wird das Gruppen- oder Teampostfach durchsucht. Die Postfächer der Gruppenmitglieder werden nicht durchsucht.
 
-- Sie können inaktive Postfächer, Microsoft Teams, Jammer Gruppen, Office 365 Gruppen und Verteilergruppen zur Liste der zu durchsuchenden Postfächer hinzufügen. Dynamische Verteilergruppen werden nicht unterstützt. Wenn Sie Microsoft Teams, Jammer Gruppen oder Office 365 Gruppen hinzufügen, wird das Gruppen-oder Team Postfach durchsucht. die Postfächer der Gruppenmitglieder werden nicht durchsucht.
-
-- Klicken Sie zum Hinzufügen von Websites auf **Websites auswählen**, dann auf **Websites erneut auswählen** , und geben Sie dann die URL für jede Website ein, die Sie durchsuchen möchten. Sie können auch die URL für die SharePoint-Website für ein Microsoft-Team, eine Jammer Gruppe oder eine Office 365 Gruppe hinzufügen.
+- Um der Suche Websites hinzuzufügen, aktivieren Sie die Umschaltflächen, und klicken Sie dann **auf Websites auswählen.** Geben Sie die URL für jede Website ein, die Sie durchsuchen möchten. Sie können auch die URL für die SharePoint für ein Microsoft Team, eine Yammer oder eine Office 365 hinzufügen.

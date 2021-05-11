@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit eDiscovery-Kernfällen in Microsoft 365
+title: Erste Schritte mit Core eDiscovery-Fällen in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,17 +16,17 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: In diesem Artikel wird beschrieben, wie Sie mit der eDiscovery-Kernversion in Microsoft 365 beginnen. Nachdem Sie eDiscovery-Berechtigungen zugewiesen und einen Fall erstellt haben, können Sie Mitglieder hinzufügen, eDiscovery-Halterechte erstellen und dann daten suchen und exportieren, die für Ihre Untersuchung relevant sind.
-ms.openlocfilehash: 4a814b2e0019f86e4a4fc0e26d19df4411402749
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Beschreibt die ersten Schritte mit Core eDiscovery in Microsoft 365. Nachdem Sie eDiscovery-Berechtigungen zugewiesen und einen Fall erstellt haben, können Sie Mitglieder hinzufügen, eDiscovery-Halterechte erstellen und dann inhalte suchen und exportieren, die für Ihre Untersuchung relevant sind.
+ms.openlocfilehash: 00506c2f072fff6aa30c7d96bffdc18eb5eda20b
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919761"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311016"
 ---
-# <a name="get-started-with-core-ediscovery"></a>Erste Schritte mit Core eDiscovery
+# <a name="get-started-with-core-ediscovery-in-microsoft-365"></a>Erste Schritte mit Core eDiscovery in Microsoft 365
 
-Core eDiscovery in Microsoft 365 bietet ein einfaches eDiscovery-Tool, mit dem Organisationen Inhalte in Microsoft 365 und Office 365 durchsuchen und exportieren können. Sie können Core eDiscovery auch verwenden, um eDiscovery für Inhaltsspeicherorte wie #A0, #A1, #A1 und Microsoft Teams zu speichern. Für die Bereitstellung von Core eDiscovery ist nichts erforderlich, aber es gibt einige erforderliche Aufgaben, die ein IT-Administrator und eDiscovery-Manager ausführen müssen, bevor Ihre Organisation core eDiscovery zum Suchen, Exportieren und Beibehalten von Inhalten verwenden kann.
+Core eDiscovery in Microsoft 365 bietet ein einfaches eDiscovery-Tool, mit dem Organisationen Inhalte in Microsoft 365 und Office 365. Sie können core eDiscovery auch verwenden, um eDiscovery für Inhaltsspeicherorte wie Exchange-Postfächer, SharePoint-Websites, OneDrive-Konten und Microsoft Teams. Für die Bereitstellung von Core eDiscovery ist nichts erforderlich, aber es gibt einige erforderliche Aufgaben, die ein IT-Administrator und eDiscovery-Manager ausführen müssen, bevor Ihre Organisation core eDiscovery zum Suchen, Exportieren und Beibehalten von Inhalten verwenden kann.
 
 In diesem Artikel werden die schritte erläutert, die zum Einrichten von Core eDiscovery erforderlich sind. Dies umfasst die Sicherstellung der ordnungsgemäßen Lizenzierung, die für den Zugriff auf Core eDiscovery und das Festlegen eines eDiscovery-Haltebereichs für Inhaltsstandorte erforderlich ist, sowie das Zuweisen von Berechtigungen an Ihr IT-, Rechts- und Untersuchungsteam, damit es auf Fälle zugreifen und diese verwalten kann. Dieser Artikel bietet außerdem eine übersicht über die Verwendung von Fällen zum Suchen und Exportieren von Inhalten.
 
@@ -38,21 +38,21 @@ Die Lizenzierung für Core eDiscovery erfordert das entsprechende Organisationsa
 
 - **Benutzerlizenzierung:** Zum Platzieren eines eDiscovery-Archivs für Postfächer und Websites muss einem Benutzer eine der folgenden Lizenzen zugewiesen werden, abhängig von Ihrem Organisationsabonnement:
 
-  - Eine Microsoft 365 E3- oder Office 365 E3-Lizenz oder höher
+  - Eine Microsoft 365 E3 oder Office 365 E3-Lizenz oder höher
 
    ODER
 
-  - Office 365 E1-Lizenz mit einer Exchange Online Plan 2- oder Exchange Online-Archivierung-Add-On-Lizenz
+  - Office 365 E1-Lizenz mit Exchange Online Plan 2 oder Exchange Online-Archivierung Add-On-Lizenz
 
   UND
 
-  - Office 365 #A0 mit einer SharePoint Online Plan 2- oder OneDrive for Business Plan 2-Add-On-Lizenz
+  - Office 365 E1-Lizenz mit SharePoint Online Plan 2 oder OneDrive for Business Plan 2-Add-On-Lizenz
   
   Informationen zum Zuweisen von Lizenzen finden Sie unter [Zuweisen von Lizenzen zu Benutzern](../admin/manage/assign-licenses-to-users.md).
 
 Informationen zur Lizenzierung finden Sie unter:
 
-- Laden Sie die Lösung "Ermitteln & Antworten" im [Microsoft 365 Compliance Licensing Comparison herunter](/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)und sehen Sie sich diese an.
+- Laden Sie die Lösung "Ermitteln & Antworten" im Microsoft 365 [Compliance Licensing Comparison herunter.](/office365/servicedescriptions/downloads/microsoft-365-compliance-licensing-comparison.xlsx)
 
 - Weitere Informationen [finden Sie in & Security & Compliance Center Service Description](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center).
 
@@ -62,7 +62,7 @@ Um auf Core eDiscovery zu zugreifen oder als Mitglied eines Core eDiscovery-Fall
 
 Führen Sie die folgenden Schritte aus, um der Rollengruppe eDiscovery Manager Benutzer hinzuzufügen:
 
-1. Wechseln Sie zu und melden Sie sich mit den Anmeldeinformationen für ein [https://protection.office.com/permissions](https://protection.office.com/permissions) Administratorkonto in Ihrer Microsoft 365- oder Office 365-Organisation an.
+1. Wechseln Sie zu und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Microsoft 365 [https://protection.office.com/permissions](https://protection.office.com/permissions) oder Office 365 an.
 
 2. Wählen Sie **auf der** Seite Berechtigungen die **Rollengruppe eDiscovery-Manager** aus.
 
@@ -80,7 +80,7 @@ Führen Sie die folgenden Schritte aus, um der Rollengruppe eDiscovery Manager B
 
 Die Rollengruppe eDiscovery Manager besteht aus zwei Untergruppen. Der Unterschied zwischen diesen Untergruppen basiert auf dem Bereich.
 
-- **eDiscovery-Manager:** Kann die von ihnen erstellten Core eDiscovery-Fälle anzeigen und verwalten oder mitglied sein. Wenn ein anderer eDiscovery-Manager einen Fall erstellt, aber keinen zweiten eDiscovery-Manager als Mitglied dieses Falls hinzu fügt, kann der zweite eDiscovery-Manager den Fall nicht auf der Seite Core eDiscovery im Compliance Center anzeigen oder öffnen. Im Allgemeinen können die meisten Personen in Ihrer Organisation der Untergruppe eDiscovery Manager hinzugefügt werden.
+- **eDiscovery Manager**: Kann die von ihnen erstellten Core eDiscovery-Fälle anzeigen und verwalten. Wenn ein anderer eDiscovery-Manager einen Fall erstellt, aber keinen zweiten eDiscovery-Manager als Mitglied dieses Falls hinzu fügt, kann der zweite eDiscovery-Manager den Fall nicht auf der Seite Core eDiscovery im Compliance Center anzeigen oder öffnen. Im Allgemeinen können die meisten Personen in Ihrer Organisation der Untergruppe eDiscovery Manager hinzugefügt werden.
 
 - **eDiscovery-Administrator:** Kann alle Fallverwaltungsaufgaben ausführen, die ein eDiscovery-Manager ausführen kann. Außerdem kann ein eDiscovery-Administrator Folgendes:
 
@@ -100,31 +100,31 @@ Im nächsten Schritt erstellen Sie einen Fall und beginnen mit core eDiscovery. 
 
 1. Wechseln Sie zu, und melden Sie sich mit den Anmeldeinformationen für ein Benutzerkonto an, dem die entsprechenden [https://compliance.microsoft.com](https://compliance.microsoft.com) eDiscovery-Berechtigungen zugewiesen wurden. Mitglieder der Rollengruppe Organisationsverwaltung können auch Core eDiscovery-Fälle erstellen.
 
-2. Klicken Sie im linken Navigationsbereich des Microsoft 365 Compliance Centers auf Alle **anzeigen,** und klicken Sie dann auf **eDiscovery > Core**.
+2. Klicken Sie im linken Navigationsbereich Microsoft 365 Compliance Center auf Alle **anzeigen,** und klicken Sie dann auf **eDiscovery > Core**.
 
 3. Klicken Sie **auf der Seite Core eDiscovery** auf Fall **erstellen**.
 
-4. Geben Sie **auf der** Seite Flyout für neue Fälle dem Fall einen Namen (erforderlich) zu, und geben Sie dann eine optionale Fallnummer und Beschreibung ein. Der Fallname muss in Ihrer Organisation eindeutig sein.
+4. Geben Sie **auf der** Seite Flyout für neue Fälle dem Fall einen Namen (erforderlich) zu, und geben Sie dann eine optionale Beschreibung ein. Der Fallname muss in Ihrer Organisation eindeutig sein.
 
 5. Klicken **Sie auf Speichern,** um den Fall zu erstellen.
 
-   Der neue Fall wird erstellt und auf der Seite Core eDiscovery angezeigt. Möglicherweise müssen Sie auf **Aktualisieren klicken,** um den neuen Fall anzeigen zu können. 
+   Der neue Fall wird erstellt und auf der Seite Core eDiscovery angezeigt. Möglicherweise müssen Sie auf **Aktualisieren klicken,** um den neuen Fall anzeigen zu können.
 
 ## <a name="step-4-optional-add-members-to-a-core-ediscovery-case"></a>Schritt 4 (optional): Hinzufügen von Mitgliedern zu einem Core eDiscovery-Fall
 
-Wenn Sie einen Fall in Schritt 3 erstellen und die einzige Person sind, die den Fall verwendet, müssen Sie diesen Schritt nicht ausführen. Sie können den Fall verwenden, um eDiscovery-Halteverbote zu erstellen, nach Inhalten zu suchen oder Suchergebnisse zu exportieren. Führen Sie diesen Schritt aus, wenn Sie anderen Benutzern (oder Rollengruppen) Zugriff auf den Fall ermöglichen möchten.
+Wenn Sie einen Fall in Schritt 3 erstellen und die einzige Person sind, die den Fall verwendet, müssen Sie diesen Schritt nicht ausführen. Sie können den Fall verwenden, um eDiscovery-Halteverbote zu erstellen, nach Inhalten zu suchen und Suchergebnisse zu exportieren. Führen Sie diesen Schritt aus, wenn Sie anderen Benutzern (oder Rollengruppen) Zugriff auf den Fall ermöglichen möchten.
 
-1. Klicken Sie auf der Seite **Core eDiscovery** im Microsoft 365 Compliance Center auf den Namen des Falls, dem Sie Mitglieder hinzufügen möchten.
+1. Klicken Sie auf der Seite Core **eDiscovery** im Microsoft 365 Compliance Center auf den Namen des Falls, dem Sie Mitglieder hinzufügen möchten.
 
-2. Klicken Sie **auf der Seite** Flyout für diesen Fall verwalten unter Mitglieder **verwalten** auf **Hinzufügen,** um dem Fall Mitglieder hinzuzufügen. 
+2. Wählen Sie auf der Homepage der Fall die **Registerkarte Einstellungen** aus, und wählen Sie dann Access **& aus.**
 
-    Sie können auch rollengruppe als Mitglieder eines Falls hinzufügen. Klicken **Sie unter Verwalten von Rollengruppen** auf **Hinzufügen.** Sie können nur die Rollengruppen, in der Sie Mitglied sind, einem Fall zuweisen. Das liegt daran, dass Rollengruppen steuern, wer Einem eDiscovery-Fall Mitglieder zuweisen kann.
+3. Klicken Sie **auf & Zugriffsberechtigungen-Flyout** unter **Mitglieder** auf **Hinzufügen,** um dem Fall Mitglieder hinzuzufügen.
 
-3. Klicken Sie in der Liste der Personen oder Rollengruppen, die als Mitglieder des Falls hinzugefügt werden können, auf das Kontrollkästchen neben den Namen der Personen (oder Rollengruppen), die Sie hinzufügen möchten. Wenn Sie über eine große Liste von Personen  verfügen, die als Mitglieder hinzugefügt werden können, verwenden Sie das Suchfeld, um nach einer bestimmten Person in der Liste zu suchen.
+    Sie können auch Rollengruppen als Mitglieder eines Falls hinzufügen. Klicken **Sie unter Rollengruppen** auf **Hinzufügen**. Sie können nur die Rollengruppen, in der Sie Mitglied sind, einem Fall zuweisen. Das liegt daran, dass Rollengruppen steuern, wer Einem eDiscovery-Fall Mitglieder zuweisen kann.
+
+4. Klicken Sie in der Liste der Personen oder Rollengruppen, die als Mitglieder des Falls hinzugefügt werden können, links neben dem Namen der Personen (oder Rollengruppen), die Sie hinzufügen möchten. Wenn Sie über eine große Liste von Personen oder Rollengruppen verfügen, die als Mitglieder hinzugefügt werden können, verwenden Sie das Suchfeld, um nach einer bestimmten Person oder Rollengruppe in der Liste zu suchen. 
   
-4. Nachdem Sie die Personen oder Rollengruppen ausgewählt haben, die als Mitglieder des Falls hinzugefügt werden, klicken Sie auf **Hinzufügen.**
-
-5. Klicken **Sie auf Speichern,** um die neue Liste der Fallmitglieder zu speichern.
+5. Nachdem Sie die Personen oder Rollengruppen ausgewählt haben, die als Mitglieder des Falls hinzugefügt werden, klicken Sie auf **Speichern,** um die neuen Mitglieder oder Rollengruppen zu speichern.
 
 ## <a name="explore-the-core-ediscovery-workflow"></a>Erkunden des Core eDiscovery-Workflows
 
@@ -132,7 +132,7 @@ Um Sie mit der Verwendung von eDiscovery zu beginnen, finden Sie hier einen einf
 
 ![Zentraler eDiscovery-Workflow](../media/CoreEdiscoveryWorkflow.png)
 
-1. **[Erstellen eines eDiscovery-Halteraums](create-ediscovery-holds.md)**. Der erste Schritt nach dem Erstellen eines Falls besteht im Platzieren eines Halteraums (auch *als eDiscovery-Halteraum* bezeichnet) für die Inhaltsorte der Personen, die an Ihrer Untersuchung interessiert sind. Zu den Inhaltsspeicherorten gehören #A0, #A1, #A1 sowie die Postfächer und Websites, die Microsoft Teams und Office 365-Gruppen zugeordnet sind. Obwohl dieser Schritt optional ist, werden beim Erstellen eines eDiscovery-Halteraums Inhalte beibehalten, die für den Fall während der Untersuchung relevant sein können. Beim Erstellen eines eDiscovery-Halteraums können Sie alle Inhalte an bestimmten Inhaltsstandorten beibehalten oder einen abfragebasierten Halteraum erstellen, um nur den Inhalt zu erhalten, der einer Halteabfrage entspricht. Neben dem Beibehalten von Inhalten besteht ein weiterer guter Grund zum Erstellen von eDiscovery-Speichern in der schnellen Suche nach den Speicherorten im Haltespeicherort (anstatt jeden zu durchsuchende Speicherort auszuwählen), wenn Sie im nächsten Schritt Suchen erstellen und ausführen. Nachdem Sie ihre Untersuchung abgeschlossen haben, können Sie alle von Ihnen erstellten Halteschleifen los.
+1. **[Erstellen eines eDiscovery-Halteraums](create-ediscovery-holds.md)**. Der erste Schritt nach dem Erstellen eines Falls besteht im Platzieren eines Halteraums (auch *als eDiscovery-Halteraum* bezeichnet) für die Inhaltsorte der Personen, die an Ihrer Untersuchung interessiert sind. Inhaltsspeicherorte umfassen Exchange Postfächer, SharePoint Websites, OneDrive Konten und die Postfächer und Websites, die Microsoft Teams und Office 365 zugeordnet sind. Obwohl dieser Schritt optional ist, werden beim Erstellen eines eDiscovery-Halteraums Inhalte beibehalten, die für den Fall während der Untersuchung relevant sein können. Beim Erstellen eines eDiscovery-Halteraums können Sie alle Inhalte an bestimmten Inhaltsstandorten beibehalten oder einen abfragebasierten Halteraum erstellen, um nur den Inhalt zu erhalten, der einer Halteabfrage entspricht. Neben dem Beibehalten von Inhalten besteht ein weiterer guter Grund zum Erstellen von eDiscovery-Speichern in der schnellen Suche nach den Speicherorten im Haltespeicherort (anstatt jeden zu durchsuchende Speicherort auszuwählen), wenn Sie im nächsten Schritt Suchen erstellen und ausführen. Nachdem Sie ihre Untersuchung abgeschlossen haben, können Sie alle von Ihnen erstellten Halteschleifen los.
 
 2. **[Suchen nach Inhalten](search-for-content-in-core-ediscovery.md)**. Nachdem Sie eDiscovery-Halteplätze erstellt haben, verwenden Sie das integrierte Suchtool, um die Speicherorte im Halteraum zu durchsuchen. Sie können auch andere Inhaltsspeicherorte nach Daten durchsuchen, die für den Fall relevant sein können. Sie können verschiedene Suchbegriffe erstellen und ausführen, die dem Fall zugeordnet sind. Sie verwenden Schlüsselwörter, Eigenschaften [](keyword-queries-and-search-conditions.md) und Bedingungen, um Suchabfragen zu erstellen, die Suchergebnisse mit den Daten zurückgeben, die für den Fall am ehesten relevant sind. Sie können auch Folgendes tun:
 
@@ -142,4 +142,4 @@ Um Sie mit der Verwendung von eDiscovery zu beginnen, finden Sie hier einen einf
 
    - Überarbeiten Sie eine Abfrage, und führen Sie die Suche erneut aus.
 
-3. **[Exportieren und Herunterladen von Suchergebnissen](export-content-in-core-ediscovery.md)**. Nachdem Sie Daten gesucht und gefunden haben, die für Ihre Untersuchung relevant sind, können Sie sie aus Office 365 zur Überprüfung durch Personen außerhalb des Untersuchungsteams exportieren. Das Exportieren von Daten ist ein Zwei-Schritt-Prozess. Der erste Schritt besteht im Exportieren der Ergebnisse einer Suche im Fall aus Office 365. Dazu kopieren Sie die Ergebnisse einer Suche an einen von Microsoft bereitgestellten Azure Storage-Speicherort. Im nächsten Schritt verwenden Sie das eDiscovery-Export-Tool, um die Inhalte auf einen lokalen Computer herunterzuladen. Zusätzlich zu den exportierten Datendateien enthält der Inhalt des Exportpakets auch einen Exportbericht, einen Zusammenfassenden Bericht und einen Fehlerbericht.
+3. **[Exportieren und Herunterladen von Suchergebnissen](export-content-in-core-ediscovery.md)**. Nachdem Sie Daten gesucht und gefunden haben, die für Ihre Untersuchung relevant sind, können Sie sie aus Office 365 zur Überprüfung durch Personen außerhalb des Untersuchungsteams exportieren. Das Exportieren von Daten ist ein Zwei-Schritt-Prozess. Der erste Schritt besteht im Exportieren der Ergebnisse einer Suche im Fall aus Office 365. Dazu werden die Ergebnisse einer Suche an einen von Microsoft bereitgestellten Speicherort Azure Storage kopiert. Im nächsten Schritt verwenden Sie das eDiscovery-Export-Tool, um die Inhalte auf einen lokalen Computer herunterzuladen. Zusätzlich zu den exportierten Datendateien enthält der Inhalt des Exportpakets auch einen Exportbericht, einen Zusammenfassenden Bericht und einen Fehlerbericht.

