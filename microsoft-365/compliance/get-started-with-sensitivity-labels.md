@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sind Sie bereit für die Bereitstellung von Vertraulichkeitsbezeichnungen, um die Daten Ihrer Organisation zu schützen, aber nicht sicher, wo Sie beginnen sollten? Hier finden Sie einige praktische Anleitungen, die Ihnen auf dem Weg zu Bezeichnungen helfen.
-ms.openlocfilehash: 08ecf97e3cb45896390c3dac9074c54a2b0bbe96
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 2e757f7f07dbb911a8d89890b1f1cce80d7247b5
+ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994772"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52302112"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Erste Schritte mit Vertraulichkeitsbezeichnungen
 
@@ -97,7 +97,10 @@ In allen Szenarien müssen Sie [Vertraulichkeitsbezeichnungen und deren Richtlin
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Dokumentation für Endbenutzer zu Vertraulichkeitsbezeichnungen
 
-Die effektivste Dokumentation für Endbenutzer sind maßgeschneiderte Anleitungen und Anweisungen, die Sie für die von Ihnen ausgewählten Bezeichnungsnamen und -konfigurationen bereitstellen. Für integrierte Bezeichnungen können Sie die Einstellung für die Bezeichnungsrichtlinie **Benutzern einen Link zu einer benutzerdefinierten Hilfeseite** verwenden, um einen internen Link für diese Dokumentation anzugeben. Benutzer können dann ganz einfach darauf zugreifen, indem sie **Weitere Informationen** auf der Schaltfläche **Vertraulichkeit** im Office-Menüband für Word, PowerPoint, Excel und Outlook auswählen.
+Die effektivste Dokumentation für Endbenutzer sind maßgeschneiderte Anleitungen und Anweisungen, die Sie für die von Ihnen ausgewählten Bezeichnungsnamen und -konfigurationen bereitstellen. Sie können die Einstellung für die Bezeichnungsrichtlinie **Benutzern einen Link zu einer benutzerdefinierten Hilfeseite** verwenden, um einen internen Link für diese Dokumentation anzugeben. Benutzer können dann darauf ganz einfach mittels der Schaltfläche **Vertraulichkeit** zugreifen:
+
+- Weitere Informationen zur integrierten Beschriftung: Menüoption **Weitere Informationen**.
+- Für den einheitlichen Bezeichnungs-Assistenten von Azure Information Protection: Menüoption **Hilfe und Feedback** > Link **Weitere Informationen** im Dialogfeld "Microsoft Azure Information Protection".
 
 Für Hilfe beim Schreiben Ihrer benutzerdefinierten Dokumentation, lesen Sie den folgenden Blogbeitrag für ein Downloadpaket, mit dem Sie Benutzer schulen und die Einführung vorantreiben können: [Endbenutzertraining in Vertraulichkeitsbezeichnungen in M365 – Wie Sie Ihre Einführung beschleunigen können](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880). 
 
