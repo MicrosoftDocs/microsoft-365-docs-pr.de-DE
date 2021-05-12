@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
 description: Verwenden Sie eDiscovery-Tools in Microsoft 365, um nach Teams-Chatdaten für lokale Benutzer in einer hybriden Exchange-Bereitstellung zu suchen und diese zu exportieren.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a5053eb54b59d55c428290987bcc8b2a8ce26b5b
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: ab59c179b62903dd5f1ddd9b718f81a1ac78923a
+ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471024"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52311801"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Suche nach Teams-Chatdaten für lokale Benutzer
 
@@ -40,7 +40,7 @@ Hier sind die Anforderungen und Einschränkungen für das Aktivieren von cloudba
 - Im cloudbasierten Speicherbereich werden nur die Teams-Chatdaten im Zusammenhang mit einem lokalen Benutzer gespeichert. Ein lokaler Benutzer kann in keiner Weise auf diesen Speicherbereich zugreifen.
 
 > [!NOTE]
-> Kanalunterhaltungen eines Teams werden immer in dem cloudbasierten Postfach gespeichert, das dem Team zugeordnet ist. Das bedeutet, das Sie nach Kanalunterhaltungen suchen können. Weitere Informationen zum Durchsuchen von Unterhaltungen in Teams-Kanälen finden Sie unter [Durchsuchen von Microsoft Teams und Microsoft 365-Gruppen](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
+> Kanalunterhaltungen eines Teams werden immer in dem cloudbasierten Postfach gespeichert, das dem Team zugeordnet ist. Das bedeutet, das Sie nach Kanalunterhaltungen suchen können. Weitere Informationen zum Durchsuchen von Unterhaltungen in Teams-Kanälen finden Sie unter [Durchsuchen von Microsoft Teams und Microsoft 365-Gruppen](content-search-reference.md#searching-microsoft-teams-and-microsoft-365-groups).
   
 ## <a name="how-it-works"></a>Funktionsweise
 
@@ -56,11 +56,11 @@ Zusätzlich zu dieser Funktion können Sie auch eDiscovery-Tools verwenden, um T
 
 Die folgenden Benutzeroberflächenelemente in der Inhaltssuche und im Suchwerkzeug, die mit Core eDiscovery-Fällen im Microsoft 365 Compliance Center verbunden sind:
   
-- Das Kontrollkästchen **Inhalte der Office-App für lokale Benutzer hinzufügen** wird unter **Speicherorte** in der Inhaltssuche angezeigt. Aktivieren Sie dieses Kontrollkästchen, um den Cloud-basierten Speicher für lokale Benutzer in eine Inhaltssuche einzubeziehen.
+- Das Kontrollkästchen **"App-Inhalte für lokale Benutzer hinzufügen"** wird auf der Seite des **Speicherorte**-Assistents im Inhaltssuchtool angezeigt und ist standardmäßig aktiviert. Lassen Sie dieses Kontrollkästchen aktiviert, um den Cloud-basierten Speicher für lokale Benutzer in eine Inhaltssuche einzubeziehen.
 
-    ![Das Kontrollkästchen "Inhalte der Office-App für lokale Benutzer hinzufügen" wird der Benutzeroberfläche der Inhaltssuche hinzugefügt.](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
+    ![Das Kontrollkästchen "Inhalte der Office-App für lokale Benutzer hinzufügen" wird der Benutzeroberfläche der Inhaltssuche hinzugefügt.](../media/EHAMShardCheckBox.png)
   
-- Lokale Benutzer werden in der Auswahl der Inhaltsspeicherorte angezeigt, in der Sie die zu durchsuchenden Benutzerpostfächer auswählen.
+- Sie können nach lokalen Benutzern suchen, wenn Sie bestimmte Benutzer auswählen, nach denen gesucht werden soll.
 
 ## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>Suchen nach Teams-Chatinhalten für lokale Benutzer
 
@@ -68,29 +68,25 @@ Hier erfahren Sie, wie Sie die Inhaltssuche im Microsoft 365 Compliance Center v
   
 1. Gehen Sie im Microsoft 365 Compliance Center auf **Inhaltssuche**.
 
-2. Klicken Sie auf der Registerkarte **Suchen** auf ![Symbol hinzufügen](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Neue Suche**.
+2. Klicken Sie auf der Registerkarte **Suchvorgängen** auf **Neue Suche** und geben Sie der neuen Suche einen Namen.
 
-    Wie bereits erläutert wird das Kontrollkästchen **Inhalte der Office-App für lokale Benutzer hinzufügen** unter **Speicherorte** angezeigt. Es ist standardmäßig aktiviert.
+3. Setzen Sie auf der Seite **Speicherorte** den Schalter für Exchange-Postfächer auf **Ein**. Beachten Sie, dass das Kontrollkästchen **App-Inhalte für lokale Benutzer hinzufügen** angezeigt und standardmäßig aktiviert ist.
 
-3. Erstellen Sie die Schlüsselwortabfrage und fügen Sie der Suchabfrage Bedingungen hinzu, falls notwendig. Wenn Sie nur nach Team-Chatdaten suchen möchten, können Sie die folgende Abfrage im Feld **Schlüsselwort** hinzufügen:
+4. Wenn Sie nach Teams-Inhalten für bestimmte Benutzer suchen möchten, wählen Sie **Benutzer, Gruppen oder Teams auswählen** und dann bestimmte Benutzer aus, die in die Suche einbezogen werden sollen. Andernfalls klicken Sie auf **Weiter**, um nach Teams-Inhalten für alle Benutzer zu suchen, einschließlich lokaler Benutzer
+
+5. Erstellen Sie auf der Seite **Suchbedingungen definieren** eine Schlüsselwortabfrage und fügen Sie der Suchabfrage bei Bedarf Kriterien hinzu. Wenn Sie nur nach Team-Chatdaten suchen möchten, können Sie die folgende Abfrage im Feld **Schlüsselwort** hinzufügen:
 
     ```text
     kind:im AND kind:microsoftteams
     ```
 
-4. An diesem Punkt können Sie unter **Speicherorte** eine der folgenden Optionen auswählen:
+6. Senden Sie die Suche und führen Sie sie aus. Alle Suchergebnisse für lokale Benutzer können wie alle anderen Suchergebnisse in der Vorschau angezeigt werden. Sie können die Suchergebnisse (einschließlich aller Chatdaten von Teams) auch in eine PST-Datei exportieren. Weitere Informationen finden Sie unter:
 
-    - **Alle Speicherorte:** Wählen Sie diese Option, um die Postfächer aller Benutzer in Ihrer Organisation zu durchsuchen. Wenn das Kontrollkästchen aktiviert ist, werden auch alle cloudbasierten Speicher von Teams-Chatdaten für lokale Benutzer durchsucht.
+    - [Erstellen einer Suche](content-search.md)
 
-    - **Bestimmte Speicherorte:** Wählen Sie diese Option aus und klicken Sie dann auf **Modifizieren** \> Wählen Sie Benutzer, Gruppen oder Teams aus, um bestimmte Postfächer zu durchsuchen. Wie zuvor erläutert können Sie mit der Auswahl "Speicherorte" nach Teams-Chatdaten für lokale Benutzer suchen.
+    - [Anzeigen von Suchergebnissen in der Vorschau](preview-ediscovery-search-results.md)
 
-5. Speichern Sie die Suche, und führen Sie sie aus. Alle Suchergebnisse für lokale Benutzer können wie alle anderen Suchergebnisse in der Vorschau angezeigt werden. Sie können die Suchergebnisse (einschließlich aller Chatdaten von Teams) auch in eine PST-Datei exportieren. Weitere Informationen finden Sie unter:
-
-    - [Erstellen einer Suche](content-search.md#create-a-search)
-
-    - [Anzeigen von Suchergebnissen in der Vorschau](content-search.md#preview-search-results)
-
-    - [Exportieren von Inhaltssuchergebnissen ](export-search-results.md)
+    - [Exportieren der Suchergebnisse](export-search-results.md)
 
 ## <a name="using-powershell-to-search-for-teams-chat-data-for-on-premises-users"></a>Verwenden von PowerShell zum Suchen von Teams-Chatdaten für lokale Benutzer
 
@@ -106,13 +102,13 @@ Sie können die Cmdlets **New-ComplianceSearch** und **Set-ComplianceSearch** in
 
     Der Parameter *IncludeUserAppContent* wird verwendet, um den cloudbasierten Speicher für den bzw. die durch den Parameter *ExchangeLocation* angegebenen Benutzer anzugeben. Mit *AllowNotFoundExchangeLocationsEnabled* können Sie den cloudbasierten Speicher nach lokalen Benutzern durchsuchen. Wenn Sie den Wert `$true` für diesen Parameter verwenden, versucht die Suche nicht, das Vorhandensein des Postfachs vor dem Fortfahren zu überprüfen. Dies ist erforderlich, um den cloudbasierten Speicher nach lokalen Benutzern zu durchsuchen, da dieser cloudbasierte Speicher nicht als reguläres cloudbasiertes Postfach aufgelöst wird.
 
-    Im folgenden Beispiel wird im cloudbasierten Speicher von Sara Davis, die ein lokaler Benutzer der Organisation Contoso ist, nach Teams-Chats (Chatnachrichten) gesucht, die das Stichwort "Redstone" enthalten.
+    Im folgenden Beispiel wird im cloudbasierten Speicher von Sara Davis, die ein lokaler Benutzer der Organisation Contoso ist, nach Teams-Chats gesucht, die das Stichwort "Redstone" enthalten.
   
     ```powershell
-    New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND kind:im" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
+    New-ComplianceSearch "Redstone_Search" -ContentMatchQuery "redstone AND (kind:im AND kind:microsoftteams)" -ExchangeLocation sarad@contoso.com -IncludeUserAppContent $true -AllowNotFoundExchangeLocationsEnabled $true  
     ```
 
-   Verwenden Sie nach dem Erstellen einer Suche unbedingt das Cmdlet **Start-ComplianceSearch**, um die Suche auszuführen. 
+   Verwenden Sie nach dem Erstellen einer Suche unbedingt das Cmdlet **Start-ComplianceSearch**, um die Suche auszuführen.
   
 Weitere Informationen über diese Cmdlets finden Sie unter:
   

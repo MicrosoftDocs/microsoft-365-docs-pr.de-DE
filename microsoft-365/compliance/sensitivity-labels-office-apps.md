@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen für IT-Administratoren zur Verwaltung von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobilgeräte und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 55c22c9901f163fdf64e6148d5b2c19e51136bc1
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 2cc1cb494569e054825875a4d0dc67e5c56f8146
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086802"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326618"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -89,7 +89,7 @@ Die aufgelisteten Zahlen sind die minimale Office-Anwendungsversion, die für je
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Benutzern das Zuweisen von Berechtigungen gestatten: <br /> – Nicht weiterleiten](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Ja               |
 |[Benutzern das Zuweisen von Berechtigungen gestatten: <br /> – Nur verschlüsseln](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | 16.48+ | 4.2112.0+  | 4.2112.0+ | Ja |
-|[Von Benutzern fordern, dass sie eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | Rollout: 4.2111+            | Rollout: 4.2111+                | Ja                |
+|[Von Benutzern fordern, dass sie eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Ja                |
 |[Überwachung bezeichnungsbezogener Benutzeraktivitäten](data-classification-activity-explorer.md) | 2011+ | Wird überprüft | Wird überprüft           | Wird überprüft               | Wird überprüft |
 |[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Wird überprüft           | Wird überprüft               | Ja |
 |[Verschiedene Einstellungen für Standardbezeichnungen und obligatorische Bezeichnungen](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Rollout in der Vorschau: [Betakanal](https://office.com/insider)                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | Ja |
@@ -134,7 +134,7 @@ Geben Sie für Microsoft Word 2016, Excel 2016, PowerPoint 2016 und Outlook 2016
 | | | 
 
 
-Stellen Sie diese Einstellung unter Verwendung der Gruppenrichtlinie oder dem [Office-Cloudrichtliniendienst](https://docs.microsoft.com/DeployOffice/overview-office-cloud-policy-service) bereit.
+Stellen Sie diese Einstellung unter Verwendung der Gruppenrichtlinie oder dem [Office-Cloudrichtliniendienst](/DeployOffice/overview-office-cloud-policy-service) bereit.
 
 > [!NOTE]
 > Wenn Sie die Gruppenrichtlinieneinstellung **Verwenden der Vertraulichkeitsfunktion in Office zum Anwenden und Anzeigen von Vertraulichkeitsbezeichnungen** verwenden und diese auf **1** setzen, kann es Situationen geben, in denen der Azure Information Protection-Client in Office-Apps trotzdem noch geladen wird. Das Blockieren des Ladens des Add-Ins in jeder App verhindert dies.
@@ -419,7 +419,7 @@ Um eine andere Standardbezeichnung für Outlook festzulegen, müssen Sie die Bez
 Get-Label | Format-Table -Property DisplayName, Name, Guid
 ````
 
-Wenn Sie eine dieser erweiterten Einstellungen aus einer Bezeichnungsrichtlinie entfernen möchten, verwenden Sie die gleiche AdvancedSettings-Parametersyntax, allerdings mit einem leeren Zeichenfolgenwert (null) an. Zum Beispiel:
+Wenn Sie eine dieser erweiterten Einstellungen aus einer Bezeichnungsrichtlinie entfernen möchten, verwenden Sie die gleiche AdvancedSettings-Parametersyntax, allerdings mit einem leeren Zeichenfolgenwert. Zum Beispiel:
 
 ````powershell
 Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}

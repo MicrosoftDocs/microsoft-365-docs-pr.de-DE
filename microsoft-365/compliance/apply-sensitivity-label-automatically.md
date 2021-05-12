@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 477f176d523fbb458ae266cad98b07a63a10050c
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: d0745ac2e4d5b78b40746fd0593a9af18e691021
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259343"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326830"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -167,7 +167,7 @@ Während der Vorschauphase für diese Option unterstützen die folgenden Apps tr
 
 ### <a name="recommend-that-the-user-applies-a-sensitivity-label"></a>Dem Benutzer wird das Anwenden einer Vertraulichkeitsbezeichnung empfohlen
 
-Wenn Sie es vorziehen, können Sie Ihren Benutzern empfehlen, die Bezeichnung anzuwenden. Mithilfe dieser Option können Ihre Benutzer die Klassifizierung und alle zugehörigen Schutzmaßnahmen akzeptieren oder die Empfehlung zurückweisen, wenn die Bezeichnung für ihre Inhalte ungeeignet ist.
+Wenn Sie es vorziehen, können Sie ihren Benutzern empfehlen, die Bezeichnung anzuwenden. Mit dieser Option können die Benutzer die Klassifizierung und alle zugehörigen Schutzbestimmungen akzeptieren oder die Empfehlung verwerfen, wenn die Bezeichnung für ihren Inhalt nicht geeignet ist.
 
 ![Option zum Empfehlen einer Vertraulichkeitsbezeichnung](../media/Sensitivity-labels-Recommended-label-option.png)
 
@@ -220,7 +220,9 @@ Vergewissern Sie sich, dass Sie die Voraussetzungen kennen, bevor Sie automatisc
 - Eine oder mehrere Vertraulichkeitsbezeichnungen wurden [erstellt und veröffentlicht](create-sensitivity-labels.md) (für mindestens einen Benutzer), den Sie für Ihre Richtlinie zum automatischen Bezeichnen auswählen können. Für diese Bezeichnungen:
     - Es spielt keine Rolle, ob das automatische Bezeichnen in den Bezeichnungseinstellungen der Office-Anwendungen ein- oder ausgeschaltet ist, da diese Bezeichnungseinstellungen die Richtlinien für die automatische Bezeichnung ergänzen, wie in der Einführung erläutert.
     - Wenn die Etiketten, die Sie für die automatische Bezeichung verwenden möchten, für die Verwendung visueller Markierungen (Kopf- und Fußzeilen, Wasserzeichen) konfiguriert sind, beachten Sie, dass diese nicht auf Dokumente angewendet werden.
-    - Wenn die Bezeichnungen [Verschlüsselungen](encryption-sensitivity-labels.md) anwenden, müssen diese für die Einstellung **Jetzt Berechtigungen zuweisen** konfiguriert sein.
+    - Wenn die Bezeichnungen [Verschlüsselung](encryption-sensitivity-labels.md) anwenden:
+        - Wenn die Richtlinie für automatische Beschriftung Speicherorte für SharePoint oder OneDrive enthält, muss die Bezeichnung für die Einstellung als **Jetzt Berechtigungen zuweisen** konfiguriert werden.
+        - Wenn die Richtlinie für automatische Beschriftung nur für Exchange gilt, kann die Bezeichnung als **Jetzt Berechtigungen zuweisen** oder **Benutzer Berechtigungen zuweisen lassen** (für die Optionen "Nicht vorwärts" oder "Nur verschlüsseln") konfiguriert werden.
 
 ### <a name="learn-about-simulation-mode"></a>Informationen zum Simulationsmodus
 

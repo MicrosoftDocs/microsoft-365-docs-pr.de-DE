@@ -501,9 +501,11 @@
       items:
         - name: Übersicht über die Inhaltssuche
           href: search-for-content.md
-        - name: Verwenden der Inhaltssuche
+        - name: Suchen nach Inhalten
           href: content-search.md
           items:
+            - name: Featurereferenz für die Inhaltssuche
+              href: content-search-reference.md
             - name: Stichwortabfragen und Suchbedingungen
               href: keyword-queries-and-search-conditions.md
             - name: Anzeigen einer Vorschau von eDiscovery-Suchergebnissen
@@ -663,32 +665,20 @@
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: Korrektur von Fehlern einzelner Elemente
               href: single-item-error-remediation.md
-        - name: Sammeln von Inhalten für einen Fall (Vorschau)
+        - name: Sammeln von Inhalten für einen Fall
           items:
-            - name: Informationen zu Sammlungen (Vorschau)
+            - name: Informationen zu Sammlungen
               href: collections-overview.md
-            - name: Erstellen einer Entwurfssammlung (Vorschau)
+            - name: Erstellen einer Entwurfssammlung
               href: create-draft-collection.md
-            - name: Festlegen einer Entwurfssammlung auf einen Überprüfungssatz (Vorschau)
+            - name: Festlegen einer Entwurfssammlung auf einen Überprüfungssatz
               href: commit-draft-collection.md
-            - name: Sammlungsstatistiken und -berichte (Vorschau)
+            - name: Sammlungsstatistiken und -berichte
               href: collection-statistics-reports.md
             - name: Erstellen von Suchabfragen für Sammlungen
               href: building-search-queries.md
             - name: Stichwortabfragen und Suchbedingungen
               href: keyword-queries-and-search-conditions.md
-        - name: Sammeln von Daten für einen Fall
-          items:
-            - name: Erstellen einer Suche
-              href: create-search-to-collect-data.md
-            - name: Erstellen von Suchabfragen
-              href: building-search-queries.md
-            - name: Stichwortabfragen und Suchbedingungen
-              href: keyword-queries-and-search-conditions.md
-            - name: Suchstatistiken
-              href: search-statistics-in-advanced-ediscovery.md
-            - name: Hinzufügen von Suchergebnissen zu einem Prüfdateisatz
-              href: add-data-to-review-set.md
         - name: Verwalten von Prüfdateisätzen
           href: managing-review-sets.md
           items:
@@ -840,6 +830,8 @@
       items:
         - name: Informationen zu Compliance-Manager
           href: compliance-manager.md
+        - name: Neuerungen im Compliance-Manager
+          href: compliance-manager-whats-new.md
         - name: Compliance-Manager-Schnellstart
           href: compliance-manager-quickstart.md
         - name: Erste Schritte mit Compliance-Manager
