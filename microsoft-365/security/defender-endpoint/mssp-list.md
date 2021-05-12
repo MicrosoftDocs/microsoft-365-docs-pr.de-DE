@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71db42f4bd651f4e9d4236e1f4d794aeb99dfa9f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 48e45385fb138c19b76dc2d672566cf2ad0fb3cc
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862151"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327298"
 ---
 # <a name="supported-managed-security-service-providers"></a>Unterstützte Anbieter von verwalteten Sicherheitsdienstanbietern
 
@@ -36,15 +36,17 @@ Der Zugriff auf die folgenden verwalteten Sicherheitsdienstanbieter ist über da
 
 Logo |Partnername   | Beschreibung 
 :---|:---|:---
+![Abbildung des Ajas-Logos](images/aujas-logo.png) | [Verwalteter Aujas-MDE-Dienst](https://go.microsoft.com/fwlink/?linkid=2162429) | Aujas cybersecurity bietet 24*7 verwaltete Sicherheitsdienste über das gesamte Unternehmensspektrum, indem Microsoft Defender über seine Cyber Defense Center für Endpunkte verwendet wird.
 ![Abbildung des digitalen BDO-Logos](images/bdo-logo.png)| [BDO Digital](https://go.microsoft.com/fwlink/?linkid=2090394) | Die verwaltete Verteidigung von BDO Digital nutzt bewährte Tools, KI und eigene Sicherheitsexperten für den 24/7/365-Identitätsschutz.
 ![Abbildung des BlueVoyant-Logos](images/bluevoyant-logo.png)| [BlueVoyant](https://go.microsoft.com/fwlink/?linkid=2121401) | MDR für Microsoft Defender for Endpoint bietet Unterstützung bei der Überwachung, Untersuchung und Minderung erweiterter Angriffe auf Endpunkte
 ![Abbildung des Cloud Security Center-Logos](images/cloudsecuritycenter-logo.png)| [Cloud Security Center](https://go.microsoft.com/fwlink/?linkid=2099315) | Das Cloud Security Center von InSpark ist ein 24 x 7 verwalteter Dienst, der Schutz, Erkennung & Reaktionsfunktionen bietet
 ![Abbildung des Cloud-SOC-Logos](images/cloudsoc-logo.png)| [Cloud-SOC](https://go.microsoft.com/fwlink/?linkid=2104265) | Cloud SOC bietet 24/7-Sicherheitsüberwachungsdienste basierend auf der Microsoft-Cloud und hilft Ihnen dabei, Ihre Sicherheitslage kontinuierlich zu verbessern.
 ![Image of CSIS Managed Detection & Response logo](images/csis-logo.png)| [CSIS Managed Detection & Response](https://go.microsoft.com/fwlink/?linkid=2091005) | 24/7-Überwachung und Analyse von Sicherheitswarnungen, die Unternehmen zeigen, was, wann und wie Sicherheitsvorfälle stattgefunden haben
-![Abbildung des Dell Technologies Advanced Threat Protection-Logos](images/dell-logo.png)| [Dell Technologies Advanced Threat Protection](https://go.microsoft.com/fwlink/?linkid=2091004) | Professioneller Überwachungsdienst für böswilliges Verhalten und Anomalien mit 24/7-Funktion
+![Abbildung des Dell Technologies Advanced Threat Protection-Logos](images/dell-logo.png)| [Dell Technologies Advanced Threat Protection](https://go.microsoft.com/fwlink/?linkid=2091004) | Professional überwachungsdienst für bösartiges Verhalten und Anomalien mit 24/7-Funktion
 ![Abbildung des DXC-Managed Endpoint Threat Detection and Response-Logos](images/dxc-logo.png)| [DXC-Managed Endpoint Threat Detection and Response](https://go.microsoft.com/fwlink/?linkid=2090395) | Identifizieren von Endpunktbedrohungen, die herkömmlichen Sicherheitsvorkehrungen ausweichen und diese in Stunden oder Minuten und nicht in Tagen enthalten
 ![Abbildung des eSentire-Protokolls](images/esentire-logo.png) | [eSentire Managed Detection and Response](https://go.microsoft.com/fwlink/?linkid=2154970) | 24 x 7 Bedrohungsuntersuchungen und Reaktionen über Microsoft Defender for Endpoint.
-![Abbildung des NTT-Sicherheitslogos](images/ntt-logo.png)| [NTT Security](https://go.microsoft.com/fwlink/?linkid=2095320) | Der EDR-Dienst von NTT bietet eine 24/7-Sicherheitsüberwachung & Reaktion über Ihren Endpunkt und Ihr Netzwerk hinweg
+![Abbildung des expel-Logos](images/expel-logo.png)| [Expel Managed detection and response for Microsoft Defender Endpoint](https://go.microsoft.com/fwlink/?linkid=2162430) | Expel unterstützt Ihre Sicherheit, indem Sie Sicherheitsrisiken in Microsoft Defender Endpoint erkennen.
+![Abbildung des NTT-Sicherheitslogos](images/ntt-logo.png)| [NTT Security](https://go.microsoft.com/fwlink/?linkid=2095320) | Der ntt-EDR-Dienst bietet eine 24/7-Sicherheitsüberwachung & Reaktion über Ihren Endpunkt und Ihr Netzwerk hinweg
 ![Abbildung des OneVinn-Logos](images/onevinn-logo.png) | [Onevinn MDR](https://go.microsoft.com/fwlink/?linkid=2155203)| 24/7 Verwaltete Erkennung und Reaktion, die auf Microsoft Defender und Azure Sentinel baut und mit Onevinns Threat Intelligence bereichert ist.
 ![Abbildung des Quorum-Cyberlogos](images/quorum-logo.png) | [Quorum Cyber](https://go.microsoft.com/fwlink/?linkid=2155202)| Ein hochmoderner Threat Hunting & Security Engineering Service.
 ![Abbildung des roten Canary-Logos](images/redcanary-logo.png)| [Roter Kanaren](https://go.microsoft.com/fwlink/?linkid=2103852) | Red Canary ist ein Sicherheitsbetriebspartner für moderne Teams, MDR in Minuten bereitgestellt

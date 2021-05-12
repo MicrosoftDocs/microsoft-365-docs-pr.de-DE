@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Erfahren Sie, wie Sie Ihr Unternehmen von Microsoft 365 Business Premium E3 Office 365 verschieben.
-ms.openlocfilehash: f08b054473fdd63ec2372e81c776a1b64f89fe9d
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 990ca8bdae979f1efb8a60a3460add2953a51892
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244834"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327168"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrieren von Office 365 E3 zu Microsoft 365 Business Premium
 
@@ -39,25 +39,24 @@ Die Migration ist einfach: Zuerst wechseln Sie die Lizenzen, und alle Ihre Daten
 
 Diese Tabelle zeigt die Unterschiede zwischen Microsoft 365 Business Premium und Office 365 E3.
 
-| Feature    | Support in Microsoft 365 Business Premium    | Support in Office 365 E3 | 
+| Feature    | Support in Microsoft 365 Business Premium    | Support in Office 365 E3 |
 |:-------|:-----|:-----|
-| **Lokal**        | | | 
-| Office Apps<sup>1</sup>    | Microsoft 365 Apps for Business    | Microsoft 365 Apps for Enterprise | 
-| **Cloud-Produktivitäts-Apps**        | | | 
-| Exchange Online und Outlook    | 50 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online-Archivierung    | 100 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online-Archivierung | 
+| **Lokal**        | | |
+| Office Apps<sup>1</sup>    | Microsoft 365 Apps for Business    | Microsoft 365 Apps for Enterprise |
+| **Cloud-Produktivitäts-Apps**        | | |
+| Exchange Online und Outlook    | 50 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online-Archivierung    | 100 GB Speichergrenzwert pro Postfach und unbegrenzte Exchange Online-Archivierung |
 | Teams    | ![Im Lieferumfang Microsoft 365 Business Premium](../media/check-mark.png)    | ![Enthalten in Office 365 E3](../media/check-mark.png) | 
 | OneDrive for Business    | Speichergrenzwert von 1 TB pro Benutzer    | Unbegrenzt | 
 | Yammer, SharePoint Online, Planner, Stream    | ![Im Lieferumfang Microsoft 365 Business Premium](../media/check-mark.png)    | ![Enthalten in Office 365 E3](../media/check-mark.png) | 
-| StaffHub    | ![Im Lieferumfang Microsoft 365 Business Premium](../media/check-mark.png)    | ![Enthalten in Office 365 E3](../media/check-mark.png) | 
-| MileIQ    | ![Im Lieferumfang Microsoft 365 Business Premium](../media/check-mark.png)    | | 
-| **Bedrohungsschutz**        | | | 
-| Microsoft Defender für Office 365 Plan 1 | ![Im Lieferumfang Microsoft 365 Business Premium](../media/check-mark.png)    | Nicht enthalten, kann aber hinzugefügt werden | 
-| **Identitätsverwaltung**        | | | 
-| Self-Service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure AD multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Im Lieferumfang Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
+| StaffHub    | ![Im Lieferumfang Microsoft 365 Business Premium](../media/check-mark.png)    | ![Enthalten in Office 365 E3](../media/check-mark.png) |
+| **Bedrohungsschutz**        | | |
+| Microsoft Defender für Office 365 Plan 1 | ![Im Lieferumfang Microsoft 365 Business Premium](../media/check-mark.png)    | Nicht enthalten, kann aber hinzugefügt werden |
+| **Identitätsverwaltung**        | | |
+| Self-Service password reset for hybrid Azure Active Directory (Azure AD) accounts, Azure AD multi-factor authentication (MFA), Conditional Access, password writeback for on-premises identities|     ![Im Lieferumfang Microsoft 365 Business Premium](../media/check-mark.png)    |  |
 | **Verwaltung von Geräten und Apps**        | | |
 | Microsoft Intune, Windows AutoPilot|     ![Im Lieferumfang Microsoft 365 Business Premium](../media/check-mark.png)    |  |
 | Aktivierung gemeinsam genutzter Computer|     ![Im Lieferumfang Microsoft 365 Business Premium](../media/check-mark.png)    | ![Enthalten in Office 365 E3](../media/check-mark.png)| 
-| Upgraderechte auf Windows 10 Pro von Win 7/8.1-Pro|     ![Im Lieferumfang Microsoft 365 Business Premium](../media/check-mark.png)    || 
+| Upgraderechte auf Windows 10 Pro von Win 7/8.1-Pro|     ![Im Lieferumfang Microsoft 365 Business Premium](../media/check-mark.png)    ||
 | **Schutz von Daten**        | | |
 |Verhinderung von Datenverlust in Office 365|    ![Im Lieferumfang Microsoft 365 Business Premium](../media/check-mark.png)|![Enthalten in Office 365 E3](../media/check-mark.png)|
 |Azure Information Protection Plan 1, BitLocker Erzwingung|![Im Lieferumfang Microsoft 365 Business Premium](../media/check-mark.png)||
@@ -96,29 +95,28 @@ Wenn Sie alle Benutzer in Ihrer Organisation auf Microsoft 365 Business Premium 
 Sie können die folgenden Schritte auch auf der Seite Geräte ausführen:
   
 1. Wechseln Sie im Admin Center im  linken Navigations navi zu \> **Geräterichtlinien**.
-    
+
 2. Wählen Sie **auf der Seite** Geräterichtlinien die Option Hinzufügen **aus.**
-    
-3. Geben Sie **der Richtlinie im** Bereich Richtlinie hinzufügen  einen Namen zu, und wählen Sie dann in der Dropdownliste einen Richtlinientyp aus. 
-    
+
+3. Geben Sie **der Richtlinie im** Bereich Richtlinie hinzufügen  einen Namen zu, und wählen Sie dann in der Dropdownliste einen Richtlinientyp aus.
+
      Sie können Anwendungsrichtlinien für den Schutz von Dateien auf Android- und iPhone-Geräten sowie Windows 10 einrichten und Gerätekonfigurationsrichtlinien für Unternehmenseigene Windows 10 einrichten. Weitere Informationen finden Sie unter den folgenden Links:
-    
+
   - [Festlegen von App-Schutzeinstellungen für Android- oder iOS-Geräte](app-protection-settings-for-android-and-ios.md)
-    
+
   - [Festlegen von Anwendungsschutzeinstellungen für Windows 10 Geräte](protection-settings-for-windows-10-devices.md)
-    
+
   - [Festlegen von Geräteschutzeinstellungen für Windows 10 PCs](protection-settings-for-windows-10-pcs.md)
   
 4. Nachdem Sie Richtlinien eingerichtet haben, können Sie und Ihre Mitarbeiter Geräte einrichten:
-    
+
   - Unter [Einrichten von Windows für Microsoft 365 Business Premium finden](set-up-windows-devices.md) Sie Schritte für Windows Geräte. 
-    
+
   - Unter [Einrichten mobiler Geräte für Microsoft 365 Business Premium finden Sie](set-up-mobile-devices.md) Schritte für Android-Smartphones und iPhones. 
   
 ### <a name="mailbox-size"></a>Postfachgröße
 
 Microsoft 365 Business Premium hat einen Speichergrenzwert von 50 GB, während er Exchange Online Plan 1 verwendet. Bei der Migration zu Microsoft 365 Business Premium wird empfohlen, diesem Benutzer einen Exchange Online Plan 2 zuzuordnen und den Exchange Online Plan 1 zu entfernen, da beides nicht möglich ist.
-
 
 ### <a name="threat-protection"></a>Bedrohungsschutz
 

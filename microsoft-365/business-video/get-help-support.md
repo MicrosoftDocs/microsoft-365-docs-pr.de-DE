@@ -10,7 +10,6 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
-- M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
@@ -20,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie in Microsoft 365 Business Premium Hilfe oder Support für Administratoren erhalten.
-ms.openlocfilehash: 5494b51ba59304de8dde71c9c7fa0434ec5dd0c8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
-ms.translationtype: HT
+ms.openlocfilehash: 8db4f7675f96bac2157c9c0f93ab506c8a39e1bb
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244932"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327186"
 ---
 # <a name="get-support"></a>Anfordern von Support
 
@@ -44,7 +43,7 @@ Beginnen Sie mit [Überprüfen Sie den aktuellen Status der Dienste](../enterpri
 
 Sparen Sie Zeit, indem Sie Ihre Service-Anfrage online starten. Wir helfen Ihnen, eine Lösung zu finden oder verbinden Sie mit dem technischen Support.
 
-1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Wenn die Meldung, dass Sie keine Berechtigung haben, auf diese Seite zuzugreifen oder diese Aktion auszuführen, angezeigt wird, sind Sie kein Administrator. [Wer verfügt über Administratorberechtigungen in meinem Unternehmen?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview?#who-has-admin-permissions-in-my-business)
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Wenn Sie eine Meldung erhalten, dass Sie nicht berechtigt sind, auf diese Seite zu zugreifen oder diese Aktion durchzuführen, sind Sie kein Administrator. (Weitere Informationen finden Sie unter Wer hat Administratorberechtigungen in meinem [Unternehmen?](admin-center-overview.md#who-has-admin-permissions-in-my-business).)
 
 2. Wählen Sie die Schaltfläche **Benötigen Sie Hilfe?** aus.
 
@@ -216,7 +215,7 @@ Die Rolle des 21vianet-Supports besteht darin:
 
 ## <a name="feature-availability"></a>Verfügbarkeit von Funktionen
 
-Weitere Informationen zur Verfügbarkeit von Funktionen in Office 365-Plänen finden Sie unter [Office 365-Dienstbeschreibung](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
+Informationen zur Verfügbarkeit von Features in Office 365-Plänen finden Sie unter [Office 365 Service Description](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
 
 ## <a name="follow-us-on-wechat"></a>Folgen Sie uns auf WeChat
 

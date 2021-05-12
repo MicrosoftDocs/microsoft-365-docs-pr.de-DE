@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über E-Mail- und Dateieigenschaften, die Sie mithilfe der eDiscovery-Suchtools in Microsoft 365.
-ms.openlocfilehash: a9a178eb9b139cacd803c8ab168b3143b75b5f92
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: cbd3969e9936df3dc82c364d804dbcd366b0e07a
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311848"
+ms.locfileid: "52326594"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Schlüsselwortabfragen und Suchbedingungen für eDiscovery
 
@@ -74,7 +74,7 @@ In der folgenden Tabelle sind **E-Mail-Nachrichteneigenschaften** aufgeführt, d
 |Empfangen|Das Datum, an dem eine E-Mail-Nachricht von einem Empfänger empfangen wurde.|`received:04/15/2016`  <br/> `received>=01/01/2016 AND received<=03/31/2016`|Nachrichten, die am 15. April 2016 empfangen wurden. Im zweiten Beispiel werden alle Nachrichten zurückgegeben, die zwischen dem 1. Januar 2016 und dem 31. März 2016 empfangen wurden.|
 |Empfänger|Alle Empfängerfelder in einer E-Mail-Nachricht. Diese Felder sind An, Cc und Bcc.<sup>1</sup>|`recipients:garthf@contoso.com`  <br/> `recipients:contoso.com`|Nachrichten, die an garthf@contoso.com gesendet wurden. Im zweiten Beispiel werden Nachrichten zurückgegeben, die an einen Empfänger in der Domäne contoso.com gesendet wurden.|
 |Gesendet|Das Datum, an dem eine E-Mail vom Absender gesendet wurde.|`sent:07/01/2016`  <br/> `sent>=06/01/2016 AND sent<=07/01/2016`|Nachrichten, die am angegebenen Tag oder im angegebenen Datumsbereich gesendet wurden.|
-|Größe|Die Größe eines Elements in Byte.|`size>26214400`  <br/> `size:1..1048567`|Nachrichten größer als 25?? MB. Im zweiten Beispiel werden Nachrichten von 1 bis 1.048.567 Byte (1 MB) zurückgegeben.|
+|Größe|Die Größe eines Elements in Byte.|`size>26214400`  <br/> `size:1..1048567`|Nachrichten mit mehr als 25 MB. Im zweiten Beispiel werden Nachrichten von 1 bis 1.048.567 Byte (1 MB) zurückgegeben.|
 |Betreff|Der Text in der Betreffzeile einer E-Mail.  <br/> **Hinweis:** Wenn Sie die Subject-Eigenschaft in einer Abfrage verwenden, gibt die Suche alle Nachrichten zurück, in denen die Betreffzeile den gesuchten Text enthält. Mit anderen Worten, die Abfrage gibt nicht nur nachrichten zurück, die eine genaue Übereinstimmung haben. Wenn Sie z. B. nach suchen, enthalten Ihre Ergebnisse Nachrichten mit dem Betreff  `subject:"Quarterly Financials"` "Quarterly Financials 2018".|`subject:"Quarterly Financials"`  <br/> `subject:northwind`|Nachrichten, die den Ausdruck "Quarterly Financials" an einer beliebigen Stelle im Text der Betreffzeile enthalten. Im zweiten Beispiel werden alle Nachrichten mit dem Wort "northwind" in der Betreffzeile zurückgegeben.|
 |An|Das Feld „An" einer E-Mail-Nachricht.<sup>1</sup>|`to:annb@contoso.com`  <br/> `to:annb ` <br/> `to:"Ann Beebe"`|In allen Beispielen wegen Nachrichten zurückgegeben, in deren Zeile "An" der Name "Ann Beebe" angegeben ist.|
 |||||
@@ -125,7 +125,7 @@ In der folgenden Tabelle sind die Kontakteigenschaften aufgeführt, die indizier
 > [!TIP]
 > Verwenden Sie doppelte Anführungszeichen (" ") zum Suchen nach Werten, die Leerzeichen oder Sonderzeichen enthalten. Beispiel: `businessaddress:"123 Main Street"` .
   
-| Eigenschaft | Beschreibung der Eigenschaft |
+|Eigenschaft |Beschreibung der Eigenschaft |
 |:-----|:-----|
 |BusinessAddress|Die Adresse in der **Business Address-Eigenschaft.** Die Eigenschaft wird auch als **Arbeitsadresse** auf der Seite "Kontakteigenschaften" bezeichnet.|
 |BusinessPhone|Die Telefonnummer in einer der Eigenschaften **Telefon** Geschäftsnummer.|
@@ -173,12 +173,12 @@ Weitere Informationen zum Erstellen von Abfragen mithilfe der Eigenschaft finden
 
 Boolesche Suchoperatoren wie **AND**, **OR** und **NOT** helfen Ihnen, präzisere Suchbegriffe zu definieren, indem Sie bestimmte Wörter in die Suchabfrage ein- oder ausschließen. Andere Techniken, z. B. die Verwendung von Eigenschaftsoperatoren (z. B. oder ), Anführungszeichen, Klammern und Platzhalter helfen Ihnen, eine `>=` `..` Suchabfrage zu verfeinern. In der folgenden Tabelle sind die Operatoren aufgeführt, die Sie zum Ein- oder Erweitern von Suchergebnissen verwenden können. 
   
-| Operator | Verwendung | Beschreibung |
+|Operator |Verwendung |Beschreibung |
 |:-----|:-----|:-----|
 |AND|Wort1 AND Wort2|Gibt Elemente zurück, die alle angegebenen Schlüsselwörter oder Ausdrücke  `property:value` enthalten. Würde beispielsweise alle Nachrichten zurückgeben, die von Ann Beebe gesendet wurden, die das Wort  `from:"Ann Beebe" AND subject:northwind` "Northwind" in der Betreffzeile enthielten. <sup>2</sup>|
 |+|keyword1 + keyword2 + keyword3|Gibt die Elemente zurück, die  *entweder*  `keyword2` oder  `keyword3` *enthalten und*  , die ebenfalls  `keyword1` enthalten. Damit entspricht dieses Beispiel der Abfrage  `(keyword2 OR keyword3) AND keyword1`.  <br/> Die Abfrage (mit einem Leerzeichen hinter dem Symbol) ist nicht identisch mit der Verwendung des `keyword1 + keyword2` **+** **AND-Operators.** Diese Abfrage wäre gleichbedeutend mit  `"keyword1 + keyword2"` und gibt Elemente mit dem exakten Ausdruck  `"keyword1 + keyword2"` zurück.|
 |OR|Wort1 OR Wort2|Gibt Elemente zurück, die eines oder mehrere der angegebenen Schlüsselwörter oder Ausdrücke  `property:value` enthalten. <sup>2</sup>|
-|NOT|Wort1 NOT Wort2  <br/> NOT Von:"Ann Beebe"  <br/> NOT kind:im|Schließt Elemente aus, die durch ein Schlüsselwort oder einen Ausdruck angegeben  `property:value` werden. Im zweiten Beispiel werden von Ann Beebe gesendete Nachrichten ausgeschlossen. Im dritten Beispiel werden Chatunterhaltungen ausgeschlossen, z. B. Skype for Business Unterhaltungen, die im Postfachordner Unterhaltungsverlauf gespeichert werden. <sup>2</sup>|
+|NOT|Wort1 NOT Wort2  <br/> NOT Von:"Ann Beebe"  <br/> NOT kind:im|Schließt Elemente aus, die durch ein Schlüsselwort oder einen Ausdruck angegeben  `property:value` werden. Im zweiten Beispiel werden von Ann Beebe gesendete Nachrichten ausgeschlossen. Im dritten Beispiel werden Chatunterhaltungen ausgeschlossen, z. B. Skype for Business-Unterhaltungen, die im Postfachordner Unterhaltungsverlauf gespeichert werden. <sup>2</sup>|
 |-|Wort1 - Wort2|Identisch mit dem Operator **NOT**. Daher gibt diese Abfrage Elemente zurück, die Elemente enthalten und  `keyword1` ausschließen würden, die  `keyword2` enthalten.|
 |NEAR|Wort1 NEAR(n) Wort2|Gibt Elemente mit Wörtern zurück, die sich nah sind, wobei "n" der Anzahl der Wörter entspricht, die den Abstand zwischen den gesuchten Wörtern darstellen. Gibt beispielsweise jedes Element zurück, bei dem das Wort "worst" innerhalb von `best NEAR(5) worst` fünf Wörtern von "best" liegt. Wenn keine Anzahl angegeben wird, wird der Standardabstand von 8 Wörtern verwendet. <sup>2</sup>|
 |:|Eigenschaftswert|Der Doppelpunkt (:) in der  `property:value` Syntax gibt an, dass der Wert der gesuchten Eigenschaft den angegebenen Wert enthält. Gibt z.  `recipients:garthf@contoso.com` B. alle Nachrichten zurück, die an garthf@contoso.com.|
@@ -219,9 +219,9 @@ Erstellen Sie eine Bedingung mit allgemeinen Eigenschaften beim Durchsuchen von 
 | Bedingung | Beschreibung |
 |:-----|:-----|
 |Datum|Bei E-Mails: Das Datum, an dem die Nachricht vom Empfänger empfangen oder vom Absender gesendet wurde.   Für Dokumente das Datum, an dem ein Dokument zuletzt geändert wurde.|
-|Absender/Autor|Bei E-Mails: Die Person, die eine Nachricht gesendet hat.  Bei Dokumenten wird die im Feld Autor aus den Dokumenten Office zitiert. Sie können mehrere Namen eingeben, getrennt durch Kommas. Zwei oder mehr Werte werden logisch durch den **OR-Operator** verbunden.|
+|Absender/Autor|Bei E-Mails: Die Person, die eine Nachricht gesendet hat.  Bei Dokumenten wird die im Feld Autor aus Office-Dokumenten zitierte Person verwendet. Sie können mehrere Namen eingeben, getrennt durch Kommas. Zwei oder mehr Werte werden logisch durch den **OR-Operator** verbunden.|
 |Größe (in Bytes)|Für E-Mails und Dokumente die Größe des Elements (in Bytes).|
-|Betreff/Titel|Bei E-Mails: Der Text in der Betreffzeile einer Nachricht.   Bei Dokumenten der Titel des Dokuments. Wie bereits erläutert, handelt es sich bei der Title-Eigenschaft um Metadaten, die in Microsoft Office angegeben sind. Sie können den Namen von mehreren Betreff/Titeln eingeben, getrennt durch Kommas. Zwei oder mehr Werte werden logisch durch den **OR-Operator** verbunden.|
+|Betreff/Titel|Bei E-Mails: Der Text in der Betreffzeile einer Nachricht.   Bei Dokumenten der Titel des Dokuments. Wie bereits erläutert, handelt es sich bei der Title-Eigenschaft um Metadaten, die in Microsoft Office sind. Sie können den Namen von mehreren Betreff/Titeln eingeben, getrennt durch Kommas. Zwei oder mehr Werte werden logisch durch den **OR-Operator** verbunden.|
 |Aufbewahrungsbezeichnung|Für E-Mails und Dokumente Aufbewahrungsbezeichnungen, die Nachrichten und Dokumenten automatisch durch Richtlinien für automatische Bezeichnungen oder Aufbewahrungsbezeichnungen zugewiesen wurden, die von Benutzern manuell zugewiesen wurden. Aufbewahrungsbezeichnungen werden verwendet, um E-Mails und Dokumente für die Informationsverwaltung zu klassifizieren und Aufbewahrungsregeln basierend auf den von der Bezeichnung definierten Einstellungen zu erzwingen. Sie können einen Teil des Aufbewahrungsbezeichnungsnamens eingeben und einen Platzhalter verwenden oder den vollständigen Bezeichnungsnamen eingeben. Weitere Informationen zu Aufbewahrungsbezeichnungen finden Sie [unter Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen.](retention.md)|
 |||
   
@@ -233,7 +233,7 @@ Erstellen Sie eine Bedingung mithilfe von E-Mail-Eigenschaften beim Durchsuchen 
 |:-----|:-----|
 |Nachrichten art| Der Nachrichtentyp, nach dem gesucht wird. Dies ist die gleiche Eigenschaft wie die E-Mail-Eigenschaft „Art“. Mögliche Werte:  <br/><br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|
 |Teilnehmer|Alle Personenfelder in einer E-Mail-Nachricht. Diese Felder sind From, To, Cc und Bcc.|
-|Typ|Die Nachrichtenklasseneigenschaft für ein E-Mail-Element. Dies ist dieselbe Eigenschaft wie die ItemClass-E-Mail-Eigenschaft. Es ist auch eine mehrwertige Bedingung. Wenn Sie also mehrere Nachrichtenklassen auswählen möchten, halten Sie die STRG-TASTE gedrückt, und klicken Sie dann in der Dropdownliste auf zwei oder mehr Nachrichtenklassen, die Sie der Bedingung hinzufügen möchten.  Jede Nachrichtenklasse, die Sie in der Liste auswählen, wird durch den **OR-Operator** in der entsprechenden Suchabfrage logisch verbunden.  <br/> Eine Liste der Nachrichtenklassen (und der entsprechenden Nachrichtenklassen-ID), die von Exchange verwendet  werden und die Sie in der Liste Nachrichtenklassen auswählen können, finden Sie unter [Item Types and Message Classes](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).|
+|Typ|Die Nachrichtenklasseneigenschaft für ein E-Mail-Element. Dies ist dieselbe Eigenschaft wie die ItemClass-E-Mail-Eigenschaft. Es ist auch eine mehrwertige Bedingung. Wenn Sie also mehrere Nachrichtenklassen auswählen möchten, halten Sie die STRG-TASTE gedrückt, und klicken Sie dann in der Dropdownliste auf zwei oder mehr Nachrichtenklassen, die Sie der Bedingung hinzufügen möchten.  Jede Nachrichtenklasse, die Sie in der Liste auswählen, wird durch den **OR-Operator** in der entsprechenden Suchabfrage logisch verbunden.  <br/> Eine Liste der Nachrichtenklassen (und der entsprechenden Nachrichtenklassen-ID), die von Exchange  verwendet werden und die Sie in der Liste Nachrichtenklassen auswählen können, finden Sie unter [Item Types and Message Classes](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).|
 |Auszahlung|Das Datum, an dem eine E-Mail-Nachricht von einem Empfänger empfangen wurde. Dies ist die gleiche Eigenschaft wie die E-Mail-Eigenschaft „Empfangen“.|
 |Empfänger|Alle Empfängerfelder in einer E-Mail-Nachricht. Diese Felder sind To, Cc und Bcc.|
 |Absender|Der Absender einer E-Mail-Nachricht.|
@@ -244,12 +244,12 @@ Erstellen Sie eine Bedingung mithilfe von E-Mail-Eigenschaften beim Durchsuchen 
   
 ### <a name="conditions-for-document-properties"></a>Bedingungen für Dokumenteigenschaften
 
-Erstellen Sie eine Bedingung mithilfe von Dokumenteigenschaften beim Suchen nach Dokumenten auf SharePoint und OneDrive for Business Websites. In der folgenden Tabelle sind die Dokumenteigenschaften aufgeführt, die Sie für eine Bedingung verwenden können. Diese Eigenschaften sind eine Teilmenge der zuvor beschriebenen Websiteeigenschaften. Diese Beschreibungen werden zur Vereinfachung wiederholt.
+Erstellen Sie eine Bedingung mithilfe von Dokumenteigenschaften, wenn Sie auf SharePoint- und OneDrive for #A0 nach Dokumenten suchen. In der folgenden Tabelle sind die Dokumenteigenschaften aufgeführt, die Sie für eine Bedingung verwenden können. Diese Eigenschaften sind eine Teilmenge der zuvor beschriebenen Websiteeigenschaften. Diese Beschreibungen werden zur Vereinfachung wiederholt.
   
 | Bedingung | Beschreibung |
 |:-----|:-----|
-|Ursprung|Das Autorenfeld aus Office, das beibehalten wird, wenn ein Dokument kopiert wird. Wenn beispielsweise ein Benutzer ein Dokument erstellt und die E-Mails an eine andere Person senden, die es dann in SharePoint hochlädt, behält das Dokument weiterhin den ursprünglichen Autor bei.|
-|Titel|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in dokumenten Office werden. Er ist anders als der Dateiname des Dokuments.|
+|Ursprung|Das Autorenfeld aus Office-Dokumenten, das beibehalten wird, wenn ein Dokument kopiert wird. Wenn beispielsweise ein Benutzer ein Dokument erstellt und die E-Mails an eine andere Person senden, die es dann in SharePoint hochlädt, behält das Dokument weiterhin den ursprünglichen Autor bei.|
+|Titel|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er ist anders als der Dateiname des Dokuments.|
 |Erstellt|Das Datum, an dem ein Dokument erstellt wird.|
 |Zuletzt geändert|Das Datum, an dem ein Dokument zuletzt geändert wurde.|
 |Dateityp|Die Erweiterung einer Datei; Beispiel: docx, one, pptx oder xlsx. Dies ist dieselbe Eigenschaft wie die FileExtension-Websiteeigenschaft.|
@@ -433,6 +433,22 @@ Verwenden Sie die folgende Schlüsselwortabfrage, um nach Skype for Business Unt
 kind:im AND subject:conversation AND (received=startdate..enddate)
 ```
 
+## <a name="character-limits-for-searches"></a>Zeichenbeschränkungen für Suchen
+
+Bei der Suche nach Inhalten in websites und SharePoint-Konten gilt ein Grenzwert von 4.000 OneDrive Zeichen.  
+So wird die Gesamtanzahl der Zeichen in der Suchabfrage berechnet:
+
+- Die Zeichen in der Schlüsselwortsuchabfrage (einschließlich Benutzer- und Filterfelder) werden für diesen Grenzwert angezählt.
+
+- Die Zeichen in einer beliebigen Location-Eigenschaft (z. B. die URLs für alle SharePoint oder OneDrive zu durchsuchende Speicherorte) werden für diesen Grenzwert angezählt.
+
+- Die Zeichen in allen Suchberechtigungsfiltern, die auf den Benutzer angewendet werden, der die Suchanzahl an den Grenzwert anfing.
+
+Weitere Informationen zu Zeichenbeschränkungen finden Sie unter [eDiscovery search limits](limits-for-content-search.md#search-limits).
+
+> [!NOTE]
+> Der Grenzwert von 4.000 Zeichen gilt für inhaltssuche, Core eDiscovery und Advanced eDiscovery.
+
 ## <a name="search-tips-and-tricks"></a>Tipps und Tricks für die Suche
 
 - Bei Stichwortsuchen wird die Zwischen-/Kleinschreibung nicht beachtet. Beispielsweise geben **katze** und **KATZE** dieselben Ergebnisse zurück.
@@ -451,6 +467,6 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 
 - Wenn Sie Inhalte mit einem bestimmten Eigenschaftswert in den Suchergebnissen ausschließen möchten, fügen Sie ein Minuszeichen (-) vor dem Namen der Eigenschaft hinzu. Schließt beispielsweise `-from:"Sara Davis"` alle nachrichten aus, die von Sara Davis gesendet werden.
 
-- Sie können Elemente basierend auf dem Nachrichtentyp exportieren. Verwenden Sie zum Exportieren Skype Unterhaltungen und Chats in Microsoft Teams die Syntax `kind:im` . Wenn Sie nur E-Mail-Nachrichten zurückgeben möchten, verwenden Sie `kind:email` . Verwenden Sie zum Zurückgeben von Chats, Besprechungen und Microsoft Teams `kind:microsoftteams` .
+- Sie können Elemente basierend auf dem Nachrichtentyp exportieren. Verwenden Sie beispielsweise die Syntax, um #A0 und -Chats in Microsoft Teams zu `kind:im` exportieren. Wenn Sie nur E-Mail-Nachrichten zurückgeben möchten, verwenden Sie `kind:email` . Verwenden Sie zum Zurückgeben von Chats, Besprechungen und Anrufen in Microsoft Teams `kind:microsoftteams` .
 
 - Wie bereits erläutert, müssen Sie beim Durchsuchen von Websites das Nachgestellte am Ende der URL hinzufügen, wenn Sie die Eigenschaft verwenden, um nur Elemente an einer angegebenen `/` `path` Website zurück zu geben. Wenn Sie die nachgestellten Elemente nicht enthalten, werden auch Elemente von einer Website mit einem ähnlichen Pfadnamen `/` zurückgegeben. Wenn Sie beispielsweise Elemente von Websites mit dem Namen verwenden `path:sites/HelloWorld` `sites/HelloWorld_East` oder auch zurückgegeben `sites/HelloWorld_West` würden. Wenn Sie Elemente nur von der HelloWorld-Website zurückgeben möchten, müssen Sie `path:sites/HelloWorld/` verwenden.

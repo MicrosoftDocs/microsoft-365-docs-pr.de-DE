@@ -5,27 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: argani, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
+- Adm_o365
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - manage_licenses
-- commerce
-search.appverid:
-- MET150
+- commerce_licensing
+search.appverid: MET150
 description: Erfahren Sie, wie Sie mehr Lizenzen kaufen oder die Anzahl der Lizenzen für Ihr Microsoft 365 Business-Abonnement reduzieren.
-ms.date: ''
-ms.openlocfilehash: d4d0b73fb33d27f82a02b4ae0c6ecb009eb9d38d
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.date: 04/07/2021
+ms.openlocfilehash: 6603b49ed7af8b5213141d5c2434093c3af9540a
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615135"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327118"
 ---
 # <a name="buy-or-remove-licenses"></a>Kaufen oder Entfernen von Lizenzen
 
@@ -70,7 +71,7 @@ Wenn Sie Lizenzen aus einem Abonnement entfernt haben, müssen Sie als Nächstes
 2. Suchen Sie **auf der** Registerkarte Produkte nach dem Abonnement, für das Sie Lizenzen kaufen oder entfernen möchten. Wählen **Sie Weitere Aktionen** (drei Punkte) aus, und wählen Sie dann Lizenzen kaufen **aus.** [Was passiert, wenn die Schaltflächen Lizenzen kaufen oder Lizenzen entfernen nicht angezeigt werden?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
 3. Wenn Sie die Anzahl der Lizenzen reduzieren möchten, wählen Sie oben im Bereich Lizenzen kaufen die Option **Lizenzen entfernen aus.** 
 4. Um Lizenzen zu kaufen oder zu  entfernen, geben Sie unter **Neue** Menge im Feld Lizenzen insgesamt die Gesamtzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen. Wenn Sie beispielsweise über 100 Lizenzen verfügen und fünf weitere hinzufügen möchten, geben Sie 105 ein. Wenn Sie fünf davon entfernen möchten, geben Sie 95 ein.
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern** aus.
 
 > [!NOTE]
 > Sie können die Anzahl der Lizenzen für Ihr Abonnement nicht reduzieren, wenn derzeit alle Lizenzen Benutzern zugewiesen sind. Um die Anzahl der Lizenzen zu reduzieren, entfernen Sie zunächst eine oder mehrere Lizenzen von [Benutzern,](../../admin/manage/remove-licenses-from-users.md)und entfernen Sie dann die Lizenzen aus dem Abonnement.

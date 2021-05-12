@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.review: yinggiy, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,15 +16,15 @@ ms.collection:
 description: Erfahren Sie, wie Sie Richtlinien für automatische Ansprüche erstellen und verwalten, die Benutzern für bestimmte Apps automatisch Lizenzen zuweisen.
 ms.custom:
 - AdminSurgePortfolio
-- commerce
-search.appverid:
-- MET150
-ms.openlocfilehash: 001b612820bb13873ec18733d68828837fcecd78
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+- commerce_licensing
+search.appverid: MET150
+ms.date: 04/06/2021
+ms.openlocfilehash: c89c8114c9a71a315d5876a0edf55d269ed2b12d
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599451"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52327106"
 ---
 # <a name="manage-auto-claim-policies"></a>Verwalten von Richtlinien für automatischen Anspruch
 
@@ -39,7 +40,7 @@ Nachdem Sie eine Richtlinie für automatische Ansprüche erstellt haben, können
 - [Anzeigen eines Richtlinienberichts](#view-an-auto-claim-policy-report)
 
 > [!IMPORTANT]
-> Richtlinien für automatische Ansprüche sind derzeit nur für Microsoft Teams verfügbar. In Zukunft stehen weitere Produkte zur Verfügung.
+> Richtlinien für automatische Ansprüche sind derzeit nur für Microsoft Teams. In Zukunft stehen weitere Produkte zur Verfügung.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
@@ -78,7 +79,7 @@ Wenn Sie eine Richtlinie für automatische Ansprüche erstellen, können Sie ihr
 3. Geben Sie auf der Seite Diese Richtlinie für **automatischen** Anspruch benennen einen Namen für die Richtlinie ein, und wählen Sie **dann Weiter aus.**
 4. Wählen Sie **auf der Seite** App und Produkt für automatische Ansprüche festlegen eine App und das Abonnement aus, aus dem Lizenzen zugewiesen werden.
 5. Wenn Sie ein Sicherungsprodukt hinzufügen möchten, wählen Sie **Dieser** Richtlinie ein Sicherungsprodukt hinzufügen aus, und wählen Sie dann das Produkt aus der Liste aus.
-6. Klicken Sie auf **Weiter**.
+6. Wählen Sie **Weiter** aus.
 7. Löschen oder aktivieren Sie **auf** der Seite Apps auswählen die Felder für die Apps, die ausgeschlossen oder in die Lizenz mit einschließen werden, und wählen Sie dann **Weiter aus.**
 8. Wenn Sie ein oder mehrere Sicherungsprodukte hinzugefügt haben, wiederholen Sie Schritt 7 für jedes Produkt. Wechseln Sie andernfalls zu Schritt 9.
 9. Überprüfen Sie **auf der Seite** Überprüfen und Fertig stellen die neuen Richtlinieninformationen, nehmen Sie alle erforderlichen Änderungen vor, und wählen Sie dann Richtlinie erstellen **aus.**

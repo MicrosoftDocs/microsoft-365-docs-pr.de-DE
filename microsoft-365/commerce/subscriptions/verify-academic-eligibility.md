@@ -1,11 +1,12 @@
 ---
-title: Überprüfen der akademischen Berechtigung für Microsoft 365 Education Abonnements
+title: Überprüfen der akademischen Eignung für Microsoft 365 Education-Abonnements
 f1.keywords:
 - CSH
 - FWLink 2135711
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -13,35 +14,35 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- commerce
-ms.custom: ''
-search.appverid:
-- MET150
-description: Erfahren Sie, wie Sie die Berechtigung Ihrer Schule für Microsoft 365 Education überprüfen.
+ms.custom:
+- AdminSurgePortfolio
+- commerce_subscriptions
+search.appverid: MET150
+description: Erfahren Sie, wie Sie die Berechtigung Ihrer Schule für akademische Preise für Microsoft 365 Education überprüfen.
 ms.date: 07/21/2020
-ms.openlocfilehash: ad014cd72d82413073e1e645484f2a7fd0090b3c
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: e0e85e53ed00c1c7c23e86f380a6440038d775c9
+ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293487"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52326878"
 ---
-# <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Überprüfen der akademischen Berechtigung für Microsoft 365 Education Abonnements
+# <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Überprüfen der akademischen Eignung für Microsoft 365 Education-Abonnements
 
-Wenn Sie Teil einer akademischen Einrichtung sind, können Sie sich für eine kostenlose Testversion Microsoft 365 Education. Nachdem Microsoft die akademische Eignung Ihrer Schule überprüft hat, können Sie Microsoft 365 zu akademischen Preisen erwerben. Dies umfasst Produkte, die kostenlos verfügbar sind, z. B. Office 365 A1 für Lehrkräfte und Office 365 A1 Studenten. Sie haben bis zum Ende der kostenlosen Testversion Zeit, sie in ein kostenpflichtiges Abonnement zu akademischen Preisen zu konvertieren.
+Wenn Sie Teil einer akademischen Einrichtung sind, können Sie sich für eine kostenlose Testversion von Microsoft 365 Education registrieren. Nachdem Microsoft die akademische Eignung Ihrer Schule überprüft hat, können Sie Microsoft 365-Produkte zu akademischen Preisen kaufen. Dies umfasst Produkte, die kostenlos verfügbar sind, z. B. Office 365 A1 für Lehrkräfte und Office 365 A1 für Studenten. Sie haben bis zum Ende der kostenlosen Testversion Zeit, sie in ein kostenpflichtiges Abonnement zu akademischen Preisen zu konvertieren.
 
 In diesem Artikel wird beschrieben, wie Sie die akademische Eignung Ihrer Schule überprüfen, den Berechtigungsstatus überprüfen und Abonnements zu akademischen Preisen erwerben, nachdem Ihre Schule genehmigt wurde.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Sie müssen bereits über ein Microsoft 365 Education verfügen. Wenn Sie kein Testabonnement haben, besuchen Sie [diese Webseite,](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) und wählen Sie **Erste Schritte kostenlos aus.**
+Sie müssen bereits über ein Microsoft 365 Education-Testabonnement verfügen. Wenn Sie kein Testabonnement haben, besuchen Sie [diese Webseite,](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) und wählen Sie **Erste Schritte kostenlos aus.**
 
 ## <a name="verify-that-you-have-a-trial-subscription"></a>Überprüfen, ob Sie über ein Testabonnement verfügen
 
-Wenn Sie nicht sicher sind, ob Sie über ein Microsoft 365 Education verfügen, überprüfen Sie dies mithilfe der folgenden Schritte.
+Wenn Sie nicht sicher sind, ob Sie über ein Microsoft 365 Education-Testabonnement verfügen, überprüfen Sie dies mithilfe der folgenden Schritte.
 
-1. Wechseln Sie Microsoft 365 Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihrer Produkte.</a>
-2. Suchen Sie **nach Office 365 A1 Für Lehrkräfte Testversion** und Office 365 A1 für Studenten **Testversion**. Wenn Sie diese Abonnements nicht finden, besuchen Sie [diese Webseite,](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) und wählen Sie **Erste Schritte kostenlos aus.**
+1. Wechseln Sie im Microsoft 365 Admin Center zur **Seite Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihrer Produkte.</a>
+2. Suchen Sie **nach Office 365 A1 for faculty Trial** und Office **365 A1 for students Trial**. Wenn Sie diese Abonnements nicht finden, besuchen Sie [diese Webseite,](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) und wählen Sie **Erste Schritte kostenlos aus.**
 
 ## <a name="verify-your-schools-academic-eligibility"></a>Überprüfen der akademischen Eignung Ihrer Schule
 
@@ -56,20 +57,20 @@ Wenn Ihre akademische Berechtigung verweigert wird, finden Sie weitere Informati
 
 ## <a name="check-the-status-of-your-schools-academic-eligibility"></a>Überprüfen des Status der akademischen Eignung Ihrer Schule
 
-Nachdem Sie eine Microsoft 365 Education haben, können Sie den Status der akademischen Eignung Ihrer Schule jederzeit überprüfen.
+Nachdem Sie eine Microsoft 365 Education-Testversion erhalten haben, können Sie den Status der akademischen Eignung Ihrer Schule jederzeit überprüfen.
 
 1. Wechseln Sie zum [Microsoft 365 Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 2. Suchen Sie auf der Startseite nach der **Abrechnungskarte.\**
     Die **Abrechnungskarte** gibt den Status des Überprüfungsprozesses an. Die Karte zeigt einen der folgenden Status an: genehmigt, ausstehend, abgelehnt oder Ihre Domäne hinzufügen.
 
     > [!NOTE]
-    > Wenn sie keinen dieser Status sehen, bedeutet dies, dass Sie nicht über ein Microsoft 365 Education verfügen. Um eine kostenlose Testversion zu starten, [besuchen Sie diese Webseite,](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) und wählen **Sie Erste Schritte kostenlos aus.**
+    > Wenn sie keinen dieser Status sehen, bedeutet dies, dass Sie kein Microsoft 365 Education-Testabonnement haben. Um eine kostenlose Testversion zu starten, [besuchen Sie diese Webseite,](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) und wählen **Sie Erste Schritte kostenlos aus.**
 
 ## <a name="buy-subscriptions-at-academic-prices"></a>Kaufen von Abonnements zu akademischen Preisen
 
 Nachdem die Berechtigung Ihrer Schule überprüft wurde, können Sie Abonnements zu akademischen Preisen erwerben. Sie können Ihre [kostenlose Testversion auch in ein kostenpflichtiges Abonnement konvertieren.](../try-or-buy-microsoft-365.md) Wenn Sie Ihr Testabonnement konvertieren möchten, müssen Sie dies vor dem Ende des Testzeitraums tun.
 
-1. Wechseln Sie Microsoft 365 Admin Center zur  Seite \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Abrechnungskaufdienste.</a>
+1. Wechseln Sie im Microsoft 365  Admin Center zur Seite \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Abrechnungskaufdienste.</a>
 2. Wählen Sie zum Anzeigen akademischer Angebote die Registerkarte **Bildungseinrichtungen** aus.
 
     > [!NOTE]
@@ -82,7 +83,7 @@ Nachdem die Berechtigung Ihrer Schule überprüft wurde, können Sie Abonnements
 
 Das Ablaufdatum für Ihr kostenloses Testabonnement finden Sie auf der **Seite Ihre Produkte.** Sie können die Testversion auch erweitern.
 
-1. Wechseln Sie Microsoft 365 Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihrer Produkte.</a>
+1. Wechseln Sie im Microsoft 365 Admin Center zur **Seite Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihrer Produkte.</a>
 2. Suchen Sie nach dem Testabonnement.
 3. Im Abschnitt **Abrechnung** wird unter **Kostenloses Testabonnement** das Ablaufdatum angezeigt.
 4. Wenn Sie die Testversion erweitern möchten, wählen Sie **Testversion erweitern aus.** Sie können dies nur einmal pro kostenlosem Testabonnement tun.
@@ -95,12 +96,12 @@ Wenn Sie Fragen zur Entscheidung über die akademische Eignung Ihrer Schule habe
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Informationen zum Bereitstellen von Microsoft 365 für Ihre Schule finden Sie [unter Microsoft 365 Education Dokumentation und Ressourcen](/microsoft-365/education/deploy/). Als Nächstes können [Sie Benutzer hinzufügen und Lizenzen gleichzeitig zuweisen.](../../admin/add-users/add-users.md) Falls erforderlich, können Sie auch [weitere Lizenzen für Ihr Abonnement erwerben.](../licenses/buy-licenses.md)
+Informationen zum Bereitstellen von Microsoft 365 für Ihre Schule finden Sie unter [Microsoft 365 Education documentation and resources](/microsoft-365/education/deploy/). Als Nächstes können [Sie Benutzer hinzufügen und Lizenzen gleichzeitig zuweisen.](../../admin/add-users/add-users.md) Falls erforderlich, können Sie auch [weitere Lizenzen für Ihr Abonnement erwerben.](../licenses/buy-licenses.md)
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Microsoft 365 Education Dokumentation für IT-Administratoren](/education/itadmins) (Artikellinks)\
-[Microsoft Teams für Bildungseinrichtungen](https://microsoft.com/education/products/teams/default.aspx) (Produktseite)\
+[Microsoft 365 Education Documentation for IT Admins](/education/itadmins) (Artikellinks)\
+[Microsoft Teams for Education](https://microsoft.com/education/products/teams/default.aspx) (Produktseite)\
 [Verstehen von Abonnements und Lizenzen in Microsoft 365 Business](../licenses/subscriptions-and-licenses.md) (Artikel)\
 [Zuweisen von Lizenzen zu Benutzern ](../../admin/manage/assign-licenses-to-users.md) (Artikel)\
 [Kaufen oder Entfernen von Abonnementlizenzen](../licenses/buy-licenses.md) (Artikel)\
