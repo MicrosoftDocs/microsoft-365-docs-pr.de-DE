@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1f0005ed4614a8d01d2a64e8853be99a204825c8
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 189cb574a436a457cce312f6cb02ca1bf7863a18
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086814"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333494"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender für Endpunkt für Kunden der US-Regierung
 
@@ -78,7 +78,7 @@ Windows 10, Version 1909 (mit [KB4586819](https://support.microsoft.com/help/458
 Windows 10, Version 1903 (mit [KB4586819](https://support.microsoft.com/help/4586819)) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Windows 10, Version 1809 (mit [KB4586839](https://support.microsoft.com/help/4586839)) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Windows 10, Version 1803 (mit [KB4598245](https://support.microsoft.com/help/4598245)) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
-Windows 10, Version 1709 | ![Nein](images/svg/check-no.svg)<br />Hinweis: Wird nicht unterstützt | ![Ja ](images/svg/check-yes.svg) mit [KB4499147](https://support.microsoft.com/help/4499147)<br />Hinweis: [Veraltet,](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709)aktualisieren Sie bitte | ![Nein](images/svg/check-no.svg)<br />Hinweis: Wird nicht unterstützt
+Windows 10, Version 1709 | ![Nein](images/svg/check-no.svg)<br />Hinweis: Wird nicht unterstützt | ![Ja ](images/svg/check-yes.svg) mit [KB4499147](https://support.microsoft.com/help/4499147)<br />Hinweis: [Veraltet,](/lifecycle/announcements/revised-end-of-service-windows-10-1709)aktualisieren Sie bitte | ![Nein](images/svg/check-no.svg)<br />Hinweis: Wird nicht unterstützt
 Windows 10, Version 1703 und früher | ![Nein](images/svg/check-no.svg)<br />Hinweis: Wird nicht unterstützt | ![Nein](images/svg/check-no.svg)<br />Hinweis: Wird nicht unterstützt | ![Nein](images/svg/check-no.svg)<br />Hinweis: Wird nicht unterstützt
 Windows Server 2019 (mit [KB4586839](https://support.microsoft.com/help/4586839)) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Windows Server 2016 | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
@@ -86,10 +86,10 @@ Windows Server 2012 R2 | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/chec
 Windows Server 2008 R2 SP1 | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Windows 8.1 Enterprise | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Windows 8 Pro | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
-Windows 7 SP1-Enterprise | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+Windows 7 SP1 Enterprise | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Windows 7 SP1 Pro | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
-Linux | ![Ja](images/svg/check-yes.svg) In der Vorschau<br />Siehe Hinweis unten | ![Ja](images/svg/check-yes.svg) In der Vorschau<br />Siehe Hinweis unten | ![Ja](images/svg/check-yes.svg) In der Vorschau<br />Siehe Hinweis unten
-macOS | ![Ja](images/svg/check-yes.svg) In der Vorschau<br />Siehe Hinweis unten | ![Ja](images/svg/check-yes.svg) In der Vorschau<br />Siehe Hinweis unten | ![Ja](images/svg/check-yes.svg) In der Vorschau<br />Siehe Hinweis unten
+Linux | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
+macOS | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Android | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog
 iOS | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/svg/check-no.svg) On Engineering Backlog
 
@@ -97,13 +97,10 @@ iOS | ![Nein](images/svg/check-no.svg) On Engineering Backlog | ![Nein](images/s
 > Wenn ein Patch angegeben ist, muss er vor dem Geräte onboarding bereitgestellt werden, um Defender for Endpoint für die richtige Umgebung zu konfigurieren.
 
 > [!NOTE]
-> Versuchen Sie, Windows geräte, die älter als Windows 10 oder Windows Server 2019 sind, mithilfe von [Microsoft Monitoring Agent](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma)? Sie müssen "Azure US Government" unter "Azure Cloud" [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)auswählen, wenn Sie [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) den Setup-Assistenten verwenden oder wenn Sie eine Befehlszeile oder ein Skript [verwenden–](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) legen Sie den Parameter "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" auf 1.
-
-> [!NOTE]
-> Sie benötigen Version 101.25.72 und höher für Linux und Version 101.25.69 und höher für macOS.
+> Versuchen Sie, Windows-Geräte, die älter als Windows 10 oder Windows Server 2019 sind, mithilfe von [Microsoft Monitoring Agent zu integrieren?](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) Sie müssen "Azure US Government" unter "Azure Cloud" [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)auswählen, wenn Sie [](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) den Setup-Assistenten verwenden oder wenn Sie eine Befehlszeile oder ein Skript [verwenden–](/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) legen Sie den Parameter "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" auf 1.
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>Betriebssystemversionen bei Verwendung von Azure Defender für Server
-Die folgenden Betriebssystemversionen werden bei Verwendung von [Azure Defender für Server unterstützt:](https://docs.microsoft.com/azure/security-center/security-center-wdatp)
+Die folgenden Betriebssystemversionen werden bei Verwendung von [Azure Defender für Server unterstützt:](/azure/security-center/security-center-wdatp)
 
 Betriebssystemversion | GCC | GCC High | DoD
 :---|:---|:---|:---
@@ -160,11 +157,11 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 ## <a name="feature-parity-with-commercial"></a>Featureparität mit kommerziellen
 Kunden von Defender for Endpoint für US Government haben keine vollständige Parität mit dem kommerziellen Angebot. Unser Ziel besteht zwar in der Bereitstellung aller kommerziellen Features und Funktionen für unsere Kunden in den USA, es gibt jedoch noch nicht verfügbare Funktionen, die wir hervorheben möchten.
 
-Dies sind die bekannten Lücken ab April 2021:
+Dies sind die bekannten Lücken:
 
 Featurename | GCC | GCC High | DoD
 :---|:---|:---|:---
-Verwaltung und APIs: Streaming-API | ![Ja](images/svg/check-yes.svg) | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung
+Verwaltung und APIs: Streaming-API | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg)
 Internet-Inhaltsfilterung | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung
 Integrationen: Azure Sentinel | ![Ja](images/svg/check-yes.svg) | ![Ja](images/svg/check-yes.svg) Warnungen <br /> ![Nein](images/svg/check-no.svg) Vorfälle & Rohdaten: In der Entwicklung | ![Ja](images/svg/check-yes.svg) Warnungen <br /> ![Nein](images/svg/check-no.svg) Vorfälle & Rohdaten: In der Entwicklung
 Integrationen: Microsoft Cloud App Security | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung | ![Nein](images/svg/check-no.svg) In der Entwicklung

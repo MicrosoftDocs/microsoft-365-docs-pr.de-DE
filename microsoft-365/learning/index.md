@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 04/30/2021
+ms.date: 05/12/2021
 audience: enabler
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -14,13 +14,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: Erfahren Sie, wie Sie Ressourcen für Microsoft Viva Learning (Vorschau) finden.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 31e39680fc18ec52b65c29899ec16e72ccbccf58
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: 48162a619d37ac764db5a98153efec79ee1a4632
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100970"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333506"
 ---
 # <a name="introduction-to-microsoft-viva-learning-preview"></a>Einführung in Microsoft Viva Learning (Vorschau)
 
@@ -43,13 +42,13 @@ Die Ressourcen in diesem Abschnitt helfen Ihnen, mehr darüber zu erfahren, was 
 
 ## <a name="set-up-and-administration"></a>Einrichtung und Verwaltung
 
-Die Ressourcen in diesem Abschnitt helfen dem Administrator in Ihrer Organisation beim Einrichten und Konfigurieren von Viva Learning (Preview) in Microsoft 365 Umgebung.
+Die Ressourcen in diesem Abschnitt helfen dem Administrator in Ihrer Organisation beim Einrichten und Konfigurieren von Viva Learning (Preview) in Ihrer Microsoft 365-Umgebung.
 
 | Diese Informationen finden Sie unter: | Hilfreiche Ressource: |
 |:-----|:-----|
 |Informationen zum Einrichten und Konfigurieren von "Viva Learning" (Vorschau)|[Einrichten von Microsoft Viva Learning (Vorschau)](set-up-teams-admin-center.md)|
 |Informationen zum Konfigurieren von Lerninhaltsquellen|[Konfigurieren von Lerninhaltsquellen](content-sources-365-admin-center.md)|
-|Informationen zum Hinzufügen eigener Lerninhalte|[Konfigurieren SharePoint als Inhaltsquelle](configure-sharepoint-content-source.md)|
+|Informationen zum Hinzufügen eigener Lerninhalte|[Konfigurieren von SharePoint als Inhaltsquelle](configure-sharepoint-content-source.md)|
 
 
 

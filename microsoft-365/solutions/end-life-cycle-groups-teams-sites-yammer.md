@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: End-of-Lifecycle-Optionen für Gruppen, Teams und Yammer.
-ms.openlocfilehash: 405d87c645118cf0ef318d4d68802d17da8c5673
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f1f91e64af7e16016398a7c326feec5a9b073ca9
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916130"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333782"
 ---
 # <a name="end-of-lifecycle-options-for-groups-teams-and-yammer"></a>End-of-Lifecycle-Optionen für Gruppen, Teams und Yammer
 
@@ -53,7 +53,7 @@ Gruppen und Teams verbleiben 30 Tage lang im Status "Soft-Delete" und können je
 
 Es gibt drei wichtige Bereiche, die Team- und Gruppenbesitzer und IT-Administratoren beim Löschen einer Gruppe oder eines Teams berücksichtigen müssen.
 
-**Inhalt**
+**Content**
 
 Muss der Inhalt beibehalten werden, nachdem das Team nicht mehr funktionsfähig ist oder existiert? Reicht es aus, sich auf die Aufbewahrungsfunktionen von Microsoft 365 zu verlassen, oder ist ein Teil der Inhalte in Apps und Diensten, die keine Aufbewahrung anbieten? Muss der Inhalt zu Datensatzverwaltungszwecken, zu Archivzwecken oder zu zukünftigen Verwendungs- und Referenzzwecken aufbewahrt werden?
 
@@ -79,7 +79,8 @@ Teams-spezifische Inhalte werden in erster Linie in Form von Unterhaltungen verw
 
 Unterhaltungen in Kanälen können nicht mit systemeigenen Microsoft Teams-Funktionen kopiert oder verschoben werden. Sie können jedoch mit der Graph-API exportiert werden.
 
-Wenn außerdem eine Aufbewahrungsrichtlinie auf Teams angewendet wird, werden die Unterhaltungen beibehalten und über eDiscovery-Suchen verfügbar. (Elemente, die in eDiscovery-Suchen gefunden werden, können exportiert werden, es bleibt jedoch kein Kontext oder keine Struktur aus der ursprünglichen Quelle – es handelt sich lediglich um einzelne Nachrichten.)
+Wenn außerdem eine Aufbewahrungsrichtlinie auf Teams angewendet wird, werden die Unterhaltungen beibehalten und über eDiscovery-Suchen verfügbar. Mithilfe von advanced eDiscovery können Sie [eine Teams-Chat-Unterhaltung rekonstruieren.](/microsoft-365/compliance/conversation-review-sets)
+
 
 ### <a name="archiving-a-team"></a>Archivierung eines Teams
 
@@ -144,7 +145,7 @@ Wenn eine Aufbewahrungsrichtlinie auf Exchange angewendet wird, werden die E-Mai
 
 **Exportieren von E-Mails und Kalendern**
 
-Team- oder Gruppenmitglieder können den Inhalt des Postfachs und Kalenders in eine [Outlook Data /Personal Storage (PST)-Datei exportieren.](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91) Diese Datei kann dann an anderer Stelle gespeichert werden, oder der Inhalt kann in ein anderes Postfach importiert werden. Erstere wird nicht empfohlen, da der Inhalt der PST-Datei nicht durchsucht werden kann, ohne sie in Outlook zu öffnen, und die Datei selbst kann im Laufe der Zeit beschädigt werden.
+Team- oder Gruppenmitglieder können den Inhalt des Postfachs und Kalenders in eine Outlook [-Datei (Data/ Personal Storage) exportieren.](https://support.office.com/article/14252b52-3075-4e9b-be4e-ff9ef1068f91) Diese Datei kann dann an anderer Stelle gespeichert werden, oder der Inhalt kann in ein anderes Postfach importiert werden. Erstere wird nicht empfohlen, da der Inhalt der PST-Datei nicht durchsucht werden kann, ohne sie in Outlook zu öffnen, und die Datei selbst kann im Laufe der Zeit beschädigt werden.
 
 **Von der IT durchgeführte Inhaltsmigration**
 
@@ -156,10 +157,10 @@ Jede Gruppe oder jedes Team kann mehrere Pläne haben. Es ist wichtig, während 
 
 **Exportieren des Plans in eine Tabellenkalkulation**
 
-Wenn es nur erforderlich ist, eine Kopie des Plans für die Aufzeichnung zu behalten, besteht der einfachste Ansatz in dem Exportieren des Plans in eine [Excel-Kalkulationstabelle](https://support.microsoft.com/office/4d850c6e-e548-4aab-83b4-b62b68662d2a). Dies ist eine one-way-Aktion, da es keine Möglichkeit gibt, Pläne aus einer Kalkulationstabelle zu importieren.
+Wenn es nur erforderlich ist, eine Kopie des Plans für Die Aufzeichnungszwecke zu behalten, besteht der einfachste Ansatz im Exportieren des Plans in eine Excel [Kalkulationstabelle.](https://support.microsoft.com/office/4d850c6e-e548-4aab-83b4-b62b68662d2a) Dies ist eine one-way-Aktion, da es keine Möglichkeit gibt, Pläne aus einer Kalkulationstabelle zu importieren.
 
 > [!IMPORTANT]
-> Beim Exportieren eines Plans nach Excel werden die meisten Informationen innerhalb des Plans verwendet, aber keine Kommentare, Links oder Dateien enthalten.
+> Das Exportieren eines Plans in Excel enthält die meisten Informationen innerhalb des Plans, enthält jedoch keine Kommentare, Links oder Dateien.
 
 **Kopieren und Verschieben von Vorgängen in einen anderen Plan**
 
@@ -175,7 +176,7 @@ Flüsse, die in Power Automate erstellt und einer Gruppe oder einem Team zugeord
 
 **Ändern des Besitzes des Datenflusses**
 
-Wenn der Workflow weiterhin ausgeführt werden muss, können alle Besitzer einfach andere Benutzer oder Microsoft 365-Gruppen als Besitzer hinzufügen.
+Wenn der Workflow weiterhin ausgeführt werden muss, können alle Besitzer einfach andere Benutzer hinzufügen oder Microsoft 365 als Besitzer hinzufügen.
 
 **Exportieren des Datenflusses**
 
@@ -183,38 +184,38 @@ Wenn der Workflow nicht weiterhin ausgeführt werden muss, aber für eine [](htt
 
 ## <a name="power-bi"></a>Power BI
 
-Power BI-Daten und Arbeitsbereiche können unabhängig von Gruppen und Teams ausgeführt werden, und wie andere Workloads bieten unterschiedliche Möglichkeiten zum Offboarding.
+Power BI und Arbeitsbereiche können unabhängig von Gruppen und Teams arbeiten und wie andere Arbeitsauslastungen unterschiedliche Möglichkeiten zum Offboarding bieten.
 
 **Kopieren von Berichten in einen anderen Arbeitsbereich**
 
-Wenn der Bericht in seinem Funktionsstatus über die Lebensdauer der Gruppe oder des Teams hinaus beibehalten werden muss, kann er aus dem vorhandenen Arbeitsbereich in einen anderen Arbeitsbereich [in Power BI kopiert werden.](/power-bi/connect-data/service-datasets-copy-reports)
+Wenn der Bericht in seinem Funktionszustand über die Lebensdauer der Gruppe oder des Teams hinaus beibehalten werden muss, kann er aus dem vorhandenen Arbeitsbereich in einen anderen Arbeitsbereich innerhalb von [Power BI.](/power-bi/connect-data/service-datasets-copy-reports)
 
 **Exportieren von Daten aus einem Dashboard oder Bericht**
 
-Alternativ kann der Bericht nach Excel exportiert werden, wenn er nicht mehr aktiv sein muss, die Daten jedoch [beibehalten werden müssen.](/power-bi/visuals/power-bi-visualization-export-data)
+Wenn der Bericht nicht mehr aktiv sein muss, die Daten jedoch aufbewahrt werden müssen, kann er auch in die [Excel.](/power-bi/visuals/power-bi-visualization-export-data)
 
 ## <a name="project"></a>Project
 
-In Project im Web erstellte Projekte und Roadmaps können Microsoft 365-Gruppen zugeordnet werden und bieten Ansätze für offboarding ähnlich wie Power BI.
+Projekte und Roadmaps, die in Project im Web erstellt wurden, können Microsoft 365-Gruppen zugeordnet werden und bieten Ansätze für offboarding ähnlich Power BI.
 
 **Zuweisen des Projekts zu einer anderen Gruppe**
 
-Wenn das Projekt in seinem Funktionszustand über die Lebensdauer der Gruppe oder des Teams hinaus beibehalten werden muss, kann es über das Dynamics 365 Administration Center einer anderen [Microsoft 365-Gruppe](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project) zugewiesen werden.
+Wenn das Projekt in seinem Funktionszustand über die Lebensdauer der Gruppe [](/project-for-the-web/access-a-project-after-group-is-deleted#reassign-the-project) oder des Teams hinaus beibehalten werden muss, kann es mithilfe des Dynamics 365 Administration Center einer anderen Microsoft 365-Gruppe zugewiesen werden.
 
 **Exportieren von Daten aus dem Projekt oder der Roadmap**
 
-Mithilfe des Dynamics 365 Administration [](/project-for-the-web/export-user-data-from-project-for-the-web) Center können Benutzerdaten aus dem Projekt in eine Kalkulationstabelle exportiert werden, oder wenn Sie ein PowerShell-Skript verwenden, können die Daten in die Project-Datei () exportiert werden. MPP) und XML-Dateiformate.
+Mithilfe des Dynamics 365 Administration [](/project-for-the-web/export-user-data-from-project-for-the-web) Center können Benutzerdaten aus dem Projekt in eine Kalkulationstabelle exportiert werden, oder wenn Sie ein PowerShell-Skript verwenden, können die Daten in Project exportiert werden (. MPP) und XML-Dateiformate.
 
 ## <a name="sharepoint"></a>SharePoint
-Alle Dateien in Teamkanälen werden in der Dokumentbibliothek auf der SharePoint-Website der zugeordneten Gruppe gespeichert. In einigen Fällen können andere Inhalte als Dokumente in SharePoint vorhanden sein, z. B. Listen oder Seiten.
-Dateien werden in der Regel an drei primären Speicherorten auf einer SharePoint-Website gespeichert:
+Alle Dateien in Teamkanälen werden in der Dokumentbibliothek im SharePoint der zugeordneten Gruppe gespeichert. In einigen Fällen können andere Inhalte als Dokumente in SharePoint, z. B. Listen oder Seiten, vorhanden sein.
+Dateien werden in der Regel an drei primären Speicherorten innerhalb eines SharePoint gespeichert:
 
 - Seiten – Bibliothek für Websiteseiten
 - Bilder, die in Seiten verwendet werden – Bibliothek für Websiteressourcen
 - Dateien in Kanälen – Dokumentbibliothek
-- Wiki-Seiten – Teams Wiki Data Library
+- Wikiseiten – Teams Wiki-Datenbibliothek
 
-Wenn die Website eine oder mehrere Unterwebsites darunter verschachtelt hat, muss der Offboardingprozess für jede Unterwebsite wiederholt werden. Wenn das Team private Kanäle enthält, gibt es für jeden Kanal eine separate SharePoint-Website.
+Wenn die Website eine oder mehrere Unterwebsites darunter verschachtelt hat, muss der Offboardingprozess für jede Unterwebsite wiederholt werden. Wenn das Team private Kanäle enthält, gibt es eine separate SharePoint für jeden Kanal.
 
 Es ist wichtig, beim Entfernen von Dateien aus einer Gruppe oder einem Team zu berücksichtigen, dass sie für Benutzer freigegeben werden können, die nicht Mitglied der Gruppe oder des Teams sind (intern oder außerhalb der Organisation), und daher kann es sich lohnen, die bevorstehende Änderung an sie zu kommunizieren.
 
@@ -224,20 +225,20 @@ Bei Dateien, die in SharePoint in einer der oben genannten Bibliotheken gespeich
 
 **Verschieben von Dateien**
 
-Darüber hinaus können Dateien an einen anderen Speicherort in SharePoint verschoben werden, z. B. eine Bibliothek an einer anderen Website.
+Darüber hinaus können Dateien an einen anderen Speicherort innerhalb von SharePoint z. B. eine Bibliothek an einer anderen Website verschoben werden.
 Referenz: https://support.office.com/article/move-or-copy-files-in-sharepoint-00e2f483-4df3-46be-a861-1f5f0c1a87bc
 
-**Exportliste** In SharePoint-Listen gespeicherte Daten können [in](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9)eine Excel-Kalkulationstabelle exportiert und erneut in eine Liste auf einer anderen Website importiert werden.
+**Exportliste** Daten, die in SharePoint gespeichert [](https://support.office.com/article/bfb2ea48-6118-4fa9-abb6-cced9424e5d9)sind, können in eine Excel exportiert und erneut in eine Liste an einer anderen Website importiert werden.
 
 Alternativ kann ein Drittanbietertool verwendet werden, um die Liste zwischen Websites zu migrieren, um Funktionen, Listenansichten, Formatierungen und andere Attribute zu erhalten.
 
 **"Exportieren" von Wikidateien**
 
-Wikiinhalte in Teamkanälen werden in einer HTML-formatierten Datei in einer dedizierten Bibliothek der zugeordneten SharePoint-Website gespeichert. Sie können nicht ohne Weiteres exportiert und in ein anderes Kanalwiki importiert werden, können jedoch in eine HTML-Datei konvertiert und als Webseite geöffnet werden.
+Wikiinhalte innerhalb von Teamkanälen werden in einer HTML-formatierten Datei in einer dedizierten Bibliothek der zugeordneten SharePoint gespeichert. Sie können nicht ohne Weiteres exportiert und in ein anderes Kanalwiki importiert werden, können jedoch in eine HTML-Datei konvertiert und als Webseite geöffnet werden.
 
 ## <a name="microsoft-stream"></a>Microsoft Stream
 
-Wie Power Automate gehören Videos in Stream, die einer Gruppe oder einem Team zugeordnet sind, nicht tatsächlich zur Gruppe und werden nicht gelöscht, wenn die Gruppe gelöscht wird. Videos in Stream gehören der Person, die das Video hochgeladen oder erstellt hat, auch wenn sie Benutzer oder Gruppen als Besitzer hinzufügen. Dies gilt auch für Besprechungen, die in einem #A0 aufgezeichnet werden. sie gehören der Person, die die Aufzeichnung initiiert hat.
+Wie Power Automate werden Videos in Stream, die einer Gruppe oder einem Team zugeordnet sind, nicht tatsächlich im Besitz der Gruppe und nicht gelöscht, wenn die Gruppe gelöscht wird. Videos in Stream gehören der Person, die das Video hochgeladen oder erstellt hat, auch wenn sie Benutzer oder Gruppen als Besitzer hinzufügen. Dies gilt auch für Besprechungen, die in einem Teams aufgezeichnet werden. sie gehören der Person, die die Aufzeichnung initiiert hat.
 
 **Hinzufügen anderer Besitzer**
 
@@ -253,7 +254,7 @@ Im Gegensatz zu Unterhaltungen in Microsoft Teams bietet Yammer Sowohl Benutzern
 
 **Verschieben von Unterhaltungen in eine andere Gruppe oder Community**
 
-Unterhaltungen können von jedem Benutzer Yammer in eine andere Gruppe verschoben werden, nicht nur von Besitzern oder Administratoren. Dies ist sowohl im [klassischen Yammer](https://support.office.com/article/149c6399-4ac1-4ced-84d7-e0660960a872)als auch in den neuen Yammer [möglich.](https://support.office.com/article/d63debf1-1c90-4ec5-b5ae-8a00939a1680)
+Unterhaltungen können von jedem Benutzer Yammer in eine andere Gruppe verschoben werden, nicht nur von Besitzern oder Administratoren. Dies ist sowohl im [klassischen Yammer](https://support.office.com/article/149c6399-4ac1-4ced-84d7-e0660960a872)als auch in den neuen [Yammer](https://support.office.com/article/d63debf1-1c90-4ec5-b5ae-8a00939a1680) möglich.
 
 **Exportieren von Netzwerkdaten**
 

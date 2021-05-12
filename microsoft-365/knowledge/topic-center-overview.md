@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: bdb49af4ac43976a1ad734e507902781d63c5670
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 2e7152530dc3221eb3ab01047416993178193732
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301788"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333818"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Übersicht über das Thema Center in Microsoft Viva Topics
 
@@ -37,11 +37,11 @@ Das Themencenter wird während des Setups von "Viva Topics" erstellt. Nach Absch
 1. Wählen Sie Microsoft 365 Admin Center **Einstellungen** aus, und wählen Sie dann **Organisationseinstellungen aus.**
 2. Wählen Sie **auf der** Registerkarte Dienste die Option **Themenerfahrungen aus.**
 
-    ![Verbinden personen zum Wissen](../media/admin-org-knowledge-options-completed.png) </br>
+    ![Verbinden personen zum Wissen](../media/admin-org-knowledge-options-completed.png) 
 
 3. Wählen Sie die **Registerkarte Themencenter** aus. Unter **Websiteadresse** befindet sich ein Link zu Ihrem Themencenter.
 
-    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) </br>
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) 
 
 
 
@@ -58,32 +58,35 @@ Auf der Startseite des Themencenters sehen Sie die Themen in Ihrer Organisation,
 
 - Vorgeschlagene Verbindungen – Unter Wir haben Sie zu diesen Themen aufgelistete **Themen angezeigt. Haben wir es richtig gemacht?** Dies sind Themen, in denen Ihre Verbindung mit dem Thema über KI vorgeschlagen wurde. Sie können z. B. Autor einer verwandten Datei oder Website sein. Sie werden aufgefordert, zu bestätigen, dass Sie als verwandte Person für das Thema aufgeführt bleiben sollten.
 
-   ![Vorgeschlagene Verbindungen](../media/knowledge-management/my-topics.png) </br>
+   ![Vorgeschlagene Verbindungen](../media/knowledge-management/my-topics.png) 
  
 - Bestätigte Verbindungen – Dies sind Themen, in denen Sie auf der Themenseite angeheftet sind oder eine vorgeschlagene Verbindung mit dem Thema bestätigt haben. Die Themen werden vom vorgeschlagenen zu bestätigten Abschnitt wechseln, wenn Sie eine vorgeschlagene Verbindung bestätigen.
  
-   ![Bestätigte Themen](../media/knowledge-management/my-topics-confirmed.png) </br>
+   ![Bestätigte Themen](../media/knowledge-management/my-topics-confirmed.png) 
 
 Sobald ein Benutzer seine Verbindung zu einem Thema bestätigt hat, kann er Änderungen an der Themenseite zum Krümmen seiner Verbindung erstellen. Sie können z. B. weitere Informationen zu ihrer Verbindung mit dem Thema bereitstellen.
 
 
 ## <a name="manage-topics-page"></a>Seite "Themen verwalten"
 
-Damit Sie im Abschnitt **Themen** verwalten im Themencenter arbeiten können, benötigen Sie die erforderlichen Berechtigungen zum Verwalten von Themen, die für die Rolle des Wissensmanagers erforderlich sind. Ihr Administrator kann diese Berechtigungen Benutzern während der Einrichtung [](topic-experiences-knowledge-rules.md) der Wissensverwaltung [zuweisen,](set-up-topic-experiences.md)oder neue Benutzer können anschließend von einem Administrator über das Microsoft 365 hinzugefügt werden.
+Zum Arbeiten auf **der** Seite Themen verwalten im Themencenter benötigen Sie die erforderlichen Berechtigungen zum Verwalten von Themen, die für die Rolle "Knowledge Manager" erforderlich sind. Ihr Administrator kann diese Berechtigungen Benutzern während der Einrichtung [](topic-experiences-knowledge-rules.md) der Wissensverwaltung [zuweisen,](set-up-topic-experiences.md)oder neue Benutzer können anschließend von einem Administrator über das Microsoft 365 hinzugefügt werden.
 
-Auf der Seite Themen verwalten zeigt das Themendashboard alle Themen an, auf die Sie Zugriff haben, die von Den angegebenen Quellstandorten identifiziert wurden. Jedes Thema zeigt das Datum an, an dem das Thema entdeckt wurde. Ein Benutzer, dem Berechtigungen zum Verwalten von Themen zugewiesen wurden, kann die nicht bestätigten Themen überprüfen und folgende Aufgaben auswählen:
-- Bestätigen Sie das Thema: Gibt Benutzern an, dass ein von AI vorgeschlagenes Thema von einem menschlichen Konservator überprüft wurde. 
-- Veröffentlichen Sie das Thema: Bearbeiten Sie die Themeninformationen, um die Qualität des anfangs identifizierten Themas zu verbessern, und hebt das Thema für alle Benutzer hervor, die Zugriff auf Themen haben. 
+Auf der Seite Themen **verwalten** zeigt das Themendashboard alle Themen an, auf die Sie Zugriff haben, die von Den angegebenen Quellstandorten identifiziert wurden. Jedes Thema zeigt das Datum an, an dem das Thema entdeckt wurde. Ein Benutzer, dem Berechtigungen zum Verwalten von Themen zugewiesen wurden, kann die nicht bestätigten Themen überprüfen und folgende Aufgaben auswählen:
+
+- Bestätigen Sie das Thema: Gibt Benutzern an, dass ein von AI vorgeschlagenes Thema von einem menschlichen Konservator überprüft wurde.
+
+- Veröffentlichen Sie das Thema: Bearbeiten Sie die Themeninformationen, um die Qualität des anfangs identifizierten Themas zu verbessern, und hebt das Thema für alle Benutzer hervor, die Zugriff auf Themen haben.
+ 
 - Entfernen Sie das Thema: Macht das Thema für Endbenutzer nicht wiederherstellbar. Das Thema wird auf die Registerkarte **Entfernt** verschoben und kann bei Bedarf später bestätigt werden. 
 
-> [!Note] 
-> Weitere [Informationen zur Themenverwaltung](manage-topics.md) finden Sie unter Verwalten von Themen auf der Seite Themen verwalten.
+Weitere Informationen zum Verwalten von Themen auf der Seite **Themen verwalten finden Sie unter [Manage topics](manage-topics.md).
 
 ## <a name="create-or-edit-a-topic"></a>Erstellen oder Bearbeiten eines Themas
 
 Wenn Sie über Berechtigungen zum Erstellen und Bearbeiten von Themen verfügen, können Sie:
 
 - [Vorhandene Themen bearbeiten:](edit-a-topic.md)Sie können Änderungen an vorhandenen Themenseiten vornehmen, die durch Die Ermittlung erstellt wurden.
+
 - [Neue Themen erstellen:](create-a-topic.md)Sie können neue Themen für Themen erstellen, die nicht durch Die Ermittlung gefunden wurden, oder ob die AI-Tools nicht genügend Nachweise zum Erstellen eines Themas gefunden haben.
 
 

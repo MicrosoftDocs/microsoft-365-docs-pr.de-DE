@@ -13,12 +13,12 @@ localization_priority: Normal
 ROBOTS: NOINDEX, NOFOLLOW
 ms.assetid: df2d1e0f-b476-42c9-aade-4a260b24f193
 description: 'Verwenden Sie das eDiscovery-Tool für die Inhaltssuche im Security & Compliance Center, um E-Mails in &, Dokumente auf #A1 und #A2 sowie Chatunterhaltungen in Skype for Business schnell zu finden.'
-ms.openlocfilehash: a6aa416768e7910e546b39d5866f884d2d532732
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 80234a512d13deda29a61073bec62990d135f30e
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927591"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333686"
 ---
 # <a name="search-for-content-using-the-content-search-tool"></a>Suchen nach Inhalten mithilfe des Inhaltssuchtools
 
@@ -28,7 +28,9 @@ Verwenden Sie das Tool für die Inhaltssuche im Security & Compliance Center, um
 
 Der erste Schritt besteht in der Verwendung des Inhaltssuchtools zum Auswählen von Inhaltsstandorten zum Suchen und Konfigurieren einer Schlüsselwortabfrage für die Suche nach bestimmten Elementen. Sie können die Abfrage auch einfach leer lassen und alle Elemente an den Zielstandorten zurückgeben.
   
-- [Erstellen und Ausführen einer](content-search.md) Inhaltssuche 
+- [Erstellen und Ausführen einer](content-search.md) Inhaltssuche
+
+- [Featurereferenz] für die Inhaltssuche (content-search-reference.md)
 
 - [Erstellen von Suchabfragen und Verwenden von Bedingungen zum](keyword-queries-and-search-conditions.md) Einen der Suche 
 

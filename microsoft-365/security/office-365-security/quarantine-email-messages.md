@@ -22,12 +22,12 @@ ms.custom:
 description: Administratoren können sich über die Quarantäne in Exchange Online Protection (EOP) informieren, die potenziell gefährliche oder unerwünschte Nachrichten enthält.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bd748871cc09905f9878d5917351b1c185cc1106
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b2a11f5f9e1e730a3b0cc09625ec8e8cb592d869
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205783"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333806"
 ---
 # <a name="quarantined-email-messages-in-eop"></a>Isolierte E-Mail-Nachrichten in EOP
 
@@ -54,4 +54,4 @@ Sowohl Benutzer als auch Administratoren können mit Nachrichten in Quarantäne 
 
 - Administratoren und Benutzer können falsch positive Ergebnisse an Microsoft in Quarantäne melden.
 
-Weitere Informationen zum Thema Quarantäne finden Sie unter [Quarantine FAQ](quarantine-faq.md).
+Weitere Informationen zum Thema Quarantäne finden Sie unter [Quarantine FAQ](quarantine-faq.yml).

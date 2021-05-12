@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: drjones, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,18 +19,15 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
-- PPM_jmueller
-ms.reviewer: drjones
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Erfahren Sie, wie Sie Dateispeicher in Ihrem Abonnement hinzufügen und Microsoft 365 können. Mit zusätzlichem Dateispeicher können Sie weitere Inhalte in SharePoint Online und OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: 14f72f59493be04165f0e7b28f26b14f8ae01a08
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 98fdb4412f263bd9e0a22b6890ff66509cb3e799
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293679"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332186"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Hinzufügen von Speicherplatz für Ihr Abonnement
 
@@ -78,7 +76,7 @@ Wenn Sie bereits zusätzlichen Dateispeicher über das Office 365 Extra File Sto
 3. Wählen Sie auf der Seite Produktdetails im Abschnitt **Add-Ons** die Option **Add-Ons verwalten aus.**
 4. Wählen Sie **im Bereich Add-Ons** verwalten in der Liste **Add-On** die Option **Office 365 Extra File Storage** aus.
 5. Geben Sie **im** Textfeld Menge die Anzahl der GBs des Speicherplatzes ein, den Sie für das Abonnement wünschen.
-6. Klicken Sie auf **Speichern**.
+6. Wählen Sie **Speichern** aus.
 
 ## <a name="is-my-plan-eligible-for-office-365-extra-file-storage"></a>Bin ich im Rahmen meines Plans für Office 365 Extra File Storage berechtigt?
 
@@ -105,5 +103,5 @@ Office 365 Extra File Storage steht im Rahmen der folgenden Abonnements zur Verf
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Verwalten von Websitespeichergrenzwerte](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (Artikel)\
+[Verwalten von Websitespeichergrenzwerte](/sharepoint/manage-site-collection-storage-limits) (Artikel)\
 [Festlegen des Standardspeicherplatzes für OneDrive Benutzer](/onedrive/set-default-storage-space)(Artikel)

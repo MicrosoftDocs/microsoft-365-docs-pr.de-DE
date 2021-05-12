@@ -4,7 +4,7 @@ ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
 ms.reviewer: chrisarnoldmsft
-ms.date: 04/30/2021
+ms.date: 05/12/2021
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -15,13 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: Erfahren Sie, wie Sie Microsoft Viva Learning (Preview) im Teams konfigurieren.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c1427ae9fceab38046b53b31540e08d726815bda
-ms.sourcegitcommit: d3f8c69519c593b1580cfa7187ce085a99b8a846
+ms.openlocfilehash: 40e659796b22097f42515c0cbb704bdaa4ccc972
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52100965"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333518"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Einrichten von Microsoft Viva Learning (Preview) im Teams Admin Center
 

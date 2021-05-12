@@ -1,0 +1,99 @@
+### YamlMime:FAQ
+metadata:
+  title: Häufig gestellte Fragen zum Antispoofingschutz
+  f1.keywords:
+  - NOCSH
+  ms.author: chrisda
+  author: chrisda
+  manager: dansimp
+  ms.date: 
+  audience: ITPro
+  ms.topic: troubleshooting
+  localization_priority: Normal
+  search.appverid:
+  - MET150
+  ms.assetid: 
+  ms.collection:
+  - M365-security-compliance
+  - m365initiative-defender-office365
+  description: Administratoren können häufig gestellte Fragen und Antworten zum Schutz vor Spoofing in Exchange Online Protection (EOP) anzeigen.
+  ms.technology: mdo
+  ms.prod: m365-security
+  ms.openlocfilehash: cab4af2dd359b878cdf417a2378c05d2aa706107
+  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.translationtype: MT
+  ms.contentlocale: de-DE
+  ms.lasthandoff: 05/12/2021
+  ms.locfileid: "52334044"
+title: Häufig gestellte Fragen zum Antispoofingschutz
+summary: >
+  [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+
+  **Gilt für**
+
+  - [Exchange Online Protection](exchange-online-protection-overview.md)
+
+  - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
+
+  - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+
+  Dieser Artikel enthält häufig gestellte Fragen und Antworten zum Schutz vor Spoofing für Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer.
+
+
+  Fragen und Antworten zum Antispamschutz finden Sie unter Häufig gestellte Fragen zu [Antispamschutz](anti-spam-protection-faq.yml).
+
+
+  Fragen und Antworten zum Schutz vor Schadsoftware finden Sie unter Häufig gestellte Fragen zum Schutz [vor Schadsoftware](anti-malware-protection-faq-eop.yml)
+sections:
+- name: Ignoriert
+  questions:
+  - question: >
+      Warum hat Sich Microsoft dafür entscheiden, nicht authentifizierte eingehende E-Mails zu junken?
+    answer: >
+      Microsoft ist der Meinung, dass das Risiko, weiterhin nicht authentifizierte eingehende E-Mails zu erlauben, höher ist als das Risiko, dass legitime eingehende E-Mails verloren geht.
+  - question: >
+      Führt junking unauthenticated inbound email dazu, dass legitime E-Mails als Spam gekennzeichnet werden?
+    answer: >
+      Als Microsoft dieses Feature im Jahr 2018 aktivierte, wurden einige falsch positive Ergebnisse (gute Nachrichten wurden als ungültig gekennzeichnet). Im Laufe der Zeit wurden die Absender jedoch an die Anforderungen angepasst. Die Anzahl der Nachrichten, die als spoofed falsch identifiziert wurden, wurde für die meisten E-Mail-Pfade vernachlässigbar.
+
+
+      Microsoft selbst hat die neuen E-Mail-Authentifizierungsanforderungen zunächst einige Wochen übernommen, bevor es für Kunden bereitgestellt wurde. Zunächst gab es zwar Störungen, diese gingen jedoch allmählich zurück.
+  - question: >
+      Ist Spoof Intelligence für Microsoft 365-Kunden ohne Defender für Office 365 verfügbar?
+    answer: >
+      Ja. Ab Oktober 2018 steht Spoof Intelligence allen Organisationen mit Postfächern in Exchange Online und eigenständigen EOP-Organisationen ohne Exchange Online-Postfächer zur Verfügung.
+  - question: >
+      Wie kann ich Spamnachrichten oder Nachrichten, die kein Spam sind, an Microsoft melden?
+    answer: >
+      Siehe [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
+  - question: >
+      Ich bin Administrator und kenne nicht alle Quellen für Nachrichten in meiner E-Mail-Domäne!
+    answer: >
+      Weitere [Informationen finden Sie unter You don't know all sources for your email](email-validation-and-authentication.md#you-dont-know-all-sources-for-your-email).
+  - question: >
+      Was geschieht, wenn ich den Anti-Spoofing-Schutz für meine Organisation deaktiviere?
+    answer: >
+      Es wird nicht empfohlen, den Schutz vor Spoofing zu deaktivieren. Wenn Sie den Schutz deaktivieren, können mehr Phishing- und Spamnachrichten in Ihrer Organisation zugestellt werden. Nicht alle Phishing-Nachrichten sind Spoofing, und nicht alle gefälschten Nachrichten werden verpasst. Ihr Risiko ist jedoch höher.
+
+
+      Da nun [erweiterte Filterung](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) für Connectors verfügbar ist, wird nicht mehr empfohlen, den Antis spoofing-Schutz zu deaktivieren, wenn Ihre E-Mails über einen anderen Dienst vor EOP geroutet werden.
+  - question: >
+      Bedeutet Anti-Spoofing-Schutz, dass ich vor allen Phishingangriffen geschützt werde?
+    answer: >
+      Leider nein. Angreifer passen sich an andere Techniken an (z. B. gefährdete Konten oder Konten in kostenlosen E-Mail-Diensten). Der Antiphishingschutz funktioniert jedoch wesentlich besser, um diese anderen Arten von Phishingmethoden zu erkennen. Die Schutzebenen in EOP sind aufeinander aufbauend konzipiert.
+  - question: >
+      Blockieren andere große E-Mail-Dienste nicht authentifizierte eingehende E-Mails?
+    answer: >
+      Fast alle großen E-Mail-Dienste implementieren herkömmliche SPF-, DKIM- und DMARC-Prüfungen. Einige Dienste haben andere, strengere Prüfungen, aber nur wenige gehen bis EOP, um nicht authentifizierte E-Mails zu blockieren und sie als gefälschte Nachrichten zu behandeln. Die Branche wird jedoch zunehmend über Probleme mit nicht authentifizierten E-Mails informiert, insbesondere aufgrund des Problems von Phishing.
+  - question: >
+      Muss ich weiterhin die Einstellung für den erweiterten Spamfilter "SPF record: hard fail" ('MarkAsSpamSpfRecordHardFail') aktivieren, wenn ich Antis spoofing aktiviert habe?
+    answer: >
+      Nein. Diese ASF-Einstellung ist nicht mehr erforderlich. Der Antis spoofing-Schutz berücksichtigt sowohl SPF hard fails als auch eine viel umfassendere Reihe von Kriterien. Wenn Sie Antispoofing und **SPF-Eintrag: Schwerer Fehler** (_MarkAsSpamSpfRecordHardFail_) aktiviert haben, erhalten Sie wahrscheinlich mehr falsch positive Ergebnisse.
+
+
+      Es wird empfohlen, dieses Feature zu deaktivieren, da es fast keinen zusätzlichen Vorteil für das Erkennen von Spam oder Phishing bietet und stattdessen hauptsächlich falsch positive Ergebnisse generiert. Weitere Informationen finden Sie unter [Advanced Spam Filter (ASF) settings in EOP](advanced-spam-filtering-asf-options.md).
+  - question: >
+      Hilft das Sender Rewriting Scheme beim Beheben weitergeleiteter E-Mails?
+    answer: Mit SRS kann das Problem mit weitergeleiteten E-Mails nur teilweise behoben werden. Durch das Umschreiben von SMTP **MAIL FROM** kann SRS sicherstellen, dass die weitergeleitete Nachricht SPF am nächsten Ziel übergibt. Da antis spoofing jedoch auf der **Von-Adresse** in Kombination mit der **Mail FROM-** oder DKIM-Signierdomäne (oder anderen Signalen) basiert, reicht es nicht aus, um zu verhindern, dass weitergeleitete SRS-E-Mails als Spoofing gekennzeichnet werden.

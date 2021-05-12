@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 59581dce3701e622a1e2d7ed264370c9d92b3211
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 2c29cdb6823e695cb9c96a4f51ef7b1c41642ac9
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327273"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333626"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Verwalten von Themen im Themencenter in Microsoft Viva Topics
 
@@ -45,10 +45,6 @@ Wissensmanager helfen dabei, ermittelte Themen durch die verschiedenen Lebenszyk
 - **Veröffentlicht**: Ein bestätigtes Thema, das kuratiert wurde: Manuelle Bearbeitungen wurden vorgenommen, um die Qualität zu verbessern.
 
 - **Entfernt:** Ein Thema wird von einem Wissensmanager abgelehnt und ist für die Betrachter nicht mehr sichtbar. Ein Thema kann in einem beliebigen Zustand entfernt werden (vorgeschlagen, bestätigt oder veröffentlicht). Damit ein Thema entfernt werden kann, muss es ein Netz von zwei negativen Stimmen von Benutzern geben, die mit den Feedbackmechanismen auf der Themenkarte abgestimmt haben. Wenn beispielsweise ein Benutzer negativ und ein Benutzer für ein bestimmtes Thema positiv stimmte, benötigen Sie noch zwei negative Stimmen, damit das Thema entfernt werden kann. Wenn ein veröffentlichtes Thema entfernt wird, muss die Seite mit den kuratierten Details manuell über die Seitenbibliothek des Themencenters gelöscht werden.
-
-Auf der **Seite Themen verwalten** kann ein Wissensmanager sehen, ob ein Thema durch Benutzerstimmen oder durch eine bestimmte Person bestätigt oder entfernt wurde. Bei Themen, die durch Benutzerstimmen entfernt wurden, wird der  Grund in der Spalte **Entfernt** von als Benutzerstimmen und nicht als Name einer Person angezeigt. 
-
-   ![Screenshot der Seite "Themen verwalten", auf der die Liste der entfernten Themen mit hervorgehobenen Benutzerstimmen angezeigt wird.](../media/knowledge-management/removed-topics-user-votes.png) 
 
 > [!Note] 
 > Auf der Seite Themen **verwalten** kann jeder Wissensmanager nur Themen anzeigen, in denen er Zugriff auf die zugrunde liegenden Dateien und Seiten hat, die mit dem Thema verbunden sind. Diese Berechtigungstrimmerung wird in der Liste der Themen angezeigt, die auf den Registerkarten **Vorgeschlagen,** **Bestätigt,** Veröffentlicht **und** **Entfernt angezeigt** werden. Die Anzahl der Themen zeigt jedoch unabhängig von berechtigungen die Gesamtzahlen in der Organisation an.
