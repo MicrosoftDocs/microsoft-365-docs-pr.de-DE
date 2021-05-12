@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen für IT-Administratoren zur Verwaltung von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobilgeräte und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2cc1cb494569e054825875a4d0dc67e5c56f8146
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: a9755542b608c8ed7d3cd93bebbd764fd56b9768
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326618"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332714"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -67,7 +67,7 @@ Die aufgelisteten Zahlen sind die minimale Office-Anwendungsversion, die für je
 |[Überwachung bezeichnungsbezogener Benutzeraktivitäten](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | Rollout: 16.0.13628+ | Ja <sup>\*</sup>                                                        |
 |[Von Benutzern fordern, dass sie eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | Rollout: 16.45+         | Rollout: 2.47+ | Rollout: 16.0.13628+ | Rollout                                            
 |[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                                  | Rollout: 16.44+ | Wird überprüft | Wird überprüft | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Unterstützung von gemeinsame Erstellung und AutoSpeichern](sensitivity-labels-coauthoring.md) für beschriftete und verschlüsselte Dokumente | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider) | Vorschau: [Betakanal](https://office.com/insider) | Wird überprüft | Wird überprüft | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md) |
+|[Unterstützung von gemeinsame Erstellung und AutoSpeichern](sensitivity-labels-coauthoring.md) für beschriftete und verschlüsselte Dokumente | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider) | Vorschau: [Aktueller Kanal (Vorschau)](https://office.com/insider) | Wird überprüft | Wird überprüft | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md) |
 |
 
 **Fußnote:**
