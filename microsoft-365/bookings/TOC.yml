@@ -42,4 +42,4 @@
     - name: Berichtsinformationen für Microsoft Bookings
       href: reporting-info.md
     - name: Häufig gestellte Fragen (FAQs) zu Microsoft Bookings
-      href: bookings-faq.md
+      href: bookings-faq.yml

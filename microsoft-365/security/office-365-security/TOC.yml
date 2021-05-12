@@ -303,19 +303,19 @@
     - name: Häufig gestellte Fragen
       items:
         - name: Häufig gestellte Fragen zur delegierten Verwaltung
-          href: delegated-administration-faq.md
+          href: delegated-administration-faq.yml
         - name: EOP – Allgemeine häufig gestellte Fragen
-          href: eop-general-faq.md
+          href: eop-general-faq.yml
         - name: 'Häufig gestellte Fragen zu durch EOP in Warteschlangen eingereihten, verzögerten oder nicht zugestellten Nachrichten'
-          href: eop-queued-deferred-and-bounced-messages-faq.md
+          href: eop-queued-deferred-and-bounced-messages-faq.yml
         - name: Häufig gestellte Fragen zum Schutz vor Schadsoftware
-          href: anti-malware-protection-faq-eop.md
+          href: anti-malware-protection-faq-eop.yml
         - name: Häufig gestellte Fragen zum Antispamschutz
-          href: anti-spam-protection-faq.md
+          href: anti-spam-protection-faq.yml
         - name: Häufig gestellte Fragen zum Antispoofingschutz
-          href: anti-spoofing-protection-faq.md
+          href: anti-spoofing-protection-faq.yml
         - name: Häufig gestellte Fragen zur Quarantäne
-          href: quarantine-faq.md
+          href: quarantine-faq.yml
     - name: Referenz
       items:
         - name: Sicherheitsroadmap
