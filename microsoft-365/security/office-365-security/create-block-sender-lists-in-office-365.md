@@ -11,15 +11,15 @@ ms.topic: how-to
 localization_priority: Normal
 search.appverid:
 - MET150s
-description: Administratoren können sich über die verfügbaren und bevorzugten Optionen zum Blockieren eingehender Nachrichten in Exchange Online Protection (EOP) informieren.
+description: Administratoren können sich über die verfügbaren und bevorzugten Optionen zum Blockieren eingehender Nachrichten in EOP Exchange Online Protection (EOP) informieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a9ee0a026e33bf07bb929607b8eed9078d0b6e4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: fa2a5e0c71f14838dc8446431f5ea02a535fb787
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206002"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331454"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Erstellen blockierter Absenderlisten in EOP
 
@@ -30,11 +30,11 @@ ms.locfileid: "51206002"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer bietet EOP mehrere Möglichkeiten, E-Mails von unerwünschten Absendern zu blockieren. Diese Optionen umfassen blockierte Absender von Outlook, blockierte Absenderlisten oder blockierte Domänenlisten in Antispamrichtlinien, Exchange-Nachrichtenflussregeln (auch als Transportregeln bekannt) und die IP-Sperrliste (Verbindungsfilterung). Zusammen können Sie diese Optionen als blockierte _Absenderlisten sehen._
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer bietet EOP mehrere Möglichkeiten, E-Mails von unerwünschten Absendern zu blockieren. Diese Optionen umfassen Outlook blockierte Absender, blockierte Absenderlisten oder blockierte Domänenlisten in Antispamrichtlinien, Exchange Nachrichtenflussregeln (auch als Transportregeln bekannt) und die IP-Sperrliste (Verbindungsfilterung). Zusammen können Sie diese Optionen als blockierte _Absenderlisten sehen._
 
-Die beste Methode zum Blockieren von Absendern variiert je nach Wirkungsbereich. Für einen einzelnen Benutzer kann outlook blocked senders die richtige Lösung sein. Für viele Benutzer wäre eine der anderen Optionen geeigneter. Die folgenden Optionen werden nach Wirkungsbereich und Breite bewertet. Die Liste geht von schmal zu breit, aber lesen *Sie die Spezifischen* für vollständige Empfehlungen.
+Die beste Methode zum Blockieren von Absendern variiert je nach Wirkungsbereich. Für einen einzelnen Benutzer könnte die richtige Lösung Outlook Blockierte Absender sein. Für viele Benutzer wäre eine der anderen Optionen geeigneter. Die folgenden Optionen werden nach Wirkungsbereich und Breite bewertet. Die Liste geht von schmal zu breit, aber lesen *Sie die Spezifischen* für vollständige Empfehlungen.
 
-1. Blockierte Absender in Outlook (die Liste blockierter Absender, die in jedem Postfach gespeichert ist)
+1. Outlook Blockierte Absender (die Liste blockierter Absender, die in jedem Postfach gespeichert ist)
 
 2. Blockierte Absenderlisten oder blockierte Domänenlisten (Antispamrichtlinien)
 
@@ -57,9 +57,9 @@ Eine standardmäßige SMTP-E-Mail besteht aus einem *Nachrichten-Envelope* und d
 
 Häufig sind die Adressen und die Adressen identisch (Kommunikation zwischen `5321.MailFrom` `5322.From` Personen). Wenn E-Mails jedoch im Auftrag einer anderen Person gesendet werden, können die Adressen unterschiedlich sein.
 
-Blockierte Absenderlisten und blockierte Domänenlisten in Antispamrichtlinien in EOP überprüfen sowohl die Adressen `5321.MailFrom` als auch `5322.From` die Adressen. Blockierte Absender in Outlook verwenden nur die `5322.From` Adresse.
+Blockierte Absenderlisten und blockierte Domänenlisten in Antispamrichtlinien in EOP überprüfen sowohl die Adressen `5321.MailFrom` als auch `5322.From` die Adressen. Outlook Blockierte Absender verwenden nur die `5322.From` Adresse.
 
-## <a name="use-outlook-blocked-senders"></a>Verwenden von blockierten Absendern in Outlook
+## <a name="use-outlook-blocked-senders"></a>Verwenden Outlook blockierter Absender
 
 Wenn nur eine kleine Anzahl von Benutzern unerwünschte E-Mails empfangen hat, können Benutzer oder Administratoren die Absender-E-Mail-Adressen der Liste blockierter Absender im Postfach hinzufügen. Anweisungen finden Sie unter [Configure junk email settings on Exchange Online mailboxes](configure-junk-email-settings-on-exo-mailboxes.md).
 
@@ -70,7 +70,7 @@ Wenn Nachrichten aufgrund der Liste blockierter Absender eines Benutzers erfolgr
 
 ## <a name="use-blocked-sender-lists-or-blocked-domain-lists"></a>Verwenden blockierter Absenderlisten oder blockierter Domänenlisten
 
-Wenn mehrere Benutzer betroffen sind, ist der Bereich breiter, sodass die nächste beste Option blockierte Absenderlisten oder blockierte Domänenlisten in Antispamrichtlinien sind. Nachrichten von Absendern in den Listen werden als **Spam** gekennzeichnet, und  die Aktion, die Sie für das Spamfilter-Urteil konfiguriert haben, wird für die Nachricht verwendet. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md).
+Wenn mehrere Benutzer betroffen sind, ist der Bereich breiter, sodass die nächste beste Option blockierte Absenderlisten oder blockierte Domänenlisten in Antispamrichtlinien sind. Nachrichten von Absendern in den Listen werden als Spam mit hoher Vertrauenssicherheit **gekennzeichnet,** und die Aktion, die Sie für das Spamfilter-Filter-Urteil mit hoher Sicherheit konfiguriert haben, wird für die Nachricht verwendet.  Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md).
 
 Die maximale Grenze für diese Listen beträgt ca. 1.000 Einträge.
 

@@ -17,12 +17,12 @@ appliesto:
 - Office 365 Personal
 - Office Online Server
 - Office Web Apps
-ms.openlocfilehash: 3d44e178d351942b4a178ddc1954ddd839665639
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 870572a61c241d3d3c8ce6791cee77edba2a1956
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919301"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332678"
 ---
 # <a name="disabling-tls-10-and-11-for-microsoft-365"></a>Deaktivieren von TLS 1.0 und 1.1 für Microsoft 365
 
@@ -91,3 +91,19 @@ Sie müssen Anwendungen aktualisieren, die Microsoft 365-APIs über TLS 1.0 oder
 ## <a name="more-information"></a>Weitere Informationen
 
 Weitere Informationen finden Sie unter [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
+
+## <a name="references"></a>Informationsquellen
+
+Die folgenden Ressourcen bieten Anleitungen, um sicherzustellen, dass Ihre Clients TLS 1.2 oder eine spätere Version verwenden und TLS 1.0 und 1.1 deaktivieren:
+
+- Wenn Sie Windows-7-Clients haben, die mit Office 365 verbunden sind, stellen Sie sicher, dass TLS 1.2 die standardmäßigen sicheren Protokolle in WinHTTP in Windows sind. Weitere Informationen finden Sie unter [KB 3140245 – Update, um TLS 1.1 und TLS 1.2](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in)als sichere Standardprotokolle in WinHTTP in Windows zu aktivieren.
+- Informationen zur Beseitigung einer schwachen TLS-Nutzung durch Entfernen von TLS 1.0- und 1.1-Abhängigkeiten finden Sie unter [TLS 1.2-Unterstützung bei Microsoft](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/).
+- [Die neue IIS-Funktionalität](https://cloudblogs.microsoft.com/microsoftsecure/2017/09/07/new-iis-functionality-to-help-identify-weak-tls-usage/) erleichtert die Suche nach Clients unter [Windows Server 2012 R2](https://support.microsoft.com/help/4025335/windows-8-1-windows-server-2012-r2-update-kb4025335) und [Windows Server 2016](https://support.microsoft.com/help/4025334/windows-10-update-kb4025334), die unter Verwendung von schwachen Sicherheitsprotokollen eine Verbindung mit dem Dienst herstellen.
+- Hier finden Sie weitere Informationen zur [Lösung des TLS 1.0-Problems.](https://www.microsoft.com/download/details.aspx?id=55266)
+- Allgemeine Informationen zu unserem Sicherheits-Ansatz finden Sie im [Office 365 Trust Center](https://www.microsoft.com/trustcenter/cloudservices/office365).
+- [Vorbereiten auf die Einstellung von TLS 1.0/1.1 – Office 365 Skype for Business](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Preparing-for-TLS-1-0-1-1-Deprecation-O365-Skype-for-Business/ba-p/222247)
+- [Exchange Server TLS guidance, part 1: Getting Ready for TLS 1.2](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/ba-p/607649)
+- [Exchange Server TLS-Leitfaden Teil 2: Enabling TLS 1.2 and Identifying Clients Not Using It](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-2-enabling-tls-1-2-and/ba-p/607761)
+- [Exchange Server TLS-Leitfaden Teil 3: TLS 1.0/1.1 abschalten](https://techcommunity.microsoft.com/t5/exchange-team-blog/exchange-server-tls-guidance-part-3-turning-off-tls-1-0-1-1/ba-p/607898)
+- [Aktivieren des TLS 1.1- und TLS 1.2-Supports in Office Online-Server](/officeonlineserver/enable-tls-1-1-and-tls-1-2-support-in-office-online-server)
+

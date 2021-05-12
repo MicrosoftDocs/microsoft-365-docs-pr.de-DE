@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,16 +18,15 @@ ms.custom:
 - fwlink 874703
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
 search.appverid: MET150
 description: Erfahren Sie, wie Sie Ihr Abonnement reaktivieren, wenn es abläuft, deaktiviert oder gekündigt wird.
 ms.date: 04/07/2021
-ms.openlocfilehash: 80d1594890ec15fc4c2391d439ccbc16be6ae707
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 7f77a9782e9028521cbcefbdbffc49bc28db8e9c
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280895"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333170"
 ---
 # <a name="reactivate-your-subscription"></a>Reaktivieren Ihres Abonnements
 
@@ -66,6 +65,6 @@ Sie müssen ein globaler Administrator oder Abrechnungsadministrator sein, um ei
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Probieren oder kaufen Sie Microsoft 365 business-Abonnement](../try-or-buy-microsoft-365.md) (Artikel)\
+[Testen oder kaufen Sie ein Microsoft 365 Business-Abonnement](../try-or-buy-microsoft-365.md) (Artikel)\
 [Verlängern von Microsoft 365 Business](renew-your-subscription.md) (Artikel)\
 [Kündigen Ihres Abonnements](cancel-your-subscription.md) (Artikel)

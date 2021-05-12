@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +16,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Erfahren Sie, wie Sie Microsoft 365 für Business-Testversion oder ein kostenpflichtiges Abonnement kündigen können.
 ms.date: 04/08/2021
-ms.openlocfilehash: 329bc10adbe6c2ad0efe3609e7cb72141ae346bd
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 022981e91abc985a0540acccccd6f211b39620a4
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297308"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333314"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
@@ -126,7 +124,7 @@ Wenn die Kündigung wirksam wird, verlieren Ihre Benutzer den Zugriff auf ihre D
 
 - Informationen zum Verschieben von E-Mails, Kontakten, Aufgaben und Kalenderinformationen in ein anderes Konto finden Sie unter [Exportieren oder Sichern von E-Mails, Kontakten und Kalendern in einer Outlook PST-Datei](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 
-- Informationen zum Speichern einer Dokumentbibliothek oder von Listeninhalten (z. B. Kontakten) aus einer SharePoint Online-Umgebung (OneDrive for Business oder Teamwebsites) auf Dateifreigaben oder einem lokalen Computer finden Sie unter [Manuelle Migration von SharePoint Online-Inhalten](https://docs.microsoft.com/sharepoint/troubleshoot/migration-tool/content-manual-migration).
+- Informationen zum Speichern einer Dokumentbibliothek oder von Listeninhalten (z. B. Kontakten) aus einer SharePoint Online-Umgebung (OneDrive for Business oder Teamwebsites) auf Dateifreigaben oder einem lokalen Computer finden Sie unter [Manuelle Migration von SharePoint Online-Inhalten](/sharepoint/troubleshoot/migration-tool/content-manual-migration).
 
 ### <a name="uninstall-office-optional"></a>Deinstallieren von Office (optional)
 

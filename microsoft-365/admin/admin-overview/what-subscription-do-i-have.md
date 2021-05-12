@@ -21,18 +21,18 @@ ms.custom:
 search.appverid: MET150
 description: Erfahren Sie, welche Abonnements Ihre Organisation besitzt, indem Sie zur Seite Ihre Produkte gehen.
 ms.date: 01/21/2021
-ms.openlocfilehash: c54b9795487f1cfc5902c2c761fdd65b78109bcf
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: e1f7ebecafa5edff1ccc3d6eb4e4dc143054996a
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327234"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332666"
 ---
 # <a name="what-subscription-do-i-have"></a>Welches Abonnement habe ich?
 
 Wenn Sie Administrator sind, können Sie überprüfen, welche Abonnements Ihre Organisation hat, indem Sie zum Admin Center gehen.
   
- **Sie sind kein Administrator?** Weitere [Informationen finden Sie unter Welche Microsoft 365 Business-Produkte oder -Lizenzen habe ich?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
+**Sie sind kein Administrator?** Weitere [Informationen finden Microsoft 365 für Geschäftsprodukt oder -lizenz?](https://support.microsoft.com/office/f8ab5e25-bf3f-4a47-b264-174b1ee925fd)
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 2. Auf der **Registerkarte Produkte** werden alle Abonnements angezeigt. Jede Abonnementzeile enthält Informationen zu Lizenzen, Abonnementstatus und Abrechnung.

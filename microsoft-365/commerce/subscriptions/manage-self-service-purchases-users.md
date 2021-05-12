@@ -5,22 +5,25 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ms.collection:
-- commerce
-ms.custom: AdminSurgePortfolio
+ms.collection: M365-subscription-management
+ms.custom:
+- AdminSurgePortfolio
+- commerce_ssp
 search.appverid:
 - MET150
 description: Benutzer können erfahren, wie sie ihre Self-Service-Käufe verwalten.
-ms.openlocfilehash: 9935259f05432b964fbe138b39397f192e203eb2
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.date: 03/17/2021
+ms.openlocfilehash: 0f9832f69d7e89346e82e3acef0e626fc7f6c4de
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297296"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333254"
 ---
 # <a name="manage-self-service-purchases-users"></a>Self-Service-Einkäufe (Benutzer) verwalten
 
@@ -74,7 +77,7 @@ Sie können eine Liste aller gekauften Self-Service-Abonnements anzeigen.
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 2. Suchen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie kündigen möchten. Wählen Sie **Weitere Aktionen** (drei Punkte) und dann **Abonnement kündigen** aus.
 3. Wählen Sie im Bereich **Abonnement kündigen** einen Grund aus, warum Sie kündigen. Geben Sie optional Feedback, das Sie haben.
-4. Klicken Sie auf **Speichern**.
+4. Wählen Sie **Speichern** aus.
 
 ## <a name="manage-your-payment-details"></a>Verwalten Ihrer Zahlungsdetails
 

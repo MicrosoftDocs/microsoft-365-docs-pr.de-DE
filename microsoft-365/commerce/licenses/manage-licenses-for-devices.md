@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: shegu, nicholak
 ms.audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -12,27 +13,26 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-- commerce
 description: Erfahren Sie, wie Sie Gruppen Lizenzen für die Verwendung mit Geräten zuweisen.
 ms.custom:
-- okr_SMB
 - AdminSurgePortfolio
-search.appverid:
-- MET150
-ms.openlocfilehash: a316810e3e6ddb1373697dc56b2fccb5a32cf0b1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+- okr_SMB
+- commerce_licensing
+search.appverid: MET150
+ms.date: 03/17/2021
+ms.openlocfilehash: 67bd0734953c64f51390aac949a7da477914c7b4
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911482"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331658"
 ---
 # <a name="manage-licenses-for-devices"></a>Verwalten von Lizenzen für Geräte
 
 Wenn Sie über Microsoft 365 Apps for Enterprise (Gerät) oder Microsoft 365 Apps for Education (Gerät) verfügen, können Sie Mithilfe von Azure AD-Gruppen Lizenzen zu Geräten zuweisen. Wenn ein Gerät über eine Lizenz verfügt, kann jeder, der dieses Gerät verwendet, Microsoft 365 Apps for Enterprise (zuvor Office 365 ProPlus genannt) verwenden. Angenommen, Sie verfügen über 20 Laptops und Tablets, die von Personen in Ihrer Organisation verwendet werden. Wenn Sie jedem Gerät eine Lizenz zuweisen, verwendet jede Person, die sich bei einem der Geräte anmeldet, Microsoft 365 Apps for Enterprise, ohne dass eine eigene Lizenz erforderlich ist.
 
 > [!IMPORTANT]
-> Die gerätebasierte Lizenzierung für Microsoft 365 Apps for Enterprise ist nur als Add-On-Lizenz für einige kommerzielle Kunden und einige Bildungskunden verfügbar. Für kommerzielle Kunden ist die Lizenz *Microsoft 365 Apps for Enterprise (Gerät)* und nur über Konzernvertrag/Konzernvertrag verfügbar. Für Bildungskunden ist die Lizenz *Microsoft 365 Apps for Education (Gerät)* und nur über Enrollment for Education Solutions (EES) verfügbar. Weitere Informationen finden Sie im Blogbeitrag zur Verfügbarkeit [von Bildungseinrichtungen](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-device-based-subscription-for-education/). Wenden Sie sich zur kommerziellen Verfügbarkeit an Ihren Microsoft-Kontomitarbeiter.
+> Die gerätebasierte Lizenzierung für Microsoft 365 Apps for Enterprise ist nur als Add-On-Lizenz für einige kommerzielle Kunden und einige Bildungskunden verfügbar. Für kommerzielle Kunden ist die Lizenz *Microsoft 365 Apps for Enterprise (Gerät)* und nur über Konzernvertrag/Konzernvertrag verfügbar. Für Bildungskunden ist die Lizenz *Microsoft 365 Apps for Education (Gerät)* und nur über Enrollment for Education Solutions (EES) verfügbar. Weitere Informationen finden Sie im Blogbeitrag zur Verfügbarkeit [von Bildungseinrichtungen](https://educationblog.microsoft.com/2019/08/attention-it-administrators-announcing-office-365-proplus-device-based-subscription-for-education). Wenden Sie sich zur kommerziellen Verfügbarkeit an Ihren Microsoft-Kontomitarbeiter.
 
 Zunächst erstellen Sie eine Gruppe im Azure Active Directory Admin Center und weisen der Gruppe dann Geräte zu. Weitere Informationen zur Gerätelizenzierung, einschließlich gerätebasierter Anforderungen, der arten von Gruppen, die Sie verwenden können, und zum Konfigurieren von Microsoft 365 Apps for Enterprise für die Verwendung der Gerätelizenzierung finden Sie unter Gerätebasierte Lizenzierung für [Microsoft 365 Apps for Enterprise](/deployoffice/device-based-licensing).
 

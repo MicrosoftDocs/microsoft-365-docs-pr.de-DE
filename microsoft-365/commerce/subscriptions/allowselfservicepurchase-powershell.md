@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: mijeffer, pablom
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -14,17 +15,18 @@ ms.collection:
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- commerce
+- commerce_ssp
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie das AllowSelfServicePurchase PowerShell-Cmdlet verwenden, um den Self-Service-Kauf ein- oder auszuschalten.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9fb5593855f9523198a3d70548e444a831e82c80
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.date: 03/18/2021
+ms.openlocfilehash: 09161f69e72babe8270b339243d73444b93d9959
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918242"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333374"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Verwenden von AllowSelfServicePurchase für das MS Commerce PowerShell-Modul
 
@@ -40,13 +42,13 @@ Sie können das **MS Commerce PowerShell-Modul** verwenden, um:
 
 Für die Verwendung des **MS Commerce** PowerShell-Moduls benötigen Sie:
 
-- Ein Windows 10-Gerät
+- Ein Windows 10 Gerät
 - Administratorberechtigung für das Gerät
 - Rolle "Globaler Administrator" oder "Abrechnungsadministrator" für Ihren Mandanten
 
 ## <a name="install-the-mscommerce-powershell-module"></a>Installieren des MS Commerce PowerShell-Moduls
 
-Sie installieren das **MS Commerce** PowerShell-Modul einmal auf Ihrem Windows 10-Gerät und importieren es dann in jede gestartete PowerShell-Sitzung. Laden Sie **das MS Commerce** PowerShell-Modul aus dem [PowerShell-Katalog herunter.](https://aka.ms/allowselfservicepurchase-powershell-gallery)
+Sie installieren das **MS Commerce** PowerShell-Modul einmal auf Ihrem Windows 10 und importieren es dann in jede gestartete PowerShell-Sitzung. Laden Sie **das MS Commerce** PowerShell-Modul aus dem [PowerShell-Katalog herunter.](https://aka.ms/allowselfservicepurchase-powershell-gallery)
 
 Führen Sie den folgenden Befehl **aus,** um das MS Commerce PowerShell-Modul mit **PowerShellGet** zu installieren:
 
@@ -56,13 +58,13 @@ Install-Module -Name MSCommerce
 
 ## <a name="import-mscommerce-into-the-powershell-session"></a>Importieren von MSCommerce in die PowerShell-Sitzung
 
-Nachdem Sie das Modul auf Ihrem Windows 10-Gerät installiert haben, importieren Sie es in jede gestartete PowerShell-Sitzung. Führen Sie den folgenden Befehl aus, um ihn in eine PowerShell-Sitzung zu importieren:
+Nachdem Sie das Modul auf Ihrem Windows 10 installiert haben, importieren Sie es in jede gestartete PowerShell-Sitzung. Führen Sie den folgenden Befehl aus, um ihn in eine PowerShell-Sitzung zu importieren:
 
 ```powershell
 Import-Module -Name MSCommerce
 ```
 
-## <a name="connect-to-mscommerce-with-your-credentials"></a>Herstellen einer Verbindung mit MSCommerce mit Ihren Anmeldeinformationen
+## <a name="connect-to-mscommerce-with-your-credentials"></a>Verbinden mit Ihren Anmeldeinformationen zu MSCommerce
 
 Führen Sie den folgenden Befehl aus, um eine Verbindung mit dem PowerShell-Modul mit Ihren Anmeldeinformationen herzustellen.
 
@@ -70,7 +72,7 @@ Führen Sie den folgenden Befehl aus, um eine Verbindung mit dem PowerShell-Modu
 Connect-MSCommerce
 ```
 
-Mit diesem Befehl wird die aktuelle PowerShell-Sitzung mit einem Azure Active Directory-Mandanten verbunden. Der Befehl fordert Sie auf, einen Benutzernamen und ein Kennwort für den Mandanten einzugeben, mit dem Sie eine Verbindung herstellen möchten. Wenn die mehrstufige Authentifizierung für Ihre Anmeldeinformationen aktiviert ist, verwenden Sie die interaktive Option zum Anmelden.
+Dieser Befehl verbindet die aktuelle PowerShell-Sitzung mit einem Azure Active Directory Mandanten. Der Befehl fordert Sie auf, einen Benutzernamen und ein Kennwort für den Mandanten einzugeben, mit dem Sie eine Verbindung herstellen möchten. Wenn die mehrstufige Authentifizierung für Ihre Anmeldeinformationen aktiviert ist, verwenden Sie die interaktive Option zum Anmelden.
 
 ## <a name="view-details-for-allowselfservicepurchase"></a>Anzeigen von Details für AllowSelfServicePurchase
 
@@ -97,8 +99,8 @@ In der folgenden Tabelle sind die verfügbaren Produkte und deren **ProductId au
 | Power Automate RPA | CFQ7TTC0KXG6  |
 | Power BI Premium (eigenständig) | CFQ7TTC0KXG7  |
 | Power BI Pro | CFQ7TTC0L3PB |
-| Projektplan 1 | CFQ7TTC0KXND |
-| Projektplan 3 | CFQ7TTC0KXNC |
+| Project Plan 1 | CFQ7TTC0KXND |
+| Project Plan 3 | CFQ7TTC0KXNC |
 | Visio Plan 1 | CFQ7TTC0KXN9 |
 | Visio Plan 2 | CFQ7TTC0KXN8 |
 

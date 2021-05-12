@@ -1,10 +1,11 @@
 ---
-title: Beantragen eines Fapiao für Office 365 betrieben von 21Vianet
+title: Beantragen eines Fapiao für Office 365, betrieben von 21Vianet
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,22 +16,20 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
-- PPM_jmueller
-ms.reviewer: jkinma
 search.appverid:
 - MET150
 - GEA150
-description: Erfahren Sie, wie Sie Ihre Fapiao-Anforderung an das 21Vianet Fapiao-Verwaltungssystem übermitteln, nachdem Sie eine Zahlung im Office 365 von 21Vianet in China durchgeführt haben.
+description: Erfahren Sie, wie Sie Ihre Fapiao-Anforderung an das 21Vianet Fapiao-Verwaltungssystem übermitteln, nachdem Sie eine Zahlung im Office 365 durchgeführt von 21Vianet in China durchgeführt haben.
 monikerRange: o365-21vianet
 ms.date: 03/30/2021
-ms.openlocfilehash: 1f2dec1ca224b7f8c6c22d5d9d0d2a0cac8630ea
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 605e1bf001f6c6acb3a8b5044adeb66e110641b0
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107460"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332462"
 ---
-# <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Beantragen eines Fapiao für Office 365 betrieben von 21Vianet
+# <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Beantragen eines Fapiao für Office 365, betrieben von 21Vianet
 
 Sie können Ihre Fapiao-Anforderung an das 21Vianet-Fapiao-Verwaltungssystem etwa drei Tage nach der 21Vianet-Fapiao-Verwaltung übermitteln. Nachdem Sie Ihre Fapiao-Anforderung übermittelt haben, wird sie in zwei Tagen verarbeitet.
   
@@ -40,7 +39,7 @@ Sie können Ihre Fapiao-Anforderung an das 21Vianet-Fapiao-Verwaltungssystem etw
 
 Es gibt zwei Möglichkeiten, sich für einen Fapiao zu bewerben:
   
-1. Nachdem Sie eine Zahlung auf der Office 365 von der 21Vianet-Website durchgeführt haben, erhalten Sie eine Auftragsbestätigungs-E-Mail mit Ihrer Bestellnummer und einem Link zum Fapiao-Verwaltungssystem. Sie können den Link in der E-Mail verwenden, um ein Konto im <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao-Informationsverwaltungssystem zu erstellen.</a>
+1. Nachdem Sie eine Zahlung auf der Office 365 betrieben von 21Vianet-Website durchgeführt haben, erhalten Sie eine Auftragsbestätigungs-E-Mail mit Ihrer Bestellnummer und einem Link zum Fapiao-Verwaltungssystem. Sie können den Link in der E-Mail verwenden, um ein Konto im <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao-Informationsverwaltungssystem zu erstellen.</a>
 
     Oder
 
@@ -51,7 +50,7 @@ Es gibt zwei Möglichkeiten, sich für einen Fapiao zu bewerben:
 ## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>Schritt 2: Registrieren beim 21Vianet Fapiao-Verwaltungssystem
 
 > [!NOTE]
-> Sie können den gleichen E-Mail-Namen und das gleiche Kennwort wie Ihr Office 365 verwenden, oder Sie können etwas anderes verwenden.
+> Sie können denselben E-Mail-Namen und dasselbe Kennwort wie Ihr Office 365-Konto verwenden, oder Sie können etwas anderes verwenden.
   
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">21Vianet Fapiao Information Management System</a>.
 
@@ -134,7 +133,7 @@ Wenn Sie den Fapiao-Titel ändern möchten, senden Sie den Fapiao zurück an uns
 
 ### <a name="how-do-i-find-my-order-id"></a>Wie finde ich meine Bestell-ID?
 
-1. Wechseln Sie [im Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627)zur Seite  \> **Abrechnungsrechnungen & Zahlungen.**
+1. Wechseln Sie im [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627)zur Seite **Abrechnung** \> **Rechnungen und Zahlungen**.
 
 2. Suchen Sie die Rechnung, die Sie möchten, wählen Sie zum Anzeigen aus, oder wählen Sie aus, um die PDF herunterzuladen.
 

@@ -5,28 +5,28 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: sinakassaw, nicholak
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
 - M365-subscription-management
-- Adm_TOC
+- Adm_O365
 ms.custom:
 - AdminSurgePortfolio
-- manage_licenses
 - okr_smb
-- commerce
-search.appverid:
-- MET150
+- manage_licenses
+- commerce_licensing
+search.appverid: MET150
 description: Erfahren Sie, wie Sie lizenzen von Benutzerkonten wegzuweisen.
 ms.date: 07/01/2020
-ms.openlocfilehash: 87bb8f6fe0e85fc4ac832f2bc4ad746e8d6386eb
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 6f2cbf65e1d6a38a4b1ed00976d4dd473d7331e9
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52310992"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332414"
 ---
 # <a name="unassign-licenses-from-users"></a>Aufheben der Zuweisung von Benutzerlizenzen
 
@@ -95,7 +95,7 @@ Wenn Sie die Seite **Aktive Benutzer** verwenden, um lizenzen zuzuweisen, wird d
 3. Wählen Sie im rechten Bereich **Lizenzen und Apps** aus.
 4. Erweitern Sie **den Abschnitt Lizenzen,** löschen Sie die Felder für die Lizenzen, die Sie zuweisen möchten, und wählen Sie **Dann Änderungen speichern aus.**
 
-###  <a name="unassign-licenses-from-multiple-users"></a>Zuweisen von Lizenzen von mehreren Benutzern
+### <a name="unassign-licenses-from-multiple-users"></a>Zuweisen von Lizenzen von mehreren Benutzern
 
 ::: moniker range="o365-worldwide"
 
@@ -123,11 +123,11 @@ Wenn Sie die Seite **Aktive Benutzer** verwenden, um lizenzen zuzuweisen, wird d
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Was geschieht mit den Daten eines Benutzers, wenn Sie die Lizenz entfernen?
 
 - Wenn eine Lizenz von einem Benutzer entfernt wird, werden daten, die diesem Konto zugeordnet sind, 30 Tage lang gespeichert. Nach der 30-tägigen Nachfrist werden die Daten gelöscht und können nicht wiederhergestellt werden.
-- In der OneDrive for Business gespeicherte Dateien werden nur gelöscht, wenn der Benutzer aus dem Microsoft 365 Admin Center gelöscht oder über die Active Directory-Synchronisierung entfernt wird. Weitere Informationen finden Sie unter [OneDrive Aufbewahrung und Löschung](/onedrive/retention-and-deletion).
-- Wenn die Lizenz entfernt wird, kann das Postfach des Benutzers nicht mehr mithilfe eines eDiscovery-Tools wie Inhaltssuche oder -Advanced eDiscovery. Weitere Informationen finden Sie unter "Suchen getrennter oder nicht lizenzierter Postfächer" in [Inhaltssuchreferenz](../../compliance/content-search-reference.md#searching-disconnected-or-de-licensed-mailboxes).
-- Wenn Sie über ein Enterprise wie Office 365 Enterprise E3 verfügen, können Exchange Online die Postfachdaten eines gelöschten Benutzerkontos mithilfe inaktiver Postfächer [beibehalten.](../../compliance/inactive-mailboxes-in-office-365.md) Weitere Informationen finden Sie unter [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
-- Informationen zum Blockieren des Zugriffs eines Benutzers auf Microsoft 365 Daten nach dem Entfernen der Lizenz und zum anschließenden Zugriff auf die Daten finden Sie unter Entfernen eines ehemaligen [Mitarbeiters](../add-users/remove-former-employee.md).
-- Wenn Sie die Lizenz eines Benutzers entfernen und weiterhin Office Installierte Apps installiert haben, werden in [Office unlizenzierte](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) Produkt- und Aktivierungsfehler angezeigt, wenn Office apps verwenden.
+- In OneDrive for Business gespeicherte Dateien werden nur gelöscht, wenn der Benutzer aus dem Microsoft 365 Admin Center gelöscht oder über die Active #A0 entfernt wird. Weitere Informationen finden Sie unter [OneDrive retention and deletion](/onedrive/retention-and-deletion).
+- Wenn die Lizenz entfernt wird, kann das Postfach des Benutzers nicht mehr mit einem eDiscovery-Tool wie inhaltssuche oder advanced eDiscovery durchsucht werden. Weitere Informationen finden Sie unter "Suchen getrennter oder nicht lizenzierter Postfächer" [in Der Inhaltssuche in Microsoft 365](../../compliance/content-search.md).
+- Wenn Sie über ein Enterprise-Abonnement wie Office 365 Enterprise E3 verfügen, können Sie mit Exchange Online die Postfachdaten eines gelöschten Benutzerkontos mithilfe inaktiver [Postfächer beibehalten.](../../compliance/inactive-mailboxes-in-office-365.md) Weitere Informationen finden Sie unter [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
+- Informationen zum Blockieren des Zugriffs eines Benutzers auf Microsoft 365-Daten nach dem Entfernen der Lizenz und zum anschließenden Zugriff auf die Daten finden Sie unter Entfernen eines ehemaligen [Mitarbeiters.](../add-users/remove-former-employee.md)
+- Wenn Sie die Lizenz eines Benutzers entfernen und weiterhin Office-Apps installiert sind, werden [unlizenzierte Produkt-](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) und Aktivierungsfehler in Office angezeigt, wenn sie Office-Apps verwenden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

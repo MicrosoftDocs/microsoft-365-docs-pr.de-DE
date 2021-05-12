@@ -20,21 +20,48 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie mehr über das Microsoft 365 Admin Center.
-ms.openlocfilehash: 5ae72b51657cea1ce635c622e875cdf736ee1598
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+description: Erfahren Sie mehr über Microsoft 365 Admin Center.
+ms.openlocfilehash: 47eafbf49ac70d86b4065d3a67672c79abc16e63
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51221761"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332246"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Übersicht über das Microsoft 365 Admin Center
+
+- [Das Admin Center in vereinfachter Ansicht](#the-admin-center-in-simplified-view)
+- [Das Admin Center in der Dashboardansicht](#the-admin-center-in-dashboard-view)
+
+## <a name="the-admin-center-in-simplified-view"></a>Das Admin Center in vereinfachter Ansicht
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
+
+Mit dem Microsoft 365 Admin Center können Sie Kennwörter zurücksetzen, Ihre Rechnung anzeigen, Benutzer hinzufügen oder entfernen und vieles mehr an einem Ort.
+
+Melden Sie sich bei Office.com mit Ihrem Arbeitskonto an, und wählen Sie das App-Startfeld aus. 
+
+Wenn Sie über die Berechtigung zum Zugriff auf das Admin Center verfügen, wird **Admin** in der Liste angezeigt. Wählen Sie sie aus. 
+
+Überprüfen Sie oben im Admin Center die für Sie am besten zu findenen Aktionen. Je nachdem, was Sie bereits eingerichtet haben, werden möglicherweise unterschiedliche Aktionen angezeigt, z. B. das Erstellen neuer Konten, die Verwendung von Teams, das Einrichten von E-Mails und das Installieren Office Apps. 
+ 
+Unter **Ihrer Organisation** auf der Registerkarte Benutzer finden Sie eine Liste der Personen, die auf Apps und Dienste zugreifen, neue Benutzer hinzufügen, Kennwörter zurücksetzen oder das Menü Weitere Aktionen **verwenden** können.  Wählen Sie eine Person aus, um ihre Informationen und Einstellungen ein- oder zu bearbeiten.  
+
+Erstellen Sie **auf Teams** Registerkarte ein neues Team, oder verwalten Sie vorhandene Teams. Sie können die Mitglieder eines Teams verwalten oder **Weitere Aktionen auswählen,** um andere Einstellungen Teams ändern. 
+
+Fügen Sie **auf der** Registerkarte Abonnements weitere Produkte hinzu, fügen Sie Lizenzen hinzu, oder verwenden Sie das Menü Weitere **Aktionen,** um Lizenzen oder Zahlungsmethoden zu ändern.
+
+Navigieren Sie **auf** der Registerkarte Lernen zu Videos und Artikeln über das Admin Center und andere Microsoft 365 Features. Um die erweiterten Features des Admin Centers zu erkunden, öffnen Sie das Navigationsmenü, und erweitern Sie die Überschriften, um weitere Informationen zu erhalten. Wählen **Sie Alle anzeigen** aus, um alles im Navigationsmenü anzuzeigen, oder verwenden Sie die Suchleiste, um schnell zu finden, was Sie suchen.
+
+Wenn Sie Unterstützung benötigen, wählen Sie **Hilfe & Support aus.** Suchen Sie nach einem Thema, bei dem Sie Hilfe wünschen, und zeigen Sie die empfohlene Lösung an, oder wählen Sie das Headset aus, um den Support zu kontaktieren, und geben Sie dann Ihre Fragen und Kontaktinformationen ein. 
+
+## <a name="the-admin-center-in-dashboard-view"></a>Das Admin Center in der Dashboardansicht
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
 Im Microsoft 365 Admin Center verwalten Sie Ihr Unternehmen in der Cloud. Sie können Aufgaben wie das Hinzufügen und Entfernen von Benutzern, das Ändern von Lizenzen und das Zurücksetzen von Kennwörtern ausführen. 
 
-Spezielle Arbeitsbereiche, z. B. Sicherheit oder Geräteverwaltung, ermöglichen eine genauere Steuerung. Weitere Informationen zur Zusammenarbeit der Admin Center finden Sie unter [What about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) in diesem Artikel.
+Spezielle Arbeitsbereiche, z. B. Sicherheit oder Geräteverwaltung, ermöglichen eine genauere Steuerung. Weitere Informationen zur Zusammenarbeit der Admin Center finden Sie unter What [about the specific types of IT roles and other workspaces like Security, Device Management, or Exchange?](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) in diesem Artikel.
 
 Um zum Microsoft 365 Admin Center zu wechseln, wechseln Sie zu [admin.microsoft.com](https://admin.microsoft.com) oder wählen Sie, wenn Sie bereits angemeldet sind, das App-Startfeld aus, und wählen Sie **Admin aus.**
 
@@ -59,8 +86,6 @@ Weitere Informationen zum Verwalten von Abrechnung, Kennwörtern, Benutzern und 
 Standardmäßig erhält die Person, die sich registriert und ein Microsoft 365 für Unternehmen-Abonnement erwirbt, die Administratorberechtigungen. Diese Person kann anderen Personen Administratorberechtigungen zuweisen, damit diese Microsoft 365 für ihre Organisation verwalten können.
 
 Wird die Meldung „**Sie haben keine Berechtigung für den Zugriff auf diese Seite oder das Ausführen dieser Aktion**“ angezeigt, dann sind Sie kein Administrator.
-<br><br>    
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/3a4e19ee-1a2a-473f-8995-06de0052c169?autoplay=false]
   
 ### <a name="who-has-admin-permissions-in-my-business"></a>Wer hat in meinem Unternehmen Administratorberechtigungen?
 <a name="bkmk_admin"> </a>
@@ -94,9 +119,9 @@ Während Sie im Admin Center sind, können Sie  Microsoft Feedback zu Ihrer Erfa
 
 Sehen Sie nicht, wie Ihre Fragen hier beantwortet werden? Wechseln Sie zum **Abschnitt Feedback** am Ende dieser Seite, und stellen Sie Ihre Frage. 
   
-### <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>Welche Microsoft 365-Pläne stehen für Testversionen oder Kauf zur Verfügung?
+### <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>Welche Microsoft 365 sind für Testversionen oder Kauf verfügbar?
 
-Microsoft 365 ist eine vollständige, intelligente Lösung, die Office 365, Windows 10 und Enterprise Mobility + Security umfasst, die es jedem ermöglicht, kreativ zu sein und sicher zusammen zu arbeiten. Die folgenden Microsoft 365-Abonnements stehen im Admin Center zur Verfügung, damit Sie es jetzt ausprobieren oder kaufen können:
+Microsoft 365 ist eine vollständige, intelligente Lösung mit Office 365, Windows 10 und Enterprise Mobility + Security, die es jedem ermöglicht, kreativ zu sein und sicher zusammen zu arbeiten. Die folgenden Microsoft 365 abonnements sind im Admin Center verfügbar, damit Sie es jetzt ausprobieren oder kaufen können:
   
 - Microsoft 365 Business
 - Microsoft 365 Enterprise E3
@@ -106,13 +131,13 @@ Weitere Informationen finden Sie unter [Try or buy a Microsoft 365 subscription]
 
 ### <a name="i-found-a-bug-or-i-want-to-request-a-feature-enhancement-how-do-i-let-microsoft-know"></a>Ich habe einen Fehler gefunden, oder ich möchte eine Funktionserweiterung anfordern. Wie lasse ich Microsoft wissen?
 
-Wir hören gerne von Ihnen! Das Melden von Fehlern und Feedback zur Freigabe hilft uns, das Microsoft 365 Admin Center zu verbessern. Um Feedback zu  geben, wählen Sie unten auf der Seite die Schaltfläche Feedback aus, und verwenden Sie das Formular, um uns Ihre Gedanken zu senden. Aktivieren Sie das Kontrollkästchen, und bestätigen Sie Ihre E-Mail-Adresse, wenn Sie möchten, dass jemand aus dem Microsoft 365 Admin Center-Team Ihre Kommentare nachprüft. Wir können nicht versprechen, jedem Feedback nach folgen, aber wir werden es versuchen! 
+Wir hören gerne von Ihnen! Das Melden von Fehlern und Feedback zur Freigabe hilft uns, Microsoft 365 Admin Center zu verbessern. Um Feedback zu  geben, wählen Sie unten auf der Seite die Schaltfläche Feedback aus, und verwenden Sie das Formular, um uns Ihre Gedanken zu senden. Aktivieren Sie das Kontrollkästchen, und bestätigen Sie Ihre E-Mail-Adresse, wenn Sie möchten, dass jemand aus dem Microsoft 365 Admin Center-Team Ihre Kommentare nachprüft. Wir können nicht versprechen, jedem Feedback nach folgen, aber wir werden es versuchen! 
   
 Sie können auch Feedback von außerhalb des Admin Centers in unserem UserVoice-Forum geben. Sie können diese Seite verwenden, um Featurevorschläge zu machen, über die andere Forumbenutzer abgestimmt werden können: [UserVoice-Forum für das neue Admin Center](https://go.microsoft.com/fwlink/?linkid=2024994).
 
 ### <a name="what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange"></a>Was ist mit den spezifischen Typen von IT-Rollen und anderen Arbeitsbereichen wie Sicherheit, Geräteverwaltung oder Exchange?
 
-Das Microsoft 365 Admin Center ist der häufige Einstiegspunkt für alle Teams und Rollen, die Microsoft 365 verwalten. Die Benutzererfahrung, Informationen und Steuerelemente sind für jeden Administrator und jede Rolle angepasst und anpassbar. Darüber hinaus ermöglichen spezielle Arbeitsbereiche eine tiefe, differenzierte Steuerung. Zu diesen spezialisierten Arbeitsbereichen gehören SharePoint, Teams &amp; Skype, Exchange, Sicherheit, Compliance, Geräteverwaltung und Azure Active Directory. Die spezialisierten Arbeitsbereiche finden Sie im Navigationsbereich im Microsoft 365 Admin Center unter [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) .
+Das Microsoft 365 Admin Center ist der häufige Einstiegspunkt für alle Teams und Rollen, die Microsoft 365. Die Benutzererfahrung, Informationen und Steuerelemente sind für jeden Administrator und jede Rolle angepasst und anpassbar. Darüber hinaus ermöglichen spezielle Arbeitsbereiche eine tiefe, differenzierte Steuerung. Zu diesen spezialisierten Arbeitsbereichen gehören SharePoint, Teams &amp; Skype, Exchange, Sicherheit, Compliance, Geräteverwaltung und Azure Active Directory. Die spezialisierten Arbeitsbereiche finden Sie im Navigationsbereich im Microsoft 365 Admin Center unter [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) .
 
 ### <a name="what-language-options-are-available-the-admin-center"></a>Welche Sprachoptionen sind im Admin Center verfügbar?
 

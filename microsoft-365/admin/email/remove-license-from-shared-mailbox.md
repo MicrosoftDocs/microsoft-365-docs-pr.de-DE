@@ -4,6 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: sharik
 author: SKjerland
+ms.reviewer: nicholak
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -12,22 +13,20 @@ localization_priority: Normal
 ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
 ms.custom:
-- MSStore_Link
 - AdminSurgePortfolio
+- commerce_licensing
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-ms.assetid: bb229ee9-e7be-4990-b3eb-354e75740496
 description: 'Entfernen Sie die Lizenz aus einem freigegebenen Postfach, um sie einem anderen Benutzer zuzuordnen. '
-ms.openlocfilehash: 873b50b34b9887ada92cc56f7083e3b748a52035
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 2d0e6e6b1d6222bea80265bf6cc008e21ac3239c
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327222"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332654"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Entfernen einer Lizenz aus einem freigegebenen Postfach
 
@@ -42,7 +41,6 @@ Für freigegebene Postfächer ist in der Regel keine Lizenz erforderlich. Befolg
 > 3. Das freigegebene Postfach befindet sich in einem Rechtsstreit.
 > 4. Dem freigegebenen Postfach ist eine Microsoft Defender-Lizenz zugewiesen.
 
-  
 ## <a name="remove-the-license"></a>Entfernen der Lizenz
 
 ::: moniker range="o365-worldwide"
@@ -50,7 +48,7 @@ Für freigegebene Postfächer ist in der Regel keine Lizenz erforderlich. Befolg
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 
    > [!NOTE]
-   > Sie müssen die Lizenz von der Seite Aktive Benutzer entfernen. Sie können die Lizenz nicht von der Seite Freigegebenes Postfach entfernen, da Lizenzen Benutzereinstellungen sind. 
+   > Sie müssen die Lizenz von der Seite Aktive Benutzer entfernen. Sie können die Lizenz nicht von der Seite Freigegebenes Postfach entfernen, da Lizenzen Benutzereinstellungen sind.
   
 2. Wählen Sie das freigegebene Postfach aus.
 
@@ -100,9 +98,7 @@ Für freigegebene Postfächer ist in der Regel keine Lizenz erforderlich. Befolg
 
 6. Sie zahlen weiterhin für die Lizenz. Um die Zahlung zu beenden, [entfernen Sie die Lizenz aus Ihrem Abonnement.](../../commerce/licenses/buy-licenses.md)
 
-::: moniker-end 
-
- 
+::: moniker-end
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

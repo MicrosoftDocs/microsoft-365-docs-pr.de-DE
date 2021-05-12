@@ -19,12 +19,12 @@ ms.custom:
 description: Administratoren erfahren, wie Sie ausgehende Spamrichtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ceaf0d276aff4504dd34aa3229c28c9cb042742d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2448bb7942f7694d2a6d6e9b98537a2b7ccb14d1
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206374"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331670"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Konfigurieren der Filterung ausgehender Spamnachrichten in EOP
 
@@ -309,7 +309,7 @@ New-HostedOutboundSpamFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Com
 
 In diesem Beispiel wird eine neue ausgehende Spamfilterrichtlinie namens Contoso Executives mit den folgenden Einstellungen erstellt:
 
-- Die Empfängerrategrenzwerte sind auf kleinere Werte beschränkt, die standardmäßig festgelegt sind. Weitere Informationen finden Sie unter [Senden von Grenzwerten für Microsoft 365-Optionen](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
+- Die Empfängerrategrenzwerte sind auf kleinere Werte beschränkt, die standardmäßig festgelegt sind. Weitere Informationen finden Sie unter [Senden von Grenzwerten Microsoft 365 Optionen](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options).
 
 - Nachdem eine der Grenzwerte erreicht wurde, wird der Benutzer am Senden von Nachrichten gehindert.
 
@@ -515,6 +515,6 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Ho
 
 [Pool für besonders riskante Zustellungen für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md)
 
-[Häufig gestellte Fragen zum Antispamschutz](anti-spam-protection-faq.md)
+[Häufig gestellte Fragen zum Antispamschutz](anti-spam-protection-faq.yml)
 
 [Bericht über automatisch weitergeleitete Nachrichten](mfi-auto-forwarded-messages-report.md)

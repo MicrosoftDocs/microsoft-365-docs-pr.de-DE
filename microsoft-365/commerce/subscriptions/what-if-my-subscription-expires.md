@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Hier erfahren Sie, was mit Ihren Daten geschieht, wenn Ihr Microsoft 365-Abonnement abläuft, deaktiviert wird oder Sie es kündigen.
 ms.date: 04/08/2021
-ms.openlocfilehash: f226514078a9f6d6bc1f4761269e2740300ef88d
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: d0821214f9a8c242306685db2ee7faf3779cecff
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326798"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333026"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Microsoft 365 Business-Abonnement endet?
 
@@ -50,6 +50,7 @@ Die nachstehende Abbildung veranschaulicht, womit zu rechnen ist, wenn ein bezah
 *Gilt für die meisten Angebote, in den meisten Ländern und Regionen.
   
 > [!NOTE]
+>
 > **Was sind "Kundendaten"?** Der Begriff "Kundendaten" bezieht sich gemäß Definition in den [Microsoft Online Service-Lizenzbedingungen](https://go.microsoft.com/fwlink/p/?LinkId=613649) auf alle Daten, einschließlich aller Text-, Audio- und Bilddateien, die Microsoft vom Kunden oder in dessen Auftrag durch seine Nutzung der Microsoft 365-Dienste bereitgestellt werden. Weitere Informationen zum Schutz von Kundendaten finden Sie unter [Erste Schritte mit dem Microsoft Service Trust-Portal](../../compliance/get-started-with-service-trust-portal.md).
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>Was geschieht, wenn ich ein Abonnement kündige?
@@ -68,6 +69,7 @@ Wenn Sie sich über das Kündigen informieren möchten, lesen Sie [Kündigen Ihr
 > Wenn Sie möchten, dass Ihre Abonnementdaten vor Ablauf des typischen "Deaktiviert"-Stadiums gelöscht werden, können Sie [Ihr Konto schließen](../close-your-account.md).
   
 > [!NOTE]
+>
 > Wenn Sie ein Abonnement explizit löschen, dann überspringt es die Phasen "Abgelaufen" und "Deaktiviert" und die SharePoint Online-Daten und -Inhalte, einschließlich OneDrive, werden sofort gelöscht.
 
 ## <a name="what-are-my-options-if-my-subscription-is-about-to-expire"></a>Welche Möglichkeiten habe ich, wenn mein Abonnement bald abläuft?

@@ -19,14 +19,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: Erfahren Sie, wie Sie mehr Lizenzen kaufen oder die Anzahl der Lizenzen für Ihr Microsoft 365 Business-Abonnement reduzieren.
+description: Erfahren Sie, wie Sie mehr Lizenzen kaufen oder die Anzahl der Lizenzen für Microsoft 365 Business-Abonnement reduzieren.
 ms.date: 04/07/2021
-ms.openlocfilehash: 6603b49ed7af8b5213141d5c2434093c3af9540a
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: a327149a780d2059cfc69068fc4b2122e549773c
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327118"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331682"
 ---
 # <a name="buy-or-remove-licenses"></a>Kaufen oder Entfernen von Lizenzen
 
@@ -36,7 +36,7 @@ Sie können mehr Lizenzen erwerben oder die Anzahl der Lizenzen für Ihre Abonne
 
 - Sie müssen entweder ein globaler Administrator oder Abrechnungsadministrator sein, um die in diesem Artikel beschriebenen Aufgaben ausführen zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 - Sie können [Gleichzeitig Benutzer hinzufügen und Lizenzen zuweisen.](../../admin/add-users/add-users.md)
-- Wenn Sie Ihren Microsoft 365 Business- oder Office 365 Enterprise-Plan über einen Drittanbieter erworben haben, müssen Sie zusätzliche Lizenzen über den Partner erwerben.
+- Wenn Sie Ihre Microsoft 365 business oder Office 365 Enterprise über einen Drittanbieter erworben haben, müssen Sie zusätzliche Lizenzen über den Partner erwerben.
 
 ## <a name="watch-buy-new-licenses"></a>Watch: Kaufen neuer Lizenzen
 
@@ -84,7 +84,7 @@ In dieser Tabelle werden die  Gründe beschrieben, warum **die** Schaltflächen 
 |---------|---------|---------|
 |Eine Kreditwürdigkeitsprüfung steht aus. |Wenn eine Kreditwürdigkeitsprüfung aussteht, können Sie lizenzen erst erwerben oder entfernen, wenn die Kreditwürdigkeitsprüfung abgeschlossen ist.  | Schauen Sie später wieder nach, ob die Kreditwürdigkeitsprüfung abgeschlossen wurde. Kreditwürdigkeitsprüfungen dauern in der Regel bis zu zwei Werktage bis zum Abschluss.<br/>Nachdem die Kreditwürdigkeitsprüfung abgeschlossen ist, sollten die Schaltflächen Lizenzen kaufen **und** Lizenzen **entfernen angezeigt** werden. |
 |Sie haben das Abonnement mithilfe eines Product Key aktiviert.| Wenn das Abonnement mit einem 25-seitigen Product Key erworben und aktiviert  wurde, wird das Wort "Prepaid" in der Spalte Kaufkanal der Seite Ihre **Produkte** angezeigt.  |Siehe dazu auch [Hinzufügen von Lizenzen für ein Abonnement, das unter Angabe eines Product Keys bezahlt wurde](add-licenses-using-product-key.md). |
-|Sie haben Ihr Abonnement über einen Händler erworben.| Das Wort "Reseller" wird in der **Spalte Einkaufskanal** der Seite **Ihre Produkte** angezeigt. | Wenn das Abonnement über einen #A0 (Cloud Solution Provider) erworben wurde, wenden Sie sich an Ihren CSP-Partner, um weitere Lizenzen zu erwerben.        |
+|Sie haben Ihr Abonnement über einen Händler erworben.| Das Wort "Reseller" wird in der **Spalte Einkaufskanal** der Seite **Ihre Produkte** angezeigt. | Wenn das Abonnement über einen #Cloud Solution Provider (CSP) erworben wurde, wenden Sie sich an Ihren CSP-Partner, um weitere Lizenzen zu erwerben.        |
 |Sie haben ein Testabonnement. | Wenn Sie Ihre Testabonnements anzeigen möchten, wählen Sie die Schaltfläche Filter und dann **Testversion aus.** | Kaufen Sie zuerst Ihr Testabonnement, dann können Sie weitere Lizenzen erwerben.|
 
 ## <a name="when-will-the-new-licenses-be-available-to-assign"></a>Wann stehen die neuen Lizenzen zur Verfügung?
@@ -108,4 +108,4 @@ Wenn Sie die Anzahl der Lizenzen für Ihr Abonnement reduziert haben, weil jeman
 
 [Zuweisen von Lizenzen zu Benutzern ](../../admin/manage/assign-licenses-to-users.md) (Artikel)\
 [Grundlegendes zu Abonnements und Lizenzen](subscriptions-and-licenses.md) (Artikel)\
-[Testen oder Kaufen eines Microsoft 365-Abonnements](../try-or-buy-microsoft-365.md) (Artikel)
+[Testen oder Kaufen eines Microsoft 365 (Artikel)](../try-or-buy-microsoft-365.md)

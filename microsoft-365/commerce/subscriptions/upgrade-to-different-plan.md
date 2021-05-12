@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.reviewer: jkinma
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -17,16 +17,15 @@ ms.custom:
 - SaRA
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
 search.appverid: MET150
 description: Erfahren Sie, wie Sie ein Upgrade auf einen anderen Plan durchführen.
 ms.date: 04/21/2021
-ms.openlocfilehash: d9adf8bb18279d5057278a7c55cd751838325bc2
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 2cfb5c3c6c5052a813e7dd078f15b6c0c943b004
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280439"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333101"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Zu einem anderen Plan wechseln
 
@@ -100,7 +99,7 @@ Sie können [Pläne manuell ändern oder](change-plans-manually.md) den Support 
 
 #### <a name="you-have-two-or-more-plans-for-the-same-product"></a>Sie haben zwei oder mehr Pläne für dasselbe Produkt
 
-Sie können die Registerkarte **Upgrade nur** verwenden, wenn alle Benutzer denselben Plan abonnieren. Wenn Sie z. B. über zwei Microsoft 365 Business Standard verfügen, können Sie einen dieser Pläne nicht automatisch auf einen anderen Plan aktualisieren.
+Sie können die Registerkarte **Upgrade nur** verwenden, wenn alle Benutzer denselben Plan abonnieren. Wenn Sie beispielsweise über zwei Microsoft 365 Business Standard-Pläne verfügen, können Sie einen dieser Pläne nicht automatisch auf einen anderen Plan aktualisieren.
 
 #### <a name="you-have-a-prepaid-plan"></a>Sie verfügen über einen im Voraus bezahlten Plan
 
@@ -118,7 +117,7 @@ Möglicherweise werden auf der  Registerkarte Upgrade keine Pläne angezeigt, da
 
 #### <a name="the-plan-that-you-want-to-upgrade-to-isnt-a-supported-option"></a>Der Plan, auf den Sie ein Upgrade durchführen möchten, ist keine unterstützte Option.
 
-Beim Upgrade von Plänen werden die Pläne, auf die Sie upgraden können, basierend auf den Diensten in Ihrem aktuellen Plan angezeigt. Sie können nur ein Upgrade auf einen Plan durchführen, der über dieselben datenbezogenen Dienste verfügt, z. B. Exchange Online oder SharePoint Online, oder auf eine höhere Version davon. Dadurch wird sichergestellt, dass Benutzer während des Upgrades keine Daten im Zusammenhang mit diesen \' Diensten verlieren.
+Beim Upgrade von Plänen werden die Pläne, auf die Sie upgraden können, basierend auf den Diensten in Ihrem aktuellen Plan angezeigt. Sie können nur ein Upgrade auf einen Plan durchführen, der über dieselben datenbezogenen Dienste wie Exchange Online oder SharePoint Online verfügt, oder auf eine höhere Version davon. Dadurch wird sichergestellt, dass Benutzer während des Upgrades keine Daten im Zusammenhang mit diesen \' Diensten verlieren.
 
 Wenn Ihr Plan nicht berechtigt ist, Pläne automatisch zu aktualisieren, können Sie pläne stattdessen möglicherweise [manuell](change-plans-manually.md)ändern. Sie können auch [Unterstützung für Hilfe](../../business-video/get-help-support.md) anrufen.
 
@@ -144,11 +143,11 @@ Für die **Benutzer** ergibt sich keine Dienstunterbrechung. Sie verfügen weite
 
 Benutzer Ihres alten Abonnements werden automatisch in das neue Abonnement übernommen.
   
-Wenn Ihr altes Abonnement mehrere Dienste umfasst und Sie geändert haben, welche dieser Dienste Ihren Benutzern zugewiesen sind, sollten Sie dies beachten, bevor Sie Pläne aktualisieren, damit Sie diese Änderungen anschließend neu erstellen können. Unter dem neuen Abonnement erhalten alle Benutzer Zugriff auf alle Dienste. Wenn Sie z. B. zuvor Microsoft 365 Business Premium für alle 100 Benutzer erworben haben, den SharePoint Online-Dienst jedoch von 50 benutzern nicht zugewiesen haben, wird diese Änderung nach dem Upgrade von Plänen nicht beibehalten.
+Wenn Ihr altes Abonnement mehrere Dienste umfasst und Sie geändert haben, welche dieser Dienste Ihren Benutzern zugewiesen sind, sollten Sie dies beachten, bevor Sie Pläne aktualisieren, damit Sie diese Änderungen anschließend neu erstellen können. Unter dem neuen Abonnement erhalten alle Benutzer Zugriff auf alle Dienste. Wenn Sie beispielsweise zuvor Microsoft 365 Business Premium für alle 100 Benutzer erworben haben, den SharePoint Online-Dienst jedoch von 50 benutzern nicht zugewiesen haben, wird diese Änderung nach dem Upgrade von Plänen nicht beibehalten.
   
 Wenn Sie vor dem Upgrade von Plänen über mehr als ein Abonnement verfügen und Benutzern Lizenzen für mehrere Abonnements zugewiesen haben, wird dieses Zuweisungsmuster so weit wie möglich im neuen Abonnement beibehalten.
   
-Alle Benutzerdaten werden während des Upgrades aufbewahrt, einschließlich Exchange Postfächern und SharePoint Onlinedokumenten, Listen und anderen Informationen.
+Alle Benutzerdaten werden während des Upgrades aufbewahrt, einschließlich Exchange-Postfächern und SharePoint Online-Dokumenten, Listen und anderen Informationen.
   
 ### <a name="billing"></a>Abrechnung
 
@@ -166,4 +165,4 @@ An dem Tag, an dem Das Planupgrade abgeschlossen ist, wird die Abrechnung für I
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Pläne manuell ändern](change-plans-manually.md) (Artikel)\
-[Sichern von Daten vor dem Microsoft 365 für Geschäftspläne](back-up-data-before-switching-plans.md) (Artikel)
+[Sichern von Daten vor dem Wechseln von Microsoft 365 Business-Plänen](back-up-data-before-switching-plans.md) (Artikel)

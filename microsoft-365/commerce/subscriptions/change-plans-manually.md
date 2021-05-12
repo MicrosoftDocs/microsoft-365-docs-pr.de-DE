@@ -1,10 +1,11 @@
 ---
-title: Ändern Microsoft 365 für Geschäftspläne manuell
+title: Manuelles Ändern von Microsoft 365 Business-Plänen
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,19 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: jkinma
-search.appverid:
-- MET150
+search.appverid: MET150
 ROBOTS: NOINDEX
 description: Ändern Sie Abonnements manuell, indem Sie ein neues Abonnement kaufen und sicherstellen, dass die Abonnements aufgelistet und aktiv sind.
 ms.date: 03/17/2021
-ms.openlocfilehash: 7361b459e61961efbb729d80dcbb55dfdad65933
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 99bb732405d6420e430adad3ece7ea7f0c93579b
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293619"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52333302"
 ---
 # <a name="change-plans-manually"></a>Manuelles Ändern von Plänen
 
@@ -52,7 +50,7 @@ Lesen Sie Schritt [2: Kaufen eines](#step-2-buy-a-new-subscription) neuen Abonne
 
 ODER
 
-**Erwerben sie ein neues Abonnement und Lizenzen:** Führen Sie die Schritte unter [Buy another Microsoft 365 for business subscription](../try-or-buy-microsoft-365.md) to buy a new subscription aus.
+**Erwerben sie ein neues Abonnement und Lizenzen:** Führen Sie die Schritte unter [Buy another Microsoft 365 for Business subscription](../try-or-buy-microsoft-365.md) to buy a new subscription aus.
 
 Vergewissern Sie sich, dass Sie das Abonnement für dieselbe Organisation kaufen, in der sich die Benutzer jetzt befinden. Überprüfen Sie beispielsweise die E-Mail-Adressen für die Benutzer, die Sie verschieben möchten. Wenn ihre \@ E-Mail-Contoso.com enthalten, müssen Sie ein neues Abonnement für contoso.com.
 Schließen Sie eine Lizenz für jeden Benutzer ein, der auf den anderen Plan wechseln soll.
@@ -63,7 +61,7 @@ Schließen Sie eine Lizenz für jeden Benutzer ein, der auf den anderen Plan wec
 
 2. **Überprüfen, ob beide Abonnements aufgelistet und aktiv sind** Das Abonnement, aus dem Sie Benutzer verschieben, und das Abonnement, in das Sie Benutzer verschieben, müssen zusammen aufgeführt werden. Wenn das neue Abonnement bei der ersten Überprüfung noch nicht aufgeführt wird, versuchen Sie es später noch einmal. Überprüfen Sie, ob beide Abonnements aktiv sind. [Das neue Abonnement wird nicht aufgeführt oder ist nicht aktiv](#the-new-subscription-isnt-listed-or-isnt-active).
 
-3. **Überprüfen, ob Sie über genügend Lizenzen für jeden Benutzer verfügen** Jeder Benutzer benötigt eine Lizenz, die dem Abonnement entspricht. Wenn Sie also zehn Benutzer in Microsoft 365 Business Premium verschieben möchten, müssen Sie sicherstellen, dass zehn Lizenzen verfügbar sind.
+3. **Überprüfen, ob Sie über genügend Lizenzen für jeden Benutzer verfügen** Jeder Benutzer benötigt eine Lizenz, die dem Abonnement entspricht. Wenn Sie also zehn Benutzer zu Microsoft 365 Business Premium verschieben möchten, müssen Sie sicherstellen, dass zehn Lizenzen verfügbar sind.
 
 4. **Benötigen Sie weitere Lizenzen für das neue Abonnement?**
    Wechseln Sie zur **Seite Ihre Produkte,** und [erwerben Sie weitere Lizenzen.](../licenses/buy-licenses.md)

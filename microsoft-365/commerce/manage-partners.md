@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: tugu, jmueller
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,18 +16,15 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
-- PPM_jmueller
-ms.reviewer: tugu
-search.appverid:
-- MET150
+search.appverid: MET150
 description: Erfahren Sie, wie Sie mit Von Microsoft zertifizierten Lösungsanbietern (Partnern) zum Kauf und Verwalten von Produkten und Diensten für Ihre Organisation oder Schule arbeiten.
 ms.date: 04/13/2021
-ms.openlocfilehash: e225fa0c525d484e8c5a3887b82277a1da5861b0
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 63c5595d14ca0a531f50875ea8058663b626bb89
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107568"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52331574"
 ---
 # <a name="manage-partner-relationships"></a>Verwalten von Partnerbeziehungen
 
@@ -34,7 +32,7 @@ Sie können mit Microsoft-zertifizierten Lösungsanbietern (Partnern) zusammenar
 
 1. Administratoren finden und wenden sich über das Formular unter an einen <a href="https://www.microsoft.com/solution-providers/home" target="_blank">https://www.microsoft.com/solution-providers/home</a> Partner.
 2. Partner senden eine E-Mail-Anforderung an Kunden, um eine Partnerbeziehung zu gründen.
-3. Kunden akzeptieren die Einladung in Microsoft 365 Admin Center und beginnen mit der Zusammenarbeit mit dem Partner.
+3. Kunden akzeptieren die Einladung im Microsoft 365 Admin Center und beginnen mit der Zusammenarbeit mit dem Partner.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
@@ -49,7 +47,7 @@ Es gibt verschiedene Möglichkeiten, wie ein Partner mit Ihnen zusammenarbeiten 
 | Reseller | Partner, die Microsoft-Produkte an Ihre Organisation oder Schule verkaufen. |
 | Delegierter Administrator | Partner, die Produkte und Dienste für Ihre Organisation oder Schule verwalten. In Azure Active Directory (AD) ist der Partner ein globaler Administrator für Ihren Mandanten. Mit dieser Rolle können sie Dienste wie das Erstellen von Benutzerkonten, das Zuweisen und Verwalten von Lizenzen und das Zurücksetzen von Kennwörtern verwalten. |
 | Vertriebspartner & delegierter Administrator | Partner, die Microsoft-Produkte und -Dienste an Ihre Organisation oder Schule verkaufen und verwalten. |
-| Partner | Sie geben Ihrem Partner ein Benutzerkonto in Ihrem Mandanten und arbeiten mit anderen Microsoft-Dienste in Ihrem Namen zusammen. |
+| Partner | Sie geben Ihrem Partner ein Benutzerkonto in Ihrem Mandanten und arbeiten mit anderen Microsoft-Diensten in Ihrem Auftrag zusammen. |
 | Ratgeber | Partner können Kennwörter zurücksetzen und Supportvorfälle für Sie behandeln. |
 | Microsoft Products & Services Agreement (MPSA)-Partner | Wenn Sie über das MPSA-Programm mit mehreren Partnern zusammengearbeitet haben, können Sie ihnen erlauben, gegenseitig getätigte Einkäufe zu sehen. |
 | Branchenpartner | Partner können branchenspezifische Branchen-Apps für Ihre Organisation oder Schule entwickeln, übermitteln und verwalten. |
@@ -67,7 +65,7 @@ Der Partner kontaktiert Sie und bietet Ihnen die Möglichkeit, mehr über sie zu
 
 Nachdem Sie einen Partner gefunden haben und sich für die Zusammenarbeit mit ihnen entschieden haben, senden sie Ihnen eine E-Mail-Einladung.
 
-1. Wählen Sie in der E-Mail den Link aus, um zum Microsoft 365 zu wechseln.
+1. Wählen Sie in der E-Mail den Link aus, um zum Microsoft 365 Admin Center zu wechseln.
 2. Wählen Sie auf der Seite & **partner autorisieren** den Link für den **Microsoft-Kundenvertrag aus,** und lesen Sie das Dokument.
 3. Aktivieren Sie das Kontrollkästchen, um zu bestätigen, dass Sie den Vertrag gelesen haben.
 4. Wählen **Sie Accept & Authorize aus.**

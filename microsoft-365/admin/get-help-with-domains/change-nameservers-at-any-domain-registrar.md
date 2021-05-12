@@ -25,18 +25,16 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 'Erfahren Sie, wie Sie Ihre Domäne in Microsoft 365 hinzufügen und einrichten, damit Ihre Dienste wie E-Mail und Skype for Business Online Ihren eigenen Domänennamen verwenden. '
-ms.openlocfilehash: 492bc5d2a5f3fd9810f045e7effda1ea20fa15ed
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
-ms.translationtype: HT
+ms.openlocfilehash: 1348beb09fcbc5c12d01dbf197b1cb1240decded
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688249"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332642"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Ändern des Namenservers zum Einrichten von Microsoft 365 mit einer beliebigen Domänenregistrierungsstelle.
 
  **[Lesen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
-  
-Überprüfen Sie zuerst [Einrichten Ihrer Domäne (hostspezifische Anleitungen)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md), um zu sehen, ob wir Anleitungen für Ihre Registrierungsstelle haben. 
   
 Befolgen Sie diese Anweisungen, um Ihre Domäne in Microsoft 365 hinzuzufügen und einzurichten, damit Ihre Dienste wie E-Mail und Teams Ihren eigenen Domänennamen verwenden. Hierzu überprüfen Sie Ihre Domäne und ändern dann deren Namenserver zu Microsoft 365, damit die richtigen DNS-Einträge für Sie eingerichtet werden können. Befolgen Sie diese Schritte, wenn die folgenden Aussagen auf Ihre Situation zutreffen:
   
@@ -164,13 +162,36 @@ Hier einige weitere Schritte, die beispielsweise für E-Mail- und Websitehosting
 
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>.
 
-2. Wählen Sie auf der Seite **Domänen** die Domäne aus, und wählen Sie dann **DNS-Einträge** aus.
+2. Wählen Sie auf der Seite **Domänen** eine Domäne aus.
 
-3. Wählen Sie unter **DNS Verwalten** die Option **Benutzerdefinierte Einträge** und dann **Neuer benutzerdefinierter Eintrag** aus.
+3. Wählen Sie auf der Seite Domänendetails die Registerkarte **DNS-Einträge** aus.
+ 
+4. Wählen **Sie Datensatz hinzufügen aus.**
 
-4. Wählen Sie den Typ des DNS-Eintrags aus, den Sie hinzufügen möchten, und geben Sie die Informationen für den neuen Eintrag ein.
+5. Wählen Sie **im Bereich Benutzerdefinierten DNS-Eintrag** hinzufügen in der **Dropdownliste** Typ die Option **A (Adresse) aus.**
 
-5. Wählen Sie **Speichern** aus.
+6. Geben Sie **im Feld Hostname oder Alias** **@** ein.
+
+7. Geben Sie **im Feld IP-Adresse** die statische IP-Adresse für die Website ein, auf der sie derzeit gehostet wird. Beispiel: 172.16.140.1.
+    
+> [!IMPORTANT]
+>  Dies muss eine _statische_ IP-Adresse für die Website und keine _dynamische IP-Adresse_ sein. Um sicherzustellen, dass Sie eine statische IP-Adresse für Ihre öffentliche Website erhalten können, überprüfen Sie die Website, auf der Ihre Website hostet.
+   
+8. Wenn Sie die TTL-Einstellung für den Datensatz ändern möchten, wählen Sie in der Dropdownliste **TTL** eine neue Dauer aus. Fahren Sie andernfalls mit Schritt 9 fort.
+    
+9. Klicken Sie auf **Speichern**. 
+    
+Darüber hinaus können Sie einen CNAME-Eintrag erstellen, damit Kunden Ihre Website besser finden können.
+  
+1.  Wählen **Sie Datensatz hinzufügen aus.**
+
+3.  Wählen Sie im Bereich Benutzerdefinierte **#A0** hinzufügen in der **Dropdownliste** Typ die Option **CNAME (Alias)** aus.
+4.  Geben Sie **im Feld Hostname oder Alias** www **ein.**
+5.  Geben Sie im Feld Punkte **zu Adresse** den vollqualifizierten Domänennamen (Fully Qualified Domain Name, FQDN) für Ihre Website ein. Beispielsweise **contoso.com**.
+6.  Wenn Sie die TTL-Einstellung für den Datensatz ändern möchten, wählen Sie in der Dropdownliste **TTL** eine neue Dauer aus. Fahren Sie andernfalls mit Schritt 6 fort.
+7.  Wählen Sie **Speichern** aus.
+
+Nachdem die Nameservereinträge so aktualisiert wurden, dass sie auf Microsoft verweisen, ist die Domäneneinrichtung abgeschlossen. E-Mails werden an Microsoft geroutet, und der Datenverkehr zu Ihrer Websiteadresse wird weiterhin an Ihren aktuellen Websitehost gesendet."
     
 > [!NOTE]
 > Es kann mehrere Stunden dauern, bis Ihre Namenservereinträge im Internet im gesamten DNS-System aktualisiert wurden. Danach sind Ihre Microsoft-E-Mails und andere Dienste alle dafür eingerichtet, mit Ihrer Domäne zu funktionieren. 
