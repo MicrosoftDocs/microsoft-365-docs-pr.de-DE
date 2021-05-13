@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 56ab6c6c11bd2c0786c0d797e5302a1f06f9bd53
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 3ca8f5234f90624c8570cbfb10e75bd0ee9380ae
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327258"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345836"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Verwenden von Regeln zur Reduzierung der Angriffsfläche, um Schadsoftwareinfektionen zu verhindern
 
@@ -49,7 +49,7 @@ Weitere Informationen zum Konfigurieren von Regeln zur Reduzierung der Angriffsf
 
 ## <a name="assess-rule-impact-before-deployment"></a>Bewerten der Auswirkungen der Regel vor der Bereitstellung
 
-Sie können bewerten, wie sich eine Regel zur Reduzierung der Angriffsfläche auf Ihr Netzwerk auswirken kann, indem Sie die Sicherheitsempfehlung für diese Regel im Bedrohungs- und [Sicherheitsrisikomanagement öffnen.](https://docs.microsoft.com/windows/security/threat-protection/#tvm)
+Sie können bewerten, wie sich eine Regel zur Reduzierung der Angriffsfläche auf Ihr Netzwerk auswirken kann, indem Sie die Sicherheitsempfehlung für diese Regel in [Bedrohungs- und Sicherheitsrisikomanagement.](https://docs.microsoft.com/windows/security/threat-protection/#tvm)
 
 :::image type="content" source="images/asrrecommendation.png" alt-text="Sicherheits-Reco für die Regel zur Reduzierung der Angriffsfläche":::
 
@@ -67,14 +67,14 @@ Der Warnmodus hilft Ihrer Organisation, Regeln zur Reduzierung der Angriffsfläc
 
 ### <a name="requirements-for-warn-mode-to-work"></a>Anforderungen für den Warnmodus
 
-Der Warnmodus wird auf Geräten mit den folgenden Versionen von Windows unterstützt:
+Der Warnmodus wird auf Geräten mit den folgenden Versionen von Windows:
 
 - [Windows 10, Version 1809](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1809) oder höher
 - [Windows Server, Version 1809](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1809) oder höher
 
-Microsoft Defender Antivirus muss mit Echtzeitschutz im [Aktiven Modus ausgeführt werden.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)
+Microsoft Defender Antivirus muss mit Echtzeitschutz im Aktiven [Modus ausgeführt werden.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)
 
-Stellen Sie außerdem sicher, [dass Microsoft Defender Antivirus- und Antischalwareupdates](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) installiert sind.
+Stellen Sie außerdem sicher, [Microsoft Defender Antivirus und Antischalwareupdates](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) installiert sind.
 
 - Minimale Plattformfreigabeanforderung: `4.18.2008.9`
 - Mindestanforderung für die Modulfreigabe: `1.1.17400.5`
@@ -83,13 +83,13 @@ Weitere Informationen und Informationen zum Herunterladen Ihrer Updates finden S
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Fälle, in denen der Warnmodus nicht unterstützt wird
 
-Der Warnmodus wird für drei Regeln zur Reduzierung der Angriffsfläche nicht unterstützt, wenn Sie sie im Microsoft Endpoint Manager konfigurieren. (Wenn Sie Gruppenrichtlinien verwenden, um Ihre Regeln zur Reduzierung der Angriffsfläche zu konfigurieren, wird der Warnmodus unterstützt.) Die drei Regeln, die den Warnmodus nicht unterstützen, wenn Sie sie im Microsoft Endpoint Manager konfigurieren, sind wie folgt:
+Der Warnmodus wird für drei Regeln zur Reduzierung der Angriffsfläche nicht unterstützt, wenn Sie sie in Microsoft Endpoint Manager. (Wenn Sie Gruppenrichtlinien verwenden, um Ihre Regeln zur Reduzierung der Angriffsfläche zu konfigurieren, wird der Warnmodus unterstützt.) Die drei Regeln, die den Warnmodus nicht unterstützen, wenn Sie sie in Microsoft Endpoint Manager konfigurieren, sind wie folgt:
 
 - [Blockieren des Startens heruntergeladener ausführbarer](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) Inhalte (GUID) durch JavaScript oder VBScript `d3e037e1-3eb8-44c8-a917-57927947596d`
 - [Blockieren der Persistenz über das WMI-Ereignisabonnement](#block-persistence-through-wmi-event-subscription) `e6db77e5-3df2-4cf1-b95a-636979351e5b` (GUID)
 - [Verwenden des erweiterten Schutzes vor Ransomware](#use-advanced-protection-against-ransomware) (GUID) `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-Darüber hinaus wird der Warnmodus auf Geräten mit älteren Versionen von Windows nicht unterstützt. In diesen Fällen werden Regeln zur Reduzierung der Angriffsfläche, die für die Ausführung im Warnmodus konfiguriert sind, im Blockmodus ausgeführt.
+Darüber hinaus wird der Warnmodus auf Geräten mit älteren Versionen von Windows. In diesen Fällen werden Regeln zur Reduzierung der Angriffsfläche, die für die Ausführung im Warnmodus konfiguriert sind, im Blockmodus ausgeführt.
 
 ## <a name="notifications-and-alerts"></a>Benachrichtigungen und Warnungen
 
@@ -97,7 +97,7 @@ Wenn eine Regel zur Reduzierung der Angriffsfläche ausgelöst wird, wird auf de
 
 Darüber hinaus werden Warnungen generiert, wenn bestimmte Regeln zur Reduzierung der Angriffsfläche ausgelöst werden.
 
-Benachrichtigungen und generierte Warnungen können im Microsoft Defender Security Center ( ) und [https://securitycenter.windows.com](https://securitycenter.windows.com) im Microsoft 365 Security Center ( ) angezeigt werden. [https://security.microsoft.com](https://security.microsoft.com)
+Benachrichtigungen und generierte Benachrichtigungen können im Microsoft Defender Security Center ( ) und im Microsoft 365 [https://securitycenter.windows.com](https://securitycenter.windows.com) Security Center ( ) angezeigt werden. [https://security.microsoft.com](https://security.microsoft.com)
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Erweiterte Ereignisse zur Reduzierung der Suche und Angriffsfläche
 
@@ -107,18 +107,18 @@ Angenommen, ein Ereignis zur Reduzierung der Angriffsfläche tritt während der 
 
 Weitere Informationen zur erweiterten Suche finden Sie unter [Proaktive Suche nach Bedrohungen mit erweiterter Suche.](advanced-hunting-overview.md)
 
-## <a name="attack-surface-reduction-features-across-windows-versions"></a>Features zur Reduzierung der Angriffsfläche in allen Windows-Versionen
+## <a name="attack-surface-reduction-features-across-windows-versions"></a>Features zur Reduzierung der Angriffsfläche Windows Versionen
 
-Sie können Regeln zur Reduzierung der Angriffsfläche für Geräte festlegen, auf der eine der folgenden Editionen und Versionen von Windows ausgeführt wird:
+Sie können Regeln zur Reduzierung der Angriffsfläche für Geräte festlegen, auf der eine der folgenden Editionen und Versionen von Windows:
 
-- Windows 10 Pro, [Version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) oder höher
-- Windows 10 Enterprise, [Version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) oder höher
+- Windows 10 Pro, Version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) oder höher
+- Windows 10 Enterprise, Version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) oder höher
 - Windows Server, [Version 1803 (Halbjährskanal)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) oder höher
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-Obwohl Regeln zur Reduzierung der Angriffsfläche keine [Windows E5-Lizenz](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)erfordern, erhalten Sie bei Windows E5 erweiterte Verwaltungsfunktionen. Diese Funktionen, die nur in Windows E5 verfügbar sind, umfassen Überwachung, Analyse und Workflows, die in [Defender for Endpoint](microsoft-defender-endpoint.md)verfügbar sind, sowie Berichterstellungs- und Konfigurationsfunktionen im Microsoft [365 Security Center](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center). Diese erweiterten Funktionen sind nicht mit einer Windows Professional- oder Windows E3-Lizenz verfügbar. Wenn Sie jedoch über diese Lizenzen verfügen, können Sie die Ereignisanzeige- und Microsoft Defender Antivirus-Protokolle verwenden, um Ihre Ereignisse der Regel zur Reduzierung der Angriffsfläche zu überprüfen.
+Obwohl Regeln zur Reduzierung der Angriffsfläche keine Windows [E5-Lizenz](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)erfordern, erhalten Sie bei Windows E5 erweiterte Verwaltungsfunktionen. Diese Funktionen, die nur in Windows E5 verfügbar sind, umfassen Überwachung, Analysen und Workflows, die in [Defender for Endpoint](microsoft-defender-endpoint.md)verfügbar sind, sowie Berichterstellungs- und Konfigurationsfunktionen im Microsoft 365 Security [Center](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center). Diese erweiterten Funktionen sind nicht mit einer Windows Professional oder Windows E3-Lizenz verfügbar. Wenn Sie jedoch über diese Lizenzen verfügen, können Sie die Ereignisanzeige verwenden und Microsoft Defender Antivirus protokollieren, um Die Regelereignisse der Angriffsfläche zu überprüfen.
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Überprüfen von Ereignissen zur Reduzierung der Angriffsfläche im Microsoft Defender Security Center
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Überprüfen von Ereignissen zur Reduzierung der Angriffsfläche in der Microsoft Defender Security Center
 
 Defender for Endpoint bietet detaillierte Berichte für Ereignisse und Blöcke im Rahmen von Warnungsuntersuchungsszenarien.
 
@@ -131,15 +131,15 @@ DeviceEvents
 | where ActionType startswith 'Asr'
 ```
 
-## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Überprüfen von Ereignissen zur Reduzierung der Angriffsfläche in der Windows-Ereignisanzeige
+## <a name="review-attack-surface-reduction-events-in-windows-event-viewer"></a>Überprüfen von Ereignissen zur Reduzierung der Angriffsfläche in Windows Ereignisanzeige
 
-Sie können das Windows-Ereignisprotokoll überprüfen, um Ereignisse zu sehen, die von Regeln zur Reduzierung der Angriffsfläche generiert wurden:
+Sie können das Ereignisprotokoll Windows, um Ereignisse zu sehen, die durch Regeln zur Reduzierung der Angriffsfläche generiert wurden:
 
 1. Laden Sie [das Evaluierungspaket](https://aka.ms/mp7z2w) herunter, und *extrahierencfa-events.xml* an einen leicht zugänglichen Speicherort auf dem Gerät.
-2. Geben Sie die Wörter *Ereignisanzeige* in das Menü Start ein, um die Windows-Ereignisanzeige zu öffnen.
+2. Geben Sie die Wörter *Ereignisanzeige* in das Menü Start ein, um die Windows öffnen.
 3. Wählen **Sie unter Aktionen** die Option **Benutzerdefinierte Ansicht importieren... aus.**
 4. Wählen Sie die Datei *cfa-events.xml,* aus der sie extrahiert wurde. Alternativ können [Sie die XML direkt kopieren.](event-views.md)
-5. Wählen Sie **OK** aus.
+5. Klicken Sie auf **OK**.
 
 Sie können eine benutzerdefinierte Ansicht erstellen, die Ereignisse so filtert, dass nur die folgenden Ereignisse angezeigt werden, die alle im Zusammenhang mit dem kontrollierten Ordnerzugriff stehen:
 
@@ -150,7 +150,7 @@ Sie können eine benutzerdefinierte Ansicht erstellen, die Ereignisse so filtert
 |1122|Ereignis, wenn die Regel im Überwachungsmodus abgeschaltet wird|
 |
 
-Die "Modulversion", die für Ereignisse zur Reduzierung der Angriffsfläche im Ereignisprotokoll aufgeführt ist, wird von Defender for Endpoint generiert, nicht vom Betriebssystem. Defender for Endpoint ist in Windows 10 integriert, sodass dieses Feature auf allen Geräten funktioniert, auf dem Windows 10 installiert ist.
+Die "Modulversion", die für Ereignisse zur Reduzierung der Angriffsfläche im Ereignisprotokoll aufgeführt ist, wird von Defender for Endpoint generiert, nicht vom Betriebssystem. Defender for Endpoint ist in Windows 10 integriert, sodass dieses Feature auf allen Geräten funktioniert, auf Windows 10 installiert sind.
 
 ## <a name="attack-surface-reduction-rules"></a>Regeln zur Verringerung der Angriffsfläche
 
@@ -180,7 +180,7 @@ Wenn Sie Regeln zur Reduzierung der Angriffsfläche mithilfe von Gruppenrichtlin
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Missbrauch von ausgebeuteten gefährdeten signierten Treibern blockieren
 
-Diese Regel verhindert, dass eine Anwendung einen anfälligen signierten Treiber auf einen Datenträger schreibt. In-the-wild, vulnerable signed drivers can be exploited by local applications \- _that have sufficient privileges_ \- to access to the kernel. Anfällige signierte Treiber ermöglichen Es Angreifern, Sicherheitslösungen zu deaktivieren oder zu umgehen, was schließlich zu Systemrisiken führt.
+Diese Regel verhindert, dass eine Anwendung einen anfälligen, signierten Treiber auf einen Datenträger schreibt. In-the-wild, vulnerable signed drivers can be exploited by local applications \- _that have sufficient privileges_ \- to access to the kernel. Anfällige signierte Treiber ermöglichen Es Angreifern, Sicherheitslösungen zu deaktivieren oder zu umgehen, was schließlich zu Systemrisiken führt.
 
 Diese Regel blockiert nicht, dass ein treiber geladen wird, der bereits auf dem System vorhanden ist.
 
@@ -266,7 +266,7 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>Ausführbare Inhalte aus E-Mail-Client und Web-E-Mail blockieren
 
-Mit dieser Regel wird verhindert, dass die folgenden Dateitypen aus E-Mails gestartet werden, die in der Microsoft Outlook-Anwendung oder Outlook.com und anderen beliebten Webmailanbietern geöffnet werden:
+Diese Regel blockiert das Starten der folgenden Dateitypen aus E-Mails, die in der Microsoft Outlook-Anwendung oder Outlook.com und anderen beliebten Webmailanbietern geöffnet wurden:
 
 - Ausführbare Dateien (z. B. .exe, .dll oder SCR)
 - Skriptdateien (z. B. powerShell .ps, Visual Basic .vbs oder JavaScript .js Datei)
@@ -280,7 +280,7 @@ Diese Regel wurde eingeführt in:
 
 Intune-Name: `Execution of executable content (exe, dll, ps, js, vbs, etc.) dropped from email (webmail/mail client) (no exceptions)`
 
-Microsoft Endpoint Manager-Name: `Block executable content from email client and webmail`
+Microsoft Endpoint Manager Name:`Block executable content from email client and webmail`
 
 GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 
@@ -288,7 +288,7 @@ GUID: `BE9BA2D9-53EA-4CDC-84E5-9B1EEEE46550`
 > Die Regel **Ausführbaren Inhalt von E-Mail-Client** und Webmail blockieren enthält die folgenden alternativen Beschreibungen, je nachdem, welche Anwendung Sie verwenden:
 >
 > - Intune (Konfigurationsprofile): Ausführung ausführbarer Inhalte (exe, dll, ps, js, vbs usw.) aus E-Mails (Webmail/E-Mail-Client) (keine Ausnahmen).
-> - Endpoint Manager: Blockieren des Herunterladens ausführbarer Inhalte von E-Mail- und Webmailclients.
+> - Endpoint Manager: Herunterladen ausführbarer Inhalte von E-Mail- und Webmailclients blockieren.
 > - Gruppenrichtlinie: Blockieren ausführbarer Inhalte vom E-Mail-Client und webmail.
 
 ### <a name="block-executable-files-from-running-unless-they-meet-a-prevalence-age-or-trusted-list-criterion"></a>Ausführbare Dateien an der Ausführung hindern, außer sie erfüllen ein Verbreitungs-, Alters- oder vertrauenswürdige Listen-Kriterium
@@ -359,9 +359,9 @@ GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>Office-Anwendungen am Erstellen ausführbarer Inhalte hindern
 
-Diese Regel hindert Office-Apps, einschließlich Word, Excel und PowerPoint, am Erstellen potenziell schädlicher ausführbarer Inhalte, indem verhindert wird, dass schädlicher Code auf den Datenträger geschrieben wird.
+Diese Regel verhindert, Office Apps, einschließlich Word, Excel und PowerPoint, potenziell schädlichen ausführbaren Inhalt erstellen, indem verhindert wird, dass schädlicher Code auf den Datenträger geschrieben wird.
 
-Schadsoftware, die Office als Vektor missbraucht, kann versuchen, Office zu brechen und schädliche Komponenten auf dem Datenträger zu speichern. Diese schädlichen Komponenten würden einen Neustart des Computers überstehen und auf dem System beibehalten. Daher wehrt sich diese Regel gegen eine gängige Persistenzmethode.
+Schadsoftware, die Office als Vektor missbraucht, kann versuchen, aus Office zu brechen und schädliche Komponenten auf dem Datenträger zu speichern. Diese schädlichen Komponenten würden einen Neustart des Computers überstehen und auf dem System beibehalten. Daher wehrt sich diese Regel gegen eine gängige Persistenzmethode.
 
 Diese Regel wurde eingeführt in:
 
@@ -378,9 +378,9 @@ GUID: `3B576869-A4EC-4529-8536-B80A7769E899`
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Office-Anwendungen am Einfügen von Code in untergeordnete Prozesse hindern
 
-Diese Regel blockiert Codeinjektionsversuche von Office-Apps in andere Prozesse.
+Diese Regel blockiert Codeinjektionsversuche von Office in andere Prozesse.
 
-Angreifer versuchen möglicherweise, mithilfe von Office-Apps bösartigen Code mithilfe von Codeeinspritzung in andere Prozesse zu migrieren, sodass der Code als bereinigende Prozesse maskiert werden kann.
+Angreifer versuchen möglicherweise, Office Apps zu verwenden, um bösartigen Code in andere Prozesse mithilfe von Codeeinspritzung zu migrieren, damit der Code als bereinigende Prozesse maskiert werden kann.
 
 Es gibt keine bekannten legitimen Geschäftszwecke für die Verwendung von Codeeinspritzung.
 
@@ -401,9 +401,9 @@ GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Office-Kommunikationsanwendung am Erstellen von untergeordneten Prozessen hindern
 
-Diese Regel verhindert, dass Outlook untergeordnete Prozesse erstellt und gleichzeitig legitime Outlook-Funktionen zu lässt.
+Diese Regel hindert Outlook an der Erstellung untergeordneter Prozesse und lässt gleichzeitig legitime Outlook zu.
 
-Diese Regel schützt vor Social Engineering-Angriffen und verhindert, dass Code missbraucht wird, um Sicherheitsrisiken in Outlook zu missbrauchen. Es schützt auch vor [Outlook-Regeln und Formular-Exploits,](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) die Angreifer verwenden können, wenn die Anmeldeinformationen eines Benutzers gefährdet sind.
+Diese Regel schützt vor Social Engineering-Angriffen und verhindert, dass Code missbraucht wird, um Sicherheitsrisiken in Outlook. Es schützt auch vor Outlook Regeln und [Formular-Exploits,](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) die Angreifer verwenden können, wenn die Anmeldeinformationen eines Benutzers gefährdet sind.
 
 > [!NOTE]
 > Diese Regel gilt nur für Outlook und Outlook.com.

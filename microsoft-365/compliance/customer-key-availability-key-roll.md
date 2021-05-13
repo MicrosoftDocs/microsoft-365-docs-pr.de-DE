@@ -3,7 +3,6 @@ title: Rollen oder Drehen eines Kundenschlüssels oder eines Verfügbarkeitsschl
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 02/05/2020
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -12,13 +11,13 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: 'Erfahren Sie, wie Sie die in Azure Key Vault gespeicherten Kundenstammschlüssel rollen, die mit dem Kundenschlüssel verwendet werden. Zu den Diensten gehören Exchange Online-, Skype for Business-, SharePoint Online-, OneDrive for Business- und #A0 .'
-ms.openlocfilehash: 980d6b198b326cb75bb2b4ef4d2c980f605f23e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Erfahren Sie, wie Sie die in Azure Key Vault gespeicherten Kundenstammschlüssel rollen, die mit dem Kundenschlüssel verwendet werden. Zu den Diensten gehören Exchange Online, Skype for Business, SharePoint Online, OneDrive for Business und Teams Dateien.
+ms.openlocfilehash: 892d77959bec1fb33b0ea6bcfaa8c530dd9b8911
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923331"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345118"
 ---
 # <a name="roll-or-rotate-a-customer-key-or-an-availability-key"></a>Rollen oder Drehen eines Kundenschlüssels oder eines Verfügbarkeitsschlüssels
 
@@ -27,10 +26,10 @@ ms.locfileid: "50923331"
 
 ## <a name="about-rolling-the-availability-key"></a>Informationen zum Rolling des Verfügbarkeitsschlüssels
 
-Microsoft macht keine direkte Kontrolle über den Verfügbarkeitsschlüssel für Kunden verfügbar. Sie können z. B. nur die Schlüssel rollen (drehen), die Sie in Azure Key Vault besitzen. Microsoft 365 rollt die Verfügbarkeitsschlüssel nach einem intern definierten Zeitplan. Für diese Schlüsselrollen gibt es keine vereinbarung für kundenorientierte Servicelevels (Service Level Agreement, SLA). Microsoft 365 dreht den Verfügbarkeitsschlüssel mithilfe von Microsoft 365-Dienstcode in einem automatisierten, nicht manuellen Prozess. Microsoft-Administratoren können den Rollprozess initiieren. Der Schlüssel wird mithilfe automatisierter Mechanismen ohne direkten Zugriff auf den Schlüsselspeicher rollt. Der Zugriff auf den geheimen Informationsspeicher des Verfügbarkeitsschlüssels wird für Microsoft-Administratoren nicht bereitgestellt. Das Rollen von Verfügbarkeitsschlüsseln nutzt denselben Mechanismus, der zum anfänglichen Generieren des Schlüssels verwendet wird. Weitere Informationen zum Verfügbarkeitsschlüssel finden Sie unter [Verstehen des Verfügbarkeitsschlüssels](customer-key-availability-key-understand.md).
+Microsoft macht keine direkte Kontrolle über den Verfügbarkeitsschlüssel für Kunden verfügbar. Sie können z. B. nur die Schlüssel rollen (drehen), die Sie in Azure Key Vault besitzen. Microsoft 365 werden die Verfügbarkeitsschlüssel in einem intern definierten Zeitplan rollt. Für diese Schlüsselrollen gibt es keine vereinbarung für kundenorientierte Servicelevels (Service Level Agreement, SLA). Microsoft 365 dreht den Verfügbarkeitsschlüssel mithilfe Microsoft 365 Dienstcodes in einem automatisierten, nicht manuellen Prozess. Microsoft-Administratoren können den Rollprozess initiieren. Der Schlüssel wird mithilfe automatisierter Mechanismen ohne direkten Zugriff auf den Schlüsselspeicher rollt. Der Zugriff auf den geheimen Informationsspeicher des Verfügbarkeitsschlüssels wird für Microsoft-Administratoren nicht bereitgestellt. Das Rollen von Verfügbarkeitsschlüsseln nutzt denselben Mechanismus, der zum anfänglichen Generieren des Schlüssels verwendet wird. Weitere Informationen zum Verfügbarkeitsschlüssel finden Sie unter [Verstehen des Verfügbarkeitsschlüssels](customer-key-availability-key-understand.md).
 
 > [!IMPORTANT]
-> Exchange Online- und Skype for Business-Verfügbarkeitsschlüssel können von Kunden, die eine neue DEP erstellen, effektiv gerollt werden, da für jede erstellte DEP ein eindeutiger Verfügbarkeitsschlüssel generiert wird. Verfügbarkeitsschlüssel für SharePoint Online-, OneDrive for Business- und #A0 sind auf Gesamtstrukturebene vorhanden und werden von DEPs und Kunden gemeinsam genutzt, was bedeutet, dass das Rolling nur nach einem intern von Microsoft definierten Zeitplan erfolgt. Um das Risiko zu verringern, dass der Verfügbarkeitsschlüssel nicht jedes Mal rollt, wenn eine neue DEP erstellt wird, rollen SharePoint, OneDrive und Teams den Mandantenzwingschlüssel (TIK), den Schlüssel, der von den Stammschlüsseln und dem Verfügbarkeitsschlüssel des Kunden umschlossen wird, jedes Mal, wenn eine neue DEP erstellt wird.
+> Exchange Online und Skype for Business Verfügbarkeitsschlüssel können von Kunden, die eine neue DEP erstellen, effektiv gerollt werden, da für jede erstellte DEP ein eindeutiger Verfügbarkeitsschlüssel generiert wird. Verfügbarkeitsschlüssel für SharePoint Online-, OneDrive for Business- und Teams-Dateien sind auf Gesamtstrukturebene vorhanden und werden für DEPs und Kunden freigegeben, was bedeutet, dass das Rolling nur nach einem intern von Microsoft definierten Zeitplan erfolgt. Um das Risiko zu verringern, dass der Verfügbarkeitsschlüssel nicht jedes Mal rollt, wenn eine neue DEP erstellt wird, rollen SharePoint, OneDrive und Teams den Mandantenzwingschlüssel (TIK), den Schlüssel, der von den Stammschlüsseln und dem Verfügbarkeitsschlüssel des Kunden umschlossen wird, jedes Mal, wenn eine neue DEP erstellt wird.
 
 ## <a name="request-a-new-version-of-each-existing-root-key-you-want-to-roll"></a>Anfordern einer neuen Version jedes vorhandenen Stammschlüssels, den Sie rollen möchten
 
@@ -38,35 +37,55 @@ Wenn Sie einen Schlüssel rollen, fordern Sie eine neue Version eines vorhandene
 
 Beispiel:
 
-1. Melden Sie sich mit Azure PowerShell bei Ihrem Azure-Abonnement an. Anweisungen finden Sie unter [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
+1. Melden Sie sich bei Ihrem Azure-Abonnement mit Azure PowerShell. Anweisungen finden Sie unter [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
 2. Führen Sie Add-AzKeyVaultKey cmdlet aus, wie im folgenden Beispiel gezeigt:
 
    ```powershell
-   Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-VaultA1-Key001 -Destination HSM -KeyOps @('wrapKey','unwrapKey') -NotBefore (Get-Date -Date "12/27/2016 12:01 AM")
+   Add-AzKeyVaultKey -VaultName Contoso-CK-EX-NA-VaultA1 -Name Contoso-CK-EX-NA-VaultA1-Key001 -Destination HSM -KeyOps @('wrapKey','unwrapKey') -NotBefore (Get-Date -Date "12/27/2016 12:01 AM")
    ```
 
-   Da in diesem Beispiel ein Schlüssel namens **Contoso-O365EX-NA-VaultA1-Key001** im **Contoso-O365EX-NA-VaultA1-Tresor** vorhanden ist, erstellt das Cmdlet eine neue Version des Schlüssels. Bei diesem Vorgang werden die vorherigen Schlüsselversionen im Versionsverlauf für den Schlüssel beibehalten. Sie benötigen die vorherige Schlüsselversion, um die Daten zu entschlüsseln, die weiterhin verschlüsselt werden. Nachdem Sie das Rolling eines schlüssels abgeschlossen haben, der einer DEP zugeordnet ist, führen Sie ein zusätzliches Cmdlet aus, um sicherzustellen, dass der Kundenschlüssel mit der Verwendung des neuen Schlüssels beginnt. In den folgenden Abschnitten werden die Cmdlets ausführlicher beschrieben.
+   Da in diesem Beispiel ein Schlüssel namens **Contoso-CK-EX-NA-VaultA1-Key001** im **Contoso-CK-EX-NA-VaultA1-Tresor** vorhanden ist, erstellt das Cmdlet eine neue Version des Schlüssels. Bei diesem Vorgang werden die vorherigen Schlüsselversionen im Versionsverlauf für den Schlüssel beibehalten. Sie benötigen die vorherige Schlüsselversion, um die Daten zu entschlüsseln, die weiterhin verschlüsselt werden. Nachdem Sie das Rolling eines schlüssels abgeschlossen haben, der einer DEP zugeordnet ist, führen Sie ein zusätzliches Cmdlet aus, um sicherzustellen, dass der Kundenschlüssel mit der Verwendung des neuen Schlüssels beginnt. In den folgenden Abschnitten werden die Cmdlets ausführlicher beschrieben.
   
-## <a name="update-the-customer-key-for-exchange-online-and-skype-for-business"></a>Aktualisieren des Kundenschlüssels für Exchange Online und Skype for Business
+## <a name="update-the-keys-for-multi-workload-deps"></a>Aktualisieren der Schlüssel für DEPs mit mehreren Arbeitsauslastungen
 
-Wenn Sie einen der Azure Key Vault-Schlüssel rollen, der einer mit Exchange Online und Skype for Business verwendeten DEP zugeordnet ist, müssen Sie die DEP aktualisieren, um auf den neuen Schlüssel zu zeigen. Dadurch wird der Verfügbarkeitsschlüssel nicht gedreht.
+Wenn Sie einen der Azure Key Vault-Schlüssel rollen, der einer DEP zugeordnet ist, die mit mehreren Workloads verwendet wird, müssen Sie die DEP so aktualisieren, dass sie auf den neuen Schlüssel verweisen kann. Bei diesem Vorgang wird der Verfügbarkeitsschlüssel nicht gedreht.
+
+Führen Sie die folgenden Schritte aus, um den Kundenschlüssel anweisen, den neuen Schlüssel zum Verschlüsseln mehrerer Arbeitsauslastungen zu verwenden:
+
+1. Stellen Sie auf Ihrem lokalen Computer mithilfe eines Unternehmens- oder Schulkontos, das über globale Administrator- oder Complianceadministratorberechtigungen in Ihrer Organisation verfügt, eine Verbindung mit [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) in einem Windows PowerShell herstellen.
+
+2. Führen Sie Set-M365DataAtRestEncryptionPolicy cmdlet aus.
+  
+   ```powershell
+   Set-M365DataAtRestEncryptionPolicy -[Identity] "PolicyName" -Refresh
+   ```
+
+Dabei *ist PolicyName* der Name oder die eindeutige ID der Richtlinie. Beispiel: Contoso_Global.
+
+Beispiel:
+
+```powershell
+Set-M365DataAtRestEncryptionPolicy -Identity "Contoso_Global" -Refresh
+```
+
+## <a name="update-the-keys-for-exchange-online-deps"></a>Aktualisieren der Schlüssel für Exchange Online DEPs
+
+Wenn Sie einen der Azure Key Vault-Schlüssel rollen, die einer mit Exchange Online und Skype for Business verwendeten DEP zugeordnet sind, müssen Sie die DEP aktualisieren, um auf den neuen Schlüssel zu zeigen. Dadurch wird der Verfügbarkeitsschlüssel nicht gedreht.
 
 Führen Sie das cmdlet Set-DataEncryptionPolicy wie folgt aus, um Kundenschlüssel anweisen, den neuen Schlüssel zum Verschlüsseln von Postfächern zu verwenden:
 
-1. Führen Sie Set-DataEncryptionPolicy cmdlet in Azure PowerShell aus:
+1. Führen Sie Set-DataEncryptionPolicy cmdlet in der Azure PowerShell:
   
    ```powershell
    Set-DataEncryptionPolicy -Identity <DataEncryptionPolicyID> -Refresh
    ```
 
-   Innerhalb von 72 Stunden werden die aktiven Postfächer, die dieser DEP zugeordnet sind, mit dem neuen Schlüssel verschlüsselt.
-
 2. Um den Wert für die DataEncryptionPolicyID-Eigenschaft für das Postfach zu überprüfen, verwenden Sie die Schritte unter [Determine the DEP assigned to a mailbox](customer-key-manage.md#determine-the-dep-assigned-to-a-mailbox). Der Wert für diese Eigenschaft ändert sich, sobald der Dienst den aktualisierten Schlüssel angewendet hat.
   
-## <a name="update-the-customer-key-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Aktualisieren der Dateien "Customer Key" für SharePoint Online, OneDrive for Business und Teams
+## <a name="update-the-keys-for-sharepoint-online-onedrive-for-business-and-teams-files"></a>Aktualisieren der Schlüssel für SharePoint Online-, OneDrive for Business- und Teams Dateien
 
-Mit SharePoint Online können Sie nur einen Schlüssel gleichzeitig rollen. Wenn Sie beide Schlüssel in einem Schlüsseltresor rollen möchten, warten Sie, bis der erste Vorgang abgeschlossen ist. Microsoft empfiehlt, ihre Vorgänge zu staffeln, um dieses Problem zu vermeiden. Wenn Sie einen der Azure Key #A0 rollen, der einer mit SharePoint Online und OneDrive for Business verwendeten DEP zugeordnet ist, müssen Sie die DEP aktualisieren, um auf den neuen Schlüssel zu zeigen. Dadurch wird der Verfügbarkeitsschlüssel nicht gedreht.
+SharePoint Online können Sie nur einen Schlüssel gleichzeitig rollen. Wenn Sie beide Schlüssel in einem Schlüsseltresor rollen möchten, warten Sie, bis der erste Vorgang abgeschlossen ist. Microsoft empfiehlt, ihre Vorgänge zu staffeln, um dieses Problem zu vermeiden. Wenn Sie einen der Azure Key Vault-Schlüssel rollen, der einer mit SharePoint Online und OneDrive for Business verwendeten DEP zugeordnet ist, müssen Sie die DEP aktualisieren, um auf den neuen Schlüssel zu zeigen. Dadurch wird der Verfügbarkeitsschlüssel nicht gedreht.
 
 1. Führen Sie Update-SPODataEncryptionPolicy cmdlet wie folgt aus:
   

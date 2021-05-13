@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Richten Sie Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ein, um Dateiaktivitäten zu überwachen und schützende Maßnahmen für diese Dateien auf Endpunkten anzuwenden.
-ms.openlocfilehash: 118c2f3f87df5ac9930bebd1338157d323b1e5e1
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 8fc8bef62827a5e6125565f5d7227a88cd923dcf
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259499"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332810"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Erste Schritte mit Endpunkt-DLP
 
@@ -147,7 +147,7 @@ In diesem Bereitstellungsszenario werden Sie das Onboarding von noch nicht einge
     - Onboarding von Windows-Computern mithilfe von Microsoft Endpoint Configuration Manager
     - Onboarding von Windows 10-Computern mit Tools für die Verwaltung von Mobilgeräten
     - Onboarding von Windows 10-Computern mithilfe eines lokalen Skripts
-    - Onboarding von nicht-persistenten Computern einer VD-Infrastruktur (Virtual Desktop)
+    - Onboarding von nicht-persistenten VDI-Maschinen (Virtual Desktop Infrastructure) in Single-Session-Szenarien
 
 Nach Abschluss des Endpunkt-Onboardings sollten diese in der Liste der Geräte aufgeführt sein, und das Übertragen von Aktivitätsüberwachungsprotokollen an den Aktivitäten-Explorer sollte beginnen.
 

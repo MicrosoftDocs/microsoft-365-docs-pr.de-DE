@@ -3,7 +3,7 @@ title: Prä-Migrationsaktivitäten für die Migration von Microsoft Cloud Deuts
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 03/09/2021
+ms.date: 05/12/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: 9c3aff56f5d85cd1b98747ef5b747720af74fe02
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
-ms.translationtype: HT
+ms.openlocfilehash: f872a75ed11bfd53c2100f1370a4e22426437bff
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073937"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52344698"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Prä-Migrationsaktivitäten für die Migration von Microsoft Cloud Deutschland
 
@@ -39,7 +39,6 @@ Wenn Sie
 - **Skype for Business Online**: führen Sie [diesen Schritt](#skype-for-business-online) aus.
 - **Dynamics 365**: führen Sie [diesen Schritt](#dynamics365) aus.
 - **Power BI**: führen Sie [diesen Schritt](#power-bi) aus.
-
 - **Active Directory Federation Services** für Azure AD Connect: führen Sie [diese Schritte](#active-directory-federation-services-ad-fs) aus.
 - **Drittanbieterdienste** oder **Line-of-Business (LOB)-Apps**, die mit Office 365 integriert sind: führen Sie [diesen Schritt](#line-of-business-apps) aus.
 - Mit einer MDM-Lösung eines Drittanbieters: führen Sie [diesen Schritt](#mobile-device-management) aus.

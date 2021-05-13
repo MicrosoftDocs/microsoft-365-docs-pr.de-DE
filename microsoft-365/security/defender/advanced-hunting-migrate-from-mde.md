@@ -1,6 +1,6 @@
 ---
 title: Migrieren erweiterter Suchabfragen von Microsoft Defender for Endpoint
-description: Erfahren Sie, wie Sie Ihre Microsoft Defender for Endpoint-Abfragen so anpassen, dass Sie sie in Microsoft 365 Defender verwenden können.
+description: Erfahren Sie, wie Sie Ihre Microsoft Defender for Endpoint-Abfragen so anpassen, dass Sie sie in Microsoft 365 können
 keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungensuche, Microsoft 365 Defender, microsoft 365, m365, Microsoft Defender for Endpoint, Suche, Abfrage, Telemetrie, benutzerdefinierte Erkennungen, Schema, Kusto, Zuordnung
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 5513c4b4fd8c5e24f9ada989113abc8a10e6a864
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: ba6f84f9f08d0635dab6ac65eaa697b8e0e73df7
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933445"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470688"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Migrieren erweiterter Suchabfragen von Microsoft Defender for Endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "51933445"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Verschieben Sie Ihre erweiterten Workflows für die Suche von Microsoft Defender for Endpoint, um mit einem umfassenderen Datensatz proaktiv nach Bedrohungen zu fahnen. In Microsoft 365 Defender erhalten Sie Zugriff auf Daten aus anderen Microsoft 365-Sicherheitslösungen, einschließlich:
+Verschieben Sie Ihre erweiterten Workflows für die Suche von Microsoft Defender for Endpoint, um mit einem umfassenderen Datensatz proaktiv nach Bedrohungen zu fahnen. In Microsoft 365 Defender erhalten Sie Zugriff auf Daten von anderen Microsoft 365 Sicherheitslösungen, einschließlich:
 
 - Microsoft Defender für Endpunkt
 - Microsoft Defender für Office 365
@@ -43,21 +43,20 @@ Verschieben Sie Ihre erweiterten Workflows für die Suche von Microsoft Defender
 - Microsoft Defender for Identity
 
 >[!NOTE]
->Die meisten Microsoft Defender for Endpoint-Kunden können [Microsoft 365 Defender ohne zusätzliche Lizenzen verwenden.](prerequisites.md#licensing-requirements) Aktivieren Sie [Microsoft 365 Defender,](m365d-enable.md)um mit dem Übergang ihrer workflows für die erweiterte Suche von Defender for Endpoint zu beginnen.
+>Die meisten Microsoft Defender for Endpoint-Kunden können [Microsoft 365 Defender ohne zusätzliche Lizenzen verwenden.](prerequisites.md#licensing-requirements) Um mit dem Übergang Ihrer erweiterten Suche von Defender for Endpoint zu beginnen, aktivieren Sie [Microsoft 365 Defender](m365d-enable.md).
 
-Sie können ohne Auswirkungen auf ihre vorhandenen Defender for Endpoint-Workflows umwechseln. Gespeicherte Abfragen bleiben erhalten, und benutzerdefinierte Erkennungsregeln werden weiterhin ausgeführt und Warnungen generiert. Sie sind jedoch in Microsoft 365 Defender sichtbar. 
+Sie können ohne Auswirkungen auf ihre vorhandenen Defender for Endpoint-Workflows umwechseln. Gespeicherte Abfragen bleiben erhalten, und benutzerdefinierte Erkennungsregeln werden weiterhin ausgeführt und Warnungen generiert. Sie sind jedoch in defender Microsoft 365 sichtbar. 
 
 ## <a name="schema-tables-in-microsoft-365-defender-only"></a>Schematabellen nur in Microsoft 365 Defender
-Das [Microsoft 365 Defender Advanced Hunting-Schema](advanced-hunting-schema-tables.md) enthält zusätzliche Tabellen mit Daten aus verschiedenen Microsoft 365-Sicherheitslösungen. Die folgenden Tabellen sind nur in Microsoft 365 Defender verfügbar:
+Das [Microsoft 365 defender advanced hunting-Schema](advanced-hunting-schema-tables.md) enthält zusätzliche Tabellen mit Daten aus verschiedenen Microsoft 365 Sicherheitslösungen. Die folgenden Tabellen sind nur in defender Microsoft 365 verfügbar:
 
 | Tabellenname | Beschreibung |
 |------------|-------------|
 | [AlertEvidence](advanced-hunting-alertevidence-table.md) | Dateien, IP-Adressen, URLs, Benutzer oder Geräte, die Warnungen zugeordnet sind |
 | [AlertInfo](advanced-hunting-alertinfo-table.md) | Warnungen von Microsoft Defender for Endpoint, Microsoft Defender für Office 365, Microsoft Cloud App Security und Microsoft Defender for Identity, einschließlich Schweregradinformationen und Bedrohungskategorien  |
-| [AppFileEvents](advanced-hunting-appfileevents-table.md) | Dateibezogene Aktivitäten in Cloud-Apps und -Diensten |
 | [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | Informationen zu Dateien, die an E-Mails angefügt sind |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | Microsoft 365-E-Mail-Ereignisse, einschließlich E-Mail-Zustellung und Blockieren von Ereignissen |
-| [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) | Sicherheitsereignisse, die nach der Zustellung auftreten, nachdem Microsoft 365 die E-Mails an das Empfängerpostfach zugestellt hat |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | Microsoft 365 E-Mail-Ereignisse, einschließlich E-Mail-Zustellung und Blockieren von Ereignissen |
+| [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) | Sicherheitsereignisse, die nach der Zustellung auftreten, nachdem Microsoft 365 E-Mails an das Empfängerpostfach zugestellt haben |
 | [EmailUrlInfo](advanced-hunting-emailurlinfo-table.md) | Informationen zu URLs in E-Mails |
 | [IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) | Ereignisse mit einem lokalen Domänencontroller, auf dem Active Directory (AD) ausgeführt wird. Diese Tabelle enthält eine Reihe von identitätsbezogenen Ereignissen und Systemereignissen auf dem Domänencontroller. |
 | [IdentityInfo](advanced-hunting-identityinfo-table.md) | Kontoinformationen aus verschiedenen Quellen, einschließlich Azure Active Directory |
@@ -65,7 +64,7 @@ Das [Microsoft 365 Defender Advanced Hunting-Schema](advanced-hunting-schema-tab
 | [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | Abfragen für Active Directory-Objekte, z. B. Benutzer, Gruppen, Geräte und Domänen |
 
 >[!IMPORTANT]
-> Abfragen und benutzerdefinierte Erkennungen, die Schematabellen verwenden, die nur in Microsoft 365 Defender verfügbar sind, können nur in Microsoft 365 Defender angezeigt werden.
+> Abfragen und benutzerdefinierte Erkennungen, die Schematabellen verwenden, die nur in Microsoft 365 Defender verfügbar sind, können nur in defender Microsoft 365 werden.
 
 ## <a name="map-devicealertevents-table"></a>DeviceAlertEvents-Tabelle zuordnung
 Die `AlertInfo` Tabellen und ersetzen die Tabelle im Microsoft Defender for `AlertEvidence` `DeviceAlertEvents` Endpoint-Schema. Neben Daten zu Gerätewarnungen enthalten diese beiden Tabellen Daten zu Warnungen für Identitäten, Apps und E-Mails.
@@ -75,7 +74,7 @@ Verwenden Sie die folgende Tabelle, um zu überprüfen, `DeviceAlertEvents` wie 
 >[!TIP]
 >Zusätzlich zu den Spalten in der folgenden Tabelle enthält die Tabelle viele weitere Spalten, die ein ganzheitliches Bild von Warnungen aus `AlertEvidence` verschiedenen Quellen bieten. [Alle AlertEvidence-Spalten anzeigen](advanced-hunting-alertevidence-table.md) 
 
-| Spalte DeviceAlertEvents | Wo sie dieselben Daten in Microsoft 365 Defender finden |
+| Spalte DeviceAlertEvents | Wo finden Sie dieselben Daten in Microsoft 365 Defender |
 |-------------|-----------|-------------|-------------|
 | `AlertId` | `AlertInfo` und  `AlertEvidence` Tabellen |
 | `Timestamp` | `AlertInfo` und  `AlertEvidence` Tabellen |
@@ -93,7 +92,7 @@ Verwenden Sie die folgende Tabelle, um zu überprüfen, `DeviceAlertEvents` wie 
 | `Table` | Diese Spalte wird in der Regel in Microsoft Defender for Endpoint für zusätzliche Ereignisinformationen in anderen Tabellen verwendet. In Microsoft 365 Defender können Sie verwandte Daten direkt aus der Tabelle `AlertEvidence` erhalten. |
 
 ## <a name="adjust-existing-microsoft-defender-for-endpoint-queries"></a>Anpassen vorhandener Microsoft Defender for Endpoint-Abfragen
-Microsoft Defender for Endpoint-Abfragen funktionieren wie folgt, es sei denn, sie verweisen auf die `DeviceAlertEvents` Tabelle. Wenden Sie die folgenden Änderungen an, um diese Abfragen in Microsoft 365 Defender zu verwenden:
+Microsoft Defender for Endpoint-Abfragen funktionieren wie folgt, es sei denn, sie verweisen auf die `DeviceAlertEvents` Tabelle. Um diese Abfragen in Microsoft 365 verwenden zu können, wenden Sie die folgenden Änderungen an:
 
 - Ersetzen `DeviceAlertEvents` Sie durch `AlertInfo` .
 - Schließen Sie sich `AlertInfo` der Tabelle und den Tabellen an `AlertEvidence` `AlertId` an, um gleichwertige Daten zu erhalten.
@@ -107,7 +106,7 @@ DeviceAlertEvents
 | where AttackTechniques has "PowerShell (T1086)" and FileName == "powershell.exe"
 ```
 ### <a name="modified-query"></a>Geänderte Abfrage
-Die folgende Abfrage wurde für die Verwendung in Microsoft 365 Defender angepasst. Anstatt den Dateinamen direkt aus zu überprüfen, wird der Dateiname in dieser Tabelle bei- und `DeviceAlertEvents` `AlertEvidence` überprüft.
+Die folgende Abfrage wurde für die Verwendung in defender Microsoft 365 angepasst. Anstatt den Dateinamen direkt aus zu überprüfen, wird der Dateiname in dieser Tabelle bei- und `DeviceAlertEvents` `AlertEvidence` überprüft.
 
 ```kusto
 AlertInfo 
@@ -119,7 +118,7 @@ AlertInfo
 
 ## <a name="migrate-custom-detection-rules"></a>Migrieren von benutzerdefinierten Erkennungsregeln
 
-Wenn Microsoft Defender for Endpoint-Regeln in Microsoft 365 Defender bearbeitet werden, funktionieren sie weiterhin wie zuvor, wenn die resultierende Abfrage nur Gerätetabellen betrachtet. 
+Wenn Microsoft Defender for Endpoint-Regeln auf Microsoft 365 Defender bearbeitet werden, funktionieren sie weiterhin wie zuvor, wenn die resultierende Abfrage nur Gerätetabellen betrachtet. 
 
 Beispielsweise werden Warnungen, die von benutzerdefinierten Erkennungsregeln generiert werden, die nur Gerätetabellen abfragen, weiterhin an Ihr SIEM übermittelt und E-Mail-Benachrichtigungen generiert, je nachdem, wie Sie diese in Microsoft Defender for Endpoint konfiguriert haben. Alle vorhandenen Unterdrückungsregeln in Defender for Endpoint gelten weiterhin.
 
@@ -127,13 +126,13 @@ Nachdem Sie eine Defender for Endpoint-Regel so bearbeitet haben, dass sie Ident
 
 Von der migrierten Regel generierte Warnungen:
 
-- Sind im Defender for Endpoint-Portal nicht mehr sichtbar (Microsoft Defender Security Center)
-- Beenden Sie die Zugestelltung an Ihr SIEM oder generieren Sie E-Mail-Benachrichtigungen. Um diese Änderung zu ändern, konfigurieren Sie Benachrichtigungen über Microsoft 365 Defender, um die Warnungen zu erhalten. Sie können die [Microsoft 365 Defender-API](api-incident.md) verwenden, um Benachrichtigungen für Kundenerkennungswarnungen oder damit zusammenhängende Vorfälle zu erhalten.
+- Sind nicht mehr im Defender for Endpoint-Portal (Microsoft Defender Security Center)
+- Beenden Sie die Zugestelltung an Ihr SIEM oder generieren Sie E-Mail-Benachrichtigungen. Um diese Änderung zu ändern, konfigurieren Sie Benachrichtigungen über Microsoft 365 Defender, um die Warnungen zu erhalten. Sie können die Microsoft 365 [Defender-API](api-incident.md) verwenden, um Benachrichtigungen für Kundenerkennungswarnungen oder damit zusammenhängende Vorfälle zu erhalten.
 - Wird nicht von Microsoft Defender for Endpoint-Unterdrückungsregeln unterdrückt. Um zu verhindern, dass Warnungen für bestimmte Benutzer, Geräte oder Postfächer generiert werden, ändern Sie die entsprechenden Abfragen so, dass diese Entitäten explizit ausgeschlossen werden.
 
 Wenn Sie eine Regel auf diese Weise bearbeiten, werden Sie zur Bestätigung aufgefordert, bevor diese Änderungen angewendet werden.
 
-Neue Warnungen, die von benutzerdefinierten Erkennungsregeln im Microsoft 365 Defender-Portal generiert werden, werden auf einer Warnungsseite angezeigt, die die folgenden Informationen enthält:
+Neue Warnungen, die von benutzerdefinierten Erkennungsregeln im Microsoft 365 werden auf einer Warnungsseite angezeigt, die die folgenden Informationen enthält:
 
 - Titel und Beschreibung der Warnung 
 - Auswirkungen auf Ressourcen
@@ -141,11 +140,12 @@ Neue Warnungen, die von benutzerdefinierten Erkennungsregeln im Microsoft 365 De
 - Abfrageergebnisse, die die Warnung ausgelöst haben 
 - Informationen zur benutzerdefinierten Erkennungsregel 
  
-![Abbildung der neuen Warnungsseite](../../media/new-alert-page.png)
+> [!div class="mx-imgBorder"]
+> ![Abbildung der neuen Warnungsseite](../../media/new-alert-page.png)
 
 ## <a name="write-queries-without-devicealertevents"></a>Schreiben von Abfragen ohne DeviceAlertEvents
 
-Im Microsoft 365 Defender-Schema werden die Tabellen und bereitgestellt, um die vielfältigen Informationen zu nutzen, die Warnungen aus verschiedenen `AlertInfo` `AlertEvidence` Quellen begleiten. 
+Im Microsoft 365 Defender-Schema werden die Tabellen und bereitgestellt, um die verschiedenen Informationen zu verwenden, die Warnungen aus verschiedenen `AlertInfo` `AlertEvidence` Quellen begleiten. 
 
 Um die gleichen Warnungsinformationen zu erhalten, die Sie aus der Tabelle im Microsoft Defender for Endpoint-Schema erhalten haben, filtern Sie die Tabelle nach, und schließen Sie dann jede eindeutige ID mit der Tabelle an, die detaillierte Ereignis- und Entitätsinformationen `DeviceAlertEvents` `AlertInfo` `ServiceSource` `AlertEvidence` enthält. 
 
@@ -178,7 +178,7 @@ AlertInfo
 | where EntityType == "Ip" and RemoteIP == "192.88.99.01" 
 ```
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 - [Microsoft 365 Defender aktivieren](advanced-hunting-query-language.md)
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Grundlegendes zum Schema](advanced-hunting-schema-tables.md)

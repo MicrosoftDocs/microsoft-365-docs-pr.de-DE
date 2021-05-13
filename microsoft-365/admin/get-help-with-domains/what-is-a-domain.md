@@ -23,12 +23,12 @@ ms.custom:
 - okr_smb
 - AdminSurgePortfolio
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0d4c59f24f5d5979d0f63d035edd1ca668ff4314
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: eac7de88e6d4c09e6807edbbd35d6ccc4718c671
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296695"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464333"
 ---
 # <a name="what-is-a-domain"></a>Was ist eine Domäne?
 
@@ -58,5 +58,13 @@ Sie können eine Standarddomäne wie *ihrunternehmen.onmicrosoft.<span>com* zun�
 ## <a name="feeling-stuck"></a>Sie kommen nicht weiter?
 
 Rufen Sie den Microsoft-Support an – [Hilfe beim Einrichten einer Domäne erhalten](../../business-video/get-help-support.md)
-  
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Kaufen einer Domäne](buy-a-domain-name.md) (Artikel)
+
+[Hinzufügen einer Domäne zu Microsoft 365](../setup/add-domain.md) (Artikel)
+
+[Pilot Microsoft 365 aus meiner benutzerdefinierten Domäne](../misc/pilot-microsoft-365-from-my-custom-domain.md) (Artikel)
+
 

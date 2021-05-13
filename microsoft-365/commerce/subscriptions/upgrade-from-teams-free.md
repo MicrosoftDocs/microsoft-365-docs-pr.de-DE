@@ -21,19 +21,19 @@ search.appverid: MET150
 description: Erfahren Sie, wie Sie ein Upgrade von Microsoft Teams Kostenlos auf ein neues Microsoft 365 Business-Abonnement durchführen.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 07/08/2020
-ms.openlocfilehash: 3f8c188055a9ec7c048921f7d5ee030407854616
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 8aab61819f7f335d4865e162ca752aa307f8f7ac
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333105"
+ms.locfileid: "52345106"
 ---
 # <a name="upgrade-from-microsoft-teams-free-to-microsoft-365-for-business"></a>Upgrade von Microsoft Teams Free auf Microsoft 365 Business
 
 > [!IMPORTANT]
 > Dieser Artikel gilt nur für Microsoft Teams Organisationen in Indien.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorabinformationen
 
 Sie müssen ein Microsoft Teams zum Upgrade einer kostenlosen Microsoft Teams sein. Sie sind automatisch Administrator, wenn Sie die kostenlose Microsoft Teams erstellt haben.
 

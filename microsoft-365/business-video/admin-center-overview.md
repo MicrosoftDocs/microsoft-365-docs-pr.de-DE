@@ -21,17 +21,19 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Microsoft 365 Admin Center.
-ms.openlocfilehash: 47eafbf49ac70d86b4065d3a67672c79abc16e63
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7d355b5064c2a0344ac62653afcae8712dbfc73f
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332246"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470424"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Übersicht über das Microsoft 365 Admin Center
 
 - [Das Admin Center in vereinfachter Ansicht](#the-admin-center-in-simplified-view)
 - [Das Admin Center in der Dashboardansicht](#the-admin-center-in-dashboard-view)
+
+Das Microsoft 365 Admin Center verfügt über zwei Ansichten: Die vereinfachte Ansicht hilft kleineren Organisationen bei der Verwaltung ihrer gängigsten Aufgaben. Die Dashboardansicht enthält komplexere Einstellungen und Aufgaben. Sie können über eine Schaltfläche oben im Admin Center zwischen diesen wechseln.
 
 ## <a name="the-admin-center-in-simplified-view"></a>Das Admin Center in vereinfachter Ansicht
 

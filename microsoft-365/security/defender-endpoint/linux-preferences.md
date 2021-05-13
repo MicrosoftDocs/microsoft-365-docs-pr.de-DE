@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 42b15edd933d80dd397f4681c4f0fdb035f030f2
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: 29505a6e975fdfa2283efe3391c615e40e678164
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943005"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346378"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-linux"></a>Festlegen von Einstellungen für Microsoft Defender for Endpoint unter Linux
 
@@ -105,6 +105,7 @@ Gibt die Seriendruckrichtlinie für Ausschlüsse an. Es kann eine Kombination au
 #### <a name="scan-exclusions"></a>Scannen von Ausschlüssen
 
 Entitäten, die von der Überprüfung ausgeschlossen wurden. Ausschlüsse können durch vollständige Pfade, Erweiterungen oder Dateinamen angegeben werden.
+(Ausschlüsse werden als Array von Elementen angegeben, der Administrator kann so viele Elemente wie nötig in beliebiger Reihenfolge angeben.)
 
 |||
 |:---|:---|
@@ -337,7 +338,7 @@ Das folgende Konfigurationsprofil hat Folgendes:
   - **Potenziell unerwünschte Anwendungen (PUA)** werden blockiert
   - **Archivangriffe** (Datei mit hoher Komprimierungsrate) werden in den Produktprotokollen überwacht.
 - Aktivieren automatischer Sicherheitsintelligenzupdates
-- Aktivieren des in der Cloud übermittelten Schutzes
+- Aus der Cloud bereitgestellten Schutz aktivieren
 - Aktivieren der automatischen Beispielübermittlung auf `safe` Ebene
 
 ### <a name="sample-profile"></a>Beispielprofil
@@ -387,7 +388,12 @@ Das folgende Konfigurationsprofil enthält Einträge für alle in diesem Dokumen
          {
             "$type":"excludedPath",
             "isDirectory":true,
-            "path":"/home"
+            "path":"/run"
+         },
+         {
+            "$type":"excludedPath",
+            "isDirectory":true,
+            "path":"/home/*/git"
          },
          {
             "$type":"excludedFileExtension",

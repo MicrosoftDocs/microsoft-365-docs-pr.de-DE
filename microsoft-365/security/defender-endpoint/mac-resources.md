@@ -18,18 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 34feeec0f8c34748678862b9aa7b20f84087eb5e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 29e9eefdf85c80b6d3c44eba01d0df57be0193a4
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934525"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346390"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Ressourcen für Microsoft Defender for Endpoint unter macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
+
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -51,7 +52,7 @@ Wenn Sie ein Problem reproduzieren können, erhöhen Sie die Protokollierungsstu
 
 2. Reproduzieren des Problems
 
-3. Führen `sudo mdatp diagnostic create` Sie aus, um die Microsoft Defender for Endpoint-Protokolle zu sichern. Die Dateien werden in einem ZIP-Archiv gespeichert. Mit diesem Befehl wird auch der Dateipfad zur Sicherung gedruckt, nachdem der Vorgang erfolgreich war.
+3. Führen `sudo mdatp diagnostic create` Sie aus, um die Microsoft Defender for Endpoint-Protokolle zu sichern. Die Dateien werden in einem .zip gespeichert. Mit diesem Befehl wird auch der Dateipfad zur Sicherung gedruckt, nachdem der Vorgang erfolgreich war.
 
    > [!TIP]
    > Diagnoseprotokolle werden standardmäßig in `/Library/Application Support/Microsoft/Defender/wdavdiag/` gespeichert. Um das Verzeichnis zu ändern, in dem Diagnoseprotokolle gespeichert werden, übergeben Sie an den folgenden Befehl, und ersetzen Sie durch `--path [directory]` `[directory]` das gewünschte Verzeichnis.
@@ -59,6 +60,7 @@ Wenn Sie ein Problem reproduzieren können, erhöhen Sie die Protokollierungsstu
    ```bash
    sudo mdatp diagnostic create
    ```
+
    ```console
    Diagnostic file created: "/Library/Application Support/Microsoft/Defender/wdavdiag/932e68a8-8f2e-4ad0-a7f2-65eb97c0de01.zip"
    ```
@@ -68,6 +70,7 @@ Wenn Sie ein Problem reproduzieren können, erhöhen Sie die Protokollierungsstu
    ```bash
    mdatp log level set --level info
    ```
+
    ```console
    Log level configured successfully
    ```
@@ -80,7 +83,7 @@ Das detaillierte Protokoll wird in `/Library/Logs/Microsoft/mdatp/install.log` g
 
 ## <a name="uninstalling"></a>Deinstallieren
 
-Es gibt mehrere Möglichkeiten, Microsoft Defender for Endpoint unter macOS zu deinstallieren. Beachten Sie, dass die zentral verwaltete Deinstallation zwar auf JAMF verfügbar ist, aber noch nicht für Microsoft Intune verfügbar ist.
+Es gibt mehrere Möglichkeiten, Microsoft Defender for Endpoint unter macOS zu deinstallieren. Beachten Sie, dass die zentral verwaltete Deinstallation zwar auf JAMF verfügbar ist, aber noch nicht für Microsoft Intune.
 
 ### <a name="interactive-uninstallation"></a>Interaktive Deinstallation
 
@@ -88,14 +91,13 @@ Es gibt mehrere Möglichkeiten, Microsoft Defender for Endpoint unter macOS zu d
 
 ### <a name="from-the-command-line"></a>Über die Befehlszeile
 
-- ```sudo rm -rf '/Applications/Microsoft Defender ATP.app'```
-- ```sudo rm -rf '/Library/Application Support/Microsoft/Defender/'```
+- ```sudo '/Library/Application Support/Microsoft/Defender/uninstall/uninstall'```
 
 ## <a name="configuring-from-the-command-line"></a>Konfigurieren über die Befehlszeile
 
 Wichtige Aufgaben, z. B. das Steuern von Produkteinstellungen und das Auslösen von Bedarfsscans, können über die Befehlszeile ausgeführt werden:
 
-|Gruppe        |Szenario                                   |Befehl                                                                           |
+|Gruppe        |Szenario                                   |Get-Help                                                                           |
 |-------------|-------------------------------------------|----------------------------------------------------------------------------------|
 |Konfiguration|Aktivieren/Deaktivieren des Echtzeitschutzes           |`mdatp config real-time-protection --value [enabled/disabled]`                    |
 |Konfiguration|Aktivieren/Deaktivieren des Cloudschutzes               |`mdatp config cloud --value [enabled/disabled]`                                   |
@@ -158,4 +160,4 @@ So aktivieren Sie die automatische Vervollständigung in zsh:
 
 ## <a name="microsoft-defender-for-endpoint-portal-information"></a>Informationen zum Microsoft Defender for Endpoint-Portal
 
-[Die EDR-Funktionen](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)für macOS sind nun im Microsoft Defender for Endpoint-Blog eingetroffen und bieten detaillierte Anleitungen dazu, was Sie in Microsoft Defender for Endpoint Security Center erwarten können.
+EDR Funktionen für [macOS](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/edr-capabilities-for-macos-have-now-arrived/ba-p/1047801)sind nun im Microsoft Defender for Endpoint-Blog eingetroffen und bieten detaillierte Anleitungen zu den Vorkehrungen in Microsoft Defender for Endpoint Security Center.

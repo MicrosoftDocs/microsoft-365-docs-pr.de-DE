@@ -3,7 +3,7 @@ title: Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den n
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 12/01/2020
+ms.date: 05/12/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verstehen.'
-ms.openlocfilehash: 7e170967e1670433a7d28753430f0cb15818039b
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
-ms.translationtype: HT
+ms.openlocfilehash: ad6c81f04b9e8551ad6eeb6521f7562243df53e9
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476637"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346304"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen
 
@@ -50,7 +50,6 @@ Die folgenden Dienste werden im Rahmen der Migration durch Microsoft migriert:
 - Exchange Online Protection
 - SharePoint Online
 - OneDrive for Business
-
 - Skype for Business Online\*\*
 - Office 365-Gruppen
 - Dynamics 365 / Power Platform\*\*\*
@@ -101,6 +100,9 @@ Nach der endgültigen Umstellung von Azure AD auf den weltweiten Dienst wird erw
 Microsoft Cloud Deutschland-Bestandskunden können nun mit der Migration ihrer Office 365-, Dynamics 365 Customer Engagement- und Power Platform-Diensten beginnen. Der erste Schritt besteht darin, [sich für eine von Microsoft geleitete Migration in unsere neuen deutschen Rechenzentrumsregionen anzumelden](./ms-cloud-germany-migration-opt-in.md). Wenn Sie Ihr Abonnement verlängern, melden Sie sich automatisch für eine von Microsoft geleitete Migration an. Microsoft wird in diesem Fall die Mandantenadministratoren von Kunden per E-Mail und im Nachrichtencenter des Microsoft 365 Admin Centers darüber benachrichtigen. Wenn Sie es jedoch vorziehen, den Vorgang jetzt zu starten, können Sie direkt im Microsoft 365 Admin Center sofort [das Opt-In vornehmen](./ms-cloud-germany-migration-opt-in.md). Die Migrationen werden voraussichtlich Anfang 2021 beginnen und bis zum 29. Oktober 2021 abgeschlossen sein. 
 
 Als Ergebnis der Migration werden die wichtigsten Kundendaten und -abonnements in die neuen deutschen Rechenzentrumsregionen verschoben.
+
+> [!NOTE]
+> Dieser Artikel enthält Anleitungen nur für die Migration Office 365 Dienste. Wenn Sie zusätzliche Azure-Workloads in Microsoft Cloud Deutschland ausführen, lesen Sie [die Migrationsleitfaden für Azure Deutschland](/azure/germany/germany-migration-main).
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Vorbereitung auf die Migration zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen
 

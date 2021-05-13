@@ -1,7 +1,7 @@
 ---
-title: Namensänderungen im Microsoft 365 Defender Advanced Hunting-Schema
+title: Benennungsänderungen im erweiterten Microsoft 365 von Defender
 description: Nachverfolgen und Überprüfen von Tabellen und Spalten für Namensänderungen im schema der erweiterten Suche
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungensuche, Microsoft 365 Defender, microsoft 365, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Daten, Benennungsänderungen, Umbenennen
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data, naming changes, rename
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: eb6dfa628488239e3953d19d5e78b338e76f50a2
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: a387892dde0fbe96e4a523b2247448a3c7e374b8
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023785"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470496"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schema der erweiterten Suche – Benennungsänderungen
 
@@ -43,7 +43,7 @@ Namensänderungen werden automatisch auf Abfragen angewendet, die im Security Ce
 - Abfragen, die mithilfe der API ausgeführt werden
 - Abfragen, die an anderer Stelle außerhalb des Sicherheitscenters gespeichert werden
 
-## <a name="december-2020"></a>Dezember 2020
+## <a name="december-2020"></a>Dezember 2020
 
 | Tabellenname | Ursprünglicher Spaltenname | Neuer Spaltenname | Änderungsgrund
 |--|--|--|--|
@@ -78,12 +78,12 @@ Namensänderungen werden automatisch auf Abfragen angewendet, die im Security Ce
 
 1. In den [Tabellen EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) und [EmailEvents](advanced-hunting-emailevents-table.md) wurden die `MalwareFilterVerdict` Spalten und durch die Spalte `PhishFilterVerdict` `ThreatTypes` ersetzt. Die `MalwareDetectionMethod` Spalten und wurden auch durch die Spalte `PhishDetectionMethod` `DetectionMethods` ersetzt. Diese Optimierung ermöglicht es uns, weitere Informationen unter den neuen Spalten zur Verfügung zu stellen. Die Zuordnung wird unten bereitgestellt.
 
-| Tabellenname | Ursprünglicher Spaltenname | Neuer Spaltenname | Änderungsgrund
-|--|--|--|--|
-| `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Fügen Sie weitere Erkennungsmethoden ein |
-| `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Weitere Bedrohungstypen enthalten |
-| `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Fügen Sie weitere Erkennungsmethoden ein |
-| `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Weitere Bedrohungstypen enthalten |
+    | Tabellenname | Ursprünglicher Spaltenname | Neuer Spaltenname | Änderungsgrund
+    |--|--|--|--|
+    | `EmailAttachmentInfo` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Fügen Sie weitere Erkennungsmethoden ein |
+    | `EmailAttachmentInfo`  | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Weitere Bedrohungstypen enthalten |
+    | `EmailEvents` | `MalwareDetectionMethod` <br> `PhishDetectionMethod` | `DetectionMethods` | Fügen Sie weitere Erkennungsmethoden ein |
+    | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Weitere Bedrohungstypen enthalten |
 
 
 2. In den Tabellen und wurde die Spalte hinzugefügt, um weitere Informationen zur E-Mail-Bedrohung `EmailAttachmentInfo` `EmailEvents` zu `ThreatNames` erhalten. Diese Spalte enthält Werte wie Spam oder Phish.
@@ -92,18 +92,20 @@ Namensänderungen werden automatisch auf Abfragen angewendet, die im Security Ce
 
 4. In der [DeviceEvents-Tabelle](advanced-hunting-deviceevents-table.md) wurden mehrere ActionType-Namen geändert, um die Beschreibung der Aktion besser widerspiegeln zu können. Details zu den Änderungen finden Sie unten.
 
-| Tabellenname | Ursprünglicher ActionType-Name | Neuer ActionType-Name | Änderungsgrund
-|--|--|--|--|
-| `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | Kundenfeedback |
-| `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Kundenfeedback |
-| `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Kundenfeedback |
-| `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Kundenfeedback |
+    | Tabellenname | Ursprünglicher ActionType-Name | Neuer ActionType-Name | Änderungsgrund
+    |--|--|--|--|
+    | `DeviceEvents` | `DlpPocPrintJob` | `FilePrinted` | Kundenfeedback |
+    | `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Kundenfeedback |
+    | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Kundenfeedback |
+    | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Kundenfeedback |
 
 ## <a name="march-2021"></a>März 2021
 
 Die `DeviceTvmSoftwareInventoryVulnerabilities` Tabelle ist veraltet. Ersetzen sind die `DeviceTvmSoftwareInventory` Tabellen `DeviceTvmSoftwareVulnerabilities` und.
 
+## <a name="may-2021"></a>Mai 2021
 
+Die `AppFileEvents` Tabelle ist veraltet. Die Tabelle enthält Informationen, die früher in der Tabelle enthalten waren, sowie andere `CloudAppEvents` `AppFileEvents` Aktivitäten in Clouddiensten.
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

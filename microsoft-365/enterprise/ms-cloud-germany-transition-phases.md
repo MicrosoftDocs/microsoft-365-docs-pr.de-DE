@@ -3,7 +3,7 @@ title: Aktionen während der Migrationsphasen und Auswirkungen für die Migratio
 ms.author: andyber
 author: andybergen
 manager: laurawi
-ms.date: 03/05/2021
+ms.date: 05/12/2021
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: 354ca55bae7704c011af5a76a1112e4d2ecb47ca
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
-ms.translationtype: HT
+ms.openlocfilehash: a99103083c8fabae3934a6622acc55a59ff5c9a0
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073925"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346292"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktionen während der Migrationsphasen und Auswirkungen für die Migration von Microsoft Cloud Deutschland
 
@@ -33,12 +33,15 @@ Mandantenmigrationen aus der Microsoft Cloud Deutschland (MCD) in die Region "De
 
 Der Migrationsprozess dauert mehrere Wochen, abhängig von der Gesamtgröße und Komplexität der Organisation. Während der Migration können Benutzer und Administratoren die Dienste weiterhin nutzen, jedoch mit wichtigen Änderungen, die in dieser Dokumentation beschrieben werden. In der Grafik und der Tabelle sind die Phasen und Schritte während der Migration dargestellt.
 
+> [!NOTE]
+> Die Migration von Azure-Diensten ist nicht Teil dieser Dokumentation. Diese Informationen finden Sie unter [Migrationsleitfass für Azure Deutschland](/azure/germany/germany-migration-main).
+
 |Schritt|Dauer|Verantwortliche Partei|Beschreibung|
 |:--------|:--------|:--------|:--------|
 |Anmelden|Stunden|Kunde|Anmelden Ihrer Organisation für die Migration.|
 |Vorarbeit|Tage|Kunde|Durchführen der erforderlichen Maßnahmen, um Benutzer, Arbeitsstationen und das Netzwerk für die Migration vorzubereiten.|
 |Azure Active Directory (Azure AD)|1-2 Tage|Microsoft|Migrieren der Azure AD-Organisation zu weltweit.|
-|Azure|Wochen|Kunde|Erstellen neuer weltweiter Azure-Abonnements und des Überführen von Azure-Diensten.|
+|Azure|Wochen|Kunde|Erstellen Neuer weltweiter Azure-Abonnements und [Übergang von Azure-Diensten](/azure/azure-resource-manager/management/move-resource-group-and-subscription).|
 |Abonnement- und Lizenzüberführung|1-2 Tage|Microsoft|Erwerben weltweiter Abonnements, kündigen von Microsoft Cloud Deutschland-Abonnements und Überführen von Benutzerlizenzen.|
 |SharePoint und OneDrive|Mehr als 15 Tage|Microsoft|Migrieren von SharePoint- und OneDrive for Business-Inhalten, Beibehalten von sharepoint.de-URLs.|
 |Exchange Online|Mehr als 15 Tage|Microsoft|Migrieren von Exchange Online-Inhalten und Umstieg auf weltweite URLs.|
@@ -212,8 +215,7 @@ Stellen Sie sicher, dass die [Exchange-Vorbereitungen](ms-cloud-germany-transiti
 Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outlook.com"
 ```
 
-## <a name="phase-7-skype-for-business-online"></a>Phase 7: Skype for Business Online
-
+## <a name="phase-7-skype-for-business-online---transition-to-microsoft-teams"></a>Phase 7: Skype for Business Online – Übergang zu Microsoft Teams
 **Gilt für**: Alle Kunden, die Skype for Business Online verwenden
 
 Überprüfen Sie die [Vor-Migrationsschritte für die Skype for Business Online-Migration](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online), und stellen Sie sicher, dass Sie alle Schritte abgeschlossen haben.
@@ -226,15 +228,23 @@ In dieser Phase wird Skype for Business nach Microsoft Teams migriert. Bestehend
 - Kontakte und Besprechungen werden nach Microsoft Teams migriert.
 - Benutzer können sich während der Umstellung von Diensten auf Office 365-Dienste nicht in Skype for Business anmelden und auch nicht, bevor die Kunden-DNS-Einträge abgeschlossen sind.
 - Kontakte und bestehende Besprechungen werden weiterhin als Skype for Business-Besprechungen funktionieren.
-- Die Webbrowser-Version von Microsoft Teams wird erst funktionieren, wenn die Phase 9 abgeschlossen ist.
+
+Wenn eine Vanitydomäne für die Skype for Business konfiguriert wurde, müssen die DNS-Einträge aktualisiert werden. Lesen Sie Domänen [im Microsoft 365 Admin Center,](https://admin.microsoft.com/Adminportal/Home#/Domains) und wenden Sie die Änderungen an Ihrer DNS-Konfiguration an. 
 
 Wenn Sie sich nach Abschluss der Migrationsphase 9 zu Skype for Business Online mit PowerShell verbinden müssen, verwenden Sie den folgenden PowerShell-Code für die Verbindung:
 
 ```powershell
 Import-Module MicrosoftTeams
 $userCredential = Get-Credential
-Connect-MicrosoftTeams -Credential $userCredential -OverridePowershellUri "https://admin4E.online.lync.com/OcsPowershellOAuth"
+Connect-MicrosoftTeams -Credential $userCredential
 ```
+
+### <a name="known-limitations-until-finalizing-azure-ad-migration"></a>Bekannte Einschränkungen bis zum Abschluss der Azure AD-Migration
+Microsoft Teams nutzt Features von Azure AD. Obwohl die Migration von Azure AD nicht abgeschlossen ist, sind einige Features Microsoft Teams nicht vollständig verfügbar. Nach Phase 9, nach Abschluss der Migration von Azure AD, stehen die folgenden Features vollständig zur Verfügung:
+
+- Apps können nicht im Microsoft Teams verwaltet werden.
+- Neue Teams können nur im client Microsoft Teams erstellt werden, es sei denn, der Teams hat die Berechtigungen für Benutzer zum Erstellen neuer Teams eingeschränkt. Neue Teams können nicht im Microsoft Teams erstellt werden. 
+- Die Webversion von Microsoft Teams ist nicht verfügbar.
 
 ## <a name="phase-8-dynamics-365"></a>Phase 8: Dynamics 365
 

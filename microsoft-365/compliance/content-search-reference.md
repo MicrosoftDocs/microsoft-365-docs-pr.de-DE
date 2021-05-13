@@ -1,5 +1,5 @@
 ---
-title: Referenz zur Inhaltssuche
+title: Featurereferenz für die Inhaltssuche
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -20,14 +20,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Dieser Artikel enthält Referenzinformationen über das Inhaltssuche-eDiscovery-Tool im Microsoft 365 Compliance Center, damit Sie sich mit den vielen Details der Inhaltssuche vertraut machen können.
-ms.openlocfilehash: c345cf00bddba30cb543ad9682a2a332607d31fe
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: f3545cc4644ca8b0a96ee37713d8fe62be7466e5
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314314"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332894"
 ---
-# <a name="content-search-reference"></a>Referenz zur Inhaltssuche
+# <a name="feature-reference-for-content-search"></a>Featurereferenz für die Inhaltssuche
+
+Dieser Artikel beschreibt Features und Funktionalität der Inhaltssuche.
 
 ## <a name="content-search-limits"></a>Grenzwerte für Inhaltssuchen
 
@@ -71,6 +73,10 @@ Bedenken Sie bei der Verwendung einer Schlüsselwortliste zum Erstellen einer Su
     
 - Wenn eine Suchabfrage Schlüsselwörter für nichtenglische Zeichen enthält (z. B. chinesische Zeichen), können Sie auf **Abfragesprache Land/Region**![Query language-country/region icon in Content search](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) klicken und einen Kulturcodewert für Sprache und Region für die Suche auswählen. Die standardmäßige Sprache/Region ist neutral. Woran erkennen Sie, dass Sie die Spracheinstellung für eine Inhaltssuche ändern müssen? Wenn Sie sicher sind, dass bestimmte Inhaltsspeicherorte nichtenglische Zeichen enthalten, nach denen Sie suchen, die Suche jedoch keine Ergebnisse zurückgibt, könnte die Spracheinstellung die Ursache sein. 
   
+## <a name="partially-indexed-items"></a>Teilweise indizierte Elemente
+
+- Teilweise indizierte Elemente in Postfächern werden in die geschätzten Suchergebnisse einbezogen. Teilweise indizierte Elemente aus SharePoint und OneDrive werden nicht in die geschätzten Suchergebnissen einbezogen. Weitere Informationen finden Sie unter [Teilweise indizierte Elemente in der eDiscovery](partially-indexed-items-in-content-search.md).
+
 ## <a name="searching-onedrive-accounts"></a>Durchsuchen von OneDrive-Konten
 
 - Wie Sie eine Liste der URLs für die OneDrive-Websites in Ihrer Organisation erstellen können erfahren Sie unter [Erstellen einer Liste aller OneDrive-Speicherorte in Ihrer Organisation](/onedrive/list-onedrive-urls). Mit dem Skript in diesem Artikel wird eine Textdatei erstellt, die eine Liste aller OneDrive-Websites enthält. Um dieses Skript ausführen zu können, müssen Sie die SharePoint Online-Verwaltungsshell installieren und verwenden. Achten Sie darauf, die URL für die "MeineWebsite"-Domäne Ihrer Organisation an jede OneDrive-Website anzuhängen, die Sie durchsuchen möchten. Dies ist die Domäne, die Ihr gesamtes OneDrive enthält, z. B. `https://contoso-my.sharepoint.com`. Hier ein Beispiel für die URL der OneDrive-Website eines Benutzers: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
@@ -228,12 +234,6 @@ Wenn die Exchange Online-Lizenz (oder die gesamte Microsoft 365-Lizenz) von eine
 - Wenn Sie das Cmdlet **New-ComplianceSearch** zum Erstellen einer Inhaltssuche verwenden, und ein getrenntes Postfach als Exchange-Inhaltsspeicherort für die Suche festlegen, gibt die Inhaltssuche keine Suchergebnisse aus dem getrennten Postfach zurück.
 
 Wenn Sie die Daten in einem getrennten Postfach beibehalten müssen, damit sie durchsuchbar sind, müssen Sie eine Aufbewahrung für das Postfach einrichten, bevor Sie die Lizenz entfernen. Dadurch bleiben die Daten erhalten und das getrennte Postfach durchsuchbar, bis die Aufbewahrung entfernt wird. Weitere Informationen zu Aufbewahrungen finden Sie unter [Identifizieren des Typs der Aufbewahrung für ein Exchange Online-Postfach](identify-a-hold-on-an-exchange-online-mailbox.md)
-
-## <a name="partially-indexed-items"></a>Teilweise indizierte Elemente
-
-- Wie zuvor erläutert, werden teilweise indizierte Elemente in Postfächern in die geschätzten Suchergebnisse einbezogen. Teilweise indizierte Elemente aus SharePoint und OneDrive werden nicht in die geschätzten Suchergebnissen einbezogen.
-
-- Wenn ein teilweise indiziertes Element der Suchabfrage entspricht (weil andere Nachrichten- oder Dokumenteigenschaften die Suchkriterien erfüllen), wird es nicht in die geschätzte Anzahl nicht indizierter Elemente einbezogen. Wenn ein teilweise indiziertes Element durch die Suchkriterien ausgeschlossen ist, wird es nicht in die geschätzte Anzahl nicht indizierter Elemente einbezogen. Weitere Informationen finden Sie unter [Teilweise indizierte Elemente in der Inhaltssuche in Office 365](partially-indexed-items-in-content-search.md).
 
 ## <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>Suchen nach Inhalten in einer SharePoint-Multi-Geo-Umgebung
 

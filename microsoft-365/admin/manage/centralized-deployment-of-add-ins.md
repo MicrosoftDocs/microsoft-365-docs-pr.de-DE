@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ermitteln Sie, ob Der Mandant und die Benutzer die Anforderungen erfüllen, sodass Sie die zentrale Bereitstellung zum Bereitstellen Office-Add-Ins verwenden können.
-ms.openlocfilehash: 8f73deb1059097640946fcf7dad1ca97cb2831b1
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 482f2231c0c2c9fa30e863f25f474d90a22f52fa
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296719"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464405"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert
 
@@ -155,5 +155,16 @@ Wenn bei der Verwendung von Office-Apps für das Web (Word, Excel usw.), die zen
   
 |**Plattform**|**Debuginformationen**|
 |:-----|:-----|
-|Office  <br/> | Charles/Fiddler-Protokolle  <br/>  Mandanten-ID ( [So wird's gemacht](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Zeigen Sie die Quelle einer der Office-Seiten an, suchen Sie nach dem Korrelations-ID-Wert, und senden Sie ihn an die Unterstützung:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Office  <br/> | Charles/Fiddler-Protokolle  <br/>  Mandanten-ID ( [So wird's gemacht](/onedrive/find-your-office-365-tenant-id.md))  <br/>  CorrelationID. Zeigen Sie die Quelle einer der Office-Seiten an, suchen Sie nach dem Korrelations-ID-Wert, und senden Sie ihn an die Unterstützung:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Rich Clients (Windows, Mac)  <br/> | Charles/Fiddler-Protokolle  <br/>  Erstellen von Nummern der Client-App (vorzugsweise als Screenshot aus **Datei/Konto**)  <br/> |
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Bereitstellen von Add-Ins im Admin Center](../manage/manage-deployment-of-add-ins.md) (Artikel)
+
+[Verwalten von Add-Ins im Admin Center](manage-addins-in-the-admin-center.md) (Artikel)
+
+[Häufig gestellte Fragen zur zentralen](../manage/centralized-deployment-faq.md) Bereitstellung (Artikel)
+
+[Aktualisieren Der Microsoft 365 für Geschäftsbenutzer auf den](../setup/upgrade-users-to-latest-office-client.md) neuesten Office (Artikel)
+ 

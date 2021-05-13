@@ -1,5 +1,5 @@
 ---
-title: Datentabellen im Microsoft 365 Defender Advanced Hunting-Schema
+title: Datentabellen im erweiterten Microsoft 365 Defender
 description: Erfahren Sie mehr über die Tabellen im Schema "Erweiterte Suche", um die Daten zu verstehen, zu denen Sie Suchanfragen zur Bedrohungssuche ausführen können
 keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, data
 search.product: eADQiWindows 10XVcnh
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 0313d1e95682d52e44cf90360c8ef322f0cad5db
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3c8c65d012467317bf8335f47c3f686a5d7255d1
+ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932917"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52470580"
 ---
 # <a name="understand-the-advanced-hunting-schema"></a>Grundlegendes zum Schema "Erweiterte Suche"
 
@@ -59,7 +59,6 @@ Im Folgenden sind alle Tabellen im Schema aufgelistet. Jeder Tabellenname verwei
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | Dateien, IP-Adressen, URLs, Benutzer oder Geräte, die Warnungen zugeordnet sind |
 | **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Warnungen von Microsoft Defender for Endpoint, Microsoft Defender für Office 365, Microsoft Cloud App Security und Microsoft Defender for Identity, einschließlich Schweregradinformationen und Bedrohungs kategorisierung  |
-| **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | Dateibezogene Aktivitäten in Cloud-Apps und -Diensten |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Ereignisse mit Konten und Objekten in Office 365 und anderen Cloud-Apps und -Diensten |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Verschiedene Ereignistypen, einschließlich Ereignisse, die von Sicherheitssteuerelementen ausgelöst werden wie z. B. Windows Defender Antivirus und Exploit Protection |
 | **[DeviceFileCertificateInfo](advanced-hunting-DeviceFileCertificateInfo-table.md)** | Zertifikatinformationen signierter Dateien, die von Zertifikatüberprüfungsereignissen auf Endpunkten erhalten wurden |
@@ -77,8 +76,8 @@ Im Folgenden sind alle Tabellen im Schema aufgelistet. Jeder Tabellenname verwei
 | **[DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md)** | Softwarerisiken auf Geräten und die Liste der verfügbaren Sicherheitsupdates, die die einzelnen Sicherheitsrisiken adressiert haben |
 | **[DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md)** | Wissensdatenbank veröffentlichter Sicherheitsrisiken, einschließlich der Angabe, ob Exploitcode öffentlich verfügbar ist |
 | **[EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md)** | Informationen zu Dateien, die an E-Mails angefügt sind |
-| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365-E-Mail-Ereignisse, einschließlich E-Mail-Zustellung und Blockieren von Ereignissen |
-| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Sicherheitsereignisse, die nach der Zustellung auftreten, nachdem Microsoft 365 die E-Mails an das Empfängerpostfach zugestellt hat |
+| **[EmailEvents](advanced-hunting-emailevents-table.md)** | Microsoft 365 E-Mail-Ereignisse, einschließlich E-Mail-Zustellung und Blockieren von Ereignissen |
+| **[EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md)** | Sicherheitsereignisse, die nach der Zustellung auftreten, nachdem Microsoft 365 E-Mails an das Empfängerpostfach zugestellt haben |
 | **[EmailUrlInfo](advanced-hunting-emailurlinfo-table.md)** | Informationen zu URLs in E-Mails |
 | **[IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md)** | Ereignisse mit einem lokalen Domänencontroller, auf dem Active Directory (AD) ausgeführt wird. Diese Tabelle enthält eine Reihe von identitätsbezogenen Ereignissen und Systemereignissen auf dem Domänencontroller. |
 | **[IdentityInfo](advanced-hunting-identityinfo-table.md)** | Kontoinformationen aus verschiedenen Quellen, einschließlich Azure Active Directory |

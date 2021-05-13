@@ -17,19 +17,19 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8e861055067a55630da458e87b7376a607dc69c4
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: bd506caa041af2585778fb3ecd7a40562463b17e
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934297"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346414"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-linux"></a>Konfigurieren und Überprüfen von Ausschlüssen für Microsoft Defender for Endpoint unter Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Gilt für:**
+
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +38,7 @@ ms.locfileid: "51934297"
 Dieser Artikel enthält Informationen zum Definieren von Ausschlüssen, die für Scans bei Bedarf gelten, sowie Zum Schutz und Überwachung in Echtzeit.
 
 > [!IMPORTANT]
-> Die in diesem Artikel beschriebenen Ausschlüsse gelten nicht für andere Defender for Endpoint on Linux-Funktionen, einschließlich Endpunkterkennung und -reaktion (EDR). Dateien, die Sie mithilfe der in diesem Artikel beschriebenen Methoden ausschließen, können weiterhin EDR-Warnungen und andere Erkennungen auslösen.
+> Die in diesem Artikel beschriebenen Ausschlüsse gelten nicht für andere Defender for Endpoint on Linux-Funktionen, einschließlich EDR (EDR). Dateien, die Sie mithilfe der in diesem Artikel beschriebenen Methoden ausschließen, können weiterhin EDR und andere Erkennungen auslösen.
 
 Sie können bestimmte Dateien, Ordner, Prozesse und prozessge öffnende Dateien aus Defender for Endpoint auf Linux-Scans ausschließen.
 

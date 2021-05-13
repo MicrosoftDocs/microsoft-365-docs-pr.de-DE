@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Erfahren Sie mehr über Vorschläge, mit deren Hilfe Sie Microsoft-Produkte und -Dienste kaufen können.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: c61fa53267f2fdb60e78a05cd89aa6f364cb2395
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 5dece5ccc0cc26b157ae0cc33ec9bb1fe44c44b3
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332954"
+ms.locfileid: "52345082"
 ---
 # <a name="understand-the-proposal-workflow"></a>Verstehen des Vorschlagsworkflows
 
@@ -170,7 +170,7 @@ Nachdem Sie die Bestellung bestellt haben, erhalten Sie eine Bestätigung mit de
 
 Wenn Sie ein neuer Kunde sind und Azure-Produkte im Rahmen des Vorschlags erworben haben, besteht Ihr nächster Schritt in der Einrichtung Ihres neuen Abrechnungskontos. Weitere Informationen finden Sie unter [Einrichten Ihres Abrechnungskontos für einen Microsoft-Kundenvertrag](/azure/cost-management-billing/manage/mca-setup-account).
 
-Wenn Sie ein vorhandener Azure-Kunde mit einem Konzernvertrag sind und sie zum ersten Mal eine MCA signieren, besteht Ihr nächster Schritt in den Informationen zu den Änderungen zwischen den Vereinbarungen und zum Abschließen von Aufgaben mit Ihrem neuen Abrechnungskonto. Weitere Informationen finden Sie unter [Complete Konzernvertrag tasks in your billing account for a Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-enterprise-operations).
+Wenn Sie ein vorhandener Azure-Kunde mit einem Enterprise Agreement sind und sie zum ersten Mal eine MCA signieren, besteht Ihr nächster Schritt in den Informationen zu den Änderungen zwischen den Vereinbarungen und zum Abschließen von Aufgaben mit Ihrem neuen Abrechnungskonto. Weitere Informationen finden Sie unter [Complete Enterprise Agreement tasks in your billing account for a Microsoft Customer Agreement](/azure/cost-management-billing/manage/mca-enterprise-operations).
 
 ## <a name="understand-invoicing"></a>Verstehen der Rechnungsstellung
 

@@ -1,5 +1,5 @@
 ---
-title: Testen oder Kaufen eines Microsoft 365 Business-Abonnements
+title: Testen oder Kaufen eines Microsoft 365 business-Abonnements
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,18 +17,18 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 search.appverid: MET150
-description: Erfahren Sie, wie Sie eine kostenlose Testversion erhalten oder ein Abonnement für Microsoft 365 Business erwerben.
+description: Erfahren Sie, wie Sie eine kostenlose Testversion erhalten oder ein Abonnement für Microsoft 365 kaufen.
 ms.date: 08/07/2020
-ms.openlocfilehash: 709f687b282246b90c1b1a14398174e616e0494a
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 78716d78745616530729ff2fa5cfa31202e056c8
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332966"
+ms.locfileid: "52344686"
 ---
-# <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Testen oder Kaufen eines Microsoft 365 Business-Abonnements
+# <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Testen oder Kaufen eines Microsoft 365 business-Abonnements
 
-Microsoft 365 Business ist ein Abonnementdienst, mit dem Sie Ihre Organisation in der Cloud ausführen können, während Microsoft die IT für Sie übernimmt. Microsoft verwaltet Geräte, schützt vor realen Bedrohungen und stellt Ihrer Organisation die neueste Geschäftssoftware zur Verfügung. Sie können sich für ein kostenloses Testabonnement für Microsoft 365 Business Standard, Microsoft 365 Business Premium oder Microsoft 365 Apps for Business registrieren und es 30 Tage lang testen.
+Microsoft 365 business ist ein Abonnementdienst, mit dem Sie Ihre Organisation in der Cloud ausführen können, während Microsoft die IT für Sie übernimmt. Microsoft verwaltet Geräte, schützt vor realen Bedrohungen und stellt Ihrer Organisation die neueste Geschäftssoftware zur Verfügung. Sie können sich für ein kostenloses Testabonnement für Microsoft 365 Business Standard, Microsoft 365 Business Premium oder Microsoft 365 Apps for Business registrieren und es 30 Tage lang testen.
 
 > [!NOTE]
 > Sie müssen eine Kreditkarte verwenden, wenn Sie sich für eine kostenlose Testversion registrieren. Am Ende des kostenlosen Testzeitraums wird Ihr Testabonnement automatisch in ein kostenpflichtiges Abonnement konvertiert. Ihre Kreditkarte wird erst am Ende des Testzeitraums abgerechnet.
@@ -36,23 +36,23 @@ Microsoft 365 Business ist ein Abonnementdienst, mit dem Sie Ihre Organisation i
 ::: moniker range="o365-21vianet"
 
 > [!IMPORTANT]
-> **Zahlungsoptionen für Office 365, betrieben von 21Vianet in China** Internationale Kreditkarten werden nicht akzeptiert. Sie können Für Ihr Abonnement bezahlen, indem Sie:
+> **Zahlungsoptionen für Office 365 betrieben von 21Vianet in China** Internationale Kreditkarten werden nicht akzeptiert. Sie können Für Ihr Abonnement bezahlen, indem Sie:
 >
 > - Invoice
 > - Onlinezahlung mit Alipay oder China UnionPay Zahlungsnachweis wird in Form von Fapiaos bereitgestellt. Sie können Ihre Fapiao-Anforderung etwa drei (3) Tage nach der Bezahlten an unser [Fapiao-System](https://go.microsoft.com/fwlink/p/?LinkId=395314) übermitteln. Weitere Informationen finden Sie [unter Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Vorabinformationen
 
 Sie benötigen kein vorhandenes Microsoft-Konto, um sich für eine kostenlose Testversion zu registrieren. Für alle anderen Verfahren in diesem Artikel müssen Sie ein globaler Administrator oder Abrechnungsadministrator für Ihre Organisation sein. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../admin/add-users/about-admin-roles.md).
 
 ## <a name="try-a-free-trial-subscription"></a>Testen eines kostenlosen Testabonnements
 
-Sind Sie ein neuer Kunde und haben noch kein Konto bei Microsoft? Verwenden Sie diese Schritte, um ein Konto zu erstellen und sich für ein kostenloses Testabonnement von Microsoft 365 Business Standard, Microsoft 365 Business Premium oder Microsoft 365 Apps for Business zu registrieren.
+Sind Sie ein neuer Kunde und haben noch kein Konto bei Microsoft? Verwenden Sie diese Schritte, um ein Konto zu erstellen und sich für ein kostenloses Testabonnement von Microsoft 365 Business Standard, Microsoft 365 Business Premium oder Microsoft 365 Apps for Business.
 
-1. Wechseln Sie zur <a href="https://www.aka.ms/office365signup" target="_blank">Microsoft 365-Produkte-Website</a>.
-2. Wählen Sie den Plan aus, für den Sie sich registrieren möchten, z. B. **Microsoft 365 Business Standard,** scrollen Sie auf der Seite nach unten, und wählen Sie Kostenlos testen für **1 Monat aus.**
+1. Wechseln Sie zur <a href="https://www.aka.ms/office365signup" target="_blank">website Microsoft 365 Products</a>.
+2. Wählen Sie den Plan aus, für den Sie sich registrieren möchten, z. B. **Microsoft 365 Business Standard**, scrollen Sie auf der Seite nach unten, und wählen Sie Kostenlos testen **für 1 Monat aus.**
 3. Führen Sie auf der nächsten Seite die Schritte zum Einrichten Ihres Kontos aus.
 4. Der Anmeldevorgang kann einige Minuten dauern. Nach Abschluss des Vorgangs können Sie \' den Setup-Assistenten für Ihr Abonnement starten. Weitere Informationen zum Einrichten Ihres Abonnements finden Sie unter [Nächste Schritte](#next-steps).
 
@@ -62,7 +62,7 @@ Am Ende des kostenlosen Testzeitraums wird Ihr Testabonnement automatisch in ein
 
 Wenn Sie Ihr Abonnement kaufen möchten, bevor Die Testversion beendet ist, verwenden Sie die folgenden Schritte:
 
-1. Wechseln Sie im Microsoft 365 Admin Center zur **Seite Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihrer Produkte.</a>
+1. Wechseln Sie Microsoft 365 Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihrer Produkte.</a>
 2. Suchen Sie **auf der Seite** Ihre Produkte nach dem Abonnement, das Sie kaufen möchten.
 3. Wählen Sie **im Abschnitt Lizenzen** die Option Abonnement kaufen **aus.**
 4. Wählen Sie entweder eine monatliche oder jährliche Zusage für Ihr Abonnement aus, und wählen Sie dann **Auschecken aus.**
@@ -72,7 +72,7 @@ Wenn Sie Ihr Abonnement kaufen möchten, bevor Die Testversion beendet ist, verw
 
 ## <a name="extend-your-trial"></a>Verlängern Ihrer Testversion
 
-Benötigen Sie mehr Zeit, um die Features von Microsoft 365 Business vor dem Kauf auszuprobieren? Wenn Ihr Testabonnement innerhalb von 15 Tagen abläuft und vor Ablauf dieser Frist noch nicht verlängert wurde, können Sie Ihren Testzeitraum um weitere 30 Tage verlängern. Dies können Sie nur ein Mal durchführen.
+Benötigen Sie mehr Zeit, um die Features von Microsoft 365 vor dem Kauf auszuprobieren? Wenn Ihr Testabonnement innerhalb von 15 Tagen abläuft und vor Ablauf dieser Frist noch nicht verlängert wurde, können Sie Ihren Testzeitraum um weitere 30 Tage verlängern. Dies können Sie nur ein Mal durchführen.
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 2. Wählen Sie **auf der** Registerkarte Produkte das Testabonnement aus, das Sie erweitern möchten.
@@ -83,16 +83,16 @@ Wenn Sie zum Kauf bereit sind, lesen [Sie Kaufen Ihrer Testversion](#buy-a-subsc
 
 ## <a name="cancel-your-free-trial-subscription"></a>Kündigen Ihres kostenlosen Testabonnements
 
-Wenn Sie Ihr Testabonnement vor Dem Ende des kostenlosen Testzeitraums kündigen möchten, wechseln Sie zum Microsoft 365 Admin Center, und deaktivieren Sie die Wiederkehrende [Abrechnung](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on). Die Testversion läuft automatisch ab, wenn Ihr Monat endet, und Ihre Kreditkarte \' wird nicht belastet.
+Wenn Sie ihr Testabonnement vor dem Ende des kostenlosen Testzeitraums kündigen möchten, wechseln Sie zum Microsoft 365 Admin Center, und deaktivieren Sie wiederkehrende [Abrechnung](subscriptions/renew-your-subscription.md#turn-recurring-billing-off-or-on). Die Testversion läuft automatisch ab, wenn Ihr Monat endet, und Ihre Kreditkarte \' wird nicht belastet.
 
 ## <a name="try-a-different-subscription"></a>Probieren Sie ein anderes Abonnement aus
 
-Wenn Sie bereits über ein Microsoft 365 Business-Abonnement verfügen, können Sie das Microsoft 365 Admin Center verwenden, um ein anderes Abonnement auszuprobieren.
+Wenn Sie bereits über ein Microsoft 365 business-Abonnement verfügen, können Sie das Microsoft 365 Admin Center verwenden, um ein anderes Abonnement auszuprobieren.
 
 Wenn Sie ein Abonnement über das Microsoft 365 Admin Center hinzufügen, ist das neue Abonnement derselben Organisation (Domänennamespace) wie Ihr vorhandenes Abonnement zugeordnet. Diese Zuordnung erleichtert das Verschieben von Benutzern in Ihrer Organisation zwischen Abonnements oder das Zuweisen einer Lizenz für die benötigten zusätzlichen Produkte.
 
 1. Wechseln Sie im Admin  Center zur Seite \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Abrechnungskaufdienste.</a>
-2. Auf der **Seite Dienste kaufen** sehen Sie die Pläne, die für Ihre Organisation verfügbar sind. Wählen Sie den Microsoft 365-Plan aus, den Sie ausprobieren möchten.
+2. Auf der **Seite Dienste kaufen** sehen Sie die Pläne, die für Ihre Organisation verfügbar sind. Wählen Sie den Microsoft 365, den Sie ausprobieren möchten.
 3. Wählen Sie auf der nächsten Seite Kostenlose **Testversion erhalten aus.** Die Testversion bietet Ihnen 25 Benutzerlizenzen für eine Laufzeit von einem Monat.
 4. Wählen Sie, um einen Text oder einen Anruf zu erhalten, geben Sie Ihre Telefonnummer ein, und wählen Sie **dann Text me** or Call **me** aus.
 5. Geben Sie den Überprüfungscode ein, und wählen Sie **dann Kostenlose Testversion starten aus.**
@@ -101,7 +101,7 @@ Wenn Sie ein Abonnement über das Microsoft 365 Admin Center hinzufügen, ist da
 
 ## <a name="buy-a-different-subscription"></a>Kaufen eines anderen Abonnements
 
-Wenn Sie bereits über ein Microsoft 365 Business-Abonnement verfügen, können Sie das Microsoft 365 Admin Center durchgehen, um ein anderes Abonnement für Ihre Organisation zu erwerben.
+Wenn Sie bereits über ein Microsoft 365 business-Abonnement verfügen, können Sie das Microsoft 365 Admin Center durchgehen, um ein anderes Abonnement für Ihre Organisation zu erwerben.
 
 Wenn Sie ein anderes Abonnement über das Admin Center erwerben, ist das neue Abonnement derselben Organisation (Domänennamebereich) wie Ihr vorhandenes Abonnement zugeordnet. Dies erleichtert das Verschieben von Benutzern in Ihrer Organisation zwischen Abonnements oder das Zuweisen einer Lizenz für das zusätzliche Abonnement, das sie benötigen.
 
@@ -143,7 +143,7 @@ Wenn Sie bereits über ein Abonnement verfügen und ein neues Abonnement hinzuf�
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Microsoft 365 Business Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (Schulungsvideos)\
+[Microsoft 365 Für Unternehmen Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (Schulungsvideos)\
 [Hinzufügen von Benutzern und gleichzeitiges Zuweisen von Lizenzen](../admin/add-users/add-users.md) (Artikel)\
 [Zuweisen von Lizenzen zu Benutzern ](../admin/manage/assign-licenses-to-users.md) (Artikel)\
 [Upgrade auf einen anderen Plan](subscriptions/upgrade-to-different-plan.md) (Artikel)\

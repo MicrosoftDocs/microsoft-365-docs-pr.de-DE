@@ -15,55 +15,55 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: In diesem Artikel erfahren Sie, wie Sie eine Abfrage in einem Überprüfungspaket erstellen und ausführen, um Daten für eine effizientere Überprüfung in einem erweiterten eDiscovery-Fall zu organisieren.
+description: Erfahren Sie, wie Sie eine Abfrage in einem Überprüfungssatz erstellen und ausführen, um Daten für eine effizientere Überprüfung in einem Advanced eDiscovery organisieren.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1ead897d412af2356d8b57ab8494539a5ed9a019
-ms.sourcegitcommit: 3c39866865c8c61bce2169818d8551da65033cfe
+ms.openlocfilehash: 5a03b0c863f9cc2050b18ce83ed11b8a71d1db4d
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48816568"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345800"
 ---
 # <a name="query-the-data-in-a-review-set"></a>Abfragen der Daten in einem Prüfdateisatz
 
-In den meisten Fällen ist es hilfreich, die Daten in einer Überprüfungsgruppe tiefer zu analysieren und diese Daten zu organisieren, um eine effizientere Überprüfung zu ermöglichen. Mithilfe von Abfragen in einem Überprüfungs Satz können Sie sich auf eine Teilmenge von Dokumenten konzentrieren, die die Kriterien ihrer Überprüfung erfüllen.
+In den meisten Fällen ist es hilfreich, sich tiefer in die Daten in einem Überprüfungssatz zu vertiefen und diese Daten zu organisieren, um eine effizientere Überprüfung zu ermöglichen. Die Verwendung von Abfragen in einem Überprüfungssatz hilft Ihnen, sich auf eine Teilmenge von Dokumenten zu konzentrieren, die die Kriterien Ihrer Überprüfung erfüllen.
 
-## <a name="creating-and-running-a-query-in-a-review-set"></a>Erstellen und Durchführen einer Abfrage in einem Überprüfungs Satzes
+## <a name="creating-and-running-a-query-in-a-review-set"></a>Erstellen und Ausführen einer Abfrage in einem Überprüfungssatz
 
-Wenn Sie eine Abfrage für die Dokumente in einem Überprüfungs Satzes erstellen und ausführen möchten, wählen Sie **neue Abfrage** in der Überprüfungsgruppe aus. Nachdem Sie die Abfrage benannt und die Bedingungen definiert haben, wählen Sie **Speichern** aus, um die Abfrage zu speichern und auszuführen. Wenn Sie eine zuvor gespeicherte Abfrage ausführen möchten, wählen Sie eine gespeicherte Abfrage aus.
+Wenn Sie eine Abfrage für die Dokumente in einem Überprüfungssatz erstellen und ausführen möchten, wählen Sie im Überprüfungssatz **Neue** Abfrage aus. Nachdem Sie die Abfrage benennen und die Bedingungen definiert haben, wählen Sie **Speichern** aus, um die Abfrage zu speichern und ausführen. Wählen Sie zum Ausführen einer zuvor gespeicherten Abfrage eine gespeicherte Abfrage aus.
 
-![Überprüfen von Mengen Abfragen](../media/AeDReviewSetQueries.png)
+![Überprüfen von Satzabfragen](../media/AeDReviewSetQueries.png)
 
-## <a name="building-a-review-set-query"></a>Erstellen einer Überprüfungs Sätze-Abfrage
+## <a name="building-a-review-set-query"></a>Erstellen einer Überprüfungssatzabfrage
 
-Sie können eine Abfrage mithilfe einer Kombination aus Schlüsselwörtern, Eigenschaften und Bedingungen in der Bedingung Schlüsselwörter erstellen. Sie können auch Bedingungen als Block (als *Bedingungsgruppe* bezeichnet) gruppieren, um eine komplexere Abfrage zu erstellen. Eine Liste und Beschreibung der Metadaten-Eigenschaften, die Sie durchsuchen können, finden Sie unter [Dokumentmetadatenfeldern in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
+Sie können eine Abfrage mithilfe einer Kombination aus Schlüsselwörtern, Eigenschaften und Bedingungen in der Keywords-Bedingung erstellen. Sie können Bedingungen auch als Block gruppieren (als *Bedingungsgruppe* bezeichnet), um eine komplexere Abfrage zu erstellen. Eine Liste und Beschreibung der Metadaten-Eigenschaften, die Sie durchsuchen können, finden Sie unter [Dokumentmetadatenfeldern in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).
 
 ### <a name="conditions"></a>Bedingungen
 
-Jedes durchsuchbare Feld in einem Überprüfungs Sätze verfügt über eine entsprechende Bedingung, die Sie zum Erstellen Ihrer Abfrage verwenden können.
+Jedes durchsuchbare Feld in einem Überprüfungssatz hat eine entsprechende Bedingung, die Sie zum Erstellen ihrer Abfrage verwenden können.
 
 Es gibt mehrere Arten von Bedingungen:
 
-- FREETEXT: eine FREETEXT-Bedingung wird für Textfelder wie Betreff verwendet. Sie können mehrere Suchbegriffe auflisten, indem Sie Sie durch ein Komma voneinander trennen.
+- Freetext: Eine Freetextbedingung wird für Textfelder wie betreff verwendet. Sie können mehrere Suchbegriffe auflisten, indem Sie sie durch ein Komma trennen.
 
-- Date: eine Datumsbedingung wird für Datumsfelder wie Datum der letzten Änderung verwendet.
+- Date: Eine Datumsbedingung wird für Datumsfelder wie das Datum der letzten Änderung verwendet.
 
-- Suchoptionen: eine Bedingung für Suchoptionen stellt eine Liste der möglichen Werte für das jeweilige Feld in der Überprüfungsgruppe bereit. Dies wird für Felder wie Absender verwendet, bei denen eine begrenzte Anzahl möglicher Werte in ihrer Überprüfungsgruppe vorhanden ist.
+- Suchoptionen: Eine Suchoptionenbedingung enthält eine Liste der möglichen Werte für das bestimmte Feld in Ihrem Überprüfungssatz. Dies wird für Felder verwendet, z. B. Absender, bei denen eine begrenzte Anzahl möglicher Werte in Ihrem Überprüfungssatz enthalten ist.
 
-- Stichwort: eine Schlüsselwort Bedingung ist eine bestimmte Instanz der FREETEXT-Bedingung, die Sie verwenden können, um nach Begriffen zu suchen oder die KQL-ähnliche Abfragesprache in zu verwenden. Weitere Details finden Sie weiter unten.
+- Schlüsselwort: Eine Schlüsselwortbedingung ist eine bestimmte Instanz von Freetextbedingung, die Sie zum Suchen nach Begriffen oder verwenden KQL- like query language in verwenden können. Weitere Informationen finden Sie unten.
 
 ### <a name="query-language"></a>Abfragesprache
 
-Nebenbedingungen können Sie eine KQL-ähnliche Abfragesprache in der Bedingung Schlüsselwörter verwenden, um Ihre Abfrage zu erstellen. Die Abfragesprache für Review-Mengen Abfragen unterstützt Standard boolesche Operatoren wie **and** , **or** , **Not** und **near** . Außerdem wird ein Platzhalter mit einem einzelnen Zeichen (?) und ein mehr stelliger Platzhalter (*) unterstützt.
+Zusätzlich zu den Bedingungen können Sie eine KQL- like query language in der Keywords-Bedingung verwenden, um Ihre Abfrage zu erstellen. Die Abfragesprache für Überprüfungssatzabfragen unterstützt standardmäßige boolesche Operatoren, z. B. **AND**, **OR**, **NOT** und **NEAR**. Es unterstützt auch einen einstelligen Platzhalter (?) und einen mehrstelligen Platzhalter (*).
 
 ## <a name="filters"></a>Filter
 
-Zusätzlich zu den Abfragen, die Sie speichern können, können Sie mithilfe von Filtersätzen für eine Überprüfungs Satz Abfrage schnell zusätzliche Bedingungen anwenden. Mithilfe von Filtern können Sie die Ergebnisse, die von einer Abfrage mit Überprüfungs Sätzen angezeigt werden, weiter verfeinern.
+Zusätzlich zu den Abfragen, die Sie speichern können, können Sie Mithilfe von Überprüfungssatzfiltern schnell zusätzliche Bedingungen auf eine Überprüfungssatzabfrage anwenden. Mithilfe von Filtern können Sie die Ergebnisse, die von einer Überprüfungssatzabfrage angezeigt werden, weiter verfeinern.
 
-![Überprüfen von Filtersätzen](../media/AeDReviewSetFilters.png)
+![Überprüfen von Satzfiltern](../media/AeDReviewSetFilters.png)
 
-Filter unterscheiden sich in zwei wichtigen Punkten von Abfragen:
+Filter unterscheiden sich auf zwei wesentliche Weise von Abfragen:
 
-- Filter sind vorübergehend. Sie bleiben außerhalb der vorhandenen Sitzung bestehen. Mit anderen Worten: Sie können einen Filter nicht speichern. Abfragen werden in der Überprüfungsgruppe gespeichert und greifen beim Öffnen des Überprüfungs Satzes auf diese zu.
+- Filter sind vorübergehend. Sie bleiben nicht über die vorhandene Sitzung hinaus erhalten. Anders ausgedrückt: Sie können keinen Filter speichern. Abfragen werden im Überprüfungssatz gespeichert und greifen auf sie zu, wenn Sie den Überprüfungssatz öffnen.
 
 - Filter sind immer additiv. Filter werden zusätzlich zur aktuellen Prüfdateisatz-Abfrage angewendet. Durch das Anwenden einer anderen Abfrage werden die von der aktuellen Abfrage zurückgegebenen Ergebnisse ersetzt.

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie einen freigegebenen Kalender erstellen.
-ms.openlocfilehash: 684122bcbccd7e8a419cc98eb0d0028c6218141a
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 21b594d1d5f28cc38c907cb8e85085a296ef20b8
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903694"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464357"
 ---
 # <a name="create-a-shared-calendar"></a>Erstellen eines freigegebenen Kalenders
 
@@ -35,7 +35,7 @@ ms.locfileid: "51903694"
 
 Mit einem freigegebenen Kalender können Sie schnell erkennen, wann Personen für Besprechungen oder andere Ereignisse verfügbar sind.
 
-1. Wählen Sie in Outlook das Kalendersymbol aus.
+1. Wählen Outlook das Kalendersymbol aus.
 1. Wählen Sie **auf der Registerkarte** Start die Option Kalender **hinzufügen** und dann Aus **Adressbuch aus.**
 1. Fügen Sie Benutzer zum freigegebenen Kalender hinzu, indem Sie ihren Namen eingeben oder ihren Namen aus der Liste auswählen, und wählen Sie dann **OK aus.**
 1. Sie können jetzt Ihren Kalender und die Kalender für die personen anzeigen, die Sie hinzugefügt haben.
@@ -43,4 +43,8 @@ Mit einem freigegebenen Kalender können Sie schnell erkennen, wann Personen fü
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Verwalten Ihres Kalenders und Ihrer Kontakte in Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (Artikel) [E-Mail-Zusammenarbeit](https://docs.microsoft.com/microsoft-365/admin/email/email-collaboration) (Artikel) [Übersicht über das Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (Artikel)
+[Verwalten Ihres Kalenders und Ihrer Kontakte in Outlook](https://support.microsoft.com/office/manage-your-calendar-and-contacts-in-outlook-631a182a-21e0-4e41-8fa2-0d83e55da02d) (Artikel)
+
+[E-Mail-Zusammenarbeit](../admin/email/email-collaboration.md) (Artikel)
+
+[Übersicht über das Microsoft 365 Admin Center](admin-center-overview.md) (Artikel)

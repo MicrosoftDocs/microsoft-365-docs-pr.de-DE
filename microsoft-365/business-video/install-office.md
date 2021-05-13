@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Microsoft Office installieren.
-ms.openlocfilehash: 4970fa2698c413aad24aa94c16031823a16e9001
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 3626b21a3c98fba1830350568440467869577ccb
+ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578867"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52464369"
 ---
 # <a name="install-office-apps"></a>Installieren von Office-Apps 
 
@@ -36,9 +36,20 @@ ms.locfileid: "51578867"
 Microsoft Office Apps finden Sie im **Startmenü.** Wenn sie nicht&#39;werden, können Sie sie selbst installieren.
 
 1. Wechseln Sie zu office.com. Möglicherweise müssen Sie sich mit Ihrem Arbeitskonto anmelden.
-2. Wählen **Sie Office** Microsoft   >   **365-Apps installieren**   >   **Ausführen** aus, und wählen Sie dann Ja **aus.**
-3. Die Office-Apps werden installiert. Der Vorgang kann mehrere Minuten dauern. Wählen Sie nach Abschluss des Vorgangs **Schließen aus.**
-4. Um Microsoft Teams zu installieren, wechseln Sie zur seite office.com, und wählen Sie **Teams aus.**
-5. Holen Sie sich die Windows-App, und wählen Sie dann **Ausführen aus.** Teams zeigt eine Eingabeaufforderung an, wenn die Installation abgeschlossen ist.
+2. Wählen **Sie Installieren Office** Microsoft 365   >   **Apps**   >   **Ausführen** aus, und wählen Sie dann Ja **aus.**
+3. Die Office apps werden installiert. Der Vorgang kann mehrere Minuten dauern. Wählen Sie nach Abschluss des Vorgangs **Schließen aus.**
+4. Um Microsoft Teams zu installieren, wechseln Sie zur seite office.com, und wählen Sie **Teams** aus.
+5. Dient zum Windows App, und wählen Sie dann **Ausführen aus.** Teams zeigt eine Eingabeaufforderung an, wenn die Installation abgeschlossen ist.
 
-Die installierten Office-Apps werden nun im  **Startmenü** angezeigt.
+Die Office, die Sie installiert haben, werden nun im **Startmenü** angezeigt.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Migrieren Von Inhalten zu Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online.md) (Artikel)
+
+[Installieren der Microsoft 365 Mobile Admin-App auf Ihrem Telefon](admin-mobile.md) (Video)
+
+[Erste Schritte mit Microsoft Teams in Ihrem kleinen Unternehmen](get-started-teams-small-business.md) (Video)
+
+[Einfaches freigeben von Dateien extern](share-files-externally.md) (Video)
+

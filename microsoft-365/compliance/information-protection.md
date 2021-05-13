@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-compliance
 recommendations: false
 description: Implementieren Sie Microsoft Information Protection (MIP), um vertrauliche Informationen unabhängig davon, wo sie sich befinden oder unterwegs sind, zu schützen.
-ms.openlocfilehash: 86b4704ab12d14702bb0a8dde47208f054c67a54
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: a68f8dee00117af1fa4d7be5f459ed5c850a5100
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296743"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332750"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365
 
@@ -78,8 +78,8 @@ Verwenden Sie die folgenden Funktionen, um die versehentliche Freigabe vertrauli
 
 |Funktion|Welches Probleme löst es für Sie?|Erste Schritte|
 |:------|:------------|:---------------------|
-|[Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)| Hilft, die unbeabsichtigte Freigabe von vertraulichen Elementen zu verhindern. | [Erste Schritte mit der standardmäßigen DLP-Richtlinie](get-started-with-the-default-dlp-policy.md)|
-|[Informationen zu Endpunkt-DLP](endpoint-dlp-learn-about.md)| Erweitert die DLP-Funktionen auf Elemente, die auf Windows 10-Computern verwendet und freigegeben werden. | [Endpunkt-DLP – Erste Schritte](endpoint-dlp-getting-started.md)|
-|[Erfahren Sie mehr über die Microsoft Compliance-Erweiterung (Vorschau)](dlp-chrome-learn-about.md) | Erweitert DLP-Funktionen im Chrome-Browser | [Erste Schritte mit der Microsoft Compliance Erweiterung (Vorschau)](dlp-chrome-get-started.md)|
-|[Informationen zum lokalen Microsoft 365-DLP-Scanner (Data Loss Prevention, Verhinderung von Datenverlust) (Vorschau)](dlp-on-premises-scanner-learn.md)|Erweitert die DLP-Überwachung von Dateiaktivitäten und Schutzaktionen für diese Dateien auf lokale Dateifreigaben sowie SharePoint-Ordner und Dokumentbibliotheken.|[Erste Schritte mit dem lokalen Microsoft 365-DLP-Scanner (Data Loss Prevention, Verhinderung von Datenverlust) (Vorschau)](dlp-on-premises-scanner-get-started.md)|
+|[Verhinderung von Datenverlust](dlp-learn-about-dlp.md)| Hilft, die unbeabsichtigte Freigabe von vertraulichen Elementen zu verhindern. | [Erste Schritte mit der standardmäßigen DLP-Richtlinie](get-started-with-the-default-dlp-policy.md)|
+|[Verhinderung von Datenverlust am Endpunkt](endpoint-dlp-learn-about.md)| Erweitert die DLP-Funktionen auf Elemente, die auf Windows 10-Computern verwendet und freigegeben werden. | [Endpunkt-DLP – Erste Schritte](endpoint-dlp-getting-started.md)|
+|[Microsoft Compliance-Erweiterung (Vorschau)](dlp-chrome-learn-about.md) | Erweitert DLP-Funktionen im Chrome-Browser | [Erste Schritte mit der Microsoft Compliance Erweiterung (Vorschau)](dlp-chrome-get-started.md)|
+|[Microsoft 365-Scanner zum Schutz vor Datenverlust vor Ort (Vorschau)](dlp-on-premises-scanner-learn.md)|Erweitert die DLP-Überwachung von Dateiaktivitäten und Schutzaktionen für diese Dateien auf lokale Dateifreigaben sowie SharePoint-Ordner und Dokumentbibliotheken.|[Erste Schritte mit dem lokalen Microsoft 365-DLP-Scanner (Data Loss Prevention, Verhinderung von Datenverlust) (Vorschau)](dlp-on-premises-scanner-get-started.md)|
 |[Schutz vertraulicher Informationen in Microsoft Teams-Chat- und Kanalnachrichten](dlp-microsoft-teams.md) | Erweitert einige DLP-Funktionen auf Teamchats und Kanalnachrichten | [Weitere Informationen zur Standardrichtlinie zur Verhinderung von Datenverlust in Microsoft Teams (Vorschau)](dlp-teams-default-policy.md)|

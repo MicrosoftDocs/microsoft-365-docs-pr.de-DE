@@ -112,7 +112,7 @@
                       href: first-incident-analyze.md
                     - name: "Schritt\_2. Korrigieren"
                       href: first-incident-remediate.md
-                    - name: 'Schritt 3: Überprüfung'
+                    - name: "Schritt\_3: Überprüfung"
                       href: first-incident-post.md
                     - name: Zusätzliche Vorfallbeispiele
                       items:
@@ -186,8 +186,6 @@
                   href: advanced-hunting-alertevidence-table.md
                 - name: AlertInfo
                   href: advanced-hunting-alertinfo-table.md
-                - name: AppFileEvents
-                  href: advanced-hunting-appfileevents-table.md
                 - name: CloudAppEvents
                   href: advanced-hunting-cloudappevents-table.md
                 - name: DeviceEvents

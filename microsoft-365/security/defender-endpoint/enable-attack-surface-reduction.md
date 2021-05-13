@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: fc04db0c9fe8ee6d09efc9802ab4a747af0b3e9c
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: fc952ceec7d26d853e39cab0a803daace62a4767
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326674"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345888"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Aktivieren der Regeln zur Verringerung der Angriffsfläche
 
@@ -167,24 +167,24 @@ Beispiel:
    > [!WARNING]
    > Verwenden Sie keine Anführungszeichen, da sie weder für die Spalte **Wertname** noch für die **Spalte Wert unterstützt** werden.
 
-## <a name="microsoft-endpoint-manager-custom-procedure"></a>Benutzerdefinierte Microsoft Endpoint Manager-Prozedur
+## <a name="microsoft-endpoint-manager-custom-procedure"></a>Microsoft Endpoint Manager benutzerdefinierte Prozedur
 
-Sie können ein Microsoft Endpoint Manager (MEM) Admin Center verwenden, um benutzerdefinierte ASR-Regeln zu konfigurieren.
+Sie können ein Microsoft Endpoint Manager (MEM)Admin Center verwenden, um benutzerdefinierte ASR-Regeln zu konfigurieren.
 
-1. Öffnen Sie das Microsoft Endpoint Manager (MEM) Admin Center. Klicken Sie **im Menü Start** auf **Geräte,** wählen Sie **Konfigurationsprofil** aus, und klicken Sie dann auf **Profil erstellen.**
+1. Öffnen Sie Microsoft Endpoint Manager (MEM) Admin Center. Klicken Sie **im Menü Start** auf **Geräte,** wählen Sie **Konfigurationsprofil** aus, und klicken Sie dann auf **Profil erstellen.**
 
    ![MEM-Profil erstellen](images/mem01-create-profile.png)
 
 2. Wählen **Sie in Erstellen eines** Profils in den folgenden beiden Dropdownlisten Folgendes aus:
 
-   - Wählen **Sie unter Plattform** Windows **10 und höher aus.**
+   - Wählen **Sie unter Plattform** Windows 10 und höher **aus.**
    - Wählen **Sie im Profiltyp** Vorlagen **aus.**
 
    Wählen **Sie Benutzerdefinierte**, und klicken Sie dann auf **Erstellen**.
 
    ![Attribute des MEM-Regelprofils](images/mem02-profile-attributes.png)
 
-3. Das Benutzerdefinierte Vorlagentool wird zu Schritt **1 Grundlagen geöffnet.** Geben **Sie in 1 Grundlagen** unter **Name** einen Namen für Ihre Vorlage ein, und in **Beschreibung** können Sie eine optionale Beschreibung eingeben.
+3. Das Benutzerdefinierte Vorlagentool wird zu Schritt **1 Grundlagen geöffnet.** Geben **Sie in 1 Grundlagen** unter **Name** einen Namen für Ihre Vorlage ein, und in **Beschreibung** können Sie eine Beschreibung eingeben (optional ).
 
    ![GRUNDLEGENDE ATTRIBUTE von MEM](images/mem03-1-basics.png)
 
@@ -192,7 +192,7 @@ Sie können ein Microsoft Endpoint Manager (MEM) Admin Center verwenden, um benu
 
    ![Einstellungen für die MEM-Konfiguration](images/mem04-2-configuration-settings.png)
 
-5. Klicken Sie **erneut auf** Hinzufügen. Die **OMA-URI-Einstellungen für** Zeile hinzufügen wird geöffnet. Gehen **Sie unter Zeile** hinzufügen wie folgt vor:
+5. Klicken Sie **erneut auf** Hinzufügen. Die **Add Row OMA-URI-Einstellungen** geöffnet. Gehen **Sie unter Zeile** hinzufügen wie folgt vor:
 
    - Geben **Sie unter Name** einen Namen für die Regel ein.
    - Geben **Sie unter Beschreibung** eine kurze Beschreibung ein.
@@ -223,7 +223,7 @@ Sie können ein Microsoft Endpoint Manager (MEM) Admin Center verwenden, um benu
    - Wählen **Sie in Property** die Eigenschaft aus, auf die diese Regel angewendet werden soll.
    - Geben **Sie unter Wert** den entsprechenden Wert oder Wertbereich ein.
 
-   ![MEM-Anwendbarkeitsregeln](images/mem07-5-applicability -rules.png)
+   ![MEM-Anwendbarkeitsregeln](images/mem07-5-applicability-rules.png)
 
 10. Klicken Sie auf **Weiter**. Überprüfen Sie in Schritt **6 Überprüfen + Erstellen** die von Ihnen ausgewählten und eingegebenen Einstellungen und Informationen, und klicken Sie dann auf **Erstellen**.
 
@@ -260,6 +260,12 @@ Sie können ein Microsoft Endpoint Manager (MEM) Admin Center verwenden, um benu
     ```PowerShell
     Add-MpPreference -AttackSurfaceReductionRules_Ids <rule ID> -AttackSurfaceReductionRules_Actions Warn
     ```
+
+    Verwenden Sie das folgende Cmdlet, um den Missbrauch ausgenutzter gefährdeter signierter Treiber zu aktivieren:
+
+   ```PowerShell
+   "& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
+   ```
 
     Verwenden Sie das folgende Cmdlet, um ASR-Regeln zu deaktivieren:
 

@@ -18,17 +18,16 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f13734392e4975738a0d60d38e618595b5175667
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b706cb8dbd43d545768c1c573021b5ef401e3c09
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934561"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52346402"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Festlegen von Einstellungen für Microsoft Defender for Endpoint unter macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Gilt für:**
 
@@ -106,6 +105,7 @@ Geben Sie die Seriendruckrichtlinie für Ausschlüsse an. Dies kann eine Kombina
 #### <a name="scan-exclusions"></a>Scannen von Ausschlüssen
 
 Geben Sie Entitäten an, die von der Gescannten ausgeschlossen werden. Ausschlüsse können durch vollständige Pfade, Erweiterungen oder Dateinamen angegeben werden.
+(Ausschlüsse werden als Array von Elementen angegeben, der Administrator kann so viele Elemente wie nötig in beliebiger Reihenfolge angeben.)
 
 |Abschnitt|Wert|
 |:---|:---|
@@ -136,6 +136,27 @@ Geben Sie Inhalte an, die nicht durch den vollständigen Dateipfad gescannt werd
 | **Datentyp** | String |
 | **Mögliche Werte** | gültige Pfade |
 | **Kommentare** | Gilt nur, *$type* *ausgeschlossen IstPath* |
+
+## <a name="supported-exclusion-types"></a>Unterstützte Ausschlusstypen
+
+In der folgenden Tabelle sind die Ausschlusstypen aufgeführt, die von Defender for Endpoint auf Dem Mac unterstützt werden.
+
+Ausschluss | Definition | Beispiele
+---|---|---
+Dateierweiterung | Alle Dateien mit der Erweiterung, überall auf dem Gerät | `.test`
+Datei | Eine bestimmte Datei, die durch den vollständigen Pfad identifiziert wird | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
+Ordner | Alle Dateien unter dem angegebenen Ordner (rekursiv) | `/var/log/`<br/>`/var/*/`
+Prozess | Ein bestimmter Prozess (entweder durch den vollständigen Pfad oder Dateinamen angegeben) und alle dateien, die von diesem geöffnet werden | `/bin/cat`<br/>`cat`<br/>`c?t`
+
+> [!IMPORTANT]
+> Die oben genannten Pfade müssen harte Links und keine symbolischen Verknüpfungen sein, um erfolgreich ausgeschlossen zu werden. Sie können überprüfen, ob ein Pfad ein symbolischer Link ist, indem Sie `file <path-name>` ausführen.
+
+Datei-, Ordner- und Prozessausschlüsse unterstützen die folgenden Platzhalter:
+
+Platzhalter | Beschreibung | Beispiel | Übereinstimmungen | Nicht übereinstimmend
+---|---|---|---|---
+\* |    Entspricht einer beliebigen Anzahl beliebiger Zeichen, einschließlich keines (beachten Sie, dass dieser Platzhalter nur einen Ordner ersetzt, wenn er innerhalb eines Pfads verwendet wird) | `/var/\*/\*.log` | `/var/log/system.log` | `/var/log/nested/system.log`
+? | Entspricht einem beliebigen einzelnen Zeichen | `file?.log` | `file1.log`<br/>`file2.log` | `file123.log`
 
 ##### <a name="path-type-file--directory"></a>Pfadtyp (Datei/Verzeichnis)
 
@@ -358,7 +379,7 @@ Geben Sie an, ob Benutzer Feedback an Microsoft senden können, indem Sie zu `He
 
 ### <a name="endpoint-detection-and-response-preferences"></a>Einstellungen für endpunkterkennung und -reaktion
 
-Verwalten Sie die Einstellungen der Endpunkterkennungs- und -antwortkomponente von Microsoft Defender for Endpoint unter macOS.
+Verwalten Sie die Einstellungen der EDR (EDR) von Microsoft Defender for Endpoint unter macOS.
 
 |Abschnitt|Wert|
 |:---|:---|
@@ -416,7 +437,7 @@ Das folgende Konfigurationsprofil (oder im Fall von JAMF eine Eigenschaftenliste
   - **Potenziell unerwünschte Anwendungen (PUA)** werden blockiert
   - **Archivangriffe** (Datei mit hoher Komprimierungsrate) werden bei Microsoft Defender für Endpunktprotokolle überwacht.
 - Aktivieren automatischer Sicherheitsintelligenzupdates
-- Aktivieren des in der Cloud übermittelten Schutzes
+- Aus der Cloud bereitgestellten Schutz aktivieren
 - Aktivieren der automatischen Beispielübermittlung
 
 ### <a name="property-list-for-jamf-configuration-profile"></a>Eigenschaftenliste für das JAMF-Konfigurationsprofil
@@ -577,6 +598,14 @@ Die folgenden Vorlagen enthalten Einträge für alle in diesem Dokument beschrie
             </dict>
             <dict>
                 <key>$type</key>
+                <string>excludedPath</string>
+                <key>isDirectory</key>
+                <true/>
+                <key>path</key>
+                <string>/Users/*/git</string>
+            </dict>
+            <dict>
+                <key>$type</key>
                 <string>excludedFileExtension</string>
                 <key>extension</key>
                 <string>pdf</string>
@@ -719,6 +748,14 @@ Die folgenden Vorlagen enthalten Einträge für alle in diesem Dokument beschrie
                         </dict>
                         <dict>
                             <key>$type</key>
+                            <string>excludedPath</string>
+                            <key>isDirectory</key>
+                            <true/>
+                            <key>path</key>
+                            <string>/Users/*/git</string>
+                        </dict>
+                        <dict>
+                            <key>$type</key>
                             <string>excludedFileExtension</string>
                             <key>extension</key>
                             <string>pdf</string>
@@ -812,7 +849,7 @@ Nachdem Sie das Konfigurationsprofil für Ihr Unternehmen erstellt haben, könne
 
 ### <a name="jamf-deployment"></a>JAMF-Bereitstellung
 
-Öffnen Sie in der JAMF-Konsole  >  **Computerkonfigurationsprofile,** navigieren Sie zu dem Konfigurationsprofil, das Sie verwenden möchten, und wählen Sie dann **Benutzerdefinierte Einstellungen aus.** Erstellen Sie einen Eintrag `com.microsoft.wdav` mit als Einstellungsdomäne, und laden Sie die zuvor produzierte *.plist* hoch.
+Öffnen Sie in der JAMF-Konsole  >  **Computerkonfigurationsprofile,** navigieren Sie zu dem Konfigurationsprofil, das Sie verwenden möchten, und wählen Sie dann Benutzerdefinierte Einstellungen . Erstellen Sie einen Eintrag `com.microsoft.wdav` mit als Einstellungsdomäne, und laden Sie die zuvor produzierte *.plist* hoch.
 
 >[!CAUTION]
 >Sie müssen die richtige Einstellungsdomäne eingeben ( ); andernfalls werden die Einstellungen von `com.microsoft.wdav` Microsoft Defender for Endpoint nicht erkannt.
@@ -829,7 +866,7 @@ Nachdem Sie das Konfigurationsprofil für Ihr Unternehmen erstellt haben, könne
 
 5. Öffnen Sie das Konfigurationsprofil, und laden Sie die Datei `com.microsoft.wdav.xml` hoch. (Diese Datei wurde in Schritt 3 erstellt.)
 
-6. Wählen Sie **OK** aus.
+6. Klicken Sie auf **OK**.
 
 7. Wählen **Sie**  >  **Zuordnungen verwalten aus.** Wählen Sie **auf** der Registerkarte Include die Option **Allen Benutzern & Alle Geräte zuweisen aus.**
 
