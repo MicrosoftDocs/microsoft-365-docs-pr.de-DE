@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Übersicht über die Microsoft-Produktivitätsbewertung.
-ms.openlocfilehash: 0eac22eadd099ebe4c7efbdf1198f6dc576dc080
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 1d5e163e6ec8a394065c09e51879582d101a75bf
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876131"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52345238"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft-Produktivitätsbewertung 
 
@@ -63,7 +63,7 @@ Ihre Produktivitätsbewertung basiert auf den kombinierten Bewertungen der Kateg
 - Microsoft 365 Apps-Integrität (100 Punkte)
 - **Höchstmögliches Gesamtergebnis: 800 Punkte**
  
- In jeder Bewertungskategorie werden die wichtigsten Indikatoren für die Verwendung von Microsoft 365 in Ihrer Organisation auf dem Weg der digitalen Transformation quantifiziert. Wir bieten 28-Tage- und 180-Tage-Ansichten der Schlüsselaktivitäten. Wir stellen auch unterstützende Metriken zur Verfügung, die nicht Teil der Punkteberechnung sind, aber wichtig sind, um zugrunde liegende Nutzungsstatistiken und Konfigurationen zu identifizieren, bei denen Sie ansetzen können.
+In jeder Bewertungskategorie werden die wichtigsten Indikatoren für die Verwendung von Microsoft 365 in Ihrer Organisation auf dem Weg der digitalen Transformation quantifiziert. Wir bieten 28-Tage- und 180-Tage-Ansichten der Schlüsselaktivitäten. Wir stellen auch unterstützende Metriken zur Verfügung, die nicht Teil der Punkteberechnung sind, aber wichtig sind, um zugrunde liegende Nutzungsstatistiken und Konfigurationen zu identifizieren, bei denen Sie ansetzen können.
 
 ### <a name="products-included-in-productivity-score"></a>Produkte, die bei der Produktivitätsbewertung berücksichtigt werden 
 
@@ -74,7 +74,7 @@ Das Bewertungsergebnis Ihrer Organisation wird täglich aktualisiert und spiegel
 
 ## <a name="prerequisites"></a>Voraussetzungen 
 
-Für Mitarbeitererfahrungsdaten benötigen Sie ein Abonnement für Microsoft 365 für Business oder Office 365 für Unternehmen. Für Endpunktanalysedaten Ihres Mandanten müssen Sie Microsoft Intune zu Ihrem Abonnement hinzufügen. Intune hilft Ihnen beim Schutz Ihrer Unternehmensdaten durch die Verwaltung von Geräten und Apps. Sobald Sie Intune hinzugefügt haben, können Sie die Endpunktanalyse innerhalb der Intune-Umgebung aktivieren. Weitere Informationen zu [Microsoft Intune](/mem/intune/). 
+Für Mitarbeitererfahrungsdaten benötigen Sie ein Abonnement für Microsoft 365 für Business oder Office 365 für Unternehmen. Für Endpunktanalysedaten Ihres Mandanten müssen Sie Microsoft Intune zu Ihrem Abonnement hinzufügen. Intune hilft beim Schutz Ihrer Unternehmensdaten durch die Verwaltung von Geräten und Apps. Sobald Sie Intune hinzugefügt haben, können Sie die Endpunktanalyse innerhalb der Intune-Umgebung aktivieren. Um mehr über Microsoft Intune zu erfahren, lesen Sie die [Microsoft Intune-Dokumentation](/mem/intune/). 
 
 > [!NOTE]
 > Eine Lizenz für Workplace Analytics ist nicht Voraussetzung, um die Produktivitätsbewertungsfunktionen nutzen zu können.
@@ -107,7 +107,10 @@ Auf der Startseite der Produktivitätsbewertung sehen Sie die Gesamtpunktzahl un
 
 **Das Bewertungsergebnis Ihrer Organisation** wird als Prozentwert und in Punkten angezeigt. Sie können Ihre Punkte im Zähler und die maximal möglichen Punkte im Nenner sehen.
 
-Mit dem **Peer-Benchmark** können Sie die Bewertung Ihrer Organisation mit Unternehmen ähnlich dem Ihren vergleichen. Der Peer-Benchmark für die Kategorie der Mitarbeitererfahrung wird als Durchschnitt der Maßnahmen innerhalb einer Reihe ähnlicher Unternehmen berechnet. Die Gruppe der Unternehmen besteht aus Firmen in Ihrer Region mit einer ähnlichen Anzahl lizenzierter Benutzer, Lizenztypen, Branchen und Erfahrungen mit Microsoft 365. 
+Mit dem **Peer-Benchmark** können Sie die Bewertung Ihrer Organisation mit Unternehmen ähnlich dem Ihren vergleichen. Der Peer-Benchmark für die Kategorie der Mitarbeitererfahrung wird als Durchschnitt der Maßnahmen innerhalb einer Reihe ähnlicher Unternehmen berechnet. Die Gruppe der Unternehmen besteht aus Firmen in Ihrer Region mit einer ähnlichen Anzahl lizenzierter Benutzer, Lizenztypen, Branchen und Erfahrungen mit Microsoft 365.
+
+> [!NOTE]
+> Microsoft verwendet interne Daten, um die Branche festzulegen, die auf eine Organisation zutrifft. Mandaten unter einer übergeordneten Organisation erhalten die gleiche Branche zugewiesen wie die übergeordnete Organisation. Organisationen können Branchenzuweisungen nicht anzeigen oder ändern.
 
 Der Peer-Benchmark für die Endpunktanalyse enthält Ziele für die Leistung beim Gerätestart und die empfohlene Softwarekonfiguration basierend auf aggregierten Medianwerten über alle Mandanten hinweg.
 
@@ -158,8 +161,6 @@ Teilen Sie uns Ihre Gedanken zur Produktivitätsbewertung mit und Ihre Ideen, wi
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Überwachen der Microsoft 365-Aktivitäten mit Hilfe von Berichten](https://docs.microsoft.com/microsoft-365/admin/activity-reports/activity-reports) (Artikel)
-
-[Aktivieren von Analysen zur Nutzung von Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/enable-usage-analytics) (Artikel)
-
-[Übersicht über das Microsoft 365 Admin Center](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (Video)
+[Überwachen der Microsoft 365-Aktivitäten mit Hilfe von Berichten](/microsoft-365/admin/activity-reports/activity-reports) (Artikel)\
+[Aktivieren von Analysen zur Nutzung von Microsoft 365](/microsoft-365/admin/usage-analytics/enable-usage-analytics) (Artikel)\
+[Übersicht über das Microsoft 365 Admin Center](/microsoft-365/business-video/admin-center-overview) (Video)

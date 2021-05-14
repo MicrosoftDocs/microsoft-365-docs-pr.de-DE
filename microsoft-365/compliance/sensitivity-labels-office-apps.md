@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen für IT-Administratoren zur Verwaltung von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobilgeräte und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a9755542b608c8ed7d3cd93bebbd764fd56b9768
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: cb385ec5589af115ce1a0d323e3660def42179b9
+ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332714"
+ms.locfileid: "52345764"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -92,7 +92,7 @@ Die aufgelisteten Zahlen sind die minimale Office-Anwendungsversion, die für je
 |[Von Benutzern fordern, dass sie eine Bezeichnung auf ihre E-Mails und Dokumente anwenden](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+                        | 16.43+ <sup>\*</sup>                    | 4.2111+            | 4.2111+                | Ja                |
 |[Überwachung bezeichnungsbezogener Benutzeraktivitäten](data-classification-activity-explorer.md) | 2011+ | Wird überprüft | Wird überprüft           | Wird überprüft               | Wird überprüft |
 |[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | Wird überprüft           | Wird überprüft               | Ja |
-|[Verschiedene Einstellungen für Standardbezeichnungen und obligatorische Bezeichnungen](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | Rollout in der Vorschau: [Betakanal](https://office.com/insider)                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | Ja |
+|[Verschiedene Einstellungen für Standardbezeichnungen und obligatorische Bezeichnungen](#outlook-specific-options-for-default-label-and-mandatory-labeling)                    | 2105+                      | 16.43.1108+                   | 4.2111+           | 4.2111+               | Ja |
 |
 
 **Fußnoten:**
