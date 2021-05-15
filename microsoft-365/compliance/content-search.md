@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Verwenden Sie das eDiscovery-Tool für Inhaltssuche im Compliance Center, um nach Inhalten in verschiedenen Microsoft 365-Diensten zu suchen.
-ms.openlocfilehash: a058c07d080962723e9f6bc7a150cbfb5074e7db
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 5f48418882d5d4c7589b3ef394a0a306c0675f34
+ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311667"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52332846"
 ---
 # <a name="create-a-content-search"></a>Erstellen einer Inhaltssuche
 
@@ -88,7 +88,7 @@ Um auf die Seite **Inhaltssuche** im Microsoft 365 Compliance Center zuzugreifen
 7. Überprüfen Sie die Sucheinstellungen (und bearbeiten Sie sie bei Bedarf) und übermitteln Sie dann die Suche, um sie zu starten.
   
 Um erneut auf diese Inhaltssuche oder auf andere Inhaltssuchen, die auf der Seite **Inhaltssuche** aufgelistet sind, zuzugreifen, wählen Sie die gewünschte Suche aus, und klicken Sie dann auf **Öffnen**.
-  
+
 ## <a name="next-steps"></a>Nächste Schritte
 
 Es folgt eine Liste der nächsten Schritte, die nach dem Erstellen und Ausführen einer Inhaltssuche ausgeführt werden müssen.
@@ -100,3 +100,7 @@ Es folgt eine Liste der nächsten Schritte, die nach dem Erstellen und Ausführe
 - [Exportieren der Suchergebnisse](export-search-results.md)
 
 - [Exportieren eines Suchberichts](export-a-content-search-report.md)
+
+## <a name="more-information"></a>Weitere Informationen
+
+Weitere Informationen zur Inhaltssuche, beispielsweise die Suche nach Inhalten in verschiedenen Microsoft 365-Diensten, finden Sie unter [Feature-Referenz für die Inhaltssuche](content-search-reference.md).
