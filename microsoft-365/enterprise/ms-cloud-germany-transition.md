@@ -21,7 +21,7 @@ ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verstehen.'
 ms.openlocfilehash: ad6c81f04b9e8551ad6eeb6521f7562243df53e9
 ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/12/2021
 ms.locfileid: "52346304"
@@ -102,7 +102,7 @@ Microsoft Cloud Deutschland-Bestandskunden können nun mit der Migration ihrer O
 Als Ergebnis der Migration werden die wichtigsten Kundendaten und -abonnements in die neuen deutschen Rechenzentrumsregionen verschoben.
 
 > [!NOTE]
-> Dieser Artikel enthält Anleitungen nur für die Migration Office 365 Dienste. Wenn Sie zusätzliche Azure-Workloads in Microsoft Cloud Deutschland ausführen, lesen Sie [die Migrationsleitfaden für Azure Deutschland](/azure/germany/germany-migration-main).
+> Dieser Artikel enthält nur Anleitungen für die Migration von Office 365-Diensten. Wenn Sie zusätzliche Azure-Workloads in Microsoft Cloud Deutschland ausführen, lesen Sie [Migrationsanleitung für Azure Deutschland](/azure/germany/germany-migration-main).
 
 ## <a name="how-to-prepare-for-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Vorbereitung auf die Migration zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen
 

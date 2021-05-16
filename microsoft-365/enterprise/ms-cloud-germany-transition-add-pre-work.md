@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
 ms.openlocfilehash: f872a75ed11bfd53c2100f1370a4e22426437bff
 ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/12/2021
 ms.locfileid: "52344698"
@@ -90,7 +90,7 @@ Wenn die Befehlszeile einen DNS-Datensatz zurückgibt, entfernen Sie das _msoid_
 
 Die Umstellung von Office 365-Mandanten auf die Region „Deutschland“ erfordert, dass sich alle Benutzer von Office 365 abmelden, alle Anwendungen schließen, und sich für alle Office-Desktopanwendungen (Word, Excel, PowerPoint, Outlook usw.) und den OneDrive for Business-Client erneut anmelden, nachdem die Mandantenmigration Phase 9 erreicht hat. Das Ab- und Anmelden erlaubt den Office-Diensten das Abrufen neuer Authentifizierungstokens vom globalen Azure AD-Dienst.
 
-Dieser Schritt ist für alle Clients erforderlich. Um eine reibungslose Migrationserfahrung zu gewährleisten, wird dringend empfohlen, alle betroffenen Benutzer im Voraus und frühzeitig über diese bevorstehende Aktivität zu informieren und anzuweisen.
+Dies ist für alle Clients erforderlich. Um eine reibungslose Migrationserfahrung zu gewährleisten, wird dringend empfohlen, alle betroffenen Benutzer im Voraus und frühzeitig über diese bevorstehende Aktivität zu informieren und anzuweisen.
 
 Kunden mit verwalteten Windows-Clients können Windows-Computer mit dem [Office Client Cutover Tool (OCCT)](https://github.com/microsoft/OCCT) vorbereiten. Das OCCT ist so konzipiert, dass es periodisch auf Windows-Clients läuft, bis der Mandant die Phase 9 der Migration erreicht hat. Wenn die Phase 9 erreicht ist, wird das OCCT automatisch ohne Benutzer-Interaktion alle notwendigen Änderungen auf dem Computer durchführen.
 

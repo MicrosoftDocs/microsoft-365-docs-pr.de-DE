@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
 ms.openlocfilehash: a99103083c8fabae3934a6622acc55a59ff5c9a0
 ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/12/2021
 ms.locfileid: "52346292"
@@ -34,14 +34,14 @@ Mandantenmigrationen aus der Microsoft Cloud Deutschland (MCD) in die Region "De
 Der Migrationsprozess dauert mehrere Wochen, abhängig von der Gesamtgröße und Komplexität der Organisation. Während der Migration können Benutzer und Administratoren die Dienste weiterhin nutzen, jedoch mit wichtigen Änderungen, die in dieser Dokumentation beschrieben werden. In der Grafik und der Tabelle sind die Phasen und Schritte während der Migration dargestellt.
 
 > [!NOTE]
-> Die Migration von Azure-Diensten ist nicht Teil dieser Dokumentation. Diese Informationen finden Sie unter [Migrationsleitfass für Azure Deutschland](/azure/germany/germany-migration-main).
+> Die Migration von Azure-Diensten ist nicht Bestandteil dieser Dokumentation. Diese Informationen finden Sie unter [Migrationsanleitung für Azure Deutschland](/azure/germany/germany-migration-main).
 
 |Schritt|Dauer|Verantwortliche Partei|Beschreibung|
 |:--------|:--------|:--------|:--------|
 |Anmelden|Stunden|Kunde|Anmelden Ihrer Organisation für die Migration.|
 |Vorarbeit|Tage|Kunde|Durchführen der erforderlichen Maßnahmen, um Benutzer, Arbeitsstationen und das Netzwerk für die Migration vorzubereiten.|
 |Azure Active Directory (Azure AD)|1-2 Tage|Microsoft|Migrieren der Azure AD-Organisation zu weltweit.|
-|Azure|Wochen|Kunde|Erstellen Neuer weltweiter Azure-Abonnements und [Übergang von Azure-Diensten](/azure/azure-resource-manager/management/move-resource-group-and-subscription).|
+|Azure|Wochen|Kunde|Erstellen neuer weltweiter Azure-Abonnements und [überführen von Azure-Diensten](/azure/azure-resource-manager/management/move-resource-group-and-subscription).|
 |Abonnement- und Lizenzüberführung|1-2 Tage|Microsoft|Erwerben weltweiter Abonnements, kündigen von Microsoft Cloud Deutschland-Abonnements und Überführen von Benutzerlizenzen.|
 |SharePoint und OneDrive|Mehr als 15 Tage|Microsoft|Migrieren von SharePoint- und OneDrive for Business-Inhalten, Beibehalten von sharepoint.de-URLs.|
 |Exchange Online|Mehr als 15 Tage|Microsoft|Migrieren von Exchange Online-Inhalten und Umstieg auf weltweite URLs.|
@@ -229,7 +229,7 @@ In dieser Phase wird Skype for Business nach Microsoft Teams migriert. Bestehend
 - Benutzer können sich während der Umstellung von Diensten auf Office 365-Dienste nicht in Skype for Business anmelden und auch nicht, bevor die Kunden-DNS-Einträge abgeschlossen sind.
 - Kontakte und bestehende Besprechungen werden weiterhin als Skype for Business-Besprechungen funktionieren.
 
-Wenn eine Vanitydomäne für die Skype for Business konfiguriert wurde, müssen die DNS-Einträge aktualisiert werden. Lesen Sie Domänen [im Microsoft 365 Admin Center,](https://admin.microsoft.com/Adminportal/Home#/Domains) und wenden Sie die Änderungen an Ihrer DNS-Konfiguration an. 
+Wenn eine benutzerdefinierte Domäne für Skype for Business konfiguriert wurde, müssen die DNS-Einträge aktualisiert werden. Bitte schlagen Sie unter [Domänen im Microsoft 365 Admin Center](https://admin.microsoft.com/Adminportal/Home#/Domains) nach und übernehmen Sie die Änderungen in Ihre DNS-Konfiguration. 
 
 Wenn Sie sich nach Abschluss der Migrationsphase 9 zu Skype for Business Online mit PowerShell verbinden müssen, verwenden Sie den folgenden PowerShell-Code für die Verbindung:
 
@@ -240,11 +240,11 @@ Connect-MicrosoftTeams -Credential $userCredential
 ```
 
 ### <a name="known-limitations-until-finalizing-azure-ad-migration"></a>Bekannte Einschränkungen bis zum Abschluss der Azure AD-Migration
-Microsoft Teams nutzt Features von Azure AD. Obwohl die Migration von Azure AD nicht abgeschlossen ist, sind einige Features Microsoft Teams nicht vollständig verfügbar. Nach Phase 9, nach Abschluss der Migration von Azure AD, stehen die folgenden Features vollständig zur Verfügung:
+Microsoft Teams nutzt Features von Azure AD. Solange die Migration von Azure AD nicht abgeschlossen ist, sind einige Features von Microsoft Teams nicht vollständig verfügbar. Nach Phase 9, wenn die Migration von Azure AD abgeschlossen ist, werden die folgenden Features vollständig verfügbar:
 
-- Apps können nicht im Microsoft Teams verwaltet werden.
-- Neue Teams können nur im client Microsoft Teams erstellt werden, es sei denn, der Teams hat die Berechtigungen für Benutzer zum Erstellen neuer Teams eingeschränkt. Neue Teams können nicht im Microsoft Teams erstellt werden. 
-- Die Webversion von Microsoft Teams ist nicht verfügbar.
+- Apps können im Microsoft Teams Admin Center nicht verwaltet werden.
+- Neue Teams können nur im Microsoft Teams-Client erstellt werden, außer wenn der Teams-Administrator die Berechtigungen von Benutzern zum Erstellen neuer Teams eingeschränkt hat. Neue Teams können im Microsoft Teams Admin Center nicht erstellt werden. 
+- Die Web-Version von Microsoft Teams ist nicht verfügbar.
 
 ## <a name="phase-8-dynamics-365"></a>Phase 8: Dynamics 365
 
