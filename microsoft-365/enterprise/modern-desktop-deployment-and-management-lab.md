@@ -1,5 +1,5 @@
 ---
-title: Windows and Office deployment lab kit
+title: Windows und Office Deployment Lab Kit
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -22,11 +22,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/27/2021
 ms.locfileid: "52060873"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a>Windows and Office deployment lab kit
+# <a name="windows-and-office-deployment-lab-kit"></a>Windows und Office Deployment Lab Kit
 
-Das Windows- und Office-Bereitstellungslaborkit soll Ihnen dabei helfen, Ihre Bereitstellung und Verwaltung von Desktops mit Windows 10 Enterprise und Microsoft 365 Apps for Enterprise zu planen, zu testen und zu überprüfen. Die Labore im Kit umfassen Microsoft Endpoint Configuration Manager, Desktop Analytics, das Office-Anpassungstool, OneDrive, Windows Autopilot und vieles mehr.
+Das Windows und Office-Bereitstellungslaborkit ist so konzipiert, dass Sie Ihre Bereitstellung und Verwaltung von Desktops planen, testen und überprüfen können, auf Windows 10 Enterprise und Microsoft 365 Apps for Enterprise. Die Labore im Kit umfassen Microsoft Endpoint Configuration Manager, Desktop Analytics, das Office Customization Tool, OneDrive, Windows Autopilot und vieles mehr.
 
-Dieses Kit wird dringend für Organisationen empfohlen, die Windows 8.1-Upgrades auf Windows 10 vorbereiten. Sie gilt auch, wenn Sie derzeit Windows 10, Microsoft 365 Apps for Enterprise (früher Office 365 ProPlus) oder Office 2019 verwenden. Als isolierte Umgebung eignet sich die resultierende Übungseinheit ideal zum Erkunden von Bereitstellungstoolupdates und zum Testen Ihrer bereitstellungsbezogenen Automatisierung.
+Dieses Kit wird dringend für Organisationen empfohlen, die Windows 8.1 Upgrades auf Windows 10. Sie gilt auch, wenn Sie derzeit Windows 10, Microsoft 365 Apps for Enterprise (früher Office 365 ProPlus) oder Office 2019 verwenden. Als isolierte Umgebung eignet sich die resultierende Übungseinheit ideal zum Erkunden von Bereitstellungstoolupdates und zum Testen Ihrer bereitstellungsbezogenen Automatisierung.
 
 [Herunterladen des Deployment Lab Kit für Windows und Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
@@ -61,12 +61,12 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
 ### <a name="prepare-configuration"></a>Vorbereiten der Konfiguration   
 
-- Optimieren der Bereitstellung von Windows 10-Updates   
-- Wartung von Windows 10 mithilfe von Gruppenrichtlinien
-- Wartung von Windows 10 mithilfe von Microsoft Intune   
-- Wartung von Windows 10 mit Configuration Manager   
-- Wartung von Microsoft 365 Apps for Enterprise mithilfe von Configuration Manager   
-- Wartung von Microsoft 365 Apps for Enterprise mithilfe von Intune  
+- Optimieren Windows 10 Aktualisierungsbereitstellung   
+- Servicing Windows 10 using Group Policy
+- Servicing Windows 10 using Microsoft Intune   
+- Servicing Windows 10 with Configuration Manager   
+- Servicing Microsoft 365 Apps for Enterprise using Configuration Manager   
+- Servicing Microsoft 365 Apps for Enterprise using Intune  
 - Sicherheit und Compliance   
 
 ### <a name="prepare-applications"></a>Vorbereiten von Anwendungen    
@@ -79,23 +79,23 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 - Tasksequenzen für die Betriebssystembereitstellung im Configuration Manager
 - Tasksequenzen für die Betriebssystembereitstellung im Microsoft Deployment Toolkit (MDT)
 - Windows Autopilot
-- Bereitstellen und Verwalten des neuen Microsoft Edge  
+- Bereitstellen und Verwalten der neuen Microsoft Edge  
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Bereitstellung von Microsoft 365 Apps for Enterprise    
 
 - Cloud verwaltete Bereitstellung  
 - Lokal verwaltete Bereitstellung    
-- Microsoft 365 Apps for enterprise Deployment on Non-AD Joined Devices 
-- Vom Unternehmen verwaltete Bereitstellung mithilfe von Configuration Manager
-- Enterprise managed deployment using Microsoft Intune  
+- Microsoft 365 Apps for Enterprise Bereitstellung auf Nicht-AD-beigetretenen Geräten 
+- Enterprise verwaltete Bereitstellung mithilfe von Configuration Manager
+- Enterprise verwaltete Bereitstellung mithilfe von Microsoft Intune  
 - Branchenbereitstellung und -verwaltung mit Microsoft Intune
-- Bereitstellen von Microsoft Teams
+- Bereitstellen Microsoft Teams
 
-### <a name="deploy-windows-virtual-desktop"></a>Bereitstellen von Windows Virtual Desktop  
+### <a name="deploy-windows-virtual-desktop"></a>Bereitstellen Windows virtuellen Desktops  
 
 - Vorbereiten, Bereitstellen, Optimieren
  
-## <a name="where-to-find-the-windows-and-office-deployment-lab-kit"></a>Wo finden Sie das Windows and Office Deployment Lab Kit
+## <a name="where-to-find-the-windows-and-office-deployment-lab-kit"></a>Wo finden Sie das Windows und Office Deployment Lab Kit
 
 [Herunterladen des Deployment Lab Kit für Windows und Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 

@@ -14,7 +14,7 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-description: Hier finden Sie die neuesten Anleitungen, Tipps, Ressourcen und Anleitungen zur Remotearbeit für Unternehmen, die Microsoft 365 verwenden.
+description: Hier finden Sie die neuesten Anleitungen, Tipps, Ressourcen und Anleitungen zur Remotearbeit für Unternehmen, die Microsoft 365.
 ms.openlocfilehash: 5bdff59f3d07c59951c6da87d7b28432fb7c5878
 ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
 ms.translationtype: MT
@@ -24,10 +24,10 @@ ms.locfileid: "52023737"
 ---
 # <a name="empower-your-small-business-with-remote-work"></a>Remotearbeit kann auch Ihrem Kleinunternehmen weiterhelfen
 
-Da sich Unternehmen der erhöhten Notwendigkeit anpassen, dass Mitarbeiter remote arbeiten und sich virtuell mit ihren Kunden verbinden, wird diese Website mit den neuesten Anleitungen, Tipps, Ressourcen und Anleitungen zur Remotearbeit für Unternehmen mit Microsoft 365 aktualisiert.
+Da unternehmen sich an die erhöhte Notwendigkeit anpassen, dass Personen remote arbeiten und sich virtuell mit ihren Kunden verbinden, wird diese Website mit den neuesten Anleitungen, Tipps, Ressourcen und Anleitungen zur Remotearbeit für Unternehmen aktualisiert, die Microsoft 365.
 
 >[!TIP]
->Sie haben keine Microsoft_Teams? Erhalten Sie 6 Monate Microsoft Teams in Office kostenlos (wenn Sie sich für 1 Jahr registrieren). Hier erhalten Sie die in diesem Artikel beschriebenen Technologien als Teil des Angebots. Weitere Informationen finden Sie unter [Try 1 month free](https://aka.ms/SMBTeamsOffer).
+>Sie haben keine Microsoft_Teams? Erhalten Sie 6 Monate Microsoft Teams in Office (wenn Sie sich für 1 Jahr registrieren). Hier erhalten Sie die in diesem Artikel beschriebenen Technologien als Teil des Angebots. Weitere Informationen finden Sie unter [Try 1 month free](https://aka.ms/SMBTeamsOffer).
 
 ## <a name="remote-work-for-your-small-business-video"></a>Remotearbeit für Ihr kleines Unternehmen (Video)
 
@@ -37,13 +37,13 @@ Da sich Unternehmen der erhöhten Notwendigkeit anpassen, dass Mitarbeiter remot
 
 Im Lichte des COVID-19(Roman Coronavirus)-Ausbruchs befinden sich viele Geschäftsbesitzer mit einer vollständigen Remotearbeit. Hier sehen Sie, was Sie tun können, um einen Übergang zu Remotearbeit sicher, sicher und produktiv zu gestalten.
 
-Weitere Informationen finden Sie unter [Erste Schritte mit Microsoft Teams in Ihrem kleinen Unternehmen.](../../business-video/get-started-teams-small-business.md)
+Weitere Informationen finden Sie unter [Get started with Microsoft Teams in your small business](../../business-video/get-started-teams-small-business.md).
 
-Sie haben bereits ein Abonnement, müssen aber eingerichtet werden? Weitere Informationen [finden Sie unter Microsoft 365 Small Business Training](../../business-video/index.yml).
+Sie haben bereits ein Abonnement, müssen aber eingerichtet werden? Siehe [Microsoft 365 Small Business Training](../../business-video/index.yml).
 
 ## <a name="connect-with-employees-and-customers"></a>Verbinden mit Mitarbeitern und Kunden
 
-Sie können weiterhin eine Verbindung mit Mitarbeitern, Kunden, Kunden und Partnern herstellen, auch wenn Sie sich nicht von Angesicht zu Angesicht treffen können. Verwenden Sie Microsoft Teams, um weiterhin Geschäfte zu machen und eine Verbindung mit Ihren Kunden zu herstellen. 
+Sie können weiterhin eine Verbindung mit Mitarbeitern, Kunden, Kunden und Partnern herstellen, auch wenn Sie sich nicht von Angesicht zu Angesicht treffen können. Verwenden Microsoft Teams, um weiterhin Geschäfte zu machen und eine Verbindung mit Ihren Kunden zu herstellen. 
 
 ### <a name="meet-up-in-teams"></a>Meet up in Teams
 
@@ -51,11 +51,11 @@ Hosten von Audio-, Video- und Webbesprechungen mit Mitarbeitern, Kunden oder Par
 
 Weitere Informationen finden Sie unter [Host online meetings](../../business-video/start-and-pin-chats.md) and Chat with employees and [customers](https://support.microsoft.com/office/chat-with-employees-and-customers-65748808-a403-462c-a6e1-b169e5bc6c92).
 
-### <a name="store-and-share-files"></a>Speichern und Freigeben von Dateien
+### <a name="store-and-share-files"></a>Store und Freigeben von Dateien
 
 Speichern Sie Ihre Geschäftsdokumente in der Cloud, und teilen Sie sie sicher, sowohl intern als auch extern.
 
-Weitere Informationen finden Sie in dieser Übersicht über die [Freigabe von Geschäftsdateien](../../business-video/overview-file-sharing.md) und [Hochladen und Freigeben von Dateien.](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12)
+Weitere Informationen finden Sie in dieser Übersicht über die [Freigabe von Geschäftsdateien](../../business-video/overview-file-sharing.md) und Hochladen [und Freigabedateien](https://support.microsoft.com/office/upload-and-share-files-57b669db-678e-424e-b0a0-15d19215cb12).
 
 ### <a name="collaborate-with-customers"></a>Zusammenarbeit mit Kunden
 
@@ -81,13 +81,13 @@ Weitere Informationen finden Sie unter [Verwalten von Geräten](../../business-v
 
 ### <a name="more-for-admins-and-partners"></a>Weitere Informationen für Administratoren und Partner
 
-Der Hub für technische Dokumentation für Microsoft 365 Business wird mit neuen Sicheren Remotearbeitsanleitungen aktualisiert.
+Der Hub für technische Dokumentation für Microsoft 365 Business wird mit neuen Anleitungen für sichere Remotearbeit aktualisiert.
 
-Weitere Informationen finden Sie unter [Microsoft 365 Business resources](https://docs.microsoft.com/microsoft-365/business).
+Weitere Informationen finden Sie [unter Microsoft 365 Business Ressourcen](https://docs.microsoft.com/microsoft-365/business).
 
 ## <a name="need-to-ask-a-question"></a>Sie müssen eine Frage stellen? 
 
-Fragen Sie im [Teams-Forum](https://answers.microsoft.com/msteams/forum) oder [im Office Admins-Forum.](https://answers.microsoft.com)
+Fragen Sie im [Teams oder](https://answers.microsoft.com/msteams/forum) im [Office Admins Forum](https://answers.microsoft.com).
 
 > [!NOTE]
-> Die meisten Aufgaben in diesem Artikel und Video können mit einem Abonnement von Microsoft 365 Business Basic (früher Office 365 Business Essentials) ausgeführt werden, einige erfordern jedoch ein Premium-Abonnement. 
+> Die meisten Aufgaben in diesem Artikel und Video können mit einem Abonnement für Microsoft 365 Business Basic (früher Office 365 Business Essentials) ausgeführt werden, einige erfordern jedoch ein Premiumabonnement. 

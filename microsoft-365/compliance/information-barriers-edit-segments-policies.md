@@ -27,7 +27,7 @@ Nachdem Sie [Richtlinien für Informationsbarrieren](information-barriers-polici
 
 |**Aktion**|**Beschreibung**|
 |:---------|:--------------|
-| [Bearbeiten von Benutzerkontoattributen](#edit-user-account-attributes) | Füllen Sie Attribute in Azure Active Directory aus, die zum Definieren von Segmenten verwendet werden können.<br/>Bearbeiten Sie Benutzerkontoattribute, wenn Benutzer in bestimmten Segmenten, in denen sie enthalten sein sollten, nicht enthalten sind, um zu ändern, in welchen Segmenten Benutzer enthalten sind oder um Segmente mit unterschiedlichen Attributen zu definieren. |
+| [Bearbeiten von Benutzerkontoattributen](#edit-user-account-attributes) | Füllen Sie Attribute in Azure Active Directory, die zum Definieren von Segmenten verwendet werden können.<br/>Bearbeiten Sie Benutzerkontoattribute, wenn Benutzer in bestimmten Segmenten, in denen sie enthalten sein sollten, nicht enthalten sind, um zu ändern, in welchen Segmenten Benutzer enthalten sind oder um Segmente mit unterschiedlichen Attributen zu definieren. |
 | [Bearbeiten eines Segments](#edit-a-segment) | Bearbeiten Sie Segmente, wenn Sie ändern möchten, wie ein Segment definiert ist. <br/>Sie können beispielsweise ursprünglich Segmente mit *Department* definiert haben und nun ein anderes Attribut verwenden, z. B. *MemberOf*. |
 | [Bearbeiten einer Richtlinie ](#edit-a-policy) | Bearbeiten Sie eine Richtlinie für Informationsbarrieren, wenn Sie ändern möchten, wie eine Richtlinie funktioniert.<br/>Anstatt beispielsweise die Kommunikation zwischen zwei Segmenten zu blockieren, können Sie die Kommunikation nur zwischen bestimmten Segmenten zulassen. |
 | [Festlegen einer Richtlinie auf inaktiven Status](#set-a-policy-to-inactive-status) |Legen Sie eine Richtlinie auf inaktiven Status, wenn Sie Änderungen an einer Richtlinie vornehmen möchten oder wenn Sie nicht möchten, dass eine Richtlinie wirksam wird. |
@@ -37,7 +37,7 @@ Nachdem Sie [Richtlinien für Informationsbarrieren](information-barriers-polici
 | [Problembehandlung bei Informationsbarrieren](information-barriers-troubleshooting.md) | Lesen Sie diesen Artikel, wenn unerwartete Probleme mit Informationsbarrieren auftreten. |
 
 > [!IMPORTANT]
-> Zum Ausführen der in diesem Artikel beschriebenen Aufgaben muss Ihnen eine entsprechende Rolle zugewiesen werden, z. B. eine der folgenden:<br/>– Microsoft 365 Enterprise Global Administrator<br/>– Globaler Administrator<br/>- Complianceadministrator<br/>- IB Compliance Management (dies ist eine neue Rolle!)<br><br>Weitere Informationen zu voraussetzungen für Informationsbarrieren finden Sie unter [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<br><br> Stellen Sie sicher, dass Sie eine Verbindung mit [dem Security & Compliance Center PowerShell herstellen.](/powershell/exchange/connect-to-scc-powershell)
+> Zum Ausführen der in diesem Artikel beschriebenen Aufgaben muss Ihnen eine entsprechende Rolle zugewiesen werden, z. B. eine der folgenden:<br/>– Microsoft 365 Enterprise globaler Administrator<br/>– Globaler Administrator<br/>- Complianceadministrator<br/>- IB Compliance Management (dies ist eine neue Rolle!)<br><br>Weitere Informationen zu voraussetzungen für Informationsbarrieren finden Sie unter [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<br><br> Stellen Sie sicher, dass Sie eine Verbindung mit [dem Security & Compliance Center PowerShell herstellen.](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="edit-user-account-attributes"></a>Bearbeiten von Benutzerkontoattributen
 
@@ -53,9 +53,9 @@ Verwenden Sie dieses Verfahren, um Attribute zu bearbeiten, die für die Segment
 
 3. Bearbeiten Sie ein oder mehrere Benutzerkonten, um Werte für das attribut zu enthalten, das Sie im vorherigen Schritt ausgewählt haben. Verwenden Sie eines der folgenden Verfahren, um diese Aktion zu ergreifen:
 
-    - Informationen zum Bearbeiten eines einzelnen Kontos finden Sie unter Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers [mithilfe von Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+    - Informationen zum Bearbeiten eines einzelnen Kontos finden Sie unter Hinzufügen oder Aktualisieren der Profilinformationen eines [Benutzers mithilfe Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
-    - Informationen zum Bearbeiten mehrerer Konten (oder Verwenden von PowerShell zum Bearbeiten eines einzelnen Kontos) finden Sie unter [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).
+    - Informationen zum Bearbeiten mehrerer Konten (oder zum Bearbeiten eines einzelnen Kontos mithilfe von PowerShell) finden Sie unter [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).
 
 ## <a name="edit-a-segment"></a>Bearbeiten eines Segments
 
@@ -166,8 +166,8 @@ Nachdem Sie mit der Anwendung von Richtlinien für Informationsbarrieren begonne
 
 - [Übersicht über Informationsbarrieren](information-barriers.md)
 - [Definieren von Richtlinien für Informationsbarrieren](information-barriers-policies.md)
-- [Weitere Informationen zu Informationsbarrieren in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
-- [Weitere Informationen zu Informationsbarrieren in SharePoint Online](/sharepoint/information-barriers)
-- [Weitere Informationen zu Informationsbarrieren in OneDrive](/onedrive/information-barriers)
+- [Erfahren Sie mehr über Informationsbarrieren in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [Erfahren Sie mehr über Informationsbarrieren in SharePoint Online](/sharepoint/information-barriers)
+- [Erfahren Sie mehr über Informationsbarrieren in OneDrive](/onedrive/information-barriers)
 - [Attribute für Richtlinien für Informationsbarrieren](information-barriers-attributes.md)
 - [Problembehandlung bei Informationsbarrieren](information-barriers-troubleshooting.md)

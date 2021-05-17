@@ -24,9 +24,9 @@ ms.locfileid: "50925256"
 ---
 # <a name="use-lean-popouts-to-reduce-memory-used-when-reading-mail-messages"></a>Verwenden von schlanken Popups zum Reduzieren des beim Lesen von E-Mail-Nachrichten verwendeten Arbeitsspeichers
 
-Dieser Artikel enthält Informationen zur Verbesserung der Leistung des Nachrichtendownloads in Outlook im Web. Dieser Artikel ist Teil des [Projekts Netzwerkplanung und Leistungsoptimierung für Office 365.](./network-planning-and-performance.md)
+Dieser Artikel enthält Informationen zur Verbesserung der Leistung des Nachrichtendownloads in Outlook im Web. Dieser Artikel ist Teil der [Netzwerkplanung und Leistungsoptimierung für Office 365](./network-planning-and-performance.md) Projekt.
   
-Als globaler Office 365-Administrator können Sie Outlook im Web so konfigurieren, dass schlanke _Popouts_ zur Verfügung gestellt werden, eine kleinere, weniger arbeitsspeicherintensive Version bestimmter E-Mail-Nachrichten in Microsoft Edge oder Internet Explorer. Wenn schlanke Popups für Outlook im Web konfiguriert sind, werden serverseitige gerenderte Komponenten geladen, die die Leistung optimieren.
+Als globaler Office 365 können Sie Outlook im Web konfigurieren, um schlanke _Popouts_ zu liefern, eine kleinere, weniger arbeitsspeicherintensive Version bestimmter E-Mail-Nachrichten in Microsoft Edge oder Internet Explorer. Wenn schlanke Popouts für Outlook im Web konfiguriert sind, werden serverseitige gerenderte Komponenten geladen, die die Leistung optimieren.
   
 > [!NOTE]
 > Ab März 2018 sind schlanke Popouts nicht für Nachrichten verfügbar, die Nutzungsrechteinschränkungen angeben, z. B. IrM (Information Rights Management).
@@ -35,11 +35,11 @@ Diese Features funktionieren weiterhin im Hauptfenster, sind jedoch in schlanken
   
 - Outlook-Add-Ins
   
-- Skype for Business-Anwesenheit
+- Skype for Business Anwesenheit
   
-## <a name="to-configure-lean-popouts-for-all-users-within-your-office-365-organization"></a>So konfigurieren Sie schlanke Popups für alle Benutzer in Ihrer Office 365-Organisation
+## <a name="to-configure-lean-popouts-for-all-users-within-your-office-365-organization"></a>So konfigurieren Sie schlanke Popups für alle Benutzer in Office 365 Organisation
   
-1. [Herstellen einer Verbindung mit Exchange Online mithilfe von Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Verbinden, Exchange Online Remote PowerShell zu verwenden.](/powershell/exchange/connect-to-exchange-online-powershell)
   
 2. Führen Sie [das Cmdlet Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) mit dem Parameter LeanPopoutEnabled wie folgt aus:
 

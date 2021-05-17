@@ -15,7 +15,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: a20f9dbd-6102-4ffa-b72c-ff813e700930
-description: Erfahren Sie, wie Sie Mithilfe von PowerShell Inhalte aus einem Quell-E-Mail-System mithilfe einer mehrstufigen Migration zu Microsoft 365 im Laufe der Zeit verschieben.
+description: Erfahren Sie, wie Sie Mithilfe von PowerShell Inhalte aus einem Quell-E-Mail-System im Laufe der Zeit mithilfe einer mehrstufigen Migration zu einem Microsoft 365.
 ms.openlocfilehash: 0c93de181c54fb1c4021d23d787b63577317aad4
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,16 +27,16 @@ ms.locfileid: "50924792"
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Mithilfe einer mehrstufigen Migration können Sie den Inhalt von Benutzerpostfächern von einem Quell-E-Mail-System zu Microsoft 365 migrieren.
+Sie können den Inhalt von Benutzerpostfächern aus einem Quell-E-Mail-System mithilfe einer mehrstufigen Migration Microsoft 365 migrieren.
   
 Dieser Artikel führt Sie durch die Aufgaben im Zusammenhang mit einer mehrstufigen E-Mail-Migration mit Exchange Online PowerShell. Im Thema Was Sie über eine mehrstufige [E-Mail-Migration](/Exchange/mailbox-migration/what-to-know-about-a-staged-migration)wissen müssen, erhalten Sie einen Überblick über den Migrationsprozess. Wenn Sie mit dem Inhalt dieses Artikels vertraut sind, verwenden Sie ihn, um mit der Migration der Postfächer von einem E-Mail-System zu einem anderen zu beginnen.
   
 > [!NOTE]
-> Sie können auch mit der Exchange-Verwaltungskonsole eine mehrstufige Migration durchführen. Weitere [Informationen finden Sie unter Durchführen einer mehrstufigen Migration von E-Mails zu Microsoft 365](/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration). 
+> Sie können auch mit der Exchange-Verwaltungskonsole eine mehrstufige Migration durchführen. Weitere [Informationen finden Sie unter Perform a staged migration of email to Microsoft 365](/Exchange/mailbox-migration/perform-a-staged-migration/perform-a-staged-migration). 
   
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-Geschätzte Zeit bis zum Abschließen dieser Aufgabe: 2 bis 5 Minuten, um einen Migrationsbatch zu erstellen. Nach dem Start der Migration variiert die Dauer der Migration abhängig von der Anzahl von Postfächern in dem Batch, der Größe der einzelnen Postfächer und Ihrer verfügbaren Netzkapazität. Weitere Informationen zu anderen Faktoren, die sich auf die Dauer der Migration von Postfächern zu Microsoft 365 [auswirken,](/Exchange/mailbox-migration/office-365-migration-best-practices)finden Sie unter Migration Performance .
+Geschätzte Zeit bis zum Abschließen dieser Aufgabe: 2 bis 5 Minuten, um einen Migrationsbatch zu erstellen. Nach dem Start der Migration variiert die Dauer der Migration abhängig von der Anzahl von Postfächern in dem Batch, der Größe der einzelnen Postfächer und Ihrer verfügbaren Netzkapazität. Weitere Informationen zu anderen Faktoren, die sich auf die Dauer der Migration von Postfächern zu Microsoft 365, finden Sie unter [Migration Performance](/Exchange/mailbox-migration/office-365-migration-best-practices).
   
 Bevor Sie dieses Verfahren bzw. diese Verfahren ausführen können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Berechtigungen, die Sie benötigen, finden Sie unter dem Eintrag "Migration" unter dem Thema [Empfängerberechtigungen](/exchange/recipients-permissions-exchange-2013-help).
   
@@ -48,7 +48,7 @@ Eine vollständige Liste der Migrationsbefehle finden Sie unter [Verschiebungs- 
 
 ### <a name="step-1-prepare-for-a-staged-migration"></a>Schritt 1: Auf eine mehrstufige Migration vorbereiten
 
-Bevor Sie Postfächer mithilfe einer mehrstufigen Migration zu Microsoft 365 migrieren, müssen Sie einige Änderungen an Ihrer Exchange-Umgebung vornehmen.
+Bevor Sie Postfächer mithilfe einer mehrstufigen Migration zu Microsoft 365, müssen Sie einige Änderungen an Ihrer Umgebung Exchange vornehmen.
   
  **Konfigurieren Sie Outlook Anywhere auf Ihrem lokalen Exchange Server**. Der E-Mail-Migrationsdienst verwendet Outlook Anywhere (auch bekannt als RPC über HTTP), um eine Verbindung mit Ihrem lokalen Exchange Server herzustellen. Informationen zum Einrichten von Outlook Anywhere für Exchange Server 2007 und Exchange 2003 finden Sie im Folgenden:
   
@@ -75,7 +75,7 @@ Bevor Sie Postfächer mithilfe einer mehrstufigen Migration zu Microsoft 365 mig
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
- **Festlegen von Berechtigungen** Das lokale Benutzerkonto, mit dem Sie eine Verbindung mit Ihrer lokalen Exchange-Organisation herstellen (auch Migrationsadministrator genannt), muss über die erforderlichen Berechtigungen für den Zugriff auf die lokalen Postfächer verfügen, die Sie zu Microsoft 365 migrieren möchten. Dieses Benutzerkonto wird verwendet, wenn Sie sich mit Ihrem E-Mail-System durch das Erstellen eines Migrationsendpunkts im laufenden Prozess ([Schritt 3: Migrationsendpunkt erstellen](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md#BK_Endpoint) ) verbinden.
+ **Festlegen von Berechtigungen** Das lokale Benutzerkonto, das Sie zum Herstellen einer Verbindung mit Ihrer lokalen Exchange-Organisation (auch migrationsadministrator genannt) verwenden, muss über die erforderlichen Berechtigungen für den Zugriff auf die lokalen Postfächer verfügen, die Sie zu Microsoft 365. Dieses Benutzerkonto wird verwendet, wenn Sie sich mit Ihrem E-Mail-System durch das Erstellen eines Migrationsendpunkts im laufenden Prozess ([Schritt 3: Migrationsendpunkt erstellen](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md#BK_Endpoint) ) verbinden.
   
 Um die Postfächer zu migrieren, muss der Administrator eine der folgenden Berechtigungen haben:
   
@@ -89,22 +89,22 @@ Um die Postfächer zu migrieren, muss der Administrator eine der folgenden Berec
     
 - Die **ReceiveAs** -Berechtigung für die lokale Postfachdatenbank besitzen, in der die Benutzerpostfächer gespeichert sind und die **WriteProperty** -Berechtigung besitzen, um die **TargetAddress** -Eigenschaft für die lokalen Benutzerkonten ändern zu können.
     
-Anweisungen zum Festlegen dieser Berechtigungen finden Sie unter Zuweisen von Berechtigungen zum Migrieren von Postfächern [zu Microsoft 365](/Exchange/mailbox-migration/assign-permissions-for-migration).
+Anweisungen zum Festlegen dieser Berechtigungen finden Sie unter [Assign permissions to migrate mailboxes to Microsoft 365](/Exchange/mailbox-migration/assign-permissions-for-migration).
   
  **Deaktivieren von Unified Messaging (UM)** Wenn UM für die lokalen Postfächer aktiviert ist, die Sie migrieren, deaktivieren Sie UM vor der Migration. Aktivieren Sie UM für die Postfächer nach Abschluss der Migration. Weitere Anleitungen finden Sie unter [Deaktivieren von Unified Messaging](/previous-versions/office/exchange-server-2007/bb124691(v=exchg.80)).
   
- **Verwenden Sie die Verzeichnissynchronisierung, um neue Benutzer in Microsoft 365 zu erstellen.** Sie verwenden die Verzeichnissynchronisierung, um alle lokalen Benutzer in Ihrer Microsoft 365-Organisation zu erstellen.
+ **Verwenden Sie die Verzeichnissynchronisierung, um neue Benutzer in Microsoft 365.** Sie verwenden die Verzeichnissynchronisierung, um alle lokalen Benutzer in Ihrer Organisation Microsoft 365 erstellen.
   
 Sie müssen die Benutzer nach der Erstellung lizenzieren. Sie haben 30 Tage zum Hinzufügen von Lizenzen, nachdem die Benutzer erstellt wurden. Weitere Informationen zum Hinzufügen von Lizenzen finden Sie unter [Schritt 8: Aufgaben nach der Migration abschließen](use-powershell-to-perform-a-staged-migration-to-microsoft-365.md#BK_Postmigration).
   
- Sie können entweder das Microsoft Azure Active Directory (Azure AD)-Synchronisierungstool oder die Microsoft Azure AD Sync Services verwenden, um Ihre lokalen Benutzer in Microsoft 365 zu synchronisieren und zu erstellen. Nachdem Postfächer zu Microsoft 365 migriert wurden, verwalten Sie Benutzerkonten in Ihrer lokalen Organisation und werden mit Ihrer Microsoft 365-Organisation synchronisiert. Weitere Informationen finden Sie unter [Verzeichnisintegration](/previous-versions/azure/azure-services/jj573653(v=azure.100)).
+ Sie können entweder das Microsoft Azure Active Directory (Azure AD)-Synchronisierungstool oder die Microsoft Azure AD-Synchronisierungsdienste verwenden, um Ihre lokalen Benutzer in Microsoft 365. Nachdem Postfächer zu Microsoft 365 migriert wurden, verwalten Sie Benutzerkonten in Ihrer lokalen Organisation und werden mit Ihrer Microsoft 365 synchronisiert. Weitere Informationen finden Sie unter [Verzeichnisintegration](/previous-versions/azure/azure-services/jj573653(v=azure.100)).
   
 ### <a name="step-2-create-a-csv-file-for-a-staged-migration-batch"></a>Schritt 2: Erstellen einer CSV-Datei für einen Batch der mehrstufigen Migration
 
 Nachdem Sie die Benutzer identifiziert haben, deren lokale Postfächer Sie zu Microsoft 365 migrieren möchten, verwenden Sie eine CSV-Datei (Comma Separated Value), um einen Migrationsbatch zu erstellen. Jede Zeile in der CSV-Datei, die von Microsoft 365 zum Ausführen der Migration verwendet wird, enthält Informationen zu einem lokalen Postfach. 
   
 > [!NOTE]
-> Es gibt keinen Grenzwert für die Anzahl der Postfächer, die Sie mithilfe einer mehrstufigen Migration zu Microsoft 365 migrieren können. Die CSV-Datei für einen Migrationsbatch kann maximal 2.000 Zeilen enthalten. Erstellen Sie zum Migrieren von mehr als 2.000 Postfächern zusätzliche CSV-Dateien und verwenden Sie jede Datei, um einen neuen Migrationsbatch zu erstellen. 
+> Es gibt keinen Grenzwert für die Anzahl von Postfächern, die Sie mithilfe einer mehrstufigen Migration zu Microsoft 365 migrieren können. Die CSV-Datei für einen Migrationsbatch kann maximal 2.000 Zeilen enthalten. Erstellen Sie zum Migrieren von mehr als 2.000 Postfächern zusätzliche CSV-Dateien und verwenden Sie jede Datei, um einen neuen Migrationsbatch zu erstellen. 
   
  **Unterstützte Attribute**
   
@@ -113,12 +113,12 @@ Die CSV-Datei für eine mehrstufige Migration unterstützt die folgenden drei At
 |**Attribut**|**Beschreibung**|**Erforderlich?**|
 |:-----|:-----|:-----|
 |EmailAddress  <br/> |Gibt die primäre SMTP-E-Mail-Adresse, z. B. pilarp@contoso.com für lokale Postfächer an.  <br/> Verwenden Sie die primäre SMTP-Adresse für lokale Postfächer und keine Benutzer-IDs aus Microsoft 365. Wenn die lokale Domäne beispielsweise den Namen contoso.com aber die Microsoft 365-E-Mail-Domäne service.contoso.com hat, verwenden Sie den contoso.com-Domänennamen für E-Mail-Adressen in der CSV-Datei.  <br/> |Erforderlich  <br/> |
-|Kennwort  <br/> |Das Kennwort, das für das neue Microsoft 365-Postfach festgelegt werden soll. Alle Kennworteinschränkungen, die auf Ihre Microsoft 365-Organisation angewendet werden, gelten auch für die Kennwörter, die in der CSV-Datei enthalten sind.  <br/> |Optional  <br/> |
-|ForceChangePassword  <br/> |Gibt an, ob ein Benutzer das Kennwort bei der ersten Anmeldung bei dem neuen Microsoft 365-Postfach ändern muss. Verwenden Sie **True** oder **False** als Wert für diesen Parameter. <br/> > [!NOTE]> Wenn Sie eine Lösung für einmaliges Anmelden (SSO) durch die Bereitstellung von Active Directory-Verbunddiensten (AD FS) oder höher in Ihrer lokalen Organisation implementiert haben, verwenden Sie **False** als Wert für das Attribut **ForceChangePassword**.          |Optional  <br/> |
+|Kennwort  <br/> |Das Kennwort, das für das neue Postfach Microsoft 365 werden soll. Alle Kennworteinschränkungen, die auf Ihre organisation Microsoft 365 angewendet werden, gelten auch für die Kennwörter, die in der CSV-Datei enthalten sind.  <br/> |Optional  <br/> |
+|ForceChangePassword  <br/> |Gibt an, ob ein Benutzer das Kennwort bei der ersten Anmeldung beim neuen Postfach ändern Microsoft 365 muss. Verwenden Sie **True** oder **False** als Wert für diesen Parameter. <br/> > [!NOTE]> Wenn Sie eine Lösung für einmaliges Anmelden (SSO) durch die Bereitstellung von Active Directory-Verbunddiensten (AD FS) oder höher in Ihrer lokalen Organisation implementiert haben, verwenden Sie **False** als Wert für das Attribut **ForceChangePassword**.          |Optional  <br/> |
    
  **CSV-Dateiformat**
   
-Das folgende Beispiel zeigt das Format der CSV-Datei. In diesem Beispiel werden drei lokale Postfächer zu Microsoft 365 migriert.
+Das folgende Beispiel zeigt das Format der CSV-Datei. In diesem Beispiel werden drei lokale Postfächer zu Microsoft 365.
   
 In der ersten Zeile (auch als Kopfzeile bezeichnet) der CSV-Datei sind die Namen der Attribute oder Felder aufgelistet, die in den folgenden Zeilen angegeben werden. Die einzelnen Attributnamen werden jeweils durch ein Komma getrennt.
   
@@ -139,7 +139,7 @@ Sie können einen beliebigen Text-Editor oder eine Anwendung wie Excel zum Erste
 ### <a name="step-3-create-a-migration-endpoint"></a>Schritt 3: Migrationsendpunkt erstellen
 <a name="BK_Endpoint"> </a>
 
-Um E-Mails erfolgreich zu migrieren, muss Microsoft 365 eine Verbindung herstellen und mit dem Quell-E-Mail-System kommunizieren. Zu diesem Zwecke verwendet Microsoft 365 einen Migrationsendpunkt. Zum Erstellen eines Migrationsendpunkts von Outlook Anywhere durch die Verwendung von PowerShell, für eine mehrstufige Migration, stellen Sie zuerst eine [Verbindung mit Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) her. 
+Um E-Mails erfolgreich zu migrieren, Microsoft 365 E-Mail-System eine Verbindung herstellen und mit dem Quell-E-Mail-System kommunizieren. Dazu verwendet Microsoft 365 einen Migrationsendpunkt. Zum Erstellen eines Migrationsendpunkts von Outlook Anywhere durch die Verwendung von PowerShell, für eine mehrstufige Migration, stellen Sie zuerst eine [Verbindung mit Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) her. 
   
 Eine vollständige Liste der Migrationsbefehle finden Sie unter [Verschiebungs- und Migrations-Cmdlets](/powershell/exchange/).
   
@@ -200,16 +200,16 @@ Weitere Informationen zu den **Get-MigrationBatch** -Cmdlets finden Sie unter [G
 ### <a name="step-5-convert-on-premises-mailboxes-to-mail-enabled-users"></a>Schritt 5: Konvertieren lokaler Postfächer in E-Mail-aktivierte Benutzer
 <a name="BK_Endpoint"> </a>
 
-Nachdem Sie einen Batch Postfächer erfolgreich migriert haben, benötigen Sie eine Methode, damit die Benutzer auf ihre E-Mail zugreifen können. Ein Benutzer, dessen Postfach migriert wurde, verfügt jetzt sowohl über ein lokales als auch über ein lokales Postfach in Microsoft 365. Benutzer mit einem Postfach in Microsoft 365 erhalten keine neuen E-Mails mehr in ihrem lokalen Postfach. 
+Nachdem Sie einen Batch Postfächer erfolgreich migriert haben, benötigen Sie eine Methode, damit die Benutzer auf ihre E-Mail zugreifen können. Ein Benutzer, dessen Postfach migriert wurde, verfügt jetzt sowohl über ein lokales als auch ein lokales Postfach Microsoft 365. Benutzer, die über ein Postfach in Microsoft 365 empfangen keine neuen E-Mails mehr in ihrem lokalen Postfach. 
   
-Da Sie mit Ihren Migrationen noch nicht fertig sind, können Sie noch nicht alle Benutzer für ihre E-Mails an Microsoft 365 weiterverschicken. Was also tun Sie für diese Personen, die beide haben? Sie können die lokalen Postfächer ändern, die Sie bereits zu E-Mail-aktivierte Benutzer migriert haben. Wenn Sie von einem Postfach zu einem E-Mail-aktivierten Benutzer wechseln, können Sie den Benutzer für seine E-Mail an Microsoft 365 anstatt zu ihrem lokalen Postfach zu wechseln. 
+Da Sie mit Ihren Migrationen noch nicht fertig sind, können Sie noch nicht alle Benutzer an Microsoft 365 E-Mail-Adresse weiterverschicken. Was also tun Sie für diese Personen, die beide haben? Sie können die lokalen Postfächer ändern, die Sie bereits zu E-Mail-aktivierte Benutzer migriert haben. Wenn Sie von einem Postfach zu einem E-Mail-aktivierten Benutzer wechseln, können Sie den Benutzer an Microsoft 365 E-Mail-Adresse anstatt zu ihrem lokalen Postfach zu wechseln. 
   
 Ein weiterer wichtiger Grund für die Konvertierung von lokalen Postfächern in E-Mail-aktivierte Benutzer ist das Beibehalten von Proxyadressen aus den Microsoft 365-Postfächern, indem Proxyadressen in die E-Mail-aktivierten Benutzer kopiert werden. So können Sie Cloud-basierte Benutzer mithilfe von Active Directory von der lokalen Organisation aus verwalten. Wenn Sie ihre lokale Exchange Server-Organisation außer Betrieb gesetzt haben, nachdem alle Postfächer zu Microsoft 365 migriert wurden, verbleiben die Proxyadressen, die Sie in die E-Mail-aktivierten Benutzer kopiert haben, in Ihrem lokalen Active Directory.
     
 ### <a name="step-6-delete-a-staged-migration-batch"></a>Schritt 6: Löschen eines Batches für die mehrstufige Migration
 <a name="BK_Endpoint"> </a>
 
- Nachdem alle Postfächer in einem Migrationsbatch erfolgreich migriert wurden und Sie die lokalen Postfächer im Batch in E-Mail-aktivierte Benutzer konvertiert haben, können Sie einen Batch der mehrstufigen Migration löschen. Stellen Sie sicher, dass E-Mails an die Microsoft 365-Postfächer im Migrationsbatch weitergeleitet werden. Wenn Sie einen Batch für die mehrstufige Migration löschen, bereinigt der Migrationsdienst alle zum Migrationsbatch gehörenden Datensätze und löscht den Migrationsbatch.
+ Nachdem alle Postfächer in einem Migrationsbatch erfolgreich migriert wurden und Sie die lokalen Postfächer im Batch in E-Mail-aktivierte Benutzer konvertiert haben, können Sie einen Batch der mehrstufigen Migration löschen. Stellen Sie sicher, dass E-Mails an die Microsoft 365 im Migrationsbatch weitergeleitet werden. Wenn Sie einen Batch für die mehrstufige Migration löschen, bereinigt der Migrationsdienst alle zum Migrationsbatch gehörenden Datensätze und löscht den Migrationsbatch.
   
 Führen Sie den folgenden Befehl aus, um den Migrationsbatch "StagedBatch1" in Exchange Online PowerShell zu löschen.
   
@@ -231,15 +231,15 @@ Der Befehl gibt entweder den Migrationsbatch mit dem Status **Removing** zurück
   
 Weitere Informationen zu den **Get-MigrationBatch** -Cmdlets finden Sie unter [Get-MigrationBatch](/powershell/module/exchange/get-migrationbatch).
   
-### <a name="step7-assign-licenses-to-microsoft-365-users"></a>Schritt7: Zuweisen von Lizenzen zu Microsoft 365-Benutzern
+### <a name="step7-assign-licenses-to-microsoft-365-users"></a>Schritt 7: Zuweisen von Lizenzen Microsoft 365 Benutzern
 <a name="BK_Endpoint"> </a>
 
-Aktivieren Sie Microsoft 365-Benutzerkonten für die migrierten Konten, indem Sie Lizenzen zuweisen. Wenn Sie keine Lizenz zuweisen, wird das Postfach deaktiviert, sobald die Karenzzeit (30 Tage) endet. Informationen zum Zuweisen einer Lizenz im Microsoft 365 Admin Center finden Sie unter [Assign or unassign licenses](../admin/manage/assign-licenses-to-users.md).
+Aktivieren Microsoft 365 benutzerkonten für die migrierten Konten durch Zuweisen von Lizenzen. Wenn Sie keine Lizenz zuweisen, wird das Postfach deaktiviert, sobald die Karenzzeit (30 Tage) endet. Informationen zum Zuweisen einer Lizenz im Microsoft 365 Admin Center finden Sie unter [Assign or unassign licenses](../admin/manage/assign-licenses-to-users.md).
   
 ### <a name="step-8-complete-post-migration-tasks"></a>Schritt 8: Aufgaben nach der Migration abschließen
 <a name="BK_Postmigration"> </a>
 
-- **Erstellen Sie einen AutoErmittlung-DNS-Eintrag, damit Benutzer problemlos auf ihre Postfächer zugreifen können.** Nachdem alle lokalen Postfächer zu Microsoft 365 migriert wurden, können Sie einen AutoErmittlungs-DNS-Eintrag für Ihre Microsoft 365-Organisation konfigurieren, damit Benutzer problemlos eine Verbindung mit ihren neuen Microsoft 365-Postfächern mit Outlook und mobilen Clients herstellen können. Dieser neue AutoErmittlungs-DNS-Eintrag muss denselben Namespace verwenden, den Sie für Ihre Microsoft 365-Organisation verwenden. Wenn der Namespace für die Cloud-basierte Organisation beispielsweise "cloud.contoso.com" lautet, müssen Sie den DNS-Datensatz "autodiscover.cloud.contoso.com" für die AutoErmittlung erstellen.
+- **Erstellen Sie einen AutoErmittlung-DNS-Eintrag, damit Benutzer problemlos auf ihre Postfächer zugreifen können.** Nachdem alle lokalen Postfächer zu Microsoft 365 migriert wurden, können Sie einen AutoErmittlungs-DNS-Eintrag für Ihre Microsoft 365-Organisation konfigurieren, damit Benutzer problemlos eine Verbindung mit ihren neuen Microsoft 365-Postfächern mit Outlook- und mobilen Clients herstellen können. Dieser neue AutoErmittlungs-DNS-Eintrag muss denselben Namespace verwenden, den Sie für Ihre organisation Microsoft 365 verwenden. Wenn der Namespace für die Cloud-basierte Organisation beispielsweise "cloud.contoso.com" lautet, müssen Sie den DNS-Datensatz "autodiscover.cloud.contoso.com" für die AutoErmittlung erstellen.
     
     Microsoft 365 verwendet einen CNAME-Eintrag, um den AutoErmittlungsdienst für Outlook und mobile Clients zu implementieren. Der CNAME-Eintrag für die AutoErmittlung muss folgende Informationen enthalten:
     
@@ -249,7 +249,7 @@ Aktivieren Sie Microsoft 365-Benutzerkonten für die migrierten Konten, indem Si
     
     Weitere Informationen finden Sie unter [Add DNS records to connect your domain](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
     
-- **Nehmen Sie lokale Exchange-Server außer Betrieb.** Nachdem Sie überprüft haben, dass alle E-Mails direkt an die Microsoft 365-Postfächer geroutet werden und Sie Ihre lokale E-Mail-Organisation nicht mehr verwalten müssen oder keine Implementierung einer SSO-Lösung planen, können Sie Exchange von Ihren Servern deinstallieren und Ihre lokale Exchange-Organisation entfernen.
+- **Nehmen Sie lokale Exchange-Server außer Betrieb.** Nachdem Sie überprüft haben, ob alle E-Mails direkt an die Microsoft 365-Postfächer geroutet werden und Sie ihre lokale E-Mail-Organisation nicht mehr verwalten müssen oder keine Implementierung einer SSO-Lösung planen, können Sie Exchange von Ihren Servern deinstallieren und Ihre lokale Exchange-Organisation entfernen.
     
     Weitere Informationen erhalten Sie unter den folgenden Themen:
     

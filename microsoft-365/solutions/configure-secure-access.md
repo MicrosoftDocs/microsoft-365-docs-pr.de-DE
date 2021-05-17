@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren des sicheren Zugriffs auf Microsoft 365-Dienste
+title: Konfigurieren des sicheren Zugriffs auf Microsoft 365 Dienste
 description: Hier finden Sie anleitungen für die Implementierung von MFA, bedingten Zugriff und zugehörigen Richtlinien für drei Schutzebenen – basisplanerisch, vertraulich, hochsensibel.
 ms.author: samanro
 author: samanro
@@ -19,6 +19,6 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51050886"
 ---
-# <a name="configure-secure-access-to-microsoft-365-services"></a>Konfigurieren des sicheren Zugriffs auf Microsoft 365-Dienste
+# <a name="configure-secure-access-to-microsoft-365-services"></a>Konfigurieren des sicheren Zugriffs auf Microsoft 365 Dienste
 
 Diese Lösung basiert auf der "[goldenen M365-Konfiguration](../security/defender-365-security/microsoft-365-policies-configurations.md)" – anleitungen für die Implementierung von MFA, bedingten Zugriff und zugehörigen Richtlinien für drei Schutzebenen: Basisplan, vertraulich, hochsensibel.

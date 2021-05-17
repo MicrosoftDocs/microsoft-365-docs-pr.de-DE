@@ -28,7 +28,7 @@ ms.locfileid: "50922487"
 
 Inhaltssuche und eDiscovery-bezogene Aktivitäten (für Core eDiscovery und Advanced eDiscovery), die im Security & Compliance Center oder durch Ausführen der entsprechenden PowerShell-Cmdlets ausgeführt werden, werden im Überwachungsprotokoll protokolliert. Ereignisse werden protokolliert, wenn Administratoren oder eDiscovery-Manager (oder benutzer zugewiesene eDiscovery-Berechtigungen) die folgenden Aufgaben für die Inhaltssuche und die eDiscovery-Kernaufgaben im Security & Compliance Center ausführen:
   
-- Erstellen und Verwalten von Core- und Advanced eDiscovery-Fällen
+- Erstellen und Verwalten von Core- und Advanced eDiscovery Fällen
 
 - Erstellen, Starten und Bearbeiten von Inhaltssuchen
 
@@ -41,7 +41,7 @@ Inhaltssuche und eDiscovery-bezogene Aktivitäten (für Core eDiscovery und Adva
 - Verwalten der eDiscovery-Administratorrolle
 
 > [!IMPORTANT]
-> Die in diesem Artikel beschriebenen Aktivitäten sind nur das Ergebnis von eDiscovery-Aufgaben, die mithilfe des Security & Compliance Center ausgeführt werden. eDiscovery-Aufgaben, die mithilfe des tools In-Place eDiscovery in Exchange Online oder im eDiscovery Center in SharePoint Online ausgeführt wurden, sind nicht enthalten. 
+> Die in diesem Artikel beschriebenen Aktivitäten sind nur das Ergebnis von eDiscovery-Aufgaben, die mithilfe des Security & Compliance Center ausgeführt werden. eDiscovery-Aufgaben, die mit dem tool In-Place eDiscovery in Exchange Online oder dem eDiscovery Center in SharePoint Online ausgeführt wurden, sind nicht enthalten. 
   
 Weitere Informationen zum Durchsuchen des Überwachungsprotokolls, zu den erforderlichen Berechtigungen und zum Exportieren von [Suchergebnissen](search-the-audit-log-in-security-and-compliance.md)finden Sie unter Durchsuchen des Überwachungsprotokolls im Security & Compliance Center .
   
@@ -55,7 +55,7 @@ Derzeit müssen Sie einige spezifische Schritte zum Anzeigen von eDiscovery-Akti
 
 3. Klicken Sie im linken Bereich auf **Suchen,** und klicken Sie dann auf **Überwachungsprotokollsuche**.
 
-4. Klicken Sie **in** der Dropdownliste Aktivitäten unter **eDiscovery-Aktivitäten** oder **Erweiterte eDiscovery-Aktivitäten** auf eine oder mehrere Aktivitäten, nach der gesucht werden soll.
+4. Klicken Sie **in** der Dropdownliste Aktivitäten unter **eDiscovery-Aktivitäten** **oder Advanced eDiscovery** auf eine oder mehrere Aktivitäten, nach der gesucht werden soll.
 
     > [!NOTE]
     > Die **Dropdownliste** Aktivitäten enthält auch eine Gruppe von Aktivitäten namens **eDiscovery-Cmdletaktivitäten,** die Datensätze aus dem Cmdlet-Überwachungsprotokoll zurückgeben.
@@ -72,7 +72,7 @@ Derzeit müssen Sie einige spezifische Schritte zum Anzeigen von eDiscovery-Akti
 
     Es **wird eine** Fly-Out-Seite details angezeigt, die die detaillierten Eigenschaften des Ereignisdatensatz enthält. Klicken Sie auf Weitere Informationen, um weitere **Details anzuzeigen.** Eine Beschreibung dieser Eigenschaften finden Sie im Abschnitt [Detaillierte Eigenschaften für eDiscovery-Aktivitäten.](#detailed-properties-for-ediscovery-activities)
 
-10. Bei Bedarf können Sie die Suchergebnisse des Überwachungsprotokolls in eine CSV-Datei exportieren und dann das Excel Power Query-Feature verwenden, um diese Datensätze zu formatieren und zu filtern. Weiter Informationen findn Sie unter[Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen](export-view-audit-log-records.md).
+10. Bei Bedarf können Sie die Suchergebnisse des Überwachungsprotokolls in eine CSV-Datei exportieren und dann das feature Excel Power Query verwenden, um diese Datensätze zu formatieren und zu filtern. Weitere Informationen finden Sie unter[Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen](export-view-audit-log-records.md).
 
 ## <a name="ediscovery-activities"></a>eDiscovery-Aktivitäten
 
@@ -106,13 +106,13 @@ In der folgenden Tabelle werden die Aktivitäten Content Search und Core eDiscov
 |Heruntergeladener Export der Inhaltssuche  <br/> |SearchExportDownloaded  <br/> |Nicht zutreffend  <br/> |Ein Benutzer hat die Ergebnisse einer Inhaltssuche auf seinen lokalen Computer heruntergeladen. Ein **gestarteter Export von Inhaltssuchaktivitäten** muss initiiert werden, bevor Suchergebnisse heruntergeladen werden können.  <br/> |
 |Vorschau der Ergebnisse der Inhaltssuche  <br/> |SearchPreviewed  <br/> |Nicht zutreffend  <br/> |Ein Benutzer hat eine Vorschau der Ergebnisse einer Inhaltssuche angezeigt.  <br/> |
 |Gelöschte Ergebnisse der Inhaltssuche  <br/> |SearchResultsPurged  <br/> |New-ComplianceSearchAction  <br/> |Ein Benutzer hat die Ergebnisse einer Inhaltssuche gelöscht, indem er den **Befehl New-ComplianceSearchAction -Purge** ausgeführt hat.  <br/> |
-|Analyse der Inhaltssuche entfernt  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Vorbereitungsaktion für die Inhaltssuche (zum Vorbereiten der Suchergebnisse für Advanced eDiscovery) wurde gelöscht. Wenn die Vorbereitungsaktion weniger als zwei Wochen alt war, wurden die Suchergebnisse, die für Advanced eDiscovery vorbereitet wurden, aus dem Microsoft Azure-Speicherbereich gelöscht. Wenn die Vorbereitungsaktion älter als 2 Wochen war, gibt dieses Ereignis an, dass nur die entsprechende Vorbereitungsaktion gelöscht wurde.  <br/> |
-|Export der Inhaltssuche entfernt  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Inhaltssuchexportaktion wurde gelöscht. Wenn die Exportaktion weniger als zwei Wochen alt war, wurden die Suchergebnisse gelöscht, die in den Microsoft Azure-Speicherbereich hochgeladen wurden. Wenn die Exportaktion älter als 2 Wochen war, gibt dieses Ereignis an, dass nur die entsprechende Exportaktion gelöscht wurde.  <br/> |
+|Analyse der Inhaltssuche entfernt  <br/> |RemovedSearchResultsSentToZoom  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Vorbereitungsaktion für die Inhaltssuche (zum Vorbereiten von Suchergebnissen für Advanced eDiscovery) wurde gelöscht. Wenn die Vorbereitungsaktion weniger als zwei Wochen alt war, wurden die Suchergebnisse, die für Advanced eDiscovery vorbereitet wurden, aus dem Microsoft Azure gelöscht. Wenn die Vorbereitungsaktion älter als 2 Wochen war, gibt dieses Ereignis an, dass nur die entsprechende Vorbereitungsaktion gelöscht wurde.  <br/> |
+|Export der Inhaltssuche entfernt  <br/> |RemovedSearchExported  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Inhaltssuchexportaktion wurde gelöscht. Wenn die Exportaktion weniger als zwei Wochen alt war, wurden die Suchergebnisse, die in den Microsoft Azure speicherbereich hochgeladen wurden, gelöscht. Wenn die Exportaktion älter als 2 Wochen war, gibt dieses Ereignis an, dass nur die entsprechende Exportaktion gelöscht wurde.  <br/> |
 |Member aus eDiscovery-Fall entfernt  <br/> |CaseMemberRemoved  <br/> |Remove-ComplianceCaseMember  <br/> |Ein Benutzer wurde als Mitglied eines eDiscovery-Falls entfernt.  <br/> |
 |Vorschauergebnisse der Inhaltssuche entfernt  <br/> |RemovedSearchPreviewed  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Vorschauaktion für die Inhaltssuche wurde gelöscht.  <br/> |
 |Entfernte Bereinigungsaktion, die bei der Inhaltssuche ausgeführt wurde  <br/> |RemovedSearchResultsPurged  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Inhaltssuche wurde gelöscht.  <br/> |
 |Suchbericht entfernt  <br/> |SearchReportRemoved  <br/> |Remove-ComplianceSearchAction  <br/> |Eine Aktion für den Inhaltssuchenexportbericht wurde gelöscht.  <br/> |
-|Analyse der Inhaltssuche gestartet  <br/> |SearchResultsSentToZoom  <br/> |New-ComplianceSearchAction  <br/> |Die Ergebnisse einer Inhaltssuche wurden für die Analyse in Advanced eDiscovery vorbereitet.  <br/> |
+|Analyse der Inhaltssuche gestartet  <br/> |SearchResultsSentToZoom  <br/> |New-ComplianceSearchAction  <br/> |Die Ergebnisse einer Inhaltssuche wurden für die Analyse in Advanced eDiscovery.  <br/> |
 |Gestartete Inhaltssuche  <br/> |SearchStarted  <br/> |Start-ComplianceSearch  <br/> |Eine Inhaltssuche wurde gestartet. Wenn Sie eine Inhaltssuche mithilfe der GUI "Security & Compliance Center" erstellen oder ändern, wird die Suche automatisch gestartet. Wenn Sie eine Suche mithilfe des **Cmdlets New-ComplianceSearch** oder **Set-ComplianceSearch** erstellen oder ändern, müssen Sie das **Cmdlet Start-ComplianceSearch** ausführen, um die Suche zu starten.  <br/> |
 |Export von Inhaltssuche gestartet  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |Ein Benutzer hat die Ergebnisse einer Inhaltssuche exportiert.  <br/> |
 |Exportbericht gestartet  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |Ein Benutzer hat einen Bericht zur Inhaltssuche exportiert.  <br/> |
@@ -125,7 +125,7 @@ In der folgenden Tabelle werden die Aktivitäten Content Search und Core eDiscov
   
 ## <a name="advanced-ediscovery-activities"></a>Advanced eDiscovery-Aktivitäten
 
-In der folgenden Tabelle werden die im Überwachungsprotokoll protokollierten Advanced eDiscovery-Aktivitäten beschrieben. Diese Aktivitäten (zusätzlich zu relevanten eDiscovery-Aktivitäten können verwendet werden, um den Verlauf der Aktivitäten in einem Advanced eDiscovery-Fall nachverfolgt zu werden.
+In der folgenden Tabelle werden die Advanced eDiscovery im Überwachungsprotokoll protokollierten Aktivitäten beschrieben. Diese Aktivitäten (zusätzlich zu relevanten eDiscovery-Aktivitäten können verwendet werden, um das Fortschreiten der Aktivität in einem fall Advanced eDiscovery verfolgen.
 
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -182,7 +182,7 @@ Wie bereits erwähnt, dauert es bis zu 24 Stunden, bis eDiscovery-Cmdletaktivit�
 |Geänderte Inhaltssuche  <br/> |[Set-ComplianceSearch](/powershell/module/exchange/set-compliancesearch) <br/> |Eine vorhandene Inhaltssuche wurde geändert. Zu den Änderungen kann das Hinzufügen oder Entfernen von Inhaltsstandorten gehören, die durchsucht und die Suchabfrage bearbeitet werden.  <br/> |
 |Gestartete Inhaltssuche  <br/> |[Start-ComplianceSearch](/powershell/module/exchange/start-compliancesearch) <br/> |Eine Inhaltssuche wurde gestartet. Wenn Sie eine Inhaltssuche mithilfe der GUI "Security & Compliance Center" erstellen oder ändern, wird die Suche automatisch gestartet. Wenn Sie eine Suche mithilfe des **Cmdlets New-ComplianceSearch** oder **Set-ComplianceSearch** erstellen oder ändern, müssen Sie das **Cmdlet Start-ComplianceSearch** ausführen, um die Suche zu starten.  <br/> |
 |Beendete Inhaltssuche  <br/> |[Stop-ComplianceSearch](/powershell/module/exchange/stop-compliancesearch) <br/> |Eine ausgeführte Inhaltssuche wurde beendet.  <br/> |
-|Aktion zur Inhaltssuche erstellt  <br/> |[New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) <br/> |Es wurde eine Inhaltssuchaktion erstellt. Inhaltssuchaktionen umfassen das Anzeigen einer Vorschau von Suchergebnissen, das Exportieren von Suchergebnissen, das Vorbereiten von Suchergebnissen für die Analyse in Advanced eDiscovery und das dauerhafte Löschen von Elementen, die den Suchkriterien einer Inhaltssuche entsprechen.  <br/> |
+|Aktion zur Inhaltssuche erstellt  <br/> |[New-ComplianceSearchAction](/powershell/module/exchange/new-compliancesearchaction) <br/> |Es wurde eine Inhaltssuchaktion erstellt. Inhaltssuchaktionen umfassen die Vorschau von Suchergebnissen, das Exportieren von Suchergebnissen, das Vorbereiten von Suchergebnissen für die Analyse in Advanced eDiscovery und das dauerhafte Löschen von Elementen, die den Suchkriterien einer Inhaltssuche entsprechen.  <br/> |
 |Aktion für die Suche nach gelöschten Inhalten  <br/> |[Remove-ComplianceSearchAction](/powershell/module/exchange/remove-compliancesearchaction) <br/> |Eine Inhaltssuchaktion wurde gelöscht.  <br/> |
 |Filter für Suchberechtigungen erstellt  <br/> |[New-ComplianceSecurityFilter](/powershell/module/exchange/new-compliancesecurityfilter) <br/> |Ein Filter für Suchberechtigungen wurde erstellt.  <br/> |
 |Filter für gelöschte Suchberechtigungen  <br/> |[Remove-ComplianceSecurityFilter](/powershell/module/exchange/remove-compliancesecurityfilter) <br/> |Ein Filter für Suchberechtigungen wurde gelöscht.  <br/> |

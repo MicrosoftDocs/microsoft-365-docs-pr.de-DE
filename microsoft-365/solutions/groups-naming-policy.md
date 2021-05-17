@@ -1,5 +1,5 @@
 ---
-title: Benennungsrichtlinie für Microsoft 365-Gruppen
+title: Microsoft 365 gruppenbenennungsrichtlinie
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -16,7 +16,7 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 6ceca4d3-cad1-4532-9f0f-d469dfbbb552
-description: Erfahren Sie, wie Sie eine Benennungsrichtlinie für Microsoft 365-Gruppen erstellen.
+description: Erfahren Sie, wie Sie eine Benennungsrichtlinie für Microsoft 365 erstellen.
 ms.openlocfilehash: 7fd2ea36b536924d85c7ca09b55593161a24dbe4
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -24,14 +24,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50921048"
 ---
-# <a name="microsoft-365-groups-naming-policy"></a>Benennungsrichtlinie für Microsoft 365-Gruppen
+# <a name="microsoft-365-groups-naming-policy"></a>Microsoft 365 gruppenbenennungsrichtlinie
 
 Sie können eine Gruppenbenennungsrichtlinie verwenden, um eine konsistente Benennungsstrategie für Gruppen zu erzwingen, die von Benutzern in Ihrer Organisation erstellt wurden. Eine Benennungsrichtlinie kann Ihnen und Ihren Benutzern bei der Identifizierung der Funktion der Gruppe, der Mitgliedschaft, der geografischen Region oder der Person helfen, die die Gruppe erstellt hat. Die Benennungsrichtlinie kann auch hilfreich beim Kategorisieren von Gruppen im Adressbuch sein. Mithilfe der Richtlinie können Sie bestimmte Wörter in Gruppennamen und -aliasen blockieren.
 
 Die Benennungsrichtlinie wird auf Gruppen angewendet, die für alle Gruppenworkloads erstellt werden (z. B. Outlook, Microsoft Teams, SharePoint, Planner, Yammer usw.). Sie wird sowohl auf den Gruppennamen als auch auf den Gruppenalias angewendet. Sie wird auch angewendet, wenn ein Benutzer eine Gruppe erstellt und wenn der Gruppenname, alias, eine Beschreibung oder ein Avatar für eine vorhandene Gruppe bearbeitet wird.
 
 > [!TIP]
-> Eine Microsoft 365-Gruppenbenennungsrichtlinie gilt nur für Microsoft 365-Gruppen. Sie gilt nicht für in Exchange Online erstellte Verteilergruppen. Informationen zum Erstellen einer Benennungsrichtlinie für Verteilergruppen finden Sie unter [Erstellen einer Namensrichtlinie für Verteilergruppen](/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
+> Eine Microsoft 365 gruppenbenennungsrichtlinie gilt nur für Microsoft 365 Gruppen. Sie gilt nicht für in Exchange Online erstellte Verteilergruppen. Informationen zum Erstellen einer Benennungsrichtlinie für Verteilergruppen finden Sie unter [Erstellen einer Namensrichtlinie für Verteilergruppen](/exchange/recipients-in-exchange-online/manage-distribution-groups/create-group-naming-policy).
 
 Die Gruppenbenennungsrichtlinie besteht aus den folgenden Features:
 
@@ -41,7 +41,7 @@ Die Gruppenbenennungsrichtlinie besteht aus den folgenden Features:
 
 ## <a name="licensing-requirements"></a>Lizenzierungsanforderungen
 
-Die Verwendung der Azure AD-Benennungsrichtlinie für Microsoft 365-Gruppen erfordert, dass Sie über eine Azure Active Directory Premium P1-Lizenz oder Azure AD Basic EDU-Lizenz für jeden eindeutigen Benutzer (einschließlich Gäste) verfügen, der Mitglied einer oder mehreren Microsoft 365-Gruppen ist.
+Die Verwendung der Azure AD-Benennungsrichtlinie für Microsoft 365-Gruppen erfordert, dass Sie eine Azure Active Directory Premium P1-Lizenz oder Azure AD Basic EDU-Lizenz für jeden eindeutigen Benutzer (einschließlich Gäste) besitzen, der Mitglied einer oder mehreren Microsoft 365-Gruppen ist.
 
 Dies ist auch für den Administrator erforderlich, der die Gruppenbenennungsrichtlinie erstellt.
 
@@ -63,7 +63,7 @@ Beispiele:
 - Abteilung des Benutzers = Entwicklung
 - Erstellter Gruppenname = "GRP Meine Gruppe Entwicklung"
 
-Unterstützte Azure Active Directory-Attribute (Azure AD) sind [Department], [Company], [Office], [StateOrProvince], [CountryOrRegion] und [Title].
+Unterstützte Azure Active Directory (Azure AD)-Attribute sind [Department], [Company], [Office], [StateOrProvince], [CountryOrRegion] und [Title].
 
 - Nicht unterstützte Benutzerattribute werden als feste Zeichenfolgen betrachtet, z. B. [postalCode].
 
@@ -80,7 +80,7 @@ Es empfiehlt sich, Attribute mit ausgefüllten Werten für alle Benutzer in Ihre
   > [!NOTE]
   > Ein Zeitraum (.) oder ein Bindestrich (-) ist an einer beliebigen Stelle im Gruppennamen zulässig, außer am Anfang oder Ende des Namens. Ein Unterstrich (_) ist an einer beliebigen Stelle im Gruppennamen zulässig, auch am Anfang oder Ende des Namens.
 
-- Wenn Sie Yammer office 365-verbundenen Gruppen verwenden, vermeiden Sie die verwendung der folgenden Zeichen in Ihrer Benennungsrichtlinie: @, \# , \[ , , \] \<, and \> . Wenn die Benennungsrichtlinie eines dieser Zeichen enthält, können normale Yammer-Benutzer keine Gruppen erstellen.
+- Wenn Sie Yammer Office 365 verbundenen Gruppen verwenden, vermeiden Sie die verwendung der folgenden Zeichen in Ihrer Benennungsrichtlinie: @, \# , \[ , , \] \<, and \> . Wenn die Benennungsrichtlinie eines dieser Zeichen enthält, können normale Yammer-Benutzer keine Gruppen erstellen.
 
 > [!Tip]
 > - Verwenden Sie kurze Zeichenfolgen als Namenszusatz.

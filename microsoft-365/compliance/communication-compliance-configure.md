@@ -246,7 +246,7 @@ Sie können auch die Anonymisierung für angezeigte Benutzernamen aktivieren, we
 
 4. Wählen Sie anonymisierte Versionen **von Benutzernamen anzeigen aus, um die Anonymisierung zu aktivieren.**
 
-5. Wählen Sie **Speichern** aus.
+5. Klicken Sie auf **Speichern**.
 
 6. Navigieren Sie zur **Registerkarte Benachrichtigungsvorlagen,** und wählen Sie **dann Benachrichtigungsvorlage erstellen aus.**
 

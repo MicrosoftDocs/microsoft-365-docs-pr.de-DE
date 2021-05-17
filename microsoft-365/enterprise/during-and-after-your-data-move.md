@@ -30,7 +30,7 @@ Datenverschiebungen sind eine Back-End-Operation mit minimalen Auswirkungen auf 
 > [!NOTE]
 > Die Verschiebungen werden zu unterschiedlichen Zeiten für jeden Dienst ausgeführt. Dadurch sehen Sie die beschriebene eingeschränkte Funktionalität für jeden Dienst zu unterschiedlichen Zeiten. 
   
-Sehen Sie sich das Microsoft 365 Message Center an, um zu bestätigen, wann die Umzüge für jeden Exchange Online-, SharePoint Online- und Teams-Chatdienst abgeschlossen sind. Wie in der folgenden Tabelle dargestellt, kann es bis zu 24 Monate nach dem Ende des Registrierungszeitraums dauern, bis die wichtigsten Ruhedaten des Kunden in das neue Rechenzentrums-Geo umge-   
+Sehen Sie sich Microsoft 365 Message Center an, um zu bestätigen, wann die Exchange Online, SharePoint Online und Teams Chatdienst abgeschlossen sind. Wie in der folgenden Tabelle dargestellt, kann es bis zu 24 Monate nach dem Ende des Registrierungszeitraums dauern, bis die wichtigsten Ruhedaten des Kunden in das neue Rechenzentrums-Geo umge-   
 
 |**Kunden mit Anmeldeland in**|**Alle Verschiebungen abgeschlossen bis**|
 |:-----|:-----|
@@ -105,7 +105,7 @@ Die folgenden Suchfunktionen sind betroffen:
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Neben Exchange Online, SharePoint Online und OneDrive for Business migriert Microsoft #A0 in das lokale Datencenter.
+Neben Exchange Online, SharePoint Online und OneDrive for Business migriert Microsoft Teams Chatdienstdaten in das lokale Datencenter.
 
 - Teams-Chatnachrichten, einschließlich privater Nachrichten und Kanalmeldungen.
 - Bilder, die in Teams-Chats verwendet wurden.
@@ -114,7 +114,7 @@ Teams-Dateien werden in SharePoint Online gespeichert, und Teams-Chatdateien wer
 
 ## <a name="skype-for-business"></a>Skype for Business
 
-Skype for Business-Umzüge sind nicht mehr verfügbar.  [Skype for Business Online wird am](/lifecycle/announcements/skype-for-business-online-retirement) 31. Juli 2021 eingestellt. Nach dieser Zeit ist der Zugriff auf den Dienst nicht mehr möglich. 
+Skype for Business sind nicht mehr verfügbar.  [Skype for Business Online wird am](/lifecycle/announcements/skype-for-business-online-retirement) 31. Juli 2021 eingestellt. Nach dieser Zeit ist der Zugriff auf den Dienst nicht mehr möglich. 
   
 ## <a name="related-topics"></a>Verwandte Themen 
  

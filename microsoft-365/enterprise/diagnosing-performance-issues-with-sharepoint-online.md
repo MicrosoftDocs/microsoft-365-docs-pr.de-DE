@@ -30,15 +30,15 @@ ms.locfileid: "50927612"
 
 In diesem Artikel erfahren Sie, wie Sie häufige Probleme mit Ihrer SharePoint Online-Website mithilfe von Internet Explorer-Entwicklertools diagnostizieren können.
   
-Es gibt drei verschiedene Möglichkeiten, um zu identifizieren, dass eine Seite auf einer SharePoint Online-Website ein Leistungsproblem mit den Anpassungen hat.
+Es gibt drei verschiedene Möglichkeiten, um zu erkennen, dass eine Seite auf einer SharePoint Onlinewebsite ein Leistungsproblem mit den Anpassungen hat.
   
 - Der Netzwerkmonitor der F12-Toolleiste
 
 - Vergleich mit einem nicht angepassten Basisplan
 
-- SharePoint Online-Antwortheadermetriken
+- SharePoint Metriken für Onlineantwortheader
 
-In diesem Thema wird beschrieben, wie Sie mit jeder dieser Methoden Leistungsprobleme diagnostizieren. Nachdem Sie die Ursache des Problems gefunden haben, können Sie mithilfe der Artikel zur Verbesserung der SharePoint-Leistung, die Sie finden, an einer Lösung https://aka.ms/tune arbeiten.
+In diesem Thema wird beschrieben, wie Sie mit jeder dieser Methoden Leistungsprobleme diagnostizieren. Nachdem Sie die Ursache des Problems gefunden haben, können Sie mithilfe der Artikel zur Verbesserung der SharePoint, die Sie finden, an einer Lösung https://aka.ms/tune arbeiten.
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>Verwenden der F12-Toolleiste zum Diagnostizieren der Leistung in SharePoint Online
 <a name="F12ToolInfo"> </a>
@@ -59,21 +59,21 @@ Drücken Sie **auf der** Registerkarte Netzwerk die grüne Wiedergabeschaltfläc
   
 Sie können auch die Downloadzeiten der Dateien auf der rechten Seite sehen, wie in diesem Screenshot gezeigt.
   
-![Diagramm zum Laden der angeforderten Seiten aus SharePoint](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
+![Diagramm, das zeigt, wie lange das Laden der angeforderten Seiten aus dem SharePoint](../media/d71ad1fa-9018-4fae-82eb-c1838e7db0ff.png)
   
 Dadurch erhalten Sie eine visuelle Darstellung der Ladezeit der Datei. Die grüne Linie gibt an, wann die Seite vom Browser gerendert werden kann. Dadurch erhalten Sie eine schnelle Ansicht der verschiedenen Dateien, die möglicherweise zu langsamen Seitenlasten auf Ihrer Website führen.
   
 ## <a name="setting-up-a-non-customized-baseline-for-sharepoint-online"></a>Einrichten eines nicht angepassten Basisplans für SharePoint Online
 <a name="F12ToolInfo"> </a>
 
-Die beste Möglichkeit, die Leistungsschwächen Ihrer Website zu ermitteln, besteht in der Einrichtung einer vollständig out-of-the-box-Websitesammlung in SharePoint Online. Auf diese Weise können Sie alle verschiedenen Aspekte Ihrer Website mit dem vergleichen, was Sie ohne Anpassung auf der Seite erhalten würden. Die OneDrive for #A0 ist ein gutes Beispiel für eine separate Websitesammlung, die wahrscheinlich keine Anpassungen hat.
+Die beste Möglichkeit, die Leistungsschwächen Ihrer Website zu ermitteln, besteht in der Einrichtung einer vollständig out-of-the-box-Websitesammlung in SharePoint Online. Auf diese Weise können Sie alle verschiedenen Aspekte Ihrer Website mit dem vergleichen, was Sie ohne Anpassung auf der Seite erhalten würden. Die OneDrive for Business ist ein gutes Beispiel für eine separate Websitesammlung, die wahrscheinlich keine Anpassungen hat.
   
-## <a name="viewing-sharepoint-response-header-information"></a>Anzeigen von SharePoint-Antwortheaderinformationen
+## <a name="viewing-sharepoint-response-header-information"></a>Anzeigen SharePoint Antwortkopfinformationen
 <a name="F12ToolInfo"> </a>
 
 In SharePoint Online können Sie auf die Informationen zugreifen, die im Antwortheader für jede Datei an den Browser gesendet werden. Der nützlichste Wert zum Diagnostizieren von Leistungsproblemen ist **SPRequestDuration**, der den Zeitraum anzeigt, den die Anforderung auf dem Server für die Verarbeitung in Sich nahm. Dadurch kann ermittelt werden, ob die Anforderung sehr schwer und ressourcenintensiv ist. Dies ist der beste Einblick, wie viel Arbeit der Server zum Bedienen der Seite macht.
 
-### <a name="to-view-sharepoint-response-header-information"></a>So zeigen Sie Informationen zum SharePoint-Antwortheader an
+### <a name="to-view-sharepoint-response-header-information"></a>So zeigen Sie SharePoint Antwortkopfinformationen an
   
 1. Stellen Sie sicher, dass die F12-Tools installiert sind. Weitere Informationen zum Herunterladen und Installieren dieser Tools finden Sie unter [What's new in F12 tools](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182632(v=vs.85)).
 
@@ -90,7 +90,7 @@ In SharePoint Online können Sie auf die Informationen zugreifen, die im Antwort
 ## <a name="whats-causing-performance-issues-in-sharepoint-online"></a>Was verursacht Leistungsprobleme in SharePoint Online?
 <a name="F12ToolInfo"> </a>
 
-Der Artikel [Navigationsoptionen für SharePoint Online](navigation-options-for-sharepoint-online.md) zeigt ein Beispiel für die Verwendung des SPRequestDuration-Werts, um zu ermitteln, dass die komplizierte strukturell navigationsleiste dazu führt, dass die Seite lange auf dem Server verarbeiten musste. Wenn Sie einen Wert für eine Basiswebsite (ohne Anpassung) verwenden, können Sie ermitteln, ob das Laden einer bestimmten Datei sehr viel Zeit in Sich nimmt. Das in [Navigationsoptionen für SharePoint Online](navigation-options-for-sharepoint-online.md) verwendete Beispiel ist die haupt-ASPX-Datei. Diese Datei enthält den großteil ASP.NET Code, der für das Laden der Seite ausgeführt wird. Je nach verwendeter Websitevorlage kann dies start.aspx, home.aspx, default.aspx oder ein anderer Name sein, wenn Sie die Startseite anpassen. Wenn diese Anzahl deutlich höher als Ihre Basiswebsite ist, ist dies ein guter Hinweis darauf, dass auf Ihrer Seite etwas komplexes vor sich geht, das Leistungsprobleme verursacht.
+Der Artikel [Navigationsoptionen für SharePoint Online](navigation-options-for-sharepoint-online.md) zeigt ein Beispiel für die Verwendung des SPRequestDuration-Werts, um zu ermitteln, dass die komplizierte Strukturnavigation dazu führt, dass die Seite lange auf dem Server verarbeiten musste. Wenn Sie einen Wert für eine Basiswebsite (ohne Anpassung) verwenden, können Sie ermitteln, ob das Laden einer bestimmten Datei sehr viel Zeit in Sich nimmt. Das in [Navigationsoptionen für SharePoint Online](navigation-options-for-sharepoint-online.md) verwendete Beispiel ist die haupt-ASPX-Datei. Diese Datei enthält den großteil ASP.NET Code, der für das Laden der Seite ausgeführt wird. Je nach verwendeter Websitevorlage kann dies start.aspx, home.aspx, default.aspx oder ein anderer Name sein, wenn Sie die Startseite anpassen. Wenn diese Anzahl deutlich höher als Ihre Basiswebsite ist, ist dies ein guter Hinweis darauf, dass auf Ihrer Seite etwas komplexes vor sich geht, das Leistungsprobleme verursacht.
   
 Nachdem Sie festgestellt haben, dass es sich um ein spezifisches Problem für Ihre Website handelt, empfiehlt es sich, herauszufinden, was zu einer leistungsärmeren Leistung führt, indem Sie alle möglichen Ursachen beseitigen, z. B. Seitenanpassungen, und diese dann der Website nach und nach hinzufügen. Nachdem Sie genügend Anpassungen entfernt haben, dass die Seite gut funktioniert, können Sie bestimmte Anpassungen nach und nach hinzufügen.
   

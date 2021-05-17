@@ -26,7 +26,7 @@ ms.locfileid: "50928424"
 ---
 # <a name="monitor-and-respond-to-data-privacy-incidents-in-your-organization"></a>Überwachen und Reagieren auf Datenschutzvorfälle in Ihrer Organisation
 
-Microsoft 365-Features stehen Ihnen bei der Überwachung, Untersuchung und Reaktion auf Datenschutzvorfälle in Ihrer Organisation bei der Operationalisierung verwandter Funktionen zur Verfügung. Prozesse, Verfahren und andere Dokumentationen für jede dieser Verfahren können auch wichtig sein, um die Einhaltung von Vorschriften zu demonstrieren.
+Microsoft 365 stehen Ihnen bei der Überwachung, Untersuchung und Reaktion auf Datenschutzvorfälle in Ihrer Organisation bei der Operationalisierung verwandter Funktionen zur Verfügung. Prozesse, Verfahren und andere Dokumentationen für jede dieser Verfahren können auch wichtig sein, um die Einhaltung von Vorschriften zu demonstrieren.
 
 Zu diesen zählen: 
 
@@ -56,7 +56,7 @@ Die Datenschutzbestimmungen fordern im Allgemeinen Folgendes zur Überwachung un
 
 Ihre Organisation möchte möglicherweise auch Überwachungs- und Reaktionsaktivitäten für andere Zwecke durchführen, z. B. für andere Complianceanforderungen oder aus geschäftlichen Gründen. Die Einrichtung Ihres Überwachungs- und Reaktionsschemas für den Datenschutz sollte im Rahmen der allgemeinen Überwachungs- und Reaktionsplanung, -implementierung und -verwaltung durchgeführt werden.
 
-Damit Sie mit einem Überwachungs- und Reaktionsschema in Microsoft 365 für Datenschutzbestimmungen beginnen können, werden in diesem Artikel nützliche Funktionen in Microsoft 365 zur Beantwortung von Fragen wie: 
+Um Ihnen zu helfen, mit einem Überwachungs- und Reaktionsschema in Microsoft 365 datenschutzbestimmungen zu beginnen, werden in diesem Artikel nützliche Funktionen in Microsoft 365 aufgeführt, um Fragen zu beantworten, z. B.: 
 
 - Welche Art von Täglichen Überwachungs-, Untersuchungs- und Berichtstechniken stehen für die verschiedenen Datentypen und Quellen zur Verfügung?
 - Welche Mechanismen sind erforderlich, um Anträge von Datensubjekten (Data Subject Requests, DSRs) und Abhilfemaßnahmen wie Anonymisierung, Redaction und Löschung zu behandeln?
@@ -72,7 +72,7 @@ In diesen Artikeln finden Sie Informationen zum Einrichten von Überwachungs-, E
 
 ## <a name="data-subject-requests-for-the-gdpr-and-ccpa"></a>Anträge von Datensubjekten für die DSGVO und das CCPA
 
-Informationen zum Reagieren auf einen Antrag auf Antrag von Personen in Microsoft 365 finden Sie unter Anfragen von Personen nach der DSGVO und [ccpa.](/compliance/regulatory/gdpr-dsr-Office365)
+Informationen zum Reagieren auf eine Antragserfordererlichkeit finden Sie unter Anträge von Datensubjekten für die DSGVO und das [CCPA](/compliance/regulatory/gdpr-dsr-Office365) in Microsoft 365.
 
 ## <a name="manage-deleted-users-in-microsoft-stream"></a>Verwalten gelöschter Benutzer in Microsoft Stream
 
@@ -80,4 +80,4 @@ Wenn ein Benutzer in Microsoft Stream aus Azure Active Directory (Azure AD) gel�
 
 ## <a name="insider-risk-management-as-an-investigative-tool"></a>Insider-Risikomanagement als Untersuchungstool
 
-[Das Insider-Risikomanagement in Microsoft 365](../compliance/insider-risk-management.md) ist ein Feature des Microsoft Compliance Admin Centers, mit dem Sie interne Risiken minimieren können, indem Sie riskante Aktivitäten in Ihrer Organisation erkennen, untersuchen und Maßnahmen ergreifen können.
+[Insider risk management in Microsoft 365](../compliance/insider-risk-management.md) ist ein Feature des Microsoft Compliance Admin Centers, mit dem Sie interne Risiken minimieren können, indem Sie riskante Aktivitäten in Ihrer Organisation erkennen, untersuchen und Maßnahmen ergreifen können.

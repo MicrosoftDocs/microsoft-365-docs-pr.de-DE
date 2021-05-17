@@ -46,7 +46,7 @@ Microsoft 365 ist die Möglichkeit, Ihr Unternehmen mit ständig verbesserten Ge
  
 |Ressource|Beschreibung|
 |---|---|
-|[Microsoft Office 365](https://www.microsoft.com/microsoft-365)|Hier finden Sie Informationen zu den Versionen von Microsoft 365.|
+|[Microsoft 365](https://www.microsoft.com/microsoft-365)|Hier finden Sie Informationen zu den Versionen von Microsoft 365.|
 |[Microsoft 365 for Business-Dokumentation](../business/index.yml)|Erhalten Sie detaillierte Informationen zur Version von Microsoft 365 für kleine und mittelständische Unternehmen.|
 |[Dokumentation zu Microsoft 365 for Education](/microsoft-365/education/)|Hier finden Sie detaillierte Informationen zur Version von Microsoft 365 für Bildungseinrichtungen.|
 |[Microsoft 365 for Enterprise-Dokumentation](./index.yml)|Hier finden Sie detaillierte Informationen zur Version von Microsoft 365 für Unternehmen.|

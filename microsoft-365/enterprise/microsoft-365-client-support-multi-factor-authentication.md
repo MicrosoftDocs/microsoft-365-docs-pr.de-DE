@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 Client App Support: Mehrstufige Authentifizierung'
+title: 'Microsoft 365 Client-App-Unterstützung: Mehrstufige Authentifizierung'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: In diesem Artikel erfahren Sie, welche Plattformen, Clients und PowerShell-Module die mehrstufige Authentifizierung für Microsoft 365 unterstützen.
+description: In diesem Artikel erfahren Sie, welche Plattformen, Clients und PowerShell-Module die mehrstufige Authentifizierung für Microsoft 365.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 80ee370526d17d472cd048cd4d89b862e158b631
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50927561"
 ---
-# <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365 Client App Support: Mehrstufige Authentifizierung
+# <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Microsoft 365 Client-App-Unterstützung: Mehrstufige Authentifizierung
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 

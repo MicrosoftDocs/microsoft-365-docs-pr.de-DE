@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
-description: Verwenden Sie das Microsoft 365 Admin Center oder Windows PowerShell, um Bookings-Kalender zu löschen.
+description: Verwenden Sie Microsoft 365 Admin Center oder Windows PowerShell, um Bookings-Kalender zu löschen.
 ms.openlocfilehash: 21fc7b9994ffd7f76ed04000a50bd0ee8f7f167e
 ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: MT
@@ -18,10 +18,10 @@ ms.locfileid: "51034091"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Löschen eines Buchungskalenders in Bookings
 
-In diesem Artikel wird erläutert, wie Sie einen unerwünschten Buchungskalender löschen können. Sie können den Buchungskalender im Microsoft 365 Admin Center löschen oder PowerShell verwenden. Der Bookings-Kalender ist ein Postfach in Exchange Online, sodass Sie das entsprechende Benutzerkonto löschen, um den Buchungskalender zu löschen.
+In diesem Artikel wird erläutert, wie Sie einen unerwünschten Buchungskalender löschen können. Sie können den Buchungskalender im Microsoft 365 oder PowerShell löschen. Der Bookings-Kalender ist ein Postfach in Exchange Online löschen Sie daher das entsprechende Benutzerkonto, um den Buchungskalender zu löschen.
 
 > [!IMPORTANT]
-> Alle Buchungskalender, die Sie 2017 oder früher erstellt haben, müssen mithilfe der PowerShell-Anweisungen zu diesem Thema gelöscht werden. Alle Buchungskalender, die 2018 oder danach erstellt wurden, können im Microsoft 365 Admin Center gelöscht werden.
+> Alle Buchungskalender, die Sie 2017 oder früher erstellt haben, müssen mithilfe der PowerShell-Anweisungen zu diesem Thema gelöscht werden. Alle Buchungskalender, die 2018 oder danach erstellt wurden, können im Microsoft 365 gelöscht werden.
 
 Im Buchungskalender werden alle relevanten Informationen zu diesem Buchungskalender und zu den Daten gespeichert, einschließlich:
 
@@ -42,11 +42,11 @@ Im Buchungskalender werden alle relevanten Informationen zu diesem Buchungskalen
 
 1. Wählen Sie auf der Seite **Aktive Benutzer** die Namen der Benutzer aus, die Sie löschen möchten, und wählen Sie dann **Benutzer löschen** aus.
 
-   ![Abbildung der Benutzerbenutzeroberfläche löschen im Microsoft 365 Admin Center](../media/bookings-delete-user.png)
+   ![Abbildung der Benutzerbenutzeroberfläche löschen in Microsoft 365 Admin Center](../media/bookings-delete-user.png)
 
-## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Löschen eines Buchungskalenders mithilfe von Exchange Online PowerShell
+## <a name="delete-a-booking-calendar-using-exchange-online-powershell"></a>Löschen eines Buchungskalenders mithilfe Exchange Online PowerShell
 
-Voraussetzungen und Anleitungen zum Herstellen einer Verbindung mit Exchange Online PowerShell finden Sie unter [Connect to Exchange Online PowerShell.](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps)
+Unter [Verbinden, Exchange Online PowerShell](/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps) zu finden, finden Sie Informationen zu Voraussetzungen und Anleitungen für die Verbindung mit Exchange Online PowerShell.
 
 Zum Ausführen dieser Schritte müssen Sie ein aktives Microsoft PowerShell-Befehlsfenster verwenden, das Sie ausgeführt haben, indem Sie die Option "Als Administrator ausführen" auswählen.
 
@@ -67,7 +67,7 @@ Zum Ausführen dieser Schritte müssen Sie ein aktives Microsoft PowerShell-Befe
 
    - _\<UPN\>_ ist Ihr Konto im Benutzerprinzipalnamen-Format (z. B. `john@contoso.com`).
 
-3. Wenn Sie dazu aufgefordert werden, melden Sie sich mit den Anmeldeinformationen des Mandantenadministrators beim Microsoft 365-Mandanten an, der den Buchungskalender hostet, den Sie dauerhaft löschen möchten.
+3. Wenn Sie dazu aufgefordert werden, melden Sie sich mit den Anmeldeinformationen des Mandantenadministrators beim Microsoft 365 an, der den Buchungskalender hostet, den Sie dauerhaft löschen möchten.
 
 4. Sobald dieser Befehl verarbeitet wurde, geben Sie den folgenden Befehl ein, um eine Liste der Buchungspostfächer in Ihrem Mandanten abzurufen:
 

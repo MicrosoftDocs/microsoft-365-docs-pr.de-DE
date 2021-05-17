@@ -17,7 +17,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: e2a789f2-9962-4960-9fd4-a00aa063559e
-description: 'Für Administratoren: Erfahren Sie, wie Sie die automatisch erweiternde Archivierung aktivieren, die Ihren Benutzern unbegrenzten Speicherplatz für ihre Exchange Online-Postfächer bietet. Sie können die automatische Erweiterung der Archivierung für Ihre gesamte Organisation oder nur für bestimmte Benutzer aktivieren.'
+description: 'Für Administratoren: Erfahren Sie, wie Sie die automatisch erweiternde Archivierung aktivieren, die Ihren Benutzern unbegrenzten Speicherplatz für ihre Exchange Online bietet. Sie können die automatische Erweiterung der Archivierung für Ihre gesamte Organisation oder nur für bestimmte Benutzer aktivieren.'
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: ac5661ac43ed9c0f35eba20007f0c4c4406ebf20
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -28,7 +28,7 @@ ms.locfileid: "50927825"
 ---
 # <a name="enable-unlimited-archiving---admin-help"></a>Unbegrenzte Archivierung aktivieren – Administratorhilfe
 
-Sie können das Archivierungsfeature für die automatische Erweiterung von Exchange Online verwenden, um unbegrenzten Speicherplatz für Archivpostfächer zu ermöglichen. Wenn die Archivierung automatisch erweitert wird, wird dem Archivpostfach eines Benutzers automatisch zusätzlicher Speicherplatz hinzugefügt, wenn der Speichergrenzwert erreicht wird. Das Ergebnis ist unbegrenzte Postfachspeicherkapazität. Sie können die Archivierung automatisch erweitern für alle Benutzer in Ihrer Organisation oder nur für bestimmte Benutzer aktivieren. Weitere Informationen zur automatischen Erweiterung der Archivierung finden Sie [unter Overview of unlimited archiving in Office 365](unlimited-archiving.md).
+Sie können die archivierungsfunktion Exchange Online automatisch erweitern, um unbegrenzten Speicherplatz für Archivpostfächer zu ermöglichen. Wenn die Archivierung automatisch erweitert wird, wird dem Archivpostfach eines Benutzers automatisch zusätzlicher Speicherplatz hinzugefügt, wenn der Speichergrenzwert erreicht wird. Das Ergebnis ist unbegrenzte Postfachspeicherkapazität. Sie können die Archivierung automatisch erweitern für alle Benutzer in Ihrer Organisation oder nur für bestimmte Benutzer aktivieren. Weitere Informationen zum automatischen Erweitern der Archivierung finden Sie [unter Overview of unlimited archiving in Office 365](unlimited-archiving.md).
 
 ## <a name="before-you-enable-auto-expanding-archiving"></a>Vor der Aktivierung der automatischen Erweiterung der Archivierung
 
@@ -42,7 +42,7 @@ Sie können das Archivierungsfeature für die automatische Erweiterung von Excha
 
 - Die automatische Erweiterung der Archivierung verhindert, dass Sie ein inaktives Postfach wiederherstellen oder [wiederherstellen.](inactive-mailboxes-in-office-365.md#what-are-inactive-mailboxes) Wenn Sie also die automatisch erweiternde Archivierung für ein Postfach aktivieren und das Postfach zu einem späteren Zeitpunkt inaktiv gemacht wird, können Sie das inaktive Postfach [nicht](recover-an-inactive-mailbox.md) wiederherstellen (indem Sie es in ein aktives Postfach konvertieren) oder es [wiederherstellen](restore-an-inactive-mailbox.md) (indem Sie den Inhalt in ein vorhandenes Postfach zusammenführen). Wenn die automatische Erweiterung der Archivierung für ein inaktives Postfach aktiviert ist, können Daten nur mithilfe des Inhaltssuchtools im Microsoft 365 Compliance Center wiederhergestellt werden, um die Daten aus dem Postfach zu exportieren und in ein anderes Postfach zu importieren. Weitere Informationen finden Sie im Abschnitt "Inaktive Postfächer und automatisch erweiternde Archive" unter [Übersicht über inaktive Postfächer](inactive-mailboxes-in-office-365.md#inactive-mailboxes-and-auto-expanding-archives).
 
-- Sie können das Exchange Admin Center oder das Security & Compliance Center nicht verwenden, um die automatisch erweiternde Archivierung zu aktivieren. Sie müssen Exchange Online PowerShell verwenden. Informationen zum Herstellen einer Verbindung mit Ihrer Exchange Online-Organisation mithilfe von Remote PowerShell finden Sie [unter Connect to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Sie können das Exchange Admin Center oder das Security & Compliance Center nicht verwenden, um die Archivierung automatisch zu erweitern. Sie müssen powerShell Exchange Online verwenden. Informationen zum Herstellen einer Verbindung Exchange Online Ihrer Organisation mithilfe von Remote PowerShell finden Sie [unter Verbinden to Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="enable-auto-expanding-archiving-for-your-entire-organization"></a>Aktivieren der automatischen Erweiterung der Archivierung für Ihre gesamte Organisation
 
@@ -50,7 +50,7 @@ Sie können die automatische Erweiterung der Archivierung für Ihre gesamte Orga
   
 1. [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
-2. Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um die automatische Erweiterung der Archivierung für Ihre gesamte Organisation zu aktivieren.
+2. Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um die automatisch erweiternde Archivierung für Ihre gesamte Organisation zu aktivieren.
 
     ```powershell
     Set-OrganizationConfig -AutoExpandingArchive
@@ -70,7 +70,7 @@ Dieser zusätzliche Speicherplatz wird hinzugefügt, um Speicherprobleme zu verh
   
 1. [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell)
 
-2. Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um die automatische Erweiterung der Archivierung für einen bestimmten Benutzer zu aktivieren. Wie bereits erläutert, muss das Archivpostfach (Hauptarchiv) des Benutzers aktiviert sein, bevor Sie die automatisch erweiterte Archivierung für den Benutzer aktivieren können.
+2. Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um die automatisch erweiternde Archivierung für einen bestimmten Benutzer zu aktivieren. Wie bereits erläutert, muss das Archivpostfach (Hauptarchiv) des Benutzers aktiviert sein, bevor Sie die automatisch erweiterte Archivierung für den Benutzer aktivieren können.
 
     ```powershell
     Enable-Mailbox <user mailbox> -AutoExpandingArchive
@@ -81,7 +81,7 @@ Dieser zusätzliche Speicherplatz wird hinzugefügt, um Speicherprobleme zu verh
   
 ## <a name="verify-that-auto-expanding-archiving-is-enabled"></a>Überprüfen, ob die Archivierung automatisch erweitert ist
 
-Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um zu überprüfen, ob die Archivierung automatischer Erweiterung für Ihre Organisation aktiviert ist.
+Führen Sie den folgenden Befehl in powerShell aus, um zu überprüfen, ob die archivierung automatischer Erweiterung für Ihre Organisation aktiviert ist, Exchange Online PowerShell.
 
 ```powershell
 Get-OrganizationConfig | FL AutoExpandingArchiveEnabled
@@ -89,7 +89,7 @@ Get-OrganizationConfig | FL AutoExpandingArchiveEnabled
 
 Ein Wert von gibt an, dass die  `True` Archivierung automatischer Erweiterung für die Organisation aktiviert ist. 
   
-Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um zu überprüfen, ob die Archivierung automatischer Erweiterung für einen bestimmten Benutzer aktiviert ist.
+Führen Sie den folgenden Befehl in powerShell aus, um zu überprüfen, ob die archivierung automatischer Erweiterung für einen bestimmten Benutzer aktiviert ist, Exchange Online PowerShell.
   
 ```powershell
 Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
@@ -97,7 +97,7 @@ Get-Mailbox <user mailbox> | FL AutoExpandingArchiveEnabled
 
 Ein Wert von gibt an, dass die  `True` Archivierung automatischer Erweiterung für den Benutzer aktiviert ist.
   
-Führen Sie den folgenden Befehl in Exchange Online PowerShell aus, um zu ermitteln, ob die Archivierung automatisch erweitern für inaktive Postfächer aktiviert ist.
+Führen Sie den folgenden Befehl in powerShell aus, um zu ermitteln, ob die Archivierung automatischer Erweiterung für inaktive Postfächer aktiviert ist, Exchange Online PowerShell.
   
 ```powershell
 Get-Mailbox -InactiveMailboxOnly | FL UserPrincipalName,AutoExpandingArchiveEnabled
@@ -113,23 +113,23 @@ Beachten Sie die folgenden Punkte, nachdem Sie die automatische Erweiterung der 
 
     ![Die Eigenschaften ArchiveQuota und ArchiveWarningQuota werden ignoriert, nachdem Sie die Archivierung automatisch erweitern aktiviert haben.](../media/6a1c1b69-5c4c-4267-aac8-53577667f03e.png)
 
-## <a name="more-information"></a>Weitere Informationen
+## <a name="more-information&quot;></a>Weitere Informationen
 
 - Sie können PowerShell auch verwenden, um Archivpostfächer zu aktivieren. Sie können beispielsweise den folgenden Befehl in Exchange Online PowerShell ausführen, um Archivpostfächer für alle Benutzer zu aktivieren, deren Archivpostfach noch nicht aktiviert ist.
 
     ```powershell
-    Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
+    Get-Mailbox -Filter {ArchiveStatus -Eq &quot;None&quot; -AND RecipientTypeDetails -eq &quot;UserMailbox&quot;} | Enable-Mailbox -Archive
     ```
 
-- Nach dem Aktivieren der automatischen Erweiterung der Archivierung für Ihre Organisation oder einen bestimmten Benutzer wird ein Archivpostfach in ein automatisch erweiternde Archiv konvertiert, wenn das Archivpostfach (einschließlich des Ordners "Wiederherstellbare Elemente") 90 GB erreicht. Es kann bis zu 30 Tage dauern, bis der zusätzliche Speicherplatz bereitgestellt wird.
+- Nach dem Aktivieren der automatischen Erweiterung der Archivierung für Ihre Organisation oder einen bestimmten Benutzer wird ein Archivpostfach in ein automatisch erweiternde Archiv konvertiert, wenn das Archivpostfach (einschließlich des Ordners &quot;Wiederherstellbare Elemente") 90 GB erreicht. Es kann bis zu 30 Tage dauern, bis der zusätzliche Speicherplatz bereitgestellt wird.
 
 - Nachdem Sie die Archivierung automatisch erweitern aktiviert haben, kann sie nicht mehr deaktiviert werden. Darüber hinaus können Administratoren das Speicherkontingent für die automatische Erweiterung der Archivierung nicht anpassen.
 
-- Die automatisch erweiternde Archivierung wird für cloudbasierte Archivpostfächer in einer Exchange-Hybridbereitstellung für Benutzer unterstützt, die über ein lokales primäres Postfach verfügen. Nachdem die automatische Erweiterung der Archivierung für ein cloudbasiertes Archivpostfach aktiviert wurde, können Sie dieses Archivpostfach jedoch nicht wieder in die lokale Exchange-Organisation verschieben. Die automatische Erweiterung der Archivierung wird für lokale Postfächer in einer Version von Exchange Server.
+- Die automatisch erweiternde Archivierung wird für cloudbasierte Archivpostfächer in einer Exchange hybriden Bereitstellung für Benutzer unterstützt, die über ein lokales primäres Postfach verfügen. Nachdem die automatische Erweiterung der Archivierung für ein cloudbasiertes Archivpostfach aktiviert wurde, können Sie dieses Archivpostfach jedoch nicht wieder in die lokale Exchange verschieben. Die automatische Erweiterung der Archivierung wird für lokale Postfächer in einer Version von Exchange Server.
 
-- Eine Liste der Outlook-Clients, die Benutzer für den Zugriff auf Elemente im zusätzlichen Speicherbereich in ihrem Archivpostfach verwenden können, finden Sie im Abschnitt "Outlook-Anforderungen für den Zugriff auf Elemente in einem automatisch erweiterten Archiv" unter [Overview of unlimited archiving](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive).
+- Eine Liste der Outlook Clients, die Benutzer für den Zugriff auf Elemente im zusätzlichen Speicherbereich in ihrem Archivpostfach verwenden können, finden Sie im Abschnitt "Outlook-Anforderungen für den Zugriff auf Elemente in einem automatisch erweiterten Archiv" unter [Übersicht über](unlimited-archiving.md#outlook-requirements-for-accessing-items-in-an-auto-expanded-archive)die unbegrenzte Archivierung.
 
 - Wie bereits erläutert, werden dem Speicherkontingent des primären Archivpostfachs des Benutzers (und dem Ordner "Wiederherstellbare Elemente", wenn sich das Postfach befindet) 10 GB hinzugefügt, wenn Sie den Befehl **Enable-Mailbox -AutoExpandingArchive** ausführen. Dadurch wird zusätzlicher Speicher bereitgestellt, bis der automatisch erweiterte Speicherplatz bereitgestellt wird (was bis zu 30 Tage dauern kann). Dieser zusätzliche Speicherplatz wird nicht hinzugefügt, wenn Sie **set-OrganizationConfig -AutoExpandingArchive** ausführen, um die automatische Erweiterung der Archivierung für alle Postfächer in Ihrer Organisation zu ermöglichen. Wenn Sie die automatische Erweiterung der Archivierung für die gesamte Organisation aktiviert haben, aber die zusätzlichen 10 GB Speicherplatz für einen bestimmten Benutzer hinzufügen müssen, können Sie den **Befehl Enable-Mailbox -AutoExpandingArchive** für dieses Postfach ausführen. Es wird eine Fehlermeldung angezeigt, dass die automatische Erweiterung der Archivierung bereits aktiviert wurde, aber der zusätzliche Speicherplatz wird dem Postfach hinzugefügt.
 
 > [!IMPORTANT]
-> Die automatische Erweiterung der Archivierung wird nur für Postfächer unterstützt, die für einzelne Benutzer oder freigegebene Postfächer mit einer Zuwachsrate von nicht mehr als 1 GB pro Tag verwendet werden. Das Verwenden von Journalen, Transportregeln oder regeln für die automatische Weiterleitung zum Kopieren von Nachrichten in ein Archivpostfach zum Zwecke der Archivierung ist nicht zulässig. Das Archivpostfach eines Benutzers ist nur für diesen Benutzer vorgesehen. Microsoft behält sich das Recht vor, die unbegrenzte Archivierung in Fällen zu verweigern, in denen das Archivpostfach eines Benutzers zum Speichern von Archivdaten für andere Benutzer oder in anderen Fällen unangemessener Verwendung verwendet wird.
+> Die automatische Erweiterung der Archivierung wird nur für Postfächer unterstützt, die für einzelne Benutzer oder freigegebene Postfächer mit einer Zuwachsrate von nicht mehr als 1 GB pro Tag verwendet werden. Das Verwenden von Journalen, Transportregeln oder regeln für die automatische Weiterleitung zum Kopieren von Nachrichten in ein Archivpostfach zum Zwecke der Archivierung ist nicht zulässig. Das Archivpostfach eines Benutzers ist nur für diesen Benutzer vorgesehen. Microsoft behält sich das Recht vor, die uneingeschränkte Archivierung dann zu verweigern, wenn das Archivpostfach eines Benutzers zum Speichern von Archivdaten für andere Benutzer oder auf eine andere unangemessene Weise verwendet wird.

@@ -13,7 +13,7 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: 'Zusammenfassung: Konfigurieren der Microsoft Azure-Infrastruktur zum Hosten der Hochverfügbarkeits-Verbundauthentifizierung für Microsoft 365.'
+description: 'Zusammenfassung: Konfigurieren Sie die Microsoft Azure für das Hosten der Hochverfügbarkeits-Verbundauthentifizierung für Microsoft 365.'
 ms.openlocfilehash: 7f9a935648fedd2c6235c443f7398f97c0a06e06
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "50929108"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Hochverfügbarkeit der Verbundauthentifizierung, Phase 1: Konfigurieren von Azure
 
-In dieser Phase erstellen Sie die Ressourcengruppen, das virtuelle Netzwerk (VNet) und die Verfügbarkeitssätze in Azure, die die virtuellen Computer in den Phasen 2, 3 und 4 hosten. Sie müssen diese Phase abschließen, bevor Sie mit [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) fortfahren können. Alle Phasen finden Sie unter [Deploy high availability federated authentication for Microsoft 365 in Azure.](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
+In dieser Phase erstellen Sie die Ressourcengruppen, das virtuelle Netzwerk (VNet) und die Verfügbarkeitssätze in Azure, die die virtuellen Computer in den Phasen 2, 3 und 4 hosten. Sie müssen diese Phase abschließen, bevor Sie mit [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) fortfahren können. Alle Phasen finden Sie unter Deploy [high availability federated authentication for Microsoft 365 in Azure.](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
 Azure muss mit den folgenden grundlegenden Komponenten bereitgestellt werden:
   
@@ -108,10 +108,10 @@ Für die Teilmenge der Adressräume für das lokale Netzwerk füllen Sie Tabelle
    
  **Tabelle L: Adresspräfixe für das lokale Netzwerk**
   
-Nun beginnen wir mit dem Erstellen der Azure-Infrastruktur, um Ihre Verbundauthentifizierung für Microsoft 365 zu hosten.
+Nun beginnen wir mit dem Erstellen der Azure-Infrastruktur zum Hosten Der Verbundauthentifizierung für Microsoft 365.
   
 > [!NOTE]
-> [!HINWEIS] In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Weitere [Informationen finden Sie unter Erste Schritte mit Azure PowerShell](/powershell/azure/get-started-azureps). 
+> [!HINWEIS] In den folgenden Befehlssätzen wird die aktuelle Version von Azure PowerShell verwendet. Weitere Informationen finden Sie unter [Erste Schritte Azure PowerShell](/powershell/azure/get-started-azureps). 
   
 Starten Sie zunächst eine Azure PowerShell-Eingabeaufforderung, und melden Sie sich bei Ihrem Konto an.
   
@@ -120,7 +120,7 @@ Connect-AzAccount
 ```
 
 > [!TIP]
-> Verwenden Sie diese [Microsoft Excel-Konfigurationsarbeitsmappe,](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx)um einsatzbereite PowerShell-Befehlsblöcke basierend auf Ihren benutzerdefinierten Einstellungen zu generieren. 
+> Verwenden Sie diese Konfigurationsarbeitsmappe, um betriebsbereite PowerShell-Befehlsblöcke basierend auf ihren benutzerdefinierten Einstellungen zu [generieren, Microsoft Excel Konfigurationsarbeitsmappe .](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
 
 Rufen Sie den Namen Ihres Abonnements mithilfe des folgenden Befehls ab.
   
@@ -128,13 +128,13 @@ Rufen Sie den Namen Ihres Abonnements mithilfe des folgenden Befehls ab.
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-Verwenden Sie für ältere Versionen von Azure PowerShell stattdessen diesen Befehl.
+Verwenden Sie für ältere Azure PowerShell stattdessen diesen Befehl.
   
 ```powershell
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Tragen Sie Ihr Azure-Abonnement ein. Ersetzen Sie alles innerhalb der Anführungszeichen, einschließlich der \< and > Zeichen, durch den richtigen Namen.
+Tragen Sie Ihr Azure-Abonnement ein. Ersetzen Sie alles innerhalb der Anführungszeichen, einschließlich der Zeichen „\< and >" und „", durch den entsprechenden Namen.
   
 ```powershell
 $subscrName="<subscription name>"
@@ -161,25 +161,25 @@ Tragen Sie die eindeutigen Ressourcengruppennamen in die folgende Tabelle ein.
 Erstellen Sie die neuen Ressourcengruppen mit den folgenden Befehlen.
   
 ```powershell
-$locName="<an Azure location, such as West US>"
-$rgName="<Table R - Item 1 - Name column>"
+$locName="<an Azure location, such as West US>&quot;
+$rgName=&quot;<Table R - Item 1 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName="<Table R - Item 2 - Name column>"
+$rgName=&quot;<Table R - Item 2 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName="<Table R - Item 3 - Name column>"
+$rgName=&quot;<Table R - Item 3 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
-$rgName="<Table R - Item 4 - Name column>"
+$rgName=&quot;<Table R - Item 4 - Name column>&quot;
 New-AzResourceGroup -Name $rgName -Location $locName
 ```
 
 Erstellen Sie als Nächstes das virtuelle Azure-Netzwerk und seine Subnetze.
   
 ```powershell
-$rgName="<Table R - Item 4 - Resource group name column>"
-$locName="<your Azure location>"
-$vnetName="<Table V - Item 1 - Value column>"
-$vnetAddrPrefix="<Table V - Item 4 - Value column>"
-$dnsServers=@( "<Table D - Item 1 - DNS server IP address column>", "<Table D - Item 2 - DNS server IP address column>" )
+$rgName=&quot;<Table R - Item 4 - Resource group name column>&quot;
+$locName=&quot;<your Azure location>&quot;
+$vnetName=&quot;<Table V - Item 1 - Value column>&quot;
+$vnetAddrPrefix=&quot;<Table V - Item 4 - Value column>&quot;
+$dnsServers=@( &quot;<Table D - Item 1 - DNS server IP address column>&quot;, &quot;<Table D - Item 2 - DNS server IP address column>" )
 # Get the shortened version of the location
 $locShortName=(Get-AzResourceGroup -Name $rgName).Location
 
@@ -302,9 +302,9 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 Haben Sie diese Phase erfolgreich abgeschlossen, sieht Ihre Konfiguration wie folgt aus.
   
-**Phase 1: Die Azure-Infrastruktur für die Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365**
+**Phase 1: Die Azure-Infrastruktur für die Hochverfügbarkeits-Verbundauthentifizierung für Microsoft 365**
 
-![Phase 1 der Hochverfügbarkeit der Microsoft 365-Verbundauthentifizierung in Azure mit der Azure-Infrastruktur](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Phase 1 der Hochverfügbarkeit Microsoft 365 Verbundauthentifizierung in Azure mit der Azure-Infrastruktur](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>Nächster Schritt
 
@@ -314,8 +314,8 @@ Verwenden [Sie Phase 2: Konfigurieren von Domänencontrollern,](high-availabilit
 
 [Bereitstellen der Verbundauthentifizierung mit Hochverfügbarkeit für Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
-[Verbundidentität für Ihre Microsoft 365-Entwicklungs-/Testumgebung](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+[Verbundidentität für Ihre Microsoft 365/Testumgebung](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
 [Microsoft 365-Lösungs- und Architekturcenter](../solutions/index.yml)
 
-[Grundlegendes zu Microsoft 365 Identity und Azure Active Directory](about-microsoft-365-identity.md)
+[Grundlegendes Microsoft 365 Identität und Azure Active Directory](about-microsoft-365-identity.md)

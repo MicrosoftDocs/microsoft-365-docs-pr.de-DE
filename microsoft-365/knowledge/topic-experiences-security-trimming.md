@@ -21,7 +21,7 @@ ms.locfileid: "50939623"
 ---
 # <a name="microsoft-viva-topics-security-trimming"></a>Microsoft Viva Topics Security Trimming 
 
-Benutzer von "Viva Topics" können keine Informationen in Themen anzeigen, die von ihren vorhandenen Office 365-Berechtigungen nicht angezeigt werden können. Alles, was ein Benutzer auf einer Themenseite sieht (z. B. SharePoint-Websites, Dokumente, Dateien), sind Informationen, die er bereits sehen darf. Bei "Viva Topics" werden keine Änderungen an vorhandenen Berechtigungen vorgenommen.
+Benutzer von "Viva Topics" können keine Informationen in Themen anzeigen, die ihre vorhandenen Office 365 verhindern, dass sie angezeigt werden. Alles, was einem Benutzer auf einer Themenseite angezeigt wird (z. B. SharePoint Websites, Dokumente, Dateien), sind Informationen, die er bereits sehen darf. Bei "Viva Topics" werden keine Änderungen an vorhandenen Berechtigungen vorgenommen.
 
 ## <a name="why-two-users-may-have-different-views-of-the-same-topic"></a>Warum zwei Benutzer möglicherweise unterschiedliche Ansichten desselben Themas haben
 
@@ -35,7 +35,7 @@ Wenn Benutzer 2 jedoch dieselbe Seite des Themas "Neptune" betrachtet, untersche
 
 ![Thema "2" für "2"](../media/knowledge-management/user1-topic-view.png) </br> 
 
-Der Unterschied bei den Benutzern in demselben Thema liegt daran, dass Benutzer möglicherweise nicht über die Office 365-Berechtigungen zum Anzeigen einer verwandten Website oder Datei verfügen.  Viva Topics respektiert die Berechtigungen, die für Elemente in einem Thema festgelegt sind, und kann den Zugriff darauf nicht ändern. In unserem Beispiel kann Benutzer 1 die *DG-2000-Produktübersichtsdatei* nicht auf ihrer Themenseite für "Neptune" anzeigen, da Benutzer 1 nicht über Office 365-Berechtigungen zum Anzeigen der Datei verfügt.
+Der Unterschied bei den Benutzern, die im gleichen Thema angezeigt werden, liegt daran, dass Benutzer möglicherweise nicht über die Office 365 zum Anzeigen einer verwandten Website oder Datei verfügen.  Viva Topics respektiert die Berechtigungen, die für Elemente in einem Thema festgelegt sind, und kann den Zugriff darauf nicht ändern. In unserem Beispiel kann Benutzer 1 die *DG-2000-Produktübersichtsdatei* nicht auf ihrer Themenseite für "Neptune" anzeigen, da Benutzer 1 nicht über Office 365 zum Anzeigen der Datei verfügt.
 
 Wenn ein Benutzer nicht in der Lage ist, genügend Informationen in einem Thema zu sehen, damit es nützlich ist, steht das Thema dem Benutzer nicht zur Verfügung. In diesem Fall wird dem Benutzer das hervorgehobene Thema nicht angezeigt. Ein anderer Benutzer, der über Berechtigungen für weitere Informationen im Thema verfügt, damit er nützlich ist, kann das Thema sehen.
 
@@ -57,11 +57,11 @@ Themen können informationen enthalten, die durch KI generiert werden, und Infor
 
 In der folgenden Tabelle wird beschrieben, was Benutzer – Themenbetrachter, Mitwirkende und Wissensmanager – basierend auf ihren Berechtigungen in einem bestimmten Thema sehen können.
 
-|Themaelement|Was Benutzer sehen können|
+|Themenelement|Anzeige für Benutzer|
 |:---------|:------------------|
-|Themaname|Benutzer können den Themanamen von Themen im Themencenter sehen. Einige Themen sind möglicherweise nicht sichtbar, wenn Benutzer nicht über Berechtigungen für den Quellinhalt verfügen oder eine geringe Relevanz für den Benutzer haben.|
-|Beschreibung des Themas|VON AI generierte Beschreibungen sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen. Manuell eingegebene oder bearbeitete Beschreibungen sind für alle Benutzer sichtbar.|
-|Personen|Angeheftierte Personen sind für alle Benutzer sichtbar. Vorgeschlagene Personen sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen.|
+|Themenname|Benutzer können den Themanamen von Themen im Themencenter sehen. Einige Themen sind möglicherweise nicht sichtbar, wenn Benutzer nicht über Berechtigungen für den Quellinhalt verfügen oder eine geringe Relevanz für den Benutzer haben.|
+|Beschreibung des Themas|Von der KI generierten Beschreibungen sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen. Manuell eingegebene oder bearbeitete Beschreibungen sind für alle Benutzer sichtbar.|
+|Personen|Angeheftete Personen sind für alle Benutzer sichtbar. Vorgeschlagene Personen sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen.|
 |Dateien|Dateien sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen.|
 |Seiten|Seiten sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen.|
 |Websites|Websites sind nur für Benutzer sichtbar, die über Berechtigungen für den Quellinhalt verfügen.|

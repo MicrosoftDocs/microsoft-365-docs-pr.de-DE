@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
-description: Erfahren Sie mehr über Multi-Geo-Funktionen in Exchange Online, z. B. Funktionseinschränkungen und Postfachplatzierung.
+description: Erfahren Sie mehr über multi-geo-Funktionen in Exchange Online, z. B. Funktionseinschränkungen und Postfachplatzierung.
 ms.openlocfilehash: bf1c3c8f510c57f47cbfc7b2609d97f5932e05d3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT

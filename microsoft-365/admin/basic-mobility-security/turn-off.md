@@ -55,4 +55,4 @@ Mit diesen Optionen wird die Erzwingung von Basic Mobility and Security für Ger
 3.  Wählen Sie im Dialogfeld Warnung ja **aus.**
 
 >[!NOTE]
->Weitere Schritte zum Aufheben der Blockierung von Geräten, wenn sich Ihre Organisationsgeräte weiterhin in einem blockierten Zustand befinden, finden Sie im Blogbeitrag Entfernen der Zugriffssteuerung aus der Verwaltung mobiler [Geräte für Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934).
+>Weitere Schritte zum Aufheben der Blockierung von Geräten, wenn sich Ihre Organisationsgeräte noch in einem blockierten Zustand befinden, finden Sie im Blogbeitrag Entfernen der Zugriffssteuerung aus [Verwaltung mobiler Geräte für Office 365](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Removing-Access-Control-from-Mobile-Device-Management-for-Office/ba-p/279934).

@@ -27,7 +27,7 @@ ms.locfileid: "50921528"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Pass-Through-Authentifizierung für Ihre Microsoft 365-Testumgebung
 
-*Diese Testumgebungsanleitung kann sowohl für Microsoft 365 Enterprise- als auch für Office 365 Enterprise-Testumgebungen verwendet werden.*
+*Diese Testumgebungsanleitung kann sowohl für Microsoft 365 als auch für Office 365 Enterprise verwendet werden.*
 
 Organisationen, die ihre lokale Active Directory Domain Services(AD DS)-Infrastruktur direkt für die Authentifizierung bei Cloud-basierten Microsoft-Diensten und -Anwendungen verwenden möchten, können Pass-Through-Authentifizierung verwenden. Dieser Artikel beschreibt, wie Sie Ihre Microsoft 365-Testumgebung für Pass-Through-Authentifizierung konfigurieren, was zu folgender Konfiguration führt:
   
@@ -51,7 +51,7 @@ Befolgen Sie die Anweisungen unter [Kennworthashsynchronisierung für Microsoft 
   
 Diese Konfiguration besteht aus:  
   
-- Microsoft 365 E5-Testversion oder kostenpflichtiges Abonnement.
+- Microsoft 365 E5 test- oder kostenpflichtiges Abonnement.
 - Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus virtuellen DC1-, APP1- und CLIENT1-Computern in einem Subnetz eines virtuellen Azure-Netzwerks besteht. Azure AD Connect wird auf APP1 ausgeführt, um die AD DS-Domäne "TESTLAB" mit dem Azure AD-Mandanten Ihres Microsoft 365-Abonnements regelmäßig zu synchronisieren.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>Phase 2: Konfigurieren Sie Azure AD Connect auf APP1 für Pass-Through-Authentifizierung
@@ -94,7 +94,7 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration:
  
 Diese Konfiguration besteht aus: 
 
-- Eine Microsoft 365 E5-Testversion oder kostenpflichtige Abonnements mit dem Testlab der DNS-Domäne.\<your domain name> registriert.
+- Eine Microsoft 365 E5 oder kostenpflichtige Abonnements mit dem TESTlab der DNS-Domäne.\<your domain name> registriert.
 - Einem vereinfachtem Unternehmensintranet mit Internetzugriff, das aus virtuellen DC1-, APP1- und CLIENT1-Computern in einem Subnetz eines virtuellen Azure-Netzwerks besteht. Ein Authentifizierungsagent wird auf APP1 für die Verarbeitung von Pass-Through-Authentifizierungsanfragen vom Azure AD-Mandanten Ihres Microsoft 365-Abonnements ausgeführt.
 
 ## <a name="next-step"></a>Nächster Schritt

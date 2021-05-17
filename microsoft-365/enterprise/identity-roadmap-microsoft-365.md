@@ -41,7 +41,7 @@ Lesen Sie dieses zweiseitige Poster, um die Identitätskonzepte und -konfigurati
 
 Sie können [dieses Poster auch herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) und im Buchstaben-, Rechts- oder Tabloidformat (11 x 17) drucken.
 
-## <a name="plan"></a>Planen
+## <a name="plan"></a>Plan
 
 So planen Sie ihre Identitätsimplementierung:
 

@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 f1.keywords:
 - NOCSH
-description: Dieser Artikel enthält eine Zusammenfassung, wie Microsoft die Mandantenisolation in Clouddiensten wie Microsoft 365 erzwingt.
+description: Dieser Artikel enthält eine Zusammenfassung darüber, wie Microsoft die Mandantenisolation in Clouddiensten wie Microsoft 365.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 7c5be65186b75f6056a64b776e4f0d25bcd55eb1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -34,11 +34,11 @@ Die beiden Hauptziele für die Beibehaltung der Mandantenisolation in einer Mehr
 1.    Verhindern von Lecks oder unbefugtem Zugriff auf Kundeninhalte über Mandanten hinweg; und
 2.    Verhindern, dass die Aktionen eines Mandanten den Dienst für einen anderen Mandanten beeinträchtigen
 
-Mehrere Arten von Schutz wurden in Microsoft 365 implementiert, um zu verhindern, dass Kunden Microsoft 365-Dienste oder -Anwendungen kompromittieren oder nicht autorisierten Zugriff auf die Informationen anderer Mandanten oder des Microsoft 365-Systems selbst erhalten, einschließlich:
+Mehrere Arten von Schutz wurden Microsoft 365 implementiert, um zu verhindern, dass Kunden Microsoft 365 Dienste oder Anwendungen kompromittieren oder nicht autorisierten Zugriff auf die Informationen anderer Mandanten oder des Microsoft 365-Systems selbst erhalten, einschließlich:
 
-- Die logische Isolation von Kundeninhalten innerhalb der einzelnen Mandanten für Microsoft 365-Dienste wird durch die Azure Active Directory-Autorisierung und die rollenbasierte Zugriffssteuerung erreicht.
+- Die logische Isolation von Kundeninhalten innerhalb jedes Mandanten für Microsoft 365 wird durch eine Azure Active Directory und rollenbasierte Zugriffssteuerung erreicht.
 - SharePoint Online bietet Datenisolationsmechanismen auf Speicherebene.
-- Microsoft verwendet strenge physische Sicherheit, Hintergrundprüfungen und eine mehrschichtige Verschlüsselungsstrategie, um die Vertraulichkeit und Integrität von Kundeninhalten zu schützen. Alle Microsoft 365-Rechenzentren verfügen über biometrische Zugriffssteuerungen, bei denen die meisten Handflächendrucke erforderlich sind, um physischen Zugriff zu erhalten. Darüber hinaus müssen alle in den USA ansässigen Microsoft-Mitarbeiter eine Standardhintergrundprüfung im Rahmen des Einstellungsprozesses erfolgreich abschließen. Weitere Informationen zu den Steuerelementen, die für den Administratorzugriff in Microsoft 365 verwendet werden, finden Sie unter [Microsoft 365 Administrative Access Controls](/compliance/assurance/assurance-administrative-access-controls-overview).
+- Microsoft verwendet strenge physische Sicherheit, Hintergrundprüfungen und eine mehrschichtige Verschlüsselungsstrategie, um die Vertraulichkeit und Integrität von Kundeninhalten zu schützen. Alle Microsoft 365 verfügen über biometrische Zugriffssteuerungen, bei denen die meisten Handflächendrucke erforderlich sind, um physischen Zugriff zu erhalten. Darüber hinaus müssen alle in den USA ansässigen Microsoft-Mitarbeiter eine Standardhintergrundprüfung im Rahmen des Einstellungsprozesses erfolgreich abschließen. Weitere Informationen zu den Steuerelementen, die für den Administratorzugriff in Microsoft 365 verwendet werden, finden Sie unter [Microsoft 365 Administrative Access Controls](/compliance/assurance/assurance-administrative-access-controls-overview).
 - Microsoft 365 verwendet dienstseitige Technologien zum Verschlüsseln von Kundeninhalten im Ruhe- und Transitbereich, einschließlich BitLocker, Dateiverschlüsselung, Transport Layer Security (TLS) und Internet Protocol Security (IPsec). Spezifische Informationen zur Verschlüsselung in Microsoft 365 finden Sie unter [Data Encryption Technologies in Microsoft 365](../compliance/office-365-encryption-in-the-microsoft-cloud-overview.md).
 
 Zusammen bieten die oben aufgeführten Schutzelemente robuste logische Isolationssteuerelemente, die bedrohungsschutz und -abschwächung äquivalent zu dem bieten, der allein durch physische Isolation bereitgestellt wird.

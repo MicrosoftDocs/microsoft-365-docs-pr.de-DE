@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Verwenden Sie Microsoft 365-Aufbewahrungsbezeichnungen und -richtlinien, um personenbezogene Daten in Ihrer Microsoft 365-Umgebung zu verwalten.
+description: Verwenden Microsoft 365 Aufbewahrungsbezeichnungen und -richtlinien zum Verwalten personenbezogener Daten in Microsoft 365 Umgebung.
 ms.openlocfilehash: 62c2386ac8f9c5b31650df8be2c2a411d8b75959
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -49,12 +49,12 @@ Weitere Informationen zu diesen Bestimmungen finden Sie im Artikel "Bewerten von
 
 Für die Steuerung von Informationen müssen Datenschutzbestimmungen in der Regel Folgendes umfassen:
 
-- Sie sollten ein technisches Schema für die Aufbewahrung und Löschung von personenbezogenen Daten verwenden, die in Microsoft 365 gespeichert sind.
+- Sie sollten ein technisches Schema für die Aufbewahrung und Löschung von personenbezogenen Daten verwenden, die in Microsoft 365.
 - Wenn Sie personenbezogene Daten speichern möchten, informieren Sie den Betreff darüber, wie lange die Daten gespeichert werden, was in Front-End-Websystemen zur Standardpraxis gehört.
 - Personenbezogene Daten sollten mit überprüfbaren Methoden vor versehentlicher Verarbeitung, Verlust oder Änderung geschützt werden.
 - Alle Aktionen, die gegen personenbezogene Daten ausgeführt werden, sollten dokumentiert werden, und diese Dokumentation sollte für einen bestimmten Zeitraum aufbewahrt werden.
 
-Da die Datenschutzbestimmungen nicht sehr spezifisch sind, wenn es um die Aufbewahrung und Löschung von Daten geht, müssen andere Faktoren berücksichtigt werden, die Richtlinien für die Informationsverwaltung für personenbezogene Informationen bestimmen können, die in Ihrem Microsoft 365-Abonnement gespeichert sind. Hier ein paar Beispiele:
+Da die Datenschutzbestimmungen nicht sehr spezifisch sind, wenn es um die Aufbewahrung und Löschung von Daten geht, müssen andere Faktoren berücksichtigt werden, die Richtlinien für die Informationsverwaltung für personenbezogene Informationen bestimmen können, die in Ihrem abonnement gespeicherten Microsoft 365 sind. Hier ein paar Beispiele:
 
 - Das Altern von Verbraucherkonten nach 5 Jahren Inaktivität erfordert das Löschen oder Anonymisieren von Kontodaten nach diesem Zeitpunkt, was eine Orchestrierung zwischen dem System erfordert, in dem die Daten und Workflows im Zusammenhang mit Benachrichtigungen und anderer Automatisierung gespeichert werden.
 - Konfigurieren von Regeln für die Beibehaltung von Richtlinien und Verfahren im Zusammenhang mit der DSGVO für drei Jahre, nachdem sie ersetzt wurden, was dem Aufbewahrungszeitplan der Organisation für Richtlinien und Verfahren entspricht.
@@ -64,11 +64,11 @@ Eine wichtige Frage, die Sie beantworten müssen, ist:
 
 - Wie lange müssen Informationen, die personenbezogene Daten enthalten, aus gültigen geschäftlichen Gründen aufbewahrt werden, um zu verhindern, dass sie für immer beibehalten werden? Dies muss mit den Aufbewahrungsanforderungen für die Geschäftskontinuität abgewogen werden.
 
-Unabhängig von den rechtlichen und geschäftlichen Gründen für die Aufbewahrung personenbezogener Informationen oder deren Löschung bietet Microsoft eine Reihe von Funktionen zum Implementieren Ihres Data Governance-Schemas in Microsoft 365.
+Unabhängig von den rechtlichen und geschäftlichen Gründen für die Aufbewahrung personenbezogener Informationen oder deren Löschung bietet Microsoft eine Reihe von Funktionen, um Ihr Data Governance-Schema in einem Microsoft 365.
 
 ## <a name="managing-information-governance-in-microsoft-365"></a>Verwalten der Informationsverwaltung in Microsoft 365
 
-Informationen zu Beginn finden Sie unter [Manage information governance](../compliance/manage-information-governance.md) and Data [Retention, Deletion and Destruction in Microsoft 365](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview).
+Informationen dazu finden Sie unter [Manage information governance](../compliance/manage-information-governance.md) and Data [Retention, Deletion and Destruction in Microsoft 365](/office365/Enterprise/office-365-data-retention-deletion-and-destruction-overview).
 
 ### <a name="develop-data-retention-schedules-for-containers-email-and-content"></a>Entwickeln von Datenaufbewahrungszeitplänen für Container, E-Mails und Inhalte
 
@@ -84,10 +84,10 @@ Denken Sie dabei an Folgendes:
 
 ### <a name="retention-policies-and-retention-labels"></a>Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
-Verwenden [Sie Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen,](../compliance/retention.md) um Inhalte in Microsoft 365 zu speichern oder zu löschen, die personenbezogene Daten enthalten oder voraussichtlich enthalten.
+Verwenden [Sie Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen,](../compliance/retention.md) um Inhalte in Microsoft 365, die personenbezogene Daten enthalten oder enthalten sollen, zu speichern oder zu löschen.
 
 ### <a name="records-management"></a>Datensatzverwaltung
 
-Verwenden Sie Aufbewahrungsbezeichnungen, die Inhalte als Datensatz deklarieren, um eine [Datensatzverwaltungslösung](../compliance/records-management.md) für Daten in Microsoft 365 zu implementieren.
+Verwenden Sie Aufbewahrungsbezeichnungen, die Inhalte als Datensatz deklarieren, um eine [Datensatzverwaltungslösung](../compliance/records-management.md) für Daten in Microsoft 365.
 
 Für den Datenschutz werden Anträge von Personen, die von der Rechtsabteilung empfangen werden, als Datensatz deklariert und können für unbegrenzte Zeit gespeichert oder mit Nachweisen beseitigt werden, um die Aufbewahrungsspezifikationen für gesetzliche Aktivitäten einzuhalten.

@@ -16,7 +16,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-apr2020
-description: Verwenden Sie die DLP-Berichte in Office 365, um die Anzahl der Übereinstimmungen, Außerkraftsetzungen oder falsch positiven Ergebnisse der DLP-Richtlinie zu sehen und festzustellen, ob sie im Laufe der Zeit nach oben oder unten zeigen.
+description: Verwenden Sie die DLP-Berichte in Office 365, um die Anzahl der Übereinstimmungen, Außerkraftsetzungen oder falsch positiven Ergebnisse der DLP-Richtlinie zu anzeigen und festzustellen, ob sie im Laufe der Zeit nach oben oder unten zeigen.
 ms.openlocfilehash: 742f0ef0334e714c7f31cbc2f97559993454f6b7
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -78,17 +78,17 @@ Berichte können Einblicke und Empfehlungen anzeigen, in denen Sie auf das rote 
 
 Zum Anzeigen von DLP-Berichten im Security & Compliance Center müssen Ihnen die:
 
-- **Rolle "Security Reader"** im Exchange Admin Center. Diese Rolle wird standardmäßig den Rollengruppen Organisationsverwaltung und Sicherheitsleseprogramm im Exchange Admin Center zugewiesen.
+- **Rolle "Security Reader"** im Exchange Admin Center. Diese Rolle wird standardmäßig den Rollengruppen Organisationsverwaltung und Sicherheitsleseprogramm im Exchange zugewiesen.
 
 - **View-Only DLP Compliance Management role** in the Security & Compliance Center. Diese Rolle wird standardmäßig den Rollengruppen Complianceadministrator, Organisationsverwaltung, Sicherheitsadministrator und Sicherheitsleseprogramm im Security & Compliance Center zugewiesen.
 
-- **Rolle "Nur Anzeigen von Empfängern"** im Exchange Admin Center. Standardmäßig ist diese Rolle den Rollengruppen Complianceverwaltung, Organisationsverwaltung und View-Only Organisationsverwaltung im Exchange Admin Center zugewiesen.
+- **Rolle "Nur Empfänger** anzeigen" im Exchange Admin Center. Diese Rolle wird standardmäßig den Rollengruppen Complianceverwaltung, Organisationsverwaltung und View-Only Organisationsverwaltung im Exchange zugewiesen.
 
 ## <a name="find-the-cmdlets-for-the-dlp-reports"></a>Suchen der Cmdlets für die DLP-Berichte
 
 Zur Verwendung der meisten Cmdlets für das Security &amp; Compliance Center müssen Sie folgende Aktionen ausführen:
   
-1. [Herstellen einer Verbindung mit dem Security &amp; Compliance Center mithilfe der Remote-PowerShell](/powershell/exchange/connect-to-scc-powershell&amp;clcid=0x409)
+1. [Verbinden zum Security &amp; Compliance Center mithilfe der Remote-PowerShell](/powershell/exchange/connect-to-scc-powershell&amp;clcid=0x409)
     
 2. Verwenden eines dieser [Security &amp; Compliance Center-Cmdlets](/powershell/exchange/exchange-online-powershell)
     

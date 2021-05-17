@@ -1,6 +1,6 @@
 ---
 title: Roadmap für die Verwaltung mobiler Geräte für Microsoft 365
-keywords: Microsoft 365, Microsoft 365 for Enterprise, Microsoft 365-Dokumentation, Verwaltung mobiler Geräte, Intune
+keywords: Microsoft 365, Microsoft 365 für Unternehmen, Microsoft 365 Dokumentation, Verwaltung mobiler Geräte, Intune
 author: JoeDavies-MSFT
 ms.author: josephd
 manager: laurawi
@@ -24,7 +24,7 @@ ms.locfileid: "51051460"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Roadmap für die Verwaltung mobiler Geräte für Microsoft 365
 
-Microsoft 365 for Enterprise enthält Features, mit deren Hilfe Geräte und ihre Apps innerhalb Ihrer Organisation verwaltet werden können. Durch die Verwaltung mobiler Geräte können Sie die Ressourcen Ihrer Organisation sichern und schützen.
+Microsoft 365 für Unternehmen enthält Features zur Unterstützung der Verwaltung von Geräten und deren Apps innerhalb Ihrer Organisation. Durch die Verwaltung mobiler Geräte können Sie die Ressourcen Ihrer Organisation sichern und schützen.
 
 Es gibt zwei Optionen für die Geräteverwaltung:
 
@@ -41,7 +41,7 @@ Außerdem bestimmen Sie, wie Sie persönliche Geräte und geräte im Besitz der 
 
 ## <a name="basic-mobility-and-security"></a>Grundlegende Mobilität und Sicherheit
 
-Dies ist in Microsoft 365 integrierte Und hilft Ihnen, die mobilen Geräte Ihrer Benutzer wie iPhones, iPads, Androids und Windows-Telefone zu sichern und zu verwalten. Sie können Sicherheitsrichtlinien für Geräte erstellen und verwalten, ein Gerät aus der Ferne zurücksetzen und detaillierte Berichte zu Geräten anzeigen.
+Dies ist in Microsoft 365 und hilft Ihnen beim Sichern und Verwalten der mobilen Geräte Ihrer Benutzer wie iPhones, iPads, Androids und Windows Smartphones. Sie können Sicherheitsrichtlinien für Geräte erstellen und verwalten, ein Gerät aus der Ferne zurücksetzen und detaillierte Berichte zu Geräten anzeigen.
 
 ## <a name="choose-between-the-two-options"></a>Wählen Sie zwischen den beiden Optionen aus.
 
@@ -59,6 +59,6 @@ Microsoft stellt eine Reihe von Empfehlungen für [Identität und Gerätezugriff
 - [Voraussetzungen](../security/defender-365-security/identity-access-prerequisites.md)
 - [Allgemeine Identitäts- und Gerätezugriffsrichtlinien](../security/defender-365-security/identity-access-policies.md)
 
-## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Funktionsweise der Geräteverwaltung für Microsoft 365 durch Contoso
+## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Wie Contoso die Geräteverwaltung für Microsoft 365
 
-Informationen dazu, wie ein fiktives, aber repräsentatives multinationales Unternehmen seine Infrastruktur für die Verwaltung mobiler Geräte mit Microsoft 365-Clouddiensten bereitgestellt hat, finden Sie unter [Mobile Device Management for Contoso](contoso-mdm.md).
+Informationen dazu, wie ein fiktives, aber repräsentatives multinationales Unternehmen seine mobile Geräteverwaltungsinfrastruktur mit Microsoft 365 bereitgestellt hat, finden Sie unter [Mobile Device Management for Contoso](contoso-mdm.md).

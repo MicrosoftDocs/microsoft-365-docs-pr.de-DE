@@ -18,7 +18,7 @@ ms.custom:
 ms.reviewer: argani
 search.appverid:
 - MET150
-description: Erfahren Sie, wie Sie Lizenzen für Drittanbieter-Apps im Microsoft 365 verwalten.
+description: Erfahren Sie, wie Sie Lizenzen für Apps von Drittanbietern im Microsoft 365 Admin Center verwalten.
 ms.openlocfilehash: 91c2a75aefe28b3525996522f7fdd55d22524d43
 ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
 ms.translationtype: MT
@@ -36,7 +36,7 @@ Sie müssen ein globaler, Lizenz- oder Benutzeradministrator sein, um Lizenzen z
 
 ## <a name="assign-third-party-app-licenses-to-users-or-groups"></a>Zuweisen von Drittanbieter-App-Lizenzen zu Benutzern oder Gruppen
 
-1. Wechseln Sie Microsoft 365 Admin Center zur Seite  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Abrechnungslizenzen.</a>
+1. Wechseln Sie im Microsoft 365 Admin Center zur Seite  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Abrechnungslizenzen.</a>
 2. Wählen Sie die App aus, für die Sie Lizenzen zuweisen möchten.
 3. Wählen Sie auf der Seite Lizenzdetails die Option Lizenzen **zuweisen aus.**
 4. Geben Sie **im** Bereich Lizenzen zuweisen den Namen eines Benutzers oder einer Gruppe ein, und wählen Sie ihn dann aus den Ergebnissen aus, um ihn der Liste hinzuzufügen.

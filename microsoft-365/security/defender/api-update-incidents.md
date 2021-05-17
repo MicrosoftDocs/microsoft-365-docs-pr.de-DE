@@ -81,7 +81,7 @@ Stellen Sie im Anforderungstext die Werte für die Felder zur Verfügung, die ak
 Eigenschaft | Typ | Beschreibung
 -|-|-
 status | Enum | Gibt den aktuellen Status des Vorfalls an. Mögliche Werte sind: ```Active``` ```Resolved``` , , und ```Redirected``` .
-assignedTo | string | Besitzer des Vorfalls.
+assignedTo | Zeichenfolge | Besitzer des Vorfalls.
 classification | Enum | Spezifikation des Vorfalls. Mögliche Werte sind: ```Unknown```, ```FalsePositive``` und ```TruePositive```.
 Bestimmung | Enum | Gibt die Ermittlung des Vorfalls an. Mögliche Werte: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
 tags | Zeichenfolgenliste | Liste der Incident-Tags.

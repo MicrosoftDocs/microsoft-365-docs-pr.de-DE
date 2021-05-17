@@ -1,6 +1,6 @@
 ---
 title: Attribute für Richtlinien für Informationsbarrieren
-description: Dieser Artikel ist eine Referenz für die Azure Active Directory-Benutzerkontenattribute, die Sie zum Definieren von Informationsbarrieresegmenten verwenden können.
+description: Dieser Artikel ist eine Referenz für Azure Active Directory Benutzerkontenattribute, die Sie zum Definieren von Informationsbarrieresegmenten verwenden können.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -38,9 +38,9 @@ Die in diesem Artikel aufgeführten Attribute können zum Definieren oder Bearbe
 
 2. Stellen Sie sicher, dass für die Benutzerkonten werte ausgefüllt sind, die Sie in Schritt 1 ausgewählt haben. Zeigen Sie Die Details des Benutzerkontos an, und bearbeiten Sie bei Bedarf Benutzerkonten so, dass Attributwerte enthalten sind. 
 
-    - Informationen zum Bearbeiten mehrerer Konten (oder Verwenden von PowerShell zum Bearbeiten eines einzelnen Kontos) finden Sie unter [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).
+    - Informationen zum Bearbeiten mehrerer Konten (oder zum Bearbeiten eines einzelnen Kontos mithilfe von PowerShell) finden Sie unter [Configure user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).
 
-    - Informationen zum Bearbeiten eines einzelnen Kontos finden Sie unter Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers [mithilfe von Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+    - Informationen zum Bearbeiten eines einzelnen Kontos finden Sie unter Hinzufügen oder Aktualisieren der Profilinformationen eines [Benutzers mithilfe Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
 3. [Definieren von Segmenten mit PowerShell](information-barriers-policies.md#define-segments-using-powershell), ähnlich den folgenden Beispielen:
 
@@ -57,10 +57,10 @@ Die in diesem Artikel aufgeführten Attribute können zum Definieren oder Bearbe
 
 In der folgenden Tabelle sind die Attribute aufgeführt, die Sie mit Informationsbarrieren verwenden können.
 
-|**Azure Active <br/> Directory-Eigenschaftsname (LDAP-Anzeigename)**|**Name der Exchange-Eigenschaft**|
+|**Azure Active Directory <br/> -Eigenschaftsname (LDAP-Anzeigename)**|**Exchange-Eigenschaftsname**|
 |:---------------------------------------------------------------|:-------------------------|
 | Co | Co |
-| Company | Company |
+| Unternehmen | Unternehmen |
 | Abteilung | Abteilung |
 | ExtensionAttribute1 | CustomAttribute1 |
 | ExtensionAttribute2 | CustomAttribute2 |

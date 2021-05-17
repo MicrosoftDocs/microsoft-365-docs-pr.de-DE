@@ -17,7 +17,7 @@ ID | Kategorie | ER | Addresses | Ports
 ID | Kategorie | ER | Addresses | Ports
 -- | -------------------- | --- | ------------------------------------------------------------------------------------------------------------------- | ----------------
 9  | Optimieren<BR>Erforderlich | Ja | `*.dps.mil, *.sharepoint-mil.us`<BR>`20.34.12.0/22, 104.212.48.0/23, 2001:489a:2204::/63, 2001:489a:2204:c00::/54` | **TCP:** 443, 80
-10   | Standard<BR>Erforderlich | Nein | `*.wns.windows.com, g.live.com, odc.officeapps.live.com, officeclient.microsoft.com, oneclient.sfx.ms` | **TCP:** 443, 80
+10 | Standard<BR>Erforderlich | Nein | `*.wns.windows.com, g.live.com, odc.officeapps.live.com, officeclient.microsoft.com, oneclient.sfx.ms` | **TCP:** 443, 80
 19 | Zulassen<BR>Erforderlich | Ja | `*.od.apps.mil, od.apps.mil` | **TCP:** 443, 80
 20 | Standard<BR>Erforderlich | Nein | `*.svc.ms, az741266.vo.msecnd.net, pf.pipe.aria.microsoft.com, spoprod-a.akamaihd.net, static.sharepointonline.com` | **TCP:** 443, 80
 

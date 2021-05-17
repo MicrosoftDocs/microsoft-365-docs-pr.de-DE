@@ -1,5 +1,5 @@
 ---
-title: Verwalten von SharePoint mit PowerShell
+title: Verwalten SharePoint mit PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -27,19 +27,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50923267"
 ---
-# <a name="manage-sharepoint-with-powershell"></a>Verwalten von SharePoint mit PowerShell
+# <a name="manage-sharepoint-with-powershell"></a>Verwalten SharePoint mit PowerShell
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-SharePoint-Administratoren müssen Websites, Websitegruppen und Benutzer verwalten. Obwohl Sie einige dieser Aufgaben im Microsoft 365 Admin Center ausführen können, sind andere in PowerShell einfacher. Weitere Informationen finden Sie in den folgenden Artikeln:
+SharePoint administratoren müssen Websites, Websitegruppen und Benutzer verwalten. Obwohl Sie einige dieser Aufgaben im Microsoft 365 ausführen können, sind andere in PowerShell einfacher. Weitere Informationen finden Sie in den folgenden Artikeln:
 
 - [Erste Schritte mit der SharePoint Online-Verwaltungsshell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
   
-- [Erstellen von SharePoint-Onlinewebsites und Hinzufügen von Benutzern mit PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
+- [Erstellen SharePoint Onlinewebsites und Hinzufügen von Benutzern mit PowerShell](create-sharepoint-sites-and-add-users-with-powershell.md)
     
-- [Verwalten von SharePoint-Onlinebenutzern und -Gruppen mit PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
+- [Verwalten SharePoint Onlinebenutzern und -gruppen mit PowerShell](manage-sharepoint-users-and-groups-with-powershell.md)
     
-- [Verwalten von SharePoint-Onlinewebsitegruppen mit PowerShell](manage-sharepoint-site-groups-with-powershell.md)
+- [Verwalten SharePoint Onlinewebsitegruppen mit PowerShell](manage-sharepoint-site-groups-with-powershell.md)
     
 ## <a name="see-also"></a>Siehe auch
 

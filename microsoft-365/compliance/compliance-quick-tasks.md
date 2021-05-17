@@ -100,7 +100,7 @@ Schrittweise Anleitungen zum Planen und Konfigurieren der Kommunikationskonformi
 
 Vertraulichkeitsbezeichnungen, Typen vertraulicher Informationen, Aufbewahrungsbezeichnungen und Richtlinien sowie trainierbare Klassifizierungen können verwendet werden, um vertrauliche Elemente in Exchange, SharePoint und OneDrive zu klassifizieren und zu beschriften, wie Sie in den vorherigen Aufgaben gesehen haben. Der letzte Schritt ihrer schnellen Aufgabenreise besteht darin, zu sehen, welche Elemente mit bezeichnungen versehen wurden und welche Aktionen Ihre Benutzer für diese vertraulichen Elemente ausführen. [Inhalts-Explorer](data-classification-content-explorer.md) und [Aktivitäts-Explorer](data-classification-activity-explorer.md) bieten diese Sichtbarkeit.
 
-### <a name="content-explorer"></a>Inhaltsexplorer
+### <a name="content-explorer"></a>Inhalts-Explorer
  Mit dem Inhalts-Explorer können Sie im systemeigenen Format alle Elemente anzeigen, die als vertraulicher Informationstyp klassifiziert wurden oder zu einer bestimmten Klassifizierung durch einen trainierbaren Klassifikator gehören, sowie alle Elemente, auf die Vertraulichkeits- oder Aufbewahrungsbezeichnungen angewendet wurden.
 
 Schrittweise Anleitungen zur Verwendung des Inhalts-Explorers finden Sie unter [Know your data - data classification overview](data-classification-overview.md)und Get started with content [explorer](data-classification-content-explorer.md).

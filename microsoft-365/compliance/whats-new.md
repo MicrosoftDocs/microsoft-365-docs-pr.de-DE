@@ -211,7 +211,7 @@ Die folgenden Microsoft 365 unterstützen jetzt die Erkennung [](/microsoftteams
 - Vertraulichkeitsbezeichnungen werden jetzt für Us Government Tenants (GCC und GCC-H) unterstützt.
 - Neue [automatische Bezeichnungsunterstützung](sensitivity-labels-office-apps.md) für macOS.
 
-## <a name="december-2020"></a>Dezember 2020
+## <a name="december-2020"></a>Dezember 2020
 
 ### <a name="spotlight-new-content-for-insider-risk-solutions"></a>Spotlight: Neue Inhalte für Insider-Risikolösungen
 
@@ -289,7 +289,7 @@ Zum Anzeigen von Elementen während einer Dispositionsüberprüfung müssen Benu
 - [(Vorschau) Einstellungen für die externe Freigabe für SharePoint Websites](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings). Beim Erstellen einer Bezeichnung, die für Gruppen und Websites verwendet wird, wird eine Option zum Steuern der externen Freigabe für SharePoint websites angezeigt, auf die die Bezeichnung angewendet wurde. Sie können angeben, dass die Freigabe für alle, neue und vorhandene Gäste, nur für vorhandene Gäste oder nur für Benutzer in Ihrer Organisation zulässig ist. Wenn die Bezeichnung angewendet wird, ersetzen die Bezeichnungseinstellungen alle externen Freigabeeinstellungen, die im SharePoint [Admin Center konfiguriert sind.](/sharepoint/change-external-sharing-site)
 - [Entfernen von Bezeichnung und Verschlüsselung aus einem mit Bezeichnungen versehenen Dokument](sensitivity-labels-sharepoint-onedrive-files.md#remove-encryption-for-a-labeled-document). Zum Entfernen einer Bezeichnung und der verschlüsselung, die sie aus einem mit Bezeichnungen versehenen Dokument in SharePoint erzwingt, können globale Administratoren und SharePoint Administratoren das neue `Unlock-SPOSensitivityLabelEncryptedFile` Cmdlet ausführen. Dieses Cmdlet wird auch dann ausgeführt, wenn der Administrator nicht über Zugriffsberechtigungen für die Website oder Datei verfügt oder wenn der Azure Rights Management-Dienst nicht verfügbar ist.
 
-## <a name="october-2020"></a>Oktober 2020
+## <a name="october-2020"></a>Oktober 2020
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 

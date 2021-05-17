@@ -74,7 +74,7 @@ Microsoft 365 verfügt über fünf vordefinierte Klassifikatoren:
 - **Quellcode**: erkennt Elemente, die eine Reihe von Anweisungen und Anweisungen enthalten, die in den 25 am meisten verwendeten Computerprogrammiersprachen auf GitHub
     - ActionScript
     - C
-    - C #
+    - C#
     - C++
     - Clojure
     - CoffeeScript

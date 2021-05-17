@@ -52,7 +52,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `OSArchitecture` | string | Die Architektur des Betriebssystem, das auf dem Computer ausgeführt wird. |
 | `OSPlatform` | string | Die Plattform des Betriebssystem, das auf dem Computer ausgeführt wird. Dies gibt bestimmte Betriebssysteme an, einschließlich Variationen innerhalb derselben Familie, z. B. Windows 10 und Windows 7 |
 | `OSBuild` | Zeichenfolge | Erstellen der Version des Betriebssystems, das auf dem Computer ausgeführt wird |
-| `IsAzureADJoined` | Boolescher Wert | Boolescher Indikator, ob der Computer mit Azure Active Directory verbunden ist |
+| `IsAzureADJoined` | boolean | Boolescher Indikator, ob der Computer mit der Azure Active Directory |
 | `AadObjectId` | Zeichenfolge | Eindeutige ID für das Gerät in Azure AD |
 | `LoggedOnUsers` | Zeichenfolge | Liste aller Benutzer, die zum Zeitpunkt des Ereignisses im JSON-Arrayformat auf dem Computer angemeldet sind |
 | `RegistryDeviceTag` | Zeichenfolge | Computertag, das über die Registrierung hinzugefügt wurde |

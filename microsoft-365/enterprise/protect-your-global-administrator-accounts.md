@@ -1,5 +1,5 @@
 ---
-title: Schützen Ihrer globalen Microsoft 365-Administratorkonten
+title: Schützen Ihrer Microsoft 365 globalen Administratorkonten
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -20,7 +20,7 @@ search.appverid:
 f1.keywords:
 - NOCSH
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
-description: Dieser Artikel enthält Informationen zum Schutz des globalen Administratorzugriffs auf Ihr Microsoft 365-Abonnement.
+description: Dieser Artikel enthält Informationen zum Schutz des globalen Administratorzugriffs auf Microsoft 365 Abonnement.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 4ade5fd8070a656f976caa75c16ab92cadb7b64a
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -29,11 +29,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50929048"
 ---
-# <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Schützen Ihrer globalen Microsoft 365-Administratorkonten
+# <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Schützen Ihrer Microsoft 365 globalen Administratorkonten
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Sicherheitsverletzungen eines Microsoft 365-Abonnements, einschließlich der Informationsernte und Phishingangriffe, werden in der Regel durch Kompromittieren der Anmeldeinformationen eines globalen Microsoft 365-Administratorkontos durchgeführt. Sicherheit in der Cloud ist eine Partnerschaft zwischen Ihnen und Microsoft:
+Sicherheitsverletzungen eines Microsoft 365-Abonnements, einschließlich der Informationsernte und Phishingangriffe, werden in der Regel durch Kompromittierung der Anmeldeinformationen eines Microsoft 365 Administratorkontos durchgeführt. Sicherheit in der Cloud ist eine Partnerschaft zwischen Ihnen und Microsoft:
   
 - Microsoft Cloud Services sind auf einer Grundlage von Vertrauen und Sicherheit aufgebaut. Microsoft bietet Ihnen Sicherheitssteuerelemente und -funktionen, mit deren Hilfe Sie Ihre Daten und Anwendungen schützen können.
     
@@ -41,30 +41,30 @@ Sicherheitsverletzungen eines Microsoft 365-Abonnements, einschließlich der Inf
     
 Microsoft bietet Funktionen zum Schutz Ihrer Organisation, die jedoch nur dann wirksam sind, wenn Sie sie verwenden. Wenn Sie sie nicht verwenden, sind Sie möglicherweise anfällig für Angriffe. Um Ihre globalen Administratorkonten zu schützen, ist Microsoft hier, um Ihnen mit detaillierten Anweisungen zu helfen:
   
-1. Erstellen Sie dedizierte globale Microsoft 365-Administratorkonten, und verwenden Sie sie nur bei Bedarf.
+1. Erstellen Sie dedizierte Microsoft 365 globalen Administratorkonten, und verwenden Sie sie nur bei Bedarf.
     
-2. Konfigurieren Sie die mehrstufige Authentifizierung für Ihre dedizierten globalen Microsoft 365-Administratorkonten, und verwenden Sie die stärkste Form der sekundären Authentifizierung.
+2. Konfigurieren Sie die mehrstufige Authentifizierung für Ihre Microsoft 365 globalen Administratorkonten, und verwenden Sie die stärkste Form der sekundären Authentifizierung.
     
 > [!Note]
 > Obwohl sich dieser Artikel auf globale Administratorkonten konzentriert, sollten Sie berücksichtigen, ob zusätzliche Konten mit umfassenden Berechtigungen für den Zugriff auf die Daten in Ihrem Abonnement, z. B. eDiscovery-Administrator- oder Sicherheits- oder Complianceadministratorkonten, auf die gleiche Weise geschützt werden sollten. <br > Ein globales Administratorkonto kann ohne Hinzufügen von Lizenzen erstellt werden.
   
-## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Schritt 1: Erstellen dedizierter globaler Microsoft 365-Administratorkonten und deren Verwendung nur bei Bedarf
+## <a name="step-1-create-dedicated-microsoft-365-global-administrator-accounts-and-use-them-only-when-necessary"></a>Schritt 1. Erstellen von dedizierten Microsoft 365 globalen Administratorkonten und deren Verwendung nur bei Bedarf
 
 Es gibt relativ wenige administrative Aufgaben, z. B. das Zuweisen von Rollen zu Benutzerkonten, die globale Administratorrechte erfordern. Gehen Sie daher wie die folgenden Schritte vor, anstatt alltägliche Benutzerkonten zu verwenden, denen die globale Administratorrolle zugewiesen wurde:
   
-1. Bestimmen Sie den Satz von Benutzerkonten, denen die globale Administratorrolle zugewiesen wurde. Sie können dies im Microsoft 365 Admin Center oder mit dem folgenden Azure Active (Azure AD)-Verzeichnis-PowerShell für Graph-Befehl tun:
+1. Bestimmen Sie den Satz von Benutzerkonten, denen die globale Administratorrolle zugewiesen wurde. Sie können dies im Microsoft 365 Admin Center oder mit dem folgenden Azure Active (Azure AD) Directory PowerShell für Graph tun:
   
   ```powershell
   Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Global Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
-2. Melden Sie sich bei Ihrem Microsoft 365-Abonnement mit einem Benutzerkonto an, dem die globale Administratorrolle zugewiesen wurde.
+2. Melden Sie sich Microsoft 365 Abonnement mit einem Benutzerkonto an, dem die globale Administratorrolle zugewiesen wurde.
     
-3. Erstellen Sie bis zu vier dedizierte globale Administratorbenutzerkonten. **Verwenden Sie sichere Kennwörter mit einer Länge von mindestens 12 Zeichen.** Weitere [Informationen finden Sie unter Erstellen](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) eines starken Kennworts. Speichern Sie die Kennwörter für die neuen Konten an einem sicheren Ort. 
+3. Erstellen Sie bis zu vier dedizierte globale Administratorbenutzerkonten. **Verwenden Sie sichere Kennwörter mit einer Länge von mindestens 12 Zeichen.** Weitere [Informationen finden Sie unter Erstellen](https://support.microsoft.com/help/4026406/microsoft-account-create-a-strong-password) eines starken Kennworts. Store die Kennwörter für die neuen Konten an einem sicheren Ort. 
     
 4. Weisen Sie die globale Administratorrolle jedem der neuen dedizierten globalen Administratorbenutzerkonten zu.
     
-5. Melden Sie sich bei Microsoft 365 ab.
+5. Melden Sie sich von Microsoft 365.
     
 6. Melden Sie sich mit einem der neuen dedizierten globalen Administratorbenutzerkonten an.
     
@@ -74,7 +74,7 @@ Es gibt relativ wenige administrative Aufgaben, z. B. das Zuweisen von Rollen zu
     
   - Weisen Sie dem Konto Administratorrollen zu, die für die Auftragsfunktion und -verantwortung dieses Benutzers geeignet sind. Weitere Informationen zu verschiedenen Administratorrollen in Microsoft 365 finden Sie unter [Informationen zu Administratorrollen](/office365/admin/add-users/about-admin-roles).
     
-8. Melden Sie sich bei Microsoft 365 ab.
+8. Melden Sie sich von Microsoft 365.
     
 Die Ergebnisse sollten:
   
@@ -86,14 +86,14 @@ Die Ergebnisse sollten:
 
 - Alle anderen normalen Benutzerkonten für die Verwaltung Ihres Abonnements verfügen über Administratorrollen, die ihren beruflichen Zuständigkeiten zugewiesen sind.
     
-Ab diesem Moment melden Sie sich mit den dedizierten globalen Administratorkonten nur für Aufgaben an, für die globale Administratorrechte erforderlich sind. Alle anderen Microsoft 365-Verwaltungen müssen durch Zuweisen anderer Verwaltungsrollen zu Benutzerkonten durchgeführt werden.
+Ab diesem Moment melden Sie sich mit den dedizierten globalen Administratorkonten nur für Aufgaben an, für die globale Administratorrechte erforderlich sind. Alle anderen Microsoft 365 müssen durch Zuweisen anderer Verwaltungsrollen zu Benutzerkonten durchgeführt werden.
   
 > [!NOTE]
-> Dies erfordert zusätzliche Schritte, um sich als Ihr tägliches Benutzerkonto abmelden und sich mit einem dedizierten globalen Administratorkonto anmelden zu können. Dies muss jedoch nur gelegentlich für globale Administratorvorgänge durchgeführt werden. Bedenken Sie, dass die Wiederherstellung Ihres Microsoft 365-Abonnements nach einer Verletzung eines globalen Administratorkontos sehr viel mehr Schritte erfordert.
+> Dies erfordert zusätzliche Schritte, um sich als Ihr tägliches Benutzerkonto abmelden und sich mit einem dedizierten globalen Administratorkonto anmelden zu können. Dies muss jedoch nur gelegentlich für globale Administratorvorgänge durchgeführt werden. Bedenken Sie, dass die Microsoft 365 nach einer Verletzung eines globalen Administratorkontos viel mehr Schritte erfordert.
   
-## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>Schritt 2: Konfigurieren der mehrstufigen Authentifizierung für Ihre dedizierten globalen Microsoft 365-Administratorkonten
+## <a name="step-2-configure-multi-factor-authentication-for-your-dedicated-microsoft-365-global-administrator-accounts"></a>Schritt 2. Konfigurieren der mehrstufigen Authentifizierung für Ihre dedizierten Microsoft 365 globalen Administratorkonten
 
-Die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) erfordert zusätzliche Informationen über den Kontonamen und das Kennwort hinaus. Microsoft 365 unterstützt die folgenden zusätzlichen Überprüfungsmethoden:
+Die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) erfordert zusätzliche Informationen über den Kontonamen und das Kennwort hinaus. Microsoft 365 unterstützt diese zusätzlichen Überprüfungsmethoden:
   
 - Der Microsoft Authenticator-App
 
@@ -111,15 +111,15 @@ Die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) erfordert z
 
 Wenn Sie ein kleines Unternehmen sind, das benutzerkonten verwendet, die nur in der Cloud gespeichert sind (das nur in der Cloud enthaltene Identitätsmodell), richten Sie MFA ein, um [MFA](/office365/admin/security-and-compliance/set-up-multi-factor-authentication) mithilfe eines Telefonanrufs oder eines Textnachrichtenüberprüfungscodes zu konfigurieren, der für jedes dedizierte globale Administratorkonto an ein Smartphone gesendet wird.
     
-Wenn Sie eine größere Organisation sind, die ein Microsoft 365-Hybrididentitätsmodell verwendet, haben Sie mehr Überprüfungsoptionen. Wenn Sie bereits über die Sicherheitsinfrastruktur für eine stärkere sekundäre Authentifizierungsmethode verfügen, richten Sie [MFA ein,](../admin/security-and-compliance/set-up-multi-factor-authentication.md) und konfigurieren Sie jedes dedizierte globale Administratorkonto für die entsprechende Überprüfungsmethode.
+Wenn Sie eine größere Organisation sind, die ein Microsoft 365 verwendet, haben Sie mehr Überprüfungsoptionen. Wenn Sie bereits über die Sicherheitsinfrastruktur für eine stärkere sekundäre Authentifizierungsmethode verfügen, richten Sie [MFA ein,](../admin/security-and-compliance/set-up-multi-factor-authentication.md) und konfigurieren Sie jedes dedizierte globale Administratorkonto für die entsprechende Überprüfungsmethode.
   
-Wenn die Sicherheitsinfrastruktur für die gewünschte strengere Überprüfungsmethode nicht für Microsoft 365 MFA verfügbar ist und funktioniert, wird dringend empfohlen, dedizierte globale Administratorkonten mit MFA mithilfe der Microsoft Authenticator-App, eines Telefonanrufs oder eines Textnachrichtüberprüfungscodes zu konfigurieren, der für Ihre globalen Administratorkonten an ein Smartphone gesendet wird. Verlassen Sie ihre dedizierten globalen Administratorkonten nicht ohne den zusätzlichen Schutz, der von MFA bereitgestellt wird.
+Wenn die Sicherheitsinfrastruktur für die gewünschte strengere Überprüfungsmethode nicht für Microsoft 365 MFA verfügbar ist und funktioniert, wird dringend empfohlen, dedizierte globale Administratorkonten mit MFA mithilfe der Microsoft Authenticator-App, eines Telefonanrufs oder eines Textnachrichtüberprüfungscodes zu konfigurieren, der an ein Smartphone für Ihre globalen Administratorkonten gesendet wird, als Zwischensicherheitsmaßnahme. Verlassen Sie ihre dedizierten globalen Administratorkonten nicht ohne den zusätzlichen Schutz, der von MFA bereitgestellt wird.
   
-Weitere Informationen finden Sie unter [MFA für Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
+Weitere Informationen finden Sie unter [MFA for Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md).
   
-Informationen zum Herstellen einer Verbindung mit Microsoft 365-Diensten mit MFA und PowerShell finden Sie in den folgenden Artikeln:
+Informationen zum Herstellen einer Verbindung Microsoft 365 Mit MFA und PowerShell finden Sie in den folgenden Artikeln:
 
-- [PowerShell für Microsoft 365 für Benutzerkonten, Gruppen und Lizenzen](connect-to-microsoft-365-powershell.md)
+- [PowerShell für Microsoft 365 Für Benutzerkonten, Gruppen und Lizenzen](connect-to-microsoft-365-powershell.md)
 - [Microsoft Teams](/microsoftteams/teams-powershell-install)
 - [Exchange Online](/powershell/exchange/mfa-connect-to-exchange-online-powershell#connect-to-exchange-online-powershell-using-mfa)
 - [SharePoint Online](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online#to-connect-with-multifactor-authentication-mfa)
@@ -131,7 +131,7 @@ Verwenden Sie diese zusätzlichen Methoden, um sicherzustellen, dass Ihr globale
   
 ### <a name="privileged-access-workstation"></a>Arbeitsstation mit privilegiertem Zugriff
 
-Um sicherzustellen, dass die Ausführung von Aufgaben mit besonders privilegierten Berechtigungen so sicher wie möglich ist, verwenden Sie eine Workstation mit privilegiertem Zugriff (Privileged Access Workstation, PAW). Eine PAW ist ein dedizierter Computer, der nur für vertrauliche Konfigurationsaufgaben verwendet wird, z. B. microsoft 365-Konfiguration, für die ein globales Administratorkonto erforderlich ist. Da dieser Computer nicht täglich für Internetbrowsen oder E-Mails verwendet wird, ist er besser vor Internetangriffen und Bedrohungen geschützt.
+Um sicherzustellen, dass die Ausführung von Aufgaben mit besonders privilegierten Berechtigungen so sicher wie möglich ist, verwenden Sie eine Workstation mit privilegiertem Zugriff (Privileged Access Workstation, PAW). Eine PAW ist ein dedizierter Computer, der nur für vertrauliche Konfigurationsaufgaben verwendet wird, z. B. Microsoft 365 Konfiguration, für die ein globales Administratorkonto erforderlich ist. Da dieser Computer nicht täglich für Internetbrowsen oder E-Mails verwendet wird, ist er besser vor Internetangriffen und Bedrohungen geschützt.
   
 Anweisungen zum Einrichten einer PAW finden Sie unter [https://aka.ms/cyberpaw](/security/compass/privileged-access-devices) .
 
@@ -168,13 +168,13 @@ Informationen zum Aktivieren der Verwaltung des privilegierten Zugriffs finden S
 
 Weitere Informationen finden Sie unter [Privileged access management](/office365/securitycompliance/privileged-access-management-overview).
 
-### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Sicherheitsinformations- und Ereignisverwaltungssoftware (SIEM) für die Microsoft 365-Protokollierung
+### <a name="security-information-and-event-management-siem-software-for-microsoft-365-logging"></a>Sicherheitsinformations- und Ereignisverwaltungssoftware (SIEM) für Microsoft 365 Protokollierung
 
-Die auf einem Server ausgeführte SIEM-Software führt eine Echtzeitanalyse von Sicherheitswarnungen und Ereignissen durch, die von Anwendungen und Netzwerkhardware erstellt wurden. Damit Ihr SIEM-Server Microsoft 365-Sicherheitswarnungen und -ereignisse in seine Analyse- und Berichtsfunktionen integrieren kann, integrieren Sie Azure AD in Sie SEIM. Weitere [Informationen finden Sie unter Introduction to Azure Log Integration](/azure/security/security-azure-log-integration-overview).
+Die auf einem Server ausgeführte SIEM-Software führt eine Echtzeitanalyse von Sicherheitswarnungen und Ereignissen durch, die von Anwendungen und Netzwerkhardware erstellt wurden. Damit Ihr SIEM-Server Microsoft 365 sicherheitswarnungen und -ereignisse in seine Analyse- und Berichtsfunktionen integrieren kann, integrieren Sie Azure AD in Sie SEIM. Weitere [Informationen finden Sie unter Einführung in Azure Log Integration](/azure/security/security-azure-log-integration-overview).
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Informationen zum Einrichten der Identität für Ihr Microsoft 365-Abonnement finden Sie unter:
+Wenn Sie die Identität für Ihr abonnement Microsoft 365 einrichten, lesen Sie:
 
 - [Nur cloudbasierte Identitäten,](cloud-only-identities.md) wenn Sie nur cloudbasierte Identität verwenden
 - [Vorbereiten der Verzeichnissynchronisierung](prepare-for-directory-synchronization.md) bei Verwendung der Hybrididentität

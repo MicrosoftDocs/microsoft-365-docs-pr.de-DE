@@ -23,7 +23,7 @@ ms.locfileid: "50920656"
 
 ## <a name="initial-deployment"></a>Erstbereitstellung
 
-Die meisten Hardwareanbieter enthalten teams noch nicht als Teil ihrer Bilder, daher stellt Microsoft Managed Desktop Teams mithilfe von Microsoft Intune auf Ihren Geräten zur Verfügung. Auf allen verwalteten Geräten ist das [Teams .msi-Paket](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) installiert, um sicherzustellen, dass alle Benutzer, die sich bei einem Gerät anmelden, Microsoft Teams einsatzbereit sind. Wenn das Paket zum ersten Mal installiert ist, wird Teams automatisch gestartet und dem Desktop eine Verknüpfung hinzugefügt.
+Die meisten Hardwareanbieter enthalten teams noch nicht als Teil ihrer Bilder, daher stellt Microsoft Managed Desktop Teams mithilfe von Microsoft Intune auf Ihren Geräten zur Verfügung. Auf allen verwalteten Geräten ist [das Teams .msi installiert,](/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) um sicherzustellen, dass alle Benutzer, die sich bei einem Gerät anmelden, Microsoft Teams einsatzbereit sind. Wenn das Paket zum ersten Mal installiert ist, wird Teams automatisch gestartet und dem Desktop eine Verknüpfung hinzugefügt.
 
 ### <a name="microsoft-intune-changes"></a>Änderungen an Microsoft Intune
 

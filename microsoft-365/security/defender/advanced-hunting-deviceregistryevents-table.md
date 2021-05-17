@@ -1,7 +1,7 @@
 ---
 title: DeviceRegistryEvents-Tabelle im schema der erweiterten Suche
 description: Informationen zu Registrierungsereignissen, die Sie in der DeviceRegistryEvents-Tabelle des erweiterten Suchschemas abfragen können
-keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, registryevents, registry, DeviceRegistryEvents, key, subkey, value
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, registryevents, registry, DeviceRegistryEvents, key, subkey, value
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

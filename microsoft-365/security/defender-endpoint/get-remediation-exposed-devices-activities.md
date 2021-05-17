@@ -62,10 +62,10 @@ Delegiert (Geschäfts-, Schul- oder Unikonto) | RemediationTask.Read.Read | \'In
 
 Property (id) | Datentyp | Beschreibung | Beispiel
 :---|:---|:---|:---
-id | Zeichenfolge | Geräte-ID | w2957837fwda8w9ae7f023dba081059dw8d94503
-computerDnsName | Zeichenfolge | Gerätename | PC-SRV2012R2Foo.UserNameVldNet.local
-osPlatform | Zeichenfolge | Gerätebetriebssystem | WindowsServer2012R2
-rbacGroupName | Zeichenfolge | Name der Gerätegruppe, der dieses Gerät zugeordnet ist | Server
+id | String | Geräte-ID | w2957837fwda8w9ae7f023dba081059dw8d94503
+computerDnsName | String | Gerätename | PC-SRV2012R2Foo.UserNameVldNet.local
+osPlatform | String | Gerätebetriebssystem | WindowsServer2012R2
+rbacGroupName | String | Name der Gerätegruppe, der dieses Gerät zugeordnet ist | Server
 
 ## <a name="example"></a>Beispiel
 

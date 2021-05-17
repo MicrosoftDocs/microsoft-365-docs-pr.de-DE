@@ -22,7 +22,7 @@ ms.locfileid: "50923720"
 ---
 # <a name="microsoft-365-multi-geo-ediscovery-configuration"></a>Konfiguration von Microsoft 365 Multi-Geo eDiscovery
 
-[Erweiterte eDiscovery-Funktionen](../compliance/overview-ediscovery-20.md) ermöglichen es einem Multi-Geo-eDiscovery-Administrator, alle Geografischen zu durchsuchen, ohne einen "Region"-Sicherheitsfilter verwenden zu müssen. Daten werden in die Azure-Instanz des zentralen Standorts des Multi-Geo-Mandanten exportiert. 
+[Advanced eDiscovery](../compliance/overview-ediscovery-20.md) ermöglicht es einem Multi-Geo-eDiscovery-Administrator, alle Geografischen zu durchsuchen, ohne einen "Region"-Sicherheitsfilter verwenden zu müssen. Daten werden in die Azure-Instanz des zentralen Standorts des Multi-Geo-Mandanten exportiert. 
 
 Ohne erweiterte eDiscovery-Funktionen kann ein eDiscovery-Manager oder Administrator eines Multi-Geo-Mandanten eDiscovery nur am zentralen Standort dieses Mandanten durchführen. Um die Möglichkeit zur Durchführung von eDiscovery für Satellitenstandorte zu unterstützen, steht über PowerShell ein neuer Compliancesicherheitsfilterparameter namens "Region" zur Verfügung. Dieser Parameter kann von Mandanten verwendet werden, deren zentraler Standort sich in Nordamerika, Europa oder dem Asiatisch-Pazifischen Raum befindet. Advanced eDiscovery wird für Mandanten empfohlen, deren zentraler Standort sich nicht in Nordamerika, Europa oder dem Asiatisch-Pazifischen Raum befindet und die eDiscovery über geografische Satellitenstandorte hinweg durchführen müssen. 
 

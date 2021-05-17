@@ -31,7 +31,7 @@ ms.locfileid: "50921480"
 
 Benutzer können das Kennwortrückschreiben verwenden, um ihre Kennwörter über Azure Active Directory (Azure AD) zu aktualisieren, das dann in Ihre lokalen Active Directory Domain Services (AD DS) repliziert wird. Beim Kennwortrückschreiben müssen Benutzer ihre Kennwörter nicht über den lokalen AD DS aktualisieren, in dem ihre ursprünglichen Benutzerkonten gespeichert sind. Dies hilft Roaming- oder Remotebenutzern, die über keine Remotezugriffsverbindung zu ihrem lokalen Netzwerk verfügen.
 
-In diesem Artikel wird beschrieben, wie Sie Ihre Microsoft 365-Testumgebung für das Kennwortrückschreiben konfigurieren.
+In diesem Artikel wird beschrieben, wie Sie Microsoft 365 Testumgebung für das Kennwortrückschreiben konfigurieren.
 
 Das Konfigurieren der Testumgebung für das Kennwortrückschreiben umfasst zwei Phasen:
 - [Phase 1: Konfigurieren Sie Kennworthashsynchronisierung für Ihre Microsoft 365-Testumgebung](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -40,7 +40,7 @@ Das Konfigurieren der Testumgebung für das Kennwortrückschreiben umfasst zwei 
 ![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Eine visuelle Karte zu allen Artikeln im Microsoft 365 for Enterprise Test Lab Guide-Stapel finden Sie unter [Microsoft 365 for Enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Eine visuelle Karte zu allen Artikeln im Stapel Microsoft 365 test lab guide für unternehmen finden Sie unter [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Phase 1: Konfigurieren Sie Kennworthashsynchronisierung für Ihre Microsoft 365-Testumgebung
 
@@ -109,9 +109,9 @@ Konfigurieren Sie als Nächstes Azure AD Connect auf APP1 für das Rückschreibe
 
 4. Wählen Sie **auf der** Seite Zusätzliche Aufgaben die Option **Synchronisierungsoptionen anpassen** aus, und wählen Sie dann Weiter **aus.**
 
-5. Geben Sie **auf der Seite Verbindung mit Azure AD** herstellen Ihre Anmeldeinformationen für ihr globales Administratorkonto ein, und wählen Sie dann Weiter **aus.**
+5. Geben Sie **Verbinden Azure AD** ein, und wählen Sie dann **Weiter** aus.
 
-6. Wählen Sie auf den Seiten Connect **directories** und **Domain/OU filtering** die Option **Weiter aus.**
+6. Wählen Sie **auf Verbinden- und** **Domänen-/OU-Filterseiten** weiter **aus.**
 
 7. Wählen Sie **auf der** Seite Optionale Features die Option **Kennwortrückschreiben** aus, und wählen Sie dann **Weiter aus.**
 
@@ -127,7 +127,7 @@ Die resultierende Konfiguration sieht wie die folgenden aus:
 
 Diese Konfiguration besteht aus: 
 
-- Eine Microsoft 365 E5-Testversion oder kostenpflichtige Abonnements mit der DNS-Domäne TESTLAB.\<*your domain name*> registriert.
+- Eine Microsoft 365 E5 oder kostenpflichtige Abonnements mit der DNS-Domäne TESTLAB.\<*your domain name*> registriert.
 - Ein vereinfachtes Unternehmensintranet, das mit dem Internet verbunden ist und aus den virtuellen Computern DC1, APP1 und CLIENT1 in einem Subnetz eines virtuellen Azure-Netzwerks besteht.
 - Azure AD Connect wird auf APP1 ausgeführt, um die Liste von Konten und Gruppen des Azure AD-Mandanten Ihrer Microsoft 365-Abonnements mit der AD DS-Domäne „TESTLAB“ zu synchronisieren.
 - Kennwortrückschreiben ist aktiviert, damit Benutzer ihre Kennwörter über Azure Active Directory ändern können, ohne mit dem vereinfachten Intranet verbunden sein zu müssen.

@@ -60,10 +60,10 @@ Wenn Personen in Ihrer Organisation mobile Geräte verwenden, die von Basic Mobi
 
 Die unterstützten Apps für die verschiedenen Typen von mobilen Geräten in der folgenden Tabelle forderten Benutzer auf, sich bei Basic Mobility and Security zu registrieren, wenn es eine neue Verwaltungsrichtlinie für mobile Geräte gibt, die auf das Gerät eines Benutzers angewendet wird und der Benutzer das Gerät noch nicht registriert hat. Wenn das Gerät eines Benutzers einer Richtlinie nicht entspricht, wird einem Benutzer je nach Einrichtung der Richtlinie möglicherweise der Zugriff auf Microsoft 365-Ressourcen in diesen Apps blockiert, oder er hat möglicherweise Zugriff, microsoft 365 meldet jedoch einen Richtlinienverstoß.
 
-|**Product**|**iOS 10.0 oder höher**|**Android 5.0 oder höher**|
+|**Produkt**|**iOS 10.0 oder höher**|**Android 5.0 oder höher**|
 |:-----|:-----|:-----|
-|**Exchange** Exchange ActiveSync enthält integrierte E-Mail- und Drittanbieter-Apps wie TouchDown, die Exchange ActiveSync Version 14.1 oder höher verwenden. |E-Mail |E-Mail senden |
-|**Office**   und  **OneDrive for Business** |Outlook </br>Microsoft OneDrive-App </br>Word </br>Excel </br>PowerPoint|**Auf Smartphones und Tablets:**<br/>Outlook <br/> Microsoft OneDrive-App <br/> Word <br/> Excel <br/> PowerPoint <br/> **Nur auf Telefonen:** <br/> Office Mobile |
+|**Exchange** Exchange ActiveSync enthält integrierte E-Mail- und Drittanbieter-Apps wie TouchDown, die Exchange ActiveSync Version 14.1 oder höher verwenden. |E-Mail |E-Mails |
+|**Office**   und  **OneDrive for Business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**Auf Smartphones und Tablets:**<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Nur auf Telefonen:** <br/> Office Mobile |
 
 >[!NOTE]
 - >Die Unterstützung für iOS 10.0 und höher umfasst iPhone- und iPad-Geräte.

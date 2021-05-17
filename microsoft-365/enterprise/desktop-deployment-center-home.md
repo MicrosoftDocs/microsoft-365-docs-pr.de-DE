@@ -26,7 +26,7 @@ Der Inhaltskörper, der das Desktop Deployment Center umfasste, ist veraltet.
 
 Verwenden Sie diese Ressourcen, um moderne Desktops zu bereitstellen:
 
-- [Windows 10-Bereitstellung](/windows/deployment/)
+- [Windows 10 Bereitstellung](/windows/deployment/)
 - [Bereitstellen von Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
 - [Identitäts- und Gerätezugriffsrichtlinien](../security/defender-365-security/microsoft-365-policies-configurations.md)
@@ -37,6 +37,6 @@ Hilfe zu Ihrer Desktopbereitstellung finden Sie auch von Microsoft-Partnern und 
 
 ## <a name="windows-and-office-deployment-lab-kit"></a>Deployment Lab Kit für Windows und Office
 
-Mit diesem Kit können Sie Ihre Bereitstellung und Verwaltung von Desktops mit Windows 10 Enterprise und Microsoft 365 Apps for Enterprise planen, testen und überprüfen. Die Übungseinheiten umfassen Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Customization Tool, OneDrive, Windows Autopilot und vieles mehr.
+Mit diesem Kit können Sie Ihre Bereitstellung und Verwaltung von Desktops planen, testen und überprüfen, auf Windows 10 Enterprise und Microsoft 365 Apps for Enterprise. Die Übungseinheiten umfassen Microsoft Endpoint Configuration Manager, Desktop Analytics, Office Anpassungstool, OneDrive, Windows Autopilot und vieles mehr.
 
-Weitere [Informationen finden Sie unter Windows and Office Deployment Lab Kit.](modern-desktop-deployment-and-management-lab.md)
+Weitere [Windows und Office Deployment Lab Kit](modern-desktop-deployment-and-management-lab.md) finden Sie unter.

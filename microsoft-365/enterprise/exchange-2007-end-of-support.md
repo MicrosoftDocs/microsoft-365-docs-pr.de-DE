@@ -13,7 +13,7 @@ ms.assetid: c3024358-326b-404e-9fe6-b618e54d977d
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: Erfahren Sie mehr über Ihre Optionen Exchange Server 2007-Supportende, und beginnen Sie mit der Planung der Migration zu Microsoft 365, Office 365 oder Exchange 2016.
+description: Erfahren Sie mehr über Ihre Optionen nach Exchange Server 2007-Supportende, und beginnen Sie mit der Planung der Migration zu Microsoft 365, Office 365 oder Exchange 2016.
 ms.openlocfilehash: d7e8f50118dab6fcb618273f5c28497c80d4a549
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,7 +29,7 @@ Exchange Server 2007 wurde im April 2017 das Ende der Unterstützung erreicht. W
   
 ## <a name="what-does-end-of-support-mean"></a>Was bedeutet *das Ende der Unterstützung?*
 
-Exchange Server wie fast alle #A0 verfügt über einen Supportlebenszyklus, in dem wir neue Features, Fehlerbehebungen, Sicherheitskorrekturen und so weiter bereitstellen. Dieser Lebenszyklus dauert in der Regel 10 Jahre nach der ersten Produktversion. Das Ende dieses Lebenszyklus wird als Ende der Unterstützung des Produkts bezeichnet. Seit Exchange 2007 am 11. April 2017 das Ende des Supportendes erreicht hat, bietet Microsoft nicht mehr:
+Exchange Server wie fast alle #A0 verfügt über einen Supportlebenszyklus, in dem wir neue Features, Fehlerbehebungen, Sicherheitskorrekturen und so weiter bereitstellen. Dieser Lebenszyklus dauert in der Regel 10 Jahre nach der ersten Produktversion. Das Ende dieses Lebenszyklus wird als Ende der Unterstützung des Produkts bezeichnet. Seit Exchange 2007 das Ende des Supportendes am 11. April 2017 erreicht hat, bietet Microsoft nicht mehr:
   
 - Technischer Support für Probleme, die auftreten können.
     
@@ -41,21 +41,21 @@ Exchange Server wie fast alle #A0 verfügt über einen Supportlebenszyklus, in d
     
 Ihre Installation von Exchange 2007 wird nach dem End-of-Support-Datum fortgesetzt. Da es jedoch keine neuen Updates oder Support gibt, wird dringend empfohlen, so bald wie möglich von Exchange 2007 zu migrieren.
   
-Weitere Informationen zu Office 2007-Servern, die sich dem Ende des Support nähern, finden Sie unter [Plan your upgrade from Office 2007 servers and products](upgrade-from-office-2007-servers-and-products.md).
+Weitere Informationen zu Office 2007-Servern, die sich dem Ende des Supportendes nähern, finden Sie unter [Plan your upgrade from Office 2007 servers and products](upgrade-from-office-2007-servers-and-products.md).
   
 ## <a name="what-are-my-options"></a>Was sind meine Optionen?
 
 Sie können:
   
-- Migrieren Sie zu Microsoft 365 mithilfe von Umschalt-, Mehrstufiger oder Hybridmigration.
+- Migrieren Sie mithilfe Microsoft 365, mehrstufigen oder hybriden Migration zu Microsoft 365 Migration.
     
-- Migrieren Sie Ihre Exchange 2007-Server zu einer neueren Version von Exchange auf Ihren lokalen Servern.
+- Migrieren Sie Exchange 2007-Server zu einer neueren Exchange auf Ihren lokalen Servern.
     
 In den folgenden Abschnitten werden die einzelnen Optionen ausführlicher behandelt.
   
 ### <a name="migrate-to-microsoft-365"></a>Migrieren zu Microsoft 365
 
-Das Migrieren Ihrer E-Mails zu Microsoft 365 ist die beste und einfachste Option, um Ihre Exchange 2007-Bereitstellung zurückzuziehen. Mit einer Migration zu Microsoft 365 können Sie einen einzigen Hop von einer 10 Jahre alten Technologie zu den modernsten Features erstellen, einschließlich:
+Das Migrieren Ihrer E-Mails zu Microsoft 365 ist die beste und einfachste Option, um Ihre Exchange 2007 zurückzuziehen. Mit einer Migration zu Microsoft 365 können Sie einen einzelnen Hop von einer 10 Jahre alten Technologie zu den modernsten Features, einschließlich:
   
 - Compliancefunktionen wie Aufbewahrungsrichtlinien, In-Place und Rechtsstreitigkeiten, in-place eDiscovery und vieles mehr
     
@@ -67,7 +67,7 @@ Das Migrieren Ihrer E-Mails zu Microsoft 365 ist die beste und einfachste Option
     
 - REST-APIs für programmgesteuerten Zugriff auf E-Mails, Kalender, Kontakte und so weiter
     
-Microsoft 365 erhält auch zuerst neue Features und Erfahrungen, sodass Sie und Ihre Benutzer in der Regel sofort damit beginnen können, sie zu verwenden. Und Sie müssen sich keine Sorgen machen:
+Microsoft 365 erhalten auch zuerst neue Features und Erfahrungen, sodass Sie und Ihre Benutzer in der Regel sofort damit beginnen können, sie zu verwenden. Und Sie müssen sich keine Sorgen machen:
   
 - Kaufen und Verwalten von Hardware.
     
@@ -79,13 +79,13 @@ Microsoft 365 erhält auch zuerst neue Features und Erfahrungen, sodass Sie und 
     
 - Upgrade auf eine neue Version von Exchange. Mit Microsoft 365 sind Sie immer auf der neuesten Version von Exchange.
     
-#### <a name="how-should-i-migrate-to-microsoft-365"></a>Wie sollte ich zu Microsoft 365 migrieren?
+#### <a name="how-should-i-migrate-to-microsoft-365"></a>Wie sollte ich zu Microsoft 365?
 
 Sie haben einige Migrationsoptionen. Sie müssen einige Dinge berücksichtigen, z. B.:
 
 - Die Anzahl der Zu verschiebende Sitze oder Postfächer.
 - Wie lange die Migration dauern soll.
-- Gibt an, ob Sie während der Migration eine nahtlose Integration zwischen Ihrer lokalen Installation und Microsoft 365 benötigen.
+- Gibt an, ob Sie eine nahtlose Integration zwischen Ihrer lokalen Installation und Microsoft 365 während der Migration benötigen.
 
 In dieser Tabelle sind die Migrationsoptionen und die wichtigsten Faktoren aufgeführt, die bestimmen, welche Methode verwendet werden soll:
   
@@ -100,27 +100,27 @@ Die folgenden Abschnitte bieten eine Übersicht über diese Methoden. Weitere In
   
 #### <a name="cutover-migration"></a>Übernahmemigration
 
-Bei einer Cutovermigration migrieren Sie alle Postfächer, Verteilergruppen, Kontakte und so weiter zu Microsoft 365 zu einem vorab ausgewählten Datum und uhrzeit. Nach Abschluss der Migration fahren Sie Ihre lokalen Exchange-Server herunter, und beginnen Sie mit der ausschließlichen Verwendung von Microsoft 365.
+Bei einer Umstellungsmigration migrieren Sie alle Postfächer, Verteilergruppen, Kontakte und so weiter, um Microsoft 365 datums- und uhrzeitvorgewählten Datums- und Uhrzeitauswahl zu löschen. Nachdem die Migration abgeschlossen ist, fahren Sie Ihre lokalen Server Exchange herunter, und beginnen Sie, die Microsoft 365 zu verwenden.
   
-Die Umstiegsmigration ist ideal für kleine Organisationen, die nicht über viele Postfächer verfügen, schnell zu Microsoft 365 kommen möchten und sich nicht mit den Komplexitäten der anderen Methoden beschäftigen möchten. Sie sollte jedoch in einer oder weniger Wochen abgeschlossen sein und erfordert, dass Benutzer ihre Outlook-Profile neu konfigurieren. Die Cutovermigration kann bis zu 2.000 Postfächer verarbeiten, es wird jedoch dringend empfohlen, sie für die Migration von maximal 150 Postfächern zu verwenden. Wenn Sie versuchen, mehr zu migrieren, könnte ihnen die Zeit zum Übertragen aller Postfächer vor Ablauf des Stichtermins nicht mehr zur Verfügung kommen, und Ihre IT-Supportmitarbeiter sind möglicherweise überlastet mit Anforderungen, die Benutzern bei der Neukonfiguration von Outlook helfen.
+Die Umstiegsmigration ist ideal für kleine Organisationen, die nicht über viele Postfächer verfügen, schnell zu Microsoft 365 und einige der Komplexitäten der anderen Methoden nicht umgehen möchten. Sie sollte jedoch in einer oder weniger Wochen abgeschlossen werden, und es ist erforderlich, dass Benutzer ihre Outlook konfigurieren. Die Cutovermigration kann bis zu 2.000 Postfächer verarbeiten, es wird jedoch dringend empfohlen, sie für die Migration von maximal 150 Postfächern zu verwenden. Wenn Sie versuchen, mehr zu migrieren, könnte ihnen die Zeit zum Übertragen aller Postfächer vor Ablauf des Stichtermins nicht mehr zur Verfügung sein, und Ihre IT-Supportmitarbeiter sind möglicherweise überlastet mit Anforderungen, die Benutzern beim Neukonfigurieren von Postfächern Outlook.
   
 Wenn Sie darüber nachdenken, eine Umstiegsmigration zu machen, sollten Sie dies berücksichtigen:
   
-- Microsoft 365 muss mithilfe von Outlook Anywhere über TCP-Port 443 eine Verbindung mit Ihren Exchange 2007-Servern herstellen.
+- Microsoft 365 müssen eine Verbindung mit Ihren Exchange 2007-Servern herstellen, indem Outlook Anywhere über TCP-Port 443 verwendet wird.
     
-- Alle lokalen Postfächer werden zu Microsoft 365 verschoben.
+- Alle lokalen Postfächer werden in die Microsoft 365.
     
 - Sie benötigen ein lokales Administratorkonto mit Lesezugriff auf die Postfächer Ihrer Benutzer.
     
-- Die akzeptierten Exchange 2007-Domänen, die Sie in Microsoft 365 verwenden möchten, müssen als überprüfte Domänen im Dienst hinzugefügt werden.
+- Die Exchange 2007 akzeptierte Domänen, die Sie in Microsoft 365 verwenden möchten, müssen als überprüfte Domänen im Dienst hinzugefügt werden.
     
-- Zwischen dem Beginn der Migration und dem Beginn der Abschlussphase synchronisiert Microsoft 365 regelmäßig die Microsoft 365- und lokalen Postfächer. Auf diese Weise können Sie die Migration abschließen, ohne sich Gedanken darüber zu machen, dass E-Mails in Ihren lokalen Postfächern zurückgelassen werden.
+- Zwischen dem Start der Migration und dem Beginn der Abschlussphase synchronisiert Microsoft 365 regelmäßig die Microsoft 365 und lokalen Postfächer. Auf diese Weise können Sie die Migration abschließen, ohne sich Gedanken darüber zu machen, dass E-Mails in Ihren lokalen Postfächern zurückgelassen werden.
     
-- Benutzer erhalten neue temporäre Kennwörter für ihre Microsoft 365-Konten. Sie müssen ihr Kennwort ändern, wenn sie sich zum ersten Mal bei ihrem Postfach anmelden.
+- Benutzer erhalten neue temporäre Kennwörter für ihre Microsoft 365 Konten. Sie müssen ihr Kennwort ändern, wenn sie sich zum ersten Mal bei ihrem Postfach anmelden.
     
-- Sie benötigen eine Microsoft 365-Lizenz, die Exchange Online für jedes migrierte Benutzerpostfach enthält.
+- Sie benötigen eine Microsoft 365, die Exchange Online benutzerpostfach enthält, das Sie migrieren.
     
-- Benutzer müssen auf jedem Gerät ein neues Outlook-Profil einrichten und ihre E-Mails erneut herunterladen. Die Menge der E-Mails, die Outlook herunterladen wird, kann variieren. Weitere Informationen finden Sie unter [Change how much mail to keep offline](https://support.office.com/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1).
+- Benutzer müssen auf jedem Gerät ein neues Outlook einrichten und ihre E-Mails erneut herunterladen. Die Menge der E-Mails, die Outlook herunterladen, kann variieren. Weitere Informationen finden Sie unter [Change how much mail to keep offline](https://support.office.com/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1).
     
 Weitere Informationen zur Umstellungsmigration finden Sie unter:
   
@@ -130,25 +130,25 @@ Weitere Informationen zur Umstellungsmigration finden Sie unter:
     
 #### <a name="staged-migration"></a>Mehrstufige Migration
 
-In einer mehrstufigen Migration verfügen Sie über ein paar hundert oder ein paar tausend Postfächer, die Sie zu Microsoft 365 migrieren möchten, eine Woche oder mehr benötigen, um die Migration abschließen zu können, und benötigen keine erweiterten Hybridmigrationsfunktionen wie freigegebene Frei/Gebucht-Kalenderinformationen.
+In einer mehrstufigen Migration verfügen Sie über ein paar hundert oder ein paar tausend Postfächer, die Sie zu Microsoft 365 migrieren möchten, eine Woche oder mehr benötigen, um die Migration zu abschließen, und sie benötigen keine erweiterten Hybridmigrationsfeatures wie freigegebene Frei/Gebucht-Kalenderinformationen.
   
-Die mehrstufige Migration ist ideal für Organisationen, die mehr Zeit für die Migration ihrer Postfächer zu Microsoft 365 benötigen, aber dennoch planen, die Migration innerhalb weniger Wochen zu abschließen. Sie können Postfächer in Batches migrieren. Sie steuern, wie viele und welche Postfächer zu einem bestimmten Zeitpunkt migriert werden. Sie können Beispielsweise Postfächer von Benutzern in derselben Abteilung batchen, um sicherzustellen, dass alle gleichzeitig verschoben werden. Sie können auch die Postfächer von Führungskräften bis zum letzten Batch verlassen. Wie bei Denkmigrationen müssen Ihre Benutzer ihre Outlook-Profile neu erstellen.
+Die mehrstufige Migration ist ideal für Organisationen, die mehr Zeit für die Migration ihrer Postfächer zu Microsoft 365 aber dennoch planen, die Migration innerhalb weniger Wochen zu abschließen. Sie können Postfächer in Batches migrieren. Sie steuern, wie viele und welche Postfächer zu einem bestimmten Zeitpunkt migriert werden. Sie können Beispielsweise Postfächer von Benutzern in derselben Abteilung batchen, um sicherzustellen, dass alle gleichzeitig verschoben werden. Sie können auch die Postfächer von Führungskräften bis zum letzten Batch verlassen. Wie bei Denkmigrationen müssen Ihre Benutzer ihre Outlook erstellen.
   
 Wenn Sie über eine mehrstufige Migration nachdenken, sollten Sie dies berücksichtigen:
   
-- Microsoft 365 muss über Outlook Anywhere über TCP-Port 443 eine Verbindung mit Ihren Exchange 2007-Servern herstellen.
+- Microsoft 365 müssen eine Verbindung mit Ihren Exchange 2007-Servern mithilfe von Outlook Anywhere über TCP-Port 443 herstellen.
     
 - Sie benötigen ein lokales Administratorkonto mit Lesezugriff auf die Postfächer Ihrer Benutzer.
     
-- Die von Exchange 2007 akzeptierten Domänen, die Sie in Microsoft 365 verwenden möchten, müssen als überprüfte Domänen im Dienst hinzugefügt werden.
+- Die Exchange 2007 akzeptierte Domänen, die Sie in Microsoft 365 verwenden möchten, müssen als überprüfte Domänen im Dienst hinzugefügt werden.
     
-- Sie müssen eine CSV-Datei mit dem vollständigen Namen und der E-Mail-Adresse jedes Postfachs erstellen, das Sie in einem Batch migrieren möchten. Sie müssen auch ein neues Kennwort für jedes Postfach angeben, das Sie migrieren, und dieses Kennwort an jeden Benutzer senden. Der Benutzer wird aufgefordert, das Kennwort bei der ersten Anmeldung beim neuen Microsoft 365-Postfach zu ändern.
+- Sie müssen eine CSV-Datei mit dem vollständigen Namen und der E-Mail-Adresse jedes Postfachs erstellen, das Sie in einem Batch migrieren möchten. Sie müssen auch ein neues Kennwort für jedes Postfach angeben, das Sie migrieren, und dieses Kennwort an jeden Benutzer senden. Der Benutzer wird aufgefordert, das Kennwort bei der ersten Anmeldung beim neuen Postfach Microsoft 365 ändern.
     
-- Zwischen dem Start des Migrationsbatches und dem Beginn der Abschlussphase synchronisiert Microsoft 365 regelmäßig die im Batch enthaltenen Microsoft 365- und lokalen Postfächer. Auf diese Weise können Sie die Migration abschließen, ohne sich Gedanken darüber zu machen, dass E-Mails in Ihren lokalen Postfächern zurückgelassen werden.
+- Zwischen dem Start des Migrationsbatches und dem Beginn der Abschlussphase synchronisiert Microsoft 365 regelmäßig die Microsoft 365 und lokalen Postfächer, die im Batch enthalten sind. Auf diese Weise können Sie die Migration abschließen, ohne sich Gedanken darüber zu machen, dass E-Mails in Ihren lokalen Postfächern zurückgelassen werden.
     
-- Sie benötigen eine Microsoft 365-Lizenz, die Exchange Online für jedes migrierte Benutzerpostfach enthält.
+- Sie benötigen eine Microsoft 365, die Exchange Online benutzerpostfach enthält, das Sie migrieren.
     
-- Benutzer müssen auf jedem Gerät ein neues Outlook-Profil einrichten und ihre E-Mails erneut herunterladen. Die Menge der E-Mails, die Outlook herunterladen wird, kann variieren. Weitere Informationen finden Sie unter [Change how much mail to keep offline](https://support.office.com/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1).
+- Benutzer müssen auf jedem Gerät ein neues Outlook einrichten und ihre E-Mails erneut herunterladen. Die Menge der E-Mails, die Outlook herunterladen, kann variieren. Weitere Informationen finden Sie unter [Change how much mail to keep offline](https://support.office.com/article/Change-how-much-mail-to-keep-offline-f3a1251c-6dd5-4208-aef9-7c8c9522d633?ui=en-US&amp;rs=en-US&amp;ad=US&amp;fromAR=1).
     
 Weitere Informationen zur mehrstufigen Migration finden Sie unter:
   
@@ -158,43 +158,43 @@ Weitere Informationen zur mehrstufigen Migration finden Sie unter:
     
 #### <a name="full-hybrid"></a>Vollständige Hybridbereitstellung
 
-Bei einer vollständigen Hybridmigration verfügt Ihre Organisation über viele Hundert, bis zu Zehntausende von Postfächern, und Sie möchten einige oder alle Postfächer nach Microsoft 365 verschieben. Da es sich bei diesen Migrationen in der Regel um langfristige Migrationen handelt, ermöglichen Hybridmigrationen:
+Bei einer vollständigen Hybridmigration verfügt Ihre Organisation über viele Hundert, bis zu Zehntausende von Postfächern, und Sie möchten einige oder alle postfächer Microsoft 365. Da es sich bei diesen Migrationen in der Regel um langfristige Migrationen handelt, ermöglichen Hybridmigrationen:
   
-- Zeigen Sie lokalen Benutzern die Frei/Gebucht-Kalenderinformationen für Benutzer in Microsoft 365 an und umgekehrt.
+- Zeigen Sie lokalen Benutzern die Frei/Gebucht-Kalenderinformationen für Benutzer in Microsoft 365 und umgekehrt.
     
-- Sehen Sie sich eine einheitliche globale Adressliste an, die Empfänger sowohl lokal als auch in Microsoft 365 enthält.
+- Sehen Sie sich eine einheitliche globale Adressliste an, die Empfänger in lokalen und lokalen Microsoft 365.
     
-- Zeigen Sie vollständige Outlook-Empfängereigenschaften für alle Benutzer an, unabhängig davon, ob sie lokal oder in Microsoft 365 sind.
+- Zeigen Sie Outlook Empfängereigenschaften für alle Benutzer an, unabhängig davon, ob sie lokal oder in Microsoft 365.
     
-- Sichere E-Mail-Kommunikation zwischen lokalen Exchange-Servern und Microsoft 365 mithilfe von TLS und Zertifikaten.
+- Sichere E-Mail-Kommunikation zwischen lokalen Exchange und Microsoft 365 TLS und Zertifikaten.
     
-- Behandeln Sie Nachrichten, die zwischen lokalen Exchange-Servern und Microsoft 365 gesendet werden, als intern, sodass sie:
+- Behandeln Sie Nachrichten, die zwischen lokalen servern Exchange und Microsoft 365 gesendet werden, als intern, sodass sie:
     
   - Sollten Sie von Transport- und Compliance-Agents, die auf interne Nachrichten zielen, ordnungsgemäß ausgewertet und verarbeitet werden.
     
   - Umgehen von Antispamfiltern.
     
-Die vollständige Hybridmigration ist am besten für Organisationen, die erwarten, dass sie viele Monate oder länger in einer Hybridkonfiguration bleiben. Sie erhalten die oben in diesem Abschnitt aufgeführten Features sowie Verzeichnissynchronisierung, bessere integrierte Compliancefeatures und die Möglichkeit, Postfächer mithilfe von Onlinepostfachbewegungen zu und von Microsoft 365 zu verschieben. Microsoft 365 wird zu einer Erweiterung Ihrer lokalen Organisation.
+Die vollständige Hybridmigration ist am besten für Organisationen, die erwarten, dass sie viele Monate oder länger in einer Hybridkonfiguration bleiben. Sie erhalten die oben in diesem Abschnitt aufgeführten Features, die Verzeichnissynchronisierung, bessere integrierte Compliancefeatures und die Möglichkeit, Postfächer mithilfe von Onlinepostfachbewegungen zu und von Microsoft 365 zu verschieben. Microsoft 365 wird zu einer Erweiterung Ihrer lokalen Organisation.
   
 Wenn Sie über eine vollständige Hybridmigration nachdenken, sollten Sie dies berücksichtigen:
   
 - Die vollständige Hybridmigration ist nicht für alle Arten von Organisationen geeignet. Aufgrund der Komplexität vollständiger Hybridmigrationen sehen Organisationen mit weniger als ein paar hundert Postfächern in der Regel keine Vorteile, die den Aufwand und die Kosten rechtfertigen, die zum Einrichten eines Postfachs erforderlich sind. Wenn dies wie Ihre Organisation klingt, wird empfohlen, stattdessen eine Umstellung oder mehrstufige Migration in Betracht zu ziehen.
     
-- Sie müssen mindestens einen Exchange 2013-Server in Ihrer Exchange 2007-Organisation bereitstellen, um als "Hybridserver" zu fungieren. Dieser Server kommuniziert im Namen Ihrer Exchange 2007-Server mit Microsoft 365.
+- Sie müssen mindestens einen Exchange 2013-Server in Ihrer Exchange 2007-Organisation bereitstellen, um als "Hybridserver" zu fungieren. Dieser Server kommuniziert mit Microsoft 365 im Namen Ihrer Exchange 2007-Server.
     
-- Microsoft 365 muss eine Verbindung mit dem "Hybridserver" über Outlook Anywhere über TCP-Port 443 herstellen.
+- Microsoft 365 müssen eine Verbindung mit dem "Hybridserver" mithilfe von Outlook Anywhere über TCP-Port 443 herstellen.
     
-- Sie müssen die Verzeichnissynchronisierung mithilfe von Azure Active Directory (Azure AD) Connect zwischen Ihren lokalen Active Directory-Servern und Microsoft 365 einrichten.
+- Sie müssen die Verzeichnissynchronisierung mithilfe von Azure Active Directory (Azure AD) Verbinden lokalen Active Directory-Servern und Microsoft 365.
     
-- Benutzer können sich bei ihrem Microsoft 365-Postfach mit demselben Benutzernamen und Kennwort wie bei der Anmeldung beim lokalen Netzwerk anmelden. (Diese Funktionalität erfordert Azure AD Connect mit Kennwortsynchronisierung und/oder Active Directory-Verbunddiensten.)
+- Benutzer können sich bei ihrem Postfach Microsoft 365 Benutzernamen und Kennwort wie bei der Anmeldung beim lokalen Netzwerk anmelden. (Für diese Funktionalität ist Azure AD Verbinden Kennwortsynchronisierung und/oder Active Directory Federation Services erforderlich.)
     
-- Sie benötigen eine Microsoft 365-Lizenz, die Exchange Online für jedes migrierte Benutzerpostfach enthält.
+- Sie benötigen eine Microsoft 365, die Exchange Online benutzerpostfach enthält, das Sie migrieren.
     
-- Benutzer müssen auf den meisten Geräten kein neues Outlook-Profil einrichten, auch wenn einige ältere Android-Smartphones möglicherweise ein neues Profil benötigen. Benutzer müssen ihre E-Mails nicht erneut laden.
+- Benutzer müssen auf den meisten Geräten kein neues Outlook einrichten, auch wenn einige ältere Android-Smartphones möglicherweise ein neues Profil benötigen. Benutzer müssen ihre E-Mails nicht erneut laden.
     
 Wenn die vollständige Hybridmigration für Sie richtig klingt, sehen Sie sich die folgenden Ressourcen an, die Ihnen bei der Migration helfen:
   
-- [Exchange-Bereitstellungs-Assistent](/exchange/exchange-deployment-assistant)
+- [Exchange Bereitstellungs-Assistent](/exchange/exchange-deployment-assistant)
     
 - [Hybridbereitstellungen in Exchange Server](/exchange/exchange-hybrid)
     
@@ -204,13 +204,13 @@ Wenn die vollständige Hybridmigration für Sie richtig klingt, sehen Sie sich d
     
 - [Voraussetzungen für die Hybridbereitstellung](/exchange/hybrid-deployment-prerequisites)
     
-### <a name="migrate-to-a-newer-version-of-exchange-server"></a>Migrieren zu einer neueren Version von Exchange Server
+### <a name="migrate-to-a-newer-version-of-exchange-server"></a>Migrieren Zu einer neueren Version von Exchange Server
 
-Wir sind fest davon überzeugt, dass Sie durch die Migration zu Microsoft 365 den besten Nutzen und eine optimale Benutzererfahrung erzielen können. Wir wissen aber auch, dass einige Organisationen ihre E-Mails lokal behalten müssen. Dies kann aufgrund gesetzlicher Anforderungen liegen, um zu gewährleisten, dass Daten nicht in einem Datencenter in einem anderen Land oder ähnlichen Ländern gespeichert werden. Wenn Sie Ihre E-Mail lokal behalten möchten, können Sie Ihre Exchange 2007-Umgebung zu Exchange 2010, Exchange 2013 oder Exchange 2016 migrieren.
+Wir sind fest davon überzeugt, dass Sie den bestmöglichen Nutzen und eine optimale Benutzererfahrung erzielen können, indem Sie zu Microsoft 365. Wir wissen aber auch, dass einige Organisationen ihre E-Mails lokal behalten müssen. Dies kann aufgrund gesetzlicher Anforderungen liegen, um zu gewährleisten, dass Daten nicht in einem Datencenter in einem anderen Land oder ähnlichen Ländern gespeichert werden. Wenn Sie Ihre E-Mails lokal behalten möchten, können Sie Ihre Exchange 2007-Umgebung zu Exchange 2010, Exchange 2013 oder Exchange 2016 migrieren.
   
-Wenn Sie nicht zu Microsoft 365 migrieren können, wird empfohlen, zu Exchange 2016 zu migrieren. Exchange 2016 enthält alle Features früherer Versionen von Exchange. Sie entspricht auch am besten der mit Microsoft 365 verfügbaren Erfahrung, obwohl einige Features nur in Microsoft 365 verfügbar sind. Sehen Sie sich nur einige der Dinge an, die Ihnen fehlten:
+Wenn Sie nicht zu Microsoft 365 migrieren können, wird empfohlen, zu Exchange 2016 zu migrieren. Exchange 2016 enthält alle Features früherer Versionen von Exchange. Es entspricht auch am besten der mit Microsoft 365, obwohl einige Features nur in der Microsoft 365. Sehen Sie sich nur einige der Dinge an, die Ihnen fehlten:
   
-|**Exchange-Version**|**Features**|
+|**Exchange Release**|**Features**|
 |:-----|:-----|
 |Exchange 2010  <br/> | Role-Based Zugriffssteuerung (Berechtigungen ohne Zugriffssteuerungsberechtigungen)  <br/>  Outlook Web App-Postfachrichtlinien  <br/>  Möglichkeit zum Freigeben von Frei/Gebucht- und Delegieren von Kalendern zwischen Organisationen  <br/> |
 |Exchange 2013  <br/> | *Features aus Exchange 2010 und ...*  <br/>  Vereinfachte Architektur, die die Anzahl der Serverrollen auf drei reduzierte (Postfach, Clientzugriff, Edge-Transport)  <br/>  Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP), die dazu beitragen, vertrauliche Informationen vor Lecks zu bewahren  <br/>  Verbesserte Outlook Web App-Erfahrung  <br/> |
@@ -218,24 +218,24 @@ Wenn Sie nicht zu Microsoft 365 migrieren können, wird empfohlen, zu Exchange 2
    
 #### <a name="which-version-should-i-migrate-to"></a>Zu welcher Version sollte ich migrieren?
 
-Es wird empfohlen, zunächst davon aus zu gehen, dass Sie zu Exchange 2016 migrieren. Verwenden Sie dann die folgenden Informationen, um Ihre Annahme zu bestätigen oder Exchange 2016 zu ausschließen. Wenn Sie aus einem bestimmten Grund nicht zu Exchange 2016 migrieren können, müssen Sie denselben Prozess mit Exchange 2013 und so weiter machen.
+Es wird empfohlen, zunächst davon aus zu gehen, dass Sie zu Exchange 2016 migrieren. Verwenden Sie dann die folgenden Informationen, um Ihre Annahme zu bestätigen oder 2016 Exchange ausschließen. Wenn Sie aus einem bestimmten Grund nicht zu Exchange 2016 migrieren können, gehen Sie mit Exchange 2013 und so weiter.
   
 |**Überlegungen**|**Weitere Informationen**|
 |:-----|:-----|
-|Ende der Supporttermine  <br/> | Wie Exchange 2007 hat jede Version von Exchange ein eigenes End-of-Support-Datum:  <br/> *Exchange 2010* – Januar 2020  <br/> *Exchange 2013* – April 2023  <br/> *Exchange 2016* – Oktober 2025  <br/>  Mit dem früheren Ende der Unterstützung müssen Sie früher eine weitere Migration durchführen.<br/> |
-|Migrationspfad zu Exchange 2010 und 2013.  <br/> |Hier sind die allgemeinen Phasen für die Migration zu Exchange 2010 oder Exchange 2013:  <br/> – Installieren Sie Exchange 2010 oder 2013 in Ihrer vorhandenen Exchange 2007-Organisation. <br/>– Verschieben von Diensten und anderer Infrastruktur nach Exchange 2010 oder 2013.<br/>– Verschieben von Postfächern und öffentlichen Ordnern nach Exchange 2010 oder 2013.<br/>– Außerbetriebsetzen der verbleibenden Exchange 2007-Server. |
-|Migrationspfad zu Exchange 2016  <br/> |Hier sind die allgemeinen Phasen für die Migration zu Exchange 2016:  <br/> – Installieren Sie Exchange 2013 in Ihrer vorhandenen Exchange 2007-Organisation.<br/>– Verschieben von Diensten und anderer Infrastruktur nach Exchange 2013.<br/>– Verschieben von Postfächern und öffentlichen Ordnern nach Exchange 2013.<br/>– Außerbetriebsetzen der verbleibenden Exchange 2007-Server.<br/>– Installieren Sie Exchange 2016 in Ihrer vorhandenen Exchange 2013-Organisation.<br/>- Verschieben von Postfächern, öffentlichen Ordnern, Diensten und anderer Infrastruktur nach Exchange 2016 (Reihenfolge spielt keine Rolle). Außerbetriebsetzen der verbleibenden Exchange 2013-Server.<br/><br/> **Hinweis:** Die Migration von Exchange 2013 zu Exchange 2016 ist einfach. Die beiden Versionen haben fast dieselben Hardwareanforderungen, und diese Versionen sind sehr kompatibel. Sie können also einen Server neu erstellen, den Sie für Exchange 2013 erworben haben, und Exchange 2016 auf diesem Server installieren. Bei Onlinepostfachbewegungen bemerken die meisten Benutzer nicht einmal, dass ihr Postfach vom Server und dann zurück verschoben wurde, nachdem Sie es mit Exchange 2016 neu erstellt haben.           |
-|Versionskoexistenz  <br/> | Bei der Migration zu ...  <br/> **Exchange 2016:** Exchange 2016 kann nicht in einer Organisation installiert werden, die einen Exchange 2007-Server enthält. Sie müssen zunächst zu Exchange 2010 oder 2013 migrieren (wir empfehlen dringend Exchange 2013), alle Exchange 2007-Server entfernen und dann zu Exchange 2016 migrieren.  <br/> **Exchange 2010 oder Exchange 2013:** Sie können Exchange 2010 oder Exchange 2013 in einer vorhandenen Exchange 2007-Organisation installieren. Auf diese Weise können Sie einen oder mehrere Exchange 2010- oder 2013-Server installieren und die Migration durchführen.  <br/> |
-|Serverhardware  <br/> | Die Serverhardwareanforderungen haben sich von Exchange 2007 geändert. Stellen Sie sicher, dass Ihre Hardware kompatibel ist. Weitere Informationen finden Sie unter:  <br/> [Exchange 2016-Systemanforderungen](/Exchange/plan-and-deploy/system-requirements) <br/> [Exchange 2013-Systemanforderungen](/exchange/exchange-2013-system-requirements-exchange-2013-help) <br/> [Exchange 2010-Systemanforderungen](/previous-versions/office/exchange-server-2010/aa996719(v=exchg.141)) <br/>  Sie werden feststellen, dass die erhebliche Verbesserung der Exchange-Leistung und die erhöhte Rechenleistung und Speicherkapazität auf neueren Servern dazu führen, dass Sie wahrscheinlich weniger Server benötigen, um dieselbe Anzahl von Postfächern zu unterstützen.  <br/> |
+|Ende der Supporttermine  <br/> | Wie Exchange 2007 verfügt jede Version von Exchange über ein eigenes End-of-Support-Datum:  <br/> *Exchange 2010* – Januar 2020  <br/> *Exchange 2013* – April 2023  <br/> *Exchange 2016* – Oktober 2025  <br/>  Mit dem früheren Ende der Unterstützung müssen Sie früher eine weitere Migration durchführen.<br/> |
+|Migrationspfad zu Exchange 2010 und 2013.  <br/> |Hier sind die allgemeinen Phasen für die Migration zu Exchange 2010 oder Exchange 2013:  <br/> – Installieren Exchange 2010 oder 2013 in Ihrer Exchange 2007-Organisation. <br/>– Verschieben von Diensten und anderer Infrastruktur in Exchange 2010 oder 2013.<br/>– Verschieben von Postfächern und öffentlichen Ordnern in Exchange 2010 oder 2013.<br/>– Außerbetriebnahme der verbleibenden Exchange 2007-Servern. |
+|Migrationspfad zu Exchange 2016  <br/> |Hier sind die allgemeinen Phasen für die Migration zu Exchange 2016:  <br/> – Installieren Exchange 2013 in Ihrer Exchange 2007-Organisation.<br/>– Verschieben von Diensten und anderer Infrastruktur nach Exchange 2013.<br/>– Verschieben von Postfächern und öffentlichen Ordnern in Exchange 2013.<br/>– Außerbetriebnahme der verbleibenden Exchange 2007-Servern.<br/>– Installieren Exchange 2016 in Ihrer Exchange 2013-Organisation.<br/>– Verschieben von Postfächern, öffentlichen Ordnern, Diensten und anderer Infrastruktur nach Exchange 2016 (Reihenfolge spielt keine Rolle). Außerbetriebsetzen der verbleibenden Exchange 2013-Servern.<br/><br/> **Hinweis:** Die Migration von Exchange 2013 zu Exchange 2016 ist einfach. Die beiden Versionen haben fast dieselben Hardwareanforderungen, und diese Versionen sind sehr kompatibel. Sie können also einen Server neu erstellen, den Sie für Exchange 2013 erworben haben, und Exchange 2016 installieren. Bei Onlinepostfachbewegungen bemerken die meisten Benutzer nicht einmal, dass ihr Postfach vom Server und dann zurück verschoben wurde, nachdem Sie es mit Exchange 2016 neu erstellt haben.           |
+|Versionskoexistenz  <br/> | Bei der Migration zu ...  <br/> **Exchange 2016:** Exchange 2016 kann nicht in einer Organisation installiert werden, die einen Exchange 2007-Server enthält. Sie müssen zunächst zu Exchange 2010 oder 2013 migrieren (wir empfehlen dringend Exchange 2013), alle Exchange 2007-Server entfernen und dann zu Exchange 2016 migrieren.  <br/> **Exchange 2010 oder Exchange 2013:** Sie können Exchange 2010 oder Exchange 2013 in einer vorhandenen Exchange 2007 installieren. Auf diese Weise können Sie einen oder mehrere Exchange 2010- oder 2013-Server installieren und die Migration ausführen.  <br/> |
+|Serverhardware  <br/> | Die Serverhardwareanforderungen haben sich von Exchange 2007 geändert. Stellen Sie sicher, dass Ihre Hardware kompatibel ist. Weitere Informationen finden Sie unter:  <br/> [Exchange 2016 System Requirements](/Exchange/plan-and-deploy/system-requirements) <br/> [Exchange 2013 System Requirements](/exchange/exchange-2013-system-requirements-exchange-2013-help) <br/> [Exchange 2010 System Requirements](/previous-versions/office/exchange-server-2010/aa996719(v=exchg.141)) <br/>  Sie werden feststellen, dass die erhebliche Verbesserung der Leistung Exchange und die erhöhte Rechenleistung und Speicherkapazität auf neueren Servern bedeuten, dass Sie wahrscheinlich weniger Server benötigen, um dieselbe Anzahl von Postfächern zu unterstützen.  <br/> |
 |Betriebssystemversion  <br/> | Die mindestens unterstützten Betriebssystemversionen für jede Version sind:  <br/> **Exchange 2016** – Windows Server 2012  <br/> **Exchange 2013** – Windows Server 2008 R2 SP1  <br/> **Exchange 2010** – Windows Server 2008 SP2  <br/>  Weitere Informationen zur Betriebssystemunterstützung finden Sie unter [Exchange Supportability Matrix](/Exchange/plan-and-deploy/supportability-matrix).  <br/> |
-|Active Directory-Gesamtstrukturfunktionsebene  <br/> | Die mindestens unterstützten Active Directory-Gesamtstrukturfunktionsebenen für jede Version sind:  <br/> **Exchange 2016** Windows Server 2008 R2 SP1  <br/> **Exchange 2013** Windows Server 2003  <br/> **Exchange 2010** Windows Server 2003  <br/>  Weitere Informationen zur Unterstützung der Gesamtstrukturfunktionsebene finden Sie unter [Exchange Supportability Matrix](/Exchange/plan-and-deploy/supportability-matrix).  <br/> |
-|Office-Clientversionen  <br/> | Die mindestens unterstützten Office-Clientversionen für jede Version sind:  <br/> **Exchange 2016** – Office 2010 (mit den neuesten Updates)  <br/> **Exchange 2013** – Office 2007 SP3  <br/> **Exchange 2010** – Office 2003  <br/>  Weitere Informationen zur Office-Clientunterstützung finden Sie unter [Exchange Supportability Matrix](/Exchange/plan-and-deploy/supportability-matrix).  <br/> |
+|Active Directory-Gesamtstrukturfunktionsebene  <br/> | Die mindestens unterstützten Active Directory-Gesamtstrukturfunktionsebenen für jede Version sind:  <br/> **Exchange 2016** Windows Server 2008 R2 SP1  <br/> **Exchange 2013** Windows Server 2003  <br/> **Exchange 2010** Windows Server 2003  <br/>  Weitere Informationen zur Unterstützung der Gesamtstrukturfunktionsebene finden Sie [unter Exchange Supportability Matrix](/Exchange/plan-and-deploy/supportability-matrix).  <br/> |
+|Office Clientversionen  <br/> | Die mindestens unterstützten Office Clientversionen für jede Version sind:  <br/> **Exchange 2016** – Office 2010 (mit den neuesten Updates)  <br/> **Exchange 2013** – Office 2007 SP3  <br/> **Exchange 2010** – Office 2003  <br/>  Weitere Informationen zur Office finden Sie unter [Exchange Supportability Matrix](/Exchange/plan-and-deploy/supportability-matrix).  <br/> |
    
 #### <a name="how-do-i-migrate"></a>Wie kann ich migrieren?
 
 Wenn Sie sich entschieden haben, Ihre E-Mails lokal zu behalten, verwenden Sie die folgenden Ressourcen, um Bei der Migration zu helfen:
   
-- [Exchange-Bereitstellungs-Assistent](/exchange/exchange-deployment-assistant)
+- [Exchange Bereitstellungs-Assistent](/exchange/exchange-deployment-assistant)
     
 - Active Directory-Schemaänderungen für Exchange [2016](/Exchange/plan-and-deploy/active-directory/ad-schema-changes), [2013](/exchange/exchange-2013-active-directory-schema-changes-exchange-2013-help), [2010](https://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=5401)
     
@@ -245,7 +245,7 @@ Wenn Sie sich entschieden haben, Ihre E-Mails lokal zu behalten, verwenden Sie d
     
 ## <a name="get-help"></a>Hilfe erhalten
 
-Wenn Sie zu Microsoft 365 migrieren, sind Sie möglicherweise berechtigt, unseren Microsoft FastTrack-Dienst zu verwenden. FastTrack bietet bewährte Methoden, Tools und Ressourcen, um Ihre Migration zu Microsoft 365 so nahtlos wie möglich zu gestalten. Das Beste ist, dass Sie von einem Supporttechniker durch Ihre Migration, von der Planung und dem Entwurf bis hin zur Migration Ihres letzten Postfachs, gehen. Weitere Informationen zu FastTrack finden Sie unter [Microsoft FastTrack](https://fasttrack.microsoft.com/).
+Wenn Sie zu einer Microsoft 365, sind Sie möglicherweise berechtigt, unseren Microsoft FastTrack-Dienst zu verwenden. FastTrack bietet bewährte Methoden, Tools und Ressourcen, um Ihre Migration zu Microsoft 365 so nahtlos wie möglich zu gestalten. Das Beste ist, dass Sie von einem Supporttechniker durch Ihre Migration, von der Planung und dem Entwurf bis hin zur Migration Ihres letzten Postfachs, gehen. Weitere Informationen zu FastTrack finden Sie unter [Microsoft FastTrack](https://fasttrack.microsoft.com/).
   
 Wenn während der Migration zu Microsoft 365 Probleme auftreten und Sie FastTrack nicht verwenden oder Ihre Migration zu einer neueren Version von Exchange Server, sind wir hier, um Ihnen zu helfen. Hier sind einige Ressourcen, die Sie verwenden können:
   

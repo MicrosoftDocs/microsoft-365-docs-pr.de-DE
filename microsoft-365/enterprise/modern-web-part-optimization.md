@@ -20,7 +20,7 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Erfahren Sie, wie Sie die Seitendiagnose verwenden, um die Leistung von Webparts auf modernen SharePoint Online-Websiteseiten zu optimieren.
+description: Erfahren Sie, wie Sie die Seitendiagnose verwenden, um die Leistung von Webparts auf modernen SharePoint online zu optimieren.
 ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT

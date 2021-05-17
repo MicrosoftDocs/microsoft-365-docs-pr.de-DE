@@ -28,9 +28,9 @@ ms.locfileid: "50927216"
 
 Verwenden Sie remote Windows PowerShell für Microsoft Exchange Online, um Berichte von einzelnen Kunden mandanten abzurufen.
   
-Partner von Syndication und Cloud Solution Provider (CSP) können direkt über remote Windows PowerShell Exchange Online PowerShell auf die Daten zugreifen, aus denen Kunden-Mandantenberichte besteht. Auf diese Weise können Partner die Berichtsdaten sammeln und speichern und anschließend andere Vorgänge damit durchführen. Nachdem Sie eine Remoteverbindung hergestellt haben, entspricht das Abrufen von Berichtsdaten zu einem Kundenmandanten dem Ausführen eines Cmdlets für einen Kundenmandanten.
+Syndication- und Cloud Solution Provider (CSP)-Partner können auf die Daten zugreifen, aus denen Kunden-Mandantenberichte direkt über remote Windows PowerShell für Exchange Online PowerShell sind. Auf diese Weise können Partner die Berichtsdaten sammeln und speichern und anschließend andere Vorgänge damit durchführen. Nachdem Sie eine Remoteverbindung hergestellt haben, entspricht das Abrufen von Berichtsdaten zu einem Kundenmandanten dem Ausführen eines Cmdlets für einen Kundenmandanten.
   
-In diesem Artikel verwenden Sie remote Windows PowerShell Exchange Online, um eine Verbindung mit einem einzelnen Kundenwarte zu herstellen und einen Bericht abzurufen. In der Standardeinstellung unterstützt Windows PowerShell das Aggregieren von Daten aus mehreren Kundenmandanten nicht. Die mit diesem Verfahren abgerufenen Berichte sind nur für die  _DelegatedOrg_ bestimmt, mit er Sie eine Verbindung herstellen.
+In diesem Artikel verwenden Sie remote Windows PowerShell für Exchange Online, um eine Verbindung mit einem einzelnen Kundenwart herzustellen und einen Bericht abzurufen. In der Standardeinstellung unterstützt Windows PowerShell das Aggregieren von Daten aus mehreren Kundenmandanten nicht. Die mit diesem Verfahren abgerufenen Berichte sind nur für die  _DelegatedOrg_ bestimmt, mit er Sie eine Verbindung herstellen.
   
  
 ## <a name="before-you-begin"></a>Bevor Sie beginnen

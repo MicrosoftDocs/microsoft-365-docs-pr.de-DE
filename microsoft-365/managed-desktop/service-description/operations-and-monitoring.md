@@ -31,7 +31,7 @@ Bei lokalen Produkten übernimmt Ihre Organisation alle Verantwortung für die V
 
 ### <a name="balance-of-responsibility"></a>Verantwortlichkeitsausgleich
 
-Responsibility | Microsoft Managed Desktop Service | Microsoft 365-Clientsoftware | Lokale Clients und Server | Nicht-Microsoft und benutzerdefinierte Software
+Zuständigkeit | Microsoft Managed Desktop Service | Microsoft 365-Clientsoftware | Lokale Clients und Server | Nicht-Microsoft und benutzerdefinierte Software
 ----- | ----- | ----- | ----- | -----
 Bereitstellen neue Funktionalität | Microsoft | Microsoft | In beide Richtungen | Kunde
 Testen neuer Features zum Sicherstellen der Qualität |  Microsoft | Microsoft | In beide Richtungen | Kunde
@@ -81,7 +81,7 @@ Der Microsoft Managed Desktop-Dienst wird von Microsoft in Ihrer Microsoft-Cloud
 
 Bei lokalen Produkten übernimmt Ihre Organisation die verantwortung für die Verwaltung der Einrichtung sowie für konfigurations- und betriebsbereite Aktivitäten.
 
-Categories |    Microsoft wird | Der Kunde wird
+Kategorien |    Microsoft wird | Der Kunde wird
 --- | --- | ---
 Netzwerk (Proxy, Paketprüfung, VPN)  | Beraten Und planen Sie mit Kunden, um das Risiko für Geschäftsbenutzer zu minimieren. | – Erstellen Sie eine Supportanfrage, die Informationen für eine geplante Konfigurationsänderung anfordert, einschließlich Konfigurationsdetails, Umfang, Zeitachse und anderer relevanter Details, die Microsoft überprüfen kann.<br>– Wenden Sie eine Änderung nur an, nachdem Microsoft Managed Desktop Operations bewertet und beraten wurde.
 Dienstkonten |– Implementieren, speichern und verwalten Sie die Anmeldeinformationen.<br> – Teilen Sie Ihrem Security Operations-Team nicht autorisierten Zugriff oder die Verwendung dieser Anmeldeinformationen mit. | – Erstellen Sie eine Supportanfrage, die Informationen für eine geplante Konfigurationsänderung anfordert, einschließlich Konfigurationsdetails, Umfang, Zeitachse und anderer relevanter Details, die Microsoft überprüfen kann.<br>– Wenden Sie eine Änderung nur an, nachdem Microsoft Managed Desktop Operations bewertet und beraten wurde.<br>– Zuweisen von Richtlinien, mehrstufiger Authentifizierung, bedingter Zugriff oder Anwendungsbereitstellung zu den Microsoft Managed Desktop Service Accounts nicht.<br>– Setzen Sie das Kennwort nicht zurück, oder verwenden Sie die Anmeldeinformationen.<br>– Öffnen Sie eine Sev C-Supportanfrage an Microsoft Managed Desktop Operations, wenn verdächtige Aktivitäten in Intune- oder #A0 im Zusammenhang mit diesen Dienstkonten beobachtet werden.

@@ -19,7 +19,7 @@ f1.keywords:
 ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
-description: Verwenden Sie die PowerShell-Cmdlets für die zentrale Bereitstellung, um Ihnen bei der Bereitstellung und Verwaltung von Office-Add-Ins für Ihre Microsoft 365-Organisation zu helfen.
+description: Verwenden Sie die PowerShell-Cmdlets für die zentrale Bereitstellung, um Die Bereitstellung und Verwaltung von Office-Add-Ins für Microsoft 365 unterstützen.
 ms.openlocfilehash: 7872deedfcfe058f0a4ac63c489bbed139699d18
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,7 +29,7 @@ ms.locfileid: "50924672"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Verwenden der PowerShell-Cmdlets für zentrale Bereitstellung zum Verwalten von Add-Ins
 
-Als globaler Microsoft 365-Administrator können Sie Office-Add-Ins über das Feature für die zentrale Bereitstellung für Benutzer bereitstellen (siehe Bereitstellen von [Office-Add-Ins im Admin Center](../admin/manage/manage-deployment-of-add-ins.md)). Neben der Bereitstellung von Office-Add-Ins über das Microsoft 365 Admin Center können Sie auch Microsoft PowerShell verwenden. Installieren Sie [das O365 Centralized Add-In Deployment Module for Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
+Als globaler Microsoft 365 können Sie Office-Add-Ins über das Feature für die zentrale Bereitstellung für Benutzer bereitstellen (siehe [Deploy Office Add-ins in the Admin Center](../admin/manage/manage-deployment-of-add-ins.md)). Zusätzlich zur Bereitstellung Office Add-Ins über das Microsoft 365 Admin Center können Sie auch Microsoft PowerShell verwenden. Installieren Sie [das O365 Centralized Add-In Deployment Module for Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
 
 Öffnen Sie nach dem Herunterladen des Moduls ein reguläres Windows PowerShell, und führen Sie das folgende Cmdlet aus:
 
@@ -37,19 +37,19 @@ Als globaler Microsoft 365-Administrator können Sie Office-Add-Ins über das Fe
  Import-Module -Name O365CentralizedAddInDeployment
 ```
     
-## <a name="connect-using-your-admin-credentials"></a>Herstellen einer Verbindung mit Ihren Administratoranmeldeinformationen
+## <a name="connect-using-your-admin-credentials"></a>Verbinden verwenden Ihrer Administratoranmeldeinformationen
 
 Bevor Sie die Cmdlets für die zentrale Bereitstellung verwenden können, müssen Sie sich anmelden.
   
 1. Starten Sie PowerShell.
     
-2. Stellen Sie eine Verbindung mit PowerShell mithilfe der Anmeldeinformationen Ihres Unternehmensadministrators herzustellen. Führen Sie das folgende Cmdlet aus.
+2. Verbinden powerShell mithilfe der Anmeldeinformationen Ihres Unternehmensadministrators. Führen Sie das folgende Cmdlet aus.
     
   ```powershell
   Connect-OrganizationAddInService
   ```
 
-3. Geben Sie auf der Seite **Anmeldeinformationen** eingeben Ihre Anmeldeinformationen für den globalen Microsoft 365-Administrator ein. Alternativ können Sie Ihre Anmeldeinformationen direkt in das Cmdlet eingeben. 
+3. Geben Sie auf der Seite **Anmeldeinformationen** eingeben Ihre Microsoft 365 Anmeldeinformationen für den globalen Administrator ein. Alternativ können Sie Ihre Anmeldeinformationen direkt in das Cmdlet eingeben. 
     
     Führen Sie das folgende Cmdlet aus, das Ihre Unternehmensadministratoranmeldeinformationen als PSCredential-Objekt anfordert.
     
@@ -60,7 +60,7 @@ Bevor Sie die Cmdlets für die zentrale Bereitstellung verwenden können, müsse
   ```
 
 > [!NOTE]
-> Weitere Informationen zur Verwendung von PowerShell finden Sie unter [Connect to Microsoft 365 with PowerShell](./connect-to-microsoft-365-powershell.md). 
+> Weitere Informationen zur Verwendung von PowerShell finden Sie [unter Verbinden to Microsoft 365 with PowerShell](./connect-to-microsoft-365-powershell.md). 
   
 ## <a name="upload-an-add-in-manifest"></a>Hochladen eines Add-In-Manifests
 
@@ -76,9 +76,9 @@ Sie können auch das **Cmdlet New-OrganizationAdd-In** ausführen, um ein Add-In
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US' -Members  'KathyBonner@contoso.com', 'MaxHargrave@contoso.com'
 ```
 
-## <a name="upload-an-add-in-from-the-office-store"></a>Hochladen eines Add-Ins aus dem Office Store
+## <a name="upload-an-add-in-from-the-office-store"></a>Hochladen ein Add-In aus dem Office Store
 
-Führen Sie **das Cmdlet New-OrganizationAddIn** aus, um ein Manifest aus dem Office Store hochzuladen.
+Führen Sie **das Cmdlet New-OrganizationAddIn** aus, um ein Manifest aus dem Office Store.
   
 Im folgenden Beispiel gibt das **Cmdlet New-OrganizationAddIn** die AssetId für ein Add-In für einen Standort- und Inhaltsmarkt in den USA an.
   
@@ -86,12 +86,12 @@ Im folgenden Beispiel gibt das **Cmdlet New-OrganizationAddIn** die AssetId für
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-Um den Wert für den  _AssetId-Parameter_ zu bestimmen, können Sie ihn aus der URL der Office Store-Webseite für das Add-In kopieren. AssetIds beginnen immer mit "WA", gefolgt von einer Zahl. Im vorherigen Beispiel ist die Quelle für den AssetId-Wert von WA104099688 beispielsweise die Office Store-Webseiten-URL für das Add-In: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) .
+Um den Wert für den _AssetId-Parameter_ zu bestimmen, können Sie ihn aus der URL der Office Store webseite für das Add-In kopieren. AssetIds beginnen immer mit "WA", gefolgt von einer Zahl. Im vorherigen Beispiel ist die Quelle für den AssetId-Wert von WA104099688 beispielsweise die url der Office Store Webseite für das Add-In: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) .
   
 Die Werte für den  _Parameter Locale_ und  _den Parameter ContentMarket_ sind identisch und geben das Land/die Region an, aus dem Sie das Add-In installieren möchten. Das Format ist en-US, fr-FR. usw. 
   
 > [!NOTE]
-> Aus dem Office Store hochgeladene Add-Ins werden innerhalb weniger Tage automatisch aktualisiert, wenn das neueste Update im Office Store verfügbar ist. 
+> Add-Ins, die aus dem Office Store hochgeladen wurden, werden innerhalb weniger Tage automatisch aktualisiert, wenn das neueste Update auf dem Office Store. 
   
 ## <a name="get-details-of-an-add-in"></a>Details zu einem Add-In erhalten
 
@@ -162,7 +162,7 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
 ```
 
 > [!NOTE]
-> Aus dem Office Store hochgeladene Add-Ins werden innerhalb weniger Tage automatisch aktualisiert, wenn das neueste Update im Office Store verfügbar ist. 
+> Add-Ins, die aus dem Office Store hochgeladen wurden, werden innerhalb weniger Tage automatisch aktualisiert, wenn das neueste Update auf dem Office Store. 
   
 ## <a name="delete-an-add-in"></a>Löschen eines Add-Ins
 

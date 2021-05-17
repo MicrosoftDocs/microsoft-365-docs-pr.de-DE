@@ -33,9 +33,9 @@ ms.locfileid: "50924904"
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Microsoft 365 verwendet einen Azure Active Directory (Azure AD)-Mandanten zum Speichern und Verwalten von Identitäten für die Authentifizierung und Berechtigungen für den Zugriff auf cloudbasierte Ressourcen. 
+Microsoft 365 verwendet einen Azure Active Directory (Azure AD)-Mandanten, um Identitäten für die Authentifizierung und Berechtigungen für den Zugriff auf cloudbasierte Ressourcen zu speichern und zu verwalten. 
 
-Wenn Sie über eine lokale Active Directory Domain Services (AD DS)-Domäne oder -Gesamtstruktur verfügen, können Sie Ihre AD DS-Benutzerkonten, -Gruppen und -Kontakte mit dem Azure AD-Mandanten Ihres Microsoft 365-Abonnements synchronisieren. Dies ist eine Hybrididentität für Microsoft 365. Dies sind ihre Komponenten.
+Wenn Sie über eine lokale Active Directory Domain Services (AD DS)-Domäne oder -Gesamtstruktur verfügen, können Sie Ihre AD DS-Benutzerkonten, -Gruppen und -Kontakte mit dem Azure AD-Mandanten Ihres Microsoft 365 synchronisieren. Dies ist eine Hybrididentität für Microsoft 365. Dies sind ihre Komponenten.
 
 ![Komponenten der Verzeichnissynchronisierung für Microsoft 365](../media/about-microsoft-365-identity/hybrid-identity.png)
 
@@ -57,12 +57,12 @@ Weitere Informationen finden Sie unter [Hybrididentitäten](plan-for-directory-s
   
 ## <a name="1-review-prerequisites-for-azure-ad-connect"></a>1. Voraussetzungen für Azure AD Connect überprüfen
 
-Sie erhalten ein kostenloses Azure AD-Abonnement mit Ihrem Microsoft 365-Abonnement. Wenn Sie die Verzeichnissynchronisierung einrichten, installieren Sie Azure AD Connect auf einem Ihrer lokalen Server.
+Sie erhalten ein kostenloses Azure AD-Abonnement mit Microsoft 365 Abonnement. Wenn Sie die Verzeichnissynchronisierung einrichten, installieren Sie Azure AD Connect auf einem Ihrer lokalen Server.
   
 Für Microsoft 365 müssen Sie:
   
 - Ihre lokale Domäne hinzufügen. Der Azure AD Connect-Assistent führt Sie schrittweise durch diesen Vorgang.
-- Rufen Sie die Benutzernamen und Kennwörter für die Administratorkonten Ihres Microsoft 365-Mandanten und AD DS ab.
+- Rufen Sie die Benutzernamen und Kennwörter für die Administratorkonten Ihres Mandanten Microsoft 365 AD DS ab.
 
 Für Ihren lokalen Server, auf dem Sie Azure AD Connect installieren, benötigen Sie Folgendes:
   
@@ -80,7 +80,7 @@ Sie können auch den [Versionsveröffentlichungsverlauf](/azure/active-directory
 
 Bevor Sie beginnen, sollten Sie sicherstellen, dass Sie über Folgendes verfügen:
 
-- Benutzername und Kennwort eines globalen Microsoft 365-Administrator
+- Benutzername und Kennwort eines globalen Microsoft 365 Administrator
 - Den Benutzernamen und das Kennwort des AD-DS-Domänenadministrators.
 - Welche Authentifizierungsmethode (PHS, PTA, Federated)
 - Ob Sie [Azure AD Seamless Single Sign-On (SSO) verwenden möchten](/azure/active-directory/hybrid/how-to-connect-sso)
@@ -90,13 +90,13 @@ Führen Sie die folgenden Schritte aus:
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an, (https://admin.microsoft.com) und wählen Sie im linken Navigationsbereich **Benutzer** \> **Aktive Benutzer** aus.
 2. Wählen Sie **auf der** Seite Aktive Benutzer die Option **Mehr** (drei Punkte) \> **Verzeichnissynchronisierung aus.**
   
-3. Wählen Sie auf der **Seite Azure Active Directory-Vorbereitung** den Link Zum Downloadcenter wechseln aus, um **den Azure AD Connect-Toollink** für die ersten Schritte zu erhalten. 
+3. Wählen Sie **auf Azure Active Directory** Seite Vorbereitung den Link Zum Downloadcenter wechseln aus, um den Azure **AD Verbinden-Toollink** für die ersten Schritte zu erhalten. 
 4. Folgen Sie den Schritten in [Installationsübersicht: Azure AD Connect und Azure AD Connect Health](/azure/active-directory/hybrid/how-to-connect-install-roadmap).
 
 ## <a name="3-finish-setting-up-domains"></a>3. Abschließen der Einrichtung von Domänen
 
-Führen Sie die Schritte unter [Erstellen von DNS-Einträgen für Microsoft 365](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) aus, wenn Sie Ihre DNS-Einträge verwalten, um die Einrichtung Ihrer Domänen zu beenden.
+Führen Sie die Schritte unter [Create DNS records for Microsoft 365 when you manage your DNS records](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) to finish setting up your domains aus.
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[Zuweisen von Lizenzen zu Benutzerkonten](assign-licenses-to-user-accounts.md)
+[Zuweisen von Lizenzen für Benutzerkonten](assign-licenses-to-user-accounts.md)

@@ -25,7 +25,7 @@ ms.locfileid: "50926555"
 ---
 # <a name="collect-ediscovery-diagnostic-information"></a>Sammeln von eDiscovery-Diagnoseinformationen
 
-Gelegentlich benötigen Microsoft Support-Techniker spezifische Informationen zu Ihrem Problem, wenn Sie einen Supportfall im Zusammenhang mit Core eDiscovery oder Advanced eDiscovery öffnen. Dieser Artikel enthält Anleitungen zum Sammeln von Diagnoseinformationen, mit deren Hilfe Techniker Probleme untersuchen und beheben können. In der Regel müssen Sie diese Informationen erst erfassen, wenn Sie von einem Microsoft Support-Techniker dazu aufgefordert wurden.
+Gelegentlich benötigen Microsoft Support-Techniker spezifische Informationen zu Ihrem Problem, wenn Sie einen Supportfall im Zusammenhang mit Core eDiscovery oder Advanced eDiscovery. Dieser Artikel enthält Anleitungen zum Sammeln von Diagnoseinformationen, mit deren Hilfe Techniker Probleme untersuchen und beheben können. In der Regel müssen Sie diese Informationen erst erfassen, wenn Sie von einem Microsoft Support-Techniker dazu aufgefordert wurden.
 
 > [!IMPORTANT]
 > Die Ausgabe der Cmdlets und Diagnoseinformationen, die in diesem Artikel beschrieben werden, kann vertrauliche Informationen zu Rechtsstreitigkeiten oder internen Untersuchungen in Ihrer Organisation enthalten. Bevor Sie die unformatierte Diagnoseinformationen an den Microsoft Support senden, sollten Sie die Informationen überprüfen und vertrauliche Informationen (z. B. Namen oder andere Informationen zu Parteien, die an Einem Rechtsstreit oder Untersuchung beteiligten) durch redactieren, indem Sie sie durch `XXXXXXX` ersetzen. Wenn Sie diese Methode verwenden, wird dem Microsoft-Supporttechniker auch angezeigt, dass informationen redacted wurden.
@@ -39,7 +39,7 @@ Um die folgenden Cmdlets ausführen zu können, stellen Sie eine Verbindung mit 
 Nachdem Sie die generierte Textdatei überprüft und vertrauliche Informationen umaktiviert haben, senden Sie sie an den Microsoft Support-Techniker, der an Ihrem Fall arbeitet.
 
 > [!NOTE]
-> Sie können die Befehle in diesem Abschnitt auch ausführen, um Diagnoseinformationen für die auf der Seite Inhaltssuche im Microsoft 365 Compliance Center aufgeführten Such- und Exportinformationen zu sammeln. 
+> Sie können die Befehle in diesem Abschnitt auch ausführen, um Diagnoseinformationen für die auf der Seite Inhaltssuche im Compliance Center aufgeführten Microsoft 365 zu erfassen. 
 
 ### <a name="collect-information-about-searches"></a>Sammeln von Informationen zu Suchen
 
@@ -67,7 +67,7 @@ Get-CaseHoldPolicy "<Case hold policy name>" | %{"--CaseHoldPolicy--";$_|FL;"--C
 
 ### <a name="collect-all-case-information"></a>Sammeln aller Fallinformationen
 
-Manchmal ist nicht ersichtlich, welche Informationen vom Microsoft Support benötigt werden, um Ihr Problem zu untersuchen. In diesem Fall können Sie alle Diagnoseinformationen für einen Core eDiscovery-Fall erfassen. Der *Core eDiscovery-Fallname* im folgenden Befehl entspricht dem Namen eines Falls, der auf der Seite **Core eDiscovery** im Microsoft 365 Compliance Center angezeigt wird.
+Manchmal ist nicht ersichtlich, welche Informationen vom Microsoft Support benötigt werden, um Ihr Problem zu untersuchen. In diesem Fall können Sie alle Diagnoseinformationen für einen Core eDiscovery-Fall erfassen. Der *Core eDiscovery-Fallname* im folgenden Befehl entspricht dem Namen eines Falls, der auf der Seite Core **eDiscovery** im Microsoft 365 Compliance Center angezeigt wird.
 
 ```powershell
 Get-ComplianceCase "<Core eDiscovery case name>"| %{"$($_.Name)";"`t==Searches==";Get-ComplianceSearch -Case $_.Name | FL;"`t==Search Actions==";Get-ComplianceSearchAction -Case $_.Name |FL;"`t==Holds==";Get-CaseHoldPolicy -Case $_.Name | %{$_|FL;"`t`t ==$($_.Name) Rules==";Get-CaseHoldRule -Policy $_.Name | FL}} > "eDiscoveryCase.txt"
@@ -75,11 +75,11 @@ Get-ComplianceCase "<Core eDiscovery case name>"| %{"$($_.Name)";"`t==Searches==
 
 ## <a name="collect-diagnostic-information-for-advanced-ediscovery"></a>Sammeln von Diagnoseinformationen für Advanced eDiscovery
 
-Auf **der** Registerkarte Einstellungen in einem Advanced eDiscovery-Fall können Sie die Diagnoseinformationen für den Fall schnell kopieren. Die Diagnoseinformationen werden in der Zwischenablage gespeichert, damit Sie sie in eine Textdatei einfügen und an den Microsoft Support senden können.
+Auf **Einstellungen** Registerkarte in einem Advanced eDiscovery können Sie die Diagnoseinformationen für den Fall schnell kopieren. Die Diagnoseinformationen werden in der Zwischenablage gespeichert, damit Sie sie in eine Textdatei einfügen und an den Microsoft Support senden können.
 
 1. Wechseln Sie zu, und klicken Sie dann auf Alle [https://compliance.microsoft.com](https://compliance.microsoft.com/) **> eDiscovery > Advanced anzeigen.**
 
-2. Wählen Sie einen Fall aus, und klicken Sie dann auf die **Registerkarte** Einstellungen.
+2. Wählen Sie einen Fall aus, und klicken Sie **dann auf Einstellungen** Klicken.
 
 3. Klicken **Sie unter Fallinformationen** auf **Auswählen**.
 

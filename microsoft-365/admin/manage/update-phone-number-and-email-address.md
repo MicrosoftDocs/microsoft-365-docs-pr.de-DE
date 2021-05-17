@@ -29,7 +29,7 @@ ms.locfileid: "52073777"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Aktualisieren Ihrer Administratortelefonnummer und E-Mail-Adresse
 
-In diesem Artikel wird erläutert, wie Sie, der Administrator, Ihr Geschäftstelefon und Ihre E-Mail-Adresse in Microsoft 365 ändern können.
+In diesem Artikel wird erläutert, wie Sie, der Administrator, Ihr Geschäftstelefon und Ihre E-Mail-Adresse in Microsoft 365.
   
 Wenn Sie wissen möchten, wie Sie die Profilinformationen Ihres Unternehmens, z. B. Unternehmensname und -adresse, Telefonnummer des Unternehmens und technische Kontaktinformationen, ändern können, lesen Sie [Ändern der Adress- und anderen Profilinformationen Ihrer Organisation](change-address-contact-and-more.md).
 
@@ -43,7 +43,7 @@ Verwenden Sie **die Seite Sicherheitsinformationen,** um Ihre Mobiltelefonnummer
 
 2. Wählen Sie in der Kopfzeile ihr Profilsymbol Mein \> **Konto** \> **Sicherheitsinformationen aus.**
 
-3. Wählen Sie **auf der Registerkarte** Sicherheitsinformationen die Option **Alternatives** Telefon oder E-Mail hinzufügen aus, \>  \>  um Details hinzuzufügen.  Wählen Sie Ändern aus, um Ihre Mobiltelefon-, Telefon- und alternativen E-Mail-Adressdetails **zu aktualisieren.** Stellen Sie sicher, dass Sie etwas anderes als Ihre Microsoft-E-Mail-Adresse für Ihre alternative E-Mail-Adresse verwenden.
+3. Wählen Sie **auf der Registerkarte** Sicherheitsinformationen die Option Methode hinzufügen Telefon Alternative Telefon  \>  \>  **oder E-Mail** aus, um Details hinzuzufügen. Wählen Sie Ändern aus, um Ihre Mobiltelefon-, Telefon- und alternativen E-Mail-Adressdetails **zu aktualisieren.** Stellen Sie sicher, dass Sie etwas anderes als Ihre Microsoft-E-Mail-Adresse für Ihre alternative E-Mail-Adresse verwenden.
 
     > [!IMPORTANT]
     > Die alternative E-Mail-Adresse und die Mobiltelefonnummer werden zum Zurücksetzen Ihres Administratorkennworts (nicht Ihres Computeradministratorkennworts) benötigt.

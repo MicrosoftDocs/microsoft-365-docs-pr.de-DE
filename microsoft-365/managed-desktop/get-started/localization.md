@@ -21,18 +21,18 @@ ms.locfileid: "52023261"
 ---
 # <a name="localize-the-user-experience"></a>Lokalisieren der Benutzererfahrung
 
-Benutzer von Microsoft Managed Desktop-Geräten können die Sprache ihrer Wahl entweder während des Setupvorgangs (die "out-of-box"-Erfahrung) oder danach auswählen.
+Benutzer von Microsoft Managed Desktop können die Sprache ihrer Wahl entweder während des Setupvorgangs (die "out-of-box"-Erfahrung) oder danach auswählen.
 
 ## <a name="during-setup-the-out-of-box-experience"></a>Während des Setups (die "out-of-box"-Erfahrung)
 
 Während des Abschlusses des Setups können Benutzer die Sprache ihrer Wahl auswählen. Diese Auswahl wirkt sich auf die folgenden Attribute aus:
 
-- Windows 10-Sprachfeatures:
+- Windows 10 sprachfeatures:
     - Anzeigesprache
     - Tastatursprache
     - Sprachbezogene Features bei Bedarf
 
-- Sprachfeatures für Microsoft 365 Apps for Enterprise:
+- Microsoft 365 Apps für Enterprise Sprachfeatures:
     - Anzeigesprache
     - Korrekturhilfen und Erstellungstools
 
@@ -41,17 +41,17 @@ Während des Abschlusses des Setups können Benutzer die Sprache ihrer Wahl ausw
 
 ## <a name="after-completing-setup"></a>Nach Abschluss des Setups
 
-Benutzer können die Sprache ihrer Wahl für Windows 10 und Microsoft 365 Apps for Enterprise jederzeit nach Abschluss des Einrichtungsprozesses auswählen. Insbesondere gilt:
+Benutzer können die Sprache ihrer Wahl für Windows 10 und Microsoft 365 Apps für Enterprise nach Abschluss des Setupprozesses auswählen. Insbesondere gilt:
 
-- Windows 10-Sprachfeatures:
+- Windows 10 sprachfeatures:
     - Anzeigesprache
     - Tastatursprache
 
-- Sprachfeatures für Microsoft 365 Apps for Enterprise:
+- Microsoft 365 Apps für Enterprise Sprachfeatures:
     - Anzeigesprache
     - Korrekturhilfen und Erstellungstools
 
-Um die [unterstützten](#supported-languages) Sprachen für Microsoft 365 Apps for Enterprise für Ihre Benutzer verfügbar zu machen, fügen Sie die Benutzer der Gruppe **Modern Workplace-Office-Language_Packs** hinzu. Die Sprachen sind im Intune-Unternehmensportal verfügbar.
+Fügen Sie [die](#supported-languages) Benutzer der Gruppe Modern **Workplace-Office-Language_Packs** hinzu, um die unterstützten Sprachen für Microsoft 365 Apps für Enterprise zu installieren. Die Sprachen sind in der Intune-Unternehmensportal.
 
 
 ## <a name="supported-languages"></a>Unterstützte Sprachen
@@ -60,7 +60,7 @@ Für neue Geräte muss Ihr Hersteller Gerätebilder bereitstellen, die die von I
 
 Wenn Sie vorhandene Geräte erneut verwenden, müssen Sie möglicherweise mit Ihrem Microsoft-Kontomitarbeiter zusammenarbeiten, um geeignete Bilder zu erhalten. Weitere Informationen finden Sie unter [Gerätebilder](../service-description/device-images.md).
 
-Das [von](../service-description/device-images.md#universal-image) Microsoft Managed Desktop bereitgestellte universelle Bild umfasst die folgenden Sprachen und für Windows 10:
+Das [von Microsoft Managed Desktop](../service-description/device-images.md#universal-image) bereitgestellte universelle Bild enthält die folgenden Sprachen und für Windows 10:
 
 - Arabisch
 - Bulgarisch
@@ -100,18 +100,18 @@ Das [von](../service-description/device-images.md#universal-image) Microsoft Man
 - Ukrainisch
 - Vietnamesisch
 
-Microsoft 365 Apps for Enterprise unterstützt möglicherweise eine etwas andere Liste.
+Microsoft 365 Apps für Enterprise kann eine etwas andere Liste unterstützen.
 
 Wenn Ihre Benutzer eine andere Sprache als die [](../working-with-managed-desktop/admin-support.md) hier aufgeführten benötigen, stellen Sie eine Supportanfrage mithilfe des [Admin-Portals.](access-admin-portal.md)
 
 ## <a name="languages-for-support-and-operations"></a>Sprachen für Support und Vorgänge
 
 ### <a name="user-support"></a>Benutzerunterstützung
-Microsoft Managed Desktop bietet Unterstützung nur in Englisch. Wenn Benutzer in der App Hilfe erhalten eine andere Sprache auswählen, erhalten sie Unterstützung von den allgemeinen Microsoft-Supportkanälen und nicht direkt von Microsoft Managed Desktop. Weitere Informationen finden Sie unter [Abrufen von Hilfe für Benutzer](../working-with-managed-desktop/end-user-support.md).
+Microsoft Managed Desktop bietet Unterstützung nur in Englisch. Wenn Benutzer eine andere Sprache in der Hilfe-App auswählen, erhalten sie Unterstützung von den allgemeinen Microsoft-Supportkanälen und nicht direkt von Microsoft Managed Desktop. Weitere Informationen finden Sie unter [Abrufen von Hilfe für Benutzer](../working-with-managed-desktop/end-user-support.md).
 
 Wenn Ihre Benutzer Unterstützung in anderen Sprachen benötigen, müssen Sie dies über Nicht-Microsoft-Supportquellen oder aus Ihrer eigenen Organisation bereitstellen.
 
 ### <a name="admin-support-and-operations"></a>Administratorunterstützung und -vorgänge
-Microsoft Managed Desktop bietet Administratorunterstützung nur in Englisch. Dies umfasst das Administratorportal und die gesamte Kommunikation mit Microsoft Managed Desktop Operations. Sie sollten davon ausgehen, dass alle administratorbezogenen Interaktionen und Schnittstellen in Englisch sind, sofern nicht anders angegeben.
+Microsoft Managed Desktop bietet Administratorunterstützung nur in Englisch. Dies umfasst das Administratorportal und die gesamte Kommunikation mit Microsoft Managed Desktop Vorgängen. Sie sollten davon ausgehen, dass alle administratorbezogenen Interaktionen und Schnittstellen in Englisch sind, sofern nicht anders angegeben.
 
 

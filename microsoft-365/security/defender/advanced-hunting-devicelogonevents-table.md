@@ -57,7 +57,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `AccountSid` | Zeichenfolge | Security Identifier (SID) des Kontos |
 | `Protocol` | Zeichenfolge | Während der Kommunikation verwendetes Protokoll |
 | `FailureReason` | Zeichenfolge | Informationen zur Erklärung, warum die aufgezeichnete Aktion fehlgeschlagen ist |
-| `IsLocalAdmin` | Boolescher Wert | Boolescher Indikator, ob der Benutzer ein lokaler Administrator auf dem Computer ist |
+| `IsLocalAdmin` | boolean | Boolescher Indikator, ob der Benutzer ein lokaler Administrator auf dem Computer ist |
 | `LogonId` | Zeichenfolge | Bezeichner für eine Anmeldesitzung. Dieser Bezeichner ist auf demselben Computer nur zwischen Neustarts eindeutig |
 | `RemoteDeviceName` | Zeichenfolge | Name des Computers, der einen Remotevorgang auf dem betroffenen Computer ausgeführt hat. Je nach gemeldeten Ereignis kann es sich bei diesem Namen um einen vollqualifizierten Domänennamen (Fully Qualified Domain Name, FQDN), einen NetBIOS-Namen oder einen Hostnamen ohne Domäneninformationen geben. |
 | `RemoteIP` | string | IP-Adresse, mit der eine Verbindung hergestellt wurde |

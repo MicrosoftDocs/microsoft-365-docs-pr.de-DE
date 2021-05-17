@@ -1,6 +1,6 @@
 ---
 title: Übersicht und Häufig gestellte Fragen zur Verschlüsselung von Doppelschlüsseln
-description: Häufig gestellte Fragen zur Double Key Encryption für Microsoft 365.
+description: Häufig gestellte Fragen zur Double Key Encryption for Microsoft 365.
 author: kccross
 ms.author: krowley
 manager: laurawi
@@ -23,21 +23,21 @@ ms.locfileid: "50922049"
 
 Haben Sie eine Frage zur Funktionsweise der Double Key Encryption? Suchen Sie hier nach einer Antwort.
 
-## <a name="what-is-double-key-encryption-for-microsoft-365-dke"></a>Was ist Doppelschlüsselverschlüsselung für Microsoft 365 (DKE)?
+## <a name="what-is-double-key-encryption-for-microsoft-365-dke"></a>Was ist double key encryption for Microsoft 365 (DKE)?
 
-Die Doppelschlüsselverschlüsselung für Microsoft 365 ermöglicht Es Kunden, ihre hochsensiblen Daten zu schützen, um spezielle Anforderungen zu erfüllen. Es hilft Kunden, die volle Kontrolle über ihre Verschlüsselungsschlüssel zu behalten. Es verwendet zwei Schlüssel zum Schützen von Daten. einen Schlüssel in Ihrem Steuerelement und einen zweiten Schlüssel, der sicher in Microsoft Azure gespeichert ist. Das Anzeigen von Daten, die mit der Doppelschlüsselverschlüsselung geschützt sind, erfordert Zugriff auf beide Schlüssel. Da Microsoft nur auf einen dieser Schlüssel zugreifen kann, ist der Zugriff auf geschützte Daten für Microsoft weiterhin nicht möglich, um sicherzustellen, dass Sie die vollständige Kontrolle über Den Datenschutz und die Sicherheit Ihrer Daten haben.  
+Double Key Encryption for Microsoft 365 ermöglicht Es Kunden, ihre hochsensiblen Daten zu schützen, um spezielle Anforderungen zu erfüllen. Es hilft Kunden, die volle Kontrolle über ihre Verschlüsselungsschlüssel zu behalten. Es verwendet zwei Schlüssel zum Schützen von Daten. einen Schlüssel in Ihrem Steuerelement und einen zweiten Schlüssel, der sicher in einem Microsoft Azure. Das Anzeigen von Daten, die mit der Doppelschlüsselverschlüsselung geschützt sind, erfordert Zugriff auf beide Schlüssel. Da Microsoft nur auf einen dieser Schlüssel zugreifen kann, ist der Zugriff auf geschützte Daten für Microsoft weiterhin nicht möglich, um sicherzustellen, dass Sie die vollständige Kontrolle über Den Datenschutz und die Sicherheit Ihrer Daten haben.  
 
 Sie können den Doppeltschlüsselverschlüsselungsdienst hosten, der zum Anfordern Ihres Schlüssels verwendet wird, an einem Speicherort Ihrer Wahl (lokalen Schlüsselverwaltungsserver oder in der Cloud). Sie verwalten den Dienst wie jede andere Anwendung. Mit der Doppelschlüsselverschlüsselung können Sie den Zugriff auf den Double Key Encryption-Dienst steuern. Sie können Ihre hochsensiblen Daten lokal speichern oder in die Cloud verschieben. Sie können sicher sein, den Zugriff durch Drittanbieter zu verhindern, da Sie die volle Kontrolle über Ihren Schlüssel behalten. Mit der Doppelschlüsselverschlüsselung können Sie Ihre Daten und Schlüssel am gleichen Speicherort speichern.
 
 DKE hilft Ihnen bei der Erfüllung gesetzlicher Anforderungen in verschiedenen Vorschriften und Standards, wie z. B. der Datenschutz-Grundverordnung (DSGVO), dem Health Insurance Portability and Accountability Act (HIPAA), dem Gramm-Leach-Bliley Act (GLBA), dem russischen Datenlokalisierungsgesetz – Bundesgesetz Nr. 242-FZ, Australia es Federal Privacy Act 1988 und New Zealand es Privacy Act 1993.
 
-## <a name="can-i-use-double-key-encryption-with-microsoft-office-built-in-sensitivity-labeling"></a>Kann ich die Double Key Encryption Microsoft Office integrierte Vertraulichkeitsbezeichnung verwenden?
+## <a name="can-i-use-double-key-encryption-with-microsoft-office-built-in-sensitivity-labeling"></a>Kann ich die Double Key Encryption mit Microsoft Office integrierten Vertraulichkeitsbezeichnung verwenden?
 
 Sie müssen den Azure Information Protection Unified Labeling-Client verwenden, um Dokumente mit Double Key Encryption zu schützen. Derzeit können Sie keine integrierte Microsoft Office Vertraulichkeitsbezeichnung verwenden.
 
-## <a name="what-microsoft-365-apps-can-i-use-with-dke"></a>Welche Microsoft 365-Apps kann ich mit DKE verwenden?
+## <a name="what-microsoft-365-apps-can-i-use-with-dke"></a>Welche Microsoft 365 Apps kann ich mit DKE verwenden?
 
-Sie können DKE-Bezeichnungen verwenden, um Dokumente mithilfe der Desktopversionen von Word, Excel und PowerPoint unter Windows zu schützen. Stellen Sie sicher, dass Sie *.12711 oder höher (Desktopversionen von Word, PowerPoint und Excel) unter Windows verwenden.
+Sie können DKE-Bezeichnungen verwenden, um Dokumente mithilfe der Desktopversionen von Word, Excel und PowerPoint auf Windows. Stellen Sie sicher, dass Sie *.12711 oder höher (Desktopversionen von Word, PowerPoint und Excel) auf Windows.
 
 ## <a name="how-is-double-key-encryption-different-from-the-existing-hold-your-own-key-hyok-solution"></a>Inwiefern ist die Doppelschlüsselverschlüsselung von der vorhandenen Lösung für den eigenen Schlüssel (HYOK) unterschiedlich?
 
@@ -57,11 +57,11 @@ Die Bereitstellung der Doppelschlüsselverschlüsselung hat keine Auswirkungen a
 
 ## <a name="can-i-run-double-key-encryption-in-my-non-microsoft-air-gapped-environment"></a>Kann ich die Double Key Encryption in meiner Nicht-Microsoft-Umgebung ausführen?
 
-DKE unterstützt diese Umgebungen nicht, da der Dienst Zugriff auf Microsoft Azure erfordert.
+DKE unterstützt diese Umgebungen nicht, da der Dienst Zugriff auf Microsoft Azure.
 
 ## <a name="where-can-i-store-double-key-encrypted-documents"></a>Wo kann ich verschlüsselte Dokumente mit Doppelschlüssel speichern?
 
-Sie können verschlüsselte Dokumente mit Doppelschlüssel lokal oder in der Cloud speichern. In der Cloud können Sie verschlüsselte Inhalte nach SharePoint Online und OneDrive for Business verschieben. Da Microsoft keinen Zugriff auf Ihren privaten Schlüssel hat, bleiben die verschlüsselten Daten für Microsoft undurchsichtig. Dies bedeutet auch, dass Sie die verschlüsselten Dokumente nicht online in Office Web Apps anzeigen können.
+Sie können verschlüsselte Dokumente mit Doppelschlüssel lokal oder in der Cloud speichern. In der Cloud können Sie verschlüsselte Inhalte in SharePoint Online und OneDrive for Business. Da Microsoft keinen Zugriff auf Ihren privaten Schlüssel hat, bleiben die verschlüsselten Daten für Microsoft undurchsichtig. Dies bedeutet auch, dass Sie die verschlüsselten Dokumente nicht online in Office Web Apps anzeigen können.
 
 ## <a name="what-regions-and-languages-is-double-key-encryption-available-in-is-double-key-encryption-available-worldwide"></a>In welchen Regionen und Sprachen ist die Doppelschlüsselverschlüsselung verfügbar? Ist die Doppelschlüsselverschlüsselung weltweit verfügbar?
 

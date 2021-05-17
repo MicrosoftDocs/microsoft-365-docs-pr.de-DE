@@ -57,7 +57,7 @@ Häufig gestellte Fragen zur Verwendung des Laufwerkversands zum Importieren von
     
     Darüber hinaus muss eine der folgenden Bedingungen erfüllt sein, um Importaufträge im Security & Compliance Center erstellen zu können:
     
-  - Ihnen muss in Exchange Online die Rolle „E-Mail-Empfänger“ zugewiesen sein. Standardmäßig wird diese Rolle den Rollengruppen "Organisationsverwaltung" und "Empfängerverwaltung" zugewiesen.
+  - In Exchange Online muss Ihnen die Rolle „E-Mail-Empfänger“ zugewiesen werden. Standardmäßig ist diese Rolle den Rollengruppen „Organisationsverwaltung“ und „Empfängerverwaltung“ zugewiesen.
     
     Oder
     

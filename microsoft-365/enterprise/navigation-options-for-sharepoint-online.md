@@ -20,7 +20,7 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: adb92b80-b342-4ecb-99a1-da2a2b4782eb
-description: In diesem Artikel werden Navigationsoptionen beschrieben, auf deren SharePoint Publishing in SharePoint Online aktiviert ist.
+description: In diesem Artikel werden Navigationsoptionenswebsites mit aktivierter SharePoint in SharePoint Online beschrieben.
 ms.openlocfilehash: b5989bf26ebf7bb1452f983af89a6e6739821d53
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -30,22 +30,22 @@ ms.locfileid: "50923624"
 ---
 # <a name="navigation-options-for-sharepoint-online"></a>Navigationsoptionen für SharePoint Online
 
-In diesem Artikel werden Navigationsoptionen beschrieben, auf deren SharePoint Publishing in SharePoint Online aktiviert ist. Die Auswahl und Konfiguration der Navigation wirkt sich erheblich auf die Leistung und Skalierbarkeit von Websites in SharePoint Online aus. Die Vorlage für die SharePoint-Veröffentlichungswebsite sollte nur verwendet werden, wenn dies für ein zentrales Portal erforderlich ist, und das Veröffentlichungsfeature sollte nur auf bestimmten Websites und nur dann aktiviert werden, wenn dies unbedingt erforderlich ist, da es sich bei falscher Verwendung auf die Leistung auswirken kann.
+In diesem Artikel werden Navigationsoptionenswebsites mit aktivierter SharePoint in SharePoint Online beschrieben. Die Auswahl und Konfiguration der Navigation wirkt sich erheblich auf die Leistung und Skalierbarkeit von Websites in SharePoint Online aus. Die SharePoint Veröffentlichungswebsitevorlage sollte nur verwendet werden, wenn dies für ein zentrales Portal erforderlich ist, und das Veröffentlichungsfeature sollte nur auf bestimmten Websites und nur dann aktiviert werden, wenn dies absolut erforderlich ist, da es sich bei falscher Verwendung auf die Leistung auswirken kann.
 
 >[!NOTE]
->Wenn Sie moderne SharePoint-Navigationsoptionen wie Megamenü, kaskadierende Navigation oder Hubnavigation verwenden, gilt dieser Artikel nicht für Ihre Website. Moderne SharePoint-Websitearchitekturen nutzen eine flachere Websitehierarchie und ein Hub-and-Spoke-Modell. Dadurch können viele Szenarien erreicht werden, für die keine Verwendung des SharePoint-Veröffentlichungsfeatures erforderlich ist.
+>Wenn Sie moderne Navigationsoptionen wie SharePoint, kaskadierende Navigation oder Hubnavigation verwenden, gilt dieser Artikel nicht für Ihre Website. Moderne SharePoint nutzen eine flachere Websitehierarchie und ein Hub-and-Spoke-Modell. Auf diese Weise können viele Szenarien erreicht werden, für die keine Verwendung des features SharePoint erforderlich ist.
 
 ## <a name="overview-of-navigation-options"></a>Übersicht über Navigationsoptionen
 
-Die Konfiguration des Navigationsanbieters kann sich erheblich auf die Leistung für die gesamte Website auswirken, und es muss sorgfältig darauf bedacht werden, einen Navigationsanbieter und eine Konfiguration zu wählen, die effektiv für die Anforderungen einer SharePoint-Website skaliert wird. Es gibt zwei einsatzfertige Navigationsanbieter sowie benutzerdefinierte Navigationsimplementierung.
+Die Konfiguration des Navigationsanbieters kann sich erheblich auf die Leistung für die gesamte Website auswirken, und es ist sorgfältig zu berücksichtigen, einen Navigationsanbieter und eine Konfiguration zu wählen, die effektiv für die Anforderungen einer website SharePoint wird. Es gibt zwei einsatzfertige Navigationsanbieter sowie benutzerdefinierte Navigationsimplementierung.
 
-Die erste Option, [**die Strukturnavigation,**](#using-structural-navigation-in-sharepoint-online)ist die empfohlene Navigationsoption in SharePoint Online für klassische Sharepoint-Websites, wenn Sie die zwischenspeicherung der strukturbaulichen Navigation für **Ihre Website aktivieren.** Dieser Navigationsanbieter zeigt die Navigationselemente unterhalb der aktuellen Website und optional die aktuelle Website und deren gleichgeordnete Elemente an. Es bietet zusätzliche Funktionen, wie z. B. die Sicherheitstrimmerung und die Aufzählung der Websitestruktur. Wenn die Zwischenspeicherung deaktiviert ist, wirkt sich dies negativ auf die Leistung und Skalierbarkeit aus und unterliegt möglicherweise einer Einschränkung.
+Die erste Option, [**Strukturnavigation,**](#using-structural-navigation-in-sharepoint-online)ist die empfohlene Navigationsoption in SharePoint Online für klassische Sharepoint-Websites, wenn Sie die zwischenspeicherung der strukturbaulichen Navigation für **Ihre Website aktivieren.** Dieser Navigationsanbieter zeigt die Navigationselemente unterhalb der aktuellen Website und optional die aktuelle Website und deren gleichgeordnete Elemente an. Es bietet zusätzliche Funktionen, wie z. B. die Sicherheitstrimmerung und die Aufzählung der Websitestruktur. Wenn die Zwischenspeicherung deaktiviert ist, wirkt sich dies negativ auf die Leistung und Skalierbarkeit aus und unterliegt möglicherweise einer Einschränkung.
 
 Die zweite Option, [**verwaltete Navigation (Metadaten),**](#using-managed-navigation-and-metadata-in-sharepoint-online)stellt Navigationselemente mithilfe eines Ausdruckssatz für verwaltete Metadaten dar. Es wird empfohlen, die Sicherheitstrimmerung zu deaktivieren, sofern dies nicht erforderlich ist. Die Sicherheitstrimmerung ist als Standardeinstellung für diesen Navigationsanbieter aktiviert. Viele Websites erfordern jedoch keinen Aufwand für die Sicherheitsbeschneidung, da Navigationselemente häufig für alle Benutzer der Website konsistent sind. Mit der empfohlenen Konfiguration zum Deaktivieren der Sicherheitstrimmer erfordert dieser Navigationsanbieter keine Aufzählen der Websitestruktur und ist hochgradig skalierbar mit akzeptablen Auswirkungen auf die Leistung.
 
 Neben den einsatzfertigen Navigationsanbietern haben viele Kunden erfolgreich alternative benutzerdefinierte Navigationsimplementierung implementiert. Weitere [Informationen finden Sie unter Search-driven client-side scripting](#using-search-driven-client-side-scripting) in this article.
   
-## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Vor- und Nachteile von SharePoint Online-Navigationsoptionen
+## <a name="pros-and-cons-of-sharepoint-online-navigation-options"></a>Vor- und Nachteile SharePoint Onlinenavigationsoptionen
 
 In der folgenden Tabelle sind die Vor- und Nachteile der einzelnen Optionen zusammengefasst.
 
@@ -57,35 +57,35 @@ In der folgenden Tabelle sind die Vor- und Nachteile der einzelnen Optionen zusa
 Die am besten geeignete Option für Ihre Website hängt von Ihren Websiteanforderungen und Ihrer technischen Leistungsfähigkeit ab. Wenn Sie einen einfach zu konfigurierenden Navigationsanbieter wünschen, der automatisch [](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43) aktualisiert wird, wenn Inhalte geändert werden, ist die strukturelle Navigation mit aktivierter Zwischenspeicherung eine gute Option.
 
 >[!NOTE]
->Das Anwenden desselben Prinzips wie moderne SharePoint-Websites durch Vereinfachen der allgemeinen Websitestruktur auf eine flacheren, nicht hierarchischen Strukturen verbessert die Leistung und vereinfacht den Wechsel zu modernen SharePoint-Websites. Dies bedeutet, dass anstelle einer einzigen Websitesammlung mit Hunderten von Websites (Unterwebsites) ein besserer Ansatz besteht, viele Websitesammlungen mit sehr wenigen Unterwebsites (Unterwebsites) zu haben.
+>Die Anwendung desselben Prinzips wie SharePoint Websites durch Die Vereinfachung der gesamten Websitestruktur auf eine flacheren, nicht hierarchischen Strukturen verbessert die Leistung und vereinfacht den Wechsel zu modernen SharePoint Websites. Dies bedeutet, dass anstelle einer einzigen Websitesammlung mit Hunderten von Websites (Unterwebsites) ein besserer Ansatz besteht, viele Websitesammlungen mit sehr wenigen Unterwebsites (Unterwebsites) zu haben.
 
 ## <a name="analyzing-navigation-performance-in-sharepoint-online"></a>Analysieren der Navigationsleistung in SharePoint Online
 
-Das [Tool Seitendiagnose für SharePoint](./page-diagnostics-for-spo.md) ist eine Browsererweiterung für Microsoft Edge- und Chrome-Browser, die sowohl moderne SharePoint Online-Portal- als auch klassische Veröffentlichungswebsiteseiten analysiert. Dieses Tool funktioniert nur für SharePoint Online und kann nicht auf einer SharePoint-Systemseite verwendet werden.
+Das [Tool Seitendiagnose für SharePoint](./page-diagnostics-for-spo.md) ist eine Browsererweiterung für Microsoft Edge- und Chrome-Browser, die sowohl SharePoint moderne Portal- als auch klassische Veröffentlichungswebsiteseiten analysiert. Dieses Tool funktioniert nur für SharePoint Online und kann nicht auf einer SharePoint verwendet werden.
 
-Das Tool generiert einen Bericht für jede analysierte Seite, in dem gezeigt wird, wie die Seite mit einem vordefinierten Satz von Regeln arbeitet, und zeigt detaillierte Informationen an, wenn ergebnisse für einen Test außerhalb des Basiswerts fallen. SharePoint Online-Administratoren und Designer können das Tool verwenden, um Leistungsprobleme zu beheben, um sicherzustellen, dass neue Seiten vor der Veröffentlichung optimiert werden.
+Das Tool generiert einen Bericht für jede analysierte Seite, in dem gezeigt wird, wie die Seite mit einem vordefinierten Satz von Regeln arbeitet, und zeigt detaillierte Informationen an, wenn ergebnisse für einen Test außerhalb des Basiswerts fallen. SharePoint Onlineadministratoren und Designer können das Tool verwenden, um Leistungsprobleme zu beheben, um sicherzustellen, dass neue Seiten vor der Veröffentlichung optimiert werden.
 
-**SpRequestDuration ist** insbesondere die Zeit, die es dauert, bis SharePoint die Seite verarbeiten kann. Eine hohe Navigation (z. B. Seiten in der Navigation), komplexe Websitehierarchien sowie andere Konfigurations- und Topologieoptionen können erheblich zu längeren Laufzeiten beitragen.
+**SPRequestDuration** ist insbesondere die Zeit, die es dauert, SharePoint die Seite zu verarbeiten. Eine hohe Navigation (z. B. Seiten in der Navigation), komplexe Websitehierarchien sowie andere Konfigurations- und Topologieoptionen können erheblich zu längeren Laufzeiten beitragen.
 
-## <a name="using-structural-navigation-in-sharepoint-online"></a>Verwenden der strukturellen Navigation in SharePoint Online
+## <a name="using-structural-navigation-in-sharepoint-online"></a>Verwenden der Strukturnavigation in SharePoint Online
 
 Dies ist die standardmäßig verwendete out-of-the-box-Navigation und die unkomplizierteste Lösung. Es ist keine Anpassung erforderlich, und ein nicht technischer Benutzer kann auch einfach Elemente hinzufügen, Elemente ausblenden und die Navigation auf der Einstellungsseite verwalten. Es wird [empfohlen, die Zwischenspeicherung](https://support.office.com/article/structural-navigation-and-performance-f163053f-8eca-4b9c-b973-36b395093b43)zu aktivieren, andernfalls gibt es einen kostspieligen Leistungs-Trade-Off.
 
 ### <a name="how-to-implement-structural-navigation-caching"></a>Implementieren der strukturellen Navigations-Zwischenspeicherung
 
-Unter **Websiteeinstellungen**  >  **Navigationsleiste suchen und** fühlen können Sie überprüfen, ob die strukturstrukturierte Navigation für die globale oder die aktuelle Navigation ausgewählt  >  ist. Das **Auswählen von Seiten** anzeigen hat negative Auswirkungen auf die Leistung.
+Unter **Site Einstellungen** Look and Feel Navigation können Sie überprüfen, ob die Strukturnavigation für die globale oder die aktuelle Navigation ausgewählt  >    >  ist. Das **Auswählen von Seiten** anzeigen hat negative Auswirkungen auf die Leistung.
 
 ![Strukturnavigation mit ausgewählten Unterwebsites anzeigen](../media/SPONavOptionsStructuredShowSubsites.png)
 
-Die Zwischenspeicherung kann auf Websitesammlungsebene und auf Websiteebene aktiviert oder deaktiviert werden und ist standardmäßig für beide aktiviert. Aktivieren Sie zum Aktivieren auf Websitesammlungsebene unter **Websiteeinstellungen** Websitesammlungsverwaltung  >    >  **Websitesammlungsnavigation** das Kontrollkästchen **Zwischenspeicherung aktivieren.**
+Die Zwischenspeicherung kann auf Websitesammlungsebene und auf Websiteebene aktiviert oder deaktiviert werden und ist standardmäßig für beide aktiviert. Aktivieren Sie zum Aktivieren auf Websitesammlungsebene unter Websitesammlungsverwaltungsnavigation **Einstellungen** Websitesammlungsverwaltung das Kontrollkästchen  >    >   **Zwischenspeichern aktivieren.**
 
 ![Aktivieren der Zwischenspeicherung auf Standortebene](../media/structural-nav/structural-nav-caching-site-coll.png)
 
-Aktivieren Sie zum Aktivieren auf Websiteebene unter Navigation für **Websiteeinstellungen** das Kontrollkästchen  >   **Zwischenspeicherung aktivieren.**
+Aktivieren Sie zum Aktivieren auf Standortebene unter **Website Einstellungen** Navigation das Kontrollkästchen  >   **Zwischenspeicherung aktivieren.**
 
 ![Aktivieren der Zwischenspeicherung auf Standortebene](../media/structural-nav/structural-nav-caching-site.png)
 
-## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Verwenden verwalteter Navigation und Metadaten in SharePoint Online
+## <a name="using-managed-navigation-and-metadata-in-sharepoint-online"></a>Verwenden von verwalteter Navigation und Metadaten in SharePoint Online
 
 Die verwaltete Navigation ist eine weitere out-of-the-box-Option, die Sie verwenden können, um die meisten der gleichen Funktionen wie die Strukturnavigation neu zu erstellen. Verwaltete Metadaten können so konfiguriert werden, dass die Sicherheitsbeschneidung aktiviert oder deaktiviert ist. Bei deaktivierter Sicherheitstrimmerung ist die verwaltete Navigation relativ effizient, da sie alle Navigationslinks mit einer konstanten Anzahl von Serveraufrufen lädt. Durch die Aktivierung der Sicherheitstrimmerung werden jedoch einige der Leistungsvorteile der verwalteten Navigation negiert.
 
@@ -103,7 +103,7 @@ Es gibt mehrere Artikel zu docs.microsoft.com informationen zu den Details der v
 
 Zum Implementieren der verwalteten Navigation richten Sie Begriffe mit URLs ein, die der Navigationsstruktur der Website entspricht. Die verwaltete Navigation kann sogar manuell kuratiert werden, um die Strukturnavigation in vielen Fällen zu ersetzen. Beispiel:
 
-![SharePoint Online-Websitestruktur](../media/SPONavOptionsListOfSites.png))
+![SharePoint Onlinewebsitestruktur](../media/SPONavOptionsListOfSites.png))
 
 ## <a name="using-search-driven-client-side-scripting"></a>Verwenden von suchgesteuertem clientseitigem Skripting
 
@@ -117,7 +117,7 @@ Diese Navigationsanbieter haben einige wichtige Vorteile:
 
 Ein Beispiel für einen Datenanbieter ist die Verwendung einer suchgesteuerten **Navigation,** die flexibilität zum Aufzählen von Navigationsknoten und zum effizienten Behandeln von Sicherheitstrimmern ermöglicht.
 
-Es gibt weitere beliebte Optionen zum Erstellen von **benutzerdefinierten Navigationsanbietern.** Weitere Anleitungen zum Erstellen eines benutzerdefinierten [Navigationsanbieters](/sharepoint/dev/solution-guidance/portal-navigation) finden Sie unter Navigationslösungen für SharePoint Online-Portale.
+Es gibt weitere beliebte Optionen zum Erstellen von **benutzerdefinierten Navigationsanbietern.** Weitere Anleitungen zum Erstellen eines benutzerdefinierten [Navigationsanbieters finden Sie SharePoint Navigationslösungen](/sharepoint/dev/solution-guidance/portal-navigation) für SharePoint Onlineportale.
 
 Mithilfe der Suche können Sie die im Hintergrund aufgebauten Indizes mithilfe einer kontinuierlichen Durchforstung nutzen. Die Suchergebnisse werden aus dem Suchindex gezogen, und die Ergebnisse sind sicherheitsbeschnitten. Dies ist in der Regel schneller als bei nicht verwendeten Navigationsanbietern, wenn eine Sicherheitsbeschneidung erforderlich ist. Die Verwendung der Suche nach struktureller Navigation, insbesondere wenn Sie über eine komplexe Websitestruktur verfügen, beschleunigt die Ladezeit der Seite erheblich. Der Hauptvorteil dieser gegenüber der verwalteten Navigation ist, dass Sie von der Sicherheitstrimmerung profitieren.
 
@@ -125,7 +125,7 @@ Dieser Ansatz umfasst das Erstellen einer benutzerdefinierten Gestaltungsmasters
 
 ### <a name="example-replace-the-out-of-the-box-navigation-code-in-a-master-page"></a>Beispiel: Ersetzen des out-of-the-box-Navigationscodes in einer Masterseite
 
-1. Navigieren Sie zur Seite Websiteeinstellungen.
+1. Navigieren Sie zur Seite Website Einstellungen Seite.
 2. Öffnen Sie den Masterseitenkatalog, indem Sie auf **Masterseiten klicken.**
 3. Von hier aus können Sie durch die Bibliothek navigieren und die Datei `seattle.master` herunterladen.
 4. Bearbeiten Sie den Code mithilfe eines Texteditors, und löschen Sie den Codeblock im folgenden Screenshot.<br/>![Löschen des angezeigten Codeblocks](../media/SPONavOptionsDeleteCodeBlock.png)<br/>
@@ -221,7 +221,7 @@ In unserem komplexen Navigationsbeispiel zeigt eine neue Seitenlast ohne lokale 
 ### <a name="about-the-javascript-file"></a>Informationen zur JavaScript-Datei...
 
 >[!NOTE]
->Wenn Sie benutzerdefiniertes JavaScript verwenden, stellen Sie sicher, dass das öffentliche CDN aktiviert ist und sich die Datei an einem CDN-Speicherort befindet.
+>Wenn Sie benutzerdefiniertes JavaScript verwenden, stellen Sie sicher, dass CDN aktiviert ist und sich die Datei an einem CDN befindet.
 
 Die gesamte JavaScript-Datei lautet wie folgt:
 

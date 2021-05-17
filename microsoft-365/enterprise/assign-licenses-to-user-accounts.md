@@ -1,5 +1,5 @@
 ---
-title: Zuweisen von Microsoft 365-Lizenzen zu Benutzerkonten
+title: Zuweisen Microsoft 365 Lizenzen zu Benutzerkonten
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -25,7 +25,7 @@ search.appverid:
 - MOE150
 - MBS150
 ms.assetid: 01920974-9e6f-4331-a370-13aea4e82b3e
-description: Beschreibt das Zuweisen von Microsoft 365-Lizenzen zu Benutzerkonten, entweder einzeln oder basierend auf der Gruppenmitgliedschaft.
+description: Beschreibt, wie sie Microsoft 365 benutzerkonten zuweisen, entweder einzeln oder basierend auf der Gruppenmitgliedschaft.
 ms.openlocfilehash: 2fe1e2f959fae8b0bc82a7dcd4f65f33b21c368a
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -33,19 +33,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51051532"
 ---
-# <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Zuweisen von Microsoft 365-Lizenzen zu Benutzerkonten
+# <a name="assign-microsoft-365-licenses-to-user-accounts"></a>Zuweisen Microsoft 365 Lizenzen zu Benutzerkonten
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Für das Nur-Cloud-Identitätsmodell können Sie Microsoft 365-Lizenzen Benutzerkonten bei der Erstellung zuweisen, je nachdem, wie Sie sie erstellen.
+Für das Nur-Cloud-Identitätsmodell können Sie Microsoft 365 Benutzerkonten bei der Erstellung zuweisen, je nachdem, wie Sie sie erstellen.
 
-Wenn für das Hybrididentitätsmodell Benutzerkonten der Active Directory Domain Services (AD DS) zum ersten Mal synchronisiert werden, wird ihnen nicht automatisch ein Speicherort oder eine Microsoft 365-Lizenz zugewiesen. **Sie müssen jedes Benutzerkonto mit einem Benutzerspeicherort vor oder zusammen mit dem Zuweisen einer Lizenz konfigurieren.**
+Wenn active Directory Domain Services (AD DS)-Benutzerkonten für das Hybrididentitätsmodell zum ersten Mal synchronisiert werden, wird ihnen nicht automatisch ein Speicherort oder eine Microsoft 365 zugewiesen. **Sie müssen jedes Benutzerkonto mit einem Benutzerspeicherort vor oder zusammen mit dem Zuweisen einer Lizenz konfigurieren.**
 
-In beiden Fällen müssen Sie Benutzerkonten eine Lizenz zuweisen, damit Ihre Benutzer auf Microsoft 365-Dienste wie E-Mails und Microsoft Teams zugreifen können.
+In beiden Fällen müssen Sie Benutzerkonten eine Lizenz zuweisen, damit Ihre Benutzer auf Microsoft 365 zugreifen können, z. B. E-Mails und Microsoft Teams.
 
 Sie können Benutzerkonten Lizenzen entweder einzeln oder automatisch über die Gruppenmitgliedschaft zuweisen.
 
-Zum Zuweisen von Microsoft 365-Lizenzen zu einzelnen Benutzerkonten können Sie verwenden:
+Zum Zuweisen Microsoft 365 Lizenzen zu einzelnen Benutzerkonten können Sie verwenden:
 
 - [Das Microsoft 365 Admin Center](../admin/manage/assign-licenses-to-users.md)
 - [PowerShell](assign-licenses-to-user-accounts-with-microsoft-365-powershell.md)

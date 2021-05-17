@@ -16,7 +16,7 @@ ms.collection:
 - m365solution-infoprotection
 - m365solution-scenario
 ms.custom: ''
-description: Bestimmen Sie die Datenschutzbestimmungen, die relevanten Szenarien, Ihre Bereitschaft und die Typen vertraulicher Informationen, die sich in Ihrer Microsoft 365-Umgebung befinden.
+description: Bestimmen Sie die Datenschutzbestimmungen, die relevanten Szenarien, Ihre Bereitschaft und die Typen vertraulicher Informationen, die sich in Ihrer Microsoft 365 befinden.
 ms.openlocfilehash: 6801f0af70e08d2b4efdc9e27f1cb1f1d636b821
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,7 +26,7 @@ ms.locfileid: "50929168"
 ---
 # <a name="assess-data-privacy-risks-and-identify-sensitive-items-with-microsoft-365"></a>Bewerten von Datenschutzrisiken und Identifizieren vertraulicher Elemente mit Microsoft 365
 
-Die Bewertung der Datenschutzbestimmungen und Risiken, denen Ihre Organisation unterliegt, ist ein wichtiger erster Schritt vor der Implementierung verwandter Verbesserungsmaßnahmen, einschließlich derer, die mit Microsoft 365-Features und -Diensten erreichbar sind. 
+Die Bewertung der Datenschutzbestimmungen und Risiken, denen Ihre Organisation unterliegt, ist ein wichtiger erster Schritt vor der Implementierung verwandter Verbesserungsmaßnahmen, einschließlich derer, die mit den Microsoft 365 und Diensten erreichbar sind. 
 
 ## <a name="potentially-applicable-data-privacy-regulations"></a>Potenziell anwendbare Datenschutzbestimmungen
 
@@ -52,7 +52,7 @@ In den USA sind dies der California Consumer Protection Act ([CCPA](/compliance/
 
 Weltweit gibt es weitere Beispiele, z. B. das Nationale DSGVO-Implementierungsgesetz (BDSG), das Brasilianische Datenschutzgesetz (LGPD) und viele andere.
 
-## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Zuordnung von Vorschriften zu technischen Steuerelementkategorien von Microsoft 365
+## <a name="regulation-mapping-to-microsoft-365-technical-control-categories"></a>Zuordnung von Vorschriften zu Microsoft 365 technischen Steuerelementkategorien
 
 Viele der datenschutzbezogenen Vorschriften haben überlappende Anforderungen, daher sollten Sie wissen, welchen Vorschriften sie unterliegen, bevor Sie ein technisches Kontrollsystem entwickeln. 
 
@@ -96,7 +96,7 @@ Daten werden auch im Laufe der Zeit bewegt, während sie verarbeitet, verfeinert
  
 ### <a name="where-the-personal-data-is"></a>Wo die personenbezogenen Daten gespeichert sind
 
-Um Datenschutzbestimmungen zu erfüllen, können Sie sich nicht auf allgemeine Vorstellungen verlassen, wo personenbezogene Daten vorhanden sein könnten, entweder jetzt oder in Der Zukunft. Datenschutzbestimmungen erfordern, dass Organisationen nachweisen, dass sie ständig wissen, wo personenbezogene Daten gespeichert sind. Dies macht es wichtig, eine erste Momentaufnahme aller Datenquellen für eine mögliche Speicherung personenbezogener Informationen, einschließlich Ihrer Microsoft 365-Umgebung, zu erstellen und Mechanismen für die laufende Überwachung und Erkennung zu erstellen.
+Um Datenschutzbestimmungen zu erfüllen, können Sie sich nicht auf allgemeine Vorstellungen verlassen, wo personenbezogene Daten vorhanden sein könnten, entweder jetzt oder in Der Zukunft. Datenschutzbestimmungen erfordern, dass Organisationen nachweisen, dass sie ständig wissen, wo personenbezogene Daten gespeichert sind. Dies macht es wichtig, eine erste Momentaufnahme aller Datenquellen für die mögliche Speicherung personenbezogener Informationen, einschließlich Ihrer Microsoft 365-Umgebung, zu erstellen und Mechanismen für die laufende Überwachung und Erkennung zu erstellen.
 
 Wenn Sie Ihre allgemeine Bereitschaft und Das risiko im Zusammenhang mit Datenschutzbestimmungen noch nicht bewertet haben, verwenden Sie das folgende 3-Schritt-Framework, um zu beginnen. 
 
@@ -110,7 +110,7 @@ Wenn Sie Ihre allgemeine Bereitschaft und Das risiko im Zusammenhang mit Datensc
 
 Sie müssen die Gefährdung durch datenschutzbezogene Risiken basierend auf der Art der derzeit verwalteten personenbezogenen Daten, dem Ort, an dem sie gespeichert sind, den Schutzkontrollen, derEn Lebenszyklus und dem Zugriff darauf messen. 
 
-Als Ausgangspunkt ist es wichtig, inventar zu machen, welche Arten von personenbezogenen Daten in Ihrer Microsoft 365-Umgebung vorhanden sind. Verwenden Sie die folgenden Kategorien:
+Als Ausgangspunkt ist es wichtig, inventar zu machen, welche Arten von personenbezogenen Daten in Ihrer Umgebung Microsoft 365 sind. Verwenden Sie die folgenden Kategorien:
 
 - Mitarbeiterdaten, die für die Durchführung von täglichen Geschäftsfunktionen erforderlich sind
 - Daten, die die Organisation zu ihren Geschäftskunden, Partnern und anderen Beziehungen im Business-to-Business(B2B)-Szenario hat
@@ -120,9 +120,9 @@ Im Folgenden finden Sie ein Beispiel für die verschiedenen Datentypen für typi
 
 ![Arten von personenbezogenen Daten](../media/information-protection-deploy-assess/information-protection-deploy-assess-data-types.png)
 
-Ein Teil der personenbezogenen Daten, für die Datenschutzbestimmungen gelten, werden in der Regel außerhalb von Microsoft 365 gesammelt und gespeichert. Alle personenbezogenen Daten aus verbraucherorientierten Web- oder mobilen Anwendungen müssten aus diesen Anwendungen nach Microsoft 365 exportiert worden sein, um in Microsoft 365 einer Datenschutzprüfung unterliegen zu können. 
+Ein Teil der personenbezogenen Daten, für die Datenschutzbestimmungen gelten, werden in der Regel außerhalb von Datenschutzbestimmungen Microsoft 365. Alle personenbezogenen Daten aus verbraucherorientierten Web- oder mobilen Anwendungen müssten aus solchen Anwendungen nach Microsoft 365 exportiert worden sein, um innerhalb der Anwendung einer Datenschutzprüfung Microsoft 365. 
 
-Ihre Datenschutzrisiken in Microsoft 365 sind möglicherweise im Verhältnis zu Ihren Webanwendungen und CRM-Systemen eingeschränkt, die diese Lösung nicht adressiert.
+Ihre Datenschutzrisiken in Microsoft 365 im Verhältnis zu Webanwendungen und CRM-Systemen, die diese Lösung nicht adressiert, möglicherweise eingeschränkter.
 
 Es ist auch wichtig, bei der Bewertung Ihres Risikoprofils die folgenden häufigen Herausforderungen bei der Einhaltung von Datenschutzbestimmungen zu prüfen:
 
@@ -167,9 +167,9 @@ Wenn Ihre Organisation nicht viele Direkte-von-Verbraucher-Datensammlungen macht
 
 Das Verständnis Ihrer Risiko- und Datenschutzbestimmungen ist ein wichtiger erster Schritt, der auf einem grundlegenden Verständnis der Szenarien für personenbezogene Daten In Ihrer Organisation basiert.
 
-Wenn Sie nicht über personenbezogene Daten von Verbrauchern in Ihrer Microsoft 365-Umgebung verfügen oder sie auf bestimmte Teile der Umgebung beschränkt sind und die Notwendigkeit einer technischen Kontrolle auf eine Verbraucherdatenexposition setzt, muss diese technische Kontrolle möglicherweise nur in Teilen der Umgebung mit hohem Risiko eingesetzt werden, nicht überall.
+Wenn Sie nicht über personenbezogene Daten von Verbrauchern in Ihrer Microsoft 365-Umgebung verfügen oder sie auf bestimmte Teile der Umgebung beschränkt sind und die Notwendigkeit einer technischen Kontrolle darauf abgestellt ist, dass Verbraucherdaten ausgesetzt sind, muss diese technische Kontrolle möglicherweise nur in Risikoteilen der Umgebung eingesetzt werden, nicht überall.
 
-Eine empfehlung einer externen Organisation oder eines Standardsteuerelements, z. B. vom Compliance Manager in Microsoft 365, kann zwar dazu beitragen, Ihre Steuerungsstrategie zu informieren, ihre Wahl der Implementierung sollte jedoch durch das Bewusstsein für das Datenbestandsbewusstsein gesteuert werden, um Ihr tatsächliches Risikorisiko zu quantifizieren.
+Eine empfehlung einer externen Organisation oder eines Standardsteuerelements, z. B. vom Compliance Manager in Microsoft 365, kann zwar dazu beitragen, Ihre Steuerungsstrategie zu informieren, ihre Wahl der Implementierung sollte jedoch durch das Bewusstsein für das Dateninventar gesteuert werden, um Ihr tatsächliches Risikorisiko zu quantifizieren.
 
 Die meisten Organisationen haben ein gewisses Risiko für eines der oben genannten Szenarien. Es ist wichtig, einen ganzheitlichen Ansatz für die Bewertung zu nehmen.
 
@@ -189,11 +189,11 @@ Die DSGVO-Bewertung besteht aus den folgenden Abschnitten:
 | Richtlinienverwaltung | <ol><li>Wie verwalten Sie Ihre verbindlichen Unternehmensregeln (Binding Corporate Rules, BCRs)? </li><li>Verfolgen Sie die Zustimmung für Daten? </li><li> In einer Skala von 1 bis 5, die vollständig abgedeckt ist, umfassen Ihre Verträge Datenklassifizierungen und Handhabungsanforderungen? </li><li>Haben Sie einen Plan zur Reaktion auf Vorfälle und testen sie regelmäßig? </li><li>Welche Richtlinie verwenden Sie zum Verwalten des Zugriffs? </li></ol>|
 |||
  
-## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>Schritt 3: Identifizieren von Typen vertraulicher Informationen, die in Ihrer Microsoft 365-Umgebung auftreten. 
+## <a name="step-3-identify-sensitive-information-types-that-occur-in-your-microsoft-365-environment"></a>Schritt 3: Identifizieren von Typen vertraulicher Informationen, die in Ihrer Umgebung Microsoft 365 werden. 
 
-Dieser Schritt umfasst die Identifizierung bestimmter vertraulicher Informationstypen, die bestimmten behördlichen Kontrollen unterliegen, sowie das Auftreten dieser Typen in Ihrer Microsoft 365-Umgebung. 
+Dieser Schritt umfasst die Identifizierung bestimmter vertraulicher Informationstypen, die bestimmten behördlichen Kontrollen unterliegen, sowie das Auftreten dieser Typen in Microsoft 365 Umgebung. 
 
-Das Suchen von Inhalten in Ihrer Umgebung, die persönliche Inhalte enthalten, kann eine enorme Aufgabe sein, die früher eine Kombination aus Compliancesuche, eDiscovery, Advanced eDiscovery, DLP und Überwachung enthält. 
+Die Suche nach Inhalten in Ihrer Umgebung, die persönliche Inhalte enthalten, kann eine enorme Aufgabe sein, die früher eine Kombination aus Compliancesuche, eDiscovery, Advanced eDiscovery, DLP und Überwachung enthält. 
 
 Mit der  neuen Datenklassifizierungslösung im Microsoft Compliance Admin Center ist dies mit der [Content Explorer-Funktion,](../compliance/data-classification-content-explorer.md) die entweder mit integrierten oder benutzerdefinierten vertraulichen Informationstypen funktioniert, einschließlich derjenigen im Zusammenhang mit personenbezogenen Daten, wesentlich einfacher geworden.
  
@@ -219,11 +219,11 @@ Weitere Informationen finden Sie in den folgenden Artikeln:
 
 ### <a name="content-explorer"></a>Inhalts-Explorer
 
-Ein wichtiges Tool zum Bestimmen des Vorkommens vertraulicher Elemente in Ihrer Umgebung ist der neue [Inhalts-Explorer](../compliance/data-classification-content-explorer.md) im Microsoft 365 Compliance Admin Center. Es ist ein automatisiertes Tool für die anfängliche und fortlaufende Überprüfung Ihres gesamten Microsoft 365-Abonnements auf das Auftreten vertraulicher Informationstypen und die Anzeige der Ergebnisse.
+Ein wichtiges Tool zum Bestimmen des Vorkommens vertraulicher Elemente in Ihrer Umgebung ist der neue [Inhalts-Explorer](../compliance/data-classification-content-explorer.md) im Microsoft 365 Compliance Admin Center. Es ist ein automatisiertes Tool für die anfängliche und fortlaufende Überprüfung Ihres gesamten Microsoft 365 auf das Auftreten vertraulicher Informationstypen und die Anzeige der Ergebnisse.
  
 Mit dem neuen Tool für den Inhalts-Explorer können Sie die Speicherorte vertraulicher Elemente in Ihrer Umgebung schnell identifizieren, indem Sie entweder integrierte typen für vertrauliche Informationen oder benutzerdefinierte Typen verwenden. Dies kann die Einrichtung eines Prozesses und die zugewiesene Verantwortung für die regelmäßige Untersuchung der Anwesenheit und des Speicherorts vertraulicher Elemente umfassen.
 
-Zusammen mit den anderen in diesem Artikel hervorgehobenen Schritten bietet dies einen Ausgangspunkt für die Identifizierung Ihrer allgemeinen Risikoexposition, Bereitschaft und des Standorts vertraulicher Elemente, die durch die geplante Microsoft 365-Konfiguration und -Überwachung geschützt werden sollen. 
+Zusammen mit den anderen in diesem Artikel hervorgehobenen Schritten bietet dies einen Ausgangspunkt für die Identifizierung Ihrer allgemeinen Risikoexposition, Bereitschaft und position von vertraulichen Elementen, die durch geplante Microsoft 365 und Überwachung geschützt werden sollen. 
 
 ### <a name="other-methods-to-identify-personal-data-in-your-environment"></a>Andere Methoden zum Identifizieren personenbezogener Daten in Ihrer Umgebung
 
@@ -231,7 +231,7 @@ Zusätzlich zum Inhalts-Explorer haben Organisationen Zugriff auf die Inhaltssuc
 
 Ausführliche Anleitungen zur Verwendung der Inhaltssuche für die Ermittlung personenbezogener Daten finden Sie in [diesem Artikel](/compliance/regulatory/gdpr). Die Inhaltssuche und andere Ermittlungstechniken werden auch in DSRs für die [DSGVO und das CCPA untersucht.](/compliance/regulatory/gdpr-dsr-Office365#introduction-to-dsrs)
 
-Weitere Einblicke in Untersuchungs- und Abhilfemaßnahmen für personenbezogene Daten in Microsoft 365 finden Sie im [Monitor- und Reaktionsartikel](information-protection-deploy-monitor-respond.md).
+Weitere Einblicke zu Untersuchungs- und Korrekturtechniken für personenbezogene Daten in Microsoft 365 finden Sie im [Monitor- und Antwortartikel](information-protection-deploy-monitor-respond.md).
 
 > [!NOTE]
 > Informationen zu vertraulichen Informationen in lokalen Dateien finden Sie unter [Azure Information Protection](/azure/information-protection/quickstart-findsensitiveinfo).

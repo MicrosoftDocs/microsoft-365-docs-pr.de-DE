@@ -34,7 +34,7 @@ Sobald Ihre Geräte beim Dienst registriert sind, können Sie ESP für Ihre Micr
 Microsoft Managed Desktop verwendet diese Einstellungen im Autopilot-Profil, das für die Geräte Ihrer Benutzer verwendet wird:
 
 
-|Setting  |Wert  |
+|Einstellung  |Wert  |
 |---------|---------|
 |Bereitstellungsmodus |  Benutzergesteuert       |
 |Beitreten zu Azure AD als     |  Azure AD beigetreten       |
@@ -53,7 +53,7 @@ Microsoft Managed Desktop verwendet diese Einstellungen im Autopilot-Profil, das
 Microsoft Managed Desktop verwendet diese Einstellungen für die Registrierungsstatusseite:
 
 
-|Setting  |Wert  |
+|Einstellung  |Wert  |
 |---------|---------|
 |Anzeigen des Fortschritts der App- und Profilkonfiguration     | Ja        |
 |Anzeigen eines Fehlers, wenn die Installation länger als die angegebene Anzahl von Minuten dauert     |  60       |

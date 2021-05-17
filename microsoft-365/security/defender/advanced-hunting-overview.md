@@ -1,7 +1,7 @@
 ---
 title: Übersicht – Erweiterte Suche
 description: Erfahren Sie mehr über erweiterte Suchabfragen in Microsoft 365 und wie Sie diese verwenden, um Bedrohungen und Schwachstellen in Ihrem Netzwerk proaktiv zu ermitteln.
-keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto
+keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungensuche, Microsoft 365 Defender, microsoft 365, m365, Suche, Abfrage, Telemetrie, benutzerdefinierte Erkennungen, Schema, Kusto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -69,7 +69,7 @@ Es wird empfohlen, mehrere Schritte zu unternehmen, um schnell mit der erweitert
 | **Erstellen von benutzerdefinierten Erkennungsregeln** | Erfahren Sie, wie Sie erweiterte Suchabfragen verwenden können, um Warnungen auszulösen und automatisch Reaktionsaktionen zu ergreifen. | - [Übersicht über benutzerdefinierte Erkennungen](custom-detections-overview.md) <br />- [Benutzerdefinierte Erkennungsregeln](custom-detection-rules.md) |
 
 ## <a name="get-access"></a>Zugriff erhalten
-Um erweiterte Suche oder andere [Microsoft 365 Defender-Funktionen](microsoft-365-defender.md) zu verwenden, benötigen Sie eine entsprechende Rolle in Azure Active Directory. [Lesen Sie mehr über die erforderlichen Rollen und Berechtigungen für die erweiterte Suche.](custom-roles.md)
+Um erweiterte Suche oder andere Funktionen [Microsoft 365 verwenden](microsoft-365-defender.md) zu können, benötigen Sie eine entsprechende Rolle in Azure Active Directory. [Lesen Sie mehr über die erforderlichen Rollen und Berechtigungen für die erweiterte Suche.](custom-roles.md)
 
 Außerdem wird Ihr Zugriff auf Endpunktdaten durch rollenbasierte Zugriffssteuerungseinstellungen in Microsoft Defender for Endpoint bestimmt. [Informationen zum Verwalten des Zugriffs auf Microsoft 365 Defender](m365d-permissions.md).
 

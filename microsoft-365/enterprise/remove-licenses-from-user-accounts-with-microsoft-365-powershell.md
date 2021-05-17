@@ -1,5 +1,5 @@
 ---
-title: Entfernen von Microsoft 365-Lizenzen aus Benutzerkonten mit PowerShell
+title: Entfernen Microsoft 365 von Lizenzen aus Benutzerkonten mit PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - LIL_Placement
 - O365ITProTrain
 ms.assetid: e7e4dc5e-e299-482c-9414-c265e145134f
-description: Erläutert, wie Sie PowerShell verwenden, um Microsoft 365-Lizenzen zu entfernen, die zuvor Benutzern zugewiesen wurden.
+description: Erläutert, wie Sie PowerShell verwenden, um Microsoft 365 zu entfernen, die zuvor Benutzern zugewiesen wurden.
 ms.openlocfilehash: 9944d1ab056d109b6bf71a44fe01acef78ce1f14
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,17 +27,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50920668"
 ---
-# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>Entfernen von Microsoft 365-Lizenzen aus Benutzerkonten mit PowerShell
+# <a name="remove-microsoft-365-licenses-from-user-accounts-with-powershell"></a>Entfernen Microsoft 365 von Lizenzen aus Benutzerkonten mit PowerShell
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
 >[!Note]
->[Erfahren Sie, wie Sie Lizenzen aus Benutzerkonten mit](../admin/manage/remove-licenses-from-users.md) dem Microsoft 365 Admin Center entfernen. Eine Liste der zusätzlichen Ressourcen finden Sie unter [Verwalten von Benutzern und Gruppen](../admin/add-users/index.yml).
+>[Erfahren Sie, wie Sie Lizenzen aus Benutzerkonten mit](../admin/manage/remove-licenses-from-users.md) dem Microsoft 365 entfernen. Eine Liste der zusätzlichen Ressourcen finden Sie unter [Verwalten von Benutzern und Gruppen](../admin/add-users/index.yml).
 >
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Verwenden der Azure Active Directory PowerShell für Graph-Module
 
-Stellen Sie [zunächst eine Verbindung mit Ihrem Microsoft 365-Mandanten herzustellen.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Stellen Sie [zunächst eine Verbindung zu Ihrem Microsoft 365 mandanten.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 Als Nächstes listen Sie die Lizenzpläne für Ihren Mandanten mit diesem Befehl auf.
 
@@ -81,7 +81,7 @@ if($userList.Count -ne 0) {
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Verwenden des Microsoft Azure Active Directory-Moduls für Windows PowerShell
 
-Stellen Sie [zunächst eine Verbindung mit Ihrem Microsoft 365-Mandanten herzustellen.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Stellen Sie [zunächst eine Verbindung zu Ihrem Microsoft 365 mandanten.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
    
 Informationen zum Lizenzierungsplan (**AccountSkuID**) in Ihrer Organisation finden Sie in den folgenden Themen:
     
@@ -103,14 +103,14 @@ Set-MsolUserLicense -UserPrincipalName <Account> -RemoveLicenses "<AccountSkuId1
 >PowerShell Core unterstützt nicht das Microsoft Azure Active Directory-Modul für Windows PowerShell und Cmdlets mit **Msol** im Namen. Um diese Cmdlets weiterhin verwenden zu können, müssen Sie sie über Windows PowerShell ausführen.
 >
 
-In diesem Beispiel wird die **lizenz litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) aus dem Benutzerkonto BelindaN@litwareinc.com.
+In diesem Beispiel wird die **Lizenz litwareinc:ENTERPRISEPACK** (Office 365 Enterprise E3) aus dem Benutzerkonto entfernt, das BelindaN@litwareinc.com.
   
 ```powershell
 Set-MsolUserLicense -UserPrincipalName belindan@litwareinc.com -RemoveLicenses "litwareinc:ENTERPRISEPACK"
 ```
 
 >[!Note]
->Sie können das `Set-MsolUserLicense` Cmdlet nicht verwenden, um Benutzer von gekündigten *Lizenzen zuzuweisen.* Sie müssen dies für jedes Benutzerkonto im Microsoft 365 Admin Center einzeln tun.
+>Sie können das `Set-MsolUserLicense` Cmdlet nicht verwenden, um Benutzer von gekündigten *Lizenzen zuzuweisen.* Sie müssen dies für jedes Benutzerkonto im Microsoft 365 tun.
 >
 
 Verwenden Sie eine der folgenden Methoden, um alle Lizenzen aus einer Gruppe vorhandener lizenzierter Benutzer zu entfernen:
@@ -182,4 +182,4 @@ Eine andere Möglichkeit zum Freigeben einer Lizenz besteht im Löschen des Benu
   
 [Verwalten von Microsoft 365 mit PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)

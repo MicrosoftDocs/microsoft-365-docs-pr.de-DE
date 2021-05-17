@@ -27,11 +27,11 @@ ms.locfileid: "52023857"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Wischen eines mobilen Geräts in Basic Mobility and Security
 
-Sie können die integrierte Grundlegende Mobilität und Sicherheit für Microsoft 365 verwenden, um nur Organisationsinformationen zu entfernen oder eine Werkszurücksetzung durchzuführen, um alle Informationen von einem mobilen Gerät zu löschen und in den Werkseinstellungen wiederherzustellen.
+Sie können integrierte Grundlegende Mobilität und Sicherheit für Microsoft 365 verwenden, um nur Organisationsinformationen zu entfernen oder eine Werkszurücksetzung durchzuführen, um alle Informationen von einem mobilen Gerät zu löschen und in den Werkseinstellungen wiederherzustellen.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Mobile Geräte können vertrauliche Organisationsinformationen speichern und Zugriff auf die Microsoft 365-Ressourcen Ihrer Organisation bieten. Um die Informationen Ihrer Organisation zu schützen, können Sie die Werkseinstellungen zurücksetzen oder Unternehmensdaten entfernen:
+Mobile Geräte können vertrauliche Organisationsinformationen speichern und Zugriff auf die Ressourcen Microsoft 365 Organisation bieten. Um die Informationen Ihrer Organisation zu schützen, können Sie die Werkseinstellungen zurücksetzen oder Unternehmensdaten entfernen:
 
 - **Werkseinstellung:** Löscht alle Daten auf dem mobilen Gerät eines Benutzers, einschließlich installierter Anwendungen, Fotos und personenbezogener Informationen. Nach Abschluss des Zurücksetzens wird das Gerät in den Werkseinstellungen wiederhergestellt.
 
@@ -60,7 +60,7 @@ Mobile Geräte können vertrauliche Organisationsinformationen speichern und Zug
 6. Wählen Sie die Art der Remotezurücksetzung aus, die Sie durchführen möchten.
 
     - Wählen Sie Factory reset aus, um ein vollständiges Zurücksetzen zu durchführen und das Gerät in den Werkseinstellungen **wiederherzustellen.**
-    - Wenn Sie eine selektive Löschung und nur Microsoft 365-Organisationsinformationen löschen möchten, wählen Sie **Unternehmensdaten entfernen aus.**
+    - Wählen Sie Zum selektiven Löschen und Löschen Microsoft 365 Unternehmensinformationen entfernen **aus.**
     - Um das Gerät aus Ihrer Organisation zu entfernen, wählen Sie **Gerät entfernen aus.**
 
 7. Wählen Sie zum Bestätigen **Ja** aus.
@@ -83,11 +83,11 @@ Die Löschung wird sofort an das mobile Gerät gesendet, und das Gerät ist in A
 
 |**Auswirkungen auf Inhalte**|**iOS 10 und höher**|**Android 5 und höher**|
 |:-----|:-----|:-----|
-|Microsoft 365-App-Daten werden gelöscht, wenn das Gerät durch Intune App Protection-Richtlinien geschützt ist. Die Apps werden nicht entfernt. Für Geräte, die nicht durch #A0 (Mobile Application Management) geschützt sind, entfernen Outlook und OneDrive keine zwischengespeicherten Daten.<br/>**Hinweis** Zum Anwenden von Intune-App-Schutzrichtlinien benötigen Sie eine Intune-Lizenz.|Ja|Ja|
+|Microsoft 365 App-Daten werden gelöscht, wenn das Gerät durch Intune App Protection-Richtlinien geschützt ist. Die Apps werden nicht entfernt. Bei Geräten, die nicht durch Mam -Richtlinien (Mobile Application Management) geschützt sind, Outlook und OneDrive zwischengespeicherte Daten nicht entfernen.<br/>**Hinweis** Zum Anwenden von Intune-App-Schutzrichtlinien benötigen Sie eine Intune-Lizenz.|Ja|Ja|
 |Richtlinieneinstellungen, die von Basic Mobility and Security auf Geräte angewendet werden, werden nicht mehr erzwungen. Benutzer können die Einstellungen ändern.|Ja|Ja|
 |Von Basic Mobility and Security erstellte E-Mail-Profile werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|Ja|Nicht zutreffend|
 >[!NOTE]
->Die Unternehmensportal-App ist im App Store für iOS und im Play Store für Android-Geräte verfügbar.
+>Unternehmensportal App ist im App-Store für iOS und im Play-Store für Android-Geräte verfügbar.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

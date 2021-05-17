@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
-description: Erfahren Sie mehrstufige Authentifizierung in Microsoft 365.
+description: Erfahren Sie mehr über die mehrstufige Authentifizierung in Microsoft 365.
 ms.openlocfilehash: 080251efa7d7d3bda6ad89e95960e43dd38d076d
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -43,23 +43,23 @@ Die zusätzliche Überprüfungsmethode wird erst verwendet, nachdem das Kennwort
 
 ## <a name="mfa-support-in-microsoft-365"></a>MFA-Unterstützung in Microsoft 365
 
-Standardmäßig unterstützen Sowohl Microsoft 365 als auch Office 365 MFA für Benutzerkonten mithilfe von:
+Standardmäßig unterstützen sowohl Microsoft 365 als auch Office 365 MFA für Benutzerkonten mithilfe von:
 
 - Eine an ein Telefon gesendete Textnachricht, für die der Benutzer einen Überprüfungscode eingeben muss.
 - Ein Telefonanruf.
-- Die Microsoft Authenticator-Smartphone-App.
+- Die Microsoft Authenticator Smartphone-App.
 
-In beiden Fällen verwendet die MFA-Anmeldung die Methode "Etwas, das nicht einfach dupliziert werden kann" für die zusätzliche Überprüfung. Es gibt mehrere Möglichkeiten, MFA für Microsoft 365 und Office 365 zu aktivieren:
+In beiden Fällen verwendet die MFA-Anmeldung die Methode "Etwas, das nicht einfach dupliziert werden kann" für die zusätzliche Überprüfung. Es gibt mehrere Möglichkeiten, MFA für Microsoft 365 und Office 365:
 
 - Mit Sicherheitseinstellungen
 - Mit Richtlinien für bedingten Zugriff
 - Für jedes einzelne Benutzerkonto (nicht empfohlen)
 
-Diese Methoden basieren auf Ihrem Microsoft 365-Plan.
+Diese Methoden basieren auf Ihrem Microsoft 365 Plan.
 
 |Plan|Empfehlung|Typ des Kunden|
 |---|---|---|
-|Alle Microsoft 365-Pläne|Verwenden Sie Sicherheitseinstellungen, die MFA für alle Benutzerkonten erfordern. <p> Sie können die MFA auch für einzelne Benutzerkonten konfigurieren, dies wird jedoch nicht empfohlen.|Kleinunternehmen|
+|Alle Microsoft 365 Pläne|Verwenden Sie Sicherheitseinstellungen, die MFA für alle Benutzerkonten erfordern. <p> Sie können die MFA auch für einzelne Benutzerkonten konfigurieren, dies wird jedoch nicht empfohlen.|Kleinunternehmen|
 |Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Azure Active Directory (Azure AD) Premium P1-Lizenzen|Verwenden Sie Richtlinien für bedingten Zugriff, um MFA für Benutzerkonten basierend auf Gruppenmitgliedschaft, Apps oder anderen Kriterien zu verlangen.|Small Business to Enterprise|
 |Microsoft 365 E5 <p> Azure AD Premium P2-Lizenzen|Verwenden Sie Azure AD Identity Protection, um MFA basierend auf Den Anmelderisikokriterien zu benötigen.|Unternehmen|
 ||||
@@ -68,7 +68,7 @@ Diese Methoden basieren auf Ihrem Microsoft 365-Plan.
 
 Die Sicherheitsstandards sind eine neue Funktion für kostenpflichtige Microsoft 365- und Office 365- oder Testabonnements, die nach dem 21. Oktober 2019 erstellt wurden. Für diese Abonnements sind Sicherheitseinstellungen aktiviert, die:
 
-- Erfordert, dass alle Benutzer MFA mit der Microsoft Authenticator-App verwenden.
+- Erfordert, dass alle Benutzer MFA mit der Microsoft Authenticator verwenden.
 - Blockiert die Legacyauthentifizierung.
 
 Nutzer haben 14 Tage Zeit, sich mit ihrem Smartphone mit der Microsoft Authenticator-App für MFA zu registrieren. Dies beginnt mit der ersten Anmeldung, nachdem die Sicherheitsstandards aktiviert wurden. Nach Ablauf von 14 Tagen kann sich der Nutzer erst nach Abschluss der MFA-Registrierung anmelden.
@@ -79,7 +79,7 @@ Sie aktivieren oder deaktivieren Sicherheitseinstellungen im **Eigenschaftenbere
 
 ![Abbildung der Seite "Verzeichniseigenschaften".](../../media/multi-factor-authentication-microsoft-365/security-defaults-mfa.png)
 
-Sie können Sicherheitseinstellungen für jeden Microsoft 365-Plan verwenden.
+Sie können Sicherheitseinstellungen mit beliebigen Microsoft 365 verwenden.
 
 Weitere Informationen finden Sie in dieser [Übersicht der Sicherheitsstandards](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
@@ -140,7 +140,7 @@ Weitere Informationen finden Sie in dieser [Übersicht über den Azure AD-Identi
 
 Sie sollten entweder Sicherheitseinstellungen oder Richtlinien für bedingten Zugriff verwenden, um MFA für Ihre Benutzerkonto-Anmeldungen zu erfordern. Wenn sie jedoch nicht verwendet werden können, empfiehlt Microsoft dringend MFA für Benutzerkonten mit Administratorrollen, insbesondere der globalen Administratorrolle, für Abonnements beliebiger Größe.
 
-Sie aktivieren MFA für einzelne Benutzerkonten im **Bereich Aktive Benutzer** im Microsoft 365 Admin Center.
+Sie aktivieren MFA für einzelne Benutzerkonten im Bereich Aktive **Benutzer** im Microsoft 365 Admin Center.
 
 ![Abbildung der Mehrstufigen Authentifizierungsoption auf der Seite Aktive Benutzer](../../media/multi-factor-authentication-microsoft-365/per-user-mfa.png)
 

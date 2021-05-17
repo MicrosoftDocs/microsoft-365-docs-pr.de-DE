@@ -37,7 +37,7 @@ In der folgenden Tabelle finden Sie eine Kurzübersicht zu den compliance-Steuer
 ||Klassifizieren von Gruppen und Teams|[Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden](../compliance/sensitivity-labels-teams-groups-sites.md)|
 ||Automatisches Klassifizieren vertraulicher Inhalte|[Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte](../compliance/apply-sensitivity-label-automatically.md)|
 ||Verschlüsseln vertraulicher Inhalte|[Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung](../compliance/encryption-sensitivity-labels.md)|
-|Schutz von Daten|||
+|Information Protection|||
 ||Verhindern des Verlusts vertraulicher Informationen|[Informationen zur Verhinderung von Datenverlust](../compliance/dlp-learn-about-dlp.md)|
 ||Schützen sie vertrauliche Informationen im Chat.|[Verhinderung von Datenverlust (DLP) und Microsoft Teams](../compliance/dlp-microsoft-teams.md).|
 ||Definieren der vertraulichen Informationen Ihrer Organisation|[Benutzerdefinierte vertrauliche Informationstypen](../compliance/sensitive-information-type-learn-about.md)|
@@ -91,7 +91,7 @@ Zusätzliche Ressourcen:
 - [Weitere Informationen zu Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels.md)
 
 
-## <a name="information-protection"></a>Schutz von Daten
+## <a name="information-protection"></a>Information Protection
 
 DLP-Richtlinien können verhindern, dass vertrauliche Informationen versehentlich SharePoint, Exchange und Teams. Sie können Richtlinien erstellen, die aktionen (z. B. Sperren des Zugriffs) basierend auf einer Reihe von Regeln angeben.
 

@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - MED150
 ms.assetid: 18be3b98-34ae-47be-9337-ab6c3fb372ac
-description: In diesem Artikel erfahren Sie, wie Sie den Status Ihrer Verzeichnissynchronisierung in Office 365 überprüfen können.
+description: In diesem Artikel erfahren Sie, wie Sie den Status Ihrer Verzeichnissynchronisierung in Office 365.
 ms.openlocfilehash: cbaae8bbd31f6124c2b0f4984b9a625ffbde538f
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -45,14 +45,14 @@ Wenn ein Problem mit der Verzeichnissynchronisierung besteht, werden die Fehler 
   
 |Element|Zweck|
 |:-----|:-----|
-|**Überprüfte Domänen** | Anzahl der Domänen in Ihrem Microsoft 365-Mandanten, die Sie überprüft haben. |
+|**Überprüfte Domänen** | Die Anzahl der Domänen in Microsoft 365 Mandanten, die Sie überprüft haben. |
 |**Domänen nicht überprüft** | Domänen, die Sie hinzugefügt, aber nicht überprüft haben. |
 |**Verzeichnissynchronisierung aktiviert** |"True" oder "False". Gibt an, ob Sie die Verzeichnissynchronisierung aktiviert haben. |
 |**Neueste Verzeichnissynchronisierung** | Das letzte Mal, als die Verzeichnissynchronisierung gelaufen ist. Zeigt eine Warnung und einen Link zu einem Problembehandlungstool an, wenn die letzte Synchronisierung vor mehr als drei Tagen war. |
-|**Kennwortsynchronisierung aktiviert** | "True" oder "False". Gibt an, ob Sie die Kennworthashsynchronisierung zwischen unserem lokalen und Ihrem Microsoft 365-Mandanten haben. |
+|**Kennwortsynchronisierung aktiviert** | "True" oder "False". Gibt an, ob Sie die Kennworthashsynchronisierung zwischen unserem lokalen und Ihrem Microsoft 365 haben. |
 |**Letzte Kennwortsynchronisierung** | Letzte Kennworthashsynchronisierung. Zeigt eine Warnung und einen Link zu einem Problembehandlungstool an, wenn die letzte Synchronisierung vor mehr als drei Tagen war. |
-|**Verzeichnissynchronisierungsclientversion** | Enthält einen Downloadlink, wenn eine neue Version von Azure AD Connect veröffentlicht wurde. |
-|**Verzeichnissynchronisierungsdienstkonto** | Zeigt den Namen Ihres Microsoft 365-Verzeichnissynchronisierungsdienstkontos an. |
+|**Verzeichnissynchronisierungsclientversion** | Enthält einen Downloadlink, wenn eine neue Version von Azure AD Verbinden veröffentlicht wurde. |
+|**Verzeichnissynchronisierungsdienstkonto** | Zeigt den Namen Des Microsoft 365 Verzeichnissynchronisierungsdienstkontos an. |
 |||
 
 ## <a name="monitor-synchronization-health"></a>Überwachen des Synchronisierungsstatus

@@ -1,7 +1,7 @@
 ---
 title: DeviceNetworkEvents-Tabelle im schema der erweiterten Suche
 description: Informationen zu Netzwerkverbindungsereignissen, die Sie in der DeviceNetworkEvents-Tabelle des erweiterten Suchschemas abfragen können
-keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, devicenetworkevents, NetworkCommunicationEvents, network connection, remote ip, local ip
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, devicenetworkevents, NetworkCommunicationEvents, network connection, remote ip, local ip
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

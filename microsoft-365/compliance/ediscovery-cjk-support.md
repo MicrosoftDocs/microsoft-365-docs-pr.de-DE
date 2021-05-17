@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Erfahren Sie, wie Advanced eDiscovery in Microsoft 365 Sprachen wie Chinesisch, Japanisch und Koreanisch (CJK) unterstützt, die einen Doppel-Byte-Zeichensatz verwenden.
+description: Erfahren Sie Advanced eDiscovery in Microsoft 365 sprachen Chinesisch, Japanisch und Koreanisch (CJK) unterstützt, die einen Doppel-Byte-Zeichensatz verwenden.
 ms.openlocfilehash: ee47c5cd7f1a378ccfff05b8f7712e91092907cb
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -37,7 +37,7 @@ Advanced eDiscovery unterstützt Doppel-Byte-Zeichensatzsprachen (dazu gehören 
 
 **Wie erstelle ich eine Suche zum Sammeln von Elementen, die #A0 enthalten?**
 
-Sie können #A0 [für](building-search-queries.md#keyword-searches)Stichwortsuchen, Stichwortabfragen und [Suchbedingungen](keyword-queries-and-search-conditions.md) verwenden, wenn Sie in Advanced eDiscovery nach Inhalten suchen. Die Suche nach #A0 wird auch bei der Suche nach Inhalten in Core eDiscovery und Content Search unterstützt.
+Sie können #A0 [für](building-search-queries.md#keyword-searches) [Stichwortsuchen,](keyword-queries-and-search-conditions.md) Stichwortabfragen und Suchbedingungen verwenden, wenn Sie nach Inhalten in Advanced eDiscovery. Die Suche nach #A0 wird auch bei der Suche nach Inhalten in Core eDiscovery und Content Search unterstützt.
 
 Wir bieten CJK-Unterstützung für [](keyword-queries-and-search-conditions.md#search-conditions)alle [Suchoperatoren](keyword-queries-and-search-conditions.md#search-operators) und Suchbedingungen, einschließlich der booleschen Operatoren **AND**, **OR**, **NOT** und **NEAR**.
 
@@ -53,7 +53,7 @@ Dies hängt von Ihrem Suchszenario ab.
 
 **Das Symbol "Sprache/Land/Region der Abfrage" wird nicht angezeigt, um eine Sprache für Abfragen in einem Überprüfungssatz auszuwählen. Wie kann ich eine Abfragesprache in einer Überprüfungssatzsuche angeben?**
 
-Für Überprüfungssatzabfragen müssen Sie keine Dokumentsprache angeben. Advanced eDiscovery erkennt automatisch Dokumentsprachen, wenn Sie einem Überprüfungssatz Inhalte hinzufügen. Auf diese Weise können Sie Ihre Abfrageergebnisse in einem Überprüfungssatz optimieren.
+Für Überprüfungssatzabfragen müssen Sie keine Dokumentsprache angeben. Advanced eDiscovery automatisch Dokumentsprachen erkennt, wenn Sie Einem Überprüfungssatz Inhalte hinzufügen. Auf diese Weise können Sie Ihre Abfrageergebnisse in einem Überprüfungssatz optimieren.
 
 **Kann ich erkannte Sprachen in [Dateimetadaten sehen?](view-documents-in-review-set.md#file-metadata)**
 

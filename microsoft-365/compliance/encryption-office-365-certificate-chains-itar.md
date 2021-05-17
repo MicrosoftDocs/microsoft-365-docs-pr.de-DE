@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365-Verschlüsselungsketten – DOD und GCC High
+title: Microsoft 365 Verschlüsselungsketten – DOD und GCC High
 f1.keywords:
 - NOCSH
 ms.author: kvice
@@ -16,7 +16,7 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
-description: Anzeigen einer vollständigen Liste von DOD- und GCC-Stammzertifikaten und Zertifizierungsbehörden (CAs) in Microsoft 365.
+description: Zeigen Sie eine vollständige Liste von DOD- und GCC Zertifikaten und Zertifizierungsstelle (CAs) in Microsoft 365.
 ms.openlocfilehash: 016c7d6b4c5557b7930763c2628525cc3c2c409f
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -24,16 +24,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50927805"
 ---
-# <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365-Verschlüsselungsketten – DOD und GCC High
+# <a name="microsoft-365-encryption-chains---dod-and-gcc-high"></a>Microsoft 365 Verschlüsselungsketten – DOD und GCC High
 
-Microsoft 365 nutzt eine Reihe von verschiedenen Zertifikatanbietern. Im Folgenden wird die vollständige Liste der bekannten Microsoft 365-Stammzertifikate beschrieben, auf die **DOD-** und GCC High-Kunden beim Zugriff auf Microsoft 365 stoßen können. Informationen zu den Zertifikaten, die Sie möglicherweise in Ihrer eigenen Infrastruktur installieren müssen, finden Sie unter [Plan for third-party SSL certificates for Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md).
+Microsoft 365 nutzt eine Reihe von verschiedenen Zertifikatanbietern. Im Folgenden wird die vollständige Liste der bekannten stammzertifikate Microsoft 365 beschrieben, die **DOD** und GCC High Customers beim Zugriff auf Microsoft 365. Informationen zu den Zertifikaten, die Sie möglicherweise in Ihrer eigenen Infrastruktur installieren müssen, finden Sie unter [Plan for third-party SSL certificates for Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md).
 
 Die folgenden Zertifikatinformationen gelten für **alle DOD- und GCC High-Kunden.**
 
 Last updated: **16.10.2020**
 
 >[!NOTE]
->Zertifikatinformationen, die für weltweite Kunden **gelten, finden** Sie unter [Microsoft 365-Verschlüsselungsketten](encryption-office-365-certificate-chains.md).
+>Zertifikatinformationen, die für weltweite Kunden **gelten,** finden Sie [unter Microsoft 365 Verschlüsselungsketten](encryption-office-365-certificate-chains.md).
 
 | **Zertifikattyp** | **P7b-Download** | **CRL-Endpunkte** | **OCSP-Endpunkte** |
 | --- | --- | --- | --- | --- |
@@ -41,7 +41,7 @@ Last updated: **16.10.2020**
 
 Erweitern Sie die nachfolgenden Stamm- und Zwischenabschnitte, um weitere Details zu den Zertifikatanbietern anzuzeigen.
 
-## <a name="microsoft-365-certificate-details"></a>**Microsoft 365-Zertifikatdetails**
+## <a name="microsoft-365-certificate-details"></a>**Microsoft 365 Zertifikatdetails**
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 

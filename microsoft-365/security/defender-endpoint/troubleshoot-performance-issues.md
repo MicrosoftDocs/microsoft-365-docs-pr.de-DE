@@ -33,7 +33,7 @@ ms.locfileid: "51995081"
 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2146631)
  
-Wenn ihr System eine hohe CPU-Auslastung oder Leistungsprobleme im Zusammenhang mit dem Echtzeitschutzdienst in Microsoft Defender for Endpoint hat, können Sie ein Ticket an den Microsoft-Support übermitteln. Führen Sie die Schritte unter [Sammeln von Microsoft Defender Antivirus-Diagnosedaten aus.](collect-diagnostic-data.md)
+Wenn ihr System eine hohe CPU-Auslastung oder Leistungsprobleme im Zusammenhang mit dem Echtzeitschutzdienst in Microsoft Defender for Endpoint hat, können Sie ein Ticket an den Microsoft-Support übermitteln. Führen Sie die Schritte unter [Collect Microsoft Defender Antivirus diagnostic data aus.](collect-diagnostic-data.md)
 
 Als Administrator können Sie diese Probleme auch selbst beheben. 
 
@@ -43,7 +43,7 @@ Andernfalls können Sie ermitteln, welche Software im Zusammenhang mit dem ident
 
 Sie können auch zusätzliche Protokolle für Ihre Übermittlung an den Microsoft-Support bereitstellen, indem Sie die folgenden Schritte ausführen:
 - [Erfassen von Prozessprotokollen mithilfe der Prozessüberwachung](#capture-process-logs-using-process-monitor)
-- [Erfassen von Leistungsprotokollen mithilfe der Windows-Leistungsaufzeichnung](#capture-performance-logs-using-windows-performance-recorder) 
+- [Erfassen von Leistungsprotokollen mithilfe Windows Leistungsaufzeichnung](#capture-performance-logs-using-windows-performance-recorder) 
 
 ## <a name="check-with-vendor-for-antivirus-exclusions"></a>Suchen Sie beim Hersteller nach Antivirenausschlüssen
 
@@ -67,9 +67,9 @@ In **MPLog-xxxxxxxx-xxxxxx.log** finden Sie die geschätzten Leistungsauswirkung
 | MaxTimeFile | Der Pfad der Datei, auf die von diesem Prozess zugegriffen wird, für die die längste Überprüfung `MaxTime` der Dauer aufgezeichnet wurde |
 | EstimatedImpact | Der Prozentsatz der Zeit, die in Scans auf Dateien verwendet wird, auf die von diesem Prozess zugegriffen wird, ab dem Zeitraum, in dem dieser Prozess Scanaktivitäten erfahren hat |
 
-Wenn die Leistungsauswirkung hoch ist, versuchen Sie, den Prozess den Pfad-/Prozessausschlüssen zu hinzufügen, indem Sie die Schritte unter Konfigurieren und Überprüfen von Ausschlüssen für [Microsoft Defender Antivirus-Scans ausführen.](collect-diagnostic-data.md)
+Wenn die Leistungsauswirkung hoch ist, versuchen Sie, den Prozess den Pfad-/Prozessausschlüssen zu hinzufügen, indem Sie die Schritte unter Konfigurieren und Überprüfen von Ausschlüssen für Microsoft Defender Antivirus [ausführen.](collect-diagnostic-data.md)
 
-Wenn das Problem im vorherigen Schritt nicht gelöst wird, können Sie weitere Informationen über den Prozessmonitor oder die [Windows-Leistungsaufzeichnung](#capture-performance-logs-using-windows-performance-recorder) in den folgenden Abschnitten sammeln. [](#capture-process-logs-using-process-monitor)
+Wenn das Problem im vorherigen Schritt nicht behoben wird, können Sie weitere Informationen über den Prozessmonitor oder die Windows [in](#capture-performance-logs-using-windows-performance-recorder) den folgenden Abschnitten sammeln. [](#capture-process-logs-using-process-monitor)
      
 ## <a name="capture-process-logs-using-process-monitor"></a>Erfassen von Prozessprotokollen mithilfe der Prozessüberwachung
 
@@ -87,7 +87,7 @@ Process Monitor (ProcMon) ist ein erweitertes Überwachungstool, das Echtzeitpro
 
 3. Entpacken Sie die Datei `C:\temp` in, sodass der Ordnerpfad `C:\temp\ProcessMonitor` ist. 
 
-4. Kopieren **ProcMon.exe**  auf den Windows-Client oder Den Windows-Server, den Sie beheben möchten.  
+4. Kopieren **ProcMon.exe** auf den Windows oder Windows, den Sie beheben möchten.  
 
 5. Stellen Sie vor dem Ausführen von ProcMon sicher, dass alle anderen Anwendungen, die nicht mit dem Problem mit der hohen CPU-Auslastung in Zusammenhang stehen, geschlossen werden. Dadurch wird die Anzahl der zu überprüfende Prozesse minimiert.
 
@@ -122,7 +122,7 @@ Process Monitor (ProcMon) ist ein erweitertes Überwachungstool, das Echtzeitpro
         > 
         >![Minimieren von Procmon](images/procmon-minimize.png)
     
-7. Nachdem Sie eines der Verfahren in Schritt 6 durchgeführt haben, wird als Nächstes eine Option zum Festlegen von Filtern angezeigt. Wählen Sie **OK** aus. Sie können die Ergebnisse nach Abschluss der Aufnahme immer filtern.
+7. Nachdem Sie eines der Verfahren in Schritt 6 durchgeführt haben, wird als Nächstes eine Option zum Festlegen von Filtern angezeigt. Klicken Sie auf **OK**. Sie können die Ergebnisse nach Abschluss der Aufnahme immer filtern.
  
     ![Filter out Process Name is System Exclude](images/procmon-filter-options.png) 
 
@@ -150,15 +150,15 @@ Process Monitor (ProcMon) ist ein erweitertes Überwachungstool, das Echtzeitpro
 13. Zip the .pml file and submit it to Microsoft support.
 
 
-## <a name="capture-performance-logs-using-windows-performance-recorder"></a>Erfassen von Leistungsprotokollen mithilfe der Windows-Leistungsaufzeichnung
+## <a name="capture-performance-logs-using-windows-performance-recorder"></a>Erfassen von Leistungsprotokollen mithilfe Windows Leistungsaufzeichnung
 
-Sie können Windows Performance Recorder (WPR) verwenden, um zusätzliche Informationen in Ihre Übermittlung an den Microsoft-Support einschlussen zu können. WPR ist ein leistungsstarkes Aufzeichnungstool, das ereignisablaufverfolgung für Windows-Aufzeichnungen erstellt. 
+Sie können die Windows (Performance Recorder, WPR) verwenden, um zusätzliche Informationen in Ihre Übermittlung an den Microsoft-Support einschlussen. WPR ist ein leistungsstarkes Aufzeichnungstool, das ereignisablaufverfolgung für Windows erstellt. 
 
-WPR ist Teil des Windows Assessment and Deployment Kit (Windows ADK) und kann unter Herunterladen und Installieren von [Windows ADK heruntergeladen werden.](/windows-hardware/get-started/adk-install) Sie können es auch als Teil des Windows 10 Software Development Kit unter [Windows 10 SDK herunterladen.](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)
+WPR ist Teil des Windows Assessment and Deployment Kit (Windows ADK) und kann unter Download and install the Windows [ADK heruntergeladen werden.](/windows-hardware/get-started/adk-install) Sie können es auch als Teil des Windows 10 Software Development Kit unter [Windows 10 SDK herunterladen.](https://developer.microsoft.com/windows/downloads/windows-10-sdk/)
 
 Sie können die WPR-Benutzeroberfläche verwenden, indem Sie die Schritte unter Erfassen von Leistungsprotokollen mithilfe [der WPR-Benutzeroberfläche ausführen.](#capture-performance-logs-using-the-wpr-ui) 
 
-Alternativ können Sie auch das Befehlszeilentool *wpr.exe* verwenden, das in Windows 8 und höher verfügbar ist, indem Sie die Schritte unter Erfassen von Leistungsprotokollen mithilfe der [WPR CLI ausführen.](#capture-performance-logs-using-the-wpr-cli)
+Alternativ können Sie auch das Befehlszeilentool *wpr.exe* verwenden, das in Windows 8 und späteren Versionen verfügbar ist, indem Sie die Schritte unter Erfassen von Leistungsprotokollen mithilfe der [WPR CLI ausführen.](#capture-performance-logs-using-the-wpr-cli)
 
 
 ### <a name="capture-performance-logs-using-the-wpr-ui"></a>Erfassen von Leistungsprotokollen mithilfe der WPR-Benutzeroberfläche
@@ -168,7 +168,7 @@ Alternativ können Sie auch das Befehlszeilentool *wpr.exe* verwenden, das in Wi
 
 1. Laden Sie WPR herunter, und installieren Sie sie.
 
-2. Klicken *Sie unter Windows Kits* mit der rechten Maustaste auf Windows Performance **Recorder**. 
+2. Klicken *Windows Kits* mit der rechten Maustaste auf Windows **Leistungsaufzeichnung**. 
 
     ![Startmenü](images/wpr-01.png)
 
@@ -191,7 +191,7 @@ Alternativ können Sie auch das Befehlszeilentool *wpr.exe* verwenden, das in Wi
     ![in-file](images/wpr-infile.png)
 
     >[!WARNING]
-    >Wenn Ihr Windows Server über 64 GB RAM oder mehr verfügt, verwenden Sie die benutzerdefinierte Maßeinheit `Microsoft Defender for Endpoint analysis for large servers` anstelle von `Microsoft Defender for Endpoint analysis` . Andernfalls kann ihr System eine hohe Menge an nicht aus seiteierten Poolspeichern oder Puffern verbrauchen, was zu Systeminstabilität führen kann. Sie können auswählen, welche Profile hinzugefügt werden, indem Sie die **Ressourcenanalyse erweitern.** Dieses benutzerdefinierte Profil bietet den erforderlichen Kontext für eine detaillierte Leistungsanalyse.
+    >Wenn Ihr Windows server über 64 GB RAM oder mehr verfügt, verwenden Sie die benutzerdefinierte `Microsoft Defender for Endpoint analysis for large servers` Maßeinheit anstelle von `Microsoft Defender for Endpoint analysis` . Andernfalls kann ihr System eine hohe Menge an nicht aus seiteierten Poolspeichern oder Puffern verbrauchen, was zu Systeminstabilität führen kann. Sie können auswählen, welche Profile hinzugefügt werden, indem Sie die **Ressourcenanalyse erweitern.** Dieses benutzerdefinierte Profil bietet den erforderlichen Kontext für eine detaillierte Leistungsanalyse.
  
 8. So verwenden Sie das benutzerdefinierte Maß microsoft Defender for Endpoint ausführliches Analyseprofil in der WPR-Benutzeroberfläche:
 
@@ -220,7 +220,7 @@ Alternativ können Sie auch das Befehlszeilentool *wpr.exe* verwenden, das in Wi
     >[!TIP]
     >Halten Sie die Datensammlung auf nicht länger als fünf Minuten. Zwei bis drei Minuten sind ein guter Bereich, da viele Daten gesammelt werden.
 
-12. Wählen Sie **Speichern** aus.
+12. Klicken Sie auf **Speichern**.
 
     ![Speichern auswählen](images/wpr-10.png)
 
@@ -229,7 +229,7 @@ Alternativ können Sie auch das Befehlszeilentool *wpr.exe* verwenden, das in Wi
     ![Ausfüllen von Details](images/wpr-12.png)
 
     1. Wählen **Sie Dateiname:** aus, um zu bestimmen, wo Ihre Ablaufverfolgungsdatei gespeichert wird. Standardmäßig wird 1.is `%user%\Documents\WPR Files\` gespeichert.
-    1. Wählen Sie **Speichern** aus.
+    1. Klicken Sie auf **Speichern**.
 
 14. Warten Sie, während die Ablaufverfolgung zusammengeführt wird.
 
@@ -249,7 +249,7 @@ Das Befehlszeilentool *wpr.exe* Teil des Betriebssystems ab Windows 8. So erfass
 
 1. Laden **[Sie Microsoft Defender for Endpoint-Analyseprofil](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** für Leistungsverfolgungen in eine Datei mit dem Namen in einem lokalen Verzeichnis wie `WD.wprp` `C:\traces` herunter.
 
-3. Klicken Sie mit der rechten **Maustaste** auf das **Symbol Startmenü, und wählen Windows PowerShell (Administrator)** oder Eingabeaufforderung **(Administrator)** aus, um ein Eingabeaufforderungsfenster für Administratoren zu öffnen.
+3. Klicken Sie  mit der rechten Maustaste auf das Symbol Startmenü, und wählen **Sie Windows PowerShell (Administrator)** oder Eingabeaufforderung **(Administrator)** aus, um ein Eingabeaufforderungsfenster für Administratoren zu öffnen.
 
 4. Wenn das Dialogfeld Benutzerkontensteuerung angezeigt wird, wählen Sie **Ja aus.**
 
@@ -260,7 +260,7 @@ Das Befehlszeilentool *wpr.exe* Teil des Betriebssystems ab Windows 8. So erfass
     ```
     
     >[!WARNING]
-    >Wenn Ihr Windows Server über 64 GB oder mehr RAM oder mehr verfügt, verwenden Sie Profile und anstelle von Profilen `WDForLargeServers.Light` `WDForLargeServers.Verbose` `WD.Light` `WD.Verbose` bzw. . Andernfalls kann ihr System eine hohe Menge an nicht aus seiteierten Poolspeichern oder Puffern verbrauchen, was zu Systeminstabilität führen kann.
+    >Wenn Ihr Windows Server 64 GB oder mehr ram oder mehr hat, verwenden Sie Profile und anstelle von Profilen `WDForLargeServers.Light` `WDForLargeServers.Verbose` `WD.Light` `WD.Verbose` bzw. . Andernfalls kann ihr System eine hohe Menge an nicht aus seiteierten Poolspeichern oder Puffern verbrauchen, was zu Systeminstabilität führen kann.
 
 6. Reproduzieren Sie das Problem.
 
@@ -279,5 +279,5 @@ Das Befehlszeilentool *wpr.exe* Teil des Betriebssystems ab Windows 8. So erfass
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Sammeln von Microsoft Defender Antivirus-Diagnosedaten](collect-diagnostic-data.md)
-- [Konfigurieren und Überprüfen von Ausschlüssen für Microsoft Defender Antivirus-Scans](configure-exclusions-microsoft-defender-antivirus.md)
+- [Sammeln Microsoft Defender Antivirus Diagnosedaten](collect-diagnostic-data.md)
+- [Konfigurieren und Überprüfen von Ausschlüssen für Microsoft Defender Antivirus Scans](configure-exclusions-microsoft-defender-antivirus.md)

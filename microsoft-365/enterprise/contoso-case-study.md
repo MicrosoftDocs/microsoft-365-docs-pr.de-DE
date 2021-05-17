@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 for Enterprise für die Contoso Corporation
+title: Microsoft 365 für Unternehmen für die Contoso Corporation
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -13,7 +13,7 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
-description: Wie eine fiktive, aber repräsentative globale Organisation Microsoft 365 enterprise übernommen hat.
+description: Wie eine fiktive, aber repräsentative globale Organisation Microsoft 365 unternehmen.
 ms.openlocfilehash: e14c2747837ed91a63e7609ce46307b0f38aa758
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,13 +21,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50927580"
 ---
-# <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 for Enterprise für die Contoso Corporation
+# <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 für Unternehmen für die Contoso Corporation
 
-Microsoft 365 enterprise ist das Microsoft Premier Cloud-Angebot, das lokale und cloudbasierte Produktivitäts-Apps und -Dienste mit Windows 10 Enterprise und erweiterten Sicherheitsfeatures kombiniert. Es ist eine vollständige, intelligente Lösung, mit der jeder kreativ und sicher zusammenarbeiten kann.
+Microsoft 365 für Unternehmen ist das Microsoft Premier Cloud-Angebot, das lokale und cloudbasierte Produktivitäts-Apps und -Dienste mit Windows 10 Enterprise und erweiterten Sicherheitsfeatures kombiniert. Es ist eine vollständige, intelligente Lösung, mit der jeder kreativ und sicher zusammenarbeiten kann.
 
 Contoso Corporation ist ein fiktives, aber repräsentatives globales Produktionskonglomerat mit Hauptsitz in Paris. Das Unternehmen hat Microsoft 365 für Unternehmen bereitgestellt und wichtige Entwurfsentscheidungen und Implementierungsdetails für Netzwerk, Identität, Windows 10 Enterprise, Microsoft 365 Apps for Enterprise, Verwaltung mobiler Geräte, Informationsschutz und Sicherheit behandelt.
 
-Das übergeordnete Ziel des Unternehmens für Microsoft 365 Enterprise besteht in der Beschleunigung der digitalen Transformation durch die Verwendung von Clouddiensten, um seine Mitarbeiter, Partner, Daten und Prozesse zusammenzubringen, um Kundenwert zu schaffen und seinen Wettbewerbsvorteil in einer digitalen Welt zu erhalten.
+Das übergeordnete Ziel des Unternehmens für Microsoft 365 for Enterprise besteht in der Beschleunigung der digitalen Transformation durch die Verwendung von Clouddiensten, um seine Mitarbeiter, Partner, Daten und Prozesse zusammenzubringen, um Kundenwert zu schaffen und seinen Wettbewerbsvorteil in einer digitalen Ersten Welt zu erhalten.
 
 In den folgenden Artikeln finden Sie weitere Informationen:
 
@@ -43,7 +43,7 @@ In den folgenden Artikeln finden Sie weitere Informationen:
 
   Die Contoso-Netzwerktechniker optimierten den Datenverkehr für ihre lokalen Benutzer zum Intranetrand und zum nächstgelegenen Microsoft-Netzwerkstandort im Internet.
 
-- [Identität](contoso-identity.md)
+- [Identity](contoso-identity.md)
 
   Die Contoso Identity-in-the-Cloud-Lösung nutzt die lokale Active Directory Domain Services (AD DS)-Gesamtstruktur des Unternehmens. Sie umfasst die Verbundauthentifizierung mit ihren vorhandenen vertrauenswürdigen Identitätsanbietern von Drittanbietern.
 
@@ -63,9 +63,9 @@ In den folgenden Artikeln finden Sie weitere Informationen:
 
   Um sicherzustellen, dass sowohl allgemeine als auch hochwertige Daten identifiziert, gekennzeichnet und Sicherheitsebenen unterliegen, erzwingt Contoso seine Datensicherheitsrichtlinien mit Microsoft 365 für den Unternehmensinformationsschutz.
 
-- [Zusammenfassung von Microsoft 365 for Enterprise Security](contoso-security-summary.md)
+- [Zusammenfassung der Microsoft 365 unternehmenssicherheit](contoso-security-summary.md)
 
-  Contoso verwendet das gesamte Spektrum von Microsoft 365 for Enterprise-Sicherheitsfeatures für Identitäts- und Zugriffsverwaltung, Bedrohungsschutz, Informationsschutz und Sicherheitsverwaltung.
+  Contoso verwendet das gesamte Spektrum Microsoft 365 unternehmensweite Sicherheitsfeatures für Identitäts- und Zugriffsverwaltung, Bedrohungsschutz, Informationsschutz und Sicherheitsverwaltung.
 
 Sehen Sie sich die folgenden zusätzlichen IT-Szenarien und -Konfigurationen an:
 
@@ -79,7 +79,7 @@ Sehen Sie sich die folgenden zusätzlichen IT-Szenarien und -Konfigurationen an:
 
 - [Migration der Sprachfunktion von Teams](/MicrosoftTeams/voice-case-study-overview)
 
-  Erfahren Sie, wie Contoso ihre lokalen Benutzer zu Microsoft Teams für einheitliche Kommunikation, Zusammenarbeit und Sprachsteuerung migriert hat.
+  Erfahren Sie, wie Contoso ihre lokalen Benutzer zu Microsoft Teams einheitlichen Kommunikation, Zusammenarbeit und Sprachsteuerung migriert hat.
 
 - [Kommunikationskonformität anstößige Sprachrichtlinie](../compliance/communication-compliance-case-study.md)
 
@@ -87,7 +87,7 @@ Sehen Sie sich die folgenden zusätzlichen IT-Szenarien und -Konfigurationen an:
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Erfahren [Sie mehr über die Contoso Corporation](contoso-overview.md) und die Entwurfsüberlegungen, die bei der Bereitstellung von Microsoft 365 Enterprise berücksichtigt wurden.
+Erfahren [Sie mehr über die Contoso Corporation](contoso-overview.md) und die Entwurfsüberlegungen, die bei der Bereitstellung Microsoft 365 Enterprise berücksichtigt wurden.
 
 
 ## <a name="see-also"></a>Siehe auch

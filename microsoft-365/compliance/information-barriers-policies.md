@@ -1,6 +1,6 @@
 ---
 title: Definieren von Richtlinien für Informationsbarrieren
-description: Erfahren Sie, wie Sie Richtlinien für Informationsbarrieren in Microsoft Teams definieren.
+description: Erfahren Sie, wie Sie Richtlinien für Informationsbarrieren in Microsoft Teams.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -29,7 +29,7 @@ Mit Informationsbarrieren können Sie Richtlinien definieren, die verhindern sol
 In diesem Artikel wird beschrieben, wie Richtlinien für Informationsbarrieren geplant, definiert, implementiert und verwaltet werden. Es sind mehrere Schritte erforderlich, und der Arbeitsablauf ist in mehrere Teile unterteilt. Lesen Sie unbedingt die Voraussetzungen [und](#prerequisites) den gesamten Prozess durch, bevor Sie mit der Definition (oder Bearbeitung) von Richtlinien für Informationsbarrieren beginnen.
 
 > [!TIP]
-> Dieser Artikel enthält ein [Beispielszenario und](#example-contosos-departments-segments-and-policies) eine [herunterladbare](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) Excel-Arbeitsmappe, mit der Sie Ihre Richtlinien für Informationsbarrieren planen und definieren können.
+> Dieser Artikel enthält ein [Beispielszenario](#example-contosos-departments-segments-and-policies) und eine [herunterladbare Excel,](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) mit der Sie Ihre Richtlinien für Informationsbarrieren planen und definieren können.
 
 ## <a name="concepts-of-information-barrier-policies"></a>Ansätze hinter Richtlinien für Informationsbarrieren
 
@@ -46,7 +46,7 @@ Wenn Sie Richtlinien für Informationsbarrieren definieren, arbeiten Sie mit Ben
 
 | Phase | Was beteiligt ist |
 |:--------|:------------------|
-| [Sicherstellen, dass die Voraussetzungen erfüllt sind](#prerequisites) | – Überprüfen, ob Sie über die [erforderlichen Lizenzen und Berechtigungen verfügen](information-barriers.md#required-licenses-and-permissions)<br/>– Vergewissern Sie sich, dass Ihr Verzeichnis Daten für Segmentierungsbenutzer enthält<br/>- Aktivieren der Bereichsverzeichnissuche für Microsoft Teams<br/>– Stellen Sie sicher, dass die Überwachungsprotokollierung aktiviert ist<br/>– Stellen Sie sicher, dass keine Exchange-Adressbuchrichtlinien verwendet werden<br/>- Verwenden von PowerShell (Beispiele werden bereitgestellt)<br/>- Bereitstellen der Administrator-Zustimmung für Microsoft Teams (Schritte sind enthalten) |
+| [Sicherstellen, dass die Voraussetzungen erfüllt sind](#prerequisites) | – Überprüfen, ob Sie über die [erforderlichen Lizenzen und Berechtigungen verfügen](information-barriers.md#required-licenses-and-permissions)<br/>– Vergewissern Sie sich, dass Ihr Verzeichnis Daten für Segmentierungsbenutzer enthält<br/>- Aktivieren der Bereichsverzeichnissuche für Microsoft Teams<br/>– Stellen Sie sicher, dass die Überwachungsprotokollierung aktiviert ist<br/>– Stellen Sie sicher, Exchange adressbuchrichtlinien sind<br/>- Verwenden von PowerShell (Beispiele werden bereitgestellt)<br/>- Bereitstellen der Administrator zustimmung für Microsoft Teams (Schritte sind enthalten) |
 | [Teil 1: Segmentieren von Benutzern in Ihrer Organisation](#part-1-segment-users) | – Bestimmen, welche Richtlinien erforderlich sind<br/>– Erstellen einer Liste der zu definierende Segmente<br/>- Identifizieren der zu verwendende Attribute<br/>– Definieren von Segmenten in Bezug auf Richtlinienfilter |
 | [Teil 2: Definieren von Richtlinien für Informationsbarrieren](#part-2-define-information-barrier-policies) | - Definieren Sie Ihre Richtlinien (gelten noch nicht)<br/>- Wählen Sie aus zwei Arten (blockieren oder zulassen) |
 | [Teil 3: Anwenden von Richtlinien für Informationsbarrieren](#part-3-apply-information-barrier-policies) | - Festlegen von Richtlinien auf den aktiven Status<br/>– Ausführen der Richtlinienanwendung<br/>- Anzeigen des Richtlinienstatus |
@@ -57,26 +57,26 @@ Wenn Sie Richtlinien für Informationsbarrieren definieren, arbeiten Sie mit Ben
 
 Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](information-barriers.md#required-licenses-and-permissions)sicher, dass die folgenden Anforderungen erfüllt sind:
 
-- Verzeichnisdaten – Stellen Sie sicher, dass die Struktur Ihrer Organisation in Verzeichnisdaten widergespiegelt wird. Stellen Sie zum Ergreifen dieser Aktion sicher, dass Benutzerkontenattribute wie Gruppenmitgliedschaft, Abteilungsname usw. ordnungsgemäß in Azure Active Directory (oder Exchange Online) aufgefüllt werden. Weitere Informationen hierzu finden Sie in den folgenden Ressourcen:
+- Verzeichnisdaten – Stellen Sie sicher, dass die Struktur Ihrer Organisation in Verzeichnisdaten widergespiegelt wird. Stellen Sie zum Ergreifen dieser Aktion sicher, dass Benutzerkontenattribute, z. B. Gruppenmitgliedschaft, Abteilungsname usw., ordnungsgemäß in Azure Active Directory (oder Exchange Online). Weitere Informationen hierzu finden Sie in den folgenden Ressourcen:
   - [Attribute für Richtlinien für Informationsbarrieren](information-barriers-attributes.md)
-  - [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe von Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+  - [Hinzufügen oder Aktualisieren der Profilinformationen eines Benutzers mithilfe Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Konfigurieren von Eigenschaften eines Benutzerkontos mit Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md)
 
-- Bereichsverzeichnissuche : Bevor Sie die erste Richtlinie für Informationsbarrieren in Ihrer Organisation definieren, müssen Sie die Bereichsverzeichnissuche [in Microsoft Teams aktivieren.](/MicrosoftTeams/teams-scoped-directory-search) Warten Sie mindestens 24 Stunden, nachdem Sie die Bereichsverzeichnissuche aktiviert haben, bevor Sie Richtlinien für Informationsbarrieren einrichten oder definieren.
+- Bereichsverzeichnissuche – Bevor Sie die erste Richtlinie für Informationsbarrieren in Ihrer Organisation definieren, müssen Sie die Bereichsverzeichnissuche [in](/MicrosoftTeams/teams-scoped-directory-search)Microsoft Teams. Warten Sie mindestens 24 Stunden, nachdem Sie die Bereichsverzeichnissuche aktiviert haben, bevor Sie Richtlinien für Informationsbarrieren einrichten oder definieren.
 
 - EXO-Lizenz : DIE RICHTLINIEN funktionieren nur, wenn den Zielbenutzern eine EXO-Lizenz zugewiesen wurde.
 
 - Überwachungsprotokollierung – Zum Überprüfen des Status einer Richtlinienanwendung muss die Überwachungsprotokollierung aktiviert sein. Es wird empfohlen, die Überwachung zu aktivieren, bevor Sie beginnen, Segmente oder Richtlinien zu definieren. Weitere Informationen finden Sie unter Aktivieren oder Deaktivieren der [Überwachungsprotokollsuche.](turn-audit-log-search-on-or-off.md)
 
-- Keine Adressbuchrichtlinien – Stellen Sie vor dem Definieren und Anwenden von Richtlinien für Informationsbarrieren sicher, dass keine Exchange-Adressbuchrichtlinien gelten. Informationsbarrieren basieren auf der Adressbuchrichtlinien, aber die beiden Arten von Richtlinien sind nicht kompatibel. Wenn Sie über solche Richtlinien verfügen, müssen Sie zuerst [ihre Adressbuchrichtlinien](/exchange/address-books/address-book-policies/remove-an-address-book-policy) entfernen. Sobald Richtlinien für Informationsbarrieren aktiviert sind und Sie ein hierarchisches Adressbuch aktiviert haben, wird allen Benutzern, die nicht ***in*** einem Informationsbarrieresegment enthalten sind, das hierarchische Adressbuch [in](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) Exchange online zu sehen sein.
+- Keine Adressbuchrichtlinien – Stellen Sie vor dem Definieren und Anwenden von Richtlinien für Informationsbarrieren sicher, dass Exchange Adressbuchrichtlinien nicht angewendet werden. Informationsbarrieren basieren auf der Adressbuchrichtlinien, aber die beiden Arten von Richtlinien sind nicht kompatibel. Wenn Sie über solche Richtlinien verfügen, müssen Sie zuerst [ihre Adressbuchrichtlinien](/exchange/address-books/address-book-policies/remove-an-address-book-policy) entfernen. Sobald Richtlinien für Informationsbarrieren aktiviert sind und Sie ein hierarchisches Adressbuch aktiviert haben, wird allen Benutzern, die nicht ***in*** einem Informationsbarrieresegment enthalten sind, das hierarchische Adressbuch [in](/exchange/address-books/hierarchical-address-books/hierarchical-address-books) Exchange sehen.
 
-- PowerShell – Derzeit werden Richtlinien für Informationsbarrieren im Office 365 Security & Compliance Center mithilfe von PowerShell-Cmdlets definiert und verwaltet. Obwohl in diesem Artikel mehrere Beispiele bereitgestellt werden, müssen Sie mit PowerShell-Cmdlets und -Parametern vertraut sein. Sie benötigen auch das Azure PowerShell-Modul.
+- PowerShell – Derzeit werden Richtlinien für Informationsbarrieren im Office 365 Security & Compliance Center mithilfe von PowerShell-Cmdlets definiert und verwaltet. Obwohl in diesem Artikel mehrere Beispiele bereitgestellt werden, müssen Sie mit PowerShell-Cmdlets und -Parametern vertraut sein. Sie benötigen auch das Azure PowerShell Modul.
     - [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell)
-    - [Installieren des Azure PowerShell-Moduls](/powershell/azure/install-az-ps?view=azps-2.3.2)
+    - [Installieren des Azure PowerShell Moduls](/powershell/azure/install-az-ps?view=azps-2.3.2)
 
-- Administrator-Zustimmung für Informationsbarrieren in Microsoft Teams – Wenn Ihre Richtlinien für richtlinienbasierte Richtlinien für richtlinienbasierte Richtlinien erstellt werden, können benutzer, die nicht zum Richtlinienschutz gehören, aus Gruppen (d. h. Teams-Kanälen, die auf Gruppen basieren) entfernt werden. Diese Konfiguration trägt dazu bei, sicherzustellen, dass Ihre Organisation den Richtlinien und Vorschriften entspricht. Verwenden Sie das folgende Verfahren, um zu ermöglichen, dass Richtlinien für Informationsbarrieren in Microsoft Teams wie erwartet funktionieren.
+- Administrator-Zustimmung für Informationsbarrieren in Microsoft Teams – Wenn Ihre Richtlinien für richtlinienbasierte Richtlinien für richtlinienbasierte Richtlinien verfügbar sind, können sie Benutzer, die nicht zum Richtlinienschutz gehören, aus Gruppen (d. h. Teams Kanälen, die auf Gruppen basieren) entfernen. Diese Konfiguration trägt dazu bei, sicherzustellen, dass Ihre Organisation den Richtlinien und Vorschriften entspricht. Verwenden Sie das folgende Verfahren, um zu ermöglichen, dass Richtlinien für Informationsbarrieren wie erwartet in Microsoft Teams.
 
-   1. Voraussetzung: Installieren von Azure PowerShell von [Install Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps).
+   1. Voraussetzung: Installieren sie Azure PowerShell von [Install Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps).
 
    1. Führen Sie die folgenden PowerShell-Cmdlets aus:
 
@@ -88,7 +88,7 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
       Start-Process  "https://login.microsoftonline.com/common/adminconsent?client_id=$appId"
       ```
 
-   1. Melden Sie sich bei Aufforderung mit Ihrem Geschäfts- oder Schulkonto für Office 365 an.
+   1. Wenn Sie dazu aufgefordert werden, melden Sie sich mit Ihrem Arbeits- oder Schulkonto für Office 365.
 
    1. Überprüfen Sie **im** Dialogfeld Berechtigungen angeforderte Berechtigungen die Informationen, und wählen Sie dann **Akzeptieren aus.** Die von der App angeforderten Berechtigungen sind unten angegeben.
       
@@ -99,7 +99,7 @@ Stellen Sie zusätzlich zu den [erforderlichen Lizenzen und Berechtigungen](info
 Wenn alle Voraussetzungen erfüllt sind, fahren Sie mit dem nächsten Abschnitt fort.
 
 > [!TIP]
-> Um Ihnen bei der Vorbereitung Ihres Plans zu helfen, ist in diesem Artikel ein Beispielszenario enthalten. [Weitere Informationen finden Sie unter Abteilungen, Segmente und Richtlinien von Contoso.](#example-contosos-departments-segments-and-policies)<p>Darüber hinaus steht eine herunterladbare Excel-Arbeitsmappe zur Verfügung, mit der Sie Ihre Segmente und Richtlinien planen und definieren können (und Ihre PowerShell-Cmdlets erstellen). [Hier erhalten Sie die Arbeitsmappe](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx).
+> Um Ihnen bei der Vorbereitung Ihres Plans zu helfen, ist in diesem Artikel ein Beispielszenario enthalten. [Weitere Informationen finden Sie unter Abteilungen, Segmente und Richtlinien von Contoso.](#example-contosos-departments-segments-and-policies)<p>Darüber hinaus steht eine herunterladbare Excel zur Verfügung, mit der Sie Ihre Segmente und Richtlinien planen und definieren können (und Ihre PowerShell-Cmdlets erstellen). [Hier erhalten Sie die Arbeitsmappe](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx).
 
 ## <a name="part-1-segment-users"></a>Teil 1: Segmentieren von Benutzern
 
@@ -329,6 +329,6 @@ Wenn das Cmdlet abgeschlossen ist, erfüllt Contoso die gesetzlichen und branche
 ## <a name="resources"></a>Ressourcen
 
 - [Übersicht über Informationsbarrieren](information-barriers.md)
-- [Weitere Informationen zu Informationsbarrieren in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
-- [Weitere Informationen zu Informationsbarrieren in SharePoint Online](/sharepoint/information-barriers)
-- [Weitere Informationen zu Informationsbarrieren in OneDrive](/onedrive/information-barriers)
+- [Erfahren Sie mehr über Informationsbarrieren in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams)
+- [Erfahren Sie mehr über Informationsbarrieren in SharePoint Online](/sharepoint/information-barriers)
+- [Erfahren Sie mehr über Informationsbarrieren in OneDrive](/onedrive/information-barriers)

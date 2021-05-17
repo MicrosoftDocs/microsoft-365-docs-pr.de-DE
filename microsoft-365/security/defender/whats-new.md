@@ -1,6 +1,6 @@
 ---
 title: Neuerungen in Microsoft 365 Defender
-description: Listet die neuen Features und Funktionen in Microsoft 365 Defender auf.
+description: Listet die neuen Features und Funktionen in Microsoft 365 Defender auf
 keywords: Neues in Microsoft 365 Defender, ga, allgemein verfügbar, Funktionen, verfügbar, neu
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -32,7 +32,7 @@ ms.locfileid: "52029028"
 > Sie möchten Microsoft 365 Defender ausprobieren? Sie können [in einer Laborumgebung auswerten](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) oder [ein Pilotprojekt in der Produktionsumgebung ausführen](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
-Die folgenden Features sind allgemein in der neuesten Version von Microsoft 365 Defender verfügbar.
+Die folgenden Features sind im Allgemeinen in der neuesten Version von Microsoft 365 Verfügbar.
 
 RSS-Feed: Erhalten Sie eine Benachrichtigung, wenn diese Seite aktualisiert wird, indem Sie die folgende URL in Ihren Feedleser kopieren und einfügen:
 ```http
@@ -40,15 +40,15 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 ```
 
 ## <a name="april-2021"></a>April 2021
-- Verbessertes Microsoft 365 Security Center <br> Das verbesserte [Microsoft 365 Security Center](https://security.microsoft.com) ist jetzt in der öffentlichen Vorschau verfügbar. Diese neue Umgebung integriert Microsoft Defender für Endpunkt, Microsoft Defender für Office, 365 Microsoft 365 Defender und mehr in das Microsoft 365 Security Center. Dies ist das neue Zuhause für die Verwaltung Ihrer Sicherheitssteuerelemente. [Erfahren Sie, was es Neues gibt](./overview-security-center.md).
+- Verbesserte Microsoft 365 Security Center <br> Das verbesserte [Microsoft 365 Security Center](https://security.microsoft.com) ist jetzt in der öffentlichen Vorschau verfügbar. Diese neue Umgebung integriert Microsoft Defender für Endpunkt, Microsoft Defender für Office, 365 Microsoft 365 Defender und mehr in das Microsoft 365 Security Center. Dies ist das neue Zuhause für die Verwaltung Ihrer Sicherheitssteuerelemente. [Erfahren Sie, was es Neues gibt](./overview-security-center.md).
 
-- [Microsoft 365 Defender Threat Analytics-Bericht](threat-analytics.md)<br>
+- [Microsoft 365 Bericht über die Bedrohungsanalyse von Defender](threat-analytics.md)<br>
  Die Bedrohungsanalyse hilft Ihnen, auf die Auswirkungen aktiver Angriffe zu reagieren und diese zu minimieren. Sie können auch mehr über Angriffsversuche erfahren, die von Microsoft 365 Defender-Lösungen blockiert werden, und präventive Maßnahmen ergreifen, um das Risiko einer weiteren Gefährdung zu mindern und die Ausfallsicherheit zu erhöhen. Als Teil der einheitlichen Sicherheitserfahrung ist die Bedrohungsanalyse jetzt für Microsoft Defender for Endpoint und Microsoft Defender für Office E5-Lizenzinhaber verfügbar.
 
 ## <a name="march-2021"></a>März 2021
-- [CloudAppEvents-Tabelle](advanced-hunting-cloudappevents-table.md) <br>Hier finden Sie Informationen zu Ereignissen in verschiedenen Cloud-Apps und -Diensten, die von Microsoft Cloud App Security abgedeckt werden. Diese Tabelle enthält auch Informationen, die zuvor in verfügbar `AppFileEvents` waren.
+- [CloudAppEvents-Tabelle](advanced-hunting-cloudappevents-table.md) <br>Hier finden Sie Informationen zu Ereignissen in verschiedenen Cloud-Apps und -Diensten, die von Microsoft Cloud App Security. Diese Tabelle enthält auch Informationen, die zuvor in verfügbar `AppFileEvents` waren.
 ## <a name="february-2021"></a>Februar 2021
-- (Vorschau) Das erweiterte [Microsoft 365 https://security.microsoft.com) Security Center (](https://security.microsoft.com) ist jetzt in der öffentlichen Vorschau verfügbar. Diese neue Erfahrung bringt Defender for Endpoint und Defender für Office 365 in den Mittelpunkt. [Weitere Informationen zu den Neuerungen](./overview-security-center.md).
+- (Vorschau) Das erweiterte [Microsoft 365 Security Center https://security.microsoft.com) (](https://security.microsoft.com) ist jetzt in der öffentlichen Vorschau verfügbar. Diese neue Erfahrung bringt Defender for Endpoint und Defender for Office 365 in die Mitte. [Weitere Informationen zu den Neuerungen](./overview-security-center.md).
 
 ## <a name="september-2020"></a>September 2020
 - [IdentityDirectoryEvents-Tabelle](advanced-hunting-identitydirectoryevents-table.md) <br> Hier finden Sie Ereignisse mit einem lokalen Domänencontroller, auf dem Active Directory (AD) ausgeführt wird. Diese [erweiterte Schematabelle](advanced-hunting-overview.md) für die Suche deckt eine Reihe von identitätsbezogenen Ereignissen und Systemereignissen auf dem Domänencontroller ab.
@@ -72,7 +72,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [Automatische Untersuchung und Reaktion](m365d-autoir.md) <br> Mit AIR können Ihre Sicherheitsteams die Kapazität Ihrer Organisation im Umgang mit Sicherheitswarnungen und Vorfällen erheblich verbessern.
 - [Erweiterte Verbesserungen bei der Suche](advanced-hunting-overview.md) <br> Proaktive Suche nach Bedrohungen im modernen Arbeitsbereich mit Kusto Query Language und einem sicherheitsoptimierten Schema.
 
-## <a name="march-2019"></a>März 2019
+## <a name="march-2019"></a>März 2019
 - Erweiterte Suche <br> Landing page to various hunting capabilities that let you proactively find threats affecting email and data, devices, and identities.
 - [Microsoft-Sicherheitsbewertung](microsoft-secure-score.md) <br> Messung der Sicherheitslage einer Organisation mit einer höheren Anzahl, die mehr Verbesserungsmaßnahmen angibt. Wenn Sie den Empfehlungen der Sicherheitsbewertung folgen, können Sie Ihre Organisation vor Bedrohungen schützen. 
 - [Berichte](overview-security-center.md) <br>  Bietet eine Vielzahl von Karten, die eine Vielzahl von Bereichen abdecken, die Sicherheitsanalysten und Administratoren im Rahmen ihres täglichen Betriebs nachverfolgen.

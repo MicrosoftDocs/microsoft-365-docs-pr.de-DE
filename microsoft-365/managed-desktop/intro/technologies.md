@@ -74,5 +74,5 @@ Benutzerkontensteuerung | Die Benutzerkontensteuerung wechselt zum Secure Deskto
  |
  --- | ---
 Enterprise Mobility + Security E3<br>Azure Active Directory Premium P2 |    Sie können alle Features von Enterprise Mobility + Security E3 und Azure Active Directory Premium P2 verwenden, um MDM-Geräte zu verwalten.
-Microsoft Cloud App-Sicherheit |  Sie können dieses optionale Feature mit Microsoft Managed Desktop verwenden.
+Microsoft Cloud App Security |  Sie können dieses optionale Feature mit Microsoft Managed Desktop verwenden.
 Azure Information Protection P2  | Sie können dieses optionale Feature mit Microsoft Managed Desktop verwenden.

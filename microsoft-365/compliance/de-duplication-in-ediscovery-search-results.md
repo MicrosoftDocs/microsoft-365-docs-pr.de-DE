@@ -45,13 +45,13 @@ eDiscovery-Tools verwenden eine Kombination der folgenden E-Mail-Eigenschaften, 
 
 Während des eDiscovery-Exportprozesses werden diese drei Eigenschaften für jede Nachricht verglichen, die den Suchkriterien entspricht. Wenn diese Eigenschaften für zwei (oder mehr) Nachrichten identisch sind, werden diese Nachrichten als Duplikate bestimmt, und das Ergebnis ist, dass nur eine Kopie der Nachricht exportiert wird, wenn die Deduplizierung aktiviert ist. Die exportierte Nachricht wird als "Quellelement" bezeichnet. Informationen zu doppelten Nachrichten  sind in denResults.csvund **Manifest.xml** enthalten, die in den exportierten Suchergebnissen enthalten sind. In der **Results.csv** wird eine doppelte Nachricht durch einen Wert in der Spalte Duplizieren in **Element** identifiziert. Der Wert in dieser Spalte entspricht dem Wert in der **Spalte Elementidentität** für die exportierte Nachricht. 
   
-Die folgenden Grafiken zeigen, wie doppelte  Nachrichten in  denResults.csvundManifest.xmlangezeigt werden, die mit den Suchergebnissen exportiert werden. Diese Berichte enthalten nicht die zuvor beschriebenen E-Mail-Eigenschaften, die im Deduplizierungsalgorithmus verwendet werden. Stattdessen enthalten die Berichte die **Item Identity-Eigenschaft,** die Elementen vom Exchange-Speicher zugewiesen ist. 
+Die folgenden Grafiken zeigen, wie doppelte  Nachrichten in  denResults.csvundManifest.xmlangezeigt werden, die mit den Suchergebnissen exportiert werden. Diese Berichte enthalten nicht die zuvor beschriebenen E-Mail-Eigenschaften, die im Deduplizierungsalgorithmus verwendet werden. Stattdessen enthalten die Berichte die **Item Identity-Eigenschaft,** die Elementen vom Exchange wird. 
   
- ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv (in Excel angezeigt)
+ ### <a name="resultscsv-report-viewed-in-excel"></a>Results.csv (in der Excel)
   
 ![Anzeigen von Informationen zu doppelten Elementen im Results.csv Bericht](../media/e3d64004-3b91-4cba-b6f3-934b46cbdcdb.png)
   
- ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml (in Excel angezeigt)
+ ### <a name="manifestxml-report-viewed-in-excel"></a>Manifest.xml (in der Excel)
   
 ![Anzeigen von Informationen zu doppelten Elementen im Manifest.xml Bericht](../media/69aa4786-9883-46ff-bcae-b35e0daf4a6d.png)
   

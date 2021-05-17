@@ -65,7 +65,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `ProcessVersionInfoFileDescription` | Zeichenfolge | Beschreibung aus den Versionsinformationen des neu erstellten Prozesses |
 | `ProcessId` | int | Prozess-ID (PID) des neu erstellten Prozesses |
 | `ProcessCommandLine` | Zeichenfolge | Befehlszeile zum Erstellen des neuen Prozesses |
-| `ProcessIntegrityLevel` | Zeichenfolge | Integritätsebene des neu erstellten Prozesses. Windows weist Prozesse Integritätsstufen basierend auf bestimmten Merkmalen zu, z. B. wenn sie aus einem heruntergeladenen Internet gestartet wurden. Diese Integritätsstufen beeinflussen Berechtigungen für Ressourcen |
+| `ProcessIntegrityLevel` | Zeichenfolge | Integritätsebene des neu erstellten Prozesses. Windows weist Prozesse Integritätsebenen basierend auf bestimmten Merkmalen zu, z. B. wenn sie aus einem heruntergeladenen Internet gestartet wurden. Diese Integritätsstufen beeinflussen Berechtigungen für Ressourcen |
 | `ProcessTokenElevation` | Zeichenfolge | Gibt den Typ der Tokenerweiterung an, die auf den neu erstellten Prozess angewendet wird. Mögliche Werte: TokenElevationTypeLimited (restricted), TokenElevationTypeDefault (Standard) und TokenElevationTypeFull (elevated) |
 | `ProcessCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu der der Prozess erstellt wurde |
 | `AccountDomain` | Zeichenfolge | Domäne des Kontos |

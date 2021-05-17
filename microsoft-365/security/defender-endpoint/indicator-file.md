@@ -47,19 +47,19 @@ Es gibt drei Möglichkeiten zum Erstellen von Indikatoren für Dateien:
 
 Es ist wichtig, die folgenden Voraussetzungen zu kennen, bevor Sie Indikatoren für Dateien erstellen:
 
-- Dieses Feature ist verfügbar, wenn Ihre Organisation **Microsoft Defender Antivirus (im** aktiven Modus) verwendet und der **cloudbasierte Schutz aktiviert ist.** Weitere Informationen finden Sie unter [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Dieses Feature ist verfügbar, wenn Ihre Organisation **Microsoft Defender Antivirus (im** aktiven Modus) verwendet und **der cloudbasierte Schutz aktiviert ist.** Weitere Informationen finden Sie unter [Manage cloud-based protection](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 
 - Die Antischalwareclientversion muss 4.18.1901.x oder höher sein. Siehe [Monatliche Plattform- und Modulversionen](manage-updates-baselines-microsoft-defender-antivirus.md#monthly-platform-and-engine-versions)
 
-- Unterstützt auf Geräten mit Windows 10, Version 1703 oder höher, Windows Server 2016 und 2019.
+- Unterstützt auf Geräten mit Windows 10 Version 1703 oder höher, Windows Server 2016 und 2019.
 
-- Um mit dem Blockieren von Dateien zu beginnen, müssen Sie zunächst das Feature ["Blockieren oder Zulassen"](advanced-features.md) in den Einstellungen aktivieren.
+- Um mit dem Blockieren von Dateien zu beginnen, müssen Sie zuerst das Feature ["Blockieren oder zulassen"](advanced-features.md) in der Einstellungen.
 
-Dieses Feature soll verhindern, dass mutmaßliche Schadsoftware (oder potenziell schädliche Dateien) aus dem Web heruntergeladen werden. Es unterstützt zurzeit portable ausführbare (PE)-Dateien, einschließlich EXE- und DLL-Dateien. Die Abdeckung wird im Laufe der Zeit erweitert.
+Dieses Feature soll verhindern, dass mutmaßliche Schadsoftware (oder potenziell schädliche Dateien) aus dem Web heruntergeladen werden. Derzeit werden portable ausführbare Dateien (PE) unterstützt, einschließlich .exe und .dll Dateien. Die Abdeckung wird im Laufe der Zeit erweitert.
 
 ## <a name="create-an-indicator-for-files-from-the-settings-page"></a>Erstellen eines Indikators für Dateien auf der Einstellungsseite
 
-1. Wählen Sie im Navigationsbereich Einstellungen **> Indikatoren aus.**
+1. Wählen Sie im Navigationsbereich Einstellungen > **Indikatoren aus.**
 
 2. Wählen Sie die **Registerkarte Dateihash**   aus.
 
@@ -89,7 +89,7 @@ Dateien, die automatisch von einem Indikator blockiert werden, werden nicht im A
 
 Die Behandlung von Konflikten zwischen Cert- und File IoC-Richtlinien folgt der folgenden Reihenfolge:
 
-- Wenn die Datei nicht von Windows Defender Anwendungssteuerung und AppLocker Richtlinien/Richtlinien für den Erzwungenen Modus zulässig ist, dann **Blockieren**
+- Wenn die Datei nicht von der Anwendungskontrolle Windows Defender appLocker richtlinien/richtlinien für den Erzwungenen Modus zulässig ist, dann **Blockieren**
 
 - Andern falls die Datei vom Defender Anti-Virus Exclusion zugelassen ist, dann **Zulassen**
 
@@ -99,11 +99,11 @@ Die Behandlung von Konflikten zwischen Cert- und File IoC-Richtlinien folgt der 
 
 - Andern falls die Datei durch #A0 blockiert wird, CFA, AV, SmartScreen und **dann Blockieren**  
 
-- Else **Allow** (passes Windows Defender Application Control & AppLocker policy, es gelten keine IoC-Regeln)
+- Else **Allow** (passes Windows Defender Application Control & AppLocker policy, no IoC rules apply to it)
 
 Wenn #A0 in Konflikt stehen, die denselben Erzwingungstyp und dasselbe Ziel haben, wird die Richtlinie des sichereren (d. h. längeren) Hashs angewendet. Eine SHA-256-Dateihash-IoC-Richtlinie z. B. gewinnt eine #A0 für MD5-Dateihash, wenn beide Hashtypen dieselbe Datei definieren.
 
-Beachten Sie, dass die Features für die Blockierung anfälliger Anwendungen der Bedrohungs- und Sicherheitsrisikoverwaltung die Datei-IoCs für die Erzwingung verwenden und die oben aufgeführte Reihenfolge für die Konfliktbehandlung befolgen.
+Beachten Sie, Bedrohungs- und Sicherheitsrisikomanagement für die blockverwundbaren Anwendungsfeatures die Datei-IoCs für die Erzwingung verwenden und die oben aufgeführte Reihenfolge für die Konfliktbehandlung befolgen.
 
 ### <a name="examples"></a>Beispiele
 
@@ -113,7 +113,7 @@ Beachten Sie, dass die Features für die Blockierung anfälliger Anwendungen der
 |Regel zur Reduzierung der Angriffsfläche |Blockieren |Zulassen |Zulassen
 |Windows Defender Application Control |Zulassen |Blockieren |Zulassen |
 |Windows Defender Application Control |Blockieren |Zulassen |Blockieren
-|Microsoft Defender Antivirus-Ausschluss |Zulassen |Blockieren |Zulassen
+|Microsoft Defender Antivirus Ausschluss |Zulassen |Blockieren |Zulassen
 
 ## <a name="see-also"></a>Siehe auch
 

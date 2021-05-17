@@ -1,5 +1,5 @@
 ---
-title: Zuweisen von Administratorrollen zum Microsoft 365 Admin Center
+title: Zuweisen von Administratorrollen Microsoft 365 Admin Center
 f1.keywords:
 - NOCSH
 ms.author: kwekua

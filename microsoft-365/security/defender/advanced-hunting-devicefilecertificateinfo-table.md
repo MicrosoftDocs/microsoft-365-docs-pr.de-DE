@@ -46,7 +46,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `DeviceId` | string | Eindeutiger Bezeichner für den Computer im Dienst |
 | `DeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Computers |
 | `SHA1` | string | SHA-1 der Datei, auf die die aufgezeichnete Aktion angewendet wurde |
-| `IsSigned` | Boolescher Wert | Gibt an, ob die Datei signiert ist |
+| `IsSigned` | boolean | Gibt an, ob die Datei signiert ist |
 | `SignatureType` | Zeichenfolge | Gibt an, ob Signaturinformationen als eingebetteter Inhalt in der Datei selbst gelesen oder aus einer externen Katalogdatei gelesen wurden |
 | `Signer` | Zeichenfolge | Informationen zum Signier der Datei |
 | `SignerHash` | Zeichenfolge | Eindeutiger Hashwert, der den Signier identifiziert |
@@ -57,8 +57,8 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `CertificateCreationTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu der das Zertifikat erstellt wurde |
 | `CertificateExpirationTime` | Datum/Uhrzeit | Datum und Uhrzeit des Ablaufs des Zertifikats |
 | `CertificateCountersignatureTime` | Datum/Uhrzeit | Datum und Uhrzeit, zu der das Zertifikat gegensigniert wurde |
-| `IsTrusted` | Boolescher Wert | Gibt an, ob die Datei basierend auf den Ergebnissen der WinVerifyTrust-Funktion vertrauenswürdig ist, die nach unbekannten Stammzertifikatinformationen, ungültigen Signaturen, widerrufenen Zertifikaten und anderen fragwürdigen Attributen sucht. |
-| `IsRootSignerMicrosoft` | Boolescher Wert | Gibt an, ob der Signier des Stammzertifikats Microsoft ist |
+| `IsTrusted` | boolean | Gibt an, ob die Datei basierend auf den Ergebnissen der WinVerifyTrust-Funktion vertrauenswürdig ist, die nach unbekannten Stammzertifikatinformationen, ungültigen Signaturen, widerrufenen Zertifikaten und anderen fragwürdigen Attributen sucht. |
+| `IsRootSignerMicrosoft` | boolean | Gibt an, ob der Signier des Stammzertifikats Microsoft ist |
 | `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten DeviceName und Timestamp verwendet werden. | 
 
 ## <a name="related-topics"></a>Verwandte Themen

@@ -31,7 +31,7 @@ ms.locfileid: "50921492"
 
 Die Self-Service-Kennwortzurücksetzung (SSPR) des Azure Active Directory (Azure AD) erlaubt es Benutzern, ihre Kennwörter oder Konten zurücksetzen oder zu entsperren.
 
-In diesem Artikel wird beschrieben, wie Sie Kennwortzurücksetzungen in Ihrer Microsoft 365-Testumgebung konfigurieren und testen.
+In diesem Artikel wird beschrieben, wie Sie Kennwortzurücksetzungen in Ihrer Microsoft 365 konfigurieren und testen.
 
 Das Einrichten von SSPR umfasst drei Phasen:
 - [Phase 1: Konfigurieren Sie Kennworthashsynchronisierung für Ihre Microsoft 365-Testumgebung](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -41,7 +41,7 @@ Das Einrichten von SSPR umfasst drei Phasen:
 ![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Eine visuelle Karte zu allen Artikeln im Microsoft 365 for Enterprise Test Lab Guide-Stapel finden Sie unter [Microsoft 365 for Enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Eine visuelle Karte zu allen Artikeln im Stapel Microsoft 365 test lab guide für unternehmen finden Sie unter [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Phase 1: Konfigurieren Sie Kennworthashsynchronisierung für Ihre Microsoft 365-Testumgebung
 
@@ -70,11 +70,11 @@ Konfigurieren Sie in dieser Phase die Kennwortzurücksetzung im Azure AD-Mandant
 Aktivieren Sie zunächst die Kennwortzurücksetzung für die Konten in einer bestimmten Azure AD-Gruppe.
 
 1. Öffnen Sie [https://portal.azure.com](https://portal.azure.com) in einer privaten Browserinstanz, und melden Sie sich dann mit den Anmeldeinformationen des globalen Administratorkontos an.
-2. Wählen Sie im Azure-Portal **Azure Active Directory**  >  **Groups** Neue  >  **Gruppe aus.**
+2. Wählen Sie im Azure-Portal **Azure Active Directory**  >  **Gruppen**  >  **Neue Gruppe aus.**
 3. Legen Sie **Gruppentyp** auf **Sicherheit**, **Gruppenname** auf **PWReset** und **Mitgliedschaftstyp** auf **Zugewiesen** fest.
 4. Wählen **Sie Mitglieder** aus, suchen und wählen Sie Benutzer **3** aus, wählen **Sie Auswählen** aus, und wählen Sie dann **Erstellen aus.**
 5. Schließen Sie den Bereich **Gruppen**.
-6. Wählen Sie im Azure Active Directory-Bereich die Option **Kennwortzurücksetzung** in der linken Navigationsleiste aus.
+6. Wählen Sie Azure Active Directory linken Navigation  die Option Kennwortzurücksetzung aus.
 7. Wählen Sie im Bereich **Kennwort zurücksetzen, Eigenschaften** unter **Self-Service-Kennwortzurücksetzung aktiviert** die Option **Ausgewählt** aus.
 8. Wählen **Sie Gruppe auswählen** aus, wählen Sie die Gruppe **PWReset** aus, und wählen Sie **dann Speichern**  >  **aus.**
 9. Schließen Sie die private Browserinstanz.

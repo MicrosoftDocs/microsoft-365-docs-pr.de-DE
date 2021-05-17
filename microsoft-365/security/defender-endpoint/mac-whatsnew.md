@@ -114,7 +114,7 @@ ms.locfileid: "51994997"
 
 ## <a name="1010723"></a>101.07.23
 
-- Neue Felder zur Ausgabe von hinzugefügt, um den Status des passiven Modus und die `mdatp --health` EDR-Gruppen-ID zu überprüfen
+- Neue Felder zur Ausgabe von hinzugefügt, um den Status des passiven Modus und die EDR `mdatp --health` zu überprüfen
 
   > [!NOTE]
   > `mdatp --health` wird in einem `mdatp health` zukünftigen Produktupdate ersetzt.
@@ -178,9 +178,9 @@ ms.locfileid: "51994997"
 ## <a name="1008691"></a>100.86.91
 
 > [!CAUTION]
-> Um den vollständigsten Schutz für Ihre macOS-Geräte sicherzustellen und in Übereinstimmung mit Apple die Bereitstellung von systemeigenen MacOS-Sicherheitsupdates für Betriebssystemversionen zu beenden, die älter als [aktuell – 2] sind, werden MDATP für #A0 und -Updates unter macOS Sierra [10.12] nicht mehr unterstützt. MDATP für Mac-Updates und -Verbesserungen werden auf Geräten mit den Versionen Catalina [10.15], Mojave [10.14] und High Sierra [10.13] bereitgestellt. 
+> Um den vollständigsten Schutz für Ihre macOS-Geräte sicherzustellen und in Übereinstimmung mit Apple die Bereitstellung von systemeigenen macOS-Sicherheitsupdates für Betriebssystemversionen zu beenden, die älter als [aktuell – 2] sind, werden MDATP für #A0 und -Updates unter macOS Sierra [10.12] nicht mehr unterstützt. MDATP Für #A0 und -Verbesserungen werden Geräte mit den Versionen Catalina [10.15], Mojave [10.14] und High Sierra [10.13] bereitgestellt. 
 >
-> Wenn Sie MDATP für Mac bereits auf Ihren Sierra [10.12]-Geräten bereitgestellt haben, aktualisieren Sie bitte auf die neueste macOS-Version, um risiken des Verlusts von Schutz zu vermeiden.
+> Wenn Sie bereits MDATP für Mac auf Ihren Sierra [10.12]-Geräten bereitgestellt haben, aktualisieren Sie bitte auf die neueste macOS-Version, um risiken des Verlusts von Schutz zu vermeiden.
 
 - Leistungsverbesserungen & Fehlerbehebungen
 
@@ -231,6 +231,6 @@ ms.locfileid: "51994997"
   > Der Mechanismus für die Erteilung dieser Zustimmung hängt davon ab, wie Sie Microsoft Defender for Endpoint bereitgestellt haben:
   >
   > - Manuelle Bereitstellungen finden Sie in den aktualisierten Anweisungen im [Thema Manuelle](mac-install-manually.md#how-to-allow-full-disk-access) Bereitstellung.
-  > - Informationen zu verwalteten Bereitstellungen finden Sie in den aktualisierten Anweisungen in den [Themen JAMF-basierte](mac-install-with-jamf.md) Bereitstellung und [Microsoft Intune-basierte Bereitstellung.](mac-install-with-intune.md#create-system-configuration-profiles)
+  > - Informationen zu verwalteten Bereitstellungen finden Sie in den aktualisierten Anweisungen in den Themen [JAMF-basierte](mac-install-with-jamf.md) Bereitstellung [und Microsoft Intune Bereitstellung.](mac-install-with-intune.md#create-system-configuration-profiles)
 
 - Leistungsverbesserungen & Fehlerbehebungen

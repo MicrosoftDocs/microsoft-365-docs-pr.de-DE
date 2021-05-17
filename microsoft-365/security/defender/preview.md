@@ -27,7 +27,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2021
 ms.locfileid: "52029074"
 ---
-# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender -Vorschaufeatures
+# <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender-Vorschaufeatures
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "52029074"
 
 Der Microsoft 365 Defender-Dienst wird ständig aktualisiert, um neue Funktionserweiterungen und -funktionen zu enthalten.
 
-Erfahren Sie mehr über neue Features in der Microsoft 365 Defender-Vorschauversion und gehören zu den ersten, die bevorstehende Features ausprobieren, indem Sie die Vorschaufunktion aktivieren.
+Erfahren Sie mehr über neue Features in der Microsoft 365 Defender Preview Release und gehören zu den ersten, die bevorstehende Features ausprobieren, indem Sie die Vorschaufunktion aktivieren.
 
 Weitere Informationen zu neuen Funktionen, die allgemein verfügbar sind, finden Sie unter [What's new in Microsoft 365 Defender](whats-new.md).
 
@@ -58,7 +58,7 @@ Sie haben Zugriff auf anstehende Features, zu der Sie Feedback geben können, um
 Aktivieren Sie die Einstellung für die Vorschauerfahrung, um zu den ersten zu gehören, die kommende Features ausprobieren.
 
 1. Wählen Sie im Navigationsbereich **Einstellungen** aus.
-2. Wählen **Sie Microsoft 365 Defender aus.**
+2. Wählen **Microsoft 365 Defender aus.**
 3. Wählen Sie **Vorschaufeatures** > **Aktivieren Sie Vorschaufeatures**. 
 4. Klicken Sie auf **Speichern**.
 
@@ -68,7 +68,7 @@ Sie wissen, dass Sie Vorschaufeatures aktiviert haben, wenn Sie sehen, dass das 
 
 Die folgenden Features und Verbesserungen sind derzeit in der Vorschau verfügbar:
 
-- **[Microsoft 365 Defender-APIs](api-overview.md)** – Mit den Microsoft 365 Defender-APIs auf oberster Ebene können Sie Workflows basierend auf dem freigegebenen Vorfall und erweiterten Tabellen für die Suche automatisieren. 
+- **[Microsoft 365 Defender-APIs](api-overview.md)** – Die top-level-Microsoft 365 Defender-APIs ermöglichen es Ihnen, Workflows basierend auf den freigegebenen Vorfällen und erweiterten Nachschlagetabellen zu automatisieren. 
 - **[Ergreifen Sie Maßnahmen bei der erweiterten Suche](advanced-hunting-take-action.md)**– Enthalten Sie schnell Bedrohungen oder adressieren sie gefährdete Objekte, die Sie bei der [erweiterten Suche finden.](advanced-hunting-overview.md)
 - **[In-Portal-Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**– Informationen zu Schematabellen für die erweiterte Suche direkt im Security Center erhalten. Zusätzlich zu Tabellen- und Spaltenbeschreibungen enthält dieser Verweis unterstützte Ereignistypen ( `ActionType` Werte) und Beispielabfragen.
 - **[DeviceFromIP() -Funktion](advanced-hunting-devicefromip-function.md)**– Erhalten Sie Informationen darüber, welchen Geräten zu einem bestimmten Zeitraum eine bestimmte IP-Adresse zugewiesen wurde.

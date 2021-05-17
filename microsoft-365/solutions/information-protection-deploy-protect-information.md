@@ -67,7 +67,7 @@ Damit Sie mit einem Informationsschutzschema in Microsoft 365 beginnen können, 
 
 Microsoft [Information Protection-Lösungen](../compliance/information-protection.md) umfassen eine Reihe von integrierten Funktionen Microsoft 365, Microsoft Azure und Microsoft Windows. Zu Microsoft 365 Informationsschutzlösungen gehören:
 
-- [Dienstverschlüsselung mit dem Kundenschlüssel](../compliance/customer-key-overview.md)
+- [Dienstverschlüsselung mit Kundenschlüssel](../compliance/customer-key-overview.md)
 - [Typen vertraulicher Informationen](../compliance/sensitive-information-type-entity-definitions.md) (beschrieben im Artikel "Bewerten von Datenschutzrisiken und Identifizieren [vertraulicher Elemente")](information-protection-deploy-assess.md)
 - [Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels.md) 
   - Dienst-/Containerebene
@@ -140,7 +140,7 @@ Wenn Sie [Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels-teams-
 
 - Microsoft Teams Websites
 - Microsoft 365 (früher Office 365 Gruppen)
-- Microsoft Office SharePoint Online-Websites
+- SharePoint-Websites
 
 Verwenden Sie die folgenden Bezeichnungseinstellungen zum Schutz von Inhalt in diesen Containern:
 

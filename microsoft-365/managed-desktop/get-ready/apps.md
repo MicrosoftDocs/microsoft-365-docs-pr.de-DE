@@ -1,5 +1,5 @@
 ---
-title: Apps im Microsoft Managed Desktop
+title: Anwendungen in Microsoft Managed Desktop
 description: Erläutert, wie Apps behandelt werden, einschließlich des Packens, Bereitstellens und Unterstützens von Apps.
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
@@ -17,7 +17,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2021
 ms.locfileid: "52028944"
 ---
-# <a name="apps-in-microsoft-managed-desktop"></a>Apps im Microsoft Managed Desktop
+# <a name="apps-in-microsoft-managed-desktop"></a>Anwendungen in Microsoft Managed Desktop
 
 <!--This topic is the target for 2 "Learn more" links in the Admin Portal (aka.ms/app-overview;app-package); also target for link from Online resources (aka.ms/app-overviewmmd-app-prep) do not delete.-->
 

@@ -27,15 +27,15 @@ ms.locfileid: "50928005"
 Für den Fall, dass personen unerwartete Probleme auftreten, nachdem Informationsbarrieren in Kraft sind, gibt es einige Schritte, die Sie zur Lösung dieser Probleme ausführen können. Verwenden Sie diesen Artikel als Leitfaden.
 
 > [!IMPORTANT]
-> Zum Ausführen der in diesem Artikel beschriebenen Aufgaben muss Ihnen eine entsprechende Rolle zugewiesen werden, z. B. eine der folgenden:<br/>– Microsoft 365 Enterprise Global Administrator<br/>– globaler Administrator<br/>- Complianceadministrator<br/>- IB Compliance Management (dies ist eine neue Rolle!)<p>Weitere Informationen zu voraussetzungen für Informationsbarrieren finden Sie unter [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<p>Stellen Sie sicher, dass Sie eine [Verbindung mit Security & Compliance Center PowerShell herstellen.](/powershell/exchange/connect-to-scc-powershell)
+> Zum Ausführen der in diesem Artikel beschriebenen Aufgaben muss Ihnen eine entsprechende Rolle zugewiesen werden, z. B. eine der folgenden:<br/>– Microsoft 365 Enterprise globaler Administrator<br/>– globaler Administrator<br/>- Complianceadministrator<br/>- IB Compliance Management (dies ist eine neue Rolle!)<p>Weitere Informationen zu voraussetzungen für Informationsbarrieren finden Sie unter [Prerequisites (for information barrier policies)](information-barriers-policies.md#prerequisites).<p>Stellen Sie sicher, dass Sie eine [Verbindung mit Security & Compliance Center PowerShell herstellen.](/powershell/exchange/connect-to-scc-powershell)
 
-## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>Problem: Benutzern wird unerwartet die Kommunikation mit anderen Benutzern in Microsoft Teams blockiert. 
+## <a name="issue-users-are-unexpectedly-blocked-from-communicating-with-others-in-microsoft-teams"></a>Problem: Benutzern wird unerwartet die Kommunikation mit anderen Benutzern in Microsoft Teams 
 
-In diesem Fall melden Personen unerwartete Probleme bei der Kommunikation mit anderen Personen in Microsoft Teams. Einige Beispiele:
+In diesem Fall melden Personen unerwartete Probleme bei der Kommunikation mit anderen personen Microsoft Teams. Einige Beispiele:
 
-- Ein Benutzer sucht nach einem anderen Benutzer in Microsoft Teams, kann ihn aber nicht finden.
-- Ein Benutzer kann einen anderen Benutzer in Microsoft Teams finden, aber nicht auswählen.
-- Ein Benutzer kann einen anderen Benutzer sehen, aber keine Nachrichten an diesen anderen Benutzer in Microsoft Teams senden.
+- Ein Benutzer sucht nach einem anderen Benutzer in der Microsoft Teams.
+- Ein Benutzer kann einen anderen Benutzer in der Microsoft Teams.
+- Ein Benutzer kann einen anderen Benutzer sehen, aber keine Nachrichten an diesen anderen Benutzer in Microsoft Teams.
 
 ### <a name="what-to-do"></a>Vorgehensweise
 
@@ -79,9 +79,9 @@ Bestimmen Sie, ob die Benutzer von einer Richtlinie für Informationsbarrieren b
 
     Wenn Weiterhin Probleme mit Ihrer Richtlinie für **Informationsbarrieren auftreten, wenden Sie sich an den Support.**
 
-## <a name="issue-communications-are-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>Problem: Die Kommunikation zwischen Benutzern, die in Microsoft Teams blockiert werden sollten, ist zulässig.
+## <a name="issue-communications-are-allowed-between-users-who-should-be-blocked-in-microsoft-teams"></a>Problem: Die Kommunikation ist zwischen Benutzern zulässig, die in der Microsoft Teams
 
-In diesem Fall sind zwar Informationsbarrieren definiert, aktiv und angewendet, aber Personen, die an der Kommunikation miteinander gehindert werden sollten, können sich in Microsoft Teams gegenseitig chatten und anrufen.
+In diesem Fall sind zwar Informationsbarrieren definiert, aktiv und angewendet, aber Personen, die an der Kommunikation miteinander gehindert werden sollten, sind in der Lage, miteinander zu chatten und sich in einem Microsoft Teams.
 
 ### <a name="what-to-do"></a>Vorgehensweise
 
@@ -102,13 +102,13 @@ Stellen Sie sicher, dass die benutzer in einer Richtlinie für Informationsbarri
 
     |**Ergebnisse**|**Weitere Schritte**|
     |:----------|:------------------|
-    | Für die ausgewählten Benutzer werden keine Segmente aufgelistet. | Führen Sie einen der folgenden Schritte aus:<br/>– Weisen Sie einem vorhandenen Segment Benutzer zu, indem Sie ihre Benutzerprofile in Azure Active Directory bearbeiten. (Siehe [Konfigurieren von Benutzerkontoeigenschaften mit Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).)<br/>- Definieren eines Segments mithilfe eines [unterstützten Attributs für Informationsbarrieren](information-barriers-attributes.md). Definieren Sie dann [entweder eine neue Richtlinie,](information-barriers-policies.md#part-2-define-information-barrier-policies) oder bearbeiten Sie eine [vorhandene Richtlinie,](information-barriers-edit-segments-policies.md#edit-a-policy) um dieses Segment zu enthalten. |
+    | Für die ausgewählten Benutzer werden keine Segmente aufgelistet. | Führen Sie einen der folgenden Schritte aus:<br/>– Weisen Sie einem vorhandenen Segment Benutzer zu, indem Sie ihre Benutzerprofile in Azure Active Directory. (Weitere Informationen finden Sie unter Configure [user account properties with Office 365 PowerShell](../enterprise/configure-user-account-properties-with-microsoft-365-powershell.md).)<br/>- Definieren eines Segments mithilfe eines [unterstützten Attributs für Informationsbarrieren](information-barriers-attributes.md). Definieren Sie dann [entweder eine neue Richtlinie,](information-barriers-policies.md#part-2-define-information-barrier-policies) oder bearbeiten Sie eine [vorhandene Richtlinie,](information-barriers-edit-segments-policies.md#edit-a-policy) um dieses Segment zu enthalten. |
     | Segmente werden aufgelistet, aber diesen Segmenten werden keine Richtlinien für Informationsbarrieren zugewiesen. | Führen Sie einen der folgenden Schritte aus:<br/>- [Definieren einer neuen Richtlinie für Informationsbarrieren](information-barriers-policies.md#part-2-define-information-barrier-policies) für jedes in Frage gestellte Segment <br/>- [Bearbeiten einer vorhandenen Richtlinie für Informationsbarrieren,](information-barriers-edit-segments-policies.md#edit-a-policy) um sie dem richtigen Segment zuzuordnen |
     | Segmente werden aufgelistet und sind jeweils in einer Richtlinie für Informationsbarrieren enthalten. | – Führen Sie das `Get-InformationBarrierPolicy` Cmdlet aus, um zu überprüfen, ob Richtlinien für Informationsbarrieren aktiv sind<br/>– Führen Sie das `Get-InformationBarrierPoliciesApplicationStatus` Cmdlet aus, um zu bestätigen, dass die Richtlinien angewendet wurden<br/>– Führen Sie das `Start-InformationBarrierPoliciesApplication` Cmdlet aus, um alle aktiven Richtlinien für Informationsbarrieren anzuwenden |
 
 ## <a name="issue-i-need-to-remove-a-single-user-from-an-information-barrier-policy"></a>Problem: Ich muss einen einzelnen Benutzer aus einer Richtlinie für Informationsbarrieren entfernen.
 
-In diesem Fall sind Richtlinien für Informationsbarrieren wirksam, und ein oder mehrere Benutzer werden unerwartet an der Kommunikation mit anderen Benutzern in Microsoft Teams blockiert. Anstatt Richtlinien für Informationsbarrieren vollständig zu entfernen, können Sie einen oder mehrere einzelne Benutzer aus Richtlinien für Informationsbarrieren entfernen.
+In diesem Fall sind Richtlinien für Informationsbarrieren wirksam, und ein oder mehrere Benutzer werden unerwartet an der Kommunikation mit anderen Benutzern in Microsoft Teams. Anstatt Richtlinien für Informationsbarrieren vollständig zu entfernen, können Sie einen oder mehrere einzelne Benutzer aus Richtlinien für Informationsbarrieren entfernen.
 
 ### <a name="what-to-do"></a>Vorgehensweise
 
@@ -119,11 +119,11 @@ Richtlinien für Informationsbarrieren werden Segmenten von Benutzern zugewiesen
     |**Syntax**|**Beispiel**|
     |:---------|:----------|
     | `Get-InformationBarrierRecipientStatus -Identity <value> -Identity2 <value>` <p> Sie können einen beliebigen Wert verwenden, der jeden Benutzer eindeutig identifiziert, z. B. Name, Alias, Distinguished Name, kanonischer Domänenname, E-Mail-Adresse oder GUID. | `Get-InformationBarrierRecipientStatus -Identity meganb -Identity2 alexw` <p> In diesem Beispiel verweisen wir auf zwei Benutzerkonten in Office 365: *meganb* für *Megan* und *alexw* für *Alex*.          |
-    | `Get-InformationBarrierRecipientStatus -Identity <value>` <p> Sie können einen beliebigen Wert verwenden, der den Benutzer eindeutig identifiziert, z. B. Name, Alias, Distinguished Name, kanonischer Domänenname, E-Mail-Adresse oder GUID.|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p> In diesem Beispiel beziehen wir uns auf ein einzelnes Konto in Office 365: *jeanp*. |
+    | `Get-InformationBarrierRecipientStatus -Identity <value>` <p> Sie können einen beliebigen Wert verwenden, der den Benutzer eindeutig identifiziert, z. B. Name, Alias, Distinguished Name, kanonischer Domänenname, E-Mail-Adresse oder GUID.|`Get-InformationBarrierRecipientStatus -Identity jeanp`<p> In diesem Beispiel verweisen wir auf ein einzelnes Konto in Office 365: *jeanp*. |
 
 2. Überprüfen Sie die Ergebnisse, um zu sehen, ob Richtlinien für Informationsbarrieren zugewiesen sind und zu welchen Segmenten die Benutzer gehören.
 
-3. Aktualisieren Sie die Profilinformationen des Benutzers [in Azure Active Directory,](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)um einen Benutzer aus einem Segment zu entfernen, das von Informationsbarrieren betroffen ist.
+3. Um einen Benutzer aus einem Segment zu entfernen, das von Informationsbarrieren betroffen ist, aktualisieren Sie die Profilinformationen des [Benutzers in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
 
 4. Warten Sie etwa 30 Minuten, bis FwdSync auftritt. Führen Sie das `Start-InformationBarrierPoliciesApplication` Cmdlet auch aus, um alle aktiven Richtlinien für Informationsbarrieren anzuwenden.
 
@@ -157,7 +157,7 @@ In diesem Fall haben Sie Segmente definiert, Richtlinien für Informationsbarrie
 
 ### <a name="what-to-do"></a>Vorgehensweise
 
-Stellen Sie sicher, dass in Ihrer Organisation keine [Exchange-Adressbuchrichtlinien](/exchange/address-books/address-book-policies/address-book-policies) verwendet werden. Solche Richtlinien verhindern, dass Richtlinien für Informationsbarrieren angewendet werden.
+Stellen Sie sicher, dass ihre Organisation nicht über [Exchange Adressbuchrichtlinien](/exchange/address-books/address-book-policies/address-book-policies) verfügt. Solche Richtlinien verhindern, dass Richtlinien für Informationsbarrieren angewendet werden.
 
 1. Stellen Sie eine Verbindung mit [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) her.
 
@@ -165,7 +165,7 @@ Stellen Sie sicher, dass in Ihrer Organisation keine [Exchange-Adressbuchrichtli
 
     |**Ergebnisse**|**Nächster Schritt**|
     |:----------|:------------|
-    | Exchange-Adressbuchrichtlinien werden aufgelistet | [Adressbuchrichtlinien entfernen](/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
+    | Exchange Adressbuchrichtlinien sind aufgeführt | [Adressbuchrichtlinien entfernen](/exchange/address-books/address-book-policies/remove-an-address-book-policy) |
     | Keine Adressbuchrichtlinien vorhanden |Überprüfen Der Überwachungsprotokolle, um herauszufinden, warum die Richtlinienanwendung ausfehlt |
 
 3. [Anzeigen des Status von Benutzerkonten, Segmenten, Richtlinien oder Richtlinienanwendung](information-barriers-policies.md#view-status-of-user-accounts-segments-policies-or-policy-application).

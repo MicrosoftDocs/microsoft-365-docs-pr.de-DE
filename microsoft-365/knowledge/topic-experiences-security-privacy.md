@@ -19,7 +19,7 @@ ms.locfileid: "52114062"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Sicherheit und Datenschutz in Microsoft Viva Topics
 
-Themen verwenden vorhandene Inhaltssicherheitsfeatures in Microsoft 365, zusammen mit administrativen Steuerelementen, um zu steuern, welche von AI generierten Inhalte Benutzern in Ihrer Organisation angezeigt werden. Es ist die Kombination aus Microsoft 365 Sicherheitseinstellungen (Berechtigungen für Websites, Dateien und Ordner) und Themen-Administratoreinstellungen, die bestimmen, was einem bestimmten Benutzer in Themen angezeigt werden kann.
+Themen verwenden vorhandene Inhaltssicherheitsfeatures in Microsoft 365 zusammen mit administrativen Steuerelementen, um zu steuern, welche VON AI generierten Inhalte benutzern in Ihrer Organisation angezeigt werden. Es ist die Kombination aus Microsoft 365-Sicherheitseinstellungen (Berechtigungen für Websites, Dateien und Ordner) und Themen-Administratoreinstellungen, die bestimmen, was einem bestimmten Benutzer in Themen angezeigt werden kann.
 
 Durch das Einrichten von Themen werden keine vorhandenen Zugriffssteuerelemente für Inhalte in Ihrer Organisation geändert. Benutzern werden nur Inhalte angezeigt, auf die sie Zugriff haben.
 
@@ -66,7 +66,7 @@ Es wird empfohlen, diese Tools zu verwenden, um sicherzustellen, dass Ihre Inhal
 
 Wenn Es Themen gibt, die Sie vollständig aus den Themenerfahrungen ausschließen möchten, können Sie auch:
 
-- [Schließen Sie vertrauliche SharePoint von der Themenerkennung aus.](topic-experiences-discovery.md#select-sharepoint-topic-sources) Inhalte auf diesen Websites werden in der Themenerfahrung nicht angezeigt.
+- [Ausschließen vertraulicher SharePoint-Websites von der Themenerkennung](topic-experiences-discovery.md#select-sharepoint-topic-sources). Inhalte auf diesen Websites werden in der Themenerfahrung nicht angezeigt.
 
 - [Ausschließen von Themen nach Name](topic-experiences-discovery.md#exclude-topics-by-name). Themen, die explizit ausgeschlossen werden, werden in der Themenerfahrung nicht angezeigt.
 
