@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.assetid: e109077e-cc85-4c19-ae40-d218ac7d0548
 ms.custom:
 - seo-marvel-apr2020
-description: Der Administrator kann sich über die Optionen zum Konfigurieren des Nachrichtenflusses und -routings in Exchange Online Protection (EOP) informieren.
+description: Der Administrator kann sich über die Optionen zum Konfigurieren des Nachrichtenflusses und des Routings in Exchange Online Protection (EOP) informieren.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 7cd5bfcc95227c59f645422d4939ea6ff77bee1e
@@ -31,7 +31,7 @@ ms.locfileid: "51206364"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365-Organisationen mit Exchange Online-Postfächern oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer werden alle Nachrichten, die an Ihre Organisation gesendet werden, über EOP übergeben, bevor ihre Mitarbeiter sie sehen. Sie haben Optionen zum Routen von Nachrichten, die EOP zur Verarbeitung übergeben, bevor sie an Ihre Arbeitsboxen geroutet werden.
+In Microsoft 365 Organisationen mit Exchange Online Postfächern oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer werden alle Nachrichten, die an Ihre Organisation gesendet werden, über EOP übergeben, bevor die Mitarbeiter sie sehen. Sie haben Optionen zum Routen von Nachrichten, die EOP zur Verarbeitung übergeben, bevor sie an Ihre Arbeitsboxen geroutet werden.
 
 ## <a name="working-with-messages-and-message-access-options"></a>Arbeiten mit Nachrichten und Nachrichtenzugangsoptionen
 
@@ -41,7 +41,7 @@ EOP bietet Flexibilität bei der Routenführung Ihrer Nachrichten. In den folgen
 
 [View or Edit Managed Domains in EOP](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) beschreibt die Verwaltung von Domänen, die mit Ihrem EOP-Dienst verbunden sind.
 
-Wenn Sie Ihrer Organisation Unterdomänen hinzufügen, können Sie auch diese mit dem EOP-Dienst verwalten. Weitere Informationen zu Unterdomänen finden Sie unter Aktivieren des [Nachrichtenflusses für Unterdomänen in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains).
+Wenn Sie Ihrer Organisation Unterdomänen hinzufügen, können Sie auch diese mit dem EOP-Dienst verwalten. Weitere Informationen zu Unterdomänen finden Sie unter Aktivieren des [Nachrichtenflusses](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains)für Unterdomänen in Exchange Online .
 
 [Das Konfigurieren des Nachrichtenflusses mithilfe von Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) führt Connectors ein und zeigt, wie Sie sie zum Anpassen des E-Mail-Routings verwenden können. Dazu gehören Szenarien zur Gewährleistung sicherer Kommunikation mit einer Partnerorganisation sowie das Einrichten eines Smarthosts.
 

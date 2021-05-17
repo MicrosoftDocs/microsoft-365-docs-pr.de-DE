@@ -10,7 +10,7 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Administratoren können lernen, wie Sie Phishingangriffe simulieren und ihre Benutzer mithilfe von Attack Simulationsschulungen in Microsoft Defender für Office 365 zur Phishingprävention schulen.
+description: Administratoren können lernen, wie Sie Phishingangriffe simulieren und ihre Benutzer mithilfe von Attack simulation training in Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.openlocfilehash: 27279f927a15ea94ae84112ffdc23d88ea42d2ff
 ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
@@ -21,7 +21,7 @@ ms.locfileid: "51206224"
 ---
 # <a name="simulate-a-phishing-attack"></a>Simulieren eines Phishingangriffs
 
-Mit Dem Training zur Angriffssimulation in Microsoft Defender für Office 365 können Sie in Ihrer Organisation gutartige Cyberangriffssimulationen ausführen, um Ihre Sicherheitsrichtlinien und -methoden zu testen und Ihre Mitarbeiter zu schulen, um ihr Bewusstsein zu erhöhen und ihre Anfälligkeit für Angriffe zu verringern. In diesem Artikel werden Sie durch das Erstellen eines simulierten Phishingangriffs mithilfe von Training zur Angriffssimulation erläutert.
+Mit Dem Training zur Angriffssimulation in Microsoft Defender for Office 365 können Sie in Ihrer Organisation gutartige Cyberangriffssimulationen ausführen, um Ihre Sicherheitsrichtlinien und -methoden zu testen und Ihre Mitarbeiter zu schulen, um ihr Bewusstsein zu erhöhen und ihre Anfälligkeit für Angriffe zu verringern. In diesem Artikel werden Sie durch das Erstellen eines simulierten Phishingangriffs mithilfe von Training zur Angriffssimulation erläutert.
 
 Informationen zu den ersten Informationen zum Training zur Angriffssimulation finden Sie unter [Erste Schritte mit attack simulation training](attack-simulation-training-get-started.md).
 
@@ -47,7 +47,7 @@ Wählen Sie aus vier verschiedenen Techniken aus, die aus dem [MITRE ATT&CK® we
 > [!TIP]
 > Wenn Sie in **der Beschreibung der** einzelnen Techniken auf Details anzeigen klicken, werden weitere Informationen sowie die Simulationsschritte für die Technik angezeigt.
 >
-> ![Simulationsschritte für die Anmeldeinformationsernte im Microsoft 365 Security Center](../../media/attack-sim-preview-sim-steps.png)
+> ![Simulationsschritte für die Auslese von Anmeldeinformationen innerhalb von Angriffssimulationsschulungen in Microsoft 365 Security Center](../../media/attack-sim-preview-sim-steps.png)
 
 Nachdem Sie die Technik ausgewählt und auf **Weiter** geklickt haben, geben Sie Ihrer Simulation einen Namen und optional eine Beschreibung.
 
@@ -58,12 +58,12 @@ Als Nächstes müssen Sie entweder eine Nutzlast aus dem bereits vorhandenen Nut
 Nutzlasten verfügen über eine Reihe von Datenpunkten, die Ihnen bei der Auswahl helfen:
 
 - **Die Klickrate** zählt, wie viele Personen auf diese Nutzlast geklickt haben.
-- **Die vorhergesagte Kompromissrate** prognostizieren den Prozentsatz der Personen, die von dieser Nutzlast basierend auf historischen Daten für die Nutzlast in Microsoft Defender für Office 365-Kunden gefährdet werden.
+- **Die vorhergesagte** Kompromissrate prognostizieren den Prozentsatz der Personen, die von dieser Nutzlast basierend auf historischen Daten für die Nutzlast in Microsoft Defender für Office 365 werden.
 - **Gestartete Simulationen** zählen, wie oft diese Nutzlast in anderen Simulationen verwendet wurde.
 - **Die** Komplexität , die über **Filter** verfügbar ist, wird basierend auf der Anzahl der Indikatoren innerhalb der Nutzlast berechnet, in der der Hinweis darauf zielt, dass es sich um einen Angriff handelt. Weitere Indikatoren führen zu einer geringeren Komplexität.
 - **Source**, die über **Filter** verfügbar ist, gibt an, ob die Nutzlast in Ihrem Mandanten erstellt wurde oder Teil des bereits vorhandenen Nutzlastkatalogs von Microsoft (global) ist.
 
-![Ausgewählte Nutzlast im Training zur Angriffssimulation im Microsoft 365 Security Center](../../media/attack-sim-preview-select-payload.png)
+![Ausgewählte Nutzlast im Training zur Angriffssimulation in Microsoft 365 Security Center](../../media/attack-sim-preview-select-payload.png)
 
 Wählen Sie eine Nutzlast aus der Liste aus, um eine Vorschau der Nutzlast mit zusätzlichen Informationen dazu anzuzeigen.
 
@@ -76,7 +76,7 @@ Jetzt ist es an der Zeit, die Zielgruppe dieser Simulation auszuwählen. Sie kö
 Wenn Sie nur bestimmte Benutzer und Gruppen enthalten **möchten,** können Sie folgendes:
 
 - **Fügen Sie Benutzer** hinzu, mit denen Sie die Suche nach Ihrem Mandanten sowie erweiterte Such- und Filterfunktionen nutzen können, z. B. für Benutzer, die in den letzten 3 Monaten nicht auf eine Simulation ausgerichtet waren.
-  ![Benutzerfilterung in Angriffssimulationsschulungen im Microsoft 365 Security Center](../../media/attack-sim-preview-user-targeting.png)
+  ![Benutzerfilterung in Angriffssimulationsschulungen Microsoft 365 Security Center](../../media/attack-sim-preview-user-targeting.png)
 - **Mit dem Import** aus csv können Sie eine vordefinierte Gruppe von Benutzern für diese Simulation importieren.
 
 ## <a name="assigning-training"></a>Zuweisen von Schulungen
@@ -90,7 +90,7 @@ Wählen Sie **das Fälligkeitsdatum der** Schulung aus, um sicherzustellen, dass
 > [!NOTE]
 > Wenn Sie Kurse und Module selbst auswählen, können Sie weiterhin die empfohlenen Inhalte sowie alle verfügbaren Kurse und Module anzeigen.
 >
-> ![Hinzufügen empfohlener Schulungen in Angriffssimulationsschulungen im Microsoft 365 Security Center](../../media/attack-sim-preview-add-training.png)
+> ![Hinzufügen empfohlener Schulungen in Angriffssimulationsschulungen in Microsoft 365 Security Center](../../media/attack-sim-preview-add-training.png)
 
 In den nächsten Schritten müssen  Sie Schulungen hinzufügen, wenn Sie sich dafür entschieden haben, sie selbst auszuwählen, und Ihre Schulungslandeseite anpassen. Sie können eine Vorschau der Schulungslandeseite anzeigen und die Kopfzeile und den Textkörper ändern.
 

@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratoren erfahren, wie Sie die Antiphishingrichtlinien erstellen, ändern und löschen, die in Exchange Online Protection (EOP)-Organisationen mit oder ohne Exchange Online-Postfächer verfügbar sind.
+description: Administratoren können erfahren, wie Sie die Antiphishingrichtlinien erstellen, ändern und löschen, die in Exchange Online Protection (EOP)-Organisationen mit oder ohne Exchange Online verfügbar sind.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c277558bad32e1926030483d202b70ae3c910315
@@ -29,11 +29,11 @@ ms.locfileid: "51206211"
 **Gilt für**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer gibt es eine Standardmäßige Antiphishingrichtlinie, die eine begrenzte Anzahl von Antis spoofing-Features enthält, die standardmäßig aktiviert sind. Weitere Informationen finden Sie unter [Spoofeinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md#spoof-settings).
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer gibt es eine Standardmäßige Antiphishingrichtlinie, die eine begrenzte Anzahl von Antis spoofing-Features enthält, die standardmäßig aktiviert sind. Weitere Informationen finden Sie unter [Spoofeinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md#spoof-settings).
 
 Administratoren können die standardmäßige Antiphishingrichtlinie anzeigen, bearbeiten und konfigurieren (aber nicht löschen). Für eine höhere Granularität können Sie auch benutzerdefinierte Antiphishingrichtlinien erstellen, die für bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation gelten. Benutzerdefinierte Richtlinien haben immer Vorrang vor der standardmäßigen Richtlinie, die Priorität (Reihenfolge der Ausführung) Ihrer benutzerdefinierten Richtlinien können Sie jedoch ändern.
 
-Organisationen mit Exchange Online-Postfächern können Antiphishingrichtlinien im Security & Compliance Center oder in Exchange Online PowerShell konfigurieren. Eigenständige EOP-Organisationen können nur das Security & Compliance Center verwenden.
+Organisationen mit Exchange Online Postfächern können Antiphishingrichtlinien im Security & Compliance Center oder in Exchange Online PowerShell konfigurieren. Eigenständige EOP-Organisationen können nur das Security & Compliance Center verwenden.
 
 Informationen zum Erstellen und Ändern der erweiterten Antiphishingrichtlinien in Microsoft Defender für Office 365, die in Defender for Office 365 verfügbar sind, finden Sie unter [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
@@ -48,7 +48,7 @@ Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn 
 - Wenn Sie eine Antiphishingrichtlinie ändern, ändern Einstellungen im Zusammenhang mit name, priority, enabled oder disabled und Empfängerfiltern die Antiphishregel. Alle anderen Einstellungen ändern die zugeordnete Antiphishrichtlinie.
 - Wenn Sie eine Antiphishingrichtlinie entfernen, werden die Antiphishregel und die zugehörige Antiphishingrichtlinie entfernt.
 
-In Exchange Online PowerShell verwalten Sie die Richtlinie und die Regel separat. Weitere Informationen finden Sie im Abschnitt [Verwenden von Exchange Online PowerShell](#use-exchange-online-powershell-to-configure-anti-phishing-policies) zum Konfigurieren von Antiphishingrichtlinien weiter unten in diesem Artikel.
+In Exchange Online PowerShell verwalten Sie die Richtlinie und die Regel separat. Weitere Informationen finden Sie im Abschnitt [Verwenden Exchange Online PowerShell](#use-exchange-online-powershell-to-configure-anti-phishing-policies) zum Konfigurieren von Antiphishingrichtlinien weiter unten in diesem Artikel.
 
 Jede Organisation verfügt über eine integrierte Antiphishingrichtlinie namens Office365 AntiPhish Default mit den folgenden Eigenschaften:
 
@@ -75,10 +75,10 @@ Um die Effektivität des Antiphishingschutzes zu erhöhen, können Sie benutzerd
   **Hinweise**:
 
   - Durch Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
-  - Die **Rollengruppe "Nur-Ansichtsorganisationsverwaltung"** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) gewährt auch schreibgeschützten Zugriff auf das <sup>\*</sup> Feature.
+  - Die **Rollengruppe "Nur-Ansichtsorganisationsverwaltung"** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) bietet auch schreibgeschützten Zugriff auf das <sup>\*</sup> Feature.
   - <sup>\*</sup> Im Security & Compliance Center können Benutzer mit schreibgeschützten Zugriff die Einstellungen benutzerdefinierter Antiphishingrichtlinien anzeigen. Schreibgeschützte Benutzer können die Einstellungen in der Standardmäßigen Antiphishingrichtlinie nicht sehen.
 
-- Zum Erstellen und Ändern von Antiphishingrichtlinien in eigenständigem EOP müssen Sie etwas tun, das eine _Hydratation_ für Ihren Mandanten erfordert. Beispielsweise können Sie im Exchange Admin Center (EAC) zur Registerkarte Berechtigungen wechseln,  eine vorhandene Rollengruppe auswählen, auf Bearbeiten (Symbol bearbeiten) klicken und eine Rolle entfernen (die Sie schließlich wieder  ![ ](../../media/ITPro-EAC-EditIcon.png) hinzufügen). Wenn Ihr Mandant noch nie hydratisiert wurde, erhalten Sie ein Dialogfeld namens **"Organisationseinstellungen** aktualisieren" mit einer Statusleiste, die erfolgreich abgeschlossen werden sollte. Weitere Informationen zur Hydratation finden Sie im [Cmdlet Enable-OrganizationCustomization](/powershell/module/exchange/enable-organizationcustomization) (das nicht in der eigenständigen EOP PowerShell oder im Security & Compliance Center verfügbar ist).
+- Zum Erstellen und Ändern von Antiphishingrichtlinien in eigenständigem EOP müssen Sie etwas tun, das eine _Hydratation_ für Ihren Mandanten erfordert. Beispielsweise können Sie im Exchange Admin Center (EAC)  zur Registerkarte Berechtigungen wechseln, eine  vorhandene Rollengruppe auswählen, auf Bearbeiten (Symbol bearbeiten) klicken und eine Rolle entfernen (die Sie schließlich wieder ![ ](../../media/ITPro-EAC-EditIcon.png) hinzufügen). Wenn Ihr Mandant noch nie hydratisiert wurde, erhalten Sie ein Dialogfeld namens **Update Organization Einstellungen** mit einer Statusleiste, die erfolgreich abgeschlossen werden sollte. Weitere Informationen zur Hydratation finden Sie im [Cmdlet Enable-OrganizationCustomization](/powershell/module/exchange/enable-organizationcustomization) (das nicht in der eigenständigen EOP PowerShell oder im Security & Compliance Center verfügbar ist).
 
 - Unsere empfohlenen Einstellungen für Antiphishingrichtlinien finden Sie unter [EOP default anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-default-anti-phishing-policy-settings).
 
@@ -161,12 +161,12 @@ Verwenden Sie die folgenden Verfahren, um Antiphishingrichtlinien zu ändern: ei
 
 5. **Spoof**:  Klicken Sie auf Bearbeiten, um die Spoofintelligenz ein- oder auszuschalten, die Identifikation nicht authentifizierter Absender in Outlook ein- oder auszuschalten und die Aktion so zu konfigurieren, dass sie auf Nachrichten von blockierten spoofierten Absendern angewendet wird. Weitere Informationen finden Sie unter [Spoofeinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md#spoof-settings).
 
-   Beachten Sie, dass diese Einstellungen auch in Antiphishingrichtlinien in Defender for Office 365 verfügbar sind.
+   Beachten Sie, dass diese Einstellungen auch in Antiphishingrichtlinien in Defender for Office 365.
 
    - **Spoofing-Filtereinstellungen:** Der Standardwert ist **Ein**, und es wird empfohlen, ihn zu be lassen. Um es zu deaktivieren, verschieben Sie den Umschalter auf **Aus**. Weitere Informationen finden Sie unter [Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md).
 
      > [!NOTE]
-     > Sie müssen den Schutz vor Spoofing nicht deaktivieren, wenn Ihr #A0 nicht auf Microsoft 365 verweisen soll. Stattdessen aktivieren Sie erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
+     > Sie müssen den Schutz vor Spoofing nicht deaktivieren, wenn Ihr #A0 nicht auf Microsoft 365. Stattdessen aktivieren Sie erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
    - **Feature Nicht authentifizierter Absender aktivieren:** Der Standardwert ist **Ein**. Um es zu deaktivieren, verschieben Sie den Umschalter auf **Aus**.
 
@@ -273,7 +273,7 @@ Um die Priorität einer Richtlinie  zu ändern, klicken Sie **in** den Eigenscha
 
 Die Standardrichtlinie kann nicht entfernt werden.
 
-## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies"></a>Konfigurieren von Antiphishingrichtlinien mithilfe von Exchange Online PowerShell
+## <a name="use-exchange-online-powershell-to-configure-anti-phishing-policies"></a>Verwenden Exchange Online PowerShell zum Konfigurieren von Antiphishingrichtlinien
 
 Wie bereits beschrieben, besteht eine Antiphishingrichtlinie aus einer Antiphishrichtlinie und einer Antiphishregel.
 
@@ -284,7 +284,7 @@ In Exchange Online PowerShell ist der Unterschied zwischen Antiphishrichtlinien 
 - Wenn Sie eine Antiphishrichtlinie aus PowerShell entfernen, wird die entsprechende Antiphishregel nicht automatisch entfernt und umgekehrt.
 
 > [!NOTE]
-> Die folgenden PowerShell-Verfahren sind in eigenständigen EOP-Organisationen, die Exchange Online Protection PowerShell verwenden, nicht verfügbar.
+> Die folgenden PowerShell-Verfahren sind in eigenständigen EOP-Organisationen nicht verfügbar, die Exchange Online Protection PowerShell verwenden.
 
 ### <a name="use-powershell-to-create-anti-phishing-policies"></a>Erstellen von Antiphishingrichtlinien mithilfe von PowerShell
 
@@ -511,14 +511,14 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-An
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Wie können Sie feststellen, dass diese Verfahren erfolgreich waren?
 
-Gehen Sie wie folgt vor, um zu überprüfen, ob Sie Antiphishingrichtlinien in Microsoft Defender für Office 365 erfolgreich konfiguriert haben:
+Gehen Sie wie folgt vor, um zu überprüfen, ob Sie die Antiphishingrichtlinien in Microsoft Defender for Office 365 erfolgreich konfiguriert haben:
 
 - Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **Antiphishing**. Überprüfen Sie die Liste der Richtlinien, ihre **Statuswerte** und ihre **Priority-Werte.** Gehen Sie wie folgt vor, um weitere Details anzuzeigen:
 
   - Wählen Sie die Richtlinie aus der Liste aus, und zeigen Sie die Details im Flyout an.
   - Klicken **Sie auf Standardrichtlinie,** und zeigen Sie die Details im Flyout an.
 
-- Ersetzen Sie in Exchange Online PowerShell durch den Namen der Richtlinie oder Regel, führen Sie den folgenden Befehl aus, und überprüfen Sie \<Name\> die Einstellungen:
+- Ersetzen Exchange Online PowerShell durch den Namen der Richtlinie oder Regel, führen Sie den folgenden Befehl aus, und überprüfen Sie \<Name\> die Einstellungen:
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>"

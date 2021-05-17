@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können sich über die verschiedenen Arten von Empfängerobjekten im eigenständigen Exchange Online Protection (EOP) informieren.
+description: Administratoren können mehr über die verschiedenen Arten von Empfängerobjekten in eigenständigen Exchange Online Protection (EOP) erfahren.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 045146b0c8676398482e813d6986fd64dda3aa6d
@@ -29,7 +29,7 @@ ms.locfileid: "51204162"
 **Gilt für**
 -  [Exchange Online Protection eigenständig](exchange-online-protection-overview.md)
 
-Eigenständige Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer unterstützen die folgenden Empfängertypen:
+Eigenständige Exchange Online Protection (EOP)-Organisationen ohne Exchange Online unterstützen die folgenden Empfängertypen:
 
 - **E-Mail-Benutzer:** E-Mail-Benutzer sind der grundlegende Typ von Benutzerkonten in Ihrer eigenständigen EOP-Organisation. E-Mail-Benutzer haben Anmeldeinformationen in Ihrer EOP-Organisation, aber sie haben externe E-Mail-Adressen (ihre Postfächer befinden sich außerhalb Ihrer EOP-Organisation).
 

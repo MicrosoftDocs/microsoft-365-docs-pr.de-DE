@@ -39,13 +39,13 @@ Weitere Informationen zu Sicherheitseinstellungen und den von ihnen erzwungenen 
 
 Wenn Ihr Abonnement am oder nach dem 22. Oktober 2019 erstellt wurde, wurden Sicherheitseinstellungen möglicherweise automatisch aktiviert, damit Sie Ihre Einstellungen überprüfen können, um dies &mdash; zu bestätigen.
 
-So aktivieren Sie Sicherheitseinstellungen in Ihrem Azure Active Directory (Azure AD) oder überprüfen Sie, ob sie bereits aktiviert sind:
+So aktivieren Sie Sicherheitseinstellungen in Azure Active Directory (Azure AD) oder überprüfen Sie, ob sie bereits aktiviert sind:
 
-1. Melden Sie sich beim <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center</a> mit globalen Administratoranmeldeinformationen an.
+1. Melden Sie sich beim <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365 Admin Center mit</a> globalen Administratoranmeldeinformationen an.
 
-2. Wählen Sie im linken Bereich Alle anzeigen **aus,** und wählen Sie dann unter **Admin Center** **Azure Active Directory aus.**
+2. Wählen Sie im linken Bereich Alle anzeigen **aus,** und wählen Sie dann unter **Admin Center** die **Option Azure Active Directory** aus.
 
-3. Wählen Sie im linken Bereich des **Azure Active Directory Admin Center** Azure Active Directory **aus.**
+3. Wählen Sie im linken Bereich des **Azure Active Directory Admin Center** die Option **Azure Active Directory** aus.
 
 4. Wählen Sie im linken Menü des Dashboards im Abschnitt **Verwalten** die Option **Eigenschaften aus.**
 
@@ -71,7 +71,7 @@ Sicherheitseinstellungen sind für alle Kunden verfügbar, während für bedingt
 - Azure Active Directory Premium P1 oder P2
 - Microsoft 365 Business Premium
 - Microsoft 365 E3 oder E5
-- Enterprise Mobility & Security E3 oder E5
+- Enterprise Mobilität & Sicherheit E3 oder E5
 
 Wenn Sie bedingten Zugriff verwenden möchten, um Richtlinien zu konfigurieren, die den durch Sicherheitseinstellungen aktivierten Richtlinien entsprechen, lesen Sie die folgenden schrittweisen Anleitungen:
 
@@ -79,7 +79,7 @@ Wenn Sie bedingten Zugriff verwenden möchten, um Richtlinien zu konfigurieren, 
 - [MFA für die Azure-Verwaltung erforderlich](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
 - [Blockieren von Legacy-Authentifizierung](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
 - [MFA für alle Nutzer erforderlich](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
-- [Azure AD MFA-Registrierung erforderlich](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) – Erfordert Azure AD Identity Protection, das Teil von Azure Active Directory Premium P2 ist
+- [Azure AD MFA-Registrierung erforderlich](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) – Erfordert Azure AD Identity Protection, der Teil von Azure Active Directory Premium P2 ist
 
 Weitere Informationen zum bedingten Zugriff finden Sie unter [Was ist bedingter Zugriff?](/azure/active-directory/conditional-access/overview) Weitere Informationen zum Erstellen von Richtlinien für bedingten Zugriff finden Sie unter [Create a Conditional Access policy](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).
 

@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51199717"
 ---
-# <a name="advanced-hunting-using-python"></a>Erweiterte Suche mithilfe von Python
+# <a name="advanced-hunting-using-python"></a>Erweiterte Bedrohungssuche mit Python
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -158,4 +158,4 @@ outputFile.close()
 ## <a name="related-topic"></a>Verwandtes Thema
 - [Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 - [Erweiterte Suche-API](run-advanced-query-api.md)
-- [Erweiterte Suche mit PowerShell](run-advanced-query-sample-powershell.md)
+- [Erweiterte Bedrohungssuche mit PowerShell](run-advanced-query-sample-powershell.md)

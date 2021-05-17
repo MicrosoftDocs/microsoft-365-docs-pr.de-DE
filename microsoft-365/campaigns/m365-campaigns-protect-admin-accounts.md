@@ -40,7 +40,7 @@ Wenn Sie sich für Microsoft 365 registrieren und Ihre Informationen eingeben, w
 
 ## <a name="create-additional-admin-accounts"></a>Erstellen zusätzlicher Administratorkonten
 
-Verwenden Sie Administratorkonten nur für die Verwaltung. Administratoren sollten über ein separates Benutzerkonto für die regelmäßige Verwendung von Office-Apps verfügen und ihr Administratorkonto nur verwenden, wenn dies erforderlich ist, um Konten und Geräte zu verwalten und andere Administratorfunktionen zu verwenden. Es empfiehlt sich auch, die Microsoft 365-Lizenz aus den Administratorkonten zu entfernen, damit Sie nicht dafür bezahlen müssen.
+Verwenden Sie Administratorkonten nur für die Verwaltung. Administratoren sollten über ein separates Benutzerkonto für die regelmäßige Verwendung von Office-Apps verfügen und ihr Administratorkonto nur verwenden, wenn dies erforderlich ist, um Konten und Geräte zu verwalten, und während sie an anderen Administratorfunktionen arbeiten. Es ist auch eine gute Idee, die Microsoft 365 aus den Administratorkonten zu entfernen, damit Sie nicht dafür bezahlen müssen.
 
 Sie möchten mindestens ein zusätzliches globales Administratorkonto einrichten, um Administratoren Zugriff auf einen anderen vertrauenswürdigen Mitarbeiter zu geben. Sie können auch separate Administratorkonten für die Benutzerverwaltung erstellen (diese Rolle wird **als Benutzerverwaltungsadministrator bezeichnet).** Weitere Informationen finden Sie unter [Über Administratorrollen](/office365/admin/add-users/about-admin-roles).
 
@@ -57,7 +57,7 @@ So erstellen Sie zusätzliche Administratorkonten:
 
     ![Auswählen der Administratorrolle](../media/adminroles.png)
 
- 4. Verschieben Sie **im** Abschnitt Produktlizenzen den Selektor für **Microsoft 365 Business** auf **Aus** und den Benutzer ohne **Produktlizenz** erstellen auf **Ein**.
+ 4. Verschieben Sie **im** Abschnitt Produktlizenzen die Auswahl für **Microsoft 365 Business** auf **Aus** und die Option Benutzer ohne **Produktlizenz** erstellen auf **Ein**.
 
     ![Auswählen der Produktlizenz](../media/productlicense.png)
 
@@ -74,7 +74,7 @@ So erstellen Sie ein neues Benutzerkonto:
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">Admin Center,</a> und wählen Sie dann **Benutzer** \> **Aktive Benutzer** im linken Navigationsgerät aus.
 2. Wählen Sie **auf der** Seite Aktive Benutzer oben auf der  Seite Benutzer hinzufügen aus, und geben Sie im Bereich Neuer Benutzer den Namen und weitere Informationen ein. 
 3. Erweitern Sie den **Abschnitt Rollen,** und wählen **Sie Benutzer (kein Administratorzugriff) aus.**
-4. Verschieben Sie **im Abschnitt** Produktlizenzen die Auswahl für **Microsoft 365 Business** auf **Ein**.
+4. Verschieben Sie **im** Abschnitt Produktlizenzen die Auswahl für **Microsoft 365 Business** auf **Ein**.
 
 ## <a name="turn-on-security-defaults"></a>Aktivieren von Sicherheitseinstellungen
 

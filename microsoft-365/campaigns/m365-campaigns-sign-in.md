@@ -1,5 +1,5 @@
 ---
-title: Anmelden bei Microsoft 365
+title: Melden Sie sich bei Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -22,7 +22,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Melden Sie sich bei Microsoft 365 an. Schützen Sie Ihr Unternehmen, Ihre Praxis oder Kampagne vor Cybersicherheitsbedrohungen für E-Mails, Daten und Kommunikation.
+description: Melden Sie sich bei Microsoft 365. Schützen Sie Ihr Unternehmen, Ihre Praxis oder Kampagne vor Cybersicherheitsbedrohungen für E-Mails, Daten und Kommunikation.
 ms.openlocfilehash: eff81da84853130da2f2dcc0aaaf2a9834477a85
 ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
@@ -30,11 +30,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/27/2021
 ms.locfileid: "51398174"
 ---
-# <a name="sign-in-to-microsoft-365"></a>Anmelden bei Microsoft 365
+# <a name="sign-in-to-microsoft-365"></a>Melden Sie sich bei Microsoft 365
 
 ## <a name="for-business-or-campaign-admins"></a>Für Geschäfts- oder Kampagnenadministratoren
 
-Wenn Sie sich für Microsoft 365 angemeldet haben, sind Sie der Microsoft 365-Administrator. So melden Sie sich an:
+Wenn Sie sich für Microsoft 365 angemeldet haben, sind Sie der Microsoft 365 Administrator. So melden Sie sich an:
 
 1. Suchen Sie den Benutzernamen und das Kennwort, das wir an die E-Mail-Adresse gesendet haben, die Sie uns in Schritt 2 der Schritte [zur Anmeldung gegeben haben.](m365-campaigns-sign-up.md#steps-to-sign-up)
 2. Wechseln Sie im Browser zum Microsoft 365 Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> .

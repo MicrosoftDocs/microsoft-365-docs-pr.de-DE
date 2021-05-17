@@ -36,7 +36,7 @@ ms.locfileid: "51199390"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Auf dieser Seite wird beschrieben, wie Sie eine Azure Active Directory (Azure AD)-Anwendung erstellen, um im Auftrag Ihrer Kunden programmgesteuerten Zugriff auf Microsoft Defender for Endpoint zu erhalten.
+Auf dieser Seite wird beschrieben, wie Sie eine Azure Active Directory (Azure AD) erstellen, um im Auftrag Ihrer Kunden programmgesteuerten Zugriff auf Microsoft Defender for Endpoint zu erhalten.
 
 
 Microsoft Defender for Endpoint macht einen Großen Teil seiner Daten und Aktionen über eine Reihe programmgesteuerter APIs verfügbar. Diese APIs helfen Ihnen, Arbeitsabläufe zu automatisieren und Innovationen basierend auf Microsoft Defender for Endpoint-Funktionen zu entwickeln. Für den API-Zugriff ist die OAuth2.0-Authentifizierung erforderlich. Weitere Informationen finden Sie unter [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
@@ -53,7 +53,7 @@ In den folgenden Schritten erfahren Sie, wie Sie eine Azure AD-Anwendung erstell
 
 1. Melden Sie sich bei Ihrem [Azure-Mandanten](https://portal.azure.com) mit einem Benutzer mit **globaler Administratorrolle** an.
 
-2. Navigieren Sie zu **Azure Active Directory**  >  **App-Registrierungen** Neue  >  **Registrierung**. 
+2. Navigieren Sie zu **Azure Active Directory**  >  **App-Registrierungen**  >  **Neue Registrierung**. 
 
    ![Abbildung von Microsoft Azure und Navigation zur Anwendungsregistrierung](images/atp-azure-new-app2.png)
 
@@ -65,7 +65,7 @@ In den folgenden Schritten erfahren Sie, wie Sie eine Azure AD-Anwendung erstell
 
     - Umleitungs-URI - Typ: Web, URI: https://portal.azure.com
 
-    ![Abbildung der Registrierung von Microsoft Azure-Partneranwendung](images/atp-api-new-app-partner.png)
+    ![Abbildung der Microsoft Azure der Partneranwendung](images/atp-api-new-app-partner.png)
 
 
 4. Ermöglichen Sie Ihrer Anwendung den Zugriff auf Microsoft Defender for Endpoint, und weisen Sie sie mit den minimalen Berechtigungen zu, die zum Abschließen der Integration erforderlich sind.
@@ -169,7 +169,7 @@ return $token
 >Der folgende Code wurde mit Nuget Microsoft.IdentityModel.Clients.ActiveDirectory getestet.
 
 - Erstellen einer neuen Konsolenanwendung
-- Installieren von NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
+- Installieren NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/)
 - Fügen Sie die unten aufgeführten Mithilfe hinzu
 
     ```
@@ -248,5 +248,5 @@ Sie erhalten eine Antwort auf das Formular:
     ```
 
 ## <a name="see-also"></a>Siehe auch
-- [Unterstützte Microsoft Defender for Endpoint-APIs](exposed-apis-list.md)
+- [Unterstütze Microsoft Defender für Endpoint-APIs](exposed-apis-list.md)
 - [Zugreifen auf Microsoft Defender for Endpoint im Namen eines Benutzers](exposed-apis-create-app-nativeapp.md)

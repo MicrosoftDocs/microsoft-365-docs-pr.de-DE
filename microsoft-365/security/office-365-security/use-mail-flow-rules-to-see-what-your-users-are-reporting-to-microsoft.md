@@ -32,15 +32,15 @@ ms.locfileid: "51206098"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer gibt es mehrere Möglichkeiten für Benutzer, Nachrichten an Microsoft zur Analyse zu melden, wie unter Melden von Nachrichten und Dateien an [Microsoft beschrieben.](report-junk-email-messages-to-microsoft.md)
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer gibt es mehrere Möglichkeiten für Benutzer, Nachrichten zur Analyse an Microsoft zu melden, wie unter Melden von Nachrichten und Dateien an [Microsoft beschrieben.](report-junk-email-messages-to-microsoft.md)
 
 Sie können eine Nachrichtenflussregel (auch als Transportregel bezeichnet) erstellen, die nach Nachrichten sucht, die Benutzer an Microsoft melden, und Sie können Bcc-Empfänger für den Empfang von Kopien dieser gemeldeten Nachrichten konfigurieren.
 
-Sie können die Nachrichtenflussregel im Exchange Admin Center (EAC) und in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange #A0) erstellen.
+Sie können die Nachrichtenflussregel im Exchange Admin Center (EAC) und in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer) erstellen.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in Exchange Online oder Exchange Online Protection berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rolle **Transportregeln,** die standardmäßig den Rollengruppen **Organisationsverwaltung,** **Complianceverwaltung** (globale Administratoren) und **Datensatzverwaltung** zugewiesen ist.
+- Bevor Sie die Verfahren in diesem Artikel Exchange Online oder Exchange Online Protection können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rolle **Transportregeln,** die standardmäßig den Rollengruppen **Organisationsverwaltung,** **Complianceverwaltung** (globale Administratoren) und **Datensatzverwaltung** zugewiesen ist.
 
   Weitere Informationen finden Sie in den folgenden Themen:
 
@@ -48,11 +48,11 @@ Sie können die Nachrichtenflussregel im Exchange Admin Center (EAC) und in Powe
   - [Berechtigungen in EOP als eigenständige Lösung](feature-permissions-in-eop.md)
   - [Ändern der Liste der Mitglieder in Rollengruppen mithilfe der EAC](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- Informationen zum Öffnen der EAC in Exchange Online finden Sie unter [Exchange Admin Center in Exchange Online](/Exchange/exchange-admin-center). Informationen zum Öffnen der EAC im eigenständigen EOP finden Sie unter [Exchange Admin Center im eigenständigen EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
+- Informationen zum Öffnen der EAC in Exchange Online finden Sie [unter Exchange Admin Center in Exchange Online](/Exchange/exchange-admin-center). Informationen zum Öffnen der EAC im eigenständigen EOP finden Sie [unter Exchange Admin Center in eigenständigem EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Weitere Informationen zu Nachrichtenflussregeln in Exchange Online und eigenständigem EOP finden Sie in den folgenden Themen:
+- Weitere Informationen zu Nachrichtenflussregeln in Exchange Online eigenständigen EOP finden Sie in den folgenden Themen:
   - [Nachrichtenflussregeln (Transportregeln) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
   - [Nachrichtenflussregel-Bedingungen und -Ausnahmen (Prädikate) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
   - [Aktionen für Nachrichtenflussregeln in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)

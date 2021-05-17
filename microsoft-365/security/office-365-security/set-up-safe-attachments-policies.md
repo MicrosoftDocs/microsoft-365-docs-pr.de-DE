@@ -34,13 +34,13 @@ ms.locfileid: "51206504"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die über [Microsoft Defender für Office 365](whats-new-in-defender-for-office-365.md) verfügen. Wenn Sie ein Heimbenutzer sind, der Informationen zur Anlagenprüfung in Outlook sucht, lesen Sie [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Microsoft Defender für Office 365](whats-new-in-defender-for-office-365.md) verfügen. Wenn Sie ein Heimbenutzer sind, der Informationen zum Anlagenscannen in Outlook, finden Sie weitere Informationen unter [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Sichere Anlagen ist ein Feature in [Microsoft Defender für Office 365,](whats-new-in-defender-for-office-365.md) das eine virtuelle Umgebung verwendet, um Anlagen in eingehenden [E-Mail-Nachrichten](anti-malware-protection.md)zu überprüfen, nachdem sie vom Schutz vor Schadsoftware in Exchange Online Protection (EOP) überprüft wurden, jedoch vor der Zustellung an Empfänger. Weitere Informationen finden Sie unter [Sichere Anlagen in Microsoft Defender für Office 365](safe-attachments.md).
+Sichere Anlagen ist ein Feature in [Microsoft Defender für Office 365,](whats-new-in-defender-for-office-365.md) das eine virtuelle Umgebung verwendet, um Anlagen in eingehenden [E-Mail-Nachrichten](anti-malware-protection.md)zu überprüfen, nachdem sie vom Schutz vor Schadsoftware in Exchange Online Protection (EOP) überprüft wurden, jedoch vor der Zustellung an Empfänger. Weitere Informationen finden Sie unter [Safe Attachments in Microsoft Defender for Office 365](safe-attachments.md).
 
 Es gibt keine integrierte oder standardmäßige Richtlinie für sichere Anlagen. Um die Überprüfung sicherer Anlagen von E-Mail-Nachrichtenanlagen zu erhalten, müssen Sie eine oder mehrere Richtlinien für sichere Anlagen erstellen, wie in diesem Artikel beschrieben.
 
-Sie können Richtlinien für sichere Anlagen im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für berechtigte Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige eOP PowerShell für Organisationen ohne Exchange &, aber mit Defender for Office 365-Add-On-Abonnements) konfigurieren.
+Sie können Richtlinien für sichere Anlagen im Security & Compliance Center oder in PowerShell konfigurieren (Exchange Online PowerShell für berechtigte Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online-Postfächer, aber mit Defender für Office 365-Add-On-Abonnements).
 
 Die grundlegenden Elemente einer Richtlinie für sichere Anlagen sind:
 
@@ -53,10 +53,10 @@ Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn 
 - Wenn Sie eine Richtlinie für sichere Anlagen ändern, ändern Einstellungen im Zusammenhang mit dem Namen, der Priorität, aktiviert oder deaktiviert sowie Empfängerfilter die Regel für sichere Anlagen. Alle anderen Einstellungen ändern die zugeordnete Richtlinie für sichere Anlagen.
 - Wenn Sie eine Richtlinie für sichere Anlagen entfernen, werden die Regel für sichere Anlagen und die zugehörige Richtlinie für sichere Anlagen entfernt.
 
-In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten Sie die Richtlinie und die Regel getrennt. Weitere Informationen finden Sie im Abschnitt Verwenden von [Exchange Online PowerShell oder eigenständiger EOP PowerShell](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) zum Konfigurieren von Richtlinien für sichere Anlagen weiter unten in diesem Artikel.
+In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten Sie die Richtlinie und die Regel getrennt. Weitere Informationen finden Sie im Abschnitt Use [Exchange Online PowerShell or standalone EOP PowerShell to configure Safe Attachments policies](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies) weiter unten in diesem Artikel.
 
 > [!NOTE]
-> Im Bereich "Globale Einstellungen" der Einstellungen für sichere Anlagen konfigurieren Sie Features, die nicht von Richtlinien für sichere Anlagen abhängig sind. Anweisungen finden [Sie unter Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md) and Safe Documents in Microsoft [365 E5](safe-docs.md).
+> Im Bereich "Globale Einstellungen" der Einstellungen für sichere Anlagen konfigurieren Sie Features, die nicht von Richtlinien für sichere Anlagen abhängig sind. Anweisungen finden Sie unter Aktivieren sicherer Anlagen für [SharePoint, OneDrive](turn-on-mdo-for-spo-odb-and-teams.md) und Microsoft Teams und sichere [Dokumente in Microsoft 365 E5](safe-docs.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -65,10 +65,10 @@ In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden:
-  - Zum Erstellen, Ändern und Löschen von Richtlinien für sichere Anlagen müssen  Sie Mitglied der Rollengruppen Organisationsverwaltung oder Sicherheitsadministrator  im Security & Compliance **Center** und Mitglied der Rollengruppe Organisationsverwaltung in Exchange Online sein. 
+  - Zum Erstellen, Ändern und Löschen von Richtlinien für sichere  Anlagen müssen  Sie Mitglied der Rollengruppen Organisationsverwaltung oder Sicherheitsadministrator  im Security & Compliance **Center** und Mitglied der Rollengruppe Organisationsverwaltung in Exchange Online.
   - Für den schreibgeschützten Zugriff auf Richtlinien für sichere Anlagen müssen  Sie Mitglied der Rollengruppen **"Globaler** Leser" oder "Sicherheitsleser" im Security & Compliance Center sein.
 
-  Weitere Informationen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and Permissions in Exchange [Online](/exchange/permissions-exo/permissions-exo).
+  Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) und Berechtigungen in [Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   **Hinweise**:
 
@@ -95,7 +95,7 @@ Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Anlagen im Secu
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
-4. Konfigurieren Sie **auf** der angezeigten Seite Einstellungen die folgenden Einstellungen:
+4. Konfigurieren Sie **auf Einstellungen** angezeigten Seite die folgenden Einstellungen:
 
    - **Sichere Anlagen unbekannte Schadsoftwareantwort:** Wählen Sie einen der folgenden Werte aus:
 
@@ -209,7 +209,7 @@ Zum Ändern der Priorität einer Richtlinie verschieben Sie die Richtlinie in de
 
 3. Klicken Sie in den angezeigten Richtliniendetails auf Richtlinie **löschen,** und klicken Sie **dann** im angezeigten Warndialogfeld auf Ja.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies"></a>Konfigurieren von Richtlinien für sichere Anlagen mithilfe von Exchange Online PowerShell oder eigenständiger EOP PowerShell
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-attachments-policies"></a>Verwenden Exchange Online PowerShell oder eigenständiger EOP PowerShell zum Konfigurieren von Richtlinien für sichere Anlagen
 
 Wie bereits beschrieben, besteht eine Richtlinie für sichere Anlagen aus einer sicheren Anlagenrichtlinie und einer sicheren Anlagenregel.
 
@@ -445,7 +445,7 @@ Gehen Sie wie folgt vor, um zu überprüfen, ob Richtlinien für sichere Anlagen
 
 - Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **ATP Sichere Anlagen**. Überprüfen Sie die Liste der Richtlinien, ihre **Statuswerte** und ihre **Priority-Werte.** Um weitere Details anzuzeigen, wählen Sie die Richtlinie aus der Liste aus, und zeigen Sie die Details im Fly-Out an.
 
-- Ersetzen Sie in Exchange Online PowerShell oder Exchange Online Protection PowerShell durch den Namen der Richtlinie oder Regel, führen Sie den folgenden Befehl aus, und überprüfen Sie \<Name\> die Einstellungen:
+- Ersetzen Exchange Online PowerShell oder Exchange Online Protection PowerShell durch den Namen der Richtlinie oder Regel, führen Sie den folgenden Befehl aus, und überprüfen Sie \<Name\> die Einstellungen:
 
   ```PowerShell
   Get-SafeAttachmentPolicy -Identity "<Name>" | Format-List
@@ -455,4 +455,4 @@ Gehen Sie wie folgt vor, um zu überprüfen, ob Richtlinien für sichere Anlagen
   Get-SafeAttachmentRule -Identity "<Name>" | Format-List
   ```
 
-Überprüfen Sie die verfügbaren Defender for Office 365-Berichte, um zu überprüfen, ob nachrichtensichere Anlagen überprüft werden. Weitere Informationen finden Sie unter Anzeigen von Berichten [für Defender für Office 365](view-reports-for-mdo.md) und Verwenden von Explorer im Security & Compliance [Center](threat-explorer.md).
+Wenn Sie überprüfen möchten, ob Nachrichten von sicheren Anlagen überprüft werden, überprüfen Sie den verfügbaren Defender für Office 365 Berichte. Weitere Informationen finden Sie unter Anzeigen von [Berichten für Defender for Office 365](view-reports-for-mdo.md) und Verwenden von Explorer im Security & Compliance [Center](threat-explorer.md).

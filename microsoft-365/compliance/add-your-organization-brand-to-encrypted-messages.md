@@ -20,7 +20,7 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: Erfahren Sie, wie globale Office 365-Administratoren das Branding Ihrer Organisation auf verschlüsselte E-Mail-Nachrichten & Des Verschlüsselungsportals anwenden können.
+description: Erfahren Sie Office 365 globale Administratoren das Branding Ihrer Organisation auf verschlüsselte E-Mail-Nachrichten anwenden können, die & des Verschlüsselungsportals enthalten.
 ms.openlocfilehash: 2898e12ad00d11cd9eb2f3be5d817ef113607e79
 ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
@@ -28,7 +28,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/26/2021
 ms.locfileid: "51394713"
 ---
-# <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Hinzufügen der Marke Ihrer Organisation zu verschlüsselten Nachrichtenverschlüsselungsnachrichten in Microsoft 365 Business
+# <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Hinzufügen der Marke Ihrer Organisation zu ihren Microsoft 365 Nachrichtenverschlüsselung verschlüsselter Nachrichten
 
 Sie können Ihr Unternehmensbranding anwenden, um das Erscheinungsbild der E-Mail-Nachrichten Ihrer Organisation und des Verschlüsselungsportals anzupassen. Sie müssen globale Administratorberechtigungen auf Ihr Arbeits- oder Schulkonto anwenden, bevor Sie beginnen können. Nachdem Sie über diese Berechtigungen verfügen, verwenden Sie die cmdlets Get-OMEConfiguration und Set-OMEConfiguration Windows PowerShell, um diese Teile verschlüsselter E-Mail-Nachrichten anzupassen:
   
@@ -46,7 +46,7 @@ Sie können Ihr Unternehmensbranding anwenden, um das Erscheinungsbild der E-Mai
 
 Sie können auch jederzeit zum Standardaussehen und -verhalten zurückkehren.
 
-Wenn Sie mehr Kontrolle haben möchten, verwenden Sie die erweiterte Office 365-Nachrichtenverschlüsselung, um mehrere Vorlagen für verschlüsselte E-Mails zu erstellen, die aus Ihrer Organisation stammen. Verwenden Sie diese Vorlagen, um Teile der Endbenutzererfahrung zu steuern. Geben Sie beispielsweise an, ob Empfänger Google-, Yahoo- und Microsoft-Konten zum Anmelden beim Verschlüsselungsportal verwenden können. Verwenden Sie Vorlagen, um mehrere Verwendungsfälle zu erfüllen, z. B.:
+Wenn Sie mehr Kontrolle möchten, verwenden Sie Office 365 Advanced Message Encryption, um mehrere Vorlagen für verschlüsselte E-Mails zu erstellen, die aus Ihrer Organisation stammen. Verwenden Sie diese Vorlagen, um Teile der Endbenutzererfahrung zu steuern. Geben Sie beispielsweise an, ob Empfänger Google-, Yahoo- und Microsoft-Konten zum Anmelden beim Verschlüsselungsportal verwenden können. Verwenden Sie Vorlagen, um mehrere Verwendungsfälle zu erfüllen, z. B.:
 
 - Einzelne Abteilungen, z. B. Finance, Sales, und so weiter.
 
@@ -58,7 +58,7 @@ Wenn Sie mehr Kontrolle haben möchten, verwenden Sie die erweiterte Office 365-
 
 - Gibt an, ob E-Mails, die an externe Empfänger gesendet werden, nach einer bestimmten Anzahl von Tagen ablaufen sollen.
 
-Nachdem Sie die Vorlagen erstellt haben, können Sie sie mithilfe von Exchange-Nachrichtenflussregeln auf verschlüsselte E-Mails anwenden. Wenn Sie office 365 Advanced Message Encryption verwenden, können Sie alle E-Mails widerrufen, die Sie mit diesen Vorlagen gebrandet haben.
+Nachdem Sie die Vorlagen erstellt haben, können Sie sie mithilfe von E-Mail-Exchange auf verschlüsselte E-Mails anwenden. Wenn Sie Office 365 Advanced Message Encryption haben, können Sie alle E-Mails widerrufen, die Sie mit diesen Vorlagen gebrandet haben.
 
 ## <a name="work-with-ome-branding-templates"></a>Arbeiten mit OME-Brandingvorlagen
 
@@ -72,7 +72,7 @@ Sie können mehrere Features in einer Brandingvorlage ändern. Sie können die S
 
 Verwenden Windows PowerShell, um eine Brandingvorlage gleichzeitig zu ändern. Wenn Sie über erweiterte Nachrichtenverschlüsselung verfügen, können Sie auch benutzerdefinierte Vorlagen erstellen, ändern und entfernen.
 
-1. Starten Sie mithilfe eines Arbeits- oder Schulkontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, eine Windows PowerShell und stellen Sie eine Verbindung mit Exchange Online ein. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Starten Sie mithilfe eines Arbeits- oder Schulkontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, eine Windows PowerShell und stellen Sie eine Verbindung mit Exchange Online. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Verwenden Sie Set-OMEConfiguration cmdlet, wie unter [Set-OMEConfiguration](/powershell/module/exchange/Set-OMEConfiguration) beschrieben, oder verwenden Sie die folgende Grafik und Tabelle als Anleitung.
 
@@ -93,11 +93,11 @@ Verwenden Windows PowerShell, um eine Brandingvorlage gleichzeitig zu ändern. W
 
 ## <a name="create-an-ome-branding-template-advanced-message-encryption"></a>Erstellen einer OME-Brandingvorlage (Erweiterte Nachrichtenverschlüsselung)
 
-Wenn Sie office 365 Advanced Message Encryption verwenden, können Sie mit dem [Cmdlet New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) benutzerdefinierte Brandingvorlagen für Ihre Organisation erstellen. Nachdem Sie die Vorlage erstellt haben, ändern Sie die Vorlage mithilfe des cmdlets Set-OMEConfiguration, wie unter Ändern einer [OME-Brandingvorlage beschrieben.](#modify-an-ome-branding-template) Sie können mehrere Vorlagen erstellen.
+Wenn Sie Office 365 Advanced Message Encryption, können Sie mit dem [Cmdlet New-OMEConfiguration](/powershell/module/exchange/new-omeconfiguration) benutzerdefinierte Brandingvorlagen für Ihre Organisation erstellen. Nachdem Sie die Vorlage erstellt haben, ändern Sie die Vorlage mithilfe des cmdlets Set-OMEConfiguration, wie unter Ändern einer [OME-Brandingvorlage beschrieben.](#modify-an-ome-branding-template) Sie können mehrere Vorlagen erstellen.
 
 So erstellen Sie eine neue benutzerdefinierte Brandingvorlage:
 
-1. Starten Sie mithilfe eines Arbeits- oder Schulkontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, eine Windows PowerShell und stellen Sie eine Verbindung mit Exchange Online ein. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Starten Sie mithilfe eines Arbeits- oder Schulkontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, eine Windows PowerShell und stellen Sie eine Verbindung mit Exchange Online. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Verwenden Sie [das Cmdlet New-OMEConfiguration,](/powershell/module/exchange/new-omeconfiguration) um eine neue Vorlage zu erstellen.
 
@@ -115,7 +115,7 @@ So erstellen Sie eine neue benutzerdefinierte Brandingvorlage:
 
 Führen Sie die folgenden Schritte aus, um alle Änderungen aus der Standardvorlage, einschließlich Markenanpassungen, zu entfernen:
   
-1. Starten Sie mithilfe eines Arbeits- oder Schulkontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, eine Windows PowerShell und stellen Sie eine Verbindung mit Exchange Online ein. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Starten Sie mithilfe eines Arbeits- oder Schulkontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, eine Windows PowerShell und stellen Sie eine Verbindung mit Exchange Online. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Verwenden Sie **das Cmdlet Set-OMEConfiguration,** wie unter [Set-OMEConfiguration beschrieben.](/powershell/module/exchange/Set-OMEConfiguration) Wenn Sie die Markenanpassungen Ihrer Organisation aus den Werten Haftungsausschlusstext, EmailText und PortalText entfernen möchten, legen Sie den Wert auf eine leere `""` Zeichenfolge, . Legen Sie für alle Bildwerte, z. B. Logo, den Wert auf  `"$null"` .
 
@@ -135,7 +135,7 @@ Sie können brandingvorlagen, die Sie erstellt haben, nur entfernen oder lösche
 
 So entfernen Sie eine benutzerdefinierte Brandingvorlage:
   
-1. Starten Sie mithilfe eines Arbeits- oder Schulkontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, eine Windows PowerShell und stellen Sie eine Verbindung mit Exchange Online ein. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. Starten Sie mithilfe eines Arbeits- oder Schulkontos, das über globale Administratorberechtigungen in Ihrer Organisation verfügt, eine Windows PowerShell und stellen Sie eine Verbindung mit Exchange Online. Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Verwenden Sie **das Cmdlet Remove-OMEConfiguration** wie folgt:
 
@@ -151,23 +151,23 @@ So entfernen Sie eine benutzerdefinierte Brandingvorlage:
 
    Weitere Informationen finden Sie unter [Remove-OMEConfiguration](/powershell/module/exchange/remove-omeconfiguration).
 
-## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>Erstellen einer Exchange-Nachrichtenflussregel, mit der Ihr benutzerdefiniertes Branding auf verschlüsselte E-Mails angewendet wird
+## <a name="create-an-exchange-mail-flow-rule-that-applies-your-custom-branding-to-encrypted-emails"></a>Erstellen einer Exchange E-Mail-Flussregel, die Ihr benutzerdefiniertes Branding auf verschlüsselte E-Mails angewendet
 
-Nachdem Sie die Standardvorlage geändert oder neue Brandingvorlagen erstellt haben, können Sie Exchange-Nachrichtenflussregeln erstellen, um Ihr benutzerdefiniertes Branding basierend auf bestimmten Bedingungen anzuwenden. Eine solche Regel wird benutzerdefiniertes Branding in den folgenden Szenarien anwenden:
+Nachdem Sie die Standardvorlage geändert oder neue Brandingvorlagen erstellt haben, können Sie Exchange E-Mail-Flussregeln erstellen, um Ihr benutzerdefiniertes Branding basierend auf bestimmten Bedingungen anzuwenden. Eine solche Regel wird benutzerdefiniertes Branding in den folgenden Szenarien anwenden:
 
-- Wenn die E-Mail manuell vom Endbenutzer mithilfe von Outlook oder Outlook im Web verschlüsselt wurde, früher Outlook Web App
+- Wenn die E-Mail manuell vom Endbenutzer mithilfe von Outlook oder Outlook im Web verschlüsselt wurde, wurde Outlook Web App
 
-- Wenn die E-Mail automatisch von einer Exchange-Nachrichtenflussregel oder einer Richtlinie zur Verhinderung von Datenverlust verschlüsselt wurde
+- Wenn die E-Mail automatisch durch eine E-Mail Exchange oder Richtlinie zur Verhinderung von Datenverlust verschlüsselt wurde
 
-Informationen zum Erstellen einer Exchange-Nachrichtenflussregel mit Verschlüsselung finden Sie unter [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md).
+Informationen zum Erstellen einer Exchange- und Verschlüsselungsregel finden Sie unter [Define mail flow rules to encrypt email messages in Office 365](define-mail-flow-rules-to-encrypt-email.md).
 
-1. Melden Sie sich in einem Webbrowser mit einem Geschäfts- oder Schulkonto an, dem globale Administratorberechtigungen erteilt wurden, [bei Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
+1. Melden Sie sich in einem Webbrowser mit einem Arbeits- oder Schulkonto an, dem globale Administratorberechtigungen erteilt wurden, bei [Office 365](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser).
 
 2. Wählen Sie die **Kachel Admin** aus.
 
 3. Wählen Sie im Microsoft 365 Admin Center **Admin Centers** \> **Exchange** aus.
 
-4. Wechseln Sie in der EAC zu **Nachrichtenflussregeln,** \>  und wählen **Sie Neues** Symbol Neue Regel ![ erstellen ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **aus.** Weitere Informationen zur Verwendung der EAC finden Sie unter [Exchange Admin Center in Exchange Online](/exchange/exchange-admin-center).
+4. Wechseln Sie in der EAC zu **Nachrichtenflussregeln,** \>  und wählen **Sie Neues** Symbol Neue Regel ![ erstellen ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **aus.** Weitere Informationen zur Verwendung der EAC finden Sie [unter Exchange Admin Center in Exchange Online](/exchange/exchange-admin-center).
 
 5. Geben **Sie unter Name** einen Namen für die Regel ein, z. B. Branding für vertriebsabteilung.
 
@@ -179,9 +179,9 @@ Informationen zum Erstellen einer Exchange-Nachrichtenflussregel mit Verschlüss
 
 7. Wählen **Sie unter Gehen Sie wie folgt** vor, die Option **Nachrichtensicherheit ändern** \> **Benutzerdefiniertes Branding auf OME-Nachrichten anwenden aus.** Wählen Sie als Nächstes in der Dropdownliste eine Brandingvorlage aus.
 
-8. (Optional) Sie können die Nachrichtenflussregel so konfigurieren, dass Verschlüsselung und benutzerdefiniertes Branding angewendet werden. Wählen **Sie unter Gehen Sie wie folgt** vor, die Option **Nachrichtensicherheit ändern** aus, und wählen Sie dann Office **365-Nachrichtenverschlüsselung und Rechteschutz anwenden aus.** Wählen Sie in der Liste eine RMS-Vorlage aus, wählen Sie **Speichern** und dann **OK aus.**
+8. (Optional) Sie können die Nachrichtenflussregel so konfigurieren, dass Verschlüsselung und benutzerdefiniertes Branding angewendet werden. Wählen **Sie unter Gehen Sie wie folgt** vor, die Option **Nachrichtensicherheit** ändern aus, und wählen Sie dann **Anwenden Office 365-Nachrichtenverschlüsselung rechteschutz aus.** Wählen Sie in der Liste eine RMS-Vorlage aus, wählen Sie **Speichern** und dann **OK aus.**
   
-   Die Liste der Vorlagen enthält Standardvorlagen und -optionen sowie alle benutzerdefinierten Vorlagen, die Sie erstellen. Wenn die Liste leer ist, stellen Sie sicher, dass Sie die Office 365-Nachrichtenverschlüsselung mit den neuen Funktionen eingerichtet haben. Anweisungen finden Sie unter [Einrichten neuer Office 365-Nachrichtenverschlüsselungsfunktionen](set-up-new-message-encryption-capabilities.md). Informationen zu den Standardvorlagen finden Sie unter [Configuring and managing templates for Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). Weitere Informationen zur Option **Nicht** weiterleiten finden Sie unter [Do Not Forward option for emails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Informationen zur Option **nur** verschlüsseln finden Sie unter Encrypt Only option for [emails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+   Die Liste der Vorlagen enthält Standardvorlagen und -optionen sowie alle benutzerdefinierten Vorlagen, die Sie erstellen. Wenn die Liste leer ist, stellen Sie sicher, dass Sie Office 365-Nachrichtenverschlüsselung neuen Funktionen eingerichtet haben. Anweisungen finden Sie unter [Set up new Office 365-Nachrichtenverschlüsselung capabilities](set-up-new-message-encryption-capabilities.md). Informationen zu den Standardvorlagen finden Sie unter [Configuring and managing templates for Azure Information Protection](/information-protection/deploy-use/configure-policy-templates). Weitere Informationen zur Option **Nicht** weiterleiten finden Sie unter [Do Not Forward option for emails](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails). Informationen zur Option **nur** verschlüsseln finden Sie unter Encrypt Only option for [emails](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
    Wählen **Sie Aktion hinzufügen** aus, wenn Sie eine andere Aktion angeben möchten.
 

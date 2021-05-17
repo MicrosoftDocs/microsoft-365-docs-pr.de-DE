@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Dieser Artikel enthält Informationen zur Problembehandlung bei Problemen beim Senden von E-Mails an Posteingange in Microsoft 365 & bewährte Methoden für Massensendungen an Microsoft 365-Kunden.
+description: Dieser Artikel enthält Informationen zur Problembehandlung bei Problemen beim Senden von E-Mails an Posteingange in Microsoft 365 & bewährte Methoden für Massensendungen an Microsoft 365 Kunden.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c3017b0e7d0c583c9038f695f9f47010ff92c18a
@@ -34,11 +34,11 @@ ms.locfileid: "51206154"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 
-Dieser Artikel enthält Informationen zur Problembehandlung für Absender, die Probleme beim Versuch haben, E-Mails an Posteingange in Microsoft 365 zu senden, und bewährte Methoden für Massensendungen an Kunden.
+Dieser Artikel enthält Informationen zur Problembehandlung für Absender, die Probleme beim Senden von E-Mails an Posteingange in Microsoft 365 und bewährte Methoden für Massensendungen an Kunden haben.
 
 ## <a name="are-you-managing-your-ip-and-domains-sending-reputation"></a>Verwalten Sie die Sendezuverlässigkeit Ihrer IP-Adresse und Ihrer Domäne?
 
-EOP-Filtertechnologien bieten Antispamschutz für Microsoft 365 sowie andere Microsoft-Produkte wie Exchange Server. Wir nutzen auch SPF, DKIM und DMARC; E-Mail-Authentifizierungstechnologien, mit denen das Problem des Spoofings und Phishings durch Überprüfen, ob die Domäne, die die E-Mail sendet, dazu berechtigt ist, gelöst werden kann. EOP-Filter werden von einer Reihe von Faktoren der sendenden IP-Adresse, Domäne, Authentifizierung, Listengenauigkeit, Beschwerdehäufigkeit, Inhalte und mehr beeinflusst. Einer der wichtigsten Faktoren ist das Reduzieren der Absenderzuverlässigkeit und der Möglichkeit der E-Mail-Zustellung durch die Junk-E-Mail-Beschwerdehäufigkeit.
+EOP-Filtertechnologien sind so konzipiert, dass sie Antispamschutz für Microsoft 365 und andere Microsoft-Produkte wie z. B. Exchange Server. Wir nutzen auch SPF, DKIM und DMARC; E-Mail-Authentifizierungstechnologien, mit denen das Problem des Spoofings und Phishings durch Überprüfen, ob die Domäne, die die E-Mail sendet, dazu berechtigt ist, gelöst werden kann. EOP-Filter werden von einer Reihe von Faktoren der sendenden IP-Adresse, Domäne, Authentifizierung, Listengenauigkeit, Beschwerdehäufigkeit, Inhalte und mehr beeinflusst. Einer der wichtigsten Faktoren ist das Reduzieren der Absenderzuverlässigkeit und der Möglichkeit der E-Mail-Zustellung durch die Junk-E-Mail-Beschwerdehäufigkeit.
 
 ## <a name="are-you-sending-email-from-new-ip-addresses"></a>Senden Sie E-Mails von neuen IP-Adressen?
 
@@ -58,11 +58,11 @@ Wir akzeptieren möglicherweise keine E-Mail-Nachrichten von Absendern, für die
 - 10.0.0.0/8 (oder 10.0.0.0 - 10.255.255.255)
 - 172.16.0.0/11 (oder 172.16.0.0 - 172.31.255.255)
 
-## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Sie haben beim Senden von E-Mails an einen Benutzer in Office 365 einen Unzustellbarkeitsbericht (Unzustellbarkeitsbericht) erhalten.
+## <a name="you-received-a-non-delivery-report-ndr-when-sending-email-to-a-user-in-office-365"></a>Sie haben einen Unzustellbarkeitsbericht (Non-Delivery Report, Unzustellbarkeitsbericht) beim Senden von E-Mails an einen Benutzer in Office 365
 
 Einige Probleme bei der Übermittlung sind das Ergebnis der IP-Adresse des Absenders, die von Microsoft blockiert wird, oder weil das Benutzerkonto als gesperrter Absender aufgrund von vorherigen Spam-Aktivitäten identifiziert wird. Wenn Sie glauben, dass Sie den NDR irrtümlich erhalten haben, führen Sie zunächst alle Anweisungen in der NDR-Nachricht aus, um das Problem zu beheben.
 
-Weitere Informationen zu dem fehler, den Sie erhalten haben, finden Sie in der Liste der Fehlercodes unter [E-Mail-Unzustellungsberichte in Exchange Online](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
+Weitere Informationen zu dem fehler, den Sie erhalten haben, finden Sie in der Liste der Fehlercodes unter [E-Mail non-delivery reports in Exchange Online](/exchange/mail-flow-best-practices/non-delivery-reports-in-exchange-online/non-delivery-reports-in-exchange-online).
 
  Wenn Sie z. B. den folgenden Unndr erhalten, gibt er an, dass die sendende IP-Adresse von Microsoft blockiert wurde:
 
@@ -82,13 +82,13 @@ Wenn Sie einen Unzustellbarkeitsbericht von EOP erhalten, der angibt, dass Ihre 
 
 Sie haben einen NDR erhalten, da an der betreffenden IP-Adresse eine verdächtige Aktivität erfasst. Die IP-Adresse wurde vorübergehend beschränkt, solange sie weiter ausgewertet wird. Wenn der Verdacht durch Bewertung aufgelöst wird, wird diese Einschränkung in Kürze aufgehoben.
 
-## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Ich kann keine E-Mails von Absendern in Microsoft 365 empfangen
+## <a name="i-cant-receive-email-from-senders-in-microsoft-365"></a>Ich kann keine E-Mails von Absendern in Microsoft 365
 
- Damit Sie Nachrichten von unseren Benutzern empfangen können, muss Ihr Netzwerk Verbindungen von den IP-Adressen zulassen, die EOP in unseren Rechenzentren verwendet. Weitere Informationen finden Sie unter [Exchange Online Protection IP-Adressen](../../enterprise/urls-and-ip-address-ranges.md).
+ Damit Sie Nachrichten von unseren Benutzern empfangen können, muss Ihr Netzwerk Verbindungen von den IP-Adressen zulassen, die EOP in unseren Rechenzentren verwendet. Weitere Informationen finden Sie [unter Exchange Online Protection IP-Adressen](../../enterprise/urls-and-ip-address-ranges.md).
 
-## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Bewährte Methoden für Massen-E-Mails an Microsoft 365-Benutzer
+## <a name="best-practices-for-bulk-emailing-to-microsoft-365-users"></a>Bewährte Methoden für Massen-E-Mails an Microsoft 365 Benutzer
 
-Wenn Sie häufig Massen-E-Mail-Kampagnen an Microsoft 365-Benutzer durchführen und sicherstellen möchten, dass Ihre E-Mails sicher und zeitnah ankommen, folgen Sie den Tipps in diesem Abschnitt.
+Wenn Sie häufig Massen-E-Mail-Kampagnen an Microsoft 365 durchführen und sicherstellen möchten, dass Ihre E-Mails sicher und zeitnah eintreffen, folgen Sie den Tipps in diesem Abschnitt.
 
 ### <a name="ensure-that-the-from-name-reflects-who-is-sending-the-message"></a>Stellen Sie sicher, dass der Von-Name die Nachricht sendet.
 

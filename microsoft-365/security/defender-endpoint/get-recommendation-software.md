@@ -1,7 +1,7 @@
 ---
-title: Softwareempfehlungen erhalten
+title: Empfehlung nach Software erhalten
 description: Ruft eine Sicherheitsempfehlung im Zusammenhang mit einer bestimmten Software ab.
-keywords: apis, graph api, supported apis, get, security recommendation, security recommendation for software, threat and vulnerability management, threat and vulnerability management api
+keywords: apis, graph api, supported apis, get, security recommendation, security recommendation for software, Bedrohungs- und Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -21,7 +21,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51199501"
 ---
-# <a name="get-recommendation-by-software"></a>Softwareempfehlungen erhalten
+# <a name="get-recommendation-by-software"></a>Empfehlung nach Software erhalten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

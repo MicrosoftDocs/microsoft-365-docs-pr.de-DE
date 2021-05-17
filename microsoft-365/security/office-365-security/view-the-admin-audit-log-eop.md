@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
 ms.assetid: 003d7a74-3e16-4453-ae0c-9dbae51f66d1
-description: Administratoren erfahren, wie Sie das Administrator-Überwachungsprotokoll im eigenständigen Exchange Online Protection (EOP) anzeigen und durchsuchen.
+description: Administratoren erfahren, wie Sie das Administrator-Überwachungsprotokoll in eigenständigen Exchange Online Protection (EOP) anzeigen und durchsuchen.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 5ed1d1eb121c06e6f5727e8782ba1d8bc8d23a99
@@ -42,13 +42,13 @@ Das Administrator-Überwachungsprotokoll zeichnet bestimmte Aktionen basierend a
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Informationen zum Öffnen des Exchange Admin Centers finden Sie unter [Exchange Admin Center im eigenständigen EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
+- Informationen zum Öffnen Exchange Admin Center finden Sie [unter Exchange Admin Center im eigenständigen EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
 - Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in Exchange Online Protection die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie  die Rolle Überwachungsprotokolle oder **Nur-Ansicht-Überwachungsprotokolle,** die  standardmäßig den Rollengruppen Organisationsverwaltung, Complianceverwaltung und Sicherheitsadministrator zugewiesen sind.  Weitere Informationen finden Sie unter [Permissions in standalone EOP](feature-permissions-in-eop.md) und [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Bevor Sie die Verfahren in diesem Artikel Exchange Online Protection, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie  die Rolle Überwachungsprotokolle oder **Nur-Ansicht-Überwachungsprotokolle,** die  standardmäßig den Rollengruppen Organisationsverwaltung, Complianceverwaltung und Sicherheitsadministrator zugewiesen sind.  Weitere Informationen finden Sie unter [Permissions in standalone EOP](feature-permissions-in-eop.md) und [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Informationen zu Tastenkombinationen, die für die Verfahren in diesem Artikel gelten können, finden Sie unter [Tastenkombinationen für](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)das Exchange Admin Center in Exchange Online .
+- Informationen zu Tastenkombinationen, die für die Verfahren in diesem Artikel gelten können, finden Sie unter Tastenkombinationen für das [Exchange Admin Center in Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)-Forum um Hilfe.

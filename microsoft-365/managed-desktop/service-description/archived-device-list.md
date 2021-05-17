@@ -1,5 +1,5 @@
 ---
-title: Archivierte Microsoft Managed Desktop-Geräte
+title: Microsoft Managed Desktop archivierter Geräte
 description: Geräte, die sich dem Ausruhen nähern, die Sie noch registrieren können, aber eine verkürzte Supportlaufzeit haben
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
@@ -18,9 +18,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51218736"
 ---
-# <a name="microsoft-managed-desktop-archived-devices"></a>Archivierte Microsoft Managed Desktop-Geräte
+# <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Managed Desktop archivierter Geräte
 
-Um eine optimale Benutzererfahrung zu gewährleisten, stellt Microsoft Managed Desktop die Unterstützung für Geräte an einem bestimmten Punkt zurück. In diesem Artikel werden Geräte aufgeführt, die in den nächsten Jahren vor dem Aus stehen, die wir als "archiviert" bezeichnen. Wenn Sie mit Microsoft Managed Desktop beginnen, indem Sie bereits installierte Geräte verwenden, sollten Sie diese Liste sorgfältig überprüfen.
+Um eine optimale Benutzererfahrung zu gewährleisten, Microsoft Managed Desktop die Unterstützung für Geräte an einem bestimmten Punkt zurück. In diesem Artikel werden Geräte aufgeführt, die in den nächsten Jahren vor dem Aus stehen, die wir als "archiviert" bezeichnen. Wenn Sie mit der Microsoft Managed Desktop bereits vorhandenen Geräten beginnen, sollten Sie diese Liste sorgfältig überprüfen.
 
 >[!IMPORTANT]
 >Sie können diese Geräte noch heute registrieren, aber sie haben eine kürzere Lebensdauer mit Microsoft Managed Desktop. Wenn Sie neue Geräte kaufen, sollten Sie Modelle aus der Liste der [aktiven Geräte verwenden.](./device-list.md)
@@ -32,9 +32,9 @@ Um in Microsoft Managed Desktop registriert zu werden, muss ein Gerät eines der
 
 
 >[!NOTE]
->In dieser Tabelle ist das "Ruhedatum" das Datum, an dem dieses Modell von Microsoft Managed Desktop überhaupt nicht mehr unterstützt wird. An diesem Datum werden alle registrierten Geräte dieses Modells aus Microsoft Managed Desktop entfernt, unabhängig davon, wann sie registriert wurden.
+>In dieser Tabelle ist das "Ruhedatum" das Datum, an dem dieses Modell nicht mehr von der Microsoft Managed Desktop unterstützt wird. An diesem Datum werden alle registrierten Geräte dieses Modells aus Microsoft Managed Desktop entfernt, unabhängig davon, wann sie registriert wurden.
 
-#### <a name="microsoft-managed-desktop-archived-devices"></a>Archivierte Microsoft Managed Desktop-Geräte
+#### <a name="microsoft-managed-desktop-archived-devices"></a>Microsoft Managed Desktop archivierter Geräte
 
 | Modell  | Mindestspezifikationen  | Zusätzliche Anforderungen   | Fälligkeitsdatum |
 |---------|---------|---------|---------|
@@ -76,9 +76,9 @@ Um in Microsoft Managed Desktop registriert zu werden, muss ein Gerät eines der
 
 Darüber hinaus muss das Gerät auch:
 
-- Verfügen Sie über ein von Microsoft Managed Desktop genehmigtes Bild. Wenn Sie Geräte bestellen, stellen Sie sicher, dass sie mit Microsoft Managed Desktop verwendet werden.
-- Die Windows-Erstlauferfahrung wurde noch nicht abgeschlossen.
-- Registrieren bei Microsoft Managed Desktop mithilfe des [Geräteregistrierungsfeatures](../get-started/register-devices-self.md)
+- Ein Bild muss von der Microsoft Managed Desktop. Wenn Sie Geräte bestellen, stellen Sie sicher, dass sie mit der Microsoft Managed Desktop.
+- Die erste Ausführungserfahrung Windows noch nicht abgeschlossen.
+- Registrieren mit Microsoft Managed Desktop geräteregistrierungsfeature [](../get-started/register-devices-self.md)
 
 #### <a name="more-help"></a>Weitere Hilfe
 

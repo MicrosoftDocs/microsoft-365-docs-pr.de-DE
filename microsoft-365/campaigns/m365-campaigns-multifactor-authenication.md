@@ -37,8 +37,8 @@ Die mehrstufige Authentifizierung bietet mehr Sicherheit für Ihr Unternehmen. N
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-Weitere Informationen finden [Sie unter Einrichten der mehrstufigen Authentifizierung in Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+Weitere Informationen finden Sie [unter Einrichten der mehrstufigen Authentifizierung in Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
 ## <a name="use-the-outlook-app-in-your-devices"></a>Verwenden der Outlook-App auf Ihren Geräten
 
-Nachdem Ihr Administrator MFA verwendet haben und Sie eine Authentisierungs-App als zweite Form der Authentifizierung eingerichtet haben, wird empfohlen, die Outlook-App zu installieren und nur für den Zugriff auf Ihre Microsoft 365-E-Mails zu verwenden. Informationen [zum Installieren von Office-Apps,](../business/set-up-mobile-devices.md) einschließlich Outlook, auf Ihrem Smartphone finden Sie unter Einrichten mobiler Geräte.
+Nachdem Ihr Administrator die Verwendung von MFA erfordert hat und Sie eine Authentisierungs-App als zweite Form der Authentifizierung eingerichtet haben, wird empfohlen, die Outlook-App zu installieren und nur für den Zugriff auf Ihre Microsoft 365 zu verwenden. Unter [Einrichten mobiler Geräte](../business/set-up-mobile-devices.md) finden Sie Informationen zum Installieren Office Apps, einschließlich Outlook, auf Ihrem Smartphone.

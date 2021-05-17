@@ -13,7 +13,7 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Das neue Vorhersagecodierungsmodul in Advanced eDiscovery verwendet maschinelles Lernen, um Dokumente in einem Überprüfungssatz auf Vorhersage zu analysieren, welche Dokumente für Ihren Fall oder Ihre Untersuchung relevant sind.
+description: Das neue Vorhersagecodierungsmodul in Advanced eDiscovery verwendet maschinelles Lernen, um Dokumente in einem Überprüfungssatz zu analysieren, der voraussagend festgelegt ist, welche Dokumente für Ihren Fall oder Ihre Untersuchung relevant sind.
 ms.openlocfilehash: 6a3f3b502dfe9efedc785ac3b246f60f13466dcb
 ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "51382960"
 ---
 # <a name="predictive-coding-module-for-advanced-ediscovery-preview"></a>Vorhersagecodierungsmodul für Advanced eDiscovery (Vorschau)
 
-Mithilfe des neuen Vorhersagecodierungsmoduls in Advanced eDiscovery können Sie ein Modell erstellen und erstellen, um die Überprüfung von Dokumenten beginnend mit den relevantesten Dokumenten zu priorisieren. Zu Beginn können Sie ein Modell erstellen, bis zu 50 Dokumente beschriften und dann Dokumente nach Modellvorhersageergebnissen filtern, um relevante nicht relevante Dokumente zu überprüfen.
+Mithilfe des neuen Vorhersagecodierungsmoduls in Advanced eDiscovery Können Sie ein Modell erstellen und erstellen, um die Überprüfung von Dokumenten beginnend mit den relevantesten Dokumenten zu priorisieren. Zu Beginn können Sie ein Modell erstellen, bis zu 50 Dokumente beschriften und dann Dokumente nach Modellvorhersageergebnissen filtern, um relevante nicht relevante Dokumente zu überprüfen.
 
 Hier finden Sie eine kurze Übersicht über den Workflow:
 
@@ -42,7 +42,7 @@ Hier finden Sie eine kurze Übersicht über den Workflow:
 4. Wenden Sie **den Vorhersagebewertungsfilter** für Ihr Modell auf den Überprüfungssatz an. Gehen Sie hierfür folgendermaßen vor:
 
    1. Klicken Sie im Überprüfungssatz auf **Filter**.
-   2. Erweitern Sie **auf** der Seite Filterflyout den  Abschnitt **Analytics/ML,** und aktivieren Sie dann das Kontrollkästchen Vorhersageergebnis für das Modell, das Sie anwenden möchten.
+   2. Erweitern Sie **auf** der Seite Filterflyout den Abschnitt **Analytics/ML,** und aktivieren Sie dann das Kontrollkästchen Vorhersageergebnis für das Modell, das Sie anwenden möchten. 
    3. Geben Sie **im Filter Prognoseergebnis** eine Vorhersageergebnis an. Der Filter zeigt die Dokumente im Überprüfungssatz an, die mit der Vorhersagebewertung übereinstimmen.
 
       ![Angeben eines Vorhersageergebniss zum Filtern von Dokumenten](..\media\PredictiveCoding4.png)

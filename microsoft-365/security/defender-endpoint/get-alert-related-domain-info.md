@@ -1,5 +1,5 @@
 ---
-title: Informationen zu Benachrichtigungsdomänen
+title: Erhalten von Informationen zu Benachrichtigungen zu Domänen
 description: Rufen Sie alle Domänen im Zusammenhang mit einer bestimmten Warnung mithilfe von Microsoft Defender for Endpoint ab.
 keywords: apis, graph api, supported apis, get alert information, alert information, related domain
 search.product: eADQiWindows 10XVcnh

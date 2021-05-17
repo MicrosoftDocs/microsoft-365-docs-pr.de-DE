@@ -39,12 +39,12 @@ Dieser Artikel richtet sich an Personen, die eine Kennwortablaufrichtlinie für 
 
 Sie müssen ein globaler [Administrator oder Kennwortadministrator sein,](about-admin-roles.md) um diese Schritte ausführen zu können.
 
-Ein globaler Administrator für einen Microsoft-Clouddienst kann mithilfe der [Azure Active Directory PowerShell für Graph](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) festlegen, dass Kennwörter für bestimmte Benutzer nicht ablaufen. Sie können [](/powershell/module/Azuread) auch AzureAD-Cmdlets verwenden, um die nie abgelaufene Konfiguration zu entfernen oder um zu sehen, welche Benutzerkennwörter auf nie ablaufen festgelegt sind.
+Ein globaler Administrator für einen Microsoft-Clouddienst kann mithilfe der [Azure Active Directory PowerShell für](/powershell/azure/active-directory/install-adv2?view=azureadps-2.0) Graph festlegen, dass Kennwörter für bestimmte Benutzer nicht ablaufen. Sie können [](/powershell/module/Azuread) auch AzureAD-Cmdlets verwenden, um die nie abgelaufene Konfiguration zu entfernen oder um zu sehen, welche Benutzerkennwörter auf nie ablaufen festgelegt sind.
 
-Dieses Handbuch gilt für andere Anbieter, z. B. Intune und Microsoft 365, die auch für Identitäts- und Verzeichnisdienste azure AD verwenden. Kennwortablauf ist der einzige Teil der Richtlinie, der geändert werden kann.
+Dieses Handbuch gilt für andere Anbieter, z. B. Intune und Microsoft 365, die auch für Identitäts- und Verzeichnisdienste auf Azure AD angewiesen sind. Kennwortablauf ist der einzige Teil der Richtlinie, der geändert werden kann.
 
 > [!NOTE]
-> Nur Kennwörter für Benutzerkonten, die nicht über die Verzeichnissynchronisierung synchronisiert werden, können so konfiguriert werden, dass sie nicht ablaufen. Weitere Informationen zur Verzeichnissynchronisierung finden Sie unter [Connect AD with Azure AD](/azure/active-directory/connect/active-directory-aadconnect).
+> Nur Kennwörter für Benutzerkonten, die nicht über die Verzeichnissynchronisierung synchronisiert werden, können so konfiguriert werden, dass sie nicht ablaufen. Weitere Informationen zur Verzeichnissynchronisierung finden Sie [unter Verbinden AD with Azure AD](/azure/active-directory/connect/active-directory-aadconnect).
 
 ## <a name="how-to-check-the-expiration-policy-for-a-password"></a>Überprüfen der Ablaufrichtlinie für ein Kennwort
 

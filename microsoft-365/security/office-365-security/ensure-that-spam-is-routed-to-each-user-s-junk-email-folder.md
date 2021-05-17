@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: 0cbaccf8-4afc-47e3-a36d-a84598a55fb8
 ms.collection:
 - M365-security-compliance
-description: Administratoren erfahren, wie Sie Spam an Junk-E-Mail-Ordner von Benutzern in einer Exchange Online Protection-Hybridumgebung weiterrouten.
+description: Administratoren können erfahren, wie Sie Spam an Junk-E-Mail-Ordner von Benutzern in einer Exchange Online Protection weiterrouten.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -33,7 +33,7 @@ ms.locfileid: "51205519"
 -  [Exchange Online Protection eigenständig](exchange-online-protection-overview.md)
 
 > [!IMPORTANT]
-> Dieses Thema gilt nur für eigenständige EOP-Kunden in Hybridumgebungen. Dieses Thema gilt nicht für Microsoft 365-Kunden mit Exchange Online-Postfächern.
+> Dieses Thema gilt nur für eigenständige EOP-Kunden in Hybridumgebungen. Dieses Thema gilt nicht für Microsoft 365 Kunden mit Exchange Online Postfächern.
 
 Wenn Sie ein eigenständiger Exchange Online Protection (EOP)-Kunde in einer Hybridumgebung sind, müssen Sie Ihre lokale Exchange-Organisation so konfigurieren, dass die Spamfilterungsbewertungen von EOP erkannt und übersetzt werden, damit die Junk-E-Mail-Regel im lokalen Postfach Nachrichten in den Junk-E-Mail-Ordner verschieben kann.
 
@@ -47,24 +47,24 @@ Insbesondere müssen Sie Nachrichtenflussregeln (auch als Transportregeln bekann
 
 Weitere Informationen zu diesen Headerwerten finden Sie unter [Antispamnachrichtenkopfzeilen](anti-spam-message-headers.md).
 
-In diesem Thema wird beschrieben, wie Sie diese Nachrichtenflussregeln im Exchange Admin Center (EAC) und in der Exchange-Verwaltungsshell (Exchange PowerShell) in der lokalen Exchange-Organisation erstellen.
+In diesem Thema wird beschrieben, wie Sie diese Nachrichtenflussregeln im Exchange Admin Center (EAC) und in der Exchange Management Shell (Exchange PowerShell) in der lokalen Exchange erstellen.
 
 > [!TIP]
 > Anstatt die Nachrichten an den Junk-E-Mail-Ordner des lokalen Benutzers zu senden, können Sie Antispamrichtlinien in EOP konfigurieren, um Spamnachrichten in EOP zu isolieren. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Bevor Sie diese Verfahren tun können, müssen Ihnen in der lokalen Exchange-Umgebung berechtigungen zugewiesen werden. Insbesondere muss Ihnen die Rolle **Transportregeln** zugewiesen werden, die standardmäßig den Rollen **Organisationsverwaltung,** **Complianceverwaltung** und **Datensatzverwaltung** zugewiesen ist. Weitere Informationen finden Sie unter [Hinzufügen von Mitgliedern zu einer Rollengruppe](/Exchange/permissions/role-group-members#add-members-to-a-role-group).
+- Bevor Sie diese Verfahren tun können, müssen Ihnen in der lokalen Umgebung Exchange zugewiesene Berechtigungen zugewiesen werden. Insbesondere muss Ihnen die Rolle **Transportregeln** zugewiesen werden, die standardmäßig den Rollen **Organisationsverwaltung,** **Complianceverwaltung** und **Datensatzverwaltung** zugewiesen ist. Weitere Informationen finden Sie unter [Hinzufügen von Mitgliedern zu einer Rollengruppe](/Exchange/permissions/role-group-members#add-members-to-a-role-group).
 
-- Ob und wann eine Nachricht an den Junk-E-Mail-Ordner in einer lokalen Exchange-Organisation übermittelt wird, wird durch eine Kombination der folgenden Einstellungen gesteuert:
+- Wenn und wann eine Nachricht an den Junk-E-Mail-Ordner in einer lokalen Exchange wird die Organisation durch eine Kombination der folgenden Einstellungen gesteuert:
 
-  - Der _SCLJunkThreshold-Parameterwert_ im [Cmdlet Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) in der Exchange-Verwaltungsshell. Der Standardwert ist 4, was bedeutet, dass eine SCL von 5 oder höher die Nachricht an den Junk-E-Mail-Ordner des Benutzers senden sollte.
+  - Der _SCLJunkThreshold-Parameterwert_ im [Cmdlet Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig) in der Exchange Verwaltungsshell. Der Standardwert ist 4, was bedeutet, dass eine SCL von 5 oder höher die Nachricht an den Junk-E-Mail-Ordner des Benutzers senden sollte.
 
-  - Der _SCLJunkThreshold-Parameterwert_ im [Cmdlet Set-Mailbox](/powershell/module/exchange/set-mailbox) in der Exchange-Verwaltungsshell. Der Standardwert ist leer ($null), was bedeutet, dass die Organisationseinstellung verwendet wird.
+  - Der _SCLJunkThreshold-Parameterwert_ im [Cmdlet Set-Mailbox](/powershell/module/exchange/set-mailbox) in der Exchange Verwaltungsshell. Der Standardwert ist leer ($null), was bedeutet, dass die Organisationseinstellung verwendet wird.
 
-  Weitere Informationen finden Sie unter [Exchange Spam Confidence Level (SCL) thresholds](/Exchange/antispam-and-antimalware/antispam-protection/scl).
+  Weitere Informationen finden Sie [unter Exchange (Spam Confidence Level, SCL)-Schwellenwerte](/Exchange/antispam-and-antimalware/antispam-protection/scl).
 
-  - Gibt an, ob die Junk-E-Mail-Regel für das Postfach aktiviert ist (der Wert des Parameters _Enabled_ $true im [Cmdlet Set-MailboxJunkEmailConfiguration](/powershell/module/exchange/set-mailboxjunkemailconfiguration) in der Exchange-Verwaltungsshell). Es ist die Junk-E-Mail-Regel, die die Nachricht nach der Zustellung in den Junk-E-Mail-Ordner verschiebt. Standardmäßig ist die Junk-E-Mail-Regel für Postfächer aktiviert. Weitere Informationen finden Sie unter [Configure Exchange antispam settings on mailboxes](/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
+  - Gibt an, ob die Junk-E-Mail-Regel für das Postfach aktiviert ist (der Wert des Parameters _Enabled_ $true im [Cmdlet Set-MailboxJunkEmailConfiguration](/powershell/module/exchange/set-mailboxjunkemailconfiguration) in der Exchange Verwaltungsshell). Es ist die Junk-E-Mail-Regel, die die Nachricht nach der Zustellung in den Junk-E-Mail-Ordner verschiebt. Standardmäßig ist die Junk-E-Mail-Regel für Postfächer aktiviert. Weitere Informationen finden Sie unter [Configure Exchange antispam settings on mailboxes](/Exchange/antispam-and-antimalware/antispam-protection/configure-antispam-settings).
 
 - Informationen zum Öffnen der EAC auf einem Exchange Server finden Sie unter [Exchange Admin Center in Exchange Server](/Exchange/architecture/client-access/exchange-admin-center). Informationen zum Öffnen der Exchange-Verwaltungsshell finden Sie unter [Öffnen der Exchange-Verwaltungsshell](/powershell/exchange/open-the-exchange-management-shell).
 
@@ -140,7 +140,7 @@ Gehen Sie wie folgt vor, um zu überprüfen, ob Sie die eigenständige EOP erfol
 
 - Wechseln Sie in der EAC zu **Nachrichtenflussregeln,** wählen Sie die Regel aus, und klicken Sie dann auf Bearbeiten (Symbol bearbeiten), \> um die Einstellungen  ![ zu ](../../media/ITPro-EAC-EditIcon.png) überprüfen.
 
-- Ersetzen Sie in der Exchange-Verwaltungsshell durch den Namen der Nachrichtenflussregel, und geben Sie den folgenden Befehl zurück, um \<RuleName\> die Einstellungen zu überprüfen:
+- Ersetzen Sie Exchange Verwaltungsshell durch den Namen der Nachrichtenflussregel, und rul den folgenden Befehl, um \<RuleName\> die Einstellungen zu überprüfen:
 
   ```powershell
   Get-TransportRule -Identity "<RuleName>" | Format-List

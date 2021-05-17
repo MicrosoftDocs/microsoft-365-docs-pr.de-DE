@@ -37,10 +37,10 @@ ms.locfileid: "51206421"
 
 [Der Bedrohungs-Explorer](threat-explorer.md) (und der Bericht über Echtzeiterkennungen) ist ein leistungsfähiges, nahezu echtzeitnahes Tool, mit dem Sicherheitsteams Bedrohungen im Security & Compliance Center untersuchen und darauf reagieren können. Explorer (und der Bericht über Echtzeiterkennungen) zeigt Informationen zu mutmaßlicher Schadsoftware und Phishing in E-Mails und Dateien in Office 365 sowie andere Sicherheitsbedrohungen und Risiken für Ihre Organisation an.
 
-- Wenn Sie [Über Microsoft Defender für Office 365](defender-for-office-365.md) Plan 2 verfügen, haben Sie Explorer.
-- Wenn Sie über Microsoft Defender für Office 365 Plan 1 verfügen, verfügen Sie über Echtzeiterkennungen.
+- Wenn Sie [Microsoft Defender für Office 365](defender-for-office-365.md) Plan 2 haben, haben Sie Explorer.
+- Wenn Sie Microsoft Defender für Office 365 Plan 1 haben, verfügen Sie über Echtzeiterkennungen.
 
-Wenn Sie Explorer (oder den Bericht über Echtzeiterkennungen) zum ersten Mal öffnen, zeigt die Standardansicht E-Mail-Schadsoftwareerkennungen für die letzten 7 Tage an. Dieser Bericht kann auch Microsoft Defender für Office 365-Erkennungen anzeigen, z. B. bösartige URLs, die von sicheren Links erkannt [werden,](safe-links.md)und schädliche Dateien, die von sicheren [Anlagen erkannt werden.](safe-attachments.md) Dieser Bericht kann so geändert werden, dass Daten für die letzten 30 Tage angezeigt werden (mit einem kostenpflichtigen Microsoft Defender for Office 365 P2-Abonnement). Testabonnements enthalten nur Daten für die letzten sieben Tage.
+Wenn Sie Explorer (oder den Bericht über Echtzeiterkennungen) zum ersten Mal öffnen, zeigt die Standardansicht E-Mail-Schadsoftwareerkennungen für die letzten 7 Tage an. Dieser Bericht kann auch Microsoft Defender für Office 365 anzeigen, z. B. bösartige URLs, die von sicheren Links erkannt [werden,](safe-links.md)und schädliche Dateien, die von sicheren Anlagen [erkannt werden.](safe-attachments.md) Dieser Bericht kann so geändert werden, dass Daten für die letzten 30 Tage angezeigt werden (mit einem kostenpflichtigen Microsoft Defender for Office 365 P2-Abonnement). Testabonnements enthalten nur Daten für die letzten sieben Tage.
 
 ****
 
@@ -48,7 +48,7 @@ Wenn Sie Explorer (oder den Bericht über Echtzeiterkennungen) zum ersten Mal ö
 |---|---|---|
 |Microsoft Defender für Office 365 P1-Testversion|Echtzeiterkennungen|7 |
 |Microsoft Defender für Office 365 P1 kostenpflichtig|Echtzeiterkennungen|30|
-|Microsoft Defender für Office 365 P1 kostenpflichtige Tests Defender für Office 365 P2-Testversion|Sicherheitsrisiken-Explorer|7 |
+|Microsoft Defender for Office 365 P1 paid testing Defender for Office 365 P2 trial|Sicherheitsrisiken-Explorer|7 |
 |Microsoft Defender für Office 365 P2-Testversion|Sicherheitsrisiken-Explorer|7 |
 |Microsoft Defender für Office 365 P2 kostenpflichtig|Sicherheitsrisiken-Explorer|30|
 |
@@ -131,7 +131,7 @@ Zeigen Sie unterhalb des Diagramms weitere Details zu bestimmten E-Mail-Nachrich
 
 ## <a name="content--malware"></a>Inhalt > Schadsoftware
 
-Um diesen Bericht anzuzeigen, wählen Sie im Explorer (oder In-Echtzeit-Erkennungen) Die Option **Inhalt Schadsoftware** \>  \> **anzeigen aus.** Diese Ansicht zeigt Dateien, die von [Microsoft Defender für Office 365 in SharePoint Online, OneDrive for Business](mdo-for-spo-odb-and-teams.md)und Microsoft Teams als schädlich identifiziert wurden.
+Um diesen Bericht anzuzeigen, wählen Sie im Explorer (oder In-Echtzeit-Erkennungen) Die Option **Inhalt Schadsoftware** \>  \> **anzeigen aus.** Diese Ansicht zeigt Dateien, die von [Microsoft Defender for Office 365 in SharePoint Online, OneDrive for Business und Microsoft Teams.](mdo-for-spo-odb-and-teams.md)
 
 Anzeigen von Informationen nach Schadsoftwarefamilie, Erkennungstechnologie (wie die Schadsoftware erkannt wurde) und Arbeitsauslastung (OneDrive, SharePoint oder Teams).
 
@@ -147,7 +147,7 @@ Mit Explorer (und Echtzeiterkennungen) können Sie einen Filter mit einem Klick 
 
 Wenn Sie in diesem Diagramm auf **ATP-Detonation** klicken, wird eine Ansicht wie die folgende angezeigt:
 
-![Explorer gefiltert, um nur Defender for Office 365 Detonation Ergebnisse anzeigen](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
+![Explorer so gefiltert, dass nur Defender für Office 365 Detonationsergebnisse angezeigt wird](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
 In dieser Ansicht sehen wir uns nun Daten für Dateien an, die von sicheren Anlagen [detoniert wurden.](safe-attachments.md) Unterhalb des Diagramms sehen wir Details zu bestimmten E-Mail-Nachrichten mit Anlagen, die von sicheren Anlagen erkannt wurden.
 

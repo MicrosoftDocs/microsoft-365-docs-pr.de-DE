@@ -1,5 +1,5 @@
 ---
-title: Dienste für Nichtkunden, die E-Mails an Microsoft 365 senden
+title: Dienste für Nichtkunden, die E-Mails an Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -24,12 +24,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51206514"
 ---
-# <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Dienste für Nichtkunden, die E-Mails an Microsoft 365 senden
+# <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Dienste für Nichtkunden, die E-Mails an Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-E-Mail-Missbrauch, Junk-E-Mails und betrügerische E-Mails (Phishing) belasten weiterhin das gesamte E-Mail-Ökosystem. Um das Vertrauen der Benutzer in die Verwendung von E-Mails zu erhalten, hat Microsoft verschiedene Richtlinien und Technologien zum Schutz unserer Benutzer entwickelt. Allerdings weiß Microsoft, dass seriösen E-Mails nicht negativ beeinträchtigt werden sollten. Aus diesem Grund haben wir eine Reihe von Diensten eingerichtet, mit deren Hilfe Absender ihre Fähigkeit verbessern können, E-Mails an Microsoft 365-Benutzer zu senden, indem sie ihre Sendere reputation proaktiv verwalten.
+E-Mail-Missbrauch, Junk-E-Mails und betrügerische E-Mails (Phishing) belasten weiterhin das gesamte E-Mail-Ökosystem. Um das Vertrauen der Benutzer in die Verwendung von E-Mails zu erhalten, hat Microsoft verschiedene Richtlinien und Technologien zum Schutz unserer Benutzer entwickelt. Allerdings weiß Microsoft, dass seriösen E-Mails nicht negativ beeinträchtigt werden sollten. Aus diesem Grund haben wir eine Reihe von Diensten eingerichtet, mit deren Hilfe Absender ihre Fähigkeit verbessern können, E-Mails an Microsoft 365 Benutzer zu senden, indem sie ihre Absenderre reputation proaktiv verwalten.
 
 Diese Übersicht enthält Informationen zu Vorteilen, die wir Ihrer Organisation bieten, auch wenn Sie kein Kunde sind.
 
@@ -47,13 +47,13 @@ Diese Übersicht enthält Informationen zu Vorteilen, die wir Ihrer Organisation
 
 ## <a name="microsoft-support"></a>Microsoft-Support
 
-Microsoft bietet mehrere Supportoptionen für Personen, die Probleme beim Senden von E-Mails an Microsoft 365-Empfänger haben. Wir empfehlen, dass Sie wie folgt vorgehen:
+Microsoft bietet verschiedene Supportoptionen für Personen, die Probleme beim Senden von E-Mails Microsoft 365 haben. Wir empfehlen, dass Sie wie folgt vorgehen:
 
 - Folgen Sie den Anweisungen in allen Unzustellbarkeitsberichten, die Sie erhalten.
 
 - Sehen Sie sich die am häufigsten auftretenden Probleme an, die für Nicht-Kunden in [Problembehandlung für E-Mail-Nachrichten, die an Office 365 gesendet werden](troubleshooting-mail-sent-to-office-365.md) auftreten.
 
-- Verwenden Sie [das Microsoft 365-Listendelist-Portal,](https://sender.office.com) um eine Anforderung zu senden, damit Ihre IP aus der Liste blockierter Absender entfernt wird.
+- Verwenden Sie [das Microsoft 365,](https://sender.office.com) um eine Anforderung zum Entfernen Ihrer IP aus der Liste des blockierten Absenders zu senden.
 
 - Lesen Sie die [Microsoft-Communityforen](https://community.office365.com/f/).
 
@@ -63,7 +63,7 @@ Microsoft bietet mehrere Supportoptionen für Personen, die Probleme beim Senden
 
 ## <a name="anti-spam-ip-delist-portal"></a>Antispam-IP-Listenportal
 
-Dies ist ein Self-Service-Portal, mit dem Sie sich selbst aus der Liste blockierter Absender von Microsoft 365 entfernen können. Verwenden Sie dieses Portal, wenn Sie eine Fehlermeldung erhalten, wenn Sie versuchen, eine E-Mail an einen Empfänger zu senden, dessen E-Mail-Adresse sich in Microsoft 365 befindet und Sie nicht denken, dass Sie dies sein sollten. Weitere Informationen finden Sie unter [Verwenden des Listenentfernungsportals, um sich selbst aus der Liste der blockierten Absender zu entfernen](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Dies ist ein Self-Service-Portal, mit dem Sie sich selbst aus der Liste blockierter Microsoft 365 entfernen können. Verwenden Sie dieses Portal, wenn Sie eine Fehlermeldung erhalten, wenn Sie versuchen, eine E-Mail an einen Empfänger zu senden, dessen E-Mail-Adresse sich in Microsoft 365 befindet und Sie nicht denken, dass Sie dies sein sollten. Weitere Informationen finden Sie unter [Verwenden des Listenentfernungsportals, um sich selbst aus der Liste der blockierten Absender zu entfernen](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Missbrauchs- und Spammeldung für Junk-E-Mails aus Exchange Online
 

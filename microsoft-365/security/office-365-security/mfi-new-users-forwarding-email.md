@@ -106,7 +106,7 @@ Wenn Sie eine Zeile aus  der Tabelle auswählen, wird ein Details-Flyout mit den
 - **Details**
 - **Count**
 - **Anfangstermin**
-- **Empfehlung**: Klicken Sie hier auf den Link, um den Benutzer im Microsoft 365 Admin Center zu verwalten.
+- **Empfehlung**: Klicken Sie hier auf den Link, um den Benutzer im Microsoft 365 verwalten.
 
 ![Details flyout aus der Detailtabelle der Ansicht Neue Weiterleitungsbenutzer im Bericht Weiterleitungsänderungen](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 

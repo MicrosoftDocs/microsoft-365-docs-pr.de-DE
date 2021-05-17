@@ -17,7 +17,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können sich über Spoof Intelligence in Exchange Online Protection (EOP) informieren, wo Sie bestimmte gefälschte Absender zulassen oder blockieren können.
+description: Administratoren können mehr über spoof intelligence in Exchange Online Protection (EOP) erfahren, wo Sie bestimmte gefälschte Absender zulassen oder blockieren können.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c13c080829236b9a27b6a1a82e1c27256749b5c2
@@ -36,7 +36,7 @@ ms.locfileid: "51204234"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer werden eingehende E-Mail-Nachrichten ab Oktober 2018 automatisch vor Spoofing durch EOP geschützt. EOP verwendet Spoof Intelligence als Teil der allgemeinen Verteidigung Ihrer Organisation gegen Phishing. Weitere Informationen finden Sie unter Schutz vor [Spoofing in EOP](anti-spoofing-protection.md).
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer werden eingehende E-Mail-Nachrichten ab Oktober 2018 automatisch vor Spoofing durch EOP geschützt. EOP verwendet Spoof Intelligence als Teil der allgemeinen Verteidigung Ihrer Organisation gegen Phishing. Weitere Informationen finden Sie unter Schutz vor [Spoofing in EOP](anti-spoofing-protection.md).
 
 Wenn ein Absender eine E-Mail-Adresse spooft, scheint er ein Benutzer in einer der Domänen Ihrer Organisation oder ein Benutzer in einer externen Domäne zu sein, die E-Mails an Ihre Organisation sendet. Angreifer, die Absender zum Senden von Spam- oder Phishing-E-Mails spoofen, müssen blockiert werden. Es gibt jedoch Szenarien, in denen legitime Absender Spoofing verwenden. Beispiel:
 
@@ -54,7 +54,7 @@ Wenn ein Absender eine E-Mail-Adresse spooft, scheint er ein Benutzer in einer d
 
 Spoof Intelligence, insbesondere die standardmäßige (und nur) Spoof Intelligence-Richtlinie, trägt dazu bei, sicherzustellen, dass die gefälschten E-Mails, die von legitimen Absendern gesendet werden, nicht in EOP-Spamfilter oder externe E-Mail-Systeme versenkt werden, während Ihre Benutzer vor Spam- oder Phishingangriffen geschützt werden.
 
-Sie können Spoof Intelligence im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange &) verwalten.
+Sie können Spoof Intelligence im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer) verwalten.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -78,7 +78,7 @@ Sie können Spoof Intelligence im Security & Compliance Center oder in PowerShel
 ## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>Verwenden des Security & Compliance Center zum Verwalten gefälschter Absender
 
 > [!NOTE]
-> Wenn Sie über ein Microsoft 365 Enterprise E5-Abonnement verfügen oder ein Microsoft Defender for Office 365-Add-On separat erworben haben, können Sie auch Absender verwalten, die Ihre Domäne spoofen, über den [Spoof](walkthrough-spoof-intelligence-insight.md)Intelligence-Einblick.
+> Wenn Sie über ein Microsoft 365 Enterprise E5-Abonnement verfügen oder ein Microsoft Defender für Office 365-Add-On separat erworben haben, können Sie auch Absender verwalten, die Ihre Domäne spoofieren, über die [Spoof Intelligence-Einsicht](walkthrough-spoof-intelligence-insight.md).
 
 1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
 
@@ -181,7 +181,7 @@ Sie können Einstellungen für spoof intelligence in der Standardmäßigen Antip
 
 - [Konfigurieren von Antiphishingrichtlinien in EOP](configure-anti-phishing-policies-eop.md).
 
-- [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md).
+- [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365.](configure-atp-anti-phishing-policies.md)
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Wie können Sie feststellen, dass diese Verfahren erfolgreich waren?
 
@@ -209,7 +209,7 @@ Verwenden Sie einen der folgenden Schritte, um zu überprüfen, ob Sie spoof int
   - Wählen Sie eine Richtlinie aus der Liste aus. Überprüfen Sie im angezeigten Flyout die Werte im **Abschnitt Spoof.**
   - Klicken Sie **auf Standardrichtlinie**. Überprüfen Sie im angezeigten Flyout die Werte im **Abschnitt Spoof.**
 
-- Ersetzen Sie in Exchange Online PowerShell durch Office365 AntiPhish Default oder den Namen einer benutzerdefinierten Richtlinie, und führen Sie den folgenden Befehl aus, um die \<Name\> Einstellungen zu überprüfen:
+- Ersetzen Exchange Online PowerShell durch \<Name\> Office365 AntiPhish Default oder den Namen einer benutzerdefinierten Richtlinie, und führen Sie den folgenden Befehl aus, um die Einstellungen zu überprüfen:
 
   ```PowerShell
   Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableSpoofIntelligence,EnableUnauthenticatedSender,AuthenticationFailAction
@@ -225,4 +225,4 @@ Sind Sie sorgfältig beim Thema Spoofing und Phishingschutz. Hier finden Sie ver
 
 - Überprüfen Sie Die Konfiguration von "DomainKeys Identified Mail" (DKIM). Sie sollten DKIM zusätzlich zu SPF und DMARC verwenden, um zu verhindern, dass Angreifer Nachrichten senden, die so aussehen, als würden sie von Ihrer Domäne kommen. Mit DKIM können Sie E-Mail-Nachrichten in der Kopfzeile der Nachricht eine digitale Signatur hinzufügen. Weitere Informationen finden Sie unter [Use DKIM to validate outbound email sent from your custom domain in Office 365](use-dkim-to-validate-outbound-email.md).
 
-- Überprüfen Sie Die Domänenbasierte Nachrichtenauthentifizierung, -berichterstellung und -konformität (DMARC). Die Implementierung von DMARC zusammen mit SPF und DKIM bietet zusätzlichen Schutz vor Spoofing- und Phishing-E-Mails. DMARC unterstützt die E-Mail-Systeme der Empfänger bei der Behandlung von Nachrichten, die von Ihrer Domäne gesendet wurden, jedoch die SPF- oder DKIM-Prüfungen nicht bestanden haben. Weitere Informationen finden Sie unter [Verwenden von DMARC zum Überprüfen von E-Mails in Office 365](use-dmarc-to-validate-email.md).
+- Überprüfen Sie Die Domänenbasierte Nachrichtenauthentifizierung, -berichterstellung und -konformität (DMARC). Die Implementierung von DMARC zusammen mit SPF und DKIM bietet zusätzlichen Schutz vor Spoofing- und Phishing-E-Mails. DMARC unterstützt die E-Mail-Systeme der Empfänger bei der Behandlung von Nachrichten, die von Ihrer Domäne gesendet wurden, jedoch die SPF- oder DKIM-Prüfungen nicht bestanden haben. Weitere Informationen finden Sie unter [Use DMARC to validate email in Office 365](use-dmarc-to-validate-email.md).

@@ -26,7 +26,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51206774"
 ---
-# <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>Exemplarische Vorgehensweise – Einblick in Spoof Intelligence in Microsoft Defender for Office 365
+# <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>Exemplarische Vorgehensweise – Einblick in spoof intelligence in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51206774"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365-Organisationen mit Defender für Office 365 können Sie mithilfe der Spoof Intelligence-Einsicht schnell ermitteln, welche externen Absender Ihnen legitimerweise nicht authentifizierte E-Mails senden (Nachrichten von Domänen, die SPF-, DKIM- oder DMARC-Prüfungen nicht bestehen).
+In Microsoft 365 Organisationen mit Defender für Office 365 können Sie mithilfe der Einblicke in spoof intelligence schnell ermitteln, welche externen Absender Ihnen legitimerweise nicht authentifizierte E-Mails senden (Nachrichten von Domänen, die keine SPF-, DKIM- oder DMARC-Prüfungen bestehen).
 
 Indem Sie bekannten externen Absendern das Senden gefälschter Nachrichten von bekannten Speicherorten erlauben, können Sie falsch positive Ergebnisse reduzieren (gute E-Mails sind als schlecht gekennzeichnet). Durch die Überwachung der zugelassenen gefälschten Absender bieten Sie eine zusätzliche Sicherheitsebene, um zu verhindern, dass unsichere Nachrichten in Ihrer Organisation ankommen.
 

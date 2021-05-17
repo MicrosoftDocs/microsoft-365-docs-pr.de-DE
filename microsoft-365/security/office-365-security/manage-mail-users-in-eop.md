@@ -28,7 +28,7 @@ ms.locfileid: "51203987"
 **Gilt für**
 -  [Exchange Online Protection eigenständig](exchange-online-protection-overview.md)
 
-In eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer sind E-Mail-Benutzer der grundlegende Typ des Benutzerkontos. Ein E-Mail-Benutzer verfügt über Kontoanmeldeinformationen in Ihrer eigenständigen EOP-Organisation und kann auf Ressourcen zugreifen (berechtigungen zugewiesen haben). Die E-Mail-Adresse eines E-Mail-Benutzers ist extern (z. B. in Ihrer lokalen E-Mail-Umgebung).
+In eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online sind E-Mail-Benutzer der grundlegende Typ des Benutzerkontos. Ein E-Mail-Benutzer verfügt über Kontoanmeldeinformationen in Ihrer eigenständigen EOP-Organisation und kann auf Ressourcen zugreifen (berechtigungen zugewiesen haben). Die E-Mail-Adresse eines E-Mail-Benutzers ist extern (z. B. in Ihrer lokalen E-Mail-Umgebung).
 
 > [!NOTE]
 > Wenn Sie einen E-Mail-Benutzer erstellen, ist das entsprechende Benutzerkonto im Microsoft 365 Admin Center verfügbar. Wenn Sie ein Benutzerkonto im Microsoft 365 Admin Center erstellen, können Sie dieses Konto nicht zum Erstellen eines E-Mail-Benutzers verwenden.
@@ -39,26 +39,26 @@ Für eigenständige EOP-Organisationen mit einer kleinen Anzahl von Benutzern k�
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Informationen zum Öffnen des Exchange Admin Center (EAC) finden Sie unter [Exchange Admin Center im eigenständigen EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
+- Informationen zum Öffnen Exchange Admin Center (EAC) finden Sie [unter Exchange Admin Center im eigenständigen EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
 - Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Wenn Sie E-Mail-Benutzer in EOP PowerShell erstellen, kann eine Einschränkung auftreten. Außerdem verwenden die EOP PowerShell-Cmdlets eine Batchverarbeitungsmethode, die zu einer Übertragungsverzögerung von einigen Minuten führt, bevor die Ergebnisse der Befehle angezeigt werden.
 
-- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in Exchange Online Protection die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rollen **E-Mail-Empfängererstellung** (erstellen) und E-Mail-Empfänger (ändern),  die standardmäßig den Rollengruppen Organisationsverwaltung **(globale** Administratoren) und Empfängerverwaltung zugewiesen sind.  Weitere Informationen finden Sie unter [Permissions in standalone EOP](feature-permissions-in-eop.md) und [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Bevor Sie die Verfahren in diesem Artikel Exchange Online Protection, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rollen **E-Mail-Empfängererstellung** (erstellen) und E-Mail-Empfänger (ändern),  die standardmäßig den Rollengruppen Organisationsverwaltung **(globale** Administratoren) und Empfängerverwaltung zugewiesen sind.  Weitere Informationen finden Sie unter [Permissions in standalone EOP](feature-permissions-in-eop.md) und [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Informationen zu Tastenkombinationen, die für die Verfahren in diesem Artikel gelten können, finden Sie unter [Tastenkombinationen für](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)das Exchange Admin Center in Exchange Online .
+- Informationen zu Tastenkombinationen, die für die Verfahren in diesem Artikel gelten können, finden Sie unter Tastenkombinationen für das [Exchange Admin Center in Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
-> Liegt ein Problem vor? Bitten Sie in den Exchange-Foren um Hilfe. Besuchen Sie [das Exchange Online Protection-Forum.](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)
+> Liegt ein Problem vor? Bitten Sie in den Exchange-Foren um Hilfe. Besuchen Sie [das Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE) Forum.
 
-## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a>Verwalten von E-Mail-Benutzern mithilfe des Exchange Admin Centers
+## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a>Verwenden des Exchange Admin Center zum Verwalten von E-Mail-Benutzern
 
 ### <a name="use-the-eac-to-create-mail-users"></a>Erstellen von E-Mail-Benutzern mithilfe der EAC
 
 1. Wechseln Sie in der  EAC zu \> **Empfängerkontakte**
 
-2. Klicken Sie **auf Neues** Neues ![ Symbol ](../../media/ITPro-EAC-AddIcon.png) . Konfigurieren Sie **auf der Seite** Neuer E-Mail-Benutzer, die geöffnet wird, die folgenden Einstellungen. Mit einem gekennzeichnete <sup>\*</sup> Einstellungen sind erforderlich.
+2. Klicken Sie **auf Neues** Neues ![ Symbol ](../../media/ITPro-EAC-AddIcon.png) . Konfigurieren Sie **auf der Seite** Neuer E-Mail-Benutzer, die geöffnet wird, die folgenden Einstellungen. Einstellungen, die mit einem <sup>\*</sup> gekennzeichnet sind, sind erforderlich.
 
    - **Vorname**
 
@@ -100,7 +100,7 @@ Verwenden Sie die **Registerkarte Allgemein,** um grundlegende Informationen zum
 
 - **Anzeigename**: Dieser Name wird im Adressbuch Ihrer Organisation, in den Zeilen An: und Von: in E-Mail und in der Liste der Kontakte in der EAC angezeigt. Dieser Name darf keine Leerzeichen vor oder nach dem Anzeigenamen enthalten.
 
-- **Benutzer-ID:** Dies ist das Konto des Benutzers in Microsoft 365. Sie können diesen Wert hier nicht ändern.
+- **Benutzer-ID**: Dies ist das Konto des Benutzers in Microsoft 365. Sie können diesen Wert hier nicht ändern.
 
 #### <a name="contact-information"></a>Kontaktinformationen
 
@@ -119,9 +119,9 @@ Verwenden Sie **die Registerkarte Kontaktinformationen,** um die Kontaktinformat
   - **Office**
   - **Telefon (privat)**
   - **Webseite**
-  - **Hinweise**
+  - **Notizen**
 
-#### <a name="organization"></a>Organization (Organisation)
+#### <a name="organization"></a>Organisation
 
 Verwenden Sie **die Registerkarte Organisation,** um detaillierte Informationen zur Rolle des Benutzers in der Organisation zu aufzeichnen.
 
@@ -253,7 +253,7 @@ Verwenden Sie eines der folgenden Verfahren, um zu überprüfen, ob E-Mail-Benut
 
 ## <a name="use-directory-synchronization-to-manage-mail-users"></a>Verwalten von E-Mail-Benutzern durch Verzeichnissynchronisierung
 
-In eigenständigem EOP ist die Verzeichnissynchronisierung für Kunden mit lokalem Active Directory verfügbar. Sie können diese Konten mit Azure Active Directory (Azure AD) synchronisieren, in dem Kopien der Konten in der Cloud gespeichert sind. Wenn Sie Ihre vorhandenen Benutzerkonten mit Azure Active Directory  synchronisieren, können Sie diese Benutzer im Bereich Empfänger des Exchange Admin Center (EAC) oder in der eigenständigen EOP PowerShell anzeigen.
+In eigenständigem EOP ist die Verzeichnissynchronisierung für Kunden mit lokalem Active Directory verfügbar. Sie können diese Konten mit Azure Active Directory (Azure AD) synchronisieren, in dem Kopien der Konten in der Cloud gespeichert sind. Wenn Sie Ihre vorhandenen Benutzerkonten mit Azure Active Directory synchronisieren, können  Sie diese Benutzer im Bereich Empfänger im Exchange Admin Center (EAC) oder in der eigenständigen EOP PowerShell anzeigen.
 
 **Hinweise**:
 
@@ -261,7 +261,7 @@ In eigenständigem EOP ist die Verzeichnissynchronisierung für Kunden mit lokal
 
 - Für die folgenden Funktionen wird empfohlen, Verzeichnissynchronisierung zu verwenden:
 
-  - **Listen sicherer Absender** in Outlook und Listen blockierter Absender: Wenn sie mit dem Dienst synchronisiert werden, haben diese Listen Vorrang vor der Spamfilterung im Dienst. Auf diese Weise können Benutzer ihre eigene Liste sicherer Absender und die Liste blockierter Absender mit einzelnen Absender- und Domäneneinträgen verwalten. Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Outlook Listen** sicherer Absender und Listen blockierter Absender : Bei der Synchronisierung mit dem Dienst haben diese Listen Vorrang vor der Spamfilterung im Dienst. Auf diese Weise können Benutzer ihre eigene Liste sicherer Absender und die Liste blockierter Absender mit einzelnen Absender- und Domäneneinträgen verwalten. Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer](configure-junk-email-settings-on-exo-mailboxes.md).
 
   - **Directory Based Edge Blocking (DBEB)**: Weitere Informationen zu DBEB finden Sie unter [Use Directory Based Edge Blocking to reject messages sent to invalid recipients](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking).
 
@@ -271,21 +271,21 @@ In eigenständigem EOP ist die Verzeichnissynchronisierung für Kunden mit lokal
 
 Erhalten Sie die erforderlichen Berechtigungen, und bereiten Sie sich auf die Verzeichnissynchronisierung vor, wie unter [Was ist Hybrididentität mit Azure Active Directory? beschrieben.](/azure/active-directory/hybrid/whatis-hybrid-identity)
 
-### <a name="synchronize-directories-with-azure-active-directory-connect-aad-connect"></a>Synchronisieren von Verzeichnissen mit Azure Active Directory Connect (AAD Connect)
+### <a name="synchronize-directories-with-azure-active-directory-connect-aad-connect"></a>Synchronisieren von Verzeichnissen mit Azure Active Directory Verbinden (AAD Verbinden)
 
-1. Aktivieren sie die Verzeichnissynchronisierung, wie unter [Azure AD Connect-Synchronisierung beschrieben: Verstehen und Anpassen der Synchronisierung.](/azure/active-directory/hybrid/how-to-connect-sync-whatis)
+1. Aktivieren Sie die Verzeichnissynchronisierung, wie in [Azure AD Verbinden Synchronisierung beschrieben: Verstehen und Anpassen der Synchronisierung](/azure/active-directory/hybrid/how-to-connect-sync-whatis).
 
-2. Installieren und Konfigurieren eines lokalen Computers zum Ausführen von AAD Connect, wie unter [Voraussetzungen für Azure AD Connect beschrieben.](/azure/active-directory/hybrid/how-to-connect-install-prerequisites)
+2. Installieren und Konfigurieren eines lokalen Computers zum Ausführen von AAD-Verbinden wie unter [Voraussetzungen für Azure AD Verbinden](/azure/active-directory/hybrid/how-to-connect-install-prerequisites).
 
-3. [Wählen Sie aus, welcher Installationstyp für Azure AD Connect verwendet werden soll:](/azure/active-directory/hybrid/how-to-connect-install-select-installation)
+3. [Wählen Sie aus, welcher Installationstyp für Azure AD Verbinden:](/azure/active-directory/hybrid/how-to-connect-install-select-installation)
 
    - [Express](/azure/active-directory/hybrid/how-to-connect-install-express)
 
-   - [Benutzerdefiniert](/azure/active-directory/hybrid/how-to-connect-install-custom)
+   - [Custom](/azure/active-directory/hybrid/how-to-connect-install-custom)
 
    - [Pass-Through-Authentifizierung](/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
 
 > [!IMPORTANT]
 > Wenn Sie den Konfigurationsassistent für Azure Active Directory-Synchronisierungstool abschließen, wird in Ihrer Active Directory-Gesamtstruktur das Konto **MSOL_AD_SYNC** erstellt. Dieses Konto wird zum Lesen und Synchronisieren der lokalen Active Directory-Informationen verwendet. Damit die Verzeichnissynchronisierung ordnungsgemäß ausgeführt wird, müssen Sie sicherstellen, dass TCP 443 auf dem lokalen Verzeichnissynchronisierungsserver geöffnet ist.
 
-Stellen Sie nach dem Konfigurieren der Synchronisierung sicher, dass AAD Connect ordnungsgemäß synchronisiert wird. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Empfänger** \> **Kontakte**, und vergewissern Sie sich, dass die Liste der Benutzer in Ihrer lokalen Umgebung korrekt synchronisiert wird.
+Stellen Sie nach dem Konfigurieren der Synchronisierung sicher, dass Verbinden AAD ordnungsgemäß synchronisiert wird. Navigieren Sie in der Exchange-Verwaltungskonsole zu **Empfänger** \> **Kontakte**, und vergewissern Sie sich, dass die Liste der Benutzer in Ihrer lokalen Umgebung korrekt synchronisiert wird.

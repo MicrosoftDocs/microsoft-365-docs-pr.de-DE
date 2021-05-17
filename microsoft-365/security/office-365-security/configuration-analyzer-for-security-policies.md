@@ -38,15 +38,15 @@ Die Konfigurationsanalyse im Security & Compliance Center bietet einen zentralen
 
 Die folgenden Richtlinientypen werden von der Konfigurationsanalyse analysiert:
 
-- **Exchange Online Protection (EOP)-Richtlinien:** Dazu gehören Microsoft 365-Organisationen mit Exchange Online-Postfächern und eigenständige EOP-Organisationen ohne Exchange Online-Postfächer:
+- **Exchange Online Protection (EOP)-Richtlinien:** Dies umfasst Microsoft 365 Organisationen mit Exchange Online postfächern und eigenständigen EOP-Organisationen ohne Exchange Online Postfächer:
 
   - [Antispamrichtlinien](configure-your-spam-filter-policies.md).
   - [An malware-Richtlinien](configure-anti-malware-policies.md).
   - [EOP Antiphishingrichtlinien](set-up-anti-phishing-policies.md#spoof-settings).
 
-- **Microsoft Defender für Office 365-Richtlinien:** Dazu gehören Organisationen mit Microsoft 365 E5- oder Defender for Office 365-Add-On-Abonnements:
+- **Microsoft Defender für Office 365:** Dies umfasst Organisationen mit Microsoft 365 E5 oder Defender for Office 365-Add-On-Abonnements:
 
-  - Antiphishingrichtlinien in Microsoft Defender für Office 365, die Folgendes umfassen:
+  - Antiphishingrichtlinien in Microsoft Defender for Office 365, die Folgendes umfassen:
 
     - Dieselben [Spoofeinstellungen,](set-up-anti-phishing-policies.md#spoof-settings) die in den EOP-Antiphishingrichtlinien verfügbar sind.
     - [Identitätswechseleinstellungen](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
@@ -56,7 +56,7 @@ Die folgenden Richtlinientypen werden von der Konfigurationsanalyse analysiert:
 
   - [Richtlinien für sichere Anlagen](set-up-safe-attachments-policies.md).
 
-Die **Standard-** und Strict-Richtlinieneinstellungswerte, die als Basiswerte verwendet werden, werden unter Empfohlene Einstellungen für EOP und [Microsoft Defender für Office 365-Sicherheit beschrieben.](recommended-settings-for-eop-and-office365.md) 
+Die **Standard-** und Strict-Richtlinieneinstellungswerte, die als Basiswerte verwendet werden, werden unter Empfohlene Einstellungen für EOP und Microsoft Defender für Office 365 [beschrieben.](recommended-settings-for-eop-and-office365.md) 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -84,7 +84,7 @@ Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Polic
 
 Die Konfigurationsanalyse verfügt über zwei Hauptregisterkarten:
 
-- **Einstellungen und Empfehlungen:** Sie wählen Standard oder Strict aus, und vergleichen Sie diese Einstellungen mit Ihren vorhandenen Sicherheitsrichtlinien. In den Ergebnissen können Sie die Werte Ihrer Einstellungen anpassen, um sie auf die gleiche Stufe wie Standard oder Strict zu bringen.
+- **Einstellungen und Empfehlungen**: Sie wählen Standard oder Strict aus, und vergleichen Sie diese Einstellungen mit Ihren vorhandenen Sicherheitsrichtlinien. In den Ergebnissen können Sie die Werte Ihrer Einstellungen anpassen, um sie auf die gleiche Stufe wie Standard oder Strict zu bringen.
 
 - **Konfigurationsdriftanalyse und -verlauf:** Mit dieser Ansicht können Sie Richtlinienänderungen im Laufe der Zeit nachverfolgen.
 
@@ -99,8 +99,8 @@ Standardmäßig enthält die Spalte **Richtliniengruppe/Einstellungsname** eine 
 - **Antispam**
 - **Antiphishing**
 - **An malware**
-- **ATP Sichere Anlagen** (wenn Ihr Abonnement Microsoft Defender für Office 365 enthält)
-- **ATP Sichere Links** (wenn Ihr Abonnement Microsoft Defender für Office 365 enthält)
+- **ATP Sichere Anlagen** (wenn Ihr Abonnement Microsoft Defender für Office 365)
+- **ATP Safe Links** (wenn Ihr Abonnement Microsoft Defender for Office 365)
 
 In der Standardansicht wird alles reduziert. Neben jeder Richtlinie finden Sie eine Zusammenfassung der Vergleichsergebnisse aus Ihren Richtlinien (die Sie ändern können) und den Einstellungen in den entsprechenden Richtlinien für die Standard- oder Strict-Schutzprofile (die Sie nicht ändern können). Es werden die folgenden Informationen für das Schutzprofil angezeigt, mit dem Sie vergleichen:
 
@@ -124,7 +124,7 @@ Wenn der Vergleich keine Verbesserungsempfehlungen enthält (grün), zeigt die E
 
 - **Letzte Änderung:** Das Datum, an dem die Richtlinie zuletzt geändert wurde.
 
-- **Empfehlungen**: Der Wert der Einstellung im Standard- oder Strict-Schutzprofil. Klicken Sie auf Übernehmen, um den Wert der Einstellung in Ihrer Richtlinie so zu ändern, dass sie mit dem empfohlenen Wert im Schutzprofil **übereinstimmen.** Wenn die Änderung erfolgreich war, wird die Meldung angezeigt: **Empfehlungen wurden erfolgreich angenommen.** Klicken **Sie auf Aktualisieren,** um die reduzierte Anzahl von Empfehlungen und das Entfernen der spezifischen Einstellung/Richtlinienzeile aus den Ergebnissen zu sehen.
+- **Empfehlungen**: Der Wert der Einstellung im Standard- oder Strict-Schutzprofil. Klicken Sie auf Übernehmen, um den Wert der Einstellung in Ihrer Richtlinie so zu ändern, dass sie mit dem empfohlenen Wert im Schutzprofil **übereinstimmen.** Wenn die Änderung erfolgreich ist, wird die Meldung angezeigt: **Empfehlungen erfolgreich übernommen.** Klicken **Sie auf Aktualisieren,** um die reduzierte Anzahl von Empfehlungen und das Entfernen der spezifischen Einstellung/Richtlinienzeile aus den Ergebnissen zu sehen.
 
 ### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Registerkarte Konfigurationsdriftanalyse und Verlauf in der Konfigurationsanalyse
 
@@ -134,13 +134,13 @@ Auf dieser Registerkarte können Sie die Änderungen nachverfolgen, die Sie an I
 - **Geändert von**
 - **Einstellungsname**
 - **Policy**
-- **Type**
+- **Typ**
 
 Klicken Sie auf **Filter**, um die Ergebnisse zu filtern. Im **angezeigten Flyout** Filter können Sie aus den folgenden Filtern auswählen:
 
 - **Startzeit** und **Endzeit** (Datum)
 - **Standardschutz oder** **strenger Schutz**
 
-Klicken Sie auf Exportieren, um die Ergebnisse in eine **CSV-Datei zu exportieren.**
+Klicken Sie auf Exportieren, um die Ergebnisse in .csv **exportieren.**
 
 ![Konfigurationsdriftanalyse und Verlaufsansicht in der Konfigurationsanalyse](../../media/configuration-analyzer-configuration-drift-analysis-view.png)

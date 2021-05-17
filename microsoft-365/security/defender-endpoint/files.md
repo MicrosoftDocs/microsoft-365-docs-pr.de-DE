@@ -55,7 +55,7 @@ Methode|Rückgabetyp |Beschreibung
 |globalPrevalence | Nullable long | Dateiprävalenz in der gesamten Organisation |
 |globalFirstObserved | DateTimeOffset | Erstes Mal, wenn die Datei beobachtet wurde |
 |globalLastObserved | DateTimeOffset | Letztes Mal, wenn die Datei beobachtet wurde |
-|size | Nullable long | Größe der Datei |
+|Größe | Nullable long | Größe der Datei |
 |fileType | String | Dateityp |
 |isPeFile | Boolescher Wert | true, wenn die Datei portierbar ist (z. B. "DLL", "EXE"usw.) |
 |filePublisher | String | Dateiherausgeber |

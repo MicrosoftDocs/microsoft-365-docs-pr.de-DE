@@ -29,21 +29,21 @@ ms.locfileid: "51418032"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Azure Information Protection-Unterstützung für Office 365 betrieben von 21Vianet
 
-In diesem Artikel werden die Unterschiede zwischen der Azure Information Protection (AIP)-Unterstützung für Office 365, betrieben von 21Vianet und kommerziellen Angeboten, sowie spezifische Anweisungen zum Konfigurieren von AIP für Kunden in China behandelt, einschließlich der Installation des lokalen AIP-Scanners und verwalten von Aufträgen zur &mdash; Inhaltsscan.
+Dieser Artikel behandelt die Unterschiede zwischen Azure Information Protection (AIP)-Unterstützung für Office 365 betrieben von 21Vianet und kommerziellen Angeboten sowie spezifische Anweisungen zum Konfigurieren von AIP für Kunden in China, einschließlich der Installation des lokalen AIP-Scanners und verwalten von Inhaltsscanaufträgen. &mdash;
 
-## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>Unterschiede zwischen AIP für Office 365, betrieben von 21Vianet und kommerziellen Angeboten
+## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>Unterschiede zwischen AIP für Office 365 von 21Vianet und kommerziellen Angeboten
 
-Unser Ziel ist es zwar, kunden in China alle kommerziellen Features und Funktionen mit unserem AIP für Office 365, betrieben von 21Vianet, bereitzustellen, es fehlen jedoch einige Funktionen, die wir hervorheben möchten.
+Unser Ziel ist es zwar, kunden in China alle kommerziellen Features und Funktionen mit unserem AIP für Office 365 betrieben von 21Vianet bereitzustellen, es fehlen jedoch einige Funktionen, die wir hervorheben möchten.
 
-Die folgende Liste enthält die bestehenden Lücken zwischen AIP für Office 365, betrieben von 21Vianet und unseren kommerziellen Angeboten ab Januar 2021:
+Die folgende Liste enthält die bestehenden Lücken zwischen AIP für Office 365 betrieben von 21Vianet und unseren kommerziellen Angeboten ab Januar 2021:
 
-- Verwaltung von Informationsrechten (Information Rights Management, IRM) wird nur für Microsoft 365 Apps for Enterprise (Build 11731.10000 oder höher) unterstützt. Office 2010, Office 2013 und andere Office 2016-Versionen werden nicht unterstützt.
+- Verwaltung von Informationsrechten (Information Rights Management, IRM) wird nur für Microsoft 365 Apps for Enterprise (Build 11731.10000 oder höher) unterstützt. Office 2010, Office 2013 und andere versionen Office 2016 werden nicht unterstützt.
 
-- Die Migration von Active Directory-Rechteverwaltungsdienste (AD RMS) zu AIP ist derzeit nicht verfügbar.
+- Die Migration von Active Directory Rights Management Services (AD RMS) zu AIP ist derzeit nicht verfügbar.
   
 - Die Freigabe geschützter E-Mails für Benutzer in der kommerziellen Cloud wird unterstützt.
   
-- Die Freigabe von Dokumenten und E-Mail-Anlagen für Benutzer in der kommerziellen Cloud ist derzeit nicht verfügbar. Dazu gehören Office 365, betrieben von 21Vianet-Benutzern in der kommerziellen Cloud, nicht von Office 365 betrieben von 21Vianet-Benutzern in der kommerziellen Cloud und Benutzer mit einer RMS for Individuals-Lizenz.
+- Die Freigabe von Dokumenten und E-Mail-Anlagen für Benutzer in der kommerziellen Cloud ist derzeit nicht verfügbar. Dazu gehören Office 365, die von 21Vianet-Benutzern in der kommerziellen Cloud betrieben werden, nicht von Office 365 betrieben von 21Vianet-Benutzern in der kommerziellen Cloud und Von Benutzern mit einer RMS for Individuals-Lizenz.
   
 - IRM mit SharePoint (IRM-geschützte Websites und Bibliotheken) ist derzeit nicht verfügbar.
   
@@ -62,7 +62,7 @@ So konfigurieren Sie AIP für Kunden in China:
 
 3. [Installieren und Konfigurieren des AIP Unified Labeling-Clients](#step-3-install-and-configure-the-aip-unified-labeling-client).
 
-4. [Konfigurieren von AIP-Apps unter Windows](#step-4-configure-aip-apps-on-windows).
+4. [Konfigurieren von AIP-Apps auf Windows](#step-4-configure-aip-apps-on-windows).
 
 5. [Installieren Sie den lokalen AIP-Scanner, und verwalten Sie Inhaltsscanaufträge.](#step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) 
 
@@ -75,14 +75,14 @@ Damit die Verschlüsselung ordnungsgemäß funktioniert, muss RMS für den Manda
     1. Starten Sie PowerShell als Administrator.
     2. Wenn das AIPService-Modul nicht installiert ist, führen Sie `Install-Module AipService` aus.
     3. Importieren Sie das Modul mithilfe `Import-Module AipService` von .
-    4. Stellen Sie eine Verbindung mit dem Dienst mithilfe von `Connect-AipService -environmentname azurechinacloud` .
+    4. Verbinden dem Dienst mithilfe von `Connect-AipService -environmentname azurechinacloud` .
     5. Führen `(Get-AipServiceConfiguration).FunctionalState` Sie aus, und überprüfen Sie, ob der Status `Enabled` ist.
 
 2. Wenn der Funktionszustand `Disabled` ist, führen Sie `Enable-AipService` aus.
 
 ### <a name="step-2-configure-dns-encryption"></a>Schritt 2: Konfigurieren der DNS-Verschlüsselung
 
-Damit die Verschlüsselung ordnungsgemäß funktioniert, müssen Office-Clientanwendungen eine Verbindung mit der China-Instanz des Diensts herstellen und bootstrap von dort aus erstellen. Um Clientanwendungen an die richtige Dienstinstanz umzuleiten, muss der Mandantenadministrator einen DNS-SRV-Eintrag mit Informationen zur Azure RMS-URL konfigurieren. Ohne den DNS-SRV-Eintrag versucht die Clientanwendung standardmäßig, eine Verbindung mit der öffentlichen Cloudinstanz herzustellen, und es wird ein Fehler ausgeführt.
+Damit die Verschlüsselung ordnungsgemäß funktioniert, Office Clientanwendungen eine Verbindung mit der China-Instanz des Diensts herstellen und bootstrap von dort aus. Um Clientanwendungen an die richtige Dienstinstanz umzuleiten, muss der Mandantenadministrator einen DNS-SRV-Eintrag mit Informationen zur Azure RMS-URL konfigurieren. Ohne den DNS-SRV-Eintrag versucht die Clientanwendung standardmäßig, eine Verbindung mit der öffentlichen Cloudinstanz herzustellen, und es wird ein Fehler ausgeführt.
 
 Außerdem wird davon ausgegangen, dass sich Benutzer mit einem Benutzernamen anmelden, der auf der Domäne im Besitz des Mandanten basiert (z. B. ), und nicht mit dem Benutzernamen (z. B. `joe@contoso.cn` `onmschina` `joe@contoso.onmschina.cn` ). Der Domänenname aus dem Benutzernamen wird für die DNS-Umleitung an die richtige Dienstinstanz verwendet.
 
@@ -92,7 +92,7 @@ Außerdem wird davon ausgegangen, dass sich Benutzer mit einem Benutzernamen anm
 
     1. Starten Sie PowerShell als Administrator.
     2. Wenn das AIPService-Modul nicht installiert ist, führen Sie `Install-Module AipService` aus.
-    3. Stellen Sie eine Verbindung mit dem Dienst mithilfe von `Connect-AipService -environmentname azurechinacloud` .
+    3. Verbinden dem Dienst mithilfe von `Connect-AipService -environmentname azurechinacloud` .
     4. Führen `(Get-AipServiceConfiguration).RightsManagementServiceId` Sie aus, um die RMS-ID zu erhalten.
 
 2. Melden Sie sich bei Ihrem DNS-Anbieter an, navigieren Sie zu den DNS-Einstellungen für die Domäne, und fügen Sie dann einen neuen SRV-Eintrag hinzu.
@@ -105,7 +105,7 @@ Außerdem wird davon ausgegangen, dass sich Benutzer mit einem Benutzernamen anm
 
 3. Ordnen Sie die benutzerdefinierte Domäne dem Mandanten im [Azure-Portal zu.](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains) Dadurch wird ein Eintrag in DNS hinzugefügt, der einige Minuten dauern kann, um überprüft zu werden, nachdem Sie den Wert zu den DNS-Einstellungen hinzugefügt haben.
 
-4. Melden Sie sich beim Microsoft 365 Admin Center mit den entsprechenden globalen Administratoranmeldeinformationen an, und fügen Sie die Domäne (z. B. ) zur `contoso.cn` Benutzererstellung hinzu. Bei der Überprüfung sind möglicherweise zusätzliche DNS-Änderungen erforderlich. Sobald die Überprüfung erfolgt ist, können Benutzer erstellt werden.
+4. Melden Sie sich beim Microsoft 365 Admin Center mit den entsprechenden globalen Administratoranmeldeinformationen an, und fügen Sie die Domäne (z. B. ) für die `contoso.cn` Benutzererstellung hinzu. Bei der Überprüfung sind möglicherweise zusätzliche DNS-Änderungen erforderlich. Sobald die Überprüfung erfolgt ist, können Benutzer erstellt werden.
 
 #### <a name="configure-dns-encryption---mac-ios-android"></a>Konfigurieren der DNS-Verschlüsselung – Mac, iOS, Android
 
@@ -130,11 +130,11 @@ Weitere Informationen finden Sie unter:
 - [AIP-Schnellstart: Bereitstellen des AIP-Clients](/azure/information-protection/quickstart-deploy-client)
 - [AIP-Administratorhandbuch](/azure/information-protection/rms-client/clientv2-admin-guide)
 - [AIP-Benutzerhandbuch](/azure/information-protection/rms-client/clientv2-user-guide)
-- [Informationen zu Microsoft 365-Vertraulichkeitsbezeichnungen](../../compliance/sensitivity-labels.md)
+- [Informationen zu Microsoft 365 Vertraulichkeitsbezeichnungen](../../compliance/sensitivity-labels.md)
 
-### <a name="step-4-configure-aip-apps-on-windows"></a>Schritt 4: Konfigurieren von AIP-Apps unter Windows
+### <a name="step-4-configure-aip-apps-on-windows"></a>Schritt 4: Konfigurieren von AIP-Apps auf Windows
 
-AIP-Apps unter Windows benötigen den folgenden Registrierungsschlüssel, um sie auf die richtige cloudbasierte Cloud für Azure China zu verweisen:
+AIP-apps on Windows need the following registry key to point them to the correct sovereign cloud for Azure China:
 
 - Registrierungsknoten = `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIP`
 - Name = `CloudEnvType`

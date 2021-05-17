@@ -12,7 +12,7 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratoren erfahren, wie Sie Standard- und Strikte Richtlinieneinstellungen für die Schutzfunktionen von Exchange Online Protection (EOP) und Microsoft Defender für Office 365 anwenden.
+description: Administratoren erfahren, wie Sie Standard- und Strict-Richtlinieneinstellungen über die Schutzfunktionen von Exchange Online Protection (EOP) und Microsoft Defender for Office 365
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 7579b2d2a47135ab9628d2ec8990f53c3917514b
@@ -60,21 +60,21 @@ Die verfügbaren Bedingungen und Ausnahmen sind:
 
 - **Die Empfänger sind:** Postfächer, E-Mail-Benutzer oder E-Mail-Kontakte in Ihrer Organisation.
 - **Die Empfänger sind Mitglieder von**: Gruppen in Ihrer Organisation.
-- **Die Empfängerdomänen sind:** Akzeptierte Domänen, die in Microsoft 365 konfiguriert sind.
+- **Die Empfängerdomänen sind:** Akzeptierte Domänen, die in der Microsoft 365.
 
 ### <a name="policies-in-preset-security-policies"></a>Richtlinien in vordefinierten Sicherheitsrichtlinien
 
 Voreingestellte Sicherheitsrichtlinien verwenden die entsprechenden Richtlinien aus den verschiedenen Schutzfunktionen in EOP und Microsoft Defender für Office 365. Diese Richtlinien werden _erstellt, nachdem_ Sie den Benutzern die vordefinierten **Sicherheitsrichtlinien Standardschutz** oder **Strenger** Schutz zugewiesen haben. Sie können diese Richtlinien nicht ändern.
 
-- **Exchange Online Protection (EOP)-Richtlinien:** Dazu gehören Microsoft 365-Organisationen mit Exchange Online-Postfächern und eigenständige EOP-Organisationen ohne Exchange Online-Postfächer:
+- **Exchange Online Protection (EOP)-Richtlinien:** Dies umfasst Microsoft 365 Organisationen mit Exchange Online postfächern und eigenständigen EOP-Organisationen ohne Exchange Online Postfächer:
 
   - [Antispamrichtlinien mit](configure-your-spam-filter-policies.md) dem Namen **Standard Preset Security Policy** und Strict Preset Security **Policy**.
   - [An malware policies named](configure-anti-malware-policies.md) **Standard Preset Security Policy** and Strict Preset **Security Policy**.
   - [EOP Antiphishingrichtlinien](set-up-anti-phishing-policies.md#spoof-settings) mit dem Namen **Standard Preset Security Policy** und Strict Preset Security **Policy** (Spoof-Einstellungen).
 
-- **Microsoft Defender für Office 365-Richtlinien:** Dazu gehören Organisationen mit Microsoft 365 E5- oder Defender for Office 365-Add-On-Abonnements:
+- **Microsoft Defender für Office 365:** Dies umfasst Organisationen mit Microsoft 365 E5 oder Defender for Office 365-Add-On-Abonnements:
 
-  - Antiphishingrichtlinien in Microsoft Defender für Office 365 mit dem Namen **Standard Preset Security Policy** und Strict Preset Security **Policy,** die Folgendes umfassen:
+  - Antiphishingrichtlinien in Microsoft Defender für Office 365 **Standard Preset Security Policy** und Strict Preset Security **Policy,** die Folgendes umfassen:
 
     - Dieselben [Spoofeinstellungen,](set-up-anti-phishing-policies.md#spoof-settings) die in den EOP-Antiphishingrichtlinien verfügbar sind.
     - [Identitätswechseleinstellungen](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
@@ -84,11 +84,11 @@ Voreingestellte Sicherheitsrichtlinien verwenden die entsprechenden Richtlinien 
 
   - [Richtlinien für sichere Anlagen](set-up-safe-attachments-policies.md) mit dem **Namen Standard Preset Security Policy** und Strict Preset **Security Policy**.
 
-Beachten Sie, dass Sie EOP-Schutz auf andere Benutzer anwenden können als Microsoft Defender für Office 365-Schutz.
+Beachten Sie, dass Sie EOP-Schutz auf andere Benutzer als Microsoft Defender für Office 365 anwenden können.
 
 ### <a name="policy-settings-in-preset-security-policies"></a>Richtlinieneinstellungen in vordefinierten Sicherheitsrichtlinien
 
-Sie können die Richtlinieneinstellungen in den Schutzprofilen nicht ändern. Die **Richtlinieneinstellungswerte Standard** und **Strict** werden unter Empfohlene Einstellungen für EOP und Microsoft Defender für [Office 365-Sicherheit beschrieben.](recommended-settings-for-eop-and-office365.md)
+Sie können die Richtlinieneinstellungen in den Schutzprofilen nicht ändern. Die **Standard-** und Strict-Richtlinieneinstellungswerte werden unter Empfohlene Einstellungen für EOP und [Microsoft Defender für Office 365 beschrieben.](recommended-settings-for-eop-and-office365.md) 
 
 ### <a name="order-of-precedence-for-preset-security-policies-and-other-policies"></a>Rangfolge für vordefinierte Sicherheitsrichtlinien und andere Richtlinien
 
@@ -115,7 +115,7 @@ Anders ausgedrückt: Die Einstellungen  der Strikten Schutzrichtlinie überschre
 
   Weitere Informationen finden Sie unter [Berechtigungen in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Hinweis:** Durch hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im  Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen und Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+  **Hinweis:** Durch hinzufügen von Benutzern zur entsprechenden Azure Active Directory im Microsoft 365 Admin Center  erhalten Benutzer die erforderlichen Berechtigungen und Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Verwenden des Security & Compliance Center zum Zuweisen vordefinierter Sicherheitsrichtlinien für Benutzer
 
@@ -143,7 +143,7 @@ Anders ausgedrückt: Die Einstellungen  der Strikten Schutzrichtlinie überschre
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
-4. Wenn Ihre Organisation Über Microsoft Defender für Office 365 verfügt, werden Sie zu den **ATP-Schutzbestimmungen** zur Identifizierung der internen Empfänger, für die die [Microsoft Defender for Office 365-Schutzmaßnahmen](#policies-in-preset-security-policies) gelten, verwendet.
+4. Wenn Ihre Organisation Über Microsoft Defender für Office 365 verfügt, werden Sie zu den **ATP-Schutzbestimmungen** zur Identifizierung der internen Empfänger, für die der [Microsoft Defender for Office 365-Schutz](#policies-in-preset-security-policies) gilt, verwendet.
 
    Die Einstellungen und das Verhalten sind genau wie die **EOP-Schutzeinstellungen für** Schritt.
 

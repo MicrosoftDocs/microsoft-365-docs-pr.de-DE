@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
-description: Erfahren Sie, wie Sie einen Domänennamen in Microsoft 365 kaufen.
+description: Erfahren Sie, wie Sie einen Domänennamen in Microsoft 365.
 ms.openlocfilehash: eb0520f605715c3403e1ce0134aa60abed0f6751
 ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
@@ -72,9 +72,9 @@ Sie können aus den folgenden Domänen der obersten Ebene für Ihre Domäne ausw
 Wir bieten ein kostenloses Domänendatenschutzabonnement mit dem Kauf einer Domäne an. Dadurch bleiben Ihre Kontaktinformationen, die der Registrierung Ihrer Domäne bei ICANN zugeordnet sind, privat. [Weitere Informationen.](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>Erwerben eines Domänennamens von einer anderen Domänenregistrierungsstelle
-Wenn Sie eine Domäne von einer anderen Domänenregistrierungsstelle als [GoDaddy](https://www.godaddy.com)kaufen möchten, wird empfohlen, eine der folgenden Domänen zu verwenden, die die automatische Einrichtung unterstützt (Domain Connect). 
+Wenn Sie eine Domäne von einer anderen Domänenregistrierungsstelle als [GoDaddy](https://www.godaddy.com)kaufen möchten, wird empfohlen, eine der folgenden Domänen zu verwenden, die die automatische Einrichtung unterstützt (Domain Verbinden). 
   
-- [1 &amp; 1 IONOS](https://www.1and1.com/)
+- [1&amp;1 IONOS](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 
 
    
@@ -97,14 +97,14 @@ Wenn Sie noch über keine eigene Domäne verfügen, können Sie bei einer Domän
 Zum Einrichten einer Domäne in Microsoft 365 müssen Sie eine Domäne besitzen und einige der DNS-Einträge für Ihre Domäne ändern.
   
 > [!CAUTION]
-> Einige Domänenregistrierungsstellen oder DNS-Hostinganbieter erlauben nicht das Erstellen aller von Microsoft 365 benötigten DNS-Einträge. Die in der folgenden Liste aufgeführten Hostinganbieter unterstützen alle erforderlichen Einträge. Falls Sie erwägen, einen anderen Hostinganbieter zu verwenden, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
+> Einige Domänenregistrierungsstellen oder DNS-Hostinganbieter erlauben nicht das Erstellen aller dns-Einträge, die für die Microsoft 365. Die in der folgenden Liste aufgeführten Hostinganbieter unterstützen alle erforderlichen Einträge. Falls Sie erwägen, einen anderen Hostinganbieter zu verwenden, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
 Nachdem Sie Ihre Domäne (bei einer Domänenregistrierungsstelle) registriert haben, melden Sie sich bei Microsoft 365 als Administrator an und richten Ihre Domäne so ein, dass Sie sie mit Ihrer E-Mail-Adresse und anderen Diensten verwenden können.
   
 > [!NOTE]
-> Die Informationen zur öffentlichen SharePoint Online-Website in diesem Artikel gelten nur, wenn Ihre Organisation Microsoft 365 vor dem 9. März 2015 erworben hat. 
+> Die SharePoint öffentlichen Onlinewebsiteinformationen in diesem Artikel gelten nur, wenn Ihre Organisation Microsoft 365 9. März 2015 erworben hat. 
 
-## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Domänenregistrierungsstellen, die alle für Microsoft 365 erforderlichen DNS-Einträge unterstützen
+## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Domänenregistrierungsstellen, die alle für die Registrierung erforderlichen DNS-Einträge Microsoft 365
 
 - [Oray](https://oray.com/)
     

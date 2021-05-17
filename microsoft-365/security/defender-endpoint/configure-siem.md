@@ -40,7 +40,7 @@ ms.locfileid: "51222335"
 >- [Microsoft Defender for Endpoint Detection](api-portal-mapping.md) besteht aus dem verdächtigen Ereignis, das auf dem Gerät aufgetreten ist, und den zugehörigen Warnungsdetails.
 >-Die Microsoft Defender for Endpoint Alert-API ist die neueste API für den Warnungsverbrauch und enthält eine detaillierte Liste verwandter Nachweise für jede Warnung. Weitere Informationen finden Sie unter [Warnungsmethoden und -eigenschaften und](alerts.md) [Warnungen auflisten.](get-alerts.md)
 
-Defender for Endpoint unterstützt Sicherheitsinformations- und Ereignisverwaltungstools (SIEM) zum Ziehen von Erkennungen. Defender for Endpoint macht Warnungen über einen in Azure gehosteten HTTPS-Endpunkt verfügbar. Der Endpunkt kann so konfiguriert werden, dass Erkennungen von Ihrem Unternehmens-Mandanten in Azure Active Directory (AAD) mithilfe des OAuth 2.0-Authentifizierungsprotokolls für eine AAD-Anwendung, die den spezifischen SIEM-Connector darstellt, der in Ihrer Umgebung installiert ist, verwendet werden.
+Defender for Endpoint unterstützt Sicherheitsinformations- und Ereignisverwaltungstools (SIEM) zum Ziehen von Erkennungen. Defender for Endpoint macht Warnungen über einen in Azure gehosteten HTTPS-Endpunkt verfügbar. Der Endpunkt kann so konfiguriert werden, dass Erkennungen von Ihrem Unternehmens mandanten in Azure Active Directory (AAD) mithilfe des OAuth 2.0-Authentifizierungsprotokolls für eine AAD-Anwendung, die den spezifischen SIEM-Connector darstellt, der in Ihrer Umgebung installiert ist, verwendet werden.
 
 Defender for Endpoint unterstützt derzeit die folgenden spezifischen SIEM-Lösungstools über ein dediziertes SIEM-Integrationsmodell:
 

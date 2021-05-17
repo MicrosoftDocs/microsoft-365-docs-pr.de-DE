@@ -21,9 +21,9 @@ ms.locfileid: "51408176"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Doppelschlüsselverschlüsselung für Microsoft 365
 
-> *Gilt für: Double Key Encryption for Microsoft 365, [Microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
+> *Gilt für: Double Key Encryption for Microsoft 365, [Microsoft 365 Compliance](https://www.microsoft.com/microsoft-365/business/compliance-management), Azure [Information Protection](https://azure.microsoft.com/pricing/details/information-protection)*
 >
-> *Anweisungen für: [Azure Information Protection Unified Labeling Client for Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
+> *Anweisungen für: [Azure Information Protection unified labeling client for Windows](/azure/information-protection/faqs#whats-the-difference-between-the-azure-information-protection-classic-and-unified-labeling-clients)*
 >
 > *Dienstbeschreibung für: [Microsoft 365 Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)*
 
@@ -35,13 +35,13 @@ Weitere Informationen zu den standardmäßigen, cloudbasierten Mandantenstammsch
 
 ## <a name="when-your-organization-should-adopt-dke"></a>Wann Ihre Organisation DKE übernehmen soll
 
-Die Doppelschlüsselverschlüsselung ist für Ihre vertraulichen Daten vorgesehen, die den strengsten Schutzanforderungen unterliegen. DKE ist nicht für alle Daten vorgesehen. Im Allgemeinen verwenden Sie die Doppelschlüsselverschlüsselung, um nur einen kleinen Teil Ihrer Gesamtdaten zu schützen. Sie sollten vor der Bereitstellung die richtigen Daten ermitteln, die mit dieser Lösung zu decken sind. In einigen Fällen müssen Sie möglicherweise Ihren Bereich einen und andere Lösungen für die meisten Ihrer Daten verwenden, z. B. Microsoft Information Protection mit von Microsoft verwalteten Schlüsseln oder BYOK. Diese Lösungen sind ausreichend für Dokumente, die keinen erweiterten Schutz- und behördlichen Anforderungen unterliegen. Mit diesen Lösungen können Sie außerdem die leistungsstärksten Office 365-Dienste verwenden. Dienste, die Sie nicht mit DKE-verschlüsselten Inhalten verwenden können. Beispiel:
+Die Doppelschlüsselverschlüsselung ist für Ihre vertraulichen Daten vorgesehen, die den strengsten Schutzanforderungen unterliegen. DKE ist nicht für alle Daten vorgesehen. Im Allgemeinen verwenden Sie die Doppelschlüsselverschlüsselung, um nur einen kleinen Teil Ihrer Gesamtdaten zu schützen. Sie sollten vor der Bereitstellung die richtigen Daten ermitteln, die mit dieser Lösung zu decken sind. In einigen Fällen müssen Sie möglicherweise Ihren Bereich einen und andere Lösungen für die meisten Ihrer Daten verwenden, z. B. Microsoft Information Protection mit von Microsoft verwalteten Schlüsseln oder BYOK. Diese Lösungen sind ausreichend für Dokumente, die keinen erweiterten Schutz- und behördlichen Anforderungen unterliegen. Darüber hinaus ermöglichen ihnen diese Lösungen die Verwendung der leistungsstärksten Office 365 Dienste; Dienste, die Sie nicht mit DKE-verschlüsselten Inhalten verwenden können. Beispiel:
 
 - Transportregeln, einschließlich Anti-Malware und Spam, die sichtbarkeit in der Anlage erfordern
 - Microsoft Delve
 - eDiscovery
 - Inhaltssuche und Indizierung
-- Office Web Apps einschließlich Funktionen für die gemeinsamen Dokumentierung
+- Office Web apps including coauthoring functionality
 
 Externe Anwendungen oder Dienste, die nicht über das MIP SDK in DKE integriert sind, können keine Aktionen für die verschlüsselten Daten ausführen.
 
@@ -57,21 +57,21 @@ Wenn Ihre Organisationen eine der folgenden Anforderungen erfüllen, können Sie
 
 ## <a name="system-and-licensing-requirements-for-dke"></a>System- und Lizenzierungsanforderungen für DKE
 
-**Die Doppelschlüsselverschlüsselung für Microsoft 365** ist in Microsoft 365 E5 verfügbar. Wenn Sie nicht über eine Microsoft 365 E5-Lizenz verfügen, können Sie sich für eine Testversion [registrieren.](https://aka.ms/M365E5ComplianceTrial) Weitere Informationen zu diesen Lizenzen finden Sie unter [Microsoft 365 Licensing Guidance for security & compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+**Double Key Encryption for Microsoft 365** ist mit Microsoft 365 E5. Wenn Sie nicht über eine Microsoft 365 E5 verfügen, können Sie sich für eine Testversion [registrieren.](https://aka.ms/M365E5ComplianceTrial) Weitere Informationen zu diesen Lizenzen finden Sie [unter Microsoft 365 Lizenzierungsleitfade für & Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 **Azure Information Protection**. DKE arbeitet mit Vertraulichkeitsbezeichnungen und erfordert Azure Information Protection.
 
-DkE-Vertraulichkeitsbezeichnungen werden Endbenutzern über das Vertraulichkeitsband in Office Desktop Apps zur Verfügung stellen. Installieren Sie diese Voraussetzungen auf jedem Clientcomputer, auf dem Sie geschützte Dokumente schützen und nutzen möchten.
+DKE-Vertraulichkeitsbezeichnungen werden Endbenutzern über das Vertraulichkeitsband in Office Desktop-Apps zur Verfügung stellen. Installieren Sie diese Voraussetzungen auf jedem Clientcomputer, auf dem Sie geschützte Dokumente schützen und nutzen möchten.
 
-**Microsoft Office Apps für Unternehmen,** Version 2009 oder höher (Desktopversionen von Word, PowerPoint und Excel) unter Windows.
+**Microsoft Office Apps for Enterprise** Version 2009 oder höher (Desktopversionen von Word, PowerPoint und Excel) auf Windows.
 
 **Azure Information Protection Unified Labeling Client** Version 2.7.93.0 oder höher. Laden Sie den Unified Labeling-Client aus dem Microsoft Download Center herunter, und [installieren Sie den Client.](https://www.microsoft.com/download/details.aspx?id=53018)
 
 ## <a name="supported-environments-for-storing-and-viewing-dke-protected-content"></a>Unterstützte Umgebungen zum Speichern und Anzeigen von DKE-geschützten Inhalten
 
-**Unterstützte Anwendungen**. [Microsoft 365 Apps für Unternehmensclients](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) unter Windows, einschließlich Word, Excel und PowerPoint.
+**Unterstützte Anwendungen**. [Microsoft 365 Apps for Enterprise](https://www.microsoft.com/microsoft-365/business/microsoft-365-apps-for-enterprise-product) clients on Windows, including Word, Excel, and PowerPoint.
 
-**Online-Inhaltsunterstützung**. Sie können Dokumente und Dateien, die mit der Doppelschlüsselverschlüsselung geschützt sind, online sowohl in Microsoft SharePoint als auch in OneDrive for Business speichern. Sie müssen Dokumente und Dateien mit DKE durch unterstützte Anwendungen beschriften und schützen, bevor Sie an diese Speicherorte hochladen. Sie können verschlüsselte Inhalte per E-Mail freigeben, verschlüsselte Dokumente und Dateien können jedoch nicht online angezeigt werden. Stattdessen müssen Sie geschützte Inhalte mithilfe der unterstützten Desktopanwendungen und Clients auf Dem lokalen Computer anzeigen.
+**Online-Inhaltsunterstützung**. Sie können Dokumente und Dateien, die mit der Double Key Encryption geschützt sind, online in Microsoft SharePoint und OneDrive for Business. Sie müssen Dokumente und Dateien mit DKE durch unterstützte Anwendungen beschriften und schützen, bevor Sie an diese Speicherorte hochladen. Sie können verschlüsselte Inhalte per E-Mail freigeben, verschlüsselte Dokumente und Dateien können jedoch nicht online angezeigt werden. Stattdessen müssen Sie geschützte Inhalte mithilfe der unterstützten Desktopanwendungen und Clients auf Dem lokalen Computer anzeigen.
 
 ## <a name="overview-of-deploying-dke"></a>Übersicht über die Bereitstellung von DKE
 
@@ -79,9 +79,9 @@ Sie führen die folgenden allgemeinen Schritte zum Einrichten von DKE aus. Nachd
 
 1. Stellen Sie den DKE-Dienst wie in diesem Artikel beschrieben zur Verfügung.
 
-2. Erstellen Sie eine Bezeichnung mit Double Key Encryption. Navigieren Sie zu Informationsschutz unter [dem Microsoft 365 Compliance Center,](https://compliance.microsoft.com) und erstellen Sie eine neue Bezeichnung mit Double Key Encryption. Weitere [Informationen finden Sie unter Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zum Anwenden der Verschlüsselung.](./encryption-sensitivity-labels.md)
+2. Erstellen Sie eine Bezeichnung mit Double Key Encryption. Navigieren Sie zu Informationsschutz unter [Microsoft 365 Compliance Center,](https://compliance.microsoft.com) und erstellen Sie eine neue Bezeichnung mit Double Key Encryption. Weitere [Informationen finden Sie unter Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zum Anwenden der Verschlüsselung.](./encryption-sensitivity-labels.md)
 
-3. Verwenden Sie Doppelschlüsselverschlüsselungsbezeichnungen. Schützen Sie Daten, indem Sie im Menüband Vertraulichkeit die Bezeichnung "Double Key Encrypted" in Microsoft Office.
+3. Verwenden Sie Doppelschlüsselverschlüsselungsbezeichnungen. Schützen Sie Daten, indem Sie im Menüband Vertraulichkeit in der Datei "Double Key Encrypted" Microsoft Office.
 
 Es gibt verschiedene Möglichkeiten, wie Sie einige der Schritte zum Bereitstellen der Double Key Encryption ausführen können. Dieser Artikel enthält ausführliche Anweisungen, damit weniger erfahrene Administratoren den Dienst erfolgreich bereitstellen können. Wenn Sie es sich bequem machen, können Sie ihre eigenen Methoden verwenden.
 
@@ -94,7 +94,7 @@ Sehen Sie [sich das Bereitstellungsvideo](https://youtu.be/vDWfHN_kygg) zur Doub
 Führen Sie die folgenden allgemeinen Schritte aus, um die Doppelschlüsselverschlüsselung für Ihre Organisation zu einrichten.
 
 1. [Installieren von Softwarevoraussetzungen für den DKE-Dienst](#install-software-prerequisites-for-the-dke-service)
-1. [Klonen des GitHub-Repository für die Doppelschlüsselverschlüsselung](#clone-the-dke-github-repository)
+1. [Klonen des Double Key Encryption GitHub Repository](#clone-the-dke-github-repository)
 1. [Ändern von Anwendungseinstellungen](#modify-application-settings)
 1. [Generieren von Testschlüsseln](#generate-test-keys)
 1. [Erstellen des Projekts](#build-the-project)
@@ -105,7 +105,7 @@ Führen Sie die folgenden allgemeinen Schritte aus, um die Doppelschlüsselversc
 1. [Aktivieren von DKE in Ihrem Client](#enable-dke-in-your-client)
 1. [Migrieren geschützter Dateien von HYOK-Bezeichnungen zu DKE-Bezeichnungen](#migrate-protected-files-from-hyok-labels-to-dke-labels)
 
-Wenn Sie fertig sind, können Sie Dokumente und Dateien mithilfe von DKE verschlüsseln. Weitere Informationen finden Sie unter [Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
+Wenn Sie fertig sind, können Sie Dokumente und Dateien mithilfe von DKE verschlüsseln. Weitere Informationen finden Sie [unter Apply sensitivity labels to your files and email in Office](https://support.microsoft.com/office/2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
 
 ### <a name="install-software-prerequisites-for-the-dke-service"></a>Installieren von Softwarevoraussetzungen für den DKE-Dienst
 
@@ -129,11 +129,11 @@ Installieren Sie diese Voraussetzungen auf dem Computer, auf dem Sie den DKE-Die
 
 **OpenSSL** Sie müssen [OpenSSL installiert haben,](https://slproweb.com/products/Win32OpenSSL.html) um [Testschlüssel zu generieren,](#generate-test-keys) nachdem Sie DKE bereitgestellt haben. Stellen Sie sicher, dass Sie den Pfad für Umgebungsvariablen korrekt aufrufen. Weitere Informationen finden Sie unter "Hinzufügen des Installationsverzeichnisses zu [https://www.osradar.com/install-openssl-windows/](https://www.osradar.com/install-openssl-windows/) PATH".
 
-### <a name="clone-the-dke-github-repository"></a>Klonen des DKE GitHub-Repositorys
+### <a name="clone-the-dke-github-repository"></a>Klonen des DKE GitHub Repositorys
 
-Microsoft stellt die DKE-Quelldateien in einem GitHub-Repository bereit. Sie klonen das Repository, um das Projekt lokal für die Verwendung In Ihrer Organisation zu erstellen. Das DKE GitHub-Repository befindet sich unter [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) .
+Microsoft stellt die DKE-Quelldateien in einem GitHub zur Verfügung. Sie klonen das Repository, um das Projekt lokal für die Verwendung In Ihrer Organisation zu erstellen. Das DKE-GitHub-Repository befindet sich unter [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) .
 
-Die folgenden Anweisungen sind für unerfahrene Git- oder Visual Studio vorgesehen:
+Die folgenden Anweisungen sind für unerfahrene Git- oder Visual Studio Code vorgesehen:
 
 1. Wechseln Sie in Ihrem Browser zu: [https://github.com/Azure-Samples/DoubleKeyEncryptionService](https://github.com/Azure-Samples/DoubleKeyEncryptionService) .
 
@@ -142,22 +142,22 @@ Die folgenden Anweisungen sind für unerfahrene Git- oder Visual Studio vorgeseh
     Beispiel:
 
    > [!div class="mx-imgBorder"]
-   > ![Klonen des Doppelten Schlüsselverschlüsselungsdienstrepositorys von GitHub](../media/dke-clone.png)
+   > ![Klonen Sie das Double Key Encryption Service Repository aus GitHub](../media/dke-clone.png)
 
-3. Wählen Visual Studio Code die  Option \> **Befehlspalette anzeigen und** **Git: Klonen aus.** Um zu der Option in der Liste zu wechseln, beginnen Sie mit der Eingabe, um die Einträge zu filtern, und wählen Sie sie dann aus der `git: clone` Dropdownliste aus. Beispiel:
+3. Wählen Visual Studio Code **Befehlspalette** \> **anzeigen aus,** und wählen **Sie Git: Klonen aus.** Um zu der Option in der Liste zu wechseln, beginnen Sie mit der Eingabe, um die Einträge zu filtern, und wählen Sie sie dann aus der `git: clone` Dropdownliste aus. Beispiel:
 
    > [!div class="mx-imgBorder"]
    > ![Visual Studio Code GIT:Clone-Option](../media/dke-vscode-clone.png)
 
-4. Fügen Sie in das Textfeld die URL ein, die Sie aus Git kopiert haben, und wählen Sie **Klonen aus GitHub aus.**
+4. Fügen Sie in das Textfeld die URL ein, die Sie aus Git kopiert haben, und wählen Sie **Klonen aus GitHub**.
 
 5. Navigieren Sie **im angezeigten** Dialogfeld Ordner auswählen zu einem Speicherort, und wählen Sie diesen aus, um das Repository zu speichern. Wählen Sie an der Eingabeaufforderung **Öffnen aus.**
 
     Das Repository wird in Visual Studio Code geöffnet und zeigt die aktuelle Git-Verzweigung unten links an. Die Verzweigung sollte z. B. main **sein.** Beispiel:
 
-   ![Screenshot des DKE-Repositorys in Visual Studio Code mit der Hauptverzweigung](../media/dke-vscode-main-branch.jpg)
+   ![Screenshot des DKE-Repositorys in Visual Studio Code der Hauptverzweigung](../media/dke-vscode-main-branch.jpg)
 
-6. Wenn Sie nicht in der Hauptverzweigung sind, müssen Sie sie auswählen. Wählen Visual Studio Code die Verzweigung aus, und wählen Sie **haupt** aus der Liste der angezeigten Verzweigungen aus.
+6. Wenn Sie nicht in der Hauptverzweigung sind, müssen Sie sie auswählen. Wählen Visual Studio Code Zweig aus, und wählen Sie **haupt** aus der Liste der angezeigten Verzweigungen aus.
 
    > [!IMPORTANT]
    > Durch Auswählen der Hauptverzweigung wird sichergestellt, dass Sie über die richtigen Dateien zum Erstellen des Projekts verfügen. Wenn Sie nicht die richtige Verzweigung auswählen, wird die Bereitstellung fehlschlagen.
@@ -263,7 +263,7 @@ Nachdem Sie die Anwendungseinstellungen definiert haben, können Sie öffentlich
 
 So generieren Sie Schlüssel:
 
-1. Führen Sie im Windows-Startmenü die OpenSSL-Eingabeaufforderung aus.
+1. Führen Sie Windows Startmenü die OpenSSL-Eingabeaufforderung aus.
 
 2. Wechseln Sie zu dem Ordner, in dem Sie die Testschlüssel speichern möchten. Die Dateien, die Sie durch Ausführen der Schritte in dieser Aufgabe erstellen, werden im gleichen Ordner gespeichert.
 
@@ -294,7 +294,7 @@ So generieren Sie Schlüssel:
     > [!IMPORTANT]
     > Wenn Sie diesen Inhalt kopieren, löschen Sie keine der PEM-Daten.
 
-9. Navigieren Visual Studio Code zur Datei **Startup.cs.** Diese Datei befindet sich im DoubleKeyEncryptionService-Repository, das Sie lokal unter DoubleKeyEncryptionService\src\customer-key-store\ geklont haben.
+9. Navigieren Visual Studio Code sie zur **Datei Startup.cs.** Diese Datei befindet sich im DoubleKeyEncryptionService-Repository, das Sie lokal unter DoubleKeyEncryptionService\src\customer-key-store\ geklont haben.
 
 10. Suchen Sie die folgenden Zeilen:
 
@@ -409,15 +409,15 @@ Um den Schlüsselspeicher zu veröffentlichen, erstellen Sie eine Azure App Serv
 
    Beispiel: `customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
 
-4. Senden Sie alle Dateien im Veröffentlichungsverzeichnis an eine ZIP-Datei. Stellen Sie beim Erstellen der ZIP-Datei sicher, dass sich alle Dateien im Verzeichnis auf der Stammebene der ZIP-Datei befinden.
+4. Senden Sie alle Dateien im Veröffentlichungsverzeichnis an .zip Datei. Stellen Sie beim .zip der Datei sicher, dass sich alle Dateien im Verzeichnis auf der Stammebene der .zip befinden.
 
-5. Ziehen Sie die zip-Datei, die Sie erstellen, und legen Sie sie auf die oben geöffnete ZipDeployUI-Website ab. Beispiel: https://dkeservice.scm.azurewebsites.net/ZipDeployUI
+5. Ziehen Und ablegen Sie die .zip, die Sie erstellen, auf die oben geöffnete ZipDeployUI-Website. Beispiel: https://dkeservice.scm.azurewebsites.net/ZipDeployUI
 
 DKE wird bereitgestellt, und Sie können zu den von Ihnen erstellten Testschlüsseln navigieren. Fahren Sie mit [Validate your deployment below](#validate-your-deployment) fort.
 
 #### <a name="publish-via-ftp"></a>Veröffentlichen über FTP
 
-1. Stellen Sie eine Verbindung mit dem oben erstellten [App-Dienst herzustellen.](#deploy-the-dke-service-and-publish-the-key-store)
+1. Verbinden app Service, den Sie oben erstellt [haben.](#deploy-the-dke-service-and-publish-the-key-store)
 
    Wechseln Sie in Ihrem Browser zu: **Azure portal**  >  **App Service** Deployment  >  **Center**  >  **Manual Deployment**  >  **FTP**  >  **Dashboard**.
 
@@ -437,9 +437,9 @@ DKE wird bereitgestellt, und Sie können zu den von Ihnen erstellten Testschlüs
 
    Beispiel: `customer-key-store\src\customer-key-store\bin\Debug\netcoreapp3.1\publish\`
 
-6. Senden Sie alle Dateien im Veröffentlichungsverzeichnis an eine ZIP-Datei. Stellen Sie beim Erstellen der ZIP-Datei sicher, dass sich alle Dateien im Verzeichnis auf der Stammebene der ZIP-Datei befinden.
+6. Senden Sie alle Dateien im Veröffentlichungsverzeichnis an eine ZIP-Datei. Stellen Sie beim .zip der Datei sicher, dass sich alle Dateien im Verzeichnis auf der Stammebene der .zip befinden.
 
-7. Verwenden Sie von Ihrem FTP-Client die Verbindungsinformationen, die Sie kopiert haben, um eine Verbindung mit Ihrem App-Dienst herzustellen. Laden Sie die im vorherigen Schritt erstellte ZIP-Datei in das Stammverzeichnis Ihrer Web App hoch.
+7. Verwenden Sie von Ihrem FTP-Client die Verbindungsinformationen, die Sie kopiert haben, um eine Verbindung mit Ihrem App-Dienst herzustellen. Hochladen die .zip, die Sie im vorherigen Schritt erstellt haben, in das Stammverzeichnis Ihrer Web App.
 
 DKE wird bereitgestellt, und Sie können zu den von Ihnen erstellten Testschlüsseln navigieren. Überprüfen Sie als Nächstes [Die Bereitstellung überprüfen.](#validate-your-deployment)
 
@@ -447,7 +447,7 @@ DKE wird bereitgestellt, und Sie können zu den von Ihnen erstellten Testschlüs
 
 Überprüfen Sie nach der Bereitstellung von DKE mit einer der oben beschriebenen Methoden die Bereitstellung und die Einstellungen für den Schlüsselspeicher.
 
-Führen Sie  aus.
+Ausführen:
 
 ```powershell
 src\customer-key-store\scripts\key_store_tester.ps1 dkeserviceurl/mykey
@@ -469,13 +469,13 @@ Mit den folgenden Schritten können Sie Ihren DKE-Dienst registrieren. Die Regis
 
 So registrieren Sie den DKE-Dienst:
 
-1. Öffnen Sie in Ihrem Browser das [Microsoft Azure-Portal,](https://ms.portal.azure.com/)und wechseln Sie zu **All Services** \> **Identity** \> **App Registrations**.
+1. Öffnen Sie in Ihrem Browser [das Microsoft Azure Portal,](https://ms.portal.azure.com/)und wechseln Sie zu **All Services** \> **Identity** \> **App Registrations**.
 
 2. Wählen **Sie Neue Registrierung** aus, und geben Sie einen aussagekräftigen Namen ein.
 
 3. Wählen Sie einen Kontotyp aus den angezeigten Optionen aus.
 
-   Wenn Sie Microsoft Azure mit einer nicht benutzerdefinierten Domäne wie **z.** B. onmicrosoft.com verwenden, wählen Sie Nur Konten in diesem Organisationsverzeichnis **aus (Nur Microsoft – Einzelner Mandant).**
+   Wenn Sie Microsoft Azure einer nicht benutzerdefinierten Domäne wie **z.** B. onmicrosoft.com verwenden, wählen Sie nur Konten in diesem Organisationsverzeichnis **aus (nur Microsoft – Einzelner Mandant).**
 
    Beispiel:
 
@@ -522,7 +522,7 @@ So registrieren Sie den DKE-Dienst:
 
     In der neuen Clientanwendung:
 
-    1. Definieren Sie die Client-ID als `d3590ed6-52b3-4102-aeff-aad2292ab01c` . Dieser Wert ist die Microsoft Office-Client-ID und ermöglicht Es Office, ein Zugriffstoken für Ihren Schlüsselspeicher abzurufen.
+    1. Definieren Sie die Client-ID als `d3590ed6-52b3-4102-aeff-aad2292ab01c` . Dieser Wert ist die Microsoft Office-Client-ID und ermöglicht Office, ein Zugriffstoken für Ihren Schlüsselspeicher abzurufen.
 
     2. Wählen **Sie unter** Autorisierte Bereiche den **user_impersonation** aus.
 
@@ -536,21 +536,21 @@ Ihr DKE-Dienst ist jetzt registriert. Fahren Sie [fort, indem Sie Bezeichnungen 
 
 ## <a name="create-sensitivity-labels-using-dke"></a>Erstellen von Vertraulichkeitsbezeichnungen mithilfe von DKE
 
-Erstellen Sie im Microsoft 365 Compliance Center eine neue Vertraulichkeitsbezeichnung, und wenden Sie die Verschlüsselung wie andernfalls an. Wählen **Sie Doppelschlüsselverschlüsselung verwenden aus,** und geben Sie die Endpunkt-URL für Ihren Schlüssel ein.
+Erstellen Sie Microsoft 365 Compliance Center eine neue Vertraulichkeitsbezeichnung, und wenden Sie die Verschlüsselung wie andernfalls an. Wählen **Sie Doppelschlüsselverschlüsselung verwenden aus,** und geben Sie die Endpunkt-URL für Ihren Schlüssel ein.
 
 Beispiel:
 
 > [!div class="mx-imgBorder"]
-> ![Auswählen von Doppelschlüsselverschlüsselung im Microsoft 365 Compliance Center](../media/dke-use-dke.png)
+> ![Wählen Sie Doppelschlüsselverschlüsselung verwenden im Microsoft 365 Compliance Center aus.](../media/dke-use-dke.png)
 
-Alle hinzugefügten DKE-Bezeichnungen werden für Benutzer in den neuesten Versionen von Microsoft 365 Apps for Enterprise angezeigt.
+Alle hinzugefügten DKE-Bezeichnungen werden für Benutzer in den neuesten Versionen von Microsoft 365 Apps for Enterprise.
 
 > [!NOTE]
 > Es kann bis zu 24 Stunden dauern, bis die Clients mit den neuen Bezeichnungen aktualisiert werden.
 
 ### <a name="enable-dke-in-your-client"></a>Aktivieren von DKE in Ihrem Client
 
-Wenn Sie ein Office-Insider sind, ist DKE für Sie aktiviert. Aktivieren Sie andernfalls DKE für Ihren Client, indem Sie die folgenden Registrierungsschlüssel hinzufügen:
+Wenn Sie ein Office sind, ist DKE für Sie aktiviert. Aktivieren Sie andernfalls DKE für Ihren Client, indem Sie die folgenden Registrierungsschlüssel hinzufügen:
 
 ```console
    [HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIPC\flighting]

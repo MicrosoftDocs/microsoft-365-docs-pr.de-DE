@@ -47,18 +47,18 @@ Wenn Sie **im** Widget auf Details anzeigen klicken, zeigt ihnen das Flyout Mess
 
 ![Nachrichten, die bei der Übertragung (durch TLS) geschützt sind und angezeigt werden, nachdem Sie im Widget Ausgehende und eingehende E-Mails auf Details anzeigen geklickt haben](../../media/mfi-outbound-and-inbound-mail-flow-report-details.png)
 
-Derzeit ist TLS 1.2 die sicherste Version von TLS, die von Microsoft 365 angeboten wird. Häufig müssen Sie die TLS-Verschlüsselung kennen, die für Compliance-Audits verwendet wird. Wahrscheinlich haben Sie keine direkte Beziehung zu den meisten Quell- und Ziel-E-Mail-Servern (Sie besitzen sie nicht, und Microsoft auch nicht), daher haben Sie nicht viele Optionen, um die von diesen Servern verwendete TLS-Verschlüsselung zu verbessern.
+Derzeit ist TLS 1.2 die sicherste Version von TLS, die von Microsoft 365. Häufig müssen Sie die TLS-Verschlüsselung kennen, die für Compliance-Audits verwendet wird. Wahrscheinlich haben Sie keine direkte Beziehung zu den meisten Quell- und Ziel-E-Mail-Servern (Sie besitzen sie nicht, und Microsoft auch nicht), daher haben Sie nicht viele Optionen, um die von diesen Servern verwendete TLS-Verschlüsselung zu verbessern.
 
-Sie können jedoch Connectors [verwenden,](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) um den besten verfügbaren TLS-Schutz für Nachrichten sicherzustellen, die zwischen Ihren E-Mail-Servern und Microsoft 365 gesendet werden. Der E-Mail-Fluss zwischen Microsoft 365 und Ihren eigenen E-Mail-Servern oder Servern, die Zu Ihren Partnern gehören, ist häufig wichtiger und vertraulicher als normale Nachrichten, daher sollten Sie zusätzliche Sicherheit und Aufmerksamkeit auf diese Nachrichten anwenden.
+Sie können jedoch Connectors [verwenden,](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow) um den besten verfügbaren TLS-Schutz für Nachrichten sicherzustellen, die zwischen Ihren E-Mail-Servern und Microsoft 365. Der E-Mail-Fluss zwischen Microsoft 365 und Ihren eigenen E-Mail-Servern oder Servern, die Zu Ihren Partnern gehören, ist häufig wichtiger und vertraulicher als normale Nachrichten, daher sollten Sie zusätzliche Sicherheit und Überwachung auf diese Nachrichten anwenden.
 
-Sie können Ihre eigenen E-Mail-Server aktualisieren oder beheben, um die verwendete TLS-Verschlüsselung zu verbessern, oder Ihre Partner kontaktieren, um dies zu tun. Der **Connectorbericht zeigt** sowohl das Volumen des Nachrichtenflusses als auch die TLS-Verschlüsselung für Nachrichten an, die Ihre Microsoft 365-Connectors verwenden.
+Sie können Ihre eigenen E-Mail-Server aktualisieren oder beheben, um die verwendete TLS-Verschlüsselung zu verbessern, oder Ihre Partner kontaktieren, um dies zu tun. Der **Connectorbericht zeigt** sowohl das Volumen des Nachrichtenflusses als auch die TLS-Verschlüsselung für Nachrichten an, die Ihre Microsoft 365 verwenden.
 
 Sie können auf den **Link Connectorbericht klicken,** um zum [Connectorbericht zu wechseln.](view-mail-flow-reports.md#connector-report) Die folgenden Einblicke stehen möglicherweise auf der Seite **Connectorbericht** zur Verfügung, wenn die zugeordnete Bedingung erkannt wurde:
 
 - **Eingehender Partnerconnector mit erheblichem TLS1.0-E-Mail-Fluss**
 - **Eingehender OnPremises-Connector mit erheblichem TLS1.0-E-Mail-Fluss**
 
-Für TLS 1.0-Verbindungen müssen Sie ihren E-Mail-Server oder den Server Ihres Partners wirklich aktualisiert oder behoben haben, um Probleme zu vermeiden, wenn die TLS 1.0-Unterstützung in Microsoft 365 nicht mehr unterstützt wird.
+Für TLS 1.0-Verbindungen müssen Sie ihren E-Mail-Server oder den Server Ihres Partners wirklich aktualisiert oder behoben haben, um Probleme zu vermeiden, wenn die TLS 1.0-Unterstützung in diesem Fall nicht mehr Microsoft 365.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -27,7 +27,7 @@ ms.locfileid: "51205546"
 **Gilt für**
 -  [Exchange Online Protection eigenständig](exchange-online-protection-overview.md)
 
-In eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer können Überwachungsberichte Ihnen bei der Erfüllung gesetzlicher, compliance- und rechtsstreitigkeiten für Ihre Organisation helfen. Sie können die Überwachungsberichte jederzeit abrufen, um an Ihrer EOP-Konfiguration vorgenommene Änderungen zu ermitteln. Diese Berichte können Sie zum Behandeln von Konfigurationsproblemen sowie zum Ermitteln der Ursache von Sicherheits- oder Kompatibilitätsproblemen heranziehen.
+In eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online können Überwachungsberichte Ihnen helfen, gesetzliche, compliance- und rechtsstreitigkeiten für Ihre Organisation zu erfüllen. Sie können die Überwachungsberichte jederzeit abrufen, um an Ihrer EOP-Konfiguration vorgenommene Änderungen zu ermitteln. Diese Berichte können Sie zum Behandeln von Konfigurationsproblemen sowie zum Ermitteln der Ursache von Sicherheits- oder Kompatibilitätsproblemen heranziehen.
 
 Es stehen zwei Überwachungsberichte in eigenständigem EOP zur Verfügung:
 

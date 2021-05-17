@@ -10,7 +10,7 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Administratoren erfahren, wie Sie benutzerdefinierte Nutzlasten für attack simulation training in Microsoft Defender for Office 365 erstellen.
+description: Administratoren erfahren, wie Sie benutzerdefinierte Nutzlasten für attack simulation training in Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.openlocfilehash: 6cc5dd4a48ab89193133cfaf823d0a1b1868fa79
 ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
@@ -21,7 +21,7 @@ ms.locfileid: "51204072"
 ---
 # <a name="create-a-custom-payload-for-attack-simulation-training"></a>Erstellen einer benutzerdefinierten Nutzlast für Angriffssimulationsschulungen
 
-Microsoft bietet einen robusten Nutzlastkatalog für verschiedene Social -Engineering-Techniken, die Sie mit Ihrem Training zur Angriffssimulation koppeln können. Möglicherweise möchten Sie jedoch benutzerdefinierte Nutzlasten erstellen, die für Ihre Organisation besser funktionieren. In diesem Artikel wird beschrieben, wie Sie eine Nutzlast in Angriffssimulationsschulungen in Microsoft Defender für Office 365 erstellen.
+Microsoft bietet einen robusten Nutzlastkatalog für verschiedene Social -Engineering-Techniken, die Sie mit Ihrem Training zur Angriffssimulation koppeln können. Möglicherweise möchten Sie jedoch benutzerdefinierte Nutzlasten erstellen, die für Ihre Organisation besser funktionieren. In diesem Artikel wird beschrieben, wie Sie eine Nutzlast in attack simulation training in Microsoft Defender for Office 365.
 
 Sie können eine Nutzlast erstellen, indem Sie auf der Registerkarte Dedizierte Nutzlasten oder im Assistenten zum Erstellen der Simulation auf Nutzlast [erstellen klicken.](attack-simulation-training.md#selecting-a-payload) [  ](https://security.microsoft.com/attacksimulator?viewid=payload) 
 
@@ -40,7 +40,7 @@ Jetzt ist es an der Zeit, Ihre Nutzlast zu erstellen. Geben Sie den Namen des Ab
 
 Zum Erstellen Ihrer Nutzlast steht ein Rich-Text-Editor zur Verfügung. Sie können auch eine E-Mail importieren, die Sie zuvor erstellt haben. Wenn Sie den Textkörper der E-Mail erstellen, nutzen Sie die dynamischen Tags, um die E-Mail an Ihre Ziele zu personalisieren.  Klicken **Sie auf Phishinglink,** um die zuvor ausgewählte Phishing-URL dem Nachrichtentext hinzuzufügen.
 
-![Phishinglinks und dynamische Tags, die in der Nutzlasterstellung für Microsoft Defender für Office 365 hervorgehoben werden](../../media/attack-sim-preview-payload-email-body.png)
+![Phishinglinks und dynamische Tags, die in der Nutzlasterstellung für Microsoft Defender for Office 365](../../media/attack-sim-preview-payload-email-body.png)
 
 > [!TIP]
 > Um Zeit zu sparen, aktivieren Sie die Option, um alle Links in der E-Mail-Nachricht durch **den Phishinglink zu ersetzen.**

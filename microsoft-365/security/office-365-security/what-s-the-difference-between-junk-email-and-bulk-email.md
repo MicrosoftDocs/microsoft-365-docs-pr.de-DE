@@ -35,7 +35,7 @@ ms.locfileid: "51206974"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer fragen Kunden manchmal: "Was ist der Unterschied zwischen Junk-E-Mails und Massen-E-Mails?" In diesem Thema wird der Unterschied erläutert und die Steuerelemente beschrieben, die in EOP verfügbar sind.
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer fragen Kunden manchmal: "Was ist der Unterschied zwischen Junk-E-Mails und Massen-E-Mails?" In diesem Thema wird der Unterschied erläutert und die Steuerelemente beschrieben, die in EOP verfügbar sind.
 
 - **Junk-E-Mails** sind Spam, bei denen es sich um unerwünschte und universell unerwünschte Nachrichten handelt (wenn sie ordnungsgemäß identifiziert werden). Standardmäßig lehnt das EOP Spam basierend auf der Reputation des Quell-E-Mail-Servers ab. Wenn eine Nachricht die Quell-IP-Prüfung übergibt, wird sie an die Spamfilterung gesendet. Wenn die Nachricht durch Spamfilterung als Spam klassifiziert wird, wird die Nachricht (standardmäßig) an die beabsichtigten Empfänger zugestellt und in ihren Junk-E-Mail-Ordner verschoben.
 

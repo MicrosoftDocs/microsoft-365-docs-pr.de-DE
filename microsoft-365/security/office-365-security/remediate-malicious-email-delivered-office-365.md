@@ -1,5 +1,5 @@
 ---
-title: Behebung bösartiger E-Mails, die in Office 365 zugestellt wurden
+title: Behebung bösartiger E-Mails, die in diesem Office 365
 author: msfttracyp
 ms.author: tracyp
 manager: dansimp
@@ -22,14 +22,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51206614"
 ---
-# <a name="remediate-malicious-email-delivered-in-office-365"></a>Behebung bösartiger E-Mails, die in Office 365 zugestellt wurden
+# <a name="remediate-malicious-email-delivered-in-office-365"></a>Behebung bösartiger E-Mails, die in Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
 - [Microsoft Defender für Office 365 – Plan 2](defender-for-office-365.md)
 
-Korrektur bedeutet, eine vorgeschriebene Aktion gegen eine Bedrohung zu ergreifen. Bösartige E-Mails, die an Ihre Organisation gesendet werden, können entweder vom System, über die automatische Löschzeit (Zero-Hour Auto Purge, ZAP) oder von Sicherheitsteams durch Korrekturaktionen wie Verschieben in den *Posteingang,* Wechseln zu *Junk,* Verschieben zu gelöschten *Elementen,* soft *delete* oder hard *delete* bereinigt werden. Microsoft Defender für Office 365 P2/E5 ermöglicht Es Sicherheitsteams, Bedrohungen in E-Mail- und Zusammenarbeitsfunktionen durch manuelle und automatisierte Untersuchung zu abwehren.
+Korrektur bedeutet, eine vorgeschriebene Aktion gegen eine Bedrohung zu ergreifen. Bösartige E-Mails, die an Ihre Organisation gesendet werden, können entweder vom System, über die automatische Löschzeit (Zero-Hour Auto Purge, ZAP) oder von Sicherheitsteams durch Korrekturaktionen wie Verschieben in den *Posteingang,* Wechseln zu *Junk,* Verschieben zu gelöschten *Elementen,* soft *delete* oder hard *delete* bereinigt werden. Microsoft Defender for Office 365 P2/E5 ermöglicht Es Sicherheitsteams, Bedrohungen in E-Mail- und Zusammenarbeitsfunktionen durch manuelle und automatisierte Untersuchung zu beabwehren.
 
 > [!NOTE]
 > Zum Bereinigen bösartiger E-Mails benötigen Sicherheitsteams *die* Ihnen zugewiesene Such- und Bereinigungsrolle. Die Rollenzuweisung erfolgt über Berechtigungen im Security and Compliance Center.
@@ -43,7 +43,7 @@ Administratoren können die erforderlichen Aktionen für E-Mails ergreifen, aber
 *Die manuelle Suche* erfolgt, wenn Sicherheitsteams Bedrohungen mithilfe der Such- und Filterfunktionen im Bedrohungs-Explorer manuell identifizieren. Manuelle E-Mail-Korrektur kann über eine beliebige E-Mail-Ansicht (*Schadsoftware,* *Phish* oder *Alle* E-Mails ) ausgelöst werden, nachdem Sie eine Reihe von E-Mails identifiziert haben, die behoben werden müssen.
 
 > [!div class="mx-imgBorder"]
-> [![Manuelle Suche im Office 365 Threat Explorer nach Datum.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
+> [![Manuelle Suche im Office 365 Bedrohungs-Explorer nach Datum.](../../media/tp-RemediationArticle1.png)](../../media/tp-RemediationArticle1.png#lightbox)
 
 Sicherheitsteams können den Bedrohungs-Explorer verwenden, um E-Mails auf verschiedene Weise auszuwählen:
 
@@ -104,7 +104,7 @@ Das Aktionscenter zeigt alle Korrekturaktionen für die letzten 30 Tage an. Akti
   > [!NOTE]
   > Für optimale Ergebnisse sollte die Korrektur in Batches von 50.000 oder weniger durchgeführt werden.
 
-  Während der Behebung werden nur bearbeitbare E-Mails verwendet. Nicht bearbeitbare E-Mails können vom Office 365-E-Mail-System nicht behoben werden, da sie nicht in Cloudpostfächern gespeichert werden.
+  Während der Behebung werden nur bearbeitbare E-Mails verwendet. Nicht behHbare E-Mails können nicht vom E-Mail-Office 365 werden, da sie nicht in Cloudpostfächern gespeichert werden.
 
   Administratoren können bei Bedarf Aktionen für E-Mails in Quarantäne ausführen, aber diese E-Mails laufen aus der Quarantäne ab, wenn sie nicht manuell gelöscht werden. E-Mails, die aufgrund schädlicher Inhalte in Quarantäne gestellt werden, sind für Benutzer nicht zugänglich, daher müssen Sicherheitsmitarbeiter keine Maßnahmen ergreifen, um Bedrohungen in Quarantäne zu löschen. Wenn die E-Mails lokal oder extern sind, kann der Benutzer kontaktiert werden, um die verdächtigen E-Mails zu adressieren. Oder die Administratoren können separate E-Mail-Server-/Sicherheitstools zum Entfernen verwenden. Diese E-Mails können durch Anwenden des Zustellungsspeicherorts *= on-prem-externer* Filter im Bedrohungs-Explorer identifiziert werden. Bei fehlgeschlagenen oder verworfenen E-Mails oder E-Mails, auf die Benutzer nicht zugreifen können, gibt es keine E-Mails, die abgemildert werden sollen, da diese E-Mails das Postfach nicht erreichen.
 

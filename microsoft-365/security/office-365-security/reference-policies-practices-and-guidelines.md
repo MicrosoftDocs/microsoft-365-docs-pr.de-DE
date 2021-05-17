@@ -39,15 +39,15 @@ Wenn Sie nicht nach diesen Richtlinien und Anleitungen handeln, ist es möglich,
 
 ## <a name="general-microsoft-policies"></a>Allgemeine Microsoft-Richtlinien
 
-An Microsoft 365-Benutzer gesendete E-Mails müssen alle Microsoft-Richtlinien für die E-Mail-Übertragung und -Verwendung von Microsoft 365 einhalten.
+E-Mails, die an Microsoft 365 gesendet werden, müssen alle Microsoft-Richtlinien für die E-Mail-Übertragung und -Verwendung von Microsoft 365.
 
-- Für Microsoft 365 geltende Nutzungsbedingungen; insbesondere das Verbot, den Dienst zum Spamen oder Verteilen von Schadsoftware zu verwenden.
+- Nutzungsbedingungen für Microsoft 365; insbesondere das Verbot, den Dienst zum Spamen oder Verteilen von Schadsoftware zu verwenden.
 
 - [Microsoft-Servicevertrag](https://www.microsoft.com/servicesagreement/)
 
 ## <a name="governmental-regulations"></a>Einhaltung von gesetzlichen Vorschriften
 
-An Microsoft 365-Benutzer gesendete E-Mails müssen alle geltenden Gesetze und Vorschriften für die E-Mail-Kommunikation in der jeweiligen Gerichtsbarkeit einhalten.
+E-Mails, die an Microsoft 365 benutzer gesendet werden, müssen alle geltenden Gesetze und Vorschriften für die E-Mail-Kommunikation in der jeweiligen Gerichtsbarkeit einhalten.
 
 - [CAN-SPAM Act: Compliance-Leitfaden für Unternehmen](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
@@ -55,13 +55,13 @@ An Microsoft 365-Benutzer gesendete E-Mails müssen alle geltenden Gesetze und V
 
 ## <a name="technical-guidelines"></a>Technische Richtlinien
 
-An Microsoft 365 gesendete E-Mails sollten den anwendbaren Empfehlungen entsprechen, die in den folgenden Dokumenten aufgeführt sind (einige Links sind nur in Englisch verfügbar).
+E-Mails, die an Microsoft 365 gesendet werden, sollten den anwendbaren Empfehlungen entsprechen, die in den folgenden Dokumenten aufgeführt sind (einige Links sind nur in Englisch verfügbar).
 
 - [RFC 2505: Anti-Spam Recommendations for SMTP MTAs](https://www.ietf.org/rfc/rfc2505.txt)
 
 - [RFC 2920: SMTP Service Extension for Command Pipelining](https://www.ietf.org/rfc/rfc2920.txt)
 
-Darüber hinaus müssen E-Mail-Server, die eine Verbindung mit Microsoft 365 herstellen, die folgenden Anforderungen erfüllen:
+Darüber hinaus müssen E-Mail-Server, die eine Verbindung Microsoft 365, die folgenden Anforderungen erfüllen:
 
 - Absender muss allen technischen Standards für die Übermittlung von Internet-E-Mails entsprechen - gemäß der Veröffentlichungen der Internet Engineering Task Force (IETF) von The Internet Society, einschließlich RFC 5321, RFC 5322 und anderen.
 
@@ -81,9 +81,9 @@ Darüber hinaus müssen E-Mail-Server, die eine Verbindung mit Microsoft 365 her
 
 Absender, ISPs und andere Dienstanbietern sollten die Zuverlässigkeit Ihrer ausgehenden IP-Adressen aktiv verwalten.
 
-## <a name="microsoft-365-limits"></a>Microsoft 365-Grenzwerte
+## <a name="microsoft-365-limits"></a>Microsoft 365 Grenzwerte
 
-Absender müssen die in Exchange Online Protection Limits aufgeführten Microsoft 365-Grenzwerte [einhalten.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
+Absender müssen die in Microsoft 365 grenzwerte aufgeführten [Exchange Online Protection einhalten.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
 
 ## <a name="email-delivery-resources-and-organizations"></a>E-Mail-Übermittlungsressourcen und -Organisationen
 

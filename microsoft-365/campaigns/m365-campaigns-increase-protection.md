@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Hilfe zum Erhöhen des Schutzniveaus in Microsoft 365 erhalten
+description: Hilfe zum Erhöhen des Schutzniveaus in Microsoft 365
 ms.openlocfilehash: a1f4714d5b7dcd8d6a22a07c118055e13b27e069
 ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
@@ -30,9 +30,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/27/2021
 ms.locfileid: "51398277"
 ---
-# <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Erhöhen des Bedrohungsschutzes für Microsoft 365-Abonnements
+# <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Erhöhen des Bedrohungsschutzes für Microsoft 365 Abonnement
 
-Dieser Artikel hilft Ihnen, den Schutz in Ihrem Microsoft 365-Abonnement zu erhöhen, um sich vor Phishing, Schadsoftware und anderen Bedrohungen zu schützen. Diese Empfehlungen sind für Organisationen mit erhöhtem Sicherheitsbedarf geeignet, z. B. für politische Kampagnen, Anwaltskanzleien und Gesundheitseinrichtungen.
+Dieser Artikel hilft Ihnen, den Schutz in Ihrem Microsoft 365 zu erhöhen, um sich vor Phishing, Schadsoftware und anderen Bedrohungen zu schützen. Diese Empfehlungen sind für Organisationen mit erhöhtem Sicherheitsbedarf geeignet, z. B. für politische Kampagnen, Anwaltskanzleien und Gesundheitseinrichtungen.
 
 Bevor Sie beginnen, überprüfen Sie Ihre Microsoft Secure Score. Microsoft Secure Score analysiert die Sicherheit Ihrer Organisation basierend auf Ihren regulären Aktivitäten und Sicherheitseinstellungen und weist eine Bewertung zu. Notieren Sie sich zunächst Ihre aktuelle Bewertung. Wenn Sie die in diesem Artikel empfohlenen Aktionen ausführen, wird Ihre Bewertung erhöht. Das Ziel ist nicht, die maximale Punktzahl zu erreichen, sondern die Möglichkeiten zum Schutz Ihrer Umgebung zu kennen, die sich nicht negativ auf die Produktivität ihrer Benutzer auswirken.
 
@@ -40,7 +40,7 @@ Weitere Informationen finden Sie unter [Microsoft Secure Score](../security/defe
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Erhöhen des Schutzniveaus vor Schadsoftware in E-Mails
 
-Ihre Office 365- oder Microsoft 365-Umgebung umfasst Schutz vor Schadsoftware. Sie können diesen Schutz jedoch erhöhen, indem Sie Anlagen mit Dateitypen blockieren, die häufig für Schadsoftware verwendet werden. So stoßen Sie den Schutz vor Schadsoftware in E-Mails an:
+Ihre Office 365 oder Microsoft 365 umfasst Schutz vor Schadsoftware. Sie können diesen Schutz jedoch erhöhen, indem Sie Anlagen mit Dateitypen blockieren, die häufig für Schadsoftware verwendet werden. So stoßen Sie den Schutz vor Schadsoftware in E-Mails an:
 
 1. Wechseln Sie <https://protection.office.com> zu und melden Sie sich mit Ihren Administratorkontoanmeldeinformationen an.
 
@@ -66,11 +66,11 @@ Ransomware schränkt den Zugriff auf Daten ein, indem Dateien verschlüsselt ode
 
 Sie können vor Ransomware schützen, indem Sie eine oder mehrere Nachrichtenflussregeln erstellen, um Dateierweiterungen zu blockieren, die häufig für Ransomware verwendet werden (diese wurden im Erhöhen des Schutzniveaus vor Schadsoftware [im](#raise-the-level-of-protection-against-malware-in-mail) E-Mail-Schritt hinzugefügt) oder um Benutzer zu warnen, die diese Anlagen in E-Mails erhalten.
 
-Zusätzlich zu den Dateien, die Sie im vorherigen Schritt blockiert haben, ist es auch eine bewährte Methode, eine Regel zum Warnen von Benutzern zu erstellen, bevor Sie Office-Dateianlagen öffnen, die Makros enthalten. Ransomware kann in Makros ausgeblendet werden, daher warnen Sie Benutzer davor, diese Dateien vor Personen zu öffnen, die sie nicht kennen.
+Zusätzlich zu den Dateien, die Sie im vorherigen Schritt blockiert haben, ist es auch eine bewährte Methode, eine Regel zum Warnen von Benutzern zu erstellen, bevor sie Office Dateianlagen öffnen, die Makros enthalten. Ransomware kann in Makros ausgeblendet werden, daher warnen Sie Benutzer davor, diese Dateien vor Personen zu öffnen, die sie nicht kennen.
 
 So erstellen Sie eine E-Mail-Transportregel:
 
-1. Wechseln Sie zum Admin Center <https://admin.microsoft.com> unter, und wählen Sie **Admin Center** \> **Exchange aus.**
+1. Wechseln Sie zum Admin Center <https://admin.microsoft.com> unter, und wählen Sie **Admin Center** \> **Exchange**.
 
 2. Klicken Sie **in der** Kategorie Nachrichtenfluss auf **Regeln**.
 
@@ -82,7 +82,7 @@ So erstellen Sie eine E-Mail-Transportregel:
 
 6. Klicken Sie auf **Speichern**.
 
-|Setting|Warnen von Benutzern vor dem Öffnen von Anlagen von Office-Dateien|
+|Setting|Warnen Von Benutzern vor dem Öffnen von Anlagen Office Dateien|
 |---|---|
 |Name|Anti-Ransomware-Regel: Benutzer warnen|
 |Wenden Sie diese Regel an, wenn . . .|Jede Anlage . . . Dateierweiterung entspricht . . .|
@@ -94,7 +94,7 @@ Weitere Informationen finden Sie unter:
 
 - [Ransomware: Verringern des Risikos](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
-- [Wiederherstellen Ihres OneDrive](https://support.microsoft.com//office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
+- [Wiederherstellen ihrer OneDrive](https://support.microsoft.com//office/fa231298-759d-41cf-bcd0-25ac53eb8a15)
 
 ## <a name="stop-auto-forwarding-for-email"></a>Beenden der automatischen Weiterleitung für E-Mails
 
@@ -102,7 +102,7 @@ Hacker, die Zugriff auf das Postfach eines Benutzers erhalten, können Ihre E-Ma
 
 Um eine E-Mail-Transportregel zu erstellen, sehen Sie sich entweder [dieses kurze Video an,](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) oder führen Sie die folgenden Schritte aus:
 
-1. Klicken Sie im Microsoft 365 Admin Center auf **Admin Center** \> **Exchange**.
+1. Klicken Sie Microsoft 365 Admin Center auf **Admin Center** \> **Exchange**.
 
 2. Klicken Sie **in der** Kategorie Nachrichtenfluss auf **Regeln**.
 
@@ -114,7 +114,7 @@ Um eine E-Mail-Transportregel zu erstellen, sehen Sie sich entweder [dieses kurz
 
 6. Klicken Sie auf **Speichern**.
 
-|Setting|Warnen von Benutzern vor dem Öffnen von Anlagen von Office-Dateien|
+|Setting|Warnen Von Benutzern vor dem Öffnen von Anlagen Office Dateien|
 |---|---|
 |Name|Verhindern der automatischen Weiterleitung von E-Mails an externe Domänen|
 |Wenden Sie diese Regel an, wenn ...|Der Absender . . . ist extern/intern . . . Innerhalb der Organisation|
@@ -124,7 +124,7 @@ Um eine E-Mail-Transportregel zu erstellen, sehen Sie sich entweder [dieses kurz
 
 ## <a name="protect-your-email-from-phishing-attacks"></a>Schützen Ihrer E-Mails vor Phishingangriffen
 
-Wenn Sie eine oder mehrere benutzerdefinierte Domänen für Ihre Office 365- oder Microsoft 365-Umgebung konfiguriert haben, können Sie gezielten Antiphishingschutz konfigurieren. Der Antiphishingschutz, der Teil von Microsoft Defender für Office 365 ist, kann Ihre Organisation vor phishingbasierten Phishingangriffen und anderen Phishingangriffen durch böswilligen Identitätswechsel schützen. Wenn Sie keine benutzerdefinierte Domäne konfiguriert haben, müssen Sie dies nicht tun.
+Wenn Sie eine oder mehrere benutzerdefinierte Domänen für Ihre Office 365 oder Microsoft 365 konfiguriert haben, können Sie gezielten Antiphishingschutz konfigurieren. Der Antiphishingschutz, der Teil von Microsoft Defender for Office 365 ist, kann Ihre Organisation vor phishingbasierten Phishingangriffen und anderen Phishingangriffen durch böswilligen Identitätswechsel schützen. Wenn Sie keine benutzerdefinierte Domäne konfiguriert haben, müssen Sie dies nicht tun.
 
 Es wird empfohlen, mit diesem Schutz zu beginnen, indem Sie eine Richtlinie zum Schutz Ihrer wichtigsten Benutzer und Ihrer benutzerdefinierten Domäne erstellen.
 
@@ -147,7 +147,7 @@ Um eine Antiphishingrichtlinie in Defender for Office 365 zu erstellen, sehen Si
 |Name|Domäne und wertvollste Mitarbeiter|
 |Beschreibung|Stellen Sie sicher, dass die wichtigsten Mitarbeiter und unsere Domäne nicht als Identitätswechsel verwendet werden.|
 |Zu schützende Benutzer hinzufügen|Select **+ Add a condition, The recipient is**. Geben Sie Benutzernamen ein, oder geben Sie die E-Mail-Adresse der Geschäftsbesitzer, Partner oder Kandidaten, Manager und anderer wichtiger Mitarbeiter ein. Sie können bis zu 20 interne und externe Adressen hinzufügen, die Sie vor Identitätswechseln schützen möchten.|
-|Zu schützende Domänen hinzufügen|Select **+ Add a condition, The recipient domain is**. Geben Sie die benutzerdefinierte Domäne ein, die Ihrem Microsoft 365-Abonnement zugeordnet ist, wenn Sie eine definiert haben. Sie können mehrere Domänen eingeben.|
+|Zu schützende Domänen hinzufügen|Select **+ Add a condition, The recipient domain is**. Geben Sie die benutzerdefinierte Domäne ein, die Ihrem Microsoft 365 zugeordnet ist, wenn Sie eine definiert haben. Sie können mehrere Domänen eingeben.|
 |Aktionen auswählen|Wenn E-Mails von einem identitätswechselten Benutzer gesendet werden: Wählen Sie **Nachricht** an eine andere E-Mail-Adresse umleiten aus, und geben Sie dann die E-Mail-Adresse des Sicherheitsadministrators ein. Beispiel: *Alice <span> <span> @contoso.com*. <br/> Wenn eine E-Mail von einer imitierten Domäne gesendet wird: Wählen Sie **Nachricht in Quarantäne verschieben** aus.|
 |Mailbox Intelligence|Standardmäßig wird die Mailbox Intelligence ausgewählt, wenn Sie eine neue Anti-Phishing-Richtlinie erstellen. Lassen Sie diese Einstellung auf **Ein**, um optimale Ergebnisse zu erzielen.|
 |Vertrauenswürdige Absender und Domänen hinzufügen|Hier können Sie Ihre eigene Domäne oder andere vertrauenswürdige Domänen hinzufügen.|
@@ -171,7 +171,7 @@ Wenn die Seite Setup  mit Karten in Ihrem Mandanten noch nicht angezeigt wird, e
    ![Wählen Sie Ansicht unter Erhöhen des Schutzes vor erweiterten Bedrohungen aus.](../media/startatp.png)
 
 3. Wählen Sie **auf der Seite Schutz vor erweiterten Bedrohungen** erhöhen die Option Erste Schritte **aus.**
-4. Aktivieren Sie im geöffneten Bereich die Kontrollkästchen neben **Links** und Anlagen in E-Mail, **Dateien in SharePoint, OneDrive** und Teams überprüfen und Links **in Office-Desktop-** und Office #A0 unter Elemente auf schädliche Inhalte **überprüfen.**
+4. Aktivieren Sie im geöffneten Bereich die Kontrollkästchen links **and attachments in email**, Scan files in **SharePoint, OneDrive, and Teams** und Scan links in Office desktop and Office Online **apps** under Scan items for **malicious content**.
 
    Geben **Sie unter Links und Anlagen in E-Mail** alle Benutzer oder die bestimmten Benutzer ein, deren E-Mails gescannt werden sollen.
 
@@ -181,7 +181,7 @@ Wenn die Seite Setup  mit Karten in Ihrem Mandanten noch nicht angezeigt wird, e
 
 ### <a name="set-up-safe-attachments-in-the-security--compliance-center"></a>Einrichten sicherer Anlagen im Security & Compliance Center
 
-Personen senden, empfangen und teilen anlagen, z. B. Dokumente, Präsentationen, Tabellen und vieles mehr. Es ist nicht immer einfach zu bestimmen, ob eine Anlage sicher oder bösartig ist, indem Sie sich eine E-Mail-Nachricht anschauen. Microsoft Defender für Office 365 umfasst sicheren Anlagenschutz, dieser Schutz ist jedoch nicht standardmäßig aktiviert. Es wird empfohlen, eine neue Regel zu erstellen, um mit der Verwendung dieses Schutzes zu beginnen. Dieser Schutz erstreckt sich auf Dateien in SharePoint, OneDrive und Microsoft Teams.
+Personen senden, empfangen und teilen anlagen, z. B. Dokumente, Präsentationen, Tabellen und vieles mehr. Es ist nicht immer einfach zu bestimmen, ob eine Anlage sicher oder bösartig ist, indem Sie sich eine E-Mail-Nachricht anschauen. Microsoft Defender for Office 365 enthält sicheren Anlagenschutz, dieser Schutz ist jedoch nicht standardmäßig aktiviert. Es wird empfohlen, eine neue Regel zu erstellen, um mit der Verwendung dieses Schutzes zu beginnen. Dieser Schutz erstreckt sich auf Dateien in SharePoint, OneDrive und Microsoft Teams.
 
 Um eine Richtlinie für sichere Anlagen zu erstellen, sehen Sie sich entweder dieses [kurze](https://support.office.com/article/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)Video an, oder führen Sie die folgenden Schritte aus:
 
@@ -191,7 +191,7 @@ Um eine Richtlinie für sichere Anlagen zu erstellen, sehen Sie sich entweder di
 
 3. Wählen Sie auf der Seite Richtlinie die Option **Sichere Anlagen aus.**
 
-4. Wenden Sie diesen Schutz auf der Seite Sichere Anlagen allgemein an, indem Sie das **Kontrollkästchen ATP für SharePoint, OneDrive** und Microsoft Teams aktivieren aktivieren.
+4. Wenden Sie diesen Schutz auf der Seite Sichere Anlagen allgemein an, indem Sie das Kontrollkästchen ATP für **SharePoint,** OneDrive und Microsoft Teams aktivieren aktivieren.
 
 5. Wählen **+** Sie diese Option aus, um eine neue Richtlinie zu erstellen.
 
@@ -211,7 +211,7 @@ Weitere Informationen finden Sie unter [Einrichten von Antiphishingrichtlinien i
 
 ### <a name="set-up-safe-links-in-the-security--compliance-center"></a>Einrichten sicherer Links im Security & Compliance Center
 
-Hacker verbergen bösartige Websites manchmal in Links in E-Mails oder anderen Dateien. Sichere Links, die Teil von Microsoft Defender für Office 365 sind, können Ihre Organisation schützen, indem sie die Überprüfung von Webadressen (URLs) in E-Mail-Nachrichten und Office-Dokumenten per Mausklick bereitstellen. Der Schutz wird durch Richtlinien für sichere Links definiert.
+Hacker verbergen bösartige Websites manchmal in Links in E-Mails oder anderen Dateien. Sichere Links, die Teil von Microsoft Defender for Office 365 sind, können Zum Schutz Ihrer Organisation beitragen, indem Sie die Überprüfung von Webadressen (URLs) in E-Mail-Nachrichten und dokumenten Office bereitstellen. Der Schutz wird durch Richtlinien für sichere Links definiert.
 
 Es wird empfohlen, die folgenden Schritte zu tun:
 
@@ -231,7 +231,7 @@ So ändern Sie die Standardrichtlinie:
 
 1. Wählen Sie auf der Seite Sichere Links unter **Richtlinien, die für** die gesamte Organisation gelten, die **Standardrichtlinie** aus.
 
-2. Wählen **Sie unter Einstellungen, die für Inhalte außer** E-Mail gelten, Microsoft **365 Apps for Enterprise, Office für iOS und Android aus.**
+2. Wählen **Einstellungen, die für Inhalte** außer E-Mail gelten, **Microsoft 365 Apps for Enterprise, Office für iOS und Android aus.**
 
 3. Klicken Sie auf **Speichern**.
 
@@ -250,16 +250,16 @@ So erstellen Sie eine neue Richtlinie für alle Empfänger in Ihrer Domäne:
 |Verwenden sicherer Anlagen zum Überprüfen herunterladbarer Inhalte|Wählen Sie dieses Feld aus.|
 |Angewendet auf|Die Empfängerdomäne ist . . . Wählen Sie Ihre Domäne aus.|
 
-Weitere Informationen finden Sie unter [Sichere Links in Defender for Office 365](../security/office-365-security/safe-links.md).
+Weitere Informationen finden Sie unter [Safe Links in Defender for Office 365](../security/office-365-security/safe-links.md).
 
 ## <a name="turn-on-the-unified-audit-log"></a>Aktivieren des einheitlichen Überwachungsprotokolls
 
 Nachdem Sie die Überwachungsprotokollsuche im Security & Compliance Center aktivieren, können Sie den Administrator und andere Benutzeraktivitäten im Protokoll beibehalten und durchsuchen.
 
-Sie müssen der Rolle Überwachungsprotokolle in Exchange Online zugewiesen sein, um die Überwachungsprotokollsuche in Ihrem Microsoft 365-Abonnement ein- oder ausschalten zu können. Diese Rolle wird standardmäßig den Rollengruppen Complianceverwaltung und Organisationsverwaltung auf der Seite Berechtigungen im Exchange Admin Center zugewiesen. Globale Administratoren in Microsoft 365 sind standardmäßig Mitglieder dieser Gruppe.
+Ihnen muss die Rolle Überwachungsprotokolle in Exchange Online zugewiesen werden, um die Überwachungsprotokollsuche in Ihrem Abonnement Microsoft 365 aktivieren oder deaktivieren. Diese Rolle wird standardmäßig den Rollengruppen Complianceverwaltung und Organisationsverwaltung auf der Seite Berechtigungen im Exchange zugewiesen. Globale Administratoren in Microsoft 365 sind standardmäßig Mitglieder dieser Gruppe.
 
 1. Um die Überwachungsprotokollsuche zu aktivieren, wechseln Sie zum Admin Center unter, und wählen Sie dann Sicherheit unter <https://admin.microsoft.com> **Admin Center** im linken  Navigationsgerät aus.
-2. Wählen Sie auf der **Seite Microsoft 365**  Security die Option Weitere Ressourcen **aus,** und öffnen Sie dann auf der **Office 365 Security & Compliance Center-Karte.**
+2. Wählen Sie Microsoft 365 **Seite Sicherheit** die Option **Weitere** Ressourcen aus, und öffnen Sie dann auf der Office 365 **Security & Compliance Center-Karte.** 
 
     ![Wählen Sie Auf der Sicherheits-&-Autos öffnen aus.](../media/gotosecandcomp.png)
 3. Wählen Sie auf der Seite Sicherheit und Compliance die Option **Suchen** und dann **Überwachungsprotokollsuche aus.**
@@ -267,30 +267,30 @@ Sie müssen der Rolle Überwachungsprotokolle in Exchange Online zugewiesen sein
 
 Nachdem das Feature aktiviert wurde, können Sie nach Dateien, Ordnern und vielen Aktivitäten suchen. Weitere Informationen finden Sie unter [Durchsuchen des Überwachungsprotokolls](../compliance/search-the-audit-log-in-security-and-compliance.md).
 
-## <a name="tune-up-anonymous-sharing-settings-for-sharepoint-and-onedrive-files-and-folders"></a>Optimieren der Einstellungen für die anonyme Freigabe für SharePoint- und #A0 und -Ordner
+## <a name="tune-up-anonymous-sharing-settings-for-sharepoint-and-onedrive-files-and-folders&quot;></a>Optimieren der Einstellungen für die anonyme Freigabe SharePoint und OneDrive Dateien und Ordnern
 
-(Ändern Sie den Standardmäßigen Ablauf anonymer Links auf 14 Tage, ändern Sie den Standardfreigabetyp in "Bestimmte Personen") So ändern Sie die Freigabeeinstellungen für OneDrive und SharePoint:
+(Ändern Sie den Standardmäßigen Ablauf anonymer Links auf 14 Tage, ändern Sie den Standardfreigabetyp in &quot;Bestimmte Personen") So ändern Sie die Freigabeeinstellungen für OneDrive und SharePoint:
 
-1. Wechseln Sie zum Admin Center <https://admin.microsoft.com> unter, und wählen Sie **dann SharePoint** unter **Admin Center** im linken Navigations navi aus.
-2. Wechseln Sie im SharePoint  Admin Center zu \> **Richtlinienfreigabe**.
+1. Wechseln Sie zum Admin Center unter, und wählen Sie dann SharePoint im linken Navigations navi unter <https://admin.microsoft.com> Admin **Center** aus. 
+2. Wechseln Sie SharePoint Admin Center zu  \> **Richtlinienfreigabe**.
 3. Wählen  Sie auf der Seite Freigabe unter Datei- und Ordnerlinks die Option Bestimmte Personen aus, und wählen Sie unter Erweiterte Einstellungen für **"Jeder"-Links** die Option Diese Links müssen innerhalb dieser vielen Tage ablaufen **und** geben Sie in 14 (oder eine andere Anzahl von Tagen, auf die Sie die Linklebensdauer beschränken möchten) ein. 
 
    ![Wählen Sie Bestimmte Personen aus, und legen Sie den Linkablauf auf 14 Tage an.](../media/anyonelinks.png)
 
 ## <a name="activity-alerts"></a>Aktivitätswarnungen
 
-Sie können Aktivitätswarnungen verwenden, um Administrator- und Benutzeraktivitäten nachverfolgt und Schadsoftware- und Verhinderungsvorfälle in Ihrer Organisation zu erkennen. Ihr Abonnement enthält eine Reihe von Standardrichtlinien, Sie können jedoch auch benutzerdefinierte Richtlinien erstellen. Weitere Informationen finden Sie unter [Warnungsrichtlinien](../compliance/alert-policies.md). Wenn Sie z. B. eine wichtige Datei in SharePoint speichern, die niemand extern freigeben soll, können Sie eine Benachrichtigung erstellen, die Sie benachrichtigt, wenn sie von jemandem gemeinsam verwendet wird.
+Sie können Aktivitätswarnungen verwenden, um Administrator- und Benutzeraktivitäten nachverfolgt und Schadsoftware- und Verhinderungsvorfälle in Ihrer Organisation zu erkennen. Ihr Abonnement enthält eine Reihe von Standardrichtlinien, Sie können jedoch auch benutzerdefinierte Richtlinien erstellen. Weitere Informationen finden Sie unter [Warnungsrichtlinien](../compliance/alert-policies.md). Wenn Sie z. B. eine wichtige Datei in SharePoint speichern, die von niemandem extern gemeinsam verwendet werden soll, können Sie eine Benachrichtigung erstellen, die Sie benachrichtigt, wenn sie von jemandem gemeinsam verwendet wird.
 
-Die folgende Abbildung zeigt die Standardrichtlinien, die in Microsoft 365 enthalten sind.
+Die folgende Abbildung zeigt die Standardrichtlinien, die in der Microsoft 365.
 
-![In Microsoft 365 enthaltene Standardbenachrichtigungsrichtlinien](../media/alertpolicies.png)
+![Standardmäßige Benachrichtigungsrichtlinien, die in Microsoft 365](../media/alertpolicies.png)
 
 ## <a name="disable-or-manage-calendar-sharing"></a>Deaktivieren oder Verwalten der Kalenderfreigabe
 
 Sie können verhindern, dass Personen in Ihrer Organisation ihre Kalender freigeben, oder Sie können auch verwalten, was sie freigeben können. Beispielsweise können Sie die Freigabe nur auf Frei/Gebucht-Zeiten beschränken.
 
-1. Wechseln Sie zum Admin Center <https://admin.microsoft.com> unter, und wählen Sie **Einstellungen** \> **Organisationseinstellungen aus.**
-2. Wählen Sie **auf** der Seite Dienste Kalender **aus,** und wählen Sie aus, ob Personen in Ihrer Organisation ihre Kalender für Personen außerhalb von Office 365 oder Exchange oder für andere Personen freigeben können.
+1. Wechseln Sie zum Admin Center <https://admin.microsoft.com> unter, und wählen **Sie Einstellungen** \> **Org Einstellungen**.
+2. Wählen Sie **auf** der Seite Dienste kalender **aus,** und wählen Sie aus, ob Personen in Ihrer Organisation ihre Kalender für Personen außerhalb von Personen freigeben können, die Office 365 oder Exchange oder für andere Personen haben.
 
    Wenn Sie die Freigabe für alle Benutzer auswählen, können Sie auch nur Frei/Gebucht-Informationen freigeben.
 
@@ -304,4 +304,4 @@ Sie können verhindern, dass Personen in Ihrer Organisation ihre Kalender freige
 
    ![Screenshot der Frei/Gebucht-Freigabe des Kalenders für alle Personen.](../media/sharefreebusy.png)
 
-Wenn Ihre Benutzer ihre Kalender freigeben dürfen, lesen Sie [diese](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) Anweisungen für die Freigabe von Outlook im Web.
+Wenn Ihre Benutzer ihre Kalender freigeben [](https://support.office.com/article/7ecef8ae-139c-40d9-bae2-a23977ee58d5) dürfen, lesen Sie diese Anweisungen zum Freigeben von Outlook im Web.

@@ -25,7 +25,7 @@ ms.locfileid: "51199849"
 
 *Diese Testumgebungsanleitung kann nur für Microsoft 365 für Unternehmenstestumgebungen verwendet werden.*
 
-[Identitäts-](../security/office-365-security/microsoft-365-policies-configurations.md) und Gerätezugriffskonfigurationen sind eine Reihe von Konfigurationen und Richtlinien für bedingten Zugriff, um den Zugriff auf alle Dienste in Microsoft 365 For Enterprise zu schützen, die in Azure Active Directory (Azure AD) integriert sind.
+[Identitäts-](../security/office-365-security/microsoft-365-policies-configurations.md) und Gerätezugriffskonfigurationen sind eine Reihe von Konfigurationen und Richtlinien für bedingten Zugriff, um den Zugriff auf alle Dienste in Microsoft 365 for Enterprise zu schützen, die in Azure Active Directory (Azure AD) integriert sind.
 
 In diesem Artikel wird beschrieben, wie eine Microsoft 365 Test-Umgebung konfiguriert wird, die die Anforderungen der [erforderlichen Konfiguration für die Pass-Through-Authentifizierung](../security/office-365-security/identity-access-prerequisites.md#prerequisites) für den Identitäts- und Gerätezugriff erfüllt.
 
@@ -37,7 +37,7 @@ Es gibt zehn Phasen zum Einrichten dieser Testumgebung:
 4. Konfigurieren von Kennwortrückschreiben
 5. Konfigurieren der Self-Service-Kennwortzurücksetzung
 6. Konfigurieren der mehrstufigen Authentifizierung
-7. Aktivieren der automatischen Geräteregistrierung von Windows-Computern, die der Domäne beigetreten sind
+7. Aktivieren der automatischen Geräteregistrierung von In die Domäne Windows Computern
 8. Konfigurieren des Azure AD-Kennwortschutzes 
 9. Aktivieren von Azure AD Identity Protection
 10. Aktivieren der modernen Authentifizierung für Exchange Online und Skype for Business Online
@@ -88,9 +88,9 @@ Befolgen Sie die Anweisungen unter [Phase 2 der mehrstufige Authentifizierung](m
 
 Testen der mehrstufigen Authentifizierung für das Konto „Benutzer 2“.
 
-## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 7: Aktivieren der automatischen Geräteregistrierung von Windows-Computern, die der Domäne beigetreten sind 
+## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 7: Aktivieren der automatischen Geräteregistrierung von in die Domäne Windows Computern 
 
-Befolgen [Sie diese Anweisungen,](/azure/active-directory/devices/hybrid-azuread-join-plan) um die automatische Geräteregistrierung von Windows-Computern zu aktivieren, die der Domäne beigetreten sind.
+Befolgen [Sie diese Anweisungen,](/azure/active-directory/devices/hybrid-azuread-join-plan) um die automatische Geräteregistrierung von Domänencomputern zu Windows aktivieren.
 
 ## <a name="phase-8-configure-azure-ad-password-protection"></a>Phase 8: Konfigurieren des Azure AD-Kennwortschutzes 
 

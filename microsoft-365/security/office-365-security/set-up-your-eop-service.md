@@ -12,7 +12,7 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
-description: Administratoren erfahren, wie Sie eigenständige Exchange Online Protection (EOP) einrichten, um lokale E-Mail-Umgebungen zu schützen.
+description: Administratoren erfahren, wie Sie eigenständige Exchange Online Protection (EOP) zum Schutz von lokalen E-Mail-Umgebungen einrichten.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: bbad39475f87be27a83edc0c27e2bbe46f8e39ac
@@ -29,7 +29,7 @@ ms.locfileid: "51206831"
 **Gilt für**
 -  [Exchange Online Protection eigenständig](exchange-online-protection-overview.md)
 
-In diesem Thema wird erläutert, wie Sie eigenständigen Exchange Online Protection (EOP) einrichten. Wenn Sie vom Office 365-Assistenten für Domänen hierher geführt wurden, wechseln Sie zurück zum Office 365-Assistenten für Domänen, wenn Sie Exchange Online Protection nicht verwenden möchten. Wenn Sie weitere Informationen zum Konfigurieren von Connectors suchen, finden Sie diese unter [Configure mail flow using connectors in Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
+In diesem Thema wird erläutert, wie Sie eigenständige Exchange Online Protection (EOP) einrichten. Wenn Sie vom Office 365-Assistenten für Domänen hierher geführt wurden, wechseln Sie zurück zum Office 365-Assistenten für Domänen, wenn Sie Exchange Online Protection nicht verwenden möchten. Wenn Sie weitere Informationen zum Konfigurieren von Connectors suchen, finden Sie diese unter [Configure mail flow using connectors in Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
 > [!NOTE]
 > In diesem Thema wird davon ausgegangen, dass lokale Postfächer verwendet werden, die mit EOP geschützt werden sollen - dies wird als eigenständiges Szenario bezeichnet. Wenn Sie alle Postfächer in der Cloud mit Exchange Online hosten möchten, müssen Sie nicht alle Schritte in diesem Artikel ausführen. Wechseln Sie [zu Compare Exchange Online plans](https://products.office.com/exchange/compare-microsoft-exchange-online-plans) to sign up and purchase cloud mailboxes.
@@ -40,23 +40,23 @@ In diesem Thema wird erläutert, wie Sie eigenständigen Exchange Online Protect
 
 - Geschätzte Zeit bis zum Abschließen dieser Aufgabe: 1 Stunde
 
-- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in Exchange Online Protection die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die **Rolle Remote-** und Akzeptierte Domänen, die standardmäßig den Rollengruppen Organisationsverwaltung **(globale** Administratoren) und **E-Mail-Flussadministratoren** zugewiesen ist. Weitere Informationen finden Sie unter [Permissions in standalone EOP](feature-permissions-in-eop.md) und [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Bevor Sie die Verfahren in diesem Artikel Exchange Online Protection, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die **Rolle Remote-** und akzeptierte Domänen, die standardmäßig den Rollengruppen **Organisationsverwaltung** **(globale** Administratoren) und Mail Flow Administrator zugewiesen ist. Weitere Informationen finden Sie unter [Permissions in standalone EOP](feature-permissions-in-eop.md) und [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
 - Wenn Sie sich noch nicht bei EOP registriert haben, rufen Sie [Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection) auf, und erwerben oder testen Sie den Dienst.
 
-- Informationen zu Tastenkombinationen, die für die Verfahren in diesem Artikel gelten können, finden Sie unter [Tastenkombinationen für](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)das Exchange Admin Center in Exchange Online .
+- Informationen zu Tastenkombinationen, die für die Verfahren in diesem Artikel gelten können, finden Sie unter Tastenkombinationen für das [Exchange Admin Center in Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)-Forum um Hilfe.
 
-## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Schritt 1: Verwenden des Microsoft 365 Admin Centers zum Hinzufügen und Überprüfen Ihrer Domäne
+## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Schritt 1: Verwenden Microsoft 365 Admin Center zum Hinzufügen und Überprüfen Ihrer Domäne
 
-1. Wechseln Sie [im Microsoft 365 Admin Center](../../admin/admin-overview/about-the-admin-center.md)zu **Setup,** um Ihre Domäne dem Dienst hinzuzufügen.
+1. Wechseln Sie [Microsoft 365 Admin Center](../../admin/admin-overview/about-the-admin-center.md)zu **Setup,** um Ihre Domäne dem Dienst hinzuzufügen.
 
 2. Befolgen Sie die Schritte, um Ihrem DNS-Hostinganbieter die entsprechenden DNS-Datensätze hinzuzufügen, um die Domäneneigentümerschaft zu überprüfen.
 
 > [!TIP]
-> Hinzufügen einer Domäne zu [Office 365](../../admin/setup/add-domain.md) und Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für [Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) sind hilfreiche Ressourcen, auf die Sie verweisen können, wenn Sie Ihre Domäne zum Dienst hinzufügen und DNS konfigurieren.
+> [Hinzufügen einer Domäne zu Office 365](../../admin/setup/add-domain.md) und Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter für [Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) sind hilfreiche Ressourcen, auf die Verwiesen werden kann, wenn Sie Ihre Domäne zum Dienst hinzufügen und DNS konfigurieren.
 
 ## <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>Schritt 2: Hinzufügen von Empfängern und optionales Aktivieren der verzeichnisbasierten Edge-Blockierung (DBEB)
 
@@ -64,7 +64,7 @@ Bevor Sie die Übermittlung Ihrer E-Mails zum und vom EOP-Dienst konfigurieren, 
 
 ## <a name="step-3-use-the-eac-to-set-up-mail-flow"></a>Schritt 3: Einrichten des Nachrichtenflusses mithilfe der Exchange-Verwaltungskonsole
 
-Erstellen Sie in der Exchange-Verwaltungskonsole (EAC) Connectors, die den Nachrichtenfluss zwischen EOP und Ihren lokalen E-Mail-Servern ermöglichen. Ausführliche Anweisungen finden Sie unter Einrichten von Connectors zum Routen von E-Mails [zwischen Microsoft 365 und Ihren eigenen E-Mail-Servern.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail)
+Erstellen Sie in der Exchange-Verwaltungskonsole (EAC) Connectors, die den Nachrichtenfluss zwischen EOP und Ihren lokalen E-Mail-Servern ermöglichen. Ausführliche Anweisungen finden Sie unter [Set up connectors to route mail between Microsoft 365 and your own email servers](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail).
 
 ### <a name="how-do-you-know-this-task-worked"></a>Woher wissen Sie, dass diese Aufgabe erfolgreich war?
 
@@ -83,7 +83,7 @@ Sie müssen eine Reihe von Konfigurationsschritten ausführen, um wirklich siche
 
 Wenn Sie Nachrichten nicht in den Junk-E-Mail-Ordner jedes Benutzers verschieben möchten, können Sie eine andere Aktion auswählen, indem Sie Ihre Antispamrichtlinien bearbeiten. Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien in Office 365](configure-your-spam-filter-policies.md).
 
-## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Schritt 6: Verwenden des Microsoft 365 Admin Centers, um Ihren MX-Eintrag auf EOP zu verweisen
+## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Schritt 6: Verwenden Microsoft 365 Admin Center, um Ihren MX-Eintrag auf EOP zu verweisen
 
 Führen Sie die Domänenkonfigurationsschritte aus, um Ihren MX-Eintrag für Ihre Domäne zu aktualisieren, sodass Ihre eingehenden E-Mails über EOP fließen. Stellen Sie sicher, dass Ihr MX-Eintrag direkt auf EOP verweist, damit kein Filterungsdienstrelais eines Drittanbieters eine E-Mail an EOP schreibt. Weitere Informationen finden Sie auch hierzu unter [Erstellen von DNS-Einträgen für Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
@@ -101,6 +101,6 @@ Zu diesem Zeitpunkt haben Sie die Dienstübermittlung für einen ordnungsgemäß
 - Wenn Sie einen Test für ausgehende E-Mails durchführen möchten, können Sie von einem Benutzer in Ihrer Organisation aus eine E-Mail an ein webbasiertes E-Mail-Konto senden und überprüfen, ob die Nachricht übermittelt wurde.
 
 > [!TIP]
-> Nachdem Sie das Setup abgeschlossen haben, müssen Sie nichts weiter tun, um EOP für das Entfernen von Spam und Malware zu konfigurieren. Spam und Malware werden von EOP automatisch entfernt. Sie können Ihre Einstellungen jedoch basierend auf Ihren Geschäftlichen Anforderungen optimieren. Weitere Informationen finden Sie unter [Antispam- und Schadsoftwareschutz in Office 365](anti-spam-and-anti-malware-protection.md) und Konfigurieren von [Spoof Intelligence](learn-about-spoof-intelligence.md).
+> Nachdem Sie das Setup abgeschlossen haben, müssen Sie nichts weiter tun, um EOP für das Entfernen von Spam und Malware zu konfigurieren. Spam und Malware werden von EOP automatisch entfernt. Sie können Ihre Einstellungen jedoch basierend auf Ihren Geschäftlichen Anforderungen optimieren. Weitere Informationen finden Sie unter [Antispam- und](anti-spam-and-anti-malware-protection.md) Schadsoftwareschutz in Office 365 und Konfigurieren von [Spoof Intelligence](learn-about-spoof-intelligence.md).
 >
 > Nachdem Ihr Dienst ausgeführt wird, empfehlen wir, bewährte Methoden zum Konfigurieren von [EOP](best-practices-for-configuring-eop.md)zu lesen, in dem empfohlene Einstellungen und Überlegungen für nach dem Einrichten von EOP beschrieben werden.

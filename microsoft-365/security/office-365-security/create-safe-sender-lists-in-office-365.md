@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: 9721b46d-cbea-4121-be51-542395e6fd21
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können sich über die verfügbaren und bevorzugten Optionen zum Zulassen eingehender Nachrichten in Exchange Online Protection (EOP) informieren.
+description: Administratoren können sich über die verfügbaren und bevorzugten Optionen informieren, um eingehende Nachrichten in Exchange Online Protection (EOP) zu ermöglichen.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: e5473f8c37b4edcf6c2451cf995b430edbe09533
@@ -33,12 +33,12 @@ ms.locfileid: "51205987"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder ein eigenständiger Exchange Online Protection (EOP)-Kunde ohne Exchange Online-Postfächer sind, bietet EOP mehrere Möglichkeiten, um sicherzustellen, dass Benutzer E-Mails von vertrauenswürdigen Absendern erhalten. Zu diesen Optionen gehören Exchange-Nachrichtenflussregeln (auch als Transportregeln bezeichnet), sichere Outlook-Absender, die IP-Zugelassene Liste (Verbindungsfilterung) und zugelassene Absenderlisten oder zulässige Domänenlisten in Antispamrichtlinien. Zusammen können Sie diese Optionen als Listen sicherer _Absender sehen._
+Wenn Sie ein Microsoft 365-Kunde mit Postfächern in Exchange Online oder ein eigenständiger Exchange Online Protection (EOP)-Kunde ohne Exchange Online-Postfächer sind, bietet EOP mehrere Möglichkeiten, um sicherzustellen, dass Benutzer E-Mails von vertrauenswürdigen Absendern empfangen. Diese Optionen umfassen Exchange Nachrichtenflussregeln (auch als Transportregeln bezeichnet), Outlook Sichere Absender, die IP-Zugelassene Liste (Verbindungsfilterung) und zugelassene Absenderlisten oder zulässige Domänenlisten in Antispamrichtlinien. Zusammen können Sie diese Optionen als Listen sicherer _Absender sehen._
 
 Die verfügbaren Listen sicherer Absender werden in der folgenden Liste in der Reihenfolge der am meisten empfohlenen bis am wenigsten empfohlenen beschrieben:
 
 1. Nachrichtenflussregeln
-2. Sichere Absender in Outlook
+2. Outlook Sichere Absender
 3. IP-Zulässige Liste (Verbindungsfilterung)
 4. Zugelassene Absenderlisten oder zulässige Domänenlisten (Antispamrichtlinien)
 
@@ -52,7 +52,7 @@ Nachrichtenflussregeln ermöglichen die größte Flexibilität, um sicherzustell
 >
 > - Damit eine Domäne nicht authentifizierte E-Mails senden kann (Anti-Spoofing-Schutz umgehen), aber keine Antispam- und Schadsoftwareprüfungen umgehen, können Sie sie der [Liste "AllowedToSpoof safe sender" hinzufügen.](walkthrough-spoof-intelligence-insight.md)
 >
-> - EOP und Outlook überprüfen verschiedene Nachrichteneigenschaften, um den Absender der Nachricht zu ermitteln. Weitere Informationen finden Sie im [Abschnitt Überlegungen für Massen-E-Mails](#considerations-for-bulk-email) weiter unten in diesem Artikel.
+> - EOP und Outlook verschiedene Nachrichteneigenschaften überprüfen, um den Absender der Nachricht zu ermitteln. Weitere Informationen finden Sie im [Abschnitt Überlegungen für Massen-E-Mails](#considerations-for-bulk-email) weiter unten in diesem Artikel.
 
 Im Gegensatz dazu haben Sie auch mehrere Optionen, um E-Mails von bestimmten Quellen mithilfe blockierter _Absenderlisten zu blockieren._ Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in EOP](create-block-sender-lists-in-office-365.md).
 
@@ -100,7 +100,7 @@ Im folgenden Beispiel wird davon ausgegangen, dass Sie E-Mails von contoso.com z
 
 ![Nachrichtenflussregeleinstellungen in der EAC zum Umgehen der Spamfilterung.](../../media/1-AllowList-SkipFilteringFromContoso.png)
 
-## <a name="use-outlook-safe-senders"></a>Verwenden von sicheren Outlook-Absendern
+## <a name="use-outlook-safe-senders"></a>Verwenden Outlook sicherer Absender
 
 > [!CAUTION]
 > Diese Methode führt zu einem hohen Risiko, dass Angreifer erfolgreich E-Mails an den Posteingang senden, die andernfalls gefiltert würden. Die Listen sicherer Absender oder sicherer Domänen des Benutzers verhindern jedoch nicht, dass Schadsoftware oder Phishingnachrichten mit hoher Sicherheit gefiltert werden.
@@ -150,13 +150,13 @@ Angenommen, Blue Yonder Airlines hat Margie's Travel für das Senden seiner E-Ma
 
 - Die `5321.MailFrom` Adresse ist blueyonder.airlines@margiestravel.com.
 
-- Die Adresse ist blueyonder@news.blueyonderairlines.com, was in `5322.From` Outlook angezeigt wird.
+- Die Adresse ist blueyonder@news.blueyonderairlines.com, was sie in der `5322.From` Outlook.
 
-Listen sicherer Absender und listen sicherer Domänen in Antispamrichtlinien in EOP überprüfen nur die `5322.From` Adressen. Dies ähnelt Outlook Safe Senders, die die Adresse `5322.From` verwenden.
+Listen sicherer Absender und listen sicherer Domänen in Antispamrichtlinien in EOP überprüfen nur die Adressen. Dies ähnelt Outlook sicheren Absendern, die die Adresse `5322.From` `5322.From` verwenden.
 
 Um zu verhindern, dass diese Nachricht gefiltert wird, können Sie die folgenden Schritte ausführen:
 
-- Fügen blueyonder@news.blueyonderairlines.com (die `5322.From` Adresse) als sicherer Outlook-Absender hinzu.
+- Fügen blueyonder@news.blueyonderairlines.com (die `5322.From` Adresse) als sicherer Outlook hinzu.
 
 - [Verwenden Sie eine Nachrichtenflussregel](#recommended-use-mail-flow-rules) mit einer Bedingung, die nach Nachrichten von blueyonder@news.blueyonderairlines.com (adresse, `5322.From` blueyonder.airlines@margiestravel.com ( ) oder `5321.MailFrom` beides sucht.
 

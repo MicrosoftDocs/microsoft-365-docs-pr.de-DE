@@ -13,7 +13,7 @@ search.appverid:
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
-description: Administratoren können erfahren, wie Sie Nachrichtenflussregeln (Transportregeln) verwenden, um Massen-E-Mails (graue E-Mails) in Exchange Online Protection (EOP) zu identifizieren und zu filtern.
+description: Administratoren erfahren, wie Sie Nachrichtenflussregeln (Transportregeln) zum Identifizieren und Filtern von Massen-E-Mails (graue E-Mails) in EOP (EOP Exchange Online Protection verwenden.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -33,15 +33,15 @@ ms.locfileid: "51206071"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer verwendet EOP Antispamrichtlinien (auch als Spamfilterrichtlinien oder Inhaltsfilterrichtlinien bekannt), um eingehende Nachrichten auf Spam und Massennachrichten (auch als graue E-Mails bekannt) zu überprüfen. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer verwendet EOP Antispamrichtlinien (auch als Spamfilterrichtlinien oder Inhaltsfilterrichtlinien bekannt), um eingehende Nachrichten auf Spam und Massennachrichten (auch als graue E-Mails bekannt) zu überprüfen. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
 
 Wenn Sie mehr Optionen zum Filtern von Massennachrichten wünschen, können Sie Nachrichtenflussregeln (auch transport rules) erstellen, um nach Textmustern oder Ausdrücken zu suchen, die häufig in Massennachrichten gefunden werden, und diese Nachrichten als Spam markieren. Weitere Informationen zu Massen-E-Mails finden Sie unter [Was ist der](what-s-the-difference-between-junk-email-and-bulk-email.md) Unterschied zwischen Junk-E-Mail und Massen-E-Mail? und Massenbeschwerdestufe [(Bulk Complaint Level, BCL) in EOP](bulk-complaint-level-values.md).
 
-In diesem Thema wird erläutert, wie diese Nachrichtenflussregeln im Exchange Admin Center (EAC) und in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständiges EOP PowerShell für Organisationen ohne Exchange #A0) erstellt werden.
+In diesem Thema wird erläutert, wie diese Nachrichtenflussregeln im Exchange Admin Center (EAC) und in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige eOP PowerShell für Organisationen ohne Exchange Online-Postfächer) erstellt werden.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in Exchange Online oder Exchange Online Protection berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rolle **Transportregeln,** die standardmäßig den Rollengruppen **Organisationsverwaltung,** **Complianceverwaltung** (globale Administratoren) und **Datensatzverwaltung** zugewiesen ist.
+- Bevor Sie die Verfahren in diesem Artikel Exchange Online oder Exchange Online Protection können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rolle **Transportregeln,** die standardmäßig den Rollengruppen **Organisationsverwaltung,** **Complianceverwaltung** (globale Administratoren) und **Datensatzverwaltung** zugewiesen ist.
 
   Weitere Informationen finden Sie in den folgenden Themen:
 
@@ -49,11 +49,11 @@ In diesem Thema wird erläutert, wie diese Nachrichtenflussregeln im Exchange Ad
   - [Berechtigungen in EOP als eigenständige Lösung](feature-permissions-in-eop.md)
   - [Ändern der Liste der Mitglieder in Rollengruppen mithilfe der EAC](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- Informationen zum Öffnen der EAC in Exchange Online finden Sie unter [Exchange Admin Center in Exchange Online](/Exchange/exchange-admin-center). Informationen zum Öffnen der EAC im eigenständigen EOP finden Sie unter [Exchange Admin Center im eigenständigen EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
+- Informationen zum Öffnen der EAC in Exchange Online finden Sie [unter Exchange Admin Center in Exchange Online](/Exchange/exchange-admin-center). Informationen zum Öffnen der EAC im eigenständigen EOP finden Sie [unter Exchange Admin Center in eigenständigem EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Weitere Informationen zu Nachrichtenflussregeln in Exchange Online und eigenständigem EOP finden Sie in den folgenden Themen:
+- Weitere Informationen zu Nachrichtenflussregeln in Exchange Online eigenständigen EOP finden Sie in den folgenden Themen:
 
   - [Nachrichtenflussregeln (Transportregeln) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 

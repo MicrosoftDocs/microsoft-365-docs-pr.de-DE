@@ -11,7 +11,7 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren erfahren, wie Sie den Nicht akzeptierten Domänenbericht im Nachrichtenflussdashboard im Security & Compliance Center verwenden, um Nachrichten aus Ihrer lokalen Organisation zu überwachen, in der die Domäne des Absenders nicht in Microsoft 365 konfiguriert ist.
+description: Administratoren können erfahren, wie Sie den Nicht akzeptierten Domänenbericht im Nachrichtenflussdashboard im Security & Compliance Center verwenden, um Nachrichten aus Ihrer lokalen Organisation zu überwachen, in der die Domäne des Absenders nicht in Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: fb33feb56bf2b52731c03273ce0c6444c333f348
@@ -30,9 +30,9 @@ ms.locfileid: "51206334"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Der Bericht Nicht akzeptierter [](mail-flow-insights-v2.md) Domänen im Nachrichtenflussdashboard im [Security & Compliance Center](https://protection.office.com) zeigt Informationen zu Nachrichten aus Ihrer lokalen **E-Mail-Organisation** an, in denen die Domäne des Absenders nicht als akzeptierte Domäne in Ihrer Microsoft 365-Organisation konfiguriert ist.
+Der Bericht nicht akzeptierter [](mail-flow-insights-v2.md) Domänen im Nachrichtenflussdashboard im [Security & Compliance Center](https://protection.office.com) zeigt Informationen zu Nachrichten aus Ihrer lokalen **E-Mail-Organisation** an, in denen die Domäne des Absenders nicht als akzeptierte Domäne in Ihrer Microsoft 365 konfiguriert ist.
 
-Microsoft 365 kann diese Nachrichten drosseln, wenn wir Daten zum Nachweis haben, dass die Absicht dieser Nachrichten bösartig ist. Daher ist es wichtig, dass Sie verstehen, was geschieht, und das Problem beheben.
+Microsoft 365 kann diese Nachrichten drosseln, wenn wir Daten haben, um zu belegen, dass die Absicht dieser Nachrichten schädlich ist. Daher ist es wichtig, dass Sie verstehen, was geschieht, und das Problem beheben.
 
 ![Nicht akzeptiertes Domänen-Widget im Nachrichtenflussdashboard im Security & Compliance Center](../../media/mfi-non-accepted-domain-report-widget.png)
 

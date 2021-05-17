@@ -1,7 +1,7 @@
 ---
 title: Empfehlung nach Id erhalten
 description: Ruft eine Sicherheitsempfehlung nach seiner ID ab.
-keywords: apis, graph api, supported apis, get, security recommendation, security recommendation by ID, threat and vulnerability management, threat and vulnerability management api
+keywords: apis, graph api, supported apis, get, security recommendation, security recommendation by ID, Bedrohungs- und Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -21,7 +21,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51199513"
 ---
-# <a name="get-recommendation-by-id"></a>Empfehlung nach ID erhalten
+# <a name="get-recommendation-by-id"></a>Empfehlung nach ID abrufen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

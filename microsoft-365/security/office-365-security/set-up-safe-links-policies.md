@@ -15,7 +15,7 @@ search.appverid:
 ms.assetid: bdd5372d-775e-4442-9c1b-609627b94b5d
 ms.collection:
 - M365-security-compliance
-description: Administratoren erfahren, wie Sie Richtlinien für sichere Links und globale Sichere Links in Microsoft Defender für Office 365 anzeigen, erstellen, ändern und löschen.
+description: Administratoren erfahren, wie Sie Richtlinien für sichere Links und globale Sichere Links in Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c8b2cb8b57dcf630b3e07ac387e96ab099ca7403
@@ -34,16 +34,16 @@ ms.locfileid: "51205618"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!IMPORTANT]
-> Dieser Artikel richtet sich an Geschäftskunden, die über [Microsoft Defender für Office 365](defender-for-office-365.md) verfügen. Informationen zu Safelinks in Outlook finden Sie unter [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
+> Dieser Artikel richtet sich an Geschäftskunden, die über [Microsoft Defender für Office 365](defender-for-office-365.md) verfügen. Wenn Sie ein Heimbenutzer sind, der Informationen zu Safelinks in Outlook, finden Sie weitere Informationen unter [Advanced Outlook.com security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Sichere Links ist ein Feature in [Microsoft Defender für Office 365,](defender-for-office-365.md) das die URL-Überprüfung eingehender E-Mail-Nachrichten im E-Mail-Fluss sowie die Zeit der Klicküberprüfung von URLs und Links in E-Mail-Nachrichten und an anderen Speicherorten ermöglicht. Weitere Informationen finden Sie unter [Sichere Links in Microsoft Defender für Office 365](safe-links.md).
+Sichere Links ist ein Feature in [Microsoft Defender for Office 365,](defender-for-office-365.md) das die URL-Überprüfung eingehender E-Mail-Nachrichten im Nachrichtenfluss sowie die Zeit der Klicküberprüfung von URLs und Links in E-Mail-Nachrichten und an anderen Speicherorten ermöglicht. Weitere Informationen finden Sie unter [Safe Links in Microsoft Defender for Office 365](safe-links.md).
 
 Es gibt keine integrierte oder standardmäßige Richtlinie für sichere Links. Um die Überprüfung von URLs für sichere Links zu erhalten, müssen Sie eine oder mehrere Richtlinien für sichere Links erstellen, wie in diesem Artikel beschrieben.
 
 > [!NOTE]
 > Sie konfigurieren die globalen Einstellungen für den Schutz sicherer Links **außerhalb** von Richtlinien für sichere Links. Anweisungen finden Sie unter [Configure global settings for Safe Links in Microsoft Defender for Office 365](configure-global-settings-for-safe-links.md).
 
-Sie können Richtlinien für sichere Links im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für berechtigte Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständiges EOP PowerShell für Organisationen ohne Exchange &, aber mit Microsoft Defender für Office 365-Add-On-Abonnements) konfigurieren.
+Sie können Richtlinien für sichere Links im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für berechtigte Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online-Postfächer, aber mit Microsoft Defender für Office 365-Add-On-Abonnements) konfigurieren.
 
 Die grundlegenden Elemente einer Richtlinie für sichere Links sind:
 
@@ -65,21 +65,21 @@ In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden:
-  - Zum Erstellen, Ändern und Löschen von Richtlinien für sichere  Links müssen  Sie Mitglied der Rollengruppen Organisationsverwaltung oder Sicherheitsadministrator  im Security & Compliance **Center** und Mitglied der Rollengruppe Organisationsverwaltung in Exchange Online sein.
+  - Zum Erstellen, Ändern und Löschen von Richtlinien für sichere Links müssen  Sie Mitglied der Rollengruppen Organisationsverwaltung oder Sicherheitsadministrator  im Security & Compliance **Center** und Mitglied der Rollengruppe Organisationsverwaltung in Exchange Online. 
   - Für den schreibgeschützten Zugriff auf Richtlinien für sichere Links müssen Sie Mitglied der Rollengruppen **"Globaler Leser"** oder **"Sicherheitsleser"** sein.
 
-  Weitere Informationen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and Permissions in Exchange [Online](/exchange/permissions-exo/permissions-exo).
+  Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) und Berechtigungen in [Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   > 
   > - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
-  . – Die **Rollengruppe "Nur-Ansichtsorganisationsverwaltung"** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) bietet auch schreibgeschützten Zugriff auf das Feature.
+  . – Die **Rollengruppe Nur-Ansichtsorganisationsverwaltung** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) bietet auch schreibgeschützten Zugriff auf das Feature.
 
 - Unsere empfohlenen Einstellungen für Richtlinien für sichere Links finden Sie unter [Richtlinieneinstellungen](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)für sichere Links .
 
 - Es ist bis zu 30 Minuten zulässig, bis eine neue oder aktualisierte Richtlinie angewendet wird.
 
-- [Microsoft Defender für Office 365 werden](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365)ständig neue Features hinzugefügt. Wenn neue Features hinzugefügt werden, müssen Sie möglicherweise Anpassungen an Ihren vorhandenen Richtlinien für sichere Links vornehmen.
+- [Microsoft Defender werden ständig neue Features für](defender-for-office-365.md#new-features-in-microsoft-defender-for-office-365)Office 365. Wenn neue Features hinzugefügt werden, müssen Sie möglicherweise Anpassungen an Ihren vorhandenen Richtlinien für sichere Links vornehmen.
 
 ## <a name="use-the-security--compliance-center-to-create-safe-links-policies"></a>Verwenden des Security & Compliance Center zum Erstellen von Richtlinien für sichere Links
 
@@ -97,11 +97,11 @@ Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Links im Securi
 
    Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
 
-4. Konfigurieren Sie **auf** der angezeigten Seite Einstellungen die folgenden Einstellungen:
+4. Konfigurieren Sie **auf Einstellungen** angezeigten Seite die folgenden Einstellungen:
 
    - **Wählen Sie die Aktion für unbekannte potenziell** schädliche URLs in Nachrichten aus: Wählen Sie **Ein** aus, um den Schutz sicherer Links für Links in E-Mail-Nachrichten zu aktivieren.
 
-   - **Wählen Sie die Aktion für unbekannte oder potenziell** schädliche URLs in Microsoft Teams aus: Wählen Sie **Ein** aus, um den Schutz sicherer Links für Links in Teams zu aktivieren.
+   - **Wählen Sie die Aktion für** unbekannte oder potenziell schädliche URLs in Microsoft Teams : Wählen Sie **Ein** aus, um den Schutz sicherer Links für Links in Teams.
 
    - **Anwenden der Echtzeit-URL-Überprüfung** auf verdächtige Links und Links, die auf Dateien verweisen: Wählen Sie diese Einstellung aus, um die Echtzeitprüfung von Links in E-Mail-Nachrichten zu aktivieren.
 
@@ -121,7 +121,7 @@ Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Links im Securi
 
      Eine Eintragssyntax finden Sie [unter Entry syntax for the "Do not rewrite the following URLs" list](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list).
 
-   Ausführliche Informationen zu diesen Einstellungen finden Sie unter [Einstellungen](safe-links.md#safe-links-settings-for-email-messages) für sichere Links für E-Mail-Nachrichten und Einstellungen für sichere [Links für Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams).
+   Ausführliche Informationen zu diesen Einstellungen finden Sie unter [Einstellungen](safe-links.md#safe-links-settings-for-email-messages) für sichere Links für E-Mail-Nachrichten und Einstellungen für [sichere Links für Microsoft Teams](safe-links.md#safe-links-settings-for-microsoft-teams).
 
    Weitere Informationen zu den empfohlenen Werten für Standard- und Strict-Richtlinieneinstellungen finden Sie unter [Richtlinieneinstellungen](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)für sichere Links .
 
@@ -222,7 +222,7 @@ Zum Ändern der Priorität einer Richtlinie verschieben Sie die Richtlinie in de
 
 3. Klicken Sie in den angezeigten Richtliniendetails auf Richtlinie **löschen,** und klicken Sie **dann** im angezeigten Warndialogfeld auf Ja.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>Konfigurieren von Richtlinien für sichere Links mithilfe von Exchange Online PowerShell oder eigenständiger EOP PowerShell
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>Verwenden Exchange Online PowerShell oder eigenständiger EOP PowerShell zum Konfigurieren von Richtlinien für sichere Links
 
 Wie bereits beschrieben, besteht eine Richtlinie für sichere Links aus einer Richtlinie für sichere Links und einer Regel für sichere Links.
 
@@ -267,7 +267,7 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEn
 In diesem Beispiel wird eine Richtlinie für sichere Links namens Contoso All mit den folgenden Werten erstellt:
 
 - Aktivieren Sie die URL-Überprüfung und -Umschreibung in E-Mail-Nachrichten.
-- Aktivieren sie die URL-Überprüfung in Teams (nur TAP Preview).
+- Aktivieren Sie die URL-Überprüfung in Teams (nur TAP Preview).
 - Aktivieren Sie die Echtzeitprüfung von geklickten URLs, einschließlich geklickter Links, die auf Dateien verweisen.
 - Warten Sie, bis die URL-Überprüfung abgeschlossen ist, bevor Sie die Nachricht senden.
 - Aktivieren Sie die URL-Überprüfung und das Umschreiben für interne Nachrichten.
@@ -469,7 +469,7 @@ Remove-SafeLinksRule -Identity "Marketing Department"
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-SafeLinksRule](/powershell/module/exchange/remove-safelinksrule).
 
-Überprüfen Sie die verfügbaren Microsoft Defender for Office 365-Berichte, um zu überprüfen, ob nachrichtensichere Links überprüft werden. Weitere Informationen finden Sie unter Anzeigen von Berichten [für Defender für Office 365](view-reports-for-mdo.md) und Verwenden von Explorer im Security & Compliance [Center](threat-explorer.md).
+Um zu überprüfen, ob sichere Links Nachrichten überprüft, überprüfen Sie die verfügbaren Microsoft Defender-Office 365 Berichte. Weitere Informationen finden Sie unter Anzeigen von [Berichten für Defender for Office 365](view-reports-for-mdo.md) und Verwenden von Explorer im Security & Compliance [Center](threat-explorer.md).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Wie können Sie feststellen, dass diese Verfahren erfolgreich waren?
 
@@ -477,7 +477,7 @@ Gehen Sie wie folgt vor, um zu überprüfen, ob Richtlinien für sichere Links e
 
 - Wechseln Sie im Security & Compliance Center zu **Bedrohungsverwaltungsrichtlinie** \>  \> **ATP Safe Links**. Überprüfen Sie die Liste der Richtlinien, ihre **Statuswerte** und ihre **Priority-Werte.** Um weitere Details anzuzeigen, wählen Sie die Richtlinie aus der Liste aus, und zeigen Sie die Details im Fly-Out an.
 
-- Ersetzen Sie in Exchange Online PowerShell oder Exchange Online Protection PowerShell durch den Namen der Richtlinie oder Regel, führen Sie den folgenden Befehl aus, und überprüfen Sie \<Name\> die Einstellungen:
+- Ersetzen Exchange Online PowerShell oder Exchange Online Protection PowerShell durch den Namen der Richtlinie oder Regel, führen Sie den folgenden Befehl aus, und überprüfen Sie \<Name\> die Einstellungen:
 
   ```PowerShell
   Get-SafeLinksPolicy -Identity "<Name>"

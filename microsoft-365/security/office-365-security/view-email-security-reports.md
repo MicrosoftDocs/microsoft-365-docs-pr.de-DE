@@ -35,14 +35,14 @@ ms.locfileid: "51206241"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Im Security & Compliance [Center](https://protection.office.com) sind verschiedene Berichte verfügbar, um zu sehen, wie E-Mail-Sicherheitsfeatures wie Antispam-, Anschmierungs- und Verschlüsselungsfunktionen in Microsoft 365 Ihre Organisation schützen. Wenn Sie über die [erforderlichen Berechtigungen verfügen,](#what-permissions-are-needed-to-view-these-reports)können Sie diese Berichte im Security & Compliance Center anzeigen, indem Sie zu **Reports** \> **Dashboard gehen.** Öffnen Sie , um direkt zum Dashboard Berichte zu <https://protection.office.com/insightdashboard> wechseln.
+Im Security & Compliance [Center](https://protection.office.com) stehen verschiedene Berichte zur Verfügung, mit deren Hilfe Sie sehen können, wie E-Mail-Sicherheitsfeatures wie Antispam-, Anschmierungs- und Verschlüsselungsfunktionen in Microsoft 365 Ihre Organisation schützen. Wenn Sie über die [erforderlichen Berechtigungen verfügen,](#what-permissions-are-needed-to-view-these-reports)können Sie diese Berichte im Security & Compliance Center anzeigen, indem Sie zu **Reports** \> **Dashboard gehen.** Öffnen Sie , um direkt zum Dashboard Berichte zu <https://protection.office.com/insightdashboard> wechseln.
 
 ![Dashboard "Berichte" im Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## <a name="compromised-users-report"></a>Bericht "Gefährdete Benutzer"
 
 > [!NOTE]
-> Dieser Bericht ist in Microsoft 365-Organisationen mit Exchange Online-Postfächern verfügbar. Sie ist in eigenständigen Exchange Online Protection (EOP)-Organisationen nicht verfügbar.
+> Dieser Bericht ist in Microsoft 365 organisationen mit Exchange Online verfügbar. Sie ist in eigenständigen Organisationen Exchange Online Protection (EOP) nicht verfügbar.
 
 Der **Bericht "Gefährdete** Benutzer" zeigt die Anzahl  der  Benutzerkonten an, die innerhalb der letzten 7 Tage als verdächtig oder eingeschränkt gekennzeichnet wurden. Konten in einem dieser Zustände sind problematisch oder sogar gefährdet. Bei häufiger Verwendung können Sie den Bericht verwenden, um Spitzen und sogar Trends in verdächtigen oder eingeschränkten Konten zu erkennen. Weitere Informationen zu gefährdeten Benutzern finden Sie unter [Antworten auf ein gefährdetes E-Mail-Konto](responding-to-a-compromised-email-account.md).
 
@@ -66,15 +66,15 @@ Wenn Sie auf **Detailtabelle anzeigen klicken,** sehen Sie die folgenden Details
 
 - **Erstellungszeit**
 - **Benutzer-ID**
-- **Aktion**
+- **Action**
 
 Klicken Sie auf Bericht anzeigen, um zur Berichtsansicht **zurück zu wechseln.**
 
 ## <a name="encryption-report"></a>Verschlüsselungsbericht
 
-Der **Verschlüsselungsbericht ist** in EOP verfügbar (Abonnements mit Postfächern in Exchange Online oder eigenständiges EOP ohne Exchange Online-Postfächer). Das Sicherheitsteam Ihrer Organisation kann informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien proaktiv für vertrauliche E-Mail-Nachrichten anzuwenden oder anzupassen. Beispiel:
+Der **Verschlüsselungsbericht ist** in EOP verfügbar (Abonnements mit Postfächern in Exchange Online oder eigenständigem EOP ohne Exchange Online Postfächer). Das Sicherheitsteam Ihrer Organisation kann informationen in diesem Bericht verwenden, um Muster zu identifizieren und Richtlinien proaktiv für vertrauliche E-Mail-Nachrichten anzuwenden oder anzupassen. Beispiel:
 
-- Wenn eine hohe Anzahl von von Benutzern verschlüsselten E-Mail-Nachrichten angezeigt wird, sollten Sie eine Verschlüsselungsrichtlinie hinzufügen, um die Verschlüsselung für bestimmte Verwendungsfälle zu automatisieren. Weitere Informationen finden Sie unter [Definieren von Nachrichtenflussregeln zum Verschlüsseln von E-Mail-Nachrichten in Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).
+- Wenn eine hohe Anzahl von von Benutzern verschlüsselten E-Mail-Nachrichten angezeigt wird, sollten Sie eine Verschlüsselungsrichtlinie hinzufügen, um die Verschlüsselung für bestimmte Verwendungsfälle zu automatisieren. Weitere Informationen finden Sie unter [Define mail flow rules to encrypt email messages in Microsoft 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md).
 
 - Wenn Eine Reihe von Verschlüsselungsvorlagen verfügbar ist, aber niemand sie verwendet, können Sie untersuchen, ob Benutzer Featureschulungen benötigen.
 
@@ -104,7 +104,7 @@ Sie können die folgenden Filter im Diagramm verwenden:
   - **Nicht weiterleiten**
   - **Nur verschlüsseln**
   - **OME previous**
-  - **Benutzerdefiniert**
+  - **Custom**
 
   Wenn Sie auf **Filter** klicken, können Sie das Diagramm mit den folgenden Filtern ändern:
 
@@ -233,7 +233,7 @@ Wenn Sie in einer Berichtsansicht auf **Detailtabelle anzeigen** klicken, werden
 - **Absenderadresse**
 - **Empfängeradresse**
 - **Ereignistyp**
-- **Aktion**
+- **Action**
 - **Betreff**
 
 Wenn Sie in **einer** Detailtabelle auf Filter klicken, können Sie die Ergebnisse mit den folgenden Filtern ändern:
@@ -272,22 +272,22 @@ Wenn Sie auf **Detailtabelle anzeigen klicken,** sehen Sie die folgenden Details
 - **Spoofed sender**
 - **Wahrer Absender**
 - **Sender-IP**
-- **Aktion**
+- **Action**
 - **Anzahl der Nachrichten**
 
 Klicken Sie auf Bericht anzeigen, um zur Berichtsansicht **zurück zu wechseln.**
 
 ## <a name="threat-protection-status-report"></a>Threat Protection-Statusbericht
 
-Der **Statusbericht zum** Bedrohungsschutz ist sowohl in EOP als auch in Microsoft Defender für Office 365 verfügbar. Die Berichte enthalten jedoch unterschiedliche Daten. EOP-Kunden können z. B. Informationen zu Schadsoftware anzeigen, die in E-Mails erkannt werden, aber keine Informationen zu schädlichen Dateien, die von sicheren Anlagen für [SharePoint, OneDrive](mdo-for-spo-odb-and-teams.md)und Microsoft Teams erkannt werden.
+Der **Statusbericht zum** Bedrohungsschutz ist sowohl in EOP als auch in Microsoft Defender für Office 365; Die Berichte enthalten jedoch unterschiedliche Daten. Beispielsweise können EOP-Kunden Informationen zu Schadsoftware anzeigen, die in E-Mails erkannt wurden, aber keine Informationen zu schädlichen Dateien, die von sicheren Anlagen für [SharePoint, OneDrive](mdo-for-spo-odb-and-teams.md)und Microsoft Teams.
 
-Der Bericht enthält die Anzahl von E-Mail-Nachrichten mit schädlichem Inhalt, z. B. Dateien oder Websiteadressen (URLs), die vom Antiksoftwaremodul blockiert wurden, zap [(Zero-Hour Auto Purge)](zero-hour-auto-purge.md)und Defender for Office 365-Features wie sichere [Links,](safe-links.md)sichere [Anlagen](safe-attachments.md)und [Antiphishing.](set-up-anti-phishing-policies.md) Sie können diese Informationen verwenden, um Trends zu identifizieren oder zu bestimmen, ob Organisationsrichtlinien anpassungen erforderlich sind.
+Der Bericht enthält die Anzahl von E-Mail-Nachrichten mit schädlichem Inhalt, z. B. Dateien oder Websiteadressen (URLs), die vom Antiksoftwaremodul blockiert wurden, zap [(Zero-Hour Auto Purge)](zero-hour-auto-purge.md)und Defender für Office 365-Features wie sichere [Links,](safe-links.md)sichere [Anlagen](safe-attachments.md)und [Antiphishing.](set-up-anti-phishing-policies.md) Sie können diese Informationen verwenden, um Trends zu identifizieren oder zu bestimmen, ob Organisationsrichtlinien anpassungen erforderlich sind.
 
 **Hinweis:** Es ist wichtig zu wissen, dass eine Nachricht, wenn sie an fünf Empfänger gesendet wird, als fünf verschiedene Nachrichten und nicht als eine Nachricht gezählt wird.
 
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie **zu** \> **Berichtsdashboard,** und wählen Sie **Bedrohungsschutzstatus aus.** Öffnen Sie eine der folgenden URLs, um direkt zum Bericht zu wechseln:
 
-- Microsoft Defender für Office 365: <https://protection.office.com/reportv2?id=TPSAggregateReportATP>
+- Microsoft Defender für Office 365:<https://protection.office.com/reportv2?id=TPSAggregateReportATP>
 - EOP: <https://protection.office.com/reportv2?id=TPSAggregateReport>
 
 ![Bedrohungsschutzstatus-Widget im Dashboard "Berichte"](../../media/threat-protection-status-report-widget.png)
@@ -306,10 +306,10 @@ Die folgenden Ansichten sind verfügbar:
 
   ![Übersichtsansicht im Statusbericht zum Bedrohungsschutz](../../media/threat-protection-status-report-overview-view.png)
 
-- **Anzeigen von Daten nach: Content \> Schadsoftware**<sup>1</sup>: Die folgenden Informationen werden für Microsoft Defender für Office 365-Organisationen angezeigt:
+- **Anzeigen von Daten nach: Content \> Schadsoftware**<sup>1</sup>: Die folgenden Informationen werden für Microsoft Defender für Office 365 angezeigt:
 
   - **An malware engine:** Malicious files detected in Sharepoint, OneDrive, and Microsoft Teams by the [built-in virus detection in Microsoft 365](virus-detection-in-spo.md).
-  - **Dateidetonation:** Schädliche Dateien, die von sicheren Anlagen für [SharePoint, OneDrive und Microsoft Teams erkannt werden.](mdo-for-spo-odb-and-teams.md)
+  - **Dateidetonation:** Schädliche Dateien, die von sicheren Anlagen für SharePoint, OneDrive [und Microsoft Teams.](mdo-for-spo-odb-and-teams.md)
 
   ![Ansicht von Schadsoftware für Inhalte im Statusbericht zum Bedrohungsschutz](../../media/threat-protection-status-report-content-malware-view.png)
 
@@ -329,7 +329,7 @@ Die folgenden Ansichten sind verfügbar:
 
 - **Unterlegen nach: Erkennungstechnologie und** **Daten anzeigen nach: E-Mail-Phish \>**: Die folgenden Informationen werden angezeigt:
 
-  - **ATP-generierte URL-Reputation**<sup>1:</sup>Schädliche URL-Reputation, die von Defender for Office 365-Detonationen in anderen Microsoft 365-Kunden generiert wurde.
+  - **ATP-generierte URL-Reputation**<sup>1:</sup>Schadsoftware-URL-Reputation, die von Defender für Office 365 detonationen in anderen Microsoft 365 generiert wird.
   - **Erweiterter Phishfilter:** Phishingsignale basierend auf maschinellem Lernen.
   - **Antis spoof – DMARC-Fehler:** Fehler bei der DMARC-Authentifizierung für Nachrichten.
   - **Antis spoof - organisationsintern:** Der Absender versucht, die Empfängerdomäne zu spoofen.
@@ -347,7 +347,7 @@ Die folgenden Ansichten sind verfügbar:
 
 - **Unterlegen nach: Erkennungstechnologie und** **Daten anzeigen nach: E-Mail-Schadsoftware \>**: Die folgenden Informationen werden angezeigt:
 
-  - **ATP-generierte Dateire** reputation <sup>1:</sup>Alle von Defender for Office 365-Detonationen generierte Schaddateire reputation.
+  - **ATP-generierte Dateire** reputation <sup>1:</sup>Alle von Defender generierte Schaddateire reputation für Office 365 Detonationen.
   - **An malware engine**<sup>1</sup>: Detection from anti-malware engines.
   - **Dateitypblock für** An malware-Richtlinien: Dies sind E-Mail-Nachrichten, die aufgrund der in der Nachricht identifizierten Bösartigen Datei herausgefiltert werden.
   - **Dateidetonation**<sup>1:</sup>Erkennung durch sichere Anlagen.
@@ -382,9 +382,9 @@ Die folgenden Ansichten sind verfügbar:
 
   ![Zustellungsstatusansicht für Phishing-E-Mails im Statusbericht zum Bedrohungsschutz](../../media/threat-protection-status-report-phishing-delivery-status-view.png)
 
-<sup>Nur 1</sup> Defender für Office 365
+<sup>1</sup> Defender für Office 365
 
-<sup>2 Zap</sup> (Zero-Hour Auto Purge) ist in eigenständigem EOP nicht verfügbar (funktioniert nur in Exchange Online-Postfächern).
+<sup>2 Zap</sup> (Zero-Hour Auto Purge) ist in eigenständigem EOP nicht verfügbar (funktioniert nur in Exchange Online Postfächern).
 
 Wenn Sie auf **Filter klicken,** hängen die verfügbaren Filter vom Diagramm ab, das Sie sich angeschaut haben:
 
@@ -454,7 +454,7 @@ Wenn Sie auf **Detailtabelle anzeigen klicken,** hängen die angezeigten Informa
 
   - **Startdatum** und **Enddatum**
   - **Erkennung**
-  - **Geschützt durch**: **Defender für Office 365** oder **EOP**
+  - **Geschützt durch**: **Defender for Office 365** or **EOP**
   - **Tag**: Filtern Sie die Ergebnisse nach Benutzern oder Gruppen, auf die das angegebene Benutzertag angewendet wurde (einschließlich Prioritätskonten). Weitere Informationen zu Benutzertags finden Sie unter [User tags](user-tags.md).
   - **Domäne**
   - **Empfänger (Beachten** Sie, dass diese filterbare Eigenschaft nur in der Detailtabelle verfügbar ist)
@@ -480,7 +480,7 @@ Wenn Sie **in** der Berichtsansicht oder Detailtabelle auf Filter klicken, könn
 
 ## <a name="url-threat-protection-report"></a>BERICHT zum Schutz vor URL-Bedrohungen
 
-Der **Bericht zum Schutz vor URL-Bedrohungen** ist in Microsoft Defender für Office 365 verfügbar. Weitere Informationen finden Sie unter [URL Threat Protection Report](view-reports-for-mdo.md#url-threat-protection-report).
+Der **Bericht zum Schutz vor URL-Bedrohungen** ist in Microsoft Defender für Office 365. Weitere Informationen finden Sie unter [URL Threat Protection Report](view-reports-for-mdo.md#url-threat-protection-report).
 
 ## <a name="user-reported-messages-report"></a>Bericht über von Benutzern gemeldete Nachrichten
 
@@ -499,7 +499,7 @@ Gehen Sie zum Anzeigen dieses Berichts im [Security & Compliance Center](https:/
 ![Wählen Sie im Security & Compliance Center die Option Bedrohungsverwaltung \> Überprüfen von Vom Benutzer \> gemeldeten Nachrichten](../../media/e372c57c-1414-4616-957b-bc933b8c8711.png)
 
 > [!IMPORTANT]
-> Damit der Bericht über vom Benutzer gemeldete Nachrichten ordnungsgemäß **funktioniert,** muss die Überwachungsprotokollierung für Ihre Office 365-Umgebung aktiviert sein. Dies wird in der Regel von einer Person durchgeführt, der die Rolle Überwachungsprotokolle in Exchange Online zugewiesen ist. Weitere Informationen finden Sie unter Aktivieren oder Deaktivieren der [Microsoft 365-Überwachungsprotokollsuche.](../../compliance/turn-audit-log-search-on-or-off.md)
+> Damit der Bericht über vom Benutzer gemeldete Nachrichten ordnungsgemäß **funktioniert,** muss die Überwachungsprotokollierung für Ihre Umgebung Office 365 werden. Dies wird in der Regel von einer Person durchgeführt, der die Rolle Überwachungsprotokolle in der Exchange Online. Weitere Informationen finden Sie unter [Turn Microsoft 365 audit log search on or off](../../compliance/turn-audit-log-search-on-or-off.md).
 
 ## <a name="what-permissions-are-needed-to-view-these-reports"></a>Welche Berechtigungen sind zum Anzeigen dieser Berichte erforderlich?
 
@@ -526,4 +526,4 @@ Wenn in Ihren Berichten keine Daten angezeigt werden, überprüfen Sie, ob Ihre 
 
 [Anzeigen von Nachrichtenflussberichten im Security & Compliance Center](view-mail-flow-reports.md)
 
-[Anzeigen von Berichten für Defender für Office 365](view-reports-for-mdo.md)
+[Anzeigen von Berichten für Defender for Office 365](view-reports-for-mdo.md)

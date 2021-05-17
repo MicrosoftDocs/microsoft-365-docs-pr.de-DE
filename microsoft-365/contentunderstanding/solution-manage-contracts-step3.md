@@ -19,7 +19,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52281237"
 ---
-# <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>Schritt 3: Verwenden Power Automate, um Ihren Fluss zum Verarbeiten Ihrer Verträge zu erstellen
+# <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>Schritt 3: Verwenden Power Automate, um Ihren Fluss zum Verarbeiten Ihrer Verträge zu erstellen
 
 Sie haben ihren Vertragsverwaltungskanal erstellt und Ihre SharePoint angefügt. Im nächsten Schritt erstellen Sie einen Power Automate, um Ihre Verträge zu verarbeiten, die SharePoint Syntex-Modell identifiziert und klassifiziert. Sie können diesen Schritt tun, indem [Sie einen Power Automate In-SharePoint erstellen.](https://support.microsoft.com/office/create-a-flow-for-a-list-or-library-in-sharepoint-or-onedrive-a9c3e03b-0654-46af-a254-20252e580d01)
 

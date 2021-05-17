@@ -41,7 +41,7 @@ Auf dieser Seite wird beschrieben, wie Sie eine Anwendung erstellen, um programm
 Microsoft Defender for Endpoint macht einen Großen Teil seiner Daten und Aktionen über eine Reihe programmgesteuerter APIs verfügbar. Diese APIs helfen Ihnen bei der Automatisierung von Arbeitsabläufen und innovationen basierend auf den Defender for Endpoint-Funktionen. Für den API-Zugriff ist die OAuth2.0-Authentifizierung erforderlich. Weitere Informationen finden Sie unter [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 Im Allgemeinen müssen Sie die folgenden Schritte ausführen, um die APIs zu verwenden:
-- Erstellen Sie eine Azure Active Directory (Azure AD)-Anwendung.
+- Erstellen Sie Azure Active Directory (Azure AD)-Anwendung.
 - Mit dieser Anwendung können Sie ein Zugriffstoken erhalten.
 - Verwenden Sie das Token, um auf die Defender for Endpoint-API zu zugreifen.
 
@@ -51,7 +51,7 @@ In diesem Artikel wird erläutert, wie Sie eine Azure AD-Anwendung erstellen, ei
 
 1. Melden Sie sich [mit einem](https://portal.azure.com) Benutzer mit der Rolle **"Globaler Administrator"** bei Azure an.
 
-2. Navigieren Sie zu **Azure Active Directory**  >  **App-Registrierungen** Neue  >  **Registrierung**. 
+2. Navigieren Sie zu **Azure Active Directory**  >  **App-Registrierungen**  >  **Neue Registrierung**. 
 
    ![Abbildung von Microsoft Azure und Navigation zur Anwendungsregistrierung](images/atp-azure-new-app2.png)
 
@@ -144,7 +144,7 @@ $token = $authResponse.access_token
 Der folgende Code wurde mit NuGet Microsoft.IdentityModel.Clients.ActiveDirectory 3.19.8 getestet.
 
 1. Erstellen Sie eine neue Konsolenanwendung.
-1. Installieren Sie NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+1. Installieren NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
 1. Fügen Sie Folgendes hinzu:
 
     ```
@@ -222,5 +222,5 @@ Im Folgenden sehen Sie ein Beispiel für das Senden einer Anforderung zum Anford
 ```
 
 ## <a name="see-also"></a>Siehe auch
-- [Unterstützte Microsoft Defender for Endpoint-APIs](exposed-apis-list.md)
+- [Unterstütze Microsoft Defender für Endpoint-APIs](exposed-apis-list.md)
 - [Zugreifen auf Microsoft Defender for Endpoint im Namen eines Benutzers](exposed-apis-create-app-nativeapp.md)

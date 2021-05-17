@@ -75,7 +75,7 @@ Um den Warnungsnamen nach einem bestimmten Wort zu durchsuchen, wählen Sie das 
 
 Führen Sie die folgenden Schritte aus, um eine Insiderrisikowarnung zu verdingen:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Warnungen** aus.
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Warnungen** aus.
 2. Wählen Sie **im Benachrichtigungsdashboard** die Warnung aus, die Sie triagen möchten.
 3. Im **Detailbereich Warnungen** können Sie die folgenden Registerkarten überprüfen und die Warnung triagen:
     - **Zusammenfassung**: Diese Registerkarte enthält allgemeine Informationen zur Warnung und ermöglicht Ihnen, die Warnung zu bestätigen und einen neuen Fall zu erstellen oder die Warnung zu schließen. Sie enthält den aktuellen Status für die Warnung und den Schweregrad des Warnungsrisikos, die als *Hoch,* *Mittel* oder *Niedrig aufgeführt sind.* Der Schweregrad kann im Laufe der Zeit zunehmen oder abnehmen, wenn die Warnung nicht triaged ist.
@@ -100,7 +100,7 @@ Der Aktivitäts-Explorer stellt Risikoermittlern und Analysten ein umfassendes A
 
 Führen Sie die folgenden Schritte **aus,** um den Aktivitäts-Explorer zu verwenden:
 
-1. Wechseln Sie im Microsoft 365 Compliance Center zu **Insider Risk Management,** und wählen Sie die Registerkarte **Warnungen** aus.
+1. Wechseln Sie Microsoft 365 Compliance Center zu **Insider Risk Management,** und wählen Sie die Registerkarte **Warnungen** aus.
 2. Wählen Sie **im Benachrichtigungsdashboard** die Warnung aus, die Sie triagen möchten.
 3. Wählen Sie **im Detailbereich Warnungen** die Option **Erweiterte Ansicht öffnen aus.**
 4. Wählen Sie auf der Seite für die ausgewählte Warnung die Registerkarte **Aktivitäts-Explorer** aus.
@@ -113,7 +113,7 @@ Beim Überprüfen von Aktivitäten im Aktivitäts-Explorer können Ermittler und
 
 Wenn die Warnung überprüft und triaged wird, können Sie einen neuen Fall erstellen, um die Risikoaktivität weiter zu untersuchen. Führen Sie die folgenden Schritte aus, um einen Fall für eine Warnung zu erstellen:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Warnungen** aus.
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Warnungen** aus.
 2. Wählen Sie **im Benachrichtigungsdashboard** die Warnung aus, die Sie bestätigen möchten, und erstellen Sie einen neuen Fall für.
 3. Wählen Sie **im Detailbereich Benachrichtigungen** die Option **Aktionen**  >  **Warnungen bestätigen & Erstellen von Fall aus.**
 4. Geben Sie im Dialogfeld **Benachrichtigung bestätigen** und Insiderrisikofall erstellen einen Namen für den Fall ein, wählen Sie Benutzer aus, die als Mitwirkende hinzugefügt werden, und fügen Sie kommentare hinzu, falls zutreffend. Kommentare werden dem Fall automatisch als Fallnotiz hinzugefügt.

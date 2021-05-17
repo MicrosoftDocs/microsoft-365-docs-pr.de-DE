@@ -150,4 +150,4 @@ Die folgenden Schritte können verwendet werden, um diese Probleme zu beheben un
     Weitere Informationen finden Sie unter [Configure and validate exclusions for Microsoft Defender for Endpoint on Linux](linux-exclusions.md).
 
 ## <a name="see-also"></a>Siehe auch
-- [Untersuchen von Problemen mit der Integrität von Agents](health-status.md)
+- [Untersuchen von Problemen mit der Agent-Integrität](health-status.md)

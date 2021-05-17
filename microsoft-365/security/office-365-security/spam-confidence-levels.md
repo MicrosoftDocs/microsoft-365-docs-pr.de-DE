@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können mehr über die Spamsicherheitsstufe (Spam Confidence Level, SCL) erfahren, die auf Nachrichten in Exchange Online Protection (EOP) angewendet wurde.
+description: Administratoren können mehr über die Spamsicherheitsstufe (Spam Confidence Level, SCL) erfahren, die auf Nachrichten in EOP (EOP Exchange Online Protection angewendet wurde.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 951bbcb5fcbcc7b7916ee1c34c4ab489d54b6667
@@ -35,7 +35,7 @@ ms.locfileid: "51204054"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer werden eingehende Nachrichten über die Spamfilterung in EOP gesendet und erhalten eine Spampunktzahl. Diese Bewertung wird einer individuellen Spamvertrauensstufe (SCL) zugeordnet, die der Nachricht in einem X-Header hinzugefügt wird. Eine höhere SCL gibt an, dass es sich bei einer Nachricht wahrscheinlicher um Spam handelt. EOP führt eine Aktion für die Nachricht basierend auf der SCL aus.
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer werden eingehende Nachrichten in EOP durch spamfiltert und erhalten eine Spampunktzahl. Diese Bewertung wird einer individuellen Spamvertrauensstufe (SCL) zugeordnet, die der Nachricht in einem X-Header hinzugefügt wird. Eine höhere SCL gibt an, dass es sich bei einer Nachricht wahrscheinlicher um Spam handelt. EOP führt eine Aktion für die Nachricht basierend auf der SCL aus.
 
 Was die SCL bedeutet, und die Standardaktionen, die für Nachrichten ergriffen werden, werden in der folgenden Tabelle beschrieben. Weitere Informationen zu Aktionen, die Sie für Nachrichten basierend auf dem Spamfilter-Urteil ausführen können, finden Sie unter [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
@@ -57,4 +57,4 @@ Sie können Nachrichtenflussregeln (auch als Transportregeln bezeichnet) verwend
 
 ****
 
-![Das kurze Symbol für LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New in Microsoft 365?** Entdecken Sie kostenlose Videokurse für **Microsoft 365-Administratoren** und IT-Profis, die Ihnen von LinkedIn Learning angeboten werden.
+![Das kurze Symbol für LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Entdecken Sie kostenlose Videokurse **für Microsoft 365 und IT-Profis,** die Ihnen von LinkedIn Learning zur Verfügung steht.

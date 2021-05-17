@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie mehr über die Webverwaltungsschnittstelle in eigenständigem Exchange Online Protection (EOP).
+description: Erfahren Sie mehr über die Webverwaltungsschnittstelle in eigenständigen Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: ab834d14673370a39e148aefa568591ff4c50b8f
@@ -39,17 +39,17 @@ Suchen Sie die Exchange Online-Version dieses Themas? Weitere Informationen find
 
 Eigenständige EOP-Kunden können mithilfe der folgenden Methoden auf die EAC zugreifen:
 
-- **Aus dem Microsoft 365 Admin Center**:
+- **Im Microsoft 365 Admin Center**:
 
   1. Wechseln Sie <https://admin.microsoft.com> zu, und klicken **Sie auf Alle anzeigen.**
 
-     ![Klicken Sie im Microsoft 365 Admin Center auf Alle anzeigen](../../media/m365-center-show-all.png)
+     ![Klicken Sie auf Alle anzeigen im Microsoft 365 Admin Center](../../media/m365-center-show-all.png)
 
   2. Klicken Sie **im angezeigten** Abschnitt Admin Center auf **Alle Admin Center**.
 
-     ![Klicken Sie im Microsoft 365 Admin Center auf Alle Admin Center](../../media/m365-center-select-all-admin-centers.png)
+     ![Klicken Sie auf Alle Admin Center im Microsoft 365 Admin Center](../../media/m365-center-select-all-admin-centers.png)
 
-  3. Klicken Sie **auf der** angezeigten Seite Alle Admin Center auf Exchange **Online Protection**.
+  3. Klicken Sie **auf der** angezeigten Seite Alle Admin Center auf **Exchange Online Protection**.
 
 - Wechseln Sie direkt zu `https://admin.protection.outlook.com/ecp/` .
 
@@ -74,9 +74,9 @@ Dies ist die erste Navigationsebene für die meisten Aufgaben, die Sie in der Ex
   > [!NOTE]
   > Sie sollten Anti-Malware-Richtlinien und die Standardmäßige Verbindungsfilterrichtlinie im Security & Compliance Center verwalten. Weitere Informationen finden Sie unter [Configure anti-malware policies in EOP](configure-anti-malware-policies.md) und [Configure connection filtering in EOP](configure-the-connection-filter-policy.md).
 
-- **Nachrichtenfluss:** Hier verwalten Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet), akzeptierte Domänen und Connectors sowie nachrichtenablaufverfolgung.
+- **Mail Flow:** Hier verwalten Sie Nachrichtenflussregeln (auch Transportregeln bezeichnet), akzeptierte Domänen und Connectors sowie die Nachrichtenablaufverfolgung.
 
-- **Hybrid:** Hier können Sie den Assistenten für die [Hybridkonfiguration](/Exchange/hybrid-configuration-wizard)ausführen und das [Exchange Online PowerShell-Modul installieren.](/powershell/exchange/mfa-connect-to-exchange-online-powershell)
+- **Hybrid:** Hier können Sie [](/Exchange/hybrid-configuration-wizard)den Assistenten für die Hybridkonfiguration ausführen und das Exchange Online [PowerShell-Modul installieren.](/powershell/exchange/mfa-connect-to-exchange-online-powershell)
 
 ### <a name="tabs"></a>Registerkarten
 

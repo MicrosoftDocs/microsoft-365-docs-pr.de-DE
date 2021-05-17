@@ -1,5 +1,5 @@
 ---
-title: Bewerten von Microsoft Defender for Endpoint
+title: Auswerten des Microsoft Defender für Endpunkt
 ms.reviewer: ''
 description: Bewerten Sie die verschiedenen Sicherheitsfunktionen in Microsoft Defender for Endpoint.
 keywords: Attack Surface Reduction, evaluate, next, generation, protection
@@ -24,7 +24,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51218797"
 ---
-# <a name="evaluate-microsoft-defender-for-endpoint"></a>Bewerten von Microsoft Defender for Endpoint 
+# <a name="evaluate-microsoft-defender-for-endpoint"></a>Auswerten des Microsoft Defender für Endpunkt 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -46,8 +46,8 @@ Diese Funktionen verhindern, dass Angriffe und Ausnutzungen Ihre Organisation in
 
 - [Bewerten der Reduzierung der Angriffsfläche](./evaluate-attack-surface-reduction.md)
 - [Auswerten des Exploitschutzes](./evaluate-exploit-protection.md)
-- [Bewerten des Netzwerkschutzes](./evaluate-exploit-protection.md)
-- [Bewerten des kontrollierten Ordnerzugriffs](./evaluate-controlled-folder-access.md)
+- [Auswerten des Netzwerkschutzes](./evaluate-exploit-protection.md)
+- [Auswerten des kontrollierten Ordnerzugriffs](./evaluate-controlled-folder-access.md)
 - [Auswerten von Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/test-scenarios-md-app-guard)
 - [Bewerten der Netzwerkfirewall](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/evaluating-windows-firewall-with-advanced-security-design-examples)
 

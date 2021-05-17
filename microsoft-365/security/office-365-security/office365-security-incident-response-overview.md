@@ -41,7 +41,7 @@ ms.locfileid: "51205870"
 
 Nicht alle Cyberangriffe können vereitelt werden. Angreifer suchen ständig nach neuen Schwächen in Ihrer Defensivstrategie, oder sie nutzen alte. Wenn Sie wissen, wie Sie einen Angriff erkennen, können Sie schneller darauf reagieren, was die Dauer des Sicherheitsvorfalls verkürzt.
 
-Diese Artikelreihe hilft Ihnen, zu verstehen, wie ein bestimmter Angriffstyp in Microsoft 365 aussehen könnte, und enthält Schritte, die Sie ergreifen können, um zu reagieren. Dies sind kurze Einstiegspunkte zum Verständnis:
+Diese Artikelreihe hilft Ihnen, zu verstehen, wie ein bestimmter Angriffstyp in Microsoft 365 aussehen kann, und enthält Schritte, die Sie ergreifen können, um zu reagieren. Dies sind kurze Einstiegspunkte zum Verständnis:
 
 - Was der Angriff ist und wie er funktioniert.
 
@@ -67,7 +67,7 @@ Diese Artikelreihe hilft Ihnen, zu verstehen, wie ein bestimmter Angriffstyp in 
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Sichern von Microsoft 365 wie ein Profi für Internetsicherheit
 
-Ihr Microsoft 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können.  Verwenden Sie die Microsoft 365 Security Roadmap – Die wichtigsten Prioritäten für die ersten [30 Tage, 90](security-roadmap.md) Tage und darüber hinaus, um von Microsoft empfohlene bewährte Methoden zum Schützen Ihrer Microsoft 365-Organisation zu implementieren.
+Ihr Microsoft 365-Abonnement bietet eine Reihe von leistungsfähigen Funktionen für Sicherheit, die Sie zum Schutz Ihrer Daten und Ihrer Benutzer verwenden können.  Verwenden Sie die Microsoft 365 Security Roadmap – Die wichtigsten Prioritäten für die ersten [30 Tage, 90](security-roadmap.md) Tage und darüber hinaus, um von Microsoft empfohlene bewährte Methoden für die Sicherung Ihrer organisation Microsoft 365 implementieren.
 
 - Aufgaben, die in den ersten 30 Tagen ausgeführt werden sollten.  Diese sind unmittelbar gültig und haben nur geringe Auswirkungen für die Benutzer.
 

@@ -1,5 +1,5 @@
 ---
-title: Untersuchen von Problemen mit der Integrität von Agents
+title: Untersuchen von Problemen mit der Agent-Integrität
 description: Informationen zu den beim Ausführen des mdatp-Integritätsbefehls zurückgegebenen Werten
 keywords: mdatp health, command, health, status, command, onboarding status
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52281176"
 ---
-# <a name="investigate-agent-health-issues"></a>Untersuchen von Problemen mit der Integrität von Agents
+# <a name="investigate-agent-health-issues"></a>Untersuchen von Problemen mit der Agent-Integrität
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

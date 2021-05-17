@@ -16,7 +16,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können erfahren, wie Sie isolierte Nachrichten für alle Benutzer in Exchange Online Protection (EOP) anzeigen und verwalten. Administratoren in Organisationen mit Microsoft Defender für Office 365 können auch isolierte Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams verwalten.
+description: Administratoren können erfahren, wie Sie isolierte Nachrichten für alle Benutzer in Exchange Online Protection (EOP) anzeigen und verwalten. Administratoren in Organisationen mit Microsoft Defender for Office 365 können auch isolierte Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
@@ -39,9 +39,9 @@ In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder in eige
 
 Administratoren können alle Arten von isolierten Nachrichten für alle Benutzer anzeigen, veröffentlichen und löschen. Nur Administratoren können Nachrichten verwalten, die als Schadsoftware, Phishing mit hoher Sicherheit oder als Ergebnis von Nachrichtenflussregeln (auch als Transportregeln bekannt) isoliert wurden. Administratoren können auch falsch positive Ergebnisse an Microsoft melden.
 
-Administratoren in Organisationen mit Microsoft Defender für Office 365 können auch isolierte Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams anzeigen, herunterladen und löschen.
+Administratoren in Organisationen mit Microsoft Defender for Office 365 können auch isolierte Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams.
 
-Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange &) anzeigen und verwalten.
+Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online-Postfächer) anzeigen und verwalten.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -59,12 +59,12 @@ Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerS
 
   - Durch Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
-  - <sup>\*</sup> Mitglieder der **Rollengruppe Quarantäneadministrator** müssen auch Mitglieder der Rollengruppe **"Hygieneverwaltung"** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) sein, um Quarantäneverfahren in Exchange Online PowerShell ausführen zu können.
+  - <sup>\*</sup>Mitglieder der **Rollengruppe Quarantäneadministrator** müssen auch Mitglieder der Rollengruppe **"Hygieneverwaltung"** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) sein, um Quarantäneverfahren in Exchange Online PowerShell ausführen zu können.
 
 - Isolierte Nachrichten werden für einen Standardzeitraum aufbewahrt, bevor sie automatisch gelöscht werden:
   - 30 Tage für Nachrichten, die von Antispamrichtlinien isoliert werden (Spam, Phishing und Massen-E-Mails). Dies ist der Standardwert und der Höchstwert. Informationen zum Konfigurieren (niedriger) dieses Werts finden Sie unter [Configure anti-spam policies](configure-your-spam-filter-policies.md).
   - 15 Tage für Nachrichten, die Schadsoftware enthalten.
-  - 15 Tage für Dateien, die von sicheren Anlagen für SharePoint, OneDrive und Microsoft Teams in Defender für Office 365 isoliert wurden.
+  - 15 Tage für Dateien, die von sicheren Anlagen für SharePoint, OneDrive und Microsoft Teams in Defender for Office 365.
 
   Wenn eine Nachricht aus der Quarantäne abläuft, können Sie sie nicht wiederherstellen.
 
@@ -196,7 +196,7 @@ Nachdem Sie eine Nachricht ausgewählt haben, stehen Ihnen im  Flyoutbereich Det
 
 - **Nachricht herunterladen**: Wählen Sie im daraufhin angezeigten Flyout-Fenster **Ich verstehe die Risiken beim Herunterladen dieser Nachricht** aus, um eine lokale Kopie der Nachricht im eml-Format zu speichern.
 
-- **Absender blockieren:** Fügen Sie den Absender der Liste blockierter Absender in Ihrem Postfach hinzu. Weitere Informationen finden Sie unter [Blockieren eines E-Mail-Absenders.](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
+- **Absender blockieren**: Fügen Sie den Absender zur Liste blockierter Absender für Ihr Postfach hinzu. Weitere Informationen finden Sie unter [E-Mail-Absender blockieren](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - **Nachricht senden**: Wählen Sie im angezeigten Flyoutbereich die folgenden Optionen aus:
 
@@ -298,7 +298,7 @@ Wenn Sie mehrere isolierte Dateien in der Liste auswählen  (bis zu 100), wird d
 - **Freigabedateien**
 - **Dateien löschen:** Nachdem Sie **in** der angezeigten Warnung auf Ja geklickt haben, werden die Dateien sofort gelöscht.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Verwenden von Exchange Online PowerShell oder eigenständiger EOP PowerShell zum Anzeigen und Verwalten isolierter Nachrichten und Dateien
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-view-and-manage-quarantined-messages-and-files"></a>Verwenden Exchange Online PowerShell oder eigenständiger EOP PowerShell zum Anzeigen und Verwalten von isolierten Nachrichten und Dateien
 
 Die cmdlets, die Sie zum Anzeigen und Verwalten von Nachrichten und Dateien in Quarantäne verwenden, sind:
 
@@ -308,6 +308,6 @@ Die cmdlets, die Sie zum Anzeigen und Verwalten von Nachrichten und Dateien in Q
 
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 
-- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): Beachten Sie, dass dieses Cmdlet nur für Nachrichten und nicht für Isolierte Dateien aus sicheren Anlagen für SharePoint, OneDrive und Microsoft Teams geeignet ist.
+- [Preview-QuarantineMessage](/powershell/module/exchange/preview-quarantinemessage): Beachten Sie, dass dieses Cmdlet nur für Nachrichten und nicht für Isolierte Dateien aus sicheren Anlagen für SharePoint, OneDrive und Microsoft Teams.
 
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)

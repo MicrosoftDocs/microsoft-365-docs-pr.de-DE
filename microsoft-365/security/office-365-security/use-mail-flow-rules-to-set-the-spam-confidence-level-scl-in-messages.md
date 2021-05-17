@@ -14,7 +14,7 @@ search.appverid:
 ms.assetid: 4ccab17a-6d49-4786-aa28-92fb28893e99
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie, wie Sie Nachrichtenflussregeln (Transportregeln) erstellen, um Nachrichten zu identifizieren und die Spamsicherheitsstufe (Spam Confidence Level, SCL) von Nachrichten in Exchange Online Protection festlegen.
+description: Erfahren Sie, wie Sie Nachrichtenflussregeln (Transportregeln) erstellen, um Nachrichten zu identifizieren und die Spamsicherheitsstufe (Spam Confidence Level, SCL) von Nachrichten in Exchange Online Protection.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -34,13 +34,13 @@ ms.locfileid: "51206095"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer verwendet EOP Antispamrichtlinien (auch als Spamfilterrichtlinien oder Inhaltsfilterrichtlinien bezeichnet), um eingehende Nachrichten auf Spam zu überprüfen. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer verwendet EOP Antispamrichtlinien (auch als Spamfilterrichtlinien oder Inhaltsfilterrichtlinien bezeichnet), um eingehende Nachrichten auf Spam zu überprüfen. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
 
 Wenn Sie bestimmte Nachrichten als Spam markieren möchten, bevor sie sogar von der Spamfilterung gescannt werden, oder Nachrichten markieren möchten, damit sie die Spamfilterung überspringen, können Sie Nachrichtenflussregeln erstellen (auch als Transportregeln bekannt), um die Nachrichten zu identifizieren und die Spamsicherheitsstufe (Spam Confidence Level, SCL) festlegen. Weitere Informationen zum SCL finden Sie unter [Spam Confidence Level (SCL) in EOP](spam-confidence-levels.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in Exchange Online oder Exchange Online Protection berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rolle **Transportregeln,** die standardmäßig den Rollengruppen **Organisationsverwaltung,** **Complianceverwaltung** (globale Administratoren) und **Datensatzverwaltung** zugewiesen ist.
+- Bevor Sie die Verfahren in diesem Artikel Exchange Online oder Exchange Online Protection können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rolle **Transportregeln,** die standardmäßig den Rollengruppen **Organisationsverwaltung,** **Complianceverwaltung** (globale Administratoren) und **Datensatzverwaltung** zugewiesen ist.
 
   Weitere Informationen finden Sie in den folgenden Themen:
 
@@ -48,11 +48,11 @@ Wenn Sie bestimmte Nachrichten als Spam markieren möchten, bevor sie sogar von 
   - [Berechtigungen in EOP als eigenständige Lösung](feature-permissions-in-eop.md)
   - [Ändern der Liste der Mitglieder in Rollengruppen mithilfe der EAC](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- Informationen zum Öffnen der EAC in Exchange Online finden Sie unter [Exchange Admin Center in Exchange Online](/Exchange/exchange-admin-center). Informationen zum Öffnen der EAC im eigenständigen EOP finden Sie unter [Exchange Admin Center im eigenständigen EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
+- Informationen zum Öffnen der EAC in Exchange Online finden Sie [unter Exchange Admin Center in Exchange Online](/Exchange/exchange-admin-center). Informationen zum Öffnen der EAC im eigenständigen EOP finden Sie [unter Exchange Admin Center in eigenständigem EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Weitere Informationen zu Nachrichtenflussregeln in Exchange Online und Exchange Online Protection finden Sie unter [Nachrichtenflussregeln (Transportregeln) in Exchange Online.](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
+- Weitere Informationen zu Nachrichtenflussregeln in Exchange Online und Exchange Online Protection finden Sie unter [Nachrichtenflussregeln (Transportregeln) in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
 ## <a name="use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message"></a>Verwenden der EAC zum Erstellen einer Nachrichtenflussregel, die die SCL einer Nachricht legt
 

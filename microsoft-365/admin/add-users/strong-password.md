@@ -30,17 +30,17 @@ ms.locfileid: "51222073"
 ---
 # <a name="turn-off-strong-password-requirements-for-users"></a>Deaktivieren starker Kennwortanforderungen für Benutzer
 
-In diesem Artikel wird erläutert, wie Sie starke Kennwortanforderungen für Ihre Benutzer deaktivieren. Starke Kennwortanforderungen sind in Ihrer Microsoft 365 Business-Organisation standardmäßig aktiviert. Ihre Organisation muss möglicherweise sichere Kennwörter deaktivieren. Führen Sie die folgenden Schritte aus, um starke Kennwortanforderungen zu deaktivieren. Sie müssen diese Schritte mithilfe von PowerShell ausführen.
+In diesem Artikel wird erläutert, wie Sie starke Kennwortanforderungen für Ihre Benutzer deaktivieren. Starke Kennwortanforderungen sind standardmäßig in Ihrer Microsoft 365 Business Organization aktiviert. Ihre Organisation muss möglicherweise sichere Kennwörter deaktivieren. Führen Sie die folgenden Schritte aus, um starke Kennwortanforderungen zu deaktivieren. Sie müssen diese Schritte mithilfe von PowerShell ausführen.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Dieser Artikel ist für Personen, die die Kennwortrichtlinie für ein Unternehmen, eine Schule oder gemeinnützige Organisation verwalten. Um diese Schritte auszuführen, müssen Sie sich mit Ihrem Microsoft 365-Administratorkonto anmelden. [Was ist ein Administratorkonto?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) Sie müssen ein globaler [Administrator oder Kennwortadministrator sein,](about-admin-roles.md) um diese Schritte ausführen zu können.
 
-Sie müssen auch eine Verbindung mit Microsoft 365 mit PowerShell herstellen.
+Sie müssen auch eine Verbindung mit Microsoft 365 PowerShell herstellen.
 
 ## <a name="set-strong-passwords"></a>Festlegen von starken Kennwörtern
 
-1. [Verbinden Sie sich mit Microsoft 365 mit PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+1. [Verbinden sie Microsoft 365 PowerShell .](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 2. Mit PowerShell können Sie starke Kennwortanforderungen für alle Benutzer mit dem folgenden Befehl deaktivieren:
 
@@ -58,7 +58,7 @@ Sie müssen auch eine Verbindung mit Microsoft 365 mit PowerShell herstellen.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Herstellen einer Verbindung mit Microsoft 365 mit PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+[Herstellen einer Verbindung mit Microsoft 365 PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 [Weitere Informationen zu PowerShell-MsolUser-Befehlen](/powershell/module/msonline/set-msoluser?view=azureadps-1.0)
 

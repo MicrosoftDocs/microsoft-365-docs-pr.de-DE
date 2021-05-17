@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: how-to
 localization_priority: Normal
 ms.assetid: 125834f4-1024-4325-ad5a-d2573cfb005e
-description: Administratoren erfahren, wie Sie Berechtigungen im Exchange Admin Center (EAC) in Exchange Online Protection zuweisen oder entfernen.
+description: Administratoren erfahren, wie Sie Berechtigungen im Exchange Admin Center (EAC) in Exchange Online Protection.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 5e712c47d49508934ec7dd2438beff00eb6e1a20
@@ -27,19 +27,19 @@ ms.locfileid: "51206274"
 **Gilt für**
 -  [Exchange Online Protection eigenständig](exchange-online-protection-overview.md)
 
-In eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer können Sie das Exchange Admin Center (EAC) verwenden, um Benutzer zu Rollengruppen hinzuzufügen. Durch hinzufügen eines Benutzers zu einer Rollengruppe erhält der Benutzer Berechtigungen zum Ausführen bestimmter Administratoraufgaben. Sie können auch Benutzer aus Rollengruppen entfernen.
+In eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online Können Sie das Exchange Admin Center (EAC) verwenden, um Benutzer zu Rollengruppen hinzuzufügen. Durch hinzufügen eines Benutzers zu einer Rollengruppe erhält der Benutzer Berechtigungen zum Ausführen bestimmter Administratoraufgaben. Sie können auch Benutzer aus Rollengruppen entfernen.
 
 Weitere Informationen zu Rollen und Rollengruppen finden Sie unter [Permissions in standalone EOP](feature-permissions-in-eop.md).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Informationen zum Öffnen des Exchange Admin Center (EAC) finden Sie unter [Exchange Admin Center im eigenständigen EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
+- Informationen zum Öffnen Exchange Admin Center (EAC) finden Sie [unter Exchange Admin Center im eigenständigen EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
-- Informationen zum Öffnen der eigenständigen EOP PowerShell finden Sie [unter Connect to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
+- Informationen zum Öffnen der eigenständigen EOP PowerShell finden Sie [unter Verbinden to Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in Exchange Online Protection die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie  die Rollenverwaltungsrolle, die standardmäßig der **Rollengruppe** Organisationsverwaltung zugewiesen ist. Weitere Informationen finden Sie unter [Permissions in standalone EOP](feature-permissions-in-eop.md) und [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Bevor Sie die Verfahren in diesem Artikel Exchange Online Protection, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie  die Rollenverwaltungsrolle, die standardmäßig der **Rollengruppe** Organisationsverwaltung zugewiesen ist. Weitere Informationen finden Sie unter [Permissions in standalone EOP](feature-permissions-in-eop.md) und [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Informationen zu Tastenkombinationen, die für die Verfahren in diesem Artikel gelten können, finden Sie unter [Tastenkombinationen für](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)das Exchange Admin Center in Exchange Online .
+- Informationen zu Tastenkombinationen, die für die Verfahren in diesem Artikel gelten können, finden Sie unter Tastenkombinationen für das [Exchange Admin Center in Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)-Forum um Hilfe.
@@ -246,7 +246,7 @@ Gehen Sie wie folgt vor, um sicherzustellen, dass Sie eine Rollengruppe erfolgre
 
 - Wechseln Sie in der EAC zu **Berechtigungen** Administratorrollen, und überprüfen Sie, ob die \> Rollengruppe aufgeführt ist (oder nicht aufgeführt). Wählen Sie die Rollengruppe aus, und überprüfen Sie die Einstellungen im Detailbereich, oder klicken Sie **auf** Bearbeiten ![ ](../../media/ITPro-EAC-EditIcon.png) (Symbol), um die Einstellungen zu überprüfen.
 
-- Ersetzen Sie in Exchange Online PowerShell durch den Namen der Rollengruppe, und führen Sie den folgenden Befehl aus, um zu überprüfen, ob die Rollengruppe vorhanden (oder nicht vorhanden) ist, und überprüfen Sie die \<Role Group Name\> Einstellungen:
+- Ersetzen Exchange Online PowerShell durch den Namen der Rollengruppe, und führen Sie den folgenden Befehl aus, um zu überprüfen, ob die Rollengruppe vorhanden (oder nicht vorhanden) ist, und überprüfen Sie die \<Role Group Name\> Einstellungen:
 
     ```PowerShell
     Get-RoleGroup -Identity "<Role Group Name>" | Format-List

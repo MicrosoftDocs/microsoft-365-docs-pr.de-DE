@@ -17,7 +17,7 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren erfahren, wie Sie den Angriffssimulator zum Ausführen simulierter Phishing- und Kennwortangriffe in ihren Microsoft 365 E5- oder Microsoft Defender for Office 365 Plan 2-Organisationen verwenden.
+description: Administratoren erfahren, wie Sie den Angriffssimulator verwenden, um simulierte Phishing- und Kennwortangriffe in ihren organisationen Microsoft 365 E5 oder Microsoft Defender for Office 365 Plan 2 ausführen.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 637e84281b85e8c859207ae81342a3c6ab3d00be
@@ -33,11 +33,11 @@ ms.locfileid: "51204215"
 
 **Gilt für** [Microsoft Defender für Office 365 Plan 2](defender-for-office-365.md)
 
-Wenn Ihre Organisation über Microsoft Defender für Office 365 Plan 2 verfügt, der Funktionen zur Untersuchung und Reaktion auf Bedrohungen [umfasst,](office-365-ti.md)können Sie den Angriffssimulator im Security & Compliance Center verwenden, um realistische Angriffsszenarien in Ihrer Organisation ausführen zu können. Diese simulierten Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren und zu finden, bevor sich ein tatsächlicher Angriff auf Ihr Endergebnis aus wirkt. Weitere Informationen finden Sie in diesem Artikel.
+Wenn Ihre Organisation über Microsoft Defender für Office 365 Plan 2 verfügt, der Funktionen zur Bedrohungsuntersuchung und -reaktion [umfasst,](office-365-ti.md)können Sie den Angriffssimulator im Security & Compliance Center verwenden, um realistische Angriffsszenarien in Ihrer Organisation ausführen. Diese simulierten Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren und zu finden, bevor sich ein tatsächlicher Angriff auf Ihr Endergebnis aus wirkt. Weitere Informationen finden Sie in diesem Artikel.
 
 > [!NOTE]
 >
-> Der Angriffssimulator wie in diesem Artikel beschrieben  ist jetzt schreibgeschützt und wurde durch Angriffssimulationsschulungen im Knoten **E-Mail & Zusammenarbeit** im [Microsoft 365 Security Center ersetzt.](https://security.microsoft.com) Weitere Informationen finden Sie unter [Erste Schritte mit attack simulation training](attack-simulation-training-get-started.md).
+> Der In diesem Artikel beschriebene Angriffssimulator ist  jetzt schreibgeschützt und wurde durch Angriffssimulationsschulungen im Knoten **E-Mail & Zusammenarbeit** im Microsoft 365 Security [Center ersetzt.](https://security.microsoft.com) Weitere Informationen finden Sie unter [Erste Schritte mit attack simulation training](attack-simulation-training-get-started.md).
 >
 > Die Möglichkeit, neue Simulationen aus dieser Version des Angriffssimulators zu starten, wurde deaktiviert. Sie können jedoch ab dem 24. Januar 2021 bis zu 90 Tage lang auf Berichte zugreifen.
 
@@ -45,7 +45,7 @@ Wenn Ihre Organisation über Microsoft Defender für Office 365 Plan 2 verfügt,
 
 - Zum Öffnen des Security & Compliance Centers wechseln Sie zu <https://protection.office.com/>. Der Angriffssimulator ist unter **Threat Management** \> **Attack simulator verfügbar.** Wechseln Sie direkt zum Angriffssimulator, öffnen Sie <https://protection.office.com/attacksimulator> .
 
-- Weitere Informationen zur Verfügbarkeit von Attack Simulator für verschiedene Microsoft 365-Abonnements finden Sie unter [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- Weitere Informationen zur Verfügbarkeit von Attack Simulator für verschiedene Microsoft 365 finden Sie unter [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 
 - Sie müssen Mitglied der Rollengruppen **Organisationsverwaltung** oder **Sicherheitsadministrator** sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
@@ -55,7 +55,7 @@ Wenn Ihre Organisation über Microsoft Defender für Office 365 Plan 2 verfügt,
 
 - Phishingkampagnen sammeln und verarbeiten Ereignisse für 30 Tage. Verlaufskampagnendaten sind bis zu 90 Tage nach dem Starten der Kampagne verfügbar.
 
-- Angriffssimulations- und Schulungsdaten werden mit anderen Kundendaten für Microsoft 365-Dienste gespeichert. Weitere Informationen finden Sie unter [Microsoft 365 Data Locations](../../enterprise/o365-data-locations.md).
+- Angriffssimulations- und Schulungsdaten werden zusammen mit anderen Kundendaten für Microsoft 365 gespeichert. Weitere Informationen finden Sie [unter Microsoft 365 Speicherorte](../../enterprise/o365-data-locations.md).
 
 - Es gibt keine entsprechenden PowerShell-Cmdlets für Den Angriffssimulator.
 
@@ -73,7 +73,7 @@ Im Angriffssimulator stehen zwei verschiedene Arten von Speerphishingkampagnen z
 
   - Eine benutzerdefinierte Seite (URL), die Sie angeben.
 
-- **Speerphishing (Anlage)**: Der Angriff versucht, die Empfänger davon zu überzeugen, eine .docx- oder .pdf-Anlage in der Nachricht zu öffnen. Die Anlage enthält den gleichen Inhalt aus dem Standardmäßigen Phishinglink, aber der erste Satz beginnt mit " , Sie sehen diese Nachricht als kürzlich geöffnete \<Display Name\> E-Mail-Nachricht...".
+- **Spear phishing (attachment)**: Der Angriff versucht, die Empfänger davon zu überzeugen, eine .docx oder .pdf in der Nachricht zu öffnen. Die Anlage enthält den gleichen Inhalt aus dem Standardmäßigen Phishinglink, aber der erste Satz beginnt mit " , Sie sehen diese Nachricht als kürzlich geöffnete \<Display Name\> E-Mail-Nachricht...".
 
 > [!NOTE]
 > Derzeit laufen Speerphishingkampagnen im Angriffssimulator nicht ab.
@@ -170,7 +170,7 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die E-Mail-Nachricht dire
 
 4. Gehen Sie **im Schritt** Zielempfänger wie folgt vor:
 
-   - Klicken **Sie auf Adressbuch,** um die Empfänger (Benutzer oder Gruppen) für die Kampagne auszuwählen. Jeder Zielempfänger muss über ein Exchange Online-Postfach verfügen. Wenn Sie auf **Filtern** und **Anwenden** klicken, ohne ein Suchkriterium ein eingeben zu müssen, werden alle Empfänger zurückgegeben und der Kampagne hinzugefügt.
+   - Klicken **Sie auf Adressbuch,** um die Empfänger (Benutzer oder Gruppen) für die Kampagne auszuwählen. Jeder Zielempfänger muss über ein Exchange Online verfügen. Wenn Sie auf **Filtern** und **Anwenden** klicken, ohne ein Suchkriterium ein eingeben zu müssen, werden alle Empfänger zurückgegeben und der Kampagne hinzugefügt.
 
    - Klicken **Sie auf Importieren** und anschließend auf **Dateiimport,** um einen durch Kommas getrennten Wert (CSV) oder eine zeilenge trennte Datei mit E-Mail-Adressen zu importieren. Jede Zeile muss die E-Mail-Adresse des Empfängers enthalten.
 
@@ -207,9 +207,9 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die E-Mail-Nachricht dire
      >
      > - Sie müssen eine URL auswählen. Bei **Spear Phishing (Attachment)-Kampagnen** können Sie den Link im nächsten Schritt aus dem Nachrichtentext entfernen  (andernfalls enthält die Nachricht sowohl einen Link als auch eine Anlage).
 
-   - **Anlagentyp**: Diese Einstellung ist nur in **Spear Phishing (Attachment)-Kampagnen** verfügbar. Klicken Sie auf die Dropdownliste, und wählen Sie **aus. DOCX** oder **. PDF** aus der Liste.
+   - **Anlagentyp**: Diese Einstellung ist nur in **Spear Phishing (Attachment)-Kampagnen** verfügbar. Klicken Sie auf die Dropdownliste, **und wählen.DOCX** oder **.PDF** in der Liste aus.
 
-   - **Anlagenname**: Diese Einstellung ist nur in **Spear Phishing (Attachment)-Kampagnen** verfügbar. Geben Sie einen Dateinamen für die .docx- oder .pdf-Anlage ein.
+   - **Anlagenname**: Diese Einstellung ist nur in **Spear Phishing (Attachment)-Kampagnen** verfügbar. Geben Sie einen Dateinamen für die .docx oder .pdf anlage ein.
 
    - **Url der benutzerdefinierten** Zielseite: Geben Sie eine optionale Zielseite ein, auf der Benutzer aufgenommen werden, wenn sie auf den Phishinglink klicken und ihre Anmeldeinformationen eingeben. Dieser Link ersetzt die Standardlandeseite. Wenn Sie beispielsweise über ein internes Sensibilisierungstraining verfügen, können Sie diese URL hier angeben.
 
@@ -265,7 +265,7 @@ Im Angriffssimulator stehen Ihnen zwei verschiedene Arten von Kennwortangriffska
 
 4. Gehen Sie **im Schritt** Zielbenutzer wie folgt vor:
 
-   - Klicken **Sie auf Adressbuch,** um die Empfänger (Benutzer oder Gruppen) für die Kampagne auszuwählen. Jeder Zielempfänger muss über ein Exchange Online-Postfach verfügen. Wenn Sie auf **Filtern** und **Anwenden** klicken, ohne ein Suchkriterium ein eingeben zu müssen, werden alle Empfänger zurückgegeben und der Kampagne hinzugefügt.
+   - Klicken **Sie auf Adressbuch,** um die Empfänger (Benutzer oder Gruppen) für die Kampagne auszuwählen. Jeder Zielempfänger muss über ein Exchange Online verfügen. Wenn Sie auf **Filtern** und **Anwenden** klicken, ohne ein Suchkriterium ein eingeben zu müssen, werden alle Empfänger zurückgegeben und der Kampagne hinzugefügt.
 
    - Klicken **Sie auf Importieren** und anschließend auf **Dateiimport,** um einen durch Kommas getrennten Wert (CSV) oder eine zeilenge trennte Datei mit E-Mail-Adressen zu importieren. Jede Zeile muss die E-Mail-Adresse des Empfängers enthalten.
 
@@ -277,7 +277,7 @@ Im Angriffssimulator stehen Ihnen zwei verschiedene Arten von Kennwortangriffska
 
      - **Geben Sie Kennwörter manuell** ein: Geben Sie in das Feld **Drücken** Sie die Eingabetaste ein, um ein Kennwort hinzuzufügen, geben Sie ein Kennwort ein, und drücken Sie dann die EINGABETASTE. Wiederholen Sie diesen Schritt so oft wie nötig.
 
-     - **Hochladen von Kennwörtern** aus einer Wörterbuchdatei: Klicken Sie auf **Hochladen,** um eine vorhandene Textdatei zu importieren, die ein Kennwort in jeder Zeile und eine leere letzte Zeile enthält. Die Textdatei muss mindestens 10 MB groß sein und darf nicht mehr als 30.000 Kennwörter enthalten.
+     - **Hochladen** aus einer Wörterbuchdatei : Klicken Sie auf **Hochladen,** um eine vorhandene Textdatei zu importieren, die ein Kennwort in jeder Zeile und eine leere letzte Zeile enthält. Die Textdatei muss mindestens 10 MB groß sein und darf nicht mehr als 30.000 Kennwörter enthalten.
 
    - **Kennwort-Spray-Angriff:** Geben Sie im **Feld Kennwort(en)** ein Kennwort ein.
 
@@ -335,7 +335,7 @@ Die folgenden Informationen sind auf der Seite **Angriffsdetails** für jede Kam
 
   - Die Client-IP-Adresse.
 
-  - Details zur Windows- und Webbrowserversion des Benutzers.
+  - Details zur Benutzerversion von Windows und Webbrowser.
 
   Sie können auf **Exportieren klicken,** um die Ergebnisse in eine CSV-Datei zu exportieren.
 

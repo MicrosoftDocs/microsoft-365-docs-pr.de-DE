@@ -17,7 +17,7 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Erfahren Sie mehr über die Verwendung der Benachrichtigungsfeatures im Office 365 Security & Compliance Center zum Anzeigen und Verwalten von Warnungen, einschließlich der Verwaltung erweiterter Warnungen.
+description: Erfahren Sie, wie Sie die Benachrichtigungsfeatures im Office 365 Security & Compliance Center verwenden, um Warnungen anzuzeigen und zu verwalten, einschließlich der Verwaltung erweiterter Warnungen.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -36,7 +36,7 @@ ms.locfileid: "51205522"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 
-Verwenden Sie die Benachrichtigungsfeatures im Security & Compliance Center, um Warnungen für Ihre Organisation anzuzeigen und zu [verwalten,](/cloud-app-security/what-is-cloud-app-security)einschließlich der Verwaltung erweiterter Warnungen im Rahmen der Übersicht über Microsoft Cloud App Security .
+Verwenden Sie die Benachrichtigungsfeatures im Security & Compliance Center, um Warnungen für Ihre Organisation anzuzeigen und [zu verwalten,](/cloud-app-security/what-is-cloud-app-security)einschließlich der Verwaltung erweiterter Warnungen als Teil Microsoft Cloud App Security Übersicht .
 
 ## <a name="how-to-get-to-the-alerts-features"></a>So erhalten Sie die Benachrichtigungsfeatures
 
@@ -68,6 +68,6 @@ In der folgenden Tabelle werden die Tools beschrieben, die unter **Warnungen** i
 
 |Tool|Beschreibung|
 |---|---|
-|[Verwalten von Warnungen](../../compliance/create-activity-alerts.md)|Verwenden Sie Aktivitätswarnungen, um E-Mail-Benachrichtigungen an sich selbst oder andere Administratoren zu senden, wenn Benutzer bestimmte Aktivitäten in Microsoft 365 ausführen. Aktivitätswarnungen ähneln dem Durchsuchen des Überwachungsprotokolls nach Ereignissen, mit der Ausnahme, dass Ihnen eine E-Mail-Nachricht gesendet wird, wenn ein Ereignis auftritt, für das Sie eine Warnung erstellt haben.|
-|[Verwalten erweiterter Warnungen](/cloud-app-security/what-is-cloud-app-security)|Verwenden Sie **das Feature** Erweiterte Warnungen verwalten von Microsoft 365 Cloud App Security, um Richtlinien zu erstellen, die Sie vor verdächtigen und anomalen Aktivitäten in Microsoft 365 warnen können. Nachdem Sie alarmiert wurden, können Sie Situationen untersuchen, die potenziell problematisch sind, und bei Bedarf Maßnahmen ergreifen, um Sicherheitsprobleme zu beheben.|
+|[Verwalten von Warnungen](../../compliance/create-activity-alerts.md)|Verwenden Sie Aktivitätswarnungen, um E-Mail-Benachrichtigungen an sich selbst oder andere Administratoren zu senden, wenn Benutzer bestimmte Aktivitäten in Microsoft 365. Aktivitätswarnungen ähneln dem Durchsuchen des Überwachungsprotokolls nach Ereignissen, mit der Ausnahme, dass Ihnen eine E-Mail-Nachricht gesendet wird, wenn ein Ereignis auftritt, für das Sie eine Warnung erstellt haben.|
+|[Verwalten erweiterter Warnungen](/cloud-app-security/what-is-cloud-app-security)|Verwenden Sie **das Feature** Erweiterte Warnungen verwalten von Microsoft 365 Cloud App Security, um Richtlinien zu erstellen, die Sie vor verdächtigen und anomalen Aktivitäten in Microsoft 365. Nachdem Sie alarmiert wurden, können Sie Situationen untersuchen, die potenziell problematisch sind, und bei Bedarf Maßnahmen ergreifen, um Sicherheitsprobleme zu beheben.|
 |

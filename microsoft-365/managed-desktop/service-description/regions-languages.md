@@ -1,6 +1,6 @@
 ---
 title: Unterstützte Regionen
-description: Von Microsoft Managed Desktop unterstützte Regionen
+description: Regionen, die von Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -19,19 +19,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/30/2021
 ms.locfileid: "51445310"
 ---
-# <a name="microsoft-managed-desktop-supported-regions"></a>Von Microsoft Managed Desktop unterstützte Regionen
+# <a name="microsoft-managed-desktop-supported-regions"></a>Microsoft Managed Desktop unterstützten Regionen
 
-Dieser Artikel enthält Details zu Regionen, in denen Sie Microsoft Managed Desktop verwenden können und wo es unterstützt wird. Weitere Informationen zu sprachen, die von Microsoft Managed Desktop für die Benutzeroberfläche unterstützt werden, finden Sie unter [Localize devices for users](../get-started/localization.md).
+Dieser Artikel enthält Details zu Regionen, in denen Sie Microsoft Managed Desktop und wo sie unterstützt werden können. Weitere Informationen zu sprachen, die von Microsoft Managed Desktop unterstützt werden, finden Sie unter [Localize devices for users](../get-started/localization.md).
 
-Verwaltete Geräte außerhalb dieser Regionen können weiterhin ohne Unterbrechung des Microsoft Managed Desktop-Diensts verwendet werden. Beispielsweise kann ein Mitarbeiter mit Sitz im Vereinigten Königreich sicher arbeiten und Updates auf dem verwalteten Gerät erhalten, während er Asien, Europa oder Südamerika reist.
+Sie können weiterhin verwaltete Geräte außerhalb dieser Regionen ohne Unterbrechung des Microsoft Managed Desktop verwenden. Beispielsweise kann ein Mitarbeiter mit Sitz im Vereinigten Königreich sicher arbeiten und Updates auf dem verwalteten Gerät erhalten, während er Asien, Europa oder Südamerika reist.
 
-Weitere Informationen zu den sprachen, die von Microsoft Managed Desktop für Benutzer- und Administratorerfahrungen unterstützt werden, finden Sie unter [Localize the user experience](../get-started/localization.md).
+Weitere Informationen zu den von Microsoft Managed Desktop unterstützten Sprachen für Benutzer- und Administratorerfahrungen finden Sie unter [Lokalisieren der Benutzeroberfläche](../get-started/localization.md).
 
 Weitere Informationen zur Benutzerunterstützung mit Microsoft Managed Desktop finden Sie [unter Support for Microsoft Managed Desktop](support.md).
 
 ## <a name="availability-of-the-service"></a>Verfügbarkeit des Diensts
 
-Organisationen in den folgenden Ländern können Microsoft Managed Desktop abonnieren:
+Organisationen in den folgenden Ländern können die folgenden Microsoft Managed Desktop:
 
 - Vereinigte Staaten
 - Kanada (ohne Quebec)

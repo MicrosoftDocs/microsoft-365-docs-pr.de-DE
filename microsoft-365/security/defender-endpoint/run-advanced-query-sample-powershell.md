@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51198671"
 ---
-# <a name="advanced-hunting-using-powershell"></a>Erweiterte Suche mit PowerShell
+# <a name="advanced-hunting-using-powershell"></a>Erweiterte Bedrohungssuche mit PowerShell
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -129,4 +129,4 @@ $results | ConvertTo-Json | Set-Content file1.json
 ## <a name="related-topic"></a>Verwandtes Thema
 - [Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 - [Erweiterte Suche-API](run-advanced-query-api.md)
-- [Erweiterte Suche mithilfe von Python](run-advanced-query-sample-python.md)
+- [Erweiterte Bedrohungssuche mit Python](run-advanced-query-sample-python.md)

@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Microsoft Defender für Endpunkt-APIs
 ms.reviewer: ''
-description: Erfahren Sie, wie Sie eine systemeigene Windows-App entwerfen, um programmgesteuerten Zugriff auf Microsoft Defender for Endpoint ohne Benutzer zu erhalten.
+description: Erfahren Sie, wie Sie eine systemeigene Windows entwerfen, um programmgesteuerten Zugriff auf Microsoft Defender for Endpoint ohne Benutzer zu erhalten.
 keywords: apis, graph api, supported apis, actor, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -63,7 +63,7 @@ Auf dieser Seite wird erläutert, wie Sie eine AAD-Anwendung erstellen, ein Zugr
 
 1. Melden Sie sich [mit einem](https://portal.azure.com) Benutzerkonto mit der Rolle **"Globaler Administrator"** bei Azure an.
 
-2. Navigieren Sie zu **Azure Active Directory**  >  **App-Registrierungen** Neue  >  **Registrierung**. 
+2. Navigieren Sie zu **Azure Active Directory**  >  **App-Registrierungen**  >  **Neue Registrierung**. 
 
    ![Abbildung von Microsoft Azure und Navigation zur Anwendungsregistrierung](images/atp-azure-new-app2.png)
 

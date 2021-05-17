@@ -40,7 +40,7 @@ Der Kompromissindikator (IoCs) ist ein wesentliches Feature in jeder Endpunktsch
 
 Erstellen Sie Indikatoren, die die Erkennung, Verhinderung und den Ausschluss von Entitäten definieren. Sie können die zu ergreifende Aktion sowie die Dauer für die Anwendung der Aktion sowie den Bereich der Gerätegruppe definieren, auf die sie angewendet werden soll.
 
-Derzeit unterstützte Quellen sind das Clouderkennungsmodul von Defender for Endpoint, das automatisierte Untersuchungs- und Korrekturmodul und das Modul zur Verhinderung von Endpunkten (Microsoft Defender Antivirus).
+Derzeit unterstützte Quellen sind das Clouderkennungsmodul von Defender for Endpoint, das automatisierte Untersuchungs- und Korrekturmodul und das Endpoint Prevention Engine (Microsoft Defender Antivirus).
 
 **Clouderkennungsmodul**<br>
 Das Clouderkennungsmodul von Defender for Endpoint überprüft regelmäßig gesammelte Daten und versucht, die von Ihnen festgelegten Indikatoren zu entsprechen. Wenn eine Übereinstimmung vor liegt, werden die Aktionen entsprechend den Einstellungen ausgeführt, die Sie für das IoC angegeben haben.
@@ -68,7 +68,7 @@ Sie können einen Indikator für:
 
 
 > [!NOTE]
-> Es gibt eine Grenze von 15.000 Indikatoren pro Mandant. Datei- und Zertifikatindikatoren blockieren keine [für Microsoft Defender Antivirus definierten Ausschlüsse.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) Indikatoren werden in Microsoft Defender Antivirus nicht unterstützt, wenn sie sich im passiven Modus befinden. 
+> Es gibt eine Grenze von 15.000 Indikatoren pro Mandant. Datei- und Zertifikatindikatoren blockieren keine [Ausschlüsse, die für Microsoft Defender Antivirus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) Indikatoren werden in der Microsoft Defender Antivirus nicht unterstützt, wenn sie sich im passiven Modus befinden. 
 
 
 ## <a name="related-topics"></a>Verwandte Themen

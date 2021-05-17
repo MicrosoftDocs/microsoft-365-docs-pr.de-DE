@@ -34,7 +34,7 @@ ms.locfileid: "51204239"
 > [!NOTE]
 > Wenn Sie das Junk-E-Mail-Berichterstellungs-Add-In derzeit nicht verwenden, wird stattdessen das [Add-In](enable-the-report-message-add-in.md) Nachricht melden oder das [Phishing-Add-In](enable-the-report-phish-add-in.md) melden empfohlen. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
-Das Junk-E-Mail-Berichterstellungs-Add-In für Microsoft Outlook ermöglicht Es Benutzern, falsch positive Nachrichten (gute E-Mails, die als Spam gekennzeichnet sind), falsch negative Nachrichten (ungültige E-Mails zulässig) und Phishingnachrichten an Microsoft zu senden. Wenn Ihre Organisation Exchange Online Protection nicht verwendet (z. B. lokale Exchange- oder E-Mail-Dienste, die keine Exchange Online sind), wirkt sich ihre Übermittlung von Junk-E-Mail-Berichten nicht auf Ihre Spamfilterung aus.
+Das Junk-E-Mail-Berichterstellungs-Add-In für Microsoft Outlook ermöglicht Es Benutzern, falsch positive Ergebnisse (gute E-Mails als Spam gekennzeichnet), falsch negative Nachrichten (ungültige E-Mails zulässig) und Phishingnachrichten an Microsoft zu senden. Wenn Ihre Organisation keine Exchange Online Protection (z. B. lokale Exchange oder andere E-Mail-Dienste als Exchange Online) verwendet, wirkt sich ihre Übermittlung von Junk-E-Mail-Berichten nicht auf Ihre Spamfilterung aus.
 
 In diesem Thema wird erläutert, wie Sie das Junk-E-Mail-Berichterstellungs-Add-In installieren und verwenden.
 
@@ -42,10 +42,10 @@ In diesem Thema wird erläutert, wie Sie das Junk-E-Mail-Berichterstellungs-Add-
 
 - Informationen zum Installieren des Junk-E-Mail-Berichts-Add-Ins finden Sie im Abschnitt Installieren des [Junk-E-Mail-Berichts-Add-Ins](#install-the-junk-email-reporting-add-in) weiter später in diesem Artikel.
 
-- Das Junk-E-Mail-Berichterstellungs-Add-In funktioniert mit den folgenden Versionen von Outlook:
+- Das Junk-E-Mail-Berichterstellungs-Add-In funktioniert mit den folgenden Versionen Outlook:
 
   - Outlook 2013 oder höher
-  - Outlook in Microsoft 365 Apps for Enterprise enthalten
+  - Outlook in der Microsoft 365 Apps for Enterprise
 
 - Weitere Informationen zum Melden von Nachrichten an Microsoft finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
@@ -111,20 +111,20 @@ In diesem Thema wird erläutert, wie Sie das Junk-E-Mail-Berichterstellungs-Add-
 
 - Sie benötigen Administratorrechte auf dem Computer, auf dem Sie das Add-In installieren.
 
-- Wechseln Sie zu und laden Sie die entsprechende MSI-Datei für Ihre Office-Version an einen Speicherort herunter, der <https://www.microsoft.com/download/details.aspx?id=18275> leicht zu finden ist:
+- Wechseln Sie zu und laden Sie die .msi für Ihre Version von Office an einen Speicherort herunter, der leicht <https://www.microsoft.com/download/details.aspx?id=18275> zu finden ist:
 
   - **32-Bit:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
   - **64-Bit:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-- Für Outlook 2013 oder höher ist die einzige Voraussetzung das Microsoft .NET Framework 2.0. In Windows 10 installieren Sie die .NET Framework 2.0 nicht aus einem Download.
+- Für Outlook 2013 oder höher ist die einzige Voraussetzung das Microsoft .NET Framework 2.0. In Windows 10 installieren Sie das .NET Framework 2.0 nicht aus einem Download.
 
 ### <a name="install-the-junk-email-reporting-add-in-using-the-setup-wizard"></a>Installieren des Junk-E-Mail-Berichts-Add-Ins mithilfe des Setup-Assistenten
 
 1. Schließen Sie Outlook auf Ihrem Computer.
 
-2. Überprüfen Sie in Windows 10, ob .NET Framework 2.0 aktiviert ist. Anweisungen finden Sie unter [Enable the .NET Framework 3.5 in Control Panel](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel).
+2. Überprüfen Windows 10, ob .NET Framework 2.0 aktiviert ist. Anweisungen finden Sie unter [Enable the .NET Framework 3.5 in Control Panel](/dotnet/framework/install/dotnet-35-windows-10#enable-the-net-framework-35-in-control-panel).
 
-3. Suchen Sie die heruntergeladene MSI-Datei, und doppelklicken Sie darauf.
+3. Suchen Sie .msi datei, die Sie heruntergeladen haben, und doppelklicken Sie darauf.
 
 4. Klicken Sie auf der Seite **Willkommen beim Setup des Microsoft-Add-Ins "Junk-E-Mail-Berichtsprogramm"** auf **Weiter**.
 
@@ -134,7 +134,7 @@ In diesem Thema wird erläutert, wie Sie das Junk-E-Mail-Berichterstellungs-Add-
 
 Starten Sie Outlook.
 
-Suchen Sie im **Outlook-Menüband** nach der Schaltfläche Junk. Sie können Microsoft nun Junk-E-Mails melden, indem Sie die entsprechenden E-Mails im Posteingang auswählen und dann auf die Schaltfläche **Junk-E-Mails melden** klicken.
+Suchen Sie auf **dem Menüband** nach der Schaltfläche Junk Outlook Menüband. Sie können Microsoft nun Junk-E-Mails melden, indem Sie die entsprechenden E-Mails im Posteingang auswählen und dann auf die Schaltfläche **Junk-E-Mails melden** klicken.
 
 Wählen Sie den Pfeil nach unten neben **Junk** aus, um weitere Optionen anzuzeigen, z. B. **Als betrügerischen Phishing-Versuch melden**, wenn Sie Phishing-Scam-E-Mails an Microsoft melden möchten. In Ihrem Junk-E-Mailordner können Sie auch **Keine Junk-E-Mail** auswählen, wenn eine E-Mail-Nachricht fälschlicherweise als Junk-E-Mail gekennzeichnet wurde.
 
@@ -142,7 +142,7 @@ Wählen Sie den Pfeil nach unten neben **Junk** aus, um weitere Optionen anzuzei
 
 1. Schließen Sie Outlook auf Ihrem Computer.
 
-2. Installieren Sie in Windows 10 die .NET Framework 2.0, indem Sie den folgenden Befehl ausführen:
+2. Installieren Windows 10 sie in .NET Framework 2.0, indem Sie den folgenden Befehl ausführen:
 
    ```dos
    DISM /Online /Enable-Feature /FeatureName:NetFx3 /All
@@ -175,7 +175,7 @@ Wählen Sie den Pfeil nach unten neben **Junk** aus, um weitere Optionen anzuzei
 
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
-Gehen Sie wie folgt vor, um zu überprüfen, ob Sie das Junk-E-Mail-Berichterstellungs-Add-In erfolgreich installiert haben:
+Gehen Sie wie folgt vor, um zu überprüfen, ob Das Junk-E-Mail-Berichterstellungs-Add-In erfolgreich installiert Outlook:
 
 - Wählen Sie die Nachricht aus, oder öffnen Sie die Nachricht. Klicken Sie **auf der** Registerkarte **Start** oder Nachricht im Menüband auf **Junk,** und stellen Sie sicher, dass die folgenden Optionen verfügbar sind:
 
@@ -212,21 +212,21 @@ Gehen Sie wie folgt vor, um zu überprüfen, ob Sie das Junk-E-Mail-Berichterste
 
 ## <a name="uninstall-the-junk-email-reporting-add-in"></a>Deinstallieren des Add-Ins "Junk-E-Mail-Berichtsprogramm"
 
-Verwenden Sie nach dem Schließen von Outlook eines der folgenden Verfahren, um das Junk-E-Mail-Berichterstellungs-Add-In zu deinstallieren:
+Nachdem Sie Outlook, verwenden Sie eines der folgenden Verfahren, um das Junk-E-Mail-Berichterstellungs-Add-In zu deinstallieren:
 
-- **Systemsteuerung**: Drücken Sie die Windows-TASTE + R. Geben Sie **im** geöffneten Dialogfeld Ausführen die Eingabe `control appwiz.cpl` ein, und klicken Sie dann auf **OK**.
+- **Systemsteuerung**: Drücken Sie die Windows + R. Geben Sie **im** geöffneten Dialogfeld Ausführen die Eingabe `control appwiz.cpl` ein, und klicken Sie dann auf **OK**.
 
   Suchen Sie das **Microsoft Junk-E-Mail-Berichterstellungs-Add-In,** und wählen Sie es in der Liste aus, und klicken Sie dann auf **Deinstallieren.**
 
-- **Windows Installer-Paket:** Suchen oder laden Sie die entsprechende MSI-Datei herunter, und doppelklicken Sie darauf.
+- **Windows Installer-Paket:** Suchen oder laden Sie die entsprechende .msi herunter, und doppelklicken Sie darauf.
 
   - **32-Bit:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (32-bit).msi`
 
   - **64-Bit:**`Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi`
 
-  Wählen Sie im angezeigten Dialogfeld **Microsoft Junk-E-Mail-Berichterstellungs-Add-In** entfernen für Outlook aus, und klicken Sie dann auf **Weiter**.
+  Wählen Sie im angezeigten Dialogfeld **Microsoft Junk-E-Mail-Berichterstellungs-Add-In** entfernen für Outlook und klicken Sie dann auf **Weiter**.
 
-- **Silent Mode**: Suchen oder laden Sie die entsprechende MSI-Datei herunter. Ersetzen Sie in einem Eingabeaufforderungsfenster durch den Speicherort der \<PathToFile\> MSI-Datei, und führen Sie einen der folgenden Befehle aus:
+- **Silent Mode**: Suchen oder laden Sie die entsprechende .msi herunter. Ersetzen Sie in einem Eingabeaufforderungsfenster durch den Speicherort der .msi, und führen Sie einen \<PathToFile\> der folgenden Befehle aus:
 
   - **32-Bit:**
 
@@ -240,11 +240,11 @@ Verwenden Sie nach dem Schließen von Outlook eines der folgenden Verfahren, um 
     msiexec /x "<PathToFile>\Junk Reporting Add-in for Office 2007, 2010, 2013, and 2016 (64-bit).msi" /qn MSIRESTARTMANAGERCONTROL="DisableShutdown"
     ```
 
-Wenn Sie Outlook nach der Deinstallation öffnen, sollten die Junk-, nicht Junk- und Phishingberichtsoptionen weg sein.
+Wenn Sie Outlook deinstallation öffnen, sollten die Optionen für Junk-, nicht Junk- und Phishingberichte weg sein.
 
 ## <a name="troubleshooting-the-junk-email-reporting-add-in"></a>Problembehandlung für das Junk-E-Mail-Bericht-Add-In
 
-Gelegentlich können Probleme mit Outlook nach dem Hinzufügen des Junk-E-Mail-Berichts-Add-Ins angezeigt werden. In diesem Abschnitt werden Probleme beschrieben, die auftreten können, sowie Tipps zum Beheben dieser Probleme.
+Gelegentlich können Probleme mit der Outlook nach dem Hinzufügen des Junk-E-Mail-Berichts-Add-Ins auf sie en. In diesem Abschnitt werden Probleme beschrieben, die auftreten können, sowie Tipps zum Beheben dieser Probleme.
 
 ### <a name="troubleshooting-for-users"></a>Problembehandlung für Benutzer
 
@@ -256,7 +256,7 @@ Es gibt mindestens eines der folgenden Probleme:
 
 Gehen Sie wie folgt vor, um dieses Problem zu beheben:
 
-1. Schließen und starten Sie Outlook neu.
+1. Schließen und starten Sie Outlook.
 2. Erstellen und senden Sie eine Testnachricht, und vergewissern Sie sich, dass der Empfänger die Nachricht empfangen hat.
 3. Wenn das Problem weiterhin besteht, wenden Sie sich an Ihren Administrator.
 
@@ -268,7 +268,7 @@ Weitere Methoden zum Übermitteln von Nachrichten an Microsoft finden Sie unter 
 
 1. Überprüfen oder festlegen Sie `LoggingLevel` den Registrierungsschlüssel auf den Wert "Verbose":
 
-   - **32-Bit-Outlook unter 32-Bit-Windows**:
+   - **32-Bit-Outlook 32-Bit-Windows:**
 
      ```text
      Windows Registry Editor Version 5.00
@@ -277,7 +277,7 @@ Weitere Methoden zum Übermitteln von Nachrichten an Microsoft finden Sie unter 
      "LoggingLevel"="Verbose"
      ```
 
-   - **32-Bit-Outlook unter 64-Bit-Windows**:
+   - **32-Bit-Outlook 64-Bit-Windows:**
 
      ```text
      Windows Registry Editor Version 5.00
@@ -295,7 +295,7 @@ Weitere Methoden zum Übermitteln von Nachrichten an Microsoft finden Sie unter 
      "LoggingLevel"="Verbose"
      ```
 
-2. Starten Sie Outlook neu, und fordern Sie Benutzer auf, sich zu melden, wenn die Fehlermeldung angezeigt wird.
+2. Starten Outlook, und fordern Sie Benutzer auf, sich zu melden, wenn die Fehlermeldung angezeigt wird.
 
 3. Erfassen Sie die Protokollinformationen am folgenden Speicherort:
 

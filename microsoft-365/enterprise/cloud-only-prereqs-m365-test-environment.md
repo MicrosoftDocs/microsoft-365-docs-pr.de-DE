@@ -35,7 +35,7 @@ Es gibt acht Hauptphasen bei der Einrichtung dieser Testumgebung:
 2. Konfigurieren benannter Orte
 3. Konfigurieren der Self-Service-Kennwortzurücksetzung
 4. Konfigurieren der mehrstufigen Authentifizierung
-5. Aktivieren der automatischen Geräteregistrierung von Windows-Computern, die der Domäne beigetreten sind
+5. Aktivieren der automatischen Geräteregistrierung von In die Domäne Windows Computern
 6. Konfigurieren des Azure AD-Kennwortschutzes 
 7. Aktivieren von Azure AD Identity Protection
 8. Aktivieren der modernen Authentifizierung für Exchange Online und Skype for Business Online
@@ -77,9 +77,9 @@ Befolgen Sie die Anweisungen unter [Phase 2 der mehrstufige Authentifizierung](m
 
 Testen der mehrstufigen Authentifizierung für das Konto „Benutzer 2“.
 
-## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 5: Aktivieren der automatischen Geräteregistrierung von Windows-Computern, die der Domäne beigetreten sind 
+## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Phase 5: Aktivieren der automatischen Geräteregistrierung von In die Domäne Windows Computern 
 
-Befolgen [Sie diese Anweisungen,](/azure/active-directory/devices/hybrid-azuread-join-plan) um die automatische Geräteregistrierung von Windows-Computern zu aktivieren, die der Domäne beigetreten sind.
+Befolgen [Sie diese Anweisungen,](/azure/active-directory/devices/hybrid-azuread-join-plan) um die automatische Geräteregistrierung von Domänencomputern zu Windows aktivieren.
 
 ## <a name="phase-6-configure-azure-ad-password-protection"></a>Phase 6: Konfigurieren des Azure AD-Kennwortschutzes 
 

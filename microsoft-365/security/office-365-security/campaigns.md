@@ -16,7 +16,7 @@ ms.assetid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Erfahren Sie mehr über Kampagnenansichten in Microsoft Defender für Office 365.
+description: Erfahren Sie mehr über Kampagnenansichten in Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: e3c84b9e6253dd813ff930314fc2c1d0a947e94e
@@ -26,14 +26,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/25/2021
 ms.locfileid: "51204011"
 ---
-# <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Kampagnenansichten in Microsoft Defender für Office 365
+# <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Kampagnenansichten in Microsoft Defender for Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Gilt für**
 - [Microsoft Defender für Office 365 – Plan 2](defender-for-office-365.md)
 
-Kampagnenansichten sind ein Feature in Microsoft Defender für Office 365 Plan 2 (z. B. Microsoft 365 E5 oder Organisationen mit einem Defender for Office 365 Plan 2-Add-On). Kampagnenansichten im Security & Compliance Center identifiziert und kategorisiert Phishingangriffe im Dienst. Kampagnenansichten können Ihnen bei Folgendem helfen:
+Kampagnenansichten ist ein Feature in Microsoft Defender für Office 365 Plan 2 (z. B. Microsoft 365 E5 oder Organisationen mit einem Defender for Office 365 Plan 2-Add-On). Kampagnenansichten im Security & Compliance Center identifiziert und kategorisiert Phishingangriffe im Dienst. Kampagnenansichten können Ihnen bei Folgendem helfen:
 
 - Phishing-Angriffe effektiv untersuchen und darauf reagieren.
 - Besseres Verständnis des Umfangs des Angriffs.
@@ -92,7 +92,7 @@ Der Rest der Übersichtsseite zeigt die folgenden Informationen auf der Register
   - **Phish**: Wo verfügbar, die Marke, die von dieser Kampagne phished wird. Beispiel: `Microsoft` , `365` , , , `Unknown` oder `Outlook` `DocuSign` .
   - **Schadsoftware**: z. B. `HTML/PHISH` oder `HTML/<MalwareFamilyName>` .
 
-  Sofern verfügbar, die Marke, die von dieser Kampagne phished wird. Wenn die Erkennung durch die Defender for Office 365-Technologie gesteuert wird, wird das Präfix **ATP-** dem Untertypwert hinzugefügt.
+  Sofern verfügbar, die Marke, die von dieser Kampagne phished wird. Wenn die Erkennung von Defender für Office 365 gesteuert wird, wird das Präfix **ATP-** dem Untertypwert hinzugefügt.
 
 - **Empfänger**: Die Anzahl der Benutzer, auf die diese Kampagne abzielt.
 
@@ -142,7 +142,7 @@ Die filterbaren Kampagneneigenschaften, die in der Schaltfläche Kampagnentyp ve
 
 - **Erweitert**:
   - **Internetnachrichten-ID**: Im Kopfzeilenfeld **Message-ID** im Nachrichtenkopf verfügbar. Ein Beispielwert ist `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (beachten Sie die eckigen Klammern).
-  - **Netzwerknachrichten-ID:** Ein GUID-Wert, der im **X-MS-Exchange-Organization-Network-Message-Id-Headerfeld** im Nachrichtenkopf verfügbar ist.
+  - **Netzwerknachrichten-ID:** Ein GUID-Wert, der im Kopfzeilenfeld **X-MS-Exchange-Organization-Network-Message-Id** verfügbar ist.
   - **Sender-IP**
   - **Anlage SHA256**: Führen Sie den folgenden Befehl in einer Eingabeaufforderung aus, um den SHA256-Hashwert einer Datei in Windows zu finden: `certutil.exe -hashfile "<Path>\<Filename>" SHA256` .
   - **Cluster-ID**
@@ -168,7 +168,7 @@ Nachdem Sie einen einfachen oder erweiterten Filter erstellt haben, können Sie 
 
 Klicken Sie zum Exportieren des Diagramms oder der Liste der Kampagnen auf **Exportieren,** und wählen Sie **Diagrammdaten** exportieren oder **Kampagnenliste exportieren aus.**
 
-Wenn Sie über ein Microsoft Defender for Endpoint-Abonnement verfügen, können Sie auf **MDE-Einstellungen klicken,** um die Kampagneninformationen mit Microsoft Defender for Endpoint zu verbinden oder zu trennen. Weitere Informationen finden Sie unter [Integrieren von Microsoft Defender for Office 365 in Microsoft Defender for Endpoint](integrate-office-365-ti-with-mde.md).
+Wenn Sie über ein Microsoft Defender for Endpoint-Abonnement verfügen, können Sie auf **MDE Einstellungen,** um die Kampagneninformationen mit Microsoft Defender for Endpoint zu verbinden oder zu trennen. Weitere Informationen finden Sie unter [Integrieren von Microsoft Defender for Office 365 in Microsoft Defender for Endpoint](integrate-office-365-ti-with-mde.md).
 
 ## <a name="campaign-details"></a>Kampagnendetails
 
@@ -198,10 +198,10 @@ In der Titelleiste können Sie auf die Schaltfläche Kampagnenbeschreiben herunt
 
 ### <a name="campaign-flow"></a>Kampagnenfluss
 
-In der Mitte der Kampagnendetailseansicht werden wichtige Details zur Kampagne im Abschnitt **Fluss** in einem horizontalen Flussdiagramm (auch als _Sankey-Diagramm bekannt)_ angezeigt. Diese Details helfen Ihnen, die Elemente der Kampagne und die potenziellen Auswirkungen in Ihrer Organisation zu verstehen.
+In der Mitte der Kampagnendetailseansicht werden wichtige Details zur Kampagne im Abschnitt **Flow** in einem horizontalen Flussdiagramm (auch als _Sankey-Diagramm_ bekannt) angezeigt. Diese Details helfen Ihnen, die Elemente der Kampagne und die potenziellen Auswirkungen in Ihrer Organisation zu verstehen.
 
 > [!TIP]
-> Die im Flussdiagramm angezeigten  Informationen werden durch den schattierten Datumsbereich in der Zeitachse gesteuert, wie im vorherigen Abschnitt beschrieben.
+> Die Informationen, die im  Flow angezeigt werden, werden durch den schattierten Datumsbereich in der Zeitachse gesteuert, wie im vorherigen Abschnitt beschrieben.
 
 ![Kampagnendetails, die keine Benutzer-URL-Klicks enthalten](../../media/campaign-details-no-recipient-actions.png)
 
@@ -258,7 +258,7 @@ Wenn ein Benutzer in der Phishingnachricht auf die Nutzlast-URL geklickt hat, we
 - **Zulässig**
 - **BlockPage**: Der Empfänger hat auf die Nutzlast-URL geklickt, aber der Zugriff auf die schädliche Website wurde durch eine [Richtlinie](safe-links.md) für sichere Links in Ihrer Organisation blockiert.
 - **BlockPageOverride**: Der Empfänger hat auf die Nutzlast-URL in der Nachricht geklickt. Sichere Links haben versucht, sie zu beenden, aber sie konnten den Block außer Kraft setzen. Überprüfen Sie Ihre [Richtlinien für](set-up-safe-links-policies.md) sichere Links, um zu sehen, warum Benutzer das Safe Links-Urteil außer Kraft setzen und mit der schädlichen Website fortfahren dürfen.
-- **PendingDetonationPage**: Sichere Anlagen in Microsoft Defender für Office 365 werden derzeit geöffnet und untersucht die Nutzlast-URL in einer Umgebung mit virtuellen Computern.
+- **PendingDetonationPage**: Sichere Anlagen in Microsoft Defender for Office 365 wird derzeit geöffnet und untersucht die Nutzlast-URL in einer virtuellen Computerumgebung.
 - **PendingDetonationPageOverride**: Der Empfänger konnte den Nutzlastdetonationsprozess überschreiben und die URL öffnen, ohne auf die Ergebnisse zu warten.
 
 ### <a name="tabs"></a>Registerkarten

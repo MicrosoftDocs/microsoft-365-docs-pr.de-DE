@@ -35,7 +35,7 @@ ms.locfileid: "51200209"
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API-Beschreibung
-Initiieren sie die Microsoft Defender Antivirus-Überprüfung auf einem Gerät.
+Initiieren Microsoft Defender Antivirus Überprüfung auf einem Gerät.
 
 
 ## <a name="limitations"></a>Einschränkungen

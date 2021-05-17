@@ -284,4 +284,4 @@ Wenn Sie Ihr Betriebssystem auf eine neue Hauptversion aktualisieren, müssen Si
 - [Verwalten von apt-packages](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)
 
 ## <a name="see-also"></a>Siehe auch
-- [Untersuchen von Problemen mit der Integrität von Agents](health-status.md)
+- [Untersuchen von Problemen mit der Agent-Integrität](health-status.md)

@@ -1,5 +1,5 @@
 ---
-title: Senden & empfangen von S/MIME-verschlüsselten E-Mails - Exchange Online
+title: Senden & Empfangen von S/MIME-verschlüsselten E-Mails – Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -28,7 +28,7 @@ ms.locfileid: "51206531"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Das Senden oder Beantworten einer S/MIME-verschlüsselten Nachricht in Outlook verläuft sehr ähnlich wie bei einer unverschlüsselten Nachricht. Weitere Informationen zum Lesen oder Senden von S/MIME-verschlüsselten Nachrichten aus einem E-Mail-Programm wie Outlook im Web (früher als Outlook Web App bezeichnet) finden Sie unter Verschlüsseln von Nachrichten mithilfe von [S/MIME in Outlook im Web.](https://support.microsoft.com/office/878c79fc-7088-4b39-966f-14512658f480)
+Das Senden oder Beantworten einer S/MIME-verschlüsselten Nachricht in Outlook verläuft sehr ähnlich wie bei einer unverschlüsselten Nachricht. Weitere Informationen zum Lesen oder Senden von S/MIME-verschlüsselten Nachrichten aus einem E-Mail-Programm wie Outlook im Web (früher als Outlook Web App bezeichnet) finden Sie unter Verschlüsseln von Nachrichten mithilfe von [S/MIME in Outlook](https://support.microsoft.com/office/878c79fc-7088-4b39-966f-14512658f480)im Web .
 
 ## <a name="for-more-information"></a>Weitere Informationen
 

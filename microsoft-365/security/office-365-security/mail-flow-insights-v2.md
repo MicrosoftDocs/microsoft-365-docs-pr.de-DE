@@ -69,9 +69,9 @@ Das Nachrichtenflussdashboard steht Mitgliedern der folgenden Rollengruppen zur 
 
 - **Organisationsverwaltung** im Security & Compliance Center (globale Administratoren).
 
-- **[Exchange-Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure Active Directory.
+- **[Exchange Administrator](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#exchange-administrator)** in Azure Active Directory.
 
-- **MailFlow-Administrator** im Security & Compliance Center. Wenn das Konto nicht auch Mitglied der Rollengruppen Organisationsverwaltung oder Exchange-Administrator ist, sollten Sie die folgenden Probleme berücksichtigen:
+- **MailFlow-Administrator** im Security & Compliance Center. Wenn das Konto nicht auch Mitglied der Rollengruppen "Organisationsverwaltung" oder "Exchange" ist, sollten Sie die folgenden Probleme berücksichtigen:
   - Der Benutzer muss sich beim Security & Compliance Center direkt unter <https://protection.office.com> anmelden.
   - Der Benutzer verfügt nur über schreibgeschützte Berechtigungen für das Nachrichtenflussdashboard.
   - Der Benutzer hat keinen Zugriff auf das Microsoft 365 Admin Center.

@@ -36,7 +36,7 @@ ms.locfileid: "51200281"
 
 ## <a name="what-is-controlled-folder-access"></a>Was ist kontrollierter Ordnerzugriff?
 
-Der kontrollierte Ordnerzugriff schützt Ihre wertvollen Daten vor schädlichen Apps und Bedrohungen, z. B. Ransomware. Der kontrollierte Ordnerzugriff schützt Ihre Daten, indem Apps mit einer Liste bekannter, vertrauenswürdiger Apps überprüft werden. Unterstützt auf Windows Server 2019- und Windows 10-Clients kann der kontrollierte Ordnerzugriff mit der Windows Security App, Microsoft Endpoint Configuration Manager oder Intune (für verwaltete Geräte) aktiviert werden. 
+Der kontrollierte Ordnerzugriff schützt Ihre wertvollen Daten vor schädlichen Apps und Bedrohungen, z. B. Ransomware. Der kontrollierte Ordnerzugriff schützt Ihre Daten, indem Apps mit einer Liste bekannter, vertrauenswürdiger Apps überprüft werden. Unterstützt auf Windows Server 2019- und Windows 10-Clients kann der kontrollierte Ordnerzugriff über die Windows-Sicherheit-App, Microsoft Endpoint Configuration Manager oder Intune (für verwaltete Geräte) aktiviert werden. 
 
 > [!NOTE]
 > Skriptmodule sind nicht vertrauenswürdig, und Sie können ihnen keinen Zugriff auf kontrollierte geschützte Ordner erlauben.  Beispielsweise wird PowerShell nicht durch kontrollierten Ordnerzugriff vertrauenswürdig, auch wenn Sie dies mit Zertifikat- und [Dateiindikatoren zulassen.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates) 
@@ -62,15 +62,15 @@ Der kontrollierte Ordnerzugriff ist besonders hilfreich, um Ihre Dokumente und I
 
 Die [geschützten Ordner](#review-controlled-folder-access-events-in-windows-event-viewer) enthalten allgemeine Systemordner (einschließlich Startsektoren), und Sie können [weitere Ordner hinzufügen.](customize-controlled-folders.md#protect-additional-folders) Sie können Apps [auch den](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders) Zugriff auf die geschützten Ordner ermöglichen.
 
-Sie können den [Überwachungsmodus verwenden,](audit-windows-defender.md) um zu bewerten, wie sich der kontrollierte Ordnerzugriff auf Ihre Organisation auswirken würde, wenn er aktiviert wäre. Sie können auch die Windows Defender test ground website unter [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) besuchen, um zu bestätigen, dass das Feature funktioniert und wie es funktioniert.
+Sie können den [Überwachungsmodus verwenden,](audit-windows-defender.md) um zu bewerten, wie sich der kontrollierte Ordnerzugriff auf Ihre Organisation auswirken würde, wenn er aktiviert wäre. Sie können auch die Windows Defender test ground website unter [demo.wd.microsoft.com,](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) um zu bestätigen, dass das Feature funktioniert und wie es funktioniert.
 
-Der kontrollierte Ordnerzugriff wird unter den folgenden Versionen von Windows unterstützt:
+Der kontrollierte Ordnerzugriff wird in den folgenden Versionen von Windows:
 - [Windows 10, Version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) und höher
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-## <a name="windows-system-folders-are-protected-by-default"></a>Windows-Systemordner sind standardmäßig geschützt
+## <a name="windows-system-folders-are-protected-by-default"></a>Windows Systemordner sind standardmäßig geschützt
 
-Windows-Systemordner sind zusammen mit mehreren anderen Ordnern standardmäßig geschützt: 
+Windows Systemordner sind standardmäßig zusammen mit mehreren anderen Ordnern geschützt: 
 
 - `c:\Users\<username>\Documents`
 - `c:\Users\Public\Documents`
@@ -83,11 +83,11 @@ Windows-Systemordner sind zusammen mit mehreren anderen Ordnern standardmäßig 
 - `c:\Users\<username>\Favorites`
 
 > [!NOTE]
-> Sie können zusätzliche Ordner als geschützt konfigurieren, aber sie können die standardmäßig geschützten Windows-Systemordner nicht entfernen.
+> Sie können zusätzliche Ordner als geschützt konfigurieren, sie können jedoch nicht Windows systemordnern entfernen, die standardmäßig geschützt sind.
 
 ## <a name="requirements-for-controlled-folder-access"></a>Anforderungen für den kontrollierten Ordnerzugriff
 
-Der kontrollierte Ordnerzugriff erfordert die [Aktivierung des Microsoft Defender Antivirus-Echtzeitschutzes.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
+Für den kontrollierten Ordnerzugriff ist [Microsoft Defender Antivirus Echtzeitschutz erforderlich.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 
 ## <a name="review-controlled-folder-access-events-in-the-microsoft-defender-security-center"></a>Überprüfen von Ereignissen für den kontrollierten Ordnerzugriff im Microsoft Defender Security Center
 
@@ -102,15 +102,15 @@ DeviceEvents
 | where ActionType in ('ControlledFolderAccessViolationAudited','ControlledFolderAccessViolationBlocked')
 ```
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Überprüfen von Ereignissen für den kontrollierten Ordnerzugriff in der Windows-Ereignisanzeige
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Überprüfen gesteuerter Ordnerzugriffsereignisse in Windows Ereignisanzeige
 
-Sie können das Windows-Ereignisprotokoll überprüfen, um Ereignisse zu sehen, die erstellt werden, wenn kontrollierte Ordnerzugriffsblöcke (oder Überwachungen) einer App ausgeführt werden:
+Sie können das Windows-Ereignisprotokoll überprüfen, um Ereignisse zu sehen, die erstellt werden, wenn eine App mit kontrolliertem Ordnerzugriff blockiert (oder überwacht):
 
 1. Laden Sie [das Evaluierungspaket](https://aka.ms/mp7z2w) herunter, und *extrahierencfa-events.xml* an einen leicht zugänglichen Speicherort auf dem Gerät.
-2. Geben **Sie die Ereignisanzeige** im Menü Start ein, um die Windows-Ereignisanzeige zu öffnen.
+2. Geben **Sie die Ereignisanzeige** im Menü Start ein, um die Windows öffnen.
 3. Wählen Sie im linken Bereich unter **Aktionen** die Option **Benutzerdefinierte Ansicht importieren... aus.**
 4. Navigieren Sie zu dem Ort, an *demcfa-events.xml* extrahiert haben, und wählen Sie ihn aus. Alternativ können [Sie die XML direkt kopieren.](event-views.md)
-5. Wählen Sie **OK** aus.
+5. Klicken Sie auf **OK**.
 
 In der folgenden Tabelle sind Ereignisse im Zusammenhang mit dem kontrollierten Ordnerzugriff aufgeführt:
 
@@ -122,10 +122,10 @@ In der folgenden Tabelle sind Ereignisse im Zusammenhang mit dem kontrollierten 
 
 ## <a name="view-or-change-the-list-of-protected-folders"></a>Anzeigen oder Ändern der Liste geschützter Ordner
 
-Mit der Windows Security-App können Sie die Liste der Ordner anzeigen, die durch den kontrollierten Ordnerzugriff geschützt sind. 
+Mit der Windows-Sicherheit können Sie die Liste der Ordner anzeigen, die durch den kontrollierten Ordnerzugriff geschützt sind. 
 
-1. Öffnen Sie auf Ihrem Windows 10-Gerät die Windows Security-App.
-2. Wählen **Sie Virenschutz & Bedrohungsschutz aus.**
+1. Öffnen Sie Windows 10 Gerät die Windows-Sicherheit App.
+2. Wählen Sie **Viren- und Bedrohungsschutz** aus.
 3. Wählen **Sie unter Ransomware-Schutz** die Option **Ransomware-Schutz verwalten aus.**
 4. Wenn der kontrollierte Ordnerzugriff deaktiviert ist, müssen Sie ihn aktivieren. Wählen **Sie geschützte Ordner aus.**
 5. Führen Sie einen der folgenden Schritte aus:
@@ -133,10 +133,10 @@ Mit der Windows Security-App können Sie die Liste der Ordner anzeigen, die durc
    - Um einen Ordner zu entfernen, wählen Sie ihn aus, und wählen Sie dann **Entfernen aus.** 
 
 > [!NOTE]
-> [Windows-Systemordner](#windows-system-folders-are-protected-by-default) sind standardmäßig geschützt, und Sie können sie nicht aus der Liste entfernen.
+> [Windows Systemordner](#windows-system-folders-are-protected-by-default) sind standardmäßig geschützt, und Sie können sie nicht aus der Liste entfernen.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Bewerten des kontrollierten Ordnerzugriffs](evaluate-controlled-folder-access.md)
-- [Anpassen des kontrollierten Ordnerzugriffs](customize-controlled-folders.md)
+- [Auswerten des kontrollierten Ordnerzugriffs](evaluate-controlled-folder-access.md)
+- [Kontrollierte Ordnerzugriff anpassen](customize-controlled-folders.md)
 - [Weitere Ordner schützen](customize-controlled-folders.md#protect-additional-folders)

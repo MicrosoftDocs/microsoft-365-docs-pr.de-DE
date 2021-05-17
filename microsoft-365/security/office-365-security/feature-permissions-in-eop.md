@@ -10,7 +10,7 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: 34674847-a6b7-4a7e-9eaa-b64f22bc150d
-description: Erfahren Sie mehr über die Berechtigungen, die für Aufgaben in eigenständigem Exchange Online Protection erforderlich sind
+description: Erfahren Sie mehr über die Berechtigung, die für Aufgaben in eigenständigen Exchange Online Protection
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 212a109c792522270b7e5000747bec950b7f4fe2
@@ -27,15 +27,15 @@ ms.locfileid: "51206984"
 **Gilt für**
 -  [Exchange Online Protection eigenständig](exchange-online-protection-overview.md)
 
-Eigenständige Exchange Online Protection (EOP) ohne Exchange Online-Postfächer verwendet das Rollenbasierte Zugriffssteuerungsmodell (Role Based Access Control, RBAC) zum einfachen Erteilen von Berechtigungen für Administratoren. Sie können die Berechtigungsfeatures in eigenständigem EOP verwenden, um Ihre neue Organisation schnell in Betrieb zu setzen.
+Eigenständige Exchange Online Protection (EOP) ohne Exchange Online verwendet das Rollenbasierte Zugriffssteuerungsmodell (Role Based Access Control, RBAC) zum einfachen Erteilen von Berechtigungen für Ihre Administratoren. Sie können die Berechtigungsfeatures in eigenständigem EOP verwenden, um Ihre neue Organisation schnell in Betrieb zu setzen.
 
 Informationen zum Erteilen von Berechtigungen für Benutzer finden Sie unter [Verwalten von Administratorrollegruppen in EOP](manage-admin-role-group-permissions-in-eop.md).
 
-Weitere Informationen zu Berechtigungen in Microsoft 365 finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+Weitere Informationen zu Berechtigungen in Microsoft 365 finden Sie [unter Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="role-based-permissions"></a>Rollenbasierte Berechtigungen
 
-Die Administratorberechtigungen, die Sie Benutzern erteilen, basieren auf Verwaltungsrollen. Eine Verwaltungsrolle definiert die Cmdlets, die für eine Reihe von bestimmten Aufgaben verfügbar sind. Da sowohl das Exchange Admin Center (EAC) als auch die eigenständige EOP PowerShell Cmdlets verwenden, erteilt die Gewährung des Zugriffs auf ein Cmdlet dem Benutzer die Berechtigung, die zugehörigen Aufgaben in der EAC oder in der eigenständigen EOP PowerShell auszuführen. Die Rolle E-Mail-Empfänger definiert beispielsweise die Cmdlets, die zum Ändern von E-Mail-Benutzern erforderlich sind.
+Die Administratorberechtigungen, die Sie Benutzern erteilen, basieren auf Verwaltungsrollen. Eine Verwaltungsrolle definiert die Cmdlets, die für eine Reihe von bestimmten Aufgaben verfügbar sind. Da das Exchange Admin Center (EAC) und die eigenständige EOP PowerShell beide Cmdlets verwenden, erteilt die Gewährung des Zugriffs auf ein Cmdlet dem Benutzer die Berechtigung, die zugehörigen Aufgaben in der EAC oder in eigenständiger EOP PowerShell auszuführen. Die Rolle E-Mail-Empfänger definiert beispielsweise die Cmdlets, die zum Ändern von E-Mail-Benutzern erforderlich sind.
 
 In eigenständigen EOP sind administrative Rollen die einzige Art von Verwaltungsrolle, die verfügbar ist (es gibt keine Endbenutzerrollen oder Rollenzuweisungsrichtlinien).
 
@@ -122,18 +122,18 @@ Die integrierten Rollen, die in eigenständigen EOP verfügbar sind, werden in d
 
 <sup>\*</sup> Obwohl diese Rolle verfügbar ist, ist sie in eigenständigem EOP im Wesentlichen nicht hilfreich.
 
-## <a name="microsoft-365-permissions-in-standalone-eop"></a>Microsoft 365-Berechtigungen in eigenständigem EOP
+## <a name="microsoft-365-permissions-in-standalone-eop"></a>Microsoft 365 berechtigungen in eigenständigem EOP
 
-Wenn Sie einen Benutzer im Microsoft 365 Admin Center erstellen, können Sie auswählen, ob dem Benutzer verschiedene administrative Rollen zugewiesen werden, z. B. globaler Administrator, Dienstadministrator, Kennwortadministrator und so weiter. Einige, aber nicht alle Microsoft 365-Rollen erteilen dem Benutzer administrative Berechtigungen in EOP.
+Wenn Sie einen Benutzer im Microsoft 365 Admin Center erstellen, können Sie auswählen, ob dem Benutzer verschiedene Administratorrollen zugewiesen werden, z. B. globaler Administrator, Dienstadministrator, Kennwortadministrator und so weiter. Einige, aber nicht alle rollen Microsoft 365 erteilen dem Benutzer administrative Berechtigungen in EOP.
 
 > [!NOTE]
 > Das Konto, das Sie zum Erstellen Ihrer eigenständigen EOP-Organisation verwendet haben, wird automatisch der Globalen Administratorrolle zugewiesen.
 
-In der folgenden Tabelle sind die Microsoft 365-Rollen und die eigenständigen EOP-Rollengruppen aufgeführt, denen sie entsprechen. Weitere Informationen zu diesen Rollen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+In der folgenden Tabelle sind die Microsoft 365 rollen und die eigenständigen EOP-Rollengruppen aufgeführt, denen sie entsprechen. Weitere Informationen zu diesen Rollen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
 ****
 
-|Microsoft 365-Rolle|EOP-Rollengruppe|
+|Microsoft 365 Rolle|EOP-Rollengruppe|
 |---|---|
 |Exchange-Administrator|OrganizationManagement|
 |Globaler Administrator|OrganizationManagement <p> **Hinweis:** Die Rolle "Globaler Administrator" und die Rollengruppe "OrganizationManagement" sind mithilfe einer speziellen Rollengruppe "Unternehmensadministrator" verbunden. Die Rollengruppe "Unternehmensadministrator" wird intern verwaltet und kann nicht direkt geändert werden.|
@@ -143,9 +143,9 @@ In der folgenden Tabelle sind die Microsoft 365-Rollen und die eigenständigen E
 |Benutzer mit Leseberechtigung für Sicherheitsfunktionen|SecurityReader|
 |
 
-Andere Microsoft 365-Rollen verfügen nicht über eine entsprechende EOP-Rollengruppe und erteilen keine Administratorberechtigungen in EOP. Weitere Informationen zum Zuweisen einer Microsoft 365-Rolle zu einem Benutzer finden Sie unter [Assign admin roles](../../admin/add-users/assign-admin-roles.md).
+Andere Microsoft 365 haben keine entsprechende EOP-Rollengruppe und erteilen keine Administratorberechtigungen in EOP. Weitere Informationen zum Zuweisen einer Microsoft 365 rolle zu einem Benutzer finden Sie unter [Assign admin roles](../../admin/add-users/assign-admin-roles.md).
 
-Benutzern können Administratorrechte in EOP gewährt werden, ohne sie zu Microsoft 365-Rollen hinzufügen zu müssen. Dazu fügen Sie den Benutzer als Mitglied einer EOP-Rollengruppe hinzu. Der Benutzer bekommt Berechtigungen in EOP, aber keine Berechtigungen in anderen Microsoft 365-Workloads.
+Benutzern können Administratorrechte in EOP gewährt werden, ohne sie zu Microsoft 365 hinzufügen. Dazu fügen Sie den Benutzer als Mitglied einer EOP-Rollengruppe hinzu. Der Benutzer bekommt Berechtigungen in EOP, aber er bekommt keine Berechtigungen in anderen Arbeitsauslastungen Microsoft 365 Arbeitsauslastungen.
 
 ### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
@@ -153,7 +153,7 @@ Gehen Sie wie folgt vor, um sicherzustellen, dass Sie eine Rollengruppe erfolgre
 
 - Wechseln Sie in der EAC zu **Berechtigungen** Administratorrollen, und überprüfen Sie, ob die \> Rollengruppe aufgeführt ist (oder nicht aufgeführt). Wählen Sie die Rollengruppe aus, und überprüfen Sie die Einstellungen im Detailbereich, oder klicken Sie **auf** Bearbeiten ![ ](../../media/ITPro-EAC-EditIcon.png) (Symbol), um die Einstellungen zu überprüfen.
 
-- Ersetzen Sie in Exchange Online PowerShell durch den Namen der Rollengruppe, und führen Sie den folgenden Befehl aus, um zu überprüfen, ob die Rollengruppe vorhanden (oder nicht vorhanden) ist, und überprüfen Sie die \<Role Group Name\> Einstellungen:
+- Ersetzen Exchange Online PowerShell durch den Namen der Rollengruppe, und führen Sie den folgenden Befehl aus, um zu überprüfen, ob die Rollengruppe vorhanden (oder nicht vorhanden) ist, und überprüfen Sie die \<Role Group Name\> Einstellungen:
 
   ```PowerShell
   Get-RoleGroup -Identity "<Role Group Name>" | Format-List

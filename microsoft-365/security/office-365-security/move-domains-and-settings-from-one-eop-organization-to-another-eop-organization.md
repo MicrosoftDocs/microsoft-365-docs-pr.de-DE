@@ -33,7 +33,7 @@ ms.locfileid: "51206684"
 
 > [!NOTE]
 >
-> - Einstellungen können auf zuverlässige Weise nur von einer eigenständigen EOP (Standard)-Organisation zu entweder einer anderen EOP Standard-Organisation oder einer EOP Premium-Organisation (Exchange Enterprise CAL mit Diensten) oder von einer EOP Premium-Organisation zu einer anderen EOP Premium-Organisation verschoben werden. Da einige Premiumfeatures in EOP Standard-Organisationen nicht unterstützt werden, ist der Umzug von einer EOP Premium-Organisation zu einer EOP Standard-Organisation möglicherweise nicht erfolgreich.
+> - Einstellungen können auf zuverlässige Weise nur von einer eigenständigen EOP (Standard)-Organisation zu entweder einer anderen EOP Standard-Organisation oder einer EOP Premium-Organisation (Exchange Enterprise CAL mit Diensten) oder von einer EOP Premium-Organisation zu einer anderen EOP Premium-Organisation verschoben werden. Da einige Premiumfeatures in EOP Standard-Organisationen nicht unterstützt werden, ist der Umzug von einer EOP-Premium-Organisation zu einer EOP Standard-Organisation möglicherweise nicht erfolgreich.
 >
 > - Diese Anweisungen gelten nur für filternde EOP-Organisationen. Es gibt weitere Überlegungen beim Verschieben zwischen Exchange Online-Organisationen. Exchange Online-Organisationen werden in diesen Anweisungen nicht berücksichtigt.
 
@@ -59,7 +59,7 @@ Um die Quellorganisation in der Zielorganisation erneut zu erstellen, müssen Si
 - Nachrichtenflussregeln (auch als Transportregeln bekannt)
 
   > [!NOTE]
-  > Cmdletunterstützung für den Export und Import der Nachrichtenflussregelsammlung wird derzeit nur für EOP Premium-Abonnementpläne unterstützt.
+  > Cmdletunterstützung für den Export und Import der Nachrichtenflussregelsammlung wird derzeit nur für EOP-Premium unterstützt.
 
 Die einfachste Möglichkeit, alle Einstellungen zu erfassen, ist die Verwendung von PowerShell. Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -210,7 +210,7 @@ Weitere Informationen zum Konfigurieren von DNS finden Sie unter [Create DNS rec
 
 ## <a name="step-4-remove-users-groups-and-domains-from-the-source-organization"></a>Schritt 4: Entfernen von Benutzern, Gruppen und Domänen aus der Quellorganisation
 
-Mit dem folgenden Skript werden Benutzer, Gruppen und Domänen mithilfe von Azure Active Directory PowerShell aus dem Quell mandanten entfernt. Kopieren Sie den folgenden Text, fügen Sie ihn in einem Texteditor ein, z. B. Editor, speichern Sie die Datei unter C:\EOP\Export\Remove_Users_and_Groups.ps1, und führen Sie den folgenden Befehl aus:
+Das folgende Skript entfernt Benutzer, Gruppen und Domänen mithilfe von Azure Active Directory PowerShell aus dem Quell-Mandant. Kopieren Sie den folgenden Text, fügen Sie ihn in einem Texteditor ein, z. B. Editor, speichern Sie die Datei unter C:\EOP\Export\Remove_Users_and_Groups.ps1, und führen Sie den folgenden Befehl aus:
 
 ```PowerShell
 & "C:\EOP\Export\Remove_Users_and_Groups.ps1"

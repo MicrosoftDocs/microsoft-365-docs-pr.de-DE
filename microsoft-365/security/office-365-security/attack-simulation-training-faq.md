@@ -17,7 +17,7 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können sich über Bereitstellungsüberlegungen und häufig gestellte Fragen zur Angriffssimulation und -schulung in Microsoft 365 E5- oder Microsoft Defender for Office 365 Plan 2-Organisationen informieren.
+description: Administratoren können sich über Bereitstellungsüberlegungen und häufig gestellte Fragen zur Angriffssimulation und -schulung in Microsoft 365 E5 oder Microsoft Defender for Office 365 Plan 2-Organisationen informieren.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: f404e2a47756a611135fc70026bf0cce3eec62c4
@@ -29,7 +29,7 @@ ms.locfileid: "51204084"
 ---
 # <a name="attack-simulation-training-deployment-considerations-and-faq"></a>Überlegungen zur Bereitstellung von Angriffssimulationstraining und FAQ
 
-Das Training zur Angriffssimulation ist [jetzt allgemein verfügbar.](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291) Die Schulung zur Angriffssimulation ermöglicht Microsoft 365 E5- oder Microsoft Defender für Office 365 Plan 2-Organisationen das Messen und Verwalten von Social Engineering-Risiken, indem die Erstellung und Verwaltung von Phishingsimulationen ermöglicht wird, die von realen, entwaffnten Phishing-Nutzlasten unterstützt werden. Hyper gezielte Schulungen, die in Zusammenarbeit mit der Sicherheit von "Teronova" zur Verbesserung von Kenntnissen und zum Ändern des Verhaltens von Mitarbeitern führen.
+Das Training zur Angriffssimulation ist [jetzt allgemein verfügbar.](https://techcommunity.microsoft.com/t5/microsoft-security-and/attack-simulation-training-in-microsoft-defender-for-office-365/ba-p/2037291) Das Training zur Angriffssimulation ermöglicht Microsoft 365 E5 oder Microsoft Defender für Office 365 Plan 2-Organisationen das Messen und Verwalten von Social Engineering-Risiken, indem die Erstellung und Verwaltung von Phishingsimulationen ermöglicht wird, die von realen, entwaffnten Phishing-Nutzlasten unterstützt werden. Hyper gezielte Schulungen, die in Zusammenarbeit mit der Sicherheit von "Teronova" zur Verbesserung von Kenntnissen und zum Ändern des Verhaltens von Mitarbeitern führen.
 
 Weitere Informationen zu den ersten Schritte mit attack simulation training finden Sie unter [Get started using Attack simulation training](attack-simulation-training-get-started.md).
 
@@ -43,7 +43,7 @@ Ein URL-Reputationsdienst kann eine oder mehrere der URLs identifizieren, die vo
 
 ![Warnung vor einer trügerischen Website in Google Chrome](../../media/attack-sim-chrome-deceptive-site-message.png)
 
-Beachten Sie, dass dieses Problem keine Auswirkungen auf Microsoft Edge hat.
+Beachten Sie, dass sich dieses Problem nicht auf Microsoft Edge.
 
 Überprüfen Sie im Rahmen der Planungsphase unbedingt die Verfügbarkeit der URL in Ihren unterstützten Webbrowsern, bevor Sie die URL in einer Phishingkampagne verwenden. Wenn die URLs von Google Safe Browsing blockiert [werden,](https://support.google.com/chrome/a/answer/7532419) befolgen Sie diese Anleitung von Google, um den Zugriff auf die URLs zu ermöglichen.
 
@@ -72,7 +72,7 @@ Es ist möglich, dass die Anzahl der Benutzer, die die Simulations-E-Mail-Nachri
 - Gastbenutzer.
 - Benutzer, die nicht mehr in Azure Active Directory (Azure AD) aktiv sind.
 
-Nur gültige, nicht gastfreie Benutzer mit einem gültigen Postfach werden in Simulationen einbezogen. Wenn Sie Verteilergruppen oder E-Mail-aktivierte Sicherheitsgruppen für Zielbenutzer verwenden, können Sie das [Cmdlet Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) verwenden, um Verteilergruppenmitglieder zu anzeigen und zu überprüfen.
+Nur gültige, nicht gastfreie Benutzer mit einem gültigen Postfach werden in Simulationen einbezogen. Wenn Sie Verteilergruppen oder E-Mail-aktivierte Sicherheitsgruppen für Zielbenutzer verwenden, können Sie das [Cmdlet Get-DistributionGroupMember](/powershell/module/exchange/get-distributiongroupmember) in [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) zum Anzeigen und Überprüfen von Verteilergruppenmitgliedern verwenden.
 
 ## <a name="issues-with-attack-simulation-training-reporting"></a>Probleme bei der Berichterstellung für Angriffssimulationsschulungen
 
@@ -160,7 +160,7 @@ Sie können jedoch ihre eigene Nutzlast in der Sprache Ihrer Wahl mithilfe der b
 
 ### <a name="q-how-can-i-switch-to-other-languages-for-my-admin-portal-and-training-experience"></a>F: Wie kann ich für mein Administratorportal und meine Schulungserfahrung zu anderen Sprachen wechseln?
 
-A: In Microsoft 365 oder Office 365 ist die Sprachkonfiguration für jedes Benutzerkonto spezifisch und zentralisiert. Anweisungen zum Ändern Ihrer Spracheinstellung finden Sie unter Ändern der Anzeigesprache und Zeitzone [in Microsoft 365 for Business](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
+A: In Microsoft 365 oder Office 365 ist die Sprachkonfiguration für jedes Benutzerkonto spezifisch und zentral. Anweisungen zum Ändern der Spracheinstellung finden Sie unter Ändern der Anzeigesprache und Zeitzone [in Microsoft 365 For Business](https://support.microsoft.com/office/6f238bff-5252-441e-b32b-655d5d85d15b).
 
 Beachten Sie, dass es bis zu 30 Minuten dauern kann, bis die Konfigurationsänderung für alle Dienste synchronisiert wird.
 

@@ -60,7 +60,7 @@ Fügen Sie der tabelle unten aufgeführten Projektbeteiligten entsprechend Ihrer
 
 -   I = Informiert über dieses Projekt
 
-| Name                 | Rolle                                                                                                                                                                                                          | Maßnahme |
+| Name                 | Rolle                                                                                                                                                                                                          | Aktion |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|
 | Geben Sie Namen und E-Mail ein. | **Chief Information Security Officer (CISO)** Ein Leitender Vertreter, der innerhalb der Organisation als Sponsor für die *neue Technologiebereitstellung fungiert.*                                                  | Also     |
 | Geben Sie Namen und E-Mail ein. | **Leiter des Cyber Defense Operations Center (CDOC)** Ein Vertreter des CDOC-Teams, der die Ausrichtung dieser Änderung an den Prozessen im Sicherheitsteam der Kunden *definiert.*       | Also     |

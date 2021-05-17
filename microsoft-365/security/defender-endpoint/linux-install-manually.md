@@ -409,4 +409,4 @@ Wenn Sie Ihr Betriebssystem auf eine neue Hauptversion aktualisieren, müssen Si
 Weitere [Informationen zum](linux-resources.md#uninstall) Entfernen von Defender for Endpoint auf Linux von Clientgeräten finden Sie unter Deinstallieren.
 
 ## <a name="see-also"></a>Siehe auch
-- [Untersuchen von Problemen mit der Integrität von Agents](health-status.md)
+- [Untersuchen von Problemen mit der Agent-Integrität](health-status.md)

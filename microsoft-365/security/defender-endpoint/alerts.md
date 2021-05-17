@@ -44,11 +44,11 @@ Methode |Rückgabetyp |Beschreibung
 [Warnungen auflisten](get-alerts.md) | [Warnungssammlung](alerts.md) | Auflisten [der Warnungssammlung.](alerts.md)
 [Warnung aktualisieren](update-alert.md) | [Warnung](alerts.md) | Aktualisieren einer [bestimmten Warnung](alerts.md).
 [Batchupdatewarnungen](batch-update-alerts.md) | | Aktualisieren eines Batches von [Warnungen](alerts.md).
-[Erstellen einer Warnung](create-alert-by-reference.md)|[Warnung](alerts.md)|Erstellen Sie eine Warnung basierend auf Ereignisdaten, die von [Advanced Hunting erhalten wurden.](run-advanced-query-api.md)
+[Warnung erstellen](create-alert-by-reference.md)|[Warnung](alerts.md)|Erstellen Sie eine Warnung basierend auf Ereignisdaten, die von [Advanced Hunting erhalten wurden.](run-advanced-query-api.md)
 [Auflisten verwandter Domänen](get-alert-related-domain-info.md)|Domänensammlung| Listet URLs auf, die der Warnung zugeordnet sind.
 [Auflisten verwandter Dateien](get-alert-related-files-info.md) | [Dateisammlung](files.md) |  Listet [die](files.md) Dateientitäten auf, die der Warnung [zugeordnet sind.](alerts.md)
 [Auflisten verwandter IPs](get-alert-related-ip-info.md) | IP-Auflistung | Listet IPs auf, die der Warnung zugeordnet sind.
-[Verwandte Computer erhalten](get-alert-related-machine-info.md) | [Maschine](machine.md) | Der [Computer,](machine.md) der der Warnung [zugeordnet ist.](alerts.md)
+[Verwandte Computer erhalten](get-alert-related-machine-info.md) | [Computer](machine.md) | Der [Computer,](machine.md) der der Warnung [zugeordnet ist.](alerts.md)
 [Verwandte Benutzer erhalten](get-alert-related-user-info.md) | [Benutzer](user.md) | Der [Benutzer,](user.md) der der Warnung [zugeordnet ist.](alerts.md)
 
 

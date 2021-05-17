@@ -12,7 +12,7 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 04a616e6-197c-490c-ae8c-c8d5f0f0b3dd
-description: Administratoren erfahren, wie Sie eine virtuelle Zertifikatsammlung erstellen, die zum Überprüfen von S/MIME-Zertifikaten in Exchange Online verwendet wird.
+description: Administratoren erfahren, wie Sie eine virtuelle Zertifikatsammlung erstellen, die zum Überprüfen von S/MIME-Zertifikaten in Exchange Online.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -34,7 +34,7 @@ Als Administrator müssen Sie eine virtuelle Zertifikatsammlung in Exchange Onli
 
 Sie können diese SST-Zertifikatspeicherdatei erstellen, indem Sie die Zertifikate mithilfe des **Cmdlets Export-Certificate** in Windows PowerShell von einem vertrauenswürdigen Computer exportieren und den _Type-Wert_ als SST angeben. Anweisungen finden Sie unter [Export-Certificate](/powershell/module/pkiclient/export-certificate).
 
-Nachdem Sie über die #A0 verfügen, verwenden Sie die folgende Syntax in Exchange Online PowerShell, um die #A1 im virtuellen Exchange Online-Zertifikatspeicher zu speichern. Wie Sie eine Verbindung mit Exchange Online-PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online-PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Nachdem Sie über die #A0 verfügen, verwenden Sie die folgende Syntax in Exchange Online PowerShell, um die #A1 im virtuellen Exchange Online zu speichern. Wie Sie eine Verbindung mit Exchange Online-PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online-PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ```PowerShell
 Set-SmimeConfig -SMIMECertificateIssuingCA (Get-Content <FileNameAndPath>.sst -Encoding Byte)

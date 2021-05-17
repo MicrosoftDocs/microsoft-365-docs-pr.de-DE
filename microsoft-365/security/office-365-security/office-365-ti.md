@@ -1,5 +1,5 @@
 ---
-title: Bedrohungsuntersuchung & Reaktionsfunktionen – Microsoft Defender für Office 365 Plan 2
+title: Bedrohungsuntersuchung & Reaktionsfunktionen – Microsoft Defender for Office 365 Plan 2
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -36,12 +36,12 @@ ms.locfileid: "51205879"
 - [Microsoft Defender für Office 365 – Plan 2](defender-for-office-365.md)
 
 
-Bedrohungsuntersuchungs- und Reaktionsfunktionen in [Microsoft Defender for Office 365](defender-for-office-365.md) helfen Sicherheitsanalysten und Administratoren beim Schutz der Microsoft 365 for Business-Benutzer ihrer Organisation durch:
+Bedrohungsuntersuchungs- und Reaktionsfunktionen in [Microsoft Defender for Office 365](defender-for-office-365.md) helfen Sicherheitsanalysten und Administratoren dabei, die Microsoft 365 ihrer Organisation für Geschäftsbenutzer zu schützen, indem Sie:
 
 - Einfaches Erkennen, Überwachen und Verstehen von Cyberangriffen
-- Schnelles Reagieren auf Bedrohungen in Exchange Online, SharePoint Online, OneDrive for Business und Microsoft Teams
+- Helfen, Bedrohungen in Exchange Online, SharePoint Online, OneDrive for Business und Microsoft Teams
 - Bereitstellen von Einblicken und Wissen, um Sicherheitsvorgängen zu helfen, Cyberangriffe auf ihre Organisation zu verhindern
-- Verwenden einer [automatisierten Untersuchung und Reaktion in Office 365](automated-investigation-response-office.md) für kritische E-Mail-basierte Bedrohungen
+- Verwenden einer [automatisierten Untersuchung und](automated-investigation-response-office.md) Reaktion in Office 365 kritischen E-Mail-basierten Bedrohungen
 
 Funktionen zur Untersuchung und Reaktion auf Bedrohungen bieten Einblicke in Bedrohungen und zugehörige Reaktionsaktionen, die im Security & Compliance Center verfügbar sind. Diese Erkenntnisse können dem Sicherheitsteam Ihrer Organisation helfen, Benutzer vor E-Mail- oder dateibasierten Angriffen zu schützen. Die Funktionen helfen dabei, Signale zu überwachen und Daten aus mehreren Quellen zu sammeln, z. B. Benutzeraktivitäten, Authentifizierung, E-Mails, gefährdete PCs und Sicherheitsvorfälle. Entscheidungsträger und Ihr Sicherheitsteam können diese Informationen verwenden, um Bedrohungen gegen Ihre Organisation zu verstehen und darauf zu reagieren und Ihr geistiges Eigentum zu schützen.
 
@@ -57,7 +57,7 @@ Bedrohungsuntersuchungs- und Reaktionsfunktionen werden im Security & Compliance
 
 ### <a name="threat-dashboard"></a>Bedrohungsdashboard
 
-Verwenden Sie das Bedrohungsdashboard (dies wird auch als Sicherheitsdashboard bezeichnet), um schnell zu sehen, welche Bedrohungen behoben wurden, und um Entscheidungsträgern in Unternehmen zu zeigen, wie Microsoft 365-Dienste Ihr Unternehmen schützen. [](security-dashboard.md)
+Verwenden Sie das Bedrohungsdashboard (dies wird auch als Sicherheitsdashboard bezeichnet), um schnell zu sehen, welche Bedrohungen behoben wurden, und als visuelle Möglichkeit, Entscheidungsträgern in Unternehmen zu melden, wie Microsoft 365 Dienste Ihr Unternehmen schützen. [](security-dashboard.md)
 
 ![Bedrohungsdashboard](../../media/ce013a31-3f80-4d09-bb95-bfb7623b8bc4.png)
 
@@ -97,14 +97,14 @@ Im Rahmen des Microsoft Defender for Office 365 Plan 2-Angebots können Sicherhe
 
 ## <a name="how-do-we-get-these-capabilities"></a>Wie erhalten wir diese Funktionen?
 
-Microsoft 365 Threat Investigation and Response capabilities are included in Microsoft Defender for Office 365 Plan 2, which is included in Enterprise E5 or as an add-on to certain subscriptions. Weitere Informationen finden Sie unter [Defender for Office 365 Plan 1 und Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
+Microsoft 365 Bedrohungsuntersuchungs- und Reaktionsfunktionen sind in Microsoft Defender für Office 365 Plan 2 enthalten, der in Enterprise E5 oder als Add-On für bestimmte Abonnements enthalten ist. Weitere Informationen finden Sie unter [Defender for Office 365 Plan 1 and Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2).
 
 ## <a name="required-roles-and-permissions"></a>Erforderliche Rollen und Berechtigungen
 
-Microsoft Defender für Office 365 verwendet die rollenbasierte Zugriffssteuerung. Berechtigungen werden über bestimmte Rollen in Azure Active Directory, im Microsoft 365 Admin Center oder im Security & Compliance Center zugewiesen.
+Microsoft Defender for Office 365 verwendet eine rollenbasierte Zugriffssteuerung. Berechtigungen werden über bestimmte Rollen in Azure Active Directory, Microsoft 365 Admin Center oder dem Security & Compliance Center zugewiesen.
 
 > [!TIP]
-> Obwohl einige Rollen, z. B. Sicherheitsadministrator, im Security & Compliance Center zugewiesen werden können, sollten Sie stattdessen entweder das Microsoft 365 Admin Center oder Azure Active Directory verwenden. Informationen zu Rollen, Rollengruppen und Berechtigungen finden Sie in den folgenden Ressourcen:
+> Obwohl einige Rollen, z. B. Sicherheitsadministrator, im Security & Compliance Center zugewiesen werden können, sollten Sie stattdessen entweder das Microsoft 365 Admin Center oder Azure Active Directory. Informationen zu Rollen, Rollengruppen und Berechtigungen finden Sie in den folgenden Ressourcen:
 >
 > - [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)
 >
@@ -117,16 +117,16 @@ Microsoft Defender für Office 365 verwendet die rollenbasierte Zugriffssteuerun
 |Verwenden des Bedrohungsdashboards (oder des neuen [Sicherheitsdashboards)](security-dashboard.md) <p> Anzeigen von Informationen zu aktuellen oder aktuellen Bedrohungen|Eine der folgenden Varianten: <ul><li>**Globaler Administrator**</li><li>**Sicherheitsadministrator**</li><li>**Security Reader**</li></ul> <p> Diese Rollen können entweder in Azure Active Directory ( <https://portal.azure.com> ) oder im Microsoft 365 Admin Center ( ) zugewiesen <https://admin.microsoft.com> werden.|
 |Verwenden [von Bedrohungs-Explorer (und Echtzeiterkennungen) zum](threat-explorer.md) Analysieren von Bedrohungen|Eine der folgenden Varianten: <ul><li>**Globaler Administrator**</li><li>**Sicherheitsadministrator**</li><li>**Security Reader**</li></ul> <p> Diese Rollen können entweder in Azure Active Directory ( <https://portal.azure.com> ) oder im Microsoft 365 Admin Center ( ) zugewiesen <https://admin.microsoft.com> werden.|
 |Anzeigen von Vorfällen (auch als Investigations bezeichnet) <p> Hinzufügen von E-Mail-Nachrichten zu einem Vorfall|Eine der folgenden Varianten: <ul><li>**Globaler Administrator**</li><li>**Sicherheitsadministrator**</li><li>**Security Reader**</li></ul> <p> Diese Rollen können entweder in Azure Active Directory ( <https://portal.azure.com> ) oder im Microsoft 365 Admin Center ( ) zugewiesen <https://admin.microsoft.com> werden.|
-|Auslösen von E-Mail-Aktionen in einem Vorfall <p> Suchen und Löschen verdächtiger E-Mail-Nachrichten|Eine der folgenden Varianten: <ul><li>**Globaler Administrator**</li><li>**Sicherheitsadministrator** plus die **Rolle Suchen und Löschen**</li></ul> <p> Die **Rollen globaler Administrator** und **Sicherheitsadministrator** können entweder in Azure Active Directory ( ) oder im <https://portal.azure.com> Microsoft 365 Admin Center ( ) zugewiesen <https://admin.microsoft.com> werden. <p> Die **Rolle Suchen und** Löschen muss im Security & Compliance Center ( ) zugewiesen <https://protection.office.com> werden.|
-|Integrieren von Microsoft Defender für Office 365 Plan 2 in Microsoft Defender for Endpoint  <p> Integrieren von Microsoft Defender für Office 365 Plan 2 in einen SIEM-Server|Entweder der globale  **Administrator oder** die Sicherheitsadministratorrolle, die entweder in Azure Active Directory ( ) oder im <https://portal.azure.com> Microsoft 365 Admin Center ( ) zugewiesen <https://admin.microsoft.com> ist. <p> --- **plus** --- <p> Eine geeignete Rolle, die in zusätzlichen Anwendungen (z. B. [Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/user-roles) oder Ihrem SIEM-Server) zugewiesen ist.|
+|Auslösen von E-Mail-Aktionen in einem Vorfall <p> Suchen und Löschen verdächtiger E-Mail-Nachrichten|Eine der folgenden Varianten: <ul><li>**Globaler Administrator**</li><li>**Sicherheitsadministrator** plus die **Rolle Suchen und Löschen**</li></ul> <p> Die **Rollen Globaler Administrator** und **Sicherheitsadministrator** können entweder in Azure Active Directory ( ) oder im <https://portal.azure.com> Microsoft 365 Admin Center ( ) zugewiesen <https://admin.microsoft.com> werden. <p> Die **Rolle Suchen und** Löschen muss im Security & Compliance Center ( ) zugewiesen <https://protection.office.com> werden.|
+|Integrieren von Microsoft Defender for Office 365 Plan 2 in Microsoft Defender for Endpoint  <p> Integrieren von Microsoft Defender für Office 365 Plan 2 in einen SIEM-Server|Entweder der **globale Administrator oder** die Sicherheitsadministratorrolle, die entweder in Azure Active Directory ( ) oder im Microsoft 365 Admin Center ( ) zugewiesen  <https://portal.azure.com> <https://admin.microsoft.com> ist. <p> --- **plus** --- <p> Eine geeignete Rolle, die in zusätzlichen Anwendungen (z. [B.](/windows/security/threat-protection/microsoft-defender-atp/user-roles) Microsoft Defender Security Center oder Ihrem SIEM-Server) zugewiesen ist.|
 |
 
 ## <a name="next-steps"></a>Nächste Schritte
 
 - [Erfahren Sie mehr über Threat Trackers – Neu und Beachtenswert](threat-trackers.md)
 
-- [Suchen und Untersuchen bösartiger E-Mails, die zugestellt wurden (Office 365 Threat Investigation and Response)](investigate-malicious-email-that-was-delivered.md)
+- [Suchen und Untersuchen schädlicher E-Mails, die zugestellt wurden (Office 365 Threat Investigation and Response)](investigate-malicious-email-that-was-delivered.md)
 
-- [Integrieren von Office 365 Threat Investigation and Response in Microsoft Defender for Endpoint](integrate-office-365-ti-with-mde.md)
+- [Integrieren Office 365 Bedrohungsuntersuchung und -reaktion in Microsoft Defender for Endpoint](integrate-office-365-ti-with-mde.md)
 
 - [Informationen zum Angriffssimulator](attack-simulator.md)
