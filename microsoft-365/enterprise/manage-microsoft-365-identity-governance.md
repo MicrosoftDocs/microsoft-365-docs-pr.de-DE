@@ -1,5 +1,5 @@
 ---
-title: Verwalten der Microsoft 365 Identity Governance
+title: Verwalten Microsoft 365 Identitätsverwaltung
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Erfahren Sie mehr über die Verwendung von Microsoft 365 Identity Governance-Features.
+description: Erfahren Sie mehr über die Verwendung Microsoft 365 Identitätsverwaltungsfeatures.
 ms.openlocfilehash: 6a97ca24c609724a2cab93feec9e90f25d3361e3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,11 +29,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50910954"
 ---
-# <a name="manage-microsoft-365-identity-governance"></a>Verwalten der Microsoft 365 Identity Governance
+# <a name="manage-microsoft-365-identity-governance"></a>Verwalten Microsoft 365 Identitätsverwaltung
 
 Bei der Identitätsgovernance geht es um den Schutz, die Kontrolle und die Überwachung von Zugriffen auf kritische Ressourcen bei gleichzeitiger Sicherstellung der Mitarbeiterproduktivität. Beispielsweise können Sie mit Identitätsgovernance sicherstellen, dass die richtigen Benutzer den richtigen Zugriff auf die richtigen Ressourcen haben, und feststellen, ob sich dieser Zugriff im Laufe der Zeit ändert.
 
-Weitere Informationen finden Sie in dieser [Übersicht über die Identitätsverwaltung für Azure Active Directory (Azure AD).](/azure/active-directory/governance/identity-governance-overview)
+Weitere Informationen finden Sie in dieser Übersicht über die Identitätsverwaltung [für Azure Active Directory (Azure AD)](/azure/active-directory/governance/identity-governance-overview).
 
 ## <a name="set-up-azure-ad-access-reviews"></a>Einrichten von Azure AD-Zugriffsüberprüfungen
 
@@ -59,6 +59,6 @@ Wiht Azure AD-Berechtigungsverwaltung, können Sie den Identitäts- und Zugriffs
 
 Ihre Mitarbeiter benötigen Zugriff auf verschiedene Gruppen, Anwendungen und Websites, um ihre Aufgabe ausführen zu können. Die Verwaltung dieses Zugriffs kann schwierig sein, da sich die Anforderungen ändern, neue Anwendungen hinzugefügt werden oder Benutzer zusätzliche Zugriffsrechte benötigen. Wenn Sie mit anderen Organisationen zusammenarbeiten, wissen Sie möglicherweise nicht, wer in der anderen Organisation Zugriff auf die Ressourcen Ihrer Organisation benötigt, und externe Benutzer wissen nicht, welche Anwendungen, Gruppen oder Websites Ihre Organisation verwendet.
 
-Die Azure AD-Berechtigungsverwaltung kann Ihnen dabei helfen, den Zugriff auf Gruppen, Anwendungen und SharePoint-Websites für interne und externe Benutzer effizienter zu verwalten.
+Azure AD-Berechtigungsverwaltung kann Ihnen dabei helfen, den Zugriff auf Gruppen, Anwendungen und SharePoint für interne und externe Benutzer effizienter zu verwalten.
  
 Weitere Informationen finden Sie in [der Übersicht über die Azure AD-Berechtigungsverwaltung](/azure/active-directory/governance/entitlement-management-overview).

@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4fe7f6ac-be8e-4b57-9e13-24ff889a4b28
-description: Erfahren Sie, wie Sie mithilfe von Filtern benutzerdefinierte Benutzeransichten in Microsoft 365 erstellen, bearbeiten oder löschen können.
+description: Erfahren Sie, wie Sie mithilfe von Filtern benutzerdefinierte Benutzeransichten in einer Microsoft 365.
 ms.openlocfilehash: 4bd4ea351612c2ae5175cd27fa7a689d671a8b62
 ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
@@ -41,7 +41,7 @@ Wenn Sie eine benutzerdefinierte Benutzeransicht erstellen, bearbeiten oder lös
 Zu Standardansichten müssen noch einige weitere Punkte angemerkt werden: 
 
 - In einigen Standardansichten wird eine nicht sortierte Liste angezeigt, wenn die Liste mehr als 2.000 Benutzer enthält. Wenn Sie in dieser Liste nach bestimmten Benutzern suchen möchten, müssen Sie das Suchfeld verwenden. 
-- Wenn Sie Microsoft 365 nicht von Microsoft kaufen, werden **Abrechnungsadministratoren** nicht in der Standardansichtsliste angezeigt. Weitere Informationen finden Sie unter [Zuweisen von Adminrollen](assign-admin-roles.md). 
+- Wenn Sie keine Microsoft 365 von Microsoft erwerben, werden **Abrechnungsadministratoren** nicht in der Standardansichtsliste angezeigt. Weitere Informationen finden Sie unter [Zuweisen von Adminrollen](assign-admin-roles.md). 
   
 ## <a name="choose-the-filters-for-your-custom-user-view"></a>Wählen der Filter für die benutzerdefinierte Benutzeransicht
 
@@ -66,12 +66,12 @@ Sie können auch nach weiteren Benutzerprofildetails filtern, die in Ihrer Organ
     
 - **Benutzer ohne Lizenzen:** Wählen Sie dieses Feld aus, um nach allen Benutzern zu suchen, denen keine Lizenz zugewiesen ist. Die Ergebnisse für diese Ansicht können auch Benutzer umfassen, die ein Exchange-Postfach, aber keine Lizenz besitzen. Um speziell diese Benutzer nachzuverfolgen, verwenden Sie den Filter **Benutzer mit Exchange-Postfächern oder -Archiven und keinen Lizenzen**. Die Ergebnisse dieser Ansicht können auch Benutzer umfassen, die über ein Exchange-Archiv, jedoch nicht über eine Lizenz verfügen.
     
-- **Nicht lizenzierte Benutzer mit Exchange-Postfächern oder -Archiven** Aktivieren Sie dieses Feld, um Benutzerkonten zu zeigen, die in Exchange Online erstellt wurden und über ein Exchange-Postfach verfügen, aber keine Microsoft 365-Lizenz zugewiesen wurden. Die Ergebnisse dieses Filters enthalten Benutzer, die über ein Exchange-Archiv verfügen oder einem solchen zugewiesen wurden. 
+- **Nicht lizenzierte Benutzer mit Exchange Postfächern oder Archiven** Aktivieren Sie dieses Feld, um Benutzerkonten zu zeigen, die in Exchange Online erstellt wurden und über ein Exchange-Postfach verfügen, aber keine Microsoft 365 wurden. Die Ergebnisse dieses Filters enthalten Benutzer, die über ein Exchange-Archiv verfügen oder einem solchen zugewiesen wurden. 
 
 > [!NOTE]
-> Der **Filter Nicht lizenzierte Benutzer mit Exchange-Postfächern** funktioniert, wenn:
+> Der **Filter Nicht lizenzierte Benutzer mit Exchange funktioniert,** wenn:
 1. Das Postfach wurde kürzlich von freigegeben für **benutzer** **konvertiert** und verfügt über keine Lizenz.
-2. Das Postfach wurde kürzlich zu Microsoft 365 migriert, es wurde jedoch keine Lizenz zugewiesen.
+2. Das Postfach wurde kürzlich zu einer Microsoft 365 es wurde jedoch keine Lizenz zugewiesen.
 3. Das Postfach wurde mithilfe von PowerShell erstellt, und es wurde keine Lizenz zugewiesen.
 4. Ein neues Postfach, das lokal mit einem New-RemoteMailbox erstellt wurde, wird für den Benutzer bereitgestellt.
     

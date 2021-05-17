@@ -23,7 +23,7 @@ search.appverid:
 - MBS150
 - GEA150
 - BCS160
-description: 'Informationen zum Hinzufügen mehrerer Benutzer zu Microsoft 365 Business aus einer Liste in einer Tabellenkalkulation oder einer anderen CSV-formatierten Datei. Sehen Sie sich ein Video auf YouTube an, in dem erläutert wird, wie Sie Microsoft 365 Konten hinzufügen. Am Ende dieses Prozesses hat jeder Benutzer mit einem Konto ein Microsoft 365-Postfach. '
+description: 'Erfahren Sie, wie Sie mehrere Benutzer Microsoft 365 aus einer Liste in einer Tabellenkalkulation oder einer anderen CSV-formatierten Datei hinzufügen. Sehen Sie sich ein Video auf YouTube an, in dem erläutert wird, wie Sie Konten zu Microsoft 365. Am Ende dieses Vorgangs hat jeder Benutzer mit einem Konto ein Microsoft 365 Postfach. '
 ms.openlocfilehash: 6b3e8d885466e44a4aa23427a54cfc98b2eebdf3
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "50905620"
 ---
 # <a name="add-several-users-at-the-same-time-to-microsoft-365---admin-help"></a>Hinzufügen mehrerer Benutzer gleichzeitig zu Microsoft 365 - Administratorhilfe
 
-Jede Person in Ihrem Team benötigt ein Benutzerkonto, bevor sie sich anmelden und auf Microsoft 365-Dienste wie E-Mail und Office zugreifen kann. Wenn das Team viele Personen umfasst, können Sie deren Konten aus einer Excel-Tabelle oder einer anderen, im CSV-Format gespeicherten, Datei gleichzeitig hinzufügen. [Nicht sicher, welches CSV-Format ist?](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)
+Jede Person in Ihrem Team benötigt ein Benutzerkonto, bevor sie sich anmelden und auf Microsoft 365, z. B. E-Mails und Office. Wenn das Team viele Personen umfasst, können Sie deren Konten aus einer Excel-Tabelle oder einer anderen, im CSV-Format gespeicherten, Datei gleichzeitig hinzufügen. [Nicht sicher, welches CSV-Format ist?](add-several-users-at-the-same-time.md#not-sure-what-csv-format-is)
   
 > [!NOTE]
 > Wenn Sie das neue Microsoft 365 Admin Center nicht verwenden, können Sie es aktivieren, indem Sie den Umschalter **Das neue Admin Center** am oberen Rand der Startseite auswählen.
@@ -72,11 +72,11 @@ Jede Person in Ihrem Team benötigt ein Benutzerkonto, bevor sie sich anmelden u
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- Nachdem diese Personen über Konten verfügen, müssen sie [Microsoft 365 oder Office 2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)auf einem PC oder Mac herunterladen und installieren oder neu installieren. Jede Person in Ihrem Team kann Microsoft 365 auf bis zu 5 PCs oder Macs installieren.
+- Nachdem diese Personen über Konten verfügen, müssen sie herunterladen und installieren oder neu installieren Microsoft 365 oder [Office 2016](https://support.office.com/article/4414eaaf-0478-48be-9c42-23adc4716658)auf einem PC oder Mac . Jede Person in Ihrem Team kann Microsoft 365 auf bis zu 5 PCs oder Macs installieren.
 
-- Jede Person kann auch Office-Apps und E-Mails auf einem [mobilen](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) Gerät auf bis zu 5 Tablets und 5 Smartphones einrichten, z. B. iPhones, iPads und Android-Smartphones und -Tablets. Hiermit können Office-Dateien von praktisch überall aus bearbeitet werden.
+- Jede Person kann auch Office Apps und E-Mails auf einem [mobilen](https://support.office.com/article/7dabb6cb-0046-40b6-81fe-767e0b1f014f) Gerät auf bis zu 5 Tablets und 5 Smartphones einrichten, z. B. iPhones, iPads und Android-Smartphones und -Tablets. Hiermit können Office-Dateien von praktisch überall aus bearbeitet werden.
 
-    Eine End-to-End-Liste der Setupschritte finden Sie unter Einrichten von [Microsoft 365](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) Business.
+    Eine [End-to-End-Liste](https://support.office.com/article/6a3a29a0-e616-4713-99d1-15eda62d04fa) der Setupschritte finden Sie unter Einrichten von Microsoft 365 Business.
 
 ## <a name="more-information-about-how-to-add-users-to-microsoft-365"></a>Weitere Informationen zum Hinzufügen von Benutzern zu Microsoft 365
 
@@ -84,7 +84,7 @@ Jede Person in Ihrem Team benötigt ein Benutzerkonto, bevor sie sich anmelden u
 
 Eine CSV-Datei ist eine Datei mit durch Kommas getrennten Werten. Sie können eine Datei wie diese mit einem beliebigen Text-Editor oder Tabellenkalkulationsprogramm wie beispielsweise Excel erstellen oder bearbeiten.
   
-Sie können diese [Beispielkalkulationstabelle](https://www.microsoft.com/download/details.aspx?id=45485) als Ausgangspunkt herunterladen. Denken Sie daran, dass Microsoft 365 Spaltenüberschriften in der ersten Zeile erfordert, damit Sie sie nicht durch etwas anderes ersetzen. 
+Sie können diese [Beispielkalkulationstabelle](https://www.microsoft.com/download/details.aspx?id=45485) als Ausgangspunkt herunterladen. Denken Sie daran Microsoft 365 spaltenüberschriften in der ersten Zeile erforderlich sind, damit Sie sie nicht durch etwas anderes ersetzen. 
   
 Speichern Sie die Datei unter einem neuen Namen, und geben Sie das Format "CSV" an.
   
@@ -96,7 +96,7 @@ Beim Speichern der Datei werden Sie wahrscheinlich darüber informiert, dass ein
   
 ### <a name="tips-for-formatting-your-spreadsheet"></a>Tipps zum Formatieren Ihrer Tabelle
 
-- **Benötige ich dieselben Spaltenüberschriften wie in der Beispieltabelle?** Ja. Die erste Zeile der Beispieltabelle enthält die Spaltenüberschriften. Diese Überschriften sind erforderlich. Erstellen Sie für jeden Benutzer, den Sie Microsoft 365 hinzufügen möchten, eine Zeile unter der Überschrift. Wenn Sie spaltenüberschriften hinzufügen, ändern oder löschen, kann Microsoft 365 möglicherweise keine Benutzer aus den Informationen in der Datei erstellen.
+- **Benötige ich dieselben Spaltenüberschriften wie in der Beispieltabelle?** Ja. Die erste Zeile der Beispieltabelle enthält die Spaltenüberschriften. Diese Überschriften sind erforderlich. Erstellen Sie für jeden Benutzer, den Microsoft 365 hinzufügen möchten, eine Zeile unter der Überschrift. Wenn Sie spaltenüberschriften hinzufügen, ändern oder löschen, Microsoft 365 benutzer aus den Informationen in der Datei möglicherweise nicht erstellt werden können.
 
 - **Was kann ich tun, wenn ich nicht über alle Informationen verfüge, die bei jedem Benutzer erforderlich sind?** Der Benutzername und der Anzeigename sind unbedingt erforderlich; Sie können keinen neuen Benutzer ohne diese Angaben hinzufügen. Falls Ihnen einige der anderen Informationen fehlen, wie beispielsweise das Fax, können Sie ein Leerzeichen plus das von Ihnen verwendete Trennzeichen eingeben und so festlegen, dass das Feld leer bleiben soll.
 
@@ -130,7 +130,7 @@ Beim Speichern der Datei werden Sie wahrscheinlich darüber informiert, dass ein
 
 - **Überprüfen Sie sorgfältig, ob die Tabelle richtig formatiert wurde.** Überprüfen Sie, ob die Spaltenüberschriften mit den Überschriften in der Beispieldatei übereinstimmen. Vergewissern Sie sich, dass Sie die Regeln für die maximale Zeichenanzahl eingehalten haben und dass jedes Feld durch ein Trennzeichen getrennt ist.
 
-- **Wenn die neuen Benutzer in Microsoft 365 nicht sofort zu sehen sind, warten Sie einige Minuten.** Es kann ein wenig dauern, bis Änderungen über alle Dienste in Microsoft 365 gehen. 
+- **Wenn die neuen Benutzer nicht sofort in Microsoft 365 werden, warten Sie einige Minuten.** Es kann einige Zeit dauern, bis Änderungen über alle Dienste in Microsoft 365. 
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

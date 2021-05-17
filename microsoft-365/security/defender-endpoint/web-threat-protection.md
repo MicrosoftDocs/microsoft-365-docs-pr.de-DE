@@ -33,20 +33,20 @@ ms.locfileid: "51688945"
 
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Der Schutz von Webbedrohungen ist Teil [des Webschutzes](web-protection-overview.md) in Defender for Endpoint. Es verwendet [Netzwerkschutz,](network-protection.md) um Ihre Geräte vor Webbedrohungen zu schützen. Durch die Integration mit Microsoft Edge und beliebten Browsern von Drittanbietern wie Chrome und Firefox stoppt der Webbedrohungsschutz Webbedrohungen ohne Webproxy und kann Geräte schützen, während sie nicht oder lokal sind. Der Schutz von Webbedrohungen verhindert den Zugriff auf Phishingwebsites, Schadsoftwarevektoren, Exploitwebsites, nicht vertrauenswürdige websites oder Websites mit niedriger Reputation sowie Websites, die Sie in Ihrer benutzerdefinierten Indikatorliste [blockiert haben.](manage-indicators.md)
+Der Schutz von Webbedrohungen ist Teil [des Webschutzes](web-protection-overview.md) in Defender for Endpoint. Es verwendet [Netzwerkschutz,](network-protection.md) um Ihre Geräte vor Webbedrohungen zu schützen. Durch die Integration Microsoft Edge browsern und beliebten Browsern von Drittanbietern wie Chrome und Firefox stoppt der Webbedrohungsschutz Webbedrohungen ohne Webproxy und kann Geräte schützen, während sie sich nicht oder lokal befinden. Der Schutz von Webbedrohungen verhindert den Zugriff auf Phishingwebsites, Schadsoftwarevektoren, Exploitwebsites, nicht vertrauenswürdige websites oder Websites mit niedriger Reputation sowie Websites, die Sie in Ihrer benutzerdefinierten Indikatorliste [blockiert haben.](manage-indicators.md)
 
 >[!Note]
 >Es kann bis zu einer Stunde dauern, bis Geräte neue benutzerdefinierte Indikatoren erhalten.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Der Webschutz verwendet Netzwerkschutz, um Sicherheit beim Browsen im Web in Microsoft Edge und Webbrowsern von Drittanbietern zu bieten.
+Der Webschutz verwendet Netzwerkschutz, um die Sicherheit des Webbrowsers Microsoft Edge Webbrowsern von Drittanbietern zu gewährleisten.
 
 So aktivieren Sie den Netzwerkschutz auf Ihren Geräten:
 - Bearbeiten Sie die Sicherheitsbasis für Defender for Endpoint unter **Web & Network Protection,** um den Netzwerkschutz zu aktivieren, bevor Sie ihn bereitstellen oder erneut bereitstellen. [Informationen zum Überprüfen und Zuweisen der Sicherheitsbasis für Defender for Endpoint](configure-machines-security-baseline.md#review-and-assign-the-microsoft-defender-for-endpoint-security-baseline)
 - Aktivieren Sie den Netzwerkschutz mithilfe von Intune-Gerätekonfiguration, SCCM, Gruppenrichtlinie oder Ihrer MDM-Lösung. [Weitere Informationen zum Aktivieren des Netzwerkschutzes](enable-network-protection.md)  
 
 >[!Note]
->Wenn Sie den Netzwerkschutz auf **Nur Überwachung festlegen,** ist die Blockierung nicht verfügbar. Außerdem können Sie Versuche erkennen und protokollieren, um nur auf schädliche und unerwünschte Websites auf Microsoft Edge zu zugreifen.
+>Wenn Sie den Netzwerkschutz auf **Nur Überwachung festlegen,** ist die Blockierung nicht verfügbar. Außerdem können Sie Versuche erkennen und protokollieren, um nur auf schädliche und unerwünschte Websites Microsoft Edge können.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

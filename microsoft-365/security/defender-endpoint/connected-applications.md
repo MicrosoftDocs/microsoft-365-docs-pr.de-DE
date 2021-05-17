@@ -37,7 +37,7 @@ ms.locfileid: "51893497"
 
 Verbundene Anwendungen werden mithilfe von APIs in die Defender for Endpoint-Plattform integriert. 
 
-Anwendungen verwenden das Standard-OAuth 2.0-Protokoll, um sich zu authentifizieren und Token für die Verwendung mit Microsoft Defender for Endpoint-APIs zur Verfügung zu stellen.  Darüber hinaus können Mandantenadministratoren mit Azure Active Directory (Azure AD)-Anwendungen explizit steuern, auf welche APIs über die entsprechende App zugegriffen werden kann.
+Anwendungen verwenden das Standard-OAuth 2.0-Protokoll, um sich zu authentifizieren und Token für die Verwendung mit Microsoft Defender for Endpoint-APIs zur Verfügung zu stellen.  Darüber hinaus können Azure Active Directory (Azure AD)-Anwendungen Mandantenadministratoren explizit steuern, auf welche APIs über die entsprechende App zugegriffen werden kann.
  
 Sie müssen diese Schritte [ausführen,](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro) um die APIs mit der verbundenen Anwendung zu verwenden.
  

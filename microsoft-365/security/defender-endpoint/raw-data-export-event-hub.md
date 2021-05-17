@@ -42,9 +42,9 @@ ms.locfileid: "51861047"
 
 ## <a name="enable-raw-data-streaming"></a>Aktivieren des Streamings von Rohdaten:
 
-1. Melden Sie sich beim [Microsoft Defender Security Center](https://securitycenter.windows.com) als * globaler **Administrator** _ oder _*_Sicherheitsadministrator_** an.
+1. Melden Sie sich beim [Microsoft Defender Security Center](https://securitycenter.windows.com) als ***Globaler Administrator** _ oder _*_Sicherheitsadministrator_** an.
 
-2. Wechseln Sie zur [Seite Datenexporteinstellungen im](https://securitycenter.windows.com/interoperability/dataexport) Microsoft Defender Security Center.
+2. Wechseln Sie zur [Seite Datenexporteinstellungen](https://securitycenter.windows.com/interoperability/dataexport) auf Microsoft Defender Security Center.
 
 3. Klicken Sie auf **Datenexporteinstellungen hinzufügen.**
 
@@ -88,7 +88,7 @@ ms.locfileid: "51861047"
 
 Gehen Sie wie folgt vor, um die Datentypen für Ereigniseigenschaften zu erhalten:
 
-1. Melden Sie sich beim [Microsoft Defender Security Center an,](https://securitycenter.windows.com) und wechseln Sie zur Seite Erweiterte [Suche](https://securitycenter.windows.com/hunting-package).
+1. Melden Sie sich bei [Microsoft Defender Security Center](https://securitycenter.windows.com) an, und wechseln Sie zur [Seite Erweiterte Suche](https://securitycenter.windows.com/hunting-package).
 
 2. Führen Sie die folgende Abfrage aus, um die Datentypzuordnung für jedes Ereignis zu erhalten:
  

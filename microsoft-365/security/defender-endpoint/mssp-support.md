@@ -43,7 +43,7 @@ Um diese Anforderung zu decken, bieten anbieter für verwaltete Sicherheitsdiens
 
 Defender for Endpoint fügt diesem Szenario Partnerschaftsmöglichkeiten hinzu und ermöglicht es MSSPs, die folgenden Aktionen zu ergreifen:
 
-- Zugriff auf das Microsoft Defender Security Center-Portal des MSSP-Kunden
+- Zugriff auf das MsSP-Kundenportal Microsoft Defender Security Center
 - Erhalten von E-Mail-Benachrichtigungen und 
 - Abrufen von Warnungen über SieM-Tools (Security Information and Event Management)
 

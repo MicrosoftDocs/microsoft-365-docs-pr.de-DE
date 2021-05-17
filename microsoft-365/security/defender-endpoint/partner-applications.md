@@ -62,9 +62,9 @@ Logo |Partnername   | Beschreibung
 ![Abbildung des Elastic-Sicherheitslogos](images/elastic-security-logo.png) | [Elastic Security](https://go.microsoft.com/fwlink/?linkid=2139303) | Elastic Security ist eine kostenlose und offene Lösung zum Verhindern, Erkennen und Reagieren auf Bedrohungen
 ![Abbildung des IBM QRadar-Logos](images/ibm-qradar-logo.png) | [IBM QRadar](https://go.microsoft.com/fwlink/?linkid=2113903) | Konfigurieren von IBM QRadar zum Erfassen von Erkennungen von Defender for Endpoint 
 ![Abbildung des Micro Focus ArcSight-Logos](images/arcsight-logo.png) | [Micro Focus ArcSight](https://go.microsoft.com/fwlink/?linkid=2113548) | Verwenden von Micro Focus ArcSight zum Ziehen von Defender for Endpoint-Erkennungen
-![Abbildung des RSA NetWitness-Logos](images/rsa-netwitness-logo.png) | [RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566) | Stream Defender for Endpoint Alerts to RSA NetWitness mithilfe der Microsoft Graph-Sicherheits-API
+![Abbildung des RSA NetWitness-Logos](images/rsa-netwitness-logo.png) | [RSA NetWitness](https://go.microsoft.com/fwlink/?linkid=2118566) | Stream Defender for Endpoint Alerts to RSA NetWitness mithilfe der Microsoft Graph Security API
 ![Abbildung des SafeBreach-Logos](images/safebreach-logo.png) | [SafeBreach](https://go.microsoft.com/fwlink/?linkid=2114114)| Einblicke in Defender for Endpoint-Sicherheitsereignisse, die automatisch mit SafeBreach-Simulationen korreliert werden
-![Abbildung des Skybox Vulnerability Control-Logos](images/skybox-logo.png) | [Skybox-Sicherheitsrisikosteuerung](https://go.microsoft.com/fwlink/?linkid=2127467) | Skybox Vulnerability Control durchschneidet das Geräusch des Sicherheitsrisikomanagements und korreliert den Geschäfts-, Netzwerk- und Bedrohungskontext, um Ihre riskantesten Sicherheitsrisiken aufzudecken.
+![Abbildung des Skybox Vulnerability Control-Logos](images/skybox-logo.png) | [Skybox-Sicherheitsrisikosteuerung](https://go.microsoft.com/fwlink/?linkid=2127467) | Skybox Vulnerability Control durchschneidet das Sicherheitsrisikomanagement und korreliert den Geschäfts-, Netzwerk- und Bedrohungskontext, um Ihre riskantesten Sicherheitsrisiken aufzudecken.
 ![Abbildung des Splunk-Logos](images/splunk-logo.png) | [Splunk](https://go.microsoft.com/fwlink/?linkid=2129805) | Das Defender for Endpoint-Add-On ermöglicht Splunk-Benutzern, alle Warnungen und unterstützenden Informationen an ihren Splunk zu empfangen.
 ![Abbildung des XM-Cyberlogos](images/xmcyber-logo.png) | [XM Cyber](https://go.microsoft.com/fwlink/?linkid=2136700) | Priorisieren Der Reaktion auf eine Warnung basierend auf Risikofaktoren und hochwertigen Ressourcen
 
@@ -76,7 +76,7 @@ Logo |Partnername   | Beschreibung
 ![Abbildung des CyberSponse CyOps-Logos](images/cybersponse-logo.png) | [CyberSponse CyOps](https://go.microsoft.com/fwlink/?linkid=2115943) | CyOps wird in Defender for Endpoint integriert, um die High-Speed-Playbooks zur Reaktion auf Vorfälle von Kunden zu automatisieren.
 ![Abbildung des Delta Risk ActiveEye-Logos](images/delta-risk-activeeye-logo.png) | [Delta Risk ActiveEye](https://go.microsoft.com/fwlink/?linkid=2127468) | Delta Risk, ein führender Anbieter von SOC-as-a-Service- und Sicherheitsdiensten, integriert Defender for Endpoint in seine cloudeigene SOAR-Plattform ActiveEye.
 ![Abbildung von Demisto, einem Palo Alto Networks Company-Logo](images/demisto-logo.png) | [Demisto, ein Palo Alto Networks Company](https://go.microsoft.com/fwlink/?linkid=2108414) | Demisto integriert sich in Defender for Endpoint, um Sicherheitsteams die Orchestrierung und Automatisierung der Überwachung, Anreicherung und Reaktion von Endpunktsicherheit zu ermöglichen.
-![Abbildung des Microsoft Flow& Azure Functions-Logos](images/ms-flow-logo.png) | [Microsoft Flow & Azure Functions](https://go.microsoft.com/fwlink/?linkid=2114300) | Verwenden der Defender for Endpoint-Connectors für Azure Logic Apps & Microsoft Flow zum Automatisieren von Sicherheitsverfahren
+![Abbildung des Microsoft Flow & Azure Functions-Logos](images/ms-flow-logo.png) | [Microsoft Flow & von Azure-Funktionen](https://go.microsoft.com/fwlink/?linkid=2114300) | Verwenden der Defender for Endpoint-Connectors für Azure Logic Apps & Microsoft Flow zum Automatisieren von Sicherheitsverfahren
 ![Abbildung des Rapid7 InsightConnect-Logos](images/rapid7-logo.png) | [Rapid7 InsightConnect](https://go.microsoft.com/fwlink/?linkid=2116040) | InsightConnect ist in Defender for Endpoint integriert, um Ihre zeitintensiven Sicherheitsprozesse zu beschleunigen, zu optimieren und zu integrieren.
 ![Abbildung des ServiceNow-Logos](images/servicenow-logo.png) | [ServiceNow](https://go.microsoft.com/fwlink/?linkid=2135621) | Abrufen von Warnungen in die ServiceNow Security Operations-Lösung basierend auf der Microsoft Graph-API-Integration
 ![Abbildung des Swimlane-Logos](images/swimlane-logo.png) | [Swimlane](https://go.microsoft.com/fwlink/?linkid=2113902) | Maximieren der Funktionen für die Reaktion auf Vorfälle mithilfe von Swimlane und Defender for Endpoint zusammen
@@ -109,8 +109,8 @@ Logo |Partnername   | Beschreibung
 ![Abbildung des Better Mobile-Logos](images/bettermobile-logo.png) | [Better Mobile](https://go.microsoft.com/fwlink/?linkid=2086214)| KI-basierte MTD-Lösung zum Beenden von mobilen Bedrohungen & Phishing. Privates Internetbrowsing zum Schutz der Benutzerdaten 
 ![Abbildung des Corrata-Logos](images/corrata-logo.png)| [Corrata](https://go.microsoft.com/fwlink/?linkid=2081148) | Mobile Lösung – Schützen Sie Ihre mobilen Geräte mit präziser Sichtbarkeit und Kontrolle vor Corrata 
 ![Abbildung des Lookout-Logos](images/lookout-logo.png)| [Lookout](https://go.microsoft.com/fwlink/?linkid=866935)| Lookout Mobile Threat Protection-Telemetrie für mobile Android- und iOS-Geräte
-![Abbildung des Symantec Endpoint Protection Mobile-Logos](images/symantec-logo.png) | [Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)| SEP Mobile hilft Unternehmen dabei, Sicherheitsbedrohungen und Sicherheitsrisiken auf mobilen Geräten vorherzusagen, zu erkennen und zu verhindern. 
-![Abbildung des Zimperium-Logos](images/zimperium-logo.png)| [Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Erweitern Ihres Defender for Endpoint auf iOS und Android mit Machine Learning-basierter mobiler Bedrohungsabwehr
+![Bild von Symantec Endpoint Protection Mobile-Logo](images/symantec-logo.png) | [Symantec Endpoint Protection Mobile](https://go.microsoft.com/fwlink/?linkid=2090992)| SEP Mobile hilft Unternehmen dabei, Sicherheitsbedrohungen und Sicherheitsrisiken auf mobilen Geräten vorherzusagen, zu erkennen und zu verhindern. 
+![Abbildung des Zimperium-Logos](images/zimperium-logo.png)| [Zimperium](https://go.microsoft.com/fwlink/?linkid=2118044)|Erweitern Ihres Defender for Endpoint auf iOS und Android mit Machine Learning mobiler Bedrohungsabwehr
 
 
 
@@ -152,5 +152,5 @@ Mit Defender for Endpoint können Sie sich in diese Lösungen integrieren und au
 
 Defender for Endpoint unterstützt derzeit den IOC-Abgleich und die Korrektur für Datei- und Netzwerkindikatoren. Das Blockieren wird für Dateiindikatoren unterstützt.  
 
-## <a name="support-for-non-windows-platforms"></a>Unterstützung für Nicht-Windows-Plattformen
-Defender for Endpoint bietet eine zentrale Sicherheitsbetriebserfahrung für Windows- und Nicht-Windows-Plattformen, einschließlich mobiler Geräte. Sie können Warnungen von verschiedenen unterstützten Betriebssystemen im Portal anzeigen und das Netzwerk Ihrer Organisation besser schützen. 
+## <a name="support-for-non-windows-platforms"></a>Unterstützung für Nicht-Windows Plattformen
+Defender for Endpoint bietet eine zentrale Sicherheitsbetriebserfahrung für Windows und nicht Windows Plattformen, einschließlich mobiler Geräte. Sie können Warnungen von verschiedenen unterstützten Betriebssystemen im Portal anzeigen und das Netzwerk Ihrer Organisation besser schützen. 

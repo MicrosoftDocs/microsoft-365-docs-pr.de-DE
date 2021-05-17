@@ -18,7 +18,7 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
-description: Enthält Links zu anderen Artikeln, die Ihnen zeigen, wie Sie die Leistung der Seitendownloadzeiten für SharePoint Online verbessern können.
+description: Enthält Links zu anderen Artikeln, die Ihnen mitteilen, wie Sie die Leistung der Seitendownloadzeiten für SharePoint Verbessern können.
 ms.openlocfilehash: 9ce463898b81e1653932864276be2fa8d6ce830b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -28,11 +28,11 @@ ms.locfileid: "50909334"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Optimieren der Leistung von SharePoint Online
 
-Dieser Artikel enthält Links zu anderen Artikeln, die Ihnen mitteilen, wie Sie die Leistung der Seitendownloadzeiten für SharePoint Online verbessern können. Dieser Artikel ist Teil des [Projekts Netzwerkplanung und Leistungsoptimierung für Office 365.](./network-planning-and-performance.md)
+Dieser Artikel enthält Links zu anderen Artikeln, die Ihnen zeigen, wie Sie die Leistung der Seitendownloadzeiten für SharePoint verbessern können. Dieser Artikel ist Teil der [Netzwerkplanung und Leistungsoptimierung für Office 365](./network-planning-and-performance.md) Projekt.
 
-## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>Artikel zur Optimierung der Leistung von SharePoint Online
+## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>Artikel zur Optimierung SharePoint Onlineleistung
 
-Verwenden Sie diese Artikel, um die Leistung von SharePoint Online zu optimieren.
+Verwenden Sie diese Artikel, um die SharePoint Onlineleistung zu optimieren.
   
 - [Einführung in die Leistungsoptimierung für SharePoint Online](introduction-to-performance-tuning-for-sharepoint-online.md)
 
@@ -60,12 +60,12 @@ Verwenden Sie diese Artikel, um die Leistung von SharePoint Online zu optimieren
 
 - [Gewusst wie: Vermeiden von Einschränkungen oder Sperren in SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
 
-- [Optimieren von iFrames in modernen SharePoint Online-Portalseiten](modern-iframe-optimization.md)
+- [Optimieren von iFrames in SharePoint modernen Onlineportalseiten](modern-iframe-optimization.md)
 
-- [Optimieren der Web part-Leistung auf modernen SharePoint Online-Portalseiten](modern-web-part-optimization.md)
+- [Optimieren der Web part-Leistung in SharePoint modernen Onlineportalseiten](modern-web-part-optimization.md)
 
-- [Optimieren von Seitenaufrufen in modernen SharePoint Online-Portalseiten](modern-page-call-optimization.md)
+- [Optimieren von Seitenaufrufen in SharePoint modernen Onlineportalseiten](modern-page-call-optimization.md)
 
-- [Optimieren der Seitengewichtung auf modernen SharePoint Online-Portalseiten](modern-page-weight-optimization.md)
+- [Optimieren der Seitengewichtung SharePoint modernen Onlineportalseiten](modern-page-weight-optimization.md)
 
-- [Optimieren von Bildern in modernen SharePoint Online-Portalseiten](modern-image-optimization.md)
+- [Optimieren von Bildern in SharePoint modernen Onlineportalseiten](modern-image-optimization.md)

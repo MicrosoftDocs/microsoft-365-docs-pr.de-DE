@@ -50,4 +50,4 @@ Thema | Beschreibung
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Dokumentation zu Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/)
-- [Dokumentation zu Azure Storage Account](https://docs.microsoft.com/azure/storage/common/storage-account-overview)
+- [Azure Storage Kontodokumentation](https://docs.microsoft.com/azure/storage/common/storage-account-overview)

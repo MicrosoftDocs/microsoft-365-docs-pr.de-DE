@@ -15,7 +15,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Erfahren Sie mehr über das Business Assist-Programm und darüber, wie es Ihrer Organisation mit verbesserter Hilfe und Verwendung für Microsoft 365 Business helfen kann.
+description: Erfahren Sie mehr über das Business Assist-Programm und darüber, wie es Ihrer Organisation mit verbesserter Hilfe und Verwendung für unternehmen Microsoft 365 helfen kann.
 ms.openlocfilehash: 767146cbbb68ff2e6632a7cae74a8b232834b01b
 ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
@@ -27,14 +27,14 @@ ms.locfileid: "51929030"
 
 Holen Sie das Beste aus Ihrem Abonnement heraus, und erfahren Sie von Experten aus dem kleinen Unternehmen.
 
-**Business Assist für Microsoft 365** ist für Unternehmen mit weniger als 5 Benutzern konzipiert, um Ihnen und Ihren Mitarbeitern rund um die Uhr Zugriff auf Kleinunternehmensspezialisten zu bieten, während Sie Ihr Unternehmen wachsen – vom Onboarding bis zum täglichen Gebrauch.
+**Business Assist für Microsoft 365** ist für Unternehmen mit weniger als 5 Benutzern konzipiert, um Ihnen und Ihren Mitarbeitern rund um die Uhr Zugriff auf Kleinunternehmensspezialisten zu bieten, während Sie Ihr Unternehmen wachsen– vom Onboarding bis zum täglichen Gebrauch.
 
 ## <a name="business-assist-services"></a>Business Assist Services
 
 ||||
 |:-----|:-----|:-----|
-|**Schnell in Betrieb gehen** <br> Arbeiten Sie mit einem Spezialisten für kleine Unternehmen zusammen, um Microsoft 365-Features zu einrichten, die Ihr Unternehmen schützen und ihm ein professionelles Aussehen verleihen. |**Stärken Sie alle Mitarbeiter in Ihrem Unternehmen** <br> Alle Ihre Mitarbeiter, nicht nur die Für it-Verantwortlichen, können direkt zu Microsoft-Experten wechseln, um schnelleren laufenden Support zu erhalten. |**Entsperren des Geschäftspotenzials** <br> Erfahren Sie mehr über nicht ausgelastete Features und erhalten Tipps zu Möglichkeiten, um mehr Nutzen aus Ihrem Abonnement zu erhalten. |
-|**Beschleunigen Der Cloudmigration** <br> Erhalten Sie personalisierte Hilfe beim Verschieben aller aktuellen Dateien (E-Mail, Speicher, Dokumente und Kommunikation) zu Microsoft 365. |**Einfacher Zugriff auf Spezialisten** <br> Unser Team nimmt die Unterhaltung an der Stelle auf, an der Sie sie zuletzt verlassen haben. Keine Tickets zum Nachverfolgen, keine Roboter, keine langen Wartezeiten. |**Immer auf dem neuesten Stand** <br> Regelmäßige Überprüfungen, mit deren Hilfe Sie immer auf dem laufenden bleiben, wenn neue Dienstfunktionen hinzugefügt werden und sich die Anforderungen Ihres Unternehmens weiterentwickeln. |
+|**Schnell in Betrieb gehen** <br> Arbeiten Sie mit einem Spezialisten für kleine Unternehmen zusammen, um Microsoft 365, die Ihr Unternehmen schützen und ihm ein professionelles Aussehen verleihen. |**Stärken Sie alle Mitarbeiter in Ihrem Unternehmen** <br> Alle Ihre Mitarbeiter, nicht nur die Für it-Verantwortlichen, können direkt zu Microsoft-Experten wechseln, um schnelleren laufenden Support zu erhalten. |**Entsperren des Geschäftspotenzials** <br> Erfahren Sie mehr über nicht ausgelastete Features und erhalten Tipps zu Möglichkeiten, um mehr Nutzen aus Ihrem Abonnement zu erhalten. |
+|**Beschleunigen Der Cloudmigration** <br> Erhalten Sie personalisierte Hilfe beim Verschieben aller aktuellen Dateien (E-Mail, Speicher, Dokumente und Kommunikation) in Microsoft 365. |**Einfacher Zugriff auf Spezialisten** <br> Unser Team nimmt die Unterhaltung an der Stelle auf, an der Sie sie zuletzt verlassen haben. Keine Tickets zum Nachverfolgen, keine Roboter, keine langen Wartezeiten. |**Immer auf dem neuesten Stand** <br> Regelmäßige Überprüfungen, mit deren Hilfe Sie immer auf dem laufenden bleiben, wenn neue Dienstfunktionen hinzugefügt werden und sich die Anforderungen Ihres Unternehmens weiterentwickeln. |
 | | | |
 
 > [!div class="nextstepaction"]
@@ -51,9 +51,9 @@ Kunden mit einem aktiven Microsoft 365 Business-Abonnementplan können Business 
 
 Nur Organisationen, die berechtigt sind, sehen die Option zum Kauf von Business Assist. Business Assist kostet $5 pro Benutzer und Monat. Hier erfahren Sie, wie Sie Business Assist kaufen können.
 
-1. Wechseln Sie im Microsoft 365 Admin Center zu  >  **Abrechnungskaufdienste**.
+1. Wechseln Sie Microsoft 365 Admin Center zu   >  **Abrechnungskaufdienste**.
 
-2. Wählen **Sie Details** im Small Business Assist für Microsoft **365** aus, und schließen Sie Ihren Kauf ab.
+2. Wählen **Sie Details** in der Small Business Assist for **Microsoft 365** aus, und schließen Sie Ihren Kauf ab.
 
 :::image type="content" source="../../media/business-assist-april.png" alt-text="Screeenshot: Kauf von Business Assist im Abschnitt Add-Ons auf der Seite Dienste kaufen":::
 

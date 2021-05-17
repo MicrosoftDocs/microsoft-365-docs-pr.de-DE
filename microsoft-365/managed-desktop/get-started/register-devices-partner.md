@@ -1,6 +1,6 @@
 ---
 title: Schritte für Partner zum Registrieren von Geräten
-description: So können Partner Geräte registrieren, damit sie von Microsoft Managed Desktop verwaltet werden können
+description: Wie Partner Geräte registrieren können, damit sie von der Microsoft Managed Desktop
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -21,7 +21,7 @@ ms.locfileid: "51689233"
 # <a name="steps-for-partners-to-register-devices"></a>Schritte für Partner zum Registrieren von Geräten
 
 
-In diesem Artikel werden die Schritte beschrieben, die Partner befolgen müssen, um Geräte zu registrieren. Der Prozess zum Registrieren von Geräten selbst ist unter Registrieren von Geräten [in Microsoft Managed Desktop selbst dokumentiert.](register-devices-self.md)
+In diesem Artikel werden die Schritte beschrieben, die Partner befolgen müssen, um Geräte zu registrieren. Der Prozess zum Registrieren von Geräten selbst ist unter Registrieren von Geräten [in Microsoft Managed Desktop dokumentiert.](register-devices-self.md)
 
 
 
@@ -30,7 +30,7 @@ Bevor Sie die Registrierung für einen Kunden abschließen, müssen Sie zunächs
 
 
 > [!NOTE]
-> Diese Dokumentation ist nur für Partner und OEMs. Der Prozess für die Selbstregistrierung ist unter Registrieren von Geräten [in Microsoft Managed Desktop selbst dokumentiert.](register-devices-self.md)
+> Diese Dokumentation ist nur für Partner und OEMs. Der Prozess für die Selbstregistrierung ist unter Registrieren von Geräten [in Microsoft Managed Desktop dokumentiert.](register-devices-self.md)
 
 
 ## <a name="register-devices-by-using-partner-center"></a>Registrieren von Geräten mithilfe von Partner Center
@@ -41,7 +41,7 @@ Nachdem Sie die Beziehung zu Ihren Kunden eingerichtet haben, können Sie das Pa
 2. Wählen **Sie im** Menü Partner Center die Option Kunden aus, und wählen Sie dann den Kunden aus, dessen Geräte Sie verwalten möchten.
 3. Wählen Sie auf der Detailseite des Kunden Geräte **aus.**
 4. Wählen **Sie unter Profile auf** Geräte anwenden die Option Geräte hinzufügen **aus.**
-5. Geben Sie das entsprechende Gruppentag für das ausgewählte Geräteprofil ein (wie in der folgenden Tabelle dargestellt), und wählen Sie dann **Durchsuchen** aus, um die Kundenliste (im CSV-Dateiformat) in das Partner Center hochzuladen.
+5. Geben Sie das entsprechende Gruppentag für das ausgewählte Geräteprofil ein (wie in der folgenden Tabelle dargestellt), und wählen Sie dann **Durchsuchen** aus, um die Kundenliste (im .csv-Dateiformat) in das Partner Center hochzuladen.
 
 |[Geräteprofil](../service-description/profiles.md)  |Gruppentag  |
 |---------|---------|
@@ -50,12 +50,12 @@ Nachdem Sie die Beziehung zu Ihren Kunden eingerichtet haben, können Sie das Pa
 |Standard     | **Microsoft365Managed \_ Standard**        |
 
 > [!IMPORTANT]
-> Der Gruppenname muss genau mit den in der Tabelle aufgeführten übereinstimmen, einschließlich Groß- und Sonderzeichen. Dadurch können die neu registrierten Geräte dem Microsoft Managed Desktop Autopilot-Profil zugewiesen werden.
+> Der Gruppenname muss genau mit den in der Tabelle aufgeführten übereinstimmen, einschließlich Groß- und Sonderzeichen. Dadurch können die neu registrierten Geräte dem autopilot-Profil Microsoft Managed Desktop zugewiesen werden.
 
 >[!NOTE]
-> Sie sollten diese CSV-Datei mit dem Gerätekauf erhalten haben. Wenn Sie keine CSV-Datei erhalten haben, können Sie diese selbst erstellen, indem Sie die Schritte unter Hinzufügen von Geräten [zu Windows Autopilot ausführen.](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell) Das Windows PowerShell-Skript ist anders als das für das [Microsoft Managed Desktop Admin-Portal .](./register-devices-self.md#obtain-the-hardware-hash) Partner sollten [Get-WindowsAutoPilotInfo verwenden,](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) um Geräte für Microsoft Managed Desktop-Geräte im Partner Center zu registrieren.
+> Sie sollten diese .csv beim Kauf Ihres Geräts erhalten haben. Wenn Sie keine .csv erhalten haben, können Sie diese selbst erstellen, indem Sie die Schritte unter Hinzufügen von Geräten zu Windows [Autopilot ausführen.](/windows/deployment/windows-autopilot/add-devices#collecting-the-hardware-id-from-existing-devices-using-powershell) Das Windows PowerShell-Skript ist anders als das skript, das für das Microsoft Managed Desktop [Admin-Portal verwendet wird.](./register-devices-self.md#obtain-the-hardware-hash) Partner sollten [Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) verwenden, um Geräte für Microsoft Managed Desktop im Partner Center zu registrieren.
 
-Wenn beim Hochladen der CSV-Datei eine Fehlermeldung angezeigt wird, überprüfen Sie das Format der Datei. Stellen Sie sicher, dass die Spaltenreihenfolge mit den unter Verwenden von Windows Autopilot-Profilen auf neuen Geräten beschriebenen Informationen zum Anpassen der [out-of-box-Benutzererfahrung](/partner-center/autopilot#add-devices-to-a-customers-account)eines Kunden entspricht. Sie können auch die CSV-Beispieldatei verwenden, die über den Link neben Geräte hinzufügen bereitgestellt wird, **um** eine Geräteliste zu erstellen. 
+Wenn beim Hochladen der Datei eine Fehlermeldung .csv, überprüfen Sie das Format der Datei. Stellen Sie sicher, dass die Spaltenreihenfolge dem entspricht, was unter Verwenden von Windows Autopilot-Profilen auf neuen Geräten beschrieben wird, um die [out-of-box-Erfahrung](/partner-center/autopilot#add-devices-to-a-customers-account)eines Kunden anzupassen. Sie können auch die Beispieldatei .csv, die über den Link neben Geräte hinzufügen bereitgestellt wird, **um** eine Geräteliste zu erstellen. 
 
 Weitere Informationen zu Autopilot in Partnerszenarien finden Sie unter Hinzufügen von Geräten [zum Kundenkonto](/partner-center/autopilot#add-devices-to-a-customers-account).
 
@@ -74,4 +74,4 @@ Nachdem Sie die Beziehung eingerichtet haben, können Sie mit der Registrierung 
 |Standard     | **Microsoft365Managed \_ Standard**      |
 
 > [!IMPORTANT]
-> Die Gruppentags müssen genau mit den in der Tabelle aufgeführten übereinstimmen, einschließlich Groß- und Sonderzeichen. Dadurch können die neu registrierten Geräte dem Microsoft Managed Desktop Autopilot-Profil zugewiesen werden.
+> Die Gruppentags müssen genau mit den in der Tabelle aufgeführten übereinstimmen, einschließlich Groß- und Sonderzeichen. Dadurch können die neu registrierten Geräte dem autopilot-Profil Microsoft Managed Desktop zugewiesen werden.

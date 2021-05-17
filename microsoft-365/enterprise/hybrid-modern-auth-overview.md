@@ -15,7 +15,7 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: In diesem Artikel erfahren Sie mehr über die moderne Hybridauthentifizierung und die Voraussetzungen für die Verwendung mit lokalen Skype for Business- und Exchange-Servern.
+description: In diesem Artikel erfahren Sie mehr über die moderne Hybridauthentifizierung und die Voraussetzungen für die Verwendung mit lokalen Skype for Business und Exchange Server.
 ms.openlocfilehash: 33bcf9bde2cda0388160337d3ffe6b81ab94eb12
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -48,7 +48,7 @@ Die Verwaltung von Benutzeridentitäten mit moderner Authentifizierung gibt Admi
 
 Seien Sie sich bewusst, dass aufgrund der engen Zusammenarbeit von Skype for Business mit Exchange das Anmeldeverhalten, das Benutzer des Skype for Business-Clients sehen werden, durch den Status der modernen Authentifizierung von Exchange beeinflusst wird. Dies gilt auch, wenn Sie über eine hybride Skype for Business-Architektur mit _geteilter Domäne_ verfügen, in der Sie sowohl Skype for Business Online als auch lokal Skype for Business haben, wobei die Benutzer an beiden Standorten verwaltet werden.
 
-Weitere Informationen zur modernen Authentifizierung in Office 365 finden Sie unter [Office 365 Client App Support - Multi-factor authentication](microsoft-365-client-support-multi-factor-authentication.md).
+Weitere Informationen zur modernen Authentifizierung in Office 365 finden Sie [unter Office 365 Client App Support - Multi-factor authentication](microsoft-365-client-support-multi-factor-authentication.md).
 
 > [!IMPORTANT]
 > Seit August 2017 ist die moderne Authentifizierung (MA) auf allen neuen Office 365-Mandanten, die Skype for Business Online und Exchange Online umfassen, standardmäßig aktiviert. Bereits vorhandene Mandanten haben keine Änderung in Ihrem Standard-MA-Status, aber alle neuen Mandanten unterstützen automatisch den erweiterten Satz von Identitätsfeatures, die oben aufgelistet sind. Um Ihren MA-Status zu überprüfen, lesen Sie den Abschnitt [Überprüfen Sie den Status der modernen Authentifizierung Ihrer lokalen Umgebung](hybrid-modern-auth-overview.md#BKMK_CheckStatus).
@@ -149,7 +149,7 @@ Weitere Informationen zum Cmdlet "Get-CsOAuthConfiguration" finden Sie unter [Ge
 
     Die Verfügbarkeit der modernen Authentifizierung wird durch die Kombination aus Client, Protokoll und Konfiguration bestimmt. Wenn die moderne Authentifizierung vom Client, Protokoll und/oder der Konfiguration nicht unterstützt wird, nutzt der Client weiterhin die Legacyauthentifizierung.
   
-    Die folgenden Clients und Protokolle unterstützen die moderne Authentifizierung mit lokalem Exchange, wenn die moderne Authentifizierung in der Umgebung aktiviert ist:
+    Die folgenden Clients und Protokolle unterstützen die moderne Authentifizierung mit lokalen Exchange wenn die moderne Authentifizierung in der Umgebung aktiviert ist:
 
   |**Clients**|**Primary-Protokoll**|**Notizen**|
   |:-----|:-----|:-----|
@@ -158,7 +158,7 @@ Weitere Informationen zum Cmdlet "Get-CsOAuthConfiguration" finden Sie unter [Ge
   |Outlook für iOS und Android  <br/> | Microsoft-Synchronisierungstechnologie <br/> |Weiter Informationen finden Sie unter [Verwenden der modernen Hybridauthentifizierung mit Outlook für iOS und Android](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).  <br/> |
   |Exchange ActiveSync-Clients (z. B. iOS11 Mail)  <br/> |Exchange ActiveSync  <br/> |Bei Exchange ActiveSync-Clients, die die moderne Authentifizierung unterstützen, müssen Sie das Profil neu erstellen, um von der Standardauthentifizierung zur modernen Authentifizierung zu wechseln.  <br/> |
 
-    Clients und/oder Protokolle, die nicht aufgeführt sind (z. B. POP3), unterstützen die moderne Authentifizierung mit lokalem Exchange nicht und nutzen auch nach der Aktivierung der modernen Authentifizierung in der Umgebung weiterhin Legacyauthentifizierungsmechanismen.
+    Clients und/oder Protokolle, die nicht aufgeführt sind (z. B. POP3), unterstützen keine moderne Authentifizierung mit lokalem Exchange und nutzen auch nach der Aktivierung der modernen Authentifizierung in der Umgebung weiterhin Legacyauthentifizierungsmechanismen.
 
 - **Allgemeine Voraussetzungen**
   - Ressourcen gesamtstrukturszenarien erfordern eine zweistufige Vertrauensstellung mit der Konto gesamtstruktur, um sicherzustellen, dass ordnungsgemäße SID-Suchen während moderner Hybridauthentifizierungsanforderungen ausgeführt werden. 

@@ -1,6 +1,6 @@
 ---
-title: Streamen von Microsoft Defender for Endpoint-Ereignissen an Ihr Speicherkonto
-description: Erfahren Sie, wie Sie Microsoft Defender for Endpoint so konfigurieren, dass Advanced Hunting-Ereignisse an Ihr Speicherkonto gestreamt werden.
+title: Streamen von Microsoft Defender for Endpoint-Ereignissen an Ihr Storage Konto
+description: Erfahren Sie, wie Sie Microsoft Defender for Endpoint zum Streamen von Advanced Hunting-Ereignissen an Ihr Storage konfigurieren.
 keywords: Rohdatenexport, Streaming-API, API, Event Hubs, Azure-Speicher, Speicherkonto, Erweiterte Suche, Unformatierte Datenfreigabe
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/13/2021
 ms.locfileid: "51688789"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Konfigurieren von Microsoft Defender for Endpoint zum Streamen von Advanced Hunting-Ereignissen in Ihr Speicherkonto
+# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Konfigurieren von Microsoft Defender for Endpoint zum Streamen von Advanced Hunting-Ereignissen Storage Konto
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51688789"
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
-1. Erstellen Sie [ein Speicherkonto](https://docs.microsoft.com/azure/storage/common/storage-account-overview) in Ihrem Mandanten.
+1. Erstellen Sie [Storage Konto](https://docs.microsoft.com/azure/storage/common/storage-account-overview) in Ihrem Mandanten.
 
 2. Melden Sie sich bei Ihrem [Azure-Mandanten](https://ms.portal.azure.com/)an, wechseln Sie zu Abonnements > Ihr Abonnement > Ressourcenanbieter > **Registrieren bei Microsoft.insights**.
 
@@ -43,21 +43,21 @@ ms.locfileid: "51688789"
 
 1. Melden Sie sich [beim Microsoft Defender for Endpoint-Portal](https://securitycenter.windows.com) als * globaler **Administrator** _ oder _*_Sicherheitsadministrator_** an.
 
-2. Wechseln Sie [zur Seite Datenexporteinstellungen](https://securitycenter.windows.com/interoperability/dataexport) im Microsoft Defender Security Center.
+2. Wechseln Sie [zu Seite Datenexporteinstellungen](https://securitycenter.windows.com/interoperability/dataexport) auf Microsoft Defender Security Center.
 
 3. Klicken Sie auf **Datenexporteinstellungen hinzufügen.**
 
 4. Wählen Sie einen Namen für Ihre neuen Einstellungen aus.
 
-5. Wählen **Sie Weiterleiten von Ereignissen an Azure Storage aus.**
+5. Wählen **Sie Weiterleiten von Ereignissen aus, die Azure Storage.**
 
-6. Geben Sie **Ihre Ressourcen-ID des Speicherkontos ein.** Um Ihre **Ressourcen-ID** des Speicherkontos zu erhalten, wechseln Sie zu Ihrer Seite Speicherkonto im [Azure-Portal](https://ms.portal.azure.com/) > Eigenschaften registerkarte > kopieren Sie den Text unter **Speicherkontoressourcen-ID**:
+6. Geben Sie Storage **Kontoressourcen-ID ein.** Um Ihre **Storage-Kontoressourcen-ID** zu erhalten, wechseln Sie zu Ihrer Storage-Kontoseite im [Azure-Portal](https://ms.portal.azure.com/) > Eigenschaftenregisterkarte > kopieren Sie den Text unter **Storage Kontoressourcen-ID**:
 
    ![Abbildung der Ereignishubressourcen-ID1](images/storage-account-resource-id.png)
 
 7. Wählen Sie die Ereignisse aus, die Sie streamen möchten, und klicken Sie auf **Speichern.**
 
-## <a name="the-schema-of-the-events-in-the-storage-account"></a>Das Schema der Ereignisse im Speicherkonto:
+## <a name="the-schema-of-the-events-in-the-storage-account"></a>Das Schema der Ereignisse im Storage Konto:
 
 - Für jeden Ereignistyp wird ein Blobcontainer erstellt: 
 
@@ -86,7 +86,7 @@ ms.locfileid: "51688789"
 
 Gehen Sie wie folgt vor, um die Datentypen für unsere Ereigniseigenschaften zu erhalten:
 
-1. Melden Sie sich beim [Microsoft Defender Security Center an,](https://securitycenter.windows.com) und wechseln Sie zur Seite Erweiterte [Suche](https://securitycenter.windows.com/hunting-package).
+1. Melden Sie sich bei [Microsoft Defender Security Center](https://securitycenter.windows.com) an, und wechseln Sie zur [Seite Erweiterte Suche](https://securitycenter.windows.com/hunting-package).
 
 2. Führen Sie die folgende Abfrage aus, um die Datentypzuordnung für jedes Ereignis zu erhalten: 
 
@@ -104,4 +104,4 @@ Gehen Sie wie folgt vor, um die Datentypen für unsere Ereigniseigenschaften zu 
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Microsoft Defender for Endpoint Streaming API](raw-data-export.md)
 - [Streamen von Microsoft Defender for Endpoint-Ereignissen an Ihr Azure-Speicherkonto](raw-data-export-storage.md)
-- [Dokumentation zu Azure Storage Account](https://docs.microsoft.com/azure/storage/common/storage-account-overview)
+- [Azure Storage Kontodokumentation](https://docs.microsoft.com/azure/storage/common/storage-account-overview)

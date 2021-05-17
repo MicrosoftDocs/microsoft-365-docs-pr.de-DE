@@ -89,7 +89,7 @@ Filtern sie nach den folgenden Geräteintehzustandszuständen:
 
 ### <a name="antivirus-status"></a>Antivirusstatus
 
-Filtern Von Geräten nach Antivirusstatus. Gilt nur für aktive Windows 10-Geräte.
+Filtern Von Geräten nach Antivirusstatus. Gilt nur für aktive Windows 10 Geräte.
 
 - **Deaktiviert** – & Schutz vor Bedrohungen ist deaktiviert.
 - **Keine Berichterstellung** – Virenschutz & wird nicht berichtet.
@@ -103,9 +103,9 @@ Um Geräte anzuzeigen, die möglicherweise von einer bestimmten Bedrohung betrof
 
 Weitere Informationen zu bestimmten Bedrohungen finden Sie unter [Threat analytics](threat-analytics.md). Informationen zur Risikominderung finden Sie unter [Threat & Vulnerability Management](next-gen-threat-and-vuln-mgt.md).
 
-### <a name="windows-10-version"></a>Windows 10-Version
+### <a name="windows-10-version"></a>Windows 10 Version
 
-Wählen Sie nur die Windows 10-Versionen aus, die Sie untersuchen möchten.
+Wählen Sie nur die Windows 10, die Sie untersuchen möchten.
 
 ### <a name="tags--groups"></a>Tags & Gruppen
 

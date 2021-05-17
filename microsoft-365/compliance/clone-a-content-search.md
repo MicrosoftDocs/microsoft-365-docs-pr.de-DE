@@ -17,7 +17,7 @@ search.appverid:
 ms.assetid: 7b40eeaa-544c-4534-b89b-9f79998e374c
 ms.custom:
 - seo-marvel-apr2020
-description: Verwenden Sie das PowerShell-Skript in diesem Artikel, um eine vorhandene Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365 schnell zu klonen.
+description: Verwenden Sie das PowerShell-Skript in diesem Artikel, um eine vorhandene Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365.
 ms.openlocfilehash: c64cec2415819dc53f30c303c241e3902f34017d
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "50918061"
 ---
 # <a name="clone-a-content-search"></a>Klonen einer Inhaltssuche
 
-Das Erstellen einer Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365, die viele Postfächer durchsucht, oder SharePoint- und OneDrive for #A0 kann eine Weile dauern. Das Angeben der zu durchsuchenden Websites kann auch fehleranfällig sein, wenn Sie eine URL falsch eingeben. Um diese Probleme zu vermeiden, können Sie das Windows PowerShell in diesem Artikel verwenden, um eine vorhandene Inhaltssuche schnell zu klonen. Wenn Sie eine Suche klonen, wird eine neue Suche (mit einem anderen Namen) erstellt, die die gleichen Eigenschaften (z. B. die Inhaltsorte und die Suchabfrage) wie die ursprüngliche Suche enthält. Anschließend können Sie die neue Suche bearbeiten, indem Sie die Stichwortabfrage oder den Datumsbereich ändern und ausführen.
+Das Erstellen einer Inhaltssuche im Compliance Center in Office 365 oder Microsoft 365, die viele Postfächer oder SharePoint- und OneDrive for Business-Websites durchsucht, kann eine Weile dauern. Das Angeben der zu durchsuchenden Websites kann auch fehleranfällig sein, wenn Sie eine URL falsch eingeben. Um diese Probleme zu vermeiden, können Sie das Windows PowerShell in diesem Artikel verwenden, um eine vorhandene Inhaltssuche schnell zu klonen. Wenn Sie eine Suche klonen, wird eine neue Suche (mit einem anderen Namen) erstellt, die die gleichen Eigenschaften (z. B. die Inhaltsorte und die Suchabfrage) wie die ursprüngliche Suche enthält. Anschließend können Sie die neue Suche bearbeiten, indem Sie die Stichwortabfrage oder den Datumsbereich ändern und ausführen.
   
 Warum Inhaltssuchen klonen?
   
@@ -61,7 +61,7 @@ Das Skript in diesem Schritt erstellt eine neue Inhaltssuche durch Klonen eines 
     
 So klonen Sie eine Suche:
   
-1. Speichern Sie den folgenden Text in Windows PowerShell Skriptdatei, indem Sie das Dateinamensuffix .ps1 verwenden. Beispiel: `CloneSearch.ps1` .
+1. Speichern Sie den folgenden Text in Windows PowerShell Skriptdatei, indem Sie ein Dateinamensuffix von .ps1; Beispiel: `CloneSearch.ps1` .
     
   ```powershell
   # This PowerShell script clones an existing content search in the Security &amp; Compliance Center.

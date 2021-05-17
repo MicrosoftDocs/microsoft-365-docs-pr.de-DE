@@ -18,7 +18,7 @@ f1.keywords:
 ms.custom:
 - Ent_Solutions
 ms.assetid: 34b1ab9c-814c-434d-8fd0-e5a82cd9bff6
-description: 'Zusammenfassung: Konfigurieren der Hochverfügbarkeits-Verbundauthentifizierung für Ihr Microsoft 365-Abonnement in Microsoft Azure.'
+description: 'Zusammenfassung: Konfigurieren der Hochverfügbarkeits-Verbundauthentifizierung für Microsoft 365 abonnement in Microsoft Azure.'
 ms.openlocfilehash: 3989ebb06b4ac5dfa1cded5e07c086c4778f94e7
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -40,9 +40,9 @@ Dieser Artikel enthält Links zu den schrittweisen Anweisungen zum Bereitstellen
     
 Nachfolgend sehen Sie die Konfiguration mit Platzhalternamen für jeden Server.
   
-**Eine Hochverfügbarkeits-Verbundauthentifizierung für Die Microsoft 365-Infrastruktur in Azure**
+**Eine Hochverfügbarkeits-Verbundauthentifizierung für Microsoft 365 in Azure**
 
-![Die endgültige Konfiguration der Hochverfügbarkeit der Microsoft 365-Verbundauthentifizierungsinfrastruktur in Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Die endgültige Konfiguration der Hochverfügbarkeitsinfrastruktur Microsoft 365 Verbundauthentifizierungsinfrastruktur in Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 Alle virtuellen Computer befinden sich in einem einzigen standortübergreifenden virtuellen Azure-Netzwerk (VNet). 
   
@@ -54,7 +54,7 @@ Jedes Paar virtuelle Computer für eine bestimmte Rolle befindet sich in einem e
 > [!NOTE]
 > Da dieses VNet mit dem lokalen Netzwerk verbunden ist, umfasst diese Konfiguration keinen virtuellen Jumpbox- oder Überwachungscomputer in einem Verwaltungssubnetz. Weitere Informationen finden Sie unter [Ausführen von virtuellen Windows-Computern für eine Architektur mit N-Ebenen](/azure/guidance/guidance-compute-n-tier-vm). 
   
-Das Ergebnis dieser Konfiguration ist, dass Sie über eine Verbundauthentifizierung für alle Microsoft 365-Benutzer verfügen, in denen sie ihre AD DS-Anmeldeinformationen verwenden können, um sich anstatt ihres Microsoft 365-Kontos zu anmelden. Die Verbundauthentifizierungsinfrastruktur nutzt einen redundanten Satz von Servern, die in den Azure-Infrastrukturdiensten bereitgestellt sind, nicht in Ihrem lokalen Umkreisnetzwerk. Das ist eine deutlich einfacher zu implementierende Konstellation.
+Das Ergebnis dieser Konfiguration ist, dass Sie über eine Verbundauthentifizierung für alle Microsoft 365-Benutzer verfügen, in denen sie ihre AD DS-Anmeldeinformationen verwenden können, um sich anstatt ihres Microsoft 365 anmelden. Die Verbundauthentifizierungsinfrastruktur nutzt einen redundanten Satz von Servern, die in den Azure-Infrastrukturdiensten bereitgestellt sind, nicht in Ihrem lokalen Umkreisnetzwerk. Das ist eine deutlich einfacher zu implementierende Konstellation.
   
 ## <a name="bill-of-materials"></a>Erforderliche Komponenten
 
@@ -100,15 +100,15 @@ Sie stellen diese Arbeitslast in den folgenden Phasen bereit:
     
 - [Phase 4: Konfigurieren von Webanwendungsproxys](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Erstellen und Konfigurieren der beiden Webanwendungsproxy-Server.
     
-- [Phase 5: Konfigurieren der Verbundauthentifizierung für Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Konfigurieren Sie die Verbundauthentifizierung für Ihr Microsoft 365-Abonnement.
+- [Phase 5: Konfigurieren der Verbundauthentifizierung für Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md). Konfigurieren Sie die Verbundauthentifizierung für Microsoft 365 Abonnement.
     
-Diese Artikel bieten eine präskriptive, phasenweise Anleitung für eine vordefinierte Architektur zum Erstellen einer funktionalen Verbundauthentifizierung mit hoher Verfügbarkeit für Microsoft 365 in Azure-Infrastrukturdiensten. Denken Sie dabei an Folgendes:
+Diese Artikel bieten eine präskriptive, phasenweise Anleitung für eine vordefinierte Architektur zum Erstellen einer funktionalen, hochverf tzten Verbundauthentifizierung für Microsoft 365 in Azure-Infrastrukturdiensten. Denken Sie dabei an Folgendes:
   
 - Wenn Sie ein erfahrener AD FS-Implementierer sind, können Sie die Anweisungen in den Phasen 3 und 4 entsprechend anpassen und eine Gruppe von Servern erstellen, die Ihren Anforderungen am besten entspricht. 
     
 - Wenn Sie bereits über eine vorhandene Azure-Hybridcloudbereitstellung mit einem vorhandenen standortübergreifenden virtuellen Netzwerk verfügen, können Sie die Anweisungen in den Phasen 1 und 2 entsprechend anpassen oder überspringen und die AD FS-Server und die Webanwendungsproxy-Server in den entsprechenden Subnetzen platzieren.
     
-Informationen zum Erstellen einer Entwicklungs-/Testumgebung oder eines Proof-of-Concept dieser Konfiguration finden Sie unter Verbundidentität für Ihre [Microsoft 365-Entwicklungs-/Testumgebung.](federated-identity-for-your-microsoft-365-dev-test-environment.md)
+Informationen zum Erstellen einer Entwicklungs-/Testumgebung oder eines Proof-of-Concept dieser Konfiguration finden Sie unter [Federated identity for your Microsoft 365 dev/test environment](federated-identity-for-your-microsoft-365-dev-test-environment.md).
   
 ## <a name="next-step"></a>Nächster Schritt
 

@@ -1,5 +1,5 @@
 ---
-title: Erfahren Sie mehr über das Dashboard für Warnungen zur Verhinderung von Datenverlust
+title: Informationen zum Dashboard zur Verhinderung von Datenverlust
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -27,7 +27,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/13/2021
 ms.locfileid: "51760732"
 ---
-# <a name="learn-about-the-data-loss-prevention-alerts-dashboard"></a>Erfahren Sie mehr über das Dashboard für Warnungen zur Verhinderung von Datenverlust
+# <a name="learn-about-the-data-loss-prevention-alerts-dashboard"></a>Informationen zum Dashboard zur Verhinderung von Datenverlust
 
 Wenn die Kriterien in einer Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) mit den Aktionen eines Benutzers für ein vertrauliches Element übereinstimmen, kann die Richtlinie eine Warnung generieren. Dies kann zu einer hohen Anzahl von Warnungen führen. DLP-Warnungen werden im Benachrichtigungsdashboard erfasst. Das Benachrichtigungsdashboard bietet Ihnen einen einzigen Ort, um eine tiefe Untersuchung aller Details zur Richtlinien übereinstimmung durchzuführen.  
 
@@ -35,7 +35,7 @@ Wenn die Kriterien in einer Richtlinie zur Verhinderung von Datenverlust (Data L
 
 ## <a name="workloads"></a>Arbeitslasten
 
-Das [Dashboard für die DLP-Warnungsverwaltung](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)im Microsoft [365 Compliance Center](https://compliance.microsoft.com/)zeigt Warnungen für DLP-Richtlinien für diese Workloads an:
+Das [Dashboard für die DLP-Warnungsverwaltung](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)im Microsoft 365 Compliance [Center](https://compliance.microsoft.com/)zeigt Warnungen für DLP-Richtlinien für diese Workloads an:
 
 - Exchange
 - SharePoint
@@ -44,7 +44,7 @@ Das [Dashboard für die DLP-Warnungsverwaltung](https://compliance.microsoft.com
 - Windows 10-Geräte 
 
 > [!TIP]
-> Kunden, die [Endpoint DLP verwenden,](endpoint-dlp-learn-about.md) die für [Teams DLP](dlp-microsoft-teams.md) berechtigt sind, sehen ihre Endpunkt-DLP-Richtlinienwarnungen und Teams -DLP-Richtlinienwarnungen im DLP-Warnungsverwaltungsdashboard.
+> Kunden, die [Endpoint DLP](endpoint-dlp-learn-about.md) verwenden, die für Teams [DLP](dlp-microsoft-teams.md) berechtigt sind, sehen ihre DLP-Richtlinienwarnungen für Endpunkte und Teams im DLP-Warnungsverwaltungsdashboard.
 
 ## <a name="single-alert-and-aggregate-alert"></a>Einzelne Warnung und aggregierte Warnung
 
@@ -75,18 +75,18 @@ Hier sind einige der Ereignisse, die einer Warnung zugeordnet sind. Auf der Benu
 |IP-Adresse | IP-Adresse des Computers, auf dem die Übereinstimmung der DLP-Richtlinie aufgetreten ist | Geräteereignisse|
 |sha1 |SHA-1-Hash der Datei | Geräteereignisse|
 |sha256 | SHA-256-Hash der Datei | Geräteereignisse|
-|MDATP-Geräte-ID | Endpunktgerät-MDATP-ID|
+|MDATP Geräte-ID | Endpunktgerät MDATP ID|
 |Dateigröße | Größe der Datei| SharePoint-, OneDrive- und Geräteereignisse|
 |Dateipfad | Der absolute Pfad des Elements, das mit der Übereinstimmung der DLP-Richtlinie zuhaftet | SharePoint-, OneDrive- und Geräteereignisse|
 |E-Mail-Empfänger |Wenn eine E-Mail das vertrauliche Element war, das mit der DLP-Richtlinie übereinstimmen sollte, enthält dieses Feld die Empfänger dieser E-Mail.| Exchange-Ereignisse|
 |E-Mail-Betreff |Betreff der E-Mail, die mit der DLP-Richtlinie übereinstimmen |Exchange-Ereignisse|
 |E-Mail-Anlagen | Namen der Anlagen in der E-Mail, die mit der DLP-Richtlinie übereinstimmen| Exchange-Ereignisse|
-|Websitebesitzer |Name des Websitebesitzers| #A0 und #A1|
-|Website-URL |voll mit der URL der SharePoint- oder #A0 , auf der die #A1 aufgetreten ist |#A0 und #A1|
-|Datei erstellt |Zeitpunkt der Erstellung der Datei, die mit der DLP-Richtlinie übereinstimmen |#A0 und #A1|
-|Zuletzt geänderte Datei | Das letzte Mal, dass die Datei, die der DLP-Richtlinie entsprechen, geändert wurde | #A0 und #A1|
-|Dateigröße | Größe der Datei, die mit der DLP-Richtlinie übereinstimmen |#A0 und #A1|
-|Dateibesitzer |Besitzer der Datei, die mit der DLP-Richtlinie übereinstimmen |#A0 und #A1|  
+|Websitebesitzer |Name des Websitebesitzers| SharePoint und OneDrive Ereignisse|
+|Website-URL |voll mit der URL der SharePoint oder OneDrive, an der die Übereinstimmung der DLP-Richtlinie aufgetreten ist |SharePoint und OneDrive Ereignisse|
+|Datei erstellt |Zeitpunkt der Erstellung der Datei, die mit der DLP-Richtlinie übereinstimmen |SharePoint und OneDrive Ereignisse|
+|Zuletzt geänderte Datei | Das letzte Mal, dass die Datei, die der DLP-Richtlinie entsprechen, geändert wurde | SharePoint und OneDrive Ereignisse|
+|Dateigröße | Größe der Datei, die mit der DLP-Richtlinie übereinstimmen |SharePoint und OneDrive Ereignisse|
+|Dateibesitzer |Besitzer der Datei, die mit der DLP-Richtlinie übereinstimmen |SharePoint und OneDrive Ereignisse|  
 
 ### <a name="policy-details"></a>Richtliniendetails
 
@@ -102,5 +102,5 @@ Hier sind einige der Ereignisse, die einer Warnung zugeordnet sind. Auf der Benu
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Erste Schritte mit dem Warnungsdashboard zur Verhinderung von Datenverlust](dlp-alerts-dashboard-get-started.md)
+- [Erste Schritte mit dem Dashboard zur Verhinderung von Datenverlust](dlp-alerts-dashboard-get-started.md)
 - [Erste Schritte mit DLP (Verhinderung von Datenverlust)](create-test-tune-dlp-policy.md#where-to-start-with-data-loss-prevention)

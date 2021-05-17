@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
-description: Befolgen Sie diese Prüfliste, während Sie das Microsoft 365-Konto eines Benutzers löschen.
+description: Befolgen Sie diese Prüfliste, während Sie das Konto eines Benutzers Microsoft 365 löschen.
 ms.openlocfilehash: de0c69c0a785787491d60f5fe6d17c0129b929db
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "50914762"
 
 [] Sie möchten einen Benutzer aus Ihrer Organisation löschen. Sie können einen Benutzer beispielsweise löschen, wenn er Ihre Organisation verlässt. Vor und nach dem Löschen des Benutzers sollten Sie einige Schritte ausführen. Diese kurze Checkliste soll Sie dabei unterstützen.
   
-## <a name="remove-the-microsoft-365-license-from-the-user"></a>Entfernen der Microsoft 365-Lizenz aus dem Benutzer
+## <a name="remove-the-microsoft-365-license-from-the-user"></a>Entfernen der Microsoft 365 Lizenz aus dem Benutzer
 
 Sie können eine Lizenz von einem Benutzer entfernen, indem Sie auf der Startseite oder auf der Seite **Aktive** Benutzer nach dem Benutzer suchen und diese auswählen. Aktivieren Sie **auf der** Registerkarte Lizenzen und Apps das Kontrollkästchen für die Lizenz, die Sie dem Benutzer entfernen möchten. [Den vollständigen Artikel lesen](../manage/remove-licenses-from-users.md)
   
@@ -50,7 +50,7 @@ Sie können den Benutzer löschen, indem Sie auf der Startseite oder auf der Sei
   
 ## <a name="what-to-do-with-the-unassigned-license"></a>Was geschieht mit der nicht zugewiesenen Lizenz?
 
-Wenn Sie einen neuen Mitarbeiter oder eine neue Person haben, die Ihrer Organisation beit eintritt, können Sie ihnen diese Lizenz zuweisen, damit sie Microsoft 365 verwenden können. Sie können den Benutzer auf der Startseite oder der Seite **Aktive Benutzer** suchen und dann auswählen. Aktivieren Sie **auf der Registerkarte Lizenzen** und Apps das Kontrollkästchen für die Lizenz, die Sie dem neuen Benutzer hinzufügen möchten. [Den vollständigen Artikel lesen](../manage/assign-licenses-to-users.md)
+Wenn Sie über einen neuen Mitarbeiter oder eine neue Person verfügen, die Ihrer Organisation bei eintritt, können Sie ihnen diese Lizenz zuweisen, damit sie die Microsoft 365. Sie können den Benutzer auf der Startseite oder der Seite **Aktive Benutzer** suchen und dann auswählen. Aktivieren Sie **auf der Registerkarte Lizenzen** und Apps das Kontrollkästchen für die Lizenz, die Sie dem neuen Benutzer hinzufügen möchten. [Den vollständigen Artikel lesen](../manage/assign-licenses-to-users.md)
   
 ## <a name="remove-license-so-you-dont-have-to-pay-for-it"></a>Entfernen der Lizenz, sodass keine weiteren Kosten entstehen
 

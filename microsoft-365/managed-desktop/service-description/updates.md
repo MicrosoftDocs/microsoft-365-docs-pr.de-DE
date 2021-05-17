@@ -69,7 +69,7 @@ Dieser Bereitstellungsprozess gilt sowohl für Feature- als auch für Qualitäts
     <tr><td>Treiber/Firmware</td><td colspan="4">Folgt dem Zeitplan für Qualitätsupdates</td></tr>
     <tr><td>Virenschutzdefinition</td><td colspan="4">Mit jedem Scan aktualisiert</td></tr>
     <tr><td>Microsoft 365 Apps for Enterprise</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/m365-apps#updates-to-microsoft-365-apps">Weitere Informationen</a></td></tr>
-    <tr><td>Aktuelle Version von Microsoft Edge</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">Weitere Informationen</a></td></tr>
+    <tr><td>Microsoft Edge</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/edge-browser-app#updates-to-microsoft-edge">Weitere Informationen</a></td></tr>
     <tr><td>Microsoft Teams</td><td colspan="4"><a href="/microsoft-365/managed-desktop/get-started/teams#updates">Weitere Informationen</a></td></tr>
 </table>
 

@@ -61,7 +61,7 @@ Standardmäßig werden in den Warnungstrends Warnungsinformationen aus dem 30-Ta
 ## <a name="alert-summary"></a>Warnungszusammenfassung
 Während die Warnungstrends trendende Warnungsinformationen zeigen, werden in der Warnungszusammenfassung Benachrichtigungsinformationen angezeigt, die auf den aktuellen Tag begrenzt sind.
 
- Mit der Warnungszusammenfassung können Sie einen Drilldown zu einer bestimmten Warnwarteschlange mit dem entsprechenden Filter erstellen. Wenn Sie beispielsweise auf der Karte Erkennungsquellen auf die EDR-Leiste klicken, erhalten Sie die Benachrichtigungswarteschlange mit Ergebnissen, die nur Warnungen anzeigen, die von EDR-Erkennungen generiert wurden. 
+ Mit der Warnungszusammenfassung können Sie einen Drilldown zu einer bestimmten Warnwarteschlange mit dem entsprechenden Filter erstellen. Wenn Sie beispielsweise auf die EDR auf der Karte Erkennungsquellen klicken, erhalten Sie die Benachrichtigungswarteschlange mit Ergebnissen, die nur Warnungen anzeigen, die EDR werden. 
 
 >[!NOTE]
 >Die im Zusammenfassungsabschnitt angezeigten Daten sind auf 180 Tage vor dem aktuellen Datum begrenzt. Wenn das heutige Datum beispielsweise der 5. November 2019 ist, werden die Daten im Zusammenfassungsabschnitt Zahlen vom 5. Mai 2019 bis zum 5. November 2019 widerspiegeln.<br>

@@ -34,7 +34,7 @@ In diesem Artikel wird das Auflisten, Erstellen, Ändern von Einstellungen und E
 
 Wenn für einen Befehlsblock in diesem Artikel variablen Werte angegeben werden müssen, verwenden Sie die folgenden Schritte.
 
-1. Kopieren Sie den Befehlsblock in die Zwischenablage, und fügen Sie ihn in Notepad oder in die integrierte PowerShell-Skriptumgebung (ISE) ein.
+1. Kopieren Sie den Befehlsblock in die Zwischenablage, und fügen Editor oder die integrierte PowerShell Script Environment (ISE) ein.
 2. Füllen Sie die Variablenwerte aus, und entfernen Sie die Zeichen "<" und ">".
 3. Führen Sie die Befehle im PowerShell-Fenster oder im PowerShell-ISE aus.
 
@@ -42,7 +42,7 @@ Weitere [Informationen finden Sie unter Maintain security group membership](main
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Verwenden der Azure Active Directory PowerShell für Graph-Module
 
-Stellen Sie [zunächst eine Verbindung mit Ihrem Microsoft 365-Mandanten herzustellen.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Stellen Sie [zunächst eine Verbindung zu Ihrem Microsoft 365 mandanten.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 ### <a name="list-your-groups"></a>Auflisten Ihrer Gruppen
 
@@ -126,7 +126,7 @@ Remove-AzureADGroupOwner -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -e
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Verwenden des Microsoft Azure Active Directory-Moduls für Windows PowerShell
 
-Stellen Sie [zunächst eine Verbindung mit Ihrem Microsoft 365-Mandanten herzustellen.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Stellen Sie [zunächst eine Verbindung zu Ihrem Microsoft 365 mandanten.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 ### <a name="list-your-groups"></a>Auflisten Ihrer Gruppen
 
@@ -176,4 +176,4 @@ Remove-MsolGroup -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $group
   
 [Verwalten von Microsoft 365 mit PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)

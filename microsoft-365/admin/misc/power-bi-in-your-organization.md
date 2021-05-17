@@ -18,7 +18,7 @@ search.appverid:
 - PWB150
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
-description: Erfahren Sie mehr über Power BI und darüber, wie Benutzer in Ihrer Organisation diesen Geschäftsanalysedienst verwenden können.
+description: Erfahren Sie Power BI, wie Benutzer in Ihrer Organisation diesen Geschäftsanalysedienst verwenden können.
 ms.openlocfilehash: c2f07c4e1e6da814eb31186ba0c132021479ad4a
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -36,11 +36,11 @@ Microsoft Power BI ermöglicht es den Benutzern, Daten zu visualisieren, Entdeck
   
 ## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Erfüllt Power BI nationale, regionale und branchenspezifische Complianceanforderungen?
 
-Weitere Informationen zur Power BI-Compliance finden Sie im [Microsoft Trust Center](https://go.microsoft.com/fwlink/?LinkId=785324).
+Weitere Informationen zur Power BI finden Sie im [Microsoft Trust Center](https://go.microsoft.com/fwlink/?LinkId=785324).
   
 ## <a name="how-do-users-sign-up-for-power-bi"></a>Wie können sich Benutzer für Power BI registrieren?
 
-Als Administrator können Sie sich für Power BI auf der [Power BI-Website](https://powerbi.microsoft.com/en-us/) registrieren. Sie können sich auch über die Seite "Einkaufsdienste" im Microsoft 365 Admin Center registrieren. Administratoren, die sich für Power BI registriert haben, können Benutzerabonnementlizenzen für Benutzer zuweisen, die Zugriff erhalten sollen.
+Als Administrator können Sie sich für Power BI auf der [Power BI-Website](https://powerbi.microsoft.com/en-us/) registrieren. Sie können sich auch über die Seite "Einkaufsdienste" im Microsoft 365 anmelden. Administratoren, die sich für Power BI registriert haben, können Benutzerabonnementlizenzen für Benutzer zuweisen, die Zugriff erhalten sollen.
   
 Darüber hinaus sind einzelne Benutzer in Ihrer Organisation möglicherweise in der Lage, sich über die [Power BI-Website](https://powerbi.microsoft.com/en-us/) für Power BI zu registrieren. Wenn sich ein Benutzer in Ihrer Organisation für Power BI registriert, wird diesem Benutzer automatisch eine Power BI-Lizenz zugewiesen.
   
@@ -48,30 +48,30 @@ Darüber hinaus sind einzelne Benutzer in Ihrer Organisation möglicherweise in 
 
 Es gibt drei Szenarien, die ggf. für die Benutzer in Ihrer Organisation in Betracht kommen:
   
-### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>Szenario 1: Ihre Organisation verfügt bereits über eine vorhandene Microsoft 365-Umgebung, und der Benutzer, der sich für Power BI einschreibt, verfügt bereits über ein Microsoft 365-Konto.
+### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>Szenario 1: Ihre Organisation verfügt bereits über eine Microsoft 365 umgebung, und der Benutzer, der sich für Power BI ein Microsoft 365 hat.
 
 In diesem Szenario aktiviert Microsoft einfach den Plan für das Konto, wenn der Benutzer bereits über ein Firmen- oder Schulkonto für den Mandanten (z. B. contoso.com) verfügt, aber noch nicht auf Power BI zugreifen kann. Der Benutzer wird automatisch benachrichtigt, wie er den Power BI-Dienst verwenden kann.
   
-### <a name="scenario-2-your-organization-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-a-microsoft-365-account"></a>Szenario 2: Ihre Organisation verfügt über eine vorhandene Microsoft 365-Umgebung, und der Benutzer, der sich für Power BI einschreibt, verfügt nicht über ein Microsoft 365-Konto.
+### <a name="scenario-2-your-organization-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-a-microsoft-365-account"></a>Szenario 2: Ihre Organisation verfügt über eine Microsoft 365 umgebung, und der Benutzer, der sich für Power BI anmelden, hat kein Microsoft 365 Konto.
 
-In diesem Szenario verfügt der Benutzer über eine E-Mail-Adresse in der Domäne Ihrer Organisation (z. B. contoso.com), verfügt aber noch nicht über ein Microsoft 365-Konto. In diesem Fall kann sich der Benutzer für Power BI registrieren und bekommt automatisch ein Konto. Dadurch kann der Benutzer auf den Power BI-Dienst zugreifen. Wenn beispielsweise eine Mitarbeiterin namens Nancy ihre E-Mail-Adresse für ihre Arbeit verwendet (z. B. Nancy@contoso.com), um sich zu registrieren, fügt Microsoft Nancy automatisch als Benutzer in der Contoso Microsoft 365-Umgebung hinzu und aktiviert Power BI für dieses Konto.
+In diesem Szenario verfügt der Benutzer über eine E-Mail-Adresse in der Domäne Ihrer Organisation (z. B. contoso.com), verfügt aber noch nicht über Microsoft 365 Konto. In diesem Fall kann sich der Benutzer für Power BI registrieren und wird automatisch ein Konto erhalten. Dadurch kann der Benutzer auf den Power BI zugreifen. Wenn beispielsweise eine Mitarbeiterin namens Nancy ihre Arbeits-E-Mail-Adresse (z. B. Nancy@contoso.com) verwendet, um sich zu registrieren, fügt Microsoft Nancy automatisch als Benutzer in der Contoso Microsoft 365-Umgebung hinzu und aktiviert Power BI für dieses Konto.
   
-### <a name="scenario-3-your-organization-does-not-have-a-microsoft-365-environment-connected-to-your-email-domain"></a>Szenario 3: In Ihrer Organisation ist keine Microsoft 365-Umgebung mit Ihrer E-Mail-Domäne verbunden.
+### <a name="scenario-3-your-organization-does-not-have-a-microsoft-365-environment-connected-to-your-email-domain"></a>Szenario 3: In Ihrer Organisation ist keine Microsoft 365 E-Mail-Domäne verbunden.
 
-Es gibt keine administrativen Aktionen, die Ihre Organisation nutzen muss, um Power BI zu nutzen.
+Es gibt keine verwaltungstechnischen Aktionen, die Ihre Organisation nutzen Power BI.
   
 > [!IMPORTANT]
-> Wenn Ihre Organisation über mehrere E-Mail-Domänen verfügt und Sie es vorziehen, dass sich alle E-Mail-Adresserweiterungen im gleichen Mandanten befinden, fügen Sie vor dem Erstellen Ihres primären Mandanten alle E-Mail-Adressdomänen zu diesem Mandanten hinzu, bevor Benutzer Ihren primären Mandanten erstellen. Es gibt keinen automatisierten Mechanismus zum Verschieben von Benutzern über Mandanten, nachdem sie erstellt wurden. Weitere Informationen zu diesem Prozess finden Sie unter [If I have multiple domains, can I control the tenant that users are added to?](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) later in this article and Add a domain to Office [365](../setup/add-domain.md) online.
+> Wenn Ihre Organisation über mehrere E-Mail-Domänen verfügt und Sie es vorziehen, dass sich alle E-Mail-Adresserweiterungen im gleichen Mandanten befinden, fügen Sie vor dem Erstellen Ihres primären Mandanten alle E-Mail-Adressdomänen zu diesem Mandanten hinzu, bevor Benutzer Ihren primären Mandanten erstellen. Es gibt keinen automatisierten Mechanismus zum Verschieben von Benutzern über Mandanten, nachdem sie erstellt wurden. Weitere Informationen zu diesem Prozess finden Sie unter [If I have multiple domains, can I control the tenant that users are added to?](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) later in this article and Add a domain to [Office 365](../setup/add-domain.md) online.
   
 ## <a name="how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today"></a>Wie ändert sich dadurch die Art und Weise, in der ich die Identitäten für Benutzer in meiner Organisation heute verwalte?
 
-Wenn Ihre Organisation bereits über eine vorhandene Microsoft 365-Umgebung verfügt und alle Benutzer in Ihrer Organisation über Microsoft 365-Konten verfügen, ändert sich die Identitätsverwaltung nicht.
+Wenn Ihre Organisation bereits über eine vorhandene Microsoft 365 verfügt und alle Benutzer in Ihrer Organisation über Microsoft 365 verfügen, ändert sich die Identitätsverwaltung nicht.
   
 Wenn Ihre Organisation bereits über eine vorhandene Microsoft 365-Umgebung verfügt, aber nicht alle Benutzer in Ihrer Organisation über Microsoft 365-Konten verfügen, erstellen wir einen Benutzer im Mandanten und weisen Lizenzen basierend auf der E-Mail-Adresse des Benutzers für Die Arbeit oder Schule zu. Dies bedeutet, dass die Anzahl der von Ihnen verwalteten Benutzer zu einem bestimmten Zeitpunkt größer wird, wenn sich Benutzer in Ihrer Organisation für den Dienst registrieren.
   
 Wenn Sie Ihr Verzeichnis lokal verwalten und Active Directory Federation Services (AD FS) verwenden, fügt Microsoft Ihrem Mandanten keine Benutzer hinzu. Dann erhalten Benutzer, die Ihrem Mandanten beizutreten versuchen, eine Nachricht, dass sie sich mit dem Administrator Ihrer Organisation in Verbindung setzen sollen.
   
-Wenn Ihre Organisation über keine Microsoft 365-Umgebung verfügt, die mit Ihrer E-Mail-Domäne verbunden ist, gibt es keine Änderung bei der Verwaltung der Identität. Die Benutzer werden einem neuen Nur-Cloud-Benutzerverzeichnis hinzugefügt, und Sie können entscheiden, ob Sie sie als Mandantenadministrator verwalten möchten.
+Wenn Ihre Organisation nicht über eine Microsoft 365 mit Ihrer E-Mail-Domäne verbunden ist, gibt es keine Änderung bei der Verwaltung der Identität. Die Benutzer werden einem neuen Nur-Cloud-Benutzerverzeichnis hinzugefügt, und Sie können entscheiden, ob Sie sie als Mandantenadministrator verwalten möchten.
   
 ## <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Was ist der Prozess zum Verwalten eines Mandanten, der von Microsoft für meine Benutzer erstellt wurde?
 
@@ -99,7 +99,7 @@ Wenn ein Mandant von Microsoft erstellt wurde, können Sie diesen mit den folgen
 
 ::: moniker-end
 
-4. Klicken Sie oben links auf das App-Startsymbol, und wählen Sie **Admin** aus.
+4. Klicken Sie oben links auf das App-Startfeldsymbol, und wählen Sie **Administrator** aus.
 
     ![App-Startfeld mit hervorgehobener Admin-App](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
@@ -117,20 +117,20 @@ Wenn sich alle Benutzer unabhängig von ihren E-Mail-Adresserweiterungen in dems
 - Erstellen Sie im Voraus einen Zielmandanten, oder verwenden Sie einen vorhandenen Mandanten, und fügen Sie alle vorhandenen Domänen und Unterdomänen hinzu, die in diesem Mandanten konsolidiert werden sollen. Dann treten alle Benutzer, deren E-Mail-Adressen auf diese Domänen und Unterdomänen enden, bei ihrer Registrierung dem Zielmandanten automatisch bei.
 
 > [!IMPORTANT]
-> Es gibt keinen unterstützten automatisierten Mechanismus zum mandantenübergreifenden Verschieben von Benutzern nach deren Erstellung. Weitere Informationen zum Hinzufügen von Domänen zu einem einzelnen Microsoft 365-Mandanten finden Sie unter Hinzufügen einer Domäne [zu Office 365](../setup/add-domain.md).
+> Es gibt keinen unterstützten automatisierten Mechanismus zum mandantenübergreifenden Verschieben von Benutzern nach deren Erstellung. Informationen zum Hinzufügen von Domänen zu einem einzelnen mandanten Microsoft 365 finden Sie unter [Add a domain to Office 365](../setup/add-domain.md).
 
 > [!IMPORTANT]
-> Weitere Informationen und Anleitungen zum Verwalten von Mandanten finden Sie unter [What is Power BI administration?](/power-bi/service-admin-administering-power-bi-in-your-organization).
+> Weitere Informationen und Anleitungen zum Verwalten von Mandanten finden Sie unter [Was ist Power BI Verwaltung?](/power-bi/service-admin-administering-power-bi-in-your-organization).
   
 ## <a name="how-can-i-prevent-users-from-joining-my-existing-tenant"></a>Wie kann ich verhindern, dass Benutzer meinem vorhandenen Mandanten beitreten?
 
-Es gibt Schritte, die Sie als Administrator ausführen können, um zu verhindern, dass Benutzer Ihrem vorhandenen Mandanten beitreten. Wenn Sie benutzer am Beitritt zum Mandanten blockieren, werden die Anmeldeversuche der Benutzer fehlschlagen, und sie werden an den Administrator ihrer Organisation geleitet. Sie müssen diesen Vorgang nicht wiederholen, wenn Sie die automatische Lizenzverteilung bereits deaktiviert haben (z. B. Office 365 Education for Students, Faculty, and Staff).
+Es gibt Schritte, die Sie als Administrator ausführen können, um zu verhindern, dass Benutzer Ihrem vorhandenen Mandanten beitreten. Wenn Sie benutzer am Beitritt zum Mandanten blockieren, werden die Anmeldeversuche der Benutzer fehlschlagen, und sie werden an den Administrator ihrer Organisation geleitet. Sie müssen diesen Vorgang nicht wiederholen, wenn Sie die automatische Lizenzverteilung bereits deaktiviert haben (z. B. Office 365 Education für Studenten, Lehrkräfte und Mitarbeiter).
   
 Für diese Schritte muss Windows PowerShell verwendet werden. Eine Einführung in Windows PowerShell finden Sie im Handbuch [Erste Schritte mit PowerShell](/powershell/scripting/overview).
   
-Zum Ausführen der folgenden Schritte müssen Sie die neueste 64-Bit-Version des [Azure Active Directory V2 PowerShell-Moduls installieren.](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)
+Um die folgenden Schritte ausführen zu können, müssen Sie die neueste 64-Bit-Version des Azure Active Directory [V2 PowerShell Module installieren.](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)
   
-Nachdem Sie den Link ausgewählt haben, wählen **Sie Ausführen aus,** um das Installationspaket ausführen.
+Nach dem Auswählen des Links wählen Sie **Ausführen** aus, um das Installationspaket auszuführen.
   
 **Deaktivieren des automatischen Mandantenbeitritts**: Mit diesem Windows PowerShell-Befehl können Sie verhindern, dass neue Benutzer einem verwalteten Mandanten beitreten:
   
@@ -139,7 +139,7 @@ So deaktivieren Sie den automatischen Mandantenbeitritt für neue Benutzer:  `Se
 So aktivieren Sie den automatischen Mandantenbeitritt für neue Benutzer:  `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
   
 > [!NOTE]
-> Diese Sperre hindert neue Benutzer in Ihrer Organisation daran, sich für Power BI zu registrieren. Benutzer, die sich vor dem Deaktivieren neuer Registrierungen für Ihre Organisation bei Power BI registriert haben, behalten ihre Lizenzen. Anweisungen zum Entfernen des Zugriffs auf Power BI für Benutzer, die sich bereits angemeldet [haben,](#how-do-i-remove-power-bi-for-users-that-already-signed-up) finden Sie unter How do I remove Power BI for users that had previously signed up for the service.
+> Diese Sperre hindert neue Benutzer in Ihrer Organisation daran, sich für Power BI zu registrieren. Benutzer, die sich vor dem Deaktivieren neuer Registrierungen für Ihre Organisation bei Power BI registriert haben, behalten ihre Lizenzen. Anweisungen [dazu,](#how-do-i-remove-power-bi-for-users-that-already-signed-up) wie Sie den Zugriff auf Power BI für Benutzer, die sich zuvor für den Dienst angemeldet haben, entfernen können, finden Sie unter How do I remove Power BI for users that already signed up?
   
 ## <a name="how-can-i-allow-users-to-join-my-existing-tenant"></a>Wie kann ich Benutzern den Beitritt zu meinem vorhandenen Mandanten ermöglichen?
 
@@ -151,7 +151,7 @@ Verwenden Sie das folgende PowerShell-Skript:  `Get-MsolCompanyInformation | fl 
   
 ## <a name="how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi"></a>Wie kann ich verhindern, dass vorhandene Benutzer mit der Nutzung von Power BI beginnen?
 
-**Deaktivieren der automatischen Lizenzverteilung:** Verwenden Sie Windows PowerShell Skript, um automatische Lizenzverteilungen für vorhandene Benutzer zu deaktivieren. Sie müssen diesen Vorgang nicht wiederholen, wenn Sie die automatische Lizenzverteilung bereits deaktiviert haben (z. B. Office 365 Education for Students, Faculty, and Staff).
+**Deaktivieren der automatischen Lizenzverteilung:** Verwenden Sie Windows PowerShell Skript, um automatische Lizenzverteilungen für vorhandene Benutzer zu deaktivieren. Sie müssen diesen Vorgang nicht wiederholen, wenn Sie die automatische Lizenzverteilung bereits deaktiviert haben (z. B. Office 365 Education für Studenten, Lehrkräfte und Mitarbeiter).
   
 So deaktivieren Sie die automatische Lizenzverteilung für vorhandene Benutzer:  `Set-MsolCompanySettings -AllowAdHocSubscriptions $false`
   
@@ -166,7 +166,7 @@ Wenn Sie es Ihren vorhandenen Benutzern ermöglichen möchten, sich für Power B
   
 ## <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>Wie entferne ich Power BI für Benutzer, die sich bereits registriert haben?
 
-Wenn sich ein Benutzer für Power BI angemeldet hat, aber keinen Zugriff mehr auf Power BI haben soll, können Sie die Power BI-Lizenz für diesen Benutzer entfernen.
+Wenn sich ein Benutzer für Power BI angemeldet hat, aber keinen Zugriff mehr auf Power BI haben soll, können Sie die Power BI für diesen Benutzer entfernen.
 
 ::: moniker range="o365-worldwide"
   
@@ -174,7 +174,7 @@ Wenn sich ein Benutzer für Power BI angemeldet hat, aber keinen Zugriff mehr au
 
 2. Suchen Sie den Benutzer, für den Sie die Lizenz entfernen möchten, und wählen Sie dann ihren Namen aus.
 
-3. Aktivieren Sie **auf der Registerkarte Lizenzen** und Apps das **Kontrollkästchen Microsoft Power BI.**
+3. Aktivieren Sie **auf der Registerkarte** Lizenzen und Apps das Kontrollkästchen Microsoft **Power BI.**
 
 4. Wählen Sie **Änderungen speichern** aus.
 
@@ -188,9 +188,9 @@ Wenn sich ein Benutzer für Power BI angemeldet hat, aber keinen Zugriff mehr au
 
 3. Wählen Sie **neben Produktlizenzen** die Option **Bearbeiten aus.**
 
-4. Deaktivieren Sie die **Microsoft Power BI-Option.**
+4. Schalten Sie die **Option Microsoft Power BI** aus.
 
-5. Wählen Sie **Speichern** aus.
+5. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -202,9 +202,9 @@ Wenn sich ein Benutzer für Power BI angemeldet hat, aber keinen Zugriff mehr au
 
 3. Wählen Sie **neben Produktlizenzen** die Option **Bearbeiten aus.**
 
-4. Deaktivieren Sie die **Microsoft Power BI-Option.**
+4. Schalten Sie die **Option Microsoft Power BI** aus.
 
-5. Wählen Sie **Speichern** aus.
+5. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -212,17 +212,17 @@ Wenn sich ein Benutzer für Power BI angemeldet hat, aber keinen Zugriff mehr au
 
 Benutzern, die Ihrem Mandanten im Rahmen dieses Programms beigetreten sind, wird eine eindeutige Lizenz zugewiesen, nach der Sie innerhalb Ihres aktiven Benutzerbereichs im Verwaltungsdashboard filtern können.
   
-Führen Sie zum Erstellen dieser neuen Ansicht im Admin Center die Schritte unter [Erstellen einer benutzerdefinierten Benutzeransicht aus.](../add-users/create-edit-or-delete-a-custom-user-view.md#create-a-custom-user-view) Wählen **Sie unter Zugewiesene Produktlizenz** **die Option Microsoft Power BI aus.** Nachdem die neue Ansicht erstellt wurde, können Sie alle Benutzer in Ihrem Mandanten anzeigen, die sich für dieses Programm registriert haben.
+Führen Sie zum Erstellen dieser neuen Ansicht im Admin Center die Schritte unter [Erstellen einer benutzerdefinierten Benutzeransicht aus.](../add-users/create-edit-or-delete-a-custom-user-view.md#create-a-custom-user-view) Wählen **Sie unter Zugewiesene Produktlizenz** **die Option Microsoft Power BI** aus. Nachdem die neue Ansicht erstellt wurde, können Sie alle Benutzer in Ihrem Mandanten anzeigen, die sich für dieses Programm registriert haben.
   
 ## <a name="are-there-any-additional-things-i-should-be-prepared-for"></a>Gibt es weitere Punkte, auf die ich vorbereitet sein sollte?
 
-Möglicherweise wird die Anzahl der Anforderungen zum Zurücksetzen des Kennworts größer. Informationen zu diesem Vorgang finden Sie unter [Zurücksetzen eines Benutzerkennworts](../add-users/reset-passwords.md).
+Möglicherweise erhöht sich die Anzahl der Anforderungen zum Zurücksetzen des Kennworts. Informationen zu diesem Vorgang finden Sie unter [Zurücksetzen eines Benutzerkennworts](../add-users/reset-passwords.md).
   
 Sie können einen Benutzer über den Standardprozess im Admin Center aus Ihrem Mandanten entfernen. Wenn der Benutzer jedoch weiterhin über eine aktive E-Mail-Adresse aus Ihrer Organisation verfügt, kann er erneut beitreten, es sei denn, Sie sperren den Beitritt für alle Benutzer.
   
-## <a name="why-did-1-million-licenses-for-microsoft-power-bi-show-up-in-my-tenant"></a>Warum sind 1 Million Lizenzen für Microsoft Power BI in meinem Mandanten angezeigt worden?
+## <a name="why-did-1-million-licenses-for-microsoft-power-bi-show-up-in-my-tenant"></a>Warum wurden 1 Million Lizenzen für Microsoft Power BI in meinem Mandanten angezeigt?
 
-Als qualifizierte Organisation sind Benutzer in Ihrer Organisation berechtigt, den Microsoft Power BI-Dienst zu verwenden, und diese Lizenzen stellen die verfügbare Kapazität für neue Power BI-Benutzer in Ihrem Mandanten dar. Für diese Lizenzen werden keine Gebühren berechnet. Wenn Sie es Benutzern ermöglichen möchten, sich selbst für Power BI zu registrieren, wird ihnen eine dieser verfügbaren kostenlosen Lizenzen zugewiesen, wenn sie den Anmeldevorgang abschließen. Sie können diese Lizenzen auch über das Admin Center selbst Benutzern zuweisen.
+Als qualifizierte Organisation sind Benutzer in Ihrer Organisation berechtigt, den Microsoft Power BI-Dienst zu verwenden, und diese Lizenzen stellen die verfügbare Kapazität für neue benutzer Power BI in Ihrem Mandanten dar. Für diese Lizenzen werden keine Gebühren berechnet. Wenn Sie es Benutzern ermöglichen möchten, sich für Power BI sich selbst zu registrieren, wird ihnen eine dieser verfügbaren kostenlosen Lizenzen zugewiesen, wenn sie den Anmeldevorgang abschließen. Sie können diese Lizenzen auch über das Admin Center selbst Benutzern zuweisen.
   
 ## <a name="is-this-free-will-i-be-charged-for-these-licenses"></a>Ist das kostenlos? Oder werden mir diese Lizenzen in Rechnung gestellt?
 

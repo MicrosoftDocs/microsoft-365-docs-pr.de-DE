@@ -1,6 +1,6 @@
 ---
 title: Richtlinientreue
-description: In diesem Artikel werden die für Microsoft Managed Desktop relevanten Compliancestandards aufgeführt.
+description: In diesem Artikel werden die compliance-Standards aufgeführt, die für die Microsoft Managed Desktop.
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -42,10 +42,10 @@ Microsoft Managed Desktop hat die folgenden Zertifizierungen erreicht:
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>Auditorberichte und Compliancezertifikate
 
-Relevante Informationen, einschließlich Steuerungs- und technische Anforderungen, finden Sie im [Service Trust Portal (STP),](https://servicetrust.microsoft.com/)dem zentralen Repository für solche Informationen zu Microsoft Cloud Service-Angeboten. Sie können Auditorberichte, Compliancezertifikate und vieles mehr aus dem Abschnitt [Audit Reports](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) des STP herunterladen.
+Relevante Informationen, einschließlich Steuerungs- und technischen Anforderungen, finden Sie im [Service Trust Portal (STP),](https://servicetrust.microsoft.com/)dem zentralen Repository für solche Informationen zu Microsoft Cloud Service Angeboten. Sie können Auditorberichte, Compliancezertifikate und vieles mehr aus dem Abschnitt [Audit Reports](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuide) des STP herunterladen.
 
 > [!NOTE]
-> Da Microsoft Managed Desktop in Azure ausgeführt wird, haben relevante Dokumente in der Regel Dateinamen wie "Microsoft Azure, Dynamics 365 und andere Onlinedienste". In diesen Dokumenten finden Sie in der Regel Microsoft Managed Desktop unter der Kategorie "Microsoft Online Services" oder "Monitoring + Management".
+> Da Microsoft Managed Desktop in Azure ausgeführt werden, haben relevante Dokumente in der Regel Dateinamen wie "Microsoft Azure, Dynamics 365 und andere Onlinedienste". In diesen Dokumenten finden Sie in der Regel Microsoft Managed Desktop unter der Kategorie "Microsoft Online Services" oder "Monitoring + Management".
 
 ## <a name="shared-responsibility"></a>Gemeinsame Verantwortung
 

@@ -45,11 +45,11 @@ Die Überwachung der Netzwerkverbindung hinter einem Weiterleitungsproxy ist auf
 
 Der Netzwerkschutz kann mithilfe der folgenden Modi gesteuert werden:
 
-- **Blockieren** <br> Benutzer oder Apps werden an der Verbindung mit gefährlichen Domänen blockiert. Sie können diese Aktivität im Microsoft Defender Security Center sehen.
-- **Audit** <br> Benutzer oder Apps werden nicht an der Verbindung mit gefährlichen Domänen blockiert. Diese Aktivität wird jedoch weiterhin im Microsoft Defender Security Center zu sehen sein.
+- **Blockieren** <br> Benutzer oder Apps werden an der Verbindung mit gefährlichen Domänen blockiert. Sie können diese Aktivität in einem Microsoft Defender Security Center.
+- **Audit** <br> Benutzer oder Apps werden nicht an der Verbindung mit gefährlichen Domänen blockiert. Diese Aktivität wird jedoch weiterhin in der Microsoft Defender Security Center.
 
 
-Wenn Sie den Netzwerkschutz deaktivieren, werden Benutzer oder Apps nicht an der Verbindung mit gefährlichen Domänen blockiert. Es werden keine Netzwerkaktivitäten im Microsoft Defender Security Center zu sehen sein.
+Wenn Sie den Netzwerkschutz deaktivieren, werden Benutzer oder Apps nicht an der Verbindung mit gefährlichen Domänen blockiert. Es werden keine Netzwerkaktivitäten in der Microsoft Defender Security Center.
 
 Wenn Sie dies nicht konfigurieren, wird die Netzwerksperrung standardmäßig deaktiviert.
 

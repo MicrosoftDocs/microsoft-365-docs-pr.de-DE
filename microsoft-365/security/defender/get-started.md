@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte mit Microsoft 365 Defender
 ms.reviewer: ''
-description: Erfahren Sie, welche Schritte Sie für die ersten Schritte mit Microsoft 365 Defender ausführen müssen
+description: Erfahren Sie, welche Schritte Sie für die ersten Schritte mit defender Microsoft 365 müssen
 keywords: erste Schritte, microsoft 365 defender, aktivieren, onboard, bereitstellen
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,19 +35,19 @@ ms.locfileid: "51759822"
 
 Microsoft 365 Defender ist eine einheitliche Erfahrung, in der Sie die Sicherheit in Ihrem Unternehmen überwachen und verwalten können. Mit den integrierten Warnungen über Identitäten, Endpunkte, Daten, Apps, E-Mails und Zusammenarbeitstools hinweg – die Untersuchung und Reaktion auf Bedrohungen geschieht jetzt an einem zentralen Ort. 
 
-Ganz gleich, ob Sie neu in der Microsoft-Suite von Sicherheitsprodukten sind oder mit einzelnen Workflows vertraut sind, dieses Thema führt Sie in die einfachen Schritte, die Sie für die ersten Schritte mit Microsoft 365 Defender ausführen müssen.
+Ganz gleich, ob Sie mit der Microsoft-Suite von Sicherheitsprodukten vertraut sind oder mit einzelnen Workflows vertraut sind, dieses Thema führt Sie in die einfachen Schritte, die Sie für die ersten Schritte mit Microsoft 365 müssen.
 
 ![Abbildung der ersten Schritte mit Microsoft 365 Defender-Schritten](../../media/mtp/get-started-m365d.png)
 
 Im Allgemeinen müssen Sie die folgenden Schritte ausführen, um zu beginnen:
 
-- **[Schritt 1: Aktivieren von Microsoft 365 Defender](m365d-enable.md)** <br>
+- **[Schritt 1: Aktivieren Microsoft 365 Defender](m365d-enable.md)** <br>
     Zunächst müssen Sie den Dienst aktivieren, indem Sie sicherstellen, dass Sie über die richtige Lizenz verfügen und Rollen zugewiesen sind, damit Sie auf das Portal zugreifen können. 
 
     Anschließend werden einige einfache Einstellungen durchgehen, und Sie können dann bestätigen, dass der Dienst in Betrieb ist.
 
 - **[Schritt 2: Bereitstellen unterstützter Dienste](deploy-supported-services.md)** <br>
-    Nachdem Sie die ersten Schritte abgeschlossen haben, müssen Sie die unterstützten Dienste bereitstellen, die mit Microsoft 365 Defender bereitgestellt werden. Die Bereitstellung von Diensten erhöht effektiv Ihre Sichtbarkeit in den Signalen von Ressourcen in Ihrem Netzwerk.
+    Nachdem Sie die ersten Schritte abgeschlossen haben, müssen Sie die unterstützten Dienste bereitstellen, die mit defender Microsoft 365 werden. Die Bereitstellung von Diensten erhöht effektiv Ihre Sichtbarkeit in den Signalen von Ressourcen in Ihrem Netzwerk.
 
 
 ## <a name="key-capabilities"></a>Wichtige Funktionen

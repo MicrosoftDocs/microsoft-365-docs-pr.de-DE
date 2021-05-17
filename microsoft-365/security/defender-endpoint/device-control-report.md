@@ -39,7 +39,7 @@ Mit dem Gerätesteuerungsbericht können Sie Ereignisse anzeigen, die sich auf d
 Zu den Überwachungsereignissen gehören:
 
 - **USB-Laufwerkhalterung und Unmount:** Überwachung von Ereignissen, die generiert werden, wenn ein USB-Laufwerk bereitgestellt oder nicht bereitgestellt wird.
-- **PnP:** Plug-and-Play-Überwachungsereignisse werden generiert, wenn wechselbarer Speicher, ein Drucker oder Bluetooth angeschlossen ist.
+- **PnP:** Plug -and-Play-Überwachungsereignisse werden generiert, wenn wechselbarer Speicher, ein Drucker oder Bluetooth angeschlossen ist.
 
 ## <a name="monitor-device-control-security"></a>Überwachen der Gerätesteuerungssicherheit
 
@@ -61,7 +61,7 @@ Wenn Sie ein Ereignis auswählen, wird ein Flyout mit weiteren Informationen ang
 
 - **Allgemeine Details:** Datum, Aktionsmodus und die Richtlinie dieses Ereignisses.
 - **Medieninformationen:** Medieninformationen umfassen Medienname, Klassenname, Klassen-GUID, Geräte-ID, Hersteller-ID, Volume, Seriennummer und Bustyp.
-- **Standortdetails:** Gerätename und MDATP-Geräte-ID.
+- **Standortdetails:** Gerätename und MDATP Geräte-ID.
 
 > [!div class="mx-imgBorder"]
 > ![FilterOnDeviceControlReport](images/devicecontrolreportfilter.png)

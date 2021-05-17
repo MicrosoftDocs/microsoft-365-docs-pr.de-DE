@@ -1,6 +1,6 @@
 ---
 title: Bericht über Geräteintehität und -kompatibilität in Microsoft Defender for Endpoint
-description: Nachverfolgen von Erkennungen des Gerätestatus, Antivirusstatus, Betriebssystemplattform und Windows 10-Versionen mithilfe des Geräteinteitäts- und Complianceberichts
+description: Nachverfolgen von Gerätestatuserkennungen, Antivirusstatus, Betriebssystemplattform und Windows 10 geräteintehitäts- und compliancebericht
 keywords: Integritätsstatus, Antivirus, Betriebssystemplattform, Windows 10-Version, Version, Integrität, Compliance, Status
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,7 +35,7 @@ ms.locfileid: "51860291"
 
 > Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Der Gerätestatusbericht enthält informationen auf hoher Ebene zu den Geräten in Ihrer Organisation. Der Bericht enthält Trendinformationen, die den Sensorstatus, den Antivirusstatus, Betriebssystemplattformen und Windows 10-Versionen anzeigen.
+Der Gerätestatusbericht enthält informationen auf hoher Ebene zu den Geräten in Ihrer Organisation. Der Bericht enthält Trendinformationen, die den Sensorstatus, den Antivirusstatus, Betriebssystemplattformen und Windows 10 anzeigen.
 
 Das Dashboard ist in zwei Abschnitte unterteilt: ![ Abbildung des Geräteberichts](images/device-reports.png)
  
@@ -72,11 +72,11 @@ Der Bericht besteht aus Karten, die die folgenden Geräteattribute anzeigen:
  
 - **Integritätsstatus:** Zeigt Informationen zum Sensorstatus auf Geräten an, die eine aggregierte Ansicht von aktiven Geräten, beeinträchtigter Kommunikation, inaktiver Oder ohne Sensordaten anzeigen.
   
-- **Antivirusstatus für aktive Windows 10-Geräte:** zeigt die Anzahl der Geräte und den Status von Microsoft Defender Antivirus an.
+- **Antivirusstatus für aktive Windows 10:** zeigt die Anzahl der Geräte und den Status der Microsoft Defender Antivirus.
     
 - **Betriebssystemplattformen**: zeigt die Verteilung von Betriebssystemplattformen an, die in Ihrer Organisation vorhanden sind. 
  
-- **Windows 10-Versionen**: zeigt die Verteilung von Windows 10-Geräten und deren Versionen in Ihrer Organisation an.
+- **Windows 10 :** zeigt die Verteilung Windows 10 Geräte und deren Versionen in Ihrer Organisation an.
  
  
  
@@ -89,10 +89,10 @@ Sie können mehrere Filter auswählen, die aus den Geräteattributen angewendet 
 >[!NOTE]
 >Diese Filter gelten **für alle** Karten im Bericht.
  
-So zeigen Sie z. B. Daten zu Windows 10-Geräten mit active sensor health state an:
+So zeigen Sie z. B. Daten Windows 10 geräten mit dem Status Active sensor an:
  
 1. Unter **Filters > Sensor health state > Active**.
-2. Wählen Sie dann **Betriebssystemplattformen > Windows 10 aus.**
+2. Wählen Sie dann **Betriebssystemplattformen > Windows 10** aus.
 3. Wählen Sie **Anwenden** aus.
 
 

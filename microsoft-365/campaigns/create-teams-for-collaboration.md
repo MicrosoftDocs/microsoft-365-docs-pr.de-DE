@@ -32,7 +32,7 @@ ms.locfileid: "50912222"
 ---
 # <a name="create-teams-for-collaboration-in-microsoft-teams"></a>Erstellen von Teams für die Zusammenarbeit in Microsoft Teams
 
-Microsoft Teams ist eine App für die Zusammenarbeit, mit der Ihre Mitarbeiter auf jedem Gerät organisiert bleiben und Unterhaltungen führen können. Sie können Microsoft Teams verwenden, um Sofortunterhaltungen mit Mitarbeitern oder Gästen außerhalb Ihrer Organisation zu führen. Sie können auch telefonieren, Besprechungen hosten und Dateien freigeben.
+Microsoft Teams ist eine App für die Zusammenarbeit, mit der Ihre Mitarbeiter auf jedem Gerät organisiert bleiben und Unterhaltungen führen können. Sie können die Microsoft Teams verwenden, um sofort Mitgespräche mit Mitarbeitern oder Gästen außerhalb Ihrer Organisation zu führen. Sie können auch telefonieren, Besprechungen hosten und Dateien freigeben.
 
 ## <a name="best-practices"></a>Bewährte Methoden
 
@@ -47,7 +47,7 @@ Beispielsweise könnten eine Geschäfts-, Rechts- oder Gesundheitspraxis die fol
 1. **Einzelne Teams:** Richten Sie Teams für kleinere Gruppen ein, um über ihre täglichen Arbeit zusammenzuarbeiten.
 1. **Ein externes Kommunikationsteam oder -teams:** Koordinieren Sie sich mit Ihren Lieferanten, Partnern oder Clients, ohne dass diese vertraulich sind. Richten Sie unterschiedliche Kanäle für bestimmte Gruppen ein.
 
-![Diagramm eines Microsoft Teams-Fensters mit drei separaten Teams, um eine sichere Kommunikation und Zusammenarbeit innerhalb eines Unternehmens zu ermöglichen](../media/m365-democracy-teams-business-collab.png)
+![Diagramm eines Microsoft Teams mit drei separaten Teams, um eine sichere Kommunikation und Zusammenarbeit innerhalb eines Unternehmens zu ermöglichen](../media/m365-democracy-teams-business-collab.png)
 
 Und Kampagnen könnten die folgenden Teams erstellen, um sicher zu kommunizieren und zusammenzuarbeiten:
 
@@ -55,21 +55,21 @@ Und Kampagnen könnten die folgenden Teams erstellen, um sicher zu kommunizieren
 2. **Ein allgemeines Kampagnenteam:** Dies ist für alle für die täglichen Kommunikation und Arbeit zu verwenden. Einzelpersonen, Gruppen oder Komitees können Kanäle in diesem Team einrichten, um ihre Arbeit zu tun. Die Ereignisplanungs-Personen können beispielsweise einen Kanal zum Chat einrichten und die Logistik für Kampagnenereignisse koordinieren.
 3. **Ein Partnerteam:** Koordinieren Sie sich mit Ihren Lieferanten, Partnern oder Freiwilligen, ohne dass sie in etwas Vertrauliches eingewilligt werden.
 
-![Diagramm eines Microsoft Teams-Fensters mit drei separaten Teams, um eine sichere Kommunikation und Zusammenarbeit innerhalb einer Kampagne zu ermöglichen](../media/m365-democracy-teams-collab.png)
+![Diagramm eines Microsoft Teams mit drei separaten Teams, um eine sichere Kommunikation und Zusammenarbeit innerhalb einer Kampagne zu ermöglichen](../media/m365-democracy-teams-collab.png)
 
 Wenn Sie ein Team erstellen, wird hier das, was sonst erstellt wird:
 
-- Eine neue [Microsoft 365-Gruppe](/MicrosoftTeams/office-365-groups)
-- Eine [SharePoint Online-Website](/MicrosoftTeams/sharepoint-onedrive-interact) und Dokumentbibliothek zum Speichern von Teamdateien
-- Ein [freigegebenes Exchange Online-Postfach](/MicrosoftTeams/exchange-teams-interact) und -Kalender
+- Eine neue [Microsoft 365 Gruppe](/MicrosoftTeams/office-365-groups)
+- Eine [SharePoint Onlinewebsite](/MicrosoftTeams/sharepoint-onedrive-interact) und Dokumentbibliothek zum Speichern von Teamdateien
+- Ein [Exchange Online](/MicrosoftTeams/exchange-teams-interact) freigegebenes Postfach und Kalender
 - Ein OneNote-Notizbuch
-- Verbindungen zu anderen Office 365-Apps wie Planner und Power BI
+- Verbindungen zu anderen Office 365 Apps wie Planner und Power BI
 
 In Microsoft Teams finden Sie:
 
 1. **Teams:** Suchen Sie Nach Kanälen, zu denen Sie gehören möchten, oder erstellen Sie eigene Kanäle. Innerhalb von Kanälen können Sie Besprechungen vor Ort halten, Unterhaltungen führen und Dateien freigeben.
-2. **Besprechungen:** Sehen Sie sich alles an, was Sie für den Tag oder die Woche eingerichtet haben. Oder planen Sie eine Besprechung. Dieser Kalender wird mit Ihrem Outlook-Kalender synchronisiert.
-3. **Anrufe:** Wenn Ihre Organisation eingerichtet ist, können Sie in einigen Fällen jeden von Microsoft Teams anrufen, auch wenn microsoft Teams nicht verwendet wird.
+2. **Besprechungen:** Sehen Sie sich alles an, was Sie für den Tag oder die Woche eingerichtet haben. Oder planen Sie eine Besprechung. Dieser Kalender wird mit Ihrem Kalender Outlook synchronisiert.
+3. **Anrufe:** In einigen Fällen können Sie, wenn Ihre Organisation sie eingerichtet hat, jeden von Microsoft Teams anrufen, auch wenn sie keine Microsoft Teams.
 4. **Aktivität:** Holen Sie all Ihre ungelesenen Nachrichten, @mentions, Antworten und vieles mehr nach.
 
 Verwenden Sie das Befehlsfeld oben, um nach bestimmten Elementen oder Personen zu suchen, schnelle Aktionen zu ergreifen und Apps zu starten.
@@ -88,7 +88,7 @@ Erstellen Sie ein Team, das Sie mit Gästen außerhalb Ihrer Organisation teilen
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-Weitere Informationen zu Microsoft Teams finden Sie in [der technischen Dokumentation zu Microsoft Teams](/microsoftteams/microsoft-teams)
+Weitere Informationen zu Microsoft Teams finden Microsoft Teams [technische Dokumentation](/microsoftteams/microsoft-teams)
 
 ## <a name="admin-settings"></a>Administratoreinstellungen
 

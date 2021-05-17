@@ -26,7 +26,7 @@ ms.locfileid: "50905644"
 ---
 # <a name="activate-rights-management-in-the-admin-center"></a>Aktivieren der Rechteverwaltung im Admin Center
 
-Sie müssen den Rechteverwaltungsdienst (Rights Management Service, RMS) aktivieren, bevor Sie die Information Rights Management (IRM)-Features von Microsoft 365-Anwendungen und -Diensten verwenden können. Nachdem Sie RMS aktiviert haben, kann Ihre Organisation mit dem Schutz wichtiger Dokumente und E-Mails mithilfe von Azure RMS beginnen. Diese Informationsschutzlösung kann alle Dateitypen schützen und kann in Clientanwendungen wie Excel, Microsoft Word und andere, Exchange Online und SharePoint Online sowie Server wie Microsoft Exchange und Microsoft SharePoint integriert werden.
+Sie müssen den Rechteverwaltungsdienst (Rights Management Service, RMS) aktivieren, bevor Sie die Information Rights Management (IRM)-Features von Microsoft 365 und Diensten verwenden können. Nachdem Sie RMS aktiviert haben, kann Ihre Organisation mit dem Schutz wichtiger Dokumente und E-Mails mithilfe von Azure RMS beginnen. Diese Informationsschutzlösung kann alle Dateitypen schützen und in Clientanwendungen wie Excel, Microsoft Word und andere, Exchange Online und SharePoint Online sowie Server wie Microsoft Exchange und Microsoft SharePoint integrieren.
   
 > [!TIP]
 > Wenn Sie nicht sicher sind, ob Sie die Rechteverwaltung benötigen, überprüfen Sie, ob Ihre Organisation eines oder mehrere dieser Geschäftlichen Probleme oder [Anforderungen hat.](/azure/information-protection/what-is-azure-rms#business-problems-solved-by-azure-rights-management) 

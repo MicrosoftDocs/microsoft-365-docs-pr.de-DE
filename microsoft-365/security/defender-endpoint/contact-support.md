@@ -58,7 +58,7 @@ Der Zugriff auf das neue Support-Widget kann auf zwei Arten erfolgen:
 
     ![Widgetbild, wenn Fragezeichen ausgewählt ist](images/support-widget.png)
 
-2. Klicken Sie auf Die **Hilfe benötigen?**  schaltfläche unten rechts im Microsoft Defender Security Center:
+2. Klicken Sie auf Die **Hilfe benötigen?**  in der unteren rechten Seite des Microsoft Defender Security Center:
 
 
     ![Abbildung der Schaltfläche "Hilfe benötigen"](images/need-help.png)

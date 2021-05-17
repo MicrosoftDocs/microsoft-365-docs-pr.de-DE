@@ -14,7 +14,7 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: 'Administratoren können erfahren, wie Sie SharePoint- und #A0 in einer Multi-Geo-Umgebung verwalten.'
+description: Administratoren erfahren, wie Sie SharePoint und OneDrive in einer Multi-Geo-Umgebung verwalten.
 ms.openlocfilehash: 213070f2f7a04e15a1e2ac3cd9a3ae697b66a718
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -107,4 +107,4 @@ Stream ist jedoch noch nicht in den folgenden Regionen verfügbar, die derzeit f
 
 ## <a name="yammer"></a>Yammer
 
-Yammer ist keine Multi-Geo-Workload. Yammer threads stored in Yammer will be placed in the tenant's central location. Yammer wird eine Dateispeicheränderung in SharePoint Yammer gespeichert. Yammer in SharePoint gespeicherten Dateien wird die der Gruppe zugeordnete Yammer platziert. SharePoint-Gruppenwebsites basieren auf der PDL-Logik, wie in [SharePoint-Websites und -Gruppen beschrieben.](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)
+Yammer ist keine Multi-Geo-Arbeitsauslastung. Yammer threads stored in Yammer will be placed in the tenant's central location. Yammer wird eine Dateispeicheränderung ins Rollen gebracht, die Yammer dateien innerhalb SharePoint. Yammer, die in SharePoint gespeichert sind, wird die SharePoint der Gruppe zugeordneten Yammer platziert. SharePoint Gruppenwebsites basieren auf der PDL-Logik, wie in SharePoint [Sites and Groups beschrieben.](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)

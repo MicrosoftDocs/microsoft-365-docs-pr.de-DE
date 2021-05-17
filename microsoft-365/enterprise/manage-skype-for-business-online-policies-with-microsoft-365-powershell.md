@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: 'Zusammenfassung: Verwenden Sie PowerShell, um Ihre Skype for Business Online-Benutzerkontoeigenschaften mit Richtlinien zu verwalten.'
+description: 'Zusammenfassung: Verwenden Sie PowerShell, um Ihre Skype for Business Mit Richtlinien zu verwalten.'
 ms.openlocfilehash: a10929bbdce499ad26f9714127f675beeef58765
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,7 +25,7 @@ ms.locfileid: "50916702"
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Zum Verwalten vieler Eigenschaften des Benutzerkontos für Skype for Business Online müssen Sie diese als Eigenschaften von Richtlinien mit PowerShell für Microsoft 365 angeben.
+Um viele Eigenschaften des Benutzerkontos für Skype for Business Online zu verwalten, müssen Sie sie als Eigenschaften von Richtlinien mit PowerShell für Microsoft 365.
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
@@ -66,7 +66,7 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-In diesem Beispiel bestimmen die Werte in dieser Richtlinie, was eine Verwendung bei der Kommunikation mit Verbundbenutzern tun kann oder nicht. Beispielsweise muss die EnableOutsideAccess-Eigenschaft auf True festgelegt sein, damit ein Benutzer mit Personen außerhalb der Organisation kommunizieren kann. Beachten Sie, dass diese Eigenschaft nicht im Microsoft 365 Admin Center angezeigt wird. Stattdessen wird die Eigenschaft basierend auf den anderen von Ihnen getroffenen Auswahlen automatisch auf True oder False festgelegt. Die anderen beiden von Interesse sind:
+In diesem Beispiel bestimmen die Werte in dieser Richtlinie, was eine Verwendung bei der Kommunikation mit Verbundbenutzern tun kann oder nicht. Beispielsweise muss die EnableOutsideAccess-Eigenschaft auf True festgelegt sein, damit ein Benutzer mit Personen außerhalb der Organisation kommunizieren kann. Beachten Sie, dass diese Eigenschaft nicht im Microsoft 365 angezeigt wird. Stattdessen wird die Eigenschaft basierend auf den anderen von Ihnen getroffenen Auswahlen automatisch auf True oder False festgelegt. Die anderen beiden von Interesse sind:
   
 - **EnableFederationAccess** gibt an, ob der Benutzer mit Personen von Verbunddomänen kommunizieren darf.
     
@@ -88,7 +88,7 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 Dieser Befehl sucht nach der dem Benutzer zugewiesenen Richtlinie und dann in dieser Richtlinie nach den deaktivierten/aktivierten Funktionen.
   
-Informationen zum Verwalten von Skype for Business Online-Richtlinien mit PowerShell finden Sie in den Cmdlets für:
+Informationen zum Verwalten Skype for Business Onlinerichtlinien mit PowerShell finden Sie in den Cmdlets für:
 
 - [Clientrichtlinie](/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
 - [Konferenzrichtlinie](/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
@@ -130,4 +130,4 @@ Get-CsClientPolicy -Identity "Global"
   
 [Verwalten von Microsoft 365 mit PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)

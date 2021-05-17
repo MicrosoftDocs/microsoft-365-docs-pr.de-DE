@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie E-Mails, Kontakte und Kalender von Google Workspace zu Microsoft 365 Business migrieren.
+description: Erfahren Sie, wie Sie E-Mails, Kontakte und Kalender von Google Workspace zu Microsoft 365 migrieren.
 ms.openlocfilehash: d6639032b379a2cd632b6ab6ee7e4082b1e7be0b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "50913622"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LPt6?autoplay=false]
 
-Sie können eine vom Administrator verwaltete Migration von Google Workspace zu Exchange Online verwenden. Sie können die E-Mails entweder alle gleichzeitig oder phasenweise migrieren. Die folgenden Schritte zeigen, wie Sie die E-Mail-Daten gleichzeitig migrieren. Weitere Informationen finden Sie unter [Perform a G Suite migration](/exchange/mailbox-migration/perform-g-suite-migration).
+Sie können eine vom Administrator verwaltete Migration verwenden, um Exchange Online Von Google Workspace zu entfernen. Sie können die E-Mails entweder alle gleichzeitig oder phasenweise migrieren. Die folgenden Schritte zeigen, wie Sie die E-Mail-Daten gleichzeitig migrieren. Weitere Informationen finden Sie unter [Perform a G Suite migration](/exchange/mailbox-migration/perform-g-suite-migration).
 
 Der Migrationsprozess dauert mehrere Schritte und kann abhängig von der Datenmenge, die Sie migrieren, mehrere Stunden bis ein paar Tage dauern.
 
@@ -77,7 +77,7 @@ Der Migrationsprozess dauert mehrere Schritte und kann abhängig von der Datenme
  
 1. Wählen Sie **Autorisieren** aus. 
 
-### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>Erstellen einer Unterdomäne für E-Mails, die zu Microsoft 365 gehen
+### <a name="create-a-sub-domain-for-mail-going-to-microsoft-365"></a>Erstellen einer Unterdomäne für E-Mails, die zu Microsoft 365
 
 1. Kehren Sie zur **Google Workspace-Verwaltungskonsole** zurück.
 1. Wählen **Sie Domänen**, Domänen **verwalten** und dann **Domänenalias hinzufügen aus.** 
@@ -99,7 +99,7 @@ Der Migrationsprozess dauert mehrere Schritte und kann abhängig von der Datenme
 
     Es kann einige Zeit dauern, bis diese Änderungen wirksam werden.  
 
-1. Kehren Sie zu dem Ort zurück, an dem Sie im **Microsoft 365 Admin Center** auf dem Weg waren, und wählen Sie Weiter **aus.** 
+1. Kehren Sie zu dem Ort zurück, an **dem Sie Microsoft 365 Admin Center verlassen** haben, und wählen Sie Weiter **aus.** 
 
 Ihre Domäne ist jetzt eingerichtet.  
 
@@ -107,7 +107,7 @@ Ihre Domäne ist jetzt eingerichtet.
 
 Bevor die Migration beginnen kann, müssen Sie E-Mail-Aliase für Ihre Benutzer mit der neuen Unterdomäne erstellen. 
 
-1. Um den nächsten Schritt zu starten, wählen Sie im Assistenten Zum Hinzufügen von **Domänen** im Microsoft 365 Admin Center Die Option **Zu Aktive Benutzer wechseln aus.** 
+1. Um den nächsten Schritt  zu starten, wählen Sie im Assistenten zum Hinzufügen von Domänen im Microsoft 365 Admin Center **zu Aktive Benutzer wechseln aus.** 
 1. Wählen Sie einen Benutzer und dann Benutzernamen **und E-Mail verwalten aus.** 
 1. Wählen Sie **im Dropdownmenü** Domänen die zuvor erstellte Unterdomäne aus. 
 1. Geben Sie einen Benutzernamen ein, wählen **Sie Hinzufügen**, **Speichern** von Änderungen aus, und schließen Sie das Fenster. 
@@ -118,8 +118,8 @@ Bevor die Migration beginnen kann, müssen Sie E-Mail-Aliase für Ihre Benutzer 
 
 Sobald Sie fertig sind, können Sie migrieren. 
 
-1. Scrollen Sie im linken Navigations navi des **Microsoft 365 Admin Centers** nach unten zu Admin **Center,** und wählen Sie **Exchange aus.** 
-1. Wählen **Sie unter Empfänger** die Option **Migration** aus, wählen **Sie Neu**, Zu Exchange **Online** migrieren, **G Suite-Migration** und dann Weiter **aus.** 
+1. Scrollen Sie im linken Navigations **navi des Microsoft 365 Admin Center** nach unten zu Admin **Center,** und wählen Sie **Exchange** aus. 
+1. Wählen **Sie unter Empfänger** die Option **Migration** aus, wählen **Sie Neu**, **Exchange Online** migrieren aus, wählen Sie G **Suite migration** und dann **Weiter aus.** 
 1. Erstellen Sie eine CSV-Datei mit einer Liste der Postfächer, die Sie migrieren möchten. Stellen Sie sicher, dass die Datei diesem Format folgt: 
 
     ```CSV
@@ -144,5 +144,5 @@ Sobald Sie fertig sind, können Sie migrieren.
 1. Sobald der Prozess abgeschlossen ist, wird Ihr Status in **Abgeschlossen geändert.** 
 1. Wenn Sie möchten, können Sie Details anzeigen **auswählen,** um weitere Informationen zur Migration zu erhalten. 
 1. Wählen Sie **Schließen** aus. 
-1. Öffnen Sie Outlook, um zu überprüfen, ob alle E-Mails von Google Workspace erfolgreich migriert wurden.
+1. Öffnen Outlook, um zu überprüfen, ob alle E-Mails von Google Workspace erfolgreich migriert wurden.
 Sie können dies auch für Kalenderelemente und Kontakte wiederholen.

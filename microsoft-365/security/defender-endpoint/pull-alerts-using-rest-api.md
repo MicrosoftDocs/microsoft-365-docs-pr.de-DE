@@ -61,9 +61,9 @@ Der _Clientanmeldeinformationenfluss_ verwendet Clientanmeldeinformationen, um s
 Verwenden Sie die folgende Methode in der Microsoft Defender for Endpoint-API, um Erkennungen im JSON-Format zu ziehen.
 
 >[!NOTE]
->Microsoft Defender Security Center führt ähnliche Warnungserkennungen in einer einzigen Warnung zusammen. Diese API erstellt Warnungserkennungen in ihrer rohen Form basierend auf den von Ihnen festgelegten Abfrageparametern, sodass Sie Ihre eigene Gruppierung und Filterung anwenden können. 
+>Microsoft Defender Security Center werden ähnliche Warnungserkennungen in einer einzelnen Warnung zusammengeführt. Diese API erstellt Warnungserkennungen in ihrer rohen Form basierend auf den von Ihnen festgelegten Abfrageparametern, sodass Sie Ihre eigene Gruppierung und Filterung anwenden können. 
 
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 - Bevor Sie den Microsoft Defender for Endpoint-Endpunkt zum Ziehen von Erkennungen aufrufen, müssen Sie die SIEM-Integrationsanwendung in Azure Active Directory (AAD) aktivieren. Weitere Informationen finden Sie unter [Aktivieren der SIEM-Integration in Microsoft Defender for Endpoint](enable-siem-integration.md).
 
 - Notieren Sie sich die folgenden Werte bei der Registrierung Ihrer Azure-App. Sie benötigen diese Werte, um den OAuth-Fluss in Ihrem Dienst oder Ihrer Dämon-App zu konfigurieren:
@@ -127,7 +127,7 @@ ago | Zeichenfolge | Zieht Warnungen im folgenden Zeitraum: von `(current_time -
 Begrenzung | int | Definiert die Anzahl der abzurufenden Warnungen. Die neuesten Warnungen werden basierend auf der definierten Anzahl abgerufen.<br><br> **HINWEIS**: Wenn nicht angegeben, werden alle im Zeitraum verfügbaren Warnungen abgerufen.
 machinegroups | Zeichenfolge | Gibt Gerätegruppen an, aus der Warnungen abziehen sollen. <br><br> **HINWEIS:** Wenn nicht angegeben, werden Warnungen von allen Gerätegruppen abgerufen. <br><br> Beispiel: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | Zeichenfolge | Einzelnes Gerätetag aus der Registrierung.
-CloudCreatedMachineTags | Zeichenfolge | Gerätetags, die im Microsoft Defender Security Center erstellt wurden.
+CloudCreatedMachineTags | Zeichenfolge | Gerätetags, die in einem Microsoft Defender Security Center.
 
 ### <a name="request-example"></a>Anforderungsbeispiel
 Im folgenden Beispiel wird veranschaulicht, wie alle Erkennungen in Ihrer Organisation abgerufen werden.

@@ -22,15 +22,15 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50907940"
 ---
-# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Verhindern, dass Gäste einer bestimmten Microsoft 365-Gruppe oder einem Microsoft Teams-Team hinzugefügt werden
+# <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Verhindern, dass Gäste zu einer bestimmten Gruppe oder Microsoft 365 hinzugefügt Microsoft Teams werden
 
 Wenn Sie den Gastzugriff auf die meisten Gruppen und Teams zulassen möchten, aber über einiges verfügen möchten, an dem Sie den Gastzugriff verhindern möchten, können Sie den Gastzugriff für einzelne Gruppen und Teams blockieren. (Das Blockieren des Gastzugriffs auf ein Team erfolgt durch Blockieren des Gastzugriffs auf die zugeordnete Gruppe.) Dadurch wird verhindert, dass neue Gäste hinzugefügt werden, gäste, die sich bereits in der Gruppe oder im Team befinden, werden jedoch nicht entfernt.
 
-Wenn Sie Vertraulichkeitsbezeichnungen in Ihrer Organisation verwenden, wird empfohlen, sie zu verwenden, um den Gastzugriff pro Gruppe zu steuern. Informationen dazu finden Sie unter Verwenden von Vertraulichkeitsbezeichnungen zum Schutz von [Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites.](../compliance/sensitivity-labels-teams-groups-sites.md) Dies ist der empfohlene Ansatz.
+Wenn Sie Vertraulichkeitsbezeichnungen in Ihrer Organisation verwenden, wird empfohlen, sie zu verwenden, um den Gastzugriff pro Gruppe zu steuern. Informationen dazu finden Sie unter Verwenden von Vertraulichkeitsbezeichnungen zum Schutz von [Inhalten in Microsoft Teams,](../compliance/sensitivity-labels-teams-groups-sites.md)Microsoft 365 gruppen und SharePoint Websites . Dies ist der empfohlene Ansatz.
 
 ## <a name="change-group-settings-using-microsoft-powershell"></a>Ändern von Gruppeneinstellungen mithilfe von Microsoft PowerShell
 
-Sie können auch verhindern, dass neue Gäste zu einzelnen Gruppen mit PowerShell hinzu kommen. (Denken Sie daran, dass die zugeordnete SharePoint-Website des Teams [über separate Gastfreigabesteuerelemente verfügt.)](/sharepoint/change-external-sharing-site)
+Sie können auch verhindern, dass neue Gäste zu einzelnen Gruppen mit PowerShell hinzu kommen. (Denken Sie daran, dass die dem Team zugeordnete SharePoint über [separate Gastfreigabesteuerelemente verfügt.)](/sharepoint/change-external-sharing-site)
 
 Sie müssen die Vorschauversion von [Azure Active Directory PowerShell für Graph](/powershell/azure/active-directory/install-adv2) (Modulname **AzureADPreview**) verwenden, um die Gastzugriffseinstellung auf Gruppenebene zu ändern:
 

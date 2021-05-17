@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Microsoft 365-Benutzerkontoeigenschaften mit PowerShell
+title: Konfigurieren Microsoft 365 Benutzerkontoeigenschaften mit PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,7 +17,7 @@ ms.custom:
 - Ent_Office_Other
 - PowerShell
 ms.assetid: 30813f8d-b08d-444b-98c1-53df7c29b4d7
-description: Verwenden Sie PowerShell für Microsoft 365, um Eigenschaften einzelner oder mehrerer Benutzerkonten in Ihrem Microsoft 365-Mandanten zu konfigurieren.
+description: Verwenden Sie PowerShell für Microsoft 365, um Eigenschaften einzelner oder mehrerer Benutzerkonten in Ihrem Mandanten Microsoft 365 konfigurieren.
 ms.openlocfilehash: 6b674641842f89fd8c8e22dc26350cdd53734b9e
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,17 +25,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50911084"
 ---
-# <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Konfigurieren von Microsoft 365-Benutzerkontoeigenschaften mit PowerShell
+# <a name="configure-microsoft-365-user-account-properties-with-powershell"></a>Konfigurieren Microsoft 365 Benutzerkontoeigenschaften mit PowerShell
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Sie können das Microsoft 365 Admin Center verwenden, um Eigenschaften für die Benutzerkonten Ihres Microsoft 365-Mandanten zu konfigurieren. In PowerShell können Sie dies auch tun, sowie einige andere Dinge, die Sie im Admin Center nicht tun können.
+Sie können das Microsoft 365 Admin Center verwenden, um Eigenschaften für die Benutzerkonten Ihres mandanten Microsoft 365 konfigurieren. In PowerShell können Sie dies auch tun, sowie einige andere Dinge, die Sie im Admin Center nicht tun können.
   
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Verwenden der Azure Active Directory PowerShell für Graph-Module
 
 Verwenden Sie zum Konfigurieren von Eigenschaften für Benutzerkonten im Azure Active Directory PowerShell für Graph-Modul das [**Cmdlet Set-AzureADUser,**](/powershell/module/azuread/set-azureaduser?view=azureadps-2.0) und geben Sie die eigenschaften an, die festgelegt oder geändert werden müssen.
 
-Stellen Sie [zunächst eine Verbindung mit Ihrem Microsoft 365-Mandanten herzustellen.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Stellen Sie [zunächst eine Verbindung zu Ihrem Microsoft 365 mandanten.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
    
 ### <a name="change-properties-for-a-specific-user-account"></a>Ändern von Eigenschaften für ein bestimmtes Benutzerkonto
 
@@ -151,7 +151,7 @@ Dieser Befehl wies PowerShell an:
 
 Verwenden Sie zum Konfigurieren von Eigenschaften für Benutzerkonten mit dem Microsoft Azure Active Directory-Modul für Windows PowerShell das **Cmdlet Set-MsolUser,** und geben Sie die eigenschaften an, die festgelegt oder geändert werden müssen.
 
-Stellen Sie [zunächst eine Verbindung mit Ihrem Microsoft 365-Mandanten herzustellen.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Stellen Sie [zunächst eine Verbindung zu Ihrem Microsoft 365 mandanten.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
   
 >[!Note]
 >Das Microsoft Azure Active Directory-Modul für Windows PowerShell-Modul und Cmdlets mit *Msol* im Namen werden von PowerShell Core nicht unterstützt. Führen Sie diese Cmdlets über Windows PowerShell aus.

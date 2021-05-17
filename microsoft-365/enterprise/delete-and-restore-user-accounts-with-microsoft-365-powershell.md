@@ -1,5 +1,5 @@
 ---
-title: Löschen von Microsoft 365-Benutzerkonten mit PowerShell
+title: Löschen Microsoft 365 Benutzerkonten mit PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - O365ITProTrain
 - seo-marvel-apr2020
 ms.assetid: 209c9868-448c-49bc-baae-11e28b923a39
-description: Erfahren Sie, wie Sie verschiedene Module in PowerShell verwenden, um Microsoft 365-Benutzerkonten zu löschen.
+description: Erfahren Sie, wie Sie verschiedene Module in PowerShell verwenden, um Microsoft 365 zu löschen.
 ms.openlocfilehash: 32081d1ce0cbc7aac89b337cf8b5d08bc8e43dfa
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,19 +27,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50919140"
 ---
-# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Löschen von Microsoft 365-Benutzerkonten mit PowerShell
+# <a name="delete-microsoft-365-user-accounts-with-powershell"></a>Löschen Microsoft 365 Benutzerkonten mit PowerShell
 
 Sie können PowerShell für Microsoft 365 verwenden, um Benutzerkonten zu löschen und wiederherzustellen.
 
 >[!Note]
->Erfahren Sie, [wie Sie ein Benutzerkonto mithilfe](../admin/add-users/restore-user.md) des Microsoft 365 Admin Centers wiederherstellen.
+>Erfahren Sie, [wie Sie ein Benutzerkonto](../admin/add-users/restore-user.md) mithilfe des Microsoft 365 wiederherstellen.
 >
 >Eine Liste der zusätzlichen Ressourcen finden Sie unter [Verwalten von Benutzern und Gruppen](../admin/add-users/index.yml).
 >   
    
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Verwenden der Azure Active Directory PowerShell für Graph-Module
 
-Stellen Sie [zunächst eine Verbindung mit Ihrem Microsoft 365-Mandanten herzustellen.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Stellen Sie [zunächst eine Verbindung zu Ihrem Microsoft 365 mandanten.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 Nachdem Sie eine Verbindung hergestellt haben, verwenden Sie die folgende Syntax, um ein einzelnes Benutzerkonto zu entfernen:
   
@@ -79,9 +79,9 @@ Remove-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userN
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Verwenden des Microsoft Azure Active Directory-Moduls für Windows PowerShell
 
-Wenn Sie ein Benutzerkonto über das Microsoft Azure Active Directory-Modul für Windows PowerShell löschen, wird das Konto nicht dauerhaft gelöscht. Sie können das gelöschte Benutzerkonto innerhalb von 30 Tagen wiederherstellen.
+Wenn Sie ein Benutzerkonto über das Microsoft Azure Active Directory Module for Windows PowerShell löschen, wird das Konto nicht dauerhaft gelöscht. Sie können das gelöschte Benutzerkonto innerhalb von 30 Tagen wiederherstellen.
 
-Stellen Sie [zunächst eine Verbindung mit Ihrem Microsoft 365-Mandanten herzustellen.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Stellen Sie [zunächst eine Verbindung zu Ihrem Microsoft 365 mandanten.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 Wenn Sie ein Benutzerkonto löschen möchten, verwenden Sie die folgende Syntax:
   

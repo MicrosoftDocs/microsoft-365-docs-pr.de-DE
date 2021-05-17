@@ -1,7 +1,7 @@
 ---
 title: Onboarden von Windows 10-Geräten für mehrere Sitzungen in Windows Virtual Desktop
-description: Weitere Informationen finden Sie in diesem Artikel zum Onboarding von Windows 10-Geräten mit mehreren Sitzungen in Windows Virtual Desktop
-keywords: Windows Virtual Desktop, WVD, microsoft defender, endpoint, onboard
+description: Weitere Informationen finden Sie in diesem Artikel zum Onboarding Windows 10 Geräten mit mehreren Sitzungen in Windows Virtual Desktop
+keywords: Windows Virtual Desktop, WVD, Microsoft Defender, Endpunkt, Onboard
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -26,19 +26,19 @@ ms.locfileid: "51764317"
 6 Minuten zu lesen 
 
 Gilt für: 
-- Windows 10 multi-session running on Windows Virtual Desktop (WVD) 
+- Windows 10, die auf einem virtuellen Windows (Virtual Desktop, WVD) ausgeführt werden 
 
 Microsoft Defender for Endpoint unterstützt die Überwachung von VDI- und Windows Virtual Desktop-Sitzungen. Je nach Den Anforderungen Ihrer Organisation müssen Sie möglicherweise VDI- oder Windows Virtual Desktop-Sitzungen implementieren, um Ihren Mitarbeitern den Zugriff auf Unternehmensdaten und Apps von einem nicht verwalteten Gerät, Remotespeicherort oder ähnlichem Szenario zu unterstützen. Mit Microsoft Defender for Endpoint können Sie diese virtuellen Computer auf anomale Aktivitäten überwachen.
 
  ## <a name="before-you-begin"></a>Bevor Sie beginnen
-Machen Sie sich mit den [Überlegungen für nicht persistente VDI vertraut.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Windows [Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) bietet zwar keine Nichtpersistenzoptionen, bietet jedoch Möglichkeiten zur Verwendung eines goldenen Windows-Images, das zum Bereitstellen neuer Hosts und erneut bereitgestellter Computer verwendet werden kann. Dies erhöht die Unbeständigkeit in der Umgebung und wirkt sich somit auf die Einträge aus, die im Microsoft Defender for Endpoint-Portal erstellt und verwaltet werden, wodurch die Sichtbarkeit für Ihre Sicherheitsanalysten potenziell reduziert wird.
+Machen Sie sich mit den [Überlegungen für nicht persistente VDI vertraut.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Obwohl [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) keine Nichtpersistenzoptionen bietet, bietet es Möglichkeiten, ein goldenes Windows-Image zu verwenden, das zum Bereitstellen neuer Hosts und erneut bereitgestellter Computer verwendet werden kann. Dies erhöht die Unbeständigkeit in der Umgebung und wirkt sich somit auf die Einträge aus, die im Microsoft Defender for Endpoint-Portal erstellt und verwaltet werden, wodurch die Sichtbarkeit für Ihre Sicherheitsanalysten potenziell reduziert wird.
 
 > [!NOTE]
 > Je nach Wahl der Onboardingmethode können Geräte im Microsoft Defender for Endpoint-Portal wie folgt angezeigt werden: 
 > - Einzelner Eintrag für jeden virtuellen Desktop 
 > - Mehrere Einträge für jeden virtuellen Desktop 
 
-Microsoft empfiehlt das Onboarding von Windows Virtual Desktop als einzelnen Eintrag pro virtuellem Desktop. Dadurch wird sichergestellt, dass sich die Untersuchungserfahrung im Microsoft Defender Endpoint-Portal im Kontext eines Geräts befindet, das auf dem Computernamen basiert. Organisationen, die häufig WVD-Hosts löschen und erneut bereitstellen, sollten die Verwendung dieser Methode in Betracht ziehen, da dadurch verhindert wird, dass mehrere Objekte für denselben Computer im Microsoft Defender for Endpoint-Portal erstellt werden. Dies kann bei der Untersuchung von Vorfällen zu Verwirrung führen. Für Testumgebungen oder nicht flüchtige Umgebungen können Sie eine andere Auswahl auswählen. 
+Microsoft empfiehlt das Onboarding Windows Virtual Desktop als einzelnen Eintrag pro virtuellem Desktop. Dadurch wird sichergestellt, dass sich die Untersuchungserfahrung im Microsoft Defender Endpoint-Portal im Kontext eines Geräts befindet, das auf dem Computernamen basiert. Organisationen, die häufig WVD-Hosts löschen und erneut bereitstellen, sollten die Verwendung dieser Methode in Betracht ziehen, da dadurch verhindert wird, dass mehrere Objekte für denselben Computer im Microsoft Defender for Endpoint-Portal erstellt werden. Dies kann bei der Untersuchung von Vorfällen zu Verwirrung führen. Für Testumgebungen oder nicht flüchtige Umgebungen können Sie eine andere Auswahl auswählen. 
 
 Microsoft empfiehlt das Hinzufügen des Microsoft Defender for Endpoint-Onboardingskripts zum goldenen WVD-Image. Auf diese Weise können Sie sicher sein, dass dieses Onboardingskript sofort beim ersten Start ausgeführt wird. Es wird beim ersten Start auf allen WVD-Computern, die aus dem goldenen WVD-Image bereitgestellt werden, als Startskript ausgeführt. Wenn Sie jedoch eines der Katalogbilder ohne Änderung verwenden, platzieren Sie das Skript an einem freigegebenen Speicherort, und rufen Sie es entweder aus einer lokalen oder einer Domänengruppenrichtlinie auf. 
 
@@ -61,16 +61,16 @@ Befolgen Sie die Anweisungen für einen einzelnen Eintrag für jedes Gerät.
 #### <a name="scenario-2-using-domain-group-policy"></a>*Szenario 2: Verwenden von Domänengruppenrichtlinien*
 In diesem Szenario wird ein zentral gelegenes Skript verwendet und mithilfe einer domänenbasierten Gruppenrichtlinie ausgeführt. Sie können das Skript auch in das goldene Bild platzieren und auf die gleiche Weise ausführen.
 
-**Laden Sie die WindowsDefenderATPOnboardingPackage.zip aus dem Windows Defender Security Center herunter**
+**Herunterladen der WindowsDefenderATPOnboardingPackage.zip aus dem Windows Defender Security Center**
 
-1. Öffnen Sie die ZIP-Datei des VDI-Konfigurationspakets (WindowsDefenderATPOnboardingPackage.zip)  
+1. Öffnen Sie die VDI-Konfigurationspaketdatei .zip (WindowsDefenderATPOnboardingPackage.zip)  
 
-    1. Wählen Sie im Navigationsbereich des Microsoft Defender Security Center die Option **Einstellungen**  >  **Onboarding aus.** 
-    1. Wählen Sie Windows 10 als Betriebssystem aus. 
+    1. Wählen Sie Microsoft Defender Security Center Navigationsbereich Einstellungen   >  **Onboarding aus.** 
+    1. Wählen Windows 10 als Betriebssystem aus. 
     1. Wählen Sie **im Feld Bereitstellungsmethode** die Option VDI-Onboardingskripts für nicht persistente Endpunkte aus. 
-    1. Klicken **Sie auf Paket herunterladen,** und speichern Sie die ZIP-Datei. 
+    1. Klicken **Sie auf Paket** herunterladen, und speichern .zip Datei. 
 
-2. Extrahieren Sie den Inhalt der ZIP-Datei an einen freigegebenen schreibgeschützten Speicherort, auf den das Gerät zugreifen kann. Sie sollten über einen Ordner **namens OptionalParamsPolicy** und die **Dateien WindowsDefenderATPOnboardingScript.cmd** und **Onboard-NonPersistentMachine.ps1**.
+2. Extrahieren Sie den Inhalt der .zip an einen freigegebenen, schreibgeschützten Speicherort, auf den das Gerät zugreifen kann. Sie sollten über einen Ordner **namens OptionalParamsPolicy** und die **Dateien WindowsDefenderATPOnboardingScript.cmd** und **Onboard-NonPersistentMachine.ps1**.
 
 **Verwenden der Gruppenrichtlinienverwaltungskonsole zum Ausführen des Skripts beim Starten des virtuellen Computers**
 
@@ -78,7 +78,7 @@ In diesem Szenario wird ein zentral gelegenes Skript verwendet und mithilfe eine
 
 2. Wechseln Sie im Gruppenrichtlinienverwaltungs-Editor zu **Einstellungen** für die \> Systemsteuerung **der** \> **Computerkonfiguration.** 
 
-3. Klicken Sie mit der rechten Maustaste auf Geplante **Vorgänge,** klicken Sie auf **Neu,** und klicken Sie dann auf **Sofortaufgabe** (Mindestens Windows 7). 
+3. Klicken Sie mit der rechten Maustaste auf Geplante **Vorgänge,** klicken Sie auf **Neu,** und klicken Sie dann auf Sofortaufgabe **(mindestens** Windows 7). 
 
 4. Wechseln Sie im geöffneten Aufgabenfenster zur Registerkarte **Allgemein.** Klicken **Sie unter Sicherheitsoptionen** **auf Benutzer oder Gruppe ändern, und** geben Sie SYSTEM ein. Klicken **Sie auf Namen** überprüfen, und klicken Sie dann auf OK. NT AUTHORITY\SYSTEM wird als Benutzerkonto angezeigt, unter dem die Aufgabe ausgeführt wird. 
 
@@ -96,12 +96,12 @@ In diesem Szenario wird ein zentral gelegenes Skript verwendet und mithilfe eine
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*Szenario 3: Onboarding mithilfe von Verwaltungstools*
 
-Wenn Sie planen, Ihre Computer mithilfe eines Verwaltungstools zu verwalten, können Sie Geräte mit Microsoft Endpoint Configuration Manager integrieren.
+Wenn Sie Planen, Ihre Computer mit einem Verwaltungstool zu verwalten, können Sie Geräte mit Microsoft Endpoint Configuration Manager.
 
-Weitere Informationen finden Sie unter [OnboardIng Windows 10 devices using Configuration Manager](configure-endpoints-sccm.md).
+Weitere Informationen finden Sie unter [Onboard Windows 10 devices using Configuration Manager](configure-endpoints-sccm.md).
 
 > [!WARNING]
-> Wenn Sie Attack Surface Reduction [Rules](attack-surface-reduction.md)verwenden möchten, beachten Sie, dass die Regel " Block process creations from[PSExec and WMI commands](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)" nicht verwendet werden sollte, da diese Regel mit der Verwaltung über Microsoft Endpoint Configuration Manager nicht kompatibel ist. Die Regel blockiert WMI-Befehle, die der Configuration Manager-Client verwendet, um ordnungsgemäß zu funktionieren. 
+> Wenn Sie attack [surface reduction Rules](attack-surface-reduction.md)verwenden möchten, beachten Sie, dass die Regel " Block process[creations from PSExec and WMI commands](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)" nicht verwendet werden sollte, da diese Regel nicht mit der Verwaltung über die Microsoft Endpoint Configuration Manager. Die Regel blockiert WMI-Befehle, die der Configuration Manager-Client verwendet, um ordnungsgemäß zu funktionieren. 
 
 > [!TIP]
 > Nach dem Onboarding des Geräts können Sie einen Erkennungstest ausführen, um sicherzustellen, dass das Gerät ordnungsgemäß in den Dienst integrierte ist. Weitere Informationen finden Sie unter Ausführen eines Erkennungstests auf einem neu integrierten [Microsoft Defender for Endpoint-Gerät.](run-detection-test.md) 
@@ -146,5 +146,5 @@ Wenn Sie außerdem FSlogix-Benutzerprofile verwenden, wird empfohlen, die folgen
 
 #### <a name="licensing-requirements"></a>Lizenzierungsanforderungen 
 
-Hinweis zur Lizenzierung: Bei der Verwendung von Windows 10 Enterprise-Mehrsitzungen können Sie je nach Ihren Anforderungen entweder alle Benutzer über Microsoft Defender for Endpoint (pro Benutzer), Windows Enterprise E5, Microsoft 365 Security oder Microsoft 365 E5 lizenziert haben oder den virtuellen Computer über Azure Defender lizenziert haben.
+Hinweis zur Lizenzierung: Wenn Sie Windows 10 Enterprise mehrere Sitzungen verwenden, können Sie je nach Ihren Anforderungen auswählen, ob alle Benutzer über Microsoft Defender for Endpoint (pro Benutzer), Windows Enterprise E5, Microsoft 365 Security oder Microsoft 365 E5 lizenziert werden oder den virtuellen Computer über Azure Defender lizenziert haben.
 Lizenzierungsanforderungen für Microsoft Defender für Endpunkt finden Sie unter: [Lizenzierungsanforderungen](minimum-requirements.md#licensing-requirements).

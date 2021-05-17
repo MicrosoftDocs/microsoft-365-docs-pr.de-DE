@@ -83,7 +83,7 @@ Jede der analysierten Entitäten wird als infiziert, behoben oder verdächtig ge
 Microsoft Defender for Endpoint aggregiert die Bedrohungsinformationen in einem Vorfall, sodass Sie die Muster und Korrelationen aus verschiedenen Datenpunkten sehen können. Sie können diese Korrelation über das Vorfalldiagramm anzeigen.
 
 ### <a name="incident-graph"></a>Vorfalldiagramm
-The **Graph** tells the story of the cybersecurity attack. Beispielsweise wird gezeigt, was der Einstiegspunkt war, welcher Indikator für Einemeindung oder Aktivität auf welchem Gerät beobachtet wurde. usw.
+Das **Graph** die Geschichte des Cybersicherheitsangriffs. Beispielsweise wird gezeigt, was der Einstiegspunkt war, welcher Indikator für Einemeindung oder Aktivität auf welchem Gerät beobachtet wurde. usw.
 
 ![Abbildung des Vorfalldiagramms](images/atp-incident-graph-tab.png)
 

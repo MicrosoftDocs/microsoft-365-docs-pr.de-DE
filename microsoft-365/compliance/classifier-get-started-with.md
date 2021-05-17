@@ -17,7 +17,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Ein Microsoft 365-Klassifikator ist ein Tool, das Sie schulen können, um verschiedene Arten von Inhalten zu erkennen, indem Sie ihm Beispiele zum Betrachten geben. In diesem Artikel erfahren Sie, wie Sie einen benutzerdefinierten Klassifikator erstellen und schulen und umtrainieren, um die Genauigkeit zu erhöhen.
+description: Ein Microsoft 365 Klassifikator ist ein Tool, das Sie schulen können, um verschiedene Arten von Inhalten zu erkennen, indem Sie ihm Beispiele zum Betrachten geben. In diesem Artikel erfahren Sie, wie Sie einen benutzerdefinierten Klassifikator erstellen und schulen und umtrainieren, um die Genauigkeit zu erhöhen.
 ms.openlocfilehash: 90e47ec94528bbadeb98dc9eb590929e25ae6ff1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "50918179"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Erste Schritte mit trainierbaren Klassifizierern
 
-Ein trainierbarer Microsoft 365-Klassifikator ist ein Tool, das Sie schulen können, um verschiedene Arten von Inhalten zu erkennen, indem Sie ihm Beispiele zum Betrachten geben. Nach der Ausbildung können Sie es verwenden, um Elemente für die Anwendung von Office-Vertraulichkeitsbezeichnungen, Kommunikations-Compliancerichtlinien und Aufbewahrungsbezeichnungsrichtlinien zu identifizieren.
+Ein Microsoft 365 trainierbarer Klassifikator ist ein Tool, das Sie schulen können, um verschiedene Arten von Inhalten zu erkennen, indem Sie ihm Beispiele zum Betrachten geben. Sobald Sie geschult sind, können Sie es verwenden, um Elemente für die Anwendung Office Vertraulichkeitsbezeichnungen, Kommunikationskonformitätsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien zu identifizieren.
 
 Das Erstellen eines benutzerdefinierten trainierbaren Klassifizierungsklassifikierers umfasst zunächst, ihm Beispiele zu geben, die vom Menschen ausgewählt und positiv mit der Kategorie übereinstimmen. Nachdem sie diese verarbeitet haben, testen Sie die Klassifiziererfähigkeit, die vorherzusagen ist, indem Sie ihr eine Mischung aus positiven und negativen Beispielen geben. In diesem Artikel erfahren Sie, wie Sie einen benutzerdefinierten Klassifikator erstellen und schulen und wie Sie die Leistung von benutzerdefinierten trainierbaren Klassifikatoren und vortrainierten Klassifikatoren über ihre Lebensdauer durch Umschulung verbessern.
 
@@ -44,7 +44,7 @@ Sehen Sie sich dieses Video an, um eine kurze Zusammenfassung des Erstellens ein
 
 ### <a name="licensing-requirements"></a>Lizenzierungsanforderungen
 
-Klassifizierungen sind ein Microsoft 365 E5- oder E5-Compliancefeature. Sie müssen über eines dieser Abonnements verfügen, um sie nutzen zu können.
+Klassifizierungen sind eine Microsoft 365 E5 oder E5-Compliance-Funktion. Sie müssen über eines dieser Abonnements verfügen, um sie nutzen zu können.
 
 ### <a name="permissions"></a>Berechtigungen
 
@@ -95,7 +95,7 @@ Nachdem der trainierbare Klassifikator genügend positive Beispiele zum Erstelle
 
 ## <a name="how-to-create-a-trainable-classifier"></a>Erstellen eines trainierbaren Klassifizierers
 
-1. Sammeln sie zwischen 50 und 500 Seedinhaltselemente. Dabei darf es sich nur um Beispiele handelt, die den Inhaltstyp stark darstellen, den der trainierbare Klassifikator positiv als In der Klassifizierungskategorie identifizieren soll. Unter [Standarddurchforstung von Dateinamenerweiterungen und analysierten Dateitypen in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) finden Sie informationen zu den unterstützten Dateitypen.
+1. Sammeln sie zwischen 50 und 500 Seedinhaltselemente. Dabei darf es sich nur um Beispiele handelt, die den Inhaltstyp stark darstellen, den der trainierbare Klassifikator positiv als In der Klassifizierungskategorie identifizieren soll. Unter [Standarddurchforstung von Dateinamenerweiterungen und analysierten Dateitypen in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) finden Sie die unterstützten Dateitypen.
 
    > [!IMPORTANT]
    > Die Seed- und Testbeispielelemente dürfen nicht verschlüsselt sein und müssen in Englisch sein.
@@ -103,12 +103,12 @@ Nachdem der trainierbare Klassifikator genügend positive Beispiele zum Erstelle
    > [!IMPORTANT]
    > Stellen Sie sicher, dass die Elemente in Ihrem Seedset **starke Beispiele** für die Kategorie sind. Der trainierbare Klassifikator erstellt sein Modell zunächst basierend auf dem Seeding. Der Klassifikator geht davon aus, dass alle Seedbeispiele starke positive Ergebnisse sind und keine Möglichkeit hat, zu wissen, ob eine Stichprobe eine schwache oder negative Übereinstimmung mit der Kategorie ist.
 
-2. Platzieren Sie den Seedinhalt in einem SharePoint Online-Ordner, der nur für das Speichern *des Seedinhalts verwendet wird.* Notieren Sie sich die Website-, Bibliotheks- und Ordner-URL.
+2. Platzieren Sie den Seedinhalt in SharePoint Onlineordner, der nur für das Speichern *des Seedinhalts verwendet wird.* Notieren Sie sich die Website-, Bibliotheks- und Ordner-URL.
 
    > [!TIP]
    > Wenn Sie eine neue Website und einen neuen Ordner für Ihre Seeddaten erstellen, lassen Sie mindestens eine Stunde zeit, bis dieser Speicherort indiziert wird, bevor Sie die trainierbare Klassifizierung erstellen, die diese Seeddaten verwendet.
 
-3. Melden Sie sich beim Microsoft 365 Compliance Center mit Zugriff auf die Rolle des Complianceadministrators oder Sicherheitsadministrators an, und öffnen Sie **Microsoft 365 Compliance Center** oder Microsoft **365 Security Center**  >  **Datenklassifizierung.**
+3. Melden Sie sich Microsoft 365 Compliance Center mit Zugriff auf die Rolle des Complianceadministrators oder Sicherheitsadministrators an, und öffnen Sie **Microsoft 365 Compliance Center** oder Microsoft 365 Security **Center**  >  **Datenklassifizierung**.
 
 4. Wählen Sie die **Registerkarte Trainable classifiers** aus.
 
@@ -116,7 +116,7 @@ Nachdem der trainierbare Klassifikator genügend positive Beispiele zum Erstelle
 
 6. Geben Sie die entsprechenden Werte für die Felder der Kategorie der Elemente ein, die von `Name` `Description` diesem trainierbaren Klassifizierungstyp identifiziert werden sollen.
 
-7. Wählen Sie in Schritt 2 die SharePoint Online-Website-, Bibliotheks- und Ordner-URL für die Seedinhaltswebsite aus. Wählen Sie `Add` aus.
+7. Wählen Sie SharePoint Schritt 2 die Url der Onlinewebsite, Bibliothek und Ordner für die Seedinhaltswebsite aus. Wählen Sie `Add` aus.
 
 8. Überprüfen Sie die Einstellungen, und wählen Sie `Create trainable classifier` aus.
 
@@ -127,19 +127,19 @@ Nachdem der trainierbare Klassifikator genügend positive Beispiele zum Erstelle
     > [!div class="mx-imgBorder"]
     > ![Trainierbare Klassifikatoren, die für Tests bereit sind](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. Sammeln Sie mindestens 200 Testinhaltselemente (max. 10.000) für optimale Ergebnisse. Dies sollte eine Mischung aus Elementen sein, die starke Positive, starke Negative und einige sind, die in ihrer Natur etwas weniger offensichtlich sind. Unter [Standarddurchforstung von Dateinamenerweiterungen und analysierten Dateitypen in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) finden Sie informationen zu den unterstützten Dateitypen.
+11. Sammeln Sie mindestens 200 Testinhaltselemente (max. 10.000) für optimale Ergebnisse. Dies sollte eine Mischung aus Elementen sein, die starke Positive, starke Negative und einige sind, die in ihrer Natur etwas weniger offensichtlich sind. Unter [Standarddurchforstung von Dateinamenerweiterungen und analysierten Dateitypen in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) finden Sie die unterstützten Dateitypen.
 
     > [!IMPORTANT]
     > Die Beispielelemente dürfen nicht verschlüsselt sein und müssen in Englisch sein.
 
-12. Platzieren Sie den Testinhalt in einem SharePoint Online-Ordner, der nur für das Speichern *der Testinhalte verwendet wird.* Notieren Sie sich die SharePoint Online-Website-, Bibliotheks- und Ordner-URL.
+12. Platzieren Sie den Testinhalt in einem SharePoint Onlineordner, der nur für das Speichern *der Testinhalte verwendet wird.* Notieren Sie sich die SharePoint Onlinewebsite, Bibliothek und Ordner-URL.
 
     > [!TIP]
     > Wenn Sie eine neue Website und einen neuen Ordner für Ihre Testdaten erstellen, lassen Sie mindestens eine Stunde zeit, bis dieser Speicherort indiziert wird, bevor Sie den trainierbaren Klassifikator erstellen, der diese Seeddaten verwendet.
 
 13. Wählen Sie `Add items to test` aus.
 
-14. Wählen Sie in Schritt 12 die SharePoint Online-Website-, Bibliotheks- und Ordner-URL für die Testinhaltswebsite aus. Wählen Sie `Add` aus.
+14. Wählen Sie SharePoint Schritt 12 die URL der Onlinewebsite, Bibliothek und ordner für die Testinhaltswebsite aus. Wählen Sie `Add` aus.
 
 15. Beenden Sie den Assistenten, indem Sie `Done` auswählen. Ihre trainierbare Klassifizierung dauert bis zu einer Stunde, um die Testdateien zu verarbeiten.
 
@@ -150,7 +150,7 @@ Nachdem der trainierbare Klassifikator genügend positive Beispiele zum Erstelle
 
 17. Wählen `Tested items to review` Sie die Registerkarte aus, um Elemente zu überprüfen.
 
-18. Microsoft 365 stellt 30 Elemente gleichzeitig vor. Überprüfen Sie sie, und wählen `We predict this item is "Relevant". Do you agree?` Sie im Feld entweder oder oder `Yes` `No` `Not sure, skip to next item` aus. Die Modellgenauigkeit wird nach allen 30 Elementen automatisch aktualisiert.
+18. Microsoft 365 werden 30 Elemente gleichzeitig angezeigt. Überprüfen Sie sie, und wählen `We predict this item is "Relevant". Do you agree?` Sie im Feld entweder oder oder `Yes` `No` `Not sure, skip to next item` aus. Die Modellgenauigkeit wird nach allen 30 Elementen automatisch aktualisiert.
 
     > [!div class="mx-imgBorder"]
     > ![Feld Elemente überprüfen](../media/classifier-trainable-review-detail.png)
@@ -162,4 +162,4 @@ Nachdem der trainierbare Klassifikator genügend positive Beispiele zum Erstelle
 
 20. Veröffentlichen Sie den Klassifizierer.
 
-21. Nach der Veröffentlichung ist Ihr Klassifikator als Bedingung in der automatischen Bezeichnung von [Office](apply-sensitivity-label-automatically.md)mit Vertraulichkeitsbezeichnungen, [](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) automatischer Anwenden einer Aufbewahrungsbezeichnungsrichtlinie basierend auf einer Bedingung und unter Kommunikationskonformität [verfügbar.](communication-compliance.md)
+21. Nach der Veröffentlichung steht Ihr Klassifikator als Bedingung in [Office](apply-sensitivity-label-automatically.md)automatischen Bezeichnungen mit Vertraulichkeitsbezeichnungen, [](apply-retention-labels-automatically.md#configuring-conditions-for-auto-apply-retention-labels) automatischer Anwenden einer Aufbewahrungsbezeichnungsrichtlinie basierend auf einer Bedingung und in Kommunikationskonformität zur [Verfügung.](communication-compliance.md)

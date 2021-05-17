@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie einem Team als Gast in Microsoft Teams beitreten.
+description: Erfahren Sie, wie Sie ein Team als Gast in Microsoft Teams.
 ms.openlocfilehash: 0260365e8a064dd96cda75c9becf9f82bc6871a3
 ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
@@ -33,22 +33,22 @@ ms.locfileid: "51903718"
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-Wenn Sie eine Microsoft Teams-Einladung zum Beitritt zu einem Team erhalten, gibt es einige Schritte, um die Einladung zu akzeptieren.
+Wenn Sie eine einladung Microsoft Teams, einem Team bei treten, gibt es einige Schritte, um die Einladung zu akzeptieren.
 
-1. Öffnen Sie die E-Mail-Einladung, und wählen **Sie Microsoft Teams öffnen aus.** Wenn die Einladung nicht angezeigt wird, überprüfen Sie Ihren Junk- oder Spamordner.
+1. Öffnen Sie die E-Mail-Einladung, und wählen **Sie Öffnen Microsoft Teams**. Wenn die Einladung nicht angezeigt wird, überprüfen Sie Ihren Junk- oder Spamordner.
   1. Wenn Ihre E-Mail-Adresse noch nicht zum Erstellen eines Microsoft-Kontos verwendet wurde, müssen Sie eins erstellen.
 
      Wählen Sie **im Dialogfeld** Konto erstellen die Option **Weiter** aus, erstellen Sie ein Kennwort, und wählen Sie **Weiter aus.**
   1. Um Ihre E-Mail-Adresse zu überprüfen, öffnen Sie die Überprüfungs-E-Mail, und kopieren Sie den Sicherheitscode.
   1. Geben Sie Ihren  Sicherheitscode in das Dialogfeld E-Mail überprüfen  ein, wählen Sie **Weiter** aus, geben Sie das CAPTCHA in die Eingabe der angezeigten Zeichen ein, wählen Sie **Weiter** und dann **Akzeptieren aus.**
-1. Wenn Sie die Microsoft Teams-App nicht herunterladen möchten, wählen Sie **stattdessen Web-App verwenden aus.**
-1. In der Teams-Web-App können Sie Beiträge anzeigen oder beantworten  oder eigene Beiträge erstellen und die Registerkarte Dateien auswählen, um Teamdokumente ein- oder zu bearbeiten.
+1. Wenn Sie die App nicht herunterladen Microsoft Teams, wählen Sie **stattdessen Web-App verwenden aus.**
+1. In der Teams können Sie Beiträge anzeigen oder beantworten oder eigene Beiträge  erstellen und die Registerkarte Dateien auswählen, um Teamdokumente ein- oder zu bearbeiten.
 
-    Wenn Sie die Teams-App bereits in Ihrer Organisation verwenden, ist der Beitritt zu einem Team als Gast wesentlich einfacher.
+    Wenn Sie bereits die Teams in Ihrer Organisation verwenden, ist der Beitritt zu einem Team als Gast wesentlich einfacher.
 
-1. Öffnen Sie einfach die Microsoft Teams-App, und wählen Sie  **Ja**  aus, um zu dem Team zu wechseln, zu dem Sie eingeladen sind.  Jetzt können Sie an dem Projekt in Teams zusammenarbeiten.
+1. Öffnen Sie Microsoft Teams App, und wählen Sie **Ja** aus, um zu dem Team zu wechseln, zu dem Sie eingeladen sind.  Jetzt können Sie an dem Projekt in einer Teams.
 2. Wenn Sie zum Team Ihres Unternehmens wechseln möchten, wählen Sie es in der  **Dropdownliste Organisation**  aus.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Gasterfahrung in Teams](https://docs.microsoft.com/microsoftteams/guest-experience) (Artikel) Verwalten von [Microsoft Teams-Einstellungen](https://docs.microsoft.com/microsoftteams/enable-features-office-365) für Ihre Organisation (Artikel) Verwenden des Gastzugriffs und des externen Zugriffs für die Zusammenarbeit mit Personen außerhalb Ihrer [Organisation](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations) (Artikel)
+[Gasterfahrung in Teams](https://docs.microsoft.com/microsoftteams/guest-experience) (Artikel) Verwalten von [Microsoft Teams-Einstellungen](https://docs.microsoft.com/microsoftteams/enable-features-office-365) für Ihre Organisation (Artikel) Verwenden des Gastzugriffs und des externen Zugriffs für die Zusammenarbeit mit Personen außerhalb [Ihrer Organisation](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations) (Artikel)

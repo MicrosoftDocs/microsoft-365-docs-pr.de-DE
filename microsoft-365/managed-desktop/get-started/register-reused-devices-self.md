@@ -1,6 +1,6 @@
 ---
 title: Selbstregistrieren vorhandener Geräte
-description: Registrieren sie wiederverwendete Geräte, die Sie möglicherweise bereits selbst haben, damit sie von Microsoft Managed Desktop verwaltet werden können.
+description: Registrieren Sie wiederverwendete Geräte, die Sie möglicherweise bereits selbst haben, damit sie von der Microsoft Managed Desktop
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -21,11 +21,11 @@ ms.locfileid: "51893275"
 # <a name="register-existing-devices-yourself"></a>Selbstregistrieren vorhandener Geräte
 
 >[!NOTE]
->In diesem Thema werden die Schritte beschrieben, wie Sie bereits vorhandene Geräte wiederverwenden und in Microsoft Managed Desktop registrieren können. Wenn Sie mit brandneuen Geräten arbeiten, führen Sie stattdessen die Schritte unter Registrieren neuer Geräte [in Microsoft Managed Desktop selbst](register-devices-self.md) aus.
+>In diesem Thema werden die Schritte beschrieben, wie Sie bereits vorhandene Geräte wiederverwenden und in Microsoft Managed Desktop. Wenn Sie mit brandneuen Geräten arbeiten, führen Sie die Schritte unter Registrieren neuer Geräte [in Microsoft Managed Desktop selbst](register-devices-self.md) aus.
 
 Der Prozess für Partner ist unter Schritte für Partner zum Registrieren [von Geräten dokumentiert.](register-devices-partner.md)
 
-Microsoft Managed Desktop kann mit brandneuen Geräten verwendet werden, oder Sie können bereits vorhandene Geräte wiederverwenden (dies erfordert, dass Sie sie neu abbilden). Sie können Geräte bei Microsoft Managed Desktop im Microsoft Endpoint Manager-Portal registrieren.
+Microsoft Managed Desktop können mit brandneuen Geräten arbeiten oder Sie können bereits vorhandene Geräte wiederverwenden (dies erfordert, dass Sie sie neu abbilden). Sie können Geräte mit Microsoft Managed Desktop im Microsoft Endpoint Manager registrieren.
 
 ## <a name="prepare-to-register-existing-devices"></a>Vorbereiten der Registrierung vorhandener Geräte
 
@@ -45,22 +45,22 @@ Microsoft Managed Desktop identifiziert jedes Gerät durch Verweisen auf den Har
 - Fragen Sie Ihren OEM-Lieferanten nach der AutoPilot-Registrierungsdatei, die die Hardwarehashes enthält.
 - Sammeln von Informationen in [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager).
 - Führen Sie Windows PowerShell -- entweder mithilfe von [](#manual-powershell-script-method) [Active Directory](#active-directory-powershell-script-method) oder manuell auf jedem Gerät - aus, und sammeln Sie die Ergebnisse in einer Datei.
-- Starten Sie jedes Gerät , aber schließen Sie die #A0 nicht ab, und sammeln Sie die Hashes auf einem [Wechseldatenträger.](#flash-drive-method)
+- Starten Sie jedes Gerät, aber schließen Sie Windows Einrichtungserfahrung nicht ab, und sammeln Sie die Hashes auf einem [Wechseldatenträger.](#flash-drive-method)
 
 #### <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
-Sie können Microsoft Endpoint Configuration Manager verwenden, um die Hardwarehashes von vorhandenen Geräten zu erfassen, die Sie bei Microsoft Managed Desktop registrieren möchten.
+Sie können die Microsoft Endpoint Configuration Manager verwenden, um die Hardwarehashes von vorhandenen Geräten zu sammeln, die Sie bei Microsoft Managed Desktop.
 
 > [!IMPORTANT]
-> Alle Geräte, für die Sie diese Informationen erhalten möchten, müssen Windows 10, Version 1703 oder höher, ausführen. 
+> Alle Geräte, für die Sie diese Informationen erhalten möchten, müssen Windows 10 Version 1703 oder höher ausgeführt werden. 
 
 Wenn Sie alle diese Voraussetzungen erfüllt haben, können Sie die Informationen sammeln, indem Sie die folgenden Schritte ausführen:
 
 1. Wählen Sie in der Configuration Manager-Konsole Überwachung **aus.** 
 2. Erweitern Sie im Arbeitsbereich Überwachung den Knoten **Berichterstellung,** erweitern Sie **Berichte,** und wählen Sie **den Knoten Hardware – Allgemein** aus. 
-3. Führen Sie den Bericht Windows **Autopilot Device Information aus,** und zeigen Sie die Ergebnisse an.
+3. Führen Sie den Bericht aus, **Windows Autopilot Device Information**, und zeigen Sie die Ergebnisse an.
 4. Wählen Sie in der Berichtsanzeige das Symbol **Exportieren** aus, und wählen Sie die **Option CSV (durch** Trennzeichen getrennt) aus.
-5. Nach dem Speichern der Datei müssen Sie die Ergebnisse nur auf die Geräte filtern, die Sie bei Microsoft Managed Desktop registrieren und die Daten auf Microsoft Managed Desktop hochladen möchten. Öffnen Sie Microsoft Endpoint Manager, navigieren Sie zum Menü **Geräte,** suchen Sie dann nach Microsoft Managed Desktop, und wählen Sie **Geräte aus.** Wählen **Sie + Geräte registrieren** aus, wodurch ein Fly-In zum Registrieren neuer Geräte geöffnet wird.
+5. Nach dem Speichern der Datei müssen Sie die Ergebnisse nur auf die Geräte filtern, auf denen Sie sich bei Microsoft Managed Desktop registrieren und die Daten auf Microsoft Managed Desktop. Öffnen Microsoft Endpoint Manager, navigieren Sie zum Menü **Geräte,** suchen Sie nach Microsoft Managed Desktop, und wählen Sie **Geräte aus.** Wählen **Sie + Geräte registrieren** aus, wodurch ein Fly-In zum Registrieren neuer Geräte geöffnet wird.
 
 
 Weitere Informationen finden Sie unter Registrieren [von Geräten mithilfe des Administratorportals.](#register-devices-by-using-the-admin-portal)
@@ -73,11 +73,11 @@ In einer Active Directory-Umgebung können Sie das PowerShell-Cmdlet verwenden, 
 - WinRM ist aktiviert.
 - Die Geräte, die Sie registrieren möchten, sind im Netzwerk aktiv (d. h., sie werden nicht getrennt oder deaktiviert).
 - Stellen Sie sicher, dass Sie über einen Domänenanmeldeinformationsparameter verfügen, der über die Berechtigung zum Remote ausführen auf den Geräten verfügt.
-- Stellen Sie sicher, dass die Windows-Firewall den Zugriff auf WMI zulässt. Führen Sie hierzu die folgenden Schritte aus:
+- Stellen Sie sicher, Windows Firewall den Zugriff auf WMI zulässt. Gehen Sie dazu folgendermaßen vor:
 
-    1. Öffnen Sie Windows Defender Firewall-Systemsteuerung, und wählen Sie App oder Feature über die **Firewall Windows Defender zulassen aus.** 
+    1. Öffnen Sie **Windows Defender Firewall** Systemsteuerung, und wählen Sie **App oder Feature über Windows Defender Firewall.**
     
-    2. Suchen **Sie die Windows-Verwaltungsinstrumentierung (WMI)** in der Liste, aktivieren Sie **private** und öffentliche Geräte, und wählen Sie dann **OK aus.**
+    2. Suchen **Windows Verwaltungsinstrumentation (Management Instrumentation, WMI)** in der Liste, aktivieren Sie **für Private** und Public , und wählen Sie dann **OK aus.**
 
 1.  Öffnen Sie eine PowerShell-Eingabeaufforderung mit Administratorrechten.
 
@@ -96,7 +96,7 @@ In einer Active Directory-Umgebung können Sie das PowerShell-Cmdlet verwenden, 
 
 3. Greifen Sie auf verzeichnisse zu, in denen Einträge für die Geräte enthalten sein können. Entfernen Sie Einträge für jedes Gerät aus *allen* Verzeichnissen, einschließlich Windows Server Active Directory Domain Services und Azure Active Directory. Beachten Sie, dass das Entfernen einige Stunden dauern kann, um den Vorgang vollständig zu verarbeiten.
 
-4. Zugriff auf Verwaltungsdienste, bei denen Einträge für die Geräte enthalten sein können. Entfernen Sie Einträge für jedes Gerät aus *allen Verwaltungsdiensten,* einschließlich Microsoft Endpoint Configuration Manager, Microsoft Intune und Windows Autopilot. Beachten Sie, dass das Entfernen einige Stunden dauern kann, um den Vorgang vollständig zu verarbeiten.
+4. Zugriff auf Verwaltungsdienste, bei denen Einträge für die Geräte enthalten sein können. Entfernen Sie Einträge für jedes Gerät *aus* allen Verwaltungsdiensten, einschließlich Microsoft Endpoint Configuration Manager, Microsoft Intune und Windows Autopilot. Beachten Sie, dass das Entfernen einige Stunden dauern kann, um den Vorgang vollständig zu verarbeiten.
 
 Jetzt können Sie mit der [Registrierung von Geräten fortfahren.](#register-devices-by-using-the-admin-portal)
 
@@ -138,7 +138,7 @@ Nachdem die Hashdaten in einer #A0 zusammengeführt wurden, können Sie nun mit 
 
 ## <a name="register-devices-by-using-the-admin-portal"></a>Registrieren von Geräten mithilfe des Administratorportals
 
-Wählen [Sie im Microsoft Endpoint Manager](https://endpoint.microsoft.com/) **geräte** im linken Navigationsbereich aus. Suchen Sie im Menü nach dem Abschnitt Microsoft Managed Desktop, und wählen Sie **Geräte aus.** Wählen Sie im Arbeitsbereich Microsoft Managed Desktop Devices die Option **+ Geräte registrieren** aus, wodurch ein Fly-In zum Registrieren neuer Geräte geöffnet wird.
+Wählen [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)im linken **Navigationsbereich** Geräte aus. Suchen Sie nach dem Microsoft Managed Desktop im Menü, und wählen Sie **Geräte aus.** Wählen Sie im arbeitsbereich Microsoft Managed Desktop Geräte auswählen **+ registrieren** Geräte aus, der ein Fly-In öffnet, um neue Geräte zu registrieren.
 
 <!-- Update with new picture [![Fly-in after selecting Register devices, listing devices with columns for assigned users, serial number, status, last-seen date, and age](../../media/new-registration-ui.png)](../../media/new-registration-ui.png) -->
 
@@ -153,7 +153,7 @@ Führen Sie die folgenden Schritte aus:
 3. Wählen **Sie Geräte registrieren aus.** Das System fügt die Geräte ihrer Liste der Geräte auf dem **Blatt Geräte** hinzu, das als **Registrierung ausstehend gekennzeichnet ist.** Die Registrierung dauert in der Regel weniger als 10 Minuten, und bei erfolgreicher Verwendung wird das Gerät als **Bereit** für Benutzer angezeigt, was bedeutet, dass es bereit ist und darauf wartet, dass ein Benutzer mit der Verwendung beginnt.
 
 > [!NOTE]
-> Wenn Sie die Azure Active Directory (AAD)-Gruppenmitgliedschaft eines Geräts manuell ändern, wird sie automatisch der Gruppe für ihr Geräteprofil zugewiesen und aus konfliktverf genden Gruppen entfernt.
+> Wenn Sie die Azure Active Directory (AAD)-Gruppenmitgliedschaft eines Geräts manuell ändern, wird sie automatisch der Gruppe für ihr Geräteprofil zugewiesen und aus allen in Konflikt enden Gruppen entfernt.
 
 Sie können den Fortschritt der Geräteregistrierung auf der Hauptseite überwachen. Mögliche gemeldete Zustände sind:
 
@@ -161,7 +161,7 @@ Sie können den Fortschritt der Geräteregistrierung auf der Hauptseite überwac
 |---------------|-------------|
 | Registrierung ausstehend | Die Registrierung ist noch nicht abgeschlossen. Überprüfen Sie später. |
 | Fehler bei der Registrierung | Die Registrierung konnte nicht abgeschlossen werden. Weitere Informationen [finden Sie unter Problembehandlung](#troubleshooting-device-registration) bei der Geräteregistrierung. |
-| Bereit für Benutzer | Die Registrierung ist erfolgreich, und das Gerät kann jetzt an den Benutzer zugestellt werden. Microsoft Managed Desktop führt sie durch das erste Einrichten, sodass Sie keine weiteren Vorbereitungen machen müssen. |
+| Bereit für Benutzer | Die Registrierung ist erfolgreich, und das Gerät kann jetzt an den Benutzer zugestellt werden. Microsoft Managed Desktop führt sie durch das erste Einrichten, sodass Sie keine weiteren Vorbereitungen mehr machen müssen. |
 | Aktiv | Das Gerät wurde an den Benutzer zugestellt und bei Ihrem Mandanten registriert. Dies bedeutet auch, dass sie das Gerät regelmäßig verwenden. |
 | Inaktiv | Das Gerät wurde an den Benutzer zugestellt und bei Ihrem Mandanten registriert. Sie haben das Gerät jedoch in letzter Zeit (in den letzten 7 Tagen) nicht verwendet.  | 
 
@@ -177,7 +177,7 @@ Sie können den Fortschritt der Geräteregistrierung auf der Hauptseite überwac
 
 ## <a name="check-the-image"></a>Überprüfen des Bilds
 
-Wenn Ihr Gerät von einem Microsoft Managed Desktop-Partneranbieter stammen, sollte das Bild korrekt sein.
+Wenn Ihr Gerät von einem Microsoft Managed Desktop Partneranbieters stammen, sollte das Bild korrekt sein.
 
 Sie können das Bild auch selbst anwenden, wenn Sie es bevorzugen. Um zu beginnen, wenden Sie sich an den Microsoft-Vertreter, mit dem Sie arbeiten, und er stellt Ihnen den Speicherort und die Schritte zum Anwenden des Bilds zur Verfügung.
 
@@ -186,7 +186,7 @@ Sie können das Bild auch selbst anwenden, wenn Sie es bevorzugen. Um zu beginne
 > [!IMPORTANT]
 > Bevor Sie das Gerät an Ihren Benutzer senden, stellen Sie sicher, dass Sie die entsprechenden [Lizenzen](../get-ready/prerequisites.md) für diesen Benutzer erhalten und angewendet haben.
 
-Wenn alle Lizenzen angewendet werden, können Sie Ihre Benutzer für die Verwendung von Geräten bereit [machen,](get-started-devices.md)und dann kann Der Benutzer das Gerät starten und die Windows-Setuperfahrung durchmachen.
+Wenn alle Lizenzen angewendet werden, können Sie Ihre Benutzer für die Verwendung von Geräten bereit [machen.](get-started-devices.md)Anschließend kann der Benutzer das Gerät starten und die Windows ausführen.
 
 
 

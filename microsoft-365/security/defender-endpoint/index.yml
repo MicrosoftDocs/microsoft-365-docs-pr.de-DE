@@ -78,11 +78,11 @@ landingContent:
     links:
     - text: Microsoft Defender für Endpoint auf Dem Mac
       url: microsoft-defender-endpoint-mac.md
-    - text: Microsoft Defender for Endpoint unter iOS
+    - text: Microsoft Defender für Endpunkt für iOS
       url: microsoft-defender-endpoint-ios.md
-    - text: Microsoft Defender for Endpoint unter Linux
+    - text: Microsoft Defender für Endpunkt unter Linux
       url: microsoft-defender-endpoint-linux.md
-    - text: Microsoft Defender für Endpoint unter Android
+    - text: Microsoft Defender für Endpunkt unter Android
       url: microsoft-defender-endpoint-android.md
 - title: Referenz
   linkLists:

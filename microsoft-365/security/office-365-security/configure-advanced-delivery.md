@@ -14,7 +14,7 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 ms.custom: ''
-description: Administratoren können erfahren, wie Sie die erweiterte Zustellungsrichtlinie in Exchange Online Protection (EOP) verwenden, um Nachrichten zu identifizieren, die nicht in bestimmten unterstützten Szenarien gefiltert werden sollten (Phishingsimulationen von Drittanbietern und Nachrichten, die an SecOps-Postfächer (Security Operations, SecOps) übermittelt werden.
+description: Administratoren können erfahren, wie Sie die erweiterte Zustellungsrichtlinie in Exchange Online Protection (EOP) verwenden, um Nachrichten zu identifizieren, die nicht in bestimmten unterstützten Szenarien gefiltert werden sollten (Phishingsimulationen von Drittanbietern und Nachrichten, die an Sicherheitsvorgänge (SecOps)-Postfächer übermittelt werden.
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX
@@ -35,21 +35,21 @@ ms.locfileid: "51876065"
 > [!NOTE]
 > Das in diesem Artikel beschriebene Feature befindet sich in Preview, ist nicht für alle verfügbar und kann geändert werden.
 
-Um Ihre Organisation standardmäßig zu [schützen,](secure-by-default.md)lässt Exchange Online Protection (EOP) keine sicheren Listen oder Filterumgehungen für Nachrichten zu, die zu Schadsoftware oder Phishing mit hoher Vertrauenheit führen. Es gibt jedoch bestimmte Szenarien, in denen die Zustellung ungefilterter Nachrichten erforderlich ist. Beispiel:
+Um Ihre Organisation standardmäßig zu [schützen,](secure-by-default.md)Exchange Online Protection (EOP) keine sicheren Listen oder Filterumgehungen für Nachrichten zu, die zu Schadsoftware oder phishingverdingen mit hoher Vertrauenheit führen. Es gibt jedoch bestimmte Szenarien, in denen die Zustellung ungefilterter Nachrichten erforderlich ist. Beispiel:
 
 - **Phishingsimulationen von** Drittanbietern: Simulierte Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren, bevor sich ein tatsächlicher Angriff auf Ihre Organisation aus wirkt.
 - **Sicherheitsvorgänge (SecOps)-Postfächer:** Dedizierte Postfächer, die von Sicherheitsteams zum Sammeln und Analysieren ungefilterter Nachrichten (sowohl gut als auch schlecht) verwendet werden.
 
-Sie verwenden die _erweiterte Zustellungsrichtlinie_ in Microsoft 365, um zu verhindern, dass diese Nachrichten _in_ diesen spezifischen Szenarien gefiltert <sup>\*</sup> werden. Die erweiterte Übermittlungsrichtlinie stellt sicher, dass Nachrichten in diesen Szenarien nicht gefiltert werden:
+Sie verwenden die _erweiterte Übermittlungsrichtlinie_ in Microsoft 365, um zu verhindern, dass diese Nachrichten _in_ diesen spezifischen Szenarien gefiltert <sup>\*</sup> werden. Die erweiterte Übermittlungsrichtlinie stellt sicher, dass Nachrichten in diesen Szenarien nicht gefiltert werden:
 
-- Filter in EOP und Microsoft Defender für Office 365 ergreifen keine Aktion für diese Nachrichten.<sup>\*</sup>
+- Filter in EOP und Microsoft Defender Office 365 keine Aktion für diese Nachrichten.<sup>\*</sup>
 - [Die Zero-Hour Purge (ZAP)](zero-hour-auto-purge.md) für Spam und Phishing ergreift keine Aktion für diese Nachrichten.<sup>\*</sup>
 - [Standardsystemwarnungen](alerts.md) werden für diese Szenarien nicht ausgelöst.
 - [AIR und clustering in Defender for Office 365](office-365-air.md) ignoriert diese Nachrichten.
 - Speziell für Phishingsimulationen von Drittanbietern:
   - [Administratorübermittlungen](admin-submission.md) generiert eine automatische Antwort mit der Meldung, dass die Nachricht Teil einer Phishingsimulationskampagne ist und keine echte Bedrohung ist. Warnungen und AIR werden nicht ausgelöst.
-  - [Sichere Links in Defender für Office 365](safe-links.md) blockieren oder detonieren die speziell identifizierten URLs in diesen Nachrichten nicht.
-  - [Sichere Anlagen in Defender für Office 365](safe-attachments.md) detonieren Anlagen in diesen Nachrichten nicht.
+  - [Sichere Links in Defender for Office 365](safe-links.md) blockiert oder detoniert die speziell identifizierten URLs in diesen Nachrichten nicht.
+  - [Sichere Anlagen in Defender for Office 365](safe-attachments.md) nicht Anlagen in diesen Nachrichten detonieren.
 
 <sup>\*</sup> Sie können Schadsoftwarefilterung oder ZAP für Schadsoftware nicht umgehen.
 
@@ -66,10 +66,10 @@ Nachrichten, die durch die erweiterte Übermittlungsrichtlinie identifiziert wer
 - Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Öffnen Sie , um direkt zur **Seite Erweiterte Zustellung zu** <https://protection.office.com/advanceddelivery> wechseln.
 
 - Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden:
-  - Zum Erstellen, Ändern oder Entfernen konfigurierter Einstellungen in der Erweiterten Übermittlungsrichtlinie müssen Sie Mitglied der Rollengruppe Sicherheitsadministrator im  **Security & Compliance Center** und Mitglied der Rollengruppe Organisationsverwaltung in Exchange **Online sein.**   
+  - Zum Erstellen, Ändern oder Entfernen konfigurierter Einstellungen in der Erweiterten Übermittlungsrichtlinie müssen Sie Mitglied der Rollengruppe Sicherheitsadministrator im  **Security & Compliance Center** und Mitglied der Rollengruppe Organisationsverwaltung in **Exchange Online sein.**   
   - Für den schreibgeschützten Zugriff auf die Erweiterte Übermittlungsrichtlinie müssen Sie Mitglied der Rollengruppen **"Globaler Leser"** oder **"Sicherheitsleser"** sein.
 
-  Weitere Informationen finden Sie unter [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) and Permissions in Exchange [Online](/exchange/permissions-exo/permissions-exo).
+  Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md) und Berechtigungen in [Exchange Online](/exchange/permissions-exo/permissions-exo).
 
 ## <a name="use-the-security--compliance-center-to-configure-third-party-phishing-simulations-in-the-advanced-delivery-policy"></a>Verwenden des Security & Compliance Center zum Konfigurieren von Phishingsimulationen von Drittanbietern in der erweiterten Übermittlungsrichtlinie
 
@@ -96,7 +96,7 @@ Die von Ihnen konfigurierten Phishingsimulationseinträge von Drittanbietern wer
 
 2. Wählen Sie **auf der** Seite Erweiterte Zustellung die Registerkarte **SecOps-Postfach** aus, und klicken Sie dann auf **Bearbeiten**.
 
-3. Geben Sie **im geöffneten SecOps-Postfachf** flyout die E-Mail-Adressen vorhandener Exchange Online-Postfächer ein, die Sie als SecOps-Postfächer festlegen möchten. Verteilergruppen sind nicht zulässig.
+3. Geben Sie **im geöffneten SecOps-Postfachf** flyout die E-Mail-Adressen vorhandener Exchange Online ein, die Sie als SecOps-Postfächer festlegen möchten. Verteilergruppen sind nicht zulässig.
 
 4. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 

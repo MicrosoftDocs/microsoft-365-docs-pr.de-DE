@@ -40,17 +40,17 @@ ms.locfileid: "51765251"
 
 Die Ermittlung kann so konfiguriert werden, dass sie sich im Standard- oder Basismodus befindet. Verwenden Sie die Standardoption, um Aktiv nach Geräten in Ihrem Netzwerk zu suchen, wodurch die Ermittlung von Endpunkten besser gewährleistet und eine bessere Geräteklassifizierung ermöglicht wird. 
 
-Sie können die Liste der Geräte anpassen, die zum Ausführen der Standarderkennung verwendet werden. Sie können entweder die Standarderkennung auf allen integrierten Geräten aktivieren, die diese Funktion auch unterstützen (derzeit nur Windows 10-Geräte), oder Sie können eine Teilmenge oder Teilmengen Ihrer Geräte auswählen, indem Sie ihre Gerätetags angeben. 
+Sie können die Liste der Geräte anpassen, die zum Ausführen der Standarderkennung verwendet werden. Sie können entweder die Standarderkennung auf allen integrierten Geräten aktivieren, die diese Funktion auch unterstützen (derzeit nur Windows 10 Geräte), oder Sie können eine Teilmenge oder Teilmenge Ihrer Geräte auswählen, indem Sie ihre Gerätetags angeben. 
 
 
 > [!IMPORTANT]
-> Für die Vorschau müssen Sie zunächst die Vorschaufeatures im Microsoft Defender Security Center aktivieren.
-> Anschließend können Sie auf die Geräteermittlungskonfiguration im Microsoft 365 Security Center zugreifen. Die Liste der nicht verwalteten Geräte und Sicherheitsempfehlungen ist sowohl im Microsoft Defender Security Center als auch im Microsoft 365 Security Center verfügbar, während die Dashboardkacheln nur im Microsoft 365 Security Center verfügbar sind.
+> Für die Vorschau müssen Sie zunächst die Vorschaufeatures in Microsoft Defender Security Center.
+> Anschließend können Sie auf die Geräteermittlungskonfiguration im Microsoft 365 zugreifen. Die Liste der nicht verwalteten Geräte und Sicherheitsempfehlungen ist sowohl im Microsoft Defender Security Center als auch im Microsoft 365 Security Center verfügbar, während die Dashboardkacheln nur in Microsoft 365 Security Center verfügbar sind.
 
 
 Gehen Sie in Microsoft 365 Security Center wie folgt vor:
 
-1.  Navigieren Sie zu **Einstellungen > Geräteerkennung**.
+1.  Navigieren Sie zu **Einstellungen > Geräteermittlung**.
 2.  Wählen Sie den Suchmodus aus, der auf Ihren integrierten Geräten verwendet werden soll. 
 3.  Wenn Sie die Standarderkennung verwenden möchten, wählen Sie aus, welche Geräte für die aktive Suche verwendet werden: alle Geräte oder eine Teilmenge, indem Sie ihre Gerätetags angeben.
 4. Klicken Sie auf **Speichern**.
@@ -86,7 +86,7 @@ Sie steuern, wo die Geräteermittlung stattfindet. In überwachten Netzwerken wi
 
 Wenn Sie die anfängliche Erkennungsklassifizierung auswählen, wird der standardmäßige Systemmonitorstatus angewendet. Wenn Sie den standardmäßigen Systemmonitorstatus auswählen, werden Netzwerke, die als Unternehmensnetzwerke identifiziert wurden, überwacht und als nicht unternehmensverbunden identifizierte Netzwerke automatisch ignoriert.
  
-1. Wählen **Sie Einstellungen > Geräteerkennung aus.**
+1. Wählen **Einstellungen > Geräteermittlung aus.**
 2. Wählen **Sie Überwachte Netzwerke aus.** 
 3. Zeigen Sie die Liste der Netzwerke an. 
 4. Wählen Sie die drei Punkte neben dem Netzwerknamen aus. 
@@ -104,5 +104,5 @@ Wenn Sie die anfängliche Erkennungsklassifizierung auswählen, wird der standar
 
 
 ## <a name="see-also"></a>Siehe auch
-- [Übersicht über die Geräteerkennung](device-discovery.md)
+- [Übersicht über die Geräteermittlung](device-discovery.md)
 - [Häufig gestellte Fragen zur Geräteerkennung](device-discovery-faq.md)

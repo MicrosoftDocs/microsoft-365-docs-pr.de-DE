@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51929299"
 ---
-# <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (früher Microsoft Flow) und Azure-Funktionen
+# <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (früher Microsoft Flow) und Azure Functions
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "51929299"
 
 Das Automatisieren von Sicherheitsverfahren ist eine Standardanforderung für jedes moderne Security Operations Center. Der Mangel an professionellen Cyber defenders zwingt SOC, auf effizienteste Weise zu arbeiten, und Automatisierung ist ein Muss. Microsoft Power Automate unterstützt verschiedene Connectors, die genau dafür erstellt wurden. Sie können eine End-to-End-Prozedurautomatisierung innerhalb weniger Minuten erstellen.
 
-Die Microsoft Defender-API verfügt über einen offiziellen Flussconnector mit vielen Funktionen.
+Microsoft Defender API verfügt über einen offiziellen Flow Connector mit vielen Funktionen.
 
 ![Abbildung der Anmeldeinformationen bearbeiten1](images/api-flow-0.png)
 
@@ -46,7 +46,7 @@ Die Microsoft Defender-API verfügt über einen offiziellen Flussconnector mit v
 
 ## <a name="usage-example"></a>Verwendungsbeispiel
 
-Im folgenden Beispiel wird veranschaulicht, wie Sie einen Fluss erstellen, der jedes Mal ausgelöst wird, wenn eine neue Warnung für Ihren Mandanten auftritt.
+Im folgenden Beispiel wird veranschaulicht, wie Sie eine Flow, die jedes Mal ausgelöst wird, wenn eine neue Warnung für Ihren Mandanten auftritt.
 
 1. Melden Sie sich bei [Microsoft Power Automate an.](https://flow.microsoft.com)
 
@@ -54,11 +54,11 @@ Im folgenden Beispiel wird veranschaulicht, wie Sie einen Fluss erstellen, der j
 
     ![Abbildung der Anmeldeinformationen für die Bearbeitung2](images/api-flow-1.png)
 
-3. Wählen Sie einen Namen für Ihren Flow aus, suchen Sie nach "Microsoft Defender ATP Triggers" als Auslöser, und wählen Sie dann den neuen Alerts-Trigger aus.
+3. Wählen Sie einen Namen für Flow, suchen Sie nach "Microsoft Defender ATP Trigger" als Trigger, und wählen Sie dann den neuen Alerts-Trigger aus.
 
     ![Abbildung der Anmeldeinformationen bearbeiten3](images/api-flow-2.png)
 
-Jetzt haben Sie einen Flow, der jedes Mal ausgelöst wird, wenn eine neue Warnung auftritt.
+Jetzt haben Sie eine Flow, die jedes Mal ausgelöst wird, wenn eine neue Warnung auftritt.
 
 ![Abbildung der Anmeldeinformationen bearbeiten4](images/api-flow-3.png)
 
@@ -68,7 +68,7 @@ Der Warnungsauslöser stellt nur die Warnungs-ID und die Computer-ID zur Verfüg
 
 ### <a name="get-the-alert-entity-using-the-connector"></a>Get the Alert entity using the connector
 
-1. Wählen **Sie Microsoft Defender ATP** für den neuen Schritt aus.
+1. Wählen **Microsoft Defender ATP** für den neuen Schritt aus.
 
 2. Wählen Sie **Warnungen – Abrufen einer einzelnen Warnungs-API aus.**
 
@@ -82,7 +82,7 @@ Der Warnungsauslöser stellt nur die Warnungs-ID und die Computer-ID zur Verfüg
 
 2. Überprüfen Sie, ob der Schweregrad der Warnung **dem Wert High** entspricht.
 
-   Wenn ja, fügen Sie die **Microsoft Defender ATP - Computeraktion** isolieren mit der Computer-ID und einem Kommentar hinzu.
+   Wenn ja, fügen Sie die **Microsoft Defender ATP - Computeraktion** mit der Computer-ID und einem Kommentar isolieren hinzu.
 
     ![Abbildung der Anmeldeinformationen bearbeiten6](images/api-flow-5.png)
 

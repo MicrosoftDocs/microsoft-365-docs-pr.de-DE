@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2cba47b3-f09e-4911-9207-ac056fcb9db7
-description: Die vorherige Version der Office 365-Nachrichtenverschlüsselung hängt von der Verwaltung von Microsoft Azure-Rechten (früher als Windows Azure Active Directory Rights Management bekannt).
+description: Die vorherige Version von Office 365-Nachrichtenverschlüsselung hängt von Microsoft Azure Rights Management (früher als Windows Azure Active Directory Rights Management bekannt).
 ms.openlocfilehash: 978a8027c79de574b80aeedabcbbd51fa6f9e2a0
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -24,18 +24,18 @@ ms.locfileid: "50919491"
 ---
 # <a name="set-up-azure-rights-management-for-the-previous-version-of-message-encryption"></a>Einrichten der Azure Rights Management für die vorherige Version der Nachrichtenverschlüsselung
 
-In diesem Thema werden die Schritte beschrieben, die Sie ausführen müssen, um Azure Rights Management (RMS), teil von Azure Information Protection, für die Verwendung mit der vorherigen Version von Office 365 Message Encryption (OME) zu aktivieren und zu einrichten.
+In diesem Thema werden die Schritte beschrieben, die Sie ausführen müssen, um Azure Rights Management (RMS), teil von Azure Information Protection, für die Verwendung mit der vorherigen Version von Office 365-Nachrichtenverschlüsselung (OME) zu aktivieren und zu einrichten.
 
 ## <a name="this-article-only-applies-to-the-previous-version-of-ome"></a>Dieser Artikel gilt nur für die vorherige Version von OME
 
-Wenn Sie Ihre Organisation noch nicht in die neuen OME-Funktionen verschoben haben, aber bereits OME bereitgestellt haben, gelten die Informationen in diesem Artikel für Ihre Organisation. Microsoft empfiehlt, einen Plan für den Wechsel zu den neuen OME-Funktionen zu erstellen, sobald dies für Ihre Organisation sinnvoll ist. Anweisungen finden Sie unter [Einrichten neuer Office 365-Nachrichtenverschlüsselungsfunktionen](set-up-new-message-encryption-capabilities.md). Weitere Informationen zur Funktionsweise der neuen Funktionen finden Sie unter [Office 365 Message Encryption](ome.md). Der Rest dieses Artikels bezieht sich auf das OME-Verhalten vor der Veröffentlichung der neuen OME-Funktionen.
+Wenn Sie Ihre Organisation noch nicht in die neuen OME-Funktionen verschoben haben, aber bereits OME bereitgestellt haben, gelten die Informationen in diesem Artikel für Ihre Organisation. Microsoft empfiehlt, einen Plan für den Wechsel zu den neuen OME-Funktionen zu erstellen, sobald dies für Ihre Organisation sinnvoll ist. Anweisungen finden Sie unter [Set up new Office 365-Nachrichtenverschlüsselung capabilities](set-up-new-message-encryption-capabilities.md). Weitere Informationen zur Funktionsweise der neuen Funktionen finden Sie unter [Office 365-Nachrichtenverschlüsselung](ome.md). Der Rest dieses Artikels bezieht sich auf das OME-Verhalten vor der Veröffentlichung der neuen OME-Funktionen.
 
-## <a name="prerequisites-for-using-the-previous-version-of-office-365-message-encryption"></a>Voraussetzungen für die Verwendung der vorherigen Version der Office 365-Nachrichtenverschlüsselung
+## <a name="prerequisites-for-using-the-previous-version-of-office-365-message-encryption"></a>Voraussetzungen für die Verwendung der vorherigen Version von Office 365-Nachrichtenverschlüsselung
 <a name="warmprereqs"> </a>
 
-Office 365 Message Encryption (OME), einschließlich IRM, hängt von Azure Rights Management (Azure RMS) ab. Azure RMS ist die von Azure Information Protection verwendete Schutztechnologie. Für die Verwendung von OME muss Ihre Organisation ein Exchange Online- oder Exchange Online Protection-Abonnement enthalten, das wiederum ein Azure Rights Management-Abonnement enthält.
+Office 365-Nachrichtenverschlüsselung (OME), einschließlich IRM, hängt von Azure Rights Management (Azure RMS) ab. Azure RMS ist die von Azure Information Protection verwendete Schutztechnologie. Für die Verwendung von OME muss Ihre Organisation ein Exchange Online- oder Exchange Online Protection-Abonnement enthalten, das wiederum ein Azure Rights Management-Abonnement enthält.
   
-- Wenn Sie nicht sicher sind, was Ihr Abonnement enthält, lesen Sie die Exchange Online-Dienstbeschreibungen für [Nachrichtenrichtlinie, Wiederherstellung und Compliance](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance).
+- Wenn Sie nicht sicher sind, was Ihr Abonnement enthält, lesen Sie die Exchange Online-Dienstbeschreibungen für Nachrichtenrichtlinie, Wiederherstellung [und Compliance](/office365/servicedescriptions/exchange-online-service-description/message-policy-and-compliance).
 
 - Wenn Sie über Azure Rights Management verfügen, aber nicht für Exchange Online oder Exchange Online Protection eingerichtet sind, wird in diesem Artikel erläutert, wie Sie Azure Rights Management aktivieren, und anschließend wird die beste Methode zum Einrichten von OME für die Zusammenarbeit mit Azure Rights Management beschrieben.
 
@@ -54,7 +54,7 @@ Eine TPD ist eine XML-Datei, die Informationen zu den Einstellungen für die Rec
   
  **So importieren Sie TPDs aus Azure RMS**
   
-1. [Herstellen einer Verbindung mit Exchange Online mithilfe von Remote PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1. [Verbinden, Exchange Online Remote PowerShell zu verwenden.](/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Wählen Sie die Schlüsselfreigabe-URL aus, die dem geografischen Standort Ihrer Organisation entspricht:
 
@@ -64,7 +64,7 @@ Eine TPD ist eine XML-Datei, die Informationen zu den Einstellungen für die Rec
 |Europäische Union  <br/> |https://sp-rms.eu.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |Asien  <br/> |https://sp-rms.ap.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
 |Südamerika  <br/> |https://sp-rms.sa.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
-|Office 365 für Behörden (Community-Cloud der US-Regierung)  <br/> Dieser RMS-Schlüsselfreigabespeicherort ist für Kunden reserviert, die Office 365 für Regierungs-SKUs erworben haben.  <br/> |https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
+|Office 365 für Behörden (Community-Cloud der US-Regierung)  <br/> Dieser RmS-Schlüsselfreigabespeicherort ist für Kunden reserviert, die Office 365 für Government SKUs erworben haben.  <br/> |https://sp-rms.govus.aadrm.com/TenantManagement/ServicePartner.svc  <br/> |
   
 3. Konfigurieren Sie den Speicherort für die Schlüsselfreigabe, indem Sie das [Cmdlet Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) wie folgt ausführen: 
 
@@ -94,13 +94,13 @@ Eine TPD ist eine XML-Datei, die Informationen zu den Einstellungen für die Rec
 
    Unter anderem überprüft dieses Cmdlet die Konnektivität mit dem Azure Rights Management-Dienst, lädt die TPD herunter und überprüft deren Gültigkeit.
 
-6. Führen Sie [das Cmdlet Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) wie folgt aus, um die Bereitstellung von Azure Rights Management-Vorlagen in Outlook im Web und Outlook zu deaktivieren: 
+6. Führen Sie [das Cmdlet Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) wie folgt aus, um zu deaktivieren, dass Azure Rights Management-Vorlagen in Outlook im Web und Outlook: 
 
    ```powershell
    Set-IRMConfiguration -ClientAccessServerEnabled $false
    ```
 
-7. Führen Sie das [Cmdlet Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) wie folgt aus, um Azure Rights Management für Ihre cloudbasierte E-Mail-Organisation zu aktivieren und es für die Verwendung von Azure Rights Management für Die Office 365-Nachrichtenverschlüsselung zu konfigurieren:
+7. Führen Sie [das Cmdlet Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) wie folgt aus, um die Azure Rights Management für Ihre cloudbasierte E-Mail-Organisation zu aktivieren, und konfigurieren Sie es für die Verwendung von Azure Rights Management für Office 365-Nachrichtenverschlüsselung:
 
    ```powershell
    Set-IRMConfiguration -InternalLicensingEnabled $true
@@ -111,12 +111,12 @@ Eine TPD ist eine XML-Datei, die Informationen zu den Einstellungen für die Rec
 ## <a name="i-have-the-previous-version-of-ome-set-up-with-active-directory-rights-management-not-azure-information-protection-what-do-i-do"></a>Ich habe die vorherige Version von OME mit Active Directory Rights Management und nicht Mit Azure Information Protection eingerichtet. Was kann ich tun?
 <a name="importTPDs"> </a>
 
-Sie können ihre vorhandenen Nachrichtenflussregeln für die Office 365-Nachrichtenverschlüsselung weiterhin mit active Directory Rights Management verwenden, sie können die neuen OME-Funktionen jedoch nicht konfigurieren oder verwenden. Stattdessen müssen Sie zu Azure Information Protection migrieren. Informationen zur Migration und was dies für Ihre Organisation bedeutet, finden Sie unter Migrieren von [AD RMS zu Azure Information Protection](/information-protection/deploy-use/prepare-environment-adrms).
+Sie können weiterhin Ihre vorhandenen Office 365-Nachrichtenverschlüsselung E-Mail-Flussregeln mit active Directory Rights Management verwenden, aber Sie können die neuen OME-Funktionen nicht konfigurieren oder verwenden. Stattdessen müssen Sie zu Azure Information Protection migrieren. Informationen zur Migration und was dies für Ihre Organisation bedeutet, finden Sie unter Migrieren von [AD RMS zu Azure Information Protection](/information-protection/deploy-use/prepare-environment-adrms).
   
 ## <a name="next-steps"></a>Nächste Schritte
 <a name="importTPDs"> </a>
 
-Wenn Sie die neuen OME-Funktionen aktivieren möchten, nachdem Sie das Azure Rights Management-Setup abgeschlossen haben, finden Sie weitere Informationen unter Einrichten neuer Office 365-Nachrichtenverschlüsselungsfunktionen, die auf [Azure Information Protection aufgebaut sind.](./set-up-new-message-encryption-capabilities.md)
+Wenn Sie die neuen OME-Funktionen aktivieren möchten, nachdem Sie das Azure Rights Management-Setup abgeschlossen haben, finden Sie weitere Informationen unter Einrichten neuer Office 365-Nachrichtenverschlüsselung-Funktionen, die auf [Azure Information Protection aufgebaut sind.](./set-up-new-message-encryption-capabilities.md)
   
 Nachdem Sie Ihre Organisation für die Verwendung der neuen OME-Funktionen eingerichtet haben, können Sie Nachrichtenflussregeln definieren, um E-Mail-Nachrichten mit neuen [OME-Funktionen zu schützen.](define-mail-flow-rules-to-encrypt-email.md)
   

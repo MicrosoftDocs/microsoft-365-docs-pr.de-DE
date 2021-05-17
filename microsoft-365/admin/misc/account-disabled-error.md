@@ -26,6 +26,6 @@ ms.locfileid: "50914942"
 ---
 # <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a>Abrufen eines kontobehinderten Fehlers in Outlook im Web
 
-Wenn Sie den  Fehler erhalten Ihr Konto wurde deaktiviert, wenn Sie versuchen, Outlook im Web zu öffnen (früher als Outlook Web App bezeichnet), hat Ihr Administrator möglicherweise Den Zugriff auf Outlook im Web `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException` deaktiviert.
+Wenn Sie den  Fehler erhalten Ihr Konto wurde deaktiviert, wenn Sie versuchen, Outlook im Web zu öffnen (früher als Outlook Web App bezeichnet), hat Ihr Administrator möglicherweise Ihren Zugriff auf Outlook im `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException` Web deaktiviert.
 
-Ihr Administrator kann diesen Fehler beheben, indem Er die Schritte im Thema Aktivieren oder Deaktivieren von [Outlook Web App für ein Postfach ausführen.](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)
+Ihr Administrator kann diesen Fehler beheben, indem Er die Schritte im Thema Aktivieren oder [Deaktivieren Outlook Web App für ein Postfach ausführen.](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)

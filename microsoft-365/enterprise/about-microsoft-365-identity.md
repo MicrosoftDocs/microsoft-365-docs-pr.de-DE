@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365-Identitätsmodelle und Azure Active Directory
+title: Microsoft 365 identitätsmodelle und -Azure Active Directory
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
-description: Erfahren Sie, wie Sie den Azure AD-Benutzeridentitätsdienst in Microsoft 365 mithilfe von cloudbasierten oder hybriden Identitätsmodellen verwalten.
+description: Erfahren Sie, wie Sie den Azure AD-Benutzeridentitätsdienst in Microsoft 365 cloudbasierten oder hybriden Identitätsmodellen verwalten.
 ms.openlocfilehash: b54ccce6ea2a468e02d9db95e7932d847df4e64b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -30,11 +30,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905704"
 ---
-# <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365-Identitätsmodelle und Azure Active Directory
+# <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Microsoft 365 identitätsmodelle und -Azure Active Directory
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Microsoft 365 verwendet Azure Active Directory (Azure AD), einen cloudbasierten Benutzeridentitäts- und Authentifizierungsdienst, der in Ihrem Microsoft 365-Abonnement enthalten ist, um Identitäten und Authentifizierung für Microsoft 365 zu verwalten. Die korrekte Konfiguration Ihrer Identitätsinfrastruktur ist für die Verwaltung des Microsoft 365-Benutzerzugriffs und der Berechtigungen für Ihre Organisation unerlässlich.
+Microsoft 365 verwendet Azure Active Directory (Azure AD), einen cloudbasierten Benutzeridentitäts- und Authentifizierungsdienst, der in Ihrem Microsoft 365-Abonnement enthalten ist, um Identitäten und die Authentifizierung für Microsoft 365. Die korrekte Konfiguration Ihrer Identitätsinfrastruktur ist für die Verwaltung Microsoft 365 Benutzerzugriff und -berechtigungen für Ihre Organisation unerlässlich.
 
 Bevor Sie beginnen, schauen Sie sich dieses Video an, um eine Übersicht über die Identitätsmodelle und Authentifizierung für Microsoft 365 zu erhalten.
 
@@ -42,9 +42,9 @@ Bevor Sie beginnen, schauen Sie sich dieses Video an, um eine Übersicht über d
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-Ihre erste Planungsauswahl ist das Microsoft 365-Identitätsmodell.
+Ihre erste Planungsauswahl ist das Microsoft 365 Identitätsmodell.
 
-## <a name="microsoft-365-identity-models"></a>Microsoft 365-Identitätsmodelle
+## <a name="microsoft-365-identity-models"></a>Microsoft 365 Identitätsmodelle
 
 Um Benutzerkonten zu planen, müssen Sie zunächst die beiden Identitätsmodelle in Microsoft 365 verstehen. Sie können die Identitäten Ihrer Organisation nur in der Cloud verwalten, oder Sie können Ihre lokalen AD DS-Identitäten (Active Directory Domain Services) verwalten und diese zur Authentifizierung verwenden, wenn Benutzer auf Microsoft 365-Clouddienste zugreifen.  
 
@@ -52,7 +52,7 @@ Nachfolgend finden Sie die beiden Identitätstypen sowie deren beste Anwendungsf
 
 | Attribut | Reine Cloudidentität | Hybrididentität |
 |:-------|:-----|:-----|
-| **Definition** | Das Benutzerkonto ist nur im Azure AD-Mandanten für Ihr Microsoft 365-Abonnement vorhanden. | Ein Benutzerkonto ist in AD DS vorhanden, und eine Kopie befindet sich auch im Azure AD-Mandanten für Ihr Microsoft 365-Abonnement. Das Benutzerkonto in Azure AD kann auch eine Hashversion des bereits mit einem Hash bezeichneten AD DS-Benutzerkontokennworts enthalten. |
+| **Definition** | Das Benutzerkonto ist nur im Azure AD-Mandanten für Ihr Microsoft 365 vorhanden. | Ein Benutzerkonto ist in AD DS vorhanden, und eine Kopie befindet sich auch im Azure AD-Mandanten für Ihr Microsoft 365-Abonnement. Das Benutzerkonto in Azure AD kann auch eine Hashversion des bereits mit einem Hash bezeichneten AD DS-Benutzerkontokennworts enthalten. |
 | **Authentifizierung von Benutzeranmeldeinformationen durch Microsoft 365** | Der Azure AD-Mandant für Ihr Microsoft 365-Abonnement führt die Authentifizierung mit dem Cloudidentitätskonto durch. | Der Azure AD-Mandant für Ihr Microsoft 365-Abonnement behandelt verarbeitet entweder den Authentifizierungsprozess oder leitet den Benutzer an einen anderen Identitätsanbieter weiter. |
 | **Ideal für** | Organisationen, die keinen lokalen AD DS besitzen oder benötigen. | Organisationen, die AD DS oder einen anderen Identitätsanbieter verwenden. |
 | **Größter Vorteil** | Einfach zu verwenden. Es sind keine zusätzlichen Verzeichnistools oder Server erforderlich. | Benutzer können dieselben Anmeldeinformationen verwenden, wenn sie auf lokale oder cloudbasierte Ressourcen zugreifen. |
@@ -66,7 +66,7 @@ Hier sind die grundlegenden Komponenten der reinen Cloudidentität.
  
 ![Grundlegende Komponenten der cloudbasierten Identität](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
-Lokale und Remotebenutzer (Online)-Benutzer verwenden ihre Azure AD-Benutzerkonten und Kennwörter, um auf Microsoft 365-Clouddienste zu zugreifen. Azure AD authentifiziert Benutzeranmeldeinformationen basierend auf den gespeicherten Benutzerkonten und Kennwörtern.
+Lokale und Remotebenutzer (online) verwenden ihre Azure AD-Benutzerkonten und Kennwörter, um auf Microsoft 365 zugreifen. Azure AD authentifiziert Benutzeranmeldeinformationen basierend auf den gespeicherten Benutzerkonten und Kennwörtern.
 
 ### <a name="administration"></a>Verwaltung
 Da Benutzerkonten nur in Azure AD gespeichert werden, verwalten Sie Cloudidentitäten mit Tools wie dem [Microsoft 365 Admin Center](../admin/add-users/index.yml) und [Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md). 
@@ -93,7 +93,7 @@ Der Azure AD-Mandant hat eine Kopie der AD DS-Konten. In dieser Konfiguration au
 
 Da die ursprünglichen und autorisierenden Benutzerkonten im lokalen AD DS gespeichert werden, verwalten Sie Ihre Identitäten mit denselben Tools wie Ad DS. 
 
-Sie verwenden nicht das Microsoft 365 Admin Center oder PowerShell für Microsoft 365, um synchronisierte Benutzerkonten in Azure AD zu verwalten.
+Sie verwenden nicht das Microsoft 365 Admin Center oder PowerShell for Microsoft 365, um synchronisierte Benutzerkonten in Azure AD zu verwalten.
 
 ## <a name="next-step"></a>Nächster Schritt
 

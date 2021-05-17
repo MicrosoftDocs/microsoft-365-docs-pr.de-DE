@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Erfahren Sie mehr über die Verwaltung von Microsoft 365-Gruppen.
+description: Erfahren Sie mehr über das Verwalten Microsoft 365 Gruppen.
 ms.openlocfilehash: 529bdb874661329497b103a1207b90625ad33a4b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -33,11 +33,11 @@ ms.locfileid: "50911007"
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Je nach Konfiguration können Sie Microsoft 365-Gruppen auf verschiedene Weise verwalten. Sie können Benutzerkonten im [Microsoft 365 Admin Center,](../admin/add-users/index.yml)PowerShell, in Active Directory Domain Services (AD DS) oder im [Azure Active Directory (Azure AD) Admin Center verwalten.](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
+Sie können die Microsoft 365 je nach Konfiguration auf verschiedene Weise verwalten. Sie können Benutzerkonten im [Microsoft 365 Admin Center](../admin/add-users/index.yml), PowerShell, in Active Directory Domain Services (AD DS) oder im Azure Active Directory [(Azure AD) Admin Center verwalten.](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) 
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-groups"></a>Planen, wo und wie Sie Ihre Gruppen verwalten
 
-Wo und wie Sie Ihre Benutzerkonten verwalten können, hängt vom Identitätsmodell ab, das Sie für Microsoft 365 verwenden möchten. Die beiden Gesamtmodelle sind nur cloudbasierte und hybride Modelle.
+Wo und wie Sie Ihre Benutzerkonten verwalten können, hängt vom Identitätsmodell ab, das Sie für Ihre Microsoft 365. Die beiden Gesamtmodelle sind nur cloudbasierte und hybride Modelle.
   
 ### <a name="cloud-only"></a>Rein cloudbasiert
 
@@ -49,7 +49,7 @@ Sie erstellen und verwalten Gruppen mit:
     
 ### <a name="hybrid"></a>Hybrid
 
-AD DS-Gruppen werden von AD DS mit Microsoft 365 synchronisiert, daher müssen Sie lokale AD DS-Tools verwenden, um diese Gruppen zu verwalten.
+AD DS-Gruppen werden mit Microsoft 365 von AD DS synchronisiert, daher müssen Sie lokale AD DS-Tools verwenden, um diese Gruppen zu verwalten.
 
 Sie können auch Azure AD-Gruppen erstellen und verwalten, die von AD DS-Gruppen getrennt sind, aber Benutzer und Gruppen aus AD DS enthalten können. In diesem Fall können Sie:
 

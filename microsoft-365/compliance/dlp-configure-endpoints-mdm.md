@@ -25,17 +25,17 @@ ms.locfileid: "50917991"
 
 **Gilt für:**
 
-- [Microsoft 365 Endpoint Data Loss Prevention (DLP)](./endpoint-dlp-learn-about.md)
+- [Microsoft 365 Verhinderung von Endpunktdatenverlusten (Endpoint Data Loss Prevention, DLP)](./endpoint-dlp-learn-about.md)
 
-Sie können Mobile Device Management (MDM)-Lösungen verwenden, um Geräte zu konfigurieren. Microsoft 365 Endpoint Data Loss Prevention unterstützt MDMs, indem OMA-URIs richtlinien zum Verwalten von Geräten bereitstellen.
+Sie können Mobile Device Management (MDM)-Lösungen verwenden, um Geräte zu konfigurieren. Microsoft 365 Die Verhinderung von Endpunktdatenverlusten unterstützt MDMs, indem OMA-URIs zum Erstellen von Richtlinien zum Verwalten von Geräten bereitstellen.
 
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
-Wenn Sie Microsoft Intune verwenden, muss das Gerät MDM registriert sein. Andernfalls werden einstellungen nicht erfolgreich angewendet. 
+Wenn Sie eine Microsoft Intune verwenden, muss das Gerät MDM registriert sein. Andernfalls werden einstellungen nicht erfolgreich angewendet. 
 
-Weitere Informationen zum Aktivieren von MDM mit Microsoft Intune finden Sie unter [Device enrollment (Microsoft Intune)](/mem/intune/enrollment/device-enrollment).
+Weitere Informationen zum Aktivieren von MDM mit Microsoft Intune finden Sie unter [Device enrollment (Microsoft Intune).](/mem/intune/enrollment/device-enrollment)
 
-## <a name="onboard-devices-using-microsoft-intune"></a>Onboarding von Geräten mithilfe von Microsoft Intune
+## <a name="onboard-devices-using-microsoft-intune"></a>Onboarding von Geräten mithilfe Microsoft Intune
 
 Befolgen Sie die Anweisungen von [Intune](/intune/advanced-threat-protection).
 
@@ -51,21 +51,21 @@ Aus Sicherheitsgründen läuft das für Offboard-Geräte verwendete Paket 30 Tag
 
 1. Holen Sie sich das offboarding-Paket aus [dem Microsoft Compliance Center](https://compliance.microsoft.com/).
 
-2. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Geräte onboarding**  >  **Offboarding aus.**
+2. Wählen Sie im Navigationsbereich die **option Einstellungen**  >  **Device onboarding**  >  **Offboarding aus.**
 
-3. Wählen Sie **im Feld Bereitstellungsmethode** die Option **Mobile Geräteverwaltung /Microsoft Intune aus.**
+3. Wählen Sie **im Feld Bereitstellungsmethode** die Option **Mobile Geräteverwaltung/-Microsoft Intune.**
     
-4. Klicken **Sie auf Paket herunterladen,** und speichern Sie die ZIP-Datei.
+4. Klicken **Sie auf Paket** herunterladen, und speichern Sie .zip Datei.
 
-5. Extrahieren Sie den Inhalt der ZIP-Datei an einen freigegebenen schreibgeschützten Speicherort, auf den die Netzwerkadministratoren zugreifen können, die das Paket bereitstellen. Sie sollten über eine Datei namens *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding verfügen.*
+5. Extrahieren Sie den Inhalt der .zip an einen freigegebenen, schreibgeschützten Speicherort, auf den die Netzwerkadministratoren zugreifen können, die das Paket bereitstellen. Sie sollten über eine Datei namens *DeviceCompliance_valid_until_YYYY-MM-DD.offboarding verfügen.*
 
-6. Verwenden Sie die benutzerdefinierte Microsoft Intune-Konfigurationsrichtlinie, um die folgenden unterstützten OMA-URI-Einstellungen bereitzustellen.
+6. Verwenden Sie Microsoft Intune benutzerdefinierte Konfigurationsrichtlinie, um die folgenden unterstützten OMA-URI-Einstellungen zu bereitstellen.
 
       OMA-URI: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding      
       Datumstyp: Zeichenfolge      
       Wert: [Kopieren und Einfügen des Werts aus dem Inhalt der DeviceCompliance_valid_until_YYYY-MM-DD.offboarding-Datei]
 
-Weitere Informationen zu Microsoft Intune-Richtlinieneinstellungen finden Sie unter [Windows 10-Richtlinieneinstellungen in Microsoft Intune](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
+Weitere Informationen zu Microsoft Intune Richtlinieneinstellungen finden Sie [unter Windows 10 richtlinieneinstellungen in Microsoft Intune](/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
 
 > [!NOTE]
 > Die **Richtlinie Integritätsstatus für Offboardgeräte** verwendet schreibgeschützte Eigenschaften und kann nicht behoben werden.
@@ -74,8 +74,8 @@ Weitere Informationen zu Microsoft Intune-Richtlinieneinstellungen finden Sie un
 > Offboarding bewirkt, dass das Gerät das Senden von Sensordaten an das Portal beendet, aber Daten vom Gerät, einschließlich Verweis auf alle Warnungen, die es erhalten hat, werden für bis zu 6 Monate aufbewahrt.
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Onboarding von Windows 10-Geräten mithilfe von Gruppenrichtlinien](dlp-configure-endpoints-gp.md)
-- [Onboarding von Windows 10-Geräten mithilfe von Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
+- [Onboarding Windows 10 Geräte mithilfe von Gruppenrichtlinien](dlp-configure-endpoints-gp.md)
+- [Onboarding Windows 10 Geräte mithilfe Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
 - [Onboarding von Windows 10-Geräten mithilfe eines lokalen Skripts](dlp-configure-endpoints-script.md)
 - [Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)](dlp-configure-endpoints-vdi.md)
-- [Behandeln von Problemen mit dem Microsoft Defender Advanced Threat Protection-Onboarding](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)
+- [Problembehandlung bei Microsoft Defender Advanced Threat Protection Onboardingproblemen](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

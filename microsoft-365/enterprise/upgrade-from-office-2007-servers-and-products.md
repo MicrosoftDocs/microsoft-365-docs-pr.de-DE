@@ -37,13 +37,13 @@ ms.locfileid: "50909286"
 
 Wenn Sie Office 2007-Produkte und -Dienste verwenden, beachten Sie, dass die Unterstützung für diese Anwendungen beendet wurde. Ziehen Sie den Wechsel in die Microsoft Cloud in Betracht, beginnend mit Microsoft 365. Verwenden Sie diesen Artikel als Ausgangspunkt, um Ihre Optionen zu überprüfen und Das Upgrade zu planen.
       
-## <a name="office-2007-planning-roadmaps"></a>Planungspläne für Office 2007
+## <a name="office-2007-planning-roadmaps"></a>Office 2007-Planungspläne
   
 Der Support für Office 2007-Produkte und -Dienste wurde beendet. Die folgenden Roadmaps helfen Ihnen, ihr Upgrade jetzt zu planen.
 
 |**Planen von Inhalten**|**Datum, an dem die Unterstützung beendet wurde**|
 |:-----|:-----|
-|[Office 2007-Roadmap zum Ende des Support](/DeployOffice/office-2007-end-support-roadmap) <br/> |10. Oktober 2017  <br/> |
+|[Office 2007 End of Support Roadmap](/DeployOffice/office-2007-end-support-roadmap) <br/> |10. Oktober 2017  <br/> |
 |[Ende der Unterstützung für Exchange 2007 – Roadmap](exchange-2007-end-of-support.md) <br/> |11. April 2017  <br/> |
 |[Ende der Unterstützung für SharePoint Server 2007 – Roadmap](sharepoint-2007-end-of-support.md) <br/> |10. Oktober 2017  <br/> |
 |[Ende der Unterstützung für Project Server 2007 – Roadmap](project-server-2007-end-of-support.md) <br/> |10. Oktober 2017  <br/> |
@@ -60,7 +60,7 @@ Unabhängig davon, ob Sie eine Unternehmensorganisation oder ein einzelner Heimb
 
 ## <a name="im-a-home-user-what-do-i-do"></a>Ich bin ein privater Benutzer. Wie gehe ich jetzt vor?
 
-Wenn Sie Office 2007-Produkte und -Anwendungen zu Hause verwenden, lesen Sie [diese Informationen.](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)
+Wenn Sie 2007 Office und Anwendungen zu Hause verwenden, lesen Sie [diese Informationen.](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)
      
 ## <a name="related-topics"></a>Verwandte Themen
 

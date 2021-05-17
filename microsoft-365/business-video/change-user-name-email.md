@@ -38,28 +38,28 @@ Gelegentlich müssen Sie möglicherweise den Namen oder die E-Mail-Adresse eines
 
 ### <a name="change-a-users-display-name"></a>Ändern des Anzeigenamens eines Benutzers
 
-1. Wählen Sie im Microsoft 365 Admin Center Die Option **Benutzer** und dann **Aktive Benutzer aus.**
+1. Wählen Sie Microsoft 365 Admin Center **die Option Benutzer** und dann Aktive Benutzer **aus.**
 1. Wählen Sie den Benutzer aus der Liste der aktiven Benutzer aus.
 1. Wählen **Sie Kontaktinformationen verwalten aus.**
 1. Ändern Sie den Anzeigenamen, und wählen Sie **Änderungen speichern aus.**
 
-    Der neue Name wird nun in Outlook und anderen Microsoft 365-Apps angezeigt.
+    Der neue Name wird nun in Outlook und anderen Microsoft 365 angezeigt.
 
 ### <a name="add-an-email-alias"></a>Hinzufügen eines E-Mail-Alias
 
-1. Wählen Sie im Microsoft 365 Admin Center Die Option **Benutzer** und dann **Aktive Benutzer aus.**
+1. Wählen Sie Microsoft 365 Admin Center **die Option Benutzer** und dann Aktive Benutzer **aus.**
 1. Wählen Sie den Benutzer aus der Liste der aktiven Benutzer aus.
 1. Wählen **Sie E-Mail-Aliase verwalten aus.**
 1. Geben Sie den neuen Alias ein, überprüfen Sie die Domäne, und wählen **Sie Änderungen speichern aus.**
 
 ### <a name="change-a-username"></a>Ändern eines Benutzernamens
 
-1. Wählen Sie im Microsoft 365 Admin Center Die Option **Benutzer** und dann **Aktive Benutzer aus.**
+1. Wählen Sie Microsoft 365 Admin Center **die Option Benutzer** und dann Aktive Benutzer **aus.**
 1. Wählen Sie den Benutzer aus der Liste der aktiven Benutzer aus.
 1. Wählen **Sie Benutzernamen verwalten aus.**
 1. Geben Sie den neuen Benutzernamen ein, überprüfen Sie die Domäne, und wählen **Sie Änderungen speichern aus.**
 
-    Als Ergebnis dieser Änderung muss sich der Benutzer mit diesem neuen Benutzernamen bei Microsoft 365 anmelden und das neue E-Mail-Konto zu Outlook hinzufügen.
+    Als Ergebnis dieser Änderung muss sich der Benutzer anmelden, um Microsoft 365 neuen Benutzernamen zu verwenden und das neue E-Mail-Konto zu Outlook.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 

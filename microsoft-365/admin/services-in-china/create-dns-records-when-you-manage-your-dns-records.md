@@ -1,5 +1,5 @@
 ---
-title: Erstellen von DNS-Einträgen für Office 365 beim Verwalten Ihrer DNS-Einträge
+title: Erstellen von DNS-Einträgen für Office 365, wenn Sie Ihre DNS-Einträge verwalten
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -19,7 +19,7 @@ search.appverid:
 - GEA150
 ms.assetid: 0669bf14-414d-4f51-8231-6b710ce7980b
 ROBOTS: NOINDEX
-description: 'Erfahren Sie, wie Sie DNS-Einträge für Office 365, betrieben von 21Vianet, erstellen, wenn Sie Ihre DNS-Einträge verwalten. '
+description: 'Erfahren Sie, wie Sie DNS-Einträge für Office 365, die von 21Vianet betrieben werden, wenn Sie Ihre DNS-Einträge verwalten. '
 monikerRange: o365-21vianet
 ms.openlocfilehash: 1eaa2bcc7263eaa12e53131246abd591006b0536
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -28,9 +28,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50914354"
 ---
-# <a name="create-dns-records-for-office-365-when-you-manage-your-dns-records"></a>Erstellen von DNS-Einträgen für Office 365 beim Verwalten Ihrer DNS-Einträge
+# <a name="create-dns-records-for-office-365-when-you-manage-your-dns-records"></a>Erstellen von DNS-Einträgen für Office 365, wenn Sie Ihre DNS-Einträge verwalten
 
-Ausführliche Anweisungen zum Erstellen von DNS-Einträgen für Office 365, betrieben von 21Vianet, einschließlich des für das E-Mail-Routing erforderlichen MX-Eintrags, finden Sie unter [Create DNS records at any DNS hosting provider for Office 365](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). 
+Ausführliche Anweisungen zum Erstellen von DNS-Einträgen für Office 365 betrieben von 21Vianet, einschließlich des für das E-Mail-Routing erforderlichen MX-Eintrags, finden Sie unter [Create DNS records at any DNS hosting provider for Office 365](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md). 
   
   
 Weitere Optionen und einige Dinge, die Sie beachten sollten:

@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
-description: Erfahren Sie, wie Sie Ihren E-Mail- und Domänenbesitz überprüfen, um einen nicht verwalteten Mandanten in Microsoft 365 zu übernehmen.
+description: Erfahren Sie, wie Sie Ihren E-Mail- und Domänenbesitz überprüfen, um einen nicht verwalteten Mandanten in Microsoft 365
 ms.openlocfilehash: 72278fd0e373848a79f9823e186b19bc1cb47770
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -39,9 +39,9 @@ Wenn Sie ein Administrator sind und einen nicht verwalteten Mandanten übernehme
 ## <a name="step-1-verify-your-email-address"></a>Schritt 1: Überprüfen Ihrer E-Mail-Adresse
 
 > [!NOTE]
-> Wenn self-service in Ihrem Mandanten aktiviert ist, können Benutzer kostenlose Dienste wie Power BI selbst abonnieren. Bei diesen Schritten wird davon ausgegangen, dass ein Self-Service-Benutzerabonnement den nicht verwalteten Mandanten erstellt hat, den Sie als Administrator übernehmen möchten. Im ersten Schritt erstellen Sie einen Benutzerkontext im nicht verwalteten Mandanten, indem Sie Power BI verwenden, um den Administratorübernahmepfad zu veranschaulichen.
+> Wenn self-service in Ihrem Mandanten aktiviert ist, können Benutzer kostenlose Dienste, z. B. Power BI, selbst abonnieren. Bei diesen Schritten wird davon ausgegangen, dass ein Self-Service-Benutzerabonnement den nicht verwalteten Mandanten erstellt hat, den Sie als Administrator übernehmen möchten. Im ersten Schritt erstellen Sie einen Benutzerkontext im nicht verwalteten Mandanten, indem Sie Power BI verwenden, um den Administratorübernahmepfad zu veranschaulichen.
 
-1. Um sich für Power BI zu registrieren, wechseln Sie zur [Power BI-Website,](https://powerbi.com) und wählen Sie **kostenlose** Testversion starten (im Feld Freigeben mit Power  >   BI Pro). 
+1. Um sich für Power BI zu registrieren, wechseln Sie zur [Power BI-Website,](https://powerbi.com) und wählen Sie **kostenlose** Testversion starten (im Feld Freigeben mit  >   Power BI Pro aus). 
 
 2. Registrieren Sie sich mit einem Benutzerkonto, das den Domänennamen Ihrer Organisation verwendet (z. B. `powerbiadmin@contoso.com` ). Wenn Ihr Konto bereits verwendet wird, melden Sie sich mit Ihrem aktuellen Kennwort an.
 
@@ -68,10 +68,10 @@ Wenn Sie ein Administrator sind und einen nicht verwalteten Mandanten übernehme
   
 ## <a name="related-articles"></a>Verwandte Artikel
 
-YouTube: [3 Schritte zum Ausführen einer IT-Administratorübernahme für Power BI und Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
+YouTube: [3 Schritte zum Ausführen einer Übernahme von IT-Administratoren für Power BI und Microsoft 365](https://www.youtube.com/watch?v=xt5EsrQBZZk)
 
 [Übernahme durch Administratoren in Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover)
 
 [Verwenden der Self-Service-Registrierung in Ihrer Organisation](self-service-sign-up.md)
   
-[Grundlegendes zur Power BI-Dienstadministratorrolle](/power-bi/service-admin-role)
+[Grundlegendes zur Power BI Dienstadministratorrolle](/power-bi/service-admin-role)

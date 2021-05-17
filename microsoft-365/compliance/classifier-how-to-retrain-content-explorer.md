@@ -24,7 +24,7 @@ ms.locfileid: "50918101"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Neutrainieren eines Klassifizierers im Inhalts-Explorer
 
-Ein trainierbarer Microsoft 365-Klassifikator ist ein Tool, das Sie schulen können, um verschiedene Arten von Inhalten zu erkennen, indem Sie ihm Beispiele zum Betrachten geben. Nach der Ausbildung können Sie es verwenden, um Elemente für die Anwendung von Office-Vertraulichkeitsbezeichnungen, Richtlinien zur Kommunikationskonformität und Aufbewahrungsbezeichnungsrichtlinien zu identifizieren.
+Ein Microsoft 365 trainierbarer Klassifikator ist ein Tool, das Sie schulen können, um verschiedene Arten von Inhalten zu erkennen, indem Sie ihm Beispiele zum Betrachten geben. Nach der Ausbildung können Sie es verwenden, um Elemente für die Anwendung Office Vertraulichkeitsbezeichnungen, Kommunikationskonformitätsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien zu identifizieren.
 
 In diesem Artikel erfahren Sie, wie Sie die Leistung von benutzerdefinierten trainierbaren Klassifikatoren und einigen vordefinierten Klassifizierungen verbessern können, indem Sie ihnen zusätzliches Feedback bereitstellen.
 
@@ -50,7 +50,7 @@ Sie benötigen Konten mit diesen Berechtigungen, um Klassifizierungen in den fol
 ## <a name="overall-workflow"></a>Gesamtworkflow
 
 > [!IMPORTANT]
-> Sie geben Feedback im Inhalts-Explorer für die automatische Anwendung von Aufbewahrungsbezeichnungsrichtlinien auf Exchange-Elemente und verwenden den Klassifikator als Bedingung. **Wenn Sie nicht über eine Aufbewahrungsrichtlinie verfügen, die eine Aufbewahrungsbezeichnung automatisch auf Exchange-Elemente angewendet und einen Klassifizierungsaufbewahrungszeichen als Bedingung verwendet, beenden Sie hier.**
+> Sie geben Feedback im Inhalts-Explorer für die automatische Anwendung von Aufbewahrungsbezeichnungsrichtlinien auf Exchange Elemente und verwenden den Klassifikator als Bedingung. **Wenn Sie nicht über eine Aufbewahrungsrichtlinie verfügen, die automatisch eine Aufbewahrungsbezeichnung auf elemente Exchange und einen Klassifikator als Bedingung verwendet, beenden Sie hier.**
 
 Wenn Sie Ihre Klassifizierungen verwenden, können Sie die Genauigkeit der Klassifizierungen erhöhen, die sie machen. Dazu bewerten Sie die Qualität der Klassifizierungen, die für Elemente vorgenommen wurden, die als Übereinstimmung oder nicht übereinstimmend identifiziert wurden. Nachdem Sie 30 Auswertungen für einen Klassifikator erstellt haben, wird dieses Feedback benötigt und automatisch neu trainiert.
 
@@ -61,7 +61,7 @@ Weitere Informationen zum allgemeinen Workflow zum Umschulungstraining eines Kla
 
 ## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Neutrainieren eines Klassifizierers im Inhalts-Explorer
 
-1. Melden Sie sich beim Microsoft 365 Compliance Center mit Dem Zugriff auf die Rolle des Complianceadministrators oder Sicherheitsadministrators an, und öffnen Sie **Microsoft 365 Compliance Center**  >  **Datenklassifizierung**  >  **Inhalts-Explorer**. 
+1. Melden Sie sich Microsoft 365 Compliance Center mit Dem Zugriff auf die Rolle des Complianceadministrators oder Sicherheitsadministrators an, und öffnen Sie **Microsoft 365** Compliance Center  >  **Datenklassifizierung**  >  **Inhalts-Explorer**. 
 2. Erweitern Sie **unter Filter on labels, info types, or categories list** **trainable classifiers**.
 
 > [!IMPORTANT]
@@ -109,7 +109,7 @@ Nach einer Umschulung bewerten wir die Leistung des Klassifikierers sowohl für 
 
 Wir vergleichen die Leistungszahlen für beide Gruppen von Elementen für den umtrainierten und veröffentlichten Klassifikator, um eine Empfehlung zur Verbesserung der Veröffentlichung zu geben. 
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
 - [Weitere Informationen zu trainierbaren Klassifizierern](classifier-learn-about.md)
 - [Standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server](/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types)

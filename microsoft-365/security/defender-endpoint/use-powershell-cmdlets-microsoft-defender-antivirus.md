@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren und Ausführen von Microsoft Defender AV mithilfe von PowerShell-Cmdlets
-description: In Windows 10 können Sie PowerShell-Cmdlets zum Ausführen von Scans, Aktualisieren der Sicherheitsintelligenz und Ändern von Einstellungen in Microsoft Defender Antivirus verwenden.
+description: In Windows 10 können Sie PowerShell-Cmdlets zum Ausführen von Scans, Aktualisieren der Sicherheitsintelligenz und Ändern von Einstellungen in Microsoft Defender Antivirus.
 keywords: Scan, Befehlszeile, mpcmdrun, defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -37,10 +37,10 @@ Sie können PowerShell verwenden, um verschiedene Funktionen in Windows Defender
 
 Eine Liste der Cmdlets mit ihren Funktionen und verfügbaren Parametern finden Sie im [Thema Defender-Cmdlets.](/powershell/module/defender)
 
-PowerShell-Cmdlets sind am nützlichsten in Windows Server-Umgebungen, die nicht auf einer grafischen Benutzeroberfläche (GUI) zum Konfigurieren von Software angewiesen sind.
+PowerShell-Cmdlets sind am nützlichsten in Windows Serverumgebungen, die nicht auf einer grafischen Benutzeroberfläche (GUI) zum Konfigurieren von Software angewiesen sind.
 
 > [!NOTE]
-> PowerShell-Cmdlets sollten nicht als Ersatz für eine vollständige Netzwerkrichtlinienverwaltungsinfrastruktur verwendet werden, z. B. [Microsoft Endpoint Configuration Manager,](/configmgr) [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))oder Microsoft Defender Antivirus Group [Policy ADMX-Vorlagen.](https://www.microsoft.com/download/101445)
+> PowerShell-Cmdlets sollten nicht als Ersatz für eine vollständige Netzwerkrichtlinienverwaltungsinfrastruktur verwendet werden, z. B. [Microsoft Endpoint Configuration Manager](/configmgr) [,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))Gruppenrichtlinienverwaltungskonsole oder [Microsoft Defender Antivirus AdMX-Vorlagen](https://www.microsoft.com/download/101445)für Gruppenrichtlinien.
 
 Mit PowerShell vorgenommene Änderungen wirken sich auf lokale Einstellungen auf dem Endpunkt aus, an dem die Änderungen bereitgestellt oder vorgenommen werden. Dies bedeutet, dass Bereitstellungen von Richtlinien mit Gruppenrichtlinien, Microsoft Endpoint Configuration Manager oder Microsoft Intune änderungen überschreiben können, die mit PowerShell vorgenommen wurden.
 
@@ -48,9 +48,9 @@ Sie können [konfigurieren, welche Einstellungen lokal mit](configure-local-poli
 
 PowerShell wird in der Regel unter dem Ordner `%SystemRoot%\system32\WindowsPowerShell` installiert.
 
-## <a name="use-microsoft-defender-antivirus-powershell-cmdlets"></a>Verwenden von Microsoft Defender Antivirus PowerShell-Cmdlets
+## <a name="use-microsoft-defender-antivirus-powershell-cmdlets"></a>Verwenden Microsoft Defender Antivirus PowerShell-Cmdlets
 
-1. Geben Sie in der Windows-Suchleiste **powershell ein.**
+1. Geben Sie Windows in der Suchleiste **powershell ein.**
 2. Wählen **Windows PowerShell** aus den Ergebnissen aus, um die Schnittstelle zu öffnen.
 3. Geben Sie den Befehl PowerShell und alle Parameter ein.
 
@@ -68,5 +68,5 @@ Lassen Sie den `-online` Parameter weg, um lokal zwischengespeicherte Hilfe zu e
 ## <a name="related-topics"></a>Verwandte Themen
 
 - [Referenzthemen für Verwaltungs- und Konfigurationstools](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Microsoft Defender Antivirus-Cmdlets](/powershell/module/defender)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus Cmdlets](/powershell/module/defender)

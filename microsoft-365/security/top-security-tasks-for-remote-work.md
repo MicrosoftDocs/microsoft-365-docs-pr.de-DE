@@ -51,7 +51,7 @@ Für Kunden, die unsere Unternehmenspläne verwenden, empfiehlt Microsoft, die i
 |7 |[Konfigurieren von MFA und bedingten Zugriff für Gäste, einschließlich Intune-App-Schutz](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Registrieren von PCs für die Geräteverwaltung und Erfordern kompatibler PCs](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[Optimieren Ihres Netzwerks für cloudbasierte Konnektivität](#9-optimize-your-network-for-cloud-connectivity)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10  |[Schulung der Benutzer](#10-train-users)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10|[Schulung der Benutzer](#10-train-users)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |11|[Erste Schritte mit Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security)|||![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |12 |[Überwachen auf Bedrohungen und Ergreifen von Maßnahmen](#12-monitor-for-threats-and-take-action)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Enthalten](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
@@ -104,7 +104,7 @@ Ihr globaler Administrator kann die folgenden Schutzmaßnahmen konfigurieren:
 
 - [Einrichten von Richtlinien für sichere Links](office-365-security/set-up-safe-links-policies.md)
 - [Konfigurieren globaler Einstellungen für sichere Links](office-365-security/configure-global-settings-for-safe-links.md)
-- [Einrichten von Richtlinien für sicheren Anlagen](office-365-security/set-up-safe-attachments-policies.md)
+- [Einrichten von Richtlinien für sichere Anlagen](office-365-security/set-up-safe-attachments-policies.md)
 
 Sie müssen mit Ihrem Exchange Online-Administrator und SharePoint Online-Administrator zusammenarbeiten, um Defender für Office 365 für diese Workloads zu konfigurieren:
 
@@ -211,7 +211,7 @@ Microsoft 365 stellt die folgenden Ressourcen zur Verfügung, um Benutzer in Ihr
 |Konzept|Ressourcen|
 |---|---|
 |Microsoft 365|[Anpassbare Lernpfade](/office365/customlearning/) <p>Diese Ressourcen können Ihnen helfen, Schulungen für Endbenutzer in Ihrer Organisation zusammen zu stellen.|
-|Microsoft 365 Security Center|[Lernmodul: Sichern Ihrer Organisation mit integrierter, intelligenter Sicherheit von Microsoft 365](/learn/modules/security-with-microsoft-365) <p>In diesem Modul können Sie beschreiben, wie Microsoft 365-Sicherheitsfeatures zusammenarbeiten und die Vorteile dieser Sicherheitsfeatures erläutern.|
+|Microsoft 365 Security|[Lernmodul: Sichern Ihrer Organisation mit integrierter, intelligenter Sicherheit von Microsoft 365](/learn/modules/security-with-microsoft-365) <p>In diesem Modul können Sie beschreiben, wie Microsoft 365-Sicherheitsfeatures zusammenarbeiten und die Vorteile dieser Sicherheitsfeatures erläutern.|
 |Mehrstufige Authentifizierung|[Zweistufige Überprüfung: Was ist die zusätzliche Überprüfungsseite?](/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Dieser Artikel hilft Endbenutzern zu verstehen, was die mehrstufige Authentifizierung ist und warum sie in Ihrer Organisation verwendet wird.|
 |
 

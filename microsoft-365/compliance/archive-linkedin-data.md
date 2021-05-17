@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 ms.collection: M365-security-compliance
 ms.custom: seo-marvel-apr2020
-description: Erfahren Sie, wie Administratoren & einen systemeigenen Connector zum Importieren von Daten von einer LinkedIn-Unternehmensseite in Microsoft 365 verwenden können.
+description: Erfahren Sie, wie Administratoren & einen systemeigenen Connector zum Importieren von Daten von einer LinkedIn-Unternehmensseite in die Microsoft 365.
 ms.openlocfilehash: 40e51424d086b0eee42d1f15ea577b7e8f1648c1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -26,15 +26,15 @@ ms.locfileid: "50906145"
 
 Verwenden Sie einen Connector im Microsoft 365 Compliance Center, um Daten von LinkedIn-Unternehmensseiten zu importieren und zu archivieren. Nachdem Sie einen Connector eingerichtet und konfiguriert haben, stellt er alle 24 Stunden eine Verbindung mit dem Konto für die spezifische LinkedIn -Unternehmensseite ein. Der Connector konvertiert die auf der Seite "Unternehmen" bereitgestellten Nachrichten in eine E-Mail-Nachricht und importiert diese Elemente dann in ein Postfach in Microsoft 365.
 
-Nachdem die Daten der LinkedIn Company-Seite in einem Postfach gespeichert wurden, können Sie Microsoft 365-Compliancefeatures wie z. B. Das Aufbewahrungsverfahren für Rechtsstreitigkeiten, die Inhaltssuche, In-Place Archivierung, Überwachung und Microsoft 365-Aufbewahrungsrichtlinien auf LinkedIn-Daten anwenden. Sie können beispielsweise mithilfe der Inhaltssuche nach diesen Elementen suchen oder das Speicherpostfach einem Custodian in einem Advanced eDiscovery-Fall zuordnen. Das Erstellen eines Connectors zum Importieren und Archivieren von LinkedIn-Daten in Microsoft 365 kann Dazu beitragen, dass Ihre Organisation den richtlinienkonformen Richtlinien von Behörden und Behörden entspricht.
+Nachdem die Daten der LinkedIn Company-Seite in einem Postfach gespeichert wurden, können Sie Microsoft 365 Compliancefeatures wie z. B. Litigation Hold, Content Search, In-Place Archiving, Auditing und Microsoft 365 Retention Policies auf LinkedIn-Daten anwenden. Sie können z. B. mithilfe der Inhaltssuche nach diesen Elementen suchen oder das Speicherpostfach einem Verwahrer in einem Advanced eDiscovery zuordnen. Das Erstellen eines Connectors zum Importieren und Archivieren von LinkedIn-Daten in Microsoft 365 ihre Organisation dabei unterstützen, die Richtlinien von Behörden und Behörden zu erfüllen.
 
 ## <a name="before-you-set-up-a-connector"></a>Vor dem Einrichten eines Connectors
 
-- Dem Benutzer, der einen LinkedIn-Firmenseitenconnector erstellt, muss die Rolle Postfachimportexport in Exchange Online zugewiesen werden. Dies ist erforderlich, um Connectors auf der Seite **Datenconnectors** im Microsoft 365 Compliance Center hinzuzufügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle Postfachimportexport zur Rollengruppe Organisationsverwaltung in Exchange Online hinzufügen. Sie können auch eine Rollengruppe erstellen, die Rolle Postfachimportexport zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten Erstellen von [Rollengruppen](/Exchange/permissions-exo/role-groups#create-role-groups) oder [Ändern](/Exchange/permissions-exo/role-groups#modify-role-groups) von Rollengruppen im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Dem Benutzer, der einen LinkedIn-Firmenseitenconnector erstellt, muss die Rolle Postfachimportexport in der Exchange Online. Dies ist erforderlich, um Connectors auf der Seite **Datenconnectors** im compliance center Microsoft 365 hinzufügen. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle Postfachimportexport zur Rollengruppe Organisationsverwaltung in der Exchange Online. Sie können auch eine Rollengruppe erstellen, die Rolle Postfachimportexport zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten [Erstellen](/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern](/Exchange/permissions-exo/role-groups#modify-role-groups) von Rollengruppen im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
 - Sie müssen über die Anmeldeinformationen (E-Mail-Adresse oder Telefonnummer und Kennwort) eines LinkedIn-Benutzerkontos verfügen, das ein Administrator für die LinkedIn-Unternehmensseite ist, die Sie archivieren möchten. Sie verwenden diese Anmeldeinformationen, um sich beim Einrichten des Connectors bei LinkedIn zu registrieren.
 
-- Der LinkedIn-Connector kann insgesamt 200.000 Elemente an einem einzigen Tag importieren. Wenn mehr als 200.000 LinkedIn-Elemente an einem Tag verfügbar sind, wird keines dieser Elemente nach Microsoft 365 importiert.
+- Der LinkedIn-Connector kann insgesamt 200.000 Elemente an einem einzigen Tag importieren. Wenn mehr als 200.000 LinkedIn-Elemente an einem Tag enthalten sind, wird keines dieser Elemente in die Microsoft 365.
 
 ## <a name="create-a-linkedin-connector"></a>Erstellen eines LinkedIn-Connectors
 
@@ -58,7 +58,7 @@ Nachdem die Daten der LinkedIn Company-Seite in einem Postfach gespeichert wurde
 
 6. Wählen Sie die Unternehmensseite aus, aus der Sie Elemente archivieren möchten, und klicken Sie dann auf **Weiter**.
 
-7. Klicken Sie **auf** der Seite Speicherort auswählen in das Feld, wählen Sie die E-Mail-Adresse eines Microsoft 365-Postfachs aus, in das die LinkedIn-Elemente importiert werden sollen, und klicken Sie dann auf **Weiter**. Elemente werden in den Posteingangsordner in diesem Postfach importiert.
+7. Klicken Sie **auf** der Seite Speicherort auswählen auf das Feld, wählen Sie die E-Mail-Adresse eines Microsoft 365-Postfachs aus, in das die LinkedIn-Elemente importiert werden sollen, und klicken Sie dann auf **Weiter**. Elemente werden in den Posteingangsordner in diesem Postfach importiert.
 
 8. Klicken **Sie auf Weiter,** um die Connectoreinstellungen zu überprüfen, und klicken Sie dann auf **Fertig** stellen, um die Connectoreinrichtung abzuschließen.
 
@@ -68,4 +68,4 @@ Um weitere Details anzuzeigen, wählen Sie  den Connector in der Liste auf der S
 
 ## <a name="more-information"></a>Weitere Informationen
 
-LinkedIn-Elemente werden in den LinkedIn-Unterordner im Posteingang des Speicherpostfachs in Microsoft 365 importiert. Sie werden als E-Mail-Nachrichten angezeigt.
+LinkedIn-Elemente werden in den LinkedIn-Unterordner im Posteingang des Speicherpostfachs in Microsoft 365. Sie werden als E-Mail-Nachrichten angezeigt.

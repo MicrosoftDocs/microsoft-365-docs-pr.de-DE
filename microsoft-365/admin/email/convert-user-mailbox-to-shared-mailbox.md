@@ -41,7 +41,7 @@ Wenn Sie das Postfach eines Benutzers in ein freigegebenes Postfach konvertieren
 
 - Die Regeln sind intakt, nachdem das Postfach in ein freigegebenes Postfach konvertiert wurde.
 
-## <a name="use-the-exchange-admin-center-to-convert-a-mailbox"></a>Konvertieren eines Postfachs mithilfe des Exchange Admin Centers
+## <a name="use-the-exchange-admin-center-to-convert-a-mailbox"></a>Verwenden des Exchange Admin Center zum Konvertieren eines Postfachs
  
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">Exchange Admin Center</a>.
 
@@ -66,7 +66,7 @@ Angenommen, Sie haben ein Benutzerkonto gelöscht und möchten nun das alte Post
 
 1. [Wiederherstellen des Benutzerkontos](../add-users/restore-user.md).
 
-2. Stellen Sie sicher, dass ihr eine Microsoft 365-Lizenz zugewiesen ist.
+2. Stellen Sie sicher, Microsoft 365 ihr eine Lizenz zugewiesen ist.
 
 3. Setzen Sie das Kennwort des Benutzers zurück.
     
@@ -93,10 +93,10 @@ Angenommen, Sie haben ein Benutzerkonto gelöscht und möchten nun das alte Post
 
 ## <a name="convert-a-users-mailbox-in-a-hybrid-environment"></a>Konvertieren des Postfachs eines Benutzers in einer Hybridumgebung
 
-Weitere Informationen zum Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach in einer Exchange-Hybridumgebung finden Sie unter:
+Weitere Informationen zum Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach in Exchange Hybridumgebung finden Sie unter:
 
- - [Cmdlets zum Erstellen oder Ändern eines freigegebenen Remotepostfachs in einer lokalen Exchange-Umgebung](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
- - [Freigegebene Postfächer werden unerwartet in Benutzerpostfächer konvertiert, nachdem die Verzeichnissynchronisierung in einer Exchange-Hybridbereitstellung ausgeführt wurde.](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+ - [Cmdlets zum Erstellen oder Ändern eines freigegebenen Remotepostfachs in einer lokalen Exchange Umgebung](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
+ - [Freigegebene Postfächer werden unerwartet in Benutzerpostfächer konvertiert, nachdem die Verzeichnissynchronisierung in einer Exchange ausgeführt wurde.](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
  
 
 > [!NOTE]

@@ -1,7 +1,7 @@
 ---
 title: Onboarding-Tools und -Methoden für Windows 10-Computer
-description: Onboarding von Windows 10-Geräten, damit sie Sensordaten an den Microsoft Defender for Endpoint-Sensor senden können
-keywords: Onboarding von Windows 10-Geräten, Gruppenrichtlinie, Endpunktkonfigurations-Manager, Verwaltung mobiler Geräte, lokales Skript, gp, sccm, mdm, intune
+description: Onboarding Windows 10 Geräte, damit sie Sensordaten an den Microsoft Defender for Endpoint-Sensor senden können
+keywords: Onboarding Windows 10 Geräten, Gruppenrichtlinie, Endpunktkonfigurations-Manager, Verwaltung mobiler Geräte, lokales Skript, gp, sccm, mdm, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -30,8 +30,8 @@ ms.locfileid: "51892829"
 **Gilt für:**
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- [Microsoft 365 Endpoint Data Loss Prevention (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
-- [Microsoft 365 Insider Risk Management](/microsoft-365/compliance/insider-risk-management)
+- [Microsoft 365 Verhinderung von Endpunktdatenverlusten (Endpoint Data Loss Prevention, DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Microsoft 365 Insider-Risikomanagement](/microsoft-365/compliance/insider-risk-management)
 
 >Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
@@ -47,9 +47,9 @@ Die folgenden Bereitstellungstools und -methoden werden unterstützt:
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 Thema | Beschreibung
 :---|:---
-[Onboarding von Windows 10-Geräten mithilfe von Gruppenrichtlinien](configure-endpoints-gp.md) | Verwenden Sie Gruppenrichtlinien zum Bereitstellen des Konfigurationspakets auf Geräten.
-[Onboarding von Windows-Geräten mit Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) | Sie können entweder Microsoft Endpoint Manager (current branch) Version 1606 oder Microsoft Endpoint Manager (current branch) version 1602 oder früher verwenden, um das Konfigurationspaket auf Geräten zu bereitstellen.
-[Onboarding von Windows 10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten](configure-endpoints-mdm.md) | Verwenden Sie Tools für die mobile Geräteverwaltung oder Microsoft Intune, um das Konfigurationspaket auf dem Gerät bereitzustellen.
+[Onboarding Windows 10 Geräte mithilfe von Gruppenrichtlinien](configure-endpoints-gp.md) | Verwenden Sie Gruppenrichtlinien zum Bereitstellen des Konfigurationspakets auf Geräten.
+[Onboarding Windows Geräte mithilfe Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) | Sie können entweder Microsoft Endpoint Manager (aktuelle Verzweigung) Version 1606 oder Microsoft Endpoint Manager (current branch) Version 1602 oder früher verwenden, um das Konfigurationspaket auf Geräten zu bereitstellen.
+[Onboarding von Windows 10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten](configure-endpoints-mdm.md) | Verwenden Sie Tools für die mobile Geräteverwaltung oder Microsoft Intune, um das Konfigurationspaket auf dem Gerät zu bereitstellen.
 [Onboarding von Windows 10-Geräten mithilfe eines lokalen Skripts](configure-endpoints-script.md) | Erfahren Sie, wie Sie das lokale Skript zum Bereitstellen des Konfigurationspakets auf Endpunkten verwenden.
 [Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)](configure-endpoints-vdi.md) | Erfahren Sie, wie Sie das Konfigurationspaket zum Konfigurieren von VDI-Geräten verwenden.
 

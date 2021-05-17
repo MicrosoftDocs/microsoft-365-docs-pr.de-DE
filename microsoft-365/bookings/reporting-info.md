@@ -20,7 +20,7 @@ ms.locfileid: "51887227"
 
 Sie können nun eine viermonatige Ansicht Ihres Bookings-Kalenders in einer TSV-Datei anzeigen. Die TSV-Datei zeigt Ihnen vier Monate Daten an, Sie können jedoch im Laufe eines Jahres verschiedene Zeiträume für vier Monate auswählen.
 
-Diese Informationen auf Terminebene können verwendet werden, um die Kundenaktivitäten rund um Ihren Bookings-Kalender zu visualisieren. BEI TSV-Dateien handelt es sich um Dateien mit getrennten Registerkarten. Sie können eine Datei wie diese mit einem beliebigen Text-Editor oder Tabellenkalkulationsprogramm, z. B. Excel, anzeigen oder bearbeiten.
+Diese Informationen auf Terminebene können verwendet werden, um die Kundenaktivitäten rund um Ihren Bookings-Kalender zu visualisieren. BEI TSV-Dateien handelt es sich um Dateien mit getrennten Registerkarten. Sie können eine Datei wie diese mit einem beliebigen Text-Editor oder Tabellenkalkulationsprogramm anzeigen oder bearbeiten, z. B. Excel.
 
 ## <a name="see-four-months-of-booking-activity"></a>Siehe vier Monate Buchungsaktivität
 
@@ -28,7 +28,7 @@ Diese Informationen auf Terminebene können verwendet werden, um die Kundenaktiv
 
 :::image type="content" source="../media/bookings-activities.png" alt-text="Screenshot: 4 Monate Bookings-Aktivität":::
 
-1. Speichern Sie die Datei mit einem neuen Namen, und geben Sie das XLS- oder xlsx-Format an.
+1. Speichern Sie die Datei mit einem neuen Namen, und geben Sie .xls oder xlsx-Format an.
 
 1. Öffnen Sie die Datei, um die viermonatige Ansicht Ihres Bookings-Kalenders anzuzeigen.
 
@@ -43,11 +43,11 @@ Der Bericht enthält die folgenden Felder.
  - **Datum & Zeit**
 - **Name des Kunden**
 - **Kunden-E-Mail**
-- **Kundentelefon**
+- **Kunden Telefon**
 - **Kundenadresse**
 - **Stab**
 - **Dienst**
-- **Standort**
+- **Ort**
 - **Dauer (Minuten)**
 - **Ereignistyp**
 
@@ -56,8 +56,8 @@ Der verbesserte Bericht enthält nun die folgenden Felder.
 - **Preistyp**   Standardpreistyp, der für einen Dienst beim Erstellen des Diensts festgelegt ist.
 - **Preis**   Preis, der dem gewählten Preistyp entspricht.
 - **Währung**   Für ein Unternehmen festgelegter Währungstyp.
-- **Cc-Teilnehmer**   Die Empfänger, die die E-Mail-Benachrichtigungen für eine Buchung erhalten. Dies kann in der Teams-App beim Erstellen einer Buchung angegeben werden.
+- **Cc-Teilnehmer**   Die Empfänger, die die E-Mail-Benachrichtigungen für eine Buchung erhalten. Dies kann über die app Teams beim Erstellen einer Buchung angegeben werden.
 - **Anzahl der angemeldeten Teilnehmer**   Wie viele Kunden einen Gruppenbuchungsdienst gebucht haben.
-- **Aktivierte Textbenachrichtigungen**   Gibt an, ob Kunden SMS-textbezogene Benachrichtigungen erhalten können.
+- **Aktivierte Textbenachrichtigungen**   Gibt an, ob Kunden SMS textbezogenen Benachrichtigungen erhalten können.
 - **Benutzerdefinierte Felder**   Alle Fragen und Antworten im Zusammenhang mit einer einzelnen Buchung werden in diesem Feld kombiniert.
 - **Buchungs-ID**   Dies ist hilfreich, um die gleichen Buchungen eines Gruppendiensts zu identifizieren.

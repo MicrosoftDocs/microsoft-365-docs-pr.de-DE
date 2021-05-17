@@ -1,5 +1,5 @@
 ---
-title: Bereitstellen der Microsoft 365-Verzeichnissynchronisierung in Microsoft Azure
+title: Bereitstellen Microsoft 365 Verzeichnissynchronisierung in Microsoft Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: b8464818-4325-4a56-b022-5af1dad2aa8b
-description: Erfahren Sie, wie Sie Azure AD Connect auf einem virtuellen Computer in Azure bereitstellen, um Konten zwischen Ihrem lokalen Verzeichnis und dem Azure AD-Mandanten zu synchronisieren.
+description: Erfahren Sie, wie Sie Azure AD Verbinden auf einem virtuellen Computer in Azure bereitstellen, um Konten zwischen Ihrem lokalen Verzeichnis und dem Azure AD-Mandanten zu synchronisieren.
 ms.openlocfilehash: 52c1bb2eb53cc4e6753d528e0d82822b2a0eebc5
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,9 +27,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50919086"
 ---
-# <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Bereitstellen der Microsoft 365-Verzeichnissynchronisierung in Microsoft Azure
+# <a name="deploy-microsoft-365-directory-synchronization-in-microsoft-azure"></a>Bereitstellen Microsoft 365 Verzeichnissynchronisierung in Microsoft Azure
 
-Azure Active Directory (Azure AD) Connect (früher als Verzeichnissynchronisierungstool, Verzeichnissynchronisierungstool oder DirSync.exe-Tool bezeichnet) ist eine Anwendung, die Sie auf einem In die Domäne beigetretenen Server installieren, um Ihre lokalen Active Directory Domain Services (AD DS)-Benutzer mit dem Azure AD-Mandanten Ihres Microsoft 365-Abonnements zu synchronisieren. Microsoft 365 verwendet Azure AD für seinen Verzeichnisdienst. Ihr Microsoft 365-Abonnement umfasst einen Azure AD-Mandanten. Dieser Mandant kann auch für die Verwaltung der Identitäten Ihrer Organisation mit anderen Cloudworkloads verwendet werden, einschließlich anderer SaaS-Anwendungen und Apps in Azure.
+Azure Active Directory (Azure AD) Verbinden (früher als Verzeichnissynchronisierungstool, Verzeichnissynchronisierungstool oder DirSync.exe-Tool bezeichnet) ist eine Anwendung, die Sie auf einem Server installieren, der der Domäne beigetreten ist, um Ihre lokalen Active Directory Domain Services (AD DS)-Benutzer mit dem Azure AD-Mandanten Ihres Microsoft 365-Abonnements zu synchronisieren. Microsoft 365 verwendet Azure AD für seinen Verzeichnisdienst. Ihr Microsoft 365 umfasst einen Azure AD-Mandanten. Dieser Mandant kann auch für die Verwaltung der Identitäten Ihrer Organisation mit anderen Cloudworkloads verwendet werden, einschließlich anderer SaaS-Anwendungen und Apps in Azure.
 
 Sie können Azure AD Connect auf einem lokalen Server installieren, doch wir empfehlen aus den folgenden Gründen die Installation auf einem virtuellen Computer in Azure:
   
@@ -40,33 +40,33 @@ Sie können Azure AD Connect auf einem lokalen Server installieren, doch wir emp
 Diese Lösung erfordert Konnektivität zwischen dem lokalen Netzwerk und Ihrem virtuellen Azure-Netzwerk. Weitere Informationen finden Sie unter [Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md). 
   
 > [!NOTE]
-> In diesem Artikel wird die Synchronisierung einer einzelnen Domäne in einer einzelnen Gesamtstruktur beschrieben. Azure AD Connect synchronisiert alle AD DS-Domänen in Ihrer Active Directory-Gesamtstruktur mit Microsoft 365. Wenn Sie mehrere Active Directory-Gesamtstrukturen zum Synchronisieren mit Microsoft 365 haben, finden Sie weitere Informationen unter [Multi-forest Directory Sync with Single Sign-On Scenario](/azure/active-directory/hybrid/whatis-hybrid-identity). 
+> In diesem Artikel wird die Synchronisierung einer einzelnen Domäne in einer einzelnen Gesamtstruktur beschrieben. Azure AD Verbinden synchronisiert alle AD DS-Domänen in Ihrer Active Directory-Gesamtstruktur mit Microsoft 365. Wenn Sie mehrere Active Directory-Gesamtstrukturen zum Synchronisieren mit Microsoft 365 haben, finden Sie weitere Informationen unter [Multi-Forest Directory Sync with Single Sign-On Scenario](/azure/active-directory/hybrid/whatis-hybrid-identity). 
   
-## <a name="overview-of-deploying-microsoft-365-directory-synchronization-in-azure"></a>Übersicht über die Bereitstellung der Microsoft 365-Verzeichnissynchronisierung in Azure
+## <a name="overview-of-deploying-microsoft-365-directory-synchronization-in-azure"></a>Übersicht über die Bereitstellung Microsoft 365 Verzeichnissynchronisierung in Azure
 
-Das folgende Diagramm zeigt Azure AD Connect, das auf einem virtuellen Computer in Azure (dem Verzeichnissynchronisierungsserver) ausgeführt wird, der eine lokale AD DS-Gesamtstruktur mit einem Microsoft 365-Abonnement synchronisiert.
+Das folgende Diagramm zeigt Azure AD Verbinden, das auf einem virtuellen Computer in Azure (dem Verzeichnissynchronisierungsserver) ausgeführt wird, der eine lokale AD DS-Gesamtstruktur mit einem Microsoft 365 synchronisiert.
   
-![Azure AD Connect-Tool auf einem virtuellen Computer in Azure synchronisiert lokale Konten mit dem Azure AD-Mandanten eines Microsoft 365-Abonnements mit Datenverkehrsfluss](../media/CP-DirSyncOverview.png)
+![Azure AD Verbinden tool on a virtual machine in Azure synchronizing on-premises accounts to the Azure AD tenant of a Microsoft 365 subscription with traffic flow](../media/CP-DirSyncOverview.png)
   
 In diesem Diagramm gibt es zwei Netzwerke, die über eine Standort-zu-Standort-VPN- oder ExpressRoute-Verbindung verbunden sind. Es gibt ein lokales Netzwerk, in dem AD DS-Domänencontroller enthalten sind, und ein virtuelles Azure-Netzwerk mit einem Verzeichnissynchronisierungsserver, einem virtuellen Computer mit ausgeführtem [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594). Es gibt zwei Hauptdatenströme, die vom Verzeichnissynchronisierungsserver stammen:
   
 -  Azure AD Connect fragt einen Domänencontroller im lokalen Netzwerk auf Änderungen an Benutzerkonten und Kennwörtern ab.
--  Azure AD Connect sendet die Änderungen an Konten und Kennwörtern an die Azure AD-Instanz Ihres Microsoft 365-Abonnements. Da sich der Verzeichnissynchronisierungsserver in einem erweiterten Teil Ihres lokalen Netzwerks befindet, werden diese Änderungen über den Proxyserver des lokalen Netzwerks gesendet.
+-  Azure AD Verbinden sendet die Änderungen an Konten und Kennwörtern an die Azure AD-Instanz Ihres Microsoft 365 Abonnements. Da sich der Verzeichnissynchronisierungsserver in einem erweiterten Teil Ihres lokalen Netzwerks befindet, werden diese Änderungen über den Proxyserver des lokalen Netzwerks gesendet.
     
 > [!NOTE]
-> Diese Lösung beschreibt die Synchronisierung einer einzelnen Active Directory-Domäne in einer einzelnen Active Directory-Gesamtstruktur. Azure AD Connect synchronisiert alle Active Directory-Domänen in Ihrer Active Directory-Gesamtstruktur mit Microsoft 365. Wenn Sie mehrere Active Directory-Gesamtstrukturen zum Synchronisieren mit Microsoft 365 haben, finden Sie weitere Informationen unter [Multi-forest Directory Sync with Single Sign-On Scenario](/azure/active-directory/hybrid/whatis-hybrid-identity). 
+> Diese Lösung beschreibt die Synchronisierung einer einzelnen Active Directory-Domäne in einer einzelnen Active Directory-Gesamtstruktur. Azure AD Verbinden synchronisiert alle Active Directory-Domänen in Ihrer Active Directory-Gesamtstruktur mit Microsoft 365. Wenn Sie mehrere Active Directory-Gesamtstrukturen zum Synchronisieren mit Microsoft 365 haben, finden Sie weitere Informationen unter [Multi-Forest Directory Sync with Single Sign-On Scenario](/azure/active-directory/hybrid/whatis-hybrid-identity). 
   
 Es gibt bei der Bereitstellung dieser Lösung zwei wichtige Schritte:
   
 1. Erstellen eines virtuellen Azure-Netzwerks und Einrichten einer Standort-zu-Standort-VPN-Verbindung mit dem lokalen Netzwerk. Weitere Informationen finden Sie unter [Verbinden eines lokalen Netzwerks mit einem virtuellen Microsoft Azure-Netzwerk](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md).
     
-2. Installieren [Sie Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594) auf einem virtuellen Computer mit Domänen in Azure, und synchronisieren Sie dann den lokalen AD DS mit Microsoft 365. Dies umfasst:
+2. Installieren [Sie Azure AD Verbinden](https://www.microsoft.com/download/details.aspx?id=47594) auf einem virtuellen Computer mit Domänen in Azure, und synchronisieren Sie dann den lokalen AD DS mit Microsoft 365. Dies umfasst:
     
     Erstellen eines Virtueller Azure-Computer zum Ausführen von Azure AD Connect.
     
     Installieren und Konfigurieren von [Azure AD Connect](https://www.microsoft.com/download/details.aspx?id=47594).
     
-    Für die Konfiguration von Azure AD Connect sind die Anmeldeinformationen (Benutzername und Kennwort) eines Azure AD-Administratorkontos und eines AD DS-Unternehmensadministratorkontos erforderlich. Azure AD Connect wird sofort und kontinuierlich ausgeführt, um die lokale AD DS-Gesamtstruktur mit Microsoft 365 zu synchronisieren.
+    Das Konfigurieren von Azure AD Verbinden erfordert die Anmeldeinformationen (Benutzername und Kennwort) eines Azure AD-Administratorkontos und eines AD DS-Unternehmensadministratorkontos. Azure AD Verbinden wird sofort und kontinuierlich ausgeführt, um die lokale AD DS-Gesamtstruktur mit Microsoft 365.
     
 Bevor Sie diese Lösung in der Produktion bereitstellen, können Sie die Anweisungen unter [Die](simulated-ent-base-configuration-microsoft-365-enterprise.md) simulierte Unternehmensbasiskonfiguration verwenden, um diese Konfiguration als Nachweis für das Konzept, für Demonstrationen oder für Experimente zu konfigurieren.
   
@@ -87,9 +87,9 @@ Lesen Sie die folgenden Voraussetzungen für diese Lösung, ehe Sie mit diesem V
     
 - Stellen Sie sicher, dass alle [Voraussetzungen](connect-an-on-premises-network-to-a-microsoft-azure-virtual-network.md#prerequisites) für die Konfiguration des virtuellen Azure-Netzwerks erfüllt sind.
     
-- Verfügen Sie über ein Microsoft 365-Abonnement, das das Active Directory-Integrationsfeature enthält. Weitere Informationen zu Microsoft 365-Abonnements finden Sie auf der [Seite Microsoft 365-Abonnement.](https://products.office.com/compare-all-microsoft-office-products?tab=2)
+- Verfügen Sie Microsoft 365 Abonnement, das das Active Directory-Integrationsfeature enthält. Weitere Informationen zu Microsoft 365 Abonnements finden Sie auf der [Seite Microsoft 365 Abonnements](https://products.office.com/compare-all-microsoft-office-products?tab=2).
     
-- Stellen Sie einen virtuellen Azure-Computer bereit, auf dem Azure AD Connect ausgeführt wird, um Ihre lokale AD DS-Gesamtstruktur mit Microsoft 365 zu synchronisieren.
+- Bereitstellen eines virtuellen Azure-Computers, auf dem Azure AD Verbinden, um Ihre lokale AD DS-Gesamtstruktur mit Microsoft 365.
     
     Sie benötigen die Anmeldeinformationen (Namen und Kennwörter) für das AD DS-Unternehmensadministratorkonto und ein Azure AD-Administratorkonto.
     
@@ -119,7 +119,7 @@ Das Bereitstellen von Azure AD Connect auf einem virtuellen Computer in Azure um
     
 - Phase 3: Installieren und Konfigurieren von Azure AD Connect
     
-Nach der Bereitstellung müssen Sie auch Standorte und Lizenzen für die neuen Benutzerkonten in Microsoft 365 zuweisen.
+Nach der Bereitstellung müssen Sie auch Speicherorte und Lizenzen für die neuen Benutzerkonten in Microsoft 365.
 
 
 ### <a name="phase-1-create-and-configure-the-azure-virtual-network"></a>Phase 1: Erstellen und Konfigurieren des virtuellen Azure-Netzwerks
@@ -128,7 +128,7 @@ Zum Erstellen und Konfigurieren des virtuellen Azure-Netzwerks durchlaufen Sie [
   
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Phase 1 des Verzeichnissynchronisierungsservers für Microsoft 365, der in Azure gehostet wird](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
+![Phase 1 des Verzeichnissynchronisierungsservers für Microsoft 365 in Azure gehostet](../media/aab6a9a4-eb78-4d85-9b96-711e6de420d7.png)
   
 Diese Abbildung zeigt ein lokales Netzwerk, das über eine Standort-zu-Standort-VPN- oder ExpressRoute-Verbindung mit einem virtuellen Azure-Netzwerk verbunden ist.
   
@@ -150,7 +150,7 @@ Damit Azure AD Connect auf Internetressourcen zugreifen kann, müssen Sie den Ve
   
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Phase 2 des Verzeichnissynchronisierungsservers für Microsoft 365, gehostet in Azure](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
+![Phase 2 des Verzeichnissynchronisierungsservers für Microsoft 365 in Azure gehostet](../media/9d8c9349-a207-4828-9b2b-826fe9c06af3.png)
   
 Diese Abbildung zeigt den virtuellen Computer des Verzeichnissynchronisierungsservers im lokalen virtuellen Azure-Netzwerk.
   
@@ -167,13 +167,13 @@ Gehen Sie wie folgt vor:
   
 Nachfolgend sehen Sie die daraus resultierende Konfiguration.
   
-![Phase 3 des Verzeichnissynchronisierungsservers für Microsoft 365, gehostet in Azure](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
+![Phase 3 des Verzeichnissynchronisierungsservers für Microsoft 365 in Azure gehostet](../media/3f692b62-b77c-4877-abee-83c7edffa922.png)
   
 Diese Abbildung zeigt den Verzeichnissynchronisierungsserver mit Azure AD Connect im lokalen virtuellen Azure-Netzwerk.
   
 ### <a name="assign-locations-and-licenses-to-users-in-microsoft-365"></a>Zuweisen von Speicherorten und Lizenzen zu Benutzern in Microsoft 365
 
-Azure AD Connect fügt Ihrem Microsoft 365-Abonnement Konten aus dem lokalen AD DS hinzu. Damit sich Benutzer jedoch bei Microsoft 365 anmelden und seine Dienste nutzen können, müssen die Konten mit einem Standort und Lizenzen konfiguriert werden. Verwenden Sie die folgenden Schritte, um den Speicherort hinzuzufügen und Lizenzen für die entsprechenden Benutzerkonten zu aktivieren:
+Azure AD Verbinden fügt Ihrem Microsoft 365-Abonnement Konten aus dem lokalen AD DS hinzu. Damit sich Benutzer jedoch bei Microsoft 365 anmelden und ihre Dienste nutzen können, müssen die Konten mit einem Standort und Lizenzen konfiguriert werden. Verwenden Sie die folgenden Schritte, um den Speicherort hinzuzufügen und Lizenzen für die entsprechenden Benutzerkonten zu aktivieren:
   
 1. Melden Sie sich beim [Microsoft 365 Admin Center an,](https://admin.microsoft.com)und klicken Sie dann auf **Admin**.
     

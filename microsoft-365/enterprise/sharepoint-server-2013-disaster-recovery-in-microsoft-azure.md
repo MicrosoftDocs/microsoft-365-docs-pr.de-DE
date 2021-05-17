@@ -17,7 +17,7 @@ ms.custom:
 - Ent_Deployment
 - seo-marvel-apr2020
 ms.assetid: e9d14cb2-ff28-4a18-a444-cebf891880ea
-description: In diesem Artikel wird beschrieben, wie Sie Azure zum Erstellen einer Notfallwiederherstellungsumgebung für Ihre lokale SharePoint-Farm verwenden.
+description: In diesem Artikel wird beschrieben, wie Sie Azure zum Erstellen einer Notfallwiederherstellungsumgebung für Ihre lokale SharePoint verwenden.
 ms.openlocfilehash: 01a49cfa19711caa36190a795792635431dd7d04
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -232,7 +232,7 @@ Dieser Fahrplan setzt vorausgesetzt, dass Sie bereits eine SharePoint Server 201
    
 ## <a name="phase-1-design-the-disaster-recovery-environment"></a>Phase 1: Entwerfen der Umgebung für die Notfallwiederherstellung
 
-Befolgen Sie die Anleitungen unter [Microsoft Azure-Architekturen für SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) für den Entwurf der Umgebung für die Notfallwiederherstellung, einschließlich der SharePoint-Wiederherstellungsfarm. Sie können die Grafiken in der [Datei SharePoint Disaster Recovery Solution in Azure](https://go.microsoft.com/fwlink/p/?LinkId=392554) Visio verwenden, um den Entwurfsprozess zu starten. Es wird empfohlen, dass Sie die gesamte Umgebung vor Beginn der Arbeit in der Azure-Umgebung entwerfen.
+Befolgen Sie die Anleitungen unter [Microsoft Azure-Architekturen für SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) für den Entwurf der Umgebung für die Notfallwiederherstellung, einschließlich der SharePoint-Wiederherstellungsfarm. Sie können die Grafiken in der SharePoint [Disaster Recovery Solution in Azure](https://go.microsoft.com/fwlink/p/?LinkId=392554) Visio verwenden, um den Entwurfsprozess zu starten. Es wird empfohlen, dass Sie die gesamte Umgebung vor Beginn der Arbeit in der Azure-Umgebung entwerfen.
   
 Zusätzlich zur Anleitung unter [Microsoft Azure-Architekturen für SharePoint 2013](microsoft-azure-architectures-for-sharepoint-2013.md) für das Entwerfen des virtuellen Netzwerks, der VPN-Verbindung, von Active Directory und der SharePoint-Farm müssen Sie der Azure-Umgebung eine Dateifreigaberolle hinzufügen.
   
@@ -273,7 +273,7 @@ Diese Phase umfasst die Bereitstellung von Windows Server Active Directory und D
   
 **Abbildung 4: Hybride Active Directory-Domänenkonfiguration**
 
-![Zwei virtuelle Computer, die im virtuellen Azure-Netzwerk und im Subnetz der SharePoint-Farm bereitgestellt werden, sind Replikatdomänencontroller und DNS-Server.](../media/AZarch-HyADdomainConfig.png)
+![Zwei virtuelle Computer, die im virtuellen Azure-Netzwerk und im Subnetz SharePoint Farm bereitgestellt werden, sind Replikatdomänencontroller und DNS-Server.](../media/AZarch-HyADdomainConfig.png)
   
 In der Abbildung werden zwei virtuelle Computer im selben Subnetz bereitgestellt. Diese virtuellen Computer hosten je zwei Rollen: Active Directory und DNS.
   
@@ -630,7 +630,7 @@ Dies geschieht, weil die Standardsicherungseinstellung für eine Verfügbarkeits
   
 ### <a name="managed-metadata-service-or-other-sharepoint-service-fails-to-start-automatically-after-installation"></a>Verwalteter Metadatendienst (oder anderer SharePoint-Dienst) wird nach der Installation nicht automatisch gestartet
 
-Je nach Leistung und aktueller Last Ihrer SharePoint-Server kann das Starten von Diensten mehrere Minuten dauern. Klicken Sie für den Dienst manuell auf **Starten**, und räumen Sie genügend Zeit für den Start ein, während Sie gelegentlich den Bildschirm Dienste auf dem Server aktualisieren, um den Status zu überwachen. Für den Fall, dass der Dienst beendet bleibt, aktivieren Sie die SharePoint-Diagnoseprotokollierung, versuchen, den Dienst neu zu starten, und überprüfen dann das Protokoll auf Fehler. Weitere Informationen finden Sie unter [Konfigurieren der Diagnoseprotokollierung in SharePoint 2013](/sharepoint/administration/configure-diagnostic-logging)
+Je nach Leistung und aktueller Last Ihrer SharePoint-Server kann das Starten von Diensten mehrere Minuten dauern. Klicken Sie für den Dienst manuell auf **Starten**, und räumen Sie genügend Zeit für den Start ein, während Sie gelegentlich den Bildschirm Dienste auf dem Server aktualisieren, um den Status zu überwachen. Für den Fall, dass der Dienst beendet bleibt, aktivieren Sie die SharePoint-Diagnoseprotokollierung, versuchen, den Dienst neu zu starten, und überprüfen dann das Protokoll auf Fehler. Weitere Informationen finden Sie unter [Configure diagnostic logging in SharePoint 2013](/sharepoint/administration/configure-diagnostic-logging)
   
 ### <a name="after-changing-dns-to-the-azure-failover-environment-client-browsers-continue-to-use-the-old-ip-address-for-the-sharepoint-site"></a>Nach dem Ändern von DNS auf die Azure-Failoverumgebung verwenden Clientbrowser weiterhin die alte IP-Adresse für die SharePoint-Website.
 

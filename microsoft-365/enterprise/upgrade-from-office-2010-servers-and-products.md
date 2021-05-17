@@ -21,7 +21,7 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Beginnen Sie mit der Planung Ihres Upgrades von Office 2010-Servern und Clientanwendungen, da der Support bald beendet wird und keine benutzerdefinierten Supportvereinbarungen verfügbar sind.
+description: Beginnen Sie mit der Planung ihres Upgrades von Office 2010-Servern und Clientanwendungen, da der Support bald beendet wird und keine benutzerdefinierten Supportvereinbarungen verfügbar sind.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 85a6efac9c7e622157b01b02c5d9c38a1e74d5e4
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -38,17 +38,17 @@ Office 2010 und Exchange 2010 haben ihr Ende der Unterstützung am **13. Oktober
 
 Der Support für SharePoint 2010 und Project Server 2010 endet am **13. April 2021**.
 
-Wenn Sie das Upgrade planen, ziehen Sie den Wechsel zu Microsoft 365 in Betracht.
+Wenn Sie das Upgrade planen, ziehen Sie den Wechsel zu Microsoft 365.
 
 - Microsoft 365 verfügt über cloudbasierte Dienste für Office 2010-Serverprodukte wie Exchange Server und SharePoint Server sowie Dienste wie Teams und OneDrive for Business.
 
 - Microsoft 365 Apps for Enterprise (zuvor *Office 365 ProPlus* genannt), das in Microsoft 365 E3 und E5 enthalten ist, ist der Satz von Office-Client-Apps, die Sie auf Ihrem lokalen Gerät installieren. Sie werden regelmäßig mit neuen Produktivitäts- und Sicherheitsfeatures aus der Microsoft Cloud aktualisiert.
 
-Eine visuelle Zusammenfassung der Upgrade-, Migrations- und Move-to-the-Cloud-Optionen für Office 2010-Clients und -Server und Windows 7 finden Sie im Ende [des](../downloads/Office2010Windows7EndOfSupport.pdf)Supportposters .
+Eine visuelle Zusammenfassung der Upgrade-, Migrations- und Move-to-the-Cloud-Optionen für Office 2010-Clients und [](../downloads/Office2010Windows7EndOfSupport.pdf)-Server und Windows 7 finden Sie im Ende des Supportposters .
 
-[![Ende der Unterstützung für Office 2010-Clients und -Server und Windows 7-Poster](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Ende der Unterstützung für Office 2010-Clients und -Server und Windows 7 Poster](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-Dieses einseitige Poster fasst die verschiedenen Pfade zusammen, die Sie zur Verarbeitung von Office 2010-Client- und Serverprodukten und Windows 7 vom Erreichen des Endes des Support erreichen können. Bevorzugte Pfade und Optionsunterstützung in Microsoft 365 Enterprise werden hervorgehoben.
+Dieses einseitige Poster fasst die verschiedenen Pfade zusammen, die Sie zum Behandeln von Office 2010-Client- und Serverprodukten und Windows 7 nach erreichen des Endes des Support ergreifen können. Bevorzugte Pfade und Optionsunterstützung in Microsoft 365 Enterprise werden hervorgehoben.
 
 Sie können dieses [Poster auch](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) herunterladen und im Letter-, Legal- oder Tabloidformat (11 x 17) drucken.
 
@@ -64,7 +64,7 @@ Sie können dieses [Poster auch](https://github.com/MicrosoftDocs/microsoft-365-
 
 ## <a name="im-a-home-user-what-do-i-do"></a>Ich bin ein privater Benutzer. Wie gehe ich jetzt vor?
 
-Wenn Sie Office 2010-Produkte und -Anwendungen zu Hause verwenden, lesen Sie [diese Informationen](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
+Wenn Sie die Office 2010-Produkte und -Anwendungen zu Hause verwenden, lesen Sie [diese Informationen](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
 
 ## <a name="related-topics"></a>Verwandte Themen
 

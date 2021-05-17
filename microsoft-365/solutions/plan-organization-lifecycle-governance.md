@@ -1,5 +1,5 @@
 ---
-title: Planen der Organisations- und Lebenszyklussteuerung für Microsoft 365-Gruppen und Microsoft Teams
+title: Planen der Organisations- und Lebenszyklussteuerung für Microsoft 365 gruppen und Microsoft Teams
 ms.reviewer: arvaradh
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -22,19 +22,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50907928"
 ---
-# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planen der Organisations- und Lebenszyklussteuerung für Microsoft 365-Gruppen und Microsoft Teams
+# <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planen der Organisations- und Lebenszyklussteuerung für Microsoft 365 gruppen und Microsoft Teams
 
-Microsoft 365-Gruppen verfügen über eine reihe von Tools, um die von Ihrer Organisation benötigten Steuerungsfunktionen zu implementieren. 
+Microsoft 365 gruppen verfügt über eine reihe von Tools, um die Governancefunktionen zu implementieren, die Ihre Organisation benötigt. 
 
 Der folgende Abschnitt beschreibt die Möglichkeiten, empfiehlt bewährte Methoden und gibt Hinweise, wie die richtigen Fragen gestellt werden können, um die Anforderungen an die Governance zu bestimmen und wie diese erfüllt werden können.
 
-## <a name="control-who-can-create-microsoft-365-groups"></a>Steuern, wer Microsoft 365-Gruppen erstellen kann
+## <a name="control-who-can-create-microsoft-365-groups"></a>Steuern, wer benutzergruppen Microsoft 365 kann
 
 Gruppen können von Endbenutzern aus mehreren Endpunkten erstellt werden, einschließlich Outlook, SharePoint, Teams und anderen Umgebungen.
 
 ![Bildbeschreibung](../media/04.png)
 
-Wir empfehlen dringend Self-Service, um Gruppenbesitzer zu unterstützen und Benutzern zu helfen, ihre Arbeit einfacher zu erledigen. Das Einschränken der Gruppen- und Teamerstellung kann die Produktivität der Benutzer beeinträchtigen, da für viele Microsoft 365-Dienste Gruppen erstellt werden müssen, damit der Dienst funktioniert.
+Wir empfehlen dringend Self-Service, um Gruppenbesitzer zu unterstützen und Benutzern zu helfen, ihre Arbeit einfacher zu erledigen. Das Einschränken der Gruppen- und Teamerstellung kann die Produktivität der Benutzer beeinträchtigen, da viele Microsoft 365 erfordern, dass Gruppen erstellt werden, damit der Dienst funktioniert.
 
 Berücksichtigen Sie die folgenden Steuerungsoptionen für die Gruppenerstellung:
 
@@ -42,11 +42,11 @@ Berücksichtigen Sie die folgenden Steuerungsoptionen für die Gruppenerstellung
 - Beschränken Sie die Gruppenerstellung auf Mitglieder einer [Sicherheitsgruppe](/azure/active-directory/users-groups-roles/groups-create-rule) mit dynamischer Mitgliedschaft, die z. B. alle Vollzeitmitarbeiter enthält.
 - Beschränken Sie die Gruppenerstellung auf eine Sicherheitsgruppe, und fordern Sie, dass Benutzer Schulungen in den Gruppenverwendungsrichtlinien Ihrer Organisation abschließen müssen, um Mitglied der Sicherheitsgruppe zu werden.
 
-Wenn Sie einschränken möchten, wer Gruppen erstellen kann, finden Sie unter Verwalten, wer [Microsoft 365-Gruppen](manage-creation-of-groups.md) erstellen kann Informationen zur Konfiguration dieses Themas.
+Wenn Sie einschränken möchten, wer Gruppen erstellen kann, finden Sie unter [Manage who can create Microsoft 365 groups](manage-creation-of-groups.md) weitere Informationen zur Konfiguration dieser Gruppe.
 
 ## <a name="group-delete-restore-and-archiving"></a>Gruppenlöschen, Wiederherstellen und Archivierung
 
-Wenn eine Microsoft 365-Gruppe gelöscht wird, wird sie standardmäßig 30 Tage lang aufbewahrt. Dieser 30-Tage-Zeitraum wird als "vorläufiges Löschen" bezeichnet, weil Sie die Gruppe immer noch wiederherstellen können. Nach 30 Tagen werden die Gruppe und die zugehörigen Inhalte endgültig gelöscht und können nicht wiederhergestellt werden.
+Wenn eine Microsoft 365 gelöscht wird, wird sie standardmäßig 30 Tage lang aufbewahrt. Dieser 30-Tage-Zeitraum wird als "vorläufiges Löschen" bezeichnet, weil Sie die Gruppe immer noch wiederherstellen können. Nach 30 Tagen werden die Gruppe und die zugehörigen Inhalte endgültig gelöscht und können nicht wiederhergestellt werden.
 
 Wenn Aufbewahrungsrichtlinien zum Beibehalten von Chats, Dateien oder E-Mails erstellt wurden, werden diese Elemente beibehalten, nachdem die Gruppe gelöscht wurde. Weitere [Informationen finden Sie unter Informationen](../compliance/retention.md) zu Aufbewahrungsrichtlinien.
 
@@ -61,7 +61,7 @@ Eine Gruppenbenennungsrichtlinie kann Ihnen dabei helfen, Gruppen auf zwei Arten
 
 Benennungsrichtlinien werden angewendet, wenn Gruppen aus einem der mit einer Gruppe verbundenen Dienste erstellt werden.
 
-Wenn Sie sich für die Verwendung von Benennungsrichtlinien für Gruppen entscheiden, lesen [Sie Die Benennungsrichtlinie für Microsoft 365-Gruppen](groups-naming-policy.md).
+Wenn Sie sich für die Verwendung von Benennungsrichtlinien für Gruppen entscheiden, lesen Sie [Microsoft 365 Namensrichtlinie für Gruppen](groups-naming-policy.md).
 
 ## <a name="group-expiration-policy"></a>Gruppenablaufrichtlinie
 
@@ -73,7 +73,7 @@ Sobald Sie festgelegt haben, dass Gruppen ablaufen:
 - Alle nicht verlängerten Gruppen werden gelöscht.
 - Alle gelöschten Gruppen können von den Gruppenbesitzern oder dem Administrator innerhalb von 30 Tagen wiederhergestellt werden.
 
-Ablaufrichtlinien sind eine gute Möglichkeit, die Zersiedelung von Gruppen zu begrenzen, indem sichergestellt wird, dass nicht mehr verwendete Gruppen gelöscht werden. Informationen zum Erstellen einer Gruppenablaufrichtlinie finden Sie unter [Microsoft 365 Group Expiration Policy](microsoft-365-groups-expiration-policy.md).
+Ablaufrichtlinien sind eine gute Möglichkeit, die Zersiedelung von Gruppen zu begrenzen, indem sichergestellt wird, dass nicht mehr verwendete Gruppen gelöscht werden. Wenn Sie eine Gruppenablaufrichtlinie erstellen möchten, lesen Sie [Microsoft 365 Gruppenablaufrichtlinie](microsoft-365-groups-expiration-policy.md).
 
 ## <a name="related-topics"></a>Verwandte Themen
 

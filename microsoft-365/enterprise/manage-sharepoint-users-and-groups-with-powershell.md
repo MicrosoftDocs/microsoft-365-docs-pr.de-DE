@@ -1,5 +1,5 @@
 ---
-title: Verwalten von SharePoint Online-Benutzern und -Gruppen mit PowerShell
+title: Verwalten SharePoint Onlinebenutzern und -gruppen mit PowerShell
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: In diesem Artikel erfahren Sie, wie Sie PowerShell für Microsoft 365 zum Verwalten von SharePoint Online-Benutzern, -Gruppen und -Websites verwenden.
+description: In diesem Artikel erfahren Sie, wie Sie PowerShell for Microsoft 365 verwenden, um SharePoint, Gruppen und Websites zu verwalten.
 ms.openlocfilehash: cc977355f1182b18d2f2e90b573683ed69299c1c
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -27,13 +27,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50916726"
 ---
-# <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Verwalten von SharePoint Online-Benutzern und -Gruppen mit PowerShell
+# <a name="manage-sharepoint-online-users-and-groups-with-powershell"></a>Verwalten SharePoint Onlinebenutzern und -gruppen mit PowerShell
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Wenn Sie ein SharePoint Online-Administrator sind, der mit großen Listen von Benutzerkonten oder Gruppen arbeitet und eine einfachere Möglichkeit zum Verwalten dieser Konten möchte, können Sie PowerShell für Microsoft 365 verwenden. 
+Wenn Sie ein SharePoint online-Administrator sind, der mit großen Listen von Benutzerkonten oder Gruppen arbeitet und eine einfachere Möglichkeit zum Verwalten dieser Konten möchte, können Sie PowerShell für Microsoft 365. 
 
-Bevor Sie beginnen, müssen Sie für die Verfahren in diesem Thema eine Verbindung mit SharePoint Online herstellen. Anweisungen finden Sie unter [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Bevor Sie beginnen, müssen Sie für die Verfahren in diesem Thema eine Verbindung mit SharePoint Online herstellen. Anweisungen finden Sie [unter Verbinden to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="get-a-list-of-sites-groups-and-users"></a>Eine Liste der Websites, Gruppen und Benutzer erhalten
 
@@ -79,11 +79,11 @@ $user = "opalc"
 Set-SPOUser -Site https://$tenant.sharepoint.com/sites/$site -LoginName $user@$tenant.com -IsSiteCollectionAdmin $true
 ```
 
-Sie können diese Befehle kopieren und in Editor einfügen, die Variablenwerte für $tenant, $site und $user in tatsächliche Werte aus Ihrer Umgebung ändern und diese dann in Das SharePoint Online-Verwaltungsshellfenster einfügen, um sie auszuführen.
+Sie können diese Befehle kopieren und in Editor einfügen, die Variablenwerte für $tenant, $site und $user in tatsächliche Werte aus Ihrer Umgebung ändern und diese dann in das Fenster SharePoint Online Management Shell einfügen, um sie auszuführen.
 
 ## <a name="add-a-user-to-other-site-collection-groups"></a>Hinzufügen eines Benutzers zu anderen Websitesammlungsgruppen
 
-In dieser Aufgabe verwenden wir das Cmdlet, um einen Benutzer einer `Add-SPOUser` SharePoint-Gruppe in einer Websitesammlung hinzuzufügen.
+In dieser Aufgabe verwenden wir das Cmdlet, um einen Benutzer zu einer SharePoint `Add-SPOUser` einer Websitesammlung hinzuzufügen.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -106,7 +106,7 @@ Add-SPOUser -Group $group -LoginName $user@$tenant.com -Site https://$tenant.sha
 
 ## <a name="create-a-site-collection-group"></a>Erstellen einer Websitesammlungsgruppe
 
-Sie verwenden das `New-SPOSiteGroup` Cmdlet, um eine neue SharePoint-Gruppe zu erstellen und sie einer Websitesammlung hinzuzufügen.
+Mit dem Cmdlet können Sie eine neue SharePoint erstellen und `New-SPOSiteGroup` einer Websitesammlung hinzufügen.
 
 ```powershell
 $tenant = "<tenant name, such as litwareinc for litwareinc.com>"
@@ -131,7 +131,7 @@ New-SPOSiteGroup -Group $group -PermissionLevels $level -Site https://$tenant.sh
 
 Manchmal müssen Sie einen Benutzer von einer Website oder sogar von allen Websites entfernen. Vielleicht wechselt der Mitarbeiter von einer Abteilung in eine andere oder verlässt das Unternehmen. Sie können dies für einen Mitarbeiter problemlos auf der Benutzeroberfläche tun, aber dies ist nicht einfach, wenn Sie eine vollständige Abteilung von einem Standort zu einem anderen verschieben müssen.
 
-Mithilfe der SharePoint Online-Verwaltungsshell und der CSV-Dateien ist dies jedoch schnell und einfach. In dieser Aufgabe verwenden Sie Windows PowerShell, um einen Benutzer aus einer Sicherheitsgruppe für Websitesammlungen zu entfernen. Anschließend verwenden Sie eine CSV-Datei und entfernen viele Benutzer von verschiedenen Websites. 
+Mithilfe der SharePoint online-Verwaltungsshell und -CSV-Dateien ist dies jedoch schnell und einfach. In dieser Aufgabe verwenden Sie Windows PowerShell, um einen Benutzer aus einer Sicherheitsgruppe für Websitesammlungen zu entfernen. Anschließend verwenden Sie eine CSV-Datei und entfernen viele Benutzer von verschiedenen Websites. 
 
 Wir verwenden das Cmdlet "Remove-SPOUser", um einen einzelnen Microsoft 365-Benutzer aus einer Websitesammlungsgruppe zu entfernen, damit die Befehlssyntax angezeigt wird. Die Syntax sieht wie folgt aus:
 
@@ -165,9 +165,9 @@ Get-SPOSite | ForEach {Get-SPOSiteGroup –Site $_.Url} | ForEach {Remove-SPOUse
 
 ## <a name="automate-management-of-large-lists-of-users-and-groups"></a>Automatisieren der Verwaltung großer Listen von Benutzern und Gruppen
 
-Zum Hinzufügen einer großen Anzahl von Konten zu SharePoint-Websites und zum Erteilen von Berechtigungen können Sie das Microsoft 365 Admin Center, einzelne PowerShell-Befehle oder PowerShell eine CSV-Datei verwenden. Bei diesen Optionen ist die CSV-Datei die schnellste Möglichkeit, diese Aufgabe zu automatisieren.
+Zum Hinzufügen einer großen Anzahl von Konten zu SharePoint Websites und zum Erteilen von Berechtigungen können Sie das Microsoft 365 Admin Center, einzelne PowerShell-Befehle oder PowerShell eine CSV-Datei verwenden. Bei diesen Optionen ist die CSV-Datei die schnellste Möglichkeit, diese Aufgabe zu automatisieren.
 
-Der grundlegende Prozess besteht im Erstellen einer CSV-Datei mit Kopfzeilen (Spalten), die den Parametern entsprechen, die das Windows PowerShell benötigt. Sie können eine solche Liste ganz einfach in Excel erstellen und dann als CSV-Datei exportieren. Anschließend verwenden Sie ein Windows PowerShell Skript, um Datensätze (Zeilen) in der CSV-Datei zu durch iterieren und die Benutzer zu Gruppen und die Gruppen zu Websites zu hinzufügen. 
+Der grundlegende Prozess besteht im Erstellen einer CSV-Datei mit Kopfzeilen (Spalten), die den Parametern entsprechen, die das Windows PowerShell benötigt. Sie können eine solche Liste ganz einfach in Excel erstellen und dann als CSV-Datei exportieren. Anschließend verwenden Sie ein Windows PowerShell-Skript, um Datensätze (Zeilen) in der CSV-Datei zu durch iterieren und die Benutzer zu Gruppen und die Gruppen zu Websites zu hinzufügen. 
 
 Erstellen wir beispielsweise eine CSV-Datei, um eine Gruppe von Websitesammlungen, Gruppen und Berechtigungen zu definieren. Als Nächstes erstellen wir eine CSV-Datei, um die Gruppen mit Benutzern zu füllen. Schließlich erstellen und führen wir ein einfaches Skript Windows PowerShell, das die Gruppen erstellt und auffüllt.
 
@@ -274,7 +274,7 @@ Was aber, wenn Sie dies für jede Website tun möchten? Sie können dies tun, oh
 Get-SPOSite | ForEach {Get-SPOUser –Site $_.Url} | Format-Table -Wrap -AutoSize | Out-File c:\UsersReport.txt -Force -Width 360 -Append
 ```
 
-Dieser Bericht ist recht einfach, und Sie können mehr Code hinzufügen, um spezifischere Berichte oder Berichte zu erstellen, die ausführlichere Informationen enthalten. Dies sollte Ihnen jedoch eine Vorstellung davon geben, wie Sie die SharePoint Online-Verwaltungsshell zum Verwalten von Benutzern in der SharePoint Online-Umgebung verwenden.
+Dieser Bericht ist recht einfach, und Sie können mehr Code hinzufügen, um spezifischere Berichte oder Berichte zu erstellen, die ausführlichere Informationen enthalten. Dies sollte Ihnen jedoch eine Vorstellung davon geben, wie Sie die SharePoint Online-Verwaltungsshell zum Verwalten von Benutzern in der SharePoint Onlineumgebung verwenden.
    
 ## <a name="see-also"></a>Siehe auch
 
@@ -284,4 +284,4 @@ Dieser Bericht ist recht einfach, und Sie können mehr Code hinzufügen, um spez
 
 [Verwalten von Microsoft 365 mit PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)

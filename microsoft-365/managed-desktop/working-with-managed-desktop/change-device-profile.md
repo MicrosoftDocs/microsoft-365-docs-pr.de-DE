@@ -28,7 +28,7 @@ Sie können die einem [Gerät](../service-description/profiles.md) zugewiesenen 
 
 Das ausgewählte Geräteprofil wird auf alle Geräte angewendet, die Sie im ersten Schritt auswählen. Um separate Geräte in verschiedene Profile zu verschieben, müssen Sie diesen Vorgang für jedes Geräteprofil wiederholen. 
 
-1. Wählen Sie im Microsoft Endpoint Manager **im**   linken Bereich Geräte aus. Wählen Sie **im Abschnitt Microsoft Managed Desktop** des Menüs Geräte  **aus.**  
+1. Wählen Microsoft Endpoint Manager **im** linken Bereich Geräte   aus. Wählen Sie **im Microsoft Managed Desktop** im Menü Geräte  **aus.**  
 2. Aktivieren Sie die Kontrollkästchen für die Geräte, die Sie ändern möchten. 
 3. Wählen **Sie Geräteprofil ändern** aus; Ein Fly-In wird geöffnet.
 4. Verwenden Sie das Dropdownmenü, um das neue Geräteprofil auszuwählen.

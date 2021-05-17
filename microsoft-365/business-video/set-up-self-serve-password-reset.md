@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Benutzer ihre eigenen Kennwörter in Microsoft 365 Business Premium zurücksetzen können.
+description: Erfahren Sie, wie Sie Benutzern das Zurücksetzen ihrer eigenen Kennwörter in Microsoft 365 Business Premium.
 ms.openlocfilehash: 62f82f106327c5378310bac0d41fde8462449329
 ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
@@ -32,11 +32,11 @@ ms.locfileid: "51903706"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S?autoplay=false]
 
-Damit Ihre Benutzer ihre eigenen Kennwörter zurücksetzen können, ohne sie jedes Mal kontaktieren zu müssen, können Sie die Self-Service-Kennwortzurücksetzung in Microsoft 365 Business Premium einrichten.
+Damit Ihre Benutzer ihre eigenen Kennwörter zurücksetzen können, ohne sie jedes Mal kontaktieren zu müssen, können Sie die Self-Service-Kennwortzurücksetzung in Microsoft 365 Business Premium.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Wählen Sie im Microsoft 365 Admin Center  im linken Navigationsbereich Einstellungen und dann **Sicherheit und & aus.**
+1. Wählen Sie im Microsoft 365 Admin Center im linken Navigationsbereich die Option **Einstellungen** und dann Sicherheit **& Datenschutz aus.**
 1. Wählen **Sie unter Ihre Eigenen Kennwörter zurücksetzen** lassen die Option Azure AD Admin Center **aus.**
 1. Wählen Sie im linken Navigationsbereich **Benutzer** aus, und wählen Sie dann auf der Seite Benutzer **–** alle Benutzer die Option **Kennwortzurücksetzung aus.**
 1. Wählen **Sie Alle** aus, um die Self-Service-Kennwortzurücksetzung zu aktivieren, und wählen Sie dann Speichern **aus.**

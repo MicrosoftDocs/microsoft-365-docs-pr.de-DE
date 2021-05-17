@@ -70,6 +70,6 @@ Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?
     
 6. Informationen zum Hinzufügen von Benutzern zu Ihrer Verteilerliste finden Sie unter Hinzufügen eines Benutzers oder [Kontakts zu einer Verteilergruppe](../email/add-user-or-contact-to-distribution-list.md).
     
-Informationen zur Verwendung von Gruppen in Outlook 2016 und Outlook im Web finden Sie im Thema Verwenden von Kontaktgruppen [(früher Verteilerlisten) in Outlook.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
+Informationen zur Verwendung von Gruppen in Outlook 2016 und Outlook im Web finden Sie unter Use [contact groups (formerly distribution lists) in Outlook.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
   
 Hilfe bei [Problemen mit Verteilerlisten finden](/office365/troubleshoot/groups/distribution-list-issues) Sie unter Probleme mit Verteilergruppen. 

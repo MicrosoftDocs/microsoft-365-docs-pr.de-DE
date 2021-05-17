@@ -26,7 +26,7 @@ Sie können das Desktophintergrundbild für Microsoft Managed Desktop-Geräte in
 ### <a name="requirements"></a>Anforderungen
 
 Diese Anforderungen müssen für ein Desktophintergrundbild erfüllt sein:
-- Bilddateiformat – JPG, JPEG oder PNG
+- Bilddateiformat – .jpg, JPEG oder .png
 - Dateispeicherort – Hosten an einem vertrauenswürdigen sicheren http(https)-Speicherort. 
 - Nicht zulässig – Speicherorte für http- und dateifreigaben (unc) werden nicht unterstützt. 
 
@@ -144,6 +144,6 @@ Diese Anforderungen müssen für Proxyserver- und Proxystandortausnahmen erfüll
 6. Wiederholen Sie die Schritte 1 bis 5 für jede vertrauenswürdige Website, die Sie hinzufügen möchten. 
 7. Wählen **Sie Bereitstellungsphase** aus, um Ihre Änderungen zu speichern und in der Testgruppe zu bereitstellen.
 
-## <a name="additional-resources"></a>Weitere Ressourcen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Übersicht über konfigurierbare Einstellungen](config-setting-overview.md) 
 - [Bereitstellen konfigurierbarer Einstellungen](config-setting-deploy.md)

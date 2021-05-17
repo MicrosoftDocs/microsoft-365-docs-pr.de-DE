@@ -27,25 +27,25 @@ ms.locfileid: "50906252"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Übersicht über grundlegende Mobilität und Sicherheit für Microsoft 365
 
-Sie können mobile Geräte verwalten und sichern, wenn sie mit Ihrer Microsoft 365-Organisation verbunden sind, indem Sie Grundlegende Mobilität und Sicherheit verwenden. Mobile Geräte wie Smartphones und Tablets für den Zugriff auf E-Mails, Kalender, Kontakte und Dokumente am Arbeitsplatz spielen eine große Rolle, um sicherzustellen, dass Mitarbeiter jederzeit und überall ihre Arbeit erledigen können. Daher ist es wichtig, dass Sie die Informationen Ihrer Organisation schützen, wenn Personen Geräte verwenden. Sie können grundlegende Mobilität und Sicherheit verwenden, um Gerätesicherheitsrichtlinien und Zugriffsregeln festlegen und mobile Geräte zu löschen, wenn sie verloren gehen oder gestohlen werden.
+Sie können mobile Geräte verwalten und sichern, wenn sie mit Ihrer Microsoft 365 verbunden sind, indem Sie Grundlegende Mobilität und Sicherheit verwenden. Mobile Geräte wie Smartphones und Tablets für den Zugriff auf E-Mails, Kalender, Kontakte und Dokumente am Arbeitsplatz spielen eine große Rolle, um sicherzustellen, dass Mitarbeiter jederzeit und überall ihre Arbeit erledigen können. Daher ist es wichtig, dass Sie die Informationen Ihrer Organisation schützen, wenn Personen Geräte verwenden. Sie können grundlegende Mobilität und Sicherheit verwenden, um Gerätesicherheitsrichtlinien und Zugriffsregeln festlegen und mobile Geräte zu löschen, wenn sie verloren gehen oder gestohlen werden.
 
 :::image type="content" source="../../media/basic-mobility-security/bms-3-setup.png" alt-text="Grundlegendes Setup für Mobilität und Sicherheit":::
 
 ## <a name="what-types-of-devices-can-you-manage"></a>Welche Arten von Geräten können Sie verwalten?
 
-Sie können Basic Mobility and Security verwenden, um viele Arten von mobilen Geräten wie Windows Phone, Android, iPhone und iPad zu verwalten. Zum Verwalten mobiler Geräte, die von Personen in Ihrer Organisation verwendet werden, muss jede Person über eine entsprechende Microsoft 365-Lizenz verfügen, und ihr Gerät muss in Basic Mobility and Security registriert sein.
+Sie können grundlegende Mobilität und Sicherheit verwenden, um viele Arten von mobilen Geräten wie Windows Phone, Android, iPhone und iPad. Zum Verwalten mobiler Geräte, die von Personen in Ihrer Organisation verwendet werden, muss jede Person über eine Microsoft 365-Lizenz verfügen, und ihr Gerät muss in Basic Mobility and Security registriert sein.
 
 Informationen dazu, was Basic Mobility and Security für jeden Gerätetyp unterstützt, finden Sie unter [Capabilities of Basic Mobility and Security](capabilities.md).
 
 ## <a name="setup-steps-for-basic-mobility-and-security"></a>Setupschritte für grundlegende Mobilität und Sicherheit
 
-Ein globaler Microsoft 365-Administrator muss die folgenden Schritte zum Aktivieren und Einrichten von Basic Mobility and Security ausführen. Ausführliche Schritte finden Sie unter [Set up Basic Mobility and Security](set-up.md). 
+Ein Microsoft 365 muss die folgenden Schritte zum Aktivieren und Einrichten von Basic Mobility and Security ausführen. Ausführliche Schritte finden Sie unter [Set up Basic Mobility and Security](set-up.md). 
 
 Im Folgenden finden Sie eine Zusammenfassung der Schritte:
 
 **Schritt 1:** Aktivieren Sie Grundlegende Mobilität und Sicherheit, indem Sie die folgenden Schritte unter  [Set up Basic Mobility and Security ausführen.](set-up.md)
 
-**Schritt 2:** Richten Sie grundlegende Mobilität und Sicherheit ein, indem Sie beispielsweise ein APNs-Zertifikat zum Verwalten von iOS-Geräten erstellen und einen DNS-Eintrag (Domain Name System) für Ihre Domäne hinzufügen, um Windows-Telefone zu unterstützen.
+**Schritt 2:** Richten Sie Grundlegende Mobilität und Sicherheit ein, indem Sie z. B. ein APNs-Zertifikat zum Verwalten von iOS-Geräten erstellen und einen DNS-Eintrag (Domain Name System) für Ihre Domäne hinzufügen, um Windows unterstützen.
 
 **Schritt 3:** Erstellen Sie Geräterichtlinien, und wenden Sie sie auf Benutzergruppen an. Wenn Sie dies tun, erhalten Ihre Benutzer eine Registrierungsnachricht auf ihrem Gerät, und wenn sie die Registrierung abgeschlossen haben, werden ihre Geräte durch die Richtlinien eingeschränkt, die Sie für sie eingerichtet haben. Weitere Informationen finden Sie unter [Registrieren Ihres mobilen Geräts mithilfe von Basic Mobility and Security](enroll-your-mobile-device.md). 
 
@@ -65,6 +65,6 @@ Wenn Sie nur die Verwaltung mobiler Apps (Mobile App Management, MAM) benötigen
 
 [Registrieren Ihres mobilen Geräts mithilfe von Basic Mobility and Security](enroll-your-mobile-device.md)
 
-[Verwalten von Geräten, die für die Verwaltung mobiler Geräte für Microsoft 365 registriert sind](manage-enrolled-devices.md)
+[Verwalten von Geräten, die für mobile Geräteverwaltung für geräte Microsoft 365](manage-enrolled-devices.md)
 
 [Erhalten von Details zu Geräten, die von Basic Mobility and Security verwaltet werden](get-details-about-managed-devices.md)

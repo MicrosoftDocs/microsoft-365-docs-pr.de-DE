@@ -1,5 +1,5 @@
 ---
-title: Hinzufügen oder Entfernen von Mitgliedern aus Microsoft 365-Gruppen
+title: Hinzufügen oder Entfernen von Mitgliedern aus Microsoft 365 Gruppen
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -17,7 +17,7 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
-description: Erfahren Sie, wie Sie ein Mitglied zu einer Gruppe hinzufügen, Mitglieder aus der Gruppe entfernen und den Gruppenbesitzerstatus im Microsoft 365 Admin Center verwalten.
+description: Erfahren Sie, wie Sie ein Mitglied zu einer Gruppe hinzufügen, Mitglieder aus der Gruppe entfernen und den Gruppenbesitzerstatus im Microsoft 365 verwalten.
 ms.openlocfilehash: 997145b85d2990d5bf7184f5e97a0a8d1c86dae9
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -25,12 +25,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50907916"
 ---
-# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Hinzufügen oder Entfernen von Mitgliedern aus Microsoft 365-Gruppen mithilfe des Admin Centers
+# <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Hinzufügen oder Entfernen von Mitgliedern aus Microsoft 365 Gruppen mithilfe des Admin Centers
 
-In Microsoft 365 erstellen Gruppenmitglieder in der Regel eigene Gruppen, fügen sich Gruppen hinzu, die sie beitreten möchten, oder werden von Gruppenbesitzern eingeladen. Wenn sich der Gruppenbesitz ändert oder Sie feststellen, dass ein Mitglied hinzugefügt oder entfernt werden soll, können Sie diese Änderung auch als Administrator vornehmen. Diese Änderungen können nur von einem globalen Administrator, Exchange-Administrator, Gruppenadministrator oder Benutzeradministrator vorgenommen werden. [Was ist eine Microsoft 365-Gruppe?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+In Microsoft 365 Gruppenmitglieder in der Regel eigene Gruppen erstellen, sich Gruppen hinzufügen, die sie beitreten möchten, oder werden von Gruppenbesitzern eingeladen. Wenn sich der Gruppenbesitz ändert oder Sie feststellen, dass ein Mitglied hinzugefügt oder entfernt werden soll, können Sie diese Änderung auch als Administrator vornehmen. Nur ein globaler Administrator, Exchange, Gruppenadministrator oder Benutzeradministrator kann diese Änderungen vornehmen. [Was ist eine Microsoft 365 Gruppe?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 > [!TIP]
-> Wenn Sie kein Administrator sind, können Sie Mitglieder mithilfe [von Outlook hinzufügen oder entfernen.](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de)
+> Wenn Sie kein Administrator sind, können Sie Mitglieder mithilfe von [Outlook.](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de)
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>Hinzufügen eines Mitglieds zu einer Gruppe im Admin Center
 
@@ -42,7 +42,7 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel eigene Gruppen, fügen
 
 4. Suchen Sie nach dem Namen des Mitglieds, das hinzugefügt werden soll, oder wählen Sie ihn aus.
 
-5. Wählen Sie **Speichern** aus.
+5. Klicken Sie auf **Speichern**.
 
 ## <a name="add-a-group-to-a-member-in-the-admin-center"></a>Hinzufügen einer Gruppe zu einem Mitglied im Admin Center
 
@@ -54,7 +54,7 @@ In Microsoft 365 erstellen Gruppenmitglieder in der Regel eigene Gruppen, fügen
 
 4. Suchen oder wählen Sie den Namen der Gruppe aus, die Sie hinzufügen möchten.
 
-5. Wählen Sie **Speichern** aus.
+5. Klicken Sie auf **Speichern**.
 
 ## <a name="remove-a-member-from-a-group-in-the-admin-center"></a>Entfernen eines Mitglieds aus einer Gruppe im Admin Center
 
@@ -99,7 +99,7 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
 
 4. Wählen Sie das X neben dem Namen des Besitzers aus.
 
-5. Wählen Sie **Speichern** aus.
+5. Klicken Sie auf **Speichern**.
 
 ## <a name="more-on-managing-membership"></a>###Weitere Informationen zum Verwalten der Mitgliedschaft
 
@@ -111,12 +111,12 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
 
 ## <a name="articles-about-managing-groups"></a>Artikel zum Verwalten von Gruppen
 
-- [Aktualisieren von Verteilerlisten auf Microsoft 365-Gruppen in Outlook](../manage/upgrade-distribution-lists.md)
+- [Aktualisieren von Verteilerlisten auf Microsoft 365 Gruppen in Outlook](../manage/upgrade-distribution-lists.md)
 
 - [Warum Sie Ihre Verteilerlisten für Gruppen in Outlook aktualisieren sollten](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
-- [Verwalten des Gastzugriffs in Microsoft 365-Gruppen](manage-guest-access-in-groups.md)
+- [Verwalten des Gastzugriffs in Microsoft 365 Gruppen](manage-guest-access-in-groups.md)
 
-- [Verwalten von Microsoft 365-Gruppen mit PowerShell:](../../enterprise/manage-microsoft-365-groups-with-powershell.md)In diesem Artikel werden Die wichtigsten Cmdlets und Beispiele erläutert.
+- [Verwalten Microsoft 365 Gruppen mit PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md): In diesem Artikel werden Die wichtigsten Cmdlets und Beispiele erläutert.
 
-- [Benennungsrichtlinie für Microsoft 365-Gruppen](../../solutions/groups-naming-policy.md)
+- [Microsoft 365 gruppenbenennungsrichtlinie](../../solutions/groups-naming-policy.md)

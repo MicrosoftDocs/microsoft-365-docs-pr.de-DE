@@ -1,6 +1,6 @@
 ---
-title: Deaktivieren von TLS 1.0 und 1.1 in Microsoft 365 GCC High and DoD
-description: Erläutert, wie Microsoft die Unterstützung für TLS 1.1 und 1.0 in GCC High- und DoD-Umgebungen in Microsoft 365 deaktiviert.
+title: Deaktivieren von TLS 1.0 und 1.1 in Microsoft 365 GCC Und DoD
+description: Erläutert, wie Microsoft die Unterstützung für TLS 1.1 und 1.0 in GCC High- und DoD-Umgebungen in Microsoft 365.
 author: kccross
 manager: laurawi
 localization_priority: Normal
@@ -21,11 +21,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50919341"
 ---
-# <a name="disabling-tls-10-and-11-in-microsoft-365-gcc-high-and-dod"></a>Deaktivieren von TLS 1.0 und 1.1 in Microsoft 365 GCC High and DoD
+# <a name="disabling-tls-10-and-11-in-microsoft-365-gcc-high-and-dod"></a>Deaktivieren von TLS 1.0 und 1.1 in Microsoft 365 GCC Und DoD
 
 ## <a name="summary"></a>Zusammenfassung
 
-Um die neuesten Compliancestandards für das Federal Risk and Authorization Management Program (FedRAMP) zu erfüllen, deaktivieren wir die Transport Layer Security (TLS)-Versionen 1.1 und 1.0 in Microsoft 365 für GCC High- und DoD-Umgebungen. Diese Änderung wurde zuvor über den Microsoft Support in Vorbereitung auf die obligatorische Verwendung von [TLS 1.2 in Office 365 angekündigt.](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)
+Um die neuesten Compliancestandards für das Federal Risk and Authorization Management Program (FedRAMP) zu erfüllen, deaktivieren wir die Transport Layer Security (TLS)-Versionen 1.1 und 1.0 in Microsoft 365 für GCC High- und DoD-Umgebungen. Diese Änderung wurde zuvor über den Microsoft Support in Vorbereitung auf die obligatorische Verwendung von [TLS 1.2 in Office 365.](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)
 
 Die Sicherheit Ihrer Daten ist wichtig, und wir setzen uns für Transparenz bei Änderungen ein, die sich auf Ihre Nutzung des Diensts auswirken könnten.
 
@@ -35,21 +35,21 @@ Obwohl die [Microsoft TLS 1.0-Implementierung](https://support.microsoft.com/hel
 
 ## <a name="more-information"></a>Weitere Informationen
 
-Ab dem 15. Januar 2020 deaktiviert Microsoft 365 in den GCC High- und DoD-Umgebungen TLS 1.1 und 1.0.
+Ab dem 15. Januar 2020 werden Microsoft 365 in den GCC High- und DoD-Umgebungen TLS 1.1 und 1.0 deaktiviert.
 
-Bis zum 15. Januar 2020 sollten alle Kombinationen von Clientservern und Browserservern TLS Version 1.2 (oder höher) verwenden, um sicherzustellen, dass alle Verbindungen ohne Probleme mit Microsoft 365 hergestellt werden können. Dies kann Updates für bestimmte Kombinationen von Clientservern und Browserservern erfordern.
+Bis zum 15. Januar 2020 sollten alle Kombinationen von Clientservern und Browserservern TLS Version 1.2 (oder eine spätere Version) verwenden, um sicherzustellen, dass alle Verbindungen ohne Probleme mit Microsoft 365. Dies kann Updates für bestimmte Kombinationen von Clientservern und Browserservern erfordern.
 
 Für SharePoint und OneDrive müssen Sie .NET aktualisieren und konfigurieren, um TLS 1.2 zu unterstützen. Weitere Informationen finden Sie unter [Aktivieren von TLS 1.2 auf Clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client).
 
-Sie müssen Ihre Clientcomputer aktualisieren, um sicherzustellen, dass Sie den unterbrechungsfreien Zugriff auf Office 365 GCC High und DoD beibehalten.
+Sie müssen Ihre Clientcomputer aktualisieren, um sicherzustellen, dass Sie den unterbrechungsfreien Zugriff auf Office 365 GCC Und DoD beibehalten.
 
-Sie müssen Anwendungen aktualisieren, die Microsoft 365-APIs über TLS 1.0 oder TLS 1.1 aufrufen, um TLS 1.2 zu verwenden. .NET 4.5 ist standardmäßig auf TLS 1.1 festgelegt. Informationen zum Aktualisieren der .NET-Konfiguration finden Sie unter [Aktivieren von Transport Layer Security (TLS) 1.2 auf Clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client). Weitere Informationen finden Sie unter [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
+Sie müssen Anwendungen aktualisieren, die apIs Microsoft 365 TLS 1.0 oder TLS 1.1 aufrufen, um TLS 1.2 zu verwenden. .NET 4.5 ist standardmäßig auf TLS 1.1 festgelegt. Informationen zum Aktualisieren der .NET-Konfiguration finden Sie unter [Aktivieren von Transport Layer Security (TLS) 1.2 auf Clients](/mem/configmgr/core/plan-design/security/enable-tls-1-2-client). Weitere Informationen finden Sie unter [Preparing for the mandatory use of TLS 1.2 in Office 365](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365).
 
 Wir wissen, dass die folgenden Clientanwendungen TLS 1.2 nicht verwenden können:
 
 - Android 4.3 und niedrigere Versionen
 - Firefox Version 5.0 und frühere Versionen
-- Internet Explorer 8–10 unter Windows 7 und früheren Versionen
+- Internet Explorer 8–10 Windows 7 und früheren Versionen
 - Internet Explorer 10 auf Windows Phone 8.0
 - Safari 6.0.4/OS X 10.8.4 und frühere Versionen
 

@@ -33,9 +33,9 @@ ms.locfileid: "51861155"
 
 > Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Der Netzwerkschutz reduziert die Angriffsfläche Ihrer Geräte durch internetbasierte Ereignisse. Es verhindert, dass Mitarbeiter eine Anwendung verwenden, um auf gefährliche Domänen zu zugreifen, die Phishingbetrüger, Exploits und andere schädliche Inhalte im Internet hosten können. Der Netzwerkschutz erweitert den Umfang von [Microsoft Defender SmartScreen,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) um den gesamten ausgehenden HTTP-Datenverkehr zu blockieren, der versucht, eine Verbindung mit Quellen mit niedriger Reputation herzustellen (basierend auf der Domäne oder dem Hostnamen).
+Der Netzwerkschutz reduziert die Angriffsfläche Ihrer Geräte durch internetbasierte Ereignisse. Es verhindert, dass Mitarbeiter eine Anwendung verwenden, um auf gefährliche Domänen zu zugreifen, die Phishingbetrüger, Exploits und andere schädliche Inhalte im Internet hosten können. Der Netzwerkschutz erweitert [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) den Bereich Microsoft Defender SmartScreen, um den gesamten ausgehenden HTTP-Datenverkehr zu blockieren, der versucht, eine Verbindung mit Quellen mit niedriger Reputation herzustellen (basierend auf der Domäne oder dem Hostnamen).
 
-Der Netzwerkschutz wird unter Windows unterstützt, beginnend mit Windows 10, Version 1709. Der Netzwerkschutz wird auf anderen Betriebssystemen noch nicht unterstützt, der Webschutz wird jedoch mit dem neuen Microsoft Edge unterstützt, das auf Chromium basiert. Weitere Informationen finden Sie unter [Web protection](web-protection-overview.md).
+Der Netzwerkschutz wird auf Windows unterstützt, beginnend mit Windows 10, Version 1709. Der Netzwerkschutz wird auf anderen Betriebssystemen noch nicht unterstützt, der Webschutz wird jedoch mithilfe der neuen Microsoft Edge basierend auf Chromium. Weitere Informationen finden Sie unter [Web protection](web-protection-overview.md).
 
 Der Netzwerkschutz erweitert den Schutz im [Webschutz](web-protection-overview.md) auf die Betriebssystemebene. Es bietet Webschutzfunktionen in Edge für andere unterstützte Browser und Nicht-Browser-Anwendungen. Darüber hinaus bietet der Netzwerkschutz Sichtbarkeit und Blockierung von Indikatoren für Kompromisse (IoCs) bei Verwendung mit [Endpunkterkennung und -antwort](overview-endpoint-detection-response.md). Der Netzwerkschutz funktioniert z. B. mit Ihren [benutzerdefinierten Indikatoren.](manage-indicators.md)
 
@@ -56,7 +56,7 @@ Netzwerkschutz erfordert Windows 10 Pro oder Enterprise und Microsoft Defender A
 
 | Windows-Version | Microsoft Defender Antivirus |
 |:---|:---|
-| Windows 10, Version 1709 oder höher <p>Windows Server 1803 oder höher | [Microsoft Defender Antivirus-Echtzeitschutz und](configure-real-time-protection-microsoft-defender-antivirus.md) [Cloud-zugestellter Schutz](enable-cloud-protection-microsoft-defender-antivirus.md) müssen aktiviert sein |
+| Windows 10 Version 1709 oder höher <p>Windows Server 1803 oder höher | [Microsoft Defender Antivirus Echtzeitschutz und](configure-real-time-protection-microsoft-defender-antivirus.md) [cloudbasierter Schutz](enable-cloud-protection-microsoft-defender-antivirus.md) müssen aktiviert sein |
 
 Nachdem Sie die Dienste aktiviert haben, müssen Sie möglicherweise Ihr Netzwerk oder Ihre Firewall so konfigurieren, dass die Verbindungen zwischen den Diensten und Ihren Geräten (auch als Endpunkte bezeichnet) zulässig sind.  
 
@@ -76,13 +76,13 @@ DeviceEvents
 | where ActionType in ('ExploitGuardNetworkProtectionAudited','ExploitGuardNetworkProtectionBlocked')
 ```
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>Überprüfen von Netzwerkschutzereignissen in der Windows-Ereignisanzeige
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>Überprüfen von Netzwerkschutzereignissen in Windows Ereignisanzeige
 
 Sie können das Windows-Ereignisprotokoll überprüfen, um Ereignisse zu sehen, die erstellt werden, wenn der Netzwerkschutz den Zugriff auf eine schädliche IP oder Domäne blockiert (oder überwacht):
 
 1. [Kopieren Sie die XML direkt](event-views.md).
 
-2. Wählen Sie **OK** aus.
+2. Klicken Sie auf **OK**.
 
 Mit diesem Verfahren wird eine benutzerdefinierte Ansicht erstellt, die filtert, um nur die folgenden Ereignisse im Zusammenhang mit dem Netzwerkschutz zu zeigen:
 
@@ -92,15 +92,15 @@ Mit diesem Verfahren wird eine benutzerdefinierte Ansicht erstellt, die filtert,
 | 1125 | Ereignis, wenn der Netzwerkschutz im Überwachungsmodus abgeschaltet wird |
 | 1126 | Ereignis, wenn der Netzwerkschutz im Blockmodus abgeschaltet wird |
 
-## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Überlegungen zum virtuellen Windows-Desktop mit Windows 10 Enterprise Multi-Session
+## <a name="considerations-for-windows-virtual-desktop-running-windows-10-enterprise-multi-session"></a>Überlegungen zu Windows virtuellen Desktops, auf Windows 10 Enterprise Mehrere Sitzungen ausgeführt werden
 
-Beachten Sie aufgrund des Mehrbenutzercharakters von Windows 10 Enterprise die folgenden Punkte:
+Beachten Sie aufgrund der Mehrbenutzerfreundlichkeit der Windows 10 Enterprise die folgenden Punkte:
 
 1. Netzwerkschutz ist ein geräteweites Feature und kann nicht auf bestimmte Benutzersitzungen ausgerichtet werden.
 
 2. Web content filtering policies are also device wide.
 
-3. Wenn Sie zwischen Benutzergruppen unterscheiden müssen, sollten Sie separate Windows Virtual Desktop-Hostpools und -Zuweisungen erstellen.
+3. Wenn Sie zwischen Benutzergruppen unterscheiden müssen, sollten Sie in Betracht ziehen, Windows virtual Desktop-Hostpools und -Zuweisungen zu erstellen.
 
 4. Testen Sie den Netzwerkschutz im Überwachungsmodus, um sein Verhalten vor dem Roll out zu bewerten. 
 

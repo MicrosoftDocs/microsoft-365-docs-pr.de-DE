@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
-description: Erfahren Sie, wie Sie das Microsoft 365-Konto eines Benutzers löschen oder wiederherstellen.
+description: Erfahren Sie, wie Sie das Konto eines Benutzers löschen oder Microsoft 365 können.
 ms.openlocfilehash: 3b078b782246229d1ddfb1f1fa51282140e71eb0
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -73,9 +73,9 @@ Sie können Benutzer wiederherstellen, indem Sie auf der Startseite nach gelösc
 
 Ein gelöschter [Benutzer](../add-users/add-users.md) ist ein Geschäfts- oder Schulkonto, das Sie aus Ihrer Organisation löschen. 
   
-## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>Gibt das Löschen eines Benutzers seine Microsoft 365-Lizenz frei?
+## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>Gibt das Löschen eines Benutzers seine Microsoft 365 frei?
 
-Ja, das Löschen des Benutzers gibt die microsoft 365-Lizenz frei, die diesem Benutzer zugewiesen ist. Diese Lizenz kann dann einem anderen Benutzer zugewiesen werden. [Den vollständigen Artikel lesen](../../commerce/licenses/buy-licenses.md)
+Ja, durch das Löschen des Benutzers wird die diesem Microsoft 365 zugewiesene Lizenz frei. Diese Lizenz kann dann einem anderen Benutzer zugewiesen werden. [Den vollständigen Artikel lesen](../../commerce/licenses/buy-licenses.md)
   
 ## <a name="i-had-a-deleted-user-listed-in-deleted-users-and-then-it-disappeared-what-happened"></a>In meiner Liste der gelöschten Benutzer wurde ein gelöschter Benutzer aufgeführt, der nun nicht mehr angezeigt wird. Was ist geschehen?
 

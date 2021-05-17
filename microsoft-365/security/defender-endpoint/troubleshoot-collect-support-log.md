@@ -45,7 +45,7 @@ Dieses Thema enthält Anweisungen zum Ausführen des Tools über Live Response.
  
 2.  Initiieren Sie [eine Live-Reaktionssitzung](live-response.md#initiate-a-live-response-session-on-a-device) auf dem Computer, den Sie untersuchen müssen.
 
-3.  Wählen **Sie Datei in Bibliothek hochladen aus.**
+3.  Wählen **Hochladen datei in die Bibliothek aus.**
 
     ![Bild der Uploaddatei](images/upload-file.png)
 

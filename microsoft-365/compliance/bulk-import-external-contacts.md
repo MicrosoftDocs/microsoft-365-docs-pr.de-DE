@@ -1,5 +1,5 @@
 ---
-title: Massenimport externer Kontakte nach Exchange Online
+title: Massenimport externer Kontakte in Exchange Online
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -22,11 +22,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50918211"
 ---
-# <a name="bulk-import-external-contacts-to-exchange-online"></a>Massenimport externer Kontakte nach Exchange Online
+# <a name="bulk-import-external-contacts-to-exchange-online"></a>Massenimport externer Kontakte in Exchange Online
 
-**Dieser Artikel ist für Administratoren vorgesehen. Versuchen Sie, Kontakte in Ihr eigenes Postfach zu importieren? Siehe [Importieren von Kontakten in Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
+**Dieser Artikel ist für Administratoren vorgesehen. Versuchen Sie, Kontakte in Ihr eigenes Postfach zu importieren? Weitere Informationen finden Sie unter [Importieren von Outlook](https://support.office.com/article/bb796340-b58a-46c1-90c7-b549b8f3c5f8)**
    
-Verfügt Ihr Unternehmen über viele vorhandene Geschäftskontakte, die Sie in das freigegebene Adressbuch (auch als globale Adressliste bezeichnet) in Exchange Online eingeben möchten? Möchten Sie externe Kontakte als Mitglieder von Verteilergruppen hinzufügen, wie dies mit Benutzern innerhalb Ihres Unternehmens möglich ist? Wenn ja, können Sie Exchange Online PowerShell und eine CSV-Datei (durch Kommas getrennt) zum Massenimport externer Kontakte in Exchange Online verwenden. Es ist ein Drei-Schritt-Prozess:
+Verfügt Ihr Unternehmen über viele vorhandene Geschäftskontakte, die Sie in das freigegebene Adressbuch (auch als globale Adressliste bezeichnet) in der Exchange Online? Möchten Sie externe Kontakte als Mitglieder von Verteilergruppen hinzufügen, wie dies mit Benutzern innerhalb Ihres Unternehmens möglich ist? Wenn ja, können Sie Exchange Online PowerShell und eine CSV-Datei (durch Kommas getrennt) verwenden, um externe Kontakte massenimportiert Exchange Online. Es ist ein Drei-Schritt-Prozess:
   
 [Schritt 1: Erstellen einer CSV-Datei, die Informationen zu den externen Kontakten enthält](#step-1-create-a-csv-file-that-contains-information-about-the-external-contacts)
 
@@ -42,9 +42,9 @@ Nachdem Sie die folgenden Schritte zum Importieren von Kontakten ausgeführt hab
   
 ## <a name="step-1-create-a-csv-file-that-contains-information-about-the-external-contacts"></a>Schritt 1: Erstellen einer CSV-Datei, die Informationen zu den externen Kontakten enthält
 
-Der erste Schritt besteht im Erstellen einer CSV-Datei, die Informationen zu jedem externen Kontakt enthält, den Sie in Exchange Online importieren möchten. 
+Der erste Schritt besteht im Erstellen einer CSV-Datei, die Informationen zu jedem externen Kontakt enthält, den Sie in die Datei importieren Exchange Online. 
   
-1. Kopieren Sie den folgenden Text in eine Textdatei in NotePad, und speichern Sie ihn auf Ihrem Desktop als ExternalContacts.csv mit dem Dateinamensuffix CSV; Beispiel: ExternalContacts.csv.
+1. Kopieren Sie den folgenden Text in eine Textdatei in NotePad, und speichern Sie ihn auf Ihrem Desktop als ExternalContacts.csv mithilfe eines Dateinamensuffixs .csv; Beispiel: ExternalContacts.csv.
     
     > [!TIP]
     > Wenn Ihre Sprache Sonderzeichen enthält (z. B. **å**, **ä** und **ö** auf Schwedisch), speichern Sie die #A0 mit UTF-8 oder einer anderen #A1 beim Speichern der Datei in NotePad. 
@@ -55,25 +55,25 @@ Der erste Schritt besteht im Erstellen einer CSV-Datei, die Informationen zu jed
     pilar@contoso.com,Pilar Pinilla,Pilar,Pinilla,1234 Main St.,Seattle,WA,98017,206-555-0100,206-555-0101,206-555-0102,206-555-1234,Contoso,HR Manager,206-555-0104,Executive,US,206-555-0105,P.,Technical decision maker,31/1000,Dan Park
     ```
 
-    In der ersten Zeile oder Kopfzeile der CSV-Datei sind die Eigenschaften von Kontakten aufgeführt, die beim Importieren in Exchange Online verwendet werden können. Jeder Eigenschaftenname wird durch ein Komma getrennt. Jede Zeile unter der Kopfzeile stellt die Eigenschaftswerte zum Importieren eines einzelnen externen Kontakts dar. 
+    In der ersten Zeile oder Kopfzeile der CSV-Datei sind die Eigenschaften von Kontakten aufgeführt, die verwendet werden können, wenn Sie sie in Exchange Online. Jeder Eigenschaftenname wird durch ein Komma getrennt. Jede Zeile unter der Kopfzeile stellt die Eigenschaftswerte zum Importieren eines einzelnen externen Kontakts dar. 
     
     > [!NOTE]
     > Dieser Text enthält Beispieldaten, die Sie löschen können. Löschen oder ändern Sie jedoch nicht die erste Zeile (Kopfzeile). Es enthält alle Eigenschaften für die externen Kontakte. 
   
-2. Öffnen Sie die CSV-Datei in Microsoft Excel, um die CSV-Datei zu bearbeiten, da es viel einfacher ist, Excel zum Bearbeiten der CSV-Datei zu verwenden.
+2. Öffnen Sie die CSV-Datei in Microsoft Excel, um die CSV-Datei zu bearbeiten, da die Verwendung von Excel zum Bearbeiten der CSV-Datei wesentlich einfacher ist.
     
-3. Erstellen Sie eine Zeile für jeden Kontakt, den Sie in Exchange Online importieren möchten. Füllen Sie so viele Zellen wie möglich auf. Diese Informationen werden im freigegebenen Adressbuch für jeden Kontakt angezeigt. 
+3. Erstellen Sie eine Zeile für jeden Kontakt, den Sie importieren möchten, Exchange Online. Füllen Sie so viele Zellen wie möglich auf. Diese Informationen werden im freigegebenen Adressbuch für jeden Kontakt angezeigt. 
     
     > [!IMPORTANT]
     >  Die folgenden Eigenschaften (die ersten vier Elemente in der Kopfzeile) sind zum Erstellen eines externen Kontakts erforderlich und müssen in der CSV-Datei aufgefüllt werden: **ExternalEmailAddress**, **Name**, **FirstName**, **LastName**. Der in Schritt 2 ausgeführte PowerShell-Befehl verwendet die Werte für diese Eigenschaften, um die Kontakte zu erstellen. 
 
 ## <a name="step-2-create-the-external-contacts-with-powershell"></a>Schritt 2: Erstellen der externen Kontakte mit PowerShell
 
-Im nächsten Schritt verwenden Sie die in Schritt 1 und PowerShell erstellte CSV-Datei, um die in der CSV-Datei aufgeführten externen Kontakte massenimportiert in Exchange Online zu importieren. 
+Im nächsten Schritt verwenden Sie die in Schritt 1 und PowerShell erstellte CSV-Datei, um die in der CSV-Datei aufgeführten externen Kontakte massenimportiert in Exchange Online. 
   
-1.  Verbinden Sie PowerShell mit Ihrer Exchange Online-Organisation. Schrittweise Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Achten Sie darauf, den Benutzernamen und das Kennwort für Ihr globales Administratorkonto zu verwenden, wenn Sie eine Verbindung mit Exchange Online PowerShell herstellen. 
+1.  Verbinden PowerShell für Ihre Exchange Online Organisation. Schrittweise Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Achten Sie darauf, den Benutzernamen und das Kennwort für Ihr globales Administratorkonto zu verwenden, wenn Sie eine Verbindung mit Exchange Online PowerShell herstellen. 
     
-2. Nachdem Sie PowerShell mit Exchange Online hergestellt haben, wechseln Sie zum Desktopordner, in dem Sie die #A0 in Schritt 1 gespeichert haben. beispiel: `C:\Users\Administrator\desktop` .
+2. Nachdem Sie PowerShell mit Exchange Online verbinden, wechseln Sie zum Desktopordner, in dem Sie die #A0 in Schritt 1 gespeichert haben. beispiel: `C:\Users\Administrator\desktop` .
     
 3. Führen Sie den folgenden Befehl aus, um die externen Kontakte zu erstellen:
 
@@ -83,23 +83,23 @@ Im nächsten Schritt verwenden Sie die in Schritt 1 und PowerShell erstellte CSV
 
     Es kann eine Weile dauern, bis die neuen Kontakte erstellt werden, je nachdem, wie viele Sie importieren. Wenn der Befehl ausgeführt wurde, zeigt PowerShell eine Liste der neuen Kontakte an, die erstellt wurden. 
     
-4. Wechseln Sie zum Anzeigen der neuen externen Kontakte zum Exchange Admin  Center (EAC), und klicken Sie dann auf \> **EmpfängerKontakte**. 
+4. Zum Anzeigen der neuen externen Kontakte wechseln Sie zum Exchange Admin Center  (EAC), und klicken Sie dann auf \> **EmpfängerKontakte**. 
     
     > [!TIP]
-    > Anweisungen zum Herstellen einer Verbindung mit der EAC finden Sie unter [Exchange Admin Center in Exchange Online](/exchange/exchange-admin-center). 
+    > Anweisungen zum Herstellen einer Verbindung mit der EAC finden Sie [unter Exchange Admin Center in Exchange Online](/exchange/exchange-admin-center). 
   
 5. Klicken Sie bei Bedarf auf **Aktualisieren,** um die Liste zu aktualisieren und die importierten externen Kontakte zu sehen. 
     
     Die importierten Kontakte werden im freigegebenen Adressbuch in Outlook und Outlook im Web angezeigt.
     
     > [!NOTE]
-    > Sie können die Kontakte auch im Microsoft 365  Admin Center anzeigen, indem Sie zu \> **Benutzerkontakte gehen.** 
+    > Sie können die Kontakte auch im Microsoft 365 anzeigen,  indem Sie zu \> **Benutzerkontakte gehen.** 
 
 ## <a name="step-3-add-information-to-the-properties-of-the-external-contacts"></a>Schritt 3: Hinzufügen von Informationen zu den Eigenschaften der externen Kontakte
 
 Nachdem Sie den Befehl in Schritt 2 ausgeführt haben, werden die externen Kontakte erstellt, enthalten jedoch keine Kontakt- oder Organisationsinformationen, d. h. die Informationen aus den meisten Zellen in der CSV-Datei. Dies liegt daran, dass beim Erstellen neuer externer Kontakte nur die erforderlichen Eigenschaften aufgefüllt werden. Machen Sie sich keine Sorgen, wenn nicht alle Informationen in der CSV-Datei aufgefüllt sind. Wenn sie nicht da ist, wird sie nicht hinzugefügt.
   
-1.  Verbinden Sie PowerShell mit Ihrer Exchange Online-Organisation. Schrittweise Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1.  Verbinden PowerShell für Ihre Exchange Online Organisation. Schrittweise Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. Wechseln Sie zum Desktopordner, in dem Sie die #A0 in Schritt 1 gespeichert haben. Beispiel: `C:\Users\Administrator\desktop` .
     
@@ -129,7 +129,7 @@ Das ist alles. Benutzer können die Kontakte und die zusätzlichen Informationen
   
 ## <a name="add-more-external-contacts"></a>Hinzufügen von weiteren externen Kontakten
 
-Sie können die Schritte 1 bis Schritt 3 wiederholen, um neue externe Kontakte in Exchange Online hinzuzufügen. Sie oder Benutzer in Ihrem Unternehmen können einfach eine neue Zeile in der CSV-Datei für den neuen Kontakt hinzufügen. Anschließend können Sie die PowerShell-Befehle aus Schritt 2 und Schritt 3 ausführen, um Informationen zu den neuen Kontakten zu erstellen und hinzuzufügen.
+Sie können die Schritte 1 bis Schritt 3 wiederholen, um neue externe Kontakte in Exchange Online. Sie oder Benutzer in Ihrem Unternehmen können einfach eine neue Zeile in der CSV-Datei für den neuen Kontakt hinzufügen. Anschließend können Sie die PowerShell-Befehle aus Schritt 2 und Schritt 3 ausführen, um Informationen zu den neuen Kontakten zu erstellen und hinzuzufügen.
   
 > [!NOTE]
 > Wenn Sie den Befehl zum Erstellen neuer Kontakte ausführen, wird möglicherweise eine Fehlermeldung angezeigt, dass die zuvor erstellten Kontakte bereits vorhanden sind. Es wird jedoch jeder neue Kontakt erstellt, der der CSV-Datei hinzugefügt wurde. 
@@ -138,7 +138,7 @@ Sie können die Schritte 1 bis Schritt 3 wiederholen, um neue externe Kontakte i
 
 Einige Unternehmen verwenden möglicherweise nur externe Kontakte, damit sie als Mitglieder von Verteilergruppen hinzugefügt werden können. In diesem Szenario möchten sie möglicherweise externe Kontakte aus dem freigegebenen Adressbuch ausblenden. Dazu gehen Sie so vor:
   
-1.  Verbinden Sie PowerShell mit Ihrer Exchange Online-Organisation. Schrittweise Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+1.  Verbinden PowerShell für Ihre Exchange Online Organisation. Schrittweise Anleitungen finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
     
 2. Führen Sie den folgenden Befehl aus, um einen einzelnen externen Kontakt auszublenden.
     

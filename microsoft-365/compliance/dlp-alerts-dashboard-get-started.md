@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit dem Warnungsdashboard zur Verhinderung von Datenverlust
+title: Erste Schritte mit dem Dashboard zur Verhinderung von Datenverlust
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -27,9 +27,9 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/13/2021
 ms.locfileid: "51760726"
 ---
-# <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>Erste Schritte mit dem Warnungsdashboard zur Verhinderung von Datenverlust
+# <a name="get-started-with-the-data-loss-prevention-alert-dashboard"></a>Erste Schritte mit dem Dashboard zur Verhinderung von Datenverlust
 
-Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) können Schutzmaßnahmen ergreifen, um die unbeabsichtigte Freigabe vertraulicher Elemente zu verhindern. Wenn eine Aktion für ein vertrauliches Element ergriffen wird, können Sie benachrichtigt werden, indem Sie Warnungen für DLP konfigurieren. In diesem Artikel erfahren Sie, wie Sie umfassende Warnungsrichtlinien definieren, die mit Ihren Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) verknüpft sind. Sie erfahren, wie Sie das DLP-Warnungsverwaltungsdashboard im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) verwenden, um Warnungen, Ereignisse und zugehörige Metadaten für Verstöße gegen DLP-Richtlinien anzuzeigen. [](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts)
+Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) können Schutzmaßnahmen ergreifen, um die unbeabsichtigte Freigabe vertraulicher Elemente zu verhindern. Wenn eine Aktion für ein vertrauliches Element ergriffen wird, können Sie benachrichtigt werden, indem Sie Warnungen für DLP konfigurieren. In diesem Artikel erfahren Sie, wie Sie umfassende Warnungsrichtlinien definieren, die mit Ihren Richtlinien zur Verhinderung von Datenverlust (Data Loss Prevention, DLP) verknüpft sind. Sie erfahren, wie Sie das Dashboard für die [DLP-Warnungsverwaltung](https://compliance.microsoft.com/datalossprevention?viewid=dlpalerts) im [Microsoft 365 Compliance Center](https://compliance.microsoft.com/) verwenden, um Warnungen, Ereignisse und zugehörige Metadaten für Verstöße gegen DLP-Richtlinien anzuzeigen.
 
 Wenn Sie mit DLP-Warnungen neu sind, sollten Sie Informationen zum Dashboard für Benachrichtigungen zur Verhinderung von [Datenverlust lesen.](dlp-alerts-dashboard-learn.md)
 
@@ -43,9 +43,9 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie über die erforderlichen Voraus
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>Lizenzierung für das DLP-Warnungsverwaltungsdashboard
 
-Alle berechtigten Mandanten für Office 365 DLP können auf das DLP-Warnungsverwaltungsdashboard zugreifen. Für die ersten Schritte sollten Sie für Office 365 DLP für Exchange Online, SharePoint Online und OneDrive for Business berechtigt sein. Weitere Informationen zu den Lizenzierungsanforderungen für Office 365 DLP finden Sie unter Welche Lizenzen bieten die Rechte für einen Benutzer, von dem [Dienst zu profitieren?](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
+Alle berechtigten Mandanten für Office 365 DLP können auf das DLP-Warnungsverwaltungsdashboard zugreifen. Für die ersten Schritte sollten Sie berechtigt sein, Office 365 DLP für Exchange Online, SharePoint Online und OneDrive for Business. Weitere Informationen zu den Lizenzierungsanforderungen für Office 365 DLP finden Sie unter Welche Lizenzen bieten die Rechte für einen Benutzer, von dem Dienst [zu profitieren?](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
 
-Kunden, die [Endpoint DLP verwenden,](endpoint-dlp-learn-about.md) die für [Teams DLP](dlp-microsoft-teams.md) berechtigt sind, sehen ihre Endpunkt-DLP-Richtlinienwarnungen und Teams -DLP-Richtlinienwarnungen im DLP-Warnungsverwaltungsdashboard.
+Kunden, die [Endpoint DLP](endpoint-dlp-learn-about.md) verwenden, die für Teams [DLP](dlp-microsoft-teams.md) berechtigt sind, sehen ihre DLP-Richtlinienwarnungen für Endpunkte und Teams im DLP-Warnungsverwaltungsdashboard.
 
 Das **Feature für die** Inhaltsvorschau ist nur für diese Lizenzen verfügbar:
 
@@ -115,7 +115,7 @@ Wenn Ihre Organisation für Konfigurationsoptionen für einzelne Ereignisse lize
 
 So arbeiten Sie mit dem DLP-Warnungsverwaltungsdashboard:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](https://www.compliance.microsoft.com)zu Verhinderung von **Datenverlust.**
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://www.compliance.microsoft.com)zu Verhinderung von **Datenverlust.**
 2. Wählen Sie die **Registerkarte Warnungen** aus, um das DLP-Benachrichtigungsdashboard anzuzeigen.
 3. Wählen Sie eine Warnung aus, um Details anzuzeigen:
 

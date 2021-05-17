@@ -44,7 +44,7 @@ Sobald die Multi-Geo-Umgebung eingerichtet wurde, erhalten Benutzer, die eine Su
 
 Sobald die Multi-Geo-Umgebung eingerichtet wurde, erhalten Benutzer, die eine Suche in Delve durchführen, Ergebnisse aus allen geografischen Standorten.
 
-Der Delve-Feed und die Profilkarte zeigen nur eine Vorschau der Dateien an, die an dem zentralen Standort gespeichert sind. Für Dateien, die sich an Satellitenstandorten befinden, wird stattdessen das Symbol für den Dateityp angezeigt.
+Der Delve-Feed und die Profilkarte zeigen nur eine Vorschau der Dateien an, die sich an dem zentralen Standort befinden. Für Dateien, die sich an Satellitenstandorten befinden, wird stattdessen das Symbol für den Dateityp angezeigt.
 
 ### <a name="the-sharepoint-home-page"></a>Die SharePoint-Homepage
 
@@ -131,7 +131,7 @@ Einige Suchfunktionen, die Sie möglicherweise bereits kennen, werden in einer M
 
 Alle Suchclients verwenden die vorhandenen SharePoint-Suche-REST-APIs für die Interaktion mit den Suchindizes.
 
-![Diagramm, das zeigt, wie SharePoint-Such-REST-APIs mit den Suchindizes interagieren](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagramm, in dem SharePoint Interaktion von SUCH-REST-APIs mit den Suchindizes dargestellt wird](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Ein Suchclient ruft den REST-Endpunkt für die Suche mit der Abfrageeigenschaft „EnableMultiGeoSearch= true“ auf.
 2. Die Abfrage wird an alle geografischen Standorte im Mandanten gesendet.
@@ -151,7 +151,7 @@ Jedes Suchcenter verfügt über mehrere Suchsparten, und Sie müssen jede Sparte
 
 3. Wählen Sie die Sparte, die Sie einrichten möchten, klicken Sie in der oberen rechten Ecke auf das Zahnradsymbol für **Einstellungen**, und klicken Sie auf **Seite bearbeiten**. Die Seite mit den Suchergebnissen wird im Bearbeitungsmodus geöffnet.
 
-   ![Bearbeiten der Seitenauswahl in Den Einstellungen](../media/configure-search-for-multi-geo-image2.png)
+   ![Bearbeiten der Seitenauswahl in Einstellungen](../media/configure-search-for-multi-geo-image2.png)
 
 4. Bewegen Sie im Suchergebnisse-Webpart den Mauszeiger in die obere rechte Ecke des Webparts, klicken Sie auf den Pfeil, und klicken Sie dann im Menü auf **Webpart bearbeiten**. Der Toolbereich für das Suchergebnisse-Webpart wird unter dem Menüband oben rechts auf der Seite geöffnet.
 
@@ -168,7 +168,7 @@ Jedes Suchcenter verfügt über mehrere Suchsparten, und Sie müssen jede Sparte
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Anzeigen von Ergebnissen von allen oder einigen geografischen Standorten in benutzerdefinierten Suchanwendungen
 
-Benutzerdefinierte Suchanwendungen erhalten Ergebnisse aus allen oder einigen geografischen Speicherorten, indem Abfrageparameter mit der Anforderung an die Rest-API für die SharePoint-Suche angegeben werden. Abhängig von den Abfrageparametern wird die Abfrage an alle geografischen Speicherorte oder an einige geografische Standorte gefächert. Wenn Sie z. B. nur eine Teilmenge von geografischen Standorten abfragen müssen, um relevante Informationen zu finden, können Sie den Lüfter nur auf diese beschränken. Wenn die Anforderung erfolgreich ist, gibt die REST-API für die SharePoint-Suche Antwortdaten zurück.
+Benutzerdefinierte Anwendungen rufen Ergebnisse von allen oder einigen geografischen Standorten ab, indem Sie Abfrageparameter mit der Anforderung an die SharePoint-Suche-REST-API angeben. Je nach Abfrageparameter wird die Abfrage in alle geografischen Standorte oder in einige geografischen Standorte aufgefächert. Wenn nur einige geografischen Standorte abgefragt werden sollen, können Sie die Auffächerung nur für diese einschränken. Wenn die Anforderung erfolgreich ist, gibt die SharePoint-Suche-REST-API die Antwortdaten zurück.
 
 ### <a name="requirement"></a>Anforderung
 

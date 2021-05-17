@@ -33,7 +33,7 @@ Ganz gleich, ob Sie zum ersten Mal im Compliance Manager sind oder bereit sind, 
 
 Compliance Manager befindet sich im Microsoft 365 Compliance Center unter https://compliance.microsoft.com . Der globale Administrator Ihrer Organisation muss Benutzerberechtigungen einrichten und Rollen [zuweisen,](compliance-manager-setup.md#set-user-permissions-and-assign-roles) bevor Sie mit der Verwendung des Compliance-Managers beginnen.
 
-Wenn Sie den Compliance Manager zum ersten Mal besuchen, sehen Sie eine Compliance-Bewertung für Ihre Organisation. Compliance Manager bewertet Ihre aktuelle Microsoft 365-Umgebung bereits anhand der Datenschutzgrundlinie. Die beste Möglichkeit, sich mit dem Compliance-Manager vertraut zu machen, besteht in der Darstellung, den wichtigsten Elementen und der Anpassung Ihres Dashboards.
+Wenn Sie den Compliance Manager zum ersten Mal besuchen, sehen Sie eine Compliance-Bewertung für Ihre Organisation. Der Compliance-Manager bewertet bereits Ihre Microsoft 365 Umgebung anhand der Datenschutzgrundlinie. Die beste Möglichkeit, sich mit dem Compliance-Manager vertraut zu machen, besteht in der Darstellung, den wichtigsten Elementen und der Anpassung Ihres Dashboards.
 
 Unsere [Compliance-Manager-Übersichtsseite](compliance-manager.md) ist die beste erste Station für eine umfassende Überprüfung, was Compliance Manager ist und wie er funktioniert. Sie können auch direkt zu den wichtigsten Abschnitten unserer Dokumentation springen, indem Sie die folgenden Links verwenden:
 
@@ -58,7 +58,7 @@ Sobald Sie mit den Grundlagen vertraut sind, ist es an der Zeit, die Dinge für 
 
 Wenn Sie es sich bequem machen, Bewertungen im Compliance Manager zu verwalten, können Sie mit Vorlagen arbeiten, um eine Compliance-Manager-Bewertung mit Ihren eigenen Aktionen und Steuerelementen zu ändern. Sie können auch eine eigene benutzerdefinierte Bewertung erstellen. Benutzerdefinierte Bewertungen sind hilfreich für:
 
-- Verwalten der Compliance für Nicht-Microsoft 365-Produkte wie Apps und Dienste von Drittanbietern, lokale Anwendungen und andere Ressourcen.
+- Verwalten der Compliance für nicht Microsoft 365 Produkte wie Apps und Dienste von Drittanbietern, lokale Anwendungen und andere Ressourcen.
 - Verwalten Eigener benutzerdefinierter oder geschäftsspezifischer Compliancesteuerelemente.
 
 Sie können auch automatisierte Tests aller oder einer Teilmenge von Verbesserungsmaßnahmen einrichten. Besuchen Sie die folgenden Links, um die erweiterten Funktionen im Compliance Manager zu verstehen:

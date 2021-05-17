@@ -1,5 +1,5 @@
 ---
-title: Schützen globaler Administratorkonten in Ihrer Microsoft 365 for Enterprise-Testumgebung
+title: Schützen von globalen Administratorkonten in Microsoft 365 für Unternehmenstestumgebung
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -14,7 +14,7 @@ ms.collection: M365-identity-device-management
 ms.custom:
 - TLG
 - Ent_TLGs
-description: Verwenden Sie diese Schritte, um globale Administratorkonten in Ihrer Microsoft 365 for Enterprise-Testumgebung zu schützen.
+description: Verwenden Sie diese Schritte, um globale Administratorkonten in Ihrer Microsoft 365 Unternehmenstestumgebung zu schützen.
 ms.openlocfilehash: 3eab538b59e460857e2fa195aaacf51051f94d6b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -22,24 +22,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50918882"
 ---
-# <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Schützen globaler Administratorkonten in Ihrer Microsoft 365 for Enterprise-Testumgebung
+# <a name="protect-global-administrator-accounts-in-your-microsoft-365-for-enterprise-test-environment"></a>Schützen von globalen Administratorkonten in Microsoft 365 für Unternehmenstestumgebung
 
 *Diese Testumgebungsanleitung kann nur für Microsoft 365 für Unternehmenstestumgebungen verwendet werden.*
 
 Sie können digitale Angriffe auf Ihre Organisation verhindern, indem Sie sicherstellen, dass Ihre Administratorkonten so sicher wie möglich sind. 
 
-In diesem Artikel wird beschrieben, wie Sie Richtlinien für bedingten Zugriff in Azure Active Directory (Azure AD) verwenden, um globale Administratorkonten zu schützen.
+In diesem Artikel wird beschrieben, wie sie Azure Active Directory (Azure AD) für bedingten Zugriff zum Schutz globaler Administratorkonten verwenden.
 
-Der Schutz globaler Administratorkonten in Ihrer Microsoft 365 for Enterprise-Testumgebung umfasst zwei Phasen:
-- [Phase 1: Erstellen Ihrer Microsoft 365 for Enterprise-Testumgebung](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
+Der Schutz globaler Administratorkonten in Ihrer Microsoft 365 für die Unternehmenstestumgebung umfasst zwei Phasen:
+- [Phase 1: Build out your Microsoft 365 for Enterprise test environment](#phase-1-build-out-your-microsoft-365-for-enterprise-test-environment)
 - [Phase 2: Konfigurieren von Richtlinien für bedingten Zugriff](#phase-2-configure-conditional-access-policies)
 
 ![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Eine visuelle Karte zu allen Artikeln im Microsoft 365 for Enterprise Test Lab Guide-Stapel finden Sie unter [Microsoft 365 for Enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Eine visuelle Karte zu allen Artikeln im Stapel Microsoft 365 test lab guide für unternehmen finden Sie unter [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
-## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1: Erstellen Ihrer Microsoft 365 for Enterprise-Testumgebung
+## <a name="phase-1-build-out-your-microsoft-365-for-enterprise-test-environment"></a>Phase 1: Build out your Microsoft 365 for Enterprise test environment
 
 Wenn Sie den globalen Administratorkontoschutz auf einfache Weise mit den Mindestanforderungen testen möchten, befolgen Sie die Anweisungen unter [Lightweight base configuration](lightweight-base-configuration-microsoft-365-enterprise.md).
   
@@ -57,13 +57,13 @@ Erstellen Sie zunächst ein neues Benutzerkonto als dedizierter globaler Adminis
 3. Geben Sie **im Bereich** Benutzer hinzufügen **dedicatedAdmin** in die Felder **Vorname,** **Anzeigename** und **Benutzername** ein.
 4. Wählen **Sie Kennwort** aus, wählen Sie Lassen Sie mich das Kennwort **erstellen,** und geben Sie dann ein starkes Kennwort ein. Noten Sie das Kennwort für dieses neue Konto an einem sicheren Ort auf.
 5. Wählen Sie **Weiter** aus.
-6. Wählen Sie **im Bereich Produktlizenzen** zuweisen die Option **Microsoft 365 E5** aus, und wählen Sie dann **Weiter aus.**
+6. Wählen Sie **im Bereich Produktlizenzen** zuweisen **Microsoft 365 E5** aus, und wählen Sie dann **Weiter aus.**
 7. Wählen Sie **im Bereich Optionale Einstellungen** die Option **Rollen** Admin  >  **Center access** Global  >  **admin**  >  **Next aus.**
 8. Wählen Sie **im Bereich You're almost done** die Option Hinzufügen fertig stellen aus, und wählen Sie dann Schließen  **aus.**
 
 Erstellen Sie als Nächstes eine neue Gruppe namens GlobalAdmins, und fügen Sie ihr das DedicatedAdmin-Konto hinzu.
 
-1. Wählen Sie auf der **Registerkarte Microsoft 365 Admin Center** im linken Navigationsbereich Gruppen aus, und wählen Sie dann Gruppen **aus.** 
+1. Wählen Sie **auf Microsoft 365 Registerkarte Admin Center** die Option **Gruppen** in der linken Navigationsleiste aus, und wählen Sie dann **Gruppen aus.**
 2. Wählen Sie **Gruppe hinzufügen** aus.
 3. Wählen Sie **im Bereich Gruppentyp auswählen** die Option **Sicherheit** aus, und wählen Sie dann **Weiter aus.**
 4. Wählen Sie **im Bereich** Einrichten der Grundlagen die Option Gruppe erstellen aus, und wählen Sie dann Schließen **aus.** 
@@ -77,7 +77,7 @@ Erstellen Sie als Nächstes Richtlinien für bedingten Zugriff, um die mehrstufi
 Diese erste Richtlinie erfordert, dass alle globalen Administratorkonten MFA verwenden.
 
 1. Wechseln Sie auf einer neuen Registerkarte Ihres Browsers zu [https://portal.azure.com](https://portal.azure.com) .
-2. Klicken **Sie auf Bedingter Azure Active**  >  **Directory-Sicherheitszugriff.**  >  
+2. Klicken **Azure Active Directory**  >  **auf bedingten**  >  **Sicherheitszugriff**.
 3. Wählen Sie **im Bereich Bedingter** Zugriff – Richtlinien die **Option Baseline policy: Require MFA for admins (preview)** aus.
 4. Wählen Sie **im Bereich Baseline policy** die Option Richtlinie sofort > Speichern **aus.**
 
@@ -93,7 +93,7 @@ Diese zweite Richtlinie blockiert den Zugriff auf die globale Administratorkonto
 8. Wählen Sie **im Abschnitt Zugriffssteuerelemente** im **Bereich Neu** die Option **Gewähren aus.**
 9. Wählen Sie **im Bereich** Gewähren die Option **Zugriff blockieren** aus, und wählen Sie dann **Auswählen aus.**
 10. Wählen Sie **im Bereich Neu** die Option **Ein** für Richtlinie **aktivieren** aus, und wählen Sie dann **Erstellen aus.**
-11. Schließen Sie **die Registerkarten Azure-Portal** und **Microsoft 365 Admin Center.**
+11. Schließen Sie das **Azure-Portal** und **Microsoft 365 Admin Center-Registerkarten.**
 
 Um die erste Richtlinie zu testen, melden Sie sich ab und melden Sie sich mit dem DedicatedAdmin-Konto an. Sie sollten aufgefordert werden, MFA zu konfigurieren. Dies zeigt, dass die erste Richtlinie angewendet wird.
 

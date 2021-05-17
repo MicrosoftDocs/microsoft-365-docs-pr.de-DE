@@ -40,7 +40,7 @@ Es kann Szenarien gibt, in denen Sie das Anzeigen von Warnungen im Portal unterd
 Sie können eine Liste aller Unterdrückungsregeln anzeigen und an einem ort verwalten. Sie können auch eine Warnungsunterdrückungsregel aktivieren oder deaktivieren.
 
 
-1. Wählen Sie im Navigationsbereich  >  Einstellungsbenachrichtigungsunterdrückung **aus.** Die Liste der Unterdrückungsregeln, die Benutzer in Ihrer Organisation erstellt haben, wird angezeigt.
+1. Wählen Sie im Navigationsbereich die **Option Einstellungen**  >  **Warnungsunterdrückung aus.** Die Liste der Unterdrückungsregeln, die Benutzer in Ihrer Organisation erstellt haben, wird angezeigt.
 
 2. Wählen Sie eine Regel aus, indem Sie auf das Kontrollkästchen neben dem Regelnamen klicken.
 
@@ -49,7 +49,7 @@ Sie können eine Liste aller Unterdrückungsregeln anzeigen und an einem ort ver
 
 ## <a name="view-details-of-a-suppression-rule"></a>Anzeigen von Details einer Unterdrückungsregel
 
-1. Wählen Sie im Navigationsbereich  >  Einstellungsbenachrichtigungsunterdrückung **aus.** Die Liste der Unterdrückungsregeln, die Benutzer in Ihrer Organisation erstellt haben, wird angezeigt.
+1. Wählen Sie im Navigationsbereich die **Option Einstellungen**  >  **Warnungsunterdrückung aus.** Die Liste der Unterdrückungsregeln, die Benutzer in Ihrer Organisation erstellt haben, wird angezeigt.
 
 2. Klicken Sie auf einen Regelnamen. Details der Regel werden angezeigt. Ihnen werden die Regeldetails angezeigt, z. B. Status, Bereich, Aktion, Anzahl der übereinstimmenden Warnungen, erstellt von und Datum, an dem die Regel erstellt wurde. Sie können auch zugeordnete Warnungen und die Regelbedingungen anzeigen.
 

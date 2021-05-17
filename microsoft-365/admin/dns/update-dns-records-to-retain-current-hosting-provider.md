@@ -37,7 +37,7 @@ ms.locfileid: "50915974"
 ## <a name="update-dns-records-in-the-microsoft-365-admin-center"></a>Aktualisieren von DNS-Einträgen im Microsoft 365 Admin Center
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>.
 
-2. Wählen Sie **auf der** Seite Domänen die Domäne aus, und wählen Sie dann **DNS-Einträge aus.**
+2. Wählen Sie auf der Seite **Domänen** die Domäne aus, und wählen Sie dann **DNS-Einträge** aus.
 
 3. Wählen **Sie unter DNS-Einstellungen** **benutzerdefinierte Datensätze aus.**
 

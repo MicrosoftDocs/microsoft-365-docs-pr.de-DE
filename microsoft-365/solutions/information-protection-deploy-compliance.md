@@ -31,14 +31,14 @@ Microsoft Compliance Manager kann Ihnen dabei helfen, Verbesserungen im Zusammen
 Dieser Artikel enthält Anleitungen zur Verwendung dieses Tools für Datenschutzzwecke.
 
 >[!Note]
->Empfehlungen des Compliance-Managers sollten nicht als eine Garantie für Compliance interpretiert werden. Es liegt an Ihnen, die Effektivität von Kundenkontrollen nach Ihrer gesetzlichen Umgebung zu bewerten und zu überprüfen. Diese Dienste unterliegen den Allgemeinen Geschäftsbedingungen in den [Onlinedienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910). Siehe auch [Microsoft 365-Lizenzierungsanleitungen für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+>Empfehlungen des Compliance-Managers sollten nicht als eine Garantie für Compliance interpretiert werden. Es liegt an Ihnen, die Effektivität von Kundenkontrollen nach Ihrer gesetzlichen Umgebung zu bewerten und zu überprüfen. Diese Dienste unterliegen den Allgemeinen Geschäftsbedingungen in den [Onlinedienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910). Siehe auch [Microsoft 365 Lizenzierungsanleitung für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 >
 
 ## <a name="getting-started-with-compliance-manager"></a>Erste Schritte mit Compliance Manager
 
 #### <a name="what-is-compliance-manager"></a>Was ist Compliance Manager
 
-[Compliance Manager](../compliance/compliance-manager.md) ist ein workflowbasiertes Risikobewertungstool im Microsoft 365 Compliance Center für die Verwaltung behördlicher Complianceaktivitäten im Zusammenhang mit Microsoft Cloud Services. Im Rahmen Ihres Microsoft 365- oder Azure Active Directory (Azure AD)-Abonnements hilft Ihnen der Compliance-Manager, die Einhaltung gesetzlicher Bestimmungen innerhalb des Modells für gemeinsame Verantwortung für Microsoft Cloud Services zu verwalten.
+[Compliance Manager](../compliance/compliance-manager.md) ist ein workflowbasiertes Risikobewertungstool im Microsoft 365 Compliance Center für die Verwaltung behördlicher Complianceaktivitäten im Zusammenhang mit Microsoft Cloud Services. Im Rahmen Ihres Microsoft 365 oder Azure Active Directory (Azure AD)-Abonnements hilft Ihnen der Compliance-Manager, die Einhaltung gesetzlicher Bestimmungen im Modell der gemeinsamen Verantwortung für Microsoft Cloud Services zu verwalten.
 
 **Bereit zur Verwendung von Bewertungen**
 
@@ -66,7 +66,7 @@ Das [Schnellstarthandbuch für Compliance-Manager](../compliance/compliance-mana
     - Durchführen von Implementierungs- und Testarbeiten an Verbesserungsmaßnahmen zum Abschließen von Steuerelementen in Ihren Bewertungen
     - Verstehen, wie sich unterschiedliche Aktionen auf Ihre Compliance-Bewertung auswirken
 - [Hochskalieren: Verwenden sie erweiterte Funktionen, um Ihre benutzerdefinierten Anforderungen zu erfüllen](../compliance/compliance-manager-quickstart.md#scaling-up-use-advanced-functionality-to-meet-your-custom-needs)
-    - Erstellen benutzerdefinierter Bewertungen zum Nachverfolgen von Nicht-Microsoft 365-Produkten
+    - Erstellen ihrer benutzerdefinierten Bewertungen zum Nachverfolgen nicht Microsoft 365 Produkte
     - Ändern vorhandener Vorlagen zum Hinzufügen oder Entfernen von Steuerelementen
     - Einrichten automatisierter Tests von Verbesserungsmaßnahmen
 

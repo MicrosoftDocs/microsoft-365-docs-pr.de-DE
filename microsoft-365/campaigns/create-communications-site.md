@@ -44,7 +44,7 @@ Fügen Sie die folgenden Elemente in Ihre Kommunikationswebsite ein:
 4. Fügen Sie einem **Event-Web part** Ereignisse hinzu, damit jeder sehen kann, was kommt.
 5. Hinzufügen von Fotos, die Benutzer verwenden oder teilen können, zu einem **Bilderkatalog-Web part**.
 
-![Diagramm einer SharePoint Communications-Seite mit Platz für allgemeine Elemente, die eine Kampagne benötigen würde](../media/m365-democracy-comms-site.png)
+![Diagramm einer SharePoint Kommunikationsseite mit Platz für allgemeine Elemente, die eine Kampagne benötigen würde](../media/m365-democracy-comms-site.png)
 
 ## <a name="infographic-create-a-communications-site-infographic"></a>Infographic: Create a Communications Site infographic
 
@@ -57,11 +57,11 @@ Die folgenden Links für PowerPoint und PDF können im Tabloidformat heruntergel
 ## <a name="set-it-up"></a>Einrichtung
 
 1. Melden Sie sich bei https://Office.com an.
-2. Wählen Sie in der oberen linken Ecke der Seite das Symbol für das App-Startfeld aus, und wählen Sie dann die **Kachel SharePoint** aus. Wenn die **SharePoint-Kachel** nicht angezeigt wird, klicken Sie auf die Kachel **Websites** oder **Alle,** wenn SharePoint nicht sichtbar ist.
-3. Klicken Sie oben auf der SharePoint-Startseite auf **+ Website erstellen,** und wählen Sie die Option **Kommunikationswebsite** aus.
+2. Wählen Sie in der oberen linken Ecke der Seite das Symbol für das **App-Startfeld** aus, und wählen Sie dann die Kachel SharePoint aus. Wenn die Kachel "SharePoint" nicht angezeigt wird, klicken Sie auf die Kachel Websites oder **Alle,** SharePoint nicht sichtbar ist.  
+3. Klicken Sie oben auf der SharePoint auf + Website **erstellen,** und wählen Sie die Option **Kommunikationswebsite** aus.
 
-Erfahren Sie [mehr über Kommunikationswebsites](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) und das Erstellen [einer Kommunikationswebsite in SharePoint Online.](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb)
+Erfahren Sie [mehr über Kommunikationswebsites](https://support.office.com/article/What-is-a-SharePoint-communication-site-94A33429-E580-45C3-A090-5512A8070732) und das Erstellen [einer Kommunikationswebsite in SharePoint Online](https://support.microsoft.com/en-us/office/create-a-communication-site-in-sharepoint-online-7fb44b20-a72f-4d2c-9173-fc8f59ba50eb).
 
 ## <a name="admin-settings"></a>Administratoreinstellungen
 
-Wenn der Link **+** Website erstellen nicht zu sehen ist, ist die Self-Service-Websiteerstellung in Microsoft 365 möglicherweise nicht verfügbar. Wenden Sie sich zum Erstellen einer Teamwebsite an die Person, die Microsoft 365 in Ihrer Organisation verwaltet. Wenn Sie ein Microsoft 365-Administrator sind, lesen Sie Verwalten der Websiteerstellung [in SharePoint Online,](/sharepoint/manage-site-creation) um die Self-Service-Websiteerstellung für Ihre Organisation zu aktivieren, oder Verwalten von Websites im neuen [SharePoint Admin Center](/sharepoint/manage-sites-in-new-admin-center) zum Erstellen einer Website aus dem SharePoint Online Admin Center.
+Wenn der Link **+** Website erstellen nicht zu sehen ist, ist die Self-Service-Websiteerstellung möglicherweise nicht in Microsoft 365. Wenden Sie sich zum Erstellen einer Teamwebsite an die Person, die Microsoft 365 in Ihrer Organisation verwaltet. Wenn Sie ein Microsoft 365-Administrator sind, lesen Sie Verwalten der Websiteerstellung [in SharePoint Online,](/sharepoint/manage-site-creation) um die Self-Service-Websiteerstellung für Ihre Organisation zu aktivieren, oder Verwalten von Websites im neuen [SharePoint Admin Center,](/sharepoint/manage-sites-in-new-admin-center) um eine Website aus dem SharePoint Online Admin Center zu erstellen.

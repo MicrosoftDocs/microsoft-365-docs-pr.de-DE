@@ -41,7 +41,7 @@ Eine ausführliche [Beschreibung der](#more-information) im Bericht enthaltenen 
 
 - Die in diesem Thema bereitgestellten Beispielskripts werden in den Microsoft-Standardsupportprogrammen oder -diensten nicht unterstützt. Die Beispielskripts werden wie besehen ohne Garantie jeglicher Art bereitgestellt. Microsoft schließt weiterhin konkludent, einschließlich, aber nicht beschränkt auf implizite Garantien der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Alle Risiken, die aus der Nutzung oder Ausführung der Beispielskripts und Dokumentation entstehen, liegen bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (darunter entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Bespielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über eventuelle Folgen informiert wurde.
 
-## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Schritt 1: Herstellen einer Verbindung mit dem Security & Compliance Center PowerShell
+## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Schritt 1: Verbinden zum Security & Compliance Center PowerShell
 
 Der erste Schritt besteht in der Verbindung mit Security & Compliance Center PowerShell für Ihre Organisation. Schrittweise Anleitungen erhalten Sie unter [Herstellen einer Verbindung mit Security & Compliance Center PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
@@ -49,7 +49,7 @@ Der erste Schritt besteht in der Verbindung mit Security & Compliance Center Pow
 
 Nachdem Sie eine Verbindung mit Security & Compliance Center PowerShell erstellt haben, besteht der nächste Schritt im Erstellen und Ausführen des Skripts, das Informationen zu den eDiscovery-Fällen in Ihrer Organisation sammelt.
 
-1. Speichern Sie den folgenden Text in Windows PowerShell Skriptdatei, indem Sie das Dateinamensuffix .ps1 verwenden. Beispiel: CaseHoldsReport.ps1.
+1. Speichern Sie den folgenden Text in Windows PowerShell Skriptdatei, indem Sie ein Dateinamensuffix von .ps1; Beispiel: CaseHoldsReport.ps1.
 
    ```powershell
    #script begin
@@ -178,7 +178,7 @@ Der Fall enthält einen Bericht, der erstellt wird, wenn Sie das Skript in diese
 
 - Wenn ein Fall geschlossen wird, die Person, die ihn geschlossen hat, sowie die Uhrzeit und das Datum, an dem er geschlossen wurde.
 
-- Die Speicherorte von Exchange-Postfächern und SharePoint-Websites, die sich in der Warteschleife befinden.
+- Die Exchange Postfächer und SharePoint Standorte, die sich im Archiv befinden.
 
 - Wenn der Halteraum abfragebasierte ist, wird die Abfragesyntax verwendet.
 

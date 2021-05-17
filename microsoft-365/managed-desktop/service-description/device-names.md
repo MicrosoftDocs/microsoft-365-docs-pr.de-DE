@@ -1,6 +1,6 @@
 ---
 title: Gerätenamen
-description: Verwalten von Gerätenamen durch Microsoft Managed Desktop
+description: Verwalten Microsoft Managed Desktop Gerätenamen
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -24,7 +24,7 @@ Microsoft Managed Desktop verwendet Windows Autopilot, Azure Active Directory un
 
 ## <a name="automated-name-changes"></a>Automatische Namensänderungen
 
-Wenn ein Gerät später umbenannt wird, wird es von Microsoft Managed Desktop automatisch in einen neuen Namen im standardisierten Format umbenannt. Dieser Vorgang erfolgt alle vier Stunden. Die Namensänderung erfolgt beim nächsten Neustart des Geräts durch den Benutzer.
+Wenn ein Gerät später umbenannt wird, Microsoft Managed Desktop wird es automatisch in einen neuen Namen im standardisierten Format umbenannt. Dieser Vorgang erfolgt alle vier Stunden. Die Namensänderung erfolgt beim nächsten Neustart des Geräts durch den Benutzer.
 
 > [!IMPORTANT]
-> Wenn Ihre Umgebung von bestimmten Gerätenamen abhängt (z. B. zur Unterstützung einer bestimmten Netzwerkkonfiguration), sollten Sie optionen untersuchen, um diese Abhängigkeit zu entfernen, bevor Sie sich bei Microsoft Managed Desktop registrieren. Wenn Sie die Namensabhängigkeit behalten müssen, können Sie eine Anforderung über das [Administratorportal](../working-with-managed-desktop/admin-support.md) senden, um die Umbenennungsfunktion zu deaktivieren und das gewünschte Namensformat zu verwenden.
+> Wenn Ihre Umgebung von bestimmten Gerätenamen abhängt (z. B. zur Unterstützung einer bestimmten Netzwerkkonfiguration), sollten Sie optionen untersuchen, um diese Abhängigkeit zu entfernen, bevor Sie sich für Microsoft Managed Desktop. Wenn Sie die Namensabhängigkeit behalten müssen, können Sie eine Anforderung über das [Administratorportal](../working-with-managed-desktop/admin-support.md) senden, um die Umbenennungsfunktion zu deaktivieren und das gewünschte Namensformat zu verwenden.

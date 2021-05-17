@@ -36,7 +36,7 @@ Wenn ein Hacker Zugriff auf das Postfach eines Benutzers erhält, kann er die E-
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Wählen Sie im Microsoft 365 Admin Center Die  Option **Exchange,** Nachrichtenfluss und auf der Registerkarte Regeln das Pluszeichen aus, und wählen Sie **neue Regel erstellen aus.**
+1. Wählen Sie Microsoft 365 Admin Center **die** Option Exchange , **Nachrichtenfluss** und auf der Registerkarte Regeln das Pluszeichen aus, und wählen Sie neue Regel **erstellen aus.** 
 1. Wählen **Sie Weitere Optionen aus.** Nennen Sie Ihre neue Regel.
 1. Öffnen Sie dann die Dropdownliste, um **diese Regel anzuwenden, wenn**, wählen Sie den **Absender** aus, und ist dann **extern intern**.
 1. Wählen **Sie Innerhalb der Organisation** aus, und klicken Sie dann auf **OK**.
@@ -50,4 +50,4 @@ Wenn ein Hacker Zugriff auf das Postfach eines Benutzers erhält, kann er die E-
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-Hinzufügen eines weiteren [E-Mail-Alias](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user) für einen Benutzer (Artikel) Konfigurieren der E-Mail-Weiterleitung [in Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding) (Artikel) Suchen und Beheben von Problemen mit der E-Mail-Zustellung als [Office 365 Business Admin](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues) (Artikel)
+[Hinzufügen eines weiteren E-Mail-Alias](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user) für einen Benutzer (Artikel) Konfigurieren der E-Mail-Weiterleitung [in Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding) (Artikel) Suchen und Beheben von Problemen bei der E-Mail-Zustellung als [Office 365 business admin](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues) (Artikel)

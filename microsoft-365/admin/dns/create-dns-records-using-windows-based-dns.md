@@ -1,5 +1,5 @@
 ---
-title: Erstellen von DNS-Einträgen für Microsoft mithilfe von Windows-basiertem DNS
+title: Erstellen von DNS-Einträgen für Microsoft mithilfe Windows-basierten DNS
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
-description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für E-Mails, Skype for Business Online und andere Dienste unter Windows-basiertem DNS für Microsoft einrichten.
+description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste unter Windows-basierten DNS für Microsoft einrichten.
 ms.openlocfilehash: fd7c56b6db9fe5f5dbb0637ad5abcb40a64bef8f
 ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
@@ -28,25 +28,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2021
 ms.locfileid: "51876349"
 ---
-# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Erstellen von DNS-Einträgen für Microsoft mithilfe von Windows-basiertem DNS
+# <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Erstellen von DNS-Einträgen für Microsoft mithilfe Windows-basierten DNS
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
    
 Wenn Sie Ihre eigenen DNS-Einträge mit Windows-basiertem DNS hosten, führen Sie die in diesem Artikel aufgeführten Schritte aus, um die Einträge für E-Mail, Skype for Business Online und andere Dienste einzurichten.
   
-Für die ersten Schritte müssen Sie Ihre [DNS-Einträge in Windows-basiertem DNS suchen,](#find-your-dns-records-in-windows-based-dns) damit Sie sie aktualisieren können. Wenn Sie planen, Ihr lokales Active Directory mit Microsoft zu synchronisieren, finden Sie weitere Informationen unter [Non-routable email address used as a UPN in your on-prem Active Directory](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory).
+Für die ersten Schritte müssen Sie Ihre [DNS-Einträge in](#find-your-dns-records-in-windows-based-dns) Windows DNS suchen, damit Sie sie aktualisieren können. Wenn Sie planen, Ihr lokales Active Directory mit Microsoft zu synchronisieren, finden Sie weitere Informationen unter [Non-routable email address used as a UPN in your on-prem Active Directory](#non-routable-email-address-used-as-a-upn-in-your-on-prem-active-directory).
   
 Probleme mit dem Nachrichtenfluss oder anderen Problemen nach dem Hinzufügen von DNS-Einträgen finden Sie unter Problembehandlung nach dem Ändern Ihres [Domänennamens oder Ihrer DNS-Einträge.](../get-help-with-domains/find-and-fix-issues.md) 
   
 ## <a name="find-your-dns-records-in-windows-based-dns"></a>Suche nach Ihren DNS-Einträgen in einem Windows-basierten DNS
-<a name="BKMK_find_your_dns_1"></a> Wechseln Sie zu der Seite mit den DNS-Einträgen für Ihre Domäne. Wenn Sie in Windows Server 2008 arbeiten, wechseln Sie zu **Start**  >  **Run**. Wenn Sie in der Windows Server 2012, drücken Sie die Windows-TASTE und **r**. Geben **Sie dnsmgmnt.msc ein,** und wählen Sie dann **OK aus.** Erweitern Sie im DNS-Manager **\<DNS server name\> \> die Erweiterung Forward Lookup Zones**. Wählen Sie Ihre Domäne aus. Jetzt können Sie die DNS-Einträge erstellen.
+<a name="BKMK_find_your_dns_1"></a> Wechseln Sie zu der Seite mit den DNS-Einträgen für Ihre Domäne. Wenn Sie in Windows Server 2008 arbeiten, wechseln Sie zu **Start**  >  **Run**. Wenn Sie in der Windows Server 2012 arbeiten, drücken Sie die Taste Windows und **r**. Geben **Sie dnsmgmnt.msc ein,** und wählen Sie dann **OK aus.** Erweitern Sie im DNS-Manager **\<DNS server name\> \> die Erweiterung Forward Lookup Zones**. Wählen Sie Ihre Domäne aus. Jetzt können Sie die DNS-Einträge erstellen.
    
 ## <a name="add-mx-record"></a>Hinzufügen eines MX-Eintrags
 <a name="BKMK_add_MX"> </a>
 
 Fügen Sie einen MX-Eintrag hinzu, damit E-Mails für Ihre Domäne an Microsoft gesendet werden.
 - Der hinzugefügte MX-Eintrag enthält einen Wert (den **Wert Points to address),** der etwa wie dies aussieht: .mail.protection.outlook.com, wobei ein Wert wie \<MX token\> \<MX token\> MSxxxxxxx ist. 
-- Kopieren Sie aus der Zeile MX im Abschnitt Exchange Online auf der Seite DNS-Einträge hinzufügen in Microsoft den unter Points to address aufgeführten Wert. Sie verwenden diesen Wert in dem Eintrag, den Sie im Rahmen dieser Aufgabe erstellen. 
+- Kopieren Sie aus der Zeile MX im abschnitt Exchange Online der Seite DNS-Einträge hinzufügen in Microsoft den unter Points to address aufgeführten Wert. Sie verwenden diesen Wert in dem Eintrag, den Sie im Rahmen dieser Aufgabe erstellen. 
 - Wechseln Sie auf der Seite DNS-Manager für die Domäne zu **Action**  >  **Mail Exchanger (MX)**. Informationen zu dieser Seite für die Domäne finden Sie unter [Find your DNS records in Windows-based DNS](#find-your-dns-records-in-windows-based-dns).  
 - Stellen Sie im Dialogfeld Neuer **Ressourcendatensatz** sicher, dass die Felder auf genau die folgenden Werte festgelegt sind: 
     - Hostname:  
@@ -76,14 +76,14 @@ Hinzufügen des CNAME-Eintrags für SIP
     - Hostname: sip
     - Typ: CNAME
     - Adresse: sipdir.online.lync.com
-- Wählen Sie **OK** aus.
+- Klicken Sie auf **OK**.
 
 Hinzufügen des CNAME-Eintrags für Skype for Business Online-AutoErmittlung  
 - Wechseln Sie auf der Seite DNS-Manager für die Domäne zu **Aktion** \> **CNAME (CNAME)**. Stellen Sie im Dialogfeld Neuer **Ressourcendatensatz** sicher, dass die Felder auf genau die folgenden Werte festgelegt sind:  
     - Hostname: lyncdiscover
     - Typ: CNAME
     - Adresse: webdir.online.lync.com
-- Wählen Sie **OK** aus.
+- Klicken Sie auf **OK**.
    
 ### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>Hinzufügen von zwei #A0 für mobile Geräteverwaltung (Mobile Device Management, MDM) für Microsoft
 
@@ -97,7 +97,7 @@ Hinzufügen des CNAME-Eintrags für MDM-Enterpriseregistration
 - Hostname: enterpriseregistration
 - Typ: CNAME
 - Adresse: enterpriseregistration.windows.net
-- Wählen Sie **OK** aus. 
+- Klicken Sie auf **OK**. 
 
 Hinzufügen des CNAME-Eintrags für MDM-Enterpriseenrollment 
 -  Wechseln Sie auf der Seite DNS-Manager für die Domäne zu **Aktion** \> **CNAME (CNAME)**. 
@@ -105,7 +105,7 @@ Hinzufügen des CNAME-Eintrags für MDM-Enterpriseenrollment
     - Hostname: enterpriseenrollment
     - Typ: CNAME
     - Adresse: enterpriseenrollment-s.manage.microsoft.com
-- Wählen Sie **OK** aus.
+- Klicken Sie auf **OK**.
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Hinzufügen eines TXT-Eintrags für SPF, um E-Mail-Spam zu verhindern
 <a name="BKMK_add_TXT"> </a>
@@ -119,13 +119,13 @@ Fügen Sie den SPF TXT-Eintrag für Ihre Domäne hinzu, um E-Mail-Spam zu verhin
 - Wechseln Sie auf der Seite DNS-Manager für Ihre Domäne zu  \> **Aktionstext (TXT).** 
 -  Stellen Sie im Dialogfeld Neuer **Ressourcendatensatz** sicher, dass die Felder genau auf die folgenden Werte festgelegt sind. 
  > [!IMPORTANT]
-> In einigen Versionen von Windows DNS Manager wurde die Domäne möglicherweise so eingerichtet, dass beim Erstellen eines txt-Eintrags der Startname standardmäßig auf die übergeordnete Domäne festgelegt ist. Legen Sie in diesem Fall beim Hinzufügen eines TXT-Eintrags den Hostnamen als leer (kein Wert) und nicht auf "@" oder den Domänennamen fest. 
+> In einigen Versionen von Windows DNS Manager wurde die Domäne möglicherweise so eingerichtet, dass beim Erstellen eines txt-Eintrags der Startname standardmäßig der übergeordneten Domäne zugesetzt wird. Legen Sie in diesem Fall beim Hinzufügen eines TXT-Eintrags den Hostnamen als leer (kein Wert) und nicht auf "@" oder den Domänennamen fest. 
 
 -  Hosttyp: @
 -  Datensatztyp: TXT
 -  Adresse: v=spf1 include:spf.protection.outlook.com -all 
          
--  Wählen Sie **OK** aus.
+-  Klicken Sie auf **OK**.
    
 ## <a name="add-srv-records"></a>Hinzufügen von SRV-Einträgen
 <a name="BKMK_add_SRV"> </a>
@@ -142,7 +142,7 @@ Hinzufügen des SIP SRV-Eintrags für Skype for Business Online-Webkonferenzen  
     -  Weight (Gewichtung): 1
     -  Port: 443
     -  Ziel (Hostname): sipdir.online.lync.com
--  Wählen Sie **OK** aus. 
+-  Klicken Sie auf **OK**. 
 
 
 Hinzufügen des SIP SRV-Eintrags für den Skype for Business Online-Partnerverbund  
@@ -155,12 +155,12 @@ Hinzufügen des SIP SRV-Eintrags für den Skype for Business Online-Partnerverbu
     -  Weight (Gewichtung): 1
     -  Port: 5061
     -  Target (Hostname): sipfed.online.lync.com
--  Wählen Sie **OK** aus. 
+-  Klicken Sie auf **OK**. 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>Hinzufügen eines Eintrags zum Überprüfen des Domänenbesitzes, sofern das noch nicht geschehen ist
 <a name="BKMK_verify"> </a>
 
-Bevor Sie die DNS-Einträge zum Einrichten Ihrer Microsoft-Dienste hinzufügen, muss Microsoft bestätigen, dass Sie DerEnt der Domäne sind, die Sie hinzufügen. Dazu fügen Sie einen Eintrag anhand der nachfolgenden Schritte hinzu.
+Bevor Sie die DNS-Einträge hinzufügen, um Ihre Microsoft-Dienste, muss Microsoft bestätigen, dass Sie derEnt der Domäne sind, die Sie hinzufügen. Dazu fügen Sie einen Eintrag anhand der nachfolgenden Schritte hinzu.
   
 > [!NOTE]
 > Dieser Eintrag dient nur zum Überprüfen, dass Sie der Besitzer Ihrer Domäne sind; er wirkt sich auf nichts anderes aus. 
@@ -179,7 +179,7 @@ Hinzufügen eines TXT-Eintrags
 -  Stellen Sie im Bereich  Benutzerdefinierte **Hostnamen** des Dialogfelds Neuer Ressourcendatensatz sicher, dass die Felder genau auf die folgenden Werte festgelegt sind. 
 
 > [!IMPORTANT] 
-> In einigen Versionen von Windows DNS Manager wurde die Domäne möglicherweise so eingerichtet, dass beim Erstellen eines txt-Eintrags der Startname standardmäßig auf die übergeordnete Domäne festgelegt ist. Legen Sie in diesem Fall beim Hinzufügen eines TXT-Eintrags den Hostnamen als leer (kein Wert) und nicht auf "@" oder den Domänennamen fest. 
+> In einigen Versionen von Windows DNS Manager wurde die Domäne möglicherweise so eingerichtet, dass beim Erstellen eines txt-Eintrags der Startname standardmäßig der übergeordneten Domäne zugesetzt wird. Legen Sie in diesem Fall beim Hinzufügen eines TXT-Eintrags den Hostnamen als leer (kein Wert) und nicht auf "@" oder den Domänennamen fest. 
 
 - Hostname: @
 - Typ: TXT
@@ -210,6 +210,6 @@ Wenn Sie planen, Ihr lokales Active Directory mit Microsoft zu synchronisieren, 
 
 [Übertragen einer Domäne von Micrsoft 365 auf einen anderen Host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host) (Artikel)
 
-[Pilot microsoft 365 aus meiner benutzerdefinierten Domäne](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain) (Artikel)
+[Pilot Microsoft 365 aus meiner benutzerdefinierten Domäne](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain) (Artikel)
 
 [Häufig gestellte Fragen](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) zu Domänen (Artikel)

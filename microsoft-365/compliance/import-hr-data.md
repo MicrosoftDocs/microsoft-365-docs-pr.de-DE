@@ -13,7 +13,7 @@ localization_priority: Normal
 search.appverid:
 - MET150
 ms.collection: M365-security-compliance
-description: Administratoren können einen Datenconnector einrichten, um Mitarbeiterdaten aus dem Personalsystem ihrer Organisation in Microsoft 365 zu importieren. Auf diese Weise können Sie Hr-Daten in Insider-Risikomanagementrichtlinien verwenden, um Aktivitäten bestimmter Benutzer zu erkennen, die eine interne Bedrohung für Ihre Organisation darstellen können.
+description: Administratoren können einen Datenconnector einrichten, um Mitarbeiterdaten aus dem Personalsystem ihrer Organisation zu importieren, um Microsoft 365. Auf diese Weise können Sie Hr-Daten in Insider-Risikomanagementrichtlinien verwenden, um Aktivitäten bestimmter Benutzer zu erkennen, die eine interne Bedrohung für Ihre Organisation darstellen können.
 ms.openlocfilehash: eb11eb5790ca9c585db8bbb95b41747a72e5c8f1
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -23,23 +23,23 @@ ms.locfileid: "50911375"
 ---
 # <a name="set-up-a-connector-to-import-hr-data"></a>Einrichten eines Connectors zum Importieren von Personaldaten
 
-Sie können einen Datenconnector im Microsoft 365 Compliance Center einrichten, um Personaldaten (Hr) im Zusammenhang mit Ereignissen wie z. B. dem Ausscheiden eines Benutzers oder einer Änderung der Auftragsebene eines Benutzers zu importieren. Die Personaldaten können dann von [](insider-risk-management.md) der Insider-Risikomanagement-Lösung verwendet werden, um Risikoindikatoren zu generieren, mit deren Hilfe Sie mögliche böswillige Aktivitäten oder Datendiebstahl durch Benutzer in Ihrer Organisation identitätsieren können.
+Sie können einen Datenconnector im Microsoft 365 Compliance Center einrichten, um Personaldaten im Zusammenhang mit Ereignissen wie z. B. der Kündigung eines Benutzers oder einer Änderung der Auftragsebene eines Benutzers zu importieren. Die Personaldaten können dann von [](insider-risk-management.md) der Insider-Risikomanagement-Lösung verwendet werden, um Risikoindikatoren zu generieren, mit deren Hilfe Sie mögliche böswillige Aktivitäten oder Datendiebstahl durch Benutzer in Ihrer Organisation identitätsieren können.
 
-Das Einrichten eines Connectors für Personaldaten, mit dem Insiderrisikomanagementrichtlinien Risikoindikatoren generieren können, besteht darin, eine CSV-Datei zu erstellen, die die Personaldaten enthält, das Erstellen einer App in Azure Active Directory, die für die Authentifizierung verwendet wird, das Erstellen eines Hr-Datenconnector im Microsoft 365 Compliance Center und anschließendes Ausführen eines Skripts (geplant), das die Personaldaten in CSV-Dateien in der Microsoft Cloud eingibt, damit sie dem Insider zur Verfügung stehen. Risikomanagementlösung.
+Das Einrichten eines Connectors für Hr-Daten, mit dem Insiderrisikomanagementrichtlinien Risikoindikatoren generieren können, besteht darin, eine CSV-Datei zu erstellen, die die Personaldaten enthält, das Erstellen einer App in Azure Active Directory, die für die Authentifizierung verwendet wird, das Erstellen eines Hr-Datenconnector im Microsoft 365 Compliance Center und anschließendes Ausführen eines Skripts (geplant), das die Personaldaten in CSV-Dateien in der Microsoft Cloud einsaugt, sodass es für die Lösung für das Insiderrisikomanagement verfügbar ist.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Bestimmen Sie, welche Hr-Szenarien und Daten in Microsoft 365 importiert werden sollen. Dadurch können Sie bestimmen, wie viele CSV-Dateien und Hr-Connectors Sie erstellen müssen, und wie Sie die CSV-Dateien generieren und strukturieren. Die von Ihnen importierten Personaldaten werden durch die Insider-Risikomanagementrichtlinien bestimmt, die Sie implementieren möchten. Weitere Informationen finden Sie unter Schritt 1.
+- Bestimmen Sie, welche Hr-Szenarien und Daten in die Microsoft 365. Dadurch können Sie bestimmen, wie viele CSV-Dateien und Hr-Connectors Sie erstellen müssen, und wie Sie die CSV-Dateien generieren und strukturieren. Die von Ihnen importierten Personaldaten werden durch die Insider-Risikomanagementrichtlinien bestimmt, die Sie implementieren möchten. Weitere Informationen finden Sie unter Schritt 1.
 
 - Bestimmen Sie, wie Die Daten aus dem Personalsystem Ihrer Organisation (und regelmäßig) abgerufen oder exportiert werden, und fügen Sie sie den in Schritt 1 erstellten CSV-Dateien hinzu. Mit dem Skript, das Sie in Schritt 4 ausführen, werden die Personaldaten in den CSV-Dateien in die Microsoft Cloud hochgeladen.
 
-- Dem Benutzer, der den Hr-Connector in Schritt 3 erstellt, muss die Rolle Postfachimportexport in Exchange Online zugewiesen werden. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle Postfachimportexport zur Rollengruppe Organisationsverwaltung in Exchange Online hinzufügen. Sie können auch eine neue Rollengruppe erstellen, die Rolle Postfachimportexport zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten Erstellen von [Rollengruppen](/Exchange/permissions-exo/role-groups#create-role-groups) oder [Ändern](/Exchange/permissions-exo/role-groups#modify-role-groups) von Rollengruppen im Artikel "Verwalten von Rollengruppen in Exchange Online".
+- Dem Benutzer, der den Personalconnector in Schritt 3 erstellt, muss die Rolle Postfachimportexport in der Exchange Online. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle Postfachimportexport zur Rollengruppe Organisationsverwaltung in der Exchange Online. Sie können auch eine neue Rollengruppe erstellen, die Rolle Postfachimportexport zuweisen und dann die entsprechenden Benutzer als Mitglieder hinzufügen. Weitere Informationen finden Sie in den Abschnitten [Erstellen](/Exchange/permissions-exo/role-groups#create-role-groups) von Rollengruppen oder [Ändern](/Exchange/permissions-exo/role-groups#modify-role-groups) von Rollengruppen im Artikel "Verwalten von Rollengruppen in Exchange Online".
 
 - Das Beispielskript, das Sie in Schritt 4 ausführen, laden Ihre Personaldaten in die Microsoft-Cloud hoch, sodass sie von der Lösung für insider risk management verwendet werden können. Dieses Beispielskript wird in keinem Standardsupportprogramm oder -dienst von Microsoft unterstützt. Das Beispielskript wird wie besehen ohne jegliche Gewährleistung zur Verfügung gestellt. Microsoft schließt ferner alle konkludenten Gewährleistungen, einschließlich, aber nicht beschränkt auf konkludente Gewährleistungen der Marktgängigkeit oder Eignung für einen bestimmten Zweck aus. Das gesamte Risiko, das mit der Verwendung oder Leistung des Beispielskripts und der Dokumentation einhergeht, liegt bei Ihnen. In keinem Fall sind Microsoft, seine Autoren oder an der Erstellung, Produktion oder Übermittlung der Skripts beteiligte Personen für Schäden jeglicher Art (einschließlich und ohne Einschränkung Schäden durch Verlust entgangener Gewinne, Geschäftsunterbrechungen, Verlust von Geschäftsinformationen oder andere geldliche Verluste) haftbar, die aus der Nutzung bzw. Unfähigkeit zur Nutzung der Beispielskripts oder Dokumentation entstehen, auch wenn Microsoft auf die Möglichkeit solcher Schäden hingewiesen wurde.
 
 ## <a name="step-1-prepare-a-csv-file-with-your-hr-data"></a>Schritt 1: Vorbereiten einer CSV-Datei mit Ihren Personaldaten
 
-Im ersten Schritt erstellen Sie eine CSV-Datei, die die Hr-Daten enthält, die der Connector in Microsoft 365 importiert. Diese Daten werden von der Insider-Risikolösung verwendet, um potenzielle Risikoindikatoren zu generieren. Daten für die folgenden Hr-Szenarien können in Microsoft 365 importiert werden:
+Der erste Schritt besteht im Erstellen einer CSV-Datei, die die Hr-Daten enthält, die der Connector in das Microsoft 365. Diese Daten werden von der Insider-Risikolösung verwendet, um potenzielle Risikoindikatoren zu generieren. Daten für die folgenden Personalwesenszenarien können in die folgenden Microsoft 365:
 
 - Mitarbeiter-Kündigung. Informationen zu Benutzern, die Ihre Organisation verlassen haben.
 
@@ -70,7 +70,7 @@ Für jedes Hr-Szenario müssen Sie die entsprechenden Personaldaten in einer ode
 Nachdem Sie die CSV-Datei mit den erforderlichen Personaldaten erstellt haben, speichern Sie sie auf dem lokalen Computer, auf dem Sie das Skript in Schritt 4 ausführen. Sie sollten auch eine Updatestrategie implementieren, um sicherzustellen, dass die CSV-Datei immer die aktuellen Informationen enthält, damit unabhängig davon, was Sie das Skript ausführen, die aktuellen Personaldaten in die Microsoft-Cloud hochgeladen werden und auf die Insider-Risikomanagementlösung zugegriffen werden kann.
 
 > [!IMPORTANT]
-> Die in den folgenden Abschnitten beschriebenen Spaltennamen sind keine erforderlichen Parameter, sondern nur Beispiele. Sie können einen beliebigen Spaltennamen in Ihren CSV-Dateien verwenden. Die Spaltennamen, die Sie in  einer CSV-Datei verwenden, müssen jedoch dem Datentyp zugeordnet werden, wenn Sie den Hr-Connector in Schritt 3 erstellen. Beachten Sie außerdem, dass die BEISPIEL-CSV-Dateien in den folgenden Abschnitten in der Editoransicht angezeigt werden. Das Anzeigen und Bearbeiten von CSV-Dateien in Microsoft Excel ist wesentlich einfacher.
+> Die in den folgenden Abschnitten beschriebenen Spaltennamen sind keine erforderlichen Parameter, sondern nur Beispiele. Sie können einen beliebigen Spaltennamen in Ihren CSV-Dateien verwenden. Die Spaltennamen, die Sie in  einer CSV-Datei verwenden, müssen jedoch dem Datentyp zugeordnet werden, wenn Sie den Hr-Connector in Schritt 3 erstellen. Beachten Sie außerdem, dass die BEISPIEL-CSV-Dateien in den folgenden Abschnitten in der Editoransicht angezeigt werden. Es ist viel einfacher, CSV-Dateien in einem Microsoft Excel.
 
 In den folgenden Abschnitten werden die erforderlichen CSV-Daten für jedes Hr-Szenario beschrieben.
 
@@ -207,11 +207,11 @@ Im nächsten Schritt erstellen und registrieren Sie eine neue App in Azure Activ
 
 - Mandanten-ID (auch *Verzeichnis-ID genannt)*
 
-Schrittweise Anweisungen zum Erstellen einer App in Azure AD finden Sie unter Registrieren einer Anwendung [bei der Microsoft Identity Platform](/azure/active-directory/develop/quickstart-register-app).
+Schrittweise Anweisungen zum Erstellen einer App in Azure AD finden Sie unter Registrieren einer Anwendung bei [der Microsoft Identity Platform](/azure/active-directory/develop/quickstart-register-app).
 
 ## <a name="step-3-create-the-hr-connector"></a>Schritt 3: Erstellen des Hr-Connectors
 
-Der nächste Schritt besteht im Erstellen eines Personalconnector im Microsoft 365 Compliance Center. Nachdem Sie das Skript in Schritt 4 ausgeführt haben, übergibt der von Ihnen erstellende Hr-Connector die Hr-Daten aus der CSV-Datei an Ihre Microsoft 365-Organisation. Stellen Sie vor dem Erstellen eines Connectors sicher, dass Sie über eine Liste der Hr-Szenarien und die entsprechenden CSV-Spaltennamen für jedes Connector verfügen. Sie müssen die für jedes Szenario erforderlichen Daten den tatsächlichen Spaltennamen in Ihrer CSV-Datei zuordnungen, wenn Sie den Connector konfigurieren. Alternativ können Sie beim Konfigurieren des Connectors eine CSV-Beispieldatei hochladen, und der Assistent hilft Ihnen, den Namen der Spalten den erforderlichen Datentypen zu zuordnungen.
+Der nächste Schritt besteht im Erstellen eines Personalconnector im Microsoft 365 Compliance Center. Nachdem Sie das Skript in Schritt 4 ausgeführt haben, übergibt der von Ihnen erstellte Hr-Connector die Hr-Daten aus der CSV-Datei Microsoft 365 Organisation. Stellen Sie vor dem Erstellen eines Connectors sicher, dass Sie über eine Liste der Hr-Szenarien und die entsprechenden CSV-Spaltennamen für jedes Connector verfügen. Sie müssen die für jedes Szenario erforderlichen Daten den tatsächlichen Spaltennamen in Ihrer CSV-Datei zuordnungen, wenn Sie den Connector konfigurieren. Alternativ können Sie beim Konfigurieren des Connectors eine CSV-Beispieldatei hochladen, und der Assistent hilft Ihnen, den Namen der Spalten den erforderlichen Datentypen zu zuordnungen.
 
 Nachdem Sie diesen Schritt abgeschlossen haben, müssen Sie die Auftrags-ID kopieren, die beim Erstellen des Connectors generiert wird. Sie verwenden die Auftrags-ID, wenn Sie das Skript ausführen.
 
@@ -231,7 +231,7 @@ Nachdem Sie diesen Schritt abgeschlossen haben, müssen Sie die Auftrags-ID kopi
 
 6. Wählen Sie auf der Seite Dateizuordnungsmethode eine der folgenden Optionen aus, und klicken Sie dann auf **Weiter**.
 
-   - **Laden Sie eine Beispieldatei hoch.** Wenn Sie diese Option auswählen, klicken Sie auf **Beispieldatei hochladen,** um die in Schritt 1 vorbereitete CSV-Datei hochzuladen. Mit dieser Option können Sie schnell Spaltennamen in Ihrer CSV-Datei aus einer Dropdownliste auswählen, um sie den Datentypen für die zuvor ausgewählten Personalwesenszenarien zu zuordnungen.
+   - **Hochladen eine Beispieldatei .** Wenn Sie diese Option auswählen, klicken Sie **Hochladen Beispieldatei,** um die in Schritt 1 vorbereitete CSV-Datei hochzuladen. Mit dieser Option können Sie schnell Spaltennamen in Ihrer CSV-Datei aus einer Dropdownliste auswählen, um sie den Datentypen für die zuvor ausgewählten Personalwesenszenarien zu zuordnungen.
 
    ODER
 
@@ -251,7 +251,7 @@ Nachdem Sie diesen Schritt abgeschlossen haben, müssen Sie die Auftrags-ID kopi
 
    1. **Auftrags-ID.** Sie benötigen diese Auftrags-ID, um das Skript im nächsten Schritt auszuführen. Sie können es von dieser Seite oder von der Flyoutseite des Connectors kopieren.
 
-   1. **Link zum Beispielskript.** Klicken Sie **auf den Link** hier, um zur GitHub-Website zu wechseln, um auf das Beispielskript zu zugreifen (der Link öffnet ein neues Fenster). Lassen Sie dieses Fenster geöffnet, damit Sie das Skript in Schritt 4 kopieren können. Alternativ können Sie das Ziel mit einem Lesezeichen versehen oder die URL kopieren, damit Sie beim Ausführen des Skripts erneut darauf zugreifen können. Dieser Link ist auch auf der Flyoutseite des Connectors verfügbar.
+   1. **Link zum Beispielskript.** Klicken Sie **auf den Link** hier, um zur GitHub zu wechseln, um auf das Beispielskript zu zugreifen (der Link öffnet ein neues Fenster). Lassen Sie dieses Fenster geöffnet, damit Sie das Skript in Schritt 4 kopieren können. Alternativ können Sie das Ziel mit einem Lesezeichen versehen oder die URL kopieren, damit Sie beim Ausführen des Skripts erneut darauf zugreifen können. Dieser Link ist auch auf der Flyoutseite des Connectors verfügbar.
 
 9. Klicken Sie auf **Fertig**.
 
@@ -267,9 +267,9 @@ Sie können auch auf **Bearbeiten klicken,** um die Azure App-ID oder die Spalte
 
 ## <a name="step-4-run-the-sample-script-to-upload-your-hr-data"></a>Schritt 4: Ausführen des Beispielskripts zum Hochladen Ihrer Personaldaten
 
-Der letzte Schritt beim Einrichten eines Personalconnector besteht in der Ausführung eines Beispielskripts, das die Personaldaten in der CSV-Datei (die Sie in Schritt 1 erstellt haben) in die Microsoft-Cloud hochzuladen. Insbesondere lädt das Skript die Daten in den Hr-Connector hoch. Nachdem Sie das Skript ausgeführt haben, importiert der in Schritt 3 erstellte Hr-Connector die Personaldaten in Ihre Microsoft 365-Organisation, auf die andere Compliancetools zugreifen können, z. B. die Insider-Risikomanagementlösung. Nachdem Sie das Skript ausgeführt haben, sollten Sie eine Aufgabe so planen, dass sie täglich automatisch ausgeführt wird, damit die aktuellen Mitarbeiterbeendigungsdaten in die Microsoft Cloud hochgeladen werden. Weitere [Informationen finden Sie unter Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
+Der letzte Schritt beim Einrichten eines Personalconnector besteht in der Ausführung eines Beispielskripts, das die Personaldaten in der CSV-Datei (die Sie in Schritt 1 erstellt haben) in die Microsoft-Cloud hochzuladen. Insbesondere lädt das Skript die Daten in den Hr-Connector hoch. Nachdem Sie das Skript ausgeführt haben, importiert der in Schritt 3 erstellte Hr-Connector die Personaldaten in Ihre Microsoft 365-Organisation, auf die sie von anderen Compliancetools wie der Insider-Risikomanagementlösung zugegriffen werden kann. Nachdem Sie das Skript ausgeführt haben, sollten Sie eine Aufgabe so planen, dass sie täglich automatisch ausgeführt wird, damit die aktuellen Mitarbeiterbeendigungsdaten in die Microsoft Cloud hochgeladen werden. Weitere [Informationen finden Sie unter Schedule the script to run automatically](#optional-step-6-schedule-the-script-to-run-automatically).
 
-1. Wechseln Sie zu fenster, das Sie im vorherigen Schritt geöffnet haben, um mit dem Beispielskript auf die GitHub-Website zu zugreifen. Öffnen Sie alternativ die Mit Lesezeichen versehene Website, oder verwenden Sie die url, die Sie kopiert haben.
+1. Wechseln Sie zu Fenster, das Sie im vorherigen Schritt geöffnet haben, um mit dem Beispielskript auf GitHub website zu zugreifen. Öffnen Sie alternativ die Mit Lesezeichen versehene Website, oder verwenden Sie die url, die Sie kopiert haben.
 
 2. Klicken Sie auf **die Schaltfläche Raw,** um das Skript in der Textansicht anzeigen zu können.
 
@@ -291,8 +291,8 @@ Der letzte Schritt beim Einrichten eines Personalconnector besteht in der Ausfü
 
    | Parameter | Beschreibung |
    |:-----|:-----|:-----|
-   |`tenantId`|Dies ist die ID für Ihre Microsoft 365-Organisation, die Sie in Schritt 2 erhalten haben. Sie können die Mandanten-ID für Ihre Organisation auch auf dem **Blatt Übersicht im** Azure AD Admin Center abrufen. Dies wird verwendet, um Ihre Organisation zu identifizieren.|
-   |`appId` |Dies ist die Azure AD-Anwendungs-ID für die App, die Sie in Azure AD in Schritt 2 erstellt haben. Dies wird von Azure AD für die Authentifizierung verwendet, wenn das Skript versucht, auf Ihre Microsoft 365-Organisation zu zugreifen. | 
+   |`tenantId`|Dies ist die ID für Microsoft 365, die Sie in Schritt 2 erhalten haben. Sie können die Mandanten-ID für Ihre Organisation auch auf dem **Blatt Übersicht im** Azure AD Admin Center abrufen. Dies wird verwendet, um Ihre Organisation zu identifizieren.|
+   |`appId` |Dies ist die Azure AD-Anwendungs-ID für die App, die Sie in Azure AD in Schritt 2 erstellt haben. Dies wird von Azure AD für die Authentifizierung verwendet, wenn das Skript versucht, auf Ihre Microsoft 365 zu greifen. | 
    |`appSecret`|Dies ist der geheime Azure AD-Anwendungsgeheimnis für die App, die Sie in Azure AD in Schritt 2 erstellt haben. Dies wird auch für die Authentifizierung verwendet.|
    |`jobId`|Dies ist die Auftrags-ID für den Hr-Connector, den Sie in Schritt 3 erstellt haben. Dies wird verwendet, um die hr-Daten, die in die Microsoft-Cloud hochgeladen werden, dem Hr-Connector zuzuordnen.|
    |`csvFilePath`|Dies ist der Dateipfad für die CSV-Datei (gespeichert auf demselben System wie das Skript), den Sie in Schritt 1 erstellt haben. Versuchen Sie, Leerzeichen im Dateipfad zu vermeiden. verwenden Sie andernfalls einfache Anführungszeichen.|
@@ -304,14 +304,14 @@ Der letzte Schritt beim Einrichten eines Personalconnector besteht in der Ausfü
     .\HRConnector.ps1 -tenantId d5723623-11cf-4e2e-b5a5-01d1506273g9 -appId 29ee526e-f9a7-4e98-a682-67f41bfd643e -appSecret MNubVGbcQDkGCnn -jobId b8be4a7d-e338-43eb-a69e-c513cd458eba -csvFilePath 'C:\Users\contosoadmin\Desktop\Data\employee_termination_data.csv'
     ```
 
-   Wenn der Upload erfolgreich war, zeigt das Skript die **Meldung Erfolgreich hochladen** an.
+   Wenn der Upload erfolgreich war, zeigt das Skript die Hochladen **Meldung Erfolgreich** an.
 
    > [!NOTE]
    > Wenn Sie Probleme beim Ausführen des vorherigen Befehls aufgrund von Ausführungsrichtlinien haben, finden Sie unter [Informationen](/powershell/module/microsoft.powershell.core/about/about_execution_policies) zu Ausführungsrichtlinien und [Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy) Anleitungen zum Festlegen von Ausführungsrichtlinien.
 
 ## <a name="step-5-monitor-the-hr-connector"></a>Schritt 5: Überwachen des Hr-Connectors
 
-Nachdem Sie den Hr-Connector erstellt und das Skript zum Hochladen Ihrer Personaldaten ausgeführt haben, können Sie den Connector und den Uploadstatus im Microsoft 365 Compliance Center anzeigen. Wenn Sie planen, dass das Skript regelmäßig automatisch ausgeführt wird, können Sie auch den aktuellen Status nach dem letzten Ausführen des Skripts anzeigen.
+Nachdem Sie den Hr-Connector erstellt und das Skript ausgeführt haben, um Ihre Personaldaten hochzuladen, können Sie den Connector und den Uploadstatus im compliance center Microsoft 365 anzeigen. Wenn Sie planen, dass das Skript regelmäßig automatisch ausgeführt wird, können Sie auch den aktuellen Status nach dem letzten Ausführen des Skripts anzeigen.
 
 1. Wechseln Sie [https://compliance.microsoft.com](https://compliance.microsoft.com) zu, und klicken Sie **im** linken Navigations navi auf Datenconnectors.
 
@@ -331,9 +331,9 @@ Wenn Sie das Skript in Schritt 4 nicht ausgeführt haben, wird unter Letzter Imp
 
 Um sicherzustellen, dass tools wie der Insider Risk Management-Lösung die neuesten Personaldaten aus Ihrer Organisation zur Verfügung stehen, wird empfohlen, das Skript regelmäßig automatisch auszuführen, z. B. einmal am Tag. Dies erfordert auch, dass Sie die Personaldaten in der CSV-Datei nach einem ähnlichen (wenn nicht demselben) Zeitplan aktualisieren, sodass sie die neuesten Informationen zu Mitarbeitern enthält, die Ihre Organisation verlassen. Das Ziel ist es, die aktuellen Personaldaten hochzuladen, damit der Personalconnector sie der Insider-Risikomanagementlösung zur Verfügung stellen kann.
 
-Sie können die TaskPlaner-App in Windows verwenden, um das Skript täglich automatisch auszuführen.
+Sie können die TaskPlaner-App in Windows, um das Skript täglich automatisch auszuführen.
 
-1. Klicken Sie auf dem lokalen Computer auf die Schaltfläche Windows **Start,** und geben Sie **task scheduler ein.**
+1. Klicken Sie auf dem lokalen Computer auf Windows **Schaltfläche Start,** und geben Sie **task scheduler ein.**
 
 2. Klicken Sie auf **die TaskPlaner-App,** um sie zu öffnen.
 
@@ -349,7 +349,7 @@ Sie können die TaskPlaner-App in Windows verwenden, um das Skript täglich auto
 
 6. Wählen Sie **die Registerkarte Trigger aus,** klicken Sie auf **Neu**, und gehen Sie dann wie folgt vor:
 
-   1. Wählen **Sie unter** Einstellungen die Option **Täglich** aus, und wählen Sie dann Datum und Uhrzeit aus, um das Skript zum ersten Mal auszuführen. Das Skript wird jeden Tag zur angegebenen Zeit ausgeführt.
+   1. Wählen **Einstellungen** die Option **Täglich** aus, und wählen Sie dann Datum und Uhrzeit aus, um das Skript zum ersten Mal auszuführen. Das Skript wird jeden Tag zur angegebenen Zeit ausgeführt.
 
    1. Stellen **Sie unter Erweiterte Einstellungen** sicher, dass das Kontrollkästchen Aktiviert aktiviert ist. 
 

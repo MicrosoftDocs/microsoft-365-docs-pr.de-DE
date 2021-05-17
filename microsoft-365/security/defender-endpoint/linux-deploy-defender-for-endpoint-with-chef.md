@@ -127,7 +127,7 @@ end
 Wenn Sie diesen Schritt als Teil des Rezepts hinzufügen möchten, fügen Sie einfach include_recipe ":: settings_mdatp" zur Datei default.rb im Rezeptordner hinzu.
 Sie können auch crontab verwenden, um automatische Updates zu planen Planen eines Updates von [Microsoft Defender for Endpoint (Linux)](linux-update-MDE-Linux.md).
 
-Deinstallieren des MDATP-Kochbuchs:
+Deinstallieren MDATP Cookbook:
 
 ```powershell
 #Uninstall the Defender package

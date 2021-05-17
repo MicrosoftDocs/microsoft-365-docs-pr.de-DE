@@ -18,7 +18,7 @@ ms.custom:
 - SPO_Content
 - seo-marvel-apr2020
 ms.assetid: d0d3877a-831f-4744-96b0-d8167f06cca2
-description: 'Zusammenfassung: Verwenden Sie PowerShell, um neue SharePoint Online-Websites zu erstellen und diesen Websites dann Benutzer und Gruppen hinzuzufügen.'
+description: 'Zusammenfassung: Verwenden Sie PowerShell, um neue SharePoint Onlinewebsites zu erstellen und diesen Websites dann Benutzer und Gruppen hinzuzufügen.'
 ms.openlocfilehash: eb6c2817c8760ca222da8a7c2b14cbfcda4eb4b8
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -30,17 +30,17 @@ ms.locfileid: "50907618"
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Wenn Sie PowerShell für Microsoft 365 verwenden, um SharePoint Online-Websites zu erstellen und Benutzer hinzuzufügen, können Sie Aufgaben schnell und wiederholt viel schneller ausführen als im Microsoft 365 Admin Center. Sie können auch Aufgaben ausführen, die nicht im Microsoft 365 Admin Center ausgeführt werden können. 
+Wenn Sie PowerShell für Microsoft 365 verwenden, um SharePoint Onlinewebsites zu erstellen und Benutzer hinzuzufügen, können Sie Aufgaben viel schneller und wiederholt ausführen als im Microsoft 365 Admin Center. Sie können auch Aufgaben ausführen, die nicht im Admin Center Microsoft 365 werden können. 
 
 ## <a name="connect-to-sharepoint-online"></a>Herstellen einer Verbindung mit SharePoint Online
 
-Für die Verfahren in diesem Thema müssen Sie eine Verbindung mit SharePoint Online herstellen. Anweisungen finden Sie unter [Connect to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
+Für die Verfahren in diesem Thema müssen Sie eine Verbindung mit SharePoint Online herstellen. Anweisungen finden Sie [unter Verbinden to SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online?view=sharepoint-ps)
 
 ## <a name="step-1-create-new-site-collections-using-powershell"></a>Schritt 1: Erstellen neuer Websitesammlungen mithilfe von PowerShell
 
-Erstellen Sie mehrere Websites mithilfe von PowerShell und einer CSV-Datei, die Sie mithilfe des bereitgestellten Beispielcodes und des Editors erstellen. Hierzu ersetzen Sie die in Klammern stehende Platzhalter-Information durch Ihre eigenen Website- und Mandant-spezifischen Informationen. Bei diesem Prozess können Sie eine einzelne Datei erstellen und einen einzelnen PowerShell-Befehl ausführen, der diese Datei verwendet. Die durchgeführten Maßnahmen sind sowohl wiederholbar als auch tragbar und es werden viele, wenn nicht alle Fehler vermieden, die durch die Eingabe der Befehle in die SharePoint Online-Verwaltungsshell entstehen können. Dieses Verfahren lässt sich in zwei Teile aufteilen. Zuerst erstellen Sie eine CSV-Datei, und dann verweisen Sie mithilfe von PowerShell auf diese CSV-Datei, die deren Inhalt zum Erstellen der Websites verwendet.
+Erstellen Sie mehrere Websites mithilfe von PowerShell und .csv, die Sie mit dem bereitgestellten Beispielcode erstellen und Editor. Hierzu ersetzen Sie die in Klammern stehende Platzhalter-Information durch Ihre eigenen Website- und Mandant-spezifischen Informationen. Bei diesem Prozess können Sie eine einzelne Datei erstellen und einen einzelnen PowerShell-Befehl ausführen, der diese Datei verwendet. Die durchgeführten Maßnahmen sind sowohl wiederholbar als auch tragbar und es werden viele, wenn nicht alle Fehler vermieden, die durch die Eingabe der Befehle in die SharePoint Online-Verwaltungsshell entstehen können. Dieses Verfahren lässt sich in zwei Teile aufteilen. Zuerst erstellen Sie eine .csv-Datei, und dann verweisen Sie mithilfe von PowerShell auf diese .csv-Datei, die den Inhalt zum Erstellen der Websites verwendet.
 
-Das PowerShell-Cmdlet importiert die CSV-Datei und übergibt sie an eine Schleife in den geschweiften Klammern, die die erste Zeile der Datei als Spaltenkopfzeilen liest. Das PowerShell-Cmdlet durchspannt dann die verbleibenden Datensätze, erstellt eine neue Websitesammlung für jeden Datensatz und weist Eigenschaften der Websitesammlung gemäß den Spaltenüberschriften zu.
+Das PowerShell-Cmdlet importiert die .csv-Datei und übergibt sie an eine Schleife in den geschweiften Klammern, die die erste Zeile der Datei als Spaltenkopfzeilen liest. Das PowerShell-Cmdlet durchspannt dann die verbleibenden Datensätze, erstellt eine neue Websitesammlung für jeden Datensatz und weist Eigenschaften der Websitesammlung gemäß den Spaltenüberschriften zu.
 
 ### <a name="create-a-csv-file"></a>Erstellen einer CSV-Datei
 
@@ -61,11 +61,11 @@ owner@tenant.onmicrosoft.com,150,https://tenant.sharepoint.com/sites/Community01
 2. Speichern Sie die Datei auf Dem Desktop **alsSiteCollections.csv.**<br/>
 
 > [!TIP]
-> Bevor Sie diese oder eine andere CSV- oder Windows PowerShell verwenden, sollten Sie sicherstellen, dass keine überflüssigen oder nicht druckenden Zeichen vorhanden sind. Öffnen Sie die Datei in Word und klicken Sie auf dem Menüband auf das Symbol Absatz, um nicht druckbare Zeichen anzuzeigen. Es sollten keine überflüssigen, nicht druckbaren Zeichen vorhanden sein. Es sollten beispielsweise keine Absatzmarken nach dem letzten Absatz am Ende der Datei vorkommen.
+> Bevor Sie diese oder eine andere .csv oder Windows PowerShell skriptdatei verwenden, sollten Sie sicherstellen, dass keine überflüssigen oder nicht druckenden Zeichen enthalten sind. Öffnen Sie die Datei in Word und klicken Sie auf dem Menüband auf das Symbol Absatz, um nicht druckbare Zeichen anzuzeigen. Es sollten keine überflüssigen, nicht druckbaren Zeichen vorhanden sein. Es sollten beispielsweise keine Absatzmarken nach dem letzten Absatz am Ende der Datei vorkommen.
 
 ### <a name="run-the-windows-powershell-command"></a>Ausführen des PowerShell-Befehls
 
-1. Geben Sie Windows PowerShell Eingabeaufforderung ein, kopieren Sie den folgenden Befehl, fügen Sie ihn ein, und drücken Sie die EINGABETASTE:<br/>
+1. Geben Sie Windows PowerShell Eingabeaufforderung ein, kopieren Sie den folgenden Befehl, und drücken Sie die EINGABETASTE:<br/>
 ```powershell
 Import-Csv C:\users\MyAlias\desktop\SiteCollections.csv | ForEach-Object {New-SPOSite -Owner $_.Owner -StorageQuota $_.StorageQuota -Url $_.Url -NoWait -ResourceQuota $_.ResourceQuota -Template $_.Template -TimeZoneID $_.TimeZoneID -Title $_.Name}
 ```
@@ -82,7 +82,7 @@ Get-SPOSite -Detailed | Format-Table -AutoSize
 
 4. Beachten Sie die neuen Websitesammlungen in der Liste. In unserer BEISPIEL-CSV-Datei werden die folgenden Websitesammlungen angezeigt: **TeamSite01**, **Blog01**, **Project01** und **Community01**
 
-Fertig! Sie haben mehrere Websitesammlungen mit der erstellten CSV-Datei und einem einzelnen Windows PowerShell erstellt. Sie können jetzt Benutzer erstellen und zu diesen Websites hinzufügen.
+Fertig! Sie haben mehrere Websitesammlungen mit der erstellten .csv und einem einzelnen Windows PowerShell erstellt. Sie können jetzt Benutzer erstellen und zu diesen Websites hinzufügen.
 
 ## <a name="step-2-add-users-and-groups"></a>Schritt 2: Hinzufügen von Benutzern und Gruppen
 
@@ -166,4 +166,4 @@ c:\users\MyAlias\desktop\UsersAndGroups.ps1
 
 [Verwalten von Microsoft 365 mit PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)

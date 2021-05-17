@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
-description: Erfahren Sie, wie Sie Exchange Online-Multi-Geo-Einstellungen in Ihrer Microsoft 365-Umgebung mit PowerShell verwalten.
+description: Erfahren Sie, wie Sie Exchange Online Multi-Geo-Einstellungen in Ihrer Microsoft 365 mit PowerShell verwalten.
 ms.openlocfilehash: c8f06318313c4192fc2b3a289727933c5a54f3ad
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,11 +21,11 @@ ms.locfileid: "50905584"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Verwalten von Exchange Online-Postfächern in einer Multi-Geo-Umgebung
 
-Exchange Online PowerShell ist erforderlich, um Multi-Geo-Eigenschaften in Ihrer Microsoft 365-Umgebung anzeigen und konfigurieren zu können. Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+Exchange Online PowerShell ist erforderlich, um Multi-Geo-Eigenschaften in Ihrer Umgebung Microsoft 365 konfigurieren. Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 Sie benötigen das [Microsoft Azure Active Directory PowerShell-Modul](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 oder später in v1.x, um die **PreferredDataLocation**-Eigenschaft an Benutzerobjekten anzuzeigen. Benutzerobjekte, die über AAD Connect mit AAD synchronisiert werden, können ihren **PreferredDataLocation**-Wert direkt über AAD PowerShell ändern lassen. Nur-Cloud-Benutzerobjekte können über AAD PowerShell geändert werden. Wie Sie eine Verbindung mit Azure AD PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit PowerShell](connect-to-microsoft-365-powershell.md).
 
-In Exchange Online Multi-Geo-Umgebungen müssen Sie keine manuellen Schritte zum Hinzufügen von Geos zu Ihrem Mandanten ausführen. Nachdem Sie den Message Center-Beitrag erhalten haben, in dem steht, dass Multi-Geo für Exchange Online bereit ist, sind alle verfügbaren Geos bereit und für Sie konfiguriert.
+In Exchange Online Multi-Geo-Umgebungen müssen Sie keine manuellen Schritte ausführen, um Ihrem Mandanten Geos hinzuzufügen. Nachdem Sie den Message Center-Beitrag erhalten haben, in dem steht, dass Multi-Geo für Exchange Online bereit ist, sind alle verfügbaren Geos bereit und für Die Verwendung konfiguriert.
 
 ## <a name="connect-directly-to-a-geo-location-using-exchange-online-powershell"></a>Stellen Sie über Exchange Online PowerShell eine direkte Verbindung zu einem geografischem Standort her.
 
@@ -33,13 +33,13 @@ Normalerweise verbindet sich Exchange Online PowerShell mit dem zentralen geogra
 
 Die Anforderungen für die Installation und Verwendung des EXO V2-Moduls sind in [Installieren und Verwalten des EXO V2-Moduls](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module) beschrieben.
 
-Um Exchange Online PowerShell mit einem bestimmten geografischen Standort zu verbinden, ist der *ConnectionUri-Parameter* anders als die regulären Verbindungsanweisungen. Die restlichen Befehle und Werte sind identisch.
+Wenn Sie Exchange Online PowerShell mit einem bestimmten geografischen Standort verbinden möchten, ist der *ConnectionUri-Parameter* anders als die regulären Verbindungsanweisungen. Die restlichen Befehle und Werte sind identisch.
 
-Insbesondere müssen Sie den Wert zum `?email=<emailaddress>` Ende des _ConnectionUri-Werts_ hinzufügen. `<emailaddress>` ist die E-Mail-Adresse **eines beliebigen** Postfachs am geografischen Zielspeicherort. Ihre Berechtigungen für dieses Postfach oder die Beziehung zu Ihren Anmeldeinformationen sind kein Faktor. die E-Mail-Adresse teilt Exchange Online PowerShell einfach mit, wo eine Verbindung hergestellt werden soll.
+Insbesondere müssen Sie den Wert zum `?email=<emailaddress>` Ende des _ConnectionUri-Werts_ hinzufügen. `<emailaddress>` ist die E-Mail-Adresse **eines beliebigen** Postfachs am geografischen Zielspeicherort. Ihre Berechtigungen für dieses Postfach oder die Beziehung zu Ihren Anmeldeinformationen sind kein Faktor. die E-Mail-Adresse teilt Exchange Online PowerShell mit, wo eine Verbindung hergestellt werden soll.
 
-Microsoft 365- oder Microsoft 365-GCC-Kunden müssen normalerweise nicht den _ConnectionUri-Parameter_ verwenden, um eine Verbindung mit Exchange Online PowerShell herzustellen. Um jedoch eine Verbindung mit einem bestimmten geografischen Standort herzustellen, müssen Sie _den ConnectionUri-Parameter_ verwenden, damit Sie den `?email=<emailaddress>` Wert verwenden können.
+Microsoft 365 oder Microsoft 365 GCC Kunden müssen normalerweise nicht den _ConnectionUri-Parameter_ verwenden, um eine Verbindung mit Exchange Online PowerShell herzustellen. Um jedoch eine Verbindung mit einem bestimmten geografischen Standort herzustellen, müssen Sie _den ConnectionUri-Parameter_ verwenden, damit Sie den `?email=<emailaddress>` Wert verwenden können.
 
-### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>Herstellen einer Verbindung mit einem geografischen Standort in Exchange Online PowerShell
+### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>Verbinden zu einem geografischen Standort in Exchange Online PowerShell
 
 Die folgenden Verbindungsanweisungen funktionieren für Konten, die für die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) konfiguriert sind oder nicht konfiguriert sind.
 
@@ -104,7 +104,7 @@ MailboxRegionLastUpdateTime : 2/6/2018 8:21:01 PM
 ```
 
 > [!NOTE]
-> Wenn der Geospeicherortcode im Datenbanknamen nicht mit dem **Wert MailboxRegion** übereinstimmen soll, wird das Postfach automatisch in eine Standortverlagerungswarteschlange verschoben und an den geografischen Standort verschoben, der durch den **MailboxRegion-Wert** angegeben wird (Exchange Online sucht nach einer Nichtübereinstimmung zwischen diesen Eigenschaftswerten).
+> Wenn der Geospeicherortcode im Datenbanknamen nicht mit dem **Wert MailboxRegion** übereinstimmen sollte, wird das Postfach automatisch in eine Standortverlagerungswarteschlange verschoben und an den geografischen Standort verschoben, der durch den **MailboxRegion-Wert** angegeben wird (Exchange Online sucht nach einer Nichtübereinstimmung zwischen diesen Eigenschaftswerten).
 
 ## <a name="move-an-existing-cloud-only-mailbox-to-a-specific-geo-location"></a>Verschieben eines bereits vorhandenen Nur-Cloud-Postfachs an einen bestimmten geografischen Standort
 
@@ -156,7 +156,7 @@ Sie können inaktive Postfächer, die für Compliancezwecke beibehalten werden (
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
     ```
 
-3. Weisen Sie **dem wiederhergestellten** Postfach eine Exchange Online Plan 2-Lizenz zu. Dieser Schritt ist erforderlich, um das Postfach wieder im Prozesssicherungsverfahren zu platzieren. Anweisungen finden Sie unter [Zuweisen von Lizenzen zu Benutzern](../admin/manage/assign-licenses-to-users.md).
+3. Weisen Sie **Exchange Online Plan 2-Lizenz** dem wiederhergestellten Postfach zu. Dieser Schritt ist erforderlich, um das Postfach wieder im Prozesssicherungsverfahren zu platzieren. Anweisungen finden Sie unter [Zuweisen von Lizenzen zu Benutzern](../admin/manage/assign-licenses-to-users.md).
 
 4. Konfigurieren Sie **den PreferredDataLocation-Wert** für das Postfach wie im vorherigen Abschnitt beschrieben.
 
@@ -176,7 +176,7 @@ Sie können inaktive Postfächer, die für Compliancezwecke beibehalten werden (
 
 Um ein neues Postfach an einem bestimmten geografischen Standort zu erstellen, müssen Sie einen der folgenden Schritte ausführen:
 
-- Konfigurieren Sie **den PreferredDataLocation-Wert,** wie im vorherigen Abschnitt Move  an existing [cloud-only mailbox to a specific geo location](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location) beschrieben, bevor Sie das Postfach in Exchange Online erstellen. Konfigurieren Sie beispielsweise den **PreferredDataLocation-Wert** für einen Benutzer, bevor Sie eine Lizenz zuweisen.
+- Konfigurieren Sie **den PreferredDataLocation-Wert,** wie im vorherigen Abschnitt Move  an existing [cloud-only mailbox to a specific geo location](#move-an-existing-cloud-only-mailbox-to-a-specific-geo-location) beschrieben, bevor Sie das Postfach in Exchange Online. Konfigurieren Sie beispielsweise den **PreferredDataLocation-Wert** für einen Benutzer, bevor Sie eine Lizenz zuweisen.
 
 - Weisen Sie eine Lizenz zu, während Sie gleichzeitig den **PreferredDataLocation**-Wert festlegen.
 

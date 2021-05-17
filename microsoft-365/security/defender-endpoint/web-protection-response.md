@@ -1,7 +1,7 @@
 ---
 title: Reagieren auf Webbedrohungen in Microsoft Defender for Endpoint
-description: Reagieren Sie auf Warnungen im Zusammenhang mit schädlichen und unerwünschten Websites. Verstehen, wie der Schutz von Webbedrohungen Endbenutzer über ihre Webbrowser und Windows-Benachrichtigungen informiert
-keywords: Webschutz, Webbedrohungenschutz, Webbrowsing, Warnungen, Antwort, Sicherheit, Phishing, Schadsoftware, Exploit, Websites, Netzwerkschutz, Edge, Internet Explorer, Chrome, Firefox, Webbrowser, Benachrichtigungen, Endbenutzer, Windows-Benachrichtigungen, Sperrseite,
+description: Reagieren Sie auf Warnungen im Zusammenhang mit schädlichen und unerwünschten Websites. Verstehen, wie der Schutz von Webbedrohungen Endbenutzer über ihre Webbrowser und Benachrichtigungen Windows informiert
+keywords: Webschutz, Webbedrohungenschutz, Webbrowsing, Warnungen, Reaktion, Sicherheit, Phishing, Schadsoftware, Exploit, Websites, Netzwerkschutz, Edge, Internet Explorer, Chrome, Firefox, Webbrowser, Benachrichtigungen, Endbenutzer, Windows-Benachrichtigungen, Sperrseite,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -66,15 +66,15 @@ Sie können auch das Gerät überprüfen, das versucht hat, auf eine blockierte 
 
 [Weitere Informationen zu Geräteentitätsseiten](investigate-machines.md)
 
-## <a name="web-browser-and-windows-notifications-for-end-users"></a>Webbrowser- und Windows-Benachrichtigungen für Endbenutzer
+## <a name="web-browser-and-windows-notifications-for-end-users"></a>Webbrowser und Windows Benachrichtigungen für Endbenutzer
 
-Mit dem Webschutz in Microsoft Defender for Endpoint werden Endbenutzer daran gehindert, schädliche oder unerwünschte Websites mit Microsoft Edge oder anderen Browsern zu besuchen. Da das Blockieren durch den [Netzwerkschutz ausgeführt wird,](network-protection.md)wird ein allgemeiner Fehler vom Webbrowser angezeigt. Außerdem wird eine Benachrichtigung von Windows angezeigt.
+Mit dem Webschutz in Microsoft Defender for Endpoint werden Ihre Endbenutzer daran gehindert, schädliche oder unerwünschte Websites mit Microsoft Edge oder anderen Browsern zu besuchen. Da das Blockieren durch den [Netzwerkschutz ausgeführt wird,](network-protection.md)wird ein allgemeiner Fehler vom Webbrowser angezeigt. Außerdem wird eine Benachrichtigung von der Windows.
 
-![Abbildung von Microsoft Edge mit einem 403-Fehler und der Windows-Benachrichtigungswebbedrohung, die ](images/wtp-browser-blocking-page.png)
- *auf Microsoft Edge blockiert ist*
+![Abbildung der Microsoft Edge, die einen 403-Fehler und die Windows ](images/wtp-browser-blocking-page.png)
+ *Benachrichtigungs-Webbedrohung* zeigt, die auf Microsoft Edge
 
-![Abbildung des Chrome-Webbrowsers, der eine Warnung für sichere Verbindungen und die Windows-Benachrichtigungswebbedrohung zeigt, die ](images/wtp-chrome-browser-blocking-page.png)
- *in Chrome blockiert ist*
+![Abbildung des Chrome-Webbrowsers mit einer Warnung für sichere Verbindungen und Windows ](images/wtp-chrome-browser-blocking-page.png)
+ *Benachrichtigungswebbedrohung, die in Chrome blockiert ist*
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über Internetschutz](web-protection-overview.md)

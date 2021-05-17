@@ -1,6 +1,6 @@
 ---
 title: Reihenfolge und Rangfolge des E-Mail-Schutzes
-keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Security Center, Microsoft Defender for Endpoint, Microsoft Defender für Office 365, Microsoft Defender for Identity
+keywords: Security, Malware, Microsoft 365, M365, Security Center, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Microsoft Defender for Identity
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,7 +14,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können sich über die Anwendungsreihenfolge von Schutzen in Exchange Online Protection (EOP) und darüber informieren, wie der Prioritätswert in Schutzrichtlinien bestimmt, welche Richtlinie angewendet wird.
+description: Administratoren können mehr über die Anwendungsreihenfolge von Schutzmaßnahmen in Exchange Online Protection (EOP) erfahren und erfahren, wie der Prioritätswert in Schutzrichtlinien bestimmt, welche Richtlinie angewendet wird.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 8cd2809fa69064c2058516f459eeba60683c91b9
@@ -33,7 +33,7 @@ ms.locfileid: "51930377"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer können eingehende E-Mails durch mehrere Arten von Schutz gekennzeichnet werden. Beispielsweise die integrierten Antiphishingrichtlinien in EOP, die für alle Microsoft 365-Kunden verfügbar sind, und die stabileren Antiphishingrichtlinien, die Microsoft Defender für Office 365-Kunden zur Verfügung stehen. Nachrichten werden auch durch mehrere Erkennungsscans auf Schadsoftware, Spam, Phishing usw. übergeben. Bei all dieser Aktivität kann es verwirrung darüber sein, welche Richtlinie angewendet wird.
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer können eingehende E-Mails durch mehrere Arten von Schutz gekennzeichnet werden. Beispielsweise die integrierten Antiphishingrichtlinien in EOP, die für alle Microsoft 365-Kunden verfügbar sind, und die stabileren Antiphishingrichtlinien, die Microsoft Defender für Office 365 zur Verfügung stehen. Nachrichten werden auch durch mehrere Erkennungsscans auf Schadsoftware, Spam, Phishing usw. übergeben. Bei all dieser Aktivität kann es verwirrung darüber sein, welche Richtlinie angewendet wird.
 
 Im Allgemeinen wird eine Richtlinie, die auf eine Nachricht angewendet wird, im **X-Forefront-Antispam-Report-Header** in der **CAT(Category)-Eigenschaft** identifiziert. Weitere Informationen finden Sie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md).
 
@@ -57,13 +57,13 @@ Es gibt zwei wichtige Faktoren, die bestimmen, welche Richtlinie auf eine Nachri
   |8 |Masse|CAT:BULK|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |
 
-  <sup>\*</sup> Diese Features sind nur in Antiphishingrichtlinien in Microsoft Defender für Office 365 verfügbar.
+  <sup>\*</sup>Diese Features sind nur in Antiphishingrichtlinien in Microsoft Defender für Office 365.
 
 - **Die Priorität** der Richtlinie: Für jeden Richtlinientyp (Antispam, An malware, Antiphishing usw.) gibt es eine Standardrichtlinie, die für alle gilt, Sie können jedoch benutzerdefinierte Richtlinien erstellen, die für bestimmte Benutzer gelten. Jede benutzerdefinierte Richtlinie hat einen Prioritätswert, der die Reihenfolge bestimmt, in der die Richtlinien angewendet werden. Die Standardrichtlinie wird immer zuletzt angewendet.
 
   Wenn ein Benutzer in mehreren Richtlinien desselben Typs definiert ist, wird nur die Richtlinie mit der höchsten Priorität auf sie angewendet. Alle verbleibenden Richtlinien dieses Typs werden nicht für den Benutzer ausgewertet (einschließlich der Standardrichtlinie).
 
-Berücksichtigen Sie beispielsweise die folgenden Antiphishingrichtlinien in Microsoft Defender für Office 365, die für dieselben Benutzer gelten, und eine Nachricht, die sowohl als Identitätswechsel als auch als Spoofing identifiziert wird:
+Berücksichtigen Sie beispielsweise die folgenden Antiphishingrichtlinien in Microsoft Defender für Office 365, die für dieselben Benutzer **gelten,** und eine Nachricht, die sowohl als Identitätswechsel als auch als Spoofing identifiziert wird:
 
 <br>
 

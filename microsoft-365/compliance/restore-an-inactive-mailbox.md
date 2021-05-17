@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 97e06a7a-ef9a-4ce8-baea-18b9e20449a3
-description: Erfahren Sie, wie Sie den Inhalt eines inaktiven Postfachs in einem vorhandenen Postfach in Office 365 wiederherstellen (oder zusammenführen).
+description: Informationen zum Wiederherstellen (oder Zusammenführen) des Inhalts eines inaktiven Postfachs in einem vorhandenen Postfach in Office 365.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: bc9039d21f76affce7f58f1f83597dd9e5eb4ecf
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -30,7 +30,7 @@ Ein inaktives Postfach (eine Art vorläufig gelöschtes Postfach) wird verwendet
 
 - **Rückspeichern eines inaktiven Postfachs** Wenn ein anderer Mitarbeiter die Zuständigkeiten des ehemaligen Mitarbeiters übernimmt oder ein anderer Benutzer Zugriff auf die Inhalte des inaktiven Postfachs benötigt, können Sie den Inhalt des inaktiven Postfachs in ein vorhandenes Postfach rückspeichern (oder ihn mit diesem zusammenführen). Sie können auch das Archiv aus einem inaktiven Postfach rückspeichern. Nach dem Rückspeichern bleibt das inaktive Postfach als ein solches erhalten. In diesem Thema werden die Verfahren zum Rückspeichern eines inaktiven Postfachs beschrieben.
 
-- **Wiederherstellen eines inaktiven Postfachs** Wenn der ehemalige Mitarbeiter in Ihre Organisation zurückkehrt oder ein neuer Mitarbeiter eingestellt wird, der die Zuständigkeiten des ehemaligen Mitarbeiters übernimmt, können Sie den Inhalt des inaktiven Postfachs wiederherstellen. Bei dieser Methode wird das inaktive Postfach in ein neues Postfach mit dem Inhalt des inaktiven Postfachs umgewandelt. Nach der Wiederherstellung ist das inaktive Postfach nicht mehr vorhanden. Die schrittweisen Verfahren finden Sie unter [Wiederherstellen eines inaktiven Postfachs in Office 365](recover-an-inactive-mailbox.md).
+- **Wiederherstellen eines inaktiven Postfachs** Wenn der ehemalige Mitarbeiter in Ihre Organisation zurückkehrt oder ein neuer Mitarbeiter eingestellt wird, der die Zuständigkeiten des ehemaligen Mitarbeiters übernimmt, können Sie den Inhalt des inaktiven Postfachs wiederherstellen. Bei dieser Methode wird das inaktive Postfach in ein neues Postfach mit dem Inhalt des inaktiven Postfachs umgewandelt. Nach der Wiederherstellung ist das inaktive Postfach nicht mehr vorhanden. Die schrittweisen Verfahren finden Sie unter [Recover an inactive mailbox in Office 365](recover-an-inactive-mailbox.md).
 
 Im Abschnitt [Weitere Informationen](#more-information) in diesem Artikel finden Sie weitere Informationen zu den Unterschieden zwischen dem Wiederherstellen und Wiederherstellen eines inaktiven Postfachs.
 
@@ -110,7 +110,7 @@ Wenn ein inaktives Postfach ein Archivpostfach enthält, können Sie es auch im 
   Get-Mailbox -InactiveMailboxOnly | Format-List Name,PrimarySMTPAddress,DistinguishedName,ExchangeGUID,LegacyExchangeDN,ArchiveStatus
   ```
 
-- **Verwenden Sie ein Aufbewahrungsverfahren für Rechtsstreitigkeiten oder eine Microsoft 365-Aufbewahrungsrichtlinie, um inaktive Postfachinhalte zu behalten.** Wenn Sie den Status eines inaktiven Postfachs beibehalten möchten, nachdem [](create-a-litigation-hold.md) es wiederhergestellt wurde, können Sie das Zielpostfach im Prozessaufbewahrungsverfahren platzieren oder eine [Microsoft 365-Aufbewahrungsrichtlinie](retention.md) anwenden, bevor Sie das inaktive Postfach wiederherstellen. Dies verhindert das dauerhafte Löschen von Elementen aus dem inaktiven Postfach, nachdem sie in das Zielpostfach rückgespeichert wurden.
+- **Verwenden Sie ein Aufbewahrungsverfahren oder Microsoft 365 Aufbewahrungsrichtlinie, um inaktive Postfachinhalte zu behalten.** Wenn Sie den Status eines inaktiven Postfachs beibehalten möchten, nachdem [](create-a-litigation-hold.md) es wiederhergestellt wurde, können Sie das Zielpostfach im Prozessaufbewahrungsverfahren platzieren oder eine Microsoft 365-Aufbewahrungsrichtlinie anwenden, bevor Sie das [inaktive](retention.md) Postfach wiederherstellen. Dies verhindert das dauerhafte Löschen von Elementen aus dem inaktiven Postfach, nachdem sie in das Zielpostfach rückgespeichert wurden.
 
 - **Aktivieren Sie das Anhalten der Aufbewahrungszeit für das Zielpostfach, ehe Sie ein inaktives Postfach rückspeichern.** Das Postfachelemente in einem inaktiven Postfach alt sein können, sollten Sie das Aktivieren des Anhaltens der Aufbewahrungszeit für das Zielpostfach erwägen, bevor Sie ein inaktives Postfach rückspeichern. Wenn Sie für ein Postfach das Anhalten der Aufbewahrungszeit aktivieren, wird die zugewiesene Aufbewahrungsrichtlinie so lange nicht verarbeitet, bis das Anhalten der Aufbewahrungszeit aufgehoben wird oder der entsprechende Zeitraum abgelaufen ist. Dadurch erhält der Besitzer der Zielpostfachs Zeit zum Verwalten alter Nachrichten aus dem inaktiven Postfach. Andernfalls löscht die Aufbewahrungsrichtlinie möglicherweise alte Elemente (oder verschiebt Elemente in das Archivpostfach, sofern aktiviert), die basierend auf den für das Zielpostfach konfigurierten Aufbewahrungseinstellungen abgelaufen sind. Weitere Informationen finden Sie unter [Place a mailbox on retention hold in Exchange Online](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold).
 

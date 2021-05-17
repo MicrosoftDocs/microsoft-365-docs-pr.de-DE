@@ -1,5 +1,5 @@
 ---
-title: Netzwerkgeräteerkennung und Sicherheitsrisikoverwaltung
+title: Netzwerkgeräteerkennung und -Sicherheitsrisikomanagement
 description: Sicherheitsempfehlungen und Die Erkennung von Sicherheitsrisiken sind jetzt für Betriebssysteme von Switches, Routern, WLAN-Controllern und Firewalls verfügbar.
 keywords: Netzwerkgeräte, Erkennung von Sicherheitslücken bei Netzwerkgeräten, Betriebssysteme von Switches, Routern, WLAN-Controllern und Firewalls
 search.product: eADQiWindows 10XVcnh
@@ -25,14 +25,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/16/2021
 ms.locfileid: "51862067"
 ---
-# <a name="network-device-discovery-and-vulnerability-management"></a>Netzwerkgeräteerkennung und Sicherheitsrisikoverwaltung
+# <a name="network-device-discovery-and-vulnerability-management"></a>Netzwerkgeräteerkennung und -Sicherheitsrisikomanagement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Bedrohungs- und Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md)
+- [Bedrohung und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
@@ -45,9 +45,9 @@ ms.locfileid: "51862067"
 > [!NOTE]  
 > Der [Blog zur](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) Ermittlung und Bewertung von Sicherheitslücken für Netzwerkgeräte in \( 04-13-2021 bietet Einblicke in die neuen Netzwerkgeräteerkennungsfunktionen \) in Defender for Endpoint.  Dieser Artikel enthält eine Übersicht  über die Herausforderung, die die Netzwerkgeräteermittlung bewältigen soll, sowie ausführliche Informationen über die ersten Schritte mit diesen neuen Funktionen.
 
-Netzwerkerkennungsfunktionen sind im  Abschnitt Gerätebestand des Microsoft 365 Security Center und der Microsoft Defender Security Center-Konsolen verfügbar.  
+Netzwerkerkennungsfunktionen sind im  Abschnitt Geräteinventar des Microsoft 365 security center und Microsoft Defender Security Center verfügbar.  
 
-Für jedes Netzwerksegment wird ein bestimmtes Microsoft Defender for Endpoint-Gerät verwendet, um regelmäßig authentifizierte Scans vorkonfigurierter Netzwerkgeräte durchzuführen. Nach dem Entdecken bieten die Bedrohungs- und Sicherheitsmanagementfunktionen von Defender for Endpoint integrierte Workflows, um ermittelte Switches, Router, WLAN-Controller, Firewalls und VPN-Gateways zu sichern.  
+Für jedes Netzwerksegment wird ein bestimmtes Microsoft Defender for Endpoint-Gerät verwendet, um regelmäßig authentifizierte Scans vorkonfigurierter Netzwerkgeräte durchzuführen. Nach dem Entdecken bieten die Funktionen von Defender for Endpoint Bedrohungs- und Sicherheitsrisikomanagement Integrierte Workflows zum Sichern von ermittelten Switches, Routern, WLAN-Controllern, Firewalls und VPN-Gateways.  
 
 Sobald die Netzwerkgeräte erkannt und klassifiziert wurden, können Sicherheitsadministratoren die neuesten Sicherheitsempfehlungen erhalten und kürzlich festgestellte Sicherheitsrisiken auf Netzwerkgeräten überprüfen, die in ihren Organisationen bereitgestellt wurden.
 
@@ -105,12 +105,12 @@ Im ersten Schritt wählen Sie ein Gerät aus, auf dem die authentifizierten Netz
 
 ## <a name="permissions"></a>Berechtigungen
 
-Zum Konfigurieren von Bewertungsaufträgen ist die folgende Benutzerberechtigungsoption erforderlich: **Verwalten von Sicherheitseinstellungen in Security Center**. Sie können die Berechtigung finden, indem Sie zu **Einstellungen**  >  **Rollen .** Weitere Informationen finden Sie unter [Erstellen und Verwalten von Rollen für die rollenbasierte Zugriffssteuerung](user-roles.md).
+Zum Konfigurieren von Bewertungsaufträgen ist die folgende Benutzerberechtigungsoption erforderlich: **Verwalten von Sicherheitseinstellungen in Security Center**. Sie können die Berechtigung finden, indem Sie **zu Einstellungen**  >  **Rollen .** Weitere Informationen finden Sie unter [Erstellen und Verwalten von Rollen für die rollenbasierte Zugriffssteuerung](user-roles.md).
 
 ## <a name="install-the-network-scanner"></a>Installieren des Netzwerkscanners
 
-1. Wechseln Sie **zu Microsoft 365 Security**  >  **Settings**  >  **Endpoints**  >  **Assessment jobs** (under Network **assessments**).
-    1. Wechseln Sie im Microsoft Defender Security Center zur Seite Einstellungen > Bewertungsaufträge.
+1. Wechseln Sie **zu Microsoft 365 security**  >  **Einstellungen**  >  **Endpoints** Assessment  >  **jobs** (under **Network assessments**).
+    1. Wechseln Sie Microsoft Defender Security Center seite Einstellungen > Bewertungsaufträge.
 
 2. Laden Sie den Netzwerkscanner herunter, und installieren Sie ihn auf dem dafür vorgesehenen Defender for Endpoint-Bewertungsgerät.
 
@@ -134,7 +134,7 @@ So führen Sie den Registrierungsprozess für Netzwerkscanner aus:
 
 ## <a name="configure-a-new-assessment-job"></a>Konfigurieren eines neuen Bewertungsauftrags  
 
-Wählen Sie auf der Seite Bewertungsaufträge unter **Einstellungen** die Option **Netzwerkbewertungsauftrag hinzufügen aus.** Führen Sie den Einrichtungsvorgang aus, um Netzwerkgeräte zu wählen, die regelmäßig überprüft und dem Gerätebestand hinzugefügt werden sollen.
+Wählen Sie auf der Seite Bewertungsaufträge in **Einstellungen** die Option **Netzwerkbewertungsauftrag hinzufügen aus.** Führen Sie den Einrichtungsvorgang aus, um Netzwerkgeräte zu wählen, die regelmäßig überprüft und dem Gerätebestand hinzugefügt werden sollen.
 
 Stellen Sie sicher, dass jede IP-Adresse nur einmal auf mehreren Bewertungsgeräten konfiguriert ist, um eine Geräteduplizierung im Netzwerkgerätebestand zu verhindern.
 
@@ -193,7 +193,7 @@ Wenn Sie nach 5 Minuten immer noch keine Ergebnisse erhalten, starten Sie den Di
 
 Überprüfen Sie, ob der Scanner ordnungsgemäß ausgeführt wird. Wechseln Sie dann zur Scandefinition, und wählen Sie "Test ausführen" aus. Überprüfen Sie, welche Fehlermeldungen von den relevanten IP-Adressen zurückgegeben werden.
 
-### <a name="required-threat-and-vulnerability-management-user-permission"></a>Erforderliche Benutzerberechtigung für die Bedrohungs- und Sicherheitsrisikoverwaltung
+### <a name="required-threat-and-vulnerability-management-user-permission"></a>Erforderliche Bedrohungs- und Sicherheitsrisikomanagement Benutzerberechtigung
 
 Die Registrierung wurde mit einem Fehler abgeschlossen: "Es sieht so aus, als ob Sie nicht über ausreichende Berechtigungen zum Hinzufügen eines neuen Agents verfügen. Die erforderliche Berechtigung ist 'Sicherheitseinstellungen in Security Center verwalten'."
 
