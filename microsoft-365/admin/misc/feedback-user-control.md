@@ -31,7 +31,7 @@ ms.locfileid: "51650063"
 Benutzerfeedback ist ein wichtiges Signal für Microsoft, die Benutzererfahrungen mit Microsoft-Produkten zu verstehen. Microsoft schätzt die Meinung unserer Benutzer. Benutzerfeedback geht direkt an unsere Techniker und hilft uns, die Zukunft von Microsoft-Produkten und -Diensten für alle unsere Benutzer zu gestalten.  
 In diesem Thema finden Sie Informationen dazu, welche Arten von Feedback vorhanden sind, wie wir sie sammeln, was wir sammeln und wie wir mit den Daten umgehen.
 
-Als Administrator können Sie das Feedbacksignal für Ihre Organisation verwalten. Wir führen einen neuen Satz von Richtlinieneinstellungen ein, mit dem Sie die Sammlung von Benutzerfeedback in den Microsoft 365-Anwendungen für Ihre Organisation verwalten können. Diese Richtlinieneinstellungen helfen Ihnen beim Ziel von Azure Active Directory-Gruppen und beim Konfigurieren der Feedbacksammlungserfahrung für Ihre Organisation. Benutzerfeedback geht direkt an unsere Techniker und hilft uns, die Zukunft von Microsoft-Produkten und -Diensten für alle unsere Benutzer zu gestalten. Weitere Informationen zu diesen Richtlinieneinstellungen, den Anwendungen, für die sie gelten, sowie bewährte Methoden finden Sie unter [Manage Microsoft feedback for your organization](../manage/manage-feedback-ms-org.md).
+Als Administrator können Sie das Feedbacksignal für Ihre Organisation verwalten. Wir führen einen neuen Satz von Richtlinieneinstellungen ein, mit dem Sie die Sammlung von Benutzerfeedback innerhalb der Microsoft 365 Für Ihre Organisation verwalten können. Mit diesen Richtlinieneinstellungen können Sie Azure Active Directory gruppen und die Feedbacksammlungserfahrung für Ihre Organisation konfigurieren. Benutzerfeedback geht direkt an unsere Techniker und hilft uns, die Zukunft von Microsoft-Produkten und -Diensten für alle unsere Benutzer zu gestalten. Weitere Informationen zu diesen Richtlinieneinstellungen, den Anwendungen, für die sie gelten, sowie bewährte Methoden finden Sie unter [Manage Microsoft feedback for your organization](../manage/manage-feedback-ms-org.md).
 
 ## <a name="feedback-types"></a>Feedbacktypen
 
@@ -42,12 +42,12 @@ Wenn Ihre Benutzer eine der Microsoft-Apps verwenden und Feedback bereitstellen 
 #### <a name="in-product-feedback-examples"></a>Beispiele für Produktfeedback
 
 :::image type="content" source="../../media/In-appfeedbackbackstage.png" alt-text="Screenshot: Produktfeedbackbeispiel":::
-:::image type="content" source="../../media/In-appfeedbackwindows.png" alt-text="Screenshot: Windows-Produktfeedbackbeispiel ":::
-:::image type="content" source="../../media/TeamsIn-appFeedback.png" alt-text="Screenshot: Beispiel für Produktfeedback von Teams":::
+:::image type="content" source="../../media/In-appfeedbackwindows.png" alt-text="Screenshot: Windows Produktfeedbackbeispiel":::
+:::image type="content" source="../../media/TeamsIn-appFeedback.png" alt-text="Screenshot: Teams Produktfeedbackbeispiel":::
 
 ### <a name="in-product-surveys"></a>In-Product-Umfragen
 
-Benutzer können ihre Erfahrung auch bewerten und zusätzliche Informationen zu ihrer Erfahrung über vom System initiierte Umfrageaufforderungen bereitstellen. Diese Aufforderungen treten von Zeit zu Zeit innerhalb der Microsoft 365-Produkte auf. Wenn Sie dazu aufgefordert werden, können Benutzer auswählen, ob sie Feedback geben möchten. Die Umfrageaufforderungen werden in der Regel unten rechts in der App angezeigt. Wenn sich der Benutzer entscheidet, Feedback zu senden, die Eingabeaufforderung zu schließen oder die Eingabeaufforderung allein verschwinden zu lassen, wird die Umfrage für einige Zeit nicht mehr angezeigt. Microsoft nutzt außerdem einen Steuerungsprozess, um die Anzahl dieser vom System initiierten Umfragen zu begrenzen.  Die Absicht der Steuerung besteht in der Sicherstellung, dass Benutzer nicht von der Anzahl der Umfrageaufforderungen überlastet werden.
+Benutzer können ihre Erfahrung auch bewerten und zusätzliche Informationen zu ihrer Erfahrung über vom System initiierte Umfrageaufforderungen bereitstellen. Diese Aufforderungen treten von Zeit zu Zeit innerhalb Microsoft 365 Produkten auf. Wenn Sie dazu aufgefordert werden, können Benutzer auswählen, ob sie Feedback geben möchten. Die Umfrageaufforderungen werden in der Regel unten rechts in der App angezeigt. Wenn sich der Benutzer entscheidet, Feedback zu senden, die Eingabeaufforderung zu schließen oder die Eingabeaufforderung allein verschwinden zu lassen, wird die Umfrage für einige Zeit nicht mehr angezeigt. Microsoft nutzt außerdem einen Steuerungsprozess, um die Anzahl dieser vom System initiierten Umfragen zu begrenzen.  Die Absicht der Steuerung besteht in der Sicherstellung, dass Benutzer nicht von der Anzahl der Umfrageaufforderungen überlastet werden.
 
 :::image type="content" source="../../media/feedback-love.png" alt-text="Screenshot: Beispiel für eine Produktfeedbackanforderung":::
 
@@ -57,7 +57,7 @@ Benutzer können ihre Erfahrung auch bewerten und zusätzliche Informationen zu 
 
 Detailliertes und umsetzbares Feedback ist wichtig, um Änderungen und Verbesserungen in Microsoft-Produkten vorzunehmen. Wenn Ihre Benutzer Probleme oder Vorschläge zur Verbesserung haben, möchten wir sie hören. Nachfolgend finden Sie einige Tipps und Beispiele für aktionenfähiges Feedback, das an Microsoft gesendet wird.
 
-- **Prägnanter und beschreibender Titel**   Beschreibende und spezifische Titel helfen uns, das gemeldete Problem zu verstehen. Beispiel: Die Liste zuletzt **hinzugefügter** Dateien von Excel enthält keine kürzlich hinzugefügten OneDrive-Dateien.
+- **Prägnanter und beschreibender Titel**   Beschreibende und spezifische Titel helfen uns, das gemeldete Problem zu verstehen. Beispiel: Excel **Liste** zuletzt hinzugefügter Dateien enthält keine zuletzt hinzugefügten OneDrive Dateien.
 - **Konzentrieren Sie sich auf ein Problem gleichzeitig**   Geben Sie Feedback zu einem Problem oder einer Empfehlung für ein Element nach dem anderen. Dadurch wird sichergestellt, dass die richtigen Protokolle und Daten bei jeder Übermittlung empfangen werden und für die Nachverfolgung zugewiesen werden können. Wenn Sie mehr als ein Problem haben, senden Sie eine neue Feedbackanforderung für jedes Problem. Dies hilft uns, das Feedbackvolumen zu identifizieren, das wir zu einem bestimmten Problem erhalten.
 - **Schreiben von Details in das Feld Beschreibung**   Informationen zu Ihrem Gerät, Ihrem Betriebssystem und Ihren Apps werden automatisch in jedes gemeldete Feedback einbezogen. Fügen Sie weitere Informationen zu einem Problem hinzu, das Sie für wichtig halten. Fügen Sie beispielsweise detaillierte Schritte zum Reproduzieren des Problems ein.
 
@@ -82,7 +82,7 @@ Wenn ein Benutzer Feedback sendet, werden in der Regel App-Informationen zusamme
 - **App Build**   Erstellen Sie die Anzahl des Microsoft-Produkts, das bei der Übermittlung erfasst wurde.
 - **App-Sprache**   Sprache des Microsoft-Produkts, das bei der Übermittlung erfasst wurde.
 - **Anlagen**   Waren Anlagen (d. h. Screenshots, Dateien) gesammelt als Teil des Feedbacks? (Ja/Nein).
-- **TenantId**   Wenn Feedback von einem Azure Active Directory-Konto gesendet wird, dem TenantId zugeordnet wurde.
+- **TenantId**   Wenn Feedback von einem konto Azure Active Directory, dem TenantId zugeordnet wurde.
 
 ## <a name="data-handling-and-privacy"></a>Datenverarbeitung und Datenschutz
 
@@ -93,4 +93,4 @@ Mit einfachen Tools und klaren Auswahlmöglichkeiten haben Sie die Kontrolle üb
 
 ## <a name="how-can-i-see-my-users-feedback"></a>Wie kann ich das Feedback meines Benutzers sehen?
 
-In Kürze geben wir die Feedbackdaten, die wir für Microsoft-Produkte sammeln, an Sie zurück. Wir arbeiten an einer neuen Erfahrung im Microsoft 365 Admin Center, mit der sie die Feedbackdaten für Ihre Organisation anzeigen, löschen und exportieren können. Dadurch erhalten Sie direkte Transparenz und nützliche Einblicke in die Erfahrungen Ihrer Benutzer mit Microsoft 365-Produkten.
+In Kürze geben wir die Feedbackdaten, die wir für Microsoft-Produkte sammeln, an Sie zurück. Wir arbeiten an einer neuen Erfahrung im Microsoft 365 Admin Center, mit der sie die Feedbackdaten für Ihre Organisation anzeigen, löschen und exportieren können. Dadurch erhalten Sie direkte Transparenz und nützliche Einblicke in die Erfahrungen Ihrer Benutzer mit Microsoft 365 Produkten.

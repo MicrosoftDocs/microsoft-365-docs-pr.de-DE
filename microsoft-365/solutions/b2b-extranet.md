@@ -25,7 +25,7 @@ ms.locfileid: "50904756"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Erstellen eines B2B-Extranets mit verwalteten Gästen
 
-Sie können [Azure Active Directory Entitlement Management](/azure/active-directory/governance/entitlement-management-overview) verwenden, um ein B2B-Extranet für die Zusammenarbeit mit einer Partnerorganisation zu erstellen, die Azure Active Directory verwendet. Auf diese Weise können sich Benutzer selbst für die Extranetwebsite oder das Extranetteam registrieren und über einen Genehmigungsworkflow Zugriff erhalten.
+Sie können Azure Active Directory [Berechtigungsverwaltung](/azure/active-directory/governance/entitlement-management-overview) verwenden, um ein B2B-Extranet für die Zusammenarbeit mit einer Partnerorganisation zu erstellen, die Azure Active Directory. Auf diese Weise können sich Benutzer selbst für die Extranetwebsite oder das Extranetteam registrieren und über einen Genehmigungsworkflow Zugriff erhalten.
 
 Mit dieser Methode der Freigabe von Ressourcen für die Zusammenarbeit kann die Partnerorganisation dazu beitragen, die Gäste am Ende zu warten und zu genehmigen, die Belastung Für Ihre IT-Abteilung zu reduzieren und denjenigen, die mit der Zusammenarbeitsvereinbarung vertraut sind, die Verwaltung des Benutzerzugriffs zu ermöglichen.
 
@@ -47,16 +47,16 @@ In diesem Video werden die in diesem Artikel behandelten Verfahren veranschaulic
 
 ## <a name="connect-the-partner-organization"></a>Verbinden der Partnerorganisation
 
-Zum Einladen von Gästen aus einer Partnerorganisation müssen Sie die Domäne des Partners als verbundene Organisation in Azure Active Directory hinzufügen.
+Zum Einladen von Gästen aus einer Partnerorganisation müssen Sie die Domäne des Partners als verbundene Organisation in einer Azure Active Directory.
 
 So fügen Sie eine verbundene Organisation hinzu
-1. Klicken [Sie in Azure Active Directory](https://aad.portal.azure.com)auf **Identitätsverwaltung**.
+1. Klicken [Azure Active Directory](https://aad.portal.azure.com)in diesem Link auf **Identitätsverwaltung**.
 2. Klicken Sie **auf Verbundene Organisationen**.
 4. Klicken Sie **auf Verbundene Organisation hinzufügen**.
 5. Geben Sie einen Namen und eine Beschreibung für die Organisation ein, und klicken Sie dann auf **Weiter: Verzeichnis + Domäne**.
 6. Klicken **Sie auf Verzeichnis + Domäne hinzufügen.**
 7. Geben Sie die Domäne für die Organisation ein, die Sie verbinden möchten, und klicken Sie dann auf **Hinzufügen**.
-8. Klicken **Sie auf Verbinden,** und klicken Sie dann auf **Weiter: Sponsoren**.
+8. Klicken **Verbinden**, und klicken Sie dann auf **Weiter: Sponsoren**.
 9. Fügen Sie Personen aus Ihrer Organisation oder der Organisation hinzu, mit denen Sie eine Verbindung herstellen, mit der Sie den Zugriff für Gäste genehmigen möchten.
 10. Klicken Sie auf **Weiter: Überprüfen + erstellen**.
 11. Überprüfen Sie die von Ihnen ausgewählten Einstellungen, und klicken Sie dann auf **Erstellen**.
@@ -68,7 +68,7 @@ So fügen Sie eine verbundene Organisation hinzu
 Der erste Schritt bei der Auswahl von Ressourcen, die für eine Partnerorganisation verwendet werden sollen, besteht in der Erstellung eines Katalogs, der sie enthält.
 
 So erstellen Sie einen Katalog
-1. Klicken [Sie in Azure Active Directory](https://aad.portal.azure.com)auf **Identitätsverwaltung**.
+1. Klicken [Azure Active Directory](https://aad.portal.azure.com)in diesem Link auf **Identitätsverwaltung**.
 2. Klicken Sie **auf Kataloge**.
 3. Klicken Sie **auf Neuer Katalog**.
 4. Geben Sie einen Namen und eine Beschreibung für den Katalog ein, und stellen Sie sicher, dass **Enabled** und **Enabled** für externe Benutzer beide auf Ja **festgelegt sind.**
@@ -76,12 +76,12 @@ So erstellen Sie einen Katalog
 
    ![Screenshot der Katalogseite in Azure Active Directory Identity Governance](../media/identity-governance-catalogs.png)
 
-Nachdem der Katalog erstellt wurde, fügen Sie die SharePoint-Website oder das Team hinzu, die Sie für die Partnerorganisation freigeben möchten.
+Nachdem der Katalog erstellt wurde, fügen Sie die SharePoint oder das Team hinzu, die Sie für die Partnerorganisation freigeben möchten.
 
 So fügen Sie einem Katalog Ressourcen hinzu
 1. Klicken Sie in Azure AD Identity Governance auf **Kataloge,** und klicken Sie dann auf den Katalog, in dem Sie Ressourcen hinzufügen möchten.
 2. Klicken Sie **auf Ressourcen,** und klicken Sie dann **auf Ressourcen hinzufügen.**
-3. Wählen Sie die Teams oder SharePoint-Websites aus, die Sie in Ihr Extranet hinzufügen möchten, und klicken Sie dann auf **Hinzufügen.**
+3. Wählen Sie die Teams oder SharePoint aus, die Sie in Ihr Extranet hinzufügen möchten, und klicken Sie dann auf **Hinzufügen.**
 
    ![Screenshot der Katalogressourcenseite in Azure Active Directory Identity Governance](../media/identity-governance-catalog-resource.png)
 

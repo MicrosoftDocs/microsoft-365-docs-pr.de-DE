@@ -48,19 +48,19 @@ Wie im vorherigen Abschnitt, in dem Skripts für Inhaltssuchszenarien aufgeführ
   
 - [Erstellen Sie einen eDiscovery-Haltebericht,](create-a-report-on-holds-in-ediscovery-cases.md) der Informationen zu allen in eDiscovery-Fällen in Ihrer Organisation zugeordneten Halteinformationen enthält.
 
-- [Fügen Sie Postfächer und #A0](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) für eine Liste von Benutzern zu einem eDiscovery-Archiv hinzu.
+- [Fügen Sie Postfächer und OneDrive einer](use-a-script-to-add-users-to-a-hold-in-ediscovery.md) Liste von Benutzern zu einem eDiscovery-Archiv hinzu.
   
-## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>Verwalten rechtlicher Untersuchungen mit der Advanced eDiscovery-Lösung in Microsoft 365
+## <a name="manage-legal-investigations-with-the-advanced-ediscovery-solution-in-microsoft-365"></a>Verwalten rechtlicher Untersuchungen mit der Advanced eDiscovery Lösung in Microsoft 365
 
 Die Advanced eDiscovery-Lösung in Microsoft 365 basiert auf den vorhandenen eDiscovery- und Analysefunktionen in Office 365. Diese neue Lösung mit dem Namen *Advanced eDiscovery* bietet einen End-to-End-Workflow zum Beibehalten, Sammeln, Überprüfen, Analysieren und Exportieren von Inhalten, die auf die internen und externen Ermittlungen Ihrer Organisation abgestimmt sind. Außerdem können Rechtsteams den gesamten Benachrichtigungs-Workflow einsehen, der für juristische Zwecke aufbewahrt wurde, und so mit den an einem Fall beteiligten Verwahrern kommunizieren.
 
-Advanced eDiscovery erfordert ein E5-Abonnement für Ihre Microsoft 365- oder Office 365-Organisation. Weitere Informationen zur Lizenzierung finden Sie unter [Set up Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
+Advanced eDiscovery erfordert ein E5-Abonnement für Microsoft 365 oder Office 365 Organisation. Weitere Informationen zur Lizenzierung finden Sie unter [Einrichten Advanced eDiscovery](get-started-with-advanced-ediscovery.md#step-1-verify-and-assign-appropriate-licenses).
 
 Hier finden Sie eine kurze Übersicht über den integrierten Workflow in Advanced eDiscovery. Weitere Informationen finden Sie unter [Manage the Advanced eDiscovery workflow](create-and-manage-advanced-ediscoveryv2-case.md#manage-the-workflow).
 
 - [Erstellen Sie einen Fall](create-and-manage-advanced-ediscoveryv2-case.md#create-a-case) für die ersten Schritte.
 
-- [Verwalten Sie Custodians,](managing-custodians.md) indem Sie sie zu einem Fall hinzufügen und inhalte in ihrem Postfach, #A0 und Microsoft Teams, in dem sie Mitglied sind, rechtlich in den Archiven speichern.
+- [Verwalten Von](managing-custodians.md) Verwahrern, indem Sie sie zu einem Fall hinzufügen und inhalte in ihrem Postfach, OneDrive konto und Microsoft Teams, in dem sie Mitglieder sind, rechtlich in den Archiven halten.
 
 - [Verwalten sie die](managing-custodian-communications.md) Kommunikation mit Custodians, indem Sie den Benachrichtigungsprozess für die gesetzliche Benachrichtigung automatisieren.
 
@@ -74,4 +74,4 @@ Hier finden Sie eine kurze Übersicht über den integrierten Workflow in Advance
 
 - [Exportieren von Falldaten zur](exporting-data-ediscover20.md) Überprüfung durch externe Berater.
 
-- [Verwalten von Aufträgen mit langer Laufzeit](managing-jobs-ediscovery20.md) in Advanced eDiscovery.
+- [Verwalten von Aufträgen mit](managing-jobs-ediscovery20.md) langer Laufzeit in Advanced eDiscovery.

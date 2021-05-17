@@ -39,15 +39,15 @@ Hier finden Sie eine Aufschlüsselung der verfügbaren Gerätedetails.
 :::image type="content" source="../../media/basic-mobility-security/bms-7-powershell-parameters.png" alt-text="Grundlegende PowerShell-Parameter für Mobilität und Sicherheit":::
 
 >[!NOTE]
->Die Befehle und Skripts in diesem Artikel geben auch Details zu allen von Microsoft Intune verwalteten [Geräten zurück.](https://www.microsoft.com/cloud-platform/microsoft-intune)
+>Die Befehle und Skripts in diesem Artikel geben auch Details zu allen Geräten zurück, die von [Microsoft Intune.](https://www.microsoft.com/cloud-platform/microsoft-intune)
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Es gibt einige Dinge, die Sie einrichten müssen, um die in diesem Artikel beschriebenen Befehle und Skripts auszuführen.
 
-### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>Schritt 1: Herunterladen und Installieren des Azure Active Directory-Moduls für Windows PowerShell
+### <a name="step-1-download-and-install-the-azure-active-directory-module-for-windows-powershell"></a>Schritt 1: Herunterladen und Installieren des Azure Active Directory Module for Windows PowerShell
 
-Weitere Informationen zu diesen Schritten finden Sie unter [Connect to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell).
+Weitere Informationen zu diesen Schritten finden Sie [unter Verbinden to Microsoft 365 with PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell).
 
 1. Wechseln Sie [zu Microsoft Online Services Sign-In Assistant for IT Professionals RTWl,](https://www.microsoft.com/download/details.aspx?id=41950)und wählen Sie Download for Microsoft Online Services    **Sign-in Assistant aus.**
 
@@ -63,13 +63,13 @@ Weitere Informationen zu diesen Schritten finden Sie unter [Connect to Microso
 
     5. Schließen Sie nach der Installation das PowerShell-Befehlsfenster.
 
-### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>Schritt 2: Herstellen einer Verbindung mit Ihrem Microsoft 365-Abonnement
+### <a name="step-2-connect-to-your-microsoft-365-subscription"></a>Schritt 2: Verbinden zu Ihrem Microsoft 365 Abonnement
 
 1. Führen Sie im Windows Azure Active Directory Module for Windows PowerShell den folgenden Befehl aus.  
 
     $UserCredential = Get-Credential
 
-2. Geben Sie Windows PowerShell Benutzernamen und Kennwort für Ihr globales Microsoft 365-Administratorkonto ein, und wählen Sie dann **OK aus.**
+2. Geben Sie im Windows PowerShell Anmeldeinformationenanforderung den Benutzernamen und das Kennwort für Ihr globales Microsoft 365 ein, und wählen Sie dann **OK aus.**
 
 3. Führen Sie den folgenden Befehl aus.
 
@@ -82,7 +82,7 @@ Weitere Informationen zu diesen Schritten finden Sie unter [Connect to Microso
 
 Zum Ausführen des Get-MsolUserDeviceComplianceStatus.ps1 müssen Sie die Ausführung von PowerShell-Skripts aktivieren.
 
-1. Wählen Sie auf Ihrem Windows Desktop **Start** aus, und geben Sie dann Windows PowerShell. Klicken Sie mit der rechten Windows PowerShell, und wählen Sie **dann Als Administrator ausführen aus.**
+1. Wählen Sie Windows Desktop **die Option Start** aus, und geben Sie dann Windows PowerShell. Klicken Sie mit der rechten Windows PowerShell, und wählen Sie **dann Als Administrator ausführen aus.**
 
 2. Führen Sie den folgenden Befehl aus.
 
@@ -104,7 +104,7 @@ Weitere Beispiele finden Sie unter  [Get-MsolDevice](https://go.microsoft.com/
 
 Speichern Sie zunächst das Skript auf Ihrem Computer.
 
-1. Kopieren Sie den folgenden Text, und fügen Sie ihn in Editor ein.  
+1. Kopieren Sie den folgenden Text, und fügen Sie ihn in Editor.  
 
 2.  Param (
 
@@ -263,7 +263,7 @@ Speichern Sie zunächst das Skript auf Ihrem Computer.
 70.  }
     
 
-71.  Speichern Sie sie als Windows PowerShell skriptdatei mithilfe der Dateierweiterung .ps1; Beispiel: Get-MsolUserDeviceComplianceStatus.ps1.   
+71.  Speichern Sie sie als Windows PowerShell Skriptdatei, indem Sie die Dateierweiterungsdatei .ps1; Beispiel: Get-MsolUserDeviceComplianceStatus.ps1.   
 
 ## <a name="run-the-script-to-get-device-information-for-a-single-user-account"></a>Ausführen des Skripts zum Erhalten von Geräteinformationen für ein einzelnes Benutzerkonto
 
@@ -281,7 +281,7 @@ Speichern Sie zunächst das Skript auf Ihrem Computer.
 
     .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
 
-Die Informationen werden als CSV-Datei in Ihren Windows Desktop exportiert. Sie können zusätzliche Parameter verwenden, um den Dateinamen und pfad der CSV anzugeben.
+Die Informationen werden als CSV-Datei Windows Desktop exportiert. Sie können zusätzliche Parameter verwenden, um den Dateinamen und pfad der CSV anzugeben.
 
 ## <a name="run-the-script-to-get-device-information-for-a-group-of-users"></a>Ausführen des Skripts zum Erhalten von Geräteinformationen für eine Gruppe von Benutzern
 
@@ -299,11 +299,11 @@ Die Informationen werden als CSV-Datei in Ihren Windows Desktop exportiert. Sie 
 
     .\Get-MsolUserDeviceComplianceStatus.ps1 -User $u -Export
 
-Die Informationen werden als CSV-Datei in Ihren Windows Desktop exportiert. Sie können zusätzliche Parameter verwenden, um den Dateinamen und pfad der CSV anzugeben.
+Die Informationen werden als CSV-Datei Windows Desktop exportiert. Sie können zusätzliche Parameter verwenden, um den Dateinamen und pfad der CSV anzugeben.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Microsoft Connect wurde eingestellt](/collaborate/connect-redirect)
+[Microsoft Verbinden wurde eingestellt](/collaborate/connect-redirect)
 
 [Übersicht von grundlegender Mobilität und Sicherheit](overview.md)
 

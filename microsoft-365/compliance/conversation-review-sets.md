@@ -26,11 +26,11 @@ ms.locfileid: "50838304"
 ---
 # <a name="conversation-threading-in-advanced-ediscovery"></a>Unterhaltungsthreading in Advanced eDiscovery
 
-Instant Messaging ist eine bequeme Möglichkeit, Fragen zu stellen, Ideen auszutauschen oder schnell über große Zielgruppen zu kommunizieren. Da Instant Messaging-Plattformen wie Microsoft Teams und Yammer-Gruppen zum Kern der Zusammenarbeit in Unternehmen werden, müssen Organisationen bewerten, wie ihr eDiscovery-Workflow diese neuen Formen der Kommunikation und Zusammenarbeit behandelt.
+Instant Messaging ist eine bequeme Möglichkeit, Fragen zu stellen, Ideen auszutauschen oder schnell über große Zielgruppen zu kommunizieren. Da Sofortnachrichtenplattformen wie Microsoft Teams- und Yammer-Gruppen zum Kern der Zusammenarbeit im Unternehmen werden, müssen Organisationen bewerten, wie ihr eDiscovery-Workflow diese neuen Formen der Kommunikation und Zusammenarbeit behandelt.
 
-Das Feature Unterhaltungsrekonstruktion in Advanced eDiscovery soll Ihnen dabei helfen, kontextbezogene Inhalte zu identifizieren und unterschiedliche Unterhaltungsansichten zu erzeugen. Mit dieser Funktion können Sie vollständige Chatunterhaltungen (auch Threadunterhaltungen *genannt)* effizient und schnell überprüfen, die auf Plattformen wie Microsoft Teams generiert werden.
+Das Unterhaltungsrekonstruktionsfeature in Advanced eDiscovery soll Ihnen helfen, kontextbezogene Inhalte zu identifizieren und unterschiedliche Unterhaltungsansichten zu erzeugen. Mit dieser Funktion können Sie vollständige Chatunterhaltungen (auch Threadunterhaltungen *genannt)* effizient und schnell überprüfen, die auf Plattformen wie Microsoft Teams.
 
-Mit der Unterhaltungsrekonstruktion können Sie integrierte Funktionen zum Rekonstruieren, Überprüfen und Exportieren von Threadunterhaltungen verwenden. Verwenden Sie Advanced eDiscovery Conversation Reconstruction für:
+Mit der Unterhaltungsrekonstruktion können Sie integrierte Funktionen zum Rekonstruieren, Überprüfen und Exportieren von Threadunterhaltungen verwenden. Verwenden Advanced eDiscovery Unterhaltungsrekonstruktion für:
 
 - Bewahren Sie eindeutige Metadaten auf Nachrichtenebene für alle Nachrichten in einer Unterhaltung auf.
 
@@ -40,25 +40,25 @@ Mit der Unterhaltungsrekonstruktion können Sie integrierte Funktionen zum Rekon
 
 - Exportieren einzelner Nachrichten oder Threadunterhaltungen
 
-## <a name="terminology"></a>Terminologie
+## <a name="terminology"></a>Begrifflichkeiten
 
 Im Folgenden finden Sie einige Definitionen, mit deren Hilfe Sie mit der Unterhaltungsrekonstruktion beginnen können.
 
 - **Nachrichten:** Stellen Sie die kleinste Einheit einer Unterhaltung dar. Nachrichten können in Größe, Struktur und Metadaten variieren. 
 
-- **Unterhaltung:** Stellt eine Gruppierung einer oder mehreren Nachrichten dar. In verschiedenen Anwendungen können Unterhaltungen auf unterschiedliche Weise dargestellt werden. In einigen Anwendungen gibt es eine explizite Aktion, die aus der Antwort auf eine vorhandene Nachricht resultiert. Unterhaltungen werden explizit als Ergebnis dieser Benutzeraktion gebildet. Hier finden Sie beispielsweise einen Screenshot einer Kanal unterhaltung in Microsoft Teams.
+- **Unterhaltung:** Stellt eine Gruppierung einer oder mehreren Nachrichten dar. In verschiedenen Anwendungen können Unterhaltungen auf unterschiedliche Weise dargestellt werden. In einigen Anwendungen gibt es eine explizite Aktion, die aus der Antwort auf eine vorhandene Nachricht resultiert. Unterhaltungen werden explizit als Ergebnis dieser Benutzeraktion gebildet. Hier ist z. B. ein Screenshot einer Kanal unterhaltung in Microsoft Teams.
 
-   ![Microsoft Teams Channel Conversation](../media/threadedchat.png)
+   ![Microsoft Teams Kanal-Unterhaltung](../media/threadedchat.png)
 
    In anderen Apps (z. B. 1xN-Chatnachrichten in Teams) gibt es keine formale Antwortkette, sondern Nachrichten werden in einem einzigen Thread als "flacher Fluss von Nachrichten" angezeigt. In diesen Typen von Apps werden Unterhaltungen aus einer Gruppe von Nachrichten abgeleitet, die innerhalb einer bestimmten Zeit auftreten. Diese "soft-grouping" von Nachrichten (im Gegensatz zu einer Antwortkette) stellt die "Hin und Her"-Unterhaltung zu einem bestimmten Thema dar, das von Interesse ist.
 
 ## <a name="step-1-create-a-draft-collection"></a>Schritt 1: Erstellen einer Entwurfssammlung
 
-Nachdem Sie relevante Custodians und Inhaltsstandorte identifiziert haben, können Sie eine Suche erstellen, um potenziell relevante Inhalte zu finden. Auf der **Registerkarte Sammlungen** im Fall Advanced eDiscovery können Sie eine Auflistung erstellen, indem Sie auf Neue Auflistung **klicken** und dem Assistenten folgen. Informationen dazu, wie Sie eine Auflistung erstellen, eine Suchabfrage erstellen und eine Vorschau der Suchergebnisse anzeigen können, finden Sie unter [Create a draft collection](create-draft-collection.md).
+Nachdem Sie relevante Custodians und Inhaltsstandorte identifiziert haben, können Sie eine Suche erstellen, um potenziell relevante Inhalte zu finden. Auf der **Registerkarte** Sammlungen im Advanced eDiscovery können Sie eine Auflistung erstellen, indem Sie auf **Neue** Auflistung klicken und dem Assistenten folgen. Informationen dazu, wie Sie eine Auflistung erstellen, eine Suchabfrage erstellen und eine Vorschau der Suchergebnisse anzeigen können, finden Sie unter [Create a draft collection](create-draft-collection.md).
 
 ## <a name="step-2-commit-a-draft-collection-to-a-review-set"></a>Schritt 2: Commit einer Entwurfssammlung für einen Überprüfungssatz
 
-Nachdem Sie die Suchabfrage in einer Auflistung überprüft und abschließend erstellt haben, können Sie die Suchergebnisse einem Überprüfungssatz hinzufügen. Wenn Sie Ihre Suchergebnisse zu einem Überprüfungssatz hinzufügen, werden die ursprünglichen Daten in einen Azure Storage-Bereich kopiert, um den Überprüfungs- und Analyseprozess zu erleichtern. Weitere Informationen zum Hinzufügen von Suchergebnissen zu einem Überprüfungssatz finden Sie unter [Commit a draft collection to a review set](commit-draft-collection.md).
+Nachdem Sie die Suchabfrage in einer Auflistung überprüft und abschließend erstellt haben, können Sie die Suchergebnisse einem Überprüfungssatz hinzufügen. Wenn Sie Ihre Suchergebnisse zu einem Überprüfungssatz hinzufügen, werden die ursprünglichen Daten in einen Azure Storage kopiert, um den Überprüfungs- und Analyseprozess zu erleichtern. Weitere Informationen zum Hinzufügen von Suchergebnissen zu einem Überprüfungssatz finden Sie unter [Commit a draft collection to a review set](commit-draft-collection.md).
 
 Wenn Sie Einem Überprüfungssatz Elemente aus Unterhaltungen hinzufügen, können Sie die Option Threadunterhaltungen verwenden, um kontextbezogene Nachrichten aus Unterhaltungen zu sammeln, die Elemente enthalten, die den Suchkriterien der Auflistung entsprechen. Nachdem Sie die Option Threadunterhaltungen ausgewählt haben, können die folgenden Schritte ausgeführt werden:
 
@@ -66,7 +66,7 @@ Wenn Sie Einem Überprüfungssatz Elemente aus Unterhaltungen hinzufügen, könn
   
 1. Mithilfe einer Schlüsselwort- und Datumsbereichsabfrage hat die Suche einen Treffer in *Nachricht 3 zurückgegeben.* Diese Nachricht war Teil einer größeren Unterhaltung, dargestellt von *CRC1*.
   
-2. Wenn Sie die Daten zu einem Überprüfungssatz hinzufügen und die Unterhaltungsabrufoptionen aktivieren, wird Advanced eDiscovery zurück und sammelt andere Elemente in *CRC1*.
+2. Wenn Sie die Daten zu einem Überprüfungssatz hinzufügen und die Optionen für den Unterhaltungsabruf aktivieren, wird Advanced eDiscovery zurück und andere Elemente in *CRC1 sammeln.*
   
 3. Nachdem die Elemente dem Überprüfungssatz hinzugefügt wurden, können Sie alle einzelnen Nachrichten aus *CRC1 überprüfen.*
 

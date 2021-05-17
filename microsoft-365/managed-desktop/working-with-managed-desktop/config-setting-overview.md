@@ -18,61 +18,61 @@ ms.locfileid: "49371490"
 ---
 # <a name="configurable-settings---microsoft-managed-desktop"></a>Konfigurierbare Einstellungen – Microsoft Managed Desktop
 
-Microsoft Managed Desktop stellt Einstellungen und Richtlinien bereit, die auf alle von Microsoft Managed Desktop verwalteten Geräte angewendet werden. Weitere Informationen finden Sie unter [Device Configuration](../service-description/device-policies.md).
+Microsoft Managed Desktop werden Einstellungen und Richtlinien bereitgestellt, die auf alle Geräte angewendet werden, die von Microsoft Managed Desktop. Weitere Informationen finden Sie unter [Gerätekonfiguration](../service-description/device-policies.md).
 
-Konfigurierbare Einstellungen in Microsoft Managed Desktop ermöglichen IT-Administratoren das anpassen und Bereitstellen von Einstellungen, die für Ihre Organisation und Ihre geschäftlichen Anforderungen eindeutig sind. Diese Einstellungen sind zusätzlich zu den Geräte Konfigurationseinstellungen und-Richtlinien, die von Microsoft Managed Desktop verwaltet werden.  
+Konfigurierbare Einstellungen in Microsoft Managed Desktop IT-Administratoren eine Möglichkeit zum Anpassen und Bereitstellen von Einstellungen, die für ihre Organisations- und Geschäftsanforderungen einzigartig sind. Diese Einstellungen sind zusätzlich zu gerätekonfigurationseinstellungen und -richtlinien, die von der Microsoft Managed Desktop.  
 
-Konfigurierbare Einstellungsänderungen werden in der Cloud vorgenommen und auf Ihre verwalteten Microsoft-Desktop Geräte in definierten Bereitstellungsgruppen angewendet. Dieser Prozess ähnelt dem Verwalten von Änderungen an Geräte Konfigurationseinstellungen und-Richtlinien, die vom Dienst definiert und verwaltet werden, mit Microsoft Managed Desktop. Mithilfe des gleichen Verfahrens, das von Microsoft Managed Desktop für die Bereitstellung von Änderungen verwendet wird, können Sie Ihre Organisation mit modernen IT-Verwaltungsmethoden weiter nach vorn bewegen.
+Konfigurierbare Einstellungsänderungen werden in der Cloud vorgenommen und auf Ihre Microsoft Managed Desktop in definierten Bereitstellungsgruppen angewendet. Dieser Vorgang ähnelt der Microsoft Managed Desktop von Änderungen an Gerätekonfigurationseinstellungen und -richtlinien, die vom Dienst definiert und verwaltet werden. Mit demselben Prozess, den Microsoft Managed Desktop für die Bereitstellung von Änderungen verwendet, setzen Sie Ihre Organisation mithilfe moderner IT-Verwaltungspraktiken fort.
 
 ## <a name="when-to-use-configurable-settings"></a>Wann können konfigurierbare Einstellungen verwendet werden?
 
 Es gibt einige Male, um konfigurierbare Einstellungen zu verwenden. 
 
-**Onboarding-Prozess** – Microsoft Managed Desktop empfiehlt, konfigurierbare Einstellungen anzupassen, wenn Sie sich an den Microsoft Managed Desktop Service oder an eine große Anzahl von Geräten (20 oder mehr) an Bord anpassen. Einstellungskategorien werden im Verwaltungsportal von Microsoft Managed Desktop konfiguriert. Nachdem Sie onboarded haben und Zugriff auf das Verwaltungsportal haben, können Sie festlegen, welche Einstellungskategorien für Ihre Organisation angepasst werden sollen, die Änderungen vornehmen, eine Bereitstellung inszenieren und dann die Änderungen bereitstellen.
+**Onboardingprozess–** Microsoft Managed Desktop empfiehlt, konfigurierbare Einstellungen anzupassen, wenn Sie das Onboarding für den Microsoft Managed Desktop-Dienst oder beim Onboarding einer großen Anzahl von Geräten (20 oder mehr) vornehmen. Einstellungskategorien werden im Microsoft Managed Desktop konfiguriert. Nachdem Sie das Onboarding vorgenommen haben und Zugriff auf das Administratorportal haben, können Sie entscheiden, welche Einstellungskategorien Sie für Ihre Organisation anpassen möchten, die Änderungen vornehmen, eine Bereitstellung bereitstellen und dann Ihre Änderungen bereitstellen.
 
-**Einstellungen verwalten** – überprüfen Sie Ihre Einstellungen regelmäßig, und machen Sie die erforderlichen Updates. Möglicherweise müssen Sie Änderungen vornehmen, um eine Änderung in Ihrem Unternehmen zu unterstützen.   
+**Einstellungen verwalten** – Überprüfen Sie Ihre Einstellungen regelmäßig, und nehmen Sie die erforderlichen Updates vor. Möglicherweise müssen Sie Änderungen vornehmen, um eine Änderung in Ihrem Unternehmen zu unterstützen.   
 
 ## <a name="setting-categories"></a>Festlegen von Kategorien
 
 Dies sind die konfigurierbaren Einstellungskategorien, die Sie anpassen können:
-- [Desktophintergrundbild](config-setting-ref.md#desktop-background-picture) – Anpassen des Desktop Hintergrundbilds für von Microsoft verwaltete Desktop Geräte. 
-- [Browser Startseiten](config-setting-ref.md#browser-start-pages) – Hinzufügen von Startseiten zur Verwendung mit Microsoft Edge. Siehe Browser Startseite
-- [Unternehmens Modus-Website Liste](config-setting-ref.md#enterprise-mode-site-list-location) – Hinzufügen von Websites und des Kompatibilitätsmodus. Websites in der Liste werden in Internet Explorer gestartet. 
-- [Vertrauenswürdige Websites](config-setting-ref.md#trusted-sites) – fügen Sie vertrauenswürdige Websites hinzu, und legen Sie Sicherheitszonen für jeden Standort fest. 
-- [Proxy Site Exceptions](config-setting-ref.md#proxy) – richten Sie Ihre Proxy Server-Adressnummer und Portnummer ein, und fügen Sie Proxy Site Exceptions hinzu.
+- [Desktophintergrundbild](config-setting-ref.md#desktop-background-picture) – Passen Sie das Desktophintergrundbild für Microsoft Managed Desktop an. 
+- [Browserstartseiten](config-setting-ref.md#browser-start-pages) – Fügen Sie Startseiten hinzu, die mit Microsoft Edge. Siehe Browser-Startseite
+- [Enterprise - Websiteliste für den Modus](config-setting-ref.md#enterprise-mode-site-list-location) – Hinzufügen von Websites und deren Kompatibilitätsmodus. Websites in der Liste werden in Internet Explorer gestartet. 
+- [Vertrauenswürdige Websites](config-setting-ref.md#trusted-sites) – Fügen Sie vertrauenswürdige Websites hinzu, und legen Sie Sicherheitszonen für jede Website ein. 
+- [Proxywebsiteausnahmen](config-setting-ref.md#proxy) – Richten Sie Die Adresse und Portnummer des Proxyservers ein, und fügen Sie Proxywebsiteausnahmen hinzu.
 
-Jede Einstellungskategorie kann individuell angepasst und bereitgestellt werden. Sie können Änderungen an mehreren Einstellungskategorien gleichzeitig bereitstellen, jedoch können Sie nur eine Änderung gleichzeitig in einer Einstellungskategorie bereitstellen.
+Jede Einstellungskategorie kann individuell angepasst und bereitgestellt werden. Sie können Änderungen an mehreren Einstellungskategorien gleichzeitig bereitstellen. Sie können jedoch nur eine Änderung gleichzeitig für eine Einstellungskategorie bereitstellen.
 
-Zum Beispiel:
-- Sie können Änderungen am Desktophintergrundbild und an vertrauenswürdigen Websites, jeweils als eigene Bereitstellung, gleichzeitig bereitstellen. 
-- Sie können nicht gleichzeitig zwei Bereitstellungen für Browser Startseiten bereitstellen. Bei der letzten Bereitstellung werden frühere Bereitstellungen angehalten, die noch ausgeführt werden.
+Beispiel:
+- Sie können Änderungen an Desktophintergrundbild und vertrauenswürdigen Websites gleichzeitig als eigene Bereitstellung bereitstellen. 
+- Sie können zwei Bereitstellungen nicht gleichzeitig auf Browserstartseiten bereitstellen. Die neueste Bereitstellung beendet frühere Bereitstellungen, die noch ausgeführt werden.
 
 ## <a name="configurable-setting-process"></a>Konfigurierbarer Einstellungsprozess
 
-Microsoft Managed Desktop empfiehlt die Verwendung von konfigurierbaren Einstellungen für Ihre Organisation, wenn Sie einen ähnlichen Prozess wie den folgenden ausführen:
+Microsoft Managed Desktop empfiehlt, bei der Verwendung konfigurierbarer Einstellungen für Ihre Organisation einen Prozess wie den folgenden zu folgen:
 
-**Schritt 1 – planen** – erfahren Sie mehr über konfigurierbare Einstellungen, und entscheiden Sie, welche Einstellungskategorien für Ihre Organisation konfiguriert werden sollen. Erstellen Sie eine Zeitachse für die Bereitstellung von Änderungen an jeder Gruppe. Planen der Kommunikation mit ihren Benutzern, die ihre internen Änderungsverwaltungsprozesse erfüllt. Wenn Sie beispielsweise Browser Startseiten hinzufügen, sollten Sie Ihren Benutzern mitteilen, dass Sie nach der Bereitstellung eine neue Gruppe von Startseiten in Ihrem Browser haben.  
+**Schritt 1 – Planen –** Erfahren Sie mehr über konfigurierbare Einstellungen, und entscheiden Sie, welche Einstellungskategorien Sie für Ihre Organisation konfigurieren möchten. Erstellen Sie eine Zeitachse, wann Änderungen an jeder Gruppe bereitgestellt werden. Planen Sie die Kommunikation mit Ihren Benutzern, die Ihren internen Änderungsverwaltungsprozessen entspricht. Wenn Sie beispielsweise Browserstartseiten hinzufügen, teilen Sie Ihren Benutzern mit, dass sie nach der Bereitstellung einen neuen Satz von Startseiten in ihrem Browser haben.  
 
-**Schritt 2 – konfigurieren und Bereitstellen der Bereitstellung** – vornehmen von Änderungen an konfigurierbaren Einstellungen im Verwaltungsportal von Microsoft Managed Desktop. Stufen Sie die Änderungen so ein, dass Sie bereit bereitgestellt werden können. Denken Sie daran, die Benutzer über die Änderungen zu informieren und zu erfahren, wie die Änderungen ihre Geräte Erfahrung ändern werden.   
+**Schritt 2 – Konfigurieren und Inszenieren** der Bereitstellung – Nehmen Sie Änderungen an konfigurierbaren Einstellungen im Microsoft Managed Desktop vor. Bereiten Sie die Änderungen vor, damit sie bereit für die Bereitstellung sind. Denken Sie daran, Ihre Benutzer über die Änderungen und darüber zu erfahren, wie die Änderungen ihre Geräteerfahrung ändern.   
 
-Sie können Änderungen im Verwaltungsportal von Microsoft Managed Desktop konfigurieren und Stufen. Weitere Informationen finden Sie unter [Anpassen von konfigurierbaren Einstellungen](config-setting-ref.md). 
+Sie konfigurieren und stellen Änderungen im Administratorportal Microsoft Managed Desktop ein. Weitere Informationen finden Sie unter [Customize configurable settings](config-setting-ref.md). 
 
-**Schritt 3 – kommunizieren von Änderungen** Informieren Sie Ihre Benutzer über bevorstehende Änderungen. Vervollständigen Sie für jede Bereitstellung die Kommunikation, die Teil ihrer Änderungsverwaltungsprozesse ist. Sie sollten jede Änderung deutlich mitteilen, die Auswirkungen auf die Funktionsweise eines Benutzers hat oder auf den Geräten angezeigt wird.
+**Schritt 3 – Kommunizieren von Änderungen** Teilen Sie Ihren Benutzern Informationen zu bevorstehenden Änderungen mit. Führen Sie für jede Bereitstellung die Kommunikation aus, die Teil Ihrer Änderungsverwaltungsprozesse ist. Sie sollten alle Änderungen, die sich auf die Funktionsweise eines Benutzers oder auf deren Geräten ausdingen, klar kommunizieren.
 
-**Schritt 4 – Bereitstellen von Änderungen** – Bereitstellen der Änderungen, beginnend mit der Test Gruppe. Mit der Test Gruppe können Sie alle Probleme in einer Gruppe mit weniger Geräten validieren und beheben, bevor Sie Änderungen an größeren Gerätegruppen bereitstellen. Wenn Probleme auftreten, können Sie die Änderung rückgängig machen, die Einstellung aktualisieren und eine neue Bereitstellung inszenieren. Microsoft Managed Desktop empfiehlt, dass Sie dem strukturierten Ansatz folgen und die Bereitstellung für Gruppen in dieser Reihenfolge ausführen: Test, erste, schnell und dann breit.   
+**Schritt 4 – Bereitstellen von Änderungen** – Stellen Sie Ihre Änderungen ab der Testgruppe zur Bereitstellung ihrer Änderungen vor. Mit der Testgruppe können Sie alle Probleme in einer Gruppe mit weniger Geräten überprüfen und beheben, bevor Sie Änderungen an größeren Gerätegruppen bereitstellen. Wenn Probleme auftreten, können Sie die Änderung wiederherstellen, die Einstellung aktualisieren und eine neue Bereitstellung in die Phase bringen. Microsoft Managed Desktop empfiehlt, den strukturierten Ansatz zu befolgen und gruppen in dieser Reihenfolge zu implementieren: Test, First, Fast und dann Broad.   
 
-Alle konfigurierbaren Einstellungen werden über das Verwaltungsportal von Microsoft Managed Desktop verwaltet. Weitere Informationen finden Sie unter [Bereitstellen von Änderungen](config-setting-deploy.md). 
+Alle konfigurierbaren Einstellungen werden über das Microsoft Managed Desktop verwaltet. Weitere Informationen finden Sie unter [Deploy changes](config-setting-deploy.md). 
 
-**Schritt 5: Nachverfolgen von Änderungen** – Nachverfolgen des Fortschritts für Ihre Änderungen am Bereitstellungsstatus. Für jede Einstellung haben Sie folgende Möglichkeiten:
-- Nach **verfolgen des Fortschritts** – Status nachverfolgen, nachdem Sie die Änderung bereitgestellt haben. Der Status wird in " **in Bearbeitung**" und dann entweder " **abgeschlossen**" oder " **fehlgeschlagen**" geändert. Wenn bei einer Bereitstellung ein Fehler auftritt, wird automatisch eine Supportanforderung für Microsoft Managed Desktop-Vorgänge geöffnet, um das Problem zu untersuchen.  
-- **Siehe Version deployed** – jede bereitgestellte Änderung verfügt über eine Versionsnummer.
-- **Änderungen wiederherstellen** – durch das Zurücksetzen einer Änderung wird die aktuelle Bereitstellung angehalten, und alle Gruppen werden auf die letzten Änderungen zurückgesetzt, die für alle Gruppen bereitgestellt wurden. Sie führen ein Rollback auf den letzten zweifelsfrei funktionierenden Einstellungswert aus.
-- Über **Prüfen der Änderungen** – nachdem die Bereitstellung abgeschlossen ist, überprüfen Sie, ob die Änderungen wie erwartet angewendet wurden.  
+**Schritt 5 – Nachverfolgen von Änderungen** – Verfolgen Sie den Fortschritt Ihrer Änderungen im Bereitstellungsstatus. Für jede Einstellung können Sie:
+- **Nachverfolgen des Fortschritts** – Nachverfolgen des Status nach der Bereitstellung der Änderung. Der Status wird in **In Bearbeitung** geändert, und dann **entweder Complete** oder **Failed**. Wenn bei einer Bereitstellung ein Fehler auftritt, wird automatisch eine Supportanforderung für Microsoft Managed Desktop geöffnet, um das Problem zu untersuchen.  
+- **Siehe version deployed** – Jede bereitgestellte Änderung hat eine Versionsnummer.
+- **Änderungen wiederherstellen** – Das Zurücksetzen einer Änderung beendet die aktuelle Bereitstellung und setzt alle Gruppen auf die letzten Änderungen zurück, die für alle Gruppen bereitgestellt wurden. Sie setzen ein Rollback auf den zuletzt bekannten Wert für gute Werte.
+- **Überprüfen von** Änderungen – Überprüfen Sie nach Abschluss der Bereitstellung, ob die Änderungen wie erwartet angewendet wurden.  
 
-Wenn eine Bereitstellung fehlgeschlagen ist oder Sie eine Änderung nicht rückgängig machen können, [Öffnen Sie eine Supportanfrage](admin-support.md) bei Microsoft Managed Desktop Operations. 
+Wenn eine Bereitstellung fehlgeschlagen ist oder Sie eine Änderung nicht wiederherstellen können, öffnen Sie eine [Supportanfrage](admin-support.md) mit Microsoft Managed Desktop Vorgängen. 
 
-Weitere Informationen finden Sie unter [Deploy and Track konfigurierbar Settings](config-setting-deploy.md).
+Weitere Informationen finden Sie unter [Deploy and track configurable settings](config-setting-deploy.md).
 
-## <a name="additional-resources"></a>Weitere Ressourcen
+## <a name="additional-resources"></a>Zusätzliche Ressourcen
 - [Referenz der konfigurierbaren Einstellungen](config-setting-ref.md) 
 - [Bereitstellen konfigurierbarer Einstellungen](config-setting-deploy.md) 

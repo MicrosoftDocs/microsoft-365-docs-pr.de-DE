@@ -10,7 +10,7 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Administratoren können erfahren, wie sich Das Training zur Angriffssimulation im Microsoft 365 Security Center auf Mitarbeiter auswirkt und Einblicke aus Simulations- und Schulungsergebnissen gewinnen.
+description: Administratoren können erfahren, wie sich das Training zur Angriffssimulation im Microsoft 365 sicherheitscenter auf Mitarbeiter auswirkt und Einblicke aus Simulations- und Schulungsergebnissen gewinnen.
 ms.technology: mdo
 ms.openlocfilehash: 0fcb88406558f73b587d8452375c33dbbec1c78b
 ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
@@ -23,7 +23,7 @@ ms.locfileid: "51600007"
 
 Im Rahmen von Attack Simulation Training bietet Microsoft Ihnen Einblicke basierend auf den Ergebnissen von Simulationen und Schulungen, die Mitarbeiter durch geführt haben. Diese Einblicke helfen Ihnen, über den Fortschritt der Bedrohungsbereitschaft Ihrer Mitarbeiter auf dem Laufenden zu bleiben, und empfehlen ihnen die nächsten Schritte, um Ihre Mitarbeiter und Ihre Umgebung besser auf Angriffe vorzubereiten.
 
-Wir arbeiten kontinuierlich daran, die Für Sie verfügbaren Einblicke zu erweitern. Verhaltensfolgen und empfohlene Aktionen sind derzeit verfügbar. Beginnen Sie mit attack [simulation training im Microsoft 365 Security Center.](https://security.microsoft.com/attacksimulator?viewid=overview)
+Wir arbeiten kontinuierlich daran, die Für Sie verfügbaren Einblicke zu erweitern. Verhaltensfolgen und empfohlene Aktionen sind derzeit verfügbar. Beginnen Sie mit attack [simulation training im Microsoft 365 Security Center](https://security.microsoft.com/attacksimulator?viewid=overview).
 
 ## <a name="behavior-impact-on-compromise-rate"></a>Auswirkungen des Verhaltens auf die Kompromissrate
 
@@ -31,7 +31,7 @@ Auf der **Registerkarte Übersicht** des Angriffssimulationstrainings finden Sie
 
 Im Diagramm sehen Sie:
 
-- **Vorhergesagte Kompromissrate,** die die durchschnittliche Kompromissrate für Simulationen mit demselben Nutzlasttyp für andere Microsoft 365-Mandanten widerspiegelt, die Attack Simulation Training verwenden.
+- **Vorhergesagte Kompromissrate,** die die durchschnittliche Kompromissrate für Simulationen mit dem gleichen Nutzlasttyp für andere mandanten Microsoft 365, die Attack Simulation Training verwenden.
 - **Die tatsächliche Kompromissrate** spiegelt den Prozentsatz der Mitarbeiter wider, die für die Simulation gefallen sind.
 
 Darüber hinaus wird der Unterschied zwischen der tatsächlichen Anzahl der durch den Angriff gefährdeten Mitarbeiter und der `<number> less susceptible to phishing` vorhergesagten Kompromissrate wider. Diese Anzahl von Mitarbeitern ist in Zukunft weniger wahrscheinlich durch ähnliche Angriffe gefährdet, während sie im Gegensatz zur vorhergesagten Kompromissrate angibt, wie die Mitarbeiter insgesamt `<percent%> better than predicted rate` waren.

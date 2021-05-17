@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Microsoft Defender Security Center-Einstellungen
+title: Konfigurieren Microsoft Defender Security Center Einstellungen
 description: Verwenden Sie die Einstellungsseite, um allgemeine Einstellungen, Berechtigungen, Apis und Regeln zu konfigurieren.
 keywords: Einstellungen, allgemeine Einstellungen, Berechtigungen, APIs, Regeln
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/07/2021
 ms.locfileid: "51604345"
 ---
-# <a name="configure-microsoft-defender-security-center-settings"></a>Konfigurieren von Microsoft Defender Security Center-Einstellungen
+# <a name="configure-microsoft-defender-security-center-settings"></a>Konfigurieren Microsoft Defender Security Center Einstellungen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51604345"
 
 >Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-prefsettings-abovefoldlink)
 
-Verwenden Sie **das Menü** Einstellungen, um allgemeine Einstellungen, erweiterte Features, die Vorschaufunktion, E-Mail-Benachrichtigungen und die benutzerdefinierte Bedrohungsintelligenzfunktion zu ändern.
+Verwenden Sie **das Einstellungen,** um allgemeine Einstellungen, erweiterte Features zu ändern, die Vorschauerfahrung, E-Mail-Benachrichtigungen und das benutzerdefinierte Feature zur Bedrohungsintelligenz zu aktivieren.
 
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 

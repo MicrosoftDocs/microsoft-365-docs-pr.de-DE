@@ -1,6 +1,6 @@
 ---
 title: Übersicht über das Microsoft Defender Security Center
-description: Erfahren Sie mehr über die Features im Microsoft Defender Security Center, einschließlich der Funktionsweise von Warnungen und Vorschläge zur Untersuchung möglicher Verstöße und Angriffe.
+description: Erfahren Sie mehr über die Features Microsoft Defender Security Center, einschließlich der Funktionsweise von Warnungen und Vorschläge zur Untersuchung möglicher Verstöße und Angriffe.
 keywords: Dashboard, Benachrichtigungswarteschlange, Warnungen verwalten, Warnungen untersuchen, Warnungen untersuchen, Geräte untersuchen, Dateien übermitteln, tiefe Analyse, hoch, mittel, niedrig, Schweregrad, ioc, ioa
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150

@@ -1,5 +1,5 @@
 ---
-title: Designs – eDiscovery
+title: Designs - eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Verwenden Sie Designs in Advanced eDiscovery, um Überprüfungs Sätze zu organisieren, indem Sie das dominante Design in jedem Dokument finden.
+description: Verwenden Sie Designs in Advanced eDiscovery, um Überprüfungssätze zu organisieren, indem Sie das dominante Design in jedem Dokument finden.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 3dfc0dca0c6ed62e3ce8384efa2fd3ea407c3ce8
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
@@ -26,11 +26,11 @@ ms.locfileid: "48285531"
 ---
 # <a name="themes-in-advanced-ediscovery"></a>Designs in Advanced eDiscovery
 
-Wie schreibt eine Person ein Dokument? Sie beginnen im Allgemeinen mit einem oder mehreren Ideen, die Sie im Dokument vermitteln möchten, und verfassen sich mit Wörtern, die mit den Ideen übereinstimmen. Je häufiger eine Idee ist, desto häufiger sind die Wörter, die mit dieser Idee verwandt sind, eher. Dies informiert darüber, wie auch Benutzer Dokumente konsumieren. Das wichtigste beim Lesen eines Dokuments ist die Idee, die das Dokument zu vermitteln versucht, welche Ideen angezeigt werden und wie die Beziehungen zwischen den Ideen aussehen.
+Wie schreibt eine Person ein Dokument? Sie beginnen in der Regel mit einem oder mehreren Ideen, die sie im Dokument vermitteln möchten, und verfassen mithilfe von Wörtern, die an den Ideen ausgerichtet sind. Um so verbreiteter eine Idee ist, werden die Wörter, die mit dieser Idee in Zusammenhang stehen, in der Regel häufiger verwendet. Dies informiert darüber, wie Auch Personen Dokumente verwenden. Wichtig beim Lesen eines Dokuments sind die Ideen, die das Dokument vermitteln soll, welche Ideen wo angezeigt werden und was die Beziehungen zwischen den Ideen sind.
 
-Dies kann erweitert werden, um zu erfahren, wie eine Person eine Reihe von Dokumenten verwenden möchte. Sie möchten sehen, welche Ideen in den Sets vorhanden sind und welche Dokumente über diese Ideen sprechen. Wenn Sie ein bestimmtes Dokument finden, das interessant ist, möchten Sie auch Dokumente sehen, in denen ähnliche Ideen erörtert werden.
+Dies kann auf die Art und Weise erweitert werden, wie eine Person eine Reihe von Dokumenten nutzen möchte. Sie möchten sehen, welche Ideen in den Sätzen vorhanden sind und welche Dokumente über diese Ideen sprechen. Wenn sie ein bestimmtes Dokument von Interesse finden, möchten sie auch Dokumente sehen können, in denen ähnliche Ideen behandelt werden.
 
-Die Designs-Funktionalität in Advanced eDiscovery versucht zu imitieren, wie Menschen Grund zu Dokumenten sind, indem Sie die in einer Überprüfungsgruppe besprochenen *Designs* analysieren und einem Dokument in der Überprüfungsgruppe ein Design zuweisen. In Advanced eDiscovery geht Designs einen Schritt weiter und identifiziert das *dominante Design* in jedem Dokument. Das dominante Design ist diejenige, die am häufigsten in einem Dokument angezeigt wird.
+Die Themes-Funktionalität in Advanced eDiscovery versucht nachzuahmen, wie Menschen  über Dokumente nachdenklich sind, indem sie die Designs analysiert, die in einem Überprüfungssatz behandelt werden, und Dokumente im Überprüfungssatz ein Design zuweisen. Im Advanced eDiscovery Designs einen Schritt weiter und identifiziert das *dominante Design* in jedem Dokument. Das dominante Design ist das Design, das am häufigsten in einem Dokument angezeigt wird.
 
 ## <a name="how-does-themes-work"></a>Wie funktioniert Designs?
 

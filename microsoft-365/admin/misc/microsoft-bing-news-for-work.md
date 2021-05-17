@@ -25,7 +25,7 @@ Bleiben Sie auf dem neuesten Stand mit den Vorgängen in Ihrer Branche. Jeden Mo
 
 ## <a name="what-is-it"></a>Was ist das?
 
-Branchenupdates nutzen die Leistung von Microsofts Bing-Suchmaschine und sind eine Sammlung der wichtigsten Arbeitsnachrichten aus dem Web, die nur für Sie ausgewählt wurden.
+Branchenupdates nutzen die Leistung der Bing von Microsoft und sind eine Sammlung der wichtigsten Arbeitsnachrichten aus dem Web, die nur für Sie ausgewählt wurden.
 
 ## <a name="how-does-it-work"></a>Wie funktioniert das?
 
@@ -33,7 +33,7 @@ Passen Sie Ihre Erfahrung an, indem Sie Themen und Interessen folgen. Erhalten S
 
 ## <a name="how-do-i-customize-my-industry-updates-email"></a>Wie passe ich meine Branchenupdates-E-Mails an?
 
-Um Ihre Erfahrung anzupassen, besuchen Sie die Einstellungsseite, um den Themen und Interessen zu folgen, die für Sie wichtig sind. Greifen Sie auf Ihre Seite mit den persönlichen Einstellungen zu, indem Sie die Textmarke Anpassen Ihrer Inhalte im [Bing-, Edge-](https://www.bing.com/news/professional?pn=setting&mkt=en-us&form=BAWLOG&frb=1) und Branchenupdate-Newsletter markieren oder auf die Schaltfläche Einstellungen in Ihrer E-Mail für Branchenupdates klicken.
+Um Ihre Erfahrung anzupassen, besuchen Sie die Einstellungsseite, um den Themen und Interessen zu folgen, die für Sie wichtig sind. Greifen Sie auf Ihre Persönliche Einstellungsseite zu, indem Sie die Textmarke Anpassen Ihrer Inhalte auf [Bing, Edge-](https://www.bing.com/news/professional?pn=setting&mkt=en-us&form=BAWLOG&frb=1) und Branchenupdate-Newsletter oder auf die Schaltfläche Einstellungen in Ihrer E-Mail für Branchenupdates klicken.
 
 [Abonnieren](https://www.bing.com/news/professional?pn=setting&mkt=en-us&asnl=1&form=BAWLOG&frb=1) und erhalten Sie noch heute E-Mails zu Branchenupdates, die an Ihren Posteingang übermittelt werden!
 

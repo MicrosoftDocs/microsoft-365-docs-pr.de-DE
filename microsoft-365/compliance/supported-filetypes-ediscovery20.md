@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Eine Liste der unterstützten Dateitypen in Microsoft 365 Advanced eDiscovery, einschließlich Bilddateitypen, die von der OCR-Funktionalität in Advanced eDiscovery unterstützt werden.
+description: Eine Liste der unterstützten Dateitypen in Microsoft 365 Advanced eDiscovery, einschließlich Bilddateitypen, die von der OCR-Funktionalität in Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 719a0474d45825114cf4ea3fbd19082bb8df7622
 ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
@@ -25,7 +25,7 @@ ms.locfileid: "51599830"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Unterstützte Dateitypen in Advanced eDiscovery
 
-Advanced eDiscovery unterstützt viele Dateitypen auf vielen verschiedenen Ebenen. Die Typen von Supportdateien werden in den folgenden Tabellen in diesem Artikel beschrieben. Diese Liste ist nicht endgültig, und wir fügen neue Dateitypen hinzu, während wir unsere Überprüfungstests fortsetzen. Diese Tabellen geben an, ob ein Dateityp für die Textextraktion (und optische Zeichenerkennung oder OCR-Textextraktion für Bilddateien) unterstützt wird, der im systemeigenen Viewer angezeigt werden kann und auch im Annotate Viewer in Advanced eDiscovery unterstützt wird.
+Advanced eDiscovery unterstützt viele Dateitypen auf vielen verschiedenen Ebenen. Die Typen von Supportdateien werden in den folgenden Tabellen in diesem Artikel beschrieben. Diese Liste ist nicht endgültig, und wir fügen neue Dateitypen hinzu, während wir unsere Überprüfungstests fortsetzen. Diese Tabellen geben an, ob ein Dateityp für die Textextraktion (und optische Zeichenerkennung oder OCR-Textextraktion für Bilddateien) unterstützt wird, der im systemeigenen Viewer angezeigt werden kann und auch im Annotate Viewer in Advanced eDiscovery.
 
 ## <a name="archive--container"></a>Archiv/Container
 
@@ -49,14 +49,14 @@ Advanced eDiscovery unterstützt viele Dateitypen auf vielen verschiedenen Ebene
 |video/x-m4v | Ja | Ja | Nein | Ja | Nein | .m4v |
 ||||||||
 
-## <a name="database"></a>Database
+## <a name="database"></a>Datenbank
 
 | Mime-Typ | Dateiidentifikation | Metadatenextraktion | Textextraktion | Systemeigener Viewer | Annotate Viewer | Mögliche Erweiterungen |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/x-msaccess | Ja | Ja | Ja | Nein | Nein | .mdb |
 ||||||||
 
-## <a name="email"></a>E-Mail senden
+## <a name="email"></a>E-Mails
 
 |Mime-Typ |Dateiidentifikation |Metadatenextraktion |Textextraktion |Systemeigener Viewer |Annotate Viewer | Mögliche Erweiterungen |
 |:------| :------| :------| :------| :------| :------| :------|

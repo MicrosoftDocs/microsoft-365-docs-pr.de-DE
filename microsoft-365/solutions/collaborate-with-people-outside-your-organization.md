@@ -34,7 +34,7 @@ Die Zusammenarbeit mit Personen außerhalb Ihres Unternehmens besteht aus zwei H
 - **Freigabe aktivieren** - Konfigurieren Sie die Freigabesteuerungen in Azure Active Directory, Teams, Microsoft 365 Groups und SharePoint, um den Grad der Freigabe zu ermöglichen, den Sie für Ihre Organisation wünschen.
 - **Aktivieren zusätzlicher Sicherheitsfeatures** - Während die grundlegenden Freigabefunktionen so konfiguriert werden können, dass sich Personen außerhalb Ihres Unternehmens authentifizieren müssen, bietet Microsoft 365 viele zusätzliche Sicherheits- und Compliance-Funktionen, die Ihnen dabei helfen, Ihre Daten zu schützen und Ihre Governance-Richtlinien bei der externen Freigabe einzuhalten.
 
-Lesen Sie Einrichten einer sicheren Zusammenarbeit [mit Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) und Microsoft Teams, um zu erfahren, wie die externe Freigabe mit den allgemeinen Microsoft 365-Richtlinien für die Zusammenarbeit in Verbindung stehen.
+Lesen [Sie Set up secure collaboration with Microsoft 365 and Microsoft Teams,](/microsoft-365/solutions/setup-secure-collaboration-with-teams) um zu erfahren, wie die externe Freigabe mit der Microsoft 365 Zusammenarbeit verbunden ist.
 
 ## <a name="enable-sharing"></a>Freigabe aktivieren
 

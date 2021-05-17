@@ -27,9 +27,9 @@ Auf diese Weise können Benutzer ihre Tastaturen verwenden, um durch Text in der
 
 ## <a name="requirements"></a>Anforderungen
 
-Um die Audiowiedergabe der Sprachausgabe zu hören, aktivieren Sie die [Sprachausgabe-App](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) in Den Sprachausgabeeinstellungen auf Ihrem Windows 10-System.
+Um die Audiodaten der Sprachausgabe zu hören, müssen Sie die [Sprachausgabe-App](https://support.microsoft.com/windows/complete-guide-to-narrator-e4397a0d-ef4f-b386-d8ae-c172f109bdb1) in Ihren Sprachausgabe auf Ihrem Windows 10 aktivieren.
 
-![Aktivieren der Sprachausgabe](../media/content-understanding/narrator-settings.png)
+![Aktivieren Sprachausgabe](../media/content-understanding/narrator-settings.png)
 
 ## <a name="labeling-for-keyboard-users"></a>Bezeichnung für Tastaturbenutzer
 
@@ -47,19 +47,19 @@ Bei Tastaturbenutzern, die den Barrierefreiheitsmodus verwenden, können Sie die
 
 ## <a name="narration"></a>Erzählung
 
-Verwenden Sie für Sprachausgabebenutzer, die den Barrierefreiheitsmodus verwenden, dieselbe Tastaturnavigation, die für Tastaturbenutzer beschrieben wird, um das Beispieldokument im Viewer zu durchgehen.
+Wenn Sprachausgabe Barrierefreiheitsmodus verwenden, verwenden Sie dieselbe Tastaturnavigation, die für Tastaturbenutzer beschrieben wird, um das Beispieldokument im Viewer zu durchgehen.
 
-Während Sie durch die Beispieldokumente und Beschriftungszeichenfolgenwerte navigieren, gibt die Sprachausgabe dem Benutzer die folgenden Audioaufforderungen:
+Wenn Sie durch die Beispieldokumente und Beschriftungszeichenfolgenwerte navigieren, Sprachausgabe Benutzer die folgenden Audioaufforderungen erhalten:
 
-- Wenn Sie die Tastatur verwenden, um durch die Dokumentanzeige zu navigieren, gibt Sprachausgabeaudio die ausgewählte Zeichenfolge an.
-- Innerhalb einer ausgewählten Zeichenfolge wird jedes Zeichen in der Zeichenfolge durch Sprachausgabeaudio mit der linken oder rechten Pfeiltaste angezeigt, wenn Sie sie auswählen.
-- Wenn Sie eine Zeichenfolge auswählen, die beschriftet wurde, gibt die Sprachausgabe den Wert an und dann "beschriftet".  Wenn der Bezeichnungswert beispielsweise "Contoso" ist, wird "Costoso labeled" angegeben. 
-- Wenn Sie auf der Registerkarte Schulung eine Zeichenfolge in der Dokumentanzeige auswählen, die nur vorhergesagt wurde, wird der Wert von Sprachausgabeaudio und dann "vorhergesagt" angezeigt. Dies tritt auf, wenn die Schulung einen Wert in der Datei vorhersagt, der nicht mit dem vom Benutzer bezeichneten Wert übereinstimmen kann.
-- Wenn Sie auf der Registerkarte Schulung eine Zeichenfolge in der Dokumentanzeige auswählen, die beschriftet und vorhergesagt wurde, gibt Sprachausgabeaudio den Wert an und dann "beschriftet und vorhergesagt". Dies tritt auf, wenn die Schulung erfolgreich ist und eine Übereinstimmung zwischen einem vorhergesagten Wert und der Benutzerbezeichnung besteht.
+- Wenn Sie die Tastatur verwenden, um durch die Dokumentanzeige zu navigieren, Sprachausgabe audio die ausgewählte Zeichenfolge an.
+- Innerhalb einer ausgewählten Zeichenfolge Sprachausgabe audio jedes Zeichen in der Zeichenfolge angeben, während Sie sie mithilfe der PFEILTASTEn nach links oder rechts auswählen.
+- Wenn Sie eine Zeichenfolge auswählen, die beschriftet wurde, Sprachausgabe den Wert und dann "beschriftet" an.  Wenn der Bezeichnungswert beispielsweise "Contoso" ist, wird "Costoso labeled" angegeben. 
+- Wenn Sie auf der Registerkarte Schulung eine Zeichenfolge in der Dokumentanzeige auswählen, die nur vorhergesagt wurde, Sprachausgabe audio den Wert und dann "vorhergesagt". Dies tritt auf, wenn die Schulung einen Wert in der Datei vorhersagt, der nicht mit dem vom Benutzer bezeichneten Wert übereinstimmen kann.
+- Wenn Sie auf der Registerkarte Schulung eine Zeichenfolge in der Dokumentanzeige auswählen, die beschriftet und vorhergesagt wurde, gibt Sprachausgabe audio den Wert an, und dann "beschriftet und vorhergesagt". Dies tritt auf, wenn die Schulung erfolgreich ist und eine Übereinstimmung zwischen einem vorhergesagten Wert und der Benutzerbezeichnung besteht.
 
 
 
-Nachdem eine Zeichenfolge beschriftet oder eine Bezeichnung im Viewer entfernt wurde, warnt Sprachausgabeaudio Sie, die Änderungen vor dem Beenden zu speichern.
+Nachdem eine Zeichenfolge beschriftet oder eine Bezeichnung im Viewer entfernt wurde, warnt Sprachausgabe Audio, ihre Änderungen vor dem Beenden zu speichern.
 
 ## <a name="see-also"></a>Siehe auch
 

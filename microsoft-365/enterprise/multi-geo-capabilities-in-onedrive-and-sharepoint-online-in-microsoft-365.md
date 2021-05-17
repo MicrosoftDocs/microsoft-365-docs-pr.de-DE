@@ -27,7 +27,7 @@ ms.locfileid: "48995909"
 ---
 # <a name="multi-geo-capabilities-in-onedrive-and-sharepoint-online"></a>Multi-Geo-Funktionen in OneDrive und SharePoint Online
 
-Multi-Geo-Funktionen in OneDrive und SharePoint Online ermöglichen die Steuerung freigegebener Ressourcen wie SharePoint-Teamwebsites und Microsoft 365-Gruppen Postfächer, die im Rest in einem Land oder einer Region gespeichert sind.
+Multi-Geo-Funktionen in OneDrive und SharePoint Online ermöglichen die Steuerung freigegebener Ressourcen wie SharePoint-Teamwebsites und Microsoft 365-Gruppenpostfächer, die in einem Land oder einer Region gespeichert sind.
 
 Benutzer, Gruppenpostfächer und SharePoint-Sites haben Preferred Data Locations (PDLs), die den geografischen Ort für die verknüpften Daten angeben. Die personenbezogenen Daten von Benutzern (Exchange-Posteingang und OneDrive) können zusammen mit beliebigen Microsoft 365-Gruppen oder SharePoint-Sites, die sie erstellen, am angegebenen geografischen Ort gespeichert werden, um Datenaufbewahrungsanforderungen zu erfüllen. Sie können [verschiedene Administratoren für jeden geografischen Ort angeben](add-a-sharepoint-geo-admin.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Contoso-IT-Infrastruktur und geschäftliche Anforderungen
+title: Contoso IT-Infrastruktur und Geschäftsanforderungen
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -13,7 +13,7 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 ms.custom: ''
-description: Hier finden Sie Informationen zur grundlegenden Struktur der lokalen Contoso-IT-Infrastruktur und dazu, wie die geschäftlichen Anforderungen von Microsoft 365 für Unternehmen erfüllt werden.
+description: Grundlegende Informationen zur grundlegenden Struktur der lokalen Contoso-IT-Infrastruktur und dazu, wie die geschäftlichen Anforderungen des Unternehmens von unternehmen Microsoft 365 erfüllt werden.
 ms.openlocfilehash: 72d502b5078a1e572eeba27832550af52907e209
 ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
 ms.translationtype: MT
@@ -21,21 +21,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 12/02/2020
 ms.locfileid: "49558406"
 ---
-# <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso-IT-Infrastruktur und geschäftliche Anforderungen
+# <a name="contoso-it-infrastructure-and-business-needs"></a>Contoso IT-Infrastruktur und Geschäftsanforderungen
 
-Contoso wechselt von einer lokalen, zentralisierten IT-Infrastruktur zu einem Cloud-inclusive-Setup, das Cloud-basierte persönliche Produktivitäts Arbeitslasten und-Anwendungen enthält.
+Contoso wandelt von einer lokalen, zentralisierten IT-Infrastruktur zu einem cloud-inklusiven Setup um, das cloudbasierte Arbeitsauslastungen und Anwendungen für persönliche Produktivität umfasst.
 
 ## <a name="existing-contoso-it-infrastructure"></a>Vorhandene Contoso-IT-Infrastruktur
 
 Contoso nutzt eine weitestgehend zentrale lokale IT-Infrastruktur mit Anwendungsrechenzentren in der Pariser Zentrale.
 
-Hier finden Sie die Hauptniederlassung mit Anwendungsdaten Centern, eine DMZ und das Internet.
+Hier ist die Zentrale mit Anwendungsdatencentern, einer DMZ und dem Internet.
 
 ![Vorhandene Contoso-IT-Infrastruktur](../media/contoso-infra-needs/contoso-infra-needs-fig1.png)
 
 In den lokalen Anwendungsrechenzentren wird Folgendes gehostet: 
 
-- Benutzerdefinierte Branchenanwendungen, die SQL Server und andere Linux-Datenbanken verwenden.
+- Benutzerdefinierte Geschäftsanwendungen, die SQL Server und andere Linux-Datenbanken verwenden.
 - Eine Reihe von älteren SharePoint-Servern.
 - Server auf Organisations- und Teamebene für das Speichern von Dateien.
 
@@ -43,24 +43,24 @@ Darüber hinaus unterstützt jedes regionales Hub-Büro eine Reihe von Servern m
 
 Die Durchsuchbarkeit über die Anwendungen und Daten dieser separaten Rechenzentren an mehreren geografischen Standorten hinweg bleibt eine Herausforderung.
 
-In der DMZ "Contoso Headquarters" bieten verschiedene Servergruppen Folgendes:
+In der Contoso-Zentrale DMZ bieten verschiedene Servergruppen:
 
-- Hosten für die öffentliche Contoso-Website, von der Kunden Produkte, Teile, Lieferungen und Dienste bestellen können.
+- Hosting für die öffentliche Contoso-Website, auf der Kunden Produkte, Teile, Lieferungen und Dienste bestellen können.
 - Hosting für das Contoso-Partnerextranet für die Kommunikation und Zusammenarbeit mit Partnern.
 - VPN-basierter Remotezugriff (virtuelles privates Netzwerk) auf das Contoso-Intranet und Webproxyfunktion für Mitarbeiter in der Pariser Zentrale.
 
 ## <a name="contoso-business-needs"></a>Contoso-Geschäftsanforderungen
 
-Die geschäftlichen Anforderungen von Contoso unterliegen fünf Hauptkategorien:
+Die Unternehmensanforderungen von Contoso sind in fünf Hauptkategorien unterteilt:
 
 **Produktivität**
 
 - Vereinfachen der Zusammenarbeit
 
-  Ersetzen Sie die e-Mail-und Dateifreigabe basierte Zusammenarbeit durch ein Online Modell, das Echtzeitänderungen an Dokumenten, einfachere Onlinebesprechungen und aufgezeichnete Unterhaltungsthemen ermöglicht.
+  Ersetzen Sie die E-Mail- und Dateifreigabe-basierte Zusammenarbeit durch ein Onlinemodell, das Echtzeitänderungen an Dokumenten, einfachere Onlinebesprechungen und aufgezeichnete Unterhaltungsthreads ermöglicht.
 - Mehr Produktivität für Telearbeiter und Mobilmitarbeiter
 
-  Wenn viele Mitarbeiter von zu Hause oder im Feld arbeiten, ersetzen Sie die Engpass-VPN-Lösung durch den leistungsfähigen Zugriff auf contoso-Daten und-Ressourcen in der Cloud.
+  Da viele Mitarbeiter von zu Hause oder in der Umgebung arbeiten, ersetzen Sie die eng engpässe VPN-Lösung durch einen performanten Zugriff auf Contoso-Daten und -Ressourcen in der Cloud.
 - Mehr Kreativität und Innovation
 
   Nutzen Sie die Vorteile der neuesten visuellen Lern- und Ideenfindungsmethoden, einschließlich Freihand und 3D-Visualisierung.
@@ -69,7 +69,7 @@ Die geschäftlichen Anforderungen von Contoso unterliegen fünf Hauptkategorien:
 
 - Identitäts- und Zugriffsverwaltung
 
-  Erzwingen Sie mehrstufige und andere Formen der Authentifizierung, und schützen Sie die Anmeldeinformationen von Benutzer-und Administratorkonten.
+  Erzwingen Sie mehrstufige und andere Authentifizierungsmethoden, und schützen Sie Die Anmeldeinformationen für Benutzer- und Administratorkonten.
 
 - Bedrohungsschutz
 
@@ -81,63 +81,63 @@ Die geschäftlichen Anforderungen von Contoso unterliegen fünf Hauptkategorien:
 
 - Sicherheitsverwaltung
 
-  Überwachen der Sicherheitsposition und erkennen und reagieren auf Bedrohungen in Echtzeit.
+  Überwachen Sie die Sicherheitslage, erkennen und reagieren Sie auf Bedrohungen in Echtzeit.
 
 **Remote- und Mobilzugriff und Geschäftspartner**
 
-- Verbessern der Sicherheit für Remote-und mobile Mitarbeiter
+- Verbessern der Sicherheit für Remote- und mobile Mitarbeiter
 
-  Implementieren Sie Ihr eigenes Gerät (BYOD) und die unternehmenseigene Geräteverwaltung, um sicherzustellen, dass ein geschützter Zugriff, ein korrektes Anwendungsverhalten und Datenschutz für Unternehmen gewährleistet ist.
+  Implementieren Sie bring your own device (BYOD) and company-owned device management, um sicheren Zugriff, korrektes Anwendungsverhalten und Unternehmensdatenschutz sicherzustellen.
 
 - Verkleinern der Remotezugriffsinfrastruktur für Mitarbeiter
 
-  Reduzieren Sie Wartungs-und Supportkosten und verbessern Sie die Leistung für die Remotezugriffslösung durch Verschieben häufig abgerufener Ressourcen in der Cloud.
+  Reduzieren Sie Wartungs- und Supportkosten, und verbessern Sie die Leistung der Remotezugriffslösung, indem Sie häufig verwendete Ressourcen in die Cloud verschieben.
 
-- Bereitstellen besserer Konnektivität und geringerer Overhead für Business-to-Susi-Transaktionen (B2B)
+- Bessere Konnektivität und geringerer Aufwand für Business-to-Susiness (B2B)-Transaktionen
 
-  Ersetzen Sie ein alterndes und kostspieliges Partner Extranet durch eine Cloud-basierte Lösung, die die Verbundauthentifizierung verwendet.
+  Ersetzen Sie ein veraltetes und teures Partner-Extranet durch eine cloudbasierte Lösung, die die Verbundauthentifizierung verwendet.
 
 **Compliance**
 
 - Einhalten von regionalen gesetzlichen Vorschriften
 
-  Stellen Sie sicher, dass die Branchen-und regionalen Bestimmungen für Datenspeicherung, Verschlüsselung, Datenschutz und personenbezogene Daten, wie etwa die allgemeine Datenschutzverordnung (dsgvo) für die Europäische Union, eingehaltenwerden.
+  Sicherstellen der Einhaltung der branchen- und regionalen Vorschriften für Datenspeicherung, Verschlüsselung, Datenschutz und personenbezogene Daten, wie z. B. die DSGVO für die Europäische Union.
 
 **Verwaltung**
 
-- Weniger IT-Aufwand für die Verwaltung von Software, die auf Client-PCs und Geräten läuft
+- Geringerer IT-Aufwand für die Verwaltung von Software, die auf Client-PCs und -Geräten ausgeführt wird
 
-  Automatisieren der Installation von Updates für das Windows-Betriebssystem und Microsoft 365-Apps für Unternehmen in der gesamten Organisation.
+  Automatisieren Sie die Installation von Updates Windows Betriebssystem und Microsoft 365 Apps for Enterprise in der gesamten Organisation.
 
-## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>Zuordnen von Contoso-Geschäftsanforderungen zu Microsoft 365 für Unternehmen
+## <a name="mapping-contoso-business-needs-to-microsoft-365-for-enterprise"></a>Zuordnung von Contoso-Unternehmen muss Microsoft 365 unternehmen
 
-Die IT-Abteilung von Contoso hat vor der Bereitstellung die folgende Zuordnung der geschäftlichen Anforderungen zu Microsoft 365 E5-Funktionen ermittelt:
+Die Contoso-IT-Abteilung hat die folgende Zuordnung der Geschäftsanforderungen für Microsoft 365 E5 vor der Bereitstellung bestimmt:
 
 
-| Kategorie | Geschäftsanforderung | Microsoft 365 für Enterprise-Produkte oder-Features |
+| Kategorie | Geschäftsanforderung | Microsoft 365 für Enterprise-Produkte oder -Features |
 |:-------|:-----|:-----|
 | Produktivität |  |  |
 |  | Vereinfachen der Zusammenarbeit | Microsoft Teams, SharePoint, OneDrive |
 |  | Mehr Produktivität für Telearbeiter und Mobilmitarbeiter | Microsoft 365-Arbeitslasten und cloudbasierte Daten |
 |  | Mehr Kreativität und Innovation | Windows Ink, Cortana at Work, PowerPoint |
 | Sicherheit |  |  |
-|  | Identitäts- und Zugriffsverwaltung | Dedizierte globale Administratorkonten mit Azure AD Multi-Factor Authentication (MFA) und Azure AD privilegierten Identitätsverwaltung (PIM) <BR> Mehrstufige Authentifizierung (MFA) für alle Benutzerkonten <BR> Bedingter Zugriff <BR> Windows Hello <BR> Windows Credential Guard |
-|  | Bedrohungsschutz | Advanced Threat Analytics <BR> Windows Defender <BR> Verteidiger für Office 365 <BR> Microsoft Defender für Office 365 <BR> Untersuchung und Antwort von Microsoft 365 Threat <BR> |
+|  | Identitäts- und Zugriffsverwaltung | Dedizierte globale Administratorkonten mit Azure AD Multi-Factor Authentication (MFA) und Azure AD Privileged Identity Management (PIM) <BR> Mehrstufige Authentifizierung (MFA) für alle Benutzerkonten <BR> Bedingter Zugriff <BR> Windows Hello <BR> Windows Credential Guard |
+|  | Bedrohungsschutz | Advanced Threat Analytics <BR> Windows Defender <BR> Microsoft Defender für Office 365 <BR> Microsoft Defender für Office 365 <BR> Microsoft 365 und Reaktion auf Bedrohungen <BR> |
 |  | Schutz von Daten | Azure Information Protection <BR> Verhinderung von Datenverlust (Data Loss Prevention, DLP) <BR> Windows Information Protection (WIP) <BR> Microsoft Cloud App Security <BR> Microsoft Intune |
 |  | Sicherheitsverwaltung | Azure Defender  <BR> Windows Defender Security Center |
 | Remote- und Mobilzugriff und Geschäftspartner |  |  |
 |  | Mehr Sicherheit für Telearbeiter und Mobilmitarbeiter | Microsoft Intune |
 |  | Verkleinern der Remotezugriffsinfrastruktur für Mitarbeiter | Microsoft 365-Arbeitslasten und cloudbasierte Daten |
-|  | Verbessern der Konnektivität und des niedrigeren Overheads für B2B-Transaktionen | Verbundauthentifizierung und cloudbasierte Ressourcen |
+|  | Verbessern der Konnektivität und geringerer Aufwand für B2B-Transaktionen | Verbundauthentifizierung und cloudbasierte Ressourcen |
 | Compliance |  |  |
-|  | Einhalten von regionalen gesetzlichen Vorschriften | Dsgvo-Features in Microsoft 365 |
+|  | Einhalten von regionalen gesetzlichen Vorschriften | DSGVO-Features in Microsoft 365 |
 | Verwaltung |  |  |
-|  | Weniger IT-Aufwand für die Installation von Clientupdates | Windows 10 Enterprise-Updates <BR> Microsoft 365 Apps for Enterprise-Updates |
+|  | Geringerer IT-Aufwand für die Installation von Clientupdates | Windows 10 Enterprise-Updates <BR> Microsoft 365 Apps for Enterprise-Updates |
 ||||
 
 ## <a name="next-step"></a>Nächster Schritt
 
-Erfahren Sie mehr über das [lokale](contoso-networking.md) Contoso Corporation-Netzwerk und wie es für den Zugriff und die Wartezeit auf Cloud-basierte Microsoft 365-Ressourcen optimiert wurde.
+Erfahren Sie mehr über das lokale Netzwerk der Contoso [Corporation](contoso-networking.md) und darüber, wie es für den Zugriff und die Wartezeit auf Microsoft 365 cloudbasierten Ressourcen optimiert wurde.
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -32,19 +32,19 @@ Für jede Prüfung berichtet das Tool eines von drei möglichen Ergebnissen:
 
 ## <a name="obtain-the-checker"></a>Abrufen der Überprüfung
 
-Laden Sie die ZIP-Datei von https://aka.ms/mmddratoolv0 herunter.
+Laden Sie die .zip aus https://aka.ms/mmddratoolv0 herunter.
 
 > [!NOTE]
 > Der Benutzer, der das Tool ausgeführt hat, muss über lokale Administratorrechte auf dem Gerät verfügen, auf dem es ausgeführt wird.
 
  Führen Sie dann das Tool aus, indem Sie die folgenden Schritte ausführen:
 
-1. Kopieren Sie die heruntergeladene ZIP-Datei auf jedes Gerät, das Sie überprüfen möchten.
+1. Kopieren Sie die heruntergeladene .zip auf jedes Gerät, das Sie überprüfen möchten.
 2. Extrahieren Sie alle Dateien im komprimierten Download.
 3. Führen Sie **Microsoft.MMD.DeviceReadinessAssessmentTool.exe** aus.
 4. Wenn die Eingabeaufforderung für die Benutzerzugriffssteuerung angezeigt wird, wählen Sie **Ja aus.** Das Tool wird im Standardbrowser ausgeführt und geöffnet.
 
-Sie können das ZIP-Archiv auch an einen  freigegebenen Speicherort herunterladen und extrahieren, aufMicrosoft.MMD.DeviceReadinessAssessmentTool.exeGeräte zugreifen und es dann lokal ausführen.
+Sie können auch das .zip an einen freigegebenen Speicherort  herunterladen und extrahieren, aufMicrosoft.MMD.DeviceReadinessAssessmentTool.exeGeräte zugreifen und es dann lokal ausführen.
 
 
 ## <a name="checks"></a>Prüfungen

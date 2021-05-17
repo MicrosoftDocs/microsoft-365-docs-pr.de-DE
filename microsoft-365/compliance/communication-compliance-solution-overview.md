@@ -1,6 +1,6 @@
 ---
 title: Kommunikationskonformität in Microsoft 365
-description: Erfahren Sie, wie Sie die Kommunikationskonformität in Microsoft 365 konfigurieren.
+description: Erfahren Sie, wie Sie die Kommunikationskonformität in Microsoft 365.
 keywords: Microsoft 365, Insiderrisiko, Compliance
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -25,7 +25,7 @@ ms.locfileid: "50423223"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Kommunikationskonformität in Microsoft 365
 
-Der Schutz vertraulicher Informationen sowie das Erkennen und Reagieren auf Belästigungsvorfälle am Arbeitsplatz ist ein wichtiger Bestandteil der Einhaltung interner Richtlinien und Standards. Die Kommunikationskonformität in Microsoft 365 trägt dazu bei, diese Risiken zu minimieren, indem Sie E-Mail- und Microsoft Teams-Kommunikation schnell erkennen, erfassen und Abhilfemaßnahmen ergreifen können. Dazu gehören unangemessene Kommunikationen, die Anstößigkeit, Bedrohungen sowie Belästigungen und Kommunikationen enthalten, die vertrauliche Informationen innerhalb und außerhalb Ihrer Organisation freigeben.
+Der Schutz vertraulicher Informationen sowie das Erkennen und Reagieren auf Belästigungsvorfälle am Arbeitsplatz ist ein wichtiger Bestandteil der Einhaltung interner Richtlinien und Standards. Die Kommunikationskonformität in Microsoft 365 trägt dazu bei, diese Risiken zu minimieren, indem Sie schnell Maßnahmen zur Erkennung, Erfassung und Behebung von E-Mails und Microsoft Teams ergreifen. Dazu gehören unangemessene Kommunikationen, die Anstößigkeit, Bedrohungen sowie Belästigungen und Kommunikationen enthalten, die vertrauliche Informationen innerhalb und außerhalb Ihrer Organisation freigeben.
 
 ## <a name="configure-communication-compliance-for-microsoft-365"></a>Konfigurieren der Kommunikationskonformität für Microsoft 365
 

@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Microsoft 365-Benutzerkontenkennwörtern
+title: Verwalten Microsoft 365 Benutzerkontenkennwörtern
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -21,7 +21,7 @@ search.appverid:
 - MED150
 - BCS160
 ms.assetid: 98ca5b3f-f720-4d8e-91be-fe656548a25a
-description: Erfahren Sie mehr über die Verwaltung von Microsoft 365-Benutzerkontenkennwörtern.
+description: Erfahren Sie mehr über die Verwaltung Microsoft 365 Benutzerkontenkennwörtern.
 ms.openlocfilehash: 2062da49310121ec18f7ce21f523531f10d6df9b
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -29,15 +29,15 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905092"
 ---
-# <a name="manage-microsoft-365-user-account-passwords"></a>Verwalten von Microsoft 365-Benutzerkontenkennwörtern
+# <a name="manage-microsoft-365-user-account-passwords"></a>Verwalten Microsoft 365 Benutzerkontenkennwörtern
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Sie können Kennwörter für Microsoft 365-Benutzerkonten abhängig von Ihrer Identitätskonfiguration auf verschiedene Weise verwalten. Sie können Benutzerkonten im [Microsoft 365 Admin Center,](../admin/add-users/index.yml)in Active Directory Domain Services (AD DS) oder im Azure Active Directory (Azure AD) Admin Center verwalten.
+Sie können Microsoft 365 Benutzerkontenkennwörtern abhängig von Ihrer Identitätskonfiguration auf verschiedene Weise verwalten. Sie können Benutzerkonten im [Microsoft 365 Admin Center,](../admin/add-users/index.yml)in Active Directory Domain Services (AD DS) oder im Azure Active Directory (Azure AD) Admin Center verwalten.
 
 ## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Planen, wo und wie Sie Ihre Benutzerkontenkennwörter verwalten
 
-Wo und wie Sie Ihre Benutzerkonten verwalten können, hängt vom Identitätsmodell ab, das Sie für Microsoft 365 verwenden möchten. Die beiden Modelle sind nur cloud- und hybrid.
+Wo und wie Sie Ihre Benutzerkonten verwalten können, hängt vom Identitätsmodell ab, das Sie für Ihre Microsoft 365. Die beiden Modelle sind nur cloud- und hybrid.
   
 ### <a name="cloud-only"></a>Rein cloudbasiert
 

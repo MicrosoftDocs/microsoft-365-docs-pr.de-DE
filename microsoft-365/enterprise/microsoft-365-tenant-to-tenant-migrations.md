@@ -1,5 +1,5 @@
 ---
-title: Migrationen von Mandanten zu Mandanten in Microsoft 365
+title: Microsoft 365 von Mandanten-zu-Mandanten-Migrationen
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -17,7 +17,7 @@ search.appverid:
 ms.assetid: eb45fd8b-1d5d-4b0c-9c5a-479dbb176e7d
 f1.keywords:
 - NOCSH
-description: Erfahren Sie, wie Sie Microsoft 365-Mandanten migrieren.
+description: Erfahren Sie, wie Sie Microsoft 365 migrieren.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: f6e8277a7ca768db3a4a4acd2488859b7764a40c
 ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
@@ -26,11 +26,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/15/2021
 ms.locfileid: "50819714"
 ---
-# <a name="microsoft-365-tenant-to-tenant-migrations"></a>Migrationen von Mandanten zu Mandanten in Microsoft 365
+# <a name="microsoft-365-tenant-to-tenant-migrations"></a>Microsoft 365 von Mandanten-zu-Mandanten-Migrationen
 
-Es gibt verschiedene Architekturansätze für Fusionen, Übernahmen, Abgänge und andere Szenarien, die Sie dazu führen können, einen vorhandenen Microsoft 365-Mandanten zu einem neuen Mandanten zu migrieren. Die meisten Kunden arbeiten mit Microsoft Consulting Services oder einem Microsoft-Partner zusammen, um Mandanten zu migrieren, einschließlich der Verwendung von Drittanbietertools zum Migrieren von Inhalten. 
+Es gibt verschiedene Architekturansätze für Fusionen, Übernahmen, Abgänge und andere Szenarien, die Sie dazu führen können, einen vorhandenen Microsoft 365 zu einem neuen Mandanten zu migrieren. Die meisten Kunden arbeiten mit Microsoft Consulting Services oder einem Microsoft-Partner zusammen, um Mandanten zu migrieren, einschließlich der Verwendung von Drittanbietertools zum Migrieren von Inhalten. 
 
-Verwenden Sie das Architekturmodell für die [Mandanten-zu-Mandant-Migration,](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) um zu verstehen, wie Sie Migrationen zwischen Mandanten und Mandanten von Microsoft 365 und die Schritte einer Migration planen.
+Verwenden Sie [das Mandanten-zu-Mandant-Migrationsarchitekturmodell,](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) um zu verstehen, wie Sie Microsoft 365 Mandantenmigrationen und die Schritte einer Migration planen.
 
 [![Mandanten-zu-Mandant-Migrationsmodell](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 
 

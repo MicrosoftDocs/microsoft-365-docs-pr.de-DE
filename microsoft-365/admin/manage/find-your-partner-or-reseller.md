@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: 'Erfahren Sie, wie Sie einen neuen Microsoft 365-Partner finden oder Kontaktinformationen für einen Partner erhalten, mit dem Sie in der Vergangenheit zusammengearbeitet haben. '
+description: 'Erfahren Sie, wie Sie einen Microsoft 365 partner finden oder Kontaktinformationen für einen Partner erhalten, mit dem Sie in der Vergangenheit zusammengearbeitet haben. '
 ms.openlocfilehash: 189eda83f3eca957e6f9fa720e2f6ccdd07db171
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -32,13 +32,13 @@ ms.locfileid: "51580942"
 ---
 # <a name="find-your-partner-or-reseller"></a>Suchen nach Ihrem Partner oder Händler
 
-Als Administrator können Sie mit einem Partner zusammenarbeiten, um Microsoft 365-Abonnements über ein Microsoft Open Volume Licensing-Programm zu erwerben, zu aktivieren und zu verlängern. 
+Als Administrator können Sie mit einem Partner zusammenarbeiten, um abonnements über ein Microsoft Open Volume Licensing-Programm zu erwerben, Microsoft 365 zu aktivieren und zu verlängern. 
   
  **Sind Sie nicht sicher, ob die Open-Volumenlizenzierung für Sie geeignet ist?** Sehen Sie sich die [Übersicht über Microsoft Open-Programme](https://go.microsoft.com/fwlink/p/?LinkId=613298) an.
   
 ## <a name="find-a-new-partner-or-reseller"></a>Suchen eines neuen Partners oder Händlers
 
-Wenn Sie bereit sind, Microsoft 365 über Open Volume Licensing zu kaufen oder zu verlängern, oder Wenn Sie einfach weitere Informationen zum Arbeiten mit einem Partner wünschen, wählen Sie unten eine Option aus. 
+Wenn Sie bereit sind, Microsoft 365 Volumenlizenzierung zu erwerben oder zu verlängern, oder wenn Sie einfach weitere Informationen zum Arbeiten mit einem Partner wünschen, wählen Sie unten eine Option aus. 
   
 - [Suchen nach einem Partner mithilfe von Microsoft PinPoint](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     

@@ -67,7 +67,7 @@ Die Liveantwort nutzt die Defender for Endpoint-Sensorregistrierung beim WNS-Die
 2. WpnService (Windows Push Notifications System Service) ist nicht deaktiviert.
 
 Lesen Sie die folgenden Artikel, um das Verhalten und die Anforderungen des WpnService-Diensts vollständig zu verstehen:
-- [Übersicht über windows push Notification Services (WNS)](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
-- [Unternehmensfirewall und Proxykonfigurationen zur Unterstützung des WNS-Datenverkehrs](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [Windows Übersicht Notification Services (WNS)](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
+- [Enterprise Firewall- und Proxykonfigurationen zur Unterstützung des WNS-Datenverkehrs](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
 - [Öffentliche IP-Bereiche des Microsoft Push Notifications Service (MPNS)](https://www.microsoft.com/en-us/download/details.aspx?id=44535)
 

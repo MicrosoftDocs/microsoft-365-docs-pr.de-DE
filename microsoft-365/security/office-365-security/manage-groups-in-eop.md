@@ -29,7 +29,7 @@ ms.locfileid: "51599569"
 **Gilt für**
 -  [Exchange Online Protection eigenständig](exchange-online-protection-overview.md)
 
-In eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer können Sie die folgenden Gruppentypen erstellen, ändern und entfernen:
+In eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online können Sie die folgenden Gruppentypen erstellen, ändern und entfernen:
 
 - **Verteilergruppen:** Eine Sammlung von E-Mail-Benutzern oder anderen Verteilergruppen. Beispielsweise Teams oder andere Ad-hoc-Gruppen, die E-Mails in einem europäischen Bereich empfangen oder senden müssen. Verteilergruppen dienen ausschließlich der Verteilung von E-Mail-Nachrichten und sind keine Sicherheitsprinzipale (ihnen können keine Berechtigungen zugewiesen werden).
 
@@ -45,20 +45,20 @@ Sie können Gruppen im Exchange Admin Center (EAC) und in der eigenständigen EO
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Informationen zum Öffnen des Exchange Admin Centers finden Sie unter [Exchange Admin Center im eigenständigen EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
+- Informationen zum Öffnen Exchange Admin Center finden Sie [unter Exchange Admin Center im eigenständigen EOP](exchange-admin-center-in-exchange-online-protection-eop.md).
 
 - Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Wenn Sie Gruppen in eigenständigen EOP PowerShell verwalten, kann es zu Drosselungsaktionen führen. Die PowerShell-Verfahren in diesem Artikel verwenden eine Batchverarbeitungsmethode, die zu einer Übertragungsverzögerung von einigen Minuten führt, bevor die Ergebnisse der Befehle angezeigt werden.
 
-- Bevor Sie die Verfahren in diesem Artikel tun können, müssen Ihnen in Exchange Online Protection die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die **Rolle Verteilergruppen,** die standardmäßig  den Rollengruppen **Organisationsverwaltung** und Empfängerverwaltung zugewiesen ist. Weitere Informationen finden Sie unter [Permissions in standalone EOP](feature-permissions-in-eop.md) und [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
+- Bevor Sie die Verfahren in diesem Artikel Exchange Online Protection, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die **Rolle Verteilergruppen,** die standardmäßig  den Rollengruppen **Organisationsverwaltung** und Empfängerverwaltung zugewiesen ist. Weitere Informationen finden Sie unter [Permissions in standalone EOP](feature-permissions-in-eop.md) und [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Informationen zu Tastenkombinationen, die für die Verfahren in diesem Artikel gelten können, finden Sie unter [Tastenkombinationen für](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)das Exchange Admin Center in Exchange Online .
+- Informationen zu Tastenkombinationen, die für die Verfahren in diesem Artikel gelten können, finden Sie unter Tastenkombinationen für das [Exchange Admin Center in Exchange Online](/Exchange/accessibility/keyboard-shortcuts-in-admin-center).
 
 > [!TIP]
 > Liegt ein Problem vor? Bitten Sie im [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)-Forum um Hilfe.
 
-## <a name="use-the-exchange-admin-center-to-manage-distribution-groups"></a>Verwalten von Verteilergruppen mithilfe des Exchange Admin Centers
+## <a name="use-the-exchange-admin-center-to-manage-distribution-groups"></a>Verwalten von Verteilergruppen mithilfe Exchange Admin Center
 
 ### <a name="use-the-eac-to-create-groups"></a>Erstellen von Gruppen mithilfe der EAC
 
@@ -70,7 +70,7 @@ Sie können Gruppen im Exchange Admin Center (EAC) und in der eigenständigen EO
 
    - **E-Mail-aktivierte Sicherheitsgruppe**
 
-3. Konfigurieren Sie auf der neuen Gruppenseite, die geöffnet wird, die folgenden Einstellungen. Mit einem gekennzeichnete <sup>\*</sup> Einstellungen sind erforderlich.
+3. Konfigurieren Sie auf der neuen Gruppenseite, die geöffnet wird, die folgenden Einstellungen. Einstellungen, die mit einem <sup>\*</sup> gekennzeichnet sind, sind erforderlich.
 
    - <sup>\*</sup>**Anzeigename**: Dieser Name wird im Adressbuch Ihrer Organisation, in der Zeile An: angezeigt, wenn E-Mails an diese Gruppe gesendet werden, und in der Liste Gruppen in der EAC.  Der Anzeigename ist erforderlich, muss eindeutig sein und benutzerfreundlich sein, damit die Benutzer erkennen, was er ist.
 

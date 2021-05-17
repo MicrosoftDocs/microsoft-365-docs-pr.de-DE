@@ -65,7 +65,7 @@ Sehen Sie sich dieses Video an, um eine Übersicht Microsoft 365 Unternehmensein
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und jene, die neu bei Microsoft 365 sind](../business-video/index.yml), an.
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](../business-video/index.yml) an.
 
   
 ### <a name="1-set-up-microsoft-365-for-business-admin"></a>1: Einrichten Microsoft 365 business (Admin)

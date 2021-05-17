@@ -28,12 +28,12 @@ ms.locfileid: "51599983"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Wenn Nachrichten nicht über Connectors von Ihrer Organisation an Ihre lokalen oder Partner-E-Mail-Server gesendet werden können, werden die Nachrichten in Microsoft 365 in die Warteschlange eingereiht. Häufige Beispiele, die diese Bedingung verursachen, sind:
+Wenn Nachrichten nicht über Connectors von Ihrer Organisation an Ihre lokalen oder Partner-E-Mail-Server gesendet werden können, werden die Nachrichten in der Warteschlange Microsoft 365. Häufige Beispiele, die diese Bedingung verursachen, sind:
 
 - Der Connector ist falsch konfiguriert.
 - In Ihrer lokalen Umgebung wurden Netzwerk- oder Firewalländerungen vorgenommen.
 
-Microsoft 365 wird weiterhin 24 Stunden lang die Zustellung wiederholen. Nach 24 Stunden laufen die Nachrichten ab und werden in Unzustellbarkeitsberichten (auch als Unzustellbarkeitsberichte oder Unzustellbarkeitsnachrichten bekannt) an die Absender zurückgegeben.
+Microsoft 365 versuchen weiterhin 24 Stunden, die Zustellung zu wiederholen. Nach 24 Stunden laufen die Nachrichten ab und werden in Unzustellbarkeitsberichten (auch als Unzustellbarkeitsberichte oder Unzustellbarkeitsnachrichten bekannt) an die Absender zurückgegeben.
 
 Wenn das E-Mail-Volume in der Warteschlange den vordefinierten Schwellenwert überschreitet (der Standardwert ist 200 Nachrichten), sind die Informationen an den folgenden Speicherorten verfügbar:
 

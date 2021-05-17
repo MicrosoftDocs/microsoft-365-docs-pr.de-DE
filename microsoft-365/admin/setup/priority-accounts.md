@@ -22,18 +22,18 @@ ms.locfileid: "51632180"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Verwalten und Überwachen von Prioritätskonten
 
-In jeder Microsoft 365-Organisation gibt es wichtige Personen, z. B. Führungskräfte, Führungskräfte, Manager oder andere Benutzer, die Zugriff auf vertrauliche, proprietäre oder informationen mit hoher Priorität haben.
+In jeder Microsoft 365 gibt es wichtige Personen, z. B. Führungskräfte, Führungskräfte, Manager oder andere Benutzer, die Zugriff auf vertrauliche, proprietäre oder informationen mit hoher Priorität haben.
 
 Um Ihre Organisation beim Schutz dieser Konten zu unterstützen, können Sie nun bestimmte Benutzer als Prioritätskonten festlegen und app-spezifische Features nutzen, die ihnen zusätzlichen Schutz bieten. In Zukunft werden mehr Apps und Features Prioritätskonten unterstützen, und zu Beginn haben wir zwei Funktionen **angekündigt:** Den Schutz von Prioritätskonten und die Premium-Nachrichtenflussüberwachung. 
 
-- **Prioritätskontoschutz** – Microsoft Defender für Office 365 (früher Office 365 Advanced Threat Protection) unterstützt Prioritätskonten als Tags, die in Filtern in Warnungen, Berichten und Untersuchungen verwendet werden können. Weitere Informationen finden Sie unter [Benutzertags in Microsoft Defender für Office 365](../../security/office-365-security/user-tags.md).
+- **Prioritätskontoschutz** – Microsoft Defender for Office 365 (vor Office 365 Advanced Threat Protection) unterstützt Prioritätskonten als Tags, die in Filtern in Warnungen, Berichten und Untersuchungen verwendet werden können. Weitere Informationen finden Sie unter [User tags in Microsoft Defender for Office 365](../../security/office-365-security/user-tags.md).
 
   Eine natürliche Frage lautet: "Sind nicht alle Benutzer eine Priorität? Warum sollten nicht alle Benutzer als Prioritätskonten bestimmt werden?" Ja, alle Benutzer haben Priorität, aber der Schutz des Prioritätskontos bietet die folgenden zusätzlichen Vorteile:
 
   - **Zusätzliche Heuristiken:** Unsere Analyse des Nachrichtenflusses in den Microsoft-Rechenzentren weist darauf hin, dass sich die Nachrichtenflussmuster für Führungskräfte des Unternehmens von den durchschnittlichen Mitarbeitern unterscheiden. Der Schutz vor prioritätsmäßigen Konten bietet zusätzliche Heuristiken, die speziell auf Führungskräfte des Unternehmens zugeschnitten sind, die keinem regulären Mitarbeiter nützen würden.
   - **Zusätzliche Sichtbarkeit in der Berichterstellung:** Tatsächlich sind Informationen für alle Benutzer (oder alle betroffenen Benutzer) bereits in Warnungen, Berichten und Untersuchungen verfügbar. Mit dem Prioritätskontentag als Filter können Sie ihre Untersuchungen gezielt verwenden.
 
-- **Premium-Nachrichtenflussüberwachung** – Ein fehlerfreier Nachrichtenfluss kann für den Geschäftserfolg von entscheidender Bedeutung sein, und Verzögerungen oder Fehler bei der Zustellung können sich negativ auf das Unternehmen auswirken. Sie können einen Schwellenwert für fehlgeschlagene oder verzögerte E-Mails auswählen, Benachrichtigungen empfangen, wenn dieser Schwellenwert überschritten wird, und einen Bericht über E-Mail-Probleme für Prioritätskonten anzeigen. Weitere Informationen finden Sie unter [E-Mail-Probleme für Prioritätskontenbericht in der modernen EAC.](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
+- **Premium E-Mail Flow Überwachung** – Ein fehlerfreier E-Mail-Fluss kann für den Geschäftserfolg von entscheidender Bedeutung sein, und Übermittlungsverzögerungen oder -fehler können sich negativ auf das Unternehmen auswirken. Sie können einen Schwellenwert für fehlgeschlagene oder verzögerte E-Mails auswählen, Benachrichtigungen empfangen, wenn dieser Schwellenwert überschritten wird, und einen Bericht über E-Mail-Probleme für Prioritätskonten anzeigen. Weitere Informationen finden Sie unter [E-Mail-Probleme für Prioritätskontenbericht in der modernen EAC.](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
 
 Bewährte Sicherheitsmethoden für Prioritätskonten finden Sie unter [Sicherheitsempfehlungen für Prioritätskonten](../../security/office-365-security/security-recommendations-for-priority-accounts.md).
 
@@ -41,11 +41,11 @@ Bewährte Sicherheitsmethoden für Prioritätskonten finden Sie unter [Sicherhei
 
 Die **in diesem** Thema beschriebene Prioritätskontoschutzfunktion ist nur für Organisationen verfügbar, die die folgenden Anforderungen erfüllen:
 
-- Microsoft Defender für Office 365 Plan 2, einschließlich derer mit Office 365 E3, Office 365 E5, Microsoft 365 E5 oder Microsoft 365 E5 Security.
+- Microsoft Defender für Office 365 Plan 2, einschließlich Office 365 E3, Office 365 E5, Microsoft 365 E5 oder Microsoft 365 E5 Security.
 
-Die in diesem Thema beschriebene Premium Mail **Flow Monitoring-Funktion** ist nur für Organisationen verfügbar, die die folgenden Anforderungen erfüllen:
+Das **Premium E Flow-Überwachungsfeature,** das in diesem Thema beschrieben wird, steht nur Organisationen zur Verfügung, die die folgenden Anforderungen erfüllen:
 
-- Ihre Organisation muss eine Lizenzanzahl von mindestens 10.000 aus einem der folgenden Produkte oder einer Kombination der folgenden Produkte haben: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. Beispielsweise kann Ihre Organisation über 3000 Office 365 E3-Lizenzen und 8500 Microsoft 365 E5 verfügen, für insgesamt 11.500 Lizenzen aus den qualifizierenden Produkten.
+- Ihre Organisation muss eine Lizenzanzahl von mindestens 10.000 aus einem der folgenden Produkte oder einer Kombination der folgenden Produkte haben: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. Beispielsweise kann Ihre Organisation über 3000 Office 365 E3-Lizenzen und 8500 Microsoft 365 E5 verfügen, für insgesamt 11.500 Lizenzen aus den berechtigten Produkten.
 - Ihre Organisation muss über mindestens 50 monatlich aktive Exchange Online-Benutzer verfügen.
 
 > [!NOTE]
@@ -61,7 +61,7 @@ Fügen Sie auf der Seite **Setup Prioritätskonten hinzu.**
 
 2. Wechseln Sie **zu**  >  **Setup-Organisationswissen,** und wählen **Sie Anzeigen** unter Überwachen Ihrer wichtigsten **Konten aus.**
 
-3. Wählen **Sie Erste Schritte** oder Verwalten **aus.**
+3. Wählen **Erste Schritte** oder **Verwalten aus.**
 
 4. Geben Sie **auf** der Seite Prioritätskonten hinzufügen im Suchfeld den Namen oder die E-Mail-Adresse der Person ein, die Sie der Liste prioritätskonten hinzufügen möchten. Sie können auch Ihren E-Mail-Schwellenwert für fehlgeschlagene oder verzögerte E-Mails festlegen und einen wöchentlichen Bericht über Probleme für Prioritätskonten erhalten.
 

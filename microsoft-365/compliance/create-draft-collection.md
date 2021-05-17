@@ -15,7 +15,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Eine Entwurfssammlung ist eine eDiscovery-Suche nach verwahrten und nicht verwahrbaren Datenquellen in einem Advanced eDiscovery-Fall, die eine Suchschätzung zurückgibt, die der Suchabfrage der Auflistung entspricht. Sie können Suchstatistiken überprüfen, eine Vorschau eines Samplings von Elementen anzeigen und die Auflistung überarbeiten und erneut ausführen, bevor Sie die Ergebnisse für einen Überprüfungssatz festlegen.
+description: Eine Entwurfssammlung ist eine eDiscovery-Suche nach verwahrten und nicht verwahrbaren Datenquellen in einem Advanced eDiscovery-Fall, der eine Suchschätzung zurückgibt, die der Suchabfrage der Sammlung entspricht. Sie können Suchstatistiken überprüfen, eine Vorschau eines Samplings von Elementen anzeigen und die Auflistung überarbeiten und erneut ausführen, bevor Sie die Ergebnisse für einen Überprüfungssatz festlegen.
 ms.openlocfilehash: 18f018a5e00f355c3f320a963135e76ecc51f086
 ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
@@ -29,17 +29,17 @@ Nachdem Sie Verwahrer und andere Datenquellen identifiziert haben, die nicht fü
 
 ## <a name="before-you-create-a-draft-collection"></a>Vor dem Erstellen einer Entwurfssammlung
 
-- Fügen Sie dem Fall Custodians und nicht verwahrte Datenquellen hinzu, bevor Sie eine Entwurfssammlung erstellen. Dies ist erforderlich, damit Sie beim Erstellen einer Entwurfssammlung die Datenquellen auswählen können. Weitere Informationen finden Sie hier:
+- Fügen Sie dem Fall Custodians und nicht verwahrte Datenquellen hinzu, bevor Sie eine Entwurfssammlung erstellen. Dies ist erforderlich, damit Sie beim Erstellen einer Entwurfssammlung die Datenquellen auswählen können. Weitere Informationen finden Sie unter:
 
   - [Hinzufügen von Verwaltungsberechtigten zu einem Fall](add-custodians-to-case.md)
 
   - [Hinzufügen von nicht-verwahrten Datenquellen zu einem Fall](non-custodial-data-sources.md)
 
-- Sie können zusätzliche Datenquellen (die dem Fall nicht als Verwahrungs- oder nicht verwahrstellende Speicherorte hinzugefügt wurden) in einer Entwurfssammlung nach Inhalten durchsuchen, die für den Fall relevant sein können. Zu diesen Datenquellen können Postfächer, SharePoint-Websites und Teams gehören. Wenn diese Situation für Ihren Fall gilt, kompilieren Sie eine Liste dieser Datenquellen, damit Sie sie der Auflistung hinzufügen können.
+- Sie können zusätzliche Datenquellen (die dem Fall nicht als Verwahrungs- oder nicht verwahrstellende Speicherorte hinzugefügt wurden) in einer Entwurfssammlung nach Inhalten durchsuchen, die für den Fall relevant sein können. Diese Datenquellen können Postfächer, websites SharePoint und Teams. Wenn diese Situation für Ihren Fall gilt, kompilieren Sie eine Liste dieser Datenquellen, damit Sie sie der Auflistung hinzufügen können.
 
 ## <a name="create-a-draft-collection"></a>Erstellen einer Entwurfssammlung
 
-1. Öffnen Sie im Microsoft 365 Compliance Center den Fall Advanced eDiscovery, und wählen Sie dann die Registerkarte **Sammlungen** aus.
+1. Öffnen Sie Microsoft 365 Compliance Center den fall Advanced eDiscovery, und wählen Sie dann die Registerkarte **Sammlungen** aus.
 
 2. Wählen Sie **auf der** Seite Sammlungen die Option **Neue Auflistung**  >  **Standard-Auflistung aus.**
 
@@ -59,9 +59,9 @@ Nachdem Sie Verwahrer und andere Datenquellen identifiziert haben, die nicht fü
 
 6. Auf der **Seite Zusätzliche Datenquellen** können Sie andere Postfächer und Websites auswählen, die als Teil der Auflistung durchsucht werden. Diese Arten von Datenquellen wurden in dem Fall nicht als Speicherorte für Verwahrungs- oder nicht verwahrstellende Daten hinzugefügt. Sie haben auch zwei Optionen beim Durchsuchen zusätzlicher Datenquellen:
 
-   - Um alle Inhaltsspeicherorte nach einem bestimmten Dienst (Exchange-Postfächer, SharePoint- und #A0 oder öffentliche #A1) zu durchsuchen, klicken Sie in der Spalte **Status** auf den entsprechenden Umschalter **Alle** auswählen. Mit dieser Option werden alle Inhaltsstandorte im ausgewählten Dienst durchsucht.
+   - Um alle Inhaltsspeicherorte nach einem bestimmten Dienst (Exchange Postfächern, SharePoint- und OneDrive-Websites oder Exchange  öffentlichen Ordnern) zu durchsuchen, klicken Sie in der Spalte **Status** auf den entsprechenden Umschalter Alle auswählen. Mit dieser Option werden alle Inhaltsstandorte im ausgewählten Dienst durchsucht.
 
-   - Klicken Sie zum Durchsuchen eines bestimmten  Inhaltsspeicherorts für einen Dienst in der Spalte **Status** auf den entsprechenden  Umschalter Alle auswählen, und klicken Sie dann auf **Benutzer, Gruppen** oder Teams (für #A0) oder Auf Websites auswählen für (SharePoint- und OneDrive-Websites), um bestimmte Inhaltsspeicherorte zu durchsuchen.
+   - Klicken Sie zum Durchsuchen eines bestimmten  Inhaltsspeicherorts für einen Dienst in der Spalte **Status** auf die entsprechende Umschaltleiste Alle auswählen, und klicken Sie dann auf **Benutzer,** Gruppen oder Teams (für Exchange-Postfächer) oder Auf Websites auswählen für (SharePoint- und OneDrive-Websites), um bestimmte Inhaltsspeicherorte zu durchsuchen. 
 
 7. Auf der **Seite** Bedingungen können Sie die Suchabfrage erstellen, die zum Sammeln von Elementen aus den Datenquellen verwendet wird, die Sie auf den vorherigen Assistentenseiten identifiziert haben. Sie können nach Schlüsselwörtern, Property:Value-Paaren oder einer Stichwortliste suchen. Sie können auch verschiedene Suchbedingungen hinzufügen, um den Bereich der Auflistung zu einenten. Weitere Informationen finden Sie unter [Erstellen von Suchabfragen für Sammlungen](building-search-queries.md).
 
@@ -82,7 +82,7 @@ Nachdem Sie Verwahrer und andere Datenquellen identifiziert haben, die nicht fü
 
 Nachdem Sie eine Entwurfssammlung erstellt  haben, wird sie in dem Fall auf der Seite Sammlungen aufgeführt, und der Status zeigt, dass sie ausgeführt wird. Ein Auftrag mit **dem Namen Vorbereiten der Suchvorschau** und Schätzungen wird ebenfalls erstellt und in diesem Fall auf der Seite Aufträge angezeigt. 
 
-Während des Entwurfssammlungsprozesses führt Advanced eDiscovery eine Suchschätzung mithilfe der Suchkriterien und Datenquellen aus, die Sie in der Auflistung angegeben haben. Advanced eDiscovery bereitet außerdem ein Sampling von Elementen vor, die Sie in der Vorschau anzeigen können. Wenn die Auflistung abgeschlossen ist, werden die folgenden Spalten und entsprechenden Werte auf der **Seite Sammlung** aktualisiert:
+Während des Entwurfssammlungsprozesses führt Advanced eDiscovery eine Suchschätzung mithilfe der Suchkriterien und Datenquellen aus, die Sie in der Auflistung angegeben haben. Advanced eDiscovery bereitet auch ein Sampling von Elementen vor, die Sie in der Vorschau anzeigen können. Wenn die Auflistung abgeschlossen ist, werden die folgenden Spalten und entsprechenden Werte auf der **Seite Sammlung** aktualisiert:
 
 ![Statusstatus für eine Entwurfssammlung](../media/DraftCollectionStatus.png)
 
@@ -104,7 +104,7 @@ Hier ist eine Liste der Dinge, die Sie auf der Flyoutseite der Auflistung tun k�
 
 - Wählen Sie **die Registerkarte** Datenquellen aus, um eine Liste der Custodians und nicht verwahrten Datenquellen zu sehen, die in der Sammlung durchsucht wurden. Alle weiteren Inhaltsstandorte, die durchsucht wurden, werden unter **Speicherorte** auf der Registerkarte **Zusammenfassung** aufgeführt.
 
-- Wählen Sie die **Registerkarte Suchstatistik** aus, um Statistiken zur Auflistung anzeigen zu können. Dies umfasst die Gesamtanzahl und Größe der Elemente, die in jedem Dienst gefunden werden (z. B. Exchange-Postfächer oder SharePoint-Websites) und einen Bedingungsbericht, der Statistiken über die Anzahl der Elemente anzeigt, die von verschiedenen Komponenten der von der Auflistung verwendeten Suchabfrage zurückgegeben werden. Weitere Informationen finden Sie unter [Sammlungsstatistiken und -berichte](collection-statistics-reports.md).
+- Wählen Sie die **Registerkarte Suchstatistik** aus, um Statistiken zur Auflistung anzeigen zu können. Dies umfasst die Gesamtanzahl und Größe der Elemente, die in jedem Dienst gefunden wurden (z. B. Exchange Postfächer oder SharePoint-Websites) und einen Bedingungsbericht, der Statistiken über die Anzahl der Elemente anzeigt, die von verschiedenen Komponenten der von der Auflistung verwendeten Suchabfrage zurückgegeben werden. Weitere Informationen finden Sie unter [Sammlungsstatistiken und -berichte](collection-statistics-reports.md).
 
 - Klicken **Sie auf Beispiel überprüfen** (unten auf der Flyoutseite), um eine Vorschau eines Beispiels der von der Auflistung zurückgegebenen Elemente anzuzeigen.
 

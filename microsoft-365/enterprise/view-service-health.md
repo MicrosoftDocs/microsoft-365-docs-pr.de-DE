@@ -1,5 +1,5 @@
 ---
-title: Überprüfen des Microsoft 365-Dienstzustands
+title: Überprüfen des Microsoft 365 Dienstzustands
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -25,7 +25,7 @@ search.appverid:
 - BCS160
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
-description: Zeigen Sie den Integritätsstatus von Microsoft 365-Diensten an, bevor Sie den Support anrufen, um zu sehen, ob eine aktive Dienstunterbrechung vor sich geht.
+description: Zeigen Sie den Integritätsstatus Microsoft 365 Diensten an, bevor Sie den Support anrufen, um zu sehen, ob eine aktive Dienstunterbrechung vor sich geht.
 ms.openlocfilehash: e0ab4eaa1f7a96168839a4abef2f0f254a21d0ad
 ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/08/2021
 ms.locfileid: "51644632"
 ---
-# <a name="how-to-check-microsoft-365-service-health"></a>Überprüfen des Microsoft 365-Dienstzustands
+# <a name="how-to-check-microsoft-365-service-health"></a>Überprüfen des Microsoft 365 Dienstzustands
 
 [![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](../media/O365-Admin-AdminCenterChanging.png)](/office365/admin/microsoft-365-admin-center-preview?preserve-view=true&view=o365-worldwide)
 
@@ -63,7 +63,7 @@ Wenn Sie die Ansicht nach Diensten filtern möchten, die aktuell einen Vorfall a
 
 Auf der Registerkarte **Verlauf** wird der Verlauf von Vorfällen und Empfehlungen angezeigt, die aufgelöst wurden.
 
-Wenn ein Problem mit einem Microsoft 365-Dienst auftritt und es  nicht auf der Seite Dienstintehzustand aufgeführt wird, teilen Sie uns dies mit, indem Sie Ein Problem melden auswählen und das kurze Formular ausfüllen.  Wir sehen uns verwandte Daten und Berichte aus anderen Organisationen an, um zu sehen, wie weit das Problem verbreitet ist und ob es von unserem Dienst stammt. Wenn dies der Fall ist, fügen wir sie  als neuen Vorfall oder eine Empfehlung auf der Seite Dienstintegte hinzu, auf der Sie die Lösung nachverfolgen können. Wenn sie nicht innerhalb von ca. 30 Minuten in der Liste angezeigt wird, wenden Sie sich an den Support, um das Problem zu beheben.
+Wenn ein Problem mit einem Microsoft 365-Dienst auftritt und es nicht auf  der Seite Dienstintehzustand aufgeführt wird, teilen Sie uns dies mit, indem Sie Ein Problem melden auswählen und das kurze Formular ausfüllen. Wir sehen uns verwandte Daten und Berichte aus anderen Organisationen an, um zu sehen, wie weit das Problem verbreitet ist und ob es von unserem Dienst stammt. Wenn dies der Fall ist, fügen wir sie  als neuen Vorfall oder eine Empfehlung auf der Seite Dienstintegte hinzu, auf der Sie die Lösung nachverfolgen können. Wenn sie nicht innerhalb von ca. 30 Minuten in der Liste angezeigt wird, wenden Sie sich an den Support, um das Problem zu beheben.
 
 Wenn Sie Ihre Ansicht anpassen möchten, welche Dienste im Dashboard angezeigt werden, wählen Sie Einstellungen Benutzerdefinierte Ansicht aus, und aktivieren Sie die Kontrollkästchen für die Dienste, die Sie aus der Ansicht Dienstintehashboard  >  filtern möchten. Stellen Sie sicher, dass das Kontrollkästchen für jeden Dienst aktiviert ist, den Sie überwachen möchten.    
 
@@ -113,7 +113,7 @@ Da Erläuterungen zum Dienststatus in Echtzeit veröffentlicht werden, sind sie 
 Die meiste Zeit werden Dienste als fehlerfrei und ohne weitere Informationen angezeigt. Wenn bei einem Dienst ein Problem vorliegt, wird das Problem entweder als eine Empfehlung oder als ein Vorfall angegeben, und der aktuelle Status wird angezeigt.
   
 > [!TIP]
-> Geplante Wartungsereignisse werden im Dienststatus nicht angezeigt. Sie können geplante Wartungsereignisse verfolgen, indem Sie sich mit dem **Nachrichtencenter** auf dem neuesten Stand halten. Filtern Sie nach Nachrichten, für dieeine geplante Änderung als Kategorie angegeben ist, um herauszufinden, wann die Änderung stattfinden soll, welche Auswirkungen sie hat und wie Sie Vorbereitungen dafür treffen können. Weitere [Informationen finden Sie unter Message Center in Microsoft 365.](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093)
+> Geplante Wartungsereignisse werden im Dienststatus nicht angezeigt. Sie können geplante Wartungsereignisse verfolgen, indem Sie sich mit dem **Nachrichtencenter** auf dem neuesten Stand halten. Filtern Sie nach Nachrichten, für dieeine geplante Änderung als Kategorie angegeben ist, um herauszufinden, wann die Änderung stattfinden soll, welche Auswirkungen sie hat und wie Sie Vorbereitungen dafür treffen können. Weitere Informationen finden Sie unter [Nachrichtencenter in Microsoft 365.](https://support.office.com/article/38fb3333-bfcc-4340-a37b-deda509c2093)
   
 ### <a name="incidents-and-advisories"></a>Vorfälle und Empfehlungen
 
@@ -154,4 +154,4 @@ Weitere Informationen zu unserer Verpflichtung zur Betriebszeit finden Sie unter
 
 [Aktivitätsberichte im Microsoft 365 Admin Center](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
  [Einstellungen für das Nachrichtencenter](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)<br/>
-[Überprüfen der Integrität der Windows-Version im Admin Center](https://docs.microsoft.com/windows/deployment/update/check-release-health)
+[Überprüfen der Windows release health im Admin Center](https://docs.microsoft.com/windows/deployment/update/check-release-health)

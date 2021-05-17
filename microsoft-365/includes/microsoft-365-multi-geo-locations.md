@@ -11,7 +11,7 @@
 |Japan                        |JPN     |Rechenzentren in Südost- oder Ostasien|
 |Korea                        |KOR     |Rechenzentren in Südost- oder Ostasien|
 |Nordamerika                |NAM     |Rechenzentren in den USA                    |
-|Norwegen                       |Noch     |(eDiscovery Datenspeicherort in Kürze verfügbar)|
+|Norwegen                       |NOR     |(eDiscovery Datenspeicherort in Kürze verfügbar)|
 |Südafrika                 |ZAF     |Rechenzentren in Südost- oder Ostasien|
 |Schweiz                  |CHE     |Rechenzentren in Europa                |
 |Vereinigte Arabische Emirate         |ARE     |Rechenzentren in Südost- oder Ostasien|

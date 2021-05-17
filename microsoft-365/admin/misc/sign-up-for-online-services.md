@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 4f374dc7-b96c-49c7-80ed-554716ba0138
-description: 'Hier erfahren Sie, wie Sie Arbeits-oder Schul-e-Mails verwenden, um sich bei Microsoft Online Services anzumelden, ohne Ihre IT-Abteilung einzubeziehen. '
+description: 'Erfahren Sie, wie Sie sich mithilfe von E-Mails zu Arbeits- oder Schuldiensten für Microsoft Onlinedienste registrieren, ohne dass ihre IT-Abteilung beteiligt ist. '
 ms.openlocfilehash: ad46d698398da32d88d0c1617499b326e8fcb163
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT

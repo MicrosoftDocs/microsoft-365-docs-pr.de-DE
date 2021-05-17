@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 Client App Support: Zertifikatbasierte Authentifizierung'
+title: 'Microsoft 365 Client-App-Unterstützung: Zertifikatbasierte Authentifizierung'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: In diesem Artikel finden Sie Details zur Microsoft 365-Client-App-Unterstützung für die zertifikatbasierte Authentifizierung.
+description: In diesem Artikel finden Sie Details zur Microsoft 365 Client-App-Unterstützung für die zertifikatbasierte Authentifizierung.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: d5ebef7c10aa61ba28c8fb841468be244f6e8542
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50904987"
 ---
-# <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365 Client App Support: Zertifikatbasierte Authentifizierung
+# <a name="microsoft-365-client-app-support-certificate-based-authentication"></a>Microsoft 365 Client-App-Unterstützung: Zertifikatbasierte Authentifizierung
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
@@ -32,9 +32,9 @@ Moderne Authentifizierung ist ein Oberbegriff für eine Kombination aus Authenti
 - **Authentifizierungsmethoden**: Mehrstufige Authentifizierung; Clientzertifikatbasierte Authentifizierung.
 - **Autorisierungsmethoden**: Microsofts Implementierung von Open Authorization (OAuth).
 
-Die moderne Authentifizierung wird mithilfe einer Authentifizierungsbibliothek wie active Directory Authentication Library (ADAL) oder Microsoft Authentication Library (MSAL) aktiviert. Die moderne Authentifizierung wird von Clients zum Authentifizieren und Autorisieren des Zugriffs auf Microsoft 365-Ressourcen verwendet. Die moderne Authentifizierung verwendet OAuth und stellt einen sicheren Mechanismus für Clients für den Zugriff auf Microsoft 365-Dienste ohne Zugriff auf Benutzeranmeldeinformationen zur Verfügung. Bei der Anmeldung authentifiziert sich der Benutzer direkt bei Azure Active Directory und erhält im Gegenzug ein Zugriffs-/Aktualisierungstokenpaar. Das Zugriffstoken gewährt dem Client Zugriff auf die entsprechenden Ressourcen im Microsoft 365-Mandanten. Ein Aktualisierungstoken wird verwendet, um ein neues Zugriffs- oder Aktualisierungstokenpaar abzurufen, wenn das aktuelle Zugriffstoken abläuft.
+Die moderne Authentifizierung wird mithilfe einer Authentifizierungsbibliothek wie active Directory Authentication Library (ADAL) oder Microsoft Authentication Library (MSAL) aktiviert. Die moderne Authentifizierung wird von Clients zum Authentifizieren und Autorisieren des Zugriffs auf Microsoft 365 verwendet. Die moderne Authentifizierung verwendet OAuth und stellt einen sicheren Mechanismus für Clients für den Zugriff auf Microsoft 365-Dienste zur Verfügung, ohne zugriff auf Benutzeranmeldeinformationen zu benötigen. Bei der Anmeldung authentifiziert sich der Benutzer direkt bei Azure Active Directory und erhält im Gegenzug ein Zugriffs-/Aktualisierungstokenpaar. Das Zugriffstoken gewährt dem Client Zugriff auf die entsprechenden Ressourcen im Microsoft 365 Mandanten. Ein Aktualisierungstoken wird verwendet, um ein neues Zugriffs- oder Aktualisierungstokenpaar abzurufen, wenn das aktuelle Zugriffstoken abläuft.
 
-Die moderne Authentifizierung unterstützt verschiedene Authentifizierungsmechanismen, z. B. die zertifikatbasierte Authentifizierung. Clients auf Windows-, Android- oder iOS-Geräten können die zertifikatbasierte Authentifizierung (CBA) verwenden, um sich mit einem Clientzertifikat auf dem Gerät bei Azure Active Directory zu authentifizieren. Anstelle eines typischen Benutzernamens/Kennworts wird das Zertifikat verwendet, um ein Zugriffs-/Aktualisierungstokenpaar von Azure Active Directory abzurufen.
+Die moderne Authentifizierung unterstützt verschiedene Authentifizierungsmechanismen, z. B. die zertifikatbasierte Authentifizierung. Clients auf Windows-, Android- oder iOS-Geräten können die zertifikatbasierte Authentifizierung (CBA) verwenden, um sich mithilfe eines Clientzertifikats auf dem Gerät bei Azure Active Directory zu authentifizieren. Anstelle eines typischen Benutzernamens/Kennworts wird das Zertifikat verwendet, um ein Zugriffs-/Aktualisierungstokenpaar von Azure Active Directory.
 
 Erfahren Sie mehr [über die zertifikatbasierte Authentifizierung](/azure/active-directory/authentication/active-directory-certificate-based-authentication-get-started).
 

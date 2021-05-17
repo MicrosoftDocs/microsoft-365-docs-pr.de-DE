@@ -79,7 +79,7 @@ Jeder Benutzer, der im **Benutzerdashboard angezeigt wird,** verfügt über die 
 Um weitere Details zu den Risikoaktivitäten für einen Benutzer anzuzeigen, öffnen Sie den Benutzerdetailsebereich, indem Sie im Benutzerdashboard auf einen **Benutzer doppelklicken.** Im Detailbereich können Sie die folgenden Informationen anzeigen:
 
 - **Registerkarte "Benutzerprofil"**
-    - **Name und Titel:** Der Name und der Positionstitel für den Benutzer aus Azure Active Directory. Diese Benutzerfelder werden anonymisiert oder leer, wenn die globale Anonymisierungseinstellung für das Insiderrisikomanagement aktiviert ist.
+    - **Name und Titel**: Der Name und der Positionstitel für den Benutzer aus Azure Active Directory. Diese Benutzerfelder werden anonymisiert oder leer, wenn die globale Anonymisierungseinstellung für das Insiderrisikomanagement aktiviert ist.
     - **Benutzer-E-Mail:** Die E-Mail-Adresse des Benutzers.
     - **Alias**: Der Netzwerkalias für den Benutzer.
     - **Organisation oder Abteilung:** Die Organisation oder Abteilung für den Benutzer.
@@ -96,22 +96,22 @@ Es kann Szenarien gibt, in denen Sie die Zuweisung von Risikoergebnissen zu den 
 
 Führen Sie die folgenden Schritte aus, um Benutzer manuell aus dem Bereichsstatus in allen Insider-Risikomanagementrichtlinien zu entfernen:
 
-1. Wechseln Sie [im Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Benutzer** aus.
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Benutzer** aus.
 2. Wählen Sie **im Benutzerdashboard** den Benutzer oder die Benutzer aus, die In-Scope in Insider-Risikomanagementrichtlinien entfernt werden möchten.
 3. Wählen **Sie Benutzer entfernen aus.**
 4. Wählen Sie **im Bereich** Benutzer entfernen die Option **Entfernen** oder **Abbrechen** aus, um die Änderungen zu verwerfen und das Dialogfeld zu schließen.
 5. Wählen **Sie im** Bestätigungsbereich Entfernen aus, um den Benutzer zu entfernen.
 
-## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>Ausführen automatisierter Aufgaben mit Power Automate-Flüssen für einen Benutzer
+## <a name="run-automated-tasks-with-power-automate-flows-for-a-user"></a>Ausführen automatisierter Aufgaben mit Power Automate für einen Benutzer
 
-Mithilfe empfohlener Power Automate-Flüsse können Risikoermittler und Analysten schnell Maßnahmen ergreifen, um:
+Mithilfe empfohlener Power Automate können Risikoermittler und Analysten schnell Maßnahmen ergreifen, um:
 
 - Benachrichtigen von Benutzern, wenn sie einer Insiderrisikorichtlinie hinzugefügt werden
 
-So führen, verwalten oder erstellen Sie Power Automate-Flüsse für einen Insider-Risikomanagement-Benutzer:
+So führen, verwalten oder erstellen Power Automate für einen Insider-Risikomanagement-Benutzer:
 
 1. Wählen **Sie automatisieren** auf der Symbolleiste für Benutzeraktion aus.
-2. Wählen Sie den zu ausführende Power Automate-Fluss aus, und wählen Sie **dann Flow ausführen aus.**
+2. Wählen Sie den Power Automate, der ausgeführt werden soll, und wählen Sie **dann Fluss ausführen aus.**
 3. Nachdem der Fluss abgeschlossen ist, wählen Sie **Fertig aus.**
 
-Weitere Informationen zu Power Automate-Flüssen für insider risk management finden Sie unter [Getting started with insider risk management settings](insider-risk-management-settings.md#power-automate-flows-preview).
+Weitere Informationen zu Power Automate Abläufen für insider risk management finden Sie unter [Erste Schritte mit Insider-Risikomanagement-Einstellungen](insider-risk-management-settings.md#power-automate-flows-preview).

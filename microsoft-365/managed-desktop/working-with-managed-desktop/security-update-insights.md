@@ -15,51 +15,51 @@ ms.lasthandoff: 11/06/2020
 ms.locfileid: "48941441"
 ---
 # <a name="windows-security-update-insights"></a>Informationen zu Windows-Sicherheitsupdates
-Diese Ansicht bietet eine Übersicht über den Status von Sicherheitsupdates für Ihre von Microsoft verwalteten Desktop Geräte. 
+Diese Ansicht bietet eine Übersicht über den Status von Sicherheitsupdates für Ihre Microsoft Managed Desktop Geräte. 
 
-Um Verwendungsdaten anzuzeigen, wählen Sie die Registerkarte <strong>Windows-Sicherheitsupdates</strong> aus.
+Wählen Sie zum Anzeigen von Verwendungsdaten die <strong>Registerkarte Windows Sicherheitsupdates</strong> aus.
 
-![Windows-Sicherheitsupdate Bereich: Balkendiagramme des Gerätestatus und der Update Version in der linken Spalte, Aktualisierungs Bereitstellungsfortschritt im Zeitverlauf in der mittleren Spalte und Prozentsatz aktiver Geräte nach Bereitstellungsgruppe sowie die Anzahl der Tage, die zum Erreichen des Bereitstellungsziels "95%" in der rechten Spalte verwendet wurden.](../../media/update-insights.jpg)
+![Windows Bereich Sicherheitsupdates: Balkendiagramme des Gerätestatus und der Updateversion in der linken Spalte, Aktualisierung des Bereitstellungsfortschritts im Laufe der Zeit in der Mitte und Prozentsatz der aktiven Geräte nach Bereitstellungsgruppe sowie die Anzahl der Tage, die zum Erreichen des Bereitstellungsziels von 95 % in der rechten Spalte verwendet wurden.](../../media/update-insights.jpg)
 
 ## <a name="device-status"></a>Gerätestatus
 
-Für Geräte, die von Windows Update aktualisiert werden sollen, müssen Sie mit dem Internet verbunden sein und nicht über einen Ruhezustand für mindestens sechs Stunden verfügen, von denen zwei kontinuierlich sein müssen. Obwohl es möglich ist, dass ein Gerät, das diese Anforderungen nicht erfüllt, aktualisiert wird, haben Geräte, die diese erfüllen, die höchste Wahrscheinlichkeit, dass Sie aktualisiert werden. 
+Damit Geräte mit Windows Update aktualisiert werden können, müssen sie mit dem Internet verbunden sein und nicht mindestens sechs Stunden lang im Ruhezustand sein, von denen zwei kontinuierlich sein müssen. Obwohl es möglich ist, dass ein Gerät aktualisiert wird, das diese Anforderungen nicht erfüllt, haben Geräte, die diese Anforderungen erfüllen, die höchste Wahrscheinlichkeit, aktualisiert zu werden. 
 
-Die Geräteaktivität wird im Kontext von Windows Update mit den folgenden Begriffen kategorisiert:
+Wir kategorisieren Geräteaktivitäten im Kontext Windows Update mit den folgenden Begriffen:
 
-- <strong>Aktiv:</strong> Geräte, die die mindestaktivitäts Kriterien (sechs Stunden, zwei kontinuierlich) für die neueste Version des Sicherheitsupdates erfüllt haben und mindestens alle fünf Tage mit Microsoft InTune eingecheckt wurden
-- <strong>Synchronisiert:</strong> Geräte, die innerhalb der letzten 28 Tage mit InTune eingecheckt haben
-- <strong>Nicht synchron:</strong> Geräte, die in den letzten 28 Tagen <i>nicht</i> mit InTune eingecheckt haben
-
-
+- <strong>Aktiv:</strong> Geräte, die die Mindestaktivitätskriterien (sechs Stunden, zwei fortlaufende) für die neueste Sicherheitsupdateversion erfüllt haben und mindestens alle fünf Tage mit Microsoft Intune eingecheckt haben
+- <strong>Synchronisiert:</strong> Geräte, die in den letzten 28 Tagen mit Intune eingecheckt haben
+- <strong>Nicht synchronisiert:</strong> Geräte, die <i>in den</i> letzten 28 Tagen nicht mit Intune eingecheckt haben
 
 
-## <a name="update-version-status"></a>Aktualisieren des Versionsstatus
 
-Microsoft veröffentlicht jeden zweiten Dienstag im Monat Sicherheitsupdates. In jeder Version werden wichtige Updates für bekannte Sicherheitsrisiken hinzugefügt. Microsoft Managed Desktop stellt sicher, dass 95% der verwalteten Geräte monatlich mit dem neuesten verfügbaren Sicherheitsupdate aktualisiert werden. Manchmal werden Sicherheitsupdates zu anderen Zeiten veröffentlicht, um neue Bedrohungen dringend zu beheben. Microsoft Managed Desktop stellt diese Updates auf ähnliche Weise bereit.
 
-Der Status von Sicherheitsupdate Versionen wird mit den folgenden Begriffen kategorisiert:
+## <a name="update-version-status"></a>Versionsstatus aktualisieren
 
-- <strong>Aktuell:</strong> Geräte, die das im aktuellen Monat veröffentlichte Update durchführen
-- <strong>Zurück:</strong> Geräte, die das Update durchführen, das im vorherigen Monat veröffentlicht wurde
-- <strong>Älter:</strong> Geräte, auf denen ein Sicherheitsupdate vor dem vorherigen Monat veröffentlicht wurde
+Microsoft veröffentlicht Sicherheitsupdates jeden zweiten Dienstag im Monat. Jede Version fügt wichtige Updates für bekannte Sicherheitsrisiken hinzu. Microsoft Managed Desktop stellt sicher, dass 95 % der verwalteten Geräte jeden Monat mit dem neuesten verfügbaren Sicherheitsupdate aktualisiert werden. Sicherheitsupdates werden manchmal zu anderen Zeiten veröffentlicht, um neue Bedrohungen dringend zu bekämpfen. Microsoft Managed Desktop stellt diese Updates auf ähnliche Weise zur Verfügung.
 
-Es sollten nur wenige Geräte in der <strong>älteren</strong> Kategorie angezeigt werden – eine große oder wachsende Population deutet wahrscheinlich auf ein systemisches Problem hin, das Sie an Microsoft Managed Desktop melden sollten, damit wir dies untersuchen können.
+Wir kategorisieren den Status von Sicherheitsupdateversionen mit den folgenden Bedingungen:
+
+- <strong>Aktuell:</strong> Geräte, auf den das update ausgeführt wird, das im aktuellen Monat veröffentlicht wurde
+- <strong>Vorheriger:</strong> Geräte mit dem Update, das im Vorherigen Monat veröffentlicht wurde
+- <strong>Älter:</strong> Geräte mit sicherheitsupdates, die vor dem vorherigen Monat veröffentlicht wurden
+
+In der Kategorie "Älter" sollten nur wenige Geräte angezeigt werden. Eine große oder wachsende Population weist wahrscheinlich auf ein systemisches Problem hin, das Sie melden sollten, Microsoft Managed Desktop wir untersuchen können. <strong></strong>
 
 
 ## <a name="deployment-progress"></a>Bereitstellungsfortschritt
 
-Zu Beginn jedes Sicherheitsupdate-Veröffentlichungszyklus nimmt Microsoft Managed Desktop eine Momentaufnahme der Geräte Auffüllung vor und legt sein Bereitstellungsziel auf 95% dieser Auffüllung fest. Im Bereich <strong>Bereitstellungsfortschritt</strong> wird ein historischer Trend angezeigt, der täglich aktualisiert wird und nachverfolgen kann, wie eng die Updatebereitstellung dieses Ziel für jede Version erfüllt. In diesem Diagramm werden nur Geräte mit aktivem Status angezeigt.
+Zu Beginn jedes Veröffentlichungszyklus für Sicherheitsupdates erstellt Microsoft Managed Desktop eine Momentaufnahme der Gerätegesamtheit und legt das Bereitstellungsziel auf 95 % dieser Population fest. Der <strong>Bereich Bereitstellungsfortschritt</strong> zeigt einen verlaufshistorischen Trend, der täglich aktualisiert wird und verfolgt, wie genau die Updatebereitstellung dieses Ziel für jede Version erfüllt. In diesem Diagramm werden nur Geräte mit dem Status "Aktiv" angezeigt.
 
-Sie können diese Daten für frühere Aktualisierungszyklen anzeigen, indem Sie das Dropdownmenü in der oberen rechten Ecke verwenden. Der Zeitraum, den Sie in diesem Menü auswählen, gilt für alle Informationen auf der gesamten Seite.
+Sie können diese Daten für vorherige Aktualisierungszyklen anzeigen, indem Sie das Dropdownmenü oben rechts verwenden. Der in diesem Menü ausgewählte Zeitraum gilt für alle Informationen auf der gesamten Seite.
 
-Der Bereich " <strong>aktualisierte aktive Geräte nach Bereitstellungsgruppe</strong> " bietet eine andere Ansicht, indem der Fortschritt der Updateinstallation für jede der Microsoft Managed Desktop-Bereitstellungsgruppen angezeigt wird.
+Der <strong>Bereich Aktualisierte aktive Geräte</strong> nach Bereitstellungsgruppen bietet eine andere Ansicht, indem der Fortschritt der Updateinstallation für jede der Microsoft Managed Desktop angezeigt wird.
 
-Der <strong>Zielbereich "Tage zum erreichen</strong> " zeigt an, wie lange es dauerte, bis 95% der Gesamtzahl der Geräte mit dem aktuellen Sicherheitsupdate aktualisiert wurden. Während der Bereitstellung wird in diesem Bereich <strong>noch aktualisiert</strong> , bis das 95%-Ziel für das ausgewählte Update erreicht wird.
+Der <strong>Bereich Tage bis</strong> zum Erreichen des Zielbereichs zeigt an, wie lange 95 % der Gesamtzahl der Geräte mit dem aktuellen Sicherheitsupdate aktualisiert wurden. Während der Bereitstellung wird in diesem Bereich <strong>weiterhin</strong> aktualisiert, bis das Ziel von 95 % für das ausgewählte Update erreicht ist.
 
-## <a name="device-details-area"></a>Geräte Detailbereich
+## <a name="device-details-area"></a>Bereich "Gerätedetails"
 
-Im unteren Bereich des Dashboards finden Sie eine Tabelle mit detaillierten Informationen zu Ihren Geräten, einschließlich des [Gerätestatus](#device-status) und des [Status der Update Version](#update-version-status). Sie können diese Liste durchsuchen oder nach einem beliebigen angegebenen Wert filtern.
+Im unteren Bereich des Dashboards finden Sie eine Tabelle mit detaillierten Informationen für Ihre Geräte, einschließlich des [Gerätestatus](#device-status) und [des Updateversionsstatus.](#update-version-status) Sie können diese Liste durchsuchen oder nach einem beliebigen aufgelisteten Wert filtern.
 
 
-![Geräte Detailtabelle mit Spalten für Gerätename, zugewiesener Benutzer, Gerätestatus, Update Version, Betriebssystemversion und Datum, an dem das Gerät zuletzt synchronisiert wurde.](../../media/security-update-insights-device-table-sterile.png)
+![Gerätedetailsetabelle mit Spalten für gerätenamen, zugewiesenen Benutzer, Gerätestatus, Updateversion, Betriebssystemversion und das Datum, an dem das Gerät zuletzt synchronisiert wurde.](../../media/security-update-insights-device-table-sterile.png)

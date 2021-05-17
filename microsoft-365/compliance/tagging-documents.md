@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Das Markieren von Dokumenten in einer Überprüfungsgruppe hilft, unnötigen Inhalt zu entfernen und relevante Inhalte in einem erweiterten eDiscovery-Fall zu identifizieren.
+description: Das Markieren von Dokumenten in einem Überprüfungssatz hilft, unnötige Inhalte zu entfernen und relevante Inhalte in einem Advanced eDiscovery identifizieren.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 83e7a3c9c097968c4d773e6e2092bb3c50154cc3
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
@@ -24,69 +24,69 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "48285281"
 ---
-# <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>Markieren von Dokumenten in einer Überprüfungsgruppe in Advanced eDiscovery
+# <a name="tag-documents-in-a-review-set-in-advanced-ediscovery"></a>Markieren von Dokumenten in einem Überprüfungssatz in Advanced eDiscovery
 
-Das Organisieren von Inhalten in einem Überprüfungs Satzes ist wichtig, um verschiedene Workflows im eDiscovery-Prozess abzuschließen. Dies umfasst Folgendes:
+Das Organisieren von Inhalten in einem Überprüfungssatz ist wichtig, um verschiedene Workflows im eDiscovery-Prozess abschließen zu können. Dies umfasst Folgendes:
 
-- Ausmerzen unnötiger Inhalte
+- Culling unnecessary content
 
 - Identifizieren relevanter Inhalte
  
 - Identifizieren von Inhalten, die von einem Experten oder einem Anwalt überprüft werden müssen
 
-Wenn Experten, Anwälte oder andere Benutzer Inhalte in einem Überprüfungs Satzes überprüfen, können Ihre Meinungen im Zusammenhang mit den Inhalten mithilfe von Tags erfasst werden. Wenn beispielsweise unnötige Inhalte ausgemerzt werden sollen, kann ein Benutzer Dokumente mit einem Tag wie "nicht reagierende" markieren. Nachdem der Inhalt überprüft und markiert wurde, kann eine Überprüfungs Sätze-Suche erstellt werden, um alle Inhalte auszuschließen, die als "nicht ansprechbar" gekennzeichnet sind, wodurch dieser Inhalt nicht aus den nächsten Schritten im eDiscovery-Workflow entfernt wird. Der Tag-Bereich kann für jeden Fall angepasst werden, sodass die Tags den beabsichtigten Überprüfungsworkflow unterstützen können.
+Wenn Experten, Anwälte oder andere Benutzer Inhalte in einem Bewertungssatz überprüfen, können ihre Ansichten zu den Inhalten mithilfe von Tags erfasst werden. Wenn beispielsweise die Absicht besteht, nicht benötigte Inhalte zu markieren, kann ein Benutzer Dokumente mit einem Tag markieren, z. B. "nicht reaktionsfähig". Nachdem Inhalte überprüft und markiert wurden, kann eine Überprüfungssatzsuche erstellt werden, um alle Inhalte auszuschließen, die als "nicht reaktionsfähig" gekennzeichnet sind, wodurch dieser Inhalt aus den nächsten Schritten im eDiscovery-Workflow entfernt wird. Der Tagbereich kann für jeden Fall angepasst werden, damit die Tags den beabsichtigten Überprüfungsworkflow unterstützen können.
 
-## <a name="tag-types"></a>Tag-Typen
+## <a name="tag-types"></a>Tagtypen
 
-Advanced eDiscovery bietet zwei Typen von Tags:
+Advanced eDiscovery bietet zwei Arten von Tags:
 
-- **Einzelne Tags** – schränkt Benutzer ein, um ein einzelnes Tag in einer Gruppe auszuwählen. Dies kann hilfreich sein, um sicherzustellen, dass Benutzer nicht in Konflikt stehende Tags wie "reagieren" und "nicht reagierende" auswählen. Diese werden als Optionsfelder angezeigt.
+- **Tags mit einer einzelnen** Auswahl – Schränkt Benutzer ein, ein einzelnes Tag innerhalb einer Gruppe auszuwählen. Dies kann hilfreich sein, um sicherzustellen, dass Benutzer keine in Konflikt enden Tags auswählen, z. B. "reaktionsfähig" und "nicht reaktionsfähig". Diese werden als Optionsfelder angezeigt.
 
-- **Mehrfachauswahl-Tags** – Benutzer können mehrere Tags in einer Gruppe auswählen. Diese werden als Kontrollkästchen angezeigt.
+- **Tags mit mehreren** Auswahlmöglichkeiten : Benutzern die Auswahl mehrerer Tags innerhalb einer Gruppe ermöglichen. Diese werden als Kontrollkästchen angezeigt.
 
-## <a name="tag-structure"></a>Tag-Struktur
+## <a name="tag-structure"></a>Tagstruktur
 
-Zusätzlich zu den Tag-Typen kann die Struktur, wie Tags im Tag-Panel organisiert werden, verwendet werden, um das Markieren von Dokumenten intuitiver zu gestalten. Tags werden nach Abschnitten gruppiert. Überprüfen die Option "Suche festlegen" unterstützt die Suche nach Tag und Tag. Dies bedeutet, dass Sie eine Überprüfungs Sätze-Suche erstellen können, um Dokumente mit einem beliebigen Tag in einem Abschnitt abzurufen.
+Zusätzlich zu den Tagtypen kann die Struktur der Tags im Tagbereich verwendet werden, um das Tagging von Dokumenten intuitiver zu gestalten. Tags werden nach Abschnitten unterteilt. Die Überprüfungssatzsuche unterstützt die Möglichkeit, nach Tag und Nach-Tag-Abschnitt zu suchen. Dies bedeutet, dass Sie eine Überprüfungssatzsuche erstellen können, um Dokumente abzurufen, die mit einem beliebigen Tag in einem Abschnitt markiert sind.
 
-![Markieren von Abschnitten im Tag-Panel](../media/Tagtypes.png)
+![Markierungsabschnitte im Tagbereich](../media/Tagtypes.png)
 
-Tags können weiter organisiert werden, indem Sie in einem Abschnitt verschachtelt werden. Wenn beispielsweise privilegierte Inhalte identifiziert und markiert werden sollen, kann durch Verschachtelung deutlich gemacht werden, dass ein Benutzer ein Dokument als "privilegiert" markieren und den gewünschten Berechtigungstyp auswählen kann, indem das entsprechende geschachtelte Tag überprüft wird.
+Tags können weiter organisiert werden, indem sie in einem Abschnitt geschachtelt werden. Wenn beispielsweise die Absicht besteht, privilegierte Inhalte zu identifizieren und zu kennzeichnen, kann mit der Verschachtelung klar gemacht werden, dass ein Benutzer ein Dokument als "Privileged" kennzeichnen und den Berechtigungstyp auswählen kann, indem das entsprechende geschachtelte Tag überprüft wird.
 
-![Geschachtelte Tags innerhalb eines Tag-Abschnitts](../media/Nestingtags.png)
+![Geschachtelte Tags in einem Tag-Abschnitt](../media/Nestingtags.png)
 
 ## <a name="applying-tags"></a>Anwenden von Tags
 
-Es gibt verschiedene Möglichkeiten, ein Tag auf Inhalte anzuwenden.
+Es gibt mehrere Möglichkeiten, ein Tag auf Inhalte anzuwenden.
 
-### <a name="tagging-a-single-document"></a>Markieren eines einzelnen Dokuments
+### <a name="tagging-a-single-document"></a>Taggen eines einzelnen Dokuments
 
-Wenn Sie ein Dokument in einem Überprüfungs Satzes anzeigen, können Sie die Tags anzeigen, die eine Überprüfung verwenden kann, indem Sie auf **Markierungsbereich**klicken.
+Wenn Sie ein Dokument in einem Überprüfungssatz anzeigen, können Sie die Tags anzeigen, die eine Überprüfung verwenden kann, indem Sie auf **Tagging-Bereich klicken.**
 
-![Klicken Sie auf Tag Panel, um das Tag-Panel anzuzeigen](../media/Singledoctag.png)
+![Klicken Sie auf Tag-Bereich, um den Tagbereich anzeigen zu können.](../media/Singledoctag.png)
 
 Auf diese Weise können Sie Tags auf das im Viewer angezeigte Dokument anwenden.
 
-### <a name="bulk-tagging"></a>Massen Markierung
+### <a name="bulk-tagging"></a>Massentagging
 
-Das Massen-Tagging kann durch Auswählen mehrerer Dateien im Ergebnisraster und anschließendes Verwenden der Tags im **taggingbereich** wie das Markieren einzelner Dokumente erfolgen. Das Massen-UN-Tagging kann durch zweimaliges Markieren von Tags erfolgen. mit dem ersten Klick wird das Tag angewendet, und die zweite Auswahl stellt sicher, dass das Tag für alle ausgewählten Dateien gelöscht wird.
+Massentagging kann durch Auswählen mehrerer Dateien im Ergebnisraster und anschließendes Verwenden der Tags im **Tagging-Bereich** wie das Markieren einzelner Dokumente durchgeführt werden. Das Massenentfing kann durch zweimalige Auswahl von Tags durchgeführt werden. Der erste Klick wird das Tag anwenden, und die zweite Auswahl stellt sicher, dass das Tag für alle ausgewählten Dateien gelöscht wird.
 
-![Ein Screenshot einer Handy Beschreibung, die automatisch generiert wird](../media/Bulktag.png)
+![Screenshot eines automatisch generierten Mobiltelefons Beschreibung](../media/Bulktag.png)
 
 > [!NOTE]
-> Bei der Massen Markierung wird im Markierungsbereich die Anzahl der Dateien angezeigt, die für jedes Tag im Bereich markiert sind.
+> Beim Massentaging zeigt der Taggingbereich eine Anzahl von Dateien an, die für jedes Tag im Bereich markiert sind.
 
-### <a name="tagging-in-other-review-panels"></a>Tagging in anderen Überprüfungs Bereichen
+### <a name="tagging-in-other-review-panels"></a>Tagging in anderen Überprüfungspanels
 
-Bei der Überprüfung von Dokumenten können Sie die anderen Überprüfungs Bereiche verwenden, um andere Merkmale von Dokumenten im Ergebnisraster zu überprüfen. Dies umfasst das Überprüfen anderer verwandter Dokumente, e-Mail-Threads, nahe Duplikate und Hash Duplikate. Wenn Sie beispielsweise Verwandte Dokumente (mithilfe des Bereichs " **Dokument Familien** Überprüfung") überprüfen, können Sie die Überprüfungszeit erheblich verringern, indem Sie zugehörige Dokumente in Massen markieren. Wenn beispielsweise eine e-Mail-Nachricht mehrere Anlagen enthält und Sie sicherstellen möchten, dass die gesamte Familie einheitlich markiert ist.
+Beim Überprüfen von Dokumenten können Sie die anderen Überprüfungspanels verwenden, um andere Merkmale von Dokumenten im Ergebnisraster zu überprüfen. Dies umfasst das Überprüfen anderer verwandter Dokumente, E-Mail-Threads, beinahe doppelter Objekte und Hashduplizierter. Wenn Sie z. B. verwandte Dokumente  überprüfen (mithilfe des Überprüfungspanels für die Dokumentfamilie), können Sie die Überprüfungszeit erheblich reduzieren, indem Sie verwandte Dokumente in Massen taggen. Wenn beispielsweise eine E-Mail-Nachricht mehrere Anlagen enthält und Sie sicherstellen möchten, dass die gesamte Familie konsistent markiert ist.
 
-Hier erfahren Sie, wie Sie den **Markierungsbereich** bei Verwendung des **Dokument Familien** Überprüfungs Bereichs anzeigen:
+Hier erfahren Sie beispielsweise, wie Sie den **Tagging-Bereich** anzeigen, wenn Sie den Überprüfungsbereich für die **Dokumentfamilie** verwenden:
 
-1. Wenn der Überprüfungsbereich für ein ausgewähltes Dokument geöffnet ist (beispielsweise wird die Liste der verwandten Inhalte im **Dokument Familien** Überprüfungsbereich angezeigt wird, klicken Sie im Dokument Familien Überprüfungsbereich auf **Dokumente markieren** .
+1. Wenn der Überprüfungsbereich für ein ausgewähltes Dokument geöffnet ist (z. B. wenn die Liste der zugehörigen Inhalte im Überprüfungsfenster Dokumentfamilie angezeigt wird, klicken Sie im Überprüfungsbereich Dokumentfamilie auf **Dokumente** markieren. 
 
-   Der Markierungsbereich wird als Popupfenster angezeigt.
+   Der Taggingbereich wird als Popupfenster angezeigt.
 
 2. Wählen Sie ein oder mehrere Tags aus, um das ausgewählte Dokument anzuwenden. 
 
-3. Zum Markieren aller Dokumente wählen Sie im Bedienfeld " **Dokument Familie** " alle Dokumente aus, klicken Sie auf **Tag-Dokumente**, und wählen Sie dann die Tags aus, die auf die gesamte Dokumenten Familie angewendet werden sollen.
+3. Um alle Dokumente zu kennzeichnen,  wählen Sie alle Dokumente im Bereich Dokumentfamilie aus, klicken Sie auf **Dokumente markieren,** und wählen Sie dann die Tags aus, die auf die gesamte Dokumentfamilie angewendet werden.
 
-![Screenshot einer sozialen Medien Bereitstellungs Beschreibung, die automatisch generiert wird](../media/Relatedtag.png)
+![Screenshot eines automatisch generierten Social Media-Beitrags Beschreibung](../media/Relatedtag.png)

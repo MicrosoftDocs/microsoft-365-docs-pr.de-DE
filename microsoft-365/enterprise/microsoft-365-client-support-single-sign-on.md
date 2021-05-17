@@ -1,5 +1,5 @@
 ---
-title: 'Microsoft 365 Client App Support: Single Sign-On'
+title: 'Microsoft 365 Client-App-Unterstützung: Single Sign-On'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: In diesem Artikel erfahren Sie, welche Plattformen, Clients und PowerShell-Module einmaliges Anmelden für Microsoft 365 unterstützen.
+description: In diesem Artikel erfahren Sie, welche Plattformen, Clients und PowerShell-Module einmaliges Anmelden für Microsoft 365.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 63090e1284bda39fe2d79c80b829891e867d2365
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
@@ -23,11 +23,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50904902"
 ---
-# <a name="microsoft-365-client-app-support-single-sign-on"></a>Microsoft 365 Client App Support: Single Sign-On
+# <a name="microsoft-365-client-app-support-single-sign-on"></a>Microsoft 365 Client-App-Unterstützung: Single Sign-On
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Einmaliges Anmelden (Single Sign-On, SSO) bietet Sicherheit und Komfort, wenn sich Ihre Benutzer bei Anwendungen in Azure Active Directory anmelden. Bei einmaligem Anmelden melden sich Benutzer einmal mit einem Konto an, um auf lokale Active Directory Domain Services (AD DS)-Domänengeräte, Software as a Service (SaaS)-Anwendungen und Webanwendungen zu zugreifen.
+Einmaliges Anmelden (Single Sign-On, SSO) bietet Sicherheit und Komfort, wenn sich Ihre Benutzer bei Anwendungen in Azure Active Directory. Bei einmaligem Anmelden melden sich Benutzer einmal mit einem Konto an, um auf lokale Active Directory Domain Services (AD DS)-Domänengeräte, Software as a Service (SaaS)-Anwendungen und Webanwendungen zu zugreifen.
 
 Erfahren Sie mehr über [einmaliges Anmelden](/azure/active-directory/manage-apps/what-is-single-sign-on).
 

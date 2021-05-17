@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365-Entwurfsprinzipien für die Unternehmensarchitektur
-description: Erfahren Sie mehr über Microsoft Enterprise Architecture von Experten in Identity, Cyber und Networking.
+title: Microsoft 365 Enterprise Architekturentwurfsprinzipien
+description: Erfahren Sie mehr Enterprise architektur von Experten für Identität, Cybersicherheit und Netzwerk.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -20,13 +20,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 11/04/2020
 ms.locfileid: "48906953"
 ---
-# <a name="microsoft-365-enterprise-architecture-design-principles"></a>Microsoft 365-Entwurfsprinzipien für die Unternehmensarchitektur
+# <a name="microsoft-365-enterprise-architecture-design-principles"></a>Microsoft 365 Enterprise Architekturentwurfsprinzipien
 
 Lernen Sie die wichtigsten Grundsätze kennen, die Sie brauchen, um Netzwerk-, Identitäts- und Sicherheitsarchitekturen sowie multinationale Architekturen zu verstehen.
 
-| Experten | Betreff | Informationen zum Experten |
+| Expert | Betreff | Informationen zum Experten |
 |---------|---------|---------|
-|![Alex Shteynberg auf Enterprise Identity Architecture](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)   |    [Identität](identity-design-principles.md)     | Alex Shteynberg, Principal Technical Architect bei Microsoft es New York Microsoft Technology Center, führt einen Schritt zurück zu Beschreibung der Leitprinzipien und grundlegenden Themen rund um Identity for Enterprise Organizations Adopting Microsoft 365 und Azure in [to Identity and Beyond](identity-design-principles.md). |
-| ![Kozetta Garrett im Sicherheitsentwurfs Prinzip](../media/solutions-architecture-center/kozeta-garrett-security.jpg)   |     [Sicherheit](security-design-principles.md)    |  Kozeta Garrett, Cyber Architect bei Microsoft, beschreibt die wichtigsten Sicherheitsherausforderungen, denen Sie in den Unternehmensorganisationen begegnet, und empfiehlt Ansätze, die Sie bei Sicherheitshürden einführen können, die [Sie überfahren können](security-design-principles.md).  |
-| ![Ed Fisher auf Networking-Design-Prinzipien](../media/solutions-architecture-center/ed-fisher-networking.jpg)    |       [Netzwerk](networking-design-principles.md)  |   Ed Fisher, Security & Compliance Architect bei Microsoft, beschreibt, wie Sie Ihr Netzwerk für die Cloud-Konnektivität optimieren, indem Sie die häufigsten Fallstricke beim [Networking (in der Cloud)](networking-design-principles.md)vermeiden.       |
+|![Alex Shteynberg zur Architektur der Unternehmensidentität](../media/solutions-architecture-center/identity-and-beyond-alex-shteynberg.jpg)   |    [Identity](identity-design-principles.md)     | Alex Shteynberg, Principal Technical Architect im Microsoft Technology Center in New York, führt einen Schritt zurück, um Leitprinzipien und grundlegende Themen zur Identität für Unternehmensorganisationen zu beschreiben, die Microsoft 365 und Azure in [To identity](identity-design-principles.md)und beyond übernehmen. |
+| ![Kosetta Garrett zu Sicherheitsentwurfsprinzipien](../media/solutions-architecture-center/kozeta-garrett-security.jpg)   |     [Sicherheit](security-design-principles.md)    |  Koseta Garrett, Cybersicherheitsarchitektin bei Microsoft, beschreibt die größten Sicherheitsprobleme, denen sie in Unternehmensorganisationen gegenüber steht, und empfiehlt Ansätze, die Sie in Sicherheitshürden nehmen können, die Sie überwinden [können.](security-design-principles.md)  |
+| ![Ed Fisher zu Netzwerkentwurfsprinzipien](../media/solutions-architecture-center/ed-fisher-networking.jpg)    |       [Netzwerk](networking-design-principles.md)  |   Ed Fisher, Security & Compliance Architect bei Microsoft, beschreibt, wie Sie Ihr Netzwerk für die Cloudkonnektivität optimieren, indem die häufigsten Fallstricke in [Networking up (in der Cloud)](networking-design-principles.md)vermieden werden.       |
 |    |         |         |

@@ -1,5 +1,5 @@
 ---
-title: Commit einer Entwurfssammlung für einen Überprüfungssatz
+title: Festlegen einer Entwurfssammlung auf einen Überprüfungssatz
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -25,11 +25,11 @@ ms.locfileid: "50838857"
 ---
 # <a name="commit-a-draft-collection-to-a-review-set-in-advanced-ediscovery"></a>Commit einer Entwurfssammlung für einen Überprüfungssatz in Advanced eDiscovery
 
-Wenn Sie mit den Elementen, die Sie in einer Entwurfssammlung gesammelt haben, zufrieden sind und bereit sind, sie zu analysieren, zu kennzeichnen und zu überprüfen, können Sie einer Überprüfungssammlung in diesem Fall eine Auflistung hinzufügen. Wenn Sie eine Entwurfssammlung für einen Überprüfungssatz festlegen, werden gesammelte Elemente aus ihrem ursprünglichen Inhaltsspeicherort in Microsoft 365 in einen Überprüfungssatz kopiert. Ein Überprüfungssatz ist ein sicherer, von Microsoft bereitgestellter Azure Storage-Speicherort in der Microsoft-Cloud.
+Wenn Sie mit den Elementen, die Sie in einer Entwurfssammlung gesammelt haben, zufrieden sind und bereit sind, sie zu analysieren, zu kennzeichnen und zu überprüfen, können Sie einer Überprüfungssammlung in diesem Fall eine Auflistung hinzufügen. Wenn Sie ein Commit für eine Entwurfssammlung für einen Überprüfungssatz erstellen, werden gesammelte Elemente von ihrem ursprünglichen Inhaltsspeicherort in Microsoft 365 in einen Überprüfungssatz kopiert. Ein Überprüfungssatz ist ein sicherer, von Microsoft bereitgestellter Azure Storage in der Microsoft Cloud.
 
-## <a name="commit-a-draft-collection-to-a-review-set"></a>Commit einer Entwurfssammlung für einen Überprüfungssatz
+## <a name="commit-a-draft-collection-to-a-review-set"></a>Festlegen einer Entwurfssammlung auf einen Überprüfungssatz
 
-1. Öffnen Sie im Microsoft 365 Compliance Center den Fall Advanced eDiscovery, und wählen Sie dann die Registerkarte Sammlungen aus, um eine Liste der Sammlungen in diesem Fall anzeigen zu können. 
+1. Öffnen Sie Microsoft 365 Compliance Center den Fall Advanced eDiscovery, und wählen Sie  dann die Registerkarte Sammlungen aus, um eine Liste der Sammlungen in diesem Fall anzeigen zu können.
 
    ![Liste der Sammlungen in einem Fall](../media/CommitDraftCollections1.png)
 
@@ -54,7 +54,7 @@ Wenn Sie mit den Elementen, die Sie in einer Entwurfssammlung gesammelt haben, z
 
        - **Cloudanlagen:** Wählen Sie diese Option aus, um moderne Anlagen oder verknüpfte Dateien zu verwenden, wenn die Sammlungsergebnisse dem Überprüfungssatz hinzugefügt werden. Dies bedeutet, dass die Zieldatei einer modernen Anlage oder verknüpften Datei dem Überprüfungssatz hinzugefügt wird.
 
-       - **SharePoint-Versionen:** Wählen Sie diese Option aus, um die Auflistung aller Versionen eines SharePoint-Dokuments nach den Versionsgrenzwerte und Suchparametern der Auflistung zu aktivieren. Wenn Sie diese Option auswählen, wird die Größe der Elemente, die dem Überprüfungssatz hinzugefügt werden, erheblich erhöht.
+       - **SharePoint:** Wählen Sie diese Option aus, um die Auflistung aller Versionen eines SharePoint-Dokuments nach den Versionsgrenzwerte und Suchparametern der Auflistung zu aktivieren. Wenn Sie diese Option auswählen, wird die Größe der Elemente, die dem Überprüfungssatz hinzugefügt werden, erheblich erhöht.
 
    4. Konfigurieren Sie die Einstellungen, um die Skalierung der Auflistung zu definieren, die dem Überprüfungssatz hinzugefügt werden soll:
 
@@ -76,11 +76,11 @@ Wenn Sie eine Entwurfssammlung für einen Überprüfungssatz festlegen, geschieh
 
 - Die Auflistungssuchabfrage wird erneut ausgeführt. Dies bedeutet, dass sich die tatsächlichen Suchergebnisse, die in den Überprüfungssatz kopiert wurden, möglicherweise von den geschätzten Ergebnissen unterscheiden, die bei der letzten Ausführung der Sammlungssuche zurückgegeben wurden.
 
-- Alle Elemente in den Suchergebnissen werden aus der ursprünglichen Datenquelle im Livedienst kopiert und an einen sicheren Azure Storage-Speicherort in der Microsoft Cloud kopiert.
+- Alle Elemente in den Suchergebnissen werden aus der ursprünglichen Datenquelle im Livedienst kopiert und an einen sicheren Speicherort Azure Storage in der Microsoft Cloud kopiert.
 
 - Alle Elemente (einschließlich der Inhalte und Metadaten), die sich nicht in Custodian- oder Non-Custodian-Datenquellen befinden, werden neu indiziert (in einem Prozess, der als tiefe Indizierung *bezeichnet* wird), sodass alle Daten im Überprüfungssatz während der Überprüfung der Falldaten vollständig durchsucht werden können. Das erneute Indizieren des Inhalts in einer Sammlung führt zu gründlichen und schnellen Suchen, wenn Sie den Inhalt im Überprüfungssatz während der Falluntersuchung durchsuchen oder filtern.
 
-- Verschlüsselte SharePoint- und #A0 und verschlüsselte Dateien angefügte E-Mail-Nachrichten, die in den Suchergebnissen zurückgegeben werden, werden entschlüsselt, wenn Sie die Sammlung zu einem Überprüfungssatz verpflichten. Sie können die entschlüsselten Dateien im Überprüfungssatz überprüfen und abfragen. Weitere Informationen finden Sie unter [Decryption in Microsoft 365 eDiscovery tools](ediscovery-decryption.md).
+- Verschlüsselte SharePoint und OneDrive und verschlüsselte Dateien angefügte E-Mail-Nachrichten, die in den Suchergebnissen zurückgegeben werden, werden entschlüsselt, wenn Sie die Sammlung an einen Überprüfungssatz festlegen. Sie können die entschlüsselten Dateien im Überprüfungssatz überprüfen und abfragen. Weitere Informationen finden Sie unter [Decryption in Microsoft 365 eDiscovery tools](ediscovery-decryption.md).
 
 - Die Funktion zur optischen Zeichenerkennung (Optical Character Recognition, OCR) extrahiert Text aus Bildern und enthält den Bildtext mit dem Inhalt, der einem Überprüfungssatz hinzugefügt wird. Weitere Informationen finden Sie im Abschnitt [Optische Zeichenerkennung](#optical-character-recognition) in diesem Artikel.
 
@@ -88,6 +88,6 @@ Wenn Sie eine Entwurfssammlung für einen Überprüfungssatz festlegen, geschieh
 
 ## <a name="optical-character-recognition"></a>Optical Character Recognition (optische Zeichenerkennung)
 
-Wenn Sie eine Auflistung auf einen Überprüfungssatz festlegen, extrahiert die Funktionalität der optischen Zeichenerkennung (OCR) in Advanced eDiscovery automatisch Text aus Bildern und enthält den Bildtext mit dem Inhalt, der einem Überprüfungssatz hinzugefügt wird. Sie können den extrahierten Text in der Textanzeige der ausgewählten Bilddatei im Überprüfungssatz anzeigen. Auf diese Weise können Sie den Text in Bildern genauer überprüfen und analysieren. OCR wird für lose Dateien, E-Mail-Anlagen und eingebettete Bilder unterstützt. Eine Liste der Bilddateiformate, für die OCR unterstützt wird, finden Sie unter [Unterstützte Dateitypen in Advanced eDiscovery](supported-filetypes-ediscovery20.md#image).
+Wenn Sie eine Auflistung auf einen Überprüfungssatz festlegen, extrahiert die Funktion zur optischen Zeichenerkennung (OCR) in Advanced eDiscovery automatisch Text aus Bildern und enthält den Bildtext mit dem Inhalt, der einem Überprüfungssatz hinzugefügt wird. Sie können den extrahierten Text in der Textanzeige der ausgewählten Bilddatei im Überprüfungssatz anzeigen. Auf diese Weise können Sie den Text in Bildern genauer überprüfen und analysieren. OCR wird für lose Dateien, E-Mail-Anlagen und eingebettete Bilder unterstützt. Eine Liste der Bilddateiformate, für die OCR unterstützt wird, finden Sie unter [Unterstützte Dateitypen in Advanced eDiscovery](supported-filetypes-ediscovery20.md#image).
 
 Sie müssen die OCR-Funktion für jeden Fall aktivieren, den Sie in Advanced eDiscovery erstellen. Weitere Informationen finden Sie unter [Configure search and analytics settings](configure-search-and-analytics-settings-in-advanced-ediscovery.md#optical-character-recognition-ocr).

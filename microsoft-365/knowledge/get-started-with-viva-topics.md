@@ -31,9 +31,9 @@ Mit "Viva Topics" können Sie:
 
 ## <a name="discover-important-topics-highlighted-in-related-content"></a>Entdecken wichtiger Themen, die in verwandten Inhalten hervorgehoben werden 
 
-Wenn Sie in Microsoft 365 gespeicherte Inhalte lesen, werden Themen inline hervorgehoben. Wenn Sie den Mauszeiger auf den Themanamen zeigen, werden weitere Informationen auf einer Themenkarte angezeigt. Möglicherweise wird eine Eingabeaufforderung angezeigt, um Feedback zu Themenkarten und Themenseiten zu geben. Wenn Sie Feedback zu Themen geben, verbessern Sie die Erfahrung für sich selbst und andere. 
+Wenn Sie inhalte lesen, die in Microsoft 365, werden Die Themen inline hervorgehoben. Wenn Sie den Mauszeiger auf den Themanamen zeigen, werden weitere Informationen auf einer Themenkarte angezeigt. Möglicherweise wird eine Eingabeaufforderung angezeigt, um Feedback zu Themenkarten und Themenseiten zu geben. Wenn Sie Feedback zu Themen geben, verbessern Sie die Erfahrung für sich selbst und andere. 
 
-In den Themen werden nach und nach Themenhighlights im gesamten Dienst eingeführt. Zunächst werden Highlights in SharePoint-Nachrichten und -Seiten angezeigt.
+In den Themen werden nach und nach Themenhighlights im gesamten Dienst eingeführt. Zunächst werden Highlights in SharePoint und Seiten angezeigt.
 
 
 ## <a name="find-people-and-content-connected-to-important-topics"></a>Suchen von Personen und Inhalten, die mit wichtigen Themen verbunden sind 
@@ -46,15 +46,15 @@ Nur die Ressourcen, die für Sie freigegeben wurden, werden Ihnen angezeigt. And
 
 ## <a name="improve-the-network-by-adding-topic-definitions-editing-connections-and-more"></a>Verbessern des Netzwerks durch Hinzufügen von Themendefinitionen, Bearbeiten von Verbindungen und mehr 
 
-Themenseiten enthalten die vollständigen Details zu einem Thema und können von jeder von Ihrer Organisation bestimmten Organisation kuratiert werden. Während auf der Themenkarte nur zwei Personen und Ressourcen angezeigt werden, wird die vollständige Liste auf der Themenseite angezeigt. Bearbeiten Sie die Seite, um die Beschreibung zu verbessern oder die Verbindungen zu Personen und Ressourcen zu aktualisieren. Während jeder Feedback zur Verbesserung des Netzwerks bereitstellen kann, kann Ihre Organisation einschränken, wer Themen direkt bearbeiten kann. Nur Personen, für die die Ressourcen freigegeben wurden, werden die Themen und Ressourcen sehen.
+Themenseiten enthalten die vollständigen Details zu einem Thema und können von jeder von Ihrer Organisation bestimmten Organisation kuratiert werden. Während auf der Themenkarte nur zwei Personen und Ressourcen angezeigt werden, wird die vollständige Liste auf der Themenseite angezeigt. Bearbeiten Sie die Seite, um die Beschreibung zu verbessern oder die Verbindungen zu Personen und Ressourcen zu aktualisieren. Zwar kann jeder Feedback geben, um das Netzwerk zu verbessern, möglicherweise schränkt Ihre Organisation jedoch ein, wer Themen direkt bearbeiten kann. Nur Personen, für die die Ressourcen freigegeben wurden, werden die Themen und Ressourcen sehen.
 
 
 ## <a name="see-also"></a>Siehe auch
 [Microsoft Viva Topics – Übersicht](topic-experiences-overview.md)</br>
-[Topic Center Übersicht](topic-center-overview.md)</br>
+[Themencenter-Übersicht](topic-center-overview.md)</br>
 [Erstellen eines Themas](create-a-topic.md)</br>
 [Thema bearbeiten](edit-a-topic.md)</br>
-[Verwalten von Themen](manage-topics.md)</br>
+[Themen verwalten](manage-topics.md)</br>
 [Verwenden von Microsoft Search zum Suchen eines Themas](search.md)</br>
 [Security Trimming](topic-experiences-security-trimming.md)
 

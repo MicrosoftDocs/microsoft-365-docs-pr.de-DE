@@ -1,5 +1,5 @@
 ---
-title: Zuweisen von Skype for Business Online-Richtlinien pro Benutzer mit PowerShell für Microsoft 365
+title: Zuweisen von Benutzerrichtlinien Skype for Business Onlinerichtlinien mit PowerShell für Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 'Zusammenfassung: Verwenden Sie PowerShell für Microsoft 365, um Benutzerkommunikationseinstellungen mit Skype for Business Online-Richtlinien zuzuordnen.'
+description: 'Zusammenfassung: Verwenden Sie PowerShell Microsoft 365, um Benutzerkommunikationseinstellungen mit Skype for Business Onlinerichtlinien zuzuordnen.'
 ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
 ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
@@ -21,11 +21,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/19/2021
 ms.locfileid: "50905404"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Zuweisen von Skype for Business Online-Richtlinien pro Benutzer mit PowerShell für Microsoft 365
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Zuweisen von Benutzerrichtlinien Skype for Business Onlinerichtlinien mit PowerShell für Microsoft 365
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Die Verwendung von PowerShell für Microsoft 365 ist eine effiziente Möglichkeit zum Zuweisen von Benutzerkommunikationseinstellungen mit Skype for Business Online-Richtlinien.
+Die Verwendung von PowerShell für Microsoft 365 ist eine effiziente Möglichkeit zum Zuweisen von Benutzerkommunikationseinstellungen mit Skype for Business Onlinerichtlinien.
   
 ## <a name="prepare-to-run-the-powershell-commands"></a>Vorbereiten der Ausführung der PowerShell-Befehle
 
@@ -141,4 +141,4 @@ Dies werden 500 Benutzer gleichzeitig finden, die nicht über eine Clientrichtli
   
 [Verwalten von Microsoft 365 mit PowerShell](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)
+[Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)

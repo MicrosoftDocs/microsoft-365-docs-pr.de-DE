@@ -22,10 +22,10 @@ ms.locfileid: "51601389"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Schrittweiser Bedrohungsschutz in Microsoft Defender für Office 365
 
-Der Schutz- oder Filterstapel von Microsoft Defender für Office 365 kann wie in diesem Artikel in vier Phasen aufgeschlüsselt werden. Im Allgemeinen werden alle diese Phasen vor der Zustellung von eingehenden E-Mails durchläuft, aber der tatsächliche E-Mail-Pfad unterliegt der Defender for Office 365-Konfiguration einer Organisation.
+Der Microsoft Defender für Office 365- oder Filterstapel kann wie in diesem Artikel in vier Phasen aufgeschlüsselt werden. Im Allgemeinen durchläuft eingehende E-Mails alle diese Phasen vor der Zustellung, aber der tatsächliche Pfad der E-Mail unterliegt der Defender for Office 365 Organisation.
 
 > [!TIP]
-> Bleiben Sie bis zum Ende dieses  Artikels dran, um eine einheitliche Grafik aller 4 Phasen des Defender for Office 365-Schutzes zu finden!
+> Bleiben Sie bis zum Ende dieses  Artikels dran, um eine einheitliche Grafik aller 4 Phasen von Defender for Office 365 zu finden!
 
 ## <a name="phase-1---edge-protection"></a>Phase 1 – Edge protection
 
@@ -35,7 +35,7 @@ Edgeblöcke sind so konzipiert, dass sie automatisch sind. Bei falsch positivem 
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase1.png" alt-text="Phase 1 der Filterung in Defender for Office 365 ist Edge Protection.":::
 
-1. **Die Netzwerkeinschränkung** schützt die Office 365-Infrastruktur und Kunden vor Denial of Service (DOS)-Angriffen, indem die Anzahl der Nachrichten begrenzt wird, die von einer bestimmten Gruppe von Infrastruktur übermittelt werden können.
+1. **Die Netzwerkdrosselung** schützt Office 365 und Kunden vor Denial of Service (DOS)-Angriffen, indem die Anzahl der Nachrichten begrenzt wird, die von einer bestimmten Gruppe von Infrastruktur übermittelt werden können.
 
 2. **Durch die IP-Reputation und -Einschränkung** werden Nachrichten blockiert, die von bekannten ungültigen Verbindungs-IP-Adressen gesendet werden. Wenn eine bestimmte IP in kurzer Zeit viele Nachrichten sendet, werden sie gedrosselt.
 
@@ -45,7 +45,7 @@ Edgeblöcke sind so konzipiert, dass sie automatisch sind. Bei falsch positivem 
 
 5. **Die Backscattererkennung** verhindert, dass eine Organisation über ungültige Unzustellungsberichte (Non-Delivery Reports, NDRs) angegriffen wird.
 
-6. **Die erweiterte Filterung für Connectors** behält Authentifizierungsinformationen bei, auch wenn Datenverkehr ein anderes Gerät durchläuft, bevor es Office 365 erreicht. Dadurch wird die Filterstapelgenauigkeit verbessert, einschließlich heuristischem Clustering, Antis spoofing und Antiphishingmodellen für maschinelles Lernen, auch wenn es sich um komplexe oder hybride Routingszenarien handelt.
+6. **Die erweiterte Filterung für Connectors** behält Authentifizierungsinformationen bei, auch wenn der Datenverkehr ein anderes Gerät durchläuft, bevor Office 365. Dadurch wird die Filterstapelgenauigkeit verbessert, einschließlich heuristischem Clustering, Antis spoofing und Antiphishingmodellen für maschinelles Lernen, auch wenn es sich um komplexe oder hybride Routingszenarien handelt.
 
 ## <a name="phase-2---sender-intelligence"></a>Phase 2 – Sender Intelligence
 
@@ -83,13 +83,13 @@ In dieser Phase beginnt der Filterstapel mit der Verarbeitung der spezifischen I
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase3.png" alt-text="Phase 3 der Filterung in MDO ist Inhaltsfilterung.":::
 
-1. **Transportregeln** (auch als Nachrichtenflussregeln oder Exchange-Transportregeln bezeichnet) ermöglichen es einem Administrator, eine vielzahl von Aktionen zu ergreifen, wenn für eine Nachricht ein ebenso breites Spektrum von Bedingungen erfüllt ist. Alle Nachrichten, die durch Ihre Organisation fließen, werden anhand der aktivierten Nachrichtenflussregeln/-transportregeln ausgewertet.
+1. **Transportregeln** (auch als Nachrichtenflussregeln oder Exchange Transportregeln bezeichnet) ermöglichen einem Administrator, eine vielzahl von Aktionen zu ergreifen, wenn für eine Nachricht ein ebenso breites Spektrum von Bedingungen erfüllt ist. Alle Nachrichten, die durch Ihre Organisation fließen, werden anhand der aktivierten Nachrichtenflussregeln/-transportregeln ausgewertet.
 
 2. **Microsoft Defender Antivirus** und zwei *Antivirenmodule von* Drittanbietern werden verwendet, um alle bekannten Schadsoftware in Anlagen zu erkennen.
 
 3. Die Antivirenmodule (AV) werden auch zum True-Type aller  Anlagen verwendet, sodass type blocking alle Anlagen der vom Administrator angegebenen Typen blockieren kann.
 
-4. Wenn Microsoft Defender für Office 365 eine bösartige Anlage erkennt, werden der Dateihash und ein Hash ihrer aktiven Inhalte zur Exchange Online Protection (EOP)-Reputation hinzugefügt. **Das Blockieren der** Anlagenverwenkung blockiert diese Datei über alle Office 365- und Endpunkte über MSAV-Cloudaufrufe.
+4. Wenn Microsoft Defender for Office 365 eine bösartige Anlage erkennt, werden der Dateihash und ein Hash seiner aktiven Inhalte der Exchange Online Protection (EOP) hinzugefügt. **Das Blockieren der** Anlagenverwenkung blockiert diese Datei über alle Office 365 und auf Endpunkten über MSAV-Cloudaufrufe.
 
 5. **Heuristisches Clustering** kann anhand von Übermittlungshuristiken feststellen, dass eine Datei verdächtig ist. Wenn eine verdächtige Anlage gefunden wird, wird die gesamte Kampagne angehalten, und die Datei wird sandkasteniert. Wenn die Datei als schädlich festgestellt wird, wird die gesamte Kampagne blockiert.
 
@@ -99,7 +99,7 @@ In dieser Phase beginnt der Filterstapel mit der Verarbeitung der spezifischen I
 
 8. **Inhaltshuristiken können** verdächtige Nachrichten basierend auf der Struktur und Worthäufigkeit im Textkörper der Nachricht mithilfe von Machine Learning-Modellen erkennen.
 
-9. **Sichere Anlagen** sandkastent jede Anlage für Defender for Office 365-Kunden mithilfe einer dynamischen Analyse, um noch nie gesehene Bedrohungen zu erkennen.
+9. **Sichere Anlagen** sandkastent jede Anlage für Defender für Office 365 Kunden, indem dynamische Analysen verwendet werden, um nie zuvor gesehene Bedrohungen zu erkennen.
 
 10. **Die Detonation** verknüpfter Inhalte behandelt jede URL, die mit einer Datei in einer E-Mail verknüpft ist, als Anlage und sandt die Datei zum Zeitpunkt der Zustellung asynchron in einen Sandkasten.
 
@@ -107,25 +107,25 @@ In dieser Phase beginnt der Filterstapel mit der Verarbeitung der spezifischen I
 
 ## <a name="phase-4---post-delivery-protection"></a>Phase 4 – Post-Delivery Protection
 
-Die letzte Phase erfolgt nach der E-Mail- oder Dateizustellung, die auf E-Mails in verschiedenen Postfächern und Dateien und Links erfolgt, die in Clients wie Microsoft Teams angezeigt werden.
+Die letzte Phase erfolgt nach der E-Mail- oder Dateizustellung, die auf E-Mails in verschiedenen Postfächern und Dateien und Links erfolgt, die in Clients wie Microsoft Teams.
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Phase 4 der Filterung in Defender for Office 365 ist Post-Delivery Protection.":::
 
 1. **Sichere Links** ist der Zeit-und-Klick-Schutz von MDO. Jede URL in jeder Nachricht wird so umschlossen, dass sie auf Microsoft Safe Links-Server verweist. Wenn auf eine URL geklickt wird, wird sie mit der neuesten Reputation überprüft, bevor der Benutzer zur Zielwebsite umgeleitet wird. Die URL wird asynchron sandkasteniert, um ihre Reputation zu aktualisieren.
 
-2. **Phish Zero-Hour Auto-Purge (ZAP)** erkennt und neutralisiert schädliche Phishingnachrichten, die bereits an Exchange Online-Postfächer übermittelt wurden.
+2. **Phish Zero-Hour Auto-Purge (ZAP)** erkennt und neutralisiert schädliche Phishingnachrichten, die bereits an Exchange Online übermittelt wurden.
 
-3. **Schadsoftware ZAP** erkennt und neutralisiert Schadsoftwarenachrichten, die bereits an Exchange Online-Postfächer übermittelt wurden.
+3. **Schadsoftware ZAP** erkennt und neutralisiert schadsoftwareaktive Nachrichten, die bereits an Exchange Online zugestellt wurden.
 
-4. **Spam ZAP** erkennt und neutralisiert schädliche Spamnachrichten, die bereits an Exchange Online-Postfächer übermittelt wurden.
+4. **Spam ZAP** erkennt und neutralisiert schädliche Spamnachrichten, die bereits an andere Postfächer Exchange Online wurden.
 
 5. **Mit Kampagnenansichten** können Administratoren das Gesamtbild eines Angriffs schneller und vollständiger sehen als jedes Team ohne Automatisierung. Microsoft nutzt die enormen Mengen an Antiphishing-, Antispam- und Anti-Malware-Daten über den gesamten Dienst, um Kampagnen zu identifizieren, und ermöglicht Administratoren dann, sie von Anfang bis Ende zu untersuchen, einschließlich Zielen, Auswirkungen und Flüssen, die auch in einem herunterladbaren Kampagnen-Write-up verfügbar sind.
 
 6. **Die Report Message-Add-Ins** ermöglichen Es Benutzern, falsch positive Ergebnisse (gute E-Mails, fälschlicherweise als "schlecht" *gekennzeichnet)* oder falsch negative (schlechte E-Mails, die als "gut" gekennzeichnet *sind)* einfach an Microsoft zur weiteren Analyse zu melden.
 
-7. **Sichere Links für Office-Clients** bieten den gleichen Schutz für sichere Links , nativ, innerhalb von Office-Clients wie Word, PowerPoint und Excel.
+7. **Sichere Links für Office-Clients** bieten den gleichen Schutz für sichere Links , nativ, innerhalb von Office Clients wie Word, PowerPoint und Excel.
 
-8. **Der Schutz für OneDrive, SharePoint** und Teams bietet denselben Schutz vor schädlichen Dateien , nativ, innerhalb von OneDrive, SharePoint und Microsoft Teams.
+8. Der Schutz für **OneDrive, SharePoint** und Teams bietet den gleichen Schutz vor schädlichen Dateien, nativ, innerhalb von OneDrive, SharePoint und Microsoft Teams.
 
 9. Wenn eine URL, die auf eine Datei verweist, nach der Zustellung ausgewählt wird, wird bei der **Detonation** verknüpfter Inhalte eine Warnseite angezeigt, bis der Sandkasten der Datei abgeschlossen ist und die URL als sicher eingestuft wird.
 
@@ -138,6 +138,6 @@ Das endgültige Diagramm (wie bei allen Teilen des *Diagramms,* aus dem es erste
 
 ## <a name="more-information"></a>Weitere Informationen
 
-Müssen Sie Microsoft Defender für Office 365 ***jetzt** einrichten _? Verwenden Sie diesen Stapel, _now*, mit diesem Schritt [für](protect-against-threats.md) Schritt, um mit dem Schutz Ihrer Organisation zu beginnen.
+Müssen Sie Microsoft Defender für Office 365 ***jetzt _?** einrichten? Verwenden Sie diesen Stapel, _now*, mit diesem Schritt [für](protect-against-threats.md) Schritt, um mit dem Schutz Ihrer Organisation zu beginnen.
 
 *Besonderer Dank von MSFTTracyP und dem* Dokument schreibenden Team an Dennis Garruba für diesen Inhalt.

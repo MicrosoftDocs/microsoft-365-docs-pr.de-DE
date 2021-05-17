@@ -33,7 +33,7 @@ ms.locfileid: "51687423"
 
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Mit Dem Webschutz können Sie die Sicherheit des Webbrowsens Ihrer Organisation mithilfe von Berichten unter **Berichte > Webschutz** im Microsoft Defender Security Center überwachen. Der Bericht enthält Karten, die Statistiken zur Erkennung von Webbedrohungen bereitstellen.
+Mit Dem Webschutz können Sie die Sicherheit des Webbrowsings in Ihrer Organisation mithilfe von Berichten unter **Berichte > Webschutz** in der Microsoft Defender Security Center. Der Bericht enthält Karten, die Statistiken zur Erkennung von Webbedrohungen bereitstellen.
 
 - **Erkennungen** von Webbedrohungen im Laufe der Zeit – diese Trendkarte zeigt die Anzahl von Webbedrohungen an, die während des ausgewählten Zeitraums vom Typ erkannt wurden (Letzte 30 Tage, Letzte 3 Monate, letzte 6 Monate)
  

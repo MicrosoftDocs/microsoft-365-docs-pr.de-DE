@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von Defender for Office 365-Berichten im Dashboard "Berichte"
+title: Anzeigen von Defender for Office 365 Berichten im Dashboard "Berichte"
 f1.keywords:
 - CSH
 ms.author: tracyp
@@ -16,7 +16,7 @@ ms.assetid: e47e838c-d99e-4c0b-b9aa-e66c4fae902f
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Suchen und verwenden Sie Berichte für Microsoft Defender für Office 365 im Security & Compliance Center.
+description: Suchen und verwenden Sie Berichte für Microsoft Defender for Office 365 im Security & Compliance Center.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51599899"
 ---
-# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Anzeigen von Defender for Office 365-Berichten im Dashboard "Berichte" im Security & Compliance Center
+# <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Anzeigen von Defender Office 365 Berichten im Dashboard "Berichte" im Security & Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -35,33 +35,33 @@ ms.locfileid: "51599899"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft Defender für Office 365-Organisationen (z. B. Microsoft 365 E5-Abonnements oder Microsoft Defender für Office 365 Plan 1 oder Microsoft Defender für Office 365 Plan 2-Add-Ons) enthalten eine Vielzahl sicherheitsbezogener Berichte. Wenn Sie über die [erforderlichen Berechtigungen verfügen,](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)können Sie diese Berichte im Security & Compliance Center anzeigen, indem Sie zu **Reports** \> **Dashboard gehen.** Öffnen Sie , um direkt zum Dashboard Berichte zu <https://protection.office.com/insightdashboard> wechseln.
+Microsoft Defender für Office 365-Organisationen (z. B. Microsoft 365 E5-Abonnements oder Microsoft Defender für Office 365 Plan 1 oder Microsoft Defender für Office 365 Plan 2-Add-Ons) enthalten eine Vielzahl von sicherheitsbezogenen Berichten. Wenn Sie über die [erforderlichen Berechtigungen verfügen,](#what-permissions-are-needed-to-view-the-defender-for-office-365-reports)können Sie diese Berichte im Security & Compliance Center anzeigen, indem Sie zu **Reports** \> **Dashboard gehen.** Öffnen Sie , um direkt zum Dashboard Berichte zu <https://protection.office.com/insightdashboard> wechseln.
 
 ![Das Dashboard "Berichte" im Security & Compliance Center](../../media/6b213d34-adbb-44af-8549-be9a7e2db087.png)
 
 ## <a name="defender-for-office-365-file-types-report"></a>Defender für Office 365-Bericht zu Dateitypen
 
-Im Bericht über Dateitypen von **Defender für Office 365** wird der Dateityp angezeigt, der von sicheren Anlagen als schädlich [erkannt wurde.](safe-attachments.md)
+Der **Bericht "Defender für Office 365 Dateitypen"** zeigt den Dateityp an, der von sicheren Anlagen als schädlich [erkannt wurde.](safe-attachments.md)
 
  Die aggregierte Ansicht des Berichts ermöglicht eine Filterung von 90 Tagen, während die Detailansicht nur 10 Tage Filterung zulässt.
 
-Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie **zu** Berichtsdashboard, und wählen Sie \>  Defender für **Office 365-Dateitypen aus.** Öffnen Sie , um direkt zum Bericht zu <https://protection.office.com/reportv2?id=ATPFileReport> wechseln.
+Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie zu Berichtsdashboard, und wählen Sie Defender für Office 365  \>  **Dateitypen aus.** Öffnen Sie , um direkt zum Bericht zu <https://protection.office.com/reportv2?id=ATPFileReport> wechseln.
 
-![Defender für Office 365-Dateitypen-Widget im Dashboard "Berichte"](../../media/atp-file-types-report-widget.png)
+![Defender for Office 365-Dateitypen-Widget im Dashboard "Berichte"](../../media/atp-file-types-report-widget.png)
 
 > [!NOTE]
-> Die Informationen in diesem Bericht sind auch im Bericht zur Disposition von [Defender für Office 365-Nachrichten verfügbar.](#defender-for-office-365-message-disposition-report)
+> Die Informationen in diesem Bericht sind auch im [Bericht "Defender for Office 365" verfügbar.](#defender-for-office-365-message-disposition-report)
 
-### <a name="report-view-for-the-defender-for-office-365-file-types-report"></a>Berichtsansicht für den Defender for Office 365-Dateitypbericht
+### <a name="report-view-for-the-defender-for-office-365-file-types-report"></a>Berichtsansicht für den Bericht "Defender for Office 365"-Dateitypen
 
 Die folgenden Ansichten sind verfügbar:
 
 - **Daten anzeigen nach: Datei**: Das Diagramm enthält die folgenden Informationen:
 
-  - **Schädliche Excel-Anlagen**
+  - **Bösartige Excel Anlagen**
   - **Bösartige Flash-Anlagen**
   - **Schädliche PDF-Anlagen**
-  - **Schädliche PowerPoint-Anlagen**
+  - **Bösartige PowerPoint Anlagen**
   - **Bösartige URLs**
   - **Schädliche Word-Anlagen**
   - **Schädliche ausführbare Anlagen**
@@ -69,7 +69,7 @@ Die folgenden Ansichten sind verfügbar:
 
   Wenn Sie den Mauszeiger auf einen bestimmten Tag (Datenpunkt) zeigen, können Sie die Aufschlüsselung der Typen von schädlichen Dateien sehen, die von sicheren [Anlagen](safe-attachments.md) und Schutz vor Schadsoftware [in EOP erkannt wurden.](anti-malware-protection.md)
 
-  ![Dateiansicht im Bericht über Dateitypen von Defender for Office 365](../../media/atp-file-types-report-file-view.png)
+  ![Dateiansicht im Bericht "Defender for Office 365"-Dateitypen](../../media/atp-file-types-report-file-view.png)
 
   Wenn Sie auf **Filter** klicken, können Sie den Bericht mit den folgenden Filtern ändern:
 
@@ -83,14 +83,14 @@ Die folgenden Ansichten sind verfügbar:
   - **Überwachte Nachrichten**
   - **Durch dynamische E-Mail-Zustellung** ersetzt: Weitere Informationen finden Sie unter [Dynamic Delivery in Safe Attachments policies](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
-  ![Nachrichtenansicht im Bericht über Defender for Office 365-Dateitypen](../../media/atp-file-types-report-message-view.png)
+  ![Nachrichtenansicht im Bericht "Defender for Office 365"-Dateitypen](../../media/atp-file-types-report-message-view.png)
 
   Wenn Sie auf **Filter** klicken, können Sie den Bericht mit den folgenden Filtern ändern:
 
   - **Startdatum** und **Enddatum**
   - Die gleichen Nachrichtendispositionswerte, die im Diagramm verfügbar sind, und die **zusätzlichen Nachrichten übergebenen** Wert.
 
-### <a name="details-table-view-for-the-defender-for-office-365-file-types-report"></a>Detailtabelle für den Defender for Office 365-Dateitypbericht
+### <a name="details-table-view-for-the-defender-for-office-365-file-types-report"></a>Detailtabelle für den Bericht "Defender for Office 365"-Dateitypen
 
 Wenn Sie auf **Detailtabelle anzeigen** klicken, bietet der Bericht eine Nahezu-Echtzeitansicht aller Klicks, die in der Organisation für die letzten 10 Tage vorkommen. Die angezeigten Informationen hängen von dem Diagramm ab, das Sie betrachtet haben:
 
@@ -127,14 +127,14 @@ Klicken Sie auf Bericht anzeigen, um zur Berichtsansicht **zurück zu kommen.**
 
 Der Bericht zur Disposition **von ATP-Nachrichten** zeigt die Aktionen an, die für E-Mail-Nachrichten ergriffen wurden, die als schädliche Inhalte erkannt wurden.
 
-Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie **zu** Berichtsdashboard, und wählen Sie \>  Defender für **Office 365-Nachrichtendisposition aus.** Öffnen Sie , um direkt zum Bericht zu <https://protection.office.com/reportv2?id=ATPMessageReport> wechseln.
+Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie zu Berichtsdashboard, und wählen Sie Defender aus, um Office 365 zu  \>  **erhalten.** Öffnen Sie , um direkt zum Bericht zu <https://protection.office.com/reportv2?id=ATPMessageReport> wechseln.
 
-![Defender für Office 365-Nachrichtendispositions-Widget im Dashboard "Berichte"](../../media/atp-message-disposition-report-widget.png)
+![Defender for Office 365 message disposition widget in the Reports dashboard](../../media/atp-message-disposition-report-widget.png)
 
 > [!NOTE]
-> Die Informationen in diesem Bericht sind auch im [Defender for Office 365-Dateitypenbericht verfügbar.](#defender-for-office-365-file-types-report)
+> Die Informationen in diesem Bericht sind auch im [Bericht "Defender for Office 365" verfügbar.](#defender-for-office-365-file-types-report)
 
-### <a name="report-view-for-the-defender-for-office-365-message-disposition-report"></a>Berichtsansicht für den Bericht zur Disposition von Defender für Office 365-Nachrichten
+### <a name="report-view-for-the-defender-for-office-365-message-disposition-report"></a>Berichtsansicht für den Bericht "Defender for Office 365"
 
 Die folgenden Ansichten sind verfügbar:
 
@@ -145,7 +145,7 @@ Die folgenden Ansichten sind verfügbar:
   - **Überwachte Nachrichten**
   - **Durch dynamische E-Mail-Zustellung** ersetzt: Weitere Informationen finden Sie unter [Dynamic Delivery in Safe Attachments policies](safe-attachments.md#dynamic-delivery-in-safe-attachments-policies).
 
-  ![Nachrichtenansicht im Bericht über Defender for Office 365-Dateitypen](../../media/atp-file-types-report-message-view.png)
+  ![Nachrichtenansicht im Bericht "Defender for Office 365"-Dateitypen](../../media/atp-file-types-report-message-view.png)
 
   Wenn Sie auf **Filter** klicken, können Sie den Bericht mit den folgenden Filtern ändern:
 
@@ -154,10 +154,10 @@ Die folgenden Ansichten sind verfügbar:
 
 - **Daten anzeigen nach: Datei**: Das Diagramm enthält die folgenden Informationen:
 
-  - **Schädliche Excel-Anlagen**
+  - **Bösartige Excel Anlagen**
   - **Bösartige Flash-Anlagen**
   - **Schädliche PDF-Anlagen**
-  - **Schädliche PowerPoint-Anlagen**
+  - **Bösartige PowerPoint Anlagen**
   - **Bösartige URLs**
   - **Schädliche Word-Anlagen**
   - **Schädliche ausführbare Anlagen**
@@ -165,14 +165,14 @@ Die folgenden Ansichten sind verfügbar:
 
   Wenn Sie den Mauszeiger auf einen bestimmten Tag (Datenpunkt) zeigen, können Sie die Aufschlüsselung der Typen von schädlichen Dateien sehen, die von sicheren [Anlagen](safe-attachments.md) und Schutz vor Schadsoftware [in EOP erkannt wurden.](anti-malware-protection.md)
 
-  ![Dateiansicht im Bericht über Dateitypen von Defender for Office 365](../../media/atp-file-types-report-file-view.png)
+  ![Dateiansicht im Bericht "Defender for Office 365"-Dateitypen](../../media/atp-file-types-report-file-view.png)
 
   Wenn Sie auf **Filter** klicken, können Sie den Bericht mit den folgenden Filtern ändern:
 
   - **Startdatum** und **Enddatum**
   - Dieselben Dateitypwerte, die im Diagramm angezeigt werden.
 
-### <a name="details-table-view-for-the-defender-for-office-365-message-disposition-report"></a>Detailtabelle für den Bericht zur Disposition von Defender for Office 365-Nachrichten
+### <a name="details-table-view-for-the-defender-for-office-365-message-disposition-report"></a>Detailtabelle für den Bericht "Defender for Office 365 Message Disposition"
 
 Wenn Sie auf **Detailtabelle anzeigen** klicken, bietet der Bericht eine Nahezu-Echtzeitansicht aller Klicks, die in der Organisation für die letzten 10 Tage vorkommen. Die angezeigten Informationen hängen von dem Diagramm ab, das Sie betrachtet haben:
 
@@ -262,7 +262,7 @@ Die Detailtabelle enthält die gleichen Informationen auf jeder Registerkarte.
 
 ## <a name="threat-protection-status-report"></a>Threat Protection-Statusbericht
 
-Der **Statusbericht** zum Bedrohungsschutz ist eine einzelne Ansicht, die Informationen zu schädlichen Inhalten und schädlichen E-Mails enthält, die von [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) und Microsoft Defender für Office 365 erkannt und blockiert werden. Weitere Informationen finden Sie unter [Statusbericht zum Bedrohungsschutz](view-email-security-reports.md#threat-protection-status-report).
+Der **Statusbericht** zum Bedrohungsschutz ist eine einzelne Ansicht, die Informationen zu schädlichen Inhalten und schädlichen E-Mails enthält, die von [Exchange Online Protection](exchange-online-protection-overview.md) (EOP) und Microsoft Defender für Office 365. Weitere Informationen finden Sie unter [Statusbericht zum Bedrohungsschutz](view-email-security-reports.md#threat-protection-status-report).
 
 ## <a name="url-threat-protection-report"></a>BERICHT zum Schutz vor URL-Bedrohungen
 
@@ -317,7 +317,7 @@ Wenn Sie auf **Detailtabelle anzeigen** klicken, bietet der Bericht eine Fast-Ec
 - **Klickzeit**
 - **Benutzer**
 - **URL**
-- **Aktion**
+- **Action**
 - **App**
 
 Wenn Sie **in** der Detailtabelle auf Filter klicken, können Sie nach denselben  Kriterien  wie in der Berichtsansicht und auch nach Domänen oder Empfängern filtern, die durch Kommas getrennt sind.
@@ -335,15 +335,15 @@ Zusätzlich zu den in diesem Artikel beschriebenen Berichten sind weitere Berich
 
 |Bericht|Thema|
 |---|---|
-|**Explorer** (Microsoft Defender für Office 365  Plan 2) oder Echtzeiterkennungen (Microsoft Defender für Office 365 Plan 1)|[Sicherheitsrisiken-Explorer (und Echtzeit-Erkennung)](threat-explorer.md)|
+|**Explorer** (Microsoft Defender für Office 365 Plan 2) oder **Echtzeiterkennungen** (Microsoft Defender für Office 365 Plan 1)|[Sicherheitsrisiken-Explorer (und Echtzeit-Erkennung)](threat-explorer.md)|
 |**E-Mail-Sicherheitsberichte,** z. B. der Bericht "Die besten Absender und Empfänger", der Bericht "Spoof-E-Mail" und der Bericht "Spamerkennungen".|[Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center](view-email-security-reports.md)|
 |**Nachrichtenflussberichte,** z. B. der Weiterleitungsbericht, der Statusbericht "E-Mailflow" und der Bericht "Absender und Empfänger am oberen Rand".|[Anzeigen von Nachrichtenflussberichten im Security & Compliance Center](view-mail-flow-reports.md)|
 |**URL-Ablaufverfolgung für sichere Links** (nur PowerShell). In der Ausgabe dieses Cmdlets werden die Ergebnisse der Aktionen für sichere Links in den letzten sieben Tagen angezeigt.|[Get-UrlTrace](/powershell/module/exchange/get-urltrace)|
 |**Ergebnisse des E-Mail-Datenverkehrs für EOP und Microsoft Defender für Office 365** (nur PowerShell). Die Ausgabe dieses Cmdlets enthält Informationen zu Domäne, Datum, Ereignistyp, Richtung, Aktion und Nachrichtenanzahl.|[Get-MailTrafficATPReport](/powershell/module/exchange/get-mailtrafficatpreport)|
-|**E-Mail-Detailberichte für EOP- und Defender for Office 365-Erkennungen** (nur PowerShell). Die Ausgabe dieses Cmdlets enthält Details zu schädlichen Dateien oder URLs, Phishingversuchen, Identitätswechseln und anderen potenziellen Bedrohungen in E-Mails oder Dateien.|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
+|**E-Mail-Detailberichte für EOP und Defender für Office 365** (nur PowerShell). Die Ausgabe dieses Cmdlets enthält Details zu schädlichen Dateien oder URLs, Phishingversuchen, Identitätswechseln und anderen potenziellen Bedrohungen in E-Mails oder Dateien.|[Get-MailDetailATPReport](/powershell/module/exchange/get-maildetailatpreport)|
 |
 
-## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Welche Berechtigungen sind erforderlich, um die Defender for Office 365-Berichte anzeigen zu können?
+## <a name="what-permissions-are-needed-to-view-the-defender-for-office-365-reports"></a>Welche Berechtigungen sind erforderlich, um defender for Office 365 anzeigen?
 
 Um die in diesem Artikel beschriebenen Berichte anzeigen und verwenden zu können, müssen Sie Mitglied einer der folgenden Rollengruppen im Security & Compliance Center sein:
 
@@ -358,7 +358,7 @@ Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance 
 
 ## <a name="what-if-the-reports-arent-showing-data"></a>Was passiert, wenn in den Berichten keine Daten angezeigt werden?
 
-Wenn in Ihren Defender for Office 365-Berichten keine Daten angezeigt werden, überprüfen Sie, ob Ihre Richtlinien ordnungsgemäß eingerichtet sind. Ihre Organisation muss über [](set-up-safe-attachments-policies.md) Richtlinien für sichere [Links](set-up-safe-links-policies.md) und Richtlinien für sichere Anlagen verfügen, damit Defender for Office 365-Schutz möglich ist. Weitere Informationen finden [Sie unter Antispam- und Schutz vor Schadsoftware.](anti-spam-and-anti-malware-protection.md)
+Wenn in Ihrem Defender for Office 365 keine Daten angezeigt werden, überprüfen Sie, ob Ihre Richtlinien ordnungsgemäß eingerichtet sind. In Ihrer Organisation müssen [](set-up-safe-attachments-policies.md) [Richtlinien](set-up-safe-links-policies.md) für sichere Links und Richtlinien für sichere Anlagen definiert sein, damit Defender Office 365 schutz ist. Weitere Informationen finden [Sie unter Antispam- und Schutz vor Schadsoftware.](anti-spam-and-anti-malware-protection.md)
 
 ## <a name="related-topics"></a>Verwandte Themen
 

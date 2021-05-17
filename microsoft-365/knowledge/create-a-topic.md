@@ -32,29 +32,29 @@ In Themen von "Viva" können Sie ein neues Thema erstellen, wenn ein Thema nicht
 ## <a name="requirements"></a>Anforderungen
 
 Zum Erstellen eines neuen Themas müssen Sie:
-- Verfügen Sie über eine Lizenz für "Viva Topics".
-- Haben Sie Berechtigungen für [**Die Personen, die Themen erstellen oder bearbeiten können.**](./topic-experiences-user-permissions.md) Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
+- Über eine Viva Topics-Lizenz verfügen.
+- Verfügen Sie über Berechtigungen [**Wer Können Sie Themen erstellen oder bearbeiten.**](./topic-experiences-user-permissions.md) Wissensadministratoren können Benutzern diese Berechtigung in den Berechtigungseinstellungen von Viva Topics erteilen. 
 
 > [!Note] 
 > Benutzer, die über die Berechtigung zum Verwalten von Themen im Themencenter (Wissensmanager) verfügen, verfügen bereits über Berechtigungen zum Erstellen und Bearbeiten von Themen.
 
 ## <a name="to-create-a-topic"></a>So erstellen Sie ein Thema
 
-Sie können ein neues Thema an zwei Speicherorten erstellen:
+Sie können ein neues Thema an zwei Stellen erstellen:
 
-- Startseite des Themencenters: Jeder  lizenzierte Benutzer mit der Berechtigung "Wer kann Themen erstellen oder  bearbeiten" (Mitwirkende) kann ein neues Thema im Themencenter erstellen, indem er das Menü Neu und die Seite Thema **auswählt.** 
+- Startseite des Themencenters: Jeder lizenzierte Benutzer mit dem **Wer** kann themenberechtigungen (Mitwirkende) erstellen  oder bearbeiten, indem er das Menü Neu und die Seite Thema **auswählt.** 
 
     ![Neues Thema aus dem Themencenter](../media/knowledge-management/new-topic.png)  
 
-- Seite "Themen verwalten": Jeder lizenzierte Benutzer, der über die Berechtigung **"Wer** kann Themen verwalten" verfügt (Wissensmanager), kann ein neues Thema auf der Seite Themen verwalten im Themencenter erstellen, indem er neue **Themenseite aus wählt.** 
+- Seite "Themen verwalten":  Jeder lizenzierte Benutzer Wer der über die Berechtigung zum Verwalten von Themen verfügt (Wissensmanager), kann ein neues Thema auf der Seite Themen verwalten im Themencenter erstellen, indem er neue Themenseite **aus wählt.** 
 
     ![Neues Thema aus Verwalten von Themen](../media/knowledge-management/new-topic-topic-center.png)  
 
 ### <a name="to-create-a-new-topic"></a>So erstellen Sie ein neues Thema:
 
-1. Wählen Sie die Option zum Erstellen einer neuen Themenseite im Menüband auf der Seite Themen verwalten aus.
+1. Wählen Sie im Menüband auf der Seite Themen verwalten die Option zum Erstellen einer neuen Themenseite aus.
 
-2.  Geben Sie **im Abschnitt Dieses Thema** benennen den Namen des neuen Themas ein.
+2.  Geben Sie im Abschnitt **Thema benennen** den Namen des neuen Themas ein.
 
     ![Benennen Sie dieses Thema](../media/knowledge-management/k-new-topic-page.png)  
 
@@ -70,16 +70,16 @@ Sie können ein neues Thema an zwei Speicherorten erstellen:
  
     ![Angeheftete Personen](../media/knowledge-management/pinned-people.png)
 
-5. Im Abschnitt **Angeheftete Dateien** und Seiten können Sie eine Datei oder Eine SharePoint-Websiteseite hinzufügen oder anheften, die dem Thema zugeordnet ist.
+5. Im Abschnitt **Angeheftete** Dateien und Seiten können Sie eine Datei oder SharePoint websiteseite hinzufügen oder anheften, die dem Thema zugeordnet ist.
 
    ![Angeheftete Dateien und Seiten](../media/knowledge-management/pinned-files-and-pages.png)
  
-    Um eine neue Datei hinzuzufügen, wählen Sie **Hinzufügen** aus, wählen Sie die SharePoint-Website aus Ihren Häufigen oder gefolgten Websites aus, und wählen Sie dann die Datei aus der Dokumentbibliothek der Website aus.
+    Wenn Sie eine neue Datei hinzufügen möchten, wählen Sie Hinzufügen **aus** den Websites SharePoint häufig oder gefolgt aus, und wählen Sie dann die Datei aus der Dokumentbibliothek der Website aus.
 
     Sie können auch die Option **Von einem Link verwenden,** um eine Datei oder Seite hinzuzufügen, indem Sie die URL angeben. 
 
     > [!Note] 
-    > Dateien und Seiten, die Sie hinzufügen, müssen sich im gleichen Microsoft 365-Mandanten befinden. Wenn Sie einen Link zu einer externen Ressource im Thema hinzufügen möchten, können Sie ihn über das Zeichenbereichsymbol in Schritt 8 hinzufügen.
+    > Dateien und Seiten, die Sie hinzufügen, müssen sich innerhalb desselben mandanten Microsoft 365 befinden. Wenn Sie einen Link zu einer externen Ressource im Thema hinzufügen möchten, können Sie ihn über das Zeichenbereichsymbol in Schritt 8 hinzufügen.
 
 
 6.  Im **Abschnitt Verwandte Websites** werden Websites mit Informationen zum Thema angezeigt. 
@@ -90,7 +90,7 @@ Sie können ein neues Thema an zwei Speicherorten erstellen:
     
     ![Website auswählen](../media/knowledge-management/sites.png)
 
-7. Der **Abschnitt Verwandte Themen** zeigt Verbindungen zwischen Themen. Sie können eine Verbindung zu einem  anderen Thema hinzufügen, indem Sie die Schaltfläche Verbinden mit einem verwandten Thema auswählen und dann den Namen des verwandten Themas eingeben und aus den Suchergebnissen auswählen. 
+7. Der **Abschnitt Verwandte Themen** zeigt Verbindungen zwischen Themen. Sie können eine Verbindung zu einem anderen Thema hinzufügen, indem Sie **das** Verbinden zu einer verwandten Themenschaltfläche auswählen und dann den Namen des verwandten Themas eingeben und aus den Suchergebnissen auswählen. 
 
    ![Verwandte Themen](../media/knowledge-management/related-topic.png)  
 
@@ -98,7 +98,7 @@ Sie können ein neues Thema an zwei Speicherorten erstellen:
 
    ![Beschreibung verwandter Themen](../media/knowledge-management/related-topics-update.png) 
 
-   Das verwandte Thema, das Sie hinzugefügt haben, wird als verbundenes Thema angezeigt.
+   Das von Ihnen hinzugefügte verwandte Thema wird als verbundenes Thema angezeigt.
 
    ![Verwandte Themen verbunden](../media/knowledge-management/related-topics-final.png) 
 
@@ -110,13 +110,13 @@ Sie können ein neues Thema an zwei Speicherorten erstellen:
 
    ![Bestätigen des Entfernens](../media/knowledge-management/remove-related-confirm.png) 
 
-8. Sie können der Seite auch statische Elemente hinzufügen (z. B. Text, Bilder oder Links), indem Sie das Zeichenbereichsymbol auswählen, das Sie unter der kurzen Beschreibung finden. Durch Die Auswahl wird die SharePoint-Toolbox geöffnet, aus der Sie das Element auswählen können, das Sie der Seite hinzufügen möchten.
+8. Sie können der Seite auch statische Elemente hinzufügen (z. B. Text, Bilder oder Links), indem Sie das Zeichenbereichsymbol auswählen, das Sie unter der kurzen Beschreibung finden. Durch Auswahl wird die SharePoint geöffnet, aus der Sie das Element auswählen können, das Sie der Seite hinzufügen möchten.
 
    ![Canvas-Symbol](../media/knowledge-management/webpart-library.png) 
 
-9. Wählen **Sie Veröffentlichen** aus, um Ihre Änderungen zu speichern. 
+9. Wählen Sie **Veröffentlichen**, um Ihre Änderungen zu speichern. 
 
-Nachdem Sie die Seite veröffentlicht haben, werden der Themenname, der alternative Name, die Beschreibung und angeheftet personen allen lizenzierten Benutzern angezeigt, die das Thema anzeigen. Bestimmte Dateien, Seiten und Websites werden nur auf der Themenseite angezeigt, wenn der Viewer über Office 365-Berechtigungen für das Element verfügt. 
+Nachdem Sie die Seite veröffentlicht haben, werden der Themenname, der alternative Name, die Beschreibung und die angehefteten Personen für alle lizenzierten Benutzer angezeigt, die das Thema betrachten. Bestimmte Dateien, Seiten und Websites werden nur auf der Themenseite angezeigt, wenn der Betrachter über Office 365-Berechtigungen für das Element verfügt. 
 
 
 

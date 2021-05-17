@@ -1,6 +1,6 @@
 ---
-title: Insider-Risikomanagement in Microsoft 365
-description: Erfahren Sie, wie Sie das Insider-Risikomanagement in Microsoft 365 konfigurieren.
+title: Insider risk management in Microsoft 365
+description: Erfahren Sie, wie Sie insider risk management in Microsoft 365.
 keywords: Microsoft 365, Insiderrisiko, Compliance
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -23,11 +23,11 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/15/2021
 ms.locfileid: "50819747"
 ---
-# <a name="insider-risk-management-in-microsoft-365"></a>Insider-Risikomanagement in Microsoft 365
+# <a name="insider-risk-management-in-microsoft-365"></a>Insider risk management in Microsoft 365
 
 Mitarbeiter haben zunehmend mehr Zugriff auf das Erstellen, Verwalten und Freigeben von Daten über ein breites Spektrum von Plattformen und Diensten hinweg. In den meisten Fällen verfügen Organisationen über begrenzte Ressourcen und Tools, um organisationsweite Risiken zu identifizieren und zu mindern und gleichzeitig Complianceanforderungen und Datenschutzstandards für Mitarbeiter zu erfüllen. Diese Risiken können Datendiebstahl durch ausscheidende Mitarbeiter und Datenlecks von Informationen außerhalb Ihrer Organisation durch versehentliche Überschatten oder böswillige Absichten umfassen.
 
-Das Insider-Risikomanagement in Microsoft 365 verwendet die gesamte Bandbreite des Diensts und Drittanbieterindikatoren, um riskante Benutzeraktivitäten schnell zu identifizieren, zu verdingen und zu reagieren. Mithilfe von Protokollen aus Microsoft 365 und Microsoft Graph können Sie mithilfe des Insiderrisikomanagements bestimmte Richtlinien definieren, um Risikoindikatoren zu identifizieren und Maßnahmen zur Minderung dieser Risiken zu ergreifen.
+Das Insider-Risikomanagement in Microsoft 365 verwendet die gesamte Bandbreite an Dienst- und Drittanbieterindikatoren, um riskante Benutzeraktivitäten schnell zu identifizieren, zu verdingen und auf riskante Benutzeraktivitäten zu reagieren. Mithilfe von Protokollen von Microsoft 365 und Microsoft Graph können Sie bestimmte Richtlinien definieren, um Risikoindikatoren zu identifizieren und Maßnahmen zur Minderung dieser Risiken zu ergreifen.
 
 ## <a name="configure-insider-risk-management-for-microsoft-365"></a>Konfigurieren des Insiderrisikomanagements für Microsoft 365
 

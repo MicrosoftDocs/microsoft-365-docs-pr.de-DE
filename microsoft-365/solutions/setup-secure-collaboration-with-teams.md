@@ -15,7 +15,7 @@ ms.custom:
 - M365solutions
 - seo-marvel-jun2020
 f1.keywords: NOCSH
-description: Erfahren Sie, wie Sie eine sichere Inhaltszusammenarbeit in Teams einrichten, um Ihre Daten basierend auf ihrer Vertraulichkeit zu schützen.
+description: Erfahren Sie, wie Sie eine sichere Inhaltszusammenarbeit in Teams, um Ihre Daten basierend auf ihrer Vertraulichkeit zu schützen.
 ms.openlocfilehash: 804307b3035f0d2246dc0ac541cce2d63506c351
 ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
@@ -28,10 +28,10 @@ ms.locfileid: "51591910"
 Die Möglichkeit zum einfachen Teilen von Informationen mit den richtigen Personen und gleichzeitiger Verhinderung von Überschattung ist der Schlüssel zum Erfolg einer Organisation. Dies umfasst die Möglichkeit, vertrauliche Daten sicher nur für diejenigen zu teilen, die Zugriff darauf haben sollten. Je nach Projekt kann dies die Freigabe vertraulicher Daten für Personen außerhalb Ihrer Organisation umfassen.
 
 Diese Lösungsanleitung für die Zusammenarbeit umfasst zwei Komponenten, die Ihnen helfen:
-- Bereitstellen von Microsoft Teams mit dem richtigen Schutzniveau für jedes Projekt
+- Bereitstellen Microsoft Teams mit der richtigen Schutzebene für jedes Projekt
 - Konfigurieren der externen Freigabe mit den entsprechenden Sicherheitseinstellungen für jedes Projekt
 
-![Bereitstellen von Teams mit entsprechendem Schutz und Konfigurieren der externen Freigabe mit entsprechenden Sicherheitseinstellungen](..\media\solutions-architecture-center\secure-collaboration-overview.png)
+![Bereitstellen Teams mit entsprechendem Schutz und Konfigurieren der externen Freigabe mit entsprechenden Sicherheitseinstellungen](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
 Wenn keine vielseitigen und einfach zu verwendenden Tools für die Inhaltszusammenarbeit verfügbar sind, arbeiten Benutzer häufig per E-Mail zusammen. Dies ist eine mühsame und fehleranfällige Methode der Zusammenarbeit und kann das Risiko einer unangemessenen Freigabe von Informationen erhöhen. Wenn die Freigabe von Informationen zu schwierig ist, könnten sie wieder Verbraucherprodukte verwenden, die nicht von der IT geregelt werden. Dies kann ein noch höheres Risiko darstellen.
 
@@ -52,7 +52,7 @@ Die meisten Organisationen verfügen über eine Vielzahl von Informationen mit u
 
 Informationen wie Marketingbroschüren sind für die gemeinsame Nutzung außerhalb der Organisation gedacht. Informationen wie z. B. Mensamenüs sind nicht für die externe Freigabe gedacht, hätten aber keine geschäftlichen Auswirkungen, wenn sie extern freigegeben würden. Diese Arten von Informationen benötigen wenig oder keinen Schutz.
 
-Dieselben Marketingbroschüren werden während der Entwicklung möglicherweise nur innerhalb der Organisation freigegeben. In diesem Fall sind die Standardfreigabeeinstellungen in Teams möglicherweise ausreichend.
+Dieselben Marketingbroschüren werden während der Entwicklung möglicherweise nur innerhalb der Organisation freigegeben. In diesem Fall sind die Standardfreigabeeinstellungen in Teams ausreichend.
 
 Informationen zu einem neuen Produkt, das sich in der Entwicklung befindet, können auch innerhalb der Organisation als vertraulich betrachtet werden. In diesem Fall kann ein höherer Schutz angemessen sein. Sie könnten den Zugriff auf diese Informationen beispielsweise auf Mitglieder eines bestimmten Teams beschränken. Je nach Projekt müssen Sie möglicherweise mit Personen außerhalb Ihrer Organisation zusammenarbeiten, z. B. mit einem Anbieter oder einer Partnerorganisation.
 
@@ -60,9 +60,9 @@ Informationen, die für den Erfolg Ihrer Organisation entscheidend sind oder str
 
 ![Risikoskala von niedrig (veröffentlichter Prospekt) bis hoch (vertrauliche Geschäftsdaten)](../media/solutions-architecture-center/SecureCollaboration-SensitivityAndBusinessImpactofSharing-fromVisio.png)
 
-Für alle oben genannten Szenarien können Sie Teams in Microsoft Teams verwenden, um die Informationen zu speichern, zu teilen und zusammenzuarbeiten. 
+Für alle oben genannten Szenarien können Sie Teams in Microsoft Teams zum Speichern, Freigeben und Zusammenarbeiten an den Informationen verwenden. 
 
-Zum Konfigurieren der sicheren Zusammenarbeit verwenden Sie diese Microsoft 365-Funktionen und -Features.
+Zum Konfigurieren der sicheren Zusammenarbeit verwenden Sie diese Microsoft 365 und Features.
 
 | Produkt oder Komponente | Funktion oder Feature | Lizenzierung |
 |:-------|:-----|:-------|
@@ -75,11 +75,11 @@ Zum Konfigurieren der sicheren Zusammenarbeit verwenden Sie diese Microsoft 365-
 
 Microsoft 365 bietet viele Optionen für die Verwaltung Ihrer Lösung für die Zusammenarbeit. Es wird empfohlen, diese Bereitstellungsinhalte zusammen mit den Inhalten der Governance für die Zusammenarbeit zu [verwenden,](collaboration-governance-overview.md) um die beste Lösung für die Zusammenarbeit für Ihre Organisation zu erstellen.
 
-### <a name="using-teams-for-all-kinds-of-data"></a>Verwenden von Teams für alle Arten von Daten
+### <a name="using-teams-for-all-kinds-of-data"></a>Verwenden Teams für alle Arten von Daten
 
-Um den Zugriff auf Informationen mit unterschiedlichen Empfindlichkeiten zu verwalten, haben wir drei verschiedene Schutzebenen für [Teams entwickelt.](configure-teams-three-tiers-protection.md) Sie können jede dieser Ebenen anpassen, um die Anforderungen oder Ihr Unternehmen besser zu erfüllen. 
+Um den Zugriff auf Informationen mit unterschiedlichen Empfindlichkeiten zu verwalten, haben wir drei verschiedene Schutzebenen für [Teams.](configure-teams-three-tiers-protection.md) Sie können jede dieser Ebenen anpassen, um die Anforderungen oder Ihr Unternehmen besser zu erfüllen. 
 
-![Grafik von drei Schutzebenen für Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
+![Abbildung von drei Schutzebenen für Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
 Diese Ebenen –  *Basisebene,* vertraulich und hochgradig sensibel *–* erhöhen schrittweise den Schutz, der dazu beit hilft, Überlagerungen und potenzielle Informationslecks zu verhindern, wie in der folgenden Tabelle dargestellt.
@@ -96,8 +96,8 @@ Diese Ebenen –  *Basisebene,* vertraulich und hochgradig sensibel *–* erhöh
 
 Das Konfigurieren dieser Ebenen umfasst:
 
-- Konfigurieren von Einstellungen in Teams für den Gastzugriff und private Kanäle
-- Konfigurieren von Einstellungen in der zugeordneten SharePoint-Website eines Teams für interne und Gastfreigabe, Zugriffsanforderungen und Freigabelinks
+- Konfigurieren von Einstellungen in Teams für Gastzugriff und private Kanäle
+- Konfigurieren von Einstellungen in der zugeordneten SharePoint eines Teams für interne und Gastfreigabe, Zugriffsanforderungen und Freigabelinks
 - Konfigurieren von  *Vertraulichkeitsbezeichnungen* zum Klassifizieren der Teams und Steuern der Gastfreigabe und des Zugriffs von nicht verwalteten Geräten
 - Konfigurieren einer *Vertraulichkeitsbezeichnung* für die hochsensible Ebene zum Verschlüsseln der Dokumente, auf die sie angewendet wird
 
@@ -116,7 +116,7 @@ Möglicherweise müssen Sie Informationen beliebiger Vertraulichkeit mit [Person
 Diese Ressourcen helfen Ihnen beim Einrichten Ihrer Umgebung für die Zusammenarbeit mit Personen außerhalb Ihrer Organisation:
 
 - [Arbeiten Sie an Dokumenten für](collaborate-on-documents.md) die Freigabe einzelner Dateien von Ordnern zusammen.
-- [Arbeiten Sie auf einer Website zusammen,](collaborate-in-site.md) um mit Gästen auf einer SharePoint-Website zusammenzuarbeiten.
+- [Arbeiten Sie auf einer Website](collaborate-in-site.md) zusammen, um mit Gästen in einer SharePoint zusammenarbeiten.
 - [Zusammenarbeit als Team für](collaborate-as-team.md) die Zusammenarbeit mit Gästen in einem Team.
 
 Je nach Vertraulichkeit der freigegebenen Informationen können Sie Sicherheitsvorkehrungen hinzufügen, um überschattet zu werden. Diese Ressourcen helfen Ihnen beim Einrichten der Schutzmaßnahmen, die Sie für Ihre Organisation benötigen:
@@ -131,13 +131,13 @@ Wenn Sie über ein Hauptprojekt mit einer Partnerorganisation verfügen, können
 
 ## <a name="training-for-administrators"></a>Schulung für Administratoren
 
-Diese Schulungsmodule von Microsoft Learn helfen Ihnen, die Features für Zusammenarbeit, Governance und Identität in Teams und SharePoint zu erlernen.
+Diese Schulungsmodule von Microsoft Learn helfen Ihnen, die Features für Zusammenarbeit, Governance und Identität in Teams und SharePoint.
 
 #### <a name="teams"></a>Teams
 
 |Schulung:|Verwalten der Zusammenarbeit im Team mit Microsoft Teams|
 |:---|:---|
-|![Schulungssymbol für die Zusammenarbeit in Teams](../media/manage-team-collaboration-with-microsoft-teams.svg)|Verwalten der Zusammenarbeit im Team mit Microsoft Teams bietet eine Einführung in die Features und Funktionen von Microsoft Teams, dem zentralen Hub für die Zusammenarbeit im Team in Microsoft 365. Hier erfahren Sie, wie Sie mithilfe von Teams Teamarbeit und Kommunikation innerhalb Ihrer Organisation – sowohl lokal als auch mobil – auf einer breiten Palette von Geräten – von Desktops bis Tablets und Smartphones – vereinfachen und gleichzeitig die vielfältigen Funktionen von Office 365-Anwendungen nutzen können. Sie lernen, wie Teams eine umfassende und flexible Umgebung für die Zusammenarbeit über Anwendungen und Geräte hinweg bereitstellt. Dieser Lernpfad kann Ihnen bei der Vorbereitung für die Microsoft 365-Zertifizierung: Teams Administrator Associate helfen.<br><br>2 Std. 17 Min. - Lernpfad - 5 Module|
+|![Teams -Symbol für die Zusammenarbeit](../media/manage-team-collaboration-with-microsoft-teams.svg)|Verwalten der Zusammenarbeit im Team mit Microsoft Teams bietet eine Einführung in die Features und Funktionen von Microsoft Teams, dem zentralen Hub für die Zusammenarbeit im Team in Microsoft 365. Hier erfahren Sie, wie Sie mithilfe von Teams Teamarbeit und Kommunikation innerhalb Ihrer Organisation – sowohl lokal als auch mobil – auf einer breiten Palette von Geräten – von Desktops bis Tablets und Smartphones – vereinfachen und gleichzeitig die vielfältigen Funktionen von Office 365-Anwendungen nutzen können. Sie lernen, wie Teams eine umfassende und flexible Umgebung für die Zusammenarbeit über Anwendungen und Geräte hinweg bereitstellt. Dieser Lernpfad kann Ihnen bei der Vorbereitung für die Microsoft 365-Zertifizierung: Teams Administrator Associate helfen.<br><br>2 Std. 17 Min. - Lernpfad - 5 Module|
 
 > [!div class="nextstepaction"]
 > [Starten >](/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
@@ -146,17 +146,16 @@ Diese Schulungsmodule von Microsoft Learn helfen Ihnen, die Features für Zusamm
 
 |Schulung:|Zusammenarbeit mithilfe von SharePoint in Microsoft 365|
 |:---|:---|
-|![SharePoint-Schulungssymbol](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Verwalten freigegebener Inhalte mit Microsoft SharePoint bietet eine Einführung in die Features und Funktionen von SharePoint und dessen Funktionsweise mit Microsoft 365. Hier erfahren Sie mehr über die verschiedenen Typen von SharePoint-Websites, einschließlich Hubwebsites, sowie über den Schutz von Informationen, die Berichterstellung und die Überwachung. Sie erfahren außerdem, wie Sie die SharePoint-Datei- und Ordnerfreigabe verwenden, um die Zusammenarbeit zu optimieren, wie Sie Dateien extern freigeben und wie Sie SharePoint-Websites im SharePoint Admin-Center verwalten. Dieser Lernpfad kann Ihnen bei der Vorbereitung für die Microsoft 365 Certified: Teamwork Administrator Associate-Zertifizierung helfen.<br><br>1 Std. 14 Min. - Lernpfad - 4 Module|
+|![SharePoint Schulungssymbol](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Verwalten freigegebener Inhalte mit Microsoft SharePoint bietet eine Einführung in die Features und Funktionen von SharePoint und dessen Funktionsweise mit Microsoft 365. Hier erfahren Sie mehr über die verschiedenen Typen von SharePoint-Websites, einschließlich Hubwebsites, sowie über den Schutz von Informationen, die Berichterstellung und die Überwachung. Sie erfahren außerdem, wie Sie die SharePoint-Datei- und Ordnerfreigabe verwenden, um die Zusammenarbeit zu optimieren, wie Sie Dateien extern freigeben und wie Sie SharePoint-Websites im SharePoint Admin-Center verwalten. Dieser Lernpfad kann Ihnen bei der Vorbereitung für die Microsoft 365 Certified: Teamwork Administrator Associate-Zertifizierung helfen.<br><br>1 Std. 14 Min. - Lernpfad - 4 Module|
 
 > [!div class="nextstepaction"]
 > [Starten >](/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
 
-#### <a name="information-protection"></a>Schutz von Daten
-
+#### <a name="information-protection"></a>Information Protection
 
 |Schulung:|Schützen von Unternehmensinformationen mit Microsoft 365|
 |:---|:---|
-|![Schulungssymbol für Den Schutz von Teams-Informationen](../media/protect-enterprise-information-microsoft-365.svg)|Es ist schwieriger als je zuvor, die Informationen Ihrer Organisation zu schützen und zu sichern. Im Lernpfad Schützen von Unternehmensinformationen mit Microsoft 365 wird erläutert, wie Sie Ihre vertraulichen Informationen vor versehentlichem Teilen oder Missbrauch schützen, wie Sie Daten erkennen und klassifizieren, wie Sie sie mit Vertraulichkeitsbezeichnungen schützen können und wie Sie vertrauliche Informationen überwachen und analysieren können, um sich gegen den Verlust dieser Daten zu schützen. Dieser Lernpfad kann Ihnen bei der Vorbereitung auf die Microsoft 365 Certified: Security Administrator Associate und Microsoft 365 Certified: Enterprise Administration Expert-Zertifizierungen helfen.<br><br>1 Std. – Lernpfad – 5 Module|
+|![Teams info protection training icon](../media/protect-enterprise-information-microsoft-365.svg)|Es ist schwieriger als je zuvor, die Informationen Ihrer Organisation zu schützen und zu sichern. Im Lernpfad Schützen von Unternehmensinformationen mit Microsoft 365 wird erläutert, wie Sie Ihre vertraulichen Informationen vor versehentlichem Teilen oder Missbrauch schützen, wie Sie Daten erkennen und klassifizieren, wie Sie sie mit Vertraulichkeitsbezeichnungen schützen können und wie Sie vertrauliche Informationen überwachen und analysieren können, um sich gegen den Verlust dieser Daten zu schützen. Dieser Lernpfad hilft Ihnen bei der Vorbereitung auf Microsoft 365 Certified: Security Administrator Associate and Microsoft 365 Certified: Enterprise Administration Expert certifications..<br><br>1 Std. – Lernpfad – 5 Module|
 
 > [!div class="nextstepaction"]
 > [Starten >](/learn/modules/m365-security-info-overview/introduction/)
@@ -172,12 +171,12 @@ Diese Schulungsmodule von Microsoft Learn helfen Ihnen, die Features für Zusamm
 
 ## <a name="training-for-end-users"></a>Schulungen für Endbenutzer
 
-Diese Schulungsmodule können Ihren Benutzern helfen, Teams, Gruppen und SharePoint für die Zusammenarbeit in Microsoft 365 zu verwenden.
+Diese Schulungsmodule können Ihren Benutzern helfen, Teams, Gruppen und SharePoint für die Zusammenarbeit in Microsoft 365.
 
 |Teams|SharePoint|
 |:---|:---|
-|![Einrichten und Anpassen des Teamschulungssymbols](../media/set-up-customize-team-training.png)<br>**[Einrichten und Anpassen Ihres Teams](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![Symbol für SharePoint-Freigabe- und Synchronisierungsschulungen](../media/sharepoint-share-sync-training.png)<br>**[Freigeben und Synchronisieren](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
-|![Schulungssymbol für Teams zum Hochladen und Suchen von Dateien](../media/smc-teams-upload-find-files-training.png)<br>**[Hochladen und Suchen von Dateien](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
+|![Einrichten und Anpassen des Teamschulungssymbols](../media/set-up-customize-team-training.png)<br>**[Einrichten und Anpassen Ihres Teams](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![SharePoint Teilen und Synchronisieren des Schulungssymbols](../media/sharepoint-share-sync-training.png)<br>**[Freigeben und Synchronisieren](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
+|![Teams zum Hochladen und Suchen von Dateien (Schulungssymbol)](../media/smc-teams-upload-find-files-training.png)<br>**[Hochladen und Suchen von Dateien](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
 |![Zusammenarbeit in Teams und Kanälen (Symbol)](../media/teams-collaborate-channels-training.png)<br>**[Zusammenarbeit in Teams und Kanälen](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**|||
 
 ## <a name="illustrations"></a>Illustrationen
@@ -201,7 +200,7 @@ Die logische Architektur von Produktivitätsdiensten in Microsoft 365, beginnend
 ## <a name="deploy-the-secure-collaboration-solution"></a>Bereitstellen der Lösung für die sichere Zusammenarbeit
 
 Wenn Sie zur Bereitstellung dieser Lösung bereit sind, fahren Sie mit den folgenden Schritten fort:
-1. Konfigurieren Sie [die drei verschiedenen Schutzebenen für Teams](configure-teams-three-tiers-protection.md).
+1. Konfigurieren Sie [die drei verschiedenen Schutzebenen für Teams.](configure-teams-three-tiers-protection.md)
 2. Konfigurieren Sie Einstellungen für [die Freigabe von Informationen beliebiger Vertraulichkeit für Personen außerhalb Ihrer Organisation.](collaborate-with-people-outside-your-organization.md)
 
 ## <a name="see-also"></a>Siehe auch

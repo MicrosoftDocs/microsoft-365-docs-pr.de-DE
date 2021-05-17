@@ -1,5 +1,5 @@
 ---
-title: Manuelle Buchung erstellen
+title: Erstellen einer manuellen Buchung
 ms.author: kwekua
 author: kwekuako
 manager: scotv
@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 03a9acc9-f29c-456b-9fb2-0f49474b2708
-description: Befolgen Sie diese Anweisungen, um einen Termin zu erstellen und einen Mitarbeiter über die Microsoft-Buchungs-App zuzuweisen.
+description: Befolgen Sie diese Anweisungen, um einen Termin zu erstellen und einen Mitarbeiter über die Microsoft Bookings-App zuzuordnen.
 ms.openlocfilehash: dffc63b1f638c551e40d22852b1ba6a73c5be869
 ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
@@ -16,19 +16,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/18/2020
 ms.locfileid: "47962561"
 ---
-# <a name="create-a-manual-booking"></a>Manuelle Buchung erstellen
+# <a name="create-a-manual-booking"></a>Erstellen einer manuellen Buchung
 
-Buchungen können auf zwei verschiedene Arten geplant und die Mitarbeiter dafür festgelegt werden. Die erste Möglichkeit besteht darin, dass der Kunde eine eigenständige Buchungsseite oder eine eingebettete Buchungsseite verwendet, die Sie zu Ihrer Website hinzufügen. Die andere Möglichkeit besteht darin, dass Sie oder einer ihrer Mitarbeiter die Buchungen manuell eingeben, beispielsweise wenn ein Kunde einen Termin anruft. Der vorliegende Artikel befasst sich mit dem Szenario "manuelle Eingabe".
+Microsoft Bookings kann auf zwei verschiedene Arten geplant und besetzt werden. Die erste Möglichkeit besteht darin, dass der Kunde eine eigenständige Buchungsseite oder eine eingebettete Buchungsseite verwendet, die Sie Ihrer Website hinzufügen. Eine andere Möglichkeit ist, dass Sie oder einer Ihrer Mitarbeiter die Buchungen manuell eingeben, z. B. wenn ein Kunde für einen Termin anruft. Der vorliegende Artikel befasst sich mit dem Szenario "manuelle Eingabe".
 
-1. Wählen Sie in Microsoft 365 das App-Startfeld aus, und wählen Sie dann **Buchungen**aus.
+1. Wählen Microsoft 365 App-Startfeld aus, und wählen Sie dann **Bookings aus.**
 
-   ![Bild der Buchungen in App Launcher](../media/bookings-applauncher.png)
+   ![Abbildung von Bookings im App-Startfeld](../media/bookings-applauncher.png)
 
 1. Wählen Sie im Navigationsbereich **Kalender** \> **Neue Buchung** aus.
 
-   ![Bild der neuen Buchungsoberfläche](../media/bookings-newbooking.png)
+   ![Abbildung der neuen Buchungsbenutzeroberfläche](../media/bookings-newbooking.png)
 
-1. Wählen Sie den Dienst aus, der geleistet werden soll. Weitere Informationen finden Sie unter [define your Service offers in Microsoft Reservations](define-service-offerings.md) for Service Setup Instructions.
+1. Wählen Sie den Dienst aus, der geleistet werden soll. Unter [Define your service offerings in Microsoft Bookings finden](define-service-offerings.md) Sie Anweisungen zum Einrichten des Diensts.
 
 1. Geben Sie die Kundendaten ein, einschließlich Name, E-Mail-Adresse, Telefonnummer und sonstiger relevanter Details.
 
@@ -40,10 +40,10 @@ Buchungen können auf zwei verschiedene Arten geplant und die Mitarbeiter dafür
 
 1. Wählen Sie **E-Mail-Erinnerung hinzufügen** aus.
 
-1. Geben Sie an, wann die Erinnerung gesendet werden soll, wo Sie gesendet werden soll (**Kunde**, **Mitarbeiter**, **alle Teilnehmer**) und was die Erinnerungsnachricht sein soll.
+1. Geben Sie an, wann die Erinnerung gesendet werden soll, wo sie gesendet werden soll (**Kunde,** **Mitarbeiter,** Alle Teilnehmer ) und wie die **Erinnerungsnachricht** sein soll.
 
 1. Wählen Sie **Speichern** \> **Senden** aus.
 
-   Im folgenden finden Sie eine Beispiel-e-Mail der Erinnerung, die Ihr Kunde erhält:
+   Hier ist eine Beispiel-E-Mail der Erinnerung, die Ihr Kunde erhält:
 
-:::image type="content" source="../media/bookings-confirmed-email.png" alt-text="Screenshot: Beispiel Bestätigungs-e-Mail aus einer manuellen Buchung":::
+:::image type="content" source="../media/bookings-confirmed-email.png" alt-text="Screenshot: Beispiel einer Bestätigungs-E-Mail von einer manuellen Buchung":::

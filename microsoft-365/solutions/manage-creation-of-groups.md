@@ -28,7 +28,7 @@ ms.locfileid: "51656985"
 
 Standardmäßig können alle Benutzer Microsoft 365-Gruppen erstellen. Dies ist der empfohlene Ansatz, weil er es den Benutzern ermöglicht, ohne Unterstützung durch die IT mit der Zusammenarbeit zu beginnen.
 
-Wenn Sie in Ihrem Unternehmen einschränken müssen, wer Gruppen erstellen kann, können Sie die Microsoft 365-Gruppenerstellung auf die Mitglieder einer bestimmten Microsoft 365-Gruppe oder Sicherheitsgruppe beschränken.
+Wenn Ihr Unternehmen erfordert, dass Sie einschränken, wer Gruppen erstellen kann, können Sie die Microsoft 365-Gruppenerstellung auf die Mitglieder einer bestimmten Microsoft 365- oder Sicherheitsgruppe beschränken.
 
 Wenn Sie bedenken, dass Benutzer Teams oder Gruppen erstellen, die Ihren Geschäftsstandards nicht entsprechen, sollten Sie die Benutzer zum Abschließen eines Schulungskurses und anschließenden Hinzufügen zur Gruppe der zulässigen Benutzer verwenden.
 

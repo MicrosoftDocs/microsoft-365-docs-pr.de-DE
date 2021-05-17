@@ -16,37 +16,37 @@ ms.locfileid: "48846192"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Unterstützung für Microsoft Managed Desktop
 
-Microsoft stellt proaktives und reaktives Incident Management bereit. Microsoft verfolgt Vorfälle im Verwaltungsportal von Microsoft Managed Desktop. Sie werden nach [Severity-Definitionen](../working-with-managed-desktop/admin-support.md#sev)klassifiziert.
+Microsoft bietet proaktives und reaktives Vorfallmanagement. Microsoft verfolgt Vorfälle im Microsoft Managed Desktop Administratorportal. Sie werden nach [Schweregraddefinitionen klassifiziert.](../working-with-managed-desktop/admin-support.md#sev)
 
-Kunden können Microsoft Managed Desktop Operations für folgende Aufgaben kontaktieren:
-- Informationsanforderungen für den Microsoft Managed Desktop-Mandanten oder die-Konfiguration
-- Ändern von Anforderungen an die Konfiguration von Microsoft Managed Desktop-Geräten
-- Melden eines Schadens oder einer Störung
+Kunden können sich Microsoft Managed Desktop für:
+- Informationsanforderungen für den Microsoft Managed Desktop oder konfiguration
+- Ändern von Anforderungen an die Konfiguration Microsoft Managed Desktop Geräte
+- Melden eines Vorfalls oder Ausfalls
 
-## <a name="whats-included"></a>Was ist im Lieferumfang enthalten?
+## <a name="whats-included"></a>Was ist enthalten?
 
-Die Microsoft Managed Desktop-Unterstützung umfasst Folgendes:
+Microsoft Managed Desktop umfasst:
 
-- Ein Team von Ingenieuren, die für Microsoft Managed Desktop-Geräte reserviert sind
-- Support Optionen für Benutzer mit Microsoft Managed Desktop-Geräten
-- Gewährt begrenzten administrativen Zugriff auf Microsoft Managed Desktop-Geräte für Ingenieure, die Microsoft Managed Desktop-Geräte verwalten 
+- Ein Team von Technikern für Microsoft Managed Desktop Geräte
+- Supportoptionen für Benutzer mit Microsoft Managed Desktop Geräten
+- Gewährt Entwicklern, die Microsoft Managed Desktop verwalten, eingeschränkten Administratorzugriff auf Microsoft Managed Desktop Geräte 
 
 Unterstützte Produkte:
 
-- Windows 10 mit Microsoft Defender für Endpoint
-- Diese Microsoft 365-Apps für Enterprise-apps: Outlook, Word, PowerPoint, Excel, Skype for Business-Client, Microsoft Teams 
+- Windows 10 mit Microsoft Defender for Endpoint
+- Diese Microsoft 365 Apps for Enterprise: Outlook, Word, PowerPoint, Excel, Skype for Business Client, Microsoft Teams 
 - Microsoft Store für Unternehmen 
-- OneDrive für Unternehmen-Client 
+- OneDrive for Business Client 
 
-Support Details:
+Supportdetails:
 
-- Aktuell: Vereinigte Staaten, Kanada (ohne Quebec), Vereinigtes Königreich, Belgien, Luxemburg, Niederlande, Australien und Neuseeland (24x7x365) 
-- Englisch ist die einzige unterstützte Sprache für Telefon-und Chat Unterhaltungen mit Kunden 
-- Wir arbeiten mit Ihrem Unternehmens Helpdesk zusammen und ersetzen es nicht. Branchen-apps, Netzwerkressourcen usw. werden weiterhin von Ihrem Helpdesk verarbeitet. 
-- Microsoft Managed Desktop-Geräte in der Gruppe "Test" und Geräte, die nicht Teil von Microsoft Managed Desktop sind, liegen außerhalb des Bereichs 
+- Current: USA, Kanada (ohne Quebec), Vereinigtes Königreich, Belgien, Luxemburg, niederlande, Australien und Neuseeland (24x7x365) 
+- Englisch ist die einzige unterstützte Sprache für Telefon- und Chatunterhaltungen mit Kunden 
+- Wir arbeiten mit Ihrem #A0 zusammen und ersetzen sie nicht. Branchen-Apps, Netzwerkressourcen usw. werden weiterhin von Ihrem Helpdesk verarbeitet. 
+- Microsoft Managed Desktop geräte in der Gruppe "Test" und Geräte, die nicht Teil der Microsoft Managed Desktop sind nicht verfügbar 
 
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Erfahren Sie, wie IT-Administratoren Unterstützung erhalten können](../working-with-managed-desktop/admin-support.md)
-- [Erfahren Sie, wie Benutzer Unterstützung erhalten können](../working-with-managed-desktop/end-user-support.md)
+- [Erfahren Sie, wie IT-Administratoren Support erhalten können](../working-with-managed-desktop/admin-support.md)
+- [Erfahren Sie, wie Benutzer Support erhalten können](../working-with-managed-desktop/end-user-support.md)

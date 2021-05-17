@@ -32,7 +32,7 @@ Sie können Supporttickets oder Feedbackanfragen über das Microsoft Managed Des
 
 Supportanforderungstyp | Geeignet in folgender Situation
 --- | ---
-Incident | Sie müssen das Microsoft Managed Desktop Operations Team untersuchen, z. B. die weit verbreiteten Auswirkungen einer Änderung oder eines Dienstausfalls.
+Vorfall | Sie müssen das Microsoft Managed Desktop Operations Team untersuchen, z. B. die weit verbreiteten Auswirkungen einer Änderung oder eines Dienstausfalls.
 Anfordern von Informationen | Sie planen eine Änderung für Netzwerk, Proxykonfiguration, VPN-Systeme, Zertifikatablauf oder benötigen nur einige Informationen zum Dienst. Eine Antwort des Microsoft Managed Desktop Operations Teams wird bei der Übermittlung einer Änderung in Ihrer Organisation empfohlen.
 Änderungsanforderung | Sie benötigen vom Microsoft Managed Desktop Operations Team eine Änderung, z. B. das Verschieben von Geräten zwischen Updategruppen.
 

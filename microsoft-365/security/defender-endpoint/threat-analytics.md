@@ -99,13 +99,13 @@ Wechseln Sie zum **Abschnitt Analyst report,** um die detaillierten Experten-Sch
 Überprüfen Sie **im Abschnitt** Gegenmaßnahmen die Liste der spezifischen Empfehlungen für Aktionen, die Ihnen helfen können, Ihre Ausfallsicherheit gegenüber der Bedrohung zu erhöhen. Die Liste der nachverfolgten Gegenmaßnahmen umfasst:
 
 - **Sicherheitsupdates**– Bereitstellung von Sicherheitsupdates oder Patches für Sicherheitsrisiken
-- **Microsoft Defender Antivirus-Einstellungen**
+- **Microsoft Defender Antivirus Einstellungen**
   - Security Intelligence Version
-  - In der Cloud zugestellter Schutz  
+  - Aus der Cloud gelieferter Schutz  
   - Schutz potenziell unerwünschter Anwendungen (PUA)
   - Echtzeitschutz
  
-Informationen zur Risikominderung in [](next-gen-threat-and-vuln-mgt.md)diesem Abschnitt enthalten Daten aus der Bedrohungs- und Sicherheitsrisikoverwaltung, die auch detaillierte Drilldowninformationen aus verschiedenen Links im Bericht enthält.
+Informationen zur Risikominderung in diesem Abschnitt enthalten Daten aus [Bedrohungs- und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md), die auch detaillierte Drilldowninformationen aus verschiedenen Links im Bericht enthalten.
 
 ![Abbildung des Abschnitts "Gegenmaßnahmen" eines Berichts "Risikoanalysemaßnahmen" eines ](images/ta-mitigations.png)
  _Berichts zur Bedrohungsanalyse_
@@ -117,7 +117,7 @@ Beachten Sie bei der Verwendung der Berichte Folgendes:
 - Diagramme spiegeln nur nachverfolgte Gegenmaßnahmen wider. Überprüfen Sie die Berichtsübersicht auf zusätzliche Gegenmaßnahmen, die nicht in den Diagrammen angezeigt werden.
 - Gegenmaßnahmen garantieren keine vollständige Ausfallsicherheit. Die bereitgestellten Gegenmaßnahmen spiegeln die bestmöglichen Maßnahmen wider, die zur Verbesserung der Ausfallsicherheit erforderlich sind.
 - Geräte werden als "nicht verfügbar" gezählt, wenn sie keine Daten an den Dienst übermittelt haben.
-- Antivirusbezogene Statistiken basieren auf Microsoft Defender Antivirus-Einstellungen. Geräte mit Antivirenlösungen von Drittanbietern können als "verfügbar" angezeigt werden.
+- Antivirusbezogene Statistiken basieren auf Microsoft Defender Antivirus Einstellungen. Geräte mit Antivirenlösungen von Drittanbietern können als "verfügbar" angezeigt werden.
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Proaktives Aufsuchen von Bedrohungen mit erweiterter Suche](advanced-hunting-overview.md) 

@@ -1,5 +1,5 @@
 ---
-title: Identitäts- und Gerätezugriffsrichtlinien zum Zulassen des B2B-Zugriffs für Gastbenutzer und externe Benutzer – Microsoft 365 for Enterprise | Microsoft Docs
+title: Identitäts- und Gerätezugriffsrichtlinien zum Zulassen des B2B-Zugriffs für Gastbenutzer und externe Benutzer – Microsoft 365 für | Microsoft Docs
 description: Beschreibt die empfohlenen Richtlinien für bedingten Zugriff und verwandte Richtlinien zum Schutz des Zugriffs von Gästen und externen Benutzern.
 ms.prod: m365-security
 ms.topic: article
@@ -28,7 +28,7 @@ ms.locfileid: "51615495"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Richtlinien zum Zulassen des Gastzugriffs und des externen B2B-Zugriffs durch B2B
 
-In diesem Artikel wird die Anpassung der empfohlenen Geräte- und Identitätszugriffsrichtlinien erläutert, um Gästen und externen Benutzern, die über ein Azure Active Directory (Azure AD) Business-to-Business (B2B)-Konto verfügen, zugriff zu ermöglichen. Diese Anleitung baut auf den [allgemeinen Identitäts- und Gerätezugriffsrichtlinien auf.](identity-access-policies.md)
+In diesem Artikel wird die Anpassung der empfohlenen Geräte- und Identitätszugriffsrichtlinien erläutert, um Gästen und externen Benutzern, die über ein Azure Active Directory (Azure AD) Business-to-Business (B2B)-Konto verfügen, Zugriff zu ermöglichen. Diese Anleitung baut auf den [allgemeinen Identitäts- und Gerätezugriffsrichtlinien auf.](identity-access-policies.md)
 
 Diese Empfehlungen sind so konzipiert, dass sie auf die **Basisebene** des Schutzes angewendet werden. Sie können die Empfehlungen jedoch auch an Ihre spezifischen Anforderungen für den **vertraulichen** und streng **regulierten Schutz** anpassen.
 
@@ -54,7 +54,7 @@ Um Gäste und externe Benutzer in Richtlinien für bedingten Zugriff ein- oder a
 
 ## <a name="more-information"></a>Weitere Informationen
 
-### <a name="guests-and-external-user-access-with-microsoft-teams"></a>Gast- und externer Benutzerzugriff mit Microsoft Teams
+### <a name="guests-and-external-user-access-with-microsoft-teams"></a>Gäste und externer Benutzerzugriff mit Microsoft Teams
 
 Microsoft Teams definiert die folgenden Benutzer:
 
@@ -64,7 +64,7 @@ Microsoft Teams definiert die folgenden Benutzer:
 
 Weitere Informationen finden Sie im [Vergleich zwischen Gästen und externem Benutzerzugriff für Teams](/microsoftteams/communicate-with-users-from-other-organizations#compare-external-and-guest-access).
 
-Weitere Informationen zum Schützen von Identitäts- und Gerätezugriffsrichtlinien für Teams finden Sie unter Richtlinienempfehlungen zum Schützen von [Teams-Chats, -Gruppen und -Dateien.](teams-access-policies.md)
+Weitere Informationen zum Sichern von Identitäts- und Gerätezugriffsrichtlinien für Teams finden Sie unter Richtlinienempfehlungen zum Sichern Teams [Chats,](teams-access-policies.md)Gruppen und Dateien .
 
 ### <a name="require-mfa-always-for-guest-and-external-users"></a>MFA immer für Gastbenutzer und externe Benutzer erforderlich
 
@@ -82,7 +82,7 @@ Nur eine Organisation kann ein Gerät verwalten. Wenn Sie Gäste und externe Ben
 
 ## <a name="next-step"></a>Nächster Schritt
 
-![Schritt 4: Richtlinien für Microsoft 365-Cloud-Apps und Microsoft Cloud App Security](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Schritt 4: Richtlinien für Microsoft 365 cloud apps and Microsoft Cloud App Security](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Konfigurieren von Richtlinien für bedingten Zugriff für:
 

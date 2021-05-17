@@ -18,7 +18,7 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können sich über die Antispameinstellungen und -filter informieren, mit deren Hilfe Spam in Exchange Online Protection (EOP) verhindert wird.
+description: Administratoren können mehr über die Antispameinstellungen und -filter erfahren, mit deren Hilfe Spam in Exchange Online Protection (EOP) verhindert wird.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: eaff771d6fa0490819ec076b5a9a43ac843cf207
@@ -40,7 +40,7 @@ ms.locfileid: "51650266"
 > [!NOTE]
 > Dieses Thema richtet sich an Administratoren. Endbenutzerthemen finden Sie unter Übersicht über den [Junk-E-Mail-Filter](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) und [Informationen zu Junk-E-Mails und Phishing.](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31)
 
-In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer werden E-Mail-Nachrichten automatisch durch EOP vor Spam (Junk-E-Mails) geschützt.
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer werden E-Mail-Nachrichten automatisch durch EOP vor Spam (Junk-E-Mails) geschützt.
 
 Die Roadmap zur E-Mail-Sicherheit von Microsoft beinhaltet einen neuen produktübergreifenden Ansatz. Die EOP-Antispam- und Antiphishingtechnologie wird auf allen E-Mail-Plattformen angewendet, um Benutzern die neuesten Antispam- und Antiphishingtools und Innovationen im gesamten Netzwerk zur Verfügung zu stellen. Das Ziel für EOP ist ein umfassender und nutzbarer E-Mail-Dienst, der Ihnen hilft, Junk-E-Mails, betrügerische E-Mail-Gefahren (Phishing) und Schadsoftware zu erkennen und Benutzer davor zu schützen.
 
@@ -51,14 +51,14 @@ Zusammen mit der E-Mail-Verwendung ist auch der E-Mail-Missbrauch gestiegen. Nic
 
 ## <a name="anti-spam-technologies-in-eop"></a>Antispamtechnologien in EOP
 
-Um Junk-E-Mails zu reduzieren, umfasst EOP Junk-E-Mail-Schutz, der proprietäre Spamfiltertechnologien verwendet, um Junk-E-Mails von legitimen E-Mails zu identifizieren und zu trennen. Die EOP-Spamfilterung lernt von bekannten Spam- und Phishingbedrohungen und Benutzerfeedback von unserer Verbraucherplattform, Outlook.com. Kontinuierliches Feedback von EOP-Benutzern im Junk-E-Mail-Klassifizierungsprogramm hilft dabei, sicherzustellen, dass die EOP-Technologien kontinuierlich trainiert und verbessert werden.
+Um Junk-E-Mails zu reduzieren, umfasst EOP Junk-E-Mail-Schutz, der proprietäre Spamfiltertechnologien verwendet, um Junk-E-Mails von legitimen E-Mails zu identifizieren und zu trennen. Die EOP-Spamfilterung lernt von bekannten Spam- und Phishingbedrohungen und Benutzerfeedback von unserer Verbraucherplattform Outlook.com. Kontinuierliches Feedback von EOP-Benutzern im Junk-E-Mail-Klassifizierungsprogramm hilft dabei, sicherzustellen, dass die EOP-Technologien kontinuierlich trainiert und verbessert werden.
 
 Die Antispameinstellungen in EOP werden aus den folgenden Technologien hergestellt:
 
 - **Verbindungsfilterung**: Identifiziert gute und schlechte E-Mail-Quellserver frühzeitig in der eingehenden E-Mail-Verbindung über die IP-Zulässige Liste, die LISTE der BLOCKIERTEN IP-Adressen und die Liste der sicheren E-Mails *(eine* dynamische, aber nicht bearbeitbare Liste von vertrauenswürdigen Absendern, die von Microsoft verwaltet werden). Sie konfigurieren diese Einstellungen in der Verbindungsfilterrichtlinie. Weitere Informationen finden Sie [unter Configure connection filtering](configure-the-connection-filter-policy.md).
 
   > [!NOTE]
-  > Spoof Intelligence verwendet die Verbindungsfilterung, um Listen zulässiger und blockierter Absender zu erstellen, die Ihre E-Mail-Domäne spoofen. Weitere Informationen finden Sie [unter Erfahren Sie mehr über Spoof Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+  > Spoof Intelligence verwendet die Verbindungsfilterung, um Listen zulässiger und blockierter Absender zu erstellen, die Ihre E-Mail-Domäne spoofen. Weitere Informationen finden Sie [unter Learn more about spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
 - **Spamfilterung (Inhaltsfilterung):** EOP verwendet die Spamfilterungs-Urteile **Spam,** Spam mit hoher Vertrauen, Massen-E-Mails, **Phishing-E-Mails** und **Phishing-E-Mails** mit hoher Vertrauenssicherheit, um Nachrichten zu klassifizieren.  Sie können die Aktionen basierend auf diesen Urteilen konfigurieren und die Benachrichtigungsoptionen für Endbenutzer für Nachrichten konfigurieren, die in Quarantäne statt zugestellt wurden. Weitere Informationen finden Sie unter [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
@@ -67,7 +67,7 @@ Die Antispameinstellungen in EOP werden aus den folgenden Technologien hergestel
 
 - **Filterung ausgehender** Spamnachrichten: EOP überprüft außerdem, ob Ihre Benutzer keine Spamnachrichten senden, weder in Inhalten ausgehender Nachrichten noch durch Überschreiten der Grenzwerte für ausgehende Nachrichten. Weitere Informationen finden Sie unter [Configure outbound spam filtering in Microsoft 365](configure-the-outbound-spam-policy.md).
 
-- **Spoof Intelligence**: Weitere Informationen finden Sie unter Erfahren Sie mehr [über Spoof Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- **Spoof Intelligence**: Weitere Informationen finden Sie unter Erfahren Sie mehr über [Spoof Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
 
 ## <a name="manage-errors-in-spam-filtering"></a>Verwalten von Fehlern bei der Spamfilterung
 
@@ -79,7 +79,7 @@ Hier sind einige bewährte Methoden, die für beide Szenarien gelten:
 
 - **Untersuchen Sie die Kopfzeilen** von Antispamnachrichten: Diese Werte geben Ihnen an, warum eine Nachricht als Spam gekennzeichnet wurde oder warum die Spamfilterung übersprungen wurde. Weitere Informationen finden Sie unter [Antispam-Nachrichtenkopfzeilen](anti-spam-message-headers.md).
 
-- Verweisen Sie Ihren MX-Eintrag auf **Microsoft 365:** Damit EOP den besten Schutz bietet, wird immer empfohlen, dass Sie zuerst E-Mails an Microsoft 365 zugestellt haben. Anweisungen finden Sie unter [Create DNS records at any DNS hosting provider for Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+- **Verweisen Sie Ihren MX-Eintrag** auf Microsoft 365 : Damit EOP den besten Schutz bietet, wird immer empfohlen, dass E-Mails zuerst an Microsoft 365 werden. Anweisungen finden Sie [unter Create DNS records at any DNS hosting provider for Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
   Wenn der MX-Eintrag auf einen anderen Speicherort verweist (z. B. eine Antispamlösung oder Appliance eines Drittanbieters), ist es für EOP schwierig, eine genaue Spamfilterung zu bieten. In diesem Szenario müssen Sie die erweiterte Filterung für Connectors (auch als Skip Listing bekannt) _konfigurieren._ Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
@@ -95,31 +95,31 @@ Hier sind einige bewährte Methoden, die für beide Szenarien gelten:
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>Verhindern der Zustellung von Spam an den Posteingang
 
-- **Überprüfen Der Organisationseinstellungen:** Achten Sie auf Einstellungen, mit denen Nachrichten die Spamfilterung überspringen können (z. B. wenn Sie eine eigene Domäne zur Liste der zulässigen Domänen in Antispamrichtlinien hinzufügen). Unsere empfohlenen Einstellungen finden Sie unter Empfohlene Einstellungen für [EOP und Microsoft Defender für Office 365-Sicherheit](recommended-settings-for-eop-and-office365.md) und [Erstellen von](create-safe-sender-lists-in-office-365.md)Listen sicherer Absender .
+- **Überprüfen Der Organisationseinstellungen:** Achten Sie auf Einstellungen, mit denen Nachrichten die Spamfilterung überspringen können (z. B. wenn Sie eine eigene Domäne zur Liste der zulässigen Domänen in Antispamrichtlinien hinzufügen). Die empfohlenen Einstellungen finden Sie unter Empfohlene Einstellungen für [EOP](recommended-settings-for-eop-and-office365.md) und Microsoft Defender für Office 365 Und [Erstellen von](create-safe-sender-lists-in-office-365.md)Listen sicherer Absender .
 
-- **Überprüfen** Sie, ob die Junk-E-Mail-Regel im Postfach des Benutzers aktiviert ist: Sie ist standardmäßig aktiviert, aber wenn sie deaktiviert ist, können Nachrichten, die als Junk gekennzeichnet sind, nicht in den Junk-E-Mail-Ordner verschoben werden. Weitere Informationen finden Sie unter [Konfigurieren von Junk-E-Mail-Einstellungen für Exchange Online-Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Überprüfen** Sie, ob die Junk-E-Mail-Regel im Postfach des Benutzers aktiviert ist: Sie ist standardmäßig aktiviert, aber wenn sie deaktiviert ist, können Nachrichten, die als Junk gekennzeichnet sind, nicht in den Junk-E-Mail-Ordner verschoben werden. Weitere Informationen finden Sie unter [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Verwenden Sie die verfügbaren Listen blockierter** Absender : Weitere Informationen finden Sie unter [Create blocked sender lists](create-block-sender-lists-in-office-365.md).
 
 - **Abmelden von Massen-E-Mails** Wenn die Nachricht etwas war, für das der Benutzer sich angemeldet hat (Newsletter, Produktankündigungen usw.) und einen Abmeldelink von einer seriösen Quelle enthält, sollten Sie ihn bitten, sich einfach abzumelden.
 
-- Eigenständiges EOP: Erstellen von Nachrichtenflussregeln in lokalen **Exchange für EOP-Spamfilterungs-Urteilen:** In eigenständigen EOP-Umgebungen, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet) in exchange konfigurieren, um das EOP-Spamfilter-Urteil zu übersetzen, damit die Junk-E-Mail-Regel die Nachricht in den Junk-E-Mail-Ordner verschieben kann. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zum Verschieben von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+- Eigenständiges **EOP:** Erstellen von Nachrichtenflussregeln im lokalen Exchange für EOP-Spamfilterungs-Urteile: In eigenständigen EOP-Umgebungen, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet) in der lokalen Exchange konfigurieren, um das EOP-Spamfilter-Urteil zu übersetzen, damit die Junk-E-Mail-Regel die Nachricht in den Junk-E-Mail-Ordner verschieben kann. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zum Verschieben von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
 
 ### <a name="prevent-good-email-from-being-identified-as-spam"></a>Verhindern, dass gute E-Mails als Spam identifiziert werden
 
 Im Folgenden finden Sie einige Schritte, mit deren Hilfe Sie falsch positive Ergebnisse verhindern können:
 
-- **Überprüfen Sie die Outlook Junk-E-Mail-Filtereinstellungen des Benutzers:**
+- **Überprüfen Sie die Junk-E-Mail Outlook-Filtereinstellungen des Benutzers:**
 
-  - **Überprüfen Sie, ob der Junk-E-Mail-Filter** von Outlook deaktiviert ist: Wenn der Outlook Junk-E-Mail-Filter auf den Standardwert **No automatic filtering** festgelegt ist, versucht Outlook nicht, Die Spambehandlungen als Spam zu klassifizieren.  Wenn er auf  Niedrig oder Hoch festgelegt **ist,** verwendet der Outlook Junk-E-Mail-Filter seine eigene SmartScreen-Filtertechnologie, um Spam zu identifizieren und in den Junk-E-Mail-Ordner zu verschieben, damit Sie falsch positive Ergebnisse erhalten können. Beachten Sie, dass Microsoft im November 2016 die Erstellung von Spamdefinitionsupdates für die SmartScreen-Filter in Exchange und Outlook eingestellt hat. Die vorhandenen SmartScreen-Spamdefinitionen wurden zwar noch vorhanden, aber ihre Effektivität wird im Laufe der Zeit wahrscheinlich beeinträchtigt.
+  - Überprüfen Sie, **ob Outlook** Junk-E-Mail-Filter deaktiviert ist: Wenn der Junk-E-Mail-Filter Outlook auf den Standardwert **Keine** automatische Filterung festgelegt ist, versucht Outlook nicht, Die Spams als Spam zu klassifizieren.  Wenn er auf  Niedrig oder Hoch festgelegt **ist,** verwendet der Outlook Junk-E-Mail-Filter eine eigene SmartScreen-Filtertechnologie, um Spam zu identifizieren und in den Junk-E-Mail-Ordner zu verschieben, sodass Sie falsch positive Ergebnisse erhalten können. Beachten Sie, dass Microsoft die Erstellung von Spamdefinitionsupdates für die SmartScreen-Filter in Exchange und Outlook November 2016 eingestellt hat. Die vorhandenen SmartScreen-Spamdefinitionen wurden zwar noch vorhanden, aber ihre Effektivität wird im Laufe der Zeit wahrscheinlich beeinträchtigt.
 
-  - Überprüfen Sie, ob die Einstellung "Nur sichere **Listen"** in Outlook deaktiviert ist: Wenn diese Einstellung aktiviert ist, werden nur Nachrichten von Absendern in der Liste sicherer Absender oder sicherer Empfänger des Benutzers an den Posteingang zugestellt. E-Mails von allen anderen Werden automatisch in den Junk-E-Mail-Ordner verschoben.
+  - Überprüfen Sie, ob Outlook Einstellung "Nur sichere **Listen"** deaktiviert ist: Wenn diese Einstellung aktiviert ist, werden nur Nachrichten von Absendern in der Liste sicherer Absender oder sicherer Empfänger des Benutzers an den Posteingang zugestellt. E-Mails von allen anderen Werden automatisch in den Junk-E-Mail-Ordner verschoben.
 
   Weitere Informationen zu diesen Einstellungen finden Sie unter [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
 - **Verwenden Sie die verfügbaren Listen sicherer Absender**: Weitere Informationen finden Sie unter Create safe sender [lists](create-safe-sender-lists-in-office-365.md).
 
-- **Stellen Sie sicher,** dass sich Benutzer innerhalb der Sende- und Empfangsgrenzwerte befinden, wie unter [Empfangen](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) und Senden in der Exchange Online-Dienstbeschreibung beschrieben.
+- Überprüfen Sie, ob sich Benutzer innerhalb der Sende- und **Empfangsgrenzwerte** befinden, wie unter [Empfangen](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) und Senden in der Exchange Online beschrieben.
 
 - **Eigenständiges EOP:** Verzeichnissynchronisierung verwenden: Wenn Sie eigenständiges EOP zum Schutz Ihrer lokalen Exchange-Organisation verwenden, sollten Sie Benutzereinstellungen mit dem Dienst mithilfe der Verzeichnissynchronisierung synchronisieren. Auf diese Weise wird sichergestellt, dass die Liste der sicheren Absender des Benutzers von EOP berücksichtigt wird. Weitere Informationen finden Sie unter [Verwalten von E-Mail-Benutzern durch Verzeichnissynchronisierung](manage-mail-users-in-eop.md#use-directory-synchronization-to-manage-mail-users).
 

@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-mar2020
-description: Verwenden Sie Schlüsselwörter und Bedingungen, um den Suchbereich beim Suchen nach Daten mithilfe von Advanced eDiscovery in Microsoft 365 zu einentigen.
+description: Verwenden Sie Schlüsselwörter und Bedingungen, um den Suchbereich beim Suchen nach Daten mithilfe von Advanced eDiscovery in Microsoft 365.
 ms.openlocfilehash: e0df319257776d3995a4b8e37781d7b5dad54d82
 ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
@@ -25,17 +25,17 @@ ms.locfileid: "50838481"
 ---
 # <a name="build-search-queries-for-collections-in-advanced-ediscovery"></a>Erstellen von Suchabfragen für Sammlungen in Advanced eDiscovery
 
-Beim Konfigurieren der Suchabfrage beim Erstellen einer Auflistung [in](collections-overview.md) einem Advanced eDiscovery-Fall können Sie Schlüsselwörter verwenden, um bestimmte Inhalte und Bedingungen zu finden, um den Umfang der Suche zu einentigen, um Elemente zurücksenden zu können, die für Ihre rechtliche Untersuchung am relevantesten sind.
+Beim Konfigurieren der Suchabfrage beim Erstellen einer Auflistung [in](collections-overview.md) einem Advanced eDiscovery-Fall können Sie Schlüsselwörter verwenden, um bestimmte Inhalte und Bedingungen zu finden, um den Suchbereich zu einenten, um Elemente zurücksenden zu können, die für Ihre rechtliche Untersuchung am relevantesten sind.
 
 ![Verwenden von Schlüsselwörtern und Bedingungen zum Einen der Ergebnisse einer Suche](../media/SearchQueryBox.png)
 
 ## <a name="keyword-searches"></a>Schlüsselwortsuchen
 
-Geben Sie eine Schlüsselwortabfrage in **das Feld Schlüsselwörter** in der Suchabfrage ein. Sie können Schlüsselwörter, E-Mail-Nachrichteneigenschaften wie gesendete und empfangene Datumsangaben oder Dokumenteigenschaften angeben, z. B. Dateinamen oder das Datum, an dem ein Dokument zuletzt geändert wurde. Sie können auch komplexere Abfragen mit booleschen Operatoren wie **AND**, **OR**, **NOT** und **NEAR** verwenden. Sie können auch nach vertraulichen Informationen (z. B. Sozialversicherungsnummern) in Dokumenten in SharePoint und OneDrive (nicht in E-Mail-Nachrichten) suchen oder nach Dokumenten suchen, die extern freigegeben wurden. Wenn Sie das Feld **Schlüsselwörter** leer lassen, werden alle Inhalte in den angegebenen Inhaltsspeicherorten in die Suchergebnisse einbezogen.
+Geben Sie eine Schlüsselwortabfrage in **das Feld Schlüsselwörter** in der Suchabfrage ein. Sie können Schlüsselwörter, E-Mail-Nachrichteneigenschaften wie gesendete und empfangene Datumsangaben oder Dokumenteigenschaften angeben, z. B. Dateinamen oder das Datum, an dem ein Dokument zuletzt geändert wurde. Sie können auch komplexere Abfragen mit booleschen Operatoren wie **AND**, **OR**, **NOT** und **NEAR** verwenden. Sie können auch nach vertraulichen Informationen (z. B. Sozialversicherungsnummern) in Dokumenten in SharePoint und OneDrive (nicht in E-Mail-Nachrichten) oder nach Extern freigegebenen Dokumenten suchen. Wenn Sie das Feld **Schlüsselwörter** leer lassen, werden alle Inhalte in den angegebenen Inhaltsspeicherorten in die Suchergebnisse einbezogen.
 
 ## <a name="keyword-list"></a>Stichwortliste
 
-Alternativ können Sie  das Kontrollkästchen Stichwortliste anzeigen aktivieren und in jeder Zeile ein Schlüsselwort oder eine Schlüsselwortphrase eingeben. Die Schlüsselwörter in jeder Zeile werden durch einen logischen Operator (der in der Suchabfragesyntax als *c:s* dargestellt wird) verbunden, der in der Funktionalität mit dem **OR-Operator** in der erstellten Suchabfrage vergleichbar ist. Dies bedeutet, dass Elemente, die ein Beliebiges Schlüsselwort in einer Zeile enthalten, in den Suchergebnissen enthalten sind. Sie können bis zu 180 Zeilen in der Stichwortliste in Erweiterten eDiscovery-Suchabfragen hinzufügen.
+Alternativ können Sie  das Kontrollkästchen Stichwortliste anzeigen aktivieren und in jeder Zeile ein Schlüsselwort oder eine Schlüsselwortphrase eingeben. Die Schlüsselwörter in jeder Zeile werden durch einen logischen Operator (der in der Suchabfragesyntax als *c:s* dargestellt wird) verbunden, der in der Funktionalität mit dem **OR-Operator** in der erstellten Suchabfrage vergleichbar ist. Dies bedeutet, dass Elemente, die ein Beliebiges Schlüsselwort in einer Zeile enthalten, in den Suchergebnissen enthalten sind. Sie können bis zu 180 Zeilen in der Stichwortliste in Advanced eDiscovery hinzufügen.
 
 ![Verwenden der Stichwortliste zum Abfragen von Statistiken zu jedem Schlüsselwort in der Abfrage](../media/KeywordListSearch.png)
 

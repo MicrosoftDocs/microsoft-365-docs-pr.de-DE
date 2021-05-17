@@ -44,7 +44,7 @@ Weitere Informationen zu den verschiedenen Berechtigungen, die Sie Benutzern im 
 
 - Sie müssen ein globaler Administrator oder Mitglied der Rollengruppe OrganizationManagement im Security & Compliance Center sein, um die Schritte in diesem Artikel ausführen zu können.
 
-- Rollengruppen für das Security & Compliance Center haben möglicherweise ähnliche Namen wie die Rollengruppen in Exchange Online, sind jedoch nicht identisch.
+- Rollengruppen für das Security & Compliance Center haben möglicherweise ähnliche Namen wie die Rollengruppen in Exchange Online, aber sie sind nicht identisch.
 
 - Rollengruppenmitgliedschaften werden nicht zwischen Exchange Online und dem Security & Compliance Center freigegeben.
 

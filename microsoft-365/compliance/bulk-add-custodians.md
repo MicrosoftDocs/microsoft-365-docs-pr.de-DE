@@ -1,5 +1,5 @@
 ---
-title: Importieren von Verwahrern in einen Advanced eDiscovery-Fall
+title: Importieren von Verwahrern in Advanced eDiscovery Fall
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Verwenden Sie das Importtool d, um einem Fall in Advanced eDiscovery schnell mehrere Verwahrer und die zugehörigen Datenquellen hinzuzufügen.
+description: Verwenden Sie das Importtool d, um schnell mehrere Custodians und die zugehörigen Datenquellen zu einem Fall in Advanced eDiscovery.
 ms.openlocfilehash: 98ff3690fe7fd8c956fce436585014ef0db82a26
 ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
@@ -22,13 +22,13 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/04/2021
 ms.locfileid: "50421612"
 ---
-# <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importieren von Verwahrern in einen Advanced eDiscovery-Fall
+# <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importieren von Verwahrern in Advanced eDiscovery Fall
 
-Bei Advanced eDiscovery-Fällen mit vielen Verwahrern können Sie mehrere Verwahrer gleichzeitig importieren, indem Sie eine CSV-Datei verwenden, die die erforderlichen Informationen zum Hinzufügen zu einem Fall enthält.
+Bei Advanced eDiscovery, die viele Custodians betreffen, können Sie mehrere Verwahrer gleichzeitig importieren, indem Sie eine CSV-Datei verwenden, die die erforderlichen Informationen zum Hinzufügen zu einem Fall enthält.
 
 ## <a name="import-custodians"></a>Import custodians
 
-1. Öffnen Sie den Fall Advanced eDiscovery, und wählen Sie die Registerkarte **Datenquellen** aus.
+1. Öffnen Sie Advanced eDiscovery Fall, und wählen Sie die Registerkarte **Datenquellen** aus.
 
 2. Klicken **Sie auf Datenquelle hinzufügen** Import  >  **custodians**.
 
@@ -51,19 +51,19 @@ Nachdem Sie die CSV- Custodian-Vorlage heruntergeladen haben, können Sie Custod
 | Spaltenname|Beschreibung|
 |:------- |:------------------------------------------------------------|
 |**Custodian contactEmail**     |Die UPN-E-Mail-Adresse des Custodians. Beispiel: sarad@contoso.onmicrosoft.com.           |
-|**Exchange-aktiviert** | TRUE/FALSE-Wert, der das Postfach des Custodians enthält oder nicht.      |
-|**OneDrive-aktiviert** | TRUE/FALSE-Wert, der das OneDrive for #A0 des Verwahrers enthalten soll oder nicht. |
+|**Exchange Aktiviert** | TRUE/FALSE-Wert, der das Postfach des Custodians enthält oder nicht.      |
+|**OneDrive Aktiviert** | TRUE/FALSE-Wert, der das Konto des Verwahrers ein- oder OneDrive for Business soll. |
 |**Is OnHold**        | TRUE/FALSE-Wert, um anzugeben, ob die Custodian-Datenquellen in der Warteschleife gespeichert werden. <sup>1</sup>     |
 |**Typ "Workload1"**         |Zeichenfolgenwert, der den Typ der Datenquelle angibt, die dem Custodian zugeordnet werden soll. Mögliche Werte sind: <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<br/>- TeamsSite<br/> - YammerMailbox<br/>- YammerSite |
-|**Workload1-Speicherort**     | Je nach Arbeitsauslastungstyp wäre dies der Speicherort der Datenquelle. Beispielsweise die E-Mail-Adresse für ein Exchange-Postfach oder die URL für eine SharePoint-Website. |
+|**Workload1-Speicherort**     | Je nach Arbeitsauslastungstyp wäre dies der Speicherort der Datenquelle. Beispielsweise die E-Mail-Adresse für Exchange Postfach oder die URL für eine SharePoint Website. |
 |||
 
 > [!NOTE]
-> <sup>1</sup> Sie können maximal 1.000 Postfächer und 100 Websites mithilfe des Custodian Import Process und der CSV-Datei in der Warteschleife platzieren. Sie können diesen Prozess verwenden, um einem Fall mehr als 1.000 Custodians hinzuzufügen, aber die Haltebeschränkungen gelten weiterhin. Weitere Informationen zu Haltebeschränkungen finden Sie [unter Limits in Advanced eDiscovery](limits-ediscovery20.md#hold-limits).
+> <sup>1</sup> Sie können maximal 1.000 Postfächer und 100 Websites mithilfe des Custodian Import Process und der CSV-Datei in der Warteschleife platzieren. Sie können diesen Prozess verwenden, um einem Fall mehr als 1.000 Custodians hinzuzufügen, aber die Haltebeschränkungen gelten weiterhin. Weitere Informationen zu Haltebeschränkungen finden Sie unter [Limits in Advanced eDiscovery](limits-ediscovery20.md#hold-limits).
 
 Hier ist ein Beispiel für eine CSV-Datei mit Custodian-Informationen:<br/><br/>
 
-|Custodian contactEmail      | Exchange-aktiviert | OneDrive-aktiviert | Is OnHold | Typ "Workload1" | Workload1-Speicherort             |
+|Custodian contactEmail      | Exchange Aktiviert | OneDrive Aktiviert | Is OnHold | Typ "Workload1" | Workload1-Speicherort             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
 |robinc@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
 |pillarp@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | |  |
@@ -71,7 +71,7 @@ Hier ist ein Beispiel für eine CSV-Datei mit Custodian-Informationen:<br/><br/>
 
 ## <a name="custodian-and-data-source-validation"></a>Verwahrer- und Datenquellenüberprüfung
 
-Nachdem Sie die Custodian-CSV-Datei hochgeladen haben, führt Advanced eDiscovery die folgenden Schritte aus:
+Nachdem Sie die Custodian-CSV-Datei hochgeladen haben, Advanced eDiscovery die folgenden Schritte:
 
 1. Überprüft die Verwahrer und ihre Datenquellen.
 
@@ -79,15 +79,15 @@ Nachdem Sie die Custodian-CSV-Datei hochgeladen haben, führt Advanced eDiscover
 
 ### <a name="custodian-validation"></a>Verwahrerüberprüfung
 
-Derzeit unterstützen wir nur das Importieren von Verwahrern, die im Azure Active Directory (Azure AD) Ihrer Organisation enthalten sind.
+Derzeit unterstützen wir nur das Importieren von Verwahrern, die in den Azure Active Directory (Azure AD) Ihrer Organisation enthalten sind.
 
 Das Custodian-Importtool sucht und überprüft Custodians mithilfe des UPN-Werts in der Spalte **Custodian contactEmail** in der CSV-Datei. Verwahrer, die überprüft werden, werden dem Fall automatisch hinzugefügt und auf der Registerkarte **Datenquellen** des Falls aufgeführt. Wenn ein Verwahrer nicht überprüft werden kann, werden sie im Fehlerprotokoll für den BulkAddCustodian-Auftrag aufgeführt, der in diesem Fall auf der Registerkarte Aufträge aufgeführt ist.  Nichtvalidierte Verwahrer werden dem Fall nicht hinzugefügt oder auf der Registerkarte **Datenquellen** aufgeführt.
 
 ### <a name="data-source-validation"></a>Datenquellenüberprüfung
 
-Nachdem Custodians überprüft und dem Fall hinzugefügt wurden, werden jedes primäre Postfach und jedes OneDrive-Konto hinzugefügt, das einem Custodian zugeordnet ist.
+Nachdem Custodians überprüft und dem Fall hinzugefügt wurden, werden jedes primäre Postfach und jedes OneDrive, das einem Custodian zugeordnet ist, hinzugefügt.
 
-Wenn jedoch eine der anderen Datenquellen (z. B. SharePoint-Websites, Microsoft Teams, Microsoft 365-Gruppen oder Yammer-Gruppen), die einem Verwahrer  zugeordnet sind, nicht gefunden werden kann, wird keine  dieser Quellen dem Verwahrer zugewiesen, und der Wert Nicht überprüft wird in der Spalte **Status** neben dem Verwahrer auf der Registerkarte Datenquellen angezeigt.
+Wenn jedoch eine der anderen Datenquellen (z. B. SharePoint-Websites, Microsoft Teams, Microsoft 365-Gruppen oder Yammer-Gruppen), die einem Custodian zugeordnet sind, nicht gefunden werden  kann, wird keine dieser Quellen dem Verwahrer  zugewiesen, und der Wert Nicht überprüft wird in der Spalte **Status** neben dem Custodian auf der Registerkarte Datenquellen angezeigt.
 
 So fügen Sie überprüfte Datenquellen für einen Verwahrer hinzu:
 
@@ -105,7 +105,7 @@ So fügen Sie eine zuvor ungültige Datenquelle manuell hinzu und ordnen sie zu:
 
 1. Wählen Sie **auf der Registerkarte** Datenquellen einen Verwahrer aus, um eine zuvor ungültige Datenquelle manuell hinzuzufügen und zuzuordnen.
 
-2. Klicken **Sie oben** auf der Flyoutseite auf Bearbeiten, um Postfächer, Websites, Teams oder Yammer dem Custodian zuzuordnen. Klicken Sie dazu **neben** dem entsprechenden Datentyp auf Bearbeiten.
+2. Klicken **Sie oben** auf der Flyoutseite auf Bearbeiten, um postfächer, websites, Teams oder Yammer dem Verwahrer zuzuordnen. Klicken Sie dazu **neben** dem entsprechenden Datentyp auf Bearbeiten.
 
 3. Klicken **Sie auf Weiter,** **um** die Einstellungsseite für die Halteeinstellungen zu anzeigen und die Halteeinstellung für die hinzugefügten Datenquellen zu konfigurieren.
 

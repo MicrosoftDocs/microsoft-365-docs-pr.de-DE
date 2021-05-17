@@ -28,7 +28,7 @@ ms.locfileid: "51657007"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Microsoft-Feedback für Ihre Organisation verwalten
 
-Als Administrator einer Microsoft 365-Organisation gibt es nun mehrere Richtlinien, mit denen Sie die Feedbacksammlung und die Kundenbindungserfahrung Ihrer Benutzer bei der Verwendung von Microsoft 365-Anwendungen verwalten können. Sie können für jede dieser Richtlinien vorhandene Azure Active Directory-Gruppen in Ihrer Organisation erstellen und verwenden. Mit diesen Policen können Sie steuern, wie verschiedene Abteilungen in Ihrer Organisation Feedback an Microsoft senden können. Microsoft überprüft alle von Kunden übermittelten Feedbacks und verwendet dieses Feedback, um das Produkt zu verbessern. Wenn Sie die Feedbackerfahrung **aktiviert** halten, können Sie sehen, was Ihre Benutzer zu den von ihnen verwendeten Microsoft-Produkten sagen. Das Feedback, das wir von Ihren Benutzern sammeln, wird in Kürze im Microsoft 365 Admin Center verfügbar sein.
+Als Administrator einer Microsoft 365 gibt es nun mehrere Richtlinien, mit denen Sie die Feedbacksammlung und die Kundenbindungserfahrung Ihrer Benutzer bei der Verwendung von Microsoft 365 verwalten können. Sie können für jede dieser Richtlinien vorhandene Azure Active Directory-Gruppen in Ihrer Organisation erstellen und verwenden. Mit diesen Policen können Sie steuern, wie verschiedene Abteilungen in Ihrer Organisation Feedback an Microsoft senden können. Microsoft überprüft alle von Kunden übermittelten Feedbacks und verwendet dieses Feedback, um das Produkt zu verbessern. Wenn Sie die Feedbackerfahrung **aktiviert** halten, können Sie sehen, was Ihre Benutzer zu den von ihnen verwendeten Microsoft-Produkten sagen. Das Feedback, das wir von Ihren Benutzern sammeln, wird bald im Microsoft 365 Admin Center verfügbar sein.
 
 Weitere Informationen zu den Arten von Feedback und dazu, wie Microsoft Benutzerfeedback verwendet, finden Sie unter Erfahren Sie mehr über [Das Feedback von Microsoft für Ihre Organisation.](../misc/feedback-user-control.md)
 
@@ -94,11 +94,11 @@ Ihre Geräte müssen sich auf einer Mindest buildnummer für die Verwendung dies
 1. Suchen Sie nach **Feedback** und **Umfrage**.
 1. Legen Sie für jede aufgeführte Richtlinie den wert, den Sie möchten.
 
-Weitere Informationen finden Sie [unter Overview of the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service).
+Weitere Informationen finden Sie unter [Overview of the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service).
 
 Diese Richtlinieneinstellungen sind auch verfügbar, wenn Sie Gruppenrichtlinien verwenden. Um diese Richtlinieneinstellungen zu verwenden, laden Sie mindestens Version 5146.1000 der administrativen Vorlagendateien [(ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030)herunter, die am 22. März 2021 veröffentlicht wurden.
 
-Diese Richtlinieneinstellungen finden Sie unter Benutzerkonfiguration -> Richtlinien -> Administrative Vorlagen -> Microsoft Office 2016 -> Privacy -> Trust Center.
+Sie finden diese Richtlinieneinstellungen unter Benutzerkonfiguration -> Richtlinien -> Administrative Vorlagen -> Microsoft Office 2016 -> Privacy -> Trust Center.
 
 > [!NOTE]
 > Es dauert einige Stunden, bis die Clientanwendungen aktualisiert werden.

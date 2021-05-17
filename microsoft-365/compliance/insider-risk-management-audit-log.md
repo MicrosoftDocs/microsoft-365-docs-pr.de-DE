@@ -1,6 +1,6 @@
 ---
 title: Überwachungsprotokoll für insider risk management
-description: Erfahren Sie mehr über das Überwachungsprotokoll für insiders Risikomanagement in Microsoft 365
+description: Erfahren Sie mehr über das Insider-Risikomanagement-Überwachungsprotokoll in Microsoft 365
 keywords: Microsoft 365, Insider-Risikomanagement, Risikomanagement, Compliance
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -39,7 +39,7 @@ Zu den Bereichen, die in der Aktivitätsüberwachung enthalten sind, gehören:
 Zum Anzeigen und Exportieren von Daten aus dem Überwachungsprotokoll müssen Benutzer den Rollengruppen *Insider Risk Management* oder Insider Risk Management Auditor *zugewiesen* werden. Weitere Informationen zu Rollengruppen für das Insiderrisikomanagement finden Sie unter Erste Schritte mit insider risk [management Schritt 1: Aktivieren von Berechtigungen](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management).
 
 >[!NOTE]
->Das Überwachungsprotokoll des Insider-Risikomanagements ist nicht dem Microsoft 365-Überwachungsprotokoll zugeordnet, sondern es handelt sich um unabhängige Überwachungssysteme, die Informationen zu separaten Aktivitäten erfassen. Das Deaktivieren der Microsoft 365-Überwachung hat keine Auswirkungen auf die Aktivitätsüberwachung innerhalb des Insider-Risikomanagements.
+>Das Überwachungsprotokoll des Insider-Risikomanagements ist nicht dem überwachungsprotokoll Microsoft 365 zugeordnet, sondern es handelt sich um unabhängige Überwachungssysteme, die Informationen zu separaten Aktivitäten erfassen. Das Deaktivieren Microsoft 365 Überwachung wirkt sich nicht auf die Aktivitätsüberwachung innerhalb des Insider-Risikomanagements aus.
 
 ## <a name="view-activity-in-the-insider-risk-audit-log"></a>Anzeigen von Aktivitäten im Überwachungsprotokoll für Insiderrisiken
 
@@ -60,17 +60,17 @@ Verwenden Sie zum Hinzufügen oder Entfernen von Spaltenüberschriften für die 
 
 ## <a name="audit-log-export"></a>Export des Überwachungsprotokolls
 
-Benutzer, die den Rollengruppen *Insider Risk Management* oder Insider Risk Management *Auditor* zugewiesen sind, können alle Aktivitäten im Überwachungsprotokoll in eine CSV-Datei (durch Kommas getrennte Werte) exportieren, indem sie auf der Seite Insider risk **audit log** **exportieren** auswählen. Je nach Aktivität sind einige Felder für eine Aktivität möglicherweise nicht auf die Aktivität anwendbar, und diese Felder werden in der exportierten Datei als leer angezeigt.
+Benutzer, die den Rollengruppen *Insider Risk Management* oder Insider Risk Management *Auditor* zugewiesen sind, können alle Aktivitäten im Überwachungsprotokoll in eine .csv-Datei (durch Kommas getrennte Werte) exportieren, indem sie **auf** der Seite Insider risk **audit log** exportieren auswählen. Je nach Aktivität sind einige Felder für eine Aktivität möglicherweise nicht auf die Aktivität anwendbar, und diese Felder werden in der exportierten Datei als leer angezeigt.
 
 Die Datei enthält Aktivitätsinformationen für die folgenden Felder:
 
 - **Aktivitäten, die von:** Der Benutzername des Benutzers, der einen Elementwert ändert. Die hier aufgeführten Benutzer wurden einer oder mehreren der folgenden Rollengruppen für insider risk [management](insider-risk-management-configure.md#step-1-enable-permissions-for-insider-risk-management)zugewiesen: *Insider Risk Management*, Insider Risk Management *Admins*, *Insider Risk Management Analysts*, *Insider Risk Management Investigators*. Jede Rollengruppe verfügt über unterschiedliche Berechtigungsstufen für die Verwaltung von Insiderrisikofeatures.
-- **Aktivität:** Die Für ein Element übernommene Aktivität. Die Werte *sind Angezeigt, Gelöscht, Hinzugefügt, Bearbeitete Richtlinie, Fall, Benutzer, Warnung und* *Einstellungen.*
+- **Aktivität:** Die Für ein Element übernommene Aktivität. Die Werte *werden angezeigt, gelöscht, hinzugefügt, bearbeitete Richtlinie, Fall, Benutzer, Warnung* *und Einstellungen.*
 - **Hinzugefügt:** Objekte, die während der Aktivität hinzugefügt wurden, z. B. Benutzer, Dateitypen oder Domänen.
 - **Warnungsvolumen:** Die In Den Insider-Risikomanagementeinstellungen definierte Warnungsstufe.
 - **Betrag**: Die aktuell ausgewählten benutzerdefinierten Indikatorbeträge für eine Richtlinie.
 - **Objekt-ID:** Die Ressourcen-ID des physischen Prioritätsvermögens, für das die Aktivität ausgeführt wurde.
-- **Kategorie:** Die Kategorie des geänderten Elements. Werte sind *Richtlinien, Fälle, Benutzer, Warnungen, Einstellungen* und *Benachrichtigungsvorlagen.*
+- **Kategorie:** Die Kategorie des geänderten Elements. Werte sind *Richtlinien, Fälle, Benutzer, Warnungen, Einstellungen und* *Benachrichtigungsvorlagen.*
 - **Datum:** Datum und Uhrzeit, die im lokalen Datum und der Uhrzeit Ihrer Organisation aufgeführt sind.
 - **Beschreibung**: Die Beschreibungseingabe des Benutzers für das Objekt, an dem gehandelt wird (z. B. eine Richtlinie oder eine Benutzergruppe mit Priorität).
 - **DLP-Richtlinie:** Die Richtlinie zur Verhinderung von Datenverlust (Data Loss Prevention, DLP), die ausgewählt wurde, um die Aufnahme in eine Insider-Risikomanagementrichtlinie auszulösen.

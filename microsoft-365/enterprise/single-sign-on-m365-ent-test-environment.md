@@ -27,11 +27,11 @@ ms.locfileid: "50904864"
 ---
 # <a name="azure-ad-seamless-single-sign-on-for-your-microsoft-365-test-environment"></a>Nahtloses einmaliges Anmelden in Azure AD für Ihre Microsoft 365-Testumgebung
 
-*Diese Testumgebungsanleitung kann sowohl für Microsoft 365 Enterprise- als auch für Office 365 Enterprise-Testumgebungen verwendet werden.*
+*Diese Testumgebungsanleitung kann sowohl für Microsoft 365 als auch für Office 365 Enterprise verwendet werden.*
 
 Azure AD Seamless Single Sign-On (Seamless SSO) meldet sich automatisch bei Benutzern an, wenn sie sich auf ihren PCs oder Geräten befinden, die mit ihrem Organisationsnetzwerk verbunden sind. Azure AD Seamless SSO bietet Benutzern einfachen Zugriff auf cloudbasierte Anwendungen, ohne dass zusätzliche lokale Komponenten benötigt werden.
 
-In diesem Artikel wird beschrieben, wie Sie Ihre Microsoft 365-Testumgebung für Azure AD Seamless SSO konfigurieren.
+In diesem Artikel wird beschrieben, wie Sie Microsoft 365 Testumgebung für Azure AD Seamless SSO konfigurieren.
 
 Das Einrichten von nahtlosen Azure AD-SSO umfasst zwei Phasen:
 - [Phase 1: Konfigurieren Sie Kennworthashsynchronisierung für Ihre Microsoft 365-Testumgebung](#phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment)
@@ -40,11 +40,11 @@ Das Einrichten von nahtlosen Azure AD-SSO umfasst zwei Phasen:
 ![Testumgebungsanleitungen für die Microsoft-Cloud](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
-> Eine visuelle Karte zu allen Artikeln im Microsoft 365 for Enterprise Test Lab Guide-Stapel finden Sie unter [Microsoft 365 for Enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+> Eine visuelle Karte zu allen Artikeln im Stapel Microsoft 365 test lab guide für unternehmen finden Sie unter [Microsoft 365 for enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
   
 ## <a name="phase-1-configure-password-hash-synchronization-for-your-microsoft-365-test-environment"></a>Phase 1: Konfigurieren Sie Kennworthashsynchronisierung für Ihre Microsoft 365-Testumgebung
 
-Befolgen Sie die Anweisungen unter [Kennworthashsynchronisierung für Microsoft 365](password-hash-sync-m365-ent-test-environment.md). 
+Befolgen Sie die Anweisungen unter [Kennworthashsynchronisierung für Microsoft 365.](password-hash-sync-m365-ent-test-environment.md) 
 
 Die resultierende Konfiguration sieht wie die folgenden aus:
   
@@ -54,35 +54,35 @@ Diese Konfiguration besteht aus:
   
 - Eine Testversion oder ein kostenpflichtiges Abonnement für Microsoft 365 E5.
 - Ein vereinfachtes Unternehmensintranet, das mit dem Internet verbunden ist und aus den virtuellen Computern DC1, APP1 und CLIENT1 in einem Subnetz eines virtuellen Azure-Netzwerks besteht.
-- Azure AD Connect wird unter APP1 ausgeführt, um die Active Directory Domain Services (AD DS)-Domäne von TESTLAB regelmäßig mit dem Azure AD-Mandanten Ihres Microsoft 365-Abonnements zu synchronisieren.
+- Azure AD Verbinden wird auf APP1 ausgeführt, um die Active Directory Domain Services (AD DS)-Domäne testlab regelmäßig mit dem Azure AD-Mandanten Ihres Microsoft 365 synchronisieren.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-azure-ad-seamless-sso"></a>Phase 2: Konfigurieren Sie Azure AD Connect auf APP1 für das nahtlose einmalige Anmelden in Azure AD.
 
-Konfigurieren Sie in dieser Phase Azure AD Connect in APP1 für Azure AD Seamless SSO, und überprüfen Sie dann, ob es funktioniert.
+Konfigurieren Sie in dieser Phase Azure AD Verbinden app1 für Azure AD Seamless SSO, und überprüfen Sie dann, ob es funktioniert.
 
 ### <a name="configure-azure-ad-connect-on-app1"></a>Konfigurieren von Azure AD Connect auf APP1
 
 1. Melden Sie sich über das [Azure-Portal](https://portal.azure.com) mit Ihrem globalen Administratorkonto an, und stellen Sie dann mit dem Konto „TESTLAB\User1“ eine Verbindung zu APP1 her.
 
-2. Führen Sie auf dem APP1-Desktop Azure AD Connect aus.
+2. Führen Sie auf dem APP1-Desktop Azure AD Verbinden.
 
 3. Wählen Sie **auf der Seite Willkommen** die Option Konfigurieren **aus.**
 
 4. Wählen Sie **auf der** Seite Zusätzliche Aufgaben die Option **Benutzeranmelden ändern** aus, und wählen Sie dann Weiter **aus.**
 
-5. Geben Sie **auf der Seite Verbindung mit Azure AD** herstellen Ihre Anmeldeinformationen für ihr globales Administratorkonto ein, und wählen Sie dann Weiter **aus.**
+5. Geben Sie **Verbinden Azure AD** ein, und wählen Sie dann **Weiter** aus.
 
 6. Wählen Sie **auf der Seite Benutzeranmelden** die Option **Einmaliges Anmelden aktivieren** aus, und wählen Sie dann Weiter **aus.**
 
 7. Wählen Sie **auf der Seite Einmaliges Anmelden** aktivieren die Option **Anmeldeinformationen eingeben aus.**
 
-8. Geben Sie **im Dialogfeld Windows-Sicherheit** **benutzer1** und das Kennwort des Benutzerkontos ein, wählen Sie **OK** aus, und wählen Sie dann **Weiter aus.**
+8. Geben Sie **Windows-Sicherheit** **benutzer1** und das Kennwort des Benutzerkontos ein, wählen Sie **OK** aus, und wählen Sie dann **Weiter aus.**
 
 9. Wählen Sie **auf der Seite Bereit** zum Konfigurieren die Option Konfigurieren **aus.**
 
 10. Wählen Sie **auf der Seite Konfiguration abgeschlossen** die Option Beenden **aus.**
 
-11. Wählen Sie im Azure-Portal im linken Bereich **Azure Active Directory** Azure AD Connect  >  **aus.** Stellen Sie **sicher,** dass das Feature Für einmaliges Anmelden nahtlos als **Aktiviert angezeigt wird.**
+11. Wählen Sie im Azure-Portal im linken Bereich die **option Azure Active Directory** Azure  >  **AD Verbinden**. Stellen Sie **sicher,** dass das Feature Für einmaliges Anmelden nahtlos als **Aktiviert angezeigt wird.**
 
 Testen Sie als Nächstes die Möglichkeit, sich bei Ihrem Abonnement mit dem <strong>user1@testlab.</strong>\<*your public domain*> Benutzername des User1-Kontos.
 
@@ -108,10 +108,10 @@ Nachfolgend sehen Sie die daraus resultierende Konfiguration:
 
 Diese Konfiguration besteht aus: 
 
-- Eine Microsoft 365 E5-Testversion oder kostenpflichtige Abonnements mit dem Testlab der DNS-Domäne.\<*your domain name*> registriert.
+- Eine Microsoft 365 E5 oder kostenpflichtige Abonnements mit dem TESTlab der DNS-Domäne.\<*your domain name*> registriert.
 - Ein vereinfachtes Unternehmensintranet, das mit dem Internet verbunden ist und aus den virtuellen Computern DC1, APP1 und CLIENT1 in einem Subnetz eines virtuellen Azure-Netzwerks besteht.
 - Azure AD Connect wird auf APP1 ausgeführt, um die Liste von Konten und Gruppen des Azure AD-Mandanten Ihrer Microsoft 365-Abonnements mit der AD DS-Domäne „TESTLAB“ zu synchronisieren.
-- Azure AD Seamless SSO ist aktiviert, damit sich Computer im simulierten Intranet bei Microsoft 365-Cloudressourcen anmelden können, ohne ein Benutzerkontokennwort anzugeben.
+- Azure AD Seamless SSO ist aktiviert, damit sich Computer im simulierten Intranet bei Microsoft 365 anmelden können, ohne ein Benutzerkontokennwort anzugeben.
 
 ## <a name="next-step"></a>Nächster Schritt
 

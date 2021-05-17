@@ -15,7 +15,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 795158e1-7dfc-4d9e-b805-373dd576c4e7
-description: Erfahren Sie, wie Sie E-Mails mithilfe von PowerShell von Ihrem vorhandenen System zu Microsoft 365 migrieren.
+description: Erfahren Sie, wie Sie E-Mails von Ihrem vorhandenen System mithilfe Microsoft 365 PowerShell migrieren.
 ms.openlocfilehash: 0ba090db6c5e7fd617f3b50b21dfd08605f84594
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "51581118"
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Administratoren migrieren E-Mails häufig von vorhandenen Systemen, wenn sie Microsoft 365 zum ersten Mal einrichten. In den folgenden Artikeln wird beschrieben, wie E-Mails mithilfe von Windows PowerShell:
+Administratoren migrieren E-Mails häufig von vorhandenen Systemen, wenn sie die Microsoft 365. In den folgenden Artikeln wird beschrieben, wie E-Mails mithilfe von Windows PowerShell:
   
 - [Verwenden von PowerShell zum Ausführen einer Übernahmemigration zu Microsoft 365](use-powershell-to-perform-a-cutover-migration-to-microsoft-365.md)
     
@@ -41,10 +41,10 @@ Administratoren migrieren E-Mails häufig von vorhandenen Systemen, wenn sie Mic
   
 [Erste Schritte mit PowerShell für Microsoft 365](getting-started-with-microsoft-365-powershell.md)
   
-[Verwalten von SharePoint mit PowerShell](manage-sharepoint-online-with-microsoft-365-powershell.md)
+[Verwalten SharePoint mit PowerShell](manage-sharepoint-online-with-microsoft-365-powershell.md)
   
 [Verwenden der Windows PowerShell zum Erstellen von Berichten in Microsoft 365](use-windows-powershell-to-create-reports-in-microsoft-365.md)
 
-[Warum Sie Microsoft 365 PowerShell verwenden müssen](why-you-need-to-use-microsoft-365-powershell.md)
+[Gründe für die Verwendung von Microsoft 365 PowerShell](why-you-need-to-use-microsoft-365-powershell.md)
   
 [Verwalten von Microsoft 365-Benutzerkonten, -Lizenzen und -Gruppen mit PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md)

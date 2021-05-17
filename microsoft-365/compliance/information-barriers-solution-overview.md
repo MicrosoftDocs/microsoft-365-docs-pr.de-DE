@@ -1,6 +1,6 @@
 ---
 title: Informationsbarrieren in Microsoft 365
-description: Erfahren Sie, wie Sie Informationsbarrieren in Microsoft 365 konfigurieren.
+description: Erfahren Sie, wie Sie Informationsbarrieren in Microsoft 365.
 keywords: Microsoft 365, Insiderrisiko, Compliance
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -27,7 +27,7 @@ ms.locfileid: "50423596"
 
 Microsoft 365 ermöglicht die Kommunikation und Zusammenarbeit zwischen Gruppen und Organisationen und unterstützt Möglichkeiten, die Kommunikation und Zusammenarbeit zwischen bestimmten Benutzergruppen bei Bedarf einzuschränken. Dies kann Situationen oder Szenarien umfassen, in denen Sie die Kommunikation und Zusammenarbeit zwischen zwei Gruppen einschränken möchten, um zu verhindern, dass in Ihrer Organisation ein Interessenkonflikt auftritt. Dies kann auch Situationen umfassen, in denen Sie die Kommunikation und Zusammenarbeit zwischen bestimmten Personen innerhalb Ihrer Organisation einschränken müssen, um interne Informationen zu schützen.
 
-Informationsbarrieren werden in Microsoft Teams, SharePoint Online und OneDrive for Business unterstützt. Ein Complianceadministrator oder Ein Administrator für Informationsbarrieren kann Richtlinien definieren, um die Kommunikation zwischen Benutzergruppen in Microsoft Teams zu ermöglichen oder zu verhindern. Richtlinien für Informationsbarrieren können für Situationen wie die folgenden verwendet werden:
+Informationsbarrieren werden in Microsoft Teams, SharePoint Online und OneDrive for Business. Ein Complianceadministrator oder Ein Administrator für Informationsbarrieren kann Richtlinien definieren, um die Kommunikation zwischen Benutzergruppen in der Microsoft Teams. Richtlinien für Informationsbarrieren können für Situationen wie die folgenden verwendet werden:
 
 - Benutzer der Händlergruppe am Tag sollte keine Dateien mit dem Marketingteam kommunizieren oder teilen
 - Finanzmitarbeiter, die an vertraulichen Unternehmensinformationen arbeiten, sollten dateien nicht mit bestimmten Gruppen innerhalb ihrer Organisation kommunizieren oder freigeben.
