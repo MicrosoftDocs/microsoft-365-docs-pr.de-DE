@@ -1,5 +1,5 @@
 ---
-title: Verwenden der rollenbasierten Zugriffssteuerung zum Gewähren eines feinkörnigen Zugriffs auf das Microsoft Defender Security Center
+title: Verwenden sie die rollenbasierte Zugriffssteuerung, um einen feinkörnigen Zugriff auf Microsoft Defender Security Center
 description: Erstellen Sie Rollen und Gruppen innerhalb Ihrer Sicherheitsvorgänge, um Zugriff auf das Portal zu gewähren.
 keywords: rbac, role, based, access, control, groups, control, tier, aad
 search.product: eADQiWindows 10XVcnh
@@ -56,19 +56,19 @@ Defender for Endpoint RBAC wurde entwickelt, um Ihr ebenen- oder rollenbasiertes
 Zum Implementieren des rollenbasierten Zugriffs müssen Sie Administratorrollen definieren, entsprechende Berechtigungen zuweisen und den Rollen zugewiesene Azure AD-Benutzergruppen zuweisen.
 
 
-### <a name="before-you-begin"></a>Vorbereitung
+### <a name="before-you-begin"></a>Bevor Sie beginnen
 Vor der Verwendung von RBAC ist es wichtig, dass Sie die Rollen verstehen, die Berechtigungen erteilen können, und die Folgen des Aktivierens von RBAC.
 
 
 > [!WARNING]
 > Bevor Sie das Feature aktivieren, ist es wichtig, dass Sie über eine Rolle des globalen Administrators oder Sicherheitsadministrators in Azure AD verfügen und dass Ihre Azure AD-Gruppen bereit sind, das Risiko zu verringern, dass das Portal gesperrt wird. 
 
-Wenn Sie sich zum ersten Mal beim Microsoft Defender Security Center anmelden, erhalten Sie entweder Vollzugriff oder schreibgeschützten Zugriff. Vollzugriffsrechte werden Benutzern mit Sicherheitsadministrator- oder globalen Administratorrollen in Azure AD gewährt. Benutzer mit einer Rolle "Security Reader" in Azure AD erhalten schreibgeschützten Zugriff. 
+Wenn Sie sich zum ersten Mal Microsoft Defender Security Center, erhalten Sie entweder Vollzugriff oder schreibgeschützten Zugriff. Vollzugriffsrechte werden Benutzern mit Sicherheitsadministrator- oder globalen Administratorrollen in Azure AD gewährt. Benutzer mit einer Rolle "Security Reader" in Azure AD erhalten schreibgeschützten Zugriff. 
 
 Eine Person mit einer Administratorrolle "Defender for Endpoint Global" hat uneingeschränkten Zugriff auf alle Geräte, unabhängig von ihrer Gerätegruppenzuordnung und den Azure AD-Benutzergruppenzuweisungen.
 
 > [!WARNING]
-> Anfangs können nur Personen mit den Rechten des globalen Azure AD-Administrators oder des Sicherheitsadministrators Rollen im Microsoft Defender Security Center erstellen und zuweisen. Daher ist es wichtig, dass die richtigen Gruppen in Azure AD bereit sind.
+> Anfangs können nur personen mit den Rechten des globalen Azure AD-Administrators oder des Sicherheitsadministrators Rollen in Microsoft Defender Security Center erstellen und zuweisen, daher ist es wichtig, dass die richtigen Gruppen in Azure AD bereit sind.
 >
 > **Wenn Sie die rollenbasierte Zugriffssteuerung aktivieren, verlieren Benutzer mit schreibgeschützten Berechtigungen (z. B. Benutzer, die der Azure AD Security-Leserrolle zugewiesen sind) den Zugriff, bis sie einer Rolle zugewiesen sind.** 
 >

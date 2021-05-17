@@ -1,6 +1,6 @@
 ---
-title: Definieren, wie mobile Geräte von Microsoft Defender Antivirus aktualisiert werden
-description: Verwalten, wie mobile Geräte, z. B. Laptops, mit Microsoft Defender Antivirus Protection-Updates aktualisiert werden sollen.
+title: Definieren, wie mobile Geräte von geräten aktualisiert Microsoft Defender Antivirus
+description: Verwalten Sie, wie mobile Geräte, z. B. Laptops, mit Microsoft Defender Antivirus aktualisiert werden sollen.
 keywords: updates, protection, schedule updates, battery, mobile device, laptop, notebook, opt-in, microsoft update, wsus, override
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -45,7 +45,7 @@ Die folgenden Artikel können auch in diesen Situationen hilfreich sein:
 
 ## <a name="opt-in-to-microsoft-update-on-mobile-computers-without-a-wsus-connection"></a>Opt in to Microsoft Update on mobile computers without a WSUS connection
 
-Sie können Microsoft Update verwenden, um die Sicherheitsintelligenz auf mobilen Geräten mit Microsoft Defender Antivirus auf dem neuesten Stand zu halten, wenn sie nicht mit dem Unternehmensnetzwerk verbunden sind oder anderweitig keine WSUS-Verbindung haben. 
+Sie können Microsoft Update verwenden, um die Sicherheitsintelligenz auf mobilen Geräten, auf denen Microsoft Defender Antivirus ausgeführt wird, auf dem neuesten Stand zu halten, wenn sie nicht mit dem Unternehmensnetzwerk verbunden sind oder anderweitig keine WSUS-Verbindung haben. 
 
 Dies bedeutet, dass Schutzupdates auf Geräten (über Microsoft Update) zugestellt werden können, auch wenn Sie WSUS so festgelegt haben, dass Microsoft Update außer Kraft gesetzt wird.
 
@@ -53,7 +53,7 @@ Sie können sich auf dem mobilen Gerät auf einer der folgenden Arten für Micro
 
 - Ändern Sie die Einstellung mit Gruppenrichtlinie.
 - Verwenden Sie ein VBScript, um ein Skript zu erstellen, und führen Sie es dann auf jedem Computer im Netzwerk aus.
-- Wählen Sie jeden Computer im Netzwerk manuell über das Menü **Einstellungen** aus.
+- Wählen Sie jeden Computer in Ihrem Netzwerk manuell über das Menü **Einstellungen** aus.
 
 ### <a name="use-group-policy-to-opt-in-to-microsoft-update"></a>Verwenden von Gruppenrichtlinien zum Opt-in für Microsoft Update
 
@@ -63,7 +63,7 @@ Sie können sich auf dem mobilen Gerät auf einer der folgenden Arten für Micro
 
 3. Wählen **Sie Richtlinien** und dann Administrative Vorlagen **aus.**
 
-4. Erweitern Sie die Struktur auf **Windows-Komponenten**  >  **Microsoft Defender Antivirus** Signature  >  **Updates**.
+4. Erweitern Sie die Struktur, **Windows Komponenten**  >  **Microsoft Defender Antivirus**  >  **Signaturupdates zu verwenden.**
 
 5. Legen **Sie Sicherheitsintelligenzupdates von Microsoft Update** zulassen auf **Aktiviert,** und wählen Sie dann **OK aus.**
 
@@ -76,11 +76,11 @@ Sie können sich auf dem mobilen Gerät auf einer der folgenden Arten für Micro
 
 ### <a name="manually-opt-in-to-microsoft-update"></a>Manuelles Aktivieren von Microsoft Update
 
-1. Öffnen **Sie Windows Update** in Update **&** Sicherheitseinstellungen auf dem Computer, für den Sie sich entscheiden möchten.
+1. Öffnen **Windows Update** in Update **&** Sicherheitseinstellungen auf dem Computer, für den Sie sich entscheiden möchten.
 
 2. Wählen Sie **Erweiterte** Optionen aus.
 
-3. Aktivieren Sie das Kontrollkästchen Updates für andere **Microsoft-Produkte geben, wenn ich Windows update.**
+3. Aktivieren Sie das Kontrollkästchen Updates für andere **Microsoft-Produkte geben,** wenn ich Windows .
 
 ## <a name="prevent-security-intelligence-updates-when-running-on-battery-power"></a>Verhindern von Sicherheitsintelligenzupdates bei Akkubetrieb
 
@@ -94,11 +94,11 @@ Sie können Microsoft Defender Antivirus so konfigurieren, dass nur Schutzupdate
 
 3.  Wählen **Sie Richtlinien** und dann Administrative Vorlagen **aus.**
 
-4.  Erweitern Sie die Struktur **auf Windows-Komponenten**  >  **Microsoft Defender Antivirus** Signature  >  **Updates,** und legen Sie dann **Allow security intelligence updates when running on battery power** auf Disabled . Wählen Sie dann **OK** aus. 
+4.  Erweitern Sie die **Struktur, Windows Komponenten**  >  **Microsoft Defender Antivirus**  >  **Signaturupdates**  hinzufügen, und legen Sie Dann Sicherheitsintelligenzupdates zulassen bei Der Ausführung von Akkubetrieb auf **Deaktiviert festgelegt.** Wählen Sie dann **OK** aus. 
 
 Mit dieser Aktion wird verhindert, dass Schutzupdates heruntergeladen werden, wenn der PC mit Strom verbunden ist.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Verwalten von Microsoft Defender Antivirus-Updates und Anwenden von Basiswerten](manage-updates-baselines-microsoft-defender-antivirus.md)
-- [Aktualisieren und Verwalten von Microsoft Defender Antivirus in Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Verwalten Microsoft Defender Antivirus Updates und Anwenden von Baselines](manage-updates-baselines-microsoft-defender-antivirus.md)
+- [Aktualisieren und verwalten Microsoft Defender Antivirus in Windows 10](deploy-manage-report-microsoft-defender-antivirus.md)

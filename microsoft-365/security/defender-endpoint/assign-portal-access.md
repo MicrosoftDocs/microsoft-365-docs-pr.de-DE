@@ -1,5 +1,5 @@
 ---
-title: Zuweisen von Benutzerzugriff zu Microsoft Defender Security Center
+title: Zuweisen von Benutzerzugriff auf Microsoft Defender Security Center
 description: Weisen Sie dem Microsoft Defender for Endpoint-Portal Lese-, Schreib- oder schreibgeschützten Zugriff zu.
 keywords: Zuweisen von Benutzerrollen, Zuweisen von Lese- und Schreibzugriff, Zuweisen von schreibgeschützten Zugriffen, Benutzern, Benutzerrollen, Rollen
 search.product: eADQiWindows 10XVcnh
@@ -24,7 +24,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51164763"
 ---
-# <a name="assign-user-access-to-microsoft-defender-security-center"></a>Zuweisen von Benutzerzugriff zu Microsoft Defender Security Center
+# <a name="assign-user-access-to-microsoft-defender-security-center"></a>Zuweisen von Benutzerzugriff auf Microsoft Defender Security Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -52,5 +52,5 @@ Defender for Endpoint unterstützt zwei Möglichkeiten zum Verwalten von Berecht
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Verwenden grundlegender Berechtigungen für den Zugriff auf das Portal](basic-permissions.md)
-- [Verwalten des Portalzugriffs mithilfe von RBAC](rbac.md)
+- [Verwenden von grundlegenden Berechtigungen für den Zugriff auf das Portal](basic-permissions.md)
+- [Verwalten des Portalzugriffs mithilfe des RBAC](rbac.md)

@@ -36,7 +36,7 @@ ms.locfileid: "52241832"
 
 Als Microsoft 365 können Sie es Personen gestatten, das [Self-Service-Kennwortzurücksetzungstool](https://go.microsoft.com/fwlink/p/?LinkId=522677) zu verwenden, damit Sie keine Kennwörter für sie zurücksetzen müssen. Geringerer Arbeitsaufwand!
   
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
   
 - Sie erhalten die Self-Service-Kennwortzurücksetzung für Cloudbenutzer kostenlos mit Microsoft 365, Bildungseinrichtungen oder gemeinnützigen kostenpflichtigen Dienstleistungen.  Es funktioniert nicht mit Microsoft 365 Testversion.
 

@@ -1,6 +1,6 @@
 ---
-title: Microsoft Managed Desktop Gerätedienste
-description: In diesem Thema werden Gerätedienste und Einschränkungen für Microsoft Managed Desktop.
+title: Microsoft Managed Desktop-Gerätedienste
+description: In diesem Thema werden Gerätedienste und Einschränkungen für Microsoft Managed Desktop aufgeführt.
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -16,19 +16,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/06/2021
 ms.locfileid: "52245288"
 ---
-# <a name="microsoft-managed-desktop-device-services"></a>Microsoft Managed Desktop Gerätedienste
+# <a name="microsoft-managed-desktop-device-services"></a>Microsoft Managed Desktop-Gerätedienste
 
-In diesem Thema werden die Dienst- und Diensteinschränkungen für Microsoft Managed Desktop aufgeführt.
+In diesem Thema werden die Dienst- und Diensteinschränkungen für Microsoft Managed Desktop-Geräte aufgeführt.
 
 ## <a name="device-services"></a>Gerätedienste
 
-Microsoft stellt diese Dienste für Microsoft Managed Desktop zur Verfügung. Eine Liste der empfohlenen Microsoft Managed Desktop, filtern Sie auf der Microsoft Managed Desktop Auf der Website ["Windows 10 Pro Geschäftsgeräte"](https://www.microsoft.com/windowsforbusiness/view-all-devices) nach Informationen.
+Microsoft stellt diese Dienste für Microsoft Managed Desktop-Geräte zur Verfügung. Eine Liste der empfohlenen Microsoft Managed Desktop-Programmgeräte finden Sie unter Microsoft Managed Desktop auf der [Windows 10 Pro](https://www.microsoft.com/windowsforbusiness/view-all-devices) Business Devices-Website shop.
 
  | 
  --- | ---
 Support | Support-Agents beantworten Fragen direkt im Zusammenhang mit der Gerätefunktionalität und diagnostizieren Geräteprobleme.
-Bestandsaufnahme | Alle Geräte werden im Administratorportal Microsoft Managed Desktop für die Bestands- und Statusverfolgung nachverfolgt.
-Firmware-/Treiberupdates | Standardmäßig erhalten Microsoft Managed Desktop Geräte Firmware- und Treiberupdates von Windows Update. Nicht alle Hardwarepartner stellen ihre Updates über Windows Zur Verfügung. Updates, die nicht als Automatisch veröffentlicht werden, erfordern eine Ausnahme und müssen vom Kunden bereitgestellt werden.
+Bestandsaufnahme | Alle Geräte werden im Microsoft Managed Desktop Admin-Portal zur Bestands- und Statusverfolgung nachverfolgt.
+Firmware-/Treiberupdates | Standardmäßig erhalten Microsoft Managed Desktop-Geräte Firmware- und Treiberupdates von Windows Update. Nicht alle Hardwarepartner stellen ihre Updates über Windows Update zur Verfügung. Updates, die nicht als Automatisch veröffentlicht werden, erfordern eine Ausnahme und müssen vom Kunden bereitgestellt werden.
 Zubehör | Zubehör, das mit Ihrem Gerät geliefert wird, wird von den gleichen Diensten wie das Gerät selbst abgedeckt, die Garantiebedingungen können jedoch abweichen. Lesen Sie die Garantiebedingungen, die bei der Auswahl Ihrer Geräte ausgewählt wurden. 
 Geräteeinrichtung    | Geräte werden mit der aktuellen Version von Windows vorkonfiguriert und empfangen ihre Apps und Konfigurationen über die Cloud. 
 

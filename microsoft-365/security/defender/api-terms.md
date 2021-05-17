@@ -40,7 +40,7 @@ ms.locfileid: "51062032"
 
 ## <a name="official-terms"></a>Offizielle Begriffe
 
-Microsoft 365 Defender-APIs unterliegen der [Microsoft-APIs-Lizenz und den Nutzungsbedingungen.](/legal/microsoft-apis/terms-of-use)
+Microsoft 365 Die Defender-APIs unterliegen der [Microsoft-APIs-Lizenz und den Nutzungsbedingungen.](/legal/microsoft-apis/terms-of-use)
 
 ## <a name="legal-notices"></a>Rechtliche Hinweise
 
@@ -74,6 +74,6 @@ Wenn Ihre Anforderung gedrosselt wurde, gibt der Antworttext den Zeitpunkt an, z
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Übersicht über Microsoft 365 Defender-APIs](api-overview.md)
+- [Microsoft 365 Übersicht über Defender-APIs](api-overview.md)
 - [Unterstützte Microsoft 365 Defender-APIs](api-supported.md)
 - [Zugreifen auf die Microsoft 365 Defender-APIs](api-access.md)

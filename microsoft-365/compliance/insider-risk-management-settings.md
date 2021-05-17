@@ -247,7 +247,7 @@ Die folgenden Felder und Werte werden für Insider-Risikomanagementwarnungen fü
 | Name | Richtlinienname für insider risk management policy that generated the alert. |
 | PolicyId | Die GUID der Insider-Risikomanagementrichtlinie, die die Warnung ausgelöst hat. |
 | Severity | Der Schweregrad der Warnung. Die Werte sind *High*, *Medium* oder *Low*. |
-| Source | Die Quelle der Warnung. Der Wert ist *Office 365 Security & Compliance*. |
+| Quelle | Die Quelle der Warnung. Der Wert ist *Office 365 Security & Compliance*. |
 | Status | Der Status der Warnung. Die Werte sind *Aktiv* (*Needs Review* in insider risk), *Investigating* (*Confirmed* in insider risk), Resolved ( *Resolved* in insider risk), *Dismissed* (*Dismissed* in insider risk). |
 | Version | Die Version des Sicherheits- und Kompatibilitätsbenachrichtigungsschemas. |
 

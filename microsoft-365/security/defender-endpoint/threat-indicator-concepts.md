@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51066080"
 ---
-# <a name="understand-threat-intelligence-concepts"></a>Verstehen von Bedrohungsintelligenzkonzepten
+# <a name="understand-threat-intelligence-concepts"></a>Grundlegendes zu Threat Intelligence-Konzepten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -64,14 +64,14 @@ IoCs haben eine n:1-Beziehung mit Warnungsdefinitionen, so dass eine Warnungsdef
 Thema | Beschreibung
 :---|:---
 [Ziehen von Erkennungen an Ihre SIEM-Tools](configure-siem.md)| Erfahren Sie mehr über verschiedene Methoden zum Ziehen von Erkennungen.
-[Aktivieren der SIEM-Integration in Microsoft Defender for Endpoint](enable-siem-integration.md)| Erfahren Sie mehr über das  Aktivieren des SIEM-Integrationsfeatures auf der Seite Einstellungen im Portal, damit Sie die erforderlichen Informationen zum Konfigurieren unterstützter SIEM-Tools verwenden und generieren können.
+[Aktivieren der SIEM-Integration in Microsoft Defender for Endpoint](enable-siem-integration.md)| Erfahren Sie mehr über das Aktivieren des SIEM-Integrationsfeatures auf der seite **Einstellungen** im Portal, damit Sie die erforderlichen Informationen zum Konfigurieren unterstützter SIEM-Tools verwenden und generieren können.
 [Konfigurieren von Splunk zum Ziehen von Microsoft Defender for Endpoint-Erkennungen](configure-siem.md)| Erfahren Sie mehr über die Installation der modularen Eingabe-App für die REST-API und andere Konfigurationseinstellungen, damit Splunk Microsoft Defender for Endpoint-Erkennungen abrufen kann.
 [Konfigurieren von HP ArcSight zum Ziehen von Microsoft Defender for Endpoint-Erkennungen](configure-arcsight.md)| Erfahren Sie mehr über die Installation des HP ArcSight REST FlexConnector-Pakets und die Dateien, die Sie zum Konfigurieren von ArcSight zum Ziehen von Microsoft Defender for Endpoint-Erkennungen benötigen.
-[Microsoft Defender for Endpoint Detection-Felder](api-portal-mapping.md) | Erfahren Sie, welche Datenfelder als Teil der Benachrichtigungs-API verfügbar gemacht werden und wie sie Microsoft Defender Security Center zuordnungen.
+[Microsoft Defender for Endpoint Detection-Felder](api-portal-mapping.md) | Erfahren Sie, welche Datenfelder als Teil der Benachrichtigungs-API verfügbar gemacht werden und wie sie Microsoft Defender Security Center.
 [Abrufen von Microsoft Defender for Endpoint-Erkennungen mithilfe der REST-API](pull-alerts-using-rest-api.md) | Verwenden Sie den OAuth 2.0-Ablauf der Clientanmeldeinformationen, um Erkennungen von Microsoft Defender for Endpoint mithilfe der REST-API zu abrufen.
-[Problembehandlung bei der Integration von SIEM-Tools](troubleshoot-siem.md) | Beheben von Problemen, die beim Verwenden des SIEM-Integrationsfeatures auftreten können.
+[Behandeln von Problemen mit der Integration von SIEM-Tools](troubleshoot-siem.md) | Beheben von Problemen, die beim Verwenden des SIEM-Integrationsfeatures auftreten können.
 
 
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Verwalten von Indikatoren](manage-indicators.md)
+- [Indikatoren verwalten](manage-indicators.md)

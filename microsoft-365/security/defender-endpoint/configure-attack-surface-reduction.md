@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren der Reduzierung der Angriffsfläche
-description: Verwenden Sie Microsoft Intune, Microsoft Endpoint Configuration Manager, PowerShell-Cmdlets und Gruppenrichtlinien, um die Reduzierung der Angriffsfläche zu konfigurieren.
+description: Verwenden Microsoft Intune, Microsoft Endpoint Configuration Manager, PowerShell-Cmdlets und Gruppenrichtlinien, um die Reduzierung der Angriffsfläche zu konfigurieren.
 keywords: asr, attack surface reduction, windows defender, microsoft defender, antivirus, av
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -44,9 +44,9 @@ Artikel | Beschreibung
 -|-
 [Aktivieren der hardwarebasierten Isolation für Microsoft Edge](/windows/security/threat-protection/microsoft-defender-application-guard/install-md-app-guard) | Vorbereiten und Installieren von Application Guard, einschließlich Hardware- und Softwareanforderungen
 [Aktivieren der Anwendungssteuerung](/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)|Steuern von Anwendungen, die von Benutzern ausgeführt werden, und Schützen von Kernelmodusprozessen
-[Exploit-Schutz](./enable-exploit-protection.md)|Automatisches Anwenden von Techniken zur Risikominderung von Exploits sowohl auf Betriebssystemprozesse als auch auf einzelne Apps
+[Exploit-Schutz.](./enable-exploit-protection.md)|Automatisches Anwenden von Techniken zur Risikominderung von Exploits sowohl auf Betriebssystemprozesse als auch auf einzelne Apps
 [Netzwerkschutz](./enable-network-protection.md)|So verhindern Sie, dass Benutzer Apps für den Zugriff auf gefährliche Domänen verwenden
 [Kontrollierter Ordnerzugriff](./enable-controlled-folders.md)|Schützen wertvoller Daten vor schädlichen Apps
-[Reduzierung der Angriffsfläche](./enable-attack-surface-reduction.md)|Verhindern von Aktionen und Apps, die in der Regel von Schadsoftware mit Exploits verwendet werden
+[Verringerung der Angriffsfläche](./enable-attack-surface-reduction.md):|Verhindern von Aktionen und Apps, die in der Regel von Schadsoftware mit Exploits verwendet werden
 [Netzwerkfirewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security-deployment-guide)|Schützen von Geräten und Daten über ein Netzwerk hinweg
 

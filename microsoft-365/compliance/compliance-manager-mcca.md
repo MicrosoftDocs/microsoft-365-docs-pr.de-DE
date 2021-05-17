@@ -110,7 +110,7 @@ Führen Sie die folgenden Anweisungen aus, um einen Bericht basierend auf einem 
   | 7  | Japan |
   | 8  | Korea |
   | 9  | Nordamerika (ohne Kanada) |
-  | 10   | Südamerika |
+  | 10 | Südamerika |
   | 11 | Südafrika |
   | 12  | Schweiz |
   | 13 | Vereinigte Arabische Emirate |

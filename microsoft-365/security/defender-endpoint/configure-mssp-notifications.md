@@ -51,4 +51,4 @@ Diese Kontrollkästchen müssen aktiviert sein:
 ## <a name="related-topics"></a>Verwandte Themen
 - [Gewähren von MSSP-Zugriff auf das Portal](grant-mssp-access.md)
 - [Zugreifen auf das MSSP-Kundenportal](access-mssp-portal.md)
-- [Abrufen von Warnungen vom Kunden-Mandanten](fetch-alerts-mssp.md)
+- [Abrufen von Benachrichtigungen vom Kunden-Mandanten](fetch-alerts-mssp.md)

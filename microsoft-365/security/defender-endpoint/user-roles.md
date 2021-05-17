@@ -1,6 +1,6 @@
 ---
 title: Erstellen und Verwalten von Rollen für die rollenbasierte Zugriffssteuerung
-description: Erstellen von Rollen und Definieren der Berechtigungen, die der Rolle als Teil der rollenbasierten Zugriffssteuerungsimplementierung im Microsoft Defender Security Center zugewiesen sind
+description: Erstellen Sie Rollen, und definieren Sie die Berechtigungen, die der Rolle als Teil der rollenbasierten Zugriffssteuerungsimplementierung in der Microsoft Defender Security Center
 keywords: Benutzerrollen, Rollen, Access rbac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,13 +35,13 @@ ms.locfileid: "51065951"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>Erstellen von Rollen und Zuweisen der Rolle zu einer Azure Active Directory-Gruppe
+## <a name="create-roles-and-assign-the-role-to-an-azure-active-directory-group"></a>Erstellen von Rollen und Zuweisen der Rolle zu einer Azure Active Directory Gruppe
 
-In den folgenden Schritten erfahren Sie, wie Sie Rollen in Microsoft Defender Security Center erstellen. Es wird davon ausgegangen, dass Sie bereits Azure Active Directory-Benutzergruppen erstellt haben.
+Die folgenden Schritte führen Sie zum Erstellen von Rollen in Microsoft Defender Security Center. Es wird davon ausgegangen, dass Sie bereits Azure Active Directory erstellt haben.
 
-1. Melden Sie sich [beim Microsoft Defender Security Center mit](https://securitycenter.windows.com/) einem Konto an, dem ein Sicherheitsadministrator oder eine globale Administratorrolle zugewiesen ist.
+1. Melden Sie sich [bei Microsoft Defender Security Center](https://securitycenter.windows.com/) konto mit einem zugewiesenen Sicherheitsadministrator oder einer globalen Administratorrolle an.
 
-2. Wählen Sie im Navigationsbereich Einstellungen **> Rollen aus.**
+2. Wählen Sie im Navigationsbereich die **Option Einstellungen > Rollen aus.**
 
 3. Wählen **Sie Element hinzufügen aus.**
 
@@ -62,12 +62,12 @@ In den folgenden Schritten erfahren Sie, wie Sie Rollen in Microsoft Defender Se
 
 - **Anzeigen von Daten**
     - **Sicherheitsvorgänge** – Anzeigen aller Daten zu Sicherheitsvorgängen im Portal
-    - **Bedrohungs- und Sicherheitsrisikoverwaltung** – Anzeigen von Daten zur Verwaltung von Bedrohungen und Sicherheitslücken im Portal
+    - **Bedrohung und Sicherheitsrisikomanagement** – Anzeigen Bedrohungs- und Sicherheitsrisikomanagement Daten im Portal
 
 - **Aktive Korrekturaktionen**
     - **Sicherheitsvorgänge** – Ergreifen von Reaktionsaktionen, Genehmigen oder Schließen ausstehender Korrekturaktionen, Verwalten zulässiger/blockierter Listen für Automatisierung und Indikatoren
-    - **Bedrohungs- und Sicherheitsrisikoverwaltung – Ausnahmebehandlung** – Erstellen neuer Ausnahmen und Verwalten aktiver Ausnahmen
-    - **Bedrohungs- und Sicherheitsrisikoverwaltung – Behandlung** von Abhilfemaßnahmen – Übermitteln neuer Behebungsanforderungen, Erstellen von Tickets und Verwalten vorhandener Abhilfemaßnahmen
+    - **Bedrohung und Sicherheitsrisikomanagement – Ausnahmebehandlung** – Erstellen neuer Ausnahmen und Verwalten aktiver Ausnahmen
+    - **Bedrohung und Sicherheitsrisikomanagement – Behandlung** von Abhilfemaßnahmen – Übermitteln neuer Abhilfemaßnahmen, Erstellen von Tickets und Verwalten vorhandener Abhilfemaßnahmen
 
 - **Warnungsuntersuchung** : Verwalten von Warnungen, Initiieren automatisierter Untersuchungen, Ausführen von Scans, Sammeln von Untersuchungspaketen, Verwalten von Gerätetags und Herunterladen nur portabler ausführbarer Dateien (PE) 
 
@@ -93,9 +93,9 @@ Weitere Informationen zu den verfügbaren Befehlen finden Sie unter [Untersuchen
   
 ## <a name="edit-roles"></a>Bearbeiten von Rollen
 
-1. Melden Sie sich [beim Microsoft Defender Security Center mithilfe eines](https://securitycenter.windows.com/) Kontos an, dem der Sicherheitsadministrator oder die globale Administratorrolle zugewiesen ist.
+1. Melden Sie sich [bei Microsoft Defender Security Center](https://securitycenter.windows.com/) konto mit zugewiesenem Sicherheitsadministrator oder globaler Administratorrolle an.
 
-2. Wählen Sie im Navigationsbereich Einstellungen **> Rollen aus.**
+2. Wählen Sie im Navigationsbereich die **Option Einstellungen > Rollen aus.**
 
 3. Wählen Sie die Rolle aus, die Sie bearbeiten möchten.
 
@@ -107,9 +107,9 @@ Weitere Informationen zu den verfügbaren Befehlen finden Sie unter [Untersuchen
 
 ## <a name="delete-roles"></a>Löschen von Rollen
 
-1. Melden Sie sich [beim Microsoft Defender Security Center mithilfe eines](https://securitycenter.windows.com/) Kontos an, dem der Sicherheitsadministrator oder die globale Administratorrolle zugewiesen ist.
+1. Melden Sie sich [bei Microsoft Defender Security Center](https://securitycenter.windows.com/) konto mit zugewiesenem Sicherheitsadministrator oder globaler Administratorrolle an.
 
-2. Wählen Sie im Navigationsbereich Einstellungen **> Rollen aus.**
+2. Wählen Sie im Navigationsbereich die **Option Einstellungen > Rollen aus.**
 
 3. Wählen Sie die Rolle aus, die Sie löschen möchten.
 

@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Vertraulichkeitsbezeichnungen zum Priorisieren der Reaktion auf Vorfälle
+title: Verwenden von Vertraulichkeitsbeschriftungen zum Priorisieren von Vorfallantworten
 description: Informationen zum Verwenden von Vertraulichkeitsbezeichnungen zum Priorisieren und Untersuchen von Vorfällen
 keywords: information, protection, data, loss, prevention,labels, dlp, incident, investigate, investigation
 search.product: eADQiWindows 10XVcnh
@@ -22,7 +22,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51186125"
 ---
-# <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>Verwenden von Vertraulichkeitsbezeichnungen zum Priorisieren der Reaktion auf Vorfälle  
+# <a name="use-sensitivity-labels-to-prioritize-incident-response"></a>Verwenden von Vertraulichkeitsbeschriftungen zum Priorisieren von Vorfallantworten  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,9 +41,9 @@ Defender for Endpoint erleichtert die Priorisierung von Sicherheitsvorfällen du
 Erfahren Sie, wie Sie Datensensitivitätsbezeichnungen verwenden, um die Untersuchung von Vorfällen zu priorisieren.
 
 >[!NOTE]
->Bezeichnungen werden für Windows 10, Version 1809 oder höher erkannt.
+>Bezeichnungen werden für Windows 10, Version 1809 oder höher, erkannt.
 
-1. Wählen Sie im Microsoft Defender Security Center Die Option **Vorfälle aus.** 
+1. Wählen Microsoft Defender Security Center unter **Incidents aus.** 
 
 2. Scrollen Sie nach rechts, um die Spalte **Datensensitivität zu** sehen. Diese Spalte spiegelt Vertraulichkeitsbezeichnungen wider, die auf Geräten im Zusammenhang mit den Vorfällen beobachtet wurden und einen Hinweis darauf geben, ob vertrauliche Dateien von dem Vorfall betroffen sein können.
 

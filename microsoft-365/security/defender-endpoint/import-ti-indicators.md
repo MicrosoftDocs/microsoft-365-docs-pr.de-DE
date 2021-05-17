@@ -71,7 +71,7 @@ Stellen Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern zur
 
 Parameter | Typ    | Beschreibung
 :---|:---|:---
-Indikatoren | Auflisten<[Indikators](ti-indicator.md)> | Liste der [Indikatoren](ti-indicator.md). **Erforderlich**
+Indikatoren | Auflisten<[Indikators](ti-indicator.md)> | Liste der [Indikatoren](ti-indicator.md). **Required**
 
 
 ## <a name="response"></a>Antwort
@@ -144,4 +144,4 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 ```
 
 ## <a name="related-topic"></a>Verwandtes Thema
-- [Verwalten von Indikatoren](manage-indicators.md)
+- [Indikatoren verwalten](manage-indicators.md)

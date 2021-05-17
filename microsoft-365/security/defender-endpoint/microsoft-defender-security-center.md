@@ -42,12 +42,12 @@ Microsoft Defender Security Center ist das Portal, in dem Sie auf Microsoft Defe
 Thema | Beschreibung
 :---|:---
 Erste Schritte  |  Erfahren Sie mehr über die Mindestanforderungen, überprüfen Sie die Lizenzierung und das vollständige Setup, erfahren Sie mehr über Vorschaufeatures, wissen Sie mehr über Datenspeicherung und Datenschutz sowie über das Zuweisen von Benutzerzugriff auf das Portal.
-[Onboarding von Geräten](onboard-configure.md) | Erfahren Sie mehr über das Onboarding von Client-, Server- und Nicht-Windows-Geräten. Erfahren Sie, wie Sie einen Erkennungstest ausführen, Proxy- und Internetverbindungseinstellungen konfigurieren und wie Sie potenzielle Onboardingprobleme beheben.
+[Onboarding von Geräten](onboard-configure.md) | Erfahren Sie mehr über das Onboarding von Client-, Server- Windows Geräten. Erfahren Sie, wie Sie einen Erkennungstest ausführen, Proxy- und Internetverbindungseinstellungen konfigurieren und wie Sie potenzielle Onboardingprobleme beheben.
 [Verstehen des Portals](use.md) | Informationen zu den Sicherheitsvorgängen, Secure Score und Threat Analytics-Dashboards sowie zum Navigieren im Portal.
 Untersuchen und Behebung von Bedrohungen | Untersuchen Sie Warnungen, Geräte und ergreifen Sie Reaktionsaktionen zur Behebung von Bedrohungen.
-API- und SIEM-Unterstützung | Verwenden Sie die unterstützten APIs, um benutzerdefinierte Warnungen zu ziehen und zu erstellen oder Workflows zu automatisieren. Verwenden Sie die unterstützten SIEM-Tools, um Warnungen aus dem Microsoft Defender Security Center zu ziehen.
-Reporting | Erstellen und Erstellen von Power BI-Berichten mithilfe von Microsoft Defender for Endpoint-Daten.
+API- und SIEM-Unterstützung | Verwenden Sie die unterstützten APIs, um benutzerdefinierte Warnungen zu ziehen und zu erstellen oder Workflows zu automatisieren. Verwenden Sie die unterstützten SIEM-Tools, um Warnungen von Microsoft Defender Security Center.
+Reporting | Erstellen und erstellen Power BI mit Microsoft Defender for Endpoint-Daten.
 Überprüfen des Dienststatus und des Sensorstatus | Überprüfen Sie, ob der Dienst ausgeführt wird, und überprüfen Sie den Sensorstatus auf Geräten.
-[Konfigurieren von Microsoft Defender Security Center-Einstellungen](preferences-setup.md) | Konfigurieren Sie allgemeine Einstellungen, aktivieren Sie die Vorschau, Benachrichtigungen und aktivieren Sie andere Features.
-[Zugreifen auf das Microsoft Defender for Endpoint Community Center](community.md) | Greifen Sie auf das Microsoft Defender for Endpoint Community Center zu, um erfahrungen mit dem Produkt zu erfahren, zusammenzuarbeiten und auszutauschen.
+[Konfigurieren Microsoft Defender Security Center Einstellungen](preferences-setup.md) | Konfigurieren Sie allgemeine Einstellungen, aktivieren Sie die Vorschau, Benachrichtigungen und aktivieren Sie andere Features.
+[Zugreifen auf das Microsoft Defender für Endpunkt-Community Center](community.md) | Greifen Sie auf das Microsoft Defender for Endpoint Community Center zu, um erfahrungen mit dem Produkt zu lernen, zusammenzuarbeiten und auszutauschen.
 [Behandeln von Dienstproblemen](troubleshoot-mdatp.md) | In diesem Abschnitt werden Probleme behandelt, die bei der Verwendung des Microsoft Defender for Endpoint-Diensts auftreten können.

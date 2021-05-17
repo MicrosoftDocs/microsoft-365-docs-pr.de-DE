@@ -56,7 +56,7 @@ Innerhalb einer Stunde – oder nachdem sie die aktuelle Seite Microsoft 365 ver
 > [!IMPORTANT]
 > Obwohl wir die Schritte in dieser Lösung nummeriert haben und Sie die Lösung nicht in der genauen Reihenfolge abschließen müssen, wird empfohlen, die Schritte auf diese Weise zu tun.
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Sie müssen ein globaler Administrator sein, um die Schritte in dieser Lösung ausführen zu können.
 

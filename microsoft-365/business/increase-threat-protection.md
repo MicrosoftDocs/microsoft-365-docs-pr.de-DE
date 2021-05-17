@@ -81,7 +81,7 @@ So erstellen Sie eine E-Mail-Transportregel:
 
 6. Klicken Sie auf **Speichern**.
 
-|Einstellung|Warnen Von Benutzern vor dem Öffnen von Anlagen Office Dateien||
+|Setting|Warnen Von Benutzern vor dem Öffnen von Anlagen Office Dateien||
 |---|---|---|
 |Name|Anti-Ransomware-Regel: Benutzer warnen|
 |Wenden Sie diese Regel an, wenn . . .|Jede Anlage . . . Dateierweiterung entspricht . . .|
@@ -113,7 +113,7 @@ Um eine E-Mail-Transportregel zu erstellen, sehen Sie sich entweder [dieses kurz
 
 6. Klicken Sie auf **Speichern**.
 
-|Einstellung|Warnen Von Benutzern vor dem Öffnen von Anlagen Office Dateien|
+|Setting|Warnen Von Benutzern vor dem Öffnen von Anlagen Office Dateien|
 |---|---|
 |Name|Verhindern der automatischen Weiterleitung von E-Mails an externe Domänen|
 |Wenden Sie diese Regel an, wenn ...|Der Absender . . . ist extern/intern . . . Innerhalb der Organisation|

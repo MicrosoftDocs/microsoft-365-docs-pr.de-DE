@@ -246,7 +246,7 @@ Sie können diese Filter ändern, indem Sie auf **Filter** klicken oder auf eine
 Die Datentabelle enthält die folgenden Informationen:
 
 - **Richtung**
-- **Type**
+- **Typ**
 - **24 Stunden**
 - **3 Tage**
 - **7 Tage**
@@ -467,7 +467,7 @@ Klicken Sie auf Bericht anzeigen, um zur Berichtsansicht **zurück zu wechseln.*
 Wenn Sie **in der Ansicht Nach:** Richtung oder Nach unten **nach:** Richtungsansicht auf Detailtabelle anzeigen klicken, werden die folgenden Informationen angezeigt: 
 
 - **Datum (UTC)**
-- **Type**
+- **Typ**
 - **Richtung**
 - **Anzahl der Nachrichten**
 

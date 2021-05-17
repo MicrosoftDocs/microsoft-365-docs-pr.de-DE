@@ -81,13 +81,13 @@ Die Links zu Geräten hier sind nur für Ihre Referenz. Wenn Sie Geräte bestell
 
 Darüber hinaus muss das Gerät auch die folgenden Kriterien erfüllen:     
 
-- Wenn eine bestimmte SKU in den Geräteanforderungen aufgeführt ist, stellen Sie sicher, dass Sie sie bei der Bestellung verwenden. Dadurch wird sichergestellt, dass Geräte den anforderungen Microsoft Managed Desktop entsprechen. 
-- Die erste Ausführungserfahrung Windows noch nicht abgeschlossen.
-- Registrieren mit Microsoft Managed Desktop geräteregistrierungsfeature [](../get-started/register-devices-self.md)
+- Wenn eine bestimmte SKU in den Geräteanforderungen aufgeführt ist, stellen Sie sicher, dass Sie sie bei der Bestellung verwenden. Dadurch wird sichergestellt, dass Geräte den Microsoft Managed Desktop-Softwareanforderungen entsprechen. 
+- Die Windows-Erstlauferfahrung wurde noch nicht abgeschlossen.
+- Registrieren bei Microsoft Managed Desktop mithilfe des [Geräteregistrierungsfeatures](../get-started/register-devices-self.md)
 
 >[!NOTE]
 >Geräte mit einem Prozessor mit 2,0 GHz oder schneller bieten benutzern, die an diesen Aktivitäten beteiligt sind, eine wesentlich bessere Erfahrung:
->- Verwenden von Videokonferenzen mit Teams. Weitere [Informationen finden Sie unter Hardware requirements for Microsoft Teams.](/microsoftteams/hardware-requirements-for-the-teams-app)
+>- Verwenden von Videokonferenzen mit Teams. Weitere [Informationen finden Sie unter Hardwareanforderungen](/microsoftteams/hardware-requirements-for-the-teams-app) für Microsoft Teams.
 >-  Verwenden eines Geräts für verschiedene Workloads.
 >- Verwenden mehrerer Monitore.
 

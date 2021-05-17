@@ -45,14 +45,14 @@ ms.locfileid: "51187385"
 | [Auflisten von MachineActions](get-machineactions-collection.md)           | [Computeraktion](machineaction.md) | Auflisten von Machine Action-Entitäten. [](machineaction.md)           |
 | [MachineAction erhalten](get-machineaction-object.md)                  | [Computeraktion](machineaction.md) | Get a [single Machine Action](machineaction.md) entity.     |
 | [Untersuchungspaket sammeln](collect-investigation-package.md) | [Computeraktion](machineaction.md) | Erfassen des Untersuchungspakets von einem [Computer](machine.md). |
-| [Get investigation package SAS URI](get-package-sas-uri.md)       | [Computeraktion](machineaction.md) | URI zum Herunterladen des Untersuchungspakets herunterladen.          |
+| [SAS-URI für Untersuchungspaket erhalten](get-package-sas-uri.md)       | [Computeraktion](machineaction.md) | URI zum Herunterladen des Untersuchungspakets herunterladen.          |
 | [Computer isolieren](isolate-machine.md)                             | [Computeraktion](machineaction.md) | [Isolieren des](machine.md) Computers vom Netzwerk.                 |
-| [Computer aus Isolation lösen](unisolate-machine.md)            | [Computeraktion](machineaction.md) | Computer [aus](machine.md) Isolation los.               |
+| [Computer von Isolation wieder freigeben](unisolate-machine.md)            | [Computeraktion](machineaction.md) | Computer [aus](machine.md) Isolation los.               |
 | [Einschränken der App-Ausführung](restrict-code-execution.md)              | [Computeraktion](machineaction.md) | Einschränken der Anwendungsausführung.                             |
-| [Entfernen der App-Einschränkung](unrestrict-code-execution.md)            | [Computeraktion](machineaction.md) | Entfernen der Anwendungsausführungseinschränkung.                   |
-| [Ausführen der Antivirenscans](run-av-scan.md)                              | [Computeraktion](machineaction.md) | Führen Sie einen AV-Scan mit Windows Defender (falls zutreffend) aus.    |
-| [Offboardcomputer](offboard-machine-api.md)                       | [Computeraktion](machineaction.md) | [Offboardcomputer](machine.md) von Microsoft Defender for Endpoint. |
-| [Datei zum Beenden und Isolieren](stop-and-quarantine-file.md)           | [Computeraktion](machineaction.md) | Beenden Sie die Ausführung einer Datei auf einem Computer, und löschen Sie sie.        |
+| [Entfernen von App-Einschränkungen](unrestrict-code-execution.md)            | [Computeraktion](machineaction.md) | Entfernen der Anwendungsausführungseinschränkung.                   |
+| [Antivirusscan ausführen](run-av-scan.md)                              | [Computeraktion](machineaction.md) | Führen Sie einen AV-Scan mit Windows Defender (falls zutreffend) aus.    |
+| [Offboarding des Computers](offboard-machine-api.md)                       | [Computeraktion](machineaction.md) | [Offboardcomputer](machine.md) von Microsoft Defender for Endpoint. |
+| [Beenden und Datei unter Quarantäne stellen](stop-and-quarantine-file.md)           | [Computeraktion](machineaction.md) | Beenden Sie die Ausführung einer Datei auf einem Computer, und löschen Sie sie.        |
 
 <br>
 

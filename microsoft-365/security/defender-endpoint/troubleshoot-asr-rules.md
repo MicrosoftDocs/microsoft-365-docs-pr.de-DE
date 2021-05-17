@@ -70,7 +70,7 @@ Hier sind einige weitere Informationsquellen, die Windows, um die Auswirkungen u
 
 ### <a name="querying-which-rules-are-active"></a>Abfragen der aktiven Regeln
 Eine der einfachsten Methoden, um zu ermitteln, ob DIE-Regeln bereits aktiviert sind – und, über ein PowerShell-Cmdlet, Get-MpPreference.
-Hier ein Beispiel:
+Hier ist ein Beispiel:
 
 :::image type="content" source="images/getmpreferencescriptnew.png" alt-text="mppreference-Skript erhalten":::
 

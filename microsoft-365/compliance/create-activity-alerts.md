@@ -17,7 +17,7 @@ search.appverid:
 - MET150
 ms.assetid: 72bbad69-035b-4d33-b8f4-549a2743e97d
 ROBOTS: NOINDEX, NOFOLLOW
-description: Hinzufügen und Verwalten von Aktivitätswarnungen im Security & Compliance Center, sodass Microsoft 365 Ihnen E-Mail-Benachrichtigungen sendet, wenn Benutzer bestimmte Aktivitäten ausführen
+description: Hinzufügen und Verwalten von Aktivitätswarnungen im Security & Compliance Center, damit Microsoft 365 E-Mail-Benachrichtigungen senden, wenn Benutzer bestimmte Aktivitäten ausführen
 ms.openlocfilehash: 0d5133bd46be6a5a548f2b733bae202f3a611646
 ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
@@ -27,9 +27,9 @@ ms.locfileid: "51052093"
 ---
 # <a name="create-activity-alerts"></a>Erstellen von Aktivitätswarnungen
 
-Sie können eine Aktivitätswarnung erstellen, die Ihnen eine E-Mail-Benachrichtigung sendet, wenn Benutzer bestimmte Aktivitäten in Office 365 ausführen. Aktivitätswarnungen ähneln der Suche nach Ereignissen im Überwachungsprotokoll, mit der Ausnahme, dass Ihnen eine E-Mail-Nachricht gesendet wird, wenn ein Ereignis für eine Aktivität eintritt, für die Sie eine Warnung erstellt haben. 
+Sie können eine Aktivitätswarnung erstellen, die Ihnen eine E-Mail-Benachrichtigung sendet, wenn Benutzer bestimmte Aktivitäten in Office 365. Aktivitätswarnungen ähneln der Suche nach Ereignissen im Überwachungsprotokoll, mit der Ausnahme, dass Ihnen eine E-Mail-Nachricht gesendet wird, wenn ein Ereignis für eine Aktivität eintritt, für die Sie eine Warnung erstellt haben. 
   
- **Warum sollten Sie Aktivitätswarnungen verwenden, anstatt das Überwachungsprotokoll zu durchsuchen?** Es gibt möglicherweise bestimmte Arten von Aktivitäten oder Aktivitäten, die von bestimmten Benutzern ausgeführt werden, die Sie wirklich kennen möchten. Anstatt sich daran zu erinnern, das Überwachungsprotokoll nach diesen Aktivitäten zu durchsuchen, können Sie Aktivitätswarnungen verwenden, damit Microsoft 365 Ihnen eine E-Mail-Nachricht sendet, wenn Benutzer diese Aktivitäten ausführen. Sie können beispielsweise eine Aktivitätswarnung erstellen, um Sie zu benachrichtigen, wenn ein Benutzer Dateien in SharePoint löscht, oder Sie können eine Warnung erstellen, um Sie zu benachrichtigen, wenn ein Benutzer Nachrichten dauerhaft aus dem Postfach löscht. Die an Sie gesendete E-Mail-Benachrichtigung enthält Informationen dazu, welche Aktivität ausgeführt wurde, und den Benutzer, der sie ausgeführt hat.
+ **Warum sollten Sie Aktivitätswarnungen verwenden, anstatt das Überwachungsprotokoll zu durchsuchen?** Es gibt möglicherweise bestimmte Arten von Aktivitäten oder Aktivitäten, die von bestimmten Benutzern ausgeführt werden, die Sie wirklich kennen möchten. Anstatt sich daran zu erinnern, das Überwachungsprotokoll nach diesen Aktivitäten zu durchsuchen, können Sie Aktivitätswarnungen verwenden, um Microsoft 365 eine E-Mail-Nachricht zu senden, wenn Benutzer diese Aktivitäten ausführen. Sie können beispielsweise eine Aktivitätswarnung erstellen, um Sie zu benachrichtigen, wenn ein Benutzer Dateien in SharePoint löscht, oder Sie können eine Warnung erstellen, um Sie zu benachrichtigen, wenn ein Benutzer Nachrichten dauerhaft aus dem Postfach löscht. Die an Sie gesendete E-Mail-Benachrichtigung enthält Informationen dazu, welche Aktivität ausgeführt wurde, und den Benutzer, der sie ausgeführt hat.
 
 > [!NOTE]
 > Aktivitätswarnungen sind veraltet. Es wird empfohlen, dass Sie mit der Verwendung von Warnungsrichtlinien im Security and Compliance Center beginnen, anstatt neue Aktivitätswarnungen zu erstellen. Warnungsrichtlinien bieten zusätzliche Funktionen, z. B. die Möglichkeit, eine Warnungsrichtlinie zu erstellen,  die eine Warnung auslöst, wenn ein Benutzer eine bestimmte Aktivität ausführt, und Warnungen auf der Seite Warnungen anzeigen im Security and Compliance Center anzuzeigen. Weitere Informationen finden Sie unter [Warnungsrichtlinien](alert-policies.md).
@@ -108,7 +108,7 @@ Um eine Aktivitätswarnung wieder einzuschalten, wiederholen Sie einfach diese S
     > [!TIP]
     > Möglicherweise möchten Sie eine Aktivitätswarnung für nur eine Aktivität erstellen, die von einem beliebigen Benutzer ausgeführt wird. Sie können auch eine Aktivitätswarnung erstellen, die mehrere Aktivitäten nachverfolgt, die von einem oder mehreren Benutzern ausgeführt werden. 
   
-    In der folgenden Tabelle sind einige allgemeine dokumentbezogene Aktivitäten in SharePoint oder OneDrive for Business aufgeführt.
+    In der folgenden Tabelle sind einige häufige dokumentbezogene Aktivitäten in SharePoint oder OneDrive for Business.
     
     |**Wenn ein Benutzer dies tut...**|**Erstellen einer Warnung für diese Aktivität**|**Aktivitätsgruppe**|
     |:-----|:-----|:-----|
@@ -118,7 +118,7 @@ Um eine Aktivitätswarnung wieder einzuschalten, wiederholen Sie einfach diese S
     |Lädt ein Dokument hoch oder lädt es herunter.  <br/> |Datei hochgeladen  <br/> And/or  <br/> Datei heruntergeladen  <br/> |Datei- und Ordneraktivitäten  <br/> |
     |Ändert die Zugriffsberechtigungen an eine Website.  <br/> |Websiteberechtigungen geändert  <br/> |Websiteverwaltungsaktivitäten  <br/> |
 
-    In der folgenden Tabelle sind einige häufige E-Mail-bezogene Aktivitäten in Exchange Online aufgeführt.
+    In der folgenden Tabelle sind einige häufige E-Mail-bezogene Aktivitäten in Exchange Online.
 
     |**Wenn ein Benutzer dies tut...**|**Erstellen einer Warnung für diese Aktivität**|**Aktivitätsgruppe**|
     |:-----|:-----|:-----|

@@ -47,7 +47,7 @@ Mit einer Liveantwort können Analysten alle folgenden Aufgaben ausführen:
 - Hochladen sie ein PowerShell-Skript oder eine ausführbare Datei in die Bibliothek ein, und führen Sie es auf einem Gerät auf Mandantenebene aus.
 - Ausführen oder Rückgängig machen von Korrekturaktionen.
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Bevor Sie eine Sitzung auf einem Gerät initiieren können, stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen:
 
@@ -194,10 +194,10 @@ Damit Ihr Sicherheitsteam weiterhin ein betroffenes Gerät untersuchen kann, kö
 - Wenn Sie darauf warten, dass eine Datei heruntergeladen wird, können Sie sie mithilfe von STRG + Z in den Hintergrund verschieben.
 - Geben Sie in der Liveantwortbefehlskonsole ein, um einen Dateidownload in den Vordergrund zu `fg <command_id>` bringen.
 
-Im Folgenden finden Sie einige Beispiele:
+Hier sind einige Beispiele:
 
 
-|Befehl  |Funktion  |
+|Get-Help  |Funktion  |
 |---------|---------|
 |`getfile "C:\windows\some_file.exe" &`     |Startet das Herunterladen einer Datei *namenssome_file.exe* im Hintergrund.         |
 |`fg 1234`     |Gibt einen Download mit der Befehls-ID *1234 in* den Vordergrund zurück.         |

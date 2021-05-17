@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender Incidents-APIs und der Ressourcentyp für Vorfälle
+title: Microsoft 365 APIs für Defender-Vorfälle und der Ressourcentyp für Vorfälle
 description: Erfahren Sie mehr über die Methoden und Eigenschaften des Ressourcentyps Incident in Microsoft 365 Defender
 keywords: Vorfall, Vorfälle, API
 search.product: eADQiWindows 10XVcnh
@@ -27,7 +27,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51060819"
 ---
-# <a name="microsoft-365-defender-incidents-api-and-the-incident-resource-type"></a>Microsoft 365 Defender Incidents API und der Ressourcentyp für Vorfälle
+# <a name="microsoft-365-defender-incidents-api-and-the-incident-resource-type"></a>Microsoft 365 Defender Incidents-API und der Ressourcentyp für Vorfälle
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51060819"
 > [!IMPORTANT]
 > Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
 
-Bei [einem Vorfall](incidents-overview.md) handelt es sich um eine Sammlung verwandter Warnungen, die bei der Beschreibung eines Angriffs helfen. Ereignisse aus verschiedenen Entitäten in Ihrer Organisation werden automatisch von Microsoft 365 Defender aggregiert. Sie können die Incidents-API verwenden, um programmgesteuert auf die Vorfälle und zugehörigen Warnungen Ihrer Organisation zu zugreifen.
+Bei [einem Vorfall](incidents-overview.md) handelt es sich um eine Sammlung verwandter Warnungen, die bei der Beschreibung eines Angriffs helfen. Ereignisse aus verschiedenen Entitäten in Ihrer Organisation werden automatisch von defender Microsoft 365 aggregiert. Sie können die Incidents-API verwenden, um programmgesteuert auf die Vorfälle und zugehörigen Warnungen Ihrer Organisation zu zugreifen.
 
 ## <a name="quotas-and-resource-allocation"></a>Kontingente und Ressourcenzuordnung
 
@@ -80,7 +80,7 @@ Warnungen | Warnungsliste | Liste der zugehörigen Warnungen. Beispiele finden S
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Übersicht über Microsoft 365 Defender-APIs](api-overview.md)
+- [Microsoft 365 Übersicht über Defender-APIs](api-overview.md)
 - [Übersicht über Vorfälle](incidents-overview.md)
 - [Auflisten der Incidents-API](api-list-incidents.md)
 - [Aktualisieren der Vorfall-API](api-update-incidents.md)

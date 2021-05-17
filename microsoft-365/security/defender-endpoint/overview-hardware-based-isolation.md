@@ -1,7 +1,7 @@
 ---
 title: Hardwarebasierte Isolation (Windows 10)
 ms.reviewer: ''
-description: Erfahren Sie, wie die hardwarebasierte Isolation in Windows 10 bei der Bekämpfung von Schadsoftware hilft.
+description: Erfahren Sie, wie die hardwarebasierte Isolation in Windows 10 hilft, Schadsoftware zu bekämpfen.
 search.appverid: met150
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -38,6 +38,6 @@ Die hardwarebasierte Isolation schützt die Systemintegrität in Windows 10 und 
 
 | Feature | Beschreibung |
 |------------|-------------|
-| [Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview.md) | Application Guard schützt Ihr Gerät vor erweiterten Angriffen und hält Sie gleichzeitig produktiv. Mithilfe eines eindeutigen hardwarebasierten Isolationsansatzes besteht das Ziel darin, nicht vertrauenswürdige Websites und PDF-Dokumente in einem einfachen Container zu isolieren, der über den systemeigenen Windows Hypervisor vom Betriebssystem getrennt ist. Wenn sich herausstellt, dass eine nicht vertrauenswürdige Website oder ein nicht vertrauenswürdiges DOKUMENT schädlich ist, bleibt es weiterhin im sicheren Container von Application Guard enthalten, um den Desktop-PC und den Angreifer von Ihren Unternehmensdaten fern zu halten. |
+| [Windows Defender Application Guard](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/md-app-guard-overview.md) | Application Guard schützt Ihr Gerät vor erweiterten Angriffen und hält Sie gleichzeitig produktiv. Mit einem einzigartigen hardwarebasierten Isolationsansatz besteht das Ziel darin, nicht vertrauenswürdige Websites und PDF-Dokumente in einem einfachen Container zu isolieren, der über den systemeigenen Hypervisor vom Betriebssystem getrennt Windows wird. Wenn sich herausstellt, dass eine nicht vertrauenswürdige Website oder ein nicht vertrauenswürdiges DOKUMENT schädlich ist, bleibt es weiterhin im sicheren Container von Application Guard enthalten, um den Desktop-PC und den Angreifer von Ihren Unternehmensdaten fern zu halten. |
 | [Windows Defender System Guard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-system-guard/system-guard-how-hardware-based-root-of-trust-helps-protect-windows.md) | System Guard schützt und verwaltet die Integrität des Systems beim Start und nach der Ausführung und überprüft die Systemintegrität mithilfe eines Attests.  |
 

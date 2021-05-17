@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Indikatoren
+title: Indikatoren verwalten
 ms.reviewer: ''
 description: 'Verwalten von Indikatoren für einen Dateihash, eine #A0, URLs oder Domänen, die die Erkennung, Verhinderung und den Ausschluss von Entitäten definieren.'
 keywords: import, indicator, list, ioc, csv, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
@@ -24,7 +24,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51185945"
 ---
-# <a name="manage-indicators"></a>Verwalten von Indikatoren
+# <a name="manage-indicators"></a>Indikatoren verwalten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "51185945"
 >Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
-1. Wählen Sie im Navigationsbereich **Einstellungsindikatoren**  >  **aus.**
+1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Indikatoren aus.**
 
 2. Wählen Sie die Registerkarte des Entitätstyps aus, den Sie verwalten möchten.  
 
@@ -49,7 +49,7 @@ Sie können auch eine CSV-Datei hochladen, die die Attribute von Indikatoren, di
 
 Laden Sie die Beispiel-CSV herunter, um die unterstützten Spaltenattribute zu kennen.
 
-1. Wählen Sie im Navigationsbereich **Einstellungsindikatoren**  >  **aus.**
+1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Indikatoren aus.**
 
 2. Wählen Sie die Registerkarte des Entitätstyps aus, für den Sie Indikatoren importieren möchten.
 
@@ -63,23 +63,23 @@ In der folgenden Tabelle sind die unterstützten Parameter aufgeführt.
 
 Parameter | Typ    |   Beschreibung
 :---|:---|:---
-indicatorType | Enum | Typ des Indikators. Mögliche Werte sind: "FileSha1", "FileSha256", "IpAddress", "DomainName" und "Url". **Erforderlich**
-indicatorValue | String | Identität der [Indicator-Entität.](ti-indicator.md) **Erforderlich**
-Aktion | Enum | Die Aktion, die ergriffen wird, wenn der Indikator in der Organisation ermittelt wird. Mögliche Werte sind: "Alert", "AlertAndBlock" und "Allowed". **Erforderlich**
-title | String | Titel der Warnung des Indikators. **Erforderlich**
-description | String |  Beschreibung des Indikators. **Erforderlich**
+indicatorType | Enum | Typ des Indikators. Mögliche Werte sind: "FileSha1", "FileSha256", "IpAddress", "DomainName" und "Url". **Required**
+indicatorValue | String | Identität der [Indicator-Entität.](ti-indicator.md) **Required**
+Aktion | Enum | Die Aktion, die ergriffen wird, wenn der Indikator in der Organisation ermittelt wird. Mögliche Werte sind: "Alert", "AlertAndBlock" und "Allowed". **Required**
+title | String | Titel der Warnung des Indikators. **Required**
+description | String |  Beschreibung des Indikators. **Required**
 expirationTime | DateTimeOffset | Die Ablaufzeit des Indikators im folgenden Format YYYY-MM-DDTHH:MM:SS.0Z. **Optional**
 Schweregrad | Enum | Der Schweregrad des Indikators. Mögliche Werte sind: "Informational", "Low", "Medium" und "High". **Optional**
 recommendedActions | String | Empfohlene Aktionen zur Warnung des TI-Indikators. **Optional**
 rbacGroupNames | String | Durch Kommas getrennte Liste der RBAC-Gruppennamen, auf die der Indikator angewendet werden soll. **Optional**
 category | String | Die Kategorie der Warnung. Beispiele: Ausführung und Zugriff auf Anmeldeinformationen. **Optional**
-mitretechniques| String | CODE/ID der MITRE-Techniken (durch Komma getrennt). Weitere Informationen finden Sie unter [Enterprise tactics](https://attack.mitre.org/tactics/enterprise/). **Optional** Es wird empfohlen, bei einer MITRE-Technik einen Wert in der Kategorie hinzuzufügen.
+mitretechniques| String | CODE/ID der MITRE-Techniken (durch Komma getrennt). Weitere Informationen finden Sie unter [Enterprise Taktik](https://attack.mitre.org/tactics/enterprise/). **Optional** Es wird empfohlen, bei einer MITRE-Technik einen Wert in der Kategorie hinzuzufügen.
 
 Weitere Informationen finden Sie unter [Microsoft Defender for Endpoint alert categories are now aligned with MITRE ATT&CK!](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/microsoft-defender-atp-alert-categories-are-now-aligned-with/ba-p/732748).
 
 
 ## <a name="see-also"></a>Siehe auch
-- [Erstellen von Indikatoren](manage-indicators.md)
+- [Indikatoren erstellen](manage-indicators.md)
 - [Erstellen von Indikatoren für Dateien](indicator-file.md)
 - [Erstellen von Indikatoren für IPs und URLs/Domänen](indicator-ip-domain.md)
 - [Erstellen von Indikatoren basierend auf Zertifikaten](indicator-certificates.md)

@@ -18,7 +18,7 @@ search.appverid:
 - MOE150
 ms.assetid: 20816b8b-8b21-458f-81c1-320b8116597e
 ROBOTS: NOINDEX
-description: 'Erfahren Sie, wie Sie sich für Office 365 mit Ihrer persönlichen E-Mail-Adresse registrieren, wenn Sie keine benutzerdefinierte Domäne hinzufügen möchten. '
+description: 'Erfahren Sie, wie Sie sich Office 365 ihrer persönlichen E-Mail-Adresse registrieren, wenn Sie keine benutzerdefinierte Domäne hinzufügen möchten. '
 ms.openlocfilehash: b5fe72c56e6bd86881c94bbed5ae93fb5b8dffa1
 ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
@@ -31,22 +31,22 @@ ms.locfileid: "51197827"
 ## <a name="when-you-skip-adding-a-custom-domain"></a>Wenn Sie das Hinzufügen einer benutzerdefinierten Domäne überspringen
 
   
-Wenn Sie sich mit Ihrer persönlichen E-Mail-Adresse [](../get-help-with-domains/what-is-a-domain.md) für Office 365 registrieren und das Hinzufügen einer benutzerdefinierten Domäne vorerst überspringen, beschränken Sie Ihren Zugriff auf bestimmte Features. 
+Wenn Sie sich für Office 365 E-Mail-Adresse registrieren [](../get-help-with-domains/what-is-a-domain.md) und das Hinzufügen einer benutzerdefinierten Domäne vorerst überspringen, beschränken Sie Ihren Zugriff auf bestimmte Features. 
   
 Wenn Sie jetzt eine benutzerdefinierte Domäne hinzufügen möchten, erhalten Sie Zugriff auf alle Premiumfeatures unten:
   
-|**Feature**|**Office 365 mit persönlicher E-Mail**|**Office 365 mit benutzerdefinierter Domäne**|
+|**Feature**|**Office 365 mit persönlichen E-Mails**|**Office 365 mit benutzerdefinierter Domäne**|
 |:-----|:-----|:-----|
-|**OneDrive <sup>1, 2</sup>**| [Persönliches OneDrive ](https://onedrive.live.com/about/en-us/plans/)| [OneDrive for Business](https://onedrive.live.com/about/en-us/business/) |
-|**Office-Anwendungen: Word, Excel, PowerPoint, OneNote, Outlook, Access (nur PC),**| Ja | Ja 
+|**OneDrive <sup>1, 2</sup>**| [Persönliche OneDrive](https://onedrive.live.com/about/en-us/plans/)| [OneDrive for Business](https://onedrive.live.com/about/en-us/business/) |
+|**Office: Word, Excel, PowerPoint, OneNote, Outlook, Access (nur PC),**| Ja | Ja 
 |**Geschäftsanwendungen <sup>3:</sup> Microsoft Bookings und MileIQ**| Nein | Ja 
 |**Zugriff auf Microsoft 365 Admin Center**| Eingeschränkter Zugriff (Abrechnung, Support und Domäneneinrichtung) | Ja
 |**Hinzufügen von Benutzern**| Nein | Ja
-|**Office 365-Dienste: Exchange Online, Skype for Business, Microsoft Teams, SharePoint Online**| Nein | Ja
+|**Office 365: Exchange Online, Skype for Business, Microsoft Teams, SharePoint Online**| Nein | Ja
 |**Sicherheits- und Compliancetools**| Nein | Ja
    
-> <sup>1</sup> Sie müssen Ihre persönlichen #A0 zu [OneDrive for Business migrieren.](move-email-and-data-to-office-365-business-premium.md)<br/>
-> <sup>2</sup> Informationen zum Umgang mit Ihren Daten finden Sie in der [Datenschutzerklärung](https://g.microsoftonline.com/0BX20en/138). Die Verwendung von OneDrive unterliegt dem [Microsoft #A0](https://signup.live.com/signup?ru=https://login.live.com/oauth20_authorize.srf?lc%3d1033%26response_type%3dcode%26client_id%3d51483342-085c-4d86-bf88-cf50c7252078%26scope%3dopenid%2bprofile%2bemail%2boffline_access%26response_mode%3dform_post%26redirect_uri%3dhttps://login.microsoftonline.com/common/federation/oauth2%26state%3drQIIAXWRO2_TUACFc_NSUyGoEBKVEFIHJCSQk-vrR-JIHdLWSdPGaR426TVDZCeO7TjX17Ld5rGzd47EwgLqyFLED2DolBFVMIOYEBMjaXeWM5zvDEfnvEixebb8jOd4wSiaEiMZIsfwEgsZg0ciwwmcyCHIDgXIhQ83t64-PP_-ZvtGvnr04-uX8yedJcj1J-65lR9QcgkeO3EcROVCYTqd5ulo5A7uQOETACsAfgKwTGYsn9G6l8lI5EReYIWSCDmuJIhIKuYxkae6OiT6WIkx6nhNF0K80McN1eYVtR0rB56goKqD1YqgE5lde3wTVb071pOh3oWwSapuo3fkKKS-9vAcIwzx2JlgtT67ST44qZzFDroVGroL608yN6Ih6Qc0ipep9-AksPz6cJ_6vjWI87cxy4_dgRG71G-FNLDC2LWiXbOrtHuKZ7W0_nlgtvwOPZYJU-_7HsIYmWhPY2XSOz2WGh27PzY0ElRHbXgoOqo-N0Rq8KpNTbuzPy_CU1k7VJslRgtmc143vS6vwBrlup0SrYa-ViPzOdNTJHl_OGAachhVhnsz9WMqu56VUP86dX9dyneHO0FIR-7EWqXBr_Q9mCpvbGxuJbYTO4m_afAus36u-1qsZVblo7ffELCfgsR1pkCw8yps8Mh7SaJJaTGxXQU6MB7jakM_iyYHLQVJbRya07a9K5XZiyy4yGZ_ZxOfc_87-h81%26estsfed%3d1%26uaid%3ddd27a8b7188545dab714e7d8c6761b52%26lw%3d1%26fl%3deasi2%26mkt%3den-US&amp;mkt=EN-US&amp;uiflavor=web&amp;lw=1&amp;fl=easi2&amp;client_id=51483342-085c-4d86-bf88-cf50c7252078&amp;uaid=dd27a8b7188545dab714e7d8c6761b52&amp;lic=1). Der [Microsoft Online-Abonnementvertrag](https://admin.microsoft.com/Commerce/Mosa.aspx?cc2=US&amp;cl=en&amp;cc=en-US&amp;gcc=False) regelt alle anderen Dienste, die in Ihrem Abonnement enthalten sind.<br/>
+> <sup>1</sup> Sie müssen Ihre persönlichen OneDrive [zu OneDrive for Business.](move-email-and-data-to-office-365-business-premium.md)<br/>
+> <sup>2</sup> Informationen zum Umgang mit Ihren Daten finden Sie in der [Datenschutzerklärung](https://g.microsoftonline.com/0BX20en/138). Die Verwendung OneDrive unterliegt dem [Microsoft Services Agreement](https://signup.live.com/signup?ru=https://login.live.com/oauth20_authorize.srf?lc%3d1033%26response_type%3dcode%26client_id%3d51483342-085c-4d86-bf88-cf50c7252078%26scope%3dopenid%2bprofile%2bemail%2boffline_access%26response_mode%3dform_post%26redirect_uri%3dhttps://login.microsoftonline.com/common/federation/oauth2%26state%3drQIIAXWRO2_TUACFc_NSUyGoEBKVEFIHJCSQk-vrR-JIHdLWSdPGaR426TVDZCeO7TjX17Ld5rGzd47EwgLqyFLED2DolBFVMIOYEBMjaXeWM5zvDEfnvEixebb8jOd4wSiaEiMZIsfwEgsZg0ciwwmcyCHIDgXIhQ83t64-PP_-ZvtGvnr04-uX8yedJcj1J-65lR9QcgkeO3EcROVCYTqd5ulo5A7uQOETACsAfgKwTGYsn9G6l8lI5EReYIWSCDmuJIhIKuYxkae6OiT6WIkx6nhNF0K80McN1eYVtR0rB56goKqD1YqgE5lde3wTVb071pOh3oWwSapuo3fkKKS-9vAcIwzx2JlgtT67ST44qZzFDroVGroL608yN6Ih6Qc0ipep9-AksPz6cJ_6vjWI87cxy4_dgRG71G-FNLDC2LWiXbOrtHuKZ7W0_nlgtvwOPZYJU-_7HsIYmWhPY2XSOz2WGh27PzY0ElRHbXgoOqo-N0Rq8KpNTbuzPy_CU1k7VJslRgtmc143vS6vwBrlup0SrYa-ViPzOdNTJHl_OGAachhVhnsz9WMqu56VUP86dX9dyneHO0FIR-7EWqXBr_Q9mCpvbGxuJbYTO4m_afAus36u-1qsZVblo7ffELCfgsR1pkCw8yps8Mh7SaJJaTGxXQU6MB7jakM_iyYHLQVJbRya07a9K5XZiyy4yGZ_ZxOfc_87-h81%26estsfed%3d1%26uaid%3ddd27a8b7188545dab714e7d8c6761b52%26lw%3d1%26fl%3deasi2%26mkt%3den-US&amp;mkt=EN-US&amp;uiflavor=web&amp;lw=1&amp;fl=easi2&amp;client_id=51483342-085c-4d86-bf88-cf50c7252078&amp;uaid=dd27a8b7188545dab714e7d8c6761b52&amp;lic=1). Der [Microsoft Online-Abonnementvertrag](https://admin.microsoft.com/Commerce/Mosa.aspx?cc2=US&amp;cl=en&amp;cc=en-US&amp;gcc=False) regelt alle anderen Dienste, die in Ihrem Abonnement enthalten sind.<br/>
 > <sup>3</sup> Einige Geschäftsanwendungen sind nicht in allen Regionen verfügbar.<br/>
 
 ## <a name="how-to-add-a-domain"></a>Hinzufügen einer Domäne

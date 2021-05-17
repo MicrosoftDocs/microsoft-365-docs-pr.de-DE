@@ -1,5 +1,5 @@
 ---
-title: Überwachen und Melden des Microsoft Defender Antivirus-Schutzes
+title: Überwachen und Melden Microsoft Defender Antivirus Schutz
 description: Verwenden Sie Configuration Manager oder Sicherheitsinformations- und Ereignisverwaltungstools (SIEM), um Berichte zu nutzen und Microsoft Defender AV mit PowerShell und WMI zu überwachen.
 keywords: siem, monitor, report, Microsoft Defender AV
 search.product: eADQiWindows 10XVcnh
@@ -32,24 +32,24 @@ ms.locfileid: "52269588"
 
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender Antivirus ist in Windows 10, Windows Server 2019 und Windows Server 2016 integrierte. Microsoft Defender Antivirus ist ihr Schutz der nächsten Generation in Microsoft Defender for Endpoint. Der Schutz der nächsten Generation schützt Ihre Geräte vor Softwarebedrohungen wie Viren, Schadsoftware und Spyware über E-Mails, Apps, die Cloud und das Web.
+Microsoft Defender Antivirus ist in Windows 10, Windows Server 2019 und Windows Server 2016. Microsoft Defender Antivirus von Ihrem Schutz der nächsten Generation in Microsoft Defender for Endpoint. Der Schutz der nächsten Generation schützt Ihre Geräte vor Softwarebedrohungen wie Viren, Schadsoftware und Spyware über E-Mails, Apps, die Cloud und das Web.
 
-Mit Microsoft Defender Antivirus haben Sie mehrere Optionen zum Überprüfen des Schutzstatus und von Warnungen. Sie können Microsoft Endpoint Manager verwenden, [um Microsoft Defender Antivirus](/configmgr/protect/deploy-use/monitor-endpoint-protection) zu überwachen oder [E-Mail-Benachrichtigungen zu erstellen.](/configmgr/protect/deploy-use/endpoint-configure-alerts) Oder Sie können den Schutz mithilfe von [Microsoft Intune überwachen.](/intune/introduction-intune)  
+Mit Microsoft Defender Antivirus haben Sie mehrere Optionen zum Überprüfen des Schutzstatus und von Warnungen. Sie können Microsoft Endpoint Manager [verwenden, um Microsoft Defender Antivirus](/configmgr/protect/deploy-use/monitor-endpoint-protection) zu überwachen [oder E-Mail-Benachrichtigungen zu erstellen.](/configmgr/protect/deploy-use/endpoint-configure-alerts) Sie können den Schutz auch mithilfe von [Microsoft Intune.](/intune/introduction-intune)  
 
-Microsoft Operations Management Suite verfügt über ein [Update Compliance-Add-In,](/windows/deployment/update/update-compliance-get-started) das über wichtige Microsoft Defender Antivirus-Probleme berichtet, einschließlich Schutzupdates und Echtzeitschutzeinstellungen.
+Microsoft Operations Management Suite verfügt über ein [Update Compliance-Add-In,](/windows/deployment/update/update-compliance-get-started) das über wichtige Microsoft Defender Antivirus berichtet, einschließlich Schutzupdates und Echtzeitschutzeinstellungen.
 
 Wenn Sie über einen SieM-Server (Security Information and Event Management) eines Drittanbieters verfügen, können Sie auch Windows Defender [verwenden.](/windows/win32/events/windows-events) 
 
-Windows-Ereignisse umfassen mehrere Sicherheitsereignisquellen, einschließlich Security Account Manager (SAM)-Ereignisse [](/windows/device-security/auditing/security-auditing-overview) ( erweitert für[Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511), siehe auch das Thema Sicherheitsüberwachung) und [Windows Defender Ereignisse](troubleshoot-microsoft-defender-antivirus.md). 
+Windows ereignisse umfassen mehrere Sicherheitsereignisquellen, einschließlich Security Account Manager (SAM)-Ereignisse (erweitert für[Windows 10](/windows/whats-new/whats-new-windows-10-version-1507-and-1511), siehe auch das Thema Sicherheitsüberwachung) und [Windows Defender Ereignisse](troubleshoot-microsoft-defender-antivirus.md). [](/windows/device-security/auditing/security-auditing-overview) 
 
-Diese Ereignisse können mithilfe des Windows-Ereignissammlers [zentral aggregiert werden.](/windows/win32/wec/windows-event-collector) Häufig verfügen SIEM-Server über Connectors für Windows-Ereignisse, sodass Sie alle Sicherheitsereignisse auf Ihrem SIEM-Server korrelieren können. 
+Diese Ereignisse können zentral mithilfe des Windows [aggregiert werden.](/windows/win32/wec/windows-event-collector) Häufig verfügen SIEM-Server über Connectors für Windows Ereignisse, sodass Sie alle Sicherheitsereignisse auf Ihrem SIEM-Server korrelieren können. 
 
 Sie können [Schadsoftwareereignisse auch mithilfe der Lösung zur Bewertung von](/azure/log-analytics/log-analytics-malware)Schadsoftware in Log Analytics überwachen.
 
-Informationen zum Überwachen oder Bestimmen des Status mit PowerShell, WMI oder Microsoft Azure finden Sie in der Tabelle (Tabelle mit [Bereitstellungs-, Verwaltungs- und Berichtsoptionen).](deploy-manage-report-microsoft-defender-antivirus.md#ref2)
+Informationen zum Überwachen oder Bestimmen des Status mit PowerShell, WMI oder Microsoft Azure finden Sie in der Tabelle (Tabelle mit [Bereitstellungs-,](deploy-manage-report-microsoft-defender-antivirus.md#ref2)Verwaltungs- und Berichtsoptionen).
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Microsoft Defender Antivirus auf Windows Server 2016 und 2019](microsoft-defender-antivirus-on-windows-server.md)
-- [Bereitstellen von Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Bereitstellen Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)

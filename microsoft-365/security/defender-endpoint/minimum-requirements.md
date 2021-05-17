@@ -78,7 +78,7 @@ Eine detaillierte Vergleichstabelle mit Windows 10 kommerziellen Editionen finde
 ## <a name="browser-requirements"></a>Browseranforderungen
 Der Zugriff auf Defender for Endpoint erfolgt über einen Browser, der die folgenden Browser unterstützt:
 
-- Aktuelle Version von Microsoft Edge
+- Microsoft Edge
 - Google Chrome
 
 > [!NOTE]
@@ -95,7 +95,7 @@ Der Zugriff auf Defender for Endpoint erfolgt über einen Browser, der die folge
 - Windows 10 Enterprise
 - [Windows 10 Enterprise LTSC 2016 (oder höher)](/windows/whats-new/ltsc/)
 - Windows 10 Education
-- Windows 10 Pro
+- Windows 10 Pro
 - Windows 10 Pro Education
 - Windows Server
   - Windows Server 2008 R2 SP1

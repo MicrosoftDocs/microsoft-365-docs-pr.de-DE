@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer Onboarding- oder Offboardingbenachrichtigungsregel
+title: Erstellen einer Onboarding- oder Offboarding-Benachrichtigungsregel
 description: Erhalten Sie eine Benachrichtigung, wenn ein lokales Onboarding- oder Offboardingskript verwendet wird.
 keywords: Onboarding, Offboarding, lokal, Skript, Benachrichtigung, Regel
 search.product: eADQiWindows 10XVcnh
@@ -44,8 +44,8 @@ Erstellen Sie eine Benachrichtigungsregel, sodass Sie benachrichtigt werden, wen
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 Sie benötigen Zugriff auf:
- - Microsoft Flow (Mindestens Flussplan 1). Weitere Informationen finden Sie unter [Flow pricing page](https://flow.microsoft.com/pricing/).
- - Azure Table or SharePoint List or Library / SQL DB
+ - Microsoft Flow (Flow Plan 1 mindestens). Weitere Informationen finden Sie [auf Flow Preisseite](https://flow.microsoft.com/pricing/).
+ - Azure Table oder SharePoint List or Library / SQL DB
 
 ## <a name="create-the-notification-flow"></a>Erstellen des Benachrichtigungsflusses
 
@@ -63,7 +63,7 @@ Sie benötigen Zugriff auf:
 
     ![Abbildung des Benachrichtigungsflusses](images/build-flow.png)
 
-4. Wählen Sie die Schaltfläche + aus, um eine neue Aktion hinzuzufügen. Die neue Aktion ist eine HTTP-Anforderung an die Defender for Endpoint Security Center-API. Sie können sie auch durch den einsatzenden "WDATP Connector" (Aktion: "Computer – Liste der Computer erhalten") ersetzen. 
+4. Wählen Sie die Schaltfläche + aus, um eine neue Aktion hinzuzufügen. Die neue Aktion ist eine HTTP-Anforderung an die Defender for Endpoint Security Center-API. Sie können sie auch durch den einsatzenden "WDATP Connector&quot; (Aktion: &quot;Computer – Liste der Computer erhalten") ersetzen. 
 
     ![Abbildung der Serien- und Add-Aktion](images/recurrence-add.png)
 
@@ -73,11 +73,11 @@ Sie benötigen Zugriff auf:
    - Methode: "GET" als Wert, um die Liste der Geräte zu erhalten.
    - URI: Geben Sie `https://api.securitycenter.microsoft.com/api/machines` ein.
    - Authentifizierung: Wählen Sie "Active Directory OAuth" aus.
-   - Mandant: Melden Sie sich bei Azure Active Directory an, und navigieren Sie zu > App-Registrierungen, und rufen Sie https://portal.azure.com den Mandanten-ID-Wert ab. 
+   - Mandant: Melden Sie sich https://portal.azure.com an, und navigieren **Sie zu Azure Active Directory > App-Registrierungen,** und rufen Sie den Mandanten-ID-Wert ab.
    - Zielgruppe: `https://securitycenter.onmicrosoft.com/windowsatpservice\`
-   - Client-ID: Melden Sie sich bei Azure Active Directory > App-Registrierungen an, und navigieren Sie zu Azure Active Directory, und rufen Sie https://portal.azure.com den Client-ID-Wert ab. 
+   - Client-ID: Melden Sie sich https://portal.azure.com an, und navigieren Sie zu **Azure Active Directory > App-Registrierungen,** und rufen Sie den Client-ID-Wert ab.
    - Anmeldeinformationentyp: Wählen Sie "Secret" aus.
-   - Secret: Melden Sie sich bei Azure Active Directory > App-Registrierungen an, und navigieren Sie zu Azure Active Directory, und rufen Sie https://portal.azure.com den Mandanten-ID-Wert ab. 
+   - Secret: Melden Sie sich an, und navigieren Sie https://portal.azure.com **zu Azure Active Directory > App-Registrierungen,** und rufen Sie den Mandanten-ID-Wert ab.
 
     ![Abbildung der HTTP-Bedingungen](images/http-conditions.png)
 
@@ -176,9 +176,9 @@ Sie benötigen Zugriff auf:
 
     ```
 
-10.  Extrahieren Sie die Werte aus dem JSON-Aufruf, und überprüfen Sie, ob die integrierten Geräte bereits in der SharePoint-Liste registriert sind. Beispiel:
+10.  Extrahieren Sie die Werte aus dem JSON-Aufruf, und überprüfen Sie, ob die integrierten Geräte bereits in der liste SharePoint registriert sind:
 - Wenn ja, wird keine Benachrichtigung ausgelöst
-- Wenn nein, werden die neuen integrierten Geräte in der SharePoint-Liste registriert, und eine Benachrichtigung wird an den Defender for Endpoint-Administrator gesendet.
+- Wenn nein, werden die neuen integrierten Geräte in der Liste SharePoint registriert, und eine Benachrichtigung wird an den Defender for Endpoint-Administrator gesendet.
 
     ![Abbildung der Anwendung auf die einzelnen](images/flow-apply.png)
 
@@ -197,7 +197,7 @@ Die folgende Abbildung ist ein Beispiel für eine E-Mail-Benachrichtigung.
 ![Abbildung der E-Mail-Benachrichtigung](images/alert-notification.png)
 
 
-## <a name="tips"></a>Tipps 
+## <a name="tips"></a>Tipps
 
 - Sie können hier nur mit lastSeen filtern:
     - Alle 60 Minuten:

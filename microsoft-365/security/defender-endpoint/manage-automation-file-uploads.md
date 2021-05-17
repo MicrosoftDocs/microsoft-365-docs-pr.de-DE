@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Automatisierungsdateiuploads
+title: Verwalten von automatischen Dateiuploads
 description: Aktivieren der Inhaltsanalyse und Konfigurieren der Dateierweiterung und der E-Mail-Anlagenerweiterungen, die zur Analyse übermittelt werden
 keywords: Automatisierung, Datei, Uploads, Inhalt, Analyse, Datei, Erweiterung, E-Mail, Anlage
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51185849"
 ---
-# <a name="manage-automation-file-uploads"></a>Verwalten von Automatisierungsdateiuploads
+# <a name="manage-automation-file-uploads"></a>Verwalten von automatischen Dateiuploads
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ Wenn Sie beispielsweise *exe* und *bat* als Datei- oder Anlagenerweiterungsnamen
 
 ## <a name="add-file-extension-names-and-attachment-extension-names"></a>Fügen Sie Dateinamen und Anlagenerweiterungsnamen hinzu.
 
-1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Automatisierungsdateiuploads aus.** 
+1. Wählen Sie im Navigationsbereich die **Option Einstellungen**  >  **Automatisierungsdateiuploads aus.** 
 
 2. Umschalten der Inhaltsanalyseeinstellung zwischen **Ein** und **Aus**.
 
@@ -50,4 +50,4 @@ Wenn Sie beispielsweise *exe* und *bat* als Datei- oder Anlagenerweiterungsnamen
   
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Verwalten von Ausschlüssen für Automatisierungsordner](manage-automation-folder-exclusions.md)
+- [Verwalten von automatischen Ordnerausschlüssen](manage-automation-folder-exclusions.md)

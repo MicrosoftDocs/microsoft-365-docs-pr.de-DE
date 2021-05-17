@@ -61,7 +61,7 @@ Oben auf der Profilseite oberhalb der Dateiinformationskarten. Folgende Aktionen
 - Beenden und Isolieren
 - Add/Edit Indicator
 - Datei herunterladen
-- Konsultieren eines Bedrohungsexperten
+- Wenden Sie sich an einen Bedrohungsexperten
 - Info-Center
 
 Weitere Informationen zu diesen Aktionen finden Sie unter [Take response action on a file](respond-file-alerts.md).
@@ -117,4 +117,4 @@ Auf **der Registerkarte** Dateinamen werden alle Namen aufgeführt, die die Date
 - [Untersuchen einer einer Microsoft Defender for Endpoint-Warnung zugeordneten IP-Adresse](investigate-ip.md)
 - [Untersuchen einer Domäne, die einer Microsoft Defender for Endpoint-Warnung zugeordnet ist](investigate-domain.md)
 - [Untersuchen eines Benutzerkontos in Microsoft Defender for Endpoint](investigate-user.md)
-- [Ausführen von Reaktionsaktionen für eine Datei](respond-file-alerts.md)
+- [Ergreifen von Reaktionen auf eine Datei](respond-file-alerts.md)

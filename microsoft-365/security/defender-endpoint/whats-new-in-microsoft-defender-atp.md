@@ -51,7 +51,7 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter [Vorschaufeatures](ht
 
 - [Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für Windows Virtual Desktop.
 
-## <a name="december-2020"></a>Dezember 2020
+## <a name="december-2020"></a>Dezember 2020
 - [Microsoft Defender für Endpunkt für iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint bietet jetzt Unterstützung für iOS. Erfahren Sie, wie Sie Microsoft Defender for Endpoint unter iOS installieren, konfigurieren, aktualisieren und verwenden.
 
 ## <a name="september-2020"></a>September 2020
@@ -72,7 +72,7 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter [Vorschaufeatures](ht
 - [Angriffssimulatoren im Evaluierungslabor](evaluation-lab.md#threat-simulator-scenarios) <br> Microsoft Defender for Endpoint hat eine Partnerschaft mit verschiedenen Bedrohungssimulationsplattformen entwickelt, um Ihnen bequemen Zugriff auf die Funktionen der Plattform direkt im Portal zu bieten.
 
 
-## <a name="april-2020"></a>April 2020
+## <a name="april-2020"></a>April 2020
 
 - [Unterstützung & Zur Verwaltung von Sicherheitslücken](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-list) <BR>Führen Sie &-API-Aufrufe im Zusammenhang mit der Sicherheitsrisikoverwaltung aus, z. B. Abrufen der Bewertung der Bedrohungsexposition Ihrer Organisation oder der Gerätesicherheitsbewertung, Software- und Gerätesicherheitsinventar, Softwareversionsverteilung, Gerätesicherheitsinformationen, Sicherheitsempfehlungsinformationen. Weitere Informationen finden Sie in [diesem Microsoft Tech Community Blogbeitrag](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
 

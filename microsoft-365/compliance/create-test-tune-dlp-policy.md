@@ -91,11 +91,11 @@ Wählen Sie die Orte aus, auf die die Richtlinie angewendet werden soll. DLP-Ric
 
 ![Option zur Auswahl aller Orte](../media/DLP-create-test-tune-choose-locations.png)
 
-Übernehmen Sie im ersten **Schritt** Richtlinieneinstellungen nur die Standardwerte. Sie können DLP-Richtlinien anpassen, aber die Standardwerte sind ein feiner Anfangsort.
+Übernehmen Sie im **ersten Einstellungen** nur die Standardwerte. Sie können DLP-Richtlinien anpassen, aber die Standardwerte sind ein feiner Anfangsort.
 
 ![Optionen zum Anpassen des zu schützenden Inhaltstyps](../media/DLP-create-test-tune-default-customization-settings.png)
 
-Nachdem Sie auf Weiter** geklickt haben, erhalten Sie eine zusätzliche Seite mit Richtlinieneinstellungen mit weiteren Anpassungsoptionen.  Bei einer Richtlinie, die Sie nur testen möchten, können Sie hier einige Anpassungen vornehmen.
+Nachdem Sie auf Weiter** geklickt haben, erhalten Sie eine zusätzliche Einstellungen mit weiteren Anpassungsoptionen.  Bei einer Richtlinie, die Sie nur testen möchten, können Sie hier einige Anpassungen vornehmen.
 
 - Ich habe die Richtlinientipps vorläufig deaktiviert. Dies ist sinnvoll, wenn Sie nur einen Test durchführen und den Benutzern noch nichts anzeigen möchten. Richtlinientipps zeigen Benutzern Warnungen an, wenn sie dabei sind, gegen eine DLP-Richtlinie zu verstoßen. So wird einem Outlook-Benutzer beispielsweise eine Warnung angezeigt, dass die von ihm angefügte Datei Kreditkartennummern enthält und seine E-Mail deshalb abgelehnt werden wird. Richtlinientipps sollen Richtlinienverletzungen verhindern, bevor diese stattfinden.
 - Außerdem habe ich die Anzahl der Instanzen von 10 auf 1 gesenkt, damit diese Richtlinie jede Freigabe von australischen PII-Daten erkennt, und nicht nur die Massenfreigabe der Daten.

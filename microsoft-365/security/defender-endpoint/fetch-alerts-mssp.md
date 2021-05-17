@@ -48,7 +48,7 @@ Schritt 1: Erstellen einer Drittanbieteranwendung
 
 Schritt 2: Erhalten von Zugriffs- und Aktualisierungstoken vom Mandanten Ihres Kunden
  
-Schritt 3: Zulassen ihrer Anwendung im Microsoft Defender Security Center
+Schritt 3: Zulassen der Anwendung auf Microsoft Defender Security Center
  
 ### <a name="step-1-create-an-application-in-azure-active-directory-azure-ad"></a>Schritt 1: Erstellen einer Anwendung in Azure Active Directory (Azure AD)
  
@@ -56,7 +56,7 @@ Sie müssen eine Anwendung erstellen und ihr Berechtigungen zum Abrufen von Warn
 
 1. Melden Sie sich beim [Azure AD-Portal an.](https://aad.portal.azure.com/)
 
-2. Wählen **Sie Azure Active Directory**  >  **App-Registrierungen aus.**
+2. Wählen **Azure Active Directory**  >  **App-Registrierungen aus.**
  
 3. Klicken Sie **auf Neue Registrierung**.
 
@@ -85,7 +85,7 @@ Sie müssen eine Anwendung erstellen und ihr Berechtigungen zum Abrufen von Warn
  
 
 ### <a name="step-2-get-access-and-refresh-tokens-from-your-customers-tenant"></a>Schritt 2: Erhalten von Zugriffs- und Aktualisierungstoken vom Mandanten Ihres Kunden
-In diesem Abschnitt erfahren Sie, wie Sie ein PowerShell-Skript verwenden, um die Token vom Mandanten Ihres Kunden abzurufen. Dieses Skript verwendet die Anwendung aus dem vorherigen Schritt, um die Zugriffs- und Aktualisierungstoken mithilfe des OAuth-Autorisierungscodeflusses abzurufen.
+In diesem Abschnitt erfahren Sie, wie Sie ein PowerShell-Skript verwenden, um die Token vom Mandanten Ihres Kunden abzurufen. Dieses Skript verwendet die Anwendung aus dem vorherigen Schritt, um die Zugriffs- und Aktualisierungstoken mithilfe der OAuth-Autorisierungscode-Flow.
 
 Nachdem Sie Ihre Anmeldeinformationen angegeben haben, müssen Sie der Anwendung zustimmen, damit die Anwendung im Mandanten des Kunden bereitgestellt wird.
 
@@ -159,14 +159,14 @@ Nachdem Sie Ihre Anmeldeinformationen angegeben haben, müssen Sie der Anwendung
 
 8. Im PowerShell-Fenster erhalten Sie ein Zugriffstoken und ein Aktualisierungstoken. Speichern Sie das Aktualisierungstoken, um Ihren SIEM-Connector zu konfigurieren. 
  
-### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>Schritt 3: Zulassen Ihrer Anwendung im Microsoft Defender Security Center
-Sie müssen die Anwendung zulassen, die Sie im Microsoft Defender Security Center erstellt haben.
+### <a name="step-3-allow-your-application-on-microsoft-defender-security-center"></a>Schritt 3: Zulassen der Anwendung Microsoft Defender Security Center
+Sie müssen die Anwendung zulassen, die Sie in diesem Microsoft Defender Security Center.
  
 Sie benötigen die Berechtigung **Portalsystemeinstellungen verwalten,** um die Anwendung zu erlauben. Andernfalls müssen Sie Ihren Kunden bitten, die Anwendung für Sie zu erlauben.
 
 1. Wechseln Sie `https://securitycenter.windows.com?tid=<customer_tenant_id>` zu \<customer_tenant_id\> (ersetzen Sie durch die Mandanten-ID des Kunden.
 
-2. Klicken **Sie auf Einstellungen**  >  **SIEM**. 
+2. Klicken **Sie Einstellungen**  >  **SIEM**. 
 
 3. Wählen Sie die **Registerkarte MSSP** aus.
 
@@ -189,4 +189,4 @@ Informationen zum Abrufen von Warnungen mithilfe der REST-API finden Sie unter [
 ## <a name="see-also"></a>Siehe auch
 - [Gewähren von MSSP-Zugriff auf das Portal](grant-mssp-access.md)
 - [Zugreifen auf das MSSP-Kundenportal](access-mssp-portal.md)
-- [Konfigurieren von Benachrichtigungen](configure-mssp-notifications.md)
+- [Warnungsbenachrichtigungen konfigurieren](configure-mssp-notifications.md)

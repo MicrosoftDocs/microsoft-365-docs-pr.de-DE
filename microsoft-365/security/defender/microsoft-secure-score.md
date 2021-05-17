@@ -82,7 +82,7 @@ Derzeit gibt es Empfehlungen für die folgenden Produkte:
 - Microsoft Defender für Endpunkt
 - Microsoft Defender for Identity
 - Cloud-App-Sicherheit
-- Microsoft Teams
+- Microsoft Teams
 
 Empfehlungen für andere Sicherheitsprodukte werden in Kürze verfügbar sein. Die Empfehlungen umfassen nicht alle Angriffsflächen, die mit jedem Produkt verknüpft sind, aber sie sind eine gute Basis. Sie können die Verbesserungsmaßnahmen auch als „über Drittanbieter abgedeckt“ oder „ durch alternative Korrektur abgedeckt“ markieren.
 

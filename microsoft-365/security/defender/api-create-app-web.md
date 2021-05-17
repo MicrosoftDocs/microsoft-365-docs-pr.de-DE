@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer App für den Zugriff auf Microsoft 365 Defender ohne Benutzer
+title: Erstellen einer App für den Zugriff Microsoft 365 Defender ohne Benutzer
 description: Erfahren Sie, wie Sie eine App für den Zugriff auf Microsoft 365 Defender ohne Benutzer erstellen.
 keywords: app, access, api, create
 search.product: eADQiWindows 10XVcnh
@@ -27,7 +27,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51066759"
 ---
-# <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>Erstellen einer App für den Zugriff auf Microsoft 365 Defender ohne Benutzer
+# <a name="create-an-app-to-access-microsoft-365-defender-without-a-user"></a>Erstellen einer App für den Zugriff Microsoft 365 Defender ohne Benutzer
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -42,13 +42,13 @@ Auf dieser Seite wird beschrieben, wie Sie eine Anwendung erstellen, um programm
 
 Wenn Sie programmgesteuerten Zugriff auf Microsoft 365 Defender im Namen eines oder mehrere Benutzer benötigen, lesen Sie Erstellen einer App für den Zugriff auf [Microsoft 365 Defender-APIs](api-create-app-user-context.md) im Namen eines Benutzers und Erstellen einer App mit Partnerzugriff auf [Microsoft 365 Defender-APIs](api-partner-access.md). Wenn Sie nicht sicher sind, welche Art von Zugriff Sie benötigen, lesen Sie [Erste Schritte](api-access.md).
 
-Microsoft 365 Defender macht einen Großen Teil seiner Daten und Aktionen über eine Reihe programmgesteuerter APIs verfügbar. Diese APIs helfen Ihnen, Workflows zu automatisieren und die Funktionen von Microsoft 365 Defender zu nutzen. Für diesen API-Zugriff ist die OAuth2.0-Authentifizierung erforderlich. Weitere Informationen finden Sie unter [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 Defender macht einen Großen Teil seiner Daten und Aktionen über eine Reihe programmgesteuerter APIs verfügbar. Diese APIs helfen Ihnen bei der Automatisierung von Workflows und nutzen Microsoft 365 Funktionen von Defender. Für diesen API-Zugriff ist die OAuth2.0-Authentifizierung erforderlich. Weitere Informationen finden Sie unter [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 Im Allgemeinen müssen Sie die folgenden Schritte ausführen, um diese APIs zu verwenden:
 
-- Erstellen Sie eine Azure Active Directory (Azure AD)-Anwendung.
+- Erstellen Sie Azure Active Directory (Azure AD)-Anwendung.
 - Mit dieser Anwendung können Sie ein Zugriffstoken erhalten.
-- Verwenden Sie das Token, um auf die Microsoft 365 Defender-API zu zugreifen.
+- Verwenden Sie das Token, um auf Microsoft 365 Defender-API zu zugreifen.
 
 In diesem Artikel wird erläutert, wie Sie:
 
@@ -60,13 +60,13 @@ In diesem Artikel wird erläutert, wie Sie:
 
 1. Melden Sie sich [bei Azure](https://portal.azure.com) als Benutzer mit der **Rolle "Globaler Administrator"** an.
 
-2. Navigieren Sie zu **Azure Active Directory**  >  **App-Registrierungen** Neue  >  **Registrierung**.
+2. Navigieren Sie zu **Azure Active Directory**  >  **App-Registrierungen**  >  **Neue Registrierung**.
 
    ![Abbildung von Microsoft Azure und Navigation zur Anwendungsregistrierung](../../media/atp-azure-new-app2.png)
 
 3. Wählen Sie im Formular einen Namen für Ihre Anwendung aus, und wählen Sie dann **Registrieren aus.**
 
-4. Wählen Sie auf der Anwendungsseite **API-Berechtigungen** Hinzufügen von Berechtigungs-APIs aus, die meine > verwendet, geben Sie  >    >   Microsoft **Threat Protection** ein, und wählen Sie **Microsoft Threat Protection aus.** Ihre App kann jetzt auf Microsoft 365 Defender zugreifen.
+4. Wählen Sie auf der Anwendungsseite **API-Berechtigungen** Hinzufügen von Berechtigungs-APIs aus, die meine > verwendet, geben Sie  >    >   **Microsoft Threat Protection** ein, und wählen Sie **Microsoft Threat Protection**. Ihre App kann jetzt auf Microsoft 365 zugreifen.
 
    > [!TIP]
    > *Microsoft Threat Protection* ist ein früherer Name für Microsoft 365 Defender und wird nicht in der ursprünglichen Liste angezeigt. Sie müssen damit beginnen, den Namen in das Textfeld zu schreiben, damit er angezeigt wird.
@@ -97,13 +97,13 @@ In diesem Artikel wird erläutert, wie Sie:
 
    ![Abbildung der erstellten App-ID](../../media/app-and-tenant-ids.png)
 
-9. Nur für **Microsoft 365 Defender Partners:** Befolgen Sie diese Anweisungen für den Partnerzugriff über die Microsoft 365 Defender-APIs, legen Sie Ihre App auf mehr mandantenverdingend, damit sie in allen Mandanten verfügbar sein kann, sobald Sie die Administrator zustimmung erhalten haben. [](./api-partner-access.md) Partnerzugriff ist **für** Drittanbieter-Apps erforderlich, z. B. wenn Sie eine App erstellen, die in Mandanten mehrerer Kunden ausgeführt werden soll. Dies **ist nicht** erforderlich, wenn Sie einen Dienst erstellen, den Sie nur in Ihrem Mandanten ausführen möchten, z. B. eine Anwendung für Ihre eigene Nutzung, die nur mit Ihren eigenen Daten interagiert. So legen Sie ihre App auf mehr mandantenverdingend ein:
+9. Nur **für Microsoft 365 Defender Partners:** Befolgen Sie diese Anweisungen für den Partnerzugriff über die Microsoft 365 Defender-APIs, legen Sie Ihre App auf mehr mandantenverdingend, damit sie in allen Mandanten verfügbar sein kann, sobald Sie die Administrator-Zustimmung erhalten haben. [](./api-partner-access.md) Partnerzugriff ist **für** Drittanbieter-Apps erforderlich, z. B. wenn Sie eine App erstellen, die in Mandanten mehrerer Kunden ausgeführt werden soll. Dies **ist nicht** erforderlich, wenn Sie einen Dienst erstellen, den Sie nur in Ihrem Mandanten ausführen möchten, z. B. eine Anwendung für Ihre eigene Nutzung, die nur mit Ihren eigenen Daten interagiert. So legen Sie ihre App auf mehr mandantenverdingend ein:
 
     - Wechseln Sie zu **Authentifizierung,** und fügen https://portal.azure.com Sie als **Umleitungs-URI hinzu.**
 
     - Wählen Sie unten auf der Seite unter Unterstützte **Kontotypen** die Option **Konten in** einer beliebigen Organisationsverzeichnisanwendungs-Zustimmung für Ihre Mehr-Mandanten-App aus.
 
-    Da Ihre Anwendung im Auftrag Ihrer Benutzer mit Microsoft 365 Defender interagiert, muss sie für jeden Mandanten genehmigt werden, für den Sie sie verwenden möchten.
+    Da Ihre Anwendung mit Microsoft 365 Defender im Namen Ihrer Benutzer interagiert, muss sie für jeden Mandanten genehmigt werden, für den Sie ihn verwenden möchten.
 
     Der globale Active Directory-Administrator für jeden Mandanten muss den Zustimmungslink auswählen und Ihre App genehmigen.
 
@@ -119,7 +119,7 @@ In diesem Artikel wird erläutert, wie Sie:
 
 ## <a name="get-an-access-token"></a>Abrufen eines Zugriffstokens
 
-Weitere Informationen zu Azure Active Directory-Token finden Sie im [Azure AD-Lernprogramm](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+Weitere Informationen zu Azure Active Directory Token finden Sie im [Azure AD-Lernprogramm](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 > [!IMPORTANT]
 > Obwohl die Beispiele in diesem Abschnitt sie ermutigen, geheime  Werte zu Testzwecken einzugeben, sollten Sie geheime Schlüssel niemals in eine Anwendung hartcodieren, die in der Produktion ausgeführt wird. Ein Drittanbieter kann Ihr Geheimnis für den Zugriff auf Ressourcen verwenden. Mithilfe von Azure Key Vault können Sie die Geheimen Ihrer App [schützen.](/azure/key-vault/general/about-keys-secrets-certificates) Ein praktisches Beispiel, wie Sie Ihre App schützen können, finden Sie unter [Manage secrets in your server apps with Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/).
@@ -158,7 +158,7 @@ return $token
 
 1. Erstellen Sie eine neue Konsolenanwendung.
 
-1. Installieren Sie NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
+1. Installieren NuGet [Microsoft.IdentityModel.Clients.ActiveDirectory](https://www.nuget.org/packages/Microsoft.IdentityModel.Clients.ActiveDirectory/).
 
 1. Fügen Sie die folgende Zeile hinzu:
 
@@ -215,13 +215,13 @@ aadToken = jsonResponse["access_token"]
 ### <a name="get-an-access-token-using-curl"></a>Erhalten eines Zugriffstokens mithilfe von locken
 
 > [!NOTE]
-> Locken ist unter Windows 10, Version 1803 und höher, vorinstalliert. Für andere Versionen von Windows laden Sie das Tool direkt von der offiziellen [locken-Website herunter](https://curl.haxx.se/windows/)und installieren es.
+> "Locken" ist auf Windows 10 Version 1803 und höher vorinstalliert. Für andere Versionen von Windows Laden Sie das Tool direkt von der offiziellen [locken-Website herunter,](https://curl.haxx.se/windows/)und installieren Sie es.
 
 1. Öffnen Sie eine Eingabeaufforderung, und legen CLIENT_ID Auf Ihre Azure-Anwendungs-ID.
 
 1. Legen CLIENT_SECRET auf Ihren geheimen Azure-Anwendungsgeheimnis.
 
-1. Legen TENANT_ID auf die Azure-Mandanten-ID des Kunden fest, der Ihre App für den Zugriff auf Microsoft 365 Defender verwenden möchte.
+1. Legen TENANT_ID auf die Azure-Mandanten-ID des Kunden fest, der Ihre App für den Zugriff auf Microsoft 365 verwenden möchte.
 
 1. Führen Sie den folgenden Befehl aus:
 
@@ -266,10 +266,10 @@ Das folgende Beispiel zeigt, wie Sie eine Anforderung senden, um eine Liste von 
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Übersicht über Microsoft 365 Defender-APIs](api-overview.md)
+- [Microsoft 365 Übersicht über Defender-APIs](api-overview.md)
 - [Zugreifen auf die Microsoft 365 Defender-APIs](api-access.md)
 - [Erstellen einer "Hello world"-Anwendung](api-hello-world.md)
-- [Erstellen einer App für den Zugriff auf Microsoft 365 Defender-APIs im Auftrag eines Benutzers](api-create-app-user-context.md)
+- [Erstellen einer App für den Zugriff auf Microsoft 365 Defender-APIs im Namen eines Benutzers](api-create-app-user-context.md)
 - [Erstellen einer App mit Mehr-Mandanten-Partnerzugriff auf Microsoft 365 Defender-APIs](api-partner-access.md)
 - [Informationen zu API-Beschränkungen und -Lizenzierung](api-terms.md)
 - [Verstehen von Fehlercodes](api-error-codes.md)

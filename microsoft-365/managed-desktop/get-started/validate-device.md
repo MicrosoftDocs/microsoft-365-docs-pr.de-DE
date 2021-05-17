@@ -1,5 +1,5 @@
 ---
-title: Überprüfen neuer Geräte
+title: Neue Geräte validieren
 description: Rufen Sie vor dem Bestellen von Geräten eines der einzelnen Modelle ab, und testen Sie es.
 ms.service: m365-md
 author: jaimeo
@@ -18,7 +18,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/06/2021
 ms.locfileid: "52246200"
 ---
-# <a name="validate-new-devices"></a>Überprüfen neuer Geräte
+# <a name="validate-new-devices"></a>Neue Geräte validieren
 
 Unabhängig davon, ob Sie mit Microsoft Managed Desktop oder einem langfristigen Abonnenten völlig neu sind, sollten Sie ein Beispiel für jedes Gerätemodell testen, das Sie zum ersten Mal beim Dienst registrieren. Dies gilt unabhängig davon, ob Sie ganz neue Geräte bestellen oder vorhandene geräte wiederverwahrten, einschließlich geräte, die für Microsoft Managed Desktop auf der Website ["Shop Windows 10 Pro Business Devices"](https://www.microsoft.com/windowsforbusiness/view-all-devices) empfohlen werden. Zeigen Sie an diesem Standort die Geräte an, die für die Verwendung mit dem Dienst empfohlen werden, indem Sie **Features** im Bereich **Filter nach** erweitern und dann Microsoft Managed Desktop **.** Durch das Überprüfen von Geräten wird sichergestellt, dass sie die von Ihnen erwartet benutzerfreundlichen Geräte bereitstellen.
 
@@ -30,7 +30,7 @@ Unabhängig davon, ob Sie mit Microsoft Managed Desktop oder einem langfristigen
     - [Eindruck beim ersten Ausführen mit Autopilot und der Registrierungsstatusseite](esp-first-run.md)
     - [Standortdienst für Windows 10](device-location.md)
     - [Erste Schritte mit dem App-Steuerelement](get-started-app-control.md)
-    - [Stellen Sie Anwendungen auf Geräten bereit](deploy-apps.md)
+    - [Bereitstellen von Apps auf Geräten](deploy-apps.md)
 2. Stellen Sie sicher, dass die folgenden Erfahrungen ohne Fehler, Fehler oder Eingabeaufforderungen funktionieren:
     - Die Autopilot-Erfahrung nach dem Beitritt zum Netzwerk und der Benutzer meldet sich an
     - Wenn Sie die [Registrierungsstatusseite aktiviert haben,](esp-first-run.md)funktioniert sie.

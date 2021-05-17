@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von Micro Focus ArcSight zum Ziehen von Microsoft Defender for Endpoint-Erkennungen
-description: Konfigurieren von Micro Focus ArcSight zum Empfangen und Ziehen von Erkennungen vom Microsoft Defender Security Center
+description: Konfigurieren von Micro Focus ArcSight zum Empfangen und Ziehen von Erkennungen Microsoft Defender Security Center
 keywords: Konfigurieren von Micro Focus ArcSight, Sicherheitsinformations- und Ereignisverwaltungstools, arcsight
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -40,13 +40,13 @@ Sie müssen einige Dateien und Tools für die Verwendung von Micro Focus ArcSigh
 >- [Defender for Endpoint Alert](alerts.md) besteht aus einer oder mehreren Erkennungen
 >- [Defender for Endpoint Detection besteht](api-portal-mapping.md) aus dem verdächtigen Ereignis, das auf dem Gerät aufgetreten ist, und den zugehörigen Warnungsdetails.
 
-## <a name="before-you-begin"></a>Vorbereitung
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Für die Konfiguration des Micro Focus ArcSight Connector-Tools sind mehrere Konfigurationsdateien erforderlich, um Erkennungen aus Ihrer Azure Active Directory (AAD)-Anwendung zu ziehen und zu analysieren.
 
 In diesem Abschnitt erhalten Sie die erforderlichen Informationen zum ordnungsgemäßen Festlegen und Verwenden der erforderlichen Konfigurationsdateien.
 
-- Stellen Sie sicher, dass Sie das SIEM-Integrationsfeature im Menü **Einstellungen aktiviert** haben. Weitere Informationen finden Sie unter [Aktivieren der SIEM-Integration in Defender for Endpoint](enable-siem-integration.md).
+- Stellen Sie sicher, dass Sie das SIEM-Integrationsfeature im Menü **Einstellungen** haben. Weitere Informationen finden Sie unter [Aktivieren der SIEM-Integration in Defender for Endpoint](enable-siem-integration.md).
 
 - Die Datei, die Sie beim Aktivieren des SIEM-Integrationsfeatures gespeichert haben, ist bereit. Sie müssen die folgenden Werte erhalten:
   - OAuth 2.0 Tokenaktualisierungs-URL
@@ -57,7 +57,7 @@ In diesem Abschnitt erhalten Sie die erforderlichen Informationen zum ordnungsge
   - WDATP-connector.properties
   - WDATP-connector.jsonparser.properties
 
-    Sie hätten eine ZIP-Datei gespeichert, die diese beiden Dateien enthält, wenn Sie Micro Focus ArcSight als SIEM-Typ ausgewählt haben, den Sie in Ihrer Organisation verwenden.
+    Sie hätten eine .zip gespeichert, die diese beiden Dateien enthält, wenn Sie Micro Focus ArcSight als siem-Typ ausgewählt haben, den Sie in Ihrer Organisation verwenden.
 
 - Stellen Sie sicher, dass Sie die folgenden Token generieren und bereit sind:
   - Zugriffstoken
@@ -105,7 +105,7 @@ In den folgenden Schritten wird davon ausgegangen, dass Sie alle erforderlichen 
     </tr>
     <tr>
     <td>Konfigurationsdatei</td>
-    <td>Geben Sie den Namen der Clienteigenschaftsdatei ein. Der Name muss mit der Datei übereinstimmen, die in der heruntergeladenen ZIP-Datei enthalten ist.
+    <td>Geben Sie den Namen der Clienteigenschaftsdatei ein. Der Name muss mit der Datei übereinstimmen, die im .zip heruntergeladen wurde.
 Wenn die Konfigurationsdatei im Verzeichnis flexagent beispielsweise den Namen &quot; &quot;WDATP-Connector.js&quot; onparser.properties hat, müssen Sie &quot; &quot; WDATP-Connector &quot; als Namen der Clienteigenschaftsdatei eingeben.</td>
     </tr>
     <td>Ereignis-URL</td>
@@ -116,7 +116,7 @@ Wenn die Konfigurationsdatei im Verzeichnis flexagent beispielsweise den Namen &
     <td>OAuth 2</td>
     </tr>
     <td>OAuth 2-Clienteigenschaftendatei</td>
-    <td>Navigieren Sie zum Speicherort der <em>Datei wdatp-connector.properties.</em> Der Name muss mit der Datei übereinstimmen, die in der heruntergeladenen ZIP-Datei enthalten ist.</td>
+    <td>Navigieren Sie zum Speicherort der <em>Datei wdatp-connector.properties.</em> Der Name muss mit der Datei übereinstimmen, die im .zip heruntergeladen wurde.</td>
     <tr>
     <td>Aktualisierungstoken</td>
     <td>Sie können ein Aktualisierungstoken auf zwei Arten abrufen: durch Generieren eines Aktualisierungstokens auf der <b>Seite mit den SIEM-Einstellungen</b> oder mithilfe des Restutil-Tools. <br><br> Weitere Informationen zum Generieren eines <b>Aktualisierungstokens</b> aus dem Setup der Einstellungen finden Sie unter Aktivieren der <a href="enable-siem-integration.md" data-raw-source="[Enable SIEM integration in Defender for Endpoint](enable-siem-integration.md)">SIEM-Integration in Defender for Endpoint</a>. </br> </br><b>Mit dem restutil-Tool können Sie Ihr Aktualisierungstoken erhalten:</b> </br> a. Öffnen Sie eine Eingabeaufforderung. Navigieren Sie zu C:\<em>folder_location</em>\current\bin, folder_location den Speicherort darstellt, an dem Sie das Tool installiert haben. <em></em> </br></br> b. Typ: <code>arcsight restutil token -config</code> aus dem Bin-Verzeichnis. Beispiel: <b>arcsight restutil boxtoken -proxy proxy.location.hp.com:8080</b> ein Webbrowserfenster wird geöffnet. </br> </br>c. Geben Sie Ihre Anmeldeinformationen ein, und klicken Sie dann auf das Kennwortfeld, damit die Seite umgeleitet wird. Geben Sie in der Anmeldeaufforderung Ihre Anmeldeinformationen ein. </br> </br>d. In der Eingabeaufforderung wird ein Aktualisierungstoken angezeigt. </br></br> e. Kopieren Sie sie, und fügen Sie sie in das <b>Feld Aktualisierungstoken</b> ein.
@@ -209,4 +209,4 @@ Defender for Endpoint-Erkennungen werden als diskrete Ereignisse mit "Microsoft"
 - [Aktivieren der SIEM-Integration in Defender for Endpoint](enable-siem-integration.md)
 - [Ziehen von Erkennungen an Ihre SIEM-Tools](/windows/security/threat-protection/microsoft-defender-atp/configure-siem)
 - [Pull Defender for Endpoint-Erkennungen mithilfe der REST-API](pull-alerts-using-rest-api.md)
-- [Problembehandlung bei der Integration von SIEM-Tools](troubleshoot-siem.md)
+- [Behandeln von Problemen mit der Integration von SIEM-Tools](troubleshoot-siem.md)

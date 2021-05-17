@@ -50,7 +50,7 @@ Wenn eine Warnung noch nicht zugewiesen ist, können Sie **Zuweisen** für mich 
 
 
 ## <a name="suppress-alerts"></a>Unterdrücken von Warnungen
-Es kann Szenarien gibt, in denen Sie das Anzeigen von Warnungen im Microsoft Defender Security Center unterdrücken müssen. Mit Defender for Endpoint können Sie Unterdrückungsregeln für bestimmte Warnungen erstellen, die als harmlos bekannt sind, z. B. bekannte Tools oder Prozesse in Ihrer Organisation.
+Es kann Szenarien gibt, in denen Sie das Anzeigen von Warnungen in der Microsoft Defender Security Center. Mit Defender for Endpoint können Sie Unterdrückungsregeln für bestimmte Warnungen erstellen, die als harmlos bekannt sind, z. B. bekannte Tools oder Prozesse in Ihrer Organisation.
 
 Unterdrückungsregeln können aus einer vorhandenen Warnung erstellt werden. Sie können bei Bedarf deaktiviert und erneut aktiviert werden.
 
@@ -98,7 +98,7 @@ Erstellen Sie benutzerdefinierte Regeln, um zu steuern, wann Warnungen unterdrü
 
 #### <a name="view-the-list-of-suppression-rules"></a>Anzeigen der Liste der Unterdrückungsregeln
 
-1. Wählen Sie im Navigationsbereich  >  Einstellungsbenachrichtigungsunterdrückung **aus.**
+1. Wählen Sie im Navigationsbereich die **Option Einstellungen**  >  **Warnungsunterdrückung aus.**
 
 2. Die Liste der Unterdrückungsregeln zeigt alle Regeln an, die Benutzer in Ihrer Organisation erstellt haben.
 

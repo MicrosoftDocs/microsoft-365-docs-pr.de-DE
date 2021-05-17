@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel werden die Metadatenfelder für Dokumente in einem Überprüfungssatz in einem Fall in Advanced eDiscovery in Microsoft 365.
-ms.openlocfilehash: 77df40f4922718a7ed30431b0c1bd91f5c075425
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: e801f60b69c796dfcd2cb6d83cc4fbc721dc7658
+ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244600"
+ms.locfileid: "52259463"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Dokument-Metadatenfelder in Advanced eDiscovery
 
@@ -119,7 +119,7 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einem Überp
 |Enddatum der Besprechung|MeetingEndDate|Meeting_end_date|Enddatum der Besprechung für Besprechungen.|
 |Anfangsdatum der Besprechung|MeetingStartDate|Meeting_start_date|Besprechungsanfangsdatum für Besprechungen.|
 |Nachrichten art|MessageKind|Message_kind|Der Typ der Nachricht, nach der gesucht werden soll. Mögliche Werte: Kontakte docs email **<br /> <br /> <br /> <br /> <br /> externaldata <br /> faxes <br /> in <br /> journals <br /> meetings <br /> microsoftteams** (returns items from chats, meetings, and calls in Microsoft Teams) **<br /> notes posts <br /> <br /> rssfeeds <br /> tasks <br /> voicemail**| 
-|ModernAttachment_ParentId||ModernAttachment_ParentId||
+|Übergeordnete Id der modernen Anlage||ModernAttachment_ParentId|Die unveränderliche ID des übergeordneten Dokuments.|
 |Native Erweiterung|NativeExtension|Native_extension|Native Erweiterung des Elements.|
 |Systemeigener Dateiname|NativeFileName|Native_file_name|Systemeigener Dateiname des Elements.|
 |NativeMD5||Native_MD5|#A0 (128-Bit-Hashwert) des Dateidatenstroms.|
@@ -164,6 +164,7 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einem Überp
 |Titel|Titel|Doc_title|Titel aus den Dokumentmetadaten.|
 |An|An|Email_to|To-Feld für Nachrichtentypen. Format ist **DisplayName \<SmtpAddress>**|
 |Eindeutig in E-Mail-Satz|UniqueInEmailSet||**False,** wenn ein Duplikat der Anlage im E-Mail-Satz vorhanden ist.|
+|Gruppen-ID der Version||Version_Group_Id|Gruppen der verschiedenen Versionen desselben Dokuments.|
 |Wurde behoben|WasRemediated|Was_Remediated|**True,** wenn das Element behoben wurde, andernfalls **False**.|
 |Wörter zählen|WordCount|Word_count|Anzahl der Wörter im Element.|
 |||||

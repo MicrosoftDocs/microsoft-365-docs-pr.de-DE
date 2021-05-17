@@ -1,5 +1,5 @@
 ---
-title: Verwenden grundlegender Berechtigungen für den Zugriff auf Microsoft Defender Security Center
+title: Verwenden von grundlegenden Berechtigungen für den Zugriff auf Microsoft Defender Security Center
 description: Erfahren Sie, wie Sie grundlegende Berechtigungen für den Zugriff auf das Microsoft Defender for Endpoint-Portal verwenden.
 keywords: Zuweisen von Benutzerrollen, Zuweisen von Lese- und Schreibzugriff, Zuweisen von schreibgeschützten Zugriffen, Benutzern, Benutzerrollen, Rollen
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51163671"
 ---
-# <a name="use-basic-permissions-to-access-the-portal"></a>Verwenden grundlegender Berechtigungen für den Zugriff auf das Portal
+# <a name="use-basic-permissions-to-access-the-portal"></a>Verwenden von grundlegenden Berechtigungen für den Zugriff auf das Portal
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -42,19 +42,19 @@ Sie können eine der folgenden Lösungen verwenden:
 
 Wechseln Sie zur rollenbasierten Zugriffssteuerung, um die Berechtigungen präzise [zu steuern.](rbac.md)
 
-## <a name="assign-user-access-using-azure-powershell"></a>Zuweisen des Benutzerzugriffs mithilfe von Azure PowerShell
+## <a name="assign-user-access-using-azure-powershell"></a>Zuweisen des Benutzerzugriffs mithilfe Azure PowerShell
 Sie können Benutzern eine der folgenden Berechtigungsebenen zuweisen:
 - Vollzugriff (Lese- und Schreibzugriff)
 - Schreibgeschützter Zugriff
 
-### <a name="before-you-begin"></a>Vorbereitung
+### <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Installieren Sie Azure PowerShell. Weitere Informationen finden Sie unter Installieren und Konfigurieren [von Azure PowerShell](https://azure.microsoft.com/documentation/articles/powershell-install-configure/).<br>
+- Installieren Azure PowerShell. Weitere Informationen finden Sie unter [How to install and configure Azure PowerShell](https://azure.microsoft.com/documentation/articles/powershell-install-configure/).<br>
 
     > [!NOTE]
     > Sie müssen die PowerShell-Cmdlets in einer Befehlszeile mit erhöhten Rechten ausführen.
 
-- Stellen Sie eine Verbindung mit Ihrem Azure Active Directory bereit. Weitere Informationen finden Sie unter [Connect-MsolService](https://docs.microsoft.com/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true).
+- Verbinden zu Azure Active Directory. Weitere Informationen finden Sie unter [Verbinden-MsolService](https://docs.microsoft.com/powershell/module/msonline/connect-msolservice?view=azureadps-1.0&preserve-view=true).
 
 **Vollzugriff** <br>
 Benutzer mit Vollzugriff können sich anmelden, alle Systeminformationen anzeigen und Warnungen auflösen, Dateien für eine umfassende Analyse übermitteln und das Onboardingpaket herunterladen.
@@ -79,7 +79,7 @@ Verwenden Sie die folgenden Schritte, um Sicherheitsrollen zuzuordnen:
   Add-MsolRoleMember -RoleName "Security Reader" -RoleMemberEmailAddress "reader@Contoso.onmicrosoft.com"
   ```
 
-Weitere Informationen finden Sie unter [Hinzufügen oder Entfernen von Gruppenmitgliedern mithilfe von Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).
+Weitere Informationen finden Sie unter [Hinzufügen oder Entfernen von Gruppenmitgliedern mithilfe Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-members-azure-portal).
 
 ## <a name="assign-user-access-using-the-azure-portal"></a>Zuweisen des Benutzerzugriffs mithilfe des Azure-Portals
 
@@ -87,4 +87,4 @@ Weitere Informationen finden Sie unter [Assign administrator and non-administrat
 
 ## <a name="related-topic"></a>Verwandtes Thema
 
-- [Verwalten des Portalzugriffs mithilfe von RBAC](rbac.md)
+- [Verwalten des Portalzugriffs mithilfe des RBAC](rbac.md)

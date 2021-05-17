@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 7770e280-3a6c-436f-a157-b008a2744f51
-description: Erfahren Sie mehr über die Anforderungen für das Einrichten Ihrer Organisation Microsoft 365 Unternehmens und den Schutz von Arbeitsdaten auf den Geräten Ihrer Benutzer.
+description: Erfahren Sie mehr über die Anforderungen für das Einrichten Ihrer Organisation mit Microsoft 365 Business und den Schutz von Arbeitsdaten auf den Geräten Ihrer Benutzer.
 ms.openlocfilehash: 2aadac94492af90d8b6eec7c48aeceb9a4e62533
 ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
 ms.translationtype: MT
@@ -33,20 +33,20 @@ ms.locfileid: "52244814"
 
 Dieser Artikel gilt für Microsoft 365 Business Premium.
 
-Der erste Schritt beim Einrichten Ihrer Organisation mit Microsoft 365 ist, sicherzustellen, dass Sie die Voraussetzungen erfüllen können.
+Der erste Schritt beim Einrichten Ihrer Organisation mit Microsoft 365 Business besteht in der Erfüllung der Voraussetzungen.
   
 ## <a name="requirements-for-setting-up-your-organization-with-microsoft-365-for-business"></a>Anforderungen für die Einrichtung Ihrer Organisation mit Microsoft 365 Business
 
-- Windows geräte müssen Windows 7 Professional, Windows 8 Pro oder Windows 8.1 Pro.
+- Auf Windows-Geräten muss Windows 7 Professional, Windows 8 Pro oder Windows 8.1 Pro ausgeführt werden.
     
     [Aktualisieren von Windows-Geräten auf Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md)
     
-    Wenn Sie eine Windows 10 Home ausführen, müssen  Sie Windows 10 Pro. Anweisungen [finden Sie unter Upgrade Windows 10 Home to Windows 10 Pro.](../business-video/upgrade.md) 
+    Wenn Sie Windows 10 Home ausführen, müssen Sie **Windows** 10 Pro erwerben. Anweisungen [finden Sie unter Upgrade von Windows 10 Home auf Windows 10 Pro.](../business-video/upgrade.md) 
     
-- Entfernen von Geräten aus mobilen Verwaltungslösungen (Mobile Iron, AirWatch und so weiter). Sie registrieren alle Personen in Ihrer Organisation in Microsoft 365 mobilen Unternehmensverwaltung.
+- Entfernen von Geräten aus mobilen Verwaltungslösungen (Mobile Iron, AirWatch und so weiter). Sie registrieren alle Personen in Ihrer Organisation in Microsoft 365 Business Mobile Management.
     
 - Apple iOS 8.0 oder höher.
     
     Google Android 4.0 oder höher (einschließlich Samsung KNOX Standard 4.0 oder höher). Weitere Informationen finden Sie unter [Von Intune unterstützte Geräte](/mem/intune/fundamentals/supported-devices-browsers).
     
-- Wenn Sie über vorhandene Office-Anwendungen auf [](prepare-for-office-client-deployment.md) Benutzercomputern verfügen, lesen Sie vorbereiten für die Office-Clientinstallation, um die Schritte zu verstehen, die Sie möglicherweise ausführen müssen, bevor Sie Microsoft 365 for Business für die Installation von Office 2016 auf Benutzercomputern einrichten können.
+- Wenn Sie über vorhandene Office-Anwendungen [](prepare-for-office-client-deployment.md) auf Benutzercomputern verfügen, lesen Sie Vorbereiten der Office-Clientinstallation, um die Schritte zu verstehen, die Sie möglicherweise ausführen müssen, bevor Sie Microsoft 365 business für die Installation von Office 2016 auf Benutzercomputern einrichten können.

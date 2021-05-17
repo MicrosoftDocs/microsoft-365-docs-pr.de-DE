@@ -132,4 +132,4 @@ $response
 ## <a name="see-also"></a>Siehe auch
 - [Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 - [Erweiterte Suche-API](run-advanced-query-api.md)
-- [Erweiterte Suche mithilfe von Python](run-advanced-query-sample-python.md)
+- [Erweiterte Bedrohungssuche mit Python](run-advanced-query-sample-python.md)

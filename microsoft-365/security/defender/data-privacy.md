@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Defender Datensicherheit und Datenschutz
+title: Microsoft 365 Schutz und Datenschutz von Defender-Daten
 description: Beschreibt den Datenschutz und die Datensicherheit des Dienstes.
 keywords: Privatsphäre, Daten, Sicherheit, Trust Center, Informationssammlung
 search.product: eADQiWindows 10XVcnh
@@ -27,7 +27,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51060732"
 ---
-# <a name="microsoft-365-defender-data-security-and-privacy"></a>Microsoft 365 Defender Datensicherheit und Datenschutz
+# <a name="microsoft-365-defender-data-security-and-privacy"></a>Microsoft 365 Schutz und Datenschutz von Defender-Daten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51060732"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender ist in Microsoft Azure-Rechenzentren in der Europäischen Union, großbritannien und den USA tätig. Vom Dienst erfasste Kundendaten werden in (a) dem geografischen Standort des Mandanten gespeichert, der während der Bereitstellung identifiziert wurde, oder (b) wenn Microsoft 365 Defender einen anderen Microsoft Onlinedienst verwendet, um diese Daten zu verarbeiten, die Geolocation gemäß den Datenspeicherregeln dieses anderen Onlinediensts.
+Microsoft 365 Defender ist in Microsoft Azure Rechenzentren in der Europäischen Union, im Vereinigten Königreich und in den Vereinigten Staaten tätig. Kundendaten, die vom Dienst erfasst werden, werden in (a) dem geografischen Standort des Mandanten gespeichert, der während der Bereitstellung identifiziert wurde, oder (b) wenn Microsoft 365 Defender einen anderen Microsoft Onlinedienst verwendet, um diese Daten zu verarbeiten, die geolocation gemäß den Datenspeicherregeln dieses anderen Onlinediensts.
 
 Kundendaten in pseudonymisierter Form können auch in zentralen Speicher- und Verarbeitungssystemen in den USA gespeichert werden.
 
@@ -43,4 +43,4 @@ Kundendaten in pseudonymisierter Form können auch in zentralen Speicher- und Ve
 Weitere Informationen zur Datenspeicherung und zum Datenschutz der jeweiligen Produkte finden Sie unter:
 - [Datenspeicherung und Datenschutz von Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - [Microsoft Cloud App Security Datensicherheit und Datenschutz](/cloud-app-security/cas-compliance-trust)
-- [Datenschutz, Sicherheit und Transparenz von Microsoft 365](/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)
+- [Microsoft 365 Datenschutz, Sicherheit und Transparenz](/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)

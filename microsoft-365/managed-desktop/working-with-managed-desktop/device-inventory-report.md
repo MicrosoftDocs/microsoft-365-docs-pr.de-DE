@@ -32,8 +32,8 @@ In der **Ansicht Geräte** können Sie die Registerkarte **Alle** exportieren au
 - Besitz
 - Registrierungsdatum
 - Ringname
-- Storage – Kostenlos in GB
-- Storage – Gesamt in GB
+- Speicher – Kostenlos in GB
+- Speicher – Gesamt in GB
 - Vom Benutzer-UPN registriert
 - Zugewiesener Benutzer
 - Status

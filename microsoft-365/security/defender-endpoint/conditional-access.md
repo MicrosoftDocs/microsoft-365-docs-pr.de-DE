@@ -41,7 +41,7 @@ Mit bedingten Zugriff können Sie den Zugriff auf Unternehmensinformationen basi
 
 Sie können Sicherheitsbedingungen definieren, unter denen Geräte und Anwendungen ausgeführt werden können und auf Informationen aus Ihrem Netzwerk zugreifen können, indem Sie Richtlinien erzwingen, um die Ausführung von Anwendungen zu verhindern, bis ein Gerät in einen kompatiblen Zustand zurückkehrt. 
 
-Die Implementierung von Bedingter Zugriff in Defender for Endpoint basiert auf Microsoft Intune (Intune)-Geräte-Compliancerichtlinien und Azure Active Directory (Azure AD)-Richtlinien für bedingten Zugriff. 
+Die Implementierung von Bedingter Zugriff in Defender for Endpoint basiert auf Microsoft Intune (Intune) Geräte-Compliance-Richtlinien und Azure Active Directory (Azure AD)-Richtlinien für bedingten Zugriff. 
 
 Die Compliancerichtlinie wird zusammen mit bedingten Zugriff verwendet, um nur Geräten, die eine oder mehrere Richtlinienregeln für die Gerätekonformität erfüllen, den Zugriff auf Anwendungen zu ermöglichen. 
 

@@ -31,7 +31,7 @@ ms.locfileid: "52245082"
 ---
 # <a name="set-up-compliance-features"></a>Einrichten von Compliancefeatures
 
-Ihre Microsoft 365 Business Premium bietet Features zum Schutz Ihrer Daten und Geräte und hilft Ihnen, die vertraulichen Informationen Ihrer Kunden und Ihrer Kunden zu schützen.
+Ihr Microsoft 365 Business Premium verfügt über Features zum Schutz Ihrer Daten und Geräte und hilft Ihnen, die vertraulichen Informationen Ihrer Kunden und Ihrer Kunden zu schützen.
 
 ## <a name="set-up-dlp-features"></a>Einrichten von DLP-Features
 
@@ -41,7 +41,7 @@ DLP enthält viele einsatzbereite Richtlinienvorlagen für viele verschiedene Lo
   
 ## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Einrichten der E-Mail-Aufbewahrung mit Exchange Online-Archivierung
 
-  Exchange Online-Archivierung-Lizenzfeatures helfen bei der Aufrechterhaltung von Compliance- und behördlichen Standards, indem E-Mail-Inhalte für eDiscovery beibehalten werden. Es hilft auch, Ihr Risiko zu reduzieren, wenn eine Klage vorlag, und bietet eine Möglichkeit, Daten nach einer Sicherheitsverletzung oder wenn Sie gelöschte Elemente wiederherstellen müssen. Sie können das Verfahrensverfahren verwenden, um alle Inhalte eines Benutzers zu erhalten, oder Aufbewahrungsrichtlinien verwenden, um die Aufbewahrungsrichtlinien anzupassen.
+ **Exchange Online-Archivierung** Lizenzfeatures helfen bei der Aufrechterhaltung von Compliance- und behördlichen Standards, indem E-Mail-Inhalte für eDiscovery beibehalten werden. Es hilft auch, Ihr Risiko zu reduzieren, wenn eine Klage vorlag, und bietet eine Möglichkeit, Daten nach einer Sicherheitsverletzung oder wenn Sie gelöschte Elemente wiederherstellen müssen. Sie können das Verfahrensverfahren verwenden, um alle Inhalte eines Benutzers zu erhalten, oder Aufbewahrungsrichtlinien verwenden, um die Aufbewahrungsrichtlinien anzupassen.
   
 **Halterecht für Rechtsstreitigkeiten:** Sie können alle Postfachinhalte, einschließlich gelöschter Elemente, beibehalten, indem Sie das gesamte Postfach eines Benutzers in einem Rechtsstreit zurückhalten. 
     
@@ -49,7 +49,7 @@ So platzieren Sie ein Postfach in einem Rechtsstreit im Admin Center:
     
 1. Wechseln Sie im linken Navigations navi zu **Benutzer** \> **Aktive Benutzer**.
     
-2. Wählen Sie einen Benutzer aus, dessen Postfach Sie in einem Prozesssicherungsverfahren platzieren möchten. Erweitern Sie im Benutzerbereich **E-Mail-Einstellungen,** und wählen Sie neben Weitere Einstellungen die Option **Bearbeiten Exchange Eigenschaften aus.** 
+2. Wählen Sie einen Benutzer aus, dessen Postfach Sie in einem Prozesssicherungsverfahren platzieren möchten. Erweitern Sie im Benutzerbereich **E-Mail-Einstellungen,** und wählen Sie neben **Weitere Einstellungen** die Option **Exchange-Eigenschaften bearbeiten aus.**
     
 3. Wählen Sie auf der Postfachseite für den Benutzer ** Postfachfunktionen ** im linken Navigationsgerät aus, und wählen Sie dann den Link Aktivieren **unter** **Rechtsstreitigkeiten aus.**
     

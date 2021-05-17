@@ -53,9 +53,9 @@ Microsoft empfiehlt, die in der folgenden Tabelle aufgeführten Aufgaben auszuf�
 |7 |[Verwenden Office Nachrichtenverschlüsselung](secure-your-business-data.md#encryption)||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Schützen Ihrer E-Mails vor Phishingangriffen](secure-your-business-data.md#phishing)||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[Schützen vor schädlichen Anlagen und Dateien mit sicheren Anlagen](secure-your-business-data.md#atp)||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10  |[Schützen vor Phishingangriffen mit sicheren Links](secure-your-business-data.md#phishingatp)||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10|[Schützen vor Phishingangriffen mit sicheren Links](secure-your-business-data.md#phishingatp)||![Enthalten](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-Wenn Sie über Microsoft Business Premium verfügen, können Sie die Sicherheit am schnellsten einrichten und sicher zusammenarbeiten, wenn Sie die Anleitungen in dieser Bibliothek befolgen: Microsoft 365 für kleinere Unternehmen und [Kampagnen](../../campaigns/index.md). Diese Anleitung wurde in Zusammenarbeit mit dem Microsoft-Team "Abwehrdemonsistenz" entwickelt, um alle Kleinunternehmen vor Cyberbedrohungen zu schützen, die von anspruchsvollen Hackern gestartet wurden.
+Wenn Sie über Microsoft Business Premium verfügen, können Sie die Sicherheit am schnellsten einrichten und mit der sicheren Zusammenarbeit beginnen, wenn Sie die Anweisungen in dieser Bibliothek befolgen: [Microsoft 365 für kleinere Unternehmen und Kampagnen](../../campaigns/index.md). Diese Anleitung wurde in Zusammenarbeit mit dem Microsoft-Team „Defending Democracy“ entwickelt, um alle kleinen Unternehmenskunden vor Cyberbedrohungen zu schützen, die von raffinierten Hackern gestartet werden.
 
 Bevor Sie beginnen, überprüfen Microsoft 365 [Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) im Microsoft 365 Security Center. Über ein zentrales Dashboard können Sie die Sicherheit für Ihre identitäten, Microsoft 365, Apps, Geräte und Infrastruktur überwachen und verbessern. Sie erhalten Punkte zum Konfigurieren empfohlener Sicherheitsfeatures, zum Ausführen sicherheitsbezogener Aufgaben (z. B. zum Anzeigen von Berichten) oder zum Adressieren von Empfehlungen mit einer Drittanbieteranwendung oder -software. Mit zusätzlichen Einblicken und mehr Einblick in eine breitere Palette von Microsoft-Produkten und -Diensten können Sie sich sicher fühlen, über den Sicherheitszustand Ihrer Organisation zu berichten.
 
@@ -161,7 +161,7 @@ Um eine E-Mail-Transportregel zu erstellen, zeigen Sie ein [kurzes](../../busine
 
 6. Klicken Sie auf **Speichern**.
     
-| Einstellung | Warnen Von Benutzern vor dem Öffnen von Anlagen Office Dateien | Blockieren von Dateitypen, die Ransomware oder anderen schädlichen Code enthalten könnten |
+| Setting | Warnen Von Benutzern vor dem Öffnen von Anlagen Office Dateien | Blockieren von Dateitypen, die Ransomware oder anderen schädlichen Code enthalten könnten |
 |:-----|:-----|:-----|
 |Name  <br/> |Anti-Ransomware-Regel: Benutzer warnen  <br/> |Anti-Ransomware-Regel: Dateitypen blockieren  <br/> |
 |Wenden Sie diese Regel an, wenn . . .  <br/> |Jede Anlage . . . Dateierweiterung entspricht . . .  <br/> |Jede Anlage . . . Dateierweiterung entspricht . . .  <br/> |
@@ -197,7 +197,7 @@ So erstellen Sie eine E-Mail-Transportregel:
 
 6. Klicken Sie auf **Speichern**.
 
-|Einstellung|Ablehnen der automatischen Weiterleitung von E-Mails an externe Domänen|
+|Setting|Ablehnen der automatischen Weiterleitung von E-Mails an externe Domänen|
 |---|---|
 |Name|Verhindern der automatischen Weiterleitung von E-Mails an externe Domänen|
 |Wenden Sie diese Regel an, wenn ...|Der Absender . . . ist extern/intern . . . Innerhalb der Organisation|

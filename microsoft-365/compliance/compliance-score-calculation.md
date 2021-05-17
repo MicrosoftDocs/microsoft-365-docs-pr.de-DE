@@ -27,7 +27,7 @@ ms.locfileid: "51052113"
 **In diesem Artikel:** Erfahren Sie, wie Der Compliance-Manager eine Compliance-Bewertung für Ihre Organisation berechnet. In diesem Artikel wird erläutert, wie Sie Ihre Bewertung **interpretieren,** was die **Datenschutzgrundbewertung** **umfasst,** wie sie kontinuierlich überwacht wird und wie verschiedene Arten von Aktionen verwaltet und mit einer Bewertung **erzielt werden.**
 
 > [!IMPORTANT]
-> Empfehlungen des Compliance-Managers sollten nicht als eine Garantie für Compliance interpretiert werden. Es liegt an Ihnen, die Effektivität von Kundenkontrollen nach Ihrer gesetzlichen Umgebung zu bewerten und zu überprüfen. Diese Dienste unterliegen den Allgemeinen Geschäftsbedingungen in den [Onlinedienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910). Siehe auch [Microsoft 365 Licensing Guidance for security and compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+> Empfehlungen des Compliance-Managers sollten nicht als eine Garantie für Compliance interpretiert werden. Es liegt an Ihnen, die Effektivität von Kundenkontrollen nach Ihrer gesetzlichen Umgebung zu bewerten und zu überprüfen. Diese Dienste unterliegen den Allgemeinen Geschäftsbedingungen in den [Onlinedienstbedingungen](https://go.microsoft.com/fwlink/?linkid=2108910). Siehe auch [Microsoft 365 Lizenzierungsanleitung für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="how-to-read-your-compliance-score"></a>So lesen Sie Ihre Compliance-Bewertung
 
@@ -45,17 +45,17 @@ Ein Bewertungswert wird auf drei Ebenen zugewiesen:
 
 Die Gesamtkonformitätsnote wird mithilfe von Aktionsergebnissen berechnet, wobei jede Microsoft-Aktion einmal gezählt wird, jede von Ihnen verwaltete technische Aktion einmal gezählt wird und jede nicht technische Aktion, die Sie verwalten, einmal pro Gruppe gezählt wird. Diese Logik ist so konzipiert, dass sie die genaueste Buchhaltung darüber bietet, wie Aktionen in Ihrer Organisation implementiert und getestet werden. Möglicherweise können Sie feststellen, dass dies dazu führen kann, dass sich Die Gesamtbewertung der Compliance vom Durchschnitt Ihrer Bewertungsbewertung unterscheidet. Weitere Informationen zur [Bewertung von Aktionen finden Sie weiter unten.](#action-types-and-points)
 
-## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Anfängliche Bewertung basierend auf der Microsoft 365-Datenschutzgrundlinie
+## <a name="initial-score-based-on-microsoft-365-data-protection-baseline"></a>Anfängliche Bewertung basierend auf Microsoft 365 Datenschutzgrundlinie
   
-Der Compliance-Manager gibt Ihnen eine erste Bewertung basierend auf der Microsoft 365-Datenschutzgrundlinie. Diese Basislinie umfasst eine Reihe von Kontrollen, die wichtige Vorschriften und Standards für den Datenschutz und die allgemeine Datenkontrolle umfassen. Diese Basislinie bezieht elemente hauptsächlich aus NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) und ISO (International Organization for Standardization), sowie aus FedRAMP (Federal Risk and Authorization Management Program) und DSGVO (General Data Protection Regulation of the European Union).
+Der Compliance-Manager gibt Ihnen eine erste Bewertung basierend auf der Microsoft 365 Datenschutzgrundlinie. Diese Basislinie umfasst eine Reihe von Kontrollen, die wichtige Vorschriften und Standards für den Datenschutz und die allgemeine Datenkontrolle umfassen. Diese Basislinie bezieht elemente hauptsächlich aus NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) und ISO (International Organization for Standardization), sowie aus FedRAMP (Federal Risk and Authorization Management Program) und DSGVO (General Data Protection Regulation of the European Union).
 
-Ihre anfängliche Bewertung wird gemäß der standardmäßigen Data Protection Baseline-Bewertung berechnet, die für alle Organisationen bereitgestellt wird. Bei Ihrem ersten Besuch sammelt Compliance Manager bereits Signale von Ihren Microsoft 365-Lösungen. Sie sehen auf einen Blick, wie Ihre Organisation im Vergleich zu wichtigen Datenschutzstandards und -vorschriften funktioniert, und sehen sich verbesserungswürdige Maßnahmen an.
+Ihre anfängliche Bewertung wird gemäß der standardmäßigen Data Protection Baseline-Bewertung berechnet, die für alle Organisationen bereitgestellt wird. Bei Ihrem ersten Besuch sammelt Der Compliance-Manager bereits Signale von Ihren Microsoft 365 Lösungen. Sie sehen auf einen Blick, wie Ihre Organisation im Vergleich zu wichtigen Datenschutzstandards und -vorschriften funktioniert, und sehen sich verbesserungswürdige Maßnahmen an.
 
 Da jede Organisation bestimmte Anforderungen hat, ist compliance Manager darauf angewiesen, dass Sie Bewertungen einrichten und verwalten, um Risiken so umfassend wie möglich zu minimieren und zu mindern.
 
 ## <a name="how-compliance-manager-continuously-assesses-controls"></a>So bewertet Der Compliance-Manager die Steuerelemente kontinuierlich
 
-Der Compliance-Manager durchsucht ihre Microsoft 365-Umgebung automatisch und erkennt Ihre Systemeinstellungen und aktualisiert ihren status für technische Aktionen kontinuierlich und automatisch. Microsoft Secure Score ist das zugrunde liegende Modul, das die Überwachung durchführt.
+Der Compliance-Manager überprüft ihre Umgebung Microsoft 365 und erkennt Ihre Systemeinstellungen und aktualisiert ihren technischen Aktionsstatus kontinuierlich und automatisch. Microsoft Secure Score ist das zugrunde liegende Modul, das die Überwachung durchführt.
 
 Der Aktionsstatus wird alle 24 Stunden auf Ihrem Dashboard aktualisiert. Sobald Sie einer Empfehlung zum Implementieren eines Steuerelements folgen, wird der Steuerelementstatus in der Regel am nächsten Tag aktualisiert.
 
@@ -110,7 +110,7 @@ Aktionen wird ein Bewertungswert zugewiesen, der darauf basiert, ob sie obligato
   
 Jede Aktion hat einen zugewiesenen Wert im Compliance-Manager basierend auf dem Risiko, das sie darstellt:
 
-|**Type**|**Zugewiesene Bewertung**|
+|**Typ**|**Zugewiesene Bewertung**|
 |:-----|:-----|
 | Vorbeugendes Obligatorisches | 27 |
 | Vorbeugende Diskretion | 9  |

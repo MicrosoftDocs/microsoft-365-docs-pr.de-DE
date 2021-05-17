@@ -1,6 +1,6 @@
 ---
-title: Erstellen einer App für den Zugriff auf Microsoft 365 Defender-APIs im Auftrag eines Benutzers
-description: Erfahren Sie, wie Sie im Auftrag eines Benutzers auf Microsoft 365 Defender-APIs zugreifen.
+title: Erstellen einer App für den Zugriff auf Microsoft 365 Defender-APIs im Namen eines Benutzers
+description: Erfahren Sie, wie Sie Microsoft 365 Defender-APIs im Namen eines Benutzers zugreifen.
 keywords: zugriff im Auftrag von Benutzer, API, Anwendung, Benutzer, Zugriffstoken, Token,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51068664"
 ---
-# <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>Erstellen einer App für den Zugriff auf Microsoft 365 Defender-APIs im Auftrag eines Benutzers
+# <a name="create-an-app-to-access-microsoft-365-defender-apis-on-behalf-of-a-user"></a>Erstellen einer App für den Zugriff auf Microsoft 365 Defender-APIs im Namen eines Benutzers
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,15 +40,15 @@ ms.locfileid: "51068664"
 
 Auf dieser Seite wird beschrieben, wie Sie eine Anwendung erstellen, um programmgesteuerten Zugriff auf Microsoft 365 Defender im Namen eines einzelnen Benutzers zu erhalten.
 
-Wenn Sie programmgesteuerten Zugriff auf Microsoft 365 Defender ohne einen definierten Benutzer benötigen (z. B. wenn Sie eine Hintergrund-App oder einen Daemon schreiben), lesen Sie Erstellen einer App für den Zugriff auf [Microsoft 365 Defender](api-create-app-web.md)ohne Benutzer. Wenn Sie Zugriff für mehrere Mandanten bereitstellen müssen , z. B. wenn Sie eine große Organisation oder eine Gruppe von Kunden bereitstellen, lesen Sie Erstellen einer App mit Partnerzugriff auf [Microsoft 365 Defender-APIs](api-partner-access.md). Wenn Sie nicht sicher sind, welche Art von Zugriff Sie benötigen, lesen Sie [Erste Schritte](api-access.md).
+Wenn Sie programmgesteuerten Zugriff auf Microsoft 365 Defender ohne einen definierten Benutzer benötigen (z. B. wenn Sie eine Hintergrund-App oder einen Daemon schreiben), lesen Sie Erstellen einer App für den Zugriff auf [Microsoft 365 Defender](api-create-app-web.md)ohne Benutzer . Wenn Sie zugriff für mehrere Mandanten bereitstellen müssen , z. B. wenn Sie eine große Organisation oder eine Gruppe von Kunden bereitstellen, lesen Sie Erstellen einer App mit Partnerzugriff auf [Microsoft 365 Defender-APIs](api-partner-access.md). Wenn Sie nicht sicher sind, welche Art von Zugriff Sie benötigen, lesen Sie [Erste Schritte](api-access.md).
 
-Microsoft 365 Defender macht einen Großen Teil seiner Daten und Aktionen über eine Reihe programmgesteuerter APIs verfügbar. Diese APIs helfen Ihnen, Workflows zu automatisieren und die Funktionen von Microsoft 365 Defender zu nutzen. Für diesen API-Zugriff ist die OAuth2.0-Authentifizierung erforderlich. Weitere Informationen finden Sie unter [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft 365 Defender macht einen Großen Teil seiner Daten und Aktionen über eine Reihe programmgesteuerter APIs verfügbar. Diese APIs helfen Ihnen bei der Automatisierung von Workflows und nutzen Microsoft 365 Funktionen von Defender. Für diesen API-Zugriff ist die OAuth2.0-Authentifizierung erforderlich. Weitere Informationen finden Sie unter [OAuth 2.0 Authorization Code Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 Im Allgemeinen müssen Sie die folgenden Schritte ausführen, um diese APIs zu verwenden:
 
-- Erstellen Sie eine Azure Active Directory (Azure AD)-Anwendung.
+- Erstellen Sie Azure Active Directory (Azure AD)-Anwendung.
 - Mit dieser Anwendung können Sie ein Zugriffstoken erhalten.
-- Verwenden Sie das Token, um auf die Microsoft 365 Defender-API zu zugreifen.
+- Verwenden Sie das Token, um auf Microsoft 365 Defender-API zu zugreifen.
 
 In diesem Artikel wird erläutert, wie Sie:
 
@@ -57,7 +57,7 @@ In diesem Artikel wird erläutert, wie Sie:
 - Überprüfen des Tokens
 
 > [!NOTE]
-> Wenn Sie im Auftrag eines Benutzers auf die Microsoft 365 Defender-API zugreifen, benötigen Sie die richtigen Anwendungsberechtigungen und Benutzerberechtigungen.
+> Beim Zugriff auf Microsoft 365 Defender-API im Namen eines Benutzers benötigen Sie die richtigen Anwendungsberechtigungen und Benutzerberechtigungen.
 
 > [!TIP]
 > Wenn Sie über die Berechtigung zum Ausführen einer Aktion im Portal verfügen, haben Sie die Berechtigung, die Aktion in der API durchzuführen.
@@ -66,7 +66,7 @@ In diesem Artikel wird erläutert, wie Sie:
 
 1. Melden Sie sich [bei Azure](https://portal.azure.com) als Benutzer mit der **Rolle "Globaler Administrator"** an.
 
-2. Navigieren Sie zu **Azure Active Directory**  >  **App-Registrierungen** Neue  >  **Registrierung**.
+2. Navigieren Sie zu **Azure Active Directory**  >  **App-Registrierungen**  >  **Neue Registrierung**.
 
    ![Abbildung von Microsoft Azure und Navigation zur Anwendungsregistrierung](../../media/atp-azure-new-app2.png)
 
@@ -77,7 +77,7 @@ In diesem Artikel wird erläutert, wie Sie:
    - **Anwendungstyp:** Öffentlicher Client
    - **Umleitungs-URI:**https://portal.azure.com
 
-4. Wählen Sie auf der Anwendungsseite **API-Berechtigungen** Hinzufügen von Berechtigungs-APIs aus, die meine > verwendet, geben Sie  >    >   Microsoft **Threat Protection** ein, und wählen Sie **Microsoft Threat Protection aus.** Ihre App kann jetzt auf Microsoft 365 Defender zugreifen.
+4. Wählen Sie auf der Anwendungsseite **API-Berechtigungen** Hinzufügen von Berechtigungs-APIs aus, die meine > verwendet, geben Sie  >    >   **Microsoft Threat Protection** ein, und wählen Sie **Microsoft Threat Protection**. Ihre App kann jetzt auf Microsoft 365 zugreifen.
 
    > [!TIP]
    > *Microsoft Threat Protection* ist ein früherer Name für Microsoft 365 Defender und wird nicht in der ursprünglichen Liste angezeigt. Sie müssen damit beginnen, den Namen in das Textfeld zu schreiben, damit er angezeigt wird.
@@ -103,7 +103,7 @@ In diesem Artikel wird erläutert, wie Sie:
 
 ## <a name="get-an-access-token"></a>Abrufen eines Zugriffstokens
 
-Weitere Informationen zu Azure Active Directory-Token finden Sie im [Azure AD-Lernprogramm](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
+Weitere Informationen zu Azure Active Directory Token finden Sie im [Azure AD-Lernprogramm](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds).
 
 ### <a name="get-an-access-token-using-powershell"></a>Zugreifen auf ein Zugriffstoken mithilfe von PowerShell
 
@@ -151,10 +151,10 @@ Das folgende Beispiel zeigt, wie Sie eine Anforderung senden, um eine Liste von 
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Übersicht über Microsoft 365 Defender-APIs](api-overview.md)
+- [Microsoft 365 Übersicht über Defender-APIs](api-overview.md)
 - [Zugreifen auf die Microsoft 365 Defender-APIs](api-access.md)
 - [Erstellen einer "Hello world"-App](api-hello-world.md)
-- [Erstellen einer App für den Zugriff auf Microsoft 365 Defender ohne Benutzer](api-create-app-web.md)
+- [Erstellen einer App für den Zugriff Microsoft 365 Defender ohne Benutzer](api-create-app-web.md)
 - [Erstellen einer App mit Mehr-Mandanten-Partnerzugriff auf Microsoft 365 Defender-APIs](api-partner-access.md)
 - [Informationen zu API-Beschränkungen und -Lizenzierung](api-terms.md)
 - [Verstehen von Fehlercodes](api-error-codes.md)

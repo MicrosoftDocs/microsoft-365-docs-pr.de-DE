@@ -42,13 +42,13 @@ Sie können Indikatoren für Zertifikate erstellen. Einige häufige Verwendungsf
 - Blockieren der Verwendung einer bestimmten signierten Anwendung in Ihrer Organisation. Durch das Erstellen eines Indikators zum Blockieren des Zertifikats der Anwendung verhindert Windows Defender AV Dateiausführungen (Blockieren und Bereinigung), und die automatische Untersuchung und Korrektur verhält sich gleich.
 
 
-### <a name="before-you-begin"></a>Vorbereitung
+### <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Es ist wichtig, die folgenden Anforderungen zu verstehen, bevor Sie Indikatoren für Zertifikate erstellen:
 
-- Dieses Feature ist verfügbar, wenn Ihre Organisation Windows Defender Antivirus und cloudbasierter Schutz aktiviert ist. Weitere Informationen finden Sie unter [Manage cloud-based protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
+- Dieses Feature ist verfügbar, wenn Ihre Organisation Windows Defender Antivirus und der cloudbasierte Schutz aktiviert ist. Weitere Informationen finden Sie unter [Manage cloud-based protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus).
 - Die Antischalwareclientversion muss 4.18.1901.x oder höher sein.
-- Unterstützt auf Computern unter Windows 10, Version 1703 oder höher, Windows Server 2016 und 2019.
+- Unterstützt auf Computern auf Windows 10 Version 1703 oder höher, Windows Server 2016 und 2019.
 - Die Viren- und Bedrohungsschutzdefinitionen müssen auf dem neuesten Stand sein.
 - Dieses Feature unterstützt derzeit die Eingabe von . CER oder . PEM-Dateierweiterungen.
 
@@ -62,7 +62,7 @@ Es ist wichtig, die folgenden Anforderungen zu verstehen, bevor Sie Indikatoren 
 >[!IMPORTANT]
 > Es kann bis zu 3 Stunden dauern, bis ein Zertifikat ioC erstellt und entfernt wird.
 
-1. Wählen Sie im Navigationsbereich **Einstellungsindikatoren**  >  **aus.**  
+1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Indikatoren aus.**  
 
 2. Wählen Sie die **Registerkarte Zertifikat** aus.
 
@@ -76,7 +76,7 @@ Es ist wichtig, die folgenden Anforderungen zu verstehen, bevor Sie Indikatoren 
 5. Überprüfen Sie die Details auf der Registerkarte Zusammenfassung, und klicken Sie dann auf **Speichern**.
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Erstellen von Indikatoren](manage-indicators.md)
+- [Indikatoren erstellen](manage-indicators.md)
 - [Erstellen von Indikatoren für Dateien](indicator-file.md)
 - [Erstellen von Indikatoren für IPs und URLs/Domänen](indicator-ip-domain.md)
-- [Verwalten von Indikatoren](indicator-manage.md)
+- [Indikatoren verwalten](indicator-manage.md)

@@ -63,7 +63,7 @@ In der folgenden Tabelle sind die unterstützten Endpunkte und das entsprechende
 | Endpunkt     | Bereitstellungstool                       |
 |--------------|------------------------------------------|
 | **Windows**  |  [Lokales Skript (bis zu 10 Geräte)](configure-endpoints-script.md) <br>  [Gruppenrichtlinie](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI-Skripts](configure-endpoints-vdi.md)   |
-| **macOS**    | [Lokales Skript](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Verwaltung mobiler Geräte - Mobile Device Management](mac-install-with-other-mdm.md) |
+| **macOS**    | [Lokales Skript](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF-Pro](mac-install-with-jamf.md) <br> [Verwaltung mobiler Geräte - Mobile Device Management](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Lokales Skript](linux-install-manually.md) <br> [100](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [App-basiert](ios-install.md)                                |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
@@ -74,8 +74,8 @@ In der folgenden Tabelle sind die unterstützten Endpunkte und das entsprechende
 Konfigurieren Sie nach dem Onboarding von Endpunkten die Sicherheitsfunktionen in Defender for Endpoint, damit Sie den robusten Sicherheitsschutz maximieren können, der in der Suite verfügbar ist. Zu den Funktionen gehören:
 
 - Erkennung und Reaktion am Endpunkt
-- Schutz der nächsten Generation
-- Angriffsfläche verringern
+- Schutzlösungen der nächsten Generation
+- Verringerung der Angriffsfläche
 
 
   

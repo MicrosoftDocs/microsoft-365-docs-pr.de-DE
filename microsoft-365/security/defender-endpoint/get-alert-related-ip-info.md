@@ -1,5 +1,5 @@
 ---
-title: Informationen zu Benachrichtigungs-IPs
+title: Erhalten von Informationen zu Benachrichtigungen zu IPs
 description: Rufen Sie alle IPs im Zusammenhang mit einer bestimmten Warnung mithilfe von Microsoft Defender for Endpoint ab.
 keywords: apis, graph api, supported apis, get alert information, alert information, related ip
 search.product: eADQiWindows 10XVcnh

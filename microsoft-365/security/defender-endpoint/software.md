@@ -45,9 +45,9 @@ ms.locfileid: "51187198"
 
 Methode |Rückgabetyp |Beschreibung
 :---|:---|:---
-[Auflisten von Software](get-software.md) | Softwaresammlung | Listet das Inventar der Organisationssoftware auf.
-[Software nach Id herunterladen](get-software-by-id.md) | Software | Erhalten Sie eine bestimmte Software nach ihrer Software-ID.
-[Auflisten der Softwareversionsverteilung](get-software-ver-distribution.md)| Verteilungssammlung | Listet die Softwareversionsverteilung nach Software-ID auf.
+[Software auflisten](get-software.md) | Softwaresammlung | Listet das Inventar der Organisationssoftware auf.
+[Software nach ID erhalten](get-software-by-id.md) | Software | Erhalten Sie eine bestimmte Software nach ihrer Software-ID.
+[Softwareversionsverteilung auflisten](get-software-ver-distribution.md)| Verteilungssammlung | Listet die Softwareversionsverteilung nach Software-ID auf.
 [Auflisten von Computern nach Software](get-machines-by-software.md)| MachineRef-Auflistung | Rufen Sie eine Liste der Geräte ab, die der Software-ID zugeordnet sind.
 [Auflisten von Sicherheitsrisiken nach Software](get-vuln-by-software.md) | [Vulnerability-Auflistung](vulnerability.md) | Rufen Sie eine Liste der Sicherheitsrisiken ab, die der Software-ID zugeordnet sind.
 [Fehlende KBs erhalten](get-missing-kbs-software.md) | KB-Auflistung | Erhalten einer Liste fehlender KBs, die der Software-ID zugeordnet sind

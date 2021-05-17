@@ -42,10 +42,10 @@ ms.locfileid: "51187206"
 
 Methode|Rückgabetyp |Beschreibung
 :---|:---|:---
-[Auflisten von Indikatoren](get-ti-indicators-collection.md) | [Indikator](ti-indicator.md) Sammlung | Auflisten von Indikatorentitäten. [](ti-indicator.md)
-[Submit Indicator](post-ti-indicator.md) | [Indikator](ti-indicator.md) | Senden oder Aktualisieren [der Indicator-Entität.](ti-indicator.md)
+[Indikatoren auflisten](get-ti-indicators-collection.md) | [Indikator](ti-indicator.md) Sammlung | Auflisten von Indikatorentitäten. [](ti-indicator.md)
+[Indikator für "Absenden"](post-ti-indicator.md) | [Indikator](ti-indicator.md) | Senden oder Aktualisieren [der Indicator-Entität.](ti-indicator.md)
 [Importindikatoren](import-ti-indicators.md) | [Indikator](ti-indicator.md) Sammlung | Senden oder Aktualisieren von Indicators-Entitäten. [](ti-indicator.md)
-[Löschindikator](delete-ti-indicator-by-id.md) | Kein Inhalt | Löscht die [Indicator-Entität.](ti-indicator.md)
+[Indikator löschen](delete-ti-indicator-by-id.md) | Kein Inhalt | Löscht die [Indicator-Entität.](ti-indicator.md)
 
 
 ## <a name="properties"></a>Eigenschaften

@@ -76,8 +76,8 @@ Obwohl Microsoft Defender for Endpoint viele Funktionen bietet, besteht der Haup
 Funktion | Beschreibung 
 :---|:---
 Erkennung und Reaktion am Endpunkt | Funktionen zur Erkennung und Reaktion von Endpunkten werden zum Erkennen, Untersuchen und Reagieren auf Angriffsversuche und aktive Sicherheitsverletzungen verwendet.
-Schutz der nächsten Generation | Zur weiteren Verstärkung des Sicherheitsperimeters Ihres Netzwerks verwendet Microsoft Defender for Endpoint den Schutz der nächsten Generation, der alle Arten neuer Bedrohungen abfangen soll.
-Angriffsfläche verringern |  Stellen Sie die erste Verteidigungslinie im Stapel zur Verfügung. Indem sie sicherstellen, dass Konfigurationseinstellungen ordnungsgemäß festgelegt sind und Techniken zur Exploitminderung angewendet werden, wehren sich diese Funktionen gegen Angriffe und Nutzung.
+Schutzlösungen der nächsten Generation | Zur weiteren Verstärkung des Sicherheitsperimeters Ihres Netzwerks verwendet Microsoft Defender for Endpoint den Schutz der nächsten Generation, der alle Arten neuer Bedrohungen abfangen soll.
+Verringerung der Angriffsfläche |  Stellen Sie die erste Verteidigungslinie im Stapel zur Verfügung. Indem sie sicherstellen, dass Konfigurationseinstellungen ordnungsgemäß festgelegt sind und Techniken zur Exploitminderung angewendet werden, wehren sich diese Funktionen gegen Angriffe und Nutzung.
 
 Alle diese Funktionen sind für Microsoft Defender for Endpoint-Lizenzinhaber verfügbar. Weitere Informationen finden Sie unter [Lizenzierungsanforderungen](minimum-requirements.md#licensing-requirements).
 
@@ -85,15 +85,15 @@ Alle diese Funktionen sind für Microsoft Defender for Endpoint-Lizenzinhaber ve
 
 ### <a name="in-scope"></a>Im Bereich
 
--   Verwenden von Microsoft Endpoint Manager und Microsoft Endpoint Manager zum Integrieren von Endpunkten in den Dienst und Konfigurieren von Funktionen
+-   Verwenden von Microsoft Endpoint Manager und Microsoft Endpoint Manager, um Endpunkte in den Dienst zu integrieren und Funktionen zu konfigurieren
 
--   Aktivieren von Defender for Endpoint Endpoint Detection and Response (EDR)-Funktionen
+-   Aktivieren von Defender for Endpoint EDR (EDR)
 
 -   Aktivieren von Funktionen der Defender for Endpoint Endpoint Protection Platform (EPP)
 
-    -   Schutz der nächsten Generation
+    -   Schutzlösungen der nächsten Generation
 
-    -   Angriffsfläche verringern
+    -   Verringerung der Angriffsfläche
 
 
 ### <a name="out-of-scope"></a>Nicht inbegriffen

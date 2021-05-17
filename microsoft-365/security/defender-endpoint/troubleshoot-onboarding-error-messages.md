@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51185807"
 ---
-# <a name="troubleshoot-subscription-and-portal-access-issues"></a>Problembehandlung bei Abonnement- und Portalzugriffsproblemen
+# <a name="troubleshoot-subscription-and-portal-access-issues"></a>Problembehandlung bei Abonnement- und Portalzugriffsproblemen.
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,17 +35,17 @@ ms.locfileid: "51185807"
 
 Diese Seite enthält detaillierte Schritte zur Problembehandlung, die beim Einrichten Ihres Microsoft Defender for Endpoint-Diensts auftreten können.
 
-Wenn Sie eine Fehlermeldung erhalten, bietet Microsoft Defender Security Center eine ausführliche Erläuterung dazu, was das Problem ist, und relevante Links werden bereitgestellt.
+Wenn Sie eine Fehlermeldung erhalten, Microsoft Defender Security Center eine ausführliche Erläuterung dazu, was das Problem ist, und relevante Links werden bereitgestellt.
 
 ## <a name="no-subscriptions-found"></a>Keine Abonnements gefunden
 
-Wenn Sie beim Zugriff auf Microsoft  Defender Security Center eine Meldung "Keine Abonnements gefunden" erhalten, bedeutet dies, dass das Azure Active Directory (Azure AD), das zum Anmelden des Benutzers beim Portal verwendet wird, keine Microsoft Defender for Endpoint-Lizenz besitzt.
+Wenn Sie beim Zugriff auf Microsoft Defender Security Center  eine Meldung "Keine Abonnements gefunden" erhalten, bedeutet dies, dass die Azure Active Directory (Azure AD), die zum Anmelden des Benutzers beim Portal verwendet wird, keine Microsoft Defender for Endpoint-Lizenz besitzt.
 
 Mögliche Gründe:
 - Die Lizenzen für Windows E5 und Office E5 sind separate Lizenzen.
 - Die Lizenz wurde erworben, aber nicht für diese Azure AD-Instanz bereitgestellt.
     - Dies kann ein Problem mit der Lizenzbereitstellung sein.
-    - Es könnte sein, dass Sie versehentlich die Lizenz für ein anderes Microsoft Azure AD bereitgestellt haben als die, die für die Authentifizierung im Dienst verwendet wird.
+    - Es kann sein, dass Sie die Lizenz versehentlich für eine andere Microsoft Azure AD als die für die Authentifizierung im Dienst verwendete bereitgestellt haben.
 
 In beiden Fällen sollten Sie sich an den Microsoft-Support unter [General Microsoft Defender for Endpoint Support](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) oder Volume license support [wenden.](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)
 
@@ -53,7 +53,7 @@ In beiden Fällen sollten Sie sich an den Microsoft-Support unter [General Micro
 
 ## <a name="your-subscription-has-expired"></a>Ihr Abonnement ist abgelaufen
 
-Wenn Sie beim Zugriff auf Microsoft  Defender Security Center eine Nachricht erhalten, dass Ihr Abonnement abgelaufen ist, ist Ihr Onlinedienstabonnement abgelaufen. Microsoft Defender for Endpoint-Abonnement hat wie jedes andere Onlinedienstabonnement ein Ablaufdatum. 
+Wenn Sie beim Zugriff auf Microsoft Defender Security Center  erhalten, dass Ihr Abonnement abgelaufen ist, ist Ihr Onlinedienstabonnement abgelaufen. Microsoft Defender for Endpoint-Abonnement hat wie jedes andere Onlinedienstabonnement ein Ablaufdatum. 
 
 Sie können die Lizenz jederzeit verlängern oder erweitern. Wenn Sie nach ablaufendem  Ablaufdatum auf das Portal zugreifen, wird einer Nachricht, die Ihr Abonnement abgelaufen ist, eine Option zum Herunterladen des Geräte-Offboarding-Pakets angezeigt, falls Sie die Lizenz nicht verlängern möchten.
 

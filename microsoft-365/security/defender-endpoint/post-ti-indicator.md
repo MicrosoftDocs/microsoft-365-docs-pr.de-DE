@@ -73,12 +73,12 @@ Stellen Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern zur
 
 Parameter | Typ    | Beschreibung
 :---|:---|:---
-indicatorValue | String | Identität der [Indicator-Entität.](ti-indicator.md) **Erforderlich**
-indicatorType | Enum | Typ des Indikators. Mögliche Werte sind: "FileSha1", "FileSha256", "IpAddress", "DomainName" und "Url". **Erforderlich**
-Aktion | Enum | Die Aktion, die ergriffen wird, wenn der Indikator in der Organisation ermittelt wird. Mögliche Werte sind: "Alert", "AlertAndBlock" und "Allowed". **Erforderlich**
+indicatorValue | String | Identität der [Indicator-Entität.](ti-indicator.md) **Required**
+indicatorType | Enum | Typ des Indikators. Mögliche Werte sind: "FileSha1", "FileSha256", "IpAddress", "DomainName" und "Url". **Required**
+Aktion | Enum | Die Aktion, die ergriffen wird, wenn der Indikator in der Organisation ermittelt wird. Mögliche Werte sind: "Alert", "AlertAndBlock" und "Allowed". **Required**
 Anwendung | String | Die Anwendung, die dem Indikator zugeordnet ist. **Optional**
-title | String | Titel der Warnung des Indikators. **Erforderlich**
-description | String | Beschreibung des Indikators. **Erforderlich**
+title | String | Titel der Warnung des Indikators. **Required**
+description | String | Beschreibung des Indikators. **Required**
 expirationTime | DateTimeOffset | Die Ablaufzeit des Indikators. **Optional**
 Schweregrad | Enum | Der Schweregrad des Indikators. mögliche Werte sind: "Informational", "Low", "Medium" und "High". **Optional**
 recommendedActions | String | Empfohlene Aktionen zur Warnung des TI-Indikators. **Optional**
@@ -115,4 +115,4 @@ POST https://api.securitycenter.microsoft.com/api/indicators
 ```
 
 ## <a name="related-topic"></a>Verwandtes Thema
-- [Verwalten von Indikatoren](manage-indicators.md)
+- [Indikatoren verwalten](manage-indicators.md)

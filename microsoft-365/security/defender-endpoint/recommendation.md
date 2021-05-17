@@ -1,5 +1,5 @@
 ---
-title: Empfehlungsmethoden und -eigenschaften
+title: Methoden und Eigenschaften für Empfehlung
 description: Ruft die letzten Warnungen der obersten Version ab.
 keywords: apis, graph api, supported apis, get, alerts, recent
 search.product: eADQiWindows 10XVcnh
@@ -42,7 +42,7 @@ ms.locfileid: "51198233"
 Methode |Rückgabetyp |Beschreibung
 :---|:---|:---
 [Auflisten aller Empfehlungen](get-all-recommendations.md) | Empfehlungssammlung | Ruft eine Liste aller Sicherheitsempfehlungen ab, die die Organisation betreffen
-[Empfehlung nach Id erhalten](get-recommendation-by-id.md) | Empfehlung | Ruft eine Sicherheitsempfehlung nach ihrer ID ab
+[Empfehlung nach ID erhalten](get-recommendation-by-id.md) | Empfehlung | Ruft eine Sicherheitsempfehlung nach ihrer ID ab
 [Herunterladen von Empfehlungssoftware](get-recommendation-software.md)| [Software](software.md) | Ruft eine Sicherheitsempfehlung im Zusammenhang mit einer bestimmten Software ab
 [Geräte mit Empfehlungsempfehlungen](get-recommendation-machines.md)|MachineRef-Auflistung | Ruft eine Liste der Geräte ab, die der Sicherheitsempfehlung zugeordnet sind
 [Sicherheitsrisiken für Empfehlungsempfehlungen erhalten](get-recommendation-vulnerabilities.md) | [Vulnerability-Auflistung](vulnerability.md) | Ruft eine Liste der Sicherheitsrisiken ab, die der Sicherheitsempfehlung zugeordnet sind
@@ -62,7 +62,7 @@ subCategory | String | Empfehlungsunterkategorie
 severityScore | Gleitkommawert mit doppelter Genauigkeit | Potenzielle Auswirkungen der Konfiguration auf die Microsoft Secure Score for Devices (1-10) der Organisation
 publicExploit | Boolescher Wert | Öffentlicher Exploit ist verfügbar 
 activeAlert | Boolescher Wert | Dieser Empfehlung ist eine aktive Warnung zugeordnet.
-associatedThreats | String-Sammlung | Dieser Empfehlung ist der Bericht zur Bedrohungsanalyse zugeordnet.
+associatedThreats | String collection | Dieser Empfehlung ist der Bericht zur Bedrohungsanalyse zugeordnet.
 remediationType | String | Behebungstyp. Mögliche Werte sind: "ConfigurationChange","Update","Upgrade","Uninstall"
 Status | Enum | Empfehlungsausnahmestatus. Mögliche Werte sind: "Aktiv" und "Ausnahme"
 configScoreImpact | Gleitkommawert mit doppelter Genauigkeit | Auswirkungen von Microsoft Secure Score für Geräte

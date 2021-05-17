@@ -37,15 +37,15 @@ In Themen von "Viva" können Sie ein vorhandenes Thema bearbeiten. Möglicherwei
 ## <a name="requirements"></a>Anforderungen
 
 Zum Bearbeiten eines vorhandenen Themas müssen Sie:
-- Verfügen Sie über eine Lizenz für "Viva Topics".
-- Haben Sie Berechtigungen für [**Die Personen, die Themen erstellen oder bearbeiten können.**](./topic-experiences-user-permissions.md) Knowledge admins can give users this permission in the Viva Topics topic permissions settings. 
+- Über eine Viva Topics-Lizenz verfügen.
+- Verfügen Sie über Berechtigungen [**Wer Können Sie Themen erstellen oder bearbeiten.**](./topic-experiences-user-permissions.md) Wissensadministratoren können Benutzern diese Berechtigung in den Berechtigungseinstellungen von Viva Topics erteilen. 
 
 > [!Note] 
 > Benutzer, die über die Berechtigung zum Verwalten von Themen im Topic Center (Knowledge Manager) verfügen, verfügen bereits über Berechtigungen zum Erstellen und Bearbeiten von Themen.
 
 ## <a name="how-to-edit-a-topic-page"></a>Bearbeiten einer Themenseite
 
-Benutzer, die über die Berechtigung **"Wer** kann Themen erstellen oder bearbeiten" verfügen, können <b></b> ein Thema bearbeiten, indem sie die Themenseite in einer Themen hervorhebung öffnen und dann die Schaltfläche Bearbeiten oben rechts auf der Themenseite auswählen. Die Themenseite kann auch über die Startseite des Themencenters geöffnet werden, auf der Sie alle Themen finden, zu denen Sie eine Verbindung haben.
+Benutzer, die über die Berechtigung **Wer** können Themen erstellen oder bearbeiten, können ein Thema bearbeiten, <b></b> indem sie die Themenseite aus einem Thema hervorheben öffnen und dann die Schaltfläche Bearbeiten oben rechts auf der Themenseite auswählen. Die Themenseite kann auch über die Startseite des Themencenters geöffnet werden, auf der Sie alle Themen finden, zu denen Sie eine Verbindung haben.
 
    ![Schaltfläche "Bearbeiten"](../media/knowledge-management/edit-button.png) </br> 
 
@@ -75,16 +75,16 @@ Wissensmanager können Themen auch direkt auf der Seite Themen verwalten bearbei
 
    ![Anheften einer vorgeschlagenen Personen](../media/knowledge-management/suggested-people.png)</br>
 
-5. Im Abschnitt <b>Angeheftete Dateien</b> und Seiten können Sie eine Datei oder Eine SharePoint-Websiteseite hinzufügen oder anheften, die dem Thema zugeordnet ist.
+5. Im Abschnitt <b>Angeheftete</b> Dateien und Seiten können Sie eine Datei oder SharePoint websiteseite hinzufügen oder anheften, die dem Thema zugeordnet ist.
 
    ![Abschnitt "Angeheftete Dateien und Seiten"](../media/knowledge-management/pinned-files-and-pages.png)</br>
  
-    Um eine neue Datei hinzuzufügen, wählen Sie <b>Hinzufügen</b>aus, wählen Sie die SharePoint-Website aus Ihren Häufigen oder gefolgten Websites aus, und wählen Sie dann die Datei aus der Dokumentbibliothek der Website aus.
+    Wenn Sie eine neue Datei hinzufügen möchten, wählen Sie Hinzufügen <b>aus</b>den Websites SharePoint häufig oder gefolgt aus, und wählen Sie dann die Datei aus der Dokumentbibliothek der Website aus.
 
     Sie können auch die Option <b>Von einem Link verwenden,</b> um eine Datei oder Seite hinzuzufügen, indem Sie die URL angeben. 
 
    > [!Note] 
-   > Dateien und Seiten, die Sie hinzufügen, müssen sich im gleichen Microsoft 365-Mandanten befinden. Wenn Sie einen Link zu einer externen Ressource im Thema hinzufügen möchten, können Sie ihn über das Zeichenbereichsymbol in Schritt 9 hinzufügen.
+   > Dateien und Seiten, die Sie hinzufügen, müssen sich innerhalb desselben mandanten Microsoft 365 befinden. Wenn Sie einen Link zu einer externen Ressource im Thema hinzufügen möchten, können Sie ihn über das Zeichenbereichsymbol in Schritt 9 hinzufügen.
 
 6. Im <b>Abschnitt Vorgeschlagene Dateien und Seiten</b> werden Dateien und Seiten angezeigt, die ai vorschlägt, dem Thema zugeordnet zu werden.
 
@@ -100,7 +100,7 @@ Wissensmanager können Themen auch direkt auf der Seite Themen verwalten bearbei
     
     ![Auswählen einer Website](../media/knowledge-management/sites.png)</br>
 
-8. Der <b>Abschnitt Verwandte Themen</b> zeigt Verbindungen zwischen Themen. Sie können eine Verbindung zu einem <b></b> anderen Thema hinzufügen, indem Sie die Schaltfläche Verbinden mit einem verwandten Thema auswählen und dann den Namen des verwandten Themas eingeben und aus den Suchergebnissen auswählen. 
+8. Der <b>Abschnitt Verwandte Themen</b> zeigt Verbindungen zwischen Themen. Sie können eine Verbindung zu einem anderen Thema hinzufügen, indem Sie <b>das</b> Verbinden zu einer verwandten Themenschaltfläche auswählen und dann den Namen des verwandten Themas eingeben und aus den Suchergebnissen auswählen. 
 
    ![Abschnitt "Verwandte Themen"](../media/knowledge-management/related-topic.png)</br>  
 
@@ -108,7 +108,7 @@ Wissensmanager können Themen auch direkt auf der Seite Themen verwalten bearbei
 
    ![Beschreibung verwandter Themen](../media/knowledge-management/related-topics-update.png)</br> 
 
-   Das verwandte Thema, das Sie hinzugefügt haben, wird als verbundenes Thema angezeigt.
+   Das von Ihnen hinzugefügte verwandte Thema wird als verbundenes Thema angezeigt.
 
    ![Verwandte Themen verbunden](../media/knowledge-management/related-topics-final.png)</br> 
 
@@ -121,7 +121,7 @@ Wissensmanager können Themen auch direkt auf der Seite Themen verwalten bearbei
    ![Bestätigen des Entfernens](../media/knowledge-management/remove-related-confirm.png)</br> 
 
 
-9. Sie können der Seite auch statische Elemente hinzufügen , z. B. Text, Bilder oder Links, indem Sie das Zeichenbereichsymbol auswählen, das Sie unterhalb der kurzen Beschreibung finden. Durch Die Auswahl wird die SharePoint-Toolbox geöffnet, aus der Sie das Element auswählen können, das Sie der Seite hinzufügen möchten.
+9. Sie können der Seite auch statische Elemente hinzufügen , z. B. Text, Bilder oder Links, indem Sie das Zeichenbereichsymbol auswählen, das Sie unterhalb der kurzen Beschreibung finden. Durch Auswahl wird die SharePoint geöffnet, aus der Sie das Element auswählen können, das Sie der Seite hinzufügen möchten.
 
    ![Canvas-Symbol](../media/knowledge-management/webpart-library.png)</br> 
 

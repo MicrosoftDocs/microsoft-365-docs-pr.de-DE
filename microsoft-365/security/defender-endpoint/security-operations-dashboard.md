@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Security Center Security Operations Dashboard
+title: Microsoft Defender Security Center Dashboard für Sicherheitsvorgänge
 description: Verwenden Sie das Dashboard, um gefährdete Geräte zu identifizieren, den Status des Diensts zu verfolgen und Statistiken und Informationen zu Geräten und Warnungen anzuzeigen.
 keywords: Dashboard, Warnungen, neu, in Bearbeitung, aufgelöst, Risiko, Gefährdete Geräte, Infektionen, Berichterstellung, Statistiken, Diagramme, Diagramme, Gesundheit, aktive Schadsoftwareerkennungen, Bedrohungskategorie, Kategorien, Kennwortdiebstahl, Ransomware, Exploit, Bedrohung, niedriger Schweregrad, aktive Schadsoftware
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51064912"
 ---
-# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender Security Center Security Operations Dashboard
+# <a name="microsoft-defender-security-center-security-operations-dashboard"></a>Microsoft Defender Security Center Dashboard für Sicherheitsvorgänge
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -33,7 +33,7 @@ ms.locfileid: "51064912"
 
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-secopsdashboard-abovefoldlink) 
 
-Im **Dashboard für Sicherheitsvorgänge** werden die Erkennungs- und Reaktionsfunktionen für Endpunkte angezeigt. Es bietet einen umfassenden Überblick darüber, wo Erkennungen angezeigt wurden, und hervorhebt, wo Reaktionsaktionen erforderlich sind. 
+Im **Dashboard für Sicherheitsvorgänge** werden EDR funktionen angezeigt. Es bietet einen umfassenden Überblick darüber, wo Erkennungen angezeigt wurden, und hervorhebt, wo Reaktionsaktionen erforderlich sind. 
 
 Das Dashboard zeigt eine Momentaufnahme von:
 

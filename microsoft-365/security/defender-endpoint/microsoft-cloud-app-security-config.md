@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren der Integration von Microsoft Cloud App Security
 ms.reviewer: ''
-description: Erfahren Sie, wie Sie die Einstellungen aktivieren, um die Integration von Microsoft Defender for Endpoint in Microsoft Cloud App Security zu aktivieren.
+description: Erfahren Sie, wie Sie die Einstellungen aktivieren, um die Integration von Microsoft Defender for Endpoint in Microsoft Cloud App Security.
 keywords: Cloud, App, Sicherheit, Einstellungen, Integration, Ermittlung, Bericht
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -24,7 +24,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51187529"
 ---
-# <a name="configure-microsoft-cloud-app-security-in-microsoft-defender-for-endpoint"></a>Konfigurieren von Microsoft Cloud App Security in Microsoft Defender for Endpoint
+# <a name="configure-microsoft-cloud-app-security-in-microsoft-defender-for-endpoint"></a>Konfigurieren Microsoft Cloud App Security in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,17 +35,17 @@ ms.locfileid: "51187529"
 > Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-Um von Microsoft Defender for Endpoint Cloud App Discovery-Signalen zu profitieren, aktivieren Sie die Microsoft Cloud App Security-Integration.
+Um von Microsoft Defender for Endpoint Cloud App Discovery-Signalen zu profitieren, aktivieren Sie Microsoft Cloud App Security Integration.
 
 >[!NOTE]
->Dieses Feature ist mit einer E5-Lizenz für [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) auf Geräten mit Windows 10, Version 1709 (Os Build 16299.1085 mit [KB4493441),](https://support.microsoft.com/help/4493441)Windows 10, verfügbar. Version 1803 (Betriebssystem build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, Version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)) oder höher Windows 10-Versionen.
+>Dieses Feature ist mit einer E5-Lizenz für [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) auf Geräten mit Windows 10, Version 1709 (Os Build 16299.1085 mit [KB4493441](https://support.microsoft.com/help/4493441)), Windows 10, Version 1803 (Betriebssystem build 17134.704 with [KB4493464](https://support.microsoft.com/help/4493464)), Windows 10, Version 1809 (OS Build 17763.379 with [KB4489899](https://support.microsoft.com/help/4489899)) oder höher Windows 10 Versionen.
 
-> Ausführliche Informationen zur Integration von Microsoft Defender for Endpoint [in Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/mde-integration) finden Sie unter Microsoft Defender for Endpoint in Microsoft Cloud App Security. 
+> Unter [Microsoft Defender for Endpoint integration with Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/mde-integration) finden Sie eine detaillierte Integration von Microsoft Defender for Endpoint in Microsoft Cloud App Security. 
 
-## <a name="enable-microsoft-cloud-app-security-in-microsoft-defender-for-endpoint"></a>Aktivieren von Microsoft Cloud App Security in Microsoft Defender for Endpoint
+## <a name="enable-microsoft-cloud-app-security-in-microsoft-defender-for-endpoint"></a>Aktivieren Microsoft Cloud App Security in Microsoft Defender for Endpoint
 
 1. Wählen Sie im Navigationsbereich Einstellungen **einrichten Erweiterte**  >  **Features aus.**
-2. Wählen **Sie Microsoft Cloud App Security aus,** und wechseln Sie zu **Ein**.
+2. Wählen **Microsoft Cloud App Security** aus, und wechseln Sie zum Umschalten auf **Ein**.
 3. Klicken **Sie auf Einstellungen speichern**.
 
 Nach der Aktivierung beginnt Microsoft Defender for Endpoint sofort mit der Weiterleitung von Erkennungssignalen an Cloud App Security.
@@ -57,7 +57,7 @@ Informationen zum Anzeigen und Zugreifen auf Microsoft Defender for Endpoint-Dat
 
 Weitere Informationen zur Clouderkennung finden Sie unter [Arbeiten mit ermittelten Apps](https://docs.microsoft.com/cloud-app-security/discovered-apps).
 
-Wenn Sie Microsoft Cloud App Security ausprobieren möchten, lesen Sie [Microsoft Cloud App Security Trial](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1).
+Wenn Sie versuchen möchten, Microsoft Cloud App Security zu versuchen, lesen Sie [Microsoft Cloud App Security Testversion](https://signup.microsoft.com/Signup?OfferId=757c4c34-d589-46e4-9579-120bba5c92ed&ali=1).
 
 ## <a name="related-topic"></a>Verwandtes Thema
-- [Integration von Microsoft Cloud App Security](microsoft-cloud-app-security-integration.md)
+- [Microsoft Cloud App Security Integration](microsoft-cloud-app-security-integration.md)

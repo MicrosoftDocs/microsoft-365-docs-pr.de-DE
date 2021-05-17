@@ -1,7 +1,7 @@
 ---
 title: Auflisten von Geräten nach Empfehlung
 description: Ruft eine Liste der Geräte ab, die der Sicherheitsempfehlung zugeordnet sind.
-keywords: apis, graph api, supported apis, get, security recommendation for vulnerable devices, threat and vulnerability management, threat and vulnerability management api
+keywords: apis, graph api, supported apis, get, security recommendation for vulnerable devices, Bedrohungs- und Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy

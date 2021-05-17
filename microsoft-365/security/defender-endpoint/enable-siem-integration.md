@@ -33,7 +33,7 @@ ms.locfileid: "51068207"
 
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink) 
 
-Aktivieren Sie die Integration von Sicherheitsinformationen und Ereignisverwaltung (SIEM), damit Sie Erkennungen aus dem Microsoft Defender Security Center ziehen können. Abrufen von Erkennungen mithilfe Ihrer SIEM-Lösung oder durch direkte Verbindung mit der ERKENNUNGS-REST-API.
+Aktivieren Sie die Integration von Sicherheitsinformationen und Ereignisverwaltung (EVENT Management, SIEM), damit Sie Erkennungen aus Microsoft Defender Security Center. Abrufen von Erkennungen mithilfe Ihrer SIEM-Lösung oder durch direkte Verbindung mit der ERKENNUNGS-REST-API.
 
 >[!NOTE]
 >- [Microsoft Defender for Endpoint Alert](alerts.md) besteht aus einer oder mehreren Erkennungen.
@@ -54,18 +54,18 @@ Aktivieren Sie die Integration von Sicherheitsinformationen und Ereignisverwaltu
 ## <a name="enabling-siem-integration"></a>Aktivieren der SIEM-Integration 
 1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **SIEM aus.**
 
-    ![Abbildung der SIEM-Integration aus dem Menü Einstellungen1](images/enable_siem.png)
+    ![Abbildung der SIEM-Integration aus Einstellungen Menü1](images/enable_siem.png)
 
     >[!TIP]
     >Wenn beim Versuch, die SIEM-Connectoranwendung zu aktivieren, ein Fehler auftritt, überprüfen Sie die Popupblockereinstellungen Ihres Browsers. Möglicherweise wird das neue Fenster blockiert, das geöffnet wird, wenn Sie die Funktion aktivieren. 
 
-2. Wählen **Sie SIEM-Integration aktivieren aus.** Dadurch wird der **Abschnitt MITM-Connectorzugriffsdetails** mit vordefinierten Werten aktiviert, und eine Anwendung wird unter Ihrem Azure Active Directory (Azure AD)-Mandanten erstellt.
+2. Wählen **Sie SIEM-Integration aktivieren aus.** Dadurch wird der **Abschnitt MITM-Connectorzugriffsdetails** mit vordefinierten Werten aktiviert, und eine Anwendung wird unter Ihrem Azure Active Directory (Azure AD) erstellt.
 
     > [!WARNING]
     >Der geheime Clientgeheimnis wird nur einmal angezeigt. Stellen Sie sicher, dass Sie eine Kopie davon an einem sicheren Ort behalten.<br>
      
 
-    ![Abbildung der SIEM-Integration aus dem Menü Einstellungen2](images/siem_details.png)
+    ![Abbildung der SIEM-Integration aus Einstellungen Menü2](images/siem_details.png)
 
 3. Wählen Sie den SIEM-Typ aus, den Sie in Ihrer Organisation verwenden.
 
@@ -85,7 +85,7 @@ Aktivieren Sie die Integration von Sicherheitsinformationen und Ereignisverwaltu
 
 6. Befolgen Sie die Anweisungen [zum Erstellen einer Azure AD-App-Registrierung für Microsoft Defender for Endpoint,](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/exposed-apis-create-app-webapp) und weisen Sie ihr die richtigen Berechtigungen zum Lesen von Warnungen zu.
 
-Sie können nun mit der Konfiguration Ihrer SIEM-Lösung fortfahren oder über programmgesteuerten Zugriff eine Verbindung mit der REST-API für Erkennungen herstellen. Sie müssen die Token verwenden, wenn Sie Ihre SIEM-Lösung so konfigurieren, dass sie Erkennungen vom Microsoft Defender Security Center empfangen kann.
+Sie können nun mit der Konfiguration Ihrer SIEM-Lösung fortfahren oder über programmgesteuerten Zugriff eine Verbindung mit der REST-API für Erkennungen herstellen. Sie müssen die Token verwenden, wenn Sie Ihre SIEM-Lösung so konfigurieren, dass sie Erkennungen von Microsoft Defender Security Center.
 
 ## <a name="integrate-microsoft-defender-for-endpoint-with-ibm-qradar"></a>Integrieren von Microsoft Defender for Endpoint in IBM QRadar 
 Sie können IBM QRadar so konfigurieren, dass Erkennungen von Microsoft Defender for Endpoint erfasst werden. Weitere Informationen finden Sie unter [IBM Knowledge Center](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1).
@@ -94,4 +94,4 @@ Sie können IBM QRadar so konfigurieren, dass Erkennungen von Microsoft Defender
 - [Konfigurieren von HP ArcSight zum Ziehen von Microsoft Defender for Endpoint-Erkennungen](configure-arcsight.md)
 - [Microsoft Defender for Endpoint Detection-Felder](api-portal-mapping.md)
 - [Abrufen von Microsoft Defender for Endpoint-Erkennungen mithilfe der REST-API](pull-alerts-using-rest-api.md)
-- [Problembehandlung bei der Integration von SIEM-Tools](troubleshoot-siem.md)
+- [Behandeln von Problemen mit der Integration von SIEM-Tools](troubleshoot-siem.md)

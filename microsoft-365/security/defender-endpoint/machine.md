@@ -44,16 +44,16 @@ Methode|Rückgabetyp |Beschreibung
 :---|:---|:---
 [Auflisten von Computern](get-machines.md) | [Computersammlung](machine.md) | Listet den [Satz von Computerentitäten](machine.md) in der Organisation auf.
 [Computer erhalten](get-machine-by-id.md) | [machine](machine.md) | Einen Computer [nach](machine.md) seiner Identität erhalten.
-[Angemeldete Benutzer erhalten](get-machine-log-on-users.md) | [user](user.md)-Sammlung | Get the set of [User](user.md) that logged on the [machine](machine.md).
+[Angemeldete Benutzer erhalten](get-machine-log-on-users.md) | [Benutzer](user.md)sammlung | Get the set of [User](user.md) that logged on the [machine](machine.md).
 [Erhalten verwandter Warnungen](get-machine-related-alerts.md) | [Warnung](alerts.md) Sammlung | Get the set of [alert](alerts.md) entities that were raised on the [machine](machine.md).
-[Installieren von Software](get-installed-software.md) | [Softwaresammlung](software.md) | Ruft eine Sammlung installierter Software im Zusammenhang mit einer bestimmten Computer-ID ab.
-[Entdecken von Sicherheitsrisiken](get-discovered-vulnerabilities.md) | [Vulnerability-Auflistung](vulnerability.md) | Ruft eine Sammlung von entdeckten Sicherheitsrisiken im Zusammenhang mit einer bestimmten Computer-ID ab.
-[Sicherheitsempfehlungen erhalten](get-security-recommendations.md) | [Empfehlungssammlung](recommendation.md) | Ruft eine Sammlung von Sicherheitsempfehlungen im Zusammenhang mit einer bestimmten Computer-ID ab.
+[Erhalten von installierter Software](get-installed-software.md) | [Softwaresammlung](software.md) | Ruft eine Sammlung installierter Software im Zusammenhang mit einer bestimmten Computer-ID ab.
+[Erhalten von entdeckten Sicherheitsrisiken](get-discovered-vulnerabilities.md) | [Vulnerability-Auflistung](vulnerability.md) | Ruft eine Sammlung von entdeckten Sicherheitsrisiken im Zusammenhang mit einer bestimmten Computer-ID ab.
+[Erhalten von Sicherheitsempfehlungen](get-security-recommendations.md) | [Empfehlungssammlung](recommendation.md) | Ruft eine Sammlung von Sicherheitsempfehlungen im Zusammenhang mit einer bestimmten Computer-ID ab.
 [Hinzufügen oder Entfernen von Computertags](add-or-remove-machine-tags.md) | [machine](machine.md) | Hinzufügen oder Entfernen eines Tags zu einem bestimmten Computer.
 [Suchen von Computern nach IP](find-machines-by-ip.md) | [Computersammlung](machine.md) | Suchen von Computern, die mit IP gesehen werden.
 [Suchen von Computern nach Tag](find-machines-by-tag.md) | [Computersammlung](machine.md) | Suchen von Computern nach [Tag](machine-tags.md).
 [Fehlende KBs erhalten](get-missing-kbs-machine.md) | KB-Auflistung | Erhalten einer Liste fehlender KBs, die der Computer-ID zugeordnet sind
-[Festlegen des Gerätewerts](set-device-value.md)| [Computersammlung](machine.md) | Legen Sie [den Wert eines Geräts .](tvm-assign-device-value.md)
+[Setzen des Gerätewerts](set-device-value.md)| [Computersammlung](machine.md) | Legen Sie [den Wert eines Geräts .](tvm-assign-device-value.md)
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -74,7 +74,7 @@ rbacGroupName | String | Computergruppenname.
 riskScore | Nullable Enum | Risikobewertung, wie von Microsoft Defender for Endpoint ausgewertet. Mögliche Werte sind: "None", "Informational", "Low", "Medium" und "High".
 exposureScore | Nullable Enum | [Belichtungsergebnis,](tvm-exposure-score.md) wie von Microsoft Defender for Endpoint ausgewertet. Mögliche Werte sind: "None", "Low", "Medium" und "High".
 aadDeviceId | Guid für nullierbare Darstellung | AAD-Geräte-ID (wenn [der Computer](machine.md) mit AAD verbunden ist).
-machineTags | String-Sammlung | Satz von [Computertags.](machine.md)
+machineTags | String collection | Satz von [Computertags.](machine.md)
 exposureLevel | Nullable Enum | Die Belichtungsstufe wird von Microsoft Defender for Endpoint ausgewertet. Mögliche Werte sind: "None", "Low", "Medium" und "High".
 deviceValue | Nullable Enum | Der [Wert des Geräts](tvm-assign-device-value.md). Mögliche Werte sind: "Normal", "Niedrig" und "Hoch".
 ipAddresses | IpAddress-Auflistung | Satz von ***IpAddress-Objekten.*** Weitere [Informationen finden Sie unter Abrufen der Computer-API](get-machines.md).

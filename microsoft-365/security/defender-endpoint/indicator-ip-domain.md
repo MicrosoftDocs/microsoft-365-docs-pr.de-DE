@@ -51,14 +51,14 @@ Durch das Erstellen von Indikatoren für IPs und URLs oder Domänen können Sie 
 Es ist wichtig, vor dem Erstellen von Indikatoren für IPS, URLs oder Domänen die folgenden Voraussetzungen zu kennen:
 - URL/IP allow and block basiert darauf, dass die Defender for Endpoint-Komponente Netzwerkschutz im Blockmodus aktiviert wird. Weitere Informationen zu Netzwerkschutz und Konfigurationsanweisungen finden Sie unter [Enable network protection](enable-network-protection.md).
 - Die Antischalware-Clientversion muss 4.18.1906.x oder höher sein. 
-- Unterstützt auf Computern unter Windows 10, Version 1709 oder höher. 
-- Stellen Sie **sicher, dass** benutzerdefinierte Netzwerkindikatoren in **Microsoft Defender Security Center > Einstellungen > Erweiterten Features aktiviert sind.** Weitere Informationen finden Sie unter [Erweiterte Features](advanced-features.md).
+- Unterstützt auf Computern auf Windows 10 Version 1709 oder höher. 
+- Stellen Sie sicher, **dass** benutzerdefinierte Netzwerkindikatoren in erweiterten **Microsoft Defender Security Center > Einstellungen > aktiviert sind.** Weitere Informationen finden Sie unter [Erweiterte Features](advanced-features.md).
 - Informationen zur Unterstützung von Indikatoren unter iOS finden Sie unter [Configure custom indicators](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
 
 
 > [!IMPORTANT]
 > Der Indikatorliste können nur externe IPs hinzugefügt werden. Indikatoren können nicht für interne IPs erstellt werden.
-> Für Webschutzszenarien wird die Verwendung der integrierten Funktionen in Microsoft Edge empfohlen. Microsoft Edge nutzt [Network Protection zum](network-protection.md) Überprüfen des Netzwerkdatenverkehrs und ermöglicht Blöcke für TCP, HTTP und HTTPS (TLS). Wenn richtlinien für in Konflikt konfliktende URL-Indikatoren enthalten sind, wird der längere Pfad angewendet. Beispielsweise hat die Richtlinie zum URL-Indikator `https:\\support.microsoft.com/en-us/office` Vorrang vor der RICHTLINIE für URL-Indikator. `https:\\support.microsoft.com`
+> Für Webschutzszenarien empfehlen wir die Verwendung der integrierten Funktionen in Microsoft Edge. Microsoft Edge verwendet [Network Protection](network-protection.md) zum Überprüfen des Netzwerkdatenverkehrs und ermöglicht Blöcke für TCP, HTTP und HTTPS (TLS). Wenn richtlinien für in Konflikt konfliktende URL-Indikatoren enthalten sind, wird der längere Pfad angewendet. Beispielsweise hat die Richtlinie zum URL-Indikator `https:\\support.microsoft.com/en-us/office` Vorrang vor der RICHTLINIE für URL-Indikator. `https:\\support.microsoft.com`
 
 > [!NOTE]
 > Für alle anderen Prozesse nutzen Webschutzszenarien Network Protection für die Überprüfung und Durchsetzung: 
@@ -73,7 +73,7 @@ Es ist wichtig, vor dem Erstellen von Indikatoren für IPS, URLs oder Domänen d
 
 ### <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>Erstellen eines Indikators für IPs, URLs oder Domänen auf der Einstellungsseite
 
-1. Wählen Sie im Navigationsbereich **Einstellungsindikatoren**  >  **aus.**  
+1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Indikatoren aus.**  
 
 2. Wählen Sie die **Registerkarte IP-Adressen oder URLs/Domänen** aus.
 
@@ -87,7 +87,7 @@ Es ist wichtig, vor dem Erstellen von Indikatoren für IPS, URLs oder Domänen d
 5. Überprüfen Sie die Details auf der Registerkarte Zusammenfassung, und klicken Sie dann auf **Speichern**.
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Erstellen von Indikatoren](manage-indicators.md)
+- [Indikatoren erstellen](manage-indicators.md)
 - [Erstellen von Indikatoren für Dateien](indicator-file.md)
 - [Erstellen von Indikatoren basierend auf Zertifikaten](indicator-certificates.md)
-- [Verwalten von Indikatoren](indicator-manage.md)
+- [Indikatoren verwalten](indicator-manage.md)

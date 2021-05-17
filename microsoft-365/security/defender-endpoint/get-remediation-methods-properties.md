@@ -56,33 +56,33 @@ Erfahren Sie mehr [über Korrekturaktivitäten](tvm-remediation.md).
 Eigenschafts-ID | Datentyp | Beschreibung
 :---|:---|:---
 category | String | Kategorie der Korrekturaktivität (Software-/Sicherheitskonfiguration)
-completerEmail | Zeichenfolge | Wenn die Korrekturaktivität manuell von einer Person abgeschlossen wurde, enthält diese Spalte ihre E-Mails.
-completerId | Zeichenfolge | Wenn die Korrekturaktivität manuell von einer Person abgeschlossen wurde, enthält diese Spalte ihre Objekt-ID.
-completionMethod | Zeichenfolge | Eine Korrekturaktivität kann "automatisch" (wenn alle Geräte gepatcht sind) oder "manuell" von einer Person abgeschlossen werden, die "als abgeschlossen markieren" auswählt.
+completerEmail | String | Wenn die Korrekturaktivität manuell von einer Person abgeschlossen wurde, enthält diese Spalte ihre E-Mails.
+completerId | String | Wenn die Korrekturaktivität manuell von einer Person abgeschlossen wurde, enthält diese Spalte ihre Objekt-ID.
+completionMethod | String | Eine Korrekturaktivität kann "automatisch" (wenn alle Geräte gepatcht sind) oder "manuell" von einer Person abgeschlossen werden, die "als abgeschlossen markieren" auswählt.
 createdOn | DateTime | Zeitpunkt, zu dem diese Korrekturaktivität erstellt wurde
-description | Zeichenfolge | Beschreibung dieser Korrekturaktivität
+description | String | Beschreibung dieser Korrekturaktivität
 dueOn | DateTime | Fälligkeitsdatum, das der Ersteller für diese Korrekturaktivität festgelegt hat
 fixedDevices |  | Die Anzahl der geräte, die behoben wurden
-id | Zeichenfolge | ID dieser Korrekturaktivität
-nameId | Zeichenfolge | Verwandter Produktname
-priority | Zeichenfolge | Priorität, die der Ersteller für diese Korrekturaktivität festgelegt hat (High\Medium\Low)
-productId | Zeichenfolge | Verwandte Produkt-ID
-productivityImpactRemediationType | Zeichenfolge | Einige Konfigurationsänderungen konnten nur für Geräte ohne Benutzerwirkung angefordert werden. Dieser Wert gibt die Auswahl zwischen "allen verfügbar gemachten Geräten" oder "nur Geräten ohne Benutzerwirkung" an.
-rbacGroupNames | Zeichenfolge | Verwandte Gerätegruppennamen
-recommendedProgram | Zeichenfolge | Empfohlenes Programm zum Upgrade auf
-recommendedVendor | Zeichenfolge | Empfohlener Anbieter zum Upgrade auf
-recommendedVersion | Zeichenfolge | Empfohlene Version zum Aktualisieren/Aktualisieren auf
-relatedComponent | Zeichenfolge | Verwandte Komponente dieser Korrekturaktivität (ähnlich der zugehörigen Komponente für eine Sicherheitsempfehlung)
-requesterEmail | Zeichenfolge | E-Mail-Adresse des Erstellers
-requesterId | Zeichenfolge | Creator-Objekt-ID
-requesterNotes | Zeichenfolge | Die Notizen (Freitext), die der Ersteller für diese Korrekturaktivität hinzugefügt hat
-scid | Zeichenfolge | SCID der zugehörigen Sicherheitsempfehlung
-status | Zeichenfolge | Status der Korrekturaktivität (Aktiv/Abgeschlossen)
+id | String | ID dieser Korrekturaktivität
+nameId | String | Verwandter Produktname
+priority | String | Priorität, die der Ersteller für diese Korrekturaktivität festgelegt hat (High\Medium\Low)
+productId | String | Verwandte Produkt-ID
+productivityImpactRemediationType | String | Einige Konfigurationsänderungen konnten nur für Geräte ohne Benutzerwirkung angefordert werden. Dieser Wert gibt die Auswahl zwischen "allen verfügbar gemachten Geräten" oder "nur Geräten ohne Benutzerwirkung" an.
+rbacGroupNames | String | Verwandte Gerätegruppennamen
+recommendedProgram | String | Empfohlenes Programm zum Upgrade auf
+recommendedVendor | String | Empfohlener Anbieter zum Upgrade auf
+recommendedVersion | String | Empfohlene Version zum Aktualisieren/Aktualisieren auf
+relatedComponent | String | Verwandte Komponente dieser Korrekturaktivität (ähnlich der zugehörigen Komponente für eine Sicherheitsempfehlung)
+requesterEmail | String | E-Mail-Adresse des Erstellers
+requesterId | String | Creator-Objekt-ID
+requesterNotes | String | Die Notizen (Freitext), die der Ersteller für diese Korrekturaktivität hinzugefügt hat
+scid | String | SCID der zugehörigen Sicherheitsempfehlung
+status | String | Status der Korrekturaktivität (Aktiv/Abgeschlossen)
 statusLastModifiedOn | DateTime | Datum, an dem das Statusfeld aktualisiert wurde
 targetDevices | Long | Anzahl der verfügbar gemachten Geräte, auf die diese Behebung anwendbar ist
 title | String | Titel dieser Korrekturaktivität
-type | Zeichenfolge | Behebungstyp
-vendorId | Zeichenfolge | Verwandter Herstellername
+type | String | Behebungstyp
+vendorId | String | Verwandter Herstellername
 
 ## <a name="see-also"></a>Siehe auch
 

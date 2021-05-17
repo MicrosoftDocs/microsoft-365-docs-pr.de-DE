@@ -1,7 +1,7 @@
 ---
 title: Auflisten von Sicherheitsrisiken nach Empfehlung
 description: Ruft eine Liste der Sicherheitsrisiken ab, die der Sicherheitsempfehlung zugeordnet sind.
-keywords: apis, graph api, supported apis, get, list of vulnerabilites, security recommendation, security recommendation for vulnerabilites, threat and vulnerability management, threat and vulnerability management api
+keywords: apis, graph api, supported apis, get, list of vulnerabilities, security recommendation, security recommendation for vulnerabilities, Bedrohungs- und Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy

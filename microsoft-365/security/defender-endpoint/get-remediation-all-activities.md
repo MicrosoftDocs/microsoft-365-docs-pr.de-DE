@@ -61,33 +61,33 @@ Delegiert (Geschäfts-, Schul- oder Unikonto) | RemediationTask.Read.Read | \'In
 Property (id) | Datentyp | Beschreibung | Beispiel für einen zurückgegebenen Wert
 :---|:---|:---|:---
 category | String | Kategorie der Korrekturaktivität (Software-/Sicherheitskonfiguration) | Software
-completerEmail | Zeichenfolge | Wenn die Korrekturaktivität manuell von einer Person abgeschlossen wurde, enthält diese Spalte ihre E-Mails. | null
-completerId | Zeichenfolge | Wenn die Korrekturaktivität manuell von einer Person abgeschlossen wurde, enthält diese Spalte ihre Objekt-ID. | null
-completionMethod | Zeichenfolge | Eine Korrekturaktivität kann "automatisch" (wenn alle Geräte gepatcht sind) oder "manuell" von einer Person abgeschlossen werden, die "als abgeschlossen markieren" auswählt. | Automatisch
+completerEmail | String | Wenn die Korrekturaktivität manuell von einer Person abgeschlossen wurde, enthält diese Spalte ihre E-Mails. | null
+completerId | String | Wenn die Korrekturaktivität manuell von einer Person abgeschlossen wurde, enthält diese Spalte ihre Objekt-ID. | null
+completionMethod | String | Eine Korrekturaktivität kann "automatisch" (wenn alle Geräte gepatcht sind) oder "manuell" von einer Person abgeschlossen werden, die "als abgeschlossen markieren" auswählt. | Automatisch
 createdOn | DateTime | Zeitpunkt, zu dem diese Korrekturaktivität erstellt wurde | 2021-01-12T18:54:11.5499478Z
-description | Zeichenfolge | Beschreibung dieser Korrekturaktivität | Aktualisieren Sie Microsoft Silverlight auf eine spätere Version, um bekannte Sicherheitsrisiken für Ihre Geräte zu mindern.
+description | String | Beschreibung dieser Korrekturaktivität | Aktualisieren Sie Microsoft Silverlight auf eine spätere Version, um bekannte Sicherheitsrisiken für Ihre Geräte zu mindern.
 dueOn | DateTime | Fälligkeitsdatum, das der Ersteller für diese Korrekturaktivität festgelegt hat | 2021-01-13T00:00:00Z
 fixedDevices | . | Die Anzahl der geräte, die behoben wurden | 2
-id | Zeichenfolge | ID dieser Korrekturaktivität | 097d9735-5479-4899-b1b7-77398899df92
-nameId | Zeichenfolge | Verwandter Produktname | Microsoft Silverlight
-priority | Zeichenfolge | Priorität, die der Ersteller für diese Korrekturaktivität festgelegt hat (High\Medium\Low) | Hoch
-productId | Zeichenfolge | Verwandte Produkt-ID | microsoft-_-silverlight
-productivityImpactRemediationType | Zeichenfolge | Einige Konfigurationsänderungen konnten nur für Geräte ohne Benutzerwirkung angefordert werden. Dieser Wert gibt die Auswahl zwischen "allen verfügbar gemachten Geräten" oder "nur Geräten ohne Benutzerwirkung" an. | AllExposedAssets
-rbacGroupNames | Zeichenfolge | Verwandte Gerätegruppennamen | [ "Windows Server", "Windows 10" ]
-recommendedProgram | Zeichenfolge | Empfohlenes Programm zum Upgrade auf | null
-recommendedVendor | Zeichenfolge | Empfohlener Anbieter zum Upgrade auf | null
-recommendedVersion | Zeichenfolge | Empfohlene Version zum Aktualisieren/Aktualisieren auf | null
-relatedComponent | Zeichenfolge | Verwandte Komponente dieser Korrekturaktivität (ähnlich der zugehörigen Komponente für eine Sicherheitsempfehlung) | Microsoft Silverlight
-requesterEmail | Zeichenfolge | E-Mail-Adresse des Erstellers | globaladmin@UserName.contoso.com
-requesterId | Zeichenfolge | Creator-Objekt-ID | r647211f-2e16-43f2-a480-16ar3a2a796r
-requesterNotes | Zeichenfolge | Die Notizen (Freitext), die der Ersteller für diese Korrekturaktivität hinzugefügt hat | null
-scid | Zeichenfolge | SCID der zugehörigen Sicherheitsempfehlung | null
-status | Zeichenfolge | Status der Korrekturaktivität (Aktiv/Abgeschlossen) | Aktiv
+id | String | ID dieser Korrekturaktivität | 097d9735-5479-4899-b1b7-77398899df92
+nameId | String | Verwandter Produktname | Microsoft Silverlight
+priority | String | Priorität, die der Ersteller für diese Korrekturaktivität festgelegt hat (High\Medium\Low) | Hoch
+productId | String | Verwandte Produkt-ID | microsoft-_-silverlight
+productivityImpactRemediationType | String | Einige Konfigurationsänderungen konnten nur für Geräte ohne Benutzerwirkung angefordert werden. Dieser Wert gibt die Auswahl zwischen "allen verfügbar gemachten Geräten" oder "nur Geräten ohne Benutzerwirkung" an. | AllExposedAssets
+rbacGroupNames | String | Verwandte Gerätegruppennamen | [ "Windows Server", "Windows 10" ]
+recommendedProgram | String | Empfohlenes Programm zum Upgrade auf | null
+recommendedVendor | String | Empfohlener Anbieter zum Upgrade auf | null
+recommendedVersion | String | Empfohlene Version zum Aktualisieren/Aktualisieren auf | null
+relatedComponent | String | Verwandte Komponente dieser Korrekturaktivität (ähnlich der zugehörigen Komponente für eine Sicherheitsempfehlung) | Microsoft Silverlight
+requesterEmail | String | E-Mail-Adresse des Erstellers | globaladmin@UserName.contoso.com
+requesterId | String | Creator-Objekt-ID | r647211f-2e16-43f2-a480-16ar3a2a796r
+requesterNotes | String | Die Notizen (Freitext), die der Ersteller für diese Korrekturaktivität hinzugefügt hat | null
+scid | String | SCID der zugehörigen Sicherheitsempfehlung | null
+status | String | Status der Korrekturaktivität (Aktiv/Abgeschlossen) | Aktiv
 statusLastModifiedOn | DateTime | Datum, an dem das Statusfeld aktualisiert wurde | 2021-01-12T18:54:11.5499487Z
 targetDevices | Long | Anzahl der verfügbar gemachten Geräte, auf die diese Behebung anwendbar ist | 43
 title | String | Titel dieser Korrekturaktivität | Aktualisieren von Microsoft Silverlight
-type | Zeichenfolge | Behebungstyp | Aktualisieren
-vendorId | Zeichenfolge | Verwandter Herstellername | Microsoft
+type | String | Behebungstyp | Aktualisieren
+vendorId | String | Verwandter Herstellername | Microsoft
 
 ## <a name="example"></a>Beispiel
 

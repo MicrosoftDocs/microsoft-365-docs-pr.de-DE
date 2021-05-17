@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51165249"
 ---
-# <a name="configure-managed-security-service-provider-integration"></a>Konfigurieren der Integration von verwalteten Sicherheitsdienstanbietern
+# <a name="configure-managed-security-service-provider-integration"></a>Konfigurieren von verwalteten Sicherheitsdienstanbietern (Managed Security Service Provider, MSSP)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -44,7 +44,7 @@ Sie müssen die folgenden Konfigurationsschritte ausführen, um die Integration 
 
 Die Integration ermöglicht es MSSPs, die folgenden Aktionen zu ergreifen:
 
-- Zugriff auf das Microsoft Defender Security Center-Portal des MSSP-Kunden
+- Zugriff auf das MsSP-Kundenportal Microsoft Defender Security Center
 - Erhalten von E-Mail-Benachrichtigungen und 
 - Abrufen von Warnungen über SieM-Tools (Security Information and Event Management)
 
@@ -77,6 +77,6 @@ Informationen zum Implementieren eines delegierten Zugriffs mit mehreren Mandant
 ## <a name="related-topics"></a>Verwandte Themen
 - [Gewähren von MSSP-Zugriff auf das Portal](grant-mssp-access.md)
 - [Zugreifen auf das MSSP-Kundenportal](access-mssp-portal.md)
-- [Konfigurieren von Benachrichtigungen](configure-mssp-notifications.md)
-- [Abrufen von Warnungen vom Kunden-Mandanten](fetch-alerts-mssp.md)
+- [Warnungsbenachrichtigungen konfigurieren](configure-mssp-notifications.md)
+- [Abrufen von Benachrichtigungen vom Kunden-Mandanten](fetch-alerts-mssp.md)
 

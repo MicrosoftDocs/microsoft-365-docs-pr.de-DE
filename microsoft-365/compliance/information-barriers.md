@@ -84,7 +84,7 @@ Informationsbarrieren werden jetzt ins Rollen gebracht und sind in Abonnements e
 
 - Microsoft 365 E5/A5
 - Office 365 E5/A5
-- Office 365 Advanced Compliance
+- Office 365 Advanced Compliance
 - Microsoft 365 Compliance E5/A5
 - Microsoft 365 Insider Risk Management
 

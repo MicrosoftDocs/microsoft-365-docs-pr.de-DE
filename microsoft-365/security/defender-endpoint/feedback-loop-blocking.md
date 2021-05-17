@@ -1,5 +1,5 @@
 ---
-title: Blockieren von Feedbackschleifen
+title: Feedback-Loop-Blockierung
 description: Das Blockieren von Feedbackschleifen, auch als schneller Schutz bezeichnet, ist Teil der Funktionen zum Blockieren und Eindähen von Verhaltensweisen in Microsoft Defender for Endpoint
 keywords: Verhaltensblockierung, schneller Schutz, Feedbackblockierung, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
@@ -24,7 +24,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51068575"
 ---
-# <a name="feedback-loop-blocking"></a>Blockieren von Feedbackschleifen
+# <a name="feedback-loop-blocking"></a>Feedback-Loop-Blockierung
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ Das Blockieren von Feedbackschleifen, auch als schneller Schutz bezeichnet, ist 
 
 ## <a name="how-feedback-loop-blocking-works"></a>Funktionsweise der Feedbackschleifensperrung
 
-Wenn ein verdächtiges Verhalten oder eine Datei erkannt wird, z. B. [von Microsoft Defender Antivirus,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)werden Informationen zu diesem Artefakt an mehrere Klassifizierungen gesendet. Das Schnellschutzschleifenmodul prüft und korreliert die Informationen mit anderen Signalen, um eine Entscheidung darüber zu treffen, ob eine Datei blockiert werden soll. Das Überprüfen und Klassifizieren von Artefakten erfolgt schnell. Es führt zu einer schnellen Blockierung bestätigter Schadsoftware und treibt den Schutz im gesamten Ökosystem voran. 
+Wenn ein verdächtiges Verhalten oder eine Datei erkannt wird, z. B. durch [Microsoft Defender Antivirus,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)werden Informationen zu diesem Artefakt an mehrere Klassifizierungen gesendet. Das Schnellschutzschleifenmodul prüft und korreliert die Informationen mit anderen Signalen, um eine Entscheidung darüber zu treffen, ob eine Datei blockiert werden soll. Das Überprüfen und Klassifizieren von Artefakten erfolgt schnell. Es führt zu einer schnellen Blockierung bestätigter Schadsoftware und treibt den Schutz im gesamten Ökosystem voran. 
 
 Mit schnellem Schutz kann ein Angriff auf einem Gerät, auf anderen Geräten in der Organisation und auf Geräten in anderen Organisationen beendet werden, während ein Angriff versucht, seine Fußstapfen zu erweitern.
 
@@ -53,13 +53,13 @@ Wenn Ihre Organisation Defender for Endpoint verwendet, ist das Blockieren von F
 
 - [EDR im Blockmodus](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode)
 
-- [Reduzierung der Angriffsfläche](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
+- [Verringerung der Angriffsfläche](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction):
 
 - [Schutz der nächsten Generation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (Antivirus)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Verhaltensblockierung und -eindämmung](behavioral-blocking-containment.md)
+- [Verhaltensbasiertes Blockieren und Eindämmen](behavioral-blocking-containment.md)
 
 - [(Blog) Verhaltensblockierung und -eindämmung: Transformieren von Optik in Schutz](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection/)
 

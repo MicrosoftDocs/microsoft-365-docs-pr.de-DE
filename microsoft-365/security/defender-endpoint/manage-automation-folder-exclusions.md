@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Ausschlüssen für Automatisierungsordner
+title: Verwalten von automatischen Ordnerausschlüssen
 description: Fügen Sie Automatisierungsordnerausschlüsse hinzu, um die Dateien zu steuern, die von einer automatisierten Untersuchung ausgeschlossen sind.
 keywords: verwalten, automatisieren, ausschließen, blockieren, sauber, bösartig
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51185837"
 ---
-# <a name="manage-automation-folder-exclusions"></a>Verwalten von Ausschlüssen für Automatisierungsordner 
+# <a name="manage-automation-folder-exclusions"></a>Verwalten von automatischen Ordnerausschlüssen 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -59,7 +59,7 @@ Sie können die Dateinamen angeben, die in einem bestimmten Verzeichnis ausgesch
 
 
 ## <a name="add-an-automation-folder-exclusion"></a>Hinzufügen eines Automatisierungsordnerausschlusses
-1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Automatisierungsordnerausschlüsse aus.**  
+1. Wählen Sie im Navigationsbereich die **Option Einstellungen**  >  **Automatisierungsordnerausschlüsse aus.**  
 
 2. Klicken Sie **auf Neuer Ordnerausschluss**.  
 
@@ -77,17 +77,17 @@ Sie können die Dateinamen angeben, die in einem bestimmten Verzeichnis ausgesch
 > Live Response-Befehle zum Sammeln oder Untersuchen ausgeschlossener Dateien führen zu einem Fehler: "Datei ist ausgeschlossen". Darüber hinaus ignorieren automatisierte Untersuchungen die ausgeschlossenen Elemente.
 
 ## <a name="edit-an-automation-folder-exclusion"></a>Bearbeiten eines Automatisierungsordnerausschlusses 
-1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Automatisierungsordnerausschlüsse aus.** 
+1. Wählen Sie im Navigationsbereich die **Option Einstellungen**  >  **Automatisierungsordnerausschlüsse aus.** 
 
 2. Klicken **Sie auf Bearbeiten** für den Ordnerausschluss.  
 
 3. Aktualisieren Sie die Details der Regel, und klicken Sie auf **Speichern**.
 
 ## <a name="remove-an-automation-folder-exclusion"></a>Entfernen eines Automatisierungsordnerausschlusses 
-1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Automatisierungsordnerausschlüsse aus.**  
+1. Wählen Sie im Navigationsbereich die **Option Einstellungen**  >  **Automatisierungsordnerausschlüsse aus.**  
 2. Klicken **Sie auf Ausschluss entfernen**. 
 
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Verwalten von zulässigen/blockierten Automatisierungslisten](manage-indicators.md)
-- [Verwalten von Automatisierungsdateiuploads](manage-automation-file-uploads.md)
+- [Verwalten von automatischen Dateiuploads](manage-automation-file-uploads.md)

@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Verwalten von Gerätetags
+title: Erstellen und Verwalten von Gerätekategorien
 description: Verwenden von Gerätetags zum Gruppieren von Geräten zum Erfassen des Kontexts und Aktivieren der erstellung dynamischer Listen im Rahmen eines Vorfalls
 keywords: Tags, Gerätetags, Gerätegruppen, Gruppen, Korrektur, Ebene, Regeln,Ad-Gruppe, Rolle, Zuweisen, Rang
 search.product: eADQiWindows 10XVcnh
@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51187589"
 ---
-# <a name="create-and-manage-device-tags"></a>Erstellen und Verwalten von Gerätetags
+# <a name="create-and-manage-device-tags"></a>Erstellen und Verwalten von Gerätekategorien
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

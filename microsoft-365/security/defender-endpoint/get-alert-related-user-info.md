@@ -1,5 +1,5 @@
 ---
-title: Benachrichtigungsbezogene Benutzerinformationen erhalten
+title: Erhalten von Informationen zu Benachrichtigungen zu Benutzern
 description: Hier erfahren Sie, wie Sie die API Zum Abrufen von Benachrichtigungsinformationen für Benutzer verwenden, um den Benutzer im Zusammenhang mit einer bestimmten Warnung in Microsoft Defender for Endpoint abzurufen.
 keywords: apis, graph api, supported apis, get, alert, information, related, user
 search.product: eADQiWindows 10XVcnh

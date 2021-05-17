@@ -80,7 +80,7 @@ Stellen Sie im Anforderungstext die IDs der zu aktualisierenden Warnungen und di
 
 Eigenschaft | Typ | Beschreibung
 :---|:---|:---
-alertIds | &lt;Listenzeichenfolge&gt;| Eine Liste der IDs der zu aktualisierenden Warnungen. **Erforderlich**
+alertIds | &lt;Listenzeichenfolge&gt;| Eine Liste der IDs der zu aktualisierenden Warnungen. **Required**
 status | String | Gibt den aktualisierten Status der angegebenen Warnungen an. Die Eigenschaftswerte sind: 'New', 'InProgress' und 'Resolved'.
 assignedTo | String | Besitzer der angegebenen Warnungen
 classification | Zeichenfolge | Gibt die Spezifikation der angegebenen Warnungen an. Die Eigenschaftswerte sind: "Unbekannt", "FalsePositive", "TruePositive". 

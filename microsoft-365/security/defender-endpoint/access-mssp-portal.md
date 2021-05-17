@@ -44,7 +44,7 @@ ms.locfileid: "51164857"
 >[!NOTE] 
 >Diese Schritte richten sich an den MSSP. 
 
-Standardmäßig greifen MSSP-Kunden über die folgende URL auf ihren Microsoft Defender Security Center-Mandanten zu: `https://securitycenter.windows.com` .
+Standardmäßig greifen MSSP-Kunden über die folgende URL auf Microsoft Defender Security Center Mandanten zu: `https://securitycenter.windows.com` .
  
 
 MSSPs müssen jedoch eine mandantenspezifische URL im folgenden Format verwenden: für den Zugriff  `https://securitycenter.windows.com?tid=customer_tenant_id` auf das MSSP-Kundenportal. 
@@ -58,12 +58,12 @@ Verwenden Sie die folgenden Schritte, um die MSSP-Kunden-Mandanten-ID zu erhalte
 
 2. Wechseln Sie zum Mandanten des MSSP-Kunden.
 
-3.  Wählen **Sie Azure Active Directory > Properties aus.** Sie finden die Mandanten-ID im Feld Verzeichnis-ID. 
+3.  Wählen **Azure Active Directory > Eigenschaften aus.** Sie finden die Mandanten-ID im Feld Verzeichnis-ID. 
 
 4. Greifen Sie auf das MSSP-Kundenportal zu, indem Sie den `customer_tenant_id` Wert in der folgenden URL ersetzen: `https://securitycenter.windows.com?tid=customer_tenant_id` .
 
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Gewähren von MSSP-Zugriff auf das Portal](grant-mssp-access.md)
-- [Konfigurieren von Benachrichtigungen](configure-mssp-notifications.md)
-- [Abrufen von Warnungen vom Kunden-Mandanten](fetch-alerts-mssp.md)
+- [Warnungsbenachrichtigungen konfigurieren](configure-mssp-notifications.md)
+- [Abrufen von Benachrichtigungen vom Kunden-Mandanten](fetch-alerts-mssp.md)

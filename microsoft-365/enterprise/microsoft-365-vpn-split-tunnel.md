@@ -33,7 +33,7 @@ ms.locfileid: "52259247"
 >- For information about optimizing Office 365 worldwide tenant performance for users in China, see [Office 365 performance optimization for China users](microsoft-365-networking-china.md).
 -->
 
-Für Kunden, die ihre Remotearbeitsgeräte über VPN mit dem Unternehmensnetzwerk oder der Cloudinfrastruktur verbinden, empfiehlt Microsoft, die wichtigsten **Office 365-Szenarien Microsoft Teams,** **SharePoint Online** und **Exchange Online** über eine _VPN-Konfiguration_ mit geteilten Tunneln zu routen. Dies wird besonders wichtig als erste Strategie, um die Produktivität der Mitarbeiter bei groß angelegten Arbeits-von-zu-Hause-Ereignissen wie der COVID-19-Krise zu verbessern.
+Für Kunden, die ihre Remotearbeitsgeräte über VPN mit dem Unternehmensnetzwerk oder der Cloudinfrastruktur verbinden, empfiehlt Microsoft, dass die wichtigsten Office 365-Szenarien **Microsoft Teams,** **SharePoint Online** und **Exchange Online** über eine _VPN-Geteilte_ Tunnelkonfiguration geroutet werden. Dies wird besonders wichtig als erste Strategie, um die Produktivität der Mitarbeiter bei groß angelegten Arbeits-von-zu-Hause-Ereignissen wie der COVID-19-Krise zu verbessern.
 
 ![Split-Tunnel-VPN – Konfiguration](../media/vpn-split-tunneling/vpn-model-2.png)
 
@@ -51,7 +51,7 @@ Der Kern dieses Ansatzes besteht darin, Unternehmen eine einfache Methode bereit
 
 - Bewahrt die Sicherheitsposition von Kunden-VPN-Implementierungen, indem nicht geändert wird, wie andere Verbindungen umgeleitet werden, einschließlich Datenverkehr zum Internet
 
-  Die empfohlene Konfiguration folgt dem Prinzip der **minimalen Rechte** für Ausnahmen von VPN-Datenverkehr und ermöglicht Kunden, geteilte VPN-Tunnel zu implementieren, ohne die Benutzer oder die Infrastruktur weiteren Sicherheitsrisiken auszusetzen. Netzwerkdatenverkehr, der direkt an Office 365-Endpunkte geleitet wird, wird verschlüsselt, von Office-Clientanwendungsstapeln auf Integrität überprüft und auf IP-Adressen begrenzt, die Office 365-Diensten zugeordnet sind, die sowohl auf Anwendungsebene als auch auf Netzwerkebene verhärtet sind. Weitere Informationen hierzu finden Sie unter [Alternative Möglichkeiten für Sicherheitsexperten und IT-Mitarbeiter, moderne Sicherheitskontrollen in den heutigen einzigartigen Remotearbeitsszenarios zu erreichen (Blog des Microsoft Security Teams)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/).
+  Die empfohlene Konfiguration folgt dem Prinzip der **minimalen Rechte** für Ausnahmen von VPN-Datenverkehr und ermöglicht Kunden, geteilte VPN-Tunnel zu implementieren, ohne die Benutzer oder die Infrastruktur weiteren Sicherheitsrisiken auszusetzen. Netzwerkdatenverkehr, der direkt an Office 365-Endpunkte geleitet wird, wird verschlüsselt, von Office-Clientanwendungsstapeln auf Integrität überprüft und auf IP-Adressen begrenzt, die office 365-Diensten zugeordnet sind, die sowohl auf Anwendungsebene als auch auf Netzwerkebene verhärtet sind. Weitere Informationen hierzu finden Sie unter [Alternative Möglichkeiten für Sicherheitsexperten und IT-Mitarbeiter, moderne Sicherheitskontrollen in den heutigen einzigartigen Remotearbeitsszenarios zu erreichen (Blog des Microsoft Security Teams)](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/).
 
 - Wird von den meisten Unternehmens-VPN-Plattformen einheitlich unterstützt
 
@@ -76,7 +76,7 @@ Wenn Organisationen Daten und Anwendungen in die Cloud verschieben, hat dieses M
 
 Die COVID-19-Krise hat dieses Problem noch verschärft, so dass für die große Mehrheit der Organisationen sofortige Lösungen erforderlich sind. Viele Kunden haben festgestellt, dass das erzwungene VPN-Modell für ein Szenario 100%iger Remotearbeit, wie es diese Krise erforderlich gemacht hat, nicht skalierbar oder performant genug ist. Schnelle Lösungen sind erforderlich, damit diese Organisationen weiterhin effizient arbeiten können.
 
-Für den Office 365-Dienst hat Microsoft die Konnektivitätsanforderungen für den Dienst entworfen, wobei ein fokussierter, streng kontrollierter und relativ statischer Satz von Dienstendpunkten sehr einfach und schnell optimiert werden kann, um benutzern, die auf den Dienst zugreifen, eine hohe Leistung zu bieten und die Belastung der VPN-Infrastruktur zu verringern, sodass sie von Datenverkehr verwendet werden kann, der diesen noch benötigt.
+Für den Office 365-Dienst hat Microsoft die Konnektivitätsanforderungen für den Dienst mit diesem Problem entworfen, wobei ein konzentrierter, streng gesteuerter und relativ statischer Satz von Dienstendpunkten sehr einfach und schnell optimiert werden kann, um benutzern, die auf den Dienst zugreifen, eine hohe Leistung zu bieten und die Belastung der VPN-Infrastruktur zu verringern, sodass sie von Datenverkehr verwendet werden kann, der diesen noch benötigt.
 
 In Office 365 werden die erforderlichen Endpunkte für Office 365 in drei Kategorien kategorisiert: **Optimize**, **Allow** und **Default**. Die **Optimize**-Endpunkte stehen hier im Mittelpunkt und weisen die folgenden Merkmale auf:
 
@@ -92,7 +92,7 @@ Die festgelegten Endpunkte können auf den erzwungenen VPN-Tunnel aufgeteilt wer
 
 Sicherheitselemente wie DLP, AV-Schutz, Authentifizierung und Zugriffssteuerung können für diese Endpunkte auf verschiedenen Ebenen innerhalb des Diensts wesentlich effizienter zugestellt werden. Da wir auch den Großteil des Datenverkehrsvolumens von der VPN-Lösung umlenken, wird dadurch die VPN-Kapazität für geschäftskritischen Datenverkehr, der noch darauf angewiesen ist, frei. Außerdem dürfte es in vielen Fällen nicht mehr notwendig sein, ein langwieriges und kostspieliges Aktualisierungsprogramm zu durchlaufen, um diese neue Arbeitsweise handhaben zu können.
 
-![Geteilte Tunnel-VPN-Konfigurationsdetails](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![Konfigurationsdetails für geteilte Tunnel-VPN](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _Abbildung 3: eine geteilte VPN-Tunnellösung mit definierten Office 365-Ausnahmen, die direkt an den Dienst gesendet werden. Aller anderer Datenverkehr wird unabhängig vom Ziel zurück in das Unternehmensnetzwerk gezwungen._
 

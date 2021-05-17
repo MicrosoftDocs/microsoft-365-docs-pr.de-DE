@@ -49,7 +49,7 @@ Nachverfolgen von Informationen und Organisieren der Arbeit mit Microsoft Lists.
 Formatieren Sie eine Spalte, um die Details in der Spalte zu markieren:
 
 1. Wählen Sie die Spaltenüberschrift aus, wählen Sie die von Ihnen ausgewählte Option aus, z. B. eine Hintergrundfarbe oder abgerundete Ecken.
-1. Wählen **Sie Speichern** aus, um die Änderungen anzuwenden.
+1. Klicken Sie auf **Speichern**, um die Änderungen zu übernehmen.
 
 ### <a name="add-rules-to-alert-coworkers-about-list-updates"></a>Hinzufügen von Regeln zum Warnen von Kollegen über Listenupdates
 

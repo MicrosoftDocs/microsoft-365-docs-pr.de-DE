@@ -1,7 +1,7 @@
 ---
 title: Hilfreiche Microsoft Defender for Endpoint-Ressourcen
 description: Zugreifen auf hilfreiche Ressourcen wie Links zu Blogs und andere Ressourcen im Zusammenhang mit Microsoft Defender for Endpoint
-keywords: Microsoft Defender Security Center, Produktbeschreibung, Kurz, Funktionen, Lizenzierung
+keywords: Microsoft Defender Security Center, Product Brief, Brief, Funktionen, Lizenzierung
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -61,4 +61,4 @@ Greifen Sie auf hilfreiche Ressourcen wie Links zu Blogs und andere Ressourcen i
 
 - [Nutzen von Automatisierung für Ihre Sicherheitsteams](https://techcommunity.microsoft.com/t5/Microsoft-Defender-ATP/How-automation-brings-value-to-your-security-teams/ba-p/729297)
 
-- [Adress false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md)
+- [Adressiert falsch positive/negative Ergebnisse in Microsoft Defender für Endpunkt](defender-endpoint-false-positives-negatives.md)

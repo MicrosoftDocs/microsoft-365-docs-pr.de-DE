@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Berichte im Admin Center – Yammer Aktivitätsbericht
+title: Microsoft 365-Berichte im Admin Center – Yammer Aktivitätsbericht
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -27,12 +27,12 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/06/2021
 ms.locfileid: "52244068"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365 Berichte im Admin Center – Yammer Aktivitätsbericht
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Microsoft 365-Berichte im Admin Center – Yammer Aktivitätsbericht
 
 Das Dashboard **Berichte** zeigt Ihnen als Microsoft 365-Administrator Ihre Daten im Hinblick auf die Nutzung der Produkte innerhalb Ihrer Organisation an. Schauen Sie sich [Aktivitätsberichte im Admin Center](activity-reports.md) an. Mit dem **Yammer-Aktivitätsbericht** können Sie den Grad des Engagements Ihrer Organisation mit Yammer erkennen. Dazu schauen Sie sich die Anzahl eindeutiger Benutzer, die über Yammer eine Nachricht posten, lesen oder mit "Gefällt mir" bewerten, und den Umfang der Aktivitäten an, die organisationsweit generiert wurden. 
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, globaler Leser oder Berichtleser in Microsoft 365 oder ein Exchange-, SharePoint-, Teams-Dienst-, Teams-Kommunikations- oder Skype for Business-Administrator sein, um Berichte anzeigen zu können.  
+> Sie müssen ein globaler Administrator, globaler Leser oder Berichtleser in Microsoft 365 oder ein Exchange-, SharePoint-, Teams-Dienst-, Teams Communications- oder Skype for Business-Administrator sein, um Berichte anzeigen zu können.  
  
 ## <a name="how-do-i-get-to-the-yammer-activity-report"></a>Wie kann ich zum Aktivitätsbericht Yammer werden?
 
@@ -42,7 +42,7 @@ Das Dashboard **Berichte** zeigt Ihnen als Microsoft 365-Administrator Ihre Date
   
 ## <a name="interpret-the-yammer-activity-report"></a>Interpretieren des Yammer-Aktivitätsberichts
 
-Sie können die Aktivitäten im Yammer anzeigen, indem Sie die Registerkarte **Aktivität** auswählen.<br/>![Microsoft 365 - Microsoft Yammer Aktivitätsbericht.](../../media/9b251183-c2b3-430c-ab2d-58bf11e7e3ae.png)
+Sie können die Aktivitäten im Bericht Yammer anzeigen, indem Sie die Registerkarte **Aktivität** auswählen.<br/>![Microsoft 365-Berichte – Microsoft Yammer Aktivitätsbericht.](../../media/9b251183-c2b3-430c-ab2d-58bf11e7e3ae.png)
 
 Wählen **Sie Spalten auswählen** aus, um Spalten aus dem Bericht hinzuzufügen oder zu entfernen.  <br/> ![Yammer Aktivitätsbericht – Spalten auswählen](../../media/7ef6351d-f7e9-4504-913d-2c2df9062bf6.png)
 
@@ -51,7 +51,7 @@ Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren
 |Element|Beschreibung|
 |:-----|:-----|
 |**Metrik**|**Definition**|
-|Benutzername  <br/> |Die E-Mail-Adresse des Benutzers. Sie können die eigentliche E-Mail-Adresse anzeigen oder dieses Feld anonymisieren. Dieses Raster zeigt Benutzer an, die sich Yammer mit dem Microsoft 365 angemeldet haben oder die sich über einmaliges Anmelden am Netzwerk angemeldet haben. <br/> |
+|Benutzername  <br/> |Die E-Mail-Adresse des Benutzers. Sie können die eigentliche E-Mail-Adresse anzeigen oder dieses Feld anonymisieren. Dieses Raster zeigt Benutzer, die sich mit Yammer Microsoft 365-Konto angemeldet haben oder sich über einmaliges Anmelden am Netzwerk angemeldet haben. <br/> |
 |Anzeigename  <br/> |Der vollständige Name des Benutzers. Sie können die eigentliche E-Mail-Adresse anzeigen oder dieses Feld anonymisieren.  <br/> |
 |Benutzerstatus  <br/> |Einer von drei Werten: Aktiviert, Gelöscht oder Angehalten. Diese Berichte zeigen Daten für aktive, angehaltene und gelöschte Benutzer. Sie zeigen keine ausstehenden Benutzer, weil ausstehende Benutzer nicht posten, lesen oder eine Nachricht mit "Gefällt mir" bewerten können.  <br/> |
 |Statusänderungsdatum (UTC)  <br/> |Das Datum, an dem der Status des Benutzers in der Yammer.  <br/> |

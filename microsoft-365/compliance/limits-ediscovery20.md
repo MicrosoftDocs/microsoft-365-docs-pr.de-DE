@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die Grenzwerte für Haltewerte aufgeführt, die ei
 
 | Beschreibung der Beschränkung | Grenzwert |
 |:-----|:-----|
-|Maximale Anzahl von Postfächern in einem einzelnen Fall. Dieser Grenzwert umfasst die gesamtzahl der Benutzerpostfächer und die Postfächer, die Microsoft 365 Gruppen, Microsoft Teams und Yammer zugeordnet sind. <br/> |1,000  <br/> |
+|Maximale Anzahl von Postfächern in einem einzelnen Fall. Dieser Grenzwert umfasst die gesamtzahl der Benutzerpostfächer und die Postfächer, die Microsoft 365 Gruppen, Microsoft Teams und Yammer zugeordnet sind. <br/> |1.000  <br/> |
 |Maximale Anzahl von Websites in einem einzigen Fall. Dieser Grenzwert umfasst die gesamtzahl der OneDrive for Business Websites, SharePoint Websites und die Websites, die Microsoft 365-, Microsoft Teams- und Yammer-Gruppen zugeordnet sind.  <br/> |100  <br/> |
 
 ## <a name="indexing-limits"></a>Indizierungsgrenzwerte
@@ -74,14 +74,14 @@ Die in diesem Abschnitt beschriebenen Grenzwerte stehen im  Zusammenhang mit der
 |:-----|:-----|
 |Maximale Anzahl von Postfächern oder Websites, die in einer einzigen Suche durchsucht werden können. |Keine Begrenzung|
 |Maximale Anzahl von Suchen, die gleichzeitig ausgeführt werden können. |Keine Begrenzung |
-|Maximale Anzahl von Suchen, die ein einzelner Benutzer gleichzeitig starten kann. |10   | 
+|Maximale Anzahl von Suchen, die ein einzelner Benutzer gleichzeitig starten kann. |10 | 
 |Maximale Anzahl von Zeichen für eine Suchabfrage (einschließlich Operatoren und Bedingungen). |10.000 &nbsp; <sup>2</sup>|
-|Maximale Anzahl von Zeichen für eine Suchabfrage für SharePoint und OneDrive for Business Websites (einschließlich Operatoren und Bedingungen). |10,000<br>4.000 mit &nbsp; <sup>Platzhaltern 2</sup>|
+|Maximale Anzahl von Zeichen für eine Suchabfrage für SharePoint und OneDrive for Business Websites (einschließlich Operatoren und Bedingungen). |10.000<br>4.000 mit &nbsp; <sup>Platzhaltern 2</sup>|
 |Mindestanzahl von Alphazeichen für Präfix-Platzhalter; beispiel: **ein \* *_* oder \* _ set**.|3 |  
 |Maximale Anzahl von Varianten, die zurückgegeben werden, wenn ein Präfix-Platzhalter verwendet wird, um nach einem exakten Ausdruck zu suchen, oder wenn ein Präfix-Platzhalter und der **NEAR** Boolean-Operator verwendet werden. |10.000 &nbsp; <sup>3</sup>|
 |Maximale Anzahl von Elementen pro Benutzerpostfach, die auf der Vorschauseite für Suchen angezeigt werden. Die neuesten Elemente werden angezeigt. |100|
-|Maximale Anzahl von Elementen aus allen Postfächern, die auf der Vorschauseite für Suchen angezeigt werden.|1,000|
-|Maximale Anzahl von Postfächern, die für Suchergebnisse in der Vorschau angezeigt werden können.  Wenn mehr als 1.000 Postfächer vorhanden sind, die Elemente enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die 1.000 postfächer mit den meisten Ergebnissen für die Vorschau zur Verfügung.|1,000|
+|Maximale Anzahl von Elementen aus allen Postfächern, die auf der Vorschauseite für Suchen angezeigt werden.|1.000|
+|Maximale Anzahl von Postfächern, die für Suchergebnisse in der Vorschau angezeigt werden können.  Wenn mehr als 1.000 Postfächer vorhanden sind, die Elemente enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die 1.000 postfächer mit den meisten Ergebnissen für die Vorschau zur Verfügung.|1.000|
 |Maximale Anzahl von Elementen aus SharePoint und OneDrive for Business, die auf der Vorschauseite für Suchen angezeigt werden. Die neuesten Elemente werden angezeigt. |200|
 |Maximale Anzahl SharePoint und OneDrive for Business Websites, die für Suchergebnisse in der Vorschau angezeigt werden können. Wenn mehr als 200 Websites Elemente enthalten, die mit der Suchabfrage übereinstimmen, stehen nur die 200 häufigsten Websites mit den meisten Ergebnissen für die Vorschau zur Verfügung.|200|
 |Maximale Anzahl von Elementen pro Postfach für öffentliche Ordner, die auf der Vorschauseite für Suchen angezeigt werden. |100|

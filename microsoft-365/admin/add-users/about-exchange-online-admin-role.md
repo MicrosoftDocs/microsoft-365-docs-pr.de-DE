@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: 'Exchange-Onlineadministratoren verwalten die E-Mails und Postfächer Ihrer Organisation. Beispielsweise stellen sie gelöschte Elemente im Postfach eines Benutzers wiederher. '
+description: 'Exchange Onlineadministratoren verwalten die E-Mails und Postfächer Ihrer Organisation. Beispielsweise stellen sie gelöschte Elemente im Postfach eines Benutzers wiederher. '
 ms.openlocfilehash: 4dc1f435571650ae4a805198782c3c24a92024fb
 ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
@@ -30,9 +30,9 @@ ms.locfileid: "51197649"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Informationen zur Exchange Online-Administratorrolle
 
-Um Ihnen bei der Verwaltung von [](assign-admin-roles.md) Microsoft 365 zu helfen, können Sie Benutzern Berechtigungen zum Verwalten der E-Mails und Postfächer Ihrer Organisation über das [Exchange Admin Center zuweisen.](/exchange/exchange-admin-center) Weisen Sie sie dazu der Exchange-Administratorrolle zu.
+Zur Unterstützung der Verwaltung Microsoft 365 Können [](assign-admin-roles.md) Sie Benutzern Berechtigungen zum Verwalten der E-Mails und Postfächer Ihrer Organisation über das [Exchange zuweisen.](/exchange/exchange-admin-center) Weisen Sie sie dazu der Exchange-Administratorrolle zu.
   
- **Tipp:** Wenn Sie der Exchange-Administratorrolle eine Person zuweisen, weisen Sie sie auch der Dienstadministratorrolle zu. Auf diese Weise können wichtige Informationen im Microsoft 365 Admin Center angezeigt werden, z. B. die Integrität des Exchange Online-Diensts und Änderungs- und Veröffentlichungsbenachrichtigungen.
+ **Tipp:** Wenn Sie der Administratorrolle Exchange zuweisen, weisen Sie sie auch der Administratorrolle Dienst zu. Auf diese Weise können sie wichtige Informationen im Microsoft 365 Admin Center anzeigen, z. B. die Integrität des Exchange Online-Diensts und Änderungs- und Veröffentlichungsbenachrichtigungen.
   
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
@@ -66,4 +66,4 @@ In einer großen Organisation kann der Exchange-Administrator Benutzer zu Exchan
 
 - [Informationen zur Skype for Business-Administratorrolle](/skypeforbusiness/skype-for-business-online)
 
-- [Verwenden der Microsoft Teams-Administratorrolle](/MicrosoftTeams/using-admin-roles)
+- [Verwenden Microsoft Teams Administratorrolle](/MicrosoftTeams/using-admin-roles)
