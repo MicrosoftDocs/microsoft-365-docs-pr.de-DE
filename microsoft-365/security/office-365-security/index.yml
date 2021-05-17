@@ -1,5 +1,5 @@
 ### YamlMime:Landing
-title: Microsoft Defender for Office 365-Dokumentation
+title: Microsoft Defender für Office 365 Dokumentation
 summary: Erfahren Sie mehr über die robusten Sicherheitslösungen in Defender for Office 365, um Ihre E-Mail- und Zusammenarbeitstools besser zu schützen.
 metadata:
   title: Microsoft Defender for Office 365-Sicherheitsdokumentation
@@ -20,7 +20,7 @@ metadata:
   ms.lasthandoff: 04/14/2021
   ms.locfileid: "51760260"
 landingContent:
-- title: Defender for Office 365 & Exchange Online Protection
+- title: Defender für Office 365 & Exchange Online Protection
   linkLists:
   - linkListType: overview
     links:
@@ -36,7 +36,7 @@ landingContent:
       url: protect-against-threats.md
     - text: Vordefinierte Sicherheitsrichtlinien in EOP und Microsoft Defender für Office 365
       url: preset-security-policies.md
-    - text: Neues in Microsoft Defender für Office 365
+    - text: Neues in Microsoft Defender for Office 365
       url: whats-new-in-defender-for-office-365.md
 - title: Defender für Office 365 bewerten
   linkLists:
@@ -62,7 +62,7 @@ landingContent:
     links:
     - text: Exchange Online Protection im Überblick
       url: exchange-online-protection-overview.md
-    - text: Empfohlene Einstellungen für EOP und Microsoft Defender für Office 365-Sicherheit für die Einrichtung
+    - text: Empfohlene Einstellungen für EOP und Microsoft Defender für Office 365 für die Einrichtung
       url: recommended-settings-for-eop-and-office365.md
 - title: Verhindern
   linkLists:
@@ -78,7 +78,7 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Regeln für den Nachrichtenfluss (Transportregeln) in EOP als eigenständige Lösung
+    - text: Nachrichtenflussregeln (Transportregeln) in EOP als eigenständige Lösung
       url: mail-flow-rules-transport-rules-0.md
     - text: Nachverfolgungslisten für Bedrohungen
       url: threat-trackers.md
@@ -90,11 +90,11 @@ landingContent:
     links:
     - text: Ansichten im Bedrohungs-Explorer und Echtzeiterkennungen
       url: threat-explorer-views.md
-    - text: Kampagnenansichten in Microsoft Defender für Office 365
+    - text: Kampagnenansichten in Microsoft Defender for Office 365
       url: campaigns.md
-    - text: Untersuchen schädlicher E-Mails, die in Office 365 zugestellt wurden
+    - text: Untersuchen bösartiger E-Mails, die in einem Office 365
       url: investigate-malicious-email-that-was-delivered.md
-    - text: Anzeigen von Defender for Office 365-Berichten
+    - text: Anzeigen von Defender für Office 365 Berichte
       url: view-reports-for-mdo.md
 - title: Untersuchen in EOP
   linkLists:
@@ -108,11 +108,11 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Behebung bösartiger E-Mails, die in Office 365 zugestellt wurden
+    - text: Behebung bösartiger E-Mails, die in Office 365
       url: remediate-malicious-email-delivered-office-365.md
     - text: Reagieren auf ein gefährdetes E-Mail-Konto
       url: responding-to-a-compromised-email-account.md
-    - text: Behebung von Outlook-Regeln und Benutzerdefinierten Formularinjektionsangriffen
+    - text: Behebung von Outlook und Benutzerdefinierten Formularinjektionsangriffen
       url: detect-and-remediate-outlook-rules-forms-attack.md
     - text: Senden falsch positiver/falscher Negativer Werte
       url: admin-submission.md

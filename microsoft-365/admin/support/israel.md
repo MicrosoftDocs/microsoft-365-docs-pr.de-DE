@@ -19,22 +19,22 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296035"
 ---
-# <a name="contact-support-for-israel"></a><span data-ttu-id="c9b91-103">Kontaktieren des Support für Israel</span><span class="sxs-lookup"><span data-stu-id="c9b91-103">Contact support for Israel</span></span>
+# <a name="contact-support-for-israel"></a><span data-ttu-id="90120-103">Kontaktieren des Support für Israel</span><span class="sxs-lookup"><span data-stu-id="90120-103">Contact support for Israel</span></span>
 
-<span data-ttu-id="c9b91-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="c9b91-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="90120-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="90120-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="c9b91-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="c9b91-105">Phone number</span></span>
-<span data-ttu-id="c9b91-106">1 809 344 179</span><span class="sxs-lookup"><span data-stu-id="c9b91-106">1 809 344 179</span></span>
+## <a name="phone-number"></a><span data-ttu-id="90120-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="90120-105">Phone number</span></span>
+<span data-ttu-id="90120-106">1 809 344 179</span><span class="sxs-lookup"><span data-stu-id="90120-106">1 809 344 179</span></span>
 
-## <a name="hours"></a><span data-ttu-id="c9b91-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="c9b91-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="c9b91-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="c9b91-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="90120-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="90120-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="90120-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="90120-108">Billing Support:</span></span>
 
-<span data-ttu-id="c9b91-109">Hebräisch: Sun-Thu 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="c9b91-109">Hebrew: Sun-Thu 9 AM-6 PM</span></span>
+<span data-ttu-id="90120-109">Hebräisch: Sun-Thu 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="90120-109">Hebrew: Sun-Thu 9 AM-6 PM</span></span>
 
-<span data-ttu-id="c9b91-110">Englisch: Mon-Fri 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="c9b91-110">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="90120-110">Englisch: Mon-Fri 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="90120-110">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="c9b91-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="c9b91-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="90120-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="90120-111">Technical Support:</span></span>
 
-<span data-ttu-id="c9b91-112">Hebräisch: Sun-Thu 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="c9b91-112">Hebrew: Sun-Thu 9 AM-6 PM</span></span>
+<span data-ttu-id="90120-112">Hebräisch: Sun-Thu 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="90120-112">Hebrew: Sun-Thu 9 AM-6 PM</span></span>
 
-<span data-ttu-id="c9b91-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="c9b91-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="90120-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="90120-113">English: 24 hours a day, 7 days a week</span></span>

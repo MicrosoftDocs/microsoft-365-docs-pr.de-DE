@@ -70,9 +70,9 @@ landingContent:
       url: /office-365-security/defender-for-office-365
     - text: Defender for Office 365-Dienstbeschreibung
       url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
-    - text: Defender für Office 365 in Microsoft 365 Defender
+    - text: Defender for Office 365 in Microsoft 365 Defender
       url: /defender/microsoft-365-security-center-mdo
-    - text: Umleitung von Defender für Office 365 in Microsoft 365 Defender
+    - text: Umleiten von Defender für Office 365 in Microsoft 365 Defender
       url: /defender/microsoft-365-security-mdo-redirection
 - title: Microsoft Defender für Endpunkt
   linkLists:
@@ -118,5 +118,5 @@ landingContent:
   linkLists:
   - linkListType: reference
     links:
-    - text: Microsoft 365 Defender APIs (Vorschau)
+    - text: Microsoft 365 Defender-APIs (Vorschau)
       url: api-overview.md

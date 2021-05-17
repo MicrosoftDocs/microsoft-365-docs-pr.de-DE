@@ -19,20 +19,20 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296155"
 ---
-# <a name="contact-support-for-greenland"></a><span data-ttu-id="5cee5-103">Kontaktieren des Support für Grönland</span><span class="sxs-lookup"><span data-stu-id="5cee5-103">Contact support for Greenland</span></span>
+# <a name="contact-support-for-greenland"></a><span data-ttu-id="fb7ad-103">Kontaktieren des Support für Grönland</span><span class="sxs-lookup"><span data-stu-id="fb7ad-103">Contact support for Greenland</span></span>
 
-<span data-ttu-id="5cee5-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="5cee5-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="fb7ad-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="fb7ad-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="5cee5-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="5cee5-105">Phone number</span></span>
-<span data-ttu-id="5cee5-106">+1 312 843 5152</span><span class="sxs-lookup"><span data-stu-id="5cee5-106">+1 312 843 5152</span></span>
+## <a name="phone-number"></a><span data-ttu-id="fb7ad-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="fb7ad-105">Phone number</span></span>
+<span data-ttu-id="fb7ad-106">+1 312 843 5152</span><span class="sxs-lookup"><span data-stu-id="fb7ad-106">+1 312 843 5152</span></span>
 
-## <a name="hours"></a><span data-ttu-id="5cee5-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="5cee5-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="5cee5-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="5cee5-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="fb7ad-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="fb7ad-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="fb7ad-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="fb7ad-108">Billing Support:</span></span>
 
-<span data-ttu-id="5cee5-109">Englisch: Mon-Fri 7:00-15:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="5cee5-109">English: Mon-Fri 7 AM-3 PM</span></span>
+<span data-ttu-id="fb7ad-109">Englisch: Mon-Fri 7:00-15:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="fb7ad-109">English: Mon-Fri 7 AM-3 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="5cee5-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="5cee5-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="fb7ad-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="fb7ad-110">Technical Support:</span></span>
 
-<span data-ttu-id="5cee5-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="5cee5-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="fb7ad-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="fb7ad-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="5cee5-112">Internationale Anrufgebühren</span><span class="sxs-lookup"><span data-stu-id="5cee5-112">International call charges apply</span></span>
+<span data-ttu-id="fb7ad-112">Internationale Anrufgebühren</span><span class="sxs-lookup"><span data-stu-id="fb7ad-112">International call charges apply</span></span>
