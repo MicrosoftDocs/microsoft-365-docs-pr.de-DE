@@ -32,7 +32,7 @@ landingContent:
       url: /mem/intune/enrollment/device-enrollment
   - linkListType: how-to-guide
     links:
-    - text: Einrichten der automatischen Registrierung für Windows 10-Geräte
+    - text: Einrichten der automatischen Registrierung für Windows 10 Geräte
       url: /mem/intune/enrollment/quickstart-setup-auto-enrollment
     - text: Einrichten der Android-Registrierung
       url: /mem/intune/enrollment/android-enroll
@@ -46,15 +46,15 @@ landingContent:
       url: ../../business/view-policies-and-devices.md
     - text: Entfernen von Unternehmensdaten von Geräten
       url: ../../business/remove-company-data.md
-    - text: Zurücksetzen von Windows-Geräten auf Werkseinstellungen
+    - text: Zurücksetzen Windows Geräte auf Werkseinstellungen
       url: ../../business/reset-devices-to-factory-settings.md
-- title: Verwalten von Geräten und App-Daten mit Microsoft 365 Enterprise
+- title: Verwalten von Geräten und App-Daten mit Microsoft 365 Für Unternehmen
   linkLists:
   - linkListType: overview
     links:
-    - text: Übersicht über Microsoft 365 Enterprise
+    - text: Übersicht über Microsoft 365 für Unternehmen
       url: ../../enterprise/microsoft-365-overview.md
-    - text: Roadmap für die Geräteverwaltung für Microsoft 365 Enterprise
+    - text: Geräteverwaltungs-Roadmap für Microsoft 365 Enterprise
       url: ../../enterprise/device-management-roadmap-microsoft-365.md
 - title: Verwalten von Geräten und App-Daten mit Basic Mobility and Security
   linkLists:

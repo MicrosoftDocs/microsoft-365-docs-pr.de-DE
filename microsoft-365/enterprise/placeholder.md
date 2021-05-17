@@ -1,5 +1,5 @@
 ---
-title: Platzhalter Artikel
+title: Platzhalterartikel
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -20,6 +20,6 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46690540"
 ---
-# <a name="placeholder-article"></a><span data-ttu-id="9a369-103">Platzhalter Artikel</span><span class="sxs-lookup"><span data-stu-id="9a369-103">Placeholder article</span></span>
+# <a name="placeholder-article"></a><span data-ttu-id="742cc-103">Platzhalterartikel</span><span class="sxs-lookup"><span data-stu-id="742cc-103">Placeholder article</span></span>
 
-<span data-ttu-id="9a369-104">Dieser Artikel ist ein Platzhalter für jetzt.</span><span class="sxs-lookup"><span data-stu-id="9a369-104">This article is a placeholder for now.</span></span>
+<span data-ttu-id="742cc-104">Dieser Artikel ist derzeit ein Platzhalter.</span><span class="sxs-lookup"><span data-stu-id="742cc-104">This article is a placeholder for now.</span></span>

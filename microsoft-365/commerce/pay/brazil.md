@@ -19,8 +19,8 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52274112"
 ---
-# <a name="payment-information-for-brazil"></a><span data-ttu-id="41b86-103">Zahlungsinformationen für Brasilien</span><span class="sxs-lookup"><span data-stu-id="41b86-103">Payment information for Brazil</span></span>
+# <a name="payment-information-for-brazil"></a><span data-ttu-id="63e5c-103">Zahlungsinformationen für Brasilien</span><span class="sxs-lookup"><span data-stu-id="63e5c-103">Payment information for Brazil</span></span>
 
-<span data-ttu-id="41b86-104">[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="41b86-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="63e5c-104">[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="63e5c-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="41b86-105">Folgen Sie bitte den Zahlungsanweisungen auf Ihrer Rechnung und referenzierten Rechnungsnummer(n) für die Zahlungsüberweisung.</span><span class="sxs-lookup"><span data-stu-id="41b86-105">Please follow payment instruction on your invoice and reference invoice number(s) on the payment remittance.</span></span>  
+<span data-ttu-id="63e5c-105">Folgen Sie bitte den Zahlungsanweisungen auf Ihrer Rechnung und referenzierten Rechnungsnummer(n) für die Zahlungsüberweisung.</span><span class="sxs-lookup"><span data-stu-id="63e5c-105">Please follow payment instruction on your invoice and reference invoice number(s) on the payment remittance.</span></span>  
