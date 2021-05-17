@@ -1,9 +1,9 @@
 ### YamlMime:Landing
 title: Microsoft Bookings
-summary: Planen und Verwalten von Terminen mit Microsoft-Buchungen. Umfasst die Integration in Outlook und automatisierte Benachrichtigungen.
+summary: Planen und Verwalten von Terminen mit Microsoft Bookings. Umfasst die Integration in Outlook und automatisierte Benachrichtigungen.
 metadata:
   title: Microsoft Bookings
-  description: Planen und Verwalten von Terminen mit Microsoft-Buchungen. Umfasst die Integration in Outlook und automatisierte Benachrichtigungen.
+  description: Planen und Verwalten von Terminen mit Microsoft Bookings. Umfasst die Integration in Outlook und automatisierte Benachrichtigungen.
   ms.service: bookings
   ms.topic: landing-page
   author: dmaguire
@@ -18,15 +18,15 @@ metadata:
   ms.lasthandoff: 09/09/2020
   ms.locfileid: "47419704"
 landingContent:
-- title: Informationen zu Microsoft-Buchungen
+- title: Informationen zu Microsoft Bookings
   linkLists:
   - linkListType: overview
     links:
-    - text: Was ist Microsoft-Buchungen?
+    - text: Was ist Microsoft Bookings?
       url: bookings-overview.md
   - linkListType: download
     links:
-    - text: Abrufen der App "Buchungen"
+    - text: Holen Sie sich die Microsoft Bookings-App
       url: get-bookings-app.md
 - title: Einrichten von Microsoft Bookings
   linkLists:
@@ -34,7 +34,7 @@ landingContent:
     links:
     - text: Eingeben Ihrer Unternehmensinformationen
       url: enter-business-information.md
-    - text: Festlegen Ihrer Planungsrichtlinien
+    - text: Festlegen Ihrer Terminplanungsrichtlinien
       url: set-scheduling-policies.md
     - text: Definieren Ihrer Dienstangebote
       url: define-service-offerings.md
@@ -44,7 +44,7 @@ landingContent:
       url: customize-booking-page.md
     - text: Erstellen Ihrer Buchungen und Festlegen der Mitarbeiter dafür
       url: create-a-manual-booking.md
-- title: Personen zum Buchen von Terminen einladen
+- title: Einladen von Personen zum Buchen von Terminen
   linkLists:
   - linkListType: how-to-guide
     links:

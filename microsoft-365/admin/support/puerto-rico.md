@@ -19,22 +19,22 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52295531"
 ---
-# <a name="contact-support-for-puerto-rico"></a><span data-ttu-id="58f5e-103">Kontaktieren des Support für Puerto Rico</span><span class="sxs-lookup"><span data-stu-id="58f5e-103">Contact support for Puerto Rico</span></span>
+# <a name="contact-support-for-puerto-rico"></a><span data-ttu-id="6ffad-103">Kontaktieren des Support für Puerto Rico</span><span class="sxs-lookup"><span data-stu-id="6ffad-103">Contact support for Puerto Rico</span></span>
 
-<span data-ttu-id="58f5e-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="58f5e-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="6ffad-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="6ffad-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="58f5e-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="58f5e-105">Phone number</span></span>
-<span data-ttu-id="58f5e-106">1 800 865 9408</span><span class="sxs-lookup"><span data-stu-id="58f5e-106">1 800 865 9408</span></span>
+## <a name="phone-number"></a><span data-ttu-id="6ffad-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="6ffad-105">Phone number</span></span>
+<span data-ttu-id="6ffad-106">1 800 865 9408</span><span class="sxs-lookup"><span data-stu-id="6ffad-106">1 800 865 9408</span></span>
 
-## <a name="hours"></a><span data-ttu-id="58f5e-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="58f5e-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="58f5e-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="58f5e-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="6ffad-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="6ffad-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="6ffad-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="6ffad-108">Billing Support:</span></span>
 
-<span data-ttu-id="58f5e-109">Spanisch: Mon-Fri 9:00-17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="58f5e-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="6ffad-109">Spanisch: Mon-Fri 9:00-17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="6ffad-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="58f5e-110">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="58f5e-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="6ffad-110">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="6ffad-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="58f5e-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="58f5e-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="6ffad-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="6ffad-111">Technical Support:</span></span>
 
-<span data-ttu-id="58f5e-112">Spanisch: 24 Stunden am Tag, 7 Tage die Woche</span><span class="sxs-lookup"><span data-stu-id="58f5e-112">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="6ffad-112">Spanisch: 24 Stunden am Tag, 7 Tage die Woche</span><span class="sxs-lookup"><span data-stu-id="6ffad-112">Spanish: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="58f5e-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="58f5e-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="6ffad-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="6ffad-113">English: 24 hours a day, 7 days a week</span></span>

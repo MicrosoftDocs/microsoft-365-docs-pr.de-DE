@@ -15,7 +15,7 @@ ms.custom:
 - Ent_Office_Other
 - seo-marvel-apr2020
 ms.assetid: ebe0f5ff-fd17-487f-bbb6-271b5ea270bb
-description: In diesem Artikel finden Sie Community-Ressourcen zum Herstellen einer Verbindung mit ihren Kollegen und erhalten von Hilfe zu PowerShell für Microsoft 365.
+description: Dieser Artikel enthält Communityressourcen zum Herstellen einer Verbindung mit Ihren Peers und zum Erhalten von Hilfe für PowerShell für Microsoft 365.
 ms.openlocfilehash: 36130d3e0f32f73836698cfb276e2aca5d20de83
 ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
 ms.translationtype: MT
@@ -23,16 +23,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 10/24/2020
 ms.locfileid: "48754692"
 ---
-# <a name="microsoft-365-community-resources-for-powershell"></a><span data-ttu-id="90777-103">Microsoft 365 Community-Ressourcen für PowerShell</span><span class="sxs-lookup"><span data-stu-id="90777-103">Microsoft 365 community resources for PowerShell</span></span>
+# <a name="microsoft-365-community-resources-for-powershell"></a><span data-ttu-id="503f1-103">Microsoft 365 Community-Ressourcen für PowerShell</span><span class="sxs-lookup"><span data-stu-id="503f1-103">Microsoft 365 community resources for PowerShell</span></span>
 
-<span data-ttu-id="90777-104">Stellen Sie eine Verbindung zu diesen Communities her, um Ihre Kollegen zu erreichen und Antworten auf Ihre PowerShell für Microsoft 365-Fragen zu erhalten.</span><span class="sxs-lookup"><span data-stu-id="90777-104">Connect to these communities to reach your peers and get answers for your PowerShell for Microsoft 365 questions.</span></span> 
+<span data-ttu-id="503f1-104">Verbinden diese Communitys, um Ihre Kollegen zu erreichen und Antworten für Ihre PowerShell für Microsoft 365 erhalten.</span><span class="sxs-lookup"><span data-stu-id="503f1-104">Connect to these communities to reach your peers and get answers for your PowerShell for Microsoft 365 questions.</span></span> 
   
-- [<span data-ttu-id="90777-105">Microsoft 365 Microsoft Tech Community</span><span class="sxs-lookup"><span data-stu-id="90777-105">Microsoft 365 Microsoft Tech Community</span></span>](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
+- [<span data-ttu-id="503f1-105">Microsoft 365 Microsoft Tech Community</span><span class="sxs-lookup"><span data-stu-id="503f1-105">Microsoft 365 Microsoft Tech Community</span></span>](https://techcommunity.microsoft.com/t5/microsoft-365/ct-p/microsoft365)
     
-- [<span data-ttu-id="90777-106">Exchange Server TechNet-Community-Forum</span><span class="sxs-lookup"><span data-stu-id="90777-106">Exchange Server TechNet community forum</span></span>](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
+- [<span data-ttu-id="503f1-106">Exchange Server TechNet-Communityforum</span><span class="sxs-lookup"><span data-stu-id="503f1-106">Exchange Server TechNet community forum</span></span>](https://social.technet.microsoft.com/Forums/exchange/home?forum=exchangesvrgeneral)
     
-## <a name="see-also"></a><span data-ttu-id="90777-107">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="90777-107">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="503f1-107">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="503f1-107">See also</span></span>
 
-[<span data-ttu-id="90777-108">Verwalten von Microsoft 365 mit PowerShell</span><span class="sxs-lookup"><span data-stu-id="90777-108">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
+[<span data-ttu-id="503f1-108">Verwalten von Microsoft 365 mit PowerShell</span><span class="sxs-lookup"><span data-stu-id="503f1-108">Manage Microsoft 365 with PowerShell</span></span>](manage-microsoft-365-with-microsoft-365-powershell.md)
   
-[<span data-ttu-id="90777-109">Erste Schritte mit PowerShell für Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="90777-109">Get started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)
+[<span data-ttu-id="503f1-109">Erste Schritte mit PowerShell für Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="503f1-109">Get started with PowerShell for Microsoft 365</span></span>](getting-started-with-microsoft-365-powershell.md)

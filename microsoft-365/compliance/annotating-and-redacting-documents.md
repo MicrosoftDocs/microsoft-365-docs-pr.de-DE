@@ -1,5 +1,5 @@
 ---
-title: Anzeigen von Dokumenten in einer Überprüfungsgruppe in Advanced eDiscovery
+title: Anzeigen von Dokumenten in einem Überprüfungssatz in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
-description: Sie können Dokumente in einer Überprüfungsgruppe in Advanced eDiscovery mit Anmerkungen versehen und redact.
+description: Sie können Dokumente in einem Überprüfungssatz in der Advanced eDiscovery.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 664045a3df50cdceb650208459c122049dba7c7c
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
@@ -25,6 +25,6 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "48285541"
 ---
-# <a name="annotate-and-redact-documents-in-a-review-set-in-advanced-ediscovery"></a><span data-ttu-id="38f1e-103">Beschriften und redact von Dokumenten in einer Überprüfungsgruppe in Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="38f1e-103">Annotate and redact documents in a review set in Advanced eDiscovery</span></span>
+# <a name="annotate-and-redact-documents-in-a-review-set-in-advanced-ediscovery"></a><span data-ttu-id="860d7-103">Anmerken und Schreiben von Dokumenten in einem Überprüfungssatz in Advanced eDiscovery</span><span class="sxs-lookup"><span data-stu-id="860d7-103">Annotate and redact documents in a review set in Advanced eDiscovery</span></span>
 
-<span data-ttu-id="38f1e-104">Inhalt bald verfügbar.</span><span class="sxs-lookup"><span data-stu-id="38f1e-104">Content coming soon.</span></span>
+<span data-ttu-id="860d7-104">Inhalt bald verfügbar.</span><span class="sxs-lookup"><span data-stu-id="860d7-104">Content coming soon.</span></span>
