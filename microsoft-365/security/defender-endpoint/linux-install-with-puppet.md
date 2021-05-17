@@ -51,13 +51,13 @@ Darüber hinaus müssen Sie für die Bereitstellung von "Puppet" mit den Verwalt
 
 ## <a name="download-the-onboarding-package"></a>Herunterladen des Onboardingpakets
 
-Laden Sie das Onboardingpaket aus dem Microsoft Defender Security Center herunter:
+Laden Sie das Onboardingpaket von Microsoft Defender Security Center:
 
-1. Wechseln Sie im Microsoft Defender Security Center zu **Einstellungen > Geräteverwaltung > Onboarding**.
+1. Wechseln Microsoft Defender Security Center zu Einstellungen > **Device Management > Onboarding**.
 2. Wählen Sie im ersten Dropdownmenü **Linux Server** als Betriebssystem aus. Wählen Sie im zweiten Dropdownmenü **Ihr bevorzugtes Linux-Konfigurationsverwaltungstool** als Bereitstellungsmethode aus.
 3. Wählen **Sie Onboardingpaket herunterladen aus.** Speichern Sie die Datei WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Screenshot des Microsoft Defender Security Center](images/atp-portal-onboarding-linux-2.png)
+    ![Microsoft Defender Security Center Screenshot](images/atp-portal-onboarding-linux-2.png)
 
 4. Überprüfen Sie an einer Eingabeaufforderung, ob Sie über die Datei verfügen. 
 

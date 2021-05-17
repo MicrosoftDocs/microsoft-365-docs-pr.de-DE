@@ -40,4 +40,4 @@ Microsoft 365 enthält keine öffentliche Website für Ihr Unternehmen. Um eine 
      Möglicherweise ist es am einfachsten, den Website-Generator im selben Unternehmen zu wählen, in dem Ihr Domänenname registriert ist.
 1. Entwerfen Sie Ihre Geschäftswebsite, und stellen Sie sicher, dass Sie Ihr Unternehmenslogo, Ihren Geschäftszweck, Text, Bilder und Links enthalten.
 1. Um die Website in Microsoft 365 zu integrieren, können Sie Ihre Geschäfts-E-Mails zur Website und einen Link zu Microsoft Teams, SharePoint oder einem anderen Tool für die Zusammenarbeit hinzufügen.
-1. Stellen Sie sicher, dass Sie Ihre Website mit Ihrem Domänennamen verbinden, den&#39;auch für E-Mails unter Microsoft 365 verwenden möchten.
+1. Stellen Sie sicher, dass Sie Ihre Website mit Ihrem Domänennamen verbinden, den Sie&#39;auch für E-Mails auf Microsoft 365.

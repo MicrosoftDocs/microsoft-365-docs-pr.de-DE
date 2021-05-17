@@ -1,6 +1,6 @@
 ---
 title: Vorbereiten Ihrer Sicherheitslage für Ihren ersten Vorfall
-description: Richten Sie die Microsoft 365 des Mandanten für Ihren ersten Vorfall in Microsoft 365 ein.
+description: Richten Sie die Sicherheitslage Ihres Microsoft 365-Mandanten für Ihren ersten Vorfall in Microsoft 365 Defender ein.
 keywords: Vorfälle, Warnungen, untersuchen, Korrelation, Angriff, Computer, Geräte, Benutzer, Identitäten, Identität, Postfach, E-Mail, 365, Microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -47,13 +47,13 @@ Microsoft 365 Defender kann dabei helfen, verschiedene Aspekte der Verhinderung 
 
 ## <a name="step-1-implement-zero-trust"></a>Schritt 1. Implementieren der Nullvertrauensstellung
 
-[Zero Trust](https://docs.microsoft.com/security/zero-trust/) ist eine integrierte Sicherheitsphilosophie und End-to-End-Strategie, die den komplexen Charakter jeder modernen Umgebung berücksichtigt, einschließlich der mobilen Mitarbeiter und der Benutzer, Geräte, Anwendungen und Daten, unabhängig davon, wo sie sich befinden. Durch die Bereitstellung eines einzigen Glasbereichs zum konsistenten Verwalten aller Endpunkterkennungen kann Microsoft 365 Defender [](https://docs.microsoft.com/security/zero-trust/#guiding-principles-of-zero-trust) das Implementieren der Leitprinzipien von Zero Trust für Ihr Sicherheitsbetriebsteam vereinfachen. 
+[Zero Trust](https://docs.microsoft.com/security/zero-trust/) ist eine integrierte Sicherheitsphilosophie und End-to-End-Strategie, die den komplexen Charakter jeder modernen Umgebung berücksichtigt, einschließlich der mobilen Mitarbeiter und der Benutzer, Geräte, Anwendungen und Daten, unabhängig davon, wo sie sich befinden. Durch die Bereitstellung eines einzigen Fensterausschnitts zur konsistenten Verwaltung aller Endpunkterkennungen kann Microsoft 365 [](https://docs.microsoft.com/security/zero-trust/#guiding-principles-of-zero-trust) Defender Ihrem Sicherheitsteam die Implementierung der Leitprinzipien von Zero Trust erleichtern. 
 
-Komponenten von Microsoft 365 Defender können Verstöße gegen Regeln anzeigen, die implementiert wurden, um Richtlinien für bedingten Zugriff für Zero Trust zu erstellen, indem Daten von Microsoft Defender for Endpoint (MDE) oder anderen mobilen Sicherheitsanbietern als Informationsquelle für Gerätekonformitätsrichtlinien und die Implementierung gerätebasierter Richtlinien für bedingten Zugriff integriert werden. 
+Komponenten von Microsoft 365 Defender können Verstöße gegen Regeln anzeigen, die implementiert wurden, um Richtlinien für bedingten Zugriff für Zero Trust zu erstellen, indem Daten von Microsoft Defender for Endpoint (MDE) oder anderen mobilen Sicherheitsanbietern als Informationsquelle für Gerätekonformitätsrichtlinien und die Implementierung gerätebasierter Bedingter Zugriffsrichtlinien integriert werden. 
 
 Das Geräterisiko wirkt sich direkt darauf aus, auf welche Ressourcen der Benutzer dieses Geräts zugreifen kann. Die Verweigerung des Zugriffs auf Ressourcen basierend auf bestimmten Kriterien ist das Hauptthema von Zero Trust, und Microsoft 365 Defender stellt Informationen zur Verfügung, die zum Bestimmen der Kriterien auf Vertrauensebene erforderlich sind. Beispielsweise kann Microsoft 365 Defender die Softwareversionsebene eines Geräts über die Seite Bedrohungs- und Sicherheitsrisikoverwaltung bereitstellen, während Richtlinien für bedingten Zugriff Geräte mit veralteten oder anfälligen Versionen einschränken.
 
-Die Automatisierung ist ein wichtiger Bestandteil der Implementierung und Aufrechterhaltung einer Zero Trust-Umgebung und reduziert gleichzeitig die Anzahl der Warnungen, die potenziell zu Vorfallreaktionsereignissen führen würden. Komponenten von Microsoft 365 Defender können automatisiert werden, z. B. Korrekturaktionen [(auch](m365d-autoir.md) als Untersuchungen für einen Vorfall im Microsoft 365 Security Center bezeichnet), Benachrichtigungsaktionen und sogar das Erstellen von Supporttickets wie in [ServiceNow](https://microsoft.service-now.com/sp/).
+Die Automatisierung ist ein wichtiger Bestandteil der Implementierung und Aufrechterhaltung einer Zero Trust-Umgebung und reduziert gleichzeitig die Anzahl der Warnungen, die potenziell zu Vorfallreaktionsereignissen führen würden. Komponenten von Microsoft 365 Defender können automatisiert werden, z. B. Korrekturaktionen [(als](m365d-autoir.md) Untersuchungen für einen Vorfall im Microsoft 365 Security Center bezeichnet), Benachrichtigungsaktionen und sogar das Erstellen von Supporttickets wie in [ServiceNow](https://microsoft.service-now.com/sp/).
 
 ## <a name="step-2-determine-your-organizations-security-posture"></a>Schritt 2. Bestimmen der Sicherheitslage Ihrer Organisation
 
@@ -61,17 +61,17 @@ Als Nächstes können Organisationen die [Microsoft Secure Score](microsoft-secu
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Beispiel für Microsoft Secure Score im Microsoft Security Center":::
  
-## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>Schritt 3: Bewerten der Sicherheitsrisikorisiken In Ihrer Organisation
+## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>Schritt 3: Bewerten der Sicherheitsrisikorisiken In Ihrer Organisation
 
 Die Verhinderung von Vorfällen kann dazu beitragen, die Sicherheitsvorgänge zu optimieren, um sich auf wichtige und wichtige Sicherheitsvorfälle zu konzentrieren. Softwarerisiken sind häufig ein verhinderbarer Einstiegspunkt für Angriffe, die zu Datendiebstahl, Datenverlust oder Unterbrechungen des Geschäftsbetriebs führen können. Wenn keine Angriffe im Einsatz sind, müssen Sicherheitsvorgänge bestrebt sein, ein akzeptables Maß an Sicherheitsrisiko [in](../defender-endpoint/tvm-exposure-score.md) ihrer Organisation zu erreichen und auf dem Niveau zu halten.
 
-Um den Fortschritt des Softwarepatchings zu überprüfen, besuchen Sie die Seite Bedrohungs- und Sicherheitsrisikoverwaltung in Defender for Endpoint, auf die Sie über Microsoft 365 Defender über die Registerkarte Weitere Ressourcen **zugreifen** können. [](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
+Um den Fortschritt des Softwarepatchings zu überprüfen, besuchen Sie die Seite Bedrohungs- und Sicherheitsrisikoverwaltung in Defender for Endpoint, auf die Sie von Microsoft 365 Defender über die Registerkarte Weitere Ressourcen **zugreifen** können. [](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Beispiel für die Seite &quot;Bedrohung und Sicherheitsanfälligkeit&quot; im Microsoft Security Center"::: 
  
 ## <a name="4-understand-emerging-threats"></a>4. Verstehen neuer Bedrohungen
 
-Verwenden [Sie die Bedrohungsanalyse](threat-analytics.md) im Microsoft 365 Security Center, um mit der aktuellen Sicherheitsrisikolandschaft auf dem neuesten Stand zu bleiben. Erfahrene Microsoft-Sicherheitsforscher erstellen Berichte, in denen die neuesten Cyberbedrohungen detailliert beschrieben werden, damit Sie verstehen können, wie sich diese auf Ihr Microsoft 365, Geräte und Benutzer auswirken können. Diese Berichte können Folgendes umfassen:
+Verwenden [Sie die Bedrohungsanalyse](threat-analytics.md) im Microsoft 365 Security Center, um mit der aktuellen Sicherheitsrisikolandschaft auf dem neuesten Stand zu bleiben. Erfahrene Microsoft-Sicherheitsforscher erstellen Berichte, in denen die neuesten Cyberbedrohungen detailliert beschrieben werden, damit Sie verstehen können, wie sich diese auf Ihr Microsoft 365-Abonnement, Ihre Geräte und Ihre Benutzer auswirken können. Diese Berichte können Folgendes umfassen:
 
 - Aktive Bedrohungsakteure und ihre Kampagnen
 - Beliebte und neue Angriffstechniken
@@ -81,7 +81,7 @@ Verwenden [Sie die Bedrohungsanalyse](threat-analytics.md) im Microsoft 365 Secu
 
 Sie können die Empfehlungen einer neuen Bedrohung implementieren, um Ihre Sicherheitslage zu stärken und ihre Angriffsfläche zu minimieren.
 
-Nehmen Sie sich Zeit in Ihrem Zeitplan, um den Abschnitt [Threat Analytics](threat-analytics.md) des Microsoft 365 zu überprüfen.
+Nehmen Sie sich Zeit in Ihrem Zeitplan, um den Abschnitt [Threat Analytics](threat-analytics.md) des Microsoft 365 Security Centers regelmäßig zu überprüfen.
 
 ## <a name="next-step"></a>Nächster Schritt
 

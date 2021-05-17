@@ -69,7 +69,7 @@ Fügen Sie die folgende JAMF-Nutzlast hinzu, um der Microsoft Defender for Endpo
 
 ### <a name="network-extension-policy"></a>Netzwerkerweiterungsrichtlinie
 
-Im Rahmen der Endpunkterkennungs- und -reaktionsfunktionen prüft Microsoft Defender for Endpoint auf macOS den Socketdatenverkehr und meldet diese Informationen an das Microsoft Defender Security Center-Portal. Mit der folgenden Richtlinie kann die Netzwerkerweiterung diese Funktionalität ausführen.
+Im Rahmen der Funktionen für die Erkennung und Reaktion von Endpunkten prüft Microsoft Defender for Endpoint auf macOS den Socketdatenverkehr und meldet diese Informationen Microsoft Defender Security Center Portal. Mit der folgenden Richtlinie kann die Netzwerkerweiterung diese Funktionalität ausführen.
 
 >[!NOTE]
 >JAMF bietet keine integrierte Unterstützung für Inhaltsfilterrichtlinien, die eine Voraussetzung für die Aktivierung der Netzwerkerweiterungen sind, die Microsoft Defender for Endpoint auf macOS auf dem Gerät installiert. Darüber hinaus ändert JAMF manchmal den Inhalt der bereitgestellten Richtlinien.
@@ -170,7 +170,7 @@ Im Rahmen der Endpunkterkennungs- und -reaktionsfunktionen prüft Microsoft Defe
     $ security cms -S -N "SigningCertificate" -i ~/Documents/com.microsoft.network-extension.mobileconfig -o ~/Documents/com.microsoft.network-extension.signed.mobileconfig
     ```
     
-5. Navigieren Sie im JAMF-Portal zu **Konfigurationsprofile,** und klicken Sie auf die **Schaltfläche Hochladen.** Wählen `com.microsoft.network-extension.signed.mobileconfig` Sie aus, wenn Sie zur Datei aufgefordert werden.
+5. Navigieren Sie im JAMF-Portal zu **Konfigurationsprofile,** und klicken Sie **auf Hochladen** Schaltfläche. Wählen `com.microsoft.network-extension.signed.mobileconfig` Sie aus, wenn Sie zur Datei aufgefordert werden.
 
 ## <a name="intune"></a>Intune
 
@@ -308,7 +308,7 @@ So stellen Sie dieses benutzerdefinierte Konfigurationsprofil zur Bereitstellung
 1.  Öffnen Sie in Intune **Die**  >  **Gerätekonfiguration verwalten.** Wählen **Sie Profil**  >  **erstellen**  >  **aus.**
 2. Wählen Sie einen Namen für das Profil aus. Ändern **von Platform=macOS** und **Profile type=Custom**. Wählen Sie **Konfigurieren** aus.
 3.  Öffnen Sie das Konfigurationsprofil, und laden **Siesysext.xml.** Diese Datei wurde im vorherigen Schritt erstellt.
-4.  Wählen Sie **OK** aus.
+4.  Klicken Sie auf **OK**.
 
     ![Screenshot der Systemerweiterung in Intune](images/mac-system-extension-intune.png)
 

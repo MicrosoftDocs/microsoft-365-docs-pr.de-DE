@@ -29,19 +29,19 @@ ms.locfileid: "52298028"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer helfen ihnen die in diesem Artikel aufgeführten technischen Supportressourcen, Antworten zu finden, wenn Sie Probleme mit EOP haben. Microsoft bietet Hilfe für EOP an verschiedenen Stellen und Methoden, einschließlich Selbsthilfe und Assisted-Support.
+In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer helfen Ihnen die in diesem Artikel aufgeführten technischen Supportressourcen, Antworten zu finden, wenn Sie Probleme mit EOP haben. Microsoft bietet Hilfe für EOP an verschiedenen Stellen und Methoden, einschließlich Selbsthilfe und Assisted-Support.
 
 ## <a name="self-support-options"></a>Optionen zur Selbsthilfe
 
-Bei der Anmeldung stellt Microsoft 365 Admin Center Informationen zum Status der Dienste Ihrer Organisation zur Verfügung. Darüber hinaus enthält der Abschnitt Dienstintestatus den aktuellen Status Ihrer Dienste, Details zu Unterbrechungen und Ausfällen sowie eine Liste der geplanten Wartungszeiten. Das Microsoft 365 Admin Center bietet außerdem Informationen zu bekannten Problemen und erwarteten Lösungen. Wenn Sie von einem dienstweiten Ereignis betroffen sind, sollte eine Kommunikationsmeldung angezeigt werden (in der Regel mit einem Glockensymbol). Es wird empfohlen, dass Sie sämtliche zugehörigen Hinweise lesen und entsprechend vorgehen. Weitere Informationen zum Dienstinte health area finden Sie unter [Service health and continuity](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Mithilfe der hier aufgeführten Tools, Foren und Communitywebsites können Sie möglicherweise selbst weitere Hilfe finden.
+Bei der Anmeldung stellt das Microsoft 365 Admin Center Informationen zum Status der Dienste Ihrer Organisation zur Verfügung. Darüber hinaus enthält der Abschnitt Dienstintestatus den aktuellen Status Ihrer Dienste, Details zu Unterbrechungen und Ausfällen sowie eine Liste der geplanten Wartungszeiten. Das Microsoft 365 Admin Center bietet außerdem Informationen zu bekannten Problemen und erwarteten Lösungen. Wenn Sie von einem dienstweiten Ereignis betroffen sind, sollte eine Kommunikationsmeldung angezeigt werden (in der Regel mit einem Glockensymbol). Es wird empfohlen, dass Sie sämtliche zugehörigen Hinweise lesen und entsprechend vorgehen. Weitere Informationen zum Dienstinte health area finden Sie unter [Service health and continuity](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity). Mithilfe der hier aufgeführten Tools, Foren und Communitywebsites können Sie möglicherweise selbst weitere Hilfe finden.
 
 [Produktübersicht Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
 [Kontakt mit dem Support für Geschäftsprodukte aufnehmen – Administratorhilfe](../../business-video/get-help-support.md)
 
-[Microsoft 365 Community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
+[Microsoft 365-Community](https://techcommunity.microsoft.com/t5/Office-365/ct-p/Office365)
 
-[Microsoft Support- und Wiederherstellungs-Assistent (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
+[Microsoft Support and Recovery Assistant (SaRA)](https://support.microsoft.com/office/e90bb691-c2a7-4697-a94f-88836856c72f)
 
 [Problembehandlung für den Nachrichtenfluss](https://aka.ms/FixEmail)
 

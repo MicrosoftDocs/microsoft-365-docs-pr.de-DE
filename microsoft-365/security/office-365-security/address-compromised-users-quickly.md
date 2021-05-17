@@ -12,7 +12,7 @@ search.appverid:
 - MOE150
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
-description: Erfahren Sie, wie Sie den Prozess der Erkennung und Behandlung von gefährdeten Benutzerkonten mit automatisierten Untersuchungs- und Reaktionsfunktionen in Microsoft Defender für Office 365 Plan 2 beschleunigen.
+description: Erfahren Sie, wie Sie den Prozess der Erkennung und Behandlung von gefährdeten Benutzerkonten mit automatisierten Untersuchungs- und Reaktionsfunktionen in Microsoft Defender for Office 365 Plan 2 beschleunigen.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: c500221a10c00cc3b8d9d99c102ce8ec54fa2a48
@@ -32,7 +32,7 @@ ms.locfileid: "51934693"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-[Microsoft Defender für Office 365 Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) umfasst [leistungsstarke](office-365-air.md) Funktionen für die automatisierte Untersuchung und Reaktion (AIR). Diese Funktionen können Ihrem Sicherheitsteam viel Zeit und Aufwand beim Umgang mit Bedrohungen sparen. Microsoft verbessert weiterhin die Sicherheitsfunktionen. Kürzlich wurden die FUNKTIONEN von AIR erweitert, um ein gefährdetes Benutzersicherheitsspielbuch (derzeit in der Vorschau) zu enthalten. Lesen Sie diesen Artikel, um mehr über das Playbook für die Sicherheit gefährdeter Benutzer zu erfahren. Weitere Informationen finden Sie im Blogbeitrag Beschleunigen der Zeit zum Erkennen und Reagieren auf Benutzerverstöße und Einschränken des Verletzungsbereichs mit [Microsoft Defender für Office 365.](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053)
+[Microsoft Defender für Office 365 Plan 2](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2) umfasst leistungsstarke [Funktionen](office-365-air.md) für die automatisierte Untersuchung und Reaktion (AIR). Diese Funktionen können Ihrem Sicherheitsteam viel Zeit und Aufwand beim Umgang mit Bedrohungen sparen. Microsoft verbessert weiterhin die Sicherheitsfunktionen. Kürzlich wurden die FUNKTIONEN von AIR erweitert, um ein gefährdetes Benutzersicherheitsspielbuch (derzeit in der Vorschau) zu enthalten. Lesen Sie diesen Artikel, um mehr über das Playbook für die Sicherheit gefährdeter Benutzer zu erfahren. Weitere Informationen finden Sie im Blogbeitrag Beschleunigen der Zeit zum Erkennen und Reagieren auf Benutzerverstöße und Zum Einschränken des Verletzungsbereichs mit [Microsoft Defender Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) Weitere Informationen.
 
 ![Automatisierte Untersuchung für einen gefährdeten Benutzer](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
@@ -46,7 +46,7 @@ Das Playbook mit gefährdeter Benutzersicherheit ermöglicht dem Sicherheitsteam
 
 ## <a name="compromised-user-alerts"></a>Gefährdete Benutzerwarnungen
 
-Wenn ein Benutzerkonto gefährdet ist, treten atypische oder anomale Verhaltensweisen auf. Beispielsweise können Phishing- und Spamnachrichten intern von einem vertrauenswürdigen Benutzerkonto gesendet werden. Defender für Office 365 kann solche Anomalien in E-Mail-Mustern und Aktivitäten zur Zusammenarbeit in Office 365 erkennen. In diesem Fall werden Warnungen ausgelöst, und der Prozess zur Bedrohungsminderung beginnt.
+Wenn ein Benutzerkonto gefährdet ist, treten atypische oder anomale Verhaltensweisen auf. Beispielsweise können Phishing- und Spamnachrichten intern von einem vertrauenswürdigen Benutzerkonto gesendet werden. Defender for Office 365 kann solche Anomalien in E-Mail-Mustern und Aktivitäten zur Zusammenarbeit innerhalb von Office 365. In diesem Fall werden Warnungen ausgelöst, und der Prozess zur Bedrohungsminderung beginnt.
 
 Hier ist beispielsweise eine Warnung, die aufgrund verdächtigen E-Mail-Sendens ausgelöst wurde:
 
@@ -107,4 +107,4 @@ Weitere Informationen finden Sie unter [Anzeigen von Details einer Untersuchung]
 
 - [Informationen zu AIR in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Besuchen Sie die Microsoft 365-Roadmap, um zu sehen, was in Kürze kommt und wie es weiter geht](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Besuchen Sie die Microsoft 365 Roadmap, um zu sehen, was in Kürze kommt, und das Roll-out](https://www.microsoft.com/microsoft-365/roadmap?filters=)

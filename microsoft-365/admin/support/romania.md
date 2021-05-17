@@ -35,6 +35,6 @@ Englisch: Mo-Fr 9:00 bis 17:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefon Nummer: 372 741 961
+Alternative Telefonnummer: 372 741 961
 
 Es gelten die Ortstarife.

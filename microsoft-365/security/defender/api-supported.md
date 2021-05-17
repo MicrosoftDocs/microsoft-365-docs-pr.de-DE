@@ -58,7 +58,7 @@ Alle APIs entlang des `/api` Pfads verwenden das [OData-Protokoll,](/odata/overv
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Übersicht über Microsoft 365 Defender-APIs](api-overview.md)
+- [Microsoft 365 Übersicht über Defender-APIs](api-overview.md)
 - [Zugreifen auf die Microsoft 365 Defender-APIs](api-access.md)
 - [Informationen zu API-Beschränkungen und -Lizenzierung](api-terms.md)
 - [Verstehen von Fehlercodes](api-error-codes.md)

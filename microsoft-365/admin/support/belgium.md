@@ -41,6 +41,6 @@ Französisch: Mon-Fri 08:00-21:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefon Nummer: 02 200 88 84
+Alternative Telefonnummer: 02 200 88 84
 
 Es gelten die Ortstarife.

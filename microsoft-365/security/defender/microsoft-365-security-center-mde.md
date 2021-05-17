@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender für Endpunkt im Microsoft 365 Security Center
 description: Informationen zu Änderungen vom Microsoft Defender Security Center zum Microsoft 365 Security Center
-keywords: Erste Schritte mit dem Microsoft 365 Security Center, Microsoft Defender für Office 365, Microsoft Defender for Endpoint, MDO, MDE, einzelner Fensterausschnitt, konvergenten Portal, Sicherheitsportal, Defender-Sicherheitsportal
+keywords: Erste Schritte mit dem Microsoft 365 Security Center, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, einzelner Ausschnitt, konvergenten Portal, Sicherheitsportal, Defender Security Portal
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -36,17 +36,17 @@ ms.locfileid: "51943041"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender für Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
-Das verbesserte [Microsoft 365 Security Center](overview-security-center.md) kombiniert Sicherheitsfunktionen, die E-Mails, Zusammenarbeit, Identität und Gerätebedrohungen schützen, erkennen, untersuchen und darauf [https://security.microsoft.com](https://security.microsoft.com) reagieren. Dieses Sicherheitscenter vereint Funktionen aus vorhandenen Microsoft-Sicherheitsportalen, einschließlich Microsoft Defender Security Center und dem Office 365 Security & Compliance Center.
+Das verbesserte [Microsoft 365 Security Center](overview-security-center.md) kombiniert Sicherheitsfunktionen, die E-Mails, Zusammenarbeit, Identität und Gerätebedrohungen schützen, erkennen, untersuchen und darauf [https://security.microsoft.com](https://security.microsoft.com) reagieren. Dieses Sicherheitscenter vereint Funktionen aus vorhandenen Microsoft-Sicherheitsportalen, einschließlich Microsoft Defender Security Center und Office 365 Security & Compliance Center.
 
-Wenn Sie mit dem Microsoft Defender Security Center vertraut sind, hilft dieser Artikel, einige der Änderungen und Verbesserungen im verbesserten Microsoft 365 Security Center zu beschreiben. Es gibt jedoch einige neue und aktualisierte Elemente, die Sie beachten müssen.
+Wenn Sie mit der Microsoft Defender Security Center vertraut sind, beschreibt dieser Artikel einige der Änderungen und Verbesserungen im verbesserten Microsoft 365 Security Center. Es gibt jedoch einige neue und aktualisierte Elemente, die Sie beachten müssen.
 
-In der Vergangenheit war [das Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/portal-overview) das Zuhause von Microsoft Defender for Endpoint. Unternehmenssicherheitsteams haben sie verwendet, um Warnungen über potenzielle fortgeschrittene beständige Bedrohungsaktivitäten oder Datenschutzverletzungen zu überwachen und zu unterstützen. Um die Anzahl der Portale zu reduzieren, ist das Microsoft 365 Security Center das Zuhause für die Überwachung und Verwaltung der Sicherheit in Ihren Microsoft-Identitäten, Daten, Geräten, Apps und Infrastruktur.
+In der Vergangenheit war [Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/portal-overview) das Zuhause von Microsoft Defender for Endpoint. Enterprise Sicherheitsteams haben sie verwendet, um Warnungen über potenzielle fortgeschrittene beständige Bedrohungsaktivitäten oder Datenschutzverletzungen zu überwachen und zu reagieren. Um die Anzahl der Portale zu reduzieren, ist das Microsoft 365 Security Center das Zuhause für die Überwachung und Verwaltung der Sicherheit in Ihren Microsoft-Identitäten, Daten, Geräten, Apps und Infrastruktur.
 
-Microsoft Defender for Endpoint im Microsoft 365 Security Center unterstützt die Gewährung des Zugriffs auf anbieter für verwaltete Sicherheitsdienste [(Managed Security Service Provider, MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) auf die gleiche Weise, wie der Zugriff [im Microsoft Defender Security Center gewährt wird.](mssp-access.md)
+Microsoft Defender for Endpoint im Microsoft 365 Security Center unterstützt die Gewährung von Zugriff auf verwaltete Sicherheitsdienstanbieter [(Managed Security Service Provider, MSSPs)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) auf die gleiche Weise, wie der Zugriff [im Microsoft Defender Security Center gewährt wird.](mssp-access.md)
 
 
 > [!IMPORTANT]
-> Was Sie im Microsoft 365 Security Center sehen, hängt von Ihren aktuellen Abonnements ab. Wenn Sie beispielsweise keine Lizenz für Microsoft Defender für Office 365 haben, wird der Abschnitt E-Mail & Zusammenarbeit nicht angezeigt.
+> Was Sie im Microsoft 365 sehen, hängt von Ihren aktuellen Abonnements ab. Wenn Sie beispielsweise keine Lizenz für Microsoft Defender für Office 365 haben, wird der Abschnitt E-Mail & Zusammenarbeit nicht angezeigt.
 
 >[!Note]
 >Das neue einheitliche Portal ist nicht verfügbar für:
@@ -55,31 +55,31 @@ Microsoft Defender for Endpoint im Microsoft 365 Security Center unterstützt di
 >- US Department of Defense
 >- Alle US-Behörden mit kommerziellen Lizenzen
 
-Sehen Sie sich das verbesserte Microsoft 365 Security Center an: [https://security.microsoft.com](https://security.microsoft.com) .
+Werfen Sie einen Blick auf das Microsoft 365 Security Center: [https://security.microsoft.com](https://security.microsoft.com) .
 
 Weitere Informationen zu den Vorteilen: [Übersicht über das Microsoft 365 Security Center](overview-security-center.md)
 
 ## <a name="whats-changed"></a>Änderungen
 
-Diese Tabelle ist eine Kurzübersicht über die Änderungen zwischen dem Microsoft Defender Security Center und dem Microsoft 365 Security Center.
+Diese Tabelle ist eine Kurzübersicht über die Änderungen zwischen Microsoft Defender Security Center und Microsoft 365 Security Center.
 
 ### <a name="alerts-and-actions"></a>Warnungen und Aktionen
 
 |**Bereich**  |**Beschreibung der Änderung** |
 |---------|---------|
 | [Vorfälle & Warnungen](incidents-overview.md)  | Im Microsoft 365 Security Center können Sie Vorfälle und Warnungen über alle Endpunkte, E-Mails und Identitäten hinweg verwalten. Wir haben die Erfahrung zusammengeführt, um ihnen zu helfen, verwandte Ereignisse einfacher zu finden. Weitere Informationen finden Sie unter [Incidents Overview](incidents-overview.md).   |
-| [Suche](advanced-hunting-overview.md)  |  Wenn Sie benutzerdefinierte Erkennungsregeln ändern, die in Microsoft Defender for Endpoint erstellt wurden, um Identitäts- und E-Mail-Tabellen zu enthalten, werden sie automatisch zu Microsoft 365 Defender verlagert. Die entsprechenden Warnungen werden auch in Microsoft 365 Defender angezeigt. Weitere Informationen zu diesen Änderungen finden Sie unter [Migrate custom detection rules](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules). <br><br>Die `DeviceAlertEvents` Tabelle für die erweiterte Suche ist in Microsoft 365 Defender nicht verfügbar. Zum Abfragen gerätespezifischer Warnungsinformationen in Microsoft 365 Defender können Sie die Tabellen und verwenden, um noch mehr Informationen aus verschiedenen Quellen `AlertInfo` `AlertEvidence` zu speichern. Erstellen Sie Ihre nächste gerätebezogene Abfrage, indem Sie [Write-Abfragen ohne DeviceAlertEvents folgen.](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents)|
-|[Info-Center](m365d-action-center.md)    | Listet ausstehende und abgeschlossene Aktionen auf, die nach automatisierten Untersuchungen und Korrekturmaßnahmen durchgeführt wurden. Früher hat das Action Center im Microsoft Defender Security Center ausstehende und abgeschlossene Aktionen für Korrekturaktionen aufgelistet, die nur auf Geräten durchgeführt wurden, während automatisierte Untersuchungen Warnungen und den Status aufgelistet haben. Im verbesserten Microsoft 365 Security Center vereint das Action Center Korrekturaktionen und Untersuchungen über E-Mails, Geräte und Benutzer hinweg – alle an einem einzigen Ort.  |
+| [Suche](advanced-hunting-overview.md)  |  Wenn Sie benutzerdefinierte Erkennungsregeln ändern, die in Microsoft Defender for Endpoint erstellt wurden, um Identitäts- und E-Mail-Tabellen zu enthalten, werden sie automatisch zu Microsoft 365 Defender bewegt. Die entsprechenden Warnungen werden auch in defender Microsoft 365 angezeigt. Weitere Informationen zu diesen Änderungen finden Sie unter [Migrate custom detection rules](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules). <br><br>Die Tabelle für die erweiterte Suche ist in Defender Microsoft 365 `DeviceAlertEvents` verfügbar. Zum Abfragen gerätespezifischer Benachrichtigungsinformationen in Microsoft 365 Defender können Sie die Und-Tabellen verwenden, um noch mehr Informationen aus einer Vielzahl von `AlertInfo` `AlertEvidence` Quellen zu speichern. Erstellen Sie Ihre nächste gerätebezogene Abfrage, indem Sie [Write-Abfragen ohne DeviceAlertEvents folgen.](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents)|
+|[Info-Center](m365d-action-center.md)    | Listet ausstehende und abgeschlossene Aktionen auf, die nach automatisierten Untersuchungen und Korrekturmaßnahmen durchgeführt wurden. Früher hat das Aktionscenter im Microsoft Defender Security Center ausstehende und abgeschlossene Aktionen zur Behebung von Maßnahmen aufgelistet, die nur auf Geräten durchgeführt wurden, während automatisierte Untersuchungen Warnungen und Status aufgelistet haben. Im verbesserten Microsoft 365 bietet das Action Center Korrekturaktionen und Untersuchungen über E-Mails, Geräte und Benutzer hinweg – alle an einem einzigen Ort.  |
 | [Bedrohungsanalyse](threat-analytics.md) |  Zur einfacheren Erkennung und Verwendung an den oberen Rand der Navigationsleiste verschoben. Enthält jetzt Bedrohungsinformationen für Endpunkte sowie E-Mail und Zusammenarbeit.    |
 
 ### <a name="endpoints"></a>Endpunkte
 
 |**Bereich**  |**Beschreibung der Änderung**  |
 |---------|---------|
-|Suchen   |  Anstatt in der Überschrift zu sein, bewegt sich die Microsoft Defender for Endpoint-Suchleiste unter dem Abschnitt Endpunkte. Sie können weiterhin nach Geräten, Dateien, Benutzern, URLs, IPs, Sicherheitsrisiken, Software und Empfehlungen suchen.  |
+|Suche   |  Anstatt in der Überschrift zu sein, bewegt sich die Microsoft Defender for Endpoint-Suchleiste unter dem Abschnitt Endpunkte. Sie können weiterhin nach Geräten, Dateien, Benutzern, URLs, IPs, Sicherheitsrisiken, Software und Empfehlungen suchen.  |
 |[Dashboard](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  Dies ist Ihr Sicherheitsbetriebsdashboard. Sehen Sie sich eine Übersicht darüber an, wie viele aktive Warnungen ausgelöst wurden, welche Geräte gefährdet sind, welche Benutzer gefährdet sind, und den Schweregrad für Warnungen, Geräte und Benutzer. Sie können auch sehen, ob auf geräten Sensorprobleme auftreten, ihr Gesamtdienstzustand und wie nicht aufgelöste Warnungen erkannt wurden. |
 |Geräteübersicht | Keine Änderungen. |
-|[Bedrohungs- und Sicherheitsrisikomanagement](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Der Name wurde so verkürzt, dass er in den Navigationsbereich passt. Es ist identisch mit dem Abschnitt zur Verwaltung von Bedrohungen und Sicherheitslücken mit allen Seiten darunter.     |
+|[Bedrohungs- und Sicherheitsrisikomanagement](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)    |    Der Name wurde so verkürzt, dass er in den Navigationsbereich passt. Dies ist identisch mit dem Bedrohungs- und Sicherheitsrisikomanagement abschnitt mit allen Seiten darunter.     |
 | Partner und APIs | Keine Änderungen. |
 | Evaluierungen & Lernprogramme    |     Neue Test- und Lernfunktionen.     |
 | Konfigurationsverwaltung   |  Keine Änderungen.  |
@@ -96,9 +96,9 @@ Diese Tabelle ist eine Kurzübersicht über die Änderungen zwischen dem Microso
 |---------|---------|
 | Berichte  | Siehe Berichte für Endpunkte und E-Mail& zusammenarbeiten, einschließlich Bedrohungsschutz, Geräteintehität und -compliance und anfällige Geräte. |
 | Gesundheitswesen  |  Zurzeit werden Links zur Seite "Dienstinte health" im [Microsoft 365 Admin Center angezeigt.](https://admin.microsoft.com/) |
-| Einstellungen |  Verwalten Sie Ihre Einstellungen für das Microsoft 365 Security Center, Microsoft 365 Defender, Endpoints, Email & Zusammenarbeit, Identitäten und Geräteerkennung.   |
+| Einstellungen |  Verwalten Sie Ihre Einstellungen für Microsoft 365 Security Center, Microsoft 365 Defender, Endpoints, Email & Collaboration, Identities und Device Discovery.   |
 
-## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365-Sicherheitsnavigation und -funktionen
+## <a name="microsoft-365-security-navigation-and-capabilities"></a>Microsoft 365 und Funktionen für die Sicherheit
 
 Die linke Navigationsleiste oder Schnellstartleiste wird Ihnen vertraut vorkommen. Dieses Sicherheitscenter enthält jedoch einige neue und aktualisierte Elemente.
 
@@ -138,7 +138,7 @@ Erfahren Sie mehr über das [Nachverfolgen und Reagieren auf neue Bedrohungen mi
 
 ### <a name="endpoints-section"></a>Abschnitt "Endpoints"
 
-Anzeigen und Verwalten der Sicherheit von Endpunkten in Ihrer Organisation. Wenn Sie das Microsoft Defender Security Center verwendet haben, sieht es vertraut aus.
+Anzeigen und Verwalten der Sicherheit von Endpunkten in Ihrer Organisation. Wenn Sie die Microsoft Defender Security Center verwendet haben, sieht es vertraut aus.
 
 ![Die Schnellstartleiste für Endpunkte](../../media/converge-2-endpoints.png)
 
@@ -150,11 +150,11 @@ Zeigen Sie Berichte an, und nehmen Sie Änderungen an Einstellungen und Benutzer
 
 ### <a name="siem-api-connections"></a>SIEM-API-Verbindungen
 
-Wenn Sie die [Defender for Endpoint SIEM-API verwenden,](../defender-endpoint/enable-siem-integration.md)können Sie dies weiterhin tun. Wir haben neue Links zur API-Nutzlast hinzugefügt, die auf die Warnungsseite oder die Vorfallseite im Microsoft 365-Sicherheitsportal verweisen. Neue API-Felder umfassen LinkToMTP und IncidentLinkToMTP. Weitere Informationen finden Sie unter [Umleiten von Konten von Microsoft Defender for Endpoint zum Microsoft 365 Security Center](./microsoft-365-security-mde-redirection.md).
+Wenn Sie die [Defender for Endpoint SIEM-API verwenden,](../defender-endpoint/enable-siem-integration.md)können Sie dies weiterhin tun. Wir haben neue Links zur API-Nutzlast hinzugefügt, die auf die Warnungsseite oder die Vorfallseite im Microsoft 365 verweisen. Neue API-Felder umfassen LinkToMTP und IncidentLinkToMTP. Weitere Informationen finden Sie unter [Umleiten von](./microsoft-365-security-mde-redirection.md)Konten von Microsoft Defender for Endpoint zum Microsoft 365 Security Center .
 
 ### <a name="email-alerts"></a>E-Mail-Benachrichtigungen
 
-Sie können weiterhin E-Mail-Warnungen für Defender for Endpoint verwenden. Wir haben neue Links in den E-Mails hinzugefügt, die auf die Warnungsseite oder die Vorfallseite im Microsoft 365 Security Center verweisen. Weitere Informationen finden Sie unter [Umleiten von Konten von Microsoft Defender for Endpoint zum Microsoft 365 Security Center](./microsoft-365-security-mde-redirection.md).
+Sie können weiterhin E-Mail-Warnungen für Defender for Endpoint verwenden. Wir haben neue Links in den E-Mails hinzugefügt, die auf die Warnungsseite oder die Vorfallseite im Microsoft 365 verweisen. Weitere Informationen finden Sie unter [Umleiten von](./microsoft-365-security-mde-redirection.md)Konten von Microsoft Defender for Endpoint zum Microsoft 365 Security Center .
 
 ## <a name="related-information"></a>Verwandte Informationen
 

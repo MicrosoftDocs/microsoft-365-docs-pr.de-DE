@@ -33,7 +33,7 @@ ms.locfileid: "51935749"
 
 **Gilt für:**
 
-- Microsoft 365 Defender API
+- Microsoft 365 Defender-API
 
 > [!IMPORTANT]
 > Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.

@@ -41,7 +41,7 @@ Der eingebettete Defender for Endpoint-Sensor wird im Systemkontext mithilfe des
 >[!TIP]
 >Organisationen, die Weiterleitungsproxys als Gateway zum Internet verwenden, können mithilfe des Netzwerkschutzes Untersuchungen hinter einem Proxy durchführen. Weitere Informationen finden Sie unter [Untersuchen von Verbindungsereignissen hinter Weiterleitungsproxys](investigate-behind-proxy.md).
 
-Die WinHTTP-Konfigurationseinstellung ist unabhängig von den Windows Internet (WinINet)-Internet-Browserproxyeinstellungen und kann nur mithilfe der folgenden Ermittlungsmethoden einen Proxyserver ermitteln:
+Die WinHTTP-Konfigurationseinstellung ist unabhängig von den Windows Internet (WinINet) Internet-Browserproxyeinstellungen und kann nur mithilfe der folgenden Ermittlungsmethoden einen Proxyserver ermitteln:
 
 - Methoden für die automatische Ermittlung:
   - Transparenter Proxy
@@ -59,18 +59,18 @@ Die WinHTTP-Konfigurationseinstellung ist unabhängig von den Windows Internet (
 Konfigurieren Sie einen registrierungsbasierten statischen Proxy, damit nur defender for Endpoint-Sensor Diagnosedaten melden und mit Defender for Endpoint-Diensten kommunizieren kann, wenn ein Computer keine Verbindung mit dem Internet herstellen darf.
 
 > [!NOTE]
-> - Wenn Sie diese Option unter Windows 10 oder Windows Server 2019 verwenden, wird empfohlen, das folgende (oder höher) Build- und kumulative Updaterollup zu verwenden:</br>
-> Windows 10, Version 1809 oder Windows Server 2019 – https://support.microsoft.com/kb/5001384 <br>
-> Windows 10, Version 1909 – https://support.microsoft.com/kb/4601380</br>
-> Windows 10, Version 2004 – https://support.microsoft.com/kb/4601382</br>
-> Windows 10, Version 20H2 – https://support.microsoft.com/kb/4601382</br>
+> - Wenn Sie diese Option auf Windows 10 oder Windows Server 2019 verwenden, wird empfohlen, das folgende (oder höher) Build- und kumulative Updaterollup zu verwenden:</br>
+> Windows 10, Version 1809 oder Windows Server 2019 –https://support.microsoft.com/kb/5001384 <br>
+> Windows 10, Version 1909 -https://support.microsoft.com/kb/4601380</br>
+> Windows 10, Version 2004 –https://support.microsoft.com/kb/4601382</br>
+> Windows 10, Version 20H2 -https://support.microsoft.com/kb/4601382</br>
 > Diese Updates verbessern die Konnektivität und Zuverlässigkeit des CnC(Command and Control)-Kanals.</br>
 
 Der statische Proxy kann mithilfe von Gruppenrichtlinien konfiguriert werden. Die Gruppenrichtlinien finden Sie unter:
 
-- Administrative Vorlagen > Windows-Komponenten > Datensammlungs- und Vorschaubuilds > Konfigurieren der authentifizierten Proxyverwendung für den verbundenen Benutzererfahrungs- und Telemetriedienst
+- Administrative Vorlagen > Windows Komponenten > Datensammlungs- und Vorschaubuilds > Konfigurieren der authentifizierten Proxyverwendung für den verbundenen Benutzererfahrungs- und Telemetriedienst
   - Legen Sie es **auf Aktiviert,** und wählen **Sie Authentifizierte Proxyverwendung deaktivieren** aus: Abbildung der ![ Gruppenrichtlinieneinstellung1](images/atp-gpo-proxy1.png)
-- **Administrative Vorlagen > Windows-Komponenten > Datensammlungs- und Vorschaubuilds**> Konfigurieren von verbundenen Benutzererfahrungen und Telemetrie :
+- Administrative Vorlagen > Windows Komponenten > Datensammlung und Vorschaubuilds > Konfigurieren von verbundenen **Benutzererfahrungen und Telemetrie**:
   - Konfigurieren des Proxys:<br>
     ![Abbildung der Gruppenrichtlinieneinstellung2](images/atp-gpo-proxy2.png)
 
@@ -131,19 +131,19 @@ In der folgenden herunterladbaren Kalkulationstabelle sind die Dienste und die z
 Wenn bei einem Proxy oder einer Firewall die HTTPS-Überprüfung aktiviert ist (SSL-Inspektion), schließen Sie die in der obigen Tabelle aufgeführten Domänen von der HTTPS-Überprüfung aus.
 
 > [!NOTE]
-> settings-win.data.microsoft.com ist nur erforderlich, wenn Windows 10-Geräte mit Version 1803 oder früher ausgeführt werden.<br>
+> settings-win.data.microsoft.com ist nur erforderlich, wenn Windows 10 Version 1803 oder früher installiert sind.<br>
 
 
 > [!NOTE]
-> URLs, die v20 enthalten, werden nur benötigt, wenn Windows 10-Geräte mit Version 1803 oder höher ausgeführt werden. Ist beispielsweise für ein Windows 10-Gerät mit Version 1803 oder höher erforderlich und in die ```us-v20.events.data.microsoft.com``` Region "US Data Storage" onboarded.
+> URLs, die v20 enthalten, werden nur benötigt, wenn sie Windows 10 Version 1803 oder höher ausführen. Ist beispielsweise ```us-v20.events.data.microsoft.com``` für ein Gerät erforderlich, Windows 10 Version 1803 oder höher ausgeführt wird und in die STORAGE wird.
 
 
 > [!NOTE]
-> Wenn Sie Microsoft Defender Antivirus in Ihrer Umgebung verwenden, lesen Sie Konfigurieren von Netzwerkverbindungen [mit dem Microsoft Defender Antivirus-Clouddienst](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
+> Wenn Sie Microsoft Defender Antivirus in Ihrer Umgebung verwenden, lesen Sie Konfigurieren von Netzwerkverbindungen [mit dem Microsoft Defender Antivirus Clouddienst](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
 
 Wenn ein Proxy oder eine Firewall anonymen Datenverkehr blockiert, da der Defender for Endpoint-Sensor eine Verbindung aus dem Systemkontext verbindet, stellen Sie sicher, dass anonymer Datenverkehr in den zuvor aufgeführten URLs zulässig ist.
 
-### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA) – Proxy- und Firewallanforderungen für ältere Versionen von Windows Client oder Windows Server
+### <a name="microsoft-monitoring-agent-mma---proxy-and-firewall-requirements-for-older-versions-of-windows-client-or-windows-server"></a>Microsoft Monitoring Agent (MMA) – Proxy- und Firewallanforderungen für ältere Versionen von Windows client oder Windows Server
 
 In den folgenden Informationen sind die Proxy- und Firewallkonfigurationsinformationen aufgeführt, die für die Kommunikation mit dem Log Analytics-Agent (häufig als Microsoft Monitoring Agent bezeichnet) für die vorherigen Versionen von Windows wie Windows 7 SP1, Windows 8.1, Windows Server 2008 R2, Windows Server 2012 R2 und Windows Server 2016 erforderlich sind.
 
@@ -158,21 +158,21 @@ In den folgenden Informationen sind die Proxy- und Firewallkonfigurationsinforma
 > [!NOTE]
 > Als cloudbasierte Lösung kann sich der IP-Bereich ändern. Es wird empfohlen, zur Einstellung für die DNS-Auflösung zu wechseln.
 
-## <a name="confirm-microsoft-monitoring-agent-mma-service-url-requirements"></a>Bestätigen der Microsoft Monitoring Agent (MMA)-Dienst-URL-Anforderungen 
+## <a name="confirm-microsoft-monitoring-agent-mma-service-url-requirements"></a>Bestätigen Microsoft Monitoring Agent (MMA)-Dienst-URL-Anforderungen 
 
-Lesen Sie die folgenden Anleitungen, um die Platzhalter (*)-Anforderung für Ihre spezifische Umgebung zu beseitigen, wenn Sie den Microsoft Monitoring Agent (MMA) für frühere Versionen von Windows verwenden.
+Lesen Sie die folgenden Anleitungen, um die Platzhalter (*)-Anforderung für Ihre spezifische Umgebung zu beseitigen, wenn Sie das Microsoft Monitoring Agent (MMA) für frühere Versionen von Windows.
 
 1.  Onboarding a previous operating system with the Microsoft Monitoring Agent (MMA) into Defender for Endpoint (for more information, [see Onboard previous versions of Windows on Defender for Endpoint](https://go.microsoft.com/fwlink/p/?linkid=2010326) and Onboard Windows [servers](configure-server-endpoints.md#windows-server-2008-r2-sp1-windows-server-2012-r2-and-windows-server-2016).
 
-2.  Stellen Sie sicher, dass der Computer erfolgreich über das Microsoft Defender Security Center-Portal berichtet.
+2.  Stellen Sie sicher, dass der Computer erfolgreich im Microsoft Defender Security Center meldet.
 
-3.  Führen Sie TestCloudConnection.exe "C:\Program Files\Microsoft Monitoring Agent\Agent" aus, um die Konnektivität zu überprüfen und die erforderlichen URLs für Ihren bestimmten Arbeitsbereich zu sehen.
+3.  Führen Sie TestCloudConnection.exe "C:\Program Files\Microsoft Monitoring Agent\Agent" aus, um die Verbindung zu überprüfen und die erforderlichen URLs für Ihren bestimmten Arbeitsbereich zu sehen.
 
 4.  In der Liste der Microsoft Defender for Endpoint-URLs finden Sie die vollständige Liste der Anforderungen für Ihre Region (weitere Informationen finden Sie unter Service URLs [Spreadsheet](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)).
 
 ![Abbildung des Administrators in Windows PowerShell](images/admin-powershell.png)
 
-Die Platzhalter (*) in *.ods.opinsights.azure.com-, *.oms.opinsights.azure.com- und *.agentsvc.azure-automation.net-URL-Endpunkten können durch Ihre spezifische Arbeitsbereich-ID ersetzt werden. Die Workspace-ID ist spezifisch für Ihre Umgebung und Ihren Arbeitsbereich und ist im Abschnitt Onboarding Ihres Mandanten im Microsoft Defender Security Center-Portal zu finden.
+Die Platzhalter (*) in *.ods.opinsights.azure.com-, *.oms.opinsights.azure.com- und *.agentsvc.azure-automation.net-URL-Endpunkten können durch Ihre spezifische Arbeitsbereich-ID ersetzt werden. Die Arbeitsbereichs-ID ist für Ihre Umgebung und Ihren Arbeitsbereich spezifisch und befindet sich im Abschnitt Onboarding Ihres Mandanten im Microsoft Defender Security Center Portal.
 
 Der *.blob.core.windows.net-URL-Endpunkt kann durch die URLs ersetzt werden, die im Abschnitt "Firewallregel: *.blob.core.windows.net" der Testergebnisse angezeigt werden. 
 
@@ -183,7 +183,7 @@ Der *.blob.core.windows.net-URL-Endpunkt kann durch die URLs ersetzt werden, die
 
 Vergewissern Sie sich, dass die Proxykonfiguration erfolgreich abgeschlossen wurde, dass WinHTTP ermitteln und über den Proxyserver in Ihrer Umgebung kommunizieren kann und dass der Proxyserver Datenverkehr zu Defender für Endpunkt-Dienst-URLs zulässt.
 
-1. Laden Sie [das MDATP Client Analyzer-Tool](https://aka.ms/mdatpanalyzer) auf den PC herunter, auf dem der Defender for Endpoint-Sensor ausgeführt wird.
+1. Laden Sie [MDATP Client Analyzer-Tool auf](https://aka.ms/mdatpanalyzer) den PC herunter, auf dem der Defender for Endpoint-Sensor ausgeführt wird.
 
 2. Extrahieren Sie den Inhalt von MDATPClientAnalyzer.zip auf dem Gerät.
 
@@ -207,7 +207,7 @@ Vergewissern Sie sich, dass die Proxykonfiguration erfolgreich abgeschlossen wur
 
 5. Extrahieren Sie *dieMDATPClientAnalyzerResult.zip,* die vom Tool im Ordner erstellt wurde, der in *HardDrivePath verwendet wird.*
 
-6. Öffnen Sie *MDATPClientAnalyzerResult.txt*, und vergewissern Sie sich, dass Sie die Schritte zur Proxykonfiguration durchgeführt haben, um die Serverermittlung und den Zugriff auf die Dienst-URLs zu aktivieren. <br><br>
+6. Öffnen Sie *MDATPClientAnalyzerResult.txt*, und vergewissern Sie sich, dass Sie die Schritte zur Proxykonfiguration durchgeführt haben, um die Serverermittlung und den Zugriff auf die Dienst-URLs zu aktivieren.<br><br>
    Das Tool überprüft die Konnektivität von Defender für Endpunkt-Dienst-URLs, mit denen der Defender für Endpunkt-Client laut Konfiguration interagieren kann. Anschließend werden die Ergebnisse für jede URL, die potentiell für die Kommunikation mit den Defender für Endpunkt-Diensten verwendet werden kann, in die Datei *MDATPClientAnalyzerResult.txt* gedruckt. Beispiel:
 
    ```text

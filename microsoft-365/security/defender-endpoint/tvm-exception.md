@@ -1,7 +1,7 @@
 ---
-title: Erstellen und Anzeigen von Ausnahmen für Sicherheitsempfehlungen – Bedrohungs- und Sicherheitsrisikoverwaltung
-description: Erstellen und Überwachen von Ausnahmen für Sicherheitsempfehlungen im Bedrohungs- und Sicherheitsrisikomanagement.
-keywords: Microsoft Defender for Endpoint tvmmediation, Microsoft Defender for Endpoint tvm, Threat and Vulnerability Management, Threat & Vulnerability Management, Threat & Vulnerability Management Remediation, tvm remediation intune, tvm remediation sccm
+title: Erstellen und Anzeigen von Ausnahmen für Sicherheitsempfehlungen – Bedrohungs- und Sicherheitsrisikomanagement
+description: Erstellen und überwachen Sie Ausnahmen für Sicherheitsempfehlungen in Bedrohungs- und Sicherheitsrisikomanagement.
+keywords: Microsoft Defender for Endpoint tvm remediation, Microsoft Defender for Endpoint tvm, Bedrohungs- und Sicherheitsrisikomanagement, threat & Sicherheitsrisikomanagement, threat & Sicherheitsrisikomanagement remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,14 +25,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933745"
 ---
-# <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Erstellen und Anzeigen von Ausnahmen für Sicherheitsempfehlungen – Bedrohungs- und Sicherheitsrisikoverwaltung
+# <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Erstellen und Anzeigen von Ausnahmen für Sicherheitsempfehlungen – Bedrohungs- und Sicherheitsrisikomanagement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Bedrohungs- und Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md)
+- [Bedrohung und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -62,9 +62,9 @@ Wenden Sie die Ausnahme auf alle aktuellen Gerätegruppen an, oder wählen Sie b
 
 #### <a name="filtered-views"></a>Gefilterte Ansichten
 
-Wenn Sie nach Gerätegruppe auf einer der Bedrohungs- und Sicherheitsrisikoverwaltungsseiten gefiltert haben, werden nur ihre gefilterten Gerätegruppen als Optionen angezeigt.
+Wenn Sie auf einer der Bedrohungs- und Sicherheitsrisikomanagement nach Gerätegruppe gefiltert haben, werden nur die gefilterten Gerätegruppen als Optionen angezeigt.
 
-Dies ist die Schaltfläche zum Filtern nach Gerätegruppe auf einer der Seiten zur Verwaltung von Bedrohungen und Sicherheitslücken: 
+Dies ist die Schaltfläche zum Filtern nach Gerätegruppe auf einer der Bedrohungs- und Sicherheitsrisikomanagement Seiten: 
 
 ![Anzeigen ausgewählter Gerätegruppenfilter.](images/tvm-selected-device-groups.png)
 
@@ -128,7 +128,7 @@ Wählen Sie die bestimmte Gerätegruppe aus, um die Ausnahme für sie abbricht. 
 
 ## <a name="view-impact-after-exceptions-are-applied"></a>Anzeigen von Auswirkungen nach der Anwendung von Ausnahmen
 
-Wählen Sie auf der Seite Sicherheitsempfehlungen **spalten** anpassen aus, und aktivieren Sie die Kontrollkästchen für Verfügbar gemachte Geräte **(nach Ausnahmen)** und **Auswirkung (nach Ausnahmen).**
+Wählen Sie auf Empfehlungen Seite  Sicherheit Spalten anpassen aus, und aktivieren Sie die Kontrollkästchen für Verfügbar gemachte Geräte **(nach Ausnahmen)** und **Auswirkung (nach Ausnahmen).**
 
 ![Anzeigen von Optionen zum Anpassen von Spalten.](images/tvm-after-exceptions.png)
 
@@ -140,7 +140,7 @@ Die Auswirkung (nach Ausnahmen) zeigt die verbleibenden Auswirkungen auf die Bew
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Übersicht über die Verwaltung von Bedrohungen und Sicherheitslücken](next-gen-threat-and-vuln-mgt.md)
+- [Übersicht über Bedrohungen Sicherheitsrisikomanagement Bedrohungen](next-gen-threat-and-vuln-mgt.md)
 - [Sicherheitsrisiken korrigieren](tvm-remediation.md)
 - [Sicherheitsempfehlungen](tvm-security-recommendation.md)
 - [Gefährdungsscore](tvm-exposure-score.md)

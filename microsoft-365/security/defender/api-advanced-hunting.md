@@ -1,6 +1,6 @@
 ---
 title: Microsoft 365 Defender advanced hunting API
-description: Erfahren Sie, wie Sie erweiterte Suchabfragen mithilfe der erweiterten Such-API von Microsoft 365 Defender ausführen.
+description: Erfahren Sie, wie Sie erweiterte Suchabfragen mithilfe Microsoft 365 erweiterten Such-API von Defender ausführen.
 keywords: Erweiterte Suche, APIs, API, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -38,7 +38,7 @@ ms.locfileid: "51932893"
 > [!IMPORTANT]
 > Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
 
-[Die erweiterte Suche](advanced-hunting-overview.md) ist ein Tool zur [Bedrohungssuche,](advanced-hunting-query-language.md) das speziell konstruierte Abfragen verwendet, um die letzten 30 Tage mit Ereignisdaten in Microsoft 365 Defender zu untersuchen. Sie können erweiterte Suchabfragen verwenden, um ungewöhnliche Aktivitäten zu untersuchen, mögliche Bedrohungen zu erkennen und sogar auf Angriffe zu reagieren. Mit der erweiterten Such-API können Sie Ereignisdaten programmgesteuert abfragen.
+[Die erweiterte Suche](advanced-hunting-overview.md) ist ein Tool zur [Bedrohungssuche,](advanced-hunting-query-language.md) das speziell konstruierte Abfragen verwendet, um die letzten 30 Tage der Ereignisdaten in Microsoft 365 untersuchen. Sie können erweiterte Suchabfragen verwenden, um ungewöhnliche Aktivitäten zu untersuchen, mögliche Bedrohungen zu erkennen und sogar auf Angriffe zu reagieren. Mit der erweiterten Such-API können Sie Ereignisdaten programmgesteuert abfragen.
 
 ## <a name="quotas-and-resource-allocation"></a>Kontingente und Ressourcenzuordnung
 

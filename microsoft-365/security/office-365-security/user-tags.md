@@ -13,7 +13,7 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Administratoren erfahren, wie Sie bestimmte Benutzergruppen mit Benutzertags in Microsoft Defender für Office 365 Plan 2 identifizieren. Die Tagfilterung ist in Warnungen, Berichten und Untersuchungen in Microsoft Defender für Office 365 verfügbar, um die markierten Benutzer schnell zu identifizieren.
+description: Administratoren erfahren, wie Sie bestimmte Benutzergruppen mit Benutzertags in Microsoft Defender für Office 365 Plan 2 identifizieren. Die Tagfilterung ist für Warnungen, Berichte und Untersuchungen in Microsoft Defender verfügbar, damit Office 365 markierte Benutzer schnell identifizieren können.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 2c1dc426bae77cd35b567bf166032855327a8ffe
@@ -26,9 +26,9 @@ ms.locfileid: "51943011"
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Benutzertags in Microsoft Defender für Office 365
 
 > [!NOTE]
-> Das Feature für Benutzertags befindet sich in der Vorschau, ist nicht für alle verfügbar und kann geändert werden. Informationen zum Veröffentlichungszeitplan finden Sie in [der Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
+> Das Feature für Benutzertags befindet sich in der Vorschau, ist nicht für alle verfügbar und kann geändert werden. Informationen zum Veröffentlichungszeitplan finden Sie in der [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
 
-Benutzertags sind Bezeichner für bestimmte Benutzergruppen in [Microsoft Defender für Office 365](defender-for-office-365.md). Es gibt zwei Arten von Benutzertags:
+Benutzertags sind Bezeichner für bestimmte Benutzergruppen in [Microsoft Defender für Office 365.](defender-for-office-365.md) Es gibt zwei Arten von Benutzertags:
 
 - **Systemtags**: Derzeit sind [Prioritätskonten](../../admin/setup/priority-accounts.md) der einzige Systemtagtyp.
 - **Benutzerdefinierte Tags:** Sie erstellen diese Benutzertags selbst.
@@ -44,14 +44,14 @@ Nachdem Sie Systemtags oder benutzerdefinierte Tags auf Benutzer angewendet habe
 - [Bedrohungs-Explorer und Echtzeiterkennungen](threat-explorer.md)
 - [Threat Protection-Statusbericht](view-email-security-reports.md#threat-protection-status-report)
 - [Kampagnenansichten](campaigns.md)
-- Für Prioritätskonten können Sie den Bericht [E-Mail-Probleme für Prioritätskonten](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) im Exchange Admin Center (EAC) verwenden.
+- Für Prioritätskonten können Sie den Bericht E-Mail-Probleme für [Prioritätskonten](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report) im Exchange Admin Center (EAC) verwenden.
 
 In diesem Artikel wird erläutert, wie Sie Benutzertags im Security & Compliance Center konfigurieren. Es gibt keine Cmdlets im Security & Compliance Center zum Verwalten von Benutzertags.
 
-Informationen dazu, wie Benutzertags Teil der Strategie zum Schutz von Benutzerkonten mit hoher Auswirkung sind, finden Sie unter Sicherheitsempfehlungen für Prioritätskonten [in Microsoft 365](security-recommendations-for-priority-accounts.md).
+Informationen dazu, wie Benutzertags Teil der Strategie zum Schutz von Benutzerkonten mit hoher Auswirkung sind, finden Sie unter Sicherheitsempfehlungen für [Prioritätskonten in Microsoft 365](security-recommendations-for-priority-accounts.md).
 
 > [!NOTE]
-> Wenn Sie das einheitliche Microsoft 365 Security Center verwenden, können Sie tags hier festlegen: https://security.microsoft.com/userTags .
+> Wenn Sie das unified Microsoft 365 verwenden, können Sie tags hier festlegen: https://security.microsoft.com/userTags .
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -69,7 +69,7 @@ Informationen dazu, wie Benutzertags Teil der Strategie zum Schutz von Benutzerk
   - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen im Security & Compliance Center _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   - Die Verwaltung von Benutzertagen wird durch die **Rollen Tag Reader und** Tag **Manager** gesteuert.
 
-- Sie können auch Prioritätskonten im Microsoft 365 Admin Center verwalten und überwachen. Anweisungen finden Sie unter [Verwalten und Überwachen von Prioritätskonten](../../admin/setup/priority-accounts.md).
+- Sie können auch Prioritätskonten im Microsoft 365 verwalten und überwachen. Anweisungen finden Sie unter [Verwalten und Überwachen von Prioritätskonten](../../admin/setup/priority-accounts.md).
 
 - Informationen zum Sichern _privilegierter Konten_ (Administratorkonten) finden Sie [in diesem Thema.](/azure/architecture/framework/security/critical-impact-accounts)
 

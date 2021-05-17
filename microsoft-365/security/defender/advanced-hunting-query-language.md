@@ -40,7 +40,7 @@ Die erweiterte Suche basiert auf der [Kusto-Abfragesprache](/azure/kusto/query/)
 
 ## <a name="try-your-first-query"></a>Testen Ihrer ersten Abfrage
 
-Wechseln Sie im Microsoft 365 Security Center zu **Hunting,** um Ihre erste Abfrage ausführen. Verwenden Sie das folgende Beispiel:
+Wechseln Microsoft 365 Sicherheitscenter zu **Hunting,** um Ihre erste Abfrage ausführen. Verwenden Sie das folgende Beispiel:
 
 ```kusto
 // Finds PowerShell execution events that could involve a download
@@ -176,14 +176,14 @@ Der Abschnitt **Erste Schritte** bietet einige einfache Abfragen mit häufig ver
 ![Abbildung eines erweiterten Suchfensters](../../media/advanced-hunting-get-started.png)
 
 >[!NOTE]
->Abgesehen von den einfachen Abfragebeispielen können Sie auch auf [freigegebene Abfragen](advanced-hunting-shared-queries.md) für bestimmte Szenarien zur Bedrohungssuche zugreifen. Erkunden Sie die freigegebenen Abfragen auf der linken Seite der Seite oder im [GitHub-Abfragerepository](https://aka.ms/hunting-queries).
+>Abgesehen von den einfachen Abfragebeispielen können Sie auch auf [freigegebene Abfragen](advanced-hunting-shared-queries.md) für bestimmte Szenarien zur Bedrohungssuche zugreifen. Erkunden Sie die freigegebenen Abfragen auf der linken Seite der Seite oder im [GitHub Abfragerepository .](https://aka.ms/hunting-queries)
 
 ## <a name="access-query-language-documentation"></a>Zugreifen auf die Dokumentation zur Abfragesprache
 
 Weitere Informationen zur Kusto-Abfragesprache und zu unterstützten Operatoren finden Sie unter [Dokumentation zur Kusto-Abfragesprache](/azure/kusto/query/).
 
 >[!NOTE]
->Einige Tabellen in diesem Artikel sind möglicherweise nicht in Microsoft Defender for Endpoint verfügbar. [Aktivieren Sie Microsoft 365 Defender,](m365d-enable.md) um bedrohungen mithilfe von weiteren Datenquellen nach Bedrohungen zu fahnen. Sie können Ihre erweiterten Suchworkflows von Microsoft Defender for Endpoint zu Microsoft 365 Defender verschieben, indem Sie die Schritte unter [Migrate advanced hunting queries from Microsoft Defender for Endpoint ausführen.](advanced-hunting-migrate-from-mde.md)
+>Einige Tabellen in diesem Artikel sind möglicherweise nicht in Microsoft Defender for Endpoint verfügbar. [Aktivieren Sie Microsoft 365 Defender,](m365d-enable.md) um bedrohungen mithilfe von weiteren Datenquellen nach Bedrohungen zu fahnen. Sie können Ihre workflows für die erweiterte Suche von Microsoft Defender for Endpoint zu Microsoft 365 Defender verschieben, indem Sie die Schritte unter [Migrate advanced hunting queries from Microsoft Defender for Endpoint ausführen.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

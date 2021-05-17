@@ -1,5 +1,5 @@
 ---
-title: Geräteprofil im Microsoft 365-Sicherheitsportal
+title: Geräteprofil im Microsoft 365 Sicherheitsportal
 description: Anzeigen der Risiko- und Risikostufen für ein Gerät in Ihrer Organisation. Analysieren Sie frühere und aktuelle Bedrohungen, und schützen Sie das Gerät mit den neuesten Updates.
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Microsoft 365 Defender, Security Center, Microsoft Defender for Endpoint, Microsoft Defender für Office 365, Microsoft Defender for Identity, Geräteseite, Geräteprofil, Computerseite, Computerprofil
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.locfileid: "51935665"
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 
-Das Microsoft 365-Sicherheitsportal stellt Ihnen Geräteprofilseiten zur Verfügung, sodass Sie den Zustand und Status von Geräten in Ihrem Netzwerk schnell bewerten können.
+Das Microsoft 365 bietet Ihnen Geräteprofilseiten, sodass Sie den Zustand und Status von Geräten in Ihrem Netzwerk schnell bewerten können.
 
 > [!IMPORTANT]
 > Je nachdem, ob das Gerät in Microsoft Defender for Endpoint, Microsoft Defender for Identity oder beides registriert ist, kann die Geräteprofilseite etwas anders angezeigt werden.
@@ -75,10 +75,10 @@ Reaktionsaktionen bieten eine schnelle Möglichkeit, bedrohungen zu schützen un
 Auf der Seite "Geräteprofil" verfügbare Aktionen umfassen:
 
 * **Verwalten von Tags** – Aktualisiert benutzerdefinierte Tags, die Sie auf dieses Gerät angewendet haben.
-* **Gerät isolieren** : Isoliert das Gerät vom Netzwerk Ihrer Organisation, während es mit Microsoft Defender for Endpoint verbunden bleibt. Sie können festlegen, dass Outlook, Teams und Skype for Business ausgeführt werden können, während das Gerät isoliert ist, und zwar aus Kommunikationsgründen.
+* **Gerät isolieren** : Isoliert das Gerät vom Netzwerk Ihrer Organisation, während es mit Microsoft Defender for Endpoint verbunden bleibt. Sie können die Ausführung von Outlook, Teams und Skype for Business, während das Gerät isoliert ist, zu Kommunikationszwecken zulassen.
 * **Aktionscenter** – Zeigt den Status der übermittelten Aktionen an. Nur verfügbar, wenn bereits eine andere Aktion ausgewählt wurde.
 * **Einschränken der App-Ausführung** – Verhindert die Ausführung von Anwendungen, die nicht von Microsoft signiert sind.
-* **Antivirusscan ausführen** – Updates Windows Defender Antivirusdefinitionen und führen sofort eine Antivirenscan aus. Wählen Sie zwischen Schnellscan oder Vollständiger Scan aus.
+* **Antivirusscan ausführen** – Updates Windows Defender Antivirus Definitionen und führen sofort einen Antivirenscan aus. Wählen Sie zwischen Schnellscan oder Vollständiger Scan aus.
 * **Untersuchungspaket sammeln** – Sammelt Informationen über das Gerät. Wenn die Untersuchung abgeschlossen ist, können Sie sie herunterladen.
 * **Initiieren der Liveantwortsitzung** – Lädt eine Remoteshell auf dem Gerät für [eingehende Sicherheitsuntersuchungen.](/microsoft-365/security/defender-endpoint/live-response)
 * **Initiieren einer automatisierten** Untersuchung – Bedrohungen werden [automatisch untersucht und behoben.](../office-365-security/office-365-air.md) Obwohl Sie automatisierte Untersuchungen manuell auslösen [können,](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) um von dieser Seite aus ausgeführt zu werden, lösen bestimmte Warnungsrichtlinien automatische Untersuchungen allein aus.
@@ -90,7 +90,7 @@ Mit den Registerkarten des Geräteprofils können Sie eine Übersicht über Sich
 
 Auf Geräten, die in Microsoft Defender for Endpoint registriert sind, werden auch Registerkarten angezeigt, die über eine Zeitachse, eine Liste von Sicherheitsempfehlungen, ein Softwareinventar, eine Liste der erkannten Sicherheitsrisiken und fehlende KBs (Sicherheitsupdates) verfügen.
 
-### <a name="overview-tab"></a>Registerkarte "Übersicht"
+### <a name="overview-tab"></a>Registerkarte „Übersicht“
 
 Die Standardregisterkarte ist **Overview**. Es bietet einen schnellen Überblick über die wichtigsten Sicherheitsrisiken des Geräts.
 
@@ -180,7 +180,7 @@ Wenn Sie ein Element auswählen, wird ein Flyout geöffnet, das mit dem Update v
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-* [Übersicht über Microsoft 365 Defender](microsoft-365-defender.md)
+* [Microsoft 365 Übersicht über Defender](microsoft-365-defender.md)
 * [Microsoft 365 Defender aktivieren](m365d-enable.md)
 * [Untersuchen von Entitäten auf Geräten mithilfe von Liveantworten](../defender-endpoint/live-response.md)
 * [Automatisierte Untersuchung und Reaktion (AIR) in Office 365](../office-365-security/office-365-air.md)

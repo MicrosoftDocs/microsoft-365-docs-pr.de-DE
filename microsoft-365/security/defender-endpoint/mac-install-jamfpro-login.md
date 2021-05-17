@@ -1,6 +1,6 @@
 ---
-title: Melden Sie sich bei Jamf Pro an
-description: Melden Sie sich bei Jamf Pro an
+title: Melden Sie sich bei Jamf Pro
+description: Melden Sie sich bei Jamf Pro
 keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,7 +25,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935581"
 ---
-# <a name="log-in-to-jamf-pro"></a>Melden Sie sich bei Jamf Pro an
+# <a name="log-in-to-jamf-pro"></a>Melden Sie sich bei Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "51935581"
 
 1. Geben Sie Ihre Anmeldeinformationen ein.
 
-    ![Abbildung des Jamf Pro Dashboard1](images/jamf-pro-portal1.png)
+    ![Abbildung von Jamf Pro Dashboard1](images/jamf-pro-portal1.png)
 
 2. Wählen Sie **Computer aus.**
 

@@ -1,5 +1,5 @@
 ---
-title: FileProfile()-Funktion bei der erweiterten Suche für Microsoft 365 Defender
+title: FileProfile()-Funktion bei der erweiterten Suche nach Microsoft 365 Defender
 description: Erfahren Sie, wie Sie FileProfile() zum Anreichern von Informationen zu Dateien in Ihren erweiterten Suchergebnissen verwenden.
 keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, FileProfile, file profile, function, enrichment
 search.product: eADQiWindows 10XVcnh
@@ -49,10 +49,10 @@ Die `FileProfile()` Funktion ist eine Anreicherungsfunktion bei der erweiterten 
 | `Signer` | Zeichenfolge | Informationen zum Signier der Datei |
 | `Issuer` | Zeichenfolge | Informationen zur ausstellenden Zertifizierungsstelle |
 | `SignerHash` | Zeichenfolge | Eindeutiger Hashwert, der den Signier identifiziert |
-| `IsCertificateValid` | Boolescher Wert | Gibt an, ob das zum Signieren der Datei verwendete Zertifikat gültig ist |
-| `IsRootSignerMicrosoft` | Boolescher Wert | Gibt an, ob der Signier des Stammzertifikats Microsoft ist |
+| `IsCertificateValid` | boolean | Gibt an, ob das zum Signieren der Datei verwendete Zertifikat gültig ist |
+| `IsRootSignerMicrosoft` | boolean | Gibt an, ob der Signier des Stammzertifikats Microsoft ist |
 | `SignatureState` | Zeichenfolge | Status der Dateisignatur: SignedValid - die Datei ist mit einer gültigen Signatur signiert, SignedInvalid - die Datei ist signiert, aber das Zertifikat ist ungültig, Unsigned - die Datei ist nicht signiert, unbekannt - Informationen zur Datei können nicht abgerufen werden
-| `IsExecutable` | Boolescher Wert | Gibt an, ob es sich bei der Datei um eine portable ausführbare Datei (Portable Executable, PE) handelt |
+| `IsExecutable` | boolean | Gibt an, ob es sich bei der Datei um eine portable ausführbare Datei (Portable Executable, PE) handelt |
 | `ThreatName` | Zeichenfolge | Erkennungsname für gefundene Schadsoftware oder andere Bedrohungen |
 | `Publisher` | Zeichenfolge | Name der Organisation, die die Datei veröffentlicht hat |
 | `SoftwareName` | string | Name des Softwareprodukts |
@@ -74,7 +74,7 @@ invoke FileProfile(x,y)
 
 ## <a name="examples"></a>Beispiele
 
-### <a name="project-only-the-sha1-column-and-enrich-it"></a>Nur die SPALTE "SHA1" projekt- und bereichern
+### <a name="project-only-the-sha1-column-and-enrich-it"></a>Project nur die SHA1-Spalte und bereichern Sie sie
 
 ```kusto
 DeviceFileEvents

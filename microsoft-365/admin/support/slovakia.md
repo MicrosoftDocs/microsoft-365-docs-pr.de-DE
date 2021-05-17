@@ -35,6 +35,6 @@ Englisch: Mo-Fr 9:00 bis 17:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefon Nummer: 026 862 2111
+Alternative Telefonnummer: 026 862 2111
 
 Es gelten die Ortstarife.

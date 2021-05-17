@@ -1,7 +1,7 @@
 ---
 title: Erhalten von installierter Software
 description: Ruft eine Sammlung installierter Software im Zusammenhang mit einer bestimmten Geräte-ID ab.
-keywords: apis, graph api, supported apis, get, list, file, information, software inventory, installed software per device, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
+keywords: apis, graph api, supported apis, get, list, file, information, software inventory, installed software per device, threat & Sicherheitsrisikomanagement api, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -57,7 +57,7 @@ GET /api/machines/{machineId}/software
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
+Authorization | String | Bearer {token}. **Erforderlich**.
 
 
 ## <a name="request-body"></a>Anforderungstext

@@ -1,6 +1,6 @@
 ---
 title: EmailPostDeliveryEvents-Tabelle im schema der erweiterten Suche
-description: Informationen zu Aktionen nach der Zustellung für Microsoft 365-E-Mails finden Sie in der EmailPostDeliveryEvents-Tabelle des schemas für erweiterte Suche
+description: Weitere Informationen zu Aktionen nach der Zustellung Microsoft 365 E-Mails finden Sie in der EmailPostDeliveryEvents-Tabelle des schemas für die erweiterte Suche.
 keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailPostDeliveryEvents, network message id, sender, recipient, attachment id, attachment name, malware verdict, phishing verdict, attachment count, link count, url count
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,7 +35,7 @@ ms.locfileid: "51935473"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Die Tabelle im Schema der erweiterten Suche enthält Informationen zu Aktionen nach der Zustellung, die für von `EmailPostDeliveryEvents` Microsoft 365 verarbeitete E-Mail-Nachrichten ergriffen werden. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
+Die Tabelle im Schema der erweiterten Suche enthält Informationen zu Aktionen nach der Zustellung, die für `EmailPostDeliveryEvents` E-Mail-Nachrichten, die von einem Benutzer verarbeitet Microsoft 365. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
 >[!TIP]
 > Ausführliche Informationen zu den von einer Tabelle unterstützten Ereignistypen ( Werte) finden Sie unter Verwendung der integrierten Schemareferenz, die `ActionType` im Security Center verfügbar ist.
@@ -45,7 +45,7 @@ Um weitere Informationen zu einzelnen E-Mail-Nachrichten zu erhalten, können Si
 | Spaltenname | Datentyp | Beschreibung |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
-| `NetworkMessageId` | string | Eindeutige ID für die von Microsoft 365 generierte E-Mail |
+| `NetworkMessageId` | string | Eindeutige ID für die E-Mail, generiert von Microsoft 365 |
 | `InternetMessageId` | string | Öffentlich sichtbarer Bezeichner für die E-Mail-Nachricht, die vom sendenden E-Mail-System festgelegt wird |
 | `Action` | string | Für die Entität ergriffene Aktion |
 | `ActionType` | Zeichenfolge | Aktivitätstyp, der das Ereignis ausgelöst hat: Manuelle Korrektur, Phish ZAP, Schadsoftware-ZAP |

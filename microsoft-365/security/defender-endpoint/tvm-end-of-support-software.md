@@ -1,7 +1,7 @@
 ---
 title: Planen von Software- und Softwareversionen zum Ende der Unterstützung
 description: Ermitteln und planen Sie Software- und Softwareversionen, die nicht mehr unterstützt werden und keine Sicherheitsupdates erhalten.
-keywords: Bedrohungs- und Sicherheitsrisikoverwaltung, Microsoft Defender for Endpoint tvm-Sicherheitsempfehlung, Cybersicherheitsempfehlung, Empfehlungen zur Sicherheit mit Aktionen
+keywords: Bedrohungs- und Sicherheitsrisikomanagement, Microsoft Defender for Endpoint tvm-Sicherheitsempfehlung, Cybersicherheitsempfehlung, Empfehlung zur Sicherheit mit Aktionen
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,14 +25,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934129"
 ---
-# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>Planen von Software- und Softwareversionen zum Ende der Unterstützung mit Bedrohungs- und Sicherheitsrisikoverwaltung
+# <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>Planen von Software- und Softwareversionen am Ende der Unterstützung mit Bedrohungs- und Sicherheitsrisikomanagement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Bedrohungs- und Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md)
+- [Bedrohung und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -43,14 +43,14 @@ Es ist wichtig, dass Sicherheits- und IT-Administratoren zusammenarbeiten und si
 
 ## <a name="find-software-or-software-versions-that-are-no-longer-supported"></a>Suchen nach Software- oder Softwareversionen, die nicht mehr unterstützt werden
 
-1. Navigieren Sie im Menü Bedrohungs- und Sicherheitsrisikoverwaltung zu [**Sicherheitsempfehlungen**](tvm-security-recommendation.md).
+1. Navigieren Sie Bedrohungs- und Sicherheitsrisikomanagement Menü zu [**Sicherheitsempfehlungen**](tvm-security-recommendation.md).
 2. Wechseln Sie zum **Bereich Filter,** und suchen Sie nach dem Abschnitt Tags. Wählen Sie eine oder mehrere der EOS-Tagoptionen aus. Wenden Sie **dann an**.
 
     ![Screenshottags, die EOS-Software, EOS-Versionen und bevorstehende EOS-Versionen enthalten.](images/tvm-eos-tag.png)
 
 3. Sie sehen eine Liste der Empfehlungen im Zusammenhang mit Software mit beendeter Unterstützung, Softwareversionen, die ende des Support sind, oder Versionen mit bevorstehendem Ende des Support. Diese Tags sind auch auf der Seite [softwareinventar](tvm-software-inventory.md) sichtbar.
 
-    ![Empfehlungen mit dem EOS-Tag.](images/tvm-eos-tags-column.png)
+    ![Empfehlungen mit DEM EOS-Tag.](images/tvm-eos-tags-column.png)
 
 ## <a name="list-of-versions-and-dates"></a>Liste der Versionen und Datumsangaben
 
@@ -72,6 +72,6 @@ Nachdem Sie ermittelt haben, welche Software- und Softwareversionen aufgrund ihr
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Übersicht über die Verwaltung von Bedrohungen und Sicherheitslücken](next-gen-threat-and-vuln-mgt.md)
+- [Übersicht über Bedrohungen Sicherheitsrisikomanagement Bedrohungen](next-gen-threat-and-vuln-mgt.md)
 - [Sicherheitsempfehlungen](tvm-security-recommendation.md)
 - [Softwarebestand](tvm-software-inventory.md)

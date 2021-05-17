@@ -1,7 +1,7 @@
 ---
 title: Suche nach Bedrohungen auf geräten, E-Mails, Apps und Identitäten mit erweiterter Suche
 description: Untersuchen Sie gängige Suchszenarien und Beispielabfragen, die Geräte, E-Mails, Apps und Identitäten abdecken.
-keywords: Erweiterte Suche, Office365-Daten, Windows-Geräte, Office365-E-Mails normalisieren, E-Mails, Apps, Identitäten, Bedrohungssuche, Suche nach Cyberbedrohungen, Suche, Abfrage, Telemetrie, Microsoft 365, Microsoft 365 Defender
+keywords: Erweiterte Suche, Office365-Daten, Windows-Geräte, Office365-E-Mails normalisieren sich, E-Mails, Apps, Identitäten, Bedrohungssuche, Cyberbedrohungensuche, Suche, Abfrage, Telemetrie, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -37,8 +37,8 @@ ms.locfileid: "51932965"
 
 [Die erweiterte Suche](advanced-hunting-overview.md) in Microsoft 365 Defender ermöglicht Ihnen die proaktive Suche nach Bedrohungen in allen:
 - Von Microsoft Defender for Endpoint verwaltete Geräte
-- Von Microsoft 365 verarbeitete E-Mails
-- Cloud-App-Aktivitäten, Authentifizierungsereignisse und Domänencontrolleraktivitäten nachverfolgt von Microsoft Cloud App Security und Microsoft Defender for Identity
+- E-Mails, die von Microsoft 365
+- Cloud-App-Aktivitäten, Authentifizierungsereignisse und Domänencontrolleraktivitäten, die von Microsoft Cloud App Security und Microsoft Defender for Identity nachverfolgt werden
 
 Mit dieser Sichtbarkeitsstufe können Sie schnell nach Bedrohungen abwehren, die Abschnitte Ihres Netzwerks durchqueren, einschließlich ausgefeilter Angriffe, die in E-Mails oder im Web eintreffen, lokale Berechtigungen erhöhen, privilegierte Domänenanmeldeinformationen erwerben und sich quer über Ihre Geräte bewegen. 
 

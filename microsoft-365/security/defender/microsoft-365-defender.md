@@ -43,7 +43,7 @@ Microsoft 365 Defender ist eine vereinheitlichte Enterprise-Defense-Suite, die E
 Mit der integrierten Microsoft 365 Defender-Lösung können Sicherheitsexperten die Bedrohungssignale, die jedes dieser Produkte erhält, zusammenbringen und den vollständigen Umfang und die Auswirkungen der Bedrohung bestimmen. Wie sie in die Umgebung eintrat, welche Auswirkungen sie hat und wie sie sich derzeit auf die Organisation auswirken. Microsoft 365 Defender ergreift automatische Maßnahmen, um den Angriff zu verhindern oder zu beenden und betroffene Postfächer, Endpunkte und Benutzeridentitäten selbst zu beenden.  
 
 
-<center><h2>Microsoft 365 Defender Services</center></h2>
+<center><h2>Microsoft 365 Defender-Dienste</center></h2>
 <table><tr><td><center><b><a href="https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection"><b>Microsoft Defender for Endpoint</b></center></a></td>
 <td><center><b><a href="https://docs.microsoft.com/office365/securitycompliance/office-365-atp"><b>Microsoft Defender für Office 365</b></center></a></td>
 <td><center><b><a href="/azure-advanced-threat-protection/"><b>Microsoft Defender for Identity</b></a></center></td>
@@ -52,9 +52,9 @@ Mit der integrierten Microsoft 365 Defender-Lösung können Sicherheitsexperten 
 </table>
 <br>
 
-## <a name="microsoft-365-defender-interactive-guide"></a>Interaktives Microsoft 365 Defender-Handbuch
+## <a name="microsoft-365-defender-interactive-guide"></a>Microsoft 365 Interaktive Anleitung für Defender
 
-In diesem interaktiven Leitfaden erfahren Sie, wie Sie Ihre Organisation mit Microsoft 365 Defender schützen. Sie sehen, wie Microsoft 365 Defender Ihnen dabei helfen kann, Sicherheitsrisiken zu erkennen, Angriffe auf Ihre Organisation zu untersuchen und schädliche Aktivitäten automatisch zu verhindern.
+In diesem interaktiven Leitfaden erfahren Sie, wie Sie Ihre Organisation mit einem Microsoft 365 schützen. Sie werden sehen, Microsoft 365 Defender Ihnen dabei helfen kann, Sicherheitsrisiken zu erkennen, Angriffe auf Ihre Organisation zu untersuchen und schädliche Aktivitäten automatisch zu verhindern.
 
 [Sehen Sie sich den interaktiven Leitfaden an](https://aka.ms/M365Defender-InteractiveGuide)
 
@@ -62,17 +62,17 @@ In diesem interaktiven Leitfaden erfahren Sie, wie Sie Ihre Organisation mit Mic
 
 Microsoft 365 Defender Suite schützt: 
 - **Endpunkte mit Microsoft Defender for Endpoint** – Microsoft Defender for Endpoint ist eine einheitliche Endpunktplattform für vorbeugenden Schutz, Erkennung nach Sicherheitsverletzungen, automatisierte Untersuchung und Reaktion. 
-- E-Mail und Zusammenarbeit mit **Microsoft Defender für Office 365** – Defender for Office 365 schützt Ihre Organisation vor böswilligen Bedrohungen durch E-Mail-Nachrichten, Links (URLs) und Tools für die Zusammenarbeit. 
+- **E-Mail und Zusammenarbeit** mit Microsoft Defender for Office 365 – Defender for Office 365 schützt Ihre Organisation vor böswilligen Bedrohungen durch E-Mail-Nachrichten, Links (URLs) und Tools für die Zusammenarbeit. 
 - **Identitäten** mit Microsoft Defender for Identity und Azure AD Identity Protection – Microsoft Defender for Identity verwendet Active Directory-Signale, um erweiterte Bedrohungen, gefährdete Identitäten und schädliche Insideraktionen zu identifizieren, zu erkennen und zu untersuchen, die an Ihre Organisation gerichtet sind. 
 - **Anwendungen mit Microsoft Cloud App-Sicherheit** – Microsoft Cloud App Security ist eine umfassende saaS-übergreifende Lösung, die umfassende Sichtbarkeit, starke Datenkontrollen und erweiterten Bedrohungsschutz für Ihre Cloud-Apps bietet. 
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4Bzww] 
 
-Die einzigartige produktübergreifende Ebene von Microsoft 365 Defender erweitert die einzelnen Suitekomponenten auf:
+Microsoft 365 Die einzigartige produktübergreifende Ebene von Defender erweitert die einzelnen Suitekomponenten auf:
 - Schützen vor Angriffen und Koordinieren von Defensivantworten in der gesamten Suite durch Signalfreigabe und automatisierte Aktionen
 - Narrate the full story of the attack across product alerts, behaviors, and context for security teams by joining data on alerts, suspicious events and impacted assets to 'incidents'
 - Automatisieren der Reaktion auf Kompromisse durch Auslösen der Selbstheilung betroffener Objekte durch automatisierte Korrektur
-- Aktivieren von Sicherheitsteams für eine detaillierte und effektive Bedrohungssuche über Endpunkt- und Office-Daten hinweg
+- Aktivieren sie, dass Sicherheitsteams eine detaillierte und effektive Bedrohungssuche für endpunkt- und Office durchführen.
 
 ![Übersichtsseite "Bild des Vorfalls"](../../media/overview-incident.png) <br>
 Produktübergreifender Vorfall (Übersicht)
@@ -84,19 +84,19 @@ Alle zugehörigen Warnungen in den Suiteprodukten korrelierten in einem einzelne
 Abfragebasierte Suche über E-Mail- und Endpunktrohdaten
 
 
-Zu den produktübergreifenden Microsoft 365 Defender-Features gehören: 
+Microsoft 365 Zu den produktübergreifenden Features von Defender gehören: 
 - **Produktübergreifender** einzelner Glasbereich – Zentrale Ansicht aller Informationen zu Erkennungen, betroffenen Ressourcen, automatisierten Aktionen und zugehörigen Nachweisen in einer einzelnen Warteschlange und einem einzelnen Bereich in [security.microsoft.com](https://security.microsoft.com). 
 - **Warteschlange für** kombinierte Vorfälle – Um Sicherheitsexperten dabei zu helfen, sich auf das Wichtige zu konzentrieren, indem sie den vollständigen Angriffsbereich sicherstellen, werden die auswirkungensprallten Ressourcen und automatisierten Abhilfemaßnahmen zusammengefasst und zeitnah angezeigt. 
-- **Automatische Reaktion auf Bedrohungen** – Informationen zu kritischen Bedrohungen werden in Echtzeit zwischen den Microsoft 365 Defender-Produkten freigegeben, um das Fortschreiten eines Angriffs zu verhindern. Wenn beispielsweise eine schädliche Datei auf einem von Microsoft Defender for Endpoint geschützten Endpunkt erkannt wird, wird Defender for Office 365 angewiesen, die Datei aus allen E-Mail-Nachrichten zu scannen und zu entfernen. Die Datei wird von der gesamten Microsoft 365-Sicherheitssuite beim Sehen blockiert.
-- Selbstheilung für gefährdete **Geräte,** Benutzeridentitäten und Postfächer – Microsoft 365 Defender verwendet ki-betriebene automatische Aktionen und Playbooks, um beeinträchtigte Objekte wieder in einen sicheren Zustand zurück zu bringen. Microsoft 365 Defender nutzt automatische Korrekturfunktionen der Suiteprodukte, um sicherzustellen, dass alle im Zusammenhang mit einem Vorfall in Zusammenhang stehenden Ressourcen nach Möglichkeit automatisch behoben werden.
-- **Produktübergreifende** Bedrohungssuche : Sicherheitsteams können ihr einzigartiges Organisationswissen nutzen, um nach Anzeichen von Kompromissen zu fahnen, indem sie eigene benutzerdefinierte Abfragen über die von den verschiedenen Schutzprodukten gesammelten Rohdaten erstellen. Microsoft 365 Defender bietet abfragebasierten Zugriff auf 30 Tage mit historischen Unformatsignalen und Warnungsdaten für Endpunkte und Microsoft Defender für Office 365-Daten. 
+- **Automatische Reaktion auf Bedrohungen** – Informationen zu kritischen Bedrohungen werden in Echtzeit zwischen den Microsoft 365 Defender-Produkten freigegeben, um das Fortschreiten eines Angriffs zu verhindern. Wenn beispielsweise eine schädliche Datei auf einem von Microsoft Defender for Endpoint geschützten Endpunkt erkannt wird, wird Defender for Office 365 angewiesen, die Datei aus allen E-Mail-Nachrichten zu scannen und zu entfernen. Die Datei wird von der gesamten Sicherheitssuite Microsoft 365 gesperrt.
+- Selbstheilung für gefährdete **Geräte,** Benutzeridentitäten und Postfächer – Microsoft 365 Defender verwendet KI-aktivierte automatische Aktionen und Playbooks, um beeinträchtigte Objekte wieder in einen sicheren Zustand zurück zu bringen. Microsoft 365 Defender nutzt automatische Korrekturfunktionen der Suiteprodukte, um sicherzustellen, dass alle im Zusammenhang mit einem Vorfall in Zusammenhang stehenden Ressourcen nach Möglichkeit automatisch behoben werden.
+- **Produktübergreifende** Bedrohungssuche : Sicherheitsteams können ihr einzigartiges Organisationswissen nutzen, um nach Anzeichen von Kompromissen zu fahnen, indem sie eigene benutzerdefinierte Abfragen über die von den verschiedenen Schutzprodukten gesammelten Rohdaten erstellen. Microsoft 365 Defender bietet abfragebasierten Zugriff auf 30 Tage mit historischen Unformatsignalen und Benachrichtigungsdaten für Endpunkte und Microsoft Defender für Office 365 Daten. 
 
 
 ## <a name="get-started"></a>Erste Schritte
-Microsoft 365 Defender-Lizenzierungsanforderungen müssen erfüllt sein, bevor Sie den Dienst im Microsoft 365 Security Center unter [security.microsoft.com.](https://security.microsoft.com) Weitere Informationen finden Sie unter:
+Microsoft 365 Die Anforderungen für die Defender-Lizenzierung müssen erfüllt sein, bevor Sie den Dienst im Microsoft 365 Security Center unter [security.microsoft.com.](https://security.microsoft.com) Weitere Informationen finden Sie unter:
 - [Lizenzanforderungen](prerequisites.md#licensing-requirements)
 - [Microsoft 365 Defender aktivieren](m365d-enable.md)
 
 
 ## <a name="see-also"></a>Siehe auch
-- [Bereitstellen von Bedrohungsschutzfunktionen in Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection)
+- [Bereitstellen von Bedrohungsschutzfunktionen Microsoft 365 E5](https://docs.microsoft.com/microsoft-365/solutions/deploy-threat-protection)

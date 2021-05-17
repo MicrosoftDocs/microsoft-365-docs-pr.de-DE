@@ -38,9 +38,9 @@ Alle Bewertungen sind auf der Bewertungsseite aufgeführt. Erfahren Sie mehr dar
 
 ## <a name="data-protection-baseline-default-assessment"></a>Standardbewertung des Datenschutzgrundwerts
 
-Als Einstieg bietet Microsoft  eine Standardbewertung im Compliance Manager für die **Microsoft 365 Data Protection Baseline an.** Diese Basisbewertung enthält eine Reihe von Kontrollen für wichtige Vorschriften und Standards für den Datenschutz und die allgemeine Datenkontrolle. Diese Basislinie bezieht elemente hauptsächlich aus NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) und ISO (International Organization for Standardization), sowie aus FedRAMP (Federal Risk and Authorization Management Program) und DSGVO (General Data Protection Regulation of the European Union).
+Zu Beginn bietet Microsoft  eine Standardbewertung im Compliance Manager für die Microsoft 365 **Datenschutzgrundlinie an.** Diese Basisbewertung enthält eine Reihe von Kontrollen für wichtige Vorschriften und Standards für den Datenschutz und die allgemeine Datenkontrolle. Diese Basislinie bezieht elemente hauptsächlich aus NIST CSF (National Institute of Standards and Technology Cybersecurity Framework) und ISO (International Organization for Standardization), sowie aus FedRAMP (Federal Risk and Authorization Management Program) und DSGVO (General Data Protection Regulation of the European Union).
 
-Diese Bewertung wird verwendet, um Ihre anfängliche Compliancebewertung zu berechnen, wenn Sie das erste Mal im Compliance Manager sind, bevor Sie andere Bewertungen konfigurieren. Compliance Manager sammelt erste Signale von Ihren Microsoft 365-Lösungen. Sie sehen auf einen Blick, wie Ihre Organisation im Vergleich zu wichtigen Datenschutzstandards und -vorschriften funktioniert, und sehen sich verbesserungswürdige Maßnahmen an.
+Diese Bewertung wird verwendet, um Ihre anfängliche Compliancebewertung zu berechnen, wenn Sie das erste Mal im Compliance Manager sind, bevor Sie andere Bewertungen konfigurieren. Compliance Manager sammelt erste Signale von Ihren Microsoft 365 Lösungen. Sie sehen auf einen Blick, wie Ihre Organisation im Vergleich zu wichtigen Datenschutzstandards und -vorschriften funktioniert, und sehen sich verbesserungswürdige Maßnahmen an.
 
 Compliance Manager wird hilfreicher, wenn Sie Ihre eigenen Bewertungen erstellen und verwalten, um die speziellen Anforderungen Ihrer Organisation zu erfüllen.
 
@@ -96,7 +96,7 @@ Gruppen können nicht als eigenständige Entitäten erstellt werden. Eine Gruppe
 - Nachdem Sie einer Gruppe eine Bewertung hinzugefügt haben, kann die Gruppierung nicht mehr geändert werden.
 - Verwandte Bewertungssteuerelemente in unterschiedlichen Bewertungen innerhalb derselben Gruppe werden nach Abschluss automatisch aktualisiert.
 - Wenn Sie einer vorhandenen Gruppe eine neue Bewertung hinzufügen, werden allgemeine Informationen aus Bewertungen in dieser Gruppe in die neue Bewertung kopiert.
-- Gruppen können Bewertungen für dieselbe Zertifizierung oder Verordnung enthalten, aber jede Gruppe kann nur eine Bewertung für ein bestimmtes Produktzertifizierungspaar enthalten. Beispielsweise kann eine Gruppe keine zwei Bewertungen für Office 365 und NIST CSF enthalten. Eine Gruppe kann mehrere Bewertungen für dasselbe Produkt nur enthalten, wenn die entsprechende Zertifizierung oder Vorschrift für jedes Produkt unterschiedlich ist.
+- Gruppen können Bewertungen für dieselbe Zertifizierung oder Verordnung enthalten, aber jede Gruppe kann nur eine Bewertung für ein bestimmtes Produktzertifizierungspaar enthalten. Eine Gruppe kann z. B. keine zwei Bewertungen für Office 365 und NIST CSF enthalten. Eine Gruppe kann mehrere Bewertungen für dasselbe Produkt nur enthalten, wenn die entsprechende Zertifizierung oder Vorschrift für jedes Produkt unterschiedlich ist.
 - Das Löschen einer Bewertung bricht die Beziehung zwischen dieser Bewertung und der Gruppe.
 - Gruppen können nicht gelöscht werden.
 - Wenn eine Änderung an einer Verbesserung vorgenommen wird, die in mehreren Gruppen angezeigt wird, wird diese Änderung in allen Instanzen dieser Verbesserungsaktion widerspiegelt.
@@ -143,7 +143,7 @@ Führen Sie diesen Prozess aus, indem Sie auf der Seite mit **Bewertungsvorlagen
 
 **Bevor Sie beginnen:**
 
-Zur Vorbereitung auf diesen Prozess müssen Sie zunächst eine speziell formatierte Excel-Kalkulationstabelle zusammenstellen, um die erforderlichen Vorlagendaten zu importieren. Es gibt spezielle Anforderungen für die [formatierten Excel-Dateien, die](compliance-manager-templates.md#formatting-your-template-data-with-excel) im Erweiterungsprozess verwendet werden. Sehen Sie sich die folgenden zusätzlichen Punkte an, um Fehler im Importvorgang zu verhindern:
+Zur Vorbereitung auf diesen Prozess müssen Sie zunächst eine speziell formatierte Excel Kalkulationstabelle zusammenstellen, um die erforderlichen Vorlagendaten zu importieren. Es gibt spezielle Anforderungen für die [formatierten Excel, die](compliance-manager-templates.md#formatting-your-template-data-with-excel) im Erweiterungsprozess verwendet werden. Sehen Sie sich die folgenden zusätzlichen Punkte an, um Fehler im Importvorgang zu verhindern:
 
 - Ihre Kalkulationstabelle sollte nur die Aktionen und Steuerelemente enthalten, die Sie der Bewertung hinzufügen möchten. 
 - Die Kalkulationstabelle kann keine Steuerelemente oder Aktionen enthalten, die bereits in der Bewertung vorhanden sind, die Sie ändern möchten.
@@ -165,13 +165,13 @@ Führen Sie nach dem Formatieren der Kalkulationstabelle die folgenden Schritte 
 
 6. Auf dem nächsten Bildschirm wird die ausgewählte Vorlage angezeigt. Wenn dies richtig ist, wählen Sie **Weiter aus.** (Wenn falsch, wählen **Sie Wählen Sie eine andere Vorlage aus,** um erneut auszuwählen.)
 
-7. Wählen Sie **auf dem Bildschirm** Datei hochladen die Option **Durchsuchen** aus, um die formatierte Excel-Datei mit allen erforderlichen Vorlagendaten zu suchen und hochzuladen.
+7. Wählen Sie **auf Hochladen** die  Option Durchsuchen aus, um ihre formatierte Excel, die alle erforderlichen Vorlagendaten enthält, zu suchen und hochzuladen.
 
-8. Wenn keine Probleme mit ihrer Datei auftreten, wird auf dem nächsten Bildschirm der Name der hochgeladenen Datei angezeigt. Wählen **Sie Weiter** aus, um fortzufahren (wenn Sie die Datei ändern müssen, wählen Sie Hochladen einer anderen Datei **aus).**
+8. Wenn keine Probleme mit ihrer Datei auftreten, wird auf dem nächsten Bildschirm der Name der hochgeladenen Datei angezeigt. Wählen **Sie Weiter** aus, um fortzufahren (wenn Sie die Datei ändern müssen, wählen Hochladen eine andere Datei **aus).**
 
     - Wenn ein Problem mit Ihrer Datei vor liegt, wird in einer Fehlermeldung oben erklärt, was falsch ist. Sie müssen Ihre Datei korrigieren und erneut hochladen. Fehler resultieren, wenn Ihre Kalkulationstabelle nicht ordnungsgemäß formatiert ist oder wenn in bestimmten Feldern ungültige Informationen enthalten sind.
  
-9. Der **Bildschirm Überprüfen und Fertig** stellen zeigt die Anzahl der Verbesserungsaktionen und -steuerelemente sowie die maximale Bewertung für die Vorlage an. Wenn Sie zur Genehmigung bereit sind, wählen Sie **Weiter aus.** (Wenn Sie Änderungen vornehmen müssen, wählen Sie **Hochladen einer anderen Datei aus.)**
+9. Der **Bildschirm Überprüfen und Fertig** stellen zeigt die Anzahl der Verbesserungsaktionen und -steuerelemente sowie die maximale Bewertung für die Vorlage an. Wenn Sie zur Genehmigung bereit sind, wählen Sie **Weiter aus.** (Wenn Sie Änderungen vornehmen müssen, wählen **Hochladen eine andere Datei aus.)**
 
 10. Der letzte Bildschirm bestätigt, dass eine neue Vorlage erstellt wurde. Wählen **Sie Fertig** aus, um den Assistenten zu beenden.
 
@@ -179,11 +179,11 @@ Führen Sie nach dem Formatieren der Kalkulationstabelle die folgenden Schritte 
 
 ## <a name="create-your-own-custom-assessment"></a>Erstellen Einer eigenen benutzerdefinierten Bewertung
 
-Für das Erstellen einer benutzerdefinierten Bewertung im Compliance-Manager müssen Sie eine eigene Vorlage erstellen. Um Eine eigene Vorlage zu erstellen, stellen Sie zunächst eine formatierte Excel-Kalkulationstabelle zusammen, um die erforderlichen Vorlagendaten zu importieren. Außerdem hilft es, im Voraus zu entscheiden, welcher Gruppe Sie Ihre Bewertung beim Erstellen zuweisen (weitere Informationen zu [Gruppen).](#what-are-groups)
+Für das Erstellen einer benutzerdefinierten Bewertung im Compliance-Manager müssen Sie eine eigene Vorlage erstellen. Um Eine eigene Vorlage zu erstellen, stellen Sie zunächst eine formatierte Excel Kalkulationstabelle zusammen, um die erforderlichen Vorlagendaten zu importieren. Außerdem hilft es, im Voraus zu entscheiden, welcher Gruppe Sie Ihre Bewertung beim Erstellen zuweisen (weitere Informationen zu [Gruppen).](#what-are-groups)
 
 **Führen Sie die folgenden Schritte aus, um Ihre benutzerdefinierte Bewertung zu erstellen:**
 
-1. **Formatieren Sie Ihre Excel-Datei.** Formatieren Sie zunächst Ihre Vorlagendaten mithilfe dieser Anweisungen in [einer Excel-Kalkulationstabelle.](compliance-manager-templates.md#formatting-your-template-data-with-excel)
+1. **Formatieren Sie Excel Datei.** Beginnen Sie mit der Formatierung Ihrer Vorlagendaten in Excel tabellenkalkulation mithilfe [dieser Anweisungen.](compliance-manager-templates.md#formatting-your-template-data-with-excel)
 
 2. **Erstellen Sie Ihre Vorlage,** indem Sie [die folgenden Anweisungen befolgen.](compliance-manager-templates.md#create-a-new-template)
 
@@ -216,7 +216,7 @@ Wenn Sie die einzige Bewertung in einer Gruppe löschen, wird diese Gruppe auch 
 
 Jede Bewertung verfügt über eine Detailseite, die auf einen Blick einen Überblick über Ihre Fortschritte beim Abschließen der Bewertung bietet. Die Seite zeigt Den Fortschritt beim Abschließen von Steuerelementen und den Teststatus wichtiger Verbesserungsmaßnahmen innerhalb dieser Steuerelemente.
 
-### <a name="overview-tab"></a>Registerkarte "Übersicht"
+### <a name="overview-tab"></a>Registerkarte „Übersicht“
 
 Die Registerkarte Übersicht enthält ein Diagramm, das Ihren Prozentsatz zum Abschluss der Bewertung zeigt. Dieses Diagramm enthält eine Aufschlüsselung der Punkte aus Aktionen, die Sie besitzen, sowie Punkte von Aktionen im Besitz von Microsoft, damit Sie sehen können, wie viele weitere Punkte Sie zum Abschließen der Bewertung benötigen.
 
@@ -291,7 +291,7 @@ Nachdem Sie **auf der** Seite Bewertungsdetails die Option Update überprüfen a
 - Eine Übersicht über das Update
 - Spezifische Details zu den Änderungen, einschließlich der Auswirkungen auf Ihre Compliancebewertung, des Fortschritts bis zum Abschluss der Bewertung und der spezifischen Anzahl von Änderungen an Verbesserungsmaßnahmen und Steuerelementen.
 
-Wenn Sie **den Link Aktualisierte Vorlage** auswählen, wird eine Excel-Datei mit Steuerelementdaten für die Version der Vorlage mit den ausstehenden Updates heruntergeladen. Wenn Sie den **Link Aktuelle Vorlage** auswählen, wird eine Datei der vorhandenen Vorlage ohne die Änderungen heruntergeladen.
+Wenn Sie **den Link Aktualisierte Vorlage** auswählen, wird Excel Datei mit Steuerelementdaten für die Version der Vorlage mit den ausstehenden Updates heruntergeladen. Wenn Sie den **Link Aktuelle Vorlage** auswählen, wird eine Datei der vorhandenen Vorlage ohne die Änderungen heruntergeladen.
 
 Wählen Sie Update akzeptieren aus, um das Update zu akzeptieren und die Änderungen an Ihrer **Bewertung vorzunehmen.** Akzeptierte Änderungen sind dauerhaft.
 
@@ -307,6 +307,6 @@ Wenn Sie gerade dabei sind, eine Bewertung zu erstellen, sollten Sie sicherstell
 
 ## <a name="export-an-assessment-report"></a>Exportieren eines Bewertungsberichts
 
-Sie können eine Bewertung in eine Excel-Datei für Compliance-Interessengruppen in Ihrer Organisation oder für externe Auditoren und Aufsichtsbehörden exportieren. Wählen Sie auf der  Seite Bewertungsdetails die Schaltfläche Bericht generieren am oberen Rand der Seite aus, wodurch eine Excel-Datei erstellt wird, die Sie speichern und freigeben können.
+Sie können eine Bewertung in eine Excel für Compliance-Interessengruppen in Ihrer Organisation oder für externe Auditoren und Aufsichtsbehörden exportieren. Wählen Sie auf der  Seite Bewertungsdetails die Schaltfläche Bericht generieren am oberen Rand der Seite aus, die eine Excel erstellt, die Sie speichern und freigeben können.
 
 Der Bericht ist eine Momentaufnahme der Bewertung zum Datum und zur Uhrzeit des Exports. Sie enthält die Details für Steuerelemente, die sowohl von Ihnen als auch von Microsoft verwaltet werden, einschließlich Implementierungsstatus, Testdatum und Testergebnissen.

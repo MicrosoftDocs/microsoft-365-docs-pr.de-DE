@@ -2,7 +2,7 @@
 title: Nachverfolgen und Reagieren auf neue Bedrohungen mit Bedrohungsanalysen
 ms.reviewer: ''
 description: Erfahren Sie mehr über neue Bedrohungen und Angriffstechniken und deren Beenden. Bewerten Sie ihre Auswirkungen auf Ihre Organisation und bewerten Sie Die Ausfallsicherheit Ihrer Organisation.
-keywords: Bedrohungsanalyse, Risikobewertung, Microsoft 365 Defender, M365D, Risikominderungsstatus, sichere Konfiguration, Microsoft Defender für Office 365, Microsoft Defender für Office 365-Bedrohungsanalyse, MDO-Bedrohungsanalyse, integrierte MDE- und MDO-Bedrohungsanalysedaten, Integration von Bedrohungsanalysedaten, integrierte Microsoft 365 Defender Threat Analytics
+keywords: Bedrohungsanalyse, Risikobewertung, Microsoft 365 Defender, M365D, Risikominderungsstatus, sichere Konfiguration, Microsoft Defender für Office 365, Microsoft Defender für Office 365-Bedrohungsanalyse, MDO-Bedrohungsanalyse, integrierte MDE- und MDO-Bedrohungsanalysedaten, Integration von Daten zur Bedrohungsanalyse, integrierte Microsoft 365 Defender Threat Analytics
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: microsoft-365-enterprise
@@ -53,7 +53,7 @@ Sehen Sie sich dieses kurze Video an, um mehr darüber zu erfahren, wie Sie mith
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJfU]
 
-Sie können auf bedrohungsanalyse entweder von der oberen linken Seite der Navigationsleiste des Microsoft 365-Sicherheitsportals oder von einer dedizierten Dashboardkarte zugreifen, auf der die obersten Bedrohungen in Ihrer Organisation angezeigt werden. Das Erhalten von Einblicken in aktive oder laufende Kampagnen und wissen, was mithilfe von Bedrohungsanalysen zu tun ist, kann Ihr Sicherheitsteam mit fundierten Entscheidungen ausstatten. 
+Sie können entweder von der oberen linken Seite der Navigationsleiste des Microsoft 365-Sicherheitsportals oder von einer dedizierten Dashboardkarte, die die obersten Bedrohungen in Ihrer Organisation zeigt, auf Bedrohungen zugreifen. Das Erhalten von Einblicken in aktive oder laufende Kampagnen und wissen, was mithilfe von Bedrohungsanalysen zu tun ist, kann Ihr Sicherheitsteam mit fundierten Entscheidungen ausstatten. 
 
 ![Abbildung des Dashboards für die Bedrohungsanalyse](../../media/threat-analytics/ta_inlandingpage_mtp.png)
 
@@ -131,16 +131,16 @@ _Abschnitt "Verwandte Vorfälle" eines Berichts zur Bedrohungsanalyse_
 ### <a name="impacted-assets-get-list-of-impacted-devices-and-mailboxes"></a>Auswirkungen auf Ressourcen: Liste betroffener Geräte und Postfächer erhalten
 Eine Ressource wird als betroffen betrachtet, wenn sie von einer aktiven, nicht aufgelösten Warnung betroffen ist. Auf **der Registerkarte Auswirkungen auf Ressourcen** werden die folgenden Arten von betroffenen Ressourcen aufgeführt:
 - **Betroffener Geräte**– Endpunkte, für die Microsoft Defender for Endpoint-Warnungen nicht aufgelöst wurden. Diese Warnungen werden in der Regel bei Denkanzeigen bekannter Bedrohungsindikatoren und -aktivitäten ausgelöst.
-- **Auswirkungen auf Postfächer –** Postfächer, die E-Mail-Nachrichten empfangen haben, die Microsoft Defender für Office 365-Warnungen ausgelöst haben. Während die meisten Nachrichten, die Warnungen auslösen, in der Regel blockiert werden, können Richtlinien auf Benutzer- oder Organisationsebene Filter außer Kraft setzen.
+- **Betroffene Postfächer –** Postfächer, die E-Mail-Nachrichten empfangen haben, die Microsoft Defender für Office 365 ausgelöst haben. Während die meisten Nachrichten, die Warnungen auslösen, in der Regel blockiert werden, können Richtlinien auf Benutzer- oder Organisationsebene Filter außer Kraft setzen.
 
 ![Abbildung des Abschnitts "Betroffene Objekte" eines Berichts zur Bedrohungsanalyse](../../media/threat-analytics/ta_impacted_assets_mtp.png)
 
 _Abschnitt "Auswirkungen auf Ressourcen" eines Berichts zur Bedrohungsanalyse_
 
 ### <a name="prevented-email-attempts-view-blocked-or-junked-threat-emails"></a>Verhinderte E-Mail-Versuche: Anzeigen blockierter oder junked Threat-E-Mails
-Microsoft Defender für Office 365 blockiert in der Regel E-Mails mit bekannten Bedrohungsindikatoren, einschließlich schädlicher Links oder Anlagen. In einigen Fällen senden proaktive Filtermechanismen, die auf verdächtige Inhalte überprüfen, stattdessen Bedrohungs-E-Mails an den Junk-E-Mail-Ordner. In beiden Fällen ist die Wahrscheinlichkeit reduziert, dass der Code für das Starten von Schadsoftware auf dem Gerät von Bedrohungen gestartet wird.
+Microsoft Defender for Office 365 blockiert in der Regel E-Mails mit bekannten Bedrohungsindikatoren, einschließlich schädlicher Links oder Anlagen. In einigen Fällen senden proaktive Filtermechanismen, die auf verdächtige Inhalte überprüfen, stattdessen Bedrohungs-E-Mails an den Junk-E-Mail-Ordner. In beiden Fällen ist die Wahrscheinlichkeit reduziert, dass der Code für das Starten von Schadsoftware auf dem Gerät von Bedrohungen gestartet wird.
 
-Auf **der Registerkarte Verhinderte** E-Mail-Versuche werden alle E-Mails aufgeführt, die entweder vor der Zustellung blockiert oder von Microsoft Defender für Office 365 an den Junk-E-Mail-Ordner gesendet wurden. 
+Auf **der Registerkarte Verhinderte** E-Mail-Versuche werden alle E-Mails aufgeführt, die entweder vor der Zustellung blockiert oder von Microsoft Defender für die Zustellung an den Junk-E-Mail-Ordner Office 365. 
 
 ![Abbildung des Abschnitts "Verhinderte E-Mail-Versuche" eines Berichts zur Bedrohungsanalyse](../../media/threat-analytics/ta_prevented_email_attempts_mtp.png)
 
@@ -151,11 +151,11 @@ _Abschnitt "Verhinderte E-Mail-Versuche" eines Berichts zur Bedrohungsanalyse_
 
 - **Sicherheitsupdates**– Bereitstellung von unterstützten Softwaresicherheitsupdates für Sicherheitsrisiken auf integrierten Geräten
 - **Unterstützte Sicherheitskonfigurationen**
-  - In der Cloud zugestellter Schutz  
+  - Aus der Cloud gelieferter Schutz  
   - Schutz potenziell unerwünschter Anwendungen (PUA)
   - Echtzeitschutz
  
-Informationen zur Risikominderung in [](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)diesem Abschnitt enthalten Daten aus der Bedrohungs- und Sicherheitsrisikoverwaltung, die auch detaillierte Drilldowninformationen aus verschiedenen Links im Bericht enthält.
+Informationen zur Risikominderung in diesem Abschnitt enthalten Daten aus [Bedrohungs- und Sicherheitsrisikomanagement](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt), die auch detaillierte Drilldowninformationen aus verschiedenen Links im Bericht enthalten.
 
 ![Abbildung des Abschnitts "Gegenmaßnahmen" eines Berichts zur Bedrohungsanalyse mit Details zur sicheren Konfiguration Abbildung des Abschnitts "Gegenmaßnahmen" eines Berichts zur Bedrohungsanalyse mit Details ](../../media/threat-analytics/ta_mitigations_mtp.png)
  ![ zu Sicherheitslücken](../../media/threat-analytics/ta_mitigations_mtp2.png)
@@ -164,19 +164,19 @@ _Abschnitt "Risikominderungen" eines Berichts zur Bedrohungsanalyse_
 
 ## <a name="additional-report-details-and-limitations"></a>Zusätzliche Berichtsdetails und Einschränkungen
 >[!NOTE]
->Im Rahmen der einheitlichen Sicherheitserfahrung ist die Bedrohungsanalyse jetzt nicht nur für Microsoft Defender for Endpoint, sondern auch für Microsoft Defender für Office E5-Lizenzinhaber verfügbar.
->Wenn Sie das Microsoft 365-Sicherheitsportal (Microsoft 365 Defender) nicht verwenden, können Sie die Berichtdetails (ohne die Microsoft Defender for Office-Daten) auch im Microsoft Defender Security Center-Portal (Microsoft Defender for Endpoint) anzeigen. 
+>Als Teil der einheitlichen Sicherheitserfahrung ist die Bedrohungsanalyse jetzt nicht nur für Microsoft Defender for Endpoint, sondern auch für Microsoft Defender für Office E5-Lizenzinhaber verfügbar.
+>Wenn Sie das Microsoft 365-Sicherheitsportal (Microsoft 365 Defender) nicht verwenden, können Sie die Berichtsdetails (ohne Microsoft Defender für Office-Daten) auch im Microsoft Defender Security Center-Portal (Microsoft Defender for Endpoint) anzeigen. 
 
-Für den Zugriff auf den Bericht zur Bedrohungsanalyse benötigen Sie bestimmte Rollen und Berechtigungen. Weitere Informationen finden Sie unter Benutzerdefinierte Rollen in der rollenbasierten Zugriffssteuerung für [Microsoft 365 Defender.](custom-roles.md)
-  - Zum Anzeigen von Warnungen, Vorfällen oder Daten betroffener Objekte benötigen Sie Berechtigungen für Microsoft Defender for Office- oder Microsoft Defender for Endpoint-Benachrichtigungsdaten oder beides.
-  - Um verhinderte E-Mail-Versuche anzeigen zu können, benötigen Sie Berechtigungen für Microsoft Defender for Office-Nachschlagedaten. 
-  - Zum Anzeigen von Gegenmaßnahmen benötigen Sie Berechtigungen für Daten zur Bedrohungs- und Sicherheitsrisikoverwaltung in Microsoft Defender for Endpoint.
+Für den Zugriff auf den Bericht zur Bedrohungsanalyse benötigen Sie bestimmte Rollen und Berechtigungen. Weitere Informationen finden Sie unter Custom [roles in role-based access control for Microsoft 365 Defender.](custom-roles.md)
+  - Zum Anzeigen von Warnungen, Vorfällen oder Auswirkungen auf Ressourcendaten benötigen Sie Berechtigungen für Microsoft Defender für Office- oder Microsoft Defender for Endpoint-Benachrichtigungsdaten oder beides.
+  - Um verhinderte E-Mail-Versuche anzeigen zu können, benötigen Sie Berechtigungen für Microsoft Defender für Office Nachschlagedaten. 
+  - Zum Anzeigen von Gegenmaßnahmen benötigen Sie Berechtigungen zum Bedrohungs- und Sicherheitsrisikomanagement von Daten in Microsoft Defender for Endpoint.
 
 Beachten Sie beim Blick auf die Daten zur Bedrohungsanalyse die folgenden Faktoren:
 - Diagramme spiegeln nur nachverfolgte Gegenmaßnahmen wider. Überprüfen Sie die Berichtsübersicht auf zusätzliche Gegenmaßnahmen, die nicht in den Diagrammen angezeigt werden.
 - Gegenmaßnahmen garantieren keine vollständige Ausfallsicherheit. Die bereitgestellten Gegenmaßnahmen spiegeln die bestmöglichen Maßnahmen wider, die zur Verbesserung der Ausfallsicherheit erforderlich sind.
 - Geräte werden als "nicht verfügbar" gezählt, wenn sie keine Daten an den Dienst übermittelt haben.
-- Antivirusbezogene Statistiken basieren auf Microsoft Defender Antivirus-Einstellungen. Geräte mit Antivirenlösungen von Drittanbietern können als "verfügbar" angezeigt werden.
+- Antivirusbezogene Statistiken basieren auf Microsoft Defender Antivirus Einstellungen. Geräte mit Antivirenlösungen von Drittanbietern können als "verfügbar" angezeigt werden.
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Proaktives Aufsuchen von Bedrohungen mit erweiterter Suche](advanced-hunting-overview.md) 

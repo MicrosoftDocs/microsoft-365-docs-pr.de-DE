@@ -39,6 +39,6 @@ Französisch: Mon-Fri 08:00-21:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefon Nummer: 01 57 32 42 97
+Alternative Telefonnummer: 01 57 32 42 97
 
 Es gelten die Ortstarife.

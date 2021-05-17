@@ -54,7 +54,7 @@ Jeder Abschnitt des Analystenberichts ist darauf ausgelegt, aktionenfähige Info
 | Kurzfassung | Übersicht über die Bedrohung, einschließlich wann sie zum ersten Mal gesehen wurde, deren Motivationen, wichtigen Ereignissen, wichtigen Zielen und unterschiedlichen Tools und Techniken. Mithilfe dieser Informationen können Sie die Priorisierung der Bedrohung im Kontext Ihrer Branche, Ihres geografischen Standorts und Ihres Netzwerks weiter bewerten. |
 | Analyse | Technische Informationen zu den Bedrohungen, einschließlich der Details eines Angriffs und darüber, wie Angreifer eine neue Technik oder Angriffsfläche nutzen können | 
 | MITRE ATT&CK-Techniken beobachtet | Zuordnung beobachteter Techniken zum [MITRE ATT&CK-Angriffsframework](https://attack.mitre.org/) | 
-| [Gegenmaßnahmen](#apply-additional-mitigations) | Empfehlungen, mit deren Hilfe die Auswirkungen der Bedrohung beendet oder reduziert werden können. Dieser Abschnitt enthält auch Risikominderungen, die im Rahmen des Berichts zur Bedrohungsanalyse nicht dynamisch nachverfolgt werden. |
+| [Gegenmaßnahmen](#apply-additional-mitigations) | Empfehlungen, die die Auswirkungen der Bedrohung beenden oder verringern können. Dieser Abschnitt enthält auch Risikominderungen, die im Rahmen des Berichts zur Bedrohungsanalyse nicht dynamisch nachverfolgt werden. |
 | [Erkennungsdetails](#understand-how-each-threat-can-be-detected) | Spezifische und generische Erkennungen, die von Microsoft-Sicherheitslösungen bereitgestellt werden, die mit der Bedrohung verbundene Aktivitäten oder Komponenten darstellen können. | 
 | [Erweiterte Suche](#find-subtle-threat-artifacts-using-advanced-hunting) | [Erweiterte Suchabfragen zum](advanced-hunting-overview.md) proaktiven Identifizieren möglicher Bedrohungsaktivitäten. Die meisten Abfragen werden bereitgestellt, um Erkennungen zu ergänzen, insbesondere zum Auffinden potenziell schädlicher Komponenten oder Verhaltensweisen, die nicht dynamisch als schädlich bewertet werden konnten. | 
 | Informationsquellen | Microsoft und Drittanbieterpublikationen, auf die analysten während der Erstellung des Berichts verwiesen haben. Inhalte der Bedrohungsanalyse basieren auf Daten, die von Microsoft-Forschern überprüft wurden. Informationen aus öffentlich verfügbaren Drittanbieterquellen werden eindeutig als solche identifiziert. | 
@@ -73,21 +73,21 @@ Zusätzlich zu diesen nachverfolgten Gegenmaßnahmen werden im Analystenbericht 
 Sie können zwar die Registerkarte **Gegenmaßnahmen** verwenden, um Ihre Sicherheitslage gegenüber einer Bedrohung zu bewerten, aber mit diesen Empfehlungen können Sie zusätzliche Schritte zur Verbesserung Ihrer Sicherheitslage unternehmen. Lesen Sie sorgfältig alle Anleitungen zur Risikominderung im Analystenbericht, und wenden Sie sie wann immer möglich an.
 
 ## <a name="understand-how-each-threat-can-be-detected"></a>Verstehen, wie jede Bedrohung erkannt werden kann
-Der Analystenbericht enthält außerdem die Erkennungen  von Microsoft Defender for Endpoint Antivirus- und Endpunkterkennungs- und -reaktionsfunktionen (EDR).
+Der Analystenbericht enthält außerdem die Erkennungen von Microsoft Defender for Endpoint _Antivirus- und EDR_ (EDR).
 
 ### <a name="antivirus-detections"></a>Antiviruserkennungen
-Diese Erkennungen sind auf Geräten verfügbar, auf [deren Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) aktiviert ist. Wenn diese Erkennungen auf Geräten auftreten, die in Microsoft Defender for Endpoint onboarded wurden, lösen sie auch Warnungen aus, die die Diagramme im Bericht aufscheinen.
+Diese Erkennungen sind auf Geräten verfügbar, auf [Microsoft Defender Antivirus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) aktiviert sind. Wenn diese Erkennungen auf Geräten auftreten, die in Microsoft Defender for Endpoint onboarded wurden, lösen sie auch Warnungen aus, die die Diagramme im Bericht aufscheinen.
 
 >[!NOTE]
 >Der Analystenbericht  listet außerdem generische Erkennungen auf, mit denen eine vielzahl von Bedrohungen sowie Komponenten oder Verhaltensweisen identifiziert werden können, die für die verfolgte Bedrohung spezifisch sind. Diese generischen Erkennungen spiegeln sich nicht in den Diagrammen wider.
 
-### <a name="endpoint-detection-and-response-edr-alerts"></a>Endpunkterkennungs- und Reaktionswarnungen (EDR)
-EDR-Warnungen werden für Geräte [ausgelöst, die in Microsoft Defender for Endpoint onboarded sind.](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure) Diese Warnungen beruhen im Allgemeinen auf Sicherheitssignalen, die vom Microsoft Defender for Endpoint-Sensor und anderen Endpunktfunktionen gesammelt werden , z. B. Antivirus, Netzwerkschutz, Manipulationsschutz, die als leistungsfähige Signalquellen dienen.
+### <a name="endpoint-detection-and-response-edr-alerts"></a>Endpunkterkennungs- und Antwortwarnungen (EDR)
+EDR werden für Geräte ausgelöst, die [in Microsoft Defender for Endpoint integrierte Geräte sind.](/windows/security/threat-protection/microsoft-defender-atp/onboard-configure) Diese Warnungen beruhen im Allgemeinen auf Sicherheitssignalen, die vom Microsoft Defender for Endpoint-Sensor und anderen Endpunktfunktionen gesammelt werden , z. B. Antivirus, Netzwerkschutz, Manipulationsschutz, die als leistungsfähige Signalquellen dienen.
 
-Wie die Liste der Antivirenerkennungen sind einige EDR-Warnungen so konzipiert, dass verdächtiges Verhalten, das möglicherweise nicht der nachverfolgten Bedrohung zugeordnet ist, allgemein kennzeichnen. In solchen Fällen identifiziert der Bericht die Warnung eindeutig als "generisch" und hat keinen Einfluss auf die Diagramme im Bericht.
+Wie die Liste der Antivirenerkennungen sind einige EDR Warnungen so konzipiert, dass verdächtiges Verhalten, das möglicherweise nicht der nachverfolgten Bedrohung zugeordnet ist, allgemein kennzeichnen. In solchen Fällen identifiziert der Bericht die Warnung eindeutig als "generisch" und hat keinen Einfluss auf die Diagramme im Bericht.
 
 ### <a name="email-related-detections-and-mitigations"></a>E-Mail-bezogene Erkennungen und Gegenmaßnahmen
-E-Mail-bezogene Erkennungen und Risikominderungen von Microsoft Defender für Office 365 sind zusätzlich zu den bereits von Microsoft Defender for Endpoint verfügbaren Endpunktdaten in Analystenberichten enthalten. 
+E-Mail-bezogene Erkennungen und Gegenmaßnahmen von Microsoft Defender für Office 365 werden zusätzlich zu den bereits von Microsoft Defender for Endpoint verfügbaren Endpunktdaten in Analystenberichten enthalten. 
 
 Informationen zu verhinderten E-Mail-Versuchen geben Ihnen Einblicke, ob Ihre Organisation ein Ziel der Bedrohung war, die im Analystenbericht in Angriff genommen wurde, auch wenn der Angriff vor der Zustellung effektiv blockiert oder an den Junk-E-Mail-Ordner zugestellt wurde.
 
@@ -100,7 +100,7 @@ Erweiterte Suchabfragen in den Analystenberichten wurden von Microsoft-Analysten
 
 
 >[!NOTE]
-> Die Bedrohungsanalyse ist auch in [Microsoft Defender for Endpoint verfügbar.](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) Es verfügt jedoch nicht über die Datenintegration zwischen Microsoft Defender for Office und Microsoft Defender for Endpoint, über die Microsoft 365 Defender Threat Analytics verfügt.
+> Die Bedrohungsanalyse ist auch in [Microsoft Defender for Endpoint verfügbar.](/windows/security/threat-protection/microsoft-defender-atp/threat-analytics) Es verfügt jedoch nicht über die Datenintegration zwischen Microsoft Defender for Office und Microsoft Defender for Endpoint, die Microsoft 365 Defender Threat Analytics hat.
 
 
 ## <a name="related-topics"></a>Verwandte Themen

@@ -1,6 +1,6 @@
 ---
 title: 'SCHRITT 3: Durchführen einer Überprüfung Ihres ersten Vorfalls nach dem Vorfall'
-description: Durchführen einer Überprüfung Ihres ersten Vorfalls in Microsoft 365 Defender.
+description: So führen Sie eine Überprüfung Ihres ersten Vorfalls in Microsoft 365 Defender durch.
 keywords: Vorfälle, Warnungen, untersuchen, Korrelation, Angriff, Computer, Geräte, Benutzer, Identitäten, Identität, Postfach, E-Mail, 365, Microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -29,7 +29,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297152"
 ---
-# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Schritt 3: Durchführen einer Überprüfung Ihres ersten Vorfalls nach dem Vorfall
+# <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Schritt 3: Durchführen einer Überprüfung Ihres ersten Vorfalls nach dem Vorfall
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "52297152"
 
 Das National Institute of Standards and Technology (NIST) empfiehlt, dass Organisationen, sobald alle Schritte zur Wiederherstellung nach dem Angriff unternommen wurden, den Vorfall überprüfen müssen, um daraus zu lernen und die Sicherheitslage oder Prozesse zu erlernen und zu verbessern. Die Bewertung der verschiedenen Aspekte der Behandlung von Vorfällen wird bei der Vorbereitung auf den nächsten Vorfall wichtig.
 
-Microsoft 365 Defender kann bei der Durchführung von Aktivitäten nach einem Vorfall helfen, indem es einer Organisation Warnungen zur Verfügung stellt, die mit [MITRE ATT&CK Framework ausgerichtet sind.](https://attack.mitre.org/) Alle Microsoft Defender-Lösungen beschriften Angriffe in Übereinstimmung mit einer ATT-&CK-Taktik oder -Technik. 
+Microsoft 365 Defender kann bei der Durchführung von Aktivitäten nach Vorfällen helfen, indem es einer Organisation Warnungen zur Verfügung stellt, die mit [MITRE ATT&CK Framework ausgerichtet sind.](https://attack.mitre.org/) Alle Microsoft Defender-Lösungen beschriften Angriffe in Übereinstimmung mit einer ATT-&CK-Taktik oder -Technik. 
 
 Durch Zuordnen von Warnungen zu diesem Branchenframework können Sie:
 

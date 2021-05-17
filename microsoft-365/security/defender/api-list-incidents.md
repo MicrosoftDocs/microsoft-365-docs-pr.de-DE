@@ -1,6 +1,6 @@
 ---
 title: Auflisten der Incidents-API in Microsoft 365 Defender
-description: Informationen zum Auflisten der Incidents API in Microsoft 365 Defender
+description: Informationen zum Auflisten der Incidents-API in Microsoft 365 Defender
 keywords: list, incident, incidents, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -82,7 +82,7 @@ GET /api/incidents
 
 Name | Typ | Beschreibung
 -|-|-
-Authorization | Zeichenfolge | Bearer {token}. **Required**
+Authorization | String | Bearer {token}. **Required**
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -143,7 +143,7 @@ Geräte | Alle Geräte, auf denen Warnungen im Zusammenhang mit dem Vorfall gese
 Feldname | Beschreibung | Beispielwert
 -|-|-
 DeviceId | Die Geräte-ID, die in Microsoft Defender for Endpoint festgelegt ist. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
-aadDeviceId |  Die Geräte-ID, die in [Azure Active Directory festgelegt ist.](/azure/active-directory/fundamentals/active-directory-whatis) Nur für Geräte verfügbar, die der Domäne beigetreten sind. | null
+aadDeviceId |  Die Geräte-ID, wie in [Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-whatis) Nur für Geräte verfügbar, die der Domäne beigetreten sind. | null
 deviceDnsName | Der vollqualifizierte Domänenname für das Gerät. | user5cx.middleeast.corp.contoso.com
 osPlatform | Die Betriebssystemplattform, auf der das Gerät ausgeführt wird.| WindowsServer2016
 osBuild | Die Buildversion für das Betriebssystem, auf dem das Gerät ausgeführt wird. | 14393
@@ -185,7 +185,7 @@ securityGroupId | Verfügbar, wenn entityType *SecurityGroup ist.* | 301c47c8-e1
 securityGroupName | Verfügbar, wenn entityType *SecurityGroup ist.* | Netzwerkkonfigurationsoperatoren
 registryHive | Verfügbar, wenn entityType die *Registrierung ist.* | LOKALER \_ \_ HKEY-COMPUTER |
 registryKey | Verfügbar, wenn entityType die *Registrierung ist.* | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType | Verfügbar, wenn entityType die *Registrierung ist.* | Zeichenfolge
+registryValueType | Verfügbar, wenn entityType die *Registrierung ist.* | String
 registryValue | Verfügbar, wenn entityType die *Registrierung ist.* | 31-00-00-00
 deviceId | Die ID des Geräts, das sich auf die Entität bezogen hat. | 986e5df8b73dacd43c8917d17e523e76b13c75cd
 

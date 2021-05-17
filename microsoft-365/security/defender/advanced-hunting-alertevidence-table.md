@@ -35,7 +35,7 @@ ms.locfileid: "51932583"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Die Tabelle im Schema der erweiterten Suche enthält Informationen zu verschiedenen Entitäten ( Dateien, IP-Adressen, URLs, Benutzer oder Geräte), die Warnungen von `AlertEvidence` Microsoft Defender for Endpoint, Microsoft Defender für Office 365, Microsoft Cloud App Security und Microsoft Defender for Identity zugeordnet sind. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
+Die Tabelle im Schema der erweiterten Suche enthält Informationen zu verschiedenen Entitäten `AlertEvidence` ( Dateien, [](advanced-hunting-overview.md) IP-Adressen, URLs, Benutzer oder Geräte), die Warnungen von Microsoft Defender for Endpoint, Microsoft Defender für Office 365, Microsoft Cloud App Security und Microsoft Defender for Identity zugeordnet sind. Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
 Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter [Referenz zur erweiterten Suche](advanced-hunting-schema-tables.md).
 

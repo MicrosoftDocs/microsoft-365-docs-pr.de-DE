@@ -93,7 +93,7 @@ für diese Anwendung, es sei denn, diese Elemente werden von anderen Begriffen b
 
 8.  **ANWENDUNGSSPEICHER.**
 
-    1.  Wenn Sie die Anwendung über einen Anwendungsspeicher abrufen (z. B. app Store), überprüfen Sie die entsprechenden Anwendungsspeicherbedingungen, um sicherzustellen, dass Ihr Download und die Verwendung der Anwendung diesen Bedingungen entspricht.
+    1.  Wenn Sie die Anwendung über einen Anwendungsspeicher abrufen (z. B. App Store), überprüfen Sie die entsprechenden Anwendungsspeicherbedingungen, um sicherzustellen, dass Ihr Download und die Verwendung der Anwendung diesen Bedingungen entspricht.
         Diese Bedingungen befinden sich zwischen Ihnen und Microsoft und nicht im Anwendungsspeicher.
 
     2.  Der jeweilige Anwendungsspeicheranbieter und seine Tochtergesellschaften sind Drittbegünstigte dieser Bedingungen, und wenn Sie diese Bedingungen akzeptieren, haben die Anwendungsspeicheranbieter das Recht, jede Bestimmung dieser Bedingungen, die ihnen eine Leistung oder Rechte gewährt, direkt durchzusetzen und sich auf diese zu verlassen.

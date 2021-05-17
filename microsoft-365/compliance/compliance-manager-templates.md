@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Informationen zum Verwenden und Verwalten von Vorlagen zum Erstellen von Bewertungen in Microsoft Compliance Manager. Erstellen und Ändern von Vorlagen mithilfe einer formatierten Excel-Datei.
+description: Informationen zum Verwenden und Verwalten von Vorlagen zum Erstellen von Bewertungen in Microsoft Compliance Manager. Erstellen und Ändern von Vorlagen mithilfe einer formatierten Excel Datei.
 ms.openlocfilehash: ac5fe5f0a62c3b20021a9829499d8cec9339f72a
 ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
@@ -23,7 +23,7 @@ ms.locfileid: "51499021"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Arbeiten mit Bewertungsvorlagen im Compliance-Manager
 
-**In diesem Artikel:** Erfahren **Sie, wie Vorlagen funktionieren** und wie Sie sie **auf** ihrer Bewertungsvorlagenseite verwalten. Erhalten Sie Anweisungen **zum Erstellen** neuer Vorlagen, **zum Ändern** vorhandener Vorlagen, zum Formatieren der **Vorlagendaten mit Excel** und zum Exportieren von **Vorlagenberichten.**
+**In diesem Artikel:** Erfahren **Sie, wie Vorlagen funktionieren** und wie Sie sie **auf** ihrer Bewertungsvorlagenseite verwalten. Erhalten Sie Anweisungen **zum Erstellen** neuer **Vorlagen,** Ändern vorhandener Vorlagen, Formatieren der Vorlagendaten **mit Excel** und Exportieren von **Vorlagenberichten**.
 
 > [!IMPORTANT]
 > Die Bewertungsvorlagen, die Für Ihre Organisation verfügbar sind, hängen von Ihrem Lizenzvertrag ab. [Überprüfen Sie die Details](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
@@ -41,7 +41,7 @@ Eine Vorlage ist ein Framework von Steuerelementen zum Erstellen einer Bewertung
 Die verfügbaren Vorlagen basieren auf dem Lizenzvertrag Ihrer Organisation ([Anzeigen von Lizenzierungsdetails](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)). Es gibt zwei Kategorien von Vorlagen: enthalten und Premium.
 
 1. **Enthaltene** Vorlagen können im Rahmen des Lizenzvertrags Ihrer Organisation verwendet werden.
-2. **Premiumvorlagen** müssen erworben werden, um Bewertungen von diesen zu erstellen. Nach dem Kauf können Sie aus einer Vorlage nach Bedarf so viele Bewertungen erstellen. [Erfahren Sie, wie Sie Premiumvorlagen kaufen können.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
+2. **Premium Vorlagen** müssen erworben werden, um Bewertungen von diesen zu erstellen. Nach dem Kauf können Sie aus einer Vorlage nach Bedarf so viele Bewertungen erstellen. [Erfahren Sie, wie Sie Premiumvorlagen kaufen können.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 #### <a name="active-and-inactive-templates"></a>Aktive und inaktive Vorlagen
 
@@ -66,11 +66,11 @@ Weitere [Informationen finden Sie unter Compliance Manager Licensing Guidance.](
 
 Auf der Seite Bewertungsvorlagen im Compliance-Manager wird eine Liste mit Vorlagen und wichtigen Details angezeigt. Die Liste enthält Vorlagen, die vom Compliance Manager bereitgestellt werden, sowie alle Vorlagen, die Ihre Organisation geändert oder erstellt hat. Sie können Filter anwenden, um eine Vorlage basierend auf zertifizierung, Produktbereich, Land, Branche, wer sie erstellt hat und ob die Vorlage für die Erstellung von Bewertung aktiviert ist.
 
-Wählen Sie eine Vorlage aus der Zeile aus, um die Detailseite anzuzeigen. Diese Seite enthält eine Beschreibung der Vorlage und weitere Informationen zu Zertifizierung, Umfang und Steuerelementdetails. Auf dieser Seite können Sie die entsprechenden Schaltflächen auswählen, um eine Bewertung zu erstellen, die Vorlagendaten nach Excel zu exportieren oder die Vorlage zu ändern.
+Wählen Sie eine Vorlage aus der Zeile aus, um die Detailseite anzuzeigen. Diese Seite enthält eine Beschreibung der Vorlage und weitere Informationen zu Zertifizierung, Umfang und Steuerelementdetails. Auf dieser Seite können Sie die entsprechenden Schaltflächen auswählen, um eine Bewertung zu erstellen, die Vorlagendaten in Excel exportieren oder die Vorlage ändern.
 
 ## <a name="creating-and-modifying-templates-overview"></a>Übersicht über das Erstellen und Ändern von Vorlagen
 
-Um eine vorhandene Vorlage zu ändern oder eine eigene neue Vorlage zu erstellen, verwenden Sie eine speziell formatierte Excel-Kalkulationstabelle[(Beispiel](https://go.microsoft.com/fwlink/?linkid=2124865)herunterladen), um die erforderlichen Steuerelementdaten zusammenstellen zu können. Nachdem Sie die Tabelle abgeschlossen haben, importieren Sie sie während des Erstellens oder Änderns einer Vorlage in den Compliance-Manager.
+Zum Ändern einer vorhandenen Vorlage oder zum Erstellen einer eigenen neuen Vorlage verwenden Sie eine speziell formatierte Excel-Kalkulationstabelle[(Beispiel](https://go.microsoft.com/fwlink/?linkid=2124865)herunterladen), um die erforderlichen Steuerelementdaten zusammenstellen. Nachdem Sie die Tabelle abgeschlossen haben, importieren Sie sie während des Erstellens oder Änderns einer Vorlage in den Compliance-Manager.
 
 > [!NOTE]
 > Die Kalkulationstabelle verfügt über ein bestimmtes Format und Schema, das verwendet werden muss, oder sie wird nicht ordnungsgemäß in den Compliance-Manager importiert. Die [Formatierungsanweisungen](#formatting-your-template-data-with-excel) sind unten aufgeführt.
@@ -86,8 +86,8 @@ Führen Sie die folgenden Schritte aus, um eine eigene neue Vorlage zu erstellen
 1. Wechseln Sie zur **Seite Bewertungsvorlagen** im Compliance-Manager.
 2. Wählen **Sie Neue Vorlage erstellen aus.** Ein Vorlagenerstellungs-Assistent wird geöffnet.
 3. Wählen Sie den Typ der Vorlage aus, die Sie erstellen möchten. Wählen Sie in diesem Fall **Erstellen einer benutzerdefinierten Vorlage** aus, und wählen Sie dann Weiter **aus.**
-4. Wählen Sie auf dem  Bildschirm **Datei** hochladen die Option Durchsuchen aus, um die formatierte Excel-Datei mit allen erforderlichen Vorlagendaten zu suchen und hochzuladen (siehe Anweisungen zum ordnungsgemäßen [Formatieren Der Datei).](#formatting-your-template-data-with-excel)
-5. Wenn keine Probleme mit ihrer Datei auftreten, wird der Name der hochgeladenen Datei angezeigt. Wählen **Sie Weiter aus,** um fortzufahren. (Wenn Sie die Datei ändern müssen, wählen Sie **Hochladen einer anderen Datei aus).**
+4. Wählen Sie **auf Hochladen-Datei**  die Option Durchsuchen aus, um die formatierte Excel-Datei mit allen erforderlichen Vorlagendaten zu finden und [hochzuladen](#formatting-your-template-data-with-excel)(siehe Anweisungen zum ordnungsgemäßen Formatieren Der Datei ).
+5. Wenn keine Probleme mit ihrer Datei auftreten, wird der Name der hochgeladenen Datei angezeigt. Wählen **Sie Weiter aus,** um fortzufahren. (Wenn Sie die Datei ändern müssen, wählen **Sie Hochladen datei aus).**
     - Wenn eine Datei einen Fehler enthält, wird in einer Fehlermeldung oben erklärt, was falsch ist. Sie müssen Ihre Datei korrigieren und erneut hochladen. Fehler resultieren, wenn Ihre Kalkulationstabelle nicht ordnungsgemäß formatiert ist oder wenn in bestimmten Feldern ungültige Informationen enthalten sind (weitere Informationen finden Sie in den [Formatierungsanweisungen](#formatting-your-template-data-with-excel)).  
     
 6. Der **Bildschirm Überprüfen und Fertig** stellen zeigt die Anzahl der Verbesserungsaktionen und -steuerelemente sowie die maximale Bewertung für die Vorlage an. Wenn Sie zur Genehmigung bereit sind, wählen Sie **Vorlage erstellen aus.** (Wenn Sie Änderungen vornehmen müssen, wählen Sie **Zurück** aus.)
@@ -96,7 +96,7 @@ Führen Sie die folgenden Schritte aus, um eine eigene neue Vorlage zu erstellen
 
 ## <a name="formatting-your-template-data-with-excel"></a>Formatieren der Vorlagendaten mit Excel
 
-Die zum Erstellen von Vorlagen verwendete Excel-Kalkulationstabelle enthält vier Registerkarten, von denen drei erforderlich sind:
+Die Excel zum Erstellen von Vorlagen verwendeten Tabellen enthält vier Registerkarten, von denen drei erforderlich sind:
 
 1. [Vorlage](#template-tab) (erforderlich)
 2. [ControlFamily](#controlfamily-tab) (erforderlich)
@@ -107,7 +107,7 @@ Wenn Sie Ihre  **Kalkulationstabelle** mit Vorlagendaten ausfüllen, muss die Ta
 
 ##### <a name="template-tab"></a>Registerkarte "Vorlage"
 
-Die **Registerkarte Vorlage** ist erforderlich. Die Informationen auf dieser Registerkarte enthalten Metadaten zur Vorlage. Es sind vier Spalten erforderlich. Die Spalten müssen die Reihenfolge auf dem Excel-Blatt beibehalten, wie unten aufgeführt. Sie können eine eigene Spalte nach **den** vier Spalten hinzufügen, um Eigene Dimensionen zu bieten. Wenn Sie dies tun, stellen  Sie sicher, dass Sie sie mithilfe der folgenden Anweisungen zur Registerkarte Dimensionen [hinzufügen.](#dimensions-tab)
+Die **Registerkarte Vorlage** ist erforderlich. Die Informationen auf dieser Registerkarte enthalten Metadaten zur Vorlage. Es sind vier Spalten erforderlich. Die Spalten müssen die Reihenfolge auf dem Excel wie unten aufgeführt beibehalten. Sie können eine eigene Spalte nach **den** vier Spalten hinzufügen, um Eigene Dimensionen zu bieten. Wenn Sie dies tun, stellen  Sie sicher, dass Sie sie mithilfe der folgenden Anweisungen zur Registerkarte Dimensionen [hinzufügen.](#dimensions-tab)
 
 - **title**: Dies ist der Titel für Ihre Vorlage, der eindeutig sein muss. Es kann keinen Namen für eine andere Vorlage freigeben, die Sie im Compliance Manager haben, einschließlich Ihrer eigenen Vorlagen oder einer Compliance-Manager-Vorlage.
 
@@ -115,7 +115,7 @@ Die **Registerkarte Vorlage** ist erforderlich. Die Informationen auf dieser Reg
 
 - **zertifizierung**: Dies ist die Verordnung, die Sie für die Vorlage verwenden.
 
-- **inScopeServices**: Dies sind die Dienste innerhalb des Produkts, das diese Bewertung adressiert (wenn Sie beispielsweise Office 365 als Produkt aufgelistet haben, könnte Microsoft Teams ein In-Scope-Dienst sein). Sie können mehrere Dienste durch zwei Semikolon getrennt auflisten.
+- **inScopeServices**: Dies sind die Dienste innerhalb des Produkts, die diese Bewertung adressiert (wenn Sie z. B. Office 365 als Produkt aufgelistet haben, kann Microsoft Teams ein In-Scope-Dienst sein). Sie können mehrere Dienste durch zwei Semikolon getrennt auflisten.
 
 > [!NOTE]
 > Die Daten, die Sie  in die **Produkt-** und Zertifizierungszellen einfügen, können nach dem Importieren der Kalkulationstabelle zum Erstellen oder Anpassen einer Vorlage nicht bearbeitet werden. Außerdem kann eine Gruppe nicht zwei Bewertungen enthalten, die dieselbe **Produkt-/Zertifizierungskombination** haben. Sie können mehrere Vorlagen mit derselben Produkt-/Zertifizierungskombination verwenden.
@@ -166,7 +166,7 @@ Sie können ihre vorhandenen Dimensionen anzeigen, indem Sie zur **Mandantenverw
 
 ## <a name="modify-a-template"></a>Ändern einer Vorlage
 
-Möglicherweise möchten Sie eine bereits erstellte Vorlage ändern, z. B. Steuerelemente hinzufügen oder Verbesserungsaktionen hinzufügen oder entfernen. Der Vorgang ähnelt dem Erstellungsprozess der Vorlage, indem Sie formatierte Excel-Dateien mit Ihren Vorlagendaten hochladen.
+Möglicherweise möchten Sie eine bereits erstellte Vorlage ändern, z. B. Steuerelemente hinzufügen oder Verbesserungsaktionen hinzufügen oder entfernen. Der Prozess ähnelt dem Erstellungsprozess der Vorlage, indem Sie formatierte Excel mit Ihren Vorlagendaten hochladen.
 
 Beim Formatieren der Datei mit Änderungen an vorhandenen Vorlagendaten sind jedoch besondere Details zu beachten. **Es wird empfohlen, diese Anweisungen sorgfältig zu lesen, um sicherzustellen, dass sie keine vorhandenen Daten überschreiben, die Sie beibehalten möchten.**
 
@@ -175,12 +175,12 @@ Beim Formatieren der Datei mit Änderungen an vorhandenen Vorlagendaten sind jed
 Führen Sie die folgenden Schritte aus, um eine Vorlage zu ändern:
 
 1. Wählen Sie **auf der Seite** Bewertungsvorlagen die Vorlage aus, die Sie ändern möchten, wodurch die Detailseite angezeigt wird.
-2. Wählen **Sie Exportieren nach Excel aus.** Eine Excel-Datei mit allen Vorlagendaten wird heruntergeladen. Speichern Sie die Datei auf Ihrem lokalen Computer.
-3. Nehmen Sie Ihre Vorlagenänderungen [vor, indem Sie die Excel-Datei mithilfe der folgenden Anweisungen ändern.](#formatting-your-excel-file-to-modify-a-template)
-4. Wenn Sie die Änderungen an Ihrer Excel-Datei vorgenommen haben, speichern Sie die Datei.
+2. Wählen **Sie Export to Excel** aus. Eine Excel mit allen Vorlagendaten wird heruntergeladen. Speichern Sie die Datei auf Ihrem lokalen Computer.
+3. Nehmen Sie Ihre Vorlagenänderungen [vor, indem Sie die Excel mithilfe](#formatting-your-excel-file-to-modify-a-template)der folgenden Anweisungen ändern.
+4. Speichern Sie die Datei, wenn Sie die Änderungen an Excel vorgenommen haben.
 5. Wählen Sie auf der Detailseite Ihrer Vorlage Die Vorlage **ändern aus,** um den Änderungs-Assistenten zu initiieren. 
-6. Wählen Sie **auf dem Bildschirm** Datei hochladen die Option **Durchsuchen** aus, um Ihre Excel-Datei zu suchen und hochzuladen.
-7. Wenn keine Probleme mit ihrer Datei auftreten, wird auf dem nächsten Bildschirm der Name der hochgeladenen Datei angezeigt. Wählen **Sie Weiter** aus, um fortzufahren (wenn Sie die Datei ändern müssen, wählen Sie Hochladen einer anderen Datei **aus).**
+6. Wählen Sie **auf Hochladen Bildschirm** durchsuchen aus, um Ihre Datei zu suchen und Excel hochladen. 
+7. Wenn keine Probleme mit ihrer Datei auftreten, wird auf dem nächsten Bildschirm der Name der hochgeladenen Datei angezeigt. Wählen **Sie Weiter** aus, um fortzufahren (wenn Sie die Datei ändern müssen, wählen Hochladen eine andere Datei **aus).**
     - Wenn ein Problem mit Ihrer Datei vor liegt, wird in einer Fehlermeldung oben erklärt, was falsch ist. Sie müssen Ihre Datei korrigieren und erneut hochladen. Fehler resultieren, wenn Ihre Kalkulationstabelle nicht ordnungsgemäß formatiert ist oder wenn in bestimmten Feldern ungültige Informationen enthalten sind.
 
 8. Der **Bildschirm Überprüfen und Fertig** stellen zeigt die Anzahl der Verbesserungsaktionen und -steuerelemente sowie die maximale Bewertung für die Vorlage an. Wenn Sie zur Genehmigung bereit sind, wählen Sie **Weiter aus.**
@@ -189,9 +189,9 @@ Führen Sie die folgenden Schritte aus, um eine Vorlage zu ändern:
 Ihre Vorlage enthält nun die änderungen, die Sie vorgenommen haben. Alle Bewertungen, die diese geänderte Vorlage verwenden, zeigen nun ausstehende Updates an, und Sie müssen die Aktualisierungen der Bewertungen akzeptieren, um die in der Vorlage vorgenommenen Änderungen widerspiegeln zu können. Erfahren Sie mehr über [Updates für Bewertungen](compliance-manager-assessments.md#accepting-updates-to-assessments).
 
 > [!NOTE]
-> Wenn Sie Compliance Manager in einer anderen Sprache als Englisch verwenden, werden Sie feststellen, dass beim Exportieren einer Vorlage nach Excel text in Englisch angezeigt wird. Die Titel von Aktionen (sowohl Ihre Verbesserungsaktionen als auch Microsoft-Aktionen) müssen auf Englisch sein, damit sie von Steuerelementen erkannt werden. Wenn Sie Änderungen an einem Aktionstitel vornehmen, schreiben Sie ihn unbedingt in Englisch, damit die Datei ordnungsgemäß importiert wird.
+> Wenn Sie Compliance Manager in einer anderen Sprache als Englisch verwenden, werden Sie feststellen, dass beim Exportieren einer Vorlage in eine andere Sprache Excel. Die Titel von Aktionen (sowohl Ihre Verbesserungsaktionen als auch Microsoft-Aktionen) müssen auf Englisch sein, damit sie von Steuerelementen erkannt werden. Wenn Sie Änderungen an einem Aktionstitel vornehmen, schreiben Sie ihn unbedingt in Englisch, damit die Datei ordnungsgemäß importiert wird.
 
-### <a name="formatting-your-excel-file-to-modify-a-template"></a>Formatieren der Excel-Datei zum Ändern einer Vorlage
+### <a name="formatting-your-excel-file-to-modify-a-template"></a>Formatieren der Excel zum Ändern einer Vorlage
 
 Wechseln Sie zu einem Abschnitt unten, um schnell die benötigten Anweisungen zu finden:
 
@@ -256,8 +256,8 @@ Wenn Sie Ihre Kalkulationstabelle wieder in die Vorlage importieren, wird Ihr St
 
 ## <a name="export-a-template"></a>Exportieren einer Vorlage
 
-Sie können eine Excel-Datei exportieren, die alle Daten einer Vorlage enthält. Sie müssen eine Vorlage exportieren, um die Vorlage zu ändern, da dies die Excel-Datei ist, die Sie bearbeiten und im [Änderungsprozess hochladen.](#modify-a-template)
+Sie können eine Excel exportieren, die alle Daten einer Vorlage enthält. Sie müssen eine Vorlage exportieren, um die Vorlage zu ändern, da dies die Excel ist, die Sie im Änderungsprozess bearbeiten und [hochladen.](#modify-a-template)
 
-Um Ihre Vorlage zu exportieren, wechseln Sie zur Seite Vorlagendetails, und wählen Sie **die Schaltfläche Exportieren nach Excel** aus.
+Um Ihre Vorlage zu exportieren, wechseln Sie zur Seite Vorlagendetails, und wählen Sie die Schaltfläche **Exportieren Excel** aus.
 
 Beachten Sie, dass beim Exportieren einer Vorlage, die Sie aus einer Compliance -Manager-Vorlage erweitert haben, die exportierte Datei nur die Attribute enthält, die Sie der Vorlage hinzugefügt haben. Die exportierte Datei enthält nicht die ursprünglichen Vorlagendaten, die von Microsoft bereitgestellt wurden. Informationen zum Erhalten eines solchen Berichts finden Sie in den Anweisungen zum [Exportieren eines Bewertungsberichts](compliance-manager-assessments.md#export-an-assessment-report).

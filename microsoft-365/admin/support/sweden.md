@@ -35,6 +35,6 @@ Englisch: Mo-Fr 9:00 bis 17:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefon Nummer: 08 5176 1966
+Alternative Telefonnummer: 08 5176 1966
 
 Es gelten die Ortstarife.

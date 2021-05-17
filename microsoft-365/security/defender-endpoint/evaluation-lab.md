@@ -45,14 +45,14 @@ Mit der vereinfachten Einrichtungsumgebung können Sie sich auf die Ausführung 
 
 Sie haben vollsten Zugriff auf die leistungsstarken Funktionen der Plattform, z. B. automatisierte Untersuchungen, erweiterte Suche und Bedrohungsanalyse, sodass Sie den umfassenden Schutzstapel testen können, den Defender for Endpoint bietet. 
 
-Sie können Windows 10- oder Windows Server 2019-Geräte hinzufügen, die vorkonfiguriert sind, um die neuesten Betriebssystemversionen und die richtigen Sicherheitskomponenten sowie Office 2019 Standard installiert zu haben.
+Sie können Windows 10 oder Windows Server 2019-Geräte hinzufügen, die vorkonfiguriert sind, um die neuesten Betriebssystemversionen und die richtigen Sicherheitskomponenten sowie Office 2019 Standard installiert zu haben.
 
 Sie können auch Bedrohungssimulatoren installieren. Defender for Endpoint hat sich mit branchenführenden Bedrohungssimulationsplattformen zusammen gefunden, um die Defender for Endpoint-Funktionen zu testen, ohne das Portal verlassen zu müssen.
 
  Installieren Sie Ihren bevorzugten Simulator, führen Sie Szenarien innerhalb des Evaluierungslabors aus, und sehen Sie sich sofort an, wie die Plattform funktioniert – alles bequem und ohne zusätzliche Kosten für Sie verfügbar. Außerdem haben Sie bequemen Zugriff auf eine breite Palette von Simulationen, auf die Sie im Simulationskatalog zugreifen und diese ausführen können.
     
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 Sie müssen die Lizenzierungsanforderungen [erfüllen](minimum-requirements.md#licensing-requirements) oder Testzugriff auf Microsoft Defender for Endpoint haben, um auf das Evaluierungslabor zu zugreifen.
 
 Sie müssen über **Berechtigungen zum Verwalten von Sicherheitseinstellungen verfügen** für:
@@ -109,16 +109,16 @@ Nach Abschluss des Lab-Setupprozesses können Sie Geräte hinzufügen und Simula
 
 
 ## <a name="add-devices"></a>Hinzufügen von Geräten
-Wenn Sie Ihrer Umgebung ein Gerät hinzufügen, richtet Defender for Endpoint ein gut konfiguriertes Gerät mit Verbindungsdetails ein. Sie können Windows 10- oder Windows Server 2019-Geräte hinzufügen.
+Wenn Sie Ihrer Umgebung ein Gerät hinzufügen, richtet Defender for Endpoint ein gut konfiguriertes Gerät mit Verbindungsdetails ein. Sie können Windows 10 oder Windows Server 2019-Geräte hinzufügen.
 
-Das Gerät wird mit der neuesten Version des Betriebssystems und office 2019 Standard sowie mit anderen Apps wie Java, Python und SysIntenals konfiguriert. 
+Das Gerät wird mit der neuesten Version des Betriebssystems und Office 2019 Standard sowie anderen Apps wie Java, Python und SysIntenals konfiguriert. 
 
    >[!TIP]
    > Benötigen Sie weitere Geräte in Ihrem Labor? Senden Sie ein Supportticket, damit Ihre Anforderung vom Defender for Endpoint-Team überprüft wird. 
 
 Wenn Sie während der Übungseinrichtung einen Bedrohungssimulator hinzufügen möchten, wird auf allen Geräten der Threat Simulator Agent auf den geräten installiert, die Sie hinzufügen.
 
-Das Gerät wird automatisch in Ihren Mandanten onboardiert, und die empfohlenen Windows-Sicherheitskomponenten sind aktiviert und im Überwachungsmodus – ohne Aufwand auf Ihrer Seite. 
+Das Gerät wird automatisch in Ihren Mandanten mit den empfohlenen sicherheitskomponenten Windows aktiviert und im Überwachungsmodus – ohne Aufwand auf Ihrer Seite. 
 
 Die folgenden Sicherheitskomponenten sind auf den Testgeräten vorkonfiguriert:
 
@@ -128,11 +128,11 @@ Die folgenden Sicherheitskomponenten sind auf den Testgeräten vorkonfiguriert:
 - [Exploit-Schutz.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
 - [Netzwerkschutz](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
 - [Erkennung potenziell unerwünschter Anwendungen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Aus der Cloud gelieferter Schutz](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [In der Cloud zugestellter Schutz](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
 - [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
 
 >[!NOTE]
-> Microsoft Defender Antivirus ist aktiviert (nicht im Überwachungsmodus). Wenn Sie von Microsoft Defender Antivirus nicht mehr ausgeführt werden können, können Sie den Echtzeitschutz auf dem Gerät über Windows Security deaktivieren. Weitere Informationen finden Sie unter [Configure always-on protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
+> Microsoft Defender Antivirus ist aktiviert (nicht im Überwachungsmodus). Wenn Microsoft Defender Antivirus, dass Sie ihre Simulation nicht ausführen können, können Sie den Echtzeitschutz auf dem Gerät über Windows-Sicherheit. Weitere Informationen finden Sie unter [Configure always-on protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
 
 Automatische Untersuchungseinstellungen hängen von den Mandanteneinstellungen ab. Sie wird standardmäßig als halbautomatisiert konfiguriert. Weitere Informationen finden Sie unter [Overview of Automated investigations](automated-investigations.md).
 
@@ -141,7 +141,7 @@ Automatische Untersuchungseinstellungen hängen von den Mandanteneinstellungen a
 
 1. Wählen Sie im Dashboard Geräte **hinzufügen aus.** 
 
-2. Wählen Sie den Typ des hinzuzufügende Geräts aus. Sie können Windows 10 oder Windows Server 2019 hinzufügen.
+2. Wählen Sie den Typ des hinzuzufügende Geräts aus. Sie können server 2019 Windows 10 oder Windows hinzufügen.
 
     ![Abbildung des Lab-Setups mit Geräteoptionen](images/add-machine-options.png)
 
@@ -184,11 +184,11 @@ Wenn Sie nach einer vordefinierten Simulation suchen, können Sie unsere [Angrif
 >[!NOTE]
 >Die Verbindung mit den Testgeräten erfolgt mithilfe von RDP. Stellen Sie sicher, dass ihre Firewalleinstellungen RDP-Verbindungen zulassen.
 
-1. Stellen Sie eine Verbindung mit Ihrem Gerät ein, und führen Sie eine Angriffssimulation aus, indem Sie **Verbinden auswählen.** 
+1. Verbinden Auf Ihr Gerät zugreifen und eine Angriffssimulation ausführen, indem Sie **Verbinden.** 
 
     ![Abbildung der Verbindungsschaltfläche für Testgeräte](images/test-machine-table.png)
 
-2. Speichern Sie die RDP-Datei, und starten Sie sie, indem Sie **Verbinden auswählen.**
+2. Speichern Sie die RDP-Datei, und starten Sie sie, indem Sie **Verbinden.**
 
     ![Abbildung der Remotedesktopverbindung](images/remote-connection.png)
 

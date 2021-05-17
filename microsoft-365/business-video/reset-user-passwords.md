@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Benutzerkennwörter in Microsoft 365 Business zurücksetzen.
+description: Informationen zum Zurücksetzen von Benutzerkennwörtern in Microsoft 365 Business.
 ms.openlocfilehash: 42832bd48f637589687b75c4995ae58154b62226
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -37,7 +37,7 @@ In Microsoft 365 Business können Sie Kennwörter für Benutzer zurücksetzen. S
 ## <a name="try-it"></a>Probieren Sie es aus!
 
 1. Wenn ein Benutzer ein neues Kennwort anfordert, erhalten Sie eine Anforderung zur Kennwortzurücksetzung per E-Mail. Um das Kennwort zurückzusetzen, öffnen Sie das App-Startfeld, und wählen Sie **Admin aus.**
-1. Wählen Sie im Microsoft 365 Admin Center Benutzer **,** Aktive Benutzer  **aus,** und wählen Sie dann das Schlüsselsymbol neben dem Benutzer aus, der die Zurücksetzung angefordert hat.
+1. Wählen Sie Microsoft 365 Admin Center Benutzer **,** **Aktive** Benutzer aus, und wählen Sie dann das Schlüsselsymbol neben dem Benutzer aus, der die Zurücksetzung angefordert hat.
 1. Wählen **Sie Kennwort automatisch generieren aus,** damit automatisch ein zufälliges Kennwort erstellt wird.
 1. Wählen Sie **Zurücksetzen** aus.
 1. Aktivieren Sie **das Kontrollkästchen Kennwort in E-Mail** senden.

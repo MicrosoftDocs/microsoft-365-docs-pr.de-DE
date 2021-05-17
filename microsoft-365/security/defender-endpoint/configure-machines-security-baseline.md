@@ -33,7 +33,7 @@ ms.locfileid: "51933601"
 
 >Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-Sicherheitsgrundwerte stellen sicher, dass Sicherheitsfeatures gemäß den Anweisungen von Sicherheitsexperten und erfahrenen Windows-Systemadministratoren konfiguriert werden. Bei der Bereitstellung legt die Sicherheitsgrundlinie von Defender for Endpoint die Sicherheitssteuerelemente für Defender for Endpoint so fest, dass ein optimaler Schutz bereitgestellt wird.
+Sicherheitsgrundwerte stellen sicher, dass Sicherheitsfeatures gemäß den Anweisungen von Sicherheitsexperten und Experten für Windows konfiguriert werden. Bei der Bereitstellung legt die Sicherheitsgrundlinie von Defender for Endpoint die Sicherheitssteuerelemente für Defender for Endpoint so fest, dass ein optimaler Schutz bereitgestellt wird.
 
 Informationen zu Sicherheitsgrundwerten und deren Zugewiesenung in Intune mithilfe von Konfigurationsprofilen finden Sie [in diesen Häufig gestellten Fragen](https://docs.microsoft.com/intune/security-baselines#q--a).
 
@@ -42,19 +42,19 @@ Bevor Sie die Einhaltung von Sicherheitsgrundwerten bereitstellen und nachverfol
 - [Sicherstellen, dass Sie über die erforderlichen Berechtigungen verfügen](configure-machines.md#obtain-required-permissions)
 
 ## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Vergleichen der Microsoft Defender for Endpoint- und Windows Intune-Sicherheitsgrundwerte
-Die Windows Intune-Sicherheitsgrundlinie enthält eine umfassende Reihe empfohlener Einstellungen, die zum sicheren Konfigurieren von Geräten unter Windows erforderlich sind, einschließlich Browsereinstellungen, PowerShell-Einstellungen sowie Einstellungen für einige Sicherheitsfeatures wie Microsoft Defender Antivirus. Im Gegensatz dazu enthält die Defender for Endpoint-Baseline Einstellungen, mit denen alle Sicherheitssteuerelemente im Defender for Endpoint-Stapel optimiert werden, einschließlich Einstellungen für endpunkterkennung und -reaktion (Endpoint Detection and Response, EDR) sowie Einstellungen, die auch in der Windows Intune-Sicherheitsgrundlinie zu finden sind. Weitere Informationen zu den einzelnen Baselines finden Sie unter:
+Die Windows Intune-Sicherheitsbasis bietet eine umfassende Reihe empfohlener Einstellungen, die zum sicheren Konfigurieren von Geräten mit Windows erforderlich sind, einschließlich Browsereinstellungen, PowerShell-Einstellungen sowie Einstellungen für einige Sicherheitsfeatures wie Microsoft Defender Antivirus. Im Gegensatz dazu bietet die Defender for Endpoint-Baseline Einstellungen, mit denen alle Sicherheitssteuerelemente im Defender for Endpoint-Stapel optimiert werden, einschließlich Einstellungen für EDR (EDR) sowie Einstellungen, die auch in der Windows Intune-Sicherheitsgrundlinie zu finden sind. Weitere Informationen zu den einzelnen Baselines finden Sie unter:
 
-- [Windows-Sicherheitsgrundeinstellungen für Intune](https://docs.microsoft.com/intune/security-baseline-settings-windows)
+- [Windows Sicherheitsgrundeinstellungen für Intune](https://docs.microsoft.com/intune/security-baseline-settings-windows)
 - [Basiseinstellungen für Microsoft Defender for Endpoint für Intune](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
 
-Im Idealfall werden die in Defender for Endpoint integrierten Geräte beide Basiswerte bereitgestellt: die Windows Intune-Sicherheitsgrundlinie zum anfänglichen Sichern von Windows und anschließend die Defender for Endpoint-Sicherheitsgrundlinie, die sich auf einer Schicht befindet, um die Defender for Endpoint-Sicherheitssteuerelemente optimal zu konfigurieren. Um von den neuesten Daten zu Risiken und Bedrohungen zu profitieren und Konflikte bei der Entwicklung der Basiswerte zu minimieren, wenden Sie immer die neuesten Versionen der Basiswerte für alle Produkte an, sobald sie veröffentlicht werden.
+Im Idealfall werden die in Defender for Endpoint integrierten Geräte beide Basiswerte bereitgestellt: die Windows Intune-Sicherheitsgrundlinie zum anfänglichen Sichern von Windows und anschließend die Defender for Endpoint-Sicherheitsgrundlinie, die sich auf der Oberseite befindet, um die Defender for Endpoint-Sicherheitssteuerelemente optimal zu konfigurieren. Um von den neuesten Daten zu Risiken und Bedrohungen zu profitieren und Konflikte bei der Entwicklung der Basiswerte zu minimieren, wenden Sie immer die neuesten Versionen der Basiswerte für alle Produkte an, sobald sie veröffentlicht werden.
 
 >[!NOTE]
 >Die Sicherheitsgrundlinie von Defender for Endpoint wurde für physische Geräte optimiert und wird derzeit nicht für die Verwendung auf virtuellen Computern (VMs) oder VDI-Endpunkten empfohlen. Bestimmte Basiseinstellungen können sich auf interaktive Remotesitzungen in virtualisierten Umgebungen auswirken.
 
 ## <a name="monitor-compliance-to-the-defender-for-endpoint-security-baseline"></a>Überwachen der Einhaltung der Sicherheitsgrundlinie für Defender for Endpoint
 
-Die **Sicherheitsgrundkarte** für die [Gerätekonfigurationsverwaltung](configure-machines.md) bietet eine Übersicht über die Kompatibilität auf Windows 10-Geräten, denen die Sicherheitsbasislinie Defender for Endpoint zugewiesen wurde.
+Die **Sicherheitsgrundkarte** für die [Gerätekonfigurationsverwaltung](configure-machines.md) bietet eine Übersicht über die Kompatibilität Windows 10 Geräten, denen die Sicherheitsbasislinie Defender for Endpoint zugewiesen wurde.
 
 ![Sicherheitsgrundkarte](images/secconmgmt_baseline_card.png)<br>
 *Karte, auf der die Einhaltung der Sicherheitsgrundlinie für Defender for Endpoint angezeigt wird*
@@ -73,12 +73,12 @@ Wählen Sie Zum Überprüfen bestimmter Geräte **die Option Sicherheitsbasispla
 
 ## <a name="review-and-assign-the-microsoft-defender-for-endpoint-security-baseline"></a>Überprüfen und Zuweisen der Microsoft Defender for Endpoint-Sicherheitsgrundlinie
 
-Die Gerätekonfigurationsverwaltung überwacht die Grundlegende Kompatibilität nur von Windows 10-Geräten, denen speziell die Microsoft Defender for Endpoint-Sicherheitsbasis zugewiesen wurde. Sie können die Basislinie bequem überprüfen und sie Geräten in der Intune-Geräteverwaltung zuweisen.
+Die Gerätekonfigurationsverwaltung überwacht die grundlegende Kompatibilität nur Windows 10 Geräten, denen speziell die Microsoft Defender for Endpoint-Sicherheitsbasis zugewiesen wurde. Sie können die Basislinie bequem überprüfen und sie Geräten in der Intune-Geräteverwaltung zuweisen.
 
 1. Wählen **Sie Sicherheitsbasisplan konfigurieren** auf der **Basiskarte Sicherheit** aus, um zu Intune-Geräteverwaltung zu wechseln. Eine ähnliche Übersicht über die Basiskonformität wird angezeigt.
 
    >[!TIP]
-   > Alternativ können Sie im Microsoft Azure-Portal von Allen Diensten > Intune > Gerätesicherheit > Sicherheitsgrundlinien > Microsoft Defender ATP-Basislinie zur Sicherheitsbasislinie von Defender for Endpoint **navigieren.**
+   > Alternativ können Sie im Microsoft Azure-Portal von Allen Diensten > Intune > Gerätesicherheit > Sicherheitsgrundlinien > Microsoft Defender ATP zur Sicherheitsbasislinie von Defender for Endpoint **navigieren.**
 
 
 2. Erstellen Sie ein neues Profil.

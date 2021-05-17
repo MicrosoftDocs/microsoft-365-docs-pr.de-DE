@@ -1,7 +1,7 @@
 ---
 title: Erweitern der erweiterten Abdeckung der Suche mit den richtigen Einstellungen
-description: Überprüfen der Überwachungseinstellungen auf Windows-Geräten und anderen Einstellungen, um sicherzustellen, dass Sie bei der erweiterten Suche die umfassendsten Daten erhalten
-keywords: advanced hunting, incident, pivot, entity, audit settings, user account management, security group management, threat hunting, cyber threat hunting, search, query, telemetry, Microsoft 365, Microsoft 365 Defender
+description: Überprüfen der Überwachungseinstellungen auf Windows geräten und anderen Einstellungen, um sicherzustellen, dass Sie die umfassendsten Daten in der erweiterten Suche erhalten
+keywords: Erweiterte Suche, Vorfall, Pivot, Entität, Überwachungseinstellungen, Benutzerkontenverwaltung, Sicherheitsgruppenverwaltung, Bedrohungssuche, Suche nach Cyberbedrohungen, Suche, Abfrage, Telemetrie, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -36,9 +36,9 @@ ms.locfileid: "51952668"
 - Microsoft 365 Defender
 - Microsoft Defender für Endpunkt
 
-[Die erweiterte](advanced-hunting-overview.md) Suche basiert auf Daten aus verschiedenen Quellen, einschließlich Ihrer Geräte, Ihrer Office 365-Arbeitsbereiche, Azure AD und Microsoft Defender for Identity. Stellen Sie sicher, dass sie über die richtigen Einstellungen in den entsprechenden Datenquellen verfügen, um möglichst umfassende Daten zu erhalten.
+[Die erweiterte](advanced-hunting-overview.md) Suche basiert auf Daten aus verschiedenen Quellen, einschließlich Ihrer Geräte, Office 365 Arbeitsbereiche, Azure AD und Microsoft Defender for Identity. Stellen Sie sicher, dass sie über die richtigen Einstellungen in den entsprechenden Datenquellen verfügen, um möglichst umfassende Daten zu erhalten.
 
-## <a name="advanced-security-auditing-on-windows-devices"></a>Erweiterte Sicherheitsüberwachung auf Windows-Geräten
+## <a name="advanced-security-auditing-on-windows-devices"></a>Erweiterte Sicherheitsüberwachung auf Windows Geräten
 Aktivieren Sie diese erweiterten Überwachungseinstellungen, um sicherzustellen, dass Sie Daten zu Aktivitäten auf Ihren Geräten erhalten, z. B. lokale Kontoverwaltung, lokale Sicherheitsgruppenverwaltung und Diensterstellung.
 
 | Daten | Beschreibung | Schematabelle | Konfigurieren |
@@ -52,10 +52,10 @@ Wenn Sie Active Directory lokal ausführen, müssen Sie den Microsoft Defender f
 
 | Daten | Beschreibung | Schematabelle | Konfigurieren |
 | --- | --- | --- | --- |
-| Domänencontroller | Daten aus lokalem Active Directory, die an Microsoft Defender for Identity gesendet werden, bereichern identitätsbezogene Informationen, z. B. Kontodetails, Anmeldeaktivitäten und Active Directory-Abfragen | Mehrere Tabellen, einschließlich [IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)und [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installieren des Microsoft Defender for Identity-Sensors](/azure-advanced-threat-protection/install-atp-step4)<br>- [Aktivieren relevanter Windows-Ereignisse](/azure-advanced-threat-protection/configure-event-collection) |
+| Domänencontroller | Daten aus lokalem Active Directory, die an Microsoft Defender for Identity gesendet werden, bereichern identitätsbezogene Informationen, z. B. Kontodetails, Anmeldeaktivitäten und Active Directory-Abfragen | Mehrere Tabellen, einschließlich [IdentityInfo,](advanced-hunting-identityinfo-table.md) [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md)und [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md)  | - [Installieren des Microsoft Defender for Identity-Sensors](/azure-advanced-threat-protection/install-atp-step4)<br>- [Aktivieren relevanter Windows Ereignisse](/azure-advanced-threat-protection/configure-event-collection) |
 
 >[!NOTE]
->Einige Tabellen in diesem Artikel sind möglicherweise nicht in Microsoft Defender for Endpoint verfügbar. [Aktivieren Sie Microsoft 365 Defender,](m365d-enable.md) um bedrohungen mithilfe von weiteren Datenquellen nach Bedrohungen zu fahnen. Sie können Ihre erweiterten Suchworkflows von Microsoft Defender for Endpoint zu Microsoft 365 Defender verschieben, indem Sie die Schritte unter [Migrate advanced hunting queries from Microsoft Defender for Endpoint ausführen.](advanced-hunting-migrate-from-mde.md)
+>Einige Tabellen in diesem Artikel sind möglicherweise nicht in Microsoft Defender for Endpoint verfügbar. [Aktivieren Sie Microsoft 365 Defender,](m365d-enable.md) um bedrohungen mithilfe von weiteren Datenquellen nach Bedrohungen zu fahnen. Sie können Ihre workflows für die erweiterte Suche von Microsoft Defender for Endpoint zu Microsoft 365 Defender verschieben, indem Sie die Schritte unter [Migrate advanced hunting queries from Microsoft Defender for Endpoint ausführen.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

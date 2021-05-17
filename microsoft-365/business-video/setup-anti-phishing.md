@@ -32,7 +32,7 @@ ms.locfileid: "51580414"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvt9r?autoplay=false]
 
-Phishing ist ein bösartiger Angriff, bei dem eine E-Mail so aussieht, als ob sie von einer vertrauten Quelle gesendet wurde, aber sie versucht, Ihre persönlichen Informationen zu sammeln. Standardmäßig enthält Microsoft 365 einen Antiphishingschutz, Aber Sie können diesen Schutz erhöhen, indem Sie die Einstellungen verfeinern. Lassen Sie uns einen Blick werfen.
+Phishing ist ein bösartiger Angriff, bei dem eine E-Mail so aussieht, als ob sie von einer vertrauten Quelle gesendet wurde, aber sie versucht, Ihre persönlichen Informationen zu sammeln. Standardmäßig enthält Microsoft 365 schutz vor Phishing, Sie können diesen Schutz jedoch erhöhen, indem Sie die Einstellungen verfeinern. Lassen Sie uns einen Blick werfen.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 

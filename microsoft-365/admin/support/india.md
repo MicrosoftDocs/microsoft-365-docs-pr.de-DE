@@ -37,6 +37,6 @@ Englisch: Mon-Fri 9:00-18:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefon Nummer: 1800 200 2052
+Alternative Telefonnummer: 1800 200 2052
 
 Gebührenfreie lokale Gebühren

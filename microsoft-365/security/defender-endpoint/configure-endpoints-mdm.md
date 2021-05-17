@@ -37,16 +37,16 @@ Sie können Mobile Device Management (MDM)-Lösungen verwenden, um Geräte zu ko
 
 Weitere Informationen zur Verwendung von Defender for Endpoint CSP finden Sie unter [WindowsAdvancedThreatProtection CSP](https://msdn.microsoft.com/library/windows/hardware/mt723296(v=vs.85).aspx) und [WindowsAdvancedThreatProtection DDF file](https://msdn.microsoft.com/library/windows/hardware/mt723297(v=vs.85).aspx).
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
-Wenn Sie Microsoft Intune verwenden, muss das Gerät MDM registriert sein. Andernfalls werden einstellungen nicht erfolgreich angewendet. 
+## <a name="before-you-begin"></a>Bevor Sie beginnen
+Wenn Sie eine Microsoft Intune verwenden, muss das Gerät MDM registriert sein. Andernfalls werden einstellungen nicht erfolgreich angewendet. 
 
-Weitere Informationen zum Aktivieren von MDM mit Microsoft Intune finden Sie unter [Device enrollment (Microsoft Intune)](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment).
+Weitere Informationen zum Aktivieren von MDM mit Microsoft Intune finden Sie unter [Device enrollment (Microsoft Intune).](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
 
-## <a name="onboard-devices-using-microsoft-intune"></a>Onboarding von Geräten mithilfe von Microsoft Intune
+## <a name="onboard-devices-using-microsoft-intune"></a>Onboarding von Geräten mithilfe Microsoft Intune
 
-[![Abbildung der PDF mit Onboardinggeräten für Defender for Endpoint mithilfe von Microsoft Intune ](images/onboard-intune.png)](images/onboard-intune-big.png#lightbox)
+[![Abbildung der PDF mit Onboardinggeräten für Defender for Endpoint mithilfe Microsoft Intune ](images/onboard-intune.png)](images/onboard-intune-big.png#lightbox)
 
-Sehen Sie sich [die PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  oder  [Visio-Datei](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) an, um die verschiedenen Pfade bei der Bereitstellung von Defender for Endpoint zu sehen. 
+Sehen Sie sich [die PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [oder Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) an, um die verschiedenen Pfade bei der Bereitstellung von Defender for Endpoint zu sehen. 
 
 Befolgen Sie die Anweisungen von [Intune](https://docs.microsoft.com/intune/advanced-threat-protection).
 
@@ -55,14 +55,14 @@ Weitere Informationen zur Verwendung von Defender for Endpoint CSP finden Sie un
 
 > [!NOTE]
 > - Die **Richtlinie Integritätsstatus für integrierte Geräte** verwendet schreibgeschützte Eigenschaften und kann nicht behoben werden.
-> - Die Konfiguration der Häufigkeit der Diagnosedatenberichte ist nur für Geräte unter Windows 10, Version 1703, verfügbar.
+> - Die Konfiguration der Häufigkeit der Diagnosedatenberichte ist nur für Geräte auf Windows 10 Version 1703 verfügbar.
 
 
 >[!TIP]
 > Nach dem Onboarding des Geräts können Sie einen Erkennungstest ausführen, um zu überprüfen, ob ein Gerät ordnungsgemäß in den Dienst integrierte wurde. Weitere Informationen finden Sie unter Ausführen eines Erkennungstests auf einem neu integrierten [Microsoft Defender for Endpoint-Gerät.](run-detection-test.md)
 
 
-Sehen Sie sich [die PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  oder  [Visio-Datei](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) an, um die verschiedenen Pfade bei der Bereitstellung von Microsoft Defender for Endpoint zu sehen.
+Sehen Sie sich [die PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [oder Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) an, um die verschiedenen Pfade bei der Bereitstellung von Microsoft Defender for Endpoint zu sehen.
 
 ## <a name="offboard-and-monitor-devices-using-mobile-device-management-tools"></a>Offboard und Überwachen von Geräten mithilfe von Mobile Device Management Tools
 Aus Sicherheitsgründen läuft das für Offboard-Geräte verwendete Paket 30 Tage nach dem Downloaddatum ab. Abgelaufene offboarding-Pakete, die an ein Gerät gesendet werden, werden abgelehnt. Beim Herunterladen eines offboarding-Pakets werden Sie über das Ablaufdatum der Pakete benachrichtigt und es wird auch im Paketnamen enthalten sein.
@@ -70,25 +70,25 @@ Aus Sicherheitsgründen läuft das für Offboard-Geräte verwendete Paket 30 Tag
 > [!NOTE]
 > Onboarding- und Offboardingrichtlinien dürfen nicht gleichzeitig auf demselben Gerät bereitgestellt werden, da andernfalls unvorhersehbare Kollisionen verursacht werden.
 
-1. Das offboarding-Paket aus [dem Microsoft Defender Security Center erhalten:](https://securitycenter.windows.com/)
+1. Erhalten Sie das offboarding-Paket [von Microsoft Defender Security Center:](https://securitycenter.windows.com/)
 
    1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Offboarding aus.**
 
-   1. Wählen Sie Windows 10 als Betriebssystem aus.
+   1. Wählen Windows 10 als Betriebssystem aus.
 
-   1. Wählen Sie **im Feld Bereitstellungsmethode** die Option **Mobile Geräteverwaltung /Microsoft Intune aus.**
+   1. Wählen Sie **im Feld Bereitstellungsmethode** die Option **Mobile Geräteverwaltung/-Microsoft Intune.**
     
-   1. Klicken **Sie auf Paket herunterladen,** und speichern Sie die ZIP-Datei.
+   1. Klicken **Sie auf Paket** herunterladen, und speichern Sie .zip Datei.
 
-2. Extrahieren Sie den Inhalt der ZIP-Datei an einen freigegebenen schreibgeschützten Speicherort, auf den die Netzwerkadministratoren zugreifen können, die das Paket bereitstellen. Sie sollten über eine Datei namens *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding verfügen.*
+2. Extrahieren Sie den Inhalt der .zip an einen freigegebenen, schreibgeschützten Speicherort, auf den die Netzwerkadministratoren zugreifen können, die das Paket bereitstellen. Sie sollten über eine Datei namens *WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding verfügen.*
 
-3. Verwenden Sie die benutzerdefinierte Microsoft Intune-Konfigurationsrichtlinie, um die folgenden unterstützten OMA-URI-Einstellungen bereitzustellen.
+3. Verwenden Sie Microsoft Intune benutzerdefinierte Konfigurationsrichtlinie, um die folgenden unterstützten OMA-URI-Einstellungen zu bereitstellen.
 
       OMA-URI: ./Device/Vendor/MSFT/WindowsAdvancedThreatProtection/Offboarding<br/>
       Datumstyp: Zeichenfolge<br/>
       Wert: [Kopieren und Einfügen des Werts aus dem Inhalt der WindowsDefenderATP_valid_until_YYYY-MM-DD.offboarding-Datei]
 
-Weitere Informationen zu Microsoft Intune-Richtlinieneinstellungen finden Sie unter [Windows 10-Richtlinieneinstellungen in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
+Weitere Informationen zu Microsoft Intune Richtlinieneinstellungen finden Sie [unter Windows 10 richtlinieneinstellungen in Microsoft Intune](https://docs.microsoft.com/intune/deploy-use/windows-10-policy-settings-in-microsoft-intune).
 
 
 > [!NOTE]
@@ -98,8 +98,8 @@ Weitere Informationen zu Microsoft Intune-Richtlinieneinstellungen finden Sie un
 > Offboarding bewirkt, dass das Gerät das Senden von Sensordaten an das Portal beendet, aber Daten vom Gerät, einschließlich Verweis auf alle Warnungen, die es erhalten hat, werden für bis zu 6 Monate aufbewahrt.
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Onboarding von Windows 10-Geräten mithilfe von Gruppenrichtlinien](configure-endpoints-gp.md)
-- [Onboarding von Windows 10-Geräten mithilfe von Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Onboarding Windows 10 Geräte mithilfe von Gruppenrichtlinien](configure-endpoints-gp.md)
+- [Onboarding Windows 10 Geräte mithilfe Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboarding von Windows 10-Geräten mithilfe eines lokalen Skripts](configure-endpoints-script.md)
 - [Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)](configure-endpoints-vdi.md)
 - [Ausführen eines Erkennungstests auf einem neu integrierten Microsoft Defender for Endpoint-Gerät](run-detection-test.md)

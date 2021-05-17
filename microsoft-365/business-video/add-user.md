@@ -32,16 +32,16 @@ ms.locfileid: "51580714"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 
-Wenn eine neue Person Ihrem Unternehmen beitritt, müssen Sie sie Ihrem Microsoft 365 Business Premium-Abonnement als neuer Benutzer hinzufügen.
+Wenn eine neue Person Ihrem Unternehmen beitritt, müssen Sie sie Ihrem Microsoft 365 Business Premium als neuer Benutzer hinzufügen.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Wechseln Sie im Microsoft 365 Admin Center zu **Benutzerverwaltung,** und wählen Sie Benutzer hinzufügen aus.
+1. Wechseln Sie Microsoft 365 Admin Center zu **Benutzerverwaltung,** und wählen Sie Benutzer hinzufügen aus.
 1. Geben Sie den Vor- und **Nachnamen des** neuen **Benutzers ein.** Der **Anzeigename** wird automatisch ausgefüllt, Sie können ihn jedoch ändern.
 1. Geben Sie einen **Benutzernamen ein.** Dies ist die E-Mail-Adresse des neuen Benutzers. Wenn Sie über mehr als eine Domäne verfügen, wählen Sie in der Dropdownliste die richtige Domäne aus.
 1. Um ein Kennwort automatisch erstellen zu lassen, wählen **Sie Kennwort automatisch generieren aus.**
 1. Wenn der Benutzer sein Kennwort ändern muss, aktivieren Sie **das** Kontrollkästchen Diesen Benutzer beim ersten Anmelden zum Ändern des Kennworts benötigen.
-1. Wenn Sie möchten, dass die Kontodetails per E-Mail gesendet werden, aktivieren Sie das Kontrollkästchen Kennwort in E-Mail senden **nach Abschluss.** Ihr E-Mail-Name wird automatisch hinzugefügt, Sie können jedoch die alternative E-Mail-Adresse des neuen Benutzers hinzufügen, damit er auch die Kontodetails erhält. Klicken Sie auf **Weiter**.
+1. Wenn Sie möchten, dass die Kontodetails per E-Mail gesendet werden, aktivieren Sie das Kontrollkästchen Kennwort in E-Mail senden **nach Abschluss.** Ihr E-Mail-Name wird automatisch hinzugefügt, Sie können jedoch die alternative E-Mail-Adresse des neuen Benutzers hinzufügen, damit er auch die Kontodetails erhält. Wählen Sie **Weiter** aus.
 1. Wählen Sie ihren Speicherort in der Dropdownliste aus, und aktivieren Sie dann das Kontrollkästchen neben dem Abonnement, das der Benutzer verwenden soll. Wählen **Sie Nex** t aus.
 1. Wenn der Benutzer Administrator sein soll, erweitern Sie Rolle **s,** aktivieren Sie das Kontrollkästchen **Benutzer (kein Administratorzugriff),** und wählen Sie in der Liste eine Administratorrolle aus. Weitere Informationen zu Administratorrollen und deren Einrichtung finden Sie unter [Was ist ein Administrator?](what-is-admin.md)
 1. Geben **Sie unter Profilinformationen** Details zu Auftrag, Abteilung, Büro des Benutzers und so weiter ein. (Sie oder der neue Benutzer können diese Informationen später immer hinzufügen.) Wählen Sie **Weiter** aus.

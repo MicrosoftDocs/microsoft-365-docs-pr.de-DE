@@ -1,5 +1,5 @@
 ---
-title: Untersuchen schädlicher E-Mails, die in Office 365 zugestellt wurden, Suchen und Untersuchen von schädlichen E-Mails
+title: Untersuchen bösartiger E-Mails, die in Office 365, Suchen und Untersuchen von schädlichen E-Mails
 keywords: TIMailData-Inline, Sicherheitsvorfall, Vorfall, Microsoft Defender for Endpoint PowerShell, E-Mail-Schadsoftware, gefährdete Benutzer, E-Mail-Phish, E-Mail-Schadsoftware, E-Mail-Kopfzeilen lesen, Kopfzeilen lesen, E-Mail-Kopfzeilen öffnen,spezielle Aktionen
 f1.keywords:
 - NOCSH
@@ -27,7 +27,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933373"
 ---
-# <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Untersuchen schädlicher E-Mails, die in Office 365 zugestellt wurden
+# <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Untersuchen bösartiger E-Mails, die in einem Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,16 +36,16 @@ ms.locfileid: "51933373"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-[Mit Microsoft Defender für Office 365](defender-for-office-365.md) können Sie Aktivitäten untersuchen, die Personen in Ihrer Organisation gefährden, und Maßnahmen zum Schutz Ihrer Organisation ergreifen. Wenn Sie beispielsweise Teil des Sicherheitsteams Ihrer Organisation sind, können Sie verdächtige E-Mail-Nachrichten finden und untersuchen, die zugestellt wurden. Sie können dies mithilfe von [Threat Explorer (oder Echtzeiterkennungen) tun.](threat-explorer.md)
+[Microsoft Defender for Office 365](defender-for-office-365.md) ermöglicht es Ihnen, Aktivitäten zu untersuchen, die Personen in Ihrer Organisation gefährden, und Maßnahmen zum Schutz Ihrer Organisation zu ergreifen. Wenn Sie beispielsweise Teil des Sicherheitsteams Ihrer Organisation sind, können Sie verdächtige E-Mail-Nachrichten finden und untersuchen, die zugestellt wurden. Sie können dies mithilfe von [Threat Explorer (oder Echtzeiterkennungen) tun.](threat-explorer.md)
 
 > [!NOTE]
 > Wechseln Sie hier zum [Korrekturartikel.](remediate-malicious-email-delivered-office-365.md)
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:
 
-- Ihre Organisation verfügt [über Microsoft Defender für Office 365,](defender-for-office-365.md) und Benutzern werden Lizenzen [zugewiesen.](../../admin/manage/assign-licenses-to-users.md)
+- Ihre Organisation verfügt [über Microsoft Defender für Office 365](defender-for-office-365.md) und Benutzern werden Lizenzen [zugewiesen.](../../admin/manage/assign-licenses-to-users.md)
 
 - [Die Überwachungsprotokollierung](../../compliance/turn-audit-log-search-on-or-off.md) ist für Ihre Organisation aktiviert.
 
@@ -67,10 +67,10 @@ Um bestimmte Aktionen wie das Anzeigen von Nachrichtenkopfzeilen oder das Herunt
 |
 
 > [!NOTE]
-> *Vorschau* ist eine Rolle und keine Rollengruppe; die Vorschaurolle muss einer vorhandenen Rollengruppe für Office 365 (unter) hinzugefügt <https://protection.office.com> werden. Wechseln Sie **zu Berechtigungen,** und bearbeiten Sie dann entweder eine vorhandene Rollengruppe, oder fügen Sie eine neue Rollengruppe hinzu, der die **Vorschaurolle** zugewiesen ist.
+> *Vorschau* ist eine Rolle und keine Rollengruppe; die Vorschaurolle muss zu einer vorhandenen Rollengruppe für Office 365 (at) hinzugefügt <https://protection.office.com> werden. Wechseln Sie **zu Berechtigungen,** und bearbeiten Sie dann entweder eine vorhandene Rollengruppe, oder fügen Sie eine neue Rollengruppe hinzu, der die **Vorschaurolle** zugewiesen ist.
 > Der Rolle globaler Administrator wird das Microsoft 365 Admin Center ( ) zugewiesen, und die Rollen Security Administrator und Security Reader werden im <https://admin.microsoft.com> Security & Compliance Center ( ) <https://protection.office.com> zugewiesen. Weitere Informationen zu Rollen und Berechtigungen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-Wir wissen, dass das Anzeigen und Herunterladen von E-Mails vertrauliche Aktivitäten sind, und daher ist die Überwachung für diese aktiviert. Sobald ein Administrator diese Aktivitäten in E-Mails ausführt, werden Überwachungsprotokolle für dasselbe generiert und können im Office 365 Security & Compliance Center ( ) angezeigt <https://protection.office.com> werden. Wechseln Sie **zur Suche**  >  **nach Überwachungsprotokollen,** und filtern Sie im Abschnitt Suchen nach dem Administratornamen. Die gefilterten Ergebnisse zeigen die Aktivität **AdminMailAccess an.** Wählen Sie eine Zeile aus, um Details im Abschnitt **Weitere Informationen** zu E-Mails in der Vorschau anzuzeigen.
+Wir wissen, dass das Anzeigen und Herunterladen von E-Mails vertrauliche Aktivitäten sind, und daher ist die Überwachung für diese aktiviert. Sobald ein Administrator diese Aktivitäten in E-Mails ausführt, werden Überwachungsprotokolle für dasselbe generiert und können im Office 365 Security & Compliance Center ( ) angezeigt werden. <https://protection.office.com> Wechseln Sie **zur Suche**  >  **nach Überwachungsprotokollen,** und filtern Sie im Abschnitt Suchen nach dem Administratornamen. Die gefilterten Ergebnisse zeigen die Aktivität **AdminMailAccess an.** Wählen Sie eine Zeile aus, um Details im Abschnitt **Weitere Informationen** zu E-Mails in der Vorschau anzuzeigen.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Suchen verdächtiger E-Mails, die zugestellt wurden
 
@@ -79,7 +79,7 @@ Der Bedrohungs-Explorer ist ein leistungsstarker Bericht, der mehreren Zwecken d
 > [!NOTE]
 > Standardsuchen im Explorer enthalten derzeit keine zapped-Elemente.  Dies gilt für alle Ansichten, z. B. Schadsoftware- oder Phishingansichten. Zum Hinzufügen von zapped-Elementen müssen Sie einen **Delivery-Aktionssatz** hinzufügen, der **entfernt von ZAP enthält.** Wenn Sie alle Optionen enthalten, werden alle Ergebnisse der Zustellungsaktion angezeigt, einschließlich zapped-Elementen.
 
-1. **Navigieren Sie zu Bedrohungs-Explorer:** Wechseln Sie zu und melden Sie sich mit Ihrem Geschäfts- oder <https://protection.office.com> Schulkonto für Office 365 an. Dies führt Sie zum Security & Compliance Center.
+1. **Navigieren Sie zu Bedrohungs-Explorer:** Wechseln Sie zu, und melden Sie sich mit Ihrem Arbeits- oder <https://protection.office.com> Schulkonto für Office 365. Dies führt Sie zum Security & Compliance Center.
 
 2. Wählen Sie in der linken Navigationsschnellstart die Option **Bedrohungsverwaltungs-Explorer** \> **aus.**
 
@@ -122,7 +122,7 @@ Der Bedrohungs-Explorer ist ein leistungsstarker Bericht, der mehreren Zwecken d
     - **Zugestellt** – E-Mails wurden an den Posteingang oder Ordner eines Benutzers übermittelt, und der Benutzer kann direkt darauf zugreifen.
     - **Junked** (An Junk übermittelt) – E-Mails wurden entweder an den Junkordner oder gelöschten Ordner des Benutzers gesendet, und der Benutzer hat Zugriff auf E-Mail-Nachrichten in ihrem Junk- oder Deleted-Ordner.
     - **Blockiert** – alle E-Mail-Nachrichten, die isoliert, fehlgeschlagen oder gelöscht wurden. (Auf die kann der Benutzer nicht mehr zugegriffen werden.)
-    - **Ersetzt** – E-Mails, bei denen schädliche Anlagen durch TXT-Dateien ersetzt werden, in denen die Anlage als schädlich bezeichnet wird
+    - **Ersetzt** – alle E-Mails, bei denen schädliche Anlagen durch .txt ersetzt werden, in denen die Anlage als bösartig eint
 
     **Zustellungsort:** Der Filter "Zustellungsort" ist verfügbar, um Administratoren zu helfen, zu verstehen, wo mutmaßliche schädliche E-Mails geentert wurden und welche Aktionen ergriffen wurden. Die resultierenden Daten können in eine Tabellenkalkulation exportiert werden. Mögliche Zustellungsorte sind:
 
@@ -179,7 +179,7 @@ Der Zustellungsstatus ist nun in zwei Spalten aufgeschlüsselt:
 
 - **Blockiert** – alle E-Mail-Nachrichten, die isoliert, fehlgeschlagen oder gelöscht wurden. (Auf die kann der Benutzer nicht mehr zugegriffen werden.)
 
-- **Ersetzt** – alle E-Mails, bei denen schädliche Anlagen durch TXT-Dateien ersetzt werden, in denen die Anlage als schädlich bezeichnet wird.
+- **Ersetzt** – alle E-Mails, bei denen schädliche Anlagen durch .txt ersetzt werden, in denen die Anlage als schädlich bezeichnet wird.
 
 Der Zustellungsspeicherort zeigt die Ergebnisse von Richtlinien und Erkennungen an, die nach der Zustellung ausgeführt werden. Es ist mit einer Zustellungsaktion verknüpft. Dieses Feld wurde hinzugefügt, um Einen Einblick in die Aktion zu erhalten, die beim Finden einer Problem-E-Mail ergriffen wurde. Hier sind die möglichen Werte des Zustellungsspeicherorts:
 
@@ -206,10 +206,10 @@ Der Zustellungsspeicherort zeigt die Ergebnisse von Richtlinien und Erkennungen 
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Behebung bösartiger E-Mails, die in Office 365 zugestellt wurden](remediate-malicious-email-delivered-office-365.md)
+[Behebung bösartiger E-Mails, die in Office 365](remediate-malicious-email-delivered-office-365.md)
 
 [Microsoft Defender für Office 365](office-365-ti.md)
 
 [Schutz vor Bedrohungen in Office 365](protect-against-threats.md)
 
-[Anzeigen von Berichten für Defender für Office 365](view-reports-for-mdo.md)
+[Anzeigen von Berichten für Defender for Office 365](view-reports-for-mdo.md)

@@ -1,6 +1,6 @@
 ---
-title: Allgemeine Microsoft 365 Defender REST-API-Fehlercodes
-description: Informationen zu den allgemeinen Microsoft 365 Defender REST-API-Fehlercodes
+title: Häufig Microsoft 365 Defender REST-API-Fehlercodes
+description: Informationen zu den häufig verwendeten Microsoft 365 Defender REST-API-Fehlercodes
 keywords: api, error, codes, common errors, Microsoft 365 Defender, api error codes
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -27,7 +27,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51932881"
 ---
-# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Allgemeine Microsoft 365 Defender REST-API-Fehlercodes
+# <a name="common-microsoft-365-defender-rest-api-error-codes"></a>Häufig Microsoft 365 Defender REST-API-Fehlercodes
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ ms.locfileid: "51932881"
 > [!IMPORTANT]
 > Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
 
-Fehlercodes können von einem Vorgang für eine der Microsoft 365 Defender-APIs zurückgegeben werden. Jede Fehlerantwort enthält eine Fehlermeldung, die zur Lösung des Problems beitragen kann. Die Fehlermeldungsspalte im Abschnitt Tabelle enthält einige Beispielmeldungen. Der Inhalt der tatsächlichen Nachrichten variiert je nach den Faktoren, die die Antwort ausgelöst haben. Variabler Inhalt wird in der Tabelle durch eckige Klammern angegeben.
+Fehlercodes können von einem Vorgang für eine der Microsoft 365 zurückgegeben werden. Jede Fehlerantwort enthält eine Fehlermeldung, die zur Lösung des Problems beitragen kann. Die Fehlermeldungsspalte im Abschnitt Tabelle enthält einige Beispielmeldungen. Der Inhalt der tatsächlichen Nachrichten variiert je nach den Faktoren, die die Antwort ausgelöst haben. Variabler Inhalt wird in der Tabelle durch eckige Klammern angegeben.
 
 ## <a name="error-codes"></a>Fehlercodes
 
@@ -99,7 +99,7 @@ Jede Fehlerantwort enthält einen eindeutigen ID-Parameter für die Nachverfolgu
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Übersicht über Microsoft 365 Defender-APIs](api-overview.md)
+- [Microsoft 365 Übersicht über Defender-APIs](api-overview.md)
 - [Unterstützte Microsoft 365 Defender-APIs](api-supported.md)
 - [Zugreifen auf die Microsoft 365 Defender-APIs](api-access.md)
 - [Informationen zu API-Beschränkungen und -Lizenzierung](api-terms.md)

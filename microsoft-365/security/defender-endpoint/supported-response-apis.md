@@ -47,7 +47,7 @@ Antivirusscan ausführen | Remoteinitiieren sie eine Antivirenscan, um Schadsoft
 Beenden und Datei unter Quarantäne stellen |  Führen Sie diesen Aufruf aus, um die Ausführung von Prozessen, Quarantänedateien und das Löschen von Persistenz wie Registrierungsschlüsseln zu beenden.
 Anforderungsbeispiel | Führen Sie diesen Aufruf aus, um ein Beispiel einer Datei von einem bestimmten Gerät an zu fordern. Die Datei wird vom Gerät gesammelt und in einen sicheren Speicher hochgeladen.
 Datei blockieren | Führen Sie diese API aus, um eine weitere Verbreitung eines Angriffs in Ihrer Organisation zu verhindern, indem Sie potenziell schädliche Dateien oder mutmaßliche Schadsoftware verbieten. 
-Aufheben der Blockierung der Datei | Zulassen der Ausführung einer Datei in der Organisation mithilfe von Microsoft Defender Antivirus.
+Aufheben der Blockierung der Datei | Zulassen der Ausführung einer Datei in der Organisation mithilfe Microsoft Defender Antivirus.
 Paket-SAS-URI | Führen Sie diese API aus, um einen URI zu erhalten, der das Herunterladen eines Untersuchungspakets ermöglicht.
 MachineAction-Objekt erhalten | Führen Sie diese API aus, um das MachineAction-Objekt zu erhalten.
 MachineActions-Auflistung erhalten | Führen Sie dies aus, um die MachineAction-Auflistung zu erhalten.

@@ -53,8 +53,8 @@ Wenn ein PUA auf einem Endpunkt erkannt wird, stellt Microsoft Defender for Endp
 Der PUA-Schutz in Microsoft Defender for Endpoint unter macOS kann auf eine der folgenden Arten konfiguriert werden:
 
 - **Off**: Der PUA-Schutz ist deaktiviert.
-- **Überwachung:** PUA-Dateien werden in den Produktprotokollen, jedoch nicht im Microsoft Defender Security Center gemeldet. Dem Benutzer wird keine Benachrichtigung angezeigt, und es werden keine Aktionen vom Produkt ergriffen.
-- **Block**: PUA-Dateien werden in den Produktprotokollen und im Microsoft Defender Security Center gemeldet. Dem Benutzer wird eine Benachrichtigung angezeigt, und das Produkt wird aktiv.
+- **Überwachung**: PUA-Dateien werden in den Produktprotokollen gemeldet, jedoch nicht in Microsoft Defender Security Center. Dem Benutzer wird keine Benachrichtigung angezeigt, und es werden keine Aktionen vom Produkt ergriffen.
+- **Block**: PUA-Dateien werden in den Produktprotokollen und in den Microsoft Defender Security Center. Dem Benutzer wird eine Benachrichtigung angezeigt, und das Produkt wird aktiv.
 
 >[!WARNING]
 >Standardmäßig ist der PUA-Schutz im **Überwachungsmodus** konfiguriert.

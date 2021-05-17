@@ -1,6 +1,6 @@
 ---
 title: Einrichten von Gerätegruppen in Jamf Pro
-description: Informationen zum Einrichten von Gerätegruppen in Jamf Pro für Microsoft Defender for Endpoint unter macOS
+description: Informationen zum Einrichten von Gerätegruppen in Jamf Pro für Microsoft Defender for Endpoint auf macOS
 keywords: device, group, microsoft, defender, Microsoft Defender for Endpoint, mac, installation, deploy, uninstallation, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,7 +35,7 @@ ms.locfileid: "51933805"
 
 > Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Richten Sie die Gerätegruppen ein, die gruppenrichtlinienorganisationseinheit (OUs), die Gerätesammlung von Microsoft Endpoint Configuration Manager und die Gerätegruppen von Intune ähneln.
+Richten Sie die Gerätegruppen ein, die gruppenrichtlinienorganisationseinheit (OUs), Microsoft Endpoint Configuration Manager Gerätesammlung und Die Gerätegruppen von Intune ähneln.
 
 1. Navigieren Sie zu **Statische Computergruppen**.
 

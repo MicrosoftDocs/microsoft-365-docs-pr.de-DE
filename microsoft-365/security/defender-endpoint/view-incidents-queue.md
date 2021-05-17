@@ -60,7 +60,7 @@ Schweregrad des Vorfalls | Beschreibung
 Hoch </br>(Rot) | Bedrohungen, die häufig mit erweiterten beständigen Bedrohungen (Advanced Persistent Threats, APT) verbunden sind. Diese Vorfälle deuten auf ein hohes Risiko aufgrund des Schweregrads des Schadens hin, den sie auf Geräten anrichten können.
 Mittel </br>(Orange) | Bedrohungen, die in der Organisation selten beobachtet werden, z. B. anomale Registrierungsänderung, Ausführung verdächtiger Dateien und beobachtete Verhaltensweisen, die für Angriffsphasen typisch sind.
 Niedrig </br>(Gelb) | Bedrohungen im Zusammenhang mit weit verbreiteter Schadsoftware und Hacktools, die nicht unbedingt auf eine erweiterte Bedrohung für die Organisation hindeuten.
-Informational </br>(Grau) | Informationsvorfälle werden möglicherweise nicht als schädlich für das Netzwerk betrachtet, aber es ist möglicherweise gut, den Überblick zu behalten.
+Zur Information </br>(Grau) | Informationsvorfälle werden möglicherweise nicht als schädlich für das Netzwerk betrachtet, aber es ist möglicherweise gut, den Überblick zu behalten.
 
 ## <a name="assigned-to"></a>Zugewiesen an
 Sie können die Liste filtern, indem Sie Vorfälle auswählen, die einer Person oder Ihnen zugewiesen sind.

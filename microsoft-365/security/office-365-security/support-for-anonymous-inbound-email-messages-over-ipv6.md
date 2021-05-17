@@ -15,7 +15,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren erfahren, wie Sie die Unterstützung für anonyme eingehende E-Mails aus IPv6-Quellen in Exchange Online und Exchange Online Protection.
+description: Administratoren erfahren, wie Sie die Unterstützung für anonyme eingehende E-Mails aus IPv6-Quellen in Exchange Online und Exchange Online Protection konfigurieren.
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 80fdcc9dcfe3006ef8b21aa19856fe8c0ea3ff70
@@ -34,7 +34,7 @@ ms.locfileid: "52300049"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Microsoft 365 Organisationen mit Exchange Online postfächern und eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online unterstützen anonyme eingehende E-Mails über IPv6. Der Quell-IPv6-E-Mail-Server muss die beiden folgenden Anforderungen erfüllen:
+Microsoft 365-Organisationen mit Exchange Online-Postfächern und eigenständige Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer unterstützen anonyme eingehende E-Mails über IPv6. Der Quell-IPv6-E-Mail-Server muss die beiden folgenden Anforderungen erfüllen:
 
 - Die Quell-IPv6-Adresse muss über einen gültigen Reverse-DNS-Nachschlagedatensatz (Reverse DNS Lookup, PTR) verfügen, mit dem das Ziel den Domänennamen von der IPv6-Adresse finden kann.
 

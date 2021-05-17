@@ -35,10 +35,10 @@ Wenn Sie eine Gruppe erstellen, erstellen Sie eine zentrale E-Mail-Adresse und e
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Wählen Sie in Outlook auf **der Registerkarte Start** die Option Neue Gruppe **aus.**
+1. Wählen Outlook Auf der **Registerkarte Start** die Option Neue Gruppe **aus.**
 2. Geben Sie  **im Feld Gruppe**  erstellen einen Gruppennamen, eine kürzere E-Mail-Adresse wie Informationen und eine Beschreibung ein.
 3. Öffnen Sie das Datenschutzdropdown, und wählen Sie **Private aus.**
 4. Aktivieren Sie  **das Kontrollkästchen Alle Gruppen-E-Mails und -Ereignisse an**  die Posteingange der Mitglieder senden.
 5. Wählen **Sie unter Mitglieder** hinzufügen die Mitarbeiter aus, die Sie empfangen möchten, und wählen Sie dann Mitglieder hinzufügen **aus.**
-6. Wählen Sie **auf der Registerkarte** Start in Outlook die Option **Gruppeneinstellungen** und dann **Gruppe bearbeiten aus.**
+6. Wählen Sie **auf** der Registerkarte Start in Outlook gruppe **Einstellungen** und dann **Gruppe bearbeiten aus.**
 7. Aktivieren Sie im Feld  **Gruppe bearbeiten** das Kontrollkästchen Personen außerhalb der Organisation E-Mails an die Gruppe senden, und wählen Sie dann **OK aus.**

@@ -36,7 +36,7 @@ In Microsoft 365 Business können Sie Ihre monatliche Abonnementrechnung überpr
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Wählen Sie im Microsoft 365 Admin Center im linken Navigationsbereich Abrechnung aus, und wählen Sie dann Rechnungen **& Zahlungen aus.** 
+1. Wählen Sie Microsoft 365 Admin Center  im linken Navigationsbereich Abrechnung aus, und wählen Sie dann Rechnungen **& Zahlungen aus.**
 1. Wählen Sie eine Rechnung aus, um sie zu sehen. Wenn keine Rechnung angezeigt wird, wählen Sie **Filter by: Last 6 months** in der Dropdownliste aus.
 1. Um die Rechnungsdetails anzuzeigen, wählen Sie **pdf** herunterladen in der oberen rechten Ecke der Rechnung aus.
 1. Nachdem Sie die PDF überprüft haben, können Sie sie herunterladen und speichern oder drucken. Wählen Sie das Downloadsymbol oder das Drucksymbol in der oberen rechten Ecke des Bildschirms aus.

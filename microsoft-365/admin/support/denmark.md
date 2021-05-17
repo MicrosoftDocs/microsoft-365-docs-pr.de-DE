@@ -35,6 +35,6 @@ Englisch: Mo-Fr 9:00 bis 17:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefon Nummer: 38 48 70 67
+Alternative Telefonnummer: 38 48 70 67
 
 Es gelten die Ortstarife.

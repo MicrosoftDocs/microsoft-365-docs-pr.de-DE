@@ -133,7 +133,7 @@ Die folgenden Felder werden erfasst:
 | cloud_service.service_uri                           | URI, der für die Kommunikation mit der Cloud verwendet wird. |
 | cloud_service.diagnostic_level                      | Diagnosestufe des Geräts (erforderlich, optional). |
 | cloud_service.automatic_sample_submission           | Gibt an, ob die automatische Beispielübermittlung aktiviert ist oder nicht. |
-| edr.early_preview                                   | Gibt an, ob auf dem Gerät EDR-Features für die frühe Vorschau ausgeführt werden sollen. |
+| edr.early_preview                                   | Gibt an, ob das Gerät EDR vorschaufeatures ausgeführt werden soll. |
 | edr.group_id                                        | Gruppen-ID, die von der Erkennungs- und Antwortkomponente verwendet wird. |
 | edr.tags                                            | Benutzerdefinierte Tags. |
 | Features. \[ Optionaler Featurename\]                  | Liste der Vorschaufeatures, unabhängig davon, ob sie aktiviert sind oder nicht. |
@@ -165,7 +165,7 @@ Die folgenden Felder werden erfasst:
 | ------------------------------ | ----------- |
 | v1_crash_count                 | Anzahl der Stündlichabstürzen des V1-Modulprozesses auf dem Clientcomputer  |
 | v2_crash_count                 | Anzahl der Stündlichabstürzen des V2-Modulprozesses auf dem Clientcomputer  |
-| EDR_crash_count                | Anzahl der Stündlichabstürzen des EDR-Prozesses auf dem Clientcomputer        |
+| EDR_crash_count                | Anzahl der EDR Prozess stündlich auf dem Clientcomputer abgestürzt        |
 
 **Kernelerweiterungsstatistiken**
 
@@ -244,7 +244,7 @@ Die folgenden Felder werden erfasst:
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
 | sha256           | SHA256-ID des Supportprotokolls. |
-| size             | Größe des Supportprotokolls. |
+| Größe             | Größe des Supportprotokolls. |
 | original_path    | Pfad zum Supportprotokoll (immer unter */Library/Application Support/Microsoft/Defender/wdavdiag/*). |
 | Format           | Format des Supportprotokolls. |
 

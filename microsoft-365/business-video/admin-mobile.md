@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie die mobile Microsoft 365 Admin-App auf Ihrem Smartphone installieren.
+description: Erfahren Sie, wie Sie die Microsoft 365 Admin Mobile App auf Ihrem Smartphone installieren.
 ms.openlocfilehash: 0367123e9bd74ab79c17b38eb49cc31fc6fba8e4
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -27,15 +27,15 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51580702"
 ---
-# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installieren der mobilen Microsoft 365 Admin-App auf Ihrem Smartphone
+# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installieren der Microsoft 365 Mobile Admin-App auf Ihrem Smartphone
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWe8Kw?autoplay=false]
 
-Sie können die mobile Microsoft 365 Admin-App verwenden, um Benutzer zu verwalten, den Dienstzustand zu überwachen und andere Administratoraufgaben von Ihrem Telefon aus auszuführen.
+Sie können die mobile Microsoft 365 Admin verwenden, um Benutzer zu verwalten, den Dienstzustand zu überwachen und andere Administratoraufgaben von Ihrem Telefon aus auszuführen.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Um die mobile Microsoft 365 Admin-App zu erhalten, suchen Sie im App Store nach  **Microsoft 365 Admin**  für Ihr Gerät, und installieren Sie es.
+1. Um die mobile Microsoft 365 Admin-App zu erhalten, suchen Sie **Microsoft 365 Administrator** im App Store für Ihr Gerät, und installieren Sie sie.
 2. Melden Sie sich mit Ihrer globalen Administrator-E-Mail-Adresse an, und zeigen Sie das Dashboard an, um den Dienstzustand anzuzeigen, Benutzerlizenzen zu überwachen und Nachrichten und Dienstanforderungen anzuzeigen.
 3. Hier sind einige allgemeine Aufgaben, die Sie mit der App ausführen können:
 
@@ -56,6 +56,6 @@ Sie können die mobile Microsoft 365 Admin-App verwenden, um Benutzer zu verwalt
 
 ### <a name="turn-on-notifications"></a>Aktivieren von Benachrichtigungen
 
-1. Wählen Sie im Hauptmenü **Einstellungen aus.**
+1. Wählen Sie im Hauptmenü **Einstellungen**.
 2. Wählen **Sie unter App-Einstellungen** die Option **Benachrichtigungen aus.**
 3. Aktivieren Sie die Kontrollkästchen neben  **Dienstinte health**  und  **Message Center**.

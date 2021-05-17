@@ -236,7 +236,7 @@ Ausführliche Informationen und Anweisungen finden Sie unter [Anträge betroffen
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Testen oder Kaufen eines Microsoft 365 business-Abonnements](../../commerce/try-or-buy-microsoft-365.md) (Artikel)
+[Testen oder Kaufen eines Microsoft 365 Business-Abonnements](../../commerce/try-or-buy-microsoft-365.md) (Artikel)
 
 [Azure Information Protection-Unterstützung für Office 365 betrieben von 21Vianet](parity-between-azure-information-protection.md) (Artikel)
 

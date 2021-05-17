@@ -45,7 +45,7 @@ Ein inaktives Gerät wird aufgrund eines Problems nicht unbedingt gekennzeichnet
 Wenn das Gerät aus irgendeinem Grund seit mehr als sieben Tagen nicht verwendet wird, bleibt es im Portal im Status "Inaktiv".
 
 ### <a name="device-was-reinstalled-or-renamed"></a>Gerät wurde neu installiert oder umbenannt
-Ein neu installiertes oder umbenanntes Gerät generiert eine neue Geräteentität im Microsoft Defender Security Center. Die vorherige Geräteentität bleibt im Portal mit dem Status "Inaktiv" erhalten. Wenn Sie ein Gerät neu installiert und das Defender for Endpoint-Paket bereitgestellt haben, suchen Sie nach dem neuen Gerätenamen, um sicherzustellen, dass das Gerät normal meldet.
+Ein neu installiertes oder umbenanntes Gerät generiert eine neue Geräteentität in Microsoft Defender Security Center. Die vorherige Geräteentität bleibt im Portal mit dem Status "Inaktiv" erhalten. Wenn Sie ein Gerät neu installiert und das Defender for Endpoint-Paket bereitgestellt haben, suchen Sie nach dem neuen Gerätenamen, um sicherzustellen, dass das Gerät normal meldet.
 
 ### <a name="device-was-offboarded"></a>Gerät wurde offboarded
 Wenn das Gerät offboarded war, wird es weiterhin in der Geräteliste angezeigt. Nach sieben Tagen sollte der Zustand des Gerätestatus in inaktiv geändert werden.
@@ -86,8 +86,8 @@ Führen Sie diese Aktionen aus, um bekannte Probleme im Zusammenhang mit einem f
 - [Sicherstellen, dass der Diagnosedatendienst aktiviert ist](troubleshoot-onboarding.md#ensure-the-diagnostics-service-is-enabled)</br>
 Wenn die Geräte nicht ordnungsgemäß melden, müssen Sie möglicherweise überprüfen, ob der Windows 10-Diagnosedatendienst auf den automatischen Start festgelegt ist und auf dem Endpunkt ausgeführt wird.
 
-- [Stellen Sie sicher, dass Microsoft Defender Antivirus nicht von der Richtlinie deaktiviert ist](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
-Wenn auf Ihren Geräten ein Antischasoftwareclient eines Drittanbieters ausgeführt wird, benötigt der Defender for Endpoint-Agent, dass der Microsoft Defender Antivirus Early Launch Antimalware (ELAM)-Treiber aktiviert ist.
+- [Stellen Sie sicher, Microsoft Defender Antivirus nicht von der Richtlinie deaktiviert ist](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)</br>
+Wenn auf Ihren Geräten ein Antischalwareclient eines Drittanbieters ausgeführt wird, muss der Defender for Endpoint-Agent den Microsoft Defender Antivirus Early Launch Antimalware (ELAM)-Treiber aktivieren.
 
 Wenn Sie Korrekturmaßnahmen ergriffen haben und der Gerätestatus weiterhin falsch konfiguriert ist, öffnen [Sie ein Supportticket](https://go.microsoft.com/fwlink/?LinkID=761093&clcid=0x409).
 

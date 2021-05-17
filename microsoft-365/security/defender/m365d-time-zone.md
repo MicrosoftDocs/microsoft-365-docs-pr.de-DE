@@ -37,9 +37,9 @@ ms.locfileid: "51934417"
 
 
 
-Microsoft 365 Defender kann Datums- und Uhrzeitinformationen entweder mithilfe Ihrer lokalen Zeitzone oder utc anzeigen. Die ausgewählte Zeitzone gilt für alle Datums- und Uhrzeitinformationen, die in den folgenden Features des Microsoft 365 Security Centers angezeigt werden:
+Microsoft 365 Defender kann Datums- und Uhrzeitinformationen entweder in Ihrer lokalen Zeitzone oder in UTC anzeigen. Die ausgewählte Zeitzone gilt für alle Datums- und Uhrzeitinformationen, die in den folgenden Features des Microsoft 365 Security Centers angezeigt werden:
 - Vorfälle
 - Automatische Untersuchung und Beseitigung, einschließlich Info-Center
 - Erweiterte Suche
 
-Wenn Sie die Zeitzone für diese Features festlegen möchten, wechseln Sie zu  >  **Einstellungen Microsoft 365 Defender**  >  **Zeitzone**.
+Wechseln Sie zum Festlegen der Zeitzone für diese Features zu **Einstellungen**  >  **Microsoft 365 Defender** Time  >  **zone**.

@@ -46,15 +46,15 @@ Antivirusschutz funktioniert am besten, wenn er mit Cloudschutz gekoppelt ist.
 
 ## <a name="how-client-behavioral-blocking-works"></a>Funktionsweise der Clientverhaltensblockierung
 
-[Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) kann verdächtiges Verhalten, bösartigen Code, Datei- und Speicherangriffe und vieles mehr auf einem Gerät erkennen. Wenn verdächtige Verhaltensweisen erkannt werden, überwacht und sendet Microsoft Defender Antivirus diese verdächtigen Verhaltensweisen und ihre Prozessstrukturen an den Cloudschutzdienst. Maschinelles Lernen unterscheidet zwischen schädlichen Anwendungen und gutem Verhalten innerhalb von Millisekunden und klassiert jedes Artefakt. Sobald sich ein Artefakt als schädlich herausgefunden hat, wird es in fast Echtzeit auf dem Gerät blockiert. 
+[Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) können verdächtiges Verhalten, bösartigen Code, Datei- und Speicherangriffe und vieles mehr auf einem Gerät erkennen. Wenn verdächtige Verhaltensweisen erkannt werden, Microsoft Defender Antivirus überwacht und sendet diese verdächtigen Verhaltensweisen und deren Prozessstrukturen an den Cloudschutzdienst. Maschinelles Lernen unterscheidet zwischen schädlichen Anwendungen und gutem Verhalten innerhalb von Millisekunden und klassiert jedes Artefakt. Sobald sich ein Artefakt als schädlich herausgefunden hat, wird es in fast Echtzeit auf dem Gerät blockiert. 
 
-Wenn ein verdächtiges Verhalten erkannt wird, wird [eine](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/alerts-queue) Warnung generiert und ist im Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) sichtbar.
+Wenn ein verdächtiges Verhalten erkannt wird, wird [eine](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/alerts-queue) Warnung generiert und im Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) angezeigt.
 
 Die Clientverhaltensblockierung ist effektiv, da sie nicht nur den Start eines Angriffs verhindert, sondern auch dazu beitragen kann, einen Angriff zu beenden, der mit der Ausführung begonnen hat. Und mit der [Blockierung von Feedbackschleifen](feedback-loop-blocking.md) (eine weitere Funktion der Verhaltensblockierung und -eindämmung) werden Angriffe auf andere Geräte in Ihrer Organisation verhindert.
 
 ## <a name="behavior-based-detections"></a>Verhaltensbasierte Erkennungen
 
-Verhaltensbasierte Erkennungen werden gemäß der [MITRE ATT-&CK Matrix for Enterprise benannt.](https://attack.mitre.org/matrices/enterprise) Die Benennungskonvention hilft dabei, die Angriffsphase zu identifizieren, in der das schädliche Verhalten beobachtet wurde:
+Verhaltensbasierte Erkennungen werden gemäß der [MITRE ATT-&CK-Matrix für Enterprise.](https://attack.mitre.org/matrices/enterprise) Die Benennungskonvention hilft dabei, die Angriffsphase zu identifizieren, in der das schädliche Verhalten beobachtet wurde:
 
 
 |Taktik |   Name der Erkennungsbedrohung |
@@ -65,7 +65,7 @@ Verhaltensbasierte Erkennungen werden gemäß der [MITRE ATT-&CK Matrix for Ente
 |Berechtigungseskalation   | Verhalten:Win32/PrivilegeEscalation.*!ml |
 |Schutzhinterziehung    | Behavior:Win32/DefenseEvasion.*!ml |
 |Zugriff auf Anmeldeinformationen  | Verhalten:Win32/CredentialAccess.*!ml |
-|Discovery  | Behavior:Win32/Discovery.*!ml |
+|Suche  | Behavior:Win32/Discovery.*!ml |
 |Laterale Bewegung | Verhalten:Win32/LateralMovement.*!ml |
 |Auflistung |   Behavior:Win32/Collection.*!ml |
 |Befehl und Steuerelement | Verhalten:Win32/CommandAndControl.*!ml |

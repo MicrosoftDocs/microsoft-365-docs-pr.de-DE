@@ -38,15 +38,15 @@ ms.locfileid: "52297128"
 
 Warnungen sind die Grundlage aller Vorfälle und geben das Auftreten von böswilligen oder verdächtigen Ereignissen in Ihrer Umgebung an. Warnungen sind in der Regel Teil eines umfassenderen Angriffs und geben Hinweise zu einem Vorfall.
 
-In Microsoft 365 Defender werden zugehörige Warnungen zu Vorfällen [zusammengefasst.](incidents-overview.md) Vorfälle bieten immer den umfassenderen Kontext eines Angriffs. Die Analyse von Warnungen kann jedoch hilfreich sein, wenn eine tiefergehende Analyse erforderlich ist. 
+In Microsoft 365 Defender werden verwandte Warnungen zu Vorfällen [zusammengefasst.](incidents-overview.md) Vorfälle bieten immer den umfassenderen Kontext eines Angriffs. Die Analyse von Warnungen kann jedoch hilfreich sein, wenn eine tiefergehende Analyse erforderlich ist. 
 
 Die **Warnungswarteschlange** zeigt den aktuellen Satz von Warnungen an. Sie erhalten die Benachrichtigungswarteschlange von **Incidents & alerts > Alerts** beim Schnellstart des Microsoft 365 Security Centers ([security.microsoft.com](https://security.microsoft.com)).
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Beispiel für die Benachrichtigungswarteschlange":::
 
-Warnungen von verschiedenen Microsoft-Sicherheitslösungen wie Microsoft Defender for Endpoint, Microsoft Defender für Office 365 und Microsoft 365 Defender werden hier angezeigt.
+Hier werden Warnungen von verschiedenen Microsoft-Sicherheitslösungen wie Microsoft Defender for Endpoint, Microsoft Defender für Office 365 und Microsoft 365 Defender angezeigt.
 
-Standardmäßig werden in der Benachrichtigungswarteschlange im Microsoft 365 die neuen und in Bearbeitung benachrichtigungen aus den letzten 30 Tagen angezeigt. Die letzte Warnung befindet sich am Anfang der Liste, damit Sie sie zuerst sehen können. 
+Standardmäßig werden in der Benachrichtigungswarteschlange im Microsoft 365 Security Center die neuen und in Bearbeitung benachrichtigungen aus den letzten 30 Tagen angezeigt. Die letzte Warnung befindet sich am Anfang der Liste, damit Sie sie zuerst sehen können. 
 
 In der Standardbenachrichtigungswarteschlange können  Sie **Filter** auswählen, um einen Filterbereich anzuzeigen, aus dem Sie eine Teilmenge der Warnungen angeben können. Im Folgenden sehen Sie ein Beispiel.
 
@@ -85,7 +85,7 @@ Auf einer Warnungsseite können Sie neben jeder Entität die Ellipsen (**...**) 
 
 Der **Abschnitt "Aktionen"** enthält eine Liste der betroffenen Objekte, z. B. Postfächer, Geräte und Benutzer, die von dieser Warnung betroffen sind. 
 
-Sie können auch Ansicht **im Aktionscenter auswählen,** um die Registerkarte **Verlauf** des **Aktionscenters** im Microsoft 365 anzeigen. 
+Sie können auch Ansicht **im Aktionscenter auswählen,** um die Registerkarte **Verlauf** des **Aktionscenters** im Microsoft 365 Security Center zu sehen. 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>Verfolgen der Rolle einer Warnung im Warnungsstory
 

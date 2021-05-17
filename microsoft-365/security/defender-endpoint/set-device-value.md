@@ -76,7 +76,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{machineId}/setDevice
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
+Authorization | String | Bearer {token}. **Erforderlich**.
 Content-Type | Zeichenfolge | application/json. **Erforderlich**.
 
 ## <a name="request-body"></a>Anforderungstext

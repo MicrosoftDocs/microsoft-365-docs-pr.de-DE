@@ -41,7 +41,7 @@ In Endpunktschutzlösungen ist ein falsch positives Element eine Entität, z. B.
 
 ![Definition falsch positiver und negativer Werte in Defender for Endpoint](images/false-positives-overview.png)
 
-Glücklicherweise können Schritte unternommen werden, um diese Art von Problemen zu beheben und zu reduzieren. Wenn falsch positive/negative Ergebnisse in Ihrem [Microsoft Defender Security Center](../defender/microsoft-365-security-center-mde.md)zu sehen sind, können Ihre Sicherheitsvorgänge Schritte unternehmen, um sie mithilfe des folgenden Prozesses zu adressieren:
+Glücklicherweise können Schritte unternommen werden, um diese Art von Problemen zu beheben und zu reduzieren. Wenn sie falsch positive/negative Ergebnisse in Ihrem [Microsoft Defender Security Center,](../defender/microsoft-365-security-center-mde.md)können Ihre Sicherheitsvorgänge Schritte unternehmen, um sie mithilfe des folgenden Prozesses zu adressieren:
 
 1.  [Überprüfen und Klassifizieren von Warnungen](#part-1-review-and-classify-alerts) 
 2.  [Überprüfen der ergriffenen Korrekturaktionen](#part-2-review-remediation-actions)
@@ -82,7 +82,7 @@ Bevor Sie eine Warnung klassifizieren oder unterdrücken, bestimmen Sie, ob die 
 
 ### <a name="classify-an-alert"></a>Klassifizieren einer Warnung
 
-Warnungen können im Microsoft Defender Security Center als falsch positive oder als echte Positive klassifiziert werden. Das Klassifizieren von Warnungen hilft, Microsoft Defender for Endpoint so zu schulen, dass im Laufe der Zeit mehr echte Warnungen und weniger falsche Warnungen angezeigt werden.
+Warnungen können als falsch positive oder echte positive Ergebnisse in der Microsoft Defender Security Center. Das Klassifizieren von Warnungen hilft, Microsoft Defender for Endpoint so zu schulen, dass im Laufe der Zeit mehr echte Warnungen und weniger falsche Warnungen angezeigt werden.
 
 1. Wechseln Sie zum Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) und melden Sie sich an.
 
@@ -97,7 +97,7 @@ Warnungen können im Microsoft Defender Security Center als falsch positive oder
 
 ### <a name="suppress-an-alert"></a>Unterdrücken einer Warnung
 
-Wenn Sie Warnungen haben, bei denen es sich entweder um falsch positive Oder um echte Positive handelt, aber für unwichtige Ereignisse, können Sie diese Warnungen im Microsoft Defender Security Center unterdrücken. Das Unterdrücken von Warnungen trägt dazu bei, das Rauschen in Ihrem Sicherheitsbetriebsdashboard zu reduzieren. 
+Wenn Sie Warnungen haben, bei denen es sich entweder um falsch positive Oder um echte Positive handelt, aber für unwichtige Ereignisse, können Sie diese Warnungen in der Microsoft Defender Security Center. Das Unterdrücken von Warnungen trägt dazu bei, das Rauschen in Ihrem Sicherheitsbetriebsdashboard zu reduzieren. 
 
 1. Wechseln Sie zum Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) und melden Sie sich an.
 
@@ -114,7 +114,7 @@ Wenn Sie Warnungen haben, bei denen es sich entweder um falsch positive Oder um 
 
 ## <a name="part-2-review-remediation-actions"></a>Teil 2: Überprüfen von Korrekturaktionen
 
-[Korrekturaktionen,](manage-auto-investigation.md#remediation-actions)z. B. das Senden einer Datei in quarantäne oder das Beenden eines Prozesses, werden für Entitäten (z. B. Dateien) ergriffen, die als Bedrohungen erkannt werden. Mehrere Arten von Abhilfemaßnahmen werden automatisch durch automatisierte Untersuchung und Microsoft Defender Antivirus ausgeführt:   
+[Korrekturaktionen,](manage-auto-investigation.md#remediation-actions)z. B. das Senden einer Datei in quarantäne oder das Beenden eines Prozesses, werden für Entitäten (z. B. Dateien) ergriffen, die als Bedrohungen erkannt werden. Mehrere Arten von Korrekturaktionen werden automatisch durch automatisierte Untersuchung und Microsoft Defender Antivirus:   
 - Isolieren einer Datei
 - Entfernen eines Registrierungsschlüssels
 - Kill a process
@@ -203,18 +203,18 @@ Führen Sie die folgenden Aufgaben aus, um Ausschlüsse in Microsoft Defender fo
 - [Erstellen von "zulassen"-Indikatoren für Microsoft Defender for Endpoint](#indicators-for-microsoft-defender-for-endpoint)
 
 > [!NOTE]
-> Microsoft Defender Antivirus-Ausschlüsse gelten nur für den Antivirenschutz, nicht für andere Microsoft Defender for Endpoint-Funktionen. Um Dateien allgemein auszuschließen, verwenden Sie Ausschlüsse für Microsoft Defender Antivirus [und](/microsoft-365/security/defender-endpoint/manage-indicators) benutzerdefinierte Indikatoren für Microsoft Defender for Endpoint.
+> Microsoft Defender Antivirus gelten nur für den Antivirenschutz, nicht für andere Microsoft Defender for Endpoint-Funktionen. Um Dateien allgemein auszuschließen, verwenden Sie Ausschlüsse für Microsoft Defender Antivirus und [benutzerdefinierte](/microsoft-365/security/defender-endpoint/manage-indicators) Indikatoren für Microsoft Defender for Endpoint.
 
 In den Verfahren in diesem Abschnitt wird beschrieben, wie Ausschlüsse und Indikatoren definiert werden.
 
 ### <a name="exclusions-for-microsoft-defender-antivirus"></a>Ausschlüsse für Microsoft Defender Antivirus
 
-Im Allgemeinen sollten Sie keine Ausschlüsse für Microsoft Defender Antivirus definieren müssen. Stellen Sie sicher, dass Sie Ausschlüsse sparsam definieren und nur die Dateien, Ordner, Prozesse und vom Prozess geöffneten Dateien enthalten, die zu falsch positiven Ergebnisse führen. Achten Sie außerdem darauf, die definierten Ausschlüsse regelmäßig zu überprüfen. Es wird [empfohlen, Microsoft Endpoint Manager](/mem/endpoint-manager-overview) zu verwenden, um Ihre Antivirenausschlüsse zu definieren oder zu bearbeiten. Sie können jedoch andere Methoden verwenden, z. B. [Gruppenrichtlinien](/azure/active-directory-domain-services/manage-group-policy) (siehe [Verwalten von Microsoft Defender for Endpoint](manage-atp-post-migration.md)).
+Im Allgemeinen sollten Sie keine Ausschlüsse für Microsoft Defender Antivirus. Stellen Sie sicher, dass Sie Ausschlüsse sparsam definieren und nur die Dateien, Ordner, Prozesse und vom Prozess geöffneten Dateien enthalten, die zu falsch positiven Ergebnisse führen. Achten Sie außerdem darauf, die definierten Ausschlüsse regelmäßig zu überprüfen. Es wird [empfohlen Microsoft Endpoint Manager](/mem/endpoint-manager-overview) Antivirusausschlüsse zu definieren oder zu bearbeiten. Sie können jedoch andere Methoden verwenden, z. B. [Gruppenrichtlinien](/azure/active-directory-domain-services/manage-group-policy) (siehe [Verwalten von Microsoft Defender for Endpoint](manage-atp-post-migration.md)).
 
 > [!TIP]
 > Benötigen Sie Hilfe bei Antivirenausschlüssen? Weitere [Informationen finden Sie unter Configure and validate exclusions for Microsoft Defender Antivirus scans](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus).
 
-#### <a name="use-microsoft-endpoint-manager-to-manage-antivirus-exclusions-for-existing-policies"></a>Verwenden von Microsoft Endpoint Manager zum Verwalten von Antivirenausschlüssen (für vorhandene Richtlinien)
+#### <a name="use-microsoft-endpoint-manager-to-manage-antivirus-exclusions-for-existing-policies"></a>Verwenden Microsoft Endpoint Manager zum Verwalten von Antivirenausschlüssen (für vorhandene Richtlinien)
 
 1. Wechseln Sie zum Microsoft Endpoint Manager Admin Center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) und melden Sie sich an.
 
@@ -222,19 +222,19 @@ Im Allgemeinen sollten Sie keine Ausschlüsse für Microsoft Defender Antivirus 
 
 3. Wählen **Sie Eigenschaften** aus, und wählen Sie neben **Konfigurationseinstellungen** bearbeiten **aus.**
 
-4. Erweitern **Sie Microsoft Defender Antivirus-Ausschlüsse,** und geben Sie dann Ihre Ausschlüsse an.
+4. Erweitern **Microsoft Defender Antivirus Ausschlüsse,** und geben Sie ihre Ausschlüsse an.
 
 5. Wählen **Sie Überprüfen + Speichern** aus, und wählen Sie dann Speichern **aus.**
 
-#### <a name="use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions"></a>Erstellen einer neuen Antivirenrichtlinie mit Ausschlüssen mithilfe von Microsoft Endpoint Manager
+#### <a name="use-microsoft-endpoint-manager-to-create-a-new-antivirus-policy-with-exclusions"></a>Verwenden Microsoft Endpoint Manager zum Erstellen einer neuen Antivirenrichtlinie mit Ausschlüssen
 
 1. Wechseln Sie zum Microsoft Endpoint Manager Admin Center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) und melden Sie sich an.
 
 2. Wählen **Sie Endpoint security**  >  **Antivirus**+ Create Policy  >  **aus.** 
 
-3. Wählen Sie eine Plattform aus (z. B. **Windows 10 und höher**, **macOS** oder **Windows 10 und Windows Server**).
+3. Wählen Sie eine Plattform aus **(z. B. Windows 10 und höher**, **macOS** oder **Windows 10 und Windows Server**).
 
-4. Wählen **Sie unter Profil** die Option Microsoft Defender **Antivirus-Ausschlüsse** aus, und wählen Sie dann **Erstellen aus.**
+4. Wählen **Sie** für **Profil Microsoft Defender Antivirus aus,** und wählen Sie dann **Erstellen aus.**
 
 5. Geben Sie einen Namen und eine Beschreibung für das Profil an, und wählen Sie dann **Weiter aus.**
 
@@ -242,7 +242,7 @@ Im Allgemeinen sollten Sie keine Ausschlüsse für Microsoft Defender Antivirus 
 
 7. Wenn Sie **Bereichstags** in Ihrer Organisation verwenden, geben Sie auf der Registerkarte Bereichstags Bereichstags für die Richtlinie an, die Sie erstellen. (Siehe [Bereichstags](/mem/intune/fundamentals/scope-tags).)
 
-8. Geben Sie **auf** der Registerkarte Zuweisungen die Benutzer und Gruppen an, auf die Ihre Richtlinie angewendet werden soll, und wählen Sie dann **Weiter aus.** (Wenn Sie Hilfe bei Zuweisungen benötigen, lesen [Sie Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+8. Geben Sie **auf** der Registerkarte Zuweisungen die Benutzer und Gruppen an, auf die Ihre Richtlinie angewendet werden soll, und wählen Sie dann **Weiter aus.** (Wenn Sie Hilfe bei Zuordnungen benötigen, lesen Sie Zuweisen von [Benutzer-](/mem/intune/configuration/device-profile-assign)und Geräteprofilen in Microsoft Intune .)
 
 9. Überprüfen Sie **auf der** Registerkarte Überprüfen + Erstellen die Einstellungen, und wählen Sie dann **Erstellen aus.**
 
@@ -250,7 +250,7 @@ Im Allgemeinen sollten Sie keine Ausschlüsse für Microsoft Defender Antivirus 
 
 [Indikatoren](/microsoft-365/security/defender-endpoint/manage-indicators) (insbesondere Indikatoren für Kompromisse oder IoCs) ermöglichen Es Ihrem Sicherheitsbetriebsteam, die Erkennung, Verhinderung und den Ausschluss von Entitäten zu definieren. Sie können beispielsweise bestimmte Dateien angeben, die in Denk- und Korrekturaktionen in Microsoft Defender for Endpoint ausgelassen werden sollen. Oder Indikatoren können verwendet werden, um Warnungen für bestimmte Dateien, IP-Adressen oder URLs zu generieren.
 
-Um Entitäten als Ausschlüsse für Microsoft Defender for Endpoint anzugeben, erstellen Sie "Zulassen"-Indikatoren für diese Entitäten. Solche ["allow"-Indikatoren](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)in Microsoft Defender for Endpoint gelten für den Schutz [der](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)nächsten Generation, die Erkennung und Reaktion von Endpunkten und die automatisierte Untersuchung [& Korrektur.](/microsoft-365/security/defender-endpoint/automated-investigations)
+Um Entitäten als Ausschlüsse für Microsoft Defender for Endpoint anzugeben, erstellen Sie "Zulassen"-Indikatoren für diese Entitäten. Solche "allow"-Indikatoren in Microsoft Defender for Endpoint gelten für den Schutz [der](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)nächsten [Generation,](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)EDR und automatisierte Untersuchung & [Korrektur](/microsoft-365/security/defender-endpoint/automated-investigations).
 
 "Zulassen"-Indikatoren können für:
 
@@ -267,7 +267,7 @@ Wenn Sie [einen "zulassen"-Indikator](/microsoft-365/security/defender-endpoint/
 Stellen Sie vor dem Erstellen von Indikatoren für Dateien sicher, dass die folgenden Anforderungen erfüllt sind:
 - Microsoft Defender Antivirus ist mit aktivierter cloudbasiertem Schutz konfiguriert (siehe [Verwalten des cloudbasierten Schutzes](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus))
 - Antischalwareclientversion ist 4.18.1901.x oder höher 
-- Auf Geräten wird Windows 10, Version 1703 oder höher, ausgeführt. Windows Server 2016; oder Windows Server 2019 
+- Auf Geräten wird Windows 10 Version 1703 oder höher ausgeführt. Windows Server 2016; oder Windows Server 2019 
 - Das [Feature Blockieren oder Zulassen ist aktiviert](/microsoft-365/security/defender-endpoint/advanced-features) 
 
 #### <a name="indicators-for-ip-addresses-urls-or-domains"></a>Indikatoren für IP-Adressen, URLs oder Domänen
@@ -277,9 +277,9 @@ Wenn Sie [einen "zulassen"-Indikator](/microsoft-365/security/defender-endpoint/
 Stellen Sie vor dem Erstellen von Indikatoren für IP-Adressen, URLs oder Domänen sicher, dass die folgenden Anforderungen erfüllt sind:
 - Der Netzwerkschutz in Defender for Endpoint ist im Blockmodus aktiviert (siehe [Aktivieren des Netzwerkschutzes](/microsoft-365/security/defender-endpoint/enable-network-protection))
 - Antischalware-Clientversion ist 4.18.1906.x oder höher 
-- Auf Geräten wird Windows 10, Version 1709 oder höher, ausgeführt. 
+- Auf Geräten wird Windows 10 Version 1709 oder höher ausgeführt. 
 
-Benutzerdefinierte Netzwerkindikatoren sind im Microsoft Defender Security Center aktiviert (siehe [Erweiterte Features](/microsoft-365/security/defender-endpoint/advanced-features))   
+Benutzerdefinierte Netzwerkindikatoren werden in der Microsoft Defender Security Center aktiviert (siehe [Erweiterte Features](/microsoft-365/security/defender-endpoint/advanced-features))   
 
 #### <a name="indicators-for-application-certificates"></a>Indikatoren für Anwendungszertifikate 
 
@@ -288,7 +288,7 @@ Wenn Sie [einen "zulassen"-Indikator](/microsoft-365/security/defender-endpoint/
 Stellen Sie vor dem Erstellen von Indikatoren für Anwendungszertifikate sicher, dass die folgenden Anforderungen erfüllt sind:
 - Microsoft Defender Antivirus ist mit aktivierter cloudbasiertem Schutz konfiguriert (siehe [Verwalten des cloudbasierten Schutzes](/windows/security/threat-protection/microsoft-defender-antivirus/deploy-manage-report-microsoft-defender-antivirus))
 - Antischalwareclientversion ist 4.18.1901.x oder höher 
-- Auf Geräten wird Windows 10, Version 1703 oder höher, ausgeführt. Windows Server 2016; oder Windows Server 2019 
+- Auf Geräten wird Windows 10 Version 1703 oder höher ausgeführt. Windows Server 2016; oder Windows Server 2019 
 - Viren- und Bedrohungsschutzdefinitionen sind auf dem neuesten Stand  
 
 > [!TIP]
@@ -304,20 +304,20 @@ Wenn Sie über eine Datei verfügen, die entweder falsch als schädlich erkannt 
 
 1. Lesen Sie die Richtlinien hier: [Übermitteln von Dateien zur Analyse](/windows/security/threat-protection/intelligence/submission-guide).
 
-2. Besuchen Sie die Microsoft Security Intelligence-Übermittlungswebsite ( [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) ), und übermitteln Sie Ihre Dateien.
+2. Besuchen Sie Microsoft Security Intelligence Übermittlungswebsite ( [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) ), und übermitteln Sie Ihre Dateien.
 
 ### <a name="submit-a-fileless-detection-for-analysis"></a>Übermitteln einer dateilosen Erkennung für die Analyse
 
-Wenn etwas basierend auf dem Verhalten als Schadsoftware erkannt wurde und Sie keine Datei haben, können Sie Ihre Datei zur `Mpsupport.cab` Analyse übermitteln. Sie können die *CAB-Datei mithilfe* des Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe)-Tools unter Windows 10 erhalten.
+Wenn etwas basierend auf dem Verhalten als Schadsoftware erkannt wurde und Sie keine Datei haben, können Sie Ihre Datei zur `Mpsupport.cab` Analyse übermitteln. Sie können die *.cab* mithilfe des Microsoft Malware Protection Command-Line Utility (MPCmdRun.exe)-Tools auf Windows 10.
 
 1.  Wechseln Sie ` C:\ProgramData\Microsoft\Windows Defender\Platform\<version>` zu , und führen Sie dann als Administrator `MpCmdRun.exe` aus.
 
 2.  Geben `mpcmdrun.exe -GetFiles` Sie ein, und drücken Sie dann die **EINGABETASTE.**
-   Es wird eine CAB-Datei generiert, die verschiedene Diagnoseprotokolle enthält. Der Speicherort der Datei wird in der Ausgabe der Eingabeaufforderung angegeben. Standardmäßig ist der Speicherort `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
+   Eine .cab wird generiert, die verschiedene Diagnoseprotokolle enthält. Der Speicherort der Datei wird in der Ausgabe der Eingabeaufforderung angegeben. Standardmäßig ist der Speicherort `C:\ProgramData\Microsoft\Microsoft Defender\Support\MpSupportFiles.cab` .
 
 3.  Lesen Sie die Richtlinien hier: [Übermitteln von Dateien zur Analyse](/windows/security/threat-protection/intelligence/submission-guide).
 
-4.  Besuchen Sie die Microsoft Security Intelligence-Übermittlungswebsite ( [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) ), und übermitteln Sie Ihre CAB-Dateien.
+4.  Besuchen Sie Microsoft Security Intelligence Übermittlungswebsite ( [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) ), und übermitteln Sie ihre .cab Dateien.
 
 ### <a name="what-happens-after-a-file-is-submitted"></a>Was geschieht, nachdem eine Datei übermittelt wurde?
 
@@ -329,7 +329,7 @@ Für Übermittlungen, die noch nicht verarbeitet wurden, werden sie für die Ana
 - Authentifizierte Kunden, insbesondere Unternehmenskunden mit gültigen [Software Assurance-IDs (SAIDs),](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default.aspx)erhalten eine höhere Priorität.
 - Übermittlungen, die von den BESITZERn von SAID als hohe Priorität gekennzeichnet sind, werden sofort behandelt.
 
-Um nach Updates für Ihre Übermittlung zu suchen, melden Sie sich auf der [Microsoft Security Intelligence-Übermittlungswebsite an.](https://www.microsoft.com/wdsi/filesubmission) 
+Um nach Updates für Ihre Übermittlung zu suchen, melden Sie sich auf der Microsoft Security Intelligence [an.](https://www.microsoft.com/wdsi/filesubmission) 
 
 > [!TIP]
 > Weitere Informationen finden Sie unter [Submit files for analysis](/windows/security/threat-protection/intelligence/submission-guide#how-does-microsoft-prioritize-submissions).
@@ -338,7 +338,7 @@ Um nach Updates für Ihre Übermittlung zu suchen, melden Sie sich auf der [Micr
 
 Microsoft Defender for Endpoint bietet eine Vielzahl von Optionen, einschließlich der Möglichkeit, Einstellungen für verschiedene Features und Funktionen zu optimieren. Wenn Sie zahlreiche falsch positive Ergebnisse erhalten, überprüfen Sie unbedingt die Bedrohungsschutzeinstellungen Ihrer Organisation. Möglicherweise müssen Sie einige Anpassungen an:
 
-- [Aus der Cloud gelieferter Schutz](#cloud-delivered-protection)
+- [In der Cloud zugestellter Schutz](#cloud-delivered-protection)
 - [Behebung von potenziell unerwünschten Anwendungen](#remediation-for-potentially-unwanted-applications)
 - [Automatisierte Untersuchung und Behebung](#automated-investigation-and-remediation)
 
@@ -349,9 +349,9 @@ Microsoft Defender for Endpoint bietet eine Vielzahl von Optionen, einschließli
 > [!TIP]
 > Weitere Informationen zum Konfigurieren ihres in der Cloud übermittelten Schutzes finden Sie unter [Angeben der in der Cloud übermittelten Schutzstufe](/windows/security/threat-protection/microsoft-defender-antivirus/specify-cloud-protection-level-microsoft-defender-antivirus).
 
-Wir empfehlen die [Verwendung von Microsoft Endpoint Manager](/mem/endpoint-manager-overview) zum Bearbeiten oder Festlegen ihrer in der Cloud übermittelten Schutzeinstellungen. Sie können jedoch andere Methoden verwenden, z. B. [Gruppenrichtlinien](/azure/active-directory-domain-services/manage-group-policy) (siehe [Verwalten von Microsoft Defender for Endpoint](manage-atp-post-migration.md)).
+Es wird empfohlen, [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) zum Bearbeiten oder Festlegen ihrer in der Cloud übermittelten Schutzeinstellungen zu verwenden. Sie können jedoch andere Methoden verwenden, z. B. [Gruppenrichtlinien](/azure/active-directory-domain-services/manage-group-policy) (siehe [Verwalten von Microsoft Defender for Endpoint](manage-atp-post-migration.md)).
 
-#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Verwenden von Microsoft Endpoint Manager zum Überprüfen und Bearbeiten von in der Cloud übermittelten Schutzeinstellungen (für vorhandene Richtlinien)
+#### <a name="use-microsoft-endpoint-manager-to-review-and-edit-cloud-delivered-protection-settings-for-existing-policies"></a>Verwenden Microsoft Endpoint Manager zum Überprüfen und Bearbeiten von von der Cloud übermittelten Schutzeinstellungen (für vorhandene Richtlinien)
 
 1. Wechseln Sie zum Microsoft Endpoint Manager Admin Center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) und melden Sie sich an.
 
@@ -363,23 +363,23 @@ Wir empfehlen die [Verwendung von Microsoft Endpoint Manager](/mem/endpoint-mana
 
 5. Wählen **Sie Überprüfen + speichern** und dann Speichern **aus.**
 
-#### <a name="use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy"></a>Festlegen von in der Cloud übermittelten Schutzeinstellungen mithilfe von Microsoft Endpoint Manager (für eine neue Richtlinie)
+#### <a name="use-microsoft-endpoint-manager-to-set-cloud-delivered-protection-settings-for-a-new-policy"></a>Verwenden Microsoft Endpoint Manager zum Festlegen von in der Cloud übermittelten Schutzeinstellungen (für eine neue Richtlinie)
 
 1. Wechseln Sie zum Microsoft Endpoint Manager Admin Center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) und melden Sie sich an.
 
 2. Wählen **Sie Endpoint security**  >  **Antivirus**+ Create policy  >  **aus.**
 
-3. Wählen **Sie für Plattform** eine Option aus, und wählen Sie dann für **Profil** die Option **Antivirus** oder Microsoft **Defender Antivirus** aus (die spezifische Option hängt davon ab, was Sie für die Plattform ausgewählt **haben**.) Wählen Sie dann **Erstellen aus.**
+3. Wählen **Sie für Plattform** eine Option aus, und wählen Sie dann für **Profil** die Option **Antivirus** oder **Microsoft Defender Antivirus** aus (die spezifische Option hängt davon ab, was Sie für Plattform **ausgewählt haben**.) Wählen Sie dann **Erstellen aus.**
 
 4. Geben Sie **auf der Registerkarte** Grundlagen einen Namen und eine Beschreibung für die Richtlinie an. Wählen Sie dann **Weiter** aus.
 
 5. Erweitern Sie **auf der** Registerkarte Konfigurationseinstellungen **den Cloudschutz,** und geben Sie die folgenden Einstellungen an:
    - Legen **Sie Den in der Cloud übermittelten Schutz auf** Ja **ein.**
-   - Legen **Sie in der Cloud zugestellte Schutzstufe** auf Nicht **konfiguriert.** (Diese Stufe bietet standardmäßig ein hohes Schutzniveau und verringert gleichzeitig die Wahrscheinlichkeit, dass falsch positive Ergebnisse angezeigt werden.)
+   - Legen Sie **Aus der Cloud bereitgestellte Schutzebene** auf **Nicht konfiguriert** fest. (Diese Stufe bietet standardmäßig ein hohes Schutzniveau und verringert gleichzeitig die Wahrscheinlichkeit, dass falsch positive Ergebnisse angezeigt werden.)
 
 6. Wenn Sie **Bereichstags** in Ihrer Organisation verwenden, geben Sie auf der Registerkarte Bereichstags Bereichstags für die Richtlinie an. (Siehe [Bereichstags](/mem/intune/fundamentals/scope-tags).)
 
-7. Geben Sie **auf** der Registerkarte Zuweisungen die Benutzer und Gruppen an, auf die Ihre Richtlinie angewendet werden soll, und wählen Sie dann **Weiter aus.** (Wenn Sie Hilfe bei Zuweisungen benötigen, lesen [Sie Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+7. Geben Sie **auf** der Registerkarte Zuweisungen die Benutzer und Gruppen an, auf die Ihre Richtlinie angewendet werden soll, und wählen Sie dann **Weiter aus.** (Wenn Sie Hilfe bei Zuordnungen benötigen, lesen Sie Zuweisen von [Benutzer-](/mem/intune/configuration/device-profile-assign)und Geräteprofilen in Microsoft Intune .)
 
 8. Überprüfen Sie **auf der** Registerkarte Überprüfen + Erstellen die Einstellungen, und wählen Sie dann **Erstellen aus.**  
 
@@ -390,11 +390,11 @@ Potenziell unerwünschte Anwendungen (PUA) sind eine Kategorie von Software, die
 > [!TIP]
 > Weitere Informationen zu PUA finden Sie unter [Detect and block potentially unwanted applications](/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus).
  
-Je nach den apps, die Ihre Organisation verwendet, erhalten Sie möglicherweise falsch positive Ergebnisse als Ergebnis Ihrer PUA-Schutzeinstellungen. Erwägen Sie bei Bedarf, den PUA-Schutz für eine Weile im Überwachungsmodus zu verwenden, oder wenden Sie den PUA-Schutz auf eine Teilmenge von Geräten in Ihrer Organisation an. Der PUA-Schutz kann für den Microsoft Edge-Browser und für Microsoft Defender Antivirus konfiguriert werden.
+Je nach den apps, die Ihre Organisation verwendet, erhalten Sie möglicherweise falsch positive Ergebnisse als Ergebnis Ihrer PUA-Schutzeinstellungen. Erwägen Sie bei Bedarf, den PUA-Schutz für eine Weile im Überwachungsmodus zu verwenden, oder wenden Sie den PUA-Schutz auf eine Teilmenge von Geräten in Ihrer Organisation an. Der PUA-Schutz kann für den Microsoft Edge und für Microsoft Defender Antivirus.
 
-Es wird [empfohlen, microsoft Endpoint Manager](/mem/endpoint-manager-overview) zum Bearbeiten oder Festlegen von PUA-Schutzeinstellungen zu verwenden. Sie können jedoch andere Methoden verwenden, z. B. [Gruppenrichtlinien](/azure/active-directory-domain-services/manage-group-policy) (siehe [Verwalten von Microsoft Defender for Endpoint](manage-atp-post-migration.md)).
+Es wird empfohlen, [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) zum Bearbeiten oder Festlegen von PUA-Schutzeinstellungen zu verwenden. Sie können jedoch andere Methoden verwenden, z. B. [Gruppenrichtlinien](/azure/active-directory-domain-services/manage-group-policy) (siehe [Verwalten von Microsoft Defender for Endpoint](manage-atp-post-migration.md)).
 
-#### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>Bearbeiten des PUA-Schutzes mithilfe von Microsoft Endpoint Manager (für vorhandene Konfigurationsprofile)
+#### <a name="use-microsoft-endpoint-manager-to-edit-pua-protection-for-existing-configuration-profiles"></a>Verwenden Microsoft Endpoint Manager zum Bearbeiten des PUA-Schutzes (für vorhandene Konfigurationsprofile)
 
 1. Wechseln Sie zum Microsoft Endpoint Manager Admin Center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) und melden Sie sich an.
 
@@ -402,29 +402,29 @@ Es wird [empfohlen, microsoft Endpoint Manager](/mem/endpoint-manager-overview) 
 
 3. Wählen **Sie unter Verwalten** die Option **Eigenschaften** aus, und wählen Sie dann neben **Konfigurationseinstellungen** **bearbeiten aus.**
 
-4. Scrollen Sie **auf der** Registerkarte Konfigurationseinstellungen nach unten, und erweitern Sie Microsoft **Defender Antivirus**.
+4. Scrollen Sie **auf der** Registerkarte Konfigurationseinstellungen nach unten, und erweitern **Sie Microsoft Defender Antivirus**.
 
 5. Legen **Sie "Potenziell unerwünschte Anwendungen erkennen" auf** Überwachung **festgelegt.** (Sie können es deaktivieren, aber mithilfe des Überwachungsmodus können Sie Erkennungen sehen.)
 
 6. Wählen **Sie Überprüfen + Speichern** aus, und wählen Sie dann Speichern **aus.**
 
-#### <a name="use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile"></a>Festlegen des PUA-Schutzes mithilfe von Microsoft Endpoint Manager (für ein neues Konfigurationsprofil)
+#### <a name="use-microsoft-endpoint-manager-to-set-pua-protection-for-a-new-configuration-profile"></a>Verwenden Microsoft Endpoint Manager zum Festlegen des PUA-Schutzes (für ein neues Konfigurationsprofil)
 
 1. Wechseln Sie zum Microsoft Endpoint Manager Admin Center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ) und melden Sie sich an.
 
 2. Wählen **Sie**  >  **Gerätekonfigurationsprofile**  >  **+ Profil erstellen aus.**
 
-3. Wählen Sie **für die Plattform** Windows **10 und höher** aus, und wählen Sie unter **Profil** **geräteeinschränkungen aus.**
+3. Wählen Sie **für die Plattform** Windows 10 und **höher** aus, und wählen Sie für **Profil** **Geräteeinschränkungen aus.**
 
 4. Geben Sie **auf der Registerkarte** Grundlagen einen Namen und eine Beschreibung für Ihre Richtlinie an. Wählen Sie dann **Weiter** aus.
 
-5. Scrollen Sie **auf der** Registerkarte Konfigurationseinstellungen nach unten, und erweitern Sie Microsoft **Defender Antivirus**.
+5. Scrollen Sie **auf der** Registerkarte Konfigurationseinstellungen nach unten, und erweitern **Sie Microsoft Defender Antivirus**.
 
 6. Legen **Sie "Potenziell unerwünschte Anwendungen erkennen" auf** **"Überwachung"** und dann auf **Weiter .** (Sie können den PUA-Schutz deaktivieren, aber mithilfe des Überwachungsmodus können Sie Erkennungen sehen.)
 
-7. Geben Sie **auf** der Registerkarte Zuweisungen die Benutzer und Gruppen an, auf die Ihre Richtlinie angewendet werden soll, und wählen Sie dann **Weiter aus.** (Wenn Sie Hilfe bei Zuweisungen benötigen, lesen [Sie Zuweisen von Benutzer- und Geräteprofilen in Microsoft Intune](/mem/intune/configuration/device-profile-assign).)
+7. Geben Sie **auf** der Registerkarte Zuweisungen die Benutzer und Gruppen an, auf die Ihre Richtlinie angewendet werden soll, und wählen Sie dann **Weiter aus.** (Wenn Sie Hilfe bei Zuordnungen benötigen, lesen Sie Zuweisen von [Benutzer-](/mem/intune/configuration/device-profile-assign)und Geräteprofilen in Microsoft Intune .)
 
-8. Geben Sie auf der Registerkarte **Anwendbarkeitsregeln** die Betriebssystemeditionen oder -versionen an, die in die Richtlinie ein- oder ausgeschlossen werden sollen. Sie können beispielsweise festlegen, dass die Richtlinie auf alle Geräte angewendet werden soll, die bestimmte Editionen von Windows 10 enthalten. Wählen Sie dann **Weiter** aus.
+8. Geben Sie auf der Registerkarte **Anwendbarkeitsregeln** die Betriebssystemeditionen oder -versionen an, die in die Richtlinie ein- oder ausgeschlossen werden sollen. Sie können z. B. festlegen, dass die Richtlinie auf alle Geräte angewendet werden soll, für die bestimmte Editionen von Windows 10. Wählen Sie dann **Weiter** aus.
 
 9. Überprüfen Sie **auf der** Registerkarte Überprüfen + Erstellen Ihre Einstellungen, und wählen Sie dann **Erstellen aus.**
 

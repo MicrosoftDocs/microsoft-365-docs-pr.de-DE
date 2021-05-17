@@ -42,13 +42,13 @@ Nach Abschluss des Onboardings können Sie Ihre Auswahl auf der Seite Mit den Ei
 ## <a name="verify-data-storage-location"></a>Überprüfen des Datenspeicherorts
 Während der [Einrichtungsphase](production-deployment.md)hätten Sie den Speicherort ausgewählt, an dem Ihre Daten gespeichert werden. 
 
-Sie können den Datenspeicherort überprüfen, indem Sie zu **Einstellungen**  >  **Datenaufbewahrung navigieren.**
+Sie können den Datenspeicherort überprüfen, indem Sie zu **Einstellungen**  >  **navigieren.**
 
 ## <a name="update-data-retention-settings"></a>Aktualisieren von Einstellungen für die Datenaufbewahrung
 
 Sie können die Einstellungen für die Datenaufbewahrung aktualisieren. Standardmäßig beträgt der Aufbewahrungszeitraum 180 Tage. 
 
-1. Wählen Sie im Navigationsbereich Einstellungen  >  **Datenaufbewahrung aus.**
+1. Wählen Sie im Navigationsbereich die **Option Einstellungen**  >  **Vorratsdatenspeicherung aus.**
 
 2. Wählen Sie in der Dropdownliste die Aufbewahrungsdauer aus.
 

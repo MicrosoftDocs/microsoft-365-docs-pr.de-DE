@@ -36,13 +36,13 @@ ms.locfileid: "52299988"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender kann dazu beitragen, schädliche Anlagen zu erkennen, die per E-Mail zugestellt werden. Da das [Office 365 Security and Compliance Center](https://protection.office.com/) in Microsoft 365 Defender integriert ist, können Sicherheitsanalysten Einblick in Bedrohungen von Office 365 haben, z. B. über E-Mail-Anlagen.
+Microsoft 365 Defender kann dazu beitragen, schädliche Anlagen zu erkennen, die per E-Mail zugestellt wurden. Da das [Office 365 Security and Compliance Center](https://protection.office.com/) in Microsoft 365 Defender integriert ist, können Sicherheitsanalysten Einblick in Bedrohungen von Office 365 erhalten, z. B. über E-Mail-Anlagen.
 
 Beispielsweise wurde einem Analysten ein mehrstufiger Vorfall zugewiesen.
  
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-incident.png" alt-text="Beispiel für einen mehrstufigen Vorfall"::: 
 
-Auf der **Registerkarte Warnungen** des Vorfalls werden Warnungen von Defender für Office 365 und Microsoft Cloud App Security angezeigt. Der Analyst kann einen Drilldown in defender for Office 365, indem er die Warnungen für E-Mail-Nachrichten aus wählt. Die Details der Warnung werden im Seitenbereich angezeigt.
+Auf der **Registerkarte Warnungen** des Vorfalls werden Warnungen von Defender für Office 365 und Microsoft Cloud App Security angezeigt. Der Analytiker kann einen Drilldown zu den Defender for Office 365-Warnungen durch Auswählen der E-Mail-Nachrichtenbenachrichtigungen erstellen. Die Details der Warnung werden im Seitenbereich angezeigt.
 
 :::image type="content" source="../../media/first-incident-path-phishing/first-incident-phishing-alerts.png" alt-text="Beispiel für eine E-Mail-Warnung":::
  

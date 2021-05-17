@@ -48,7 +48,7 @@ Wenn Sie sich für die Bereitstellung von Updates mit Ihren Softwareverteilungst
 
 ## <a name="use-msupdate"></a>Msupdate verwenden
 
-MAU enthält ein Befehlszeilentool namens *msupdate,* das für IT-Administratoren entwickelt wurde, damit sie präziser steuern können, wann Updates angewendet werden. Anweisungen zur Verwendung dieses Tools finden Sie unter [Update Office for Mac by using msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate).
+MAU enthält ein Befehlszeilentool namens *msupdate,* das für IT-Administratoren entwickelt wurde, damit sie präziser steuern können, wann Updates angewendet werden. Anweisungen zur Verwendung dieses Tools finden Sie unter [Update Office für Mac using msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate).
 
 In MAU ist die Anwendungs-ID für Microsoft Defender for Endpoint auf macOS *WDAV00*. Führen Sie den folgenden Befehl aus einem Terminalfenster aus, um die neuesten Updates für Microsoft Defender for Endpoint unter macOS herunterzuladen und zu installieren:
 
@@ -130,7 +130,7 @@ Der `Current` Kanal enthält die stabilste Version des Produkts.
 
 ### <a name="disable-insider-checkbox"></a>Kontrollkästchen Insider deaktivieren
 
-Auf true festgelegt, um die "Teilnahme am Office-Insider-Programm..." zu erstellen. Kontrollkästchen für Benutzer nicht verfügbar/ausgegraut.
+Auf true festgelegt, um das "Join the Office Insider Program..." zu erstellen. Kontrollkästchen für Benutzer nicht verfügbar/ausgegraut.
 
 |Abschnitt|Wert|
 |:--|:--|

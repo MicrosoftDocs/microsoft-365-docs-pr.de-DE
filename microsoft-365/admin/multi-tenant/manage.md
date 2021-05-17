@@ -28,7 +28,7 @@ ms.locfileid: "51943029"
 ---
 # <a name="multi-tenant-management"></a>Verwaltung mit mehreren Mandanten
 
-Die mehrstufige Verwaltung bietet eine einheitliche Verwaltungsform, mit der Microsoft 365-Partneradministratoren alle Mandanten verwalten können, die sie von einem einzigen Standort aus verwalten können. Wenn Sie ein Partner sind, der mehrere Mandanten verwaltet, können Sie:
+Die verwaltung mit mehreren Mandanten bietet eine einheitliche Verwaltungsform, die es Microsoft 365 Partneradministratoren ermöglicht, alle Mandanten, die sie verwalten, von einem einzigen Standort aus zu verwalten. Wenn Sie ein Partner sind, der mehrere Mandanten verwaltet, können Sie:
 
 - Wechseln Sie schnell zwischen mandanten, die Sie verwalten.
 - Bewerten des Dienstzustands, der Produkte und der Abrechnung über mehrere Mandanten hinweg.
@@ -36,7 +36,7 @@ Die mehrstufige Verwaltung bietet eine einheitliche Verwaltungsform, mit der Mic
 
 ## <a name="move-between-tenants"></a>Verschieben zwischen Mandanten
 
-1. Wählen Sie im Microsoft 365 Admin Center den Organisationsnamen aus.
+1. Wählen Sie Microsoft 365 Admin Center den Organisationsnamen aus.
 
     :::image type="content" source="../../media/macorgswitcher.png" alt-text="Mehr-Mandanten-Switcher.":::
 
@@ -46,7 +46,7 @@ Die mehrstufige Verwaltung bietet eine einheitliche Verwaltungsform, mit der Mic
 
 ## <a name="view-all-tenants-page"></a>Seite "Alle Mandanten anzeigen"
 
-1. Wählen Sie im Microsoft 365 Admin Center im linken Navigations navi alle **Mandanten aus.**
+1. Wählen Sie Microsoft 365 Admin Center im linken Navigations navi alle **Mandanten aus.**
 - Auf der **Seite Alle Mandanten** können Sie
   - Bewerten des Dienstzustands
   - Überprüfen der Lizenznutzung
@@ -59,7 +59,7 @@ Wenn Sie einen Mandanten als Favoriten markiert haben, wird er automatisch erwei
 
 Die Dienstinteratansicht zeigt, ob sich Vorfälle oder Ratgeber auf die Mandanten ausdingen. Sie erfahren sogar, wie viele Ihrer verwalteten Mandanten betroffen sind.
 
-1. Wählen Sie im Microsoft 365 Admin Center in der Ansicht mit mehreren Mandanten die Option **Dienstinte health aus.**
+1. Wählen Sie Microsoft 365 Admin Center in der Mehr-Mandanten-Ansicht **dienstintegte aus.**
 2. In  der aggregierten Ansicht dienstintegierte Integritätsseite können Sie auch die Gesamtanzahl von Vorfällen, die Gesamtanzahl von Ratgebern, die einen der verwalteten Mandanten betreffen, und die Anzahl der Dienste mit aktiven Vorfällen anzeigen. Sie können auch sehen, wie viele Ihrer Mandanten von Vorfällen und Ratgebern betroffen sind.
 
     - Mit der Filteroption können Sie Probleme nach Problemtyp oder Dienst anzeigen.
@@ -75,7 +75,7 @@ Die Liste der betroffenen Mandanten kann in das CSV-Format exportiert werden, so
 
 ## <a name="view-a-single-tenant-in-the-microsoft-365-admin-center"></a>Anzeigen eines einzelnen Mandanten im Microsoft 365 Admin Center
 
-Sie können auf der Seite Alle Mandanten zum Microsoft 365 Admin Center für alle Mandanten **zurückkehren.**
+Sie können auf der Seite Alle Mandanten Microsoft 365 administrator center für alle Mandanten **zurückkehren.**
 
 1. Wählen Sie **auf der** Seite Alle Mandanten den Mandantennamen aus, für den Sie das Admin Center anzeigen möchten.
 2. Sie werden an das Admin Center für den Mandanten geleitet.

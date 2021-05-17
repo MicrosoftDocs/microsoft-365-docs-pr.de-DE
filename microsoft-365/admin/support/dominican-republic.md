@@ -39,6 +39,6 @@ Spanisch: Mon-Fri 9:00-17:00 Uhr
 
 Spanisch: 24 Stunden am Tag, 7 Tage die Woche
 
-Alternative Telefon Nummer: 1 809 200 8794
+Alternative Telefonnummer: 1 809 200 8794
 
 (Mobilfunk gebührenfrei)

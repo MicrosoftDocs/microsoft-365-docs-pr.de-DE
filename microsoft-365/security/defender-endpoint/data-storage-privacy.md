@@ -35,7 +35,7 @@ ms.locfileid: "51935389"
 
 Dieser Abschnitt behandelt einige der am häufigsten gestellten Fragen zum Datenschutz und zur Datenverarbeitung für Defender for Endpoint.
 > [!NOTE]
-> In diesem Dokument werden die Datenspeicherungs- und Datenschutzdetails im Zusammenhang mit Defender for Endpoint erläutert. Weitere Informationen zu Defender for Endpoint und anderen Produkten und Diensten wie Microsoft Defender Antivirus und Windows 10 finden Sie unter [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576). Weitere Informationen finden Sie unter Häufig gestellte Fragen zu [Windows 10-Datenschutz.](https://go.microsoft.com/fwlink/?linkid=827577)
+> In diesem Dokument werden die Datenspeicherungs- und Datenschutzdetails im Zusammenhang mit Defender for Endpoint erläutert. Weitere Informationen zu Defender for Endpoint und anderen Produkten und Diensten wie Microsoft Defender Antivirus und Windows 10 finden Sie unter [Microsoft Privacy Statement](https://go.microsoft.com/fwlink/?linkid=827576). Weitere Informationen Windows 10 finden Sie auch [unter häufig gestellte Fragen](https://go.microsoft.com/fwlink/?linkid=827577) zum Datenschutz.
 
 
 ## <a name="what-data-does-microsoft-defender-for-endpoint-collect"></a>Welche Daten werden von Microsoft Defender for Endpoint gesammelt?
@@ -44,7 +44,7 @@ Microsoft Defender for Endpoint sammelt und speichern Informationen von Ihren ko
 
 Zu den erfassten Informationen gehören Dateidaten (z. B. Dateinamen, Größen und Hashes), Prozessdaten (laufende Prozesse, Hashes), Registrierungsdaten, Netzwerkverbindungsdaten (Host-IPs und Ports) und Gerätedetails (z. B. Gerätebezeichner, Namen und die Betriebssystemversion).
 
-Microsoft speichert diese Daten sicher in Microsoft Azure und verwaltet sie in Übereinstimmung mit den Datenschutzpraktiken von Microsoft und [den Microsoft Trust Center-Richtlinien.](https://go.microsoft.com/fwlink/?linkid=827578)
+Microsoft speichert diese Daten sicher in Microsoft Azure und verwaltet sie in Übereinstimmung mit den Datenschutzpraktiken von Microsoft und [Microsoft Trust Center-Richtlinien.](https://go.microsoft.com/fwlink/?linkid=827578)
 
 Diese Daten ermöglichen Defender for Endpoint:
 - Proaktive Identifizierung von Angriffsindikatoren (IoAs) in Ihrer Organisation
@@ -54,7 +54,7 @@ Diese Daten ermöglichen Defender for Endpoint:
 Microsoft verwendet Ihre Daten nicht für Werbung.
 
 ## <a name="data-protection-and-encryption"></a>Datenschutz und Verschlüsselung
-Der Defender for Endpoint-Dienst verwendet moderne Datenschutztechnologien, die auf der Microsoft Azure-Infrastruktur basieren. 
+Der Defender for Endpoint-Dienst verwendet moderne Datenschutztechnologien, die auf einer Microsoft Azure basieren. 
 
 Es gibt verschiedene Aspekte, die für den Datenschutz relevant sind, die unser Dienst übernimmt. Die Verschlüsselung ist eine der wichtigsten Und umfasst die Datenverschlüsselung im Ruhebetrieb, die Verschlüsselung im Flight und die Schlüsselverwaltung mit Key Vault. Weitere Informationen zu anderen Technologien, die vom Defender for Endpoint-Dienst verwendet werden, finden Sie unter [Azure encryption overview](https://docs.microsoft.com/azure/security/security-azure-encryption-overview). 
 
@@ -63,7 +63,7 @@ In allen Szenarien werden Daten mindestens mit [](https://en.wikipedia.org/wiki/
 
 ## <a name="data-storage-location"></a>Datenspeicherstandort
 
-Defender for Endpoint ist in den Microsoft Azure-Rechenzentren in der Europäischen Union, im Vereinigten Königreich oder in den Vereinigten Staaten tätig. Vom Dienst erfasste Kundendaten können gespeichert werden in: (a) dem geografischen Standort des Mandanten, der während der Bereitstellung identifiziert wurde, oder (b) wenn Defender for Endpoint einen anderen Microsoft Onlinedienst verwendet, um solche Daten zu verarbeiten, die Geolocation gemäß den Datenspeicherregeln dieses anderen Onlinediensts.
+Defender for Endpoint ist in den Microsoft Azure in der Europäischen Union, im Vereinigten Königreich oder in den Vereinigten Staaten tätig. Vom Dienst erfasste Kundendaten können gespeichert werden in: (a) dem geografischen Standort des Mandanten, der während der Bereitstellung identifiziert wurde, oder (b) wenn Defender for Endpoint einen anderen Microsoft Onlinedienst verwendet, um solche Daten zu verarbeiten, die Geolocation gemäß den Datenspeicherregeln dieses anderen Onlinediensts.
 
 Kundendaten in pseudonymisierter Form können auch in den zentralen Speicher- und Verarbeitungssystemen in den USA gespeichert werden.
 
@@ -82,7 +82,7 @@ Microsoft-Entwicklern und -Administratoren wurden entwurfsweise ausreichende Rec
 
 Darüber hinaus führt Microsoft Hintergrundüberprüfungen für bestimmte Betriebsmitarbeiter durch und beschränkt den Zugriff auf Anwendungen, Systeme und Netzwerkinfrastruktur im Verhältnis zur Hintergrundüberprüfungsstufe. Das Betriebspersonal folgt einem formalen Prozess, wenn er bei der Aufgabenerführung auf das Konto oder die zugehörigen Informationen eines Kunden zugreifen muss.
 
-Der Zugriff auf Daten für In Microsoft Azure Government-Rechenzentren bereitgestellte Dienste wird nur Betriebspersonal gewährt, das geprüft und genehmigt wurde, um Daten zu verarbeiten, die bestimmten gesetzlichen Bestimmungen und Anforderungen unterliegen, z. B. FedRAMP, NIST 800.171 (DIB), ITAR, IRS 1075, DoD L4 und CJIS.
+Der Zugriff auf Daten für Microsoft Azure #A0 bereitgestellte Dienste wird nur Betriebspersonal gewährt, das geprüft und genehmigt wurde, um Daten zu verarbeiten, die bestimmten staatlichen Vorschriften und Anforderungen unterliegen, z. B. FedRAMP, NIST 800.171 (DIB), ITAR, IRS 1075, DoD L4 und CJIS.
 
 
 ## <a name="is-data-shared-with-other-customers"></a>Werden Daten für andere Kunden freigegeben?

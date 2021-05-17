@@ -1,7 +1,7 @@
 ---
 title: Arbeiten mit erweiterten Suchabfrageergebnissen in Microsoft 365 Defender
-description: Nutzen der Abfrageergebnisse, die von der erweiterten Suche in Microsoft 365 Defender zurückgegeben werden
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungensuche, Microsoft 365 Defender, microsoft 365, m365, Suche, Abfrage, Telemetrie, benutzerdefinierte Erkennungen, Schema, Kusto, Visualisierung, Diagramm, Filter, Drilldown
+description: Nutzen Sie die Abfrageergebnisse, die von der erweiterten Suche in Defender zurückgegeben Microsoft 365
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, custom detections, schema, kusto, visualization, chart, filters, drill-down
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -122,7 +122,7 @@ Das folgende Liniendiagramm zeigt deutlich Zeiträume mit mehr Aktivität `invoi
 ## <a name="export-tables-and-charts"></a>Exportieren von Tabellen und Diagrammen
 Wählen Sie nach dem Ausführen einer Abfrage **Exportieren** aus, um die Ergebnisse in der lokalen Datei zu speichern. Die ausgewählte Ansicht bestimmt, wie die Ergebnisse exportiert werden:
 
-- **Tabellenansicht** – Die Abfrageergebnisse werden in tabellarischer Form als Microsoft Excel-Arbeitsmappe exportiert.
+- **Tabellenansicht** : Die Abfrageergebnisse werden in tabellarischer Form als Microsoft Excel exportiert.
 - **Jedes Diagramm** – die Abfrageergebnisse werden als JPEG-Bild des gerenderten Diagramms exportiert.
 
 ## <a name="drill-down-from-query-results"></a>Drilldown aus Abfrageergebnissen
@@ -155,7 +155,7 @@ Verfeinern Sie Ihre Abfrage, indem Sie die Schaltflächen oder für die Werte au
 Sobald der Filter zum Ändern der Abfrage angewendet und die Abfrage ausgeführt wurde, werden die Ergebnisse entsprechend aktualisiert.
 
 >[!NOTE]
->Einige Tabellen in diesem Artikel sind möglicherweise nicht in Microsoft Defender for Endpoint verfügbar. [Aktivieren Sie Microsoft 365 Defender,](m365d-enable.md) um bedrohungen mithilfe von weiteren Datenquellen nach Bedrohungen zu fahnen. Sie können Ihre erweiterten Suchworkflows von Microsoft Defender for Endpoint zu Microsoft 365 Defender verschieben, indem Sie die Schritte unter [Migrate advanced hunting queries from Microsoft Defender for Endpoint ausführen.](advanced-hunting-migrate-from-mde.md)
+>Einige Tabellen in diesem Artikel sind möglicherweise nicht in Microsoft Defender for Endpoint verfügbar. [Aktivieren Sie Microsoft 365 Defender,](m365d-enable.md) um bedrohungen mithilfe von weiteren Datenquellen nach Bedrohungen zu fahnen. Sie können Ihre workflows für die erweiterte Suche von Microsoft Defender for Endpoint zu Microsoft 365 Defender verschieben, indem Sie die Schritte unter [Migrate advanced hunting queries from Microsoft Defender for Endpoint ausführen.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

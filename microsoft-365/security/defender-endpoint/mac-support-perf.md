@@ -62,7 +62,7 @@ Die folgenden Schritte können verwendet werden, um diese Probleme zu beheben un
 
       Wenn Ihr Gerät von Ihrer Organisation verwaltet wird, kann der Echtzeitschutz von Ihrem Administrator mithilfe der Anweisungen unter Festlegen von Einstellungen für Microsoft Defender for Endpoint unter [macOS deaktiviert werden.](mac-preferences.md)
       
-      Wenn das Leistungsproblem weiterhin besteht, während der Echtzeitschutz deaktiviert ist, könnte der Ursprung des Problems die Endpunkterkennungs- und Reaktionskomponente sein. Wenden Sie sich in diesem Fall an den Kundensupport, um weitere Anweisungen und Gegenmaßnahmen zu erhalten.
+      Wenn das Leistungsproblem weiterhin besteht, während der Echtzeitschutz deaktiviert ist, könnte der Ursprung des Problems die EDR sein. Wenden Sie sich in diesem Fall an den Kundensupport, um weitere Anweisungen und Gegenmaßnahmen zu erhalten.
 
 2. Öffnen Sie finder, und navigieren Sie zu   >  **Anwendungsprogramme**. Öffnen **Sie Aktivitätsüberwachung,** und analysieren Sie, welche Anwendungen die Ressourcen auf Ihrem System verwenden. Typische Beispiele sind Softwareupdater und Compiler.
 

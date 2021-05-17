@@ -1,7 +1,7 @@
 ---
-title: Vorbereiten Ihrer Microsoft 365 Defender-Testumgebung
-description: Vorbereiten der Abmelde-, Zeitachsen, Umgebungsüberlegungen und der Einführungsreihenfolge beim Einrichten Ihrer Microsoft 365 Defender-Testumgebung oder Pilotumgebung
-keywords: Microsoft 365 Defender-Testvorbereitung, Microsoft 365 Defender-Pilotvorbereitung, Vorbereitung für die Ausführung eines Microsoft 365 Defender-Pilotprojekts, Ausführen eines Microsoft 365 Defender-Pilotprojekts, Bereitstellen, Vorbereiten, Interessengruppen, Zeitachse, Umgebung, Endpunkt, Server, Verwaltung, Einführung
+title: Vorbereiten der Microsoft 365 Der Testumgebung von Defender
+description: Vorbereiten der Abmelde-, Zeitachsen- und Umgebungsüberlegungen sowie der Einführungsreihenfolge beim Einrichten ihrer Microsoft 365 Testumgebung oder Pilotumgebung für Defender
+keywords: Microsoft 365 Defender-Testvorbereitung, Microsoft 365 Defender-Pilotvorbereitung, Vorbereitung für die Ausführung eines Microsoft 365 Defender-Pilotprojekts, Ausführen eines Pilotprojekts Microsoft 365 Defender-Projekt, Bereitstellen, Vorbereiten, Interessengruppen, Zeitachse, Umgebung, Endpunkt, Server, Verwaltung, Einführung
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -26,7 +26,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935617"
 ---
-# <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Vorbereiten Ihrer Microsoft 365 Defender-Testumgebung oder Pilotumgebung
+# <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Vorbereiten ihrer Microsoft 365 Testumgebung oder Pilotumgebung für Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "51935617"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Das Erstellen einer Microsoft 365 Defender-Testumgebung oder Pilotumgebung und deren Bereitstellung ist ein drei phasenweiser Prozess:
+Das Erstellen Microsoft 365 einer Defender-Testumgebung oder Pilotumgebung und deren Bereitstellung ist ein drei phasenweiser Prozess:
 
 |![Phase 1: Vorbereiten](../../media/phase-diagrams/prepare.png)<br/>Phase 1: Vorbereiten |[![Phase 2: Einrichten](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[Phase 2: Einrichten](setup-m365deval.md) |[![Phase 3: Onboarding](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[Phase 3: Onboarding](config-m365d-eval.md) | [![Zurück zum Pilotprojekt](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Zurück zum Testspielbuch](m365d-pilot.md) |
 |--|--|--|--|
@@ -43,10 +43,10 @@ Das Erstellen einer Microsoft 365 Defender-Testumgebung oder Pilotumgebung und d
 Sie sind derzeit in der Vorbereitungsphase.
 
 
-Die Vorbereitung ist der Schlüssel zu jeder erfolgreichen Bereitstellung. Dieser Abschnitt führt Sie durch das, was Sie bei der Vorbereitung der Erstellung einer Testumgebung oder Pilotumgebung für Ihre Microsoft 365 Defender-Bereitstellung berücksichtigen müssen.
+Die Vorbereitung ist der Schlüssel zu jeder erfolgreichen Bereitstellung. Dieser Abschnitt führt Sie durch das, was Sie bei der Vorbereitung auf die Erstellung einer Testumgebung oder Pilotumgebung für Ihre Microsoft 365 sollten.
 
 ## <a name="prerequisites"></a>Voraussetzungen
-Erfahren Sie mehr über die Lizenzierungs-, Hardware- und Softwareanforderungen sowie andere Konfigurationseinstellungen für die Bereitstellung und Verwendung von Microsoft 365 Defender. Siehe die Mindestanforderungen für [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/prerequisites), [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), Microsoft Defender für Office [365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), [Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), Microsoft Cloud App [Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
+Erfahren Sie mehr über die Lizenzierungs-, Hardware- und Softwareanforderungen sowie andere Konfigurationseinstellungen für die Bereitstellung und Verwendung Microsoft 365 Defender. Siehe die Mindestanforderungen für [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/prerequisites), [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/minimum-requirements), Microsoft Defender [for Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description), Microsoft Defender [for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites), [Microsoft Cloud App Security](https://docs.microsoft.com/azure-advanced-threat-protection/atp-prerequisites).
 
 ## <a name="stakeholders-and-sign-off"></a>Interessengruppen und Abmelden
 Identifizieren Sie alle Interessengruppen, die an dem Projekt beteiligt sind und die möglicherweise abmelden, überprüfen oder auf dem Laufenden bleiben müssen, unabhängig davon, ob es sich um eine Evaluierung oder das Ausführen eines Pilotprojekts handelt.
@@ -70,38 +70,38 @@ Fügen Sie der tabelle unten aufgeführten Projektbeteiligten entsprechend Ihrer
 | Geben Sie Namen und E-Mail ein. | **Workplace Architect** Ein Vertreter des IT-Teams, der für die Definition der Ausrichtung dieser Änderung an die zentrale Arbeitsplatzarchitektur *in der Organisation zuständig ist.*                             | R      |
 | Geben Sie Namen und E-Mail ein. | **Security Analyst** Ein Vertreter des CDOC-Teams, der Feedback zu den Erkennungsfunktionen, der Benutzererfahrung und der allgemeinen Nützlichkeit dieser Änderung aus Sicht des *Sicherheitsbetriebs geben kann.* | I      |
 
-## <a name="prepare-your-azure-active-directory"></a>Vorbereiten Ihres Azure Active Directory
-Überspringen Sie diesen Schritt, wenn Sie die Synchronisierung zwischen Active Directory und Azure Active Directory bereits lokal aktiviert haben. Überprüfen Sie die vorhandene Dokumentation zu bewährten Methoden aus Azure Active Directory. Die folgenden Schritte sind für die Auswertung oder Ausführung eines Microsoft 365 Defender-Pilotprojekts optimiert.
+## <a name="prepare-your-azure-active-directory"></a>Vorbereiten der Azure Active Directory
+Überspringen Sie diesen Schritt, wenn Sie die Synchronisierung zwischen Active Directory und Azure Active Directory aktiviert haben. Überprüfen Sie die vorhandene Dokumentation zu bewährten Methoden aus Azure Active Directory. Die folgenden Schritte sind für die Auswertung oder Ausführung eines Pilotprojekts Microsoft 365 Defender-Projekts optimiert.
 
-1. Wechseln Sie zum [Azure Active Directory-Portal](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade) > **Azure AD Connect**. 
-![Abbildung der Azure Active Directory-Portalseite](../../media/mtp-eval-1.png) <br> 
+1. Wechseln Sie zum [Azure Active Directory](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade) portal > **Azure AD Verbinden**. 
+![Abbildung der Azure Active Directory Portalseite](../../media/mtp-eval-1.png) <br> 
 
-2. Klicken **Sie auf Herunterladen** von Microsoft Azure Active Directory **Connect,** und übertragen Sie es an Ihren Domänencontroller.
-![Abbildung der Azure Active Directoru Connect-Downloadseite](../../media/mtp-eval-2.png) <br>
+2. Klicken **Sie auf** Download aus **Microsoft Azure Active Directory Verbinden,** und übertragen Sie es an Ihren Domänencontroller.
+![Abbildung der Azure Active Directoru Verbinden Downloadseite](../../media/mtp-eval-2.png) <br>
 
-3. Folgen Sie auf dem Domänencontroller dem Azure Active Directory Connect-Assistenten. Lesen Sie die Lizenzbedingungen und den Datenschutzhinweise, und aktivieren Sie das Kontrollkästchen, wenn Sie zustimmen. Klicken Sie auf **Weiter**.
-![Bild der Azure AD Connect-Willkommensseite](../../media/mtp-eval-3.png) <br>
+3. Folgen Sie auf dem Domänencontroller dem Azure Active Directory Verbinden Assistenten. Lesen Sie die Lizenzbedingungen und den Datenschutzhinweise, und aktivieren Sie das Kontrollkästchen, wenn Sie zustimmen. Klicken Sie auf **Weiter**.
+![Bild von Azure AD Verbinden Willkommensseite](../../media/mtp-eval-3.png) <br>
 
-4. Navigieren Sie zu **Express-Einstellungen**.
-![Bild der Seite "Express-Einstellungen"](../../media/mtp-eval-4.png) <br>
+4. Navigieren Sie zu **Express Einstellungen**.
+![Bild der Seite "Express Einstellungen"](../../media/mtp-eval-4.png) <br>
 
 5. Geben Sie Ihre globalen Administratoranmeldeinformationen ein. Klicken Sie auf **Weiter**.
-![Abbildung der Seite Herstellen einer Verbindung mit Azure AD, auf der Sie Ihre globalen Administratoranmeldeinformationen eingeben sollten](../../media/mtp-eval-5.png) <br>
+![Abbildung der Verbinden azure AD-Seite, auf der Sie Ihre globalen Administratoranmeldeinformationen eingeben sollten](../../media/mtp-eval-5.png) <br>
 
 6. Geben Sie Ihre Active Directory Domain Services-Unternehmensadministratoranmeldeinformationen ein. Klicken Sie auf **Weiter**.
-![Abbildung der Ad DS-Seite verbinden, auf der Sie Ihre Anmeldeinformationen eingeben sollten](../../media/mtp-eval-6.png) <br>
+![Abbildung der Verbinden zur AD DS-Seite, auf der Sie Ihre Anmeldeinformationen eingeben sollten](../../media/mtp-eval-6.png) <br>
 
 7. Klicken **Sie auf Installieren,** um die Konfiguration zu bestätigen.
 ![Abbildung der Konfigurationsbestätigungsseite](../../media/mtp-eval-7.png) <br>
 
-8. Herzlichen Glückwunsch, Sie haben Azure Active Directory Connect erfolgreich konfiguriert.
-![Abbildung einer erfolgreich konfigurierten Azure Active Directory Connect-Seite](../../media/mtp-eval-8.png) <br>
+8. Herzlichen Glückwunsch, Sie haben die Azure Active Directory Verbinden.
+![Abbildung einer erfolgreich konfigurierten Azure Active Directory Verbinden Seite](../../media/mtp-eval-8.png) <br>
 
 Sie können nun [Benutzer und Gruppen zu Active Directory hinzufügen](/azure-advanced-threat-protection/atp-playbook-setup-lab#bkmk_hydrate) und eine [SAM-R-Richtlinie konfigurieren.](/azure-advanced-threat-protection/atp-playbook-setup-lab#configure-sam-r-capabilities-from-contosodc)  
 
 
 ## <a name="configuration-order"></a>Konfigurationsreihenfolge
-In der folgenden Tabelle ist die Reihenfolge aufgeführt, die Microsoft zum Konfigurieren der Microsoft 365 Defender-Komponenten für Ihre Testumgebungs- oder Pilotumgebungsbereitstellung empfiehlt.
+In der folgenden Tabelle ist die Reihenfolge aufgeführt, die Microsoft für die Konfiguration der Microsoft 365 Defender-Komponenten für Ihre Testumgebungs- oder Pilotumgebungsbereitstellung empfiehlt.
 
 | Komponente                               | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Rangfolge der Konfigurationsreihenfolge |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
@@ -111,5 +111,5 @@ In der folgenden Tabelle ist die Reihenfolge aufgeführt, die Microsoft zum Konf
 |Microsoft Defender für Endpunkt | Die Microsoft Defender für Endpunkt-Funktionen für die Endpunkterkennung und Beantwortung bieten erweiterte Angriffserkennungen, die nahezu in Echtzeit umgesetzt werden können. Sicherheitsanalysten können Benachrichtigungen effektiv priorisieren, Einblick in den gesamten Umfang einer Verletzung erhalten und Aktionen ergreifen, um Bedrohungen zu beheben. <br> [Weitere Informationen.](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>Nächster Schritt
-|![Phase 2: Setup](../../media/setup.png) <br>[Phase 2: Setup](setup-m365deval.md) | Einrichten Ihrer Microsoft 365 Defender-Testumgebung oder Pilotumgebung
+|![Phase 2: Setup](../../media/setup.png) <br>[Phase 2: Setup](setup-m365deval.md) | Einrichten ihrer Microsoft 365 Testumgebung oder Pilotumgebung für Defender
 |:-------|:-----|

@@ -61,7 +61,7 @@ Kunden, die regelmäßig mehrere Abfragen ausführen, sollten den Verbrauch nach
 - **Analysieren, nicht extrahieren –** Verwenden Sie [](/azure/data-explorer/kusto/query/parseoperator) nach Möglichkeit den Parse-Operator oder eine Analysefunktion wie [parse_json()](/azure/data-explorer/kusto/query/parsejsonfunction). Vermeiden Sie `matches regex` den Zeichenfolgenoperator oder die [extract()-Funktion,](/azure/data-explorer/kusto/query/extractfunction)die beide regulären Ausdruck verwenden. Reservieren Sie die Verwendung regulärer Ausdrücke für komplexere Szenarien. [Weitere Informationen zu Analysefunktionen](#parse-strings)
 - **Filtern von Tabellen ohne Ausdrücke**– Filtern Sie nicht nach einer berechneten Spalte, wenn Sie nach einer Tabellenspalte filtern können.
 - **Keine 3-Zeichen-Begriffe**– Vermeiden Sie das Vergleichen oder Filtern mit Begriffen mit drei oder weniger Zeichen. Diese Begriffe werden nicht indiziert, und für deren Übereinstimmung sind mehr Ressourcen erforderlich.
-- **Projekt selektiv –** Machen Sie Ihre Ergebnisse leichter zu verstehen, indem Sie nur die benötigten Spalten projiziert. Das Projiziert bestimmter Spalten vor dem Ausführen von [Verknüpfungsvorgängen](/azure/data-explorer/kusto/query/joinoperator) oder ähnlichen Vorgängen hilft auch, die Leistung zu verbessern.
+- **Project selektiv –** Machen Sie Ihre Ergebnisse einfacher, indem Sie nur die benötigten Spalten projiziert. Das Projiziert bestimmter Spalten vor dem Ausführen von [Verknüpfungsvorgängen](/azure/data-explorer/kusto/query/joinoperator) oder ähnlichen Vorgängen hilft auch, die Leistung zu verbessern.
 
 ## <a name="optimize-the-join-operator"></a>Optimieren des `join` Operators
 Der [Verknüpfungsoperator](/azure/data-explorer/kusto/query/joinoperator) führt Zeilen aus zwei Tabellen durch übereinstimmende Werte in angegebenen Spalten zusammen. Wenden Sie diese Tipps an, um Abfragen zu optimieren, die diesen Operator verwenden.
@@ -254,7 +254,7 @@ SHA256,ThreatTypes,DetectionMethods
 ### <a name="parse-strings"></a>Analysieren von Zeichenfolgen
 Es gibt verschiedene Funktionen, mit deren Hilfe Sie Zeichenfolgen effizient verarbeiten können, die eine Analyse oder Konvertierung benötigen. 
 
-| Zeichenfolge | Funktion | Verwendungsbeispiel |
+| String | Funktion | Verwendungsbeispiel |
 |--|--|--|
 | Befehlszeilen | [parse_command_line()](/azure/data-explorer/kusto/query/parse-command-line) | Extrahieren Sie den Befehl und alle Argumente. | 
 | Paths | [parse_path()](/azure/data-explorer/kusto/query/parsepathfunction) | Extrahieren Sie die Abschnitte eines Datei- oder Ordnerpfads. |
@@ -265,7 +265,7 @@ Es gibt verschiedene Funktionen, mit deren Hilfe Sie Zeichenfolgen effizient ver
 Informationen zu allen unterstützten Analysefunktionen finden Sie [unter Kusto string functions](/azure/data-explorer/kusto/query/scalarfunctions#string-functions). 
 
 >[!NOTE]
->Einige Tabellen in diesem Artikel sind möglicherweise nicht in Microsoft Defender for Endpoint verfügbar. [Aktivieren Sie Microsoft 365 Defender,](m365d-enable.md) um bedrohungen mithilfe von weiteren Datenquellen nach Bedrohungen zu fahnen. Sie können Ihre erweiterten Suchworkflows von Microsoft Defender for Endpoint zu Microsoft 365 Defender verschieben, indem Sie die Schritte unter [Migrate advanced hunting queries from Microsoft Defender for Endpoint ausführen.](advanced-hunting-migrate-from-mde.md)
+>Einige Tabellen in diesem Artikel sind möglicherweise nicht in Microsoft Defender for Endpoint verfügbar. [Aktivieren Sie Microsoft 365 Defender,](m365d-enable.md) um bedrohungen mithilfe von weiteren Datenquellen nach Bedrohungen zu fahnen. Sie können Ihre workflows für die erweiterte Suche von Microsoft Defender for Endpoint zu Microsoft 365 Defender verschieben, indem Sie die Schritte unter [Migrate advanced hunting queries from Microsoft Defender for Endpoint ausführen.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Kusto-Dokumentation zur Abfragesprache](/azure/data-explorer/kusto/query/)

@@ -1,6 +1,6 @@
 ---
 title: Migrationsleitfäden zum Wechseln zu Microsoft Defender for Endpoint
-description: Erfahren Sie, wie Sie den Wechsel von einer Nicht-Microsoft 365 Defender-Lösung zu Microsoft Defender for Endpoint
+description: Erfahren Sie, wie Sie den Wechsel von einer nicht Microsoft 365 Defender-Lösung zu Microsoft Defender for Endpoint
 search.appverid: MET150
 author: denisebmsft
 ms.author: deniseb
@@ -24,7 +24,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934441"
 ---
-# <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>Wechseln zu Microsoft Defender for Endpoint und Microsoft Defender Antivirus
+# <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>Wechseln Sie zu Microsoft Defender for Endpoint und Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,12 +36,12 @@ ms.locfileid: "51934441"
 
 ## <a name="migration-guides"></a>Migrationsleitfäden
 
-Wenn Sie erwägen, von einer Nicht-Microsoft 365 Defender-Lösung zu Microsoft Defender for Endpoint mit Microsoft Defender Antivirus zu wechseln, lesen Sie unsere Migrationsanleitungen. Wählen Sie das Szenario aus, das am besten den Ort ihres Bereitstellungsprozesses darstellt, und sehen Sie sich die Anleitungen an.
+Wenn Sie erwägen, von einer nicht Microsoft 365 Defender-Lösung zu Microsoft Defender for Endpoint mit Microsoft Defender Antivirus wechseln, lesen Sie unsere Migrationsanleitungen. Wählen Sie das Szenario aus, das am besten den Ort ihres Bereitstellungsprozesses darstellt, und sehen Sie sich die Anleitungen an.
 
 |Szenario |Richtlinien |
 |:--|:--|
-|Sie haben noch keine Endpunktschutzlösung, und Sie möchten mehr über die Funktionsweise von Microsoft Defender for Endpoint & Microsoft Defender Antivirus wissen.  |[Microsoft Defender for Endpoint-Evaluierungslabor](evaluation-lab.md)   |
-|Sie verfügen über Microsoft Defender for Endpoint & Microsoft Defender Antivirus und benötigen Hilfe bei der Einrichtung und Konfiguration.  |[Bereitstellungshandbuch für Microsoft Defender for Endpoint](deployment-phases.md)  |
+|Sie verfügen noch nicht über eine Endpunktschutzlösung, und Sie möchten mehr über die Funktionsweise von Microsoft Defender for Endpoint & Microsoft Defender Antivirus erfahren.  |[Microsoft Defender for Endpoint-Evaluierungslabor](evaluation-lab.md)   |
+|Sie verfügen über Microsoft Defender for Endpoint & Microsoft Defender Antivirus und benötigen Hilfe beim Einrichten und Konfigurieren von allem.  |[Bereitstellungshandbuch für Microsoft Defender for Endpoint](deployment-phases.md)  |
 |Sie planen die Migration von McAfee Endpoint Security (McAfee) zu Microsoft Defender for Endpoint & Microsoft Defender Antivirus. |[Wechsel von McAfee zu Microsoft Defender für Endpunkt](mcafee-to-microsoft-defender-migration.md) |
 |Sie planen die Migration von Symantec Endpoint Protection (Symantec) zu Microsoft Defender for Endpoint & Microsoft Defender Antivirus. |[Wechsel von Symantec zu Microsoft Defender für Endpunkt](symantec-to-microsoft-defender-endpoint-migration.md) |
 |Sie planen die Migration von einer Nicht-Microsoft-Lösung für den Endpunktschutz (außer McAfee oder Symantec) zu Microsoft Defender for Endpoint & Microsoft Defender Antivirus. |[Wechseln zu Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md)   |

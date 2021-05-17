@@ -1,7 +1,7 @@
 ---
 title: Threat Protection (Windows 10)
 description: Microsoft Defender für Endpunkt ist eine einheitliche Plattform für präventiven Schutz, die Erkennung nach einem Angriff, die automatisierte Untersuchung und Reaktion.
-keywords: Bedrohungsschutz, Microsoft Defender for Endpoint, Reduzierung der Angriffsfläche, Schutz der nächsten Generation, Endpunkterkennung und -reaktion, automatisierte Untersuchung und Reaktion, Microsoft Threat Experts, Microsoft Secure Score for Devices, Advanced Hunting, Cyber Threat Hunting, Web Threat Protection
+keywords: Bedrohungsschutz, Microsoft Defender for Endpoint, Reduzierung der Angriffsfläche, Schutz der nächsten Generation, EDR, automatisierte Untersuchung und Reaktion, Microsoft Threat Experts, Microsoft Secure Score für Geräte, erweiterte Suche, Suche nach Cyberbedrohungen, Schutz vor Webbedrohungen
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -27,15 +27,15 @@ ms.locfileid: "51934933"
 > [!TIP]
 > Ermöglichen Sie Ihren Benutzern den problemlosen Zugriff auf Clouddienste und lokale Anwendungen und ermöglichen Sie moderne Verwaltungsfunktionen für alle Geräte. Weitere Informationen finden Sie unter [Secure your remote workforce](https://docs.microsoft.com/enterprise-mobility-security/remote-work/). 
 
-<center><h2>Microsoft Defender für Endpunkt</center></h2>
+<center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
 <tr>
-<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>Sicherheitsrisikoverwaltung & Bedrohungen</b></center></a></td>
+<td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="threat and vulnerability icon"> <br><b>Bedrohungs & Sicherheitsrisikomanagement</b></center></a></td>
 <td><a href="#asr"><center><img src="images/asr-icon.png" alt="attack surface reduction icon"> <br><b>Reduzierung der Angriffsfläche</b></center></a></td>
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="next generation protection icon"><br> <b>Schutz der nächsten Generation</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="endpoint detection and response icon"><br> <b>Endpunkterkennung und -antwort</b></a></center></td>
 <td><center><a href="#ai"><img src="images/air-icon.png" alt="automated investigation and remediation icon"><br> <b>Automatisierte Untersuchung und Behebung</b></a></center></td>
-<td><center><a href="#mte"><img src="images/mte-icon.png" alt="microsoft threat experts icon"><br> <b>Microsoft Threat Experts</b></a></center></td>
+<td><center><a href="#mte"><img src="images/mte-icon.png" alt="microsoft threat experts icon"><br> <b>Microsoft-Bedrohungsexperten</b></a></center></td>
 </tr>
 <tr>
 <td colspan="7">
@@ -52,10 +52,10 @@ ms.locfileid: "51934933"
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
 
-**[Sicherheitsrisikoverwaltung & Bedrohungen](next-gen-threat-and-vuln-mgt.md)**<br>
+**[Bedrohungs & Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)**<br>
 Diese integrierte Funktion verwendet einen spielveränderungsbasierten Ansatz für die Ermittlung, Priorisierung und Behebung von Endpunktrisiken und Fehlkonfigurationen.
 
-- [Übersicht & Zur Verwaltung von Sicherheitslücken](next-gen-threat-and-vuln-mgt.md)
+- [Übersicht & Sicherheitsrisikomanagement Bedrohungen](next-gen-threat-and-vuln-mgt.md)
 - [Erste Schritte](tvm-prerequisites.md)
 - [Zugreifen auf Ihre Sicherheitslage](tvm-dashboard-insights.md)
 - [Verbessern Sie Ihre Sicherheitslage und verringern Sie das Risiko](tvm-security-recommendation.md)
@@ -112,11 +112,11 @@ Neben der schnellen Reaktion auf erweiterte Angriffe bietet Microsoft Defender f
 <a name="mte"></a>
 
 **[Microsoft-Bedrohungsexperten](microsoft-threat-experts.md)**<br>
-Der neue Dienst für die Suche nach verwalteten Bedrohungen von Microsoft Defender for Endpoint bietet proaktive Suche, Priorisierung sowie zusätzliche Kontexte und Einblicke. Microsoft Threat Experts unterstützt Security Operation Center (SOCs) außerdem, Bedrohungen schnell und präzise zu identifizieren und darauf zu reagieren.
+Der neue Dienst für die Suche nach verwalteten Bedrohungen von Microsoft Defender for Endpoint bietet proaktive Suche, Priorisierung sowie zusätzliche Kontexte und Einblicke. Microsoft-Bedrohungsexperten security Operation Centers (SOCs) können Bedrohungen schnell und präzise identifizieren und darauf reagieren.
 
 - [Benachrichtigung über gezielte Angriffe](microsoft-threat-experts.md)
 - [Experten bei Bedarf](microsoft-threat-experts.md)
-- [Konfigurieren Ihres verwalteten Microsoft 365 Defender-Suchediensts](configure-microsoft-threat-experts.md)
+- [Konfigurieren des verwalteten Microsoft 365 von Defender](configure-microsoft-threat-experts.md)
 
 <a name="apis"></a>
 

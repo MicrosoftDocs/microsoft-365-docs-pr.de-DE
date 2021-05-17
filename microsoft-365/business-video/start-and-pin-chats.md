@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Chats in Microsoft Teams starten und anheften.
+description: Informationen zum Starten und Anheften von Chats in Microsoft Teams.
 ms.openlocfilehash: 8755abfa3e961ef5408ab612f6712dbeef948074
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT

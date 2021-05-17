@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender for Endpoint Detections-API-Felder
-description: Verstehen der Zuordnung der Erkennungs-API-Felder zu den Werten im Microsoft Defender Security Center
+description: Verstehen, wie die Erkennungs-API-Felder den Werten in Microsoft Defender Security Center
 keywords: Erkennungen, Erkennungsfelder, Felder, API, Felder, Pullerkennungen, Rest-API, Anforderung, Antwort
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -33,11 +33,11 @@ ms.locfileid: "51933637"
 
 >Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-apiportalmapping-abovefoldlink)
 
-Erfahren Sie, welche Datenfelder im Rahmen der Erkennungs-API verfügbar gemacht werden und wie sie Microsoft Defender Security Center zuordnungen.
+Erfahren Sie, welche Datenfelder im Rahmen der Erkennungs-API verfügbar gemacht werden und wie sie Microsoft Defender Security Center.
 
 >[!Note]
 >- [Defender for Endpoint Alert](alerts.md) besteht aus einer oder mehreren Erkennungen.
->- **Die Microsoft Defender ATP-Erkennung** besteht aus dem verdächtigen Ereignis, das auf dem Gerät aufgetreten ist, und den **zugehörigen Warnungsdetails.**
+>- **Microsoft Defender ATP Die Erkennung** besteht aus dem verdächtigen Ereignis, das auf dem Gerät aufgetreten ist, und den **zugehörigen Warnungsdetails.**
 >- Die Microsoft Defender for Endpoint Alert-API ist die neueste API für den Warnungsverbrauch und enthält eine detaillierte Liste der zugehörigen Nachweise für jede Warnung. Weitere Informationen finden Sie unter [Warnungsmethoden und -eigenschaften und](alerts.md) [Warnungen auflisten.](get-alerts.md)
 
 ## <a name="detections-api-fields-and-portal-mapping"></a>Erkennungen von API-Feldern und Portalzuordnung
@@ -60,7 +60,7 @@ Feldnummern entsprechen den Zahlen in den folgenden Bildern.
 > | 7                 | FilePath                  | filePath            | C:\Windows\System32\Robocopy.exe                                                   | Verfügbar für Erkennungen, die einer Datei oder einem Prozess zugeordnet sind.                                                                                                                     |
 > | 8                 | UserDomain                | sourceNtDomain      | CONTOSO                                                                            | Die Domäne des Benutzerkontexts, in dem die Aktivität ausgeführt wird und für verhaltensbasierte Erkennungen von Defender for Endpoint verfügbar ist.                                                           |
 > | 9                 | UserName                  | sourceUserName      | liz.bean                                                                           | Der Benutzerkontext, in dem die Aktivität ausgeführt wird, verfügbar für verhaltensbasierte Erkennungen von Defender for Endpoint.                                                                           |
-> | 10                 | Sha1                      | fileHash            | 3da065e07b990034e9db7842167f70b63aa5329                                           | Verfügbar für Erkennungen, die einer Datei oder einem Prozess zugeordnet sind.                                                                                                                      |
+> | 10               | Sha1                      | fileHash            | 3da065e07b990034e9db7842167f70b63aa5329                                           | Verfügbar für Erkennungen, die einer Datei oder einem Prozess zugeordnet sind.                                                                                                                      |
 > | 11               | Sha256                    | deviceCustomString6 | ebf54f745dc81e1958f75e4ca91dd0ab989fc9787bb6b0bf993e2f5                   | Verfügbar für Microsoft Defender AV-Erkennungen.                                                                                                                                    |
 > | 12                | Md5                       | deviceCustomString5 | db979c04a99b96d370988325bb5a8b21                                                   | Verfügbar für Microsoft Defender AV-Erkennungen.                                                                                                                                    |
 > | 13               | ThreatName                | deviceCustomString1  | HackTool:Win32/Mikatz!dha                                                         | Verfügbar für Microsoft Defender AV-Erkennungen.                                                                                                                                    |
@@ -74,7 +74,7 @@ Feldnummern entsprechen den Zahlen in den folgenden Bildern.
 > |  21               | MachineDomain             | sourceDnsDomain     | contoso.com                                                                        | Domänenname für AAD-beigetretene Geräte nicht relevant. Wert, der für jede Erkennung verfügbar ist.                                                                                           |
 > | 22               | Akteur                     | deviceCustomString4 | BORON                                                                                   | Verfügbar für Warnungen im Zusammenhang mit einer bekannten Akteurgruppe.                                                                                                                         |
 > | 21+5             | ComputerDnsName           | Keine Zuordnung          | liz-bean.contoso.com                                                               | Der vollqualifizierte Domänenname des Geräts. Wert, der für jede Erkennung verfügbar ist.                                                                                                    |
-> |                  | LogOnUsers                | sourceUserId        | contoso\liz-bean;   contoso\jay-hardee                                             | Die Domäne und der Benutzer der interaktiven Anmeldebenutzer zum Zeitpunkt des Ereignisses. Hinweis: Für Geräte unter Windows 10, Version 1607, sind die Domäneninformationen nicht verfügbar. |
+> |                  | LogOnUsers                | sourceUserId        | contoso\liz-bean;   contoso\jay-hardee                                             | Die Domäne und der Benutzer der interaktiven Anmeldebenutzer zum Zeitpunkt des Ereignisses. Hinweis: Für Geräte auf Windows 10 Version 1607 sind die Domäneninformationen nicht verfügbar. |
 > |                  | InternalIPv4List          | Keine Zuordnung          | 192.168.1.7, 10.1.14.1                                                             | Liste der internen IPV4-IPs für aktive Netzwerkschnittstellen.                                                                                                                                                                               |
 > |                  | InternalIPv6List          | Keine Zuordnung          | fd30:0000:0000:0001:ff4e:003e:0009:000e, FE80:CD00:0000:0CDE:1257:0000:211E:729C | Liste der internen IPV6-IPs für aktive Netzwerkschnittstellen.                                                                                                                                                                               |
 | | LinkToMTP | Keine Zuordnung | `https://security.microsoft.com/alert/da637370718981685665_16349121` | Wert, der für jede Erkennung verfügbar ist.

@@ -37,6 +37,6 @@ Ungarisch: Mon-Fri 8:00-18:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefon Nummer: +36 1 778 9292
+Alternative Telefonnummer: +36 1 778 9292
 
 Es gelten die Ortstarife.

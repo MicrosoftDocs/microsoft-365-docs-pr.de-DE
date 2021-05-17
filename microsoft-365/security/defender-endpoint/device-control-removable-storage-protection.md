@@ -27,7 +27,7 @@ ms.locfileid: "52300208"
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Microsoft Defender for Endpoint Device Control Storage Protection verhindert, dass Benutzer oder Computer oder beide nicht autorisierte Wechselmedien verwenden.
+Microsoft Defender for Endpoint Device Control Removable Storage Protection verhindert, dass Benutzer oder Computer nicht autorisierte Wechselmedien verwenden.
 
 **Microsoft Defender for Endpoint Removable Storage Protection**
 
@@ -37,7 +37,7 @@ Microsoft Defender for Endpoint Device Control Storage Protection verhindert, da
 |Geräteinstallation    |  Verhindern der Installation mit oder ohne Ausschluss – Zulassen bestimmter Geräte basierend auf verschiedenen Eigenschaften; Weitere Informationen finden Sie im Abschnitt [Geräteeigenschaften](#device-properties) unten.        |    Funktioniert auf dem Computer: Unterschiedliche Benutzer, die sich beim gleichen Computer anmelden, werden durch dieselbe Richtlinie eingeschränkt. Weitere Informationen finden Sie unter [Steuern von USB-Geräten und](control-usb-devices-using-intune.md)anderen Wechselmedien mithilfe von Microsoft Defender for Endpoint .     |
 |Zugriffssteuerung für Wechselmedien      | (1) Überwachung des Lese-, Schreib- oder Ausführungszugriffs auf Wechseldatenträger basierend auf verschiedenen Geräteeigenschaften, mit oder ohne Ausnahme. Weitere Informationen finden Sie im Abschnitt [Geräteeigenschaften](#device-properties) unten. (2) Verhindern des Lese-, Schreib- oder Ausführungszugriffs mit oder ohne Ausschluss – Bestimmte Geräte basierend auf verschiedenen Geräteeigenschaften zulassen; Weitere Informationen zu den Geräteeigenschaften finden Sie im Abschnitt [Geräteeigenschaften](#device-properties) unten.     |     Funktioniert auf einem Computer oder einem Benutzer oder auf beiden: Nur bestimmten Personen, die Lese-/Schreib-/Ausführungszugriff auf bestimmte Wechseldatenträger auf einem bestimmten Computer ausführen, erlauben; Informationen zum Feature in Windows finden Sie unter [Wechselmedienzugriffssteuerung](device-control-removable-storage-access-control.md); Informationen zum Feature in Mac finden Sie [unter Gerätesteuerung für macOS](mac-device-control-overview.md).     |
 |Endpunkt-DLP-Wechseldatenträger      |    Überwachen oder warnen oder verhindern, dass ein Benutzer ein Element oder Informationen auf Wechselmedien oder USB-Geräte kopiert.     |  Weitere Informationen finden Sie unter [Microsoft Endpoint DLP](/compliance/endpoint-dlp-learn-about.md).       |
-|BitLocker    |     Daten blockieren, die auf Wechseldatenträger geschrieben werden sollen, die nicht BitLocker geschützt sind: Blockieren des Zugriffs auf Wechseldatenträger, es sei denn, sie wurden auf einem Computer verschlüsselt, der sich im Besitz Ihrer Organisation befindet.    |   Weitere Informationen finden Sie unter BitLocker – [Wechseldatenträger Einstellungen](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings#bitlocker---removable-drive-settings.md).      |
+|BitLocker    |     Blockieren von Daten, die auf Wechseldatenträger geschrieben werden sollen, die nicht bitLocker geschützt sind: Blockieren sie den Zugriff auf Wechseldatenträger, es sei denn, sie wurden auf einem Computer verschlüsselt, der sich im Besitz Ihrer Organisation befindet.    |   Weitere Informationen finden Sie unter BitLocker – [Wechseldatenträgereinstellungen](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings#bitlocker---removable-drive-settings.md).      |
 
 ## <a name="device-properties"></a>Geräteeigenschaften
 
@@ -57,4 +57,4 @@ Mit Microsoft Defender for Endpoint Device Control Removable Storage Protection 
 
 ## <a name="related-topic"></a>Verwandtes Thema
 
-- [Microsoft Defender for Endpoint Device Control Wechseldatenträger Storage Zugriffssteuerung](device-control-removable-storage-access-control.md)
+- [Microsoft Defender for Endpoint Device Control Wechseldatenträgerzugriffssteuerung](device-control-removable-storage-access-control.md)

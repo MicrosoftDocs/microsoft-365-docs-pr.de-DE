@@ -1,7 +1,7 @@
 ---
-title: Sicherheitsempfehlungen nach Bedrohungs- und Sicherheitsrisikoverwaltung
-description: Erhalten Sie handlungsfähige Sicherheitsempfehlungen, die durch Bedrohung, wahrscheinliche Verletzung und Nutzen im Bedrohungs- und Sicherheitsrisikomanagement priorisiert werden.
-keywords: Bedrohungs- und Sicherheitsrisikoverwaltung, Microsoft Defender for Endpoint tvm-Sicherheitsempfehlung, Cybersicherheitsempfehlung, Empfehlungen zur Sicherheit mit Aktionen
+title: Sicherheitsempfehlungen von Bedrohungs- und Sicherheitsrisikomanagement
+description: Erhalten Sie handlungsfähige Sicherheitsempfehlungen, die durch Bedrohung, Wahrscheinlichkeit, dass sie verletzt werden, und Wert in der Bedrohungs- und Sicherheitsrisikomanagement.
+keywords: Bedrohungs- und Sicherheitsrisikomanagement, Microsoft Defender for Endpoint tvm-Sicherheitsempfehlung, Cybersicherheitsempfehlung, Empfehlung zur Sicherheit mit Aktionen
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,21 +25,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933733"
 ---
-# <a name="security-recommendations---threat-and-vulnerability-management"></a>Sicherheitsempfehlungen – Bedrohungs- und Sicherheitsrisikoverwaltung
+# <a name="security-recommendations---threat-and-vulnerability-management"></a>Sicherheitsempfehlungen – Bedrohungs- und Sicherheitsrisikomanagement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Bedrohungs- und Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md)
+- [Bedrohung und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Cybersicherheitsschwächen, die in Ihrer Organisation identifiziert werden, werden aktionsrelevanten Sicherheitsempfehlungen zugeordnet und durch ihre Auswirkungen priorisiert. Mit priorisierten Empfehlungen können Sie die Zeit zur Behebung oder Behebung von Sicherheitsrisiken und zur Verbesserung der Compliance kürzen.
 
-Jede Sicherheitsempfehlung enthält Maßnahmen zur Behebung. Zur Unterstützung der Aufgabenverwaltung kann die Empfehlung auch mit Microsoft Intune und Microsoft Endpoint Configuration Manager gesendet werden. Wenn sich die Bedrohungslandschaft ändert, ändert sich auch die Empfehlung, da sie kontinuierlich Informationen aus Ihrer Umgebung sammelt.
+Jede Sicherheitsempfehlung enthält Maßnahmen zur Behebung. Zur Unterstützung der Aufgabenverwaltung kann die Empfehlung auch mithilfe von Microsoft Intune und Microsoft Endpoint Configuration Manager. Wenn sich die Bedrohungslandschaft ändert, ändert sich auch die Empfehlung, da sie kontinuierlich Informationen aus Ihrer Umgebung sammelt.
 
 >[!TIP]
 >Informationen zu E-Mails zu neuen Sicherheitsrisikoereignissen finden Sie unter [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
@@ -58,8 +58,8 @@ Jedes Gerät in der Organisation wird basierend auf drei wichtigen Faktoren erzi
 
 Greifen Sie auf die Seite Sicherheitsempfehlungen auf verschiedene Arten zu:
 
-- Navigationsmenü zur Bedrohungs- und Sicherheitsrisikoverwaltung im [Microsoft Defender Security Center](portal-overview.md)
-- Die besten Sicherheitsempfehlungen im Dashboard zur Verwaltung von Bedrohungen [und Sicherheitsrisiken](tvm-dashboard-insights.md)
+- Bedrohung und Sicherheitsrisikomanagement Navigationsmenü im [Microsoft Defender Security Center](portal-overview.md)
+- Die besten Sicherheitsempfehlungen im [Bedrohungs- und Sicherheitsrisikomanagement Dashboard](tvm-dashboard-insights.md)
 
 Zeigen Sie verwandte Sicherheitsempfehlungen an den folgenden Stellen an:
 
@@ -68,11 +68,11 @@ Zeigen Sie verwandte Sicherheitsempfehlungen an den folgenden Stellen an:
 
 ### <a name="navigation-menu"></a>Navigationsmenü
 
-Wechseln Sie zum Navigationsmenü zur Bedrohungs- und Sicherheitsrisikoverwaltung, und wählen Sie **Sicherheitsempfehlungen aus.** Die Seite enthält eine Liste der Sicherheitsempfehlungen für die Bedrohungen und Sicherheitsrisiken in Ihrer Organisation.
+Wechseln Sie zum Bedrohungs- und Sicherheitsrisikomanagement Navigationsmenü, und wählen Sie **Sicherheitsempfehlungen aus.** Die Seite enthält eine Liste der Sicherheitsempfehlungen für die Bedrohungen und Sicherheitsrisiken in Ihrer Organisation.
 
-### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>Die besten Sicherheitsempfehlungen im Dashboard zur Verwaltung von Bedrohungen und Sicherheitsrisiken
+### <a name="top-security-recommendations-in-the-threat-and-vulnerability-management-dashboard"></a>Die besten Sicherheitsempfehlungen im Bedrohungs- und Sicherheitsrisikomanagement Dashboard
 
-An einem bestimmten Tag als Sicherheitsadministrator können [](tvm-dashboard-insights.md) Sie sich das Dashboard für [](tvm-exposure-score.md) die Verwaltung von Bedrohungen und Sicherheitsrisiken anschauen, um Ihre Belichtungsergebnisseite neben Ihrer [Microsoft Secure Score for Devices anzuzeigen.](tvm-microsoft-secure-score-devices.md) Das Ziel ist **es,** die Gefährdung Ihrer  Organisation durch Sicherheitsrisiken zu verringern und die Gerätesicherheit Ihrer Organisation zu erhöhen, um widerstandsfähiger gegen Cybersicherheitsangriffe zu sein. Die Liste der besten Sicherheitsempfehlungen kann Ihnen dabei helfen, dieses Ziel zu erreichen.
+An einem bestimmten Tag als Sicherheitsadministrator können Sie einen Blick auf [](tvm-exposure-score.md) das [Bedrohungs- und Sicherheitsrisikomanagement-Dashboard](tvm-dashboard-insights.md) werfen, um ihre Belichtungsergebnisseite neben Ihrer Microsoft Secure Score für Geräte [anzuzeigen.](tvm-microsoft-secure-score-devices.md) Das Ziel ist **es,** die Gefährdung Ihrer  Organisation durch Sicherheitsrisiken zu verringern und die Gerätesicherheit Ihrer Organisation zu erhöhen, um widerstandsfähiger gegen Cybersicherheitsangriffe zu sein. Die Liste der besten Sicherheitsempfehlungen kann Ihnen dabei helfen, dieses Ziel zu erreichen.
 
 ![Beispiel für die Top Security Recommendations Card mit vier Sicherheitsempfehlungen.](images/top-security-recommendations350.png)
 
@@ -85,7 +85,7 @@ Anzeigen von Empfehlungen, anzahl gefundener Schwachstellen, zugehöriger Kompon
 Die Farbe des **Diagramms "Verfügbar gemachte Geräte"** ändert sich, wenn sich der Trend ändert. Wenn die Anzahl der verfügbar gemachten Geräte steigt, ändert sich die Farbe in Rot. Wenn die Anzahl der verfügbar gemachten Geräte sinkt, ändert sich die Farbe des Diagramms in Grün.
 
 >[!NOTE]
->Das Bedrohungs- und Sicherheitsrisikomanagement zeigt Geräte an, die bis vor **30 Tagen verwendet wurden.** Dies ist anders als der Rest von Microsoft Defender for Endpoint. Wenn ein Gerät seit mehr als 7 Tagen nicht verwendet wird, hat es den Status "Inaktiv".
+>Bedrohung und Sicherheitsrisikomanagement zeigt Geräte an, die bis vor **30 Tagen verwendet** wurden. Dies ist anders als der Rest von Microsoft Defender for Endpoint. Wenn ein Gerät seit mehr als 7 Tagen nicht verwendet wird, hat es den Status "Inaktiv".
 
 ![Beispiel für die Angebotsseite für Sicherheitsempfehlungen.](images/tvmsecrec-updated.png)
 
@@ -106,7 +106,7 @@ Im Flyout können Sie eine der folgenden Optionen auswählen:
 
 - **Seite "Software öffnen"** – Öffnen Sie die Softwareseite, um mehr Kontext zur Software und deren Verteilung zu erhalten. Die Informationen können Bedrohungskontext, zugehörige Empfehlungen, ermittelte Schwachstellen, die Anzahl der verfügbar gemachten Geräte, ermittelte Sicherheitsrisiken, Namen und detaillierte Geräte mit der installierten Software sowie die Versionsverteilung umfassen.
 
-- [**Korrekturoptionen –**](tvm-remediation.md) Übermitteln Sie eine Korrekturanforderung, um ein Ticket in Microsoft Intune zu öffnen, damit Ihr IT-Administrator es abberaten und adressieren kann. Verfolgen Sie die Korrekturaktivität auf der Seite Korrektur.
+- [**Korrekturoptionen –**](tvm-remediation.md) Übermitteln Sie eine Korrekturanforderung, um ein Ticket in Microsoft Intune zu öffnen, damit Ihr IT-Administrator das Ticket abberaten und adressieren kann. Verfolgen Sie die Korrekturaktivität auf der Seite Korrektur.
 
 - [**Ausnahmeoptionen**](tvm-exception.md) – Senden Sie eine Ausnahme, geben Sie eine Begründung an, und legen Sie die Ausnahmedauer fest, wenn Sie das Problem noch nicht beheben können.
 
@@ -123,7 +123,7 @@ Wenn die Anzahl der verfügbar gemachten Geräte stark anspringt oder die Auswir
 
 ## <a name="request-remediation"></a>Anforderungsbehebung
 
-Die Bereinigungsfunktion für die Bedrohungs- und Sicherheitsrisikoverwaltung überbrückt die Lücke zwischen Sicherheits- und IT-Administratoren über den Workflow zur Behebungsanforderung. Sicherheitsadministratoren wie Sie können den IT-Administrator bitten, eine  Sicherheitslücke von der Seite Sicherheitsempfehlung zu Intune zu be behebung. [Weitere Informationen zu Korrekturoptionen](tvm-remediation.md)
+Die Bedrohungs- und Sicherheitsrisikomanagement überbrückt die Lücke zwischen Sicherheits- und IT-Administratoren über den Workflow zur Behebungsanforderung. Sicherheitsadministratoren wie Sie können den IT-Administrator bitten, eine  Sicherheitslücke von der Seite Sicherheitsempfehlung zu Intune zu be behebung. [Weitere Informationen zu Korrekturoptionen](tvm-remediation.md)
 
 ### <a name="how-to-request-remediation"></a>Anfordern einer Korrektur
 
@@ -157,11 +157,11 @@ Sie können ein falsch positives Ergebnis melden, wenn vage, ungenaue, unvollst�
 
 3. Wählen Sie im Flyoutbereich im Dropdownmenü die Kategorie Ungenauigkeit aus, geben Sie Ihre E-Mail-Adresse ein, und geben Sie Details zur Ungenauigkeit an.
 
-4. Wählen Sie **Senden** aus. Ihr Feedback wird sofort an die Experten für die Bedrohungs- und Sicherheitsrisikoverwaltung gesendet.
+4. Wählen Sie **Senden** aus. Ihr Feedback wird sofort an die Bedrohungs- und Sicherheitsrisikomanagement gesendet.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Übersicht über die Verwaltung von Bedrohungen und Sicherheitslücken](next-gen-threat-and-vuln-mgt.md)
+- [Übersicht über Bedrohungen Sicherheitsrisikomanagement Bedrohungen](next-gen-threat-and-vuln-mgt.md)
 - [Dashboard](tvm-dashboard-insights.md)
 - [Gefährdungsscore](tvm-exposure-score.md)
 - [Microsoft-Sicherheitsbewertung für Geräte](tvm-microsoft-secure-score-devices.md)

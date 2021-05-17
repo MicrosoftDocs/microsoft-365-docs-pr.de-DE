@@ -72,14 +72,14 @@ In der folgenden Tabelle sind die verfügbaren Tools aufgeführt, die auf dem En
 | Endpunkt     | Tooloptionen                       |
 |--------------|------------------------------------------|
 | **Windows**  |  [Lokales Skript (bis zu 10 Geräte)](configure-endpoints-script.md) <br>  [Gruppenrichtlinie](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI-Skripts](configure-endpoints-vdi.md) <br> [Integration in Azure Defender](configure-server-endpoints.md#integration-with-azure-defender) |
-| **macOS**    | [Lokale Skripts](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Verwaltung mobiler Geräte - Mobile Device Management](mac-install-with-other-mdm.md) |
+| **macOS**    | [Lokale Skripts](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF-Pro](mac-install-with-jamf.md) <br> [Verwaltung mobiler Geräte - Mobile Device Management](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Lokales Skript](linux-install-manually.md) <br> [100](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [App-basiert](ios-install.md)                                |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
 
 
 ## <a name="step-2-configure-capabilities"></a>Schritt 2: Konfigurieren von Funktionen
-Nach dem Onboarding der Endpunkte konfigurieren Sie die verschiedenen Funktionen, z. B. Endpunkterkennung und -reaktion, Schutz der nächsten Generation und Reduzierung der Angriffsfläche. 
+Nach dem Onboarding der Endpunkte konfigurieren Sie die verschiedenen Funktionen wie EDR, Schutz der nächsten Generation und Reduzierung der Angriffsfläche. 
 
 
 ## <a name="example-deployments"></a>Beispielbereitstellungen

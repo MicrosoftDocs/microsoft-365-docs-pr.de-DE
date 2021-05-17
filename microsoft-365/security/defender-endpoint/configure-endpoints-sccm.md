@@ -32,7 +32,7 @@ ms.locfileid: "51935161"
 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-- Aktuelle Verzweigung von Microsoft Endpoint Configuration Manager
+- Microsoft Endpoint Configuration Manager aktuellen Verzweigung
 - System Center 2012 R2 Configuration Manager
 
 >Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointssccm-abovefoldlink)
@@ -57,38 +57,38 @@ Ab Configuration Manager, Version 2002, können Sie die folgenden Betriebssystem
 - Windows Server 2019
 
 >[!NOTE]
->Weitere Informationen zum Onboarding von Windows Server 2012 R2, Windows Server 2016 und Windows Server 2019 finden Sie unter [Onboarding von Windows-Servern](configure-server-endpoints.md).
+>Weitere Informationen zum Onboarding von Windows Server 2012 R2, Windows Server 2016 und Windows Server 2019 finden Sie unter [Onboard Windows Servers](configure-server-endpoints.md).
 
 
 
-### <a name="onboard-devices-using-system-center-configuration-manager"></a>Onboarding von Geräten mithilfe von System Center Configuration Manager
+### <a name="onboard-devices-using-system-center-configuration-manager"></a>Onboarding von Geräten mithilfe System Center Configuration Manager
 
 
 [![Abbildung der PDF mit den verschiedenen Bereitstellungspfaden](images/onboard-config-mgr.png)](images/onboard-config-mgr.png#lightbox)
 
 
-Sehen Sie sich [die PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  oder  [Visio-Datei](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) an, um die verschiedenen Pfade bei der Bereitstellung von Microsoft Defender for Endpoint zu sehen. 
+Sehen Sie sich [die PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [oder Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) an, um die verschiedenen Pfade bei der Bereitstellung von Microsoft Defender for Endpoint zu sehen. 
 
 
 
-1. Öffnen Sie die ZIP-Datei des *Configuration Manager-Konfigurationspakets*(WindowsDefenderATPOnboardingPackage.zip), die Sie aus dem Assistenten zum Onboarding des Diensts heruntergeladen haben. Sie können das Paket auch über [das Microsoft Defender Security Center erhalten:](https://securitycenter.windows.com/)
+1. Öffnen Sie die Konfigurationspaketdatei .zip Configuration Manager (*WindowsDefenderATPOnboardingPackage.zip*), die Sie aus dem Dienst-Onboarding-Assistenten heruntergeladen haben. Sie können das Paket auch von [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
 
     1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Onboarding aus.**
     
-    1. Wählen Sie Windows 10 als Betriebssystem aus.
+    1. Wählen Windows 10 als Betriebssystem aus.
 
-    1. Wählen Sie **im Feld Bereitstellungsmethode** die Option **System Center Configuration Manager 2012/2012 R2/1511/1602 aus.**
+    1. Wählen Sie **im** Feld **Bereitstellungsmethode System Center Configuration Manager 2012/2012 R2/1511/1602 aus.**
     
-    1. Wählen **Sie Paket herunterladen** aus, und speichern Sie die ZIP-Datei.
+    1. Wählen **Sie Paket herunterladen** aus, und speichern Sie .zip Datei.
 
-2. Extrahieren Sie den Inhalt der ZIP-Datei an einen freigegebenen schreibgeschützten Speicherort, auf den die Netzwerkadministratoren zugreifen können, die das Paket bereitstellen. Sie sollten über eine Datei mit dem Namen *WindowsDefenderATPOnboardingScript.cmd verfügen.*
+2. Extrahieren Sie den Inhalt der .zip an einen freigegebenen, schreibgeschützten Speicherort, auf den die Netzwerkadministratoren zugreifen können, die das Paket bereitstellen. Sie sollten über eine Datei mit dem Namen *WindowsDefenderATPOnboardingScript.cmd verfügen.*
 
 3. Stellen Sie das Paket zur Verfügung, indem Sie die Schritte im Artikel Pakete und Programme [in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) ausführen.
 
     a. Wählen Sie eine vordefinierte Gerätesammlung aus, auf der das Paket bereitgestellt werden soll.
 
 > [!NOTE]
-> Defender for Endpoint unterstützt das Onboarding während der [Out-Of-Box Experience (OOBE)-Phase](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) nicht. Stellen Sie sicher, dass Benutzer nach der Ausführung der Windows-Installation oder des Upgrades OOBE abschließen.
+> Defender for Endpoint unterstützt das Onboarding während der [Out-Of-Box Experience (OOBE)-Phase](https://answers.microsoft.com/en-us/windows/wiki/windows_10/how-to-complete-the-windows-10-out-of-box/47e3f943-f000-45e3-8c5c-9d85a1a0cf87) nicht. Stellen Sie sicher, dass Benutzer OOBE abschließen, nachdem sie Windows oder Upgrade ausgeführt haben.
 
 >[!TIP]
 > Nach dem Onboarding des Geräts können Sie einen Erkennungstest ausführen, um sicherzustellen, dass ein Gerät ordnungsgemäß in den Dienst integrierte ist. Weitere Informationen finden Sie unter Ausführen eines Erkennungstests auf einem neu integrierten [Defender for Endpoint-Gerät.](run-detection-test.md)
@@ -102,7 +102,7 @@ Weitere Informationen finden Sie unter [Configure Detection Methods in System Ce
 
 ### <a name="configure-sample-collection-settings"></a>Konfigurieren von Beispielsammlungseinstellungen
 
-Für jedes Gerät können Sie einen Konfigurationswert festlegen, um zu bestimmen, ob Beispiele vom Gerät gesammelt werden können, wenn über das Microsoft Defender Security Center eine Anforderung zum Übermitteln einer Datei zur tiefen Analyse gestellt wird.
+Für jedes Gerät können Sie einen Konfigurationswert festlegen, um zu bestimmen, ob Beispiele vom Gerät erfasst werden können, wenn über Microsoft Defender Security Center eine Datei zur tiefen Analyse übermittelt wird.
 
 >[!NOTE]
 >Diese Konfigurationseinstellungen werden in der Regel über Configuration Manager durchgeführt. 
@@ -127,7 +127,7 @@ Die folgenden Werte sind möglich:
 
 Der Standardwert für den Fall, dass der Registrierungsschlüssel nicht vorhanden ist, ist 1.
 
-Weitere Informationen zur System Center Configuration Manager Compliance finden Sie [unter Einführung in Complianceeinstellungen in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
+Weitere Informationen zur System Center Configuration Manager finden Sie unter [Einführung in Complianceeinstellungen in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 
 ## <a name="other-recommended-configuration-settings"></a>Weitere empfohlene Konfigurationseinstellungen
@@ -173,23 +173,23 @@ Aus Sicherheitsgründen läuft das für Offboard-Geräte verwendete Paket 30 Tag
 > [!NOTE]
 > Onboarding- und Offboardingrichtlinien dürfen nicht gleichzeitig auf demselben Gerät bereitgestellt werden, da andernfalls unvorhersehbare Kollisionen verursacht werden.
 
-### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Offboardgeräte, die den aktuellen Microsoft Endpoint Manager verwenden
+### <a name="offboard-devices-using-microsoft-endpoint-manager-current-branch"></a>Offboardgeräte mit Microsoft Endpoint Manager aktuellen Verzweigung
 
-Wenn Sie den aktuellen Microsoft Endpoint Manager-Zweig verwenden, finden Sie weitere Informationen unter [Create an offboarding configuration file](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
+Wenn Sie Microsoft Endpoint Manager aktuellen Verzweigung verwenden, lesen [Sie Erstellen einer Offboardingkonfigurationsdatei](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#create-an-offboarding-configuration-file).
 
 ### <a name="offboard-devices-using-system-center-2012-r2-configuration-manager"></a>Offboardgeräte mit System Center 2012 R2 Configuration Manager
 
-1. Das offboarding-Paket aus [dem Microsoft Defender Security Center erhalten:](https://securitycenter.windows.com/)
+1. Erhalten Sie das offboarding-Paket [von Microsoft Defender Security Center:](https://securitycenter.windows.com/)
 
     1. Wählen Sie im Navigationsbereich **Einstellungen**  >   **Offboarding aus.**
 
-    1. Wählen Sie Windows 10 als Betriebssystem aus.
+    1. Wählen Windows 10 als Betriebssystem aus.
 
-    1. Wählen Sie **im Feld Bereitstellungsmethode** die Option **System Center Configuration Manager 2012/2012 R2/1511/1602 aus.**
+    1. Wählen Sie **im** Feld **Bereitstellungsmethode System Center Configuration Manager 2012/2012 R2/1511/1602 aus.**
     
-    1. Wählen **Sie Paket herunterladen** aus, und speichern Sie die ZIP-Datei.
+    1. Wählen **Sie Paket herunterladen** aus, und speichern Sie .zip Datei.
 
-2. Extrahieren Sie den Inhalt der ZIP-Datei an einen freigegebenen schreibgeschützten Speicherort, auf den die Netzwerkadministratoren zugreifen können, die das Paket bereitstellen. Sie sollten über eine Datei namens *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd verfügen.*
+2. Extrahieren Sie den Inhalt der .zip an einen freigegebenen, schreibgeschützten Speicherort, auf den die Netzwerkadministratoren zugreifen können, die das Paket bereitstellen. Sie sollten über eine Datei namens *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd verfügen.*
 
 3. Stellen Sie das Paket zur Verfügung, indem Sie die Schritte im Artikel Pakete und Programme [in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg699369\(v=technet.10\)) ausführen.
 
@@ -201,9 +201,9 @@ Wenn Sie den aktuellen Microsoft Endpoint Manager-Zweig verwenden, finden Sie we
 
 ## <a name="monitor-device-configuration"></a>Überwachen der Gerätekonfiguration
 
-Wenn Sie den aktuellen Microsoft Endpoint Manager-Zweig verwenden, verwenden Sie das integrierte Defender for Endpoint-Dashboard in der Configuration Manager-Konsole. Weitere Informationen finden Sie unter [Defender for Endpoint - Monitor](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
+Wenn Sie die aktuelle Microsoft Endpoint Manager verwenden, verwenden Sie das integrierte Defender for Endpoint-Dashboard in der Configuration Manager-Konsole. Weitere Informationen finden Sie unter [Defender for Endpoint - Monitor](https://docs.microsoft.com/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection#monitor).
 
-Wenn Sie System Center 2012 R2 Configuration Manager verwenden, besteht die Überwachung aus zwei Teilen:
+Wenn Sie den System Center 2012 R2 Configuration Manager verwenden, besteht die Überwachung aus zwei Teilen:
 
 1. Bestätigen, dass das Konfigurationspaket ordnungsgemäß bereitgestellt wurde und auf den Geräten in Ihrem Netzwerk ausgeführt wird (oder erfolgreich ausgeführt wurde).
 
@@ -225,7 +225,7 @@ Wenn Sie System Center 2012 R2 Configuration Manager verwenden, besteht die Übe
 
 ### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>Überprüfen, ob die Geräte mit dem Microsoft Defender for Endpoint-Dienst kompatibel sind
 
-Sie können eine Complianceregel für das Konfigurationselement in System Center 2012 R2 Configuration Manager festlegen, um Ihre Bereitstellung zu überwachen.
+Sie können eine Kompatibilitätsregel für konfigurationselement in System Center 2012 R2 Configuration Manager festlegen, um Ihre Bereitstellung zu überwachen.
 
 Bei dieser Regel sollte es sich um ein Konfigurationselement *zur Nichtbehendung* der Complianceregel, das den Wert eines Registrierungsschlüssels auf zielgerichteten Geräten überwacht.
 
@@ -237,10 +237,10 @@ Name: "OnboardingState"
 Value: "1"
 ```
 
-Weitere Informationen finden Sie [unter Einführung in Complianceeinstellungen in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
+Weitere Informationen finden Sie unter [Einführung in Complianceeinstellungen in System Center 2012 R2 Configuration Manager](https://docs.microsoft.com/previous-versions/system-center/system-center-2012-R2/gg682139\(v=technet.10\)).
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Onboarding von Windows 10-Geräten mithilfe von Gruppenrichtlinien](configure-endpoints-gp.md)
+- [Onboarding Windows 10 Geräte mithilfe von Gruppenrichtlinien](configure-endpoints-gp.md)
 - [Onboarding von Windows 10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten](configure-endpoints-mdm.md)
 - [Onboarding von Windows 10-Geräten mithilfe eines lokalen Skripts](configure-endpoints-script.md)
 - [Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)](configure-endpoints-vdi.md)

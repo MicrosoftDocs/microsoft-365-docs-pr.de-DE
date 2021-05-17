@@ -33,7 +33,7 @@ ms.locfileid: "51932941"
 
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-Jedes integrierte Gerät fügt einen zusätzlichen Endpunkterkennungs- und -reaktionssensor (EDR) hinzu und erhöht die Sichtbarkeit der Verletzungsaktivität in Ihrem Netzwerk. Das Onboarding stellt außerdem sicher, dass ein Gerät auf anfällige Komponenten sowie Sicherheitskonfigurationsprobleme überprüft werden kann und kritische Korrekturaktionen während von Angriffen erhalten kann.
+Jedes integrierte Gerät fügt einen zusätzlichen EDR (EDR) hinzu und erhöht die Sichtbarkeit über Sicherheitsverletzungen in Ihrem Netzwerk. Das Onboarding stellt außerdem sicher, dass ein Gerät auf anfällige Komponenten sowie Sicherheitskonfigurationsprobleme überprüft werden kann und kritische Korrekturaktionen während von Angriffen erhalten kann.
 
 Bevor Sie das Onboarding von Geräten nachverfolgen und verwalten können:
 - [Registrieren Ihrer Geräte bei der Intune-Verwaltung](configure-machines.md#enroll-devices-to-intune-management)
@@ -41,17 +41,17 @@ Bevor Sie das Onboarding von Geräten nachverfolgen und verwalten können:
 
 ## <a name="discover-and-track-unprotected-devices"></a>Ermitteln und Nachverfolgen ungeschützter Geräte
 
-Die **Onboardingkarte** bietet einen umfassenden Überblick über Ihre Onboardingrate, indem sie die Anzahl der Windows 10-Geräte, die tatsächlich in Defender for Endpoint integrierte wurden, mit der Gesamtzahl der von Intune verwalteten Windows 10-Geräte vergleichen.
+Die **Onboardingkarte** bietet einen umfassenden Überblick über Ihre Onboardingrate, indem sie die Anzahl der Windows 10-Geräte, die tatsächlich in Defender for Endpoint integrierte sind, mit der Gesamtzahl der von Intune verwalteten Windows 10 vergleicht.
 
 ![Onboardingkarte für die Gerätekonfigurationsverwaltung](images/secconmgmt_onboarding_card.png)<br>
-*Karte mit integrierten Geräten im Vergleich zur Gesamtzahl der von Intune verwalteten Windows 10-Geräte*
+*Karte mit integrierten Geräten im Vergleich zur Gesamtzahl der von Intune verwalteten Windows 10 Gerät*
 
 >[!NOTE]
 >Wenn Sie Security Center Configuration Manager, das Onboardingskript oder andere Onboardingmethoden verwendet haben, die keine Intune-Profile verwenden, können Datenabweichungen auftreten. Um diese Abweichungen zu beheben, erstellen Sie ein entsprechendes Intune-Konfigurationsprofil für das Defender for Endpoint-Onboarding, und weisen Sie dieses Profil Ihren Geräten zu.
 
 ## <a name="onboard-more-devices-with-intune-profiles"></a>Onboarding von weiteren Geräten mit Intune-Profilen
 
-Defender for Endpoint bietet verschiedene praktische Optionen für [das Onboarding von Windows 10-Geräten.](onboard-configure.md) Für von Intune verwaltete Geräte können Sie jedoch Intune-Profile nutzen, um den Defender for Endpoint-Sensor bequem bereitzustellen, um Geräte auszuwählen und diese Geräte effektiv in den Dienst zu integrieren.
+Defender for Endpoint bietet verschiedene praktische Optionen für [das Onboarding Windows 10 Geräten.](onboard-configure.md) Für von Intune verwaltete Geräte können Sie jedoch Intune-Profile nutzen, um den Defender for Endpoint-Sensor bequem bereitzustellen, um Geräte auszuwählen und diese Geräte effektiv in den Dienst zu integrieren.
 
 Wählen Sie **auf der Onboardingkarte** weitere Geräte **integrieren** aus, um ein Profil in Intune zu erstellen und zuzuordnen. Der Link führt Sie zur Seite "Gerätekonformität" auf Intune, die eine ähnliche Übersicht über Ihren Onboardingstatus bietet.
 
@@ -59,7 +59,7 @@ Wählen Sie **auf der Onboardingkarte** weitere Geräte **integrieren** aus, um 
    *Microsoft Defender for Endpoint Device Compliance-Seite zur Intune-Geräteverwaltung*
 
 >[!TIP]
->Alternativ können Sie im [Microsoft Azure-Portal](https://portal.azure.com/) von Allen Diensten > Intune > Device compliance > **Microsoft Defender ATP** zur Seite Defender for Endpoint-Onboarding-Compliance navigieren.
+>Alternativ können Sie im [Microsoft Azure-Portal](https://portal.azure.com/) über Alle Dienste > Intune > Device compliance > Microsoft Defender ATP zur Seite Defender for **Endpoint-Onboarding-Compliance navigieren.**
 
 >[!NOTE]
 > Wenn Sie die neuesten Gerätedaten anzeigen möchten, klicken Sie auf Liste der Geräte **ohne ATP-Sensor**.

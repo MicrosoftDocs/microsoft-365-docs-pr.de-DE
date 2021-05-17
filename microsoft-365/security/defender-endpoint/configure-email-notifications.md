@@ -51,7 +51,7 @@ Die E-Mail-Benachrichtigung enthält grundlegende Informationen zu der Warnung u
 Sie können Regeln erstellen, die die Geräte und Denkschweregrade zum Senden von E-Mail-Benachrichtigungen für und die Benachrichtigungsempfänger bestimmen.
 
 
-1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **E-Mail-Benachrichtigungen aus.**
+1. Wählen Sie im Navigationsbereich die **Option Einstellungen**  >  **E-Mail-Benachrichtigungen aus.**
 
 2. Klicken Sie **auf Element hinzufügen**.
 

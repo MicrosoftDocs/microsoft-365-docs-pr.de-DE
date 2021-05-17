@@ -1,6 +1,6 @@
 ---
-title: Angeben zusätzlicher Definitionssätze für die Netzwerkdatenverkehrsprüfung für Microsoft Defender Antivirus
-description: Geben Sie zusätzliche Definitionssätze für die Netzwerkdatenverkehrsprüfung für Microsoft Defender Antivirus.
+title: Angeben zusätzlicher Definitionssätze für die Überprüfung des Netzwerkdatenverkehrs für Microsoft Defender Antivirus
+description: Geben Sie zusätzliche Definitionssätze für die Überprüfung des Netzwerkdatenverkehrs für Microsoft Defender Antivirus an.
 keywords: Microsoft Defender Antivirus, Antischalware, Sicherheit, Defender, Überprüfung des Netzwerkdatenverkehrs
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -37,7 +37,7 @@ Sie können zusätzliche Definitionssätze für die Überprüfung des Netzwerkda
 
 1. Öffnen Sie auf dem Endpunkt für die Gruppenrichtlinienverwaltung die [Gruppenrichtlinienverwaltungskonsole](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-2. Wechseln Sie **zu Windows Komponenten**  >  **Microsoft Defender Antivirus**  >  **Netzwerkinspektionssystem**. 
+2. Wechseln Sie **zu Windows-Komponenten**  >  **Microsoft Defender Antivirus** Network Inspection  >  **System**. 
 
 3. Wählen **Sie Zusätzliche Definitionssätze für die Überprüfung des Netzwerkdatenverkehrs angeben aus.** Standardmäßig ist diese Richtlinie auf **Nicht konfiguriert festgelegt.** 
 
@@ -52,7 +52,7 @@ Sie können zusätzliche Definitionssätze für die Überprüfung des Netzwerkda
 7. Wählen **Sie OK** aus, und stellen Sie dann das aktualisierte Gruppenrichtlinienobjekt aus. Weitere [Informationen finden Sie unter Gruppenrichtlinienverwaltungskonsole](/windows/win32/srvnodes/group-policy).
 
 > [!TIP]
-> Verwenden Sie Gruppenrichtlinienobjekte lokal? Sehen Sie, wie sie in der Cloud übersetzen. [Analysieren Sie Ihre lokalen Gruppenrichtlinienobjekte mithilfe der Gruppenrichtlinienanalyse in Microsoft Endpoint Manager – Vorschau](/mem/intune/configuration/group-policy-analytics). 
+> Verwenden Sie Gruppenrichtlinienobjekte lokal? Sehen Sie, wie sie in der Cloud übersetzen. [Analysieren Sie Ihre lokalen Gruppenrichtlinienobjekte mithilfe von Gruppenrichtlinienanalysen in Microsoft Endpoint Manager – Vorschau](/mem/intune/configuration/group-policy-analytics). 
   
 ## <a name="related-articles"></a>Verwandte Artikel
 

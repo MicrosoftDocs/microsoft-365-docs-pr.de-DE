@@ -33,7 +33,7 @@ ms.locfileid: "51935317"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="conditional-access-with-defender-for-endpoint-on-android"></a>Bedingter Zugriff mit Defender for Endpoint unter Android  
-Microsoft Defender für Endpoint unter Android ermöglicht zusammen mit Microsoft Intune und Azure Active Directory die Erzwingung der Gerätekonformität und Richtlinien für bedingten Zugriff auf der Grundlage von Geräterisikostufen. Defender for Endpoint ist eine Mobile Threat Defense (MTD)-Lösung, die Sie bereitstellen können, um diese Funktion über Intune zu nutzen.
+Microsoft Defender for Endpoint unter Android ermöglicht Microsoft Intune und Azure Active Directory die Erzwingung von Gerätekonformität und Richtlinien für bedingten Zugriff basierend auf Geräterisikostufen. Defender for Endpoint ist eine Mobile Threat Defense (MTD)-Lösung, die Sie bereitstellen können, um diese Funktion über Intune zu nutzen.
 
 Weitere Informationen zum Einrichten von Defender for Endpoint unter Android und bedingten Zugriff finden Sie unter [Defender for Endpoint und Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
 

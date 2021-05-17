@@ -39,7 +39,7 @@ ms.locfileid: "51935029"
 Dieser Artikel enthält Informationen zum Definieren von Ausschlüssen, die für Scans bei Bedarf gelten, sowie Zum Schutz und Überwachung in Echtzeit.
 
 >[!IMPORTANT]
->Die in diesem Artikel beschriebenen Ausschlüsse gelten nicht für andere Defender for Endpoint auf Mac-Funktionen, einschließlich Endpunkterkennung und -reaktion (EDR). Dateien, die Sie mithilfe der in diesem Artikel beschriebenen Methoden ausschließen, können weiterhin EDR-Warnungen und andere Erkennungen auslösen.
+>Die in diesem Artikel beschriebenen Ausschlüsse gelten nicht für andere Defender for Endpoint auf Mac-Funktionen, einschließlich EDR (EDR). Dateien, die Sie mithilfe der in diesem Artikel beschriebenen Methoden ausschließen, können weiterhin EDR und andere Erkennungen auslösen.
 
 Sie können bestimmte Dateien, Ordner, Prozesse und prozessgeladene Dateien aus Defender for Endpoint auf Mac-Scans ausschließen.
 

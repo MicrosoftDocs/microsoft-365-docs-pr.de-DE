@@ -40,17 +40,17 @@ Microsoft Defender for Identity kann dabei helfen, böswillige Versuche zu erken
 
 ## <a name="analyzing-the-attack-in-microsoft-defender-for-identity"></a>Analysieren des Angriffs in Microsoft Defender for Identity
 
-Microsoft 365 Defender ermöglicht Es Analysten, Warnungen nach Erkennungsquelle auf der Registerkarte **Warnungen** auf der Seite Vorfälle zu filtern. Im folgenden Beispiel wird die Erkennungsquelle nach **Defender for Identity gefiltert.** 
+Microsoft 365 Defender ermöglicht Es Analysten,  Warnungen nach Erkennungsquelle auf der Registerkarte Warnungen auf der Seite Vorfälle zu filtern. Im folgenden Beispiel wird die Erkennungsquelle nach **Defender for Identity gefiltert.** 
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mdi-filter.png" alt-text="Beispiel für das Filtern der Erkennungsquelle für Defender for Identity":::
 
-Wenn Sie **die Warnung für mutmaßliche Überführungen im** Hash auswählen, wird eine Seite in Microsoft Cloud App Security angezeigt, auf der ausführlichere Informationen angezeigt werden. Sie können immer mehr über eine Warnung oder einen Angriff erfahren, [](https://docs.microsoft.com/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) indem Sie **Weitere** Informationen zu diesem Warnungstyp auswählen, um eine Beschreibung des Angriffs sowie Korrekturvorschläge zu lesen.
+Die Auswahl der Benachrichtigung über mutmaßliche Überüberführung **des Hashangriffs** geht zu einer Seite in Microsoft Cloud App Security, auf der ausführlichere Informationen angezeigt werden. Sie können immer mehr über eine Warnung oder einen Angriff erfahren, [](https://docs.microsoft.com/defender-for-identity/lateral-movement-alerts#suspected-overpass-the-hash-attack-kerberos-external-id-2002) indem Sie **Weitere** Informationen zu diesem Warnungstyp auswählen, um eine Beschreibung des Angriffs sowie Korrekturvorschläge zu lesen.
  
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-alert-example.png" alt-text="Beispiel für eine mutmaßliche Benachrichtigung über die Überführung des Hashangriffs"::: 
 
 ## <a name="investigating-the-same-attack-in-microsoft-defender-for-endpoint"></a>Untersuchen desselben Angriffs in Microsoft Defender for Endpoint
 
-Alternativ kann ein Analyst Defender for Endpoint verwenden, um mehr über die Aktivität auf einem Endpunkt zu erfahren. Wählen Sie den Vorfall aus der Warteschleife aus, und wählen Sie dann die Registerkarte **Warnungen** aus. Von hier aus können sie auch die Erkennungsquelle identifizieren. Eine Erkennungsquelle, die als EDR bezeichnet wird, steht für Endpoint Detection and Response, also Defender for Endpoint. Hier wählt der Analyst eine warnung aus, die von einem EDR.
+Alternativ kann ein Analyst Defender for Endpoint verwenden, um mehr über die Aktivität auf einem Endpunkt zu erfahren. Wählen Sie den Vorfall aus der Warteschleife aus, und wählen Sie dann die Registerkarte **Warnungen** aus. Von hier aus können sie auch die Erkennungsquelle identifizieren. Eine Als EDR bezeichnete Erkennungsquelle steht für Endpoint Detection and Response, also Defender for Endpoint. Hier wählt der Analyst eine warnung aus, die von EDR erkannt wurde.
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-mde-edr.png" alt-text="Beispiel für eine Endpunkterkennung und -antwort in Defender for Endpoint"::: 
 
@@ -70,13 +70,13 @@ Zu diesem Zeitpunkt würde ein Analyst zum Zeitpunkt der Warnungserkennung (in R
 
 :::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-start-time.png" alt-text="Beispiel für das Starten zum Zeitpunkt der Warnungserkennung"::: 
 
-Es ist wichtig, allgemeine Aktivitäten wie Windows Updateverbindungen, Windows vertrauenswürdigen Softwareaktivierungsverkehr, andere häufige Verbindungen zu Microsoft-Websites, Internetaktivitäten von Drittanbietern, Microsoft Endpoint Configuration Manager-Aktivitäten und andere gutartige Aktivitäten von verdächtigen Aktivitäten zu verstehen und zu unterscheiden. Eine Möglichkeit dazu ist die Verwendung von Zeitachsenfiltern. Es gibt viele Filter, die bestimmte Aktivitäten hervorheben können, während alles herausfiltert wird, was der Analyst nicht anzeigen möchte. 
+Es ist wichtig, allgemeine Aktivitäten wie Windows Update-Verbindungen, Windows Trusted Software-Aktivierungsverkehr, andere häufige Verbindungen zu Microsoft-Websites, Internetaktivitäten von Drittanbietern, Microsoft Endpoint Configuration Manager-Aktivitäten und andere gutartige Aktivitäten von verdächtigen Aktivitäten zu verstehen und zu unterscheiden. Eine Möglichkeit dazu ist die Verwendung von Zeitachsenfiltern. Es gibt viele Filter, die bestimmte Aktivitäten hervorheben können, während alles herausfiltert wird, was der Analyst nicht anzeigen möchte. 
 
-In der folgenden Abbildung hat der Analytiker gefiltert, um nur Netzwerk- und Prozessereignisse anzeigen zu können. Auf diese Weise kann der Analyst die Netzwerkverbindungen und Prozesse sehen, die das Ereignis umgeben, Editor eine Verbindung mit einer IP-Adresse hergestellt hat, die wir auch in der Prozessstruktur gesehen haben. 
+In der folgenden Abbildung hat der Analytiker gefiltert, um nur Netzwerk- und Prozessereignisse anzeigen zu können. Dadurch kann der Analyst die Netzwerkverbindungen und Prozesse sehen, die das Ereignis umgeben, bei dem Notepad eine Verbindung mit einer IP-Adresse hergestellt hat, die wir auch in der Prozessstruktur gesehen haben. 
 
-:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-notepad.png" alt-text="Beispiel, wie Editor zum Herstellen einer schädlichen ausgehenden Verbindung verwendet wurde"::: 
+:::image type="content" source="../../media/first-incident-path-identity/first-incident-identity-notepad.png" alt-text="Beispiel für die Verwendung von Editor zum Herstellen einer schädlichen ausgehenden Verbindung"::: 
 
-In diesem speziellen Ereignis wurde Editor verwendet, um eine schädliche ausgehende Verbindung herzustellen. Häufig verwenden Angreifer jedoch einfach iexplorer.exe, um Verbindungen zum Herunterladen einer schädlichen Nutzlast herzustellen, da normalerweise iexplorer.exe Prozesse als reguläre Webbrowseraktivitäten angesehen werden.
+In diesem speziellen Ereignis wurde Notepad verwendet, um eine schädliche ausgehende Verbindung herzustellen. Häufig verwenden Angreifer jedoch einfach iexplorer.exe, um Verbindungen zum Herunterladen einer schädlichen Nutzlast herzustellen, da normalerweise iexplorer.exe Prozesse als reguläre Webbrowseraktivitäten angesehen werden.
 
 Ein weiteres Element, nach dem sie in der Zeitachse suchen sollten, wäre die Verwendung von PowerShell für ausgehende Verbindungen. Der Analyst würde nach erfolgreichen PowerShell-Verbindungen mit Befehlen suchen, z. B. gefolgt von einer ausgehenden Verbindung zu einer Website, die `IEX (New-Object Net.Webclient)` eine schädliche Datei hosten. 
 

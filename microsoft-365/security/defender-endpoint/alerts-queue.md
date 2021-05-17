@@ -59,7 +59,7 @@ Sie können die folgenden Filter anwenden, um die Liste der Warnungen zu beschr�
 Warnungsschweregrad | Beschreibung
 :---|:---
 Hoch </br>(Rot) | Warnungen, die häufig im Zusammenhang mit erweiterten beständigen Bedrohungen (Advanced Persistent Threats, APT) angezeigt werden. Diese Warnungen weisen auf ein hohes Risiko aufgrund des Schweregrads des Schadens hin, den sie auf Geräten verursachen können. Einige Beispiele sind: Aktivitäten zum Diebstahl von Anmeldeinformationen, Ransomware-Aktivitäten, die keinem Gruppen zugeordnet sind, Manipulationen an Sicherheitssensoren oder schädliche Aktivitäten, die auf einen menschlichen Widersacher hinweisen.
-Mittel </br>(Orange) | Warnungen aus Verhaltensmustern nach der Erkennung und Reaktion von Endpunkten, die Teil einer erweiterten beständigen Bedrohung (Advanced Persistent Threat, APT) sein können. Dies umfasst beobachtete Verhaltensweisen, die typisch für Angriffsphasen, anomale Registrierungsänderung, Ausführung verdächtiger Dateien usw. sind. Obwohl einige möglicherweise Teil interner Sicherheitstests sind, ist eine Untersuchung erforderlich, da sie auch Teil eines erweiterten Angriffs sein kann.
+Mittel </br>(Orange) | Benachrichtigungen EDR nach einer Verletzung, die Teil einer erweiterten beständigen Bedrohung (Advanced Persistent Threat, APT) sein können. Dies umfasst beobachtete Verhaltensweisen, die typisch für Angriffsphasen, anomale Registrierungsänderung, Ausführung verdächtiger Dateien usw. sind. Obwohl einige möglicherweise Teil interner Sicherheitstests sind, ist eine Untersuchung erforderlich, da sie auch Teil eines erweiterten Angriffs sein kann.
 Niedrig </br>(Gelb) | Warnungen zu Bedrohungen, die mit verbreiteter Schadsoftware verbunden sind. Beispielsweise Hacktools, Nicht-Schadsoftware-Hacktools, z. B. das Ausführen von Explorationsbefehlen, Löschen von Protokollen usw., die häufig keine erweiterte Bedrohung für die Organisation angeben. Es kann auch aus einem isolierten Sicherheitstool stammen, das von einem Benutzer in Ihrer Organisation getestet wurde.
 Zur Information </br>(Grau) | Warnungen, die möglicherweise nicht als schädlich für das Netzwerk betrachtet werden, aber das Sicherheitsbewusstsein der Organisation für potenzielle Sicherheitsprobleme erhöhen können.
 
@@ -90,7 +90,7 @@ In der folgenden Tabelle sind die aktuellen Kategorien und die allgemeine Zuordn
 | Befehl und Steuerelement  | CommandAndControl   | Herstellen einer Verbindung mit einer vom Angreifer gesteuerten Netzwerkinfrastruktur zum Relay von Daten oder empfangen von Befehlen                                          |
 | Zugriff auf Anmeldeinformationen    | CredentialAccess    | Abrufen gültiger Anmeldeinformationen zum Erweitern der Kontrolle über Geräte und andere Ressourcen im Netzwerk                                       |
 | Abwehrhinterziehung      | DefenseEvasion      | Vermeiden von Sicherheitskontrollen, z. B. Deaktivieren von Sicherheits-Apps, Löschen von Implanten und Ausführen von Rootkits                        |
-| Discovery            | Discovery           | Sammeln von Informationen zu wichtigen Geräten und Ressourcen, z. B. Administratorcomputern, Domänencontrollern und Dateiservern  |
+| Suche            | Suche           | Sammeln von Informationen zu wichtigen Geräten und Ressourcen, z. B. Administratorcomputern, Domänencontrollern und Dateiservern  |
 | Ausführung            | Ausführung           | Starten von Angreifertools und bösartigem Code, einschließlich RATs und Backdoors                                                             |
 | Exfiltration         | Exfiltration        | Extrahieren von Daten aus dem Netzwerk an einen externen, vom Angreifer gesteuerten Speicherort                                                         |
 | Exploit              | Exploit             | Exploitcode und mögliche Nutzungsaktivitäten                                                                                       |
@@ -121,10 +121,10 @@ Sie können zwischen dem Anzeigen von Warnungen, die Ihnen zugewiesen sind, oder
 
 ### <a name="detection-source"></a>Erkennungsquelle
 
-Wählen Sie die Quelle aus, die die Warnungserkennung ausgelöst hat. Microsoft Threat Experts preview teilnehmer can now filter and see detections from the new threat experts-managed hunting service.
+Wählen Sie die Quelle aus, die die Warnungserkennung ausgelöst hat. Microsoft-Bedrohungsexperten Vorschauteilnehmer können nun Erkennungen aus dem neuen vom Bedrohungsexperten verwalteten Suchedienst filtern und anzeigen.
 
 >[!NOTE]
->Der Antivirusfilter wird nur angezeigt, wenn Geräte Microsoft Defender Antivirus als standardmäßiges Antischalwareprodukt für den Echtzeitschutz verwenden.
+>Der Antivirusfilter wird nur angezeigt, wenn Geräte Microsoft Defender Antivirus als Standardmäßiges Antischalwareprodukt für den Echtzeitschutz verwenden.
 
 | Erkennungsquelle                  | API-Wert                  |
 |-----------------------------------|----------------------------|

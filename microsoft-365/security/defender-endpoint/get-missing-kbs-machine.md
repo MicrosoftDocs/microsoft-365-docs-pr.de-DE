@@ -1,7 +1,7 @@
 ---
 title: Fehlende KBs nach Geräte-ID erhalten
 description: Ruft fehlende Sicherheitsupdates nach Geräte-ID ab
-keywords: apis, graph api, supported apis, get, list, file, information, device id, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
+keywords: apis, graph api, supported apis, get, list, file, information, device id, threat & Sicherheitsrisikomanagement api, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -45,7 +45,7 @@ GET /api/machines/{machineId}/getmissingkbs
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
+Authorization | String | Bearer {token}. **Erforderlich**.
 
 ## <a name="request-body"></a>Anforderungstext
 

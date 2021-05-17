@@ -1,6 +1,6 @@
 ---
-title: Zeitzoneneinstellungen für Microsoft Defender Security Center
-description: Verwenden Sie die hier enthaltenen Informationen, um die Microsoft Defender Security Center-Zeitzoneneinstellungen zu konfigurieren und Lizenzinformationen anzeigen.
+title: Microsoft Defender Security Center zeitzoneneinstellungen
+description: Verwenden Sie die hier enthaltenen Informationen, um Microsoft Defender Security Center Zeitzoneneinstellungen zu konfigurieren und Lizenzinformationen anzeigen.
 keywords: Einstellungen, Microsoft Defender, Cybersecurity Threat Intelligence, Microsoft Defender for Endpoint, Zeitzone, utc, Ortszeit, Lizenz
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51932631"
 ---
-# <a name="microsoft-defender-security-center-time-zone-settings"></a>Zeitzoneneinstellungen für Microsoft Defender Security Center
+# <a name="microsoft-defender-security-center-time-zone-settings"></a>Microsoft Defender Security Center zeitzoneneinstellungen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -73,7 +73,7 @@ Verwenden Sie regionale Einstellungen für Internet Explorer (IE) und Microsoft 
 
 **Internet Explorer (IE) und Microsoft Edge**
 
-IE und Microsoft  Edge verwenden die Region-Einstellungen, die in der Systemsteuerung in der Option **Uhren,** Sprache und Region konfiguriert sind. 
+IE und Microsoft Edge verwenden  die Region-Einstellungen, die in der Systemsteuerung in der Option **Uhren,** Sprache und Region konfiguriert sind. 
 
 
 #### <a name="known-issues-with-regional-formats"></a>Bekannte Probleme mit regionalen Formaten

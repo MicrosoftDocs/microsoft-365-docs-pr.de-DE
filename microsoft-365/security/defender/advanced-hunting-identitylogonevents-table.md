@@ -35,7 +35,7 @@ ms.locfileid: "51935809"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Die Tabelle im Schema der erweiterten Suche enthält Informationen zu Authentifizierungsaktivitäten, die über Ihr lokales Active Directory vorgenommen wurden, das von Microsoft Defender für Identität erfasst wurde, und Authentifizierungsaktivitäten im Zusammenhang mit Microsoft Onlinediensten, die von Microsoft Cloud App Security erfasst `IdentityLogonEvents` wurden. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
+Die Tabelle im Schema der erweiterten Suche enthält Informationen zu Authentifizierungsaktivitäten, die über Ihr lokales Active Directory vorgenommen werden, das von Microsoft Defender für Identität erfasst wurde, und Authentifizierungsaktivitäten im Zusammenhang mit microsoft online services, die von microsoft `IdentityLogonEvents` Microsoft Cloud App Security. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
 >[!TIP]
 > Ausführliche Informationen zu den von einer Tabelle unterstützten Ereignistypen ( Werte) finden Sie unter Verwendung der integrierten Schemareferenz, die `ActionType` im Security Center verfügbar ist.

@@ -35,6 +35,6 @@ Englisch: Mo-Fr 9:00 bis 17:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefon Nummer: 22 31 07 48
+Alternative Telefonnummer: 22 31 07 48
 
 Es gelten die Ortstarife.

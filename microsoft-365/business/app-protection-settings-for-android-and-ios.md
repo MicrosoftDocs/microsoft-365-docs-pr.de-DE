@@ -46,7 +46,7 @@ Dieser Artikel gilt für Microsoft 365 Business Premium.
     
 4. Wählen **Sie unter** Richtlinientyp **Anwendungsverwaltung für Android** oder Anwendungsverwaltung für **iOS** aus, je nachdem, welcher Richtliniensatz Sie erstellen möchten. 
     
-5. Erweitern **Sie Arbeitsdateien schützen, wenn** Geräte verloren gehen oder gestohlen werden, und Verwalten, wie Benutzer auf mobile Geräte auf **Office-Dateien zugreifen.** Konfigurieren Sie die Einstellungen, wie Sie möchten. **Verwalten Sie, wie** Benutzer auf mobilen Geräten standardmäßig auf Office-Dateien zugreifen, ist  **deaktiviert.** Es wird jedoch empfohlen, dies zu aktivieren und die Standardwerte zu akzeptieren. Weitere Informationen finden Sie unter [Verfügbare Einstellungen](#available-settings). 
+5. Erweitern **Sie Arbeitsdateien schützen, wenn** Geräte verloren gehen oder gestohlen werden, und Verwalten, wie Benutzer auf Office auf **mobilen Geräten zugreifen.** Konfigurieren Sie die Einstellungen, wie Sie möchten. **Verwalten Sie,** wie Benutzer Office auf mobilen Geräten standardmäßig **deaktiviert** ist.  Es wird jedoch empfohlen, dies zu aktivieren und die Standardwerte zu akzeptieren. Weitere Informationen finden Sie unter [Verfügbare Einstellungen](#available-settings). 
     
     Mit dem Link **Standardeinstellungen zurücksetzen** können Sie jederzeit die Standardeinstellungen wiederherstellen. 
     
@@ -74,7 +74,7 @@ Dieser Artikel gilt für Microsoft 365 Business Premium.
     
 ## <a name="available-settings"></a>Verfügbare Einstellungen
 
-In den folgenden Tabellen finden Sie detaillierte Informationen zu den einstellungen, die zum Schutz von Arbeitsdateien auf Geräten verfügbar sind, sowie zu den Einstellungen, die steuern, wie Benutzer auf Office-Dateien von ihren mobilen Geräten aus zugreifen.
+In den folgenden Tabellen finden Sie detaillierte Informationen zu den einstellungen, die zum Schutz von Arbeitsdateien auf Geräten verfügbar sind, sowie die Einstellungen, die steuern, wie Benutzer auf Office dateien von ihren mobilen Geräten zugreifen.
   
  Weitere Informationen finden Sie unter [How do protection features in Microsoft 365 Business Premium map to Intune settings](map-protection-features-to-intune-settings.md). 
   
@@ -86,7 +86,7 @@ Die folgenden Einstellungen stehen zum Schutz von Arbeitsdateien zur Verfügung,
 |:-----|:-----|
 |Einstellung  <br/> |Beschreibung  <br/> |
 |Arbeitsdateien von einem inaktiven Gerät löschen nach diesem Zeitraum (Tage)  <br/> |Wenn ein Gerät nicht für die Anzahl der Tage verwendet wird, die Sie hier angeben, werden alle auf dem Gerät gespeicherten Arbeitsdateien automatisch gelöscht.  <br/> |
-|Benutzer zum Speichern aller Arbeitsdateien auf OneDrive for Business zwingen  <br/> |Wenn diese Einstellung **Auf** ist, ist oneDrive for Business der einzige verfügbare Speicherort für Arbeitsdateien.  <br/> |
+|Benutzer zum Speichern aller Arbeitsdateien auf OneDrive for Business zwingen  <br/> |Wenn diese Einstellung **Auf** ist, ist der einzige verfügbare Speicherort für Arbeitsdateien OneDrive for Business.  <br/> |
 |Arbeitsdateien verschlüsseln  <br/> |Behalten Sie für diese Einstellung **Ein** bei, damit Arbeitsdateien durch Verschlüsselung geschützt werden. Auch wenn das Gerät verloren geht oder gestohlen wird, kann niemand Ihre Unternehmensdaten lesen.  <br/> |
    
 ### <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>Einstellungen, die steuern, wie Benutzer auf mobilen Geräten auf Office-Dateien zugreifen
@@ -96,8 +96,8 @@ Mit den folgenden Einstellungen können Sie den Zugriff von Benutzern auf Office
 |||
 |:-----|:-----|
 |Einstellung  <br/> |Beschreibung  <br/> |
-|Für den Zugriff auf Office-Apps PIN bzw. digitalen Fingerabdruck anfordern  <br/> |Wenn diese Einstellung **Auf ist,** müssen Benutzer zusätzlich zu Ihrem Benutzernamen und Kennwort eine andere Form der Authentifizierung bereitstellen, bevor sie Office-Apps auf ihren mobilen Geräten verwenden können.<br/> |
+|Für den Zugriff auf Office-Apps PIN bzw. digitalen Fingerabdruck anfordern  <br/> |Wenn diese Einstellung **Auf** ist, müssen Benutzer zusätzlich zu Ihrem Benutzernamen und Kennwort eine andere Form der Authentifizierung bereitstellen, bevor sie Office apps auf ihren mobilen Geräten verwenden können.<br/> |
 |PIN nach dieser Anzahl von fehlerhaften Anmeldeversuchen zurücksetzen  <br/> |Um zu verhindern, dass ein nicht autorisierter Benutzer eine PIN nach dem Zufallsprinzip errät, wird die PIN, die nach der angegebenen Anzahl von Fehlversuchen zurückgesetzt.  <br/> |
 |Benutzer müssen sich erneut anmelden, nachdem Office-Apps im Leerlauf waren für  <br/> |Diese Einstellung bestimmt, wie lange ein Benutzer im Leerlauf sein kann, bevor er zur erneuten Anmeldung aufgefordert wird.  <br/> |
 |Zugriff auf Arbeitsdateien auf Geräten mit entfernten Nutzungsbeschränkungen verweigern  <br/> |Clevere Benutzer verfügen möglicherweise über ein Gerät, bei dem die Nutzungsbeschränkungen entfernt wurden. Dies bedeutet, dass der Benutzer das Betriebssystem ändern kann, wodurch das Gerät empfänglicher für Schadsoftware werden kann. Solche Geräte können gesperrt werden, wenn die Einstellung auf **Ein** festgelegt wurde.  <br/> |
-|Benutzer dürfen Inhalte aus Office-Apps nicht in persönliche Apps kopieren  <br/> |Dies ist standardmäßig zulässig, aber wenn die Einstellung **Auf** festgelegt ist, könnte der Benutzer Informationen in einer Arbeitsdatei in eine persönliche Datei kopieren. Wenn die Einstellung **deaktiviert ist,** kann der Benutzer keine Informationen aus einem Arbeitskonto in eine persönliche App oder ein persönliches Konto kopieren.  <br/> |
+|Nicht zulassen, dass Benutzer Inhalte aus Office apps in persönliche Apps kopieren  <br/> |Dies ist standardmäßig zulässig, aber wenn die Einstellung **Auf** festgelegt ist, könnte der Benutzer Informationen in einer Arbeitsdatei in eine persönliche Datei kopieren. Wenn die Einstellung **deaktiviert ist,** kann der Benutzer keine Informationen aus einem Arbeitskonto in eine persönliche App oder ein persönliches Konto kopieren.  <br/> |

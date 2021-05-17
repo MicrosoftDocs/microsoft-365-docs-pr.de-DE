@@ -35,6 +35,6 @@ Spanisch: Mon-Fri 9:00-17:00 Uhr
 
 Spanisch: 24 Stunden am Tag, 7 Tage die Woche
 
-Alternative Telefon Nummer: 123 002 000 05
+Alternative Telefonnummer: 123 002 000 05
 
 Es gelten die Ortstarife.

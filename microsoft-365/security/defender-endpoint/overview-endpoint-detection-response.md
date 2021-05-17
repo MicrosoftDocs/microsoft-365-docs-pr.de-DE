@@ -1,8 +1,8 @@
 ---
-title: Übersicht über Die Erkennungs- und Reaktionsfunktionen von Endpunkten
+title: Übersicht über EDR Funktionen
 ms.reviewer: ''
-description: Erfahren Sie mehr über die Funktionen für die Erkennung und Reaktion von Endpunkten in Microsoft Defender for Endpoint
-keywords: Microsoft Defender for Endpoint, Endpunkterkennung und -reaktion, Reaktion, Erkennung, Cybersicherheit, Schutz
+description: Erfahren Sie mehr EDR Funktionen in Microsoft Defender for Endpoint
+keywords: Microsoft Defender for Endpoint, EDR, Antwort, Erkennung, Cybersicherheit, Schutz
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -24,7 +24,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933517"
 ---
-# <a name="overview-of-endpoint-detection-and-response"></a>Übersicht über Die Erkennung und Reaktion von Endpunkten
+# <a name="overview-of-endpoint-detection-and-response"></a>Übersicht über EDR
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "51933517"
 
 > Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Defender for Endpoint-Endpunkterkennungs- und -reaktionsfunktionen bieten erweiterte Angriffserkennungen, die nahezu in Echtzeit und mit Aktionen verbunden sind. Sicherheitsanalysten können Benachrichtigungen effektiv priorisieren, Einblick in den gesamten Umfang einer Verletzung erhalten und Aktionen ergreifen, um Bedrohungen zu beheben.
+Defender for Endpoint EDR bietet erweiterte Angriffserkennungen, die nahezu in Echtzeit und mit Aktionen verbunden sind. Sicherheitsanalysten können Benachrichtigungen effektiv priorisieren, Einblick in den gesamten Umfang einer Verletzung erhalten und Aktionen ergreifen, um Bedrohungen zu beheben.
 
 Wenn eine Bedrohung erkannt wird, werden im System Warnungen erstellt, die ein Analytiker untersuchen kann. Benachrichtigungen, die auf die gleichen Angriffsmethoden oder den gleichen Angreifer zurückzuführen sind, werden in der Entität _Vorfall_ zusammengefasst. Das Zusammenfassen von Benachrichtigungen erleichtert es Analytikern, Bedrohungen kollektiv zu untersuchen und darauf zu reagieren.
 

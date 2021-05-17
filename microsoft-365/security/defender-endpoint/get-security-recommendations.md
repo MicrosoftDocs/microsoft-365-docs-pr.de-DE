@@ -1,7 +1,7 @@
 ---
 title: Erhalten von Sicherheitsempfehlungen
 description: Ruft eine Sammlung von Sicherheitsempfehlungen im Zusammenhang mit einer bestimmten Geräte-ID ab.
-keywords: apis, graph api, supported apis, get, list, file, information, security recommendation per device, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
+keywords: apis, graph api, supported apis, get, list, file, information, security recommendation per device, threat & Sicherheitsrisikomanagement api, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -54,7 +54,7 @@ GET /api/machines/{machineId}/recommendations
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
+Authorization | String | Bearer {token}. **Erforderlich**.
 
 
 ## <a name="request-body"></a>Anforderungstext

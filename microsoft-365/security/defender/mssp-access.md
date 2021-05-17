@@ -1,7 +1,7 @@
 ---
 title: Bereitstellen des Zugriffs auf verwaltete Sicherheitsdienstanbieter (Managed Security Service Provider, MSSP)
 description: Informationen zu Änderungen vom Microsoft Defender Security Center zum Microsoft 365 Security Center
-keywords: Erste Schritte mit dem Microsoft 365 Security Center, Microsoft Defender für Office 365, Microsoft Defender for Endpoint, MDO, MDE, einzelner Fensterausschnitt, konvergenten Portal, Sicherheitsportal, Defender-Sicherheitsportal
+keywords: Erste Schritte mit dem Microsoft 365 Security Center, Microsoft Defender for Office 365, Microsoft Defender for Endpoint, MDO, MDE, einzelner Ausschnitt, konvergenten Portal, Sicherheitsportal, Defender Security Portal
 ms.prod: microsoft-365-enterprise
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -38,26 +38,26 @@ ms.locfileid: "51935353"
 
 Gehen Sie wie folgt vor, um eine mehr mandantendelegierte Zugriffslösung zu implementieren:
 
-1. Aktivieren [Sie die rollenbasierte Zugriffssteuerung](/windows/security/threat-protection/microsoft-defender-atp/rbac) in Defender for Endpoint im Microsoft 365 Security Center, und stellen Sie eine Verbindung mit Azure Active Directory (Azure AD)-Gruppen bereit.
+1. Aktivieren [Sie die rollenbasierte Zugriffssteuerung](/windows/security/threat-protection/microsoft-defender-atp/rbac) in Defender for Endpoint in Microsoft 365 Security Center, und stellen Sie eine Verbindung mit Azure Active Directory (Azure AD) bereit.
 
 2. Konfigurieren [von Governance-Zugriffspaketen](/azure/active-directory/governance/identity-governance-overview) für Zugriffsanforderung und -bereitstellung.
 
 3. Verwalten von Zugriffsanforderungen und -überwachungen in [Microsoft Myaccess](/azure/active-directory/governance/entitlement-management-request-approve).
 
-## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-security-center"></a>Aktivieren von rollenbasierten Zugriffssteuerelementen in Microsoft Defender for Endpoint im Microsoft 365 Security Center
+## <a name="enable-role-based-access-controls-in-microsoft-defender-for-endpoint-in-microsoft-365-security-center"></a>Aktivieren von rollenbasierten Zugriffssteuerelementen in Microsoft Defender for Endpoint in Microsoft 365 Security Center
 
 1. **Erstellen von Zugriffsgruppen für MSSP-Ressourcen in Customer AAD: Groups**
 
-    Diese Gruppen werden mit den Rollen verknüpft, die Sie in Defender for Endpoint im Microsoft 365 Security Center erstellen. Erstellen Sie dazu im Kunden-AD-Mandanten drei Gruppen. In unserem Beispielansatz erstellen wir die folgenden Gruppen:
+    Diese Gruppen werden mit den Rollen verknüpft, die Sie in Defender for Endpoint in Microsoft 365 erstellen. Erstellen Sie dazu im Kunden-AD-Mandanten drei Gruppen. In unserem Beispielansatz erstellen wir die folgenden Gruppen:
 
     - Tier 1 Analyst 
     - Tier 2 Analyst 
     - Genehmiger von MSSP-Analysten  
 
 
-2. Erstellen Sie Defender for Endpoint-Rollen für geeignete Zugriffsebenen in Customer Defender for Endpoint in Microsoft 365 Security Center-Rollen und -Gruppen.
+2. Erstellen Sie Defender for Endpoint-Rollen für geeignete Zugriffsebenen in Customer Defender for Endpoint in Microsoft 365 und -Gruppen.
 
-    Um rbAC im Microsoft 365 Security Center des Kunden zu aktivieren, greifen Sie auf Berechtigungen > Endpunktrollen & Gruppen **>** Rollen mit einem Benutzerkonto mit globalen Administrator- oder Sicherheitsadministratorrechten zu.
+    Um rbAC im Microsoft 365 Security Center zu aktivieren, greifen Sie auf Berechtigungen > Endpunktrollen & Gruppen **>** Rollen mit einem Benutzerkonto mit globalen Administrator- oder Sicherheitsadministratorrechten zu.
 
     ![Abbildung des MSSP-Zugriffs](../../media/mssp-access.png)
 
@@ -130,7 +130,7 @@ Gehen Sie wie folgt vor, um eine mehr mandantendelegierte Zugriffslösung zu imp
     Beispiel:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
 2. Genehmigen oder Verweigern von Anforderungen im **Abschnitt Genehmigungen** der Benutzeroberfläche.
 
-     Zu diesem Zeitpunkt wurde der Analystenzugriff bereitgestellt, und jeder Analyst sollte auf das Microsoft 365 Security Center des Kunden zugreifen können: 
+     Zu diesem Zeitpunkt wurde der Analystenzugriff bereitgestellt, und jeder Analyst sollte in der Lage sein, auf das Microsoft 365 Security Center des Kunden zu zugreifen: 
 
     `https://security.microsoft.com/?tid=<CustomerTenantId>` mit den Berechtigungen und Rollen, denen sie zugewiesen wurden.
 

@@ -37,15 +37,15 @@ ms.locfileid: "51933349"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Der Informationsschutz ist ein integraler Bestandteil der Microsoft 365 Enterprise-Suite und bietet intelligenten Schutz, um vertrauliche Daten zu schützen und gleichzeitig die Produktivität am Arbeitsplatz zu ermöglichen.
+Der Informationsschutz ist ein integraler Bestandteil Microsoft 365 Enterprise Suite, der intelligenten Schutz bietet, um vertrauliche Daten zu schützen und gleichzeitig die Produktivität am Arbeitsplatz zu ermöglichen.
 
 
 >[!TIP]
-> Lesen Sie unseren Blogbeitrag zur Integration von Microsoft Defender for Endpoint in Microsoft Information Protection, um vertrauliche Daten auf Windows-Geräten zu ermitteln, zu schützen und [zu überwachen.](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)
+> Lesen Sie unseren Blogbeitrag zur Integration von Microsoft Defender for Endpoint in Microsoft Information Protection, um vertrauliche Daten auf Windows [zu ermitteln, zu schützen](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)und zu überwachen.
 
 Defender for Endpoint wendet die folgenden Methoden zum Ermitteln, Klassifizieren und Schützen von Daten an:
 
-- **Datenermittlung** – Identifizieren vertraulicher Daten auf gefährdeten Windows-Geräten
+- **Datenermittlung** – Identifizieren vertraulicher Daten auf Windows gefährdeten Geräten
 - **Datenklassifizierung** – Automatische Klassifizierung von Daten basierend auf gängigen Microsoft Information Protection (MIP)-Richtlinien, die in Office 365 Security & Compliance Center verwaltet werden. Mit der automatischen Klassifizierung können Sie vertrauliche Daten auch dann schützen, wenn der Endbenutzer sie nicht manuell klassifiziert hat.
 
 
@@ -55,7 +55,7 @@ Defender for Endpoint ermittelt Automatisch Dateien mit Vertraulichkeitsbezeichn
 
 Vertraulichkeitsbezeichnungen klassifizieren und schützen vertrauliche Inhalte.
 
-Typen vertraulicher Informationen in der Office 365 Data Loss Prevention (DLP)-Implementierung fallen in zwei Kategorien:
+Typen vertraulicher Informationen in der Office 365 (Data Loss Prevention, DLP) fallen in zwei Kategorien:
 
 - Standard
 - Benutzerdefiniert
@@ -64,7 +64,7 @@ Zu den standardmäßigen vertraulichen Informationstypen gehören Informationen 
 
 Benutzerdefinierte Typen sind diejenigen, die Sie definieren und zum Schutz einer anderen Art vertraulicher Informationen (z. B. Mitarbeiter-IDs oder Projektnummern) entworfen haben. Weitere Informationen finden Sie unter [Create a custom sensitive information type](https://docs.microsoft.com/office365/securitycompliance/create-a-custom-sensitive-information-type).
 
-Wenn eine Datei auf einem Windows-Gerät erstellt oder bearbeitet wird, überprüft Defender for Endpoint den Inhalt, um zu bewerten, ob sie vertrauliche Informationen enthält.
+Wenn eine Datei auf einem Windows erstellt oder bearbeitet wird, überprüft Defender for Endpoint den Inhalt, um zu bewerten, ob er vertrauliche Informationen enthält.
 
 Aktivieren Sie die Azure Information Protection-Integration, sodass eine Datei, die vertrauliche Informationen enthält, von Defender for Endpoint mit Bezeichnungen oder Informationstypen erkannt wird, automatisch vom Gerät an Azure Information Protection weitergeleitet wird.
 
@@ -104,7 +104,7 @@ InformationProtectionLogs_CL
 
 - Kunden müssen über ein Abonnement für Azure Information Protection verfügen.
 - Aktivieren der Azure Information Protection-Integration in Microsoft Defender Security Center:
-    - Wechseln Sie **zu Einstellungen** im Microsoft Defender Security Center, klicken Sie unter Allgemein **auf Erweiterte** **Einstellungen.**
+    - Wechseln Sie **zu Einstellungen** in Microsoft Defender Security Center, klicken Sie unter **Einstellungen** auf **Erweitert.**
 
 
 

@@ -45,15 +45,15 @@ Diese Anwendungen können das Risiko erhöhen, dass Ihr Netzwerk mit Schadsoftwa
 
 Defender for Endpoint unter Linux kann PUA-Dateien erkennen und melden. Wenn sie im Sperrmodus konfiguriert sind, werden PUA-Dateien in die Quarantäne verschoben.
 
-Wenn ein PUA auf einem Endpunkt erkannt wird, speichert Defender for Endpoint unter Linux eine Aufzeichnung der Infektion im Bedrohungsverlauf. Der Verlauf kann über das Microsoft Defender Security Center-Portal oder über das `mdatp` Befehlszeilentool visualisiert werden. Der Bedrohungsname enthält das Wort "Application".
+Wenn ein PUA auf einem Endpunkt erkannt wird, speichert Defender for Endpoint unter Linux eine Aufzeichnung der Infektion im Bedrohungsverlauf. Der Verlauf kann über das Microsoft Defender Security Center oder über das `mdatp` Befehlszeilentool visualisiert werden. Der Bedrohungsname enthält das Wort "Application".
 
 ## <a name="configure-pua-protection"></a>Konfigurieren des PUA-Schutzes
 
 Der PUA-Schutz in Defender for Endpoint unter Linux kann auf eine der folgenden Arten konfiguriert werden:
 
 - **Off**: Der PUA-Schutz ist deaktiviert.
-- **Überwachung:** PUA-Dateien werden in den Produktprotokollen, jedoch nicht im Microsoft Defender Security Center gemeldet. Es werden keine Aufzeichnungen der Infektion im Bedrohungsverlauf gespeichert, und das Produkt hat keine Maßnahmen ergriffen.
-- **Block**: PUA-Dateien werden in den Produktprotokollen und im Microsoft Defender Security Center gemeldet. Ein Datensatz der Infektion wird im Bedrohungsverlauf gespeichert, und das Produkt hat Maßnahmen ergriffen.
+- **Überwachung**: PUA-Dateien werden in den Produktprotokollen gemeldet, jedoch nicht in Microsoft Defender Security Center. Es werden keine Aufzeichnungen der Infektion im Bedrohungsverlauf gespeichert, und das Produkt hat keine Maßnahmen ergriffen.
+- **Block**: PUA-Dateien werden in den Produktprotokollen und in den Microsoft Defender Security Center. Ein Datensatz der Infektion wird im Bedrohungsverlauf gespeichert, und das Produkt hat Maßnahmen ergriffen.
 
 >[!WARNING]
 >Standardmäßig ist der PUA-Schutz im **Überwachungsmodus** konfiguriert.

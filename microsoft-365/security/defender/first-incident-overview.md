@@ -38,7 +38,7 @@ ms.locfileid: "52297176"
 
 Die Strategie für die Reaktion auf Vorfälle in einer Organisation bestimmt, dass sie zunehmend störende Sicherheitsvorfälle und Cyberkriminalität umgehen kann. Es ist zwar wichtig, vorbeugende Maßnahmen zu ergreifen, aber die Fähigkeit, schnell zu handeln, um erkannte Vorfälle zu eindähmen, auszulöschen und von erkannten Vorfällen wiederhergestellt zu werden, kann Schäden und Geschäftsverluste minimieren.
 
-Diese exemplarische Vorgehensweise zur Reaktion auf Vorfälle zeigt, wie Sie als Teil eines Sicherheitseinsatzteams die meisten der wichtigsten Schritte zur Reaktion auf Vorfälle in Microsoft 365 ausführen können. Die Schritte sind hier aufgeführt:
+Diese exemplarische Vorgehensweise zur Reaktion auf Vorfälle zeigt, wie Sie als Teil eines Sicherheitsteams die meisten wichtigen Schritte zur Reaktion auf Vorfälle in Microsoft 365 Defender ausführen können. Die Schritte sind hier aufgeführt:
 
 - Vorbereiten Ihrer Sicherheitslage
 - Für jeden Vorfall:
@@ -52,9 +52,9 @@ Vorfälle in Microsoft 365 Defender sind die logischen Ausgangspunkte für die A
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[![Vorbereiten Ihrer Organisation und Microsoft 365 Mandanten](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
+[![Vorbereiten Ihrer Organisation und des Microsoft 365-Mandanten](../../media/first-incident-overview/first-incident-path.png)](first-incident-prepare.md)
 
-Stellen Sie sicher, dass Ihre Organisation Microsoft 365 Mandanten [für die Behandlung von Vorfällen vorbereitet ist.](first-incident-prepare.md)
+Stellen Sie sicher, dass Ihre Organisation und Der Microsoft 365-Mandant [für die Behandlung von Vorfällen vorbereitet ist.](first-incident-prepare.md)
 
 ## <a name="see-also"></a>Siehe auch
 

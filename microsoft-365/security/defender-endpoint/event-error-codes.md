@@ -46,7 +46,7 @@ Wenn Geräte beispielsweise nicht in der Liste Geräte angezeigt **werden,** mü
 
 2. Führen Sie in der Protokollliste unter **Protokollzusammenfassung** einen Bildlauf durch, bis **Microsoft-Windows-SENSE/Operational angezeigt wird.** Doppelklicken Sie auf das Element, um das Protokoll zu öffnen.
 
-   a.  Sie können auch auf das Protokoll zugreifen, indem Sie **Anwendungen und Dienstprotokolle** Microsoft Windows SENSE erweitern  >    >    >   und auf **Betriebs klicken.**
+   a.  Sie können auch auf das Protokoll zugreifen, indem Sie Die Anwendungs- und **Dienstprotokolle** von Microsoft Windows erweitern und  >    >    >   auf **Betriebs.**
 
    > [!NOTE]
    > SENSE ist der interne Name, der verwendet wird, um auf den Verhaltenssensor zu verweisen, der Microsoft Defender for Endpoint unterstützt.
@@ -99,14 +99,14 @@ Der Dienst konnte die externen Verarbeitungsserver unter dieser URL nicht kontak
 <td>Das Gerät wurde nicht ordnungsgemäß onboardiert und meldet nicht an das Portal.</td>
 <td>Das Onboarding muss vor dem Starten des Diensts ausgeführt werden.<br>
 Überprüfen Sie, ob die Onboardingeinstellungen und Skripts ordnungsgemäß bereitgestellt wurden. Versuchen Sie, die Konfigurationspakete erneut zu bereitstellen.<br>
-Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboarding von Windows 10-Geräten.</a></td>
+Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboard Windows 10 devices</a>.</td>
 </tr>
 <tr>
 <td>7 </td>
 <td>Der Microsoft Defender for Endpoint-Dienst konnte die Onboardingparameter nicht lesen. Fehler: <code>variable</code> .</td>
 <td>Variable = detaillierte Fehlerbeschreibung. Das Gerät wurde nicht ordnungsgemäß onboardiert und meldet nicht an das Portal.</td>
 <td>Überprüfen Sie, ob die Onboardingeinstellungen und Skripts ordnungsgemäß bereitgestellt wurden. Versuchen Sie, die Konfigurationspakete erneut zu bereitstellen.<br>
-Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboarding von Windows 10-Geräten.</a></td>
+Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboard Windows 10 devices</a>.</td>
 </tr>
 <tr>
 <td>8 </td>
@@ -114,21 +114,21 @@ Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 de
 <td><b>Während des Onboardings:</b> Fehler beim Bereinigen der Konfiguration während des Onboardings durch den Dienst. Der Onboardingprozess wird fortgesetzt. <br><br> <b>Während des Offboardings:</b> Der Dienst konnte seine Konfiguration während des Offboardings nicht bereinigen. Der Offboardingvorgang wurde abgeschlossen, der Dienst wird jedoch weiterhin ausgeführt.
  </td>
 <td><b>Onboarding:</b> Keine Aktion erforderlich. <br><br> <b>Offboarding:</b> Starten Sie das System neu.<br>
-Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboarding von Windows 10-Geräten.</a></td>
+Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboard Windows 10 devices</a>.</td>
 </tr>
 <tr>
 <td>9 </td>
 <td>Der Microsoft Defender for Endpoint-Dienst konnte seinen Starttyp nicht ändern. Fehlercode: <code>variable</code> .</td>
 <td><b>Während des Onboardings:</b> Das Gerät wurde nicht ordnungsgemäß onboardiert und meldet nicht an das Portal. <br><br><b>Während des Offboardings:</b> Fehler beim Ändern des Dienststarttyps. Der Offboardingprozess wird fortgesetzt. </td>
 <td>Überprüfen Sie, ob die Onboardingeinstellungen und Skripts ordnungsgemäß bereitgestellt wurden. Versuchen Sie, die Konfigurationspakete erneut zu bereitstellen.<br>
-Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboarding von Windows 10-Geräten.</a></td>
+Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboard Windows 10 devices</a>.</td>
 </tr>
 <tr>
-<td>10  </td>
+<td>10</td>
 <td>Der Microsoft Defender for Endpoint-Dienst konnte die Onboardinginformationen nicht beibehalten. Fehlercode: <code>variable</code> .</td>
 <td>Das Gerät wurde nicht ordnungsgemäß onboardiert und meldet nicht an das Portal.</td>
 <td>Überprüfen Sie, ob die Onboardingeinstellungen und Skripts ordnungsgemäß bereitgestellt wurden. Versuchen Sie, die Konfigurationspakete erneut zu bereitstellen.<br>
-Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboarding von Windows 10-Geräten.</a></td>
+Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboard Windows 10 devices</a>.</td>
 </tr>
 <tr>
 <td>11</td>
@@ -159,29 +159,29 @@ Der Dienst konnte die externen Verarbeitungsserver unter dieser URL nicht kontak
 <tr>
 <td>17 </td>
 <td>Der Microsoft Defender for Endpoint-Dienst konnte den Speicherort des Diensts für verbundene Benutzererfahrungen und Telemetrie nicht ändern. Fehlercode: <code>variable</code> .</td>
-<td>Beim Windows-Telemetriedienst ist ein Fehler aufgetreten.</td>
+<td>Beim Telemetriedienst ist Windows aufgetreten.</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Stellen Sie sicher, dass der Diagnosedatendienst aktiviert ist.</a><br>
 Überprüfen Sie, ob die Onboardingeinstellungen und Skripts ordnungsgemäß bereitgestellt wurden. Versuchen Sie, die Konfigurationspakete erneut zu bereitstellen.<br>
-Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboarding von Windows 10-Geräten.</a></td>
+Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboard Windows 10 devices</a>.</td>
 </tr>
 <tr>
 <td>18 </td>
 <td>OOBE (Windows Welcome) ist abgeschlossen.</td>
-<td>Der Dienst wird erst gestartet, nachdem alle Windows-Updates installiert wurden.</td>
+<td>Der Dienst wird erst gestartet, nachdem alle Windows installiert wurden.</td>
 <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
 </tr>
 <tr>
 <td>19</td>
 <td>OOBE (Windows Welcome) wurde noch nicht abgeschlossen.</td>
-<td>Der Dienst wird erst gestartet, nachdem alle Windows-Updates installiert wurden.</td>
+<td>Der Dienst wird erst gestartet, nachdem alle Windows installiert wurden.</td>
 <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.<br>
-Wenn dieser Fehler nach einem Systemneustart weiterhin auftritt, stellen Sie sicher, dass alle Windows-Updates vollständig installiert sind.</td>
+Wenn dieser Fehler nach einem Systemneustart weiterhin auftritt, stellen Sie sicher, dass alle Windows vollständig installiert sind.</td>
 </tr>
 <tr>
 <td>20</td>
-<td>Kann nicht warten, bis OOBE (Windows Welcome) abgeschlossen ist. Fehlercode: <code>variable</code> .</td>
+<td>Kann nicht warten, bis OOBE (Windows) abgeschlossen ist. Fehlercode: <code>variable</code> .</td>
 <td>Interner Fehler.</td>
-<td>Wenn dieser Fehler nach einem Systemneustart weiterhin auftritt, stellen Sie sicher, dass alle Windows-Updates vollständig installiert sind.</td>
+<td>Wenn dieser Fehler nach einem Systemneustart weiterhin auftritt, stellen Sie sicher, dass alle Windows vollständig installiert sind.</td>
 </tr>
 <tr>
 <td>25</td>
@@ -189,7 +189,7 @@ Wenn dieser Fehler nach einem Systemneustart weiterhin auftritt, stellen Sie sic
 <td>Das Gerät wurde nicht ordnungsgemäß onboardiert.
 Er wird dem Portal gemeldet, der Dienst wird jedoch möglicherweise nicht in SCCM oder der Registrierung registriert angezeigt.</td>
 <td>Überprüfen Sie, ob die Onboardingeinstellungen und Skripts ordnungsgemäß bereitgestellt wurden. Versuchen Sie, die Konfigurationspakete erneut zu bereitstellen.<br>
-Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboarding von Windows 10-Geräten.</a></td>
+Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboard Windows 10 devices</a>.</td>
 </tr>
 <tr>
 <td>26</td>
@@ -197,23 +197,23 @@ Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 de
 <td>Das Gerät wurde nicht ordnungsgemäß onboardiert.<br>
 Er wird dem Portal gemeldet, der Dienst wird jedoch möglicherweise nicht in SCCM oder der Registrierung registriert angezeigt.</td>
 <td>Überprüfen Sie, ob die Onboardingeinstellungen und Skripts ordnungsgemäß bereitgestellt wurden. Versuchen Sie, die Konfigurationspakete erneut zu bereitstellen.<br>
-Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboarding von Windows 10-Geräten.</a></td>
+Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboard Windows 10 devices</a>.</td>
 </tr>
 <tr>
 <td>27</td>
-<td>Der Microsoft Defender for Endpoint-Dienst konnte den SENSE-bewussten Modus in Microsoft Defender Antivirus nicht aktivieren. Fehler beim Onboardingprozess. Fehlercode: <code>variable</code> .</td>
-<td>Normalerweise wird Microsoft Defender Antivirus in einen speziellen passiven Zustand ein, wenn ein anderes Antischasoftwareprodukt in Echtzeit ordnungsgemäß auf dem Gerät ausgeführt wird und das Gerät an Defender for Endpoint meldet.</td>
+<td>Der Microsoft Defender for Endpoint-Dienst konnte den SENSE-bewussten Modus in einem Microsoft Defender Antivirus. Fehler beim Onboardingprozess. Fehlercode: <code>variable</code> .</td>
+<td>Normalerweise wird Microsoft Defender Antivirus einen besonderen passiven Zustand erhalten, wenn ein anderes Antischalwareprodukt in Echtzeit ordnungsgemäß auf dem Gerät ausgeführt wird und das Gerät defender for Endpoint meldet.</td>
 <td>Überprüfen Sie, ob die Onboardingeinstellungen und Skripts ordnungsgemäß bereitgestellt wurden. Versuchen Sie, die Konfigurationspakete erneut zu bereitstellen.<br>
-Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboarding von Windows 10-Geräten.</a><br>
+Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboard Windows 10 devices</a>.<br>
 Stellen Sie sicher, dass der Antischalwareschutz in Echtzeit ordnungsgemäß ausgeführt wird.</td>
 </tr>
 <tr>
 <td>28</td>
 <td>Fehler bei der Registrierung des Microsoft Defender for Endpoint Connected User Experiences and Telemetry Service. Fehlercode: <code>variable</code> .</td>
-<td>Beim Windows-Telemetriedienst ist ein Fehler aufgetreten.</td>
+<td>Beim Telemetriedienst ist Windows aufgetreten.</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Stellen Sie sicher, dass der Diagnosedatendienst aktiviert ist.</a><br>
 Überprüfen Sie, ob die Onboardingeinstellungen und Skripts ordnungsgemäß bereitgestellt wurden. Versuchen Sie, die Konfigurationspakete erneut zu bereitstellen.<br>
-Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboarding von Windows 10-Geräten.</a></td>
+Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboard Windows 10 devices</a>.</td>
 </tr>
 <tr>
 <td>29</td>
@@ -223,17 +223,17 @@ Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 de
 </tr>
 <tr>
 <td>30</td>
-<td>Der Microsoft Defender for Endpoint-Dienst konnte den SENSE-benachrichtigungsmodus in Microsoft Defender Antivirus nicht deaktivieren. Fehlercode: <code>variable</code> .</td>
-<td>Normalerweise wird Microsoft Defender Antivirus in einen speziellen passiven Zustand ein, wenn ein anderes Antischasoftwareprodukt in Echtzeit ordnungsgemäß auf dem Gerät ausgeführt wird und das Gerät an Defender for Endpoint meldet.</td>
+<td>Der Microsoft Defender for Endpoint-Dienst konnte den SENSE-benachrichtigungsmodus in einem Microsoft Defender Antivirus. Fehlercode: <code>variable</code> .</td>
+<td>Normalerweise wird Microsoft Defender Antivirus einen besonderen passiven Zustand erhalten, wenn ein anderes Antischalwareprodukt in Echtzeit ordnungsgemäß auf dem Gerät ausgeführt wird und das Gerät defender for Endpoint meldet.</td>
 <td>Überprüfen Sie, ob die Onboardingeinstellungen und Skripts ordnungsgemäß bereitgestellt wurden. Versuchen Sie, die Konfigurationspakete erneut zu bereitstellen.<br>
-Siehe <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboarding von Windows 10-Geräten</a><br>
+Siehe <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Onboarding Windows 10 Geräte</a><br>
 Stellen Sie sicher, dass der Antischalwareschutz in Echtzeit ordnungsgemäß ausgeführt wird.</td>
 </tr>
 <tr>
 <td>31</td>
 <td>Die Registrierung des Microsoft Defender for Endpoint Connected User Experiences and Telemetry Service ist fehlgeschlagen. Fehlercode: <code>variable</code> .</td>
-<td>Beim Onboarding ist beim Windows-Telemetriedienst ein Fehler aufgetreten. Der Offboardingprozess wird fortgesetzt.</td>
-<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">Überprüfen Sie mit dem Windows-Telemetriedienst auf Fehler.</a></td>
+<td>Beim Onboarding ist beim Windows ein Fehler aufgetreten. Der Offboardingprozess wird fortgesetzt.</td>
+<td><a href="troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled" data-raw-source="[Check for errors with the Windows telemetry service](troubleshoot-onboarding.md#ensure-the-diagnostic-data-service-is-enabled)">Überprüfen Sie mit dem Telemetriedienst Windows Fehler.</a></td>
 </tr>
 <tr>
 <td>32</td>
@@ -251,17 +251,17 @@ Wenn der Bezeichner nicht beibehalten wird, wird das gleiche Gerät möglicherwe
 <tr>
 <td>34</td>
 <td>Der Microsoft Defender for Endpoint-Dienst konnte sich nicht selbst als Abhängigkeit vom Dienst für verbundene Benutzererfahrungen und Telemetrie hinzufügen, wodurch der Onboardingprozess fehlschlagen konnte. Fehlercode: <code>variable</code> .</td>
-<td>Beim Windows-Telemetriedienst ist ein Fehler aufgetreten.</td>
+<td>Beim Telemetriedienst ist Windows aufgetreten.</td>
 <td><a href="troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy" data-raw-source="[Ensure the diagnostic data service is enabled](troubleshoot-onboarding.md#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)">Stellen Sie sicher, dass der Diagnosedatendienst aktiviert ist.</a><br>
 Überprüfen Sie, ob die Onboardingeinstellungen und Skripts ordnungsgemäß bereitgestellt wurden. Versuchen Sie, die Konfigurationspakete erneut zu bereitstellen.<br>
-Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboarding von Windows 10-Geräten.</a></td>
+Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devices](configure-endpoints.md)">Informationen finden Sie unter Onboard Windows 10 devices</a>.</td>
 </tr>
 <tr>
 <td>35</td>
 <td>Der Microsoft Defender for Endpoint-Dienst konnte sich nicht selbst als Abhängigkeit vom Dienst für verbundene Benutzererfahrungen und Telemetrie entfernen. Fehlercode: <code>variable</code> .</td>
-<td>Beim Offboarding ist beim Windows-Telemetriedienst ein Fehler aufgetreten. Der Offboardingprozess wird fortgesetzt.
+<td>Beim Telemetriedienst Windows während des Offboardings ein Fehler aufgetreten. Der Offboardingprozess wird fortgesetzt.
 </td>
-<td>Überprüfen Sie beim Windows-Diagnosedatendienst auf Fehler.</td>
+<td>Überprüfen Sie mit dem Diagnosedatendienst Windows Fehler.</td>
 </tr>
 <tr>
 <td>36</td>
@@ -494,7 +494,7 @@ Weitere <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 de
 </tr>
 <tr>
    <td>84</td>
-   <td>Festlegen Windows Defender Antivirus-Ausführungsmodus. Erzwingen des passiven Modus: %1, Ergebniscode: %2.</td>
+   <td>Legen Sie Windows Defender Antivirus ausführungsmodus ein. Erzwingen des passiven Modus: %1, Ergebniscode: %2.</td>
    <td>Festlegen des laufenden Defender-Modus (aktiv oder passiv).</td>
    <td>Normale Betriebsbenachrichtigung; keine Aktion erforderlich.</td>
 </tr>

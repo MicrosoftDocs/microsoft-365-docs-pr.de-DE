@@ -29,7 +29,7 @@ ms.locfileid: "51580774"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Individuelles Anpassen der Berichte in Microsoft 365-Nutzungsanalysen
 
-Microsoft 365 Usage Analytics bietet ein Dashboard in Power BI, das Einblicke in die Einführung und Verwendung von Microsoft 365 durch Benutzer bietet. Das Dashboard bildet lediglich einen Ausgangspunkt für die Interaktion mit den Nutzungsdaten. Die Berichte lassen sich zur Gewinnung stärker personalisierter Einblicke anpassen.
+Microsoft 365 Verwendungsanalyse bietet ein Dashboard in Power BI, das Einblicke in die Einführung und Verwendung von Microsoft 365. Das Dashboard bildet lediglich einen Ausgangspunkt für die Interaktion mit den Nutzungsdaten. Die Berichte lassen sich zur Gewinnung stärker personalisierter Einblicke anpassen.
   
 Ferner können Sie den Power BI-Desktop verwenden, um Ihre Berichte weiter anzupassen, indem Sie sie mit anderen Datenquellen verbinden, um umfassendere Einblicke in Ihr Unternehmen zu erhalten.
   
@@ -43,7 +43,7 @@ In diesem Beispiel wird gezeigt, wie Sie die Registerkarte **Aktivierung** inner
   
 1. Wählen Sie **im Aktivierungs-/Lizenzierungsbericht** die Registerkarte **Aktivierung** aus.
     
-2. Geben Sie den Bearbeitungsmodus ein, indem Sie die Schaltfläche **Bearbeiten** oben über die Schaltfläche Weitere Seite ![ in Power BI ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) auswählen. 
+2. Geben Sie den Bearbeitungsmodus ein, indem Sie die Schaltfläche Bearbeiten oben über die Schaltfläche Weitere Seite in Power BI  ![ ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) auswählen. 
     
     ![Klicken Sie auf "Bericht bearbeiten" in der oberen rechten Navigationsleiste](../../media/e2c16663-1fbd-4d7f-887c-0cbb891d3b3d.png)
   
@@ -61,9 +61,9 @@ In diesem Beispiel wird gezeigt, wie Sie die Registerkarte **Aktivierung** inner
 
 Im folgenden Beispiel sehen Sie, wie Sie ein neues visuelles Element zum Nachverfolgen neuer Yammer-Benutzer auf Monatsbasis erstellen.
   
-1. Wechseln Sie mit **dem** linken Navigationsgerät zum Bericht Produktverwendung, und wählen Sie **die Registerkarte Yammer** aus.
+1. Wechseln Sie **mit** dem linken Navigationsgerät zum Bericht Produktverwendung, und wählen Sie **die Registerkarte Yammer** aus.
     
-2. Wechseln Sie in den Bearbeitungsmodus, indem Sie in Power BI und Bearbeiten die Schaltfläche Weitere ![ ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) Seite **auswählen.** 
+2. Wechseln Sie in den Bearbeitungsmodus, indem Sie die Schaltfläche Weitere Seite ![ in Power BI und Bearbeiten ](../../media/d8da3c19-3f2d-4bf6-811e-faa804f74770.png) **auswählen.** 
     
 3. Wählen Sie unten auf der Seite die Option ![Die Schaltfläche "Seite hinzufügen" in Power BI,](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) um eine neue Seite zu erstellen.
   
@@ -105,7 +105,7 @@ Für die meisten Kunden wird das Ändern der Berichte und visuellen Diagrammelem
   
 ### <a name="use-the-reporting-apis"></a>Verwenden der APIs zur Berichterstellung
 
-Sie können zunächst eine direkte Verbindung mit den ODATA-Berichts-APIs von Microsoft 365 herstellen, die diese Berichte verwenden.
+Sie können zunächst eine direkte Verbindung mit den ODATA-Berichts-APIs herstellen, Microsoft 365 diese Berichte verwenden.
   
 1. Navigieren Sie zu **Daten abrufen** \> **Sonstige** \> **ODATA-Feed** \> **Verbinden**.
     
@@ -115,9 +115,9 @@ Sie können zunächst eine direkte Verbindung mit den ODATA-Berichts-APIs von Mi
   
     ![OData-Feed-URL für Power BI Desktop](../../media/c0ef967e-a454-4eba-bc8e-61e113170053.png)
   
-3. Geben Sie Ihre Microsoft 365-Administratoranmeldeinformationen (Organisation oder Schule) ein, um sich bei Microsoft 365 zu authentifizieren, wenn Sie dazu aufgefordert werden.
+3. Geben Sie Microsoft 365 (Organisation oder Schule)-Administratoranmeldeinformationen ein, um sich bei Microsoft 365 zu authentifizieren, wenn Sie dazu aufgefordert werden.
     
-    Weitere Informationen [dazu,](usage-analytics.md#faq) wer auf die Microsoft 365 Adoption-App-Berichte zugreifen darf, finden Sie in den Häufig gestellten Fragen. 
+    Weitere Informationen [dazu,](usage-analytics.md#faq) wer auf die App-Berichte der Microsoft 365 Adoptionsvorlage zugreifen darf, finden Sie in den häufig gestellten Fragen. 
     
 4. Sobald die Verbindung autorisiert ist, wird das Navigationsfenster mit den für Verbindungen verfügbaren Datasets angezeigt.
     
@@ -131,7 +131,7 @@ Sie können zunächst eine direkte Verbindung mit den ODATA-Berichts-APIs von Mi
 
 Sie können ferner die Power BI-Vorlagendatei, die den Berichten der Microsoft 365-Nutzungsanalyse entspricht, als Ausgangspunkt für die Datenverbindung verwenden. Der Vorteil bei der Verwendung der PBIT-Datei besteht darin, dass die Verbindungszeichenfolge darin bereits eingerichtet ist. Ferner können Sie über die vom Basisschema zurückgegebenen Daten hinaus alle erstellten benutzerdefinierten Measures nutzen und weiter auf ihnen aufbauen.
   
-Sie können die Power BI-Vorlagendatei aus dem [Microsoft Download Center herunterladen.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit) Führen Sie nach dem Herunterladen der Power BI-Vorlagendatei die folgenden Schritte aus, um zu beginnen:
+Sie können die Power BI-Vorlagendatei aus dem [Microsoft Download Center herunterladen.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit) Nachdem Sie die Power BI-Vorlagendatei heruntergeladen haben, führen Sie die folgenden Schritte aus, um zu beginnen:
   
 1. Öffnen Sie die PBIT-Datei.
     

@@ -85,14 +85,14 @@ Ereignis-ID | Fehlertyp | Lösungsschritte
 :---:|:---|:---
  `5` | Offboardingdaten wurden gefunden, konnten jedoch nicht gelöscht werden. | Überprüfen der Berechtigungen für die Registrierung, insbesondere<br> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.
 `10` | Onboardingdaten konnten nicht in die Registrierung geschrieben werden |  Überprüfen der Berechtigungen für die Registrierung, insbesondere<br> `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`.<br>Stellen Sie sicher, dass das Skript als Administrator ausgeführt wurde.
-`15` |  Fehler beim Starten des SENSE-Diensts |Überprüfen Sie den Dienstzustand ( `sc query sense` -Befehl). Stellen Sie sicher, dass es sich nicht in einem Zwischenzustand (*"Pending_Stopped"*, *"Pending_Running")* und versuchen Sie, das Skript erneut auszuführen (mit Administratorrechten). <br> <br> Wenn auf dem Gerät Windows 10, Version 1607, ausgeführt wird und der Befehl zurückgegeben wird, starten Sie `sc query sense` `START_PENDING` das Gerät neu. Wenn das Problem durch einen Neustart des Geräts nicht behoben wird, aktualisieren Sie auf KB4015217, und versuchen Sie es erneut.
-`15` | Fehler beim Starten des SENSE-Diensts | Wenn die Fehlermeldung lautet: Systemfehler 577 oder Fehler 1058 ist aufgetreten, müssen Sie den Microsoft Defender Antivirus ELAM-Treiber aktivieren. Anweisungen dazu finden Sie unter [Sicherstellen,](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy) dass Microsoft Defender Antivirus nicht durch eine Richtlinie deaktiviert wird.
+`15` |  Fehler beim Starten des SENSE-Diensts |Überprüfen Sie den Dienstzustand ( `sc query sense` -Befehl). Stellen Sie sicher, dass es sich nicht in einem Zwischenzustand (*"Pending_Stopped"*, *"Pending_Running")* und versuchen Sie, das Skript erneut auszuführen (mit Administratorrechten). <br> <br> Wenn das Gerät ausgeführt Windows 10, gibt Version 1607 und ausführen den Befehl `sc query sense` `START_PENDING` zurück, starten Sie das Gerät neu. Wenn das Problem durch einen Neustart des Geräts nicht behoben wird, aktualisieren Sie auf KB4015217, und versuchen Sie es erneut.
+`15` | Fehler beim Starten des SENSE-Diensts | Wenn die Fehlermeldung lautet: Systemfehler 577 oder Fehler 1058 aufgetreten ist, müssen Sie den Microsoft Defender Antivirus-ELAM-Treiber aktivieren. Anweisungen dazu finden Sie unter Ensure that Microsoft Defender Antivirus is [not disabled by a policy.](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 `30` |  Das Skript konnte nicht warten, bis der Dienst ausgeführt wurde | Der Dienst hätte beim Starten mehr Zeit zum Starten oder Fehler festgestellt. Weitere Informationen zu Ereignissen und Fehlern im Zusammenhang mit SENSE finden Sie unter [Überprüfen von Ereignissen und Fehlern mithilfe der Ereignisanzeige](event-error-codes.md).
 `35` |  Das Skript konnte den erforderlichen Registrierungswert für den Onboardingstatus nicht finden. | Wenn der SENSE-Dienst zum ersten Mal gestartet wird, schreibt er den Onboardingstatus an den Registrierungsspeicherort.<br>`HKLM\SOFTWARE\Microsoft\Windows Advanced Threat Protection\Status`.<br> Das Skript konnte es nach einigen Sekunden nicht finden. Sie können ihn manuell testen und überprüfen, ob er dort ist. Weitere Informationen zu Ereignissen und Fehlern im Zusammenhang mit SENSE finden Sie unter [Überprüfen von Ereignissen und Fehlern mithilfe der Ereignisanzeige](event-error-codes.md).
 `40` | Status des SENSE-Dienst-Onboardings ist nicht auf **1 festgelegt** | Fehler beim ordnungsgemäßen Onboarding des SENSE-Diensts. Weitere Informationen zu Ereignissen und Fehlern im Zusammenhang mit SENSE finden Sie unter [Überprüfen von Ereignissen und Fehlern mithilfe der Ereignisanzeige](event-error-codes.md).
 `65` | Unzureichende Rechte| Führen Sie das Skript erneut mit Administratorrechten aus.
 
-### <a name="troubleshoot-onboarding-issues-using-microsoft-intune"></a>Behandeln von Problemen beim Onboarding mithilfe von Microsoft Intune
+### <a name="troubleshoot-onboarding-issues-using-microsoft-intune"></a>Behandeln von Problemen beim Onboarding mithilfe Microsoft Intune
 
 Sie können Microsoft Intune verwenden, um Fehlercodes zu überprüfen und zu versuchen, die Ursache des Problems zu beheben.
 
@@ -100,13 +100,13 @@ Wenn Sie Richtlinien in Intune konfiguriert haben und sie nicht auf Geräten ver
 
 Verwenden Sie die folgenden Tabellen, um die möglichen Ursachen von Problemen beim Onboarding zu verstehen:
 
-- Microsoft Intune-Fehlercodes und OMA-URIs Tabelle
+- Microsoft Intune fehlercodes und OMA-URIs Tabelle
 - Bekannte Probleme mit der Tabelle "Nichtkonformität"
 - MdM-Ereignisprotokolltabelle (Mobile Device Management)
 
 Wenn keines der Ereignisprotokolle und Problembehandlungsschritte funktioniert, laden Sie das Lokale Skript aus dem Abschnitt Geräteverwaltung des Portals herunter, und führen Sie es in einer Eingabeaufforderung mit erhöhten Rechten aus. 
 
-#### <a name="microsoft-intune-error-codes-and-oma-uris"></a>Microsoft Intune-Fehlercodes und -OMA-URIs
+#### <a name="microsoft-intune-error-codes-and-oma-uris"></a>Microsoft Intune Fehlercodes und OMA-URIs
 
 Fehlercode-Hex | Fehlercode Dec | Fehlerbeschreibung | OMA-URI | Mögliche Ursachen- und Problembehandlungsschritte
 :---:|:---|:---|:---|:---
@@ -122,8 +122,8 @@ Die folgende Tabelle enthält Informationen zu Problemen mit Nichtkonformität u
 
 Fall | Problembeschreibung | Mögliche Ursachen- und Problembehandlungsschritte
 :---:|:---|:---
- `1` | Das Gerät ist kompatibel mit SenseIsRunning OMA-URI. Ist jedoch nicht kompatibel mit OrgId-, Onboarding- und OnboardingState-OMA-URIs. | **Mögliche Ursache:** Überprüfen Sie, ob der Benutzer OOBE nach der Installation oder dem Upgrade von Windows übergeben hat. Während des OOBE-Onboardings konnte das Onboarding nicht abgeschlossen werden, aber SENSE wird bereits ausgeführt.<br><br> **Schritte zur Problembehandlung:** Warten Sie, bis OOBE abgeschlossen ist.
- `2` |  Das Gerät ist kompatibel mit OrgId-, Onboarding- und OnboardingState-OMA-URIs, aber nicht kompatibel mit SenseIsRunning OMA-URI. |  **Mögliche Ursache:** Der Starttyp des Sense-Diensts wird als "Verzögerter Start" festgelegt. Manchmal führt dies dazu, dass der Microsoft Intune-Server das Gerät von SenseIsRunning als nicht kompatibel gemeldet, wenn die DM-Sitzung beim Systemstart stattfindet. <br><br> **Schritte zur Problembehandlung:** Das Problem sollte automatisch innerhalb von 24 Stunden behoben werden.
+ `1` | Das Gerät ist kompatibel mit SenseIsRunning OMA-URI. Ist jedoch nicht kompatibel mit OrgId-, Onboarding- und OnboardingState-OMA-URIs. | **Mögliche Ursache:** Überprüfen Sie, ob der Benutzer OOBE nach Windows oder Upgrade übergeben hat. Während des OOBE-Onboardings konnte das Onboarding nicht abgeschlossen werden, aber SENSE wird bereits ausgeführt.<br><br> **Schritte zur Problembehandlung:** Warten Sie, bis OOBE abgeschlossen ist.
+ `2` |  Das Gerät ist kompatibel mit OrgId-, Onboarding- und OnboardingState-OMA-URIs, aber nicht kompatibel mit SenseIsRunning OMA-URI. |  **Mögliche Ursache:** Der Starttyp des Sense-Diensts wird als "Verzögerter Start" festgelegt. Manchmal führt dies dazu, Microsoft Intune server das Gerät von SenseIsRunning als nicht kompatibel melden, wenn die DM-Sitzung beim Systemstart stattfindet. <br><br> **Schritte zur Problembehandlung:** Das Problem sollte automatisch innerhalb von 24 Stunden behoben werden.
  `3` | Gerät ist nicht kompatibel | **Schritte zur Problembehandlung:** Stellen Sie sicher, dass Onboarding- und Offboardingrichtlinien nicht gleichzeitig auf demselben Gerät bereitgestellt werden.
 
 #### <a name="mobile-device-management-mdm-event-logs"></a>Ereignisprotokolle für die Mobile Device Management (MDM)
@@ -136,7 +136,7 @@ Kanalname: Administrator
 
 ID | Severity | Ereignisbeschreibung | Schritte zur Problembehandlung
 :---|:---|:---|:---
-1819 | Fehler | Microsoft Defender for Endpoint CSP: Fehler beim Festlegen des Knotenwerts. NodeId: (%1), TokenName: (%2), Ergebnis: (%3). | Laden Sie [das kumulative Update für Windows 10, 1607 herunter.](https://go.microsoft.com/fwlink/?linkid=829760)
+1819 | Error | Microsoft Defender for Endpoint CSP: Fehler beim Festlegen des Knotenwerts. NodeId: (%1), TokenName: (%2), Ergebnis: (%3). | Laden Sie [das kumulative Update für Windows 10, 1607 herunter.](https://go.microsoft.com/fwlink/?linkid=829760)
 
 ## <a name="troubleshoot-onboarding-issues-on-the-device"></a>Behandeln von Problemen beim Onboarding auf dem Gerät
 
@@ -146,13 +146,13 @@ Wenn die verwendeten Bereitstellungstools keinen Fehler im Onboardingprozess ang
 - [Sicherstellen, dass der Diagnosedatendienst aktiviert ist](#ensure-the-diagnostics-service-is-enabled)
 - [Sicherstellen, dass der Dienst auf den Start festgelegt ist](#ensure-the-service-is-set-to-start)
 - [Sicherstellen, dass das Gerät über eine Internetverbindung verfügt](#ensure-the-device-has-an-internet-connection)
-- [Stellen Sie sicher, dass Microsoft Defender Antivirus nicht durch eine Richtlinie deaktiviert ist](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
+- [Stellen Sie sicher, Microsoft Defender Antivirus nicht durch eine Richtlinie deaktiviert ist](#ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy)
 
 ### <a name="view-agent-onboarding-errors-in-the-device-event-log"></a>Anzeigen von Fehlern beim Onboarding des Agents im Geräteereignisprotokoll
 
 1. Klicken **Sie auf Start,** geben **Sie Ereignisanzeige ein,** und drücken Sie die **EINGABETASTE.**
 
-2. Erweitern Sie **im Bereich Ereignisanzeige (Lokal)** **Anwendungen und Dienstprotokolle**  >  **Microsoft**  >  **Windows**  >  **SENSE**.
+2. Erweitern Sie **im Bereich Ereignisanzeige (Lokal)** Anwendungen **und Dienstprotokolle**  >  **Microsoft**  >  **Windows**  >  **SENSE**.
 
    > [!NOTE]
    > SENSE ist der interne Name, der verwendet wird, um auf den Verhaltenssensor zu verweisen, der Microsoft Defender for Endpoint unterstützt.
@@ -197,11 +197,11 @@ Es gibt zusätzliche Komponenten auf dem Gerät, von dem der Microsoft Defender 
 
 Wenn die Geräte nicht ordnungsgemäß melden, müssen Sie möglicherweise überprüfen, ob der Windows 10-Diagnosedatendienst auf den automatischen Start festgelegt ist und auf dem Gerät ausgeführt wird. Möglicherweise wurde der Dienst durch andere Programme oder Benutzerkonfigurationsänderungen deaktiviert.
 
-Zuerst sollten Sie überprüfen, ob der Dienst automatisch gestartet wird, wenn Windows gestartet wird, und dann überprüfen, ob der Dienst gerade ausgeführt wird (und starten Sie ihn, falls nicht).
+Zuerst sollten Sie überprüfen, ob der Dienst automatisch gestartet wird, wenn Windows gestartet wird. Anschließend sollten Sie überprüfen, ob der Dienst gerade ausgeführt wird (und starten, wenn er nicht ausgeführt wird).
 
 ### <a name="ensure-the-service-is-set-to-start"></a>Sicherstellen, dass der Dienst auf den Start festgelegt ist
 
-**Verwenden Sie die Befehlszeile, um den Starttyp des Windows 10-Diagnosedatendiensts zu überprüfen:**
+**Verwenden Sie die Befehlszeile, um den Starttyp Windows 10 Diagnosedatendiensts zu überprüfen:**
 
 1. Öffnen Sie eine Befehlszeilenaufforderung mit erhöhten Rechten auf dem Gerät:
 
@@ -221,7 +221,7 @@ Zuerst sollten Sie überprüfen, ob der Dienst automatisch gestartet wird, wenn 
 
    Wenn der nicht auf festgelegt ist, müssen Sie festlegen, dass der Dienst `START_TYPE` `AUTO_START` automatisch gestartet wird.
 
-**Verwenden Sie die Befehlszeile, um den Windows 10-Diagnosedatendienst so zu legen, dass er automatisch gestartet wird:**
+**Verwenden Sie die Befehlszeile, um den Diagnosedatendienst Windows 10 automatisch zu starten:**
 
 1. Öffnen Sie eine Befehlszeilenaufforderung mit erhöhten Rechten auf dem Gerät:
 
@@ -259,12 +259,12 @@ Führen Sie die im Thema Überprüfen der Clientkonnektivität mit [Microsoft De
 
 Wenn die Überprüfung fehlschlägt und Ihre Umgebung einen Proxy verwendet, um eine Verbindung mit dem Internet herzustellen, führen Sie die im Thema Konfigurieren von Proxy- und [Internetverbindungseinstellungen](configure-proxy-internet.md) beschriebenen Schritte aus.
 
-### <a name="ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy"></a>Stellen Sie sicher, dass Microsoft Defender Antivirus nicht durch eine Richtlinie deaktiviert ist
+### <a name="ensure-that-microsoft-defender-antivirus-is-not-disabled-by-a-policy"></a>Stellen Sie sicher, Microsoft Defender Antivirus nicht durch eine Richtlinie deaktiviert ist
 
 > [!IMPORTANT]
-> Folgendes gilt nur für  Geräte, die das Update vom August 2020 (Version 4.18.2007.8) für Microsoft Defender Antivirus noch nicht erhalten haben.
+> Folgendes gilt nur für  Geräte, die das Update vom August 2020 (Version 4.18.2007.8) noch nicht auf Microsoft Defender Antivirus.
 >
-> Das Update stellt sicher, dass Microsoft Defender Antivirus nicht über eine Systemrichtlinie auf Clientgeräten deaktiviert werden kann.
+> Das Update stellt sicher, Microsoft Defender Antivirus Clientgeräten nicht über die Systemrichtlinie deaktiviert werden kann.
 
 **Problem:** Der Microsoft Defender for Endpoint-Dienst wird nach dem Onboarding nicht gestartet.
 
@@ -283,7 +283,7 @@ Wenn die Überprüfung fehlschlägt und Ihre Umgebung einen Proxy verwendet, um 
   - `<Key Path="SOFTWARE\Policies\Microsoft\Windows Defender"><KeyValue Value="0" ValueKind="DWord" Name="DisableAntiVirus"/></Key>`
 
 > [!IMPORTANT]
-> Die Einstellung wird eingestellt und wird ab dem `disableAntiSpyware` Update vom August 2020 (Version 4.18.2007.8) auf allen Clientgeräten auf Microsoft Defender Antivirus ignoriert.
+> Die Einstellung wird nicht mehr ausgeführt und wird ab `disableAntiSpyware` dem Update vom August 2020 (Version 4.18.2007.8) auf allen Clientgeräten auf Microsoft Defender Antivirus.
 
 - Führen Sie nach dem Löschen der Richtlinie die Onboardingschritte erneut aus.
 
@@ -302,7 +302,7 @@ Wenn die Überprüfung fehlschlägt und Ihre Umgebung einen Proxy verwendet, um 
 
 Wenn beim Onboarding eines Servers Probleme auftreten, führen Sie die folgenden Überprüfungsschritte aus, um mögliche Probleme zu beheben.
 
-- [Sicherstellen, dass Microsoft Monitoring Agent (MMA) installiert und konfiguriert ist, um Sensordaten an den Dienst zu melden](configure-server-endpoints.md)
+- [Sicherstellen, Microsoft Monitoring Agent (MMA) installiert und konfiguriert ist, um Sensordaten an den Dienst zu melden](configure-server-endpoints.md)
 - [Stellen Sie sicher, dass die Serverproxy- und Internetverbindungseinstellungen ordnungsgemäß konfiguriert sind.](configure-server-endpoints.md)
 
 Möglicherweise müssen Sie auch Folgendes überprüfen:
@@ -313,13 +313,13 @@ Möglicherweise müssen Sie auch Folgendes überprüfen:
 
 - Überprüfen Sie den Vorgangs-Manager für Ereignisanzeigeanwendungen und   >    >  **Diensteprotokolle,** um zu sehen, ob Fehler auftreten.
 
-- Überprüfen **Sie unter Dienste,** ob **der Microsoft Monitoring Agent** auf dem Server ausgeführt wird. Beispiel:
+- Überprüfen **Sie** unter Dienste, **ob Microsoft Monitoring Agent** auf dem Server ausgeführt wird. Beispiel:
 
     ![Image of Services](images/atp-services.png)
 
-- Überprüfen **Sie in Microsoft Monitoring Agent** Azure Log Analytics  >  **(OMS)** die Arbeitsbereiche, und überprüfen Sie, ob der Status ausgeführt wird.
+- Überprüfen **Microsoft Monitoring Agent**  >  **Azure Log Analytics (OMS)** die Arbeitsbereiche, und überprüfen Sie, ob der Status ausgeführt wird.
 
-    ![Abbildung der Microsoft Monitoring Agent-Eigenschaften](images/atp-mma-properties.png)
+    ![Abbildung der Microsoft Monitoring Agent Eigenschaften](images/atp-mma-properties.png)
 
 - Überprüfen Sie, ob Geräte in der Liste **Geräte im** Portal angezeigt werden.
 
@@ -335,123 +335,123 @@ Die folgenden Schritte bieten Anleitungen für das folgende Szenario:
 - In diesem Szenario wird der SENSE-Dienst nicht automatisch gestartet, obwohl das Onboardingpaket bereitgestellt wurde.
 
 > [!NOTE]
-> Die folgenden Schritte sind nur bei Verwendung von Microsoft Endpoint Configuration Manager relevant. Weitere Informationen zum Onboarding mit Microsoft Endpoint Configuration Manager finden Sie unter [Microsoft Defender for Endpoint](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
+> Die folgenden Schritte sind nur bei Verwendung von Microsoft Endpoint Configuration Manager. Weitere Informationen zum Onboarding mit Microsoft Endpoint Configuration Manager finden Sie unter [Microsoft Defender for Endpoint](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection).
 
 1. Erstellen Sie eine Anwendung in Microsoft Endpoint Configuration Manager.
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration1](images/mecm-1.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration1](images/mecm-1.png)
 
 2. Wählen **Sie Manuelles Angeben der Anwendungsinformationen aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration2](images/mecm-2.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration2](images/mecm-2.png)
 
 3. Geben Sie Informationen zur Anwendung an, und wählen Sie dann **Weiter aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration3](images/mecm-3.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration3](images/mecm-3.png)
 
 4. Geben Sie Informationen zum Software center an, und wählen Sie dann **Weiter aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration4](images/mecm-4.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration4](images/mecm-4.png)
 
 5. Wählen **Sie unter Bereitstellungstypen** **Hinzufügen aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration5](images/mecm-5.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration5](images/mecm-5.png)
 
 6. Wählen **Sie Manuelles Angeben der Bereitstellungstypinformationen** aus, und wählen Sie dann **Weiter aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration6](images/mecm-6.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration6](images/mecm-6.png)
 
 7. Geben Sie Informationen zum Bereitstellungstyp an, und wählen Sie dann **Weiter aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration7](images/mecm-7.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration7](images/mecm-7.png)
 
 8. Geben **Sie im Programm** für die  >  **Inhaltsinstallation** den Befehl an: `net start sense` .
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration8](images/mecm-8.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration8](images/mecm-8.png)
 
 9. Wählen **Sie in Detection-Methode** **Die Option Regeln konfigurieren aus,** um das Vorhandensein dieses Bereitstellungstyps zu erkennen, und wählen Sie **dann Add Clause aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration9](images/mecm-9.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration9](images/mecm-9.png)
 
 10. Geben Sie die folgenden Erkennungsregeldetails an, und wählen Sie dann **OK aus:**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration10](images/mecm-10.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration10](images/mecm-10.png)
 
 11. Wählen **Sie unter Erkennungsmethode** **die Option Weiter aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration11](images/mecm-11.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration11](images/mecm-11.png)
 
 12. Geben **Sie in Benutzererfahrung** die folgenden Informationen an, und wählen Sie dann **Weiter** aus:
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration12](images/mecm-12.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration12](images/mecm-12.png)
 
 13. Wählen **Sie unter Anforderungen** die Option Weiter **aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration13](images/mecm-13.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration13](images/mecm-13.png)
 
 14. Wählen **Sie unter Abhängigkeiten** die Option **Weiter aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration14](images/mecm-14.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration14](images/mecm-14.png)
 
 15. Wählen **Sie in Zusammenfassung** **weiter** aus.
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration15](images/mecm-15.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration15](images/mecm-15.png)
 
 16. Wählen **Sie unter Fertigstellung** die Option Schließen **aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration16](images/mecm-16.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration16](images/mecm-16.png)
 
 17. Wählen **Sie unter Bereitstellungstypen** die Option **Weiter aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration17](images/mecm-17.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration17](images/mecm-17.png)
 
 18. Wählen **Sie in Zusammenfassung** **weiter** aus.
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration18](images/mecm-18.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration18](images/mecm-18.png)
 
-    Der Status wird dann angezeigt: ![ Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration19](images/mecm-19.png)
+    Der Status wird dann angezeigt: ![ Abbildung Microsoft Endpoint Configuration Manager Konfiguration19](images/mecm-19.png)
 
 19. Wählen **Sie unter Fertigstellung** die Option Schließen **aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration20](images/mecm-20.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration20](images/mecm-20.png)
 
 20. Sie können die Anwendung jetzt bereitstellen, indem Sie mit der rechten Maustaste auf die App klicken und **Bereitstellen auswählen.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration21](images/mecm-21.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration21](images/mecm-21.png)
 
 21. Wählen **Sie im Allgemeinen** Die Option Inhalte für **Abhängigkeiten automatisch verteilen und** Durchsuchen **aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration22](images/mecm-22.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration22](images/mecm-22.png)
 
 22. Wählen **Sie unter Inhalt** die Option Weiter **aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration23](images/mecm-23.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration23](images/mecm-23.png)
 
 23. Wählen **Sie unter Bereitstellungseinstellungen** die Option **Weiter aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration24](images/mecm-24.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration24](images/mecm-24.png)
 
 24. Wählen Sie unter **Planung** die Option So bald wie möglich nach der verfügbaren **Zeit** aus, und wählen Sie dann **Weiter aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration25](images/mecm-25.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration25](images/mecm-25.png)
 
 25. Wählen **Sie in Benutzererfahrung** die Option Änderungen zum Stichtag oder während eines Wartungsfensters **commit aus (erfordert Neustarts)** und wählen Sie dann **Weiter aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration26](images/mecm-26.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration26](images/mecm-26.png)
 
 26. Wählen **Sie unter Warnungen** **die Option Weiter aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration27](images/mecm-27.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration27](images/mecm-27.png)
 
 27. Wählen **Sie in Zusammenfassung** **weiter** aus.
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration28](images/mecm-28.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration28](images/mecm-28.png)
 
-    Der Status wird dann angezeigt ![ Image of Microsoft Endpoint Configuration Manager configuration29](images/mecm-29.png)
+    Der Status wird dann angezeigt Bild ![ der Microsoft Endpoint Configuration Manager Konfiguration29](images/mecm-29.png)
 
 28. Wählen **Sie unter Fertigstellung** die Option Schließen **aus.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration30](images/mecm-30.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konfiguration30](images/mecm-30.png)
 
 
 ## <a name="related-topics"></a>Verwandte Themen

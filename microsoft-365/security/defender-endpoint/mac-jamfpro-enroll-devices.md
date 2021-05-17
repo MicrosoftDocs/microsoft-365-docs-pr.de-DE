@@ -50,7 +50,7 @@ Eine vollständige Liste finden Sie unter [Informationen zur Computerregistrieru
 
 ## <a name="enrollment-method-1-enrollment-invitations"></a>Registrierungsmethode 1: Registrierungseinladungen
 
-1. Navigieren Sie im Jamf Pro-Dashboard zu **Registrierungseinladungen**.
+1. Navigieren Sie im Pro-Dashboard zu **Registrierungseinladungen**.
 
     ![Abbildung der Konfigurationseinstellungen1](images/a347307458d6a9bbfa88df7dbe15398f.png)
 
@@ -80,7 +80,7 @@ Eine vollständige Liste finden Sie unter [Informationen zur Computerregistrieru
 
 ## <a name="enrollment-method-2-prestage-enrollments"></a>Registrierungsmethode 2: Vorabregistrierungen
 
-1. Navigieren Sie im Jamf Pro-Dashboard zu **Prestage enrollments**.
+1. Navigieren Sie im Pro-Dashboard zu **Prestage-Registrierungen**.
 
     ![Abbildung der Konfigurationseinstellungen9](images/6fd0cb2bbb0e60a623829c91fd0826ab.png)
 
@@ -90,15 +90,15 @@ Eine vollständige Liste finden Sie unter [Informationen zur Computerregistrieru
 
 1. Wählen **Sie Weiter** aus, und installieren Sie das Zertifizierungsstellenzertifikat in einem **Systemeinstellungsfenster.**
 
-    ![Abbildung der Jamf Pro-Registrierung1](images/jamfpro-ca-certificate.png)
+    ![Abbildung von Jamf Pro Enrollment1](images/jamfpro-ca-certificate.png)
 
 2. Kehren Sie nach der Installation des Zertifizierungsstellenzertifikats zum Browserfenster zurück, und wählen Sie **Weiter aus,** und installieren Sie das MDM-Profil. 
 
-    ![Abbildung der Jamf Pro-Registrierung2](images/jamfpro-install-mdm-profile.png)
+    ![Abbildung von Jamf Pro Enrollment2](images/jamfpro-install-mdm-profile.png)
 
 3. Wählen **Sie Downloads** von JAMF zulassen aus.
 
-    ![Abbildung von Jamf Pro enrollment3](images/jamfpro-download.png)
+    ![Abbildung von Jamf Pro Enrollment3](images/jamfpro-download.png)
 
 4. Wählen **Sie Weiter** aus, um mit der INSTALLATION des MDM-Profils fortzufahren. 
 
@@ -106,8 +106,8 @@ Eine vollständige Liste finden Sie unter [Informationen zur Computerregistrieru
 
 5. Wählen **Sie Weiter** aus, um das MDM-Profil zu installieren.
 
-    ![Abbildung von Jamf Pro Enrollment5](images/jamfpro-mdm-unverified.png)
+    ![Abbildung von Jamf Pro enrollment5](images/jamfpro-mdm-unverified.png)
 
 6. Wählen **Sie Weiter**  aus, um die Konfiguration zu vervollständigen. 
 
-    ![Abbildung von Jamf Pro Enrollment6](images/jamfpro-mdm-profile.png)
+    ![Abbildung von Jamf Pro enrollment6](images/jamfpro-mdm-profile.png)

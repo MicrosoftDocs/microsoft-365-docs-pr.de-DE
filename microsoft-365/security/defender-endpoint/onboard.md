@@ -2,7 +2,7 @@
 title: Konfigurieren und Verwalten von Microsoft Defender for Endpoint-Funktionen
 ms.reviewer: ''
 description: Konfigurieren und Verwalten von Microsoft Defender for Endpoint-Funktionen wie Reduzierung der Angriffsfläche und Schutz der nächsten Generation
-keywords: Konfigurieren, Verwalten, Funktionen, Reduzierung der Angriffsfläche, Schutz der nächsten Generation, Sicherheitskontrollen, Endpunkterkennung und -reaktion, automatische Untersuchung und Behebung, Sicherheitskontrollen, Steuerelemente
+keywords: Konfigurieren, Verwalten, Funktionen, Reduzierung der Angriffsfläche, Schutz der nächsten Generation, Sicherheitskontrollen, EDR, automatische Untersuchung und Behebung, Sicherheitskontrollen, Steuerelemente
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -45,9 +45,9 @@ Praktische Hinweise zum Verbinden neuer Geräte in Ihrer Organisation finden Sie
 
 Thema | Beschreibung
 :---|:---
-[Konfigurieren von Microsoft Defender Security Center-Einstellungen](preferences-setup.md) | Konfigurieren Sie portalbezogene Einstellungen, z. B. allgemeine Einstellungen, erweiterte Features, oder aktivieren Sie die Vorschau.
+[Konfigurieren Microsoft Defender Security Center Einstellungen](preferences-setup.md) | Konfigurieren Sie portalbezogene Einstellungen, z. B. allgemeine Einstellungen, erweiterte Features, oder aktivieren Sie die Vorschau.
 [Konfigurieren von Funktionen zur Reduzierung der Angriffsfläche](configure-attack-surface-reduction.md) | Konfigurieren Sie Funktionen zur Reduzierung der Angriffsfläche, um sicherzustellen, dass die Einstellungen ordnungsgemäß angewendet werden, und Es werden Techniken zur Risikominderung für Exploits festgelegt.
 [Konfigurieren des Schutzes der nächsten Generation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) | Konfigurieren Sie den Schutz der nächsten Generation, um alle Arten von neuen Bedrohungen zu erkennen.
-[Konfigurieren von Microsoft Threat Experts-Funktionen](configure-microsoft-threat-experts.md) | Konfigurieren und Verwalten von Cybersecurity Threat Intelligence von Microsoft Threat Experts.
-[Konfigurieren der Microsoft 365 Defender-Integration](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | Konfigurieren sie andere Lösungen, die in Defender for Endpoint integriert werden.
-[Unterstützung von Verwaltung und API](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis) | Ziehen Sie Warnungen an Ihre Sicherheitsinformationen und Ereignisverwaltung (SECURITY Information and Event Management, SIEM) oder verwenden Sie APIs zum Erstellen benutzerdefinierter Warnungen. Erstellen und Erstellen von Power BI-Berichten.
+[Konfigurieren Microsoft-Bedrohungsexperten Funktionen](configure-microsoft-threat-experts.md) | Konfigurieren und Verwalten von Cybersecurity Threat Intelligence von Microsoft-Bedrohungsexperten.
+[Konfigurieren Microsoft 365 Defender-Integration](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/threat-protection-integration) | Konfigurieren sie andere Lösungen, die in Defender for Endpoint integriert werden.
+[Unterstützung von Verwaltung und API](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/management-apis) | Ziehen Sie Warnungen an Ihre Sicherheitsinformationen und Ereignisverwaltung (SECURITY Information and Event Management, SIEM) oder verwenden Sie APIs zum Erstellen benutzerdefinierter Warnungen. Erstellen und Erstellen Power BI Berichte.

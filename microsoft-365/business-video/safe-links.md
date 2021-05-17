@@ -32,7 +32,7 @@ ms.locfileid: "51580630"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvdwy?autoplay=false]
 
-Microsoft Defender für Office 365 , früher als Microsoft 365 ATP oder Advanced Threat Protection bezeichnet, schützt Ihr Unternehmen vor schädlichen Websites, wenn Personen auf Links in Office-Apps klicken.
+Microsoft Defender für Office 365 , früher als Microsoft 365 ATP oder Advanced Threat Protection bezeichnet, schützt Ihr Unternehmen vor schädlichen Websites, wenn Benutzer auf Links in Office klicken.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
@@ -40,7 +40,7 @@ Microsoft Defender für Office 365 , früher als Microsoft 365 ATP oder Advanced
 1. Scrollen Sie nach unten, **um den Schutz vor erweiterten Bedrohungen zu erhöhen.** Wählen **Sie Ansicht,** **Verwalten** und dann **ATP Sichere Links aus.**
 1. Wählen **Sie unter Richtlinien, die für die gesamte Organisation gelten,** die **Standardrichtlinie** aus, und wählen Sie dann das **Symbol Bearbeiten** aus.
 1. Geben Sie eine URL ein, die Sie blockieren möchten.
-1. Wählen **Sie Sichere Links in Office-Apps, Office für iOS** und Android verwenden aus. wählen **Sie Nicht nachverfolgen aus, wenn Benutzer auf sichere Links klicken.** und wählen Sie Benutzer nicht durch sichere Links **zur ursprünglichen URL klicken lassen aus.** Diese sind möglicherweise bereits ausgewählt, wenn Sie die Standardrichtlinie einrichten. Klicken Sie auf **Speichern**.
+1. Wählen **Sie Sichere Links in Office apps, Office für iOS und Android verwenden** aus. wählen **Sie Nicht nachverfolgen aus, wenn Benutzer auf sichere Links klicken.** und wählen Sie Benutzer nicht durch sichere Links **zur ursprünglichen URL klicken lassen aus.** Diese sind möglicherweise bereits ausgewählt, wenn Sie die Standardrichtlinie einrichten. Klicken Sie auf **Speichern**.
 1. Wählen **Sie unter Richtlinien, die für bestimmte Empfänger** gelten, Die Regel Empfohlene sichere **Links** aus, und wählen Sie dann das Symbol **Bearbeiten** aus.
 1. Wählen **Sie Einstellungen** aus, scrollen Sie nach unten, geben Sie die URL ein, die nicht überprüft werden soll, und wählen Sie dann das Symbol **Hinzufügen** aus.
 1. Wählen **Sie auf** angewendet aus, und wählen Sie dann Ihren Domänennamen aus. Wählen Sie alle zusätzlichen Domänen aus, auf die die Regel angewendet werden soll. Wählen **Sie Hinzufügen**, **OK** und dann **Speichern aus.**

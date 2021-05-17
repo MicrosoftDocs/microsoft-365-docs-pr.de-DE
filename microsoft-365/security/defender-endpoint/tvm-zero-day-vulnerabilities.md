@@ -1,7 +1,7 @@
 ---
-title: Minimieren von Zero-Day-Sicherheitsrisiken – Bedrohungs- und Sicherheitsrisikoverwaltung
-description: Erfahren Sie, wie Sie Zero-Day-Sicherheitsrisiken in Ihrer Umgebung durch das Bedrohungs- und Sicherheitsrisikomanagement finden und mindern können.
-keywords: Microsoft Defender for Endpoint tvm zero day vulnerabilites, tvm, threat & vulnerability management, zero day, 0-day, mitigate 0 day vulnerabilites, vulnerable CVE
+title: Minimieren von Zero-Day-Sicherheitsrisiken – Bedrohungs- und Sicherheitsrisikomanagement
+description: Erfahren Sie, wie Sie Zero-Day-Sicherheitsrisiken in Ihrer Umgebung mithilfe von Bedrohungs- und Sicherheitsrisikomanagement.
+keywords: Microsoft Defender for Endpoint tvm zero day vulnerabilities, tvm, threat & Sicherheitsrisikomanagement, zero day, 0-day, mitigate 0 day vulnerabilities, vulnerable CVE
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,27 +25,27 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933061"
 ---
-# <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Minimieren von Zero-Day-Sicherheitsrisiken – Bedrohungs- und Sicherheitsrisikoverwaltung
+# <a name="mitigate-zero-day-vulnerabilities---threat-and-vulnerability-management"></a>Minimieren von Zero-Day-Sicherheitsrisiken – Bedrohungs- und Sicherheitsrisikomanagement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Bedrohungs- und Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md)
+- [Bedrohung und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 Eine Zero-Day-Sicherheitslücke ist eine öffentlich offengelegte Sicherheitslücke, für die keine offiziellen Patches oder Sicherheitsupdates veröffentlicht wurden. Zero-Day-Sicherheitsrisiken haben häufig einen hohen Schweregrad und werden aktiv ausgenutzt.
 
-Das Bedrohungs- und Sicherheitsrisikomanagement zeigt nur Zero-Day-Sicherheitsrisiken an, über die informationen enthalten sind.
+Bedrohungen und Sicherheitsrisikomanagement zeigen nur Zero-Day-Sicherheitsrisiken an, über die informationen enthalten sind.
 
 ## <a name="find-information-about-zero-day-vulnerabilities"></a>Informationen zu Zero-Day-Sicherheitsrisiken finden
 
-Sobald eine Zero-Day-Sicherheitslücke gefunden wurde, werden Informationen dazu über die folgenden Erfahrungen im Microsoft Defender Security Center vermittelt.
+Sobald eine Zero-Day-Sicherheitslücke gefunden wurde, werden Informationen dazu über die folgenden Erfahrungen in der Microsoft Defender Security Center.
 
-### <a name="threat-and-vulnerability-management-dashboard"></a>Dashboard zur Verwaltung von Bedrohungen und Sicherheitslücken
+### <a name="threat-and-vulnerability-management-dashboard"></a>Bedrohung und Sicherheitsrisikomanagement Dashboard
 
 Suchen Sie auf der Karte "Top security recommendations" nach Empfehlungen mit einem Zero-Day-Tag.
 
@@ -93,21 +93,21 @@ Es gibt einen Link zu Abhilfemaßnahmen und Problemumgehungen, wenn diese verfü
 
 Öffnen Sie Korrekturoptionen, und wählen Sie den Aufmerksamkeitstyp aus. Für die Zero-Day-Sicherheitsrisiken wird eine Option zur Behebung von "Aufmerksamkeit erforderlich" empfohlen, da ein Update noch nicht veröffentlicht wurde. Sie können kein Fälligkeitsdatum auswählen, da keine bestimmte Aktion durchzuführen ist. Wenn ältere Sicherheitsrisiken für diese Software vorhanden sind, die Sie bereinigungen möchten, können Sie die Option "Aufmerksamkeit erforderlich" außer Kraft setzen und "aktualisieren" auswählen.
 
-![Flyoutbeispiel für zero day von Windows Server 2016 auf der Seite sicherheitsempfehlungen.](images/tvm-zero-day-recommendation-flyout400.png)
+![Flyoutbeispiel für zero day Windows Server 2016 auf der Seite sicherheitsempfehlungen.](images/tvm-zero-day-recommendation-flyout400.png)
 
 ## <a name="track-zero-day-remediation-activities"></a>Nachverfolgen von Zero-Day-Korrekturaktivitäten
 
-Wechseln Sie zur Seite [](tvm-remediation.md) Zur Behebung von Bedrohungen und Sicherheitslücken, um das Problembehebungsaktivitätselement zu sehen. Wenn Sie die Option "Aufmerksamkeit erforderlich" ausgewählt haben, gibt es keine Statusanzeige, keinen Ticketstatus oder kein Fälligkeitsdatum, da es keine tatsächliche Aktion gibt, die wir überwachen können. Sie können nach Behebungstyp filtern, z. B. "Softwareupdate" oder "Aufmerksamkeit erforderlich", um alle Aktivitätselemente in derselben Kategorie zu sehen.
+Wechseln Sie zur seite [Bedrohungs- und Sicherheitsrisikomanagement,](tvm-remediation.md) um das Problembehebungsaktivitätselement zu sehen. Wenn Sie die Option "Aufmerksamkeit erforderlich" ausgewählt haben, gibt es keine Statusanzeige, keinen Ticketstatus oder kein Fälligkeitsdatum, da es keine tatsächliche Aktion gibt, die wir überwachen können. Sie können nach Behebungstyp filtern, z. B. "Softwareupdate" oder "Aufmerksamkeit erforderlich", um alle Aktivitätselemente in derselben Kategorie zu sehen.
 
 ## <a name="patching-zero-day-vulnerabilities"></a>Patchen von Zero-Day-Sicherheitsrisiken
 
 Wenn ein Patch für den Nulltag freigegeben wird, wird die Empfehlung in "Update" und eine blaue Beschriftung daneben mit der Bezeichnung "Neues Sicherheitsupdate für null Tag" geändert. Es wird nicht mehr als Zero-Day-Tag in Betracht ziehen, das Zero-Day-Tag wird von allen Seiten entfernt.
 
-![Empfehlung für "Aktualisieren von Microsoft Windows 10" mit neuer Patchbezeichnung.](images/tvm-zero-day-patch.jpg)
+![Empfehlung für "Update Microsoft Windows 10" mit neuer Patchbeschriftung.](images/tvm-zero-day-patch.jpg)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Übersicht über die Verwaltung von Bedrohungen und Sicherheitslücken](next-gen-threat-and-vuln-mgt.md)
+- [Übersicht über Bedrohungen Sicherheitsrisikomanagement Bedrohungen](next-gen-threat-and-vuln-mgt.md)
 - [Dashboard](tvm-dashboard-insights.md)
 - [Sicherheitsempfehlungen](tvm-security-recommendation.md)
 - [Softwarebestand](tvm-software-inventory.md)

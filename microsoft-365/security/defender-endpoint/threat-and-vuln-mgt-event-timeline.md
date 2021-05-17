@@ -1,7 +1,7 @@
 ---
-title: Ereigniszeitachse im Bedrohungs- und Sicherheitsrisikomanagement
+title: Ereigniszeitachse in Bedrohungs- und Sicherheitsrisikomanagement
 description: Die Ereigniszeitachse ist ein Newsfeed für Risiken, mit dem Sie interpretieren können, wie Risiken in die Organisation eingeführt werden und welche Gegenmaßnahmen zur Reduzierung des Risikos eingetreten sind.
-keywords: Ereigniszeitachse, Microsoft Defender for Endpoint-Ereigniszeitachse, Microsoft Defender for Endpoint tvm-Ereigniszeitachse, Bedrohungs- und Sicherheitsrisikoverwaltung, Microsoft Defender for Endpoint
+keywords: Ereigniszeitachse, Microsoft Defender for Endpoint-Ereigniszeitachse, Microsoft Defender for Endpoint tvm-Ereigniszeitachse, Bedrohungs- und Sicherheitsrisikomanagement, Microsoft Defender für Endpunkt
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,7 +25,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933481"
 ---
-# <a name="event-timeline---threat-and-vulnerability-management"></a>Ereigniszeitachse – Bedrohungs- und Sicherheitsrisikoverwaltung
+# <a name="event-timeline---threat-and-vulnerability-management"></a>Ereigniszeitachse – Bedrohungs- und Sicherheitsrisikomanagement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -45,7 +45,7 @@ Die Ereigniszeitachse enthält [](tvm-exposure-score.md) außerdem die Geschicht
 
 ## <a name="navigate-to-the-event-timeline-page"></a>Navigieren zur Seite Ereigniszeitachse
 
-Es gibt auch drei Einstiegspunkte aus dem Dashboard zur Verwaltung von Bedrohungen und [Sicherheitslücken:](tvm-dashboard-insights.md)
+Es gibt auch drei Einstiegspunkte aus dem [Bedrohungs- und Sicherheitsrisikomanagement Dashboard:](tvm-dashboard-insights.md)
 
 - **Belichtungsergebniskarte** der Organisation: Zeigen Sie im Diagramm "Belichtungsergebnis im Laufe der Zeit" auf die Ereignispunkte, und wählen Sie "Alle Ereignisse von diesem Tag anzeigen" aus. Die Ereignisse stellen Softwarerisiken dar.
 - **Microsoft Secure Score for Devices**: Zeigen Sie im Diagramm "Ihre Bewertung für Geräte im Laufe der Zeit" auf die Ereignispunkte, und wählen Sie "Alle Ereignisse von diesem Tag anzeigen" aus. Die Ereignisse stellen neue Konfigurationsbewertungen dar.
@@ -53,7 +53,7 @@ Es gibt auch drei Einstiegspunkte aus dem Dashboard zur Verwaltung von Bedrohung
 
 ### <a name="exposure-score-and-microsoft-secure-score-for-devices-graphs"></a>Belichtungsergebnis und Microsoft Secure Score for Devices Graphs
 
-Zeigen Sie im Dashboard für die Bedrohungs- und Sicherheitsrisikoverwaltung auf das Diagramm Belichtungsergebnis, um die top-Software-Sicherheitsrisikoereignisse von diesem Tag anzuzeigen, die sich auf Ihre Geräte auswirken. Zeigen Sie auf das Microsoft Secure Score for Devices-Diagramm, um neue Sicherheitskonfigurationsbewertungen anzuzeigen, die sich auf Ihre Bewertung auswirken.
+Zeigen Sie im Bedrohungs- und Sicherheitsrisikomanagement-Dashboard auf das Belichtungsergebnisdiagramm, um die top-Software-Sicherheitsrisikoereignisse von diesem Tag anzuzeigen, die sich auf Ihre Geräte auswirken. Zeigen Sie auf das Microsoft Secure Score for Devices-Diagramm, um neue Sicherheitskonfigurationsbewertungen anzuzeigen, die sich auf Ihre Bewertung auswirken.
 
 Wenn es keine Ereignisse gibt, die sich auf Ihre Geräte oder Ihre Bewertung für Geräte auswirken, wird keines angezeigt.
 
@@ -120,7 +120,7 @@ Wählen Sie von dort **auf der** Seite Sicherheitsempfehlungen die Option Zu zug
 
 ## <a name="view-event-timelines-in-software-pages"></a>Anzeigen von Ereigniszeitachsen auf Softwareseiten
 
-Wählen Sie zum Öffnen einer Softwareseite ein Ereignis aus, > im Flyout den Namen der mit Hyperlinks verknüpften Software (wie Visual Studio 2017) im Abschnitt "Verwandte Komponente" auswählen. [Weitere Informationen zu Softwareseiten](tvm-software-inventory.md#software-pages)
+Wählen Sie zum Öffnen einer Softwareseite ein Ereignis aus, > im Flyout den Namen der mit Hyperlinks verknüpften Software (z. B. Visual Studio 2017) im Abschnitt "Verwandte Komponente" auswählen. [Weitere Informationen zu Softwareseiten](tvm-software-inventory.md#software-pages)
 
 Eine vollständige Seite mit allen Details einer bestimmten Software wird angezeigt. Bewegen Sie die Maus über das Diagramm, um die Zeitachse der Ereignisse für diese bestimmte Software anzuzeigen.
 
@@ -132,7 +132,7 @@ Navigieren Sie zur Registerkarte Ereigniszeitachse, um alle Ereignisse im Zusamm
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Übersicht über die Verwaltung von Bedrohungen und Sicherheitslücken](next-gen-threat-and-vuln-mgt.md)
+- [Übersicht über Bedrohungen Sicherheitsrisikomanagement Bedrohungen](next-gen-threat-and-vuln-mgt.md)
 - [Dashboard](tvm-dashboard-insights.md)
 - [Gefährdungsscore](tvm-exposure-score.md)
 - [Sicherheitsempfehlungen](tvm-security-recommendation.md)

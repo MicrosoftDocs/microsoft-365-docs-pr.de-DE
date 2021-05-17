@@ -1,7 +1,7 @@
 ---
-title: Ausführen ihrer Microsoft 365 Defender-Angriffssimulationen
+title: Ausführen Microsoft 365 Defender-Angriffssimulationen
 description: Führen Sie Angriffssimulationen für Ihr Microsoft 365 Defender-Pilotprojekt aus, um zu sehen, wie es sich entwickelt und schnell behoben wird.
-keywords: Microsoft 365 Defender-Pilotangriffssimulation, Ausführen der Microsoft 365 Defender-Pilotangriffssimulation, Simulieren von Angriffen in Microsoft 365 Defender, Microsoft 365 Defender-Pilotprojekt, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Geräte, Geräte, Identität, Benutzer, Daten, Anwendungen, Vorfälle, automatisierte Untersuchung und Behebung, erweiterte Suche
+keywords: Microsoft 365 Defender-Pilotangriffssimulation, ausführen Microsoft 365 Defender-Pilotangriffssimulation, Simulieren von Angriffen in Microsoft 365 Defender, Microsoft 365 Defender-Pilotprojekt, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Geräte, Gerät, Identität, Benutzer, Daten, Anwendungen, Vorfälle, automatisierte Untersuchung und Behebung, erweiterte Suche
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,7 +28,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934477"
 ---
-# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Ausführen ihrer Microsoft 365 Defender-Angriffssimulationen
+# <a name="run-your-microsoft-365-defender-attack-simulations"></a>Ausführen Microsoft 365 Defender-Angriffssimulationen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -39,7 +39,7 @@ ms.locfileid: "51934477"
 
 Sie sind derzeit in der Angriffssimulationsphase.
 
-Nach der Vorbereitung Ihrer Pilotumgebung ist es an der Zeit, die Microsoft 365 Defender Incident Management- und automatisierten Untersuchungs- und Behebungsfunktionen zu testen. Wir helfen Ihnen dabei, einen ausgeklügelten Angriff zu simulieren, der erweiterte Techniken zum Ausblenden vor der Erkennung nutzt. Der Angriff listet geöffnete Server Message Block (SMB)-Sitzungen auf Domänencontrollern auf und ruft aktuelle IP-Adressen der Benutzergeräte ab. Diese Kategorie von Angriffen umfasst in der Regel keine Dateien, die auf dem Gerät des Opfers abgelegt werden, sondern nur im Arbeitsspeicher. Sie "leben vom Land", indem sie vorhandene System- und Verwaltungstools verwenden und ihren Code in Systemprozesse einwerfen, um ihre Ausführung zu verbergen. Mit diesem Verhalten können sie der Erkennung ausweichen und auf dem Gerät bleiben.
+Nach der Vorbereitung Ihrer Pilotumgebung ist es an der Zeit, die Funktionen für die Microsoft 365 von Defender Incident Management und die automatisierte Untersuchung und Behebung zu testen. Wir helfen Ihnen dabei, einen ausgeklügelten Angriff zu simulieren, der erweiterte Techniken zum Ausblenden vor der Erkennung nutzt. Der Angriff listet geöffnete Server Message Block (SMB)-Sitzungen auf Domänencontrollern auf und ruft aktuelle IP-Adressen der Benutzergeräte ab. Diese Kategorie von Angriffen umfasst in der Regel keine Dateien, die auf dem Gerät des Opfers abgelegt werden, sondern nur im Arbeitsspeicher. Sie "leben vom Land", indem sie vorhandene System- und Verwaltungstools verwenden und ihren Code in Systemprozesse einwerfen, um ihre Ausführung zu verbergen. Mit diesem Verhalten können sie der Erkennung ausweichen und auf dem Gerät bleiben.
 
 In dieser Simulation beginnt unser Beispielszenario mit einem PowerShell-Skript. Ein Benutzer kann zum Ausführen eines Skripts verheddert werden. Oder das Skript kann von einer Remoteverbindung mit einem anderen Computer von einem zuvor infizierten Gerät ausgeführt werden– dem Angreifer, der versucht, sich im Netzwerk zu verschieben. Die Erkennung dieser Skripts kann schwierig sein, da Administratoren häufig auch Skripts remote ausführen, um verschiedene administrative Aktivitäten auszuführen.
 
@@ -58,18 +58,18 @@ Da Sie Ihre Pilotumgebung bereits während der Vorbereitungsphase konfiguriert h
 
 2. Überprüfen Sie die Konfiguration des Testdomänencontrollers:
 
-   - Das Gerät wird mit Windows Server 2008 R2 oder einer späteren Version ausgeführt.
+   - Das Gerät wird mit Windows Server 2008 R2 oder einer neueren Version ausgeführt.
    - Der Testdomänencontroller für [Microsoft Defender for Identity](/azure/security-center/security-center-wdatp) und Aktivieren der [Remoteverwaltung.](/windows-server/administration/server-manager/configure-remote-management-in-server-manager)
-   - Stellen Sie sicher, dass [die Integration von Microsoft Defender for Identity und Microsoft Cloud App Security](/cloud-app-security/mdi-integration) aktiviert wurde.
+   - Stellen Sie [sicher, dass Microsoft Defender for Identity und Microsoft Cloud App Security integration](/cloud-app-security/mdi-integration) aktiviert wurden.
    - Ein Testbenutzer wird in Ihrer Domäne erstellt – es sind keine Administratorberechtigungen erforderlich.
 
 3. Überprüfen der Gerätekonfiguration:
 
-   1. Das Gerät wird mit Windows 10, Version 1903 oder einer neueren Version, ausgeführt.
+   1. Das Gerät wird mit Windows 10 Version 1903 oder einer späteren Version ausgeführt.
 
    1. Das Testgerät ist der Testdomäne beigetreten.
 
-   1. [Aktivieren sie Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Wenn Sie Probleme beim Aktivieren von Windows Defender Haben, lesen Sie dieses [Problembehandlungsthema](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+   1. [Aktivieren Sie Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Wenn Sie Probleme beim Aktivieren Windows Defender Antivirus, lesen Sie dieses [Problembehandlungsthema](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
 
    1. Stellen Sie sicher, dass das Testgerät [in Microsoft Defender for Endpoint onboarded ist.](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 
@@ -99,9 +99,9 @@ So führen Sie die Simulation des Angriffsszenarios aus:
 4. Fügen Sie an der Eingabeaufforderung das kopierte Skript ein, und führen Sie es aus.
 
 > [!NOTE]
-> Wenn Sie PowerShell mithilfe des Remotedesktopprotokolls (RDP) ausführen, verwenden Sie den Befehl Zwischenablagetext eingeben im RDP-Client, da die **Ctrl-V-Hotkey-** oder right-click-paste-Methode möglicherweise nicht funktioniert. Aktuelle Versionen von PowerShell akzeptieren diese Methode manchmal auch nicht. Sie müssen möglicherweise zuerst in Editor im Arbeitsspeicher kopieren, in den virtuellen Computer kopieren und dann in PowerShell einfügen.
+> Wenn Sie PowerShell mithilfe des Remotedesktopprotokolls (RDP) ausführen, verwenden Sie den Befehl Zwischenablagetext eingeben im RDP-Client, da die **Ctrl-V-Hotkey-** oder right-click-paste-Methode möglicherweise nicht funktioniert. Die letzten Versionen von PowerShell akzeptieren diese Methode manchmal auch nicht. Sie müssen möglicherweise zuerst in Editor im Arbeitsspeicher kopieren, sie auf dem virtuellen Computer kopieren und dann in PowerShell einfügen.
 
-Einige Sekunden später <i> wirdnotepad.exe</i> geöffnet. Ein simulierter Angriffscode wird in die notepad.exe. Lassen Sie die automatisch generierte Notepad-Instanz geöffnet, um das vollständige Szenario zu erleben.
+Einige Sekunden später <i> wirdnotepad.exe</i> geöffnet. Ein simulierter Angriffscode wird in die notepad.exe. Halten Sie die automatisch generierte Editor, um das vollständige Szenario zu erhalten.
 
 Der simulierte Angriffscode versucht, mit einer externen #A0 zu kommunizieren (der C2-Server wird simuliert), und dann versucht er, die Verbindung über SMB auf den Domänencontroller zu übertragen.
 
@@ -111,7 +111,7 @@ Wenn dieses Skript abgeschlossen ist, wird eine Meldung in der PowerShell-Konsol
 ran NetSessionEnum against [DC Name] with return code result 0
 ```
 
-Um das Feature für automatisierten Vorfall und Reaktion in Aktion zu sehen, halten Sie notepad.exe geöffnet. Es wird angezeigt, dass automatisierter Vorfall und Reaktion den Editor-Prozess beenden.
+Um das Feature für automatisierten Vorfall und Reaktion in Aktion zu sehen, halten Sie notepad.exe geöffnet. Sie sehen, dass der Prozess mit automatisiertem Vorfall und Reaktion beendet Editor wird.
 
 ## <a name="investigate-an-incident"></a>Untersuchung eines Vorfalls
 
@@ -120,13 +120,13 @@ Um das Feature für automatisierten Vorfall und Reaktion in Aktion zu sehen, hal
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Bzwz?]
 
-Wenn Sie zum SoC-Analysten wechseln, können Sie nun beginnen, den Angriff im Microsoft 365 Security Center-Portal zu untersuchen.
+Wenn Sie zum Soc-Analysten-Standpunkt wechseln, können Sie nun beginnen, den Angriff im Microsoft 365 Security Center zu untersuchen.
 
-1. Öffnen Sie [die Microsoft 365 Security Center-Portalwarteschlange](https://security.microsoft.com/incidents) für Sicherheitsvorfälle auf einem beliebigen Gerät.
+1. Öffnen Sie [die Microsoft 365 Security Center-Portalwarteschlange](https://security.microsoft.com/incidents) von jedem Gerät aus.
 
 2. Navigieren Sie **im Menü** zu Vorfälle.
 
-    ![Screenshot von Vorfällen, wie im linken Menü des Microsoft 365 Security Center gezeigt](../../media/mtp/fig1.png)
+    ![Screenshot von Vorfällen, wie im Microsoft 365 linken Menü des Sicherheitscenters angezeigt](../../media/mtp/fig1.png)
 
 3. Der neue Vorfall für den simulierten Angriff wird in der Vorfallwarteschlange angezeigt.
 
@@ -227,7 +227,7 @@ Wählen Sie auf der Seite Vorfall die Registerkarte **Benutzer** aus, um die Lis
 
 Wählen Sie den Benutzernamen aus, um die Profilseite des Benutzers zu öffnen, auf der weitere Untersuchungen durchgeführt werden können. [Lesen Sie mehr über die Untersuchung riskanter Benutzer](/cloud-app-security/tutorial-ueba#identify).
 
-![Screenshot der Cloud App Security-Benutzerseite](../../media/mtp/fig13.png)
+![Screenshot Cloud App Security Benutzerseite](../../media/mtp/fig13.png)
 
 ## <a name="automated-investigation-and-remediation"></a>Automatische Untersuchung und Reaktion
 
@@ -262,7 +262,7 @@ Nachdem die Untersuchung abgeschlossen und bestätigt wurde, dass sie behoben wu
 
 Wählen **Sie Vorfall verwalten aus.** Legen Sie den Status auf **Vorfall beheben,** und wählen Sie die entsprechende Klassifizierung aus.
 
-Wenn der Vorfall behoben wird, werden alle zugeordneten Warnungen im Microsoft 365 Security Center und in den zugehörigen Portalen geschlossen.
+Wenn der Vorfall behoben wird, werden alle zugeordneten Warnungen in Microsoft 365 Security Center und in den zugehörigen Portalen geschlossen.
 
 ![Screenshot der Seite "Vorfälle" mit dem geöffneten Bereich "Vorfall verwalten", auf dem Sie auf die Option zum Beheben von Vorfällen klicken können](../../media/mtp/fig16.png)
 
@@ -279,17 +279,17 @@ Dies schließt die Angriffssimulation für die Vorfallverwaltung und automatisie
 
 Für dieses Szenario ist ein einzelnes internes Postfach und Gerät erforderlich. Sie benötigen auch ein externes E-Mail-Konto, um die Testnachricht zu senden.
 
-1. Vergewissern Sie sich, dass Ihr [Mandant Microsoft 365 Defender aktiviert hat.](m365d-enable.md#confirm-that-the-service-is-on)
+1. Vergewissern Sie sich, dass Ihr [Mandant defender Microsoft 365 hat.](m365d-enable.md#confirm-that-the-service-is-on)
 2. Identifizieren Sie ein Zielpostfach, das für den Empfang von E-Mails verwendet werden soll.
-    a. Dieses Postfach muss von Microsoft Defender für Office 365 b überwacht werden. Das Gerät von Anforderung 3 muss auf dieses Postfach zugreifen
+    a. Dieses Postfach muss von Microsoft Defender für Office 365 überwacht werden. Das Gerät von Anforderung 3 muss auf dieses Postfach zugreifen
 3. Konfigurieren eines Testgeräts: a. Stellen Sie sicher, dass Sie Windows 10 Version 1903 oder höher verwenden.
     b. Verbinden Sie das Testgerät mit der Testdomäne.
-    c. [Aktivieren sie Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Wenn Sie Probleme beim Aktivieren Windows Defender Antivirus haben, lesen Sie [dieses Problembehandlungsthema](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
+    c. [Aktivieren Sie Windows Defender Antivirus](/windows/security/threat-protection/windows-defender-antivirus/configure-windows-defender-antivirus-features). Wenn Sie Probleme beim Aktivieren Windows Defender Antivirus, lesen Sie [dieses Problembehandlungsthema](/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding#ensure-that-windows-defender-antivirus-is-not-disabled-by-a-policy).
     d. [Onboarding bei Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints).
 
 ### <a name="run-the-simulation"></a>Ausführen der Simulation
 
-1. Senden Sie von einem externen E-Mail-Konto eine E-Mail an das postfach, das in Schritt 2 des Abschnitts test environment requirements identifiziert ist. Fügen Sie eine Anlage ein, die über vorhandene E-Mail-Filterrichtlinien zulässig ist. Diese Datei muss weder schädlich noch eine ausführbare Datei sein. Vorgeschlagene Dateitypen sind <i>.pdf,</i> <i>.exe</i> (sofern zulässig) oder Office-Dokument wie eine Word-Datei.
+1. Senden Sie von einem externen E-Mail-Konto eine E-Mail an das postfach, das in Schritt 2 des Abschnitts test environment requirements identifiziert ist. Fügen Sie eine Anlage ein, die über vorhandene E-Mail-Filterrichtlinien zulässig ist. Diese Datei muss weder schädlich noch eine ausführbare Datei sein. Vorgeschlagene Dateitypen <i>sind.pdf</i>, <i>.exe</i> (sofern zulässig) oder Office dokument, z. B. eine Word-Datei.
 2. Öffnen Sie die gesendete E-Mail von dem Gerät, das gemäß Schritt 3 des Abschnitts test environment requirements konfiguriert ist. Öffnen Sie die Anlage, oder speichern Sie die Datei auf dem Gerät.
 
 #### <a name="go-hunting"></a>Auf die Suche gehen
@@ -435,17 +435,17 @@ Benutzerdefinierte Erkennungen führen die Abfrage entsprechend der von Ihnen fe
 Um mehr über die erweiterte Suche zu erfahren, werden Sie in den folgenden Webcasts durch die Funktionen der erweiterten Suche in Microsoft 365 Defender zum Erstellen säulenübergreifender Abfragen, zum Pivotieren von Entitäten und zum Erstellen von benutzerdefinierten Erkennungs- und Korrekturaktionen.
 
 > [!NOTE]
-> Bereiten Sie sich mit Ihrem eigenen GitHub-Konto vor, um die Suchabfragen in Ihrer Pilottestumgebung ausführen zu können.
+> Bereiten Sie sich mit Ihrem GitHub-Konto vor, um die Suchabfragen in Ihrer Pilottestumgebung ausführen zu können.
 
 |Titel|Beschreibung|MP4 herunterladen|Auf YouTube ansehen|Zu verwendende CSL-Datei|
 |---|---|---|---|---|
-|Episode 1: KQL-Grundlagen|Wir werden die Grundlagen der erweiterten Funktionen für die Suche in Microsoft 365 Defender abdecken. Erfahren Sie mehr über verfügbare erweiterte Suchesdaten und grundlegende KQL-Syntax und Operatoren.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Folge 1: CSL-Datei in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
+|Episode 1: KQL-Grundlagen|Wir werden die Grundlagen der erweiterten Funktionen für die Suche in Microsoft 365 werden. Erfahren Sie mehr über verfügbare erweiterte Suchesdaten und grundlegende KQL-Syntax und Operatoren.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Folge 1: CSL-Datei in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
 |Folge 2: Beitritte|Wir lernen weiterhin informationen zu Daten in der erweiterten Suche und zum Verbinden von Tabellen. Erfahren Sie mehr über innere, äußere, eindeutige und semi-Verknüpfungen sowie die Nuancen der standardmäßigen Kusto-innerunique-Verknüpfung.|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[Folge 2: CSL-Datei in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|
 |Folge 3: Zusammenfassen, Pivotieren und Visualisieren von Daten|Jetzt, da wir Daten filtern, bearbeiten und verbinden können, ist es an der Zeit, mit der Zusammenfassung, Quantifizierung, dem Pivotieren und der Visualisierung zu beginnen. In dieser Folge werden der Zusammenfassungsoperator und einige der Berechnungen, die Sie beim Eintauchen in zusätzliche Tabellen im schema der erweiterten Suche ausführen können, dargestellt. Wir verwandeln unsere Datasets in Diagramme, mit deren Hilfe die Analyse verbessert werden kann.|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[Folge 3: CSL-Datei in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
-|Folge 4: Let's hunt! Anwenden von KQL auf die Vorfallverfolgung|Zeit zum Nachverfolgen einiger Angreiferaktivitäten! In dieser Folge verwenden wir unser verbessertes Verständnis von KQL und der erweiterten Suche in Microsoft 365 Defender, um einen Angriff nachverfolgt zu haben. Erfahren Sie mehr über die Tipps und Tricks, die in diesem Feld zum Nachverfolgen von Aktivitäten von Angreifern verwendet werden, einschließlich der ABCs für Cybersicherheit und deren Anwendung auf Die Reaktion auf Vorfälle.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Episode 4: CSL-Datei in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
+|Folge 4: Let's hunt! Anwenden von KQL auf die Vorfallverfolgung|Zeit zum Nachverfolgen einiger Angreiferaktivitäten! In dieser Folge verwenden wir unser verbessertes Verständnis von KQL und der erweiterten Suche in Microsoft 365 Defender, um einen Angriff nachverfolgt zu werden. Erfahren Sie mehr über die Tipps und Tricks, die in diesem Feld zum Nachverfolgen von Aktivitäten von Angreifern verwendet werden, einschließlich der ABCs für Cybersicherheit und deren Anwendung auf Die Reaktion auf Vorfälle.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Episode 4: CSL-Datei in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
 |
 
 ## <a name="next-step"></a>Nächster Schritt
 
-|![Abschluss- und Zusammenfassungsphase](../../media/mtp/close.png) <br>[Abschluss- und Zusammenfassungsphase](m365d-pilot-close.md)|Analysieren Sie Ihr Microsoft 365 Defender-Pilotergebnis, stellen Sie sie Ihren Beteiligten vor, und führen Sie den nächsten Schritt aus.
+|![Abschluss- und Zusammenfassungsphase](../../media/mtp/close.png) <br>[Abschluss- und Zusammenfassungsphase](m365d-pilot-close.md)|Analysieren Sie Microsoft 365 Defender-Pilotergebnis, stellen Sie sie Ihren Beteiligten vor, und führen Sie den nächsten Schritt aus.
 |:-----|:-----|

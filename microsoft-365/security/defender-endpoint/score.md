@@ -54,4 +54,4 @@ Eigenschaft |  Typ    |   Beschreibung
 :---|:---|:---
 Bewertung | Gleitkommawert mit doppelter Genauigkeit | Die aktuelle Bewertung.
 Zeit | DateTime | Datum und Uhrzeit des Aufrufs dieser API.
-RbacGroupName | Zeichenfolge | Der Name der Gerätegruppe.
+RbacGroupName | String | Der Name der Gerätegruppe.

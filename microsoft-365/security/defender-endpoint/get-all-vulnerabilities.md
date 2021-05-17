@@ -57,7 +57,7 @@ GET /api/vulnerabilities
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
+Authorization | String | Bearer {token}. **Erforderlich**.
 
 
 ## <a name="request-body"></a>Anforderungstext

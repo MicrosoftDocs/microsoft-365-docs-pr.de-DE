@@ -56,7 +56,7 @@ Es gibt vier Schritte zur Problembehandlung:
 
 Regeln zur Reduzierung der Angriffsfläche funktionieren nur auf Geräten mit den folgenden Bedingungen:
 
-- Auf Endpunkten wird Windows 10 Enterprise, Version 1709 (auch als Fall Creators Update bekannt) ausgeführt.
+- Endpunkte werden Windows 10 Enterprise Version 1709 (auch als Fall Creators Update bekannt) ausgeführt.
 
 - Endpunkte verwenden Microsoft Defender Antivirus als einzige Antivirenschutz-App. [Wenn Sie eine andere Antiviren-App verwenden, wird Microsoft Defender AV selbst deaktiviert.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
@@ -68,7 +68,7 @@ Wenn alle voraussetzungen erfüllt sind, fahren Sie mit dem nächsten Schritt fo
 
 ## <a name="use-audit-mode-to-test-the-rule"></a>Verwenden des Überwachungsmodus zum Testen der Regel
 
-Sie können die Windows Defender Test ground-Website unter [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) besuchen, um zu bestätigen, dass Regeln zur Reduzierung der Angriffsfläche in der Regel für vorkonfigurierte Szenarien und Prozesse auf einem Gerät geeignet sind, oder Sie können den Überwachungsmodus verwenden, der nur Regeln für die Berichterstellung ermöglicht.
+Sie können die Windows Defender Test ground-Website unter [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) besuchen, um zu bestätigen, dass Regeln zur Reduzierung der Angriffsfläche in der Regel für vorkonfigurierte Szenarien und Prozesse auf einem Gerät funktionieren, oder Sie können den Überwachungsmodus verwenden, der Regeln nur für die Berichterstellung ermöglicht.
 
 Befolgen Sie diese Anweisungen unter [Verwenden des Demotools,](evaluate-attack-surface-reduction.md) um zu sehen, wie Regeln zur Reduzierung der Angriffsfläche funktionieren, um die spezifische Regel zu testen, mit der Probleme auftreten.
 
@@ -100,7 +100,7 @@ Informationen zum Hinzufügen eines Ausschlusses finden Sie unter [Customize Att
 
 ## <a name="report-a-false-positive-or-false-negative"></a>Melden eines falsch positiven oder falsch negativen Werts
 
-Verwenden Sie [Windows Defender Webbasiertes Übermittlungsformular](https://www.microsoft.com/wdsi/filesubmission) für Sicherheitsintelligenz, um ein falsch negatives oder falsch positives Ergebnis für den Netzwerkschutz zu melden. Mit einem Windows E5-Abonnement können Sie auch einen Link zu allen [zugeordneten Warnungen bereitstellen.](alerts-queue.md)
+Verwenden Sie Windows Defender [Webbasiertes](https://www.microsoft.com/wdsi/filesubmission) Übermittlungsformular für Sicherheitsintelligenz, um ein falsch negatives oder falsch positives Ergebnis für den Netzwerkschutz zu melden. Mit einem Windows E5-Abonnement können Sie auch einen Link zu allen zugeordneten [Warnungen bereitstellen.](alerts-queue.md)
 
 ## <a name="collect-diagnostic-data-for-file-submissions"></a>Sammeln von Diagnosedaten für Dateiübermittlungen
 

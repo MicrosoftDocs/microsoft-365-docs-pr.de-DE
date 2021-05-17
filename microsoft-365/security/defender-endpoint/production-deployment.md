@@ -52,13 +52,13 @@ In diesem Bereitstellungsszenario werden Sie durch die folgenden Schritte gefüh
 
 
 >[!NOTE]
->Um Sie durch eine typische Bereitstellung zu führen, wird in diesem Szenario nur die Verwendung von Microsoft Endpoint Configuration Manager beschrieben. Defender for Endpoint unterstützt die Verwendung anderer Onboardingtools, diese Szenarien werden jedoch nicht im Bereitstellungshandbuch beschrieben. Weitere Informationen finden Sie unter [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md).
+>Um Sie durch eine typische Bereitstellung zu führen, wird in diesem Szenario nur die Verwendung von Microsoft Endpoint Configuration Manager. Defender for Endpoint unterstützt die Verwendung anderer Onboardingtools, diese Szenarien werden jedoch nicht im Bereitstellungshandbuch beschrieben. Weitere Informationen finden Sie unter [Onboard devices to Microsoft Defender for Endpoint](onboard-configure.md).
 
 ## <a name="check-license-state"></a>Überprüfen des Lizenzstatus
 
-Die Überprüfung auf den Lizenzstatus und ob er ordnungsgemäß bereitgestellt wurde, kann über das Admin Center oder über das **Microsoft Azure-Portal durchgeführt werden.**
+Die Überprüfung auf den Lizenzstatus und ob er ordnungsgemäß bereitgestellt wurde, kann über das Admin Center oder über das Microsoft Azure **werden.**
 
-1. Um Ihre Lizenzen anzeigen zu können, wechseln Sie zum **Microsoft Azure-Portal,** und navigieren Sie zum [Microsoft Azure-Portallizenzabschnitt](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
+1. Um Ihre Lizenzen zu sehen, wechseln Sie zum **Microsoft Azure Portal,** und navigieren Sie zum [Abschnitt Microsoft Azure Portallizenz](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products).
 
    ![Abbildung der Azure-Lizenzierungsseite](images/atp-licensing-azure-portal.png)
 
@@ -73,7 +73,7 @@ Die Überprüfung auf den Lizenzstatus und ob er ordnungsgemäß bereitgestellt 
 
 Um Zugriff darauf zu erhalten, welche Lizenzen für Ihr Unternehmen bereitgestellt werden, und um den Status der Lizenzen zu überprüfen, wechseln Sie zum Admin Center.
 
-1. Wählen Sie **im Partnerportal** Die Option **Dienste > Office 365 verwalten aus.**
+1. Wählen Sie **im Partnerportal** die Option **Dienste verwalten > Office 365**.
 
 2. Wenn Sie auf den **Link Partnerportal** klicken, wird die Option **Admin im** Namen geöffnet, und Sie erhalten Zugriff auf das Customer Admin Center.
 
@@ -83,7 +83,7 @@ Um Zugriff darauf zu erhalten, welche Lizenzen für Ihr Unternehmen bereitgestel
 
 ## <a name="tenant-configuration"></a>Mandantenkonfiguration
 
-Beim ersten Zugriff auf Microsoft Defender Security Center ein Assistent, der Sie durch einige erste Schritte führt. Am Ende des Setup-Assistenten wird eine dedizierte Cloudinstanz von Defender for Endpoint erstellt. Die einfachste Methode besteht in der Ausführung dieser Schritte auf einem Windows 10-Clientgerät.
+Beim ersten Zugriff Microsoft Defender Security Center ein Assistent, der Sie durch einige erste Schritte führt. Am Ende des Setup-Assistenten wird eine dedizierte Cloudinstanz von Defender for Endpoint erstellt. Die einfachste Methode besteht in der Ausführung dieser Schritte auf einem Windows 10 Clientgerät.
 
 1. Navigieren Sie in einem Webbrowser zu <https://securitycenter.windows.com> .
 
@@ -106,7 +106,7 @@ Beim ersten Zugriff auf Microsoft Defender Security Center ein Assistent, der Si
 
     ![Abbildung des geografischen Standorts in der Einrichtung](images/setup-preferences.png)
 
-5. Klicken Sie auf **Weiter**.
+5. Wählen Sie **Weiter** aus.
 
      ![Abbildung der endgültigen Einstellungseinstellung](images/setup-preferences2.png)
 
@@ -136,23 +136,23 @@ Wenn in der Netzwerktopologie ein transparenter Proxy oder ein WPAD implementier
 
 Konfigurieren Sie einen registrierungsbasierten statischen Proxy, damit nur der Microsoft Defender for Endpoint-Sensor Diagnosedaten melden und mit Microsoft Defender for Endpoint-Diensten kommunizieren kann, wenn ein Computer keine Verbindung mit dem Internet herstellen darf. Der statische Proxy kann mithilfe von Gruppenrichtlinien konfiguriert werden. Die Gruppenrichtlinien finden Sie unter:
 
- - Administrative Vorlagen \> Windows-Komponenten Datensammlungs- und Vorschaubuilds Konfigurieren der authentifizierten Proxyverwendung für den verbundenen \> \> Benutzererfahrungs- und Telemetriedienst
+ - Administrative Vorlagen Windows Komponenten Datensammlung und Vorschaubuilds Konfigurieren der authentifizierten Proxyverwendung für den verbundenen \> \> \> Benutzererfahrungs- und Telemetriedienst
      - Legen Sie sie auf **Aktiviert,** und wählen **Sie Authentifizierte Proxyverwendung deaktivieren aus.**
 
 1. Öffnen Sie die Gruppenrichtlinien-Verwaltungskonsole.
 2. Erstellen Sie eine Richtlinie, oder bearbeiten Sie eine vorhandene Richtlinie basierend auf den Organisationspraktiken.
-3. Bearbeiten Sie die Gruppenrichtlinie, und navigieren Sie zu **Administrative Vorlagen Windows Components Data Collection and Preview Builds Configure \> \> \> Authenticated Proxy usage for the Connected User Experience and Telemetry Service**. 
+3. Bearbeiten Sie die Gruppenrichtlinie, und navigieren Sie zu Administrative Vorlagen Windows Komponenten Datensammlung und Vorschaubuilds Konfigurieren der authentifizierten Proxyverwendung für den verbundenen Benutzererfahrungs- und **\> \> \> Telemetriedienst**. 
     ![Abbildung der Gruppenrichtlinienkonfiguration](images/atp-gpo-proxy1.png)
 
 4. Wählen Sie **Aktiviert** aus.
 5. Wählen **Sie Authentifizierte Proxyverwendung deaktivieren aus.**
    
-6. Navigieren Sie **zu Administrative Vorlagen \> Windows-Komponenten \> Datensammlung und Vorschaubuilds Konfigurieren \> von verbundenen Benutzererfahrungen und Telemetrie**.
+6. Navigieren Sie **zu Administrative Vorlagen Windows Komponenten \> \> Datensammlung und Vorschaubuilds Konfigurieren von verbundenen \> Benutzererfahrungen und Telemetrie**.
     ![Abbildung der Gruppenrichtlinienkonfigurationseinstellung](images/atp-gpo-proxy2.png)
 7. Wählen Sie **Aktiviert** aus.
 8. Geben Sie den **Proxyservernamen ein.**
 
-Die Richtlinie setzt zwei Registrierungswerte (`TelemetryProxyServer` als "REG_SZ" und `DisableEnterpriseAuthProxy` als "REG_DWORD") unter dem Registrierungsschlüssel `HKLM\Software\Policies\Microsoft\Windows\DataCollection` fest.
+Die Richtlinie setzt zwei Registrierungswerte (`TelemetryProxyServer` als "REG_SZ&quot; und `DisableEnterpriseAuthProxy` als &quot;REG_DWORD") unter dem Registrierungsschlüssel `HKLM\Software\Policies\Microsoft\Windows\DataCollection` fest.
 
 Der Registrierungswert `TelemetryProxyServer` hat das folgende Zeichenfolgenformat:
 
@@ -189,10 +189,10 @@ Verwenden Sie den netsh-Befehl, um einen systemweiten statischen Proxy zu konfig
 
 ###  <a name="proxy-configuration-for-down-level-devices"></a>Proxykonfiguration für Geräte auf ebener ebener Ebene
 
-Down-Level gehören Windows 7 SP1- und Windows 8.1-Arbeitsstationen sowie Windows Server 2008 R2,Windows Server 2012, Windows Server 2012 R2 und Versionen von Windows Server 2016 vor Windows Server CB 1803. Für diese Betriebssysteme wird der Proxy als Teil des Microsoft Management Agent konfiguriert, um die Kommunikation vom Endpunkt an Azure zu verarbeiten. Informationen zur Konfiguration eines Proxys auf diesen Geräten finden Sie im Microsoft Management Agent Fast Deployment Guide.
+Down-Level-Geräte umfassen Windows 7 SP1- und Windows 8.1-Arbeitsstationen sowie Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 und Versionen von Windows Server 2016 vor Windows Server CB 1803. Für diese Betriebssysteme wird der Proxy als Teil des Microsoft Management Agent konfiguriert, um die Kommunikation vom Endpunkt an Azure zu verarbeiten. Informationen zur Konfiguration eines Proxys auf diesen Geräten finden Sie im Microsoft Management Agent Fast Deployment Guide.
 
 ### <a name="proxy-service-urls"></a>Proxydienst-URLs
-URLs, die v20 enthalten, werden nur benötigt, wenn Sie Über Windows 10, Version 1803 oder höher, verfügen. Ist beispielsweise nur erforderlich, wenn sich das ```us-v20.events.data.microsoft.com``` Gerät unter Windows 10, Version 1803 oder höher befindet.
+URLs, die v20 enthalten, werden nur benötigt, wenn Sie über Windows 10, Version 1803 oder höher verfügen. Ist beispielsweise nur erforderlich, wenn sich das Gerät ```us-v20.events.data.microsoft.com``` auf Windows 10 Version 1803 oder höher befindet.
  
 
 Wenn ein Proxy oder eine Firewall anonymen Datenverkehr blockiert, da der Microsoft Defender for Endpoint-Sensor eine Verbindung aus dem Systemkontext verbindet, stellen Sie sicher, dass anonymer Datenverkehr in den aufgeführten URLs zulässig ist.

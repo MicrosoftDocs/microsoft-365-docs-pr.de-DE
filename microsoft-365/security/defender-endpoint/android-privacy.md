@@ -47,7 +47,7 @@ Erforderliche Daten bestehen aus Daten, die erforderlich sind, damit Defender fo
 Informationen zu **schädlichen** Android-Anwendungspaketen (APKs) auf dem Gerät, einschließlich
 
 -  Installationsquelle
--  Speicherort (Dateipfad) der APK
+-  Storage Speicherort (Dateipfad) der APK
 -  Zeitpunkt der Installation, Größe der APK und Berechtigungen
 
 ### <a name="web-page--network-information"></a>Webseiten-/Netzwerkinformationen
@@ -66,9 +66,9 @@ Informationen zu **schädlichen** Android-Anwendungspaketen (APKs) auf dem Gerä
     - Nach dem Zufallsprinzip generierte GUID (Globally Unique Identifier)
 
 - Mandanten-, Geräte- und Benutzerinformationen
-    -   Azure Active Directory (AD)-Geräte-ID und Azure-Benutzer-ID: Identifiziert das Gerät eindeutig, Benutzer bzw. Azure Active Directory.
+    -   Azure Active Directory (AD) Geräte-ID und Azure-Benutzer-ID: Identifiziert das Gerät eindeutig, Benutzer bzw. Azure Active Directory.
 
-    -   Azure-Mandanten-ID – GUID, die Ihre Organisation in Azure Active Directory identifiziert
+    -   Azure-Mandanten-ID – GUID, die Ihre Organisation innerhalb Azure Active Directory
 
     -   Microsoft Defender for Endpoint Org ID – Eindeutige ID, die dem Unternehmen zugeordnet ist, zu dem das Gerät gehört. Ermöglicht Microsoft zu ermitteln, ob sich Probleme auf eine ausgewählte Gruppe von Unternehmen auswirken und wie viele Unternehmen betroffen sind 
 

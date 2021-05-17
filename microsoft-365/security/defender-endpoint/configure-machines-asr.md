@@ -33,26 +33,26 @@ ms.locfileid: "51932847"
 
 > Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink).
 
-[Regeln zur Reduzierung der Angriffsfläche (Attack Surface Reduction, ASR)](./attack-surface-reduction.md) identifizieren und verhindern typische Schadsoftware-Exploits. Sie steuern, wann und wie potenziell schädlicher Code ausgeführt werden kann. Sie können beispielsweise verhindern, dass JavaScript oder VBScript eine heruntergeladene ausführbare Datei startet, Win32-API-Aufrufe von Office-Makros blockieren und Prozesse blockieren, die von USB-Laufwerken ausgeführt werden.
+[Regeln zur Reduzierung der Angriffsfläche (Attack Surface Reduction, ASR)](./attack-surface-reduction.md) identifizieren und verhindern typische Schadsoftware-Exploits. Sie steuern, wann und wie potenziell schädlicher Code ausgeführt werden kann. Beispielsweise können sie verhindern, dass JavaScript oder VBScript eine heruntergeladene ausführbare Datei startet, Win32-API-Aufrufe von Office-Makros blockieren und Prozesse blockieren, die von USB-Laufwerken ausgeführt werden.
 
 ![Angriffsoberflächenverwaltungskarte](images/secconmgmt_asr_card.png)<br>
 *Angriffsoberflächenverwaltungskarte*
 
-Die *Angriffsoberflächenverwaltungskarte* ist ein Einstiegspunkt für Tools im Microsoft 365 Security Center, die Sie verwenden können, um:
+Die *Angriffsoberflächenverwaltungskarte* ist ein Einstiegspunkt für Tools in Microsoft 365 Security Center, die Sie verwenden können, um:
 
 * Erfahren Sie, wie ASR-Regeln derzeit in Ihrer Organisation bereitgestellt werden.
 * Überprüfen Sie ASR-Erkennungen, und identifizieren Sie mögliche falsche Erkennungen.
 * Analysieren Sie die Auswirkungen von Ausschlüssen, und generieren Sie die Liste der auszuschließenden Dateipfade.
 
-Wählen **Sie Go to attack surface management** Monitoring & reports > Attack surface reduction rules > Add  >  **exclusions** aus. Von dort aus können Sie zu anderen Abschnitten des Microsoft 365 Security Centers navigieren.
+Wählen **Sie Go to attack surface management** Monitoring & reports > Attack surface reduction rules > Add  >  **exclusions** aus. Von dort aus können Sie zu anderen Abschnitten des Microsoft 365 navigieren.
 
-![Registerkarte "Ausschlüsse hinzufügen" auf der Seite Attack surface reduction rules in Microsoft 365 Security Center](images/secconmgmt_asr_m365exlusions.png)<br>
+![Hinzufügen der Registerkarte Ausschlüsse auf der Seite Attack surface reduction rules in Microsoft 365 Security Center](images/secconmgmt_asr_m365exlusions.png)<br>
 Die ***Registerkarte Ausschlüsse hinzufügen** auf der Seite Attack surface reduction rules in Microsoft 365 Security Center*
 
 > [!NOTE]
-> Für den Zugriff auf Microsoft 365 Security Center benötigen Sie eine Microsoft 365 E3- oder E5-Lizenz und ein Konto mit bestimmten Rollen in Azure Active Directory. [Lesen Sie mehr über erforderliche Lizenzen und Berechtigungen](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
+> Um auf Microsoft 365 Security Center zu zugreifen, benötigen Sie eine Microsoft 365 E3- oder E5-Lizenz und ein Konto mit bestimmten Rollen Azure Active Directory. [Lesen Sie mehr über erforderliche Lizenzen und Berechtigungen](https://docs.microsoft.com/office365/securitycompliance/microsoft-security-and-compliance#required-licenses-and-permissions).
 
-Weitere Informationen zur Bereitstellung von ASR-Regeln in Microsoft 365 Security Center finden Sie unter Überwachen und Verwalten der Bereitstellung und Erkennung von [ASR-Regeln.](https://docs.microsoft.com/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections)
+Weitere Informationen zur Bereitstellung von ASR-Regeln in Microsoft 365 Security Center finden Sie unter [Monitor and manage ASR rule deployment and detections](https://docs.microsoft.com/office365/securitycompliance/monitor-devices#monitor-and-manage-asr-rule-deployment-and-detections).
 
 **Verwandte Themen**
 

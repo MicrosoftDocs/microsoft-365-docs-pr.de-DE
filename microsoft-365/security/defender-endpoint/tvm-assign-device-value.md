@@ -1,7 +1,7 @@
 ---
-title: Zuweisen des Gerätewerts – Bedrohungs- und Sicherheitsrisikoverwaltung
+title: Gerätewert zuweisen – Bedrohungs- und Sicherheitsrisikomanagement
 description: Erfahren Sie, wie Sie einem Gerät einen niedrigen, normalen oder hohen Wert zuweisen, um zwischen den Ressourcenprioritäten zu unterscheiden.
-keywords: Microsoft Defender for Endpoint Device Value, Threat and Vulnerability Management Device Value, High Value Devices, Device Value Exposure Score
+keywords: Microsoft Defender for Endpoint-Gerätewert, Bedrohungs- und Sicherheitsrisikomanagement Gerätewert, hochwertige Geräte, Gerätewert-Belichtungsergebnis
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,21 +25,21 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935197"
 ---
-# <a name="assign-device-value---threat-and-vulnerability-management"></a>Zuweisen des Gerätewerts – Bedrohungs- und Sicherheitsrisikoverwaltung
+# <a name="assign-device-value---threat-and-vulnerability-management"></a>Gerätewert zuweisen – Bedrohungs- und Sicherheitsrisikomanagement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Bedrohungs- und Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md)
+- [Bedrohung und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Wenn Sie den Wert eines Geräts definieren, können Sie zwischen den Ressourcenprioritäten unterscheiden. Der Gerätewert wird verwendet, um die Risikobereitschaft eines einzelnen Vermögenswerts in die Berechnung der Risikobewertung für das Risiko- und Sicherheitsrisikomanagement zu integrieren. Geräte, die als "hoher Wert" zugewiesen sind, erhalten mehr Gewichtung.
+Wenn Sie den Wert eines Geräts definieren, können Sie zwischen den Ressourcenprioritäten unterscheiden. Der Gerätewert wird verwendet, um die Risikobereitschaft eines einzelnen Vermögenswerts in die Berechnung Bedrohungs- und Sicherheitsrisikomanagement Risikos zu integrieren. Geräte, die als "hoher Wert" zugewiesen sind, erhalten mehr Gewichtung.
 
 Sie können auch die [Set Device Value API verwenden.](set-device-value.md)
 
@@ -78,6 +78,6 @@ Die Belichtungsnote ist ein gewichteter Durchschnitt auf allen Geräten. Wenn Si
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Übersicht über die Verwaltung von Bedrohungen und Sicherheitslücken](next-gen-threat-and-vuln-mgt.md)
+- [Übersicht über Bedrohungen Sicherheitsrisikomanagement Bedrohungen](next-gen-threat-and-vuln-mgt.md)
 - [Belichtungsergebnis](tvm-exposure-score.md)
 - [APIs](next-gen-threat-and-vuln-mgt.md#apis)

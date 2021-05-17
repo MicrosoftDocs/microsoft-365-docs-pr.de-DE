@@ -50,7 +50,7 @@ Offboardgerät von Defender for Endpoint.
 [!include[Machine actions note](../../includes/machineactionsnote.md)]
 
 >[!Note]
-> Diese API wird unter Windows 10, Version 1703 und höher oder Windows Server 2019 und höher, unterstützt. Diese API wird auf MacOS- oder Linux-Geräten nicht unterstützt.
+> Diese API wird auf Windows 10 Version 1703 und höher oder Windows Server 2019 und höher unterstützt. Diese API wird auf MacOS- oder Linux-Geräten nicht unterstützt.
 
 ## <a name="permissions"></a>Berechtigungen
 Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Defender for Endpoint APIs](apis-intro.md)
@@ -74,7 +74,7 @@ POST https://api.securitycenter.microsoft.com/api/machines/{id}/offboard
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
+Authorization | String | Bearer {token}. **Erforderlich**.
 Content-Type | Zeichenfolge | application/json. **Erforderlich**.
 
 ## <a name="request-body"></a>Anforderungstext

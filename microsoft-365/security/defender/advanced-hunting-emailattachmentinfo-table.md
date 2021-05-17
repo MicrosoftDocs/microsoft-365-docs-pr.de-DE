@@ -37,14 +37,14 @@ ms.locfileid: "51935497"
 
 
 
-Die Tabelle im Schema der erweiterten Suche enthält Informationen zu Anlagen in E-Mails, die von `EmailAttachmentInfo` Microsoft Defender für Office 365 verarbeitet wurden. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
+Die Tabelle im Schema der erweiterten Suche enthält Informationen zu Anlagen in E-Mails, die von `EmailAttachmentInfo` Microsoft Defender für Office 365. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
 Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter [Referenz zur erweiterten Suche](advanced-hunting-schema-tables.md).
 
 | Spaltenname | Datentyp | Beschreibung |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
-| `NetworkMessageId` | string | Eindeutige ID für die von Microsoft 365 generierte E-Mail |
+| `NetworkMessageId` | string | Eindeutige ID für die E-Mail, generiert von Microsoft 365 |
 | `SenderFromAddress` | string | Für E-Mail-Empfänger im E-Mail-Client in der FROM-Kopfzeile angezeigte Absender-E-Mail-Adresse |
 | `SenderDisplayName` | string | Name des absenders, der im Adressbuch angezeigt wird, in der Regel eine Kombination aus einem vor- oder vornamen, einer mittleren Initiale und einem Nachnamen oder Nachnamen |
 | `SenderObjectId` | Zeichenfolge | Eindeutige ID für das Konto des Absenders in Azure AD |

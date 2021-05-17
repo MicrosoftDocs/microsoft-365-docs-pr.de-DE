@@ -1,6 +1,6 @@
 ---
-title: Onboarding von Windows 10-Geräten in Microsoft Defender for Endpoint über Gruppenrichtlinien
-description: Verwenden Sie Gruppenrichtlinien, um das Konfigurationspaket auf Windows 10-Geräten so zu bereitstellen, dass sie in den Dienst onboardiert werden.
+title: Onboarding Windows 10 Geräten zu Microsoft Defender for Endpoint über Gruppenrichtlinien
+description: Verwenden Sie Gruppenrichtlinien, um das Konfigurationspaket auf Windows 10 bereitstellen, sodass sie in den Dienst onboardiert werden.
 keywords: Konfigurieren von Geräten mithilfe von Gruppenrichtlinien, Geräteverwaltung, Konfigurieren von Microsoft Defender für Endpunktgeräten, Onboarding von Microsoft Defender for Endpoint-Geräten, Gruppenrichtlinie
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -24,7 +24,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933961"
 ---
-# <a name="onboard-windows-10-devices-using-group-policy"></a>Onboarding von Windows 10-Geräten mithilfe von Gruppenrichtlinien 
+# <a name="onboard-windows-10-devices-using-group-policy"></a>Onboarding Windows 10 Geräte mithilfe von Gruppenrichtlinien 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,35 +38,35 @@ ms.locfileid: "51933961"
 
 
 > [!NOTE]
-> Um Gruppenrichtlinienupdates (GP)-Updates zum Bereitstellen des Pakets zu verwenden, müssen Sie sich auf Windows Server 2008 R2 oder höher.
+> Zum Verwenden von Gruppenrichtlinienupdates zum Bereitstellen des Pakets müssen Sie sich auf Windows Server 2008 R2 oder höher befinden.
 > 
-> Für Windows Server 2019 müssen Sie möglicherweise NT AUTHORITY\Well-Known-System-Account durch NT AUTHORITY\SYSTEM der XML-Datei ersetzen, die von der Gruppenrichtlinieneinstellung erstellt wird.
+> Für Windows Server 2019 müssen Sie möglicherweise NT AUTHORITY\Well-Known-System-Account durch NT AUTHORITY\SYSTEM der VON der Gruppenrichtlinieneinstellung erstellten XML-Datei ersetzen.
 
 ## <a name="onboard-devices-using-group-policy"></a>Onboarding von Geräten mithilfe von Gruppenrichtlinien
 
 [![Abbildung der PDF mit den verschiedenen Bereitstellungspfaden](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 
-Sehen Sie sich [die PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf)  oder  [Visio-Datei](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) an, um die verschiedenen Pfade bei der Bereitstellung von Defender for Endpoint zu sehen. 
+Sehen Sie sich [die PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.pdf) [oder Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/security/defender-endpoint/downloads/mdatp-deployment-strategy.vsdx) an, um die verschiedenen Pfade bei der Bereitstellung von Defender for Endpoint zu sehen. 
 
 
 
-1. Öffnen Sie die ZIP-Datei des *GP-Konfigurationspakets*(WindowsDefenderATPOnboardingPackage.zip), die Sie aus dem Assistenten zum Onboarding des Diensts heruntergeladen haben. Sie können das Paket auch über [das Microsoft Defender Security Center erhalten:](https://securitycenter.windows.com/)
+1. Öffnen Sie die Gp.zip datei (*WindowsDefenderATPOnboardingPackage.zip*), die Sie aus dem Assistenten zum Onboarding des Diensts heruntergeladen haben. Sie können das Paket auch von [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
  
     1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Onboarding aus.**
 
-    1. Wählen Sie Windows 10 als Betriebssystem aus.
+    1. Wählen Windows 10 als Betriebssystem aus.
     
     1. Wählen Sie **im Feld Bereitstellungsmethode** die Option **Gruppenrichtlinie aus.**
     
-    1. Klicken **Sie auf Paket herunterladen,** und speichern Sie die ZIP-Datei.
+    1. Klicken **Sie auf Paket** herunterladen, und speichern .zip Datei.
 
-2. Extrahieren Sie den Inhalt der ZIP-Datei an einen freigegebenen schreibgeschützten Speicherort, auf den das Gerät zugreifen kann. Sie sollten über einen Ordner *namens OptionalParamsPolicy* und die *Datei WindowsDefenderATPOnboardingScript.cmd verfügen.*
+2. Extrahieren Sie den Inhalt der .zip an einen freigegebenen, schreibgeschützten Speicherort, auf den das Gerät zugreifen kann. Sie sollten über einen Ordner *namens OptionalParamsPolicy* und die *Datei WindowsDefenderATPOnboardingScript.cmd verfügen.*
 
 3. Öffnen Sie die Gruppenrichtlinienverwaltungskonsole (Group [Policy Management Console,](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) GPMC), klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt(GPO), das Sie konfigurieren möchten, und klicken Sie auf **Bearbeiten**.
 
 4. Wechseln Sie **im Gruppenrichtlinienverwaltungs-Editor** zu **Computerkonfiguration,** dann Einstellungen und dann **Systemsteuerungseinstellungen**. 
 
-5. Klicken Sie mit der rechten Maustaste auf Geplante **Vorgänge,** zeigen Sie auf **Neu,** und klicken Sie dann auf **Sofortaufgabe (Mindestens Windows 7).**
+5. Klicken Sie mit der rechten Maustaste auf Geplante **Vorgänge,** zeigen Sie auf **Neu,** und klicken Sie dann auf **Sofortaufgabe (mindestens Windows 7).**
 
 6. Wechseln Sie **im** geöffneten Aufgabenfenster zur Registerkarte **Allgemein.** Klicken **Sie unter Sicherheitsoptionen** **auf Benutzer oder Gruppe ändern,** und geben Sie SYSTEM ein, und klicken Sie dann **auf Namen überprüfen** und dann **OK**. NT AUTHORITY\SYSTEM wird als Benutzerkonto angezeigt, unter dem die Aufgabe ausgeführt wird.
 
@@ -80,7 +80,7 @@ Sehen Sie sich [die PDF-](https://github.com/MicrosoftDocs/microsoft-365-docs/ra
 > Nach dem Onboarding des Geräts können Sie einen Erkennungstest ausführen, um sicherzustellen, dass das Gerät ordnungsgemäß in den Dienst integrierte ist. Weitere Informationen finden Sie unter Ausführen eines Erkennungstests auf einem neu integrierten [Defender for Endpoint-Gerät.](run-detection-test.md)
 
 ## <a name="additional-defender-for-endpoint-configuration-settings"></a>Zusätzliche Defender for Endpoint-Konfigurationseinstellungen
-Für jedes Gerät können Sie bestimmen, ob Beispiele vom Gerät gesammelt werden können, wenn über das Microsoft Defender Security Center eine Anforderung zum Übermitteln einer Datei zur tiefen Analyse gestellt wird.
+Für jedes Gerät können Sie bestimmen, ob Beispiele vom Gerät gesammelt werden können, wenn eine Anforderung über Microsoft Defender Security Center eine Datei zur tiefen Analyse übermittelt wird.
 
 Sie können Gruppenrichtlinien (GP) verwenden, um Einstellungen zu konfigurieren, z. B. Einstellungen für die Beispielfreigabe, die im Feature für die tiefen Analysen verwendet wird.
 
@@ -91,7 +91,7 @@ Sie können Gruppenrichtlinien (GP) verwenden, um Einstellungen zu konfigurieren
 
     - Kopieren _von AtpConfiguration.adml_ in _C: Windows \\ \\ PolicyDefinitions \\ en-US_
 
-    Wenn Sie einen zentralen Speicher für administrative [Gruppenrichtlinienvorlagen verwenden,](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)kopieren Sie die folgenden Dateien aus dem Konfigurationspaket:
+    Wenn Sie eine zentrale Store administrative Vorlagen für [Gruppenrichtlinien](https://support.microsoft.com/help/3087759/how-to-create-and-manage-the-central-store-for-group-policy-administra)verwenden, kopieren Sie die folgenden Dateien aus dem Konfigurationspaket:
     
     - Kopieren _von "AtpConfiguration.admx"_ in _\\ \\ \<forest.root\> \\ "SysVol \\ \<forest.root\> \\ Policies \\ PolicyDefinitions"_
 
@@ -103,7 +103,7 @@ Sie können Gruppenrichtlinien (GP) verwenden, um Einstellungen zu konfigurieren
 
 4.  Klicken **Sie auf Richtlinien** und dann auf Administrative **Vorlagen.**
 
-5.  Klicken **Sie auf Windows-Komponenten,** und Windows Defender **ATP**.
+5.  Klicken **Windows Komponenten,** und klicken Sie **dann Windows Defender ATP**.
 
 6.  Wählen Sie aus, ob Sie die Beispielfreigabe auf Ihren Geräten aktivieren oder deaktivieren möchten.
 
@@ -115,11 +115,11 @@ Sie können Gruppenrichtlinien (GP) verwenden, um Einstellungen zu konfigurieren
 
 ### <a name="update-endpoint-protection-configuration"></a>Aktualisieren der Endpunktschutzkonfiguration
 
-Nachdem Sie das Onboardingskript konfiguriert haben, bearbeiten Sie weiterhin dieselbe Gruppenrichtlinie, um Endpunktschutzkonfigurationen hinzuzufügen. Führen Sie Gruppenrichtlinienbearbeitungen von einem System mit Windows 10 oder Server 2019 aus, um sicherzustellen, dass Sie über alle erforderlichen Microsoft Defender Antivirus-Funktionen verfügen. Möglicherweise müssen Sie das Gruppenrichtlinienobjekt schließen und erneut öffnen, um die Defender ATP-Konfigurationseinstellungen zu registrieren.
+Nachdem Sie das Onboardingskript konfiguriert haben, bearbeiten Sie weiterhin dieselbe Gruppenrichtlinie, um Endpunktschutzkonfigurationen hinzuzufügen. Führen Sie Gruppenrichtlinienbearbeitungen auf einem System mit Windows 10 oder Server 2019 durch, um sicherzustellen, dass Sie über alle erforderlichen Microsoft Defender Antivirus verfügen. Möglicherweise müssen Sie das Gruppenrichtlinienobjekt schließen und erneut öffnen, um die Defender ATP-Konfigurationseinstellungen zu registrieren.
 
 Alle Richtlinien befinden sich unter `Computer Configuration\Policies\Administrative Templates` .
 
-**Richtlinienspeicherort:** \Windows-Komponenten\Windows Defender ATP
+**Richtlinienspeicherort:** \Windows Components\Windows Defender ATP
 
 Richtlinie | Setting 
 :---|:---
@@ -127,7 +127,7 @@ Enable\Disable Sample collection|   Aktiviert – "Beispielsammlung auf Computer
 
 <br/>
 
-**Richtlinienspeicherort:**  \Windows-Komponenten\Windows Defender Antivirus
+**Richtlinienspeicherort:** \Windows Components\Windows Defender Antivirus
 
 Richtlinie | Setting 
 :---|:---
@@ -135,7 +135,7 @@ Konfigurieren der Erkennung für potenziell unerwünschte Anwendungen | Aktivier
 
 <br/>
 
-**Richtlinienspeicherort:** \Windows-Komponenten\Windows Defender Antivirus\MAPS
+**Richtlinienspeicherort:** \Windows Components\Windows Defender Antivirus\MAPS
 
 Richtlinie | Setting 
 :---|:---
@@ -155,7 +155,7 @@ Aktivieren der Verhaltensüberwachung|Aktiviert
 
 <br/>
 
-**Richtlinienspeicherort:**  \Windows-Komponenten\Windows Defender Antivirus\Scan
+**Richtlinienspeicherort:** \Windows Components\Windows Defender Antivirus\Scan
 
 Diese Einstellungen konfigurieren regelmäßige Überprüfungen des Endpunkts. Es wird empfohlen, eine wöchentliche Schnellscan durchführen, was die Leistung erlaubt.
 
@@ -166,7 +166,7 @@ Richtlinie | Setting
 
 <br/>
 
-**Richtlinienspeicherort:** \Windows-Komponenten\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction
+**Richtlinienspeicherort:** \Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction
 
 Aktuelle Liste der GUIDs zur Reduzierung der Angriffsfläche aus Anpassen von Regeln zur Reduzierung der [Angriffsfläche](customize-attack-surface-reduction.md)
 
@@ -196,17 +196,17 @@ Aus Sicherheitsgründen läuft das für Offboard-Geräte verwendete Paket 30 Tag
 > [!NOTE]
 > Onboarding- und Offboardingrichtlinien dürfen nicht gleichzeitig auf demselben Gerät bereitgestellt werden, da andernfalls unvorhersehbare Kollisionen verursacht werden.
 
-1. Das offboarding-Paket aus [dem Microsoft Defender Security Center erhalten:](https://securitycenter.windows.com/)
+1. Erhalten Sie das offboarding-Paket [von Microsoft Defender Security Center:](https://securitycenter.windows.com/)
 
     1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Offboarding aus.**
 
-    1. Wählen Sie Windows 10 als Betriebssystem aus.
+    1. Wählen Windows 10 als Betriebssystem aus.
     
     1. Wählen Sie **im Feld Bereitstellungsmethode** die Option **Gruppenrichtlinie aus.**
 
-    1. Klicken **Sie auf Paket herunterladen,** und speichern Sie die ZIP-Datei.
+    1. Klicken **Sie auf Paket** herunterladen, und speichern .zip Datei.
 
-2. Extrahieren Sie den Inhalt der ZIP-Datei an einen freigegebenen schreibgeschützten Speicherort, auf den das Gerät zugreifen kann. Sie sollten über eine Datei namens *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd verfügen.*
+2. Extrahieren Sie den Inhalt der .zip an einen freigegebenen, schreibgeschützten Speicherort, auf den das Gerät zugreifen kann. Sie sollten über eine Datei namens *WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-DD.cmd verfügen.*
 
 3. Öffnen Sie die Gruppenrichtlinienverwaltungskonsole (Group [Policy Management Console,](https://docs.microsoft.com/internet-explorer/ie11-deploy-guide/group-policy-and-group-policy-mgmt-console-ie11) GPMC), klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt(GPO), das Sie konfigurieren möchten, und klicken Sie auf **Bearbeiten**.
 
@@ -239,7 +239,7 @@ Mit Gruppenrichtlinien gibt es keine Option zum Überwachen der Bereitstellung v
 
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Onboarding von Windows 10-Geräten mithilfe von Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Onboarding Windows 10 Geräte mithilfe Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboarding von Windows 10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten](configure-endpoints-mdm.md)
 - [Onboarding von Windows 10-Geräten mithilfe eines lokalen Skripts](configure-endpoints-script.md)
 - [Onboarding von nicht-persistenten Geräten einer VD-Infrastruktur (Virtual Desktop)](configure-endpoints-vdi.md)

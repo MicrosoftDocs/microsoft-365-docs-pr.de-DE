@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender for Endpoint Device Control Wechseldatenträger Storage Zugriffssteuerung
+title: Microsoft Defender for Endpoint Device Control Wechseldatenträgerzugriffssteuerung
 description: Ein Walk-Through zu Microsoft Defender for Endpoint
 keywords: Wechselmedien
 search.product: eADQiWindows 10XVcnh
@@ -23,16 +23,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52300176"
 ---
-# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control Wechseldatenträger Storage Zugriffssteuerung
+# <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender for Endpoint Device Control Wechseldatenträgerzugriffssteuerung
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Mit Microsoft Defender for Endpoint Device Control Removable Storage Access Control können Sie die folgende Aufgabe erfüllen:
+Microsoft Defender for Endpoint Device Control Removable Storage Access Control ermöglicht Ihnen die folgende Aufgabe:
 - Überwachung, Zulassen oder Verhindern des Lese-, Schreib- oder Ausführungszugriffs auf Wechselmedien mit oder ohne Ausschluss
 
 |Berechtigung |Berechtigung  |
 |---------|---------|
-|Access    |  Lese-/Schreib-/Ausführungszugriff       |
+|Zugriff    |  Lese-/Schreib-/Ausführungszugriff       |
 |Aktionsmodus    |    Überwachung, Zulassen, Verhindern     |
 |CSP-Unterstützung   |   Ja      |
 |GPO-Unterstützung    |   Ja      |
@@ -41,7 +41,7 @@ Mit Microsoft Defender for Endpoint Device Control Removable Storage Access Cont
 
 ## <a name="prepare-your-endpoints"></a>Vorbereiten der Endpunkte
 
-Bereitstellen von Wechseldatenträgern Storage Zugriffskontrolle auf Windows 10 Geräten, auf deren Clientversion **4.18.2103.3** oder höher Schadsoftwaresoftware installiert ist.
+Bereitstellen der Wechseldatenträgerzugriffssteuerung auf Windows 10-Geräten mit Clientversion **4.18.2103.3 oder höher.**
 1. **4.18.2104 oder höher**: Hinzufügen von SerialNumberId, VID_PID, filepath-basierter Gruppenrichtlinienobjektunterstützung
 
 2. **4.18.2105 oder höher**: Hinzufügen von Platzhalterunterstützung für HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, die Kombination bestimmter Benutzer auf einem bestimmten Computer, absetzbare SSD (eine SanDisk Extreme SSD)/USB Attached SCSI (UAS)
@@ -156,14 +156,14 @@ Wenn Konflikttypen für dasselbe Medium verfügbar sind, wird der erste in der R
     - 6: Schreiben und Ausführen
     - 7: Lesen und Schreiben und Ausführen
 
-## <a name="common-removable-storage-access-control-scenarios"></a>Häufige Wechseldatenträger Storage Zugriffssteuerungsszenarien
+## <a name="common-removable-storage-access-control-scenarios"></a>Allgemeine Szenarien für die Speicherzugriffssteuerung für Wechselmedien
 
-Um Sie mit Microsoft Defender for Endpoint Removable Storage Access Control vertraut zu machen, haben wir einige gängige Szenarien für Sie 2013 2013 2013 enstanden.
+Um Sie mit Microsoft Defender for Endpoint Removable Storage Access Control vertraut zu machen, haben wir einige gängige Szenarien für Sie 2013 2013 2013 2013 2014 2013 2013 2013 2013 2013 2013 2014 20
 
 ### <a name="scenario-1-prevent-write-and-execute-access-to-all-but-allow-specific-approved-usbs"></a>Szenario 1: Verhindern des Schreib- und Ausführungszugriffs für alle, jedoch bestimmte genehmigte USBs zulassen
 
 1. Erstellen von Gruppen
-    1. Gruppe 1: Alle Wechseldatenträger und CD/DVD. Ein Beispiel für wechselbare Speicher und CD/DVD ist: Gruppe **9b28fae8-72f7-4267-a1a5-685f747a7146** im Beispiel [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    1. Gruppe 1: Alle Wechseldatenträger und CD/DVD. Ein Beispiel für einen Wechselspeicher und cd/DVD ist: Gruppe **9b28fae8-72f7-4267-a1a5-685f747a7146** im Beispiel [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
     2. Gruppe 2: Genehmigte USBs basierend auf Geräteeigenschaften. Ein Beispiel für diesen Verwendungsfall ist: Instanz-ID – Gruppe **65fa649a-a111-4912-9294-fb6337a25038** in der Beispieldatei ["Approved USBs Group.xml".](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples)
 
@@ -178,7 +178,7 @@ Um Sie mit Microsoft Defender for Endpoint Removable Storage Access Control vert
 ### <a name="scenario-2-audit-write-and-execute-access-to-all-but-block-specific-unapproved-usbs"></a>Szenario 2: Überwachen des Schreib- und Ausführungszugriffs auf alle, aber bestimmte nicht genehmigte USBs blockieren
 
 1. Erstellen von Gruppen
-    1. Gruppe 1: Alle Wechseldatenträger und CD/DVD. Ein Beispiel für diesen Use Case ist: Gruppe **9b28fae8-72f7-4267-a1a5-685f747a7146** im Beispiel [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    1. Gruppe 1: Alle Wechseldatenträger und CD/DVD. Ein Beispiel für diesen Fall ist: Gruppe **9b28fae8-72f7-4267-a1a5-685f747a7146** im Beispiel [Any Removable Storage and CD-DVD Group.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
     2. Gruppe 2: Nicht genehmigte USBs basierend auf Geräteeigenschaften, z. B. Hersteller-ID/Produkt-ID, Anzeigename – Gruppe **65fa649a-a111-4912-9294-fb6337a25038** in der Beispieldatei Nicht genehmigte [USBs Group.xml.](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) 
 
@@ -192,11 +192,11 @@ Um Sie mit Microsoft Defender for Endpoint Removable Storage Access Control vert
 
 ## <a name="deploying-and-managing-policy-via-group-policy"></a>Bereitstellen und Verwalten von Richtlinien über Gruppenrichtlinien
 
-Mit der Storage-Zugriffssteuerungsfunktion können Sie Richtlinien über Gruppenrichtlinien entweder auf Benutzer oder Geräte oder beides anwenden.
+Mit der Funktion Wechselmedienzugriffssteuerung können Sie Richtlinien über Gruppenrichtlinien auf Benutzer oder Geräte oder beides anwenden.
 
 ### <a name="licensing"></a>Lizenzierung
 
-Bevor Sie mit wechselbaren Storage beginnen, müssen Sie Ihr Microsoft 365 [bestätigen.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Zum Zugreifen auf und Verwenden von Wechseldatenträgern Storage Zugriffskontrolle müssen Sie über Microsoft 365 E5.
+Bevor Sie mit der Wechselmedienzugriffssteuerung beginnen, müssen Sie Ihr [Microsoft 365-Abonnement bestätigen.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Für den Zugriff auf und die Verwendung der Wechselmedienzugriffssteuerung müssen Sie Microsoft 365 E5 verwenden.
 
 ### <a name="deploying-policy-via-group-policy"></a>Bereitstellen von Richtlinien über Gruppenrichtlinien
 
@@ -214,7 +214,7 @@ Bevor Sie mit wechselbaren Storage beginnen, müssen Sie Ihr Microsoft 365 [be
     
     :::image type="content" source="images/usage-sid-property.png" alt-text="Der Bildschirm mit einem Code, der die Verwendung des SID-Eigenschaftsattributs angibt":::
 
-3. Speichern Sie sowohl Regel- als auch Gruppen-XML-Dateien im Netzwerkfreigabeordner, und legen Sie den Pfad des Netzwerkfreigabeordners in die Gruppenrichtlinieneinstellung ein: Computerkonfiguration **-> Administrative Vorlagen -> Windows-Komponenten -> Microsoft Defender Antivirus -> Gerätesteuerung: 'Gerätesteuerungsrichtliniengruppen definieren' und 'Richtlinienregeln für Gerätesteuerung definieren'**.
+3. Speichern Sie sowohl Regel- als auch Gruppen-XML-Dateien im Netzwerkfreigabeordner, und legen Sie den Pfad des Netzwerkfreigabeordners in die Gruppenrichtlinieneinstellung ein: Computerkonfiguration **-> Administrative Vorlagen -> Windows-Komponenten -> Microsoft Defender Antivirus -> Gerätesteuerung: 'Gerätesteuerungsrichtliniengruppen definieren'** und 'Richtlinienregeln für Gerätesteuerung definieren' .
 
     - Der Zielcomputer muss auf die Netzwerkfreigabe zugreifen können, damit die Richtlinie vorhanden ist. Sobald die Richtlinie jedoch gelesen wurde, ist die Netzwerkfreigabeverbindung auch nach dem Neustart des Computers nicht mehr erforderlich.
 
@@ -222,11 +222,11 @@ Bevor Sie mit wechselbaren Storage beginnen, müssen Sie Ihr Microsoft 365 [be
 
 ## <a name="deploying-and-managing-policy-via-intune-oma-uri"></a>Bereitstellen und Verwalten von Richtlinien über Intune OMA-URI
 
-Mit der Storage-Funktion für die Zugriffssteuerung können Sie Richtlinien über OMA-URI entweder auf Benutzer oder Geräte oder beides anwenden.
+Mit der Funktion Wechselmedienzugriffssteuerung können Sie Richtlinien über OMA-URI entweder auf Benutzer oder Geräte oder beides anwenden.
 
 ### <a name="licensing"></a>Lizenzierung
 
-Bevor Sie mit wechselbaren Storage beginnen, müssen Sie Ihr Microsoft 365 [bestätigen.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Zum Zugreifen auf und Verwenden von Wechselmedien Storage Zugriffskontrolle müssen Sie über Microsoft 365 E3.
+Bevor Sie mit der Wechselmedienzugriffssteuerung beginnen, müssen Sie Ihr [Microsoft 365-Abonnement bestätigen.](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2) Für den Zugriff auf und die Verwendung der Wechselmedienzugriffssteuerung müssen Sie über Microsoft 365 E3 verfügen.
 
 ### <a name="permission"></a>Berechtigung
 
@@ -238,7 +238,7 @@ Für die Richtlinienbereitstellung in Intune muss das Konto über Berechtigungen
 
 ### <a name="deploying-policy-via-oma-uri"></a>Bereitstellen von Richtlinien über OMA-URI
 
-**Microsoft Endpoint Manager Admin Center ( https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Profile -> Platform: Windows 10 and later & Profile: Custom**
+**Microsoft Endpoint Manager admin center ( https://endpoint.microsoft.com/) -> Devices -> Configuration profiles -> Create profile -> Platform: Windows 10 and later & Profile: Custom**
 
 1. Erstellen Sie für jede Gruppe eine OMA-URI-Regel:
     - OMA-URI: 
@@ -271,9 +271,9 @@ Für die Richtlinienbereitstellung in Intune muss das Konto über Berechtigungen
 
 Diese Funktion ist noch nicht verfügbar. 
 
-## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Anzeigen von Gerätesteuerung Wechseldaten Storage Zugriffssteuerungsdaten in Microsoft Defender for Endpoint
+## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Anzeigen von Daten der Gerätesteuerung für wechselbare Speicherzugriffssteuerung in Microsoft Defender for Endpoint
 
-Das Microsoft 365 zeigt wechselbaren Speicher an, der durch die Gerätesteuerungs-Wechselmedien Storage gesperrt ist. Um auf die Microsoft 365 zugreifen zu können, müssen Sie über das folgende Abonnement verfügen:
+Das Microsoft 365-Sicherheitsportal zeigt wechselbaren Speicher an, der von der Gerätesteuerung Wechselmedienzugriffssteuerung blockiert wurde. Für den Zugriff auf die Microsoft 365-Sicherheit müssen Sie über das folgende Abonnement verfügen:
 
 - Microsoft 365 für E5-Berichte
 

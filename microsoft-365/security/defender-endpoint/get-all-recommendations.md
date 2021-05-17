@@ -1,7 +1,7 @@
 ---
 title: Auflisten aller Empfehlungen
 description: Ruft eine Liste aller Sicherheitsempfehlungen ab, die die Organisation betreffen.
-keywords: apis, graph api, supported apis, get, security recommendations, Microsoft Defender for Endpoint tvm api, threat and vulnerability management, threat and vulnerability management api
+keywords: apis, graph api, supported apis, get, security recommendations, Microsoft Defender for Endpoint tvm api, Bedrohungs- und Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -58,7 +58,7 @@ GET /api/recommendations
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
+Authorization | String | Bearer {token}. **Erforderlich**.
 
 
 ## <a name="request-body"></a>Anforderungstext

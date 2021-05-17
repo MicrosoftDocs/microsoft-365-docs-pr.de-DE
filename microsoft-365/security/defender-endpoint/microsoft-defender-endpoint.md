@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender für Endpunkt
 description: Microsoft Defender for Endpoint ist eine Sicherheitsplattform für Unternehmensendpunkte, die bei der Verteidigung vor erweiterten beständigen Bedrohungen hilft.
-keywords: Einführung in Microsoft Defender for Endpoint, Einführung in Microsoft Defender for Endpoint, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Computerverhaltenssensor, Cloudsicherheit, Analyse, Bedrohungsintelligenz, Reduzierung der Angriffsfläche, Schutz der nächsten Generation, automatisierte Untersuchung und Behebung, Microsoft Threat Experts, Secure Score, Advanced Hunting, Microsoft 365 Defender, Cyber Threat Hunting
+keywords: Einführung in Microsoft Defender for Endpoint, Einführung in Microsoft Defender for Endpoint, Cybersecurity, advanced persistent threat, enterprise security, machine behavioral sensor, cloud security, analytics, threat intelligence, attack surface reduction, next-generation protection, automated investigation and remediation, microsoft threat experts, secure score, advanced hunting, Microsoft 365 Defender, cyber threat hunting
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -33,23 +33,23 @@ ms.locfileid: "51935929"
 
 > Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-> Weitere Informationen zu Windows 10 Enterprise Edition-Features und -Funktionen finden Sie unter [Windows 10 Enterprise Edition](https://www.microsoft.com/WindowsForBusiness/buy).
+> Weitere Informationen zu features and functionality Windows 10 Enterprise Edition finden Sie unter [Windows 10 Enterprise Edition](https://www.microsoft.com/WindowsForBusiness/buy).
 
 Microsoft Defender for Endpoint ist eine Unternehmensendpunktsicherheitsplattform, die Unternehmensnetzwerken dabei helfen soll, erweiterte Bedrohungen zu verhindern, zu erkennen, zu untersuchen und auf sie zu reagieren.
 <p></p>
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4wDob]
 
-Defender for Endpoint verwendet die folgende Kombination aus Technologie, die in Windows 10 und dem robusten Clouddienst von Microsoft integrierte ist:
+Defender for Endpoint verwendet die folgende Kombination aus Technologie, die in Windows 10 und dem robusten Clouddienst von Microsoft entwickelt wurde:
 
 -   **Endpunktverhaltenssensoren:** Eingebettet in Windows 10 erfassen und verarbeiten diese Sensoren Verhaltenssignale vom Betriebssystem und senden diese Sensordaten an Ihre private, isolierte Cloudinstanz von Microsoft Defender for Endpoint.
 
 
--   **Cloudsicherheitsanalyse:** Unter Verwendung von Big Data, Device-Learning und einzigartiger Microsoft-Optik im gesamten Windows-Ökosystem, in Enterprise-Cloud-Produkten (z. B. Office 365) und Onlineressourcen werden Verhaltenssignale in Einblicke, Erkennungen und empfohlene Antworten auf erweiterte Bedrohungen übersetzt.
+-   **Cloudsicherheitsanalyse:** Unter Verwendung von Big Data, Device-Learning und einzigartiger Microsoft-Optik im gesamten Windows-Ökosystem, in Unternehmens-Cloud-Produkten (z. B. Office 365) und Onlineressourcen werden Verhaltenssignale in Einblicke, Erkennungen und empfohlene Antworten auf erweiterte Bedrohungen übersetzt.
 
 -   Bedrohungsintelligenz: Generiert von Microsoft-Jägern, Sicherheitsteams und erweitert durch Bedrohungsintelligenz, die von Partnern bereitgestellt wird, ermöglicht die Bedrohungsintelligenz Defender for Endpoint, Angreifertools, -techniken und -verfahren zu identifizieren und Warnungen zu generieren, wenn sie in gesammelten Sensordaten beobachtet werden.
 
-<center><h2>Microsoft Defender für Endpunkt</center></h2>
+<center><h2>Microsoft Defender for Endpoint</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>Sicherheitsrisikoverwaltung & Bedrohungen</b></center></a></td>
@@ -57,7 +57,7 @@ Defender for Endpoint verwendet die folgende Kombination aus Technologie, die in
 <td><center><a href="#ngp"><img src="images/ngp-icon.png" alt="Next-generation protection"><br> <b>Schutz der nächsten Generation</b></a></center></td>
 <td><center><a href="#edr"><img src="images/edr-icon.png" alt="Endpoint detection and response"><br> <b>Endpunkterkennung und -antwort</b></a></center></td>
 <td><center><a href="#ai"><img src="images/air-icon.png" alt="Automated investigation and remediation"><br> <b>Automatisierte Untersuchung und Behebung</b></a></center></td>
-<td><center><a href="#mte"><img src="images/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft Threat Experts</b></a></center></td>
+<td><center><a href="#mte"><img src="images/mte-icon.png" alt="Microsoft Threat Experts"><br> <b>Microsoft-Bedrohungsexperten</b></a></center></td>
 </tr>
 <tr>
 <td colspan="7">
@@ -114,8 +114,8 @@ Defender for Endpoint enthält Microsoft Secure Score for Devices, mit dem Sie d
 Der neue dienst für die Suche nach verwalteten Bedrohungen von Microsoft Defender for Endpoint bietet proaktives Aufsuchen, Priorisierung sowie zusätzliche Kontexte und Einblicke, mit denen Sicherheitsoperationscenter (Security Operation Center, SOCs) Bedrohungen schnell und präzise identifizieren und darauf reagieren können.
 
 >[!IMPORTANT]
->Defender for Endpoint-Kunden müssen den verwalteten Dienst zur Bedrohungssuche von Microsoft Threat Experts beantragen, um proaktive Benachrichtigungen über gezielte Angriffe zu erhalten und bei Bedarf mit Experten zusammenzuarbeiten. Experts on Demand ist ein Add-On-Dienst. Gezielte Angriffsbenachrichtigungen werden immer einbezogen, nachdem Sie in den verwalteten Dienst für die Bedrohungssuche von Microsoft Threat Experts aufgenommen wurden.<p>
-><p>Wenn Sie noch nicht registriert sind und ihre Vorteile nutzen möchten, wechseln Sie zu <b>Einstellungen</b> > <b>Allgemeine</b> > <b>erweiterte</b> Funktionen Microsoft > <b>Threat Experts,</b> um sich zu bewerben. Sobald sie akzeptiert wurden, erhalten Sie die Vorteile von Benachrichtigungen über gezielte Angriffe und starten eine 90-tägige Testversion von Experten bei Bedarf. Wenden Sie sich an Ihren Microsoft-Vertreter, um ein vollständiges Experts on Demand-Abonnement zu erhalten.
+>Defender for Endpoint-Kunden müssen sich für den Microsoft-Bedrohungsexperten dienst für die Suche nach verwalteten Bedrohungen bewerben, um proaktive Benachrichtigungen über gezielte Angriffe zu erhalten und bei Bedarf mit Experten zusammenzuarbeiten. Experts on Demand ist ein Add-On-Dienst. Benachrichtigungen über gezielte Angriffe werden immer einbezogen, nachdem Sie in Microsoft-Bedrohungsexperten dienst für die Suche nach verwalteten Bedrohungen akzeptiert wurden.<p>
+><p>Wenn Sie noch nicht registriert sind und ihre Vorteile <b></b> nutzen möchten, wechseln Sie zu Einstellungen > <b>Allgemeine</b> > <b></b> erweiterte Features, Microsoft-Bedrohungsexperten > <b>anwenden</b> möchten. Sobald sie akzeptiert wurden, erhalten Sie die Vorteile von Benachrichtigungen über gezielte Angriffe und starten eine 90-tägige Testversion von Experten bei Bedarf. Wenden Sie sich an Ihren Microsoft-Vertreter, um ein vollständiges Experts on Demand-Abonnement zu erhalten.
 
 <a name="apis"></a>
 
@@ -131,11 +131,11 @@ Defender for Endpoint kann direkt in verschiedene Microsoft-Lösungen integriert
 - Intune
 - Microsoft Cloud App Security
 - Microsoft Defender for Identity
-- Microsoft Defender for Office
+- Microsoft Defender für Office
 - Skype for Business
 
 **[Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)**<br>
-Mit Microsoft 365 Defender bilden Defender for Endpoint und verschiedene Microsoft-Sicherheitslösungen eine einheitliche Vor- und Nachverletzungssuite für die Unternehmensverteidigung, die nativ über Endpunkte, Identitäten, E-Mails und Anwendungen hinweg integriert wird, um anspruchsvolle Angriffe zu erkennen, zu verhindern, zu untersuchen und automatisch auf komplexe Angriffe zu reagieren.
+Mit Microsoft 365 Defender bilden Defender for Endpoint und verschiedene Microsoft-Sicherheitslösungen eine einheitliche Vor- und Nachverletzungssuite für die Unternehmensverteidigung, die nativ in Endpunkte, Identitäten, E-Mails und Anwendungen integriert wird, um anspruchsvolle Angriffe zu erkennen, zu verhindern, zu untersuchen und automatisch auf komplexe Angriffe zu reagieren.
 
 
 ## <a name="related-topic"></a>Verwandtes Thema

@@ -100,7 +100,7 @@ Wenn Endbenutzer auf diese Benachrichtigung klicken, wird im Standardbrowser ein
 |:---|:---|
 | **Domäne** | `com.microsoft.wdav` |
 | **Key** | navigationTarget |
-| **Datentyp** | Zeichenfolge |
+| **Datentyp** | String |
 | **Kommentare** | Wenn das Produkt nicht definiert ist, verwendet es eine Standard-URL, die auf eine generische Seite verweist, auf der die vom Produkt ergriffene Aktion erläutert wird. |
 
 ### <a name="allow-or-block-removable-devices"></a>Zulassen oder Blockieren von Wechselmedien

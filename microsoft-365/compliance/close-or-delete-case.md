@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Erfahren Sie, was passiert, wenn eine Untersuchung oder ein Rechtsfall, der von einem erweiterten eDiscovery-Fall unterstützt wird, geschlossen oder gelöscht wird.
+description: Erfahren Sie, was geschieht, wenn eine Untersuchung oder ein von einem Fall Advanced eDiscovery Fall geschlossen oder gelöscht wird.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: ffdd93351325be0c4b5d6d8cdfb78e55b710c0be
 ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
@@ -24,67 +24,67 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2020
 ms.locfileid: "44419061"
 ---
-# <a name="close-or-delete-an-advanced-ediscovery-case"></a>Schließen oder Löschen eines erweiterten eDiscovery-Falls
+# <a name="close-or-delete-an-advanced-ediscovery-case"></a>Schließen oder Löschen eines Advanced eDiscovery Fall
 
-Wenn die von einem erweiterten eDiscovery-Fall unterstützte Rechtssache oder Untersuchung abgeschlossen ist, können Sie einen Fall schließen oder löschen. Sie können auch einen geschlossenen Fall erneut öffnen.
+Wenn die von einem Fall unterstützte Rechts- oder Advanced eDiscovery abgeschlossen ist, können Sie einen Fall schließen oder löschen. Sie können auch einen geschlossenen Fall erneut öffnen.
 
-## <a name="close-a-case"></a>Schließen einer Anfrage
+## <a name="close-a-case"></a>Schließen eines Falls
 
-Hier erfahren Sie, was passiert, wenn Sie einen erweiterten eDiscovery-Fall schließen:
+Dies geschieht, wenn Sie einen Fall Advanced eDiscovery schließen:
 
-- Wenn der Fall alle inhaltsspeicherorte enthält, sind diese Haltestatus deaktiviert. Nachdem der Haltestatus deaktiviert wurde, wird eine 30-tägige Kulanzfrist (so genannte *Verzögerungs*Speicher) auf Aufbewahrungsorte für Inhalte angewendet. Dadurch wird verhindert, dass Inhalte sofort gelöscht werden, und Administratoren haben die Möglichkeit, Inhalte zu suchen oder wiederherzustellen, die nach Ablauf der Verzögerungszeit endgültig gelöscht werden. Weitere Informationen finden Sie unter [Entfernen von Inhaltsspeicherorten aus einer eDiscovery-Aufbewahrung](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold).
+- Wenn der Fall in den Haltebereich versetzte Inhaltsspeicherorte enthält, werden diese Haltebereiche deaktiviert. Nachdem der Haltezeitraum deaktiviert wurde, wird eine 30-tägige Nachfrist (als Verzögerungsverzögerung *bezeichnet)* auf Inhaltsstandorte angewendet, die sich im Haltezeitraum befinden. Dadurch wird verhindert, dass Inhalte sofort gelöscht werden, und Administratoren können Inhalte suchen oder wiederherstellen, die nach Ablauf des Verzögerungszeitraums endgültig gelöscht werden. Weitere Informationen finden Sie unter [Entfernen von Inhaltsstandorten aus einem eDiscovery-Halteraum.](create-ediscovery-holds.md#removing-content-locations-from-an-ediscovery-hold)
 
-- Durch das Schließen eines Case werden nur die haltebereiche deaktiviert, die diesem Fall zugeordnet sind. Wenn andere Aufbewahrungsorte auf einem Inhaltsspeicherort platziert werden (beispielsweise ein Beweissicherungsverfahren, ein zentrales eDiscovery-Archiv oder ein Haltestatus aus einem anderen erweiterten eDiscovery-Fall), werden diese Haltestatus weiterhin beibehalten.
+- Durch das Abschließen eines Falls werden nur die Haltebereiche deaktiviert, die diesem Fall zugeordnet sind. Wenn an einem Inhaltsspeicherort andere Haltewerte (z. B. ein Rechtsstreitigkeiten, ein Core eDiscovery-Haltebereich oder ein Haltebereich von einem anderen Advanced eDiscovery-Fall) stattfinden, werden diese Haltewerte weiterhin beibehalten.
 
-- Der Fall wird weiterhin auf der Seite "eDiscovery" im Microsoft 365 Compliance Center aufgeführt. Die Details, Aufbewahrungen, Suchvorgänge und Elemente eines geschlossenen Falls werden beibehalten.
+- Der Fall wird weiterhin auf der eDiscovery-Seite im compliance center Microsoft 365 aufgeführt. Die Details, Haltebereiche, Suchvorgänge und Mitglieder eines abgeschlossenen Falls bleiben erhalten.
 
-- Sie können einen Fall bearbeiten, nachdem er geschlossen wurde. Beispielsweise können Sie Mitglieder hinzufügen oder entfernen, suchen erstellen, Suchergebnisse exportieren und Suchergebnisse für die Analyse in Advanced eDiscovery vorbereiten. Der Hauptunterschied zwischen aktiven und geschlossenen Fällen besteht darin, dass die haltebereiche deaktiviert sind, wenn ein Fall geschlossen wird.
+- Sie können einen Fall bearbeiten, nachdem er geschlossen wurde. Sie können z. B. Mitglieder hinzufügen oder entfernen, Suchen erstellen, Suchergebnisse exportieren und Suchergebnisse für die Analyse in Advanced eDiscovery. Der Hauptunterschied zwischen aktiven und abgeschlossenen Fällen ist, dass die Haltebereiche beim Abschließen eines Falls deaktiviert werden.
 
-So schließen Sie einen Fall:
+So schließen Sie einen Fall ab
 
-1. Wählen Sie auf der Seite **Erweiterte eDiscovery** die Groß-/Kleinschreibung aus, die Sie schließen möchten.
+1. Wählen Sie auf der Seite **Advanced eDiscovery** den Fall aus, den Sie schließen möchten.
 
-2. Klicken Sie auf der Registerkarte **Einstellungen** unter **Fall Informationen**auf **auswählen**.
+2. Klicken Sie auf der Registerkarte **Einstellungen** unter **Fallinformationen** auf **Auswählen**.
 
 3. Klicken Sie auf **Fall schließen**.
 
-   Es kann bis zu 60 Minuten dauern, bis der Abschlussprozess abgeschlossen ist.
+   Es kann bis zu 60 Minuten dauern, bis der Abschlussvorgang abgeschlossen ist.
 
-## <a name="reopen-a-closed-case"></a>Erneutes Öffnen eines geschlossenen Falls
+## <a name="reopen-a-closed-case"></a>Erneuter Öffnen eines geschlossenen Falls
 
-Wenn Sie einen erweiterten eDiscovery-Fall erneut öffnen, werden alle holdes-Objekte, die beim Schließen des Case-Verfahrens vorhanden waren, nicht automatisch wieder eingesetzt. Nachdem der Fall erneut geöffnet wurde, müssen Sie zur Registerkarte "halte **Status** " wechseln und die vorherigen Haltestatus aktivieren. Zum Aktivieren eines haltebereichs wählen Sie ihn aus, um die Flyout-Seite anzuzeigen, und legen Sie dann die **Status** Umschalttaste **auf**ein fest.
+Wenn Sie einen Advanced eDiscovery erneut öffnen, werden alle Haltewerte, die beim Schließen des Falls aktiviert wurden, nicht automatisch wieder aktiviert. Nachdem der Fall erneut geöffnet wurde, müssen  Sie zur Registerkarte Halte halten wechseln und die vorherigen Halte halte aktivieren. Wenn Sie einen Haltebereich aktivieren möchten, wählen Sie ihn aus, um die Flyout-Seite anzuzeigen, und legen Sie dann den **Status** auf **Ein** fest.
 
 So öffnen Sie einen geschlossenen Fall erneut:
 
-1. Wählen Sie auf der Seite **Erweiterte eDiscovery** die Groß-/Kleinschreibung aus, die Sie erneut öffnen möchten.
+1. Wählen Sie auf der Seite **Advanced eDiscovery** den Fall aus, den Sie erneut öffnen möchten.
 
-2. Klicken Sie auf der Registerkarte **Einstellungen** unter **Fall Informationen**auf **auswählen**.
+2. Klicken Sie auf der Registerkarte **Einstellungen** unter **Fallinformationen** auf **Auswählen**.
 
 3. Klicken Sie auf **Fall erneut öffnen**.
 
-   Es kann bis zu 60 Minuten dauern, bis der Vorgang zum erneuten Öffnen abgeschlossen ist.
+   Es kann bis zu 60 Minuten dauern, bis der Erneutes Öffnen abgeschlossen ist.
 
-## <a name="delete-a-case"></a>Löschen einer Anfrage
+## <a name="delete-a-case"></a>Löschen eines Falls
 
-Sie können sowohl aktive als auch abgeschlossene erweiterte eDiscovery-Fälle löschen. Wenn Sie einen Fall löschen, werden alle mit dem Fall verknüpften Komponenten gelöscht, beispielsweise die Liste der Verwalter, Kommunikationen, Suchvorgänge, Überprüfungs Sätze und Exportaufträge. Der Fall wird aus der Liste der Fälle auf der Seite " **Advanced eDiscovery** " im Microsoft 365 Compliance Center entfernt. Ein gelöschter Fall kann nicht wiederhergestellt oder erneut geöffnet werden.
+Sie können sowohl aktive als auch geschlossene Advanced eDiscovery löschen. Wenn Sie einen Fall löschen, werden alle dem Fall zugeordneten Komponenten, z. B. die Liste von Verwaltern, die Kommunikation, Suchvorgänge, Überprüfungssätze und der Exportvorgang, gelöscht. Der Fall wird aus der Liste  der Fälle auf der Advanced eDiscovery im Microsoft 365 Compliance Center entfernt. Sie können einen gelöschten Fall nicht wiederherstellen oder erneut öffnen.
 
 > [!NOTE]
-> In Szenarien mit Datenüberlauf besteht die einzige Möglichkeit zum Entfernen von Elementen in einem Überprüfungs Satzes darin, den erweiterten eDiscovery-Fall zu löschen. Andere Methoden zum Suchen und löschen entfernen keine Elemente aus einem Überprüfungs Satzes.
+> In Szenarien mit Datenlecks besteht die einzige Möglichkeit zum Entfernen von Elementen in einem Überprüfungssatz in der Löschung Advanced eDiscovery Fall. Andere Such- und Bereinigungsmethoden entfernen keine Elemente aus einem Überprüfungssatz.
 
-Bevor Sie einen Fall löschen können (ob er aktiv oder geschlossen ist), müssen Sie zunächst *alle* Haltestatus löschen, die mit der Groß-/Kleinschreibung verknüpft sind. Dies umfasst das Löschen von Haltebereichen mit dem Status **Off**.
+Bevor Sie einen Fall löschen können (unabhängig davon, ob  er aktiv oder geschlossen ist), müssen Sie zunächst alle dem Fall zugeordneten Halte halte löschen. Dazu gehört das Löschen von Haltestatus mit dem Status **Aus**.
 
-So löschen Sie haltebereiche, die einem Fall zugeordnet sind:
+So löschen Sie halte, die einem Fall zugeordnet sind:
 
-1. Wechseln Sie zur Registerkarte halte **Status** im erweiterten eDiscovery-Fall, den Sie löschen möchten.
+1. Wechseln Sie **in** der Advanced eDiscovery, die Sie löschen möchten, auf die Registerkarte Halte haltet.
 
-2. Klicken Sie auf den Haltestatus, den Sie löschen möchten.
+2. Klicken Sie auf den Halteraum, den Sie löschen möchten.
 
-3. Klicken Sie auf der Flyout-Seite auf **Haltestatus löschen**.
+3. Klicken Sie auf der Flyoutseite auf **Halten löschen**.
 
-So löschen Sie einen Fall:
+So löschen Sie einen Fall
 
-1. Wählen Sie auf der Seite **Erweiterte eDiscovery** die Groß-/Kleinschreibung aus, die Sie löschen möchten.
+1. Wählen Sie auf der Seite **Advanced eDiscovery** den Fall aus, den Sie löschen möchten.
 
-2. Klicken Sie auf der Registerkarte **Einstellungen** unter **Fall Informationen**auf **auswählen**.
+2. Klicken Sie auf der Registerkarte **Einstellungen** unter **Fallinformationen** auf **Auswählen**.
 
 3. Klicken Sie auf **Fall löschen**.

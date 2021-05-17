@@ -1,7 +1,7 @@
 ---
 title: Microsoft-Sicherheitsbewertung für Geräte
 description: Ihre Bewertung für Geräte zeigt den gemeinsamen Sicherheitskonfigurationsstatus Ihrer Geräte über Anwendungs-, Betriebssystem-, Netzwerk-, Konten- und Sicherheitssteuerelemente hinweg an.
-keywords: Microsoft Secure Score for Devices, Microsoft Defender for Endpoint Microsoft Secure Score for Devices, secure score, configuration score, threat and vulnerability management, security controls, improvement opportunities, security configuration score over time, security posture, baseline
+keywords: Microsoft Secure Score for Devices, Microsoft Defender for Endpoint Microsoft Secure Score for Devices, Secure Score, Configuration Score, Bedrohungs- und Sicherheitsrisikomanagement, security controls, improvement opportunities, security configuration score over time, security posture, baseline
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -32,16 +32,16 @@ ms.locfileid: "51934081"
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Bedrohungs- und Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md)
+- [Bedrohung und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 >[!NOTE]
-> Die Konfigurationsnote ist jetzt Teil der Bedrohungs- und Sicherheitsrisikoverwaltung als Microsoft Secure Score für Geräte.
+> Die Konfigurationsnote ist nun Teil Bedrohungs- und Sicherheitsrisikomanagement Microsoft Secure Score für Geräte.
 
-Ihre Bewertung für Geräte wird im [Dashboard](tvm-dashboard-insights.md) zur Verwaltung von Bedrohungen und Sicherheitsrisiken im Microsoft Defender Security Center angezeigt. Eine höhere Microsoft Secure Score für Geräte bedeutet, dass Ihre Endpunkte widerstandsfähiger gegen Cybersicherheitsangriffe sind. Dies spiegelt den Konfigurationsstatus für die gemeinsame Sicherheit Ihrer Geräte in den folgenden Kategorien wider:
+Ihre Bewertung für Geräte ist im Bedrohungs- und Sicherheitsrisikomanagement [des](tvm-dashboard-insights.md) Microsoft Defender Security Center. Eine höhere Microsoft Secure Score für Geräte bedeutet, dass Ihre Endpunkte widerstandsfähiger gegen Cybersicherheitsangriffe sind. Dies spiegelt den Konfigurationsstatus für die gemeinsame Sicherheit Ihrer Geräte in den folgenden Kategorien wider:
 
 - Anwendung
 - Betriebssystem
@@ -79,7 +79,7 @@ Die Daten auf der Microsoft Secure Score for Devices-Karte sind das Produkt eine
 
 Verbessern Sie Ihre Sicherheitskonfiguration, indem Sie Probleme aus der Liste der Sicherheitsempfehlungen beheben. Dabei verbessert sich Ihre Microsoft Secure Score for Devices, und Ihre Organisation wird widerstandsfähiger gegen Cybersicherheitsbedrohungen und Sicherheitsrisiken.
 
-1. Wählen Sie auf der Microsoft Secure Score for Devices-Karte im Dashboard für die Bedrohungs- und Sicherheitsrisikoverwaltung eine der Kategorien aus. Sie sehen die Liste der Empfehlungen im Zusammenhang mit dieser Kategorie. Sie gelangen zur Seite [**Sicherheitsempfehlungen.**](tvm-security-recommendation.md) Wenn Sie alle Sicherheitsempfehlungen anzeigen möchten, löschen Sie das Suchfeld, sobald Sie zur Seite Sicherheitsempfehlungen gelangen.
+1. Wählen Sie auf der Microsoft Secure Score for Devices-Karte im Bedrohungs- und Sicherheitsrisikomanagement eine der Kategorien aus. Sie sehen die Liste der Empfehlungen im Zusammenhang mit dieser Kategorie. Sie gelangen zur Seite [**Sicherheitsempfehlungen.**](tvm-security-recommendation.md) Wenn Sie alle Sicherheitsempfehlungen anzeigen möchten, löschen Sie das Suchfeld, sobald Sie zur Seite Sicherheitsempfehlungen gelangen.
 
 2. Wählen Sie ein Element in der Liste aus. Das Flyoutpanel wird mit Details zur Empfehlung geöffnet. Wählen **Sie Korrekturoptionen aus.**
 
@@ -110,7 +110,7 @@ Verbessern Sie Ihre Sicherheitskonfiguration, indem Sie Probleme aus der Liste d
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Übersicht über die Verwaltung von Bedrohungen und Sicherheitslücken](next-gen-threat-and-vuln-mgt.md)
+- [Übersicht über Bedrohungen Sicherheitsrisikomanagement Bedrohungen](next-gen-threat-and-vuln-mgt.md)
 - [Dashboard](tvm-dashboard-insights.md)
 - [Gefährdungsscore](tvm-exposure-score.md)
 - [Sicherheitsempfehlungen](tvm-security-recommendation.md)

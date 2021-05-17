@@ -1,5 +1,5 @@
 ---
-title: Verbindung von Microsoft Defender für Endpunkt-APIs zu Power BI
+title: Verbindung von Microsoft Defender für Endpunkt-APIs Power BI
 ms.reviewer: ''
 description: Erstellen Sie einen Power Business Intelligence (BI)-Bericht über Microsoft Defender for Endpoint-APIs.
 keywords: apis, supported apis, Power BI, reports
@@ -23,7 +23,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51935041"
 ---
-# <a name="create-custom-reports-using-power-bi"></a>Erstellen benutzerdefinierter Berichte mithilfe von Power BI
+# <a name="create-custom-reports-using-power-bi"></a>Erstellen benutzerdefinierter Berichte mithilfe Power BI
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,13 +38,13 @@ ms.locfileid: "51935041"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-In diesem Abschnitt erfahren Sie, wie Sie zusätzlich zu Defender for Endpoint-APIs einen Power BI-Bericht erstellen.
+In diesem Abschnitt erfahren Sie, wie Sie Power BI defender for Endpoint-APIs erstellen.
 
-Im ersten Beispiel wird veranschaulicht, wie Sie Power BI mit der Erweiterten Such-API verbinden, und im zweiten Beispiel wird eine Verbindung mit unseren OData-APIs, z. B. Computeraktionen oder Warnungen, veranschaulicht.
+Im ersten Beispiel wird veranschaulicht, wie Power BI mit der Advanced Hunting-API verbunden wird, und im zweiten Beispiel wird eine Verbindung mit unseren OData-APIs, z. B. Computeraktionen oder Warnungen, veranschaulicht.
 
-## <a name="connect-power-bi-to-advanced-hunting-api"></a>Verbinden von Power BI mit advanced Hunting API
+## <a name="connect-power-bi-to-advanced-hunting-api"></a>Verbinden Power BI zu Advanced Hunting API
 
-- Öffnen von Microsoft Power BI
+- Öffnen Sie Microsoft Power BI
 
 - Klicken **Sie auf Daten leere Abfrage**  >  **erhalten**
 
@@ -107,7 +107,7 @@ Im ersten Beispiel wird veranschaulicht, wie Sie Power BI mit der Erweiterten Su
 
 - Geben Sie Ihre Anmeldeinformationen ein, und warten Sie, bis sie angemeldet sind
 
-- Klicken Sie **auf Verbinden**
+- Klicken Sie **Verbinden**
 
     ![Abbildung der festgelegten Anmeldeinformationen2](images/power-bi-set-credentials-organizational-cont.png)
 
@@ -115,7 +115,7 @@ Im ersten Beispiel wird veranschaulicht, wie Sie Power BI mit der Erweiterten Su
 
 - Sie können diese Tabelle duplizieren, umbenennen und die Erweiterte Suche bearbeiten, um beliebige Daten zu erhalten.
 
-## <a name="connect-power-bi-to-odata-apis"></a>Verbinden von Power BI mit OData-APIs
+## <a name="connect-power-bi-to-odata-apis"></a>Verbinden Power BI zu OData-APIs
 
 - Der einzige Unterschied zum obigen Beispiel ist die Abfrage innerhalb des Editors. 
 
@@ -137,11 +137,11 @@ Im ersten Beispiel wird veranschaulicht, wie Sie Power BI mit der Erweiterten Su
 - Sie können auch OData-Abfragen für Abfragenfilter verwenden. Weitere Informationen finden Sie unter [Using OData Queries](exposed-apis-odata-samples.md)
 
 
-## <a name="power-bi-dashboard-samples-in-github"></a>Power BI-Dashboardbeispiele in GitHub
-Weitere Informationen finden Sie in den [Power BI-Berichtsvorlagen](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
+## <a name="power-bi-dashboard-samples-in-github"></a>Power BI Dashboardbeispiele in GitHub
+Weitere Informationen finden Sie unter [Power BI Berichtsvorlagen](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
 
 ## <a name="sample-reports"></a>Beispielberichte
-Anzeigen der Microsoft Defender for Endpoint Power BI-Berichtsbeispiele. Weitere Informationen finden Sie unter [Durchsuchen von Codebeispielen](https://docs.microsoft.com/samples/browse/?products=mdatp).
+Anzeigen der Microsoft Defender for Endpoint Power BI Berichtsbeispiele. Weitere Informationen finden Sie unter [Durchsuchen von Codebeispielen](https://docs.microsoft.com/samples/browse/?products=mdatp).
 
 
 ## <a name="related-topic"></a>Verwandtes Thema

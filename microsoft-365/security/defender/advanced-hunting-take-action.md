@@ -1,7 +1,7 @@
 ---
-title: Ergreifen von Maßnahmen für erweiterte Suchergebnisse in Microsoft 365 Defender
+title: Ergreifen von Aktionen für erweiterte Suchergebnisse in Microsoft 365 Defender
 description: Schnelles Adressieren von Bedrohungen und betroffenen Ressourcen in ihren erweiterten Suchergebnissen
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungensuche, Microsoft 365 Defender, microsoft 365, m365, Suche, Abfrage, Telemetrie, Maßnahmen ergreifen
+keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, take action
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -46,7 +46,7 @@ Mithilfe leistungsstarker und umfassender Aktionsoptionen können [](advanced-hu
 ## <a name="required-permissions"></a>Erforderliche Berechtigungen
 Um maßnahmen über die erweiterte Suche ergreifen zu können, benötigen Sie eine Rolle in Microsoft Defender for Endpoint mit Berechtigungen zum Übermitteln von Korrekturaktionen [auf Geräten.](/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options) Wenn Sie keine Aktion ergreifen können, wenden Sie sich an einen globalen Administrator, um die folgende Berechtigung zu erhalten:
 
-*Aktive Abhilfemaßnahmen > Bedrohungs- und Sicherheitsrisikoverwaltung – Behandlung von Abhilfemaßnahmen*
+*Aktive Korrekturaktionen > Bedrohung und Sicherheitsrisikomanagement – Behandlung von Abhilfemaßnahmen*
 
 ## <a name="take-various-actions-on-devices"></a>Ausführen verschiedener Aktionen auf Geräten
 Sie können die folgenden Aktionen auf Geräten ausführen, die von der `DeviceId` Spalte in Den Abfrageergebnissen identifiziert werden:
@@ -81,7 +81,7 @@ Wenn Sie eine der beschriebenen Aktionen ausführen möchten, wählen Sie einen 
 Jede Aktion wird einzeln im [](m365d-action-center.md) Aktionscenter unter **Aktionscenterverlauf**  >   ( security.microsoft.com/action-center/history )[aufgezeichnet.](https://security.microsoft.com/action-center/history) Wechseln Sie zum Aktionscenter, um den Status der einzelnen Aktionen zu überprüfen.
  
 >[!NOTE]
->Einige Tabellen in diesem Artikel sind möglicherweise nicht in Microsoft Defender for Endpoint verfügbar. [Aktivieren Sie Microsoft 365 Defender,](m365d-enable.md) um bedrohungen mithilfe von weiteren Datenquellen nach Bedrohungen zu fahnen. Sie können Ihre erweiterten Suchworkflows von Microsoft Defender for Endpoint zu Microsoft 365 Defender verschieben, indem Sie die Schritte unter [Migrate advanced hunting queries from Microsoft Defender for Endpoint ausführen.](advanced-hunting-migrate-from-mde.md)
+>Einige Tabellen in diesem Artikel sind möglicherweise nicht in Microsoft Defender for Endpoint verfügbar. [Aktivieren Sie Microsoft 365 Defender,](m365d-enable.md) um bedrohungen mithilfe von weiteren Datenquellen nach Bedrohungen zu fahnen. Sie können Ihre workflows für die erweiterte Suche von Microsoft Defender for Endpoint zu Microsoft 365 Defender verschieben, indem Sie die Schritte unter [Migrate advanced hunting queries from Microsoft Defender for Endpoint ausführen.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

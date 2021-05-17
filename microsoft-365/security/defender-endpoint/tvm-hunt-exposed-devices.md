@@ -1,6 +1,6 @@
 ---
 title: Suchen nach offenen Geräten
-description: Erfahren Sie, wie das Bedrohungs- und Sicherheitsrisikomanagement verwendet werden kann, um Sicherheitsadministratoren, IT-Administratoren und SecOps bei der Zusammenarbeit zu helfen.
+description: Erfahren Sie Bedrohungs- und Sicherheitsrisikomanagement sie verwendet werden können, um Sicherheitsadministratoren, IT-Administratoren und SecOps bei der Zusammenarbeit zu helfen.
 keywords: Microsoft Defender für Endpoint-tvm-Szenarien, Microsoft Defender für Endpunkte, tvm- und tvm-Szenarien, Reduzieren der Bedrohung & Sicherheitsrisikoexposition, Verringern von Bedrohungen und Sicherheitsrisiken, Verbessern der Sicherheitskonfiguration, Erhöhen der Microsoft Secure Score für Geräte, Erhöhen der Bedrohung & Sicherheitsrisiko Microsoft Secure Score for Devices, Microsoft Secure Score for Devices, Exposure Score, Security Controls
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -25,14 +25,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934093"
 ---
-# <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Suche nach verfügbar gemachten Geräten – Bedrohungs- und Sicherheitsrisikoverwaltung
+# <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Suche nach verfügbar gemachten Geräten – Bedrohungs- und Sicherheitsrisikomanagement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Bedrohungs- und Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md)
+- [Bedrohung und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
@@ -49,13 +49,13 @@ Bei der erweiterten Suche handelt es sich um ein abfragebasiertes Tool für die 
 
 - [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) – Wissensdatenbank öffentlich offengelegter Sicherheitsrisiken, einschließlich der Frage, ob Exploitcode öffentlich verfügbar ist.
 
-- [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) – Ereignisse zur Bewertung der Bedrohungs- und Sicherheitsrisikoverwaltung, die den Status verschiedener Sicherheitskonfigurationen auf Geräten angeben.
+- [DeviceTvmSecureConfigurationAssessment – Bedrohungs-](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) und Sicherheitsrisikomanagement-Bewertungsereignisse, die den Status verschiedener Sicherheitskonfigurationen auf Geräten angeben.
 
 - [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) – Wissensdatenbank der verschiedenen Sicherheitskonfigurationen, die von Threat & Vulnerability Management zum Bewerten von Geräten verwendet werden; umfasst Zuordnungen zu verschiedenen Standards und Benchmarks
 
 ## <a name="check-which-devices-are-involved-in-high-severity-alerts"></a>Überprüfen, welche Geräte an Warnungen mit hohem Schweregrad beteiligt sind
 
-1. Wechseln Sie **im** linken Navigationsbereich des Microsoft Defender Security Center zu Erweiterte Suche.
+1. Wechseln Sie **im** linken Navigationsbereich des Navigationsbereichs zu Erweiterte Microsoft Defender Security Center.
 
 2. Führen Sie einen Bildlauf nach unten zu den erweiterten TVM-Jagdschemas aus, um sich mit den Spaltennamen vertraut zu machen.
 
@@ -77,9 +77,9 @@ DeviceName=any(DeviceName) by DeviceId, AlertId
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Übersicht über die Verwaltung von Bedrohungen und Sicherheitslücken](next-gen-threat-and-vuln-mgt.md)
+- [Übersicht über Bedrohungen Sicherheitsrisikomanagement Bedrohungen](next-gen-threat-and-vuln-mgt.md)
 - [Sicherheitsempfehlungen](tvm-security-recommendation.md)
 - [APIs](next-gen-threat-and-vuln-mgt.md#apis)
-- [Konfigurieren des Datenzugriffs für Bedrohungs- und Sicherheitsrisikoverwaltungsrollen](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
+- [Konfigurieren des Datenzugriffs für Bedrohungs- und Sicherheitsrisikomanagement Rollen](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
 - [Übersicht über die erweiterte Suche](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 - [Alle erweiterten Tabellen für die Suche](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference.md)

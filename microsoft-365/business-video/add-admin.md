@@ -39,7 +39,7 @@ Wenn Sie sich für Microsoft 365 Business registrieren, werden Sie automatisch g
 ### <a name="add-an-existing-employee-as-an-admin"></a>Hinzufügen eines vorhandenen Mitarbeiters als Administrator
 
 1. Wenn Sie sich für Microsoft 365 Business registrieren, werden Sie automatisch globaler Administrator. Um das Unternehmen zu verwalten, können Sie auch andere Personen zu Administratoren machen. 
-1. Wählen Sie im Microsoft 365 Admin Center Die Option **Benutzer** und dann **Aktive Benutzer aus.**
+1. Wählen Sie Microsoft 365 Admin Center **die Option Benutzer** und dann Aktive Benutzer **aus.**
 1. Wählen Sie den Benutzer aus, den Sie als Administrator festlegen möchten, und wählen Sie dann **Rollen verwalten aus.**
 1. Aktivieren Sie **im** Bereich Rollen verwalten das Kontrollkästchen Aktuelle Rolle des Benutzers, und wählen Sie die neue Rolle aus, die Sie dem Benutzer zuweisen möchten.
 1. Wählen **Sie Änderungen speichern** aus, und schließen Sie dann den **Bestätigungsbereich "Administratorrollen aktualisiert".**
@@ -48,13 +48,13 @@ Wenn Sie sich für Microsoft 365 Business registrieren, werden Sie automatisch g
 
 Wenn es eine externe IT-Person gibt, die Bei der Verwaltung Ihres Unternehmens hilft, können Sie sie als globaler Administrator hinzufügen.
 
-1. Wählen Sie im Microsoft 365 Admin Center **Benutzer**, **Aktive** Benutzer und dann **Benutzer hinzufügen aus.**
+1. Wählen Sie Microsoft 365 Admin Center **benutzer**, **aktive** Benutzer und dann **Benutzer hinzufügen aus.**
 1. Geben Sie **auf der Seite** Grundlagen einrichten den Namen des Benutzers, den Anzeigenamen und den Benutzernamen ein.
-1. Aktivieren Sie das Kontrollkästchen Kennwort **in E-Mail** nach Abschluss senden, um das Kennwort des Benutzers per E-Mail an ihn senden zu lassen. Geben Sie ihre E-Mail-Adresse ein. Trennen Sie mehrere Adressen durch Semikolons. Klicken Sie auf **Weiter**.
+1. Aktivieren Sie das Kontrollkästchen Kennwort **in E-Mail** nach Abschluss senden, um das Kennwort des Benutzers per E-Mail an ihn senden zu lassen. Geben Sie ihre E-Mail-Adresse ein. Trennen Sie mehrere Adressen durch Semikolons. Wählen Sie **Weiter** aus.
 1. Wählen Sie **in der** Dropdownliste Standort auswählen den Speicherort des Benutzers aus.
-1. Aktivieren Sie **das Kontrollkästchen Benutzer ohne Produktlizenz** erstellen. Sie müssen diesem Benutzer keine Lizenz zuweisen, da er nur die Microsoft 365-Dienste verwaltet und nicht verwendet. Klicken Sie auf **Weiter**.
-1. Erweitern Sie den **Abschnitt Rollen.** Aktivieren Sie das Kontrollkästchen neben der aktuellen Rolle des Benutzers, und wählen Sie **dann Globaler Administrator aus.** Klicken Sie auf **Weiter**.
+1. Aktivieren Sie **das Kontrollkästchen Benutzer ohne Produktlizenz** erstellen. Sie müssen diesem Benutzer keine Lizenz zuweisen, da er nur die Dienste Microsoft 365 und nicht verwendet. Wählen Sie **Weiter** aus.
+1. Erweitern Sie den **Abschnitt Rollen.** Aktivieren Sie das Kontrollkästchen neben der aktuellen Rolle des Benutzers, und wählen Sie **dann Globaler Administrator aus.** Wählen Sie **Weiter** aus.
 1. Überprüfen Sie Ihre Einstellungen, und wählen Sie dann **Hinzufügen fertig stellen aus.**
 1. Wählen Sie **Schließen** aus.
 
-Ihr neuer globaler Administrator kann Nun Ihre Microsoft 365-Dienste verwalten.
+Ihr neuer globaler Administrator kann nun ihre Microsoft 365 verwalten.

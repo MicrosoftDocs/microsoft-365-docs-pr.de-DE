@@ -68,7 +68,7 @@ Die meisten MDM-Lösungen verwenden dasselbe Modell für die Verwaltung von macO
 
 ### <a name="package"></a>Paket
 
-Konfigurieren Sie die Bereitstellung eines [erforderlichen Anwendungspakets](mac-install-with-jamf.md)mit dem Installationspaket (wdav.pkg), das von [Microsoft Defender Security Center heruntergeladen wurde.](mac-install-with-jamf.md)
+Konfigurieren Sie die Bereitstellung eines [erforderlichen Anwendungspakets](mac-install-with-jamf.md)mit dem Installationspaket (wdav.pkg), das von [Microsoft Defender Security Center.](mac-install-with-jamf.md)
 
 Verwenden Sie zum Bereitstellen des Pakets in Ihrem Unternehmen die Anweisungen, die Ihrer MDM-Lösung zugeordnet sind.
 
@@ -76,9 +76,9 @@ Verwenden Sie zum Bereitstellen des Pakets in Ihrem Unternehmen die Anweisungen,
 
 Richten Sie [ein Systemkonfigurationsprofil ein.](mac-install-with-jamf.md) 
 
-Ihre MDM-Lösung kann sie etwa als "Profil für benutzerdefinierte Einstellungen" bezeichnen, da Microsoft Defender for Endpoint auf macOS nicht Teil von macOS ist.
+Ihre MDM-Lösung kann sie etwa "Custom Einstellungen Profile" nennen, da Microsoft Defender for Endpoint auf macOS nicht Teil von macOS ist.
 
-Verwenden Sie die Eigenschaftenliste jamf/WindowsDefenderATPOnboarding.plist, die aus einem onboarding-Paket extrahiert werden kann, das aus [Microsoft Defender Security Center heruntergeladen wurde.](mac-install-with-jamf.md)
+Verwenden Sie die Eigenschaftenliste jamf/WindowsDefenderATPOnboarding.plist, die aus einem onboarding-Paket extrahiert werden kann, das von Microsoft Defender Security Center [.](mac-install-with-jamf.md)
 Ihr System unterstützt möglicherweise eine beliebige Eigenschaftenliste im XML-Format. Sie können die Datei jamf/WindowsDefenderATPOnboarding.plist wie in diesem Fall hochladen.
 Alternativ müssen Sie die Eigenschaftenliste möglicherweise zuerst in ein anderes Format konvertieren.
 
@@ -116,7 +116,7 @@ Gewähren Des vollständigen Festplattenzugriffs auf die folgenden Komponenten:
 
 ### <a name="network-extension-policy"></a>Netzwerkerweiterungsrichtlinie
 
-Im Rahmen der Endpunkterkennungs- und -reaktionsfunktionen prüft Microsoft Defender for Endpoint auf macOS den Socketdatenverkehr und meldet diese Informationen an das Microsoft Defender Security Center-Portal. Mit der folgenden Richtlinie kann die Netzwerkerweiterung diese Funktionalität ausführen.
+Im Rahmen der Funktionen für die Erkennung und Reaktion von Endpunkten prüft Microsoft Defender for Endpoint auf macOS den Socketdatenverkehr und meldet diese Informationen Microsoft Defender Security Center Portal. Mit der folgenden Richtlinie kann die Netzwerkerweiterung diese Funktionalität ausführen.
 
 - Filtertyp: Plugin
 - Plug-In-Bundle-ID: `com.microsoft.wdav`

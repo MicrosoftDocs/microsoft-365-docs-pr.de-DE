@@ -1,6 +1,6 @@
 ---
 title: Onboarding mithilfe des Microsoft Endpoint Configuration Manager
-description: Informationen zum Onboarding in Microsoft Defender for Endpoint mithilfe von Microsoft Endpoint Configuration Manager
+description: Erfahren Sie, wie Sie microsoft Defender for Endpoint mithilfe von Microsoft Endpoint Configuration Manager
 keywords: Onboarding, Konfiguration, Bereitstellung, Bereitstellung, Endpunktkonfigurations-Manager, Microsoft Defender for Endpoint, Sammlungserstellung, Endpunkterkennungsantwort, Schutz der nächsten Generation, Reduzierung der Angriffsfläche, Microsoft Endpoint Configuration Manager
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -49,34 +49,34 @@ Während Defender for Endpoint das Onboarding verschiedener Endpunkte und Tools 
 
 
 In diesem Thema werden Benutzer in den themen:
-- Schritt 1: Onboarding von Windows-Geräten in den Dienst 
+- Schritt 1: Onboarding Windows Geräte in den Dienst 
 - Schritt 2: Konfigurieren von Defender for Endpoint-Funktionen
 
-In diesem Onboardingleitfaden werden Sie durch die folgenden grundlegenden Schritte geleitet, die Sie bei der Verwendung von Microsoft Endpoint Configuration Manager ausführen müssen:
+In diesem Onboardingleitfaden werden Sie durch die folgenden grundlegenden Schritte bei der Verwendung von Microsoft Endpoint Configuration Manager:
 - **Erstellen einer Auflistung in Microsoft Endpoint Configuration Manager**
-- **Konfigurieren von Microsoft Defender for Endpoint-Funktionen mithilfe von Microsoft Endpoint Configuration Manager**
+- **Konfigurieren von Microsoft Defender for Endpoint-Funktionen mithilfe Microsoft Endpoint Configuration Manager**
 
 >[!NOTE]
->In dieser Beispielbereitstellung werden nur Windows-Geräte behandelt. 
+>Nur Windows werden in dieser Beispielbereitstellung behandelt. 
 
 
 
-## <a name="step-1-onboard-windows-devices-using-microsoft-endpoint-configuration-manager"></a>Schritt 1: Onboarding von Windows-Geräten mit Microsoft Endpoint Configuration Manager
+## <a name="step-1-onboard-windows-devices-using-microsoft-endpoint-configuration-manager"></a>Schritt 1: Onboarding Windows Geräte mithilfe Microsoft Endpoint Configuration Manager
 
 ### <a name="collection-creation"></a>Sammlungserstellung
-Um Windows 10-Geräte mit Microsoft Endpoint Configuration Manager zu integrieren, kann die Bereitstellung auf eine vorhandene Auflistung oder eine neue Auflistung für Tests verwendet werden. 
+Zum Onboarding Windows 10 geräte mit Microsoft Endpoint Configuration Manager kann die Bereitstellung auf eine vorhandene Auflistung oder eine neue Sammlung zu Testzwecken erstellt werden. 
 
 Beim Onboarding mithilfe von Tools wie Gruppenrichtlinien oder manuellen Methoden wird kein Agent auf dem System installiert. 
 
-In der Microsoft Endpoint Configuration Manager-Konsole wird der Onboardingprozess als Teil der Kompatibilitätseinstellungen in der Konsole konfiguriert.
+Innerhalb der Microsoft Endpoint Configuration Manager wird der Onboardingprozess als Teil der Kompatibilitätseinstellungen in der Konsole konfiguriert.
 
 Jedes System, das diese erforderliche Konfiguration empfängt, wird diese Konfiguration beibehalten, solange der Configuration Manager-Client diese Richtlinie weiterhin vom Verwaltungspunkt empfängt. 
 
-Führen Sie die folgenden Schritte aus, um Endpunkte mithilfe von Microsoft Endpoint Configuration Manager zu integrieren.
+Führen Sie die folgenden Schritte aus, um Endpunkte mithilfe von Microsoft Endpoint Configuration Manager.
 
-1. Navigieren Sie in der Microsoft Endpoint Configuration Manager-Konsole zu **Assets and Compliance Overview Device \> \> Collections**.            
+1. Navigieren Microsoft Endpoint Configuration Manager Konsole zu **Assets and Compliance Overview Device \> \> Collections**.            
 
-    ![Abbildung des Microsoft Endpoint Configuration Manager-Assistenten1](images/configmgr-device-collections.png)
+    ![Abbildung des Microsoft Endpoint Configuration Manager Assistenten1](images/configmgr-device-collections.png)
 
 2. Klicken Sie mit **der rechten Maustaste auf Gerätesammlung,** und wählen Sie **Gerätesammlung erstellen aus.**
 
@@ -84,38 +84,38 @@ Führen Sie die folgenden Schritte aus, um Endpunkte mithilfe von Microsoft Endp
 
 3. Geben Sie **einen Namen und** eine **Einschränkende Auflistung an,** und wählen Sie dann **Weiter aus.**
 
-    ![Abbildung des Microsoft Endpoint Configuration Manager-Assistenten3](images/configmgr-limiting-collection.png)
+    ![Abbildung des Microsoft Endpoint Configuration Manager Assistenten3](images/configmgr-limiting-collection.png)
 
 4. Wählen **Sie Regel hinzufügen** aus, und wählen Sie **Abfrageregel aus.**
 
-    ![Abbildung des Microsoft Endpoint Configuration Manager-Assistenten4](images/configmgr-query-rule.png)
+    ![Abbildung des Microsoft Endpoint Configuration Manager Assistenten4](images/configmgr-query-rule.png)
 
 5.  Klicken **Sie im** Assistenten für direkte **Mitgliedschaft** auf Weiter, und klicken Sie auf **Abfrageanweisung bearbeiten.**
 
-     ![Abbildung des Microsoft Endpoint Configuration Manager-Assistenten5](images/configmgr-direct-membership.png)
+     ![Abbildung des Microsoft Endpoint Configuration Manager Assistenten5](images/configmgr-direct-membership.png)
 
 6. Wählen **Sie Kriterien** aus, und wählen Sie dann das Sternsymbol aus.
 
-     ![Abbildung des Microsoft Endpoint Configuration Manager-Assistenten6](images/configmgr-criteria.png)
+     ![Abbildung des Microsoft Endpoint Configuration Manager Assistenten6](images/configmgr-criteria.png)
 
 7. Halten Sie den Kriterientyp als einfachen **Wert,** wählen  Sie als Betriebssystem **- Buildnummer**, Operator, größer oder gleich und Wert **14393** aus, und klicken Sie auf **OK**.
 
-    ![Abbildung des Microsoft Endpoint Configuration Manager-Assistenten7](images/configmgr-simple-value.png)
+    ![Abbildung des Microsoft Endpoint Configuration Manager Assistenten7](images/configmgr-simple-value.png)
 
 8. Wählen **Sie Weiter** und Schließen **aus.**
 
-    ![Abbildung des Microsoft Endpoint Configuration Manager-Assistenten8](images/configmgr-membership-rules.png)
+    ![Abbildung des Microsoft Endpoint Configuration Manager Assistenten8](images/configmgr-membership-rules.png)
 
 9. Wählen Sie **Weiter** aus.
 
-    ![Abbildung des Microsoft Endpoint Configuration Manager-Assistenten9](images/configmgr-confirm.png)
+    ![Abbildung des Microsoft Endpoint Configuration Manager Assistenten9](images/configmgr-confirm.png)
 
 
-Nachdem Sie diese Aufgabe abgeschlossen haben, verfügen Sie nun über eine Gerätesammlung mit allen Windows 10-Endpunkten in der Umgebung. 
+Nachdem Sie diese Aufgabe abgeschlossen haben, verfügen Sie nun über eine Gerätesammlung mit allen Windows 10 endpunkten in der Umgebung. 
 
 
 ## <a name="step-2-configure-microsoft-defender-for-endpoint-capabilities"></a>Schritt 2: Konfigurieren von Microsoft Defender for Endpoint-Funktionen 
-In diesem Abschnitt werden Sie beim Konfigurieren der folgenden Funktionen mithilfe von Microsoft Endpoint Configuration Manager auf Windows-Geräten unterstützt:
+In diesem Abschnitt werden Sie beim Konfigurieren der folgenden Funktionen mithilfe von Microsoft Endpoint Configuration Manager auf Windows unterstützt:
 
 - [**Erkennung und Reaktion am Endpunkt**](#endpoint-detection-and-response)
 - [**Schutzlösungen der nächsten Generation**](#next-generation-protection)
@@ -124,13 +124,13 @@ In diesem Abschnitt werden Sie beim Konfigurieren der folgenden Funktionen mithi
 
 ### <a name="endpoint-detection-and-response"></a>Erkennung und Reaktion am Endpunkt
 #### <a name="windows-10"></a>Windows 10
-Im Microsoft Defender Security Center können Sie die Richtlinie ".onboarding" herunterladen, mit der die Richtlinie im System Center Configuration Manager erstellt und auf Windows 10-Geräten bereitgestellt werden kann.
+Innerhalb der Microsoft Defender Security Center ist es möglich, die Richtlinie ".onboarding" herunterzuladen, mit der die Richtlinie in System Center Configuration Manager erstellt und auf Windows 10 bereitgestellt werden kann.
 
-1. Wählen Sie in einem Microsoft Defender Security Center-Portal [Einstellungen und dann Onboarding aus.](https://securitycenter.windows.com/preferences2/onboarding)
+1. Wählen Sie Microsoft Defender Security Center Portal Einstellungen [und dann Onboarding aus.](https://securitycenter.windows.com/preferences2/onboarding)
 
 
 
-2. Wählen Sie unter Bereitstellungsmethode die unterstützte Version von **Microsoft Endpoint Configuration Manager aus.**
+2. Wählen Sie unter Bereitstellungsmethode die unterstützte Version von **Microsoft Endpoint Configuration Manager**.
 
     ![Abbildung des Microsoft Defender for Endpoint-Onboarding-Assistenten10](images/mdatp-onboarding-wizard.png)
 
@@ -139,15 +139,15 @@ Im Microsoft Defender Security Center können Sie die Richtlinie ".onboarding" h
     ![Abbildung des Microsoft Defender for Endpoint-Onboarding-Assistenten11](images/mdatp-download-package.png)
 
 4. Speichern Sie das Paket an einem barrierefreien Speicherort.
-5. Navigieren Sie in Microsoft Endpoint Configuration Manager zu: **Assets and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
+5. Navigieren Microsoft Endpoint Configuration Manager zu: Assets **and Compliance > Overview > Endpoint Protection > Microsoft Defender ATP Policies**.
 
-6. Klicken Sie mit der rechten **Maustaste auf Microsoft Defender ATP-Richtlinien,** und wählen Sie Microsoft Defender **ATP-Richtlinie erstellen aus.**
+6. Klicken Sie mit **der rechten Microsoft Defender ATP auf Richtlinien,** und wählen Sie Microsoft Defender ATP Erstellen **aus.**
 
-    ![Abbildung des Microsoft Endpoint Configuration Manager-Assistenten12](images/configmgr-create-policy.png)
+    ![Abbildung des Microsoft Endpoint Configuration Manager Assistenten12](images/configmgr-create-policy.png)
 
 7. Geben Sie den Namen und die Beschreibung ein, überprüfen Sie, ob **onboarding** ausgewählt ist, und wählen Sie dann **Weiter aus.**
 
-    ![Abbildung des Microsoft Endpoint Configuration Manager-Assistenten13](images/configmgr-policy-name.png)
+    ![Abbildung des Microsoft Endpoint Configuration Manager Assistenten13](images/configmgr-policy-name.png)
 
 
 8. Klicken Sie auf **Durchsuchen**.
@@ -169,7 +169,7 @@ Im Microsoft Defender Security Center können Sie die Richtlinie ".onboarding" h
 
 15. Klicken **Sie auf Schließen,** wenn der Assistent abgeschlossen ist.
 
-16.  Klicken Sie in der Microsoft Endpoint Configuration Manager-Konsole mit der rechten Maustaste auf die gerade erstellte Defender for Endpoint-Richtlinie, und wählen Sie **Bereitstellen aus.**
+16.  Klicken Sie Microsoft Endpoint Configuration Manager mit der rechten Maustaste auf die gerade erstellte Defender for Endpoint-Richtlinie, und wählen Sie **Bereitstellen aus.**
 
      ![Abbildung der Konfigurationseinstellungen4](images/configmgr-deploy.png)
 
@@ -179,9 +179,9 @@ Im Microsoft Defender Security Center können Sie die Richtlinie ".onboarding" h
 
 
 #### <a name="previous-versions-of-windows-client-windows-7-and-windows-81"></a>Frühere Versionen von Windows Client (Windows 7 und Windows 8.1)
-Führen Sie die folgenden Schritte aus, um die Defender for Endpoint Workspace ID und den Arbeitsbereichsschlüssel zu identifizieren, die für das Onboarding früherer Versionen von Windows erforderlich sind.
+Führen Sie die folgenden Schritte aus, um die Defender for Endpoint Workspace ID und den Arbeitsbereichsschlüssel zu identifizieren, die für das Onboarding früherer Versionen von Windows.
 
-1. Wählen Sie in einem Microsoft Defender Security Center-Portal Einstellungen **> Onboarding aus.**
+1. Wählen Sie Microsoft Defender Security Center Portal Einstellungen > **Onboarding aus.**
 
 2. Wählen Sie unter Betriebssystem **Windows 7 SP1 und 8.1 aus.**
 
@@ -189,14 +189,14 @@ Führen Sie die folgenden Schritte aus, um die Defender for Endpoint Workspace I
 
     ![Abbildung des Onboardings](images/91b738e4b97c4272fd6d438d8c2d5269.png)
 
-4. Installieren Sie den Microsoft Monitoring Agent (MMA). <br>
-    MMA wird derzeit (ab Januar 2019) unter den folgenden Windows-Betriebssystemen unterstützt:
+4. Installieren Sie Microsoft Monitoring Agent (MMA). <br>
+    MMA wird derzeit (ab Januar 2019) auf den folgenden Betriebssystemen Windows unterstützt:
 
     -   Server-SKUs: Windows Server 2008 SP1 oder neuer
 
     -   Client-SKUs: Windows 7 SP1 und höher
 
-    Der MMA-Agent muss auf Windows-Geräten installiert werden. Zum Installieren des Agents müssen einige Systeme das [Update](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) für die Benutzererfahrung und die Diagnosetelemetrie herunterladen, um die Daten mit MMA zu erfassen. Diese Systemversionen umfassen u. U. folgende Versionen:
+    Der MMA-Agent muss auf Windows installiert werden. Zum Installieren des Agents müssen einige Systeme das [Update](https://support.microsoft.com/help/3080149/update-for-customer-experience-and-diagnostic-telemetry) für die Benutzererfahrung und die Diagnosetelemetrie herunterladen, um die Daten mit MMA zu erfassen. Diese Systemversionen umfassen u. U. folgende Versionen:
 
     -   Windows 8.1
 
@@ -223,7 +223,7 @@ Sobald sie abgeschlossen sind, sollten integrierte Endpunkte innerhalb einer Stu
 ### <a name="next-generation-protection"></a>Schutz der nächsten Generation 
 Microsoft Defender Antivirus ist eine integrierte Lösung zur Bekämpfung von Schadsoftware, die Schutz der nächsten Generation für Desktops, tragbare Computer und Server bietet.
 
-1. Navigieren Sie in der Microsoft Endpoint Configuration Manager-Konsole zu **Assets and Compliance Overview Endpoint Protection \> \> \> Anmalware Polices,** und wählen Sie **Antischalwarerichtlinie erstellen aus.**
+1. Navigieren Sie Microsoft Endpoint Configuration Manager in der Konsole zu Ressourcen und **\> Complianceübersicht \> Endpoint Protection \> Antischalwarerichtlinien,** und wählen Sie **Antischalwarerichtlinie erstellen aus.**
 
     ![Abbildung der Antischabschmierenrichtlinie](images/9736e0358e86bc778ce1bd4c516adb8b.png)
 
@@ -236,7 +236,7 @@ Microsoft Defender Antivirus ist eine integrierte Lösung zur Bekämpfung von Sc
   
     [Schnellscan im Vergleich zu vollständiger Überprüfung und benutzerdefinierter Überprüfung](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/scheduled-catch-up-scans-microsoft-defender-antivirus#quick-scan-versus-full-scan-and-custom-scan)
 
-    Weitere Informationen finden Sie unter [Windows Security Configuration Framework](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
+    Weitere Informationen finden Sie unter [Windows-Sicherheit Configuration Framework](https://docs.microsoft.com/windows/security/threat-protection/windows-security-configuration-framework/windows-security-configuration-framework)
   
     ![Abbildung des Schutzbereichs der nächsten Generation2](images/cd7daeb392ad5a36f2d3a15d650f1e96.png)
 
@@ -258,22 +258,22 @@ Microsoft Defender Antivirus ist eine integrierte Lösung zur Bekämpfung von Sc
 
     ![Abbildung des Schutzbereichs der nächsten Generation10](images/f5508317cd8c7870627cb4726acd5f3d.png)
 
-4. Wählen Sie die neue Antischalwarerichtlinie auf Ihre Windows 10-Auflistung aus, und klicken Sie auf **OK**.
+4. Wählen Sie die neue Antischalwarerichtlinie auf Ihre Windows 10 aus, und klicken Sie auf **OK**.
 
      ![Abbildung des Schutzbereichs der nächsten Generation11](images/configmgr-select-collection.png)
 
-Nachdem Sie diese Aufgabe abgeschlossen haben, haben Sie die Antivirus-Windows Defender konfiguriert.
+Nachdem Sie diese Aufgabe abgeschlossen haben, haben Sie die Windows Defender Antivirus.
 
 ### <a name="attack-surface-reduction"></a>Verringerung der Angriffsfläche
 Die Angriffsflächenreduzierungssäule von Defender for Endpoint umfasst den Funktionssatz, der unter Exploit Guard verfügbar ist. Attack Surface Reduction (ASR)-Regeln, kontrollierter Ordnerzugriff, Netzwerkschutz und Exploit-Schutz. 
 
-Alle diese Features bieten einen Überwachungsmodus und einen Blockmodus. Im Überwachungsmodus gibt es keine Auswirkungen auf endbenutzer. Sie sammelt nur zusätzliche Telemetrie und stellt sie im Microsoft Defender Security Center zur Verfügung. Das Ziel einer Bereitstellung besteht in der schrittweisen Bewegung von Sicherheitssteuerelementen in den Blockmodus.
+Alle diese Features bieten einen Überwachungsmodus und einen Blockmodus. Im Überwachungsmodus gibt es keine Auswirkungen auf endbenutzer. Es werden nur zusätzliche Telemetriedaten gesammelt und in der Microsoft Defender Security Center. Das Ziel einer Bereitstellung besteht in der schrittweisen Bewegung von Sicherheitssteuerelementen in den Blockmodus.
 
 So legen Sie ASR-Regeln im Überwachungsmodus ein:
 
-1. Navigieren Sie in der Microsoft Endpoint Configuration Manager-Konsole zu **Assets and Compliance Overview Endpoint Protection Windows Defender Exploit \> \> \> Guard,** und wählen Sie **Exploit Guard-Richtlinie erstellen aus.**
+1. Navigieren Sie Microsoft Endpoint Configuration Manager in der Konsole zu Ressourcen und **\> Complianceübersicht \> Endpoint Protection Windows Defender Exploit \> Guard,** und wählen Sie **Exploit Guard-Richtlinie erstellen aus.**
 
-   ![Abbildung der Microsoft Endpoint Configuration Manager-Konsole0](images/728c10ef26042bbdbcd270b6343f1a8a.png)
+   ![Abbildung der Microsoft Endpoint Configuration Manager Konsole0](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
 2.  Wählen Sie **Attack Surface Reduction aus.**
    
@@ -281,27 +281,27 @@ So legen Sie ASR-Regeln im Überwachungsmodus ein:
 3. Legen Sie Regeln auf **Überwachung** und klicken Sie auf **Weiter**.
 
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konsole1](images/d18e40c9e60aecf1f9a93065cb7567bd.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konsole1](images/d18e40c9e60aecf1f9a93065cb7567bd.png)
 
 4. Bestätigen Sie die neue Exploit Guard-Richtlinie, indem Sie auf **Weiter klicken.**
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konsole2](images/0a6536f2c4024c08709cac8fcf800060.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konsole2](images/0a6536f2c4024c08709cac8fcf800060.png)
 
     
 5. Klicken Sie nach dem Erstellen der Richtlinie auf **Schließen**.
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konsole3](images/95d23a07c2c8bc79176788f28cef7557.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konsole3](images/95d23a07c2c8bc79176788f28cef7557.png)
 
-    ![Abbildung der Microsoft Endpoint Manager-Konsole1](images/95d23a07c2c8bc79176788f28cef7557.png)
+    ![Abbildung der Microsoft Endpoint Manager Konsole1](images/95d23a07c2c8bc79176788f28cef7557.png)
    
 
 6.  Klicken Sie mit der rechten Maustaste auf die neu erstellte Richtlinie, und wählen Sie **Bereitstellen aus.**
     
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konsole4](images/8999dd697e3b495c04eb911f8b68a1ef.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konsole4](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. Zielen Sie die Richtlinie auf die neu erstellte Windows 10-Auflistung ab, und klicken Sie auf **OK**.
+7. Zielen Sie die Richtlinie auf die neu erstellte Windows 10, und klicken Sie auf **OK**.
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konsole5](images/0ccfe3e803be4b56c668b220b51da7f7.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager Konsole5](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
 Nachdem Sie diese Aufgabe abgeschlossen haben, haben Sie jetzt erfolgreich DIE REGELN im Überwachungsmodus konfiguriert.  
   
@@ -328,15 +328,15 @@ Weitere Informationen finden Sie unter [Optimize ASR rule deployment and detecti
 
 
 #### <a name="set-network-protection-rules-in-audit-mode"></a>Festlegen von Netzwerkschutzregeln im Überwachungsmodus:
-1. Navigieren Sie in der Microsoft Endpoint Configuration Manager-Konsole zu **Assets and Compliance Overview Endpoint Protection Windows Defender Exploit \> \> \> Guard,** und wählen Sie **Exploit Guard-Richtlinie erstellen aus.**
+1. Navigieren Sie Microsoft Endpoint Configuration Manager in der Konsole zu Ressourcen und **\> Complianceübersicht \> Endpoint Protection Windows Defender Exploit \> Guard,** und wählen Sie **Exploit Guard-Richtlinie erstellen aus.**
 
-    ![A screenshot System Center Configuration Manager1](images/728c10ef26042bbdbcd270b6343f1a8a.png)
+    ![Screenshot System Center Configuration Manager1](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
 2. Wählen Sie **Netzwerkschutz aus.**
 
 3. Legen Sie die Einstellung auf **Überwachung** und klicken Sie auf **Weiter**. 
 
-    ![A screenshot System Center Confirugatiom Manager2](images/c039b2e05dba1ade6fb4512456380c9f.png)
+    ![Screenshot System Center Confirugatiom Manager2](images/c039b2e05dba1ade6fb4512456380c9f.png)
 
 4. Bestätigen Sie die neue Exploit Guard-Richtlinie, indem Sie auf **Weiter klicken.**
     
@@ -350,7 +350,7 @@ Weitere Informationen finden Sie unter [Optimize ASR rule deployment and detecti
 
     ![A screenshot Microsoft Endpoint Configuration Manager1](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7. Wählen Sie die Richtlinie für die neu erstellte Windows 10-Auflistung aus, und wählen Sie **OK aus.**
+7. Wählen Sie die Richtlinie für die neu erstellte Windows 10 aus, und wählen Sie **OK aus.**
 
     ![Screenshot Von Microsoft Endpoint Configuration Manager2](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 
@@ -360,7 +360,7 @@ Nachdem Sie diese Aufgabe abgeschlossen haben, haben Sie Network Protection im �
 
 #### <a name="to-set-controlled-folder-access-rules-in-audit-mode"></a>So legen Sie Regeln für den kontrollierten Ordnerzugriff im Überwachungsmodus ein:
 
-1. Navigieren Sie in der Microsoft Endpoint Configuration Manager-Konsole zu **Assets and Compliance Overview Endpoint Protection Windows Defender Exploit \> \> \> Guard,** und wählen Sie **Exploit Guard-Richtlinie erstellen aus.**
+1. Navigieren Sie Microsoft Endpoint Configuration Manager in der Konsole zu Ressourcen und **\> Complianceübersicht \> Endpoint Protection Windows Defender Exploit \> Guard,** und wählen Sie **Exploit Guard-Richtlinie erstellen aus.**
 
     ![Screenshot von Microsoft Endpoint Configuration Manager3](images/728c10ef26042bbdbcd270b6343f1a8a.png)
 
@@ -382,7 +382,7 @@ Nachdem Sie diese Aufgabe abgeschlossen haben, haben Sie Network Protection im �
 
     ![Screenshot von Microsoft Endpoint Configuration Manager7](images/8999dd697e3b495c04eb911f8b68a1ef.png)
 
-7.  Zielen Sie die Richtlinie auf die neu erstellte Windows 10-Auflistung ab, und klicken Sie auf **OK**.
+7.  Zielen Sie die Richtlinie auf die neu erstellte Windows 10, und klicken Sie auf **OK**.
 
     ![Screenshot von Microsoft Endpoint Configuration Manager8](images/0ccfe3e803be4b56c668b220b51da7f7.png)
 

@@ -135,7 +135,7 @@ Die folgenden Felder werden erfasst:
 | cloud_service.service_uri                           | URI, der für die Kommunikation mit der Cloud verwendet wird. |
 | cloud_service.diagnostic_level                      | Diagnosestufe des Geräts (erforderlich, optional). |
 | cloud_service.automatic_sample_submission           | Automatische Beispielübermittlungsstufe des Geräts (keine, sicher, alle). |
-| edr.early_preview                                   | Gibt an, ob auf dem Gerät EDR-Features für die frühe Vorschau ausgeführt werden sollen. |
+| edr.early_preview                                   | Gibt an, ob das Gerät EDR vorschaufeatures ausgeführt werden soll. |
 | edr.group_id                                        | Gruppen-ID, die von der Erkennungs- und Antwortkomponente verwendet wird. |
 | edr.tags                                            | Benutzerdefinierte Tags. |
 | Features. \[ Optionaler Featurename\]                  | Liste der Vorschaufeatures, unabhängig davon, ob sie aktiviert sind oder nicht. |
@@ -232,7 +232,7 @@ Die folgenden Felder werden erfasst:
 | Feld            | Beschreibung |
 | ---------------- | ----------- |
 | sha256           | SHA256-ID des Supportprotokolls. |
-| size             | Größe des Supportprotokolls. |
+| Größe             | Größe des Supportprotokolls. |
 | original_path    | Pfad zum Supportprotokoll (immer unter */var/opt/microsoft/mdatp/wdavdiag/*). |
 | Format           | Format des Supportprotokolls. |
 

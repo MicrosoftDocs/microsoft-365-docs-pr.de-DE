@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Security Center – Übersicht über die Kombination von MDO, MDE, MDI und MCAS
+title: Microsoft 365 security center overview, combining MDO, MDE, MDI, and MCAS
 description: 'Vorteile im Microsoft 365 Security Center: Microsoft Defender für Office 365 (MDO) und Microsoft Defender für Endpunkt (MDE), mit Microsoft Defender for Identity (MDI) und Microsoft Cloud App Security (MCAS). In diesem Artikel werden die Fortschritte im Microsoft 365 Security Center für Administratoren erläutert.'
 keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Sicherheitscenter, Monitor, Bericht, Identitäten, Daten, Geräte, Apps
 ms.prod: m365-security
@@ -52,13 +52,13 @@ Wenn Sie Informationen zu den Aktualisierungen im Office 365 Security & Complian
 - [Defender für Endpunkt im Microsoft 365 Security Center](microsoft-365-security-center-mde.md)
 
 > [!NOTE]
-> Das Microsoft 365-Sicherheitsportal verwendet und erzwingt vorhandenen rollenbasierten Zugriff und verschiebt jedes Sicherheitsmodell in das einheitliche Portal. Jede konvergente Arbeitsauslastung (z. B. MDO oder MDE) verfügt über einen eigenen rollenbasierten Zugriff. Die bereits in den Produkten vorhandenen Rollen werden automatisch in das Microsoft 365-Sicherheitsportal zusammengeführt. Rollen und Berechtigungen für MCAS werden jedoch weiterhin in MCAS behandelt.
+> Das Microsoft 365 verwendet und erzwingt den vorhandenen rollenbasierten Zugriff und verschiebt jedes Sicherheitsmodell in das einheitliche Portal. Jede konvergente Arbeitsauslastung (z. B. MDO oder MDE) verfügt über einen eigenen rollenbasierten Zugriff. Die bereits in den Produkten vorhandenen Rollen werden automatisch in das Microsoft 365 zusammengeführt. Rollen und Berechtigungen für MCAS werden jedoch weiterhin in MCAS behandelt.
 
 ## <a name="what-to-expect"></a>Das erwartet Sie
 
 Alle Sicherheitsinhalte, die Sie im Office 365 Security & Compliance Center (protection.office.com) und im Microsoft Defender Security Center (securitycenter.microsoft.com) verwenden, finden Sie jetzt im *Microsoft 365 Security Center*.
 
-Microsoft 365 Security Center unterstützt Sicherheitsteams bei der Untersuchung und Reaktion auf Angriffe, indem Signale von verschiedenen Arbeitsauslastungen in eine Reihe einheitlicher Erfahrungen für:
+Microsoft 365 Security Center hilft Sicherheitsteams bei der Untersuchung und Reaktion auf Angriffe, indem Sie Signale von verschiedenen Workloads in eine Reihe einheitlicher Erfahrungen für:
 
 - Vorfälle und Benachrichtigungen
 - Suchen
@@ -73,23 +73,23 @@ Das Microsoft 365 Security Center hebt beim Zusammenführen von Microsoft Defend
 - Featureparität mit anderen Workloads
 
 > [!NOTE]
-> Auf das einheitliche Microsoft 365 Security Center kann zugegriffen werden, ohne dass Kunden Migrationsschritte ausführen oder eine neue Lizenz erwerben müssen. Beispielsweise kann auf dieses neue Portal für Administratoren mit einem #A0 zugegriffen werden, genauso wie für Administratoren mit Microsoft Defender für Office 365 Plan 1 und Plan 2. Exchange Online Protection- oder MDO Plan 1-Kunden sehen jedoch nur die Sicherheitsfeatures, die ihre Abonnementlizenz unterstützt. Das Ziel des neuen Centers ist die Zentralisierung der Sicherheit.
+> Auf das Microsoft 365 Security Center kann zugegriffen werden, ohne dass Kunden Migrationsschritte ausführen oder eine neue Lizenz erwerben müssen. Beispielsweise kann auf dieses neue Portal für Administratoren mit einem #A0 zugegriffen werden, genauso wie für Benutzer mit Microsoft Defender für Office 365 Plan 1 und Plan 2. Für Kunden Exchange Online Protection oder MDO Plan 1 werden jedoch nur die Sicherheitsfeatures angezeigt, die ihre Abonnementlizenz unterstützt. Das Ziel des neuen Centers ist die Zentralisierung der Sicherheit.
 
 ## <a name="unified-investigations"></a>Vereinheitlichte Untersuchungen
 
-Durch das Zusammenziehen von Sicherheitscentern wird ein einzelner Ort für die Untersuchung von Sicherheitsvorfällen in Microsoft 365 erstellt. Ein hauptbeispiel ist **Incidents** under **Incidents & alerts** on the quick launch of the Microsoft 365 security center.
+Durch das Zusammenziehen von Sicherheitscentern wird ein einzelner Ort für die Untersuchung von Sicherheitsvorfällen in allen Microsoft 365. Ein hauptbeispiel ist **Incidents** under **Incidents & alerts** on the quick launch of the Microsoft 365 security center.
 
 :::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Die Seite Vorfälle im Microsoft 365 Security Center.":::
 
 Wenn Sie einen Vorfallnamen auswählen, wird eine Seite angezeigt, die den Wert von konvergierenden Sicherheitscentern veranschaulicht.
 
-:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Beispiel für die Zusammenfassungsseite für einen Vorfall im Microsoft 365 Security Center":::
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Beispiel für die Seite Zusammenfassung für einen Vorfall im Microsoft 365 Security Center":::
 
 <!--
 ![Example of the Summary page for an incident in the Microsoft 365 security center](../../media/converged-incident-info-3.png)
 --> 
 
-Am oberen Rand einer Vorfallseite werden die Registerkarten **Zusammenfassung** **,** Warnungen , **Geräte**, **Benutzer**, **Postfächer,** Untersuchungen **und** **Nachweise** angezeigt. Wählen Sie diese Registerkarten aus, um ausführlichere Informationen zu erhalten. Auf der  Registerkarte Benutzer werden beispielsweise Informationen für Benutzer aus konvergenten Arbeitsauslastungen (Microsoft Defender for Endpoint, Microsoft Defender for Identity und Microsoft Cloud App Security) und einer Reihe von Quellen wie lokalen Active Directory Domain Services (AD DS), Azure Active Directory (Azure AD) und Drittanbieteridentitätsanbietern angezeigt. Weitere Informationen finden Sie unter [Untersuchen von Benutzern](investigate-users.md).
+Am oberen Rand einer Vorfallseite werden die Registerkarten **Zusammenfassung** **,** Warnungen , **Geräte**, **Benutzer**, **Postfächer,** Untersuchungen **und** **Nachweise** angezeigt. Wählen Sie diese Registerkarten aus, um ausführlichere Informationen zu erhalten. Beispielsweise werden  auf der Registerkarte Benutzer Informationen für Benutzer aus konvergenten Arbeitsauslastungen (Microsoft Defender for Endpoint, Microsoft Defender for Identity und Microsoft Cloud App Security) sowie eine Reihe von Quellen wie lokale Active Directory Domain Services (AD DS), Azure Active Directory (Azure AD) und Drittanbieteridentitätsanbieter angezeigt. Weitere Informationen finden Sie unter [Untersuchen von Benutzern](investigate-users.md).
 
 Nehmen Sie sich die Zeit, um die Vorfälle in Ihrer Umgebung zu überprüfen, einen Drilldown auf diesen Registerkarten zu machen und zu erfahren, wie Sie auf die Informationen zugreifen können, die für Vorfälle für verschiedene Arten von Bedrohungen bereitgestellt werden.
 
@@ -157,7 +157,7 @@ Nachdem Sie sich durch den Inhalt geklickt haben, kann es hilfreich sein, für d
 > Neben dem Produktfilter werden aktuelle Themen, Ressourcentypen (von Videos bis Webinaren), Stufen der Vertrautheit oder Erfahrung mit Sicherheitsbereichen, Sicherheitsrollen und Produktfeatures aufgelistet.
 
 > [!TIP]
-> Es gibt viele weitere Lernmöglichkeiten in [Microsoft Learn](https://docs.microsoft.com/e/learn/). Sie finden Zertifizierungsschulungen wie [Kurs MS-500T02-A: Implementieren von Microsoft 365 Threat Protection](https://docs.microsoft.com/learn/certifications/courses/ms-500t02).
+> Es gibt viele weitere Lernmöglichkeiten in [Microsoft Learn](https://docs.microsoft.com/e/learn/). Sie finden Zertifizierungsschulungen wie [Course MS-500T02-A: Implementing Microsoft 365 Threat Protection](https://docs.microsoft.com/learn/certifications/courses/ms-500t02).
 
 ## <a name="send-us-your-feedback"></a>Feedback senden
 

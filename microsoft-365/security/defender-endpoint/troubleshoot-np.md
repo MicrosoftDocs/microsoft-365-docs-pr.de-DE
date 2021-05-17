@@ -51,7 +51,7 @@ Es gibt vier Schritte zur Problembehandlung:
 Der Netzwerkschutz funktioniert nur auf Geräten mit den folgenden Bedingungen:
 
 >[!div class="checklist"]
-> - Auf Endpunkten wird Windows 10 Pro oder Enterprise Edition, Version 1709 oder höher, ausgeführt.
+> - Endpunkte werden Windows 10 Pro oder Enterprise Version 1709 oder höher ausgeführt.
 > - Endpunkte verwenden Microsoft Defender Antivirus als einzige Antivirenschutz-App. [Erfahren Sie, was geschieht, wenn Sie eine Nicht-Microsoft-Antivirenlösung verwenden.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 > - [Echtzeitschutz](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus) ist aktiviert.
 > - [Der in der Cloud zugestellte Schutz](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) ist aktiviert.
@@ -79,7 +79,7 @@ Sie können den Netzwerkschutz im Überwachungsmodus aktivieren und dann eine We
 
 ## <a name="report-a-false-positive-or-false-negative"></a>Melden eines falsch positiven oder falsch negativen Werts
 
-Wenn Sie das Feature mit der Demowebsite und dem Überwachungsmodus getestet haben und der Netzwerkschutz an vorkonfigurierten Szenarien arbeitet, aber für eine bestimmte Verbindung nicht wie erwartet funktioniert, verwenden Sie das webbasierte Übermittlungsformular [für Windows Defender Security Intelligence,](https://www.microsoft.com/wdsi/filesubmission) um ein falsch negatives oder falsch positives Ergebnis für den Netzwerkschutz zu melden. Mit einem E5-Abonnement können Sie auch einen Link zu allen [zugeordneten Warnungen bereitstellen.](alerts-queue.md)
+Wenn Sie das Feature mit der Demowebsite und dem Überwachungsmodus getestet haben und der Netzwerkschutz an vorkonfigurierten Szenarien arbeitet, aber für eine bestimmte Verbindung nicht wie erwartet funktioniert, verwenden Sie das [webbasierte Übermittlungsformular für Windows Defender Security Intelligence,](https://www.microsoft.com/wdsi/filesubmission) um ein falsch negatives oder falsch positives Ergebnis für den Netzwerkschutz zu melden. Mit einem E5-Abonnement können Sie auch einen Link zu allen [zugeordneten Warnungen bereitstellen.](alerts-queue.md)
 
 Weitere [Informationen finden Sie unter Address false positives/negatives in Microsoft Defender for Endpoint](defender-endpoint-false-positives-negatives.md).
 
@@ -120,10 +120,10 @@ reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP 
 reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
 ```
 
-Sie können den Registrierungsschlüssel mithilfe von PowerShell, Microsoft Endpoint Manager oder Gruppenrichtlinien konfigurieren. Hier sind einige Ressourcen, die Ihnen helfen:
+Sie können den Registrierungsschlüssel mithilfe von PowerShell, Microsoft Endpoint Manager oder Gruppenrichtlinie konfigurieren. Hier sind einige Ressourcen, die Ihnen helfen:
 - [Arbeiten mit Registrierungsschlüsseln](/powershell/scripting/samples/working-with-registry-keys)
 - [Konfigurieren von benutzerdefinierten Clienteinstellungen für Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
-- [Verwenden von Gruppenrichtlinieneinstellungen zum Verwalten von Endpunktschutz](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
+- [Verwenden von Gruppenrichtlinieneinstellungen zum Verwalten von Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
 
 ## <a name="see-also"></a>Siehe auch
 

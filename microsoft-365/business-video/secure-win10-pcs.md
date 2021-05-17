@@ -1,5 +1,5 @@
 ---
-title: Sichern Ihrer Windows 10-PCs
+title: Sichern Ihrer Windows 10 PCs
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Windows 10-Schutzrichtlinien mit Microsoft 365 Business Premium einrichten.
+description: Erfahren Sie, wie Sie Windows 10 Schutzrichtlinien mit Microsoft 365 Business Premium.
 ms.openlocfilehash: a7049f96ecba317bd58fee9f9dc6b7e124f5f9d2
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -33,14 +33,14 @@ ms.locfileid: "51580450"
  
 ## <a name="try-it"></a>Probieren Sie es aus!  
 
-Führen Sie nach dem Einrichten des Geräteschutzes in Microsoft 365 Business die folgenden Schritte aus, um Ihre Windows 10-Computer zu schützen.
+Nachdem Sie den Geräteschutz in Microsoft 365 Business eingerichtet haben, führen Sie die folgenden Schritte aus, um Ihre Windows 10 zu schützen.
 
-1. Wählen Sie im Microsoft 365 Admin Center **Setup aus.**
-2. Wählen **Sie unter Sichern Ihrer Windows-Computer** die Option Ansicht **aus.**
-3. Überprüfen Sie die Informationen auf der Seite  **Windows 10-Computer sichern,**  damit Sie die Richtlinien und ihre Auswirkungen auf Ihre Benutzer verstehen.
+1. Wählen Sie im Microsoft 365 Admin Center Setup **aus.**
+2. Wählen **Sie unter Windows Computer sichern** die Option Ansicht **aus.**
+3. Überprüfen Sie die Informationen auf der Seite Windows 10 **computersichern,** damit Sie die Richtlinien und ihre Auswirkungen auf Ihre Benutzer verstehen.
 4. Wählen **Sie Erste Schritte aus.**
-5. Überprüfen Sie  **im Windows 10-Einstellungsbereich**  die Optionen, und passen Sie sie bei Bedarf an. Zeigen Sie auf die QuickInfo, um mehr über eine Richtlinie zu erfahren.
-6. Unter  **Für wen sollte die Richtlinie gelten?** , wählen Sie aus, ob Ihre Auswahl auf alle Personen in Ihrer Organisation oder auf bestimmte Sicherheitsgruppen angewendet wird.
+5. Überprüfen Sie **Windows 10** Optionen, und passen Sie sie bei Bedarf an. Zeigen Sie auf die QuickInfo, um mehr über eine Richtlinie zu erfahren.
+6. Unter **Wer sollte die Richtlinie gelten?** , wählen Sie aus, ob Ihre Auswahl auf alle Personen in Ihrer Organisation oder auf bestimmte Sicherheitsgruppen angewendet wird.
 7. Wählen **Sie Änderungen speichern aus.**
 
-Microsoft 365 Business hilft ihnen nun, Ihre Windows 10-Computer zu schützen.
+Microsoft 365 Business hilft nun, Ihre Computer Windows 10 schützen.

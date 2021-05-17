@@ -35,7 +35,7 @@ ms.locfileid: "51935821"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Die Tabelle im Schema der erweiterten Suche enthält Informationen zu Benutzerkonten, die von verschiedenen `IdentityInfo` Diensten, einschließlich Azure Active Directory, [](advanced-hunting-overview.md) erhalten wurden. Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
+Die Tabelle im Schema der erweiterten Suche enthält Informationen zu Benutzerkonten, die von verschiedenen Diensten, einschließlich `IdentityInfo` Azure Active Directory. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
 >[!NOTE]
 >Diese Tabelle wurde von `AccountInfo` umbenannt. Während der Umbenennung werden alle im Portal gespeicherten Abfragen automatisch aktualisiert. Überprüfen Sie Abfragen, die Sie an anderer Stelle gespeichert haben.
@@ -59,7 +59,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `SipProxyAddress` | Zeichenfolge | Voice over IP (VOIP) Session Initiation Protocol (SIP)-Adresse des Kontos |
 | `City` | Zeichenfolge | Ort, in dem sich der Kontobenutzer befindet |
 | `Country` | Zeichenfolge | Land/Region, in dem sich der Kontobenutzer befindet |
-| `IsAccountEnabled` | Boolescher Wert | Gibt an, ob das Konto aktiviert ist oder nicht |
+| `IsAccountEnabled` | boolean | Gibt an, ob das Konto aktiviert ist oder nicht |
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)

@@ -26,7 +26,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 21e5551f-fa35-4f13-9418-f80d668b6a2b
-description: Erfahren Sie mehr über das Konfigurieren der Einstellungen der Standardgeräterichtlinie, die jedes Windows 10-Gerät bei der Anmeldung bei ihrem Arbeits- oder Schulkonto erhält.
+description: Erfahren Sie mehr über das Konfigurieren der Einstellungen der Standardgeräterichtlinie, die jedes Windows 10 gerät erhält, wenn es sich bei ihrem Arbeits- oder Schulkonto einschreibt.
 ms.openlocfilehash: 86db1c152f9f6ac1fe6093b4a55a74b69fbd8b0f
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -38,7 +38,7 @@ ms.locfileid: "51579972"
 
 Dieser Artikel gilt für Microsoft 365 Business Premium.
 
-[] Die Einstellungen, die Sie hier konfigurieren, sind Teil der standardmäßigen Geräterichtlinie für Windows 10. Alle Benutzer, die ein Windows 10-Gerät verbinden, einschließlich mobiler Geräte und PCs, indem sie sich mit ihrem Arbeitskonto anmelden, erhalten diese Einstellungen automatisch. Wir empfehlen, während des Setups die Standardrichtlinie zu übernehmen und später Richtlinien für bestimmte Benutzergruppen hinzuzufügen.
+[] Die Einstellungen, die Sie hier konfigurieren, sind Teil der standardmäßigen Geräterichtlinie für Windows 10. Alle Benutzer, die ein Windows 10, einschließlich mobiler Geräte und PCs, verbinden, indem sie sich mit ihrem Arbeitskonto anmelden, erhalten diese Einstellungen automatisch. Wir empfehlen, während des Setups die Standardrichtlinie zu übernehmen und später Richtlinien für bestimmte Benutzergruppen hinzuzufügen.
   
 ## <a name="settings-to-secure-windows-10-devices"></a>Einstellungen zum Absichern von Windows 10-Geräten
 

@@ -1,7 +1,7 @@
 ---
-title: Sicherheitsrisiken in meiner Organisation – Bedrohungs- und Sicherheitsrisikoverwaltung
-description: Listet die häufigen Sicherheitsrisiken und Risikorisiken (CVE)-ID von Schwachstellen auf, die in der in Ihrer Organisation ausgeführten Software gefunden wurden. Ermittelt von der Microsoft Defender for Endpoint-Bedrohungs- und Sicherheitsrisikoverwaltungsfunktion.
-keywords: Microsoft Defender for Endpoint threat & vulnerability management, threat and vulnerability management, Microsoft Defender for Endpoint tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm
+title: Sicherheitsrisiken in meiner Organisation – Bedrohungs- und Sicherheitsrisikomanagement
+description: Listet die häufigen Sicherheitsrisiken und Risikorisiken (CVE)-ID von Schwachstellen auf, die in der in Ihrer Organisation ausgeführten Software gefunden wurden. Wird von der Microsoft Defender for Endpoint-Bedrohungs- und Sicherheitsrisikomanagement ermittelt.
+keywords: Microsoft Defender for Endpoint threat & Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement, Microsoft Defender for Endpoint tvm weaknesses page, finding weaknesses through tvm, tvm vulnerability list, vulnerability details in tvm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,23 +25,23 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933073"
 ---
-# <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Sicherheitsrisiken in meiner Organisation – Bedrohungs- und Sicherheitsrisikoverwaltung
+# <a name="vulnerabilities-in-my-organization---threat-and-vulnerability-management"></a>Sicherheitsrisiken in meiner Organisation – Bedrohungs- und Sicherheitsrisikomanagement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Bedrohungs- und Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md)
+- [Bedrohung und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Die Bedrohungs- und Sicherheitsrisikoverwaltung verwendet dieselben Signale im Endpunktschutz von Defender for Endpoint, um Sicherheitsrisiken zu überprüfen und zu erkennen.
+Bedrohungen und Sicherheitsrisikomanagement verwenden dieselben Signale im Endpunktschutz von Defender for Endpoint, um Sicherheitsrisiken zu überprüfen und zu erkennen.
 
 Auf **der Seite Schwächen** werden die Softwarerisiken aufgeführt, für die Ihre Geräte verfügbar sind, indem Sie die ID für häufige Sicherheitsrisiken und -risiken (Common Vulnerabilities and Exposures, CVE) auflisten. Sie können auch den Schweregrad, die Bewertung des Allgemeinen Bewertungssystems für Sicherheitslücken (Common Vulnerability Scoring System, CVSS), die Verbreitung in Ihrer Organisation, die entsprechende Verletzung, Bedrohungseinblicke und vieles mehr anzeigen.
 
 >[!NOTE]
->Wenn einer Sicherheitslücke keine offizielle CVE-ID zugewiesen ist, wird der Sicherheitsrisikoname von der Bedrohungs- und Sicherheitsrisikoverwaltung zugewiesen.
+>Wenn einer Sicherheitslücke keine offizielle CVE-ID zugewiesen ist, wird der Sicherheitsrisikoname von der Bedrohungs- und Sicherheitsrisikomanagement.
 
 >[!TIP]
 >Informationen zu E-Mails zu neuen Sicherheitsrisikoereignissen finden Sie unter [Configure vulnerability email notifications in Microsoft Defender for Endpoint](configure-vulnerability-email-notifications.md)
@@ -50,12 +50,12 @@ Auf **der Seite Schwächen** werden die Softwarerisiken aufgeführt, für die Ih
 
 Greifen Sie auf die Seite Schwächen auf verschiedene Arten zu:
 
-- Auswählen **von Schwächen** im Navigationsmenü zur Bedrohungs- und Sicherheitsrisikoverwaltung im Microsoft Defender Security [Center](portal-overview.md)
+- Auswählen **von Schwächen** im Bedrohungs- und Sicherheitsrisikomanagement Navigationsmenü in der [Microsoft Defender Security Center](portal-overview.md)
 - Globale Suche
 
 ### <a name="navigation-menu"></a>Navigationsmenü
 
-Wechseln Sie zum Navigationsmenü zur Bedrohungs- und Sicherheitsrisikoverwaltung, und wählen Sie **Schwächen** aus, um die Liste der CVEs zu öffnen.
+Wechseln Sie zum Bedrohungs- und Sicherheitsrisikomanagement Navigationsmenü, und wählen Sie **Schwächen aus,** um die Liste der CVEs zu öffnen.
 
 ### <a name="vulnerabilities-in-global-search"></a>Sicherheitsrisiken bei der globalen Suche
 
@@ -97,7 +97,7 @@ Wenn Sie einen CVE auswählen, wird ein Flyoutpanel mit weiteren Informationen w
 
 ### <a name="software-that-isnt-supported"></a>Software, die nicht unterstützt wird
 
-CVEs für Software, die derzeit nicht von bedrohungsbedrohungen unterstützt & auf der Seite Schwächen weiterhin vorhanden. Da die Software nicht unterstützt wird, sind nur begrenzte Daten verfügbar.
+CVEs für Software, die derzeit nicht von bedrohungsbedrohungen unterstützt & Sicherheitsrisikomanagement weiterhin auf der Seite Schwächen vorhanden. Da die Software nicht unterstützt wird, sind nur begrenzte Daten verfügbar.
 
 Verfügbar gemachte Geräteinformationen sind für CVEs mit nicht unterstützter Software nicht verfügbar. Filtern Sie nach nicht unterstützter Software, indem Sie im Abschnitt "Verfügbar gemachte Geräte" die Option "Nicht verfügbar" auswählen.
 
@@ -107,7 +107,7 @@ Verfügbar gemachte Geräteinformationen sind für CVEs mit nicht unterstützter
 
 ### <a name="top-vulnerable-software-in-the-dashboard"></a>Besonders anfällige Software im Dashboard
 
-1. Wechseln Sie zum [Dashboard für die Verwaltung](tvm-dashboard-insights.md) von Bedrohungen und Sicherheitslücken, und scrollen Sie zum Widget **"Besonders anfällige Software".** Sie sehen die Anzahl der Sicherheitsrisiken, die in jeder Software gefunden werden, sowie Bedrohungsinformationen und eine hohe Ansicht der Geräteexposition im Laufe der Zeit.
+1. Wechseln Sie zum [Bedrohungs- und Sicherheitsrisikomanagement Dashboard,](tvm-dashboard-insights.md) und führen Sie einen Bildlauf zum **Widget "Besonders anfällige Software"** aus. Sie sehen die Anzahl der Sicherheitsrisiken, die in jeder Software gefunden werden, sowie Bedrohungsinformationen und eine hohe Ansicht der Geräteexposition im Laufe der Zeit.
 
     ![Top vulnerable software card with four columns: software, weaknesses, threats, exposed devices.](images/tvm-top-vulnerable-software500.png)
 
@@ -115,13 +115,13 @@ Verfügbar gemachte Geräteinformationen sind für CVEs mit nicht unterstützter
 3. Wählen Sie die **Registerkarte Gefundene Sicherheitsrisiken** aus.
 4. Wählen Sie die Sicherheitslücke aus, die Sie untersuchen möchten, um weitere Informationen zu Sicherheitsrisikodetails zu erhalten.
 
-    ![Übersicht über Windows Server 2019.](images/windows-server-drilldown.png)
+    ![Windows Übersicht über Server 2019.](images/windows-server-drilldown.png)
 
 ### <a name="discover-vulnerabilities-in-the-device-page"></a>Entdecken von Sicherheitsrisiken auf der Geräteseite
 
 Anzeigen verwandter Schwachstelleninformationen auf der Geräteseite.
 
-1. Wechseln Sie zur Navigationsleiste microsoft Defender Security Center, und wählen Sie dann das Gerätesymbol aus. Die **Seite Geräteliste** wird geöffnet.
+1. Wechseln Sie zur Microsoft Defender Security Center Navigationsleiste, und wählen Sie dann das Gerätesymbol aus. Die **Seite Geräteliste** wird geöffnet.
 2. Wählen Sie **auf der Seite** Geräteliste den Gerätenamen aus, den Sie untersuchen möchten.
 
     ![Geräteliste mit ausgewähltem Gerät, das untersucht werden soll.](images/tvm_machinetoinvestigate.png)
@@ -137,7 +137,7 @@ Anzeigen verwandter Schwachstelleninformationen auf der Geräteseite.
 
 Ähnlich wie der Softwarebeweis zeigen wir nun die Erkennungslogik an, die wir auf einem Gerät angewendet haben, um zu erkennen, dass es anfällig ist. Der neue Abschnitt heißt "Erkennungslogik" (in allen erkannten Sicherheitslücken auf der Geräteseite) und zeigt die Erkennungslogik und -quelle.
 
-Die Kategorie "Betriebssystemfeature" wird auch in relevanten Szenarien angezeigt. Ein CVE würde sich nur dann auf Geräte auswirken, auf die ein anfälliges Betriebssystem ausgeführt wird, wenn eine bestimmte Betriebssystemkomponente aktiviert ist. Angenommen, Windows Server 2019 hat eine Sicherheitslücke in seiner DNS-Komponente. Mit dieser neuen Funktion fügen wir diesen CVE nur an die Windows Server 2019-Geräte an, deren DNS-Funktion im Betriebssystem aktiviert ist.
+Die Kategorie "Betriebssystemfeature" wird auch in relevanten Szenarien angezeigt. Ein CVE würde sich nur dann auf Geräte auswirken, auf die ein anfälliges Betriebssystem ausgeführt wird, wenn eine bestimmte Betriebssystemkomponente aktiviert ist. Angenommen, Windows Server 2019 eine Sicherheitslücke in seiner DNS-Komponente hat. Mit dieser neuen Funktion fügen wir diesen CVE nur an die Windows Server 2019-Geräte an, deren DNS-Funktion in ihrem Betriebssystem aktiviert ist.
 
 ![Beispiel für die Erkennungslogik, in dem die auf dem Gerät und den KBs erkannte Software aufgeführt wird.](images/tvm-cve-detection-logic.png)
 
@@ -148,11 +148,11 @@ Melden Sie ein falsch positives Ergebnis, wenn vage, ungenaue oder unvollständi
 1. Öffnen Sie den CVE auf der Seite Schwächen.
 2. Wählen **Sie Ungenauigkeit melden aus,** und ein Flyoutbereich wird geöffnet.
 3. Wählen Sie im Dropdownmenü die Kategorie Ungenauigkeit aus, und geben Sie Ihre E-Mail-Adresse und Ungenauigkeitsdetails ein.
-4. Wählen Sie **Senden** aus. Ihr Feedback wird sofort an die Experten für die Bedrohungs- und Sicherheitsrisikoverwaltung gesendet.
+4. Wählen Sie **Senden** aus. Ihr Feedback wird sofort an die Bedrohungs- und Sicherheitsrisikomanagement gesendet.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Übersicht über die Verwaltung von Bedrohungen und Sicherheitslücken](next-gen-threat-and-vuln-mgt.md)
+- [Übersicht über Bedrohungen Sicherheitsrisikomanagement Bedrohungen](next-gen-threat-and-vuln-mgt.md)
 - [Sicherheitsempfehlungen](tvm-security-recommendation.md)
 - [Softwarebestand](tvm-software-inventory.md)
 - [Dashboard-Insights](tvm-dashboard-insights.md)

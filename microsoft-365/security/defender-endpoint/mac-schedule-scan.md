@@ -102,6 +102,6 @@ Sie können einen Überprüfungszeitplan mit dem *gestarteten Daemon* auf einem 
 
 ## <a name="schedule-a-scan-with-intune"></a>Planen einer Überprüfung mit Intune
 
-Sie können Scans auch mit Microsoft Intune planen. Das [runMDATPQuickScan.sh,](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) das unter [Scripts for Microsoft Defender for Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) verfügbar ist, bleibt erhalten, wenn das Gerät aus dem Ruhezustand fortgesetzt wird. 
+Sie können auch Scans mit Microsoft Intune. Das [runMDATPQuickScan.sh,](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP#runmdatpquickscansh) das unter [Scripts for Microsoft Defender for Endpoint](https://github.com/microsoft/shell-intune-samples/tree/master/Misc/MDATP) verfügbar ist, bleibt erhalten, wenn das Gerät aus dem Ruhezustand fortgesetzt wird. 
 
 Ausführliche Anweisungen zur Verwendung dieses Skripts in Ihrem Unternehmen finden Sie unter Verwenden von Shellskripts auf [macOS-Geräten](https://docs.microsoft.com/mem/intune/apps/macos-shell-scripts) in Intune.

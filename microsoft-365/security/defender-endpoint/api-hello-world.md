@@ -47,13 +47,13 @@ Es dauert nur 5 Minuten in zwei Schritten:
 - Verwenden von Beispielen: Erfordert nur kopieren/einfügen eines kurzen PowerShell-Skripts
 
 ### <a name="do-i-need-a-permission-to-connect"></a>Benötigen Sie eine Berechtigung zum Herstellen einer Verbindung?
-Für die Phase der Anwendungsregistrierung müssen Sie über eine **globale Administratorrolle** in Ihrem Azure Active Directory (Azure AD)-Mandanten verfügen.
+Für die Anwendungsregistrierungsphase müssen  Sie eine globale Administratorrolle in Ihrem Azure Active Directory (Azure AD) haben.
 
-### <a name="step-1---create-an-app-in-azure-active-directory"></a>Schritt 1 : Erstellen einer App in Azure Active Directory
+### <a name="step-1---create-an-app-in-azure-active-directory"></a>Schritt 1 – Erstellen einer App in Azure Active Directory
 
 1. Melden Sie sich mit Ihrem globalen **Administrator bei** [Azure](https://portal.azure.com) an.
 
-2. Navigieren Sie zu **Azure Active Directory**  >  **App-Registrierungen** Neue  >  **Registrierung**. 
+2. Navigieren Sie zu **Azure Active Directory**  >  **App-Registrierungen**  >  **Neue Registrierung**. 
 
    ![Abbildung von Microsoft Azure und Navigation zur Anwendungsregistrierung](images/atp-azure-new-app2.png)
 

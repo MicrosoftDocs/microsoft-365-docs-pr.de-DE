@@ -32,7 +32,7 @@ ms.locfileid: "51580354"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 
-Sie können die Zahlungsmethode für Ihr Microsoft 365 Business-Abonnement ganz einfach aktualisieren. Sie können Details wie die verwendete Kreditkarte, den Namen oder die Adresse ändern.
+Sie können die Zahlungsmethode für Ihr Abonnement Microsoft 365 Business aktualisieren. Sie können Details wie die verwendete Kreditkarte, den Namen oder die Adresse ändern.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 

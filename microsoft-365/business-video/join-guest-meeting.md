@@ -1,5 +1,5 @@
 ---
-title: Teilnehmen an einer Microsoft Teams-Besprechung mit Gästen
+title: Teilnehmen an Microsoft Teams Besprechung mit Gästen
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie an einer Teams-Besprechung mit Gästen teilnehmen.
+description: Erfahren Sie, wie Sie an einer Teams mit Gästen teilnehmen.
 ms.openlocfilehash: 781e1aa242270588ba50a025ca0dd71c06354ad0
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -35,11 +35,11 @@ Mit Microsoft Teams können Sie problemlos an Besprechungen mit internen und ext
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Wählen Sie in Microsoft Teams **Kalender** aus, und suchen Sie Nach Ihrer Besprechung.
+1. Wählen Microsoft Teams **Kalender** aus, und suchen Sie Ihre Besprechung.
 1. Wählen **Sie Beitreten** aus, entscheiden Sie, ob Kamera und Mikrofon ein- oder ausgeschaltet werden soll, und wählen Sie Jetzt beitreten **aus.**
-1. Wenn Sie ein externer Gast sind, öffnen Sie die E-Mail, die Sie über die Besprechung erhalten haben, und wählen **Sie Microsoft Teams-Besprechung beitreten aus.**
+1. Wenn Sie ein externer Gast sind, öffnen Sie die E-Mail, die Sie über die Besprechung erhalten haben, und wählen Sie Microsoft Teams **Besprechung beitreten aus.**
 
     Wenn Sie die App nicht herunterladen möchten, wählen Sie stattdessen **Im Web beitreten** aus.
 1. Geben Sie Ihren Namen ein, und wählen **Sie Jetzt beitreten aus.**
-1. Sobald alle Benutzer angekommen sind, können Sie Ihre Besprechung starten, indem Sie Ihren Desktop, einen Monitor oder eine App wie PowerPoint freigeben.
+1. Sobald alle Benutzer angekommen sind, können Sie Ihre Besprechung starten, indem Sie Ihren Desktop, einen Monitor oder eine App wie PowerPoint.
 1. Wenn die Besprechung beendet ist, wählen Sie **Aufhängen aus.**

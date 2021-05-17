@@ -1,7 +1,7 @@
 ---
-title: Zusammenfassung ihrer Microsoft 365 Defender-Pilotprojektergebnisse
-description: Schließen Sie Ihr Microsoft 365 Defender-Pilotprojekt ab, indem Sie Ihre Scorecard abschließen, Ihre Berichtsergebnisse analysieren und entscheiden, wie Sie vorankommen.
-keywords: Microsoft 365 Defender-Pilot, entscheiden Sie, was nach dem Microsoft 365 Defender-Pilotprojekt als Nächstes zu tun ist, was nach der Auswertung von Microsoft 365 Defender in der Produktion, dem Übergang von Microsoft 365 Defender-Piloten zur Bereitstellung, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Geräte, Gerät, Identität, Benutzer, Daten, Anwendungen, Vorfälle, automatisierte Untersuchung und Behebung, erweiterte Suche
+title: Zusammenfassung der Ergebnisse Microsoft 365 Defender-Projekts
+description: Schließen Sie ihr Microsoft 365 Defender-Projekt ab, indem Sie Ihre Scorecard abschließen, Ihre Berichtsergebnisse analysieren und entscheiden, wie sie vorankommen.
+keywords: 'Microsoft 365 Defender-Pilot: Entscheiden Sie nach dem Pilotprojekt Microsoft 365 Defender, was nach der Auswertung von Microsoft 365 Defender in der Produktion, dem Übergang von Microsoft 365 Defender-Pilot zur Bereitstellung, Cybersicherheit, erweiterte dauerhafte Bedrohung, Unternehmenssicherheit, Geräte, Geräte, Identität, Benutzer, Daten, Anwendungen, Vorfälle, automatisierte Untersuchung und Behebung, erweiterte Suche'
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -28,7 +28,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51932869"
 ---
-# <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>Schließen und Zusammenfassen Ihres Microsoft 365 Defender-Pilotprojekts  
+# <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>Schließen und Zusammenfassen ihres Microsoft 365 Defender-Pilot  
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -61,7 +61,7 @@ Wir hoffen, dass Ihnen diese Simulation spaßt. Beginnen Sie mit der Implementie
 
 ## <a name="next-step"></a>Nächster Schritt
 Weitere Informationen zu den Microsoft 365 Defender-Säulen finden Sie in den folgenden interaktiven Anleitungen:
-- [Schützen Ihrer Organisation mit Microsoft Defender für Office 365](https://aka.ms/O365ATP-Interactive-Guide)
+- [Schützen Sie Ihre Organisation mit Microsoft Defender für Office 365](https://aka.ms/O365ATP-Interactive-Guide)
 - [Erkennen Sie verdächtige Aktivitäten und potenzielle Angriffe mit Microsoft Defender for Identity](https://aka.ms/AATP-Interactive-Guide)
-- [Erkennen von Bedrohungen und Verwalten von Warnungen mit Microsoft Cloud App Security](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
+- [Erkennen von Bedrohungen und Verwalten von Warnungen Microsoft Cloud App Security](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
 - [Untersuchen und Behebung von Bedrohungen mit Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)

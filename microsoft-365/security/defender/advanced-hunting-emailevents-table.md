@@ -1,7 +1,7 @@
 ---
 title: Tabelle "EmailEvents" im Schema "Erweiterte Suche"
-description: Informationen zu Ereignissen im Zusammenhang mit Microsoft 365-E-Mails in der EmailEvents-Tabelle des schemas für erweiterte Suche
-keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailEvents, network message id, sender, recipient, attachment id, attachment name, malware verdict, phishing verdict, attachment count, link count, url count
+description: Informationen zu Ereignissen, die Microsoft 365 E-Mails zugeordnet sind, finden Sie in der EmailEvents-Tabelle des erweiterten Jagdschemas.
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, EmailEvents, network message id, sender, recipient, attachment id, attachment name, malware verdict, phishing verdict, attachment count, link count, url count
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -35,7 +35,7 @@ ms.locfileid: "51935485"
 
 - Microsoft 365 Defender
 
-Die Tabelle im Schema der erweiterten Suche enthält Informationen zu Ereignissen im Zusammenhang mit der Verarbeitung von E-Mails `EmailEvents` in Microsoft Defender für Office 365. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
+Die Tabelle im Schema der erweiterten Suche enthält Informationen zu Ereignissen, die die Verarbeitung von E-Mails `EmailEvents` auf Microsoft Defender for Office 365. [](advanced-hunting-overview.md) Verwenden Sie dieser Referenz, um Abfragen zu erstellen, die Informationen aus dieser Tabelle zurückgeben.
 
 >[!TIP]
 > Ausführliche Informationen zu den von einer Tabelle unterstützten Ereignistypen ( Werte) finden Sie unter Verwendung der integrierten Schemareferenz, die `ActionType` im Security Center verfügbar ist.
@@ -45,7 +45,7 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | Spaltenname | Datentyp | Beschreibung |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Datum und Uhrzeit der Aufzeichnung des Ereignisses |
-| `NetworkMessageId` | string | Eindeutige ID für die von Microsoft 365 generierte E-Mail |
+| `NetworkMessageId` | string | Eindeutige ID für die E-Mail, generiert von Microsoft 365 |
 | `InternetMessageId` | string | Öffentlich sichtbarer Bezeichner für die E-Mail-Nachricht, die vom sendenden E-Mail-System festgelegt wird |
 | `SenderMailFromAddress` | string | Absender-E-Mail-Adresse in der Kopfzeile "MAIL FROM", auch als Umschlagabsender oder als Return-Path-Adresse bezeichnet |
 | `SenderFromAddress` | string | Für E-Mail-Empfänger im E-Mail-Client in der FROM-Kopfzeile angezeigte Absender-E-Mail-Adresse |

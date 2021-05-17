@@ -1,7 +1,7 @@
 ---
-title: Gefährdungsergebnis im Bedrohungs- und Sicherheitsrisikomanagement
-description: Die Bewertung der Bedrohungs- und Sicherheitsrisikoverwaltung spiegelt wider, wie anfällig Ihre Organisation für Cybersicherheitsbedrohungen ist.
-keywords: Exposure score, Microsoft Defender for Endpoint exposure score, Microsoft Defender for Endpoint tvm exposure score, organization exposure score, tvm organization exposure score, threat and vulnerability management, Microsoft Defender for Endpoint
+title: Belichtungsergebnis in Bedrohungs- und Sicherheitsrisikomanagement
+description: Die Bedrohungs- und Sicherheitsrisikomanagement Belichtungsergebnis spiegelt wider, wie anfällig Ihre Organisation für Cybersicherheitsbedrohungen ist.
+keywords: Exposure Score, Microsoft Defender for Endpoint Exposure Score, Microsoft Defender for Endpoint tvm exposure score, organization exposure score, tvm organization exposure score, Bedrohungs- und Sicherheitsrisikomanagement, Microsoft Defender for Endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,19 +25,19 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934105"
 ---
-# <a name="exposure-score---threat-and-vulnerability-management"></a>Belichtungsergebnis – Bedrohungs- und Sicherheitsrisikoverwaltung
+# <a name="exposure-score---threat-and-vulnerability-management"></a>Belichtungsergebnis – Bedrohungs- und Sicherheitsrisikomanagement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Bedrohungs- und Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md)
+- [Bedrohung und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Ihr Belichtungsergebnis wird im Dashboard zur Verwaltung von Bedrohungen und [Sicherheitsrisiken](tvm-dashboard-insights.md) im Microsoft Defender Security Center angezeigt. Es spiegelt wider, wie anfällig Ihre Organisation für Cybersicherheitsbedrohungen ist. Niedrige Belichtungszahl bedeutet, dass Ihre Geräte weniger anfällig für die Nutzung sind.
+Ihr Belichtungsergebnis wird im [Threat and Sicherheitsrisikomanagement Dashboard](tvm-dashboard-insights.md) des Microsoft Defender Security Center. Es spiegelt wider, wie anfällig Ihre Organisation für Cybersicherheitsbedrohungen ist. Niedrige Belichtungszahl bedeutet, dass Ihre Geräte weniger anfällig für die Nutzung sind.
 
 - Schnelles Verständnis und Identifizieren von hochrangigen Informationen zum Sicherheitsstatus in Ihrer Organisation.
 - Erkennen und reagieren Sie auf Bereiche, die eine Untersuchung oder Aktion erfordern, um den aktuellen Status zu verbessern.
@@ -59,11 +59,11 @@ Sie können die Probleme basierend auf [](tvm-security-recommendation.md) priori
 
 ## <a name="reduce-your-threat-and-vulnerability-exposure"></a>Verringern Der Bedrohungs- und Sicherheitsrisikorisiko
 
-Verringern Sie Ihre Bedrohungs- und Sicherheitsrisikorisiken, indem Sie [Sicherheitsempfehlungen enfeinen.](tvm-security-recommendation.md) Machen Sie die größten Auswirkungen auf Ihre Belichtungsergebnis, indem Sie die wichtigsten Sicherheitsempfehlungen, die im Dashboard für die Bedrohungs- und Sicherheitsrisikoverwaltung [angezeigt werden können, besennen.](tvm-dashboard-insights.md)
+Verringern Sie Ihre Bedrohungs- und Sicherheitsrisikorisiken, indem Sie [Sicherheitsempfehlungen enfeinen.](tvm-security-recommendation.md) Machen Sie die größten Auswirkungen auf Ihre Belichtungsergebnis, indem Sie die wichtigsten Sicherheitsempfehlungen, die im Bedrohungs- und Sicherheitsrisikomanagement angezeigt [werden können, beh nnen.](tvm-dashboard-insights.md)
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Übersicht über die Verwaltung von Bedrohungen und Sicherheitslücken](next-gen-threat-and-vuln-mgt.md)
+- [Übersicht über Bedrohungen Sicherheitsrisikomanagement Bedrohungen](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft-Sicherheitsbewertung für Geräte](tvm-microsoft-secure-score-devices.md)
 - [Sicherheitsempfehlungen](tvm-security-recommendation.md)
 - [Ablauf der Veranstaltung](threat-and-vuln-mgt-event-timeline.md)

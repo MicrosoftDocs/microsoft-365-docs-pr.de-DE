@@ -1,7 +1,7 @@
 ---
 title: Bedrohungs- und Sicherheitsrisikoverwaltung
 description: Diese neue Funktion verwendet einen spielveränderungsbasierten ansatz für die Ermittlung, Priorisierung und Behebung von Endpunktrisiken und Fehlkonfigurationen.
-keywords: Threat & Vulnerability Management, Threat and Vulnerability Management, Microsoft Defender for Endpoint TVM, Microsoft Defender for Endpoint-TVM, Vulnerability Management, Vulnerability Assessment, Threat and Vulnerability Scanning, Secure Configuration Assessment, Microsoft Defender for Endpoint, endpoint vulnerabilities, next generation
+keywords: Threat & Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement, Microsoft Defender for Endpoint TVM, Microsoft Defender for Endpoint-TVM, Sicherheitsrisikomanagement, Vulnerability Assessment, Threat and Vulnerability Scanning, Secure Configuration Assessment, Microsoft Defender for Endpoint, endpoint vulnerabilities, next generation
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -38,19 +38,19 @@ Die effektive Identifizierung, Bewertung und Behebung von Endpunktschwächen ist
 
 Entdecken Sie Sicherheitsrisiken und Falschkonfigurationen in Echtzeit mit Sensoren und ohne Agents oder regelmäßige Scans. Es priorisiert Sicherheitsrisiken basierend auf der Bedrohungslandschaft, Erkennungen in Ihrer Organisation, vertraulichen Informationen auf anfälligen Geräten und dem Geschäftlichen Kontext.
 
-Sehen Sie sich dieses Video an, um einen schnellen Überblick über die Verwaltung von Bedrohungen und Sicherheitslücken zu erhalten.
+Sehen Sie sich dieses Video an, um eine kurze Übersicht über Bedrohungs- und Sicherheitsrisikomanagement.
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4mLsn]
 
 ## <a name="bridging-the-workflow-gaps"></a>Überbrücken der Workflowlücken
 
-Die Bedrohungs- und Sicherheitsrisikoverwaltung ist in Echtzeit und cloudbasierter Sicherheitsanfälligkeiten aufgebaut. Es ist vollständig in den Microsoft-Endpunktsicherheitsstapel, das Microsoft Intelligent Security Graph und die Anwendungsanalyse-Wissensdatenbank integriert.  
+Bedrohungen und Sicherheitsrisikomanagement sind in Echtzeit und cloudbasierter Energie aufgebaut. Es ist vollständig in den Microsoft-Endpunktsicherheitsstapel, die Microsoft Intelligent Security-Graph und die Anwendungsanalyse-Wissensdatenbank integriert.  
 
-Das Sicherheitsrisikomanagement ist die erste Lösung in der Branche, um die Lücke zwischen Sicherheitsverwaltung und IT-Verwaltung während des Behebungsprozesses zu überbrücken. Erstellen Sie eine Sicherheitsaufgabe oder ein Ticket, indem Sie Microsoft Intune und Microsoft Endpoint Configuration Manager integrieren.
+Das Sicherheitsrisikomanagement ist die erste Lösung in der Branche, um die Lücke zwischen Sicherheitsverwaltung und IT-Verwaltung während des Behebungsprozesses zu überbrücken. Erstellen Sie eine Sicherheitsaufgabe oder ein Ticket, indem Sie Microsoft Intune und Microsoft Endpoint Configuration Manager.
 
 ### <a name="real-time-discovery"></a>Echtzeiterkennung
 
-Um Endpunktrisiken und Falschkonfigurationen zu ermitteln, verwendet das Bedrohungs- und Sicherheitsmanagement dieselben agentlosen integrierten Defender for Endpoint-Sensoren, um umständliche Netzwerkscans und den IT-Aufwand zu reduzieren.
+Um Endpunktrisiken und fehlkonfigurierte Konfigurationen zu ermitteln, verwendet Bedrohungs- und Sicherheitsrisikomanagement die gleichen agentlosen integrierten Defender for Endpoint-Sensoren, um umständliche Netzwerkscans und den IT-Aufwand zu reduzieren.
 
 Es bietet außerdem:
 
@@ -61,23 +61,23 @@ Es bietet außerdem:
 
 ### <a name="intelligence-driven-prioritization"></a>Intelligence-gesteuerte Priorisierung
 
-Das Bedrohungs- und Sicherheitsrisikomanagement hilft Kunden bei der Priorisierung und Fokussierung auf die Schwächen, die das dringendste und höchste Risiko für die Organisation darstellen. Es verbindet Sicherheitsempfehlungen mit dynamischem Bedrohungs- und Geschäftskontext:
+Bedrohungen und Sicherheitsrisikomanagement kunden dabei, die Schwachstellen zu priorisieren und zu konzentrieren, die das dringendste und höchste Risiko für die Organisation darstellen. Es verbindet Sicherheitsempfehlungen mit dynamischem Bedrohungs- und Geschäftskontext:
 
-- **Exposing emerging attacks in the wild** – Dynamically aligns the prioritization of security recommendations. Das Bedrohungs- und Sicherheitsrisikomanagement konzentriert sich auf Sicherheitsrisiken, die derzeit in wilden und neuen Bedrohungen ausgebeutet werden, die das höchste Risiko darstellen.
-- **Anheften** aktiver Sicherheitsverletzungen – Korreliert Bedrohungs- und Sicherheitsrisikoverwaltung und EDR-Erkenntnisse, um Sicherheitsrisiken zu priorisieren, die bei einer aktiven Verletzung innerhalb der Organisation ausgenutzt werden.
+- **Exposing emerging attacks in the wild** – Dynamically aligns the prioritization of security recommendations. Bedrohungen und Sicherheitsrisikomanagement sich auf Sicherheitsrisiken, die derzeit in wilden und neuen Bedrohungen ausgebeutet werden, die das höchste Risiko darstellen.
+- **Pinpointing active breachs** – Korreliert Bedrohungs- und Sicherheitsrisikomanagement und EDR, um Sicherheitsrisiken zu priorisieren, die in einer aktiven Verletzung innerhalb der Organisation ausgenutzt werden.
 - **Schützen von hochwertigen Ressourcen** – Identifizieren Sie die verfügbar gemachten Geräte mit geschäftskritischen Anwendungen, vertraulichen Daten oder hochwertigen Benutzern.
 
 ### <a name="seamless-remediation"></a>Nahtlose Behebung
 
-Das Management von Bedrohungen und Sicherheitsrisiken ermöglicht Es Sicherheitsadministratoren und IT-Administratoren, nahtlos zusammenzuarbeiten, um Probleme zu beheben.
+Bedrohungs- und Sicherheitsrisikomanagement ermöglicht Es Sicherheitsadministratoren und IT-Administratoren, nahtlos zusammenzuarbeiten, um Probleme zu beheben.
 
-- **An die IT gesendete** Korrekturanforderungen – Erstellen einer Behebungsaufgabe in Microsoft Intune aus einer bestimmten Sicherheitsempfehlung. Wir planen, diese Funktion auf andere IT-Sicherheitsverwaltungsplattformen zu erweitern.
+- **An die IT gesendete** Korrekturanforderungen – Erstellen einer Behebungsaufgabe in Microsoft Intune einer bestimmten Sicherheitsempfehlung. Wir planen, diese Funktion auf andere IT-Sicherheitsverwaltungsplattformen zu erweitern.
 - **Alternative Gegenmaßnahmen** – Erhalten Sie Einblicke in zusätzliche Gegenmaßnahmen, z. B. Konfigurationsänderungen, die das Risiko von Softwarerisiken verringern können.
 - **Echtzeitbehebungsstatus** – Überwachung des Status und Fortschritts von Korrekturaktivitäten in der gesamten Organisation in Echtzeit.
 
-## <a name="threat-and-vulnerability-management-walk-through"></a>Walk-Through zur Verwaltung von Bedrohungen und Sicherheitslücken
+## <a name="threat-and-vulnerability-management-walk-through"></a>Bedrohung und Sicherheitsrisikomanagement walk-through
 
-Sehen Sie sich dieses Video an, um ein umfassendes Exemplar des Bedrohungs- und Sicherheitsrisikomanagements zu sehen.
+Sehen Sie sich dieses Video an, um einen umfassenden Überblick über Bedrohungs- und Sicherheitsrisikomanagement.
 
 >[!VIDEO https://aka.ms/MDATP-TVM-Interactive-Guide]
 
@@ -94,7 +94,7 @@ Bereich | Beschreibung
 
 ## <a name="apis"></a>APIs
 
-Führen Sie API-Aufrufe im Zusammenhang mit der Bedrohungs- und Sicherheitsrisikoverwaltung aus, um Workflows zur Verwaltung von Sicherheitslücken zu automatisieren. Weitere Informationen finden Sie in diesem [Microsoft Tech Community-Blogbeitrag](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
+Führen Bedrohungs- und Sicherheitsrisikomanagement-bezogenen API-Aufrufe aus, um Sicherheitsrisikomanagement zu automatisieren. Weitere Informationen finden Sie in [diesem Microsoft Tech Community Blogbeitrag](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615).
 
 In den folgenden Artikeln finden Sie verwandte APIs:
 
@@ -109,5 +109,5 @@ In den folgenden Artikeln finden Sie verwandte APIs:
 ## <a name="see-also"></a>Siehe auch
 
 - [Unterstützte Betriebssysteme und Plattformen](tvm-supported-os.md)
-- [Dashboard zur Verwaltung von Bedrohungen und Sicherheitslücken](tvm-dashboard-insights.md)
+- [Bedrohung und Sicherheitsrisikomanagement Dashboard](tvm-dashboard-insights.md)
 - [BLOG: Das Microsoft Threat & Vulnerability Management hilft jetzt Tausenden von Kunden, Sicherheitsrisiken in Echtzeit zu erkennen, zu priorisieren und zu be behebung](https://www.microsoft.com/security/blog/2019/07/02/microsofts-threat-vulnerability-management-now-helps-thousands-of-customers-to-discover-prioritize-and-remediate-vulnerabilities-in-real-time/)

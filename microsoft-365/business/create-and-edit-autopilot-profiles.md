@@ -40,7 +40,7 @@ ms.locfileid: "51580252"
 
 Ein Profil gilt für ein Gerät oder eine Gerätegruppe.
   
-1. Wählen Sie im Microsoft 365 Admin Center **Geräte** \> **AutoPilot aus.**
+1. Wählen Sie Microsoft 365 Admin Center **Geräte** \> **AutoPilot aus.**
   
 2. Wählen Sie **auf der Seite AutoPilot** die **Registerkarte** Profile profil \> **erstellen aus.**
     

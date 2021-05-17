@@ -39,6 +39,6 @@ Tschechisch: Mon-Fri 8:00-18:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefon Nummer: 239 016 433
+Alternative Telefonnummer: 239 016 433
 
 Es gelten die Ortstarife.

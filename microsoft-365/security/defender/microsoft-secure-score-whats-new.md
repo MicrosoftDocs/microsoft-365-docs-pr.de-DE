@@ -1,6 +1,6 @@
 ---
 title: Neues in Microsoft Secure Score
-description: Beschreibt, welche neuen Änderungen an Microsoft Secure Score im Microsoft 365 Security Center vorgenommen wurden.
+description: Beschreibt, welche neuen Änderungen an Microsoft Secure Score im Microsoft 365 wurden.
 keywords: Microsoft Secure Score, Secure Score, Office 365 Secure Score, Microsoft Security Score, microsoft 365 Security Center
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -38,17 +38,17 @@ Microsoft Secure Score finden Sie im https://security.microsoft.com/securescore 
     
 ## <a name="february-2021"></a>Februar 2021
 
-### <a name="compatibility-with-graph-api"></a>Kompatibilität mit der Graph-API
+### <a name="compatibility-with-graph-api"></a>Kompatibilität mit Graph API
 
-Microsoft Secure Score-Empfehlungen, die über die Graph-API bereitgestellt werden, werden genauso aussehen und gewichtet wie die Empfehlungen, die derzeit im Microsoft 365 Security Center angezeigt werden.
+Microsoft Secure Score-Empfehlungen, die über die Graph-API übermittelt werden, werden genauso wie die Empfehlungen, die derzeit im Microsoft 365 werden, gewichtet.
 
 ## <a name="january-2021"></a>Januar 2021
 
-### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>Unsere erste Sicherheitsempfehlung für Microsoft Teams wurde hinzugefügt.
+### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>Unsere erste Sicherheitsempfehlung für Microsoft Teams
 
-Microsoft Teams-Kunden sehen "Einschränken der Teilnahme anonymer Benutzer an Besprechungen" als neue Verbesserungsaktion in Secure Score.
+Microsoft Teams Kunden sehen "Einschränken der Teilnahme anonymer Benutzer an Besprechungen" als neue Verbesserungsaktion in Secure Score.
 
-## <a name="december-2020"></a>Dezember 2020
+## <a name="december-2020"></a>Dezember 2020
 
 ### <a name="added-six-accounts-related-improvement-actions-for-microsoft-defender-for-endpoint"></a>Es wurden sechs kontenbezogene Verbesserungsmaßnahmen für Microsoft Defender for Endpoint hinzugefügt:
 
@@ -71,11 +71,11 @@ Die Möglichkeit, ServiceNow-Tickets über Secure Score zu erstellen, indem Sie 
 - Ändern des ausführbaren Pfads des Diensts zu einem gemeinsamen geschützten Speicherort
 - Ändern des Dienstkontos, um zwischengespeichertes Kennwort in der Windows-Registrierung zu vermeiden
 
-## <a name="october-2020"></a>Oktober 2020
+## <a name="october-2020"></a>Oktober 2020
 
 ### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Entfernen von Verbesserungsmaßnahmen im Zusammenhang mit Microsoft Defender for Endpoint
 
-- Festlegen der Microsoft Defender SmartScreen Windows Store-Webinhaltsprüfung auf Warnmodus
+- Festlegen Microsoft Defender SmartScreen Windows Store der Überprüfung von App-Webinhalten auf "Warnen"
 
 ## <a name="august-2020"></a>August 2020
 

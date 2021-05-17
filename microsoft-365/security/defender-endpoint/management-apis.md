@@ -80,7 +80,7 @@ Weitere Informationen finden Sie unter [Raw data streaming API](raw-data-export.
 
 
 ## <a name="siem-api"></a>SIEM-API
-Wenn Sie die Integration von Sicherheitsinformationen und Ereignisverwaltung (SIEM) aktivieren, können Sie Erkennungen aus Microsoft Defender Security Center mithilfe Ihrer SIEM-Lösung abrufen oder eine direkte Verbindung mit der REST-API für Erkennungen herstellen. Dadurch wird der Abschnitt MITM-Connectorzugriffsdetails mit vordefinierten Werten aktiviert, und eine Anwendung wird unter Ihrem Azure Active Directory (Azure AD)-Mandanten erstellt. Weitere Informationen finden Sie unter [SIEM-Integration](enable-siem-integration.md).
+Wenn Sie die Integration von Sicherheitsinformationen und Ereignisverwaltung (SECURITY Information and Event Management, SIEM) aktivieren, können Sie Erkennungen von Microsoft Defender Security Center mithilfe Ihrer SIEM-Lösung abrufen oder eine direkte Verbindung mit der REST-API für Erkennungen herstellen. Dadurch wird der Abschnitt MITM-Connectorzugriffsdetails mit vordefinierten Werten aktiviert, und eine Anwendung wird unter Ihrem Azure Active Directory (Azure AD) erstellt. Weitere Informationen finden Sie unter [SIEM-Integration](enable-siem-integration.md).
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Zugreifen auf die Microsoft Defender for Endpoint-APIs ](apis-intro.md)

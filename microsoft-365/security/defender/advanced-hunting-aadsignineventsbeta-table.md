@@ -1,6 +1,6 @@
 ---
 title: AADSignInEventsBeta-Tabelle im schema der erweiterten Suche
-description: Informationen zu Informationen zur Tabelle mit Azure Active Directory-Anmeldeereignissen des schemas für die erweiterte Suche
+description: Informationen zu Informationen, die Azure Active Directory Tabelle mit Anmeldeereignissen des schemas für erweiterte Suche zugeordnet sind
 keywords: Advanced Hunting, Threat Hunting, Cyber Threat Hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, file, IP address, device, machine, user, account, identity, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -34,12 +34,12 @@ ms.locfileid: "51932607"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> Die Tabelle befindet sich derzeit in der Betaversion und wird kurzfristig angeboten, damit Sie Azure `AADSignInEventsBeta` Active Directory (AAD)-Anmeldeereignisse durchsuchen können. Wir verschieben schließlich alle Anmeldeschemainformationen in die `IdentityLogonEvents` Tabelle.<br><br>
-> Kunden, die über die integrierte Microsoft Defender for Endpoint-Lösung von Azure Defender auf Microsoft 365 Defender zugreifen können, aber keine Lizenzen für Microsoft Defender for Office, Microsoft Defender for Identity oder Microsoft Cloud App Security besitzen, können dieses Schema nicht anzeigen. 
+> Die Tabelle befindet sich derzeit in der Betaversion und wird kurzfristig angeboten, damit Sie Azure Active Directory `AADSignInEventsBeta` (AAD)-Anmeldeereignisse nachsuchen können. Wir verschieben schließlich alle Anmeldeschemainformationen in die `IdentityLogonEvents` Tabelle.<br><br>
+> Kunden, die über die integrierte Microsoft Defender for Endpoint-Lösung von Azure Defender auf Microsoft 365 Defender zugreifen können, aber nicht über Lizenzen für Microsoft Defender für Office, Microsoft Defender for Identity oder Microsoft Cloud App Security verfügen, können dieses Schema nicht anzeigen. 
 
  
 
-Die Tabelle im Schema der erweiterten Suche `AADSignInEventsBeta` enthält Informationen zu interaktiven und nicht interaktiven Azure Active Directory-Anmeldungen. Erfahren Sie mehr über Anmeldungen in [Azure Active Directory-Anmeldeaktivitätsberichten – Vorschau](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
+Die Tabelle im Schema der erweiterten Suche enthält Informationen zu Azure Active Directory interaktiven und `AADSignInEventsBeta` nicht interaktiven Anmeldungen. Erfahren Sie mehr über Anmeldungen in [Azure Active Directory Anmeldeaktivitätsberichte - Vorschau](/azure/active-directory/reports-monitoring/concept-all-sign-ins).
 
 Verwenden Sie diese Referenz, um Abfragen zu erstellen, die Informationen aus der Tabelle zurückgeben.
 Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie unter [Referenz zur erweiterten Suche](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-reference).
@@ -61,7 +61,7 @@ Informationen zu anderen Tabellen im Schema „Erweiterte Suche“ finden Sie un
 | `AccountObjectId`                 | Zeichenfolge        | Eindeutige ID für das Konto in Azure AD                                                                                                                                       |
 | `AccountUpn`                      | Zeichenfolge        | Benutzerprinzipalname (UPN) des Kontos                                                                                                                                            |
 | `IsExternalUser`                  | int        | Gibt an, ob der angemeldete Benutzer extern ist. Mögliche Werte: -1 (nicht festgelegt), 0 (nicht extern), 1 (extern).                                                                   |
-| `IsGuestUser`                     | Boolescher Wert       | Gibt an, ob der angemeldete Benutzer ein Gast im Mandanten ist                                                                                                                  |
+| `IsGuestUser`                     | boolean       | Gibt an, ob der angemeldete Benutzer ein Gast im Mandanten ist                                                                                                                  |
 | `AlternateSignInName`             | Zeichenfolge        | On-premises user principal name (UPN) of the user signing in to Azure AD                                                                                                            |
 | `LastPasswordChangeTimestamp`     | Datum/Uhrzeit        | Datum und Uhrzeit, zu dem der benutzer, der sich zuletzt angemeldet hat, sein Kennwort geändert hat                                                                                                              |
 | `ResourceDisplayName`             | Zeichenfolge        | Anzeigename der Ressource, auf die zugegriffen wird                                                                                                                                               |

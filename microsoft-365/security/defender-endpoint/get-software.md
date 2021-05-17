@@ -1,7 +1,7 @@
 ---
 title: Software auflisten
 description: Ruft eine Liste des Softwarebestands ab
-keywords: apis, graph api, supported apis, get, list, file, information, software inventory, threat & vulnerability management api, Microsoft Defender for Endpoint tvm api
+keywords: apis, graph api, supported apis, get, list, file, information, software inventory, threat & Sicherheitsrisikomanagement api, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -52,7 +52,7 @@ GET /api/Software
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
+Authorization | String | Bearer {token}. **Erforderlich**.
 
 
 ## <a name="request-body"></a>Anforderungstext

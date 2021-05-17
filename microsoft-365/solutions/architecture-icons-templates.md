@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365-Architektur – Symbole und Vorlagen
-description: Symbole für die Verwendung in Diagrammen zum Erstellen von Architektur für Microsoft 365.
+title: Microsoft 365 architektursymbole und -vorlagen
+description: Symbole zum Erstellen von Architekturdiagrammen für Microsoft 365.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -17,34 +17,34 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 12/16/2020
 ms.locfileid: "49688776"
 ---
-# <a name="microsoft-365-architecture-icons-and-templates"></a>Microsoft 365-Architektur – Symbole und Vorlagen
+# <a name="microsoft-365-architecture-icons-and-templates"></a>Microsoft 365 architektursymbole und -vorlagen
 
-Die Unterstützung unserer Partner und Kunden bei der Planung und Konstruktion neuer Lösungen ist wichtig. Architekturdiagramme wie die in unserer Anleitung enthaltenen können dazu beitragen, Entwurfsentscheidungen und die Beziehungen zwischen Komponenten in einer Umgebung zu kommunizieren. Wir verwenden eine Reihe von Symbolen und Symbolen zusammen mit Visio-Vorlagen, um die von uns erstellten Architekturdiagramme zu erstellen, und stellen diese Tools bereit, um Ihnen beim Erstellen eines benutzerdefinierten Architekturdiagramms für Ihre nächste Lösung behilflich zu sein.
+Es ist wichtig, unseren Partnern und Kunden dabei zu helfen, neue Lösungen zu entwerfen und zu entwerfen. Architekturdiagramme wie die in unseren Anleitungen enthaltenen können dazu beitragen, Entwurfsentscheidungen und die Beziehungen zwischen Komponenten in einer Umgebung zu kommunizieren. Wir verwenden eine Reihe von Symbolen und Symbolen zusammen mit Visio-Vorlagen, um die von uns erstellten Architekturdiagramme zu erstellen, und stellen diese Tools hier bereit, um Ihnen beim Erstellen eines benutzerdefinierten Architekturdiagramms für Ihre nächste Lösung zu helfen.
 
 Sie können diese Symbole, Symbole und Vorlagen in Aktion in herunterladbaren Dateien sehen, die auf den folgenden Seiten verfügbar sind:
 
-- [Produktivitäts Abbildungen](productivity-illustrations.md)
+- [Produktivitätsabbildungen](productivity-illustrations.md)
 - [Microsoft Cloud-Architekturmodelle](cloud-architecture-models.md)
 
-## <a name="terms-and-download"></a>Begriffe und Download
+## <a name="terms-and-download"></a>Nutzungsbedingungen und Download
 
-Microsoft gestattet die Verwendung dieser Symbole in Architekturdiagrammen, Schulungsunterlagen oder Dokumentation. Sie dürfen die Symbole nur für die zulässige Verwendung kopieren, verteilen und anzeigen, es sei denn, die ausdrückliche Berechtigung wird von Microsoft erteilt. Microsoft reserves all other rights.
+Microsoft erlaubt die Verwendung dieser Symbole in Architekturdiagrammen, Schulungsmaterialien oder Dokumentationen. Sie können die Symbole nur für die zulässige Verwendung kopieren, verteilen und anzeigen, es sei denn, Microsoft hat eine explizite Genehmigung erteilt. Microsoft reserves all other rights.
 
-
- > [!div class="button"]
- > [Herunterladen von SVG-und PNG-Symbolen](https://go.microsoft.com/fwlink/?linkid=869455)
 
  > [!div class="button"]
- > [Herunterladen von Visio-Vorlagen und-Schablonen](https://go.microsoft.com/fwlink/?linkid=2056186)
+ > [Herunterladen von SVG- und PNG-Symbolen](https://go.microsoft.com/fwlink/?linkid=869455)
 
-## <a name="example-architecture-diagrams"></a>Beispielarchitektur Diagramme
+ > [!div class="button"]
+ > [Herunterladen Visio Vorlagen und Schablonen](https://go.microsoft.com/fwlink/?linkid=2056186)
+
+## <a name="example-architecture-diagrams"></a>Beispielarchitekturdiagramme
 
 Sie können diese Symbole und Vorlagen verwenden, um Diagramme wie die folgenden Beispiele zu erstellen:
 
-1. Beispiel für eine Sucharchitektur Diagramm für SharePoint:
+1. Beispieldiagramm für die Sucharchitektur für SharePoint:
 
-    ![Beispiel Sucharchitektur für SharePoint](../media/configure-search-for-multi-geo-image1-1.png)
+    ![Beispiel für die Sucharchitektur SharePoint](../media/configure-search-for-multi-geo-image1-1.png)
 
-2. Architekturdiagramm für den Microsoft Teams-Aufbewahrungs Lebenszyklus:
+2. Teams Architekturdiagramm für den Aufbewahrungslebenszyklus:
 
-    ![Aufbewahrungs Lebenszyklus für Teams](../media/TeamsRetentionLifecycle.png)
+    ![Teams Aufbewahrungslebenszyklus](../media/TeamsRetentionLifecycle.png)

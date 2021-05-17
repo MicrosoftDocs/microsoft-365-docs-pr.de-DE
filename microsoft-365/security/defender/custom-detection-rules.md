@@ -42,14 +42,14 @@ Benutzerdefinierte Erkennungsregeln sind Regeln, die Sie mit erweiterten Suchabf
 
 Zum Verwalten von benutzerdefinierten Erkennungen muss Ihnen eine der folgenden Rollen zugewiesen werden:
 
-- **Sicherheitsadministrator**– Benutzer mit dieser [Azure Active Directory-Rolle](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) können Sicherheitseinstellungen in Microsoft 365 Security Center und anderen Portalen und Diensten verwalten.
+- **Sicherheitsadministrator**– Benutzer mit [dieser Azure Active Directory können](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) Sicherheitseinstellungen in Microsoft 365 Security Center und anderen Portalen und Diensten verwalten.
 
-- **Sicherheitsoperator**– Benutzer mit dieser [Azure Active Directory-Rolle](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) können Warnungen verwalten und über globalen schreibgeschützten Zugriff auf sicherheitsrelevante Features verfügen, einschließlich aller Informationen im Microsoft 365 Security Center. Diese Rolle ist nur ausreichend, um benutzerdefinierte Erkennungen zu verwalten, wenn die rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) in Microsoft Defender for Endpoint deaktiviert ist. Wenn Sie rbAC konfiguriert haben, benötigen Sie auch die **Berechtigung** Sicherheitseinstellungen verwalten für Defender for Endpoint.
+- **Sicherheitsoperator**: Benutzer mit [dieser Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#security-administrator) können Warnungen verwalten und über globalen schreibgeschützten Zugriff auf sicherheitsbezogene Features verfügen, einschließlich aller Informationen in Microsoft 365 Security Center. Diese Rolle ist nur ausreichend, um benutzerdefinierte Erkennungen zu verwalten, wenn die rollenbasierte Zugriffssteuerung (Role-Based Access Control, RBAC) in Microsoft Defender for Endpoint deaktiviert ist. Wenn Sie rbAC konfiguriert haben, benötigen Sie auch die **Berechtigung** Sicherheitseinstellungen verwalten für Defender for Endpoint.
 
 Zum Verwalten der erforderlichen Berechtigungen kann **ein globaler Administrator:**
 
 - Weisen Sie **die Rolle des Sicherheitsadministrators** oder **Sicherheitsoperators** im [Microsoft 365 Admin Center](https://admin.microsoft.com/) unter **Roles** Security  >  **admin zu.**
-- Überprüfen Sie die RBAC-Einstellungen für Microsoft Defender for Endpoint im [Microsoft Defender Security Center](https://securitycenter.windows.com/) unter **Einstellungen**  >  **Berechtigungsrollen**  >  . Wählen Sie die entsprechende Rolle aus, um die **Berechtigung Sicherheitseinstellungen verwalten zu** erteilen.
+- Überprüfen Sie die RBAC-Einstellungen für Microsoft Defender for Endpoint in [Microsoft Defender Security Center](https://securitycenter.windows.com/) unter **Einstellungen**  >  **Permissions**  >  **Roles**. Wählen Sie die entsprechende Rolle aus, um die **Berechtigung Sicherheitseinstellungen verwalten zu** erteilen.
 
 > [!NOTE]
 > Zum Verwalten benutzerdefinierter Erkennungen  benötigen Sicherheitsoperatoren  die Berechtigung Sicherheitseinstellungen verwalten in Microsoft Defender for Endpoint, wenn rbAC aktiviert ist.
@@ -57,7 +57,7 @@ Zum Verwalten der erforderlichen Berechtigungen kann **ein globaler Administrato
 ## <a name="create-a-custom-detection-rule"></a>Erstellen einer benutzerdefinierten Erkennungsregel
 ### <a name="1-prepare-the-query"></a>1. Bereiten Sie die Abfrage vor.
 
-Wechseln Sie im Microsoft 365 Security Center zu **Erweiterte** Suche, und wählen Sie eine vorhandene Abfrage aus, oder erstellen Sie eine neue Abfrage. Wenn Sie eine neue Abfrage verwenden, führen Sie die Abfrage aus, um Fehler zu identifizieren und mögliche Ergebnisse zu verstehen.
+Wechseln Microsoft 365 Sicherheitscenter zu **Erweiterte** Suche, und wählen Sie eine vorhandene Abfrage aus, oder erstellen Sie eine neue Abfrage. Wenn Sie eine neue Abfrage verwenden, führen Sie die Abfrage aus, um Fehler zu identifizieren und mögliche Ergebnisse zu verstehen.
 
 >[!IMPORTANT]
 >Damit der Dienst nicht zu viele Warnungen zurücksent, ist jede Regel auf die Generierung von nur 100 Warnungen beschränkt, wenn sie ausgeführt wird. Bevor Sie eine Regel erstellen, optimieren Sie Ihre Abfrage, um Warnungen für normale, täglich ausgeführte Aktivitäten zu vermeiden.
@@ -145,7 +145,7 @@ Ihre benutzerdefinierte Erkennungsregel kann automatisch Aktionen auf Geräten, 
 Diese Aktionen werden auf Geräte in der `DeviceId` Spalte der Abfrageergebnisse angewendet:
 - **Gerät isolieren**– verwendet Microsoft Defender for Endpoint, um eine vollständige Netzwerkisolation anzuwenden, um zu verhindern, dass das Gerät eine Verbindung mit einer Anwendung oder einem Dienst herstellen kann. [Weitere Informationen zur Microsoft Defender for Endpoint-Computerisolation](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network)
 - **Untersuchungspaket sammeln**– Sammelt Geräteinformationen in einer ZIP-Datei. [Weitere Informationen zum Microsoft Defender for Endpoint-Untersuchungspaket](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#collect-investigation-package-from-devices)
-- **Antivirusscan ausführen**– führt eine vollständige Überprüfung Windows Defender Antivirusscan auf dem Gerät aus.
+- **Ausführen der Antivirenscan**– führt eine vollständige Windows Defender Antivirus auf dem Gerät aus.
 - **Initiieren der** Untersuchung – initiiert eine [automatisierte Untersuchung](m365d-autoir.md) auf dem Gerät
 - **Einschränken der App-Ausführung**– legt Einschränkungen auf dem Gerät fest, damit nur Dateien ausgeführt werden können, die mit einem von Microsoft ausgestellten Zertifikat signiert sind. [Weitere Informationen zu App-Einschränkungen mit Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/respond-machine-alerts#restrict-app-execution)
 
@@ -153,10 +153,10 @@ Diese Aktionen werden auf Geräte in der `DeviceId` Spalte der Abfrageergebnisse
 Wenn diese Option ausgewählt ist, können Sie die Quarantänedateiaktion auf Dateien in der , , oder -Spalte der  `SHA1` `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` Abfrageergebnisse anwenden. Mit dieser Aktion wird die Datei vom aktuellen Speicherort gelöscht und eine Kopie in Quarantäne gestellt.
 
 #### <a name="actions-on-users"></a>Aktionen für Benutzer
-Wenn diese Option **ausgewählt** ist, wird die Aktion Benutzer als gefährdet markieren für Benutzer in der Spalte , oder in den `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` Abfrageergebnissen ausgeführt. Diese Aktion legt die Risikostufe für Benutzer in Azure Active Directory auf "hoch" fest und löst entsprechende [Identitätsschutzrichtlinien aus.](/azure/active-directory/identity-protection/overview-identity-protection)
+Wenn diese Option **ausgewählt** ist, wird die Aktion Benutzer als gefährdet markieren für Benutzer in der Spalte , oder in den `AccountObjectId` `InitiatingProcessAccountObjectId` `RecipientObjectId` Abfrageergebnissen ausgeführt. Mit dieser Aktion wird die Risikostufe der Benutzer in der Azure Active Directory auf "hoch" und damit entsprechende [Identitätsschutzrichtlinien ausgelöst.](/azure/active-directory/identity-protection/overview-identity-protection)
 
 > [!NOTE]
-> Die Aktion "Zulassen" oder "Blockieren" für benutzerdefinierte Erkennungsregeln wird derzeit in Microsoft 365 Defender nicht unterstützt.
+> Die Aktion "Zulassen" oder "Blockieren" für benutzerdefinierte Erkennungsregeln wird derzeit in defender Microsoft 365 unterstützt.
 
 ### <a name="5-set-the-rule-scope"></a>5. Festlegen des Regelbereichs.
 Legen Sie den Bereich fest, um anzugeben, welche Geräte von der Regel abgedeckt werden. Der Bereich wirkt sich auf Regeln aus, die Geräte überprüfen, und wirkt sich nicht auf Regeln aus, die nur Postfächer und Benutzerkonten oder Identitäten überprüfen.
@@ -222,7 +222,7 @@ Wechseln Sie im Regeldetailsescreen (**Suche** nach benutzerdefinierten Erkennun
 >Verwenden Sie die Auswahlspalte [&#10003;] links neben der Tabelle, um Informationen schnell anzeigen und Aktionen für ein Element in einer Tabelle ergreifen zu können.
 
 >[!NOTE]
->Einige Spalten in diesem Artikel sind möglicherweise nicht in Microsoft Defender for Endpoint verfügbar. [Aktivieren Sie Microsoft 365 Defender,](m365d-enable.md) um bedrohungen mithilfe von weiteren Datenquellen nach Bedrohungen zu fahnen. Sie können Ihre erweiterten Suchworkflows von Microsoft Defender for Endpoint zu Microsoft 365 Defender verschieben, indem Sie die Schritte unter [Migrate advanced hunting queries from Microsoft Defender for Endpoint ausführen.](advanced-hunting-migrate-from-mde.md)
+>Einige Spalten in diesem Artikel sind möglicherweise nicht in Microsoft Defender for Endpoint verfügbar. [Aktivieren Sie Microsoft 365 Defender,](m365d-enable.md) um bedrohungen mithilfe von weiteren Datenquellen nach Bedrohungen zu fahnen. Sie können Ihre workflows für die erweiterte Suche von Microsoft Defender for Endpoint zu Microsoft 365 Defender verschieben, indem Sie die Schritte unter [Migrate advanced hunting queries from Microsoft Defender for Endpoint ausführen.](advanced-hunting-migrate-from-mde.md)
 
 ## <a name="see-also"></a>Siehe auch
 - [Benutzerdefinierte Erkennungen – Übersicht](custom-detections-overview.md)

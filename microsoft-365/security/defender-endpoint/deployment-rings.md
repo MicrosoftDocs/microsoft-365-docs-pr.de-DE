@@ -82,7 +82,7 @@ In der folgenden Tabelle sind die unterstützten Endpunkte und das entsprechende
 | Endpunkt     | Bereitstellungstool                       |
 |--------------|------------------------------------------|
 | **Windows**  |  [Lokales Skript (bis zu 10 Geräte)](configure-endpoints-script.md) <br> HINWEIS: Wenn Sie mehr als 10 Geräte in einer Produktionsumgebung bereitstellen möchten, verwenden Sie stattdessen die Gruppenrichtlinienmethode oder die anderen unten aufgeführten unterstützten Tools.<br>  [Gruppenrichtlinie](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [VDI-Skripts](configure-endpoints-vdi.md)   |
-| **macOS**    | [Lokales Skript](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF-Pro](mac-install-with-jamf.md) <br> [Verwaltung mobiler Geräte - Mobile Device Management](mac-install-with-other-mdm.md) |
+| **macOS**    | [Lokales Skript](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Verwaltung mobiler Geräte - Mobile Device Management](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Lokales Skript](linux-install-manually.md) <br> [100](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [App-basiert](ios-install.md)                                |
 | **Android**  | [Microsoft Endpoint Manager](android-intune.md)               | 
@@ -106,14 +106,14 @@ Verwenden Sie das folgende Material, um die geeignete Microsoft Defender for End
 ## <a name="existing-deployments"></a>Vorhandene Bereitstellungen
 
 ### <a name="windows-endpoints"></a>Windows-Endpunkte
-Für Windows und/oder Windows-Server wählen Sie mehrere Computer aus, die Sie mit dem Security **Update Validation Program (SUVP)** im Voraus testen möchten (vor patch Tuesday).
+Für Windows- und/oder Windows-Server wählen Sie mehrere Computer aus, die Sie mit dem Security **Update Validation Program (SUVP)** im Voraus testen möchten (vor patch Tuesday).
 
 Weitere Informationen finden Sie unter:
 - [Was ist das Validierungsprogramm für Sicherheitsupdates?](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/what-is-the-security-update-validation-program/ba-p/275767)
-- [Software Update Validation Program and Microsoft Center zum Schutz vor Malware Establishment - TwC Interactive Timeline Part 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
+- [Softwareupdatevalidierungsprogramm und Microsoft Center zum Schutz vor Malware Einrichtung – Interaktive TwC-Zeitachse Teil 4](https://www.microsoft.com/security/blog/2012/03/28/software-update-validation-program-and-microsoft-malware-protection-center-establishment-twc-interactive-timeline-part-4/)
 
 
-### <a name="non-windows-endpoints"></a>Nicht Windows Endpunkte
+### <a name="non-windows-endpoints"></a>Nicht-Windows-Endpunkte
 Mit macOS und Linux können Sie einige Systeme verwenden und im Betakanal ausführen.
 
 >[!NOTE]

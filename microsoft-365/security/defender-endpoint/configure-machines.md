@@ -44,7 +44,7 @@ Klicken **Sie im Navigationsmenü** auf Konfigurationsverwaltung, um die Seite G
 ![Sicherheitskonfigurationsverwaltungsseite](images/secconmgmt_main.png)<br>
 *Seite "Gerätekonfigurationsverwaltung"*
 
-Sie können den Konfigurationsstatus auf Organisatorischer Ebene nachverfolgen und schnell Maßnahmen ergreifen, um auf eine schlechte Onboardingabdeckung, Kompatibilitätsprobleme und schlecht optimierte Gegenmaßnahmen zur Angriffsfläche durch direkte, tiefe Links zu Geräteverwaltungsseiten in Microsoft Intune und Microsoft 365 Security Center zu reagieren.
+Sie können den Konfigurationsstatus auf Organisatorischer Ebene nachverfolgen und schnell Maßnahmen ergreifen, um auf eine schlechte Onboardingabdeckung, Kompatibilitätsprobleme und schlecht optimierte Gegenmaßnahmen zur Angriffsfläche durch direkte, tiefe Links zu Geräteverwaltungsseiten auf Microsoft Intune und Microsoft 365 Security Center zu reagieren.
 
 Dabei profitieren Sie von:
 - Umfassende Sichtbarkeit der Ereignisse auf Ihren Geräten
@@ -54,12 +54,12 @@ Dabei profitieren Sie von:
 
 ## <a name="enroll-devices-to-intune-management"></a>Registrieren von Geräten für die Intune-Verwaltung
 
-Die Gerätekonfigurationsverwaltung arbeitet eng mit der Intune-Geräteverwaltung zusammen, um das Inventar der Geräte in Ihrer Organisation und die grundlegende Sicherheitskonfiguration zu erstellen. Sie können Konfigurationsprobleme auf von Intune verwalteten Windows 10-Geräten nachverfolgen und verwalten.
+Die Gerätekonfigurationsverwaltung arbeitet eng mit der Intune-Geräteverwaltung zusammen, um das Inventar der Geräte in Ihrer Organisation und die grundlegende Sicherheitskonfiguration zu erstellen. Sie können Konfigurationsprobleme auf von Intune verwalteten Geräten nachverfolgen und Windows 10 verwalten.
 
-Bevor Sie sicherstellen können, dass Ihre Geräte ordnungsgemäß konfiguriert sind, registrieren Sie sie bei der Intune-Verwaltung. Die Intune-Registrierung ist robust und verfügt über mehrere Registrierungsoptionen für Windows 10-Geräte. Weitere Informationen zu Intune-Registrierungsoptionen finden Sie unter Einrichten [der Registrierung für Windows-Geräte.](https://docs.microsoft.com/intune/windows-enroll)
+Bevor Sie sicherstellen können, dass Ihre Geräte ordnungsgemäß konfiguriert sind, registrieren Sie sie bei der Intune-Verwaltung. Die Intune-Registrierung ist robust und verfügt über mehrere Registrierungsoptionen für Windows 10 Geräte. Weitere Informationen zu Intune-Registrierungsoptionen finden Sie unter Einrichten der Registrierung [für Windows Geräte.](https://docs.microsoft.com/intune/windows-enroll)
 
 >[!NOTE]
->Zum Registrieren von Windows-Geräten bei Intune müssen Administratoren bereits Lizenzen zugewiesen worden sein. [Informationen zum Zuweisen von Lizenzen für die Geräteregistrierung](https://docs.microsoft.com/intune/licenses-assign).
+>Zum Registrieren Windows Geräte bei Intune müssen Administratoren bereits Lizenzen zugewiesen worden sein. [Informationen zum Zuweisen von Lizenzen für die Geräteregistrierung](https://docs.microsoft.com/intune/licenses-assign).
 
 >[!TIP] 
 >Um die Geräteverwaltung über Intune zu optimieren, [verbinden Sie Intune mit Defender for Endpoint](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
@@ -85,6 +85,6 @@ Thema | Beschreibung
 :---|:---
 [In Defender for Endpoint integrierte Geräte](configure-machines-onboarding.md)| Verfolgen Sie den Onboardingstatus von von Intune verwalteten Geräten, und integrieren Sie weitere Geräte über Intune. 
 [Erhöhen der Einhaltung der Sicherheitsgrundlinie für Defender for Endpoint](configure-machines-security-baseline.md) | Verfolgen Sie die Geplante Compliance und Nichtcompliance. Stellen Sie die Sicherheitsgrundlinie auf mehr von Intune verwalteten Geräten zur Verfügung.
-[Optimieren der Bereitstellung und Erkennung von ASR-Regeln](configure-machines-asr.md) | Überprüfen sie die Erkennung von Regelbereitstellungen und Optimierungen mithilfe von Impact Analysis Tools im Microsoft 365 Security Center.
+[Optimieren der Bereitstellung und Erkennung von ASR-Regeln](configure-machines-asr.md) | Überprüfen sie die Erkennung von Regelbereitstellungen und Optimierungen mithilfe von Impact Analysis Tools in Microsoft 365 Security Center.
 
 >Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

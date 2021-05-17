@@ -26,7 +26,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
-description: Erfahren Sie, wie Sie Unternehmensdaten von Geräten entfernen, die über Schutzrichtlinien verwaltet werden, und windows 10-Geräte auf ihre Werkseinstellungen zurücksetzen.
+description: Erfahren Sie, wie Sie Unternehmensdaten von Geräten entfernen, die über Schutzrichtlinien verwaltet werden, sowie Windows 10 auf ihre Werkseinstellungen zurücksetzen.
 ms.openlocfilehash: fdd92e797774a47455d6b4163dfe399bf74d41f3
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -36,7 +36,7 @@ ms.locfileid: "51580152"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Verwalten geschützter Geräte mit Microsoft 365 Business Premium
 
-Nachdem ein Benutzer sein Gerät mit Ihrer Organisation verbindet, indem er sich mit seinem Geschäftskonto beim Gerät oder bei Office-Apps auf dem Gerät einschreibt, können Sie das Gerät mit den von Ihnen eingerichteten Richtlinien schützen. Verbundene Geräte werden auf der Seite **Geräte** aufgeführt. Wenn ein Gerät nun verloren geht oder gestohlen wird, können Sie es über diese Seite verwalten, um alle Unternehmensdaten zu entfernen. Sie können Windows 10-Geräte auch auf die Werkseinstellungen zurücksetzen, um alle benutzerdefinierten Einstellungen zu löschen. 
+Nachdem ein Benutzer sein Gerät mit Ihrer Organisation verbindet, indem er sich mit seinem Arbeitskonto beim Gerät oder bei Office-Apps auf dem Gerät einschreibt, können Sie das Gerät mit den von Ihnen eingerichteten Richtlinien schützen. Verbundene Geräte werden auf der Seite **Geräte** aufgeführt. Wenn ein Gerät nun verloren geht oder gestohlen wird, können Sie es über diese Seite verwalten, um alle Unternehmensdaten zu entfernen. Sie können Windows 10-Geräte auch auf die Werkseinstellungen zurücksetzen, um alle benutzerdefinierten Einstellungen zu löschen. 
 
 Weitere Informationen zu den Aufgaben, die Sie zum Verwalten von Geräten verwenden können, finden Sie in den folgenden Artikeln: 
   

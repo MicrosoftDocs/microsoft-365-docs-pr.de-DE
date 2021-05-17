@@ -63,17 +63,17 @@ Die folgenden Schritte führen Sie durch das Onboarding von VDI-Geräten und zei
 
 ### <a name="for-windows-10-or-windows-server-2019"></a>Für Windows 10 oder Windows Server 2019
 
-1.  Öffnen Sie die ZIP-Datei des VDI-Konfigurationspakets (*WindowsDefenderATPOnboardingPackage.zip*), die Sie aus dem Assistenten zum Onboarding des Diensts heruntergeladen haben. Sie können das Paket auch über [das Microsoft Defender Security Center erhalten:](https://securitycenter.windows.com/)
+1.  Öffnen Sie die VDI-Konfigurationspaketdatei .zip (*WindowsDefenderATPOnboardingPackage.zip*), die Sie aus dem Assistenten zum Onboarding des Diensts heruntergeladen haben. Sie können das Paket auch von [Microsoft Defender Security Center:](https://securitycenter.windows.com/)
 
     1.  Wählen Sie im Navigationsbereich **Einstellungen**  >  **Onboarding aus.**
 
-    1. Wählen Sie Windows 10 als Betriebssystem aus.
+    1. Wählen Windows 10 als Betriebssystem aus.
 
     1.  Wählen Sie **im Feld Bereitstellungsmethode** die Option **VDI-Onboardingskripts für nicht persistente Endpunkte aus.**
 
-    1. Klicken **Sie auf Paket herunterladen,** und speichern Sie die ZIP-Datei.
+    1. Klicken **Sie auf Paket** herunterladen, und speichern .zip Datei.
 
-2. Kopieren Sie die Dateien aus dem Ordner WindowsDefenderATPOnboardingPackage aus der ZIP-Datei in das Bild `golden/master` unter dem Pfad `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` . 
+2. Kopieren Sie die Dateien aus dem Ordner WindowsDefenderATPOnboardingPackage aus der .zip in das Bild `golden/master` unter dem Pfad `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` . 
 
     1. Wenn Sie keinen einzigen Eintrag für jedes Gerät implementieren, kopieren Sie WindowsDefenderATPOnboardingScript.cmd.
 
@@ -82,7 +82,7 @@ Die folgenden Schritte führen Sie durch das Onboarding von VDI-Geräten und zei
     > [!NOTE]
     > Wenn der Ordner nicht angezeigt `C:\WINDOWS\System32\GroupPolicy\Machine\Scripts\Startup` wird, wird er möglicherweise ausgeblendet. Sie müssen die Option  Ausgeblendete Dateien und Ordner anzeigen im Datei-Explorer auswählen.
 
-3. Öffnen Sie ein Fenster des Editors für lokale Gruppenrichtlinien, und navigieren Sie zu **Computerkonfiguration**  >  **Windows-Einstellungen**  >  **Skripts**  >  **starten**.
+3. Öffnen Sie ein Fenster des Editors für lokale Gruppenrichtlinien, und navigieren Sie zu **Computerkonfiguration**  >  **Windows Einstellungen**  >    >  **Skriptstart**.
 
    > [!NOTE]
    > Domänengruppenrichtlinien können auch zum Onboarding nicht persistenter VDI-Geräte verwendet werden.
@@ -91,11 +91,11 @@ Die folgenden Schritte führen Sie durch das Onboarding von VDI-Geräten und zei
 
    - Für einen einzelnen Eintrag für jedes Gerät:
    
-     Wählen Sie **die Registerkarte PowerShell-Skripts** aus, und klicken Sie dann auf Hinzufügen **(Windows** Explorer wird direkt im Pfad geöffnet, in den Sie das Onboardingskript zuvor kopiert haben). Navigieren Sie zum Onboarding des PowerShell-Skripts `Onboard-NonPersistentMachine.ps1` . Die andere Datei muss nicht angegeben werden, da sie automatisch ausgelöst wird.
+     Wählen Sie **die Registerkarte PowerShell-Skripts** aus, und klicken Sie dann auf Hinzufügen **(Windows** Der Explorer wird direkt im Pfad geöffnet, in den Sie das Onboardingskript zuvor kopiert haben). Navigieren Sie zum Onboarding des PowerShell-Skripts `Onboard-NonPersistentMachine.ps1` . Die andere Datei muss nicht angegeben werden, da sie automatisch ausgelöst wird.
    
    - Für mehrere Einträge für jedes Gerät:
    
-     Wählen Sie **die Registerkarte Skripts** aus, und klicken Sie dann auf **Hinzufügen** (Windows Explorer wird direkt im Pfad geöffnet, in den Sie das Onboardingskript zuvor kopiert haben). Navigieren Sie zum Onboarding-Bash-Skript `WindowsDefenderATPOnboardingScript.cmd` .
+     Wählen Sie **die Registerkarte Skripts** aus, und klicken Sie dann auf Hinzufügen **(Windows** Der Explorer wird direkt im Pfad geöffnet, in den Sie das Onboardingskript zuvor kopiert haben). Navigieren Sie zum Onboarding-Bash-Skript `WindowsDefenderATPOnboardingScript.cmd` .
 
 5. Testen Sie Ihre Lösung:
 
@@ -111,11 +111,11 @@ Die folgenden Schritte führen Sie durch das Onboarding von VDI-Geräten und zei
    
       - Für einen einzelnen Eintrag für jedes Gerät: 
     
-        Überprüfen Sie nur einen Eintrag im Microsoft Defender Security Center.
+        Überprüfen Sie nur einen Eintrag in Microsoft Defender Security Center.
 
       - Für mehrere Einträge für jedes Gerät: 
        
-        Überprüfen Sie mehrere Einträge im Microsoft Defender Security Center.
+        Überprüfen Sie mehrere Einträge in Microsoft Defender Security Center.
 
 6. Klicken **Sie im** Navigationsbereich auf Geräteliste.
 
@@ -155,9 +155,9 @@ DISM /Unmount-Image /MountDir:"C:\Temp\OfflineServicing" /commit
 ```
 
 Weitere Informationen zu DISM-Befehlen und zur Offlinewartung finden Sie in den folgenden Artikeln:
-- [Ändern eines Windows-Images mithilfe von DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
+- [Ändern eines Windows mithilfe von DISM](https://docs.microsoft.com/windows-hardware/manufacture/desktop/mount-and-modify-a-windows-image-using-dism)
 - [DISM Image Management Command-Line Optionen](https://docs.microsoft.com/windows-hardware/manufacture/desktop/dism-image-management-command-line-options-s14)
-- [Verringern der Größe des Komponentenspeichers in einem Offline-Windows-Image](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
+- [Verringern der Größe der Komponente Store in einem Offline-Windows Bild](https://docs.microsoft.com/windows-hardware/manufacture/desktop/reduce-the-size-of-the-component-store-in-an-offline-windows-image)
 
 Wenn die Offlinewartung keine praktikable Option für Ihre nicht persistente VDI-Umgebung ist, sollten die folgenden Schritte ausgeführt werden, um Konsistenz und Sensorintehigkeit sicherzustellen:
 
@@ -184,8 +184,8 @@ Wenn die Offlinewartung keine praktikable Option für Ihre nicht persistente VDI
 5. Versiegeln Sie das Golden/Master-Bild wie gewohnt erneut.
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Onboarding von Windows 10-Geräten mithilfe von Gruppenrichtlinien](configure-endpoints-gp.md)
-- [Onboarding von Windows 10-Geräten mithilfe von Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
+- [Onboarding Windows 10 Geräte mithilfe von Gruppenrichtlinien](configure-endpoints-gp.md)
+- [Onboarding Windows 10 Geräte mithilfe Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboarding von Windows 10-Geräten mithilfe von Tools für die Verwaltung von Mobilgeräten](configure-endpoints-mdm.md)
 - [Onboarding von Windows 10-Geräten mithilfe eines lokalen Skripts](configure-endpoints-script.md)
 - [Behandeln von Problemen beim Onboarding von Microsoft Defender for Endpoint](troubleshoot-onboarding.md)

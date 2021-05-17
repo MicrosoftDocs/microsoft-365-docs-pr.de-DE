@@ -43,7 +43,7 @@ Sehen Sie sich dieses Video an, um einen schnellen Überblick über die erweiter
 Sie können die gleichen Abfragen für die Bedrohungssuche verwenden, um benutzerdefinierte Erkennungsregeln zu erstellen. Diese Regeln werden automatisch ausgeführt, um nach verdächtigen Sicherheitsverletzungen, falsch konfigurierten Computern und anderen Erkenntnissen zu suchen und darauf zu reagieren.
 
 >[!TIP]
->Verwenden Sie die erweiterte Suche [in Microsoft 365 Defender,](/microsoft-365/security/defender/advanced-hunting-overview) um mithilfe von Daten von Defender for Endpoint, Microsoft Defender für Office 365, Microsoft Cloud App Security und Microsoft Defender for Identity nach Bedrohungen zu fahnen. [Aktivieren Sie Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).<br><br>
+>Verwenden Sie die erweiterte Suche [in Microsoft 365 Defender,](/microsoft-365/security/defender/advanced-hunting-overview) um Bedrohungen mithilfe von Daten von Defender for Endpoint, Microsoft Defender für Office 365, Microsoft Cloud App Security und Microsoft Defender for Identity zu finden. [Aktivieren sie Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).<br><br>
 Erfahren Sie mehr darüber, wie Sie Ihre erweiterten Suchworkflows von Microsoft Defender for Endpoint zu Microsoft 365 Defender in [Migrate advanced hunting queries from Microsoft Defender for Endpoint verschieben.](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde)
 
 ## <a name="get-started-with-advanced-hunting"></a>Erste Schritte mit der erweiterten Suche

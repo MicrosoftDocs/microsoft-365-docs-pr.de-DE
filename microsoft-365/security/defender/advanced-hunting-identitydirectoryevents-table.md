@@ -1,7 +1,7 @@
 ---
 title: IdentityDirectoryEvents-Tabelle im schema der erweiterten Suche
 description: Weitere Informationen zu Domänencontroller- und Active Directory-Ereignissen finden Sie in der IdentityDirectoryEvents-Tabelle des schemas für die erweiterte Suche.
-keywords: Erweiterte Suche, Bedrohungssuche, Cyberbedrohungensuche, Microsoft 365 Defender, microsoft 365, m365, Suche, Abfrage, Telemetrie, Schemareferenz, Kusto, Tabelle, Spalte, Datentyp, Beschreibung, IdentityDirectoryEvents, Domänencontroller, Active Directory, Microsoft Defender für Identität, Identitäten
+keywords: advanced hunting, threat hunting, cyber threat hunting, Microsoft 365 Defender, microsoft 365, m365, search, query, telemetry, schema reference, kusto, table, column, data type, description, IdentityDirectoryEvents, Domänencontroller, Active Directory, Microsoft Defender for Identity, identities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security

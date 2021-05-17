@@ -58,7 +58,7 @@ Gehen Sie wie folgt vor, um eine mehr mandantendelegierte Zugriffslösung zu imp
 
 2. Erstellen Sie Defender for Endpoint-Rollen für geeignete Zugriffsebenen in Customer Defender for Endpoint.
 
-    Um rbAC im Microsoft Defender Security Center des Kunden zu aktivieren, greifen Sie über ein Benutzerkonto mit globalen Administrator- oder Sicherheitsadministratorrechten auf Einstellungen > Berechtigungen **>** Rollen und "Rollen aktivieren" zu.
+    Um rbAC im Kundenkonto zu Microsoft Defender Security Center, greifen Sie auf **Einstellungen > Berechtigungen >** Rollen und "Rollen aktivieren" über ein Benutzerkonto mit globalen Administrator- oder Sicherheitsadministratorrechten zu.
 
     ![Abbildung des MSSP-Zugriffs](images/mssp-access.png)
 
@@ -132,7 +132,7 @@ Gehen Sie wie folgt vor, um eine mehr mandantendelegierte Zugriffslösung zu imp
     Beispiel:  `https://myaccess.microsoft.com/@M365x440XXX.onmicrosoft.com#/`   
 2. Genehmigen oder Verweigern von Anforderungen im **Abschnitt Genehmigungen** der Benutzeroberfläche.
 
-    Zu diesem Zeitpunkt wurde der Analystenzugriff bereitgestellt, und jeder Analyst sollte auf das Microsoft Defender Security Center des Kunden zugreifen können: `https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
+    Zu diesem Zeitpunkt wurde der Analystenzugriff bereitgestellt, und jeder Analyst sollte in der Lage sein, auf die Kundendaten Microsoft Defender Security Center:`https://securitycenter.Microsoft.com/?tid=<CustomerTenantId>`
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Zugreifen auf das MSSP-Kundenportal](access-mssp-portal.md)

@@ -41,7 +41,7 @@ ms.locfileid: "51934381"
 
 Möglicherweise möchten Sie Defender for Endpoint nutzen, bevor Sie mehr als ein paar Geräte in den Dienst integrieren. Dazu können Sie kontrollierte Angriffssimulationen auf einigen Testgeräten ausführen. Nachdem Sie die simulierten Angriffe ausgeführt haben, können Sie überprüfen, wie Defender for Endpoint schädliche Aktivitäten aufgreift, und untersuchen, wie eine effiziente Reaktion ermöglicht wird.
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen:
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Zum Ausführen einer der bereitgestellten Simulationen benötigen Sie mindestens [ein integriertes Gerät.](onboard-configure.md) 
 

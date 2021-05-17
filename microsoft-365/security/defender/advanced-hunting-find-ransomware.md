@@ -34,7 +34,7 @@ ms.locfileid: "51934813"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Ransomware hat sich schnell von einer einfachen Warensoftware entwickelt, die einzelne Computerbenutzer betrifft, zu einer Unternehmensbedrohung, die branchen- und regierungsweite Einrichtungen stark beeinträchtigt. Microsoft [365 Defender](microsoft-365-defender.md) bietet zwar viele Funktionen, mit deren Hilfe Ransomware und damit verbundene Angriffsaktivitäten erkannt und blockiert werden, aber proaktive Überprüfungen auf Anzeichen von Kompromissen können dazu beitragen, dass Ihr Netzwerk geschützt bleibt.
+Ransomware hat sich schnell von einer einfachen Warensoftware entwickelt, die einzelne Computerbenutzer betrifft, zu einer Unternehmensbedrohung, die branchen- und regierungsweite Einrichtungen stark beeinträchtigt. Während [Microsoft 365 Defender](microsoft-365-defender.md) viele Funktionen bietet, mit deren Hilfe Ransomware und damit verbundene Angriffsaktivitäten erkannt und blockiert werden, kann die proaktive Überprüfung auf Anzeichen von Kompromissen dazu beitragen, ihr Netzwerk zu schützen.
 
 > [Informationen zu vom Menschen betriebener Ransomware](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 

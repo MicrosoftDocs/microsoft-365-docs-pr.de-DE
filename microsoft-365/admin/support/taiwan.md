@@ -39,6 +39,6 @@ Chinesisch (Mandarin): Mon-Fri 9:00-18:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefon Nummer: 02 2656 7301
+Alternative Telefonnummer: 02 2656 7301
 
 Es gelten die Ortstarife.

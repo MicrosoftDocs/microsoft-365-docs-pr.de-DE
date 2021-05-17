@@ -41,7 +41,7 @@ Wenn beim Zugriff auf den Dienst ein Serverfehler auftritt, müssen Sie ihre Bro
 Konfigurieren Sie Ihren Browser so, dass Cookies zulässig sind.
 
 ## <a name="elements-or-data-missing-on-the-portal"></a>Elemente oder Daten fehlen im Portal
-Wenn einige Elemente oder Daten im Microsoft Defender Security Center fehlen, können Proxyeinstellungen dies blockieren.
+Wenn einige Elemente oder Daten auf der Microsoft Defender Security Center ist es möglich, dass Proxyeinstellungen sie blockieren.
 
 Stellen Sie sicher, `*.securitycenter.windows.com` dass die Proxy-Allowlist enthalten ist.
 

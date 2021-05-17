@@ -43,7 +43,7 @@ Ruft eine Liste aller Sicherheitsrisiken ab, die die Organisation pro [Computer 
 - Das OData ```$filter``` wird für alle Eigenschaften unterstützt.
 
 >[!Tip]
->Dies ist eine großartige API für [die Power BI-Integration.](api-power-bi.md)
+>Dies ist eine großartige API für [Power BI Integration.](api-power-bi.md)
 
 ## <a name="permissions"></a>Berechtigungen
 Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for Details.
@@ -62,7 +62,7 @@ GET /api/vulnerabilities/machinesVulnerabilities
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
+Authorization | String | Bearer {token}. **Erforderlich**.
 
 
 ## <a name="request-body"></a>Anforderungstext
@@ -119,5 +119,5 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Risikobasiertes Bedrohungs- und Sicherheitsrisikomanagement](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Risikobasierte Bedrohungs- und Sicherheitsrisikomanagement](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Sicherheitsrisiken in Ihrer Organisation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)

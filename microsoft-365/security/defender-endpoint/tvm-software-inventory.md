@@ -1,7 +1,7 @@
 ---
-title: Softwareinventar in der Bedrohungs- und Sicherheitsrisikoverwaltung
-description: Die Seite "Softwareinventar" für die Bedrohungs- und Sicherheitsrisikoverwaltung von Microsoft Defender for Endpoint zeigt, wie viele Schwachstellen und Sicherheitsrisiken in Der Software erkannt wurden.
-keywords: Bedrohungs- und Sicherheitsrisikoverwaltung, Microsoft Defender for Endpoint, Microsoft Defender for Endpoint Software inventory, Microsoft Defender for Endpoint Threat & Vulnerability Management, Microsoft Defender for Endpoint Threat & Vulnerability Management Software Inventory, Microsoft Defender for Endpoint tvm software inventory, tvm software inventory
+title: Softwareinventar in Bedrohungs- und Sicherheitsrisikomanagement
+description: Die Seite "Softwareinventar" für microsoft Defender for Endpoint Bedrohungs- und Sicherheitsrisikomanagement zeigt, wie viele Schwachstellen und Sicherheitsrisiken in der Software erkannt wurden.
+keywords: Bedrohungs- und Sicherheitsrisikomanagement, Microsoft Defender for Endpoint, Microsoft Defender for Endpoint Software Inventory, Microsoft Defender for Endpoint Threat & Sicherheitsrisikomanagement, Microsoft Defender for Endpoint Threat & Sicherheitsrisikomanagement software inventory, Microsoft Defender for Endpoint tvm software inventory, tvm software inventory
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -25,18 +25,18 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51933721"
 ---
-# <a name="software-inventory---threat-and-vulnerability-management"></a>Softwareinventar – Bedrohungs- und Sicherheitsrisikoverwaltung
+# <a name="software-inventory---threat-and-vulnerability-management"></a>Softwareinventar – Bedrohungs- und Sicherheitsrisikomanagement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [Bedrohungs- und Sicherheitsrisikoverwaltung](next-gen-threat-and-vuln-mgt.md)
+- [Bedrohung und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-Das Softwareinventar im Bedrohungs- und Sicherheitsrisikomanagement ist eine Liste bekannter Software in Ihrer Organisation mit offiziellen [Common Platform Enumerations (CPE).](https://nvd.nist.gov/products/cpe) Softwareprodukte ohne offizielle CPE haben keine Sicherheitsrisiken veröffentlicht. Sie enthält auch Details wie den Namen des Anbieters, die Anzahl der Schwächen, Bedrohungen und die Anzahl der verfügbar gemachten Geräte.
+Das Softwareinventar in Bedrohungs- und Sicherheitsrisikomanagement ist eine Liste bekannter Software in Ihrer Organisation mit offiziellen [Common Platform Enumerations (CPE).](https://nvd.nist.gov/products/cpe) Softwareprodukte ohne offizielle CPE haben keine Sicherheitsrisiken veröffentlicht. Sie enthält auch Details wie den Namen des Anbieters, die Anzahl der Schwächen, Bedrohungen und die Anzahl der verfügbar gemachten Geräte.
 
 ## <a name="how-it-works"></a>Funktionsweise
 
@@ -46,7 +46,7 @@ Da es in Echtzeit ist, werden in wenigen Minuten Informationen zu Sicherheitslü
 
 ## <a name="navigate-to-the-software-inventory-page"></a>Navigieren zur Seite Softwareinventar
 
-Greifen Sie auf die Seite Softwarebestand zu, indem Sie **im** Navigationsmenü zur Bedrohungs- und Sicherheitsrisikoverwaltung im [Microsoft Defender Security Center softwareinventar auswählen.](portal-overview.md)
+Greifen Sie auf die Seite Softwareinventar zu, indem Sie software **inventory** im Bedrohungs- und Sicherheitsrisikomanagement navigation menu in the [Microsoft Defender Security Center](portal-overview.md).
 
 Anzeigen von Software auf bestimmten Geräten auf den einzelnen Geräteseiten in der [Geräteliste](machines-view-overview.md).
 
@@ -65,7 +65,7 @@ Wählen Sie die Software aus, die Sie untersuchen möchten. Ein Flyoutpanel wird
 
 ### <a name="software-that-isnt-supported"></a>Software, die nicht unterstützt wird
 
-Software, die derzeit nicht von der Bedrohungsverwaltung & unterstützt wird, kann auf der Seite Softwareinventar vorhanden sein. Da sie nicht unterstützt wird, sind nur begrenzte Daten verfügbar. Filtern Sie nach nicht unterstützter Software mit der Option "Nicht verfügbar" im Abschnitt "Schwachstelle".
+Software, die derzeit nicht von Bedrohungen unterstützt & Sicherheitsrisikomanagement auf der Seite Softwareinventar vorhanden sein. Da sie nicht unterstützt wird, sind nur begrenzte Daten verfügbar. Filtern Sie nach nicht unterstützter Software mit der Option "Nicht verfügbar" im Abschnitt "Schwachstelle".
 
 ![Nicht unterstützter Softwarefilter.](images/tvm-unsupported-software-filter.png)
 
@@ -80,9 +80,9 @@ Derzeit werden Produkte ohne CPE nicht auf der Seite Softwareinventar angezeigt,
 
 ## <a name="software-inventory-on-devices"></a>Softwareinventar auf Geräten
 
-Wechseln Sie im Microsoft Defender Security Center-Navigationsbereich zur **[Liste Geräte](machines-view-overview.md)**. Wählen Sie den Namen eines Geräts aus, um die Geräteseite zu öffnen (z. B. Computer1), und wählen Sie dann die Registerkarte **Softwarebestand** aus, um eine Liste aller auf dem Gerät vorhandenen bekannten Software zu sehen. Wählen Sie einen bestimmten Softwareeintrag aus, um das Flyout mit weiteren Informationen zu öffnen.
+Wechseln Sie Microsoft Defender Security Center Navigationsbereich zur Liste **[Geräte](machines-view-overview.md)**. Wählen Sie den Namen eines Geräts aus, um die Geräteseite zu öffnen (z. B. Computer1), und wählen Sie dann die Registerkarte **Softwarebestand** aus, um eine Liste aller auf dem Gerät vorhandenen bekannten Software zu sehen. Wählen Sie einen bestimmten Softwareeintrag aus, um das Flyout mit weiteren Informationen zu öffnen.
 
-Software kann auf Geräteebene sichtbar sein, auch wenn sie derzeit nicht von der Bedrohungs- und Sicherheitsrisikoverwaltung unterstützt wird. Es sind jedoch nur begrenzte Daten verfügbar. Sie wissen, ob Software nicht unterstützt wird, da sie in der Spalte "Schwäche" "Nicht verfügbar" sagen wird.
+Software ist möglicherweise auf Geräteebene sichtbar, auch wenn sie derzeit nicht von der Bedrohungs- und Sicherheitsrisikomanagement. Es sind jedoch nur begrenzte Daten verfügbar. Sie wissen, ob Software nicht unterstützt wird, da sie in der Spalte "Schwäche" "Nicht verfügbar" sagen wird.
 
 Software ohne CPE kann auch unter diesem gerätespezifischen Softwarebestand angezeigt werden.
 
@@ -92,7 +92,7 @@ Sehen Sie sich an, wo wir eine bestimmte Software auf einem Gerät aus der Regis
 
 Wählen Sie einen Softwarenamen aus, um das Flyout zu öffnen, und suchen Sie nach dem Abschnitt "Software Evidence".
 
-![Software evidence example of Windows 10 from the devices list, showing software evidence registry path.](images/tvm-software-evidence.png)
+![Software-Nachweisbeispiel für Windows 10 aus der Geräteliste mit dem Registrierungspfad für Softwarebeweis.](images/tvm-software-evidence.png)
 
 ## <a name="software-pages"></a>Softwareseiten
 
@@ -100,7 +100,7 @@ Sie können Softwareseiten auf verschiedene Weise anzeigen:
 
 - Seite "Softwareinventar" > Wählen Sie einen Softwarenamen > **Wählen** Sie im Flyout Softwareseite öffnen aus.
 - [Seite "Sicherheitsempfehlungen"](tvm-security-recommendation.md) > Wählen Sie eine Empfehlung > **Wählen** Sie im Flyout Die Seite Software öffnen aus.
-- [Event timeline page](threat-and-vuln-mgt-event-timeline.md) > Select an event > Select the hyperlinked software name (like Visual Studio 2017) in the section called "Related component" in the flyout
+- [Ereigniszeitachsenseite](threat-and-vuln-mgt-event-timeline.md) > Wählen Sie ein Ereignis > Wählen Sie den Namen der gelinkten Software (wie Visual Studio 2017) im Abschnitt "Verwandte Komponente" im Flyout aus.
 
  Eine vollständige Seite mit allen Details einer bestimmten Software und den folgenden Informationen wird angezeigt:
 
@@ -121,11 +121,11 @@ Melden Sie ein falsch positives Ergebnis, wenn vage, ungenaue oder unvollständi
 1. Öffnen Sie das Softwaref flyout auf der Seite Softwareinventar.
 2. Wählen **Sie Ungenauigkeit melden aus.**
 3. Wählen Sie im Flyoutbereich im Dropdownmenü die Kategorie Ungenauigkeit aus, geben Sie Ihre E-Mail-Adresse ein und geben Sie Details zur Ungenauigkeit an.
-4. Wählen Sie **Senden** aus. Ihr Feedback wird sofort an die Experten für die Bedrohungs- und Sicherheitsrisikoverwaltung gesendet.
+4. Wählen Sie **Senden** aus. Ihr Feedback wird sofort an die Bedrohungs- und Sicherheitsrisikomanagement gesendet.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Übersicht über die Verwaltung von Bedrohungen und Sicherheitslücken](next-gen-threat-and-vuln-mgt.md)
+- [Übersicht über Bedrohungen Sicherheitsrisikomanagement Bedrohungen](next-gen-threat-and-vuln-mgt.md)
 - [Sicherheitsempfehlungen](tvm-security-recommendation.md)
 - [Ablauf der Veranstaltung](threat-and-vuln-mgt-event-timeline.md)
 - [Anzeigen und Organisieren der Microsoft Defender for Endpoint Devices-Liste](machines-view-overview.md)

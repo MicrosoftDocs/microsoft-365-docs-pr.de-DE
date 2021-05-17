@@ -35,6 +35,6 @@ Englisch: Mo-Fr 9:00 bis 17:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefon Nummer: 0203 450 6455
+Alternative Telefonnummer: 0203 450 6455
 
 Es gelten die Ortstarife.

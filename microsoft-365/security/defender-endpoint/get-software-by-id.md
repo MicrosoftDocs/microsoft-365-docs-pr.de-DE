@@ -1,5 +1,5 @@
 ---
-title: Software nach ID erhalten
+title: Software nach Id herunterladen
 description: Ruft eine Liste der Belichtungsergebnisse nach Gerätegruppe ab.
 keywords: apis, graph api, supported apis, get, software, Microsoft Defender for Endpoint tvm api
 search.product: eADQiWindows 10XVcnh
@@ -21,7 +21,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/21/2021
 ms.locfileid: "51934309"
 ---
-# <a name="get-software-by-id"></a>Software nach ID erhalten
+# <a name="get-software-by-id"></a>Software nach Id herunterladen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -54,7 +54,7 @@ GET /api/Software/{Id}
 
 | Name        | Typ | Beschreibung
 |:--------------|:-------|:--------------|
-| Authorization | Zeichenfolge | Bearer {token}. **Erforderlich.**
+| Authorization | String | Bearer {token}. **Erforderlich.**
 
 ## <a name="request-body"></a>Anforderungstext
 Empty

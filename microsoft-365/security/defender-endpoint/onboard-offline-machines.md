@@ -39,12 +39,12 @@ ms.locfileid: "51934921"
 Um Geräte ohne Internetzugriff zu integrieren, müssen Sie die folgenden allgemeinen Schritte ausführen:
 
 > [!IMPORTANT] 
-> Die folgenden Schritte gelten nur für Geräte mit früheren Versionen von Windows, z. B.: Windows Server 2016 und früher oder Windows 8.1 und früher.
+> Die folgenden Schritte gelten nur für Geräte mit früheren Versionen von Windows z. B.: Windows Server 2016 und früher oder Windows 8.1 und früher.
 
 > [!NOTE]
 > - Ein OMS-Gatewayserver kann nicht als Proxy für getrennte Windows 10- oder Windows Server 2019-Geräte verwendet werden, wenn er über die TelemetryProxyServer-Registrierung oder das Gruppenrichtlinienobjekt konfiguriert wird.
-> - Für Windows 10 oder Windows Server 2019 – Während Sie TelemetryProxyServer verwenden können, muss es auf ein Standardproxygerät oder eine Standardproxy-Appliance verweisen.
-> - Darüber hinaus müssen Windows 10 oder Windows Server 2019 in getrennten Umgebungen in der Lage sein, Zertifikatvertrauenslisten offline über eine interne Datei oder einen Webserver zu aktualisieren.
+> - Für Windows 10 oder Windows Server 2019 – Während Sie TelemetryProxyServer verwenden können, muss er auf ein Standardproxygerät oder eine Standardproxy-Appliance verweisen.
+> - Darüber hinaus Windows 10 oder Windows Server 2019 in getrennten Umgebungen in der Lage sein, Zertifikatvertrauenslisten offline über eine interne Datei oder einen Webserver zu aktualisieren.
 > - Weitere Informationen zum Aktualisieren von CTLs im Offlinemodus finden Sie unter [Configure a file or web server to download the CTL files](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files).
 
 Weitere Informationen zu Onboardingmethoden finden Sie in den folgenden Artikeln:
@@ -56,7 +56,7 @@ Weitere Informationen zu Onboardingmethoden finden Sie in den folgenden Artikeln
 
 - Richten Sie Azure Log Analytics (früher als OMS-Gateway bekannt) ein, um als Proxy oder Hub zu fungieren:
   - [Azure Log Analytics Agent](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-  - [Installieren und Konfigurieren von Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) zeigen auf Defender for Endpoint Workspace key & ID
+  - [Installieren und Konfigurieren Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) point to Defender for Endpoint Workspace key & ID
 
 - Offlinegeräte im gleichen Netzwerk von Azure Log Analytics
   -  Konfigurieren Sie MMA so, dass es auf:
@@ -68,7 +68,7 @@ Weitere Informationen zu Onboardingmethoden finden Sie in den folgenden Artikeln
 
     - Richten Sie Azure Log Analytics Gateway (früher als OMS-Gateway bekannt) ein, um als Proxy oder Hub zu fungieren:
       - [Azure Log Analytics Gateway](https://docs.microsoft.com/azure/azure-monitor/platform/gateway#download-the-log-analytics-gateway)
-      - [Installieren und Konfigurieren von Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) zeigen auf Defender for Endpoint Workspace key & ID
+      - [Installieren und Konfigurieren Microsoft Monitoring Agent (MMA)](configure-server-endpoints.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint) point to Defender for Endpoint Workspace key & ID
     - Offline-Azure-VMs im gleichen Netzwerk des OMS-Gateways
       - Konfigurieren der Azure Log Analytics-IP als Proxy
       - Azure Log Analytics Workspace Key & ID

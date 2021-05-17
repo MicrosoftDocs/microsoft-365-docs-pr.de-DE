@@ -52,7 +52,7 @@ Wenn Sie ein Problem reproduzieren können, erhöhen Sie zuerst die Protokollier
 
 2. Reproduzieren Sie das Problem.
 
-3. Führen Sie den folgenden Befehl aus, um die Protokolle von Defender for Endpoint zu sichern. Die Dateien werden in einem ZIP-Archiv gespeichert.
+3. Führen Sie den folgenden Befehl aus, um die Protokolle von Defender for Endpoint zu sichern. Die Dateien werden innerhalb eines .zip gespeichert.
 
    ```bash
    sudo mdatp diagnostic create
@@ -79,7 +79,7 @@ Wenn während der Installation ein Fehler auftritt, wird vom Installationsprogra
 
 Das detaillierte Protokoll wird in `/var/log/microsoft/mdatp_install.log` gespeichert. Wenn während der Installation Probleme auftreten, senden Sie uns diese Datei, damit wir die Ursache diagnostizieren können.
 
-## <a name="uninstall"></a>Uninstall
+## <a name="uninstall"></a>Deinstallieren
 
 Es gibt verschiedene Möglichkeiten, Defender for Endpoint unter Linux zu deinstallieren. Wenn Sie ein Konfigurationstool wie "Puppet" verwenden, befolgen Sie die Anweisungen zur Paketentinstallation für das Konfigurationstool.
 
@@ -101,7 +101,7 @@ Standardmäßig gibt das Befehlszeilentool das Ergebnis im lesbaren Format aus. 
 
 In der folgenden Tabelle sind Befehle für einige der gängigsten Szenarien aufgeführt. Führen `mdatp help` Sie das Terminal aus, um die vollständige Liste der unterstützten Befehle anzuzeigen.
 
-|Gruppe                 |Szenario                                                |Befehl                                                                |
+|Gruppe                 |Szenario                                                |Get-Help                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |Konfiguration         |Aktivieren/Deaktivieren des Echtzeitschutzes                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
 |Konfiguration         |Aktivieren/Deaktivieren der Verhaltensüberwachung                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
@@ -164,7 +164,7 @@ Im Defender for Endpoint-Portal werden zwei Kategorien von Informationen angezei
 ### <a name="known-issues"></a>Bekannte Probleme
 
 - Möglicherweise wird auf der Computerinformationsseite des Microsoft Defender Security Center-Portals "Keine Sensordaten, beeinträchtigte Kommunikation" angezeigt, obwohl das Produkt wie erwartet funktioniert. Wir arbeiten daran, dieses Problem zu beheben.
-- Angemeldete Benutzer werden nicht im Microsoft Defender Security Center-Portal angezeigt.
+- Angemeldete Benutzer werden nicht im Microsoft Defender Security Center angezeigt.
 - Wenn bei der Installation von *libatomic1* in SUSE-Verteilungen ein Fehler auftritt, sollten Sie überprüfen, ob Ihr Betriebssystem registriert ist:
 
    ```bash

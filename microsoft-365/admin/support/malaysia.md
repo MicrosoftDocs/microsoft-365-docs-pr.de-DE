@@ -35,6 +35,6 @@ Englisch: Mon-Fri 9:00-18:00 Uhr
 
 Englisch: rund um die Uhr
 
-Alternative Telefon Nummer: 03 6207 4606
+Alternative Telefonnummer: 03 6207 4606
 
 Es gelten die Ortstarife.

@@ -60,9 +60,9 @@ Im Folgenden finden Sie eine Liste der Arten von Daten, die erfasst werden:
 
 - Mandanten-, Geräte- und Benutzerinformationen 
 
-    - Azure Active Directory (AD)-Geräte-ID und Azure-Benutzer-ID – Identifiziert das Gerät eindeutig, Benutzer bzw. Azure Active Directory. 
+    - Azure Active Directory (AD) Geräte-ID und Azure-Benutzer-ID – Identifiziert das Gerät eindeutig, benutzerisch bzw. in Azure Active Directory. 
 
-    - Azure-Mandanten-ID – GUID, die Ihre Organisation in Azure Active Directory identifiziert. 
+    - Azure-Mandanten-ID – GUID, die Ihre Organisation innerhalb Azure Active Directory. 
 
     - Microsoft Defender for Endpoint Org ID – Eindeutige ID, die dem Unternehmen zugeordnet ist, zu dem das Gerät gehört. Ermöglicht Microsoft zu ermitteln, ob Probleme auftreten, die sich auf eine ausgewählte Gruppe von Unternehmen und die Anzahl betroffener Unternehmen auswirken. 
 

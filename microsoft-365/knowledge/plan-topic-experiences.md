@@ -23,7 +23,7 @@ Sie haben die Kontrolle darüber, wie Themen in Ihrer Organisation behandelt wer
 
 In diesem Artikel werden die folgenden Planungsentscheidungen untersucht:
 
-- Welche SharePoint-Websites Sie nach Themen durchforsten möchten
+- Welche SharePoint Sie nach Themen durchforsten möchten
 - Welche Themen Sie von den Themenerfahrungen ausschließen möchten, falls dies der Fall ist
 - Für welche Benutzer Sie Themen sichtbar machen möchten
 - Welche Benutzer Sie berechtigungen zum Verwalten von Themen im Themencenter erteilen möchten
@@ -34,24 +34,24 @@ Die Sicherheit und der Datenschutz Ihrer Daten werden berücksichtigt, und die T
 
 ## <a name="requirements"></a>Anforderungen
 
-Sie müssen ["Viva Topics"](https://www.microsoft.com/microsoft-viva/topics) abonniert haben und ein globaler Administrator oder SharePoint-Administrator sein, um auf das Microsoft 365 Admin Center zu zugreifen und Themen einrichten zu können.
+Sie müssen ["Viva Topics"](https://www.microsoft.com/microsoft-viva/topics) abonniert haben und ein globaler Administrator oder SharePoint administrator sein, um auf das Microsoft 365 Admin Center zu zugreifen und Themen einrichten zu können.
 
 Alle Benutzer, die Themen verwenden möchten, benötigen eine **Topic Experiences-Lizenz.** Zuweisen von Lizenzen finden Sie unter [Einrichten von Microsoft Viva Topics](set-up-topic-experiences.md).
 
 ## <a name="topic-discovery"></a>Themasuche
 
-Die Einstellungen für die Themenermittlung geben an, welche SharePoint-Websites als Quellen für Themen verwendet werden. Sie können alle SharePoint-Websites, eine bestimmte Liste von Websites oder keine Websites hinzufügen. Es wird empfohlen, alle Websites zu wählen, damit themenerfahrungen eine große Anzahl von guten Themen für Ihre Benutzer entdecken können.
+Die Einstellungen für die Themensuche geben an, welche SharePoint-Websites als Quellen für Themen verwendet werden. Sie können wählen, ob Sie alle SharePoint-Websites, eine bestimmte Liste von Websites oder keine Websites einschließen möchten. Es wird empfohlen, alle Websites zu wählen, damit themenerfahrungen eine große Anzahl von guten Themen für Ihre Benutzer entdecken können.
 
-Beim Einrichten von Themen können Sie aus den folgenden Optionen auswählen:
+Wenn Sie Topics einrichten, können Sie unter folgenden Optionen wählen:
 
-- **Alle Websites**: Alle SharePoint-Websites in Ihrer Organisation. Dies umfasst aktuelle und zukünftige Websites.
-- **Alle, mit Ausnahme ausgewählter Websites:** Alle Websites mit Ausnahme der angegebenen Websites. Websites, die in Zukunft erstellt werden, werden als Quellen für die Themenerkennung einbezogen. 
-- **Nur ausgewählte Websites:** Nur die angegebenen Websites. Websites, die in Zukunft erstellt werden, werden nicht als Quellen für die Themenerkennung einbezogen.
-- **Keine Websites**: Keine SharePoint-Websites enthalten.
+- **Alle Websites**: Alle SharePoint-Websites in Ihrer Organisation. Dies schließt aktuelle und zukünftige Websites ein.
+- **Alle, mit Ausnahme von ausgewählten Websites**: Alle Websites mit Ausnahme der von Ihnen angegebenen Websites. Websites, die in Zukunft erstellt werden, werden als Quellen für die Themenerkennung einbezogen. 
+- **Nur ausgewählte Websites:** Nur die angegebenen Websites. Zukünftig erstellte Websites werden nicht als Quellen für die Themensuche einbezogen.
+- **Keine Websites**: Schließen Sie keine SharePoint-Websites ein.
 
-Wenn Sie entweder **Alle auswählen, mit** Ausnahme ausgewählter Websites oder **Nur** ausgewählte Websites, können Sie eine CSV-Datei mit einer Liste von Websites hochladen. Diese Optionen sind hilfreich, wenn Sie ein Pilotprojekt erstellen und eine begrenzte Anzahl von Websites zum Starten verwenden möchten.
+Wenn Sie entweder **Alle auswählen,** mit Ausnahme ausgewählter Websites oder **Nur** ausgewählte Websites, können Sie eine .csv mit einer Liste von Websites hochladen. Diese Optionen sind hilfreich, wenn Sie ein Pilotprojekt erstellen und eine begrenzte Anzahl von Websites zum Starten verwenden möchten.
 
-Sie können die CSV-Vorlage unten kopieren:
+Sie können die vorlage .csv kopieren:
 
 ``` csv
 Site name,URL
@@ -63,7 +63,7 @@ Es wird empfohlen, einen Prozess für Benutzer oder Wissensmanager zu erstellen,
 
 ### <a name="multi-geo"></a>Multi-Geo
 
-Wenn Ihre Organisation [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)bereitgestellt hat, wird das Themencenter am zentralen Standort bereitgestellt, und nur SharePoint-Websites am zentralen Standort stehen als Quellen für Themen zur Verfügung. (Wenn Sie Alle **Websites auswählen,** verwendet "Viva Topics" alle Websites am zentralen Standort.)
+Wenn Ihre Organisation Microsoft 365 [Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo)bereitgestellt hat, wird das Themencenter am zentralen Standort bereitgestellt, und nur SharePoint-Standorte am zentralen Standort stehen als Quellen für Themen zur Verfügung. (Wenn Sie Alle **Websites auswählen,** verwendet "Viva Topics" alle Websites am zentralen Standort.)
 
 Die Verarbeitung und Speicherung von Inhalten erfolgt an zentraler Stelle.
 
@@ -90,9 +90,9 @@ Wenn Sie das Erstellen und Bearbeiten von Themen auf bestimmte Personen oder Gru
 
 Sie können auswählen, dass niemand an Themen mit beitragen kann, dies wird jedoch nicht empfohlen. Wissensmanager können weiterhin Themen bearbeiten und erstellen, wenn Sie diese Option auswählen.
 
-*Themenbetrachter*
+*Betrachter von Topics*
 
-Themenbetrachter können Informationen auf Themenseiten, in Suchergebnissen und in Den Inhalten wie SharePoint-Seiten anzeigen. Benutzer können nur dann ermittelte Themen sehen, wenn sie Zugriff auf die Dateien und Seiten haben, in denen das Thema entdeckt wurde.
+Themenbetrachter können Informationen auf Themenseiten, in Suchergebnissen und wann Themen in den Inhalten hervorgehoben werden, z. B. SharePoint Seiten. Benutzer können nur dann ermittelte Themen sehen, wenn sie Zugriff auf die Dateien und Seiten haben, in denen das Thema entdeckt wurde.
 
 Beim Einrichten von Themenbetrachtern können Sie aus:
 
@@ -106,11 +106,11 @@ Wir empfehlen **Jeder in meiner Organisation,** aber wenn Sie ein Pilotprojekt e
 
 Als Administrator können Sie bestimmte Themen von der Themenerfahrung ausschließen. Dies ist hilfreich, wenn Vertrauliche Daten nicht in Themen angezeigt werden sollen. Während Wissensmanager Themen im Themencenter ausschließen können, sind vom Administrator ausgeschlossene Themen nicht einmal für Wissensmanager sichtbar. (Wissensmanager können nach der Ermittlung auch Themen im Themencenter entfernen.)
 
-Wenn Sie Themen auf Administratorebene ausschließen möchten, müssen Sie sie einer CSV-Datei hinzufügen und die Datei hochladen. Sie können dies während des Setups oder höher tun.
+Wenn Sie Themen auf Administratorebene ausschließen möchten, müssen Sie sie einer .csv hinzufügen und die Datei hochladen. Sie können dies während des Setups oder höher tun.
 
-Die CSV-Datei muss die folgenden Parameter enthalten:
+Die .csv muss die folgenden Parameter enthalten:
 
-- **Name**: Geben Sie den Namen des Themas ein, das Sie ausschließen möchten. Sie können auf zwei Arten vorgehen:
+- **Name**: Geben Sie den Namen des Themas ein, das ausgeschlossen werden soll. Sie können auf zwei Arten vorgehen:
 - **MatchType-Exact/Partial**: Geben Sie ein, ob der eingegebene Name ein exakter oder *teilweiser* *Übereinstimmungstyp* war.
     - Genaue Übereinstimmung: Sie können den genauen Namen oder das Akronym (z. B. *Contoso* oder *ATL) eingeben.*
     - Teilweise Übereinstimmung: Sie können alle Themen ausschließen, in denen ein bestimmtes Wort enthalten ist.  Der Bogen schließt *beispielsweise* alle Themen  aus, in denen der Wortbogen enthalten ist, z. B. Bogenkreis, Lichtbogenverschwesung oder *Schulungsbogen.*  Beachten Sie, dass Themen, in denen der Text als Teil eines Worts enthalten ist, wie z. B. Architektur, nicht *ausgeschlossen werden.*
@@ -126,17 +126,17 @@ Name (required),Expansion,MatchType- Exact/Partial (required)
 
 ## <a name="administration"></a>Verwaltung
 
-Wenn Sie Themen als Teil des Einrichtungsprozesses einrichten, wird automatisch ein Themencenter erstellt. Überlegen Sie, wie Sie das Themencenter benennen möchten und wie die URL sein soll. Sie können sowohl den Namen als auch die URL im Rahmen des Einrichtungsprozesses festlegen und den Namen (jedoch nicht die URL) später im Microsoft 365 Admin Center ändern. Sie können nur ein Themencenter haben.
+Wenn Sie Themen als Teil des Einrichtungsprozesses einrichten, wird automatisch ein Themencenter erstellt. Überlegen Sie, wie Sie das Themencenter benennen möchten und wie die URL sein soll. Sie können sowohl den Namen als auch die URL im Rahmen des Setupprozesses festlegen und den Namen (jedoch nicht die URL) später im Microsoft 365 ändern. Sie können nur ein Themencenter haben.
 
 ## <a name="setup-checklist"></a>Prüfliste zum Einrichten
 
 Wenn Sie Themenerfahrungen einrichten, benötigen Sie die folgenden Elemente, während Sie den Setup-Assistenten durchgehen:
 
 > [!div class="checklist"]
-> * Liste der Websites, die ein- oder ausgeschlossen werden, wenn nicht alle Websites für die Themenerkennung enthalten sind
-> * Sicherheitsgruppe für Themenbetrachter, wenn nicht allen Benutzern das Anzeigen von Themen erlaubt wird
-> * Sicherheitsgruppe für Mitwirkende von Themen, wenn nicht allen Benutzern das Erstellen und Bearbeiten von Themen ermöglicht wird
-> * Sicherheitsgruppe für Themenwissensmanager, wenn nicht allen Benutzern die Verwaltung von Themen ermöglicht wird
+> * Liste der ein- oder auszuschließenden Websites, wenn nicht alle Websites für die Themenentdeckung eingeschlossen werden
+> * Sicherheitsgruppe für Themenbetrachter, wenn nicht alle Benutzer Themen anzeigen können
+> * Sicherheitsgruppe für Themenmitwirkende, wenn nicht alle Benutzer Themen erstellen und bearbeiten können
+> * Sicherheitsgruppe für Themenwissensverwalter, wenn nicht alle Benutzer Themen verwalten können
 > * Liste der vertraulichen Themen, die von der Themenerkennung ausgeschlossen werden
 > * Ein Name für Ihre Themencenterwebsite
 
@@ -150,4 +150,4 @@ Wenn Sie Themenerfahrungen einrichten, benötigen Sie die folgenden Elemente, w�
 
 [Verwalten von Themenberechtigungen in Microsoft 365](topic-experiences-user-permissions.md)
 
-[Ändern des Namens des Themencenters in Microsoft 365](topic-experiences-administration.md)
+[Ändern Sie den Namen des Themencenters in Microsoft 365](topic-experiences-administration.md)

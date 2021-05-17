@@ -37,7 +37,7 @@ ms.locfileid: "51580272"
 ---
 # <a name="configure-windows-10-devices"></a>Konfigurieren von Windows 10-Geräten
 
-Während des Setups erstellen Sie eine Geräterichtlinie für Windows 10, die für alle Benutzer in Ihrer Organisation gilt. Wenn sich ein Benutzer mit seinem Geschäfts- oder Schulkonto bei einer Office-App auf seinem Windows 10-Gerät meldet, werden die von Ihnen konfigurierten Einstellungen automatisch angewendet, um sicherzustellen, dass der Benutzer eine sichere Verbindung herstellen kann.
+Während des Setups erstellen Sie eine Geräterichtlinie für Windows 10, die für alle Benutzer in Ihrer Organisation gilt. Wenn sich ein Benutzer bei einem Office-App auf seinem Windows 10-Gerät mit seinem Arbeits- oder Schulkonto einschreibt, werden die von Ihnen konfigurierten Einstellungen automatisch angewendet, um sicherzustellen, dass der Benutzer eine sichere Verbindung herstellen kann.
   
 Wir empfehlen, während des Setups die Standardkonfiguration zu übernehmen. Nach dem Setup können Sie weitere Richtlinien erstellen und sie auf bestimmte Benutzergruppen richten.
   
