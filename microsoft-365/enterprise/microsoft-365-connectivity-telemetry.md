@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 Connectivity Telemetry
+title: Microsoft 365 Konnektivitätstelemetrie
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - BCS160
 ms.assetid: f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132
-description: Dieser Artikel enthält Informationen zur Microsoft 365 Connectivity Telemetry.
+description: Dieser Artikel enthält Informationen zu Microsoft 365 Connectivity Telemetry.
 ms.openlocfilehash: 9ad7abbabc293e1b283d6742966982b09f0bffa1
 ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/26/2021
 ms.locfileid: "52029149"
 ---
-# <a name="microsoft-365-connectivity-telemetry"></a><span data-ttu-id="d9352-103">Microsoft 365 Connectivity Telemetry</span><span class="sxs-lookup"><span data-stu-id="d9352-103">Microsoft 365 Connectivity Telemetry</span></span>
+# <a name="microsoft-365-connectivity-telemetry"></a><span data-ttu-id="d26a1-103">Microsoft 365 Konnektivitätstelemetrie</span><span class="sxs-lookup"><span data-stu-id="d26a1-103">Microsoft 365 Connectivity Telemetry</span></span>
 
-<span data-ttu-id="d9352-104">Dieser Artikel wird ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="d9352-104">This article is in progress.</span></span>
+<span data-ttu-id="d26a1-104">Dieser Artikel wird ausgeführt.</span><span class="sxs-lookup"><span data-stu-id="d26a1-104">This article is in progress.</span></span>
 
