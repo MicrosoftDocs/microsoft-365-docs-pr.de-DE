@@ -19,26 +19,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296599"
 ---
-# <a name="contact-support-for-austria"></a><span data-ttu-id="be855-103">Kontaktieren des Support für Österreich</span><span class="sxs-lookup"><span data-stu-id="be855-103">Contact support for Austria</span></span>
+# <a name="contact-support-for-austria"></a><span data-ttu-id="c85cc-103">Kontaktieren des Support für Österreich</span><span class="sxs-lookup"><span data-stu-id="c85cc-103">Contact support for Austria</span></span>
 
-<span data-ttu-id="be855-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="be855-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="c85cc-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="c85cc-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="be855-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="be855-105">Phone number</span></span>
-<span data-ttu-id="be855-106">0800 080 650</span><span class="sxs-lookup"><span data-stu-id="be855-106">0800 080 650</span></span>
+## <a name="phone-number"></a><span data-ttu-id="c85cc-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="c85cc-105">Phone number</span></span>
+<span data-ttu-id="c85cc-106">0800 080 650</span><span class="sxs-lookup"><span data-stu-id="c85cc-106">0800 080 650</span></span>
 
-## <a name="hours"></a><span data-ttu-id="be855-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="be855-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="be855-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="be855-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="c85cc-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="c85cc-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="c85cc-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="c85cc-108">Billing Support:</span></span>
 
-<span data-ttu-id="be855-109">Deutsch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="be855-109">German: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="c85cc-109">Deutsch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="c85cc-109">German: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="be855-110">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="be855-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="c85cc-110">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="c85cc-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="be855-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="be855-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="c85cc-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="c85cc-111">Technical Support:</span></span>
 
-<span data-ttu-id="be855-112">Deutsch: Mo-Fr 8:00 bis 21:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="be855-112">German: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="c85cc-112">Deutsch: Mo-Fr 8:00 bis 21:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="c85cc-112">German: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="be855-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="be855-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="c85cc-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="c85cc-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="be855-114">Alternative Telefon Nummer: 01 206 09 15 78</span><span class="sxs-lookup"><span data-stu-id="be855-114">Alternative Phone Number: 01 206 09 15 78</span></span>
+<span data-ttu-id="c85cc-114">Alternative Telefon Nummer: 01 206 09 15 78</span><span class="sxs-lookup"><span data-stu-id="c85cc-114">Alternative Phone Number: 01 206 09 15 78</span></span>
 
-<span data-ttu-id="be855-115">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="be855-115">Local call charges apply</span></span>
+<span data-ttu-id="c85cc-115">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="c85cc-115">Local call charges apply</span></span>

@@ -19,22 +19,22 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296335"
 ---
-# <a name="contact-support-for-comoros"></a><span data-ttu-id="61a3a-103">Kontaktieren des Support für Komoren</span><span class="sxs-lookup"><span data-stu-id="61a3a-103">Contact support for Comoros</span></span>
+# <a name="contact-support-for-comoros"></a><span data-ttu-id="401b4-103">Kontaktieren des Support für Komoren</span><span class="sxs-lookup"><span data-stu-id="401b4-103">Contact support for Comoros</span></span>
 
-<span data-ttu-id="61a3a-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="61a3a-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="401b4-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="401b4-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="61a3a-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="61a3a-105">Phone number</span></span>
-<span data-ttu-id="61a3a-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="61a3a-106">+1 312 843 5147</span></span>
+## <a name="phone-number"></a><span data-ttu-id="401b4-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="401b4-105">Phone number</span></span>
+<span data-ttu-id="401b4-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="401b4-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="61a3a-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="61a3a-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="61a3a-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="61a3a-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="401b4-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="401b4-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="401b4-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="401b4-108">Billing Support:</span></span>
 
-<span data-ttu-id="61a3a-109">Französisch: Mon-Fri 11:00-19:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="61a3a-109">French: Mon-Fri 11 AM-7 PM</span></span>
+<span data-ttu-id="401b4-109">Französisch: Mon-Fri 11:00-19:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="401b4-109">French: Mon-Fri 11 AM-7 PM</span></span>
 
-<span data-ttu-id="61a3a-110">Englisch: Mon-Fri 11:00-19:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="61a3a-110">English: Mon-Fri 11 AM-7 PM</span></span>
+<span data-ttu-id="401b4-110">Englisch: Mon-Fri 11:00-19:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="401b4-110">English: Mon-Fri 11 AM-7 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="61a3a-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="61a3a-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="401b4-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="401b4-111">Technical Support:</span></span>
 
-<span data-ttu-id="61a3a-112">Französisch: Mon-Fri 10:00-23:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="61a3a-112">French: Mon-Fri 10 AM-11 PM</span></span>
+<span data-ttu-id="401b4-112">Französisch: Mon-Fri 10:00-23:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="401b4-112">French: Mon-Fri 10 AM-11 PM</span></span>
 
-<span data-ttu-id="61a3a-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="61a3a-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="401b4-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="401b4-113">English: 24 hours a day, 7 days a week</span></span>

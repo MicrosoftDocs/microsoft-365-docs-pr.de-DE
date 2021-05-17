@@ -19,28 +19,28 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296924"
 ---
-# <a name="contact-support-for-belgium"></a><span data-ttu-id="70a7f-103">Wenden Sie sich an den Support für Belgien</span><span class="sxs-lookup"><span data-stu-id="70a7f-103">Contact support for Belgium</span></span>
+# <a name="contact-support-for-belgium"></a><span data-ttu-id="5aa53-103">Wenden Sie sich an den Support für Belgien</span><span class="sxs-lookup"><span data-stu-id="5aa53-103">Contact support for Belgium</span></span>
 
-<span data-ttu-id="70a7f-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="70a7f-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="5aa53-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="5aa53-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="70a7f-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="70a7f-105">Phone number</span></span>
-<span data-ttu-id="70a7f-106">0800 81174</span><span class="sxs-lookup"><span data-stu-id="70a7f-106">0800 81174</span></span>
+## <a name="phone-number"></a><span data-ttu-id="5aa53-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="5aa53-105">Phone number</span></span>
+<span data-ttu-id="5aa53-106">0800 81174</span><span class="sxs-lookup"><span data-stu-id="5aa53-106">0800 81174</span></span>
 
-## <a name="hours"></a><span data-ttu-id="70a7f-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="70a7f-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="70a7f-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="70a7f-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="5aa53-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="5aa53-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="5aa53-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="5aa53-108">Billing Support:</span></span>
 
-<span data-ttu-id="70a7f-109">Niederländisch: Mon-Fri 9:00-17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="70a7f-109">Dutch: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="5aa53-109">Niederländisch: Mon-Fri 9:00-17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="5aa53-109">Dutch: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="70a7f-110">Französisch: Mon-Fri 09:00-17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="70a7f-110">French: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="5aa53-110">Französisch: Mon-Fri 09:00-17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="5aa53-110">French: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="70a7f-111">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="70a7f-111">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="5aa53-111">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="5aa53-111">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="70a7f-112">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="70a7f-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="5aa53-112">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="5aa53-112">Technical Support:</span></span>
 
-<span data-ttu-id="70a7f-113">Französisch: Mon-Fri 08:00-21:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="70a7f-113">French: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="5aa53-113">Französisch: Mon-Fri 08:00-21:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="5aa53-113">French: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="70a7f-114">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="70a7f-114">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="5aa53-114">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="5aa53-114">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="70a7f-115">Alternative Telefon Nummer: 02 200 88 84</span><span class="sxs-lookup"><span data-stu-id="70a7f-115">Alternative Phone Number: 02 200 88 84</span></span>
+<span data-ttu-id="5aa53-115">Alternative Telefonnummer: 02 200 88 84</span><span class="sxs-lookup"><span data-stu-id="5aa53-115">Alternative Phone Number: 02 200 88 84</span></span>
 
-<span data-ttu-id="70a7f-116">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="70a7f-116">Local call charges apply</span></span>
+<span data-ttu-id="5aa53-116">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="5aa53-116">Local call charges apply</span></span>

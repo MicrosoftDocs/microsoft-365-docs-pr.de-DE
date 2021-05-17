@@ -19,22 +19,22 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297824"
 ---
-# <a name="contact-support-for-romania"></a><span data-ttu-id="b73ec-103">Wenden Sie sich an den Support für Rumänien</span><span class="sxs-lookup"><span data-stu-id="b73ec-103">Contact support for Romania</span></span>
+# <a name="contact-support-for-romania"></a><span data-ttu-id="00352-103">Wenden Sie sich an den Support für Rumänien</span><span class="sxs-lookup"><span data-stu-id="00352-103">Contact support for Romania</span></span>
 
-<span data-ttu-id="b73ec-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="b73ec-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="00352-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="00352-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="b73ec-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="b73ec-105">Phone number</span></span>
-<span data-ttu-id="b73ec-106">0800 896 956</span><span class="sxs-lookup"><span data-stu-id="b73ec-106">0800 896 956</span></span>
+## <a name="phone-number"></a><span data-ttu-id="00352-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="00352-105">Phone number</span></span>
+<span data-ttu-id="00352-106">0800 896 956</span><span class="sxs-lookup"><span data-stu-id="00352-106">0800 896 956</span></span>
 
-## <a name="hours"></a><span data-ttu-id="b73ec-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="b73ec-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="b73ec-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="b73ec-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="00352-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="00352-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="00352-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="00352-108">Billing Support:</span></span>
 
-<span data-ttu-id="b73ec-109">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="b73ec-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="00352-109">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="00352-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="b73ec-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="b73ec-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="00352-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="00352-110">Technical Support:</span></span>
 
-<span data-ttu-id="b73ec-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="b73ec-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="00352-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="00352-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="b73ec-112">Alternative Telefon Nummer: 372 741 961</span><span class="sxs-lookup"><span data-stu-id="b73ec-112">Alternative Phone Number: 372 741 961</span></span>
+<span data-ttu-id="00352-112">Alternative Telefonnummer: 372 741 961</span><span class="sxs-lookup"><span data-stu-id="00352-112">Alternative Phone Number: 372 741 961</span></span>
 
-<span data-ttu-id="b73ec-113">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="b73ec-113">Local call charges apply</span></span>
+<span data-ttu-id="00352-113">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="00352-113">Local call charges apply</span></span>

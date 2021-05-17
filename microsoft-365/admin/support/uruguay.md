@@ -19,18 +19,18 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297464"
 ---
-# <a name="contact-support-for-uruguay"></a><span data-ttu-id="45784-103">Kontaktieren des Support für Uruguay</span><span class="sxs-lookup"><span data-stu-id="45784-103">Contact support for Uruguay</span></span>
+# <a name="contact-support-for-uruguay"></a><span data-ttu-id="bb65d-103">Kontaktieren des Support für Uruguay</span><span class="sxs-lookup"><span data-stu-id="bb65d-103">Contact support for Uruguay</span></span>
 
-<span data-ttu-id="45784-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="45784-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="bb65d-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="bb65d-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="45784-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="45784-105">Phone number</span></span>
-<span data-ttu-id="45784-106">000 411 002 7131</span><span class="sxs-lookup"><span data-stu-id="45784-106">000 411 002 7131</span></span>
+## <a name="phone-number"></a><span data-ttu-id="bb65d-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="bb65d-105">Phone number</span></span>
+<span data-ttu-id="bb65d-106">000 411 002 7131</span><span class="sxs-lookup"><span data-stu-id="bb65d-106">000 411 002 7131</span></span>
 
-## <a name="hours"></a><span data-ttu-id="45784-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="45784-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="45784-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="45784-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="bb65d-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="bb65d-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="bb65d-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="bb65d-108">Billing Support:</span></span>
 
-<span data-ttu-id="45784-109">Spanisch: Mon-Fri 9:00-17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="45784-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="bb65d-109">Spanisch: Mon-Fri 9:00-17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="bb65d-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="45784-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="45784-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="bb65d-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="bb65d-110">Technical Support:</span></span>
 
-<span data-ttu-id="45784-111">Spanisch: 24 Stunden am Tag, 7 Tage die Woche</span><span class="sxs-lookup"><span data-stu-id="45784-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="bb65d-111">Spanisch: 24 Stunden am Tag, 7 Tage die Woche</span><span class="sxs-lookup"><span data-stu-id="bb65d-111">Spanish: 24 hours a day, 7 days a week</span></span>

@@ -19,20 +19,20 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298758"
 ---
-# <a name="contact-support-for-guernsey"></a><span data-ttu-id="0c7c8-103">Kontaktieren des Support für Guernsey</span><span class="sxs-lookup"><span data-stu-id="0c7c8-103">Contact support for Guernsey</span></span>
+# <a name="contact-support-for-guernsey"></a><span data-ttu-id="2d8de-103">Kontaktieren des Support für Guernsey</span><span class="sxs-lookup"><span data-stu-id="2d8de-103">Contact support for Guernsey</span></span>
 
-<span data-ttu-id="0c7c8-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="0c7c8-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="2d8de-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="2d8de-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="0c7c8-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="0c7c8-105">Phone number</span></span>
-<span data-ttu-id="0c7c8-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="0c7c8-106">+1 312 843 5151</span></span>
+## <a name="phone-number"></a><span data-ttu-id="2d8de-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="2d8de-105">Phone number</span></span>
+<span data-ttu-id="2d8de-106">+1 312 843 5151</span><span class="sxs-lookup"><span data-stu-id="2d8de-106">+1 312 843 5151</span></span>
 
-## <a name="hours"></a><span data-ttu-id="0c7c8-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="0c7c8-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="0c7c8-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="0c7c8-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="2d8de-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="2d8de-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="2d8de-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="2d8de-108">Billing Support:</span></span>
 
-<span data-ttu-id="0c7c8-109">Englisch: Mon-Fri 10:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="0c7c8-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="2d8de-109">Englisch: Mon-Fri 10:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="2d8de-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="0c7c8-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="0c7c8-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="2d8de-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="2d8de-110">Technical Support:</span></span>
 
-<span data-ttu-id="0c7c8-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="0c7c8-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="2d8de-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="2d8de-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="0c7c8-112">Internationale Anrufgebühren</span><span class="sxs-lookup"><span data-stu-id="0c7c8-112">International call charges apply</span></span>
+<span data-ttu-id="2d8de-112">Internationale Anrufgebühren</span><span class="sxs-lookup"><span data-stu-id="2d8de-112">International call charges apply</span></span>

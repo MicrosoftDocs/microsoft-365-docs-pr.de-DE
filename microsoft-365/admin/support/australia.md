@@ -19,22 +19,22 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52296611"
 ---
-# <a name="contact-support-for-australia"></a><span data-ttu-id="f1ac5-103">Kontaktieren des Support für Australien</span><span class="sxs-lookup"><span data-stu-id="f1ac5-103">Contact support for Australia</span></span>
+# <a name="contact-support-for-australia"></a><span data-ttu-id="3d461-103">Kontaktieren des Support für Australien</span><span class="sxs-lookup"><span data-stu-id="3d461-103">Contact support for Australia</span></span>
 
-<span data-ttu-id="f1ac5-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="f1ac5-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="3d461-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="3d461-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="f1ac5-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="f1ac5-105">Phone number</span></span>
-<span data-ttu-id="f1ac5-106">1800 197 503</span><span class="sxs-lookup"><span data-stu-id="f1ac5-106">1800 197 503</span></span>
+## <a name="phone-number"></a><span data-ttu-id="3d461-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="3d461-105">Phone number</span></span>
+<span data-ttu-id="3d461-106">1800 197 503</span><span class="sxs-lookup"><span data-stu-id="3d461-106">1800 197 503</span></span>
 
-## <a name="hours"></a><span data-ttu-id="f1ac5-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="f1ac5-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="f1ac5-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="f1ac5-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="3d461-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="3d461-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="3d461-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="3d461-108">Billing Support:</span></span>
 
-<span data-ttu-id="f1ac5-109">Englisch: Mon-Fri 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="f1ac5-109">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="3d461-109">Englisch: Mon-Fri 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="3d461-109">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="f1ac5-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="f1ac5-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="3d461-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="3d461-110">Technical Support:</span></span>
 
-<span data-ttu-id="f1ac5-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="f1ac5-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="3d461-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="3d461-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="f1ac5-112">Alternative Telefon Nummer: 02 8223 9959</span><span class="sxs-lookup"><span data-stu-id="f1ac5-112">Alternative Phone Number: 02 8223 9959</span></span>
+<span data-ttu-id="3d461-112">Alternative Telefon Nummer: 02 8223 9959</span><span class="sxs-lookup"><span data-stu-id="3d461-112">Alternative Phone Number: 02 8223 9959</span></span>
 
-<span data-ttu-id="f1ac5-113">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="f1ac5-113">Local call charges apply</span></span>
+<span data-ttu-id="3d461-113">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="3d461-113">Local call charges apply</span></span>

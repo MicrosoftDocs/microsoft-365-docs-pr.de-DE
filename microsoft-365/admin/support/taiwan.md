@@ -19,26 +19,26 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297584"
 ---
-# <a name="contact-support-for-taiwan"></a><span data-ttu-id="4c9b0-103">Kontaktieren des Support für Taiwan</span><span class="sxs-lookup"><span data-stu-id="4c9b0-103">Contact support for Taiwan</span></span>
+# <a name="contact-support-for-taiwan"></a><span data-ttu-id="762bb-103">Kontaktieren des Support für Taiwan</span><span class="sxs-lookup"><span data-stu-id="762bb-103">Contact support for Taiwan</span></span>
 
-<span data-ttu-id="4c9b0-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="4c9b0-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="762bb-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="762bb-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="4c9b0-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="4c9b0-105">Phone number</span></span>
-<span data-ttu-id="4c9b0-106">0800 666 802</span><span class="sxs-lookup"><span data-stu-id="4c9b0-106">0800 666 802</span></span>
+## <a name="phone-number"></a><span data-ttu-id="762bb-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="762bb-105">Phone number</span></span>
+<span data-ttu-id="762bb-106">0800 666 802</span><span class="sxs-lookup"><span data-stu-id="762bb-106">0800 666 802</span></span>
 
-## <a name="hours"></a><span data-ttu-id="4c9b0-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="4c9b0-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="4c9b0-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="4c9b0-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="762bb-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="762bb-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="762bb-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="762bb-108">Billing Support:</span></span>
 
-<span data-ttu-id="4c9b0-109">Chinesisch (Mandarin): Mon-Fri 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="4c9b0-109">Chinese (Mandarin): Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="762bb-109">Chinesisch (Mandarin): Mon-Fri 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="762bb-109">Chinese (Mandarin): Mon-Fri 9 AM-6 PM</span></span>
 
-<span data-ttu-id="4c9b0-110">Englisch: Mon-Fri 9:00-18:00 Uhr Lokal</span><span class="sxs-lookup"><span data-stu-id="4c9b0-110">English: Mon-Fri 9 AM-6 PM Local</span></span>
+<span data-ttu-id="762bb-110">Englisch: Mon-Fri 9:00-18:00 Uhr Lokal</span><span class="sxs-lookup"><span data-stu-id="762bb-110">English: Mon-Fri 9 AM-6 PM Local</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="4c9b0-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="4c9b0-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="762bb-111">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="762bb-111">Technical Support:</span></span>
 
-<span data-ttu-id="4c9b0-112">Chinesisch (Mandarin): Mon-Fri 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="4c9b0-112">Chinese (Mandarin): Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="762bb-112">Chinesisch (Mandarin): Mon-Fri 9:00-18:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="762bb-112">Chinese (Mandarin): Mon-Fri 9 AM-6 PM</span></span>
 
-<span data-ttu-id="4c9b0-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="4c9b0-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="762bb-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="762bb-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="4c9b0-114">Alternative Telefon Nummer: 02 2656 7301</span><span class="sxs-lookup"><span data-stu-id="4c9b0-114">Alternative Phone Number: 02 2656 7301</span></span>
+<span data-ttu-id="762bb-114">Alternative Telefonnummer: 02 2656 7301</span><span class="sxs-lookup"><span data-stu-id="762bb-114">Alternative Phone Number: 02 2656 7301</span></span>
 
-<span data-ttu-id="4c9b0-115">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="4c9b0-115">Local call charges apply</span></span>
+<span data-ttu-id="762bb-115">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="762bb-115">Local call charges apply</span></span>

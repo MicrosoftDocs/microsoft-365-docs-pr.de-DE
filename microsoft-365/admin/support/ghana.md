@@ -19,24 +19,24 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52298806"
 ---
-# <a name="contact-support-for-ghana"></a><span data-ttu-id="b6242-103">Kontaktieren des Support für Ghana</span><span class="sxs-lookup"><span data-stu-id="b6242-103">Contact support for Ghana</span></span>
+# <a name="contact-support-for-ghana"></a><span data-ttu-id="a1140-103">Kontaktieren des Support für Ghana</span><span class="sxs-lookup"><span data-stu-id="a1140-103">Contact support for Ghana</span></span>
 
-<span data-ttu-id="b6242-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="b6242-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="a1140-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="a1140-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="b6242-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="b6242-105">Phone number</span></span>
-<span data-ttu-id="b6242-106">+234 1 271 0156</span><span class="sxs-lookup"><span data-stu-id="b6242-106">+234 1 271 0156</span></span>
+## <a name="phone-number"></a><span data-ttu-id="a1140-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="a1140-105">Phone number</span></span>
+<span data-ttu-id="a1140-106">+234 1 271 0156</span><span class="sxs-lookup"><span data-stu-id="a1140-106">+234 1 271 0156</span></span>
 
-<span data-ttu-id="b6242-107">Option 9 auswählen</span><span class="sxs-lookup"><span data-stu-id="b6242-107">Select option 9</span></span>
+<span data-ttu-id="a1140-107">Option 9 auswählen</span><span class="sxs-lookup"><span data-stu-id="a1140-107">Select option 9</span></span>
 
-<span data-ttu-id="b6242-108">Eingabecode 7704</span><span class="sxs-lookup"><span data-stu-id="b6242-108">Enter code 7704</span></span>
+<span data-ttu-id="a1140-108">Eingabecode 7704</span><span class="sxs-lookup"><span data-stu-id="a1140-108">Enter code 7704</span></span>
 
-## <a name="hours"></a><span data-ttu-id="b6242-109">Stunden</span><span class="sxs-lookup"><span data-stu-id="b6242-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="b6242-110">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="b6242-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="a1140-109">Stunden</span><span class="sxs-lookup"><span data-stu-id="a1140-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="a1140-110">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="a1140-110">Billing Support:</span></span>
 
-<span data-ttu-id="b6242-111">Englisch: Mon-Fri 08:00-16:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="b6242-111">English: Mon-Fri 8 AM-4 PM</span></span>
+<span data-ttu-id="a1140-111">Englisch: Mon-Fri 08:00-16:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="a1140-111">English: Mon-Fri 8 AM-4 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="b6242-112">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="b6242-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="a1140-112">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="a1140-112">Technical Support:</span></span>
 
-<span data-ttu-id="b6242-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="b6242-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="a1140-113">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="a1140-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="b6242-114">Internationale Anrufgebühren</span><span class="sxs-lookup"><span data-stu-id="b6242-114">International call charges apply</span></span>
+<span data-ttu-id="a1140-114">Internationale Anrufgebühren</span><span class="sxs-lookup"><span data-stu-id="a1140-114">International call charges apply</span></span>

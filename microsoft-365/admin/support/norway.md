@@ -19,22 +19,22 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/10/2021
 ms.locfileid: "52297920"
 ---
-# <a name="contact-support-for-norway"></a><span data-ttu-id="1649d-103">Kontaktieren des Support für Norwegen</span><span class="sxs-lookup"><span data-stu-id="1649d-103">Contact support for Norway</span></span>
+# <a name="contact-support-for-norway"></a><span data-ttu-id="fa784-103">Kontaktieren des Support für Norwegen</span><span class="sxs-lookup"><span data-stu-id="fa784-103">Contact support for Norway</span></span>
 
-<span data-ttu-id="1649d-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="1649d-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
+<span data-ttu-id="fa784-104">[Suchen Sie ein anderes Land oder eine andere Region](../../business-video/get-help-support.md).</span><span class="sxs-lookup"><span data-stu-id="fa784-104">[Find another country or region](../../business-video/get-help-support.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="1649d-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="1649d-105">Phone number</span></span>
-<span data-ttu-id="1649d-106">800 31068</span><span class="sxs-lookup"><span data-stu-id="1649d-106">800 31068</span></span>
+## <a name="phone-number"></a><span data-ttu-id="fa784-105">Telefonnummer</span><span class="sxs-lookup"><span data-stu-id="fa784-105">Phone number</span></span>
+<span data-ttu-id="fa784-106">800 31068</span><span class="sxs-lookup"><span data-stu-id="fa784-106">800 31068</span></span>
 
-## <a name="hours"></a><span data-ttu-id="1649d-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="1649d-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="1649d-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="1649d-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="fa784-107">Stunden</span><span class="sxs-lookup"><span data-stu-id="fa784-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="fa784-108">Abrechnungssupport:</span><span class="sxs-lookup"><span data-stu-id="fa784-108">Billing Support:</span></span>
 
-<span data-ttu-id="1649d-109">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="1649d-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="fa784-109">Englisch: Mo-Fr 9:00 bis 17:00 Uhr</span><span class="sxs-lookup"><span data-stu-id="fa784-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="1649d-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="1649d-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="fa784-110">Technischer Support:</span><span class="sxs-lookup"><span data-stu-id="fa784-110">Technical Support:</span></span>
 
-<span data-ttu-id="1649d-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="1649d-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="fa784-111">Englisch: rund um die Uhr</span><span class="sxs-lookup"><span data-stu-id="fa784-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="1649d-112">Alternative Telefon Nummer: 22 31 07 48</span><span class="sxs-lookup"><span data-stu-id="1649d-112">Alternative Phone Number: 22 31 07 48</span></span>
+<span data-ttu-id="fa784-112">Alternative Telefonnummer: 22 31 07 48</span><span class="sxs-lookup"><span data-stu-id="fa784-112">Alternative Phone Number: 22 31 07 48</span></span>
 
-<span data-ttu-id="1649d-113">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="1649d-113">Local call charges apply</span></span>
+<span data-ttu-id="fa784-113">Es gelten die Ortstarife.</span><span class="sxs-lookup"><span data-stu-id="fa784-113">Local call charges apply</span></span>
