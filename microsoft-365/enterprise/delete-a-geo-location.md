@@ -12,7 +12,7 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: Dieser Artikel enthält Informationen zum Löschen eines Satellitenstandorts bei Microsoft 365 Multi-Geo. Wenn ein Satellitenstandort gelöscht wird, werden auch alle Benutzerdaten endgültig gelöscht.
+description: Dieser Artikel enthält Informationen zum Löschen eines Satellitenstandorts bei Microsoft 365 Multi-Geo. Wenn ein Satellitenspeicherort gelöscht wird, werden auch alle Benutzerdaten dauerhaft gelöscht.
 ms.openlocfilehash: 7a58ed91a0bb801fc41ed0a89889ede5e65b4a21
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT

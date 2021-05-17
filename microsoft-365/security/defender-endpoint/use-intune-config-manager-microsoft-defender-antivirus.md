@@ -41,9 +41,9 @@ Wenn Sie Microsoft Endpoint Manager oder Microsoft Intune zum Verwalten der Endp
 
 3. Wählen Sie ihre Microsoft Defender Antivirus aus. 
 
-4. Wählen **Sie unter Verwalten** die Option Eigenschaften **aus.**
+4. Wählen Sie unter **Verwalten** die Option **Eigenschaften** aus.
 
-5. Wählen Sie **neben Konfigurationseinstellungen** bearbeiten **aus.**
+5. Wählen Sie direkt neben **Konfigurationseinstellungen** die Option **Bearbeiten** aus.
 
 6. Erweitern Sie den **Abschnitt Scan,** und überprüfen oder bearbeiten Sie Die Scaneinstellungen.
 
@@ -55,4 +55,4 @@ Benötigen Sie Hilfe? Weitere [Informationen finden Sie unter Manage endpoint se
 ## <a name="related-articles"></a>Verwandte Artikel
 
 - [Referenzthemen für Verwaltungs- und Konfigurationstools](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -1,5 +1,5 @@
 ---
-title: Adressraumrechner für Azure-Gateway-Subnetze
+title: Adressraumrechner für Azure-Gatewaysubnetze
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,7 +15,7 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - seo-marvel-apr2020
-description: 'Zusammenfassung: Berechnen Sie den Adressraum eines #A0 mit C3, Python oder PowerShell.'
+description: 'Zusammenfassung: Berechnen Sie den Adressraum eines Azure-Gatewaysubnetzes mit C3, Python oder PowerShell.'
 ms.openlocfilehash: d92bea5c36fde6277154d19365ed0bdaa5df4254
 ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
@@ -23,20 +23,20 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "49780568"
 ---
-# <a name="address-space-calculator-for-azure-gateway-subnets"></a>Adressraumrechner für Azure-Gateway-Subnetze
+# <a name="address-space-calculator-for-azure-gateway-subnets"></a>Adressraumrechner für Azure-Gatewaysubnetze
 
 Ein virtuelles Netzwerk (VNet) in Azure-Infrastrukturdiensten, das mit anderen Netzwerken verbunden ist, muss über ein Gatewaysubnetz verfügen. Die bewährten Methoden zum Definieren des Gatewaysubnetzes sind:
 
-- Die Präfixlänge des Gatewaysubnetzes kann eine maximale Präfixlänge von 29 haben (z. B. 10.119.255.248/29), die aktuelle Empfehlung besteht jedoch in der Verwendung einer Präfixlänge von 27 (z. B. 10.119.255.224/27).
+- Die Präfixlänge des Gatewaysubnetzes kann eine maximale Präfixlänge von 29 haben (z. B. 10.119.255.248/29), aber die aktuelle Empfehlung ist, dass Sie eine Präfixlänge von 27 verwenden (z. B. 10.119.255.224/27).
 - Verwenden Sie beim Definieren des Adressraums des Gatewaysubnetzes den letzten Teil des VNet-Adressraums.
 
-Für die zweite Empfehlung können Sie den Adressraum des Gatewaysubnetzes ermitteln, indem Sie die für das Gatewaysubnetz verwendeten Bits auf 0 und die verbleibenden Bits im VNet-Adressraum auf 1 festlegen. Um den Adressraum des Gatewaysubnetzes schnell zu berechnen, ohne in eine Binärdatei und zurück in dezimal konvertieren zu müssen, können Sie eine Konsolenanwendung verwenden, die in C# oder Python oder mit einem #A0 geschrieben wurde.
+Für die zweite Empfehlung können Sie den Adressraum des Gatewaysubnetzes bestimmen, indem Sie die für das Gatewaysubnetz verwendeten Bits auf 0 und die verbleibenden Bits im VNet-Adressraum auf 1 festlegen. Um den Adressraum des Gatewaysubnetzs schnell zu berechnen, ohne in binäre und zurück in Dezimalzahlen konvertieren zu müssen, können Sie eine Konsolenanwendung verwenden, die in C# oder Python oder mit einem PowerShell-Befehlsblock geschrieben wurde.
 
-Dieser Artikel enthält C#-, Python- und PowerShell-Codeblöcke, die den Adressraum des Gatewaysubnetzes basierend auf den Werten von w.x.y.z/n für das #A0 und die Präfixlänge des Gatewaysubnetzes berechnen.
+Dieser Artikel enthält C#-, Python- und PowerShell-Codeblöcke, die den Adressraum des Gatewaysubnetzs basierend auf den Werten von w.x.y.z/n für das VNet-Adresspräfix und die Länge des Gatewaysubnetzpräfixs berechnen.
 
-## <a name="c-code-block"></a>C#-Codeblock
+## <a name="c-code-block"></a>C# Codeblock
 
-Verwenden Sie diesen Codeblock, um eine #A0 in C# zu erstellen.
+Verwenden Sie diesen Codeblock, um eine Konsolen-App in einem C#.
 
 ```c#
 using System; 
@@ -149,7 +149,7 @@ print(gwAddrPref)
 
 ## <a name="powershell-command-block"></a>PowerShell-Befehlsblock
 
-Füllen Sie die Werte aus, und führen Sie den resultierenden Befehlsblock in einem PowerShell-Fenster oder in der integrierten PowerShell Script Environment (ISE) aus.
+Füllen Sie die Werte aus, und führen Sie den resultierenden Befehlsblock in einem PowerShell-Fenster oder in der integrierten PowerShell-Skriptumgebung (ISE) aus.
 
 ```powershell
 # Specify the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet: 

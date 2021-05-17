@@ -34,7 +34,7 @@ Microsoft 365 bietet zwei Einrichtungserfahrungen:
 - Ersteinrichtung mithilfe des Setup-Assistenten
 - Fortlaufendes und erweitertes Setup mithilfe der **Seite "Setup"**
 
-Der Setup-Assistent bietet eine geführte exemplarische Vorgehensweise zum Einrichten der grundlegenden Microsoft 365-Konfiguration. Nachdem Sie die Ersteinrichtung abgeschlossen haben, können Sie zur Seite **Setup** wechseln, um das Einrichten und Konfigurieren der Dienste zu beenden, die mit Ihren Abonnements enthalten sind.
+Der Setup-Assistent bietet eine geführte exemplarische Vorgehensweise zum Einrichten der grundlegenden Microsoft 365 Konfiguration. Nachdem Sie die Ersteinrichtung abgeschlossen haben, können Sie zur Seite **Setup** wechseln, um das Einrichten und Konfigurieren der Dienste zu beenden, die mit Ihren Abonnements enthalten sind.
 
 ## <a name="use-the-setup-wizard-to-complete-initial-setup-tasks"></a>Ausführen der ersten Setupaufgaben mithilfe des Setup-Assistenten
 
@@ -44,21 +44,21 @@ Wechseln Sie zum Einrichten Ihres Kontos zum [Admin Center,](https://go.microsof
 
 Der Setup-Assistent führt Sie durch die folgenden Schritte:
 
-1. Installieren Sie die Microsoft 365-Apps auf Ihrem Computer.
+1. Installieren Sie Microsoft 365 Apps auf Ihrem Computer.
 
 2. Wählen Und überprüfen Sie Ihre Domäne, z. B. contoso.com.
 
-3. Fügen Sie neue Benutzer hinzu, und weisen Sie ihnen Lizenzen zu, damit sie Microsoft 365-Apps herunterladen und installieren können.
+3. Fügen Sie neue Benutzer hinzu, und weisen Sie ihnen Lizenzen zu, damit sie apps herunterladen und Microsoft 365 können.
 
-4. Verbinden Sie Ihre Domäne.
+4. Verbinden Ihrer Domäne.
 
 ## <a name="use-the-setup-page-to-complete-and-manage-your-configuration"></a>Verwenden der Setupseite zum Abschließen und Verwalten Der Konfiguration
 
-Wenn Sie auf die **Seite Setup** im Admin [Center zugreifen](https://go.microsoft.com/fwlink/p/?linkid=2024339)möchten, wählen Sie **setup im** Navigationsbereich aus. Basierend auf den von Ihnen erworbenen Produkten werden hier Features, die Sie eingerichtet haben, sowie Ihre Administratorrolle, Aufgaben und zugehörigen Informationen aus Microsoft 365 gezeigt.
+Wenn Sie auf die **Seite Setup** im Admin [Center zugreifen](https://go.microsoft.com/fwlink/p/?linkid=2024339)möchten, wählen Sie **setup im** Navigationsbereich aus. Basierend auf den von Ihnen erworbenen Produkten werden features, die Sie eingerichtet haben, und Ihre Administratorrolle, Aufgaben und zugehörigen Informationen aus Microsoft 365 hier gezeigt.
 
 Die vollständige Liste der Setupaufgaben wird in logischen Kategorien angeordnet, einschließlich derer, die Sie im Setup-Assistenten abgeschlossen haben.
 
-![Microsoft 365 Business Setup-Seite](../../media/o365b-setup-page.png)
+![Microsoft 365 seite "Business Setup"](../../media/o365b-setup-page.png)
 
 Wählen **Sie Ansicht** für jede Aufgabe aus, um Informationen auf einen Blick zu erhalten, z. B. Aufgabenbeschreibung, Benutzerauswirkungen, Voraussetzungen, Implementierungsaufwand sowie Sicherheits- und Einführungsstatistiken, um Die Folgen und Auswirkungen zu verstehen, bevor Sie fortfahren.
 

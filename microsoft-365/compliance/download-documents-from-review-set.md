@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Hier erfahren Sie, wie Sie Inhalte aus einer Überprüfungsgruppe in Advanced eDiscovery for Presentations oder externe Reviews auswählen und herunterladen.
+description: Erfahren Sie, wie Sie Inhalte aus einem Rezensionssatz in Advanced eDiscovery präsentationen oder externen Rezensionen auswählen und herunterladen.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 9508a12e07440d16058b1c5303f0eb5f8f92b743
 ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
@@ -24,10 +24,10 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 09/04/2020
 ms.locfileid: "47399418"
 ---
-# <a name="download-selected-documents-from-a-review-set"></a>Herunterladen ausgewählter Dokumente aus einem Überprüfungs Satzes
+# <a name="download-selected-documents-from-a-review-set"></a>Herunterladen ausgewählter Dokumente aus einem Überprüfungssatz
 
-Download bietet eine einfache Möglichkeit zum Herunterladen von Inhalten aus einer Überprüfungsgruppe im systemeigenen Format. Das Download-Tool in Advanced eDiscovery nutzt die Datentransfer Funktionen des Browsers. Wenn ein Download bereit ist, wird eine Browser Ansage angezeigt. Mit dieser Methode heruntergeladene Dateien werden in einer Containerdatei gezippt und enthalten Dateien auf Elementebene. Dies bedeutet, dass Sie die e-Mail-Nachricht mit dem Anhang erhalten, wenn Sie eine Anlage herunterladen. Wenn Sie ein Excel-Arbeitsblatt exportieren, das in ein Word-Dokument eingebettet ist, ist das Word-Dokument mit dem eingebetteten Excel-Arbeitsblatt im Download ebenfalls enthalten. Wenn Sie Elemente heruntergeladen haben, wird die zuletzt geänderte Dateneigenschaft beibehalten und kann als Dateieigenschaft angezeigt werden.
+Download bietet eine einfache Möglichkeit zum Herunterladen von Inhalten aus einem Rezensionssatz im systemeigenen Format. Das Downloadtool in Advanced eDiscovery nutzt die Datenübertragungsfeatures des Browsers. Eine Browseraufforderung wird angezeigt, wenn ein Download bereit ist. Dateien, die mit dieser Methode heruntergeladen werden, werden in einer Containerdatei gezippt und enthalten Dateien auf Elementebene. Dies bedeutet, dass Sie, wenn Sie eine Anlage herunterladen möchten, die E-Mail-Nachricht erhalten, in der die Anlage enthalten ist. Wenn Sie eine Excel exportieren, die in ein Word-Dokument eingebettet ist, ist das Word-Dokument mit der eingebetteten Excel-Kalkulationstabelle im Download enthalten. Wenn Sie Elemente heruntergeladen haben, wird die Last Modified Data-Eigenschaft beibehalten und kann als Dateieigenschaft angezeigt werden.
 
-Zum Herunterladen von Inhalten aus einer Überprüfungsgruppe in einem erweiterten eDiscovery-Fall markieren Sie zunächst die Dateien, die Sie herunterladen möchten, und wählen Sie dann **Aktionselemente**  >  **herunterladen**aus.
+Wenn Sie Inhalte aus einem Überprüfungssatz in einem Advanced eDiscovery herunterladen möchten, wählen Sie zunächst die Dateien aus, die Sie herunterladen möchten, und wählen Sie dann **Aktionselemente**  >  **herunterladen aus.**
 
-![Download Aktion im erweiterten eDiscovery-Überprüfungspaket](../media/eDiscoDownload.png)
+![Downloadaktion in Advanced eDiscovery Überprüfungssatz](../media/eDiscoDownload.png)

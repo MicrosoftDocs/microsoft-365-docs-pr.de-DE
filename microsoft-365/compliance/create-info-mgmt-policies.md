@@ -21,7 +21,7 @@ ms.collection:
 - SPO_Content
 ms.custom:
 - seo-marvel-apr2020
-description: Hier erfahren Sie, wie Sie eine Informationsverwaltungsrichtlinie einrichten, um zu steuern, wie lange Informationen aufbewahrt werden und nachverfolgen, wer die Informationen verwendet.
+description: Erfahren Sie, wie Sie eine Informationsverwaltungsrichtlinie einrichten, um zu steuern, wie lange Informationen aufbewahrt werden und wer die Informationen verwendet.
 ms.openlocfilehash: 2519f039e7495d01a828aee564ce1a6caf41342d
 ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
@@ -31,9 +31,9 @@ ms.locfileid: "44817994"
 ---
 # <a name="create-and-apply-information-management-policies"></a>Erstellen und Anwenden von Informationsverwaltungsrichtlinien
 
-Mithilfe von Informationsverwaltungsrichtlinien kann Ihre Organisation steuern, wie lange Inhalt aufbewahrt werden soll, um zu überwachen, was Benutzer mit Inhalten tun, und um einem dokumentbarcodes oder Beschriftungen hinzuzufügen. Eine Richtlinie kann dazu beitragen, die Einhaltung gesetzlicher und behördlicher Vorschriften oder interner Geschäftsprozesse zu erzwingen. Als Administrator können Sie eine Richtlinie einrichten, um zu steuern, wie Dokumente überwacht werden und wie lange Dokumente aufbewahrt werden sollen.
+Informationsverwaltungsrichtlinien ermöglichen Es Ihrer Organisation, zu steuern, wie lange Inhalte beibehalten werden sollen, um zu überwachen, was Personen mit Inhalten tun, und Barcodes oder Bezeichnungen zu Dokumenten hinzuzufügen. Eine Richtlinie kann dazu beitragen, die Einhaltung gesetzlicher und behördlicher Bestimmungen oder interner Geschäftsprozesse durchzusetzen. Als Administrator können Sie eine Richtlinie einrichten, um zu steuern, wie Dokumente nachverfolgt werden und wie lange Dokumente beibehalten werden.
   
-Sie können eine Informationsverwaltungsrichtlinie erstellen, die an drei verschiedenen Orten in der Websitehierarchie, vom weitesten bis zum engsten, möglich ist:
+Sie können eine Informationsverwaltungsrichtlinie an drei verschiedenen Speicherorten in der Websitehierarchie erstellen, von der breitesten bis zur schmalsten:
   
 - Erstellen Sie eine Richtlinie, die für mehrere Inhaltstypen in einer Websitesammlung verwendet werden soll.
     
@@ -48,233 +48,233 @@ Weitere Informationen finden Sie unter [Einführung in Informationsverwaltungsri
 
 Um sicherzustellen, dass eine Informationsrichtlinie auf alle Dokumente eines bestimmten Typs in einer Websitesammlung angewendet wird, sollten Sie die Richtlinie auf Websitesammlungsebene erstellen und die Richtlinie später auf Inhaltstypen anwenden. Diese werden als Websitesammlungsrichtlinien bezeichnet. 
   
-1. Klicken Sie auf der Seite Einstellungen für die \> **Settings** ![ SharePoint 2016-Startseite auf der Titelleiste auf die Schaltfläche Websitesammlung.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Websiteeinstellungen**.
+1. Klicken Sie auf der Homepage der \> **Websitesammlung Einstellungen** ![ SharePoint 2016 Einstellungen auf der Titelleiste.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Websiteeinstellungen**.
     
-    Klicken Sie auf einer mit SharePoint-Gruppe verbundenen Website auf **Einstellungen**, klicken Sie auf **Websiteinhalte**, und klicken Sie dann auf **Websiteeinstellungen**. 
+    Klicken Sie SharePoint mit einer Gruppe verbundenen Website auf **Einstellungen**, klicken Sie auf Websiteinhalte, und klicken Sie dann auf Website **Einstellungen**. 
     
-2. Geben Sie auf der Seite Websiteeinstellungen **Site Collection Administration** unter \> **Inhaltstyp Richtlinienvorlagen**für die Websitesammlungsverwaltung. 
+2. Auf der Seite Website Einstellungen unter **Websitesammlungsverwaltung** \> **Inhaltstyprichtlinienvorlagen**. 
   
-![Link zur Richtlinienvorlage "Inhaltstyp" auf der Seite "Websiteeinstellungen"](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+![Link zur Inhaltstyprichtlinie auf Einstellungen Seite](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
-3. Erstellen Sie auf der Seite Richtlinien die \> **Create**. 
+3. Erstellen Sie auf der Seite \> **Richtlinien**. 
     
-4. Geben Sie einen Namen und eine Beschreibung für die Richtlinie ein, und schreiben Sie dann eine kurze Richtlinienanweisung, die den Benutzern erklärt, wofür die Richtlinie verwendet wird.
+4. Geben Sie einen Namen und eine Beschreibung für die Richtlinie ein, und schreiben Sie dann eine kurze Richtlinienrichtlinie, in der den Benutzern erklärt wird, wofür die Richtlinie dient.
     
-5. Weitere Informationen zum Einrichten der Features, die Sie der Richtlinie zuordnen möchten, finden Sie im nächsten Abschnitt Erstellen von Richtlinien für einen Websiteinhaltstyp. 
+5. Im nächsten Abschnitt zum Erstellen von Richtlinien für einen Websiteinhaltstyp erfahren Sie, wie Sie die Features einrichten, die Sie der Richtlinie zuordnen möchten. 
     
 6. Wählen Sie **OK** aus.
     
 ## <a name="create-a-policy-for-a-site-content-type"></a>Erstellen einer Richtlinie für einen Websiteinhaltstyp
 <a name="__create_a_policy"> </a>
 
-Durch das Hinzufügen einer Informationsverwaltungsrichtlinie zu einem Inhaltstyp ist es einfach, Richtlinienfeatures mehreren Listen oder Bibliotheken zuzuordnen. Sie können eine vorhandene Informationsverwaltungsrichtlinie zu einem Inhaltstyp hinzufügen oder eine eindeutige Richtlinie erstellen, die für einen einzelnen Inhaltstyp spezifisch ist.
+Das Hinzufügen einer Informationsverwaltungsrichtlinie zu einem Inhaltstyp erleichtert das Zuordnen von Richtlinienfeatures zu mehreren Listen oder Bibliotheken. Sie können eine vorhandene Informationsverwaltungsrichtlinie zu einem Inhaltstyp hinzufügen oder eine eindeutige Richtlinie erstellen, die für einen einzelnen Inhaltstyp spezifisch ist.
   
- Sie können auch eine Informationsverwaltungsrichtlinie zu einem für Listenspezifischen Inhaltstyp hinzufügen. Dies hat den Effekt, dass die Richtlinie nur auf Elemente in dieser Liste angewendet wird, die den Inhaltstyp verwenden. 
+ Sie können auch eine Informationsverwaltungsrichtlinie zu einem Inhaltstyp hinzufügen, der für Listen spezifisch ist. Dies hat den Effekt, dass die Richtlinie nur auf Elemente in dieser Liste angewendet wird, die den Inhaltstyp verwenden. 
   
-1. Klicken Sie auf der Seite Einstellungen für die \> **Settings** ![ SharePoint 2016-Startseite auf der Titelleiste auf die Schaltfläche Websitesammlung.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Websiteeinstellungen**.
+1. Klicken Sie auf der Homepage der \> **Websitesammlung Einstellungen** ![ SharePoint 2016 Einstellungen auf der Titelleiste.](../media/1c22d2d8-39e0-4930-82c6-c3eee44211d3.png) \> **Websiteeinstellungen**.
     
-    Klicken Sie auf einer mit SharePoint-Gruppe verbundenen Website auf **Einstellungen**, klicken Sie auf **Websiteinhalte**, und klicken Sie dann auf **Websiteeinstellungen**. 
+    Klicken Sie SharePoint mit einer Gruppe verbundenen Website auf **Einstellungen**, klicken Sie auf Websiteinhalte, und klicken Sie dann auf Website **Einstellungen**. 
     
-2. Klicken Sie auf der Seite Websiteeinstellungen unter **Web-Designer-Kataloge** auf \> **Websiteinhaltstypen**.
+2. Auf der Seite Website Einstellungen unter **Web Designer Galleries** \> **Websiteinhaltstypen**.
   
-![Link "Websiteinhaltstypen" auf der Seite "Websiteeinstellungen"](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
+![Link zu Websiteinhaltstypen auf Einstellungen Seite](../media/6f6fa51f-15d7-4782-b06f-a7b36e874cd3.png)
   
-3. Wählen Sie auf der Seite Einstellungen des Websiteinhaltstyps den Inhaltstyp aus, dem Sie eine Richtlinie hinzufügen möchten.
+3. Wählen Sie auf Einstellungen Seite Websiteinhaltstyp den Inhaltstyp aus, dem Sie eine Richtlinie hinzufügen möchten.
     
-4. Klicken Sie auf der Seite Websiteinhaltstyp unter **Einstellungen** für die \> **Richtlinieneinstellungen für die Informationsverwaltung**.
+4. Klicken Sie auf der Seite **Websiteinhaltstyp unter Einstellungen** \> **Richtlinieneinstellungen für die Informationsverwaltung**.
     
-5. Geben Sie auf der Seite Richtlinie bearbeiten einen Namen und eine Beschreibung für die Richtlinie ein, und schreiben Sie dann eine kurze Beschreibung, die den Benutzern erklärt, wofür die Richtlinie gilt.
+5. Geben Sie auf der Seite Richtlinie bearbeiten einen Namen und eine Beschreibung für die Richtlinie ein, und schreiben Sie dann eine kurze Beschreibung, in der den Benutzern erklärt wird, wofür die Richtlinie dient.
     
-6. Wählen Sie in den nächsten Abschnitten die einzelnen Richtlinienfeatures aus, die Sie zu ihrer Informationsverwaltungsrichtlinie hinzufügen möchten. 
+6. Wählen Sie in den nächsten Abschnitten die einzelnen Richtlinienfeatures aus, die Sie Ihrer Informationsverwaltungsrichtlinie hinzufügen möchten. 
   
-![Arten von Inhaltsrichtlinien](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
+![Typen von Inhaltsrichtlinien](../media/19fcb8a3-974b-40d3-a13f-b76088d122f8.png)
   
-7. Wählen Sie zum Angeben eines Aufbewahrungszeitraums für Dokumente und Elemente, die dieser Richtlinie unterliegen, die **Option Aufbewahrung aktivieren**aus, und geben Sie dann den Aufbewahrungszeitraum und die Aktionen an, die beim Ablauf der Elemente ausgeführt werden sollen.
+7. Wenn Sie einen Aufbewahrungszeitraum für Dokumente und Elemente angeben möchten, die dieser Richtlinie unterliegen, wählen Sie Aufbewahrung aktivieren **aus,** und geben Sie dann den Aufbewahrungszeitraum und die Aktionen an, die beim Ablauf der Elemente erfolgen sollen.
     
     So geben Sie einen Aufbewahrungszeitraum an
     
-||||||**1.**|* * Wählen Sie * * eine Aufbewahrungsphase für Datensätze hinzufügen... * * * *|
+||||||**1.**|**Choose **Add a retention stage for records...****|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||2.  <br/> | Wählen Sie eine Beibehaltungsdauer Option aus, um anzugeben, wann Dokumente oder Elemente auf Ablauf festgelegt werden. Führen Sie einen der folgenden Schritte aus:  <br/>  Wenn das Ablaufdatum basierend auf einer Date-Eigenschaft festgelegt werden soll, unter dem **Ereignis** \> **Diese Stufe basiert auf einer Date-Eigenschaft für das Element**, und wählen Sie dann die Dokument-oder Elementaktion (beispielsweise erstellt oder geändert) und das Inkrement der Zeit nach dieser Aktion (beispielsweise die Anzahl der Tage, Monate oder Jahre) aus, wenn das Element ablaufen soll.  <br/>  Wenn Sie eine benutzerdefinierte Aufbewahrungs Formel zum Bestimmen des Ablaufs verwenden möchten, wählen Sie **durch eine auf diesem Server installierte benutzerdefinierte Aufbewahrungs Formel festlegen**aus.  <br/> > [!NOTE]> diese Option ist nur verfügbar, wenn eine benutzerdefinierte Formel vom Administrator eingerichtet wurde.           |
-||||||3.  <br/> |Die Option **Workflow starten** ist nur verfügbar, wenn Sie eine Richtlinie für eine Liste, Bibliothek oder einen Inhaltstyp definieren, dem bereits ein Workflow zugeordnet ist. Sie erhalten dann eine Auswahl von Workflows zur Auswahl.  <br/> |
-||||||4.  <br/> |Wählen Sie im Abschnitt **Serie** die Option **Aktion dieser Stufe wiederholen aus...** und geben Sie ein, wie oft die Aktion wieder aufgetreten werden soll.  <br/> > [!NOTE]> diese Option ist nur verfügbar, wenn die Aktion, die Sie ausgewählt haben, wiederholt werden kann. Beispielsweise können Sie die Serie für die Aktion nicht **dauerhaft löschen**festlegen.           |
-||||||5.  <br/> |Wählen Sie **OK**aus.  <br/> |
+||||||2.  <br/> | Wählen Sie eine Aufbewahrungszeitraumoption aus, um anzugeben, wann Dokumente oder Elemente auf Ablauf festgelegt sind. Führen Sie einen der folgenden Schritte aus:  <br/>  Wenn Sie das Ablaufdatum basierend auf einer Date-Eigenschaft festlegen möchten, wählen Sie unter **Ereignis** Diese Phase basiert auf einer Date-Eigenschaft für das Element, und wählen Sie dann die Dokument- oder Elementaktion (z. B. Erstellt oder Geändert) und die Zeit nach dieser Aktion (z. B. die Anzahl der Tage, Monate oder Jahre) aus, wenn das Element ablaufen \> soll.  <br/>  Wenn Sie eine benutzerdefinierte Aufbewahrungsformel zum Bestimmen des Ablaufs verwenden möchten, wählen Sie Auf diesem Server installierte benutzerdefinierte **Aufbewahrungsformel festlegen aus.**  <br/> > [!NOTE]> Diese Option ist nur verfügbar, wenn ihr Administrator eine benutzerdefinierte Formel eingerichtet hat.           |
+||||||3.  <br/> |Die **Option Workflow starten** ist nur verfügbar, wenn Sie eine Richtlinie für eine Liste, Bibliothek oder einen Inhaltstyp definieren, der bereits ein Workflow zugeordnet ist. Anschließend erhalten Sie eine Auswahl an Workflows zur Auswahl.  <br/> |
+||||||4.  <br/> |Wählen Sie **im Abschnitt Serien** die Option Aktion dieser Phase wiederholen **aus...** und geben Sie ein, wie oft die Aktion erneut geschehen soll.  <br/> > [!NOTE]> Diese Option ist nur verfügbar, wenn die ausgewählte Aktion wiederholt werden kann. Sie können z. B. keine Serienserie für die Aktion **Dauerhaft löschen festlegen.**           |
+||||||5.  <br/> |Wählen Sie **OK** aus.  <br/> |
    
-1. Wählen Sie zum Aktivieren der Überwachung für die Dokumente und Elemente, die dieser Richtlinie unterliegen, die **Option Überwachung aktivieren**aus, und geben Sie dann die Ereignisse an, die Sie überwachen möchten.
+1. Um die Überwachung für die Dokumente und Elemente zu aktivieren, die dieser Richtlinie unterliegen, wählen Sie Überwachung aktivieren **aus,** und geben Sie dann die Ereignisse an, die Überwacht werden sollen.
     
     So aktivieren Sie die Überwachung
     
-||||||1. * * * *|Klicken Sie auf der Seite Richtlinie bearbeiten * * **unter** **Auditing** **\>** **enable Auditing** * *, und aktivieren Sie dann die Kontrollkästchen neben den Ereignissen, für die Sie einen Überwachungspfad beibehalten möchten. * * * *|
+||||||1.****|Klicken Sie auf der Seite Richtlinie bearbeiten** **unter**  Überwachung Überwachung aktivieren **, und aktivieren Sie dann die Kontrollkästchen neben den Ereignissen, für die Sie einen Überwachungspfad **\>**  behalten möchten.****|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||**2.** <br/> |**Um Benutzer aufzufordern, diese Barcodes in Dokumente einzufügen,** **Wählen Sie** **Benutzer auffordern, vor dem Speichern oder Drucken einen Barcode einzufügen** **.** <br/> |
-||||||**3.** <br/> |**Wählen Sie** **OK** * * aus, um das Überwachungsfeature auf die Richtlinie anzuwenden. ** <br/> |
-|||||||Mit dem Überwachungsrichtlinienfeature können Organisationen Überwachungspfade für Dokumente erstellen und analysieren sowie Elemente wie Aufgabenlisten, Problemlisten, Diskussionsgruppen und Kalender auflisten. Mit diesem Richtlinienfeature wird ein Überwachungsprotokoll bereitgestellt, das Ereignisse wie beispielsweise, wenn Inhalt angezeigt, bearbeitet oder gelöscht wird, aufzeichnet.  <br/> |
-|||||||Wenn die Überwachung als Teil einer Informationsverwaltungsrichtlinie aktiviert ist, können Administratoren die Überwachungsdaten in Berichten zur Richtlinienverwendung anzeigen, die in Microsoft Excel basieren und die aktuelle Verwendung zusammenfassen. Administratoren können mithilfe dieser Berichte feststellen, wie Informationen innerhalb der Organisation verwendet werden. Diese Berichte können Organisationen auch helfen, ihre behördlichen Vorschriften zu überprüfen und zu dokumentieren oder potenzielle Probleme zu untersuchen.  <br/> |
+||||||**2.** <br/> |**Wenn Sie Benutzer zum Einfügen dieser Barcodes in Dokumente**  anfordern möchten, wählen Sie Benutzer zum Einfügen eines Strichcodes vor dem Speichern oder **Drucken an.**  <br/> |
+||||||**3.** <br/> |**Wählen Sie** **OK** ** aus, um das Überwachungsfeature auf die Richtlinie anzuwenden. ** <br/> |
+|||||||Mit dem Feature Überwachungsrichtlinien können Organisationen Überwachungsprotokolle für Dokumente erstellen und analysieren und Elemente wie Aufgabenlisten, Problemlisten, Diskussionsgruppen und Kalender auflisten. Mit diesem Richtlinienfeature wird ein Überwachungsprotokoll bereitgestellt, das Ereignisse wie beispielsweise, wenn Inhalt angezeigt, bearbeitet oder gelöscht wird, aufzeichnet.  <br/> |
+|||||||Wenn die Überwachung als Teil einer Informationsverwaltungsrichtlinie aktiviert ist, können Administratoren die Überwachungsdaten in Richtlinienverwendungsberichten anzeigen, die in Microsoft Excel und die aktuelle Verwendung zusammenfassen. Administratoren können mithilfe dieser Berichte feststellen, wie Informationen innerhalb der Organisation verwendet werden. Diese Berichte können Organisationen auch dabei helfen, die Einhaltung gesetzlicher Vorschriften zu überprüfen und zu dokumentieren oder potenzielle Bedenken zu untersuchen.  <br/> |
 |||||||Im Überwachungsprotokoll werden folgende Informationen aufgezeichnet: Ereignisname, Datum und Uhrzeit des Ereignisses sowie der Systemname des Benutzers, der die Aktion ausgeführt hat.  <br/> |
    
-1. Wenn Barcodes als Teil einer Richtlinie aktiviert werden, werden Sie den Dokumenteigenschaften hinzugefügt und im Kopfbereich des Dokuments angezeigt, auf das der Barcode angewendet wird. Wie Beschriftungen können auch Barcodes manuell aus einem Dokument entfernt werden. Sie können angeben, ob Benutzer aufgefordert werden sollen, den Barcode beim Drucken oder Speichern eines Elements einzuschließen, oder ob der Barcode manuell mithilfe der Registerkarte **Einfügen** in 2010-Office Release-Programmen eingefügt werden soll. 
+1. Wenn Barcodes als Teil einer Richtlinie aktiviert sind, werden sie dokumenteigenschaften hinzugefügt und im Kopfzeilenbereich des Dokuments angezeigt, auf das der Strichcode angewendet wird. Strichcodes können wie Bezeichnungen auch manuell aus einem Dokument entfernt werden. Sie können angeben, ob Benutzer aufgefordert werden sollen, den Strichcode beim Drucken oder  Speichern eines Elements anzugeben, oder ob der Strichcode manuell mithilfe der Registerkarte Einfügen in 2010 Office eingefügt werden soll. 
     
     So aktivieren Sie Barcodes
     
-||||||1. * * * *|**Aktivieren Sie auf der Seite Richtlinie bearbeiten unter **Barcodes** die \> **Option Barcodes**.**|
+||||||1.****|**Klicken Sie auf der Seite Richtlinie bearbeiten unter **Barcodes** \> **Barcodes aktivieren**.**|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||**2.** <br/> |Um Benutzer aufzufordern, diese Barcodes in Dokumente einzufügen, wählen Sie **Benutzer auffordern, vor dem Speichern oder Drucken einen Barcode einzufügen**.  <br/> |
-||||||**3.** <br/> |Wählen Sie **OK** aus, um das Barcode-Feature auf die Richtlinie anzuwenden.  <br/> |
+||||||**2.** <br/> |Wenn Sie Benutzer zum Einfügen dieser Barcodes in Dokumente anfordern möchten, wählen Sie Benutzer zum Einfügen eines Strichcodes vor dem Speichern **oder Drucken an.**  <br/> |
+||||||**3.** <br/> |Wählen **Sie OK** aus, um das Strichcodefeature auf die Richtlinie anzuwenden.  <br/> |
 |||||||
- Die Barcode-Richtlinie generiert Code 39 Standard-Barcodes. Jedes Barcode Bild enthält Text unterhalb des Strichcode Symbols, das den Barcode Wert darstellt. Auf diese Weise können die Barcodedaten auch dann verwendet werden, wenn die Scan Hardware nicht verfügbar ist. Benutzer können die Barcodenummer manuell in das Suchfeld eingeben, um das Element auf einer Website zu suchen.  <br/> |
+ Die Barcoderichtlinie generiert Code 39-Standardcodecodes. Jedes Strichcodebild enthält Text unter dem Strichcodesymbol, das den Strichcodewert darstellt. Dadurch können die Strichcodedaten auch dann verwendet werden, wenn keine Scanhardware verfügbar ist. Benutzer können die Strichcodenummer manuell in das Suchfeld eingeben, um das Element auf einer Website zu finden.  <br/> |
    
-1. Um zu verlangen, dass Dokumente, die dieser Richtlinie unterliegen, Beschriftungen aufweisen, wählen Sie **Bezeichnungen aktivieren**aus, und geben Sie dann die gewünschten Einstellungen für die Beschriftungen an.
+1. Wenn Sie festlegen möchten, dass Dokumente, die dieser Richtlinie unterliegen, Bezeichnungen haben, wählen Sie Bezeichnungen aktivieren **aus,** und geben Sie dann die Einstellungen für die Bezeichnungen an.
     
-    So aktivieren Sie Beschriftungen
+    So aktivieren Sie Bezeichnungen
     
-||||||**1.**|* * Wenn Sie festlegen möchten, dass Benutzer einem Dokument eine Bezeichnung hinzufügen möchten, wählen Sie **Benutzer zum Einfügen einer Bezeichnung vor dem Speichern oder Drucken auffordern**aus.  <br/> > [!NOTE]> wenn Beschriftungen optional sein sollen, aktivieren Sie dieses Kontrollkästchen nicht.        **|
+||||||**1.**|**Wenn Benutzer eine Bezeichnung zu einem Dokument hinzufügen müssen, wählen Sie Benutzer zum Einfügen einer Bezeichnung vor dem Speichern oder **Drucken anforderen aus.**  <br/> > [!NOTE]> Wenn Bezeichnungen optional sein sollen, aktivieren Sie dieses Kontrollkästchen nicht.        **|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-||||||2.  <br/> |Wenn Sie eine Beschriftung so sperren möchten, dass Sie nach dem Einfügen nicht mehr geändert werden kann, wählen Sie **nach dem Hinzufügen Änderungen an Beschriftungen verhindern**aus.  <br/>  Mit dieser Einstellung wird verhindert, dass der Bezeichnungstext aktualisiert wird, nachdem die Bezeichnung in ein Element in einer Clientanwendung wie Word, Excel oder PowerPoint eingefügt wurde. Aktivieren Sie dieses Kontrollkästchen nicht, falls die Bezeichnung aktualisiert werden soll, wenn die Eigenschaften für dieses Dokument oder Element aktualisiert werden.  <br/> |
-||||||3.  <br/> |Geben Sie im Feld Bezeichnungsformat den Text für die Beschriftung so ein, wie er angezeigt werden soll. Beschriftungen können bis zu 10 Spaltenbezüge enthalten, von denen jede bis zu 255 Zeichen lang sein kann. Führen Sie die folgenden Schritte aus, um das Format für ihre Bezeichnung zu erstellen:  <br/> Geben Sie die Namen der Spalten ein, die Sie in die Bezeichnung einschließen möchten, in der Reihenfolge, in der Sie angezeigt werden sollen. Schließen Sie die Spaltennamen in geschweifte Klammern ( {} ) ein, wie im Beispiel auf der Seite Richtlinie bearbeiten dargestellt.  <br/> Geben Sie Wörter ein, um die Spalten außerhalb der Klammern zu identifizieren, wie im Beispiel auf der Seite Richtlinie bearbeiten dargestellt.  <br/> |
-||||||4.  <br/> |Geben Sie zum Hinzufügen eines Positions Umbruchs **\n** an der Stelle ein, an der der Positions Umbruch angezeigt werden soll.  <br/> |
-||||||5.  <br/> |Wählen Sie den gewünschten Schriftgrad und die gewünschte Formatvorlage aus, und geben Sie an, ob die Beschriftung links, zentriert oder rechts im Dokument positioniert werden soll.  <br/>  Wählen Sie eine Schriftart und ein Format aus, die auf den Benutzercomputern verfügbar sind. Es hängt vom Schriftgrad ab, wie viel Text auf der Bezeichnung angezeigt werden kann.  <br/> |
-||||||6.  <br/> |Geben Sie die Höhe und Breite der Beschriftung ein. Die Bezeichnungshöhe kann zwischen .25 Zoll und 20 Zoll liegen, und die Breite der Beschriftung reicht von .25 Zoll bis 20 Zoll. Bezeichnungstext ist immer vertikal innerhalb des Bezeichnungs Bilds zentriert.  <br/> |
-||||||7.  <br/> |Wählen Sie **Aktualisieren** aus, um eine Vorschau des Bezeichnungs Inhalts anzuzeigen.  <br/> |
+||||||2.  <br/> |Um eine Bezeichnung so zu sperren, dass sie nach dem Einfügen nicht geändert werden kann, wählen Sie Änderungen an Bezeichnungen verhindern aus, **nachdem sie hinzugefügt wurden.**  <br/>  Diese Einstellung verhindert, dass der Beschriftungstext aktualisiert wird, sobald die Bezeichnung in ein Element in einer Clientanwendung wie Word, Excel oder PowerPoint. Aktivieren Sie dieses Kontrollkästchen nicht, falls die Bezeichnung aktualisiert werden soll, wenn die Eigenschaften für dieses Dokument oder Element aktualisiert werden.  <br/> |
+||||||3.  <br/> |Geben Sie im Feld Bezeichnungsformat den Text für die Bezeichnung so ein, wie sie angezeigt werden soll. Bezeichnungen können bis zu 10 Spaltenverweise enthalten, von denen jede bis zu 255 Zeichen lang sein kann. Gehen Sie wie folgt vor, um das Format für Ihre Bezeichnung zu erstellen:  <br/> Geben Sie die Namen der Spalten ein, die in der Bezeichnung in der Reihenfolge enthalten sein sollen, in der sie angezeigt werden sollen. Schließen Sie die Spaltennamen in geschweifte Klammern ( ) ein, wie im Beispiel auf der Seite {} Richtlinie bearbeiten gezeigt.  <br/> Geben Sie Wörter ein, um die Spalten außerhalb der Klammern zu identifizieren, wie im Beispiel auf der Seite Richtlinie bearbeiten gezeigt.  <br/> |
+||||||4.  <br/> |Um einen Zeilenbruch hinzuzufügen, geben Sie **\n** ein, an dem der Zeilenbruch angezeigt werden soll.  <br/> |
+||||||5.  <br/> |Wählen Sie den Schriftgrad und die Formatvorlage aus, und geben Sie an, ob die Beschriftung links, zentriert oder rechts im Dokument positioniert werden soll.  <br/>  Wählen Sie eine Schriftart und ein Format aus, die auf den Benutzercomputern verfügbar sind. Es hängt vom Schriftgrad ab, wie viel Text auf der Bezeichnung angezeigt werden kann.  <br/> |
+||||||6.  <br/> |Geben Sie die Höhe und Breite der Beschriftung ein. Die Beschriftungshöhe kann zwischen 25 und 20 Zoll liegen, und die Beschriftungsbreite kann zwischen 25 und 20 Zoll liegen. Bezeichnungstext ist immer vertikal zentriert innerhalb des Beschriftungsbilds.  <br/> |
+||||||7.  <br/> |Wählen **Sie Aktualisieren** aus, um eine Vorschau des Beschriftungsinhalts anzuzeigen.  <br/> |
    
 1. Wählen Sie **OK** aus.
     
 ## <a name="create-a-policy-for-a-list-library-or-folder-location-based-retention-policy"></a>Erstellen einer Richtlinie für eine Liste, Bibliothek oder einen Ordner (standortbasierte Aufbewahrungsrichtlinie)
 <a name="__create_a_policy"> </a>
 
-Sie können eine Aufbewahrungsrichtlinie definieren, die nur für eine bestimmte Liste, Bibliothek oder einen bestimmten Ordner gilt. Wenn Sie jedoch auf diese Weise eine Aufbewahrungsrichtlinie erstellen, können Sie diese Richtlinie nicht für andere Listen, Bibliotheken, Ordner oder Websites wieder verwenden, und Sie können eine Websitesammlungsrichtlinie nicht auf eine standortbasierte Richtlinie anwenden.
+Sie können eine Aufbewahrungsrichtlinie definieren, die nur für eine bestimmte Liste, Bibliothek oder einen bestimmten Ordner gilt. Wenn Sie jedoch eine Aufbewahrungsrichtlinie auf diese Weise erstellen, können Sie diese Richtlinie nicht in anderen Listen, Bibliotheken, Ordnern oder Websites wiederverwenden und eine Websitesammlungsrichtlinie nicht auf eine standortbasierte Richtlinie anwenden.
   
-Wenn Sie eine einzelne Aufbewahrungsrichtlinie auf alle Arten von Inhalten an einem einzelnen Speicherort anwenden möchten, werden Sie wahrscheinlich die standortbasierte Aufbewahrung verwenden möchten. In den meisten anderen Fällen sollten Sie überprüfen, ob eine Aufbewahrungsrichtlinie für alle Inhaltstypen angegeben ist.
+Wenn Sie eine einzelne Aufbewahrungsrichtlinie auf alle Inhaltstypen an einem einzigen Speicherort anwenden möchten, sollten Sie höchstwahrscheinlich die standortbasierte Aufbewahrung verwenden. In den meisten anderen Fällen sollten Sie überprüfen, ob für alle Inhaltstypen eine Aufbewahrungsrichtlinie angegeben ist.
   
- Jeder Unterordner erbt die Aufbewahrungsrichtlinie seines übergeordneten Elements, es sei denn, Sie brechen die Vererbung auf und definieren eine neue Aufbewahrungsrichtlinie auf der untergeordneten Ebene. 
+ Jeder Unterordner erbt die Aufbewahrungsrichtlinie des übergeordneten Elements, es sei denn, Sie möchten die Vererbung brechen und eine neue Aufbewahrungsrichtlinie auf untergeordneter Ebene definieren. 
   
-Wenn Sie eine Informationsverwaltungsrichtlinie außer Aufbewahrung in einer Liste oder Bibliothek definieren möchten, müssen Sie eine Informationsverwaltungsrichtlinie für jeden einzelnen Listeninhaltstyp definieren, der dieser Liste oder Bibliothek zugeordnet ist.
+Wenn Sie eine andere Informationsverwaltungsrichtlinie als die Aufbewahrung für eine Liste oder Bibliothek definieren möchten, müssen Sie eine Informationsverwaltungsrichtlinie für jeden einzelnen Listeninhaltstyp definieren, der dieser Liste oder Bibliothek zugeordnet ist.
   
- Wenn Sie sich an einem beliebigen Punkt für eine Liste oder Bibliothek vom Inhaltstyp zu standortbasierten Richtlinien umschalten, wird nur die Aufbewahrungsrichtlinie als standortbasierte Richtlinie verwendet. Alle anderen Verwaltungsrichtlinien (Überwachungen, Barcodes und Barcodes) werden von den zugeordneten Inhaltstypen geerbt. 
+ Wenn Sie zu einem beliebigen Zeitpunkt entscheiden, von Inhaltstyp zu standortbasierten Richtlinien für eine Liste oder Bibliothek zu wechseln, wird nur die Aufbewahrungsrichtlinie als standortbasierte Richtlinie verwendet. Alle anderen Verwaltungsrichtlinien (Audits, Barcodes und Barcodes) werden von den zugeordneten Inhaltstypen geerbt. 
   
- Speicherortbasierte Richtlinien können für eine Websitesammlung deaktiviert werden, indem Sie die Bibliothek und die ordnerbasierte Aufbewahrungsfunktion deaktivieren. Dadurch können Websitesammlungsadministratoren sicherstellen, dass Ihre Inhaltstyp Richtlinien nicht von den standortbasierten Richtlinien eines Listenadministrators außer Kraft gesetzt werden. 
+ Standortbasierte Richtlinien können für eine Websitesammlung deaktiviert werden, indem das Feature Bibliothek und ordnerbasierte Aufbewahrung deaktiviert wird. Auf diese Weise können Websitesammlungsadministratoren sicherstellen, dass ihre Inhaltstyprichtlinien nicht von den standortbasierten Richtlinien eines Listenadministrators überschrieben werden. 
   
-Sie benötigen mindestens die Berechtigung Listen verwalten, um die Einstellungen für die Informationsverwaltungsrichtlinie für eine Liste oder Bibliothek zu ändern.
+Sie benötigen mindestens die Berechtigung Listen verwalten, um die Richtlinieneinstellungen für die Informationsverwaltung für eine Liste oder Bibliothek zu ändern.
   
 1. Navigieren Sie zu der Liste oder Bibliothek, für die Sie eine Informationsverwaltungsrichtlinie angeben möchten. 
     
-2. Wählen Sie im Menüband die Bibliothekseinstellungen oder Listeneinstellungen **für Bibliotheks** -oder **Listen** Registerkarten aus \> **Library Settings** . **List Settings**
+2. Wählen Sie auf dem Menüband die Registerkarte **Bibliothek** **oder** \> **Listenbibliothek Einstellungen** oder Listen **Einstellungen**.
     
-    Klicken Sie in SharePoint Online auf **Einstellungen** , und klicken Sie dann auf **Listeneinstellungen** oder **Bibliothekseinstellungen**. 
+    Klicken SharePoint Online auf **Einstellungen** und dann auf **Listeneinstellungen** oder **Bibliothekseinstellungen**. 
     
-3. Unter **Berechtigungen und Verwaltungs** \> **Informationsverwaltungsrichtlinien Einstellungen**.
+3. Unter **Richtlinieneinstellungen für Berechtigungen und** Verwaltung von \> **Informationsverwaltung**.
   
-![Link "Informationsverwaltungsrichtlinien" auf der Seite "Einstellungen" für Dokumentbibliothek](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+![Link zu Informationsverwaltungsrichtlinien auf der Einstellungsseite für die Dokumentbibliothek](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
-4. Stellen Sie auf der Seite Einstellungen für die Informationsverwaltungsrichtlinie sicher, dass die Aufbewahrungs Quelle für die Liste oder Bibliothek auf Bibliothek und Ordner festgelegt ist. 
+4. Stellen Sie auf Einstellungen Seite Informationsverwaltungsrichtlinie sicher, dass die Aufbewahrungsquelle für die Liste oder Bibliothek auf Bibliothek und Ordner festgelegt ist. 
   
-Wenn **Inhaltstyp** als Quelle angezeigt wird, klicken Sie auf **Quelle ändern**, und klicken Sie dann auf **Bibliothek und Ordner**. Sie werden gewarnt, dass Inhaltstyp Aufbewahrungsrichtlinien ignoriert werden. Wählen Sie **OK** aus. 
+Wenn **Inhaltstyp** als Quelle angezeigt wird, klicken Sie auf **Quelle** ändern, und klicken Sie dann auf Bibliothek **und Ordner**. Sie werden darauf aufmerksam, dass Aufbewahrungsrichtlinien für Inhaltstypen ignoriert werden. Wählen Sie **OK** aus. 
     
-5. Geben Sie auf der Seite Richtlinie bearbeiten unter **Bibliotheks basierter aufbewahrungszeitplan**eine kurze Beschreibung für die Richtlinie ein, die Sie erstellen. 
+5. Geben Sie auf der Seite Richtlinie bearbeiten unter Bibliotheksbasierter Aufbewahrungszeitplan eine kurze Beschreibung für die Richtlinie ein, die Sie erstellen. 
     
-6. Wählen Sie **Add a Retention Stage** aus...
+6. Wählen **Sie Aufbewahrungsphase hinzufügen aus...**
     
-     Beachten Sie, dass Sie Unterdatensätze auswählen können, unterschiedliche Aufbewahrungsrichtlinien für Datensätze zu definieren, indem Sie die Option unterschiedliche Aufbewahrungs Phasen für Datensätze definieren auswählen. 
+     Beachten Sie, dass Sie unter Datensätze verschiedene Aufbewahrungsrichtlinien für Datensätze definieren können, indem Sie die Option Verschiedene Aufbewahrungsphasen für Datensätze definieren auswählen. 
     
-7. Wählen Sie im Dialogfeld Bühneneigenschaften eine Option für den Aufbewahrungszeitraum aus, um anzugeben, wann Dokumente oder Elemente auf Ablauf festgelegt werden. Führen Sie einen der folgenden Schritte aus:
+7. Wählen Sie im Dialogfeld Stage-Eigenschaften die Option Aufbewahrungszeitraum aus, um anzugeben, wann Dokumente oder Elemente auf Ablauf festgelegt sind. Führen Sie einen der folgenden Schritte aus:
     
-  - Wenn das Ablaufdatum basierend auf einer Date-Eigenschaft festgelegt werden soll, unter dem **Ereignis** \> **Diese Stufe basiert auf einer Date-Eigenschaft für das Element**, und wählen Sie dann die Dokument-oder Elementaktion (beispielsweise erstellt oder geändert) und das Inkrement der Zeit nach dieser Aktion (beispielsweise die Anzahl der Tage, Monate oder Jahre) aus, wenn das Element ablaufen soll. 
+  - Wenn Sie das Ablaufdatum basierend auf einer Date-Eigenschaft festlegen möchten, wählen Sie unter **Ereignis** Diese Phase basiert auf einer Date-Eigenschaft für das Element, und wählen Sie dann die Dokument- oder Elementaktion (z. B. Erstellt oder Geändert) und die Zeit nach dieser Aktion (z. B. die Anzahl der Tage, Monate oder Jahre) aus, wenn das Element ablaufen \> soll. 
     
-  - Wenn Sie eine benutzerdefinierte Aufbewahrungs Formel zum Bestimmen des Ablaufs verwenden möchten, wählen Sie **durch eine auf diesem Server installierte benutzerdefinierte Aufbewahrungs Formel festlegen**aus. 
+  - Wenn Sie eine benutzerdefinierte Aufbewahrungsformel zum Bestimmen des Ablaufs verwenden möchten, wählen Sie Auf diesem Server installierte benutzerdefinierte **Aufbewahrungsformel festlegen aus.** 
     
     > [!NOTE]
-    >  Diese Option ist nur verfügbar, wenn eine benutzerdefinierte Formel vom Administrator eingerichtet wurde. 
+    >  Diese Option ist nur verfügbar, wenn ihr Administrator eine benutzerdefinierte Formel eingerichtet hat. 
   
-  - Geben Sie unter **Aktion**an, was geschehen soll, wenn das Dokument oder Element abläuft. Um zu ermöglichen, dass eine bestimmte Aktion mit dem Dokument oder Element (beispielsweise Löschung) geschieht, wählen Sie eine Aktion aus der Liste aus. 
+  - Geben Sie unter **Aktion** an, was geschehen soll, wenn das Dokument oder Element abläuft. Wählen Sie eine Aktion aus der Liste aus, um eine bestimmte Aktion für das Dokument oder Element (z. B. löschen) zu aktivieren. 
     
-8. Die Option **Workflow starten** ist nur verfügbar, wenn Sie eine Richtlinie für eine Liste, Bibliothek oder einen Inhaltstyp definieren, dem bereits ein Workflow zugeordnet ist. Sie erhalten dann eine Auswahl von Workflows zur Auswahl. 
+8. Die **Option Workflow starten** ist nur verfügbar, wenn Sie eine Richtlinie für eine Liste, Bibliothek oder einen Inhaltstyp definieren, der bereits ein Workflow zugeordnet ist. Anschließend erhalten Sie eine Auswahl an Workflows zur Auswahl. 
     
-9. Wählen **Recurrence**Sie unter Serie **die Aktion diese Phase wiederholen...** und geben Sie ein, wie oft die Aktion wieder aufgetreten werden soll. 
+9. Wählen **Sie unter Serien** die Option Aktion dieser Phase wiederholen **aus...** und geben Sie ein, wie oft die Aktion erneut geschehen soll. 
     
     > [!NOTE]
-    >  Diese Option ist nur verfügbar, wenn die Aktion, die Sie ausgewählt haben, wiederholt werden kann. Beispielsweise können Sie die Serie für die Aktion nicht **dauerhaft löschen**festlegen. 
+    >  Diese Option ist nur verfügbar, wenn die ausgewählte Aktion wiederholt werden kann. Sie können z. B. keine Serienserie für die Aktion **Dauerhaft löschen festlegen.** 
   
 10. Wählen Sie **OK** aus.
     
 ## <a name="apply-a-site-collection-policy-to-a-content-type"></a>Anwenden einer Websitesammlungsrichtlinie auf einen Inhaltstyp
 <a name="__apply_a_site"> </a>
 
-Wenn für Ihre Website bereits Informationsverwaltungsrichtlinien als Websitesammlungsrichtlinien erstellt wurden, können Sie eine der Richtlinien auf einen Inhaltstyp anwenden. Auf diese Weise können Sie dieselbe Richtlinie auf mehrere Inhaltstypen in einer Websitesammlung anwenden, die nicht den gleichen übergeordneten Inhaltstyp aufweisen.
+Wenn für Ihre Website bereits Informationsverwaltungsrichtlinien als Websitesammlungsrichtlinien erstellt wurden, können Sie eine der Richtlinien auf einen Inhaltstyp anwenden. Auf diese Weise können Sie dieselbe Richtlinie auf mehrere Inhaltstypen in einer Websitesammlung anwenden, die nicht denselben übergeordneten Inhaltstyp verwenden.
   
- Wenn Sie Richtlinien auf mehrere Inhaltstypen in einer Websitesammlung anwenden möchten und ein verwalteter Metadatendienst konfiguriert ist, können Sie die inhaltstypveröffentlichung verwenden, um Informationsverwaltungsrichtlinien in mehreren Websitesammlungen zu veröffentlichen. Weitere Informationen finden Sie im Abschnitt [Anwenden einer Richtlinie auf Websitesammlungen](#apply-a-policy-across-site-collections) . 
+ Wenn Sie Richtlinien auf mehrere Inhaltstypen in einer Websitesammlung anwenden möchten und einen verwalteten Metadatendienst konfiguriert haben, können Sie die Inhaltstypveröffentlichung verwenden, um Richtlinien für die Informationsverwaltung in mehreren Websitesammlungen zu veröffentlichen. Weitere Informationen finden Sie im Abschnitt [Anwenden einer Richtlinie in Websitesammlungen.](#apply-a-policy-across-site-collections) 
   
 1. Navigieren Sie zu der Liste oder Bibliothek, die den Inhaltstyp enthält, auf den Sie eine Richtlinie anwenden möchten.
     
-2. Wählen Sie im Menüband die Bibliothekseinstellungen oder Listeneinstellungen **für Bibliotheks** -oder **Listen** Registerkarten aus \> **Library Settings** . **List Settings**
+2. Wählen Sie auf dem Menüband die Registerkarte **Bibliothek** **oder** \> **Listenbibliothek Einstellungen** oder Listen **Einstellungen**.
     
-    Klicken Sie in SharePoint Online auf **Einstellungen** , und klicken Sie dann auf **Listeneinstellungen** oder **Bibliothekseinstellungen**. 
+    Klicken SharePoint Online auf **Einstellungen** und dann auf **Listeneinstellungen** oder **Bibliothekseinstellungen**. 
     
-3. Unter **Berechtigungen und Verwaltungs** \> **Informationsverwaltungsrichtlinien Einstellungen**.
+3. Unter **Richtlinieneinstellungen für Berechtigungen und** Verwaltung von \> **Informationsverwaltung**.
   
-![Link "Informationsverwaltungsrichtlinien" auf der Seite "Einstellungen" für Dokumentbibliothek](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
+![Link zu Informationsverwaltungsrichtlinien auf der Einstellungsseite für die Dokumentbibliothek](../media/9fa6d366-6aab-49e1-a05c-898ac6f536e6.png)
   
-4. Stellen Sie sicher, dass die Richtlinienquelle auf **Inhaltstypen**festgelegt ist, und wählen Sie unter **Inhaltstyp Richtlinien** den Inhaltstyp aus, auf den die Richtlinie angewendet werden soll. 
+4. Stellen Sie sicher, dass die Richtlinienquelle  auf Inhaltstypen festgelegt **ist,** und wählen Sie unter Inhaltstyprichtlinien den Inhaltstyp aus, auf den Sie die Richtlinie anwenden möchten. 
     
-5. Wählen Sie unter **Geben Sie die Richtlinie** \> **verwenden eine Websitesammlungsrichtlinie**aus, und wählen Sie dann die Richtlinie aus der Liste aus, die Sie anwenden möchten. 
+5. Wählen **Sie unter Richtlinie Festlegen der** Richtlinie \> **Websitesammlungsrichtlinie verwenden** aus der Liste aus, und wählen Sie dann die Richtlinie aus, die Sie anwenden möchten. 
     
     > [!NOTE]
-    >  Wenn die Option **Websitesammlungsrichtlinie verwenden** nicht verfügbar ist, wurden keine Websitesammlungsrichtlinien für die Websitesammlung definiert. 
+    >  Wenn die **Option Websitesammlungsrichtlinie** verwenden nicht verfügbar ist, wurden keine Websitesammlungsrichtlinien für die Websitesammlung definiert. 
   
 6. Wählen Sie **OK** aus.
     
-     Wenn die Liste oder Bibliothek, mit der Sie arbeiten, die Verwaltung mehrerer Inhaltstypen unterstützt, können Sie unter **Inhaltstypen** den Inhaltstyp auswählen, für den Sie eine Informationsverwaltungsrichtlinie angeben möchten. Dadurch gelangen Sie direkt zu Schritt 5 weiter oben. 
+     Wenn die Liste oder Bibliothek, mit der Sie arbeiten, die Verwaltung mehrerer Inhaltstypen unterstützt, können Sie unter Inhaltstypen den Inhaltstyp auswählen, für den Sie eine Informationsverwaltungsrichtlinie angeben möchten.  Dies wird Sie direkt zu Schritt 5 oben. 
     
 ## <a name="apply-a-policy-across-site-collections"></a>Anwenden einer Richtlinie auf Websitesammlungen
 <a name="__toc260646789"> </a>
 
-Freigeben von Inhaltstypen für Websitesammlungen mithilfe einer Dienstanwendung für verwaltete Metadaten zum Einrichten der Veröffentlichung von Inhaltstypen. Die inhaltstypveröffentlichung unterstützt Sie bei der konsistenten Verwaltung von Inhalten und Metadaten auf ihren Websites, da Inhaltstypen zentral erstellt und aktualisiert werden können und Updates in mehreren Abonnement-Websitesammlungen oder Webanwendungen veröffentlicht werden können.
+Freigeben von Inhaltstypen in Websitesammlungen mithilfe einer Dienstanwendung für verwaltete Metadaten zum Einrichten der Inhaltstypveröffentlichung. Die Inhaltstypveröffentlichung hilft Ihnen, Inhalte und Metadaten auf Ihren Websites konsistent zu verwalten, da Inhaltstypen zentral erstellt und aktualisiert werden können und Updates in mehreren abonnierenden Websitesammlungen oder Webanwendungen veröffentlicht werden können.
   
-## <a name="create-a-template-from-an-existing-policy-to-use-across-site-collections"></a>Erstellen einer Vorlage aus einer vorhandenen Richtlinie für die Verwendung in Websitesammlungen
+## <a name="create-a-template-from-an-existing-policy-to-use-across-site-collections"></a>Erstellen einer Vorlage aus einer vorhandenen Richtlinie, die websiteübergreifend verwendet werden soll
 <a name="__toc262125409"> </a>
 
-Sie können eine Informationsverwaltungsrichtlinie definieren und anschließend eine Vorlage daraus erstellen, die bei Bedarf in mehreren Websitesammlungen verwendet wird. Diese Methode kann verwendet werden, wenn Sie eine Sicherung ihrer Informationsrichtlinien verwenden möchten, oder Sie kann auch als alternative Methode für die Verwendung der inhaltstypveröffentlichung zum Anwenden einer Richtlinie auf Websitesammlungen verwendet werden. Sie erstellen eine Vorlage oder Sicherung der Richtlinie, indem Sie die Richtlinie aus einer Websitesammlung exportieren und anschließend an einen gespeicherten Speicherort oder eine andere Websitesammlung importieren.
+Sie können eine Informationsverwaltungsrichtlinie definieren und anschließend eine Vorlage erstellen, die bei Bedarf in mehreren Websitesammlungen verwendet werden soll. Diese Methode kann verwendet werden, wenn Sie über eine Sicherung Ihrer Informationsrichtlinien verfügen möchten, oder sie kann auch als alternative Methode zur Verwendung der Inhaltstypveröffentlichung zum Anwenden einer Richtlinie in Websitesammlungen verwendet werden. Sie erstellen eine Vorlage oder Sicherung der Richtlinie, indem Sie die Richtlinie aus einer Websitesammlung exportieren und dann an einen gespeicherten Speicherort oder in eine andere Websitesammlung importieren.
   
 > [!IMPORTANT]
->  Wenn Sie das Feature exportieren/importieren als Möglichkeit zum Erstellen einer Reihe von Richtlinienvorlagen verwenden, sollten Sie beachten, dass in der Datei Policy. XML ein eindeutiger Bezeichner vorhanden ist. Aus diesem Grund können Sie diese Richtlinie nicht mehr als einmal in eine Website importieren, ohne diesen eindeutigen Bezeichner zu ändern. 
+>  Wenn Sie das Export/Import-Feature zum Erstellen einer Reihe von Richtlinienvorlagen verwenden, beachten Sie, dass in der Richtliniendatei .xml ist. Aus diesem Grund können Sie diese Richtlinie nicht mehr als einmal in eine Website importieren, ohne diesen eindeutigen Bezeichner zu ändern. 
   
 ### <a name="export-a-policy"></a>Exportieren einer Richtlinie
 <a name="__toc260646790"> </a>
 
-1. Wählen Sie auf der Homepage der Websitesammlung **Einstellungen**für ![ kleine Einstellungen aus, die als Standort für Websiteeinstellungen festgelegte Einstellungen übernommen haben. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) \> **Site Settings**
+1. Wählen Sie auf der **Homepage** der Websitesammlung die Option Einstellungen Einstellungen zahnrad aus, das an die Stelle der ![ Websitesammlung Einstellungen. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) \> **Website Einstellungen**.
     
-    Klicken Sie auf einer mit SharePoint-Gruppe verbundenen Website auf **Einstellungen**, klicken Sie auf **Websiteinhalte**, und klicken Sie dann auf **Websiteeinstellungen**. 
+    Klicken Sie SharePoint mit einer Gruppe verbundenen Website auf **Einstellungen**, klicken Sie auf Websiteinhalte, und klicken Sie dann auf Website **Einstellungen**. 
     
-2. Geben Sie auf der Seite Websiteeinstellungen **Site Collection Administration** unter \> **Inhaltstyp Richtlinienvorlagen**für die Websitesammlungsverwaltung. 
+2. Auf der Seite Website Einstellungen unter **Websitesammlungsverwaltung** \> **Inhaltstyprichtlinienvorlagen**. 
   
-![Link zur Richtlinienvorlage "Inhaltstyp" auf der Seite "Websiteeinstellungen"](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
+![Link zur Inhaltstyprichtlinie auf Einstellungen Seite](../media/26d3466a-23ec-443f-88f0-2aaff38e992b.png)
   
-3. Wählen Sie die Richtlinie aus, die Sie exportieren möchten, \> Scrollen Sie zum unteren \> **Export**.
+3. Wählen Sie die Richtlinie aus, die Sie exportieren \> möchten, und führen Sie den Bildlauf zum unteren Export \> **aus.**
     
-4. Wählen Sie an der Eingabeaufforderung zum Speichern oder Öffnen der Datei **Speichern**aus, und wählen Sie dann einen Speicherort aus, in dem die Datei gespeichert werden soll. Stellen Sie sicher, dass Sie einen Speicherort auswählen, der für die Websitesammlungen zur Verfügung steht, die die Richtlinie importieren.
+4. Wählen Sie an der Eingabeaufforderung zum Speichern oder Öffnen der Datei **Speichern** aus, und wählen Sie dann einen Speicherort aus, an dem die Datei gespeichert werden soll. Achten Sie darauf, einen Speicherort auszuwählen, der für die Websitesammlungen verfügbar ist, die die Richtlinie importieren.
     
-5. Wenn das Dialogfeld zum Herunterladen abgeschlossen angezeigt wird, wählen Sie **Schließen**aus.
+5. Wenn das Dialogfeld Download abgeschlossen angezeigt wird, wählen Sie **Schließen aus.**
     
 ### <a name="import-a-policy-to-a-different-site-collection"></a>Importieren einer Richtlinie in eine andere Websitesammlung
 <a name="__toc260646791"> </a>
 
-Wenn Sie eine Informationsverwaltungsrichtlinie importieren, können Sie Sie auf der Website-oder Listenebene innerhalb einer bestimmten Websitesammlung auf mehrere Inhaltstypen anwenden. Die Vorteile dieser Vorgehensweise liegen auf zweierlei Weise: Sie müssen die Richtlinie nicht für jeden Inhaltstyp neu definieren und anwenden, und Sie können Richtlinienänderungen einfacher verwalten, indem Sie Änderungen an der Richtlinie an nur einer Stelle vornehmen.
+Durch das Importieren einer Informationsverwaltungsrichtlinie können Sie sie auf mehrere Inhaltstypen auf Website- oder Listenebene innerhalb einer bestimmten Websitesammlung anwenden. Dies bietet zwei Vorteile: Sie müssen die Richtlinie nicht neu definieren und auf jeden Inhaltstyp anwenden, und Sie können Richtlinienänderungen einfacher verwalten, indem Sie Änderungen an der Richtlinie an nur einem Ort vornehmen.
   
-1. Wählen Sie auf der Homepage der Websitesammlung, auf die Sie die Richtlinie anwenden möchten, die Option **Einstellungen**für ![ kleine Einstellungen aus, die die Websiteeinstellungen übernahm. ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) \> **Site Settings**
+1. Wählen Sie auf der Startseite der Websitesammlung, auf die Sie die Richtlinie anwenden möchten, **Einstellungen** Kleines Einstellungen-Zahnrad aus, das an die Stelle von ![ Site Einstellungen. Site Einstellungen ](../media/a47a06c3-83fb-46b2-9c52-d1bad63e3e60.png) \> **.**
     
-    Klicken Sie auf einer mit SharePoint-Gruppe verbundenen Website auf **Einstellungen**, klicken Sie auf **Websiteinhalte**, und klicken Sie dann auf **Websiteeinstellungen**. 
+    Klicken Sie SharePoint mit einer Gruppe verbundenen Website auf **Einstellungen**, klicken Sie auf Websiteinhalte, und klicken Sie dann auf Website **Einstellungen**. 
     
-2. Geben Sie auf der Seite Websiteeinstellungen **Site Collection Administration** unter \> **Inhaltstyp Richtlinienvorlagen**für die Websitesammlungsverwaltung.
+2. Auf der Seite Website Einstellungen unter **Websitesammlungsverwaltung** \> **Inhaltstyprichtlinienvorlagen**.
     
-3. Suchen Sie auf der Seite Richtlinien \> **importieren** \> **Browse** nach der XML-Datei für die Richtlinie. 
+3. Suchen Sie auf der \> **Seite Richtlinien** \> **durchsuchen,** um die XML-Datei für die Richtlinie zu finden. 
     
-4. Wählen Sie die XML-Datei aus, in der die Richtlinie \> **geöffnet**gespeichert wurde. 
+4. Wählen Sie die XML-Datei aus, in der die Richtlinie gespeichert wurde \> **Open**. 
     
-5. Klicken Sie auf der Seite Importieren einer Websitesammlungsrichtlinie auf \> **importieren** , um die Richtlinie der Websitesammlung hinzuzufügen. 
+5. Klicken Sie auf der Seite Websitesammlungsrichtlinie \> **importieren,** um die Richtlinie der Websitesammlung hinzuzufügen. 
     
-Die importierte Richtlinie kann nun auf einen oder mehrere Inhaltstypen auf Website-oder Listenebene angewendet werden. 
+Ihre importierte Richtlinie kann jetzt auf einen oder mehrere Inhaltstypen auf Website- oder Listenebene angewendet werden. 
   
-Mithilfe von Informationsverwaltungsrichtlinien kann Ihre Organisation steuern, wie lange Inhalt aufbewahrt werden soll, um zu überwachen, was Benutzer mit Inhalten tun, und um einem dokumentbarcodes oder Beschriftungen hinzuzufügen. Eine Richtlinie kann dazu beitragen, die Einhaltung gesetzlicher und behördlicher Vorschriften oder interner Geschäftsprozesse zu erzwingen. Als Administrator können Sie eine Richtlinie einrichten, um zu steuern, wie Dokumente überwacht werden und wie lange Dokumente aufbewahrt werden sollen.
+Informationsverwaltungsrichtlinien ermöglichen Es Ihrer Organisation, zu steuern, wie lange Inhalte beibehalten werden sollen, um zu überwachen, was Personen mit Inhalten tun, und Barcodes oder Bezeichnungen zu Dokumenten hinzuzufügen. Eine Richtlinie kann dazu beitragen, die Einhaltung gesetzlicher und behördlicher Bestimmungen oder interner Geschäftsprozesse durchzusetzen. Als Administrator können Sie eine Richtlinie einrichten, um zu steuern, wie Dokumente nachverfolgt werden und wie lange Dokumente beibehalten werden.
 
-Sie können eine Informationsverwaltungsrichtlinie erstellen, die an drei verschiedenen Orten in der Websitehierarchie, vom weitesten bis zum engsten, möglich ist:
+Sie können eine Informationsverwaltungsrichtlinie an drei verschiedenen Speicherorten in der Websitehierarchie erstellen, von der breitesten bis zur schmalsten:
 - Erstellen Sie eine Richtlinie, die für mehrere Inhaltstypen in einer Websitesammlung verwendet werden soll.
 - Erstellen Sie eine Richtlinie für einen Websiteinhaltstyp.
 - Erstellen Sie eine Richtlinie für eine Liste oder Bibliothek.

@@ -113,7 +113,7 @@ Security Intelligence-Pakete werden in der Regel alle drei bis vier Stunden ver�
 
 2. Geben Sie den Namen als **Security Intelligence Unpacker ein.** Wechseln Sie zur **Registerkarte Trigger.** Wählen **Sie Neu aus...** > **Täglich**, und wählen Sie **OK aus.**
 
-3. Wechseln Sie zur **Registerkarte Aktionen.** Wählen **Sie Neu aus...** Geben **Sie PowerShell** in das **Feld Programm/Skript** ein. Geben `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` Sie in das Feld Argumente **hinzufügen** ein. Wählen Sie **OK** aus.
+3. Wechseln Sie zur **Registerkarte Aktionen.** Wählen **Sie Neu aus...** Geben **Sie PowerShell** in das **Feld Programm/Skript** ein. Geben `-ExecutionPolicy Bypass c:\wdav-update\vdmdlunpack.ps1` Sie in das Feld Argumente **hinzufügen** ein. Klicken Sie auf **OK**.
 
 4. Sie können bei Wunsch zusätzliche Einstellungen konfigurieren.
 
@@ -161,7 +161,7 @@ Sie können den Typ der Überprüfung angeben, die während einer geplanten Übe
 
 4. Wählen Sie **OK** aus. 
 
-5. Stellen Sie Ihr Gruppenrichtlinienobjekt wie üblich zur Bereitstellung.
+5. Stellen Sie Ihr Gruppenrichtlinien-Objekt bereit, so wie Sie dies normalerweise tun.
 
 ## <a name="prevent-notifications"></a>Verhindern von Benachrichtigungen
 
@@ -173,7 +173,7 @@ Manchmal können Microsoft Defender Antivirus Benachrichtigungen an mehrere Sitz
 
 3. Legen Sie die Richtlinie auf **Aktiviert**, und wählen Sie dann **OK aus.**
 
-4. Stellen Sie Ihr Gruppenrichtlinienobjekt wie üblich zur Bereitstellung.
+4. Stellen Sie Ihr Gruppenrichtlinien-Objekt bereit, so wie Sie dies normalerweise tun.
 
 Das Unterdrücken von Benachrichtigungen verhindert, Microsoft Defender Antivirus Benachrichtigungen im Aktionscenter am Windows 10 angezeigt werden, wenn Scans durchgeführt oder Korrekturaktionen ausgeführt werden. Ihr Sicherheitsbetriebsteam sieht jedoch die Ergebnisse der Überprüfung in der Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ).
 
@@ -198,7 +198,7 @@ Durch deaktivieren eines Scans nach einem Update wird verhindert, dass nach dem 
 
 4. Wählen Sie **OK** aus.
 
-5. Stellen Sie Ihr Gruppenrichtlinienobjekt wie üblich zur Bereitstellung.
+5. Stellen Sie Ihr Gruppenrichtlinien-Objekt bereit, so wie Sie dies normalerweise tun.
 
 Diese Richtlinie verhindert, dass eine Überprüfung unmittelbar nach einem Update ausgeführt wird.
 
@@ -210,7 +210,7 @@ Diese Richtlinie verhindert, dass eine Überprüfung unmittelbar nach einem Upda
 
 3. Legen Sie die Richtlinie auf **Aktiviert .**
 
-4. Wählen Sie **OK** aus.
+4. Klicken Sie auf **OK**.
 
 5. Stellen Sie Ihr Gruppenrichtlinienobjekt wie gewöhnlich zur Bereitstellung.
 

@@ -54,9 +54,9 @@ Aktivieren Sie den Netzwerkschutz im Überwachungsmodus, um zu sehen, welche IP-
 
 Die Netzwerkverbindung ist zulässig, und es wird eine Testnachricht angezeigt.
 
-![Beispielbenachrichtigung mit der Meldung "Verbindung blockiert": Ihr IT-Administrator hat windows Security dazu verangert, diese Netzwerkverbindung zu blockieren. Wenden Sie sich an Ihren IT-Helpdesk.](/microsoft-365/security/defender-endpoint/images/np-notif)
+![Beispielbenachrichtigung mit dem Hinweis "Verbindung blockiert": Ihr IT-Administrator hat Windows-Sicherheit diese Netzwerkverbindung blockiert. Wenden Sie sich an Ihren IT-Helpdesk.](/microsoft-365/security/defender-endpoint/images/np-notif)
 
-## <a name="review-network-protection-events-in-windows-event-viewer"></a>Überprüfen von Netzwerkschutzereignissen in der Windows-Ereignisanzeige
+## <a name="review-network-protection-events-in-windows-event-viewer"></a>Überprüfen von Netzwerkschutzereignissen in Windows Ereignisanzeige
 
 Um Apps zu überprüfen, die blockiert wurden, öffnen Sie die Ereignisanzeige, und filtern Sie im Microsoft-Windows-Windows-Defender/Operational-Protokoll nach Ereignis-ID 1125. In der folgenden Tabelle sind alle Netzwerkschutzereignisse aufgeführt.
 

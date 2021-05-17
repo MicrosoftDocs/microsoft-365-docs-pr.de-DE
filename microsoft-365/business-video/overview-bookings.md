@@ -35,7 +35,7 @@ Microsoft Bookings ist eine Online-App und mobile App für kleine Unternehmen, d
 
 ## <a name="get-started-with-bookings"></a>Erste Schritte mit Bookings
 
-1. Um mit den ersten Schritte zu beginnen, melden Sie sich bei Microsoft 365 an, und wählen **Sie im App-Startfeld Buchungen** aus.
+1. Um mit den ersten Schritte zu beginnen, Microsoft 365 Sie **im App-Startfeld die** Option Bookings aus.
 1. Wählen **Sie jetzt auf der** Seite Bookings **die** Option Jetzt herunterladen aus.
 1. Fügen Sie Ihre Geschäftsinformationen hinzu, und Sie können mit bookings beginnen.
 

@@ -34,7 +34,7 @@ Sie können Angriffsflächenreduzierungsregeln, Exploitschutz, Netzwerkschutz un
 
 Möglicherweise möchten Sie den Überwachungsmodus aktivieren, wenn Sie testen, wie die Features in Ihrer Organisation funktionieren. Dadurch wird sichergestellt, dass Ihre Business-Of-Business-Apps nicht betroffen sind. Sie können auch eine Vorstellung davon erhalten, wie viele verdächtige Dateiänderungsversuche über einen bestimmten Zeitraum erfolgen.
 
-Die Features blockieren oder verhindern nicht, dass Apps, Skripts oder Dateien geändert werden. Im Windows-Ereignisprotokoll werden jedoch Ereignisse aufgezeichnet, als wären die Features vollständig aktiviert. Im Überwachungsmodus können Sie das Ereignisprotokoll überprüfen, um zu sehen, welche Auswirkungen das Feature hätte, wenn es aktiviert wäre.
+Die Features blockieren oder verhindern nicht, dass Apps, Skripts oder Dateien geändert werden. Das Ereignisprotokoll Windows jedoch Ereignisse auf, als wären die Features vollständig aktiviert. Im Überwachungsmodus können Sie das Ereignisprotokoll überprüfen, um zu sehen, welche Auswirkungen das Feature hätte, wenn es aktiviert wäre.
 
 Um die überwachten Einträge zu finden, wechseln Sie zu **Anwendungen und** Dienste  >  **Microsoft**  >  **Windows**  >  **Windows Defender**  >  **Operational**.
 

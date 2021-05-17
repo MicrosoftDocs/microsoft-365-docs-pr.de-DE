@@ -30,17 +30,17 @@ ms.locfileid: "52274472"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Nachrichtenverfolgung im Security & Compliance Center folgt E-Mail-Nachrichten, während sie durch Ihre Exchange Online-Organisation reisen. Sie können bestimmen, ob eine Nachricht vom Dienst empfangen, abgelehnt, zurückgestellt oder zugestellt wurde. Außerdem werden die Aktionen der Nachricht gezeigt, bevor diese ihren finalen Status erreicht hat.
+Die Nachrichtenverfolgung im Security & Compliance Center folgt E-Mail-Nachrichten, während sie durch Ihre Exchange Online werden. Sie können bestimmen, ob eine Nachricht vom Dienst empfangen, abgelehnt, zurückgestellt oder zugestellt wurde. Außerdem werden die Aktionen der Nachricht gezeigt, bevor diese ihren finalen Status erreicht hat.
 
 Sie können die Informationen aus der Nachrichtenablaufverfolgung verwenden, um Benutzerfragen effizient zu beantworten, was mit Nachrichten passiert ist, Probleme mit dem Nachrichtenfluss zu beheben und Richtlinienänderungen zu überprüfen.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie müssen Mitglied der Rollengruppen **Organisationsverwaltung,** **Complianceverwaltung** oder **HelpDesk** in **Exchange Online** sein, um die Nachrichtenverfolgung verwenden zu können. Weitere Informationen finden Sie unter [Berechtigungen in Exchange Online](/exchange/permissions-exo/permissions-exo).
+- Sie müssen Mitglied der Rollengruppen **"Organisationsverwaltung",** **"Complianceverwaltung"** oder **"HelpDesk"** **in** Exchange Online Nachrichtenverfolgung verwenden. Weitere Informationen finden Sie unter [Berechtigungen in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
-  **Hinweise**: Die Mitgliedschaft in der entsprechenden Azure Active Directory-Rolle im  Microsoft 365 Admin Center bietet Benutzern die erforderlichen Berechtigungen und Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+  **Hinweise**: Die Mitgliedschaft in der entsprechenden Azure Active Directory im Microsoft 365 Admin Center  bietet Benutzern die erforderlichen Berechtigungen und Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
-- Die maximale Anzahl von Nachrichten, die in den Ergebnissen einer Nachrichtenverfolgung angezeigt [](#choose-report-type) werden, hängt vom ausgewählten Berichtstyp ab (Weitere Informationen finden Sie im Abschnitt Berichtstyp auswählen). Das [Cmdlet Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) in Exchange Online PowerShell oder eigenständiger EOP PowerShell gibt alle Nachrichten in den Ergebnissen zurück.
+- Die maximale Anzahl von Nachrichten, die in den Ergebnissen einer Nachrichtenverfolgung angezeigt [](#choose-report-type) werden, hängt vom ausgewählten Berichtstyp ab (Weitere Informationen finden Sie im Abschnitt Berichtstyp auswählen). Das [Cmdlet Get-HistoricalSearch](/powershell/module/exchange/get-historicalsearch) in Exchange Online PowerShell oder der eigenständigen EOP PowerShell gibt alle Nachrichten in den Ergebnissen zurück.
 
 ## <a name="open-message-trace"></a>Öffnen der Nachrichtenverfolgung
 
@@ -52,7 +52,7 @@ Sie können die Informationen aus der Nachrichtenablaufverfolgung verwenden, um 
 
 Von hier aus können Sie eine neue Standardverfolgung starten, indem Sie auf die Schaltfläche **Ablaufverfolgung starten** klicken. Dadurch werden alle Nachrichten für alle Absender und Empfänger für die letzten zwei Tage gesucht. Sie können auch eine der gespeicherten Abfragen aus den verfügbaren Abfragekategorien verwenden und sie entweder wie vorhanden ausführen oder als Ausgangspunkt für Ihre eigenen Abfragen verwenden:
 
-- **Standardabfragen:** Von Microsoft 365 bereitgestellte integrierte Abfragen.
+- **Standardabfragen:** Integrierte Abfragen, die von der Microsoft 365.
 - **Benutzerdefinierte Abfragen:** Abfragen, die von Administratoren in Ihrer Organisation zur zukünftigen Verwendung gespeichert werden.
 - **Automatisch gespeicherte Abfragen:** Die letzten zehn zuletzt ausgeführten Abfragen. Diese Liste macht es einfach, die Stelle zu finden, an der Sie auf der Stelle aufbließen.
 
@@ -114,7 +114,7 @@ Sie können den Standardwert **Alle** ausgewählt lassen, oder Sie können einen
 
 Dies ist die Internetnachrichten-ID (auch als Client-ID bezeichnet), die im **Nachrichtenkopffeld Message-ID:** im Nachrichtenkopf gefunden wird. Benutzer können Ihnen diesen Wert geben, um bestimmte Nachrichten zu untersuchen.
 
-Dieser Wert ist für die Lebensdauer der Nachricht konstant. Für Nachrichten, die in Microsoft 365 oder Exchange erstellt wurden, hat der Wert das Format , einschließlich der `<GUID@ServerFQDN>` eckigen Klammern ( \< \> ). Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Andere Messagingsysteme verwenden möglicherweise unterschiedliche Syntax oder Werte. Dieser Wert sollte eindeutig sein, aber nicht alle E-Mail-Systeme halten sich strikt an diese Anforderung. Wenn das **Kopfzeilenfeld Message-ID:** nicht vorhanden ist oder für eingehende Nachrichten aus externen Quellen leer ist, wird ein beliebiger Wert zugewiesen.
+Dieser Wert ist für die Lebensdauer der Nachricht konstant. Für Nachrichten, die in Microsoft 365 oder Exchange erstellt werden, hat der Wert das Format , einschließlich der `<GUID@ServerFQDN>` eckigen Klammern ( \< \> ). Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Andere Messagingsysteme verwenden möglicherweise unterschiedliche Syntax oder Werte. Dieser Wert sollte eindeutig sein, aber nicht alle E-Mail-Systeme halten sich strikt an diese Anforderung. Wenn das **Kopfzeilenfeld Message-ID:** nicht vorhanden ist oder für eingehende Nachrichten aus externen Quellen leer ist, wird ein beliebiger Wert zugewiesen.
 
 Wenn Sie die Ergebnisse mithilfe der **Nachrichten-ID** filtern, müssen Sie unbedingt die vollständige Zeichenfolge einschließlich aller eckigen Klammern angeben.
 
@@ -140,7 +140,7 @@ Die verfügbaren Berichtstypen sind:
 >
 > - Erweiterte Zusammenfassungsberichte und erweiterte Berichte werden mithilfe archivierter Nachrichtenverfolgungsdaten vorbereitet, und es kann bis zu mehrere Stunden dauern, bis Ihr Bericht heruntergeladen werden kann. Je nachdem, wie viele andere Administratoren auch Berichtsanforderungen zur gleichen Zeit übermittelt haben, können Sie auch eine Verzögerung bemerken, bevor Die Anforderung in der Warteschlange verarbeitet wird.
 > - Sie können zwar eine erweiterte Zusammenfassung oder einen erweiterten Bericht für einen beliebigen Datums-/Uhrzeitbereich auswählen, aber in der Regel stehen die letzten vier Stunden archivierter Daten für diese beiden Berichtstypen noch nicht zur Verfügung.
-> - Die maximale Größe für einen herunterladbaren Bericht beträgt 500 MB. Wenn ein herunterladbarer Bericht mehr als 500 MB überschreitet, können Sie den Bericht nicht in Excel oder Editor öffnen.
+> - Die maximale Größe für einen herunterladbaren Bericht beträgt 500 MB. Wenn ein herunterladbarer Bericht 500 MB überschreitet, können Sie den Bericht nicht in Excel oder Editor.
 
 Wenn Sie auf **Weiter** klicken, wird eine Zusammenfassungsseite mit den ausgewählten Filteroptionen, einem eindeutigen (bearbeitbaren) Titel für den Bericht und der E-Mail-Adresse angezeigt, die die Benachrichtigung empfängt, wenn die Nachrichtenverfolgung abgeschlossen ist (auch bearbeitbar und muss sich in einer der akzeptierten Domänen Ihrer Organisation befinden). Klicken **Sie auf Bericht vorbereiten,** um die Nachrichtenverfolgung zu übermitteln. Auf der **Hauptseite Nachrichtenverfolgung** sehen Sie den Status des Berichts im Abschnitt **Herunterladbare Berichte.**
 
@@ -204,7 +204,7 @@ Die Details zur Nachrichtenverfolgung enthalten die folgenden zusätzlichen Info
   > [!NOTE]
   >
   > - Eine ungleichmäßige Nachricht, die erfolgreich zugestellt wird, generiert mehrere **Ereigniseinträge** in der Nachrichtenverfolgung.
-  > - Diese Liste soll nicht vollständig sein. Beschreibungen von weiteren Ereignissen finden Sie unter [Ereignistypen im Nachrichtenverfolgungsprotokoll](/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Beachten Sie, dass dieser Link ein Exchange Server (lokales Exchange)-Thema ist.
+  > - Diese Liste soll nicht vollständig sein. Beschreibungen von weiteren Ereignissen finden Sie unter [Ereignistypen im Nachrichtenverfolgungsprotokoll](/Exchange/mail-flow/transport-logs/message-tracking#event-types-in-the-message-tracking-log). Beachten Sie, dass dieser Link ein Exchange Server (lokales Exchange) ist.
 
 - **Weitere Informationen**: Dieser Abschnitt enthält die folgenden Details:
   - **Nachrichten-ID**: Dieser Wert wird weiter oben in diesem Artikel im Abschnitt [Nachrichten-ID](#message-id) beschrieben. Beispiel: `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`.
@@ -244,12 +244,12 @@ Verfügbare (abgeschlossene) Erweiterte Berichte sind im Abschnitt **Herunterlad
 - **source_context**: Zusätzliche Informationen, die dem **Quellfeld zugeordnet** sind. Beispiel:
   - `Protocol Filter Agent`
   - `3489061114359050000`
-- **source**: Die Exchange Online-Komponente, die für das Ereignis verantwortlich ist. Beispiel:
+- **source**: Die Exchange Online, die für das Ereignis verantwortlich ist. Beispiel:
   - `AGENT`
   - `MAILBOXRULE`
   - `SMTP`
 - **event_id**: Diese entsprechen den **Message-Ereigniswerten,** die im Abschnitt Suchen verwandter Datensätze [für diese Nachricht erläutert](#find-related-records-for-this-message) werden.
-- **internal_message_id**: Eine Nachrichten-ID, die vom Exchange Online-Server zugewiesen wird, der die Nachricht derzeit verarbeitet.
+- **internal_message_id**: Eine Nachrichten-ID, die vom Exchange Online zugewiesen wird, der die Nachricht verarbeitet.
 - **recipient_address**: Die E-Mail-Adressen der Empfänger der Nachricht. Mehrere E-Mail-Adressen sind durch ein Semikolon (;) getrennt.
 - **recipient_count**: Die Gesamtanzahl der Empfänger in der Nachricht.
 - **related_recipient_address**: Wird mit , und -Ereignissen zum Anzeigen anderer E-Mail-Empfängeradressen verwendet, `EXPAND` die der Nachricht zugeordnet `REDIRECT` `RESOLVE` sind.
@@ -262,15 +262,15 @@ Verfügbare (abgeschlossene) Erweiterte Berichte sind im Abschnitt **Herunterlad
   - **MAILBOXRULE**: Enthält **den internal_message_id** der eingehenden Nachricht, die dazu führte, dass die Posteingangsregel die ausgehende Nachricht generierte. Für andere Ereignistypen ist dieses Feld zumeist leer.
 - **return_path**: Die durch den Befehl **MAIL FROM** angegebene E-Mail-Adresse, die die Nachricht gesendet hat. Obwohl dieses Feld nie leer ist, kann der Wert der Null-Absenderadresse als dargestellt `<>` werden.
 - **message_info**: Zusätzliche Informationen zur Nachricht. Beispiel:
-  - Die Datums-/Uhrzeit der Nachrichtenherkunft in UTC für `DELIVER` und `SEND` Ereignisse. Die Ursprungsdatumszeit ist der Zeitpunkt, zu dem die Nachricht zum ersten Mal in die Exchange Online-Organisation eingegeben wurde. Die UTC-Datums-Uhrzeit wird im Datums-Uhrzeit-Format iso 8601 dargestellt: , wobei = Jahr, = Monat, = Tag den Anfang der Zeitkomponente `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` `mm` `dd` `T` angibt, `hh` = Stunde, `mm` = Minute, = Sekunde, `ss` = `fff` `Z` `Zulu` Bruchteile einer Sekunde, und bedeutet , was eine weitere Möglichkeit zum Bezeichnen von UTC ist.
+  - Die Datums-/Uhrzeit der Nachrichtenherkunft in UTC für `DELIVER` und `SEND` Ereignisse. Die Ursprungsdatumszeit ist der Zeitpunkt, zu dem die Nachricht zum ersten Mal in die Exchange Online wurde. Die UTC-Datums-Uhrzeit wird im Datums-Uhrzeit-Format iso 8601 dargestellt: , wobei = Jahr, = Monat, = Tag den Anfang der Zeitkomponente `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` `mm` `dd` `T` angibt, `hh` = Stunde, `mm` = Minute, = Sekunde, `ss` = `fff` `Z` `Zulu` Bruchteile einer Sekunde, und bedeutet , was eine weitere Möglichkeit zum Bezeichnen von UTC ist.
   - Authentifizierungsfehler. Beispielsweise können der Wert und der Authentifizierungstyp angezeigt werden, der beim `11a` Aufgetretenen des Authentifizierungsfehlers verwendet wurde.
-- **tenant_id**: Ein GUID-Wert, der die Exchange Online-Organisation darstellt (z. B. `39238e87-b5ab-4ef6-a559-af54c6b07b42` ).
+- **tenant_id**: Ein GUID-Wert, der die Exchange Online darstellt (z. B. `39238e87-b5ab-4ef6-a559-af54c6b07b42` ).
 - **original_server_ip**: Die IP-Adresse des ursprünglichen Servers.
 - **custom_data**: Enthält Daten zu bestimmten Ereignistypen. Weitere Informationen finden Sie in den folgenden Abschnitten.
 
 #### <a name="custom_data-values"></a>custom_data-Werte
 
-Das **custom_data** für ein Ereignis wird von einer Vielzahl von `AGENTINFO` Exchange Online-Agents zum Protokollieren von Nachrichtenverarbeitungsdetails verwendet. Einige der interessanteren Agents werden in den folgenden Abschnitten beschrieben.
+Das **custom_data** für ein Ereignis wird von einer Vielzahl von Exchange Online zum Protokollieren von `AGENTINFO` Nachrichtenverarbeitungsdetails verwendet. Einige der interessanteren Agents werden in den folgenden Abschnitten beschrieben.
 
 #### <a name="spam-filter-agent"></a>Spamfilter-Agent
 
@@ -345,7 +345,7 @@ Ein **custom_data,** der mit beginnt, ist vom Transport Rule Agent für `S:TRA` 
 |`ETR|ruleId=<guid>`|Die ID der Regel, die abgeglichen wurde.|
 |`St=<datetime>`|Datum und Uhrzeit in UTC, wenn die Regel übereinstimmung aufgetreten ist.|
 |`Action=<ActionDefinition>`|Die Aktion, die angewendet wurde. Eine Liste der verfügbaren Aktionen finden Sie unter [Nachrichtenflussregelaktionen in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions).|
-|`Mode=<Mode>`|Der Modus der Regel. Gültige Werte sind:<ul><li>**Enforce**: Alle Aktionen für die Regel werden erzwungen.</li><li>**Test mit Richtlinientipps:**: Alle Richtlinientippaktionen werden gesendet, andere Erzwingungsaktionen werden jedoch nicht durchgeführt.</li><li>**Test ohne Richtlinientipps:** Aktionen werden in einer Protokolldatei aufgeführt, Absender werden jedoch in keinem Fall benachrichtigt, und Erzwingungsaktionen werden nicht durchgeführt.</li></ul>|
+|`Mode=<Mode>`|Der Modus der Regel. Gültige Werte sind:<ul><li>**Enforce**: Alle Aktionen für die Regel werden erzwungen.</li><li>**Testen mit Richtlinienrichtlinien Tipps:**: Alle Richtlinientippaktionen werden gesendet, andere Erzwingungsaktionen werden jedoch nicht durchgeführt.</li><li>**Test ohne Richtlinien Tipps**: Aktionen werden in einer Protokolldatei aufgeführt, Absender werden jedoch in keinem Fall benachrichtigt, und Erzwingungsaktionen werden nicht durchgeführt.</li></ul>|
 |
 
 Ein Beispiel **custom_data** für nachrichten, die den Bedingungen einer Nachrichtenflussregel entspricht, sieht wie die folgende aus:

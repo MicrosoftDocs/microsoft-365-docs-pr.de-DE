@@ -69,9 +69,9 @@ Informationen zum Anpassen der Berichte finden Sie unter [Customizing the report
 
 Viele weitere Informationen finden Sie in der Power BI-Dokumentation:
 
-- [Grundlegende Power BI-Konzepte](/power-bi/service-basic-concepts)
+- [Power BI grundlegende Konzepte](/power-bi/service-basic-concepts)
 
-    Erfahren Sie mehr über Dashboards, Datasets, Berichte und andere Power BI-Konzepte.
+    Erfahren Sie mehr über Dashboards, Datasets, Berichte und andere Power BI Konzepten.
 
 - [Erste Schritte mit Power BI](/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 

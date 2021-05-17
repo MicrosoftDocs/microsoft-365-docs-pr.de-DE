@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Microsoft 365-Mandanten mit Windows PowerShell für DAP-Partner
+title: Verwalten Microsoft 365 Mandanten mit Windows PowerShell für DAP-Partner
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -16,7 +16,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: f92d5116-5b66-4150-ad20-1452fc3dd712
-description: In diesem Artikel erfahren Sie, wie Sie mit PowerShell für Microsoft 365 ihre Kundenmandanten verwalten.
+description: In diesem Artikel erfahren Sie, wie Sie PowerShell für Microsoft 365 zum Verwalten Ihrer Kundenmandschaften verwenden.
 ms.openlocfilehash: 14290f04159e3ba0ce46971d204b71d3bb1600d9
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -24,16 +24,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46690413"
 ---
-# <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Verwalten von Microsoft 365-Mandanten mit Windows PowerShell für Partner mit Delegierten Zugriffsberechtigungen (Delegated Access Permission, DAP)
+# <a name="manage-microsoft-365-tenants-with-windows-powershell-for-delegated-access-permissions-dap-partners"></a>Verwalten Microsoft 365 Mandanten mit Windows PowerShell für Partner mit delegierten Zugriffsberechtigungen (Delegated Access Permissions, DAP)
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Windows PowerShell ermöglicht es den Anbietern von Syndication-und Cloud Solution Providern (CSP), Kundenmandanten Einstellungen, die im Microsoft 365 Admin Center nicht verfügbar sind, einfach zu verwalten und zu melden. Beachten Sie, dass für das Partneradministrator Konto die Berechtigung verwalten im Namen von (AOBO) erforderlich ist, um eine Verbindung mit dem Mandanten des Kunden herzustellen.
+Windows PowerShell ermöglicht Syndication- und Cloud Solution Provider (CSP)-Partnern die einfache Verwaltung und Berichtierung von Kunden-Mandationseinstellungen, die im Microsoft 365 Admin Center nicht verfügbar sind. Beachten Sie, dass Berechtigungen für die Verwaltung im Auftrag von (AOBO) erforderlich sind, damit das Partneradministratorkonto eine Verbindung mit seinen Kundenmandieren herstellen kann.
   
-DAP-Partner (Delegated Access Permission, delegierte Zugriffsberechtigung) sind Syndication-Partner und Cloudlösungsanbieter (Cloud Solution Providers, CSP). Häufig handelt es sich um Netzwerk- oder Telekom-Anbieter für andere Unternehmen. Sie bündeln Microsoft 365-Abonnements für Ihre Kunden in ihren Dienst angeboten. Wenn Sie ein Microsoft 365-Abonnement verkaufen, werden Ihnen automatisch Administratoren im Namen von (AOBO) Berechtigungen für den Kundenmandanten erteilt, damit Sie den Kundenmandanten verwalten und melden können.
+DAP-Partner (Delegated Access Permission, delegierte Zugriffsberechtigung) sind Syndication-Partner und Cloudlösungsanbieter (Cloud Solution Providers, CSP). Häufig handelt es sich um Netzwerk- oder Telekom-Anbieter für andere Unternehmen. Sie bündeln Microsoft 365 Abonnements in ihren Serviceangeboten für ihre Kunden. Wenn sie ein Microsoft 365-Abonnement verkaufen, erhalten sie automatisch Die Berechtigung Verwalten im Auftrag von (AOBO) für die Kundenmandschaften, damit sie die Kundenmandschaften verwalten und melden können.
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-Für die Verfahren in diesem Thema müssen Sie eine Verbindung herstellen, um [eine Verbindung mit Microsoft 365 mit PowerShell](connect-to-microsoft-365-powershell.md)herzustellen.
+Für die Verfahren in diesem Thema müssen Sie eine Verbindung mit Verbinden [Herstellen Microsoft 365 PowerShell herstellen.](connect-to-microsoft-365-powershell.md)
   
 Sie benötigen auch die Administratoranmeldeinformationen Ihres Partnermandanten.
   
@@ -76,7 +76,7 @@ Wenn Sie zusätzliche Domänen registriert haben, werden alle Domänen zurückge
   
 ### <a name="get-a-mapping-of-all-tenants-and-registered-domains"></a>Abrufen einer Zuordnung aller Mandanten und registrierten Domänen
 
-In der vorherigen PowerShell für Microsoft 365-Befehle wurde gezeigt, wie Sie entweder Mandanten-IDs oder Domänen abrufen, jedoch nicht beides gleichzeitig und ohne eine eindeutige Zuordnung zwischen allen. Mit diesem Befehl wird eine Auflistung aller ihrer Kundenmandanten-IDs und ihrer Domänen generiert.
+In den vorherigen PowerShell für Microsoft 365-Befehlen wurde gezeigt, wie Sie entweder Mandanten-IDs oder Domänen abrufen, aber nicht beide gleichzeitig und ohne klare Zuordnung zwischen allen. Dieser Befehl generiert eine Auflistung aller Kunden-Mandanten-IDs und deren Domänen.
   
 ```
 $Tenants = Get-MsolPartnerContract -All; $Tenants | foreach {$Domains = $_.TenantId; Get-MsolDomain -TenantId $Domains | fl @{Label="TenantId";Expression={$Domains}},name}
@@ -100,7 +100,7 @@ Get-MsolUser -TenantId <customer TenantId value> -UserPrincipalName <user princi
 
 ### <a name="add-users-set-options-and-assign-licenses"></a>Hinzufügen von Benutzern, Festlegen von Optionen und Zuweisen von Lizenzen
 
-Die Massenerstellung,-Konfiguration und-Lizenzierung von Microsoft 365-Benutzern ist besonders effizient durch die Verwendung von PowerShell für Microsoft 365. In diesem zweistufigen Prozess erstellen Sie zuerst Einträge für alle Benutzer, die Sie in einer CSV-Datei (Comma-Separated Value) hinzufügen möchten, und importieren diese Datei dann mithilfe von PowerShell für Microsoft 365. 
+Die Massenerstellung, Konfiguration und Lizenzierung von Microsoft 365 benutzern ist besonders effizient, indem PowerShell für die Microsoft 365. In diesem zwei-Schritt-Prozess erstellen Sie zunächst Einträge für alle Benutzer, die Sie in einer CSV-Datei (Comma-separated Value) hinzufügen möchten, und importieren sie dann mithilfe von PowerShell für Microsoft 365. 
   
 #### <a name="create-a-csv-file"></a>Erstellen einer CSV-Datei
 
@@ -110,7 +110,7 @@ Erstellen Sie eine CSV-Datei anhand dieses Formats:
     
 Dabei gilt:
   
-- **UsageLocation**: Der Wert hierfür ist der zweistellige ISO-Länder-/Regionscode des Benutzers. Die Länder-/Regioinscodes finden Sie auf der[ISO-Online-Browserplattform](https://go.microsoft.com/fwlink/p/?LinkId=532703). Der Code für die Vereinigten Staaten lautet z. B. „US", der Code für Brasilien „BR". 
+- **UsageLocation**: Der Wert hierfür ist der zweistellige ISO-Länder-/Regionscode des Benutzers. Die Länder-/Regioinscodes finden Sie auf der [ISO-Online-Browserplattform](https://go.microsoft.com/fwlink/p/?LinkId=532703). Der Code für die Vereinigten Staaten lautet z. B. „US", der Code für Brasilien „BR". 
     
 - **LicenseAssignment**: Der Wert hierfür verwendet das folgende Format: `syndication-account:<PROVISIONING_ID>`. Wenn Sie Kundenmandantenbenutzern zum Beispiel O365_Business_Premium-Lizenzen zuweisen, sieht der Wert **LicenseAssignment** wie folgt aus: **syndication-account:O365_Business_Premium**. Sie finden die PROVISIONING_IDs im Syndication-Partnerportal, auf das Sie als Syndication- oder CSP-Partner Zugriff haben.
     

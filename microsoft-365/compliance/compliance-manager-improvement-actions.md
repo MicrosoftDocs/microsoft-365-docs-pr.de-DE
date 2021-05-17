@@ -58,7 +58,7 @@ Nachdem Sie den geeigneten Zuordnende identifiziert haben, müssen Sie sicherste
 
 3. Wählen **Sie Speichern und Schließen aus.** Der zugewiesene Benutzer erhält eine E-Mail mit der Erläuterung, dass ihm die Verbesserungsaktion zugewiesen wurde, mit einem direkten Link zur Verbesserungsaktion. 
 > [!NOTE]
-> Kunden der US Government Community (GCC) high and Department of Defense (DoD) erhalten keine E-Mail, wenn ihnen Verbesserungsmaßnahmen zugewiesen werden.
+> Us Government Community (GCC) High and Department of Defense (DoD) customers won't receive an email when improvement actions are assigned to them.
 
 Der zugewiesene Benutzer kann dann die empfohlenen Aktionen ausführen.
 
@@ -171,4 +171,4 @@ Beachten Sie, dass beim Zurückkehren zu Ihrer Seite mit Verbesserungsmaßnahmen
 
 ## <a name="export-a-report"></a>Exportieren eines Berichts
 
-Wählen **Sie Exportieren** in der oberen linken Ecke Des Bildschirms aus, um ein Excel-Arbeitsblatt herunterzuladen, das alle Verbesserungsmaßnahmen und filterkategorien enthält, die auf der Seite Verbesserungsmaßnahmen angezeigt werden.
+Wählen **Sie Exportieren** in der oberen linken Ecke des Bildschirms aus, um ein Excel-Arbeitsblatt herunterzuladen, das alle Verbesserungsmaßnahmen und die Filterkategorien enthält, die auf der Seite verbesserungsaktionen angezeigt werden.

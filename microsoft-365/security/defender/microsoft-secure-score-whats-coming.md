@@ -1,6 +1,6 @@
 ---
 title: What's coming to Microsoft Secure Score
-description: Beschreibt, welche neuen Änderungen an Microsoft Secure Score im Microsoft 365 Security Center vorgenommen werden.
+description: Beschreibt, welche neuen Änderungen an Microsoft Secure Score im Microsoft 365 werden.
 keywords: Microsoft Secure Score, Secure Score, Office 365 Secure Score, Microsoft Security Score, microsoft 365 Security Center, Verbesserungsmaßnahmen
 ms.prod: m365-security
 ms.mktglfcycl: deploy

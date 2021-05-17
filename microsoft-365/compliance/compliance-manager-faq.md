@@ -35,7 +35,7 @@ Es gibt jetzt nur noch eine Lösung: Compliance Manager. Dieser Abschnitt führt
 )
 #### <a name="the-basics"></a>Die Grundlagen
 
-Microsoft Compliance Manager begann als Lösung für die Complianceverwaltung im Microsoft Service Trust Portal.  Als Compliancelösungen im Microsoft 365 Compliance Center entwickelt wurden, haben wir eine neue Erfahrung mit einem benutzerfreundlicheren Design für diesen Standort entwickelt. Die öffentliche Vorschau der Compliance-Bewertung wurde im Microsoft 365 Compliance Center im November 2019 veröffentlicht. Die Compliance-Bewertung hat dasselbe Back-End wie der Compliance-Manager verwendet, sodass Kunden an beiden Stellen arbeiten können. Seit November 2019 haben wir mehrere Updates veröffentlicht, während wir neue Funktionen erstellt haben und auf Kundenfeedback geantwortet haben.
+Microsoft Compliance Manager begann als Lösung für die Complianceverwaltung im Microsoft Service Trust Portal.  Als Compliancelösungen im compliance center Microsoft 365 wurden, haben wir eine neue Erfahrung mit einem benutzerfreundlicheren Design für diesen Standort entwickelt. Die öffentliche Vorschau der Compliance-Bewertung wurde im Microsoft 365 Im November 2019 veröffentlicht. Die Compliance-Bewertung hat dasselbe Back-End wie der Compliance-Manager verwendet, sodass Kunden an beiden Stellen arbeiten können. Seit November 2019 haben wir mehrere Updates veröffentlicht, während wir neue Funktionen erstellt haben und auf Kundenfeedback geantwortet haben.
 
 Die allgemeine Verfügbarkeit von Compliance Manager im Microsoft 365 Compliance Center im September 2020 schließt diese Entwicklung ab. Compliance Manager ist die einheitliche End-to-End-Compliancelösung. Ihre Compliance-Bewertung bleibt eine wichtige Komponente des Compliance-Managers.
 
@@ -43,9 +43,9 @@ Lesen Sie [diesen Blogbeitrag,](https://aka.ms/compliancemanager/GAblog) um mehr
 
 #### <a name="your-organization-regularly-used-compliance-manager-in-the-service-trust-portal"></a>Ihre Organisation hat den Compliance Manager regelmäßig im Dienstvertrauensportal verwendet.
 
-Wenn Sie Compliance Manager im Service Trust Portal verwendet haben, sind alle Daten Ihrer Organisation jetzt im Compliance Manager im Microsoft 365 Compliance Center unter https://compliance.microsoft.com/compliancemanager vorhanden. Es gibt nichts, was Sie tun müssen, um Ihre Compliance-Manager-Arbeit an ihrem neuen Speicherort wieder aufnehmen zu können, es sei denn, Sie müssen alle Lesezeichen aktualisieren, die Sie am vorherigen Speicherort haben. Alle Ihre Bewertungen und anderen Daten wurden für Sie überdingt.
+Wenn Sie Compliance Manager im Dienstvertrauensportal verwendet haben, sind alle Daten Ihrer Organisation jetzt im Compliance Manager im Microsoft 365 Compliance Center unter https://compliance.microsoft.com/compliancemanager vorhanden. Es gibt nichts, was Sie tun müssen, um Ihre Compliance-Manager-Arbeit an ihrem neuen Speicherort wieder aufnehmen zu können, es sei denn, Sie müssen alle Lesezeichen aktualisieren, die Sie am vorherigen Speicherort haben. Alle Ihre Bewertungen und anderen Daten wurden für Sie überdingt.
 
-Beachten Sie, dass der Compliance Manager (Vorschau) im Dienstvertrauensportal nicht mehr verfügbar ist und Sie über alle Links zu ihm an den neuen Speicherort im Microsoft 365 Compliance Center umgeleitet werden. Compliance Manager (klassisch) verbleibt im Dienstvertrauensportal, obwohl die Verwendung davon abgeraten wird.
+Beachten Sie, dass der Compliance-Manager (Vorschau) im Service Trust Portal nicht mehr verfügbar ist und Sie über alle Links zu ihm an den neuen Speicherort im Microsoft 365 werden. Compliance Manager (klassisch) verbleibt im Dienstvertrauensportal, obwohl die Verwendung davon abgeraten wird.
 
 Alles, was Sie in früheren Versionen von Compliance Manager getan haben, z. B. das Abschließen von Aktionen (jetzt als "Verbesserungsmaßnahmen" bezeichnet) und das Erstellen von Bewertungen, kann im neuen Compliance-Manager durchgeführt werden. Wir haben mehr als 150 neue Bewertungsvorlagen hinzugefügt und den Vorlagenerstellungsprozess verbessert. In zukünftigen Versionen werden weitere Verbesserungen hinzugefügt.
 
@@ -55,7 +55,7 @@ Nachfolgend finden Sie einige hilfreiche Ressourcen:
 - [Suchen von Berechtigungen und anderen Setupinformationen für Compliance Manager in der neuen Startseite](compliance-manager-setup.md#who-can-access-compliance-manager)
 - [Weitere Informationen zum Microsoft 365 Compliance Center](microsoft-365-compliance-center.md)
 
-#### <a name="your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center"></a>Ihre Organisation hat die Compliance-Bewertung (öffentliche Vorschau) im Microsoft 365 Compliance Center verwendet.
+#### <a name="your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center"></a>Ihre Organisation hat die Compliance-Bewertung (öffentliche Vorschau) im Microsoft 365 Compliance Center verwendet
 
 Wenn Sie die Compliance-Bewertung in der öffentlichen Vorschau verwendet haben, werden Sie feststellen, dass Der Compliance-Manager weitgehend gleich aussieht, und Ihre Bewertung wird auf Ihrem Dashboard besonders deutlich. Mit der Ga-Version müssen Sie das Microsoft 365 Compliance Center nicht mehr verlassen, um bestimmte Bewertungsverwaltungsfunktionen wie das Erstellen und Ändern von Vorlagen für Bewertungen ausführen zu können. Alle Funktionen befinden sich jetzt an einem Ort. Alle Daten, die Sie in der Vorschauversion von Compliance Score hatten, bleiben in der GA-Version von Compliance Manager erhalten.
 
@@ -73,7 +73,7 @@ Compliance Manager ist eine End-to-End-Lösung im Microsoft 365 Compliance Cente
 
 ## <a name="are-there-licensing-requirements-for-using-compliance-manager"></a>Gibt es Lizenzierungsanforderungen für die Verwendung von Compliance Manager?
 
-Ja. Die ALLGEMEINE Version von Compliance Manager enthält neue Lizenzierungsbedingungen. Alle Organisationen mit Office 365- und Microsoft 365-Lizenzen sowie Kunden der US Government Community (GCC) Moderate, GCC High und Department of Defense (DoD) haben Zugriff auf Compliance Manager. Die für Ihre Organisation verfügbaren Bewertungen und die Art und Weise, wie Sie Bewertungsvorlagen verwalten, hängen jedoch von Ihrem Lizenzvertrag ab. Weitere Informationen [finden Sie in den Microsoft 365-Lizenzierungsanleitungen](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) für Sicherheit und Compliance.
+Ja. Die ALLGEMEINE Version von Compliance Manager enthält neue Lizenzierungsbedingungen. Alle Organisationen mit Office 365- und Microsoft 365-Lizenzen sowie Us Government Community (GCC) Moderate, GCC High und Department of Defense (DoD)-Kunden haben Zugriff auf Compliance Manager. Die für Ihre Organisation verfügbaren Bewertungen und die Art und Weise, wie Sie Bewertungsvorlagen verwalten, hängen jedoch von Ihrem Lizenzvertrag ab. Weitere Informationen [finden Microsoft 365 lizenzierungsanleitung für Sicherheit und](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) Compliance.
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>Wenn ich eine hohe Punktzahl habe, bedeutet dies, dass ich vollständig kompatibel bin?
 
@@ -85,6 +85,6 @@ Compliance Manager bietet zwar eine kontinuierliche Überwachung und empfohlene 
 
 ## <a name="whats-happening-to-compliance-manager-classic-in-the-service-trust-portal"></a>Was geschieht mit dem Compliance Manager (klassisch) im Dienstvertrauensportal?
 
-Die klassische Version von Compliance Manager, die sich im Microsoft Service Trust Portal befindet, wird bald eingestellt. Ein Microsoft 365 Message Center-Hinweis wird mindestens 60 Tage vor dem endgültigen Aus des Compliance Managers (klassisch) angezeigt. Kunden, die ihre Complianceaktivitäten im Compliance Manager (klassisch) verwalten, müssen ihre Daten, einschließlich Bewertungen und Kontrollen, zur neuen Compliance -Manager-Lösung im Microsoft 365 Compliance Center verschieben. Kundendaten werden nicht automatisch an den Compliance Manager im Microsoft 365 Compliance Center übertragen, wenn der Compliance Manager (klassisch) eingestellt wird.
+Die klassische Version von Compliance Manager, die sich im Microsoft Service Trust Portal befindet, wird bald eingestellt. Ein Microsoft 365 Message Center-Hinweis wird mindestens 60 Tage vor dem endgültigen Ausscheiden des Compliance Managers (klassisch) angezeigt. Kunden, die ihre Complianceaktivitäten im Compliance Manager (klassisch) verwalten, müssen ihre Daten, einschließlich Bewertungen und Kontrollen, zur neuen Compliance -Manager-Lösung im Microsoft 365 Compliance Center verschieben. Kundendaten werden nicht automatisch an den Compliance Manager im Microsoft 365 Compliance Center übertragen, wenn der Compliance Manager (klassisch) eingestellt wird.
 
 Informationen dazu, wie Sie den neuen Compliance Manager schnell einrichten können, finden Sie im [Schnellstarthandbuch](compliance-manager-quickstart.md) für Compliance-Manager.

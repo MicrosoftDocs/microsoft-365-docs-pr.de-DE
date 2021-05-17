@@ -142,4 +142,4 @@ Microsoft Defender Offline Scanergebnisse werden im Abschnitt [Scanverlauf](micr
 ## <a name="related-articles"></a>Verwandte Artikel
 
 - [Anpassen, Initiieren und Überprüfen der Ergebnisse von Scans und Korrekturen](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -26,9 +26,9 @@ ms.locfileid: "51579134"
 ---
 # <a name="security-info-graphic-for-small-businesses"></a>Sicherheitsinfografik für kleine Unternehmen
 
-**Zusammenfassung:** Erfahren Sie mehr über die grundlegenden Begriffe für die Bedrohungen, denen Ihr Unternehmen ausgesetzt ist, und was Sie tun können, um Ihre Daten, Konten und Geräte zu schützen. Als Administrator für Microsoft 365 Business ergreifen Sie Maßnahmen, um Ihr Unternehmen sicherer zu machen und jedem Mitarbeiter zu helfen, zu erfahren, wie Sie Ihre Geschäftsdaten und Geräte schützen.
+**Zusammenfassung:** Erfahren Sie mehr über die grundlegenden Begriffe für die Bedrohungen, denen Ihr Unternehmen ausgesetzt ist, und was Sie tun können, um Ihre Daten, Konten und Geräte zu schützen. Als Administrator für Microsoft 365 Unternehmen ergreifen Sie Maßnahmen, um Ihr Unternehmen sicherer zu machen und jedem Mitarbeiter zu helfen, zu erfahren, wie Sie Ihre Geschäftsdaten und Geräte schützen.
 
-Die links für PowerPoint und PDF unten können im Tabloidformat heruntergeladen und gedruckt werden (auch als Ledger, 11 x 17 oder A3 bekannt).
+Die Links für PowerPoint und PDF können im Tabloidformat heruntergeladen und gedruckt werden (auch als Ledger, 11 x 17 oder A3 bekannt).
 
 ![Bild zum Sichern Ihrer Infografik für kleine Unternehmen](../media/smbthreatprotectioninfographic-thumbnail.png)
 

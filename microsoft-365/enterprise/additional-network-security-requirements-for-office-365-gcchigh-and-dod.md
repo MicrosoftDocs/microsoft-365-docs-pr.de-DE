@@ -1,5 +1,5 @@
 ---
-title: Zusätzliche Netzwerksicherheitsanforderungen für Office 365 gcc High und DoD
+title: Zusätzliche Netzwerksicherheitsanforderungen für Office 365 GCC High und DoD
 ms.author: dzazzo
 author: dzazzo
 manager: dzazzo
@@ -18,7 +18,7 @@ search.appverid:
 - OGD150
 - MOE150
 ms.assetid: ''
-description: 'Zusammenfassung: Office 365 gcc High und DoD bieten zusätzliche Netzwerksicherheitsanforderungen'
+description: 'Zusammenfassung: Office 365 GCC High und DoD haben zusätzliche Netzwerksicherheitsanforderungen'
 hideEdit: true
 ms.openlocfilehash: 4817edfcea638324e26eb855d1ea33936be1bfb4
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
@@ -27,44 +27,44 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46690575"
 ---
-# <a name="additional-network-security-requirements-for-office-365-gcc-high-and-dod"></a>Zusätzliche Netzwerksicherheitsanforderungen für Office 365 gcc High und DoD
+# <a name="additional-network-security-requirements-for-office-365-gcc-high-and-dod"></a>Zusätzliche Anforderungen an die Netzwerksicherheit für Office 365 GCC High und DOD
 
-*Dieser Artikel bezieht sich auf Office 365 gcc High, Office 365 DoD, Microsoft 365 gcc High und Microsoft 365 DoD.*
+*Dieser Artikel gilt für Office 365 GCC High, Office 365 DOD, Microsoft 365 GCC High und Microsoft 365 DOD.*
 
-Office 365 gcc High und DoD sind sichere Cloud-Umgebungen, die den Anforderungen der US-Regierung und ihrer Zulieferer und Auftragnehmer gerecht werden.  Diese Cloud-Umgebungen weisen zusätzliche Netzwerkeinschränkungen auf, auf welche externen Endpunkten die Dienste zugreifen dürfen.
+Office 365 GCC High und DOD sind sichere Cloudumgebungen, die den Anforderungen der US-Regierung und ihrer Lieferanten und Auftragnehmer entsprechen.  Diese Cloudumgebungen verfügen über zusätzliche Netzwerkeinschränkungen, auf die externe Endpunkte zugreifen dürfen, auf die die Dienste zugreifen dürfen.
 
-GCC High-und DoD-Kunden, die die Verwendung von Verbundidentitäten oder hybrider Koexistenz planen, erfordern möglicherweise, dass Microsoft eingehende und/oder ausgehende Zugriffe auf Ihre vorhandenen lokalen Bereitstellungen zulässt.  Beispiele für diese Aktivitäten sind:
+GCC Kunden mit hoher Und-DoD-Anzahl, die Verbundidentitäten oder hybride Koexistenz verwenden möchten, müssen möglicherweise von Microsoft eingehenden und/oder ausgehenden Zugriff auf Ihre vorhandenen lokalen Bereitstellungen zulassen.  Beispiele für diese Aktivitäten sind:
 
-* Verwendung von Verbundidentitäten (mit Active Directory Verbunddiensten oder ähnlichen unterstützten STS)
-* Hybride Koexistenz mit einer lokalen Exchange Server-oder Skype for Business-Bereitstellung
-* Migration vorhandener Benutzer Inhalte aus einem lokalen System
+* Verwendung von Verbundidentitäten (mit Active Directory Federation Services oder ähnlichen unterstützten STS)
+* Hybride Koexistenz mit einer lokalen Exchange Server oder Skype for Business Bereitstellung
+* Migration vorhandener Benutzerinhalte aus einem lokalen System
 
-Wenn Sie zulassen möchten, dass der Dienst mit Ihren lokalen Endpunkten kommuniziert, **müssen** Sie eine e-Mail an Office 365 Engineering für Netzwerkänderungen senden.
+Damit der Dienst mit Ihren lokalen Endpunkten  kommunizieren kann, müssen Sie eine E-Mail an Office 365 für Netzwerkänderungen senden.
 
 > [!WARNING]
-> Alle Anforderungen haben eine **dreiwöchige** SLA und können aufgrund der erforderlichen Sicherheits-und Konformitätskontrollen und Bereitstellungs Pipelines nicht beschleunigt werden.  Dies umfasst die anfänglichen Onboarding-Netzwerkanforderungen sowie alle Änderungen, die nach dem Migrieren zu dem Dienst vorgenommen wurden.  Stellen Sie sicher, dass Ihre Netzwerkteams diese Zeitachse kennen und in Ihre Planungszyklen einbeziehen.
+> Alle Anforderungen verfügen über eine SLA **von** drei Wochen und können aufgrund der erforderlichen Sicherheits- und Compliancekontrollen und Bereitstellungspipelines nicht beschleunigt werden.  Dies umfasst anfängliche Onboardingnetzwerkanforderungen sowie alle Änderungen nach der Migration zum Dienst.  Stellen Sie sicher, dass Ihre Netzwerkteams diese Zeitachse kennen und in ihre Planungszyklen einfügen.
 
-Senden Sie eine e-Mail an [Office 365 Government Network Whitelist](mailto:o365gwlt@microsoft.com) mit den folgenden Informationen:
+Senden Sie eine E-Mail [an Office 365 Government Network Whitelist](mailto:o365gwlt@microsoft.com) mit den folgenden Informationen:
 
-* **An**: [Office 365 Government Network Whitelist](mailto:o365gwlt@microsoft.com)
-* **Von**: ein mandantenadministrator-die Sende-e-Mail **muss** mit einem globalen Administratorkontakt in Ihrem Mandanten übereinstimmen.
-* **E-Mail-Betreff**: Office 365 gcc High Network Request-contoso.onmicrosoft.US (ersetzen Sie dies durch ihren Mandantennamen)
+* **To**: [Office 365 Government Network Whitelist](mailto:o365gwlt@microsoft.com)
+* **From**: A tenant administrator – the send email **must match** a Global Administrator contact in your tenant
+* **E-Mail-Betreff**: Office 365 GCC High Network Request - contoso.onmicrosoft.us (ersetzen Sie dies durch Ihren Mandantennamen)
 
-Der Textkörper der Nachricht sollte die folgenden Daten enthalten:
+Der Nachrichtentext sollte die folgenden Daten enthalten:
 
-* Ihr Microsoft Online Services-Mandantenname (dh contoso.onmicrosoft.com, fabrikam.onmicrosoft.US)
-* Eine e-Mail-Verteilerliste, mit der Microsoft für die laufende Kommunikation im Zusammenhang mit Netzwerkänderungen und/oder der Nachverfolgung Ungültiger Subnetze kommuniziert
-* Geben Sie an, ob Sie Microsoft Teams Hybrid Koexistenz mit Ihren lokalen Bereitstellungen verwenden möchten.
-* Verbund Identitätssystem extern zugängliche URL (beispielsweise STS.contoso.com) und IP-Adressbereich in der CIDR-Notation (z.b. 10.1.1.0/28)
-* Lokale PKI-Zertifikatsperrlisten-URL und IP-Adressbereich in der CIDR-Notation
-* Extern zugängliche URL und IP-Adressbereich für Exchange Server lokale Bereitstellung in der CIDR-Notation
-* Extern zugängliche URL und IP-Adressbereich für Skype for Business lokale Bereitstellung in der CIDR-Notation
+* Ihr Microsoft Online Services Mandantenname (d. h. contoso.onmicrosoft.com, fabrikam.onmicrosoft.us)
+* Eine E-Mail-Verteilerliste, mit der Microsoft für die aktuelle Kommunikation im Zusammenhang mit Netzwerkänderungen und/oder der Nachverteiler für ungültige Subnetze kommuniziert
+* Geben Sie an, ob Sie Microsoft Teams hybride Koexistenz mit Ihren lokalen Bereitstellungen verwenden möchten
+* Extern zugängliche URL des Verbundidentitätssystems (z. B. sts.contoso.com) und IP-Adressbereich in CIDR-Notation (z. B. 10.1.1.0/28)
+* Lokale PKI-Zertifikatsperrlisten-URL und IP-Adressbereich in CIDR-Notation
+* Extern zugänglicher URL- und IP-Adressbereich für Exchange Server lokale Bereitstellung in CIDR-Notation
+* Extern zugänglicher URL- und IP-Adressbereich für Skype for Business lokale Bereitstellung in CIDR-Notation
 
-Aus Sicherheits-und Kompatibilitätsgründen sollten Sie die folgenden Einschränkungen für Ihre Anforderung beachten:
+Beachten Sie aus Sicherheits- und Compliancegründen die folgenden Einschränkungen für Ihre Anforderung:
 
-* Es gibt eine Begrenzung für vier Subnetze pro Mandanten.
-* Subnetze müssen sich in der CIDR-Notation befinden (z.b. 10.1.1.0/28)
-* Subnetzbereiche dürfen nicht größer als/24 sein
-* Wir **können keine** Anfragen für den Zugriff auf kommerzielle Cloud-Dienste (kommerzielle Office 365, Google G-Suite, Amazon-Webdienste usw.) erfüllen.
+* Es gibt eine Vier-Subnetz-Beschränkung pro Mandant
+* Subnetze müssen sich in CIDR Notation befinden (z. B. 10.1.1.0/28)
+* Subnetzbereiche dürfen nicht größer als /24
+* Wir **können Anforderungen** zum Zulassen des Zugriffs auf kommerzielle Clouddienste (kommerzielle Office 365, Google G-Suite, Amazon Web Services usw.) nicht erfüllen.
 
-Nachdem Ihre Anfrage empfangen und von Microsoft genehmigt wurde, gibt es eine dreiwöchige SLA für die Implementierung und kann nicht beschleunigt werden.  Sie erhalten eine erste Bestätigung, wenn wir Ihre Anfrage und eine abschließende Bestätigung erhalten haben, nachdem Sie abgeschlossen wurde.
+Sobald Ihre Anforderung von Microsoft empfangen und genehmigt wurde, gibt es eine dreiwöchige SLA für die Implementierung und kann nicht beschleunigt werden.  Sie erhalten eine erste Bestätigung, wenn wir Ihre Anforderung erhalten haben, und eine endgültige Bestätigung, nachdem sie abgeschlossen wurde.

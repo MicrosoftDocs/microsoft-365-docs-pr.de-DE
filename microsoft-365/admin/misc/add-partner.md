@@ -20,7 +20,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: Erfahren Sie, wie Sie zum Zeitpunkt des Microsoft 365-Kaufs einen Abonnementberaterpartner als Datensatzpartner hinzufügen, den Partner ändern oder einen Partner aus einem Abonnement löschen.
+description: Erfahren Sie, wie Sie zum Zeitpunkt des Kaufs, der Änderung des Partners oder des Löschens eines Partners aus einem Abonnement einen Abonnementberaterpartner zum Zeitpunkt des Microsoft 365 hinzufügen.
 ms.openlocfilehash: 913b0e14e1bc08cfd4037775aa4b72b7280c704c
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "51579230"
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> Dieser Artikel gilt für Office 365, betrieben von 21Vianet in China. Es ist für Organisationen, die einem 21Vianet-Partner die Verwaltung ihres Office 365-Abonnements ermöglichen möchten.
+> Dieser Artikel gilt für Office 365 betrieben von 21Vianet in China. Es ist für Organisationen, die einem 21Vianet-Partner die Verwaltung ihrer Office 365 ermöglichen möchten.
 
 ::: moniker-end
 
@@ -45,7 +45,7 @@ ms.locfileid: "51579230"
 
 ::: moniker range="o365-worldwide"
 
-Der partner, den Sie auswählen, hängt von den von Ihnen verwendeten Microsoft-Diensten und dem Land oder der Region ab, in dem Sie diese Dienste nutzen. Wenn Sie einen Partner hinzufügen oder den Partner für Ihr Abonnement ändern, müssen Sie den Partner zuerst nach seiner Microsoft Partner-ID fragen.
+Der von Ihnen bzw. Ihnen Microsoft-Dienste Partner hängt von der von Ihnen verwendeten Umgebung und dem Land oder der Region ab, in dem Sie diese Dienste nutzen. Wenn Sie einen Partner hinzufügen oder den Partner für Ihr Abonnement ändern, müssen Sie den Partner zuerst nach seiner Microsoft Partner-ID fragen.
 
 ::: moniker-end
 
@@ -102,7 +102,7 @@ Führen Sie die Schritte auf der Seite Anbieter aus, um nach einem Partner zu su
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 2. Wählen Sie **auf der** Registerkarte Produkte das Abonnement aus, das Sie bearbeiten möchten.
 3. Geben Sie auf der Seite Abonnementdetails unter **Partnerinformationen** die **Partnernetzwerk-ID ein.** Sie können die Microsoft Partner Network ID des Partners erhalten, indem Sie den Partner dazu fragen.
-4. Klicken Sie auf **Hinzufügen**.
+4. Wählen Sie **Hinzufügen**.
 
 ::: moniker-end
 
@@ -123,7 +123,7 @@ Dieser Prozess wird von Ihrem autorisierten Partner initiiert. Der Partner sende
 So akzeptieren Sie dieses Angebot
   
 1. Lesen Sie die Bedingungen des Partners in der E-Mail.
-2. Um den Vertrag zu autorisieren, wählen Sie den Link aus, der zu einer Autorisierungsseite in Office 365 führt.
+2. Wählen Sie zum Autorisieren der Vereinbarung den Link aus, der zu einer Autorisierungsseite in Office 365.
 3. Wählen **Sie unter Partnerbeziehungen** **Ja** aus, um den Partner als delegierten Administrator zu autorisieren, und wählen Sie dann **Weiter aus.**
 4. Wenn das Angebot für die Partnerbeziehung mit einem Testabonnement oder einem Kaufangebot kam, erstellen Sie Ihr Test- oder Abonnementkonto.
 
@@ -136,7 +136,7 @@ So akzeptieren Sie dieses Angebot
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 2. Wählen Sie auf der Seite Abonnementsdetails unter **Partnerinformationen** die Option **Entfernen aus.**
 3. Geben Sie die **Microsoft Partner Network ID** für den neuen Partner ein. Fragen Sie den Partner nach seiner Microsoft Partner-ID.
-4. Klicken Sie auf **Hinzufügen**.
+4. Wählen Sie **Hinzufügen**.
   
 ::: moniker-end
 
@@ -220,4 +220,4 @@ Sie müssen Ihren Vertriebspartner bitten, die folgenden Anweisungen zu befolgen
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Suchen Ihres Microsoft 365-Partners oder -Händlers](../manage/find-your-partner-or-reseller.md)
+[Suchen ihres Microsoft 365 oder Vertriebspartners](../manage/find-your-partner-or-reseller.md)

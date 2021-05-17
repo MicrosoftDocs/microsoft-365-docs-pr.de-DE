@@ -24,7 +24,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Erfahren Sie, wie Sie verschlüsselte E-Mails mit Outlook senden.
+description: Erfahren Sie, wie Sie verschlüsselte E-Mails mithilfe von Outlook.
 ms.openlocfilehash: 209734bd52d1d97278d5632f035723758fe2e016
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -47,21 +47,21 @@ Bevor Sie E-Mails mit vertraulichen oder vertraulichen Informationen senden, sol
 
 ## <a name="set-it-up"></a>Einrichtung
 
-Wenn Sie eine Nachricht verschlüsseln möchten, die einer vordefinierten Regel nicht gerecht wird oder Ihr Administrator keine Regeln eingerichtet hat, können Sie eine Vielzahl von verschiedenen Verschlüsselungsregeln anwenden, bevor Sie die Nachricht senden. Wenn Sie eine verschlüsselte Nachricht von Outlook 2013 oder 2016 oder Outlook 2016 für Mac senden möchten, wählen Sie **Optionen > Berechtigungen** aus, und wählen Sie dann die von Ihnen benötigten Schutzoption aus. Sie können auch eine verschlüsselte Nachricht senden, indem Sie die **Schaltfläche** Schützen in Outlook im Web auswählen. Weitere Informationen finden Sie unter [Senden, Anzeigen und Antworten auf verschlüsselte Nachrichten in Outlook für PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
+Wenn Sie eine Nachricht verschlüsseln möchten, die einer vordefinierten Regel nicht gerecht wird oder Ihr Administrator keine Regeln eingerichtet hat, können Sie eine Vielzahl von verschiedenen Verschlüsselungsregeln anwenden, bevor Sie die Nachricht senden. Wenn Sie eine verschlüsselte Nachricht von Outlook 2013 oder 2016 oder Outlook 2016 für Mac senden möchten, wählen Sie Optionen **> Berechtigungen** aus, und wählen Sie dann die schutzoption aus, die Sie benötigen. Sie können auch eine verschlüsselte  Nachricht senden, indem Sie die Schaltfläche Schützen im Outlook im Web auswählen. Weitere Informationen finden Sie unter [Send, view, and reply to encrypted messages in Outlook for PC](https://support.microsoft.com/en-us/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980).
 
 ## <a name="admin-settings"></a>Administratoreinstellungen
 
-Weitere Informationen zum Einrichten der E-Mail-Verschlüsselung finden Sie unter [E-Mail-Verschlüsselung in Microsoft 365](../compliance/email-encryption.md).
+Weitere Informationen zum Einrichten der E-Mail-Verschlüsselung finden Sie unter [E-Mail-Verschlüsselung in Microsoft 365.](../compliance/email-encryption.md)
 
 ### <a name="automatically-encrypt-email-messages"></a>Automatisches Verschlüsseln von E-Mail-Nachrichten
 
 Administratoren können Nachrichtenflussregeln erstellen, um E-Mail-Nachrichten, die von Ihrer Kampagne gesendet und empfangen werden, automatisch zu schützen. Richten Sie Regeln ein, um ausgehende E-Mail-Nachrichten zu verschlüsseln und die Verschlüsselung aus verschlüsselten Nachrichten zu entfernen, die aus Ihrer Organisation oder aus Antworten auf verschlüsselte Nachrichten, die von Ihrer Organisation gesendet werden, kommen.
 
-Sie erstellen Nachrichtenflussregeln zum Verschlüsseln von E-Mail-Nachrichten mit den neuen Office 365 Message Encryption (OME)-Funktionen. Definieren Von Nachrichtenflussregeln zum Auslösen der Nachrichtenverschlüsselung mit den neuen OME-Funktionen mithilfe des Exchange Admin Center (EAC). 
+Sie erstellen Nachrichtenflussregeln zum Verschlüsseln von E-Mail-Nachrichten mit den neuen Office 365-Nachrichtenverschlüsselung (OME). Definieren Von Nachrichtenflussregeln zum Auslösen der Nachrichtenverschlüsselung mit den neuen OME-Funktionen mithilfe des Exchange Admin Center (EAC). 
 
 1. Melden Sie sich in einem Webbrowser mit einem Arbeits- oder Schulkonto an, dem globale Administratorberechtigungen erteilt wurden.
 2. Wählen Sie die Kachel Admin aus.
-3. Wählen Sie im Admin Center **admin center > Exchange aus.**
+3. Wählen Sie im Admin Center die Option **Admin Center > Exchange**.
 
 Weitere Informationen finden Sie unter [Definieren von Nachrichtenflussregeln zum Verschlüsseln von E-Mail-Nachrichten.](../compliance/define-mail-flow-rules-to-encrypt-email.md)
 

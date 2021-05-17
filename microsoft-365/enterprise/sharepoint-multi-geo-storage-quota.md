@@ -14,7 +14,7 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Erfahren Sie mehr über SharePoint-Speicherkontingente in Multi-Geo-Umgebungen und darüber, wie Kontingente vom SharePoint Online Administrator verwaltet werden können.
+description: Erfahren Sie SharePoint Speicherkontingente in Multi-Geo-Umgebungen und wie Kontingente vom SharePoint verwaltet werden können.
 ms.openlocfilehash: ec736a6bd6061f8b028fca7a1c34d5278a84db89
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT

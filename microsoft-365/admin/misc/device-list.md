@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
-description: Erfahren Sie, wie Sie eine CSV-Datei für AutoPilot in Microsoft 365 Business erstellen.
+description: Erfahren Sie, wie Sie eine CSV-Datei für AutoPilot in Microsoft 365 Unternehmen erstellen.
 ms.openlocfilehash: 13d7fbffd8d6fbe1af0dde55a4e98688060d9da8
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -50,8 +50,8 @@ Wenn Sie Geräte hinzufügen, müssen Sie sie auch einem Profil hinzufügen. Ein
   
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Microsoft 365 Business-Dokumentation und -Ressourcen](../../business/index.yml)
+[Microsoft 365 für Geschäftsdokumentationen und -ressourcen](../../business/index.yml)
   
 [Erste Schritte mit Microsoft 365 Business](../../business/microsoft-365-business-overview.md)
   
-[Verwalten von Microsoft 365 Business](../../business/manage.md)
+[Verwalten Microsoft 365 Für Unternehmen](../../business/manage.md)

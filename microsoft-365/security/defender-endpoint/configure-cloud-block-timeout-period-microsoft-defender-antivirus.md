@@ -55,7 +55,7 @@ Sie können gruppenrichtlinien verwenden, um ein erweitertes Timeout für Cloud�
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Verwenden von Antivirentechnologien der nächsten Generation durch Cloud-basierten Schutz](cloud-protection-microsoft-defender-antivirus.md)
 - [Konfigurieren von Block bei erster Sicht](configure-block-at-first-sight-microsoft-defender-antivirus.md)
-- [Aktivieren des in der Cloud übermittelten Schutzes](enable-cloud-protection-microsoft-defender-antivirus.md)
+- [Aus der Cloud bereitgestellten Schutz aktivieren](enable-cloud-protection-microsoft-defender-antivirus.md)

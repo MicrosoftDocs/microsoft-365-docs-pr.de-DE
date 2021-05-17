@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
-description: Erfahren Sie mehr über den Unterschied zwischen Microsoft 365 Business Standard und Microsoft 365 Business Premium und wie Sie ein Upgrade auf Microsoft 365 Business Premium durchführen können.
+description: Erfahren Sie, Microsoft 365 Business Standard und Microsoft 365 Business Premium und wie Sie ein Upgrade auf Microsoft 365 Business Premium.
 ms.openlocfilehash: 1f38270c9acb6b803d16bb842140cc6df9cee768
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -33,9 +33,9 @@ ms.locfileid: "51578305"
 ---
 # <a name="upgrade-to-microsoft-365-business-premium-from-microsoft-365-business-standard"></a>Upgrade auf Microsoft 365 Business Premium von Microsoft 365 Business Standard
 
-Wenn Sie über ein [Microsoft 365 Business-Abonnement](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2)verfügen, z. B. Microsoft 365 Business Standard, können Sie problemlos auf Microsoft 365 Business Premium aktualisieren. Upgrade auf Microsoft 365 Business Premium, wenn Sie hinzufügen möchten:
+Wenn Sie über ein [Microsoft 365 business-Abonnement](https://products.office.com/compare-all-microsoft-office-products-4-column?activetab=tab:primaryr2)verfügen, z. B. Microsoft 365 Business Standard, können Sie problemlos ein Upgrade auf Microsoft 365 Business Premium. Upgrade auf Microsoft 365 Business Premium, wenn Sie hinzufügen möchten:
 
-- Windows 10 Pro (für PCs mit Windows 8 oder höher)
+- Windows 10 Pro (auf PCs, auf Windows 8 oder höher ausgeführt werden)
 
 - Einfache Steuerelemente zum Verwalten von Geschäftsdaten auf Geräten
 
@@ -44,15 +44,15 @@ Weitere Informationen zu Microsoft 365 Business Premium finden Sie [unter Micros
 
 ## <a name="whats-the-difference-between-microsoft-365-business-standard-and-microsoft-365-business-premium"></a>Was ist der Unterschied zwischen Microsoft 365 Business Standard und Microsoft 365 Business Premium?
 
-Wir haben einen Vergleich dieser beiden Pläne zur [Microsoft 365 Business Premium Service Description hinzugefügt.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) 
+Wir haben einen vergleich dieser beiden Pläne zur Microsoft 365 Business Premium [Service Description hinzugefügt.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) 
 
 ## <a name="before-you-get-started"></a>Bevor Sie beginnen
 
-- **Wann sollte ich ein Upgrade durchführen?** Upgrade ist die richtige Wahl, wenn Sie alle Benutzer aktualisieren **möchten,** die einem einzelnen Plan zugewiesen sind. Wenn Sie ein Upgrade auswählen, werden alle Planbenutzer gleichzeitig zu einem anderen Plan gewechselt. Wenn Sie nicht alle Benutzer aktualisieren möchten, die einem einzelnen Plan zugewiesen sind, erwerben Sie Lizenzen [](../admin/manage/assign-licenses-to-users.md) für den neuen Plan (in diesem Fall Microsoft 365 Business Premium), und weisen Sie diese Lizenzen jedem Benutzer, den Sie aktualisieren möchten, einzeln zu.
+- **Wann sollte ich ein Upgrade durchführen?** Upgrade ist die richtige Wahl, wenn Sie alle Benutzer aktualisieren **möchten,** die einem einzelnen Plan zugewiesen sind. Wenn Sie ein Upgrade auswählen, werden alle Planbenutzer gleichzeitig zu einem anderen Plan gewechselt. Wenn Sie nicht alle Benutzer aktualisieren möchten, die einem einzelnen Plan zugewiesen sind, erwerben Sie [](../admin/manage/assign-licenses-to-users.md) Lizenzen für den neuen Plan (in diesem Fall Microsoft 365 Business Premium), und weisen Sie diese Lizenzen jedem Benutzer, den Sie aktualisieren möchten, einzeln zu.
 
 - **Einige Add-Ons können das Upgrade verhindern** Wenn Sie versuchen, ein Upgrade zu starten und über ein Add-On verfügen, mit dem Sie nicht fortfahren können, können Sie das Add-On zuerst entfernen und später wieder hinzufügen, wenn Sie es noch benötigen.
 
-- **Wenn Sie Ihren Plan im Voraus bezahlt haben** Es gibt keinen einfachen Upgradepfad für prepaid-Pläne. Sie wissen, ob Sie über einen prepaid-Plan verfügen, da Sie Ihren Plan mit einer Produkt-ID einrichten, die Sie möglicherweise in einem Store erworben haben. Wenden Sie sich an einen Partner, wechseln Sie zum Microsoft Store, oder warten Sie, bis Ihr prepaid-Plan abläuft, um zu einem neuen Plan zu wechseln.
+- **Wenn Sie Ihren Plan im Voraus bezahlt haben** Es gibt keinen einfachen Upgradepfad für prepaid-Pläne. Sie wissen, ob Sie über einen prepaid-Plan verfügen, da Sie Ihren Plan mit einer Produkt-ID einrichten, die Sie möglicherweise in einem Store erworben haben. Wenden Sie sich an einen Partner, wechseln Sie zum Microsoft Store oder warten Sie, bis Ihr prepaid-Plan abläuft, um zu einem neuen Plan zu wechseln.
 
 ## <a name="upgrade-to-microsoft-365-business-premium"></a>Upgrade auf Microsoft 365 Business Premium
 
@@ -65,7 +65,7 @@ Wir haben einen Vergleich dieser beiden Pläne zur [Microsoft 365 Business Premi
   > [!NOTE]
   > Wenn eine Meldung mit der Meldung angezeigt wird, dass das Upgrade Ihres Abonnements nicht mit gruppenbasierter Lizenzierung **in Azure Active Directory** unterstützt wird, können Sie dies ohne Sicherheit ignorieren, es sei denn, Sie verfügen über eine sehr große Organisation. Organisationen, die diese Option ausgewählt haben, wissen, dass sie gruppenbasierte Lizenzierung verwenden.
 
-4. Als Nächstes können Sie eine Liste der Pläne anzeigen, auf die Sie ein Upgrade durchführen können. Suchen Sie in diesem Fall den Microsoft 365 Business Premium-Plan. Sie können einen Bildlauf nach unten durchführen, wenn Sie alle Apps und Dienste sehen möchten, die in diesem Plan enthalten sind. Wählen **Sie unter Microsoft 365 Business Premium** die Option **Upgrade** aus, um Microsoft 365 Business Premium zu Ihrem Einkaufswagen hinzuzufügen.
+4. Als Nächstes können Sie eine Liste der Pläne anzeigen, auf die Sie ein Upgrade durchführen können. Suchen Sie in diesem Fall den Microsoft 365 Business Premium Plan. Sie können einen Bildlauf nach unten durchführen, wenn Sie alle Apps und Dienste sehen möchten, die in diesem Plan enthalten sind. Wählen **Microsoft 365 Business Premium** Sie **Upgrade** aus, um Microsoft 365 Business Premium Ihrem Einkaufswagen hinzuzufügen.
 
 5. Im Einkaufswagen:
 
@@ -80,11 +80,11 @@ Es dauert ein paar Minuten, bis Microsoft Ihre neuen Dienstpläne eingerichtet h
 8. Wenn Ihr Plan fertig ist, müssen Sie möglicherweise einige zusätzliche Setupschritte im Admin Center ausführen. Wählen Sie im Navigationsbereich **Start aus,** um weitere Setupschritte abzuschließen.
 
 > [!NOTE]
-> Sie erhalten eine progrierte Rückerstattung für die Microsoft 365-Lizenzen, die Sie nicht mehr benötigen. Ihr Bankkonto oder Ihre Kreditkarte wird etwa zwei Tage nach dem Einrichten des neuen Plans belastet.
+> Sie erhalten eine progrierte Rückerstattung für die Microsoft 365, die Sie nicht mehr benötigen. Ihr Bankkonto oder Ihre Kreditkarte wird etwa zwei Tage nach dem Einrichten des neuen Plans belastet.
   
 ## <a name="protect-user-devices-and-files"></a>Schützen von Benutzergeräten und -dateien
 
-Nachdem Nun Microsoft 365 Business Premium-Lizenzen zugewiesen wurden, führen Sie die vollständigen Schritte aus, um mit dem Schutz von Geräten und Dateien zu beginnen. Sie verwenden einige neue Optionen, die im Admin Center-Navigationsbereich enthalten sind.
+Nachdem die Microsoft 365 Business Premium zugewiesen wurden, führen Sie nun die vollständigen Schritte aus, um mit dem Schutz von Geräten und Dateien zu beginnen. Sie verwenden einige neue Optionen, die im Admin Center-Navigationsbereich enthalten sind.
   
 1. Wechseln Sie im Admin Center im  Navigationsbereich zu \> **Geräterichtlinien**.
 
@@ -92,18 +92,18 @@ Nachdem Nun Microsoft 365 Business Premium-Lizenzen zugewiesen wurden, führen S
 
 3. Geben Sie **der Richtlinie im** Bereich Richtlinie hinzufügen einen Namen (z.  B. Arbeitsdateien schützen) und wählen Sie dann in der Dropdownliste einen Richtlinientyp aus.
 
-    Sie können Anwendungsrichtlinien zum Schutz von Dateien auf Android- und iPhone-Geräten sowie Windows 10 einrichten und Gerätekonfigurationsrichtlinien für Windows 10-Geräte im Besitz des Unternehmens einrichten. Weitere Informationen finden Sie unter den folgenden Links:
+    Sie können Anwendungsrichtlinien für den Schutz von Dateien auf Android- und iPhone-Geräten sowie Windows 10 einrichten und Gerätekonfigurationsrichtlinien für Unternehmenseigene Windows 10 einrichten. Weitere Informationen finden Sie unter den folgenden Links:
 
     - [Festlegen von App-Schutzeinstellungen für Android- oder iOS-Geräte](app-protection-settings-for-android-and-ios.md)
 
-    - [Festlegen von Anwendungsschutzeinstellungen für Windows 10-Geräte](protection-settings-for-windows-10-devices.md)
+    - [Festlegen von Anwendungsschutzeinstellungen für Windows 10 Geräte](protection-settings-for-windows-10-devices.md)
 
-    - [Festlegen von Geräteschutzeinstellungen für Windows 10-PCs](protection-settings-for-windows-10-pcs.md)
+    - [Festlegen von Geräteschutzeinstellungen für Windows 10 PCs](protection-settings-for-windows-10-pcs.md)
 
 4. Nachdem Sie Richtlinien eingerichtet haben, können Sie und Ihre Mitarbeiter Geräte einrichten:
 
-    - Wenn Ihre Windows-Geräte nicht bereits das Windows Pro Creator-Update verwenden, müssen Sie sie auf [Windows Pro Creators Update aktualisieren.](upgrade-to-windows-pro-creators-update.md)
+    - Wenn Ihre Windows nicht bereits das Windows Pro Creator-Update verwenden, müssen Sie sie auf Windows Pro [Creators Update aktualisieren.](upgrade-to-windows-pro-creators-update.md)
 
-    - Schritte für Windows-Geräte finden Sie unter Einrichten von Windows-Geräten für [Microsoft 365 Business](set-up-windows-devices.md) Premium-Benutzer.
+    - Unter [Einrichten von Windows für Microsoft 365 Business Premium finden](set-up-windows-devices.md) Sie Schritte für Windows Geräte.
 
-    - Unter [Einrichten mobiler Geräte für Microsoft 365 Business Premium-Benutzer](set-up-mobile-devices.md) finden Sie Schritte für Android-Smartphones und iPhones.
+    - Unter [Einrichten mobiler Geräte für Microsoft 365 Business Premium finden Sie](set-up-mobile-devices.md) Schritte für Android-Smartphones und iPhones.

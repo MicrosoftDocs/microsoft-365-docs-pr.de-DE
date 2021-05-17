@@ -14,7 +14,7 @@ search.appverid:
 - MET150
 - MOE150
 - FRP150
-description: Erfahren Sie mehr über die neuen Microsoft 365-Abonnementnamen.
+description: Erfahren Sie mehr über die Microsoft 365 Abonnementnamen.
 ms.openlocfilehash: f9726f8860e25b800a253899b5c2f561325e5ca2
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT

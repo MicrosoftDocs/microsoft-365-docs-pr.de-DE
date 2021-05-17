@@ -29,12 +29,12 @@ search.appverid:
 - ODB160
 ms.assetid: 7aa9cdc8-2245-4218-81ee-86fa7c35f1de
 description: Erfahren Sie, wie Sie OneDrive und eine Teamwebsite für Microsoft 365 und Microsoft 365 verwenden.
-ms.openlocfilehash: 75d310d734607f6b7be50ec35666169184c1b213
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 8b100100ca91d1b904ab029a8e67602cb6111900
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244491"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274400"
 ---
 # <a name="set-up-file-storage-and-sharing-in-microsoft-365"></a>Einrichten des Dateispeichers und der Freigabe in Microsoft 365
 
@@ -204,3 +204,11 @@ Sie können den Drittanbieterspeicher für Ihre Benutzer in Microsoft 365 aktivi
   - [Installieren und Einrichten von Office auf einem iPhone oder iPad mit Microsoft 365](https://support.microsoft.com/office/9df6d10c-7281-4671-8666-6ca8e339b628)
 
   - [Einrichten von Office auf Windows Phone mit Microsoft 365](https://support.microsoft.com/office/2b7c1b51-a717-45d6-90c9-ee1c1c5ee0b7)
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Hinzufügen von Speicherplatz für Ihr Abonnement](../../commerce/add-storage-space.md) (Artikel)
+
+[Freigeben von Dateien und Ordnern für Microsoft 365 Business](https://support.microsoft.com/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65) (Video)
+
+[Anpassen der Teamwebsite für dateispeicherung und -freigabe](customize-team-site.md) (Artikel)

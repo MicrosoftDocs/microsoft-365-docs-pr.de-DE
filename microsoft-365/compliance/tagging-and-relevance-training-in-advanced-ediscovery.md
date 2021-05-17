@@ -1,5 +1,5 @@
 ---
-title: Tagging und Relevanz Training in Advanced eDiscovery
+title: Tagging- und Relevanzschulungen in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: 8576cc86-d51b-4285-b54b-67184714cc62
 ROBOTS: NOINDEX, NOFOLLOW
-description: Erfahren Sie mehr über die Schritte zum Markieren und arbeiten Sie dann mit einem Schulungs Beispiel mit 40 Dateien während der Relevanz-Schulungsphase von Advanced eDiscovery.
+description: Erfahren Sie, wie Sie während der Relevanzschulungsphase von Advanced eDiscovery ein Schulungsbeispiel mit 40 Dateien markieren und anschließend verwenden.
 ms.openlocfilehash: ae4a9f2e9fd87fdd0679bbfd8f287b6eaa98e41f
 ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
@@ -24,70 +24,70 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "49769220"
 ---
-# <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>Tagging und Relevanz Training in Advanced eDiscovery
+# <a name="tagging-and-relevance-training-in-advanced-ediscovery"></a>Tagging- und Relevanzschulungen in Advanced eDiscovery
   
-In diesem Artikel wird das Verfahren zum Arbeiten mit dem Modul zur Relevanz-Schulung in Advanced eDiscovery beschrieben.
+In diesem Artikel wird das Verfahren zum Arbeiten mit dem Relevanzschulungsmodul in Advanced eDiscovery beschrieben.
   
-Nachdem die Bewertung in Advanced eDiscovery abgeschlossen wurde und Sie die Relevanz-Schulungsphase eingeben, wird ein Schulungs Beispiel mit 40-Dateien in die Tag-Registerkarte für die Markierung von Tags gebracht.
+Nachdem die Bewertung in Advanced eDiscovery abgeschlossen wurde und Sie die Relevanzschulungsphase eingeben, wird ein Schulungsbeispiel mit 40 Dateien zur Kennzeichnung auf die Registerkarte Tag gebracht.
   
-## <a name="performing-relevance-training"></a>Durchführen von Relevanz-Schulungen
+## <a name="performing-relevance-training"></a>Durchführen von Relevanzschulungen
 
-1. Auf der **Register \> Karte relevanztag** wird der Bereich Tagging standardmäßig im linken Bereich angezeigt, und die Beispieldateien werden jeweils einzeln für die Markierung angezeigt.
+1. Auf der **Registerkarte \> Relevanztag** wird der Tagging-Bereich standardmäßig im linken Bereich angezeigt, und die Beispieldateien werden nach und nach zum Markieren angezeigt.
 
-    ![Bereich "Relevanz-Tag"](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
+    ![Bereich "Relevanztag"](../media/0cf19ab4-b427-4a7f-8749-0f4ed9afaf58.png)
   
-    Auf der Registerkarte **Tag** wird der Anzeigename der Datei angezeigt. Hierbei kann es sich um den Pfad, den e-Mail-Betreff, den Titel oder den benutzerdefinierten Namen handeln. Die ID, der Dateipfad oder der Textpfad können kopiert werden, indem Sie mit der rechten Maustaste auf den Pfad der Datei klicken.
+    Auf der **Registerkarte Tag** wird der Anzeigename der Datei angezeigt. Dies kann der Pfad, der E-Mail-Betreff, der Titel oder der benutzerdefinierte Name sein. Die ID, der Dateipfad oder der Textpfad können durch Klicken mit der rechten Maustaste auf den Pfad der Datei kopiert werden.
 
-    Die Kennzeichnung der **Tags** -Registerkarten Statistik zeigt die Datei Beispiel Nummer (oben im linken Bereich), die Nummer der aktuell angezeigten Datei aus den Gesamtdateien im Beispiel (unten im rechten Bereich) und die aktuelle Gesamtzahl der getaggten Dateien im Beispiel (unten im linken Bereich) an, die sich beim Markieren von Dateien ändert. Dies gilt für alle durchgeführten Relevanz-Markierungen, sei es bei der Bewertung, Schulung, Aufholjagd oder Test.
+    Die  Tag-Tab-Tagging-Statistik zeigt die Dateibeispielnummer (oben im linken Bereich), die Anzahl der aktuell angezeigten Datei aus den Gesamtzahl der Dateien im Beispiel (unten im rechten Bereich) und die aktuelle Gesamtanzahl markierter Dateien im Beispiel (unten im linken Bereich), die sich beim Taggen von Dateien ändert. Dies gilt für alle Relevanztags, die durchgeführt werden, ob in Assessment, Training, Catch-up oder Test.
 
-    Symbole, die das vorhanden sein von Kommentaren, Tags und Familiendateien angeben, werden in der Datei Ansicht in einer Leiste oberhalb der Datei angezeigt.
+    Symbole, die das Vorhandensein von Kommentaren, Tags und Familiendateien angeben, werden in der Dateiansicht in einer Leiste über der Datei angezeigt.
 
-2. Ermitteln Sie die Relevanz der Datei für das Fall Problem, und markieren Sie die Datei mit den Symbolschaltflächen für die Markierungsoption oder mit den Tastenkombinationen, wie in der folgenden Tabelle dargestellt:
+2. Bestimmen Sie die Relevanz der Datei für das Fallproblem, und markieren Sie die Datei mithilfe der Schaltflächen für das Tagging-Optionssymbol oder tastenkombinationen, wie in der folgenden Tabelle dargestellt:
 
-   |**Tagging-Option**|**Beschreibung**|**Tastenkombination**|**Tastenkombination für Massen Markierungen (für mehrere Probleme)**|
+   |**Taggingoption**|**Beschreibung**|**Tastenkombination**|**Tastenkombination zum Massentagieren (bei mehreren Problemen)**|
    |-----|-----|-----|-----|
-   |R  <br/> |Relevanten  <br/> |Z  <br/> |`Shift + Z`  <br/> |
-   |Nr  <br/> |Nicht relevant  <br/> |X  <br/> |`Shift + X`  <br/> |
+   |R  <br/> |Relevant  <br/> |Z  <br/> |`Shift + Z`  <br/> |
+   |NR  <br/> |Nicht relevant  <br/> |X  <br/> |`Shift + X`  <br/> |
    |Überspringen  <br/> |Überspringen  <br/> |C  <br/> |`Shift + A`  <br/> |
    |||||
 
-   - Wenn mehrere Probleme für eine Datei vorhanden sind, wird die Auswahl nach der Kennzeichnung eines Problems zum nächsten Problem (sofern vorhanden) verschoben.  
+   - Wenn mehrere Probleme für eine Datei vorhanden sind, wird die Auswahl nach dem Kennzeichnen eines Problems zum nächsten Problem (falls vorhanden) bewegt.  
 
-   - Schlüsselwörter, die vom Administrator oder Fall-Manager beim Hervorheben von Stichwörtern definiert wurden (Relevanz \> -Setup markierte Schlüsselwörter), werden (in bestimmten Farben) angezeigt, um relevante Dateien beim Tagging zu identifizieren. Wenn ein Schlüsselwort doppelt unterstrichen ist, kann auf dieses geklickt werden, um einen QuickInfo mit der Beschreibung des Schlüsselwortes anzuzeigen.
+   - Schlüsselwörter, die vom Administrator oder Fallmanager beim Hervorheben von Schlüsselwörtern (Stichwörter für relevanzeinrichtung hervorgehoben) definiert wurden, werden (in angegebenen Farben) angezeigt, um relevante Dateien beim Markieren \> zu identifizieren. Wenn ein Schlüsselwort eine doppelte Unterstreichung hat, kann auf es geklickt werden, um eine QuickInfo mit der Beschreibung des Schlüsselworts angezeigt zu werden.
 
-     Klicken Sie optional auf der Registerkarte **Tag** auf **Tag-Einstellungen** , um die folgenden Optionen festzulegen:
+     Klicken Sie optional auf der **Registerkarte Tag** auf **Tag-Einstellungen,** um die folgenden Optionen festlegen:
 
-      ![Relevanz-Tag-Einstellungen](../media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
+      ![Einstellungen für Relevanztag](../media/533e89fa-7eb4-409e-ab07-f5aab9296dd8.png)
   
-   - **Massentag**: Verwenden Sie diese Option, um mehrere Probleme für eine Datei zuzuweisen, indem Sie **alle** auswählen, um das Tag für die ausgewählte Datei für alle Probleme (Überschreibt bereits markierte Probleme) festzulegen, oder indem Sie **den Rest** auswählen, um das Tag auf die verbleibenden nicht markierten Probleme anzuwenden. Die ausgewählte Option bleibt für alle Fälle dieses Benutzers gültig, bis Sie von diesem Benutzer geändert wird (Einstellung ist pro Benutzer für alle Fälle des Benutzers).
+   - **Massentag**: Verwenden Sie diese Option, um mehrere Probleme für eine Datei zuzuordnen, indem Sie **Alle** auswählen, um das Tag für die ausgewählte Datei für alle Probleme (Überschreibungen bereits markierter Probleme) oder durch Auswählen des Rests, um das Tag auf die verbleibenden nicht markierten Probleme anzuwenden.  Die ausgewählte Option bleibt für alle Fälle dieses Benutzers wirksam, bis sie von diesem Benutzer geändert wurde (die Einstellung gilt pro Benutzer für alle Fälle des Benutzers).
 
-   - **Auto-Tag**: Aktivieren Sie dieses Kontrollkästchen, um andere Probleme für eine Datei nach einem einzelnen relevanten Tagging als nicht relevant festzulegen.
+   - **Autotag**: Aktivieren Sie dieses Kontrollkästchen, um andere Probleme für eine Datei nach einem einzelnen relevanten Tagging als Nicht relevant zu setzen.
 
-   - **Auto Advance**: Aktivieren Sie dieses Kontrollkästchen, um die angezeigte Dateiauswahl in die nächste Datei zu verlagern, wenn Sie das letzte oder nur unmarkierte Problem markieren.
+   - **Automatischer Fortschritt**: Aktivieren Sie dieses Kontrollkästchen, um die angezeigte Dateiauswahl in die nächste Datei zu verschieben, wenn das letzte oder nur das letzte problem ohne Kennzeichnung kennzeichnen wird.
 
-    Übersprungene Dateien werden nicht für Relevanz Training und Relevanz Scoring Zwecke berücksichtigt.
+    Übersprungene Dateien werden für Relevanzschulungs- und Relevanzbewertungszwecke nicht berücksichtigt.
 
-3. Freitextkommentare, die einer Datei zugeordnet sind, können über die Option **Kommentar** in der Dropdownliste im linken Bereich angezeigt und bearbeitet werden. (optional)
+3. Freitextkommentare, die einer Datei zugeordnet sind, können über die Option **Kommentar** in der Dropdownliste des linken Bereichs angezeigt und bearbeitet werden. (optional)
 
-4. Richtlinien für die Markierung können angezeigt werden, indem Sie in der Dropdownliste Linker Bereich die Option **Markierungs Richtlinien** auswählen.
+4. Richtlinien für das Tagging können angezeigt werden, indem Sie in der Dropdownliste des linken Bereichs die Option **Kennzeichnungsrichtlinien** auswählen.
 
-5. Nachdem Sie die Markierung aller Dateien in der Liste abgeschlossen haben und die Ergebnisse berechnen können, klicken Sie auf **berechnen**. Die Registerkarte **Track** wird angezeigt.  
+5. Nachdem Sie das Taggen aller Dateien in der Liste abgeschlossen haben und bereit sind, die Ergebnisse zu berechnen, klicken Sie auf **Berechnen**. Die **Registerkarte Nachverfolgen** wird angezeigt.  
 
-## <a name="working-with-the-sample-files-list"></a>Arbeiten mit der Liste "Beispieldateien"
+## <a name="working-with-the-sample-files-list"></a>Arbeiten mit der Beispieldateienliste
 
-In der Liste mit den Beispieldateien können Sie eine Liste der Dateien in einem Schulungs Beispiel anzeigen und verschiedene Aktionen für eine oder mehrere Dateien ausführen. Auf der  \> Registerkarte "Relevanz- **Tag** " wird im linken Bereich " **Sample Files** " eine Liste der Beispieldateien zur Verarbeitung mit den Prozessen "Assessment", "Training", "Catch-up" und "Inkonsistenzen" angezeigt.
+In der Beispieldateienliste können Sie eine Liste der Dateien in einem Schulungsbeispiel anzeigen und verschiedene Aktionen für eine oder mehrere Dateien ausführen. Auf der **Registerkarte Relevanztag** zeigt der linke Bereich Beispieldateien eine Liste der Beispieldateien für die Verarbeitung mit \>  Assessment-, Schulungs-, Nachhol- und Inkonsistenzenprozessen an. 
   
-1. Wählen Sie auf der Registerkarte **Relevanz- \> Tag** die Beispieldateien in der Dropdownliste Linker Bereich aus. Die Beispieldateien werden im linken Bereich aufgelistet.
+1. Wählen Sie auf der Registerkarte **\> Relevanztag** die Beispieldateien in der Dropdownliste linker Bereich aus. Die Beispieldateien werden im linken Bereich aufgelistet.
 
-    ![Liste mit Relevanz-Tag-Beispieldateien](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
+    ![Liste der Relevanztag-Beispieldateien](../media/fd058bdd-645a-4af1-a1eb-bff08581cb18.png)
   
-2. Wählen Sie eine bestimmte Stichprobe oder Dateinummer aus, indem Sie die entsprechende Nummer in den Feldern **Sample** oder **File** eingeben oder auswählen.
+2. Wählen Sie eine bestimmte Beispiel- oder Dateinummer aus, indem Sie ihre Nummer in die Felder **Beispiel** oder **Datei** eingeben oder auswählen.
 
-   - In der linken Spalte der Liste angezeigter Dateien auf der Registerkarte **Tag** wird eine Dateisequenz Nummer aufgeführt. Durch Klicken auf die Kopfzeile kehrt die ursprüngliche Reihenfolge der Dateien in die ursprüngliche Reihenfolge zurück.
+   - Eine Dateisequenznummer wird in der linken Spalte der angezeigten Dateiliste auf der **Registerkarte Tag** aufgeführt. Durch Klicken auf die Kopfzeile wird die ursprüngliche angezeigte Reihenfolge der Dateien in die ursprüngliche Reihenfolge zurückgegeben.
 
-   - Durch Klicken auf eine Datei Zeile wird der Inhalt im rechten Bereich angezeigt.
+   - Wenn Sie auf eine Dateizeile klicken, wird ihr Inhalt im rechten Bereich angezeigt.
 
-   - Navigieren zwischen Dateien im aktuellen Beispiel mithilfe der untergeordneten Menüleistenoptionen. Darüber hinaus stehen Navigationstasten Kombinationen zur Verfügung:
+   - Navigieren Sie zwischen Dateien im aktuellen Beispiel mithilfe der unteren Menüleistenoptionen. Darüber hinaus stehen Navigationstastaturverknüpfungen zur Verfügung:
   
      - So wechseln Sie zur ersten Datei im Beispiel: `Shift + Ctrl + <`
 

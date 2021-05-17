@@ -56,7 +56,7 @@ Eine Spambenachrichtigung für Endbenutzer enthält die folgenden Informationen 
 
 - **Date**: Das Datum und die Uhrzeit (in UTC), zu der die Nachricht isoliert wurde.
 
-- **Absender blockieren**: Klicken Sie auf diesen Link, um den Absender der Liste blockierter Absender in Ihrem Postfach hinzuzufügen. Weitere Informationen finden Sie unter [Blockieren eines E-Mail-Absenders.](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4)
+- **Absender blockieren**: Klicken Sie auf diesen Link, um den Absender der Liste blockierter Absender in Ihrem Postfach hinzuzufügen. Weitere Informationen finden Sie unter [E-Mail-Absender blockieren](https://support.microsoft.com/office/b29fd867-cac9-40d8-aed1-659e06a706e4).
 
 - **Release**: Für Spamnachrichten (keine Phishing)-Nachrichten können Sie die Nachricht hier veröffentlichen, ohne das Security & Compliance Center unter Quarantäne zu stellen.
 

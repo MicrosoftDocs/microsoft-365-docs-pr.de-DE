@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
-description: Erfahren Sie mehr über die in Microsoft 365 Business verfügbaren Einstellungen zum Schutz von Arbeitsdateien, wenn das Gerät eines Benutzers verloren geht oder gestohlen wird.
+description: Erfahren Sie mehr über die in Microsoft 365 business verfügbaren Einstellungen zum Schutz von Arbeitsdateien, wenn das Gerät eines Benutzers verloren geht oder gestohlen wird.
 ms.openlocfilehash: 6b10ce73d3ebe936d3878724783d6076455a3552
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -45,7 +45,7 @@ Die folgenden Einstellungen stehen zum Schutz von Arbeitsdateien zur Verfügung,
 |:-----|:-----|
 |Einstellung  <br/> |Beschreibung  <br/> |
 |Arbeitsdateien von einem inaktiven Gerät löschen nach diesem Zeitraum (Tage)  <br/> |Wenn ein Gerät nicht für die Anzahl von Tagen verwendet wird, die Sie hier angeben, werden alle auf dem Gerät gespeicherten Arbeitsdateien automatisch gelöscht.  <br/> |
-|Benutzer zum Speichern aller Arbeitsdateien auf OneDrive for Business zwingen  <br/> |Wenn diese Einstellung **Auf** ist, ist oneDrive for Business der einzige verfügbare Speicherort für Arbeitsdateien.  <br/> |
+|Benutzer zum Speichern aller Arbeitsdateien auf OneDrive for Business zwingen  <br/> |Wenn diese Einstellung **Auf** ist, ist der einzige verfügbare Speicherort für Arbeitsdateien OneDrive for Business.  <br/> |
 |Arbeitsdateien verschlüsseln  <br/> |Behalten Sie für diese Einstellung **Ein** bei, damit Arbeitsdateien durch Verschlüsselung geschützt werden. Auch wenn das Gerät verloren geht oder gestohlen wird, kann niemand Ihre Unternehmensdaten lesen.  <br/> |
    
 

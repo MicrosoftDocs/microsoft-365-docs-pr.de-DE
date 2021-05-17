@@ -31,24 +31,24 @@ ms.locfileid: "49926486"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Beheben von Problemen mit freigegebenen Postfächern
 
-Wenn beim Erstellen oder Verwenden eines freigegebenen Postfachs Fehlermeldungen angezeigt werden, probieren Sie diese möglichen Lösungen aus. 
+Wenn beim Erstellen oder Verwenden eines freigegebenen Postfachs Fehlermeldungen angezeigt werden, versuchen Sie diese möglichen Lösungen. 
 
 ## <a name="error-when-creating-shared-mailboxes"></a>Fehler beim Erstellen freigegebener Postfächer
 <a name="bkmk_Fix"> </a>
 
-Wenn die Fehlermeldung angezeigt wird, wird die Proxyadresse "smtp:<shared mailbox name" bereits von den Proxyadressen oder **\> LegacyExchangeDN von " " \<name> verwendet. Wählen Sie eine andere Proxyadresse** aus. Das bedeutet, dass Sie versuchen, dem freigegebenen Postfach einen Namen zu geben, der bereits verwendet wird. Beispiel: Sie möchten freigegebenen Postfächern die Namen "info@domaene1" und "info@domaene2" geben. Sie können auf zwei Arten vorgehen:
+Wenn die Fehlermeldung angezeigt wird, wird die Proxyadresse "smtp:<freigegebener Postfachname" bereits von den Proxyadressen oder **\> LegacyExchangeDN von " \<name> verwendet. Wählen Sie eine andere Proxyadresse** aus, d. h. Sie versuchen, dem freigegebenen Postfach einen Namen zu geben, der bereits verwendet wird. Beispiel: Sie möchten freigegebenen Postfächern die Namen "info@domaene1" und "info@domaene2" geben. Sie können auf zwei Arten vorgehen:
 
-  - Verwenden Sie Windows PowerShell. Anweisungen zum Erstellen freigegebener Postfächer mit demselben Alias in verschiedenen Domänen finden Sie [in diesem Blogbeitrag.](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
+  - Verwenden Sie Windows PowerShell. Anweisungen zum Erstellen freigegebener Postfächer mit demselben Alias in verschiedenen Domänen finden Sie in diesem [Blogbeitrag.](https://www.cogmotive.com/blog/office-365-tips/create-shared-mailboxes-with-same-alias-at-different-domains-in-office-365)
     
-  - Benennen Sie das zweite freigegebene Postfach anders als zu Beginn, um den Fehler zu beheben. Benennen Sie dann im Admin Center das freigegebene Postfach in das um, was es sein soll.
+  - Nennen Sie das zweite freigegebene Postfach etwas anders als am Anfang, um den Fehler zu beheben. Benennen Sie dann im Admin Center das freigegebene Postfach in das um, was es sein soll.
 
-## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Fehler beim Nicht-Senden von Berechtigungen bei Verwendung eines freigegebenen Postfachs
+## <a name="error-about-not-having-send-permissions-when-using-a-shared-mailbox"></a>Fehler beim Nichtzugriff auf Sendeberechtigungen bei Verwendung eines freigegebenen Postfachs
 
 Wenn Sie ein freigegebenes Postfach erstellt haben und dann versuchen, eine Nachricht davon zu senden, erhalten Sie möglicherweise dies:
 
-**Diese Nachricht konnte nicht gesendet werden. Sie verfügen nicht über die Berechtigung, die Nachricht im Auftrag des angegebenen Benutzers zu senden.**
+**Diese Nachricht konnte nicht gesendet werden. Sie haben nicht die Berechtigung, die Nachricht im Namen des angegebenen Benutzers zu senden.**
 
-Diese Meldung wird angezeigt, wenn bei Microsoft 365 ein Replikationslatenzproblem auftritt. Sie sollte in einer Stunde oder so gelöscht werden, wenn die Informationen zu Ihrem neuen freigegebenen Postfach (oder hinzugefügten Benutzer) in allen unseren Rechenzentren repliziert werden. Warten Sie eine Stunde, und versuchen Sie dann erneut, eine Nachricht zu senden.
+Diese Meldung wird angezeigt, Microsoft 365 beim Auftreten eines Replikationslatenzproblems angezeigt wird. Sie sollte in etwa einer Stunde entfernt werden, wenn die Informationen zu Ihrem neuen freigegebenen Postfach (oder hinzugefügten Benutzer) in allen unseren Rechenzentren repliziert werden. Warten Sie eine Stunde, und versuchen Sie dann erneut, eine Nachricht zu senden.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

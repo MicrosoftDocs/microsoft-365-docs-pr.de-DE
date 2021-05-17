@@ -35,9 +35,9 @@ In Microsoft 365 Business ist es einfach, Dateien für Personen in Ihrer Organis
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Klicken Sie oben in der Dokumentbibliothek auf Ihrer SharePoint-Website auf **Neu,** und wählen Sie dann **Ordner aus.**
+1. Klicken Sie oben in der Dokumentbibliothek auf SharePoint auf **Neu,** und wählen Sie dann **Ordner aus.**
 1. Geben Sie dem Ordner einen Namen, und klicken Sie dann auf **Erstellen**.
-1. Laden Sie die Dateien hoch, die Sie freigeben möchten, in die neue Bibliothek, oder wählen Sie **Neu** aus, um neue Dokumente direkt in der Bibliothek zu erstellen.
+1. Hochladen, die Sie für die neue Bibliothek freigeben möchten, oder wählen Sie **Neu** aus, um neue Dokumente direkt in der Bibliothek zu erstellen.
 1. Wählen Sie ihren neuen Ordner in der Dokumentbibliothek aus, und klicken Sie dann **auf** die Schaltfläche Freigeben.
 1. Klicken Sie **im Fenster Link** senden oben auf die Liste, wählen Sie Bestimmte Personen aus, wählen Sie Bearbeitung zulassen aus, und wählen Sie dann Übernehmen **aus.**  
 1. Geben Sie **im Fenster Link** senden die E-Mail-Adresse Ihres Kunden ein, geben Sie eine Nachricht ein, und wählen Sie Senden **aus.**

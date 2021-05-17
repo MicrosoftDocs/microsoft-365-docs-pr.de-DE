@@ -25,7 +25,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Erfahren Sie, wie Sie überprüfen, ob Microsoft 365 for Business App-Schutzeinstellungen auf den Windows 10-Geräten Ihrer Benutzer wirksam wurden.
+description: Erfahren Sie, wie Sie Microsoft 365, dass die Einstellungen für den Schutz von Business-Apps auf den Geräten Windows 10 wurden.
 ms.openlocfilehash: fcb463fd98f692f7d4802689e0c03fe4e3e648a1
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -37,15 +37,15 @@ ms.locfileid: "51579840"
 
 ## <a name="verify-that-windows-10-device-policies-are-set"></a>Sicherstellen, dass Windows 10-Geräterichtlinien festgelegt sind
 
-Nachdem Sie [Geräterichtlinien eingerichtet haben](protection-settings-for-windows-10-pcs.md), kann es einige Stunden dauern, bis die jeweilige Richtlinie auf den Geräten der Benutzer in Kraft tritt. Sie können bestätigen, dass die Richtlinien in Kraft getreten sind, indem Sie sich auf den Geräten der Benutzer die verschiedenen Bildschirme der Windows-Einstellungen ansehen. Da die Benutzer die Windows Update- und Windows Defender Antiviruseinstellungen auf ihren Windows 10-Geräten nicht ändern können, sind viele Optionen ausgegraut.
+Nachdem Sie [Geräterichtlinien eingerichtet haben](protection-settings-for-windows-10-pcs.md), kann es einige Stunden dauern, bis die jeweilige Richtlinie auf den Geräten der Benutzer in Kraft tritt. Sie können bestätigen, dass die Richtlinien in Kraft getreten sind, indem Sie sich auf den Geräten der Benutzer die verschiedenen Bildschirme der Windows-Einstellungen ansehen. Da die Benutzer die Einstellungen Windows Update und Windows Defender Antivirus auf ihren Windows 10 nicht ändern können, sind viele Optionen ausgegraut.
   
-1. Wechseln Sie **zu Einstellungen** \> **&amp; Updatesicherheit** Windows \> **Update** \> **Neustartoptionen,** und vergewissern Sie sich, dass alle Einstellungen ausgegraut sind. 
+1. Wechseln Sie **zu Einstellungen** Update security Windows Update Restart options, und vergewissern Sie sich, dass alle \> **&amp;** Einstellungen \>  \>  ausgegraut sind. 
     
     ![Alle Neustartoptionen sind ausgegraut.](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. Wechseln Sie **zu Einstellungen** Update sicherheit Windows Update Erweiterte Optionen, und vergewissern Sie sich, dass alle \> **&amp;** Einstellungen \>  \>  ausgegraut sind. 
+2. Wechseln Sie **zu Einstellungen** Update security Windows Update Advanced options, und vergewissern Sie sich, dass alle \> **&amp;** Einstellungen \>  \>  ausgegraut sind. 
     
-    ![Windows Advanced-Updates-Optionen sind alle ausgegraut.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
+    ![Windows Erweiterte Updates sind alle ausgegraut.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
 3. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.
     
@@ -61,10 +61,10 @@ Nachdem Sie [Geräterichtlinien eingerichtet haben](protection-settings-for-wind
   
 ## <a name="related-topics"></a>Verwandte Themen
 
-[Microsoft 365 Business-Dokumentation und -Ressourcen](./index.yml)
+[Microsoft 365 für Geschäftsdokumentationen und -ressourcen](./index.yml)
   
 [Erste Schritte mit Microsoft 365 Business](microsoft-365-business-overview.md)
   
-[Verwalten von Microsoft 365 Business](manage.md)
+[Verwalten Microsoft 365 Für Unternehmen](manage.md)
   
 [Festlegen von Geräteschutzeinstellungen für Windows 10-PCs](protection-settings-for-windows-10-pcs.md)

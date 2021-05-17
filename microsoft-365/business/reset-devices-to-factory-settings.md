@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: c4db6caf-74df-4734-b1dd-53e371c7a3c3
-description: Erfahren Sie, wie Sie Microsoft 365 Business verwenden, um Windows 10-Geräte, die Sie verwalten, werksseitig zurückzusetzen und sie beim Kauf auf ihre ursprünglichen Einstellungen zurückzusetzen.
+description: Erfahren Sie, wie Sie Microsoft 365 Für Unternehmen verwenden, um die Werkseinstellungen auf Windows 10, die Sie verwalten, zurückzusetzen und sie beim Kauf auf ihre ursprünglichen Einstellungen zurückzusetzen.
 ms.openlocfilehash: 29d5b8758ef7d86c7ac283460d0a1a87bffaf5f3
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -35,7 +35,7 @@ ms.locfileid: "51578205"
 
 Dieser Artikel gilt für Microsoft 365 Business Premium.
 
-[] Bei einer Zurücksetzung auf Werkseinstellungen wird ein Gerät auf die Einstellungen zurückgesetzt, die es bei seinem Kauf hatte. Alle Apps und Daten auf dem Gerät, die nach dem Kauf installiert wurden, werden entfernt. Sie können Microsoft 365 Business verwenden, um Windows 10-Geräte, die Sie verwalten, werksseitig zurückzusetzen.
+[] Bei einer Zurücksetzung auf Werkseinstellungen wird ein Gerät auf die Einstellungen zurückgesetzt, die es bei seinem Kauf hatte. Alle Apps und Daten auf dem Gerät, die nach dem Kauf installiert wurden, werden entfernt. Sie können die Microsoft 365 für Unternehmen verwenden, um die Werkseinstellungen auf Windows 10 zurückzusetzen, die Sie verwalten.
   
 1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
     

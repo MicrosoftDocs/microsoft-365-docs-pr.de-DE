@@ -35,17 +35,17 @@ ms.locfileid: "52274880"
 
 >Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-defendercompat-abovefoldlink)
 
-Der Microsoft Defender for Endpoint-Agent ist für einige Funktionen wie die Dateiprüfung von Microsoft Defender Antivirus abhängig.
+Der Microsoft Defender for Endpoint-Agent hängt von Microsoft Defender Antivirus für einige Funktionen wie dateiscannen ab.
 
 >[!IMPORTANT]
->Defender for Endpoint hält sich nicht an die Microsoft Defender Antivirus-Ausschlusseinstellungen. 
+>Defender for Endpoint hält sich nicht an die Microsoft Defender Antivirus Ausschlusseinstellungen. 
 
-Sie müssen Sicherheitsintelligenzupdates auf den Defender for Endpoint-Geräten konfigurieren, unabhängig davon, ob Microsoft Defender Antivirus die aktive Antischalware ist oder nicht. Weitere Informationen finden Sie unter [Manage Microsoft Defender Antivirus updates and apply baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
+Sie müssen Sicherheitsintelligenzupdates auf den Defender for Endpoint-Geräten konfigurieren, Microsoft Defender Antivirus die aktive Antischalware ist oder nicht. Weitere Informationen finden Sie unter [Manage Microsoft Defender Antivirus updates and apply baselines](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus.md).
 
-Wenn ein integriertes Gerät durch einen Antischalwareclient eines Drittanbieters geschützt ist, wechselt Microsoft Defender Antivirus auf diesem Endpunkt in den passiven Modus.
+Wenn ein integriertes Gerät durch einen Antischalwareclient eines Drittanbieters geschützt ist, wird Microsoft Defender Antivirus diesem Endpunkt in den passiven Modus versetzt.
 
-Microsoft Defender Antivirus erhält weiterhin Updates, und der *mspeng.exe-Prozess* wird als ausgeführter Dienst aufgeführt, führt jedoch keine Überprüfungen durch und ersetzt nicht den ausgeführten Antischsoftwareclient eines Drittanbieters.
+Microsoft Defender Antivirus erhalten weiterhin Updates, und der *mspeng.exe-Prozess* wird als ausgeführter Dienst aufgeführt, führt jedoch keine Überprüfungen durch und ersetzt nicht den ausgeführten Antischalwareclient eines Drittanbieters.
 
 Die Microsoft Defender Antivirus-Schnittstelle wird deaktiviert, und Benutzer auf dem Gerät können Microsoft Defender Antivirus nicht verwenden, um Bedarfsscans durchzuführen oder die meisten Optionen zu konfigurieren.
 
-Weitere Informationen finden Sie im [Thema zur Kompatibilität von Microsoft Defender Antivirus und Defender for Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+Weitere Informationen finden Sie im [Thema Microsoft Defender Antivirus und Defender for Endpoint-Kompatibilität.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

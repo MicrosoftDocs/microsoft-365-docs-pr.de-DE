@@ -1,6 +1,6 @@
 ---
-title: Integrieren von ServiceNow-Tickets in das Microsoft 365 Security Center und Compliance Center
-description: Erfahren Sie, wie Sie Tickets im Microsoft 365 Security Center und Compliance Center in ServiceNow erstellen und nachverfolgen.
+title: Integrieren von ServiceNow-Tickets in Microsoft 365 Security Center und Compliance Center
+description: Erfahren Sie, wie Sie Tickets in ServiceNow im Microsoft 365 Security Center und Compliance Center erstellen und nachverfolgen.
 keywords: security, Microsoft 365, M365, compliance, compliance center, security center, ServiceNow, tickets, tasks, SNOW, connection
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -27,7 +27,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51569869"
 ---
-# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrieren von ServiceNow-Tickets in das Microsoft 365 Security Center und Compliance Center
+# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrieren von ServiceNow-Tickets in Microsoft 365 Security Center und Compliance Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 

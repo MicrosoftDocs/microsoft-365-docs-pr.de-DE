@@ -22,7 +22,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Erfahren Sie, wie Sie Windows 10-PCs sichern, nachdem Sie Microsoft 365 Business Premium eingerichtet haben.
+description: Erfahren Sie, wie Sie Windows 10 PCs sichern, nachdem Sie ein Microsoft 365 Business Premium.
 ms.openlocfilehash: a45e941ebc407eea5defdccbbe3f06e6eb1e7dea
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -34,19 +34,19 @@ ms.locfileid: "51578185"
 
 Dieser Artikel gilt für Microsoft 365 Business Premium.
 
-Nachdem Sie [Microsoft](set-up.md) 365 Business Premium eingerichtet haben, ist es an der Zeit, die Windows 10-Computer in Ihrer Organisation vor Diebstahl und böswilligen Bedrohungen wie Viren und Schadsoftware zu schützen.
+Nachdem Sie [Microsoft 365 Business Premium](set-up.md) eingerichtet haben, ist es an der Zeit, die Windows 10-Computer in Ihrer Organisation vor Diebstahl und böswilligen Bedrohungen wie Viren und Schadsoftware zu schützen.
 
-## <a name="to-secure-your-windows-10-computers"></a>So sichern Sie Ihre Windows 10-Computer
+## <a name="to-secure-your-windows-10-computers"></a>So sichern Sie Windows 10 Computer
 
 1. Melden Sie sich mit den Anmeldeinformationen des globalen Administrators bei [Microsoft 365 Admin Center](https://admin.microsoft.com) an. 
-2. Wählen Sie im linken Navigationsfenster **Setup** aus, und wählen Sie dann unter **Anmeldung** und Sicherheit die Option **Windows 10-Computer sichern aus.** Wählen **Sie Ansicht** aus, um zu beginnen.
-3. Lesen Sie **auf der Seite Windows 10-Computer** sichern alle Informationen, um zu verstehen, was Sie aktivieren und welche Auswirkungen der Benutzer hat.
+2. Wählen Sie im linken Navigations navi die Option **Setup** aus, und wählen Sie dann unter **Anmeldung** und Sicherheit die Option Ihre Windows 10 **aus.** Wählen **Sie Ansicht** aus, um zu beginnen.
+3. Lesen Sie **auf der Seite** Windows 10 Computer sichern alle Informationen, um zu verstehen, was Sie aktivieren und welche Auswirkungen der Benutzer hat.
 
     Wählen Sie oben auf der Seite Erste **Schritte aus.**
 
-4. Wählen Sie **im Bereich Windows 10-Computer sichern** die Optionen aus, die Sie aktivieren möchten. Weitere Informationen zu den Einstellungen finden Sie unter [Secure Windows 10 devices](secure-windows-10-devices.md). 
+4. Wählen Sie **im Bereich** Windows 10 Computer sichern die Optionen aus, die Sie aktivieren möchten. Weitere Informationen zu den Einstellungen finden Sie unter [Secure Windows 10 Devices](secure-windows-10-devices.md). 
     
-    Für die meisten Organisationen bieten die hier angebotenen Optionen ein hohes Maß an Sicherheit. Wenn Ihre Organisation jedoch komplexere Sicherheitsanforderungen hat, können Sie auch vordefinierte Sicherheitsgrundwerte verwenden, um Ihre Windows 10-Geräte zu sichern. Weitere Informationen finden Sie unter [Sicherheitsgrundwerte für Windows 10-Geräte](/mem/intune/protect/security-baselines).   
+    Für die meisten Organisationen bieten die hier angebotenen Optionen ein hohes Maß an Sicherheit. Wenn Ihre Organisation jedoch komplexere Sicherheitsanforderungen hat, können Sie auch vordefinierte Sicherheitsgrundwerte verwenden, um Ihre Windows 10 zu sichern. Weitere Informationen finden Sie unter [Sicherheitsgrundwerte für Windows 10 Geräte](/mem/intune/protect/security-baselines).   
 
 1. Wählen **Sie Übernehmen von Einstellungen aus.**
 

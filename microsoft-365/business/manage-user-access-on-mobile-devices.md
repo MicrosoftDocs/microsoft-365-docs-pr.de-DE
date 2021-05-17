@@ -26,7 +26,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
-description: Erfahren Sie mehr über Schutzrichtlinien, mit denen Sie verwalten können, wie Benutzer auf Office-Apps und Arbeitsdateien von mobilen Geräten aus zugreifen können.
+description: Erfahren Sie mehr über Schutzrichtlinien, mit denen Sie verwalten können, wie Benutzer auf Office und Arbeitsdateien von mobilen Geräten zugreifen können.
 ms.openlocfilehash: a48aa241c9e70cf087da3f1701e859dae7238024
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -47,10 +47,10 @@ Mit den folgenden Einstellungen können Sie den Zugriff von Benutzern auf Office
 |||
 |:-----|:-----|
 |Einstellung  <br/> |Beschreibung  <br/> |
-|Für den Zugriff auf Office-Apps PIN bzw. digitalen Fingerabdruck anfordern  <br/> |Wenn diese Einstellung **Auf** ist, müssen Benutzer zusätzlich zu Ihrem Benutzernamen und Kennwort eine andere Form der Authentifizierung bereitstellen, bevor sie Office-Apps auf ihrem mobilen Gerät verwenden können.  <br/> |
+|Für den Zugriff auf Office-Apps PIN bzw. digitalen Fingerabdruck anfordern  <br/> |Wenn diese Einstellung **Auf** ist, müssen Benutzer zusätzlich zu Ihrem Benutzernamen und Kennwort eine andere Form der Authentifizierung bereitstellen, bevor sie Office apps auf ihrem mobilen Gerät verwenden können.  <br/> |
 |PIN nach dieser Anzahl von fehlerhaften Anmeldeversuchen zurücksetzen  <br/> |Um zu verhindern, dass ein nicht autorisierter Benutzer eine PIN nach dem Zufallsprinzip errät, wird die PIN, die nach der angegebenen Anzahl von Fehlversuchen zurückgesetzt.  <br/> |
 |Benutzer müssen sich erneut anmelden, nachdem Office-Apps im Leerlauf waren für  <br/> |Diese Einstellung bestimmt, wie lange ein Benutzer im Leerlauf sein kann, bevor er zur erneuten Anmeldung aufgefordert wird.  <br/> |
 |Zugriff auf Arbeitsdateien auf Geräten mit entfernten Nutzungsbeschränkungen verweigern  <br/> |Clevere Benutzer verfügen möglicherweise über ein Gerät, bei dem die Nutzungsbeschränkungen entfernt wurden. Dies bedeutet, dass der Benutzer das Betriebssystem ändern kann, wodurch das Gerät anfälliger für Schadsoftware werden kann. Solche Geräte können gesperrt werden, wenn die Einstellung auf **Ein** festgelegt wurde.  <br/> |
-|Benutzer dürfen Inhalte aus Office-Apps nicht in persönliche Apps kopieren  <br/> |Wenn die Einstellung **Auf** ist, kann der Benutzer keine Informationen in einer Arbeitsdatei in eine persönliche Datei kopieren. Wenn die Einstellung **deaktiviert ist,** kann der Benutzer Informationen aus einer Arbeitsdatei in eine persönliche App oder ein persönliches Konto kopieren.  <br/> |
+|Nicht zulassen, dass Benutzer Inhalte aus Office apps in persönliche Apps kopieren  <br/> |Wenn die Einstellung **Auf** ist, kann der Benutzer keine Informationen in einer Arbeitsdatei in eine persönliche Datei kopieren. Wenn die Einstellung **deaktiviert ist,** kann der Benutzer Informationen aus einer Arbeitsdatei in eine persönliche App oder ein persönliches Konto kopieren.  <br/> |
    
 

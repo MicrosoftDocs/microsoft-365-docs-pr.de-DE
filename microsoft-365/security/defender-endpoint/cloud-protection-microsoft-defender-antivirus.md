@@ -34,7 +34,7 @@ ms.locfileid: "52274808"
 Technologien der nächsten Generation von Microsoft in Microsoft Defender Antivirus bieten nahezu sofortigen, automatisierten Schutz vor neuen und neuen Bedrohungen. Um neue Bedrohungen dynamisch zu erkennen, arbeiten diese Technologien mit großen Gruppen von verbundenen Daten im Microsoft Intelligent Security Graph und leistungsfähigen AI-Systemen (Artificial Intelligence) zusammen, die von fortschrittlichen maschinellen Lernmodellen gesteuert werden.  
 
 Microsoft Defender Antivirus verwendet mehrere Erkennungs- und Verhinderungstechnologien, um präzisen, echtzeitgenauen und intelligenten Schutz zu bieten. Lernen Sie die erweiterten Technologien kennen, die im Kern des [Microsoft Defender for Endpoint-Schutzes der nächsten Generation zu finden sind.](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
-![Liste der Microsoft Defender AV-Engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+![Liste der Microsoft Defender Antiviren-Module](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 Um die Leistung und Geschwindigkeit dieser Technologien der nächsten Generation zu nutzen, funktioniert Microsoft Defender Antivirus nahtlos mit Microsoft Cloud Services. Diese Cloudschutzdienste, die auch als Microsoft Advanced Protection Service (MAPS) bezeichnet werden, verbessern den standardmäßigen Echtzeitschutz und bieten die wohl beste Antivirenabwehr. 
 

@@ -28,7 +28,7 @@ ms.locfileid: "51579182"
 ---
 # <a name="meetings--people-experiences"></a>Besprechungen – Personenerfahrungen
 
-Die Produktivitätswertung bietet Einblicke in die digitale Transformation Ihrer Organisation durch die Verwendung von Microsoft 365 und die Technologieerfahrungen, die sie unterstützen. Die Bewertung Ihrer Organisation spiegelt Messungen der Benutzer- und Technologieerfahrung wider und kann mit Benchmarks von Organisationen vergleichbar mit Ihrer verglichen werden. Die Kategorie Besprechungen ist Teil der Personenerfahrungsmaßnahmen. Weitere Informationen finden Sie in der [Übersicht über die Produktivitätsergebnis](productivity-score.md) und in [der Datenschutzerklärung von Microsoft.](https://privacy.microsoft.com/privacystatement)
+Die Produktivitätswertung bietet Einblicke in die digitale Transformationsreise Ihrer Organisation durch die Verwendung von Microsoft 365 und die Technologieerfahrungen, die sie unterstützen. Die Bewertung Ihrer Organisation spiegelt Messungen der Benutzer- und Technologieerfahrung wider und kann mit Benchmarks von Organisationen vergleichbar mit Ihrer verglichen werden. Die Kategorie Besprechungen ist Teil der Personenerfahrungsmaßnahmen. Weitere Informationen finden Sie in der [Übersicht über die Produktivitätsergebnis](productivity-score.md) und in [der Datenschutzerklärung von Microsoft.](https://privacy.microsoft.com/privacystatement)
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -38,7 +38,7 @@ Um mit Besprechungseinblicken zu beginnen, müssen Personen in Ihrer Organisatio
 
 Weitere Informationen finden Sie unter [Zuweisen von Lizenzen zu Benutzern](../manage/assign-licenses-to-users.md).
 
-Nachdem Personen in den letzten 28 Tagen mindestens einmal in Teams aktiv waren, sehen Sie die Einblicke.
+Nachdem Personen in den letzten 28 Teams mindestens einmal aktiv waren, sehen Sie die Einblicke.
 
 ## <a name="why-your-organizations-meetings-score-matters"></a>Warum die Besprechungen Ihrer Organisation wichtig sind
 
@@ -50,30 +50,30 @@ Wir bieten einen primären Einblick in die Erfahrung, die die wichtigsten Metrik
 
 ### <a name="primary-insight"></a>Primärer Einblick
 
-Microsoft Teams integriert sich in den Outlook-Kalender und bietet eine Vielzahl von Funktionen, um Ihre Besprechungen ansprechender und effektiver zu gestalten. Der wichtigste Einblick betrachtet alle Microsoft Teams-Onlinebesprechungen, die in Ihrer Organisation abgehalten wurden. Der Primäre Einblick verfolgt auch, wie viele Besprechungen mindestens einer der bewährten Methoden für Teams-Besprechungen folgen.
+Microsoft Teams integration in Outlook Kalender und bietet eine Vielzahl von Funktionen, um Ihre Besprechungen ansprechender und effektiver zu gestalten. Der primäre Einblick betrachtet alle Microsoft Teams Onlinebesprechungen, die in Ihrer Organisation abgehalten wurden. Der Primäre Einblick verfolgt auch, wie viele Besprechungen mindestens einer der bewährten Methoden für Teams folgen.
 
 :::image type="content" source="../../media/primaryinsights-meetings.png" alt-text="PRimary-Einblicke für Besprechungen mit bewährten Methoden.":::
 
-1. **Header:** Zeigt den Prozentsatz der Onlinebesprechungen in Microsoft Teams an, die in den letzten 28 Tagen mit Video- oder Bildschirmfreigabe während der Besprechung abgehalten wurden.
+1. **Header:** Zeigt den Prozentsatz der Onlinebesprechungen Microsoft Teams, die in den letzten 28 Tagen mit Video- oder Bildschirmfreigabe während der Besprechung abgehalten wurden.
 2. **Textkörper:** Enthält weitere Informationen dazu, wie das Folgen bewährter Methoden für das Engagement während einer Besprechung, z. B. die Verwendung von Video oder Bildschirmfreigabe, Besprechungen effektiver machen kann.
 3. **Visualisierung (aktueller Status):**
 
       - In diesem horizontalen Balkendiagramm stellt der blaue (farbige) Teil den prozentsatz dar, der in der Kopfzeile angezeigt wird.
       - Der Bruch (Zähler/Nenner) wird zum Berechnen des in der Kopfzeile angezeigten Prozentsatzes verwendet.
-         - Zähler: Die Anzahl der Microsoft Teams-Onlinebesprechungen, einschließlich Personen aus Ihrer Organisation, die Video- oder Bildschirmfreigaben verwendet haben.
-         - Nenner: Die Anzahl der Microsoft Teams-Onlinebesprechungen, einschließlich Personen aus Ihrer Organisation, die in den letzten 28 Tagen abgehalten wurden.
+         - Zähler: Die Anzahl der online Microsoft Teams, einschließlich Personen aus Ihrer Organisation, die Video- oder Bildschirmfreigabe verwendet haben.
+         - Denominator: Die Anzahl der online Microsoft Teams, einschließlich Personen aus Ihrer Organisation, die in den letzten 28 Tagen abgehalten wurden.
       - Der Peer-Benchmarkwert der Schlüsselmetrik wird auch als Prozentsatz angezeigt.
 1. **Link zu Ressourcen:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
 #### <a name="trend-visualization-of-the-primary-insight"></a>Trendvisualisierung der primären Einblicke
 
-Das folgende Diagramm zeigt die Trendlinien des Zählers und des Nenners der Schlüsselmetrik aus der primären Einsicht. Mit anderen Worten, es zeigt die Anzahl der Microsoft Teams-Onlinebesprechungen mit bewährten Methoden, z. B. Video- oder Bildschirmfreigabe, und die Gesamtzahl der Microsoft Teams-Onlinebesprechungen, die in den letzten 180 Tagen abgehalten wurden. Jeder Datenpunkt im Liniendiagramm ist ein Aggregat der Aktivität für die letzten 28 Tage.
+Das folgende Diagramm zeigt die Trendlinien des Zählers und des Nenners der Schlüsselmetrik aus der primären Einsicht. Mit anderen Worten, es zeigt die Anzahl von Online-Microsoft Teams-Besprechungen mit bewährten Methoden, z. B. Video- oder Bildschirmfreigabe, und die Gesamtzahl der Online-Microsoft Teams-Besprechungen, die in den letzten 180 Tagen abgehalten wurden. Jeder Datenpunkt im Liniendiagramm ist ein Aggregat der Aktivität für die letzten 28 Tage.
 
-:::image type="content" source="../../media/number-meeting-over-time.png" alt-text="Diagramm mit der Anzahl der Online-Teams-Besprechungen in den letzten 28 Tagen.":::
+:::image type="content" source="../../media/number-meeting-over-time.png" alt-text="Diagramm mit der Anzahl der Teams besprechungen in den letzten 28 Tagen.":::
 
 ### <a name="scoring-framework"></a>Bewertungsframework
 
-Die Besprechungsergebnis für Ihre Organisation misst den Grad, in dem Microsoft Teams-Onlinebesprechungen in Ihrer Organisation in den letzten 28 Tagen bewährte Methoden befolgt haben. Sie wird basierend auf der Anzahl der Personen in Ihrer Organisation, die an den Besprechungen teilnehmen, und der Dauer der Besprechungen gewichtet.
+Die Besprechungsergebnis für Ihre Organisation misst, in welchem Umfang online Microsoft Teams Besprechungen in Ihrer Organisation bewährte Methoden in den letzten 28 Tagen befolgt haben. Sie wird basierend auf der Anzahl der Personen in Ihrer Organisation, die an den Besprechungen teilnehmen, und der Dauer der Besprechungen gewichtet.
 
 ## <a name="explore-more-about-meetings-in-your-organization"></a>Weitere Informationen zu Besprechungen in Ihrer Organisation
 
@@ -83,22 +83,22 @@ Darüber hinaus stellen wir Ihnen unterstützende Informationen zur Verfügung, 
 
 :::image type="content" source="../../media/videouse-meetings.png" alt-text="Diagramm mit primären Einblicken für Besprechungen – Personenerfahrungen.":::
 
-1. **Header:**  Hebt den Prozentsatz der Microsoft Teams-Onlinebesprechungen hervor, die bewährte Videomethoden verwenden, die in der primären Einsicht und Bewertung berücksichtigt werden.
+1. **Header:** Momente den Prozentsatz von Onlinebesprechungen Microsoft Teams, die bewährte Videomethoden verwenden, die in der primären Einsicht und Bewertung berücksichtigt werden.  
 2. **Textkörper:** Informieren Sie sich über den Wert der Verwendung dieser Methoden in Besprechungen, um sie ansprechender zu gestalten. 
-3. **Visualisierung:** Die Aufschlüsselung in der Visualisierung soll den Umfang darstellen, in dem Microsoft Teams-Onlinebesprechungen den folgenden bewährten Methoden folgen: 
-    - **Video:** Der farbige Teil und der Anteil stellen den Prozentsatz der Microsoft Teams-Onlinebesprechungen dar, für die das Video aktiviert ist. Der Bruch besteht aus: 
-        - Zähler: In den letzten 28 Tagen abgehaltene Microsoft Teams-Onlinebesprechungen, bei deren Video mindestens ein Teilnehmer aktiviert war. 
-        - Nenner: Die Gesamtzahl der Microsoft Teams-Onlinebesprechungen, die in den letzten 28 Tagen in Ihrer Organisation abgehalten wurden 
-    - **Bildschirmfreigabe:** Der farbige Teil und der Anteil stellen den Prozentsatz der Microsoft Teams-Onlinebesprechungen dar, in denen Die Benutzer das Bildschirmfreigabefeature verwendet haben. Die Bruchzahl umfasst: 
-        - Numerator: Microsoft Teams-Onlinebesprechungen, die in den letzten 28 Tagen abgehalten wurden, bei der mindestens ein Teilnehmer seinen Bildschirm geteilt hat.
-        - Nenner: Die Gesamtzahl der Microsoft Teams-Onlinebesprechungen, die in Den letzten 28 Tagen in Ihrer Organisation durchgeführt wurden
+3. **Visualisierung:** Die Aufschlüsselung in der Visualisierung soll den Umfang darstellen, in dem online Microsoft Teams besprechungen den folgenden bewährten Methoden folgen: 
+    - **Video:** Der farbige Teil und der Anteil stellen den Prozentsatz der Onlinebesprechungen Microsoft Teams, für die Video aktiviert ist. Der Bruch besteht aus: 
+        - Numerator: Online Microsoft Teams besprechungen, die in den letzten 28 Tagen abgehalten wurden, bei deren Video mindestens ein Teilnehmer aktiviert war. 
+        - Nenner: Die Gesamtzahl der online Microsoft Teams, die in Ihrer Organisation in den letzten 28 Tagen abgehalten wurden 
+    - **Bildschirmfreigabe:** Der farbige Teil und der Anteil stellen den Prozentsatz der Online-Microsoft Teams, in denen Personen das Bildschirmfreigabefeature verwendet haben. Die Bruchzahl umfasst: 
+        - Numerator: Online Microsoft Teams, die in den letzten 28 Tagen abgehalten wurden, bei der mindestens ein Teilnehmer seinen Bildschirm geteilt hat.
+        - Nenner: Die Gesamtzahl der online Microsoft Teams, die in Ihrer Organisation in den letzten 28 Tagen durchgeführt wurden
 
 
 ### <a name="distribution-of-time-spent-by-people-in-meetings"></a>Verteilung der Zeit, die von Personen in Besprechungen verbracht wird
 
-:::image type="content" source="../../media/percentageofpeopleusingteams.png" alt-text="Diagramm mit dem Prozentsatz der Personen, die über 20 Stunden in der Woche an Teams-Besprechungen teilnehmen.":::
+:::image type="content" source="../../media/percentageofpeopleusingteams.png" alt-text="Diagramm mit dem Prozentsatz der Personen, die Teams mehr als 20 Stunden in der Woche an Besprechungen teilnehmen.":::
 
-1. **Header:** Zeigt den Prozentsatz der Personen in Ihrer Organisation an, die durchschnittlich mehr als 20 Stunden pro Woche an Microsoft Teams-Onlinebesprechungen teilnehmen, basierend auf ihren Aktivitäten in den letzten 28 Tagen.
+1. **Header:** Zeigt den Prozentsatz der Personen in Ihrer Organisation an, die Microsoft Teams durchschnittlich mehr als 20 Stunden pro Woche an Onlinebesprechungen teilnehmen, basierend auf ihren Aktivitäten in den letzten 28 Tagen.
 2. **Textkörper:** Enthält Details zum Nutzen bewährter Methoden für Besprechungen, um Besprechungen zu engagieren und produktiv zu gestalten.
 3. **Visualisierung:** Bietet eine Ansicht der Personen in Ihrer Organisation basierend auf ihrer durchschnittlichen Zeit pro Woche in Besprechungen innerhalb der letzten 28 Tage. Die folgenden Informationen werden für jede Kategorie bereitgestellt:
       - **Besprechungsteilnehmer insgesamt:** Zeigt die Anzahl der Personen in Ihrer Organisation an, die an Besprechungen teilgenommen haben, basierend auf dem durchschnittlichen Bereich der Besprechungsdauer in den letzten 28 Tagen. Die Kategorie 6 bis 10 Stunden gibt beispielsweise die Anzahl der Personen an, die in den letzten 28 Tagen durchschnittlich so viele Stunden pro Woche an Besprechungen teilgenommen haben.
@@ -109,36 +109,36 @@ Darüber hinaus stellen wir Ihnen unterstützende Informationen zur Verfügung, 
 
 :::image type="content" source="../../media/distribution-meetinglength.png" alt-text="Diagramm, das die Verteilung der Besprechungslängen zeigt.":::
 
-1. **Header:** Zeigt den Prozentsatz der sofortigen (nicht zuvor geplanten) Microsoft Teams-Onlinebesprechungen in den letzten 28 Tagen an, die unter 30 Minuten lang sind.
+1. **Header:** Zeigt den Prozentsatz der sofortigen (nicht zuvor geplanten) online Microsoft Teams Besprechungen in den letzten 28 Tagen an, die unter 30 Minuten lang sind.
 2. **Textkörper:** Enthält Informationen zum Nutzen von Sofortbesprechungen, um Probleme schnell zu beheben.
 3. **Visualisierung:** Stellt die Verteilung der Länge (in Minuten) von sofort und geplanten Besprechungen, die in Ihrer Organisation in den letzten 28 Tagen stattgefunden haben. Die Verteilung kategorisiert jede Besprechung in 1-15 Minuten, 16-30 Minuten, 31 bis 60 Minuten und länger als 60 Minuten.
 
     > [!NOTE]
-    > Die geplanten Besprechungen umfassen alle Besprechungen, die in den Kalendern der Personen angezeigt wurden. Die Sofortbesprechungen umfassen Anrufe, einschließlich 1:1- und Gruppenanrufe, sowie Besprechungen, die mit der Funktion Jetzt treffen &quot; &quot; in Microsoft Teams-Kanälen gestartet wurden.
+    > Die geplanten Besprechungen umfassen alle Besprechungen, die in den Kalendern der Personen angezeigt wurden. Die Sofortbesprechungen umfassen Anrufe, einschließlich 1:1- und Gruppenanrufe, sowie Besprechungen, die mit der Funktion Jetzt treffen in den Microsoft Teams &quot; &quot; wurden.
 
 
 ### <a name="use-of-different-meeting-types"></a>Verwendung unterschiedlicher Besprechungstypen
 
 :::image type="content" source="../../media/percentparticipation-meetingtypes.jpg" alt-text="Diagramm, das die Prozentteilnahme an verschiedenen Besprechungstypen zeigt.":::
 
-1. **Header:** Hebt den Prozentsatz der Microsoft Teams-Chatbesprechungen in den vorherigen 28 Tagen hervor, die weniger als 30 Minuten lang sind.
-2. **Textkörper:** Enthält Informationen zum Wert der Verwendung von &quot; Meet now im Microsoft &quot; Teams-Kanalfeature.
-3. **Visualisierung:** Zeigt, welche Art von Besprechungen von Personen besucht werden, die an onlineen Microsoft Teams-Besprechungen teilnehmen. Jeder Besprechungstyp wird als horizontaler Balken dargestellt, wobei der farbige Teil und der Bruch folgendes darstellen:
+1. **Header:** Momente den Prozentsatz der Chatbesprechungen in Microsoft Teams 28 Tagen, die weniger als 30 Minuten lang sind.
+2. **Textkörper:** Enthält Informationen zum Wert der Verwendung von &quot; Meet now im Microsoft Teams &quot; Kanalfeature.
+3. **Visualisierung:** Zeigt, welche Art von Besprechungen von Personen besucht werden, die an online oder Microsoft Teams teilnehmen. Jeder Besprechungstyp wird als horizontaler Balken dargestellt, wobei der farbige Teil und der Bruch folgendes darstellen:
     - **Sofortige 1:1-Anrufe**:
         - Zähler: Die Anzahl der Personen, die an 1:1-Anrufen in den letzten 28 Tagen teilnehmen
-        - Nenner: Die Anzahl der Personen, die an einer Microsoft Teams-Online-Besprechung in den letzten 28 Tagen teilnehmen
+        - Nenner: Die Anzahl der Personen, die an einer Online-Microsoft Teams in den letzten 28 Tagen teilnehmen
    - **Sofortgruppenanrufe**:
         - Zähler: Die Anzahl der Personen, die Gruppenanrufe in den letzten 28 Tagen besucht haben
-        - Nenner : Die Anzahl der Personen, die an einer Microsoft Teams-Online-Besprechung in den letzten 28 Tagen teilnehmen
+        - Nenner : Die Anzahl der Personen, die an einer Online-Microsoft Teams in den letzten 28 Tagen teilnehmen
    - **Sofortiges Treffen jetzt im Kanal**:
-        - Numerator: Die Anzahl der Personen, die in den letzten 28 Tagen die Funktion "Jetzt &quot; &quot; treffen" in Microsoft Teams-Kanälen (für Chatbesprechungen) verwenden
-        - Nenner: Die Anzahl der Personen, die an einer Microsoft Teams-Online-Besprechung in den letzten 28 Tagen teilnehmen
+        - Zähler: Die Anzahl der Personen, die in den letzten 28 Tagen die Funktion "Jetzt treffen" in Microsoft Teams &quot; &quot; Kanälen (für Chatbesprechungen) verwenden
+        - Nenner: Die Anzahl der Personen, die an einer Online-Microsoft Teams in den letzten 28 Tagen teilnehmen
     - **Geplante einmal geplante Besprechungen:**
-        - Zähler: Die Anzahl der Personen, die in den letzten 28 Tagen an einmalen Microsoft Teams-Onlinebesprechungen im Kalender (geplant) teilnehmen
-        - Nenner: Die Anzahl der Personen, die an einer Microsoft Teams-Online-Besprechung in den letzten 28 Tagen teilnehmen
+        - Zähler: Die Anzahl der Personen, die in den letzten 28 Tagen an einmal online Microsoft Teams Besprechungen im Kalender (geplant) teilnehmen
+        - Nenner: Die Anzahl der Personen, die an einer Online-Microsoft Teams in den letzten 28 Tagen teilnehmen
     - **Geplante Besprechungsserien:**
         - Zähler: Die Anzahl der Personen, die in den letzten 28 Tagen an Besprechungsserien im Kalender teilnehmen (geplant).
-        - Nenner: Die Anzahl der Personen, die an einer Microsoft Teams-Online-Besprechung in den letzten 28 Tagen teilnehmen
+        - Nenner: Die Anzahl der Personen, die an einer Online-Microsoft Teams in den letzten 28 Tagen teilnehmen
 
 ## <a name="related-content"></a>Verwandte Inhalte
 

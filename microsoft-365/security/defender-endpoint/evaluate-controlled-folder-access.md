@@ -31,7 +31,7 @@ ms.locfileid: "51569905"
 >Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
-[Der kontrollierte Ordnerzugriff](controlled-folders.md) ist ein Feature, das Ihre Dokumente und Dateien vor Änderungen durch verdächtige oder schädliche Apps schützt. Der kontrollierte Ordnerzugriff wird auf Windows Server 2019- und Windows 10-Clients unterstützt.
+[Der kontrollierte Ordnerzugriff](controlled-folders.md) ist ein Feature, das Ihre Dokumente und Dateien vor Änderungen durch verdächtige oder schädliche Apps schützt. Der kontrollierte Ordnerzugriff wird auf Windows Server 2019 und Windows 10 unterstützt.
 
 Es ist besonders hilfreich beim Schutz vor [Ransomware,](https://www.microsoft.com/wdsi/threats/ransomware) die versucht, Ihre Dateien zu verschlüsseln und als Host zu halten.
 
@@ -52,11 +52,11 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 > [!TIP]
 > Wenn Sie vollständig überwachen möchten, wie der kontrollierte Ordnerzugriff in Ihrer Organisation funktioniert, müssen Sie ein Verwaltungstool verwenden, um diese Einstellung auf Geräten in Ihren Netzwerken bereitstellen zu können.
-Sie können die Einstellung auch mithilfe von Gruppenrichtlinien, Intune, mobiler Geräteverwaltung (Mobile Device Management, MDM) oder Microsoft Endpoint Manager konfigurieren und bereitstellen, wie im Thema "Zugriff auf hauptgesteuerte Ordner" [beschrieben.](controlled-folders.md)
+Sie können auch Gruppenrichtlinien, Intune, mobile Geräteverwaltung (MDM) oder Microsoft Endpoint Manager verwenden, um die Einstellung zu konfigurieren und bereitzustellen, wie im Thema "Zugriff auf hauptgesteuerte Ordner" [beschrieben.](controlled-folders.md)
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Überprüfen von Ereignissen für den kontrollierten Ordnerzugriff in der Windows-Ereignisanzeige
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Überprüfen gesteuerter Ordnerzugriffsereignisse in Windows Ereignisanzeige
 
-Die folgenden Ereignisse für den kontrollierten Ordnerzugriff werden in der Windows-Ereignisanzeige unter Dem Ordner Microsoft/Windows/Windows Defender/Operational angezeigt.
+Die folgenden Ereignisse für den kontrollierten Ordnerzugriff werden in der Windows unter Microsoft/Windows/Windows Defender/Operational angezeigt.
 
 Ereignis-ID | Beschreibung
 -|-
@@ -65,7 +65,7 @@ Ereignis-ID | Beschreibung
  1123 | Blockiertes Ereignis für den kontrollierten Ordnerzugriff
 
 > [!TIP]
-> Sie können ein [Windows Event Forwarding-Abonnement so konfigurieren,](https://docs.microsoft.com/windows/win32/wec/setting-up-a-source-initiated-subscription) dass die Protokolle zentral erfasst werden. 
+> Sie können ein Windows [Event Forwarding-Abonnement](https://docs.microsoft.com/windows/win32/wec/setting-up-a-source-initiated-subscription) konfigurieren, um die Protokolle zentral zu erfassen. 
 
 ## <a name="customize-protected-folders-and-apps"></a>Anpassen geschützter Ordner und Apps
 

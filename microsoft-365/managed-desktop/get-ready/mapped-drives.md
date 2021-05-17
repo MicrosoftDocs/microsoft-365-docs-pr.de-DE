@@ -63,6 +63,6 @@ Stellen Sie sicher, dass zugeordnete Laufwerke nicht vermieden werden können, u
 4. [Netzwerkkonfiguration für Microsoft Managed Desktop](network.md)
 5. [Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop](certs-wifi-lan.md)
 6. [Vorbereiten des lokalen Ressourcenzugriffs für Microsoft Managed Desktop](authentication.md)
-7. [Anwendungen in Microsoft Managed Desktop](apps.md)
+7. [Apps im Microsoft Managed Desktop](apps.md)
 8. [Vorbereiten zugeordneter Laufwerke für Microsoft Managed Desktop](mapped-drives.md) (In diesem Artikel)
-9. [Voraussetzungen von Druckressourcen für Microsoft Managed Desktop](printing.md)
+9. [Vorbereiten der Druckressourcen für Microsoft Managed Desktop](printing.md)

@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Überprüfen Sie die Microsoft 365 Business Premium-App-Schutzeinstellungen auf Windows 10-Geräten, und vergewissern Sie sich, dass Benutzer keine Unternehmensdaten in persönliche Dateien oder nicht verwaltete Apps kopieren können.
+description: Überprüfen Microsoft 365 Business Premium App-Schutzeinstellungen auf Windows 10 Geräten und überprüfen Sie, ob Benutzer Keine Unternehmensdaten in persönliche Dateien oder nicht verwaltete Apps kopieren können.
 ms.openlocfilehash: e319ffa5149f055b5de45078facc8899acffc223
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -34,11 +34,11 @@ ms.locfileid: "51579860"
 
 ## <a name="verify-that-users-cannot-copy-company-data-to-personal-files-on-corporate-devices"></a>Sicherstellen, dass Benutzer keine Unternehmensdaten in persönliche Dateien auf Unternehmensgeräten kopieren können
 
-Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-windows-10-devices.md), kann es einige Stunden dauern, bis die Richtlinie für die Geräte der Benutzer wirksam wird. Wenn Sie  die Einstellung Benutzer am Kopieren von Unternehmensdaten in persönliche Dateien hindern aktiviert haben und sie zwingen, Arbeitsdateien auf **OneDrive for #A0** für Geräte im Besitz des Unternehmens zu speichern, können Sie dies auf dem Gerät des Benutzers überprüfen, nachdem sie mit Azure AD verbunden und angemeldet sind. 
+Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-windows-10-devices.md), kann es einige Stunden dauern, bis die Richtlinie für die Geräte der Benutzer wirksam wird. Wenn Sie  die Einstellung Benutzer am Kopieren von Unternehmensdaten in persönliche Dateien hindern aktiviert haben und sie zum Speichern von Arbeitsdateien auf **OneDrive for Business-Einstellungen** für Geräte im Besitz des Unternehmens zwingen, können Sie dies auf dem Gerät des Benutzers überprüfen, nachdem sie sich mit Azure AD verbunden und angemeldet haben. 
   
  **Überprüfen der Verbindungseinstellungen**
   
-1. Nachdem Sie sich mit Microsoft 365 Business Premium-Anmeldeinformationen angemeldet haben und eine Verbindung mit Azure AD hergestellt haben, wie unter Einrichten von Windows-Geräten für [Microsoft 365 Business Premium-Benutzer](set-up-windows-devices.md)beschrieben, wechseln Sie zu **Windows Settings** \> **Accounts** \> **Access work or school**. Wählen **Sie Verbunden mit Azure \<tenant name\> AD** aus, und wählen Sie dann **Info aus.**
+1. Nachdem Sie sich mit Microsoft 365 Business Premium Anmeldeinformationen angemeldet und eine Verbindung mit Azure AD hergestellt haben, wie unter Einrichten von Windows-Geräten für [Microsoft 365 Business Premium-Benutzer](set-up-windows-devices.md)beschrieben, wechseln Sie zu **Windows Einstellungen** \> **Accounts** \> **Access work or school**. Wählen **Sie Verbunden mit Azure \<tenant name\> AD** aus, und wählen Sie dann **Info aus.**
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
@@ -48,7 +48,7 @@ Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-w
   
  **Überprüfen, ob Sie Keine Unternehmensdaten in eine nicht verwaltete App einfügen können**
   
-1. Öffnen Sie Outlook 2016, das von Microsoft 365 Business Premium installiert wurde.
+1. Öffnen Outlook 2016, die von einem Microsoft 365 Business Premium.
     
 2. Öffnen Sie eine E-Mail, und kopieren Sie einige Inhalt daraus.
     
@@ -64,11 +64,11 @@ Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-w
 
  **Überprüfen der Verbindungseinstellungen**
   
-1. Wechseln Sie auf Ihrem persönlichen Windows 10-Gerät, auf dem Sie als lokaler Benutzer angemeldet sind, zu Windows-Einstellungen, und klicken oder tippen Sie auf **KontenZugriff** auf Arbeit oder \> **Schule**.
+1. Wechseln Sie Windows 10 ihrem persönlichen Gerät, auf dem Sie als lokaler Benutzer angemeldet sind, zu Windows Einstellungen , **und** klicken oder tippen Sie auf **KontenZugriff** auf Arbeit oder \> **Schule**.
     
 2. Klicken Sie unter **Auf Arbeits- oder Schulkonto zugreifen** auf **Verbinden**.
     
-3. Geben Sie Ihre Microsoft 365 Business Premium-Anmeldeinformationen im Dialogfeld Einrichten eines Geschäfts- oder **Schulkontos** \> **anmelden ein.**
+3. Geben Sie Microsoft 365 Business Premium Anmeldeinformationen in das Dialogfeld Einrichten eines Arbeits- oder **Schulkontos** \> **anmelden ein.**
     
 4. Wählen Sie auf der Seite **Auf Arbeits- oder Schulkonto zugreifen** die Option **Geschäfts-, Schul- oder Unikonto** und dann **Informationen** aus.
     
@@ -80,7 +80,7 @@ Nachdem Sie [App-Schutzrichtlinien eingerichtet haben](protection-settings-for-w
   
  **Überprüfen, ob Sie Keine Unternehmensdaten in eine nicht verwaltete App einfügen können**
   
-1. Öffnen Sie Outlook 2016, und fügen Sie bei Bedarf Ihr Microsoft 365 Business Premium-Konto hinzu, und melden Sie sich mit Ihren Microsoft 365 Business Premium-Anmeldeinformationen an.
+1. Öffnen Outlook 2016, und fügen Sie Microsoft 365 Business Premium Konto hinzu, und melden Sie sich mit Ihren anmeldeinformationen Microsoft 365 Business Premium an.
     
 2. Öffnen Sie eine E-Mail, und kopieren Sie einige Inhalt daraus.
     

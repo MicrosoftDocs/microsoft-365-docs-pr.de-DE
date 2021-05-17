@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Synchronisieren sie domänengesteuerte Benutzer mit Microsoft 365 Business.
+description: Synchronisieren Sie domänengesteuerte Benutzer mit Microsoft 365 Business.
 ms.openlocfilehash: b477b8a1f35a790d6c49937c973c141ad9f90ad4
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -34,19 +34,19 @@ ms.locfileid: "51578405"
 
 ## <a name="1-prepare-for-directory-synchronization"></a>1. Vorbereiten der Verzeichnissynchronisierung 
 
-Bevor Sie Ihre Benutzer und Computer aus der lokalen Active Directory-Domäne synchronisieren, lesen Sie Vorbereiten der Verzeichnissynchronisierung [mit Microsoft 365](../enterprise/prepare-for-directory-synchronization.md). Insbesondere:
+Bevor Sie Ihre Benutzer und Computer aus der lokalen Active Directory-Domäne synchronisieren, lesen Sie Vorbereiten der [Verzeichnissynchronisierung mit Microsoft 365](../enterprise/prepare-for-directory-synchronization.md). Insbesondere:
 
    - Stellen Sie sicher, dass in Ihrem Verzeichnis keine Duplikate für die folgenden Attribute vorhanden sind: **mail**, **proxyAddresses** und **userPrincipalName**. Diese Werte müssen eindeutig sein, und alle Duplikate müssen entfernt werden.
    
-   - Es wird empfohlen, das **UserPrincipalName** (UPN)-Attribut für jedes lokale Benutzerkonto so zu konfigurieren, dass es der primären E-Mail-Adresse entspricht, die dem lizenzierten Microsoft 365-Benutzer entspricht. Beispiel: *mary.shelley@contoso.com* anstatt *mary@contoso.local*
+   - Es wird empfohlen, das **UserPrincipalName** (UPN)-Attribut für jedes lokale Benutzerkonto so zu konfigurieren, dass es der primären E-Mail-Adresse entspricht, die dem lizenzierten Benutzer Microsoft 365 entspricht. Beispiel: *mary.shelley@contoso.com* anstatt *mary@contoso.local*
    
    - Wenn die Active Directory-Domäne in einem nicht routablen Suffix wie *.local* oder *.lan* endet, anstatt eines internetroutablen Suffixes wie *.com* oder *.org,* passen Sie zuerst das UPN-Suffix der lokalen Benutzerkonten an, wie unter [Prepare a non-routable domain for directory synchronization](../enterprise/prepare-a-non-routable-domain-for-directory-synchronization.md)beschrieben. 
 
 Das **Ausführen von IdFix** in Schritt 4 (4) unten sorgt außerdem dafür, dass Ihr lokales Active Directory für die Verzeichnissynchronisierung bereit ist.
 
-## <a name="2-install-and-configure-azure-ad-connect"></a>2. Installieren und Konfigurieren von Azure AD Connect
+## <a name="2-install-and-configure-azure-ad-connect"></a>2. Installieren und Konfigurieren von Azure AD Verbinden
 
-Um Ihre Benutzer, Gruppen und Kontakte aus dem lokalen Active Directory in Azure Active Directory zu synchronisieren, installieren Sie Azure Active Directory Connect, und richten Sie die Verzeichnissynchronisierung ein. 
+Um Ihre Benutzer, Gruppen und Kontakte aus dem lokalen Active Directory in Azure Active Directory zu synchronisieren, installieren Sie Azure Active Directory Verbinden Und richten Sie die Verzeichnissynchronisierung ein. 
 
  1. Wählen Sie [im Admin Center](https://go.microsoft.com/fwlink/p/?linkid=2024339) **setup** im linken Navigations navi aus.
 
@@ -56,14 +56,14 @@ Um Ihre Benutzer, Gruppen und Kontakte aus dem lokalen Active Directory in Azure
 
  4. Führen Sie im ersten Schritt das IdFix-Tool aus, um die Verzeichnissynchronisierung vorzubereiten.
 
- 5. Führen Sie die Schritte des Assistenten aus, um Azure AD Connect herunterzuladen und sie zum Synchronisieren ihrer domänengesteuerten Benutzer mit Microsoft 365 zu verwenden.
+ 5. Führen Sie die Schritte des Assistenten aus, um Azure AD Verbinden herunterzuladen und sie zum Synchronisieren ihrer domänengesteuerten Benutzer mit Microsoft 365.
 
 
-Weitere Informationen finden Sie unter Einrichten der Verzeichnissynchronisierung für [Microsoft 365.](../enterprise/set-up-directory-synchronization.md)
+Weitere Informationen finden Sie unter Set [up directory synchronization for Microsoft 365.](../enterprise/set-up-directory-synchronization.md)
 
-Wenn Sie Ihre Optionen für Azure AD Connect konfigurieren, wird empfohlen, die  **Kennwortsynchronisierung,** das nahtlose einmalige Anmelden und das Kennwortrückschreiben zu aktivieren, das auch in Microsoft 365 Business unterstützt wird.
+Wenn Sie Ihre Optionen für Azure AD Verbinden konfigurieren, wird empfohlen, die Kennwortsynchronisierung, das nahtlose einmalige Anmelden und das Kennwortrückschreiben zu aktivieren, das auch in Microsoft 365 Business unterstützt wird. 
 
 > [!NOTE]
-> Es gibt einige zusätzliche Schritte für das Kennwortrückschreiben über das Kontrollkästchen in Azure AD Connect hinaus. Weitere Informationen finden Sie unter [How-to: configure password writeback](/azure/active-directory/authentication/howto-sspr-writeback). 
+> Es gibt einige zusätzliche Schritte für das Kennwortrückschreiben, die über das Kontrollkästchen in Azure AD Verbinden. Weitere Informationen finden Sie unter [How-to: configure password writeback](/azure/active-directory/authentication/howto-sspr-writeback). 
 
-Wenn Sie auch Mit der Domäne beigetretene Windows 10-Geräte verwalten möchten, finden Sie weitere Informationen unter Aktivieren der Domänenverwaltung von Windows 10-Geräten, die von [Microsoft 365 Business Premium](manage-windows-devices.md) verwaltet werden, um einen Azure AD-Hybrid-Beitritt zu einrichten.
+Wenn Sie auch Mit der Domäne beigetretene Windows 10 verwalten möchten, finden Sie weitere Informationen unter [Enable domain-joined Windows 10 devices to](manage-windows-devices.md) be managed by Microsoft 365 Business Premium to set up a hybrid Azure AD Join.

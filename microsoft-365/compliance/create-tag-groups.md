@@ -23,41 +23,41 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 02/15/2020
 ms.locfileid: "42077077"
 ---
-# <a name="create-tag-groups"></a>Erstellen von Tag-Gruppen
+# <a name="create-tag-groups"></a>Erstellen von Taggruppen
 
-Bevor Sie oder andere Personen Dokumente in einem Überprüfungs Satzes markieren können, müssen die Tags erstellt werden. Dazu können Sie Tag-Gruppen erstellen, die untergeordnete Tags enthalten. Tags werden im taggingfenster angezeigt, wenn Sie Dokumente in einem Überprüfungs Satzes überprüfen.
+Bevor Sie oder andere Personen Dokumente in einem Überprüfungssatz markieren können, müssen die Tags erstellt werden. Dazu können Sie Taggruppen erstellen, die untergeordnete Tags enthalten. Tags werden im Taggingbereich angezeigt, wenn Dokumente in einem Überprüfungssatz überprüft werden.
 
-So erstellen Sie eine Transpondergruppe:
+So erstellen Sie eine Taggruppe:
 
-1.  Klicken Sie in einem Überprüfungs Satzes auf **Überarbeitungs Gruppe verwalten**.
+1.  Klicken Sie in einem Überprüfungssatz auf **Überprüfungssatz verwalten.**
 
-    ![Klicken Sie auf Überprüfungs Sätze verwalten](../media/ED-managews.png)
+    ![Klicken Sie auf Überprüfungssatz verwalten](../media/ED-managews.png)
 
-2.  Klicken Sie auf der Kachel **Tags** auf **Tags verwalten**.
+2.  Klicken Sie **in der** Kachel Tags auf **Tags verwalten.**
 
-    ![Klicken Sie auf Tags in der Kachel Tags verwalten.](../media/ED-managetags.png)
+    ![Klicken Sie in der Kachel Tags auf Tags verwalten.](../media/ED-managetags.png)
 
-Innerhalb der Tag-Verwaltung können Tags erstellt werden, um die Anforderungen Ihres Falls zu erfüllen. Sie können zunächst eine Tag-Gruppe erstellen.
+Sobald sie sich innerhalb der Tagverwaltung befindet, können Tags erstellt werden, um die Anforderungen Ihres Falls zu erfüllen. Sie können mit dem Erstellen einer Taggruppe beginnen.
 
-1.  Klicken Sie auf **Abschnitt hinzufügen**.
+1.  Klicken Sie **auf Abschnitt Hinzufügen**.
 
-    ![Hinzufügen einer Transpondergruppe](../media/ED-addtagsection.png)
+    ![Hinzufügen einer Taggruppe](../media/ED-addtagsection.png)
 
-    Der Vorschau-Bildschirm wird aktualisiert, wenn Sie speichern, sodass Sie eine Vorschau des Tag-Panels anzeigen können, ohne den Tag-Verwaltungsbildschirm schließen und zurück zum Arbeitsmappen wechseln zu müssen.
+    Der Vorschaubildschirm wird beim Speichern aktualisiert, sodass Sie eine Vorschau des Tagbereichs anzeigen können, ohne den Tagverwaltungsbildschirm schließen zu müssen und zum Arbeitssatz zurück wechseln zu müssen.
 
 2. Geben Sie einen Titel und eine optionale Beschreibung ein. 
 
-3. Um ein Tag in dieser Gruppe zu erstellen, klicken Sie auf die Ellipsen in der neuen Tag-Gruppe, um Tags in diesem neuen Abschnitt zu erstellen.
+3. Klicken Sie zum Erstellen eines Tags in dieser Gruppe auf die Ellipsen in der neuen Taggruppe, um Tags in diesem neuen Abschnitt zu erstellen.
     
-    ![Erstellen von Tags in einer Transpondergruppe](../media/ED-createtag.png)
+    ![Erstellen von Tags in einer Taggruppe](../media/ED-createtag.png)
 
-   - Mit **options Tags** wird erzwungen, dass Benutzer ein Tag aus einer Gruppe von Tags auswählen.
+   - **Optionstags** zwingen Benutzer dazu, ein Tag aus einer Gruppe von Tags auszuwählen.
    
-   - **Kontrollkästchentags** ermöglichen Benutzern das Auswählen einer beliebigen Kombination von Tags. |
+   - **Mit Kontrollkästchentags** können Benutzer eine beliebige Kombination von Tags auswählen. |
 
 ## <a name="nested-tags"></a>Geschachtelte Tags
 
-Zum Schachteln von Tags klicken Sie auf die Ellipsen neben einem Tag, und wählen Sie dann ein neues Tag aus, das hinzugefügt werden soll.
+Klicken Sie zum Schachteln von Tags auf die Ellipsen neben einem Tag, und wählen Sie dann ein neues hinzuzufügende Tag aus.
 
-![Verschachteln von Tags](../media/ED-tagnesting.png)
+![Verschachtelungstags](../media/ED-tagnesting.png)
 

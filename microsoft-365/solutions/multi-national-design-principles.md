@@ -1,5 +1,5 @@
 ---
-title: Multi-nationale Entwurfsprinzipien für Microsoft 365
+title: Multinationale Entwurfsprinzipien für Microsoft 365
 description: Eine Beschreibung.
 ms.author: samanro
 author: samanro
@@ -19,6 +19,6 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 07/29/2020
 ms.locfileid: "46521099"
 ---
-# <a name="multi-national-design-principles-for-microsoft-365"></a>Multi-nationale Entwurfsprinzipien für Microsoft 365
+# <a name="multi-national-design-principles-for-microsoft-365"></a>Multinationale Entwurfsprinzipien für Microsoft 365
 
 Text

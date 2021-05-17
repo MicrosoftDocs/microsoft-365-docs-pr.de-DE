@@ -1,5 +1,5 @@
 ---
-title: Schützen von Unternehmensdaten durch Richtlinien in Microsoft 365 Business
+title: Schützen von Unternehmensdaten durch Microsoft 365 In-Business-Richtlinien
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -34,18 +34,18 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578425"
 ---
-# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Schützen von Unternehmensdaten durch Richtlinien in Microsoft 365 Business
+# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Schützen von Unternehmensdaten durch Microsoft 365 In-Business-Richtlinien
 
 Dieser Artikel gilt für Microsoft 365 Business Premium.
 
 [] Die von Ihnen erstellten Richtlinien gelten speziell für den jeweiligen Gerätetyp und können auf bestimmte Benutzergruppen angewendet werden. Dies bedeutet, dass Sie eine Richtlinie erstellen können, die für die leitenden Mitarbeiter gilt, und eine weitere, die für alle anderen Personen gilt.
   
-Für Android- und iOS-Geräte können Sie Anwendungsrichtlinien hinzufügen oder bearbeiten, die Office-Apps und Arbeitsdateien schützen, die von Office-Apps verwendet werden. Wir können Windows 10-Geräte etwas mehr steuern, sodass Anwendungsrichtlinien weitere Einstellungen wie Verschlüsselung und Schutz für Netzwerk- und Cloudstandorte enthalten können. Sie können auch Geräterichtlinien für Windows 10-Geräte erstellen, die Einstellungen wie Virenschutz und automatische Updates erzwingen. Es wird empfohlen, dass Sie bei den richtlinien bleiben, die während des Setups erstellt wurden. Wenn Sie jedoch Ihre Richtlinien optimieren oder weitere hinzufügen möchten, lesen Sie die folgenden Artikel:
+Für Android- und iOS-Geräte können Sie Anwendungsrichtlinien hinzufügen oder bearbeiten, die Office und Arbeitsdateien schützen, die von apps Office werden. Wir sind in der Lage, Windows 10 geräte ein wenig mehr zu steuern, sodass Anwendungsrichtlinien weitere Einstellungen wie Verschlüsselung und Schutz für Netzwerk- und Cloudstandorte enthalten können. Sie können auch Geräterichtlinien für Windows 10 erstellen, die Einstellungen wie Virenschutz und automatische Updates erzwingen. Es wird empfohlen, dass Sie bei den richtlinien bleiben, die während des Setups erstellt wurden. Wenn Sie jedoch Ihre Richtlinien optimieren oder weitere hinzufügen möchten, lesen Sie die folgenden Artikel:
   
 [Festlegen von App-Konfigurationen für Android- oder iOS-Geräte](app-protection-settings-for-android-and-ios.md)
   
 [Festlegen von Gerätekonfigurationen für Windows 10-PCs](protection-settings-for-windows-10-pcs.md)
   
-[Festlegen von App-Schutzeinstellungen für Windows 10-Geräte](protection-settings-for-windows-10-devices.md)
+[Festlegen von App-Schutzeinstellungen für Windows 10 Geräte](protection-settings-for-windows-10-devices.md)
   
 

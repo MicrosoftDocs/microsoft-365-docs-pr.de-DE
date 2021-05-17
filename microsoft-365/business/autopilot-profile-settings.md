@@ -29,7 +29,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: Mithilfe von AutoPilot-Profilen können Sie steuern, wie Windows auf Benutzergeräten installiert wird. Die Profile enthalten Standardeinstellungen und optionale Einstellungen wie die Cortana-Installation überspringen.
+description: Mithilfe von AutoPilot-Profilen können Sie steuern, Windows auf Benutzergeräten installiert wird. Die Profile enthalten Standardeinstellungen und optionale Einstellungen wie die Cortana-Installation überspringen.
 ms.openlocfilehash: 86f8718131f0a0b93e18e65e39e02e7d65aded1a
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -41,15 +41,15 @@ ms.locfileid: "51578505"
 
 ## <a name="autopilot-profile-settings"></a>AutoPilot-Profileinstellungen
 
-Sie können AutoPilot-Profile verwenden, um zu steuern, wie Windows auf Benutzergeräten installiert wird. Die Profile enthalten die folgenden Einstellungen:
+Sie können AutoPilot-Profile verwenden, um zu steuern, Windows auf Benutzergeräten installiert ist. Die Profile enthalten die folgenden Einstellungen:
   
  **AutoPilot-Standardfeatures (erforderlich), die automatisch festgelegt werden:**
   
 |**Einstellung**|**Beschreibung**|
 |:-----|:-----|
-|Cortana-, OneDrive- und #A0 überspringen  <br/> |Überspringt die Installation von #A0 wie Cortana und persönlichem OneDrive. Der Gerätebenutzer kann diese später installieren, solange der Benutzer ein lokaler Administrator auf dem Gerät ist. Die ursprüngliche Herstellerregistrierung wird übersprungen, da das Gerät von Microsoft 365 Business Premium verwaltet wird.  <br/> |
-|Anmeldeumgebung mit dem Branding Ihres Unternehmens  <br/> |Wenn Ihr Unternehmen über ein [Add your company branding to Microsoft 365 Sign In page](../admin/setup/customize-sign-in-page.md)verfügt, bekommt der Gerätebenutzer diese Erfahrung, wenn er sich anmeldet.  <br/> |
-|Automatische MDM-Registrierung mit konfigurierten AAD-Konten  <br/> |Die Benutzeridentität wird von Azure Active Directory verwaltet, und Benutzer melden sich bei Windows und Microsoft 365 mit ihren Microsoft 365 Business Premium-Anmeldeinformationen an.  <br/> |
+|Cortana-, OneDrive- und OEM-Registrierung überspringen  <br/> |Überspringt die Installation von Consumer-Apps wie Cortana und persönlichen OneDrive. Der Gerätebenutzer kann diese später installieren, solange der Benutzer ein lokaler Administrator auf dem Gerät ist. Die ursprüngliche Herstellerregistrierung wird übersprungen, da das Gerät von einem Microsoft 365 Business Premium.  <br/> |
+|Anmeldeumgebung mit dem Branding Ihres Unternehmens  <br/> |Wenn Ihr Unternehmen ein [Firmenbranding](../admin/setup/customize-sign-in-page.md)zu Microsoft 365 Anmeldeseite hinzufügen hat, wird dem Gerätebenutzer diese Erfahrung bei der Anmeldung angezeigt.  <br/> |
+|Automatische MDM-Registrierung mit konfigurierten AAD-Konten  <br/> |Die Benutzeridentität wird von Azure Active Directory verwaltet, und Benutzer melden sich bei Windows und Microsoft 365 mit ihren Microsoft 365 Business Premium Anmeldeinformationen an.  <br/> |
    
  **Optionale Einstellungen:**
   

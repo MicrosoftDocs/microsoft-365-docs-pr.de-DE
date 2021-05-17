@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren von Microsoft Defender Antivirus-Benachrichtigungen
-description: Erfahren Sie, wie Sie standard- und zusätzliche Microsoft Defender Antivirus-Benachrichtigungen auf Endpunkten konfigurieren und anpassen.
+title: Konfigurieren Microsoft Defender Antivirus Benachrichtigungen
+description: Erfahren Sie, wie Sie standard- und Microsoft Defender Antivirus Benachrichtigungen auf Endpunkten konfigurieren und anpassen.
 keywords: Benachrichtigungen, Defender, Antivirus, Endpunkt, Verwaltung, Administrator
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -40,21 +40,21 @@ Sie können auch konfigurieren, wie Standardbenachrichtigungen auf Endpunkten an
 
 ## <a name="configure-the-additional-notifications-that-appear-on-endpoints"></a>Konfigurieren der zusätzlichen Benachrichtigungen, die auf Endpunkten angezeigt werden
 
-Sie können die Anzeige zusätzlicher Benachrichtigungen, z. B. zusammenfassungen zur Erkennung neuer Bedrohungen, in der [Windows Security-App](microsoft-defender-security-center-antivirus.md) und mit Gruppenrichtlinien konfigurieren.
+Sie können die Anzeige zusätzlicher Benachrichtigungen, z. B. Zusammenfassungen zur Erkennung neuer Bedrohungen, in der [Windows-Sicherheit-App](microsoft-defender-security-center-antivirus.md) und mit Gruppenrichtlinien konfigurieren.
 
 > [!NOTE]
-> In Windows 10, Version 1607, hieß das Feature erweiterte Benachrichtigungen und konnte unter **Windows Settings** Update &   >  **security**  >  **Windows Defender.** Unter Gruppenrichtlinieneinstellungen in allen Versionen von Windows 10 wird dies als Erweiterte **Benachrichtigungen bezeichnet.**
+> In Windows 10 Version 1607 hieß das  Feature erweiterte Benachrichtigungen und konnte unter **Windows Einstellungen**  >  **Update & Security** Windows Defender konfiguriert  >  **werden.** Unter Gruppenrichtlinieneinstellungen in allen Versionen von Windows 10 wird dies als Erweiterte **Benachrichtigungen bezeichnet.**
 
 > [!IMPORTANT]
 > Das Deaktivieren zusätzlicher Benachrichtigungen deaktiviert keine kritischen Benachrichtigungen, z. B. Bedrohungserkennungs- und Behebungswarnungen.
 
-**Verwenden Sie die Windows Security-App, um zusätzliche Benachrichtigungen zu deaktivieren:**
+**Verwenden sie Windows-Sicherheit App, um zusätzliche Benachrichtigungen zu deaktivieren:**
 
-1. Öffnen Sie die Windows Security-App, indem Sie auf das Schildsymbol in der Aufgabenleiste klicken oder im Startmenü nach **Defender suchen.**
+1. Öffnen Sie Windows-Sicherheit App, indem Sie auf das Schildsymbol in der Taskleiste klicken oder im Startmenü nach **Defender suchen.**
 
 2. Klicken Sie **auf &** Kachel "Virenschutz" (oder auf das Schildsymbol auf der linken Menüleiste) und dann auf die Bezeichnung **& Bedrohungsschutzeinstellungen:**
 
-    ![Screenshot der Bezeichnung & Virenschutzeinstellungen in der Windows Security App](images/defender/wdav-protection-settings-wdsc.png)
+    ![Screenshot der Bezeichnung für die Einstellungen des Viren- und Bedrohungsschutzes in der Windows-Sicherheit-App](images/defender/wdav-protection-settings-wdsc.png)
 
 3. Scrollen Sie zum Abschnitt **Benachrichtigungen,** und klicken Sie **auf Benachrichtigungseinstellungen ändern.**
 
@@ -68,7 +68,7 @@ Sie können die Anzeige zusätzlicher Benachrichtigungen, z. B. zusammenfassunge
 
 3. Klicken Sie **auf Administrative Vorlagen**.
 
-4. Erweitern Sie die Struktur auf **Windows-Komponenten > Microsoft Defender Antivirus > Reporting**.
+4. Erweitern Sie die **Struktur, um Windows komponenten > Microsoft Defender Antivirus > zu erweitern.**
 
 5. Doppelklicken Sie **auf Erweiterte Benachrichtigungen deaktivieren,** und legen Sie die Option auf **Aktiviert .** Klicken Sie auf **OK**. Dadurch wird verhindert, dass zusätzliche Benachrichtigungen angezeigt werden.
 
@@ -80,12 +80,12 @@ Sie können Gruppenrichtlinien verwenden, um:
 - Ausblenden aller Benachrichtigungen auf Endpunkten
 - Ausblenden von Neustartbenachrichtigungen auf Endpunkten
 
-Das Ausblenden von Benachrichtigungen kann in Situationen hilfreich sein, in denen Sie nicht die gesamte Microsoft Defender Antivirus-Schnittstelle ausblenden können. Weitere Informationen finden Sie unter Prevent users from seeing or [interacting with the Microsoft Defender Antivirus user interface.](prevent-end-user-interaction-microsoft-defender-antivirus.md) 
+Das Ausblenden von Benachrichtigungen kann in Situationen hilfreich sein, in denen Sie nicht die gesamte Microsoft Defender Antivirus können. Weitere Informationen finden Sie unter Prevent users from seeing or [interacting with the Microsoft Defender Antivirus user interface.](prevent-end-user-interaction-microsoft-defender-antivirus.md) 
 
 > [!NOTE]
-> Ausblenden von Benachrichtigungen tritt nur auf Endpunkten auf, für die die Richtlinie bereitgestellt wurde. Benachrichtigungen im Zusammenhang mit Aktionen, die ausgeführt werden müssen (z. B. ein Neustart), werden weiterhin im Microsoft Endpoint Manager Endpoint Protection-Überwachungsdashboard und [berichten angezeigt.](/configmgr/protect/deploy-use/monitor-endpoint-protection) 
+> Ausblenden von Benachrichtigungen tritt nur auf Endpunkten auf, für die die Richtlinie bereitgestellt wurde. Benachrichtigungen im Zusammenhang mit Aktionen, die ausgeführt werden müssen (z. B. ein Neustart), werden weiterhin im Microsoft Endpoint Manager Endpoint Protection [und Berichten angezeigt.](/configmgr/protect/deploy-use/monitor-endpoint-protection) 
 
-Anweisungen [zum Hinzufügen benutzerdefinierter](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) Kontaktinformationen zu den Benachrichtigungen, die Benutzern auf ihren Computern angezeigt werden, finden Sie unter Customize the Windows Security app for your organization.
+Anweisungen zum Hinzufügen benutzerdefinierter Kontaktinformationen zu den Benachrichtigungen, die Benutzern auf ihren Computern angezeigt werden, finden Sie unter Customize [the Windows-Sicherheit app for](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center) your organization.
 
 **Verwenden von Gruppenrichtlinien zum Ausblenden von Benachrichtigungen:**
 
@@ -93,7 +93,7 @@ Anweisungen [zum Hinzufügen benutzerdefinierter](/windows/security/threat-prote
 
 2. Wechseln Sie **im Gruppenrichtlinienverwaltungs-Editor** zu **Computerkonfiguration,** und klicken Sie auf **Administrative Vorlagen**.
 
-3. Erweitern Sie die Struktur auf **Windows-Komponenten > Microsoft Defender Antivirus > Clientschnittstelle**. 
+3. Erweitern Sie die **Struktur, Windows komponenten > Microsoft Defender Antivirus > Clientschnittstelle .** 
 
 4. Doppelklicken Sie **auf Alle Benachrichtigungen unterdrücken,** und legen Sie die Option auf **Aktiviert .** Klicken Sie auf **OK**. Dadurch wird verhindert, dass zusätzliche Benachrichtigungen angezeigt werden.
 
@@ -105,11 +105,11 @@ Anweisungen [zum Hinzufügen benutzerdefinierter](/windows/security/threat-prote
 
 3. Klicken Sie **auf Administrative Vorlagen**.
 
-4. Erweitern Sie die Struktur auf **Windows-Komponenten > Microsoft Defender Antivirus > Clientschnittstelle**.
+4. Erweitern Sie die **Struktur, Windows komponenten > Microsoft Defender Antivirus > Clientschnittstelle .**
 
 5. Doppelklicken Sie **auf Neustartbenachrichtigungen unterdrücken,** und legen Sie die Option auf **Aktiviert .** Klicken Sie auf **OK**. Dadurch wird verhindert, dass zusätzliche Benachrichtigungen angezeigt werden.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Konfigurieren der Endbenutzerinteraktion mit Microsoft Defender Antivirus](configure-end-user-interaction-microsoft-defender-antivirus.md)

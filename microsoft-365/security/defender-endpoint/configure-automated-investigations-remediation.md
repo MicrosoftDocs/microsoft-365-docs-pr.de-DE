@@ -44,19 +44,19 @@ Zum Konfigurieren der automatisierten Untersuchung und Behebung
 ## <a name="turn-on-automated-investigation-and-remediation"></a>Aktivieren der automatisierten Untersuchung und Korrektur
 
 1. Wechseln Sie als globaler Administrator oder Sicherheitsadministrator zum Microsoft Defender Security Center ( ) und [https://securitycenter.windows.com](https://securitycenter.windows.com) melden Sie sich an.
-2. Wählen Sie im Navigationsbereich Einstellungen **aus.**
+2. Wählen Sie im Navigationsbereich **die Option Einstellungen**.
 3. Wählen Sie **im Abschnitt Allgemein** die Option Erweiterte Features **aus.**
 4. Aktivieren Sie sowohl **die automatische Untersuchung als** auch die automatische Behebung von **Warnungen.**
 
 ## <a name="set-up-device-groups"></a>Gerätegruppen einrichten
 
-1. Wählen Sie im Microsoft Defender Security Center ( ) auf der Seite [https://securitycenter.windows.com](https://securitycenter.windows.com) **Einstellungen** unter **Berechtigungen** **Gerätegruppen aus.**
+1. Wählen Sie Microsoft Defender Security Center ( ) auf der seite Einstellungen Unter Berechtigungen die Option [https://securitycenter.windows.com](https://securitycenter.windows.com) **Gerätegruppen aus.**  
 2. Wählen **Sie + Gerätegruppe hinzufügen aus.**
 3. Erstellen Sie mindestens eine Gerätegruppe wie folgt:
    - Geben Sie einen Namen und eine Beschreibung für die Gerätegruppe an.
    - Wählen Sie **in der Liste** Automatisierungsebene eine Ebene aus, z. B. Vollständig – Bedrohungen automatisch **entfernen.** Die Automatisierungsebene bestimmt, ob Korrekturaktionen automatisch oder nur nach Genehmigung ausgeführt werden. Weitere Informationen finden Sie unter [Automatisierungsebenen in automatisierter Untersuchung und Korrektur](automation-levels.md).
    - Verwenden Sie **im Abschnitt** Mitglieder eine oder mehrere Bedingungen zum Identifizieren und Schließen von Geräten.
-   - Wählen Sie **auf der Registerkarte** Benutzerzugriff die Azure Active [Directory-Gruppen](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) aus, die Zugriff auf die zu erstellende Gerätegruppe haben sollen.
+   - Wählen Sie **auf der** Registerkarte Benutzerzugriff die [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups?context=azure/active-directory/users-groups-roles/context/ugr-context) aus, die Zugriff auf die zu erstellende Gerätegruppe haben sollen.
 4. Wählen **Sie Fertig** aus, wenn Sie die Einrichtung Ihrer Gerätegruppe abgeschlossen haben.
 
 ## <a name="next-steps"></a>Nächste Schritte

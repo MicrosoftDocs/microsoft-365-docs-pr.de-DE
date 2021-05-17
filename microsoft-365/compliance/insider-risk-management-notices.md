@@ -1,6 +1,6 @@
 ---
 title: Vorlagen für Benachrichtigungen zum Insider-Risikomanagement
-description: Informationen zu Insider Risk Management-Benachrichtigungsvorlagen in Microsoft 365
+description: Erfahren Sie mehr über Benachrichtigungsvorlagen für insider risk management in Microsoft 365
 keywords: Microsoft 365, Insider-Risikomanagement, Risikomanagement, Compliance
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -21,19 +21,19 @@ ms.locfileid: "47416479"
 ---
 # <a name="insider-risk-management-notice-templates"></a>Vorlagen für Benachrichtigungen zum Insider-Risikomanagement
 
-Insider Risk Management-Benachrichtigungsvorlagen ermöglichen das Senden von e-Mail-Nachrichten an Benutzer, wenn ihre Aktivitäten eine Richtlinienübereinstimmung und-Warnung generieren. In den meisten Fällen sind Benutzeraktionen, die Warnungen generieren, das Ergebnis von Fehlern oder versehentlichen Aktivitäten ohne böswillige Absicht. Benachrichtigungen dienen als einfache Erinnerungen an Benutzer, um vorsichtiger zu sein, um Links zu Informationen für Auffrischungsschulungen oder zu Unternehmensrichtlinien Ressourcen bereitzustellen. Benachrichtigungen können ein wichtiger Bestandteilihres internen Compliance-Schulungsprogramms sein und können bei der Erstellung eines dokumentierten Überwachungspfads für Benutzer mit wiederkehrenden Risiko Aktivitäten behilflich sein.
+Benachrichtigungsvorlagen für insider risk management ermöglichen das Senden von E-Mail-Nachrichten an Benutzer, wenn ihre Aktivitäten eine Richtlinien übereinstimmung und Warnung generieren. In den meisten Fällen sind Benutzeraktionen, die Warnungen generieren, das Ergebnis von Fehlern oder unbeabsichtigten Aktivitäten ohne absichtslose Absicht. Hinweise dienen benutzern als einfache Erinnerung, um vorsichtiger zu sein, Links zu Informationen für Aktualisierungsschulungen oder zu Unternehmensrichtlinienressourcen zur Verfügung zu stellen. Hinweise können ein wichtiger Bestandteil Ihres internen Complianceschulungsprogramms sein und dazu beitragen, einen dokumentierten Überwachungspfad für Benutzer mit wiederkehrenden Risikoaktivitäten zu erstellen.
 
-Erstellen von Benachrichtigungsvorlagen, wenn Sie Benutzern eine e-Mail-Erinnerungs Benachrichtigung für Richtlinien Übereinstimmungen als Teil des Problem Lösungsprozesses senden möchten. Benachrichtigungen können nur an die e-Mail-Adresse des Benutzers gesendet werden, die mit der bestimmten Warnung verknüpft ist, die überprüft wird. Wenn Sie eine Benachrichtigungsvorlage auswählen, die auf eine Richtlinienübereinstimmung angewendet werden soll, können Sie die in der Vorlage definierten Feldwerte akzeptieren oder die Felder bei Bedarf überschreiben.
+Erstellen Sie Benachrichtigungsvorlagen, wenn Sie Benutzern eine E-Mail-Erinnerungsbenachrichtigung für Richtlinien übereinstimmungen als Teil des Problemlösungsprozesses senden möchten. Benachrichtigungen können nur an die E-Mail-Adresse des Benutzers gesendet werden, die der zu überprüfenden bestimmten Warnung zugeordnet ist. Wenn Sie eine Benachrichtigungsvorlage auswählen, die auf eine Richtlinien übereinstimmung angewendet werden soll, können Sie die in der Vorlage definierten Feldwerte akzeptieren oder die Felder bei Bedarf überschreiben.
 
-## <a name="notice-templates-dashboard"></a>Hinweis Vorlagen-Dashboard
+## <a name="notice-templates-dashboard"></a>Dashboard für Benachrichtigungsvorlagen
 
 Im **Benachrichtigungsvorlagen-Dashboard** wird eine Liste der konfigurierten Benachrichtigungsvorlagen angezeigt, und Sie können neue Benachrichtigungsvorlagen erstellen. Die Benachrichtigungsvorlagen werden in umgekehrter Datumsreihenfolge aufgelistet, wobei die aktuellste Benachrichtigungsvorlage zuerst aufgelistet wird.
 
-![Hinweis Vorlagen-Dashboard für Insider Risk Management](../media/insider-risk-notices-dashboard.png)
+![Dashboard für Insider-Risikomanagement-Benachrichtigungen](../media/insider-risk-notices-dashboard.png)
 
-## <a name="html-for-notices"></a>HTML für Benachrichtigungen
+## <a name="html-for-notices"></a>HTML für Hinweise
 
-Wenn Sie mehr als eine einfache textbasierte e-Mail-Nachricht für Benachrichtigungen erstellen möchten, können Sie eine ausführlichere Meldung mithilfe von HTML im Feld Nachrichtentext einer Notizvorlage erstellen. Im folgenden Beispiel wird das Nachrichtentextformat für eine grundlegende HTML-basierte e-Mail-Benachrichtigungsvorlage bereitgestellt:
+Wenn Sie mehr als eine einfache textbasierte E-Mail-Nachricht für Benachrichtigungen erstellen möchten, können Sie eine ausführlichere Nachricht mithilfe von HTML im Nachrichtentextfeld einer Benachrichtigungsvorlage erstellen. Das folgende Beispiel enthält das Nachrichtentextformat für eine einfache HTML-basierte E-Mail-Benachrichtigungsvorlage:
 
 ```HTML
 <!DOCTYPE html>
@@ -49,44 +49,44 @@ Wenn Sie mehr als eine einfache textbasierte e-Mail-Nachricht für Benachrichtig
 ```
 
 > [!NOTE]
-> Die HTML-href-Attribut Implementierung in den Insider Risk Management-Hinweis Vorlagen unterstützen derzeit nur einfache Anführungszeichen anstelle von doppelten Anführungszeichen für URL-Verweise.
+> Die Implementierung des HTML href-Attributs in den Vorlagen für Insider-Risikomanagement unterstützt derzeit nur einzelne Anführungszeichen anstelle doppelter Anführungszeichen für URL-Verweise.
 
 ## <a name="create-a-new-notice-template"></a>Erstellen einer neuen Benachrichtigungsvorlage
 
-Um eine neue Hinweis Vorlage für Insider Risk Management zu erstellen, verwenden Sie den Benachrichtigungs-Assistenten in der Lösung für das **Insider Risikomanagement** im Microsoft 365 Compliance Center.
+Zum Erstellen einer neuen Vorlage für Insider-Risikomanagement-Benachrichtigungen verwenden Sie den Benachrichtigungs-Assistenten in **insider risk management** solution im Microsoft 365 Compliance Center.
 
-Führen Sie die folgenden Schritte aus, um eine neue Hinweis Vorlage für Insider Risikomanagement zu erstellen:
+Führen Sie die folgenden Schritte aus, um eine neue Vorlage für insider risk management zu erstellen:
 
-1. Wechseln Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu **Insider Risk Management** , und wählen Sie die Registerkarte **Notiz Vorlagen** .
-2. Wählen Sie **Notizvorlage erstellen** aus, um den Benachrichtigungs-Assistenten zu öffnen.
-3. Füllen Sie auf der Seite **neue Notizvorlage erstellen** die folgenden Felder aus:
-    - **Vorlagenname**: Geben Sie einen Anzeigenamen für den Hinweis ein. Dieser Name wird in der Liste der Benachrichtigungen im Benachrichtigungs Dashboard und in der Liste mit den Bekanntmachungen angezeigt, wenn Sie Benachrichtigungen von einem Fall senden.
-    - **Senden von**: Geben Sie die Absender-e-Mail-Adresse für den Hinweis ein. Diese Adresse wird im Feld **von:** in allen Benachrichtigungen angezeigt, die an Benutzer gesendet werden, es sei denn, Sie haben eine Benachrichtigung von einem Fall gesendet.
-    - Felder **CC und Bcc** : optionale Benutzer oder Gruppen, die über die Richtlinienübereinstimmung benachrichtigt werden sollen, ausgewählt aus dem Active Directory für Ihr Abonnement.
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Benachrichtigungsvorlagen** aus.
+2. Wählen **Sie Benachrichtigungsvorlage erstellen aus,** um den Benachrichtigungs-Assistenten zu öffnen.
+3. Füllen Sie **auf der Seite Neue Benachrichtigungsvorlage erstellen** die folgenden Felder aus:
+    - **Vorlagenname**: Geben Sie einen Anzeigenamen für den Hinweis ein. Dieser Name wird in der Liste der Benachrichtigungen im Benachrichtigungsdashboard und in der Auswahlliste für Benachrichtigungen angezeigt, wenn Benachrichtigungen aus einem Fall versandt werden.
+    - **Senden von**: Geben Sie die Absender-E-Mail-Adresse für den Hinweis ein. Diese Adresse wird im Feld **Von:** in allen an Benutzer gesendeten Benachrichtigungen angezeigt, sofern sie beim Senden einer Benachrichtigung aus einem Fall nicht geändert wird.
+    - **Cc- und Bcc-Felder:** Optionale Benutzer oder Gruppen, die über die Richtlinienab übereinstimmung benachrichtigt werden sollen, ausgewählt aus Active Directory für Ihr Abonnement.
     - **Betreff**: Informationen, die in der Betreffzeile der Nachricht angezeigt werden, unterstützen Textzeichen.
-    - **Nachrichten**Text: im Nachrichtentext angezeigte Informationen unterstützen Text-oder HTML-Werte.
-4. Wählen Sie **Erstellen** , um die Notizvorlage zu erstellen und zu speichern, oder wählen Sie **Abbrechen** aus, um zu schließen, ohne die Benachrichtigungsvorlage zu speichern.
+    - **Nachrichtentext**: Informationen, die im Nachrichtentext angezeigt werden und Text- oder HTML-Werte unterstützen.
+4. Wählen **Sie Erstellen** aus, um die Benachrichtigungsvorlage zu erstellen und zu speichern, oder wählen Sie **Abbrechen** aus, um zu schließen, ohne die Benachrichtigungsvorlage zu speichern.
 
 ## <a name="update-a-notice-template"></a>Aktualisieren einer Benachrichtigungsvorlage
 
-Führen Sie die folgenden Schritte aus, um eine vorhandene Benachrichtigungsvorlage für Insider Risk Management zu aktualisieren:
+Führen Sie die folgenden Schritte aus, um eine vorhandene Vorlage für Insider-Risikomanagement zu aktualisieren:
 
-1. Wechseln Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu **Insider Risk Management** , und wählen Sie die Registerkarte **Notiz Vorlagen** .
-2. Wählen Sie im Benachrichtigungs Dashboard die Benachrichtigungsvorlage aus, die Sie verwalten möchten.
-3. Wählen Sie auf der Seite Notice Details die Option **Bearbeiten** aus.
-4. Auf der Seite **Bearbeiten** können Sie die folgenden Felder bearbeiten:
-    - **Vorlagenname**: Geben Sie einen neuen Anzeigenamen für den Hinweis ein. Dieser Name wird in der Liste der Benachrichtigungen im Benachrichtigungs Dashboard und in der Liste mit den Bekanntmachungen angezeigt, wenn Sie Benachrichtigungen von einem Fall senden.
-    - **Senden von**: Aktualisieren Sie die Absender-e-Mail-Adresse für den Hinweis. Diese Adresse wird im Feld **von:** in allen Benachrichtigungen angezeigt, die an Benutzer gesendet werden, es sei denn, Sie haben eine Benachrichtigung von einem Fall gesendet.
-    - Felder **CC und Bcc** : Aktualisieren Sie optionale Benutzer oder Gruppen, um über die Richtlinienübereinstimmung benachrichtigt zu werden, und wählen Sie aus dem Active Directory für Ihr Abonnement aus.
-    - **Betreff**: Update Informationen, die in der Betreffzeile der Nachricht angezeigt werden, unterstützen Textzeichen.
-    - **Nachrichtentext**: Aktualisieren von Informationen, die im Nachrichtentext angezeigt werden, unterstützt Text-oder HTML-Werte.
-5. Wählen Sie **Speichern** aus, um den Hinweis zu aktualisieren und zu speichern, oder wählen Sie **Abbrechen** aus, um ohne Speichern der Benachrichtigungsvorlage zu schließen.
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Benachrichtigungsvorlagen** aus.
+2. Wählen Sie im Benachrichtigungsdashboard die Benachrichtigungsvorlage aus, die Sie verwalten möchten.
+3. Wählen Sie auf der Seite Benachrichtigungsdetails die Option **Bearbeiten aus.**
+4. Auf der **Seite** Bearbeiten können Sie die folgenden Felder bearbeiten:
+    - **Vorlagenname**: Geben Sie einen neuen Anzeigenamen für den Hinweis ein. Dieser Name wird in der Liste der Benachrichtigungen im Benachrichtigungsdashboard und in der Auswahlliste für Benachrichtigungen angezeigt, wenn Benachrichtigungen aus einem Fall versandt werden.
+    - **Senden von**: Aktualisieren Sie die Absender-E-Mail-Adresse für den Hinweis. Diese Adresse wird im Feld **Von:** in allen an Benutzer gesendeten Benachrichtigungen angezeigt, sofern sie beim Senden einer Benachrichtigung aus einem Fall nicht geändert wird.
+    - **Cc- und Bcc-Felder:** Aktualisieren Sie optionale Benutzer oder Gruppen, um über die Richtlinienab übereinstimmung benachrichtigt zu werden, die aus Active Directory für Ihr Abonnement ausgewählt wurde.
+    - **Betreff**: Informationen aktualisieren, die in der Betreffzeile der Nachricht angezeigt werden, unterstützt Textzeichen.
+    - **Nachrichtentext:** Aktualisieren Sie Informationen, die im Nachrichtentext angezeigt werden, unterstützt Text- oder HTML-Werte.
+5. Wählen **Sie Speichern** aus, um den Hinweis zu aktualisieren und zu speichern, oder wählen Sie **Abbrechen** aus, um zu schließen, ohne die Benachrichtigungsvorlage zu speichern.
 
 ## <a name="delete-a-notice-template"></a>Löschen einer Benachrichtigungsvorlage
 
-Führen Sie die folgenden Schritte aus, um eine vorhandene Benachrichtigungsvorlage für Insider Risk Management zu löschen:
+Führen Sie die folgenden Schritte aus, um eine vorhandene Vorlage für Insider-Risikomanagement zu löschen:
 
-1. Wechseln Sie im [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu **Insider Risk Management** , und wählen Sie die Registerkarte **Notiz Vorlagen** .
-2. Wählen Sie im Benachrichtigungs Dashboard die Notizvorlage aus, die Sie löschen möchten.
-3. Klicken Sie auf der Symbolleiste auf das Symbol **Löschen** .
-4. Um die Notizvorlage zu löschen, wählen Sie **Ja** im Lösch Dialogfeld aus. Um den Löschvorgang abzubrechen, wählen Sie **Abbrechen**aus.
+1. Wechseln Sie [Microsoft 365 Compliance Center](https://compliance.microsoft.com)zu Insider Risk **Management,** und wählen Sie die Registerkarte **Benachrichtigungsvorlagen** aus.
+2. Wählen Sie im Benachrichtigungsdashboard die Benachrichtigungsvorlage aus, die Sie löschen möchten.
+3. Wählen Sie **auf der** Symbolleiste das Symbol Löschen aus.
+4. Wenn Sie die Benachrichtigungsvorlage löschen möchten, wählen **Sie im** Dialogfeld Löschen die Option Ja aus. Wenn Sie den Löschvorgang abbrechen möchten, wählen Sie **Abbrechen aus.**

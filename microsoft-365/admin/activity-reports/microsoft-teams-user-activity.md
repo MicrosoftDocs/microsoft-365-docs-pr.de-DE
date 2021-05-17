@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365-Berichte im Admin Center – Microsoft Teams-Benutzeraktivität
+title: Microsoft 365 Berichte im Admin Center – Microsoft Teams Benutzeraktivität
 ms.author: kwekua
 author: kwekua
 manager: scotv
@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 07f67fc4-c0a4-4d3f-ad20-f40c7f6db524
-description: Erfahren Sie, wie Sie den Microsoft Teams-Benutzeraktivitätsbericht erhalten und Einblicke in die Microsoft Teams-Aktivitäten in Ihrer Organisation erhalten.
+description: Erfahren Sie, wie Sie Microsoft Teams Benutzeraktivitätsbericht erhalten und Einblicke in Teams Aktivitäten in Ihrer Organisation erhalten.
 ms.openlocfilehash: 1f45cd380813a843ad54e6552578941a9741138e
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -26,23 +26,23 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51579602"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365-Berichte im Admin Center – Microsoft Teams-Benutzeraktivität
+# <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Microsoft 365 Berichte im Admin Center – Microsoft Teams Benutzeraktivität
 
-Das Microsoft 365 **Reports-Dashboard** zeigt Ihnen die Übersicht über die Aktivitäten in den Produkten in Ihrer Organisation. Sie können Drilldowns zu Einzelberichten auf Produktebene ausführen und auf diese Weise genauere Einblicke in die Aktivitäten innerhalb der einzelnen Produkte erhalten. Sehen Sie sich die [Übersicht über Berichte](activity-reports.md) an. Der Bericht "Microsoft Teams-Benutzeraktivität" bietet Ihnen Einblicke in die Microsoft Teams-Aktivitäten in Ihrer Organisation.
+Das Microsoft 365 **-Dashboard** zeigt Ihnen die Übersicht über die Aktivitäten in den Produkten in Ihrer Organisation. Sie können Drilldowns zu Einzelberichten auf Produktebene ausführen und auf diese Weise genauere Einblicke in die Aktivitäten innerhalb der einzelnen Produkte erhalten. Sehen Sie sich die [Übersicht über Berichte](activity-reports.md) an. Der Bericht "Microsoft Teams-Benutzeraktivität" bietet Ihnen Einblicke in die Microsoft Teams-Aktivitäten in Ihrer Organisation.
   
 > [!NOTE]
-> Sie müssen ein globaler Administrator, globaler Leser oder Berichtleser in Microsoft 365 oder ein Exchange-, SharePoint-, Teams-Dienst-, Teams Communications- oder Skype for Business-Administrator sein, um Berichte anzeigen zu können.  
+> Sie müssen ein globaler Administrator, globaler Leser oder Berichtleser in Microsoft 365 oder ein Exchange-, SharePoint-, Teams-Dienst-, Teams-Kommunikations- oder Skype for Business-Administrator sein, um Berichte anzeigen zu können.  
  
 ## <a name="how-to-get-to-the-microsoft-teams-user-activity-report"></a>Abrufen des Berichts "Microsoft Teams-Benutzeraktivität"
 
 1. Wechseln Sie im Admin Center zur Seite **Berichte** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Verwendung</a>.
 
     
-2. Wählen Sie **in der Dropdownliste** Bericht auswählen die Option **Microsoft Teams** \> **Benutzeraktivität aus.**
+2. Wählen Sie **in der Dropdownliste** Bericht auswählen die **Option Microsoft Teams** \> **Benutzeraktivität aus.**
   
 ## <a name="interpret-the-microsoft-teams-user-activity-report"></a>Interpretieren des Berichts "Microsoft Teams-Benutzeraktivität"
 
-Die Microsoft Teams-Benutzeraktivität wird in den Diagrammen **Aktivität** und **Benutzer** grafisch dargestellt.<br/>![Microsoft 365-Berichte – Microsoft Teams-Benutzeraktivität.](../../media/40359f81-25f7-416d-bb1e-37289133ef6b.png)
+Die Microsoft Teams-Benutzeraktivität wird in den Diagrammen **Aktivität** und **Benutzer** grafisch dargestellt.<br/>![Microsoft 365 Berichte – Microsoft Teams Benutzeraktivität.](../../media/40359f81-25f7-416d-bb1e-37289133ef6b.png)
   
 |Element|Beschreibung|
 |:-----|:-----|
@@ -52,7 +52,7 @@ Die Microsoft Teams-Benutzeraktivität wird in den Diagrammen **Aktivität** und
 |4.  <br/> |In der Ansicht **Aktivität** wird die Anzahl der Microsoft Teams-Aktivitäten nach Aktivitätstyp angezeigt. Die Aktivitätstypen sind Anzahl von Teamchatnachrichten, privaten Chatnachrichten, Anrufen oder Besprechungen.  <br/> |
 |5.  <br/> |In der Ansicht **Benutzer** wird die Anzahl der Benutzer nach Aktivitätstyp angezeigt. Die Aktivitätstypen sind Anzahl von Teamchatnachrichten, privaten Chatnachrichten, Anrufen oder Besprechungen.  <br/> |
 |6.  <br/> | Im **Diagramm Aktivität** ist die Y-Achse die Anzahl der angegebenen Aktivität.  <br/>  Im **Diagramm Dateien** ist die Y-Achse die Anzahl der Benutzer, die an Teamschats, privaten Chats, Anrufen oder Besprechungen teilnehmen.  <br/>  Die X-Achse in den Diagrammen ist der ausgewählte Datumsbereich für den jeweiligen Bericht.  <br/> |
-|7.  <br/> |Sie können die im Diagramm angezeigte Datenreihe filtern, indem Sie in der Legende ein Element auswählen. Wählen Sie im  Diagramm Aktivität beispielsweise Kanalnachrichten,  **Chatnachrichten,** Anrufe oder Besprechungen aus, um nur die jeweils zugehörigen Informationen zu sehen.  Durch das Ändern dieser Auswahl werden die Informationen in der Gitternetztabelle nicht geändert.  <br/> ![Filtern der Microsoft Teams-Aktivitätsdiagramme](../../media/c819c4ea-6e9a-4411-a0dd-9f800d64ce38.png)|
+|7.  <br/> |Sie können die im Diagramm angezeigte Datenreihe filtern, indem Sie in der Legende ein Element auswählen. Wählen Sie im  Diagramm Aktivität beispielsweise Kanalnachrichten,  **Chatnachrichten,** Anrufe oder Besprechungen aus, um nur die jeweils zugehörigen Informationen zu sehen.  Durch das Ändern dieser Auswahl werden die Informationen in der Gitternetztabelle nicht geändert.  <br/> ![Filtern der Microsoft Teams Aktivitätsdiagramme](../../media/c819c4ea-6e9a-4411-a0dd-9f800d64ce38.png)|
 |8.  <br/> | Die Liste der angezeigten Gruppen wird von der Anzahl aller Gruppen bestimmt, die über den längsten Berichtszeitraum (180 Tage) vorhanden waren (nicht gelöscht wurden). Die Anzahl der Aktivitäten variiert entsprechend der Datumsauswahl.  <br/> HINWEIS: Möglicherweise werden nicht alle Elemente in der nachstehenden Liste in den Spalten angezeigt, solange Sie diese nicht hinzugefügt haben.<br/>**Benutzername** ist die E-Mail-Adresse des Benutzers. Sie können die eigentliche E-Mail-Adresse anzeigen oder dieses Feld anonymisieren.  <br/> **Datum der letzten Aktivität (UTC)** bezieht sich auf das letzte Datum, an dem der Benutzer an einer Microsoft Teams-Aktivität teilgenommen hat.  <br/> **Kanalnachrichten** ist die Anzahl der eindeutigen Nachrichten, die der Benutzer in einem Teamchat während des angegebenen Zeitraums gepostet hat.  <br/> **Chatnachrichten** ist die Anzahl der eindeutigen Nachrichten, die der Benutzer in einem privaten Chat während des angegebenen Zeitraums gepostet hat.  <br/> **Anrufe** ist die Anzahl der Anrufe, an denen der Benutzer während des angegebenen Zeitraums teilgenommen hat.  <br/> **Besprechungen** ist die Anzahl der Onlinebesprechungen, an denen der Benutzer während des angegebenen Zeitraums teilgenommen hat.  <br/> **Andere Aktivität** ist die Anzahl anderer Teamaktivitäten des Benutzers.  <br/> **Gelöscht** gibt an, ob das Team gelöscht wurde. Wenn das Team gelöscht wurde, im Berichtszeitraum jedoch Aktivitäten ausgeführt wurden, wird es im Raster angezeigt, und die Gelöscht-Kennzeichnung ist auf TRUE festgelegt.  <br/> **Gelöscht am** ist das Datum, an dem das Team gelöscht wurde.  <br/> **Zugewiesenes Produkt** bezeichnet die Liste der Produkte, die dem Benutzer zugewiesen sind.  <br/>  Wenn die Richtlinien Ihrer Organisation verhindern, dass Berichte angezeigt werden, in denen Benutzerinformationen identifizierbar sind, können Sie die Datenschutzeinstellung für alle diese Berichte ändern. Lesen Sie den Abschnitt zum **Ausblenden von Details auf Benutzerebene** in den [Aktivitätsberichten im Microsoft 365 Admin Center](activity-reports.md).  <br/> |
 |9.  <br/> |Wählen Sie **Spalten** aus, um Spalten zum Bericht hinzuzufügen oder daraus zu entfernen.  <br/> ![Teams user activity report - choose columns](../../media/eb5fbcee-e371-4d36-a0c6-fa54732311ec.png)|
 |10.  <br/> |Sie können die Berichtsdaten auch im CSV-Format in eine Excel-Datei exportieren, indem Sie den Link **Exportieren** auswählen. Dadurch werden Daten aller Benutzer exportiert, und Sie können einfache Sortier- und Filtervorgänge zur weiteren Analyse ausführen. Bei weniger als 2.000 Benutzern können Sie innerhalb der Tabelle im Bericht selbst sortieren und filtern. Bei mehr als 2.000 Benutzern müssen Sie die Daten zum Filtern und Sortieren exportieren.  <br/> |

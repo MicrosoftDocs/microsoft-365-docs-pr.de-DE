@@ -32,7 +32,7 @@ ms.locfileid: "51578711"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWtn3I?autoplay=false]
 
-Microsoft Defender für Office 365 , früher als Microsoft 365 ATP oder Advanced Threat Protection bezeichnet, schützt Ihr Unternehmen vor Dateien, die schädliche Inhalte in Outlook, OneDrive, SharePoint und Teams enthalten.
+Microsoft Defender für Office 365 , früher als Microsoft 365 ATP oder Advanced Threat Protection bezeichnet, schützt Ihr Unternehmen vor Dateien, die schädliche Inhalte in Outlook, OneDrive, SharePoint und Teams.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
@@ -47,6 +47,6 @@ Microsoft Defender für Office 365 , früher als Microsoft 365 ATP oder Advanced
 
 Die Regel für sichere ATP-Anlagen wurde aktualisiert.
 
-Da der Schutz nun besteht, können Sie keine schädliche Datei aus Outlook, OneDrive, SharePoint oder Teams öffnen. Betroffene Dateien haben rote Schutzschilder neben ihnen. Wenn jemand versucht, eine blockierte Datei zu öffnen, wird eine Warnmeldung angezeigt.
+Da der Schutz nun besteht, können Sie keine schädliche Datei aus Outlook, OneDrive, SharePoint oder Teams. Betroffene Dateien haben rote Schutzschilder neben ihnen. Wenn jemand versucht, eine blockierte Datei zu öffnen, wird eine Warnmeldung angezeigt.
 
 Nachdem Ihre Richtlinie eine Weile in Der Organisation war, besuchen Sie die Seite Berichte, um zu sehen, was gescannt wurde.

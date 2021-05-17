@@ -18,29 +18,29 @@ ms.locfileid: "47289447"
 ---
 # <a name="get-your-users-ready-to-use-devices"></a>Vorbereiten Ihrer Benutzer für die Verwendung von Geräten
 
-Sobald ein von Microsoft verwaltetes Desktop Gerät in den Händen Ihres Benutzers liegt, ist es schnell und einfach, damit begonnen zu haben. Geräte sind mit der aktuellen Version von Windows vorkonfiguriert, und Konfigurationen und apps werden in der Cloud installiert, wenn der Benutzer das Setup abgeschlossen hat. 
+Sobald ein Microsoft Managed Desktop-Gerät in den Händen Ihres Benutzers ist, sind die ersten Schritte mit diesem Gerät schnell und einfach. Geräte sind mit der aktuellen Version von Windows vorkonfiguriert, und Konfigurationen und Apps werden aus der Cloud installiert, sobald der Benutzer die Einrichtung abgeschlossen hat. 
  
-Um dies noch einfacher zu machen, bieten wir eine Anleitung, die Ihre Benutzer durch das erst Setup führt und bei Bedarf Hilferessourcen sowohl für das Setup als auch für die spätere Verwendung bereitstellt. Sie können dieses Handbuch so anpassen, dass bestimmte Details für Ihre Organisation berücksichtigt werden. Anschließend verteilen Sie das Handbuch zusammen mit dem Gerät direkt an die Benutzer. Es gibt zwei Versionen, eine für Organisationen, die das Support System von Microsoft verwenden (die Get-Hilfe-APP), eine für diejenigen, die Alternative Unterstützung für Ihre Benutzer bereitstellen.
+Um dies noch einfacher zu machen, bieten wir einen Leitfaden an, der Ihre Benutzer durch die anfängliche Einrichtung führt und Hilferessourcen sowohl für das Setup als auch für die spätere Verwendung zur Verfügung stellt, falls erforderlich. Sie können dieses Handbuch so anpassen, dass bestimmte Für Ihre Organisation spezifische Details enthalten sind. Anschließend verteilen Sie das Handbuch direkt an Ihre Benutzer zusammen mit ihrem Gerät. Es gibt zwei Versionen, eine für Organisationen, die das Supportsystem von Microsoft verwenden (die App "Hilfe holen"), eine für Organisationen, die alternative Unterstützung für ihre Benutzer bereitstellen.
 
 ## <a name="to-prepare-the-guide"></a>So bereiten Sie das Handbuch vor
 
 1. Laden Sie die für Ihre Organisation geeignete Version herunter:
-- [Microsoft Managed Desktop – erste Schritte mit Ihrem Gerät (Hilfe Version abrufen)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) – verwenden Sie diese Version, wenn Ihre Benutzer das Support System von Microsoft verwenden sollen.
-- [Microsoft Managed Desktop – erste Schritte mit Ihrem Gerät](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf) – verwenden Sie diese Version, wenn Ihre Benutzer das Microsoft-Unterstützungssystem *nicht* verwenden werden.
-2. Verwenden Sie eine beliebige APP, die PDF-Dateien öffnen kann, um für Ihre Organisation relevante Details auszufüllen:
-    - Der Name des Netzwerks, mit dem die Benutzer eine Verbindung herstellen sollen, um das Setup fortzusetzen (Schritt 3 im Handbuch)
-    - Den Namen des Azure-Mandanten Kontos Ihrer Organisation (Schritt 4 im Leitfaden)
-    - Kontaktinformationen für den internen IT-Support Ihrer Organisation (Oberseite der zweiten Seite)
-3. Speichern Sie die bearbeitete PDF-Datei, und verteilen Sie Sie dann an Ihre Benutzer. 
+- Microsoft Managed Desktop – Erste Schritte mit Ihrem Gerät [(Hilfeversion erhalten)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-custom-v3.pdf) – Verwenden Sie diese Version, wenn Ihre Benutzer das Microsoft-Supportsystem verwenden.
+- [Microsoft Managed Desktop – Erste Schritte mit Ihrem](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-custom-v2.pdf) Gerät  – Verwenden Sie diese Version, wenn Ihre Benutzer das Supportsystem von Microsoft nicht verwenden.
+2. Verwenden Sie jede App, die PDF-Dateien öffnen kann, um details zu füllen, die für Ihre Organisation relevant sind:
+    - Der Name des Netzwerks, mit dem Ihre Benutzer eine Verbindung herstellen sollten, um das Setup fortsetzen zu können (Schritt 3 in der Anleitung)
+    - Der Name des Azure-Mandantenkontos Ihrer Organisation (Schritt 4 im Handbuch)
+    - Kontaktinformationen für den internen IT-Support Ihrer Organisation (oben auf der zweiten Seite)
+3. Speichern Sie die bearbeitete PDF, und verteilen Sie sie dann an Ihre Benutzer. 
 
 ## <a name="ready-to-use-guide"></a>"Ready-to-use Guide"
 
-Außerdem stellen wir eine allgemeinere Version des Handbuchs für die Organisationen bereit, die diese nicht anpassen müssen. Es gibt zwei Versionen, eine für Organisationen, die das Support System von Microsoft verwenden (die Get-Hilfe-APP), eine für diejenigen, die Alternative Unterstützung für Ihre Benutzer bereitstellen. 
+Außerdem stellen wir eine allgemeinere Version des Handbuchs für organisationen zur Verfügung, die sie nicht anpassen müssen. Es gibt zwei Versionen, eine für Organisationen, die das Supportsystem von Microsoft verwenden (die App "Hilfe holen"), eine für Organisationen, die alternative Unterstützung für ihre Benutzer bereitstellen. 
 
-- [Microsoft Managed Desktop – erste Schritte mit Ihrem Gerät (Hilfe Version-Soforteinsatz fähig)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf) – verwenden Sie diese Version, wenn Ihre Benutzer das Support System von Microsoft verwenden werden.
-- [Microsoft Managed Desktop – erste Schritte mit Ihrem Gerät (einsatzfähig)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) – verwenden Sie diese Version, wenn Ihre Benutzer das Microsoft-Support System *nicht* verwenden.
+- Microsoft Managed Desktop – Erste Schritte mit Ihrem Gerät [(Hilfeversion](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-help-v3.pdf) erhalten – einsatzbereit) – verwenden Sie diese Version, wenn Ihre Benutzer das Microsoft-Supportsystem verwenden.
+- Microsoft Managed Desktop – Erste Schritte mit Ihrem Gerät [(einsatzbereit)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-started/downloads/microsoft-managed-desktop-user-guide-no-help-v2.pdf) – Verwenden Sie diese Version, wenn Ihre Benutzer das Microsoft-Supportsystem nicht verwenden. 
 
-Jetzt können Sie mit der Bereitstellung von apps fortfahren:
+An diesem Punkt können Sie mit der Bereitstellung von Apps voran gehen:
 
 
 ## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Schritte zum Einstieg in Microsoft Managed Desktop
@@ -51,5 +51,5 @@ Jetzt können Sie mit der Bereitstellung von apps fortfahren:
 4. [Intune-Unternehmensportal bereitstellen](company-portal.md)
 5. [Aktivieren von Enterprise State Roaming](enterprise-state-roaming.md)
 6. [Einrichten von Geräten](set-up-devices.md)
-7. Vorbereiten der Benutzer für die Verwendung von Geräten (in diesem Thema)
+7. Bereiten Sie Ihre Benutzer auf die Verwendung von Geräten vor (in diesem Thema)
 8. [Bereitstellen von Apps](deploy-apps.md)

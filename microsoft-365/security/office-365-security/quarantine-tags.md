@@ -59,7 +59,7 @@ Die verfügbaren individuellen Berechtigungen und was in den vordefinierten Bere
 
 Wenn Ihnen die Standardberechtigungen in den vordefinierten Berechtigungsgruppen nicht gefällt, können Sie benutzerdefinierte Berechtigungen verwenden, wenn Sie benutzerdefinierte Quarantänetags erstellen oder ändern. Weitere Informationen zu den einzelnen Berechtigungen finden Sie im Abschnitt [Quarantänetagberechtigungsdetails](#quarantine-tag-permission-details) weiter unten in diesem Artikel.
 
-Sie erstellen und weisen Quarantänetags im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Exchange Online-Postfächern; eigenständige EOP PowerShell in & ohne Exchange Online-Postfächer) zu.
+Sie erstellen und weisen Quarantänetags im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Exchange Online-Postfächern; eigenständige EOP PowerShell in & ohne Exchange Online Postfächer) zu.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -111,7 +111,7 @@ Jetzt können Sie das Quarantänetag einem Quarantänefeature zuweisen, wie im [
 
 ### <a name="create-quarantine-tags-in-powershell"></a>Erstellen von Quarantänetags in PowerShell
 
-Wenn Sie PowerShell lieber zum Erstellen von Quarantänetags verwenden möchten, stellen Sie eine Verbindung mit Exchange Online PowerShell oder Exchange Online Protection PowerShell ein, und verwenden Sie das **Cmdlet New-QuarantineTag.** Sie haben zwei verschiedene Methoden zur Auswahl:
+Wenn Sie lieber PowerShell zum Erstellen von Quarantänetags verwenden möchten, stellen Sie eine Verbindung mit Exchange Online PowerShell oder Exchange Online Protection PowerShell ein, und verwenden Sie das **Cmdlet New-QuarantineTag.** Sie haben zwei verschiedene Methoden zur Auswahl:
 
 - Verwenden Sie _den Parameter EndUserQuarantinePermissionsValue._
 - Verwenden Sie _den Parameter EndUserQuarantinePermissions._
@@ -168,13 +168,13 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-Quara
 
 Gehen Sie wie folgt vor, um ein Quarantänetag mit dem _Parameter EndUserQuarantinePermissionsValue_ zu erstellen:
 
-A. Speichern Sie ein Quarantäneberechtigungsobjekt in einer Variablen mithilfe des **Cmdlets New-QuarantinePermissions.**
+A. Store ein Quarantäneberechtigungsobjekt in einer Variablen mithilfe des **Cmdlets New-QuarantinePermissions.**
 
 <p>
 
 B. Verwenden Sie die Variable als _EndUserQuarantinePermissions-Wert_ im **Befehl New-QuarantineTag.**
 
-##### <a name="step-a-store-a-quarantine-permissions-object-in-a-variable"></a>Schritt A: Speichern eines Quarantäneberechtigungsobjekts in einer Variablen
+##### <a name="step-a-store-a-quarantine-permissions-object-in-a-variable"></a>Schritt A: Store eines Quarantäneberechtigungsobjekts in einer Variablen
 
 Verwenden Sie die folgende Syntax:
 
@@ -245,7 +245,7 @@ In _unterstützten_ Schutzfunktionen, die Nachrichten oder Dateien unter Quarant
 |[Nachrichtenflussregeln](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (auch als Transportregeln bekannt) mit der Aktion: Senden der Nachricht an die **gehostete Quarantäne** (_Quarantäne_).|Nein|n/v|
 |
 
-<sup>\*</sup> Identitätswechselschutzeinstellungen sind nur in Antiphishingrichtlinien in Microsoft Defender für Office 365 verfügbar.
+<sup>\*</sup>Identitätswechselschutzeinstellungen sind nur in Antiphishingrichtlinien in Microsoft Defender für Office 365.
 
 Wenn Sie mit den Endbenutzerberechtigungen zufrieden sind, die von den Standardquarantänetags bereitgestellt werden, müssen Sie nichts tun. Wenn Sie die Endbenutzerfunktionen (verfügbare Schaltflächen) in Spambenachrichtigungen für Endbenutzer oder in Quarantänenachrichtendetails anpassen möchten, können Sie ein benutzerdefiniertes Quarantänetag zuweisen.
 
@@ -269,7 +269,7 @@ Vollständige Anweisungen zum Erstellen und Ändern von Antispamrichtlinien find
 
 #### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>Zuweisen von Quarantänetags in Antispamrichtlinien in PowerShell
 
-Wenn Sie Lieber PowerShell verwenden möchten, um Quarantänetags in Antispamrichtlinien zuzuordnen, stellen Sie eine Verbindung mit Exchange Online PowerShell oder Exchange Online Protection PowerShell auf, und verwenden Sie die folgende Syntax:
+Wenn Sie Lieber PowerShell verwenden möchten, um Quarantänetags in Antispamrichtlinien zuzuordnen, stellen Sie eine Verbindung mit Exchange Online PowerShell oder Exchange Online Protection PowerShell ein, und verwenden Sie die folgende Syntax:
 
 ```powershell
 <New-HostedContentFilterPolicy -Name "<Unique name>" | Set-HostedContentFilterPolicy -Identity "<Policy name>">  [-SpamAction Quarantine] [-SpamQuarantineTag <QuarantineTagName>] [-HighConfidenceSpamAction Quarantine] [-HighConfidenceSpamQuarantineTag <QuarantineTagName>] [-PhishSpamAction Quarantine] [-PhishQuarantineTag <QuarantineTagName>] [-HighConfidencePhishQuarantineTag <QuarantineTagName>] [-BulkSpamAction Quarantine] [-BulkQuarantineTag <QuarantineTagName>] ...
@@ -320,7 +320,7 @@ Mit den globalen Einstellungen für Quarantänetags können Sie die Spambenachri
 
 3. Konfigurieren Sie **im geöffneten** Flyout Quarantänebenachrichtigungseinstellungen einige oder alle der folgenden Einstellungen:
 
-   - **Verwenden Sie mein Firmenlogo:** Wählen Sie diese Option aus, um das standardmäßige Microsoft-Logo zu ersetzen, das am Anfang von Spambenachrichtigungen für Endbenutzer verwendet wird. Bevor Sie dies tun, müssen Sie die Anweisungen unter Anpassen des [Microsoft 365-Designs](../../admin/setup/customize-your-organization-theme.md) für Ihre Organisation befolgen, um Ihr benutzerdefiniertes Logo hochzuladen.
+   - **Verwenden Sie mein Firmenlogo:** Wählen Sie diese Option aus, um das standardmäßige Microsoft-Logo zu ersetzen, das am Anfang von Spambenachrichtigungen für Endbenutzer verwendet wird. Bevor Sie dies tun, müssen Sie die Anweisungen unter [Customize the Microsoft 365 theme for your organization](../../admin/setup/customize-your-organization-theme.md) to upload your custom logo folgen.
 
      Der folgende Screenshot zeigt ein benutzerdefiniertes Logo in einer Spambenachrichtigung für Endbenutzer:
 
@@ -485,7 +485,7 @@ Die **Berechtigung Absender zulassen** (_PermissionToAllowSender_) steuert den Z
 
 - **Spambenachrichtigungen für Endbenutzer:** Keine Auswirkung.
 
-Weitere Informationen zur Liste sicherer Absender finden Sie unter [Prevent trusted senders from being blocked](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) and Use Exchange Online [PowerShell to configure the safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
+Weitere Informationen zur Liste sicherer Absender finden Sie unter Prevent [trusted senders from being blocked](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379666) and Use Exchange Online [PowerShell to configure the safelist collection on a mailbox](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox).
 
 #### <a name="block-sender-permission"></a>Absenderberechtigung blockieren
 
@@ -499,7 +499,7 @@ Die **Berechtigung Absender blockieren** (_PermissionToBlockSender_) steuert den
   - **Absenderberechtigung blockieren** deaktiviert: Die Schaltfläche **Absender blockieren** ist nicht verfügbar.
   - **Absenderberechtigung** blockieren aktiviert: Die Schaltfläche **Absender blockieren** ist verfügbar.
 
-Weitere Informationen zur Liste blockierter Absender finden Sie unter [Blockieren](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) von Nachrichten von einer Person und Konfigurieren der Sammlung sicherer Listen in einem Postfach mithilfe von [Exchange Online PowerShell.](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)
+Weitere Informationen zur Liste blockierter Absender finden Sie unter [Blockieren](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) von Nachrichten von einer Person und Verwenden von [Exchange Online PowerShell](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)zum Konfigurieren der Sammlung sicherer Listen in einem Postfach.
 
 #### <a name="delete-permission"></a>Löschen
 

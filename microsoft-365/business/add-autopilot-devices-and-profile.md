@@ -24,7 +24,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
-description: Erfahren Sie, wie Sie Windows AutoPilot zum Einrichten neuer Windows 10-Geräte für Ihr Unternehmen verwenden, damit sie für die Verwendung durch Mitarbeiter bereit sind.
+description: Erfahren Sie, wie Sie Windows AutoPilot verwenden, um neue Windows 10 für Ihr Unternehmen zu einrichten, damit sie für die Verwendung durch Mitarbeiter bereit sind.
 ms.openlocfilehash: cd8777e6ae2e395506d2bf308c99309de1e24805
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -34,7 +34,7 @@ ms.locfileid: "51578525"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Verwenden der schrittweisen Anleitung zum Hinzufügen von AutoPilot-Geräten und -Profilen
 
-Sie können Windows AutoPilot verwenden, um neue **Windows** 10-Geräte für Ihr Unternehmen zu einrichten, damit sie einsatzbereit sind, wenn Sie sie Ihren Mitarbeitern zur Verfügung stellen.
+Sie können Windows AutoPilot verwenden, um neue **Windows 10** für Ihr Unternehmen zu einrichten, damit sie einsatzbereit sind, wenn Sie sie Ihren Mitarbeitern zur Verfügung stellen.
   
 ## <a name="device-requirements"></a>Geräteanforderungen
 
@@ -42,7 +42,7 @@ Geräte müssen die folgenden Anforderungen erfüllen:
   
 - Windows 10, Version 1703 oder höher
     
-- Neue Geräte, die windows-out-of-box noch nicht erlebt haben
+- Neue Geräte, die noch nicht über eine Windows-out-of-Box-Erfahrung verfügen
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>Befolgen der Setupanleitung zum Erstellen von Geräten und Profilen
 
@@ -60,7 +60,7 @@ Wenn Sie noch keine Gerätegruppen oder Profile erstellt haben, können Sie am b
     
     ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. Navigieren Sie auf der Seite **CSV-Datei mit** Liste der Geräte hochladen zu einem Speicherort, an dem Sie die vorbereitet haben. CSV-Datei, dann **Öffnen Sie** \> **Weiter**. Die Datei muss drei Kopfzeilen enthalten:
+3. Navigieren Sie **auf Hochladen .csv Seite "Datei** mit Liste der Geräte" zu einem Speicherort, an dem Sie die vorbereitete .CSV haben, und öffnen Sie **dann** \> **Weiter**. Die Datei muss drei Kopfzeilen enthalten:
     
     - Spalte A: Seriennummer des Geräts
     
@@ -73,7 +73,7 @@ Wenn Sie noch keine Gerätegruppen oder Profile erstellt haben, können Sie am b
     Weitere Informationen finden Sie unter [CSV-Datei mit Geräteliste](../admin/misc/device-list.md). Sie können auf der Seite **CSV-Datei mit Liste der Geräte hochladen** auch eine Beispieldatei herunterladen. 
     
 > [!NOTE]
-> Dieses Skript verwendet WMI, um Eigenschaften abzurufen, die für einen Kunden zum Registrieren eines Geräts bei Windows Autopilot erforderlich sind. Beachten Sie, dass es normal ist, dass die resultierende #A0 keinen #A1 (Windows Product ID) sammelt, da dies nicht erforderlich ist, um ein Gerät zu registrieren, und PKID, die NULL in der Ausgabe-CSV ist, ist vollkommen in Ordnung. Nur die Seriennummer und der Hardwarehash werden aufgefüllt.
+> Dieses Skript verwendet WMI, um Eigenschaften abzurufen, die ein Kunde zum Registrieren eines Geräts bei Windows Autopilot benötigt. Beachten Sie, dass es normal ist, dass die resultierende #A0 keinen Windows Product ID (PKID)-Wert sammelt, da dies nicht erforderlich ist, um ein Gerät zu registrieren, und PKID, die null in der Ausgabe-CSV ist, ist vollkommen in Ordnung. Nur die Seriennummer und der Hardwarehash werden aufgefüllt.
     
 4. Auf der **Seite Profil zuweisen** können Sie entweder ein vorhandenes Profil auswählen oder ein neues erstellen. Wenn Sie noch keines haben, werden Sie aufgefordert, eine zu erstellen. 
     
@@ -81,11 +81,11 @@ Wenn Sie noch keine Gerätegruppen oder Profile erstellt haben, können Sie am b
     
     Die Standardfeatures sind erforderlich und werden automatisch festgelegt. Es folgen die Standardfunktionen:
     
-    - Überspringen Der Registrierung von Cortana, OneDrive und OEM.
+    - Überspringen Sie Cortana, OneDrive und OEM-Registrierung.
     
     - Erstellen Sie eine Anmeldeumgebung mit Ihrem Unternehmensbranding.
     
-    - Verbinden Sie Ihre Geräte mit Azure Active Directory-Konten, und registrieren Sie sie automatisch, damit sie von Microsoft 365 Business Premium verwaltet werden.
+    - Verbinden Ihre Geräte, Azure Active Directory Konten zu erstellen, und registrieren Sie sie automatisch, damit sie von den Microsoft 365 Business Premium.
     
     Weitere Informationen finden Sie unter [Informationen zu AutoPilot-Profileinstellungen](autopilot-profile-settings.md). 
     

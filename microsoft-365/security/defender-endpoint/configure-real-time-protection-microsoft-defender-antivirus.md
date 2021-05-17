@@ -139,4 +139,4 @@ So deaktivieren Sie den Echtzeitschutz in Gruppenrichtlinien:
 ## <a name="related-articles"></a>Verwandte Artikel
 
 - [Konfigurieren von verhaltensbasiertem, heuristischem und Echtzeitschutz](configure-protection-features-microsoft-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

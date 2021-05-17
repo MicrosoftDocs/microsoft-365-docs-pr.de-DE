@@ -1,5 +1,5 @@
 ---
-title: Hilfe für Benutzer bei der Verbindung mit Microsoft 365 Business Premium
+title: Helfen Sie Benutzern, eine Verbindung mit Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
 ms.author: efrene
@@ -35,14 +35,14 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578445"
 ---
-# <a name="help-users-connect-to-microsoft-365-business-premium"></a>Hilfe für Benutzer bei der Verbindung mit Microsoft 365 Business Premium
+# <a name="help-users-connect-to-microsoft-365-business-premium"></a>Helfen Sie Benutzern, eine Verbindung mit Microsoft 365 Business Premium
 
-Nachdem Sie das Setup abgeschlossen haben, sind die Standardgeräterichtlinien eingerichtet und können angewendet werden. Auf mobilen Geräten laden Benutzer Office-Apps herunter. Richtlinien werden dann angewendet, wenn sich der Benutzer mit seinem Arbeits- oder Schulkonto einschreibt. Es ist noch etwas mehr Zu tun, bevor Richtlinien auf Windows-PCs angewendet werden, z. B. ein in-Place-Upgrade. Sehen Sie sich die folgenden Themen an, und teilen Sie sie, damit Benutzer sich einrichten und eine Verbindung einrichten können:
+Nachdem Sie das Setup abgeschlossen haben, sind die Standardgeräterichtlinien eingerichtet und können angewendet werden. Auf mobilen Geräten laden Benutzer Office herunter. Richtlinien werden dann angewendet, wenn sich der Benutzer mit seinem Arbeits- oder Schulkonto einschreibt. Es ist noch etwas mehr Arbeit zu tun, bevor Richtlinien auf Windows PCs angewendet werden, z. B. ein in-Place-Upgrade. Sehen Sie sich die folgenden Themen an, und teilen Sie sie, damit Benutzer sich einrichten und eine Verbindung einrichten können:
   
-[Einrichten von Windows-Geräten für Microsoft 365 Business Premium-Benutzer](set-up-windows-devices.md)
+[Einrichten Windows Geräten für Microsoft 365 Business Premium Benutzer](set-up-windows-devices.md)
   
 [Verwenden der schrittweisen Anleitung zum Hinzufügen von Autopilot-Geräten und -Profil](add-autopilot-devices-and-profile.md)
   
-[Einrichten mobiler Geräte für Microsoft 365 Business Premium-Benutzer](set-up-mobile-devices.md)
+[Einrichten mobiler Geräte für Microsoft 365 Business Premium Benutzer](set-up-mobile-devices.md)
   
 

@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 712fced7-f9d0-4fde-8b79-286262a5d0bc
-description: In diesem Artikel finden Sie Checklisten und andere Ressourcen für die Planung Ihrer Microsoft 365 Enterprise-Bereitstellung.
+description: Dieser Artikel enthält Prüflisten und andere Ressourcen zum Planen ihrer Microsoft 365 Enterprise Bereitstellung.
 ms.openlocfilehash: d31f97ecc13d78ae3e5786cc86f4d8cf44be45b1
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -31,34 +31,34 @@ ms.locfileid: "46690819"
 ---
 # <a name="plan-for-microsoft-365-enterprise"></a>Planen von Microsoft 365 Enterprise
 
-Wenn Sie eine Unternehmensorganisation auf Microsoft 365 umstellen, ist es wichtig, im Voraus zu planen und die wichtigsten Entwurfsentscheidungen zu treffen, mit denen die IT-Bereitstellung und die Benutzerakzeptanz optimiert werden. 
+Wenn Sie eine Unternehmensorganisation in eine Microsoft 365 verschieben, ist es wichtig, voraus zu planen und die wichtigsten Entwurfsentscheidungen zu treffen, die die IT-Bereitstellung und Benutzeradzeptanz optimieren. 
 
-## <a name="planning-with-microsoft-365-fasttrack"></a>Planung mit Microsoft 365
+## <a name="planning-with-microsoft-365-fasttrack"></a>Planen mit Microsoft 365 FastTrack
 
-Der Kurztext [für Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) ist die beste Methode, um Hilfe von Microsoft für die Planung Ihrer Bereitstellung von Microsoft 365 zu holen. Der Kurztext hilft Ihnen dabei, die am häufigsten verwendeten Entwurfsüberlegungen zu unterstützen und Fragen auf dem Weg zu beantworten. 
+[FastTrack für Microsoft 365](https://www.microsoft.com/fasttrack/microsoft-365) ist die beste Methode, um Hilfe von Microsoft für die Planung Ihrer Microsoft 365 erhalten. FastTrack kann Ihnen dabei helfen, die gängigsten Entwurfsüberlegungen zu berücksichtigen und auf dem Weg Fragen zu beantworten. 
 
 >[!Note]
->Sie können auch Hilfe von einem [Microsoft-Partner](https://www.microsoft.com/solution-providers/home)erhalten.
+>Sie können auch Hilfe von einem [Microsoft-Partner erhalten.](https://www.microsoft.com/solution-providers/home)
 >
 
 ## <a name="do-it-yourself-planning-for-microsoft-365"></a>Do-it-yourself-Planung für Microsoft 365
 
-Wenn Sie Microsoft 365 auf eigene Faust planen möchten, führen Sie die Planungs-und Entwurfsentscheidungen für diese Bereiche schrittweise durch:
+Um die Microsoft 365 zu planen, gehen Sie durch die Planungs- und Entwurfsentscheidungen für die folgenden Bereiche:
 
 - Ihr Microsoft 365-Mandant
 
-  Umfasst die Planung für Ihre Netzwerkverbindungen mit dem Internet, Ihre Microsoft 365-Identitäten und die Integration in apps, lokale, Azure und andere Elemente. Weitere Informationen finden Sie unter [Abonnements, Lizenzen, Konten und Mandanten für die Cloud-Angebote von Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md) .
+  Umfasst die Planung Ihrer Netzwerkverbindungen mit dem Internet, Ihre Microsoft 365 Identitäten und die Integration in Apps, lokale, Azure und andere Elemente. Weitere Informationen finden Sie [unter Abonnements, Lizenzen,](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md) Konten und Mandanten für die Cloudangebote von Microsoft.
 
-- Unterstützung für Ihre Clients
+- Support für Ihre Clients
 
-  Umfasst die zertifikatbasierte Authentifizierung, die Verwaltung mobiler Geräte, Authentifizierungsoptionen und die Zusammenarbeit zwischen Mandanten. Wechseln Sie zur [zertifikatbasierten Authentifizierung](microsoft-365-client-support-certificate-based-authentication.md) , um weitere Informationen zu erhalten.
+  Umfasst zertifikatbasierte Authentifizierung, Verwaltung mobiler Geräte, Authentifizierungsoptionen und mandantenübergreifende Zusammenarbeit. Weitere Informationen finden Sie unter [Zertifikatbasierte Authentifizierung.](microsoft-365-client-support-certificate-based-authentication.md)
 
-- Unterstützung für moderne Hybrid Authentifizierung
+- Unterstützung für die moderne Hybridauthentifizierung
 
-  Umfasst die Planung der modernen Authentifizierung bei der Verwendung von Hybridkonfigurationen wichtiger Microsoft 365-Produktivitätsanwendungen. Weitere Informationen finden Sie unter [Übersicht über die hybride moderne Authentifizierung und Voraussetzungen](hybrid-modern-auth-overview.md) .
+  Umfasst die Planung der modernen Authentifizierung bei der Verwendung von Hybridkonfigurationen Microsoft 365 Produktivitäts-Apps. Weitere Informationen finden Sie [unter Hybrid modern authentication overview and prerequisites.](hybrid-modern-auth-overview.md)
 
-- Ältere Office-Clients und-Server
+- Ältere Office und Server
 
-  Enthält Migrationsinformationen für Office 2007 und Office 2010 Client-und Serverprodukte. Weitere Informationen finden [Sie unter Plan your Upgrade](plan-upgrade-previous-versions-office.md) .
+  Enthält Migrationsinformationen für Office 2007 und Office 2010-Client- und Serverprodukte. Weitere Informationen [finden Sie unter Planen](plan-upgrade-previous-versions-office.md) des Upgrades.
 
-Sie können sich auch bei Ihrem Microsoft 365-Abonnement anmelden und die [Installationshandbücher für Microsoft 365 und Office 365 Dienste](setup-guides-for-microsoft-365.md)verwenden.
+Sie können sich auch bei Ihrem abonnement Microsoft 365 anmelden und die Setupanleitungen für Microsoft 365 [und Office 365 verwenden.](setup-guides-for-microsoft-365.md)

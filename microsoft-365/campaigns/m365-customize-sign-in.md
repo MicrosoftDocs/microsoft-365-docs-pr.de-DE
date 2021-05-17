@@ -21,7 +21,7 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Passen Sie Ihre Anmeldeseite mit einem Datenschutz- und Zustimmungshinweise für Microsoft 365 an.
+description: Passen Sie Ihre Anmeldeseite mit einer Datenschutz- und Zustimmungsbenachrichtigung für Microsoft 365.
 ms.openlocfilehash: 652566ca1caf46cd224e5205da3bebfd7b25cefa
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "51579806"
 
 Ihr Unternehmen oder Ihre Kampagne kann es Strafverfolgungsbehörden erleichtern, Rechtliche Gegenanzeigen gegen Onlinekriminell zu stellen, indem Sie Ihrer Anmeldeseite einen Datenschutz- und Zustimmungsbemerkung hinzufügen.
 
-Sie können Ihre Anmeldeseite mit Ihrem Branding anpassen. Sie können auch Text hinzufügen, um Ihren Benutzern bei der Anmeldung zu helfen oder um auf gesetzliche Anforderungen oder Einschränkungen für den Zugriff auf Microsoft 365-Ressourcen zu verweisen.
+Sie können Ihre Anmeldeseite mit Ihrem Branding anpassen. Sie können auch Text hinzufügen, um Ihren Benutzern bei der Anmeldung zu helfen oder um auf gesetzliche Anforderungen oder Einschränkungen für den Zugriff auf ressourcen Microsoft 365 hinweisen.
 
 ## <a name="design-customization-the-text-on-your-sign-in-page"></a>Entwerfen der Anpassung des Texts auf der Anmeldeseite
 

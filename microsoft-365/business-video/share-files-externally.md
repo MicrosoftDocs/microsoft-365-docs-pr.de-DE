@@ -31,12 +31,12 @@ ms.locfileid: "51578627"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2dCOV?autoplay=false]
 
-Verwenden Sie einen Jeder-Link in Microsoft 365, um Dateien für Ihre Kunden zu teilen und gemeinsam an Dokumenten zu arbeiten.
+Um Dateien für Ihre Kunden zu teilen und gemeinsam an Dokumenten zu arbeiten, verwenden Sie einen Jeder-Link in Microsoft 365.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Wählen Sie auf Ihrer SharePoint-Website den Ordner aus, den Sie freigeben möchten, wählen Sie **Freigeben** aus, und klicken Sie dann auf die Schaltfläche Linkeinstellungen.
-1. Stellen Sie **im Fenster Linkeinstellungen** sicher, dass **Jeder** ausgewählt ist. Wenn diese Option ausgegraut ist, muss sie im SharePoint Admin Center aktiviert sein.
+1. Wählen Sie SharePoint Website den Ordner aus, den Sie freigeben möchten, wählen Sie **Freigeben** aus, und klicken Sie dann auf die Schaltfläche Linkeinstellungen.
+1. Stellen Sie **im Einstellungen** Link-Fenster sicher, dass **Jeder** ausgewählt ist. Wenn diese Option ausgegraut ist, muss sie im SharePoint aktiviert werden.
 1. Aktivieren Sie optional das **Kontrollkästchen** Bearbeitung zulassen, und geben Sie ein Ablaufdatum für den Link ein.
 1. Wählen Sie **Anwenden** aus.
 1. Geben Sie **im Fenster Link** senden die E-Mail-Adresse Ihres Kunden ein, geben Sie eine Nachricht ein, und wählen Sie Senden **aus.**

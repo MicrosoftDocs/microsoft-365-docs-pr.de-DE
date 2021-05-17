@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Ihre Domäne von Google Workspace zu Microsoft 365 Business verschieben.
+description: Erfahren Sie, wie Sie Ihre Domäne von Google Workspace in Microsoft 365 verschieben.
 ms.openlocfilehash: 814e714527467bb6e7008ea141989f3117ddcdd8
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -32,12 +32,12 @@ ms.locfileid: "51578771"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4LWKT?autoplay=false]
 
-Fügen Sie Ihre Google Workspace-Domäne zu Microsoft 365 Business hinzu, damit Sie Ihre geschäftliche E-Mail-Adresse weiterhin verwenden können.
+Fügen Sie Ihre Google Workspace-Domäne Microsoft 365 Business hinzu, damit Sie Ihre geschäftliche E-Mail-Adresse weiterhin verwenden können.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
 1. Wechseln Sie zum [Microsoft 365 Admin Center](https://admin.microsoft.com).
-1. Wählen Sie im Microsoft 365 Admin Center im linken Navigations navi die Option **Alle** anzeigen , **Einstellungen** und dann **Domänen aus.**
+1. Wählen Sie im Microsoft 365 Admin Center im linken Navigations navi die Option **Alle** anzeigen, **Einstellungen** und dann **Domänen aus.**
 1. Wählen **Sie Domäne hinzufügen** aus, geben Sie Ihren Domänennamen ein, und wählen Sie dann Diese Domäne verwenden **aus.** 
 1. Wählen Sie, **Fügen Sie den Domänen DNS-Einträge einen TXT-Eintrag hinzu,** wählen Sie **Weiter** aus, und kopieren Sie den TXT-Wert. 
 1. Wechseln Sie zurück zur [Google Admin Console,](https://admin.google.com)wählen Sie **Domänen** **,** Domänen verwalten , **Details anzeigen**, **Domäne** verwalten, **DNS**, und scrollen Sie dann nach unten zu **Benutzerdefinierte Ressourceneinträge**. 
@@ -49,4 +49,4 @@ Fügen Sie Ihre Google Workspace-Domäne zu Microsoft 365 Business hinzu, damit 
 1. Wählen Sie einen Benutzer aus, wählen Sie **Benutzername und** E-Mail verwalten, **Bearbeiten** aus, wählen Sie Ihre Domäne aus der Dropdownliste aus, und wählen Sie dann **Fertig** und Änderungen **speichern aus.** 
 1. Wiederholen Sie diesen Vorgang für jeden Benutzer. 
 
-    Wenn Sie fertig sind, können Sie Office-Apps installieren und Ihre E-Mail- und Kalenderelemente zu Microsoft 365 migrieren. 
+    Wenn Sie fertig sind, können Sie Office Apps installieren und Ihre E-Mail- und Kalenderelemente zu Microsoft 365. 

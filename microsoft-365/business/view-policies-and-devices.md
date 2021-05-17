@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 6b70fa27-d171-4593-8ecf-f78bb4ed2e99
-description: Zeigen Sie Geräterichtlinien und -aktionen an, indem Sie sich bei Microsoft 365 Business mit globalen Administratoranmeldeinformationen anmelden.
+description: Zeigen Sie Geräterichtlinien und -aktionen an, indem Sie sich bei Microsoft 365 mit globalen Administratoranmeldeinformationen anmelden.
 ms.openlocfilehash: 39d88e8fa84055e4bac62899a1b84bdf42f366a2
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT

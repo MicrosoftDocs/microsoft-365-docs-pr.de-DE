@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten oder Erstellen von Geräteschutzeinstellungen für Windows 10-PCs
+title: Bearbeiten oder Erstellen von Geräteschutzeinstellungen für Windows 10 PCs
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: bd66c26c-73a4-45a8-8642-3ea4ee7cd89d
-description: Erfahren Sie mehr über die in Microsoft 365 Business verfügbaren Einstellungen zum Sichern von Windows 10-Geräten.
+description: Erfahren Sie mehr über die in Microsoft 365 business verfügbaren Einstellungen zum Sichern Windows 10 Geräte.
 ms.openlocfilehash: acfb27b2e4592d4ed1e446a63c9495ae07d916de
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -30,15 +30,15 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/02/2021
 ms.locfileid: "51578225"
 ---
-# <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Bearbeiten oder Erstellen von Geräteschutzeinstellungen für Windows 10-PCs
+# <a name="edit-or-create-device-protection-settings-for-windows-10-pcs"></a>Bearbeiten oder Erstellen von Geräteschutzeinstellungen für Windows 10 PCs
 
 Dieser Artikel gilt für Microsoft 365 Business Premium.
 
-Nachdem Sie standardmäßige Windows-Schutzeinstellungen auf der Seite Setup eingerichtet haben, können Sie neue Einstellungen hinzufügen, die für alle Benutzer oder eine Gruppe von Benutzern gelten. Sie können auch alle erstellten Bearbeiten.
+Nachdem Sie die Standardeinstellungen für Windows auf der Seite Setup eingerichtet haben, können Sie neue Einstellungen hinzufügen, die für alle Benutzer oder eine Gruppe von Benutzern gelten. Sie können auch alle erstellten Bearbeiten.
 
-## <a name="create-protection-settings-for-windows-10-devices"></a>Erstellen von Schutzeinstellungen für Windows 10-Geräte
+## <a name="create-protection-settings-for-windows-10-devices"></a>Erstellen von Schutzeinstellungen für Windows 10 Geräte
 
-Sehen Sie sich ein Video zum Sichern von Windows 10-Geräten mit Microsoft 365 Business Premium an:
+Sehen Sie sich ein Video an, in dem Sie Windows 10 Geräte mit Microsoft 365 Business Premium:
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/a5734146-620a-4cec-8618-536b3ca37972?autoplay=false]
   
@@ -55,11 +55,11 @@ Sehen Sie sich ein Video zum Sichern von Windows 10-Geräten mit Microsoft 365 B
 6. Next decide **Who will get these settings?** If you don't want to use the default **All users** security group, Choose **Change**, search for the security group who will get these settings \> **Select**.
 7. Wählen Sie schließlich **Fertig** aus, um die Richtlinie zu speichern, und weisen Sie sie Geräten zu. 
 
-## <a name="edit-windows-10-protection-settings"></a>Bearbeiten von Windows 10-Schutzeinstellungen
+## <a name="edit-windows-10-protection-settings"></a>Bearbeiten Windows 10 Schutzeinstellungen
  
 1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.     
 2. Wählen Sie im  linken Navigationsgerät \> **Geräterichtlinien aus.**
-1. Wählen Sie eine vorhandene Windows-Geräterichtlinie aus, und bearbeiten **Sie dann .**
+1. Wählen Sie eine vorhandene Windows geräterichtlinie und dann **Bearbeiten aus.**
 1. Wählen **Sie Bearbeiten** neben einer Einstellung aus, die Sie ändern möchten, und **speichern.**
 
 ## <a name="available-settings"></a>Verfügbare Einstellungen

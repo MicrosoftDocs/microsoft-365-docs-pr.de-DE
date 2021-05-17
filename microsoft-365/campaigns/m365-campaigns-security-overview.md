@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Ihre Kampagne oder Ihr Unternehmen schützen, indem Sie Ihre Sicherheit mit Microsoft 365 erhöhen.
+description: Erfahren Sie, wie Sie Ihre Kampagne oder Ihr Unternehmen schützen, indem Sie Ihre Sicherheit mit Microsoft 365.
 ms.openlocfilehash: d2486f7160bef57a91d76fba756ff75ba319b8fa
 ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
@@ -44,7 +44,7 @@ Sehen Sie sich dieses Video an, um zu sehen, wie Sie Ihre Kampagne oder Ihr Unte
 Führen Sie dann die folgenden Schritte aus:
 
 - [Schützen vor Schadsoftware und anderen Bedrohungen](m365-campaigns-increase-protection.md)
-- [Schützen des Zugriffs auf Ihre Kampagnendaten](m365-campaigns-conditional-access.md) durch Schutz Ihrer Konten und Apps
+- [Schützen des Zugriffs auf Ihre Kampagnendaten durch](m365-campaigns-conditional-access.md) Schutz Ihrer Konten und Apps
 - [Schützen von Administratorkonten](m365-campaigns-protect-admin-accounts.md)
 - [Einrichten von mobilen Geräten](../business/set-up-mobile-devices.md?toc=/microsoft-365/campaigns/toc.json)
 - [Schulen der Benutzer](m365-campaigns-users.md)

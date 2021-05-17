@@ -33,8 +33,8 @@ ms.locfileid: "50044396"
 ---
 # <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Infografik: Schützen Sie sich und Ihre Kampagne vor digitalen Bedrohungen
 
-Die folgenden Links für PowerPoint und PDF können im Tabloidformat (auch bekannt als Ledger, 11 x 17 oder A3) heruntergeladen und gedruckt werden.
+Die folgenden Links für PowerPoint und PDF können im Tabloidformat heruntergeladen und gedruckt werden (auch als Ledger, 11 x 17 oder A3 bekannt).
 
-[![Abbildung zum Sichern Ihrer Hilfe zum Schutz Ihrer Kampagneninfografik](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
+[![Image for secure your help protect your campaign info graphic](../media/M365-Campaigns-WhatCanUsersDoToSecure-358x201.png)](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)
 
 [PDF](downloads/M365CampaignsWhatCanUsersDoToSecure.pdf)  |  [PowerPoint](https://github.com/MicrosoftDocs/microsoft-365-docs-pr/raw/live/m365-democracy/microsoft-365/campaigns/downloads/M365CampaignsWhatCanUsersDoToSecure.pptx)

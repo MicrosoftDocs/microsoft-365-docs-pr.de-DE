@@ -20,7 +20,7 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 87a52468-994e-43a2-b155-7229ed659291
-description: In diesem Artikel erfahren Sie, wie Sie Minimierungs und Kopplungstechniken mit WebEssentials verwenden, um HTTP-Anforderungen zu reduzieren, und wie lange es dauert, Seiten in SharePoint Online zu laden.
+description: Erfahren Sie, wie Sie Verminungs- und Bündelungstechniken mit Web Essentials verwenden, um HTTP-Anforderungen und den Zeitaufwand für das Laden von Seiten in SharePoint Online zu reduzieren.
 ms.openlocfilehash: 2e2ff7b9d36a6c28ca3840304d896782e1096e85
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -30,77 +30,77 @@ ms.locfileid: "46690323"
 ---
 # <a name="minification-and-bundling-in-sharepoint-online"></a>Minimierung und Bündelung in SharePoint Online
 
-In diesem Artikel wird beschrieben, wie Sie Minimierungs-und Kopplungstechniken mit WebEssentials verwenden, um die Anzahl der HTTP-Anforderungen zu reduzieren und die Zeit zu reduzieren, die zum Laden von Seiten in SharePoint Online benötigt wird.
+In diesem Artikel wird beschrieben, wie Sie Verminungs- und Bündelungstechniken mit Web Essentials verwenden, um die Anzahl der HTTP-Anforderungen zu reduzieren und den Zeitaufwand für das Laden von Seiten in SharePoint Online zu reduzieren.
   
-Wenn Sie Ihre Website anpassen, können Sie am Ende eine große Anzahl zusätzlicher Dateien auf dem Server hinzufügen, um die Anpassung zu unterstützen. Durch Hinzufügen von zusätzlichen JavaScript-, CSS-und Bilddateien wird die Anzahl der HTTP-Anforderungen an den Server erhöht, was wiederum die Zeit für die Anzeige einer Webseite erhöht. Wenn Sie mehrere Dateien desselben Typs haben, können Sie diese Dateien bündeln, damit diese Dateien schneller heruntergeladen werden.
+Wenn Sie Ihre Website anpassen, können Sie dem Server eine große Anzahl zusätzlicher Dateien hinzufügen, um die Anpassung zu unterstützen. Durch hinzufügen zusätzlicher JavaScript-, CSS- und Bilder wird die Anzahl der HTTP-Anforderungen an den Server erhöht, was wiederum die Zeit erhöht, die zum Anzeigen einer Webseite benötigt wird. Wenn Sie über mehrere Dateien desselben Typs verfügen, können Sie diese Dateien bündeln, um das Herunterladen dieser Dateien zu beschleunigen.
   
-Bei JavaScript-und CSS-Dateien können Sie auch einen Ansatz namens "Minimierungs" verwenden, bei dem Sie die Gesamtgröße von Dateien verringern, indem Sie Leerzeichen und andere nicht benötigte Zeichen entfernen.
+Für JavaScript- und CSS-Dateien können Sie auch einen Ansatz namens Minification verwenden, bei dem Sie die Gesamtgröße von Dateien reduzieren, indem Sie Leerzeichen und andere Zeichen entfernen, die nicht erforderlich sind.
   
-## <a name="minification-and-bundling-javascript-and-css-files-with-web-essentials"></a>Minimierungs und Bündelung von JavaScript-und CSS-Dateien mit WebEssentials
+## <a name="minification-and-bundling-javascript-and-css-files-with-web-essentials"></a>Verminen und Bündeln von JavaScript- und CSS-Dateien mit Web Essentials
 
-Sie können Drittanbietersoftware wie WebEssentials verwenden, um CSS-und JavaScript-Dateien zu bündeln.
+Sie können Software von Drittanbietern wie Web Essentials verwenden, um CSS- und JavaScript-Dateien zu bündeln.
   
 > [!IMPORTANT]
-> WebEssentials ist ein Open-Source-Projekt von Drittanbietern, das auf communitybasis basiert. Die Software ist eine Erweiterung für Visual Studio 2012 und Visual Studio 2013 und wird von Microsoft nicht unterstützt. Um Web Essentials herunterzuladen, besuchen Sie die Website unter [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629) . 
+> Web Essentials ist ein Open-Source-Projekt auf Communitybasis von Drittanbietern. Die Software ist eine Erweiterung von Visual Studio 2012 und Visual Studio 2013 und wird von Microsoft nicht unterstützt. Um Web Essentials herunterzuladen, besuchen Sie die Website unter [https://vswebessentials.com/download](https://go.microsoft.com/fwlink/p/?LinkId=525629) . 
   
-WebEssentials bietet zwei Formen der Bündelung:
+Web Essentials bietet zwei Arten von Bündelung:
   
-- . Bundle: für CSS-und JavaScript-Dateien
+- .bundle: für CSS- und JavaScript-Dateien
     
-- . Sprite: für Bilder (nur in Visual Studio 2013 verfügbar)
+- .sprite: für Bilder (nur in Visual Studio 2013)
     
-Sie können WebEssentials verwenden, wenn Sie ein vorhandenes Feature mit einigen Branding-Elementen haben, auf die in einer benutzerdefinierten Gestaltungsvorlage verwiesen wird, beispielsweise:
+Sie können Web Essentials verwenden, wenn Sie über ein vorhandenes Feature mit einigen Brandingelementen verfügen, auf die in einer benutzerdefinierten Masterseite verwiesen wird, z. B.:
   
-![Screenshot des Marken Elements in der benutzerdefinierten Gestaltungsvorlage](../media/3a6eba36-973d-482b-8556-a9394b8ba19f.png)
+![Screenshot des Markenelements auf der benutzerdefinierten Masterseite](../media/3a6eba36-973d-482b-8556-a9394b8ba19f.png)
   
- **So erstellen Sie ein TE000127218-und CSS-Bundle in WebEssentials**
+ **So erstellen Sie ein TE000127218- und CSS-Bundle in Web Essentials**
   
-1. Wählen Sie in Visual Studio im Projektmappen-Explorer die Dateien aus, die Sie in das Bundle einschließen möchten.
+1. Wählen Visual Studio im Projektmappen-Explorer die Dateien aus, die Sie in das Bundle hinzufügen möchten.
     
-2. Klicken Sie mit der rechten Maustaste auf die ausgewählten Dateien, und wählen Sie dann im Kontextmenü die Option **WebEssentials** \> **Create JavaScript Bundle File** aus. Beispiel: 
+2. Klicken Sie mit der rechten Maustaste auf die ausgewählten Dateien, und wählen Sie dann im Kontextmenü **Web Essentials** \> **Create JavaScript bundle file** aus. Beispiel: 
     
-    ![Screenshot mit WebEssentials-Menü Optionen](../media/41aac84c-4538-4f78-b454-46e651f868a3.png)
+    ![Screenshot mit Web Essentials-Menüoptionen](../media/41aac84c-4538-4f78-b454-46e651f868a3.png)
   
-## <a name="viewing-the-results-of-bundling-javascript-and-css-files"></a>Anzeigen der Ergebnisse der Bündelung von JavaScript-und CSS-Dateien
+## <a name="viewing-the-results-of-bundling-javascript-and-css-files"></a>Anzeigen der Ergebnisse der Bündelung von JavaScript- und CSS-Dateien
 
-Wenn Sie ein JavaScript-und CSS-Bundle erstellen, erstellt WebEssentials eine XML-Datei namens "Rezept Datei", in der die JavaScript-und CSS-Dateien sowie einige andere Konfigurationsinformationen identifiziert werden: 
+Wenn Sie ein JavaScript- und CSS-Bündel erstellen, erstellt Web Essentials eine XML-Datei namens Rezeptdatei, die die JavaScript- und CSS-Dateien sowie einige andere Konfigurationsinformationen identifiziert: 
   
-![Screenshot der JavaScript-und CSS-Rezept Datei](../media/7ba891f8-52d8-467b-a0f6-b062dd1137a4.png)
+![Screenshot der JavaScript- und CSS-Rezeptdatei](../media/7ba891f8-52d8-467b-a0f6-b062dd1137a4.png)
   
-Wenn das minimieren-Flag in der Kopplungs Rezeptur auf true festgelegt ist, werden die Dateien zudem sowohl in der Größe als auch in der zusammengefassten Form reduziert. Dies bedeutet, dass neue, minimierte Versionen der JavaScript-Dateien erstellt wurden, auf die Sie in ihrer Gestaltungsvorlage verweisen können.
+Wenn das Minify-Flag im Bündelungsrezept auf true festgelegt ist, werden die Dateien außerdem in der Größe reduziert und zusammengebündelt. Dies bedeutet, dass neue, verminte Versionen der JavaScript-Dateien erstellt wurden, auf die Sie in Ihrer Masterseite verweisen können.
   
-![Screenshot des minimieren-Flags auf true festgelegt](../media/50523af2-6412-4117-ac3d-5bd26f6d562e.png)
+![Screenshot des auf true festgelegten Minify-Flags](../media/50523af2-6412-4117-ac3d-5bd26f6d562e.png)
   
-Wenn Sie eine Seite von Ihrer Website laden, können Sie die Entwicklertools aus Ihrem Webbrowser wie Internet Explorer 11 verwenden, um zu sehen, wie viele Anforderungen an den Server gesendet wurden und wie lange die einzelnen Dateien zum Laden benötigt wurden.
+Wenn Sie eine Seite von Ihrer Website laden, können Sie die Entwicklertools aus Ihrem Webbrowser verwenden, z. B. Internet Explorer 11, um die Anzahl der anforderungen anzuzeigen, die an den Server gesendet wurden und wie lange die Einzelnen Dateien geladen wurden.
   
-Die folgende Abbildung ist das Ergebnis des Ladens der JavaScript-und CSS-Dateien vor Minimierungs.
+Die folgende Abbildung ist das Ergebnis des Ladens der JavaScript- und CSS-Dateien vor der Minifizierung.
   
-![Screenshot mit 80 Elementen, die heruntergeladen werden](../media/e2df3912-1923-46e6-8cf2-3015a31554e1.png)
+![Screenshot mit 80 heruntergeladenen Elementen](../media/e2df3912-1923-46e6-8cf2-3015a31554e1.png)
   
-Nachdem die CSS-und JavaScript-Dateien zusammen gebündelt wurden, wurde die Anzahl der Anforderungen auf 74 und jede Datei dauerte nur geringfügig länger als die ursprünglichen Dateien einzeln heruntergeladen werden:
+Nach dem Bündeln der CSS- und JavaScript-Dateien ist die Anzahl der Anforderungen auf 74 gesunken, und jede Datei hat nur geringfügig länger ge dauert als die ursprünglichen Dateien, um sie einzeln herunterzuladen:
   
-![Screenshot mit 74 Elementen, die heruntergeladen werden](../media/686c4387-70e8-4a74-9d45-059f33a91184.png)
+![Screenshot mit 74 heruntergeladenen Elementen](../media/686c4387-70e8-4a74-9d45-059f33a91184.png)
   
-Nach dem bündeln wird die JavaScript-Bundle-Datei erheblich von 815KB auf 365KB reduziert:
+Nach der Bündelung wird die JavaScript-Bundledatei erheblich von 815 KB auf 365 KB reduziert:
   
 ![Screenshot mit reduzierter Downloadgröße](../media/5e7dbd98-faff-4f68-b320-108fb252e395.png)
   
-## <a name="bundling-images-by-creating-an-image-sprite"></a>Bilder bündeln, indem Sie ein Bild Sprite erstellen
+## <a name="bundling-images-by-creating-an-image-sprite"></a>Bündeln von Bildern durch Erstellen eines Bildsprites
 
-Ähnlich wie Sie JavaScript-und CSS-Dateien bündeln, können Sie viele kleine Symbole und andere allgemeine Bilder in ein größeres Sprite-Blatt kombinieren und dann mit CSS die einzelnen Bilder aufdecken. Anstatt jedes einzelne Bild herunterzuladen, downloadet der Webbrowser des Benutzers das Sprite-Blatt einmal und speichert es dann auf dem lokalen Computer zwischen. Dadurch wird die Seiten Ladeleistung verbessert, indem die Anzahl der Downloads und Roundtrips auf dem Webserver reduziert werden.
+Ähnlich wie Sie JavaScript- und CSS-Dateien bündeln, können Sie viele kleine Symbole und andere allgemeine Bilder in einem größeren Spritesheet kombinieren und dann CSS verwenden, um die einzelnen Bilder zu zeigen. Anstatt jedes einzelne Bild herunterzuladen, lädt der Webbrowser des Benutzers das Spritesheet einmal herunter und speichert es dann auf dem lokalen Computer zwischen. Dadurch wird die Seitenlastleistung verbessert, indem die Anzahl der Downloads und Roundtrips zum Webserver herabgefahren wird.
   
- **So erstellen Sie ein Image-Sprite in WebEssentials**
+ **So erstellen Sie ein Bild-Sprite in Web Essentials**
   
-1. Wählen Sie in Visual Studio im Projektmappen-Explorer die Dateien aus, die Sie in das Bundle einschließen möchten.
+1. Wählen Visual Studio im Projektmappen-Explorer die Dateien aus, die Sie in das Bundle hinzufügen möchten.
     
-2. Klicken Sie mit der rechten Maustaste auf die ausgewählten Dateien, und wählen Sie dann im Kontextmenü die Option **WebEssentials** \> **Create Image Sprite** aus. Beispiel: 
+2. Klicken Sie mit der rechten Maustaste auf die ausgewählten Dateien, und wählen Sie dann im Kontextmenü **Web Essentials** \> **Image sprite** erstellen aus. Beispiel: 
     
-    ![Screenshot, der zeigt, wie ein Bild Sprite erstellt wird](../media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
+    ![Screenshot, der zeigt, wie Sie ein Bild-Sprite erstellen](../media/de0fe741-4ef7-4e3b-bafa-ef9f4822dac6.png)
   
-3. Wählen Sie einen Speicherort aus, um die Sprite-Datei zu speichern. Die Sprite-Datei ist eine XML-Datei, in der die Einstellungen und Dateien im Sprite beschrieben werden. Die folgenden Abbildungen zeigen ein Beispiel für eine Sprite-PNG-Datei und die zugehörige Sprite-XML-Datei.
+3. Wählen Sie einen Speicherort aus, um die sprite-Datei zu speichern. Die SPRITE-Datei ist eine XML-Datei, die die Einstellungen und Dateien im sprite beschreibt. Die folgenden Abbildungen zeigen ein Beispiel für eine sprite-PNG-Datei und die entsprechende SPRITE-XML-Datei.
     
-    ![Screenshot einer Sprite-Datei](../media/0876bb2a-d1b9-4169-8e95-9c290d628d90.png)
+    ![Screenshot einer sprite-Datei](../media/0876bb2a-d1b9-4169-8e95-9c290d628d90.png)
   
-    ![Screenshot der Sprite-XML-Datei](../media/d1f94776-280d-4d56-abb5-384f145d9989.png)
+    ![Screenshot der sprite-XML-Datei](../media/d1f94776-280d-4d56-abb5-384f145d9989.png)
   
 

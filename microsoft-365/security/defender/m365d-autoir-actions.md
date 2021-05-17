@@ -36,7 +36,7 @@ ms.locfileid: "52274652"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Bedrohungsschutzfeatures in Microsoft 365 Defender können zu bestimmten Abhilfemaßnahmen führen. Im Folgenden finden Sie einige Beispiele:
+Bedrohungsschutzfeatures in Microsoft 365 Defender können zu bestimmten Korrekturaktionen führen. Hier sind einige Beispiele:
 
 - [Automatisierte Untersuchungen](m365d-autoir.md) können zu Korrekturmaßnahmen führen, die automatisch ausgeführt werden oder auf Ihre Genehmigung warten.
 - Antivirus-, Antischamalware- und andere Bedrohungsschutzfeatures können zu Abhilfemaßnahmen führen, z. B. das Blockieren einer Datei, URL oder eines Prozesses oder das Senden eines Artefakts in Quarantäne.

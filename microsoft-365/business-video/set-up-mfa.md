@@ -44,7 +44,7 @@ Die mehrstufige Authentifizierung bietet mehr Sicherheit für Ihr Unternehmen. F
 1. Wählen Sie **Einrichten** aus.
 1. Lassen Sie **das Fenster Mobile App** konfigurieren auf Ihrem Computer geöffnet.
 1. Wechseln Sie auf Ihrem mobilen Gerät zum App Store, suchen Sie nach "Microsoft Authenticator", wählen Sie es aus, installieren Sie es, und öffnen Sie es.
-1. Folgen Sie in Authenticator den Aufforderungen zum Abschließen des Assistenten, und wählen Sie dann das Pluszeichen (+) aus, um Ihr Konto hinzuzufügen.
+1. Folgen Authenticator Anweisungen zum Abschließen des Assistenten, und wählen Sie dann das Pluszeichen (+) aus, um Ihr Konto hinzuzufügen.
 1. Wählen **Sie Arbeits-**  oder Schulkonto aus, wählen Sie Zulassen, wenn Sie aufgefordert werden, Bilder zu machen und Videos zu aufzeichnen, und befolgen Sie dann die Anweisungen zum Scannen des QR-Codes im geöffneten Fenster auf Ihrem Computer.
 1. Nachdem das Konto hinzugefügt wurde, wählen Sie **Got It** aus.
 1. Wählen Sie auf Ihrem **Computer Weiter** aus, und wählen Sie dann erneut **Weiter** aus.

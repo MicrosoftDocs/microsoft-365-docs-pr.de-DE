@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: Mit Smarttags können Sie die Lernfunktionen für Computer anwenden, wenn Sie Inhalte in einem erweiterten eDiscovery-Fall überprüfen. Verwenden Sie smarttaggruppen, um die Ergebnisse von Computer Lern-Erkennungs Modellen anzuzeigen, beispielsweise das Anwalts-Client-Berechtigungsmodell.
+description: Mit Smarttags können Sie die Machine Learning-Funktionen beim Überprüfen von Inhalten in einem Advanced eDiscovery anwenden. Verwenden Sie Smarttaggruppen, um die Ergebnisse von Machine-Learning-Erkennungsmodellen wie dem Anwalts-Client-Berechtigungsmodell anzeigen zu können.
 ms.openlocfilehash: 3d3852a13410a3aa57932e19031cc5d00ce52a96
 ms.sourcegitcommit: 3dd9944a6070a7f35c4bc2b57df397f844c3fe79
 ms.translationtype: MT
@@ -26,26 +26,26 @@ ms.locfileid: "42081082"
 ---
 # <a name="set-up-smart-tags-in-advanced-ediscovery"></a>Einrichten von Smarttags in Advanced eDiscovery
 
-Das maschinelle Lernen (ml) Funktionen in Advanced eDiscovery kann Ihnen helfen, den Entscheidungsprozess effizienter zu gestalten, wenn Sie Fall Dokumente in einem Überprüfungs Satzes überprüfen. Smarttags sind eine Möglichkeit, die ml-Funktionen an die Stelle zu bringen, an der die Entscheidungen aufgezeichnet werden: beim Markieren von Dokumenten während der Überprüfung. Wenn Sie eine smarttaggruppe erstellen, werden die Entscheidungen, die das Ergebnis des ml-Modells sind, das Sie der smarttaggruppe zugeordnet haben, Inline mit den Tags in der Tag-Gruppe angezeigt. Dadurch werden die Informationen zu ml-Ergebnissen Inline angezeigt, wenn Sie bestimmte Dokumente überprüfen.
+Maschinelles Lernen (ML)-Funktionen in Advanced eDiscovery können Ihnen helfen, den Entscheidungsprozess effizienter zu gestalten, wenn Sie Falldokumente in einem Überprüfungssatz überprüfen. Smarttags sind eine Möglichkeit, die Funktionen ML, wo die Entscheidungen aufgezeichnet werden: beim Taggen von Dokumenten während der Überprüfung. Wenn Sie eine Smarttaggruppe erstellen, werden die Entscheidungen, die das Ergebnis des ML-Modells sind, das Sie der Smarttaggruppe zugeordnet haben, in der Zeile mit den Tags in der Taggruppe angezeigt. Dies hilft ihnen, ML informationen in der Zeile zu sehen, wenn Sie bestimmte Dokumente überprüfen.
 
-## <a name="how-to-set-up-a-smart-tag-group"></a>Vorgehensweise Einrichten einer smarttaggruppe
+## <a name="how-to-set-up-a-smart-tag-group"></a>Einrichten einer Smarttaggruppe
 
-1. Klicken Sie in einem Überprüfungs Satzes auf **Überarbeitungs Gruppe verwalten** , und klicken Sie dann auf **Tags verwalten**.
+1. Klicken Sie in einem Überprüfungssatz auf **Überprüfungssatz verwalten,** und klicken Sie dann **auf Tags verwalten.**
 
-2. Klicken Sie auf **Tag-Gruppe hinzufügen** und dann auf **smarttaggruppe hinzufügen**.
+2. Klicken **Sie auf Taggruppe hinzufügen,** und wählen Sie **dann Smarttaggruppe hinzufügen aus.**
 
-3. Wählen Sie das ml-Modell aus, das Sie der Transpondergruppe zuordnen möchten.
+3. Wählen Sie das ML aus, das Sie der Taggruppe zuordnen möchten.
     
-   Dadurch werden eine Tag-Gruppe und *n* untergeordnete Tags erstellt, wobei *n* für die Anzahl der möglichen Ausgaben des Modells steht. Beispielsweise weist das " [Attorney-Client-Berechtigungs Erkennungs Modell](attorney-privilege-detection.md) " zwei mögliche Ausgaben auf: 
+   Dadurch werden eine Taggruppe und *untergeordnete N-Tags* erstellt, wobei *N* die Anzahl möglicher Ausgaben des Modells ist. Das Erkennungsmodell der [Anwalts-Client-Rechte verfügt](attorney-privilege-detection.md) beispielsweise über zwei mögliche Ausgaben: 
 
-   - **Positiv** – verwenden Sie, um Dokumente zu markieren, die Inhalte für Rechtsanwälte-Clients enthalten.
+   - **Positiv** – Verwenden Sie zum Markieren von Dokumenten, die privilegierte Inhalte des Anwaltsclients enthalten.
    
-   - **Negativ** – verwenden Sie diese, um Dokumente zu markieren, die keinen Anwalt-Client-privilegierten Inhalt enthalten.
+   - **Negativ** – Verwenden Sie zum Markieren von Dokumenten, die keine privilegierten Inhalte des Anwaltsclients enthalten.
     
-    Wenn Sie dieses Modell auswählen, wird eine Transpondergruppe mit zwei untergeordneten Tags erstellt (ein untergeordnetes Tag mit dem Namen " **positive** " und das andere " **negative**") für die Überprüfungsgruppe. In diesem Beispiel entspricht jedes untergeordnete Tag einem der möglichen Ausgaben des Erkennungs Modells für das Anwalts Client-Privileg.
+    Wenn Sie dieses Modell auswählen, wird eine Taggruppe mit zwei untergeordneten Tags erstellt (ein untergeordnetes Tag mit dem Namen **Positive** und das andere mit dem Namen **Negative**) für den Überprüfungssatz. In diesem Beispiel entspricht jedes untergeordnete Tag einer der möglichen Ausgaben aus dem Erkennungsmodell für Anwalts-Client-Rechte.
 
-4. Optional können Sie die Tag-Gruppe und die untergeordneten Tags umbenennen. Beispielsweise können Sie das **positive** -Tag in " **privileged** " und das **negative** -Tag auf " **nicht privilegierte**" umbenennen.
+4. Optional können Sie die Taggruppe und die untergeordneten Tags umbenennen. Beispielsweise könnten Sie das **Positive-Tag** in **Privileged** und **das Negative-Tag** in **Not privileged umbenennen.**
 
 ## <a name="how-to-use-smart-tags"></a>Verwenden von Smarttags
 
-Wenn Sie ein Dokument überprüfen, werden die Ergebnisse des Modells neben dem entsprechenden untergeordneten Tag angezeigt. Wenn Sie beispielsweise eine smarttaggruppe für die Erkennung von Anwalts Mandanten Berechtigungen haben und ein Dokument überprüfen, das potenziell privilegiert ist, wird der Grund für diese Schlussfolgerung neben dem entsprechenden Tag angezeigt. Es ist wichtig zu beachten, dass das Tag nicht automatisch auf das Dokument angewendet wird. Der Prüfer trifft die Entscheidung, wie das Dokument markiert werden soll.
+Beim Überprüfen eines Dokuments werden die Ergebnisse des Modells neben dem entsprechenden untergeordneten Tag angezeigt. Wenn Sie beispielsweise über eine Smarttaggruppe für die Erkennung von Anwalts-Client-Berechtigungen verfügen und ein Dokument überprüfen, das potenziell privilegierte Berechtigungen hat, wird der Grund für diese Schlussfolgerung neben dem entsprechenden Tag angezeigt. Beachten Sie, dass das Tag nicht automatisch auf das Dokument angewendet wird. Der Prüfer entscheidet über das Taggen des Dokuments.

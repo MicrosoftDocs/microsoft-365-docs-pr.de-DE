@@ -17,7 +17,7 @@ ID | Kategorie | ER | Addresses | Ports
 ID | Kategorie | ER | Addresses | Ports
 -- | -------------------- | --- | ------------------------------------------------------------------------------------------------------------------------- | ----------------
 9  | Optimieren<BR>Erforderlich | Ja | `*.sharepoint.us`<BR>`20.34.8.0/22, 104.212.50.0/23, 2001:489a:2204:2::/63, 2001:489a:2204:800::/54` | **TCP:** 443, 80
-10  | Standard<BR>Erforderlich | Nein | `*.wns.windows.com, admin.onedrive.us, g.live.com, odc.officeapps.live.com, officeclient.microsoft.com, oneclient.sfx.ms` | **TCP:** 443, 80
+10 | Standard<BR>Erforderlich | Nein | `*.wns.windows.com, admin.onedrive.us, g.live.com, odc.officeapps.live.com, officeclient.microsoft.com, oneclient.sfx.ms` | **TCP:** 443, 80
 20 | Standard<BR>Erforderlich | Nein | `*.svc.ms, az741266.vo.msecnd.net, spoprod-a.akamaihd.net, static.sharepointonline.com, tb.pipe.aria.microsoft.com` | **TCP:** 443, 80
 
 ## <a name="skype-for-business-online-and-microsoft-teams"></a>Skype for Business Online und Microsoft Teams
@@ -33,7 +33,7 @@ ID | Kategorie | ER | Addresses | Ports
 -- | ------------------- | --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------
 11 | Zulassen<BR>Erforderlich | Ja | `*.gov.online.office365.us`<BR>`52.127.37.0/24, 52.127.82.0/23` | **TCP:** 443
 12  | Standard<BR>Erforderlich | Ja | `*.cdn.office365.us` | **TCP:** 443
-13  | Zulassen<BR>Erforderlich | Ja | `*.gov.us.microsoftonline.com, graph.microsoft.us, graph.microsoftazure.us, login.microsoftonline.us`<BR>`20.140.232.0/23, 52.126.194.0/23` | **TCP:** 443
+13 | Zulassen<BR>Erforderlich | Ja | `*.gov.us.microsoftonline.com, graph.microsoft.us, graph.microsoftazure.us, login.microsoftonline.us`<BR>`20.140.232.0/23, 52.126.194.0/23` | **TCP:** 443
 14  | Standard<BR>Erforderlich | Nein | `*.msauth.net, *.msauthimages.us, *.msftauth.net, *.msftauthimages.us, clientconfig.microsoftonline-p.net, graph.windows.net, login.microsoftonline.com, login.microsoftonline-p.com, login.windows.net, loginex.microsoftonline.com, login-us.microsoftonline.com, mscrl.microsoft.com, nexus.microsoftonline-p.com, secure.aadcdn.microsoftonline-p.com` | **TCP:** 443
 15  | Standard<BR>Erforderlich | Nein | `officehome.msocdn.us, prod.msocdn.us` | **TCP:** 443, 80
 16  | Zulassen<BR>Erforderlich | Ja | `portal.office365.us, www.office365.us`<BR>`13.72.179.48/32, 52.227.167.206/32, 52.227.170.242/32` | **TCP:** 443, 80

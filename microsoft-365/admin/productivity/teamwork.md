@@ -28,7 +28,7 @@ ms.locfileid: "51579158"
 ---
 # <a name="teamwork--people-experiences"></a>Teamarbeit – Erfahrungen mit Personen
 
-Die Produktivitätswertung bietet Einblicke in die digitale Transformation Ihrer Organisation durch die Verwendung von Microsoft 365 und die Technologieerfahrungen, die sie unterstützen. Die Bewertung Ihrer Organisation spiegelt Messungen der Benutzer- und Technologieerfahrung wider und kann mit Benchmarks von Organisationen vergleichbar mit Ihrer verglichen werden. Die Kategorie Teamarbeit ist Teil der Messungen, die unter die Erfahrungen von Personen fallen. Weitere Informationen finden Sie in der [Übersicht über die Produktivitätsergebnis](productivity-score.md) und in [der Datenschutzerklärung von Microsoft.](https://privacy.microsoft.com/privacystatement)
+Die Produktivitätswertung bietet Einblicke in die digitale Transformationsreise Ihrer Organisation durch die Verwendung von Microsoft 365 und die Technologieerfahrungen, die sie unterstützen. Die Bewertung Ihrer Organisation spiegelt Messungen der Benutzer- und Technologieerfahrung wider und kann mit Benchmarks von Organisationen vergleichbar mit Ihrer verglichen werden. Die Kategorie Teamarbeit ist Teil der Messungen, die unter die Erfahrungen von Personen fallen. Weitere Informationen finden Sie in der [Übersicht über die Produktivitätsergebnis](productivity-score.md) und in [der Datenschutzerklärung von Microsoft.](https://privacy.microsoft.com/privacystatement)
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
@@ -52,28 +52,28 @@ Wir bieten einen primären Einblick in die Erfahrung, die die wichtigsten Metrik
 
 ### <a name="primary-insight"></a>Primärer Einblick
 
-Der primäre Einblick betrachtet alle Personen, die über E-Mails und Nachrichten in Microsoft Teams kommunizieren und mit Inhalten in der Cloud in freigegebenen Arbeitsbereichen interagieren. In Microsoft 365 sind Microsoft 365-Gruppen die Grundlage für die Zusammenarbeit in einem freigegebenen Arbeitsbereich mit der Möglichkeit, E-Mails an das Gruppenpostfach zu senden, Dateien auf der SharePoint-Teamwebsite zu teilen und Kanalnachrichten über Microsoft Teams zu senden.
+Der primäre Einblick betrachtet alle Personen, die über E-Mails und Nachrichten auf Microsoft Teams kommunizieren und mit Inhalten in der Cloud in freigegebenen Arbeitsbereichen interagieren. In Microsoft 365 sind Microsoft 365-Gruppen die Grundlage für die Zusammenarbeit in einem freigegebenen Arbeitsbereich mit der Möglichkeit, E-Mails an das Gruppenpostfach zu senden, Dateien auf der SharePoint-Teamwebsite zu teilen und Kanalnachrichten über Microsoft Teams.
 
 :::image type="content" source="../../media/teamwork-score.png" alt-text="Diagramm mit primären Einblicken in die Teamarbeitsleistung.":::
 
 1. **Header:** Stellt die Schlüsselmetrik der Personen in ihrer Organisation bereit, die eine der folgenden Aktivitäten ausführen:
-      - Senden von E-Mails an ein Gruppenpostfach über Exchange.
+      - Senden von E-Mails an ein Gruppenpostfach Exchange.
       - Senden von Kanalnachrichten über Teams
-      - Lesen und Erstellen von Inhalten (was wir gemeinsam als Inhaltsinteraktion bezeichnen) auf SharePoint-Teamwebsites.
+      - Lesen und Erstellen von Inhalten (was wir gemeinsam als Inhaltsinteraktion bezeichnen) in SharePoint Teamwebsites.
 
         Als Prozentsatz aller Personen in Ihrer Organisation, die eine der folgenden Aktivitäten ausführen (innerhalb oder außerhalb freigegebener Arbeitsbereiche):
-        - Senden von E-Mails über Exchange.
-        - Senden von Nachrichten (Chat- oder Kanalnachrichten) in Microsoft Teams.
-        - Lesen und Erstellen von Inhalten auf OneDrive oder SharePoint.
+        - Senden von E-Mails Exchange.
+        - Senden von Nachrichten (Chat- oder Kanalnachrichten) auf Microsoft Teams.
+        - Lesen und Erstellen von Inhalten OneDrive oder SharePoint.
 
-            Und Zugriff auf mindestens einen der folgenden Dienste haben: Exchange, Microsoft Teams oder SharePoint
+            Und haben Zugriff auf mindestens einen der folgenden Dienste: Exchange, Microsoft Teams oder SharePoint
 
 1. **Textkörper:** Enthält weitere Informationen dazu, wie die Kommunikation und Interaktion mit Inhalten innerhalb eines freigegebenen Arbeitsbereichs positive Ergebnisse für die Produktivität in Ihrer Organisation haben kann.
 2. **Visualisierung (aktueller Status):**
       - Horizontaler Balken, wobei der blaue Teil den in der Kopfzeile ausgedrückten Prozentsatz darstellt
-      - Hebt den Bruch (Zähler/Nenner) hervor, der für die Berechnung des in der Kopfzeile angezeigten Prozentsatzes verwendet wird.
-        - Zähler: Die Anzahl der Personen in Ihrer Organisation, die E-Mails über Exchange an ein Gruppenpostfach senden, ODER, die Kanalnachrichten über Teams senden oder Inhalte auf SharePoint-Teamwebsites lesen und erstellen.
-        - Denominator: Die Anzahl der Personen in Ihrer Organisation, die E-Mails über Exchange senden oder Nachrichten (Chat- oder Kanalnachrichten) in Microsoft Teams senden, ODER Inhalte auf OneDrive oder SharePoint lesen und erstellen und Zugriff auf mindestens einen der folgenden Dienste haben: Exchange, Microsoft Teams oder SharePoint.
+      - Momente Anteil (Zähler/Nenner), der für die Berechnung des in der Kopfzeile angezeigten Prozentsatzes verwendet wird
+        - Zähler: Die Anzahl der Personen in Ihrer Organisation, die E-Mails über Exchange an ein Gruppenpostfach senden, oder die Kanalnachrichten über Teams senden oder Inhalte in SharePoint Teamwebsites lesen und erstellen.
+        - Nenner: Die Anzahl der Personen in Ihrer Organisation, die E-Mails über Exchange senden oder Nachrichten (Chat- oder Kanalnachrichten) auf Microsoft Teams senden, oder Inhalte auf OneDrive oder SharePoint lesen und erstellen und Zugriff auf mindestens einen der folgenden Dienste haben: Exchange, Microsoft Teams oder SharePoint.
    - Der Peer-Benchmarkwert der Schlüsselmetrik wird auch als Prozentsatz angezeigt.
 3. **Anzeigen von Ressourcen zur Teamarbeit:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
@@ -103,12 +103,12 @@ Darüber hinaus stellen wir zusätzliche Informationen zur Zusammenarbeit von Pe
       - **Senden von E-Mails**: Der farbige Teil und der Anteil stellen den Prozentsatz der Personen dar, die E-Mails an Gruppenpostfächer senden. Der Bruch besteht aus:
         - Zähler: Personen, die E-Mails an Gruppenpostfächer in den letzten 28 Tagen senden.
         - Nenner: Personen, die E-Mails in den letzten 28 Tagen senden. Dies ist dieselbe Gruppe von Personen, die als Senden von E-Mails in der primären Einsicht in die Produktivitätswertung der Kommunikation gekennzeichnet sind.
-      - **Senden von** Nachrichten: Der farbige Teil und der Anteil stellen den Prozentsatz der Personen dar, die Nachrichten in Kanälen in Microsoft Teams senden. Der Bruch besteht aus:
+      - **Senden von** Nachrichten : Der farbige Teil und der Anteil stellen den Prozentsatz der Personen dar, die Nachrichten in Kanälen in Microsoft Teams. Der Bruch besteht aus:
         - Zähler: Personen, die Kanalnachrichten innerhalb der letzten 28 Tage senden.
-        - Nenner: Personen, die Chat- oder Kanalnachrichten in den letzten 28 Tagen senden. Dies ist dieselbe Gruppe von Personen, die als Senden von Nachrichten in Microsoft Teams im primären Einblick der Kommunikationskategorie in Produktivitätsergebnis gekennzeichnet sind.
-    - **Erstellen von** Inhalten: Der farbige Teil und der Anteil stellen den Prozentsatz der Personen dar, die Inhalte auf Microsoft 365 SharePoint-Teamwebsites lesen oder erstellen.
-        - Zähler: Anzahl der Personen, die Inhalte auf Microsoft 365-Teamwebsites mit verbundenen Gruppen lesen oder erstellen.
-        - Nenner: Anzahl der Personen mit Zugriff auf SharePoint, die in den letzten 28 Tagen Inhalte beliebiger Art auf OneDrive- oder #A0 gelesen oder erstellt haben.
+        - Nenner: Personen, die Chat- oder Kanalnachrichten in den letzten 28 Tagen senden. Dies ist dieselbe Gruppe von Personen, die in der primären Microsoft Teams der Kommunikationskategorie in Productivity Score als Senden von Nachrichten gekennzeichnet sind.
+    - **Erstellen von** Inhalten: Der farbige Teil und der Anteil stellen den Prozentsatz der Personen dar, die Inhalte auf Microsoft 365 SharePoint lesen oder erstellen.
+        - Zähler: Anzahl der Personen, die Inhalte auf gruppengebundenen Teamwebsites Microsoft 365 lesen oder erstellen.
+        - Nenner: Anzahl der Personen mit Zugriff auf SharePoint, die in den letzten 28 Tagen Inhalte aller Art auf OneDrive oder SharePoint Websites gelesen oder erstellt haben.
 4. **Anzeigen von verwandten Inhalten:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
 ### <a name="breakdown-of-workspace-engagement-by-size-and-age"></a>Aufschlüsselung der Arbeitsbereichsbindung nach Größe und Alter
@@ -141,18 +141,18 @@ Darüber hinaus stellen wir zusätzliche Informationen zur Zusammenarbeit von Pe
       - **Lesen oder Erstellen von Inhalten:** Prozent der Arbeitsbereiche ohne Tage/1 Tag/2-3 Tage/4+ Tage zum Lesen oder Erstellen von Inhalten pro Woche in den letzten 28 Tagen.
 4. **Anzeigen von verwandten Inhalten:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
-### <a name="use-of-teams-within-microsoft-teams"></a>Verwendung von Teams in Microsoft Teams
+### <a name="use-of-teams-within-microsoft-teams"></a>Verwendung von Teams innerhalb Microsoft Teams
 
-:::image type="content" source="../../media/useof-teams-within-teams.png" alt-text="Diagramm, das zeigt, wie viele Freigabearbeitsräume von Microsoft Teams verwendet werden.":::
+:::image type="content" source="../../media/useof-teams-within-teams.png" alt-text="Diagramm, das zeigt, wie viele Freigabearbeitsräume von Microsoft Teams.":::
 
-1. **Header:** Zeigt die Anzahl der freigegebenen Arbeitsbereiche an, deren Microsoft Teams-Team zugeordnet ist.
-2. **Textkörper:** Enthält Informationen darüber, wie wichtig es ist, ein Microsoft Teams-Team an die freigegebenen Arbeitsbereiche angefügt zu haben, um personen, die ihnen zugeordnet sind, bei der Teamarbeit effektiver zu gestalten.
-3. **Visualisierung:** Der farbige Teil des Donutdiagramms spiegelt den Prozentsatz der Arbeitsbereiche wider, an die ein Microsoft Teams-Team angefügt ist. Der Prozentsatz wird wie folgt berechnet:
+1. **Header:** Zeigt die Anzahl der freigegebenen Arbeitsbereiche an, deren Microsoft Teams zugeordnet ist.
+2. **Textkörper:** Enthält Informationen darüber, wie wichtig es ist, Microsoft Teams einem Team an die freigegebenen Arbeitsbereiche angefügt zu haben, um personen, die ihnen zugeordnet sind, bei der Teamarbeit effektiver zu gestalten.
+3. **Visualisierung:** Der farbige Teil des Donutdiagramms spiegelt den Prozentsatz der Arbeitsbereiche wider, an die Microsoft Teams team angefügt sind. Der Prozentsatz wird wie folgt berechnet:
 
-      - Zähler: Die Anzahl der freigegebenen Arbeitsbereiche in Ihrer Organisation, mit der ein Microsoft Teams-Team in den letzten 28 Tagen verknüpft war
+      - Zähler: Die Anzahl der freigegebenen Arbeitsbereiche in Ihrer Organisation, deren Microsoft Teams in den letzten 28 Tagen zugeordnet waren
       - Nenner: Die Anzahl der freigegebenen Arbeitsbereiche in Ihrer Organisation in den letzten 28 Tagen
 
-        Die Zahl in der Mitte des Donutdiagramms stellt die Gesamtanzahl der freigegebenen Arbeitsbereiche dar, deren Microsoft Teams-Team zugeordnet ist.
+        Die Zahl in der Mitte des Donutdiagramms stellt die Gesamtanzahl der freigegebenen Arbeitsbereiche dar, deren Microsoft Teams zugeordnet sind.
 4. **Anzeigen von verwandten Inhalten:** Wählen Sie diesen Link aus, um Hilfeinhalte anzuzeigen.
 
 ## <a name="related-content"></a>Verwandte Inhalte

@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: fcb7283faed6fe8c5af59cedeeb90577b557ab34
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 976a79be98efcbb5d7fd3749ddb0cdb282b1e3e3
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259535"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274568"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Automatisierte Untersuchung und Reaktion in Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "52259535"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Wenn Ihre Organisation [Microsoft 365 Defender](microsoft-365-defender.md)verwendet, empfängt Ihr Sicherheitsteam eine Warnung im Microsoft 365 Security Center, wenn eine bösartige oder verdächtige Aktivität oder ein Artefakt erkannt wird. Angesichts des scheinbar nie endenden Bedrohungsflusses, der einfingen kann, stehen Sicherheitsteams häufig vor der Herausforderung, das hohe Benachrichtigungsvolumen zu bewältigen. Glücklicherweise umfasst Microsoft 365 Defender funktionen für die automatisierte Untersuchung und Korrektur (AIR), die Ihrem Sicherheitsteam bei der effizienteren und effektiveren Lösung von Bedrohungen helfen können.
+Wenn Ihre Organisation [Microsoft 365 Defender](microsoft-365-defender.md)verwendet, empfängt Ihr Sicherheitsteam eine Warnung im Microsoft 365 Security Center, wenn eine bösartige oder verdächtige Aktivität oder ein Artefakt erkannt wird. Angesichts des scheinbar nie endenden Bedrohungsflusses, der einfingen kann, stehen Sicherheitsteams häufig vor der Herausforderung, das hohe Benachrichtigungsvolumen zu bewältigen. Glücklicherweise umfasst Microsoft 365 Defender funktionen für die automatisierte Untersuchung und Reaktion (AIR), mit denen Ihr Sicherheitsbetriebsteam Bedrohungen effizienter und effektiver adressieren kann.
 
 Dieser Artikel bietet eine Übersicht über AIR und enthält Links zu den nächsten Schritten und zusätzlichen Ressourcen.
 
@@ -59,7 +59,7 @@ In Microsoft 365 Defender funktioniert die automatisierte Untersuchung und Reakt
 
 Imagine einen virtuellen Analysten in Ihrem Sicherheitsteam der Stufe 1 oder Ebene 2 haben. Der virtuelle Analyst imitiert die idealen Schritte, die das Sicherheitsteam zur Untersuchung und Behebung von Bedrohungen ausführen würde. Der virtuelle Analyst könnte 24 x 7 mit unbegrenzter Kapazität arbeiten und eine erhebliche Anzahl von Untersuchungen und Bedrohungsbehebungen übernehmen. Ein solcher virtueller Analytiker könnte die Reaktionszeit erheblich reduzieren und Ihr Sicherheitsteam für andere wichtige Bedrohungen oder strategische Projekte frei geben. Wenn dieses Szenario nach Science Fiction klingt, ist dies nicht der Fall! Ein solcher virtueller Analyst ist Teil Ihrer Microsoft 365 Defender Suite, und der Name ist *automatisierte Untersuchung und Antwort.*
 
-Automatisierte Untersuchungs- und Reaktionsfunktionen ermöglichen Es Ihrem Sicherheitsteam, die Kapazität Ihrer Organisation zur Verarbeitung von Sicherheitswarnungen und Vorfällen erheblich zu erhöhen. Mit der automatisierten Untersuchung und Reaktion können Sie die Kosten für die Behandlung von Untersuchungs- und Behebungsaktivitäten reduzieren und das Beste aus Ihrer Bedrohungsschutzsuite nutzen. Automatisierte Untersuchungs- und Reaktionsfunktionen unterstützen Ihr Sicherheitsteam durch:
+Automatisierte Untersuchungs- und Reaktionsfunktionen ermöglichen Es Ihrem Sicherheitsteam, die Kapazität Ihrer Organisation zur Verarbeitung von Sicherheitswarnungen und Vorfällen erheblich zu erhöhen. Mit automatisierter Untersuchung und Reaktion können Sie die Kosten für den Umgang mit Untersuchungs- und Reaktionsaktivitäten reduzieren und das Beste aus Ihrer Bedrohungsschutzsuite nutzen. Automatisierte Untersuchungs- und Reaktionsfunktionen unterstützen Ihr Sicherheitsteam durch:
 
 1. Bestimmen, ob eine Bedrohung Eine Aktion erfordert.
 2. Durchführen (oder Empfehlen) der erforderlichen Korrekturaktionen.

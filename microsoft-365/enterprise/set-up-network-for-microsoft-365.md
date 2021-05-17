@@ -1,5 +1,5 @@
 ---
-title: Einrichten Ihres Netzwerks für Microsoft 365
+title: Richten Sie Ihr Netzwerk für Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,7 +19,7 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: ''
-description: Hier finden Sie Links zu Artikeln mit Informationen, die Sie beim Einrichten Ihres Netzwerks für Microsoft 365 unterstützen, einschließlich einer Übersicht über die Netzwerkkonnektivität und einer Liste der Endpunkte.
+description: Hier finden Sie Links zu Artikeln mit Informationen, mit denen Sie Ihr Netzwerk für Microsoft 365 einrichten können, einschließlich einer Übersicht über die Netzwerkkonnektivität und einer Liste der Endpunkte.
 ms.openlocfilehash: f0e0499c70745d31399240372c190758285408aa
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -27,25 +27,25 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46690342"
 ---
-# <a name="set-up-your-network-for-microsoft-365"></a>Einrichten Ihres Netzwerks für Microsoft 365
+# <a name="set-up-your-network-for-microsoft-365"></a>Richten Sie Ihr Netzwerk für Microsoft 365
 
 *Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Ein wichtiger Bestandteilihres Microsoft 365-onboardings besteht darin, sicherzustellen, dass Ihre Netzwerk-und Internet Verbindungen für einen optimierten Zugriff eingerichtet sind. Das Konfigurieren Ihres lokalen Netzwerks für den Zugriff auf eine global verteilte Software-as-a-Service (SaaS)-Cloud unterscheidet sich von einem herkömmlichen Netzwerk, das für den Datenverkehr zu lokalen Rechenzentren und einer zentralen Internet Verbindung optimiert ist. 
+Ein wichtiger Teil ihres Microsoft 365 ist, sicherzustellen, dass Ihre Netzwerk- und Internetverbindungen für den optimierten Zugriff eingerichtet sind. Die Konfiguration Ihres lokalen Netzwerks für den Zugriff auf eine global verteilte Software-as-a-Service(SaaS)-Cloud ist anders als ein herkömmliches Netzwerk, das für den Datenverkehr zu lokalen Rechenzentren und eine zentrale Internetverbindung optimiert ist. 
 
 Lesen Sie diese Artikel, um die wichtigsten Unterschiede zu verstehen und um Ihre Edgegeräte, Clientcomputer und lokalen Netzwerk zu ändern, um die beste Leistung für Ihre lokalen Benutzer zu erreichen.
 
-## <a name="how-microsoft-365-networking-works"></a>Funktionsweise von Microsoft 365-Netzwerk
+## <a name="how-microsoft-365-networking-works"></a>Funktionsweise Microsoft 365 Netzwerk
 
-In diesen Artikeln finden Sie eine Übersicht über die Konnektivität für Microsoft 365:
+In den folgenden Artikeln finden Sie eine Übersicht über die Konnektivität für Microsoft 365:
 
 - [Microsoft 365 – Überblick über die Netzwerkkonnektivität](microsoft-365-networking-overview.md)
-- [Microsoft 365-Prinzipien für die Netzwerkkonnektivität](microsoft-365-network-connectivity-principles.md)
+- [Microsoft 365 Netzwerkkonnektivitätsprinzipien](microsoft-365-network-connectivity-principles.md)
 - [Bewerten der Microsoft 365-Netzwerkkonnektivität](assessing-network-connectivity.md)
 
-Ratschläge zur Verbesserung der Leistung finden Sie unter [Netzwerkplanung und Leistungsoptimierung für Microsoft 365](network-planning-and-performance.md).
+Hinweise zur Leistungssteigerung finden Sie unter [Netzwerkplanung und Leistungsoptimierung für Microsoft 365](network-planning-and-performance.md).
 
-## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Unterstützung von Microsoft 365 Networking als Netzwerkgeräte Anbieter
+## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Unterstützung Microsoft 365 Netzwerk als Anbieter von Netzwerkgeräten
 
 Wenn Sie ein Lieferant von Netzwerkgeräten sind, treten Sie dem [Office 365-Netzwerk-Partnerprogramm](microsoft-365-networking-partner-program.md) bei. Registrieren Sie sich für das Programm, um Kennektivitätsprinzipien von Office 365-Netzwerken in Ihre Produkte und Lösungen zu integrieren. 
 
@@ -76,9 +76,9 @@ Weitere Informationen über zusätzliche Endpunkte finden Sie in folgenden Artik
 - [Netzwerkanforderungen in Office 2016 für Mac](network-requests-in-office-2016-for-mac.md)
 
 
-## <a name="additional-topics-for-microsoft-365-networking"></a>Weitere Themen für Microsoft 365 Networking
+## <a name="additional-topics-for-microsoft-365-networking"></a>Zusätzliche Themen für Microsoft 365 Netzwerk
 
-In diesen Artikeln finden Sie spezielle Themen in Microsoft 365 Networking:
+In diesen Artikeln finden Sie spezielle Themen in Microsoft 365 Netzwerk:
 
 - [Netzwerke für die Inhaltsübermittlung](content-delivery-networks.md)
 - [IPv6-Unterstützung in Office 365-Diensten](ipv6-support.md)

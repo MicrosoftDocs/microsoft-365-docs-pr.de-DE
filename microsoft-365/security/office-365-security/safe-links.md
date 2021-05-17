@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In diesem Artikel erfahren Administratoren mehr über den Schutz sicherer Links in Defender for Office 365, um ihre Organisation vor Phishing und anderen Angriffen zu schützen, die bösartige URLs verwenden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c93ed2ec46cd0fd82ae1808ff7cfdb4a4f758117
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 86ecea1e250821f6a7f08d204586db0e60052e5c
+ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246501"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52274436"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Sichere Links in Microsoft Defender für Office 365
 
@@ -65,13 +65,13 @@ Der Schutz sicherer Links ist an den folgenden Speicherorten verfügbar:
 
 Dieser Artikel enthält detaillierte Beschreibungen der folgenden Arten von Einstellungen für sichere Links:
 
-- **Einstellungen in Richtlinien** für sichere Links: Diese Einstellungen gelten nur für die Benutzer, die in den spezifischen Richtlinien enthalten sind, und die Einstellungen können zwischen den Richtlinien unterschiedlich sein. Zu diesen Einstellungen gehören:
+- **Einstellungen in Richtlinien** für sichere Links: Diese Einstellungen gelten nur für die Benutzer, die in den spezifischen Richtlinien enthalten sind, und die Einstellungen können zwischen den Richtlinien unterschiedlich sein. Dazu zählen die folgenden Einstellungen:
 
   - [Einstellungen für sichere Links für E-Mail-Nachrichten](#safe-links-settings-for-email-messages)
   - [Einstellungen für sichere Links für Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - ["Die folgenden URLs nicht umschreiben" in Richtlinien für sichere Links](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Einstellungen für globale sichere** Links: Diese Einstellungen sind global konfiguriert, nicht in Richtlinien für sichere Links. Die Einstellungen gelten jedoch nur für Benutzer, die in aktiven Richtlinien für sichere Links enthalten sind. Zu diesen Einstellungen gehören:
+- **Einstellungen für globale sichere** Links: Diese Einstellungen sind global konfiguriert, nicht in Richtlinien für sichere Links. Die Einstellungen gelten jedoch nur für Benutzer, die in aktiven Richtlinien für sichere Links enthalten sind. Dazu zählen die folgenden Einstellungen:
 
   - [Einstellungen für sichere Links für Office 365 Apps](#safe-links-settings-for-office-365-apps)
   - [Liste "Blockieren der folgenden URLs" für sichere Links](#block-the-following-urls-list-for-safe-links)
@@ -107,9 +107,7 @@ Die Einstellungen in Richtlinien für sichere Links, die für E-Mail-Nachrichten
   - URLs ohne gültige Reputation werden asynchron im Hintergrund detoniert.
 
 - **Anwenden der Echtzeit-URL-Überprüfung** auf verdächtige Links und Links, die auf Dateien verweisen: Ermöglicht das Scannen von Links in Echtzeit, einschließlich Links in E-Mail-Nachrichten, die auf herunterladbare Inhalte verweisen. Der empfohlene Wert ist aktiviert.
-
   - **Warten Sie, bis die URL-Überprüfung abgeschlossen ist, bevor Sie die Nachricht senden:**
-
     - Aktiviert: Nachrichten, die URLs enthalten, werden bis zum Abschluss der Überprüfung gehalten. Nachrichten werden nur zugestellt, nachdem die URLs als sicher bestätigt wurden. Dies ist der empfohlene Wert.
     - Deaktiviert: Wenn die URL-Überprüfung nicht abgeschlossen werden kann, senden Sie die Nachricht trotzdem.
 
@@ -128,7 +126,6 @@ Die Einstellungen in Richtlinien für sichere Links, die für E-Mail-Nachrichten
   Weitere Informationen zu den empfohlenen Werten für Standard- und Strikte Richtlinieneinstellungen für Richtlinien für sichere Links finden Sie unter [Richtlinieneinstellungen](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)für sichere Links .
 
 - **Empfängerfilter:** Sie müssen die Empfängerbedingungen und Ausnahmen angeben, die bestimmen, auf wen die Richtlinie angewendet wird. Sie können die folgenden Eigenschaften für Bedingungen und Ausnahmen verwenden:
-
   - **Der Empfänger ist**
   - **Die Empfängerdomäne ist**
   - **Der Empfänger ist Mitglied von**
@@ -259,26 +256,23 @@ Wenn ein Benutzer in einer aktiven Richtlinie für sichere Links auf einen block
 
 Sie konfigurieren die Liste der URLs in den globalen Einstellungen für sichere Links. Anweisungen finden Sie unter [Configure the "Block the following URLs" list](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center).
 
-> [!NOTE]
-> 
-> - Eine wirklich universelle Liste der überall blockierten URLs finden Sie unter [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-> 
-> - Grenzwerte:
->   - Die maximale Anzahl von Einträgen beträgt 500.
->   - Die maximale Länge eines Eintrags beträgt 128 Zeichen.
->   - Alle Einträge dürfen 10.000 Zeichen nicht überschreiten.
-> 
-> - Schließen Sie am Ende der URL keinen Schrägstrich ( `/` ) ein. Verwenden Sie beispielsweise `https://www.contoso.com` , nicht `https://www.contoso.com/` .
-> 
-> - Eine nur Domänen-URL (z. B. oder ) blockiert jede `contoso.com` `tailspintoys.com` URL, die die Domäne enthält.
-> 
-> - Sie können eine Unterdomäne blockieren, ohne die vollständige Domäne zu blockieren. Blockiert beispielsweise jede URL, die die Unterdomäne enthält, aber nicht `toys.contoso.com*` URLs, die die vollständige Domäne `contoso.com` enthalten.
-> 
-> - Sie können bis zu drei Platzhalter ( ) pro `*` URL-Eintrag angeben.
+**Hinweise**:
+
+- Eine wirklich universelle Liste der überall blockierten URLs finden Sie unter [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+- Grenzwerte für die **Liste Blockieren der folgenden URLs:**
+  - Die maximale Anzahl von Einträgen beträgt 500.
+  - Die maximale Länge eines Eintrags beträgt 128 Zeichen.
+  - Alle Einträge dürfen 10.000 Zeichen nicht überschreiten.
+- Schließen Sie am Ende der URL keinen Schrägstrich ( `/` ) ein. Verwenden Sie beispielsweise `https://www.contoso.com` , nicht `https://www.contoso.com/` .
+- Eine nur Domänen-URL (z. B. oder ) blockiert jede `contoso.com` `tailspintoys.com` URL, die die Domäne enthält.
+- Sie können eine Unterdomäne blockieren, ohne die vollständige Domäne zu blockieren. Blockiert beispielsweise jede URL, die die Unterdomäne enthält, aber nicht `toys.contoso.com*` URLs, die die vollständige Domäne `contoso.com` enthalten.
+- Sie können bis zu drei Platzhalter ( ) pro `*` URL-Eintrag angeben.
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>Eintragssyntax für die Liste "Die folgenden URLs blockieren"
 
 Beispiele für die Werte, die Sie eingeben können, und deren Ergebnisse werden in der folgenden Tabelle beschrieben:
+
+<br>
 
 ****
 
@@ -299,24 +293,24 @@ Jede Richtlinie für sichere Links enthält die folgende **URLs-Liste** nicht um
 
 Informationen zum Hinzufügen von Einträgen zur Liste in neuen oder vorhandenen Richtlinien für sichere Links finden Sie unter [Create Safe Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) or Modify Safe Links [policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies).
 
-> [!NOTE]
-> 
-> - Die folgenden Clients erkennen die Folgenden **URLs-Listen** in Richtlinien für sichere Links nicht umschreiben. Benutzer, die in den Polizeien enthalten sind, können basierend auf den Ergebnissen der Überprüfung sicherer Links in diesen Clients am Zugriff auf die URLs blockiert werden:
-> 
->   - Microsoft Teams
->   - Office-Web-Apps
-> 
->   Eine wirklich universelle Liste der überall zulässigen URLs finden Sie unter [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-> 
-> - Erwägen Sie, der Liste häufig verwendete interne URLs hinzuzufügen, um die Benutzerfreundlichkeit zu verbessern. Wenn Sie beispielsweise über lokale Dienste wie Skype for Business oder SharePoint verfügen, können Sie diese URLs hinzufügen, um sie vom Scannen auszuschließen.
-> 
-> - Wenn Sie die folgenden **URLs-Einträge** in Ihren Richtlinien für sichere Links noch nicht umgeschrieben haben, überprüfen Sie unbedingt die Listen, und fügen Sie bei Bedarf Platzhalter hinzu. Ihre Liste hat z. B. einen Eintrag wie, und Sie entscheiden sich später dafür, `https://contoso.com/a` Unterpfade wie `https://contoso.com/a/b` hinzuzufügen. Anstatt einen neuen Eintrag hinzuzufügen, fügen Sie dem vorhandenen Eintrag einen Platzhalter hinzu, sodass er zu `https://contoso.com/a/*` wird.
-> 
-> - Sie können bis zu drei Platzhalter ( ) pro `*` URL-Eintrag angeben. Platzhalter enthalten explizit Präfixe oder Unterdomänen. Beispielsweise ist der Eintrag nicht identisch mit , da Personen Unterdomänen und Pfade in der `contoso.com` `*.contoso.com/*` `*.contoso.com/*` angegebenen Domäne besuchen können.
+**Hinweise**:
+
+- Die folgenden Clients erkennen die Folgenden **URLs-Listen** in Richtlinien für sichere Links nicht umschreiben. Benutzer, die in den Polizeien enthalten sind, können basierend auf den Ergebnissen der Überprüfung sicherer Links in diesen Clients am Zugriff auf die URLs blockiert werden:
+  - Microsoft Teams
+  - Office-Web-Apps
+
+  Eine wirklich universelle Liste der überall zulässigen URLs finden Sie unter [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+
+- Erwägen Sie, der Liste häufig verwendete interne URLs hinzuzufügen, um die Benutzerfreundlichkeit zu verbessern. Wenn Sie beispielsweise über lokale Dienste wie Skype for Business oder SharePoint verfügen, können Sie diese URLs hinzufügen, um sie vom Scannen auszuschließen.
+- Wenn Sie die folgenden **URLs-Einträge** in Ihren Richtlinien für sichere Links noch nicht umgeschrieben haben, überprüfen Sie unbedingt die Listen, und fügen Sie bei Bedarf Platzhalter hinzu. Ihre Liste hat z. B. einen Eintrag wie, und Sie entscheiden sich später dafür, `https://contoso.com/a` Unterpfade wie `https://contoso.com/a/b` hinzuzufügen. Anstatt einen neuen Eintrag hinzuzufügen, fügen Sie dem vorhandenen Eintrag einen Platzhalter hinzu, sodass er zu `https://contoso.com/a/*` wird.
+- Sie können bis zu drei Platzhalter ( ) pro `*` URL-Eintrag angeben. Platzhalter enthalten explizit Präfixe oder Unterdomänen. Beispielsweise ist der Eintrag nicht identisch mit , da Personen Unterdomänen und Pfade in der `contoso.com` `*.contoso.com/*` `*.contoso.com/*` angegebenen Domäne besuchen können.
+- Wenn eine URL die automatische Umleitung für HTTP zu HTTPS verwendet (z. B. 302-Umleitung für ), und Sie versuchen, http- und HTTPS-Einträge für dieselbe URL in die Liste ein eingeben, wird möglicherweise festgestellt, dass der zweite URL-Eintrag den ersten `http://www.contoso.com` `https://www.contoso.com` URL-Eintrag ersetzt. Dieses Verhalten tritt nicht auf, wenn die HTTP- und DIE HTTPS-Versionen der URL vollständig getrennt sind.
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>Eintragssyntax für die Liste "Die folgenden URLs nicht umschreiben"
 
 Beispiele für die Werte, die Sie eingeben können, und deren Ergebnisse werden in der folgenden Tabelle beschrieben:
+
+<br>
 
 ****
 

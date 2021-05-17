@@ -44,7 +44,7 @@ Office-Anwendungen wie Word, Excel und PowerPoint erkennen bei Anmeldung automat
 
 ## <a name="onedrive-for-business-sync-client"></a>OneDrive for Business-Synchronisierungsclient
 
-Der OneDrive for Business-Synchronisierungsclient (Version 17.3.6943.0625 und höher) erkennt automatisch den richtigen geografischen OneDrive for Business-Standort für den Benutzer. Die synchronisierungsclient Unterstützung umfasst die Möglichkeit, Gruppenbasierte Websites unabhängig von ihrem geografischen Standort zu synchronisieren. Beachten Sie, dass der Groove-Synchronisierungsclient nicht für Multi-Geo-Umgebungen unterstützt wird. 
+Der OneDrive for Business-Synchronisierungsclient (Version 17.3.6943.0625 und höher) erkennt automatisch den richtigen geografischen OneDrive for Business-Standort für den Benutzer. Die Synchronisierungsclientunterstützung umfasst die Möglichkeit, gruppenbasierte Websites unabhängig von ihrem geografischen Standort zu synchronisieren. Beachten Sie, dass der Groove-Synchronisierungsclient nicht für Multi-Geo-Umgebungen unterstützt wird. 
 
 ## <a name="onedrive-for-business-location"></a>OneDrive for Business-Standort
 

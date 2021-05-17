@@ -34,13 +34,13 @@ ms.locfileid: "51570351"
 > [!IMPORTANT]
 > Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
 
-[Regeln zur Reduzierung der Angriffsfläche](enable-attack-surface-reduction.md) verhindern Softwareverhalten, das häufig missbraucht wird, um Ihr Gerät oder Netzwerk zu gefährdet. Beispielsweise kann ein Angreifer versuchen, ein nicht signiertes Skript von einem USB-Laufwerk auszuführen, oder ein Makro in einem Office-Dokument ruft direkt die Win32-API auf. Regeln zur Reduzierung der Angriffsfläche können diese Arten riskanter Verhaltensweisen einschränken und die Defensivhaltung Ihrer Organisation verbessern.
+[Regeln zur Reduzierung der Angriffsfläche](enable-attack-surface-reduction.md) verhindern Softwareverhalten, das häufig missbraucht wird, um Ihr Gerät oder Netzwerk zu gefährdet. Beispielsweise kann ein Angreifer versuchen, ein nicht signiertes Skript von einem USB-Laufwerk aus auszuführen, oder ein Makro in einem Office direkt an die Win32-API aufrufen lassen. Regeln zur Reduzierung der Angriffsfläche können diese Arten riskanter Verhaltensweisen einschränken und die Defensivhaltung Ihrer Organisation verbessern.
 
 Erfahren Sie, wie Sie Regeln zur Reduzierung [](#customize-the-notification) der Angriffsfläche anpassen, indem Sie Dateien und Ordner ausschließen oder der [Benachrichtigungsbenachrichtigung,](#exclude-files-and-folders) die auf dem Computer eines Benutzers angezeigt wird, benutzerdefinierten Text hinzufügen.
 
-Sie können Regeln zur Reduzierung der Angriffsfläche für Geräte mit einer der folgenden Editionen und Versionen von Windows festlegen:
-- Windows 10 Pro, [Version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) oder höher
-- Windows 10 Enterprise, [Version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) oder höher
+Sie können Regeln zur Reduzierung der Angriffsfläche für Geräte festlegen, auf der eine der folgenden Editionen und Versionen von Windows:
+- Windows 10 Pro, Version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) oder höher
+- Windows 10 Enterprise, Version [1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) oder höher
 - Windows Server, [Version 1803 (Halbjährskanal)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) oder höher
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19) Sie können Gruppenrichtlinien, PowerShell und #A0 (Mobile Device Management) verwenden, um diese Einstellungen zu konfigurieren.
 
@@ -62,7 +62,7 @@ Regelbeschreibung | GUID
 -|-|-
 Alle Office-Anwendungen am Erstellen von untergeordneten Prozessen hindern | D4F940AB-401B-4EFC-AADC-AD5F3C50688A
 Ausführung potenziell verborgener Skripts blockieren | 5BEB7EFE-FD9A-4556-801D-275E5FFC04CC
-Blockieren von Win32-API-Aufrufen von Office-Makros | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B
+Blockieren von Win32-API-Aufrufen Office Makros | 92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B
 Office-Anwendungen am Erstellen ausführbarer Inhalte hindern | 3B576869-A4EC-4529-8536-B80A7769E899
 Office-Anwendungen am Einfügen von Code in untergeordnete Prozesse hindern | 75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84
 JavaScript und VBScript am Starten heruntergeladener ausführbarer Inhalte hindern | D3E037E1-3EB8-44C8-A917-57927947596D
@@ -72,7 +72,7 @@ Erweiterten Schutz vor Ransomware verwenden | c1db55ab-c21a-4637-bb3f-a12568109d
 Diebstahl von Anmeldeinformationen aus dem Subsystem für die lokale Sicherheitsautorität (lsass.exe) blockieren | 9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2
 Erstellung von Prozessen durch PSExec- und WMI-Befehle blockieren | d1e49aac-8f56-4280-b9ba-993a6d77406c
 Nicht vertrauenswürdige und nicht signierte Prozess, die von USB ausgeführt werden, blockieren | b2b3f03d-6a65-4f7b-a9c7-1c7ef74a9ba4
-Blockieren der Erstellung untergeordneter Prozesse durch Office-Kommunikationsanwendungen | 26190899-1602-49e8-8b27-eb1d0a1ce869
+Blockieren Office von Kommunikationsanwendungen am Erstellen untergeordneter Prozesse | 26190899-1602-49e8-8b27-eb1d0a1ce869
 Adobe Reader am Erstellen von untergeordneten Prozessen hindern | 7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c
 Persistenz durch WMI-Ereignisabonnement blockieren | e6db77e5-3df2-4cf1-b95a-636979351e5b
 
@@ -80,11 +80,11 @@ Details zu [den einzelnen](attack-surface-reduction.md) Regeln finden Sie im The
 
 ### <a name="use-group-policy-to-exclude-files-and-folders"></a>Verwenden von Gruppenrichtlinien zum Ausschließen von Dateien und Ordnern
 
-1. Öffnen Sie auf dem Computer für die Gruppenrichtlinienverwaltung die [Gruppenrichtlinienverwaltungskonsole,](https://technet.microsoft.com/library/cc731212.aspx)klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt, das Sie konfigurieren möchten, und wählen Sie Bearbeiten **aus.**
+1. Öffnen Sie auf dem Computer, der Ihre Gruppenrichtlinie verwaltet, die [Gruppenrichtlinien-Verwaltungskonsole](https://technet.microsoft.com/library/cc731212.aspx), klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt, das Sie konfigurieren möchten, und wählen Sie **Bearbeiten** aus.
 
 2. Wechseln Sie **im Gruppenrichtlinienverwaltungs-Editor** zu **Computerkonfiguration,** und klicken Sie auf **Administrative Vorlagen**.
 
-3. Erweitern Sie die Struktur **auf Windows-Komponenten**  >  **Microsoft Defender Antivirus** Windows Defender Exploit  >  **Guard** Attack Surface  >  **Reduction**.
+3. Erweitern Sie die **Struktur, Windows komponenten**  >  **Microsoft Defender Antivirus**  >  **Windows Defender Exploit Guard** Attack Surface Reduction  >  **.**
 
 4. Doppelklicken Sie auf die Einstellung **Dateien und Pfade von Attack surface reduction Rules** ausschließen, und legen Sie die Option auf Aktiviert **.** Wählen **Sie Anzeigen** aus, und geben Sie jede Datei oder jeden Ordner in der Spalte **Wertname** ein. Geben **Sie 0** in die **Spalte Wert** für jedes Element ein.
 
@@ -111,7 +111,7 @@ Verwenden Sie [den ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionOn
 
 ## <a name="customize-the-notification"></a>Anpassen der Benachrichtigung
 
-Sie können die Benachrichtigung anpassen, wenn eine Regel ausgelöst wird, und eine App oder Datei sperren. Weitere Informationen finden [Sie im Windows Security-Artikel.](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center)
+Sie können die Benachrichtigung anpassen, wenn eine Regel ausgelöst wird, und eine App oder Datei sperren. Weitere Informationen [finden Windows-Sicherheit](/windows/security/threat-protection/windows-defender-security-center/windows-defender-security-center#customize-notifications-from-the-windows-defender-security-center) Artikel.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

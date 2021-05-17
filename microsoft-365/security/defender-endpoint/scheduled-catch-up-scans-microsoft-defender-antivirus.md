@@ -155,7 +155,7 @@ Verwenden Sie die folgenden Cmdlets:
 Set-MpPreference -ScanOnlyIfIdleEnabled
 ```
 
-Weitere Informationen finden Sie unter [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/).
+Weitere Informationen finden Sie unter [PowerShell-Cmdlets verwenden, um Microsoft Defender Antivirus zu konfigurieren und auszuführen](use-powershell-cmdlets-microsoft-defender-antivirus.md) und unter [Defender-Cmdlets](/powershell/module/defender/).
 
 ### <a name="use-windows-management-instruction-wmi"></a>Verwenden Windows Management Instruction (WMI)
 
@@ -251,4 +251,4 @@ Sie können erzwingen, dass eine Überprüfung nach jedem Schutzupdate [mit Grup
 - [Konfigurieren der Scanoptionen von Microsoft Defender Antivirus](configure-advanced-scan-types-microsoft-defender-antivirus.md)
 - [Verwalten Microsoft Defender Antivirus Updates und Anwenden von Baselines](manage-updates-baselines-microsoft-defender-antivirus.md)
 - [Verwalten, wann Schutzupdates heruntergeladen und angewendet werden sollen](manage-protection-update-schedule-microsoft-defender-antivirus.md) 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

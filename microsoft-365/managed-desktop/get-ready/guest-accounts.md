@@ -31,12 +31,12 @@ Wenn Sie Einschränkungen festlegen, die mit diesen Einstellungen interagieren, 
 
 ## <a name="steps-to-get-ready"></a>Schritte für die ersten Schritte
 
-1. Überprüfen [Sie die Voraussetzungen für Microsoft Managed Desktop](prerequisites.md).
-2. Verwenden [Sie Die Bereitschaftsbewertungstools](readiness-assessment-tool.md).
+1. Überprüfung der [Voraussetzungen für Microsoft Managed Desktop](prerequisites.md).
+2. Verwendung des [Tools zur Bereitschaftsbewertung](readiness-assessment-tool.md).
 3. [Voraussetzungen für Gastkonten](guest-accounts.md) (Dieser Artikel)
 4. [Netzwerkkonfiguration für Microsoft Managed Desktop](network.md)
 5. [Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop](certs-wifi-lan.md)
 6. [Vorbereiten des lokalen Ressourcenzugriffs für Microsoft Managed Desktop](authentication.md)
-7. [Anwendungen in Microsoft Managed Desktop](apps.md)
-8. [Voraussetzungen von zugeordneten Laufwerken für Microsoft Managed Desktop](mapped-drives.md)
-9. [Voraussetzungen von Druckressourcen für Microsoft Managed Desktop](printing.md)
+7. [Apps im Microsoft Managed Desktop](apps.md)
+8. [Vorbereiten zugeordneter Laufwerke für Microsoft Managed Desktop](mapped-drives.md)
+9. [Vorbereiten der Druckressourcen für Microsoft Managed Desktop](printing.md)

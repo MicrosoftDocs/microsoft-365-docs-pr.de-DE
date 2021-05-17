@@ -42,7 +42,7 @@ Das Hilfsprogramm verfügt über die folgenden Befehle:
 ```console
 MpCmdRun.exe [command] [-options]
 ```
-Hier ein Beispiel:
+Hier ist ein Beispiel:
 
 ```console
 MpCmdRun.exe -Scan -ScanType 2
@@ -86,4 +86,4 @@ MpCmdRun.exe -Scan -ScanType 2
 - [Konfigurieren von Microsoft Defender Antivirus-Features](configure-microsoft-defender-antivirus-features.md)
 - [Verwalten Microsoft Defender Antivirus in Ihrem Unternehmen](configuration-management-reference-microsoft-defender-antivirus.md)
 - [Referenzthemen für Verwaltungs- und Konfigurationstools](configuration-management-reference-microsoft-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

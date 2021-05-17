@@ -34,7 +34,7 @@ ms.locfileid: "52275264"
 > Der Microsoft Defender Antivirus cloud service ist ein Mechanismus für die Bereitstellung aktualisierten Schutzes für Ihr Netzwerk und Ihre Endpunkte. Obwohl er als Clouddienst bezeichnet wird, handelt es sich nicht nur um den Schutz von Dateien, die in der Cloud gespeichert sind. Stattdessen werden verteilte Ressourcen und maschinelles Lernen verwendet, um Ihren Endpunkten Schutz zu bieten, und dies mit einer Geschwindigkeit, die wesentlich schneller ist als herkömmliche Security Intelligence-Updates.
 
 Microsoft Defender Antivirus verwendet mehrere Erkennungs- und Verhinderungstechnologien, um präzisen, echtzeitgenauen und intelligenten Schutz zu bieten. Lernen Sie die erweiterten Technologien kennen, die im Kern des [Microsoft Defender for Endpoint-Schutzes der nächsten Generation zu finden sind.](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
-![Liste der Microsoft Defender AV-Engines](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+![Liste der Microsoft Defender Antiviren-Module](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 Sie können den Microsoft Defender Antivirus von der Cloud übermittelten Schutz auf verschiedene Weise aktivieren oder deaktivieren:
 
@@ -97,7 +97,7 @@ Weitere Informationen zum Konfigurieren Microsoft Endpoint Configuration Manager
 
 4. Erweitern der Struktur zum Windows **von > Microsoft Defender Antivirus > MAPS**
 
-5. Doppelklicken Sie auf **Microsoft MAPS beitreten.** Stellen Sie sicher, dass die Option aktiviert ist und auf **Basic MAPS** oder Advanced MAPS **festgelegt ist.** Wählen Sie **OK** aus.
+5. Doppelklicken Sie auf **Microsoft MAPS beitreten.** Stellen Sie sicher, dass die Option aktiviert ist und auf **Basic MAPS** oder Advanced MAPS **festgelegt ist.** Klicken Sie auf **OK**.
 
 6. Doppelklicken Sie **auf Dateibeispiele senden, wenn eine weitere Analyse erforderlich ist.** Stellen Sie sicher, dass die erste Option auf **Aktiviert festgelegt** ist und dass die anderen Optionen auf eine der folgenden Optionen festgelegt sind:
 
@@ -108,7 +108,7 @@ Weitere Informationen zum Konfigurieren Microsoft Endpoint Configuration Manager
         > Die **Option Sichere Beispiele** senden (1) bedeutet, dass die meisten Beispiele automatisch gesendet werden. Dateien, die wahrscheinlich personenbezogene Informationen enthalten, werden weiterhin aufgefordert und erfordern eine zusätzliche Bestätigung.
         > Wenn Sie die Option **auf Always Prompt** (0) festlegen, wird der Schutzstatus des Geräts gesenkt. Das Festlegen auf **Nie senden** (2) bedeutet, dass das [Feature "Bei](configure-block-at-first-sight-microsoft-defender-antivirus.md) erster Sicht blockieren" von Microsoft Defender for Endpoint nicht funktioniert.
 
-7. Wählen Sie **OK** aus.
+7. Klicken Sie auf **OK**.
 
 ## <a name="use-powershell-cmdlets-to-turn-on-cloud-delivered-protection"></a>Verwenden von PowerShell-Cmdlets zum Aktivieren des in der Cloud übermittelten Schutzes
 
@@ -141,13 +141,13 @@ Weitere Informationen zu zulässigen Parametern finden Sie [unter Windows Defend
 ## <a name="turn-on-cloud-delivered-protection-on-individual-clients-with-the-windows-security-app"></a>Aktivieren des in der Cloud übermittelten Schutzes auf einzelnen Clients mit der Windows-Sicherheit App
 
 > [!NOTE]
-> Wenn die Einstellung Lokale Einstellung für die Berichterstellung von **Microsoft MAPS-Gruppenrichtlinien** konfigurieren auf **Deaktiviert** festgelegt ist, ist die **cloudbasierte** Schutzeinstellung in Windows Einstellungen ausgegraut und nicht verfügbar. Änderungen, die über ein Gruppenrichtlinienobjekt vorgenommen werden, müssen zuerst auf einzelnen Endpunkten bereitgestellt werden, bevor die Einstellung in einem Windows Einstellungen.
+> Wenn die Einstellung Lokale Einstellung für die Berichterstellung von **Microsoft MAPS-Gruppenrichtlinien** konfigurieren auf **Deaktiviert** festgelegt ist, ist die **cloudbasierte** Schutzeinstellung in Windows Einstellungen ausgegraut und nicht verfügbar. Änderungen, die über ein Gruppenrichtlinienobjekt vorgenommen wurden, müssen zunächst auf einzelnen Endpunkten bereitgestellt werden, bevor die Einstellung in den Windows-Einstellungen aktualisiert wird.
 
 1. Öffnen Sie Windows-Sicherheit App, indem Sie das Schildsymbol in der Taskleiste auswählen oder im Startmenü nach **Defender suchen.**
 
 2. Wählen Sie **die Kachel &** Bedrohungsschutz (oder das Schildsymbol auf der linken Menüleiste) und dann die Bezeichnung **Virenschutzeinstellungen &** aus:
 
-    ![Screenshot der Bezeichnung & Virenschutzeinstellungen in der Windows-Sicherheit App](images/defender/wdav-protection-settings-wdsc.png)
+    ![Screenshot der Bezeichnung für die Einstellungen des Viren- und Bedrohungsschutzes in der Windows-Sicherheit-App](images/defender/wdav-protection-settings-wdsc.png)
 
 3. Vergewissern Sie **sich, dass cloudbasierter Schutz** und **automatische Beispielübermittlung** auf **Ein umgeschaltet werden.**
 
@@ -163,4 +163,4 @@ Weitere Informationen zu zulässigen Parametern finden Sie [unter Windows Defend
 - [Defender-Cmdlets](/powershell/module/defender/)
 - [Verwenden des von Microsoft in der Cloud übermittelten Schutzes in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
 - [Erstellen und Bereitstellen von Antischalwarerichtlinien: Cloudschutzdienst](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -1,5 +1,5 @@
 ---
-title: Platzhalter Artikel
+title: Platzhalterartikel
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -20,6 +20,6 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46690540"
 ---
-# <a name="placeholder-article"></a>Platzhalter Artikel
+# <a name="placeholder-article"></a>Platzhalterartikel
 
-Dieser Artikel ist ein Platzhalter für jetzt.
+Dieser Artikel ist derzeit ein Platzhalter.

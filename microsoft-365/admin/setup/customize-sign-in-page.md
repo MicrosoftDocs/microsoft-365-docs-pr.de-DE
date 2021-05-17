@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
-description: Passen Sie die Microsoft 365-Anmeldeseite mithilfe von Azure Active Directory an. Sie können der Anmeldeseite eine Illustration, ein Logo und Text hinzufügen.
+description: Passen Sie Microsoft 365 Anmeldeseite mithilfe der Azure Active Directory. Sie können der Anmeldeseite eine Illustration, ein Logo und Text hinzufügen.
 ms.openlocfilehash: 9947d57e4bf35ef0a3409db58f2c663959c2dd49
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -35,7 +35,7 @@ ms.locfileid: "51579122"
   
 ## <a name="add-company-branding-to-your-sign-in-page-and-access-panel-pages"></a>Hinzufügen von Unternehmensbranding zu Ihrer Anmeldeseite und zu Ihrer Zugriffsbereichsseite
 
-Wenn Sie über ein kostenpflichtiges Abonnement für Microsoft 365 Business, Microsoft Dynamics CRM Online, Enterprise Mobility Suite oder andere Microsoft-Dienste verfügen, haben Sie ein kostenloses Abonnement für Azure Active Directory. Sie können Azure Active Directory verwenden, um Benutzer- und Gruppenkonten zu erstellen und zu verwalten und Unternehmensbranding zu Ihren Seiten hinzuzufügen. Um dieses Abonnement zu aktivieren und auf das Microsoft Azure Management Portal zu zugreifen, müssen Sie einen einmaligen Registrierungsprozess abschließen. Anschließend können Sie über Ihren Microsoft-Dienst, der es verwendet, auf Azure Active Directory zugreifen. Anweisungen zum Registrieren Ihres Microsoft 365-Abonnements finden Sie unter Registrieren Ihres kostenlosen [Azure Active Directory-Abonnements,](../../compliance/use-your-free-azure-ad-subscription-in-office-365.md)und allgemeine Verwaltungsanweisungen finden Sie unter Verwalten des Verzeichnisses für Ihr Microsoft [365-Abonnement in Azure.](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) 
+Wenn Sie über ein kostenpflichtiges Abonnement für Microsoft 365 Business, Microsoft Dynamics CRM Online, Enterprise Mobility Suite oder andere Microsoft-Dienste verfügen, haben Sie ein kostenloses Abonnement für Azure Active Directory. Sie können Azure Active Directory zum Erstellen und Verwalten von Benutzer- und Gruppenkonten und zum Hinzufügen von Unternehmensbranding zu Ihren Seiten verwenden. Um dieses Abonnement zu aktivieren und auf das Microsoft Azure Zutritt zu erhalten, müssen Sie einen einzigen Registrierungsprozess abschließen. Anschließend können Sie auf Azure Active Directory von Ihrem Microsoft-Dienst zugreifen, der ihn verwendet. Anweisungen zum Registrieren Ihres Microsoft 365-Abonnements finden Sie unter Registrieren Ihres kostenlosen [Azure Active Directory-Abonnements](../../compliance/use-your-free-azure-ad-subscription-in-office-365.md)und unter Verwalten des Verzeichnisses für Ihr [Microsoft 365-Abonnement in Azure](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory) für allgemeine Verwaltungsanweisungen. 
   
 Die folgende Abbildung zeigt, welche Teile der Anmeldeseite in Azure geändert werden können.
   

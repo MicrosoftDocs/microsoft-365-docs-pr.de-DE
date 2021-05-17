@@ -1,5 +1,5 @@
 ---
-title: Benchmarks und Vergleiche mit Office 365 Netzwerkbewertung
+title: Office 365 und Vergleiche der Netzwerkpunktzahl
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,7 +13,7 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Benchmarks und Vergleiche mit Office 365 Netzwerkbewertung
+description: Office 365 und Vergleiche der Netzwerkpunktzahl
 ms.openlocfilehash: e84a6dd63376c55c7da0abd4c414577c94f760d4
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -21,4 +21,4 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46690374"
 ---
-# <a name="office-365-network-score-benchmarks-and-comparisons"></a>Benchmarks und Vergleiche mit Office 365 Netzwerkbewertung
+# <a name="office-365-network-score-benchmarks-and-comparisons"></a>Office 365 und Vergleiche der Netzwerkpunktzahl

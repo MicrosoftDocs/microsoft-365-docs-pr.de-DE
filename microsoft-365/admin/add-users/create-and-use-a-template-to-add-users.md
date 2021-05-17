@@ -44,12 +44,12 @@ Wenn Sie nach dem Hinzufügen eines Benutzers eine Vorlage erstellen, werden die
 - Lizenzauswahl
 - Anwendungsauswahl
 - Rolle
-- Die meisten Profilinformationen, **z. B. Auftragsprofil,** **Abteilung,** **Office,** **Office-Telefon** und **Adresse der Straße** 
+- Die meisten Profilinformationen, **z. B. Auftragsprofil,** **Abteilung,** **Office**, **Office Und** **Adresse** 
 
 Die folgenden Informationen sind benutzerspezifisch und werden nicht in der Vorlage gespeichert:
 
 - Vor- und Nachname
-- Name
+- Anzeigename
 - Benutzername
 - Auswahl zum Senden des Kennworts in E-Mail und an wen die Kennwort-E-Mail gesendet wird
 - Mobiltelefonnummer

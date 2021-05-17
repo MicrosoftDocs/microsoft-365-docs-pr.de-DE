@@ -35,17 +35,17 @@ ms.locfileid: "52274676"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Wenn eine automatisierte Untersuchung mit [](m365d-autoir.md) Microsoft 365 Defender ausgeführt wird, sind Details zu dieser Untersuchung sowohl während als auch nach dem automatisierten Untersuchungsprozess verfügbar. Wenn Sie über die [erforderlichen Berechtigungen](m365d-action-center.md#required-permissions-for-action-center-tasks) verfügen, können Sie diese Details in einer unter Anzeige mit Untersuchungsdetails anzeigen. Diese Ansicht bietet Ihnen den aktuellen Status und die Möglichkeit, ausstehende Aktionen zu genehmigen. 
+Bei Microsoft 365 Defender stehen [](m365d-autoir.md) Bei der automatischen Untersuchung details zu dieser Untersuchung sowohl während als auch nach dem automatisierten Untersuchungsprozess zur Verfügung. Wenn Sie über die [erforderlichen Berechtigungen](m365d-action-center.md#required-permissions-for-action-center-tasks) verfügen, können Sie diese Details in einer unter Anzeige mit Untersuchungsdetails anzeigen. Diese Ansicht bietet Ihnen den aktuellen Status und die Möglichkeit, ausstehende Aktionen zu genehmigen. 
 
 ![Untersuchungsdetails](../../media/mtp-air-investdetails.png)
 
 ## <a name="new-unified-investigation-page"></a>(NEU!) Seite "Einheitliche Untersuchung"
 
-Die Untersuchungsseite wurde kürzlich aktualisiert, um Informationen auf Ihren Geräten, E-Mail- und Zusammenarbeitsinhalten zu enthalten. Die neue, einheitliche Untersuchungsseite definiert eine gemeinsame Sprache und bietet eine einheitliche Erfahrung für automatische Untersuchungen in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) und Microsoft Defender für Office [365](../office-365-security/defender-for-office-365.md). Um auf die Seite "Einheitliche Untersuchung" zu zugreifen, wählen Sie den Link im gelben Banner aus, auf dem Sie sehen werden:
+Die Untersuchungsseite wurde kürzlich aktualisiert, um Informationen auf Ihren Geräten, E-Mail- und Zusammenarbeitsinhalten zu enthalten. Die neue, einheitliche Untersuchungsseite definiert eine gemeinsame Sprache und bietet eine einheitliche Erfahrung für automatische Untersuchungen in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) und Microsoft Defender für [Office 365.](../office-365-security/defender-for-office-365.md) Um auf die Seite "Einheitliche Untersuchung" zu zugreifen, wählen Sie den Link im gelben Banner aus, auf dem Sie sehen werden:
 
 - Jede Untersuchungsseite im Office 365 Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) )
 - Beliebige Untersuchungsseite im Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
-- Vorfall oder Action Center-Erfahrung im Microsoft 365 Security Center ( [https://security.microsoft.com](https://security.microsoft.com) )
+- Vorfall- oder Aktionscentererfahrungen im Microsoft 365 Security Center ( [https://security.microsoft.com](https://security.microsoft.com) )
 
 ## <a name="open-the-investigation-details-view"></a>Öffnen der Anzeige mit Untersuchungsdetails
 
@@ -105,7 +105,7 @@ In der Anzeige mit Untersuchungsdetails können Sie Informationen im **Untersuch
 | Registerkarte | Beschreibung |
 |:--------|:--------|
 | **Untersuchungsdiagramm**   | Bietet eine visuelle Darstellung der Untersuchung. Stellt Entitäten dar und listet gefundene Bedrohungen zusammen mit Warnungen und Informationen dazu auf, ob Aktionen genehmigt werden müssen.<br/>Sie können ein Element im Diagramm auswählen, um weitere Details anzuzeigen. Wenn Sie z. B. das **Symbol Nachweis** auswählen, werden Sie zur Registerkarte **Nachweis** angezeigt, auf der Sie erkannte Entitäten und deren Urteile sehen können. |
-| **Benachrichtigungen**    | Listet die mit der Untersuchung verbundenen Warnungen auf. Warnungen können von Bedrohungsschutzfeatures auf dem Gerät eines Benutzers, in Office-Apps, Microsoft Cloud App Security und anderen Microsoft 365 Defender-Features stammen.|
+| **Benachrichtigungen**    | Listet die mit der Untersuchung verbundenen Warnungen auf. Warnungen können von Bedrohungsschutzfeatures auf dem Gerät eines Benutzers, in Office Apps, Microsoft Cloud App Security und anderen Funktionen Microsoft 365 werden.|
 | **Geräte** | Listet die in der Untersuchung enthaltenen Geräte zusammen mit ihrer Behebungsstufe auf. (Korrekturstufen entsprechen der [Automatisierungsebene für Gerätegruppen.)](m365d-configure-auto-investigation-response.md#review-or-change-the-automation-level-for-device-groups) |
 | **Postfächer** |Listet Postfächer auf, die von erkannten Bedrohungen betroffen sind.  |
 | **Benutzer**  | Listet Benutzerkonten auf, die von erkannten Bedrohungen betroffen sind. |

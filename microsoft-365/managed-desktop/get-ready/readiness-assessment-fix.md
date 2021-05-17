@@ -79,7 +79,7 @@ Sie verfügen über mindestens eine Richtlinie für bedingten Zugriff, die auf a
 
 Sie verfügen über Richtlinien für bedingten Zugriff, die verhindern können, dass Microsoft Managed Desktop den Microsoft Managed Desktop-Dienst verwaltet. Während der Registrierung schließen wir Microsoft Managed Desktop-Dienstkonten aus relevanten Richtlinien für bedingten Zugriff aus und wenden neue Richtlinien für bedingten Zugriff an, um den Zugriff auf diese Konten einzuschränken. Weitere Informationen zu diesen Dienstkonten finden Sie unter [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
-**Fehler**
+**Error**
 
 Die Intune-Administratorrolle verfügt nicht über ausreichende Berechtigungen für diese Prüfung. Sie benötigen außerdem eine der folgenden Azure AD-Rollen, um diese Prüfung ausführen zu können:
 
@@ -160,7 +160,7 @@ Sie haben einige mehrstufige Authentifizierungsrichtlinien als erforderlich für
 
 Für Richtlinien für bedingten Zugriff ist eine mehrstufige Authentifizierung erforderlich, die verhindern könnte, dass Microsoft Managed Desktop den Microsoft Managed Desktop-Dienst verwaltet. Während der Registrierung schließen wir Microsoft Managed Desktop-Dienstkonten aus relevanten Richtlinien für bedingten Zugriff aus und wenden neue Richtlinien für bedingten Zugriff an, um den Zugriff auf diese Konten einzuschränken. Weitere Informationen zu diesen Dienstkonten finden Sie unter [Standard operating procedures](../service-description/operations-and-monitoring.md#standard-operating-procedures).
 
-**Fehler**
+**Error**
 
 Die Intune-Administratorrolle verfügt nicht über ausreichende Berechtigungen für diese Prüfung. Sie benötigen außerdem eine der folgenden Azure AD-Rollen, um diese Prüfung ausführen zu können:
 

@@ -36,7 +36,7 @@ Eine unternehmensweite E-Mail-Signatur wird in jeder E-Mail angezeigt, die von P
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Wählen Sie im Microsoft 365 Admin Center Die Option **Exchange aus.**
+1. Wählen Sie im Microsoft 365 Admin Center die **Option Exchange** aus.
 1. Wählen **Sie Nachrichtenfluss aus.**
 1. Wählen **Sie Hinzufügen +** aus, und wählen Sie dann **Haftungsausschlüsse anwenden aus.**
 1. Auf der **Seite Neue Regel:**

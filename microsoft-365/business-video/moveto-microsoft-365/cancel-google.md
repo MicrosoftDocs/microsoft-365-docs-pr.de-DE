@@ -1,5 +1,5 @@
 ---
-title: Kündigen von Google Workspace (und Behalten Ihrer Domäne)
+title: Abbrechen von Google Workspace (und Behalten Ihrer Domäne)
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -31,12 +31,12 @@ ms.locfileid: "49928258"
 ---
 # <a name="cancel-google-workspace-subscription"></a>Kündigen des Google Workspace-Abonnements
 
-1. Melden Sie sich bei [Google Admin an,](https://admin.google.com/) und wechseln Sie zur **Abrechnung.**
-1. Wählen Sie **in der Liste** "Abonnements" Ihr G Suite-Abonnement aus, **kündigen** Sie das Abonnement, und wählen Sie dann **"Weiter" aus.**
+1. Melden Sie sich bei [Google Admin an,](https://admin.google.com/) und wechseln Sie zu **Abrechnung**.
+1. Wählen Sie **in der Liste** Abonnements Ihr G Suite-Abonnement, Abonnement **kündigen** und dann **Weiter aus.**
 
     > [!IMPORTANT]
     > Ihr Abonnement wird sofort gekündigt, und Sie können diese Aktion nicht rückgängig machen.
 
-    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Screenshot der Google Admin -Abrechnungsseite.":::
+    :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Screenshot der Seite &quot;Google Admin Billing&quot;.":::
 
-Beachten Sie, dass die Domänenregistrierung möglicherweise nicht in der Liste "Abonnements" angezeigt wird, wenn Es sich bei Ihrem DNS-Hostanbieter nicht um Google-Domänen handelt.
+Beachten Sie, dass die Domänenregistrierung möglicherweise nicht in der Liste Abonnements angezeigt wird, wenn Ihr DNS-Hostanbieter keine Google-Domänen ist.

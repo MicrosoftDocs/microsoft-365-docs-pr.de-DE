@@ -1,5 +1,5 @@
 ---
-title: Arbeiten mit Kommunikationen in Advanced eDiscovery
+title: Arbeiten mit kommunikation in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Mit Advanced eDiscovery können Sie den Workflow für rechtliche Aufbewahrungs Benachrichtigungen einfach verwalten, um Benachrichtigungsverwalter in rechtlichen Ermittlungen zu benachrichtigen.
+description: Advanced eDiscovery erleichtert die Verwaltung des Benachrichtigungsworkflows für gesetzliche Benachrichtigungen rund um die Benachrichtigung von Verwahrern in juristischen Untersuchungen.
 ms.openlocfilehash: 28b719a83cbc1608ad5468e401a8b7946cb8da5f
 ms.sourcegitcommit: bd51f626f0c7788c2a3cf89deee25264659aebd5
 ms.translationtype: MT
@@ -23,35 +23,35 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 04/17/2020
 ms.locfileid: "43551240"
 ---
-# <a name="work-with-communications-in-advanced-ediscovery"></a>Arbeiten mit Kommunikationen in Advanced eDiscovery
+# <a name="work-with-communications-in-advanced-ediscovery"></a>Arbeiten mit kommunikation in Advanced eDiscovery
 
-Advanced eDiscovery ermöglicht juristischen Abteilungen, Ihre Prozesse bei der Verfolgung und Verteilung von Benachrichtigungen über rechtliche Aufbewahrungsfristen zu vereinfachen. Das Tool "Depotbank-Kommunikation" ermöglicht es juristischen Abteilungen, den gesamten rechtlichen Aufbewahrungs Prozess, von erst Benachrichtigungen über Erinnerungen bis hin zu Eskalationen, an einem einzigen Ort zu verwalten und zu automatisieren.
+Advanced eDiscovery ermöglicht es Rechtsabteilungen, ihre Prozesse im Rahmen der Nachverfolgung und Verteilung von Benachrichtigungen über gesetzliche Benachrichtigungen zu vereinfachen. Das Kommunikationstool des Wahrerdienstes ermöglicht es rechtsabteilungen, den gesamten Prozess der rechtlichen Benachrichtigungen zu verwalten und zu automatisieren, von anfänglichen Benachrichtigungen über Erinnerungen bis zu Eskalationen, und dies alles an einem einzigen Ort.
 
-## <a name="what-is-a-legal-hold-notification"></a>Was ist eine rechtliche Aufbewahrungs Benachrichtigung?
+## <a name="what-is-a-legal-hold-notification"></a>Was ist eine Gesetzliche Haltebenachrichtigung?
 
-Eine rechtliche Aufbewahrungspflicht (auch als *Beweissicherungsverfahren*bezeichnet) ist eine Benachrichtigung, die von der Rechtsabteilung einer Organisation an Mitarbeiter, Kontingente Mitarbeiter oder Verwalter von Daten gesendet wird, die möglicherweise für eine rechtliche Untersuchung relevant sind. Diese Benachrichtigungen weisen Verwalter an, elektronisch gespeicherte Informationen sowie alle Inhalte beizubehalten, die für eine aktive oder bevorstehende Rechtsfrage relevant sein können. Juristische Teams müssen wissen, dass jede Depotbank die angegebenen Anweisungen erhalten, gelesen, verstanden und vereinbart hat.
+Ein Rechtlicher Haltebereich (auch bekannt als Rechtsstreitigkeiten ) ist eine Benachrichtigung, die von der Rechtsabteilung einer Organisation an Mitarbeiter, Kontingentmitarbeiter oder Verwahrer von Daten gesendet wird, die für eine rechtliche Untersuchung relevant sein können. In diesen Benachrichtigungen werden Beauftragte angewiesen, elektronisch gespeicherte Informationen sowie Inhalte zu speichern, die für eine aktive oder bevorstehende Rechtssache relevant sein können. Die Rechtsteams müssen wissen, dass jeder Custodian die angegebenen Anweisungen erhalten, gelesen, verstanden und zugestimmt hat.
 
-## <a name="the-legal-hold-notification-process"></a>Benachrichtigungsprozess für Legal Hold
+## <a name="the-legal-hold-notification-process"></a>Benachrichtigungsverfahren für gesetzliches Halteverfahren
 
-Eine Organisation hat die Pflicht, relevante Informationen beizubehalten, wenn Sie von einer bevorstehenden Rechtsstreitigkeiten oder behördlichen Untersuchung erfahren. Um die Aufbewahrungsanforderungen einer Untersuchung einzuhalten, sollte die Organisation potenzielle Verwalter unverzüglich über ihre Pflicht zur Wahrung relevanter Informationen informieren.
+Eine Organisation ist verpflichtet, relevante Informationen zu erhalten, wenn sie von einer bevorstehenden Rechtsstreitigkeiten oder behördlichen Untersuchung erfahren. Um die Erhaltungsanforderungen einer Untersuchung zu erfüllen, sollte die Organisation potenzielle Verwahrer sofort über ihre Pflicht zur Aufbewahrung relevanter Informationen informieren.
 
-Mit Advanced eDiscovery können Legal Teams ihren rechtlichen Aufbewahrungs Benachrichtigungs Workflow erstellen und anpassen. Das Tool "Depotbank-Kommunikation" ermöglicht es juristischen Teams, die folgenden Hinweise und Workflows zu konfigurieren:
+Mit Advanced eDiscovery können Rechtsteams ihren Benachrichtigungsworkflow für gesetzliches Haltebereich erstellen und anpassen. Mit dem Kommunikationstool für Custodian können Rechtsteams die folgenden Hinweise und Workflows konfigurieren:
 
-1. **Veröffentlichungshinweis:** Eine rechtliche Aufbewahrungsfrist wird durch eine Mitteilung der Rechtsabteilung an Verwalter ausgestellt (oder eingeleitet), die möglicherweise relevante Informationen zum Fall haben. In diesem Hinweis werden die Verwalter angehalten, alle Informationen beizubehalten, die für die Ermittlung möglicherweise erforderlich sind.
+1. **Benachrichtigung zur Ausstellung:** Ein Rechtlicher Haltebemerkung wird durch eine Benachrichtigung der Rechtsabteilung an Verwahrer ausgegeben (oder initiiert), die über relevante Informationen zu dem Fall verfügen. Diese Benachrichtigung weist die Verwalter an, alle Informationen, die für die Ermittlung benötigt werden könnten, aufzubewahren.
 
-2. **Hinweis zur erneuten Veröffentlichung:** In einem Fall müssen Verwalter möglicherweise zusätzliche Inhalte (oder weniger Inhalte) aufbewahren, als zuvor angefordert wurden. In diesem Szenario können Sie den vorhandenen Aufbewahrungs Hinweis aktualisieren und ihn erneut an Verwalter ausgeben.
+2. **Benachrichtigung zur erneuten Ausstellung:** Während eines Falls müssen Verwahrer möglicherweise zusätzliche Inhalte (oder weniger Inhalte) beibehalten, als zuvor angefordert wurden. In diesem Szenario können Sie den vorhandenen Haltehinweise aktualisieren und erneut an Verwahrer ausheften.
 
-3. **Veröffentlichungshinweis:** Sobald ein Problem gelöst ist und die Depotbank nicht mehr einer Aufbewahrungspflicht unterliegt, kann die Depotbank aus dem Fall entlassen werden. Darüber hinaus können Sie die Depotbank darüber informieren, dass Sie nicht mehr für die Aufbewahrung von Inhalten benötigt werden, und Anweisungen zum Fortsetzen ihrer normalen Arbeitsaktivität im Hinblick auf Ihre Daten geben.
+3. **Veröffentlichungshinweise:** Sobald eine Sache gelöst wurde und der Custodian keiner Aufbewahrungsanforderung mehr unterliegt, kann der Custodian aus dem Fall entlassen werden. Darüber hinaus können Sie den Verwahrer darüber informieren, dass er keine Inhalte mehr beibehalten muss, und Anweisungen zum Fortsetzen der normalen Arbeitsaktivität in Bezug auf ihre Daten bereitstellen.
 
-4. **Erinnerungen und Eskalationen:** In einigen Fällen genügt ein Hinweis nur, um die Anforderungen an die rechtliche Ermittlung zu erfüllen. Mit jeder Benachrichtigung können Legal Teams einen Mahn-und Eskalations Workflow planen, um nicht reagierende depotverwalter automatisch zu verfolgen.
+4. **Erinnerungen und Eskalationen:** In einigen Fällen reicht die Benachrichtigung nicht aus, um gesetzliche Ermittlungsanforderungen zu erfüllen. Mit jeder Benachrichtigung können Rechtsabteilungen eine Reihe von Erinnerungs- und Eskalations-Workflows planen, damit nicht reagierende Verwalter automatisch nachverfolgt werden.
 
-   - **Erinnerungen:** Nachdem ein rechtlicher Aufbewahrungs Bescheid für eine Reihe von Depotstellen ausgestellt oder erneut ausgestellt wurde, kann eine Organisation Erinnerungen einrichten, um nicht reagierende Verwalter zu warnen.
+   - **Erinnerungen:** Nachdem eine gesetzliche Haltebenachrichtigung an eine Gruppe von Verwahrern ausgestellt oder erneut ausgestellt wurde, kann eine Organisation Erinnerungen einrichten, um nicht reagierende Verwahrer zu warnen.
 
-   - **Eskalationen:** In einigen Fällen kann das juristische Team einen Eskalations Workflow einrichten, um nicht reagierende Verwalter und deren Vorgesetzten zu benachrichtigen, wenn eine Depotbank auch nach einer Reihe von Erinnerungen über einen bestimmten Zeitraum nicht mehr reagiert.
+   - **Eskalationen:** Wenn ein Verwalter auch nach einer Reihe von Erinnerungen über einen bestimmten Zeitraum nicht reagiert, kann das Rechtsteam in einigen Fällen einen Eskalationsworkflow einrichten, um nicht reagierende Verwalter und deren Vorgesetzte zu benachrichtigen.
 
-Weitere Informationen zum Verwalten des Depotbank-Kommunikationsprozesses finden Sie in den folgenden Themen: 
+Weitere Informationen zum Verwalten des Custodian-Kommunikationsprozesses finden Sie unter: 
 
-- [Erstellen eines rechtlichen Aufbewahrungs Vermerks](create-hold-notification.md)
+- [Erstellen eines Rechtlichen Haltehinweises](create-hold-notification.md)
 
 - [Verwenden des Kommunikations-Editors](using-communications-editor.md)
 

@@ -20,7 +20,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Benutzer in Microsoft 365 Business löschen.
+description: Erfahren Sie, wie Sie Benutzer in Microsoft 365 löschen.
 ms.openlocfilehash: 8b2f0db242197aecb04df2261caac3688ad4f1b2
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "51578927"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
 
-Wenn ein Mitarbeiter das Unternehmen verlässt, müssen Sie ihn aus Microsoft 365 Business entfernen. Bevor Sie dies tun, sollten Sie den Zugriff auf Unternehmensdateien blockieren, die von ihnen erstellten Dokumente beibehalten und mehrere andere Verwaltungsaufgaben im Zusammenhang mit dem Entfernen eines Benutzers ausführen.
+Wenn ein Mitarbeiter das Unternehmen verlässt, müssen Sie ihn aus Microsoft 365 entfernen. Bevor Sie dies tun, sollten Sie den Zugriff auf Unternehmensdateien blockieren, die von ihnen erstellten Dokumente beibehalten und mehrere andere Verwaltungsaufgaben im Zusammenhang mit dem Entfernen eines Benutzers ausführen.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
@@ -40,7 +40,7 @@ Wenn ein Mitarbeiter das Unternehmen verlässt, müssen Sie ihn aus Microsoft 36
 1. Wählen Sie den Benutzer aus, den Sie entfernen möchten, und wählen Sie dann **Benutzer löschen aus.**
 1. Aktivieren Sie das Kontrollkästchen, um ihre Lizenz zu entfernen, und aktivieren Sie das Kontrollkästchen, um ihre E-Mail-Aliase zu entfernen.
 1. Wenn der Benutzer über Stellvertretungspostfachberechtigungen verfügt, können Sie diese hier entfernen.
-1. Aktivieren Sie das Kontrollkästchen, um einem anderen Benutzer Zugriff auf OneDrive des ehemaligen Mitarbeiters zu geben, und suchen Sie nach diesem Benutzer.
+1. Aktivieren Sie das Kontrollkästchen, um einem anderen Benutzer Zugriff auf die OneDrive des ehemaligen Mitarbeiters zu geben und nach diesem Benutzer zu suchen.
 1. Wählen Sie ihren Namen aus.
 1. Dieser Benutzer hat nun 30 Tage Zeit, um die Dateien an einen neuen Speicherort zu verschieben.
 1. Aktivieren Sie das Kontrollkästchen, um einem anderen Benutzer Zugriff auf die E-Mails des ehemaligen Mitarbeiters zu geben, und wählen Sie **Benutzer auswählen und E-Mail-Optionen festlegen aus.**

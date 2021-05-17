@@ -33,7 +33,7 @@ ms.locfileid: "52275304"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Verwenden Microsoft Intune zum Konfigurieren von Überprüfungsoptionen
 
-Weitere Informationen finden Sie unter Configure [device restriction settings in Microsoft Intune](/intune/device-restrictions-configure) and Microsoft Defender Antivirus device restriction settings for Windows 10 in [Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+Für mehr Details lesen Sie [Konfigurieren von Einstellungen für Geräteeinschränkungen in Microsoft Intune](/intune/device-restrictions-configure) und [Einstellungen für Microsoft Defender Antivirus-Geräteeinschränkungen für Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Verwenden Microsoft Endpoint Manager zum Konfigurieren von Überprüfungsoptionen
 
@@ -98,4 +98,4 @@ Wenn Microsoft Defender Antivirus eine Bedrohung in einer E-Mail erkennt, werden
 - [Anpassen, Initiieren und Überprüfen der Ergebnisse Microsoft Defender Antivirus Überprüfungen und Korrekturen](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Konfigurieren und Ausführen von bedarfsgesteuerten Scans durch Microsoft Defender Antivirus](run-scan-microsoft-defender-antivirus.md)
 - [Konfigurieren geplanter Microsoft Defender Antivirus Scans](scheduled-catch-up-scans-microsoft-defender-antivirus.md)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: Erfahren Sie mehr über die verschiedenen Gerätezustände in der Liste Geräteaktionen in Admin Home in Microsoft 365 Business.
+description: Erfahren Sie mehr über die verschiedenen Gerätezustände in der Liste Geräteaktionen in Admin home in Microsoft 365 Business.
 ms.openlocfilehash: e6f1b428413d094e0a1ce3afb026528074038736
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -44,7 +44,7 @@ Geräte in der Liste **Geräteaktionen** (Startseite für Administratoren \> **G
 |**Status**|**Beschreibung**|
 |:-----|:-----|
 |Von Intune verwaltet  <br/> |Verwaltet von Microsoft 365 Business Premium.  <br/> |
-|Abkoppeln ausstehend  <br/> |Microsoft 365 Business Premium macht sich bereit, Unternehmensdaten vom Gerät zu entfernen.  <br/> |
+|Abkoppeln ausstehend  <br/> |Microsoft 365 Business Premium bereiten sich darauf vor, Unternehmensdaten vom Gerät zu entfernen.  <br/> |
 |Abkoppeln wird ausgeführt  <br/> |Microsoft 365 Business Premium entfernt derzeit Unternehmensdaten vom Gerät.  <br/> |
 |Fehler beim Abkoppeln  <br/> | Beim Entfernen von Unternehmensdaten ist ein Fehler aufgetreten.  <br/> |
 |Zurückziehen abgebrochen  <br/> |Die Aktion "Zurückziehen" wurde abgebrochen.  <br/> |
@@ -54,5 +54,5 @@ Geräte in der Liste **Geräteaktionen** (Startseite für Administratoren \> **G
 |Wipe canceled  <br/> |Die Werkslöschung wurde abgebrochen.  <br/> |
 |Fehlerhaft  <br/> |Eine Aktion ist ausstehend (oder in Bearbeitung), aber das Gerät ist seit mehr als 30 Tagen nicht eingecheckt.  <br/> |
 |Löschen steht aus  <br/> |Die Löschaktion steht aus.  <br/> |
-|Ermittelt  <br/> |Microsoft 365 Business Premium hat das Gerät erkannt.  <br/> |
+|Ermittelt  <br/> |Microsoft 365 Business Premium Das Gerät wurde erkannt.  <br/> |
    

@@ -58,5 +58,5 @@ Sie können auch eine PowerShell herunterladen, die alle in der Anleitung beschr
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Bereitstellen Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)

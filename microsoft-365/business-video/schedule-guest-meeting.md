@@ -19,7 +19,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie eine Teams-Besprechung mit Gästen planen.
+description: Erfahren Sie, wie Sie eine Teams mit Gästen planen.
 ms.openlocfilehash: 1a48fa290211507453004c54637e588ad9ad6759
 ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
@@ -31,17 +31,17 @@ ms.locfileid: "51578699"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 
-Sie können Personen von außerhalb Ihrer Organisation zu einer Besprechung einladen, ohne sie Microsoft Teams hinzufügen zu müssen. So funktioniert es für Ihre Kunden oder Partner, wenn sie an einer Besprechung [ohne ein Teams-Konto teilnehmen.](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508)
+Sie können Personen von außerhalb Ihrer Organisation zu einer Besprechung einladen, ohne sie zu einer Besprechung Microsoft Teams. So funktioniert es für Ihre Kunden oder Partner, wenn sie an einer Besprechung ohne Teams [teilnehmen.](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508)
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
 Mit Microsoft Teams können Sie neue Teams erstellen, während Sie neue Projekte starten oder Kunden hinzufügen.
 
-1. Wählen Sie **auf der Registerkarte Teams** die Option Team beitreten oder erstellen, Team **erstellen,** **Team von** Grund auf erstellen und dann **Privat aus.** 
+1. Wählen Sie **Teams** Registerkarte Team beitreten oder **erstellen,** Team **erstellen,** **Team** von Grund auf erstellen und dann **Privat aus.**
 2. Geben Sie einen Namen für Ihr Team, eine Beschreibung ein, und wählen Sie dann **Erstellen aus.**
 3. Fügen Sie **auf der** Seite Mitglieder hinzufügen interne Mitglieder hinzu, indem Sie sie suchen und auswählen, und fügen Sie Gastmitglieder hinzu, indem Sie ihre E-Mail-Adresse eingeben, und wählen Sie dann **Hinzufügen aus.**
 
-    Wenn Sie sehen, dass wir  **keine Übereinstimmungen finden,** müssen Sie die Gastfreigabe aktivieren. Wechseln Sie zum Microsoft 365 Admin Center, wählen Sie das Teams Admin Center aus, wählen Sie **Organisationsweite** **Einstellungen,** Gastzugriff aus, und aktivieren Sie **Gastzugriff in Teams zulassen.** Diese Änderung kann bis zu 24 Stunden dauern.
+    Wenn Sie sehen, dass wir  **keine Übereinstimmungen finden,** müssen Sie die Gastfreigabe aktivieren. Wechseln Sie zum Microsoft 365 Admin Center, wählen Sie das Teams Admin Center aus, wählen Sie **Organisationsweite** **Einstellungen,** Gastzugriff aus, und aktivieren Sie Gastzugriff **in** Teams . Diese Änderung kann bis zu 24 Stunden dauern.
 
 1. Wählen Sie  **Schließen** aus. Ihre Gäste und Mitglieder erhalten Einladungen an das Team.
 2. Geben Sie im Kanal Allgemein eine Begrüßung für alle ein, und wählen Sie **Senden aus.**

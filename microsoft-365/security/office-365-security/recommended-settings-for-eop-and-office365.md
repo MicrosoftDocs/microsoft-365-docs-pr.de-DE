@@ -1,6 +1,6 @@
 ---
-title: Microsoft-Empfehlungen für EOP- und Defender for Office 365-Sicherheitseinstellungen
-keywords: Office 365-Sicherheitsempfehlungen, Sender Policy Framework, Domänenbasierte Nachrichtenberichterstattung und -konformität, DomainKeys Identified Mail, Schritte, Funktionsweise, Sicherheitsgrundwerte, Baselines für EOP, Baselines für Defender for Office 365 , Einrichten von Defender für Office 365, Einrichten von EOP, Konfigurieren von Defender für Office 365, Konfigurieren von EOP, Sicherheitskonfiguration
+title: Microsoft-Empfehlungen für EOP und Defender für Office 365 Sicherheitseinstellungen
+keywords: Office 365 Sicherheitsempfehlungen, Sender Policy Framework, Domänenbasierte Nachrichtenberichterstattung und -konformität, DomainKeys Identified Mail, Schritte, Funktionsweise, Sicherheitsgrundwerte, Baselines für EOP, Baselines für Defender für Office 365 , Einrichten von Defender für Office 365 , Einrichten von EOP, Konfigurieren von Defender für Office 365, Konfigurieren von EOP, Sicherheitskonfiguration
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -16,7 +16,7 @@ ms.assetid: 6f64f2de-d626-48ed-8084-03cc72301aa4
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Was sind bewährte Methoden für Exchange Online Protection (EOP) und Defender for Office 365-Sicherheitseinstellungen? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie auch Defender für Office 365 verwenden?
+description: Was sind bewährte Methoden für Exchange Online Protection (EOP) und Defender für Office 365 Sicherheitseinstellungen? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie Defender auch für Office 365?
 ms.technology: mdo
 ms.prod: m365-security
 ms.openlocfilehash: 3a4447d6eaeeb907eb750d2ad668fdbb9031c28b
@@ -26,7 +26,7 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52274868"
 ---
-# <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Empfohlene Einstellungen für EOP und Microsoft Defender für Office 365-Sicherheit
+# <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Empfohlene Einstellungen für EOP und Microsoft Defender für Office 365 Sicherheit
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,9 +37,9 @@ ms.locfileid: "52274868"
 
 **Exchange Online Protection (EOP)** ist der Kern der Sicherheit für Microsoft 365-Abonnements und verhindert, dass schädliche E-Mails die Posteingange Ihrer Mitarbeiter erreichen. Da jedoch täglich neue, komplexere Angriffe entstehen, sind häufig verbesserte Schutzmaßnahmen erforderlich. **Microsoft Defender für Office 365** Plan 1 oder Plan 2 enthalten zusätzliche Features, die Administratoren mehr Ebenen an Sicherheit, Kontrolle und Untersuchung bieten.
 
-Obwohl wir Sicherheitsadministratoren die Möglichkeit geben, ihre Sicherheitseinstellungen anzupassen, gibt es zwei Sicherheitsstufen in EOP und Microsoft Defender für Office 365, die wir empfehlen: **Standard** und **Strict**. Die Umgebung und die Anforderungen der einzelnen Kunden unterscheiden sich, aber wir sind der Meinung, dass diese Filterstufen dazu beitragen, zu verhindern, dass unerwünschte E-Mails in den meisten Situationen den Posteingang Ihrer Mitarbeiter erreichen.
+Obwohl wir Sicherheitsadministratoren die Möglichkeit geben, ihre Sicherheitseinstellungen anzupassen, gibt es in EOP und Microsoft Defender für Office 365 zwei Sicherheitsstufen: **Standard** und **Strict**. Die Umgebung und die Anforderungen der einzelnen Kunden unterscheiden sich, aber wir sind der Meinung, dass diese Filterstufen dazu beitragen, zu verhindern, dass unerwünschte E-Mails in den meisten Situationen den Posteingang Ihrer Mitarbeiter erreichen.
 
-Informationen zum automatischen Anwenden der Standard- oder Strikt-Einstellungen auf Benutzer finden Sie unter [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
+Informationen zum automatischen Anwenden der Standard- oder Strict-Einstellungen auf Benutzer finden Sie unter [Preset security policies in EOP and Microsoft Defender for Office 365](preset-security-policies.md).
 
 > [!NOTE]
 > Die Junk-E-Mail-Regel muss für Postfächer aktiviert sein, damit die Filterung ordnungsgemäß funktioniert. Es ist standardmäßig aktiviert, sie sollte jedoch überprüft werden, wenn die Filterung scheinbar nicht funktioniert. Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
@@ -47,7 +47,7 @@ Informationen zum automatischen Anwenden der Standard- oder Strikt-Einstellungen
 In diesem Artikel werden die Standardeinstellungen sowie die empfohlenen Standard- und Strict-Einstellungen beschrieben, um Ihre Benutzer zu schützen.
 
 > [!TIP]
-> Das Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA)-Modul für PowerShell kann Ihnen (Administratoren) dabei helfen, die aktuellen Werte dieser Einstellungen zu finden. Insbesondere generiert das **Cmdlet Get-ORCAReport** eine Bewertung von Antispam-, Antiphishing- und anderen Nachrichtenhygieneeinstellungen. Sie können das ORCA-Modul unter <https://www.powershellgallery.com/packages/ORCA/> herunterladen.
+> Das Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA)-Modul für PowerShell hilft Ihnen (Administratoren), die aktuellen Werte dieser Einstellungen zu finden. Insbesondere generiert das **Cmdlet Get-ORCAReport** eine Bewertung von Antispam-, Antiphishing- und anderen Nachrichtenhygieneeinstellungen. Sie können das ORCA-Modul unter <https://www.powershellgallery.com/packages/ORCA/> herunterladen.
 
 ## <a name="anti-spam-anti-malware-and-anti-phishing-protection-in-eop"></a>Antispam-, Malware- und Antiphishingschutz in EOP
 
@@ -70,7 +70,7 @@ Informationen zum Erstellen und Konfigurieren von Antispamrichtlinien finden Sie
 |**Massen-E-Mail-Erkennungsaktion** <p> _BulkSpamAction_|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`||
 |Schwellenwert für Massen-E-Mails <p> _BulkThreshold_|7 |6 |4 |Weitere Informationen finden Sie unter [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
 |Aufbewahrungszeitraum für Quarantäne <p> _QuarantineRetentionPeriod_|15 Tage|30 Tage|30 Tage||
-|**Sicherheitstipps** <p> _InlineSafetyTipsEnabled_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
+|**Sicherheit Tipps** <p> _InlineSafetyTipsEnabled_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
 |Zugelassene Absender <p> _AllowedSenders_|Keine|Keine|Keine||
 |Zulässige Absenderdomänen <p> _AllowedSenderDomains_|Keine|Keine|Keine|Das Hinzufügen von Domänen zur Liste der zulässigen Absender ist eine sehr schlechte Idee. Angreifer können Ihnen E-Mails senden, die andernfalls herausgefiltert würden. <p> Verwenden Sie [spoof intelligence](learn-about-spoof-intelligence.md) im Security & Compliance Center auf der Seite Antispameinstellungen, um alle Absender zu überprüfen, die Absender-E-Mail-Adressen in den **E-Mail-Domänen** Ihrer Organisation spoofieren oder Absender-E-Mail-Adressen in externen Domänen spoofieren.|
 |Blockierte Absender <p> _BlockedSenders_|Keine|Keine|Keine||
@@ -155,29 +155,29 @@ Weitere Informationen zu diesen Einstellungen finden Sie unter [Spoof-Einstellun
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
 |**Aktivieren des Antis spoofing-Schutzes** <p> _EnableSpoofIntelligence_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
-|**Aktivieren des nicht authentifizierten Absenders** <p> _EnableUnauthenticatedSender_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`|Fügt dem Foto des Absenders in Outlook ein Fragezeichen (?) für nicht identifizierte gefälschte Absender hinzu. Weitere Informationen finden Sie unter [Spoofeinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md).|
+|**Aktivieren des nicht authentifizierten Absenders** <p> _EnableUnauthenticatedSender_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`|Fügt dem Foto des Absenders in der Liste ein Fragezeichen (?) Outlook nicht identifizierten spoofierten Absendern hinzu. Weitere Informationen finden Sie unter [Spoofeinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md).|
 |**Wenn E-Mails von einer Person gesendet werden, die Ihre Domäne nicht spoofen darf** <p> _AuthenticationFailAction_|**Verschieben von Nachrichten in die Junk-E-Mail-Ordner der Empfänger** <p> `MoveToJmf`|**Verschieben von Nachrichten in die Junk-E-Mail-Ordner der Empfänger** <p> `MoveToJmf`|**Isolieren der Nachricht** <p> `Quarantine`|Diese Einstellung gilt für blockierte Absender in [Spoof Intelligence](learn-about-spoof-intelligence.md).|
 |
 
-## <a name="microsoft-defender-for-office-365-security"></a>Microsoft Defender für Office 365-Sicherheit
+## <a name="microsoft-defender-for-office-365-security"></a>Microsoft Defender für Office 365 Sicherheit
 
-Zusätzliche Sicherheitsvorteile bieten ein Microsoft Defender for Office 365-Abonnement. Aktuelle Nachrichten und Informationen finden Sie unter [Neuigkeiten in Defender for Office 365](whats-new-in-defender-for-office-365.md).
+Zusätzliche Sicherheitsvorteile bieten ein Microsoft Defender for Office 365 Abonnement. Aktuelle Nachrichten und Informationen finden Sie unter [What's new in Defender for Office 365](whats-new-in-defender-for-office-365.md).
 
 > [!IMPORTANT]
 >
-> - Die standardmäßige Antiphishingrichtlinie in Microsoft Defender für Office 365 bietet [Spoofschutz](set-up-anti-phishing-policies.md#spoof-settings) und Postfachintelligenz für alle Empfänger. Die anderen verfügbaren [](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Identitätswechselschutzfeatures und erweiterten Einstellungen sind jedoch in der Standardrichtlinie nicht konfiguriert oder aktiviert. [](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Um alle Schutzfunktionen zu aktivieren, ändern Sie die Standardmäßige Antiphishingrichtlinie, oder erstellen Sie zusätzliche Antiphishingrichtlinien.
+> - Die standardmäßige Antiphishingrichtlinie in Microsoft Defender for Office 365 bietet [Spoofschutz](set-up-anti-phishing-policies.md#spoof-settings) und Postfachintelligenz für alle Empfänger. Die anderen verfügbaren [](#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Identitätswechselschutzfeatures und erweiterten Einstellungen sind jedoch in der Standardrichtlinie nicht konfiguriert oder aktiviert. [](#advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) Um alle Schutzfunktionen zu aktivieren, ändern Sie die Standardmäßige Antiphishingrichtlinie, oder erstellen Sie zusätzliche Antiphishingrichtlinien.
 >
 > - Es gibt keine standardmäßigen Richtlinien für sichere Links oder Richtlinien für sichere Anlagen, die automatisch alle Empfänger in der Organisation schützen. Um die Schutzmaßnahmen zu erhalten, müssen Sie mindestens eine Richtlinie für sichere Links und eine Richtlinie für sichere Anlagen erstellen.
 >
-> - Der Schutz von sicheren Anlagen für [SharePoint, OneDrive und Microsoft Teams](mdo-for-spo-odb-and-teams.md) sowie der Schutz sicherer Dokumente sind nicht von Richtlinien für sichere Links abhängig. [](safe-docs.md)
+> - [Sichere Anlagen für SharePoint, OneDrive-](mdo-for-spo-odb-and-teams.md) und Microsoft Teams und Schutz [](safe-docs.md) sicherer Dokumente haben keine Abhängigkeiten von Richtlinien für sichere Links.
 
 Wenn Ihr Abonnement Microsoft Defender für Office 365 enthält oder Sie Defender für Office 365 als Add-On erworben haben, legen Sie die folgenden Standard- oder Strict-Konfigurationen ein.
 
-### <a name="anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Einstellungen für Antiphishingrichtlinien in Microsoft Defender für Office 365
+### <a name="anti-phishing-policy-settings-in-microsoft-defender-for-office-365"></a>Antiphishingrichtlinieneinstellungen in Microsoft Defender for Office 365
 
-EOP-Kunden erhalten grundlegende Antiphishing, wie zuvor beschrieben, aber Microsoft Defender für Office 365 enthält mehr Features und Steuerung, um Angriffe zu verhindern, zu erkennen und zu abwehren. Informationen zum Erstellen und Konfigurieren dieser Richtlinien finden Sie unter [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
+EOP-Kunden erhalten grundlegende Antiphishing, wie bereits beschrieben, aber Microsoft Defender for Office 365 enthält mehr Features und Steuerung, um Angriffe zu verhindern, zu erkennen und zu verhindern. Informationen zum Erstellen und Konfigurieren dieser Richtlinien finden Sie unter [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-#### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Identitätswechseleinstellungen in Antiphishingrichtlinien in Microsoft Defender für Office 365
+#### <a name="impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Identitätswechseleinstellungen in Antiphishingrichtlinien in Microsoft Defender for Office 365
 
 Weitere Informationen zu diesen Einstellungen finden Sie unter [Identitätswechseleinstellungen in Antiphishingrichtlinien in Microsoft Defender für Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365). Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
@@ -202,7 +202,7 @@ Weitere Informationen zu diesen Einstellungen finden Sie unter [Identitätswechs
 |**Vertrauenswürdige Domänen** <p> _ExcludedDomains_|Keine|Keine|Keine|Je nach Organisation empfehlen wir das Hinzufügen von Domänen, die aufgrund von Identitätswechseln fälschlicherweise als Phishing gekennzeichnet werden, und nicht durch andere Filter.|
 |
 
-#### <a name="spoof-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Spoofeinstellungen in Antiphishingrichtlinien in Microsoft Defender für Office 365
+#### <a name="spoof-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Spoofeinstellungen in Antiphishingrichtlinien in Microsoft Defender for Office 365
 
 Beachten Sie, dass es sich um dieselben Einstellungen handelt, die in den [Antispamrichtlinieneinstellungen in EOP verfügbar sind.](#eop-anti-spam-policy-settings)
 
@@ -213,13 +213,13 @@ Beachten Sie, dass es sich um dieselben Einstellungen handelt, die in den [Antis
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|---|---|---|---|
 |**Aktivieren des Antis spoofing-Schutzes** <p> _EnableSpoofIntelligence_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
-|**Aktivieren des nicht authentifizierten Absenders** <p> _EnableUnauthenticatedSender_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`|Fügt dem Foto des Absenders in Outlook ein Fragezeichen (?) für nicht identifizierte gefälschte Absender hinzu. Weitere Informationen finden Sie unter [Spoofeinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md).|
+|**Aktivieren des nicht authentifizierten Absenders** <p> _EnableUnauthenticatedSender_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`|Fügt dem Foto des Absenders in der Liste ein Fragezeichen (?) Outlook nicht identifizierten spoofierten Absendern hinzu. Weitere Informationen finden Sie unter [Spoofeinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md).|
 |**Wenn E-Mails von einer Person gesendet werden, die Ihre Domäne nicht spoofen darf** <p> _AuthenticationFailAction_|**Verschieben von Nachrichten in die Junk-E-Mail-Ordner der Empfänger** <p> `MoveToJmf`|**Verschieben von Nachrichten in die Junk-E-Mail-Ordner der Empfänger** <p> `MoveToJmf`|**Isolieren der Nachricht** <p> `Quarantine`|Diese Einstellung gilt für blockierte Absender in [Spoof Intelligence](learn-about-spoof-intelligence.md).|
 |
 
-#### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Erweiterte Einstellungen in Antiphishingrichtlinien in Microsoft Defender für Office 365
+#### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Erweiterte Einstellungen in Antiphishingrichtlinien in Microsoft Defender for Office 365
 
-Weitere Informationen zu dieser Einstellung finden Sie unter [Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365). Informationen zum Konfigurieren dieser Einstellung finden Sie [unter Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
+Weitere Informationen zu dieser Einstellung finden Sie unter [Advanced phishing thresholds in anti-phishing policies in Microsoft Defender for Office 365](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365). Informationen zum Konfigurieren dieser Einstellung finden Sie unter [Configure anti-phishing policies in Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
 <br>
 
@@ -232,7 +232,7 @@ Weitere Informationen zu dieser Einstellung finden Sie unter [Advanced phishing 
 
 ### <a name="safe-links-settings"></a>Einstellungen für sichere Links
 
-Sichere Links in Defender for Office 365 umfassen globale Einstellungen, die für alle Benutzer gelten, die in aktiven Richtlinien für sichere Links enthalten sind, sowie Einstellungen, die für jede Richtlinie für sichere Links spezifisch sind. Weitere Informationen finden Sie unter [Sichere Links in Defender for Office 365](safe-links.md).
+Sichere Links in Defender for Office 365 enthält globale Einstellungen, die für alle Benutzer gelten, die in aktiven Richtlinien für sichere Links enthalten sind, sowie Einstellungen, die für jede Richtlinie für sichere Links spezifisch sind. Weitere Informationen finden Sie unter [Safe Links in Defender for Office 365](safe-links.md).
 
 #### <a name="global-settings-for-safe-links"></a>Globale Einstellungen für sichere Links
 
@@ -246,14 +246,14 @@ In PowerShell verwenden Sie das [Cmdlet Set-AtpPolicyForO365](/powershell/module
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Verwenden sicherer Links in: Office 365-Anwendungen** <p> _EnableSafeLinksForO365Clients_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`|Verwenden Sie sichere Links in unterstützten Office 365-Desktop- und mobilen Apps (iOS und Android). Weitere Informationen finden Sie unter [Einstellungen für sichere Links für Office 365-Apps](safe-links.md#safe-links-settings-for-office-365-apps).|
-|**Nicht nachverfolgen, wenn Benutzer auf sichere Links klicken** <p> _TrackClicks_|Ein <p> `$false`|Off <p> `$true`|Off <p> `$true`|Wenn Sie diese Einstellung deaktivieren _(TrackClicks_ auf festlegen), werden `$true` Benutzerklicks in unterstützten Office 365-Apps nachverfolgt.|
-|**Benutzer dürfen nicht auf sichere Links zur ursprünglichen URL klicken** <p> _AllowClickThrough_|Ein <p> `$false`|Ein <p> `$false`|Ein <p> `$false`|Durch Aktivieren dieser Einstellung (Festlegen _von AllowClickThrough_ auf ) wird das Durchklicken zur ursprünglichen URL in unterstützten `$false` Office 365-Apps verhindert.|
+|**Verwenden sicherer Links in: Office 365 Anwendungen** <p> _EnableSafeLinksForO365Clients_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`|Verwenden Sie sichere Links in unterstützten Office 365 und mobilen Apps (iOS und Android). Weitere Informationen finden Sie unter [Einstellungen für sichere Links für Office 365 Apps](safe-links.md#safe-links-settings-for-office-365-apps).|
+|**Nicht nachverfolgen, wenn Benutzer auf sichere Links klicken** <p> _TrackClicks_|Ein <p> `$false`|Off <p> `$true`|Off <p> `$true`|Wenn Sie diese Einstellung deaktivieren _(TrackClicks_ auf festlegen), werden Benutzerklicks in unterstützten apps `$true` Office 365 verfolgt.|
+|**Benutzer dürfen nicht auf sichere Links zur ursprünglichen URL klicken** <p> _AllowClickThrough_|Ein <p> `$false`|Ein <p> `$false`|Ein <p> `$false`|Durch Aktivieren dieser Einstellung (Festlegen _von AllowClickThrough_ auf ) wird das Durchklicken zur ursprünglichen URL in unterstützten apps `$false` Office 365 verhindert.|
 |
 
 #### <a name="safe-links-policy-settings"></a>Richtlinieneinstellungen für sichere Links
 
-Informationen zum Konfigurieren dieser Einstellungen finden Sie unter Einrichten von Richtlinien für sichere Links [in Microsoft Defender für Office 365](set-up-safe-links-policies.md).
+Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md).
 
 In PowerShell verwenden Sie die [Cmdlets New-SafeLinksPolicy](/powershell/module/exchange/new-safelinkspolicy) und [Set-SafeLinksPolicy](/powershell/module/exchange/set-safelinkspolicy) für diese Einstellungen.
 
@@ -267,7 +267,7 @@ In PowerShell verwenden Sie die [Cmdlets New-SafeLinksPolicy](/powershell/module
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
 |**Auswählen der Aktion für unbekannte potenziell schädliche URLs in Nachrichten** <p> _IsEnabled_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
-|**Auswählen der Aktion für unbekannte oder potenziell schädliche URLs in Microsoft Teams** <p> _EnableSafeLinksForTeams_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
+|**Wählen Sie die Aktion für unbekannte oder potenziell schädliche URLs innerhalb Microsoft Teams** <p> _EnableSafeLinksForTeams_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
 |**Anwenden der Echtzeit-URL-Überprüfung auf verdächtige Links und Links, die auf Dateien verweisen** <p> _ScanUrls_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
 |**Warten Sie, bis die URL-Überprüfung abgeschlossen ist, bevor sie die Nachricht zu senden.** <p> _DeliverMessageAfterScan_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
 |**Anwenden sicherer Links auf E-Mail-Nachrichten, die innerhalb der Organisation gesendet werden** <p> _EnableForInternalSenders_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`||
@@ -277,11 +277,11 @@ In PowerShell verwenden Sie die [Cmdlets New-SafeLinksPolicy](/powershell/module
 
 ### <a name="safe-attachments-settings"></a>Einstellungen für sichere Anlagen
 
-Sichere Anlagen in Microsoft Defender für Office 365 umfassen globale Einstellungen, die keine Beziehung zu Richtlinien für sichere Anlagen haben, und Einstellungen, die für jede Richtlinie für sichere Links spezifisch sind. Weitere Informationen finden Sie unter [Sichere Anlagen in Defender for Office 365](safe-attachments.md).
+Sichere Anlagen in Microsoft Defender for Office 365 enthält globale Einstellungen, die keine Beziehung zu Richtlinien für sichere Anlagen haben, sowie Einstellungen, die für jede Richtlinie für sichere Links spezifisch sind. Weitere Informationen finden Sie unter [Safe Attachments in Defender for Office 365](safe-attachments.md).
 
 #### <a name="global-settings-for-safe-attachments"></a>Globale Einstellungen für sichere Anlagen
 
-Informationen zum Konfigurieren dieser Einstellungen finden Sie unter Aktivieren sicherer [Anlagen für SharePoint, OneDrive und Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md) und sichere Dokumente in Microsoft [365 E5](safe-docs.md).
+Informationen zum Konfigurieren dieser Einstellungen finden Sie unter [Turn on Safe Attachments for SharePoint, OneDrive, and Microsoft Teams](turn-on-mdo-for-spo-odb-and-teams.md) and Safe Documents in [Microsoft 365 E5](safe-docs.md).
 
 In PowerShell verwenden Sie das [Cmdlet Set-AtpPolicyForO365](/powershell/module/exchange/set-atppolicyforo365) für diese Einstellungen.
 
@@ -292,7 +292,7 @@ In PowerShell verwenden Sie das [Cmdlet Set-AtpPolicyForO365](/powershell/module
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
 |**Defender für Office 365 für SharePoint, OneDrive und Microsoft Teams aktivieren** <p> _EnableATPForSPOTeamsODB_|Ein <p> `$true`|Ein <p> `$true`||
-|**Aktivieren sicherer Dokumente für Office-Clients** <p> _EnableSafeDocs_|Ein <p> `$true`|Ein <p> `$true`|Diese Einstellung ist nur mit Microsoft 365 E5- oder Microsoft 365 E5-Sicherheitslizenzen verfügbar. Weitere Informationen finden Sie unter [Sichere Dokumente in Microsoft Defender für Office 365](safe-docs.md).|
+|**Aktivieren von sicheren Dokumenten für Office Clients** <p> _EnableSafeDocs_|Ein <p> `$true`|Ein <p> `$true`|Diese Einstellung ist nur mit Microsoft 365 E5 oder Microsoft 365 E5 Security verfügbar. Weitere Informationen finden Sie unter [Safe Documents in Microsoft Defender for Office 365](safe-docs.md).|
 |**Zulassen, dass Personen durch die geschützte Ansicht klicken, auch wenn sichere Dokumente die Datei als schädlich identifiziert haben** <p> _AllowSafeDocsOpen_|Off <p> `$false`|Off <p> `$false`|Diese Einstellung steht im Zusammenhang mit sicheren Dokumenten.|
 |
 
@@ -318,10 +318,10 @@ In PowerShell verwenden Sie die [Cmdlets New-SafeAttachmentPolicy](/powershell/m
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- Suchen Sie nach bewährten Methoden für **Exchange-Nachrichtenflussregeln (auch** als Transportregeln bekannt) Weitere [Informationen finden Sie unter Bewährte Methoden zum Konfigurieren von Nachrichtenflussregeln in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
+- Suchen Sie nach bewährten Methoden für **Exchange Nachrichtenflussregeln (auch als Transportregeln** bekannt)? Weitere Informationen finden Sie unter Best [practices for configuring mail flow rules in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/configuration-best-practices).
 
 - Administratoren und Benutzer können falsch positive Ergebnisse (gute E-Mails, die als ungültig gekennzeichnet sind) und falsch negative (ungültige E-Mails sind zulässig) zur Analyse an Microsoft übermitteln. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
-- Verwenden Sie diese Links,  um Informationen zum Einrichten  Ihres [EOP-Diensts](set-up-your-eop-service.md)und zum Konfigurieren von [Microsoft Defender für Office 365 zu erhalten.](defender-for-office-365.md) Vergessen Sie nicht die hilfreichen Anweisungen in "[Schutz vor Bedrohungen in Office 365](protect-against-threats.md)".
+- Verwenden Sie diese Links,  um Informationen zum Einrichten  Ihres [EOP-Diensts](set-up-your-eop-service.md)und zum Konfigurieren von [Microsoft Defender für Office 365.](defender-for-office-365.md) Vergessen Sie nicht die hilfreichen Anweisungen in "[Schutz vor Bedrohungen in Office 365](protect-against-threats.md)".
 
-- **Sicherheitsgrundwerte** für Windows finden Sie hier: Wo kann ich die Sicherheitsgrundwerte [erhalten?](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) für Gruppenrichtlinienobjekt-/lokale Optionen und Verwenden von Sicherheitsgrundwerten zum Konfigurieren von [Windows 10-Geräten in Intune](/intune/protect/security-baselines) für Intune-basierte Sicherheit. Abschließend finden Sie unter Vergleichen der Microsoft Defender for Endpoint- und Windows Intune-Sicherheitsgrundwerte einen Vergleich zwischen Microsoft Defender for Endpoint und [den Windows Intune-Sicherheitsgrundwerten.](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)
+-  Sicherheitsgrundwerte für Windows finden Sie hier: Wo kann ich die Sicherheitsgrundwerte [erhalten?](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) für Gruppenrichtlinienobjekt/lokale Optionen und Verwenden von Sicherheitsgrundwerten zum Konfigurieren von Windows 10-Geräten in Intune für [Intune-basierte](/intune/protect/security-baselines) Sicherheit. Schließlich ist ein Vergleich zwischen Microsoft Defender for Endpoint und Microsoft Intune Sicherheitsgrundwerten unter Vergleichen der Microsoft Defender for Endpoint- und der [Windows Intune-Sicherheitsgrundwerte verfügbar.](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)
