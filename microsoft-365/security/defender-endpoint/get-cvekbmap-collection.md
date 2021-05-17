@@ -24,56 +24,56 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51166584"
 ---
-# <a name="get-cve-kb-map-api"></a><span data-ttu-id="4d51f-104">CVE-KB-Karten-API abrufen</span><span class="sxs-lookup"><span data-stu-id="4d51f-104">Get CVE-KB map API</span></span>
+# <a name="get-cve-kb-map-api"></a><span data-ttu-id="19571-104">CVE-KB-Karten-API abrufen</span><span class="sxs-lookup"><span data-stu-id="19571-104">Get CVE-KB map API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="4d51f-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="4d51f-105">**Applies to:**</span></span>
-- [<span data-ttu-id="4d51f-106">Microsoft Defender für Endpunkt</span><span class="sxs-lookup"><span data-stu-id="4d51f-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="4d51f-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="4d51f-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="19571-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="19571-105">**Applies to:**</span></span>
+- [<span data-ttu-id="19571-106">Microsoft Defender für Endpunkt</span><span class="sxs-lookup"><span data-stu-id="19571-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="19571-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="19571-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="4d51f-108">Möchten Sie Microsoft Defender for Endpoint erleben?</span><span class="sxs-lookup"><span data-stu-id="4d51f-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="4d51f-109">Registrieren Sie sich für eine kostenlose Testversion.</span><span class="sxs-lookup"><span data-stu-id="4d51f-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="19571-108">Möchten Sie Microsoft Defender for Endpoint erleben?</span><span class="sxs-lookup"><span data-stu-id="19571-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="19571-109">Registrieren Sie sich für eine kostenlose Testversion.</span><span class="sxs-lookup"><span data-stu-id="19571-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-<span data-ttu-id="4d51f-110">Ruft eine Zuordnung von CVE zu KB- und CVE-Details ab.</span><span class="sxs-lookup"><span data-stu-id="4d51f-110">Retrieves a map of CVE's to KB's and CVE details.</span></span>
+<span data-ttu-id="19571-110">Ruft eine Zuordnung von CVE zu KB- und CVE-Details ab.</span><span class="sxs-lookup"><span data-stu-id="19571-110">Retrieves a map of CVE's to KB's and CVE details.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="4d51f-111">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="4d51f-111">Permissions</span></span>
-<span data-ttu-id="4d51f-112">Der Benutzer benötigt Leseberechtigungen.</span><span class="sxs-lookup"><span data-stu-id="4d51f-112">User needs read permissions.</span></span>
+## <a name="permissions"></a><span data-ttu-id="19571-111">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="19571-111">Permissions</span></span>
+<span data-ttu-id="19571-112">Der Benutzer benötigt Leseberechtigungen.</span><span class="sxs-lookup"><span data-stu-id="19571-112">User needs read permissions.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="4d51f-113">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="4d51f-113">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="19571-113">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="19571-113">HTTP request</span></span>
 ```
 GET /testwdatppreview/cvekbmap
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="4d51f-114">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="4d51f-114">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="19571-114">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="19571-114">Request headers</span></span>
 
-<span data-ttu-id="4d51f-115">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="4d51f-115">Header</span></span> | <span data-ttu-id="4d51f-116">Wert</span><span class="sxs-lookup"><span data-stu-id="4d51f-116">Value</span></span> 
+<span data-ttu-id="19571-115">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="19571-115">Header</span></span> | <span data-ttu-id="19571-116">Wert</span><span class="sxs-lookup"><span data-stu-id="19571-116">Value</span></span> 
 :---|:---
-<span data-ttu-id="4d51f-117">Authorization</span><span class="sxs-lookup"><span data-stu-id="4d51f-117">Authorization</span></span> | <span data-ttu-id="4d51f-118">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="4d51f-118">Bearer {token}.</span></span> <span data-ttu-id="4d51f-119">**Erforderlich**.</span><span class="sxs-lookup"><span data-stu-id="4d51f-119">**Required**.</span></span>
-<span data-ttu-id="4d51f-120">Inhaltstyp</span><span class="sxs-lookup"><span data-stu-id="4d51f-120">Content type</span></span> | <span data-ttu-id="4d51f-121">application/json</span><span class="sxs-lookup"><span data-stu-id="4d51f-121">application/json</span></span>
+<span data-ttu-id="19571-117">Authorization</span><span class="sxs-lookup"><span data-stu-id="19571-117">Authorization</span></span> | <span data-ttu-id="19571-118">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="19571-118">Bearer {token}.</span></span> <span data-ttu-id="19571-119">**Erforderlich**.</span><span class="sxs-lookup"><span data-stu-id="19571-119">**Required**.</span></span>
+<span data-ttu-id="19571-120">Inhaltstyp</span><span class="sxs-lookup"><span data-stu-id="19571-120">Content type</span></span> | <span data-ttu-id="19571-121">application/json</span><span class="sxs-lookup"><span data-stu-id="19571-121">application/json</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="4d51f-122">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="4d51f-122">Request body</span></span>
-<span data-ttu-id="4d51f-123">Empty</span><span class="sxs-lookup"><span data-stu-id="4d51f-123">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="19571-122">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="19571-122">Request body</span></span>
+<span data-ttu-id="19571-123">Empty</span><span class="sxs-lookup"><span data-stu-id="19571-123">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="4d51f-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="4d51f-124">Response</span></span>
-<span data-ttu-id="4d51f-125">Wenn erfolgreich und Karte vorhanden ist - 200 OK.</span><span class="sxs-lookup"><span data-stu-id="4d51f-125">If successful and map exists - 200 OK.</span></span>
+## <a name="response"></a><span data-ttu-id="19571-124">Antwort</span><span class="sxs-lookup"><span data-stu-id="19571-124">Response</span></span>
+<span data-ttu-id="19571-125">Wenn erfolgreich und Karte vorhanden ist - 200 OK.</span><span class="sxs-lookup"><span data-stu-id="19571-125">If successful and map exists - 200 OK.</span></span>
 
-## <a name="example"></a><span data-ttu-id="4d51f-126">Beispiel</span><span class="sxs-lookup"><span data-stu-id="4d51f-126">Example</span></span>
+## <a name="example"></a><span data-ttu-id="19571-126">Beispiel</span><span class="sxs-lookup"><span data-stu-id="19571-126">Example</span></span>
 
-<span data-ttu-id="4d51f-127">**Anforderung**</span><span class="sxs-lookup"><span data-stu-id="4d51f-127">**Request**</span></span>
+<span data-ttu-id="19571-127">**Anforderung**</span><span class="sxs-lookup"><span data-stu-id="19571-127">**Request**</span></span>
 
-<span data-ttu-id="4d51f-128">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="4d51f-128">Here is an example of the request.</span></span>
+<span data-ttu-id="19571-128">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="19571-128">Here is an example of the request.</span></span>
 
 ```http
 GET https://graph.microsoft.com/testwdatppreview/CveKbMap
 ```
 
-<span data-ttu-id="4d51f-129">**Antwort**</span><span class="sxs-lookup"><span data-stu-id="4d51f-129">**Response**</span></span>
+<span data-ttu-id="19571-129">**Antwort**</span><span class="sxs-lookup"><span data-stu-id="19571-129">**Response**</span></span>
 
-<span data-ttu-id="4d51f-130">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="4d51f-130">Here is an example of the response.</span></span>
+<span data-ttu-id="19571-130">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="19571-130">Here is an example of the response.</span></span>
 
 ```json
 {

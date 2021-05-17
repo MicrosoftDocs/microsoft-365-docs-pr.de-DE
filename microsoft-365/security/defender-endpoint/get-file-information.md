@@ -22,73 +22,73 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 03/24/2021
 ms.locfileid: "51166566"
 ---
-# <a name="get-file-information-api"></a><span data-ttu-id="3209c-104">Abrufen der Dateiinformations-API</span><span class="sxs-lookup"><span data-stu-id="3209c-104">Get file information API</span></span>
+# <a name="get-file-information-api"></a><span data-ttu-id="9e691-104">Abrufen der Dateiinformations-API</span><span class="sxs-lookup"><span data-stu-id="9e691-104">Get file information API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="3209c-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="3209c-105">**Applies to:**</span></span>
-- [<span data-ttu-id="3209c-106">Microsoft Defender für Endpunkt</span><span class="sxs-lookup"><span data-stu-id="3209c-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="3209c-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="3209c-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="9e691-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="9e691-105">**Applies to:**</span></span>
+- [<span data-ttu-id="9e691-106">Microsoft Defender für Endpunkt</span><span class="sxs-lookup"><span data-stu-id="9e691-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="9e691-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="9e691-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="3209c-108">Möchten Sie Microsoft Defender for Endpoint erleben?</span><span class="sxs-lookup"><span data-stu-id="3209c-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="3209c-109">Registrieren Sie sich für eine kostenlose Testversion.</span><span class="sxs-lookup"><span data-stu-id="3209c-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> <span data-ttu-id="9e691-108">Möchten Sie Microsoft Defender for Endpoint erleben?</span><span class="sxs-lookup"><span data-stu-id="9e691-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="9e691-109">Registrieren Sie sich für eine kostenlose Testversion.</span><span class="sxs-lookup"><span data-stu-id="9e691-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-## <a name="api-description"></a><span data-ttu-id="3209c-110">API-Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3209c-110">API description</span></span>
-<span data-ttu-id="3209c-111">Ruft eine [Datei nach bezeichner](files.md) Sha1 oder Sha256 ab</span><span class="sxs-lookup"><span data-stu-id="3209c-111">Retrieves a [File](files.md) by identifier Sha1, or Sha256</span></span>
+## <a name="api-description"></a><span data-ttu-id="9e691-110">API-Beschreibung</span><span class="sxs-lookup"><span data-stu-id="9e691-110">API description</span></span>
+<span data-ttu-id="9e691-111">Ruft eine [Datei nach bezeichner](files.md) Sha1 oder Sha256 ab</span><span class="sxs-lookup"><span data-stu-id="9e691-111">Retrieves a [File](files.md) by identifier Sha1, or Sha256</span></span>
 
 
-## <a name="limitations"></a><span data-ttu-id="3209c-112">Einschränkungen</span><span class="sxs-lookup"><span data-stu-id="3209c-112">Limitations</span></span>
-1. <span data-ttu-id="3209c-113">Die Tarifeinschränkungen für diese API sind 100 Anrufe pro Minute und 1500 Anrufe pro Stunde.</span><span class="sxs-lookup"><span data-stu-id="3209c-113">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
+## <a name="limitations"></a><span data-ttu-id="9e691-112">Einschränkungen</span><span class="sxs-lookup"><span data-stu-id="9e691-112">Limitations</span></span>
+1. <span data-ttu-id="9e691-113">Die Tarifeinschränkungen für diese API sind 100 Anrufe pro Minute und 1500 Anrufe pro Stunde.</span><span class="sxs-lookup"><span data-stu-id="9e691-113">Rate limitations for this API are 100 calls per minute and 1500 calls per hour.</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="3209c-114">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="3209c-114">Permissions</span></span>
-<span data-ttu-id="3209c-115">Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich.</span><span class="sxs-lookup"><span data-stu-id="3209c-115">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="3209c-116">Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="3209c-116">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="9e691-114">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="9e691-114">Permissions</span></span>
+<span data-ttu-id="9e691-115">Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich.</span><span class="sxs-lookup"><span data-stu-id="9e691-115">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="9e691-116">Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="9e691-116">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="3209c-117">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="3209c-117">Permission type</span></span> |   <span data-ttu-id="3209c-118">Berechtigung</span><span class="sxs-lookup"><span data-stu-id="3209c-118">Permission</span></span>  |   <span data-ttu-id="3209c-119">Anzeigename der Berechtigung</span><span class="sxs-lookup"><span data-stu-id="3209c-119">Permission display name</span></span>
+<span data-ttu-id="9e691-117">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="9e691-117">Permission type</span></span> |   <span data-ttu-id="9e691-118">Berechtigung</span><span class="sxs-lookup"><span data-stu-id="9e691-118">Permission</span></span>  |   <span data-ttu-id="9e691-119">Anzeigename der Berechtigung</span><span class="sxs-lookup"><span data-stu-id="9e691-119">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="3209c-120">Anwendung</span><span class="sxs-lookup"><span data-stu-id="3209c-120">Application</span></span> |   <span data-ttu-id="3209c-121">File.Read.All</span><span class="sxs-lookup"><span data-stu-id="3209c-121">File.Read.All</span></span> | <span data-ttu-id="3209c-122">"Alle Dateiprofile lesen"</span><span class="sxs-lookup"><span data-stu-id="3209c-122">'Read all file profiles'</span></span>
-<span data-ttu-id="3209c-123">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="3209c-123">Delegated (work or school account)</span></span> | <span data-ttu-id="3209c-124">File.Read.All</span><span class="sxs-lookup"><span data-stu-id="3209c-124">File.Read.All</span></span> |    <span data-ttu-id="3209c-125">"Alle Dateiprofile lesen"</span><span class="sxs-lookup"><span data-stu-id="3209c-125">'Read all file profiles'</span></span>
+<span data-ttu-id="9e691-120">Anwendung</span><span class="sxs-lookup"><span data-stu-id="9e691-120">Application</span></span> |   <span data-ttu-id="9e691-121">File.Read.All</span><span class="sxs-lookup"><span data-stu-id="9e691-121">File.Read.All</span></span> | <span data-ttu-id="9e691-122">"Alle Dateiprofile lesen"</span><span class="sxs-lookup"><span data-stu-id="9e691-122">'Read all file profiles'</span></span>
+<span data-ttu-id="9e691-123">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="9e691-123">Delegated (work or school account)</span></span> | <span data-ttu-id="9e691-124">File.Read.All</span><span class="sxs-lookup"><span data-stu-id="9e691-124">File.Read.All</span></span> |    <span data-ttu-id="9e691-125">"Alle Dateiprofile lesen"</span><span class="sxs-lookup"><span data-stu-id="9e691-125">'Read all file profiles'</span></span>
 
 >[!Note]
-> <span data-ttu-id="3209c-126">Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:</span><span class="sxs-lookup"><span data-stu-id="3209c-126">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="3209c-127">Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Daten anzeigen" (Weitere Informationen finden Sie unter [Erstellen](user-roles.md) und Verwalten von Rollen)</span><span class="sxs-lookup"><span data-stu-id="3209c-127">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+> <span data-ttu-id="9e691-126">Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:</span><span class="sxs-lookup"><span data-stu-id="9e691-126">When obtaining a token using user credentials:</span></span>
+>- <span data-ttu-id="9e691-127">Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Daten anzeigen" (Weitere Informationen finden Sie unter [Erstellen](user-roles.md) und Verwalten von Rollen)</span><span class="sxs-lookup"><span data-stu-id="9e691-127">The user needs to have at least the following role permission: 'View Data' (See [Create and manage roles](user-roles.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="3209c-128">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="3209c-128">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="9e691-128">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="9e691-128">HTTP request</span></span>
 ```
 GET /api/files/{id}
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="3209c-129">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="3209c-129">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="9e691-129">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="9e691-129">Request headers</span></span>
 
-<span data-ttu-id="3209c-130">Name</span><span class="sxs-lookup"><span data-stu-id="3209c-130">Name</span></span> | <span data-ttu-id="3209c-131">Typ</span><span class="sxs-lookup"><span data-stu-id="3209c-131">Type</span></span> | <span data-ttu-id="3209c-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="3209c-132">Description</span></span>
+<span data-ttu-id="9e691-130">Name</span><span class="sxs-lookup"><span data-stu-id="9e691-130">Name</span></span> | <span data-ttu-id="9e691-131">Typ</span><span class="sxs-lookup"><span data-stu-id="9e691-131">Type</span></span> | <span data-ttu-id="9e691-132">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="9e691-132">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="3209c-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="3209c-133">Authorization</span></span> | <span data-ttu-id="3209c-134">String</span><span class="sxs-lookup"><span data-stu-id="3209c-134">String</span></span> | <span data-ttu-id="3209c-135">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="3209c-135">Bearer {token}.</span></span> <span data-ttu-id="3209c-136">**Erforderlich**.</span><span class="sxs-lookup"><span data-stu-id="3209c-136">**Required**.</span></span>
+<span data-ttu-id="9e691-133">Authorization</span><span class="sxs-lookup"><span data-stu-id="9e691-133">Authorization</span></span> | <span data-ttu-id="9e691-134">String</span><span class="sxs-lookup"><span data-stu-id="9e691-134">String</span></span> | <span data-ttu-id="9e691-135">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="9e691-135">Bearer {token}.</span></span> <span data-ttu-id="9e691-136">**Erforderlich**.</span><span class="sxs-lookup"><span data-stu-id="9e691-136">**Required**.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="3209c-137">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="3209c-137">Request body</span></span>
-<span data-ttu-id="3209c-138">Empty</span><span class="sxs-lookup"><span data-stu-id="3209c-138">Empty</span></span>
+## <a name="request-body"></a><span data-ttu-id="9e691-137">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="9e691-137">Request body</span></span>
+<span data-ttu-id="9e691-138">Empty</span><span class="sxs-lookup"><span data-stu-id="9e691-138">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="3209c-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="3209c-139">Response</span></span>
-<span data-ttu-id="3209c-140">Wenn erfolgreich und Datei vorhanden ist – 200 OK mit der [Dateientität](files.md) im Textkörper.</span><span class="sxs-lookup"><span data-stu-id="3209c-140">If successful and file exists - 200 OK with the [file](files.md) entity in the body.</span></span> <span data-ttu-id="3209c-141">Wenn die Datei nicht vorhanden ist – 404 Nicht gefunden.</span><span class="sxs-lookup"><span data-stu-id="3209c-141">If file does not exist - 404 Not Found.</span></span>
+## <a name="response"></a><span data-ttu-id="9e691-139">Antwort</span><span class="sxs-lookup"><span data-stu-id="9e691-139">Response</span></span>
+<span data-ttu-id="9e691-140">Wenn erfolgreich und Datei vorhanden ist – 200 OK mit der [Dateientität](files.md) im Textkörper.</span><span class="sxs-lookup"><span data-stu-id="9e691-140">If successful and file exists - 200 OK with the [file](files.md) entity in the body.</span></span> <span data-ttu-id="9e691-141">Wenn die Datei nicht vorhanden ist – 404 Nicht gefunden.</span><span class="sxs-lookup"><span data-stu-id="9e691-141">If file does not exist - 404 Not Found.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="3209c-142">Beispiel</span><span class="sxs-lookup"><span data-stu-id="3209c-142">Example</span></span>
+## <a name="example"></a><span data-ttu-id="9e691-142">Beispiel</span><span class="sxs-lookup"><span data-stu-id="9e691-142">Example</span></span>
 
-<span data-ttu-id="3209c-143">**Anforderung**</span><span class="sxs-lookup"><span data-stu-id="3209c-143">**Request**</span></span>
+<span data-ttu-id="9e691-143">**Anforderung**</span><span class="sxs-lookup"><span data-stu-id="9e691-143">**Request**</span></span>
 
-<span data-ttu-id="3209c-144">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="3209c-144">Here is an example of the request.</span></span>
+<span data-ttu-id="9e691-144">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="9e691-144">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/files/4388963aaa83afe2042a46a3c017ad50bdcdafb3
 ```
 
-<span data-ttu-id="3209c-145">**Antwort**</span><span class="sxs-lookup"><span data-stu-id="3209c-145">**Response**</span></span>
+<span data-ttu-id="9e691-145">**Antwort**</span><span class="sxs-lookup"><span data-stu-id="9e691-145">**Response**</span></span>
 
-<span data-ttu-id="3209c-146">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="3209c-146">Here is an example of the response.</span></span>
+<span data-ttu-id="9e691-146">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="9e691-146">Here is an example of the response.</span></span>
 
 
 ```json
