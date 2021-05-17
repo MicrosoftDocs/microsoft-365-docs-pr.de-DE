@@ -19,16 +19,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52272720"
 ---
-# <a name="payment-information-for-trinidad-and-tobago"></a><span data-ttu-id="e6a74-103">Zahlungsinformationen für Trinidad und Tobago</span><span class="sxs-lookup"><span data-stu-id="e6a74-103">Payment information for Trinidad and Tobago</span></span>
+# <a name="payment-information-for-trinidad-and-tobago"></a><span data-ttu-id="325ed-103">Zahlungsinformationen für Trinidad und Tobago</span><span class="sxs-lookup"><span data-stu-id="325ed-103">Payment information for Trinidad and Tobago</span></span>
 
-<span data-ttu-id="e6a74-104">[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="e6a74-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="325ed-104">[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="325ed-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="e6a74-105">Bitte zahlen Sie nur in USD und verweisen Sie auf Rechnungsnummer(n) für Ihre Zahlungsüberweisung.</span><span class="sxs-lookup"><span data-stu-id="e6a74-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="325ed-105">Bitte zahlen Sie nur in USD und verweisen Sie auf Rechnungsnummer(n) für Ihre Zahlungsüberweisung.</span><span class="sxs-lookup"><span data-stu-id="325ed-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="e6a74-106">Elektronischer Zahlungsverkehr</span><span class="sxs-lookup"><span data-stu-id="e6a74-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="325ed-106">Elektronischer Zahlungsverkehr</span><span class="sxs-lookup"><span data-stu-id="325ed-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="e6a74-107">**Bank:** Citibank, London</span><span class="sxs-lookup"><span data-stu-id="e6a74-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="e6a74-108">**SWIFT-Code:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="e6a74-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="e6a74-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="e6a74-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="e6a74-110">**Kontonummer:** 12510049</span><span class="sxs-lookup"><span data-stu-id="e6a74-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="e6a74-111">**Kontoname:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="e6a74-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="325ed-107">**Bank:** Citibank, London</span><span class="sxs-lookup"><span data-stu-id="325ed-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="325ed-108">**SWIFT-Code:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="325ed-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="325ed-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="325ed-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="325ed-110">**Kontonummer:** 12510049</span><span class="sxs-lookup"><span data-stu-id="325ed-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="325ed-111">**Kontoname:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="325ed-111">**Account Name:** MICROSOFT</span></span>  

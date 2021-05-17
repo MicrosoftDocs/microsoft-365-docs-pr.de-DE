@@ -19,16 +19,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52273836"
 ---
-# <a name="payment-information-for-ethiopia"></a><span data-ttu-id="fee0d-103">Zahlungsinformationen für Äthiopien</span><span class="sxs-lookup"><span data-stu-id="fee0d-103">Payment information for Ethiopia</span></span>
+# <a name="payment-information-for-ethiopia"></a><span data-ttu-id="44fb0-103">Zahlungsinformationen für Äthiopien</span><span class="sxs-lookup"><span data-stu-id="44fb0-103">Payment information for Ethiopia</span></span>
 
-<span data-ttu-id="fee0d-104">[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="fee0d-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="44fb0-104">[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="44fb0-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="fee0d-105">Bitte zahlen Sie nur in USD und verweisen Sie auf Rechnungsnummer(n) für Ihre Zahlungsüberweisung.</span><span class="sxs-lookup"><span data-stu-id="fee0d-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="44fb0-105">Bitte zahlen Sie nur in USD und verweisen Sie auf Rechnungsnummer(n) für Ihre Zahlungsüberweisung.</span><span class="sxs-lookup"><span data-stu-id="44fb0-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="fee0d-106">Elektronischer Zahlungsverkehr</span><span class="sxs-lookup"><span data-stu-id="fee0d-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="44fb0-106">Elektronischer Zahlungsverkehr</span><span class="sxs-lookup"><span data-stu-id="44fb0-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="fee0d-107">**Bank:** Citibank, London</span><span class="sxs-lookup"><span data-stu-id="fee0d-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="fee0d-108">**SWIFT-Code:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="fee0d-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="fee0d-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="fee0d-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="fee0d-110">**Kontonummer:** 12510049</span><span class="sxs-lookup"><span data-stu-id="fee0d-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="fee0d-111">**Kontoname:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="fee0d-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="44fb0-107">**Bank:** Citibank, London</span><span class="sxs-lookup"><span data-stu-id="44fb0-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="44fb0-108">**SWIFT-Code:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="44fb0-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="44fb0-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="44fb0-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="44fb0-110">**Kontonummer:** 12510049</span><span class="sxs-lookup"><span data-stu-id="44fb0-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="44fb0-111">**Kontoname:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="44fb0-111">**Account Name:** MICROSOFT</span></span>  

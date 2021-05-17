@@ -19,8 +19,8 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52273592"
 ---
-# <a name="payment-information-for-india"></a><span data-ttu-id="2700a-103">Zahlungsinformationen für Indien</span><span class="sxs-lookup"><span data-stu-id="2700a-103">Payment information for India</span></span>
+# <a name="payment-information-for-india"></a><span data-ttu-id="a2999-103">Zahlungsinformationen für Indien</span><span class="sxs-lookup"><span data-stu-id="a2999-103">Payment information for India</span></span>
 
-<span data-ttu-id="2700a-104">[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="2700a-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="a2999-104">[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="a2999-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="2700a-105">Folgen Sie bitte den Zahlungsanweisungen auf Ihrer Rechnung und referenzierten Rechnungsnummer(n) für Ihre Zahlungsüberweisung.</span><span class="sxs-lookup"><span data-stu-id="2700a-105">Please follow payment instructions on your invoice and reference invoice number(s) on your payment remittance.</span></span>  
+<span data-ttu-id="a2999-105">Folgen Sie bitte den Zahlungsanweisungen auf Ihrer Rechnung und referenzierten Rechnungsnummer(n) für Ihre Zahlungsüberweisung.</span><span class="sxs-lookup"><span data-stu-id="a2999-105">Please follow payment instructions on your invoice and reference invoice number(s) on your payment remittance.</span></span>  

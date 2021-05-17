@@ -19,17 +19,17 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/07/2021
 ms.locfileid: "52273608"
 ---
-# <a name="payment-information-for-iceland"></a><span data-ttu-id="311d5-103">Zahlungsinformationen für Island</span><span class="sxs-lookup"><span data-stu-id="311d5-103">Payment information for Iceland</span></span>
+# <a name="payment-information-for-iceland"></a><span data-ttu-id="a48cf-103">Zahlungsinformationen für Island</span><span class="sxs-lookup"><span data-stu-id="a48cf-103">Payment information for Iceland</span></span>
 
-<span data-ttu-id="311d5-104">[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="311d5-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="a48cf-104">[Suchen Sie ein anderes Land oder eine andere Region.](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="a48cf-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="311d5-105">Bitte zahlen Sie nur in EUR und verweisen Sie auf Rechnungsnummer(n) für Ihre Zahlungsüberweisung.</span><span class="sxs-lookup"><span data-stu-id="311d5-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="a48cf-105">Bitte zahlen Sie nur in EUR und verweisen Sie auf Rechnungsnummer(n) für Ihre Zahlungsüberweisung.</span><span class="sxs-lookup"><span data-stu-id="a48cf-105">Please pay in EUR only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="311d5-106">Elektronischer Zahlungsverkehr</span><span class="sxs-lookup"><span data-stu-id="311d5-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="a48cf-106">Elektronischer Zahlungsverkehr</span><span class="sxs-lookup"><span data-stu-id="a48cf-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="311d5-107">**Bank:** Citibank, London</span><span class="sxs-lookup"><span data-stu-id="311d5-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="311d5-108">**SWIFT Code/BIC:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="311d5-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
-<span data-ttu-id="311d5-109">**IBAN:** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="311d5-109">**IBAN:** GB31CITI18500812207591</span></span>  
-<span data-ttu-id="311d5-110">**SORT-Code:** 185008</span><span class="sxs-lookup"><span data-stu-id="311d5-110">**SORT Code:** 185008</span></span>  
-<span data-ttu-id="311d5-111">**Kontonummer:** 12207591</span><span class="sxs-lookup"><span data-stu-id="311d5-111">**Account Number:** 12207591</span></span>  
-<span data-ttu-id="311d5-112">**Kontoname:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="311d5-112">**Account Name:** MICROSOFT</span></span>
+<span data-ttu-id="a48cf-107">**Bank:** Citibank, London</span><span class="sxs-lookup"><span data-stu-id="a48cf-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="a48cf-108">**SWIFT Code/BIC:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="a48cf-108">**SWIFT Code/BIC:** CITIGB2L</span></span>  
+<span data-ttu-id="a48cf-109">**IBAN:** GB31CITI18500812207591</span><span class="sxs-lookup"><span data-stu-id="a48cf-109">**IBAN:** GB31CITI18500812207591</span></span>  
+<span data-ttu-id="a48cf-110">**SORT-Code:** 185008</span><span class="sxs-lookup"><span data-stu-id="a48cf-110">**SORT Code:** 185008</span></span>  
+<span data-ttu-id="a48cf-111">**Kontonummer:** 12207591</span><span class="sxs-lookup"><span data-stu-id="a48cf-111">**Account Number:** 12207591</span></span>  
+<span data-ttu-id="a48cf-112">**Kontoname:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="a48cf-112">**Account Name:** MICROSOFT</span></span>
