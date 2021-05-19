@@ -785,7 +785,7 @@
     - name: Grundlegende Überwachung
       items:
         - name: Einrichten der grundlegenden Überwachung
-          href: set-up-basic-auditing.md
+          href: set-up-basic-audit.md
         - name: Durchsuchen des Überwachungsprotokolls
           href: search-the-audit-log-in-security-and-compliance.md
         - name: Verwenden eines PowerShell-Skripts zum Durchsuchen des Überwachungsprotokolls
