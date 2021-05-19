@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie das Suchfeature im Admin Center verwenden, um bessere und schnellere Ergebnisse zu erzielen.
-ms.openlocfilehash: 4faf761c1bb478dbdd578f3acec4fb108ca7269a
-ms.sourcegitcommit: ea8a096df5acedecdce1780969f2b189c3fadf73
+ms.openlocfilehash: 87e7fb78e9d7ce535f481151515791c20c115836
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50054155"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537511"
 ---
 # <a name="search-in-the-microsoft-365-admin-center"></a>Suche im Microsoft 365 Admin Center
 
@@ -44,7 +44,7 @@ Benutzer können nach Anzeigename, Nachname, Vorname, Benutzername, primäre E-M
 
 :::image type="content" source="../../media/User-search-stock-picture-domain-blanked.png" alt-text="Screenshot: Suchen nach einem Benutzer":::
 
-Wenn Sie neben ihrem Namen das Menü "Weitere Aktionen" auswählen, können Sie ihr Kennwort zurücksetzen.
+Wenn Sie das Menü drei Punkte (weitere Aktionen) neben ihrem Namen auswählen, können Sie ihr Kennwort zurücksetzen.
 
 :::image type="content" source="../../media/User-search-stock-picture-reset-password-domain-blanked.png" alt-text="Screenshot: Benutzersuche mit der Option zum Zurücksetzen des Kennworts aus dem Suchergebnis":::
 

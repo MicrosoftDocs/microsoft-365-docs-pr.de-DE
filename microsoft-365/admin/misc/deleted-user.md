@@ -21,48 +21,40 @@ search.appverid:
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
 description: Erfahren Sie, wie Sie das Konto eines Benutzers löschen oder Microsoft 365 können.
-ms.openlocfilehash: 3b078b782246229d1ddfb1f1fa51282140e71eb0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 56d53a718465d369d4e4e0202c4c97939b70e258
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914786"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537451"
 ---
 # <a name="quick-help-deleted-user"></a>Schnelle Hilfe: Gelöschter Benutzer
 
 [] Es kann vorkommen, dass Sie einen [Benutzer](../add-users/add-users.md) in Ihrer Organisation löschen möchten. In der Regel löschen Sie einen Benutzer, wenn die Person die Organisation verlässt. 
   
 ## <a name="delete-a-user"></a>Löschen eines Benutzers
-
-::: moniker range="o365-worldwide"
   
+::: moniker range="o365-worldwide"
+
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 
-2. Wählen Sie einen Benutzer aus, und wählen Sie dann über der Liste der Benutzer weitere **Optionen** (**...**) aus, und wählen Sie dann **Benutzer löschen aus.**
-  
-3. Wählen Sie im Löschbestätigungsbereich Benutzer **löschen aus.** <br/>[Lesen Sie den vollständigen Artikel.](../add-users/delete-a-user.md)
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.  
-
-2. Wählen Sie einen Benutzer aus, und wählen Sie dann über der Liste der Benutzer **weitere** > **Löschen eines Benutzers aus.**
-  
-3. Wählen Sie im Löschbestätigungsbereich Benutzer **löschen aus.** <br/>[Lesen Sie den vollständigen Artikel.](../add-users/delete-a-user.md)
+ 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>. 
-
-2. Wählen Sie einen Benutzer aus, und wählen Sie dann über der Liste der Benutzer **weitere** > **Löschen eines Benutzers aus.**
-  
-3. Wählen Sie im Löschbestätigungsbereich Benutzer **löschen aus.** <br/>[Lesen Sie den vollständigen Artikel.](../add-users/delete-a-user.md)
+ 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
 
 ::: moniker-end
+
+2. Wählen Sie einen Benutzer aus, und wählen Sie dann über der Liste der Benutzer die drei Punkte (weitere Aktionen) aus, und wählen Sie dann **Benutzer löschen aus.**
+  
+3. Wählen Sie im Löschbestätigungsbereich Benutzer **löschen aus.** <br/>[Lesen Sie den vollständigen Artikel.](../add-users/delete-a-user.md)
 
   
 ## <a name="restore-a-user"></a>Wiederherstellen eines Benutzers

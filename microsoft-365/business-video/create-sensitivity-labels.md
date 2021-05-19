@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Vertraulichkeitsbezeichnungen erstellen und verwalten.
-ms.openlocfilehash: 997b05ba549d3dc57e1793585331dfcfae1e277b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 26697265088a2a59ac145eeff2816b816b95a149
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578939"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537379"
 ---
 # <a name="protect-documents-with-sensitivity-labels"></a>Schützen von Dokumenten mit Vertraulichkeitsbezeichnungen
 
@@ -50,8 +50,8 @@ Vertraulichkeitsbezeichnungen ermöglichen ihnen das Klassifizieren und Schütze
 1. Aktivieren Sie optional endpoint **data loss prevention**. Wählen Sie **Weiter** aus.
 1. Aktivieren Sie optional die **automatische Bezeichnung**. Fügen Sie eine Bedingung hinzu. Wählen Sie beispielsweise unter **Inhalt erkennen, der enthält,** die Option **Bedingung hinzufügen aus.** Geben Sie die Bedingung ein. Fügen Sie beispielsweise eine Bedingung hinzu, dass die Bezeichnung hinzugefügt wird, wenn Reisepass, Sozialversicherung oder andere vertrauliche Informationen erkannt werden. Wählen Sie **Weiter** aus.
 1. Überprüfen Sie Ihre Einstellungen, und wählen Sie **Erstellen aus.** Ihre Bezeichnung wurde erstellt. Wiederholen Sie diesen Vorgang für beliebige zusätzliche Bezeichnungen.
-1. Standardmäßig werden Bezeichnungen in Office in der reihenfolge **angezeigt: Vertraulich,** **Intern** und **Öffentlich**. Um die Reihenfolge zu ändern, wählen Sie für jede Bezeichnung weitere Aktionen **(die** Auslassungspunkte) aus, und verschieben Sie dann die Bezeichnung nach oben oder unten. In der Regel werden Berechtigungen von der niedrigsten bis zur höchsten Berechtigungsstufe aufgelistet.
-1. Wenn Sie einer Bezeichnung eine Unterbezeichnung hinzufügen möchten, wählen Sie **Weitere Aktionen** und dann **Unterebene hinzufügen aus.**
+1. Standardmäßig werden Bezeichnungen in Office in der reihenfolge **angezeigt: Vertraulich,** **Intern** und **Öffentlich**. Um die Reihenfolge zu ändern, wählen Sie für jede Beschriftung die drei Punkte (weitere Aktionen) aus, und verschieben Sie dann die Beschriftung nach oben oder unten. In der Regel werden Berechtigungen von der niedrigsten bis zur höchsten Berechtigungsstufe aufgelistet.
+1. Wenn Sie einer Bezeichnung eine Unterbezeichnung hinzufügen möchten, wählen Sie die drei Punkte (weitere Aktionen) und **dann Unterebene hinzufügen aus.**
 1. Wählen Sie nach Abschluss **der Option Bezeichnungen veröffentlichen,** **zu veröffentlichende Bezeichnungen** auswählen und dann **Hinzufügen aus.** Wählen Sie die Bezeichnungen aus, die Sie veröffentlichen möchten, und wählen Sie **dann Hinzufügen**, **Fertig** und dann **Weiter aus.**
 1. Standardmäßig wird die neue Bezeichnungsrichtlinie auf alle angewendet. Wenn Sie einschränken möchten, auf wen die Richtlinie angewendet wird, wählen Sie **Benutzer** oder Gruppen auswählen und dann **Hinzufügen aus.** Wählen Sie aus, auf wen die Richtlinie angewendet werden soll, und wählen Sie **dann Hinzufügen**, **Fertig** und dann **Weiter aus.**
 1. Wenn Sie eine Standardbezeichnung für Dokumente und E-Mails wünschen, wählen Sie in der Dropdownliste die zu verwendende Bezeichnung aus. Überprüfen Sie die verbleibenden Einstellungen, passen Sie sie nach Bedarf an, und wählen Sie dann **Weiter aus.**

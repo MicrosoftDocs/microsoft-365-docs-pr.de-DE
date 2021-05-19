@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Erhalten Sie eine Übersicht über Microsoft 365 Message Center und seine Rolle bei der Änderungsverwaltung.
-ms.openlocfilehash: af65db32edd56b11adede0e4e690b3f69b07180e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 01e43eb6fa9502c138bfc9ab3595c47ec33ad098
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244419"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537523"
 ---
 # <a name="message-center"></a>Nachrichtencenter
 
@@ -249,66 +249,21 @@ Sie haben eine Nachricht entdeckt, auf die eine andere Person reagieren muss? Si
 
 Müssen Sie sich mit einem anderen Administrator kurzschließen, damit sichergestellt ist, dass er sich der Änderung bewusst ist und entsprechende Maßnahmen vorsieht? Sie können beispielsweise einen Link generieren, den Sie in einer E-Mail oder im Chat freigeben, über den der Benutzer direkt zu dieser Nachricht gelangt. Die Person, für die Sie den Link freigeben, muss Zugriff auf das Nachrichtencenter haben. Weitere Informationen finden Sie unter [Admin roles that don't have access to the Message center](message-center.md#admin-roles-that-dont-have-access-to-the-message-center) (Administratorrollen, die keinen Zugriff auf das Nachrichtencenter haben).
 
-::: moniker range="o365-worldwide"
-
 1. Wählen Sie die Nachricht aus, um sie zu öffnen.
 
 2. Wählen Sie **Link kopieren** aus.
 
 3. Drücken Sie STRG+V, oder klicken Sie mit der rechten Maustaste, und wählen Sie **Einfügen** aus, um den Link zu dem von Ihnen gewünschten Dokument einzufügen.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wählen Sie die Nachricht aus, um sie zu öffnen.
-
-2. Wähle Sie auf der Aktionsleiste **Mehr** \> **Link erhalten** aus.
-
-3. Erlauben Sie der Webseite den Zugriff auf Ihre Zwischenablage. Ein direkter Link wird nun in Ihre Zwischenablage kopiert.
-
-4. Verwenden Sie STRG+V oder die rechte Maustaste, und wählen Sie dann **Einfügen** aus, um den Link einzufügen.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wählen Sie die Nachricht aus, um sie zu öffnen.
-
-2. Wählen Sie **Link kopieren** aus.
-
-3. Drücken Sie STRG+V, oder klicken Sie mit der rechten Maustaste, und wählen Sie **Einfügen** aus, um den Link zu dem von Ihnen gewünschten Dokument einzufügen.
-
-::: moniker-end
 
 ## <a name="read-and-unread-states"></a>Status "Gelesen" und "Ungelesen"
 
 Jede Nachricht im Nachrichtencenter, die ungelesen ist, wird fett formatiert angezeigt. Durch das Öffnen einer Nachricht wird diese als gelesen markiert. Sie können eine Nachricht als ungelesen markieren.
 
-::: moniker range="o365-worldwide"
 
 - Wählen Sie auf der Hauptseite des Nachrichtencenters die drei Punkte für **Weitere Optionen** neben einer Nachricht und dann **Als ungelesen markieren** aus.
 
 Sie können auch eine Nachricht öffnen und im Detailbereich als „ungelesen“ markieren.
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wählen Sie die Nachricht aus, um sie zu öffnen.
-
-2. Wählen Sie **Weitere Optionen** \> **Als ungelesen markieren** aus.
-
-3. Schließen Sie die Nachricht.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-- Wählen Sie auf der Hauptseite des Nachrichtencenters die drei Punkte für **Weitere Optionen** neben einer Nachricht und dann **Als ungelesen markieren** aus.
-
-::: moniker-end
-
 ## <a name="archive-and-restore"></a>Archivieren und Wiederherstellen
 
 Wenn eine Nachricht angezeigt wird, die Sie nicht betrifft oder auf die Sie möglicherweise schon reagiert haben, können Sie sie archivieren, um sie aus dem Posteingang zu entfernen. Die Ansicht, die Sie im Nachrichtencenter sehen, ist für Ihr Benutzerkonto spezifisch. Das Archivieren in Ihrer Ansicht wirkt sich daher nicht auf andere Administratoren aus. Es gibt zwei Möglichkeiten zum Archivieren einer Nachricht.

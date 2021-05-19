@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Erfahren Sie, wie Sie zum Zeitpunkt des Kaufs, der Änderung des Partners oder des Löschens eines Partners aus einem Abonnement einen Abonnementberaterpartner zum Zeitpunkt des Microsoft 365 hinzufügen.
-ms.openlocfilehash: 913b0e14e1bc08cfd4037775aa4b72b7280c704c
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d45f9e3278b0a25cc5603d322c96f40eee45e6f8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579230"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537475"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Hinzufügen, Ändern oder Löschen eines Abonnementberaterpartners
 
@@ -110,7 +110,7 @@ Führen Sie die Schritte auf der Seite Anbieter aus, um nach einem Partner zu su
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
 2. Wenn Sie über mehr als ein Abonnement verfügen, wählen Sie das Abonnement aus, das Sie bearbeiten möchten.
-3. Klicken Sie auf der rechten Seite unter den Abonnementkosten auf **Weitere Aktionen** Hinzufügen > **eines Datensatzpartners.**
+3. Wählen Sie auf der rechten Seite unter den Abonnementkosten die drei Punkte (weitere Aktionen) > Partner des **Datensatzes hinzufügen aus.**
 4. Geben Sie die Microsoft Partner-ID des Partners ein, den Sie hinzufügen, wählen Sie **ID überprüfen** und dann **Absenden** aus. Sie können die entsprechende Microsoft Partner-ID erhalten, indem Sie den Partner danach fragen.
 5. Die Partner-ID wird auf der Seite **Abonnements** angezeigt.
 

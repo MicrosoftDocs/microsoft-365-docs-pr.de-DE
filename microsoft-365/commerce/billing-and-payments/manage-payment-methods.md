@@ -19,14 +19,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Hier erfahren Sie, wie Sie Ihre Zahlungsmethoden im Microsoft 365 Admin Center verwalten können.
+description: Kaufen Sie Business-Produkte oder -Dienste von Microsoft, indem Sie eine vorhandene Zahlungsmethode verwenden oder eine neue im Microsoft 365 Admin Center hinzufügen.
 ms.date: 04/02/2021
-ms.openlocfilehash: b6fe62a70d478a98eb13a17fafb4320afc6b5952
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: bda7eca29b92cdf131c6d3f5a6069ea2be77f6fa
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332006"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537319"
 ---
 # <a name="manage-payment-methods"></a>Verwalten von Zahlungsmethoden
 
@@ -87,7 +87,7 @@ Sie können die Zahlungsmethode ändern, die zur Bezahlung für ein einzelnes Ab
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 2. Suchen Sie auf der Registerkarte **Produkte** das Abonnement, für das Sie mit der alternativen Zahlungsmethode bezahlen möchten.
-3. Wählen Sie **Weitere Aktionen** (drei Punkte) und dann **Zahlungsmethode ersetzen** aus.
+3. Wählen Sie die drei Punkte (weitere Aktionen) und dann **Zahlungsmethode ersetzen** aus.
 4. Wählen Sie im Bereich **Zahlungsmethode ersetzen** in der Dropdownliste eine alternative Zahlungsmethode aus, oder fügen Sie eine Zahlungsmethode hinzu.
 5. Wenn Sie eine Zahlungsmethode hinzufügen, geben Sie die Kreditkarte oder die Kontodetails ein, und wählen Sie dann **Speichern** aus.
 6. Überprüfen Sie, ob die ausgewählte Zahlungsmethode korrekt ist, und klicken Sie dann auf **Ersetzen**.

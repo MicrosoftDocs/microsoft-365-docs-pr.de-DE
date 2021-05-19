@@ -16,16 +16,16 @@ ms.collection:
 - Adm_O365_Setup
 search.appverid:
 - MET150
-description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge bei einem beliebigen DNS-Hostinganbieter für Microsoft 365 erstellen.
+description: Verbinden Sie eine Domäne bei einem beliebigen DNS-Hostinganbieter mit Microsoft 365, indem Sie Ihre Domäne überprüfen und die DNS-Einträge im Konto Ihrer Registrierungsstelle aktualisieren.
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 06a5e7d081a16cd8d5aae28268b3aaf737981a43
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: facdd460bd3197e39dd6d4d9f4a5450dc972bf03
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051042"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537559"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Hinzufügen von DNS-Einträgen zum Verbinden Ihrer Domäne
 
@@ -129,7 +129,7 @@ Speichern Sie den Eintrag.
 
 SPF ist dafür vorgesehen, Spoofing möglichst zu verhindern, es gibt aber Spoofing-Techniken, vor denen SPF nicht schützen kann. Zum Schutz vor diesen Techniken sollten Sie, nachdem Sie SPF eingerichtet haben, auch DKIM und DMARC für Microsoft 365 einrichten. 
 
-Um hiermit zu beginnen, lesen Sie [Verwenden von DKIM zur Überprüfung von ausgehenden E-Mails, die von Ihrer Domäne in Microsoft 365 gesendet wurden](../../security/defender-365-security/use-dkim-to-validate-outbound-email.md) und [Verwenden von DMARC zum Überprüfen von E-Mail in Microsoft 365](../../security/defender-365-security/use-dmarc-to-validate-email.md).
+Um hiermit zu beginnen, lesen Sie [Verwenden von DKIM zur Überprüfung von ausgehenden E-Mails, die von Ihrer Domäne in Microsoft 365 gesendet wurden](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) und [Verwenden von DMARC zum Überprüfen von E-Mail in Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
 
 ### <a name="add-srv-records-for-communications-services-teams-skype-for-business"></a>Hinzufügen von SRV-Einträgen für Kommunikationsdienste (Teams, Skype for Business)
 
@@ -166,3 +166,11 @@ Um diese Werte hinzuzufügen, erstellen Sie eine einzelne Zeichenfolge, trennen 
 
 - Beispiel 1: `100 1 443 sipdir.online.lync.com.`
 - Beispiel 2: `100 1 443 sipdir.online.lync.com`
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Ändern des Namenservers zum Einrichten von Microsoft 365 mit einer beliebigen Domänenregistrierungsstelle](change-nameservers-at-any-domain-registrar.md) (Artikel)
+
+[Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden](find-and-fix-issues.md) (Artikel)
+
+[Domänen verwalten](index.yml) (Linkseite)

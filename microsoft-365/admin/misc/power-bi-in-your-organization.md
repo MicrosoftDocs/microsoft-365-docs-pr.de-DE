@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Erfahren Sie Power BI, wie Benutzer in Ihrer Organisation diesen Geschäftsanalysedienst verwenden können.
-ms.openlocfilehash: c2f07c4e1e6da814eb31186ba0c132021479ad4a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 34a48ed6ee854f0057e79ba86dbd888a65b41c5e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914702"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537427"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI in Ihrer Organisation
 
@@ -167,46 +167,30 @@ Wenn Sie es Ihren vorhandenen Benutzern ermöglichen möchten, sich für Power B
 ## <a name="how-do-i-remove-power-bi-for-users-that-already-signed-up"></a>Wie entferne ich Power BI für Benutzer, die sich bereits registriert haben?
 
 Wenn sich ein Benutzer für Power BI angemeldet hat, aber keinen Zugriff mehr auf Power BI haben soll, können Sie die Power BI für diesen Benutzer entfernen.
-
-::: moniker range="o365-worldwide"
   
+::: moniker range="o365-worldwide"
+
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
+
+::: moniker-end
 
 2. Suchen Sie den Benutzer, für den Sie die Lizenz entfernen möchten, und wählen Sie dann ihren Namen aus.
 
 3. Aktivieren Sie **auf der Registerkarte** Lizenzen und Apps das Kontrollkästchen Microsoft **Power BI.**
 
 4. Wählen Sie **Änderungen speichern** aus.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
-
-2. Suchen Sie den Benutzer, für den Sie die Lizenz entfernen möchten, und wählen Sie dann ihren Namen aus.
-
-3. Wählen Sie **neben Produktlizenzen** die Option **Bearbeiten aus.**
-
-4. Schalten Sie die **Option Microsoft Power BI** aus.
-
-5. Klicken Sie auf **Speichern**.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
-
-2. Suchen Sie den Benutzer, für den Sie die Lizenz entfernen möchten, und wählen Sie dann ihren Namen aus.
-
-3. Wählen Sie **neben Produktlizenzen** die Option **Bearbeiten aus.**
-
-4. Schalten Sie die **Option Microsoft Power BI** aus.
-
-5. Klicken Sie auf **Speichern**.
-
-::: moniker-end
 
 ## <a name="how-do-i-know-when-new-users-have-joined-my-tenant"></a>Wie erfahre ich, wenn meinem Mandanten neue Benutzer beigetreten sind?
 

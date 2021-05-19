@@ -1,23 +1,24 @@
 ---
 title: Zahlungsinformationen für Curacao
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 03dd5e610283054f8a269734e0a6978f660faaf4
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 0d01f33ad92ce5047b9cfda71c8aebcae7be32ee
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273956"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536898"
 ---
 # <a name="payment-information-for-curacao"></a>Zahlungsinformationen für Curacao
 
@@ -31,4 +32,4 @@ Bitte zahlen Sie nur in USD und verweisen Sie auf Rechnungsnummer(n) für Ihre Z
 **Branch:** Dallas  
 **SWIFT-Code:** BOFAUS3N  
 **Kontonummer:** 4426587954  
-**Kontoname:** Microsoft  
+**Kontoname:** Microsoft

@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Erfahren Sie, wie Sie ändern können, wie oft Sie für Ihr Geschäftsabonnement in Rechnung gestellt werden.
 ms.date: 04/02/2021
-ms.openlocfilehash: b8a0341f8cd5f4788bf2eea93394b33e8079abc5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 010857d9092ef62d11e1b7c6019f2fe0eaafb58f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332167"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537343"
 ---
 # <a name="change-your-billing-frequency"></a>Ändern der Abrechnungshäufigkeit
 
@@ -36,3 +36,13 @@ Wenn Sie ein Abonnement kaufen, wählen Sie monatliche oder jährliche Abrechnun
 2. Wählen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie ändern möchten.
 3. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Abonnement- und** Zahlungseinstellungen die Option **Abrechnungshäufigkeit bearbeiten aus.**
 4. Wählen Sie **im Bereich Abrechnungshäufigkeit** bearbeiten die Option für die Häufigkeit der Abrechnung aus, und wählen Sie dann **Ändern aus.**
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Anzeigen Ihrer Rechnung oder Rechnung](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (Artikel)
+
+[Bezahlen für Ihr Abonnement](../../commerce/billing-and-payments/pay-for-your-subscription.md) (Artikel)
+
+[Erfahren Sie, wie Sie Ihre Rechnung oder Rechnung](view-your-bill-or-invoice.md) finden und anzeigen (Artikel)
+
+[Ändern Ihrer Abrechnungsadressen](change-your-billing-addresses.md) (Artikel)

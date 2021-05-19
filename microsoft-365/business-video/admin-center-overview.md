@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie mehr über Microsoft 365 Admin Center.
-ms.openlocfilehash: 7d355b5064c2a0344ac62653afcae8712dbfc73f
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 6d7fe36345ebd9234027e943d11266b7bcc2b30f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470424"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537391"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Übersicht über das Microsoft 365 Admin Center
 
@@ -47,11 +47,11 @@ Wenn Sie über die Berechtigung zum Zugriff auf das Admin Center verfügen, wird
 
 Überprüfen Sie oben im Admin Center die für Sie am besten zu findenen Aktionen. Je nachdem, was Sie bereits eingerichtet haben, werden möglicherweise unterschiedliche Aktionen angezeigt, z. B. das Erstellen neuer Konten, die Verwendung von Teams, das Einrichten von E-Mails und das Installieren Office Apps. 
  
-Unter **Ihrer Organisation** auf der Registerkarte Benutzer finden Sie eine Liste der Personen, die auf Apps und Dienste zugreifen, neue Benutzer hinzufügen, Kennwörter zurücksetzen oder das Menü Weitere Aktionen **verwenden** können.  Wählen Sie eine Person aus, um ihre Informationen und Einstellungen ein- oder zu bearbeiten.  
+Unter **Ihrer** Organisation  auf der Registerkarte Benutzer finden Sie eine Liste der Personen, die auf Apps und Dienste zugreifen, neue Benutzer hinzufügen, Kennwörter zurücksetzen oder das Menü drei Punkte (weitere Aktionen) verwenden können. Wählen Sie eine Person aus, um ihre Informationen und Einstellungen ein- oder zu bearbeiten.  
 
-Erstellen Sie **auf Teams** Registerkarte ein neues Team, oder verwalten Sie vorhandene Teams. Sie können die Mitglieder eines Teams verwalten oder **Weitere Aktionen auswählen,** um andere Einstellungen Teams ändern. 
+Erstellen Sie **auf Teams** Registerkarte ein neues Team, oder verwalten Sie vorhandene Teams. Sie können die Mitglieder eines Teams verwalten oder die drei Punkte (weitere Aktionen) auswählen, um andere Einstellungen Teams ändern. 
 
-Fügen Sie **auf der** Registerkarte Abonnements weitere Produkte hinzu, fügen Sie Lizenzen hinzu, oder verwenden Sie das Menü Weitere **Aktionen,** um Lizenzen oder Zahlungsmethoden zu ändern.
+Fügen Sie **auf** der Registerkarte Abonnements weitere Produkte hinzu, fügen Sie Lizenzen hinzu, oder verwenden Sie das Menü drei Punkte (weitere Aktionen), um Lizenzen oder Zahlungsmethoden zu ändern.
 
 Navigieren Sie **auf** der Registerkarte Lernen zu Videos und Artikeln über das Admin Center und andere Microsoft 365 Features. Um die erweiterten Features des Admin Centers zu erkunden, öffnen Sie das Navigationsmenü, und erweitern Sie die Überschriften, um weitere Informationen zu erhalten. Wählen **Sie Alle anzeigen** aus, um alles im Navigationsmenü anzuzeigen, oder verwenden Sie die Suchleiste, um schnell zu finden, was Sie suchen.
 
@@ -67,7 +67,7 @@ Spezielle Arbeitsbereiche, z. B. Sicherheit oder Geräteverwaltung, ermöglichen
 
 Um zum Microsoft 365 Admin Center zu wechseln, wechseln Sie zu [admin.microsoft.com](https://admin.microsoft.com) oder wählen Sie, wenn Sie bereits angemeldet sind, das App-Startfeld aus, und wählen Sie **Admin aus.**
 
-Auf der Startseite können Sie Karten für Aufgaben erstellen, die Sie häufig ausführen. Wenn Sie eine neue Karte hinzufügen möchten, wählen Sie **Karte hinzufügen** aus, und wählen Sie dann das Pluszeichen neben der Karte aus, die Sie hinzufügen möchten. Schließen Sie das Fenster, wenn Sie fertig sind. Sie können die Karten neu anordnen, indem Sie sie auswählen und dann an die richtige Stelle ziehen. Um eine Karte zu entfernen, wählen Sie **Weitere Aktionen** aus, und wählen Sie dann **Entfernen aus.**
+Auf der Startseite können Sie Karten für Aufgaben erstellen, die Sie häufig ausführen. Wenn Sie eine neue Karte hinzufügen möchten, wählen Sie **Karte hinzufügen** aus, und wählen Sie dann das Pluszeichen neben der Karte aus, die Sie hinzufügen möchten. Schließen Sie das Fenster, wenn Sie fertig sind. Sie können die Karten neu anordnen, indem Sie sie auswählen und dann an die richtige Stelle ziehen. Um eine Karte zu entfernen, wählen Sie die drei Punkte (weitere Aktionen) aus, und wählen Sie dann **Entfernen aus.**
 
 Um weitere Administratoraufgaben anzuzeigen, erweitern Sie das Navigationsmenü. Die erweiterten Konfigurationseinstellungen finden Sie unten in den zusätzlichen Admin Centern.
 

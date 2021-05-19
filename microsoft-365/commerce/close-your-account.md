@@ -20,12 +20,12 @@ ms.custom:
 search.appverid: MET150
 description: Erfahren Sie, wie Sie Ihr Konto bei Microsoft schließen.
 ms.date: 04/02/2021
-ms.openlocfilehash: 767a82088500bc24c0d4755a2dafd40742fc796c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ed73c191063a328490945c54dc2f5101c88f17e8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331766"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537295"
 ---
 # <a name="close-your-account"></a>Schließen Ihres Kontos
 
@@ -52,7 +52,7 @@ Wenn Ihre Organisation Active Directory verwendet, das mit Microsoft Azure Activ
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Schritt 2: Kündigen aller aktiven Abonnements
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-2. Suchen Sie **auf** der Registerkarte Produkte nach einem aktiven Abonnement. Wählen Sie **Weitere Aktionen** (drei Punkte) und dann **Abonnement kündigen** aus.
+2. Suchen Sie **auf** der Registerkarte Produkte nach einem aktiven Abonnement. Wählen Sie die drei Punkte (weitere Aktionen) aus, und wählen Sie dann **Abonnement abbrechen aus.**
 3. Wählen Sie im Bereich **Abonnement kündigen** einen Grund aus, warum Sie kündigen. Geben Sie optional Feedback.
 4. Wählen Sie **Speichern** aus.
 5. Wiederholen Sie die Schritte 1 bis 4, um alle aktiven Abonnements zu kündigen.

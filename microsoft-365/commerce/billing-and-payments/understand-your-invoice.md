@@ -22,12 +22,12 @@ search.appverid: MET150
 description: Erfahren Sie, wie Sie Ihre Rechnung für Microsoft Business-Produkte lesen und verstehen können.
 keywords: Abrechnungskonten, Unternehmensinformationen, Rechnungen
 ms.date: 05/04/2021
-ms.openlocfilehash: dc83db458d1d91942352795c9b67578e9f1a2fc2
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: d173df1eac827eb835b8544f64858c28ccf0fb75
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331935"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537307"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Erläuterungen zu Ihrer Rechnung
 
@@ -144,7 +144,18 @@ Die Zahlungsanweisungen hängen von Ihrer Zahlungsmethode ab und werden am Ende 
 
 Azure-Vorauszahlungen sind nur für berechtigte Azure-Produkte und -Dienste als Zahlungsmethode verfügbar.
 
-## <a name="need-help-contact-support"></a>Benötigen Sie Hilfe? wenden Sie sich an den Support,
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Verstehen Ihrer Rechnung oder Rechnung für Microsoft 365 Business](understand-your-invoice2.md) (Artikel)
+
+[Nachverfolgen des Azure-Kreditsaldos](/azure/billing/billing-mca-check-azure-credits-balance) für Microsoft Customer Agreement (Artikel)
+
+[Überprüfen Ihrer Microsoft Customer Agreement-Rechnung](/azure/cost-management-billing/understand/review-customer-agreement-bill) (Artikel)
+
+[Erste Schritte mit Ihrem Abrechnungskonto](/azure/billing/billing-mca-overview) für Microsoft Customer Agreement (Artikel)
+
+
+## <a name="need-help-contact-support"></a>Benötigen Sie Hilfe? Support kontaktieren
 
 Wenn Sie Fragen haben oder Hilfe mit Ihren Azure-Gutschriften benötigen, dann <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">erstellen Sie beim Azure-Support eine Support-Anforderung</a>.
 

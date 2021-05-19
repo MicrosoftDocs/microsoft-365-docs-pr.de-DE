@@ -1,23 +1,24 @@
 ---
 title: Zahlungsinformationen für Guadeloupe
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8bc69853eeed5ccc8ad5cf9ae77c652a20d5fc22
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 3085e72f671e453923af6478db748977cd2494dd
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273704"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536754"
 ---
 # <a name="payment-information-for-guadeloupe"></a>Zahlungsinformationen für Guadeloupe
 
@@ -31,4 +32,4 @@ Bitte zahlen Sie nur in USD, und verweisen Sie auf Ihre Rechnungsnummer für Ihr
 **Branch** Dallas  
 **SWIFT-Code:** BOFAUS3N  
 **Kontonummer:** 4426587954  
-**Kontoname:** Microsoft  
+**Kontoname:** Microsoft

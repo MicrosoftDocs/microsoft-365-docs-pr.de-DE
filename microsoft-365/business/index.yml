@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Microsoft 365 Business Premium-Ressourcen
-summary: Microsoft 365 Business Premium (vormals Microsoft 365 Business) ist ein umfassender Abonnementdienst für Unternehmen mit weniger als 300 Mitarbeitern. Er enthält Ihre bevorzugten Office-Produktivitäts-Apps und -Dienste sowie Tools für die Zusammenarbeit wie Microsoft Teams mit erweiterten Funktionen für Sicherheit und Geräteverwaltung.
+summary: "Microsoft\_365\_Business\_Premium (vormals Microsoft\_365\_Business) ist ein umfassender Abonnementdienst für Unternehmen mit weniger als 300\_Mitarbeitern. Er enthält Ihre bevorzugten Office-Produktivitäts-Apps und -Dienste sowie Tools für die Zusammenarbeit wie Microsoft\_Teams mit erweiterten Funktionen für Sicherheit und Geräteverwaltung."
 brand: m365
 metadata:
   title: Microsoft 365 Business Premium-Ressourcen
@@ -15,10 +15,10 @@ metadata:
 productDirectory:
   title: Sichere Remotearbeit mit Microsoft 365 Business Premium
   items:
-    - title: Lesen
+    - title: Ansehen
       imageSrc: 'https://docs.microsoft.com/office/media/icons/sign-up-blue.svg'
-      summary: Bewährte Methoden zum Ermöglichen sicherer Remotearbeit mit Microsoft 365 Business Premium.
-      url: 'https://techcommunity.microsoft.com/t5/small-and-medium-business-blog/using-microsoft-365-business-to-secure-your-remote-workforce/ba-p/1298623'
+      summary: "Die fünf wichtigsten Vorteile von Microsoft\_365\_Business\_Premium."
+      url: 'https://aka.ms/M365BPvideo'
     - title: Erwerben des kostenlosen Partner-Kits
       imageSrc: 'https://docs.microsoft.com/office/media/icons/education-tutorial-blue.svg'
       summary: Praktische Anleitungen und Markteinführungsressourcen für Partner zum Sichern der Remotearbeit.

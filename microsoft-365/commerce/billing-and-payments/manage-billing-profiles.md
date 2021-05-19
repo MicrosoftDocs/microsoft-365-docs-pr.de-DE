@@ -21,32 +21,24 @@ ms.custom:
 search.appverid: MET150
 description: Erfahren Sie, wie Abrechnungsprofile Rechnungen unterstützen.
 ms.date: 04/02/2021
-ms.openlocfilehash: 36d762e50627763b7856ed1fe6c109e8da2b4789
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: e66efe12e05d2aaf286b689c955f17c8401144f1
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332030"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537331"
 ---
 # <a name="understand-billing-profiles"></a>Informationen zu Abrechnungsprofilen
 
-Für kommerzielle Kunden, die Produkte und Dienste von Microsoft kaufen, können Sie mit Abrechnungsprofilen anpassen, welche Elemente in Ihrer Rechnung enthalten sind und wie Sie Ihre Rechnungen bezahlen.
+Ein Abrechnungsprofil enthält eine Zahlungsmethode, Rechnungsinformationen und andere Rechnungseinstellungen, z. B. Bestellnummer und E-Mail-Rechnungseinstellung. Sie verwenden ein Abrechnungsprofil, um die Produkte zu bezahlen, die Sie bei Microsoft kaufen. Ein Abrechnungsprofil wird automatisch erstellt, wenn ein Benutzer einen Self-Service-Kauf vor sich hat. Jedes Abrechnungsprofil wird separat in Rechnung gestellt.
 
-Abrechnungsprofile enthalten die folgenden Informationen:
+> [!NOTE]
+>
+> Abrechnungsprofile sind nicht für Kunden verfügbar, die Produkte und  Dienste von Microsoft.com oder auf der Seite Dienste kaufen im Microsoft 365 erwerben.
 
-- **Abrechnungskonto** &ndash; Name des Abrechnungskontos, mit dem das Profil verknüpft ist
-- **Zahlungsmethoden** &ndash; Kredit- oder Debitkarten, Bankkonten, Schecks oder Überweisungen
-- **Kontaktinformationen** &ndash; Rechnungsadresse und Kontaktname
-- **Rechnungseinstellungen** &ndash; Währung basierend auf dem Land des Abrechnungskontos, einer optionalen Postfachnummer und der Option, Rechnungen als E-Mail-Anlagen zu empfangen
-- **Berechtigungen** &ndash; Berechtigungen, mit denen Sie das Abrechnungsprofil ändern, Rechnungen bezahlen oder die Zahlungsmethode im Abrechnungsprofil zum Tätigen von Einkäufen verwenden können
+## <a name="what-are-billing-profile-roles"></a>Was sind Abrechnungsprofilrollen?
 
-Verwenden Sie Abrechnungsprofile, um Ihre Einkäufe zu steuern und Ihre Rechnung anzupassen. Für die Produkte, die mit dem Abrechnungsprofil erworben wurden, wird eine monatliche Rechnung generiert. Sie können die Rechnung anpassen, z. B. die Bestellnummer und die E-Mail-Rechnungseinstellung aktualisieren.
-
-Bei Ihrem ersten Kauf wird automatisch ein Abrechnungsprofil für Ihr Abrechnungskonto erstellt. Sie können Abrechnungsprofile auf der Seite <a href="https://go.microsoft.com/fwlink/p/?linkid=2103629" target="_blank">Abrechnungsprofile</a> erstellen, um weitere Rechnungen einrichten zu können. Sie können z. B. unterschiedliche Abrechnungsprofile verwenden, wenn Sie Käufe für jede Abteilung in Ihrer Organisation tätigen. Am nächsten Abrechnungsdatum erhalten Sie eine Rechnung für jedes Abrechnungsprofil.
-
-## <a name="billing-profile-roles"></a>Abrechnungsprofilrollen
-
-Rollen in Abrechnungsprofilen verfügen über Berechtigungen zum Steuern von Einkäufen sowie zum Anzeigen und Verwalten von Rechnungen. Weisen Sie diese Rollen Benutzern zu, die Rechnungen nachverfolgen, organisieren und bezahlen, wie z. B. Mitglieder des Beschaffungsteams in Ihrer Organisation.
+Rollen in Abrechnungsprofilen verfügen über Berechtigungen zum Steuern von Einkäufen sowie zum Anzeigen und Verwalten von Rechnungen. Weisen Sie diese Rollen Benutzern zu, die Rechnungen nachverfolgen, organisieren und bezahlen. Beispielsweise Mitglieder des Beschaffungsteams in Ihrer Organisation.
 
 | Rolle                         | Beschreibung                                                                      |
 |----------------------------- |--------------------------------------------------------------------------------- |
@@ -55,21 +47,36 @@ Rollen in Abrechnungsprofilen verfügen über Berechtigungen zum Steuern von Ein
 | Abrechnungsprofilleser       | Schreibgeschützte Ansicht aller Daten in einem Abrechnungsprofil                                |
 | Rechnungs-Manager              | Anzeigen und Bezahlen von Rechnungen und eine schreibgeschützte Ansicht aller Daten in einem Abrechnungsprofil  |
 
-## <a name="view-billing-profiles"></a>Anzeigen von Abrechnungsprofilen
+## <a name="view-my-billing-profiles"></a>Anzeigen meiner Abrechnungsprofile
+
+> [!NOTE]
+>
+> Wenn Sie diese Schritte ausführen und die Liste der Abrechnungsprofile leer ist, bedeutet dies, dass Sie kein Abrechnungsprofil haben und dieses Feature nicht verwenden können.
 
 1. Gehen Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Rechnungen & Zahlungen</a>.
-2. Wählen **Sie Abrechnungsprofile** aus, und wählen Sie dann ein Abrechnungsprofil aus der Liste aus.
+2. Wählen Sie **die Registerkarte Abrechnungsprofil** aus, und wählen Sie dann ein Abrechnungsprofil aus der Liste aus.
 
-    - Auf der **Registerkarte Übersicht** können Sie Abrechnungsprofildetails bearbeiten und das Senden einer Rechnung per E-Mail aktivieren oder deaktivieren.
-    - Auf der **Registerkarte Berechtigungen** können Sie Benutzern Rollen zum Bezahlen von Rechnungen zuweisen.
-    - Auf der **Registerkarte Azure-Guthabensaldo** können Azure-Kunden den Transaktionssaldoverlauf für die von diesem Abrechnungsprofil verwendeten Azure-Guthaben anzeigen.
-    - Auf der **Registerkarte Azure-Guthaben** können Azure-Kunden eine Liste der Azure-Guthaben anzeigen, die diesem Abrechnungsprofil zugeordnet sind, und deren Ablaufdatum.
+Jedes Abrechnungsprofil enthält die folgenden Informationen:
 
-    > [!NOTE]
-    > Wenn Sie keine Azure-Guthaben haben, werden  die Registerkarten Azure-Guthabensaldo oder **Azure-Guthaben** nicht angezeigt.
+- **Name und Status des Abrechnungsprofils** &ndash; Der eindeutige Name des Abrechnungsprofils und ob das Abrechnungsprofil für den Kauf aktiv oder deaktiviert ist.
+- **Rechnungseinstellungen** &ndash; Währung basierend auf dem Land des Abrechnungskontos, Informationen zur Häufigkeit und dem Datum der Rechnung, der Option, Rechnungen als E-Mail-Anlagen zu empfangen, und einem optionalen Feld für die Postfachnummer
+- **Zahlungsmethoden** &ndash; Zeigt die primäre zahlungsmethode und die Sicherungszahlungsmethode für das Profil an, falls dies der Fall ist.
+- **Abrechnungskonto** &ndash; Name des Abrechnungskontos, mit dem das Profil verknüpft ist. Weitere Informationen zu Abrechnungskonten finden Sie unter [Verstehen von Abrechnungskonten](../manage-billing-accounts.md).
+- **Kontaktinformationen** &ndash; Rechnungsadresse und Kontaktname und E-Mail-Adresse
+- **Abrechnungsprofilrollen** &ndash; Eine Liste der Personen, denen eine der Abrechnungsprofilrollen zugewiesen ist, um Aufgaben für dieses Profil zu übernehmen. Zahlen Sie beispielsweise Rechnungen, fügen Sie eine Postfachnummer hinzu, oder ersetzen Sie die Zahlungsmethode, die zum Tätigen von Einkäufen verwendet wird.
 
-## <a name="need-help-contact-support"></a>Benötigen Sie Hilfe? wenden Sie sich an den Support,
+> [!NOTE]
+>
+> Sie können Nur Benutzern in Ihrer Organisation Abrechnungsprofilrollen zuweisen.
+
+## <a name="need-help-contact-support"></a>Benötigen Sie Hilfe? Support kontaktieren
 
 Wenn Sie Fragen haben oder Hilfe zu Ihren Azure-Gebühren benötigen, <a href="https://portal.azure.com/#blade/Microsoft_Azure_Support/HelpAndSupportBlade/newsupportrequest" target="_blank">erstellen Sie eine Supportanfrage mit dem Azure-Support.</a>
 
-Wenn Sie Fragen haben oder Hilfe zu Ihrem Abrechnungsprofil im Microsoft 365 benötigen, wenden Sie sich [an den Support für Geschäftsprodukte](../../business-video/get-help-support.md).
+Wenn Sie Fragen haben oder Hilfe zu Ihrem Abrechnungsprofil im Microsoft 365 benötigen, wenden Sie [sich an den Support](../../business-video/get-help-support.md).
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[So bezahlen Sie Ihr Abonnement mit einem Abrechnungsprofil](pay-for-subscription-billing-profile.md) (Artikel)\
+[Verstehen von Abrechnungskonten](../manage-billing-accounts.md) (Artikel)\
+[Verwalten von Zahlungsmethoden](manage-payment-methods.md) (Artikel)
