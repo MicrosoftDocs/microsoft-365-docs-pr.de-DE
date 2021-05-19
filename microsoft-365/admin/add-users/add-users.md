@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Erfahren Sie, wie Sie gleichzeitig mehrere Benutzer hinzufügen und Lizenzen für Microsoft 365 zuweisen können.
+description: Jede Person in Ihrem Team benötigt ein Benutzerkonto, um sich bei Microsoft 365 für Unternehmen anmelden und darauf zugreifen zu können. Erfahren Sie, wie Sie Benutzer hinzufügen und Lizenzen zuweisen können.
 ms.date: 07/01/2020
-ms.openlocfilehash: 3efa32d21a21ed12041f5731296c1b033374712f
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 390576f46bed57929471b16848f9e1fd7e95304d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274388"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535998"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Gleichzeitiges Hinzufügen von Benutzern und Zuweisen von Lizenzen
 

@@ -19,12 +19,12 @@ ms.custom:
 search.appverid: MET150
 description: Erfahren Sie, wie Sie kostenlose Self-Service-Anmeldeabonnements für Ihre Organisation verwalten.
 ms.date: 03/17/2021
-ms.openlocfilehash: 9c29d36ff28e312fa3782b60f89fa755d4df9bf3
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 741c9e0b45f127ffc0753b34982073f90c525d5b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345130"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536070"
 ---
 # <a name="manage-self-service-sign-up-subscriptions"></a>Verwalten von Self-Service-Anmeldeabonnements
 
@@ -39,7 +39,7 @@ Es gibt eine begrenzte Anzahl kostenloser Self-Service-Anmeldeabonnements, für 
 
 ## <a name="how-are-these-subscriptions-different-from-self-service-purchase-subscriptions"></a>Wie unterscheiden sich diese Abonnements von Self-Service-Kaufabonnements?
 
-Self-Service-Anmeldeabonnements sind kostenlos und stehen für eine größere Liste von Produkten zur Verfügung als Self-Service-Kaufabonnements. Wenn sich ein Benutzer für ein Self-Service-Kaufabonnement einschreibt, ist er für die Zahlung verantwortlich. Self-Service-Kaufabonnements sind nur für Power Platform-Produkte (Power BI, Power Apps und Power Automate), Project und Visio. Weitere Informationen finden Sie unter Häufig gestellte Fragen [zum Self-Service-Kauf.](self-service-purchase-faq.md)
+Self-Service-Anmeldeabonnements sind kostenlos und stehen für eine größere Liste von Produkten zur Verfügung als Self-Service-Kaufabonnements. Wenn sich ein Benutzer für ein Self-Service-Kaufabonnement einschreibt, ist er für die Zahlung verantwortlich. Self-Service-Kaufabonnements sind nur für Power Platform-Produkte (Power BI, Power Apps und Power Automate), Project und Visio. Weitere Informationen finden Sie unter Häufig gestellte Fragen [zum Self-Service-Kauf.](self-service-purchase-faq.yml)
 
 ## <a name="block-users-from-signing-up"></a>Blockieren der Anmeldung von Benutzern
 

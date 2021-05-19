@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel wird die Verwaltung von Core eDiscovery-Fällen beschrieben. Dies umfasst das Schließen eines Falls, das erneute Öffnen eines geschlossenen Falls und das Löschen eines Falls.
-ms.openlocfilehash: 251ca932954071cf949c45343130f122464dcf01
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 8a54d5c8f93d36351538bc235a6dbeaaa602c3e9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52310880"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532446"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Schließen, Erneut öffnen und Löschen eines Core eDiscovery-Falls
 
@@ -82,7 +82,7 @@ Wenn Sie einen Fall erneut öffnen, werden alle eDiscovery-Haltewerte, die beim 
 
     Wenn der Prozess abgeschlossen ist, wird der Status des Falls auf der Seite Core **eDiscovery** in **Aktiv** geändert.
 
-7. (Optional) Um alle halte, die dem erneut geöffneten Fall zugeordnet sind, zu aktivieren, wechseln Sie zur Registerkarte Halte, wählen Sie einen Haltestatus aus, und aktivieren Sie dann das Kontrollkästchen unter **Status** auf der Flyoutseite für halte. 
+6. (Optional) Um alle halte, die dem erneut geöffneten Fall zugeordnet sind, zu aktivieren, wechseln Sie zur Registerkarte Halte, wählen Sie einen Haltestatus aus, und aktivieren Sie dann das Kontrollkästchen unter **Status** auf der Flyoutseite für halte. 
   
 ## <a name="delete-a-case"></a>Löschen eines Falls
 
@@ -108,6 +108,6 @@ So löschen Sie einen Fall
 
 3. Klicken Sie auf der Fall-Startseite unter **Status** auf **Fall löschen**.
 
-      ![Erneuter Öffnen eines geschlossenen Falls](../media/eDiscoveryCaseHomePageDelete.png)
+      ![Löschen eines Falls](../media/eDiscoveryCaseHomePageDelete.png)
 
 Wenn der Fall, den Sie löschen möchten, weiterhin eDiscovery-Halte halte enthält, erhalten Sie eine Fehlermeldung. Sie müssen alle dem Fall zugeordneten Halte halte löschen und dann erneut versuchen, den Fall zu löschen.

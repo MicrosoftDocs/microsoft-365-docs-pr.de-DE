@@ -17,19 +17,19 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Auflistung von Bezeichnungsaktionen, die im Aktivitäts-Explorer verfügbar sind.
-ms.openlocfilehash: ed51c908d6968e3aeae0adbe06d9ba55887bcf83
-ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
+description: Auflistung von Bezeichnungsaktivitäten, die im Aktivitäts-Explorer verfügbar sind.
+ms.openlocfilehash: d4f6884ad39b16aeb0345f0c976d6ad87f03c05a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51902946"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532254"
 ---
 # <a name="labeling-activities-that-are-available-in-activity-explorer"></a>Im Aktivitäts-Explorer verfügbare Bezeichnungsaktivitäten
 
 ## <a name="sensitivity-label-applied"></a>Angewendete Vertraulichkeitsbezeichnung
 
-Dieses Ereignis wird jedes Mal generiert, wenn ein nicht gekennzeichnetes Dokument gekennzeichnet oder eine E-Mail mit einer Bezeichnung gesendet wird. 
+Dieses Ereignis wird jedes Mal generiert, wenn ein nicht gekennzeichnetes Dokument gekennzeichnet oder eine E-Mail mit einer Vertraulichkeitsbezeichnung gesendet wird. 
 
 - Sie wird zum Zeitpunkt des Speicherns in Office und Webanwendungen erfasst. 
 - Sie wird zum Zeitpunkt des Auftretens in Azure Information Protection-Add-Ins erfasst. 
@@ -50,7 +50,7 @@ Dieses Ereignis wird jedes Mal generiert, wenn ein nicht gekennzeichnetes Dokume
 
 ## <a name="sensitivity-label-changed"></a>Vertraulichkeitsbezeichnung geändert
 
-Dieses Ereignis wird jedes Mal generiert, wenn eine Bezeichnung für das Dokument oder die E-Mail aktualisiert wird.
+Dieses Ereignis wird jedes Mal generiert, wenn eine Vertraulichkeitsbezeichnung für das Dokument oder die E-Mail aktualisiert wird.
 
 - Für die AIP Unified-Client-, Unified Scanner- und MIP-SDK-Quellen wurden die *AIP-Upgradebezeichnung* und die *Downgrade-Bezeichnungsaktion* der Aktivitäts-Explorer-Bezeichnung *geändert.*
 
@@ -75,7 +75,7 @@ Dieses Ereignis wird jedes Mal generiert, wenn eine Bezeichnung für das Dokumen
 
 ## <a name="sensitivity-label-removed"></a>Vertraulichkeitsbezeichnung entfernt
 
-Dieses Ereignis wird jedes Mal generiert, wenn eine Bezeichnung aus einer Datei oder einem Dokument entfernt wird.
+Dieses Ereignis wird jedes Mal generiert, wenn eine Vertraulichkeitsbezeichnung aus einer Datei oder einem Dokument entfernt wird.
 
 - Dieses Ereignis wird zum Zeitpunkt des Speicherns in Office und Webanwendungen erfasst.
 - Sie wird zum Zeitpunkt des Auftretens in Azure Information Protection-Add-Ins erfasst. 
@@ -97,7 +97,7 @@ Dieses Ereignis wird jedes Mal generiert, wenn eine Bezeichnung aus einer Datei 
 
 ## <a name="sensitivity-label-file-read"></a>Datei mit Vertraulichkeitsbezeichnungen lesen
 
-Dieses Ereignis wird jedes Mal generiert, wenn ein gekennzeichnetes oder geschütztes Dokument geöffnet wird.
+Dieses Ereignis wird jedes Mal generiert, wenn ein vertraulichkeitsbeschriftungs- oder geschütztes Dokument geöffnet wird.
 
 |Quelle  |Im Aktivitäts-Explorer gemeldet | Hinweis  |
 |---------|---------|---------| 
@@ -113,7 +113,7 @@ Dieses Ereignis wird jedes Mal generiert, wenn ein gekennzeichnetes oder geschü
 |MCAS     |nein         |         |
 
 
-## <a name="sensitivity-label-files-discovered"></a>Gefundene Vertraulichkeitsbezeichnungsdateien
+## <a name="files-discovered"></a>Gefundene Dateien
 
 Dieses Ereignis wird jedes Mal generiert, wenn Dateien erkannt werden, wenn AIP Scanner zum Scannen vertraulicher Daten an verschiedenen Speicherorten verwendet wird und Dateien gefunden werden.
 
@@ -149,7 +149,7 @@ Dieses Ereignis wird jedes Mal generiert, wenn ein Dokument mit einer Vertraulic
 |MCAS     |nein         |         |
 
 
-## <a name="sensitivity-label-file-removed"></a>Datei mit Vertraulichkeitsbezeichnungen entfernt
+## <a name="file-removed"></a>Datei entfernt
 
 Dieses Ereignis wird jedes Mal generiert, wenn der AIP-Scanner erkennt, dass eine zuvor gescannte Datei entfernt wurde.
 
@@ -166,7 +166,7 @@ Dieses Ereignis wird jedes Mal generiert, wenn der AIP-Scanner erkennt, dass ein
 |Power BI Desktop und Web         |nicht zutreffend  |
 |MCAS     |nicht zutreffend        |         |
 
-### <a name="sensitivity-label-protection-applied"></a>Angewendeter Vertraulichkeitsbezeichnungsschutz
+### <a name="protection-applied"></a>Angewendeter Schutz
 
 Dieses Ereignis wird generiert, wenn der erste Schutz manuell zu einem Element hinzugefügt wird, das keine Bezeichnung hat.
 
@@ -183,7 +183,7 @@ Dieses Ereignis wird generiert, wenn der erste Schutz manuell zu einem Element h
 |Power BI Desktop und Web         |nicht zutreffend            |
 |MCAS     |nicht zutreffend        |         |
 
-## <a name="sensitivity-label-protection-changed"></a>Schutz von Vertraulichkeitsbezeichnungen geändert
+## <a name="protection-changed"></a>Schutz geändert
 
 Dieses Ereignis wird jedes Mal generiert, wenn der Schutz für ein nicht gekennzeichnetes Dokument manuell geändert wird.
 
@@ -200,7 +200,7 @@ Dieses Ereignis wird jedes Mal generiert, wenn der Schutz für ein nicht gekennz
 |Power BI Desktop und Web         |nicht zutreffend            |
 |MCAS     |nicht zutreffend        |
 
-## <a name="sensitivity-label-protection-removed"></a>Schutz von Vertraulichkeitsbezeichnungen entfernt
+## <a name="protection-removed"></a>Schutz entfernt
 
 Dieses Ereignis wird jedes Mal generiert, wenn der Schutz für ein nicht gekennzeichnetes Dokument manuell geändert wird.
 
@@ -217,9 +217,9 @@ Dieses Ereignis wird jedes Mal generiert, wenn der Schutz für ein nicht gekennz
 |Power BI Desktop und Web         |nicht zutreffend            |
 |MCAS     |nicht zutreffend        |
 
-## <a name="sensitivity-label-dlp-policy-matched"></a>Vertraulichkeitsbezeichnung DLP-Richtlinie abgestimmt
+## <a name="dlp-policy-matched"></a>Übereinstimmung der DLP-Richtlinie
 
-Dieses Ereignis wird bei jeder Übereinstimmung mit einer DLP-Richtlinie generiert.
+Dieses Ereignis wird jedes Mal generiert, wenn eine DLP-Richtlinie für ein Dokument oder eine E-Mail-Adresse abgestimmt wird.
 
 |Quelle  |Im Aktivitäts-Explorer gemeldet |
 |---------|---------| 
@@ -247,9 +247,9 @@ Die Ereignisse für Windows 10 (Endpoint DLP) sind:
 
 ## <a name="retention-label-applied"></a>Angewendete Aufbewahrungsbezeichnung 
 
-Dieses Ereignis wird jedes Mal generiert, wenn ein nicht gekennzeichnetes Dokument gekennzeichnet oder eine E-Mail mit einer Bezeichnung gesendet wird.
+Dieses Ereignis wird jedes Mal generiert, wenn ein nicht gekennzeichnetes Dokument gekennzeichnet oder eine E-Mail mit einer Aufbewahrungsbezeichnung gesendet wird.
 
-- Sie wird zum Zeitpunkt des Speicherns in Office und Webanwendungen erfasst.
+- Sie wird zum Zeitpunkt des Speicherns für ein Dokument und zum Zeitpunkt des Sendens für eine E-Mail erfasst.
 
 |Quelle  |Im Aktivitäts-Explorer gemeldet |
 |---------|---------| 
@@ -261,7 +261,7 @@ Dieses Ereignis wird jedes Mal generiert, wenn ein nicht gekennzeichnetes Dokume
 
 Dieses Ereignis wird jedes Mal generiert, wenn eine Bezeichnung für ein Dokument oder eine E-Mail aktualisiert wird.
 
-- Sie wird zum Zeitpunkt des Speicherns erfasst.
+- Sie wird zum Zeitpunkt des Speicherns für ein Dokument und zum Zeitpunkt des Sendens für eine E-Mail erfasst.
 
 |Quelle  |Im Aktivitäts-Explorer gemeldet |
 |---------|---------| 
@@ -273,7 +273,7 @@ Dieses Ereignis wird jedes Mal generiert, wenn eine Bezeichnung für ein Dokumen
 
 Dieses Ereignis wird jedes Mal generiert, wenn eine Bezeichnung aus einer Datei oder einem Dokument entfernt wird.
 
-- Sie wird zum Zeitpunkt des Speicherns erfasst.
+- Sie wird zum Zeitpunkt des Speicherns für ein Dokument und zum Zeitpunkt des Sendens für eine E-Mail erfasst.
 
 |Quelle  |Im Aktivitäts-Explorer gemeldet |
 |---------|---------| 

@@ -20,12 +20,12 @@ search.appverid: MET150
 description: Ändern Sie Abonnements manuell, indem Sie ein neues Abonnement kaufen und sicherstellen, dass die Abonnements aufgelistet und aktiv sind.
 ROBOTS: NOINDEX
 ms.date: 03/17/2021
-ms.openlocfilehash: 4935301c6d2a530f34d628f946032b7007e5c907
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: f5a44b7a3c01883ed42ca4ed203b63ccf77f9b72
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345178"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536106"
 ---
 # <a name="change-plans-manually"></a>Manuelles Ändern von Plänen
 
@@ -94,7 +94,7 @@ Die Lizenzen aus dem aktuellen Abonnement werden später entfernt; Sie zahlen vo
 
 2. Wählen Sie die Kreise neben den Namen der Benutzer aus, für die Sie vorhandene Lizenzen ersetzen möchten.
 
-3. Wählen Sie oben weitere **Optionen** (**...**) aus, und wählen Sie dann **Produktlizenzen verwalten aus.**
+3. Wählen Sie oben die drei Punkte (weitere Aktionen) aus, und wählen Sie dann **Produktlizenzen verwalten aus.**
 
 4. Wählen Sie **Vorhandene Produktlizenzzuweisungen ersetzen** \> **Weiter** aus.
 

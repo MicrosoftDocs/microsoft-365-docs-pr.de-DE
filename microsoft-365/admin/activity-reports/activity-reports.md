@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: Erhalten Sie einen regelmäßigen Bericht darüber, wie Personen in Ihrer Organisation Microsoft 365-Dienste verwenden. Im Dashboard "Verwendungsübersicht" können Sie die einzelnen Diagramme weiter aufschlüsseln, um weitere Erkenntnisse zu erhalten.
-ms.openlocfilehash: 3133e468ef99114b1c89e16fbd0f4b5170af30d0
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: Erhalten Sie einen regelmäßigen Bericht darüber, wie Personen in Ihrer Organisation Microsoft 365-Dienste verwenden, und untersuchen Sie jedes Diagramm, um weitere Erkenntnisse zu erhalten.
+ms.openlocfilehash: 917a44f4b6f7458c50ac193b95c7751c66c9e7cd
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759810"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530970"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-Berichte im Admin Center
 
@@ -63,7 +63,7 @@ Sehen Sie sich dieses Video an, um eine Übersicht darüber zu erhalten, wie Sie
 
 Personen, die über die folgenden Berechtigungen verfügen: 
   
-- Globale Administratoren: Es wird empfohlen, diese Rolle nur ausgewählten Personen im Unternehmen zuzuweisen. Dadurch wird das Sicherheitsrisiko reduziert.
+- Globale Administratoren: Es wird empfohlen, diese Rolle nur ausgewählten Personen im Unternehmen zuzuweisen. Dadurch wird das Sicherheitsrisiko Ihres Geschäfts reduziert.
     
 - Exchange-Administratoren
     
@@ -199,6 +199,10 @@ Immer dann, wenn das Konto eines Benutzers geschlossen wird, löscht Microsoft d
   
 Wenn Sie jedoch einen bestimmten Tag auswählen (siehe Nummer 3), wird in dem Bericht bis zu 28 Tage ab dem aktuellen Datum die Verwendung des Benutzers für diesen Tag in der Tabelle mit den Benutzerdetails angezeigt (siehe Zahl 2).
   
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Berichte im Security &amp; Compliance Center](../../compliance/reports-in-security-and-compliance.md)
+[Berichte im Security &amp; Compliance Center](../../compliance/reports-in-security-and-compliance.md) (Artikel)
+
+[Analysen zur Nutzung von Microsoft 365](../usage-analytics/usage-analytics.md) (Artikel)
+
+[Individuelles Anpassen der Berichte in Microsoft 365-Nutzungsanalysen](../usage-analytics/customize-reports.md) (Artikel)

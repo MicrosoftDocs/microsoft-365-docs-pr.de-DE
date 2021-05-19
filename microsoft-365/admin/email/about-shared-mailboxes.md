@@ -22,18 +22,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Freigegebene Postfächer werden verwendet, wenn mehrere Personen Zugriff auf dasselbe Postfach benötigen. Hier erfahren Sie, was Sie wissen müssen, bevor Sie ein freigegebenes Postfach erstellen.
-ms.openlocfilehash: 83e779d59a8e763b3d0c0482966e75604d5f1574
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 156ba100cb2c51d1e54a2ee82c45db20845931f9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903214"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535854"
 ---
 # <a name="about-shared-mailboxes"></a>Info zu freigegebenen Postfächern
 
 Freigegebene Postfächer werden verwendet, wenn mehrere Personen Zugriff auf dasselbe Postfach benötigen, z. B. eine E-Mail-Adresse für Unternehmensinformationen oder Support, den Empfangstresen oder andere Funktionen, die von mehreren Personen geteilt werden.
 
 Benutzer, die über Berechtigungen für das Gruppenpostfach verfügen, können Nachrichten mit der "Senden als"- oder "Senden im Auftrag von"-Postfach-E-Mail-Adresse senden, sofern der Administrator dem jeweiligen Benutzer die entsprechende Berechtigung erteilt hat. Dies ist besonders nützlich für Hilfe- und Support-Postfächer, da Benutzer E-Mails von "Contoso-Support" oder der "Rezeption von Gebäude A" senden können.
+
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Bevor Sie [ein freigegebenes Postfach erstellen](create-a-shared-mailbox.md) müssen Sie einige Dinge wissen:
 
@@ -65,12 +67,12 @@ Bevor Sie [ein freigegebenes Postfach erstellen](create-a-shared-mailbox.md) mü
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md)
+[Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md) (Artikel)
 
-[Konfigurieren eines freigegebenen Postfachs](configure-a-shared-mailbox.md)
+[Konfigurieren eines freigegebenen Postfachs](configure-a-shared-mailbox.md) (Artikel)
 
-[Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach](convert-user-mailbox-to-shared-mailbox.md)
+[Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach](convert-user-mailbox-to-shared-mailbox.md) (Artikel)
 
-[Entfernen einer Lizenz aus einem freigegebenen Postfach](remove-license-from-shared-mailbox.md)
+[Entfernen einer Lizenz aus einem freigegebenen Postfach](remove-license-from-shared-mailbox.md) (Artikel)
 
-[Beheben von Problemen mit freigegebenen Postfächern](resolve-issues-with-shared-mailboxes.md)
+[Beheben von Problemen mit freigegebenen Postfächern](resolve-issues-with-shared-mailboxes.md) (Artikel)

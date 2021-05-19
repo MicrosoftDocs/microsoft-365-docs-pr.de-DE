@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: 'Erfahren Sie, wie ein globaler Administrator die E-Mail-Adresse und den Anzeigenamen eines Benutzers ändern kann. '
-ms.openlocfilehash: a785ef17f0823429ad5eb216a330dc6f04dc7761
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: 'Erfahren Sie, wie ein globaler Microsoft 365-Administrator die E-Mail-Adresse und den Anzeigenamen eines Benutzers ändern kann, wenn sich sein Name ändert. '
+ms.openlocfilehash: 2614e0ae53e5ff1cf08ded384e7470cc5967e682
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291019"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535986"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändern von Benutzernamen und -E-Mail-Adressen
 
@@ -251,8 +251,10 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
   
 Wenn Sie erfahren möchten, wie ein Benutzername einer Person in Active Directory, in Windows Server 2003 und früher geändert wird, lesen Sie [Umbenennen eines Benutzerkontos](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10)).
   
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Administratoren: Zurücksetzen eines Kennworts für ein oder mehrere Benutzer](reset-passwords.md)
+[Administratoren: Zurücksetzen eines Kennworts für ein oder mehrere Benutzer](reset-passwords.md) (Artikel)
   
-[Hinzufügen einer weiteren E-Mail-Adresse für einen Benutzer](../email/add-another-email-alias-for-a-user.md)
+[Hinzufügen einer weiteren E-Mail-Adresse für einen Benutzer](../email/add-another-email-alias-for-a-user.md) (Artikel)
+
+[Erstellen eines freigegebenen Postfachs](../email/create-a-shared-mailbox.md) (Artikel)

@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: In diesem Artikel erfahren Sie, wie Sie eine DLP-Richtlinie entsprechend Ihren Organisatorischen Anforderungen erstellen, testen und optimieren.
-ms.openlocfilehash: bd4857a2baefb22d789fc713a537d7e4a656718d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e252c7328c59c246f739caf4b70acd44de010e42
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052083"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532518"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Erstellen, Testen und Optimieren einer DLP-Richtlinie
 
@@ -50,7 +50,7 @@ Mitglieder des Kompatibilitätsteams, die DLP-Richtlinien erstellen, benötigen 
 
 Verwenden Sie die **Rolle View-Only DLP Compliance Management,** um Rollengruppen mit Nur-Ansicht-Berechtigungen für die DLP-Richtlinien und DLP-Berichte zu erstellen.
 
-Weitere Informationen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Compliance Center](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Weitere Informationen finden Sie unter [Gewähren des Zugriffs auf das Office 365 Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Diese Berechtigungen sind erforderlich, um eine DLP-Richtlinie zu erstellen und anzuwenden, ohne Richtlinien zu erzwingen.
 
@@ -152,7 +152,7 @@ Wenn Sie eine Regel in einer DLP-Richtlinie bearbeiten, können Sie Folgendes ä
 - Die Bedingungen, einschließlich des Typs und der Anzahl der Instanzen vertraulicher Informationen, durch die die Regel ausgelöst wird.
 - Die dann ausgeführten Aktionen wie z. B. das Einschränken des Zugriffs auf die Inhalte.
 - Benutzerbenachrichtigungen; dabei handelt es sich um Richtlinientipps, die dem Benutzer in dessen E-Mail-Client oder im Webbrowser angezeigt werden.
-- Benutzeraußerkraftsetzungen, mit denen bestimmt wird, ob die Benutzer trotzdem mit dem Versenden der E-Mail oder der Dateifreigabe fortfahren können.
+- Benutzerüberschreibungen bestimmen, ob Benutzer ihre E-Mail- oder Dateifreigabe trotzdem fortsetzen können.
 - Vorfallberichte, um Administratoren zu benachrichtigen.
 
 ![Optionen zum Bearbeiten von Teilen einer Regel](../media/DLP-create-test-tune-editing-options.png)
@@ -199,14 +199,12 @@ Dieser Führerscheinfall ist ein gutes Beispiel, das wir uns näher anschauen so
 
 
 Eine besteht darin, den Informationstyp "australischer Führerschein" aus der Richtlinie zu entfernen. Sie ist darin enthalten, weil sie Teil der DLP-Richtlinienvorlage ist, wir sind jedoch nicht gezwungen, sie zu verwenden. Wenn Sie nur an Steuernummern und nicht an Führerscheinnummern interessiert sind, können Sie diesen Informationstyp einfach entfernen. So können Sie ihn beispielsweise aus der Regel zu geringen Mengen in der Richtlinie entfernen, ihn in der Regel zu großen Mengen hingegen belassen, sodass Listen mehrerer Führerscheinnummern weiterhin erkannt werden.
-
-![Option zum Entfernen von vertraulichen Informationstypen aus einer Regel](../media/DLP-create-test-tune-delete-low-volume-rule.png)
  
-Eine andere Option besteht darin, einfach die Instanzenanzahl zu erhöhen, sodass eine geringe Anzahl von Führerscheinnummern nur dann erkannt wird, wenn mehrere Instanzen vorkommen.
+Eine weitere Option besteht in der Erhöhung der Instanzanzahl, sodass nur bei mehreren Instanzen ein niedriges Volumen von Führerscheinen erkannt wird.
 
 ![Option zum Bearbeiten der Instanzenanzahl](../media/DLP-create-test-tune-edit-instance-count.png)
 
-Zusätzlich zum Ändern der Instanzenanzahl können Sie auch die Übereinstimmungsgenauigkeit (oder Konfidenzniveau) anpassen. Wenn Ihr Typ vertraulicher Informationen mehrere Muster aufweist, können Sie die Übereinstimmungsgenauigkeit in Ihrer Regel so anpassen, dass Letztere nur auf bestimmte Muster ausgerichtet ist. Um falsch positive Ergebnisse zu vermeiden, können Sie beispielsweise die Übereinstimmungsgenauigkeit Ihrer Regel so festlegen, dass sie nur dem Muster mit dem höchsten Konfidenzniveau entspricht. Die Berechnung des Konfidenzniveaus ist eine etwas komplexe Angelegenheit (und es zu erklären würde den Rahmen dieses Beitrags sprengen). Hier finden Sie eine gute Erläuterung, [wie Sie das Konfidenzniveau einsetzen können, um Ihre Regeln zu optimieren](data-loss-prevention-policies.md#match-accuracy).
+Zusätzlich zum Ändern der Instanzenanzahl können Sie auch die Übereinstimmungsgenauigkeit (oder Konfidenzniveau) anpassen. Wenn Ihr Typ vertraulicher Informationen mehrere Muster aufweist, können Sie die Übereinstimmungsgenauigkeit in Ihrer Regel so anpassen, dass Letztere nur auf bestimmte Muster ausgerichtet ist. Um falsch positive Ergebnisse zu vermeiden, können Sie beispielsweise die Übereinstimmungsgenauigkeit Ihrer Regel so festlegen, dass sie nur dem Muster mit dem höchsten Konfidenzniveau entspricht. Weitere Informationen zu Konfidenzstufen finden Sie unter [Verwenden des Konfidenzniveaus zum Optimieren Ihrer Regeln.](data-loss-prevention-policies.md#match-accuracy)
 
 Wenn Sie noch ein wenig weiter fortgeschritten sein möchten, können Sie einen beliebigen vertraulichen Informationstyp anpassen – beispielsweise können Sie "Sydney NSW" aus der Liste der Schlüsselwörter für die Australische Führerscheinnummer [entfernen,](sensitive-information-type-entity-definitions.md#australia-drivers-license-number)um das oben ausgelöste falsch positive Ergebnis zu beseitigen. Informationen dazu mithilfe von XML und PowerShell finden Sie unter Anpassen eines integrierten typs für vertrauliche [Informationen](customize-a-built-in-sensitive-information-type.md).
 

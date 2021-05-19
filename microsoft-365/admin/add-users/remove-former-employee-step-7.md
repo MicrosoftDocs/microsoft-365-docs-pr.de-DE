@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Führen Sie die folgenden Schritte aus, um das Benutzerkonto eines ehemaligen Mitarbeiters zu löschen.
-ms.openlocfilehash: 0afa9b112919d2668d7553ac5bcf08e664bc1749
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 5ca428079091c4af44ef1efa9be3d7340e254995
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244233"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535938"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Schritt 7 : Löschen des Benutzerkontos eines ehemaligen Mitarbeiters
 
@@ -43,7 +43,13 @@ Nachdem Sie auf alle Benutzerdaten des ehemaligen Mitarbeiters zugegriffen und d
 3. Wählen Sie unter dem Namen des Benutzers Benutzer **löschen aus.** Wählen Sie die optionen aus, die Sie für diesen Benutzer wünschen, und wählen Sie dann **Benutzer löschen aus.** Wenn Sie bereits einem anderen Benutzer Zugriff auf die E-Mails und OneDrive dieses Benutzers gegeben haben, müssen Sie dies hier nicht erneut tun.
 
 Wenn Sie einen Benutzer löschen, wird das Konto ungefähr 30 Tage lang deaktiviert (inaktiv). Sie haben in dieser Zeit noch die Möglichkeit, das Konto wiederherzustellen, bevor es endgültig gelöscht wird.
-  
+
+## <a name="watch-delete-a-former-employees-user-account"></a>Watch: Löschen des Benutzerkontos eines ehemaligen Mitarbeiters
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR]
+
+Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](../../business-video/index.yml) an.
+
 ## <a name="does-your-organization-use-active-directory"></a>Verwendet Ihre Organisation Active Directory?
 
 Wenn Ihre Organisation Benutzerkonten mit Microsoft 365 einer lokalen Active Directory-Umgebung synchronisiert, müssen Sie diese Benutzerkonten in Ihrem lokalen Active Directory-Dienst löschen und wiederherstellen. Sie können sie nicht in Office 365 löschen und wiederherstellen.
@@ -81,3 +87,5 @@ Die oben genannten Vorgänge können an drei Stellen durchgeführt werden:
 ## <a name="related-articles"></a>Verwandte Artikel
 
 [Wiederherstellen eines Benutzers](restore-user.md)
+
+[Zurücksetzen von Kennwörtern](reset-passwords.md)

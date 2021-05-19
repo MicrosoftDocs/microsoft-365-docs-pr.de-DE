@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Microsoft 365 Compliance Center auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte von SharePoint und OneDrive for Business werden als systemeigene Office exportiert.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b5e900d44e59c2c37263c1162a7e631b1635cb06
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 8ec09706fecbe703fa2ab38cad5f8f8304484f44
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311962"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536058"
 ---
 # <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen
 
@@ -122,7 +122,7 @@ Der erste Schritt besteht in der Vorbereitung der Suchergebnisse für den Export
   
 5. Konfigurieren Sie die folgenden zusätzlichen Optionen:
 
-   ![Exchange-Optionen](../media/OtherExportOptions.png)
+   ![Konfigurieren anderer Exportoptionen](../media/OtherExportOptions.png)
 
    1. Aktivieren Sie **das Kontrollkästchen Deduplizierung für Exchange aktivieren,** um doppelte Nachrichten auszuschließen.
   

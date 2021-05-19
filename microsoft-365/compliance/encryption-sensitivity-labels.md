@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6163e48e3e80b76506d970b77d6cd66f7a050d51
-ms.sourcegitcommit: 8c89bc1d106b4716b07a1977d57e4d9ef98aecb3
+ms.openlocfilehash: 804cfa9da39b5dc9b9dffdcd68fb196e8676f9af
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52079258"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532086"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung
 
@@ -65,7 +65,9 @@ Wenn Sie diese Verschlüsselungslösung verwenden, wird mit der Funktion **Admin
 
 4.  Wählen Sie auf der Seite **Verschlüsselung** des Assistenten eine der folgenden Optionen aus:
     
-    - **Verschlüsselung entfernen, wenn die Datei verschlüsselt ist**: Weitere Informationen zu diesem Szenario finden Sie in dem Abschnitt [Was geschieht mit einer bestehenden Verschlüsselung, wenn eine Bezeichnung angewendet wird?](#what-happens-to-existing-encryption-when-a-labels-applied). Es ist wichtig zu wissen, dass diese Einstellung zu einer Vertraulichkeitsbezeichnung führen kann, die Benutzer ohne ausreichende Berechtigungen unter Umständen nicht anwenden können.
+    - **Verschlüsselung entfernen, wenn die Datei verschlüsselt ist**: Diese Option wird nur von Azure Information Protection-Clients mit einheitlichen Bezeichnungen unterstützt. Wenn Sie diese Option auswählen und integrierte Bezeichnungen verwenden, wird die Bezeichnung möglicherweise nicht in Apps angezeigt, oder es werden keine Verschlüsselungsänderungen angezeigt oder vorgenommen.
+        
+        Weitere Informationen zu diesem Szenario finden Sie in dem Abschnitt [Was geschieht mit einer bestehenden Verschlüsselung, wenn eine Bezeichnung angewendet wird?](#what-happens-to-existing-encryption-when-a-labels-applied). Es ist wichtig zu wissen, dass diese Einstellung zu einer Vertraulichkeitsbezeichnung führen kann, die Benutzer ohne ausreichende Berechtigungen unter Umständen nicht anwenden können.
     
     - **Konfigurieren der Verschlüsselungseinstellungen**: Die Verschlüsselung wird aktiviert, und die Verschlüsselungseinstellungen werden angezeigt:
         
@@ -85,11 +87,15 @@ Allerdings ist der Inhalt möglicherweise bereits verschlüsselt. Ein anderer Be
 
 In der folgenden Tabelle wird dargestellt, was mit einer vorhandenen Verschlüsselung geschieht, wenn eine Vertraulichkeitsbezeichnung auf diese Inhalte angewendet wird:
 
-| | Verschlüsselung: nicht ausgewählt | Verschlüsselung: konfiguriert | Verschlüsselung: Entfernen |
+| | Verschlüsselung: nicht ausgewählt | Verschlüsselung: konfiguriert | Verschlüsselung: Entfernen <sup>\*</sup> |
 |:-----|:-----|:-----|:-----|
 |**Von einem Benutzer festgelegte Berechtigungen**|Die ursprüngliche Verschlüsselung bleibt erhalten|Es wird keine neue Verschlüsselung mit Bezeichnung angewendet|Die ursprüngliche Verschlüsselung wird entfernt|
 |**Schutzvorlage**|Die ursprüngliche Verschlüsselung bleibt erhalten|Es wird keine neue Verschlüsselung mit Bezeichnung angewendet|Die ursprüngliche Verschlüsselung wird entfernt|
 |**Bezeichnung mit von dem Administrator definierten Berechtigungen**|Die ursprüngliche Verschlüsselung wird entfernt|Es wird keine neue Verschlüsselung mit Bezeichnung angewendet|Die ursprüngliche Verschlüsselung wird entfernt|
+
+**Fußnote:**
+
+<sup>\*</sup> Wird nur von Azure Information Protection-Clients mit einheitlichen Bezeichnungen unterstützt
 
 Beachten Sie, dass in den Fällen, in denen die neue Verschlüsselung mit Bezeichnungen angewendet oder die ursprüngliche Verschlüsselung entfernt wird, dies geschieht nur, wenn der Benutzer, der die Bezeichnung angewendet hat, über ein Nutzungsrecht oder eine Rolle verfügt, die diese Aktion unterstützt:
 
@@ -206,7 +212,7 @@ Weisen Sie hierfür Benutzern und Gruppen Berechtigungen zu, und speichern Sie d
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>Rights Management-Aussteller (Benutzer, der die Vertraulichkeitsbezeichnung anwendet) hat immer Vollzugriff
 
-Die Verschlüsselung für eine Vertraulichkeitsbezeichnung verwendet den Azure Rights Management-Dienst (Azure RMS) aus Azure Information Protection. Wenn ein Benutzer eine Vertraulichkeitsbezeichnung anwendet, um ein Dokument oder eine E-Mail mithilfe von Verschlüsselung zu schützen, wird dieser Benutzer der Rights Management-Aussteller für diesen Inhalt.
+Die Verschlüsselung für eine Vertraulichkeitsbezeichnung verwendet den Microsoft Azure AD Rights Management-Dienst aus Azure Information Protection. Wenn ein Benutzer eine Vertraulichkeitsbezeichnung anwendet, um ein Dokument oder eine E-Mail mithilfe von Verschlüsselung zu schützen, wird dieser Benutzer der Rights Management-Aussteller für diesen Inhalt.
 
 Der Rights Management-Aussteller erhält immer Vollzugriff für das Dokument oder die E-Mail. Außerdem gilt:
 
@@ -269,11 +275,11 @@ Wenn eine dieser beiden Optionen auf eine E-Mail angewendet wird, wird die E-Mai
 
 - **Nicht weiterleiten**: Die Empfänger können die E-Mail nicht weiterleiten, ausdrucken oder kopieren. Wenn beispielsweise im Outlook-Client die Schaltfläche "Weiterleiten" nicht verfügbar ist, sind die Menüoptionen "Speichern unter" und "Drucken" ebenfalls nicht verfügbar, und Sie können in den Feldern "An", CC oder Bcc keine Empfänger hinzufügen oder ändern.
     
-    Weitere Informationen zur Funktionsweise dieser Option finden Sie unter Option [Nicht weiterleiten für E-Mails](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
+    Weitere Informationen zur Funktionsweise dieser Option finden Sie unter Option [Nicht weiterleiten für E-Mails](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
 
 - **Nur verschlüsseln**: Die Empfänger haben alle Nutzungsrechte außer Speichern unter, Exportieren und Vollzugriff. Diese Kombination von Nutzungsrechten bedeutet, dass die Empfänger keine Einschränkungen haben, außer dass sie den Schutz nicht entfernen können. Ein Empfänger kann z. B. eine Kopie der E-Mail erstellen, diese ausdrucken und weiterleiten.
     
-    Weitere Informationen zur Funktionsweise dieser Option finden Sie unter Option [Nur Verschlüsselung für E-Mails](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails).
+    Weitere Informationen zur Funktionsweise dieser Option finden Sie unter Option [Nur Verschlüsselung für E-Mails](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails).
 
 Für unverschlüsselte Office-Dokumente, die sich im Anhang der E-Mail befinden, werden automatisch die gleichen Beschränkungen übernommen. Für "Nicht weiterleiten" gelten für diese Dokumente die Nutzungsrechte "Inhalt bearbeiten", "Bearbeiten", "Speichern", "Anzeigen", "Öffnen", "Lesen" und "Makros zulassen". Wenn der Benutzer andere Nutzungsrechte für eine Anlage wünscht, oder wenn es sich bei der Anlage nicht um ein Office-Dokument handelt, das die Vererbung des Schutzes unterstützt, muss der Benutzer die Datei schützen, bevor er sie an die E-Mail anfügt.
 

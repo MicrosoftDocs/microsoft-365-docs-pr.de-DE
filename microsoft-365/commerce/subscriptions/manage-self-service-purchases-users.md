@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 description: Benutzer können erfahren, wie sie ihre Self-Service-Käufe verwalten.
 ms.date: 03/17/2021
-ms.openlocfilehash: 0f9832f69d7e89346e82e3acef0e626fc7f6c4de
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: ed6f2fc3b55756fb88dccd748fd4a4a9a34a5c81
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333254"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536082"
 ---
 # <a name="manage-self-service-purchases-users"></a>Self-Service-Einkäufe (Benutzer) verwalten
 
@@ -75,9 +75,9 @@ Sie können eine Liste aller gekauften Self-Service-Abonnements anzeigen.
 ## <a name="cancel-a-subscription"></a>Kündigen eines Abonnements
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-2. Suchen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie kündigen möchten. Wählen Sie **Weitere Aktionen** (drei Punkte) und dann **Abonnement kündigen** aus.
+2. Suchen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie kündigen möchten. Wählen Sie die drei Punkte (weitere Aktionen) aus, und wählen Sie dann **Abonnement abbrechen aus.**
 3. Wählen Sie im Bereich **Abonnement kündigen** einen Grund aus, warum Sie kündigen. Geben Sie optional Feedback, das Sie haben.
-4. Wählen Sie **Speichern** aus.
+4. Klicken Sie auf **Speichern**.
 
 ## <a name="manage-your-payment-details"></a>Verwalten Ihrer Zahlungsdetails
 
@@ -108,6 +108,6 @@ Sie können eine Liste aller gekauften Self-Service-Abonnements anzeigen.
 
 ## <a name="need-help-contact-us"></a>Benötigen Sie Hilfe? Kontaktieren Sie uns.
 
-Allgemeine Fragen zu Self-Service-Käufen finden Sie unter Häufig gestellte Fragen zu [Self-Service-Käufen.](self-service-purchase-faq.md)
+Allgemeine Fragen zu Self-Service-Käufen finden Sie unter Häufig gestellte Fragen zu [Self-Service-Käufen.](self-service-purchase-faq.yml)
 
 Wenn Sie Fragen haben oder Hilfe bei Self-Service-Käufen benötigen, wenden [Sie sich an den Support.](../../business-video/get-help-support.md)

@@ -1,23 +1,24 @@
 ---
 title: Zahlungsinformationen für Panama
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0848aa95a9a4835aa2e73747cf8e5d3efe8efbf7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 511b484a03261fe081851540521c08106348775b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273104"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536382"
 ---
 # <a name="payment-information-for-panama"></a>Zahlungsinformationen für Panama
 
@@ -27,8 +28,8 @@ Bitte zahlen Sie nur in USD, und verweisen Sie auf rechnungsnummer(n) für die Z
 
 ## <a name="electronic-funds-transfer"></a>Elektronischer Zahlungsverkehr
 
-**Bank:** Bank of America   
-**Branch:** Dallas   
-**SWIFT-Code:** BOFAUS3N   
-**Kontonummer:** 4426587954   
-**Kontoname:** Microsoft  
+**Bank:** Bank of America  
+**Branch:** Dallas  
+**SWIFT-Code:** BOFAUS3N  
+**Kontonummer:** 4426587954  
+**Kontoname:** Microsoft

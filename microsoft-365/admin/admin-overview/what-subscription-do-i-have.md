@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Erfahren Sie, welche Abonnements Ihre Organisation besitzt, indem Sie zur Seite Ihre Produkte gehen.
 ms.date: 01/21/2021
-ms.openlocfilehash: e1f7ebecafa5edff1ccc3d6eb4e4dc143054996a
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: c33ba799880e6c687a08c2d49b17cbae8e80552c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332666"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535890"
 ---
 # <a name="what-subscription-do-i-have"></a>Welches Abonnement habe ich?
 
@@ -42,3 +42,9 @@ Wenn Sie Administrator sind, können Sie überprüfen, welche Abonnements Ihre O
 ## <a name="related-content"></a>Verwandte Inhalte
   
 [Abonnements und Abrechnung](../../commerce/index.yml) (Links)
+
+[Anzeigen Ihrer Rechnung oder Rechnung](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (Artikel)
+
+[Bezahlen für Ihr Abonnement](../../commerce/billing-and-payments/pay-for-your-subscription.md) (Artikel)
+
+[Ändern Ihrer Abrechnungsadressen](../../commerce/billing-and-payments/change-your-billing-addresses.md) (Artikel)

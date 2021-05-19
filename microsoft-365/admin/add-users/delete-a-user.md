@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Erfahren Sie, wie Sie ein Benutzerkonto löschen. Entscheiden Sie, was mit den E-Mails und Inhalten OneDrive werden soll. Und entscheiden Sie, ob sie die Produktlizenz behalten oder nicht mehr bezahlen soll.
-ms.openlocfilehash: d40f70534499b08073278ffc2bed2b098ae1c4da
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: f4b1e0b1fb591d369cc09010db86dd995d7d4896
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860737"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535974"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Löschen eines Benutzers aus Ihrer Organisation
   
@@ -43,7 +43,7 @@ ms.locfileid: "51860737"
 
 Wenn Sie ein globaler Administrator sind und einen Benutzer löschen, können Sie auch einem anderen Benutzer Zugriff auf die E-Mails des gelöschten Benutzers gewähren und auswählen, was mit einem OneDrive-Inhalt geschehen soll.
 
-### <a name="things-to-consider"></a>Zu berücksichtigende Faktoren...
+### <a name="things-to-consider"></a>Zu berücksichtigende Aspekte
 
 Bevor Sie beginnen, sollten Sie sich überlegen, was mit den E-Mails und OneDrive-Inhalten des Benutzers geschehen soll, und ob die Lizenz beibehalten oder die Zahlung für die Lizenz beendet werden soll.
   
@@ -87,7 +87,7 @@ Da Sie in der geführten Oberfläche durch die Schritte zum Löschen eines Benut
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.  
 
-2. Wählen Sie die Namen der zu löschenden Benutzer aus und dann **Weitere Optionen** (**...**). Wählen Sie anschließend **Benutzer löschen** aus.
+2. Wählen Sie die Namen der Benutzer aus, die Sie löschen möchten, wählen Sie die drei Punkte (weitere Aktionen) aus, und wählen Sie dann **Benutzer löschen aus.**
 
    Obwohl Sie das Konto des Benutzers gelöscht haben, **bezahlen Sie weiterhin für die Lizenz**.   Im nächsten Verfahren wird erläutert, was Sie tun müssen, um nicht mehr für die Lizenz zu bezahlen.  Sie können die Lizenz auch einem anderen Benutzer zuweisen. Er wird nicht automatisch einer Person zugewiesen.
 
@@ -155,7 +155,7 @@ Wenn Sie später die Schritte zum Hinzufügen einer anderen Person zu Ihrem Unte
 
 ## <a name="delete-many-users-at-the-same-time"></a>Gleichzeitiges Löschen von vielen Benutzern
 
-Informationen hierzu finden Sie in den Informationen zum PowerShell-Cmdlet [Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser).
+Informationen hierzu finden Sie in den Informationen zum PowerShell-Cmdlet [Remove-MsolUser](/powershell/module/msonline/remove-msoluser).
 
 ## <a name="fix-issues-with-deleting-a-user"></a>Beheben von Problemen mit dem Löschen eines Benutzers
 
