@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Schützen Sie Ihre Geschäftlichen E-Mails und Daten vor Cyberbedrohungen, einschließlich Ransomware, Phishing und schädlichen Anlagen. '
-ms.openlocfilehash: c20b0d070c4c4ca28ee681e560c4a91c412241fc
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: dcaeb9588f50d1e12bdff5164f5f41a0beee2e47
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244539"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535878"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Die 10 besten Möglichkeiten zum Sichern Microsoft 365 Unternehmenspläne
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Wenn Sie eine kleine oder mittelgroße Organisation sind, die einen der Geschäftspläne von Microsoft verwendet und Ihr Organisationstyp auf Cyberkriminellen und Hacker ausgerichtet ist, verwenden Sie die Anleitungen in diesem Artikel, um die Sicherheit Ihrer Organisation zu erhöhen. Diese Anleitung hilft Ihrer Organisation, die ziele zu erreichen, die im Handbuch zur [Cybersicherheitskampagne](https://go.microsoft.com/fwlink/p/?linkid=2015598)der "Harvard Kennedy School" beschrieben werden.
 
@@ -57,7 +50,7 @@ Microsoft empfiehlt, die in der folgenden Tabelle aufgeführten Aufgaben auszuf�
 
 Wenn Sie über Microsoft Business Premium verfügen, können Sie die Sicherheit am schnellsten einrichten und mit der sicheren Zusammenarbeit beginnen, wenn Sie die Anweisungen in dieser Bibliothek befolgen: [Microsoft 365 für kleinere Unternehmen und Kampagnen](../../campaigns/index.md). Diese Anleitung wurde in Zusammenarbeit mit dem Microsoft-Team „Defending Democracy“ entwickelt, um alle kleinen Unternehmenskunden vor Cyberbedrohungen zu schützen, die von raffinierten Hackern gestartet werden.
 
-Bevor Sie beginnen, überprüfen Microsoft 365 [Secure Score](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) im Microsoft 365 Security Center. Über ein zentrales Dashboard können Sie die Sicherheit für Ihre identitäten, Microsoft 365, Apps, Geräte und Infrastruktur überwachen und verbessern. Sie erhalten Punkte zum Konfigurieren empfohlener Sicherheitsfeatures, zum Ausführen sicherheitsbezogener Aufgaben (z. B. zum Anzeigen von Berichten) oder zum Adressieren von Empfehlungen mit einer Drittanbieteranwendung oder -software. Mit zusätzlichen Einblicken und mehr Einblick in eine breitere Palette von Microsoft-Produkten und -Diensten können Sie sich sicher fühlen, über den Sicherheitszustand Ihrer Organisation zu berichten.
+Bevor Sie beginnen, überprüfen Microsoft 365 [Secure Score](../../security/defender/microsoft-secure-score.md) im Microsoft 365 Security Center. Über ein zentrales Dashboard können Sie die Sicherheit für Ihre identitäten, Microsoft 365, Apps, Geräte und Infrastruktur überwachen und verbessern. Sie erhalten Punkte zum Konfigurieren empfohlener Sicherheitsfeatures, zum Ausführen sicherheitsbezogener Aufgaben (z. B. zum Anzeigen von Berichten) oder zum Adressieren von Empfehlungen mit einer Drittanbieteranwendung oder -software. Mit zusätzlichen Einblicken und mehr Einblick in eine breitere Palette von Microsoft-Produkten und -Diensten können Sie sich sicher fühlen, über den Sicherheitszustand Ihrer Organisation zu berichten.
 
 ![Screenshot der Microsoft Secure Score](../../media/secure-score.png)
 

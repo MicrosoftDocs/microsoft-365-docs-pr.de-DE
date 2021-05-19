@@ -21,12 +21,12 @@ search.appverid:
 description: Erfahren Sie, wie Sie das AllowSelfServicePurchase PowerShell-Cmdlet verwenden, um den Self-Service-Kauf ein- oder auszuschalten.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.date: 03/18/2021
-ms.openlocfilehash: 09161f69e72babe8270b339243d73444b93d9959
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 012874a8794e006d97c4f74014e92e1f7f3c2709
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333374"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536130"
 ---
 # <a name="use-allowselfservicepurchase-for-the-mscommerce-powershell-module"></a>Verwenden von AllowSelfServicePurchase für das MS Commerce PowerShell-Modul
 
@@ -43,6 +43,7 @@ Sie können das **MS Commerce PowerShell-Modul** verwenden, um:
 Für die Verwendung des **MS Commerce** PowerShell-Moduls benötigen Sie:
 
 - Ein Windows 10 Gerät
+- PowerShell 5 oder darunter. Derzeit wird PowerShell 6.x/7.x mit diesem Modul nicht unterstützt.
 - Administratorberechtigung für das Gerät
 - Rolle "Globaler Administrator" oder "Abrechnungsadministrator" für Ihren Mandanten
 
@@ -161,3 +162,9 @@ To remove the **MSCommerce** PowerShell module from your computer, run the follo
 ```powershell
 Uninstall-Module -Name MSCommerce
 ```-->
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Verwalten von Self-Service-Käufen (Admin)](manage-self-service-purchases-admins.md) (Artikel)
+
+[Häufig gestellte Fragen zum Self-Service-Kauf](self-service-purchase-faq.yml) (Artikel)

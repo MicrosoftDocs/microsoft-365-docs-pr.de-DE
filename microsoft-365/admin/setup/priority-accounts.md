@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: Überwachen sie fehlgeschlagene und verzögerte E-Mail-Nachrichten, die an oder von Konten gesendet werden, die hohe geschäftliche Auswirkungen haben.
-ms.openlocfilehash: f67b9c6f0eaa229b650026670cf1b2adf88ab3c0
-ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
+ms.openlocfilehash: 2a58f4090244fc6d68be69cf6b3c8ab6e00874fa
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51632180"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535806"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Verwalten und Überwachen von Prioritätskonten
 
@@ -75,7 +75,7 @@ Fügen Sie auf der Seite Aktive Benutzer Prioritätskonten hinzu.
 
 1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
-2. Wechseln Sie **zu Benutzer**  >  **Aktive Benutzer,** und wählen Sie **oben** auf der Seite ... aus. Wählen **Sie Verwalten von Prioritätskonten aus.**
+2. Wechseln Sie **zu Benutzer** Aktive Benutzer, und wählen Sie die drei Punkte  >   (weitere Aktionen) am oberen Rand der Seite aus. Wählen **Sie Verwalten von Prioritätskonten aus.**
 
 3. Wählen **Sie Konten** hinzufügen  aus, und geben Sie auf der Seite Prioritätskonten hinzufügen im Suchfeld den Namen der Person ein, die Sie der Liste prioritätskonten hinzufügen möchten.
 

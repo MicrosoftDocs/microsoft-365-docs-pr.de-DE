@@ -1,5 +1,5 @@
 ---
-title: Abrechnungskonten verwalten
+title: Verstehen von Abrechnungskonten
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -17,22 +17,22 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Erfahren Sie mehr über Abrechnungskonten und deren Verwaltung.
+description: Erfahren Sie mehr über Abrechnungskonten und wie sie zum Verwalten von Kontoeinstellungen, Rechnungen, Zahlungsmethoden und Einkäufen verwendet werden.
 ms.date: 03/17/2021
-ms.openlocfilehash: 05ab759f300cb7fa6b02e06714d7d98e64890be8
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 1eb01ace2fe8b84b813793168cb50db2508b4ebb
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331598"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535638"
 ---
-# <a name="manage-billing-accounts"></a>Abrechnungskonten verwalten
+# <a name="understand-billing-accounts"></a>Verstehen von Abrechnungskonten
 
-Ein Abrechnungskonto wird erstellt, wenn Sie sich registrieren, um Microsoft-Produkte zu testen oder zu kaufen. Sie verwenden Ihr Abrechnungskonto, um Ihre Kontoeinstellungen, Rechnungen, Zahlungsmethoden und Einkäufe zu verwalten. Sie können auf mehrere Abrechnungskonten zugreifen. Sie haben sich beispielsweise direkt für Microsoft 365 angemeldet, oder Sie haben Zugriff auf die Konzernvertrag Ihrer Organisation, microsoft Product & Services Agreement oder Microsoft Customer Agreement. Für jedes dieser Szenarien verfügen Sie über ein separates Abrechnungskonto.
+Ein Abrechnungskonto wird erstellt, wenn Sie sich registrieren, um Microsoft-Produkte zu testen oder zu kaufen. Sie verwenden Ihr Abrechnungskonto, um Ihre Kontoeinstellungen, Rechnungen, Zahlungsmethoden und Einkäufe zu verwalten. Sie können auf mehrere Abrechnungskonten zugreifen. Beispielsweise haben Sie sich direkt für Microsoft 365 angemeldet, oder Sie haben Zugriff auf die Enterprise Agreement, Microsoft Product & Services Agreement oder Microsoft Customer Agreement. Für jedes dieser Szenarien verfügen Sie über ein separates Abrechnungskonto.
 
 Das Microsoft 365 Admin Center unterstützt derzeit die folgenden Abrechnungskonten:
 
-- Microsoft Online Services: Dieses Abrechnungskonto wird erstellt, wenn Sie sich direkt für ein Microsoft 365-Abonnement registrieren.
+- Microsoft Online Services: Dieses Abrechnungskonto wird erstellt, wenn Sie sich direkt für ein Microsoft 365 registrieren.
 - Microsoft Products & Services Agreement (MPSA)-Programm: Dieses Abrechnungskonto wird erstellt, wenn Ihre Organisation einen MpSA-Volumenlizenzvertrag zum Kauf von Software und Onlinediensten unterzeichnet.
 - Microsoft-Kundenvertrag: Dieses Abrechnungskonto wird erstellt, wenn Ihre Organisation mit einem Microsoft-Vertreter, einem autorisierten Partner oder unabhängigen Einkäufen arbeitet.
 

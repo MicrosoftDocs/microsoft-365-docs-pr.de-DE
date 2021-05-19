@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Erfahren Sie, wie Sie Ihr Microsoft 365-Apps für Business-Abonnement einrichten.
-ms.openlocfilehash: 6978a5402792906ef773934e5201b3ea6671c010
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 9c973866a3bf1008a8c8062e2a5b9e101494d5f9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244479"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535734"
 ---
 # <a name="set-up-microsoft-365-apps-for-business"></a>Microsoft 365 Apps for Business einrichten
 
@@ -45,13 +45,13 @@ Sie können Benutzer entweder hier hinzufügen oder Sie können [Benutzer späte
 
 ::: moniker range="o365-germany"
 
-1. Wenn Sie Office 365 Deutschland verwenden, verwenden Sie bitte dieses [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041).
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wenn Sie Office 365, betrieben von 21Vianet verwenden, nutzen Sie bitte dieses [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627).
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
 ::: moniker-end 
 

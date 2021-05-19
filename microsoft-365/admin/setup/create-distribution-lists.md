@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Erfahren Sie, wie Sie Verteilergruppen oder Listen im Microsoft 365 Admin Center erstellen, damit Sie E-Mails an eine Gruppe senden können, ohne den Namen jedes Empfängers eingeben zu müssen.
-ms.openlocfilehash: 5c4781653a5f18b7a41dc20212771368132801cd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bd5e246caa8d1b56a33db21d70eb5cbdb7b5ed92
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914246"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535818"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Erstellen von Verteilergruppen im Microsoft 365 Admin Center
   
@@ -70,6 +70,6 @@ Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?
     
 6. Informationen zum Hinzufügen von Benutzern zu Ihrer Verteilerliste finden Sie unter Hinzufügen eines Benutzers oder [Kontakts zu einer Verteilergruppe](../email/add-user-or-contact-to-distribution-list.md).
     
-Informationen zur Verwendung von Gruppen in Outlook 2016 und Outlook im Web finden Sie unter Use [contact groups (formerly distribution lists) in Outlook.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
+Informationen zur Verwendung von Gruppen in Outlook 2016 und Outlook im Web finden Sie unter Verwenden von Kontaktgruppen [(früher Verteilerlisten) in Outlook](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39). 
   
 Hilfe bei [Problemen mit Verteilerlisten finden](/office365/troubleshoot/groups/distribution-list-issues) Sie unter Probleme mit Verteilergruppen. 

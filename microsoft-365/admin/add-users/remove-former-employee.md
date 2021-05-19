@@ -24,41 +24,29 @@ search.appverid:
 - MET150
 - MOE150
 description: Führen Sie die Schritte in dieser Lösung aus, um einen ehemaligen Mitarbeiter aus Microsoft 365 zu entfernen und die Daten Ihrer Organisation zu schützen.
-ms.openlocfilehash: 4b4cf59fdce81b3098ee333095daa8e1af1cd5c5
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 79baf5cbd94d555c1dff1859f5045cde3dbcfdc0
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241736"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535911"
 ---
 # <a name="overview-remove-a-former-employee-and-secure-data"></a>Übersicht: Entfernen eines ehemaligen Mitarbeiters und Sichern von Daten
 
 Eine Häufig gestellte Frage lautet: "Was soll ich tun, um Daten zu schützen und den Zugriff zu schützen, wenn ein Mitarbeiter meine Organisation verlässt?" In dieser Artikelreihe wird erläutert, wie Sie den Zugriff auf Microsoft 365 blockieren, welche Schritte Sie zum Sichern Ihrer Daten ausführen sollten, und wie anderen Mitarbeitern der Zugriff auf die Daten ermöglicht wird.
 
-Sehen Sie sich ein kurzes Video zum Entfernen eines Mitarbeiters an. <br><br>
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
-
-Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schulungsserie für kleine Unternehmen und diejenigen, für die Microsoft 365 neu ist](../../business-video/index.yml) an.
-
-So verhindern Sie, dass sich ein Mitarbeiter anmelden kann:
-
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
-2. Wählen Sie das Feld neben dem Namen des Benutzers aus, und wählen Sie dann **Kennwort zurücksetzen aus.**
-3. Geben Sie ein neues Kennwort ein, und wählen Sie dann **Zurücksetzen aus.** (Senden Sie es nicht an sie.)
-4. Wählen Sie den Namen des Benutzers aus, um  zum Eigenschaftenbereich zu wechseln, und wählen Sie auf der Registerkarte Konto die Option **Abmelden initiieren aus.**
-
-> [!NOTE]
-> Sie müssen ein globaler Administrator sein, um das Abmelden zu initiieren.
-
-Innerhalb einer Stunde – oder nachdem sie die aktuelle Seite Microsoft 365 verlassen, auf der sie sich befinden – werden sie aufgefordert, sich erneut zu melden. Ein Zugriffstoken ist für eine Stunde gut, daher hängt die Zeitachse davon ab, wie viel Zeit auf diesem Token noch bleibt und ob sie aus ihrer aktuellen Webseite navigieren.
-
-> [!IMPORTANT]
-> Obwohl wir die Schritte in dieser Lösung nummeriert haben und Sie die Lösung nicht in der genauen Reihenfolge abschließen müssen, wird empfohlen, die Schritte auf diese Weise zu tun.
+:::image type="content" source="../../media/delete-user-overview.png" alt-text="Screenshot: Übersicht über die Schritte zum Entfernen eines ehemaligen Mitarbeiters":::
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Sie müssen ein globaler Administrator sein, um die Schritte in dieser Lösung ausführen zu können.
+
+## <a name="solution-remove-a-former-employee"></a>Lösung: Entfernen eines ehemaligen Mitarbeiters
+
+> [!IMPORTANT]
+> Obwohl wir die Schritte in dieser Lösung nummeriert haben und Sie die Lösung nicht in der genauen Reihenfolge abschließen müssen, wird empfohlen, die Schritte auf diese Weise zu tun.
+
+:::image type="content" source="../../media/delete-user-account.png" alt-text="Screenshot: Schritte zum Entfernen eines ehemaligen Mitarbeiters aus Ihrer Organisation":::
 
 |||
 |:-----|:-----|

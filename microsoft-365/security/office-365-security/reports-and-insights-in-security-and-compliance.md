@@ -19,12 +19,12 @@ description: Erfahren Sie mehr über die smarten Berichte und Einblicke, die im 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8e945cd3e3ba3dd0a80214e032c420bf7ecad18e
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 2ece53bd0b857fb00e394982f6e3b4c8c81d8b83
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274424"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530874"
 ---
 # <a name="smart-reports-and-insights-in-the-security--compliance-center"></a>Intelligente Berichte und Einblicke im Security & Compliance Center
 
@@ -39,7 +39,7 @@ Wenn Sie Teil des Microsoft for 365 Business-Sicherheitsteams Ihrer Organisation
 
 ## <a name="smart-reports-and-insights-overview"></a>Übersicht über intelligente Berichte und Einblicke
 
-Die im Security & Compliance Center verfügbaren Überwachungsfunktionen umfassen intelligente Berichte und Einblicke, die es Ihren Sicherheits- und Complianceadministratoren ermöglichen, sich auf Probleme mit hoher Priorität zu konzentrieren, z. B. Sicherheitsangriffe oder erhöhte verdächtige Aktivitäten. In einem Dashboard ähneln intelligente Berichte und Einblicke der folgenden Abbildung:
+Die im Security & Compliance Center verfügbaren Überwachungsfunktionen umfassen intelligente Berichte und Einblicke, die es Ihren Compliance- und Sicherheitsadministratoren ermöglichen, sich auf Probleme mit hoher Priorität zu konzentrieren, z. B. Sicherheitsangriffe oder erhöhte verdächtige Aktivitäten. In einem Dashboard ähneln intelligente Berichte und Einblicke der folgenden Abbildung:
 
 ![Das Dashboard "Berichte" im Security & Compliance Center](../../media/2a668c3d-3fa3-4e37-8149-46989b33ae8c.png)
 
@@ -49,9 +49,11 @@ Neben der Hervorhebung von Problembereichen enthalten intelligente Berichte und 
 
 Im Security & Compliance Center sind zahlreiche Berichte verfügbar. (Wechseln Sie zu **Berichte** \> **Dashboard,** um eine Übersichtsansicht zu erhalten.) In der folgenden Tabelle sind verfügbare Berichte mit Links aufgeführt, um mehr zu erfahren:
 
+<br>
+
 ****
 
-|Art der Information|Navigation|Wo sie mehr erfahren können| 
+|Art der Information|Navigation|Wo sie mehr erfahren können|
 |---|---|---|
 |**Security & Compliance Center Reports** (alle oben) <p> Die besten Einblicke und Empfehlungen sowie Links zu Security & Compliance-Berichten, einschließlich Berichten zur Verhinderung von Datenverlust, Bezeichnungen, E-Mail-Sicherheitsberichten, Defender for Office 365-Berichten und mehr|Wechseln Sie im Security & Compliance Center zu **Reports** \> **Dashboard.**|[Überwachen und Anzeigen von Berichten im Microsoft 365 Security Center](../defender/overview-security-center.md)|
 |**Verhinderung von Datenverlust** <p> Übereinstimmungen der DLP-Richtlinie, falsch positive Ergebnisse und Überschreibungen sowie Links zum Erstellen oder Bearbeiten von Richtlinien|Wechseln Sie im Security & Compliance Center zu Richtlinie zur **Verhinderung von** \> **Datenverlust**|[Anzeigen der Berichte zur Verhinderung von Datenverlust](../../compliance/view-the-dlp-reports.md)|

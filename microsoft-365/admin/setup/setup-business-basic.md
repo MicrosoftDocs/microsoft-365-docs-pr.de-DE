@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Erfahren Sie, wie Sie Ihr Microsoft 365 Business Basic-Abonnement einrichten.
-ms.openlocfilehash: a4636006a6819769752ef6ae61a5cb7155d5289e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 51a83d4cc230fa4bdb78bba71c9c7193a36fd391
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244467"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535722"
 ---
 # <a name="set-up-microsoft-365-business-basic"></a>Einrichten von Microsoft 365 Basic
 
@@ -53,13 +53,13 @@ Wenn Sie Microsoft 365 Business Basic erwerben, haben Sie die Möglichkeit, eine
 
 ::: moniker range="o365-germany"
 
-1. Wenn Sie Office 365 Deutschland verwenden, verwenden Sie bitte dieses [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=848041).
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wenn Sie Office 365, betrieben von 21Vianet verwenden, nutzen Sie bitte dieses [Admin Center](https://go.microsoft.com/fwlink/p/?linkid=850627).
+1. Wechseln Sie zum Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
 ::: moniker-end 
 

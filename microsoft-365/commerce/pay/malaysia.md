@@ -1,23 +1,24 @@
 ---
 title: Zahlungsinformationen für Malaysia
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: jkinma, jmueller
 audience: Admin
 ms.topic: reference
 ms.service: o365-administration
-ms.custom: CommercePayInfo
+ms.custom: commerce_billing_payinfo
 localization_priority: Normal
 description: Erfahren Sie, wie die Zahlung für Ihr Abonnement erfolgt.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ef5ff36ae4ce1d43e221af3a5c42eb6a3ebd64e1
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 9724f44e02f427b2cc6642ba657748eef6d9a986
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52273332"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535530"
 ---
 # <a name="payment-information-for-malaysia"></a>Zahlungsinformationen für Malaysia
 
@@ -30,4 +31,4 @@ Bitte zahlen Sie nur in MYR und verweisen Sie auf Rechnungsnummer(n) für Ihre Z
 **Bank:** Citibank, Singapur  
 **SWIFT-Code:** CITISGSG  
 **Kontonummer:** 0-817543-138  
-**Kontoname:** MICROSOFT REGIONAL SALES CORP  
+**Kontoname:** MICROSOFT REGIONAL SALES CORP

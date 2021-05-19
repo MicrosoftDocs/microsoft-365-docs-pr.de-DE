@@ -18,19 +18,19 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_licensing
 search.appverid: MET150
-description: Erfahren Sie, wie Sie Lizenzanforderungen von Benutzern für Ihr Microsoft 365 Business-Abonnement überprüfen und genehmigen oder verweigern.
+description: Erfahren Sie, wie Sie Lizenzanforderungen von Benutzern für Ihr Microsoft 365 business-Abonnement überprüfen und genehmigen oder verweigern.
 ms.date: 08/07/2020
-ms.openlocfilehash: 06ee210b39c19c1f2c8a2041c463568e55001b6e
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 6cbfd81f4f6deba642729f1fef0b826b07a99f56
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331550"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535674"
 ---
 # <a name="manage-license-requests"></a>Verwalten von Lizenzanforderungen
 
 > [!NOTE]
-> Die Informationen in diesem Artikel gelten nur für gekaufte Self-Service-Produkte. Weitere Informationen finden Sie unter [Self-Service Purchase FAQ](../subscriptions/self-service-purchase-faq.md).
+> Die Informationen in diesem Artikel gelten nur für gekaufte Self-Service-Produkte. Weitere Informationen finden Sie unter [Self-Service Purchase FAQ](../subscriptions/self-service-purchase-faq.yml).
 
 Wenn Sie Self-Service-Käufe in Ihrer Organisation deaktivieren, können Sie Lizenzanforderungen verwenden, um den Lizenzanforderungsprozess für Ihre Benutzer zu verwalten. Wenn ein Benutzer versucht, einen Self-Service-Kauf für ein blockiertes Produkt zu tätigen, kann er eine Lizenzanforderung an Sie, den Administrator, senden. Wenn sie eine Anforderung stellen, können sie die Namen anderer Benutzer hinzufügen, die ebenfalls Lizenzen für das Produkt benötigen.
 
@@ -53,7 +53,7 @@ Wenn Ihre Organisation über einen eigenen Anforderungsprozess verfügt, können
 1. Wechseln Sie im Admin Center zur Seite Abrechnungslizenzen,  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a> und wählen Sie dann die Registerkarte **Anforderungen** aus.
 2. Wählen **Sie Stattdessen den vorhandenen Anforderungsprozess verwenden aus.**
 3. Geben Sie im rechten Bereich im **Feld** Nachricht die Nachricht ein, die Benutzern angezeigt werden soll, wenn sie eine Lizenz anfordern. Wenn Sie auch einen Link zu Ihrer Organisationsrichtlinie oder anderen Dokumentation hinzufügen möchten, geben Sie die URL in das Textfeld **Link zur Dokumentation (optional)** ein.
-4. Wählen Sie **Speichern** aus.
+4. Klicken Sie auf **Speichern**.
 
 Wenn Sie zur Liste Anforderungen **zurückkehren,** wird die Meldung Angezeigt, dass Sie Ihren eigenen **Lizenzanforderungsprozess verwenden.** Wenn Sie Änderungen an der Nachricht vornehmen möchten, die an Benutzer gesendet wird, wählen Sie **Stattdessen Den vorhandenen Anforderungsprozess verwenden aus.**
 
@@ -62,7 +62,7 @@ Wenn Sie zur Liste Anforderungen **zurückkehren,** wird die Meldung Angezeigt, 
 1. Wechseln Sie im Admin Center zur Seite Abrechnungslizenzen,  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a> und wählen Sie dann die Registerkarte **Anforderungen** aus.
 2. Wählen **Sie Stattdessen den vorhandenen Anforderungsprozess verwenden aus.**
 3. Aktivieren Sie im rechten  Bereich das Kontrollkästchen Anforderungsprozess meiner Organisation verwenden.
-4. Wählen Sie **Speichern** aus.
+4. Klicken Sie auf **Speichern**.
 
 ## <a name="approve-or-deny-a-license-request"></a>Genehmigen oder Verweigern einer Lizenzanforderung
 

@@ -19,12 +19,12 @@ description: Erfahren Sie, wie Sie E-Mail-Sicherheitsberichte für Ihre Organisa
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d9f6d12fef8a2ef6241fbbd5e0e2a980284e9cc
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 11fe6fd76d21b2dbd7a3e651d40efaa79f675a43
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206241"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52531028"
 ---
 # <a name="view-email-security-reports-in-the-security--compliance-center"></a>Anzeigen von E-Mail-Sicherheitsberichten im Security & Compliance Center
 
@@ -246,36 +246,52 @@ Klicken Sie auf Bericht anzeigen, um zur Berichtsansicht **zurück zu wechseln.*
 
 ## <a name="spoof-detections-report"></a>Bericht über Spooferkennungen
 
-Der **Bericht über Spooferkennungen** zeigt, wie viele Spoof-E-Mail-Nachrichten erkannt wurden und welche als "gut" angesehen wurden (Spoof-E-Mails, die aus legitimen geschäftlichen Gründen durchgeführt wurden). Weitere Informationen zum Spoofing finden Sie unter [Anti-Spoofing Protection in EOP](anti-spoofing-protection.md).
+> [!NOTE]
+> Der bericht über verbesserte Spooferkennungen, wie in diesem Artikel beschrieben, befindet sich in Vorschau, kann geändert werden und ist nicht in allen Organisationen verfügbar. In der älteren Version des Berichts wurden nur gute **E-Mails und** **Als Spam erwischt gezeigt.**
 
-Die aggregierte Ansicht des Berichts ermöglicht eine Filterung von 90 Tagen, während die Detailansicht nur zehn Tage Filterung zulässt.
+Der **Bericht "Spooferkennungen"** enthält Informationen zu Nachrichten, die aufgrund von Spoofing blockiert oder zugelassen wurden. Weitere Informationen zum Spoofing finden Sie unter [Anti-Spoofing Protection in EOP](anti-spoofing-protection.md).
+
+Die aggregierte Ansicht des Berichts ermöglicht eine Filterung von 45 Tagen, während die Detailansicht nur zehn <sup>\*</sup> Tage Filterung zulässt.
+
+<sup>\*</sup> Schließlich können Sie bis zu 90 Tage Filterung verwenden.
 
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie **zu** Berichtsdashboard, und wählen Sie \>  **Spooferkennungen aus.** Öffnen Sie , um direkt zum Bericht zu <https://protection.office.com/reportv2?id=SpoofMailReport> wechseln.
 
 ![Widget "Spooferkennungen" im Dashboard "Berichte"](../../media/spoof-detections-widget.png)
 
-Wenn Sie den Mauszeiger auf einen Tag (Datenpunkt) im Diagramm zeigen, können Sie sehen, wie viele Spoof-E-Mail-Nachrichten durch das Diagramm gesendet wurden.
+Wenn Sie den Mauszeiger auf einen Tag (Datenpunkt) im Diagramm zeigen, können Sie sehen, wie viele gefälschte Nachrichten erkannt wurden und warum.
 
 Sie können sowohl das Diagramm als auch die Detailtabelle filtern, indem Sie auf **Filter klicken** und einen oder mehrere der folgenden Werte auswählen:
 
 - **Startdatum** und **Enddatum**
 
-- **Gute E-Mail**
+- **Ergebnis**
+  - **Pass**
+  - **Fail**
+  - **SoftPass**
+  - **Keine**
+  - **Other**
 
-- **Als Spam erfasst**
+- **Spooftyp**: **Intern** und **Extern**
 
 ![Berichtsansicht im Bericht "Spooferkennungen"](../../media/spoof-detections-report-view.png)
 
 Wenn Sie auf **Detailtabelle anzeigen klicken,** sehen Sie die folgenden Details:
 
 - **Date**
-- **Spoofed sender**
-- **Wahrer Absender**
-- **Sender-IP**
-- **Action**
+- **Spoofed user**
+- **Senden von Infrastruktur**
+- **Spooftyp**
+- **Ergebnis**
+- **Ergebniscode**
+- **SPF**
+- **DKIM**
+- **DMARC**
 - **Anzahl der Nachrichten**
 
 Klicken Sie auf Bericht anzeigen, um zur Berichtsansicht **zurück zu wechseln.**
+
+Weitere Informationen zu Ergebniscodes für die zusammengesetzte Authentifizierung finden Sie unter [Antispamnachrichtenkopfzeilen in Microsoft 365](anti-spam-message-headers.md).
 
 ## <a name="threat-protection-status-report"></a>Threat Protection-Statusbericht
 

@@ -15,13 +15,14 @@ ms.collection:
 - m365solution-collabgovernance
 search.appverid:
 - MET150
+recommendations: false
 description: Erfahren Sie mehr Microsoft 365 Ablaufrichtlinien für Gruppen.
-ms.openlocfilehash: fdef06918ec2c35547c084e5f431aa7bef8d6a8c
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 90807d6c178061804e64db4440af42050a1d8e77
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587623"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530850"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 Gruppenablaufrichtlinie
 

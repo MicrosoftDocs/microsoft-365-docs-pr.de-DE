@@ -21,12 +21,12 @@ description: Das Microsoft 365 Admin Center – Erfahren Sie mehr über die Feat
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: b226f48edd5f65100c81e95d2026c7c172959c8d
-ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
+ms.openlocfilehash: b75c6be901dfe2bcfe9a0d8fad8fbb56eecd34d6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52077311"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535746"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neues im Microsoft 365 Admin Center
 
@@ -37,7 +37,7 @@ ms.locfileid: "52077311"
 
 ::: moniker-end
 
-Wir fügen kontinuierlich neue Features zum Microsoft 365 [Admin Center](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)hinzu, beheben Probleme, die wir erfahren, und führen Änderungen basierend auf Ihrem Feedback durch. Unten können Sie sehen, was heute schon für Sie verfügbar ist. Einige Funktionen werden für unsere Kunden mit unterschiedlicher Geschwindigkeit bereitgestellt. Wenn sie noch kein Feature sehen, versuchen Sie, [sich der gezielten Version zu fügen.](manage/release-options-in-office-365.md)
+Wir fügen kontinuierlich neue Features zum Microsoft 365 [Admin Center](../business-video/admin-center-overview.md)hinzu, beheben Probleme, die wir erfahren, und führen Änderungen basierend auf Ihrem Feedback durch. Unten können Sie sehen, was heute schon für Sie verfügbar ist. Einige Funktionen werden für unsere Kunden mit unterschiedlicher Geschwindigkeit bereitgestellt. Wenn sie noch kein Feature sehen, versuchen Sie, [sich der gezielten Version zu fügen.](manage/release-options-in-office-365.md)
 
 Und wenn Sie wissen möchten, was mit anderen Microsoft-Clouddiensten neu ist:
 
@@ -48,7 +48,7 @@ Und wenn Sie wissen möchten, was mit anderen Microsoft-Clouddiensten neu ist:
 - [Neuerungen in Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [Aktive Websites im SharePoint Online Admin Center](/sharepoint/what-s-new-in-admin-center)
 - [Office-Updates](/OfficeUpdates/)
-- [Überprüfen der Windows Release-Integrität](https://docs.microsoft.com/windows/deployment/update/check-release-health)
+- [Überprüfen der Windows Release-Integrität](/windows/deployment/update/check-release-health)
 
 ## <a name="april-2021"></a>April 2021
 
@@ -123,7 +123,7 @@ Prioritätskonten sind nur für Organisationen verfügbar, die beide der folgend
 
 Es gibt zwei Möglichkeiten, um zu beginnen:
 
-- Wechseln Sie **zu Benutzer,** und wählen Sie  dann im Menü "Weitere Aktionen" Die Option Prioritätskonten verwalten aus, um der Liste Benutzer hinzuzufügen.
+- Wechseln Sie **zu Benutzer,** und wählen Sie dann im  Menü Drei Punkte (weitere Aktionen) Die Option Prioritätskonten verwalten aus, um der Liste Benutzer hinzuzufügen.
 - Wechseln Sie **zu Setup,** suchen Sie die Setupaufgabe Überwachen Der wichtigsten **Konten,** und wählen Sie **dann Erste Schritte aus.**
 
 Weitere Informationen zu Prioritätskonten finden Sie unter [Monitoring priority accounts](./setup/priority-accounts.md).
@@ -135,7 +135,7 @@ Wir haben damit begonnen, eine neue Sucherfahrung für das Admin Center zu start
 - Das Suchfeld wurde in den Kopfzeilenbereich verschoben, in dem "Microsoft 365 Admin Center" steht, sodass Sie jetzt von einer beliebigen Seite suchen, nicht nur von der Homepage. Wir haben sogar eine Verknüpfung: **Alt+S**.
 - Die Suche ist intelligenter und führt zu besseren Ergebnissen, noch schneller. Geben Sie "2fa" ein, um zu beginnen.
 - Die Suchergebnisse sind nach dem Typ des Elements oder der Aktion organisiert, die Sie ergreifen können.
-  - **Benutzer**: Wählen Sie den Namen des Benutzers aus, und Sie können diesen Benutzer direkt dort bearbeiten. Wenn Sie das Menü "Weitere Aktionen" neben ihrem Namen auswählen, können Sie ihr Kennwort zurücksetzen. Sie können nach Anzeigename, Nachname, Vorname, Benutzername oder primäre E-Mail-Adresse und E-Mail-Aliasen suchen. Um jedoch eine genaue Übereinstimmung zu erhalten, suchen Sie nach der primären E-Mail-Adresse oder dem Benutzernamen.
+  - **Benutzer**: Wählen Sie den Namen des Benutzers aus, und Sie können diesen Benutzer direkt dort bearbeiten. Wenn Sie das Menü drei Punkte (weitere Aktionen) neben ihrem Namen auswählen, können Sie ihr Kennwort zurücksetzen. Sie können nach Anzeigename, Nachname, Vorname, Benutzername oder primäre E-Mail-Adresse und E-Mail-Aliasen suchen. Um jedoch eine genaue Übereinstimmung zu erhalten, suchen Sie nach der primären E-Mail-Adresse oder dem Benutzernamen.
   - **Gruppen**: Bearbeiten Sie die Gruppe auf einer beliebigen Seite, fügen Sie Mitglieder hinzu, weisen Sie Besitzer zu.
   - **Aktionen**: Ähnlich wie Sie nach einem Benutzer suchen und dann sein Kennwort zurücksetzen können, können Sie auch auf jeder Seite nach "Kennwort zurücksetzen" suchen und dann ein oder mehrere Kennwörter für Benutzer zurücksetzen.
   - **Navigation:** Ergebnisse unter Navigation können Ihnen schnell helfen, schnell zu einer Seite im Admin Center zu gelangen. Wenn Sie beispielsweise nach "Rollen" suchen, gelangen Sie zur Seite Rollen für Azure AD-Rollen.

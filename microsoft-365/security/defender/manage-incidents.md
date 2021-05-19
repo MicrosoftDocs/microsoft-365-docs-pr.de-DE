@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 09c391d6b02e1273f55070283a6e11454f677114
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 725e6226a56b3aae3670cde18969afdda1ec1940
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300001"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52530838"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Verwalten von Vorfällen in Microsoft 365 Defender
 
@@ -45,12 +45,12 @@ Sie verwalten Vorfälle aus Vorfällen **& Warnungen > Vorfällen** beim Schnell
 
 Hier sind die Möglichkeiten, wie Sie Ihre Vorfälle verwalten können:
 
-- Ändern des Vorfallnamens
-- Fügen Sie Vorfalltags hinzu.
-- Zuweisen des Vorfalls zu einem Benutzerkonto
-- Auflösen 
-- Festlegen der Klassifizierung und Bestimmung
-- Fügen Sie Kommentare hinzu.
+- [Bearbeiten des Vorfallnamens](#edit-the-incident-name)
+- [Hinzufügen von Ereigniskategorien](#add-incident-tags)
+- [Zuweisen des Vorfalls zu einem Benutzerkonto](#assign-incidents)
+- [Auflösen](#resolve-an-incident)
+- [Festlegen der Klassifizierung und Bestimmung](#set-the-classification-and-determination)
+- [Kommentare hinzufügen](#add-comments)
 
 Sie können Vorfälle im Bereich Vorfall verwalten **für** einen Vorfall verwalten. Im Folgenden sehen Sie ein Beispiel.
 
@@ -61,7 +61,7 @@ Sie können diesen Bereich über **den** Link Vorfall verwalten auf der folgende
 - Eigenschaftenbereich eines Vorfalls in der Vorfallwarteschlange.
 - **Zusammenfassungsseite** eines Vorfalls.
 
-In Fällen, in denen Sie während der Analyse Warnungen von einem Vorfall  zu einem anderen verschieben möchten, können Sie dies auch auf der Registerkarte Warnungen tun, wodurch ein größerer oder kleinerer Vorfall erstellt wird, der alle relevanten Warnungen enthält.
+In Fällen, in denen Sie Warnungen von einem Vorfall  in einen anderen verschieben möchten, können Sie dies auch auf der Registerkarte Warnungen tun, wodurch ein größerer oder kleinerer Vorfall erstellt wird, der alle relevanten Warnungen enthält.
 
 ## <a name="edit-the-incident-name"></a>Bearbeiten des Vorfallnamens
 
@@ -82,7 +82,7 @@ Wenn Sie mit der Eingabe beginnen, haben Sie die Möglichkeit, aus einer Liste a
 
 Wenn ein Vorfall noch nicht zugewiesen wurde, können Sie **Zuweisen zu** auswählen und das Benutzerkonto angeben. Dadurch wird der Besitz des Vorfalls und aller damit verbundenen Warnungen zugewiesen.
 
-## <a name="resolve-incident"></a>Beheben eines Vorfalls
+## <a name="resolve-an-incident"></a>Beheben eines Vorfalls
 
 Wenn der Vorfall behoben wurde, wählen Sie **Vorfall** beheben aus, um den Umschalter nach rechts zu verschieben. Beachten Sie, dass beim Auflösen eines Vorfalls auch alle verknüpften und aktiven Warnungen im Zusammenhang mit dem Vorfall behoben werden.
 
