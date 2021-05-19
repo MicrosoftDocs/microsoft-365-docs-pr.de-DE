@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/11/2021
+ms.date: 05/14/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 265f32f5a24b982933ac6a876b244b10802cdd60
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 6d3f1e2b0986fe12f0bf318b53100ca31f1ed700
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345812"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538375"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-1-prepare"></a>Wechseln zu Microsoft Defender for Endpoint – Phase 1: Vorbereiten
 
@@ -38,13 +38,13 @@ ms.locfileid: "52345812"
 |--|--|--|
 |*Sie sind hier!*| | |
 
-**Willkommen bei der Vorbereitungsphase des [Wechsels zu Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. 
+**Willkommen bei der Vorbereitungsphase des [Wechsels zu Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. 
 
 Diese Migrationsphase umfasst die folgenden Schritte:
 
 1. [Herunterladen und Bereitstellen von Updates auf den Geräten Ihrer Organisation](#get-and-deploy-updates-across-your-organizations-devices)
 
-2. [Microsoft Defender for Endpoint .](#get-microsoft-defender-for-endpoint)
+2. [Get Defender for Endpoint](#get-microsoft-defender-for-endpoint).
 
 3. [Gewähren von Zugriff auf Microsoft Defender Security Center](#grant-access-to-the-microsoft-defender-security-center).
 
@@ -52,7 +52,7 @@ Diese Migrationsphase umfasst die folgenden Schritte:
 
 ## <a name="get-and-deploy-updates-across-your-organizations-devices"></a>Herunterladen und Bereitstellen von Updates auf den Geräten Ihrer Organisation
 
-Als bewährte Methode sollten Sie die Geräte und Endpunkte Ihrer Organisation auf dem neuesten Stand halten. Stellen Sie sicher, dass Ihre vorhandene Endpunktschutz- und Antivirenlösung auf dem neuesten Stand ist und dass die Betriebssysteme und Apps, die Ihre Organisation installiert hat, auch über die neuesten Updates verfügen. Wenn Sie dies jetzt tun, können Sie probleme später bei der Migration zu Microsoft Defender for Endpoint und Microsoft Defender Antivirus.
+Als bewährte Methode sollten Sie die Geräte und Endpunkte Ihrer Organisation auf dem neuesten Stand halten. Stellen Sie sicher, dass Ihre vorhandene Endpunktschutz- und Antivirenlösung auf dem neuesten Stand ist und dass die Betriebssysteme und Apps, die Ihre Organisation installiert hat, auch über die neuesten Updates verfügen. Wenn Sie dies jetzt tun, können Sie Probleme später bei der Migration zu Defender for Endpoint und Microsoft Defender Antivirus.
 
 ### <a name="make-sure-your-existing-solution-is-up-to-date"></a>Stellen Sie sicher, dass Ihre vorhandene Lösung auf dem neuesten Stand ist.
 
@@ -74,24 +74,24 @@ Benötigen Sie Hilfe beim Aktualisieren der Geräte Ihrer Organisation? Informat
 
 ## <a name="get-microsoft-defender-for-endpoint"></a>Microsoft Defender for Endpoint erhalten
 
-Nachdem Sie nun die Geräte Ihrer Organisation aktualisiert haben, besteht der nächste Schritt in der Bereitstellung von Microsoft Defender for Endpoint, dem Zuweisen von Lizenzen und der Bereitstellung des Diensts.
+Nachdem Sie nun die Geräte Ihrer Organisation aktualisiert haben, besteht der nächste Schritt in der Bereitstellung von Defender for Endpoint, dem Zuweisen von Lizenzen und der Bereitstellung des Diensts.
 
-1. Kaufen oder testen Sie Microsoft Defender for Endpoint noch heute. [Starten Sie eine kostenlose Testversion, oder fordern Sie ein Angebot an.](https://aka.ms/mdatp) 
+1. Kaufen oder testen Sie Defender for Endpoint noch heute. [Starten Sie eine kostenlose Testversion, oder fordern Sie ein Angebot an.](https://aka.ms/mdatp) 
 
 2. Stellen Sie sicher, dass Ihre Lizenzen ordnungsgemäß bereitgestellt sind. [Überprüfen Sie den Lizenzstatus](production-deployment.md#check-license-state).
 
-3. Richten Sie als globaler Administrator oder Sicherheitsadministrator Ihre dedizierte Cloudinstanz von Microsoft Defender for Endpoint ein. Weitere Informationen finden Sie unter [Microsoft Defender for Endpoint setup: Tenant configuration](production-deployment.md#tenant-configuration).
+3. Richten Sie als globaler Administrator oder Sicherheitsadministrator Ihre dedizierte Cloudinstanz von Defender for Endpoint ein. Weitere [Informationen finden Sie unter Defender for Endpoint setup: Tenant configuration](production-deployment.md#tenant-configuration).
 
-4. Wenn Endpunkte (z. B. Geräte) in Ihrer Organisation einen Proxy für den Zugriff auf das Internet verwenden, finden Sie weitere Informationen unter [Microsoft Defender for Endpoint setup: Network configuration](production-deployment.md#network-configuration).
+4. Wenn Endpunkte (z. B. Geräte) in Ihrer Organisation einen Proxy für den Zugriff auf das Internet verwenden, finden Sie weitere Informationen unter [Defender for Endpoint setup: Network configuration](production-deployment.md#network-configuration).
  
 An diesem Punkt sind Sie bereit, Ihren Sicherheitsadministratoren und Sicherheitsoperatoren Zugriff zu gewähren, die die Microsoft Defender Security Center ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ) verwenden. 
 
 > [!NOTE]
-> Die Microsoft Defender Security Center wird manchmal als Microsoft Defender for Endpoint-Portal bezeichnet und kann unter zugegriffen [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) werden. 
+> Die Microsoft Defender Security Center wird manchmal als Defender for Endpoint-Portal bezeichnet und kann unter zugegriffen [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) werden. 
 
 ## <a name="grant-access-to-the-microsoft-defender-security-center"></a>Gewähren von Zugriff auf Microsoft Defender Security Center
 
-Im Microsoft Defender Security Center ( ) können Sie auf Features und Funktionen von Microsoft Defender for Endpoint zugreifen und [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) diese konfigurieren. Weitere Informationen finden Sie unter [Overview of the Microsoft Defender Security Center](use.md).
+Im Microsoft Defender Security Center ( ) können Sie auf Features und Funktionen von [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) Defender for Endpoint zugreifen und diese konfigurieren. Weitere Informationen finden Sie unter [Overview of the Microsoft Defender Security Center](use.md).
 
 Berechtigungen für die Microsoft Defender Security Center können entweder mithilfe grundlegender Berechtigungen oder rollenbasierter Zugriffssteuerung (RBAC) erteilt werden. Es wird empfohlen, rbAC zu verwenden, damit Sie eine genauere Kontrolle über Berechtigungen haben.
 
@@ -111,19 +111,19 @@ Berechtigungen für die Microsoft Defender Security Center können entweder mith
 
 ## <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Konfigurieren von Geräteproxy- und Internetkonnektivitätseinstellungen
 
-Konfigurieren Sie Proxy- und Interneteinstellungen, um die Kommunikation zwischen Ihren Geräten und Microsoft Defender for Endpoint zu aktivieren. Die folgende Tabelle enthält Links zu Ressourcen, die Sie zum Konfigurieren ihrer Proxy- und Interneteinstellungen für verschiedene Betriebssysteme und Funktionen verwenden können:
+Konfigurieren Sie Proxy- und Interneteinstellungen, um die Kommunikation zwischen Ihren Geräten und Defender for Endpoint zu aktivieren. Die folgende Tabelle enthält Links zu Ressourcen, die Sie zum Konfigurieren ihrer Proxy- und Interneteinstellungen für verschiedene Betriebssysteme und Funktionen verwenden können:
 
 |Funktionen  | Betriebssystem | Ressourcen |
 |--|--|--|
 |[Endpunkterkennung und -antwort](overview-endpoint-detection-response.md) (EDR) |[Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows Server 1803 oder höher](/windows-server/get-started/whats-new-in-windows-server-1803)  |[Konfigurieren von Computerproxy- und Internetkonnektivitätseinstellungen](configure-proxy-internet.md) |
 |EDR |[Windows Server 2016](/windows/release-health/status-windows-10-1607-and-windows-server-2016) <p>[Windows Server 2012 R2](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows Server 2008 R2 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1)<p>[Windows 8.1](/windows/release-health/status-windows-8.1-and-windows-server-2012-r2)<p>[Windows 7 SP1](/windows/release-health/status-windows-7-and-windows-server-2008-r2-sp1) |[Konfigurieren von Proxy- und Internetkonnektivitätseinstellungen](onboard-downlevel.md#configure-proxy-and-internet-connectivity-settings) |
-|EDR  |macOS: <br/>- 11.3.1 (Big Sur)<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)   |[Microsoft Defender for Endpoint unter macOS: Netzwerkverbindungen](microsoft-defender-endpoint-mac.md#network-connections)  |
+|EDR  |macOS: <p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave)   |[Defender for Endpoint unter macOS: Netzwerkverbindungen](microsoft-defender-endpoint-mac.md#network-connections)  |
 |[Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md) |[Windows 10](/windows/release-health/release-information) <p>[Windows Server 2019](/windows/release-health/status-windows-10-1809-and-windows-server-2019)<p>[Windows Server 1803 oder höher](/windows-server/get-started/whats-new-in-windows-server-1803) <p>[Windows Server 2016](/windows-server/get-started/whats-new-in-windows-server-2016) |[Konfigurieren und Überprüfen von Microsoft Defender Antivirus-Netzwerkverbindungen](configure-network-connections-microsoft-defender-antivirus.md)<br/> |
-|Antivirus |macOS: <br/>- 11.3.1 (Big Sur)<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave) |[Microsoft Defender for Endpoint unter macOS: Netzwerkverbindungen](microsoft-defender-endpoint-mac.md#network-connections) |
-|Antivirus |Linux: <br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS oder höher LTS<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |[Microsoft Defender for Endpoint unter Linux: Netzwerkverbindungen](microsoft-defender-endpoint-linux.md#network-connections) |
+|Antivirus |macOS: <p>11.3.1 (Big Sur)<p>10.15 (Catalina)<p>10.14 (Mojave) |[Defender for Endpoint unter macOS: Netzwerkverbindungen](microsoft-defender-endpoint-mac.md#network-connections) |
+|Antivirus |Linux: <p>RHEL 7.2+<p>CentOS Linux 7.2+<p>Ubuntu 16 LTS oder höher LTS<p>SLES 12+<p>Debian 9+<p>Oracle Linux 7.2 |[Defender for Endpoint unter Linux: Netzwerkverbindungen](microsoft-defender-endpoint-linux.md#network-connections) |
 
 ## <a name="next-step"></a>Nächster Schritt
 
-**Herzlichen Glückwunsch!** Sie haben die **Vorbereitungsphase des** [Wechsels zu Microsoft Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)abgeschlossen!
+**Herzlichen Glückwunsch!** Sie haben die **Vorbereitungsphase des** [Wechsels zu Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)! abgeschlossen.
 
-- [Fahren Sie mit dem Einrichten von Microsoft Defender for Endpoint fort.](switch-to-microsoft-defender-setup.md)
+- [Fahren Sie mit dem Einrichten von Defender for Endpoint fort.](switch-to-microsoft-defender-setup.md)

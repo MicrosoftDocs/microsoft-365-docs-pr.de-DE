@@ -13,12 +13,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie, wie Sie Verträge mithilfe Microsoft 365 Lösung SharePoint Syntex, Microsoft Teams und Power Automate.
-ms.openlocfilehash: 806ea9fd048dec198a19fa79f3b60f3f3cb81018
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 057c581559aa2e5cfd6e98b379783a7d73e0bccc
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281184"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538567"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Verwalten von Verträgen mithilfe einer Microsoft 365 Lösung
 
@@ -67,6 +67,10 @@ Diese Anleitung zur Vertragsverwaltungslösung umfasst vier Komponenten von Micr
 4. Mithilfe Power Automate werden Verträge über den Genehmigungsprozess im Kanal Teams verschoben. Wenn ein Mitglied einen Vertrag genehmigt, wird der Vertragsstatus so geändert, dass er genehmigt wird, alle Mitglieder werden über einen Teams-Beitrag benachrichtigt, und ein Zeilenelement wird erstellt, um zu zeigen, dass der Vertrag auszahlungsbereit ist. Dieser Prozess kann so erweitert werden, dass er zur Zahlung direkt in eine Finanzanwendung eines Drittanbieters geschrieben wird.
 
 5.  Wenn ein Mitglied einen Vertrag ablehnt, wird der Status in abgelehnt geändert, und alle Mitglieder werden über eine Teams benachrichtigt.
+
+6. Das Endergebnis dieser Lösung ist ein automatisierter Geschäftsprozess für Ihre Organisation. Mitarbeiter können die benutzerdefinierte Kachelansicht in Teams verwenden, um den Genehmigungsworkflow Ihrer Dokumente zu initiieren und zu überwachen. 
+
+     ![Registerkarte Verträge.](../media/content-understanding/tile-view.png)
 
 ## <a name="create-the-solution"></a>Erstellen der Lösung
 

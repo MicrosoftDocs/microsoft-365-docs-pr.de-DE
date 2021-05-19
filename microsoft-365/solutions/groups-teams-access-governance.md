@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Erfahren Sie mehr über das Regeln des Zugriffs in Microsoft 365 Gruppen, Teams und SharePoint.
-ms.openlocfilehash: 44b90e461c81875fa5ccf728c890d5eaebf7d613
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3e0485813a264fe9042e0de9596ba07e50ef72a3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922280"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538147"
 ---
 # <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Regeln des Zugriffs in Microsoft 365 Gruppen, Teams und SharePoint
 

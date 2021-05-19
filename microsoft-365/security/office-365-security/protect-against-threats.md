@@ -20,12 +20,12 @@ description: Administratoren können informationen über den Bedrohungsschutz in
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b55391247bf7d21c68c67e29f93bac1b7088b035
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 3381ce66433f1f4e32f0251c45601e3cb84865b6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687087"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538723"
 ---
 # <a name="protect-against-threats"></a>Schutz vor Bedrohungen
 
@@ -106,7 +106,7 @@ Weitere Informationen zu Optionen für An malware-Richtlinien finden Sie unter [
 
 Im folgenden Verfahren wird beschrieben, wie Sie eine Antiphishingrichtlinie in Microsoft Defender für Office 365. Die Schritte ähneln dem Konfigurieren einer Antiphishingrichtlinie in EOP.
 
-1. Wählen Sie [im Security & Compliance Center](https://protection.office.com)die Option **Bedrohungsverwaltungsrichtlinie** \>  \> **ATP-Antiphishing aus.**
+1. Wählen Sie [im Security & Compliance Center](https://protection.office.com)die Option **Bedrohungsverwaltungsrichtlinie** \>  \> **Antiphishing aus.**
 
 2. Klicken Sie **auf Standardrichtlinie**.
 

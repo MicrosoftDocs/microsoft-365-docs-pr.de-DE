@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Erfahren Sie, wie Sie verhindern, dass Gäste zu einer bestimmten Gruppe hinzugefügt werden
-ms.openlocfilehash: 572746a666586920ad85dafddbd78997940490d7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1db2055f3e546c05905dbf4c854333387112f06e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907940"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538927"
 ---
 # <a name="prevent-guests-from-being-added-to-a-specific-microsoft-365-group-or-microsoft-teams-team"></a>Verhindern, dass Gäste zu einer bestimmten Gruppe oder Microsoft 365 hinzugefügt Microsoft Teams werden
 

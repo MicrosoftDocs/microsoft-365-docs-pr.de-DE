@@ -15,13 +15,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Erfahren Sie, wie Sie verwandte Features in Microsoft 365, Teams, SharePoint und Yammer.
-ms.openlocfilehash: b31e9bf1cd46f94343a489497fb5eb00e138ce60
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3b526297a3f131364a2098b92de09245ab45feb8
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916442"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538951"
 ---
 # <a name="what-is-collaboration-governance"></a>Was ist Zusammenarbeitsgovernance?
 

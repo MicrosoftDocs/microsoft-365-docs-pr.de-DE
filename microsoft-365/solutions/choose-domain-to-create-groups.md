@@ -16,13 +16,14 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
+recommendations: false
 description: Erfahren Sie, wie Sie die Domäne auswählen, die beim Erstellen Microsoft 365 Gruppen verwendet werden soll, indem Sie E-Mail-Adressrichtlinien mithilfe von PowerShell konfigurieren.
-ms.openlocfilehash: 4908d5bd58ca6d0fbb50151983ddb459f0732284
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a0142ea5f5aa088c4be79fc8699a616d9cdd9390
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904684"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538219"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Wählen Sie die Domäne aus, die beim Erstellen Microsoft 365 werden soll
 

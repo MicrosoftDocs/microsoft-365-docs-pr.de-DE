@@ -18,12 +18,12 @@ description: Erfahren Sie, wie Sie den Angriff auf unrechtmäßige Zustimmungszu
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7869419677ba1d5d6b480b7f0dea7f67880af0c7
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: e5675a7a83bb62bae80f20e8e7c86fde38599ec6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644680"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538303"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Erkennen und Behebung unrechtmäßiger Zustimmungszuserm n
 
@@ -143,7 +143,7 @@ Das Skript erzeugt eine Datei namens Permissions.csv. Führen Sie die folgenden 
 
 ## <a name="determine-the-scope-of-the-attack"></a>Bestimmen des Umfangs des Angriffs
 
-Nachdem Sie den Inventarisierungsanwendungszugriff abgeschlossen haben, überprüfen Sie das Überwachungsprotokoll, **um** den vollständigen Umfang der Verletzung zu ermitteln. Suchen Sie nach den betroffenen Benutzern, den Zeitrahmen, auf die die unerlaubte Anwendung Zugriff auf Ihre Organisation hatte, und den Berechtigungen, die die App hatte. Sie können das **Überwachungsprotokoll** im Microsoft 365 [Security and Compliance Center durchsuchen.](../../compliance/search-the-audit-log-in-security-and-compliance.md)
+Nachdem Sie den Inventarisierungsanwendungszugriff abgeschlossen haben, überprüfen Sie das Überwachungsprotokoll, **um** den vollständigen Umfang der Verletzung zu ermitteln. Suchen Sie nach den betroffenen Benutzern, den Zeitrahmen, auf die die unerlaubte Anwendung Zugriff auf Ihre Organisation hatte, und den Berechtigungen, die die App hatte. Sie können das **Überwachungsprotokoll** im [Security & Compliance Center durchsuchen.](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 > [!IMPORTANT]
 > [Postfachüberwachung](../../compliance/enable-mailbox-auditing.md) und [Aktivitätsüberwachung für Administratoren](../../compliance/turn-audit-log-search-on-or-off.md) und Benutzer müssen vor dem Angriff aktiviert sein, damit Sie diese Informationen erhalten können.

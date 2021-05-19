@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 53cdb60c-a6b2-4848-b3ff-e7b75dc3fd1f
 description: In diesem Artikel erfahren Sie mehr über die Tools und Techniken, die Sie zum Überwachen und Verwalten der Microsoft 365 können.
-ms.openlocfilehash: db3811b70f91efb9fd1e9f023df12d0852ce0189
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dfba158085e6642856049d7894b4156f42353236
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920776"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538807"
 ---
 # <a name="monitor-microsoft-365-connectivity"></a>Überwachen der Microsoft 365-Konnektivität
 
@@ -36,7 +36,7 @@ Nachdem Sie die Microsoft 365 bereitgestellt haben, können Sie Microsoft 365 Ko
 |||
 |:-----|:-----|
 |**Abrufen einer Benachrichtigung über Microsoft 365 Endpunkte** <br/> |Wenn Sie Microsoft 365 [verwalten,](https://support.office.com/article/99cab9d4-ef59-4207-9f2b-3728eb46bf9a)möchten Sie Benachrichtigungen erhalten, wenn wir neue Endpunkte veröffentlichen, können Sie unseren RSS-Feed mit Ihrem bevorzugten RSS-Reader abonnieren. Hier erfahren Sie, wie [Sie Outlook](https://go.microsoft.com/fwlink/p/?LinkId=532416) abonnieren, oder Sie können die [RSS-Feedupdates per E-Mail an Sie senden lassen.](https://go.microsoft.com/fwlink/p/?LinkId=532417)  <br/> |
-|**Verwenden System Center zum Überwachen Microsoft 365** <br/> |Wenn Sie Microsoft System Center verwenden, können Sie das [System Center Management Pack](https://www.microsoft.com/download/details.aspx?id=43708) für Office 365 herunterladen, um Microsoft 365 zu starten. Ausführlichere Anleitungen finden Sie im Management Pack Operations Guide oder in diesem Blogbeitrag [Office365 Monitoring using System Center Operations Manager](https://blogs.msdn.com/b/mvpawardprogram/archive/2015/07/08/office365-monitoring-using-system-centre-operations-manager.aspx) <br/> |
+|**Verwenden System Center zum Überwachen Microsoft 365** <br/> |Wenn Sie Microsoft System Center verwenden, können Sie das [System Center Management Pack](https://www.microsoft.com/download/details.aspx?id=43708) für Office 365 herunterladen, um Microsoft 365 zu starten. Ausführlichere Anleitungen finden Sie im Management Pack Operations Guide. <br/> |
 |**Überwachen des Zustands von Azure ExpressRoute** <br/> |Wenn Sie eine Verbindung mit Microsoft 365 mithilfe von Azure ExpressRoute für Microsoft 365 herstellen, sollten Sie sicherstellen, dass Sie sowohl das Microsoft 365 Service Health Dashboard als auch das Azure [Reducing troubleshooting time with Azure Resource health](https://azure.microsoft.com/blog/reduce-troubleshooting-time-with-azure-resource-health/) verwenden. <br/> |
 |**Verwenden von Azure AD Connect Health mit AD FS** <br/> |Wenn Sie AD FS für einmaliges Sign-On mit Microsoft 365 verwenden, sollten Sie mit der Verwendung von Azure AD Verbinden Health beginnen, um Ihre [AD FS-Infrastruktur zu überwachen.](/azure/active-directory/hybrid/how-to-connect-health-adfs)  <br/> |
 |**Programmgesteuerte Überwachung Microsoft 365** <br/> |Lesen Sie unsere Anleitungen zur [Microsoft 365 Management-API](/office/office-365-management-api/office-365-management-apis-overview).  <br/> |

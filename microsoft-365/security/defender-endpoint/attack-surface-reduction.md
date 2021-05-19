@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 3ca8f5234f90624c8570cbfb10e75bd0ee9380ae
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: da4b7fce66a6c51da61edd7c44216ee268c3156a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345836"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538663"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Verwenden von Regeln zur Reduzierung der Angriffsfläche, um Schadsoftwareinfektionen zu verhindern
 
@@ -160,7 +160,7 @@ Wenn Sie Regeln zur Reduzierung der Angriffsfläche mithilfe von Gruppenrichtlin
 
 |Regelname|GUID|Datei- & Ordnerausschlüsse|Mindestens unterstütztes Betriebssystem|
 |---|:---:|---|---|
-|[Missbrauch von ausgebeuteten gefährdeten signierten Treibern blockieren](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Unterstützt|[Windows 10, Version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709)|
+|[Missbrauch von ausgebeuteten gefährdeten signierten Treibern blockieren](#block-abuse-of-exploited-vulnerable-signed-drivers)|`56a863a9-875e-4185-98a7-b882c64b5ce5`|Unterstützt|[Windows 10 Version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, Build 16299) oder höher) |
 |[Adobe Reader am Erstellen von untergeordneten Prozessen hindern](#block-adobe-reader-from-creating-child-processes)|`7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`|Unterstützt|[Windows 10 Version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, Build 16299) oder höher|
 |[Alle Office-Anwendungen am Erstellen von untergeordneten Prozessen hindern](#block-all-office-applications-from-creating-child-processes)|`D4F940AB-401B-4EFC-AADC-AD5F3C50688A`|Unterstützt|[Windows 10 Version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, Build 16299) oder höher|
 |[Diebstahl von Anmeldeinformationen aus dem Subsystem für die lokale Sicherheitsautorität (lsass.exe) blockieren](#block-credential-stealing-from-the-windows-local-security-authority-subsystem)|`9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`|Unterstützt|[Windows 10 Version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) (RS3, Build 16299) oder höher|
@@ -184,6 +184,14 @@ Diese Regel verhindert, dass eine Anwendung einen anfälligen, signierten Treibe
 
 Diese Regel blockiert nicht, dass ein treiber geladen wird, der bereits auf dem System vorhanden ist.
 
+>[!NOTE]
+>
+> Diese Regel kann mithilfe von [MEM OMA-URI](enable-attack-surface-reduction.md#mem) für benutzerdefinierte MEM-OMA-URI-Regeln konfiguriert werden.
+>
+> Diese Regel kann auch mithilfe von [PowerShell konfiguriert werden.](enable-attack-surface-reduction.md#powershell)
+>
+> Sie können diese Website verwenden, um [einen Treiber zur Analyse zu übermitteln.](https://www.microsoft.com/en-us/wdsi/driversubmission)
+
 Diese Regel wird in allen Versionen unterstützt, in denen ASR unterstützt wird. dabei handelt es sich um:
 
 - [Windows 10 Pro, Version 1709](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1709) oder höher
@@ -194,16 +202,6 @@ Diese Regel wird in allen Versionen unterstützt, in denen ASR unterstützt wird
 Intune-Name: `Block abuse of exploited vulnerable signed drivers`
 
 GUID:  `56a863a9-875e-4185-98a7-b882c64b5ce5`
-
-Informationen [zu Microsoft Endpoint Manager benutzerdefinierten](enable-attack-surface-reduction.md#microsoft-endpoint-manager-custom-procedure) MeM-Regeln finden Sie unter Microsoft Endpoint Manager benutzerdefinierte Prozedur.
-
-Sie können diesen Befehl in der Befehlszeile ausführen, um die ASR-Regel zu aktivieren:
-
-```powershell
-"& {&'Add-MpPreference' -AttackSurfaceReductionRules_Ids 56a863a9-875e-4185-98a7-b882c64b5ce5 -AttackSurfaceReductionRules_Actions Enabled"}
-```
-
-Sie können diese Website verwenden, um [einen Treiber zur Analyse zu übermitteln.](https://www.microsoft.com/en-us/wdsi/driversubmission)
 
 ### <a name="block-adobe-reader-from-creating-child-processes"></a>Adobe Reader am Erstellen von untergeordneten Prozessen hindern
 

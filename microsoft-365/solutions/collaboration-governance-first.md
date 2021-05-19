@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Erfahren Sie, wie Sie Ihren Governanceplan für die Zusammenarbeit erstellen
-ms.openlocfilehash: 89b8ffc1359d79661e2b7cc30f195ea792e7a161
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c371d97c211275ffb1019e6f6dfc165295ed729f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916370"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539239"
 ---
 # <a name="create-your-collaboration-governance-plan"></a>Erstellen eines Plans für die Zusammenarbeitsgovernance
 

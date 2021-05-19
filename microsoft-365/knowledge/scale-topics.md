@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Erfahren Sie mehr über bewährte Methoden zum Verwalten der vielen Themen in Ihrer Organisation mithilfe von "Viva Topics".
-ms.openlocfilehash: 3246c7e91c315dadb6c2b14008c9a4da378409d5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: dd9fe658d4f698ac50563b5c9ea141a090f6141d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52334110"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538411"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Manage topics at scale in Microsoft Viva Topics
 
 Wenn Sie Ihre SharePoint oder Ihre gesamte Organisation für "Viva Topics" indizieren, werden möglicherweise viele Themen generiert. Wenn dies geschieht und Tausende von  vorgeschlagenen Themen auf der Seite Themen verwalten angezeigt werden, kann es schwierig sein, zu wissen, wo sie beginnen sollen. In diesem Artikel wird beschrieben, wie Sie mit Themen von "Viva" optimieren können, welche Themen und Informationen Benutzern angezeigt werden, die nach Informationen suchen, auch in großen Organisationen mit einer großen Anzahl von Themen.
 
-Zunächst eine Erinnerung an die vier Zustände für Themen:
+Zunächst eine Erinnerung an die [vier Phasen für Themen:](manage-topics.md#topic-stages)
 
 - **Vorgeschlagen**: Ein Thema wurde von KI identifiziert und verfügt über genügend unterstützende Ressourcen, Verbindungen und Eigenschaften. (Diese werden in der Benutzeroberfläche **als vorgeschlagenes** Thema gekennzeichnet.)
 

@@ -17,12 +17,12 @@ ms.custom:
 description: Administratoren können sich über die verfügbaren und bevorzugten Optionen informieren, um eingehende Nachrichten in Exchange Online Protection (EOP) zu ermöglichen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e5473f8c37b4edcf6c2451cf995b430edbe09533
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: f76b34a439d2eaf2c8315d174483b0b30d3b3b0b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205987"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538759"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Erstellen von Listen sicherer Absender in EOP
 
@@ -50,7 +50,7 @@ Nachrichtenflussregeln ermöglichen die größte Flexibilität, um sicherzustell
 >
 > - Obwohl Sie Listen sicherer Absender verwenden können, um falsch positive Ergebnisse zu vermeiden (gute E-Mails sind als schlecht gekennzeichnet), sollten Sie die Verwendung von Listen sicherer Absender als temporäre Lösung betrachten, die nach Möglichkeit vermieden werden sollte. Es wird nicht empfohlen, falsch positive Ergebnisse mithilfe von Listen sicherer Absender zu verwalten, da Ausnahmen von der Spamfilterung Ihre Organisation für Spoofing und andere Angriffe öffnen können. Wenn Sie darauf bestehen, Listen sicherer Absender zu verwenden, um falsch positive Ergebnisse zu verwalten, müssen Sie aufmerksam sein und das Thema Nachrichten und Dateien an [Microsoft](report-junk-email-messages-to-microsoft.md) melden bereit halten.
 >
-> - Damit eine Domäne nicht authentifizierte E-Mails senden kann (Anti-Spoofing-Schutz umgehen), aber keine Antispam- und Schadsoftwareprüfungen umgehen, können Sie sie der [Liste "AllowedToSpoof safe sender" hinzufügen.](walkthrough-spoof-intelligence-insight.md)
+> - Um einer Domäne das Senden nicht authentifizierter E-Mails (Umgehung des Antis spoofing-Schutzes) zu ermöglichen, aber keine Antispam- und Anti-Malware-Überprüfungen zu umgehen, können Sie den Einblick in [spoof intelligence](learn-about-spoof-intelligence.md) und die [Mandanten-Allow/Block List](tenant-allow-block-list.md)verwenden.
 >
 > - EOP und Outlook verschiedene Nachrichteneigenschaften überprüfen, um den Absender der Nachricht zu ermitteln. Weitere Informationen finden Sie im [Abschnitt Überlegungen für Massen-E-Mails](#considerations-for-bulk-email) weiter unten in diesem Artikel.
 

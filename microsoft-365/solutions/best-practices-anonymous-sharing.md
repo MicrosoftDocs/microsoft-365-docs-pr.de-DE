@@ -16,13 +16,14 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 f1.keywords: NOCSH
+recommendations: false
 description: In diesem Artikel werden Sie bewährte Methoden zum Freigeben von Dateien und Ordnern für nicht authentifizierte Benutzer lernen.
-ms.openlocfilehash: 1e696611d37cd1b57f881457025464dccea54496
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 7198e2d343f73299bb62ea73863cecd359d90ba2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114318"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538231"
 ---
 # <a name="best-practices-for-sharing-files-and-folders-with-unauthenticated-users"></a>Bewährte Methoden zum Freigeben von Dateien und Ordnern für nicht authentifizierte Benutzer
 

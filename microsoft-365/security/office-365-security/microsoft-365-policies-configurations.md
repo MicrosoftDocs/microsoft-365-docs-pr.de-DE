@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 464a99ca67da72633879840263fe64ad8311fd4c
-ms.sourcegitcommit: 7cc2be0244fcc30049351e35c25369cacaaf4ca9
+ms.openlocfilehash: 948f4515b37f27695e1e66730134aa19114ca1cf
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51952572"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538999"
 ---
 # <a name="identity-and-device-access-configurations"></a>Konfigurationen für den Identitäts- und Gerätezugriff
 
@@ -157,7 +157,7 @@ In diesem Leitfaden wird gezeigt, wie Sie eine Reihe von Richtlinien implementie
 
 ### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 und Microsoft 365 Apps for Enterprise
 
-Windows 10 mit Microsoft 365 Apps for Enterprise ist die empfohlene Clientumgebung für PCs. Wir empfehlen Windows 10, da Azure so konzipiert ist, dass sowohl für lokale als auch für Azure AD eine möglichst reibungslose Oberfläche bereitgestellt wird. Windows 10 umfasst auch erweiterte Sicherheitsfunktionen, die über Intune verwaltet werden können. Microsoft 365 Apps for Enterprise enthält die neuesten Versionen Office Anwendungen. Diese verwenden eine moderne Authentifizierung, die sicherer ist und bedingten Zugriff erfordert. Diese Apps enthalten auch erweiterte Sicherheits- und Compliancetools.
+Windows 10 mit Microsoft 365 Apps for Enterprise ist die empfohlene Clientumgebung für PCs. Wir empfehlen Windows 10, da Azure so konzipiert ist, dass sowohl für lokale als auch für Azure AD eine möglichst reibungslose Oberfläche bereitgestellt wird. Windows 10 umfasst auch erweiterte Sicherheitsfunktionen, die über Intune verwaltet werden können. Microsoft 365 Apps for Enterprise enthält die neuesten Versionen Office Anwendungen. Diese verwenden eine moderne Authentifizierung, die sicherer ist und bedingten Zugriff erfordert. Diese Apps enthalten auch erweiterte Compliance- und Sicherheitstools.
 
 ## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>Anwenden dieser Funktionen auf die drei Schutzebenen
 

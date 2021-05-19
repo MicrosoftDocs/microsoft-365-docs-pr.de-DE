@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Erfahren Sie Näheres über das Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen für die Verhinderung von Datenverlust am Endpunkt (Data Loss Prevention, DLP).
-ms.openlocfilehash: 5da9161f2f59ef8a40ca8a7d302dc7de578dba39
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: f2a62b5c7913b6f41c414310a97ab5f072f59642
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114123"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538615"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen für die Verhinderung von Datenverlust am Endpunkt
 

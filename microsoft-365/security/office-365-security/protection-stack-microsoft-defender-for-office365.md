@@ -13,12 +13,12 @@ localization_priority: Normal
 description: Folgen Sie dem Pfad einer eingehenden Nachricht über den Bedrohungsfilterstapel in Microsoft Defender für Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0760bd7a67f175e4af114324ccc729355ad5f593
-ms.sourcegitcommit: 4e05f19c00e172b65f637f19ca461db5b21dff4e
+ms.openlocfilehash: 01ad901f7f746d9b5d2c50632c1344701120c20f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51601389"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538687"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Schrittweiser Bedrohungsschutz in Microsoft Defender für Office 365
 
@@ -61,7 +61,7 @@ Features in der Absenderintelligenz sind entscheidend für das Abfangen von Spam
     - **Mit DMARC** können Administratoren SPF und DKIM nach Bedarf in ihrer Domäne markieren und die Ausrichtung zwischen den Ergebnissen dieser beiden Technologien erzwingen.
     - **ARC** ist nicht kundenkonfiguriert, baut aber auf DMARC auf, um mit der Weiterleitung in Mailinglisten zu arbeiten und gleichzeitig eine Authentifizierungskette zu erfassen.
 
-3. **Spoof intelligence** ist in der Lage, diejenigen zu filtern, die "spoof" (d. h. diejenigen, die E-Mails im Auftrag eines anderen Kontos senden oder die Weiterleitung für eine Mailingliste) von böswilligen Spoofern filtern, die eine organisatorische oder bekannte externe Domäne imitieren. Es trennt legitime "im Auftrag von" E-Mails von Absendern, die Spoofing verwenden, um Spam- und Phishingnachrichten zu senden. 
+3. **Spoof intelligence** ist in der Lage, diejenigen zu filtern, die "spoof" (d. h. diejenigen, die E-Mails im Auftrag eines anderen Kontos senden oder die Weiterleitung für eine Mailingliste) von böswilligen Absendern, die organisatorische oder bekannte externe Domänen imitieren. Es trennt legitime "im Auftrag von" E-Mails von Absendern, die spoofen, um Spam- und Phishingnachrichten zu senden.
 
     **Organisationsinterne Spoofintelligenz** erkennt und blockiert Spoofversuche aus einer Domäne innerhalb der Organisation.
 

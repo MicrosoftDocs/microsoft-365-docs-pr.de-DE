@@ -15,12 +15,12 @@ ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Administratoren erfahren, wie Sie eigenständige Exchange Online Protection (EOP) zum Schutz von lokalen E-Mail-Umgebungen einrichten.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bbad39475f87be27a83edc0c27e2bbe46f8e39ac
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 63504dd2d729674fd84eff2fd5548c8d077cd1f1
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206831"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538975"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Einrichten des eigenständigen EOP-Diensts
 
@@ -66,7 +66,7 @@ Bevor Sie die Übermittlung Ihrer E-Mails zum und vom EOP-Dienst konfigurieren, 
 
 Erstellen Sie in der Exchange-Verwaltungskonsole (EAC) Connectors, die den Nachrichtenfluss zwischen EOP und Ihren lokalen E-Mail-Servern ermöglichen. Ausführliche Anweisungen finden Sie unter [Set up connectors to route mail between Microsoft 365 and your own email servers](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail).
 
-### <a name="how-do-you-know-this-task-worked"></a>Woher wissen Sie, dass diese Aufgabe erfolgreich war?
+### <a name="how-do-you-know-this-worked"></a>Woher wissen Sie, dass dieses Verfahren erfolgreich war?
 
 Überprüfen sie den Nachrichtenfluss zwischen dem Dienst und Ihrer Umgebung. Weitere Informationen finden Sie unter [Test mail flow by validating your Microsoft 365 connectors](/exchange/mail-flow-best-practices/test-mail-flow).
 
@@ -101,6 +101,6 @@ Zu diesem Zeitpunkt haben Sie die Dienstübermittlung für einen ordnungsgemäß
 - Wenn Sie einen Test für ausgehende E-Mails durchführen möchten, können Sie von einem Benutzer in Ihrer Organisation aus eine E-Mail an ein webbasiertes E-Mail-Konto senden und überprüfen, ob die Nachricht übermittelt wurde.
 
 > [!TIP]
-> Nachdem Sie das Setup abgeschlossen haben, müssen Sie nichts weiter tun, um EOP für das Entfernen von Spam und Malware zu konfigurieren. Spam und Malware werden von EOP automatisch entfernt. Sie können Ihre Einstellungen jedoch basierend auf Ihren Geschäftlichen Anforderungen optimieren. Weitere Informationen finden Sie unter [Antispam- und](anti-spam-and-anti-malware-protection.md) Schadsoftwareschutz in Office 365 und Konfigurieren von [Spoof Intelligence](learn-about-spoof-intelligence.md).
+> Nachdem Sie das Setup abgeschlossen haben, müssen Sie nichts weiter tun, um EOP für das Entfernen von Spam und Malware zu konfigurieren. Spam und Malware werden von EOP automatisch entfernt. Sie können Ihre Einstellungen jedoch basierend auf Ihren Geschäftlichen Anforderungen optimieren. Weitere Informationen finden Sie unter [Antispam- und Schadsoftwareschutz in EOP](anti-spam-and-anti-malware-protection.md) und [Antiphishingschutz in Microsoft 365](anti-phishing-protection.md).
 >
 > Nachdem Ihr Dienst ausgeführt wird, empfehlen wir, bewährte Methoden zum Konfigurieren von [EOP](best-practices-for-configuring-eop.md)zu lesen, in dem empfohlene Einstellungen und Überlegungen für nach dem Einrichten von EOP beschrieben werden.

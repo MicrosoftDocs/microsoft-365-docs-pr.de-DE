@@ -17,12 +17,12 @@ ms.custom:
 description: Administratoren können mehr über die Anwendungsreihenfolge von Schutzmaßnahmen in Exchange Online Protection (EOP) erfahren und erfahren, wie der Prioritätswert in Schutzrichtlinien bestimmt, welche Richtlinie angewendet wird.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8cd2809fa69064c2058516f459eeba60683c91b9
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 24d43aeb70e2cdef4bdf65fd3943cdfda9ec3862
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51930377"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539011"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Reihenfolge und Rangfolge des E-Mail-Schutzes
 
@@ -50,7 +50,7 @@ Es gibt zwei wichtige Faktoren, die bestimmen, welche Richtlinie auf eine Nachri
   |1|Schadsoftware|CAT:MALW|[Konfigurieren von An malware-Richtlinien in EOP](configure-anti-malware-policies.md)|
   |2|Phishing|CAT:PHSH|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |3|Spam mit hoher Vertrauenswürdigkeit|CAT:HSPM|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
-  |4 |Spoofing|CAT:SPOOF|[Konfigurieren von Spoof Intelligence in EOP](learn-about-spoof-intelligence.md)|
+  |4 |Spoofing|CAT:SPOOF|[Einblick in spoof intelligence in EOP](learn-about-spoof-intelligence.md)|
   |5<sup>\*</sup>|Benutzerwechsel (geschützte Benutzer)|UIMP|[Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md)|
   |6<sup>\*</sup>|Domänenwechsel (geschützte Domänen)|DIMP|[Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md)|
   |7 |Spam|CAT:SPM|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|

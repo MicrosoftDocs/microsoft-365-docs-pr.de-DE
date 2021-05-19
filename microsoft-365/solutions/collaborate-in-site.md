@@ -16,13 +16,14 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Normal
 f1.keywords: NOCSH
+recommendations: false
 description: Erfahren Sie mehr Microsoft 365 Konfigurationsschritte, die zum Einrichten einer SharePoint für die Zusammenarbeit mit Gästen erforderlich sind.
-ms.openlocfilehash: fd3cf55b3d95a5c79b9bd4d7c55855f7d73fc0d2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f91b9c64dbdca8ed7e3ada3315cb57f1c728f838
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904648"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539251"
 ---
 # <a name="collaborate-with-guests-in-a-site"></a>Zusammenarbeit mit Gästen in einer Website
 

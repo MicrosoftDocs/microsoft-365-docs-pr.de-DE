@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Erfahren Sie mehr über Kommunikations-Governance-Zusammenarbeitsszenarien.
-ms.openlocfilehash: 5386b127ead11f27dad94207383b7a5afddfde6f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6b49f0725cb300316580e972626a96b7057b5ccb
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920904"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538135"
 ---
 # <a name="communications-governance-for-collaboration-scenarios"></a>Kommunikationssteuerung für Szenarien für die Zusammenarbeit
 

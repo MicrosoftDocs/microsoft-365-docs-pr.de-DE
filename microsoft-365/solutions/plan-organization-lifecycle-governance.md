@@ -14,13 +14,14 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
+recommendations: false
 description: Lean about lifecycle governance options for collaboration tools in Microsoft 365
-ms.openlocfilehash: ff3a3a60ce49c423410b51dc6fee2137ebf8952a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7d88618b75ef731bf38df029970efdc05f3eea5a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907928"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538819"
 ---
 # <a name="plan-organization-and-lifecycle-governance-for-microsoft-365-groups-and-microsoft-teams"></a>Planen der Organisations- und Lebenszyklussteuerung für Microsoft 365 gruppen und Microsoft Teams
 
@@ -80,3 +81,5 @@ Ablaufrichtlinien sind eine gute Möglichkeit, die Zersiedelung von Gruppen zu b
 [Schritt-für-Schritt-Planung für die Zusammenarbeitsgovernance](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
 [Erstellen eines Plans für die Zusammenarbeitsgovernance](collaboration-governance-first.md)
+
+[Entfernen eines ehemaligen Mitarbeiters und sicherer Daten](/microsoft-365/admin/add-users/remove-former-employee)

@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 1921c0985128b49e3f8e11a29df8bc75cdbda829
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: dcae50150eb3b21e65e68a5cea376a0cdef31a65
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114381"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538447"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zu Kommunikationskonformitätsfeatures
 
@@ -482,7 +482,7 @@ Das **Berichtsdashboard** enthält die folgenden Berichts-Widgets und detaillier
 In einigen Fällen müssen Sie Aufsichts- oder Compliance-Auditoren Informationen bereitstellen, um die Überwachung von Benutzeraktivitäten und -kommunikationen nachzuweisen. Diese Informationen können eine Zusammenfassung aller Aktivitäten im Zusammenhang mit einer definierten Organisationsrichtlinie oder zu jeder Zeit sein, in der sich eine Kommunikationskonformitätsrichtlinie ändert. Kommunikationskonformitätsrichtlinien verfügen über integrierte Überwachungsprotokolle für die vollständige Bereitschaft für interne oder externe Prüfungen. Detaillierte Überwachungsverläufe jeder Erstellungs-, Bearbeitungs- und Löschaktion werden von Ihren Kommunikationsrichtlinien erfasst, um Einen Nachweis für Aufsichtsverfahren zu bieten.
 
 >[!Important]
->Die Überwachung muss für Ihre Organisation aktiviert sein, bevor Kommunikationskonformitätsereignisse aufgezeichnet werden. Informationen zum Aktivieren der Überwachung finden Sie [unter Aktivieren des Überwachungsprotokolls](communication-compliance-configure.md#step-2-required-enable-the-audit-log).
+>Die Überwachung muss für Ihre Organisation aktiviert sein, bevor Kommunikationskonformitätsereignisse aufgezeichnet werden. Informationen zum Aktivieren der Überwachung finden Sie [unter Aktivieren des Überwachungsprotokolls](communication-compliance-configure.md#step-2-required-enable-the-audit-log). Wenn Aktivitäten Ereignisse auslösen, die im Überwachungsprotokoll Microsoft 365 werden, kann es bis zu 48 Stunden dauern, bis diese Ereignisse in Kommunikationskonformitätsrichtlinien angezeigt werden können.
 
 Wenn Sie Aktualisierungsaktivitäten für Kommunikationskonformitätsrichtlinien anzeigen möchten, wählen Sie auf der Hauptseite das Steuerelement **Richtlinienupdates** exportieren für alle Richtlinien aus. Ihnen müssen die Rollen *Globaler Administrator* oder *Kommunikations-Compliance-Administrator zugewiesen* sein, um Updateaktivitäten exportieren zu können. Mit dieser Aktion wird eine Überwachungsdatei im .csv generiert, die die folgenden Informationen enthält:
 

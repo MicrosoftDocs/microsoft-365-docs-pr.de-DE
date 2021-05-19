@@ -14,13 +14,13 @@ ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 04/23/2021
-ms.openlocfilehash: 175b06738b8c1508dab68c1e19648aa5385a7137
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 05/13/2021
+ms.openlocfilehash: 1a1083d15698eb5bbdf2f6080b152b6f326c689a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52269492"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539275"
 ---
 # <a name="microsoft-defender-antivirus-on-windows-server"></a>Microsoft Defender Antivirus auf Windows Server
 
@@ -131,9 +131,9 @@ Standardmäßig werden Windows Updates nicht automatisch auf Server 2019 oder Wi
 
 |Methode  |Beschreibung  |
 |---------|---------|
-|**Windows Update** in der Systemsteuerung     |- **Die automatische Installation von** Updates führt dazu, dass alle Updates automatisch installiert werden, einschließlich Windows Defender Security Intelligence-Updates. <br/>- **Laden Sie Updates** herunter, aber lassen Sie mich entscheiden, ob sie installiert werden sollen, Windows Defender security intelligence updates automatisch herunterladen und installieren können, andere Updates werden jedoch nicht automatisch installiert.       |
+|**Windows Update** in der Systemsteuerung     | **Die automatische Installation von** Updates führt dazu, dass alle Updates automatisch installiert werden, einschließlich Windows Defender Security Intelligence-Updates. <p>**Laden Sie Updates** herunter, aber lassen Sie mich entscheiden, ob sie installiert werden sollen, Windows Defender security intelligence updates automatisch herunterladen und installieren können, andere Updates werden jedoch nicht automatisch installiert.       |
 |**Gruppenrichtlinie**     | Sie können Windows Update mithilfe der in der Gruppenrichtlinie verfügbaren Einstellungen im folgenden Pfad einrichten und verwalten: **Administrative Vorlagen\Windows-Komponenten\Windows Update\Automatische Updates konfigurieren**         |
-|Der **AUOptions-Registrierungsschlüssel**     |Die folgenden beiden Werte ermöglichen Windows Update, Sicherheitsintelligenzupdates automatisch herunterzuladen und zu installieren: <br/>- **4**  -  **Installieren Sie Updates automatisch**. Dieser Wert führt dazu, dass alle Updates automatisch installiert werden, einschließlich Windows Defender Security Intelligence-Updates. <br/>- **3**  -  **Laden Sie Updates herunter, aber lassen Sie mich auswählen, ob sie installiert werden sollen.**  Dieser Wert ermöglicht Windows Defender, Sicherheitsintelligenzupdates automatisch herunterzuladen und zu installieren, andere Updates werden jedoch nicht automatisch installiert.         |
+|Der **AUOptions-Registrierungsschlüssel**     | Die folgenden beiden Werte ermöglichen Windows Update, Sicherheitsintelligenzupdates automatisch herunterzuladen und zu installieren: <p>**4**  -  **Installieren Sie Updates automatisch**. Dieser Wert führt dazu, dass alle Updates automatisch installiert werden, einschließlich Windows Defender Security Intelligence-Updates. <p>**3**  -  **Laden Sie Updates herunter, aber lassen Sie mich auswählen, ob sie installiert werden sollen.**  Dieser Wert ermöglicht Windows Defender, Sicherheitsintelligenzupdates automatisch herunterzuladen und zu installieren, andere Updates werden jedoch nicht automatisch installiert.         |
 
 Um sicherzustellen, dass der Schutz vor Schadsoftware erhalten bleibt, wird empfohlen, die folgenden Dienste zu aktivieren:
 
@@ -185,16 +185,6 @@ Wenn Sie ein Nicht-Microsoft-Antivirenprodukt als primäre Antivirenlösung auf 
 - Auf Windows Server, Version 1803 oder neuer, oder Windows Server 2019 können Sie Microsoft Defender Antivirus passiven Modus festlegen.  
 
 - On Windows Server 2016, Microsoft Defender Antivirus is not supported alongside a non-Microsoft antivirus/anmalware product. In diesen Fällen müssen Sie Microsoft Defender Antivirus deaktivierten Modus festlegen.
-
-### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-powershell"></a>Festlegen Microsoft Defender Antivirus auf den passiven Modus mithilfe von PowerShell
-
-Wenn Sie Windows Server, Version 1803 oder Windows Server 2019 verwenden, können Sie Microsoft Defender Antivirus mit dem folgenden PowerShell-Cmdlet auf den passiven Modus festlegen:
-
-`CMDLET NEEDED`
-
-### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-group-policy"></a>Festlegen Microsoft Defender Antivirus auf den passiven Modus mithilfe von Gruppenrichtlinien
-
-VERFAHREN ERFORDERLICH
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-using-a-registry-key"></a>Festlegen Microsoft Defender Antivirus auf den passiven Modus mithilfe eines Registrierungsschlüssels
 

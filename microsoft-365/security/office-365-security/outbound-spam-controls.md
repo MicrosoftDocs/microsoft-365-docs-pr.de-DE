@@ -20,12 +20,12 @@ ms.custom:
 description: Administratoren können sich über die Steuerelemente für ausgehende Spamnachrichten in Exchange Online Protection (EOP) informieren und erfahren, was sie tun müssen, wenn Sie Massenmailings senden müssen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e84cd636abee42a03ff8590091542c96714f2d8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0fb6bfe5d83c551c0a93cc7b453b27a2d7b476bc
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204228"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538735"
 ---
 # <a name="outbound-spam-protection-in-eop"></a>Ausgehender Spamschutz in EOP
 
@@ -36,21 +36,21 @@ ms.locfileid: "51204228"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online Postfächer nehmen wir die Verwaltung von ausgehenden Spamnachrichten ernst. Ein Kunde, der absichtlich oder unbeabsichtigt Spam von seiner Organisation sendet, kann die Reputation des gesamten Diensts beeinträchtigen und die E-Mail-Zustellung für andere Kunden beeinträchtigen.
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online Postfächer nehmen wir die Verwaltung von ausgehenden Spamnachrichten ernst. Auch wenn ein Kunde absichtlich oder unbeabsichtigt Spam von seiner Organisation sendet, kann diese Aktion die Reputation des gesamten Diensts beeinträchtigen und die E-Mail-Zustellung für andere Kunden beeinträchtigen.
 
-In diesem Thema werden die Steuerelemente und Benachrichtigungen beschrieben, die dazu beitragen sollen, ausgehenden Spam zu verhindern, und was Sie tun können, wenn Sie Massensendungen senden müssen.
+In diesem Artikel werden die Steuerelemente und Benachrichtigungen beschrieben, die dazu beitragen sollen, ausgehenden Spam zu verhindern, und was Sie tun können, wenn Sie Massensendungen senden müssen.
 
 ## <a name="what-admins-can-do-to-control-outbound-spam"></a>Was Administratoren tun können, um ausgehenden Spam zu steuern
 
-- Integrierte Benachrichtigungen verwenden: Wenn ein [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) Benutzer die Sendebeschränkungen des Diensts oder ausgehender  Spamrichtlinien überschreitet und das Senden von E-Mails eingeschränkt ist, sendet die Standardmäßige Benachrichtigungsrichtlinie mit dem Namen Benutzer, der das Senden von **E-Mails** beschränkt hat, E-Mail-Benachrichtigungen an Mitglieder der **Gruppe TenantAdmins** (**Globale** Administratoren). [](configure-the-outbound-spam-policy.md) Informationen zum Konfigurieren, wer diese Benachrichtigungen erhält, finden Sie unter [Überprüfen der Warnungseinstellungen für eingeschränkte Benutzer.](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users) Außerdem wurden die  Standardbenachrichtigungsrichtlinien mit  dem Namen E-Mail-Sendegrenzwert überschritten und Verdächtige E-Mail-Sendemuster erkannt, die E-Mail-Benachrichtigungen an Mitglieder der **Gruppe TenantAdmins** (**Globale** Administratoren) senden. Weitere Informationen über Benachrichtigungsrichtlinien finden Sie unter [Benachrichtigungsrichtlinien im Security & Compliance Center](../../compliance/alert-policies.md).
+- Integrierte Benachrichtigungen verwenden: Wenn ein [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options) Benutzer die Sendebeschränkungen des Diensts oder ausgehender  Spamrichtlinien überschreitet und das Senden von E-Mails eingeschränkt ist, sendet die Standardmäßige Benachrichtigungsrichtlinie mit dem Namen Benutzer, der das Senden von **E-Mails** beschränkt hat, E-Mail-Benachrichtigungen an Mitglieder der **Gruppe TenantAdmins** (**Globale** Administratoren). [](configure-the-outbound-spam-policy.md) Informationen zum Konfigurieren, wer diese Benachrichtigungen erhält, finden Sie unter [Überprüfen der Warnungseinstellungen für eingeschränkte Benutzer.](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users) Außerdem wurden die  Standardbenachrichtigungsrichtlinien mit  dem Namen E-Mail-Sendegrenzwert überschritten und Verdächtige E-Mail-Sendemuster erkannt, die E-Mail-Benachrichtigungen an Mitglieder der **Gruppe TenantAdmins** (**Globale** Administratoren) senden. Weitere Informationen zu Warnungsrichtlinien finden Sie unter [Warnungsrichtlinien in Microsoft 365](../../compliance/alert-policies.md).
 
-- Überprüfen von Spambeschwerden von E-Mail-Anbietern von **Drittanbietern:** Viele E-Mail-Dienste wie Outlook.com, Yahoo und AOL bieten eine Feedbackschleife, in der benutzer in ihrem Dienst eine E-Mail von Microsoft 365 als Spam markieren, wird die Nachricht verpackt und zur Überprüfung an uns gesendet. Weitere Informationen zur Absenderunterstützung für Outlook.com finden Sie unter <https://sendersupport.olc.protection.outlook.com/pm/services.aspx> .
+- Überprüfen von Spambeschwerden von E-Mail-Anbietern von Drittanbietern: Viele **E-Mail-Dienste** wie Outlook.com, Yahoo und AOL bieten eine Feedbackschleife, in der benutzer in ihrem Dienst eine E-Mail von Microsoft 365 als Spam markieren, wird die Nachricht verpackt und zur Überprüfung an uns zurückgeschickt. Weitere Informationen zur Absenderunterstützung für Outlook.com finden Sie unter <https://sendersupport.olc.protection.outlook.com/pm/services.aspx> .
 
 ## <a name="how-eop-controls-outbound-spam"></a>So steuert EOP ausgehenden Spam
 
 - **Trennung des ausgehenden** E-Mail-Datenverkehrs: Jede ausgehende Nachricht, die über den Dienst gesendet wird, wird auf Spam überprüft. Wenn die Nachricht als Spam erkannt wird, wird sie von einem sekundären, weniger seriösen IP-Adresspool namens _"High-Risk Delivery Pool" zugestellt._ Weitere Informationen finden Sie unter [Zustellungspool mit höherem Risiko für ausgehende Nachrichten](high-risk-delivery-pool-for-outbound-messages.md).
 
-- **Überwachen der Quell-IP-Adressre** reputation : Microsoft 365 abfragen verschiedene Ip-Blocklisten von Drittanbietern. Eine Warnung wird generiert, wenn eine der für ausgehende E-Mails verwendeten IP-Adressen in diesen Listen angezeigt wird. Auf diese Weise können wir schnell reagieren, wenn spam unsere Reputation beeinträchtigt hat. Wenn eine Warnung generiert wird, verfügen wir über eine interne Dokumentation, in der beschrieben wird, wie unsere IP-Adressen aus Blocklisten entfernt (delistiert) werden.
+- **Überwachen der Quell-IP-Adressre** reputation : Microsoft 365 abfragen verschiedene IP-Blocklisten von Drittanbietern. Eine Warnung wird generiert, wenn eine der für ausgehende E-Mails verwendeten IP-Adressen in diesen Listen angezeigt wird. Diese Überwachung ermöglicht es uns, schnell zu reagieren, wenn Spam unsere Reputation beeinträchtigt hat. Wenn eine Warnung generiert wird, verfügen wir über eine interne Dokumentation, in der beschrieben wird, wie unsere IP-Adressen aus Blocklisten entfernt (delistiert) werden.
 
 - Deaktivieren von Konten, die zu viel Spam senden: Auch wenn ausgehende Spamnachrichten in den Pool mit hohem Risiko getrennt werden, können wir einem Konto (häufig ein gefährdetes Konto) nicht erlauben, Spam auf unbestimmte Zeit zu <sup>\*</sup> senden. Wir überwachen Konten, die Spam senden, und wenn sie einen nicht bezeichneten Grenzwert überschreiten, wird das Konto am Senden von E-Mails blockiert. Es gibt unterschiedliche Schwellenwerte für einzelne Benutzer und den gesamten Mandanten.
 
@@ -60,12 +60,12 @@ In diesem Thema werden die Steuerelemente und Benachrichtigungen beschrieben, di
 
 ## <a name="recommendations-for-customers-who-want-to-send-mass-mailings-through-eop"></a>Empfehlungen für Kunden, die Massensendungen über EOP senden möchten
 
-Es ist schwierig, ein Gleichgewicht zwischen Kunden zu finden, die eine große Menge an E-Mails senden möchten, und dem Schutz des Diensts vor gefährdeten Konten und Massen-E-Mail-Absendern mit schlechten Empfängererwerbspraktiken. Die Kosten für eine Microsoft 365 E-Mail-Quelle, die in einer Ip-Blockliste eines Drittanbieters landet, sind größer als das Blockieren eines Benutzers, der zu viele E-Mails sendet.
+Es ist schwierig, ein Gleichgewicht zwischen Kunden zu finden, die eine große Menge an E-Mails senden möchten, und dem Schutz des Diensts vor gefährdeten Konten und Massen-E-Mail-Absendern mit schlechten Empfängererwerbspraktiken. Die Kosten für eine Microsoft 365 E-Mail-Quelle, die in einer Drittanbieter-IP-Sperrliste landet, sind größer als das Blockieren eines Benutzers, der zu viele E-Mails sendet.
 
 Wie in der [Exchange Online-Dienstbeschreibung](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)beschrieben, ist die Verwendung von EOP zum Senden von Massen-E-Mails keine unterstützte Verwendung des Diensts und ist nur auf "best-effort"-Basis zulässig. Für Kunden, die Massen-E-Mails senden möchten, empfehlen wir die folgenden Lösungen:
 
-- **Massen-E-Mails über lokale E-Mail-Server** senden: Dies bedeutet, dass Kunden ihre eigene E-Mail-Infrastruktur für Massensendungen verwalten müssen.
+- **Massen-E-Mails über lokale E-Mail-Server** senden: Kunden verwalten ihre eigene E-Mail-Infrastruktur für Massensendungen.
 
-- **Verwenden Eines Drittanbieters für Massen-E-Mail:** Es gibt mehrere Anbieter von Massen-E-Mail-Lösungen von Drittanbietern, die Sie zum Senden von Massenmailings verwenden können. Diese Unternehmen haben ein interessesfreies Interesse an der Zusammenarbeit mit Kunden, um gute E-Mail-Sendepraktiken sicherzustellen.
+- **Verwenden Eines Drittanbieters für** Massen-E-Mail: Es gibt mehrere Massen-E-Mail-Lösungsanbieter von Drittanbietern, die Sie zum Senden von Massenmailings verwenden können. Diese Unternehmen haben ein interessesfreies Interesse an der Zusammenarbeit mit Kunden, um gute E-Mail-Sendepraktiken sicherzustellen.
 
 Die Arbeitsgruppe "Messaging, Mobile, Malware Anti-Abuse" (MAAWG) veröffentlicht ihre Mitgliederliste unter <https://www.maawg.org/about/roster> . Mehrere Massen-E-Mail-Anbieter sind auf der Liste und sind als verantwortliche Internet-Bürger bekannt.

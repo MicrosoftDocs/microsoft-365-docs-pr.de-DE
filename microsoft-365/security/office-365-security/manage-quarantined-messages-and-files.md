@@ -19,12 +19,12 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie isolierte Nachrichten für alle Benutzer in Exchange Online Protection (EOP) anzeigen und verwalten. Administratoren in Organisationen mit Microsoft Defender for Office 365 können auch isolierte Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c5e2d6a3729a24766652d4c7c0973c63b1dcb207
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 508866fd66e4cbd00f559446d4ce52a4be063c94
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52272204"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539107"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP
 
@@ -72,7 +72,7 @@ Sie können isolierte Nachrichten im Security & Compliance Center oder in PowerS
 
 ### <a name="view-quarantined-email"></a>Anzeigen isolierter E-Mails
 
-1. Wechseln Sie im Security and Compliance Center zu **Bedrohungsmanagement** \> **Überprüfung** \> **Quarantäne**.
+1. Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Review** \> **Quarantine**.
 
 2. Stellen Sie sicher, dass **Quarantäne anzeigen** auf den Standardwert **E-Mail** festgelegt ist.
 
@@ -234,7 +234,7 @@ In Organisationen mit Defender for Office 365 können Administratoren isolierte 
 
 ### <a name="view-quarantined-files"></a>Anzeigen von isolierten Dateien
 
-1. Wechseln Sie im Security and Compliance Center zu **Bedrohungsmanagement** \> **Überprüfung** \> **Quarantäne**.
+1. Wechseln Sie im Security & Compliance Center zu **Threat Management** \> **Review** \> **Quarantine**.
 
 2. Ändern **der In Quarantäne isolierten** Ansicht in die **Wertdateien**. Sie können nach einem Feld sortieren, indem Sie auf eine verfügbare Spaltenüberschrift klicken.
 

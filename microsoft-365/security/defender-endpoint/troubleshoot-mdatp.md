@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 81f1b4154de25f6186679adc5b1f24f78f302415
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 8aaea65c617300a16f99a9a3e3a62d94b7983198
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933757"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538351"
 ---
 # <a name="troubleshoot-service-issues"></a>Behandeln von Dienstproblemen
 
@@ -34,7 +34,7 @@ ms.locfileid: "51933757"
 > Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
-In diesem Abschnitt werden Probleme behandelt, die bei der Verwendung des Microsoft Defender Advanced Threat-Diensts auftreten können.
+In diesem Abschnitt werden Probleme behandelt, die bei der Verwendung des Microsoft Defender for Endpoint-Diensts auftreten können.
 
 ## <a name="server-error---access-is-denied-due-to-invalid-credentials"></a>Serverfehler : Zugriff wird aufgrund ungültiger Anmeldeinformationen verweigert
 Wenn beim Zugriff auf den Dienst ein Serverfehler auftritt, müssen Sie ihre Browsercookieeinstellungen ändern.

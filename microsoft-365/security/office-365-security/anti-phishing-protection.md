@@ -21,12 +21,12 @@ ms.custom:
 description: Administratoren können mehr über die Antiphishingschutzfunktionen in Exchange Online Protection (EOP) und Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a100e28ddee1629b2fe35e28742a43b891d13e57
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 290f5f7797d987fb65a99e3f9e656bfec4cf83f3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570612"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538339"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Antiphishingschutz in Microsoft 365
 
@@ -53,9 +53,11 @@ Mit der zunehmenden Komplexität von Angriffen ist es für geschulte Benutzer so
 
 EOP (d. h. Microsoft 365 Organisationen ohne Microsoft Defender for Office 365) enthält Features, die Ihre Organisation vor Phishingbedrohungen schützen können:
 
-- **Spoofing Intelligence**: Überprüfen Sie gefälschte Nachrichten von Absendern in internen und externen Domänen und lassen Sie diese Absender zu oder blockieren Sie sie. Weitere Informationen finden Sie unter [Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md).
+- **Spoof intelligence**: Verwenden Sie die Spion-Intelligence-Einblicke, um erkannte gefälschte Absender in Nachrichten von externen und internen Domänen zu überprüfen und diese erkannten Absender manuell zu erlauben oder zu blockieren. Weitere Informationen finden Sie unter [Spoof Intelligence Insight in EOP](learn-about-spoof-intelligence.md).
 
-- **Antiphishingrichtlinien in EOP:** Aktivieren oder Deaktivieren der Spoofintelligenz, Aktivieren oder Deaktivieren der nicht authentifizierten Absenderidentifikation in Outlook und Angeben der Aktion für blockierte spoofierte Absender (Wechseln zu Junk-E-Mail-Ordner oder Quarantäne). Weitere Informationen finden Sie unter [Konfigurieren von Antiphishingrichtlinien in EOP](configure-anti-phishing-policies-eop.md).
+- **Antiphishingrichtlinien in EOP:** Aktivieren oder Deaktivieren der Spoofintelligenz, Aktivieren oder Deaktivieren der nicht authentifizierten Absenderidentifikation in Outlook ein oder aus, und geben Sie die Aktion für blockierte spoofierte Absender an. Weitere Informationen finden Sie unter [Konfigurieren von Antiphishingrichtlinien in EOP](configure-anti-phishing-policies-eop.md).
+
+- Zulassen oder Blockieren von gefälschten Absendern in der Mandanten zulassen/Blockieren-Liste: Wenn Sie das Urteil in der Spoof Intelligence-Einsicht außer Kraft setzen, wird der gefälschte Absender zu einem manuellen Zulassen oder Blockieren des **Eintrags,** der nur auf der Registerkarte **Spoof** in der Mandanten-Zulassen-/Sperrliste angezeigt wird. Sie können auch manuell Zulassen oder Blockieren von Einträgen für Spoof-Absender erstellen, bevor sie von spoof intelligence erkannt werden. Weitere Informationen finden Sie [unter Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list.md).
 
 - Implizite E-Mail-Authentifizierung: EOP verbessert standardmäßige E-Mail-Authentifizierungsüberprüfungen für eingehende E-Mails ([SPF,](set-up-spf-in-office-365-to-help-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)und [DMARC](use-dmarc-to-validate-email.md)) mit Absenderverdingung, Absenderverlauf, Empfängerverlauf, Verhaltensanalyse und anderen erweiterten Techniken, um gefälschte Absender zu identifizieren. Weitere Informationen finden Sie unter [E-Mail-Authentifizierung in Microsoft 365](email-validation-and-authentication.md).
 
@@ -63,7 +65,7 @@ EOP (d. h. Microsoft 365 Organisationen ohne Microsoft Defender for Office 365) 
 
 Microsoft Defender für Office 365 enthält weitere und noch fortgeschrittenere Antiphishingfeatures:
 
-- Antiphishingrichtlinien **in Microsoft Defender für Office 365:** Erstellen neuer benutzerdefinierter Richtlinien, Konfigurieren von Einstellungen für den Identitätswechsel (Schutz von Benutzern und Domänen vor Identitätswechsel), Einstellungen für Die Postfachintelligenz und anpassbare erweiterte Phishingschwellenwerte. Weitere Informationen finden Sie unter [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md). Weitere Informationen zu den Unterschieden zwischen Antiphishingrichtlinien in EOP und Antiphishingrichtlinien in Defender for Office 365 finden Sie unter [Antiphishingrichtlinien in Microsoft 365](set-up-anti-phishing-policies.md).
+- **Antiphishingrichtlinien in Microsoft Defender for Office 365:** Konfigurieren von Identitätswechselschutzeinstellungen für bestimmte Nachrichtensender und Absenderdomänen, Postfachintelligenzeinstellungen und anpassbare erweiterte Phishingschwellenwerte. Weitere Informationen finden Sie unter [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md). Weitere Informationen zu den Unterschieden zwischen Antiphishingrichtlinien in EOP und Antiphishingrichtlinien in Defender for Office 365 finden Sie unter [Antiphishingrichtlinien in Microsoft 365](set-up-anti-phishing-policies.md).
 
 - **Kampagnenansichten:** Maschinelles Lernen und andere Heuristiken identifizieren und analysieren Nachrichten, die an koordinierten Phishingangriffen gegen den gesamten Dienst und Ihre Organisation beteiligt sind. Weitere Informationen finden Sie unter [Kampagnenansichten in Microsoft Defender for Office 365](campaigns.md).
 

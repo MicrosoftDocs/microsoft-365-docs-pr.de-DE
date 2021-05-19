@@ -120,6 +120,10 @@
  
 ##### [Konfigurieren]()
 ###### [Konfigurieren von iOS-Features](ios-configure-features.md)
+
+##### [Problembehandlung]()
+###### [Behandeln von Problemen](ios-troubleshoot.md)
+
 ##### [Datenschutz](ios-privacy.md)
  
  

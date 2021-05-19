@@ -16,28 +16,86 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ec5cfa78852d65db808c4e853f90f5639df25d6f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: c9b97c2157ba8090628af23b2ab54cf38f04d8c6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300208"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538387"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-protection"></a>Microsoft Defender for Endpoint Device Control Removable Storage Protection
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
 
-Microsoft Defender for Endpoint Device Control Removable Storage Protection verhindert, dass Benutzer oder Computer nicht autorisierte Wechselmedien verwenden.
+Microsoft Defender for Endpoint Device Control Storage Protection verhindert, dass Benutzer oder Computer oder beide nicht autorisierte Wechselmedien verwenden.
 
-**Microsoft Defender for Endpoint Removable Storage Protection**
+## <a name="protection-policies"></a>Schutzrichtlinien
 
+### <a name="device-installation"></a>Geräteinstallation
 
-|Richtlinie  |Funktion |Beschreibung  |
-|---------|---------|---------|
-|Geräteinstallation    |  Verhindern der Installation mit oder ohne Ausschluss – Zulassen bestimmter Geräte basierend auf verschiedenen Eigenschaften; Weitere Informationen finden Sie im Abschnitt [Geräteeigenschaften](#device-properties) unten.        |    Funktioniert auf dem Computer: Unterschiedliche Benutzer, die sich beim gleichen Computer anmelden, werden durch dieselbe Richtlinie eingeschränkt. Weitere Informationen finden Sie unter [Steuern von USB-Geräten und](control-usb-devices-using-intune.md)anderen Wechselmedien mithilfe von Microsoft Defender for Endpoint .     |
-|Zugriffssteuerung für Wechselmedien      | (1) Überwachung des Lese-, Schreib- oder Ausführungszugriffs auf Wechseldatenträger basierend auf verschiedenen Geräteeigenschaften, mit oder ohne Ausnahme. Weitere Informationen finden Sie im Abschnitt [Geräteeigenschaften](#device-properties) unten. (2) Verhindern des Lese-, Schreib- oder Ausführungszugriffs mit oder ohne Ausschluss – Bestimmte Geräte basierend auf verschiedenen Geräteeigenschaften zulassen; Weitere Informationen zu den Geräteeigenschaften finden Sie im Abschnitt [Geräteeigenschaften](#device-properties) unten.     |     Funktioniert auf einem Computer oder einem Benutzer oder auf beiden: Nur bestimmten Personen, die Lese-/Schreib-/Ausführungszugriff auf bestimmte Wechseldatenträger auf einem bestimmten Computer ausführen, erlauben; Informationen zum Feature in Windows finden Sie unter [Wechselmedienzugriffssteuerung](device-control-removable-storage-access-control.md); Informationen zum Feature in Mac finden Sie [unter Gerätesteuerung für macOS](mac-device-control-overview.md).     |
-|Endpunkt-DLP-Wechseldatenträger      |    Überwachen oder warnen oder verhindern, dass ein Benutzer ein Element oder Informationen auf Wechselmedien oder USB-Geräte kopiert.     |  Weitere Informationen finden Sie unter [Microsoft Endpoint DLP](/compliance/endpoint-dlp-learn-about.md).       |
-|BitLocker    |     Blockieren von Daten, die auf Wechseldatenträger geschrieben werden sollen, die nicht bitLocker geschützt sind: Blockieren sie den Zugriff auf Wechseldatenträger, es sei denn, sie wurden auf einem Computer verschlüsselt, der sich im Besitz Ihrer Organisation befindet.    |   Weitere Informationen finden Sie unter BitLocker – [Wechseldatenträgereinstellungen](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings#bitlocker---removable-drive-settings.md).      |
+**Funktionen** – Verhindern der Installation mit oder ohne Ausschluss basierend auf verschiedenen Geräteeigenschaften.
+
+**Beschreibung**
+- Auf Computerebene angewendet: Die gleiche Richtlinie gilt für alle angemeldeten Benutzer.
+- Unterstützt MEM und GPO.
+- Unterstützte '[Geräteeigenschaften](#device-properties)' wie aufgeführt.
+- Weitere Informationen zu Windows finden Sie unter Steuern von USB-Geräten und anderen Wechselmedien mithilfe [von Microsoft Defender for Endpoint](control-usb-devices-using-intune.md).
+
+**Unterstützte Plattform** – Windows 10
+
+**Beschreibung**
+- Auf Computerebene angewendet: Die gleiche Richtlinie gilt für alle angemeldeten Benutzer
+- MacOS-spezifische Informationen finden Sie unter [Gerätesteuerelement für macOS](mac-device-control-overview.md).
+ 
+**Unterstützte Plattform** – macOS Catalina 10.15.4+ (mit aktivierten Systemerweiterungen)
+
+### <a name="removable-storage-access-control"></a>Zugriffssteuerung für Wechselmedien
+
+**Capabilities**
+- *Überwachung* Lese-, Schreib- oder Ausführungszugriff auf Wechseldatenträger basierend auf verschiedenen Geräteeigenschaften, mit oder ohne Ausschluss.
+- *Verhindern* Lese- oder Schreibzugriff oder Ausführen des Zugriffs mit oder ohne Ausschluss – Zulassen eines bestimmten Geräts basierend auf verschiedenen Geräteeigenschaften.
+
+**Beschreibung**
+- Wird auf einem Computer oder Benutzer oder auf beiden Angewendet – nur bestimmten Personen, die Lese-/Schreib-/Ausführungszugriff auf bestimmte Wechseldatenträger auf einem bestimmten Computer ausführen, erlauben.
+- Unterstützt MEM OMA-URI und GPO.
+- Unterstützte '[Geräteeigenschaften](#device-properties)' wie aufgeführt.
+- Informationen zu features in Windows finden Sie unter [Wechselmedienzugriffssteuerung](device-control-removable-storage-access-control.md).
+
+**Unterstützte Plattform** – Windows 10
+
+**Beschreibung**
+- Auf Computerebene angewendet: Die gleiche Richtlinie gilt für alle angemeldeten Benutzer.
+- MacOS-spezifische Informationen finden Sie unter [Gerätesteuerelement für macOS](mac-device-control-overview.md).
+ 
+**Unterstützte Plattform** – macOS Catalina 10.15.4+ (mit aktivierten Systemerweiterungen)
+
+### <a name="windows-portable-device-access-control"></a>Windows Zugriffssteuerung für tragbare Geräte
+
+**Funktionen** – Verweigern des Lese- oder Schreibzugriffs auf [Windows tragbaren](/windows-hardware/drivers/portable/)Gerät, z. B. Tablet, iPhone.
+
+**Beschreibung**
+- Wird auf dem Computer oder Benutzer oder auf beiden angewendet.
+- Unterstützt MEM OMA-URI und GPO.
+
+**Unterstützte Plattform** – Windows 10
+
+### <a name="endpoint-dlp-removable-storage"></a>Endpunkt-DLP-Wechseldatenträger
+
+**Funktionen** – Überwachen oder Warnen oder Verhindern, dass ein Benutzer ein Element oder Informationen auf Wechselmedien oder USB-Geräte kopiert.
+
+**Beschreibung** – Weitere Informationen zu Windows finden Sie [unter Learn about Microsoft 365 Endpoint data loss prevention](../../compliance/endpoint-dlp-learn-about.md).
+
+**Unterstützte Plattform** – Windows 10
+
+### <a name="bitlocker"></a>BitLocker 
+
+**Capabilities**
+- Blockieren von Daten, die auf Wechseldatenträger geschrieben werden sollen, die nicht BitLocker sind.
+- Blockieren des Zugriffs auf Wechseldatenträger, es sei denn, sie wurden auf einem Computer im Besitz Ihrer Organisation verschlüsselt.
+ 
+**Beschreibung** – Weitere Informationen zu Windows finden Sie [unter BitLocker – Wechseldatenträger Einstellungen](/mem/intune/protect/endpoint-security-disk-encryption-profile-settings).
+
+**Unterstützte Plattform** – Windows 10
 
 ## <a name="device-properties"></a>Geräteeigenschaften
 
@@ -57,4 +115,5 @@ Mit Microsoft Defender for Endpoint Device Control Removable Storage Protection 
 
 ## <a name="related-topic"></a>Verwandtes Thema
 
-- [Microsoft Defender for Endpoint Device Control Wechseldatenträgerzugriffssteuerung](device-control-removable-storage-access-control.md)
+- [Microsoft Defender for Endpoint Device Control Wechseldatenträger Storage Zugriffssteuerung](device-control-removable-storage-access-control.md)
+

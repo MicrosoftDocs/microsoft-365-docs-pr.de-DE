@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: f5281255db48b61e7cf21a1ac8d6b5bdd18ebc20
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: d7559e5fa75db1fb23592dec1a3a5f35bad603df
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332978"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538536"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -133,7 +133,7 @@ Wenn Sie die Option **Typen vertraulicher Informationen** auswählen, wird diese
 
 Ähnlich wie bei der Konfiguration von DLP-Richtlinien können Sie dann Ihre Bedingung verfeinern, indem Sie die Anzahl der Instanzen und die Übereinstimmungsgenauigkeit ändern. Zum Beispiel:
 
-![Optionen für Übereinstimmungsgenauigkeit und Instanzenanzahl](../media/sensitivity-labels-instance-count-match-accuracy.png)
+![Optionen für Übereinstimmungsgenauigkeit und Instanzenanzahl](../media/sit-confidence-level.png)
 
 Weitere Informationen zu diesen Konfigurationsoptionen finden Sie in der DLP-Dokumentation: [Optimieren von Regeln, um Übereinstimmungen zu vereinfachen oder zu erschweren](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
 
@@ -189,7 +189,7 @@ Spezifisch für integrierte Bezeichnungen:
 
 - Bei empfohlenen Bezeichnungen in den Desktopversionen von Word wird der sensible Inhalt, der die Empfehlung ausgelöst hat, markiert, sodass Benutzer den sensiblen Inhalt überprüfen und entfernen können, anstatt die empfohlene Vertraulichkeitsbezeichnung anzuwenden.
 
-- Ausführliche Informationen dazu, wie diese Bezeichnungen in Office-Apps angewendet werden, Beispielscreenshots und wie vertrauliche Informationen erkannt werden, finden Sie unter [Automatisches Anwenden oder Empfehlen von Vertraulichkeitsbezeichnungen für Ihre Dateien und E-Mails in Office](https://support.office.com/de-DE/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
+- Ausführliche Informationen dazu, wie diese Bezeichnungen in Office-Apps angewendet werden, Beispielscreenshots und wie vertrauliche Informationen erkannt werden, finden Sie unter [Automatisches Anwenden oder Empfehlen von Vertraulichkeitsbezeichnungen für Ihre Dateien und E-Mails in Office](https://support.office.com/en-us/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1).
 
 Spezifisch für Azure Information Protection-Clients mit einheitlichen Bezeichnungen:
 

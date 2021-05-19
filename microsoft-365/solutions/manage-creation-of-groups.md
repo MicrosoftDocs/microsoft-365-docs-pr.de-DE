@@ -16,13 +16,14 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
+recommendations: false
 description: Erfahren Sie, wie Sie steuern können, welche Benutzer Microsoft 365-Gruppen erstellen können.
-ms.openlocfilehash: 092ff821911ef0af2b7867e1b870b68b1b6355b3
-ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
+ms.openlocfilehash: 19a106d255708f4b1df8f798219ea7ea778bbef3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51656985"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539179"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Verwalten von Personen, die Microsoft 365-Gruppen erstellen können
 

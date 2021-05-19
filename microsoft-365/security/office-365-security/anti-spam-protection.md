@@ -21,12 +21,12 @@ ms.custom:
 description: Administratoren können mehr über die Antispameinstellungen und -filter erfahren, mit deren Hilfe Spam in Exchange Online Protection (EOP) verhindert wird.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eaff771d6fa0490819ec076b5a9a43ac843cf207
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: e6a4113925956c67e80a5239b8f9823acaf7f75b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650266"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538315"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Antispamschutz in EOP
 
@@ -57,9 +57,6 @@ Die Antispameinstellungen in EOP werden aus den folgenden Technologien hergestel
 
 - **Verbindungsfilterung**: Identifiziert gute und schlechte E-Mail-Quellserver frühzeitig in der eingehenden E-Mail-Verbindung über die IP-Zulässige Liste, die LISTE der BLOCKIERTEN IP-Adressen und die Liste der sicheren E-Mails *(eine* dynamische, aber nicht bearbeitbare Liste von vertrauenswürdigen Absendern, die von Microsoft verwaltet werden). Sie konfigurieren diese Einstellungen in der Verbindungsfilterrichtlinie. Weitere Informationen finden Sie [unter Configure connection filtering](configure-the-connection-filter-policy.md).
 
-  > [!NOTE]
-  > Spoof Intelligence verwendet die Verbindungsfilterung, um Listen zulässiger und blockierter Absender zu erstellen, die Ihre E-Mail-Domäne spoofen. Weitere Informationen finden Sie [unter Learn more about spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
-
 - **Spamfilterung (Inhaltsfilterung):** EOP verwendet die Spamfilterungs-Urteile **Spam,** Spam mit hoher Vertrauen, Massen-E-Mails, **Phishing-E-Mails** und **Phishing-E-Mails** mit hoher Vertrauenssicherheit, um Nachrichten zu klassifizieren.  Sie können die Aktionen basierend auf diesen Urteilen konfigurieren und die Benachrichtigungsoptionen für Endbenutzer für Nachrichten konfigurieren, die in Quarantäne statt zugestellt wurden. Weitere Informationen finden Sie unter [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
   > [!NOTE]
@@ -67,7 +64,7 @@ Die Antispameinstellungen in EOP werden aus den folgenden Technologien hergestel
 
 - **Filterung ausgehender** Spamnachrichten: EOP überprüft außerdem, ob Ihre Benutzer keine Spamnachrichten senden, weder in Inhalten ausgehender Nachrichten noch durch Überschreiten der Grenzwerte für ausgehende Nachrichten. Weitere Informationen finden Sie unter [Configure outbound spam filtering in Microsoft 365](configure-the-outbound-spam-policy.md).
 
-- **Spoof Intelligence**: Weitere Informationen finden Sie unter Erfahren Sie mehr über [Spoof Intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- **Spoof intelligence**: Weitere Informationen finden Sie unter [Anti-Spoofing Protection in EOP](anti-spoofing-protection.md).
 
 ## <a name="manage-errors-in-spam-filtering"></a>Verwalten von Fehlern bei der Spamfilterung
 

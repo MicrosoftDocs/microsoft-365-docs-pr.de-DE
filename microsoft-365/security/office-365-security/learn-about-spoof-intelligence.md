@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren der Spoofintelligenz
+title: Einblick in spoof intelligence
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,17 +17,17 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können mehr über spoof intelligence in Exchange Online Protection (EOP) erfahren, wo Sie bestimmte gefälschte Absender zulassen oder blockieren können.
+description: Administratoren können mehr über den Einblick in spoof intelligence in Exchange Online Protection (EOP) erfahren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c13c080829236b9a27b6a1a82e1c27256749b5c2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 37c5bcb6f2c15c3814fafa198f2905e23b12ba01
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204234"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538747"
 ---
-# <a name="configure-spoof-intelligence-in-eop"></a>Konfigurieren von Spoof Intelligence in EOP
+# <a name="spoof-intelligence-insight-in-eop"></a>Einblick in spoof intelligence in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -36,29 +36,42 @@ ms.locfileid: "51204234"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer werden eingehende E-Mail-Nachrichten ab Oktober 2018 automatisch vor Spoofing durch EOP geschützt. EOP verwendet Spoof Intelligence als Teil der allgemeinen Verteidigung Ihrer Organisation gegen Phishing. Weitere Informationen finden Sie unter Schutz vor [Spoofing in EOP](anti-spoofing-protection.md).
+> [!NOTE]
+> Die in diesem Artikel beschriebenen Features befinden sich in Vorschau, können geändert werden und sind nicht in allen Organisationen verfügbar. Wenn Ihre Organisation nicht über die in diesem Artikel beschriebenen Features verfügt, lesen Sie die ältere [Spoofverwaltungserfahrung unter Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
+
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online Postfächer werden eingehende E-Mail-Nachrichten automatisch vor Spoofing geschützt. EOP verwendet **Spoof Intelligence** als Teil der allgemeinen Verteidigung Ihrer Organisation gegen Phishing. Weitere Informationen finden Sie unter Schutz vor [Spoofing in EOP](anti-spoofing-protection.md).
 
 Wenn ein Absender eine E-Mail-Adresse spooft, scheint er ein Benutzer in einer der Domänen Ihrer Organisation oder ein Benutzer in einer externen Domäne zu sein, die E-Mails an Ihre Organisation sendet. Angreifer, die Absender zum Senden von Spam- oder Phishing-E-Mails spoofen, müssen blockiert werden. Es gibt jedoch Szenarien, in denen legitime Absender Spoofing verwenden. Beispiel:
 
 - Legitime Szenarien für das Spoofing interner Domänen:
-
   - Drittanbietersender verwenden Ihre Domäne, um Massen-E-Mails für Unternehmensumfragen an Ihre eigenen Mitarbeiter zu senden.
   - Ein externes Unternehmen generiert und sendet Werbe- oder Produktupdates in Ihrem Auftrag.
   - Ein Assistent muss regelmäßig E-Mails für eine andere Person in Ihrer Organisation senden.
   - Eine interne Anwendung sendet E-Mail-Benachrichtigungen.
 
 - Legitime Szenarien für das Spoofing externer Domänen:
-
   - Der Absender befindet sich in einer Mailingliste (auch als Diskussionsliste bezeichnet), und die Mailingliste leitet E-Mails vom ursprünglichen Absender an alle Teilnehmer in der Mailingliste weiter.
   - Ein externes Unternehmen sendet E-Mails im Auftrag eines anderen Unternehmens (z. B. einen automatisierten Bericht oder ein Software-as-a-Service-Unternehmen).
 
-Spoof Intelligence, insbesondere die standardmäßige (und nur) Spoof Intelligence-Richtlinie, trägt dazu bei, sicherzustellen, dass die gefälschten E-Mails, die von legitimen Absendern gesendet werden, nicht in EOP-Spamfilter oder externe E-Mail-Systeme versenkt werden, während Ihre Benutzer vor Spam- oder Phishingangriffen geschützt werden.
+Sie können den Einblick in **spoof** intelligence im Security & Compliance Center verwenden, um spoofierte Absender schnell zu identifizieren, die Ihnen legitimerweise nicht authentifizierte E-Mails senden (Nachrichten von Domänen, die keine SPF-, DKIM- oder DMARC-Prüfungen bestehen) und diese Absender manuell zulassen.
 
-Sie können Spoof Intelligence im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer) verwalten.
+Indem Sie bekannten Absendern erlauben, gefälschte Nachrichten von bekannten Speicherorten zu senden, können Sie falsch positive Ergebnisse reduzieren (gute E-Mails sind als ungültig gekennzeichnet). Durch die Überwachung der zugelassenen gefälschten Absender bieten Sie eine zusätzliche Sicherheitsebene, um zu verhindern, dass unsichere Nachrichten in Ihrer Organisation ankommen.
+
+Ebenso können Sie spoofierte Absender überprüfen, die durch Spoof intelligence zugelassen wurden, und diese Absender manuell von der Spoof Intelligence-Einsicht blockieren.
+
+Im rest dieses Artikels wird erläutert, wie Sie den Einblick in spoof intelligence im Security & Compliance Center und in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online-Postfächer) verwenden.
+
+> [!NOTE]
+>
+> - Nur spoofierte Absender, die von spoof intelligence erkannt wurden, werden in der Spoof Intelligence-Einsicht angezeigt. Wenn Sie das Zulassen oder Blockieren des Urteils in der Einsicht außer Kraft setzen, wird der gefälschte Absender zu einem manuellen Zulassen oder Blockieren eines Eintrags, der nur auf der Registerkarte **Spoof** in der Mandanten-Zulassen-/Sperrliste angezeigt wird. Sie können auch manuell Zulassen oder Blockieren von Einträgen für spoofierte Absender erstellen, bevor sie von Spoof Intelligence erkannt werden. Weitere Informationen finden Sie [unter Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list.md).
+>
+> - Der Einblick in spoof intelligence und die Registerkarte **Spoof** in der Liste Mandanten zulassen/blockieren ersetzen die Funktionalität der Spoof Intelligence-Richtlinie, die auf der Seite Antispamrichtlinie im Security & Compliance Center verfügbar war.
+>
+>- Der Einblick in spoof intelligence zeigt Daten im Wert von 7 Tagen an. Das **Cmdlet Get-SpoofIntelligenceInsight** zeigt Daten im Wert von 30 Tagen an.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **Antispameinstellungen** zu wechseln, verwenden Sie <https://protection.office.com/antispam>. Um direkt zur Seite **"Antiphishing" zu** wechseln, verwenden Sie <https://protection.office.com/antiphishing> .
+- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **"Antiphishing" zu** wechseln, verwenden Sie <https://protection.office.com/antiphishing> .
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -73,151 +86,94 @@ Sie können Spoof Intelligence im Security & Compliance Center oder in PowerShel
   - Durch Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
-- Unsere empfohlenen Einstellungen für spoof intelligence finden Sie unter [EOP default anti-phishing policy settings](recommended-settings-for-eop-and-office365.md#eop-default-anti-phishing-policy-settings).
+- Sie aktivieren und deaktivieren Spoof Intelligence in Antiphishingrichtlinien in EOP und Microsoft Defender für Office 365. Spoof intelligence ist standardmäßig aktiviert. Weitere Informationen finden Sie unter [Configure anti-phishing policies in EOP](configure-anti-phishing-policies-eop.md) oder [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>Verwenden des Security & Compliance Center zum Verwalten gefälschter Absender
+- Unsere empfohlenen Einstellungen für spoof intelligence finden Sie unter [EOP default anti-phishing policy settings](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings).
 
-> [!NOTE]
-> Wenn Sie über ein Microsoft 365 Enterprise E5-Abonnement verfügen oder ein Microsoft Defender für Office 365-Add-On separat erworben haben, können Sie auch Absender verwalten, die Ihre Domäne spoofieren, über die [Spoof Intelligence-Einsicht](walkthrough-spoof-intelligence-insight.md).
+## <a name="open-the-spoof-intelligence-insight-in-the-security--compliance-center"></a>Öffnen Sie den Einblick in spoof intelligence im Security & Compliance Center
 
-1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
+1. Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **Antiphishing**.
 
-2. Klicken Sie auf der Seite **Antispameinstellungen** auf ![ Symbol erweitern, ](../../media/scc-expand-icon.png) um die **Spoof Intelligence-Richtlinie zu erweitern.**
+2. Auf der **Hauptseite antiphishing** hat der Einblick in spoof intelligence zwei Modi:
 
-   ![Auswählen der Spoof Intelligence-Richtlinie](../../media/anti-spam-settings-spoof-intelligence-policy.png)
+   - **Einblicksmodus:** Wenn Spoofintelligenz aktiviert ist, zeigt die Einblicke, wie viele Nachrichten in den letzten sieben Tagen durch Spoofintelligenz erkannt wurden.
+   - **Was wäre,** wenn Der Modus : Wenn die Spoofintelligenz deaktiviert ist, zeigt die Einsicht, wie viele Nachrichten in den letzten sieben Tagen durch Spoofintelligenz erkannt worden wären. 
 
-3. Treffen Sie eine der folgenden Auswahlen:
+   So oder so sind die spoofierten Domänen, die in der Einsicht angezeigt werden, in zwei Kategorien unterteilt: Verdächtige **Domänen** und **Nicht verdächtige Domänen.**
 
-   - **Überprüfen neuer Absender**
-   - **Absender anzeigen, die ich bereits überprüft habe**
+   - **Verdächtige** Domänen sind:
 
-4. Wählen Sie im angezeigten Flyout "Entscheiden, ob diese Absender ihre Benutzer-Flyouts **spoofen** dürfen" eine der folgenden Registerkarten aus:
+     - Hochsicherer Spoof: Basierend auf den historischen Sendemustern und der Reputationsnote der Domänen sind wir sehr sicher, dass die Domänen Spoofing sind, und Nachrichten von diesen Domänen sind mit hoher Wahrscheinlichkeit bösartig.
 
-   - **Ihre Domänen:** Absender, die Benutzer in Ihren internen Domänen spoofieren.
-   - **Externe Domänen:** Absender, die Benutzer in externen Domänen spoofieren.
+     - Moderater Konfidenzs spoof: Basierend auf historischen Sendemustern und der Reputationsnote der Domänen sind wir moderat davon überzeugt, dass die Domänen Spoofing sind und dass nachrichten, die von diesen Domänen gesendet werden, legitim sind. Falsch positive Ergebnisse sind in dieser Kategorie wahrscheinlicher als spoof mit hoher Wahrscheinlichkeit.
 
-5. Klicken ![ Sie in der Spalte ](../../media/scc-expand-icon.png) **Spoofing?** auf Erweitern(Symbol). Wählen **Sie Ja** aus, um den gefälschten Absender zu erlauben, oder wählen Sie **Nein** aus, um die Nachricht als spoofed zu markieren. Die Aktion wird durch die standardmäßige Antiphishingrichtlinie oder benutzerdefinierte Antiphishingrichtlinien gesteuert (der Standardwert ist **Move message to Junk Email folder**). Weitere Informationen finden Sie unter [Spoofeinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md#spoof-settings).
+   **Nicht verdächtige Domänen:** Die explizite E-Mail-Authentifizierung der Domäne hat [SPF,](how-office-365-uses-spf-to-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)und [DMARC nicht überprüft.](use-dmarc-to-validate-email.md) Die Domäne hat jedoch unsere impliziten E-Mail-Authentifizierungsprüfungen ([zusammengesetzte Authentifizierung](email-validation-and-authentication.md#composite-authentication)) bestanden. Aus diesem Grund wurde keine Antis spoofing-Aktion für die Nachricht ergriffen.
 
-   ![Screenshot des Flyouts von spoofierten Absendern und der Frage, ob der Absender spoofen darf](../../media/c0c062fd-f4a4-4d78-96f7-2c22009052bb.jpg)
+### <a name="view-information-about-spoofed-messages"></a>Anzeigen von Informationen zu gefälschten Nachrichten
 
-   Die angezeigten Spalten und Werte werden in der folgenden Liste erläutert:
+Klicken Sie auf der Spionintelligenz auf Verdächtige **Domänen** oder nicht verdächtige **Domänen,** um zur **Seite Spoof Intelligence Insight zu** wechseln. Die Seite enthält die folgenden Informationen:
 
-   - **Spoofed user:** Das Benutzerkonto, das gefälscht wird. Dies ist der Absender der Nachricht in der Absenderadresse (auch als Adresse bezeichnet), die `5322.From` in E-Mail-Clients angezeigt wird. Die Gültigkeit dieser Adresse wird von SPF nicht überprüft.
+- **Spoofed domain:** Die Domäne des spoofierten Benutzers, die im Feld **Von** in E-Mail-Clients angezeigt wird. Diese Adresse wird auch als Adresse `5322.From` bezeichnet.
+- **Infrastruktur**: Wird auch als sendende _Infrastruktur bezeichnet._ Dies ist einer der folgenden Werte:
+  - Die Domäne in einer Reverse-DNS-Suche (PTR-Eintrag) der IP-Adresse des Quell-E-Mail-Servers.
+  - Wenn die Quell-IP-Adresse keinen PTR-Eintrag enthält, wird die sendende Infrastruktur als \<source IP\> /24 identifiziert (z. B. 192.168.100.100/24).
+- **Nachrichtenanzahl**: Die Anzahl der Nachrichten aus der  Kombination der spoofierten Domäne und der sendenden Infrastruktur an Ihre Organisation innerhalb der letzten 7 Tage.
+- **Zuletzt gesehen:** Das letzte Datum, an dem eine Nachricht von der sendenden Infrastruktur empfangen wurde, die die spoofierte Domäne enthält.
+- **Spooftyp**: Einer der folgenden Werte:
+  - **Intern:** Der gefälschte Absender befindet sich in einer Domäne, die zu Ihrer Organisation gehört (eine [akzeptierte Domäne](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
+  - **Extern:** Der gefälschte Absender befindet sich in einer externen Domäne.
+- **Spoofing** zulässig: Der Wert hängt  davon ab, ob Sie auf Verdächtige Domänen oder **nicht verdächtige** Domänen geklickt haben:
+  - **Verdächtige** Domänen: Der **Wert "Zugelassen zum Spoofen"** ist immer **Nein**. Nachrichten aus der Kombination aus spoofed _domain_ und sending infrastructure werden durch Spoof Intelligence als schlecht gekennzeichnet. Die Aktion, die für die gefälschten Nachrichten ergriffen wird, wird durch die standardmäßige Antiphishingrichtlinie oder benutzerdefinierte Antiphishingrichtlinien gesteuert (der Standardwert ist **Move message to Junk Email folder**). Weitere Informationen finden Sie unter [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
+  - **Nicht verdächtige Domänen:** Der **Wert für das Spoofen** ist immer **Ja**. Nachrichten aus der Kombination aus spoofed domain _und_ sending infrastructure werden durch Spoof Intelligence als gut gekennzeichnet.
 
-     - Auf der Registerkarte Ihre **Domänen** enthält der Wert eine einzelne E-Mail-Adresse, oder wenn der Quell-E-Mail-Server mehrere Benutzerkonten spoofiert, enthält er **mehrere**.
+Sie können auf ausgewählte Spaltenüberschriften klicken, um die Ergebnisse zu sortieren.
 
-     - Auf der **Registerkarte Externe Domänen** enthält der Wert die Domäne des spoofierten Benutzers, nicht die vollständige E-Mail-Adresse.
+Zum Filtern der Ergebnisse haben Sie die folgenden Optionen:
 
-   - **Sendeinfrastruktur**: Die Domäne, die in einer Reverse-DNS-Suche (PTR-Eintrag) der IP-Adresse des Quell-E-Mail-Servers gefunden wurde. Wenn die Quell-IP-Adresse keinen PTR-Eintrag enthält, wird die sendende Infrastruktur als \<source IP\> /24 identifiziert (z. B. 192.168.100.100/24).
+- Verwenden Sie **das Feld Spoofingdomäne filtern,** um eine durch Kommas getrennte Liste mit spoofierten Domänenwerten ein eingeben, um die Ergebnisse zu filtern.
+- Verwenden Sie **das Feld Infrastruktur filtern,** um eine durch Kommas getrennte Liste von Infrastrukturwerten ein, um die Ergebnisse zu filtern.
+- Klicken Sie auf die Schaltfläche **Filter,** um die Ergebnisse nach **Spooftyp zu filtern.**
 
-     Weitere Informationen zu Nachrichtenquellen und Nachrichtensendern finden Sie unter [Eine Übersicht über E-Mail-Nachrichtenstandards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
+### <a name="view-details-about-spoofed-messages"></a>Anzeigen von Details zu gefälschten Nachrichten
 
-   - **Anzahl der Nachrichten**: Die Anzahl der Nachrichten aus der sendenden Infrastruktur an Ihre Organisation, die den angegebenen gefälschten Absender oder Absender innerhalb der letzten 30 Tage enthalten.
+Wählen Sie ein Element in der Liste aus, um Details anzuzeigen. Ein Flyout wird mit den folgenden Informationen und Features angezeigt:
 
-   - **# der Benutzerbeschwerden**: Beschwerden, die von Ihren Benutzern gegen diesen Absender innerhalb der letzten 30 Tage eingereicht wurden. Beschwerden werden in der Regel in Form von Junk-Übermittlungen an Microsoft eingereicht.
+- **Spoofing zulässig:** Verwenden Sie diese Umschalte, um das Spoof intelligence-Urteil außer Kraft zu setzen:
+  - Wenn Sie ursprünglich **verdächtige Domänen** in der Einsicht ausgewählt haben, ist **Spoofing** zugelassen deaktiviert. Um ihn zu aktivieren, der den Eintrag aus dem Einblick in spoof intelligence in die Mandanten-Zulassen-/Sperrliste als zulässigen Eintrag für Spoofs verschiebt, verschieben Sie den Umschalter auf ein: ![ Umschalten auf ](../../media/scc-toggle-on.png) .
+  - Wenn Sie ursprünglich **nicht verdächtige Domänen** in der Einsicht ausgewählt haben, ist **Spoofing** zugelassen aktiviert. Um es zu deaktivieren, wodurch der Eintrag aus dem Einblick in die Spionintelligenz in die Mandanten zulassen/Blockieren-Liste als Blockeintrag für Spoofs bewegt wird, verschieben Sie den Umschalter zu deaktivieren: ![ Umschalten aus ](../../media/scc-toggle-off.png) .
 
-   - **Authentifizierungsergebnis**: Einer der folgenden Werte:
-      - **Übergeben:** Der Absender hat E-Mail-Authentifizierungsprüfungen (SPF oder DKIM) bestanden.
-      - **Fehler:** Fehler beim EOP-Absenderauthentifizierungsüberprüfungen.
-      - **Unbekannt:** Das Ergebnis dieser Prüfungen ist nicht bekannt.
+- Warum wir dies erwischt haben.
+- Was Sie tun müssen.
+- Eine Domänenzusammenfassung, die die meisten der gleichen Informationen von der Hauptseite für spoof intelligence enthält.
+- WhoIs-Daten über den Absender.
+- Ähnliche Nachrichten, die wir in Ihrem Mandanten vom gleichen Absender gesehen haben.
 
-   - **Entscheidungssatz von**: Zeigt an, wer ermittelt hat, ob die sendende Infrastruktur den Benutzer spoofen darf:
-       - **Spoof Intelligence Policy** (automatisch)
-       - **Administrator** (manuell)
+### <a name="about-allowed-spoofed-senders"></a>Informationen zu zugelassenen spoofierten Absendern
 
-   - **Zuletzt gesehen:** Das letzte Datum, an dem eine Nachricht von der sendenden Infrastruktur empfangen wurde, die den spoofierten Benutzer enthält.
+Ein zugelassener gefälschter Absender **in** nicht verdächtigen Domänen in der Einblick in spoof intelligence oder ein blockierter Absender **in**  verdächtigen Domänen, den Sie manuell in **Spoofing** geändert haben, erlaubt nur Nachrichten aus der Kombination aus der spoofierten Domäne und der sendenden Infrastruktur. Es lässt weder E-Mails von der spoofierten Domäne von einer Quelle noch E-Mails von der sendenden Infrastruktur für eine Beliebige Domäne zu.
 
-   - **Darf ges spooft werden?**: Die hier angezeigten Werte sind:
-     - **Ja:** Nachrichten aus der Kombination aus spoofierten Benutzern und sendender Infrastruktur sind zulässig und werden nicht als spoofierte E-Mails behandelt.
-     - **Nein:** Nachrichten aus der Kombination aus spoofiertem Benutzer und sendender Infrastruktur werden als Spoofing gekennzeichnet. Die Aktion wird durch die standardmäßige Antiphishingrichtlinie oder benutzerdefinierte Antiphishingrichtlinien gesteuert (der Standardwert ist **Move message to Junk Email folder**). Weitere Informationen finden Sie im nächsten Abschnitt.
+Der folgende gefälschte Absender darf z. B. spoofen:
 
-     - **Einige Benutzer** (**Nur Registerkarte "Ihre** Domänen"): Eine sendende Infrastruktur fälscht mehrere Benutzer, wobei einige spoofierte Benutzer zulässig sind und andere nicht. Verwenden Sie die **Registerkarte Detail,** um die spezifischen Adressen zu sehen.
+- **Domäne**: gmail.com
+- **Infrastruktur**: tms.mx.com
 
-6. Klicken Sie unten auf der Seite auf **Speichern**.
+Nur E-Mails von diesem Domänen-/Sendeinfrastrukturpaar dürfen spoofen. Andere Absender, die versuchen, gmail.com zu spoofen, sind nicht automatisch zulässig. Nachrichten von Absendern in anderen Domänen, die von tms.mx.com stammen, werden weiterhin durch Spoof Intelligence überprüft und können blockiert werden.
 
-## <a name="use-powershell-to-manage-spoofed-senders"></a>Verwenden von PowerShell zum Verwalten gefälschter Absender
+## <a name="use-the-spoof-intelligence-insight-in-exchange-online-powershell-or-standalone-eop-powershell"></a>Verwenden der Einblicke in spoof intelligence in Exchange Online PowerShell oder eigenständiger EOP PowerShell
 
-Verwenden Sie die folgende Syntax, um zugelassene und blockierte Absender in Spoof Intelligence zu sehen:
+In PowerShell verwenden Sie das **Cmdlet Get-SpoofIntelligenceInsight,** um zugelassene und blockierte spoofierte Absender zu anzeigen, die von Spoof Intelligence erkannt wurden.  Zum manuellen Zulassen oder Blockieren der gefälschten Absender müssen Sie das **Cmdlet New-TenantAllowBlockListSpoofItems** verwenden. Weitere Informationen finden Sie unter [Use PowerShell to configure the Tenant Allow/Block List](tenant-allow-block-list.md#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list).
+
+Führen Sie den folgenden Befehl aus, um die Informationen in der Spoof Intelligence-Einsicht anzeigen zu können:
 
 ```powershell
-Get-PhishFilterPolicy [-AllowedToSpoof <Yes | No | Partial>] [-ConfidenceLevel <Low | High>] [-DecisionBy <Admin | SpoofProtection>] [-Detailed] [-SpoofType <Internal | External>]
+Get-SpoofIntelligenceInsight
 ```
 
-In diesem Beispiel werden detaillierte Informationen zu allen Absendern zurückgegeben, die Benutzer in Ihren Domänen spoofen dürfen.
-
-```powershell
-Get-PhishFilterPolicy -AllowedToSpoof Yes -Detailed -SpoofType Internal
-```
-
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-PhishFilterPolicy](/powershell/module/exchange/get-phishfilterpolicy).
-
-Führen Sie die folgenden Schritte aus, um zugelassene und blockierte Absender in Spoof Intelligence zu konfigurieren:
-
-1. Erfassen Sie die aktuelle Liste der erkannten gefälschten Absender, indem Sie die Ausgabe des **Get-PhishFilterPolicy-Cmdlets** in eine CSV-Datei schreiben:
-
-   ```powershell
-   Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
-   ```
-
-2. Bearbeiten Sie die CSV-Datei, um die **Werte SpoofedUser** (E-Mail-Adresse) und **AllowedToSpoof** (Ja oder Nein) hinzuzufügen oder zu ändern. Speichern Sie die Datei, lesen Sie die Datei, und speichern Sie den Inhalt als Variable namens `$UpdateSpoofedSenders` :
-
-   ```powershell
-   $UpdateSpoofedSenders = Get-Content -Raw "C:\My Documents\Spoofed Senders.csv"
-   ```
-
-3. Verwenden Sie die `$UpdateSpoofedSenders` Variable, um die Spoof Intelligence-Richtlinie zu konfigurieren:
-
-   ```powershell
-   Set-PhishFilterPolicy -Identity Default -SpoofAllowBlockList $UpdateSpoofedSenders
-   ```
-
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-PhishFilterPolicy](/powershell/module/exchange/set-phishfilterpolicy).
-
-## <a name="use-the-security--compliance-center-to-configure-spoof-intelligence"></a>Konfigurieren von Spoof Intelligence mithilfe & Security & Compliance Center
-
-Die Konfigurationsoptionen für spoof intelligence werden unter [Spoofeinstellungen in Antiphishingrichtlinien beschrieben.](set-up-anti-phishing-policies.md#spoof-settings)
-
-Sie können Einstellungen für spoof intelligence in der Standardmäßigen Antiphishingrichtlinie und auch in benutzerdefinierten Richtlinien konfigurieren. Anweisungen basierend auf Ihrem Abonnement finden Sie in einem der folgenden Themen:
-
-- [Konfigurieren von Antiphishingrichtlinien in EOP](configure-anti-phishing-policies-eop.md).
-
-- [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365.](configure-atp-anti-phishing-policies.md)
-
-## <a name="how-do-you-know-these-procedures-worked"></a>Wie können Sie feststellen, dass diese Verfahren erfolgreich waren?
-
-Verwenden Sie einen der folgenden Schritte, um zu überprüfen, ob Sie spoof intelligence mit Absendern konfiguriert haben, die spoofen dürfen und nicht spoofen dürfen, und ob Sie die Einstellungen für spoof intelligence konfiguriert haben:
-
-- Wechseln Sie im Security & Compliance  Center zu Bedrohungsverwaltungsrichtlinie \>  \> **Antispam** erweitern \> **Spoof Intelligence Policy** select Show me \> **senders I already reviewed** select the Your \> **Domains** or **External Domains,** and verify the **Allowed to spoof?** value for the sender.
-
-- Führen Sie in PowerShell die folgenden Befehle aus, um die Absender anzuzeigen, die spoofen dürfen und nicht dürfen:
-
-  ```powershell
-  Get-PhishFilterPolicy -AllowedToSpoof Yes -SpoofType Internal
-  Get-PhishFilterPolicy -AllowedToSpoof No -SpoofType Internal
-  Get-PhishFilterPolicy -AllowedToSpoof Yes -SpoofType External
-  Get-PhishFilterPolicy -AllowedToSpoof No -SpoofType External
-  ```
-
-- Führen Sie in PowerShell den folgenden Befehl aus, um die Liste aller gefälschten Absender in eine CSV-Datei zu exportieren:
-
-   ```powershell
-   Get-PhishFilterPolicy -Detailed | Export-CSV "C:\My Documents\Spoofed Senders.csv"
-   ```
-
-- Wechseln Sie im Security & Compliance  Center zu Bedrohungsverwaltungsrichtlinie \>  \> **Antiphishing** oder **ATP-Antiphishing,** und gehen Sie wie folgt vor:  
-
-  - Wählen Sie eine Richtlinie aus der Liste aus. Überprüfen Sie im angezeigten Flyout die Werte im **Abschnitt Spoof.**
-  - Klicken Sie **auf Standardrichtlinie**. Überprüfen Sie im angezeigten Flyout die Werte im **Abschnitt Spoof.**
-
-- Ersetzen Exchange Online PowerShell durch \<Name\> Office365 AntiPhish Default oder den Namen einer benutzerdefinierten Richtlinie, und führen Sie den folgenden Befehl aus, um die Einstellungen zu überprüfen:
-
-  ```PowerShell
-  Get-AntiPhishPolicy -Identity "<Name>" | Format-List EnableSpoofIntelligence,EnableUnauthenticatedSender,AuthenticationFailAction
-  ```
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-SpoofIntelligenceInsight](/powershell/module/exchange/get-spoofintelligenceinsight).
 
 ## <a name="other-ways-to-manage-spoofing-and-phishing"></a>Weitere Möglichkeiten zum Verwalten von Spoofing und Phishing
 
-Sind Sie sorgfältig beim Thema Spoofing und Phishingschutz. Hier finden Sie verwandte Möglichkeiten zum Überprüfen von Absendern, die Ihre Domäne spoofieren, und um zu verhindern, dass diese Ihre Organisation beschädigen:
+Sind Sie sorgfältig beim Thema Spoofing und Phishingschutz. Hier finden Sie verwandte Möglichkeiten, um Absender zu überprüfen, die Ihre Domäne spoofieren, und sie daran zu hindern, Ihre Organisation zu beschädigen:
 
 - Überprüfen Sie **den Spoof-E-Mail-Bericht**. Sie können diesen Bericht häufig zum Anzeigen und Verwalten gefälschter Absender verwenden. Weitere Informationen finden Sie unter [Spoof Detections report](view-email-security-reports.md#spoof-detections-report).
 

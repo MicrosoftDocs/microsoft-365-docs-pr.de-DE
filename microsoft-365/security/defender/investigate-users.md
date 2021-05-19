@@ -1,6 +1,6 @@
 ---
-title: Untersuchen von Benutzern im Microsoft 365 Security Center
-description: Untersuchen von Benutzern im Microsoft 365 Security Center
+title: Untersuchen von Benutzern in Microsoft 365 Defender
+description: Untersuchen Sie Die Benutzer auf einen Vorfall im Microsoft 365 Security Center.
 keywords: Security, Malware, Microsoft 365, M365, Security Center, monitor, report, identities, data, devices, apps, incident, analyze, response
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -19,14 +19,14 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: c03e4d5bd94eb6105ffab91c6dad2b74d7159dde
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 7084b9370a0dd83265b37ff1d152e2164fe32813
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52300061"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539131"
 ---
-# <a name="investigate-users-in-microsoft-365-security-center"></a>Untersuchen von Benutzern im Microsoft 365 Security Center
+# <a name="investigate-users-in-microsoft-365-defender"></a>Untersuchen von Benutzern in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,10 +40,10 @@ Ein Teil Ihrer Vorfalluntersuchung kann Benutzerkonten enthalten. Beginnen Sie m
 
 Um eine kurze Zusammenfassung eines Benutzerkontos für den Vorfall zu erhalten, aktivieren Sie das Kontrollkästchen neben dem Benutzernamen. Im Folgenden sehen Sie ein Beispiel.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Beispiel für den Zusammenfassungsbereich des Benutzerkontos für einen Vorfall im Microsoft 365 Security Center":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Beispiel für den Zusammenfassungsbereich eines Benutzerkontos für einen Vorfall im Microsoft 365 Security Center":::
 
 > [!NOTE]
-> Auf der Seite Benutzer werden die Azure Active Directory (AD)-Organisation sowie Gruppen angezeigt, die Ihnen dabei helfen, die Gruppen und Berechtigungen zu verstehen, die einem Benutzer zugeordnet sind.
+> Auf der Seite Benutzer Azure Active Directory (AD)-Organisation sowie Gruppen angezeigt, die Ihnen helfen, die Gruppen und Berechtigungen zu verstehen, die einem Benutzer zugeordnet sind.
 
 Auf dieser Fly-Out-Seite können Sie Informationen zu Benutzerbedrohungen überprüfen, einschließlich aktueller Vorfälle, aktiver Warnungen und Risikostufe sowie benutzerexposition, Konten, Geräte und mehr.
 
@@ -64,7 +64,7 @@ Auf dieser Seite können Sie die folgenden zusätzlichen Aktionen ausführen:
 - Kennzeichnen des Benutzerkontos als gefährdet
 - Benutzer erneut anmelden
 - Anhalten des Benutzerkontos
-- Weitere Informationen finden Sie unter Azure Active Directory (Azure AD)-Benutzerkonteneinstellungen.
+- Siehe die Azure Active Directory (Azure AD)
 - Anzeigen der Dateien im Besitz des Benutzerkontos
 - Anzeigen von Dateien, die für diesen Benutzer freigegeben sind. 
 

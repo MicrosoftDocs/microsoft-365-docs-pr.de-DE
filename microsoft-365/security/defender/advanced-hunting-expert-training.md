@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1928e381e861f993d171462833b8807b69dea515
-ms.sourcegitcommit: fb6c5e04ade1e82b26b2f911577b5ac721f1c544
+ms.openlocfilehash: 0b816956442408c9a61f662827f1fd45d9b6511f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52470676"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538855"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Expertenschulungen für die erweiterte Suche erhalten
 
@@ -50,7 +50,8 @@ Erhalten Sie weitere Expertenschulungen mit *L33TSP3AK:* Erweiterte Suche in Mic
 
 | Titel | Beschreibung | Uhr | Abfragen | 
 |--|--|--|--|
-| Episode 1  | In dieser Folge lernen Sie verschiedene bewährte Methoden beim Ausführen erweiterter Suchabfragen. Zu den behandelten Themen gehören: Optimieren Ihrer Abfragen, Verwenden der erweiterten Suche nach Ransomware, Behandeln von JSON als dynamischen Typ und Arbeiten mit externen Datenoperatoren. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [Textdatei](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt)
+| Episode 1  | In dieser Folge lernen Sie verschiedene bewährte Methoden beim Ausführen erweiterter Suchabfragen. Zu den behandelten Themen gehören: Optimieren Ihrer Abfragen, Verwenden der erweiterten Suche nach Ransomware, Behandeln von JSON als dynamischen Typ und Arbeiten mit externen Datenoperatoren. | [YouTube](https://www.youtube.com/watch?v=nMGbK-ALaVg&feature=youtu.be) (56:34) | [Textdatei](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/Performance%2C%20Json%20and%20dynamics%20operator%2C%20external%20data.txt) |
+| Episode 2 | In dieser Folge erfahren Sie, wie Sie verdächtige oder ungewöhnliche Anmeldespeicherorte und Daten exfiltration über Posteingangs-Weiterleitungsregeln untersuchen und darauf reagieren. Wie Sie mithilfe der erweiterten Suche mehrstufige Vorfälle mit datenbasierten Microsoft Cloud App Security untersuchen, teilt SichaSten Molendijk, Senior Program Manager für Cloud Security CxE. | [YouTube](https://www.youtube.com/watch?v=QaUxdtNfbd8) (57:07) | [Textdatei](https://github.com/microsoft/Microsoft-365-Defender-Hunting-Queries/blob/master/Webcasts/l33tSpeak/MCAS%20-%20The%20Hunt.txt)
 
 
 ## <a name="how-to-use-the-csl-file"></a>Verwenden der CSL-Datei

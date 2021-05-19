@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: Microsoft Defender für Office 365 E5- und P1- und P2-Kunden können jetzt eine 360-Grad-Ansicht jeder E-Mail mit E-Mail-Entitätsseite erhalten.
-ms.openlocfilehash: 8b531980852336679aad5f2013d63269c238e49c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: aa5d7effb66c4805f6983fa1afac19255bc996e4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933361"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539095"
 ---
 # <a name="the-email-entity-page"></a>Die Seite „E-Mail-Entität"
 
@@ -34,7 +34,7 @@ Administratoren von Microsoft Defender für Office 365 (oder MDO) E5 und MDO P1 
 
 ## <a name="reach-the-email-entity-page"></a>Erreichen der E-Mail-Entitätsseite
 
-Über das vorhandene Office Security and Compliance Center (protection.office.com) oder das neue Microsoft 365 Security Center (security.microsoft.com) können Sie die E-Mail-Entitätsseite anzeigen und verwenden.
+Entweder das vorhandene Security & Compliance Center (protection.office.com) oder das neue Microsoft 365 Security Center (security.microsoft.com) können Sie die E-Mail-Entitätsseite anzeigen und verwenden.
 
 |Zentriert|URL|Navigation|
 |---|---|---|
@@ -111,12 +111,12 @@ Benutzern werden bereicherte Detonationsdetails für bekannte schädliche Anlage
 
 *E-Mail-Details:* Details, die für ein tieferes Verständnis der E-Mail erforderlich sind, die auf der Registerkarte *Analyse verfügbar* sind.
 
-- *Exchange-Transport-Regeln (ETRs oder Mailflow-Regeln):* Diese Regeln werden auf eine Nachricht auf der Transportebene angewendet und haben Vorrang vor Phishing- und Spamverkündungen. Diese können nur im Exchange Admin Center erstellt und geändert werden. Wenn jedoch etR für eine Nachricht gilt, werden hier der NAME und die GUID des ETR angezeigt. Wertvolle Informationen zur Nachverfolgung.
+- *Exchange Transport rules (ETRs or Mailflow rules)*: Diese Regeln werden auf eine Nachricht auf der Transportebene angewendet und haben Vorrang vor Phishing- und Spamverkündungen. Diese können nur im Exchange Admin Center erstellt und geändert werden. Wenn jedoch etR für eine Nachricht gilt, werden hier der NAME und die GUID des ETR angezeigt. Wertvolle Informationen zur Nachverfolgung.
 
 - *System Overrides*: Dies ist eine Möglichkeit, Ausnahmen vom Für eine Nachricht vorgesehenen Zustellungsspeicherort zu machen, indem der vom System angegebene Zustellungsspeicherort außer Kraft gesetzt wird (je nach Bedrohungs- und Erkennungstechnologie).
 
 - *Junkpostfachregel:*"Junk" ist verborgene Posteingangsregel, die standardmäßig in jedem Postfach aktiviert ist.
-  - Wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist, kann Exchange Online Protection (EOP) Nachrichten nach bestimmten Kriterien in Junk verschieben. Die Verschieben kann auf der Spamfilterungsverkündungsaktion Nachricht in Junk-E-Mail-Ordner verschieben oder auf der Liste blockierter Absender im Postfach basieren.  Durch Deaktivieren der Junk-E-Mail-Regel wird die Zustellung von Nachrichten an den Junk-E-Mail-Ordner basierend auf der Liste sicherer *Absender* im Postfach verhindert.
+  - Wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist, Exchange Online Protection (EOP) Nachrichten nach bestimmten Kriterien in Junk verschieben. Die Verschieben kann auf der Spamfilterungsverkündungsaktion Nachricht in Junk-E-Mail-Ordner verschieben oder auf der Liste blockierter Absender im Postfach basieren.  Durch Deaktivieren der Junk-E-Mail-Regel wird die Zustellung von Nachrichten an den Junk-E-Mail-Ordner basierend auf der Liste sicherer *Absender* im Postfach verhindert.
   - Wenn die Junk-E-Mail-Regel für das Postfach deaktiviert ist, kann EOP Nachrichten nicht in den Junk-E-Mail-Ordner verschieben, basierend auf der Spamfilterungs-Verdict-Aktion Nachricht in Junk-E-Mail-Ordner verschieben oder die Sammlung sicherer Listen im Postfach.  
 
 - *Massenbeschwerdestufe (Bulk Complaint Level, BCL):* Die Massenbeschwerdestufe (Bulk Complaint Level, BCL) der Nachricht. Eine höhere BCL gibt an, dass eine Massen-E-Mail-Nachricht mit höherer Wahrscheinlichkeit Beschwerden generiert (das natürliche Ergebnis, wenn es sich bei der E-Mail wahrscheinlich um Spam handelt).
@@ -131,7 +131,7 @@ Benutzern werden bereicherte Detonationsdetails für bekannte schädliche Anlage
 
 - *Datum der Erstellung der Domäne*: Gibt das Erstellungsdatum der sendenden Domäne an. Eine neu erstellte Domäne ist etwas, mit dem Sie vorsichtig sein können, wenn andere Signale auf ein verdächtiges Verhalten hinweisen.
 
-E-Mail-Authentifizierung: Von Microsoft 365 verwendete E-Mail-Authentifizierungsmethoden umfassen SPF, DKIM und DMARC.
+E-Mail-Authentifizierung: E-Mail-Authentifizierungsmethoden, die von Microsoft 365 verwendet werden, umfassen SPF, DKIM und DMARC.
 
 - Sender Policy Framework (**SPF**): Beschreibt die Ergebnisse für die SPF-Überprüfung für die Nachricht. Mögliche Werte sind:
   - Pass (IP-Adresse): Die SPF-Überprüfung auf die übergebene Nachricht und enthält die IP-Adresse des Absenders. Der Client kann E-Mails im Auftrag der Absenderdomäne senden oder weiterleiten.

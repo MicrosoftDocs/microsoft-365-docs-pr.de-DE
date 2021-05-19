@@ -15,12 +15,12 @@ ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: fc952ceec7d26d853e39cab0a803daace62a4767
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: b3460e2c9b6073c518bea46147be69d4b89cd96a
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345888"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538639"
 ---
 # <a name="enable-attack-surface-reduction-rules"></a>Aktivieren der Regeln zur Verringerung der Angriffsfläche
 
@@ -98,6 +98,86 @@ Die folgenden Verfahren zum Aktivieren von ASR-Regeln enthalten Anweisungen zum 
 
 4. Wählen **Sie in** den drei Konfigurationsfenstern OK aus. Wählen Sie dann **Erstellen** aus, wenn Sie eine neue Endpunktschutzdatei erstellen, oder **Speichern,** wenn Sie eine vorhandene Datei bearbeiten.
 
+## <a name="mem"></a>MEM
+
+Sie können den Microsoft Endpoint Manager (MEM) OMA-URI verwenden, um benutzerdefinierte ASR-Regeln zu konfigurieren. Im folgenden Verfahren wird die Regel Missbrauch von ausgebeuteten [gefährdeten signierten](attack-surface-reduction.md#block-abuse-of-exploited-vulnerable-signed-drivers) Treibern blockieren verwendet.
+
+1. Öffnen Sie Microsoft Endpoint Manager (MEM) Admin Center. Klicken Sie **im Menü Start** auf **Geräte,** wählen Sie **Konfigurationsprofil** aus, und klicken Sie dann auf **Profil erstellen.**
+
+   > [!div class="mx-imgBorder"]
+   > ![MEM-Profil erstellen](images/mem01-create-profile.png)
+
+2. Wählen **Sie in Erstellen eines** Profils in den folgenden beiden Dropdownlisten Folgendes aus:
+
+   - Wählen **Sie unter Plattform** Windows 10 und höher **aus.**
+   - Wählen **Sie im Profiltyp** Vorlagen **aus.**
+
+   Wählen **Sie Benutzerdefinierte**, und klicken Sie dann auf **Erstellen**.
+
+   > [!div class="mx-imgBorder"]
+   > ![Attribute des MEM-Regelprofils](images/mem02-profile-attributes.png)
+
+3. Das Benutzerdefinierte Vorlagentool wird zu Schritt **1 Grundlagen geöffnet.** Geben **Sie in 1 Grundlagen** unter **Name** einen Namen für Ihre Vorlage ein, und in **Beschreibung** können Sie eine Beschreibung eingeben (optional).
+
+   > [!div class="mx-imgBorder"]
+   > ![GRUNDLEGENDE ATTRIBUTE von MEM](images/mem03-1-basics.png)
+
+4. Klicken Sie auf **Weiter**. Schritt **2 Konfigurationseinstellungen** werden geöffnet. Klicken Sie für OMA-URI-Einstellungen auf **Hinzufügen**. Es werden nun zwei Optionen angezeigt: **Hinzufügen** und **Exportieren**.
+
+   > [!div class="mx-imgBorder"]
+   > ![Einstellungen für die MEM-Konfiguration](images/mem04-2-configuration-settings.png)
+
+5. Klicken Sie **erneut auf** Hinzufügen. Die **Add Row OMA-URI-Einstellungen** geöffnet. Gehen **Sie unter Zeile** hinzufügen wie folgt vor:
+
+   - Geben **Sie unter Name** einen Namen für die Regel ein.
+   - Geben **Sie unter Beschreibung** eine kurze Beschreibung ein.
+   - Geben **Sie in OMA-URI** den spezifischen OMA-URI-Link für die Regel ein, die Sie hinzufügen.
+   - Wählen **Sie unter Datentyp** die Option Zeichenfolge **aus.**
+   - Geben **Sie in Wert** den GUID-Wert, das Zeichen und den Statuswert ohne Leerzeichen ein ( \= _GUID=StateValue_). Where: {0 : Disable (Disable the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
+
+   > [!div class="mx-imgBorder"]
+   > ![MEM OMA-URI-Konfiguration](images/mem05-add-row-oma-uri.png)
+
+6. Klicken Sie auf **Speichern**. **Zeile hinzufügen** wird geschlossen. Klicken **Sie in Custom** auf **Weiter**. In Schritt **3 Bereichstags** sind Bereichstags optional. Führen Sie einen der folgenden Schritte aus:
+
+   - Klicken **Sie auf Bereichstags auswählen,** wählen Sie das Bereichstag (optional) aus, und klicken Sie dann auf **Weiter**.
+   - Oder klicken Sie auf **Weiter**
+
+7. Wählen Sie in Schritt **4 Zuordnungen** unter Eingeschlossene **Gruppen** – für die Gruppen, die diese Regel anwenden soll – aus den folgenden Optionen aus:
+
+   - **Hinzufügen von Gruppen**
+   - **Hinzufügen aller Benutzer**
+   - **Hinzufügen aller Geräte**
+
+   > [!div class="mx-imgBorder"]
+   > ![MEM-Zuordnungen](images/mem06-4-assignments.png)
+
+8. Wählen **Sie unter** Ausgeschlossene Gruppen alle Gruppen aus, die Sie aus dieser Regel ausschließen möchten, und klicken Sie dann auf **Weiter**.
+
+9. Gehen Sie in Schritt **5 Anwendbarkeitsregeln** für die folgenden Einstellungen wie folgt vor:
+
+   - Wählen **Sie in Regel** entweder Profil **zuweisen, wenn**, oder Profil nicht zuweisen **aus, wenn**
+   - Wählen **Sie in Property** die Eigenschaft aus, auf die diese Regel angewendet werden soll.
+   - Geben **Sie unter Wert** den entsprechenden Wert oder Wertbereich ein.
+
+   > [!div class="mx-imgBorder"]
+   > ![MEM-Anwendbarkeitsregeln](images/mem07-5-applicability-rules.png)
+
+10. Klicken Sie auf **Weiter**. Überprüfen Sie in Schritt **6 Überprüfen + Erstellen** die von Ihnen ausgewählten und eingegebenen Einstellungen und Informationen, und klicken Sie dann auf **Erstellen**.
+
+    > [!div class="mx-imgBorder"]
+    > ![MEM Überprüfen und Erstellen](images/mem08-6-review-create.png)
+
+    > [!NOTE]
+    > Regeln sind aktiv und innerhalb von Minuten live.
+
+>[!NOTE]
+> Konfliktbehandlung:
+> 
+> Wenn Sie einem Gerät zwei unterschiedliche AsR-Richtlinien zuweisen, werden Konflikte in Regeln behandelt, denen unterschiedliche Zustände zugewiesen sind, es gibt keine Konfliktverwaltung, und das Ergebnis ist ein Fehler.
+> 
+> Nicht in Konflikt stehende Regeln führen nicht zu einem Fehler, und die Regel wird ordnungsgemäß angewendet. Das Ergebnis ist, dass die erste Regel angewendet wird, und nachfolgende regeln, die keine Konflikte haben, werden mit der Richtlinie zusammengeführt.
+
 ## <a name="mdm"></a>MDM
 
 Verwenden Sie [den ./Vendor/MSFT/Policy/Config/Defender/AttackSurfaceReductionRules](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-attacksurfacereductionrules) Configuration Service Provider (CSP), um den Modus für jede Regel einzeln zu aktivieren und festlegen.
@@ -166,75 +246,6 @@ Beispiel:
 
    > [!WARNING]
    > Verwenden Sie keine Anführungszeichen, da sie weder für die Spalte **Wertname** noch für die **Spalte Wert unterstützt** werden.
-
-## <a name="microsoft-endpoint-manager-custom-procedure"></a>Microsoft Endpoint Manager benutzerdefinierte Prozedur
-
-Sie können ein Microsoft Endpoint Manager (MEM)Admin Center verwenden, um benutzerdefinierte ASR-Regeln zu konfigurieren.
-
-1. Öffnen Sie Microsoft Endpoint Manager (MEM) Admin Center. Klicken Sie **im Menü Start** auf **Geräte,** wählen Sie **Konfigurationsprofil** aus, und klicken Sie dann auf **Profil erstellen.**
-
-   ![MEM-Profil erstellen](images/mem01-create-profile.png)
-
-2. Wählen **Sie in Erstellen eines** Profils in den folgenden beiden Dropdownlisten Folgendes aus:
-
-   - Wählen **Sie unter Plattform** Windows 10 und höher **aus.**
-   - Wählen **Sie im Profiltyp** Vorlagen **aus.**
-
-   Wählen **Sie Benutzerdefinierte**, und klicken Sie dann auf **Erstellen**.
-
-   ![Attribute des MEM-Regelprofils](images/mem02-profile-attributes.png)
-
-3. Das Benutzerdefinierte Vorlagentool wird zu Schritt **1 Grundlagen geöffnet.** Geben **Sie in 1 Grundlagen** unter **Name** einen Namen für Ihre Vorlage ein, und in **Beschreibung** können Sie eine Beschreibung eingeben (optional ).
-
-   ![GRUNDLEGENDE ATTRIBUTE von MEM](images/mem03-1-basics.png)
-
-4. Klicken Sie auf **Weiter**. Schritt **2 Konfigurationseinstellungen** werden geöffnet. Klicken Sie für OMA-URI-Einstellungen auf **Hinzufügen**. Es werden nun zwei Optionen angezeigt: **Hinzufügen** und **Exportieren**.
-
-   ![Einstellungen für die MEM-Konfiguration](images/mem04-2-configuration-settings.png)
-
-5. Klicken Sie **erneut auf** Hinzufügen. Die **Add Row OMA-URI-Einstellungen** geöffnet. Gehen **Sie unter Zeile** hinzufügen wie folgt vor:
-
-   - Geben **Sie unter Name** einen Namen für die Regel ein.
-   - Geben **Sie unter Beschreibung** eine kurze Beschreibung ein.
-   - Geben **Sie in OMA-URI** den spezifischen OMA-URI-Link für die Regel ein, die Sie hinzufügen.
-   - Wählen **Sie unter Datentyp** die Option Zeichenfolge **aus.**
-   - Geben **Sie in Wert** den GUID-Wert, das Zeichen und den Statuswert ohne Leerzeichen ein ( \= _GUID=StateValue_). Where: {0 : Disable (Disable the ASR rule)}, {1 : Block (Enable the ASR rule)}, {2 : Audit (Evaluate how the ASR rule would impact your organization if enabled)}, {6 : Warn (Enable the ASR rule but allow the end-user to bypass the block)}
-
-   ![MEM OMA-URI-Konfiguration](images/mem05-add-row-oma-uri.png)
-
-6. Klicken Sie auf **Speichern**. **Zeile hinzufügen** wird geschlossen. Klicken **Sie in Custom** auf **Weiter**. In Schritt **3 Bereichstags** sind Bereichstags optional. Führen Sie einen der folgenden Schritte aus:
-
-   - Klicken **Sie auf Bereichstags auswählen,** wählen Sie das Bereichstag (optional) aus, und klicken Sie dann auf **Weiter**.
-   - Oder klicken Sie auf **Weiter**
-
-7. Wählen Sie in Schritt **4 Zuordnungen** unter Eingeschlossene **Gruppen** – für die Gruppen, die diese Regel anwenden soll – aus den folgenden Optionen aus:
-
-   - **Hinzufügen von Gruppen**
-   - **Hinzufügen aller Benutzer**
-   - **Hinzufügen aller Geräte**
-
-   ![MEM-Zuordnungen](images/mem06-4-assignments.png)
-
-8. Wählen **Sie unter** Ausgeschlossene Gruppen alle Gruppen aus, die Sie aus dieser Regel ausschließen möchten, und klicken Sie dann auf **Weiter**.
-
-9. Gehen Sie in Schritt **5 Anwendbarkeitsregeln** für die folgenden Einstellungen wie folgt vor:
-
-   - Wählen **Sie in Regel** entweder Profil **zuweisen, wenn**, oder Profil nicht zuweisen **aus, wenn**
-   - Wählen **Sie in Property** die Eigenschaft aus, auf die diese Regel angewendet werden soll.
-   - Geben **Sie unter Wert** den entsprechenden Wert oder Wertbereich ein.
-
-   ![MEM-Anwendbarkeitsregeln](images/mem07-5-applicability-rules.png)
-
-10. Klicken Sie auf **Weiter**. Überprüfen Sie in Schritt **6 Überprüfen + Erstellen** die von Ihnen ausgewählten und eingegebenen Einstellungen und Informationen, und klicken Sie dann auf **Erstellen**.
-
-   ![MEM Überprüfen und Erstellen](images/mem08-6-review-create.png)
-
->[!NOTE]
-> Regeln sind aktiv und innerhalb von Minuten live.
-
->[!NOTE]
-> Konfliktbehandlung: Wenn Sie einem Gerät zwei unterschiedliche ASR-Richtlinien zuweisen, sind die Behandlung von Konflikten Regeln, denen unterschiedliche Zustände zugewiesen sind, es gibt keine Konfliktverwaltung, und das Ergebnis ist ein Fehler.
-> Nicht in Konflikt stehende Regeln führen nicht zu einem Fehler, und die Regel wird ordnungsgemäß angewendet. Das Ergebnis ist, dass die erste Regel angewendet wird, und nachfolgende regeln, die keine Konflikte haben, werden mit der Richtlinie zusammengeführt.
 
 ## <a name="powershell"></a>PowerShell
 

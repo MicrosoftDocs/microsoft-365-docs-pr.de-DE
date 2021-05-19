@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über E-Mail- und Dateieigenschaften, die Sie mithilfe der eDiscovery-Suchtools in Microsoft 365.
-ms.openlocfilehash: cbd3969e9936df3dc82c364d804dbcd366b0e07a
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+ms.openlocfilehash: 390477012c6a2a57c5e305641ba5b79ff10f4ea7
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52326594"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538435"
 ---
 # <a name="keyword-queries-and-search-conditions-for-ediscovery"></a>Schlüsselwortabfragen und Suchbedingungen für eDiscovery
 
@@ -59,7 +59,7 @@ In der folgenden Tabelle sind **E-Mail-Nachrichteneigenschaften** aufgeführt, d
   
 | Eigenschaft | Beschreibung der Eigenschaft | Beispiele | Von den Beispielen zurückgegebene Suchergebnisse |
 |:-----|:-----|:-----|:-----|
-|AttachmentNames|Die Namen der an eine E-Mail angefügten Dateien.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> `attachmentnames:.pptx` |Nachrichten, an die eine Datei namens Jahresbericht.ppt angehängt ist. Im zweiten Beispiel werden, wenn Sie das Platzhalterzeichen verwenden, Nachrichten mit dem Wort "Jahresbericht" im Dateinamen eines Anhangs zurückgegeben. Im dritten Beispiel werden alle Anlagen mit der Dateierweiterung pptx zurückgegeben.|
+|AttachmentNames|Die Namen der an eine E-Mail angefügten Dateien.|`attachmentnames:annualreport.ppt`  <br/> `attachmentnames:annual*` <br/> `attachmentnames:.pptx` |Nachrichten, an die eine Datei namens Jahresbericht.ppt angehängt ist. Im zweiten Beispiel gibt die Verwendung des Platzhalterzeichens ( * ) Nachrichten mit dem Wort "annual" im Dateinamen einer Anlage zurück. Im dritten Beispiel werden alle Anlagen mit der Dateierweiterung pptx zurückgegeben.|
 |Bcc|Das Feld Bcc einer E-Mail-Nachricht. <sup>1</sup>|`bcc:pilarp@contoso.com`  <br/> `bcc:pilarp`  <br/> `bcc:"Pilar Pinilla"`|In allen Beispielen werden Nachrichten mit dem Namen "Pilar Pinilla" im Bcc-Feld zurückgegeben.|
 |Kategorie| Die Kategorien, nach denen gesucht wird. Kategorien können von Benutzern mithilfe von Outlook oder Outlook (früher als "Outlook Web App" bezeichnet) definiert werden. Die folgenden Werte sind möglich:  <br/><br/>  blau  <br/>  grün  <br/>  orange  <br/>  violett  <br/>  rot  <br/>  gelb|`category:"Red Category"`|Nachrichten, denen in den Quellpostfächern die rote Kategorie zugewiesen wurde.|
 |Cc|Das Cc-Feld einer E-Mail-Nachricht. <sup>1</sup>|`cc:pilarp@contoso.com`  <br/> `cc:"Pilar Pinilla"`|In beiden Beispielen werden Nachrichten mit Pilar Pinilla im Feld Cc angegeben.|
@@ -178,7 +178,7 @@ Boolesche Suchoperatoren wie **AND**, **OR** und **NOT** helfen Ihnen, präziser
 |AND|Wort1 AND Wort2|Gibt Elemente zurück, die alle angegebenen Schlüsselwörter oder Ausdrücke  `property:value` enthalten. Würde beispielsweise alle Nachrichten zurückgeben, die von Ann Beebe gesendet wurden, die das Wort  `from:"Ann Beebe" AND subject:northwind` "Northwind" in der Betreffzeile enthielten. <sup>2</sup>|
 |+|keyword1 + keyword2 + keyword3|Gibt die Elemente zurück, die  *entweder*  `keyword2` oder  `keyword3` *enthalten und*  , die ebenfalls  `keyword1` enthalten. Damit entspricht dieses Beispiel der Abfrage  `(keyword2 OR keyword3) AND keyword1`.  <br/> Die Abfrage (mit einem Leerzeichen hinter dem Symbol) ist nicht identisch mit der Verwendung des `keyword1 + keyword2` **+** **AND-Operators.** Diese Abfrage wäre gleichbedeutend mit  `"keyword1 + keyword2"` und gibt Elemente mit dem exakten Ausdruck  `"keyword1 + keyword2"` zurück.|
 |OR|Wort1 OR Wort2|Gibt Elemente zurück, die eines oder mehrere der angegebenen Schlüsselwörter oder Ausdrücke  `property:value` enthalten. <sup>2</sup>|
-|NOT|Wort1 NOT Wort2  <br/> NOT Von:"Ann Beebe"  <br/> NOT kind:im|Schließt Elemente aus, die durch ein Schlüsselwort oder einen Ausdruck angegeben  `property:value` werden. Im zweiten Beispiel werden von Ann Beebe gesendete Nachrichten ausgeschlossen. Im dritten Beispiel werden Chatunterhaltungen ausgeschlossen, z. B. Skype for Business-Unterhaltungen, die im Postfachordner Unterhaltungsverlauf gespeichert werden. <sup>2</sup>|
+|NOT|Wort1 NOT Wort2  <br/> NOT Von:"Ann Beebe"  <br/> NOT kind:im|Schließt Elemente aus, die durch ein Schlüsselwort oder einen Ausdruck angegeben  `property:value` werden. Im zweiten Beispiel werden von Ann Beebe gesendete Nachrichten ausgeschlossen. Im dritten Beispiel werden Chatunterhaltungen ausgeschlossen, z. B. Skype for Business Unterhaltungen, die im Postfachordner Unterhaltungsverlauf gespeichert werden. <sup>2</sup>|
 |-|Wort1 - Wort2|Identisch mit dem Operator **NOT**. Daher gibt diese Abfrage Elemente zurück, die Elemente enthalten und  `keyword1` ausschließen würden, die  `keyword2` enthalten.|
 |NEAR|Wort1 NEAR(n) Wort2|Gibt Elemente mit Wörtern zurück, die sich nah sind, wobei "n" der Anzahl der Wörter entspricht, die den Abstand zwischen den gesuchten Wörtern darstellen. Gibt beispielsweise jedes Element zurück, bei dem das Wort "worst" innerhalb von `best NEAR(5) worst` fünf Wörtern von "best" liegt. Wenn keine Anzahl angegeben wird, wird der Standardabstand von 8 Wörtern verwendet. <sup>2</sup>|
 |:|Eigenschaftswert|Der Doppelpunkt (:) in der  `property:value` Syntax gibt an, dass der Wert der gesuchten Eigenschaft den angegebenen Wert enthält. Gibt z.  `recipients:garthf@contoso.com` B. alle Nachrichten zurück, die an garthf@contoso.com.|
@@ -189,7 +189,7 @@ Boolesche Suchoperatoren wie **AND**, **OR** und **NOT** helfen Ihnen, präziser
 |\>=|Eigenschaft\>=Wert|Zeigt an, dass die Eigenschaft, nach der gesucht wird, größer gleich dem angegebenen Wert ist.<sup>1</sup>|
 |..|property:value1.. value2|Zeigt an, dass die Eigenschaft, nach der gesucht wird, größer gleich Wert1 und kleiner gleich Wert2 ist.<sup>1</sup>|
 |"  "|"fair Value"  <br/> Betreff:"Vierteljährliche Finanzdaten"|Verwenden Sie doppelte Anführungszeichen (" ") zum Suchen nach einem genauen Ausdruck oder Ausdruck in Stichwort- und  `property:value` Suchabfragen.|
-|\*|cat\*  <br/> Betreff:set\*|Präfix-Platzhaltersuchen (wobei das Sternchen am Ende eines Worts platziert wird) entsprechen null oder mehr Zeichen in Schlüsselwörtern oder  `property:value` Abfragen. Gibt z. B. Dokumente zurück, die den Wortsatz, die Einrichtung und die Einstellung (und andere Wörter, die mit  `title:set*` "set" beginnen) im Dokumenttitel enthalten.  <br/><br/> **Hinweis:** Sie können nur Präfix-Platzhaltersuchen verwenden. z. B. **cat _ oder \* *_* set \* *_. Suffixsuchen (_* \* Cat** ), Infixsuchen (**c \* t**) und Teilzeichenfolgensuchen (**\* Katze \***) werden nicht unterstützt.<br/><br/>Fügen Sie außerdem einen Zeitraum hinzu ( \. ) zu einem Präfix der Platzhaltersuche werden die zurückgegebenen Ergebnisse geändert. Der Grund dafür ist, dass ein Zeitraum als Stoppwort behandelt wird. Beispielsweise gibt die Suche nach **Katze _ und die Suche nach \* *_* cat unterschiedliche \*** Ergebnisse zurück. Es wird empfohlen, keinen Zeitraum in einer Präfix-Platzhaltersuche zu verwenden. |
+|\*|cat\*  <br/> Betreff:set\*|Präfixsuchen (auch *Präfixvergleich* genannt), bei denen ein Platzhalterzeichen ( * ) am Ende eines Worts in Schlüsselwörtern oder `property:value` Abfragen platziert wird. Bei Präfixsuchen gibt die Suche Ergebnisse mit Begriffen zurück, die das Wort enthalten, gefolgt von null oder mehr Zeichen. Gibt beispielsweise Dokumente zurück, die das Wort "set", "setup" und "setting" (und andere Wörter, die mit `title:set*` "set" beginnen) im Dokumenttitel enthalten.  <br/><br/> **Hinweis:** Sie können nur Präfixsuchen verwenden. z. B. **cat _ oder \* *_* set \* *_. Suffixsuchen (_* \* Cat** ), Infixsuchen (**c \* t**) und Teilzeichenfolgensuchen (**\* Katze \***) werden nicht unterstützt.<br/><br/>Fügen Sie außerdem einen Zeitraum hinzu ( \. ) in eine Präfixsuche ändert die zurückgegebenen Ergebnisse. Der Grund dafür ist, dass ein Zeitraum als Stoppwort behandelt wird. Beispielsweise gibt die Suche nach **Katze _ und die Suche nach \* *_* cat unterschiedliche \*** Ergebnisse zurück. Es wird empfohlen, keinen Zeitraum in einer Präfixsuche zu verwenden. |
 |(  )| (fair OR frei) AND (Von:contoso.com)  <br/> (IPO OR Initiale) AND (Aktien OR Anteile)  <br/> (Vierteljährliche Finanzdaten)|Mit Klammern werden Boolesche Ausdrücke,  `property:value`-Elemente und Schlüsselwörter gruppiert.  `(quarterly financials)` gibt z. B. Elemente zurück, die die Wörter "Vierteljährliche" und "Finanzdaten" enthalten.  |
 |||||
    
@@ -219,9 +219,9 @@ Erstellen Sie eine Bedingung mit allgemeinen Eigenschaften beim Durchsuchen von 
 | Bedingung | Beschreibung |
 |:-----|:-----|
 |Datum|Bei E-Mails: Das Datum, an dem die Nachricht vom Empfänger empfangen oder vom Absender gesendet wurde.   Für Dokumente das Datum, an dem ein Dokument zuletzt geändert wurde.|
-|Absender/Autor|Bei E-Mails: Die Person, die eine Nachricht gesendet hat.  Bei Dokumenten wird die im Feld Autor aus Office-Dokumenten zitierte Person verwendet. Sie können mehrere Namen eingeben, getrennt durch Kommas. Zwei oder mehr Werte werden logisch durch den **OR-Operator** verbunden.|
+|Absender/Autor|Bei E-Mails: Die Person, die eine Nachricht gesendet hat.  Bei Dokumenten wird die im Feld Autor aus den Dokumenten Office zitiert. Sie können mehrere Namen eingeben, getrennt durch Kommas. Zwei oder mehr Werte werden logisch durch den **OR-Operator** verbunden.|
 |Größe (in Bytes)|Für E-Mails und Dokumente die Größe des Elements (in Bytes).|
-|Betreff/Titel|Bei E-Mails: Der Text in der Betreffzeile einer Nachricht.   Bei Dokumenten der Titel des Dokuments. Wie bereits erläutert, handelt es sich bei der Title-Eigenschaft um Metadaten, die in Microsoft Office sind. Sie können den Namen von mehreren Betreff/Titeln eingeben, getrennt durch Kommas. Zwei oder mehr Werte werden logisch durch den **OR-Operator** verbunden.|
+|Betreff/Titel|Bei E-Mails: Der Text in der Betreffzeile einer Nachricht.   Bei Dokumenten der Titel des Dokuments. Wie bereits erläutert, handelt es sich bei der Title-Eigenschaft um Metadaten, die in Microsoft Office angegeben sind. Sie können den Namen von mehreren Betreff/Titeln eingeben, getrennt durch Kommas. Zwei oder mehr Werte werden logisch durch den **OR-Operator** verbunden.|
 |Aufbewahrungsbezeichnung|Für E-Mails und Dokumente Aufbewahrungsbezeichnungen, die Nachrichten und Dokumenten automatisch durch Richtlinien für automatische Bezeichnungen oder Aufbewahrungsbezeichnungen zugewiesen wurden, die von Benutzern manuell zugewiesen wurden. Aufbewahrungsbezeichnungen werden verwendet, um E-Mails und Dokumente für die Informationsverwaltung zu klassifizieren und Aufbewahrungsregeln basierend auf den von der Bezeichnung definierten Einstellungen zu erzwingen. Sie können einen Teil des Aufbewahrungsbezeichnungsnamens eingeben und einen Platzhalter verwenden oder den vollständigen Bezeichnungsnamen eingeben. Weitere Informationen zu Aufbewahrungsbezeichnungen finden Sie [unter Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen.](retention.md)|
 |||
   
@@ -233,7 +233,7 @@ Erstellen Sie eine Bedingung mithilfe von E-Mail-Eigenschaften beim Durchsuchen 
 |:-----|:-----|
 |Nachrichten art| Der Nachrichtentyp, nach dem gesucht wird. Dies ist die gleiche Eigenschaft wie die E-Mail-Eigenschaft „Art“. Mögliche Werte:  <br/><br/>  contacts  <br/>  docs  <br/>  email  <br/>  externaldata  <br/>  faxes  <br/>  im  <br/>  journals  <br/>  meetings  <br/>  microsoftteams  <br/>  notes  <br/>  posts  <br/>  rssfeeds  <br/>  tasks  <br/>  voicemail|
 |Teilnehmer|Alle Personenfelder in einer E-Mail-Nachricht. Diese Felder sind From, To, Cc und Bcc.|
-|Typ|Die Nachrichtenklasseneigenschaft für ein E-Mail-Element. Dies ist dieselbe Eigenschaft wie die ItemClass-E-Mail-Eigenschaft. Es ist auch eine mehrwertige Bedingung. Wenn Sie also mehrere Nachrichtenklassen auswählen möchten, halten Sie die STRG-TASTE gedrückt, und klicken Sie dann in der Dropdownliste auf zwei oder mehr Nachrichtenklassen, die Sie der Bedingung hinzufügen möchten.  Jede Nachrichtenklasse, die Sie in der Liste auswählen, wird durch den **OR-Operator** in der entsprechenden Suchabfrage logisch verbunden.  <br/> Eine Liste der Nachrichtenklassen (und der entsprechenden Nachrichtenklassen-ID), die von Exchange  verwendet werden und die Sie in der Liste Nachrichtenklassen auswählen können, finden Sie unter [Item Types and Message Classes](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).|
+|Typ|Die Nachrichtenklasseneigenschaft für ein E-Mail-Element. Dies ist dieselbe Eigenschaft wie die ItemClass-E-Mail-Eigenschaft. Es ist auch eine mehrwertige Bedingung. Wenn Sie also mehrere Nachrichtenklassen auswählen möchten, halten Sie die STRG-TASTE gedrückt, und klicken Sie dann in der Dropdownliste auf zwei oder mehr Nachrichtenklassen, die Sie der Bedingung hinzufügen möchten.  Jede Nachrichtenklasse, die Sie in der Liste auswählen, wird durch den **OR-Operator** in der entsprechenden Suchabfrage logisch verbunden.  <br/> Eine Liste der Nachrichtenklassen (und der entsprechenden Nachrichtenklassen-ID), die von Exchange verwendet  werden und die Sie in der Liste Nachrichtenklassen auswählen können, finden Sie unter [Item Types and Message Classes](/office/vba/outlook/Concepts/Forms/item-types-and-message-classes).|
 |Auszahlung|Das Datum, an dem eine E-Mail-Nachricht von einem Empfänger empfangen wurde. Dies ist die gleiche Eigenschaft wie die E-Mail-Eigenschaft „Empfangen“.|
 |Empfänger|Alle Empfängerfelder in einer E-Mail-Nachricht. Diese Felder sind To, Cc und Bcc.|
 |Absender|Der Absender einer E-Mail-Nachricht.|
@@ -244,12 +244,12 @@ Erstellen Sie eine Bedingung mithilfe von E-Mail-Eigenschaften beim Durchsuchen 
   
 ### <a name="conditions-for-document-properties"></a>Bedingungen für Dokumenteigenschaften
 
-Erstellen Sie eine Bedingung mithilfe von Dokumenteigenschaften, wenn Sie auf SharePoint- und OneDrive for #A0 nach Dokumenten suchen. In der folgenden Tabelle sind die Dokumenteigenschaften aufgeführt, die Sie für eine Bedingung verwenden können. Diese Eigenschaften sind eine Teilmenge der zuvor beschriebenen Websiteeigenschaften. Diese Beschreibungen werden zur Vereinfachung wiederholt.
+Erstellen Sie eine Bedingung mithilfe von Dokumenteigenschaften beim Suchen nach Dokumenten auf SharePoint und OneDrive for Business Websites. In der folgenden Tabelle sind die Dokumenteigenschaften aufgeführt, die Sie für eine Bedingung verwenden können. Diese Eigenschaften sind eine Teilmenge der zuvor beschriebenen Websiteeigenschaften. Diese Beschreibungen werden zur Vereinfachung wiederholt.
   
 | Bedingung | Beschreibung |
 |:-----|:-----|
-|Ursprung|Das Autorenfeld aus Office-Dokumenten, das beibehalten wird, wenn ein Dokument kopiert wird. Wenn beispielsweise ein Benutzer ein Dokument erstellt und die E-Mails an eine andere Person senden, die es dann in SharePoint hochlädt, behält das Dokument weiterhin den ursprünglichen Autor bei.|
-|Titel|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in Office-Dokumenten angegeben sind. Er ist anders als der Dateiname des Dokuments.|
+|Ursprung|Das Autorenfeld aus Office, das beibehalten wird, wenn ein Dokument kopiert wird. Wenn beispielsweise ein Benutzer ein Dokument erstellt und die E-Mails an eine andere Person senden, die es dann in SharePoint hochlädt, behält das Dokument weiterhin den ursprünglichen Autor bei.|
+|Titel|Der Titel des Dokuments. Die Title-Eigenschaft sind Metadaten, die in dokumenten Office werden. Er ist anders als der Dateiname des Dokuments.|
 |Erstellt|Das Datum, an dem ein Dokument erstellt wird.|
 |Zuletzt geändert|Das Datum, an dem ein Dokument zuletzt geändert wurde.|
 |Dateityp|Die Erweiterung einer Datei; Beispiel: docx, one, pptx oder xlsx. Dies ist dieselbe Eigenschaft wie die FileExtension-Websiteeigenschaft.|
@@ -461,12 +461,12 @@ Weitere Informationen zu Zeichenbeschränkungen finden Sie unter [eDiscovery sea
 
 - Wenn Sie nach einer Empfängereigenschaft wie An, Von, Cc oder Empfänger suchen, können Sie eine SMTP-Adresse, einen Alias oder einen Anzeigenamen verwenden, um einen Empfänger anzugeben. Sie können z. B. pilarp@contoso.com, pilarp oder "Pilar Pinilla" verwenden.
 
-- Sie können nur Präfix-Platzhaltersuchen verwenden. z. B. **cat _ oder \* *_* set \* *_. Suffixsuchen (_* \* Cat**), Infixsuchen (**c \* t**) und Teilzeichenfolgensuchen (**\* Katze \***) werden nicht unterstützt.
+- Sie können nur Präfixsuchen verwenden. z. B. **cat _ oder \* *_* set \* *_. Suffixsuchen (_* \* Cat**), Infixsuchen (**c \* t**) und Teilzeichenfolgensuchen (**\* Katze \***) werden nicht unterstützt.
 
 - Verwenden Sie beim Durchsuchen einer Eigenschaft doppelte Anführungszeichen (" "), wenn der Suchwert aus mehreren Wörtern besteht. Gibt beispielsweise Nachrichten zurück, die ein Budget in der Betreffzeile enthalten und an einer beliebigen Stelle in der Nachricht oder in einer der `subject:budget Q1` Nachrichteneigenschaften **Q1** enthalten.  Using `subject:"budget Q1"` gibt alle Nachrichten zurück, die budget **Q1** an einer beliebigen Stelle in der Betreffzeile enthalten.
 
 - Wenn Sie Inhalte mit einem bestimmten Eigenschaftswert in den Suchergebnissen ausschließen möchten, fügen Sie ein Minuszeichen (-) vor dem Namen der Eigenschaft hinzu. Schließt beispielsweise `-from:"Sara Davis"` alle nachrichten aus, die von Sara Davis gesendet werden.
 
-- Sie können Elemente basierend auf dem Nachrichtentyp exportieren. Verwenden Sie beispielsweise die Syntax, um #A0 und -Chats in Microsoft Teams zu `kind:im` exportieren. Wenn Sie nur E-Mail-Nachrichten zurückgeben möchten, verwenden Sie `kind:email` . Verwenden Sie zum Zurückgeben von Chats, Besprechungen und Anrufen in Microsoft Teams `kind:microsoftteams` .
+- Sie können Elemente basierend auf dem Nachrichtentyp exportieren. Verwenden Sie zum Exportieren Skype Unterhaltungen und Chats in Microsoft Teams die Syntax `kind:im` . Wenn Sie nur E-Mail-Nachrichten zurückgeben möchten, verwenden Sie `kind:email` . Verwenden Sie zum Zurückgeben von Chats, Besprechungen und Microsoft Teams `kind:microsoftteams` .
 
 - Wie bereits erläutert, müssen Sie beim Durchsuchen von Websites das Nachgestellte am Ende der URL hinzufügen, wenn Sie die Eigenschaft verwenden, um nur Elemente an einer angegebenen `/` `path` Website zurück zu geben. Wenn Sie die nachgestellten Elemente nicht enthalten, werden auch Elemente von einer Website mit einem ähnlichen Pfadnamen `/` zurückgegeben. Wenn Sie beispielsweise Elemente von Websites mit dem Namen verwenden `path:sites/HelloWorld` `sites/HelloWorld_East` oder auch zurückgegeben `sites/HelloWorld_West` würden. Wenn Sie Elemente nur von der HelloWorld-Website zurückgeben möchten, müssen Sie `path:sites/HelloWorld/` verwenden.

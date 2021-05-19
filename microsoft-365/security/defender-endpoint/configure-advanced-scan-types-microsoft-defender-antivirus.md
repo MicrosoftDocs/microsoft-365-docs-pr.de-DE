@@ -14,13 +14,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 1efa72d5b8d204b6aec1cef05fe3c8afe1ca82f7
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 05/06/2021
+ms.topic: how-to
+ms.openlocfilehash: 1942531b77df1c2bd9408815d3ad54b4b7211e8b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275304"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538399"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Konfigurieren der Scanoptionen von Microsoft Defender Antivirus
 
@@ -51,19 +52,19 @@ So konfigurieren Sie die in der folgenden Tabelle beschriebenen Gruppenrichtlini
 
 4. Doppelklicken Sie auf die **Richtlinieneinstellung,** wie in der folgenden Tabelle angegeben, und legen Sie die Option auf die gewünschte Konfiguration fest. Klicken **Sie auf OK,** und wiederholen Sie dies für alle anderen Einstellungen.
 
-Beschreibung | Speicherort und Einstellung | Standardeinstellung (wenn nicht konfiguriert) | `Set-MpPreference`PowerShell-Parameter oder WMI-Eigenschaft für `MSFT_MpPreference` Klasse
----|---|---|---
-E-Mail-Überprüfung Siehe [E-Mail-Überprüfungseinschränkungen](#ref1)| Überprüfen > Aktivieren der E-Mail-Überprüfung | Deaktiviert | `-DisableEmailScanning`
-Überprüfen [von Überprüfungspunkten](/windows/win32/fileio/reparse-points) | Überprüfen > Aktivieren der Überprüfung von Reparaturpunkts | Deaktiviert | Nicht verfügbar
-Überprüfen zugeordneter Netzwerklaufwerke | Scan > Ausführen der vollständigen Überprüfung auf zugeordneten Netzwerklaufwerken | Deaktiviert | `-DisableScanningMappedNetworkDrivesForFullScan`
- Überprüfen von Archivdateien (z. B. .zip oder .rar Dateien). Die [Ausschlussliste für Erweiterungen](configure-extension-file-exclusions-microsoft-defender-antivirus.md) hat Vorrang vor dieser Einstellung. | Scannen > Archivdateien | Aktiviert | `-DisableArchiveScanning`
-Überprüfen von Dateien im Netzwerk | Scannen > Netzwerkdateien | Deaktiviert | `-DisableScanningNetworkFiles`
-Scannen von verpackten ausführbaren Dateien | Scannen > von verpackten ausführbaren Dateien | Aktiviert | Nicht verfügbar
-Scannen von Wechseldatenträgern nur bei vollständigen Scans | Überprüfen > von Wechseldatenträgern | Deaktiviert | `-DisableRemovableDriveScanning`
-Angeben der Ebene der Unterordner in einem zu überprüfenden Archivordner | Scan > Die maximale Tiefe zum Scannen von Archivdateien angeben | 0 | Nicht verfügbar
- Geben Sie die maximale CPU-Auslastung (als Prozentsatz) während einer Überprüfung an. Hinweis: Dies ist keine harte Grenze, sondern eine Anleitung für das Scanmodul, dieses Maximum im Durchschnitt nicht zu überschreiten. | Scan > Geben Sie den maximalen Prozentsatz der CPU-Auslastung während eines Scans an. | 50 |  `-ScanAvgCPULoadFactor`
- Geben Sie die maximale Größe (in Kilobyte) von Archivdateien an, die gescannt werden sollen. Der **Standardwert, 0**, gilt ohne Beschränkung. | Scan > Geben Sie die maximale Größe der zu scannende Archivdateien an. | Keine Begrenzung | Nicht verfügbar
- Konfigurieren einer niedrigen CPU-Priorität für geplante Scans | Scan > Konfigurieren einer niedrigen CPU-Priorität für geplante Scans | Deaktiviert | Nicht verfügbar
+| Beschreibung | Speicherort und Einstellung | Standardeinstellung (wenn nicht konfiguriert) | `Set-MpPreference`PowerShell-Parameter oder WMI-Eigenschaft für `MSFT_MpPreference` Klasse |
+|---|---|---|---|
+| E-Mail-Überprüfung Siehe [E-Mail-Überprüfungseinschränkungen](#ref1)| Überprüfen > Aktivieren der E-Mail-Überprüfung | Deaktiviert | `-DisableEmailScanning` |
+|Überprüfen [von Überprüfungspunkten](/windows/win32/fileio/reparse-points) | Überprüfen > Aktivieren der Überprüfung von Reparaturpunkts | Deaktiviert | Nicht verfügbar |
+| Überprüfen zugeordneter Netzwerklaufwerke | Scan > Ausführen der vollständigen Überprüfung auf zugeordneten Netzwerklaufwerken | Deaktiviert | `-DisableScanningMappedNetworkDrivesForFullScan`|
+ Überprüfen von Archivdateien (z. B. .zip oder .rar Dateien). Die [Ausschlussliste für Erweiterungen](configure-extension-file-exclusions-microsoft-defender-antivirus.md) hat Vorrang vor dieser Einstellung. | Scannen > Archivdateien | Aktiviert | `-DisableArchiveScanning` |
+| Überprüfen von Dateien im Netzwerk | Scannen > Netzwerkdateien | Deaktiviert | `-DisableScanningNetworkFiles` |
+| Scannen von verpackten ausführbaren Dateien | Scannen > von verpackten ausführbaren Dateien | Aktiviert | Nicht verfügbar |
+| Scannen von Wechseldatenträgern nur bei vollständigen Scans | Überprüfen > von Wechseldatenträgern | Deaktiviert | `-DisableRemovableDriveScanning` |
+| Angeben der Ebene der Unterordner in einem zu überprüfenden Archivordner | Scan > Die maximale Tiefe zum Scannen von Archivdateien angeben | 0 | Nicht verfügbar |
+| Geben Sie die maximale CPU-Auslastung (als Prozentsatz) während einer Überprüfung an. Hinweis: Dies ist keine harte Grenze, sondern eine Anleitung für das Scanmodul, dieses Maximum im Durchschnitt nicht zu überschreiten. Manuelles Ausführen von Scans ignoriert diese Einstellung und wird ohne CPU-Grenzwerte ausgeführt. | Scan > Geben Sie den maximalen Prozentsatz der CPU-Auslastung während eines Scans an. | 50 |  `-ScanAvgCPULoadFactor` |
+| Geben Sie die maximale Größe (in Kilobyte) von Archivdateien an, die gescannt werden sollen. Der **Standardwert, 0**, gilt ohne Beschränkung. | Scan > Geben Sie die maximale Größe der zu scannende Archivdateien an. | Keine Begrenzung | Nicht verfügbar |
+| Konfigurieren einer niedrigen CPU-Priorität für geplante Scans | Scan > Konfigurieren einer niedrigen CPU-Priorität für geplante Scans | Deaktiviert | Nicht verfügbar |
  
 > [!NOTE]
 > Wenn der Echtzeitschutz aktiviert ist, werden Die Dateien überprüft, bevor auf sie zugegriffen und ausgeführt wird. Der Überprüfungsbereich umfasst alle Dateien, einschließlich Dateien auf bereitgestellten Wechselmedien, z. B. USB-Laufwerke. Wenn das Gerät, das die Überprüfung durchführen, über echtzeit- oder Zugriffsschutz verfügt, enthält die Überprüfung auch Netzwerkfreigaben.

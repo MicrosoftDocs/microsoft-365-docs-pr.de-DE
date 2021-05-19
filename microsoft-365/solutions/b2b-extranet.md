@@ -15,13 +15,14 @@ ms.collection:
 ms.custom: ''
 localization_priority: Normal
 f1.keywords: NOCSH
+recommendations: false
 description: Erfahren Sie, wie Sie eine B2B-Extranetwebsite oder ein Team mit verwalteten Gästen aus einer Partnerorganisation erstellen.
-ms.openlocfilehash: f9b8d9326f302233ed85c9d168fdf6f343dc6cbf
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d76951da5d8affa1dac08cbdc68a91329ca069ed
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904756"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538243"
 ---
 # <a name="create-a-b2b-extranet-with-managed-guests"></a>Erstellen eines B2B-Extranets mit verwalteten Gästen
 
