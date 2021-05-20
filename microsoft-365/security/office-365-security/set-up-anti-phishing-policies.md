@@ -17,12 +17,12 @@ ms.custom:
 description: Administratoren können sich über die Antiphishingrichtlinien informieren, die in Exchange Online Protection (EOP) und Microsoft Defender für Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 44472d49936f400ee16227f3f29141738ad28daa
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: d20d9c3839cf72d1e99a185186d0716d9a513c5f
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51571020"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537859"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Antiphishingrichtlinien in Microsoft 365
 
@@ -97,7 +97,12 @@ Spoofing ist, wenn die Absenderadresse in einer E-Mail-Nachricht (die Absenderad
 
 Die folgenden Spoofeinstellungen sind in Antiphishingrichtlinien in EOP und Microsoft Defender für Office 365:
 
-- **Anti-Spoofing-Schutz:** Aktiviert oder deaktiviert den Schutz vor Spoofing. Es wird empfohlen, die Option aktiviert zu lassen. Sie verwenden die **Spoof Intelligence-Richtlinie,** um bestimmte spoofierte interne und externe Absender zu erlauben oder zu blockieren. Weitere Informationen finden Sie unter [Konfigurieren der Spoofintelligenz in Microsoft 365](learn-about-spoof-intelligence.md).
+- **Aktivieren der Spoofintelligenz?**: Schaltet die Spoofintelligenz ein oder aus. Es wird empfohlen, dies aktiviert zu lassen.
+
+  Wenn spoof intelligence aktiviert ist, zeigt die **Spoof Intelligence Insight** gefälschte Absender an, die automatisch erkannt und durch Spoof intelligence zugelassen oder blockiert wurden. Sie können das Spoof Intelligence-Urteil manuell außer Kraft setzen, um die erkannten gefälschten Absender innerhalb der Einsicht zu erlauben oder zu blockieren. Wenn Sie dies jedoch tun, verschwindet der gefälschte Absender aus dem Einblick in spoof intelligence und wird jetzt nur noch auf der Registerkarte **Spoof** in der Liste mandantengeeignter Zulassen/Sperren angezeigt. Sie können auch manuell zulassende oder blockieren einträge für spoofed Absender in der Mandantenzu-/Sperrliste erstellen. Weitere Informationen finden Sie in den folgenden Themen:
+
+  - [Einblick in spoof intelligence in EOP](learn-about-spoof-intelligence.md)
+  - [Verwalten der Mandanten zulassen/Blockieren-Liste in EOP](tenant-allow-block-list.md)
 
   > [!NOTE]
   >
@@ -107,9 +112,11 @@ Die folgenden Spoofeinstellungen sind in Antiphishingrichtlinien in EOP und Micr
   >
   > - Durch deaktivieren des Antis spoofing-Schutzes wird nur impliziter Spoofingschutz von [zusammengesetzten Authentifizierungsüberprüfungen](email-validation-and-authentication.md#composite-authentication) deaktiviert. Wenn der Absender einen expliziten [DMARC](use-dmarc-to-validate-email.md) nicht überprüft, wo die Richtlinie auf Quarantäne oder Ablehnung festgelegt ist, wird die Nachricht weiterhin isoliert oder abgelehnt.
 
-  Für Nachrichten von blockierten spoofierten Absendern können Sie auch die Aktion für die Nachrichten angeben:
+- **Einstellungen für nicht authentifizierte Absender:** Weitere Informationen finden Sie im nächsten Abschnitt.
 
-  - **Nachricht in Junk-E-Mail-Ordner verschieben:** Dies ist der Standardwert. Die Nachricht wird an das Postfach zugestellt und in den Junk-E-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (standardmäßig aktiviert). Weitere Informationen finden Sie unter [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+- **Aktionen**: Für Nachrichten von blockierten spoofierten Absendern (automatisch durch Spoof Intelligence blockiert oder manuell in der Liste Mandanten zulassen/blockieren) können Sie auch die Aktion angeben, die für die Nachrichten ausgeführt werden soll:
+
+  - **Verschieben von Nachrichten in die Junk-E-Mail-Ordner** der Empfänger: Dies ist der Standardwert. Die Nachricht wird an das Postfach zugestellt und in den Junk-E-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (standardmäßig aktiviert). Weitere Informationen finden Sie unter [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
   - **Nachricht unter Quarantäne stellen:** Sendet die Nachricht an die Quarantäne anstatt an die beabsichtigten Empfänger. Informationen zur Quarantäne finden Sie in den folgenden Artikeln:
 
@@ -117,23 +124,20 @@ Die folgenden Spoofeinstellungen sind in Antiphishingrichtlinien in EOP und Micr
     - [Verwalten von isolierten Nachrichten und Dateien als Administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Suchen und Veröffentlichen von isolierten Nachrichten als Benutzer in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-- **Nicht authentifizierter Absender:** Weitere Informationen finden Sie im nächsten Abschnitt.
-
 ### <a name="unauthenticated-sender"></a>Nicht authentifizierter Absender
 
-Die Identifizierung nicht authentifizierter Absender ist Teil der [Spoofeinstellungen,](#spoof-settings) die in Antiphishingrichtlinien in EOP und Microsoft Defender für Office 365 wie im vorherigen Abschnitt beschrieben verfügbar sind.
+Einstellungen für nicht authentifizierte Absender sind Teil der [Spoofeinstellungen,](#spoof-settings) die in Antiphishingrichtlinien in EOP und Microsoft Defender für Office 365 wie im vorherigen Abschnitt beschrieben verfügbar sind.
 
-Die **Einstellung Nicht authentifizierter Absender** aktiviert oder deaktiviert die nicht authentifizierte Absenderidentifikation in Outlook. Insbesondere gilt:
+- Aktivieren Sie das Nicht authentifizierte Absender-Fragezeichen **(?)-Symbol?**: Wenn diese Einstellung aktiviert ist, wird dem Foto des Absenders im  Feld Von ein Fragezeichen hinzugefügt, wenn die Nachricht keine SPF- oder DKIM-Prüfungen besteht und die Nachricht keine DMARC- oder zusammengesetzte Authentifizierung [besteht.](email-validation-and-authentication.md#composite-authentication) Wenn diese Einstellung deaktiviert ist, wird das Fragezeichen nicht zum Foto des Absenders hinzugefügt.
 
-- Dem Foto des Absenders wird ein Fragezeichen (?) hinzugefügt, wenn die  Nachricht keine SPF- oder DKIM-Prüfungen besteht und die Nachricht keine DMARC- oder zusammengesetzte Authentifizierung [besteht.](email-validation-and-authentication.md#composite-authentication) Das Deaktivieren der nicht authentifizierten Absenderidentifikation verhindert, dass das Fragezeichen dem Foto des Absenders hinzugefügt wird.
+- Aktivieren Sie **das "via"-Tag?**: Wenn diese Einstellung aktiviert ist, wird das via-Tag (chris@contoso.com über fabrikam.com) im Feld Von hinzugefügt, wenn sich die Domäne in der Absenderadresse (der Nachrichtensender, der in E-Mail-Clients angezeigt wird) von der Domäne in der DKIM-Signatur oder der <sup>\*</sup> MAIL **FROM-Adresse** unterscheiden. <u></u> Weitere Informationen zu diesen Adressen finden Sie unter [Eine Übersicht über E-Mail-Nachrichtenstandards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
 
-- Das via-Tag (chris@contoso.com <u>über</u> fabrikam.com) wird hinzugefügt, wenn sich die Domäne in der Absenderadresse (der Nachrichtensender, der in E-Mail-Clients angezeigt wird) von der Domäne in der DKIM-Signatur oder der **MAIL FROM-Adresse** ab unterscheiden. Weitere Informationen zu diesen Adressen finden Sie unter [Eine Übersicht über E-Mail-Nachrichtenstandards](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards).
-
-  Das Deaktivieren der nicht authentifizierten Absenderidentifikation verhindert nicht, dass das via-Tag hinzugefügt wird, wenn sich die Domäne in der Absenderadresse von der Domäne in der DKIM-Signatur oder der MAIL FROM-Adresse unterscheiden.
+> [!NOTE]
+> Derzeit ist **die Einstellung "Über" aktivieren?** nicht in allen Organisationen verfügbar. Wenn Sie nicht über die Einstellung **"Über"-Tag aktivieren?** verfügen, werden das Fragezeichen und das via-Tag durch die Einstellung Nicht authentifizierte Absender-Fragezeichen **aktivieren (?)** in Ihrer Organisation gesteuert. 
 
 Um zu verhindern, dass Nachrichten von bestimmten Absendern das Fragezeichen oder das Tag hinzugefügt wird, haben Sie die folgenden Optionen:
 
-- Zulassen, dass der Absender in der Spoof Intelligence-Richtlinie spooft. Mit dieser Aktion wird verhindert, dass das via-Tag in Nachrichten des Absenders angezeigt wird, wenn die Identifikation nicht authentifizierter Absender deaktiviert ist. Anweisungen finden Sie unter [Configure spoof intelligence in Microsoft 365](learn-about-spoof-intelligence.md).
+- Lassen Sie den gefälschten Absender in der [Spoof Intelligence-Einsicht](learn-about-spoof-intelligence.md) oder manuell in der [Mandanten-Allow/Block List zu.](tenant-allow-block-list.md) Wenn sie den gefälschten Absender zulassen, wird verhindert, dass das via-Tag in Nachrichten des Absenders angezeigt wird, wenn die Identifikation nicht authentifizierter Absender deaktiviert ist.
 
 - [Konfigurieren der E-Mail-Authentifizierung](email-validation-and-authentication.md#configure-email-authentication-for-domains-you-own) für die Absenderdomäne.
   - Für das Fragezeichen auf dem Foto des Absenders sind SPF oder DKIM die wichtigsten.
@@ -159,7 +163,7 @@ Eine imitierte Domäne kann ansonsten als seriös gelten (registrierte Domäne, 
 
 Die folgenden Identitätswechseleinstellungen sind nur in Antiphishingrichtlinien in Microsoft Defender für Office 365:
 
-- **Zu schützende Benutzer:** Verhindert, dass die angegebenen internen oder externen E-Mail-Adressen als **Nachrichtensender imitiert werden.** Sie erhalten beispielsweise eine E-Mail-Nachricht vom Vice President Ihres Unternehmens, in der Sie aufgefordert werden, ihr einige interne Unternehmensinformationen zu senden. Würdest du es tun? Viele Personen würden die Antwort senden, ohne darüber nachzudenken.
+- **Benutzer zum Schützen hinzufügen:** Verhindert, dass die angegebenen internen oder externen E-Mail-Adressen als Nachrichtensender **imitiert werden.** Sie erhalten beispielsweise eine E-Mail-Nachricht vom Vice President Ihres Unternehmens, in der Sie aufgefordert werden, ihr einige interne Unternehmensinformationen zu senden. Würdest du es tun? Viele Personen würden die Antwort senden, ohne darüber nachzudenken.
 
   Sie können geschützte Benutzer verwenden, um interne und externe Absender-E-Mail-Adressen hinzuzufügen, um vor Identitätswechseln zu schützen. Diese Liste der Absender, die vor Benutzerwechsel geschützt sind, ist anders als die Liste der Empfänger, auf die  die Richtlinie angewendet [](#policy-settings) wird (alle Empfänger für die Standardrichtlinie; bestimmte Empfänger, wie in der Einstellung Angewendet auf im Abschnitt Richtlinieneinstellungen konfiguriert).  
 
@@ -173,7 +177,7 @@ Die folgenden Identitätswechseleinstellungen sind nur in Antiphishingrichtlinie
 
   Wenn Sie der Liste Benutzer  interne oder externe E-Mail-Adressen hinzufügen, um die Liste zu schützen, unterliegen Nachrichten von diesen Absendern Identitätswechselschutzprüfungen.  Die Nachricht wird auf  Identitätswechsel überprüft, wenn  die Nachricht an einen Empfänger gesendet wird, für den die Richtlinie gilt (alle Empfänger für die Standardrichtlinie; **Angewendet auf Empfänger** in benutzerdefinierten Richtlinien). Wenn der Identitätswechsel in der E-Mail-Adresse des Absenders erkannt wird, werden die Aktionen zum Identitätswechselschutz für Benutzer auf die Nachricht angewendet (was mit der Nachricht zu tun ist, ob Sicherheitstipps für imitierte Benutzer angezeigt werden sollen usw.).
 
-- **Zu schützende** Domänen: Verhindert, dass die angegebenen Domänen in der Domäne des Nachrichtensenders **als identitätswechselt werden.** Beispielsweise alle Domänen, die Sie besitzen ([akzeptierte](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)Domänen ) oder bestimmte Domänen (Domänen, die Sie besitzen oder Partnerdomänen). Diese Liste  der Absenderdomänen, die vor Identitätswechsel  geschützt sind, ist anders als die Liste der Empfänger, auf die die [](#policy-settings) Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; bestimmte Empfänger, wie in der Einstellung Angewendet auf im Abschnitt Richtlinieneinstellungen konfiguriert). 
+- **Zu schützende** Domänen hinzufügen: Verhindert, dass die angegebenen Domänen in der Domäne des Nachrichtensenders **als Identitätswechsel festgelegt werden.** Beispielsweise alle Domänen, die Sie besitzen ([akzeptierte](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)Domänen ) oder bestimmte Domänen (Domänen, die Sie besitzen oder Partnerdomänen). Diese Liste  der Absenderdomänen, die vor Identitätswechsel  geschützt sind, ist anders als die Liste der Empfänger, auf die die [](#policy-settings) Richtlinie angewendet wird (alle Empfänger für die Standardrichtlinie; bestimmte Empfänger, wie in der Einstellung Angewendet auf im Abschnitt Richtlinieneinstellungen konfiguriert). 
 
   > [!NOTE]
   > Die maximale Anzahl geschützter Domänen, die Sie in allen Antiphishingrichtlinien definieren können, beträgt 50.
@@ -182,16 +186,15 @@ Die folgenden Identitätswechseleinstellungen sind nur in Antiphishingrichtlinie
 
   Wenn Sie der  Liste Domänen zum Schutz domänen hinzufügen, unterliegen Nachrichten von **Absendern in** diesen Domänen Identitätswechselschutzprüfungen. Die Nachricht wird auf  Identitätswechsel überprüft, wenn  die Nachricht an einen Empfänger gesendet wird, für den die Richtlinie gilt (alle Empfänger für die Standardrichtlinie; **Angewendet auf Empfänger** in benutzerdefinierten Richtlinien). Wenn der Identitätswechsel in der Domäne des Absenders erkannt wird, werden die Identitätswechselschutzaktionen für Domänen auf die Nachricht angewendet (was mit der Nachricht zu tun ist, ob Sicherheitstipps für imitierte Benutzer angezeigt werden sollen usw.).
 
-- **Aktionen für geschützte Benutzer** oder Domänen: Wählen Sie die Aktion für eingehende Nachrichten aus, die Identitätswechselversuche gegen die geschützten Benutzer und geschützten Domänen in der Richtlinie enthalten. Sie können verschiedene Aktionen für den Identitätswechsel geschützter Benutzer und den Identitätswechsel geschützter Domänen angeben:
+- **Aktionen**: Wählen Sie die Aktion für eingehende Nachrichten aus, die Identitätswechselversuche für die geschützten Benutzer und geschützten Domänen in der Richtlinie enthalten. Sie können verschiedene Aktionen für den Identitätswechsel geschützter Benutzer und den Identitätswechsel geschützter Domänen angeben:
 
   - **Keine Aktion anwenden**
 
   - **Nachricht an andere E-Mail-Adressen umleiten:** Sendet die Nachricht an die angegebenen Empfänger anstatt an die beabsichtigten Empfänger.
 
-  - **Nachricht in Junk-E-Mail-Ordner** verschieben: Die Nachricht wird an das Postfach zugestellt und in den Junk-E-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (standardmäßig aktiviert). Weitere Informationen finden Sie unter [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Verschieben von Nachrichten in die Junk-E-Mail-Ordner** der Empfänger: Die Nachricht wird an das Postfach zugestellt und in den Junk-E-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (standardmäßig aktiviert). Weitere Informationen finden Sie unter [Configure junk email settings on Exchange Online mailboxes in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-    - **Nachricht unter Quarantäne stellen:** Sendet die Nachricht an die Quarantäne anstatt an die beabsichtigten Empfänger. Informationen zur Quarantäne finden Sie in den folgenden Artikeln:
-
+  - **Nachricht unter Quarantäne stellen:** Sendet die Nachricht an die Quarantäne anstatt an die beabsichtigten Empfänger. Informationen zur Quarantäne finden Sie in den folgenden Artikeln:
     - [Quarantäne in Microsoft 365](quarantine-email-messages.md)
     - [Verwalten von isolierten Nachrichten und Dateien als Administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Suchen und Veröffentlichen von isolierten Nachrichten als Benutzer in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
@@ -200,11 +203,10 @@ Die folgenden Identitätswechseleinstellungen sind nur in Antiphishingrichtlinie
 
   - **Löschen Sie die Nachricht, bevor sie zugestellt wird:** Löscht automatisch die gesamte Nachricht, einschließlich aller Anlagen.
 
-- **Sicherheitstipps:** Aktiviert oder deaktiviert die folgenden Identitätswechselsicherheitstipps, die Nachrichten angezeigt werden, bei deren Identitätswechselprüfungen fehlschlagen:
-
-  - **Imitierte Benutzer:** Die From-Adresse enthält einen geschützten Benutzer.
-  - **Identitätswechseldomänen:** Die From-Adresse enthält eine geschützte Domäne.
-  - **Ungewöhnliche Zeichen:** Die From-Adresse enthält ungewöhnliche Zeichensätze (z. B. mathematische Symbole und Text oder eine Kombination aus Groß- und Kleinbuchstaben) in einem geschützten Absender oder einer geschützten Domäne.
+- **Sicherheitstipps zum Identitätswechsel aktivieren:** Aktivieren oder deaktivieren Sie die folgenden Tipps zur Identitätswechselsicherheit, bei der Nachrichten angezeigt werden, bei deren Identitätswechselprüfungen fehlschlagen:
+  - **Tipp für imitierte Benutzer anzeigen:** Die From-Adresse enthält einen geschützten Benutzer.
+  - **Tipp für identitätswechselte Domänen anzeigen:** Die From-Adresse enthält eine geschützte Domäne.
+  - **Tipp für ungewöhnliche** Zeichen anzeigen: Die From-Adresse enthält ungewöhnliche Zeichensätze (z. B. mathematische Symbole und Text oder eine Kombination aus Groß- und Kleinbuchstaben) in einem geschützten Absender oder einer geschützten Domäne.
 
   > [!IMPORTANT]
   >
@@ -222,12 +224,12 @@ Die folgenden Identitätswechseleinstellungen sind nur in Antiphishingrichtlinie
 
   - **Keine Aktion** anwenden: Beachten Sie, dass dieser Wert dasselbe Ergebnis hat wie das Aktivieren der Postfachintelligenz, aber das Deaktivieren des Identitätswechselschutzes für  Postfachintelligenz. 
   - **Umleiten von Nachrichten an andere E-Mail-Adressen**
-  - **Nachricht in Junk-E-Mail-Ordner verschieben**
+  - **Verschieben von Nachrichten in die Junk-E-Mail-Ordner der Empfänger**
   - **Isolieren der Nachricht**
   - **Senden der Nachricht und Hinzufügen weiterer Adressen zur Bcc-Zeile**
   - **Löschen der Nachricht, bevor sie zugestellt wird**
 
-- **Vertrauenswürdige Absender und Domänen:** Ausnahmen von den Identitätswechselschutzeinstellungen. Nachrichten von den angegebenen Absender- und Absenderdomänen werden von der Richtlinie nie als identitätswechselbasierte Angriffe klassifiziert. Anders ausgedrückt: Die Aktion für geschützte Absender, geschützte Domänen oder Postfachintelligenzschutz wird nicht auf diese vertrauenswürdigen Absender oder Absenderdomänen angewendet. Die maximale Grenze für diese Listen beträgt ca. 1.000 Einträge.
+- **Vertrauenswürdige Absender und Domänen hinzufügen:** Ausnahmen zu den Identitätswechselschutzeinstellungen. Nachrichten von den angegebenen Absender- und Absenderdomänen werden von der Richtlinie nie als identitätswechselbasierte Angriffe klassifiziert. Anders ausgedrückt: Die Aktion für geschützte Absender, geschützte Domänen oder Postfachintelligenzschutz wird nicht auf diese vertrauenswürdigen Absender oder Absenderdomänen angewendet. Die maximale Grenze für diese Listen beträgt ca. 1.000 Einträge.
 
 ### <a name="advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Erweiterte Phishingschwellenwerte in Antiphishingrichtlinien in Microsoft Defender for Office 365
 

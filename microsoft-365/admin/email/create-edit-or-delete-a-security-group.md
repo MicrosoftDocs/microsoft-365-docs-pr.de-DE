@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 55c96b32-e086-4c9e-948b-a018b44510cb
 description: Erfahren Sie, wie Sie eine Sicherheitsgruppe erstellen, bearbeiten oder löschen.
-ms.openlocfilehash: 03e391727f9a61b1fc8e819e92d5a119017c38e0
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 8f76b5fa803ea43e53e89cf6479eb7572a2857c2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579338"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537595"
 ---
 # <a name="create-edit-or-delete-a-security-group-in-the-microsoft-365-admin-center"></a>Erstellen, Bearbeiten oder Löschen einer Sicherheitsgruppe im Microsoft 365 Admin Center
 
@@ -49,8 +49,6 @@ Darüber hinaus gibt es [Gruppen in Exchange Online und SharePoint Online](#grou
 4. Führen Sie die Schritte aus, um die Erstellung der Gruppe zu abschließen. 
  
 ### <a name="add-members-to-a-security-group"></a>Hinzufügen von Mitgliedern zu einer Sicherheitsgruppe
-
-::: moniker range="o365-worldwide"
     
 1. Wählen Sie auf der  Seite Gruppen den  Namen der Sicherheitsgruppe aus, und wählen Sie auf der Registerkarte Mitglieder die Option **Alle anzeigen und Mitglieder verwalten aus.** 
     
@@ -58,65 +56,13 @@ Darüber hinaus gibt es [Gruppen in Exchange Online und SharePoint Online](#grou
     
     Um Mitglieder zu entfernen, wählen Sie das X neben ihrem Namen aus. 
   
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wählen Sie auf der  Seite Gruppen den Namen der Sicherheitsgruppe aus, und wählen Sie dann **Bearbeiten** neben **Mitglieder aus.** 
-    
-2. Wählen Sie im  Gruppenbereich Mitglieder hinzufügen aus, und wählen Sie die Person aus  der Liste aus, oder geben Sie den Namen der Person ein, die Sie hinzufügen möchten, in das Feld Suche, und wählen Sie dann **Speichern aus.**
-    
-    Um Mitglieder zu entfernen, wählen Sie das X neben ihrem Namen aus. 
-  
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-
-1. Wählen Sie auf der  Seite Gruppen den Namen der Sicherheitsgruppe aus, und wählen Sie dann **Bearbeiten** neben **Mitglieder aus.** 
-    
-2. Wählen Sie im  Gruppenbereich Mitglieder hinzufügen aus, und wählen Sie die Person aus  der Liste aus, oder geben Sie den Namen der Person ein, die Sie hinzufügen möchten, in das Feld Suche, und wählen Sie dann **Speichern aus.**
-    
-    Um Mitglieder zu entfernen, wählen Sie das X neben ihrem Namen aus.
-
-::: moniker-end
-
 ### <a name="edit-a-security-group"></a>Bearbeiten einer Sicherheitsgruppe
-
-::: moniker range="o365-worldwide"
 
 1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.
   
 2. Wählen Sie **auf** der Seite Gruppen den Namen der Gruppe aus. 
     
 3. Wählen Sie im Einstellungsbereich die Registerkarte **Allgemein** oder die Registerkarte **Mitglieder** aus, um Gruppendetails oder Mitglieder zu bearbeiten.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Gruppen** \> **Gruppen**.  
-  
-2. Wählen Sie **auf** der Seite Gruppen den Namen der Gruppe aus. 
-    
-3. Wählen Sie im Bereich Sicherheitsgruppe die Option **Bearbeiten** neben der Registerkarte **Name** oder **Mitglieder** aus, um Gruppendetails oder Mitglieder zu bearbeiten.
-    
-4. Nachdem Sie Änderungen vorgenommen haben, wählen Sie **Speichern** \> **Schließen aus.**
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Gruppen** \> **Gruppen**.
-  
-2. Wählen Sie **auf** der Seite Gruppen den Namen der Gruppe aus. 
-    
-3. Wählen Sie im Bereich Sicherheitsgruppe die Option **Bearbeiten** neben der Registerkarte **Name** oder **Mitglieder** aus, um Gruppendetails oder Mitglieder zu bearbeiten.
-    
-4. Nachdem Sie Änderungen vorgenommen haben, wählen Sie **Speichern** > **Schließen aus.**
-
-::: moniker-end
-
 
 ### <a name="delete-a-security-group"></a>Löschen einer Sicherheitsgruppe
 

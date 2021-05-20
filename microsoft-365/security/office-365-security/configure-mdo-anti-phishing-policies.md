@@ -15,12 +15,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie die erweiterten Antiphishingrichtlinien erstellen, ändern und löschen, die in Organisationen mit Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c8d61aee9afb332a8426890560ad221a9c87c7d
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 3660b9574f4faf4ee9c0602ac23b36f8634650dc
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218819"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537907"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365
 
@@ -61,7 +61,7 @@ Um die Effektivität des Antiphishingschutzes in Microsoft Defender for Office 3
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur **ATP-Antiphishingseite zu** wechseln, verwenden Sie <https://protection.office.com/antiphishing> .
+- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **"Antiphishing" zu** wechseln, verwenden Sie <https://protection.office.com/antiphishing> .
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -89,7 +89,7 @@ Beim Erstellen einer benutzerdefinierten Antiphishingrichtlinie im Security & Co
 
 Wenn Sie eine Antiphishingrichtlinie erstellen, können Sie nur den Richtliniennamen, die Beschreibung und den Empfängerfilter angeben, der identifiziert, auf wen die Richtlinie angewendet wird. Nachdem Sie die Richtlinie erstellt haben, können Sie die Richtlinie ändern, um die Standardmäßigen Antiphishingeinstellungen zu ändern oder zu überprüfen.
 
-1. Wechseln Sie im Security & Compliance Center zu **Bedrohungsverwaltungsrichtlinie** \>  \> **ATP-Antiphishing.**
+1. Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **Antiphishing**.
 
 2. Klicken Sie **auf der Seite Antiphishing** auf **Erstellen**.
 
@@ -137,7 +137,7 @@ Nachdem Sie die Antiphishingrichtlinie mit diesen allgemeinen Einstellungen erst
 
 Verwenden Sie die folgenden Verfahren, um Antiphishingrichtlinien zu ändern: eine neue Richtlinie, die Sie erstellt haben, oder vorhandene Richtlinien, die Sie bereits angepasst haben.
 
-1. Wenn Sie noch nicht vorhanden sind, öffnen Sie das Security & Compliance Center, und wechseln Sie zu **Bedrohungsverwaltungsrichtlinie** \>  \> **ATP-Antiphishing**.
+1. Wenn Sie noch nicht vorhanden sind, öffnen Sie das Security & Compliance Center, und wechseln Sie **zu** Richtlinie zur \>  \> **Bedrohungsverwaltung Antiphishing**.
 
 2. Wählen Sie die benutzerdefinierte Antiphishingrichtlinie aus, die Sie ändern möchten. Wenn sie bereits ausgewählt ist, deaktivieren Sie sie, und wählen Sie sie erneut aus.
 
@@ -156,9 +156,9 @@ Verwenden Sie die folgenden Verfahren, um Antiphishingrichtlinien zu ändern: ei
 
    Wenn Sie fertig sind, klicken Sie auf **einer beliebigen** Seite auf Speichern.
 
-5. **Identitätswechsel**: Klicken Sie auf **Bearbeiten,** um die geschützten Absender und geschützten Domänen in der Richtlinie zu ändern. Diese Einstellungen sind eine Bedingung für die Richtlinie, die spoofierte Absender identifiziert, nach der (einzeln oder nach Domäne) in der Absenderadresse eingehender Nachrichten ermittelt werden soll. Weitere Informationen finden Sie unter [Identitätswechseleinstellungen in Antiphishingrichtlinien in Microsoft Defender für Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+5. **Identitätswechsel**: Klicken Sie auf **Bearbeiten,** um die geschützten Absender und geschützten Absenderdomänen in der Richtlinie zu ändern. Diese Einstellungen sind eine Bedingung für die Richtlinie, die bestimmte Absender identifiziert, die in der Absenderadresse eingehender Nachrichten (einzeln oder nach Domäne) suchen müssen. Weitere Informationen finden Sie unter [Identitätswechseleinstellungen in Antiphishingrichtlinien in Microsoft Defender für Office 365](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
-   - **Benutzer zum Schützen hinzufügen:** Der Standardwert ist **Aus**. Um es zu aktivieren, verschieben Sie den Umschalter auf **Ein**, und klicken Sie dann auf die schaltfläche Benutzer **hinzufügen,** die angezeigt wird.
+   - **Benutzer zum Schützen hinzufügen:** Der Standardwert ist **Off** ![ Toggle Off ](../../media/scc-toggle-off.png) . Um es zu aktivieren, verschieben Sie die Umschaltfläche auf **Ein** ![ Umschaltfläche ein, und klicken Sie dann auf die angezeigte Schaltfläche Benutzer ](../../media/scc-toggle-on.png)  hinzufügen.
 
      Konfigurieren Sie **im angezeigten** Flyout Benutzer hinzufügen die folgenden Werte:
 
@@ -182,43 +182,48 @@ Verwenden Sie die folgenden Verfahren, um Antiphishingrichtlinien zu ändern: ei
 
    - **Zu schützende Domänen hinzufügen:** Konfigurieren Sie eine oder beide der folgenden Einstellungen:
 
-     - **Schließen Sie automatisch die Domänen ein, die** ich selbst bin: Der Standardwert ist **Off**. Um es zu aktivieren, verschieben Sie den Umschalter auf **Ein**.
-     - **Benutzerdefinierte Domänen hinzufügen:** Der Standardwert ist **Aus**. Verschieben Sie zum Aktivieren den Umschalter auf  **Ein**, und geben Sie im Feld Domänen hinzufügen den Domänennamen ein (z. B. contoso.com), drücken Sie die EINGABETASTE, und wiederholen Sie den Vorgang bei Bedarf.
+     - **Schließen Sie automatisch die Domänen ein, die** ich selbst habe: Der Standardwert ist **Off** ![ Toggle Off ](../../media/scc-toggle-off.png) . Um es zu aktivieren, verschieben Sie den Umschalter auf **On** ![ Toggle On ](../../media/scc-toggle-on.png) .
+
+       Wenn Sie die Domänen anzeigen möchten, die Sie besitzen, wählen **Sie Domänen anzeigen aus, die ich besitzt.**
+
+     - **Benutzerdefinierte Domänen hinzufügen:** Der Standardwert ist **Off** ![ Toggle Off ](../../media/scc-toggle-off.png) . Um es zu aktivieren, setzen  Sie den Umschalter auf Ein Umschalten ein, und geben Sie im Feld Domänen hinzufügen den Domänennamen ein (z. B. contoso.com), drücken Sie die EINGABETASTE, und wiederholen Sie dies bei ![ ](../../media/scc-toggle-on.png) Bedarf. 
 
      > [!NOTE]
      > In allen Antiphishingrichtlinien können maximal 50 Domänen enthalten sein.
 
    - **Aktionen**: Klicken Sie auf **Bearbeiten**
 
-     - **Wenn E-Mails** von einem imitierten Benutzer gesendet werden: Konfigurieren Sie eine der folgenden Aktionen für Nachrichten, bei denen der gefälschte Absender einer der geschützten Benutzer ist, die Sie unter Benutzer zum Schützen hinzufügen angegeben **haben:**
+     - **Wenn E-Mails** von einem imitierten Benutzer gesendet werden: Konfigurieren Sie eine der folgenden Aktionen für Nachrichten, bei denen der Absender einer der geschützten Benutzer ist, die Sie unter Benutzer zum Schützen hinzufügen **angegeben haben:**
 
        - **Keine Aktion anwenden**
        - **Umleiten von Nachrichten an andere E-Mail-Adressen**
-       - **Nachricht in Junk-E-Mail-Ordner verschieben**
+       - **Verschieben von Nachrichten in die Junk-E-Mail-Ordner der Empfänger**
        - **Isolieren der Nachricht**
        - **Senden der Nachricht und Hinzufügen weiterer Adressen zur Bcc-Zeile**
        - **Löschen der Nachricht, bevor sie zugestellt wird**
 
-     - **Wenn E-Mails** von einer imitierten Domäne gesendet werden: Konfigurieren Sie eine der folgenden Aktionen für Nachrichten, bei denen sich der gefälschte Absender in einer der geschützten Domänen befindet, die Sie unter Hinzufügen von Domänen zum Schützen angegeben **haben:**
+     - **Wenn E-Mails** von einer identitätswechselten Domäne gesendet werden: Konfigurieren Sie eine der folgenden Aktionen für Nachrichten, bei denen sich die Domäne des Absenders in einer der geschützten Domänen befindet, die Sie unter Hinzufügen von Domänen zum Schützen angegeben **haben:**
 
        - **Keine Aktion anwenden**
        - **Umleiten von Nachrichten an andere E-Mail-Adressen**
-       - **Nachricht in Junk-E-Mail-Ordner verschieben**
+       - **Verschieben von Nachrichten in die Junk-E-Mail-Ordner der Empfänger**
        - **Isolieren der Nachricht**
        - **Senden der Nachricht und Hinzufügen weiterer Adressen zur Bcc-Zeile**
        - **Löschen der Nachricht, bevor sie zugestellt wird**
 
    - Klicken **Sie auf Identitätswechselsicherheitstipps aktivieren,** und konfigurieren Sie eine der folgenden Einstellungen:
 
-     - **Tipp für imitierte Benutzer anzeigen:** Der Standardwert ist **Aus**. Um es zu aktivieren, verschieben Sie den Umschalter auf **Ein**.
-     - **Tipp für identitätswechselte Domänen anzeigen:** Der Standardwert ist **Aus**. Um es zu aktivieren, verschieben Sie den Umschalter auf **Ein**.
-     - **Tipp für ungewöhnliche Zeichen anzeigen:** Der Standardwert ist **Off**. Um es zu aktivieren, verschieben Sie den Umschalter auf **Ein**.
+     - **Tipps für imitierte Benutzer anzeigen**
+     - **Tipps für identitätswechselte Domänen anzeigen**
+     - **Tipps für ungewöhnliche Zeichen anzeigen**
+
+     Der Standardwert für alle Tipps ist **Off** ![ Toggle Off ](../../media/scc-toggle-off.png) . Um diese zu aktivieren, verschieben Sie den Umschalter auf **On** [Toggle On](../../media/scc-toggle-on.png).
 
      Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
    - **Postfachintelligenz**:
 
-     - **Postfachintelligenz aktivieren?**: Der Standardwert ist **On**. Um es zu deaktivieren, verschieben Sie den Umschalter auf **Aus**.
+     - **Postfachintelligenz aktivieren?**: Der Standardwert ist **On** [Toggle On](../../media/scc-toggle-on.png). Um es zu deaktivieren, verschieben Sie den Umschalter auf **Off** ![ Toggle Off ](../../media/scc-toggle-off.png) .
 
      - **Aktivieren Despersonationschutzes für Postfachintelligenz?**: Diese Einstellung ist nur verfügbar, wenn **Postfachintelligenz aktivieren?** ist **On**. Aktivieren Sie diese Einstellung, um die Aktion für Nachrichten für Identitätswechselerkennungen aus Ergebnissen der Postfachintelligenz anzugeben.
 
@@ -226,7 +231,7 @@ Verwenden Sie die folgenden Verfahren, um Antiphishingrichtlinien zu ändern: ei
 
        - **Keine Aktion** anwenden: Beachten Sie, dass dieser Wert das gleiche Ergebnis hat wie das Aktivieren von Postfachintelligenz **aktivieren?** aber deaktivieren Aktivieren des Postfachintelligenz-basierten **Identitätswechselschutzes?**.
        - **Umleiten von Nachrichten an andere E-Mail-Adressen**
-       - **Nachricht in Junk-E-Mail-Ordner verschieben**
+       - **Verschieben von Nachrichten in die Junk-E-Mail-Ordner der Empfänger**
        - **Isolieren der Nachricht**
        - **Senden der Nachricht und Hinzufügen weiterer Adressen zur Bcc-Zeile**
        - **Löschen der Nachricht, bevor sie zugestellt wird**
@@ -253,18 +258,20 @@ Verwenden Sie die folgenden Verfahren, um Antiphishingrichtlinien zu ändern: ei
 
    Wenn Sie fertig sind, klicken Sie auf **einer beliebigen** Seite auf Speichern.
 
-6. **Spoof**:  Klicken Sie auf Bearbeiten, um die Spoofintelligenz ein- oder auszuschalten, die Identifikation nicht authentifizierter Absender in Outlook ein- oder auszuschalten und die Aktion so zu konfigurieren, dass sie auf Nachrichten von blockierten spoofierten Absendern angewendet wird. Weitere Informationen finden Sie unter [Spoofeinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md#spoof-settings).
+6. **Spoof**:  Klicken Sie auf Bearbeiten, um die Spoofintelligenz ein- oder auszuschalten, die Identifikation nicht authentifizierter Absender in Outlook ein- oder auszuschalten und die Aktion so zu konfigurieren, dass sie auf Nachrichten von blockierten spoofierten Absendern angewendet wird. Weitere Informationen zu diesen Einstellungen finden Sie unter [Spoofeinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md#spoof-settings).
 
    Beachten Sie, dass diese Einstellungen auch in Antiphishingrichtlinien in EOP verfügbar sind.
 
-   - **Spoofing-Filtereinstellungen:** Der Standardwert ist **Ein**, und es wird empfohlen, ihn zu be lassen. Um es zu deaktivieren, verschieben Sie den Umschalter auf **Aus**. Weitere Informationen finden Sie unter [Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md).
+   - **Spoofing-Filtereinstellungen:** Verwenden Sie die Einstellung **Spoofintelligenz aktivieren?** zum Aktivieren oder Deaktivieren der Spoofintelligenz. Der Standardwert ist **On**, und es wird empfohlen, ihn zu be lassen. Um es zu deaktivieren, verschieben Sie den Umschalter auf **Off** ![ Toggle Off ](../../media/scc-toggle-off.png) .
 
      > [!NOTE]
      > Sie müssen den Schutz vor Spoofing nicht deaktivieren, wenn Ihr #A0 nicht auf Microsoft 365. Stattdessen aktivieren Sie erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-   - **Feature Nicht authentifizierter Absender aktivieren:** Der Standardwert ist **Ein**. Um es zu deaktivieren, verschieben Sie den Umschalter auf **Aus**.
+   - **Einstellungen für nicht authentifizierte Absender:** Sie können die folgenden Einstellungen konfigurieren:
+     - Aktivieren Sie das Nicht authentifizierte Absender-Fragezeichen **(?)-Symbol?**: Fügen Sie dem Foto des Absenders im Feld Von in  Outlook ein Fragezeichen hinzu, wenn die Nachricht keine SPF- oder DKIM-Überprüfungen bestehen und die Nachricht keine DMARC- oder zusammengesetzte Authentifizierung über über- oder über die Nachricht [verfügt.](email-validation-and-authentication.md#composite-authentication) Der Standardwert ist **Aktiviert**. Um es zu deaktivieren, verschieben Sie den Umschalter auf **Off** ![ Toggle Off ](../../media/scc-toggle-off.png) .
+     - **Aktivieren Sie "via"-Tag?**: Fügen Sie das via-Tag (chris@contoso.com über fabrikam.com) hinzu, wenn sich die E-Mail-Adresse im Feld Von von von der Domäne in der DKIM-Signatur oder der **MAIL FROM-Adresse** unterscheiden. Der Standardwert ist **Aktiviert**. Um es zu deaktivieren, verschieben Sie den Umschalter auf **Off** ![ Toggle Off ](../../media/scc-toggle-off.png) .
 
-   - **Aktionen**: Geben Sie die Aktion für Nachrichten an, bei der spoof intelligence fehlschlagen:
+   - **Aktionen**: Geben Sie die Aktion für Nachrichten von blockierten spoofierten Absendern an:
 
      **Wenn E-Mails von einer Person** gesendet werden, die Ihre Domäne nicht spoofen darf:
 
@@ -275,8 +282,9 @@ Verwenden Sie die folgenden Verfahren, um Antiphishingrichtlinien zu ändern: ei
 
      - Sie können in jedem **Abschnitt** auf Bearbeiten klicken, um zur relevanten Seite zurück zu springen.
      - Sie können die folgenden  Einstellungen  direkt auf dieser Seite ein- oder ausschalten:
-       - **Aktivieren des Antispoofingschutzes**
-       - **Aktivieren des Features "Nicht authentifizierter Absender"**
+       - **Spooffiltereinstellungen**
+       - **Einstellungen für nicht authentifizierte Absender**
+       - **Aktionen**
 
    Wenn Sie fertig sind, klicken Sie auf **einer beliebigen** Seite auf Speichern.
 
@@ -299,7 +307,7 @@ Verwenden Sie die folgenden Verfahren, um Antiphishingrichtlinien zu ändern: ei
 
 Die standardmäßige Antiphishingrichtlinie in Microsoft Defender für Office 365 heißt Office365 AntiPhish Default und wird nicht in der Liste der Richtlinien angezeigt. Gehen Sie wie folgt vor, um die Standardmäßige Antiphishingrichtlinie zu ändern:
 
-1. Wechseln Sie im Security & Compliance Center zu **Bedrohungsverwaltungsrichtlinie** \>  \> **ATP-Antiphishing.**
+1. Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **Antiphishing**.
 
 2. Klicken Sie **auf der Seite Antiphishing** auf **Standardrichtlinie**.
 
@@ -319,13 +327,13 @@ Die standardmäßige Antiphishingrichtlinie in Microsoft Defender für Office 36
 
 ### <a name="enable-or-disable-custom-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Aktivieren oder Deaktivieren von benutzerdefinierten Antiphishingrichtlinien in Microsoft Defender für Office 365
 
-1. Wechseln Sie im Security & Compliance Center zu **Bedrohungsverwaltungsrichtlinie** \>  \> **ATP-Antiphishing.**
+1. Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **Antiphishing**.
 
 2. Beachten Sie den Wert in der **Spalte Status:**
 
-   - Verschieben Sie den Umschalter auf **Aus,** um die Richtlinie zu deaktivieren.
+   - Verschieben Sie den Umschalter **auf Off** ![ Toggle ](../../media/scc-toggle-off.png) Off, um die Richtlinie zu deaktivieren.
 
-   - Verschieben Sie den Umschalter auf **Ein,** um die Richtlinie zu aktivieren.
+   - Verschieben Sie den Umschalter auf **Ein** ![ umschalten, ](../../media/scc-toggle-on.png) um die Richtlinie zu aktivieren.
 
 Sie können die standardmäßige Antiphishingrichtlinie nicht deaktivieren.
 
@@ -341,7 +349,7 @@ Benutzerdefinierte Antiphishingrichtlinien werden in der Reihenfolge angezeigt, 
 
 Um die Priorität einer Richtlinie  zu ändern, klicken Sie **in** den Eigenschaften der Richtlinie  auf Priorität erhöhen oder Priorität verringern (Sie können die Prioritätsnummer im Security & Compliance Center nicht direkt ändern). Das Ändern der Priorität einer Richtlinie ist nur sinnvoll, wenn Sie über mehrere Richtlinien verfügen.
 
-1. Wechseln Sie im Security & Compliance Center zu **Bedrohungsverwaltungsrichtlinie** \>  \> **ATP-Antiphishing.**
+1. Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **Antiphishing**.
 
 2. Wählen Sie die Richtlinie aus, die Sie ändern möchten. Wenn sie bereits ausgewählt ist, deaktivieren Sie sie, und wählen Sie sie erneut aus.
 
@@ -359,7 +367,7 @@ Um die Priorität einer Richtlinie  zu ändern, klicken Sie **in** den Eigenscha
 
 ## <a name="use-the-security--compliance-center-to-view-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Verwenden Sie das Security & Compliance Center, um Antiphishingrichtlinien in Microsoft Defender für Office 365
 
-1. Wechseln Sie im Security & Compliance Center zu **Bedrohungsverwaltungsrichtlinie** \>  \> **ATP-Antiphishing.**
+1. Wechseln Sie im Security & Compliance Center zu **Bedrohungsverwaltungsrichtlinie** \>  \> **Antiphishing**.
 
 2. Führen Sie einen der folgenden Schritte aus:
 
@@ -371,7 +379,7 @@ Um die Priorität einer Richtlinie  zu ändern, klicken Sie **in** den Eigenscha
 
 ## <a name="use-the-security--compliance-center-to-remove-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Verwenden Sie das Security & Compliance Center, um Antiphishingrichtlinien in Microsoft Defender für Office 365
 
-1. Wechseln Sie im Security & Compliance Center zu **Bedrohungsverwaltungsrichtlinie** \>  \> **ATP-Antiphishing.**
+1. Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **Antiphishing**.
 
 2. Wählen Sie die Richtlinie aus, die Sie entfernen möchten. Wenn sie bereits ausgewählt ist, deaktivieren Sie sie, und wählen Sie sie erneut aus.
 
@@ -621,7 +629,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-An
 
 Gehen Sie wie folgt vor, um zu überprüfen, ob Sie die Antiphishingrichtlinien in Microsoft Defender for Office 365 erfolgreich konfiguriert haben:
 
-- Wechseln Sie im Security & Compliance Center zu **Bedrohungsverwaltungsrichtlinie** \>  \> **ATP-Antiphishing.** Überprüfen Sie die Liste der Richtlinien, ihre **Statuswerte** und ihre **Priority-Werte.** Gehen Sie wie folgt vor, um weitere Details anzuzeigen:
+- Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **Antiphishing**. Überprüfen Sie die Liste der Richtlinien, ihre **Statuswerte** und ihre **Priority-Werte.** Gehen Sie wie folgt vor, um weitere Details anzuzeigen:
 
   - Wählen Sie die Richtlinie aus der Liste aus, und zeigen Sie die Details im Flyout an.
   - Klicken **Sie auf Standardrichtlinie,** und zeigen Sie die Details im Flyout an.

@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren können mehr über Massenbeschwerdenebenenwerte (Bulk Complaint Level, BCL) erfahren, die in Exchange Online Protection (EOP) verwendet werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08924a7db0a5c4588ed70bc41e4caf46afb35b53
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: 11f884ec6b32795deba09c0f1ba88055a6422e9b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650254"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537943"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Massenbeschwerdestufe (Bulk Complaint Level, BCL) in EOP
 
@@ -38,6 +38,8 @@ In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenst
 Massen-E-Mails variieren in ihren Sendemustern, inhaltserstellungs- und Empfängererwerbspraktiken. Gute Massen-E-Mail-Nachrichten senden gewünschte Nachrichten mit relevanten Inhalten an ihre Abonnenten. Diese Nachrichten führen zu wenigen Beschwerden von Empfängern. Andere Absender verwenden unerwünschte Nachrichten, die den Kriterien für Spam sehr nahekommen und zu vielen Beschwerden von Empfängern führen. Nachrichten von einem Massen-E-Mail-Nachrichten werden als Massen-E-Mails oder graue E-Mails bezeichnet.
 
  Die Spamfilterung  markiert Nachrichten als Massen-E-Mail basierend auf dem BCL-Schwellenwert (standardwert oder einen von Ihnen angegebenen Wert) und führt die angegebene Aktion für die Nachricht aus (die Standardaktion ist, dass die Nachricht an den Junk-E-Mail-Ordner des Empfängers zugestellt wird). Weitere Informationen finden Sie unter Konfigurieren von Antispamrichtlinien und Was ist der Unterschied zwischen [Junk-E-Mails](configure-your-spam-filter-policies.md) [und Massen-E-Mails?](what-s-the-difference-between-junk-email-and-bulk-email.md)
+
+Sie können die Mandanten zulassen/blockieren-Liste verwenden, um Ausnahmen für die Massen-E-Mail-Filterung zu konfigurieren. Nachrichten von Absendern in den angegebenen Domänen  erhalten die Aktion für das Spamfilter-Urteil Massen-E-Mails in Antispamrichtlinien nicht. Weitere Informationen finden Sie [unter Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
 
 Die BCL-Schwellenwerte werden in der folgenden Tabelle beschrieben.
 

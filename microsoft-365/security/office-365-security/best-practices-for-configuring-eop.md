@@ -12,12 +12,12 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Befolgen Sie diese bewährten Empfehlungen für eigenständige Exchange Online Protection (EOP), um sich für den Erfolg zu konfigurieren und häufige Konfigurationsfehler zu vermeiden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94586d409d6d8b53ba68c22b6b4f62d2b72266db
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 266da2d8fe6b8ede79e703e49e48d17fccdd2928
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599475"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537955"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Bewährte Methoden zum Konfigurieren eigenständiger EOP
 
@@ -62,7 +62,7 @@ Diese Einstellungen umfassen eine Reihe von Features, die außerhalb von Sicherh
 |Authentifizierte SMTP-Übermittlung|Deaktiviert|Deaktiviert|Die authentifizierte Client-SMTP-Übermittlung (auch als Client-SMTP-Übermittlung oder SMTP-Authentifizierung bezeichnet) ist für POP3- und IMAP4-Clients und -Anwendungen und -Geräte erforderlich, die E-Mails generieren und senden. <p> Anweisungen zum aktivieren und Deaktivieren von SMTP AUTH global oder selektiv finden Sie unter Aktivieren oder Deaktivieren der authentifizierten [Client-SMTP-Übermittlung in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission).|
 |EWS-Konnektivität mit Postfach|Deaktiviert|Deaktiviert|Outlook verwendet Exchange Webdienste für Frei/Gebucht-, Out-of-Office-Einstellungen und Kalenderfreigabe. Wenn Sie EWS nicht global deaktivieren können, haben Sie die folgenden Optionen: <ul><li>Verwenden [Sie Authentifizierungsrichtlinien,](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) um zu verhindern, dass EWS die Standardauthentifizierung verwendet, wenn Ihre Clients moderne Authentifizierung (moderne Authentifizierung) unterstützen.</li><li>Verwenden [Sie Clientzugriffsregeln,](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) um EWS auf bestimmte Benutzer oder Quell-IP-Adressen zu beschränken.</li><li>Steuern des EWS-Zugriffs auf bestimmte Anwendungen global oder pro Benutzer. Anweisungen finden Sie unter [Steuern des Zugriffs auf EWS in Exchange](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange).</li></ul> <p> Das [Berichtsnachrichten-Add-In](enable-the-report-message-add-in.md) und das [Phishing-Add-In](enable-the-report-phish-add-in.md) Melden verwendet rest standardmäßig in unterstützten Umgebungen, wird jedoch auf EWS zurückfallen, wenn REST nicht verfügbar ist. Die unterstützten Umgebungen, die REST verwenden, sind:<ul><li>Exchange Online</li><li>Exchange 2019 oder Exchange 2016</li><li>Aktuelle Outlook für Windows 2019 Microsoft 365 abonnement oder one-time purchase Outlook 2019.</li><li>Aktuelle Outlook für Mac aus einem Microsoft 365 Abonnement oder einem Einmalkauf Outlook für Mac 2016 oder höher.</li><li>Outlook für iOS und Android</li><li>Outlook im Web</li></ul>|
 |[PowerShell-Konnektivität](/powershell/exchange/disable-access-to-exchange-online-powershell)|Deaktiviert|Deaktiviert|Verfügbar für Postfachbenutzer oder E-Mail-Benutzer (vom [Cmdlet Get-User zurückgegebene](/powershell/module/exchange/get-user) Benutzerobjekte).|
-|Verwenden [von Spoof Intelligence](learn-about-spoof-intelligence.md) zum Hinzufügen von Absendern zur Liste der zulässigen Nachrichten|Ja|Ja||
+|Verwenden der [Einblicke in spoof intelligence und](learn-about-spoof-intelligence.md) der [Mandanten-Zulassen-/Sperrliste](tenant-allow-block-list.md)zum Hinzufügen von Absendern zur Liste der zulässigen Nachrichten|Ja|Ja||
 |[Verzeichnisbasierte Edgeblockierung (Directory-Based Edge Blocking, DBEB)](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Aktiviert|Aktiviert|Domänentyp = Autoritative|
 |[Einrichten der mehrstufigen Authentifizierung für alle Administratorkonten](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)|Aktiviert|Aktiviert||
 |

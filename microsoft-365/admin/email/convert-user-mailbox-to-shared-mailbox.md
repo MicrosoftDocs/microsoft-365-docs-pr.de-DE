@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
-description: 'Erfahren Sie, wie Sie ein privates Postfach in ein freigegebenes Postfach konvertieren, auf das mehrere Benutzer zugreifen können. '
-ms.openlocfilehash: d5b33731908d2d555a8dd12d5d7fbbd462bd83ad
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: 'Erfahren Sie, wie Sie ein privates Postfach in ein freigegebenes Postfach konvertieren, auf das von mehreren Personen statt von nur einer Person zugegriffen werden kann. '
+ms.openlocfilehash: 73e2bad40037e1343f4e08c07ca6b26df16b1a30
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915866"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537619"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach
 
@@ -102,14 +102,14 @@ Weitere Informationen zum Konvertieren eines Benutzerpostfachs in ein freigegebe
 > [!NOTE]
 > Wenn Sie Mitglied der Rollengruppe Organisationsverwaltung oder Empfängerverwaltung sind, können Sie die Exchange-Verwaltungsshell verwenden, um ein Benutzerpostfach in ein lokales freigegebenes Postfach zu ändern. Beispiel: `Set-Mailbox -Identity mailbox1@contoso.com -Type Shared`.
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Informationen zu freigegebenen Postfächern](about-shared-mailboxes.md)
+[Informationen zu freigegebenen Postfächern](about-shared-mailboxes.md) (Artikel)
 
-[Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md)
+[Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md) (Artikel)
 
-[Konfigurieren eines freigegebenen Postfachs](configure-a-shared-mailbox.md)
+[Konfigurieren eines freigegebenen Postfachs](configure-a-shared-mailbox.md) (Artikel)
 
-[Entfernen einer Lizenz aus einem freigegebenen Postfach](remove-license-from-shared-mailbox.md)
+[Entfernen einer Lizenz aus einem freigegebenen Postfach](remove-license-from-shared-mailbox.md) (Artikel)
 
-[Beheben von Problemen mit freigegebenen Postfächern](resolve-issues-with-shared-mailboxes.md)
+[Beheben von Problemen mit freigegebenen Postfächern](resolve-issues-with-shared-mailboxes.md) (Artikel)

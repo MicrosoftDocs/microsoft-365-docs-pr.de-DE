@@ -20,12 +20,12 @@ description: Hier erfahren Administratoren, wie sie Benutzer aus dem Portal für
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 32748d717762d7af727a1583226b6d47ee7697c6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2171e2465aa40e187f8104c7c0d2675562f115ce
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205738"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537871"
 ---
 # <a name="remove-blocked-users-from-the-restricted-users-portal-in-office-365"></a>Entfernen von blockierten Benutzern aus dem Portal "Eingeschränkte Benutzer" in Office 365
 
@@ -81,7 +81,7 @@ Im Security & Compliance Center oder in Exchange Online PowerShell können Admin
 
 ## <a name="verify-the-alert-settings-for-restricted-users"></a>Überprüfen der Warnungseinstellungen für eingeschränkte Benutzer
 
-Die standardmäßige Benachrichtigungsrichtlinie mit dem Namen **Benutzer, dessen E-Mail-Versand blockiert wurde** benachrichtigt Administratoren automatisch, wenn Benutzer blockiert werden, damit sie keine ausgehenden E-Mails mehr senden können. Sie können diese Einstellungen überprüfen und weitere Benutzer hinzufügen, die benachrichtigt werden sollen. Weitere Informationen über Benachrichtigungsrichtlinien finden Sie unter [Benachrichtigungsrichtlinien im Security & Compliance Center](../../compliance/alert-policies.md).
+Die standardmäßige Benachrichtigungsrichtlinie mit dem Namen **Benutzer, dessen E-Mail-Versand blockiert wurde** benachrichtigt Administratoren automatisch, wenn Benutzer blockiert werden, damit sie keine ausgehenden E-Mails mehr senden können. Sie können diese Einstellungen überprüfen und weitere Benutzer hinzufügen, die benachrichtigt werden sollen. Weitere Informationen über Warnungsrichtlinien finden Sie unter [Warnungsrichtlinien in Microsoft 365](../../compliance/alert-policies.md).
 
 > [!IMPORTANT]
 > Damit Benachrichtigungen funktionieren, muss die Überwachungsprotokollsuche aktiviert sein. Weitere Informationen finden Sie unter [Aktivieren und Deaktivieren der Überwachungsprotokollsuche](../../compliance/turn-audit-log-search-on-or-off.md).

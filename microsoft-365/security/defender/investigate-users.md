@@ -1,7 +1,7 @@
 ---
 title: Untersuchen von Benutzern in Microsoft 365 Defender
-description: Untersuchen Sie Die Benutzer auf einen Vorfall im Microsoft 365 Security Center.
-keywords: Security, Malware, Microsoft 365, M365, Security Center, monitor, report, identities, data, devices, apps, incident, analyze, response
+description: Untersuchen Sie Benutzer auf einen Vorfall im Microsoft 365 Sicherheitscenter.
+keywords: Sicherheit, Malware, Microsoft 365, M365, Sicherheitscenter, Monitor, Bericht, Identitäten, Daten, Geräte, Apps, Vorfall, Analysieren, Reagieren
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -19,12 +19,12 @@ ms.topic: article
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 7084b9370a0dd83265b37ff1d152e2164fe32813
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 72eb111da2f342b78aa6161c7334a7252314b4a5
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539131"
+ms.locfileid: "52572801"
 ---
 # <a name="investigate-users-in-microsoft-365-defender"></a>Untersuchen von Benutzern in Microsoft 365 Defender
 
@@ -34,43 +34,43 @@ ms.locfileid: "52539131"
 
 - Microsoft 365 Defender
 
-Ein Teil Ihrer Vorfalluntersuchung kann Benutzerkonten enthalten. Beginnen Sie mit der **Registerkarte Benutzer** für einen Vorfall von & Warnungen **>** *Vorfall* **> Benutzer**. 
+Ein Teil Ihrer Vorfalluntersuchung kann Benutzerkonten umfassen. Beginnen Sie mit der Registerkarte **Benutzer** für einen Vorfall aus **Vorfällen & Warnungen >** *>* **Benutzer**. 
 
-:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Beispiel einer Benutzerseite für einen Vorfall":::
+:::image type="content" source="../../media/investigate-incidents/incident-users.png" alt-text="Beispiel für eine Benutzerseite für einen Vorfall":::
 
-Um eine kurze Zusammenfassung eines Benutzerkontos für den Vorfall zu erhalten, aktivieren Sie das Kontrollkästchen neben dem Benutzernamen. Im Folgenden sehen Sie ein Beispiel.
+Um eine kurze Zusammenfassung eines Benutzerkontos für den Vorfall zu erhalten, wählen Sie das Häkchen neben dem Benutzernamen aus. Im Folgenden sehen Sie ein Beispiel.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Beispiel für den Zusammenfassungsbereich eines Benutzerkontos für einen Vorfall im Microsoft 365 Security Center":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-pane.png" alt-text="Beispiel für den Zusammenfassungsbereich des Benutzerkontos für einen Vorfall im Microsoft 365 Sicherheitscenter":::
 
 > [!NOTE]
-> Auf der Seite Benutzer Azure Active Directory (AD)-Organisation sowie Gruppen angezeigt, die Ihnen helfen, die Gruppen und Berechtigungen zu verstehen, die einem Benutzer zugeordnet sind.
+> Auf der Seite Benutzer werden Azure Active Directory (Azure AD)-Organisation sowie Gruppen angezeigt, die Ihnen helfen, die Gruppen und Berechtigungen zu verstehen, die einem Benutzer zugeordnet sind.
 
-Auf dieser Fly-Out-Seite können Sie Informationen zu Benutzerbedrohungen überprüfen, einschließlich aktueller Vorfälle, aktiver Warnungen und Risikostufe sowie benutzerexposition, Konten, Geräte und mehr.
+Auf dieser Fly-Out-Seite können Sie Informationen zu Benutzerbedrohungen überprüfen, einschließlich aktueller Vorfälle, aktiver Warnungen und Risikostufen sowie Benutzerexposition, Konten, Geräte und mehr.
 
-Darüber hinaus können Sie direkt im Microsoft 365 Security Center Maßnahmen ergreifen, um einen gefährdeten Benutzer zu adressieren, um zu bestätigen, dass der Benutzer gefährdet ist oder dass er sich erneut anmelden muss.
+Darüber hinaus können Sie direkt im Microsoft 365 Sicherheitscenter Maßnahmen ergreifen, um einen kompromittierten Benutzer zu adressieren, zu bestätigen, dass der Benutzer kompromittiert ist, oder dass er sich erneut anmelden muss.
 
-Hier können Sie zur Benutzerseite wechseln **auswählen,** um die Details eines Benutzerkontos anzuzeigen. Im Folgenden sehen Sie ein Beispiel.
+Von hier aus können Sie die **Seite Zur Benutzerseite** wechseln auswählen, um die Details eines Benutzerkontos anzuzeigen. Im Folgenden sehen Sie ein Beispiel.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Beispiel für die Benutzerkontoseite für einen Vorfall im Microsoft 365 Security Center":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details.png" alt-text="Beispiel für die Benutzerkontoseite für einen Vorfall im Microsoft 365 Sicherheitscenter":::
 
 Sie können diese Seite auch anzeigen, indem Sie den Namen des Benutzerkontos aus der Liste auf der Seite **Benutzer** auswählen.
 
-Die Microsoft 365 Security Center-Benutzerseite kombiniert Informationen von Microsoft Defender for Endpoint, Microsoft Defender for Identity und Microsoft Cloud App Security (je nachdem, welche Lizenzen Sie besitzen). 
+Die Benutzerseite Microsoft 365 Security Center kombiniert Informationen von Microsoft Defender for Endpoint, Microsoft Defender for Identity und Microsoft Cloud App Security (je nachdem, welche Lizenzen Sie haben). 
 
-Diese Seite enthält Informationen, die speziell für das Sicherheitsrisiko eines Benutzerkontos spezifisch sind. Dies umfasst eine Bewertung, die bei der Bewertung von Risiken und aktuellen Ereignissen und Warnungen hilft, die zum Gesamtrisiko des Benutzers beigetragen haben.
+Auf dieser Seite werden Informationen angezeigt, die speziell auf das Sicherheitsrisiko eines Benutzerkontos zugeschnitten sind. Dazu gehört eine Bewertung, mit der Risiken und aktuelle Ereignisse und Warnungen bewertet werden, die zum Gesamtrisiko des Benutzers beigetragen haben.
 
 Auf dieser Seite können Sie die folgenden zusätzlichen Aktionen ausführen: 
 
-- Kennzeichnen des Benutzerkontos als gefährdet
-- Benutzer erneut anmelden
-- Anhalten des Benutzerkontos
-- Siehe die Azure Active Directory (Azure AD)
-- Anzeigen der Dateien im Besitz des Benutzerkontos
-- Anzeigen von Dateien, die für diesen Benutzer freigegeben sind. 
+- Das Benutzerkonto als kompromittiert markieren
+- Den Benutzer zur erneuten Anmeldung auffordern, sich anzumelden
+- Sperren des Benutzerkontos
+- Informationen zu den Azure Active Directory-Benutzerkontoeinstellungen (Azure AD)
+- Anzeigen der Dateien, die im Besitz des Benutzerkontos sind
+- Zeigen Sie Dateien an, die für diesen Benutzer freigegeben wurden. 
 
 Im Folgenden sehen Sie ein Beispiel.
 
-:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Beispiel für die Aktionen für ein Benutzerkonto für einen Vorfall im Microsoft 365 Security Center":::
+:::image type="content" source="../../media/investigate-users/incidents-ss-user-details-actions.png" alt-text="Beispiel für aktionen in einem Benutzerkonto für einen Vorfall im Microsoft 365 Sicherheitscenter":::
 
 
 <!--
@@ -82,7 +82,7 @@ Learn more about how to investigate users and potential risk [in this Cloud App 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Setzen Sie ihre Untersuchung nach Bedarf für Prozessvorfälle [fort.](investigate-incidents.md)
+Setzen Sie die [Untersuchung](investigate-incidents.md)bei Bedarf für Prozessvorfälle fort.
 
 ## <a name="see-also"></a>Siehe auch
 

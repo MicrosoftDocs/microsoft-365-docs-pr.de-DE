@@ -18,12 +18,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie die Konfigurationsanalyse verwenden, um Sicherheitsrichtlinien zu finden und zu beheben, die unterhalb der vordefinierten Sicherheitsrichtlinien standard protection und Strict protection liegen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 65fd67c93711dc847a25be485b4b016af55e4a31
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: fd0cf4f3194a7a8eec39f2d0c447dca2dae5948b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203994"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537931"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Konfigurationsanalyse für Schutzrichtlinien in EOP und Microsoft Defender für Office 365
 
@@ -42,7 +42,7 @@ Die folgenden Richtlinientypen werden von der Konfigurationsanalyse analysiert:
 
   - [Antispamrichtlinien](configure-your-spam-filter-policies.md).
   - [An malware-Richtlinien](configure-anti-malware-policies.md).
-  - [EOP Antiphishingrichtlinien](set-up-anti-phishing-policies.md#spoof-settings).
+  - [EOP-Antiphishingrichtlinien](set-up-anti-phishing-policies.md#spoof-settings).
 
 - **Microsoft Defender für Office 365:** Dies umfasst Organisationen mit Microsoft 365 E5 oder Defender for Office 365-Add-On-Abonnements:
 

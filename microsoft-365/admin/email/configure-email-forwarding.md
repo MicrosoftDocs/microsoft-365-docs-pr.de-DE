@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
-description: Richten Sie die E-Mail-Weiterleitung für ein oder mehrere E-Mail-Konten ein, die Office 365 verwenden.
-ms.openlocfilehash: 4b205c0a21f076b9c7858c8a8fc46e240920cd32
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: Mit der E-Mail-Weiterleitung können Sie E-Mail-Nachrichten, die an ein Microsoft 365-Benutzerpostfach gesendet werden, an ein anderes Postfach innerhalb oder außerhalb Ihrer Organisation weiterleiten.
+ms.openlocfilehash: 7389651cbbec5316c307cd10b331fda6812c1cd4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332630"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537631"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Konfigurieren der E-Mail-Weiterleitung in Microsoft 365
 
@@ -95,7 +95,15 @@ Um dies durchzuführen, müssen Sie ein Exchange-Administrator oder ein globaler
 
    Alternativ können Sie im Admin Center [eine Verteilergruppe erstellen](../setup/create-distribution-lists.md), [die Adressen hinzufügen](add-user-or-contact-to-distribution-list.md), und dann die Weiterleitung an die Verteilergruppe einrichten, wie in diesem Artikel beschrieben.
 
-5. Löschen Sie nicht das Konto des Benutzers, dessen E-Mail Sie weiterleiten, und löschen Sie auch nicht dessen Lizenz!  Wenn Sie dies tun, wird die E-Mail-Weiterleitung beendet.
+5. Löschen Sie nicht das Konto des Benutzers, dessen E-Mail Sie weiterleiten, und löschen Sie auch nicht dessen Lizenz! Wenn Sie dies tun, wird die E-Mail-Weiterleitung beendet.
 
 ::: moniker-end
+
+## <a name="related-content"></a>Verwandte Inhalte 
+
+[Erstellen eines freigegebenen Postfachs](../email/create-a-shared-mailbox.md) (Artikel)
+
+[Senden von E-Mails von einer anderen Adresse](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (Artikel)
+
+[Ändern eines Benutzernamens und einer E-Mail-Adresse](../add-users/change-a-user-name-and-email-address.md) (Artikel)
 

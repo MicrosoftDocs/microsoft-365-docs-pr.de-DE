@@ -15,12 +15,12 @@ ms.collection:
 description: Administratoren können erfahren, wie Sie die Antiphishingrichtlinien erstellen, ändern und löschen, die in Exchange Online Protection (EOP)-Organisationen mit oder ohne Exchange Online verfügbar sind.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c277558bad32e1926030483d202b70ae3c910315
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: bc3c15d2a652e9acd3407ecb91fc99b7ef295c7e
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206211"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537919"
 ---
 # <a name="configure-anti-phishing-policies-in-eop"></a>Konfigurieren von Anti-Phishing-Richtlinien in EOP
 
@@ -159,18 +159,20 @@ Verwenden Sie die folgenden Verfahren, um Antiphishingrichtlinien zu ändern: ei
 
    Wenn Sie fertig sind, klicken Sie auf **einer beliebigen** Seite auf Speichern.
 
-5. **Spoof**:  Klicken Sie auf Bearbeiten, um die Spoofintelligenz ein- oder auszuschalten, die Identifikation nicht authentifizierter Absender in Outlook ein- oder auszuschalten und die Aktion so zu konfigurieren, dass sie auf Nachrichten von blockierten spoofierten Absendern angewendet wird. Weitere Informationen finden Sie unter [Spoofeinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md#spoof-settings).
+5. **Spoof**:  Klicken Sie auf Bearbeiten, um die Spoofintelligenz ein- oder auszuschalten, die Identifikation nicht authentifizierter Absender in Outlook ein- oder auszuschalten und die Aktion so zu konfigurieren, dass sie auf Nachrichten von blockierten spoofierten Absendern angewendet wird. Weitere Informationen zu diesen Einstellungen finden Sie unter [Spoofeinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md#spoof-settings).
 
    Beachten Sie, dass diese Einstellungen auch in Antiphishingrichtlinien in Defender for Office 365.
 
-   - **Spoofing-Filtereinstellungen:** Der Standardwert ist **Ein**, und es wird empfohlen, ihn zu be lassen. Um es zu deaktivieren, verschieben Sie den Umschalter auf **Aus**. Weitere Informationen finden Sie unter [Configure spoof intelligence in EOP](learn-about-spoof-intelligence.md).
+   - **Spoofing-Filtereinstellungen:** Verwenden Sie die Einstellung **Spoofintelligenz aktivieren?** zum Aktivieren oder Deaktivieren der Spoofintelligenz. Der Standardwert ist **On**, und es wird empfohlen, ihn zu be lassen. Um es zu deaktivieren, verschieben Sie den Umschalter auf **Off** ![ Toggle Off ](../../media/scc-toggle-off.png) .
 
      > [!NOTE]
      > Sie müssen den Schutz vor Spoofing nicht deaktivieren, wenn Ihr #A0 nicht auf Microsoft 365. Stattdessen aktivieren Sie erweiterte Filterung für Connectors. Anweisungen finden Sie unter [Enhanced Filtering for Connectors in Exchange Online](/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors).
 
-   - **Feature Nicht authentifizierter Absender aktivieren:** Der Standardwert ist **Ein**. Um es zu deaktivieren, verschieben Sie den Umschalter auf **Aus**.
+   - **Einstellungen für nicht authentifizierte Absender:** Sie können die folgenden Einstellungen konfigurieren:
+     - Nicht authentifizierte Absender fragezeichen **(?) aktivieren?**: Diese Einstellungen fügt dem Foto des Absenders im Feld Von in Outlook Fragezeichen  hinzu, wenn die Nachricht keine SPF- oder DKIM-Prüfungen bestehen und die Nachricht keine DMARC- oder zusammengesetzte Authentifizierung [bestehen.](email-validation-and-authentication.md#composite-authentication) Der Standardwert ist **Aktiviert**. Um es zu deaktivieren, verschieben Sie den Umschalter auf **Off** ![ Toggle Off ](../../media/scc-toggle-off.png) .
+     - **Aktivieren Sie das "via"-Tag?**: Mit dieser Einstellung wird ein via-Tag (chris@contoso.com über fabrikam.com) von der Domäne in der DKIM-Signatur oder der **MAIL FROM-Adresse** entfernt. Der Standardwert ist **Aktiviert**. Um es zu deaktivieren, verschieben Sie den Umschalter auf **Off** ![ Toggle Off ](../../media/scc-toggle-off.png) .
 
-   - **Aktionen**: Geben Sie die Aktion für Nachrichten an, bei der spoof intelligence fehlschlagen:
+   - **Aktionen**: Geben Sie die Aktion für Nachrichten von blockierten spoofierten Absendern an:
 
      **Wenn E-Mails von einer Person** gesendet werden, die Ihre Domäne nicht spoofen darf:
 
@@ -181,9 +183,9 @@ Verwenden Sie die folgenden Verfahren, um Antiphishingrichtlinien zu ändern: ei
 
      - Sie können in jedem **Abschnitt** auf Bearbeiten klicken, um zur relevanten Seite zurück zu springen.
      - Sie können die folgenden  Einstellungen  direkt auf dieser Seite ein- oder ausschalten:
-
-       - **Aktivieren des Antispoofingschutzes**
-       - **Aktivieren des Features "Nicht authentifizierter Absender"**
+       - **Spooffiltereinstellungen**
+       - **Einstellungen für nicht authentifizierte Absender**
+       - **Aktionen**
 
    Wenn Sie fertig sind, klicken Sie auf **einer beliebigen** Seite auf Speichern.
 
@@ -197,11 +199,7 @@ Die Standardmäßige Antiphishingrichtlinie heißt Office365 AntiPhish Default u
 
 2. Klicken Sie **auf der Seite Antiphishing** auf **Standardrichtlinie**.
 
-3. Die **Seite Office365 AntiPhish Default** bearbeiten wird angezeigt. Die folgenden Abschnitte sind verfügbar, die identische Einstellungen für das Ändern [einer benutzerdefinierten Richtlinie enthalten.](#use-the-security--compliance-center-to-modify-anti-phishing-policies)
-
-   - **Impersonation**
-   - **Spoof**
-   - **Erweiterte Einstellungen**
+3. Die **Seite Office365 AntiPhish Default** bearbeiten wird angezeigt. Nur der **Abschnitt Spoof** ist verfügbar, der identische Einstellungen für das Ändern einer [benutzerdefinierten Richtlinie enthält.](#use-the-security--compliance-center-to-modify-anti-phishing-policies)
 
    Die folgenden Einstellungen sind nicht verfügbar, wenn Sie die Standardrichtlinie ändern:
 
@@ -217,9 +215,9 @@ Die Standardmäßige Antiphishingrichtlinie heißt Office365 AntiPhish Default u
 
 2. Beachten Sie den Wert in der **Spalte Status:**
 
-   - Verschieben Sie den Umschalter auf **Aus,** um die Richtlinie zu deaktivieren.
+   - Verschieben Sie den Umschalter **auf Off** ![ Toggle ](../../media/scc-toggle-off.png) Off, um die Richtlinie zu deaktivieren.
 
-   - Verschieben Sie den Umschalter auf **Ein,** um die Richtlinie zu aktivieren.
+   - Verschieben Sie den Umschalter auf **Ein** ![ umschalten, ](../../media/scc-toggle-on.png) um die Richtlinie zu aktivieren.
 
 Sie können die standardmäßige Antiphishingrichtlinie nicht deaktivieren.
 
@@ -235,7 +233,7 @@ Benutzerdefinierte Antiphishingrichtlinien werden in der Reihenfolge angezeigt, 
 
 Um die Priorität einer Richtlinie  zu ändern, klicken Sie **in** den Eigenschaften der Richtlinie  auf Priorität erhöhen oder Priorität verringern (Sie können die Prioritätsnummer im Security & Compliance Center nicht direkt ändern). Das Ändern der Priorität einer Richtlinie ist nur sinnvoll, wenn Sie über mehrere Richtlinien verfügen.
 
-1. Wechseln Sie im Security & Compliance Center zu **Bedrohungsverwaltungsrichtlinie** \>  \> **ATP-Antiphishing.**
+1. Wechseln Sie im Security & Compliance Center zu Richtlinie für die **Bedrohungsverwaltung** \>  \> **Antiphishing**.
 
 2. Wählen Sie die Richtlinie aus, die Sie ändern möchten. Wenn sie bereits ausgewählt ist, deaktivieren Sie sie, und wählen Sie sie erneut aus.
 
@@ -309,7 +307,7 @@ Das Erstellen einer Antiphishingrichtlinie in PowerShell besteht aus zwei Stufen
 Verwenden Sie die folgende Syntax, um eine Antiphishrichtlinie zu erstellen:
 
 ```PowerShell
-New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>]
+New-AntiPhishPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-EnableSpoofIntelligence <$true | $false>] [-AuthenticationFailAction <MoveToJmf | Quarantine>] [-EnableUnauthenticatedSender <$true | $false>] [-EnableViaTag <$true | $false>]
 ```
 
 In diesem Beispiel wird eine Phishingrichtlinie mit dem Namen "Research Quarantine" mit den folgenden Einstellungen erstellt:

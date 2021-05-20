@@ -17,19 +17,20 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: Hier erfahren Sie, wie Sie Teams bereitstellen, in denen vertrauliche Daten geschützt sind.
-ms.openlocfilehash: 03f10c91461d440413ace418a3b6fdd84da1660a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 16b60230c18f4a4f5e10b4bd421fd1bf02b39779
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916226"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538183"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Teams für den Schutz vertraulicher Daten konfigurieren
 
 In diesem Artikel sehen wir uns das Einrichten eines Teams an, in dem vertrauliche Daten geschützt sind. Bevor Sie die Schritte in diesem Artikel ausführen, müssen Sie die Schritte unter [Bereitstellen von Microsoft Teams mit Basisschutz ](configure-teams-baseline-protection.md) abgeschlossen haben. Die "Vertraulich"-Stufe bietet den folgenden zusätzlichen Schutz gegenüber der Basisstufe:
 
-- Eine Vertraulichkeitsbezeichnung für das Team, die es Ihnen ermöglicht, die Gastfreigabe ein- oder auszuschalten und den Zugriff auf SharePoint-Inhalte für nicht verwaltete Geräte auf die Webebene zu beschränken. Diese Bezeichnung kann auch zum Klassifizieren von Dateien verwendet werden.
+- Eine Vertraulichkeitsbezeichnung für das Team, die es Ihnen ermöglicht, die Gastfreigabe ein- oder auszuschalten und den Zugriff auf SharePoint-Inhalte für nicht verwaltete Geräte auf die Webebene zu beschränken. Diese Bezeichnung kann auch zum klassifizieren von Dateien verwendet werden.
 - Einen restriktiveren standardmäßigen Freigabe-Linktyp
 - Nur Teambesitzer können private Kanäle erstellen.
 

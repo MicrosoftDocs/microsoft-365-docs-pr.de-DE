@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 ms.assetid: d1691de4-ca0d-446f-a0d0-373a4fc8487b
 description: Erfahren Sie mehr über nicht indizierte Elemente in Exchange und SharePoint, die Sie in eine eDiscovery-Suche, die Sie im compliance center Microsoft 365 ausführen, enthalten können.
-ms.openlocfilehash: 40995aa403686caadd5e35b6fa9c6ca20ee017ee
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: e1730959cd3177fe1f7bce1f0315c871b5a57598
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994732"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537655"
 ---
 # <a name="partially-indexed-items-in-ediscovery"></a>Teilweise indizierte Elemente in eDiscovery
 
@@ -67,7 +67,7 @@ Eine Liste von unterstützten und deaktivierten Dateiformaten finden Sie in den 
 
 Nicht jede E-Mail-Nachricht mit einer teilweise indizierten Dateianlage oder jedem teilweise indizierten SharePoint wird automatisch als teilweise indiziertes Element zurückgegeben. Der Grund dafür ist, dass andere Nachrichten- oder Dokumenteigenschaften, z. B. die **Subject-Eigenschaft** in E-Mail-Nachrichten und die **Title-** oder **Author-Eigenschaften** für Dokumente indiziert sind und durchsucht werden können. Beispielsweise gibt eine Stichwortsuche nach "financial" Elemente mit einer teilweise indizierten Dateianlage zurück, wenn dieses Schlüsselwort im Betreff einer E-Mail-Nachricht oder im Dateinamen oder Titel eines Dokuments angezeigt wird. Wenn das Schlüsselwort jedoch nur im Textkörper der Datei angezeigt wird, wird die Nachricht oder das Dokument als teilweise indiziertes Element zurückgegeben.
   
-Ebenso werden Nachrichten mit teilweise indizierten Dateianlagen und Dokumente eines teilweise indizierten Dateityps in suchergebnissen eingeschlossen, wenn andere Nachrichten- oder Dokumenteigenschaften, die indiziert und durchsuchbar sind, die Suchkriterien erfüllen. Zu den Nachrichteneigenschaften, die für die Suche indiziert werden, gehören Sende- und Empfangsdatum, Absender und Empfänger, Dateiname von Anhängen sowie der Nachrichtentext. Zu den für die Suche indizierten Dokumenteigenschaften gehören erstellte und geänderte Daten. Auch wenn eine Nachrichtenanlage ein teilweise indiziertes Element sein kann, wird die Nachricht in die regulären Suchergebnisse eingeschlossen, wenn der Wert anderer Nachrichten- oder Dokumenteigenschaften den Suchkriterien entspricht.
+Ebenso werden Nachrichten mit teilweise indizierten Dateianlagen und Dokumente eines teilweise indizierten Dateityps in suchergebnissen eingeschlossen, wenn andere Nachrichten- oder Dokumenteigenschaften, die indiziert und durchsuchbar sind, mit den Suchkriterien übereinstimmen. Zu den Nachrichteneigenschaften, die für die Suche indiziert werden, gehören Sende- und Empfangsdatum, Absender und Empfänger, Dateiname von Anhängen sowie der Nachrichtentext. Zu den für die Suche indizierten Dokumenteigenschaften gehören erstellte und geänderte Daten. Auch wenn eine Nachrichtenanlage ein teilweise indiziertes Element sein kann, wird die Nachricht in die regulären Suchergebnisse eingeschlossen, wenn der Wert anderer Nachrichten- oder Dokumenteigenschaften den Suchkriterien entspricht.
   
 Eine Liste der E-Mail- und Dokumenteigenschaften, nach der Sie mithilfe des Suchfeatures im Security & Compliance Center suchen können, finden Sie unter [Keyword queries and search conditions for eDiscovery](keyword-queries-and-search-conditions.md).
   
@@ -77,7 +77,7 @@ Ihre Organisation muss möglicherweise zusätzliche Analysen für teilweise indi
   
 Beachten Sie folgendes zu teilweise indizierten Elementen:
   
-- Wenn Sie eine eDiscovery-Suche ausführen, werden die Gesamtanzahl und Größe teilweise indizierter Exchange-Elemente (die von der Suchabfrage zurückgegeben werden) in der Suchstatistik auf der Flyoutseite angezeigt und als nicht **indizierte** Elemente gekennzeichnet. Statistiken zu teilweise indizierten Elementen, die auf der Flyoutseite angezeigt werden, enthalten keine teilweise indizierten Elemente in SharePoint oder OneDrive.
+- Wenn Sie eine eDiscovery-Suche ausführen, werden die Gesamtanzahl und Größe teilweise indizierter Exchange-Elemente (die von der Suchabfrage zurückgegeben werden) in der Suchstatistik auf der Flyoutseite angezeigt und als nicht **indizierte** Elemente gekennzeichnet. Statistiken zu teilweise indizierten Elementen, die auf der Flyoutseite angezeigt werden, enthalten keine teilweise indizierten Elemente in SharePoint websites oder OneDrive Konten.
 
 - Wenn die Suche, aus der Sie Ergebnisse exportieren, eine Suche nach bestimmten Inhaltsstandorten oder allen Inhaltsstandorten in Ihrer Organisation war, werden nur die nicht indizierten Elemente aus Inhaltsverzeichnissen exportiert, die Elemente enthalten, die den Suchkriterien entsprechen. In other words, if no search results are found in a mailbox or site, then any unindexed items in that mailbox or site won't be exported. Der Grund dafür ist, dass das Exportieren teilweise indizierter Elemente von vielen Speicherorten in der Organisation die Wahrscheinlichkeit von Exportfehlern erhöhen und die Zeit erhöhen kann, die zum Exportieren und Herunterladen der Suchergebnisse benötigt wird.
 
@@ -87,22 +87,16 @@ Beachten Sie folgendes zu teilweise indizierten Elementen:
 
 - Teilweise indizierte Elemente können nicht in der Vorschau angezeigt werden. Sie müssen die Suchergebnisse exportieren, um teilweise indizierte Elemente anzeigen zu können, die von der Suche zurückgegeben werden.
 
-Darüber hinaus werden teilweise indizierte Elemente aus SharePoint in einen Ordner namens **Uncrawlable** exportiert, wenn Sie Suchergebnisse exportieren und teilweise indizierte Elemente in den Export hinzufügen. Wenn Sie teilweise indizierte Exchange exportieren, werden sie unterschiedlich exportiert, je nachdem, ob die teilweise indizierten Elemente mit der Suchabfrage und der Konfiguration der Exporteinstellungen übereinstimmen. 
+   Darüber hinaus werden teilweise indizierte Elemente aus SharePoint in einen Ordner namens **Uncrawlable** exportiert, wenn Sie Suchergebnisse exportieren und teilweise indizierte Elemente in den Export hinzufügen. Wenn Sie teilweise indizierte Exchange exportieren, werden sie unterschiedlich exportiert, je nachdem, ob die teilweise indizierten Elemente mit der Suchabfrage und der Konfiguration der Exporteinstellungen übereinstimmen. 
 
-Die folgende Tabelle zeigt das Exportverhalten indizierter und teilweise indizierter Elemente und ob die einzelnen Elemente für die verschiedenen Exportkonfigurationseinstellungen enthalten sind.
+- Die folgende Tabelle zeigt das Exportverhalten indizierter und teilweise indizierter Elemente und ob die einzelnen Elemente für die verschiedenen Exportkonfigurationseinstellungen enthalten sind.
 
-|**Exportkonfiguration**|**Indizierte Elemente, die einer Suchabfrage entsprechen**|**Teilweise indizierte Elemente, die einer Suchabfrage entsprechen**|**Teilweise indizierte Elemente, die nicht mit der Suchabfrage übereinstimmen**|
-|:-----|:-----|:-----|:-----|
-|Nur indizierte Elemente exportieren  <br/> |Exportiert<br/> |Exportiert (im Lieferumfang der indizierten Elemente enthalten, die exportiert werden)<br/>  |Nicht exportiert <br/>|
-|Exportieren nur teilweise indizierter Elemente  <br/> |Nicht exportiert  <br/> |Exportiert (als teilweise indizierte Elemente)<br/> |Exportiert (als teilweise indizierte Elemente)|
-|Exportieren indizierter und teilweise indizierter Elemente  <br/> |Exportiert<br/> |Exportiert (im Lieferumfang der indizierten Elemente enthalten, die exportiert werden)<br/>  |Exportiert (als teilweise indizierte Elemente)<br/>|
-||||
-
-## <a name="partially-indexed-items-excluded-from-the-search-results"></a>Teilweise indizierte Elemente, die aus den Suchergebnissen ausgeschlossen werden
-
-Wenn ein Element teilweise indiziert ist, aber nicht den Suchabfragekriterien entspricht, wird es nicht als teilweise indiziertes Element in die Suchergebnisse einbezogen. In anderen Worten wird das Element von den Suchergebnissen ausgeschlossen. Wenn Sie beim Exportieren der Ergebnisse einer Suche teilweise indizierte Elemente enthalten möchten, werden auch teilweise indizierte Elemente, die aus den Suchergebnissen ausgeschlossen wurden, nicht exportiert.
-  
-Eine Ausnahme von dieser Regel ist, wenn Sie einen abfragebasierten Halteraum erstellen, der einem eDiscovery-Fall zugeordnet ist. Wenn Sie einen abfragebasierten eDiscovery-Halteraum erstellen, werden alle teilweise indizierten Elemente in der Warteschleife platziert. Dies umfasst teilweise indizierte Elemente, die nicht den Suchabfragekriterien entsprechen. Weitere Informationen zum Erstellen von abfragebasierten eDiscovery-Speichern finden Sie unter [Create an eDiscovery hold](create-ediscovery-holds.md).
+  |**Exportkonfiguration**|**Indizierte Elemente, die einer Suchabfrage entsprechen**|**Teilweise indizierte Elemente, die einer Suchabfrage entsprechen**|**Teilweise indizierte Elemente, die nicht mit der Suchabfrage übereinstimmen**|
+  |:-----|:-----|:-----|:-----|
+  |Nur indizierte Elemente exportieren  <br/> |Exportiert<br/> |Exportiert (im Lieferumfang der indizierten Elemente enthalten, die exportiert werden)<br/>  |Nicht exportiert <br/>|
+  |Exportieren nur teilweise indizierter Elemente  <br/> |Nicht exportiert  <br/> |Exportiert (als teilweise indizierte Elemente)<br/> |Exportiert (als teilweise indizierte Elemente)|
+  |Exportieren indizierter und teilweise indizierter Elemente  <br/> |Exportiert<br/> |Exportiert (im Lieferumfang der indizierten Elemente enthalten, die exportiert werden)<br/>  |Exportiert (als teilweise indizierte Elemente)<br/>|
+  ||||
   
 ## <a name="indexing-limits-for-messages"></a>Indizierungsgrenzwerte für Nachrichten
 
@@ -122,12 +116,13 @@ Eine Liste der Indizierungsgrenzwerte für SharePoint finden Sie unter [Search l
 |Maximale Anmerkungstoken  <br/> |2 Mio.  <br/> |Wenn eine E-Mail-Nachricht indiziert wird, wird jedes Wort mit unterschiedlichen Verarbeitungsanweisungen kommentiert, die angeben, wie dieses Wort indiziert werden soll. Jeder Satz von Verarbeitungsanweisungen wird als Anmerkungstoken bezeichnet. Um die Dienstqualität in Office 365 zu erhalten, gibt es eine Grenze von 2 Millionen Anmerkungstoken für eine E-Mail-Nachricht.  <br/> |
 |Maximale Textgröße im Index  <br/> |67 Millionen Zeichen  <br/> |Die Gesamtanzahl der Zeichen im Textkörper einer E-Mail-Nachricht und aller Anlagen. Wenn eine E-Mail-Nachricht indiziert wird, wird der ganze Text im Nachrichtentext und in allen Anlagen in einer einzelnen Zeichenfolge verkettet. Die maximale Größe dieser indizierten Zeichenfolge beträgt 67 Millionen Zeichen.  <br/> |
 |Maximale Anzahl eindeutiger Token im Textkörper  <br/> |1 Million  <br/> |Wie bereits erläutert, sind Token das Ergebnis des Extrahierens von Text aus Inhalten, des Entfernens von Interpunktion und Leerzeichen und deren Aufteilung in Wörter (sogenannte Token), die im Index gespeichert sind. Der Ausdruck enthält beispielsweise  `"cat, mouse, bird, dog, dog"` 5 Token. Aber nur 4 davon sind eindeutige Token. Es gibt eine Grenze von 1 Million eindeutigen Token pro E-Mail-Nachricht, wodurch verhindert wird, dass der Index mit zufälligen Token zu groß wird.  <br/> |
+||||
 
 ## <a name="more-information-about-partially-indexed-items"></a>Weitere Informationen zu teilweise indizierten Elementen
 
 - Wie bereits erwähnt, kann eine Schlüsselwortsuche Ergebnisse zurückgeben, wenn dieses Schlüsselwort in den indizierten Metadaten angezeigt wird, da Nachrichten- und Dokumenteigenschaften und ihre Metadaten indiziert sind. Dieselbe Schlüsselwortsuche gibt jedoch möglicherweise nicht dasselbe Element zurück, wenn das Schlüsselwort nur im Inhalt eines Elements mit einem nicht unterstützten Dateityp angezeigt wird. In diesem Fall wird das Element als teilweise indiziertes Element zurückgegeben.
 
-- Wenn ein teilweise indiziertes Element in den Suchergebnissen enthalten ist, weil es die Suchabfragekriterien erfüllt (und nicht ausgeschlossen wurde), wird es nicht als teilweise indiziertes Element in die geschätzte Suchstatistik einbezogen. Außerdem wird sie beim Exportieren von Suchergebnissen nicht in teilweise indizierte Elemente einbezogen.
+- Wenn ein teilweise indiziertes Element in den Suchergebnissen enthalten ist, weil es den Suchabfragekriterien entspricht, wird es nicht als teilweise indiziertes Element in die geschätzte Suchstatistik aufgenommen. Außerdem wird sie beim Exportieren von Suchergebnissen nicht in teilweise indizierte Elemente einbezogen.
 
 - Obwohl ein Dateityp für die Indizierung unterstützt und indiziert wird, können Indizierungs- oder Suchfehler auftreten, die dazu führen, dass eine Datei als teilweise indiziertes Element zurückgegeben wird. Das Durchsuchen einer sehr großen Excel kann z. B. teilweise erfolgreich sein (da die ersten 4 MB indiziert sind), schlägt dann jedoch fehl, da die Dateigröße überschritten wird. In diesem Fall ist es möglich, dass dieselbe Datei mit den Suchergebnissen und als teilweise indiziertes Element zurückgegeben wird.
 
@@ -136,6 +131,8 @@ Eine Liste der Indizierungsgrenzwerte für SharePoint finden Sie unter [Search l
 - Mit S/MIME verschlüsselte E-Mail-Nachrichten werden teilweise indiziert. Dazu gehören verschlüsselte Nachrichten mit oder ohne Dateianlagen.
 
 - E-Mail-Nachrichten, die mithilfe von Azure Rights Management geschützt sind, werden indiziert und in die Suchergebnisse einbezogen, wenn sie mit der Suchabfrage übereinstimmen. Rechtegeschützte E-Mail-Nachrichten werden entschlüsselt und können in der Vorschau angezeigt und exportiert werden. Diese Funktionalität erfordert, dass Ihnen die Rolle RMS Decrypt zugewiesen ist, die standardmäßig der Rollengruppe eDiscover Manager zugewiesen ist.
+
+- Wenn Sie einen abfragebasierten Halteraum erstellen, der einem eDiscovery-Fall zugeordnet ist, werden alle teilweise indizierten Elemente gesperrt. Dies umfasst teilweise indizierte Elemente, die nicht den Suchabfragekriterien für den Halteraum entsprechen. Weitere Informationen zum Erstellen von abfragebasierten eDiscovery-Speichern finden Sie unter [Create an eDiscovery hold](create-ediscovery-holds.md).
 
 ## <a name="see-also"></a>Siehe auch
 

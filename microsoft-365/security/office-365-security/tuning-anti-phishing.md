@@ -16,12 +16,12 @@ ms.collection:
 description: Administratoren können lernen, die Gründe zu ermitteln, warum und wie eine Phishingnachricht in Microsoft 365 und was sie tun müssen, um in Zukunft weitere Phishingnachrichten zu verhindern.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1772a0329825b8808352892c8d99f0d7680112f5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8d8f3f93b3fe1643467a12f90123b839addad2ed
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206151"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537847"
 ---
 # <a name="tune-anti-phishing-protection"></a>Optimieren des Schutzes gegen Phishing
 
@@ -64,9 +64,9 @@ Insbesondere sollten Sie das **Kopfzeilenfeld X-Forefront-Antispam-Report** in d
 
 - Bei Nachrichten, die aus Versehen in Quarantäne bzw. nach Nachrichten, die durchgehen dürfen, wird empfohlen, im Bedrohungs-Explorer und in Echtzeit nach diesen Nachrichten [zu suchen.](threat-explorer.md) Sie können nach Absender, Empfänger oder Nachrichten-ID suchen. Nachdem Sie die Nachricht gefunden haben, wechseln Sie zu Details, indem Sie auf den Betreff klicken. Suchen Sie nach einer Nachricht in Quarantäne, um zu sehen, was die "Erkennungstechnologie" war, damit Sie die entsprechende Methode zum Überschreiben verwenden können. Suchen Sie nach einer zulässigen Nachricht, um zu sehen, welche Richtlinie die Nachricht zugelassen hat.
 
-- Gefälschte E-Mails werden in Defender for Office 365. Manchmal ist Spoof gutartig, und manchmal möchten Benutzer nicht, dass es isoliert wird. Um die Auswirkungen auf Benutzer zu minimieren, überprüfen Sie regelmäßig den [Spoof Intelligence Report](learn-about-spoof-intelligence.md). Nachdem Sie alle erforderlichen Außerkraftsetzungen überprüft und vorgenommen haben,  können Sie sicher sein, [spoof intelligence](set-up-anti-phishing-policies.md#spoof-settings) so zu konfigurieren, dass verdächtige Nachrichten isoliert werden, anstatt sie an den Junk-E-Mail-Ordner des Benutzers zu senden.
+- E-Mails von gefälschten Absendern (die Absenderadresse der Nachricht ist nicht mit der Quelle der Nachricht übereinstimmend) werden in Defender for Office 365. Manchmal ist Spoofing gutartig, und manchmal möchten Benutzer nicht, dass Nachrichten von bestimmten gefälschten Absendern in Quarantäne gestellt werden. Um die Auswirkungen auf Die Benutzer zu minimieren, überprüfen Sie regelmäßig den Einblick in [spoof intelligence,](learn-about-spoof-intelligence.md)die Registerkarte **Spoof** in der Mandanten-Allow/Block [List](tenant-allow-block-list.md)und den [Bericht spoof detections](view-email-security-reports.md#spoof-detections-report). Nachdem Sie zugelassene und blockierte gefälschte Absender überprüft und alle erforderlichen Außerkraftsetzungen vorgenommen haben,  können Sie sicher sein, spoof intelligence in Antiphishingrichtlinien so zu konfigurieren, dass verdächtige Nachrichten isoliert werden, anstatt sie an den Junk-E-Mail-Ordner des Benutzers zu senden. [](set-up-anti-phishing-policies.md#spoof-settings)
 
-- Sie können den obigen Schritt für Identitätswechsel (Domäne oder Benutzer) wiederholen. Der Identitätswechselbericht finden Sie unter **Threat Management** \> **Dashboard** \> **Insights**.
+- Sie können den obigen Schritt für Identitätswechsel (Domäne oder Benutzer) in Microsoft Defender für Office 365. Der Identitätswechselbericht finden Sie unter **Threat Management** \> **Dashboard** \> **Insights**.
 
 - Überprüfen Sie in regelmäßigen Abständen [den Threat Protection Status-Bericht](view-reports-for-mdo.md#threat-protection-status-report).
 
@@ -76,7 +76,7 @@ Insbesondere sollten Sie das **Kopfzeilenfeld X-Forefront-Antispam-Report** in d
 
   - Vergewissern Sie sich,  dass Ihr SPF-Eintrag alle E-Mail-Quellen für Absender in Ihrer Domäne identifiziert (vergessen Sie nicht Dienste von Drittanbietern!).
 
-  - Verwenden Sie hard fail ( all), um sicherzustellen, dass nicht autorisierte Absender von E-Mail-Systemen zurückgewiesen werden, die dafür \- konfiguriert sind. Sie können [spoof intelligence](learn-about-spoof-intelligence.md) verwenden, um Absender zu identifizieren, die Ihre Domäne verwenden, sodass Sie autorisierte Drittanbieter-Absender in Ihren SPF-Eintrag eintragen können.
+  - Verwenden Sie hard fail ( all), um sicherzustellen, dass nicht autorisierte Absender von E-Mail-Systemen zurückgewiesen werden, die dafür \- konfiguriert sind. Sie können den Einblick in [spoof intelligence](learn-about-spoof-intelligence.md) verwenden, um Absender zu identifizieren, die Ihre Domäne verwenden, sodass Sie autorisierte Absender von Drittanbietern in Ihren SPF-Eintrag eintragen können.
 
   Konfigurationsanweisungen finden Sie unter:
 

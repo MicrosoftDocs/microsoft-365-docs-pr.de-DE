@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commcerce_billing
 search.appverid: MET150
-description: Erfahren Sie, wie Sie Änderungen an Ihrem Organisationsprofil, beispielsweise Bezeichnung der Organisation, Adresse, Telefonnummer, technischer Kontakt und E-Mail-Adresse vornehmen können.
+description: Nehmen Sie Änderungen an Ihrem Organisationsprofil vor, z. B. Organisationsname, Adresse, Telefon, technischer Kontakt und E-Mail.
 ms.date: 03/30/2021
-ms.openlocfilehash: 880a540db8b8b1a18ddebabd335c8c2dedd36721
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 9fc985f640f1544bf30ea1a6ccdd5c1ca19aa81f
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332435"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572129"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Ändern der Adresse, des technischen Kontakts und anderer Informationen Ihrer Organisation
   
@@ -78,3 +78,11 @@ Weitere Informationen zum Ändern anderer Profilinformationen finden Sie unter [
 ### <a name="email-signatures"></a>E-Mail-Signaturen
   
 Sie können Ihre E-Mail-Signatur in Outlook Web App ändern. Weitere Informationen finden Sie unter [E-Mail-Einstellungen](https://support.microsoft.com/office/30c69a79-efc6-42d2-b740-4bf1c1f8a01c).
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Senden von E-Mails von einer anderen Adresse](https://support.microsoft.com/office/ccba89cb-141c-4a36-8c56-6d16a8556d2e) (Artikel)
+
+[Ändern eines Benutzernamens und einer E-Mail-Adresse](../add-users/change-a-user-name-and-email-address.md) (Artikel)
+
+[Konfigurieren der E-Mail-Weiterleitung in Microsoft 365](../email/configure-email-forwarding.md) (Artikel)

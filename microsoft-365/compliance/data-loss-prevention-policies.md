@@ -21,18 +21,18 @@ search.appverid:
 - MET150
 ms.custom:
 - seo-marvel-apr2020
-description: Referenzmaterial zur Verhinderung von Datenverlust
-ms.openlocfilehash: a039b8d99bd92be0040f6207803981e8a2937c6f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: Referenzmaterial zur Datenverlustvermeidung
+ms.openlocfilehash: a6dc0b2702899e05f78c54331fb33b87495672d8
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296768"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572561"
 ---
 # <a name="data-loss-prevention-reference"></a>Referenz zur Verhinderung von Datenverlust
  
 > [!IMPORTANT]
-> Dieses Referenzthema ist nicht mehr die Hauptressource für Microsoft 365 Verhinderung von Datenverlust (Data Loss Prevention, DLP). Der DLP-Inhaltssatz wird aktualisiert und neu strukturiert. Die in diesem Artikel behandelten Themen werden zu neuen, aktualisierten Artikeln geändert. Weitere Informationen zu DLP finden Sie [unter Learn about data loss prevention](dlp-learn-about-dlp.md).
+> Dieses Referenzthema ist nicht mehr die Hauptressource für Microsoft 365 Datenverlustpräventionsinformationen (Data Loss Prevention, DLP). Der DLP-Inhaltssatz wird aktualisiert und neu strukturiert. Die in diesem Artikel behandelten Themen werden zu neuen, aktualisierten Artikeln übergehen. Weitere Informationen zu DLP finden [Sie unter Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md).
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -385,7 +385,7 @@ Wenn Sie eine zuvor erstellte und veröffentlichte [Aufbewahrungsbezeichnung](re
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>Verwenden einer Vertraulichkeitsbezeichnung als Bedingung in einer DLP-Richtlinie
 
-[Erfahren Sie mehr](./dlp-sensitivity-label-as-condition.md) über die Verwendung der Vertraulichkeitsbezeichnung als Bedingung in DLP-Richtlinien.
+[Erfahren Sie mehr](./dlp-sensitivity-label-as-condition.md) über die Verwendung der Sensitivity-Bezeichnung als Bedingung in DLP-Richtlinien.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Die Beziehung dieses Features zu anderen Features
 
@@ -441,28 +441,30 @@ Mithilfe einer vorkonfigurierten DLP-Richtlinienvorlage können spezifische Arte
   
 Ihre Organisation weist aber möglicherweise ihre ganz eigenen speziellen Anforderungen auf. In diesem Fall können Sie eine DLP-Richtlinie auch von Grund auf neu erstellen, indem Sie die Option **Benutzerdefinierte Richtlinie** auswählen. Eine benutzerdefinierte Richtlinie ist leer und enthält keine vordefinierten Regeln. 
   
-## <a name="roll-out-dlp-policies-gradually-with-test-mode"></a>Allmähliches Bereitstellen von DLP-Richtlinien im Testmodus
+<!-- ## Roll out DLP policies gradually with test mode
 
-Beim Erstellen von DLP-Richtlinien sollten Sie eine schrittweise Einführung in Erwägung ziehen, um ihre Auswirkungen zu bewerten und ihre Wirksamkeit zu testen, bevor Sie sie in umfassendem Maße erzwingen. Sie möchten beispielsweise nicht, dass eine neue DLP-Richtlinie versehentlich den Zugriff auf Tausende von Dokumenten sperrt, die von den Benutzern für ihre Arbeit benötigt werden.
+rehomed to Plan for DLP
+
+When you create your DLP policies, you should consider rolling them out gradually to assess their impact and test their effectiveness before fully enforcing them. For example, you don't want a new DLP policy to unintentionally block access to thousands of documents that people require access to in order to get their work done.
   
-Wenn Sie DLP-Richtlinien erstellen, die potenziell weitreichende Auswirkungen haben können, empfehlen wir, in der folgenden Reihenfolge vorzugehen:
+If you're creating DLP policies with a large potential impact, we recommend following this sequence:
   
-1. **Beginnen Sie im Testmodus ohne Richtlinientipps**, und werten Sie die Auswirkungen dann anhand der DLP-Berichte aus. Sie können DLP-Berichte verwenden, um Anzahl, Ort, Typ und Schwere von Richtlinienübereinstimmungen anzuzeigen. Basierend auf den Ergebnissen können Sie die Regeln bei Bedarf anpassen. Im Testmodus haben DLP-Richtlinien keinen Einfluss auf die Produktivität der Mitarbeiter in Ihrer Organisation. 
+1. **Start in test mode without Policy Tips** and then use the DLP reports and any incident reports to assess the impact. You can use DLP reports to view the number, location, type, and severity of policy matches. Based on the results, you can fine tune the rules as needed. In test mode, DLP policies will not impact the productivity of people working in your organization. 
     
-2. **Fahren Sie im Testmodus mit Benachrichtigungen und Richtlinientipps fort**, sodass Sie die Benutzer über die Einhaltungsrichtlinien in Kenntnis setzen und auf die Anwendung der Regeln vorbereiten können. In dieser Phase können Sie die Benutzer auch bitte, Sie über falsche Positivmeldungen zu benachrichtigen, damit Sie die Regeln noch besser abstimmen können. 
+2. **Move to Test mode with notifications and Policy Tips** so that you can begin to teach users about your compliance policies and prepare them for the rules that are going to be applied. At this stage, you can also ask users to report false positives so that you can further refine the rules. 
     
-3. **Beginnen Sie mit der vollständigen Durchsetzung der Richtlinien**, sodass die Aktionen in den Regeln angewendet werden und der Inhalt geschützt ist. Überwachen Sie weiterhin die DLP-Berichte und alle Schadensberichte oder Benachrichtigungen, um sicherzustellen, dass die von Ihnen gewünschten Ergebnisse erzielt werden. 
+3. **Start full enforcement on the policies** so that the actions in the rules are applied and the content's protected. Continue to monitor the DLP reports and any incident reports or notifications to make sure that the results are what you intend. 
 
-    ![Optionen zum Verwenden des Testmodus und zum Aktivieren der Richtlinie](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
+    ![Options for using test mode and turning on policy](../media/49fafaac-c6cb-41de-99c4-c43c3e380c3a.png)
 
-    Sie können eine DLP-Richtlinie jederzeit deaktivieren. Dies wirkt sich auf alle Regeln in der Richtlinie aus. Jede Regel kann aber auch einzeln deaktiviert werden, indem ihr Status im Regel-Editor geändert wird.
+    You can turn off a DLP policy at any time, which affects all rules in the policy. However, each rule can also be turned off individually by toggling its status in the rule editor.
 
-    ![Optionen für das Deaktivieren einer Regel in einer Richtlinie](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
+    ![Options for turning off a rule in a policy](../media/f7b258ff-1b8b-4127-b580-83c6492f2bef.png)
 
-    Sie können auch die Priorität mehrerer Regeln in einer Richtlinie ändern. Öffnen Sie dazu eine Richtlinie zur Bearbeitung. Klicken Sie in einer Zeile für eine Regel auf die drei Auslassungspunkte (**...**), und wählen Sie dann eine Option aus, z. B. **Nach unten** oder **Nach ganz unten**.
+    You can also change the priority of multiple rules in a policy. To do that, open a policy for editing. In a row for a rule, choose the ellipses (**...**), and then choose an option, such as **Move down** or **Bring to last**.
 
     > [!div class="mx-imgBorder"]
-    > ![Festlegen der Regelpriorität](../media/dlp-set-rule-priority.png)
+    > ![Set rule priority](../media/dlp-set-rule-priority.png)-->
   
 ## <a name="dlp-reports"></a>DLP-Berichte
 
@@ -518,7 +520,7 @@ Während Dokumente auf Websites hinzugefügt oder geändert werden, werden die I
 Eine DLP wertet alle Inhalte aus, die indiziert werden können. Weitere Informationen zu den Dateitypen, die standardmäßig durchforstet werden, finden Sie unter [Standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 > [!NOTE]
-> Um zu verhindern, dass Dokumente freigegeben werden, bevor DLP-Richtlinien sie analysieren können, kann die Freigabe neuer Dateien in SharePoint blockiert werden, bis der Inhalt indiziert wurde. Ausführliche Informationen finden Sie unter [Neue Dateien standardmäßig als vertraulich kennzeichnen](/sharepoint/sensitive-by-default). 
+> Um zu verhindern, dass Dokumente freigegeben werden, bevor DLP-Richtlinien die Möglichkeit hatten, sie zu analysieren, kann die Freigabe neuer Dateien in SharePoint blockiert werden, bis der Inhalt indiziert wurde. Ausführliche Informationen finden Sie unter [Neue Dateien standardmäßig als vertraulich kennzeichnen](/sharepoint/sensitive-by-default). 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Richtlinienauswertung in Exchange, Outlook und Outlook im Web
 

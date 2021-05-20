@@ -19,12 +19,12 @@ ms.collection:
 description: Was sind bewährte Methoden für Exchange Online Protection (EOP) und Defender für Office 365 Sicherheitseinstellungen? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie Defender auch für Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3a4447d6eaeeb907eb750d2ad668fdbb9031c28b
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 1a2f65db0934c585210827299d46737040df8efb
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274868"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537895"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Empfohlene Einstellungen für EOP und Microsoft Defender für Office 365 Sicherheit
 
@@ -72,7 +72,7 @@ Informationen zum Erstellen und Konfigurieren von Antispamrichtlinien finden Sie
 |Aufbewahrungszeitraum für Quarantäne <p> _QuarantineRetentionPeriod_|15 Tage|30 Tage|30 Tage||
 |**Sicherheit Tipps** <p> _InlineSafetyTipsEnabled_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
 |Zugelassene Absender <p> _AllowedSenders_|Keine|Keine|Keine||
-|Zulässige Absenderdomänen <p> _AllowedSenderDomains_|Keine|Keine|Keine|Das Hinzufügen von Domänen zur Liste der zulässigen Absender ist eine sehr schlechte Idee. Angreifer können Ihnen E-Mails senden, die andernfalls herausgefiltert würden. <p> Verwenden Sie [spoof intelligence](learn-about-spoof-intelligence.md) im Security & Compliance Center auf der Seite Antispameinstellungen, um alle Absender zu überprüfen, die Absender-E-Mail-Adressen in den **E-Mail-Domänen** Ihrer Organisation spoofieren oder Absender-E-Mail-Adressen in externen Domänen spoofieren.|
+|Zulässige Absenderdomänen <p> _AllowedSenderDomains_|Keine|Keine|Keine|Das Hinzufügen von Domänen zur Liste der zulässigen Absender ist eine sehr schlechte Idee. Angreifer können Ihnen E-Mails senden, die andernfalls herausgefiltert würden. <p> Verwenden Sie den Einblick in [spoof intelligence](learn-about-spoof-intelligence.md) und die Mandanten-Allow/Block [List](tenant-allow-block-list.md) im Security & Compliance Center, um alle Absender zu überprüfen, die Absender-E-Mail-Adressen in den E-Mail-Domänen Ihrer Organisation spoofieren oder Absender-E-Mail-Adressen in externen Domänen spoofieren.|
 |Blockierte Absender <p> _BlockedSenders_|Keine|Keine|Keine||
 |Blockierte Absenderdomänen <p> _BlockedSenderDomains_|Keine|Keine|Keine||
 |**Spambenachrichtigungen für Endbenutzer aktivieren** <p> _EnableEndUserSpamNotifications_|Deaktiviert <p> `$false`|Aktiviert <p> `$true`|Aktiviert <p> `$true`||
@@ -156,7 +156,7 @@ Weitere Informationen zu diesen Einstellungen finden Sie unter [Spoof-Einstellun
 |---|:---:|:---:|:---:|---|
 |**Aktivieren des Antis spoofing-Schutzes** <p> _EnableSpoofIntelligence_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
 |**Aktivieren des nicht authentifizierten Absenders** <p> _EnableUnauthenticatedSender_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`|Fügt dem Foto des Absenders in der Liste ein Fragezeichen (?) Outlook nicht identifizierten spoofierten Absendern hinzu. Weitere Informationen finden Sie unter [Spoofeinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md).|
-|**Wenn E-Mails von einer Person gesendet werden, die Ihre Domäne nicht spoofen darf** <p> _AuthenticationFailAction_|**Verschieben von Nachrichten in die Junk-E-Mail-Ordner der Empfänger** <p> `MoveToJmf`|**Verschieben von Nachrichten in die Junk-E-Mail-Ordner der Empfänger** <p> `MoveToJmf`|**Isolieren der Nachricht** <p> `Quarantine`|Diese Einstellung gilt für blockierte Absender in [Spoof Intelligence](learn-about-spoof-intelligence.md).|
+|**Wenn E-Mails von einer Person gesendet werden, die Ihre Domäne nicht spoofen darf** <p> _AuthenticationFailAction_|**Verschieben von Nachrichten in die Junk-E-Mail-Ordner der Empfänger** <p> `MoveToJmf`|**Verschieben von Nachrichten in die Junk-E-Mail-Ordner der Empfänger** <p> `MoveToJmf`|**Isolieren der Nachricht** <p> `Quarantine`|Diese Einstellung gilt für spoofierte Absender, die automatisch blockiert wurden, wie in der [Spoof Intelligence-Einsicht](learn-about-spoof-intelligence.md) gezeigt oder manuell in der [Mandanten zulassen/Blockieren-Liste blockiert wurden.](tenant-allow-block-list.md)|
 |
 
 ## <a name="microsoft-defender-for-office-365-security"></a>Microsoft Defender für Office 365 Sicherheit
@@ -214,7 +214,7 @@ Beachten Sie, dass es sich um dieselben Einstellungen handelt, die in den [Antis
 |---|---|---|---|---|
 |**Aktivieren des Antis spoofing-Schutzes** <p> _EnableSpoofIntelligence_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
 |**Aktivieren des nicht authentifizierten Absenders** <p> _EnableUnauthenticatedSender_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`|Fügt dem Foto des Absenders in der Liste ein Fragezeichen (?) Outlook nicht identifizierten spoofierten Absendern hinzu. Weitere Informationen finden Sie unter [Spoofeinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md).|
-|**Wenn E-Mails von einer Person gesendet werden, die Ihre Domäne nicht spoofen darf** <p> _AuthenticationFailAction_|**Verschieben von Nachrichten in die Junk-E-Mail-Ordner der Empfänger** <p> `MoveToJmf`|**Verschieben von Nachrichten in die Junk-E-Mail-Ordner der Empfänger** <p> `MoveToJmf`|**Isolieren der Nachricht** <p> `Quarantine`|Diese Einstellung gilt für blockierte Absender in [Spoof Intelligence](learn-about-spoof-intelligence.md).|
+|**Wenn E-Mails von einer Person gesendet werden, die Ihre Domäne nicht spoofen darf** <p> _AuthenticationFailAction_|**Verschieben von Nachrichten in die Junk-E-Mail-Ordner der Empfänger** <p> `MoveToJmf`|**Verschieben von Nachrichten in die Junk-E-Mail-Ordner der Empfänger** <p> `MoveToJmf`|**Isolieren der Nachricht** <p> `Quarantine`|Diese Einstellung gilt für spoofierte Absender, die automatisch blockiert wurden, wie in der [Spoof Intelligence-Einsicht](learn-about-spoof-intelligence.md) gezeigt oder manuell in der [Mandanten zulassen/Blockieren-Liste blockiert wurden.](tenant-allow-block-list.md)|
 |
 
 #### <a name="advanced-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Erweiterte Einstellungen in Antiphishingrichtlinien in Microsoft Defender for Office 365

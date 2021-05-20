@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: chrfox
 author: chrfox
 manager: laurawi
-ms.date: 07/21/2020
+ms.date: ''
 audience: ITPro
 ms.topic: conceptual
 f1_keywords:
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Einrichten des lokalen Microsoft 365-Scanners zur Verhinderung von Datenverlust
-ms.openlocfilehash: 242956a3c6469756481fb823340e715a210562af
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: deae5dfa803b002174583ae67412af9fc028fcb9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114173"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538099"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>Erste Schritte mit dem lokalen Scanner zur Verhinderung von Datenverlust (Vorschau)
 

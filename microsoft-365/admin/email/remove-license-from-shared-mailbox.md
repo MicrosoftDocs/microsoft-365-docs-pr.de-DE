@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: 'Entfernen Sie die Lizenz aus einem freigegebenen Postfach, um sie einem anderen Benutzer zuzuordnen. '
-ms.openlocfilehash: 2d0e6e6b1d6222bea80265bf6cc008e21ac3239c
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: d552cfb77ff0ab2853939c6cb25fd4737f8c17d3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332654"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537583"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Entfernen einer Lizenz aus einem freigegebenen Postfach
 
@@ -47,6 +47,20 @@ Für freigegebene Postfächer ist in der Regel keine Lizenz erforderlich. Befolg
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
+
+::: moniker-end
+
    > [!NOTE]
    > Sie müssen die Lizenz von der Seite Aktive Benutzer entfernen. Sie können die Lizenz nicht von der Seite Freigegebenes Postfach entfernen, da Lizenzen Benutzereinstellungen sind.
   
@@ -59,46 +73,6 @@ Für freigegebene Postfächer ist in der Regel keine Lizenz erforderlich. Befolg
 5. Wenn Sie zur Seite **Aktive** Benutzer zurückkehren, wird der Status des **freigegebenen Postfachs nicht lizenziert.**
 
 6. Sie zahlen weiterhin für die Lizenz. Um die Zahlung zu beenden, [entfernen Sie die Lizenz aus Ihrem Abonnement.](../../commerce/licenses/buy-licenses.md)
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
- 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
-
-    > [!NOTE]
-    > Sie müssen die Lizenz von der Seite Aktive Benutzer entfernen. Sie können die Lizenz nicht von der Seite Freigegebenes Postfach entfernen, da Lizenzen Benutzereinstellungen sind.
-
-2. Wählen Sie das freigegebene Postfach aus, und wählen Sie dann **Bearbeiten neben** **Produktlizenzen aus.**
-
-3. Legen Sie **auf der Seite** Produktlizenzen den Umschalter auf **Aus** für die Lizenz, die Sie entfernen möchten, ein.
-
-4. Wählen Sie **Speichern** aus.
-
-5. Wenn Sie zur Seite **Aktive** Benutzer zurückkehren, wird der Status des **freigegebenen Postfachs nicht lizenziert.**
-
-6. Sie zahlen weiterhin für die Lizenz. Um die Zahlung zu beenden, [entfernen Sie die Lizenz aus Ihrem Abonnement.](../../commerce/licenses/buy-licenses.md)
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
- 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
-
-    > [!NOTE]
-    > Sie müssen die Lizenz von der Seite Aktive Benutzer entfernen. Sie können die Lizenz nicht von der Seite Freigegebenes Postfach entfernen, da Lizenzen Benutzereinstellungen sind.
-
-2. Wählen Sie das freigegebene Postfach aus, und wählen Sie dann **Bearbeiten neben** **Produktlizenzen aus.**
-
-3. Legen Sie **auf der Seite** Produktlizenzen den Umschalter auf **Aus** für die Lizenz, die Sie entfernen möchten, ein.
-
-4. Wählen Sie **Speichern** aus.
-
-5. Wenn Sie zur Seite **Aktive** Benutzer zurückkehren, wird der Status des **freigegebenen Postfachs nicht lizenziert.**
-
-6. Sie zahlen weiterhin für die Lizenz. Um die Zahlung zu beenden, [entfernen Sie die Lizenz aus Ihrem Abonnement.](../../commerce/licenses/buy-licenses.md)
-
-::: moniker-end
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

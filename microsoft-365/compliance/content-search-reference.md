@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Dieser Artikel enthält Referenzinformationen über das Inhaltssuche-eDiscovery-Tool im Microsoft 365 Compliance Center, damit Sie sich mit den vielen Details der Inhaltssuche vertraut machen können.
-ms.openlocfilehash: f3545cc4644ca8b0a96ee37713d8fe62be7466e5
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 14660b4cfcd09f5346fa8d0d901880d0a6c774c2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332894"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538483"
 ---
 # <a name="feature-reference-for-content-search"></a>Featurereferenz für die Inhaltssuche
 
@@ -33,19 +33,7 @@ Dieser Artikel beschreibt Features und Funktionalität der Inhaltssuche.
 
 ## <a name="content-search-limits"></a>Grenzwerte für Inhaltssuchen
 
-- Eine Beschreibung der Einschränkungen für die Inhaltssuche finden Sie unter [Einschränkungen der Inhaltssuche](limits-for-content-search.md).
-  
-- Microsoft sammelt Leistungsinformationen für Inhaltssuchen, die von allen Organisationen ausgeführt werden. Obwohl sich die Komplexität einer Suchabfrage negativ auf die Suchzeiten auswirken kann, ist die Anzahl der durchsuchten Postfächer der Faktor, der die Suchdauer am stärksten beeinflusst. Microsoft bietet zwar keine Vereinbarung zum Servicelevel (Service Level Agreement, SLA) für Suchzeiten an, in der folgenden Tabelle werden jedoch durchschnittliche Suchzeiten für eine Inhaltssuche basierend auf der Anzahl der in die Suche einbezogenen Postfächer angegeben.
-  
-  |**Anzahl Postfächer**|**Durchschnittliche Suchzeit**|
-  |:-----|:-----|
-  |100  <br/> |30 Sekunden  <br/> |
-  |1.000  <br/> |45 Sekunden  <br/> |
-  |10.000  <br/> |4 Minuten  <br/> |
-  |25.000  <br/> |10 Minuten  <br/> |
-  |50.000  <br/> |20 Minuten  <br/> |
-  |100.000  <br/> |25 Minuten  <br/> |
-  |||
+Eine Beschreibung der Einschränkungen für die Inhaltssuche finden Sie unter [Einschränkungen der Inhaltssuche](limits-for-content-search.md).
   
 ## <a name="building-a-search-query"></a>Erstellen einer Suchabfrage
 
@@ -71,7 +59,7 @@ Bedenken Sie bei der Verwendung einer Schlüsselwortliste zum Erstellen einer Su
   
 - Wenn Sie eine Inhaltssuche ausführen, überprüft Microsoft 365 Ihre Suchanfrage automatisch auf nicht unterstützte Zeichen und auf boolesche Operatoren, die nicht großgeschrieben werden dürfen. Nicht unterstützte Zeichen sind häufig ausgeblendet und verursachen in der Regel einen Suchfehler, oder es werden unerwartete Ergebnisse zurückgegeben. Weitere Informationen zu den nicht unterstützten Zeichen, nach denen gesucht wird, finden Sie unter [Überprüfen der Inhaltssuchabfrage auf Fehler](check-your-content-search-query-for-errors.md).
     
-- Wenn eine Suchabfrage Schlüsselwörter für nichtenglische Zeichen enthält (z. B. chinesische Zeichen), können Sie auf **Abfragesprache Land/Region**![Query language-country/region icon in Content search](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) klicken und einen Kulturcodewert für Sprache und Region für die Suche auswählen. Die standardmäßige Sprache/Region ist neutral. Woran erkennen Sie, dass Sie die Spracheinstellung für eine Inhaltssuche ändern müssen? Wenn Sie sicher sind, dass bestimmte Inhaltsspeicherorte nichtenglische Zeichen enthalten, nach denen Sie suchen, die Suche jedoch keine Ergebnisse zurückgibt, könnte die Spracheinstellung die Ursache sein. 
+- Wenn eine Suchabfrage Schlüsselwörter für nichtenglische Zeichen enthält (z. B. chinesische Zeichen), können Sie auf **Abfragesprache Land/Region**![Query language-country/region icon in Content search](../media/8d4b60c8-e1f1-40f9-88ae-ee2a7eca0886.png) klicken und einen Kulturcodewert für Sprache und Region für die Suche auswählen. Die standardmäßige Sprache/Region ist neutral. Woran erkennen Sie, dass Sie die Spracheinstellung für eine Inhaltssuche ändern müssen? Wenn Sie sicher sind, dass bestimmte Inhaltsspeicherorte nichtenglische Zeichen enthalten, nach denen Sie suchen, die Suche jedoch keine Ergebnisse zurückgibt, könnte die Spracheinstellung die Ursache sein.
   
 ## <a name="partially-indexed-items"></a>Teilweise indizierte Elemente
 

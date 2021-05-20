@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 202ebc8b79368c8d41fd3727b67359ddcb8a08fa
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a59b24cd29ab8bf3b9b08c7818813a7ab89f7ce2
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206614"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537883"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Behebung bösartiger E-Mails, die in Office 365
 
@@ -32,7 +32,7 @@ ms.locfileid: "51206614"
 Korrektur bedeutet, eine vorgeschriebene Aktion gegen eine Bedrohung zu ergreifen. Bösartige E-Mails, die an Ihre Organisation gesendet werden, können entweder vom System, über die automatische Löschzeit (Zero-Hour Auto Purge, ZAP) oder von Sicherheitsteams durch Korrekturaktionen wie Verschieben in den *Posteingang,* Wechseln zu *Junk,* Verschieben zu gelöschten *Elementen,* soft *delete* oder hard *delete* bereinigt werden. Microsoft Defender for Office 365 P2/E5 ermöglicht Es Sicherheitsteams, Bedrohungen in E-Mail- und Zusammenarbeitsfunktionen durch manuelle und automatisierte Untersuchung zu beabwehren.
 
 > [!NOTE]
-> Zum Bereinigen bösartiger E-Mails benötigen Sicherheitsteams *die* Ihnen zugewiesene Such- und Bereinigungsrolle. Die Rollenzuweisung erfolgt über Berechtigungen im Security and Compliance Center.
+> Zum Bereinigen bösartiger E-Mails benötigen Sicherheitsteams *die* Ihnen zugewiesene Such- und Bereinigungsrolle. Die Rollenzuweisung erfolgt über [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
 ## <a name="what-you-need-to-know-before-you-begin"></a>Was Sie wissen müssen, bevor Sie beginnen
 

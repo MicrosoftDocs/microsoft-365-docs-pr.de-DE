@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Erfahren Sie, wie Sie Registrierungsschlüssel festlegen, um die moderne Authentifizierung für Geräte zu aktivieren, auf denen Microsoft Office 2013 installiert ist.
-ms.openlocfilehash: f803cf9a30be63e71ef3c4293d0d1ba5b2355e75
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d358cb2ffb4284a51779e5a7c1dc894052b9ebc0
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580834"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572285"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Aktivieren der modernen Authentifizierung für Office 2013 auf Windows-Geräten
 
@@ -45,7 +45,7 @@ Um moderne Authentifizierung bei Geräten unter Windows (beispielsweise auf Lapt
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
    
-Nachdem Sie die Registrierungsschlüssel festgelegt haben, können Sie Office 2013-Geräte-Apps so festlegen, dass die mehrstufige Authentifizierung [(MFA)](set-up-multi-factor-authentication.md) mit Microsoft 365. 
+Nachdem Sie die Registrierungsschlüssel festgelegt haben, können Sie Office 2013-Geräte-Apps so festlegen, dass [die Multifaktorauthentifizierung (Multifactor Authentication, MFA)](set-up-multi-factor-authentication.md) mit Microsoft 365 verwendet wird. 
   
 Wenn Sie aktuell bei einer der Client-Apps angemeldet sind, müssen Sie sich abmelden und wieder anmelden, damit die Änderung wirksam wird. Andernfalls werden die MRU- und Roamingeinstellungen erst wieder verfügbar, wenn die ADAL-Identität eingerichtet ist.
   
@@ -57,8 +57,9 @@ Wenn Sie moderne Authentifizierung auf einem Gerät deaktivieren möchten, legen
 |:-------|:------:|--------:|
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL |REG_DWORD|0|
    
-## <a name="related-articles"></a>Verwandte Artikel
-[Anmelden bei Office 2013 mit einer zweiten Überprüfungsmethode](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Outlook Eingabeaufforderungen zum Kennwort und verwendet keine moderne Authentifizierung, um eine Verbindung mit Office 365](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)
+[Melden Sie sich bei Office 2013 mit einer zweiten Überprüfungsmethode an](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb) (Artikel)
+
+Outlook fordert ein Kennwort an [und verwendet keine moderne Authentifizierung, um eine Verbindung mit Office 365 herzustellen](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled) (Artikel)
 

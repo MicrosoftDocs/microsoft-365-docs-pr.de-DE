@@ -16,13 +16,14 @@ f1.keywords: NOCSH
 ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
+recommendations: false
 description: Erfahren Sie mehr über die in Microsoft 365 verfügbaren Gastfreigabeeinstellungen, die sich auf die Freigabe für Personen außerhalb Ihrer Organisation auswirken können.
-ms.openlocfilehash: bdb86dd7545c00f0ed24552b22062a983e450b47
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 60ebff4f564e7046a54cb707781acc0151aa8ad9
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215564"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538111"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Referenz zu Gastfreigabeeinstellungen für Microsoft 365
 
@@ -231,8 +232,8 @@ Sie können Standardeinstellungen für Verknüpfungstyp und Berechtigungen sowie
 |:-----|:-----|:-----|
 |Einschränken der Freigabe nach Domäne|Off|Diese Einstellung ermöglicht es Ihnen, eine Liste der zulässigen oder gesperrte Domänen für die Freigabe festzulegen. Wenn zulässige Domänen angegeben sind, können Freigabeeinladungen nur an diese Domänen gesendet werden. Wenn gesperrte Domänen angegeben sind, können keine Freigabeeinladungen an diese Domänen gesendet werden.<br><br> Diese Einstellung kann nicht dazu verwendet werden, die auf Organisations- oder Azure AD-Ebene festgelegten Domäneneinschränkungen außer Kraft zu setzen.|
 |Standardmäßiger Freigabe-Linktyp|Identisch mit der Einstellung auf Organisationsebene|Diese Einstellung ermöglicht es Ihnen, den standardmäßigen Freigabelink anzugeben, der Benutzern auf dieser Website angezeigt wird. Die Option *Identisch mit der Einstellung auf Organisationsebene* wird durch eine Kombination aus Organisations- und Website Freigabeeinstellungen definiert.|
-|Erweiterte Einstellungen für "Jeder"-Links|Identisch mit der Einstellung auf Organisationsebene|Gibt an, wie viele Tage nach dessen Erstellung ein *Jeder*-Link für eine Datei auf der betreffenden Seite abläuft. Abgelaufene Links können nicht verlängert werden. Erstellen Sie einen neuen Link, wenn die Freigabe über das Ablaufdatum hinaus fortgesetzt werden soll.|
-|Standardlinkberechtigung|Identisch mit der Einstellung auf Organisationsebene|Über diese Einstellung können Sie die Standardberechtigung ("Anzeigen" oder "Bearbeiten") für Freigabelinks angeben, die für Dateien auf der betreffenden Website erstellt wurden.|
+|Erweiterte Einstellungen für "Jeder&quot;-Links|Identisch mit der Einstellung auf Organisationsebene|Gibt an, wie viele Tage nach dessen Erstellung ein *Jeder*-Link für eine Datei auf der betreffenden Seite abläuft. Abgelaufene Links können nicht verlängert werden. Erstellen Sie einen neuen Link, wenn die Freigabe über das Ablaufdatum hinaus fortgesetzt werden soll.|
+|Standardlinkberechtigung|Identisch mit der Einstellung auf Organisationsebene|Über diese Einstellung können Sie die Standardberechtigung (&quot;Anzeigen&quot; oder &quot;Bearbeiten") für Freigabelinks angeben, die für Dateien auf der betreffenden Website erstellt wurden.|
 
 ### <a name="default-site-sharing-settings"></a>Standardeinstellungen für die Website-Freigabe
 
