@@ -68,7 +68,7 @@
       href: billing-and-payments/psd2.md
 - name: Abrechnungskonten
   items:
-    - name: Abrechnungskonten verwalten
+    - name: Abrechnungskonten verstehen
       href: manage-billing-accounts.md
     - name: Zuordnen eines Mandanten zu Ihrem Abrechnungskonto
       href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business

@@ -1,5 +1,5 @@
 ---
-title: Abrufen eines postfach nicht gefundenen Fehlers in Outlook im Web
+title: Fehlermeldung "Postfach nicht gefunden" in Outlook im Web erhalten
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -8,24 +8,37 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 ROBOTS: NOINDEX, NOFOLLOW
 search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
-description: Erfahren Sie, wie Sie nicht lizenzierten Benutzern eine Lizenz hinzufügen, um den Fehler "Postfach nicht gefunden" zu beheben.
-ms.openlocfilehash: e5cdb7b48f3634d51dfe1862d07d58a23e125135
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
-ms.translationtype: MT
+description: Der Fehler **Postfach konnte nicht gefunden werden** bedeutet, dass das Konto, das Sie für die Verbindung mit Outlook im Web verwendet haben, keine Exchange Online-Lizenz besitzt.
+ms.openlocfilehash: 5ae850da3b9a4022c01f8bf4469f5e86f44b10bd
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454325"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537439"
 ---
-# <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a><span data-ttu-id="9042a-103">Abrufen eines Postfachs nicht gefunden Fehler in Outlook im Web?</span><span class="sxs-lookup"><span data-stu-id="9042a-103">Getting a mailbox not found error in Outlook on the web?</span></span>
+# <a name="getting-a-mailbox-not-found-error-in-outlook-on-the-web"></a><span data-ttu-id="87144-103">Fehlermeldung "Postfach nicht gefunden" in Outlook im Web erhalten?</span><span class="sxs-lookup"><span data-stu-id="87144-103">Getting a mailbox not found error in Outlook on the web?</span></span>
 
-<span data-ttu-id="9042a-104">Wenn Sie Outlook im Web verwenden und ein  Postfach nicht gefunden werden konnte, hat das Konto, das Sie zum Herstellen einer Verbindung mit Outlook im Web verwendet haben, keine Exchange Online-Lizenz, und daher ist dem Konto kein Postfach zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="9042a-104">If you're using Outlook on the web and you get a  **Mailbox couldn't be found for**  error, the account that you used to connect to Outlook on the web doesn't have an Exchange Online license and therefore, no mailbox is associated with the account.</span></span> <span data-ttu-id="9042a-105">Ihr Administrator kann Ihrem Konto eine Lizenz zuweisen, indem sie die folgenden Schritte ausführen:</span><span class="sxs-lookup"><span data-stu-id="9042a-105">Your admin can assign a license to your account by following these steps:</span></span>
+<span data-ttu-id="87144-104">Wenn Sie Outlook im Web verwenden und die Fehlermeldung  **Postfach konnte nicht gefunden werden für**  angezeigt wird, verfügt das Konto, das Sie für die Verbindung mit Outlook im Web verwendet haben, nicht über eine Exchange Online-Lizenz und daher ist dem Konto kein Postfach zugeordnet.</span><span class="sxs-lookup"><span data-stu-id="87144-104">If you're using Outlook on the web and you get a  **Mailbox couldn't be found for**  error, the account that you used to connect to Outlook on the web doesn't have an Exchange Online license and therefore, no mailbox is associated with the account.</span></span> 
 
-1. <span data-ttu-id="9042a-106">Öffnen Sie [Microsoft 365 Admin Center,](https://portal.office.com/adminportal/home#/homepage) wechseln Sie  im Abschnitt Benutzer zu Aktive Benutzer, und wählen Sie den Benutzer aus, dem der Fehler angezeigt wird. </span><span class="sxs-lookup"><span data-stu-id="9042a-106">Open the  [Microsoft 365 admin center](https://portal.office.com/adminportal/home#/homepage)  and go to  **Active users**  under the  **Users**  section, and select the user who is seeing the error.</span></span>
-2. <span data-ttu-id="9042a-107">Wechseln Sie auf der geöffneten Benutzerseite zum Abschnitt Lizenzen und **Apps,** wählen Sie den entsprechenden **Standortwert** aus, und weisen Sie eine Lizenz zu, die Exchange Online enthält (erweitern Sie die Lizenz, um ihre Details anzuzeigen).</span><span class="sxs-lookup"><span data-stu-id="9042a-107">In the user page that opens, go to the  **Licenses and Apps**  section, select the appropriate  **Location**  value, and assign a license that contains Exchange Online (expand the license to see its details).</span></span> <span data-ttu-id="9042a-108">Klicken Sie nach Abschluss des Abschlusses auf **Änderungen speichern.**</span><span class="sxs-lookup"><span data-stu-id="9042a-108">When you're finished, click  **Save changes**.</span></span>
+## <a name="assign-a-license-to-your-account"></a><span data-ttu-id="87144-105">Eine Lizenz Ihrem Konto zuweisen</span><span class="sxs-lookup"><span data-stu-id="87144-105">Assign a license to your account</span></span>
+
+<span data-ttu-id="87144-106">Ihr Administrator kann Ihrem Konto eine Lizenz zuweisen, indem er die folgenden Schritte ausführt:</span><span class="sxs-lookup"><span data-stu-id="87144-106">Your admin can assign a license to your account by following these steps:</span></span>
+
+1. <span data-ttu-id="87144-107">Öffnen Sie das  [ Microsoft 365 Admin Center](https://portal.office.com/adminportal/home#/homepage)  und gehen Sie zu  **Aktive Benutzer**  im Abschnitt  **Benutzer**  und wählen Sie den Benutzer aus, bei dem der Fehler auftritt.</span><span class="sxs-lookup"><span data-stu-id="87144-107">Open the  [Microsoft 365 admin center](https://portal.office.com/adminportal/home#/homepage)  and go to  **Active users**  under the  **Users**  section, and select the user who is seeing the error.</span></span>
+1. <span data-ttu-id="87144-108">Wechseln Sie auf der sich öffnenden Benutzerseite in den Bereich  **Lizenzen und Apps**, wählen Sie den entsprechenden  **Standortwert**  aus und weisen Sie eine Lizenz zu, die Exchange Online enthält (erweitern Sie die Lizenz, um ihre Details zu sehen).</span><span class="sxs-lookup"><span data-stu-id="87144-108">In the user page that opens, go to the  **Licenses and Apps**  section, select the appropriate  **Location**  value, and assign a license that contains Exchange Online (expand the license to see its details).</span></span> 
+1. <span data-ttu-id="87144-109">Klicken Sie nach Abschluss des Vorgangs auf **Änderungen speichern**.</span><span class="sxs-lookup"><span data-stu-id="87144-109">When you're finished, click  **Save changes**.</span></span>
+
+## <a name="related-content"></a><span data-ttu-id="87144-110">Verwandte Inhalte</span><span class="sxs-lookup"><span data-stu-id="87144-110">Related content</span></span>
+
+<span data-ttu-id="87144-111">[Hinzufügen eines weiteren E-Mail-Alias für einen Benutzer](../email/add-another-email-alias-for-a-user.md) (Artikel)</span><span class="sxs-lookup"><span data-stu-id="87144-111">[Add another email alias for a user](../email/add-another-email-alias-for-a-user.md) (article)</span></span>
+
+<span data-ttu-id="87144-112">[Konfigurieren der E-Mail-Weiterleitung in Microsoft 365](../email/configure-email-forwarding.md) (Artikel)</span><span class="sxs-lookup"><span data-stu-id="87144-112">[Configure email forwarding in Microsoft 365](../email/configure-email-forwarding.md) (article)</span></span>
+
+<span data-ttu-id="87144-113">[Erstellen eines freigegebenen Postfachs](../email/create-a-shared-mailbox.md) (Artikel)</span><span class="sxs-lookup"><span data-stu-id="87144-113">[Create a shared mailbox](../email/create-a-shared-mailbox.md) (article)</span></span>
