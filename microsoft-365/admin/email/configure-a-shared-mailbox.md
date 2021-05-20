@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Nachdem Sie ein freigegebenes Postfach erstellt haben, sollten Sie einige Einstellungen für die Benutzer konfigurieren, z. B. E-Mail-Weiterleitung und automatische Antworten. Später möchten Sie möglicherweise andere Einstellungen ändern, z. B. den Postfachnamen oder Mitglieder.
-ms.openlocfilehash: 01d5aaa686e1d64c9ea7d89913d8208f779dcfd1
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Erstellen Sie ein freigegebenes Postfach, und konfigurieren Sie einige Einstellungen für ihre Benutzer, z. B. E-Mail-Weiterleitung und automatische Antworten.
+ms.openlocfilehash: ab23353f07a24f06d43172e8087819dd915ab720
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52243972"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582668"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Konfigurieren der Einstellungen für das freigegebene Postfach
 

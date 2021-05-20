@@ -24,13 +24,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
-description: Erfahren Sie, wie Sie E-Mail-Signaturen verwalten, einschließlich rechtlicher Haftungsausschlüsse oder Offenlegungserklärungen für alle E-Mail-Nachrichten, die Ihr Unternehmen erreichen oder verlassen.
-ms.openlocfilehash: e1c3df235442fdc6f569825a7137c92bfc5bb044
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Verwalten von E-Mail-Signaturen, einschließlich rechtlicher Haftungsausschlüsse oder Offenlegungsanweisungen für alle E-Mail-Nachrichten, die Ihre Organisation betreten oder verlassen.
+ms.openlocfilehash: 05cfeeb01231e7f99d2a96fc37581b4c9a23f5aa
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244527"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582752"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Erstellen von organisationsweiten Signaturen und Haftungsausschlüssen
 
@@ -115,4 +115,13 @@ Verwenden Sie ein Drittanbieter-Tool, um diese und andere Funktionen zum Verwalt
   
 ## <a name="more-resources"></a>Weitere Ressourcen
 
-- Weiter Informationen zur Verwendung von PowerShell finden Sie unter [Organisationsweite Haftungsausschlüsse, Signaturen, Fußzeilen oder Kopfzeilen für Nachrichten in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers).
+Informationen zur Verwendung von PowerShell finden Sie unter [Organisationsweite Haftungsausschlüsse, Signaturen,](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)Fußzeilen oder Kopfzeilen in Exchange Online .
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Migrieren von E-Mails und Kontakten zu Microsoft 365](migrate-email-and-contacts-admin.md) (Video)
+
+[Benutzer-E-Mail-Einstellungen](../email/office-365-user-email-settings.md) (Artikel)
+
+[Übersicht über das Microsoft 365 Admin Center](../../business-video/admin-center-overview.md) (Video)
+

@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b7c66b59-657a-4e1a-8aa0-8163b1f4eb54
-description: Erfahren Sie, wie Sie eine gelöschte Microsoft 365-Gruppe wiederherstellen können.
-ms.openlocfilehash: f3b6435d82d5beddf44f5920011b076b39c7dcd5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Eine gelöschte Gruppe wird für 30 Tage aufbewahrt, und Sie können die Gruppe weiterhin wiederherstellen. Nach 30 Tagen werden die Gruppe und ihre Inhalte endgültig gelöscht.
+ms.openlocfilehash: 285796ec45b1e6d77d46d7a0c39706f566bb8cf6
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910546"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582680"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>Wiederherstellen einer gelöschten Microsoft 365-Gruppe
 
@@ -81,12 +81,12 @@ Wenn Sie ein globaler Administrator oder ein Gruppenadministrator sind, können 
 
 Besuchen Sie die [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups), um Fragen zu posten und an Unterhaltungen zu Microsoft 365-Gruppen teilzunehmen. 
   
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Verwalten von Microsoft 365-Gruppen mit PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md)
+[Verwalten Microsoft 365 Gruppen mit PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md) (Artikel)
   
-[Löschen von Gruppen mit dem Cmdlet "Remove-UnifiedGroup"](/powershell/module/exchange/remove-unifiedgroup)
+[Löschen von Gruppen mithilfe des Remove-UnifiedGroup Cmdlets](/powershell/module/exchange/remove-unifiedgroup) (Artikel)
   
-[Verwalten Ihrer gruppenabhängigen Teamwebsiteeinstellungen](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42)
+[Verwalten der Mit einer Gruppe verbundenen Teamwebsiteeinstellungen](https://support.microsoft.com/office/8376034d-d0c7-446e-9178-6ab51c58df42) (Artikel)
   
-[Löschen einer Gruppe in Outlook 2016](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f)
+[Löschen einer Gruppe in Outlook](https://support.microsoft.com/office/ca7f5a9e-ae4f-4cbe-a4bc-89c469d1726f) (Artikel)

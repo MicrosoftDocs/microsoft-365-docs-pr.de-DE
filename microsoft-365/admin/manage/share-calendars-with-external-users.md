@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb00dd4e-2d5f-4e8d-8ff4-94b2cf002bdd
-description: Erfahren Sie, wie Sie Ihre Benutzer ihre Kalender für Besprechungen und Termine mit externen Benutzern gemeinsam nutzen lassen können.
-ms.openlocfilehash: 5fc80965ae277e66dfbf73de80618dec03d26759
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Aktivieren sie die Kalenderfreigabe im Microsoft 365 Admin Center, damit Benutzer ihre Kalender für alle Personen innerhalb oder außerhalb der Organisation freigeben können.
+ms.openlocfilehash: 6f4c215403e16ac6658619e50e6115606f106397
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915050"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582716"
 ---
 # <a name="share-calendars-with-external-users"></a>Freigeben von Kalendern für externe Benutzer
 
@@ -51,3 +51,11 @@ Sie können die Kalenderfreigabe für alle Benutzer in Ihrer Organisation im Mic
 ## <a name="invite-people-to-access-calendars"></a>Personen zum Zugreifen auf Kalender einladen
 
 Sobald die Freigabe aktiviert ist, können Kalenderbesitzer Einladungen an bestimmte Benutzer aussprechen. Anweisungen finden Sie unter [Freigabe Ihres Kalenders in Outlook-Webanwendung](https://support.microsoft.com/office/7ecef8ae-139c-40d9-bae2-a23977ee58d5).
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Aktivieren oder Deaktivieren der externen Freigabe für eine Website](/sharepoint/change-external-sharing-site) (Artikel)
+
+[Übersicht über das Microsoft 365 Admin Center](../../business-video/admin-center-overview.md) (Video)
+
+[Verwalten von E-Mails und Kalendern](../email/index.yml) (Linkseite)

@@ -23,13 +23,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Führen Sie die folgenden Schritte aus, um einem anderen Mitarbeiter Zugriff auf die daten- und OneDrive und Outlook des ehemaligen Mitarbeiters zu geben.
-ms.openlocfilehash: 451f8f7f50098c280e3925ef4efe5ad491ac54fa
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Führen Sie die Schritte in diesem Artikel aus, um einem anderen Mitarbeiter Zugriff auf die Daten des ehemaligen Mitarbeiters OneDrive Outlook geben.
+ms.openlocfilehash: cb5c27cbc7f1c184af8f0d1ad32b822660e93791
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244209"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582692"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Schritt 4: Geben Sie einem anderen Mitarbeiter Zugriff auf OneDrive und Outlook Daten
 
@@ -161,10 +161,10 @@ Um einem anderen Mitarbeiter Zugriff auf E-Mail-Nachrichten, Kalender, Aufgaben 
 > [!TIP]
 > Wenn Sie nur wenige Elemente aus einer Outlook (PST) importieren oder wiederherstellen möchten, können Sie die datei Outlook öffnen. Ziehen Sie dann im Navigationsbereich die Elemente aus Outlook Datendateiordnern in Ihre vorhandenen Outlook Ordner. 
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Hinzufügen und Entfernen von Administratoren in einem OneDrive Konto](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
+[Hinzufügen und Entfernen von Administratoren in einem OneDrive](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) Konto (Artikel)
 
-[Wiederherstellen eines gelöschten OneDrive](/onedrive/restore-deleted-onedrive)
+[Wiederherstellen eines gelöschten OneDrive](/onedrive/restore-deleted-onedrive) (Artikel)
   
-[Aufbewahrung und Löschung in OneDrive](/onedrive/retention-and-deletion)
+[OneDrive Aufbewahrung und Löschung](/onedrive/retention-and-deletion) (Artikel)
