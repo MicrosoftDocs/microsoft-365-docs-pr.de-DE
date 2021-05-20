@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen für IT-Administratoren zur Verwaltung von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobilgeräte und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cb385ec5589af115ce1a0d323e3660def42179b9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: f280cae2364a3ad76a3a3ff91ce382fdf69eab2b
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345764"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52532050"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -170,7 +170,7 @@ Wenn Benutzer ein Dokument oder eine E-Mail zum ersten Mal mit einer Bezeichnung
 
 - Ein Benutzer wendet die Bezeichnung **Vertraulich \ Alle Mitarbeiter** auf ein Dokument an und diese Bezeichnung ist so konfiguriert, dass die Verschlüsselungseinstellungen für alle Benutzer in der Organisation gelten. Dieser Benutzer konfiguriert dann manuell die IRM-Einstellungen, um den Zugriff auf einen Benutzer außerhalb Ihrer Organisation zu beschränken. Das Endergebnis ist ein Dokument, das als **Vertraulich \ für alle Mitarbeiter** gekennzeichnet und verschlüsselt ist, aber die Benutzer in Ihrer Organisation können es nicht wie erwartet öffnen.
 
-- Ein Benutzer versieht eine E-Mail mit der Bezeichnung **Vertraulich\ Nur Empfänger** und diese E-Mail ist so konfiguriert, dass die Verschlüsselungseinstellung **Nicht weiterleiten** gilt. In der Outlook-App konfiguriert dieser Benutzer dann manuell die IRM-Einstellungen, sodass die E-Mail nicht eingeschränkt ist. Das Endergebnis ist, dass die E-Mail von den Empfängern weitergeleitet werden kann, obwohl sie die Bezeichnung **Vertraulich \ Nur Empfänger** trägt.
+- Ein Benutzer versieht eine E-Mail mit der Bezeichnung **Vertraulich\ Nur Empfänger** und diese E-Mail ist so konfiguriert, dass die Verschlüsselungseinstellung **Nicht weiterleiten** gilt. In der Outlook-App wählt dieser Benutzer dann manuell die IRM-Einstellung für "Nur Verschlüsseln". Das Endergebnis ist, dass die E-Mail zwar verschlüsselt bleibt, aber von den Empfängern weitergeleitet werden kann, obwohl sie die Bezeichnung **Vertraulich \ Nur Empfänger** trägt.
     
     Ausnahmsweise stehen Benutzern bei Outlook im Web die Optionen aus dem Menü **Verschlüsseln** nicht zur Auswahl, wenn die aktuell ausgewählte Bezeichnung Verschlüsselung anwendet.
 
@@ -178,13 +178,23 @@ Wenn Benutzer ein Dokument oder eine E-Mail zum ersten Mal mit einer Bezeichnung
 
 Wenn das Dokument oder die E-Mail bereits bezeichnet ist, kann ein Benutzer jede dieser Aktionen durchführen, wenn der Inhalt nicht bereits verschlüsselt ist oder er das [Nutzungsrecht](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Export oder Vollzugriff hat. 
 
-Um eine einheitlichere Bezeichnung mit aussagekräftigen Berichten zu erreichen, sollten Sie geeignete Bezeichnungen und Anleitungen für Benutzer bereitstellen, damit diese nur Bezeichnungen zum Schutz von Dokumenten anbringen. Zum Beispiel:
+Um eine einheitlichere Bezeichnung mit aussagekräftigen Berichten zu erreichen, sollten Sie geeignete Bezeichnungen und Anleitungen für Benutzer bereitstellen, damit diese nur Bezeichnungen zum Schutz von Dokumenten und E-Mails anwenden. Zum Beispiel:
 
 - Für Ausnahmefälle, in denen Benutzer ihre eigenen Berechtigungen zuweisen müssen, stellen Sie Bezeichnungen bereit, mit denen [Benutzer ihre eigenen Berechtigungen](encryption-sensitivity-labels.md#let-users-assign-permissions) zuweisen können. 
 
 - Anstatt dass Benutzer die Verschlüsselung manuell entfernen, nachdem sie eine Bezeichnung ausgewählt haben, das die Verschlüsselung anwendet, bieten Sie eine Alternative für untergeordnete Bezeichnungen an, wenn Benutzer eine Bezeichnung mit der gleichen Klassifizierung, aber ohne Verschlüsselung benötigen. Zum Beispiel:
     - **Vertraulich \ Alle Mitarbeiter**
     - **Vertraulich \ Jeder (keine Verschlüsselung)** 
+
+- Erwägen Sie, die IRM-Einstellungen zu deaktivieren, um zu verhindern, dass Benutzer sie auswählen:
+    - Outlook für Windows: 
+        - Registrierungsschlüssel (DWORD:00000001) *DisableDNF* und *DisableEO* aus HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Common\DRM
+        - Stellen Sie sicher, dass die Gruppenrichtlinieneinstellung **Standardverschlüsselungsoption für die Schaltfläche Verschlüsseln konfigurieren** nicht konfiguriert ist
+    - Outlook für Mac: 
+        - Schlüssel *DisableEncryptOnly* und *DisableDoNotForward* Sicherheitseinstellungen dokumentiert in [Voreinstellungen für Outlook für Mac](/DeployOffice/mac/preferences-outlook)
+    - Outlook im Web: 
+        - Parameter *SimplifiedClientAccessDoNotForwardDisabled* und *SimplifiedClientAccessEncryptOnlyDisabled* für [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) dokumentiert 
+        - Outlook für iOS und Android: Diese Apps unterstützen nicht die Verwendung von Verschlüsselung ohne Bezeichnungen, also nichts zum Deaktivieren.
 
 > [!NOTE]
 > Wenn Benutzer die Verschlüsselung eines mit einer Bezeichnung versehenen Dokuments, das in SharePoint oder OneDrive gespeichert ist, manuell entfernen und Sie [Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) aktiviert haben, wird die Bezeichnungsverschlüsselung automatisch wiederhergestellt, wenn das Dokument das nächste Mal aufgerufen oder heruntergeladen wird. 
@@ -413,7 +423,7 @@ Die anderen erweiterten PowerShell-Einstellungen werden nur für den Azure Infor
 
 #### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>PowerShell-Tipps zum Festlegen der erweiterten Einstellungen
 
-Um eine andere Standardbezeichnung für Outlook festzulegen, müssen Sie die Bezeichnungs-GUID angeben. Diesen Wert können Sie mit dem folgenden Befehl abrufen:
+Um eine andere Standardbezeichnung für Outlook festzulegen, identifizieren Sie die Bezeichnung durch ihre GUID. Diesen Wert können Sie mit dem folgenden Befehl abrufen:
 
 ````powershell
 Get-Label | Format-Table -Property DisplayName, Name, Guid

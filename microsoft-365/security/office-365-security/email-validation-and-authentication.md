@@ -19,12 +19,12 @@ localization_priority: Priority
 description: Administratoren erfahren hier, wie EOP E-Mail-Authentifizierung (SPF, DKIM und DMARC) verwendet, um Spoofing, Phishing und Spam zu verhindern.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 633494717ad7cf68319a2332f435fd8b56fc8aeb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4815924714845b641819021ea793baa465cfc812
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205906"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538291"
 ---
 # <a name="email-authentication-in-eop"></a>E-Mail-Authentifizierung in EOP
 
@@ -39,9 +39,7 @@ ms.locfileid: "51205906"
 E-Mail-Authentifizierung (auch als E-Mail-Validierung bezeichnet) ist eine Gruppe von Standards, die versucht, Spoofing (E-Mail-Nachrichten von gefälschten Absendern) entgegen zu wirken. In allen Microsoft 365-Organisationen nutzt EOP folgende Standards, um eingehende e-Mails zu überprüfen:
 
 - [SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
-
 - [DKIM](use-dkim-to-validate-outbound-email.md)
-
 - [DMARC](use-dmarc-to-validate-email.md)
 
 Die E-Mail-Authentifizierung überprüft, ob E-Mail-Nachrichten eines Absenders (z.B. laura@contoso.com) seriös sind und aus den erwarteten Quellen für diese E-Mail-Domäne stammen (z.B. contoso.com.)
@@ -58,7 +56,7 @@ Im März 2018 verfügten nur 9 % der Domänen der Fortune 500-Unternehmen über
 
 ![DMARC-Richtlinien von Fortune 500-Unternehmen](../../media/84e77d34-2073-4a8e-9f39-f109b32d06df.jpg)
 
-Der Anteil von kleinen und mittelständischen Unternehmen, die sichere E-Mail-Authentifizierungsrichtlinien verfügen, ist kleiner. Und die Zahl der E-Mail-Domänen außerhalb von Nordamerika und Westeuropa ist sogar noch geringer.
+Der Anteil der kleinen bis mittelgroßen Unternehmen, die starke E-Mail-Authentifizierungsrichtlinien veröffentlichen, ist kleiner. Und bei E-Mail-Domänen außerhalb Nordamerikas und Westeuropas ist die Zahl noch geringer.
 
 Das Fehlen sicherer E-Mail-Authentifizierungsrichtlinien stellt ein großes Problem dar. Während Organisationen möglicherweise nicht verstehen, wie die E-Mail-Authentifizierung funktioniert, sind sich Angreifer darüber sehr wohl im Klaren und nutzen dies zu ihrem Vorteil aus. Wegen der Sorge vor Phishing und der unzureichenden Einführung sicherer E-Mail-Authentifizierungsrichtlinien, verwendet Microsoft *implizite E-Mail-Authentifizierung*, um eingehende E-Mails zu überprüfen.
 
@@ -89,7 +87,7 @@ Falls Sie sich nur auf die Aufzeichnungen der E-Mail-Authentifizierung verlassen
 
 Die zusammengesetzte Authentifizierung kann diesen Einschränkungen abhelfen, indem sie Nachrichten weitergibt, die E-Mail-Authentifizierungsprüfungen andernfalls nicht bestanden hätten.
 
-Die folgenden Beispiele konzentrieren sich zur Vereinfachung auf E-Mail-Authentifizierungsergebnisse. Andere Back-End-Intelligenz-Faktoren könnten Nachrichten, die durch die E-Mail-Authentifizierung als gefälscht eingestuft werden, passieren lassen oder Nachrichten, die durch die E-Mail-Authentifizierung als legitim eingestuft werden, als gefälscht identifizieren.
+Der Einfachheit halber konzentrieren sich die folgenden Beispiele auf die Ergebnisse der E-Mail-Authentifizierung. Andere Back-End-Intelligenzfaktoren könnten Nachrichten, die die E-Mail-Authentifizierung bestehen, als gefälscht oder Nachrichten, die die E-Mail-Authentifizierung nicht bestehen, als legitim identifizieren.
 
 So hat beispielsweise die fabrikam.com-Domäne keine SPF-, DKIM- oder DMARC-Einträge. Nachrichten von Absendern in der Domäne fabrikam.com können die zusammengesetzte Authentifizierung ggfs. nicht durchlaufen (beachten Sie den `compauth`-Wert und den Grund):
 
@@ -102,7 +100,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-Wenn fabrikam.com einen SPF ohne einen DKIM-Eintrag konfiguriert, kann die Nachricht eine kombinierte Authentifizierung weitergeben. Die Domäne, die SPF-Prüfungen übergeben hat, wird an der Domäne in der “Von”-Adresse ausgerichtet:
+Wenn fabrikam.com ein SPF ohne einen DKIM-Eintrag konfiguriert, kann die Nachricht die zusammengesetzte Authentifizierung bestehen. Die Domäne, die SPF-Prüfungen bestanden hat, wird an die Domäne in der Absenderadresse abgeglichen:
 
 ```text
 Authentication-Results: spf=pass (sender IP is 10.2.3.4)
@@ -113,7 +111,7 @@ From: chris@fabrikam.com
 To: michelle@contoso.com
 ```
 
-Wenn fabrikam.com einen SP-Eintrag ohne einen DKIM-Eintrag konfiguriert, kann die Nachricht eine kombinierte Authentifizierung weitergeben. Die Domäne in der DKIM-Signatur, wird an der Domäne in der “Von”-Adresse ausgerichtet:
+Wenn fabrikam.com einen DKIM-Eintrag ohne SPF-Eintrag konfiguriert, kann die Nachricht die zusammengesetzte Authentifizierung bestehen. Die Domäne in der DKIM-Signatur wird mit der Domäne in der Absenderadresse abgeglichen:
 
 ```text
 Authentication-Results: spf=none (sender IP is 10.2.3.4)
@@ -146,9 +144,7 @@ Microsoft 365 verfolgt, wer nicht authentifizierte E-Mails an Ihre Organisation 
 Sie können diese Methode verwenden, um Probleme mit organisationsinternem und domänenübergreifendem Spoofing zu beheben, wenn Sie mehrere Mandanten besitzen oder mit diesen interagieren. Sie kann auch zum Beheben von Problemen mit domänenübergreifendem Spoofing verwendet werden, wenn Sie Nachrichten an andere Kunden innerhalb von Microsoft 365 oder an Drittanbieter senden, die von anderen Anbietern gehostet werden.
 
 - [Konfiguration von SPF-Einträgen](set-up-spf-in-office-365-to-help-prevent-spoofing.md) für Ihre Domänen.
-
 - [Konfiguration von DKIM-Einträgen](use-dkim-to-validate-outbound-email.md) für Ihre primären Domänen.
-
 - [Ziehen Sie es in Erwägung, DMARC-Einträge für Ihre Domäne](use-dmarc-to-validate-email.md) einzurichten, um Ihre seriösen Absender zu ermitteln.
 
 Microsoft bietet keine detaillierten Implementierungsrichtlinien für SPF, DKIM und DMARC-Einträge. Es gibt jedoch viele Informationen, die online verfügbar sind. Es gibt auch Drittanbieter, die Ihrer Organisation dabei helfen, E-Mail-Authentifizierungsdatensätze einzurichten.
@@ -167,17 +163,11 @@ Microsoft 365 behandelt eingehende E-Mails aus Ihrer Unternehmensinfrastruktur 
 
 Sobald Sie mit einer SPF-Fallback-Richtlinie von `?all`begonnen haben, können Sie nach und nach weitere E-Mail-Quellen für Ihre Nachrichten entdecken und dann Ihren SPF-Eintrag mit einer strikteren Richtlinie aktualisieren.
 
-### <a name="use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email"></a>Verwenden der Spoofingintelligenz zum Konfigurieren zulässiger Absender nicht authentifizierter E-Mails
+### <a name="configure-permitted-senders-of-unauthenticated-email"></a>Zulässige Absender von nicht authentifizierten E-Mails konfigurieren
 
-Sie können Sie auch [Spoofingintelligenz](learn-about-spoof-intelligence.md) verwenden, damit Absender nicht authentifizierte Nachrichten an Ihre Organisation senden können.
+Sie können auch die [Spoofintelligenz-Erkenntnis](learn-about-spoof-intelligence.md) und die [Mandant Zulassen-/Blockieren-Liste](tenant-allow-block-list.md) verwenden, um Absendern zu erlauben, unauthentifizierte Nachrichten an Ihre Organisation zu übermitteln.
 
 Bei externen Domänen handelt es sich bei dem gefälschten Benutzer um die Domäne in der Von-Adresse, während es sich bei der sendenden Infrastruktur entweder um die Quell-IP-Adresse (aufgeteilt in /24 CIDR-Bereiche) oder um die Organisationsdomäne des Reverse DNS-Eintrags (PTR) handelt.
-
-Im folgenden Screenshot kann die IP 131.107.18.4 lauten und den PTR-Eintrag outbound.mail.protection.outlook.com aufweisen. Dies würde als Outlook.com als sendende Infrastruktur annzeigen.
-
-Damit dieser Absender nicht authentifizierte E-Mails senden kann, ändern Sie die Einstellung von **No** zu **Yes**.
-
-![Einrichten von zulässigen Spoofingabsendern](../../media/d4334921-d820-4334-8217-788279701e94.jpg)
 
 ### <a name="create-an-allow-entry-for-the-senderrecipient-pair"></a>Erstellen eines Zulassungseintrags für das Absender/Empfänger-Paar
 
@@ -189,7 +179,7 @@ Aufgrund des Problems mit Spam und Phishing empfiehlt Microsoft die E-Mail-Authe
 
 - Auch wenn sie in der Vergangenheit keine E-Mail-Authentifizierungseinträge veröffentlichen mussten, sollten sie dies tun, wenn sie E-Mails an Microsoft senden.
 
-- Richten Sie SPF ein, um die sendenden IP-Adressen Ihrer Domäne zu veröffentlichen, und DKIM (falls verfügbar) zum digitalen Signieren von Nachrichten. Sie sollten auch das Einrichten von DMARC-Einträgen in Erwägung ziehen.
+- Richten Sie SPF ein, um die sendenden IP-Adressen der Domäne zu veröffentlichen, und richten Sie DKIM ein (falls verfügbar), um Nachrichten digital zu signieren. Sie sollten auch die Einrichtung von DMARC-Einträgen in Betracht ziehen.
 
 - Wenn sie zum Senden von E-Mails Massenversender verwenden, überprüfen Sie, ob die Domäne in der Von-Adresse (sofern sie ihnen gehört) mit der Domäne übereinstimmt, die SPF oder DMARC passiert.
 
