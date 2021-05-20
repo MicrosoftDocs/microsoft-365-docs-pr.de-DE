@@ -18,17 +18,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
-description: Erfahren Sie, wie Sie im Nachrichtencenter Ihre bevorzugte Sprache festlegen, damit Beiträge automatisch übersetzt werden.
-ms.openlocfilehash: d0318763069e053fe2368b4906bc7d5ebb58c1fe
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Nachrichtencenterbeiträge sind nur auf Englisch verfügbar, können jedoch automatisch in der Sprache angezeigt werden, die Sie für die Microsoft 365.
+ms.openlocfilehash: 88b34fcca1d4cedfd6e1a7cb4ee19aef5c3262b7
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580930"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582920"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Sprachübersetzung für Nachrichtencenterbeiträge
 
-Nachrichtencenterbeiträge sind nur aufgrund der Aktualität der von uns geposteten Informationen in Englisch verfasst, können jedoch automatisch in der Sprache angezeigt werden, die mit Ihren persönlichen Spracheinstellungen für Microsoft 365 festgelegt wurde. Wenn Sie für Ihre bevorzugte Sprache etwas anderes als Englisch festlegen, wird im Nachrichtencenter eine Option zum automatischen Übersetzen von Beiträgen angezeigt. Die Nachrichten werden maschinell in Ihre bevorzugte Sprache übersetzt, das heißt, ein Computer hat die Übersetzung erstellt. Diese Option steuert die Standardansicht, doch können Sie auch Beiträge über das Dropdownmenü in jede der Sprachen, die wir für Übersetzungen unterstützen, übersetzen und darin anzeigen lassen. Wenn Sie "Englisch" auswählen, setzen wir die Nachricht auf die ursprüngliche englische Version zurück.
+Nachrichtencenterbeiträge sind nur aufgrund der Aktualität der von uns geposteten Informationen in Englisch verfasst, können jedoch automatisch in der Sprache angezeigt werden, die mit Ihren persönlichen Spracheinstellungen für Microsoft 365 festgelegt wurde. Wenn Sie für Ihre bevorzugte Sprache etwas anderes als Englisch festlegen, wird im Nachrichtencenter eine Option zum automatischen Übersetzen von Beiträgen angezeigt. Die Nachrichten werden vom Computer in Ihre bevorzugte Sprache übersetzt, d. h., ein Computer hat die Übersetzung gemacht. Diese Option steuert die Standardansicht, doch können Sie auch Beiträge über das Dropdownmenü in jede der Sprachen, die wir für Übersetzungen unterstützen, übersetzen und darin anzeigen lassen. Wenn Sie "Englisch" auswählen, setzen wir die Nachricht auf die ursprüngliche englische Version zurück.
+
+## <a name="before-you-begin"></a>Bevor Sie beginnen
   
 > [!IMPORTANT]
 > Bevor Sie Ihre Spracheinstellungen für das Nachrichtencenter auswählen können, müssen Sie Ihre bevorzugte Sprache festlegen. Wenn für Ihre Sprache "Englisch" festgelegt wurde, werden keine Übersetzungsoptionen angezeigt. Sie können keine bevorzugte Sprache für andere angeben; jede Person muss diese Einstellung für sich selbst ändern. 
@@ -44,6 +46,16 @@ Nachrichtencenterbeiträge sind nur aufgrund der Aktualität der von uns geposte
 Wenn für Ihre bevorzugte Sprache nicht "Englisch" festgelegt wurde, stehen Ihnen die Übersetzungsoptionen im Nachrichtencenter zur Verfügung.
   
 Wenn Sie für Nachrichtencenter-Beiträge festlegen möchten, dass sie automatisch in Ihre bevorzugte Sprache maschinell übersetzt und darin angezeigt werden sollen, wechseln Sie zu **Status** \> **Nachrichtencenter**. Über den Umschalter am Anfang der Nachrichtenliste können Sie die automatische Übersetzung aktivieren oder deaktivieren. Wenn diese Einstellung deaktiviert ist, werden Beiträge in Englisch angezeigt. Wenn sie aktiviert ist, werden Nachrichten in Ihrer bevorzugten Sprache angezeigt. Die ausgewählte Einstellung wird für jeden Besuch im Nachrichtencenter beibehalten. 
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Übersicht über das Microsoft 365 Admin Center](../../business-video/admin-center-overview.md) (Video)
+
+[Welches Abonnement habe ich?](../admin-overview/what-subscription-do-i-have.md) (Artikel)
+
+[Bleiben Sie über Änderungen](../manage/stay-on-top-of-updates.md) (Artikel)
+
+
 
   
 

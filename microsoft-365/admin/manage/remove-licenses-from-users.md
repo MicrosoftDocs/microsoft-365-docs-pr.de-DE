@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Erfahren Sie, wie Sie lizenzen von Benutzerkonten wegzuweisen.
 ms.date: 07/01/2020
-ms.openlocfilehash: 5ef28b3065703ec224e6426c4fdbfffdb5269b22
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4ff6a0e5554117cd1fc2d818c04edabc9e33b2a1
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537499"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582908"
 ---
 # <a name="unassign-licenses-from-users"></a>Aufheben der Zuweisung von Benutzerlizenzen
 
@@ -117,13 +117,13 @@ Wenn Sie die Seite **Aktive Benutzer** verwenden, um lizenzen zuzuweisen, wird d
 ::: moniker-end
 
 2. Wählen Sie die Kreise neben den Namen der Benutzer aus, für die Sie Lizenzen zuweisen möchten.
-3. Wählen Sie oben die drei Punkte (weitere Aktionen) aus, und wählen Sie **dann Produktlizenzen verwalten aus.**
+3. Wählen Sie oben die drei Punkte (weitere Aktionen) und dann **Produktlizenzen verwalten** aus.
 4. Wählen Sie im Bereich **Produktlizenzen verwalten** nacheinander **Vorhandenen Produktlizenzzuweisungen ersetzen** \> **Weiter** aus.
 5. Aktivieren Sie unten im Bereich Vorhandene  Produkte **ersetzen** das Kontrollkästchen Alle Produktlizenzen aus dem ausgewählten Benutzer entfernen, und wählen Sie dann **Schließen** \> **ersetzen aus.**
 
 ## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Was geschieht mit den Daten eines Benutzers, wenn Sie die Lizenz entfernen?
 
-- Wenn eine Lizenz von einem Benutzer entfernt wird, werden daten, die diesem Konto zugeordnet sind, 30 Tage lang gespeichert. Nach der 30-tägigen Nachfrist werden die Daten gelöscht und können nicht wiederhergestellt werden.
+- Wenn eine Lizenz von einem Benutzer entfernt wird, Exchange Onlinedaten, die diesem Konto zugeordnet sind, 30 Tage lang gespeichert. Nach der 30-tägigen Nachfrist werden die Daten gelöscht und können nicht wiederhergestellt werden.
 - In der OneDrive for Business gespeicherte Dateien werden nur gelöscht, wenn der Benutzer aus dem Microsoft 365 Admin Center gelöscht oder über die Active Directory-Synchronisierung entfernt wird. Weitere Informationen finden Sie unter [OneDrive Aufbewahrung und Löschung](/onedrive/retention-and-deletion).
 - Wenn die Lizenz entfernt wird, kann das Postfach des Benutzers nicht mehr mit einem eDiscovery-Tool wie inhaltssuche oder Advanced eDiscovery. Weitere Informationen finden Sie unter "Suchen getrennter oder nicht lizenzierter [Postfächer" unter Inhaltssuche in Microsoft 365](../../compliance/content-search.md).
 - Wenn Sie über ein Enterprise wie Office 365 Enterprise E3 verfügen, können Exchange Online die Postfachdaten eines gelöschten Benutzerkontos mithilfe inaktiver Postfächer [beibehalten.](../../compliance/inactive-mailboxes-in-office-365.md) Weitere Informationen finden Sie unter [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).

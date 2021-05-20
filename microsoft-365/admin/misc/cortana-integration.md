@@ -18,13 +18,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
-description: Wenn Sie mit gültigen Arbeits- oder Schulkonten angemeldet sind, können Benutzer cloudbasierte Unterstützungsdienste mit Cortana in Microsoft 365-Erfahrungen erhalten, die die Datenschutz-, Sicherheits- und Compliancezusagen von Office 365 auf Unternehmensebene erfüllen.
-ms.openlocfilehash: dd00972f6e84f5d430ad860ea9cbf637bd7c790f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Benutzer mit gültigen Arbeits- oder Schulkonten können Cortana in Microsoft 365, die Office 365 Sicherheitszusagen auf Unternehmensebene erfüllen.
+ms.openlocfilehash: aad371fc531a03f42e1756a41405082b6b528b06
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537463"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582776"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -183,3 +183,12 @@ Deaktivieren des Cortana-Zugriffs auf die von Microsoft gehosteten Daten Ihrer O
 3. Wählen Sie **Änderungen speichern** aus.
 
 Für Dienste, die dem [Microsoft Services Agreement](https://go.microsoft.com/fwlink/p/?LinkId=2109174) und der Microsoft Privacy [Statement](https://privacy.microsoft.com/privacystatement)unterliegen, ist Microsoft der Datenverantwortliche. Als Datenverantwortlicher verwendet Microsoft Daten, um Produkte und Dienste gemäß der [Microsoft-Datenschutzbestimmungen zu verbessern.](https://privacy.microsoft.com/privacystatement)
+
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Cortana-Sprachunterstützung in Teams](/microsoftteams/cortana-in-teams) (Artikel)
+
+[Konfigurieren von Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (Artikel)
+
+[Was können Sie mit "Meine E-Mails von Cortana" abspielen?](https://support.microsoft.com/help/4558256)

@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Übersicht über den Planungsprozess für die Verhinderung von Datenverlust
-ms.openlocfilehash: 6a72a8bab27db4d8b11d3e0b3d7a1dac7a1f0092
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 84f1dc0426ba88f934c1d67d71f75364adeb4340
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52581594"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583352"
 ---
 # <a name="plan-for-data-loss-prevention-dlp"></a>Planen der Verhinderung von Datenverlust (Data Loss Prevention, DLP)
 
@@ -117,7 +117,7 @@ Dokumentieren, wie Ihre Organisation vom Startstatus in den gewünschten Endzust
 
 #### <a name="sensitive-item-discovery"></a>Ermittlung vertraulicher Elemente
 
-Es gibt mehrere Möglichkeiten, um zu ermitteln, was einzelne vertrauliche Elemente sind und wo sie sich befinden. Möglicherweise haben Sie vertraulichkeitsbezeichnungen bereits bereitgestellt, oder Sie haben sich entschieden, eine sehr umfassende DLP-Richtlinie für alle Speicherorte zu implementieren, die nur Elemente ermitteln und überwacht. Weitere Informationen finden Sie unter [Know your data](information-protection.md#know-your-data).
+Es gibt mehrere Möglichkeiten, um zu ermitteln, was einzelne vertrauliche Elemente sind und wo sie sich befinden. Möglicherweise haben Sie bereits Vertraulichkeitsbezeichnungen bereitgestellt, oder Sie haben sich für die Bereitstellung einer umfassenden DLP-Richtlinie an allen Speicherorten entschieden, die nur Elemente ermitteln und überwacht. Weitere Informationen finden Sie unter [Know your data](information-protection.md#know-your-data).
 
 #### <a name="policy-planning"></a>Richtlinienplanung
 
@@ -134,7 +134,7 @@ Da viele Organisationen mit dem Ziel der Einhaltung gesetzlicher Vorschriften zu
 
 Sobald Ihre Organisation weiß, wo sie hinsichtlich der Gesetzlichen Complianceanforderungen steht, haben Sie eine Vorstellung davon, welche vertraulichen Elemente vor Lecks geschützt werden müssen und wie Sie die Richtlinienimplementierung priorisieren möchten, um sie zu schützen. Dadurch können Sie die am besten geeigneten DLP-Richtlinienvorlagen auswählen. Microsoft 365 enthält vorkonfigurierte DLP-Vorlagen für Finanzen, Medizin und Gesundheit, Datenschutz, und Sie können ihre eigenen mit der benutzerdefinierten Vorlage erstellen. Wenn Sie Ihre tatsächlichen DLP-Richtlinien entwerfen und erstellen, hilft Ihnen das Wissen um die Antwort auf diese Frage auch bei der Auswahl des richtigen [vertraulichen Informationstyps.](sensitive-information-type-learn-about.md#learn-about-sensitive-information-types)
 
-**Beispiel** Um schnell zu beginnen, wählen Sie die `U.K. Financial Data` Richtlinienvorlage aus, die die `Credit Card Number` Typen , und vertrauliche Informationen `EU Debit Card Number` `SWIFT Code` enthält. 
+**Beispiel** Um schnell zu beginnen, wählen Sie die `U.K. Financial Data` Richtlinienvorlage aus, die die Typen , und vertrauliche Informationen `Credit Card Number` `EU Debit Card Number` `SWIFT Code` enthält. 
 
 ##### <a name="where-are-the-sensitive-items-and-what-business-processes-are-they-involved-in"></a>Wo sind die vertraulichen Elemente und an welchen Geschäftsprozessen beteiligt?
 
@@ -148,7 +148,7 @@ Die Elemente, die vertrauliche Informationen ihrer Organisation enthalten, werde
 - Microsoft Cloud App Security
 - Lokale Repositorys
 
-**Beispiel** Interne Auditoren Ihrer Organisation verfolgen eine Reihe von Kreditkartennummern. Sie bewahren eine Tabellenkalkulation von ihnen auf einer sicheren SharePoint auf. Mehrere Mitarbeiter erstellen Kopien und speichern sie auf ihrer OneDrive for Business, die mit ihrem Windows 10 synchronisiert wird. Einer von ihnen fügt eine Liste von 14 von ihnen in eine E-Mail ein und versucht, sie zur Überprüfung an die externe Auditoren zu senden. Sie möchten die Richtlinie auf den Sicheren SharePoint, alle internen Auditoren OneDrive for Business Konten, ihre Windows 10 Geräte und Exchange anwenden.
+**Beispiel** Interne Auditoren Ihrer Organisation verfolgen eine Reihe von Kreditkartennummern. Sie bewahren eine Tabellenkalkulation von ihnen auf einer sicheren SharePoint auf. Mehrere Mitarbeiter erstellen Kopien und speichern sie auf ihrer OneDrive for Business, die mit ihrem Windows 10 wird. Einer von ihnen fügt eine Liste von 14 von ihnen in eine E-Mail ein und versucht, sie zur Überprüfung an die externe Auditoren zu senden. Sie möchten die Richtlinie auf die Secure SharePoint-Website, alle internen Auditoren OneDrive for Business Konten, ihre Windows 10 Geräte und Exchange anwenden.
 
 ##### <a name="what-is-your-organizations-tolerance-for-leakage"></a>Wie ist die Toleranz Ihrer Organisation für Leckagen?
 
@@ -173,7 +173,7 @@ Wenn Sie DLP-Richtlinien erstellen, die potenziell weitreichende Auswirkungen ha
   
 1. **Beginnen Sie im Testmodus ohne Richtlinientipps**, und werten Sie die Auswirkungen dann anhand der DLP-Berichte aus. Sie können DLP-Berichte verwenden, um Anzahl, Ort, Typ und Schwere von Richtlinienübereinstimmungen anzuzeigen. Basierend auf den Ergebnissen können Sie die Richtlinien nach Bedarf optimieren. Im Testmodus haben DLP-Richtlinien keinen Einfluss auf die Produktivität der Mitarbeiter in Ihrer Organisation. Verwenden Sie diese Phase auch, um Ihren Workflow für die DLP-Ereignisüberprüfung zu testen und die Behebung zu problembehebungen aus.
     
-2. Wechseln Sie in den Testmodus mit Benachrichtigungen und **Richtlinienrichtlinien Tipps** damit Sie beginnen können, Benutzern Informationen zu Ihren Compliancerichtlinien zu vermitteln und sie auf die Richtlinien vorzubereiten, die angewendet werden sollen. Es ist hilfreich, über einen Link zu einer Organisationsrichtlinienseite zu verfügen, die zusätzliche Details zur Richtlinie im Richtlinientipp enthält. In dieser Phase können Sie benutzer auch bitten, falsch positive Ergebnisse zu melden, damit Sie die Richtlinien weiter verfeinern können. Wechseln Sie zu dieser Phase, sobald Sie sicher sind, dass die Ergebnisse der Richtlinienanwendung mit dem übereinstimmen, was die Beteiligten im Sinn hatten. 
+2. Wechseln Sie in den Testmodus mit Benachrichtigungen und **Richtlinienrichtlinien Tipps** damit Sie beginnen können, Benutzern Informationen zu Ihren Compliancerichtlinien zu vermitteln und sie auf die Richtlinien vorzubereiten, die angewendet werden sollen. Es ist hilfreich, über einen Link zu einer Organisationsrichtlinienseite zu verfügen, die weitere Details zur Richtlinie im Richtlinientipp enthält. In dieser Phase können Sie benutzer auch bitten, falsch positive Ergebnisse zu melden, damit Sie die Richtlinien weiter verfeinern können. Wechseln Sie zu dieser Phase, sobald Sie sicher sind, dass die Ergebnisse der Richtlinienanwendung mit dem übereinstimmen, was die Beteiligten im Sinn hatten. 
     
 3. **Beginnen Sie mit der vollständigen Durchsetzung der Richtlinien**, sodass die Aktionen in den Regeln angewendet werden und der Inhalt geschützt ist. Überwachen Sie weiterhin die DLP-Berichte und alle Schadensberichte oder Benachrichtigungen, um sicherzustellen, dass die von Ihnen gewünschten Ergebnisse erzielt werden. 
 
@@ -199,9 +199,9 @@ Die Vorschriften, Gesetze und Branchenstandards, die Ihrer Organisation unterlie
 
 |Beschreibung der Geschäftsanforderungen des Kunden  | Ansatz  |
 |---------|---------|
-|**Die Contoso Bank** befindet sich in einer stark regulierten Branche und verfügt über viele verschiedene Typen vertraulicher Elemente an vielen verschiedenen Standorten. </br> - weiß, welche Arten vertraulicher Informationen oberste Priorität haben. </br> – muss Geschäftsunterbrechungen minimieren, wenn Richtlinien ausgeführt werden. </br> – verfügt über IT-Ressourcen und kann Experten für die Planung, das Entwerfen der Bereitstellung und die Bereitstellung beauftragen. </br> – hat einen erstklassigen Supportvertrag mit Microsoft| – Nehmen Sie sich die Zeit, um zu verstehen, welche Vorschriften sie einhalten müssen und wie sie diese einhalten werden. </br> -Nehmen Sie sich die Zeit, um den besseren gemeinsamen Wert des Microsoft 365 Information Protection-Stapels zu verstehen </br> – Entwickeln eines Vertraulichkeitskennzeichnungsschemas für priorisierte Elemente und Anwenden </br> – Beteiligung von Geschäftsprozessbesitzern </br>– Entwurfs-/Coderichtlinien, Bereitstellen im Testmodus, Schulen von Benutzern </br>- wiederholen|
-|**TailSpin Toys** weiß nicht, was sie haben oder wo sie sich befindet, und hat wenig bis keine Ressourcentiefe. Sie verwenden Teams, ODB und Exchange umfassend.     |– Beginnen Sie mit einfachen Richtlinien für die priorisierten Speicherorte. </br>– Überwachen, was identifiziert wird </br>– Anwenden von Vertraulichkeitsbezeichnungen entsprechend </br>- Richtlinien verfeinern, Benutzer schulen       |
-|**Fabrikam** ist ein kleines Start-up, das sein geistiges Eigentum schützen möchte und sich schnell bewegen muss. Sie sind bereit, einige Ressourcen zu verwenden, können es sich aber nicht leisten, externe Experten zu einstellen. </br>– Vertrauliche Elemente befinden sich alle in Microsoft 365 OneDdrive for Business/SharePoint </br>– Die Einführung von OneDrive for Business und SharePoint ist langsam, Mitarbeiter/Schatten-IT verwenden DropBox und Google Drive, um Elemente zu teilen/zu speichern </br>- Mitarbeiter schätzen Arbeitsgeschwindigkeit gegenüber Datenschutz-Disziplin </br>– Kunden haben alle 18 Mitarbeiter mit neuen Geräten Windows 10 gekauft     |– Nutzen Sie die standardmäßige DLP-Richtlinie in Teams </br>- Standardeinstellung für eingeschränkte Elemente SharePoint </br>– Bereitstellen von Richtlinien, die die externe Freigabe verhindern </br>– Bereitstellen von Richtlinien an priorisierten Speicherorten </br>– Bereitstellen von Richtlinien auf Windows 10 Geräten </br>– Blockieren von Uploads in nicht OneDrive for Business Cloudspeicher      |
+|**Die Contoso Bank** befindet sich in einer stark regulierten Branche und verfügt über viele verschiedene Typen vertraulicher Elemente an vielen verschiedenen Standorten. </br> - weiß, welche Arten vertraulicher Informationen oberste Priorität haben. </br> – muss Geschäftsunterbrechungen minimieren, wenn Richtlinien ausgeführt werden. </br> – verfügt über IT-Ressourcen und kann Experten für die Planung, das Entwerfen der Bereitstellung und die Bereitstellung beauftragen. </br> – hat einen erstklassigen Supportvertrag mit Microsoft| – Nehmen Sie sich die Zeit, um zu verstehen, welche Vorschriften sie einhalten müssen und wie sie diese einhalten werden. </br> -Nehmen Sie sich die Zeit, um den besseren gemeinsamen Wert des Microsoft 365 Information Protection-Stapels zu verstehen </br> - Entwickeln eines Vertraulichkeitsbezeichnungsschemas für priorisierte Elemente und Anwenden </br> – Beteiligung von Geschäftsprozessbesitzern </br>– Entwurfs-/Coderichtlinien, Bereitstellen im Testmodus, Schulen von Benutzern </br>- wiederholen|
+|**TailSpin Toys** weiß nicht, was sie haben oder wo sie sich befindet, und hat wenig bis keine Ressourcentiefe. Sie verwenden Teams, OneDrive for Business und Exchange umfassend.     |– Beginnen Sie mit einfachen Richtlinien für die priorisierten Speicherorte. </br>– Überwachen, was identifiziert wird </br>– Anwenden von Vertraulichkeitsbezeichnungen entsprechend </br>- Richtlinien verfeinern, Benutzer schulen       |
+|**Fabrikam** ist ein kleines Start-up, das sein geistiges Eigentum schützen möchte und sich schnell bewegen muss. Sie sind bereit, einige Ressourcen zu verwenden, können es sich aber nicht leisten, externe Experten zu beauftragen. </br>– Vertrauliche Elemente befinden sich alle in Microsoft 365 OneDrive for Business/SharePoint </br>– Die Einführung von OneDrive for Business und SharePoint ist langsam, Mitarbeiter/Schatten-IT verwenden DropBox und Google Drive, um Elemente zu teilen/zu speichern </br>- Mitarbeiter schätzen Arbeitsgeschwindigkeit gegenüber Datenschutz-Disziplin </br>– Kunden haben alle 18 Mitarbeiter mit neuen Geräten Windows 10 gekauft     |– Nutzen Sie die standardmäßige DLP-Richtlinie in Teams </br>- Standardeinstellung für eingeschränkte Elemente SharePoint </br>– Bereitstellen von Richtlinien, die die externe Freigabe verhindern </br>– Bereitstellen von Richtlinien an priorisierten Speicherorten </br>– Bereitstellen von Richtlinien auf Windows 10 Geräten </br>– Blockieren von Uploads in nicht OneDrive for Business Cloudspeicher      |
 
 <!--
 

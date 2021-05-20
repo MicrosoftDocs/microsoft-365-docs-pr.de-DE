@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 93735ee3bf8d9b95ab320c2bc158d6ebfe27186c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 704752951c453a3fe872b814e7364ef1699226bf
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932607"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582980"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -34,8 +34,7 @@ ms.locfileid: "51932607"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> Die Tabelle befindet sich derzeit in der Betaversion und wird kurzfristig angeboten, damit Sie Azure Active Directory `AADSignInEventsBeta` (AAD)-Anmeldeereignisse nachsuchen können. Wir verschieben schließlich alle Anmeldeschemainformationen in die `IdentityLogonEvents` Tabelle.<br><br>
-> Kunden, die über die integrierte Microsoft Defender for Endpoint-Lösung von Azure Defender auf Microsoft 365 Defender zugreifen können, aber nicht über Lizenzen für Microsoft Defender für Office, Microsoft Defender for Identity oder Microsoft Cloud App Security verfügen, können dieses Schema nicht anzeigen. 
+> Die Tabelle befindet sich derzeit in der Betaversion und wird kurzfristig angeboten, damit Sie Azure Active Directory `AADSignInEventsBeta` (AAD)-Anmeldeereignisse nachsuchen können. Wir verschieben schließlich alle Anmeldeschemainformationen in die `IdentityLogonEvents` Tabelle.
 
  
 

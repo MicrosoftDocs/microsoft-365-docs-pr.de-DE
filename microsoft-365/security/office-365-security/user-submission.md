@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie ein Postfach zum Sammeln von Spam- und Phishing-E-Mails konfigurieren, die von Benutzern gemeldet werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 321e27f22295a4da17d0eb37b477a1dc7b779d38
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: a23f27478d01092705a47d49884f200478348182
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644764"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583712"
 ---
 # <a name="user-submissions-policy"></a>Richtlinie für Benutzerübermittlungen
 
@@ -54,7 +54,7 @@ Das Senden von vom Benutzer gemeldeten Nachrichten an ein benutzerdefiniertes Po
 
 Verwenden Sie die folgenden Artikel, um die erforderlichen Voraussetzungen zu konfigurieren, damit vom Benutzer gemeldete Nachrichten an Ihr benutzerdefiniertes Postfach gesendet werden:
 
-- Überspringen Sie die Spamfilterung für das benutzerdefinierte Postfach, indem Sie eine Exchange-Nachrichtenflussregel zum Festlegen der Spamsicherheitsstufe erstellen. Weitere Informationen finden Sie unter [Use the EAC to create a mail flow rule that sets the SCL of a message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to set the SCL to **-1**.
+- Überspringen Sie die Spamfilterung für das benutzerdefinierte Postfach, indem Sie eine Exchange-Nachrichtenflussregel zum Festlegen der Spamsicherheitsstufe erstellen. Weitere Informationen finden Sie unter [Use the EAC to create a mail flow rule that sets the SCL of a message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to set the SCL to Bypass spam **filtering**.
 
 - Deaktivieren Sie das Scannen von Anlagen auf Schadsoftware im benutzerdefinierten Postfach. Verwenden [Sie Set up Safe Attachments policies in Defender for Office 365,](set-up-safe-attachments-policies.md) um eine Richtlinie für sichere Anlagen mit der Einstellung **Off** for Safe Attachments unknown malware response **zu erstellen.**
 

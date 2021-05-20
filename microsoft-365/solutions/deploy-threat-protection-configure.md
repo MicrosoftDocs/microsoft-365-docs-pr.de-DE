@@ -5,8 +5,7 @@ keywords: Sicherheitslösung, Setup, Konfiguration, Microsoft 365 E5, erweiterte
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.audience: ITPro
-audience: Admin
+audience: ITPro
 ms.topic: how-to
 ms.prod: m365-security
 ms.technology: m365d
@@ -17,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: a0c728e5f273752792f851c72df2dfe243116221
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: daa85b406b0fcb56dee55d9f49d39e247d0b6264
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650218"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583700"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Konfigurieren von Bedrohungsschutzfunktionen Microsoft 365
 
@@ -35,8 +34,8 @@ Führen Sie die folgenden Schritte aus, um den Bedrohungsschutz Microsoft 365.
 Microsoft hat einen bestimmten Satz bedingten Zugriffs und zugehörige Richtlinien zum Schutz des Zugriffs auf alle Ihre SaaS-Anwendungen getestet und empfohlen, insbesondere Microsoft 365. Richtlinien werden für grundlegenden, vertraulichen und streng regulierten Schutz empfohlen. Implementieren Sie zunächst die Richtlinien für den Basisschutz. 
 
 
-[ ![ Allgemeine Richtlinien zum Konfigurieren des Identitäts- und Gerätezugriffs](../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png) 
- [Siehe eine größere Version dieses Bilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[ ![ Allgemeine Richtlinien zum Konfigurieren des Identitäts- und Gerätezugriffs](../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png) 
+ [Siehe eine größere Version dieses Bilds](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 ### <a name="to-implement-baseline-protection-for-microsoft-365"></a>So implementieren Sie grundlegenden Schutz für Microsoft 365
 
@@ -162,12 +161,12 @@ Nachdem Sie Ihre Bedrohungsschutzdienste und -funktionen eingerichtet und bereit
 ![Microsoft 365 Security Center](../media/solutions-architecture-center/m365-security-center.png)
 
 Das Microsoft 365 Security Center ist für Sicherheitsadministratoren und Sicherheitsbetriebsteams vorgesehen. Im Microsoft 365 Security Center können Sie:
-- Zeigen Sie den allgemeinen Sicherheitszustand Ihrer Organisation mit [Secure Score an.](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score)
+- Zeigen Sie den allgemeinen Sicherheitszustand Ihrer Organisation mit [Secure Score an.](/microsoft-365/security/defender/microsoft-secure-score)
 - [Überwachen und anzeigen Sie Berichte](../security/defender-endpoint/threat-protection-reports.md) über den Status Ihrer Identitäten, Daten, Geräte, Apps und Infrastruktur.
-- Verbinden die Punkte für Warnungen durch [Vorfälle .](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue)
+- Verbinden die Punkte für Warnungen durch [Vorfälle .](/microsoft-365/security/defender/incident-queue)
 - Verwenden [Sie automatisierte Untersuchung und Korrektur, um](../security/defender/m365d-autoir.md) Bedrohungen zu begegnen.
-- [Proaktive Suche nach Bedrohungen,](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview)z. B. Angriffsversuche oder Verletzungsaktivitäten, die Ihre E-Mails, Daten, Geräte und Identitäten betreffen.
-- [Verstehen Sie die neuesten Angriffskampagnen und](https://docs.microsoft.com/microsoft-365/security/defender/latest-attack-campaigns) -techniken mit Bedrohungsanalysen.
+- [Proaktive Suche nach Bedrohungen,](/microsoft-365/security/defender/advanced-hunting-overview)z. B. Angriffsversuche oder Verletzungsaktivitäten, die Ihre E-Mails, Daten, Geräte und Identitäten betreffen.
+- [Verstehen Sie die neuesten Angriffskampagnen und](/microsoft-365/security/defender/latest-attack-campaigns) -techniken mit Bedrohungsanalysen.
 - ... und mehr!
 
 ### <a name="more-information-about-the-microsoft-365-security-center"></a>Weitere Informationen zum Microsoft 365 Security Center

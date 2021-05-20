@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 7e564bfd090a778ae2cd14214c35af8cd2fc6692
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: 2f9777631fe9d8b3506296f30906d5280805b4cb
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591863"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583415"
 ---
 # <a name="investigate-and-remediate-communication-compliance-alerts"></a>Untersuchen und Beheben von Warnungen zur Kommunikationscompliance
 
@@ -55,7 +55,7 @@ Eine vollständige Liste der Filter und Felddetails finden Sie unter [Filter](co
 
 5. Wählen Sie das **Steuerelement Filter** aus, um die Seite **Filterdetails** zu öffnen.
 
-6. Aktivieren Sie mindestens ein Kontrollkästchen, um Filter für diese Warnungen zu aktivieren. Sie können aus zahlreichen Filtern auswählen, z. B. *Date*, *Sender*, *Subject/Title*, *Classifiers* und vieles mehr.
+6. Aktivieren Sie mindestens ein Kontrollkästchen, um Filter für diese Warnungen zu aktivieren. Sie können aus zahlreichen Filtern auswählen, z. B. *Date*, *Sender*, *Subject/Title*, *Classifiers*, *Language* und vieles mehr.
 
 7. Wenn Sie den als Standardfilter ausgewählten Filter speichern möchten, wählen **Sie Als Standard speichern aus.** Wenn Sie diesen Filter als gespeicherten Filter verwenden möchten, wählen Sie **Fertig aus.**
 
@@ -105,7 +105,6 @@ Nach der Überprüfung der Grundlagen der Nachricht ist es an der Zeit, eine Nac
 - **Textansicht:** In der Textansicht wird eine nur zeilennummerierte Textansicht der Nachricht angezeigt, und sie enthält Die Hervorhebung von Schlüsselwörtern in Nachrichten und Anlagen für Begriffe oder Schlüsselwörter vom Typ vertraulicher Informationen, die in der zugeordneten Kommunikationskonformitätsrichtlinie übereinstimmen. Das Hervorheben von Schlüsselwörtern kann Ihnen dabei helfen, lange Nachrichten und Anlagen schnell auf den Interessenbereich zu überprüfen. In einigen Fällen kann hervorgehobener Text nur in Anlagen für Nachrichten enthalten sein, die Richtlinienbedingungen erfüllen. Die Hervorhebung von Schlüsselwörtern wird für Begriffe, die von integrierten Klassifizierungen identifiziert werden, die einer Richtlinie zugewiesen sind, nicht unterstützt. Eingebettete Dateien werden nicht angezeigt, und die Zeilennummerierung dieser Ansicht ist hilfreich, um auf relevante Details zwischen mehreren Prüfern zu verweisen.
 - **Anmerkungenansicht**: In dieser Ansicht können Prüfer Anmerkungen direkt zu der Nachricht hinzufügen, die in der Nachrichtenansicht gespeichert werden. Wenn [OCR](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) für die Richtlinie aktiviert ist, werden Bilder, die gedruckten oder handschriftlichen Text enthalten, der richtlinienbedingten Übereinstimmungen entspricht, als untergeordnetes Element für die zugeordnete Nachricht in dieser Ansicht angezeigt und können mit Anmerkungen versehen werden.
 - **Benutzerhistorie**: Die Ansicht "Benutzerhistorie" zeigt alle anderen Warnungen an, die durch eine Richtlinie zur Kommunikationscompliance für den Benutzer, der die Nachricht sendet, generiert wurden.
-- **Nachrichtendetailansicht:** Erweiterte Ansicht von Nachrichtenmetadaten und Konfigurationsinformationen.
 - **Mustererkennungsbenachrichtigung:** Viele Schikanierungs- und Mobbingaktionen im Laufe der Zeit und das erneute Auftreten von Instanzen desselben Verhaltens durch einen Benutzer. Die *Benachrichtigung "Muster erkannt"* wird in den Warnungsdetails angezeigt und weckt die Aufmerksamkeit auf die Warnung. Die Erkennung von Mustern wird auf Richtlinienbasis durchgeführt und bewertet das Verhalten in den letzten 30 Tagen, wenn mindestens zwei Nachrichten von einem Absender an denselben Empfänger gesendet werden. Ermittler und Prüfer können diese Benachrichtigung verwenden, um wiederholtes Verhalten zu identifizieren, um die Warnung gegebenenfalls auszuwerten.
 - **Ansicht "Übersetzen** anzeigen": In dieser Ansicht wird der  Benachrichtigungstext automatisch in die Sprache konvertiert, die in der Einstellung Angezeigte Sprache im Microsoft 365 für jeden Prüfer konfiguriert ist. Die Translate-Ansicht hilft, die Unterstützung von Ermittlungen für Organisationen mit mehrsprachigen Benutzern zu erweitern, und es ist nicht mehr nötig, zusätzliche Übersetzungsdienste außerhalb des Prozesses zur Überprüfung der Kommunikationskonformität zu benötigen. Mithilfe von Microsoft Translate-Diensten kann die Translate-Ansicht nach Bedarf aktiviert und deaktiviert werden und unterstützt eine vielzahl von Sprachen. Eine vollständige Liste der unterstützten Sprachen finden Sie unter [Microsoft Translator Languages](https://www.microsoft.com/translator/business/languages/). Sprachen, die in der *Translator aufgeführt sind,* werden in der Ansicht Übersetzen unterstützt.
 

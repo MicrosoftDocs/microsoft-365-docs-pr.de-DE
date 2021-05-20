@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: ''
 localization_priority: None
-ms.openlocfilehash: 2e7152530dc3221eb3ab01047416993178193732
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 073c14f84f4858a1853da062bf87ae9e78c05cbd
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333818"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583592"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Übersicht über das Thema Center in Microsoft Viva Topics
 
@@ -79,7 +79,7 @@ Auf der Seite Themen **verwalten** zeigt das Themendashboard alle Themen an, auf
  
 - Entfernen Sie das Thema: Macht das Thema für Endbenutzer nicht wiederherstellbar. Das Thema wird auf die Registerkarte **Entfernt** verschoben und kann bei Bedarf später bestätigt werden. 
 
-Weitere Informationen zum Verwalten von Themen auf der Seite **Themen verwalten finden Sie unter [Manage topics](manage-topics.md).
+Weitere Informationen zum Verwalten von Themen auf der **Seite** Themen verwalten finden Sie unter [Manage topics](manage-topics.md).
 
 ## <a name="create-or-edit-a-topic"></a>Erstellen oder Bearbeiten eines Themas
 

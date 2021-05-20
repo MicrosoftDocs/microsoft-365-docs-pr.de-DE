@@ -12,12 +12,12 @@ search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie, wie Sie SharePoint Syntex verwenden, um Vertragsdateien zu identifizieren und Daten mithilfe einer Microsoft 365 extrahieren.
-ms.openlocfilehash: f246dd4ed619dd9885d2c45c69d607cfa9c2483f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 67c0a072b070cd414f5079fe4fb61e7391839951
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538555"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583568"
 ---
 # <a name="step-1-use-sharepoint-syntex-to-identify-contract-files-and-extract-data"></a>Schritt 1. Verwenden SharePoint Syntex zum Identifizieren von Vertragsdateien und Extrahieren von Daten
 
@@ -42,7 +42,7 @@ Ihre Organisation benötigt eine Möglichkeit, alle Vertragsdokumente aus den vi
 ## <a name="steps-to-create-and-train-your-model"></a>Schritte zum Erstellen und Trainieren Ihres Modells
 
 > [!NOTE]
-> Für diese Schritte können Sie die Beispieldateien im [Microsoft SharePoint Syntex Samples Repository verwenden.](https://github.com/pnp/syntex-samples) Die Beispiele in diesem Repository enthalten sowohl die Dokumentverständnismodelldateien als auch die Dateien, die zum Trainieren des Modells verwendet werden.
+> Für diese Schritte können Sie die Beispieldateien im [Repository "Contracts Management Solution Assets" verwenden.](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management) Die Beispiele in diesem Repository enthalten sowohl die Dokumentverständnismodelldateien als auch die Dateien, die zum Trainieren des Modells verwendet werden.
 
 ### <a name="create-a-contract-model"></a>Erstellen eines Vertragsmodells
 
@@ -184,7 +184,7 @@ So wenden Sie Ihr Modell auf SharePoint Dokumentbibliothek an:
 
    ![Screenshot der Seite Verträge mit der Option Modell auf Bibliotheken anwenden hervorgehoben.](../media/content-understanding/key-actions-apply-model.png)
 
-2. Wählen Sie **im** Bereich Vertrag hinzufügen die SharePoint aus, die die Dokumentbibliothek enthält, auf die Sie das Modell anwenden möchten. Wenn die Website in der Liste nicht angezeigt wird, verwenden Sie das Suchfeld, um Sie zu finden. Wählen Sie **Hinzufügen**.
+2. Wählen Sie **im** Bereich Vertrag hinzufügen die SharePoint aus, die die Dokumentbibliothek enthält, auf die Sie das Modell anwenden möchten. Wenn die Website in der Liste nicht angezeigt wird, verwenden Sie das Suchfeld, um Sie zu finden. Klicken Sie auf **Hinzufügen**.
 
     > [!NOTE]
     > Sie müssen über die Berechtigung *Listen verwalten* oder *Bearbeiten* für die Dokumentbibliothek verfügen, auf die Sie das Modell anwenden möchten.

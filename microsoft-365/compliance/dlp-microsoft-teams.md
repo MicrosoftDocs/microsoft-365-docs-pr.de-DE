@@ -14,48 +14,74 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Sie können jetzt DLP-Richtlinien auf Microsoft Teams und Kanäle anwenden. Lesen Sie diesen Artikel, um mehr über die Funktionsweise zu erfahren.
-ms.openlocfilehash: 9fdce86473dcfbb7ec75b9d371b8782d4141ef57
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+description: Microsoft Teams chats and channels supports Data Loss Prevention (DLP) policies.
+ms.openlocfilehash: e55bfa34b2495465f573bcede3ebda2308dbbbbc
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572465"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583388"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Verhinderung von Datenverlust (DLP) und Microsoft Teams.
 
-> [!NOTE]
-> Funktionen zur Verhinderung von Datenverlust wurden kürzlich Microsoft Teams Chat- und Kanalnachrichten für Benutzer hinzugefügt, die für Office 365 E5/A5, Microsoft 365 E5/A5, Microsoft 365 Information Protection and Governance oder Office 365 Advanced Compliance lizenziert sind. Office 365 und Microsoft 365 E3 enthalten DLP-Schutz für SharePoint Online, OneDrive und Exchange Online. Dies umfasst auch Dateien, die über Teams freigegeben werden, Teams SharePoint Online und OneDrive zum Freigeben von Dateien verwendet.
-Für die Unterstützung des DLP-Schutzes in Teams Chat ist E5 erforderlich.
-Weitere Informationen zu den Lizenzierungsanforderungen finden Sie unter [Microsoft 365-Dienste auf Mandantenebene – Leitfaden zur Lizenzierung](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
-
-## <a name="overview-of-dlp-for-microsoft-teams"></a>Übersicht über DLP für Microsoft Teams
-
-Kürzlich wurden [die Funktionen zur](dlp-learn-about-dlp.md) Verhinderung von Datenverlust erweitert, um Microsoft Teams Chat- und Kanalnachrichten, einschließlich Nachrichten des privaten **Kanals, zu umfassen.** 
-
-> [!IMPORTANT]
-> DLP gilt derzeit nur für die tatsächlichen Nachrichten im Chat- oder Kanalthread. Aktivitätsbenachrichtigungen – die eine kurze Nachrichtenvorschau enthalten und basierend  auf den Benachrichtigungseinstellungen eines Benutzers angezeigt werden – sind derzeit nicht in Teams DLP enthalten. Alle vertraulichen Informationen im Teil der Nachricht, der in der Vorschau angezeigt wird, bleiben in der Benachrichtigung sichtbar, auch nachdem die DLP-Richtlinie angewendet und vertrauliche Informationen entfernt wurde, die die Nachricht selbst enthält.
-
-Wenn Ihre Organisation über DLP verfügt, können Sie jetzt Richtlinien definieren, die verhindern, dass Personen vertrauliche Informationen in einer Microsoft Teams oder Chatsitzung freigeben. Hier sind einige Beispiele für die Funktionsweise dieses Schutzes:
+Wenn Ihre Organisation über Verhinderung von Datenverlust (Data Loss Prevention, DLP) verfügt, können Sie Richtlinien definieren, die verhindern, dass Personen vertrauliche Informationen in einem Microsoft Teams oder einer Chatsitzung freigeben. Hier sind einige Beispiele für die Funktionsweise dieses Schutzes:
 
 - **Beispiel 1: Schützen vertraulicher Informationen in Nachrichten**. Angenommen, jemand versucht, vertrauliche Informationen in einem Teams oder Kanal mit Gästen (externen Benutzern) zu teilen. Wenn Sie eine DLP-Richtlinie definiert haben, um dies zu verhindern, werden Nachrichten mit vertraulichen Informationen, die an externe Benutzer gesendet werden, gelöscht. Dies geschieht automatisch und innerhalb von Sekunden, je nach Konfiguration Ihrer DLP-Richtlinie.
 
     > [!NOTE]
     > DLP für Microsoft Teams blockiert vertrauliche Inhalte, wenn sie für Microsoft Teams freigegeben werden, die über:<br/>- [Gastzugriff](/MicrosoftTeams/guest-access) in Teams und Kanälen; oder<br/>- [externer Zugriff](/MicrosoftTeams/manage-external-access) in Besprechungen und Chatsitzungen. <p>DLP für externe Chatsitzungen funktioniert nur, wenn sich sowohl der Absender als auch der Empfänger im Teams Nur-Modus befinden und Microsoft Teams [systemeigenen Verbund verwenden.](/microsoftteams/manage-external-access) DLP für Teams blockiert nachrichten nicht in [Interop](/microsoftteams/teams-and-skypeforbusiness-coexistence-and-interoperability#interoperability-of-teams-and-skype-for-business) mit Skype for Business oder nicht nativen Verbundchatsitzungen.
 
-- **Beispiel 2: Schützen vertraulicher Informationen in Dokumenten**. Angenommen, jemand versucht, ein Dokument für Gäste in einem Microsoft Teams oder Chat zu teilen, und das Dokument enthält vertrauliche Informationen. Wenn Sie eine DLP-Richtlinie definiert haben, um dies zu verhindern, wird das Dokument für diese Benutzer nicht geöffnet. Beachten Sie, dass ihre DLP-Richtlinie in diesem Fall SharePoint und OneDrive, damit der Schutz möglich ist. (Dies ist ein Beispiel für DLP für SharePoint, das in Microsoft Teams gezeigt wird und daher erfordert, dass Benutzer für Office 365 DLP (in Office 365 E3 enthalten) lizenziert sind, aber keine Lizenz für Office 365 Advanced Compliance.)
+- **Beispiel 2: Schützen vertraulicher Informationen in Dokumenten**. Angenommen, jemand versucht, ein Dokument für Gäste in einem Microsoft Teams oder Chat zu teilen, und das Dokument enthält vertrauliche Informationen. Wenn Sie eine DLP-Richtlinie definiert haben, um dies zu verhindern, wird das Dokument für diese Benutzer nicht geöffnet. Ihre DLP-Richtlinie muss SharePoint und OneDrive einschließen, damit ein Schutz besteht. Dies ist ein Beispiel für DLP für SharePoint, das in Microsoft Teams gezeigt wird und daher erfordert, dass Benutzer für Office 365 DLP (in Office 365 E3 enthalten) lizenziert sind, jedoch keine Lizenz für Office 365 Advanced Compliance.)
+
+## <a name="dlp-licensing-for-microsoft-teams"></a>DLP-Lizenzierung für Microsoft Teams
+
+[Die Funktionen zur Verhinderung von](dlp-learn-about-dlp.md) Datenverlust wurden um Microsoft Teams Chat- und Kanalnachrichten erweitert, einschließlich nachrichten für private **Kanäle** für:
+
+- Office 365 E5/A5
+- Microsoft 365 E5/A5
+- Microsoft 365 A5 Information Protection und Governance
+- Office 365 Advanced Compliance
+
+Office 365 und Microsoft 365 E3 enthalten DLP-Schutz für SharePoint Online, OneDrive und Exchange Online. Dies umfasst auch Dateien, die über Teams freigegeben werden, Teams SharePoint Online und OneDrive zum Freigeben von Dateien verwendet.
+
+Für die Unterstützung des DLP-Schutzes in Teams Chat ist E5 erforderlich.
+
+Weitere Informationen zu den Lizenzierungsanforderungen finden Sie unter [Microsoft 365-Dienste auf Mandantenebene – Leitfaden zur Lizenzierung](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+
+> [!IMPORTANT]
+> DLP gilt nur für die tatsächlichen Nachrichten im Chat- oder Kanalthread. Aktivitätsbenachrichtigungen – die eine kurze Nachrichtenvorschau enthalten und basierend  auf den Benachrichtigungseinstellungen eines Benutzers angezeigt werden – sind nicht in Teams DLP enthalten. Alle vertraulichen Informationen im Teil der Nachricht, der in der Vorschau angezeigt wird, bleiben in der Benachrichtigung sichtbar, auch nachdem die DLP-Richtlinie angewendet und vertrauliche Informationen entfernt wurde, die die Nachricht selbst enthält.
+
+## <a name="scope-of-dlp-protection"></a>Umfang des DLP-Schutzes
+
+Der DLP-Schutz wird unterschiedlich auf Teams angewendet.
+
+|Benutzerkonten/Gruppen/Liste  |Teams Entität |Verfügbarer DLP-Schutz|
+|---------|---------|---------|
+|einzelne Benutzerkonten     |1:1/n-Chats         |ja         |
+|     |Allgemeine Chats         |nein         |
+|     |Freigegebene Kanäle         |nein         |
+|     |Private Kanäle         |ja         |
+|Sicherheitsgruppen/Verteilerlisten  | 1:1/n-Chats         |ja         |
+|     |Allgemeine Chats         |nein         |
+|     |Freigegebene Kanäle         |nein      |
+|     |Private Kanäle         |ja        |
+|Microsoft 365 Gruppe    |1:1/n-Chats          |nein         |
+|     |Allgemeine Chats          |ja        |
+|     |Freigegebene Kanäle|ja |
+|     |Private Kanäle|nein| 
+
 
 ## <a name="policy-tips-help-educate-users"></a>Richtlinientipps helfen Bei der Schulung von Benutzern
 
-Ähnlich wie DLP in [Exchange-, Outlook-, Outlook](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web)im Web, [SharePoint Online, OneDrive for Business-Websites](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)und Office-Desktopclients funktioniert, werden Richtlinientipps angezeigt, wenn eine Aktion mit einer DLP-Richtlinie in Konflikt steht. [](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs) Hier ist ein Beispiel für einen Richtlinientipp:
+Ähnlich wie DLP in [Exchange,Outlook, Outlook](data-loss-prevention-policies.md#policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web)im Web, [SharePoint Online, OneDrive for Business-Websites](data-loss-prevention-policies.md#policy-evaluation-in-onedrive-for-business-and-sharepoint-online-sites)und Office-Desktopclients [](data-loss-prevention-policies.md#policy-evaluation-in-the-office-desktop-programs)funktioniert, werden Richtlinientipps angezeigt, wenn eine Aktion mit einer DLP-Richtlinie ausgelöst wird. Hier ist ein Beispiel für einen Richtlinientipp:
 
 ![Benachrichtigung über blockierte Nachrichten in Teams](../media/dlp-teams-blockedmessage-notification.png)
 
-In diesem Fall hat der Absender versucht, eine Sozialversicherungsnummer in einem Microsoft Teams teilen. Der **Link Was kann ich tun?** öffnet ein Dialogfeld, das Optionen zum Beheben des Problems für den Absender bietet. Beachten Sie, dass der Absender in diesem Fall die Richtlinie außer Kraft setzen oder einen Administrator benachrichtigen kann, um die Richtlinie zu überprüfen und zu beheben.
+Hier hat der Absender versucht, eine Sozialversicherungsnummer in einem Microsoft Teams teilen. Der **Link Was kann ich tun?** öffnet ein Dialogfeld, das Optionen zum Beheben des Problems für den Absender bietet. Beachten Sie, dass der Absender die Richtlinie außer Kraft setzen oder einen Administrator benachrichtigen kann, um sie zu überprüfen und zu beheben.
 
 ![Optionen zum Auflösen blockierter Nachrichten](../media/dlp-teams-blockedmessage-possibleactions.png)
 
-In Ihrer Organisation können Sie festlegen, dass Benutzer eine DLP-Richtlinie außer Kraft setzen können. Und wenn Sie Ihre DLP-Richtlinien konfigurieren, können Sie die Standardrichtlinientipps verwenden oder [Richtlinientipps](#to-customize-policy-tips) für Ihre Organisation anpassen.
+In Ihrer Organisation können Sie festlegen, dass Benutzer eine DLP-Richtlinie außer Kraft setzen können. Wenn Sie Ihre DLP-Richtlinien konfigurieren, können Sie die Standardrichtlinientipps verwenden oder [Richtlinientipps](#to-customize-policy-tips) für Ihre Organisation anpassen.
 
 Kehren Sie zu unserem Beispiel zurück, in dem ein Absender eine Sozialversicherungsnummer in einem Teams freigegeben hat. Hier sehen Sie, was der Empfänger gesehen hat:
 
@@ -66,7 +92,7 @@ Kehren Sie zu unserem Beispiel zurück, in dem ein Absender eine Sozialversicher
 
 Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle zugewiesen sein, die über Berechtigungen zum Bearbeiten von DLP-Richtlinien verfügt. Weitere Informationen hierzu finden Sie unter [Berechtigungen](data-loss-prevention-policies.md#permissions).
 
-1. Wechseln Sie zum Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) und melden Sie sich an.
+1. Wechseln Sie zum Compliance Center ( [https://compliance.microsoft.com](https://compliance.microsoft.com) ) und melden Sie sich an.
 
 2. Wählen **Sie Richtlinie zur Verhinderung von Datenverlust**  >  **aus.**
 
@@ -93,7 +119,7 @@ Lassen Sie ungefähr eine Stunde, bis Ihre Änderungen ihren Weg durch Ihr Reche
 
 Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle zugewiesen sein, die über Berechtigungen zum Bearbeiten von DLP-Richtlinien verfügt. Weitere Informationen hierzu finden Sie unter [Berechtigungen](data-loss-prevention-policies.md#permissions).
 
-1. Wechseln Sie zum Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) und melden Sie sich an.
+1. Wechseln Sie zum Compliance Center ( [https://compliance.microsoft.com](https://compliance.microsoft.com) ) und melden Sie sich an.
 
 2. Wählen **Sie Richtlinie zur Verhinderung von Datenverlust**  >  **aus.**
 
@@ -124,7 +150,7 @@ Lassen Sie ungefähr eine Stunde, bis Ihre Änderungen ihren Weg durch Ihr Reche
 
 Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle zugewiesen sein, die über Berechtigungen zum Bearbeiten von DLP-Richtlinien verfügt. Weitere Informationen hierzu finden Sie unter [Berechtigungen](data-loss-prevention-policies.md#permissions).
 
-1. Wechseln Sie zum Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) und melden Sie sich an.
+1. Wechseln Sie zum Compliance Center ( [https://compliance.microsoft.com](https://compliance.microsoft.com) ) und melden Sie sich an.
 
 2. Wählen **Sie Richtlinie zur Verhinderung von**  >  **Datenverlust**  >  **+ Erstellen einer Richtlinie aus.**
 
@@ -148,9 +174,9 @@ Um diese Aufgabe ausführen zu können, muss Ihnen eine Rolle zugewiesen sein, d
     > [!NOTE]
     > Wenn Sie sicherstellen möchten, dass Dokumente, die vertrauliche Informationen enthalten, in Teams nicht unangemessen freigegeben werden, stellen Sie sicher, dass **SharePoint-Websites** und **OneDrive-Konten** sowie Teams Chat- und Kanalnachrichten aktiviert **sind.**
 
-6. Behalten Sie **auf** der Registerkarte Richtlinieneinstellungen unter Anpassen des Zu schützende Inhaltstyps die Standardeinstellungen für einfache Einstellungen bei, oder wählen Sie **Erweiterte** Einstellungen verwenden aus, und wählen Sie dann **Weiter aus.** Wenn Sie erweiterte Einstellungen auswählen, können Sie Regeln für Ihre Richtlinie erstellen oder bearbeiten. (Informationen dazu finden Sie unter [Einfache Einstellungen im Vergleich zu erweiterten Einstellungen](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).)
+6. Behalten Sie **auf** der Registerkarte Richtlinieneinstellungen unter Anpassen des Zu schützende Inhaltstyps die Standardeinstellungen für einfache Einstellungen bei, oder wählen Sie **Erweiterte** Einstellungen verwenden aus, und wählen Sie dann **Weiter aus.** Wenn Sie erweiterte Einstellungen auswählen, können Sie Regeln für Ihre Richtlinie erstellen oder bearbeiten. Hilfe zu diesem Thema finden Sie unter [Einfache Einstellungen im Vergleich zu erweiterten Einstellungen](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings).
 
-7.  Überprüfen Sie **auf der** Registerkarte Richtlinieneinstellungen unter Was möchten Sie tun, wenn vertrauliche Informationen erkannt **werden?** die Einstellungen. (Hier können Sie standardrichtlinientipps [](use-notifications-and-policy-tips.md)und E-Mail-Benachrichtigungen behalten oder anpassen.)
+7.  Überprüfen Sie **auf der** Registerkarte Richtlinieneinstellungen unter Was möchten Sie tun, wenn vertrauliche Informationen erkannt **werden?** die Einstellungen. Hier können Sie standardrichtlinientipps und E-Mail-Benachrichtigungen behalten [oder](use-notifications-and-policy-tips.md)anpassen.
 
     > [!div class="mx-imgBorder"]
     > ![DLP-Richtlinieneinstellungen mit Tipps und Benachrichtigungen](../media/dlp-teams-policysettings-tipsemails.png)
@@ -175,7 +201,7 @@ Wählen Sie Folgendes aus, um sicherzustellen, dass SharePoint, die vertrauliche
 - Empfohlene DLP-Richtlinienstruktur
 
     - **Bedingungen:**
-        - Inhalt enthält einen der folgenden Typen vertraulicher Informationen: [Alle gilt auswählen]
+        - Inhalt enthält einen der folgenden Typen vertraulicher Informationen: [Alle anwendbaren Auswählen]
         
         - Inhalte werden von Microsoft 365 für Personen außerhalb meiner Organisation freigegeben
         
@@ -205,6 +231,5 @@ DLP-Richtlinie in Aktion, wenn Gast versucht, ein Dokument in einem Teams mit ex
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-[Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
-
-[Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien](use-notifications-and-policy-tips.md)
+- [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
+- [Senden von E-Mail-Benachrichtigungen und Anzeigen von Richtlinientipps für DLP-Richtlinien](use-notifications-and-policy-tips.md)

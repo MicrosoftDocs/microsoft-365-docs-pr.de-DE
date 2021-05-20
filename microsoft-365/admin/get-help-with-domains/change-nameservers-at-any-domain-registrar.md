@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 'Erfahren Sie, wie Sie Ihre Domäne in Microsoft 365 hinzufügen und einrichten, damit Ihre Dienste wie E-Mail und Skype for Business Online Ihren eigenen Domänennamen verwenden. '
-ms.openlocfilehash: 1348beb09fcbc5c12d01dbf197b1cb1240decded
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 447cc69aa2c4c3edcf1c4c6a2435cdc27fc22cd2
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332642"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582992"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Ändern des Namenservers zum Einrichten von Microsoft 365 mit einer beliebigen Domänenregistrierungsstelle.
 
@@ -189,10 +189,17 @@ Darüber hinaus können Sie einen CNAME-Eintrag erstellen, damit Kunden Ihre Web
 4.  Geben Sie **im Feld Hostname oder Alias** www **ein.**
 5.  Geben Sie im Feld Punkte **zu Adresse** den vollqualifizierten Domänennamen (Fully Qualified Domain Name, FQDN) für Ihre Website ein. Beispielsweise **contoso.com**.
 6.  Wenn Sie die TTL-Einstellung für den Datensatz ändern möchten, wählen Sie in der Dropdownliste **TTL** eine neue Dauer aus. Fahren Sie andernfalls mit Schritt 6 fort.
-7.  Wählen Sie **Speichern** aus.
+7.  Klicken Sie auf **Speichern**.
 
 Nachdem die Nameservereinträge so aktualisiert wurden, dass sie auf Microsoft verweisen, ist die Domäneneinrichtung abgeschlossen. E-Mails werden an Microsoft geroutet, und der Datenverkehr zu Ihrer Websiteadresse wird weiterhin an Ihren aktuellen Websitehost gesendet."
     
 > [!NOTE]
 > Es kann mehrere Stunden dauern, bis Ihre Namenservereinträge im Internet im gesamten DNS-System aktualisiert wurden. Danach sind Ihre Microsoft-E-Mails und andere Dienste alle dafür eingerichtet, mit Ihrer Domäne zu funktionieren. 
   
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Hinzufügen von DNS-Einträgen zum Verbinden Ihrer Domäne](create-dns-records-at-any-dns-hosting-provider.md) (Artikel)
+
+[Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden](find-and-fix-issues.md) (Artikel)
+
+[Domänen verwalten](index.yml) (Linkseite)

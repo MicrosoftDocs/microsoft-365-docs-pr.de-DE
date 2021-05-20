@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
 recommendations: false
 description: Erfahren Sie, wie Sie die Domäne auswählen, die beim Erstellen Microsoft 365 Gruppen verwendet werden soll, indem Sie E-Mail-Adressrichtlinien mithilfe von PowerShell konfigurieren.
-ms.openlocfilehash: a0142ea5f5aa088c4be79fc8699a616d9cdd9390
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4d620c3344f83f56afd05c00d78615331dd413ed
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538219"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583148"
 ---
 # <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Wählen Sie die Domäne aus, die beim Erstellen Microsoft 365 werden soll
 
@@ -119,10 +119,10 @@ Es gibt ein paar weitere Punkte, die Sie wissen müssen:
     
 - Für eine Organisation können maximal 100 E-Mail-Adressrichtlinien konfiguriert werden.
     
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Schritt-für-Schritt-Planung für die Zusammenarbeitsgovernance](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Planung der Steuerung der Zusammenarbeit schritt-für-Schritt](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step) (Artikel)
 
-[Erstellen eines Plans für die Zusammenarbeitsgovernance](collaboration-governance-first.md)
+[Erstellen Ihres Governanceplans für die Zusammenarbeit](collaboration-governance-first.md) (Artikel)
 
-[Erstellen einer Microsoft 365 im Admin Center](../admin/create-groups/create-groups.md)
+[Erstellen einer Microsoft 365 im Admin Center](../admin/create-groups/create-groups.md) (Artikel)

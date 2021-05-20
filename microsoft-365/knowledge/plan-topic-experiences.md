@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informationen zum Planen von Plan for Microsoft Viva Topics
-ms.openlocfilehash: d64e4b341fe96d7aa3636f58bffe3dd8f388838e
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: de7534ce58a7888ac822826ef4ef1b4934ed8cb1
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957539"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583112"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Planen von Microsoft Viva-Themen
 
@@ -31,6 +31,8 @@ In diesem Artikel werden die folgenden Planungsentscheidungen untersucht:
 - Welchen Namen möchten Sie Ihrem Themencenter geben?
 
 Die Sicherheit und der Datenschutz Ihrer Daten werden berücksichtigt, und die Themenerfahrung gewährt Benutzern keinen zusätzlichen Zugriff auf Dateien, auf die sie keine Rechte haben. Es wird empfohlen, im Rahmen Ihres Planungsprozesses auch Die Sicherheit und den Datenschutz von [Microsoft Viva Topics](topic-experiences-security-privacy.md) zu lesen.
+
+Weitere Informationen zur KI-Technologie hinter "Viva Topics" finden Sie [unter "Alexandria" in Microsoft Viva Topics:](https://www.microsoft.com/research/blog/alexandria-in-microsoft-viva-topics-from-big-data-to-big-knowledge)von Big Data bis zu big knowledge .
 
 ## <a name="requirements"></a>Anforderungen
 

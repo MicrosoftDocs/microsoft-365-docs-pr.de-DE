@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: dcae50150eb3b21e65e68a5cea376a0cdef31a65
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3df8fbf20fd00bd584af2fd329949939433a19eb
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538447"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583484"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zu Kommunikationskonformitätsfeatures
 
@@ -232,7 +232,7 @@ In der folgenden Tabelle werden weitere Informationen zu den einzelnen Bedingung
 Jedes Wort, das Sie eingeben und mit einem Komma trennen, wird separat angewendet (nur ein Wort muss gelten, damit die Richtlinienbedingung auf die E-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die Bedingung **Message** enthält eines dieser Wörter mit den Schlüsselwörtern "Banker", "vertraulich" und "Insiderhandel" getrennt durch ein Komma (Banker, vertraulich, Insiderhandel). Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker", "vertraulich" oder den Ausdruck "Insiderhandel" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau mit dem übereinstimmen, was Sie eingeben.
 
 >[!IMPORTANT]
->Beim Importieren einer benutzerdefinierten Wörterbuchdatei muss jedes Wort oder jeder Ausdruck durch eine Wagenrücklauf- und eine separate Zeile getrennt werden. <br> Beispiel: <br><br>
+>Beim Importieren einer benutzerdefinierten Wörterbuchdatei muss jedes Wort oder jeder Ausdruck durch eine Wagenrücklauf- und eine separate Zeile getrennt werden. <br> Zum Beispiel: <br><br>
 >*Banker* <br>
 >*vertraulich* <br>
 >*Insiderhandel*
@@ -311,6 +311,7 @@ Kommunikationskonformitätsfilter ermöglichen das Filtern und Sortieren von War
 | **Größe** | Die Größe der Nachricht in KB. |
 | **Betreff/Titel** | Der Betreff der Nachricht oder der Chattitel. |
 | **Tags** | Die einer Nachricht zugewiesenen Tags, entweder *"Questionable",* *"Compliant"* oder *"Non-compliant".* |
+| **Sprache** | Die erkannte Sprache des Texts in der Nachricht. Die Nachricht wird gemäß der Sprache des Großteils des Nachrichtentexts klassifiziert. Für eine Nachricht mit deutschem und italienischem Text, aber der Großteil des Texts ist Deutsch, wird die Nachricht als Deutsch (DE) klassifiziert. Die folgenden Sprachen werden unterstützt: Chinesisch (vereinfacht – ZH), Englisch (EN), Französisch (FR), Deutsch (DE), Italienisch (IT), Japanisch (JP), Portugiesisch (PT) und Spanisch (ES). Wenn Sie beispielsweise Nachrichten filtern möchten, die als Deutsch und Italienisch klassifiziert sind, geben Sie "DE,IT" (die zweistelligen Sprachcodes) in das Suchfeld Sprachfilter ein. Um die erkannte Sprachklassifizierung für eine Nachricht anzuzeigen, wählen Sie eine Nachricht aus, wählen Sie Nachrichtendetails anzeigen aus, und führen Sie einen Bildlauf zum Feld EmailDetectedLanguage aus. |
 | **Eskaliert an** | Der Benutzername der Person, die teil einer Nachrichteneskalationsaktion ist. |
 | **Klassifizierungen** | Der Name der integrierten und benutzerdefinierten Klassifizierungen, die für die Nachricht gelten. Beispiele hierfür sind *Anstößige Sprache,* *gezielte Belästigung,* *Profanität,* *Bedrohung* und vieles mehr.
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Erfahren Sie mehr über bewährte Methoden zum Verwalten der vielen Themen in Ihrer Organisation mithilfe von "Viva Topics".
-ms.openlocfilehash: dd9fe658d4f698ac50563b5c9ea141a090f6141d
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: a11d6fd1a7435ce75faa749a6d66fba6c1cda457
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538411"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583064"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Manage topics at scale in Microsoft Viva Topics
 
@@ -28,15 +28,17 @@ Zunächst eine Erinnerung an die [vier Phasen für Themen:](manage-topics.md#top
 
 - **Vorgeschlagen**: Ein Thema wurde von KI identifiziert und verfügt über genügend unterstützende Ressourcen, Verbindungen und Eigenschaften. (Diese werden in der Benutzeroberfläche **als vorgeschlagenes** Thema gekennzeichnet.)
 
-- **Bestätigt**: Ein Thema, das von KI vorgeschlagen wurde, wurde überprüft. Die Themenüberprüfung muss von einem Wissensmanager bestätigt werden. Damit ein Thema bestätigt wird, muss es ein Netz von zwei positiven Stimmen von Benutzern geben, die mit dem Feedbackmechanismus auf der Themenkarte abgestimmt haben. Wenn beispielsweise ein Benutzer für ein bestimmtes Thema positiv und ein Benutzer für ein bestimmtes Thema negativ stimmte, benötigen Sie noch zwei weitere positive Stimmen, damit das Thema bestätigt wird.
+- **Bestätigt**: Ein Thema, das von AI vorgeschlagen wurde, muss überprüft werden. Die Themenüberprüfung erfolgt, wenn eine der beiden:
+   - Ein Knowledge Manager bestätigt ein Thema. Ein Knowledge Manager [bestätigt ein Thema auf](manage-topics.md#confirmed-topics) der Seite Themen **verwalten.** 
+   - Mehrere Benutzer bestätigen ein Thema. Es muss ein Netz von zwei positiven Stimmen von Benutzern sein, die mit dem Feedbackmechanismus auf der Themenkarte abgestimmt haben. Wenn beispielsweise ein Benutzer für ein bestimmtes Thema positiv und ein Benutzer für ein bestimmtes Thema negativ stimmte, benötigen Sie noch zwei weitere positive Stimmen, damit das Thema bestätigt wird.
  
-- **Veröffentlicht**: Ein bestätigtes Thema, das kuratiert wurde: Manuelle Bearbeitungen wurden vorgenommen, um die Qualität zu verbessern.
+- **Veröffentlicht**: Ein bestätigtes Thema, das kuratiert wurde. Es wurden manuelle Bearbeitungen vorgenommen, um die Qualität zu verbessern.
 
 - **Entfernt:** Ein Thema wird von einem Wissensmanager abgelehnt und ist für die Betrachter nicht mehr sichtbar. Ein Thema kann in einem beliebigen Zustand entfernt werden (vorgeschlagen, bestätigt oder veröffentlicht). Damit ein Thema entfernt werden kann, muss es ein Netz von zwei negativen Stimmen von Benutzern geben, die mit den Feedbackmechanismen auf der Themenkarte abgestimmt haben. Wenn beispielsweise ein Benutzer negativ und ein Benutzer für ein bestimmtes Thema positiv stimmte, benötigen Sie noch zwei negative Stimmen, damit das Thema entfernt werden kann. Wenn ein veröffentlichtes Thema entfernt wird, muss die Seite mit den kuratierten Details manuell über die Seitenbibliothek des Themencenters gelöscht werden.
 
 ## <a name="knowledge-manager-role"></a>Rolle "Knowledge Manager" 
 
-Wenn Sie Themen von "Viva" konfigurieren, fügen Sie eine  Gruppe von Benutzern hinzu, denen Berechtigungen erteilt wurden, um die Themenverwaltung im Themencenter zu sehen. Es wird nur für diese Benutzer angezeigt, die die Rolle der primären Kuration für die Themen übernehmen. Sie haben Zugriff auf Daten zu den Themen und können Listen aller Themen sehen, auf die sie Zugriff haben, um sie zu überprüfen und zu kuratieren.
+Beim Konfigurieren von Themen für "Viva" fügen Sie eine Gruppe von Benutzern hinzu, denen Berechtigungen zum Anzeigen der Seite **"Themen** verwalten" im Themencenter erteilt wurden. Es wird nur für diese Benutzer angezeigt, die die Rolle der primären Kuration für die Themen übernehmen. Sie haben Zugriff auf Daten zu den Themen und können Listen aller Themen sehen, auf die sie Zugriff haben, um sie zu überprüfen und zu kuratieren.
 
 Mitarbeiter in dieser Rolle sollten über umfassende Berechtigungen zum Anzeigen einer breiten Palette von Themen verfügen. Wenn Berechtigungen segmentiert sind, können Sie eine Gruppe von Benutzern auswählen, die unterschiedliche Bereiche des Unternehmens darstellen und für ihre eigenen Bereiche kuratieren können.
 

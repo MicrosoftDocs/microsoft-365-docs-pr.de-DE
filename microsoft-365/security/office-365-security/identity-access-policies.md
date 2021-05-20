@@ -20,12 +20,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 2bd719377e36cf608a0fe75078ab8bef004ad92e
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 42ab124f3026cf0b7441edf44c0e6433be5f0ecd
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346328"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583668"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Allgemeine Identitäts- und Gerätezugriffsrichtlinien
 
@@ -42,7 +42,7 @@ In diesem Leitfaden wird erläutert, wie die empfohlenen Richtlinien in einer ne
 
 Das folgende Diagramm veranschaulicht den empfohlenen Satz von Richtlinien. Sie zeigt, auf welche Schutzebene die einzelnen Richtlinien angewendet werden und ob die Richtlinien für PCs, Smartphones und Tablets oder beide Gerätekategorien gelten. Außerdem wird angegeben, wo Sie diese Richtlinien konfigurieren.
 
-[![Allgemeine Richtlinien zum Konfigurieren des Identitäts- und Gerätezugriffs](../../media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
+[![Allgemeine Richtlinien zum Konfigurieren des Identitäts- und Gerätezugriffs](../../media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/identity-device-access-policies-byplan.png)
 
 Im Folgenden finden Sie eine einseitige PDF-Zusammenfassung mit Links zu den einzelnen Richtlinien:
 
@@ -112,7 +112,7 @@ In den folgenden Tabellen werden die Richtlinieneinstellungen für bedingten Zug
 
 Im Abschnitt **Zuordnungen:**
 
-|Setting|Eigenschaften|Werte|Hinweise|
+|Einstellung|Eigenschaften|Werte|Hinweise|
 |---|---|---|---|
 |Benutzer und Gruppen|Einschließen|**Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen** aus: Wählen Sie bestimmte Gruppen aus, die zielgerichtete Benutzerkonten enthalten.|Beginnen Sie mit der Gruppe, die Pilotbenutzerkonten enthält.|
 ||Ausschließen|**Benutzer und Gruppen**: Wählen Sie Ihre Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (App-Identitäten).|Die Mitgliedschaft sollte bei Bedarf vorübergehend geändert werden.|
@@ -134,7 +134,7 @@ Wenden Sie die Risikoebeneneinstellungen basierend auf der zielorientierten Schu
 
 Im Abschnitt **Zugriffssteuerelemente:**
 
-|Setting|Eigenschaften|Werte|Aktion|
+|Einstellung|Eigenschaften|Werte|Aktion|
 |---|---|---|---|
 |Gewähren|**Grant access**||Auswählen|
 |||**Mehrstufige Authentifizierung erforderlich**|Scheck|
@@ -155,7 +155,7 @@ In [diesem Artikel finden](../../enterprise/microsoft-365-client-support-multi-f
 
 Im Abschnitt **Zuordnungen:**
 
-|Setting|Eigenschaften|Werte|Hinweise|
+|Einstellung|Eigenschaften|Werte|Hinweise|
 |---|---|---|---|
 |Benutzer und Gruppen|Einschließen|**Wählen Sie Benutzer und Gruppen > Benutzer und Gruppen** aus: Wählen Sie bestimmte Gruppen aus, die zielgerichtete Benutzerkonten enthalten.|Beginnen Sie mit der Gruppe, die Pilotbenutzerkonten enthält.|
 ||Ausschließen|**Benutzer und Gruppen**: Wählen Sie Ihre Ausnahmegruppe für bedingten Zugriff aus. Dienstkonten (App-Identitäten).|Die Mitgliedschaft sollte bei Bedarf vorübergehend geändert werden.|
@@ -165,7 +165,7 @@ Im Abschnitt **Zuordnungen:**
 
 Im Abschnitt **Zugriffssteuerelemente:**
 
-|Setting|Eigenschaften|Werte|Aktion|
+|Einstellung|Eigenschaften|Werte|Aktion|
 |---|---|---|---|
 |Gewähren|**Zugriff blockieren**||Auswählen|
 ||**Alle ausgewählten Steuerelemente erforderlich**||Auswählen|

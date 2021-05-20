@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 32949081418a6984a2b34d039a4dc39d60a56608
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: b47099dd0d26dba6a399ecff823bcc758be7e16d
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029091"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583640"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Darstellungen zu Microsoft 365-Produktivitätslösungen
 
@@ -83,7 +83,7 @@ Empfohlene Funktionen zum Schutz von Identitäten und Geräten, die auf Microsof
 
 | Element | Beschreibung |
 |:-----|:-----|
-|[![Modellposter: Identitäts- und Geräteschutz für Microsoft 365](../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [Anzeigen als PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Als PDF herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Herunterladen als Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> Aktualisiert september 2020|Es ist wichtig, konsistente Schutzebenen für Daten, Identitäten und Geräte zu verwenden. Dieses Modell zeigt, welche Funktionen mit weiteren Informationen zu Funktionen zum Schutz von Identitäten und Geräten vergleichbar sind.  <br/> |
+|[![Modellposter: Identitäts- und Geräteschutz für Microsoft 365](../media/microsoft-365-policies-configurations/o365-identity-device-protection-thumb.png)](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br/>  [Anzeigen als PDF](../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Als PDF herunterladen](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Herunterladen als Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)   <br/> Aktualisiert september 2020|Es ist wichtig, konsistente Schutzebenen für Daten, Identitäten und Geräte zu verwenden. Dieses Modell zeigt, welche Funktionen mit weiteren Informationen zu Funktionen zum Schutz von Identitäten und Geräten vergleichbar sind.  <br/> |
  
 <a name="BKMK_ediscovery"></a>
 ## <a name="advanced-ediscovery-architecture-in-microsoft-365"></a>Advanced eDiscovery architektur in Microsoft 365

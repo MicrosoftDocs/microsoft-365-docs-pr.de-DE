@@ -6,18 +6,18 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/19/2021
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie, wie Sie Microsoft Teams zum Erstellen Ihres Vertragsverwaltungskanals mithilfe einer Microsoft 365 verwenden.
-ms.openlocfilehash: d703f6f7286a6d9584e8b18d4e283174f42a95bd
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 20ace5d17550c8dd800368957dd940c9857bce5d
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301800"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583136"
 ---
 # <a name="step-2-use-microsoft-teams-to-create-your-contract-management-channel"></a>Schritt 2. Erstellen Microsoft Teams Vertragsverwaltungskanals mithilfe von Microsoft Teams
 
@@ -44,13 +44,13 @@ Nachdem Sie die SharePoint hinzugefügt haben, können Sie alle klassifizierten 
 ## <a name="customize-your-contracts-tab-tile-view"></a>Anpassen der Kachelansicht der Registerkarte Verträge
 
 > [!NOTE]
-> In diesem Abschnitt werden Codebeispiele referenziert, die in derContractCard.js **on-Datei** enthalten sind, die in der **ZIP-Datei solutionfiles** enthalten ist.
+> In diesem Abschnitt werden Codebeispiele referenziert, die in der [ContractTileFormatting.json-Datei](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) enthalten sind, die im [Repository "Contracts Management Solution Assets" enthalten ist.](https://github.com/pnp/syntex-samples/tree/main/scenario%20assets/Contracts%20Management)
 
 Während Teams Sie Ihre Verträge in einer Kachelansicht anzeigen können, möchten Sie sie möglicherweise so anpassen, dass die Vertragsdaten angezeigt werden, die Sie auf der Vertragskarte sichtbar machen möchten. Für die Registerkarte  Verträge ist es z. B. wichtig, dass Mitglieder den Client, den Auftragnehmer und den Gebührenbetrag auf der Vertragskarte sehen. Alle diese Felder wurden aus jedem Vertrag über Ihr SharePoint Syntex-Modell extrahiert, das auf Ihre Dokumentbibliothek angewendet wurde. Sie möchten auch in der Lage sein, die Kachelkopfleiste für jeden Status in unterschiedliche Farben zu ändern, damit Mitglieder leicht sehen können, wo sich der Vertrag im Genehmigungsprozess befindet. Beispielsweise verfügen alle genehmigten Verträge über eine blaue Kopfzeile.
 
    ![Listenansicht.](../media/content-understanding/tile.png)
 
-Für die von Ihnen verwendete benutzerdefinierte Kachelansicht müssen Sie Änderungen an der JSON-Datei vornehmen, die zum Formatieren der aktuellen Kachelansicht verwendet wird. Sie können auf die JSON-Datei verweisen, die zum Erstellen der Kartenansicht verwendet wird, indem Sie die **DateiContractCard.jsherunterladen.** In den folgenden Abschnitten werden bestimmte Abschnitte des Codes für Features in den Vertragskarten beschrieben.
+Für die von Ihnen verwendete benutzerdefinierte Kachelansicht müssen Sie Änderungen an der JSON-Datei vornehmen, die zum Formatieren der aktuellen Kachelansicht verwendet wird. Sie können auf die JSON-Datei verweisen, die zum Erstellen der Kartenansicht verwendet wird, indem Sie sich die Datei [ContractTileFormatting.js](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) ansehen. In den folgenden Abschnitten werden bestimmte Abschnitte des Codes für Features in den Vertragskarten beschrieben.
 
 Wenn Sie den JSON-Code für Ihre Ansicht in Ihrem Teams-Kanal anzeigen oder ändern möchten, wählen Sie im Teams-Kanal das Dropdownmenü Ansicht aus, und wählen Sie dann Aktuelle Ansicht **formatieren aus.**
 
@@ -58,7 +58,7 @@ Wenn Sie den JSON-Code für Ihre Ansicht in Ihrem Teams-Kanal anzeigen oder änd
 
 ## <a name="card-size-and-shape"></a>Kartengröße und -form
 
-In der **ContractCard.js** on-Datei, die Sie in der Referenz-ZIP-Datei heruntergeladen haben, sehen Sie sich den folgenden Abschnitt an, um den Code für die Formatierung der Größe und Form der Karte zu sehen.
+In der [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) sehen Sie sich den folgenden Abschnitt an, um den Code für die Formatierung der Größe und Form der Karte zu sehen.
 
 ```JSON
                   {
@@ -84,7 +84,7 @@ In der **ContractCard.js** on-Datei, die Sie in der Referenz-ZIP-Datei herunterg
 
 ## <a name="contract-status"></a>Vertragsstatus
 
-Mit dem folgenden Code können Sie den Status jeder Titelkarte definieren. Beachten Sie, dass für jeden Statuswert (*Neu*, *In Review*, *Approved* und *Rejected*) jeweils ein anderer Farbcode angezeigt wird. In der **ContractCard.json-Datei,** die Sie heruntergeladen haben, sehen Sie sich den Abschnitt an, der den Status definiert.
+Mit dem folgenden Code können Sie den Status jeder Titelkarte definieren. Beachten Sie, dass für jeden Statuswert (*Neu*, *In Review*, *Approved* und *Rejected*) jeweils ein anderer Farbcode angezeigt wird. Sehen SieContractTileFormatting.jsin der Datei [ "on"](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) den Abschnitt an, in dem der Status definiert ist.
 
 ```JSON
           {
@@ -109,7 +109,7 @@ Mit dem folgenden Code können Sie den Status jeder Titelkarte definieren. Beach
 
 Jede Vertragskarte zeigt drei Felder an, die für jeden Vertrag extrahiert wurden (*Client,* *Auftragnehmer* und *Gebührenbetrag*). Darüber hinaus möchten Sie auch die Uhrzeit/das Datum anzeigen, an dem die Datei vom SharePoint syntex-Modell klassifiziert wurde, mit dem sie identifiziert wurde. 
 
-In der **ContractCard.json-Datei,** die Sie heruntergeladen haben, werden diese in den folgenden Abschnitten definiert.
+In der [ContractTileFormatting.json](https://github.com/pnp/syntex-samples/blob/main/scenario%20assets/Contracts%20Management/View%20Formatter/ContractTileFormatting.json) werden diese in den folgenden Abschnitten definiert.
 
 ### <a name="client"></a>Client
 

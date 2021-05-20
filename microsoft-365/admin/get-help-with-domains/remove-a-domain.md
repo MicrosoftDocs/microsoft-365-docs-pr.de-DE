@@ -21,13 +21,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: Erfahren Sie, wie Sie eine alte Domäne aus Microsoft 365 entfernen und Benutzer und Gruppen in eine andere Domäne verschieben.
-ms.openlocfilehash: 3586cc8b288b77725c0dd3484629688e98e0a218
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+description: Erfahren Sie, wie Sie eine alte Domäne aus Microsoft 365 entfernen und Benutzer und Gruppen in eine andere Domäne verschieben oder Ihr Abonnement kündigen.
+ms.openlocfilehash: 089f0378109dd2a5abdf922694390bfdc943693a
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572117"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582932"
 ---
 # <a name="remove-a-domain"></a>Entfernen einer Domäne
   
@@ -218,10 +218,10 @@ Funktioniert es immer noch nicht? Die Domäne muss möglicherweise manuell entfe
   
 ::: moniker-end
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Häufig gestellte Fragen zu Domänen](../setup/domains-faq.yml)
+[Häufig gestellte Fragen](../setup/domains-faq.yml) zu Domänen (Artikel)
 
-[Wechseln zu einem anderen Microsoft 365 Business-Plan](../../commerce/subscriptions/switch-to-a-different-plan.md)
+[Wechseln zu einem anderen Microsoft 365 business plan](../../commerce/subscriptions/switch-to-a-different-plan.md) (Artikel)
 
-[Kündigen Ihres Abonnements](../../commerce/subscriptions/cancel-your-subscription.md)
+[Kündigen Ihres Abonnements](../../commerce/subscriptions/cancel-your-subscription.md) (Artikel)

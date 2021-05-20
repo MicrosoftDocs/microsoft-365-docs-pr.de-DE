@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In diesem Artikel erfahren Administratoren mehr über den Schutz sicherer Links in Defender for Office 365, um ihre Organisation vor Phishing und anderen Angriffen zu schützen, die bösartige URLs verwenden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86ecea1e250821f6a7f08d204586db0e60052e5c
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 573fd5b92400996fa595b5953028e20fcecec976
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274436"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583580"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Sichere Links in Microsoft Defender für Office 365
 
@@ -52,6 +52,9 @@ Der Schutz sicherer Links ist an den folgenden Speicherorten verfügbar:
 - **E-Mail-Nachrichten:** Der Schutz sicherer Links für Links in E-Mail-Nachrichten wird durch Richtlinien für sichere Links gesteuert. Es gibt keine Standardmäßige Richtlinie für sichere Links. Um den Schutz sicherer Links in E-Mail-Nachrichten zu erhalten, müssen Sie eine oder mehrere Richtlinien für sichere **Links erstellen.** Anweisungen finden Sie unter [Set up Safe Links policies in Microsoft Defender for Office 365](set-up-safe-links-policies.md).
 
   Weitere Informationen zum Schutz sicherer Links für [](#safe-links-settings-for-email-messages) E-Mail-Nachrichten finden Sie im Abschnitt Einstellungen für sichere Links für E-Mail-Nachrichten weiter unten in diesem Artikel.
+  
+  > [!NOTE]
+  > Verkaufslinks funktionieren nicht für E-Mail-aktivierte öffentliche Ordner.
 
 - **Microsoft Teams** (derzeit in der TAP-Vorschau): Der Schutz sicherer Links für Links in Teams Unterhaltungen, Gruppenchats oder kanälen wird auch durch Richtlinien für sichere Links gesteuert. Es gibt keine Standardrichtlinie für sichere Links. Um den Schutz sicherer Links in Teams zu erhalten, müssen Sie eine oder mehrere Richtlinien für sichere Links **erstellen.**
 
@@ -135,7 +138,7 @@ Die Einstellungen in Richtlinien für sichere Links, die für E-Mail-Nachrichten
 - **Priorität:** Wenn Sie mehrere Richtlinien erstellen, können Sie die Reihenfolge angeben, in der sie angewendet werden. Keine zwei Richtlinien können die gleiche Priorität aufweisen, und die Richtlinienverarbeitung endet, nachdem die erste Richtlinie angewendet wurde.
 
   Weitere Informationen über die Prioritätsreihenfolge und darüber, wie mehrere Richtlinien ausgewertet und angewendet werden, finden Sie unter [Reihenfolge und Priorität beim E-Mail-Schutz](how-policies-and-protections-are-combined.md).
-
+  
 ### <a name="how-safe-links-works-in-email-messages"></a>Funktionsweise sicherer Links in E-Mail-Nachrichten
 
 Auf einer hohen Ebene funktioniert der Schutz sicherer Links bei URLs in E-Mail-Nachrichten:
@@ -296,7 +299,7 @@ Informationen zum Hinzufügen von Einträgen zur Liste in neuen oder vorhandenen
 **Hinweise**:
 
 - Die folgenden Clients erkennen die Folgenden **URLs-Listen** in Richtlinien für sichere Links nicht umschreiben. Benutzer, die in den Polizeien enthalten sind, können basierend auf den Ergebnissen der Überprüfung sicherer Links in diesen Clients am Zugriff auf die URLs blockiert werden:
-  - Microsoft Teams
+  - Microsoft Teams
   - Office-Web-Apps
 
   Eine wirklich universelle Liste der überall zulässigen URLs finden Sie unter [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).

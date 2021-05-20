@@ -6,18 +6,18 @@ manager: pamgreen
 ms.reviewer: ssquires
 audience: admin
 ms.topic: article
-ms.date: 05/10/2021
+ms.date: 05/19/2021
 ms.prod: microsoft-365-enterprise
 search.appverid: ''
 localization_priority: None
 ROBOTS: NOINDEX, NOFOLLOW
 description: Erfahren Sie, wie Sie Power Automate zum Erstellen Ihres Ablaufs verwenden, um Ihre Verträge mithilfe einer Microsoft 365 verarbeiten.
-ms.openlocfilehash: d9892110d6aebd3eaae6fbc21d453b7eb14d7f7e
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 54e92f36b19cefde92111cdbc960fad7715cf8b0
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52281237"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583100"
 ---
 # <a name="step-3-use-power-automate-to-create-your-flow-to-process-your-contracts"></a>Schritt 3: Verwenden Power Automate, um Ihren Fluss zum Verarbeiten Ihrer Verträge zu erstellen
 
@@ -36,11 +36,11 @@ Das folgende Diagramm zeigt den Power Automate für die Vertragsverwaltungslösu
 
 ## <a name="prepare-your-contract-for-review"></a>Vorbereiten ihres Vertrags für die Überprüfung
 
-Wenn ein Vertrag von Ihrem SharePoint Syntex-Dokumentverständnismodell identifiziert und klassifiziert wird, ändert der Power Automate-Fluss zunächst den Status in "In Review".
+Wenn ein Vertrag von Ihrem SharePoint Syntex-Dokumentverständnismodell identifiziert und klassifiziert wird, ändert der Power Automate-Fluss zuerst den Status **in In review**.
 
 ![Updatestatus.](../media/content-understanding/flow-overview.png)
 
-Ändern Sie nach dem Auschecken der Datei den Statuswert in "In review".
+Ändern Sie nach dem Auschecken der Datei den Statuswert **in In review**.
 
 ![Im Überprüfungsstatus.](../media/content-understanding/in-review.png)
 
@@ -141,7 +141,7 @@ Wenn ein Vertrag genehmigt wurde, treten die folgenden Schritte auf:
 
    ![Kartenstatus genehmigt.](../media/content-understanding/approved-contracts-tab.png)
 
-- In Ihrem Fluss wird der Status in "Genehmigt" geändert.
+- In Ihrem Fluss wird der Status in **Genehmigt geändert.**
 
    ![Flow status genehmigt.](../media/content-understanding/status-approved.png)
 

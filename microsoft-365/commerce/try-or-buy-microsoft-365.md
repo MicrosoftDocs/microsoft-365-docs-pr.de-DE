@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_purchase
 search.appverid: MET150
-description: Erfahren Sie, wie Sie eine kostenlose Testversion erhalten oder ein Abonnement für Microsoft 365 kaufen.
+description: Registrieren Sie sich für eine kostenlose 30-tägige Testversion für Microsoft 365 Business Standard, Microsoft 365 Business Premium oder Microsoft 365 Apps for Business.
 ms.date: 08/07/2020
-ms.openlocfilehash: 78716d78745616530729ff2fa5cfa31202e056c8
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 20ceb683c6224e572a1c532330d45fa8fa5c8416
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344686"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583448"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Testen oder Kaufen eines Microsoft 365 business-Abonnements
 
@@ -43,7 +43,7 @@ Microsoft 365 business ist ein Abonnementdienst, mit dem Sie Ihre Organisation i
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>Vorabinformationen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Sie benötigen kein vorhandenes Microsoft-Konto, um sich für eine kostenlose Testversion zu registrieren. Für alle anderen Verfahren in diesem Artikel müssen Sie ein globaler Administrator oder Abrechnungsadministrator für Ihre Organisation sein. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../admin/add-users/about-admin-roles.md).
 
@@ -143,9 +143,9 @@ Wenn Sie bereits über ein Abonnement verfügen und ein neues Abonnement hinzuf�
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Microsoft 365 Für Unternehmen Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (Schulungsvideos)\
+[Microsoft 365 Für Unternehmen Schulungsvideos](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (Video)\
 [Hinzufügen von Benutzern und gleichzeitiges Zuweisen von Lizenzen](../admin/add-users/add-users.md) (Artikel)\
 [Zuweisen von Lizenzen zu Benutzern ](../admin/manage/assign-licenses-to-users.md) (Artikel)\
 [Upgrade auf einen anderen Plan](subscriptions/upgrade-to-different-plan.md) (Artikel)\
 [Kaufen oder Bearbeiten eines Add-Ons für Microsoft 365 Business](buy-or-edit-an-add-on.md) (Artikel)\
-[Hinzufügen von Speicherplatz für Ihr Abonnement](add-storage-space.md)
+[Hinzufügen von Speicherplatz für Ihr Abonnement](add-storage-space.md) (Artikel)

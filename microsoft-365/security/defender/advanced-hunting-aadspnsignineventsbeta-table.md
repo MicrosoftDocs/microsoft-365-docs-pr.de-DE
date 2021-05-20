@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 984e945107b6e0b41459659a7f2e9f649981e4b5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f74972bcd5d0ddaab58d82b72a55991fda44e3b1
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932595"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583544"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -34,8 +34,7 @@ ms.locfileid: "51932595"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> Die Tabelle befindet sich derzeit in der Betaversion und wird kurzfristig angeboten, um die Suche durch Azure Active Directory (AAD)-Dienstprinzipal- und verwaltete Identitäts-Anmeldeereignisse `AADSpnSignInEventsBeta` zu ermöglichen. Wir verschieben schließlich alle Anmeldeschemainformationen in die `IdentityLogonEvents` Tabelle.<br><br>
-> Kunden, die über die integrierte Microsoft Defender for Endpoint-Lösung von Azure Defender auf Microsoft 365 Defender zugreifen können, aber nicht über Lizenzen für Microsoft Defender für Office, Microsoft Defender for Identity oder Microsoft Cloud App Security verfügen, können dieses Schema nicht anzeigen. 
+> Die Tabelle befindet sich derzeit in der Betaversion und wird kurzfristig angeboten, um die Suche durch Azure Active Directory (AAD)-Dienstprinzipal- und verwaltete Identitäts-Anmeldeereignisse `AADSpnSignInEventsBeta` zu ermöglichen. Wir verschieben schließlich alle Anmeldeschemainformationen in die `IdentityLogonEvents` Tabelle.
 
 
 

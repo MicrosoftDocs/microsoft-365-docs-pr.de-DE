@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
-description: 'Erfahren Sie, wie Sie die Werte/Informationen finden, die Sie zum Erstellen von DNS-Einträgen für Microsoft 365. '
-ms.openlocfilehash: 45994139b11a2fd5a03b2e979dd6af334bc1f00b
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+description: Sammeln Sie die Werte/Informationen, die Sie zum Erstellen von DNS-Einträgen benötigen, um Ihre Domäne mit Ihrem Microsoft 365 verbinden.
+ms.openlocfilehash: c8ff30c27e67c8a29b7122ea80a6a33f0594b1b9
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126371"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582956"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Sammeln der Informationen, die Sie zum Erstellen von DNS-Einträgen benötigen
 
@@ -97,3 +97,11 @@ ms.locfileid: "50126371"
 4. Wechseln Sie [zu Erstellen](create-dns-records-at-any-dns-hosting-provider.md)von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter, und wählen Sie dann Ihren DNS-Host aus der Liste der Registrierungsstellen aus, um schrittweise Anweisungen zum Hinzufügen von Datensätzen auf der Website dieses DNS-Hosts zu erhalten.
     
 5. Führen Sie die Schritte zum Erstellen der DNS-Einträge bei Ihrem DNS-Hostinganbieter aus.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Häufig gestellte Fragen](../setup/domains-faq.yml) zu Domänen (Artikel)
+
+[Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden](find-and-fix-issues.md) (Artikel)
+
+[Domänen verwalten](index.yml) (Linkseite)
