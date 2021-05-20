@@ -17,14 +17,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Erfahren Sie, wie Sie Microsoft 365 für Business-Testversion oder ein kostenpflichtiges Abonnement kündigen können.
+description: Wenn Sie weniger als 25 Benutzerlizenzen haben, können Sie Ihre Microsoft 365 für Unternehmen Testversion oder Ihr bezahltes Abonnement im Admin Center kündigen.
 ms.date: 04/08/2021
-ms.openlocfilehash: 022981e91abc985a0540acccccd6f211b39620a4
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 583433e2c2cc939724f772c1cd699cc5763cb21c
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333314"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536118"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
@@ -46,7 +46,7 @@ Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzu
 ::: moniker range="o365-worldwide"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-2. Suchen Sie das Abonnement, das Sie kündigen möchten. Wählen Sie **Weitere Aktionen** (drei Punkte) und dann **Abonnement kündigen** aus.
+2. Suchen Sie das Abonnement, das Sie kündigen möchten. Wählen Sie die drei Punkte (weitere Aktionen) und dann **Abonnement kündigen** aus.
 3. Wählen Sie im Bereich **Abonnement kündigen** einen Grund aus, warum Sie kündigen. Geben Sie optional Feedback.
 4. Wählen Sie **Speichern** aus.
 
@@ -69,7 +69,7 @@ Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nu
 ::: moniker-end
 
 2. Wählen Sie die Registerkarte **Produkte** aus.
-3. Suchen Sie das Abonnement, das Sie kündigen möchten. Wählen Sie **Weitere Aktionen** (drei Punkte) und dann **Abonnement kündigen** aus.
+3. Suchen Sie das Abonnement, das Sie kündigen möchten. Wählen Sie die drei Punkte (weitere Aktionen) und dann **Abonnement kündigen** aus.
 4. Wählen Sie im Bereich **Abonnement kündigen** einen Grund aus, warum Sie kündigen. Geben Sie optional Feedback.
 5. Wählen Sie **Speichern** aus.
 
@@ -83,7 +83,7 @@ Nach 90 Tagen, wechselt das Abonnement in den gelöschten Zustand. Alle Daten, d
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Mit Folgendem können Sie für sich und Ihre Benutzer rechnen, wenn Sie ein Abonnement kündigen:
   
-- **Administratorzugriff**: Administratoren können sich weiterhin anmelden, auf das Admin Center zugreifen und andere Abonnements nach Bedarf kaufen. Als globaler Administrator oder Rechnungsadministrator haben Sie 90 Tage Zeit, um [das Abonnement zu reaktivieren](reactivate-your-subscription.md), wobei alle Daten erhalten bleiben.
+- **Administratorzugriff**: Administratoren können sich weiterhin anmelden, auf das Admin Center zugreifen und andere Abonnements nach Bedarf kaufen. Als globaler Administrator oder Rechnungsadministrator haben Sie 90 Tage Zeit, um [das Abonnement zu reaktivieren](reactivate-your-subscription.md), wobei alle Daten erhalten bleiben.
 
 - **Benutzerzugriff:** Ihre Benutzer können keine Dienste wie OneDrive for Business nutzen oder auf Kundendaten wie E-Mails oder Dokumente auf Teamwebsites zugreifen. Office-Anwendungen wie Word und Excel wechseln schließlich in einen schreibgeschützten Modus mit eingeschränkter Funktionalität, und die Benachrichtigung [Nicht lizenziertes Produkt](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) wird angezeigt.
 

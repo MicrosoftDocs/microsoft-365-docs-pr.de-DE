@@ -18,13 +18,14 @@ search.appverid:
 f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
+recommendations: false
 description: Erfahren Sie mehr über die Optionen zum Einschränken oder Deaktivieren der Freigabe in Microsoft 365.
-ms.openlocfilehash: 46cef1aac6d3387366a5e8ce9f9c1129f6c83e61
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f237df883bb401342a3a5c93432beeb5028cfce6
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920204"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539191"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Einschränken der Freigabe in Microsoft 365
 
@@ -45,7 +46,7 @@ Die Methoden zum Freigeben von Dateien sind in der nachstehenden Tabelle aufgef�
 
 Sie können auch die Bedingungen einschränken, unter denen Personen auf freigegebene Inhalte zugreifen dürfen. Weitere Informationen hierzu finden Sie unter [bedingter Zugriff](#conditional-access) weiter unten in diesem Artikel.
 
-Sie können die Freigabe in Ihrer Organisation zwar mit den in diesem Artikel beschriebenen Administratorsteuerelemente einschränken, wir empfehlen Ihnen aber dringend, die in Microsoft 365 verfügbaren Sicherheits- und Compliancefeatures zu verwenden, um eine sichere Freigabeumgebung zu schaffen. Weitere Informationen finden Sie unter [Zusammenarbeit an Dateien in SharePoint mit Microsoft 365](/sharepoint/deploy-file-collaboration) und [Teams mit Sicherheitsisolation konfigurieren](secure-teams-security-isolation.md).
+Sie können die Freigabe in Ihrer Organisation zwar mit den in diesem Artikel beschriebenen Administratorsteuerelemente einschränken, wir empfehlen Ihnen aber dringend, die in Microsoft 365 verfügbaren Sicherheits- und Compliancefeatures zu verwenden, um eine sichere Freigabeumgebung zu schaffen. Weitere Informationen finden Sie unter [Zusammenarbeit an Dateien in SharePoint mit Microsoft 365](/sharepoint/deploy-file-collaboration) und [Teams mit Sicherheitsisolation konfigurieren](secure-teams-security-isolation.md).
 
 Um zu verstehen, wie die Freigabe in Ihrer Organisation verwendet wird, [führen Sie einen Bericht über die Datei- und Ordnerfreigabe aus](/sharepoint/sharing-reports).
 
@@ -211,7 +212,7 @@ Benutzer, die Zugriff auf Dateien und Ordner in Microsoft 365 haben, können Dat
 
 Der bedingte Zugriff von Azure Active Directory bietet Optionen, um die Freigabe für Personen auf der Grundlage von Netzwerkadresse, Gerätestatus, Anmelderisiko und anderen Faktoren einzuschränken oder vollständig zu verhindern. Weitere Informationen finden Sie unter [Was ist der bedingte Zugriff?](/azure/active-directory/conditional-access/overview).
 
-SharePoint bietet direkte Integration des bedingten Zugriffs durch Azure AD für nicht verwaltete Geräte und die Netzwerkadresse. Sehen Sie sich für Details die folgenden Verweise an:
+SharePoint bietet direkte Integration mit Azure AD bedingten Zugriff sowohl für nicht verwaltete Geräte als auch für Netzwerkstandorte. Siehe die folgenden Referenzen für Details:
 
 - [Steuern des Zugriffs von nicht verwalteten Geräten](/sharepoint/control-access-from-unmanaged-devices)
 - [Steuern des Zugriffs auf SharePoint- und OneDrive-Daten anhand der Netzwerkadresse](/sharepoint/control-access-based-on-network-location)

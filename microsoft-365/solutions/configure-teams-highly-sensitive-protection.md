@@ -17,13 +17,14 @@ ms.collection:
 - m365solution-securecollab
 ms.custom:
 - Ent_Solutions
+recommendations: false
 description: Hier erfahren Sie, wie Sie Teams bereitstellen, in denen hochgradig vertrauliche Daten geschützt sind.
-ms.openlocfilehash: fdc3c1ab2c780289b7405623779b8af89da8ba17
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d83c10df50d02f47a6d70ee80b2ddbf89fff37d0
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916286"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538195"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Teams für den Schutz hochgradig vertraulicher Daten konfigurieren
 
@@ -33,7 +34,7 @@ Für diese Schutzebene erstellen wir eine Vertraulichkeitsbezeichnung, die in Ih
 
 Die "Hochgradig vertraulich"-Stufe bietet den folgenden zusätzlichen Schutz gegenüber der Basisstufe:
 
-- Eine Vertraulichkeitsbezeichnung für das Team, die es Ihnen ermöglicht, die Gastfreigabe ein- oder auszuschalten und den Zugriff auf SharePoint-Inhalte für nicht verwaltete Geräte zu blockieren. Diese Bezeichnung kann auch zum Klassifizieren und Verschlüsseln von Dateien verwendet werden.
+- Eine Vertraulichkeitsbezeichnung für das Team, die es Ihnen ermöglicht, die Gastfreigabe ein- oder auszuschalten und den Zugriff auf SharePoint-Inhalte für nicht verwaltete Geräte zu beschränken. Diese Bezeichnung kann auch zum Klassifizieren und Verschlüsseln von Dateien verwendet werden.
 - Einen restriktiveren standardmäßigen Freigabe-Linktyp
 - Nur Teambesitzer können private Kanäle erstellen.
 - Zugriffsanforderungen für die zugehörige SharePoint-Website werden deaktiviert.

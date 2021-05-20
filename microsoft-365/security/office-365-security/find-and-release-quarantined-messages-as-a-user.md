@@ -20,12 +20,12 @@ ms.custom:
 description: Benutzer können erfahren, wie sie in Exchange Online Protection (EOP) isolierte (unter Quarantäne gestellte) Nachrichten anzeigen und verwalten, die sie hätten empfangen sollen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 036aa164b8b77efd2365d56c07d26870eac243f5
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 68656d21b8c10157ebae5d030e56293ba1ce07f7
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274448"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52539119"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Suchen und Freigeben von isolierten Nachrichten als Benutzer in EOP
 
@@ -108,7 +108,7 @@ Als Benutzer können Sie unter Quarantäne gestellte Nachrichten anzeigen, freig
 
    Nachdem Sie die Suchkriterien eingegeben haben, klicken Sie auf die ![Schaltfläche Aktualisieren](../../media/scc-quarantine-refresh.png) **Aktualisieren**, um die Ergebnisse zu filtern.
 
-Nachdem Sie eine bestimmte isolierte Nachricht gefunden haben, wählen Sie die Nachricht aus, um Details dazu anzuzeigen und Maßnahmen zu ergreifen (z. B. die Nachricht anzeigen, freigeben, herunterladen oder löschen).
+Nachdem Sie eine bestimmte isolierte Nachricht gefunden haben, wählen Sie die Nachricht aus, um Details dazu anzuzeigen und Maßnahmen zu ergreifen (z. B. die Nachricht anzeigen, freigeben, herunterladen oder löschen).
 
 ### <a name="export-message-results"></a>Nachrichtenergebnisse exportieren
 

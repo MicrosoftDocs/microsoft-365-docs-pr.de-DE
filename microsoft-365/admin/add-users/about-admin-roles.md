@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
-description: Administratorrollen sind Geschäftsfunktionen zugeordnet. Über sie werden Berechtigungen für bestimmte Aufgaben im Admin Center erteilt. So kann beispielsweise der Dienstadministrator Supporttickets über das Admin Center öffnen.
-ms.openlocfilehash: d220ee918f70a56ba27bdad9d7d0f45025fad451
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+description: Administratorrollen wie der Service-Administrator ordnen Geschäftsfunktionen zu und erteilen Berechtigungen für bestimmte Aufgaben im Admin Center.
+ms.openlocfilehash: 7ba8b6fd483901fde31a9bceca189797b4f2e16d
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759408"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52536010"
 ---
 # <a name="about-admin-roles"></a>Info zu Administratorrollen
 
@@ -43,7 +43,7 @@ Suchen Sie nach der vollständigen Liste der detaillierten Intune-Rollenbeschrei
 
 Weitere Informationen zum Zuweisen von Rollen im Microsoft 365 Admin Center finden Sie unter [Zuweisen von Administratorrollen](assign-admin-roles.md).
 
-### <a name="watch-what-is-an-admin"></a>Schauen Sie sich an: Was ist ein Administrator?
+## <a name="watch-what-is-an-admin"></a>Schauen Sie sich an: Was ist ein Administrator?
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SRc0]
 
@@ -70,7 +70,7 @@ Es genügt wahrscheinlich, wenn Sie in Ihrer Organisation nur die nachstehend au
 |Abrechnungsadministrator     |   Weisen Sie die Rolle des Abrechnungsadministrators Benutzern zu, die Einkäufe tätigen, Abonnements und Dienstanforderungen verwalten und den Dienststatus überwachen. <br><br> Abrechnungsadministratoren können ebenfalls:<br> – Alle Aspekte der Abrechnung verwalten <br> – Supporttickets im Azure-Portal erstellen und verwalten <br>  |
 |Exchange-Administrator     |   Weisen Sie die Exchange-Administratorrolle Benutzern zu, die die E-Mail-Postfächer Ihrer Benutzer, Microsoft 365-Gruppen und Exchange Online einsehen und verwalten müssen. <br><br> Exchange-Administratoren sind außerdem zu Folgendem berechtigt:<br> - Wiederherstellen gelöschter Elemente im Postfach eines Benutzers <br> - Einrichten von "Senden als"- und "Senden im Auftrag von"-Stellvertretungen <br>  |
 |Globaler Administrator     |   Weisen Sie Benutzern, die globalen Zugriff auf die meisten Verwaltungsfunktionen und Daten in Microsoft Online-Diensten benötigen, die Rolle des globalen Administrators zu. <br><br> Wenn Sie zu vielen Benutzern globalen Zugriff gewähren, besteht ein Sicherheitsrisiko, deshalb empfiehlt es sich, nur zwei bis vier globale Administratoren vorzusehen. <br><br> Nur globale Administratoren sind zu Folgendem berechtigt:<br> - Zurücksetzen von Kennwörtern für alle Benutzer <br> - Hinzufügen und Verwalten von Domänen <br> <br> **Hinweis:** Die Person, die die Registrierung für Microsoft-Onlinedienste vorgenommen hat, wird automatisch zu einem globalen Administrator. |
-|Globaler Leser    |   Weisen Sie die Rolle "Globaler Leser" Benutzern zu, die Administratorfunktionen und -einstellungen in Admin Centern einsehen müssen, die der globale Administrator anzeigen kann. Ein Administrator mit der Rolle "Globaler Leser" kann keine Einstellungen bearbeiten.   |
+|Globaler Leser    |   Weisen Sie die Rolle „Globaler Leser“ Benutzern zu, die Administratorfeatures und -einstellungen in Admin Centern anzeigen müssen, die der globale Administrator anzeigen kann. Der „Globaler Leser“-Administrator kann keine Einstellungen bearbeiten.   |
 |Gruppenadministrator     |   Weisen Sie die Rolle des Gruppenadministrators Benutzern zu, die alle Gruppeneinstellungen in den Admin Centern verwalten müssen, einschließlich des Microsoft 365 Admin Centers und des Azure Active Directory-Portals. <br><br> Gruppenadministratoren sind zu Folgendem berechtigt:<br> - Erstellen, Bearbeiten, Löschen und Wiederherstellen von Microsoft 365-Gruppen <br> - Einrichten und Aktualisieren von Erstellung, Ablauf und Benennungsrichtlinien von bzw. für Gruppen <br> - Erstellen, Bearbeiten, Löschen und Wiederherstellen von Azure Active Directory-Sicherheitsgruppen| 
 |Helpdesk-Administrator     |   Weisen Sie die Rolle des Helpdesk-Administrators Benutzern zu, die folgende Aktionen ausführen müssen:<br> - Kennwörter zurücksetzen <br> - Die Abmeldung von Benutzern erzwingen <br> - Serviceanfragen verwalten <br> - Den Dienststatus überwachen <br> <br> **Hinweis**: Der Helpdesk-Administrator kann nur Benutzern ohne Administratorrolle sowie Benutzern helfen, welchen folgende Rollen zugewiesen wurden: Verzeichnisleseberechtigter, Gasteinladender, Helpdesk-Administrator, Nachrichtencenter-Leseberechtigter und Berichtleseberechtigter.      |
 |Lizenzadministrator    |   Weisen Sie die Rolle des Lizenzadministrators Benutzern zu, die Lizenzen für Benutzer zuweisen und entfernen und deren Verwendungsort bearbeiten müssen. <br/><br/> Lizenzadministratoren können ebenfalls: <br> – Lizenzzuweisungen für die gruppenbasierte Lizenzierung erneut verarbeiten <br> – Produktlizenzen für die gruppenbasierte Lizenzierung an Gruppen zuweisen  |
@@ -93,12 +93,12 @@ Ein Partner kann die folgenden Rollen zuweisen:
 
 Bevor der Partner diese Rollen Benutzern zuweisen kann, müssen Sie ihn als delegierten Administrator zu Ihrem Konto hinzufügen. Dieser Vorgang wird von einem autorisierten Partner initiiert. Der Partner fragt Sie in einer E-Mail-Nachricht, ob Sie ihm die Berechtigung erteilen möchten, als delegierter Administrator zu fungieren. Weitere Informationen hierzu finden Sie unter [Autorisieren oder Entfernen von Partnerbeziehungen](../misc/add-partner.md).
   
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Zuweisen von Administratorrollen](assign-admin-roles.md)
+[Zuweisen von Administratorrollen](assign-admin-roles.md) (Artikel)
 
-[Azure AD-Rollen im Microsoft 365 Admin Center](azure-ad-roles-in-the-mac.md)
+[Azure AD-Rollen im Microsoft 365 Admin Center](azure-ad-roles-in-the-mac.md) (Artikel)
 
-[Exchange Online-Administratorrolle](about-exchange-online-admin-role.md)
+[Exchange Online-Administratorrolle](about-exchange-online-admin-role.md) (Artikel)
   
-[Teams-Aktivitätsberichte im Microsoft 365 Admin Center](../activity-reports/activity-reports.md)
+[Aktivitätsberichte im Microsoft 365 Admin Center](../activity-reports/activity-reports.md) (Artikel)

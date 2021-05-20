@@ -21,14 +21,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: Erfahren Sie, wie Sie Benutzern Lizenzen zuweisen.
+description: Weisen Sie Lizenzen zu, je nachdem, ob Sie bestimmten Benutzern Produktlizenzen oder Benutzerlizenzen für ein bestimmtes Produkt zuweisen möchten.
 ms.date: 04/26/2021
-ms.openlocfilehash: ef8169658c6aef03cf8ff0cf9714c980ce63b060
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 707c1c952aa737f0aa91d886e9fa304eabe26321
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332486"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537535"
 ---
 # <a name="assign-licenses-to-users"></a>Zuweisen von Lizenzen an Benutzer
 
@@ -53,20 +53,22 @@ Wenn Sie zum Zuweisen von Lizenzen die Seite **Lizenzen** verwenden, können Sie
 
 ::: moniker range="o365-worldwide"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a>.
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Lizenzen**.
+ 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Lizenzen</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Lizenzen**.
+ 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Lizenzen</a>.
 
 ::: moniker-end
+
 
 2. Wählen Sie ein Produkt aus.
 3. Wählen Sie auf der Seite "Produktdetails" **Lizenzen zuweisen** aus.
@@ -80,21 +82,22 @@ Wenn ein Konflikt vorliegt, wird eine Meldung angezeigt, in der Sie erfahren, wa
 
 ::: moniker range="o365-worldwide"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a>.
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Lizenzen**.
+ 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Lizenzen</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Lizenzen**.
+ 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Lizenzen</a>.
 
 ::: moniker-end
+
 
 2. Wählen Sie auf der Seite **Lizenzen** die Zeile für einen bestimmten Benutzer aus.
 3. Aktivieren bzw. deaktivieren Sie im rechten Bereich die Apps und Dienste, für die Sie Zugriff gewähren oder entfernen möchten.
@@ -114,18 +117,19 @@ Wenn Sie Lizenzen über die Seite **Aktive Benutzer** zuweisen, weisen Sie einze
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Aktive Benutzer**.
+ 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Aktive Benutzer**.
+ 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
 
 ::: moniker-end
 
+
 2. Aktivieren Sie die Kreise neben den Namen der Benutzer, denen Sie Lizenzen zuweisen möchten.
-3. Wählen Sie am oberen Rand **Weitere Optionen** (...) und dann **Produktlizenzen verwalten** aus.
+3. Wählen Sie oben die drei Punkte (weitere Aktionen) und dann **Produktlizenzen verwalten** aus.
 4. Wählen Sie im Bereich **Produktlizenzen verwalten** die Optionen **Zu vorhandenen Produktlizenzzuweisungen hinzufügen** \> **Weiter** aus.
 5. Setzen Sie im Bereich **Zu vorhandenen Produktlizenzzuweisungen hinzufügen** die Umschaltfläche für die Lizenz, die der ausgewählten Benutzer erhalten soll, auf die Stellung **Ein**.\
     Standardmäßig werden alle diesen Lizenzen zugeordneten Dienste dem Benutzer automatisch zugewiesen. Sie können die für die Benutzer verfügbaren Dienste einschränken. Setzen Sie die Umschaltfläche für die Dienste, die die Benutzer nicht erhalten sollen, auf die Stellung **Aus**.
@@ -145,15 +149,16 @@ Wenn Sie Lizenzen über die Seite **Aktive Benutzer** zuweisen, weisen Sie einze
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Aktive Benutzer**.
+ 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Wechseln Sie im <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a> zur Seite **Abrechnung** > **Aktive Benutzer**.
+ 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.
 
 ::: moniker-end
+
 
 2. Aktivieren Sie die Zeile des Benutzers, dem Sie eine Lizenz zuweisen möchten.
 3. Wählen Sie im rechten Bereich **Lizenzen und Apps** aus.
@@ -180,7 +185,7 @@ Sie können Gastbenutzer einladen, mit Ihrer Organisation im Azure Active Direct
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenn Ihre Benutzer die Office-Apps noch nicht installiert haben, können Sie die [Mitarbeiter-Kurzanleitung](../../business-video/employee-quick-setup.md) für Ihre Benutzer freigeben, um Dinge einzurichten, z. B. [wie Microsoft 365 oder Office 2019 heruntergeladen und auf einem PC oder Mac installiert wird](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658), und [wie Office-Apps und E-Mails auf einem mobilen Gerät eingerichtet werden](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
+Wenn Ihre Benutzer die Office-Apps noch nicht installiert haben, können Sie die [Mitarbeiter-Kurzanleitung](../../business-video/employee-quick-setup.md) für Ihre Benutzer freigeben, um Dinge einzurichten, z. B. [wie Microsoft 365 oder Office 2019 heruntergeladen und auf einem PC oder Mac installiert wird](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658), und [wie Office-Apps und E-Mails auf einem mobilen Gerät eingerichtet werden](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
 ## <a name="related-content"></a>Verwandte Inhalte
 

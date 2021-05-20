@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen für IT-Administratoren zur Verwaltung von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobilgeräte und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f280cae2364a3ad76a3a3ff91ce382fdf69eab2b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: bca8efa15bdfe2f4b7c8c90e7a4706f40b19f85d
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532050"
+ms.locfileid: "52572609"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -194,7 +194,7 @@ Um eine einheitlichere Bezeichnung mit aussagekräftigen Berichten zu erreichen,
         - Schlüssel *DisableEncryptOnly* und *DisableDoNotForward* Sicherheitseinstellungen dokumentiert in [Voreinstellungen für Outlook für Mac](/DeployOffice/mac/preferences-outlook)
     - Outlook im Web: 
         - Parameter *SimplifiedClientAccessDoNotForwardDisabled* und *SimplifiedClientAccessEncryptOnlyDisabled* für [Set-IRMConfiguration](/powershell/module/exchange/set-irmconfiguration) dokumentiert 
-        - Outlook für iOS und Android: Diese Apps unterstützen nicht die Verwendung von Verschlüsselung ohne Bezeichnungen, also nichts zum Deaktivieren.
+    - Outlook für iOS und Android: Diese Apps unterstützen nicht die Verwendung von Verschlüsselung ohne Bezeichnungen, also nichts zum Deaktivieren.
 
 > [!NOTE]
 > Wenn Benutzer die Verschlüsselung eines mit einer Bezeichnung versehenen Dokuments, das in SharePoint oder OneDrive gespeichert ist, manuell entfernen und Sie [Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) aktiviert haben, wird die Bezeichnungsverschlüsselung automatisch wiederhergestellt, wenn das Dokument das nächste Mal aufgerufen oder heruntergeladen wird. 

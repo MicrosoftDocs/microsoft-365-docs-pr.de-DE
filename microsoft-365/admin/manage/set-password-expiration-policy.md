@@ -22,26 +22,19 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
-description: Hier erfahren Sie, wie Sie im Microsoft 365 Admin Center eine Richtlinie für den Kennwortablauf für Ihre Organisation festlegen.
-ms.openlocfilehash: 14ff08126533d5c530fb56761a2ef1676d5864b8
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: Erfahren Sie, wie ein Administrator im Microsoft 365 Admin Center eine Richtlinie zum Ablauf von Passwörtern für Ihr Unternehmen, Ihre Schule oder Ihre gemeinnützige Organisation festlegen kann.
+ms.openlocfilehash: 5469d4dcd75bee2e6f8a188aa6f50d18ce6e06c4
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903154"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537487"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Festlegen der Kennwortablaufrichtlinie für Ihre Organisation
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../microsoft-365-admin-center-preview.md?view=o365-worldwide).
-
-::: moniker-end
-
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
-Dieser Artikel richtet sich an Personen, die eine Kennwortablaufrichtlinie für ein Unternehmen, eine Schule/Uni oder eine gemeinnützige Organisation festlegen. Um diese Schritte auszuführen, müssen Sie sich mit Ihrem Microsoft 365-Administratorkonto anmelden. [Was ist ein Administratorkonto?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
+Dieser Artikel richtet sich an Personen, die eine Kennwortablaufrichtlinie für ein Unternehmen, eine Schule/Uni oder eine gemeinnützige Organisation festlegen. Um diese Schritte auszuführen, müssen Sie sich mit Ihrem Microsoft 365-Administratorkonto anmelden. [Was ist ein Administratorkonto?](../../business-video/admin-center-overview.md)
 
 Als Administrator können Sie festlegen, dass Benutzerkennwörter nach einer bestimmten Anzahl von Tagen oder nie ablaufen. Standardmäßig sind Passwörter für Ihre Organisation so eingestellt, dass sie nie ablaufen.
 
@@ -90,12 +83,12 @@ Sie können weitere Kennwortrichtlinien und Einschränkungen in Azure Active Dir
 
 ## <a name="update-password-policy"></a>Aktualisieren der Kennwortrichtlinie
 
-Das Cmdlet "Set-MsolPasswordPolicy" aktualisiert die Kennwortrichtlinie einer bestimmten Domäne oder eines bestimmten Mandanten. Zwei Einstellungen sind erforderlich: Die erste legt die Zeitspanne fest, die ein Kennwort gültig bleibt, bevor es geändert werden muss, und die zweite legt fest, wie viele Tage vor dem Ablaufdatum des Kennworts die erste Benachrichtigung an den Benutzer auslöst wird, dass sein Kennwort bald abläuft.
+Das Cmdlet "Set-MsolPasswordPolicy" aktualisiert die Kennwortrichtlinie einer angegebenen Domäne oder eines Mandanten. Zwei Einstellungen sind erforderlich; die erste ist die Angabe der Zeitspanne, die ein Kennwort gültig bleibt, bevor es geändert werden muss, und die zweite ist die Angabe der Anzahl von Tagen vor dem Ablaufdatum des Kennworts, das ausgelöst wird, wenn Benutzer ihre erste Benachrichtigung erhalten, dass ihr Kennwort bald abläuft.
 
 Wie Sie die Kennwortrichtlinie für eine bestimmte Domäne oder einen bestimmten Mandanten aktualisieren, erfahren Sie unter [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0).
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten](../add-users/let-users-reset-passwords.md)
+[Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten](../add-users/let-users-reset-passwords.md) (Artikel)
 
-[Zurücksetzen von Kennwörtern](../add-users/reset-passwords.md)
+[Kennwörter zurücksetzen](../add-users/reset-passwords.md) (Artikel)

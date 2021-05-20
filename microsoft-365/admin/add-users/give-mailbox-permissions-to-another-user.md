@@ -22,13 +22,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dbcf12f-a9de-4d1d-b0b3-a227f8a736d8
-description: 'Erfahren Sie, wie Sie einem Benutzer die Berechtigung erteilen, auf das Postfach eines anderen Benutzers zuzugreifen. Damit erhält der Benutzer das Recht, E-Mails zu lesen und E-Mails aus dem Postfach des anderen Benutzers zu senden. '
-ms.openlocfilehash: e6b94d4e24b0ff1d5dc397ccbcfba98929a303f2
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Einem Benutzer das Recht geben, auf das Postfach eines anderen Benutzers zuzugreifen, wodurch der Benutzer E-Mails aus dem Postfach des anderen Benutzers lesen und senden kann.
+ms.openlocfilehash: 3514be02f2ef82b727edfcf86c0bd3f6b8515510
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925542"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52535962"
 ---
 # <a name="give-mailbox-permissions-to-another-user---admin-help"></a>Erteilen von Postfachberechtigungen für einen anderen Benutzer – Administratorhilfe
 
@@ -205,11 +205,11 @@ Es gibt einige Möglichkeiten, wie Sie auf ein Postfach zugreifen können, nachd
 ::: moniker-end
 
 
-## <a name="send-and-read-from-outlook-and-outlook-on-the-web-for-business"></a>Senden und Lesen von Outlook und Outlook im Web Business
-
-
-Möchten Sie wissen, wie Sie E-Mails aus dem Postfach eines anderen Benutzers senden können? Dann lesen Sie die folgenden Artikel:
+## <a name="related-content"></a>Verwandte Inhalte
   
-- [Verwalten der E-Mail- und Kalenderelemente einer anderen Person](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5)
+[Verwalten der E-Mail- und Kalenderelemente einer anderen Person](https://support.microsoft.com/office/afb79d6b-2967-43b9-a944-a6b953190af5) (Artikel)
     
-- [Senden von E-Mails im Namen einer anderen Person oder Gruppe](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b)
+[Senden von E-Mails im Namen einer anderen Person oder Gruppe](https://support.microsoft.com/office/0f4964af-aec6-484b-a65c-0434df8cdb6b) (Artikel)
+
+[Ändern eines Benutzernamens und einer E-Mail-Adresse](../add-users/change-a-user-name-and-email-address.md) (Video)
+

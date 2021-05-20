@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in SharePoint- und Microsoft Teams-Websites sowie in Microsoft 365-Gruppen.
-ms.openlocfilehash: 4914a5911ffb493eded46631d7682c1e48cf1426
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: ef4559a278ce83f429790efcd20517b5c8545cb3
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860874"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52531042"
 ---
-# <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden
+# <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
@@ -34,9 +34,10 @@ Zusätzlich zur Verwendung von [Vertraulichkeitsbezeichnungen](sensitivity-label
 - Zugriff externer Benutzer
 - Externe Freigabe von SharePoint-Websites
 - Zugriff von nicht verwalteten Geräten aus
+- Authentifizierungskontexte (in der Vorschau)
 
 > [!IMPORTANT]
-> Die Einstellung **Zugriff von nicht verwalteten Geräten aus** funktioniert zusammen mit dem SharePoint-Feature [Zugriff von nicht verwalteten Geräten aus steuern](/sharepoint/control-access-from-unmanaged-devices). Sie müssen dieses abhängige SharePoint-Feature konfigurieren, um eine Vertraulichkeitsbezeichnung zu verwenden, in der diese Einstellung konfiguriert wurde. Weitere Informationen hierzu finden Sie in den nachfolgenden Anweisungen.
+> Die Einstellungen für nicht verwaltete Geräte und Authentifizierungskontexte funktionieren in Verbindung mit bedingtem Zugriff in Azure Active Directory. Sie müssen dieses abhängige Feature konfigurieren, wenn Sie für diese Einstellungen eine Vertraulichkeitsbezeichnung verwenden möchten. Weitere Informationen hierzu finden Sie in den nachfolgenden Anweisungen.
 
 Wenn Sie diese Vertraulichkeitsbezeichnung auf einen unterstützten Container anwenden, wendet die Bezeichnung die Klassifizierung und die konfigurierten Schutzeinstellungen automatisch auf die Website oder Gruppe an.
 
@@ -47,7 +48,7 @@ Der Inhalt dieser Container erbt jedoch nicht die Beschriftungen für die Klassi
 
 ## <a name="using-sensitivity-labels-for-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Vertraulichkeitsbezeichnungen für Microsoft Teams, Microsoft 365-Gruppen und auf SharePoint-Websites verwenden
 
-Bevor Sie Vertraulichkeitsbezeichnungen aktivieren und für die neuen Einstellungen konfigurieren, könnten Benutzer Vertraulichkeitsbezeichnungen in ihren Apps anzeigen und anwenden. Beispielsweise aus Word:
+Bevor Sie Vertraulichkeitsbezeichnungen für Container aktivieren und für die neuen Einstellungen konfigurieren, können Benutzer Vertraulichkeitsbezeichnungen in ihren Apps anzeigen und anwenden. Beispielsweise in Word:
 
 ![Eine in der Word-Desktop-App angezeigte Vertraulichkeitsbezeichnung](../media/sensitivity-label-word.png)
 
@@ -56,6 +57,8 @@ Nachdem Sie Vertraulichkeitsbezeichnungen für Container aktiviert und konfiguri
 ![Eine Vertraulichkeitsbezeichnung beim Erstellen einer Teamwebsite in SharePoint](../media/sensitivity-labels-new-team-site.png)
 
 ## <a name="how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Container und Synchronisieren von Bezeichnungen
+
+Falls Sie noch keine Vertraulichkeitsbezeichnungen für Container aktiviert haben, führen Sie die folgenden Schritte als einmaligen Vorgang aus:
 
 1. Weil dieses Feature die Azure AD-Funktionen nutzt, führen Sie zum Aktivieren der Vertraulichkeitsbezeichnungen die Anleitungen in der Azure AD-Dokumentation aus: [Zuweisen von Vertraulichkeitsbezeichnungen zu Microsoft 365-Gruppen in Azure Active Directory (Vorschau)](/azure/active-directory/users-groups-roles/groups-assign-sensitivity-labels).
 
@@ -71,7 +74,7 @@ Nachdem Sie Vertraulichkeitsbezeichnungen für Container aktiviert und konfiguri
 
 ## <a name="how-to-configure-groups-and-site-settings"></a>Konfigurieren von Gruppen und Websiteeinstellungen
 
-Die Aktivierung von Vertraulichkeitsbezeichnungen für Container bedeutet, dass Sie nun Schutzeinstellungen für Gruppen und Websiten im Assistenten für Vertraulichkeitsbezeichnungen konfigurieren können. Wenn Sie diesen Support noch nicht aktiviert haben, sind die Einstellungen zwar im Assistenten sichtbar, können aber nicht konfiguriert werden.
+Nachdem Vertraulichkeitsbezeichnungen für Container wie im vorherigen Abschnitt beschrieben aktiviert wurden, können Sie im Assistenten für Vertraulichkeitsbezeichnungen Schutzeinstellungen für Gruppen und Sites konfigurieren. Solange Vertraulichkeitsbezeichnungen für Container nicht aktiviert sind, sind die Einstellungen im Assistenten zwar sichtbar, können aber nicht konfiguriert werden.
 
 1. Befolgen Sie die allgemeinen Anweisungen für die [Erstellung oder Bearbeitung einer Vertraulichkeitsbezeichnung](create-sensitivity-labels.md#create-and-configure-sensitivity-labels) und stellen Sie sicher, dass als Bereich für die Bezeichnung **Gruppen und Websiten** ausgewählt ist: 
     
@@ -84,7 +87,7 @@ Die Aktivierung von Vertraulichkeitsbezeichnungen für Container bedeutet, dass 
 2. Wählen Sie dann auf der Seite **Definieren von Schutzeinstellungen für Gruppen und Websites** eine oder beide der verfügbaren Optionen aus:
     
     - **Einstellungen für den Datenschutz und Zugriff externer Benutzer**, um die Einstellungen für den **Datenschutz** und den **Zugriff externer Benutzer** zu konfigurieren.. 
-    - **Einstellungen für den Gerätezugriff und die externe Freigabe**, um die Einstellungen **Externe Freigabe von bezeichneten SharePoint-Websites steuern** und **Zugriff von nicht verwalteten Geräten aus** zu konfigurieren..
+    - **Einstellungen für externe Freigabe und bedingten Zugriff** zum Konfigurieren der **Steuerung der externen Freigabe von bezeichneten SharePoint-Sites** und Einstellung zum **Verwenden von bedingtem Azure AD-Zugriff, um bezeichnete SharePoint-Sites zu schützen**.
 
 3. Wenn Sie **Einstellungen für den Datenschutz und Zugriff externer Benutzer** ausgewählt haben, konfigurieren Sie nun die folgenden Einstellungen:
     
@@ -98,13 +101,25 @@ Die Aktivierung von Vertraulichkeitsbezeichnungen für Container bedeutet, dass 
     
     - **Zugriff externer Benutzer**: Legen Sie fest, ob der Gruppenbesitzer [Gäste zur Gruppe hinzufügen](/office365/admin/create-groups/manage-guest-access-in-groups) kann.
 
-4. Wenn Sie **Einstellungen für den Gerätezugriff und die externe Freigabe** ausgewählt haben, konfigurieren Sie nun die folgende Einstellungen:
+4. Wenn Sie **Einstellungen für die externe Freigabe und Gerätezugriff** ausgewählt haben, konfigurieren Sie nun die folgenden Einstellungen:
     
     - **Externe Freigabe von bezeichneten SharePoint-Websites steuern**: Wählen Sie diese Option, um dann entweder die externe Freigabe für jede beliebige Person, neue und bestehende Gäste, bestehende Gäste oder nur Personen in Ihrer Organisation auszuwählen. Weitere Informationen zu diesen Konfigurationen und Einstellungen finden Sie in der SharePoint-Dokumentation [Externe Freigabe für eine Website aktivieren oder deaktivieren](/sharepoint/change-external-sharing-site).
     
-    - **Zugriff von nicht verwalteten Geräten aus**: Diese Option verwendet das SharePoint-Feature, bei dem der bedingte Zugriff in Azure AD verwendet wird, um den Zugriff auf SharePoint- und OneDrive-Inhalte von nicht verwalteten Geräten aus zu sperren oder einzuschränken. Weitere Informationen finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten aus](/sharepoint/control-access-from-unmanaged-devices) in der SharePoint-Dokumentation. Die Option, die Sie für diese Bezeichnungseinstellung festlegen, entspricht der Ausführung eines PowerShell-Befehls für eine Website, wie in den Schritten 3-5 im Abschnitt [Blockieren oder Einschränken des Zugriffs auf eine bestimmte SharePoint-Website oder OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) in der SharePoint-Anleitung beschrieben.
-        
-        Weitere Informationen finden Sie unter [Weitere Informationen zu den Abhängigkeiten für die Option „Nicht verwaltete Geräte“](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) am Ende dieses Abschnitts.
+    - **Bedingten Azure AD-Zugriff zum Schutz bezeichneter SharePoint-Sites verwenden**: Wählen Sie diese Option nur aus, wenn in Ihrer Organisation [Bedingter Azure Active Directory-Zugriff](/azure/active-directory/conditional-access/overview) konfiguriert wurde und verwendet wird. Wählen Sie dann eine der folgenden Einstellungen aus:
+    
+        - **Festlegen, ob Benutzer über nicht verwaltete Geräte auf SharePoint-Sites zugreifen können**: Bei dieser Option wird das SharePoint-Feature genutzt, bei dem der bedingte Azure AD-Zugriff verwendet wird, um den Zugriff auf SharePoint- und OneDrive-Inhalte von nicht verwalteten Geräten aus zu blockieren oder einzuschränken. Weitere Informationen finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten aus](/sharepoint/control-access-from-unmanaged-devices) in der SharePoint-Dokumentation. Die Option, die Sie für diese Bezeichnungseinstellung festlegen, entspricht der Ausführung eines PowerShell-Befehls für eine Website, wie in den Schritten 3-5 im Abschnitt [Blockieren oder Einschränken des Zugriffs auf eine bestimmte SharePoint-Website oder OneDrive](/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) in der SharePoint-Anleitung beschrieben.
+            
+            Weitere Konfigurationsinformationen finden Sie unter [Weitere Informationen zu den Abhängigkeiten für die Option „Nicht verwaltete Geräte“](#more-information-about-the-dependencies-for-the-unmanaged-devices-option) am Ende dieses Abschnitts.
+            
+        - **Auswählen eines bestehenden Authentifizierungskontextes**: Derzeit in der Vorschau verfügbar; mit dieser Option können Sie strengere Zugriffsbedingungen für Situationen festlegen, in denen Benutzer auf SharePoint-Sites zugreifen, auf die diese Bezeichnung angewendet wurde. Diese Bedingungen werden erzwungen, wenn Sie einen bestehenden Authentifizierungskontext auswählen, der für die Bereitstellung von bedingtem Zugriff in Ihrer Organisation erstellt und veröffentlicht wurde. Wenn die Benutzer die konfigurierten Bedingungen nicht erfüllen oder wenn sie Apps verwenden, die keine Authentifizierungskontexte unterstützen, wird ihnen der Zugriff verweigert.
+            
+            Weitere Konfigurationsinformationen finden Sie unter [Weitere Informationen zu den Abhängigkeiten für die Option „Authentifizierungskontexte“](#more-information-about-the-dependencies-for-the-authentication-context-option) am Ende dieses Abschnitts.
+            
+            Beispiele für diese Bezeichnungskonfiguration:
+            
+             - Sie wählen einen Authentifizierungskontext aus, der so konfiguriert ist, dass [mehrstufige Authentifizierung (Multi-Factor Authentication, MFA)](/azure/active-directory/conditional-access/untrusted-networks) erforderlich ist. Diese Bezeichnung wird dann auf eine SharePoint-Site angewendet, die streng vertrauliche Elemente enthält. Wenn Benutzer versuchen, aus einem nicht vertrauenswürdigen Netzwerk auf ein Dokument auf dieser Site zuzugreifen, wird ihnen daher der Hinweis angezeigt, dass sie zuerst die MFA-Authentifizierung durchführen müssen, bevor sie auf das Dokument zugreifen können.
+             
+             - Sie wählen einen Authentifizierungskontext aus, der für [Nutzungsrichtlinien](/azure/active-directory/conditional-access/terms-of-use) konfiguriert ist. Diese Bezeichnung wird dann auf eine SharePoint-Site angewendet, die Elemente enthält, die aus rechtlichen oder Compliancegründen die Annahme von Nutzungsbedingungen voraussetzen. Wenn also Benutzer versuchen, auf ein Dokument auf dieser Site zuzugreifen, werden ihnen Nutzungsbedingungen angezeigt, die sie akzeptieren müssen, bevor sie auf das ursprüngliche Dokument zugreifen können.
 
 > [!IMPORTANT]
 > Wenn Sie eine Bezeichnung auf ein Team, eine Gruppe oder eine Website anwenden, werden nur diese Website- und Gruppeneinstellungen wirksam. Wenn der [Bereich der Bezeichnung](sensitivity-labels.md#label-scopes) Dateien und E-Mails umfasst, werden andere Bezeichnungseinstellungen wie Verschlüsselung und Inhaltskennzeichnung nicht auf die Inhalte innerhalb des Teams, der Gruppe oder der Website angewendet.
@@ -118,6 +133,43 @@ Wenn Sie die abhängige Richtlinie für den bedingten Zugriff für SharePoint ni
 Wenn Ihr Mandant beispielsweise für **Eingeschränkten, reinen Web-Zugriff zulassen** konfiguriert ist, hat die Bezeichnungseinstellung „Vollzugriff“ keine Auswirkungen, da sie weniger restriktiv ist. Wählen Sie für diese Mandantenebende die Bezeichnungseinstellung, die den Zugriff blockiert (stärker restriktiv) oder die Bezeichnungseinstellung für eingeschränkten Zugriff (diese entspricht der Mandanteneinstellung).
 
 Da Sie die SharePoint-Einstellungen unabhängig von den Bezeichnungseinstellungen konfigurieren können, wird im Assistenten für die Vertraulichkeitsbezeichnung nicht überprüft, ob die Abhängigkeiten eingestellt sind. Diese Abhängigkeiten können konfiguriert werden, nachdem die Bezeichnung erstellt und veröffentlicht wurde, oder sogar, wenn die Bezeichnung bereits angewendet wurde. Wenn die Bezeichnung jedoch bereits angewendet wurde, wird die Bezeichnungseinstellung erst dann wirksam, wenn der Benutzer sich das nächste mal authentifiziert.
+
+##### <a name="more-information-about-the-dependencies-for-the-authentication-context-option"></a>Weitere Informationen zu den Abhängigkeiten für die Option „Authentifizierungskontexte“
+
+Um in der Dropdownliste für die Auswahl angezeigt zu werden, müssen Authentifizierungskontexte im Rahmen Ihrer Konfiguration des bedingten Azure Active Directory-Zugriffs erstellt, konfiguriert und veröffentlicht werden. Weitere Informationen und Anweisungen finden Sie im Abschnitt [Konfigurieren von Authentifizierungskontexten](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) in der Dokumentation zu bedingtem Zugriff in Azure AD.
+
+Nicht alle Apps unterstützen Authentifizierungskontexte. Wenn ein Benutzer mit einer nicht unterstützten App eine Verbindung mit der Site herstellt, die für einen Authentifizierungskontext konfiguriert ist, wird entweder eine Meldung angezeigt, dass der Zugriff verweigert wurde, oder er wird aufgefordert, sich zu authentifizieren, jedoch abgelehnt. Die folgenden Apps unterstützen derzeit Authentifizierungskontexte:
+
+- Office im Web, welches Outlook im Web umfasst
+
+- Microsoft Planner
+
+- Microsoft 365 Apps für Word, Excel und PowerPoint; Mindestversionen:
+    - Windows: 2103
+    - macOS: 16.45.1202
+    - iOS: 2.48.303
+    - Android: 16.0.13924.10000
+
+- Microsoft 365 Apps für Outlook; Mindestversionen:
+    - Windows: 2103
+    - macOS: 16.45.1202
+    - iOS: 4.2109.0
+    - Android: 4.2025.1
+
+- OneDrive-Synchronisierungs-App, Mindestversionen:
+    - Windows: 21.002
+    - macOS: 21.002
+    - iOS: Rollout in 12.30
+    - Android: Wird noch nicht unterstützt
+
+Bekannte Einschränkungen bei dieser Vorschau:
+
+- Bei der OneDrive-Synchronisierungs-App: wird nur für OneDrive und nicht für andere Sites unterstützt.
+
+- Die nachstehenden Features und Apps sind möglicherweise nicht mit Authentifizierungskontexten kompatibel. Daher sollten Sie überprüfen, ob diese weiterhin funktionieren, nachdem ein Benutzer erfolgreich auf eine Site unter Verwendung eines Authentifizierungskontexts zugegriffen hat.
+    
+    - Workflows, bei denen PowerApps oder Power Automate verwendet werden
+    - Apps von Drittanbietern
 
 ## <a name="sensitivity-label-management"></a>Verwaltung von Vertraulichkeitsbezeichnungen
 
@@ -271,8 +323,8 @@ Die folgenden Apps und Dienste unterstützen Vertraulichkeitsbezeichnungen, die 
 
   - SharePoint Admin Center
   - Azure Active Directory-Portal
-  - Microsoft 365 Admin Center
-  - Microsoft 365 Compliance Center, Microsoft 365 Security Center, Security & Compliance Center
+  - Microsoft 365 Admin Center
+  - Microsoft 365 Compliance Center, Microsoft 365 Security Center, Security & Compliance Center
 
 - Benutzer-Apps und -Dienste:
 

@@ -19,19 +19,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 89a3544c390fdeceea3741a950aad8fe29da25c4
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2695d34e29492a88da86c2511ce32e4036031e9d
+ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245588"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52572657"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Wenn Sie Nachrichten über Aufbewahrungsrichtlinien in Teams angezeigt erhalten, oder wenn Sie Fragen zu Aufbewahrungsrichtlinien in Ihren Apps haben, wenden Sie sich an Ihre IT-Abteilung, um zu erfahren, wie diese für Sie konfiguriert wurden. In der Zwischenzeit finden Sie die folgenden Artikel möglicherweise hilfreich:
+> Wenn Sie Nachrichten zu Aufbewahrungsrichtlinien in Teams sehen oder Sie Fragen zu Aufbewahrungsbezeichnungen in Ihren Apps haben, wenden Sie sich an Ihre IT-Abteilung, um Informationen darüber zu erhalten, wie diese für Sie konfiguriert wurden. In der Zwischenzeit könnten die folgenden Artikel für Sie hilfreich sein:
 > -  [Teams-Nachrichten zu Aufbewahrungsrichtlinien](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b)
 > - [Aufbewahrungsbezeichnungen auf Dateien in SharePoint oder OneDrive anwenden](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df)
 >
@@ -153,7 +153,7 @@ Mit Aufbewahrungsbezeichnungen können Sie Folgendes:
 
 - **Wenden Sie eine Standardaufbewahrungsbezeichnung auf eine Dokumentbibliothek, einen Ordner oder eine Dokumentenmappe** in SharePoint an, sodass alle an diesem Speicherort gespeicherten Dokumente mit der Standardaufbewahrungsbezeichnung versehen werden.
 
-Aufbewahrungsbezeichnungen unterstützen darüber hinaus die [Datensatzverwaltung](records-management.md) für E-Mails und Dokumente in Microsoft 365-Apps und -Diensten. Sie können eine Aufbewahrungsbezeichnung verwenden, um Elemente als Datensätze zu kennzeichnen. Wenn dies geschieht und der Inhalt in Microsoft 365 bleibt, legt die Bezeichnung weitere Einschränkungen für die Inhalte fest, die aus rechtlichen Gründen möglicherweise erforderlich sind. Weitere Informationen finden Sie unter [Vergleichen Sie die Einschränkungen für die zulässigen oder blockierten Aktionen](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
+Aufbewahrungsbezeichnungen unterstützen darüber hinaus die [Datensatzverwaltung](records-management.md) für E-Mails und Dokumente in Microsoft 365-Apps und -Diensten. Sie können eine Aufbewahrungsbezeichnung verwenden, um Elemente als Datensätze zu kennzeichnen. Wenn dies geschieht und der Inhalt in Microsoft 365 bleibt, legt die Bezeichnung weitere Einschränkungen für die Inhalte fest, die aus rechtlichen Gründen möglicherweise erforderlich sind. Weitere Informationen finden Sie unter [Vergleichen Sie die Einschränkungen für die zulässigen oder blockierten Aktionen](records-management.md#compare-restrictions-for-what-actions-are-allowed-or-blocked).
 
 Aufbewahrungsbezeichnungen bleiben im Gegensatz zu [Vertraulichkeitsbezeichnungen](sensitivity-labels.md) nicht erhalten, wenn der Inhalt außerhalb von Microsoft 365 verschoben wird.
 
@@ -394,11 +394,15 @@ Um die Cmdlets für die Aufbewahrun zu verwenden, müssen Sie zunächst [eine Ve
 
 - [Get-ComplianceTagStorage](/powershell/module/exchange/get-compliancetagstorage)
 
+- [Get-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/get-recordreviewnotificationtemplateconfig)
+
 - [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy)
 
 - [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)
 
 - [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy)
+
+- [Set-RecordReviewNotificationTemplateConfig](/powershell/module/exchange/set-recordreviewnotificationtemplateconfig )
 
 - [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy)
 
@@ -409,6 +413,7 @@ Um die Cmdlets für die Aufbewahrun zu verwenden, müssen Sie zunächst [eine Ve
 - [Remove-RetentionComplianceRule](/powershell/module/exchange/remove-retentioncompliancerule)
 
 - [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule)
+
 
 ## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>Verwenden von Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen oder eDiscovery-Aufbewahrung
 
