@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c33d1ba6-077c-4cea-be04-cfffbe3f3ed8
-description: Erfahren Sie, was eine Domäne ist und wie Sie eine Domäne kaufen oder die Standarddomäne Ihres Unternehmens verwenden können, um mit OneDrive und Microsoft-Apps zu beginnen.
+description: Erfahren Sie, was eine Domäne ist und wie Sie eine Domäne erwerben oder die Standarddomäne Ihres Unternehmens verwenden können, um mit OneDrive und Microsoft-Apps zu beginnen.
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
@@ -61,7 +61,7 @@ Rufen Sie den Microsoft-Support an – [Hilfe beim Einrichten einer Domäne erha
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Kaufen einer Domain](buy-a-domain-name.md) (Artikel)
+[Kaufen einer Domäne](buy-a-domain-name.md) (Artikel)
 
 [Hinzufügen einer Domäne zu Microsoft 365](../setup/add-domain.md) (Artikel)
 

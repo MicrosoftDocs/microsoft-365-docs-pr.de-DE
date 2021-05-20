@@ -45,7 +45,7 @@ Um moderne Authentifizierung bei Geräten unter Windows (beispielsweise auf Lapt
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
    
-Nachdem Sie die Registrierungsschlüssel festgelegt haben, können Sie Office 2013-Geräte-Apps so festlegen, dass [die Multifaktorauthentifizierung (Multifactor Authentication, MFA)](set-up-multi-factor-authentication.md) mit Microsoft 365 verwendet wird. 
+Nachdem Sie die Registrierungsschlüssel festgelegt haben, können Sie Office 2013-Geräte-Apps so festlegen, dass die mehrstufige Authentifizierung [(MFA)](set-up-multi-factor-authentication.md) mit Microsoft 365. 
   
 Wenn Sie aktuell bei einer der Client-Apps angemeldet sind, müssen Sie sich abmelden und wieder anmelden, damit die Änderung wirksam wird. Andernfalls werden die MRU- und Roamingeinstellungen erst wieder verfügbar, wenn die ADAL-Identität eingerichtet ist.
   
@@ -59,7 +59,7 @@ Wenn Sie moderne Authentifizierung auf einem Gerät deaktivieren möchten, legen
    
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Melden Sie sich bei Office 2013 mit einer zweiten Überprüfungsmethode an](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb) (Artikel)
+[Melden Sie sich bei Office 2013](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb) mit einer zweiten Überprüfungsmethode an (Artikel)
 
-Outlook fordert ein Kennwort an [und verwendet keine moderne Authentifizierung, um eine Verbindung mit Office 365 herzustellen](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled) (Artikel)
+[Outlook Eingabeaufforderungen zum](/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled) Kennwort und verwendet keine moderne Authentifizierung, um eine Verbindung mit Office 365 herzustellen (Artikel)
 

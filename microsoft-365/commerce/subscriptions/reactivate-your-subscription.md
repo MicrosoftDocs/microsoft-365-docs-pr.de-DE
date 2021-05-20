@@ -19,7 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Administratoren können ein Abonnement reaktivieren, wenn es abläuft, deaktiviert oder gekündigt wird oder wenn Sie mitten in einer Abonnementlaufzeit gekündigt haben.
+description: Administratoren können ein Abonnement reaktivieren, wenn es abläuft, deaktiviert oder gekündigt wurde oder wenn Sie mitten in einer Abonnementlaufzeit gekündigt haben.
 ms.date: 04/07/2021
 ms.openlocfilehash: ad408648253b3805d66b0e7b51ad90107f4eab95
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
@@ -30,11 +30,11 @@ ms.locfileid: "52572513"
 ---
 # <a name="reactivate-your-subscription"></a>Reaktivieren Ihres Abonnements
 
-Sie können Ihr Abonnement im Admin Center erneut aktivieren, wenn: das Abonnement abgelaufen ist, von Microsoft deaktiviert wurde oder wenn Sie es mitten in einer Abonnementlaufzeit gekündigt haben.
+Sie können Ihr Abonnement im Admin Center reaktivieren, wenn: das Abonnement abgelaufen ist, von Microsoft deaktiviert wurde oder wenn Sie es in der Mitte einer Abonnementlaufzeit gekündigt haben.
   
-## <a name="before-you-begin"></a>Bevor Sie loslegen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Sie müssen ein globaler administrator oder Rechnungsadministrator sein, um ein Abonnement reaktivieren zu können. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+Sie müssen ein globaler Administrator oder Abrechnungsadministrator sein, um ein Abonnement erneut zu aktivieren. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
 **Sie sind kein Administrator?** Wenden Sie sich an Ihre Verwaltung, um Ihr Abonnement erneut zu aktivieren.
 
@@ -58,13 +58,13 @@ Sie müssen ein globaler administrator oder Rechnungsadministrator sein, um ein 
 
 ::: moniker-end
 
-2. Suchen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie reaktivieren möchten. Wählen Sie die drei Punkte (weitere Aktionen) aus, und wählen Sie dann **dieses Abonnement reaktivieren** aus.
-    Wenn dieses **Abonnement** nicht erneut aktiviert wird, wenden Sie [sich an den Support](../../business-video/get-help-support.md).
+2. Suchen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie reaktivieren möchten. Wählen Sie die drei Punkte (weitere Aktionen) aus, und wählen Sie **dann Reaktivieren dieses Abonnements aus.\**
+    Wenn Dieses Abonnement nicht **reaktivieren angezeigt** wird, wenden Sie [sich an den Support.](../../business-video/get-help-support.md)
 3. Wählen Sie im Bereich **Dieses Abonnement reaktivieren** eine Zahlungsmethode aus der Dropdownliste aus, oder wählen Sie **Zahlungsmethode hinzufügen** aus.
-4. Wählen Sie **Speichern** aus.
+4. Klicken Sie auf **Speichern**.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Versuchen oder kaufen Sie ein Microsoft 365 für Business-Abonnement](../try-or-buy-microsoft-365.md) (Artikel)
+[Probieren oder kaufen Sie Microsoft 365 business-Abonnement](../try-or-buy-microsoft-365.md) (Artikel)\
 [Verlängern von Microsoft 365 Business](renew-your-subscription.md) (Artikel)\
 [Kündigen Ihres Abonnements](cancel-your-subscription.md) (Artikel)

@@ -1,7 +1,7 @@
 ---
 title: Zugreifen auf die Microsoft Defender für Endpoint-APIs
 ms.reviewer: ''
-description: Erfahren Sie, wie Sie APIs verwenden können, um Workflows zu automatisieren und Innovationen basierend auf Microsoft Defender for Endpoint-Funktionen zu entwickeln
+description: Erfahren Sie, wie Sie APIs verwenden können, um Workflows zu automatisieren und Innovationen basierend auf Microsoft Defender for Endpoint-Funktionen zu entwickeln.
 keywords: apis, api, wdatp, open api, microsoft defender for endpoint api, microsoft defender atp, public api, supported apis, alerts, device, user, domain, ip, file, advanced hunting, query
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -35,51 +35,51 @@ ms.locfileid: "52571829"
 **Gilt für:** 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Melden Sie sich für eine kostenlose Testversion an.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 
-Defender for Endpoint macht einen Großteil seiner Daten und Aktionen über eine Reihe programmatischer APIs verfügbar. Mit diesen APIs können Sie Workflows automatisieren und auf der Grundlage von Defender for Endpoint-Funktionen innovativ sein. Der API-Zugriff erfordert eine OAuth2.0-Authentifizierung. Weitere Informationen finden Sie unter [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Defender for Endpoint macht einen großen Teil seiner Daten und Aktionen über eine Reihe programmgesteuerter APIs verfügbar. Mit diesen APIs können Sie Workflows automatisieren und innovationen basierend auf defender for Endpoint-Funktionen entwickeln. Für den API-Zugriff ist die OAuth2.0-Authentifizierung erforderlich. Weitere Informationen finden Sie unter [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
-In diesem Video erhalten Sie einen schnellen Überblick über die APIs von Defender für Endpoint. 
+Sehen Sie sich dieses Video an, um einen schnellen Überblick über die APIs von Defender for Endpoint zu erhalten. 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4d73M]
 
 Im Allgemeinen müssen Sie die folgenden Schritte ausführen, um die APIs zu verwenden:
 - Erstellen einer [AAD-Anwendung](/microsoft-365/security/defender-endpoint/exposed-apis-create-app-nativeapp)
-- Abrufen eines Zugriffstokens mithilfe dieser Anwendung
-- Verwenden des Tokens für den Zugriff auf Defender für Endpoint-API
+- Zugreifen auf ein Zugriffstoken mithilfe dieser Anwendung
+- Verwenden des Tokens für den Zugriff auf die Defender for Endpoint-API
 
 
-Sie können auf Defender for Endpoint API mit **Anwendungskontext** oder **Benutzerkontext** zugreifen.
+Sie können auf defender for Endpoint-API **mit Anwendungskontext oder** **Benutzerkontext zugreifen.**
 
 - **Anwendungskontext: (Empfohlen)** <br>
-    Wird von Apps verwendet, die ohne einen angemeldeten Benutzer ausgeführt werden. z. B. Apps, die als Hintergrunddienste oder Daemons ausgeführt werden.
+    Wird von Apps verwendet, die ohne angemeldeten Benutzer ausgeführt werden. Beispielsweise Apps, die als Hintergrunddienste oder Daemons ausgeführt werden.
 
-    Schritte, die für den Zugriff auf defender for Endpoint API mit Anwendungskontext ausgeführt werden müssen:
+    Schritte, die für den Zugriff auf die Defender for Endpoint-API mit Anwendungskontext erforderlich sind:
 
   1. Erstellen Sie eine AAD-Webanwendung.
   2. Weisen Sie der Anwendung die gewünschte Berechtigung zu, z. B. "Warnungen lesen", "Computer isolieren". 
   3. Erstellen Sie einen Schlüssel für diese Anwendung.
-  4. Holen Sie Token mit der Anwendung mit seinem Schlüssel.
+  4. Token mit der Anwendung mit ihrem Schlüssel abzurufen.
   5. Verwenden des Tokens für den Zugriff auf die Microsoft Defender for Endpoint-API
 
-     Weitere Informationen finden Sie unter [Zugriff mit Anwendungskontext](exposed-apis-create-app-webapp.md)abrufen .
+     Weitere Informationen finden Sie unter [Zugriff mit Anwendungskontext erhalten.](exposed-apis-create-app-webapp.md)
 
 
 - **Benutzerkontext:** <br>
-    Wird verwendet, um Aktionen in der API im Namen eines Benutzers auszuführen.
+    Wird verwendet, um Aktionen in der API im Namen eines Benutzers durchzuführen.
 
-    Schritte für den Zugriff auf Defender for Endpoint API mit Anwendungskontext:
+    Schritte zum Zugreifen auf die Defender for Endpoint-API mit Anwendungskontext:
 
   1. Erstellen Sie AAD Native-Application.
-  2. Weisen Sie der Anwendung die gewünschte Berechtigung zu, z. B. 'Warnungen lesen', 'Isolieren von Maschinen' usw. 
-  3. Abrufen von Token mithilfe der Anwendung mit Benutzeranmeldeinformationen.
+  2. Weisen Sie der Anwendung die gewünschte Berechtigung zu, z. B. "Warnungen lesen", "Computer isolieren" usw. 
+  3. Token mithilfe der Anwendung mit Benutzeranmeldeinformationen abzurufen.
   4. Verwenden des Tokens für den Zugriff auf die Microsoft Defender for Endpoint-API
 
-     Weitere Informationen finden Sie unter [Zugriff mit Benutzerkontext](exposed-apis-create-app-nativeapp.md)abrufen .
+     Weitere Informationen finden Sie unter [Get access with user context](exposed-apis-create-app-nativeapp.md).
 
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Microsoft Defender für Endpunkt-APIs](exposed-apis-list.md)
-- [Zugriff auf Microsoft Defender für Endpoint mit Anwendungskontext](exposed-apis-create-app-webapp.md)
-- [Zugriff auf Microsoft Defender für Endpoint mit Benutzerkontext](exposed-apis-create-app-nativeapp.md)
+- [Zugreifen auf Microsoft Defender for Endpoint mit Anwendungskontext](exposed-apis-create-app-webapp.md)
+- [Zugreifen auf Microsoft Defender for Endpoint mit Benutzerkontext](exposed-apis-create-app-nativeapp.md)

@@ -23,7 +23,7 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
-description: Melden Sie sich mit Administratorberechtigungen beim Microsoft 365 Admin Center an, um Ihre Organisation in der Cloud einzurichten und Benutzer und Abonnements zu verwalten.
+description: Melden Sie sich mit Administratorberechtigungen beim Microsoft 365 Admin Center an, um Ihre Organisation in der Cloud zu einrichten und Benutzer und Abonnements zu verwalten.
 ms.openlocfilehash: 1d8afaf8c63124fc0dde40002214ba99d4d1a4a0
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
@@ -68,7 +68,7 @@ Hier die Funktionen und Einstellungen, die sich in der Navigationsleiste auf der
 |**Einstellungen** <br/> |Verwalten Sie globale Einstellungen für Apps wie E-Mail, Websites und die Office-Suite. Ändern Sie Ihre Kennwortrichtlinie und das Ablaufdatum. Fügen Sie Domänennamen wie "contoso.com" hinzu, und aktualisieren Sie diese. Ändern Sie Ihr Organisationsprofil und die Veröffentlichungseinstellungen. Und wählen Sie aus, ob Partner auf Ihr Admin Center zugreifen können.  <br/> |
 |**Setup** <br/> |Verwalten Sie vorhandene Domänen, aktivieren und verwalten Sie die mehrstufige Authentifizierung, verwalten Sie den Administratorzugriff, migrieren Sie Benutzerpostfächer zu Office 365, verwalten Sie Featureupdates, und helfen Sie den Benutzern beim Installieren ihrer Office-Apps. |
 |**Berichte** <br/> |Sehen Sie auf einen Blick, wie Ihre Organisation Microsoft 365 verwendet, dank detaillierter Berichte zur E-Mail-Verwendung, zu Office-Aktivierungen und mehr. Weitere Informationen zur Verwendung der neuen [Aktivitätsberichte](../activity-reports/activity-reports.md).  <br/> |
-|**Integrität** <br/> |Sehen Sie sich die Gesundheit auf einen Blick an. Sie können auch weitere Details und die Gesundheitshistorie überprüfen. Weitere Informationen finden Sie unter [Überprüfen des Dienstzustands](../../enterprise/view-service-health.md) und [Überprüfen Windows Freigabezustands.](/windows/deployment/update/check-release-health)  <br/><br/>Nutzen Sie das Nachrichtencenter, um anstehende Änderungen an Features und Diensten nachzuverfolgen. Wir veröffentlichen dort Ankündigungen mit Informationen, die Ihnen bei der Planung für Änderungen und zu verstehen helfen, wie sich dies möglicherweise auf Benutzer auswirkt. Weitere Informationen finden Sie im [Nachrichtencenter](../manage/message-center.md). <br/> |
+|**Integrität** <br/> |Sehen Sie sich die Integrität auf einen Blick an. Sie können auch weitere Details und den Integritätsverlauf anzeigen. Weitere Informationen finden Sie unter Überprüfen [des Dienstzustands](../../enterprise/view-service-health.md) und überprüfen [Windows Release-Integrität.](/windows/deployment/update/check-release-health)  <br/><br/>Nutzen Sie das Nachrichtencenter, um anstehende Änderungen an Features und Diensten nachzuverfolgen. Wir veröffentlichen dort Ankündigungen mit Informationen, die Ihnen bei der Planung für Änderungen und zu verstehen helfen, wie sich dies möglicherweise auf Benutzer auswirkt. Weitere Informationen finden Sie im [Nachrichtencenter](../manage/message-center.md). <br/> |
 |**Admin Center** <br/> |Öffnen Sie separate Admin Center für Exchange, Skype for Business, SharePoint, Yammer und Azure AD. Jedes Admin Center umfasst alle verfügbaren Einstellungen für den jeweiligen Dienst,  <br/> Im Exchange Admin Center werden beispielsweise E-Mail, Kalender, Verteilergruppen usw. eingerichtet und verwaltet. Im SharePoint Admin Center werden Websitesammlungen, Einstellungen der Teamwebsite und OneDrive for Business erstellt und verwaltet. Im Skype for Business Admin Center werden Chatbenachrichtigungen, Dial-In-Konferenzen und Onlineanwesenheit eingerichtet.  <br/> Weitere Informationen zum [Exchange Admin Center](/exchange/exchange-admin-center) und zum [SharePoint Admin Center](/sharepoint/sharepoint-online).<br/> **Hinweis:** Die verfügbaren Admin Center sind von Ihrem Plan und Ihrer Region abhängig.           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>Allgemeine Aufgaben im Admin Center
@@ -85,4 +85,4 @@ Hier die Funktionen und Einstellungen, die sich in der Navigationsleiste auf der
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Microsoft 365 für Business-Schulungsvideos](../../business-video/index.yml) (Linkseite)
+[Microsoft 365 Für Unternehmen Schulungsvideos](../../business-video/index.yml) (Linkseite)

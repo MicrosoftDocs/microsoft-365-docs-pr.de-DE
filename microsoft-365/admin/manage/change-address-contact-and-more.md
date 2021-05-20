@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commcerce_billing
 search.appverid: MET150
-description: Nehmen Sie Änderungen an Ihrem Organisationsprofil vor, z. B. Organisationsname, Adresse, Telefon, technischer Kontakt und E-Mail.
+description: Nehmen Sie Änderungen an Ihrem Organisationsprofil vor, z. B. Name der Organisation, Adresse, Telefon, technischer Kontakt und E-Mail.
 ms.date: 03/30/2021
 ms.openlocfilehash: 9fc985f640f1544bf30ea1a6ccdd5c1ca19aa81f
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3

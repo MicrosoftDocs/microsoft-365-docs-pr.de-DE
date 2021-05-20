@@ -24,7 +24,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
-description: Ändern Sie Ihre E-Mail-Adresse in eine freundliche E-Mail-Adresse wie tom@fourthcoffee.com, indem Sie einen Domainnamen kaufen und Microsoft 365 hinzufügen.
+description: Ändern Sie Ihre E-Mail-Adresse in eine tom@fourthcoffee.com E-Mail-Adresse, indem Sie einen Domänennamen kaufen und Microsoft 365.
 ms.openlocfilehash: d5e70856c9200cd7e5df0eded25b6ff460e5d1fe
 ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
 ms.translationtype: MT
@@ -91,4 +91,4 @@ Sie werden durch das Verfahren zum ordnungsgemäßen Einrichten Ihrer Domäne in
   
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Kaufen Einer benutzerdefinierten Domäne mit Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (Artikel)
+[Erwerben einer benutzerdefinierten Domäne mithilfe Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (Artikel)

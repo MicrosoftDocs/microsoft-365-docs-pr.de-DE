@@ -1,7 +1,7 @@
 ---
-title: Konfigurieren, wie Benutzer mit Microsoft Defender Antivirus interagieren können
-description: Konfigurieren Sie, wie Endbenutzer mit Microsoft Defender Antivirus interagieren, welche Benachrichtigungen angezeigt werden und ob sie Einstellungen überschreiben können.
-keywords: Endpunkt, Benutzer, Interaktion, Benachrichtigungen, Ui-Sperrmodus, Headless-Modus, Hide-Schnittstelle
+title: Konfigurieren der Interaktion von Benutzern mit Microsoft Defender Antivirus
+description: Konfigurieren Sie, wie Endbenutzer mit Microsoft Defender Antivirus interagieren, welche Benachrichtigungen angezeigt werden und ob sie Einstellungen außer Kraft setzen können.
+keywords: Endpunkt, Benutzer, Interaktion, Benachrichtigungen, Ui-Sperrmodus, Kopflosmodus, Ausblenden der Schnittstelle
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -31,12 +31,12 @@ ms.locfileid: "52571817"
 
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 
-Sie können konfigurieren, wie Benutzer der Endpunkte in Ihrem Netzwerk mit Microsoft Defender Antivirus interagieren können. Sie können konfigurieren, ob Benutzer die Microsoft Defender Antivirus-Schnittstelle sehen, welche Benachrichtigungen angezeigt werden und ob sie global bereitgestellte Gruppenrichtlinieneinstellungen lokal überschreiben können.
+Sie können konfigurieren, wie Benutzer der Endpunkte in Ihrem Netzwerk mit Microsoft Defender Antivirus. Sie können konfigurieren, ob benutzern die Microsoft Defender Antivirus angezeigt wird, welche Benachrichtigungen angezeigt werden und ob sie global bereitgestellte Gruppenrichtlinieneinstellungen lokal außer Kraft setzen können.
 
-Verwenden Sie die folgenden Artikel, um die Interaktion zwischen Endbenutzern mit Microsoft Defender Antivirus
+Verwenden Sie die folgenden Artikel, um die Endbenutzerinteraktion mit Microsoft Defender Antivirus
 
 - **[Konfigurieren von Benachrichtigungen, die auf Endpunkten angezeigt werden](configure-notifications-microsoft-defender-antivirus.md)** Konfigurieren und Anpassen von Benachrichtigungen, einschließlich Text für Benachrichtigungen, und Benachrichtigungen über Neustarts, die für die Behebung erforderlich sind.
 
-- **[Verhindern, dass Benutzer die Microsoft Defender Antivirus-Benutzeroberfläche sehen oder mit ihr interagieren](prevent-end-user-interaction-microsoft-defender-antivirus.md)** Verbergen Sie die **Virus & Bedrohungsschutz-Benutzeroberfläche** vor Endbenutzern.
+- **[Verhindern, dass Benutzer die Benutzeroberfläche](prevent-end-user-interaction-microsoft-defender-antivirus.md)** Microsoft Defender Antivirus sehen oder interagieren Blenden Sie **die & der** Benutzeroberfläche für den Virenschutz vor Endbenutzern aus.
 
 - **[Verhindern, dass Benutzer Richtlinieneinstellungen lokal ändern](configure-local-policy-overrides-microsoft-defender-antivirus.md)** Verhindern (oder zulassen), dass Benutzer Richtlinieneinstellungen auf ihren einzelnen Endpunkten überschreiben.
