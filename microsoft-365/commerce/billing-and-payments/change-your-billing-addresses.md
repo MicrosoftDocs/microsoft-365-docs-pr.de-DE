@@ -18,14 +18,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Erfahren Sie, wie Sie Ihre Rechnungsadressen für Microsoft 365 for Business aktualisieren. Sie können auch die E-Mail-Adresse aktualisieren, an die Rechnungsbenachrichtigungen gesendet werden.
+description: Erfahren Sie, wie Sie Ihre Abrechnungsadressen oder die E-Mail-Adresse aktualisieren, die zum Empfangen von Abrechnungsbenachrichtigungen für Microsoft 365 verwendet wird.
 ms.date: 04/07/2021
-ms.openlocfilehash: 8bff090353c409f4364aed63e3b48a831608be2b
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 77ccb7b7ff9927736c1adaadfd2dea6b64a084f0
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332168"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594109"
 ---
 # <a name="change-your-billing-addresses"></a>Ändern der Rechnungsadressen
 
@@ -161,7 +161,7 @@ Sie können auch die alternative E-Mail-Adresse anderer globaler Administratoren
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Anzeigen Ihrer Rechnung oder Rechnung](view-your-bill-or-invoice.md)\
-[Verstehen Ihrer Rechnung oder Rechnung](understand-your-invoice2.md)\
-[Bezahlen Für Ihr Abonnement](pay-for-your-subscription.md)\
-[Abonnements und Abrechnung – Administratorhilfe](../index.yml)
+[Anzeigen Ihrer Rechnung](view-your-bill-or-invoice.md) (Artikel)\
+[Verstehen Ihrer Rechnung](understand-your-invoice2.md) oder Rechnung (Artikel)\
+[Bezahlen Für Ihr Abonnement](pay-for-your-subscription.md) (Artikel)\
+[Abonnements und Abrechnung – Administratorhilfe](../index.yml) (Linkseite)

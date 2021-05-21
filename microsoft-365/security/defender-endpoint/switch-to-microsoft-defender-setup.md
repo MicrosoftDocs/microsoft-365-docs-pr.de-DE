@@ -19,14 +19,14 @@ ms.collection:
 - m365solution-migratetomdatp
 ms.topic: article
 ms.custom: migrationguides
-ms.date: 05/14/2021
+ms.date: 05/20/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: e8abf10bd036b5e6e76d08e86ab4963629d2f994
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2ea8cc323220024406a49eda8d6a7c0b42ca71a4
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537991"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594049"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Wechseln zu Microsoft Defender for Endpoint – Phase 2: Setup
 
@@ -41,35 +41,31 @@ ms.locfileid: "52537991"
 **Willkommen bei der Setupphase des [Wechsels zu Defender for Endpoint](switch-to-microsoft-defender-migration.md#the-migration-process)**. Diese Phase umfasst die folgenden Schritte:
 
 1. [Installieren/Aktivieren Microsoft Defender Antivirus auf Ihren Endpunkten](#reinstallenable-microsoft-defender-antivirus-on-your-endpoints).
-
 2. [Konfigurieren von Defender für Endpoint](#configure-defender-for-endpoint).
-
 3. [Fügen Sie Defender for Endpoint der Ausschlussliste für Ihre vorhandene Lösung hinzu.](#add-microsoft-defender-for-endpoint-to-the-exclusion-list-for-your-existing-solution)
-
 4. [Fügen Sie Ihre vorhandene Lösung der Ausschlussliste für Microsoft Defender Antivirus](#add-your-existing-solution-to-the-exclusion-list-for-microsoft-defender-antivirus).
-
 5. [Richten Sie Ihre Gerätegruppen, Gerätesammlungen und Organisationseinheiten ein.](#set-up-your-device-groups-device-collections-and-organizational-units)
-
 6. [Konfigurieren von Antischalwarerichtlinien und Echtzeitschutz](#configure-antimalware-policies-and-real-time-protection).
 
 
 ## <a name="reinstallenable-microsoft-defender-antivirus-on-your-endpoints"></a>Neuinstallation/Microsoft Defender Antivirus auf Ihren Endpunkten
 
-Bei bestimmten Versionen von Windows wird Microsoft Defender Antivirus wahrscheinlich deinstalliert oder deaktiviert, wenn Ihre Nicht-Microsoft-Antiviren-/Antischalwarelösung installiert wurde. Weitere Informationen finden Sie unter [Microsoft Defender Antivirus Kompatibilität](microsoft-defender-antivirus-compatibility.md).
+In bestimmten Versionen von Windows wurde Microsoft Defender Antivirus wahrscheinlich deinstalliert oder deaktiviert, wenn Ihre Nicht-Microsoft-Antiviren-/Antischalwarelösung installiert wurde. Es sei denn, geräte werden in Defender for Endpoint Microsoft Defender Antivirus wird nicht im aktiven Modus zusammen mit einer Nicht-Microsoft-Antivirenlösung ausgeführt. Weitere Informationen finden Sie unter [Microsoft Defender Antivirus Kompatibilität](microsoft-defender-antivirus-compatibility.md).
 
-Wenn Windows-Clients eine Nicht-Microsoft-Antiviren-/Antischalwarelösung installiert ist, wird Microsoft Defender Antivirus automatisch deaktiviert, bis diese Geräte in Defender for Endpoint onboarded werden. Wenn die Clientendpunkte in Defender for Endpoint onboarded werden, wechselt Microsoft Defender Antivirus in den passiven Modus, bis die Nicht-Microsoft-Antivirenlösung deinstalliert wird. Microsoft Defender Antivirus sollte weiterhin installiert werden, ist aber wahrscheinlich zu diesem Zeitpunkt des Migrationsprozesses deaktiviert. Wenn Microsoft Defender Antivirus nicht deinstalliert wurde, müssen Sie keine Aktionen für Ihre Windows ergreifen.
+Da Sie nun planen, zu Defender for Endpoint zu wechseln, müssen Sie möglicherweise bestimmte Schritte zum Erneuten installieren oder aktivieren Microsoft Defender Antivirus. 
 
-Wenn auf Windows installierte Antiviren-/Antischalsoftware nicht von Microsoft installiert ist, wird Microsoft Defender Antivirus manuell deaktiviert (falls nicht deinstalliert). Die folgenden Aufgaben tragen dazu bei, dass Microsoft Defender Antivirus auf dem Server installiert und auf den passiven Windows festgelegt wird.
 
-- [Festlegen von DisableAntiSpyware auf false auf Windows Server](#set-disableantispyware-to-false-on-windows-server) (nur bei Bedarf)
+| Endpunkttyp  | Vorgehensweise  |
+|---------|---------|
+| Windows Clients (z. B. Endpunkte, die Windows 10)     | Im Allgemeinen müssen Sie keine Aktion für Windows -Clients ergreifen (es sei denn, Microsoft Defender Antivirus deinstalliert wurde). Dies ist der Grund dafür: <p>Microsoft Defender Antivirus sollte weiterhin installiert werden, ist aber zu diesem Zeitpunkt des Migrationsprozesses wahrscheinlich deaktiviert.<p> Wenn eine Nicht-Microsoft-Antiviren-/Antischalwarelösung installiert ist und die Clients noch nicht in Defender for Endpoint integrierte sind, Microsoft Defender Antivirus automatisch deaktiviert. <p>Wenn die Clientendpunkte später in Defender for Endpoint onboarded werden und diese Endpunkte eine Nicht-Microsoft-Antivirenlösung ausführen, wechselt Microsoft Defender Antivirus in den passiven Modus. <p>Wenn die Nicht-Microsoft-Antivirenlösung deinstalliert wird, Microsoft Defender Antivirus automatisch in den aktiven Modus wechselt.  |
+|Windows Server     | Auf Windows Server müssen Sie die Microsoft Defender Antivirus neu installieren und manuell auf den passiven Modus festlegen. Dies ist der Grund dafür: <p>Wenn auf Windows-Servern eine Nicht-Microsoft-Antiviren-/Antischalware installiert ist, kann Microsoft Defender Antivirus Nicht-Microsoft-Antivirenlösung nicht ausgeführt werden. In diesen Fällen wird Microsoft Defender Antivirus deaktiviert oder manuell deinstalliert. <p>Führen Sie die folgenden Microsoft Defender Antivirus auf Windows Server aus, um den Server neu zu installieren oder zu aktivieren: <p>- [Festlegen von DisableAntiSpyware auf false auf Windows Server](#set-disableantispyware-to-false-on-windows-server) (nur bei Bedarf)<br/>- [Neuinstallation Microsoft Defender Antivirus auf Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server)<br/>- [Festlegen Microsoft Defender Antivirus passiven Modus auf Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)       |
 
-- [Neuinstallation Microsoft Defender Antivirus auf Windows Server](#reinstall-microsoft-defender-antivirus-on-windows-server) 
 
-- [Festlegen Microsoft Defender Antivirus passiven Modus auf Windows Server](#set-microsoft-defender-antivirus-to-passive-mode-on-windows-server)
+Weitere Informationen zu Microsoft Defender Antivirus Zustände mit Nicht-Microsoft-Antivirenschutz finden Sie [unter Microsoft Defender Antivirus Kompatibilität](microsoft-defender-antivirus-compatibility.md).
 
 ### <a name="set-disableantispyware-to-false-on-windows-server"></a>Festlegen von DisableAntiSpyware auf false auf Windows Server
 
-Der [DisableAntiSpyware-Registrierungsschlüssel](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) wurde in der Vergangenheit verwendet, um Microsoft Defender Antivirus zu deaktivieren und ein anderes Antivirenprodukt wie McAfee, Symantec oder andere zu implementieren. Im Allgemeinen sollten Sie diesen Registrierungsschlüssel nicht auf Ihren Windows und Endpunkten verwenden. Wenn Sie jedoch konfiguriert haben, gehen Sie wie hier vor, um den Wert auf `DisableAntiSpyware` false zu setzen:
+Der [DisableAntiSpyware-Registrierungsschlüssel](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) wurde in der Vergangenheit verwendet, um Microsoft Defender Antivirus zu deaktivieren und ein anderes Antivirenprodukt wie McAfee, Symantec oder andere zu implementieren. **Im Allgemeinen sollten Sie diesen Registrierungsschlüssel nicht auf** Ihren Windows und Endpunkten verwenden. Wenn Sie jedoch *konfiguriert haben,* gehen Sie wie hier vor, um den Wert auf `DisableAntiSpyware` false zu setzen:
 
 1. Öffnen Sie auf Windows Server-Gerät den Registrierungs-Editor.
 
@@ -100,11 +96,11 @@ Der [DisableAntiSpyware-Registrierungsschlüssel](/windows-hardware/customize/de
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features` <p>
    `Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender` <br/>
  
-    > [!NOTE]
-    > Wenn Sie den BEFEHL DISM innerhalb einer Tasksequenz verwenden, in der PS ausgeführt wird, ist der folgende Pfad cmd.exe erforderlich.
-    > Beispiel:<br/>
-    > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
-    > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
+   > [!NOTE]
+   > Wenn Sie den BEFEHL DISM innerhalb einer Tasksequenz verwenden, in der PS ausgeführt wird, ist der folgende Pfad cmd.exe erforderlich.
+   > Beispiel:<br/>
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender-Features`<p>
+   > `c:\windows\sysnative\cmd.exe /c Dism /online /Get-FeatureInfo /FeatureName:Windows-Defender`<br/>
 
 3. Verwenden Sie das folgende PowerShell-Cmdlet, um zu überprüfen, ob Microsoft Defender Antivirus ausgeführt wird: <br/>
    `Get-Service -Name windefend`
@@ -127,11 +123,14 @@ Der [DisableAntiSpyware-Registrierungsschlüssel](/windows-hardware/customize/de
 
 Wenn Endpunkte ausgeführt Windows Server 2016, können Sie Microsoft Defender Antivirus nicht mit einer Nicht-Microsoft-Antiviren-/Antischalwarelösung ausführen. Microsoft Defender Antivirus kann nicht im passiven Modus auf Windows Server 2016. In diesem Fall müssen Sie die Nicht-Microsoft-Antiviren-/Antischalwarelösung deinstallieren und stattdessen Microsoft Defender Antivirus. Weitere Informationen finden Sie unter [Kompatibilität der Antiviruslösung mit Defender for Endpoint](microsoft-defender-antivirus-compatibility.md).
 
-Wenn Sie Windows Server 2016 verwenden und Probleme beim Aktivieren Microsoft Defender Antivirus haben, verwenden Sie das folgende PowerShell-Cmdlet:
+Wenn Sie Windows Server 2016 verwenden und Probleme beim Aktivieren Microsoft Defender Antivirus haben, führen Sie die folgenden Schritte aus:
 
-`mpcmdrun -wdenable`
+1. Öffnen Sie auf dem Gerät PowerShell als Administrator.
 
-Weitere Informationen finden Sie [unter Microsoft Defender Antivirus auf Windows Server](microsoft-defender-antivirus-on-windows-server.md).
+2. Geben Sie das folgende PowerShell-Cmdlet ein: `mpcmdrun -wdenable`
+
+> [!TIP]
+> Weitere Informationen finden Sie [unter Microsoft Defender Antivirus auf Windows Server](microsoft-defender-antivirus-on-windows-server.md).
 
 ## <a name="configure-defender-for-endpoint"></a>Konfigurieren von Defender for Endpoint
 
@@ -171,14 +170,13 @@ In diesem Schritt des Setupprozesses fügen Sie ihre vorhandene Lösung der Micr
 
 ### <a name="keep-the-following-points-about-exclusions-in-mind"></a>Beachten Sie die folgenden Punkte zu Ausschlüssen.
 
-Wenn Sie [Ausschlüsse zu Microsoft Defender Antivirus hinzufügen,](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)sollten Sie Pfad- und Prozessausschlüsse hinzufügen. Beachten Sie die folgenden Punkte:
+Wenn Sie [Ausschlüsse zu Microsoft Defender Antivirus hinzufügen,](/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus)sollten Sie Pfad- und Prozessausschlüsse hinzufügen. 
+
+Beachten Sie die folgenden Punkte:
 
 - *Pfadausschlüsse* schließen bestimmte Dateien und den Zugriff auf diese Dateien aus.
-
 - *Prozessausschlüsse* schließen jegliche Berührungen eines Prozesses aus, schließen den Prozess selbst jedoch nicht aus.
-
 - Listen Sie Ihre Prozessausschlüsse mithilfe des vollständigen Pfads auf, und nicht nur anhand ihres Namens. (Die Nur-Name-Methode ist weniger sicher.)
-
 - Wenn Sie jede ausführbare Datei (.exe) sowohl als Pfadausschluss als auch als Prozessausschluss auflisten, werden der Prozess und alles, was er berührt, ausgeschlossen.
 
 
@@ -197,7 +195,6 @@ Gerätegruppen, Gerätesammlungen und Organisationseinheiten ermöglichen Es Ihr
 Konfigurieren Sie mithilfe von Configuration Manager und Ihren Gerätesammlungen Die Antischalwarerichtlinien.
 
 - Weitere Informationen finden Sie unter Create [and deploy anmalware policies for Endpoint Protection in Configuration Manager](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies).
-
 - Während Sie Ihre Antischalwarerichtlinien erstellen und [](/mem/configmgr/protect/deploy-use/endpoint-antimalware-policies#real-time-protection-settings) konfigurieren, überprüfen Sie unbedingt die Echtzeitschutzeinstellungen, und aktivieren Sie blocken Sie [beim ersten Blick.](configure-block-at-first-sight-microsoft-defender-antivirus.md)
 
 > [!TIP]

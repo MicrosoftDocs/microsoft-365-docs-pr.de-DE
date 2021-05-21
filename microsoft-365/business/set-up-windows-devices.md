@@ -1,5 +1,5 @@
 ---
-title: Einrichten von Windows-Geräten für Microsoft 365 Business Premium-Benutzer
+title: Einrichten Windows Geräten für Microsoft 365 Business Premium Benutzer
 f1.keywords:
 - CSH
 ms.author: sharik
@@ -26,27 +26,27 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 2d7ff45e-0da0-4caa-89a9-48cabf41f193
-description: Erfahren Sie, wie Sie Windows-Geräte mit Windows 10 Pro für Microsoft 365 Business Premium-Benutzer einrichten und zentrale Verwaltungs- und Sicherheitssteuerelemente aktivieren.
-ms.openlocfilehash: 3e268d81ff6fb7113b7e0b0fe5d0545ff5c72b1e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Richten Sie Windows Geräte ein, auf denen Windows 10 Pro für Microsoft 365 Business Premium benutzer ausgeführt werden, sodass zentrale Verwaltungs- und Sicherheitskontrollen aktiviert werden.
+ms.openlocfilehash: 3d32a033a1a1c89d7d4d557cea6a28e24543ab2c
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244774"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594019"
 ---
-# <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Einrichten von Windows-Geräten für Microsoft 365 Business Premium-Benutzer
+# <a name="set-up-windows-devices-for-microsoft-365-business-premium-users"></a>Einrichten Windows Geräten für Microsoft 365 Business Premium Benutzer
 
-## <a name="prerequisites-for-setting-up-windows-devices-for-microsoft-365-business-premium-users"></a>Voraussetzungen für das Einrichten von Windows-Geräten für Microsoft 365 Business Premium-Benutzer
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Bevor Sie Windows-Geräte für Microsoft 365 Business Premium-Benutzer einrichten können, stellen Sie sicher, dass auf allen Windows-Geräten Windows 10 Pro, Version 1703 (Creators Update) ausgeführt wird. Windows 10 Pro ist eine Voraussetzung für die Bereitstellung von Windows 10 Business, einer Reihe von Clouddiensten und Geräteverwaltungsfunktionen, die Windows 10 Pro ergänzen und die zentralisierten Verwaltungs- und Sicherheitskontrollen von Microsoft 365 Business Premium aktivieren.
+Bevor Sie Windows für Microsoft 365 Business Premium einrichten können, stellen Sie sicher, dass alle Windows-Geräte Windows 10 Pro, Version 1703 (Creators Update) ausgeführt werden. Windows 10 Pro ist eine Voraussetzung für die Bereitstellung von Windows 10 Business, bei dem es sich um eine Reihe von Clouddiensten und Geräteverwaltungsfunktionen handelt, die Windows 10 Pro ergänzen und die zentralisierten Verwaltungs- und Sicherheitskontrollen von Microsoft 365 Business Premium.
   
-Wenn Sie über Windows-Geräte mit Windows 7 Pro, Windows 8 Pro oder Windows 8.1 Pro verfügen, berechtigt Sie Ihr Microsoft 365 Business Premium-Abonnement zu einem Windows 10-Upgrade.
+Wenn Windows Geräte mit Windows 7 Pro, Windows 8 Pro oder Windows 8.1 Pro ausgeführt werden, berechtigt Ihr Microsoft 365 Business Premium-Abonnement Sie zu einem Windows 10 Upgrade.
   
 Weitere Informationen zum Upgrade von Windows-Geräten auf Windows 10 Pro Creators Update erhalten Sie, indem Sie die Schritte in diesem Thema ausführen: [Aktualisieren von Windows-Geräten auf Windows Pro Creators Update](upgrade-to-windows-pro-creators-update.md).
   
 Weitere Informationen finden Sie unter Überprüfen, ob das Gerät mit [Azure AD](#verify-the-device-is-connected-to-azure-ad) verbunden ist, um sicherzustellen, dass das Upgrade ausgeführt wurde.
 
-Sehen Sie sich ein kurzes Video zum Verbinden von Windows mit Microsoft 365 an.<br><br>
+Sehen Sie sich ein kurzes Video zum Verbinden Windows Microsoft 365.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3yXh3] 
 
@@ -54,7 +54,7 @@ Wenn Sie dieses Video hilfreich fanden, sehen Sie sich bitte die [komplette Schu
   
 ## <a name="join-windows-10-devices-to-your-organizations-azure-ad"></a>Verbinden von Windows 10-Geräten in Ihrer Organisation mit Azure AD
 
-Wenn alle Windows-Geräte in Ihrer Organisation entweder auf Windows 10 Pro Creators Update aktualisiert wurden oder bereits Windows 10 Pro Creators Update ausgeführt werden, können Sie diese Geräte dem Azure Active Directory Ihrer Organisation hinzufügen. Sobald die Geräte beigetreten sind, werden sie automatisch auf Windows 10 Business aktualisiert, das Teil Ihres Microsoft 365 Business Premium-Abonnements ist.
+Wenn alle Windows geräte in Ihrer Organisation entweder auf Windows 10 Pro Creators Update aktualisiert wurden oder bereits Windows 10 Pro Creators Update ausgeführt werden, können Sie diese Geräte der Website Ihrer Organisation Azure Active Directory. Sobald die Geräte beigetreten sind, werden sie automatisch auf Windows 10 Business aktualisiert, das Teil Ihres Microsoft 365 Business Premium ist.
   
 ### <a name="for-a-brand-new-or-newly-upgraded-windows-10-pro-device"></a>Ganz neue oder neu aktualisierte Windows 10 Pro-Geräte
 
@@ -64,7 +64,7 @@ Führen Sie für ganze neue Geräte mit Windows 10 Pro Creators Update oder für
     
     ![On the How would you like to set up page, choose Set up for an organization](../media/1b0b2dba-00bb-4a99-a729-441479220cb7.png)
   
-2. Wählen Sie hier **Einrichten für eine Organisation aus,** und geben Sie dann Ihren Benutzernamen und Ihr Kennwort für Microsoft 365 Business Premium ein. 
+2. Wählen Sie hier **Einrichten für eine Organisation aus,** und geben Sie dann Ihren Benutzernamen und Ihr Kennwort für Microsoft 365 Business Premium. 
     
 3. Beenden Sie die Windows 10-Geräteinstallation.
     
@@ -106,17 +106,17 @@ Wenn Sie Dateien nach OneDrive for Business hochgeladen haben, synchronisieren S
   
 ## <a name="verify-the-device-is-connected-to-azure-ad"></a>Stellen Sie sicher, dass das Gerät mit Azure AD verbunden ist
 
-Um den Synchronisierungsstatus  zu überprüfen, wählen Sie auf der Seite Arbeits- oder Schulzugriff unter **Einstellungen** den Bereich Verbunden mit **_** _ aus, um die \<organization name\> Schaltflächen **Info** und Trennen **verfügbar zu machen.** Wählen **Sie Info** aus, um ihren Synchronisierungsstatus zu erhalten. 
+Um den Synchronisierungsstatus  zu überprüfen, wählen Sie auf der Seite Arbeits- oder **Schulzugriff** in Einstellungen den Bereich Verbunden mit **_** _ aus, um die \<organization name\> Schaltflächen **Info** und Trennen **verfügbar zu machen.** Wählen **Sie Info** aus, um ihren Synchronisierungsstatus zu erhalten. 
   
 Wählen Sie **auf der** Seite Synchronisierungsstatus die Option **Synchronisieren** aus, um die neuesten Verwaltungsrichtlinien für mobile Geräte auf dem PC zu erhalten.
   
-Um mit der Verwendung des Microsoft 365 Business Premium-Kontos zu beginnen, wechseln Sie zur **Windows-Startschaltfläche,** klicken Sie mit der rechten Maustaste auf Ihr aktuelles Kontobild, und wechseln Sie **dann auf Konto wechseln.** Melden Sie sich mit der E-Mail-Adresse und dem Kennwort Ihrer Organisation an.
+Um mit der Verwendung des Microsoft 365 Business Premium zu beginnen, wechseln Sie zur Schaltfläche Windows **Start,** klicken Sie mit der rechten Maustaste auf das aktuelle Kontobild, und wechseln Sie **dann auf Konto wechseln.** Melden Sie sich mit der E-Mail-Adresse und dem Kennwort Ihrer Organisation an.
   
 ![Click Info button to view synchronization status](../media/818f7043-adbf-402a-844a-59d50034911d.png)
   
-## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>Überprüfen, ob der PC auf Windows 10 Business aktualisiert wurde
+## <a name="verify-the-pc-is-upgraded-to-windows-10-business"></a>Vergewissern Sie sich, dass der PC auf Windows 10 Business
 
-Stellen Sie sicher, dass Ihre Azure AD-Geräte, die Windows 10-Geräten beigetreten sind, im Rahmen Ihres Microsoft 365 Business Premium-Abonnements auf Windows 10 Business aktualisiert wurden.
+Stellen Sie sicher, dass Ihre Azure AD-Windows 10 geräte auf Windows 10 Business Teil Ihres Microsoft 365 Business Premium aktualisiert werden.
   
 1. Wechseln Sie zu **Einstellungen** \> **System** \> **Info**.
     
@@ -126,8 +126,8 @@ Stellen Sie sicher, dass Ihre Azure AD-Geräte, die Windows 10-Geräten beigetre
   
 ## <a name="next-steps"></a>Nächste Schritte
 
-Informationen zum Einrichten Ihrer mobilen Geräte finden Sie unter Einrichten mobiler Geräte für [Microsoft 365 Business Premium-Benutzer](set-up-mobile-devices.md), Informationen zum Festlegen von Geräteschutz- oder App-Schutzrichtlinien finden Sie unter [Verwalten von Microsoft 365 Business](manage.md).
+Informationen zum Einrichten Ihrer mobilen Geräte finden Sie unter Einrichten mobiler Geräte für [Microsoft 365 Business Premium-Benutzer](set-up-mobile-devices.md), Informationen zum Festlegen von Geräteschutz- oder App-Schutzrichtlinien finden Sie unter [Manage Microsoft 365 for Business](manage.md).
   
-## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Weitere Informationen zum Einrichten und Verwenden von Microsoft 365 Business Premium
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Microsoft 365 für Unternehmen-Schulungsvideos](../business-video/index.yml)
+[Microsoft 365 Für Unternehmen Schulungsvideos](../business-video/index.yml) (Linkseite)

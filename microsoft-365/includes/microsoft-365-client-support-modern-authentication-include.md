@@ -5,7 +5,7 @@
 |AZURE ACTIVE DIRECTORY ADMIN|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|✔|Nicht zutreffend|
 |AZURE ADMIN|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
 |UNTERNEHMENSPORTAL|✔|✔|✔|Nicht zutreffend|✔|
-|CORTANA|✔|✔|Nicht zutreffend|Nicht zutreffend|✔|
+|CORTANA|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|✔|
 |DELVE|✔|✔|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
 |EXCEL|✔|✔|✔|✔|✔|
 |EXCHANGE ADMIN|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|✔|Nicht zutreffend|

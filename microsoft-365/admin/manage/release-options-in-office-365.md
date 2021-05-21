@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Erfahren Sie, wie Sie die Releaseoption für neue Produkt- und Featuresupdates im Microsoft 365 einrichten.
-ms.openlocfilehash: d3692f2e1cca58fec81f2ad492b9232d5576f99b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 5060e2dc99355d89928ec91c96b7d25e2016c7c4
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579254"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593945"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Einrichten der Standard- oder Zielversionsoptionen
 
@@ -104,13 +104,11 @@ Sie können ändern, wie Ihre Organisation Microsoft 365 erhält, indem Sie die 
 8. Wählen **Sie Benutzer** auswählen aus, um Benutzer eins nach dem **anderen** hinzuzufügen, oder Hochladen Benutzer zum Massen hinzufügen.
     
 9. Wenn Sie mit dem Hinzufügen von Benutzern fertig sind, wählen Sie **Änderungen speichern aus.**
-
-
   
-## <a name="learn-more"></a>Weitere Informationen
+## <a name="next-steps"></a>Nächste Schritte
 
 Erfahren Sie, [wie Sie](/office365/admin/manage/message-center) Nachrichten in Ihrem [Microsoft 365 Message Center](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) verwalten, um Benachrichtigungen über bevorstehende Microsoft 365 und Veröffentlichungen zu erhalten.
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Office Insider](https://insider.office.com/join/windows)
+[Teilnehmen am Office Insider Program](https://insider.office.com/join/windows) (Artikel)

@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
-description: Erhalten Sie eine Übersicht über Microsoft 365 Message Center und seine Rolle bei der Änderungsverwaltung.
-ms.openlocfilehash: 01e43eb6fa9502c138bfc9ab3595c47ec33ad098
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Verschaffen Sie sich einen Überblick Microsoft 365 Message Center und dessen Rolle beim Nachverfolgen neuer und geänderter Features und anderer wichtiger Ankündigungen.
+ms.openlocfilehash: edef3bb5a9016cf6f65f307fcd7c706bf4424d2f
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537523"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593957"
 ---
 # <a name="message-center"></a>Nachrichtencenter
 

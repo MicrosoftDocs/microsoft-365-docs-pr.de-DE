@@ -19,13 +19,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie die Liste Gastbenutzer im Microsoft 365 wird.
-ms.openlocfilehash: 227735c7d61aea3f48481d08ea76a96116917308
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Erfahren Sie, wie Sie ein Team mit Gästen im Microsoft 365 erstellen und wie Sie einem Team als Gast beitreten.
+ms.openlocfilehash: c05a8d7e10b40c22bb041ce88748eb3dd919d83d
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579422"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593865"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Gastbenutzer im Microsoft 365 Admin Center
 
@@ -34,13 +34,13 @@ Sobald ein Benutzer in der Liste **Gastbenutzer** angezeigt wird, können Sie de
 
 Um Gastbenutzer anzeigen zu können, erweitern Sie im Microsoft 365 Admin Center im linken Navigations navi die Option **Benutzer,** und wählen Sie **dann Gastbenutzer aus.**
 
-## <a name="add-guests-to-teams"></a>Hinzufügen von Gästen zu Teams
+## <a name="watch-create-a-team-with-guests"></a>Watch: Erstellen eines Teams mit Gästen
 
 Informationen zum Hinzufügen eines Gasts zu Teams finden Sie im folgenden Video: <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 
-## <a name="join-a-team-as-a-guest"></a>Treten Sie einem Team als Gast bei
+## <a name="watch-join-a-team-as-a-guest"></a>Watch: Join a team as a guest
 
 Informationen zum Beitreten zu einem Team als Gast finden Sie im folgenden Video:<br><br>
 
@@ -55,10 +55,14 @@ Nachdem ein Benutzer der  Liste Gastbenutzer hinzugefügt wurde, kann er gruppen
 
 Weitere [Informationen finden Sie unter Massen hinzufügen von](/azure/active-directory/b2b/tutorial-bulk-invite) Gästen, um mehrere Gäste zur Zusammenarbeit mit Ihrer Organisation einzulä einladen.
 
-
 ## <a name="remove-a-guest"></a>Entfernen eines Gasts
 
 1. Erweitern Sie im Microsoft 365 Admin Center **die Option Benutzer,** und wählen Sie **dann Gastbenutzer aus.**
 1. Wählen Sie **auf der** Seite Gastbenutzer den Benutzer aus, den Sie entfernen möchten, und wählen Sie dann Benutzer **löschen aus.** 
 
 Informationen zum Entfernen von Benutzern im Azure AD-Portal finden Sie unter [Remove a guest user and resources](/azure/active-directory/b2b/b2b-quickstart-add-guest-users-portal#clean-up-resources).
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Verwalten des Gastzugriffs in Microsoft 365 Gruppen](../create-groups/manage-guest-access-in-groups.md) (Artikel)\
+[Verhindern, dass Gäste zu einer bestimmten Gruppe oder Microsoft 365 hinzugefügt Microsoft Teams werden](../../solutions/per-group-guest-access.md)

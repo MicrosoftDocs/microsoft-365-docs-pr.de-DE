@@ -17,13 +17,12 @@ ms.custom: ''
 description: Administratoren können erfahren, wie Sie die erweiterte Zustellungsrichtlinie in Exchange Online Protection (EOP) verwenden, um Nachrichten zu identifizieren, die nicht in bestimmten unterstützten Szenarien gefiltert werden sollten (Phishingsimulationen von Drittanbietern und Nachrichten, die an Sicherheitsvorgänge (SecOps)-Postfächer übermittelt werden.
 ms.technology: mdo
 ms.prod: m365-security
-ROBOTS: NOINDEX
-ms.openlocfilehash: 9d737472be5da2af0a0a36beb4b7914b8bfe3a10
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 8bebc094b56a20a43f92d1acf8d374110de43d71
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876065"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594121"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Konfigurieren der Übermittlung von Phishingsimulationen von Drittanbietern an Benutzer und ungefilterte Nachrichten an SecOps-Postfächer
 
@@ -35,7 +34,7 @@ ms.locfileid: "51876065"
 > [!NOTE]
 > Das in diesem Artikel beschriebene Feature befindet sich in Preview, ist nicht für alle verfügbar und kann geändert werden.
 
-Um Ihre Organisation standardmäßig zu [schützen,](secure-by-default.md)Exchange Online Protection (EOP) keine sicheren Listen oder Filterumgehungen für Nachrichten zu, die zu Schadsoftware oder phishingverdingen mit hoher Vertrauenheit führen. Es gibt jedoch bestimmte Szenarien, in denen die Zustellung ungefilterter Nachrichten erforderlich ist. Beispiel:
+Um Ihre Organisation standardmäßig zu [schützen,](secure-by-default.md)Exchange Online Protection (EOP) keine sicheren Listen oder Filterumgehungen für Nachrichten zu, die zu Schadsoftware oder phishingverdingen mit hoher Vertrauenheit führen. Es gibt jedoch bestimmte Szenarien, in denen die Zustellung ungefilterter Nachrichten erforderlich ist. Zum Beispiel:
 
 - **Phishingsimulationen von** Drittanbietern: Simulierte Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren, bevor sich ein tatsächlicher Angriff auf Ihre Organisation aus wirkt.
 - **Sicherheitsvorgänge (SecOps)-Postfächer:** Dedizierte Postfächer, die von Sicherheitsteams zum Sammeln und Analysieren ungefilterter Nachrichten (sowohl gut als auch schlecht) verwendet werden.

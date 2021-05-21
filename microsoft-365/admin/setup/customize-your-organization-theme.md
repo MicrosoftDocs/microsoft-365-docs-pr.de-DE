@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
-description: 'Erfahren Sie, wie Sie das Standarddesign von Microsoft 365 ändern und es an Ihr Firmenlogo oder Ihre Farben anpassen können. '
-ms.openlocfilehash: b7a0b142b8bd465a9e3258aaaeb951b72bc53fc7
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+description: Erfahren Sie, wie Sie das Standarddesign für den oberen Rand der Navigationsleiste in Microsoft 365 ändern und es an Ihr Firmenlogo oder Ihre Farbe anpassen.
+ms.openlocfilehash: b2177eebc31f34f7067c8464724623e4bf7d4870
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060910"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593829"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Passen Sie das Microsoft 365-Design für Ihr Unternehmen an
 
@@ -154,8 +154,8 @@ Das empfohlene Kontrastverhältnis zwischen Text, Symbol- oder Schaltflächenfar
 
 Jedes Design wird in der oberen Navigationsleiste für alle in der Organisation als Teil der Microsoft 365 angezeigt.  
   
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Hinzufügen benutzerdefinierter Kacheln zur Seite "Meine Apps" und zum App-Startprogramm](../manage/customize-the-app-launcher.md)
+[Hinzufügen benutzerdefinierter Kacheln zur Seite "Meine Apps" und zum App-Startfeld](../manage/customize-the-app-launcher.md) (Artikel)
 
-[Übersicht über Microsoft 365-Gruppen für Administratoren](https://docs.microsoft.com/microsoft-365/admin/create-groups/office-365-groups)
+[Übersicht über Microsoft 365 Gruppen für Administratoren](../create-groups/office-365-groups.md) (Artikel)

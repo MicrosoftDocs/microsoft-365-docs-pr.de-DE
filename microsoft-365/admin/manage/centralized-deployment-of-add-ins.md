@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ermitteln Sie, ob Der Mandant und die Benutzer die Anforderungen erfüllen, sodass Sie die zentrale Bereitstellung zum Bereitstellen Office-Add-Ins verwenden können.
-ms.openlocfilehash: 482f2231c0c2c9fa30e863f25f474d90a22f52fa
-ms.sourcegitcommit: aff2331f9a3f22591f8ace1a646809969d28c120
+ms.openlocfilehash: e5d3337cdf1bbb0dc18ee6940ab8bd289d2e5f65
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52464405"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593921"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert
 
@@ -43,7 +43,7 @@ Die zentrale Bereitstellung unterstützt drei Desktopplattformen Windows, Mac un
 
 Es kann bis zu 24 Stunden dauern, bis ein Add-In für den Client für alle Benutzer verfügbar ist.
   
-## <a name="requirements"></a>Anforderungen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Die zentrale Bereitstellung von Add-Ins erfordert, dass die Benutzer Microsoft 365 Enterprise SKUs verwenden: E3/E5/F3 oder Business SKUs: Business Basic, Business Standard, Business Premium (und mit ihrer Organisations-ID bei Office angemeldet sind) und über Exchange Online- und aktive Exchange Online-Postfächer verfügen. Ihr Abonnementverzeichnis muss sich entweder in oder in einem Verbund mit Azure Active Directory.
 Sie können bestimmte Anforderungen für Office und Exchange oder die Kompatibilitätsprüfung für die zentrale Bereitstellung [verwenden.](#centralized-deployment-compatibility-checker)

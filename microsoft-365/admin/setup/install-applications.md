@@ -21,13 +21,13 @@ ms.custom:
 - seo-marvel-may2020
 - AdminSurgePortfolio
 - okr_smb
-description: Nachdem Sie eine Microsoft 365 eingerichtet haben, erfahren Sie, wie Sie einzelne Office-Anwendungen auf Ihrem Mac, PC oder mobilen Geräten installieren und E-Mails in Outlook.
-ms.openlocfilehash: c1d88aa1e754424e7a4ef3e486efc8a9618d3e9b
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+description: Nachdem Sie nun eine Microsoft 365 eingerichtet haben, erfahren Sie, wie Sie einzelne Office auf Ihrem Mac, PC oder mobilen Geräten installieren.
+ms.openlocfilehash: 47f6a04e8fe42f03de0cd2008f15fd1f6f5617f3
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766355"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593817"
 ---
 # <a name="install-office-applications"></a>Installieren von Office-Anwendungen
 
@@ -51,6 +51,6 @@ Wenn Sie Azure Active Directory Premium (AADP) Plan 1 oder Plan 2 erworben haben
 
 ::: moniker-end
 
-Gibt es Probleme? Diese Ressourcen zur Problembehandlung können ggf. hilfreich sein:
+## <a name="related-content"></a>Verwandte Inhalte
   
-- [Problembehandlung bei der Installation Office und Microsoft 365](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2)
+[Problembehandlung beim Installieren Office und Microsoft 365](https://support.microsoft.com/office/35ff2def-e0b2-4dac-9784-4cf212c1f6c2) (Artikel)

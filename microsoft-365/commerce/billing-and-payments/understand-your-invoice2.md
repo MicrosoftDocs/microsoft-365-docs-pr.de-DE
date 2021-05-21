@@ -19,14 +19,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Hier erfahren Sie, wie Sie die Informationen zu Gebühren, Abrechnung und Zahlung auf Ihrer Rechnung für Microsoft 365 für Unternehmen interpretieren sowie die Auftragsnummer ändern können.
+description: Interpretieren von Gebühren, Abrechnungs- und Zahlungsinformationen auf Ihrer Microsoft 365 für Geschäftsrechnungen oder Rechnungen und Ändern einer Bestellnummer.
 ms.date: 05/04/2021
-ms.openlocfilehash: febcbdee563c18b3f17ee35b98f2d68b15f456d8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: aa898f570fb17f2d9e2ebba769e285cb9d507c31
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535686"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593525"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Grundlegendes zu Ihrer Rechnung für Microsoft 365 für Unternehmen
 
@@ -134,6 +134,6 @@ Wenn Sie per Rechnung bezahlen, können Sie Ihrem Abonnement die Auftragsnummer 
 
 Ändern der Adresse Ihrer Organisation, der [technischen Kontakt-E-Mail und anderer Informationen](../../admin/manage/change-address-contact-and-more.md) (Artikel)
 
-[Bezahlen Sie für Microsoft 365 für Ihr Geschäftsabonnement](pay-for-your-subscription.md) (Artikel)\
+[Bezahlen Für Ihr Microsoft 365 business-Abonnement](pay-for-your-subscription.md) (Artikel)
 
 [Minecraft: Education Edition – Zahlungsoptionen](/education/windows/school-get-minecraft) (Artikel)

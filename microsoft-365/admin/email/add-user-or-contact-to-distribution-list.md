@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ba256583-03ca-429e-be4d-a92d9c221ad6
-description: Erfahren Sie, wie Sie Microsoft 365 oder Kontakt zu einer Verteilergruppe hinzufügen. Beispielsweise können Sie Ihrer E-Mail-Verteilergruppe einen Mitarbeiter, Partner oder einen Lieferanten hinzufügen.
-ms.openlocfilehash: f4ca52b02ce3b403fb318a9e092f883e8492d003
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Erfahren Sie, wie Sie Microsoft 365 oder Kontakt, z. B. mitarbeiter, partner oder vendor, einer E-Mail-Verteilergruppe hinzufügen.
+ms.openlocfilehash: 69dea710554b344de4bc221b17d5d8f929b964a5
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52243960"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593489"
 ---
 # <a name="add-a-user-or-contact-to-a-distribution-group"></a>Hinzufügen eines Benutzers oder Kontakts zu einer Verteilergruppe
 
-Als Administrator einer Organisation müssen Sie möglicherweise einen Ihrer Benutzer oder Kontakte zu einer Verteilergruppe hinzufügen (siehe Erstellen von [Verteilergruppen in Microsoft 365](../setup/create-distribution-lists.md).) Beispielsweise können Sie Einer E-Mail-Verteilergruppe Mitarbeiter oder externe Partner oder Lieferanten hinzufügen.
+Als Administrator einer Organisation müssen Sie möglicherweise einen Ihrer Benutzer oder Kontakte zu einer Verteilergruppe hinzufügen (siehe Erstellen von [Verteilergruppen in Microsoft 365](../setup/create-distribution-lists.md)). Beispielsweise können Sie Einer E-Mail-Verteilergruppe Mitarbeiter oder externe Partner oder Lieferanten hinzufügen.
   
 ## <a name="add-a-user-or-contact-to-a-distribution-group"></a>Hinzufügen eines Benutzers oder Kontakts zu einer Verteilergruppe
 
@@ -44,9 +44,18 @@ Als Administrator einer Organisation müssen Sie möglicherweise einen Ihrer Ben
     ![Hinzufügen von Mitgliedern zur Verteilergruppe](../../media/f79f59f8-1606-43fe-bae6-df74f5b6259d.png)
   
 5. Wählen **Sie Speichern** und dann Schließen **aus.**
+
+## <a name="watch-add-a-user-to-a-distribution-list"></a>Watch: Hinzufügen eines Benutzers zu einer Verteilerliste
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/ed4e6095-9a6a-4d3d-999d-698c39bb7ec8?autoplay=false]
   
-Erfahren Sie, [wie Sie E-Mails als Verteilergruppe in Microsoft 365.](../manage/send-email-as-distribution-list.md)
-  
+## <a name="next-steps"></a>Nächste Schritte
+
+Informationen zum [Senden von E-Mails als Verteilergruppe in Microsoft 365.](../manage/send-email-as-distribution-list.md)
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Verwalten von Unübersichtlichkeit für Ihre Organisation](configure-clutter.md) (Artikel)
+
+[Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md) (Artikel)
 

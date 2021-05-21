@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 725e6226a56b3aae3670cde18969afdda1ec1940
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 9cb3cc67c3992773897ea8178f261d25dcd87da0
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530838"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594150"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Verwalten von Vorfällen in Microsoft 365 Defender
 
@@ -47,7 +47,7 @@ Hier sind die Möglichkeiten, wie Sie Ihre Vorfälle verwalten können:
 
 - [Bearbeiten des Vorfallnamens](#edit-the-incident-name)
 - [Hinzufügen von Ereigniskategorien](#add-incident-tags)
-- [Zuweisen des Vorfalls zu einem Benutzerkonto](#assign-incidents)
+- [Zuweisen des Vorfalls zu sich selbst](#assign-incidents)
 - [Auflösen](#resolve-an-incident)
 - [Festlegen der Klassifizierung und Bestimmung](#set-the-classification-and-determination)
 - [Kommentare hinzufügen](#add-comments)
@@ -80,7 +80,15 @@ Wenn Sie mit der Eingabe beginnen, haben Sie die Möglichkeit, aus einer Liste a
 
 ## <a name="assign-incidents"></a>Zuweisen von Vorfällen
 
-Wenn ein Vorfall noch nicht zugewiesen wurde, können Sie **Zuweisen zu** auswählen und das Benutzerkonto angeben. Dadurch wird der Besitz des Vorfalls und aller damit verbundenen Warnungen zugewiesen.
+Um einen Vorfall zuzuordnen, wählen Sie **Zuweisen für mich aus.** Dadurch wird Ihrem Benutzerkonto der Besitz des Vorfalls und alle damit verbundenen Warnungen zugewiesen.
+
+Sie können eine Liste der Ihnen zugewiesenen Vorfälle erhalten, indem Sie die Vorfallwarteschlange filtern. 
+
+1. Wählen Sie in der Warteschlange für Vorfälle Filter **aus.**
+2. Löschen Sie **im Abschnitt Vorfallzuweisung** die Option **Alle auswählen,** und wählen **Sie Zugewiesen aus.**
+3. Wählen **Sie Übernehmen** aus, und schließen Sie dann den Bereich **Filter.**
+
+Anschließend können Sie die resultierende URL in Ihrem Browser als Lesezeichen speichern, um die Liste der Ihnen zugewiesenen Vorfälle schnell anzuzeigen.
 
 ## <a name="resolve-an-incident"></a>Beheben eines Vorfalls
 

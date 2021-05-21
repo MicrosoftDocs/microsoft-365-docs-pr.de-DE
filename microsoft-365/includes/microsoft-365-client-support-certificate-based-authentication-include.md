@@ -33,7 +33,7 @@
 |STICKY NOTES|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|✔|
 |STREAM|✔|✔|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
 |SWAY|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|✔|
-|TEAMS|✔|✔|✔|Geplant|Nicht zutreffend|
+|TEAMS|✔|✔|✔|✔|Nicht zutreffend|
 |TO-DO|✔|✔|✔|Nicht zutreffend|✔|
 |VISIO|Nicht zutreffend|✔|Nicht zutreffend|✔|Nicht zutreffend|
 |WHITEBOARD|✔|Geplant|Nicht zutreffend|Nicht zutreffend|✔|

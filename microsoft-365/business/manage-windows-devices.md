@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Erfahren Sie, wie Sie Microsoft 365 aktivieren, um lokale Active -Directory-Windows 10 in wenigen Schritten zu schützen.
-ms.openlocfilehash: c9f5a21d993200abcf9ecf1fa236879245e1c153
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: f16962dd3c33c3c228da507bc5c4a902d76a8a08
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939500"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593891"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Aktivieren sie, dass Windows 10 der Domäne beigetretenen Geräte von der Microsoft 365 Business Premium
 
@@ -119,4 +119,8 @@ An diesem Punkt sollte die Richtlinie Automatische MDM-Registrierung aktivieren 
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Synchronisieren von Domänenbenutzern mit Microsoft 365](manage-domain-users.md) (Artikel) Erstellen einer Gruppe im [Admin Center](../admin/create-groups/create-groups.md) (Artikel) [Lernprogramm: Konfigurieren](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) der hybriden Azure Active Directory für verwaltete Domänen (Artikel)
+[Synchronisieren von Domänenbenutzern mit Microsoft 365](manage-domain-users.md) (Artikel)
+
+[Erstellen einer Gruppe im Admin Center](../admin/create-groups/create-groups.md) (Artikel)
+
+[Lernprogramm: Konfigurieren der Azure Active Directory für verwaltete Domänen](/azure/active-directory/devices/hybrid-azuread-join-managed-domains.md) (Artikel)

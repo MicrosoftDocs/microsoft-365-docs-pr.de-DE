@@ -30,7 +30,7 @@
 |STICKY NOTES|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Geplant|
 |STREAM|Geplant|Geplant|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
 |SWAY|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Geplant|
-|TEAMS|✔|✔|✔|Geplant|Nicht zutreffend|
+|TEAMS|✔|✔|✔|✔|Nicht zutreffend|
 |TO-DO|Geplant|Geplant|Geplant|Nicht zutreffend|Geplant|
 |VISIO|Nicht zutreffend|✔|Nicht zutreffend|Geplant|Nicht zutreffend|
 |WHITEBOARD|✔|Geplant|Nicht zutreffend|Nicht zutreffend|Geplant|
