@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In diesem Artikel erfahren Administratoren mehr über den Schutz sicherer Links in Defender for Office 365, um ihre Organisation vor Phishing und anderen Angriffen zu schützen, die bösartige URLs verwenden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 573fd5b92400996fa595b5953028e20fcecec976
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 407f04685e41269c0e8436d3b68db7d755fce129
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583580"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593569"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Sichere Links in Microsoft Defender für Office 365
 
@@ -54,7 +54,7 @@ Der Schutz sicherer Links ist an den folgenden Speicherorten verfügbar:
   Weitere Informationen zum Schutz sicherer Links für [](#safe-links-settings-for-email-messages) E-Mail-Nachrichten finden Sie im Abschnitt Einstellungen für sichere Links für E-Mail-Nachrichten weiter unten in diesem Artikel.
   
   > [!NOTE]
-  > Verkaufslinks funktionieren nicht für E-Mail-aktivierte öffentliche Ordner.
+  > Sichere Links funktionieren nicht für E-Mail-aktivierte öffentliche Ordner.
 
 - **Microsoft Teams** (derzeit in der TAP-Vorschau): Der Schutz sicherer Links für Links in Teams Unterhaltungen, Gruppenchats oder kanälen wird auch durch Richtlinien für sichere Links gesteuert. Es gibt keine Standardrichtlinie für sichere Links. Um den Schutz sicherer Links in Teams zu erhalten, müssen Sie eine oder mehrere Richtlinien für sichere Links **erstellen.**
 

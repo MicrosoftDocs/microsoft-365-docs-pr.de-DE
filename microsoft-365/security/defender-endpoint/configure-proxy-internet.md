@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c8f25b924109823951c331fe744b548d372eaf11
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: 0de55eefe2f7dd8c9f891fbe126a68a49699ecd3
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957617"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594097"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen
 
@@ -44,47 +44,59 @@ Der eingebettete Defender for Endpoint-Sensor wird im Systemkontext mithilfe des
 Die WinHTTP-Konfigurationseinstellung ist unabhängig von den Windows Internet (WinINet) Internet-Browserproxyeinstellungen und kann nur mithilfe der folgenden Ermittlungsmethoden einen Proxyserver ermitteln:
 
 - Methoden für die automatische Ermittlung:
+
   - Transparenter Proxy
+
   - Web Proxy Auto-Discovery Protocol (WPAD)
 
     > [!NOTE]
     > Wenn Sie transparenten Proxy oder WPAD in Ihrer Netzwerktopologie verwenden, benötigen Sie keine speziellen Konfigurationseinstellungen. Weitere Informationen zu Defender for Endpoint-URL-Ausschlüssen im Proxy finden Sie unter [Enable access to Defender for Endpoint service URLs in the proxy server](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server).
 
 - Manuelle Konfiguration von statischen Proxys:
+
   - Registrierungsbasierte Konfiguration
+
   - WinHTTP-Konfiguration mithilfe des netsh-Befehls: nur für Desktops in einer stabilen Topologie geeignet (beispielsweise ein Desktop in einem Unternehmensnetzwerk hinter demselben Proxy)
 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Manuelles Konfigurieren des Proxyservers mithilfe eines registrierungsbasierten statischen Proxys
 
-Konfigurieren Sie einen registrierungsbasierten statischen Proxy, damit nur defender for Endpoint-Sensor Diagnosedaten melden und mit Defender for Endpoint-Diensten kommunizieren kann, wenn ein Computer keine Verbindung mit dem Internet herstellen darf.
+Konfigurieren Sie einen registrierungsbasierten statischen Proxy, damit nur der Defender for Endpoint-Sensor Diagnosedaten melden und mit Defender for Endpoint-Diensten kommunizieren kann, wenn ein Computer keine Verbindung mit dem Internet herstellen darf.
 
 > [!NOTE]
-> - Wenn Sie diese Option auf Windows 10 oder Windows Server 2019 verwenden, wird empfohlen, das folgende (oder höher) Build- und kumulative Updaterollup zu verwenden:</br>
-> Windows 10, Version 1809 oder Windows Server 2019 –https://support.microsoft.com/kb/5001384 <br>
-> Windows 10, Version 1909 -https://support.microsoft.com/kb/4601380</br>
-> Windows 10, Version 2004 –https://support.microsoft.com/kb/4601382</br>
-> Windows 10, Version 20H2 -https://support.microsoft.com/kb/4601382</br>
-> Diese Updates verbessern die Konnektivität und Zuverlässigkeit des CnC(Command and Control)-Kanals.</br>
+> Wenn Sie diese Option auf Windows 10 oder Windows Server 2019 verwenden, wird empfohlen, das folgende (oder höher) Build- und kumulative Updaterollup zu verwenden:
+>
+> - Windows 10, Version 1809 oder Windows Server 2019 –https://support.microsoft.com/kb/5001384
+> - Windows 10, Version 1909 -https://support.microsoft.com/kb/4601380
+> - Windows 10, Version 2004 –https://support.microsoft.com/kb/4601382
+> - Windows 10, Version 20H2 -https://support.microsoft.com/kb/4601382
+>
+> Diese Updates verbessern die Konnektivität und Zuverlässigkeit des CnC(Command and Control)-Kanals.
 
 Der statische Proxy kann mithilfe von Gruppenrichtlinien konfiguriert werden. Die Gruppenrichtlinien finden Sie unter:
 
-- Administrative Vorlagen > Windows Komponenten > Datensammlungs- und Vorschaubuilds > Konfigurieren der authentifizierten Proxyverwendung für den verbundenen Benutzererfahrungs- und Telemetriedienst
-  - Legen Sie es **auf Aktiviert,** und wählen **Sie Authentifizierte Proxyverwendung deaktivieren** aus: Abbildung der ![ Gruppenrichtlinieneinstellung1](images/atp-gpo-proxy1.png)
+- **Administrative Vorlagen > Windows Komponenten > Datensammlungs- und Vorschaubuilds > Konfigurieren der authentifizierten Proxyverwendung für den verbundenen Benutzererfahrungs- und Telemetriedienst**
+
+  Legen Sie es auf **Aktiviert,** und wählen **Sie Authentifizierte Proxyverwendung deaktivieren aus.**
+
+  ![Abbildung der Gruppenrichtlinieneinstellung1](images/atp-gpo-proxy1.png)
+
 - Administrative Vorlagen > Windows Komponenten > Datensammlung und Vorschaubuilds > Konfigurieren von verbundenen **Benutzererfahrungen und Telemetrie**:
-  - Konfigurieren des Proxys:<br>
-    ![Abbildung der Gruppenrichtlinieneinstellung2](images/atp-gpo-proxy2.png)
 
-    Die Richtlinie setzt zwei Registrierungswerte (`TelemetryProxyServer` als "REG_SZ&quot; und `DisableEnterpriseAuthProxy` als &quot;REG_DWORD") unter dem Registrierungsschlüssel `HKLM\Software\Policies\Microsoft\Windows\DataCollection` fest.
+  Konfigurieren des Proxys
 
-    Der Registrierungswert `TelemetryProxyServer` hat das folgende Zeichenfolgenformat:
+  ![Abbildung der Gruppenrichtlinieneinstellung2](images/atp-gpo-proxy2.png)
 
-    ```text
-    <server name or ip>:<port>
-    ```
+  Die Richtlinie legt zwei Registrierungswerte als `TelemetryProxyServer` REG_SZ und REG_DWORD unter dem `DisableEnterpriseAuthProxy` Registrierungsschlüssel `HKLM\Software\Policies\Microsoft\Windows\DataCollection` fest.
 
-    Beispiel: 10.0.0.6:8080.
+  Der Registrierungswert `TelemetryProxyServer` hat das folgende Zeichenfolgenformat:
 
-    Der Registrierungswert `DisableEnterpriseAuthProxy` sollte auf 1 festgelegt werden.
+  ```text
+  <server name or ip>:<port>
+  ```
+
+  Beispiel: 10.0.0.6:8080.
+
+  Der Registrierungswert `DisableEnterpriseAuthProxy` sollte auf 1 festgelegt werden.
 
 ## <a name="configure-the-proxy-server-manually-using-netsh-command"></a>Konfigurieren des Proxyservers manuell mithilfe des Befehls netsh
 
@@ -96,9 +108,9 @@ Verwenden Sie den netsh-Befehl, um einen systemweiten statischen Proxy zu konfig
 
 1. Öffnen Sie eine Befehlszeile mit erhöhten Rechten:
 
-    a. Wechseln Sie zu **Start**, und geben Sie **cmd** ein.
+   1. Wechseln Sie zu **Start**, und geben Sie **cmd** ein.
 
-    b. Klicken Sie mit der rechten Maustaste auf **Eingabeaufforderung**, und wählen Sie **Als Administrator ausführen** aus.
+   1. Klicken Sie mit der rechten Maustaste auf **Eingabeaufforderung**, und wählen Sie **Als Administrator ausführen** aus.
 
 2. Geben Sie den folgenden Befehl ein, und drücken Sie dann die **Eingabetaste**:
 
@@ -106,15 +118,15 @@ Verwenden Sie den netsh-Befehl, um einen systemweiten statischen Proxy zu konfig
    netsh winhttp set proxy <proxy>:<port>
    ```
 
-   Beispiel: netsh winhttp set proxy 10.0.0.6:8080
+   Beispiel: `netsh winhttp set proxy 10.0.0.6:8080`
 
-Geben Sie zum Zurücksetzen des winhttp-Proxys den folgenden Befehl ein, und drücken Sie die **EINGABETASTE.**
+Wenn Sie den WinHTTP-Proxy zurücksetzen möchten, geben Sie den folgenden Befehl ein, und drücken Sie dann die **Eingabetaste**:
 
 ```PowerShell
 netsh winhttp reset proxy
 ```
 
-Weitere Informationen hierzu finden Sie unter [netsh-Befehl: Syntax, Kontexte und Formatierung](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-contexts).
+Weitere Informationen hierzu finden Sie unter [netsh-Befehl: Syntax, Kontexte und Formatierung](/windows-server/networking/technologies/netsh/netsh-contexts).
 
 ## <a name="enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server"></a>Aktivieren des Zugriffs auf Microsoft Defender for Endpoint-Dienst-URLs auf dem Proxyserver
 
@@ -123,7 +135,7 @@ Wenn ein Proxy oder eine Firewall den gesamten Datenverkehr standardmäßig bloc
 In der folgenden herunterladbaren Kalkulationstabelle sind die Dienste und die zugehörigen URLs aufgeführt, mit deren Netzwerk eine Verbindung herstellen kann. Sie sollten sicherstellen, dass es keine Firewall- oder Netzwerkfilterregeln gibt, die den  Zugriff auf diese URLs verweigern würden, oder Sie müssen möglicherweise eine speziell für sie zulässige Regel erstellen.
 
 
-|**Tabellenkalkulation der Domänenliste**|**Beschreibung**|
+| Tabellenkalkulation der Domänenliste | Beschreibung |
 |:-----|:-----|
 |![Thumb image for Microsoft Defender for Endpoint URLs spreadsheet](images/mdatp-urls.png)<br/>  | Tabellenkalkulation bestimmter DNS-Einträge für Dienststandorte, geografische Standorte und Betriebssysteme. <br><br>[Laden Sie die Tabelle hier herunter.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
@@ -135,11 +147,11 @@ Wenn bei einem Proxy oder einer Firewall die HTTPS-Überprüfung aktiviert ist (
 
 
 > [!NOTE]
-> URLs, die v20 enthalten, werden nur benötigt, wenn sie Windows 10 Version 1803 oder höher ausführen. Ist beispielsweise ```us-v20.events.data.microsoft.com``` für ein Gerät erforderlich, Windows 10 Version 1803 oder höher ausgeführt wird und in die STORAGE wird.
+> URLs, die v20 enthalten, werden nur benötigt, wenn sie Windows 10 Version 1803 oder höher ausführen. Ist beispielsweise `us-v20.events.data.microsoft.com` für ein Gerät erforderlich, Windows 10 Version 1803 oder höher ausgeführt wird und in die STORAGE wird.
 
 
 > [!NOTE]
-> Wenn Sie Microsoft Defender Antivirus in Ihrer Umgebung verwenden, lesen Sie Konfigurieren von Netzwerkverbindungen [mit dem Microsoft Defender Antivirus Clouddienst](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
+> Wenn Sie Microsoft Defender Antivirus in Ihrer Umgebung verwenden, lesen Sie Konfigurieren von Netzwerkverbindungen [mit dem Microsoft Defender Antivirus Clouddienst](/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
 
 Wenn ein Proxy oder eine Firewall anonymen Datenverkehr blockiert, da der Defender for Endpoint-Sensor eine Verbindung aus dem Systemkontext verbindet, stellen Sie sicher, dass anonymer Datenverkehr in den zuvor aufgeführten URLs zulässig ist.
 
@@ -170,7 +182,7 @@ Lesen Sie die folgenden Anleitungen, um die Platzhalter (*)-Anforderung für Ihr
 
 4.  In der Liste der Microsoft Defender for Endpoint-URLs finden Sie die vollständige Liste der Anforderungen für Ihre Region (weitere Informationen finden Sie unter Service URLs [Spreadsheet](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx)).
 
-![Abbildung des Administrators in Windows PowerShell](images/admin-powershell.png)
+    ![Abbildung des Administrators in Windows PowerShell](images/admin-powershell.png)
 
 Die Platzhalter (*) in *.ods.opinsights.azure.com-, *.oms.opinsights.azure.com- und *.agentsvc.azure-automation.net-URL-Endpunkten können durch Ihre spezifische Arbeitsbereich-ID ersetzt werden. Die Arbeitsbereichs-ID ist für Ihre Umgebung und Ihren Arbeitsbereich spezifisch und befindet sich im Abschnitt Onboarding Ihres Mandanten im Microsoft Defender Security Center Portal.
 
@@ -189,9 +201,9 @@ Vergewissern Sie sich, dass die Proxykonfiguration erfolgreich abgeschlossen wur
 
 3. Öffnen Sie eine Befehlszeile mit erhöhten Rechten:
 
-    a. Wechseln Sie zu **Start**, und geben Sie **cmd** ein.
+   1. Wechseln Sie zu **Start**, und geben Sie **cmd** ein.
 
-    b.  Klicken Sie mit der rechten Maustaste auf **Eingabeaufforderung**, und wählen Sie **Als Administrator ausführen** aus.
+   1.  Klicken Sie mit der rechten Maustaste auf **Eingabeaufforderung**, und wählen Sie **Als Administrator ausführen** aus.
 
 4. Geben Sie den folgenden Befehl ein, und drücken Sie dann die **Eingabetaste**:
 
@@ -199,7 +211,7 @@ Vergewissern Sie sich, dass die Proxykonfiguration erfolgreich abgeschlossen wur
     HardDrivePath\MDATPClientAnalyzer.cmd
     ```
 
-    Ersetzen Sie *HardDrivePath* durch den Pfad, in den das MDATPClientAnalyzer-Tool heruntergeladen wurde (z. B.
+    Ersetzen *Sie HardDrivePath* durch den Pfad, in den das MDATPClientAnalyzer-Tool heruntergeladen wurde, z. B.:
 
     ```PowerShell
     C:\Work\tools\MDATPClientAnalyzer\MDATPClientAnalyzer.cmd
@@ -207,7 +219,8 @@ Vergewissern Sie sich, dass die Proxykonfiguration erfolgreich abgeschlossen wur
 
 5. Extrahieren Sie *dieMDATPClientAnalyzerResult.zip,* die vom Tool im Ordner erstellt wurde, der in *HardDrivePath verwendet wird.*
 
-6. Öffnen Sie *MDATPClientAnalyzerResult.txt*, und vergewissern Sie sich, dass Sie die Schritte zur Proxykonfiguration durchgeführt haben, um die Serverermittlung und den Zugriff auf die Dienst-URLs zu aktivieren.<br><br>
+6. Öffnen Sie *MDATPClientAnalyzerResult.txt*, und vergewissern Sie sich, dass Sie die Schritte zur Proxykonfiguration durchgeführt haben, um die Serverermittlung und den Zugriff auf die Dienst-URLs zu aktivieren.
+
    Das Tool überprüft die Konnektivität von Defender für Endpunkt-Dienst-URLs, mit denen der Defender für Endpunkt-Client laut Konfiguration interagieren kann. Anschließend werden die Ergebnisse für jede URL, die potentiell für die Kommunikation mit den Defender für Endpunkt-Diensten verwendet werden kann, in die Datei *MDATPClientAnalyzerResult.txt* gedruckt. Beispiel:
 
    ```text
@@ -219,12 +232,12 @@ Vergewissern Sie sich, dass die Proxykonfiguration erfolgreich abgeschlossen wur
    5 - Command line proxy: Doesn't exist
    ```
 
-Wenn mindestens eine der Verbindungsoptionen einen (200)-Status zurückgibt, kann der Defender für Endpunkt-Client über diese Verbindungsmethode ordnungsgemäß mit der getesteten URL kommunizieren. <br><br>
+Wenn mindestens eine der Verbindungsoptionen einen (200)-Status zurückgibt, kann der Defender für Endpunkt-Client über diese Verbindungsmethode ordnungsgemäß mit der getesteten URL kommunizieren.
 
 Wenn die Ergebnisse der Verbindungsüberprüfung hingegen auf einen Fehler hindeuten, wird ein HTTP-Fehler angezeigt (siehe HTTP-Status-Codes). Anschließend können Sie die URLs in der Tabelle unter Zugriff auf [Defender for Endpoint-Dienst-URLs auf dem Proxyserver aktivieren verwenden.](#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server) Die verwendeten URLs hängen von der Region ab, die während des Onboardings ausgewählt wurde.
 
 > [!NOTE]
->  Das Tool für die Verbindungsanalyse ist nicht kompatibel mit der ASR-Regel [Erstellung von Prozessen durch PSExec- und WMI-Befehle blockieren](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). Sie müssen diese Regel vorübergehend deaktivieren, um das Verbindungstool auszuführen.
+>  Das Tool für die Verbindungsanalyse ist nicht kompatibel mit der ASR-Regel [Erstellung von Prozessen durch PSExec- und WMI-Befehle blockieren](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). Sie müssen diese Regel vorübergehend deaktivieren, um das Verbindungstool auszuführen.
 
 
 > [!NOTE]

@@ -19,19 +19,19 @@ ms.custom:
 search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
-description: Erfahren Sie, wie Sie ein Benutzerkonto löschen. Entscheiden Sie, was mit den E-Mails und Inhalten OneDrive werden soll. Und entscheiden Sie, ob sie die Produktlizenz behalten oder nicht mehr bezahlen soll.
-ms.openlocfilehash: f4b1e0b1fb591d369cc09010db86dd995d7d4896
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Erfahren Sie, wie Sie ein Benutzerkonto löschen und was Sie mit den E-Mails des Benutzers tun und OneDrive inhalten und ob die Produktlizenz erhalten werden soll.
+ms.openlocfilehash: c30edb598f659337778ec956737934da5fedad18
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535974"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593405"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Löschen eines Benutzers aus Ihrer Organisation
   
 **Möchten Sie wissen, wie Sie *Ihr* eigenes Microsoft 365, das Sie bei der Arbeit oder in der Schule verwenden, löschen? Wenden Sie sich an den technischen Support ihrer Arbeit oder Universität, um diese Schritte für Sie zu tun.**
 
-## <a name="what-you-need-to-know-about-deleting-users"></a>Wissenswertes über das Löschen von Benutzern
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Nur Personen, die [über Microsoft 365 Administrator-](about-admin-roles.md) oder Benutzerverwaltungsberechtigungen für das Unternehmen oder die Schule verfügen, können Benutzerkonten löschen.
 - Sie haben 30 Tage Zeit, das Konto [wiederherzustellen](restore-user.md), bevor die Daten des Benutzers endgültig gelöscht werden.
@@ -169,14 +169,14 @@ Nachfolgend sind die beim Löschen eines Benutzers am häufigsten auftretenden P
 
 **Möchten Sie die Microsoft 365 von Ihrem Computer löschen? Wechseln Sie zu [Abonnement kündigen](../../commerce/subscriptions/cancel-your-subscription.md).**
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Wiederherstellen eines Benutzers](restore-user.md)
+[Wiederherstellen eines Benutzers](restore-user.md) (Artikel)
   
-[Endgültiges Löschen eines Postfachs](/exchange/permanently-delete-a-mailbox-exchange-2013-help)
+[Dauerhaftes Löschen eines Postfachs](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (Artikel)
 
-[Entfernen eines ehemaligen Mitarbeiters aus Office 365](remove-former-employee.md)
+[Entfernen eines ehemaligen Mitarbeiters aus Office 365](remove-former-employee.md) (Artikel)
 
-[Hinzufügen eines neuen Mitarbeiters zu Office 365](add-new-employee.md)
+[Hinzufügen eines neuen Mitarbeiters zu Office 365](add-new-employee.md) (Artikel)
 
-[Löschen eines Benutzerkontos](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): Folgen Sie diesen Anweisungen, wenn Ihr Unternehmen **Active Directory** verwendet und mit Azure AD synchronisiert. Dies ist nicht über Office 365 möglich.
+[Löschen eines Benutzerkontos](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): Folgen Sie diesen Anweisungen, wenn Ihr Unternehmen **Active Directory** verwendet und mit Azure AD synchronisiert. Dies ist nicht über Office 365 möglich. (Artikel)

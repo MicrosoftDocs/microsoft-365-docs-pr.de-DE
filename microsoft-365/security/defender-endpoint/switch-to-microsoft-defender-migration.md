@@ -1,5 +1,5 @@
 ---
-title: Wechseln von einer Nicht-Microsoft-Endpunktlösung zu Microsoft Defender for Endpoint
+title: Wechseln von Nicht-Microsoft-Endpunktschutz zu Microsoft Defender for Endpoint
 description: Wechseln Sie zu Microsoft Defender for Endpoint. In diesem Artikel finden Sie eine Übersicht.
 keywords: migration, windows defender advanced endpoint protection, for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
@@ -19,23 +19,23 @@ ms.collection:
 - m365solution-overview
 ms.topic: conceptual
 ms.custom: migrationguides
-ms.date: 05/14/2021
+ms.date: 05/20/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
 ms.technology: mde
-ms.openlocfilehash: 013205a1b5b9db204f626a6fe6ab76ad07378558
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 2a2b78089486b432ebf9492de26396b2bb96f94d
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538003"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593501"
 ---
-# <a name="make-the-switch-from-a-non-microsoft-endpoint-solution-to-microsoft-defender-for-endpoint"></a>Wechseln von einer Nicht-Microsoft-Endpunktlösung zu Microsoft Defender for Endpoint
+# <a name="make-the-switch-from-non-microsoft-endpoint-protection-to-microsoft-defender-for-endpoint"></a>Wechseln von Nicht-Microsoft-Endpunktschutz zu Microsoft Defender for Endpoint
 
-Wenn Sie planen, von einer Nicht-Microsoft-Lösung für den Endpunktschutz zu Microsoft Defender for Endpoint (Defender for [Endpoint)](microsoft-defender-endpoint.md) zu wechseln, sind Sie an der richtigen Stelle. Verwenden Sie diesen Artikel als Leitfaden.
+Wenn Sie darüber nachdenken, von Ihrem Nicht-Microsoft-Endpunktschutz zu [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) (Defender for Endpoint) zu wechseln, sind Sie an der richtigen Stelle. Verwenden Sie diesen Artikel als Leitfaden.
 
 :::image type="content" source="images/nonms-mde-migration.png" alt-text="Übersicht über die Migration zu Defender for Endpoint":::
 
-Wenn Sie zu Defender for Endpoint wechseln, beginnen Sie mit Ihrer Nicht-Microsoft-Lösung im aktiven Modus, konfigurieren Defender für Endpoint im passiven Modus, onboard zu Defender für Endpoint, und legen Sie dann Defender für Endpoint auf den aktiven Modus und entfernen Sie die Nicht-Microsoft-Lösung.
+Wenn Sie zu Defender for Endpoint wechseln, beginnen Sie mit der Nicht-Microsoft-Lösung, die im aktiven Modus ausgeführt wird, konfigurieren Sie Defender für Endpoint im passiven Modus, onboard zu Defender for Endpoint, legen Sie Defender für Endpoint auf den aktiven Modus und dann die Nicht-Microsoft-Lösung entfernt.
 
 > [!TIP]
 > - Wenn Sie derzeit McAfee Endpoint Security (McAfee) verwenden, lesen Sie [Migrieren von McAfee zu Defender for Endpoint](mcafee-to-microsoft-defender-migration.md).
@@ -43,15 +43,15 @@ Wenn Sie zu Defender for Endpoint wechseln, beginnen Sie mit Ihrer Nicht-Microso
 
 ## <a name="the-migration-process"></a>Der Migrationsprozess
 
-Wenn Sie zu Defender for Endpoint wechseln, führen Sie einen Prozess aus, der in drei Phasen unterteilt werden kann, wie in der folgenden Tabelle beschrieben:
+Der Prozess der Migration zu Defender for Endpoint kann in drei Phasen unterteilt werden, wie in der folgenden Tabelle beschrieben:
 
 ![Migrationsphasen – Vorbereiten, Einrichten, Onboarding](images/phase-diagrams/migration-phases.png)
 
 |Phase |Beschreibung |
 |--|--|
-|[Vorbereiten der Migration](switch-to-microsoft-defender-prepare.md) |Während [der **Vorbereitungsphase**](switch-to-microsoft-defender-prepare.md)aktualisieren Sie die Geräte Ihrer Organisation, erhalten Defender for Endpoint, planen Ihre Rollen und Berechtigungen und gewähren Zugriff auf Microsoft Defender Security Center. Außerdem konfigurieren Sie den Geräteproxy und die Interneteinstellungen, um die Kommunikation zwischen den Geräten Ihrer Organisation und Defender for Endpoint zu ermöglichen. |
-|[Einrichten von Defender for Endpoint](switch-to-microsoft-defender-setup.md) |Während [der **Setupphase**](switch-to-microsoft-defender-setup.md)aktivieren Sie Microsoft Defender Antivirus und legen ihn in den passiven Modus. Sie konfigurieren auch Einstellungen & Ausschlüssen für Microsoft Defender Antivirus und Ihre vorhandene Endpunktschutzlösung. Anschließend erstellen Sie Ihre Gerätegruppen, Sammlungen und Organisationseinheiten. Schließlich konfigurieren Sie Ihre Antischalwarerichtlinien und Echtzeitschutzeinstellungen.|
-|[Onboarding bei Defender for Endpoint](switch-to-microsoft-defender-onboard.md) |Während [der **Onboardphase**](switch-to-microsoft-defender-onboard.md)onboardieren Sie Ihre Geräte in Defender for Endpoint, bestätigen, dass Microsoft Defender Antivirus im passiven Modus ausgeführt wird, und vergewissern Sie sich, dass Ihre Endpunkte mit Defender for Endpoint kommunizieren. Anschließend deinstallieren Sie Ihre vorhandene Endpunktschutzlösung, und stellen Sie sicher, dass Defender for Endpoint ordnungsgemäß funktioniert. |
+|[Vorbereiten der Migration](switch-to-microsoft-defender-prepare.md) |Während [der **Vorbereitungsphase**](switch-to-microsoft-defender-prepare.md): <p>1. Aktualisieren Sie die Geräte Ihrer Organisation. <p>2. Get Defender for Endpoint. <p>3. Planen Sie Ihre Rollen und Berechtigungen, und gewähren Sie Zugriff auf Microsoft Defender Security Center. <p>4. Konfigurieren Sie Den Geräteproxy und die Interneteinstellungen, um die Kommunikation zwischen den Geräten Ihrer Organisation und Defender for Endpoint zu ermöglichen. |
+|[Einrichten von Defender for Endpoint](switch-to-microsoft-defender-setup.md) |Während [der **Setupphase**](switch-to-microsoft-defender-setup.md): <p>1. Aktivieren/neu installieren Microsoft Defender Antivirus. <p>2. Konfigurieren von Defender für Endpoint. <p>3. Fügen Sie Defender for Endpoint der Ausschlussliste für Ihre vorhandene Lösung hinzu. <p>4. Fügen Sie Ihre vorhandene Lösung der Ausschlussliste für Microsoft Defender Antivirus. <p>5. Richten Sie Ihre Gerätegruppen, Sammlungen und Organisationseinheiten ein. <p>6. Konfigurieren Sie Ihre Antischalwarerichtlinien und Echtzeitschutzeinstellungen.|
+|[Onboarding bei Defender for Endpoint](switch-to-microsoft-defender-onboard.md) |Während [der **Onboardphase**](switch-to-microsoft-defender-onboard.md): <p>1. Onboarding Ihrer Geräte in Defender for Endpoint. <p>2. Führen Sie einen Erkennungstest aus. <p>3. Bestätigen Sie, Microsoft Defender Antivirus im passiven Modus ausgeführt wird. <p>4. Updates für Microsoft Defender Antivirus. <p>5. Deinstallieren Sie Ihre vorhandene Endpunktschutzlösung. <p>6. Stellen Sie sicher, dass Defender for Endpoint ordnungsgemäß funktioniert. |
 
 ## <a name="whats-included-in-microsoft-defender-for-endpoint"></a>Was ist in Microsoft Defender for Endpoint enthalten?
 

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: b8f56c8f2ba92073ea7ae9464f199d9c900b932f
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 81a3b41fb8e38a224a030571093b2145d2efb3d4
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933961"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593429"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Onboarding Windows 10 Geräte mithilfe von Gruppenrichtlinien 
 
@@ -103,7 +103,7 @@ Sie können Gruppenrichtlinien (GP) verwenden, um Einstellungen zu konfigurieren
 
 4.  Klicken **Sie auf Richtlinien** und dann auf Administrative **Vorlagen.**
 
-5.  Klicken **Windows Komponenten,** und klicken Sie **dann Windows Defender ATP**.
+5.  Klicken **Windows Komponenten,** und klicken Sie **dann Windows Defender SmartScreen**.
 
 6.  Wählen Sie aus, ob Sie die Beispielfreigabe auf Ihren Geräten aktivieren oder deaktivieren möchten.
 
@@ -119,34 +119,34 @@ Nachdem Sie das Onboardingskript konfiguriert haben, bearbeiten Sie weiterhin di
 
 Alle Richtlinien befinden sich unter `Computer Configuration\Policies\Administrative Templates` .
 
-**Richtlinienspeicherort:** \Windows Components\Windows Defender ATP
+**Richtlinienspeicherort:** \Windows Components\Windows Defender SmartScreen*
 
-Richtlinie | Setting 
+Richtlinie | Einstellung 
 :---|:---
 Enable\Disable Sample collection|   Aktiviert – "Beispielsammlung auf Computern aktivieren" aktiviert
 
 <br/>
 
-**Richtlinienspeicherort:** \Windows Components\Windows Defender Antivirus
+**Richtlinienspeicherort:** \Windows Components\Microsoft Defender Antivirus
 
-Richtlinie | Setting 
+Richtlinie | Einstellung 
 :---|:---
 Konfigurieren der Erkennung für potenziell unerwünschte Anwendungen | Aktiviert, Blockieren
 
 <br/>
 
-**Richtlinienspeicherort:** \Windows Components\Windows Defender Antivirus\MAPS
+**Richtlinienspeicherort:** \Windows Components\Microsoft Defender Antivirus\MAPS
 
-Richtlinie | Setting 
+Richtlinie | Einstellung 
 :---|:---
 Microsoft MAPS beitreten | Aktiviert, Erweiterte KARTEN
 Senden von Dateibeispielen, wenn eine weitere Analyse erforderlich ist | Aktiviert, Sichere Beispiele senden
 
 <br/>
 
-**Richtlinienspeicherort:** \Windows-Komponenten\Windows Defender Antivirus\Echtzeitschutz
+**Richtlinienspeicherort:** \Windows-Komponenten\Microsoft Defender Antivirus\Echtzeitschutz
 
-Richtlinie | Setting 
+Richtlinie | Einstellung 
 :---|:---
 Deaktivieren des Echtzeitschutzes|Deaktiviert
 Aktivieren der Verhaltensüberwachung|Aktiviert
@@ -155,18 +155,18 @@ Aktivieren der Verhaltensüberwachung|Aktiviert
 
 <br/>
 
-**Richtlinienspeicherort:** \Windows Components\Windows Defender Antivirus\Scan
+**Richtlinienspeicherort:** \Windows Components\Microsoft Defender AntivirusScan
 
 Diese Einstellungen konfigurieren regelmäßige Überprüfungen des Endpunkts. Es wird empfohlen, eine wöchentliche Schnellscan durchführen, was die Leistung erlaubt.
 
-Richtlinie | Setting 
+Richtlinie | Einstellung 
 :---|:---
 Überprüfen Sie vor dem Ausführen einer geplanten Überprüfung auf die neuesten Viren- und Spywaresicherheitsinformationen. |Aktiviert
 
 
 <br/>
 
-**Richtlinienspeicherort:** \Windows Components\Windows Defender Antivirus\Windows Defender Exploit Guard\Attack Surface Reduction
+**Richtlinienspeicherort:** \Windows Components\Microsoft Defender Antivirus\Microsoft Defender Exploit Guard\Attack Surface Reduction
 
 Aktuelle Liste der GUIDs zur Reduzierung der Angriffsfläche aus Anpassen von Regeln zur Reduzierung der [Angriffsfläche](customize-attack-surface-reduction.md)
 
@@ -184,7 +184,7 @@ Aktuelle Liste der GUIDs zur Reduzierung der Angriffsfläche aus Anpassen von Re
 
 
 
-Richtlinie | Setting 
+Richtlinie | Einstellung 
 :---|:---
 Konfigurieren des kontrollierten Ordnerzugriffs| Aktiviert, Überwachungsmodus
 

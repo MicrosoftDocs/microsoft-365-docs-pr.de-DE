@@ -17,13 +17,13 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Richten Sie Basic Mobility and Security ein, um die mobilen Geräte Ihrer Benutzer zu sichern und zu verwalten.
-ms.openlocfilehash: 2f74307d41d83dd2e6fce2b68283ce0966e850e8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Richten Sie Grundlegende Mobilität und Sicherheit ein, um die mobilen Geräte Ihrer Benutzer zu sichern und zu verwalten, indem Sie Aktionen wie das Remotewischen eines Geräts ausführen.
+ms.openlocfilehash: 830baa79838818501101c0c4f2d3163f57d47611
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906240"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593417"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Einrichten von grundlegender Mobilität und Sicherheit
 
@@ -127,7 +127,8 @@ Nachdem Sie eine Verwaltungsrichtlinie für mobile Geräte erstellt und bereitge
 
 Benutzer mit Android- oder iOS-Geräten müssen die Unternehmensportal-App im Rahmen des Registrierungsprozesses installieren.
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Funktionen von grundlegender Mobilität und Sicherheit](capabilities.md)<br/>
-[Erstellen von Gerätesicherheitsrichtlinien in Basic Mobility and Security](create-device-security-policies.md)
+[Funktionen der grundlegenden Mobilität und Sicherheit](capabilities.md) (Artikel)
+
+[Erstellen von Gerätesicherheitsrichtlinien in Basic Mobility and Security](create-device-security-policies.md) (Artikel)

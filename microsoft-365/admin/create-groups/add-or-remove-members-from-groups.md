@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Erfahren Sie, wie Sie ein Mitglied zu einer Gruppe hinzufügen, Mitglieder aus der Gruppe entfernen und den Gruppenbesitzerstatus im Microsoft 365 verwalten.
-ms.openlocfilehash: 997145b85d2990d5bf7184f5e97a0a8d1c86dae9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3ab3ebe21caa2d9d3dfa381dd3b68c9d2512cb79
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907916"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593381"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Hinzufügen oder Entfernen von Mitgliedern aus Microsoft 365 Gruppen mithilfe des Admin Centers
 
@@ -109,14 +109,14 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
 
 - [Zuweisen eines neuen Besitzers zu einer verwaisten Gruppe](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-## <a name="articles-about-managing-groups"></a>Artikel zum Verwalten von Gruppen
+## <a name="related-content"></a>Verwandte Inhalte
 
-- [Aktualisieren von Verteilerlisten auf Microsoft 365 Gruppen in Outlook](../manage/upgrade-distribution-lists.md)
+[Aktualisieren von Verteilerlisten auf Microsoft 365 Gruppen in Outlook](../manage/upgrade-distribution-lists.md) (Artikel)
 
-- [Warum Sie Ihre Verteilerlisten für Gruppen in Outlook aktualisieren sollten](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+[Warum Sie Ihre Verteilerlisten zu Gruppen in Outlook aktualisieren sollten](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (Artikel)
 
-- [Verwalten des Gastzugriffs in Microsoft 365 Gruppen](manage-guest-access-in-groups.md)
+[Verwalten des Gastzugriffs in Microsoft 365 Gruppen](manage-guest-access-in-groups.md) (Artikel)
 
-- [Verwalten Microsoft 365 Gruppen mit PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md): In diesem Artikel werden Die wichtigsten Cmdlets und Beispiele erläutert.
+[Verwalten Microsoft 365 Gruppen mit PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md): In diesem Artikel werden Die wichtigsten Cmdlets und Beispiele (Artikel) erläutert.
 
-- [Microsoft 365 gruppenbenennungsrichtlinie](../../solutions/groups-naming-policy.md)
+[Microsoft 365 gruppenbenennungsrichtlinie](../../solutions/groups-naming-policy.md) (Artikel)

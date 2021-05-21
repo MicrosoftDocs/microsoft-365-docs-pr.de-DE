@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Erfahren Sie, wie Sie mit dem Sammeln von Daten für Ihren Mandanten mithilfe der Microsoft 365 Usage Analytics-Vorlagen-App in Power BI.
-ms.openlocfilehash: d9cadcc8258478fd1d5dbc0d9ae6bf4e814a8435
-ms.sourcegitcommit: b6763a8ab240fbdd56078a7c9452445d0c4b9545
+ms.openlocfilehash: 329878365aa07da4615a849ad04cde7f75a07872
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51957515"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593369"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Aktivieren von Microsoft 365-Nutzungsanalysen
 
@@ -96,3 +96,11 @@ Sie müssen ein globaler Administrator sein, um die für alle Berichte gesammelt
 2. Wählen **Sie Berichte** aus, und wählen Sie dann **anonyme Bezeichner anzeigen aus.** Diese Einstellung wird sowohl auf die Verwendungsberichte als auch auf die Vorlagen-App angewendet.
   
 3. Wählen Sie **Änderungen speichern** aus.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Informationen zur Verwendungsanalyse](usage-analytics.md) (Artikel)
+
+[Aktuelle Version der Verwendungsanalyse](get-the-latest-version-of-usage-analytics.md) (Artikel)
+
+[Navigieren und verwenden Sie die Berichte in Microsoft 365 Verwendungsanalyse](navigate-and-utilize-reports.md) (Artikel)

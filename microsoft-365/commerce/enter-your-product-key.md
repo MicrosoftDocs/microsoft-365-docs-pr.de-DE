@@ -19,14 +19,14 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce_purchase
-description: Erfahren Sie, wie Sie einen Microsoft 365 Business Standard, der in einem Einzelhandelsgeschäft erworben wurde, einlösen.
+description: Wenn Sie Microsoft 365 Business Standard in einem Einzelhandelsgeschäft erworben haben, erfahren Sie, wie Sie den Product Key einlösen und Ihr Abonnement aktivieren.
 ms.date: 11/13/2020
-ms.openlocfilehash: b313b38fbb4fff332bb13402dc5af5db4e0bf676
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: bc2b07b5a98c13a919596bdbf85a21bdc6c8d2bf
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331719"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593393"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Geben Sie Ihren Product Key für Microsoft 365 Business Standard
 
@@ -66,3 +66,11 @@ Wenn Sie neu in Microsoft 365 Business sind, erfahren Sie, wie [Sie Microsoft 36
 Sehen Sie sich diese Liste gängiger Fehler und Lösungen an: [Probleme mit Microsoft 365 Business Product Key?](product-key-errors-and-solutions.md)
   
 Oder [rufen Sie den Microsoft-Support an](../business-video/get-help-support.md).
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Upgrade auf einen anderen Plan](./subscriptions/upgrade-to-different-plan.md) (Artikel)
+
+[Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Microsoft 365 Business-Abonnement endet?](./subscriptions/what-if-my-subscription-expires.md) (Artikel)
+
+[Verstehen von Abonnements und Lizenzen in Microsoft 365 Business](./licenses/subscriptions-and-licenses.md) (Artikel)
