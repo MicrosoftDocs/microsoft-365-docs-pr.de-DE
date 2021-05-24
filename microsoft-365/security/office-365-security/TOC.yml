@@ -38,14 +38,6 @@
           href: turn-on-mdo-for-spo-odb-and-teams.md
         - name: Microsoft 365 Security Center – Übersicht
           href: ../defender/overview-security-center.md
-        - name: Sicherheitsrisiken-Explorer für Microsoft Defender für Office 365
-          items:
-            - name: Suche nach Bedrohungen im Sicherheitsrisiken-Explorer
-              href: threat-hunting-in-threat-explorer.md
-            - name: E-Mail-Sicherheit mit dem Sicherheitsrisiken-Explorer
-              href: email-security-in-microsoft-defender.md
-            - name: Sicherheitsrisiken-Explorer und Grundlagen der Echtzeit-Erkennung
-              href: real-time-detections.md
         - name: Die Seite „E-Mail-Entität"
           href: mdo-email-entity-page.md
         - name: AIR-Übersicht
@@ -172,6 +164,8 @@
           href: attack-simulation-training-insights.md
         - name: Überlegungen zur Bereitstellung von Angriffssimulationstraining und FAQ
           href: attack-simulation-training-faq.md
+        - name: Konfigurieren der Zustellung für Phishing-Simulationen und SecOps-Postfächer von Drittanbietern
+          href: configure-advanced-delivery.md
         - name: Empfohlene Einstellungen für das Konfigurieren von EOP und Defender für Office 365 Security
           href: recommended-settings-for-eop-and-office365.md
         - name: Bewährte Methoden für das Konfigurieren von EOP
@@ -200,6 +194,14 @@
           href: zero-hour-auto-purge.md
     - name: Erkennen
       items:
+        - name: Sicherheitsrisiken-Explorer für Microsoft Defender für Office 365
+          items:
+            - name: Suche nach Bedrohungen im Sicherheitsrisiken-Explorer
+              href: threat-hunting-in-threat-explorer.md
+            - name: E-Mail-Sicherheit mit dem Sicherheitsrisiken-Explorer
+              href: email-security-in-microsoft-defender.md
+            - name: Sicherheitsrisiken-Explorer und Grundlagen der Echtzeit-Erkennung
+              href: real-time-detections.md
         - name: Verwendung von Bedrohungs-Trackern
           href: threat-trackers.md
         - name: Warnungen anzeigen
@@ -222,7 +224,7 @@
           href: investigate-malicious-email-that-was-delivered.md
         - name: Details und Ergebnisse einer automatisierten Untersuchung anzeigen
           href: air-view-investigation-results.md
-        - name: "Microsoft\_Defender\_für\_Office\_365-Berichte anzeigen"
+        - name: Microsoft Defender für Office 365-Berichte anzeigen
           href: view-reports-for-mdo.md
         - name: E-Mail-Sicherheitsberichte anzeigen
           href: view-email-security-reports.md

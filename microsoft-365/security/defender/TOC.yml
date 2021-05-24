@@ -282,42 +282,42 @@
               items:
                 - name: Übersicht über die ServiceNow-Integration
                   href: ./tickets.md
-            - name: Microsoft 365 Defender-APIs (Vorschau)
+        - name: Microsoft 365 Defender-APIs (Vorschau)
+          items:
+            - name: Übersicht über Microsoft 365 Defender-APIs (Vorschau)
+              href: api-overview.md
+            - name: Erste Schritte mit Microsoft 365 Defender-APIs (Vorschau)
               items:
-                - name: Übersicht über Microsoft 365 Defender-APIs (Vorschau)
-                  href: api-overview.md
-                - name: Erste Schritte mit Microsoft 365 Defender-APIs (Vorschau)
+                - name: Microsoft 365 Defender-API-Lizenz und Nutzungsbedingungen
+                  href: api-terms.md
+                - name: Zugriff auf Microsoft 365 Defender-APIs
+                  href: api-access.md
+                - name: Beispiel für Hello World
+                  href: api-hello-world.md
+                - name: Zugriff mit Anwendungskontext
+                  href: api-create-app-web.md
+                - name: Zugriff mit Benutzerkontext
+                  href: api-create-app-user-context.md
+                - name: Zugriff mit Partneranwendungen
+                  href: api-partner-access.md
+                - name: Andere API-Ressourcen
+                  href: api-articles.md
+            - name: Microsoft 365 Defender-APIs und -Schema (Vorschau)
+              items:
+                - name: Unterstützte Microsoft 365 Defender-APIs
+                  href: api-supported.md
+                - name: Häufige Rest-API-Fehlercodes
+                  href: api-error-codes.md
+                - name: Erweiterte Suche-API
+                  href: api-advanced-hunting.md
+                - name: Vorfall-APIs
                   items:
-                    - name: Microsoft 365 Defender-API-Lizenz und Nutzungsbedingungen
-                      href: api-terms.md
-                    - name: Zugriff auf Microsoft 365 Defender-APIs
-                      href: api-access.md
-                    - name: Beispiel für Hello World
-                      href: api-hello-world.md
-                    - name: Zugriff mit Anwendungskontext
-                      href: api-create-app-web.md
-                    - name: Zugriff mit Benutzerkontext
-                      href: api-create-app-user-context.md
-                    - name: Zugriff mit Partneranwendungen
-                      href: api-partner-access.md
-                    - name: Andere API-Ressourcen
-                      href: api-articles.md
-                - name: Microsoft 365 Defender-APIs und -Schema (Vorschau)
-                  items:
-                    - name: Unterstützte Microsoft 365 Defender-APIs
-                      href: api-supported.md
-                    - name: Häufige Rest-API-Fehlercodes
-                      href: api-error-codes.md
-                    - name: Erweiterte Suche-API
-                      href: api-advanced-hunting.md
-                    - name: Vorfall-APIs
-                      items:
-                        - name: Vorfall-Methoden und Eigenschaften
-                          href: api-incident.md
-                        - name: Auflisten von Vorfällen
-                          href: api-list-incidents.md
-                        - name: Aktualisieren von Vorfällen
-                          href: api-update-incidents.md
+                    - name: Vorfall-Methoden und Eigenschaften
+                      href: api-incident.md
+                    - name: Auflisten von Vorfällen
+                      href: api-list-incidents.md
+                    - name: Aktualisieren von Vorfällen
+                      href: api-update-incidents.md
     - name: Microsoft Defender für Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender für Endpunkt
