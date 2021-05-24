@@ -20,12 +20,12 @@ metadata:
   description: Administratoren können häufig gestellte Fragen und Antworten zum Antispamschutz in Exchange Online Protection (EOP) anzeigen.
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: e632ab1183c43cd50da7c2cf7832a5a18fa64d50
-  ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+  ms.openlocfilehash: b15e7409c275810a9d5e70d1376a9c3accd07ab9
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 05/20/2021
-  ms.locfileid: "52583616"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52624909"
 title: Häufig gestellte Fragen zum Antispamschutz
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -61,7 +61,7 @@ sections:
 
       > [!IMPORTANT]
 
-      > In Hybridbereitstellungen, in denen EOP lokale Postfächer schützt, müssen Sie zwei Exchange-Nachrichtenflussregeln (auch als Transportregeln bezeichnet) in Ihrer lokalen Exchange-Organisation konfigurieren, um die EOP-Spamfilterheader zu erkennen, die Nachrichten hinzugefügt werden. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zum Verschieben von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+      > In Hybridbereitstellungen, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie zwei Exchange-Nachrichtenflussregeln (auch als Transportregeln bezeichnet) in Ihrer lokalen Exchange-Organisation konfigurieren, um die EOP-Spamfilterheader zu erkennen, die Nachrichten hinzugefügt werden. Weitere Informationen finden Sie unter [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
        **Für ausgehende Nachrichten:** Die Nachricht wird entweder [](high-risk-delivery-pool-for-outbound-messages.md) über den Pool mit hohem Risiko geroutet oder in einem Unzustellbarkeitsbericht (auch als Unzustellbarkeitsbericht oder Unzustellbarkeitsnachricht bekannt) an den Absender zurückgegeben. Weitere Informationen zum Schutz ausgehender Spamnachrichten finden Sie unter [Outbound spam controls](outbound-spam-controls.md).
   - question: >

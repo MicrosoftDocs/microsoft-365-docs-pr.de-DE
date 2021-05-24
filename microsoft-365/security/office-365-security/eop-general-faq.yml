@@ -16,12 +16,12 @@ metadata:
   description: Erhalten Sie Antworten auf die gängigsten allgemeinen Fragen zum in der Cloud Exchange Online Protection (EOP) gehosteten E-Mail-Filterdienst.
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 9929bd9d90f4e63e130fc478ce974fc373dea396
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: e7ae5858841384c31acf9b785fc0071607ba5f1d
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52333952"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52625365"
 title: EOP – Allgemeine häufig gestellte Fragen
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -69,7 +69,7 @@ sections:
   - question: >
       Wie lange dauert es, um EOP in Produktion zu setzen?
     answer: >
-      Wenn Sie den MX-Eintrag gemäß den Anweisungen unter [Einrichten Ihres EOP-Diensts](set-up-your-eop-service.md) ändern, werden E-Mails sofort beim Durchlaufen von EOP gefiltert. Die Übertragung des MX-Eintrags über DNS kann 24 bis 48 Stunden dauern. Sie können Ihre Schutzeinstellungen während dieses Vorgangs jederzeit optimieren.
+      Wenn Sie den MX-Eintrag gemäß den Anweisungen unter [Einrichten Ihres EOP-Diensts](/exchange/standalone-eop/set-up-your-eop-service) ändern, werden E-Mails sofort beim Durchlaufen von EOP gefiltert. Die Übertragung des MX-Eintrags über DNS kann 24 bis 48 Stunden dauern. Sie können Ihre Schutzeinstellungen während dieses Vorgangs jederzeit optimieren.
   - question: >
       Muss ich alle Features von Microsoft 365 verwenden, um EOP zu verwenden? Was passiert, wenn ich nur den EOP-Schutz möchte und das alles ist?
     answer: >

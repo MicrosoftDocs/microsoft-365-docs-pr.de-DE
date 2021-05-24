@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 04/13/2021
   localization_priority: Priority
-  ms.openlocfilehash: a646d52b903a1ab16d2f552b456793492462c44b
-  ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+  ms.openlocfilehash: b379b42ae3c01c8359003407f3fb58834a8c074e
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 04/14/2021
-  ms.locfileid: "51760260"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52623565"
 landingContent:
 - title: Defender für Office 365 & Exchange Online Protection
   linkLists:
@@ -78,8 +78,8 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Nachrichtenflussregeln (Transportregeln) in EOP als eigenständige Lösung
-      url: mail-flow-rules-transport-rules-0.md
+    - text: Nachrichtenflussregeln (Transportregeln) in Exchange Online
+      url: /exchange/security-and-compliance/mail-flow-rules/mail-flow-rules
     - text: Nachverfolgungslisten für Bedrohungen
       url: threat-trackers.md
     - text: Intelligente Berichte und Einblicke im Security & Compliance Center
@@ -94,7 +94,7 @@ landingContent:
       url: campaigns.md
     - text: Untersuchen bösartiger E-Mails, die in einem Office 365
       url: investigate-malicious-email-that-was-delivered.md
-    - text: Anzeigen von Defender für Office 365 Berichte
+    - text: Microsoft Defender für Office 365-Berichte anzeigen
       url: view-reports-for-mdo.md
 - title: Untersuchen in EOP
   linkLists:
@@ -102,8 +102,8 @@ landingContent:
     links:
     - text: Berichterstellung und Nachrichtenverfolgung in EOP
       url: reporting-and-message-trace-in-exchange-online-protection.md
-    - text: Anzeigen des Administratorüberwachungsprotokolls in EOP als eigenständige Lösung
-      url: view-the-admin-audit-log-eop.md
+    - text: Anzeigen des Administrator-Überwachungsprotokolls
+      url: /exchange/security-and-compliance/exchange-auditing-reports/view-administrator-audit-log
 - title: Reagieren
   linkLists:
   - linkListType: overview

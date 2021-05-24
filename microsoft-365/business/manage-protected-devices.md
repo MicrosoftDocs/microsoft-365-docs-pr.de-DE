@@ -27,21 +27,19 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: Erfahren Sie, wie Sie Unternehmensdaten von Geräten entfernen, die über Schutzrichtlinien verwaltet werden, sowie Windows 10 auf ihre Werkseinstellungen zurücksetzen.
-ms.openlocfilehash: fdd92e797774a47455d6b4163dfe399bf74d41f3
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0b757172ed337e9b2b68b4fcbdf5b102a8c76710
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580152"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624283"
 ---
-# <a name="manage-protected-devices-with-microsoft-365-business-premium"></a><span data-ttu-id="3b4e1-103">Verwalten geschützter Geräte mit Microsoft 365 Business Premium</span><span class="sxs-lookup"><span data-stu-id="3b4e1-103">Manage protected devices with Microsoft 365 Business Premium</span></span>
+# <a name="manage-protected-devices-with-microsoft-365-business-premium"></a><span data-ttu-id="02398-103">Verwalten geschützter Geräte mit Microsoft 365 Business Premium</span><span class="sxs-lookup"><span data-stu-id="02398-103">Manage protected devices with Microsoft 365 Business Premium</span></span>
 
-<span data-ttu-id="3b4e1-104">Nachdem ein Benutzer sein Gerät mit Ihrer Organisation verbindet, indem er sich mit seinem Arbeitskonto beim Gerät oder bei Office-Apps auf dem Gerät einschreibt, können Sie das Gerät mit den von Ihnen eingerichteten Richtlinien schützen.</span><span class="sxs-lookup"><span data-stu-id="3b4e1-104">After a user connects their device to your organization by signing in with their work account to the device or to Office apps on the device, you can protect the device with the policies you set up.</span></span> <span data-ttu-id="3b4e1-105">Verbundene Geräte werden auf der Seite **Geräte** aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="3b4e1-105">Connected devices are listed on the **Devices** page.</span></span> <span data-ttu-id="3b4e1-106">Wenn ein Gerät nun verloren geht oder gestohlen wird, können Sie es über diese Seite verwalten, um alle Unternehmensdaten zu entfernen.</span><span class="sxs-lookup"><span data-stu-id="3b4e1-106">If a device is lost or stolen, you can manage it from this page to remove any company data.</span></span> <span data-ttu-id="3b4e1-107">Sie können Windows 10-Geräte auch auf die Werkseinstellungen zurücksetzen, um alle benutzerdefinierten Einstellungen zu löschen.</span><span class="sxs-lookup"><span data-stu-id="3b4e1-107">You can also reset Windows 10 devices to their factory settings to wipe out any custom settings.</span></span> 
+<span data-ttu-id="02398-104">Nachdem ein Benutzer sein Gerät mit Ihrer Organisation verbindet, indem er sich mit seinem Arbeitskonto beim Gerät oder bei Office-Apps auf dem Gerät einschreibt, können Sie das Gerät mit den von Ihnen eingerichteten Richtlinien schützen.</span><span class="sxs-lookup"><span data-stu-id="02398-104">After a user connects their device to your organization by signing in with their work account to the device or to Office apps on the device, you can protect the device with the policies you set up.</span></span> <span data-ttu-id="02398-105">Verbundene Geräte werden auf der Seite **Geräte** aufgeführt.</span><span class="sxs-lookup"><span data-stu-id="02398-105">Connected devices are listed on the **Devices** page.</span></span> <span data-ttu-id="02398-106">Wenn ein Gerät nun verloren geht oder gestohlen wird, können Sie es über diese Seite verwalten, um alle Unternehmensdaten zu entfernen.</span><span class="sxs-lookup"><span data-stu-id="02398-106">If a device is lost or stolen, you can manage it from this page to remove any company data.</span></span> <span data-ttu-id="02398-107">Sie können Windows 10-Geräte auch auf die Werkseinstellungen zurücksetzen, um alle benutzerdefinierten Einstellungen zu löschen.</span><span class="sxs-lookup"><span data-stu-id="02398-107">You can also reset Windows 10 devices to their factory settings to wipe out any custom settings.</span></span> 
 
-<span data-ttu-id="3b4e1-108">Weitere Informationen zu den Aufgaben, die Sie zum Verwalten von Geräten verwenden können, finden Sie in den folgenden Artikeln:</span><span class="sxs-lookup"><span data-stu-id="3b4e1-108">For more information on the tasks you can use to manage devices, see these articles:</span></span> 
+## <a name="related-content"></a><span data-ttu-id="02398-108">Verwandte Inhalte</span><span class="sxs-lookup"><span data-stu-id="02398-108">Related content</span></span>
   
-[<span data-ttu-id="3b4e1-109">Entfernen von Unternehmensdaten von Geräten</span><span class="sxs-lookup"><span data-stu-id="3b4e1-109">Remove company data from devices</span></span>](remove-company-data.md)
-  
-[<span data-ttu-id="3b4e1-110">Zurücksetzen von Windows 10-Geräten auf die Werkseinstellungen</span><span class="sxs-lookup"><span data-stu-id="3b4e1-110">Reset Windows 10 devices to their factory settings</span></span>](reset-devices-to-factory-settings.md)
-
-[<span data-ttu-id="3b4e1-111">Hinzufügen eines verwalteten Geräts</span><span class="sxs-lookup"><span data-stu-id="3b4e1-111">Add a managed device</span></span>](./app-protection-settings-for-android-and-ios.md)
+<span data-ttu-id="02398-109">[Entfernen von Unternehmensdaten von Geräten](remove-company-data.md) (Artikel)</span><span class="sxs-lookup"><span data-stu-id="02398-109">[Remove company data from devices](remove-company-data.md) (article)</span></span>\
+<span data-ttu-id="02398-110">[Zurücksetzen Windows 10 Geräte auf die Werkseinstellungen](reset-devices-to-factory-settings.md) (Artikel)</span><span class="sxs-lookup"><span data-stu-id="02398-110">[Reset Windows 10 devices to their factory settings](reset-devices-to-factory-settings.md) (article)</span></span>\
+<span data-ttu-id="02398-111">[Hinzufügen eines verwalteten Geräts](./app-protection-settings-for-android-and-ios.md) (Artikel)</span><span class="sxs-lookup"><span data-stu-id="02398-111">[Add a managed device](./app-protection-settings-for-android-and-ios.md) (article)</span></span>
