@@ -7,7 +7,7 @@ author: chrfox
 manager: laurawi
 ms.date: ''
 audience: ITPro
-ms.topic: conceptual
+ms.topic: how-to
 f1_keywords:
 - ms.o365.cc.DLPLandingPage
 ms.service: O365-seccomp
@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie den Microsoft 365-Scanner zur Verhinderung von Datenverlust vor Ort verwenden, um ruhende Daten zu scannen und Schutzmaßnahmen für lokale Dateifreigaben sowie lokale SharePoint-Ordner und Dokumentbibliotheken zu implementieren.
-ms.openlocfilehash: e81b48560a8011e955e6508daf27e96f9fdb70fa
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8247315721041c3d5be5e4548bfe080b69375ed4
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538087"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623857"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Verwenden Sie den lokalen Microsoft 365-Scanner zur Verhinderung von Datenverlust (Vorschau).
 

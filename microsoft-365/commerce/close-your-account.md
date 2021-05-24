@@ -18,14 +18,14 @@ ms.custom:
 - fwlink 2133922 to Delete subscription heading
 - commerce_subscription
 search.appverid: MET150
-description: Erfahren Sie, wie Sie Ihr Konto bei Microsoft schließen.
+description: Wenn Sie Ihr Konto bei Microsoft schließen, werden alle Informationen zu Ihrem Konto gelöscht, einschließlich Lizenzen, Benutzer und Benutzerdaten.
 ms.date: 04/02/2021
-ms.openlocfilehash: ed73c191063a328490945c54dc2f5101c88f17e8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b212911707b5d6a967ab833a5a06bc76f5ceeb3b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537295"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624325"
 ---
 # <a name="close-your-account"></a>Schließen Ihres Kontos
 
@@ -52,8 +52,8 @@ Wenn Ihre Organisation Active Directory verwendet, das mit Microsoft Azure Activ
 ## <a name="step-2-cancel-all-active-subscriptions"></a>Schritt 2: Kündigen aller aktiven Abonnements
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-2. Suchen Sie **auf** der Registerkarte Produkte nach einem aktiven Abonnement. Wählen Sie die drei Punkte (weitere Aktionen) aus, und wählen Sie dann **Abonnement abbrechen aus.**
-3. Wählen Sie im Bereich **Abonnement kündigen** einen Grund aus, warum Sie kündigen. Geben Sie optional Feedback.
+2. Suchen Sie **auf** der Registerkarte Produkte nach einem aktiven Abonnement. Wählen Sie die drei Punkte (weitere Aktionen) und dann **Abonnement kündigen** aus.
+3. Wählen Sie im Bereich **Abonnement kündigen** einen Grund für Ihre Kündigung aus. Geben Sie optional Feedback.
 4. Wählen Sie **Speichern** aus.
 5. Wiederholen Sie die Schritte 1 bis 4, um alle aktiven Abonnements zu kündigen.
 
@@ -88,3 +88,9 @@ Sie können [PowerShell auch verwenden, um die mehrstufige](/azure/active-direct
 5. Wenn in Ihrer Organisation eine oder mehrere Prüfungen nicht erfolgreich sind, wird ein Link zu weiteren Informationen zum Bestehen der Prüfungen sehen. Nachdem Sie alle Prüfungen bestanden haben, wählen Sie **Löschen aus,** um den Vorgang zu abschließen.
 
 Nachdem Sie diesen letzten Schritt abgeschlossen haben, wird Ihr Konto bei Microsoft geschlossen und gelöscht.
+
+## <a name="related-content"></a>Verwandte Inhalte 
+
+[Verstehen Ihrer Rechnung oder Rechnung für Microsoft 365 Business](./billing-and-payments/understand-your-invoice2.md) (Artikel)\
+[Kündigen Ihres Abonnements](./subscriptions/cancel-your-subscription.md) (Artikel)
+

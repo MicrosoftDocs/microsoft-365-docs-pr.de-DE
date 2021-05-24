@@ -13,12 +13,12 @@ ms.collection:
 description: Erfahren Sie, wie Sie falsch positive und falsch negative Outlook mit dem Feature Berichtsnachricht melden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e848595035501f5da7b6099efd2700ebac6f17e3
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6f8c4fc327bfd467cdd1d0043c454e222e84125c
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291163"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625113"
 ---
 # <a name="report-false-positives-and-false-negatives-in-outlook"></a>Melden falsch positiver und falsch negativer Ergebnisse in Outlook
 
@@ -55,7 +55,7 @@ In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder lokalen
 Verwenden Sie für Nachrichten im Posteingang oder in einem anderen E-Mail-Ordner mit Ausnahme von Junk-E-Mails die folgende Methode, um Spam- und Phishingnachrichten zu melden:
 
 1. Klicken Sie **in der** oberen rechten Ecke der ausgewählten  Nachricht auf die Ellipsen Weitere Aktionen, klicken Sie im Dropdownmenü auf Nachricht melden, und wählen Sie **dann Junk** oder **Phishing aus.**
-  
+
    > [!div class="mx-imgBorder"]
    > ![Berichtsnachricht – Weitere Aktionen](../../media/report-message-more-actions.png)
 
@@ -67,10 +67,10 @@ Verwenden Sie für Nachrichten im Posteingang oder in einem anderen E-Mail-Ordne
    - In den Junk-E-Mail-Ordner verschoben, wenn er als Spam gemeldet wurde.
 
    - Gelöscht, wenn es als Phishing gemeldet wurde.
-   
+
 ### <a name="report-messages-that-are-not-junk"></a>Melden von Nachrichten, die kein Junk sind
 
-1. Klicken Sie **in der** oberen rechten Ecke der ausgewählten  Nachricht auf die Ellipsen Weitere Aktionen, klicken Sie im Dropdownmenü auf Nachricht melden, und klicken Sie dann auf **Nicht Junk**.  
+1. Klicken Sie **in der** oberen rechten Ecke der ausgewählten  Nachricht auf die Ellipsen Weitere Aktionen, klicken Sie im Dropdownmenü auf Nachricht melden, und klicken Sie dann auf **Nicht Junk**.
 
    > [!div class="mx-imgBorder"]
    > ![Berichtsnachricht – Weitere Aktionen](../../media/report-message-more-actions.png)
@@ -86,4 +86,4 @@ Zum Überprüfen von Nachrichten, die Benutzer an Microsoft melden, haben Sie di
 
 - Verwenden Sie das Administrator-Übermittlungsportal. Weitere Informationen finden Sie unter [Anzeigen von Benutzerübermittlungen an Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
 
-- Erstellen Sie eine Nachrichtenflussregel (auch als Transportregel bezeichnet), um Kopien von gemeldeten Nachrichten zu senden. Anweisungen finden Sie unter [Verwenden von Nachrichtenflussregeln, um zu sehen, was Ihre Benutzer an Microsoft melden.](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)
+- Erstellen Sie eine Nachrichtenflussregel (auch als Transportregel bezeichnet), um Kopien von gemeldeten Nachrichten zu senden. Anweisungen finden Sie unter [Verwenden von Nachrichtenflussregeln, um zu sehen, welche Benutzer Microsoft melden.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)

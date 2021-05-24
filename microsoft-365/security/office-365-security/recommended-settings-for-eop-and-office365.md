@@ -19,12 +19,12 @@ ms.collection:
 description: Was sind bewährte Methoden für Exchange Online Protection (EOP) und Defender für Office 365 Sicherheitseinstellungen? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie Defender auch für Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a2f65db0934c585210827299d46737040df8efb
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 04668932747462d2636b466d87c2655d97569657
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537895"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624076"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Empfohlene Einstellungen für EOP und Microsoft Defender für Office 365 Sicherheit
 
@@ -322,6 +322,6 @@ In PowerShell verwenden Sie die [Cmdlets New-SafeAttachmentPolicy](/powershell/m
 
 - Administratoren und Benutzer können falsch positive Ergebnisse (gute E-Mails, die als ungültig gekennzeichnet sind) und falsch negative (ungültige E-Mails sind zulässig) zur Analyse an Microsoft übermitteln. Weitere Informationen finden Sie unter [Melden von Nachrichten und Dateien an Microsoft](report-junk-email-messages-to-microsoft.md).
 
-- Verwenden Sie diese Links,  um Informationen zum Einrichten  Ihres [EOP-Diensts](set-up-your-eop-service.md)und zum Konfigurieren von [Microsoft Defender für Office 365.](defender-for-office-365.md) Vergessen Sie nicht die hilfreichen Anweisungen in "[Schutz vor Bedrohungen in Office 365](protect-against-threats.md)".
+- Verwenden Sie diese Links,  um Informationen zum Einrichten  Ihres [EOP-Diensts](/exchange/standalone-eop/set-up-your-eop-service)und zum Konfigurieren von [Microsoft Defender für Office 365.](defender-for-office-365.md) Vergessen Sie nicht die hilfreichen Anweisungen in "[Schutz vor Bedrohungen in Office 365](protect-against-threats.md)".
 
 -  Sicherheitsgrundwerte für Windows finden Sie hier: Wo kann ich die Sicherheitsgrundwerte [erhalten?](/windows/security/threat-protection/windows-security-baselines#where-can-i-get-the-security-baselines) für Gruppenrichtlinienobjekt/lokale Optionen und Verwenden von Sicherheitsgrundwerten zum Konfigurieren von Windows 10-Geräten in Intune für [Intune-basierte](/intune/protect/security-baselines) Sicherheit. Schließlich ist ein Vergleich zwischen Microsoft Defender for Endpoint und Microsoft Intune Sicherheitsgrundwerten unter Vergleichen der Microsoft Defender for Endpoint- und der [Windows Intune-Sicherheitsgrundwerte verfügbar.](/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline#compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines)

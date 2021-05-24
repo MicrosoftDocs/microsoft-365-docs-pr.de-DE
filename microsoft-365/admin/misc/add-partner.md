@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
-description: Erfahren Sie, wie Sie zum Zeitpunkt des Kaufs, der Änderung des Partners oder des Löschens eines Partners aus einem Abonnement einen Abonnementberaterpartner zum Zeitpunkt des Microsoft 365 hinzufügen.
-ms.openlocfilehash: d45f9e3278b0a25cc5603d322c96f40eee45e6f8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Fügen Sie zum Zeitpunkt des Kaufs Microsoft 365 einen Datensatzpartner hinzu, ändern Sie den Partner, oder löschen Sie einen Partner aus einem Abonnement.
+ms.openlocfilehash: e21c324bc84e360b80deae2abeec610e73834819
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537475"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624525"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Hinzufügen, Ändern oder Löschen eines Abonnementberaterpartners
 
@@ -42,6 +42,8 @@ ms.locfileid: "52537475"
 [] Ein autorisierter Microsoft-Partner, der als Abonnementberater fungiert, verfügt in den Bereichen Verkauf, Support und Technik über das Fachwissen, das Sie benötigen, um Ihr Abonnement einzurichten und zu verwalten. Sie können einen Abonnementberaterpartner als Datensatzpartner hinzufügen, wenn Sie Microsoft 365 oder zu einem anderen Zeitpunkt erwerben. Wenn Sie derzeit nicht mit einem Partner arbeiten, finden Sie diese auch auf der [Microsoft Pinpoint-Website.](https://pinpoint.microsoft.com)
 
 ::: moniker-end
+
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 ::: moniker range="o365-worldwide"
 
@@ -102,7 +104,7 @@ Führen Sie die Schritte auf der Seite Anbieter aus, um nach einem Partner zu su
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 2. Wählen Sie **auf der** Registerkarte Produkte das Abonnement aus, das Sie bearbeiten möchten.
 3. Geben Sie auf der Seite Abonnementdetails unter **Partnerinformationen** die **Partnernetzwerk-ID ein.** Sie können die Microsoft Partner Network ID des Partners erhalten, indem Sie den Partner dazu fragen.
-4. Wählen Sie **Hinzufügen**.
+4. Klicken Sie auf **Hinzufügen**.
 
 ::: moniker-end
 
@@ -136,7 +138,7 @@ So akzeptieren Sie dieses Angebot
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 2. Wählen Sie auf der Seite Abonnementsdetails unter **Partnerinformationen** die Option **Entfernen aus.**
 3. Geben Sie die **Microsoft Partner Network ID** für den neuen Partner ein. Fragen Sie den Partner nach seiner Microsoft Partner-ID.
-4. Wählen Sie **Hinzufügen**.
+4. Klicken Sie auf **Hinzufügen**.
   
 ::: moniker-end
 
@@ -218,6 +220,7 @@ Sie müssen Ihren Vertriebspartner bitten, die folgenden Anweisungen zu befolgen
   
 ::: moniker-end
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Suchen ihres Microsoft 365 oder Vertriebspartners](../manage/find-your-partner-or-reseller.md)
+[Suchen Sie Microsoft 365 Partner oder Händler](../manage/find-your-partner-or-reseller.md) (Artikel)\
+[Planen der Einrichtung von Microsoft 365 business](../setup/plan-your-setup.md) (Artikel)

@@ -20,12 +20,12 @@ description: Administratoren können informationen über den Bedrohungsschutz in
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3381ce66433f1f4e32f0251c45601e3cb84865b6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 438200f3f8a6a846d49bc397d6a4b0a0a33cad40
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538723"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624621"
 ---
 # <a name="protect-against-threats"></a>Schutz vor Bedrohungen
 
@@ -277,7 +277,7 @@ Neben dem Konfigurieren des Schutzes vor Schadsoftware, bösartigen URLs und Dat
 
 - Spamaktionen werden in Antispamrichtlinien auf "Nachricht in [Junk-E-Mail-Ordner verschieben" festgelegt.](anti-spam-protection.md) 
 
-- Benutzer haben ihre Standardmäßigen [Junk-E-Mail-Einstellungen beibehalten](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md)und den Junk-E-Mail-Schutz nicht deaktiviert.
+- Benutzer haben ihre Standardmäßigen [Junk-E-Mail-Einstellungen beibehalten](configure-junk-email-settings-on-exo-mailboxes.md)und den Junk-E-Mail-Schutz nicht deaktiviert.
 
 Weitere Informationen finden Sie unter Automatisches Löschen der Nullstunde [– Schutz vor Spam und Schadsoftware.](zero-hour-auto-purge.md)
 

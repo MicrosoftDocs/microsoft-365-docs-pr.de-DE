@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: Passen Sie Microsoft 365 Anmeldeseite mithilfe der Azure Active Directory. Sie können der Anmeldeseite eine Illustration, ein Logo und Text hinzufügen.
-ms.openlocfilehash: 9947d57e4bf35ef0a3409db58f2c663959c2dd49
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: dba75d5178f3c4a879ae2cdc9694697df45f6b8b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579122"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624441"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>Hinzufügen Ihres Unternehmensbrandings zur Anmeldeseite
 
@@ -50,3 +50,9 @@ Die folgende Abbildung zeigt, welche Teile der Anmeldeseite in Azure geändert w
 Zusätzlich zur Anmeldeseite können Sie die Zugriffsbereichsseite in Azure anpassen.
   
 Wenn Sie Branding hinzufügen möchten, sollten Sie die Anpassungsoptionen in der Azure-Inhaltsgruppe ausprobieren: [Hinzufügen Ihres Unternehmensbranding zur Anmelde- und Zugriffsbereichsseite](/azure/active-directory/fundamentals/customize-branding)
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Anpassen des Microsoft 365 Design für Ihre Organisation](customize-your-organization-theme.md) (Artikel)\
+[Unterschied zwischen dem Setup-Assistenten und der Setupseite](o365-setup-wizard-and-setup-page.md) (Artikel)\
+[Einrichten mobiler Geräte für Microsoft 365 für Geschäftsbenutzer](../../business/set-up-mobile-devices.md) (Video)

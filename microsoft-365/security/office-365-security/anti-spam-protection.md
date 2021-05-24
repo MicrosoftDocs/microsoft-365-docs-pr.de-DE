@@ -21,12 +21,12 @@ ms.custom:
 description: Administratoren können mehr über die Antispameinstellungen und -filter erfahren, mit deren Hilfe Spam in Exchange Online Protection (EOP) verhindert wird.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e6a4113925956c67e80a5239b8f9823acaf7f75b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 52e891a86e75309dadd445736738a3f25584823e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538315"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624861"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Antispamschutz in EOP
 
@@ -60,7 +60,7 @@ Die Antispameinstellungen in EOP werden aus den folgenden Technologien hergestel
 - **Spamfilterung (Inhaltsfilterung):** EOP verwendet die Spamfilterungs-Urteile **Spam,** Spam mit hoher Vertrauen, Massen-E-Mails, **Phishing-E-Mails** und **Phishing-E-Mails** mit hoher Vertrauenssicherheit, um Nachrichten zu klassifizieren.  Sie können die Aktionen basierend auf diesen Urteilen konfigurieren und die Benachrichtigungsoptionen für Endbenutzer für Nachrichten konfigurieren, die in Quarantäne statt zugestellt wurden. Weitere Informationen finden Sie unter [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
   > [!NOTE]
-  > Standardmäßig ist die Spamfilterung so konfiguriert, dass Nachrichten, die als Spam markiert wurden, an den Junk-E-Mail-Ordner des Empfängers gesendet werden. In Hybridumgebungen, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie jedoch zwei Nachrichtenflussregeln (auch als Transportregeln bezeichnet) in Ihrer lokalen Exchange-Organisation konfigurieren, um die EOP-Spamheader zu erkennen, die Nachrichten hinzugefügt werden. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zum Verschieben von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+  > Standardmäßig ist die Spamfilterung so konfiguriert, dass Nachrichten, die als Spam markiert wurden, an den Junk-E-Mail-Ordner des Empfängers gesendet werden. In Hybridumgebungen, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie jedoch zwei Nachrichtenflussregeln (auch als Transportregeln bezeichnet) in Ihrer lokalen Exchange-Organisation konfigurieren, um die EOP-Spamheader zu erkennen, die Nachrichten hinzugefügt werden. Weitere Informationen finden Sie unter [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
 - **Filterung ausgehender** Spamnachrichten: EOP überprüft außerdem, ob Ihre Benutzer keine Spamnachrichten senden, weder in Inhalten ausgehender Nachrichten noch durch Überschreiten der Grenzwerte für ausgehende Nachrichten. Weitere Informationen finden Sie unter [Configure outbound spam filtering in Microsoft 365](configure-the-outbound-spam-policy.md).
 
@@ -100,7 +100,7 @@ Hier sind einige bewährte Methoden, die für beide Szenarien gelten:
 
 - **Abmelden von Massen-E-Mails** Wenn die Nachricht etwas war, für das der Benutzer sich angemeldet hat (Newsletter, Produktankündigungen usw.) und einen Abmeldelink von einer seriösen Quelle enthält, sollten Sie ihn bitten, sich einfach abzumelden.
 
-- Eigenständiges **EOP:** Erstellen von Nachrichtenflussregeln im lokalen Exchange für EOP-Spamfilterungs-Urteile: In eigenständigen EOP-Umgebungen, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet) in der lokalen Exchange konfigurieren, um das EOP-Spamfilter-Urteil zu übersetzen, damit die Junk-E-Mail-Regel die Nachricht in den Junk-E-Mail-Ordner verschieben kann. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zum Verschieben von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+- EigenständigeS **EOP:** Erstellen von Nachrichtenflussregeln im lokalen Exchange für EOP-Spamfilterungs-Urteile: In EOP-Umgebungen, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet) in der lokalen Exchange konfigurieren, um das EOP-Spamfilter-Urteil zu übersetzen, damit die Junk-E-Mail-Regel die Nachricht in den Junk-E-Mail-Ordner verschieben kann. Weitere Informationen finden Sie unter [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
 ### <a name="prevent-good-email-from-being-identified-as-spam"></a>Verhindern, dass gute E-Mails als Spam identifiziert werden
 
@@ -118,7 +118,7 @@ Im Folgenden finden Sie einige Schritte, mit deren Hilfe Sie falsch positive Erg
 
 - Überprüfen Sie, ob sich Benutzer innerhalb der Sende- und **Empfangsgrenzwerte** befinden, wie unter [Empfangen](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#receiving-and-sending-limits) und Senden in der Exchange Online beschrieben.
 
-- **Eigenständiges EOP:** Verzeichnissynchronisierung verwenden: Wenn Sie eigenständiges EOP zum Schutz Ihrer lokalen Exchange-Organisation verwenden, sollten Sie Benutzereinstellungen mit dem Dienst mithilfe der Verzeichnissynchronisierung synchronisieren. Auf diese Weise wird sichergestellt, dass die Liste der sicheren Absender des Benutzers von EOP berücksichtigt wird. Weitere Informationen finden Sie unter [Verwalten von E-Mail-Benutzern durch Verzeichnissynchronisierung](manage-mail-users-in-eop.md#use-directory-synchronization-to-manage-mail-users).
+- **Eigenständiges EOP:** Verzeichnissynchronisierung verwenden: Wenn Sie eigenständiges EOP zum Schutz Ihrer lokalen Exchange-Organisation verwenden, sollten Sie Benutzereinstellungen mit dem Dienst mithilfe der Verzeichnissynchronisierung synchronisieren. Auf diese Weise wird sichergestellt, dass die Liste der sicheren Absender des Benutzers von EOP berücksichtigt wird. Weitere Informationen finden Sie unter [Verwalten von E-Mail-Benutzern durch Verzeichnissynchronisierung](/exchange/standalone-eop/manage-mail-users-in-eop#synchronize-directories-with-azure-active-directory-connect-aad-connect).
 
 ## <a name="anti-spam-legislation"></a>Antispamgesetze
 

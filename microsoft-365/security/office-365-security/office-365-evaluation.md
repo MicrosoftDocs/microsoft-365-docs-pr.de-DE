@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 005c1f6ad7806c8d1ba1d38e4e82edd25034075d
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: ab0f05c45afa6a4ad66c9fc1bf58e69505632171
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51942993"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624993"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Bewerten von Microsoft Defender für Office 365
 
@@ -50,7 +50,7 @@ Im Auswertungsmodus werden richtlinien für sichere [Anlagen,](safe-attachment
 
 Im Rahmen des Setups wird im Evaluierungsmodus auch die erweiterte [Filterung für Connectors konfiguriert.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Es verbessert die Filtergenauigkeit, indem IP-Adresse und Absenderinformationen beibehalten werden, die andernfalls verloren gehen, wenn E-Mails ein E-Mail-Sicherheitsgateway (E-Mail Security Gateway, ESG) vor Defender for Office 365. Die erweiterte Filterung für Connectors verbessert außerdem die Filtergenauigkeit für Ihre Exchange Online Protection (EOP)-Antispam- und Antiphishingrichtlinien.
 
-Aktivierte erweiterte Filterung für Connectors verbessert die Filtergenauigkeit, kann jedoch die Zuleitung für bestimmte Nachrichten ändern, wenn Sie eine ESG vor Defender for Office 365 haben und die EOP-Filterung derzeit nicht umgehen. Die Auswirkungen sind auf #A0 beschränkt. Die im Rahmen der Evaluierung eingerichteten MDO-Richtlinien werden im Nichtdurchsetzungsmodus erstellt. Um potenzielle Produktionsauswirkungen zu minimieren, können Sie die EOP-Filterung umgehen, indem Sie eine Transportregel erstellen, um die Spamsicherheitsstufe (Spam Confidence Level, SCL) auf -1 zu setzen. Weitere Informationen finden Sie unter Use [the EAC to create a mail flow rule that sets the SCL of a](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)   message.
+Aktivierte erweiterte Filterung für Connectors verbessert die Filtergenauigkeit, kann jedoch die Zuleitung für bestimmte Nachrichten ändern, wenn Sie eine ESG vor Defender for Office 365 haben und die EOP-Filterung derzeit nicht umgehen. Die Auswirkungen sind auf #A0 beschränkt. Die im Rahmen der Evaluierung eingerichteten MDO-Richtlinien werden im Nichtdurchsetzungsmodus erstellt. Um potenzielle Produktionsauswirkungen zu minimieren, können Sie die EOP-Filterung umgehen, indem Sie eine Transportregel erstellen, um die Spamsicherheitsstufe (Spam Confidence Level, SCL) auf -1 zu setzen. Weitere Informationen finden Sie unter Use [the EAC to create a mail flow rule that sets the SCL of a](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)   message.
 
 Wenn der Auswertungsmodus eingerichtet ist, wird täglich ein Bericht mit bis zu 90 Tagen Daten aktualisiert, die die Nachrichten quantifizieren, die blockiert worden wären, wenn die Richtlinien implementiert wurden (z. B. löschen, an Junk senden, Quarantäne). Berichte werden für alle Defender-Office 365 und EOP-Erkennungen generiert. Sie werden pro Erkennungstechnologie (z. B. Identitätswechsel) aggregiert und können nach Zeitbereich gefiltert werden. Darüber hinaus können Nachrichtenberichte bei Bedarf erstellt werden, um benutzerdefinierte Pivots zu erstellen oder nachrichten mit dem Threat Explorer zu vertiefen.
 

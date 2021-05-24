@@ -30,14 +30,16 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Ermitteln Sie die Setupschritte für Microsoft 365 Business Premium, einschließlich hinzufügen einer Domäne und Benutzer, Einrichten von Sicherheitsrichtlinien und vielem mehr.
-ms.openlocfilehash: 37607b483686fc12ac6253ae9f693ec86c073c4e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 3e15f16db2a233d2e11d444600398102b075932d
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245042"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624387"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Einrichten Microsoft 365 Business Premium im Setup-Assistenten
+
+## <a name="watch-overview-of-microsoft-365-setup"></a>Watch: Overview of Microsoft 365 setup
 
 Sehen Sie sich dieses Video an, um eine Übersicht über Microsoft 365 Business Premium finden.<br><br>
 
@@ -131,6 +133,6 @@ Informationen zum Office auf mobilen iOS- oder Android-Geräten finden Sie unter
 
 Sie können die Office auch einzeln installieren. Anweisungen [finden Office Auf einem PC oder Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658) installieren.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Microsoft 365 für Unternehmen-Schulungsvideos](../business-video/index.yml)
+[Microsoft 365 Für Unternehmen Schulungsvideos](../business-video/index.yml) (Linkseite)

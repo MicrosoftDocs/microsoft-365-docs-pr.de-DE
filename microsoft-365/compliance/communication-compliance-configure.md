@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3e84c3266dd802fb6cab12db0c20773838b4e2a9
-ms.sourcegitcommit: b169f6ad3e44a7fcebf77f43be9eb5edd84ea5ef
+ms.openlocfilehash: 60b9577c2a42ef080fa6a734e0207225bf197cab
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52077188"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624269"
 ---
 # <a name="get-started-with-communication-compliance"></a>Erste Schritte mit der Kommunikationscompliance
 
@@ -202,7 +202,7 @@ Weitere Informationen zum Konfigurieren von Yammer im systemeigenen Modus finden
     - Wählen Sie ein eingeschränktes Bedingungsfeld aus, in der Regel ein vertraulicher Informationstyp oder ein Schlüsselwortwörterbuch, das auf die Richtlinie angewendet werden soll.
 
     >[!NOTE]
-    >Wenn Sie die optische Zeichenerkennung [(Optical Character Recognition, OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) aktivieren möchten, um eingebettete oder angefügte Bilder in Nachrichten auf gedruckten oder handschriftlichen Text zu überprüfen, der richtlinienbedingungen entspricht, wählen Sie Richtlinienbedingungen anpassen und Prozentsatz anpassen aus, und aktivieren Sie zur Auswertung gedruckten oder handschriftlichen Text aus Bildern  >   extrahieren. 
+    >Wenn Sie die optische Zeichenerkennung [(Optical Character Recognition, OCR)](communication-compliance-feature-reference.md#optical-character-recognition-ocr) aktivieren möchten, um eingebettete oder angefügte Bilder in Nachrichten auf gedruckten oder handschriftlichen Text zu überprüfen, der richtlinienbedingungen entspricht, wählen Sie Richtlinienbedingungen anpassen und Prozentsatz anpassen aus, und aktivieren Sie zur Auswertung gedruckten oder handschriftlichen Text aus Bildern  >   extrahieren. 
 
     Wenn Sie den Richtlinien-Assistenten zum Erstellen einer benutzerdefinierten Richtlinie verwenden möchten, werden Sie:
 
@@ -222,7 +222,7 @@ Weitere Informationen zum Konfigurieren von Yammer im systemeigenen Modus finden
 
     - Wählen Sie aus, ob Sie Klassifikatoren aktivieren möchten. Klassifikatoren können unangemessene Sprache und Bilder erkennen, die im Textkörper von E-Mail-Nachrichten oder anderen Texttypen gesendet oder empfangen wurden. Sie können die folgenden integrierten Klassifizierungen auswählen: *Bedrohung,* *Profanität,* gezielte *Belästigung,* Bilder für *Erwachsene,* *Rassische* Bilder und *Gory-Bilder.*
 
-    - Aktivieren [Sie die optische Zeichenerkennung (OCR),](communication-compliance-feature-reference.md#optical-character-recognition-ocr-preview) um eingebettete oder angefügte Bilder in Nachrichten auf gedruckten oder handschriftlichen Text zu überprüfen, der Richtlinienbedingungen entspricht. Für benutzerdefinierte Richtlinien müssen eine oder mehrere bedingte Einstellungen, die Text, Schlüsselwörter, Klassifizierungen oder typen vertraulicher Informationen zugeordnet sind, in der Richtlinie konfiguriert werden, um die Auswahl der Überprüfung der optischen Zeichenerkennung zu aktivieren.
+    - Aktivieren [Sie die optische Zeichenerkennung (OCR),](communication-compliance-feature-reference.md#optical-character-recognition-ocr) um eingebettete oder angefügte Bilder in Nachrichten auf gedruckten oder handschriftlichen Text zu überprüfen, der Richtlinienbedingungen entspricht. Für benutzerdefinierte Richtlinien müssen eine oder mehrere bedingte Einstellungen, die Text, Schlüsselwörter, Klassifizierungen oder typen vertraulicher Informationen zugeordnet sind, in der Richtlinie konfiguriert werden, um die Auswahl der Überprüfung der optischen Zeichenerkennung zu aktivieren.
 
     - Definieren Sie den Prozentsatz der zu überprüfende Kommunikation.
 

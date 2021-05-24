@@ -20,12 +20,12 @@ ms.custom:
 description: Administratoren erfahren, wie Sie den Angriffssimulator verwenden, um simulierte Phishing- und Kennwortangriffe in ihren organisationen Microsoft 365 E5 oder Microsoft Defender for Office 365 Plan 2 ausführen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 637e84281b85e8c859207ae81342a3c6ab3d00be
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 73ad3501ed9818261c9fbec6ba12b4dc884da84f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204215"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624825"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Angriffssimulator in Microsoft Defender für Office 365
 
@@ -43,7 +43,7 @@ Wenn Ihre Organisation über Microsoft Defender für Office 365 Plan 2 verfügt,
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Zum Öffnen des Security & Compliance Centers wechseln Sie zu <https://protection.office.com/>. Der Angriffssimulator ist unter **Threat Management** \> **Attack simulator verfügbar.** Wechseln Sie direkt zum Angriffssimulator, öffnen Sie <https://protection.office.com/attacksimulator> .
+- Zum Öffnen des Security & Compliance Centers wechseln Sie zu <https://protection.office.com/>. Der Angriffssimulator ist unter **Threat Management** \> **Attack simulator verfügbar.** Öffnen Sie , um direkt zum Angriffssimulator zu <https://protection.office.com/attacksimulator> wechseln.
 
 - Weitere Informationen zur Verfügbarkeit von Attack Simulator für verschiedene Microsoft 365 finden Sie unter [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
 

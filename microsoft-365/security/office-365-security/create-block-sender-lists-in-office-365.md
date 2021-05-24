@@ -14,12 +14,12 @@ search.appverid:
 description: Administratoren können sich über die verfügbaren und bevorzugten Optionen zum Blockieren eingehender Nachrichten in EOP Exchange Online Protection (EOP) informieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fa2a5e0c71f14838dc8446431f5ea02a535fb787
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: c844378a19ba7995cbd616f615e8a84994f9bf26
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331454"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624082"
 ---
 # <a name="create-blocked-sender-lists-in-eop"></a>Erstellen blockierter Absenderlisten in EOP
 
@@ -78,7 +78,7 @@ Die maximale Grenze für diese Listen beträgt ca. 1.000 Einträge.
 
 Wenn Sie Nachrichten blockieren müssen, die an bestimmte Benutzer oder die gesamte Organisation gesendet werden, können Sie Nachrichtenflussregeln verwenden. Nachrichtenflussregeln sind flexibler als Blockierung von Absenderlisten oder blockierten Absenderdomänenlisten, da sie auch nach Schlüsselwörtern oder anderen Eigenschaften in den unerwünschten Nachrichten suchen können.
 
-Unabhängig von den Bedingungen oder Ausnahmen, die Sie zum Identifizieren der Nachrichten verwenden, konfigurieren Sie die Aktion so, dass die Spamsicherheitsstufe (Spam Confidence Level, SCL) der Nachricht auf 9 festgelegt wird, wodurch die Nachricht als Spam mit hoher Sicherheit markiert **wird.** Weitere Informationen finden Sie unter [Verwenden von Nachrichtenflussregeln zum Festlegen der SCL in Nachrichten](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+Unabhängig von den Bedingungen oder Ausnahmen, die Sie zum Identifizieren der Nachrichten verwenden, konfigurieren Sie die Aktion so, dass die Spamsicherheitsstufe (Spam Confidence Level, SCL) der Nachricht auf 9 festgelegt wird, wodurch die Nachricht als Spam mit hoher Sicherheit markiert **wird.** Weitere Informationen finden Sie unter [Verwenden von Nachrichtenflussregeln zum Festlegen der SCL in Nachrichten](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 > [!IMPORTANT]
 > Es ist einfach, Regeln zu erstellen, die zu *aggressiv* sind. Daher ist es wichtig, dass Sie nur die Nachrichten identifizieren, die Sie blockieren möchten, indem Sie ganz bestimmte Kriterien verwenden. Aktivieren Sie außerdem die Überwachung der Regel, und testen Sie die Ergebnisse der Regel, um sicherzustellen, dass alles wie erwartet funktioniert.

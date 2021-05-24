@@ -13,15 +13,15 @@ metadata:
   ms.assetid: d6a87ce8-2c22-433a-b430-5eab14f6afdc
   ms.custom:
   - seo-marvel-apr2020
-  description: Administratoren können häufig gestellte Fragen und Antworten zu delegierten Verwaltungsaufgaben in Microsoft 365 für Microsoft-Partner und -Händler anzeigen.
+  description: Administratoren können häufig gestellte Fragen und Antworten zu delegierten Verwaltungsaufgaben in Microsoft 365 für Microsoft-Partner und -Wiederverkäufer anzeigen.
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: 836e52139ef2e6191bda26d6fdb92da521dff6bd
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: b62c1d53d4b2a482aeb91cea147ed9feaa4027c4
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52334077"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52624089"
 title: Häufig gestellte Fragen zur delegierten Verwaltung
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -34,15 +34,15 @@ sections:
   questions:
   - question: >
       Ich bin Vertriebspartner und muss meine Kunden mandanten verwalten. Wie funktioniert das?
-    answer: "Wenn Sie ein Microsoft-Partner oder -Vertriebspartner sind und sich als Microsoft-Berater angemeldet haben, können Sie delegierte Verwaltungsfunktionen in der Microsoft 365-Organisation Ihres Kunden anfordern. \n\nMit der delegierten Verwaltung können Sie Microsoft 365 (einschließlich EOP-Einstellungen) verwalten, als wären Sie ein Administrator in dieser Organisation. Die Schritte zum Konfigurieren der delegierten Verwaltung werden in der folgenden Liste beschrieben:\n\n1. Registrieren Sie sich als [Microsoft Office 365 Advisor](https://partner.microsoft.com/?cloudbenefits).\n\n2. Registrieren Sie sich für delegierte Verwaltung. Bevor Sie mit der Verwaltung des Mandanten eines Kunden beginnen können, müssen sie Sie als delegierter Administrator autorisieren. Um die Genehmigung des Kunden einzuholen, [senden Sie ihm zuerst ein Angebot für die delegierte Verwaltung](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e). Sie können Ihren Kunden auch zu einem späteren Zeitpunkt eine delegierte Verwaltung anbieten.\n\n3. Erstellen Sie das delegierte Administratorkonto mithilfe der Schritte unter Hinzufügen, Ändern oder [Löschen eines Abonnementberaterpartners.](../../admin/misc/add-partner.md)\n\nBesuchen [Sie Partner: Erstellen Sie Ihr Geschäfts- und Verwaltungspartnerabonnement,](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) um weitere Informationen zum Einrichten einer delegierten Verwaltung zu erhalten.\n"
+    answer: "Wenn Sie ein Microsoft-Partner oder -Vertriebspartner sind und sich als Microsoft-Berater angemeldet haben, können Sie delegierte Verwaltungsfunktionen in der Organisation Ihres Kunden Microsoft 365 anfordern. \n\nMit der delegierten Verwaltung können Sie Microsoft 365 (einschließlich EOP-Einstellungen) verwalten, als wären Sie ein Administrator in dieser Organisation. Die Schritte zum Konfigurieren der delegierten Verwaltung werden in der folgenden Liste beschrieben:\n\n1. Registrieren Sie sich als [Microsoft Office 365 Advisor](https://partner.microsoft.com/?cloudbenefits).\n\n2. Registrieren Sie sich für delegierte Verwaltung. Bevor Sie mit der Verwaltung des Mandanten eines Kunden beginnen können, müssen sie Sie als delegierter Administrator autorisieren. Um die Genehmigung des Kunden einzuholen, [senden Sie ihm zuerst ein Angebot für die delegierte Verwaltung](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e). Sie können Ihren Kunden auch zu einem späteren Zeitpunkt eine delegierte Verwaltung anbieten.\n\n3. Erstellen Sie das delegierte Administratorkonto mithilfe der Schritte unter Hinzufügen, Ändern oder [Löschen eines Abonnementberaterpartners.](../../admin/misc/add-partner.md)\n\nBesuchen [Sie Partner: Erstellen Sie Ihr Geschäfts- und Verwaltungspartnerabonnement,](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) um weitere Informationen zum Einrichten einer delegierten Verwaltung zu erhalten.\n"
   - question: >
       Ich bin Ein Kunde, kein Händler. Wie kann ein delegierter Administrator für meine Untertenanten eingerichtet werden?
     answer: >
-      Delegierte Verwaltung ist nur für Händler und Partner verfügbar. Es gibt jedoch ein PowerShell-Beispielskript, mit dem Sie Richtlinien auf Ihre Untertenanten (Unternehmen) anwenden können. Weitere Informationen finden Sie unter [Beispielskript für das Anwenden von EOP-Einstellungen für mehrere Mandanten](sample-script-for-applying-eop-settings-to-multiple-tenants.md).
+      Delegierte Verwaltung ist nur für Händler und Partner verfügbar. Es gibt jedoch ein PowerShell-Beispielskript, mit dem Sie Richtlinien auf Ihre Untertenanten (Unternehmen) anwenden können. Weitere Informationen finden Sie unter [Beispielskript für das Anwenden von EOP-Einstellungen für mehrere Mandanten](/exchange/standalone-eop/sample-script-standalone-eop-settings-to-multiple-tenants).
   - question: >
       Kann ich verhindern, dass mein Untergeordneter Administrator meine Richtlinie ändert?
     answer: >
       Nein. Microsoft 365 verfügt derzeit nicht über diese Funktion.
   - question: >
       Kann ich eine konsolidierte Berichterstellung für alle meine Untertenanten erhalten?
-    answer: Konsolidierte Berichte in den von Ihnen verwalteten Unternehmen sind in Microsoft 365 Admin Center-Berichten nicht verfügbar. Sie können jedoch Berichte mithilfe von [Microsoft Graph erhalten.](/graph/overview)
+    answer: Die konsolidierte Berichterstellung in den von Ihnen verwalteten Unternehmen ist in Microsoft 365 Admin Center-Berichten nicht verfügbar. Sie können jedoch Berichte mithilfe von [Microsoft Graph.](/graph/overview)

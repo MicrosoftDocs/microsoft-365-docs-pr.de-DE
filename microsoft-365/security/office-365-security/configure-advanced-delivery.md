@@ -17,12 +17,12 @@ ms.custom: ''
 description: Administratoren können erfahren, wie Sie die erweiterte Zustellungsrichtlinie in Exchange Online Protection (EOP) verwenden, um Nachrichten zu identifizieren, die nicht in bestimmten unterstützten Szenarien gefiltert werden sollten (Phishingsimulationen von Drittanbietern und Nachrichten, die an Sicherheitsvorgänge (SecOps)-Postfächer übermittelt werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8bebc094b56a20a43f92d1acf8d374110de43d71
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 0e4e230fdca7fe29fc1c7a1bc68085454ba883b9
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594121"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624789"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Konfigurieren der Übermittlung von Phishingsimulationen von Drittanbietern an Benutzer und ungefilterte Nachrichten an SecOps-Postfächer
 
@@ -34,7 +34,7 @@ ms.locfileid: "52594121"
 > [!NOTE]
 > Das in diesem Artikel beschriebene Feature befindet sich in Preview, ist nicht für alle verfügbar und kann geändert werden.
 
-Um Ihre Organisation standardmäßig zu [schützen,](secure-by-default.md)Exchange Online Protection (EOP) keine sicheren Listen oder Filterumgehungen für Nachrichten zu, die zu Schadsoftware oder phishingverdingen mit hoher Vertrauenheit führen. Es gibt jedoch bestimmte Szenarien, in denen die Zustellung ungefilterter Nachrichten erforderlich ist. Zum Beispiel:
+Um Ihre Organisation standardmäßig zu [schützen,](secure-by-default.md)Exchange Online Protection (EOP) keine sicheren Listen oder Filterumgehungen für Nachrichten zu, die zu Schadsoftware oder phishingverdingen mit hoher Vertrauenheit führen. Es gibt jedoch bestimmte Szenarien, in denen die Zustellung ungefilterter Nachrichten erforderlich ist. Beispiel:
 
 - **Phishingsimulationen von** Drittanbietern: Simulierte Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren, bevor sich ein tatsächlicher Angriff auf Ihre Organisation aus wirkt.
 - **Sicherheitsvorgänge (SecOps)-Postfächer:** Dedizierte Postfächer, die von Sicherheitsteams zum Sammeln und Analysieren ungefilterter Nachrichten (sowohl gut als auch schlecht) verwendet werden.
@@ -107,6 +107,6 @@ Zusätzlich zu den beiden Szenarien, die Ihnen die erweiterte Übermittlungsrich
 
 - **Filter von** Drittanbietern: Wenn der MX-Eintrag Ihrer Domäne nicht auf Office 365 (Nachrichten werden zuerst an einen anderen Ort geroutet) angezeigt wird, ist die Sicherheit standardmäßig [](secure-by-default.md) *nicht verfügbar.* 
 
-  Verwenden Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet), um die Microsoft-Filterung für Nachrichten zu umgehen, die bereits von Drittanbietern ausgewertet wurden. Weitere Informationen finden Sie unter Use mail flow rules to set [the SCL in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+  Verwenden Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet), um die Microsoft-Filterung für Nachrichten zu umgehen, die bereits von Drittanbietern ausgewertet wurden. Weitere Informationen finden Sie unter Use mail flow rules to set [the SCL in messages](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl.md).
 
 - **Falsch positive** Ergebnisse werden überprüft: Möglicherweise möchten Sie vorübergehend zulassen, dass [](admin-submission.md) bestimmte Nachrichten, die noch von Microsoft über Administratorübermittlungen analysiert werden, bekannte gute Nachrichten melden, die fälschlicherweise als schlecht für Microsoft markiert werden (falsch positive Ergebnisse). Wie bei allen Außerkraftsetzungen wird dringend empfohlen, **_diese_** Zertifikate vorübergehend zu verwenden.

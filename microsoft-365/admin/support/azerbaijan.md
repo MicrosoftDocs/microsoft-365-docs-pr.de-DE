@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 726af48f61a279ec29ce771b9be97f75cfa74f62
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 4762942ee7340eead0f1e025de7ace61aa00cfca
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296587"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624301"
 ---
 # <a name="contact-support-for-azerbaijan"></a>Kontaktieren des Support für Aserbaidschan
 
@@ -26,9 +26,9 @@ ms.locfileid: "52296587"
 ## <a name="phone-number"></a>Telefonnummer
 01 24 37 35 55
 
-Option 9 auswählen
+Drücken Sie 2 für Unternehmen
 
-Eingabecode 7706
+Drücken Sie 1 für Microsoft 365
 
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:

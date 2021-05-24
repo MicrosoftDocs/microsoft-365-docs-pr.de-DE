@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 3df8fbf20fd00bd584af2fd329949939433a19eb
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 87f5e414a13d966ba2fbb30d84d7d4adae7a1d13
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583484"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624349"
 ---
 # <a name="communication-compliance-feature-reference"></a>Referenz zu Kommunikationskonformitätsfeatures
 
@@ -187,9 +187,9 @@ Die integrierten trainierbaren und globalen Klassifikatoren bieten keine vollst�
 
 Informationen zu trainierbaren Klassifizierungen in Microsoft 365 finden Sie unter [Erste Schritte mit trainierbaren Klassifizierungen](classifier-get-started-with.md).
 
-### <a name="optical-character-recognition-ocr-preview"></a>Optische Zeichenerkennung (OCR) (Vorschau)
+### <a name="optical-character-recognition-ocr"></a>Optical Character Recognition (OCR; optische Zeichenerkennung)
 
-Konfigurieren Sie integrierte oder benutzerdefinierte Richtlinien für die Kommunikationskonformität, um gedruckten oder handschriftlichen Text aus Bildern zu überprüfen und zu identifizieren, die in Ihrer Organisation möglicherweise unangemessen sind. Integrierte Azure Cognitive Services und optische Überprüfungsunterstützung zum Identifizieren von Text in Bildern helfen Analysten und Ermittlern dabei, Fälle zu erkennen und zu handeln, bei denen unangemessenes Verhalten in der Kommunikation, die in erster Linie nicht textlich ist, übersehen werden kann.
+Konfigurieren Sie integrierte oder benutzerdefinierte Richtlinien für die Kommunikationskonformität, um gedruckten oder handschriftlichen Text aus Bildern zu überprüfen und zu identifizieren, die in Ihrer Organisation möglicherweise unangemessen sind. Integrierte [Azure Cognitive Services](/azure/cognitive-services/computer-vision/overview-ocr) und optische Überprüfungsunterstützung zum Identifizieren von Text in Bildern helfen Analysten und Ermittlern dabei, Fälle zu erkennen und zu handeln, bei denen unangemessenes Verhalten in der Kommunikation, die in erster Linie nicht textlich ist, übersehen werden kann.
 
 Sie können die optische Zeichenerkennung (Optical Character Recognition, OCR) in neuen Richtlinien aus Vorlagen, benutzerdefinierten Richtlinien aktivieren oder vorhandene Richtlinien aktualisieren, um die Unterstützung für die Verarbeitung eingebetteter Bilder und Anlagen zu erweitern. Wenn sie in einer Richtlinie aktiviert ist, die aus einer Richtlinienvorlage erstellt wurde, wird die automatische Überprüfung für eingebettete oder angefügte Bilder in E-Mail- und Microsoft Teams unterstützt. Für benutzerdefinierte Richtlinien müssen eine oder mehrere bedingte Einstellungen, die Schlüsselwörtern, integrierten Klassifizierungen oder typen vertraulicher Informationen zugeordnet sind, in der Richtlinie konfiguriert werden, um die Auswahl der OCR-Überprüfung zu aktivieren.
 
@@ -232,7 +232,7 @@ In der folgenden Tabelle werden weitere Informationen zu den einzelnen Bedingung
 Jedes Wort, das Sie eingeben und mit einem Komma trennen, wird separat angewendet (nur ein Wort muss gelten, damit die Richtlinienbedingung auf die E-Mail oder Anlage angewendet wird). Verwenden wir beispielsweise die Bedingung **Message** enthält eines dieser Wörter mit den Schlüsselwörtern "Banker", "vertraulich" und "Insiderhandel" getrennt durch ein Komma (Banker, vertraulich, Insiderhandel). Die Richtlinie gilt für alle Nachrichten, die das Wort "Banker", "vertraulich" oder den Ausdruck "Insiderhandel" enthalten. Nur eins der Wörter oder einer der Ausdrücke muss vorkommen, damit die Richtlinienbedingung zutrifft. Wörter in der Nachricht oder Anlage müssen genau mit dem übereinstimmen, was Sie eingeben.
 
 >[!IMPORTANT]
->Beim Importieren einer benutzerdefinierten Wörterbuchdatei muss jedes Wort oder jeder Ausdruck durch eine Wagenrücklauf- und eine separate Zeile getrennt werden. <br> Zum Beispiel: <br><br>
+>Beim Importieren einer benutzerdefinierten Wörterbuchdatei muss jedes Wort oder jeder Ausdruck durch eine Wagenrücklauf- und eine separate Zeile getrennt werden. <br> Beispiel: <br><br>
 >*Banker* <br>
 >*vertraulich* <br>
 >*Insiderhandel*
@@ -477,6 +477,17 @@ Das **Berichtsdashboard** enthält die folgenden Berichts-Widgets und detaillier
     - Fall erstellt
 
     Verwenden Sie *die Option Export,* um eine .csv mit den Berichtsdetails zu erstellen.
+
+- **Detaillierter Bericht** über vertrauliche Informationen pro Standort (Vorschau): Überprüfen und Exportieren von Informationen zur Erkennung vertraulicher Informationstypen und der zugehörigen Quellen in Kommunikationskonformitätsrichtlinien. Enthält die Gesamtsumme und die spezifische Aufschlüsselung der Instanzen des Typs vertraulicher Informationen in den in Ihrer Organisation konfigurierten Quellen. Beispiele sind:
+
+    - **E-Mail:** Typen vertraulicher Informationen, die in Exchange erkannt werden.
+    - **Teams**: Typen vertraulicher Informationen, die in Microsoft Teams und Chatnachrichten erkannt werden.
+    - **Skype for Business**: Typen vertraulicher Informationen, die in Skype unternehmenskommunikation erkannt werden.
+    - **Yammer**: Typen vertraulicher Informationen, die in Yammer, Beiträgen, Chats und Antworten erkannt werden.
+    - **Drittanbieterquellen:** Typen vertraulicher Informationen, die für Aktivitäten erkannt werden, die mit in Ihrer Organisation konfigurierten Connectors von Drittanbietern verknüpft sind. Wenn Sie die Aufschlüsselung von Drittanbieterquellen für einen bestimmten vertraulichen Informationstyp im Bericht anzeigen, zeigen Sie mit der Maus auf den Wert für den vertraulichen Informationstyp in der Quellspalte des Drittanbieters.
+    - **Sonstige**: Typen vertraulicher Informationen, die für die interne Systemverarbeitung verwendet werden. Das Auswählen oder Deaktivieren dieser Quelle für den Bericht wirkt sich nicht auf Werte aus.
+
+    Verwenden Sie *die Option Export,* um eine .csv mit den Berichtsdetails zu erstellen. Die Werte für jede Drittanbieterquelle werden in separaten Spalten in der .csv angezeigt.
 
 ## <a name="audit"></a>Überwachung
 

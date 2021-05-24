@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Erfahren Sie, wie Sie Windows AutoPilot verwenden, um neue Windows 10 für Ihr Unternehmen zu einrichten, damit sie für die Verwendung durch Mitarbeiter bereit sind.
-ms.openlocfilehash: cd8777e6ae2e395506d2bf308c99309de1e24805
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: cc5495f42214b222a70b281a713be782b1bf5c4f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578525"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623671"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Verwenden der schrittweisen Anleitung zum Hinzufügen von AutoPilot-Geräten und -Profilen
 
@@ -94,3 +94,8 @@ Wenn Sie noch keine Gerätegruppen oder Profile erstellt haben, können Sie am b
     Wählen Sie **Weiter** aus.
     
 6. **Sie sind fertig,** gibt an, dass das profil, das Sie erstellt (oder ausgewählt) haben, auf die Gerätegruppe angewendet wird, die Sie erstellt haben, indem Sie die Liste der Geräte hochladen. Die Einstellungen werden wirksam, wenn sich die Gerätebenutzer als Nächstes anmelden. Wählen Sie **Schließen** aus.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Informationen zu AutoPilot-Profileinstellungen](autopilot-profile-settings.md) (Artikel)\
+[Optionen zum Schutz Ihrer Geräte und App-Daten](../admin/devices/choose-device-security.md) (Artikel)

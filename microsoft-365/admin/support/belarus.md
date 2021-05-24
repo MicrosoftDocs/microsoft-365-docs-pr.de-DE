@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c536987035743f9a640d427375efaedfce21fbb8
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 455959c8b11a3cfaf293052d2c23251771ac7456
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52296551"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623577"
 ---
 # <a name="contact-support-for-belarus"></a>Kontaktieren des Support für Belarus
 
@@ -26,9 +26,9 @@ ms.locfileid: "52296551"
 ## <a name="phone-number"></a>Telefonnummer
 8 820 0071 0003
 
-Option 9 auswählen
+Drücken Sie 2 für Unternehmen
 
-Eingabecode 7707
+Drücken Sie 1 für Microsoft 365
 
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:

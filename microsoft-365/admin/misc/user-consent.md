@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Erfahren Sie mehr über die Zustimmung des Benutzers zu Apps und darüber, wie Sie sie aktivieren, damit Apps von Drittanbietern auf die Benutzerinformationen Microsoft 365 können.
-ms.openlocfilehash: 1f6f08161d6dd85964f07ec4d48f9f2cc23a1ead
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b8f65b50e50b0e0b4d978388463bbd380ca60d4e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914558"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624501"
 ---
 # <a name="managing-user-consent-to-apps-in-microsoft-365"></a>Verwalten der Zustimmung des Benutzers zu Apps in Microsoft 365
 
@@ -44,9 +44,8 @@ Hier erfahren Sie, wie Sie die Zustimmung des Benutzers zu Apps aktivieren oder 
 
 2. Wählen Sie **auf der** Seite Benutzer-Zustimmung zu Apps die Option aus, um die Zustimmung des Benutzers ein- oder auszuschalten.
 
-## <a name="more-info"></a>Weitere Informationen
+## <a name="related-content"></a>Verwandte Inhalte 
 <a name="__toc379982114"> </a>
 
-Informationen zum Konfigurieren Ihrer Zustimmungseinstellungen in Azure Active Directory finden Sie unter [Configure the admin consent workflow](/azure/active-directory/manage-apps/configure-admin-consent-workflow).
-
-Weitere Informationen zum Verwalten der Zustimmung des Benutzers zu Apps finden Sie unter [Managing consent to applications und evaluating consent requests](/azure/active-directory/manage-apps/manage-consent-requests).
+[Konfigurieren des Workflows für die Administratorwilligung](/azure/active-directory/manage-apps/configure-admin-consent-workflow) (Artikel)\
+[Verwalten der Zustimmung zu Anwendungen und Bewerten von Zustimmungsanfragen](/azure/active-directory/manage-apps/manage-consent-requests) (Artikel)

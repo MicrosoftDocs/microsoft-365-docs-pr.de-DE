@@ -21,13 +21,13 @@ ms.custom:
 search.appverid:
 - BCS160
 - MET150
-description: Erfahren Sie, wie Sie Ihr Unternehmen von Microsoft 365 Business Premium E3 Office 365 verschieben.
-ms.openlocfilehash: 990ca8bdae979f1efb8a60a3460add2953a51892
-ms.sourcegitcommit: 68383240ef7a673d5f28e2ecfab9f105bf1d8c8f
+description: Wenn Sie über ein Office 365 E3-Abonnement verfügen, aber nicht mehr als 300 Mitarbeiter haben, sollten Sie zu Microsoft 365 Business Premium.
+ms.openlocfilehash: d139d07c946ff3efed3db3a73eb5e1a4ae66c190
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52327168"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623603"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrieren von Office 365 E3 zu Microsoft 365 Business Premium
 
@@ -125,3 +125,12 @@ Nach der Migration zu Microsoft 365 Business Premium haben Sie Defender für Off
 ### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 
 Informationen zur Verwendung von Vertraulichkeitsbezeichnungen finden Sie unter Übersicht über [Vertraulichkeitsbezeichnungen](../compliance/sensitivity-labels.md) und [Erstellen und Verwalten von Vertraulichkeitsbezeichnungen.](../business-video/create-sensitivity-labels.md)
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Pläne manuell ändern](../commerce/subscriptions/change-plans-manually.md) (Artikel)\
+[Aktualisieren Windows Geräte auf Windows 10 Pro](upgrade-to-windows-pro-creators-update.md) (Video)\
+[Festlegen von App-Schutzeinstellungen für Android- oder iOS-Geräte](app-protection-settings-for-android-and-ios.md) (Artikel)\
+[Festlegen oder Bearbeiten von Anwendungsschutzeinstellungen für Windows 10 Geräte](protection-settings-for-windows-10-devices.md) (Artikel)\
+[]
+

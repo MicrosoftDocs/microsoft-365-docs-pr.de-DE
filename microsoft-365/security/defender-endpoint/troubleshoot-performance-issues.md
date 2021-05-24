@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 71c2391361c645d26cdaddff0bff86796da50391
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 1a969b6430914eb2dd667a906dc071d3cd49be8b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995081"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625329"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Behandeln von Leistungsproblemen im Zusammenhang mit dem Echtzeitschutz
 
@@ -178,13 +178,13 @@ Alternativ können Sie auch das Befehlszeilentool *wpr.exe* verwenden, das in Wi
 
     ![UAC](images/wpt-yes.png)
 
-4. Laden Sie als Nächstes das [Microsoft Defender for Endpoint-Analyseprofil](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) herunter, und speichern Sie `WD.wprp` unter in einem Ordner wie `C:\temp` . 
+4. Laden Sie als Nächstes das [Microsoft Defender for Endpoint-Analyseprofil](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp) herunter, und speichern Sie `MDAV.wprp` unter in einem Ordner wie `C:\temp` . 
      
 5. Wählen Sie im Dialogfeld WPR weitere **Optionen aus.**
 
     ![Auswählen von weiteren Optionen](images/wpr-03.png)
 
-6. Wählen **Sie Profile hinzufügen...** aus, und navigieren Sie zum Pfad der `WD.wprp` Datei.
+6. Wählen **Sie Profile hinzufügen...** aus, und navigieren Sie zum Pfad der `MDAV.wprp` Datei.
 
 7. Danach sollte ein neuer Profilsatz  unter Benutzerdefinierte Messungen namens *Microsoft Defender for Endpoint-Analyse* darunter angezeigt werden.
 
@@ -247,7 +247,7 @@ Alternativ können Sie auch das Befehlszeilentool *wpr.exe* verwenden, das in Wi
 
 Das Befehlszeilentool *wpr.exe* Teil des Betriebssystems ab Windows 8. So erfassen Sie eine WPR-Ablaufverfolgung mithilfe des Befehlszeilentools wpr.exe:
 
-1. Laden **[Sie Microsoft Defender for Endpoint-Analyseprofil](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** für Leistungsverfolgungen in eine Datei mit dem Namen in einem lokalen Verzeichnis wie `WD.wprp` `C:\traces` herunter.
+1. Laden **[Sie Microsoft Defender for Endpoint-Analyseprofil](https://github.com/YongRhee-MDE/Scripts/blob/master/MDAV.wprp)** für Leistungsverfolgungen in eine Datei mit dem Namen in einem lokalen Verzeichnis wie `MDAV.wprp` `C:\traces` herunter.
 
 3. Klicken Sie  mit der rechten Maustaste auf das Symbol Startmenü, und wählen **Sie Windows PowerShell (Administrator)** oder Eingabeaufforderung **(Administrator)** aus, um ein Eingabeaufforderungsfenster für Administratoren zu öffnen.
 
@@ -256,7 +256,7 @@ Das Befehlszeilentool *wpr.exe* Teil des Betriebssystems ab Windows 8. So erfass
 5. Führen Sie an der Eingabeaufforderung mit erhöhten Rechten den folgenden Befehl aus, um eine Microsoft Defender for Endpoint-Leistungsverfolgung zu starten:
 
     ```console
-    wpr.exe -start C:\traces\WD.wprp!WD.Verbose -filemode
+    wpr.exe -start C:\traces\MDAV.wprp!WD.Verbose -filemode
     ```
     
     >[!WARNING]

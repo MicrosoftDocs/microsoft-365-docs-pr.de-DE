@@ -27,21 +27,19 @@ search.appverid:
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
 description: Erfahren Sie, wie Sie Unternehmensdaten von Geräten entfernen, die über Schutzrichtlinien verwaltet werden, sowie Windows 10 auf ihre Werkseinstellungen zurücksetzen.
-ms.openlocfilehash: fdd92e797774a47455d6b4163dfe399bf74d41f3
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0b757172ed337e9b2b68b4fcbdf5b102a8c76710
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580152"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624283"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Verwalten geschützter Geräte mit Microsoft 365 Business Premium
 
 Nachdem ein Benutzer sein Gerät mit Ihrer Organisation verbindet, indem er sich mit seinem Arbeitskonto beim Gerät oder bei Office-Apps auf dem Gerät einschreibt, können Sie das Gerät mit den von Ihnen eingerichteten Richtlinien schützen. Verbundene Geräte werden auf der Seite **Geräte** aufgeführt. Wenn ein Gerät nun verloren geht oder gestohlen wird, können Sie es über diese Seite verwalten, um alle Unternehmensdaten zu entfernen. Sie können Windows 10-Geräte auch auf die Werkseinstellungen zurücksetzen, um alle benutzerdefinierten Einstellungen zu löschen. 
 
-Weitere Informationen zu den Aufgaben, die Sie zum Verwalten von Geräten verwenden können, finden Sie in den folgenden Artikeln: 
+## <a name="related-content"></a>Verwandte Inhalte
   
-[Entfernen von Unternehmensdaten von Geräten](remove-company-data.md)
-  
-[Zurücksetzen von Windows 10-Geräten auf die Werkseinstellungen](reset-devices-to-factory-settings.md)
-
-[Hinzufügen eines verwalteten Geräts](./app-protection-settings-for-android-and-ios.md)
+[Entfernen von Unternehmensdaten von Geräten](remove-company-data.md) (Artikel)\
+[Zurücksetzen Windows 10 Geräte auf die Werkseinstellungen](reset-devices-to-factory-settings.md) (Artikel)\
+[Hinzufügen eines verwalteten Geräts](./app-protection-settings-for-android-and-ios.md) (Artikel)

@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie ein Postfach zum Sammeln von Spam- und Phishing-E-Mails konfigurieren, die von Benutzern gemeldet werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a23f27478d01092705a47d49884f200478348182
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 852e87ee76d9692b789ca217720ac3efb08f31a8
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583712"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624609"
 ---
 # <a name="user-submissions-policy"></a>Richtlinie für Benutzerübermittlungen
 
@@ -39,22 +39,18 @@ In Microsoft 365 organisationen mit Exchange Online können Sie ein Postfach ang
 
 - [Das Phishing-Add-In melden](enable-the-report-phish-add-in.md)
 
-- [Integrierte Berichterstellung in Outlook im Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md) (früher als Outlook Web App)
+- [Tools für Die Berichterstellung von Drittanbietern](#third-party-reporting-tools)
 
-- [Integrierte Berichterstellung in Outlook für iOS und Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)
+Das Senden von vom Benutzer gemeldeten Nachrichten an ein benutzerdefiniertes Postfach anstatt direkt an Microsoft ermöglicht es Ihren Administratoren, Nachrichten mithilfe der Admin-Übermittlung selektiv und manuell an Microsoft [zu melden.](admin-submission.md)
 
   > [!NOTE]
   > Wenn die Berichterstellung [in](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md#disable-or-enable-junk-email-reporting-in-outlook-on-the-web)Outlook im Web deaktiviert wurde, setzt das Aktivieren von Benutzerübermittlungen hier diese Einstellung außer Kraft und ermöglicht Benutzern, nachrichten in Outlook im Web erneut zu melden.
-
-Sie können auch Tools für die Nachrichtenberichterstellung von Drittanbietern konfigurieren, um Nachrichten an das von Ihnen festgelegte Postfach weiter zu senden.
-
-Das Senden von vom Benutzer gemeldeten Nachrichten an ein benutzerdefiniertes Postfach anstatt direkt an Microsoft ermöglicht es Ihren Administratoren, Nachrichten mithilfe der Admin-Übermittlung selektiv und manuell an Microsoft [zu melden.](admin-submission.md)
 
 ## <a name="custom-mailbox-prerequisites"></a>Voraussetzungen für benutzerdefinierte Postfächer
 
 Verwenden Sie die folgenden Artikel, um die erforderlichen Voraussetzungen zu konfigurieren, damit vom Benutzer gemeldete Nachrichten an Ihr benutzerdefiniertes Postfach gesendet werden:
 
-- Überspringen Sie die Spamfilterung für das benutzerdefinierte Postfach, indem Sie eine Exchange-Nachrichtenflussregel zum Festlegen der Spamsicherheitsstufe erstellen. Weitere Informationen finden Sie unter [Use the EAC to create a mail flow rule that sets the SCL of a message](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to set the SCL to Bypass spam **filtering**.
+- Überspringen Sie die Spamfilterung für das benutzerdefinierte Postfach, indem Sie eine Exchange-Nachrichtenflussregel zum Festlegen der Spamsicherheitsstufe erstellen. Weitere Informationen finden Sie unter [Use the EAC to create a mail flow rule that sets the SCL of a message](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message) to set the SCL to Bypass spam **filtering**.
 
 - Deaktivieren Sie das Scannen von Anlagen auf Schadsoftware im benutzerdefinierten Postfach. Verwenden [Sie Set up Safe Attachments policies in Defender for Office 365,](set-up-safe-attachments-policies.md) um eine Richtlinie für sichere Anlagen mit der Einstellung **Off** for Safe Attachments unknown malware response **zu erstellen.**
 
@@ -141,9 +137,17 @@ Nachdem Sie überprüft haben, ob Ihr Postfach alle erforderlichen Voraussetzung
 
        Klicken Sie nach Abschluss des Abschlusses auf **Bestätigen**.
 
+## <a name="third-party-reporting-tools"></a>Tools für Die Berichterstellung von Drittanbietern
+
+Sie können Tools für die Nachrichtenberichterstellung von Drittanbietern so konfigurieren, dass gemeldete Nachrichten an das benutzerdefinierte Postfach gesendet werden. Die einzige Voraussetzung ist, dass die ursprüngliche Nachricht als Anlage in der Nachricht enthalten ist, die an das benutzerdefinierte Postfach gesendet wird (nicht nur die ursprüngliche Nachricht an das benutzerdefinierte Postfach weiterleiten).
+
+Die Anforderungen an die Nachrichtenformatierung werden im nächsten Abschnitt beschrieben.
+
 ## <a name="message-submission-format"></a>Nachrichtenübermittlungsformat
 
-Nachrichten, die an benutzerdefinierte Postfächer gesendet werden, müssen einem bestimmten Übermittlungs-E-Mail-Format folgen. Der Betreff (Umschlagtitel) der Übermittlung sollte in diesem Format vorliegen:
+Um die ursprünglichen angefügten Nachrichten korrekt zu identifizieren, erfordern Nachrichten, die an das benutzerdefinierte Postfach gesendet werden, eine bestimmte Formatierung. Wenn die Nachrichten dieses Format nicht verwenden, werden die ursprünglichen angefügten Nachrichten immer als Phishingübermittlungen identifiziert.
+
+Für die ordnungsgemäße Identifizierung der ursprünglich angefügten Nachrichten müssen Nachrichten, die an das benutzerdefinierte Postfach gesendet werden, die folgende Syntax für den Betreff (Umschlagtitel) verwenden:
 
 `SafetyAPIAction|NetworkMessageId|SenderIp|FromAddress|(Message Subject)`
 
@@ -153,7 +157,7 @@ Dabei ist SafetyAPIAction einer der folgenden ganzzahligen Werte:
 - 2: Kein Junk
 - 3: Phishing
 
-Im folgenden Beispiel:
+In diesem Beispiel werden die folgenden Werte verwendet:
 
 - Die Nachricht wird als Phishing gemeldet.
 - Die Netzwerknachrichten-ID lautet 49871234-6dc6-43e8-abcd-08d797f20abe.

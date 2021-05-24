@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 40398b0b-bdd0-4afd-ab5e-b5ae6b7990bf
 description: Erfahren Sie, wie Sie Probleme einkreisen können, die beim Einrichten einer benutzerdefinierten Domäne auftreten. Stellen Sie zunächst sicher, dass die DNS-Einträge ordnungsgemäß eingerichtet sind.
-ms.openlocfilehash: 5959cae02b87cf481fc06edd941a6da284b71736
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 70beb877251c333766a0963316287796eb81d595
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537547"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623965"
 ---
 # <a name="find-and-fix-issues-after-adding-your-domain-or-dns-records"></a>Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden
 
@@ -103,5 +103,6 @@ Wenn Sie alle DNS-Probleme behoben haben, aber weiterhin Probleme auftreten, fü
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Problembehandlung: Überwachen von Daten bei überprüften Domänenänderung](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain)
+[Problembehandlung: Überwachen von Daten zu überprüften Domänenänderung](/azure/active-directory/reports-monitoring/troubleshoot-audit-data-verified-domain) (Artikel)\
+[Häufig gestellte Fragen zu Domänen](../setup/domains-faq.yml) (Artikel)
 

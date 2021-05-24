@@ -19,13 +19,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
-description: Aktualisieren Sie Ihre Administratortelefonnummer und E-Mail-Adresse im Admin Center. Sie benötigen diese Informationen, wenn Sie Ihr eigenes Administratorkennwort zurücksetzen möchten.
-ms.openlocfilehash: 49e3cd3e861499d41107b9c76da175a95e74bb0e
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+description: Aktualisieren Sie Ihre Administratortelefonnummer und E-Mail-Adresse im Admin Center, wenn Sie Ihr eigenes Administratorkennwort zurücksetzen möchten.
+ms.openlocfilehash: ab4e200ae680e40dea7ca7cc4d095be0690ad375
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073777"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624513"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Aktualisieren Ihrer Administratortelefonnummer und E-Mail-Adresse
 
@@ -58,10 +58,7 @@ Bei Fragen zur Abrechnung werden Sie hier fündig:
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Ändern eines Benutzernamens und einer E-Mail-Adresse](../add-users/change-a-user-name-and-email-address.md) (Video)
-
-[Hinzufügen eines neuen Mitarbeiters](../add-users/add-new-employee.md) (Video)
-
-[Entfernen eines ehemaligen Mitarbeiters](../add-users/remove-former-employee.md) (Video)
-
+[Ändern eines Benutzernamens und einer E-Mail-Adresse](../add-users/change-a-user-name-and-email-address.md) (Video)\
+[Hinzufügen eines neuen Mitarbeiters](../add-users/add-new-employee.md) (Video)\
+[Entfernen eines ehemaligen Mitarbeiters](../add-users/remove-former-employee.md) (Video)\
 [Zugreifen auf und Sichern der Daten](../add-users/get-access-to-and-back-up-a-former-user-s-data.md) eines ehemaligen Benutzers (Artikel)

@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Erfahren Sie, wie Sie das Phishing-Add-In "Phishing melden" für Outlook und Outlook im Web für einzelne Benutzer oder Ihre gesamte Organisation aktivieren.
-ms.openlocfilehash: 12543364943321689d0efa2c2942351b3d3ec6f9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 44fa55a82462de336982d3af2e3996c14699fd7c
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206201"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625389"
 ---
 # <a name="enable-the-report-phishing-add-in"></a>Aktivieren des Add-Ins „Phishing melden“
 
@@ -150,4 +150,4 @@ Zum Überprüfen von Nachrichten, die Benutzer an Microsoft melden, haben Sie di
 
 - Verwenden Sie das Administrator-Übermittlungsportal. Weitere Informationen finden Sie unter [Anzeigen von Benutzerübermittlungen an Microsoft](admin-submission.md#view-user-submissions-to-microsoft).
 
-- Erstellen Sie eine Nachrichtenflussregel (auch als Transportregel bezeichnet), um Kopien von gemeldeten Nachrichten zu senden. Anweisungen finden Sie unter [Verwenden von Nachrichtenflussregeln, um zu sehen, was Ihre Benutzer an Microsoft melden.](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)
+- Erstellen Sie eine Nachrichtenflussregel (auch als Transportregel bezeichnet), um Kopien von gemeldeten Nachrichten zu senden. Anweisungen finden Sie unter [Verwenden von Nachrichtenflussregeln, um zu sehen, welche Benutzer Microsoft melden.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)

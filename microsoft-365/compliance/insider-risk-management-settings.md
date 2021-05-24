@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: aad0f00292a1a1182fc4b731e562b2e4c78d97f8
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 7592b92b74173e77e7937151ba88c23163363fde
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259511"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624693"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Erste Schritte mit Insider-Risikomanagementeinstellungen
 
@@ -60,7 +60,7 @@ Warnungen werden durch Richtlinien ausgelöst, wenn Benutzer Aktivitäten im Zus
 Richtlinienindikatoren sind in die folgenden Bereiche segmentiert. Sie können die Indikatoren zum Aktivieren und Anpassen von Indikatorereignisgrenzwerte für jede Indikatorstufe beim Erstellen einer Insiderrisikorichtlinie auswählen:
 
 - **Office:** Dazu gehören Richtlinienindikatoren für websites SharePoint, Microsoft Teams und E-Mail-Nachrichten.
-- **Geräteindikatoren:** Dazu gehören Richtlinienindikatoren für Aktivitäten wie das Freigeben von Dateien über das Netzwerk oder mit Geräten. Zu den Indikatoren gehören Aktivitäten Microsoft Office Dateien, .csv (durch Kommas getrennte Werte) und .pdf (portables Dokumentformat). Wenn Sie Geräteindikatoren **auswählen,** wird die Aktivität nur für Geräte mit Windows 10 Build 1809 oder höher verarbeitet, und Sie müssen zuerst Geräte in das Compliance Center integrieren. Weitere Informationen zum Konfigurieren von Geräten für die [](insider-risk-management-settings.md#OnboardDevices) Integration mit Insiderrisiken finden Sie im abschnitt Aktivieren von Geräteindikatoren und onboard-Geräten in diesem Artikel.
+- **Geräteindikatoren:** Dazu gehören Richtlinienindikatoren für Aktivitäten wie das Freigeben von Dateien über das Netzwerk oder mit Geräten. Indikatoren umfassen Aktivitäten, die alle Dateitypen umfassen, ausgenommen ausführbare (.exe) und dynamische Linkbibliotheksaktivitäten (.dll). Wenn Sie Geräteindikatoren **auswählen,** wird die Aktivität nur für Geräte mit Windows 10 Build 1809 oder höher verarbeitet, und Sie müssen zuerst Geräte in das Compliance Center integrieren. Weitere Informationen zum Konfigurieren von Geräten für die [](insider-risk-management-settings.md#OnboardDevices) Integration mit Insiderrisiken finden Sie im abschnitt Aktivieren von Geräteindikatoren und onboard-Geräten in diesem Artikel.
 - **Sicherheitsrichtlinienverletzungsindikator (Vorschau):** Dazu gehören Indikatoren von Microsoft Defender for Endpoint im Zusammenhang mit nicht genehmigter oder bösartiger Softwareinstallation oder Umgehen von Sicherheitssteuerelementen. Um Benachrichtigungen im Insider risk management zu erhalten, müssen Sie eine aktive Defender for Endpoint-Lizenz und die Integration von Insiderrisiken aktiviert haben. Weitere Informationen zum Konfigurieren von Defender for Endpoint für insider risk management integration finden Sie unter [Configure advanced features in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-features\#share-endpoint-alerts-with-microsoft-compliance-center).
 - **Indikatoren für den physischen Zugriff (Vorschau):** Dazu gehören Richtlinienindikatoren für den physischen Zugriff auf vertrauliche Ressourcen. Beispielsweise kann versuchter Zugriff auf einen eingeschränkten Bereich in Ihren Systemprotokollen für physische Risikomanagementrichtlinien für Insider freigegeben werden. Um diese Arten von Warnungen im Insider-Risikomanagement zu erhalten, müssen sie für das Insiderrisikomanagement und den [Connector](import-physical-badging-data.md) für physische Risikomanagementdaten konfiguriert sein. Weitere Informationen zum Konfigurieren des physischen Zugriffs finden Sie im Abschnitt [Priority physical access](#priority-physical-assets-preview) in diesem Artikel.
 - **Microsoft Cloud App Security (Vorschau):** Dazu gehören Richtlinienindikatoren aus freigegebenen Warnungen von Cloud App Security. Die automatisch aktivierte Anomalieerkennung in Cloud App Security beginnt sofort mit der Erkennung und Sortierung von Ergebnissen und zielt auf zahlreiche Verhaltensanomalien in Ihren Benutzern und den Computern und Geräten ab, die mit Ihrem Netzwerk verbunden sind. Wählen Sie in diesem Abschnitt einen oder mehrere Indikatoren aus, um diese Aktivitäten in Warnungen zu Insider-Risikomanagementrichtlinien zu enthalten. Weitere Informationen zur Cloud App Security und Anomalieerkennung finden Sie unter [Get behavioral analytics and anomaly detection](/cloud-app-security/anomaly-detection-policy).

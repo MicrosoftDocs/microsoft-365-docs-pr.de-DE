@@ -19,12 +19,12 @@ ms.custom:
 description: Administratoren können mehr über die Spamsicherheitsstufe (Spam Confidence Level, SCL) erfahren, die auf Nachrichten in EOP (EOP Exchange Online Protection angewendet wurde.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 951bbcb5fcbcc7b7916ee1c34c4ab489d54b6667
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 55e64c72cc472e98baa8eb71e23dafb6b276ba01
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204054"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625281"
 ---
 # <a name="spam-confidence-level-scl-in-eop"></a>Spam confidence level (SCL) in EOP
 
@@ -51,7 +51,7 @@ Was die SCL bedeutet, und die Standardaktionen, die für Nachrichten ergriffen w
 
 Sie werden feststellen, dass SCL 2, 3, 4, 7 und 8 nicht von der Spamfilterung verwendet werden.
 
-Sie können Nachrichtenflussregeln (auch als Transportregeln bezeichnet) verwenden, um die SCL für Nachrichten zu stempeln. Wenn Sie eine Nachrichtenflussregel zum Festlegen der SCL verwenden, lösen die Werte 5 oder 6 die Spamfilteraktion für **Spam** aus, und die Werte 7, 8 oder 9 lösen die Spamfilteraktion für Spam mit hoher Sicherheit **aus.** Weitere Informationen finden Sie unter Verwenden von Nachrichtenflussregeln zum Festlegen der Spamsicherheitsstufe [(Spam Confidence Level, SCL) in Nachrichten](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
+Sie können Nachrichtenflussregeln (auch als Transportregeln bezeichnet) verwenden, um die SCL für Nachrichten zu stempeln. Wenn Sie eine Nachrichtenflussregel zum Festlegen der SCL verwenden, lösen die Werte 5 oder 6 die Spamfilteraktion für **Spam** aus, und die Werte 7, 8 oder 9 lösen die Spamfilteraktion für Spam mit hoher Sicherheit **aus.** Weitere Informationen finden Sie unter Verwenden von Nachrichtenflussregeln zum Festlegen der Spamsicherheitsstufe [(Spam Confidence Level, SCL) in Nachrichten](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl).
 
 Ähnlich wie beim SCL identifiziert die Massenbeschwerdestufe (Bulk Complaint Level, BCL) ungültige Massen-E-Mails (auch als _graue E-Mail bezeichnet)._ Ein höheres BCL-Niveau zeigt an, dass eine als Massensendung gesendete E-Mail mit größerer Wahrscheinlichkeit zu Beschwerden führen wird (und daher eher als Spam einzustufen ist). Sie konfigurieren den BCL-Schwellenwert in Antispamrichtlinien. Weitere Informationen finden Sie unter Konfigurieren von Antispamrichtlinien in EOP, Massenbeschwerdestufe [(BCL) in EOP)](bulk-complaint-level-values.md)und Was ist der Unterschied zwischen [Junk-E-Mail](configure-your-spam-filter-policies.md)und [Massen-E-Mail?](what-s-the-difference-between-junk-email-and-bulk-email.md).
 

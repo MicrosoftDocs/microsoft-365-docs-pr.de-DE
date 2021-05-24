@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Erfahren Sie mehr über bewährte Methoden zum Verwalten der vielen Themen in Ihrer Organisation mithilfe von "Viva Topics".
-ms.openlocfilehash: d5cdae62cdec9193d354e7585364bd842a514a26
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 613c4ed85a62efd22ba104c810420a2d0af015c5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593877"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624837"
 ---
 # <a name="manage-topics-at-scale-in-microsoft-viva-topics"></a>Manage topics at scale in Microsoft Viva Topics
 
@@ -28,15 +28,16 @@ Zunächst eine Erinnerung an die [vier Phasen für Themen:](manage-topics.md#top
 
 - **Vorgeschlagen**: Ein Thema wurde von KI identifiziert und verfügt über genügend unterstützende Ressourcen, Verbindungen und Eigenschaften. (Diese werden in der Benutzeroberfläche **als vorgeschlagenes** Thema gekennzeichnet.)
 
-- **Bestätigt**: Ein Thema, das von AI vorgeschlagen wurde, muss überprüft werden. Die Themenüberprüfung erfolgt, wenn eine der beiden:
+- **Bestätigt**: Ein Thema, das von AI erkannt und überprüft wurde. Die Themenüberprüfung erfolgt, wenn eine der beiden:
 
    - Ein Knowledge Manager bestätigt ein Thema. Ein Knowledge Manager [bestätigt ein Thema auf](manage-topics.md#confirmed-topics) der Seite Themen **verwalten.**
 
    - Mehrere Benutzer bestätigen ein Thema. Es muss ein Netz von zwei positiven Stimmen von Benutzern sein, die mit dem Feedbackmechanismus auf der Themenkarte abgestimmt haben. Wenn beispielsweise ein Benutzer für ein bestimmtes Thema positiv und ein Benutzer für ein bestimmtes Thema negativ stimmte, benötigen Sie noch zwei weitere positive Stimmen, damit das Thema bestätigt wird.
  
-- **Veröffentlicht**: Ein bestätigtes Thema, das kuratiert wurde. Es wurden manuelle Bearbeitungen vorgenommen, um die Qualität zu verbessern.
+- **Veröffentlicht**: Ein Thema, das kuratiert wurde. Manuelle Bearbeitungen wurden vorgenommen, um die Qualität zu verbessern, oder sie wurden von einem Benutzer erstellt.
 
 - **Entfernt:** Ein Thema, das abgelehnt wurde und für die Betrachter nicht mehr sichtbar ist. Ein Thema kann in einem beliebigen Zustand entfernt werden (vorgeschlagen, bestätigt oder veröffentlicht). Das Entfernen von Themen erfolgt, wenn eine der beiden:
+
    - Ein Knowledge Manager entfernt ein Thema. Ein Knowledge Manager entfernt ein Thema auf der Seite **Themen** verwalten.
 
    - Mehrere Benutzer geben negative Stimmen mit dem Feedbackmechanismus auf der Themenkarte ab. Damit ein Thema entfernt werden kann, muss ein Netz von zwei negativen Stimmen von Benutzern empfangen werden. Wenn beispielsweise ein Benutzer negativ und ein Benutzer für ein bestimmtes Thema positiv stimmte, benötigen Sie noch zwei negative Stimmen, damit das Thema entfernt werden kann.

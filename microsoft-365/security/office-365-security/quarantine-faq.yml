@@ -20,12 +20,12 @@ metadata:
   ms.custom: seo-marvel-apr2020
   ms.technology: mdo
   ms.prod: m365-security
-  ms.openlocfilehash: f146cd9eba6e333376bcfeb6e8c74b3378387b5b
-  ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+  ms.openlocfilehash: 42e848309589fa8786346b5921d1cade0ed074b9
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: MT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 05/12/2021
-  ms.locfileid: "52334056"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52625413"
 title: Häufig gestellte Fragen zu isolierten Nachrichten
 summary: >
   [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -40,7 +40,7 @@ summary: >
   - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 
-  Dieses Thema enthält häufig gestellte Fragen und Antworten zu isolierten E-Mail-Nachrichten für Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer.
+  Dieses Thema enthält häufig gestellte Fragen und Antworten zu isolierten E-Mail-Nachrichten für Microsoft 365-Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online Postfächer.
 
 
   Fragen und Antworten zum Antispamschutz finden Sie unter Häufig gestellte Fragen zu [Antispamschutz](anti-spam-protection-faq.yml).
@@ -64,7 +64,7 @@ sections:
   - question: >
       Wie kann ich Benutzern Zugriff auf die Quarantäne ermöglichen?
     answer: >
-      Ein Benutzer muss über ein gültiges Konto verfügen, um in Quarantäne auf eigene Nachrichten zugreifen zu können. Eigenständiges EOP erfordert, dass Benutzer in EOP als E-Mail-Benutzer dargestellt werden (manuell erstellt oder über die Verzeichnissynchronisierung erstellt). Weitere Informationen zum Verwalten von Benutzern in eigenständigen EOP-Umgebungen finden Sie unter [Verwalten von E-Mail-Benutzern in EOP](manage-mail-users-in-eop.md).
+      Ein Benutzer muss über ein gültiges Konto verfügen, um in Quarantäne auf eigene Nachrichten zugreifen zu können. Eigenständiges EOP erfordert, dass Benutzer in EOP als E-Mail-Benutzer dargestellt werden (manuell erstellt oder über die Verzeichnissynchronisierung erstellt). Weitere Informationen zum Verwalten von Benutzern in eigenständigen EOP-Umgebungen finden Sie unter Verwalten von [E-Mail-Benutzern in eigenständigem EOP](/exchange/standalone-eop/manage-mail-users-in-eop).
   - question: >
       Auf welche Nachrichten können Endbenutzer in Quarantäne zugreifen?
     answer: >
@@ -89,13 +89,13 @@ sections:
   - question: >
       Werden bei der Suche nach in der Quarantäne isolierte Nachrichten Platzhalterzeichen unterstützt? Kann ich für eine bestimmte Domäne nach Nachricht in Quarantäne suchen?
     answer: >-
-      Platzhalter werden im Security & Compliance Center nicht unterstützt. Wenn Sie beispielsweise nach einem Absender suchen, müssen Sie die vollständige E-Mail-Adresse angeben. Sie können jedoch Platzhalter in Exchange Online PowerShell oder in der eigenständigen EOP PowerShell verwenden.
+      Platzhalter werden im Security & Compliance Center nicht unterstützt. Wenn Sie beispielsweise nach einem Absender suchen, müssen Sie die vollständige E-Mail-Adresse angeben. Sie können jedoch Platzhalter in powerShell oder Exchange Online eigenständigen EOP PowerShell verwenden.
 
 
       Kopieren Sie beispielsweise den folgenden PowerShell-Code in NotePad, und speichern Sie die Datei unter .ps1 an einem Speicherort, den Sie leicht finden können (z. B. C:\Data\QuarantineRelease.ps1).
 
 
-      Führen Sie dann nach der Verbindung mit [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) oder [Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)den folgenden Befehl aus, um das Skript auszuführen:
+      Führen Sie dann, nachdem Sie eine Verbindung mit [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) oder [Exchange Online Protection PowerShell](/powershell/exchange/connect-to-exchange-online-protection-powershell)hergestellt haben, den folgenden Befehl aus, um das Skript auszuführen:
 
 
       ```powershell

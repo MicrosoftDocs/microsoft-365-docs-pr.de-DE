@@ -18,14 +18,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Erfahren Sie, wie Sie ein Upgrade auf einen anderen Plan durchführen.
+description: Die einfachste Möglichkeit zum Aktualisieren von Plänen ist die Verwendung der Registerkarte Upgrade im Admin Center. Die Registerkarte Upgrade wird jedoch nicht immer unterstützt.
 ms.date: 04/21/2021
-ms.openlocfilehash: 4882ad4296eb05faf0bb549ebf850562a7ebf780
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: da0b0a826087ea7e963dde85f9b4612acf0eaf99
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344614"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624313"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Zu einem anderen Plan wechseln
 

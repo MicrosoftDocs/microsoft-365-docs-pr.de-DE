@@ -12,12 +12,12 @@ ms.collection: Adm_Support
 localization_priority: Normal
 description: Erfahren Sie, wie Sie den Support für Ihr Land oder Ihre Region kontaktieren.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5d73b54a60b22ac74a55c301b3bd9344ee83352f
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: ec66115bc5ad0c8031be7117d2d8282e5c7d5041
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52298818"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623881"
 ---
 # <a name="contact-support-for-georgia"></a>Kontaktieren des Support für Georgien
 
@@ -26,11 +26,9 @@ ms.locfileid: "52298818"
 ## <a name="phone-number"></a>Telefonnummer
 032 297 0124
 
-Option 2 auswählen
+Drücken Sie 2 für Unternehmen
 
-Option 9 auswählen
-
-Eingabecode 7700
+Drücken Sie 1 für Microsoft 365
 
 ## <a name="hours"></a>Stunden
 ### <a name="billing-support"></a>Abrechnungssupport:

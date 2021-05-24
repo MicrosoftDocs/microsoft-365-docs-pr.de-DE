@@ -19,14 +19,14 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: Erfahren Sie, wie Sie lizenzen von Benutzerkonten wegzuweisen.
+description: Die methode, die Sie verwenden, um Produktlizenzen zuzuweisen, hängt davon ab, ob Sie Lizenzen von bestimmten Benutzern oder von einem bestimmten Produkt zuweisen.
 ms.date: 07/01/2020
-ms.openlocfilehash: 4ff6a0e5554117cd1fc2d818c04edabc9e33b2a1
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f7624432590a5731b57c45c25e7e7dc458a5b8f5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582908"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623589"
 ---
 # <a name="unassign-licenses-from-users"></a>Aufheben der Zuweisung von Benutzerlizenzen
 

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Bei Datenverschiebungen handelt es sich um Back-End-Vorgänge, die stattfinden, wenn Microsoft Dienste und zugeordnete Daten für Ihren Mandanten in eine neue Rechenzentrumsregion verschiebt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14563a695e5c092f9bddfbdfdcb758f90cea32c0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d3d44ffc1650989e5c39f5f79cb6a07065f9e9f1
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929420"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625257"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -102,6 +102,8 @@ Die folgenden Suchfunktionen sind betroffen:
 - eDiscovery: Elemente, die sich während der Migration geändert haben, werden erst angezeigt, wenn die Durchforstung die Änderungen erfasst hat.
     
 - Schutz vor Datenverlust (DLP): Richtlinien werden nicht auf Elemente angewendet, die sich ändern, bis die Durchforstung die Änderungen erfasst hat.
+
+Im Rahmen der Migration wird der Standardbereich geändert, und alle neuen Inhalte werden im Ruhebereich in der neuen Standardregion gespeichert. Vorhandene Inhalte werden bis zu 90 Tage nach der ersten Änderung des SharePoint Online-Datenspeicherorts im Admin Center im Hintergrund ohne Auswirkungen auf Sie bewegt.
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 

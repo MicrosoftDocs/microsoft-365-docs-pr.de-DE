@@ -17,12 +17,12 @@ ms.collection:
 description: Erfahren Sie mehr über die Standardmäßige Sicherheitseinstellung in Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 957ca3b563d4f1466dd537c3ae974a4fd61aa6f2
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 2d5cdc8f8faa9c2d5772fd1572134ea49cdd77da
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346316"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624049"
 ---
 # <a name="secure-by-default-in-office-365"></a>Standardmäßig sicher in Office 365
 
@@ -77,7 +77,7 @@ Anders ausgedrückt: Als Sicherheitsdienst handeln wir in Ihrem Namen, um zu ver
 > [!NOTE]
 > Im Juli 2021 wird die Sicherheit standardmäßig auf Exchange Nachrichtenflussregeln (auch als Transportregeln bekannt) erweitert. Wenn Sie Nachrichtenflussregeln verwenden, um Phishingsimulationen von Drittanbietern oder die ungefilterte Zustellung an Sicherheitsvorgangspostfächer [](configure-advanced-delivery.md) zu ermöglichen, müssen Sie diese Regeln schließlich entfernen und zur Verwendung der erweiterten Übermittlungsrichtlinie wechseln, wenn das Feature für Sie verfügbar _ist._
 
-Die einzige Außerkraftsetzung, mit der Phishingnachrichten mit hoher Vertrauen die Filterung umgehen können, sind Nachrichtenflussregeln. Informationen zur Verwendung von Nachrichtenflussregeln zum Umgehen der Filterung finden Sie unter Verwenden von Nachrichtenflussregeln zum Festlegen der [SCL in Nachrichten.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
+Die einzige Außerkraftsetzung, mit der Phishingnachrichten mit hoher Vertrauen die Filterung umgehen können, sind Nachrichtenflussregeln. Informationen zur Verwendung von Nachrichtenflussregeln zum Umgehen der Filterung finden Sie unter Verwenden von Nachrichtenflussregeln zum Festlegen der [SCL in Nachrichten.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)
 
 Sie sollten die Verwendung von Außerkraftsetzungen nur in den folgenden Szenarien in Betracht ziehen:
 

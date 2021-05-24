@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: b47099dd0d26dba6a399ecff823bcc758be7e16d
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: df2c01bd0cc935ae8a541b40a96f3e067926674a
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583640"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625017"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Darstellungen zu Microsoft 365-Produktivitätslösungen
 
@@ -45,7 +45,7 @@ Microsoft bietet Tools zum Migrieren Ihrer lokalen Netzwerkdateifreigaben und Sh
 
 | Element | Beschreibung |
 |:-----|:-----|
-|[![Modellposter: Migrieren zu Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/> [Als PDF herunterladen](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf)  \| [Als Visio herunterladen](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.vsdx) <br/> Aktualisiert märz 2021 |Enthält: <ul><li>  Migration von Dateifreigaben</li><li>SharePoint Server-Migration </li> </ul><br> Weitere Informationen finden Sie unter [Migrate your content to Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
+|[![Modellposter: Migrieren zu Microsoft 365](../media/solutions-architecture-center/msft-migration-thumb.png)](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/Migration-posters-mm-spmt.pdf) <br/>[PDF](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m365-migration-posters-mm-spmt.pdf)\|[Visio](https://download.microsoft.com/download/0/5/b/05b7fb7c-1557-4ebb-9036-c5fc3a4cd94c/m-365-migration-posters-mm-spmt.vsdx) <br/> Aktualisiert märz 2021 |Enthält: <ul><li>  Migration von Dateifreigaben</li><li>SharePoint Server-Migration </li> </ul><br> Weitere Informationen finden Sie unter [Migrate your content to Microsoft 365](/sharepointmigration/migrate-to-sharepoint-online).|
 
 ## <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Microsoft 365 und Compliancefunktionen
 

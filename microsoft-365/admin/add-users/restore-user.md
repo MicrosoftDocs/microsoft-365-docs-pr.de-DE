@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 2c261e42-5dd1-48b0-845f-2a016d29cfc1
-description: Erfahren Sie, wie Sie gelöschte Benutzerkonten und alle zugeordneten Daten wiederherstellen.
-ms.openlocfilehash: b7d98c1f49f8252ea9fdda2d863b5b77ac5bea9d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+description: Innerhalb von 30 Tagen nach dem Löschen eines Benutzerkontos können Sie das Konto und alle Daten wiederherstellen, und der Benutzer kann sich mit demselben Konto anmelden.
+ms.openlocfilehash: 83852136ee22ab3f63d8ada6a5a7290883c392e5
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291067"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623821"
 ---
 # <a name="restore-a-user"></a>Wiederherstellen eines Benutzers
    
@@ -91,6 +91,8 @@ Dazu müssen [Sie über Administratorberechtigungen](about-admin-roles.md) Micro
     
 4. Überprüfen Sie die Ergebnisse, und wählen Sie dann **Schließen** aus.
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Löschen eines Benutzers](delete-a-user.md)
+[Löschen eines Benutzers](delete-a-user.md) (Artikel)\
+[Zuweisen von Administratorrollen](assign-admin-roles.md) (Video)\
+[Zuweisen von Lizenzen zu Benutzern](../manage/assign-licenses-to-users.md) (Artikel)

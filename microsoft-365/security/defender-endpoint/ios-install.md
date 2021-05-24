@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a3711018034bcabdde10c21b3c968c3e813d0565
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 6f2b9a1365a27bb7397aea51dcd5bc9e2631afe2
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245257"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624705"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-ios"></a>Bereitstellen von Microsoft Defender for Endpoint unter iOS
 
@@ -35,13 +35,13 @@ ms.locfileid: "52245257"
 
 > Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-In diesem Thema wird die Bereitstellung von Defender for Endpoint unter iOS auf Intune-Unternehmensportal registrierten Geräten beschrieben. Weitere Informationen zur Registrierung von Intune-Geräten finden Sie unter [Registrieren von iOS-/iPadOS-Geräten in Intune](https://docs.microsoft.com/mem/intune/enrollment/ios-enroll).
+In diesem Thema wird die Bereitstellung von Defender for Endpoint unter iOS auf Intune-Unternehmensportal registrierten Geräten beschrieben. Weitere Informationen zur Registrierung von Intune-Geräten finden Sie unter [Registrieren von iOS-/iPadOS-Geräten in Intune](/mem/intune/enrollment/ios-enroll).
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - Stellen Sie sicher, dass Sie Zugriff auf [Microsoft Endpoint Manager Admin Center haben.](https://go.microsoft.com/fwlink/?linkid=2109431)
 
-- Stellen Sie sicher, dass die iOS-Registrierung für Ihre Benutzer erfolgt. Benutzern muss eine Defender for Endpoint-Lizenz zugewiesen sein, um Defender for Endpoint unter iOS verwenden zu können. Anweisungen zum [Zuweisen von](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign) Lizenzen finden Sie unter Zuweisen von Lizenzen zu Benutzern.
+- Stellen Sie sicher, dass die iOS-Registrierung für Ihre Benutzer erfolgt. Benutzern muss eine Defender for Endpoint-Lizenz zugewiesen sein, um Defender for Endpoint unter iOS verwenden zu können. Anweisungen zum [Zuweisen von](/azure/active-directory/users-groups-roles/licensing-groups-assign) Lizenzen finden Sie unter Zuweisen von Lizenzen zu Benutzern.
 
 > [!NOTE]
 > Microsoft Defender for Endpoint unter iOS ist jetzt im [Apple App-Store.](https://aka.ms/mdatpiosappstore)
@@ -83,7 +83,7 @@ Bereitstellen von Defender for Endpoint unter iOS über Intune-Unternehmensporta
 
 Administratoren können die automatische Einrichtung des VPN-Profils konfigurieren. Dadurch wird das Defender for Endpoint-VPN-Profil automatisch eingerichtet, ohne dass der Benutzer dies beim Onboarding tun muss. Beachten Sie, dass VPN verwendet wird, um das Web Protection-Feature zur Verfügung zu stellen. Dies ist kein normales VPN und ein lokales VPN mit selbstschleifender Schleife, das keinen Datenverkehr außerhalb des Geräts verwendet.
 
-1. Wechseln [Sie im Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)zu   ->  **Gerätekonfigurationsprofile**  ->    ->  **Erstellen einer iOS-Store-App,** und klicken Sie auf **Auswählen.**
+1. Wechseln [Sie im Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)zu   ->  **Gerätekonfigurationsprofile**  ->  **Profil erstellen.**
 1. Wählen **Sie Plattform** als **iOS/iPadOS-** und **Profiltyp** als **VPN aus.** Klicken Sie auf **Erstellen**.
 1. Geben Sie einen Namen für das Profil ein, und klicken Sie auf **Weiter**.
 1. Wählen **Sie Benutzerdefiniertes VPN** für Verbindungstyp aus, und geben Sie im Abschnitt **Basis-VPN** Folgendes ein:
@@ -148,7 +148,7 @@ Mit Intune können Sie die Defender für iOS-App über eine App-Konfigurationsri
 
 1. Klicken **Sie auf Weiter,** um die **Seite Bereichstags zu** öffnen. Bereichstags sind optional. Klicken Sie auf **Weiter**, um den Vorgang fortzusetzen.
 
-1. Wählen Sie **auf** der Seite Zuordnungen die Gruppen aus, die dieses Profil erhalten. Für dieses Szenario ist es bewährte Methode, alle **Geräte als Ziel zu verwenden.** Weitere Informationen zum Zuweisen von Profilen finden Sie unter [Assign user and device profiles](https://docs.microsoft.com/mem/intune/configuration/device-profile-assign).
+1. Wählen Sie **auf** der Seite Zuordnungen die Gruppen aus, die dieses Profil erhalten. Für dieses Szenario ist es bewährte Methode, alle **Geräte als Ziel zu verwenden.** Weitere Informationen zum Zuweisen von Profilen finden Sie unter [Assign user and device profiles](/mem/intune/configuration/device-profile-assign).
 
    Bei der Bereitstellung in Benutzergruppen muss sich ein Benutzer bei einem Gerät anmelden, bevor die Richtlinie angewendet wird.
 

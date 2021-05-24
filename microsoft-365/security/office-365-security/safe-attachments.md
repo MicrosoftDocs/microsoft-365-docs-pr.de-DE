@@ -20,12 +20,12 @@ ms.collection:
 description: Administratoren können sich über das Feature "Sichere Anlagen" in Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ab3fd89c02186dfbdb6c9a3d754a4902d8b945f8
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: cc5fabf7b0bb4a649aeb7c4e09155037fc09e9f9
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246380"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625005"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Sichere Anlagen in Microsoft Defender für Office 365
 
@@ -124,7 +124,7 @@ Es gibt Szenarien, in denen die dynamische Übermittlung Anlagen in Nachrichten 
 - Gelöschte Nachrichten.
 - Der Postfachsuchordner des Benutzers befindet sich im Fehlerstatus.
 - Exchange Online Organisationen, in denen Exclaimer aktiviert ist. Informationen zum Beheben dieses Problems finden Sie unter [KB4014438](https://support.microsoft.com/help/4014438).
-- [S/MIME)](s-mime-for-message-signing-and-encryption.md) verschlüsselte Nachrichten.
+- [S/MIME)](/exchange/security-and-compliance/smime-exo/smime-exo) verschlüsselte Nachrichten.
 - Sie haben die Dynamische Zustellungsaktion in einer Richtlinie für sichere Anlagen konfiguriert, der Empfänger unterstützt jedoch keine dynamische Zustellung (z. B. ist der Empfänger ein Postfach in einer lokalen Exchange Organisation). Sichere Links [in Microsoft Defender for Office 365](set-up-safe-links-policies.md) können jedoch Office Dateianlagen überprüfen, die URLs [](configure-global-settings-for-safe-links.md) enthalten (je nachdem, wie die globalen Einstellungen für sichere Links konfiguriert sind).
 
 ## <a name="submitting-files-for-malware-analysis"></a>Übermitteln von Dateien für die Schadsoftwareanalyse

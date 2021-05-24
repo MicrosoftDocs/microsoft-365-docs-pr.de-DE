@@ -15,12 +15,12 @@ ms.collection:
 - m365initiative-viva-learning
 localization_priority: None
 description: Erfahren Sie, wie Sie Microsoft Viva Learning (Preview) im Teams konfigurieren.
-ms.openlocfilehash: 40e659796b22097f42515c0cbb704bdaa4ccc972
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: e5af676752064738e26f9b934a60973cb9b0200d
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52333518"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625298"
 ---
 # <a name="set-up-microsoft-viva-learning-preview-in-the-teams-admin-center"></a>Einrichten von Microsoft Viva Learning (Preview) im Teams Admin Center
 
@@ -28,6 +28,28 @@ ms.locfileid: "52333518"
 > Die Informationen in diesem Artikel beziehen sich auf ein Vorschauprodukt, das möglicherweise erheblich geändert wird, bevor es kommerziell veröffentlicht wird. 
 
 Der Teams installiert Viva Learning (Preview) und wendet Berechtigungsrichtlinien über das Teams Admin Center an.
+
+1. Für die öffentliche Vorschau müssen Sie zuerst die Updaterichtlinie festlegen. Weitere Informationen finden Sie unter Teams website [Microsoft Teams Public Preview](/MicrosoftTeams/public-preview-doc-updates).
+
+    1. Melden Sie sich beim Teams Admin Center an.
+
+    2. Wählen **Teams**  >  **Updaterichtlinien aus.**
+
+    3. Klicken Sie auf **Hinzufügen**. 
+
+    4. Benennen Sie die Updaterichtlinie, fügen Sie eine Richtlinie hinzu, und aktivieren Sie **Vorschaufeatures anzeigen.**
+
+2. Der Administrator muss benutzer über das Richtlinienupdate benachrichtigen, damit er seinen Build in die öffentliche Vorschau für Teams. 
+
+    1. Der Benutzer muss sein Profilbild auswählen – > Informationen – > Vorschau anzeigen.
+   
+        ![Obere Navigation in der Teams, die das Benutzerprofil zeigt](../media/learning/learning-app-select-profile-teams.png)
+    
+    2. Der Benutzer muss die Bedingungen der öffentlichen Vorschau akzeptieren.
+
+        ![Wechseln zum öffentlichen Vorschau-Build](../media/learning/learning-app-switch-to-public-preview.png)
+ 
+3. For organizations that have restrictive policies and need to enable Viva Learning, follow the process in the next section.
 
 ## <a name="manage-settings-for-viva-learning-preview"></a>Verwalten von Einstellungen für Viva Learning (Vorschau)
 

@@ -18,12 +18,12 @@ description: Administratoren und Endbenutzer können erfahren, wie Sie Nachricht
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e0a6f564d82750c5ab8156680854c2453cda6971
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9c3a02c710472a996245a38d996ff4485efd1748
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206501"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624025"
 ---
 # <a name="manually-submit-messages-to-microsoft-for-analysis"></a>Manuelles Übermitteln von Nachrichten zur Analyse an Microsoft
 
@@ -54,7 +54,6 @@ Wenn Sie eine Nachricht erhalten, die die Spamfilterung passiert hat, die als Sp
 1. Erstellen Sie eine neue leere E-Mail-Nachricht mit einem der folgenden Empfänger:
 
    - **Junk**: `junk@office365.microsoft.com`
-
    - **Phishing**: `phish@office365.microsoft.com`
 
 2. Ziehen Sie die Junk- oder Phishingnachricht in die neue Nachricht, und legen Sie sie ab. Dadurch wird die Junk- oder Phishingnachricht als Anlage in der neuen Nachricht gespeichert. Kopieren Sie nicht den Inhalt der Nachricht, und fügen Sie ihn nicht ein, oder geben Sie die Nachricht weiter (wir benötigen die ursprüngliche Nachricht, damit wir die Nachrichtenkopfzeilen überprüfen können).
@@ -62,9 +61,7 @@ Wenn Sie eine Nachricht erhalten, die die Spamfilterung passiert hat, die als Sp
    > [!NOTE]
    >
    > - Sie können mehrere Nachrichten in der neuen Nachricht anfügen. Stellen Sie sicher, dass alle Nachrichten denselben Typ haben: Entweder Phishingnachrichten oder Junk-E-Mail-Nachrichten.
-   >
    > - Lassen Sie den Nachrichtentext leer.
-   >
    > - Verwenden Sie für die angefügten Nachrichten Outlook .msg (Standardformat) oder EML (Standardformat Outlook Webformat).
 
 3. Klicken Sie nach Abschluss des Abschlusses auf **Senden**.
@@ -77,19 +74,16 @@ Wenn Sie eine Nachricht erhalten, die die Spamfilterung passiert hat, die als Sp
 > [!TIP]
 > Anstatt die folgenden Verfahren zum Melden falsch positiver Ergebnisse zu verwenden, können Benutzer in Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) das Berichtsnachrichten-Add-In oder das Phishing-Add-In Melden verwenden. Informationen zum Installieren und Verwenden dieser Tools finden Sie unter [Enable the Report Message add-in](enable-the-report-message-add-in.md) und Enable the Report Phishing [add-in](enable-the-report-phish-add-in.md).
 
-
 Wenn eine Nachricht fälschlicherweise als Spam identifiziert wurde, können Sie die Nachricht an das Microsoft Spam Analysis Team übermitteln. Die Analysten werten die Nachricht aus, und (abhängig von den Ergebnissen der Analyse) können die dienstweiten Filter angepasst werden, um die Nachricht durch zu ermöglichen.
 
-1. Erstellen Sie eine neue leere E-Mail-Nachricht mit `not_junk@office365.microsoft.com` als Empfänger:
+1. Erstellen Sie eine neue leere E-Mail-Nachricht mit `not_junk@office365.microsoft.com` als Empfänger.
 
 2. Ziehen Sie die falsch identifizierte Nachricht in die neue Nachricht, und legen Sie sie ab. Dadurch wird die falsch identifizierte Nachricht als Anlage in der neuen Nachricht gespeichert. Kopieren Sie nicht den Inhalt der Nachricht, und fügen Sie ihn nicht ein, oder geben Sie die Nachricht weiter (wir benötigen die ursprüngliche Nachricht, damit wir die Nachrichtenkopfzeilen überprüfen können).
 
    > [!NOTE]
    >
    > - Sie können mehrere Nachrichten in der neuen Nachricht anfügen. Stellen Sie sicher, dass alle Nachrichten denselben Typ haben: Entweder Phishingnachrichten oder Junk-E-Mail-Nachrichten.
-   >
    > - Lassen Sie den Nachrichtentext leer.
-   >
    > - Verwenden Sie für die angefügten Nachrichten Outlook .msg (Standardformat) oder EML (Standardformat Outlook Webformat).
 
 3. Klicken Sie nach Abschluss des Abschlusses auf **Senden**.
@@ -103,4 +97,4 @@ Die Daten befinden sich in Office 365 Compliancegrenze in nordamerikanischen Rec
 
 ## <a name="create-a-mail-flow-rule-to-receive-copies-of-messages-that-are-reported-to-microsoft"></a>Erstellen einer Nachrichtenflussregel zum Empfangen von Kopien von Nachrichten, die an Microsoft gemeldet werden
 
-Anweisungen finden Sie unter [Verwenden von Nachrichtenflussregeln, um zu sehen, was Ihre Benutzer an Microsoft melden.](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)
+Anweisungen finden Sie unter [Verwenden von Nachrichtenflussregeln, um zu sehen, welche Benutzer Microsoft melden.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-see-what-users-are-reporting-to-microsoft)

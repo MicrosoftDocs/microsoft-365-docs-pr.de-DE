@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie die Junk-E-Mail-Einstellungen in Exchange Online konfigurieren. Viele dieser Einstellungen stehen Benutzern in Outlook oder Outlook im Web zur Verfügung.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f7e5d99198e539a46c240fadd2a7a8201236026f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 5a401321645530d3d66ebcccd6b8aea27ce21d6e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51203946"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624801"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Konfigurieren der Junk-E-Mail-Einstellungen für Exchange Online-Postfächer
 
@@ -54,11 +54,11 @@ Administratoren können mithilfe Exchange Online PowerShell den Status der Junk-
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie können powerShell Exchange Online verwenden, um die Verfahren in diesem Artikel zu tun. Wie Sie eine Verbindung mit Exchange Online-PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online-PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
+- Sie können powerShell Exchange Online verwenden, um die Verfahren in diesem Artikel zu tun. Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Bevor Sie die Verfahren in diesem Artikel Exchange Online, müssen Ihnen die entsprechenden Berechtigungen zugewiesen werden. Insbesondere benötigen Sie die Rolle E-Mail-Empfänger (die standardmäßig  den Rollengruppen Organisationsverwaltung, Empfängerverwaltung und benutzerdefinierte E-Mail-Empfänger zugewiesen ist) oder die Rolle Benutzeroptionen (die standardmäßig den Rollengruppen Organisationsverwaltung und  **Helpdesk** zugewiesen ist).     Informationen zum Hinzufügen von Benutzern zu Rollengruppen in Exchange Online finden Sie unter [Modify role groups in Exchange Online](/Exchange/permissions-exo/role-groups#modify-role-groups). Beachten Sie, dass Benutzer mit Standardberechtigungen dieselben Verfahren für ihr eigenes Postfach verwenden können, solange sie Zugriff auf [Exchange Online PowerShell haben.](/powershell/exchange/disable-access-to-exchange-online-powershell)
 
-- In Umgebungen mit eigenständigem EOP, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie im lokalen Exchange Nachrichtenflussregeln zur Übersetzung der EOP-Spamfilterbewertung konfigurieren (auch als Transportregeln bezeichnet), damit die Junk-E-Mail-Regel die Nachricht in den Junk-E-Mail-Ordner verschieben kann. Ausführliche Informationen finden Sie unter [Konfigurieren eigenständiger EOP zum Verschieben von Spam in den Junk-E-Mail-Ordner in Hybridumgebungen](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md).
+- In Hybridumgebungen, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet) in der lokalen Exchange konfigurieren, um das EOP-Spamfilter-Urteil zu übersetzen, damit die Junk-E-Mail-Regel die Nachricht in den Junk-E-Mail-Ordner verschieben kann. Weitere Informationen finden Sie unter [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid).
 
 - Sichere Absender für freigegebene Postfächer werden nicht entwurfsweise mit Azure AD und EOP synchronisiert.
 

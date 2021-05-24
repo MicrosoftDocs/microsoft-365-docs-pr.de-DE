@@ -15,12 +15,12 @@ ms.custom:
 description: In diesem Artikel erfahren Sie mehr über Berichte und Problembehandlungstools, die für Microsoft Exchange Online (EOP)-Administratoren verfügbar sind.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d5e5493925a17725bfb9d6698b3f94050960ccc7
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ae55ded9d907754161813c9f7bfa7eeb14c558a8
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205723"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625029"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Berichterstellung und Nachrichtenverfolgung in EOP
 
@@ -77,7 +77,7 @@ Weitere Informationen finden Sie unter Nachrichtenverfolgung [im Security & Comp
 
 ## <a name="audit-logging"></a>Überwachungsprotokollierung
 
-Verfolgt bestimmte Änderungen durch Administratoren Ihrer Organisation. Diese Berichte können Sie zum Behandeln von Konfigurationsproblemen sowie zum Ermitteln der Ursache von Sicherheits- oder Kompatibilitätsproblemen heranziehen. Weitere [Informationen finden Sie unter Überwachung von Berichten in EOP](auditing-reports-in-eop.md).
+Verfolgt bestimmte Änderungen durch Administratoren Ihrer Organisation. Diese Berichte können Sie zum Behandeln von Konfigurationsproblemen sowie zum Ermitteln der Ursache von Sicherheits- oder Kompatibilitätsproblemen heranziehen. Weitere [Informationen finden Sie unter Überwachung](/exchange/security-and-compliance/exchange-auditing-reports/exchange-auditing-reports)von Berichten in Exchange Online .
 
 ## <a name="reporting-and-message-trace-data-availability-and-latency"></a>Meldung und Verfügbarkeit und Latenz Nachrichtenverfolgungsdaten
 
