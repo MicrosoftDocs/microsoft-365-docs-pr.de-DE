@@ -18,13 +18,13 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 - MOE150
-description: Übersicht über die Microsoft-Produktivitätsbewertung.
-ms.openlocfilehash: 1d5e163e6ec8a394065c09e51879582d101a75bf
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+description: Erfahren Sie, wie die Microsoft-Produktivitätsbewertung Messwerte für Personen- und Technologieerfahrungen widerspiegelt und vergleichen Sie sie mit Organisationen ähnlicher Größe.
+ms.openlocfilehash: ded8b3ee6cbe6df308a4e7388107ea394debe020
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345238"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52593841"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft-Produktivitätsbewertung 
 
@@ -44,35 +44,9 @@ Es werden Metriken, Erkenntnisse und Empfehlungen in zwei Bereichen bereitgestel
 
 - **Technologieerfahrung:** Ihre Organisation hängt von zuverlässigen und leistungsfähigen Technologien wie auch von der effizienten Nutzung von Microsoft 365 ab. [Endpunktanalyse:](https://aka.ms/endpointanalytics) Sie hilft Ihnen zu verstehen, wie Ihre Organisation durch Probleme mit der Leistung und Integrität Ihrer Hardware und Software beeinträchtigt werden kann. Die Microsoft 365 Apps-Integrität hilft Ihnen zu verstehen, ob Microsoft 365-Apps auf den Geräten in Ihrer Organisation in den empfohlenen Kanälen ausgeführt werden.
 
+## <a name="before-you-begin"></a>Bevor Sie beginnen
+
 Einen Überblick und Einzelheiten zu den Voraussetzungen finden Sie unter [Was ist die Endpunktanalyse](/mem/analytics/overview). Weitere Informationen zu den Insights in die Microsoft 365-Netzwerkverbindungen finden Sie unter [Überblick über die Netzwerkverbindungen](../../enterprise/microsoft-365-networking-overview.md).
-  
-
-## <a name="how-the-score-is-calculated"></a>So wird Ihre Bewertung berechnet
-
-Ihre Produktivitätsbewertung basiert auf den kombinierten Bewertungen der Kategorien Mitarbeiter- und Technologieerfahrung. Jede Kategorie wird gleich gewichtet, mit einem Total von 100 Punkten. Die höchste mögliche Produktivitätsbewertung liegt bei 800.
-
-### <a name="score-categories"></a>Bewertungskategorien 
-
-- Kommunikation (100 Punkte)
-- Besprechungen (100 Punkte)
-- Zusammenarbeit an Inhalten (100 Punkte)
-- Teamarbeit (100 Punkte)
-- Mobilität (100 Punkte)
-- Endpunktanalyse (100 Punkte)
-- Netzwerkverbindungen (100 Punkte)
-- Microsoft 365 Apps-Integrität (100 Punkte)
-- **Höchstmögliches Gesamtergebnis: 800 Punkte**
- 
-In jeder Bewertungskategorie werden die wichtigsten Indikatoren für die Verwendung von Microsoft 365 in Ihrer Organisation auf dem Weg der digitalen Transformation quantifiziert. Wir bieten 28-Tage- und 180-Tage-Ansichten der Schlüsselaktivitäten. Wir stellen auch unterstützende Metriken zur Verfügung, die nicht Teil der Punkteberechnung sind, aber wichtig sind, um zugrunde liegende Nutzungsstatistiken und Konfigurationen zu identifizieren, bei denen Sie ansetzen können.
-
-### <a name="products-included-in-productivity-score"></a>Produkte, die bei der Produktivitätsbewertung berücksichtigt werden 
-
-Die Produktivitätsbewertung enthält Daten zu Exchange, SharePoint, OneDrive, Microsoft Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer und Skype.
-
-Das Bewertungsergebnis Ihrer Organisation wird täglich aktualisiert und spiegelt Benutzeraktionen wider, die in den letzten 28 Tagen (einschließlich des aktuellen Tags) durchgeführt wurden.
-
-
-## <a name="prerequisites"></a>Voraussetzungen 
 
 Für Mitarbeitererfahrungsdaten benötigen Sie ein Abonnement für Microsoft 365 für Business oder Office 365 für Unternehmen. Für Endpunktanalysedaten Ihres Mandanten müssen Sie Microsoft Intune zu Ihrem Abonnement hinzufügen. Intune hilft beim Schutz Ihrer Unternehmensdaten durch die Verwaltung von Geräten und Apps. Sobald Sie Intune hinzugefügt haben, können Sie die Endpunktanalyse innerhalb der Intune-Umgebung aktivieren. Um mehr über Microsoft Intune zu erfahren, lesen Sie die [Microsoft Intune-Dokumentation](/mem/intune/). 
 
@@ -97,7 +71,31 @@ Das Modell der Rollenbasierten Zugriffssteuerung für die Produktivitätsbewertu
 
 Microsoft hat sich zum Schutz persönlicher Daten verpflichtet. In diesem [Datenschutzdokument](privacy.md) werden die von uns bereitgestellten Steuerelemente erläutert, mit denen Sie als IT-Administrator Ihrer Organisation sicherstellen können, dass die Informationen nutzbar sind und zugleich das Vertrauen, das Sie in Microsoft setzen, nicht beeinträchtigt wird.
 
-Sie finden die Bewertung über die Startseite von Microsoft 365 Admin unter **Berichte** > **Produktivitätsbewertung**.
+Sie finden die Bewertung über die Startseite von Microsoft 365 Admin unter **Berichte** > **Produktivitätsbewertung**.
+  
+## <a name="how-the-score-is-calculated"></a>So wird Ihre Bewertung berechnet
+
+Ihre Produktivitätsbewertung basiert auf den kombinierten Bewertungen der Kategorien Mitarbeiter- und Technologieerfahrung. Jede Kategorie wird gleich gewichtet, mit einem Total von 100 Punkten. Die höchste mögliche Produktivitätsbewertung liegt bei 800.
+
+### <a name="score-categories"></a>Bewertungskategorien 
+
+- Kommunikation (100 Punkte)
+- Besprechungen (100 Punkte)
+- Zusammenarbeit an Inhalten (100 Punkte)
+- Teamarbeit (100 Punkte)
+- Mobilität (100 Punkte)
+- Endpunktanalyse (100 Punkte)
+- Netzwerkverbindungen (100 Punkte)
+- Microsoft 365 Apps-Integrität (100 Punkte)
+- **Höchstmögliches Gesamtergebnis: 800 Punkte**
+ 
+In jeder Bewertungskategorie werden die wichtigsten Indikatoren für die Verwendung von Microsoft 365 in Ihrer Organisation auf dem Weg der digitalen Transformation quantifiziert. Wir bieten 28-Tage- und 180-Tage-Ansichten der Schlüsselaktivitäten. Wir stellen auch unterstützende Metriken zur Verfügung, die nicht Teil der Punkteberechnung sind, aber wichtig sind, um zugrunde liegende Nutzungsstatistiken und Konfigurationen zu identifizieren, bei denen Sie ansetzen können.
+
+### <a name="products-included-in-productivity-score"></a>Produkte, die bei der Produktivitätsbewertung berücksichtigt werden 
+
+Die Produktivitätsbewertung enthält Daten zu Exchange, SharePoint, OneDrive, Microsoft Teams, Word, Excel, PowerPoint, OneNote, Outlook, Yammer und Skype.
+
+Das Bewertungsergebnis Ihrer Organisation wird täglich aktualisiert und spiegelt Benutzeraktionen wider, die in den letzten 28 Tagen (einschließlich des aktuellen Tags) durchgeführt wurden.
 
 ## <a name="interpreting-your-organizations-productivity-score"></a>Interpretieren der Produktivitätsbewertung Ihrer Organisation 
 
@@ -161,6 +159,6 @@ Teilen Sie uns Ihre Gedanken zur Produktivitätsbewertung mit und Ihre Ideen, wi
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Überwachen der Microsoft 365-Aktivitäten mit Hilfe von Berichten](/microsoft-365/admin/activity-reports/activity-reports) (Artikel)\
-[Aktivieren von Analysen zur Nutzung von Microsoft 365](/microsoft-365/admin/usage-analytics/enable-usage-analytics) (Artikel)\
-[Übersicht über das Microsoft 365 Admin Center](/microsoft-365/business-video/admin-center-overview) (Video)
+[Überwachen der Microsoft 365-Aktivitäten mit Hilfe von Berichten](../../admin/activity-reports/activity-reports.md) (Artikel)\
+[Aktivieren von Analysen zur Nutzung von Microsoft 365](../../admin/usage-analytics/enable-usage-analytics.md) (Artikel)\
+[Übersicht über das Microsoft 365 Admin Center](../../business-video/admin-center-overview.md) (Video)

@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Administratoren können sich über die Anti-Spoofing-Funktionen informieren, die in Exchange Online Protection (EOP) verfügbar sind und die dazu beitragen können, Phishing-Angriffe von gefälschten Absendern und Domänen abzuschwächen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 76ad8ac14de7b176ae12dc02272e31e790b6b410
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 7680c2f4eae54aa53eba72b328baf1bf92fbcf98
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52291031"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537967"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Schutz vor Spoofing in EOP
 
@@ -44,17 +44,28 @@ Wenn es um den Schutz der Benutzer geht, nimmt Microsoft die Bedrohung durch Phi
 
 Die folgenden Anti-Spoofing-Technologien stehen in EOP zur Verfügung:
 
-- **Spoofing Intelligence**: Überprüfen Sie gefälschte Nachrichten von Absendern in internen und externen Domänen und lassen Sie diese Absender zu oder blockieren Sie sie. Weitere Informationen finden Sie unter [Konfigurieren der Spoofintelligenz in Microsoft 365](learn-about-spoof-intelligence.md).
-
-- **Anti-Phishing-Richtlinien**: In EOP können Sie mit Anti-Phishing-Richtlinien Spoofing-Informationen ein- oder ausschalten, nicht authentifizierte Absenderkennung in Outlook ein- oder ausschalten und die Aktion für blockierte Spoofing-Absender festlegen (Verschieben in den Junk-E-Mail-Ordner oder Quarantäne). Erweiterte Anti-Phishing-Richtlinien, die in Microsoft Defender für Office 365 verfügbar sind, umfassen außerdem Einstellungen zum Schutz vor Identitätsvortäuschung (geschützte Absender und Domänen), Postfach-Intelligence-Einstellungen und anpassbare erweiterte Phishing-Schwellenwerte. Weitere Informationen finden Sie unter [Anti-Phishing-Richtlinien in Microsoft 365](set-up-anti-phishing-policies.md).
-
 - **E-Mail-Authentifizierung**: ein wesentlicher Bestandteil aller Anti-Spoofing-Anstrengungen ist die Verwendung von E-Mail-Authentifizierung (auch als E-Mail-Überprüfung bezeichnet) durch SPF-, DKIM- und DMARC-Einträge in DNS. Sie können diese Einträge für Ihre Domänen so konfigurieren, dass Ziel-E-Mail-Systeme die Gültigkeit von Nachrichten überprüfen können, die von Absendern in Ihren Domänen stammen. Bei eingehenden Nachrichten erfordert Microsoft 365 eine E-Mail-Authentifizierung für Absenderdomänen. Weitere Informationen finden Sie unter [E-Mail-Authentifizierung in Microsoft 365](email-validation-and-authentication.md).
 
-Ab Oktober 2018 ist der Anti-Spoofing-Schutz in EOP verfügbar.
+  EOP analysiert und blockiert Nachrichten, die nicht durch die Kombination von standardmäßigen E-Mail-Authentifizierungsmethoden und Absender-Reputations-Techniken authentifiziert werden können.
 
-EOP analysiert und blockiert Nachrichten, die nicht durch die Kombination von standardmäßigen E-Mail-Authentifizierungsmethoden und Absender-Reputations-Techniken authentifiziert werden können.
+  ![EOP-Anti-Spoofing-Prüfungen](../../media/eop-anti-spoofing-protection.png)
 
-![EOP-Anti-Spoofing-Prüfungen](../../media/eop-anti-spoofing-protection.png)
+- **Spoofintelligenz-Erkenntnis**: Überprüfen Sie gefälschte Nachrichten von Absendern in internen und externen Domänen in den letzten 7 Tagen und lassen Sie diese Absender zu oder blockieren Sie sie. Weitere Informationen finden Sie unter [Spoofintelligenz-Erkenntnisse in EOP](learn-about-spoof-intelligence.md).
+
+- **Zulassen oder Blockieren von Spoofingabsendern in der Liste Mandantenzulassungsliste/ -sperrliste**: Wenn Sie die Sicherheitsbewertung in dem Spoofintelligenz-Erkenntnis außer Kraft setzen, wird der Spoofingabsender zu einem manuellen zugelassenen oder blockierten Eintrag, die nur auf der Registerkarte **Spoofen** in der Mandantenzulassungsliste/ -sperrliste angezeigt wird. Sie können auch zugelassene oder blockierte Einträge für Spoofingabsender erstellen, bevor diese von der Spoofintelligenz erkannt werden. Weitere Informationen finden Sie unter [Verwalten der Mandantenzulassungsliste/ -sperrliste in EOP](tenant-allow-block-list.md).
+
+- **Antiphishingrichtlinien**: In EOP enthalten Antiphishingrichtlinien die folgenden Antispoofingeinstellungen:
+  - Aktivieren oder Deaktivieren der Spoofintelligenz.
+  - Aktivieren oder Deaktivieren der Identifizierung nicht authentifizierter Absender in Outlook.
+  - Angeben der Aktion für blockierte Spoofingsbsender.
+
+  Weitere Informationen finden Sie unter [Spoofeinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md#spoof-settings).
+
+  **Hinweis**: Antiphishingrichtlinien in Microsoft Defender für Office 365 enthalten zusätzlichen Schutz, einschließlich des **Identitätswechsel**-Schutzes. Weitere Informationen finden Sie unter [Exklusive Einstellungen in Antiphishingrichtlinien in Microsoft Defender für Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+
+- **Bericht „Erkannte Fälschungen“**“ Weitere Informationen finden Sie unter [Bericht „Erkannte Fälschungen“](view-email-security-reports.md#spoof-detections-report).
+
+  **Hinweis**: Defender für Office 365-Organisationen können auch Echtzeiterkennungen (Plan 1) oder den Sicherheitsrisiken-Explorer (Plan 2) verwenden, um Informationen zu Phishingversuchen anzeigen. Weitere Informationen finden Sie unter [Microsoft 365 Untersuchung von und Antwort auf Bedrohungen](office-365-ti.md).
 
 ## <a name="how-spoofing-is-used-in-phishing-attacks"></a>Verwenden von Spoofing bei Phishingangriffen
 
@@ -127,12 +138,6 @@ Microsoft unterscheidet zwei verschiedene Typen von gefälschten Nachrichten:
 
 Weitere Informationen über DMARC finden Sie unter [Verwenden von DMARC zur Überprüfung von E-Mails in Microsoft 365](use-dmarc-to-validate-email.md).
 
-## <a name="reports-of-how-many-messages-were-marked-as-spoofed"></a>Berichte über die Anzahl von Nachrichten, die als gefälscht eingestuft wurden
-
-EOP-Organisationen können den Bericht **Erkannte Fälschungen** im Berichte-Dashboard im Security & Compliance Center verwenden. Weitere Informationen finden Sie unter [Bericht „Erkannte Fälschungen“](view-email-security-reports.md#spoof-detections-report).
-
-Microsoft Defender für Office 365-Organisationen können den Sicherheitsrisiken-Explorer im Security & Compliance Center verwenden, um Informationen zu Phishingversuchen anzuzeigen. Weitere Informationen finden Sie unter [Microsoft 365 Untersuchung von und Antwort auf Bedrohungen](office-365-ti.md).
-
 ## <a name="problems-with-anti-spoofing-protection"></a>Probleme mit dem Antispoofingschutz
 
 Mailinglisten (auch bekannt als Diskussionslisten) haben bekanntermaßen Probleme mit Anti-Spoofing. Dies wird durch die Art verursacht, auf die sie Nachrichten weiterleiten und modifizieren.
@@ -161,7 +166,7 @@ Um Nachrichten aus Diskussionslisten dabei zu helfen, die Anti-Spoofing-Prüfung
 
     Wenn genügend Absender den Domänenbesitzern antworten und darum bitten, E-Mail-Authentifizierungsdatensätze einzurichten, werden diese möglicherweise dazu angespornt, die entsprechenden Maßnahmen zu ergreifen. Microsoft arbeitet zwar auch mit Domänenbesitzern zusammen, um die erforderlichen Datensätze zu veröffentlichen, es hilft jedoch, wenn einzelne Benutzer sie zusätzlich dazu auffordern.
 
-  - Erstellen Sie in Ihrem E-Mail-Client Regeln, um die Nachrichten in den Posteingang zu verschieben. Sie können auch Ihre Administratoren bitten, Außerkraftsetzungen so zu konfigurieren, wie dies in [Spoof-Intelligenz zur Konfiguration zulässiger Absender unauthentifizierter E-Mails verwenden](email-validation-and-authentication.md#use-spoof-intelligence-to-configure-permitted-senders-of-unauthenticated-email) beschrieben ist.
+  - Erstellen Sie in Ihrem E-Mail-Client Regeln, um die Nachrichten in den Posteingang zu verschieben. Sie können Ihre Administratoren auch bitten, Außerkraftsetzungen zu konfigurieren, wie dies unter [Spoofintelligenz-Erkenntnis in EOP](learn-about-spoof-intelligence.md) und [Verwalten der Mandantenzulassungsliste/ -sperrliste](tenant-allow-block-list.md).
 
   - Erstellen Sie ein Supportticket für Microsoft 365, um eine Außerkraftsetzung für die Diskussionsliste zu erstellen, damit sie als seriöser Empfänger gehandhabt wird. Weitere Informationen finden Sie unter [Kontaktieren des Supports für Business-Produkte – Administratorhilfe](../../business-video/get-help-support.md).
 

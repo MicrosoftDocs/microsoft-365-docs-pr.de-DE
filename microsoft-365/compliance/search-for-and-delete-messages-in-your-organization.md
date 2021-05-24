@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Verwenden Sie im Security & Compliance Center die Funktion zum Suchen und Löschen, um eine E-Mail-Nachricht in allen Postfächern in Ihrer Organisation zu suchen und daraus zu löschen.
-ms.openlocfilehash: b7bb1008120df8efefc983d526d90e8397b3a89e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 629b236be3f857da47674cda9350d8b89e6f3445
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924235"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52537643"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Suchen nach und Löschen von E-Mail-Nachrichten
 
@@ -41,7 +41,10 @@ Mit der Inhaltssuche können Sie alle Postfächer Ihrer Organisation nach E-Mail
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Zum Erstellen und Ausführen einer Inhaltssuche müssen Sie Mitglied der Rollengruppe **eDiscovery-Manager** sein oder über die Verwaltungsrolle **Compliancesuche** verfügen. Um Nachrichten zu löschen, müssen Sie Mitglied der Rollengruppe **Organisationsverwaltung** sein, oder über die Verwaltungsrolle **Suchen und Löschen** verfügen. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](assign-ediscovery-permissions.md).
+- Zum Erstellen und Ausführen einer Inhaltssuche müssen Sie Mitglied der Rollengruppe für **eDiscovery-Manager** sein, oder Ihnen muss die **Compliancesuche**-Rolle im Security & Compliance Center zugewiesen sein. Um Nachrichten löschen zu können, müssen Sie Mitglied der Rollengruppe **Organisationsverwaltung** sein, oder Ihnen muss die Rolle zum **Suchen und Löschen** im Security & Compliance Center zugewiesen sein. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](assign-ediscovery-permissions.md).
+
+  > [!NOTE]
+  > Die **Organisationsverwaltung**-Rollengruppe ist sowohl in Exchange Online als auch im Security & Compliance Center vorhanden. Hierbei handelt es sich um separate Rollengruppen, die unterschiedliche Berechtigungen umfassen. Wenn Sie Mitglied der **Organisationsverwaltung** in Exchange Online sind, erhalten Sie nicht die erforderlichen Berechtigungen zum Löschen von E-Mail-Nachrichten. Wenn Ihnen die Rolle **Suchen und Löschen** im Security & Compliance Center nicht zugewiesen wurde (entweder direkt oder über eine Rollengruppe wie **Organisationsverwaltung**), wird in Schritt 3 eine Fehlermeldung angezeigt, wenn Sie das dmdlet **New-ComplianceSearchAction** ausführen, mit der Meldung "Es kann kein Parameter gefunden werden, der dem Parameternamen "Löschen" entspricht“.
 
 - Sie müssen Security & Compliance Center PowerShell verwenden, um Nachrichten zu löschen. Anweisungen zum Herstellen einer Verbindung finden Sie unter [Schritt 2](#step-2-connect-to-security--compliance-center-powershell).
 
@@ -53,11 +56,11 @@ Mit der Inhaltssuche können Sie alle Postfächer Ihrer Organisation nach E-Mail
 
 - E-Mail-Elemente in einer Überprüfung in einem erweiterten eDiscovery-Fall können nicht mithilfe der in diesem Artikel beschriebenen Verfahren gelöscht werden. Der Grund dafür ist, dass Elemente in einer Überprüfungsgruppe in einem Azure-Speicherort und nicht im Live Dienst gespeichert sind. Dies bedeutet, dass Sie nicht von der Inhaltssuche zurückgegeben werden, die Sie in Schritt 1 erstellt haben. Wenn Sie Elemente in einem Überprüfungssatz löschen möchten, müssen Sie den erweiterten eDiscovery-Fall löschen, der den Überprüfungssatz enthält. Weitere Informationen finden Sie unter [Schließen oder Löschen eines erweiterten eDiscovery-Falls](close-or-delete-case.md).
 
-## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>Schritt 1: Erstellen Sie eine Inhaltssuche, um die zu löschende Nachricht zu suchen
+## <a name="step-1-create-a-content-search-to-find-the-message-to-delete"></a>Schritt 1: Erstellen Sie eine Inhaltssuche, um die zu löschende Nachricht zu suchen
 
 Im ersten Schritt wird eine Inhaltssuche erstellt und ausgeführt, um die Nachricht zu suchen, die Sie aus den Postfächern Ihrer Organisation entfernen möchten. Sie können die Suche mithilfe des Security & Compliance Centers oder durch Ausführen der Cmdlets **New-ComplianceSearch** und **Start-ComplianceSearch** erstellen. Nachrichten, die der Abfrage dieser Suche entsprechen, werden gelöscht, indem Sie den Befehl **New-ComplianceSearchAction -Purge** in [Schritt 3](#step-3-delete-the-message) ausführen. Informationen zum Erstellen einer Inhaltssuche und zum Konfigurieren von Suchabfragen finden Sie unter den folgenden Themen:
 
-- [Inhaltssuche in Office 365](content-search.md)
+- [Inhaltssuche in Office 365](content-search.md)
 
 - [Stichwortabfragen für die Inhaltssuche](keyword-queries-and-search-conditions.md)
 
@@ -109,7 +112,7 @@ Der nächste Schritt besteht darin, eine Verbindung mit der Security & Complianc
 
 Nachdem Sie die Verbindung mit der Security & Compliance Center-PowerShell hergestellt haben, führen Sie die Cmdlets **New-ComplianceSearch** und **Start-ComplianceSearch** aus, die Sie im vorherigen Schritt vorbereitet haben.
 
-## <a name="step-3-delete-the-message"></a>Schritt 3: Löschen der Nachricht
+## <a name="step-3-delete-the-message"></a>Schritt 3: Löschen der Nachricht
 
 Nachdem Sie eine Inhaltssuche zum Zurückgeben der Nachricht, die Sie löschen möchten, erstellt und verfeinert sowie eine Verbindung mit Security & Compliance Center PowerShell hergestellt haben, führen Sie als letzten Schritt das **New-ComplianceSearchAction**-Cmdlet aus, um die Nachricht zu löschen. Sie können die Nachricht vorläufig oder endgültig löschen. Eine vorläufig gelöschte Nachricht wird in den Benutzerordner „Wiederherstellbare Elemente“ verschoben und bis zum Ablauf des Aufbewahrungszeitraums für gelöschte Elemente gespeichert. Endgültig gelöschte Nachrichten werden für die dauerhafte Entfernung aus dem Postfach markiert und dauerhaft entfernt, wenn das Postfach das nächste Mal vom Assistenten für verwaltete Ordner abgearbeitet wird. Wenn die Wiederherstellung einzelner Elemente für das Postfach aktiviert ist, werden endgültig gelöschte Elemente nach Ablauf des Aufbewahrungszeitraums für gelöschte Elemente dauerhaft entfernt. Wenn ein Postfach gesperrt wird, bleiben gelöschte Nachrichten erhalten, bis die Aufbewahrungsdauer für das Element abläuft oder bis die Sperre des Postfachs aufgehoben wird.
 

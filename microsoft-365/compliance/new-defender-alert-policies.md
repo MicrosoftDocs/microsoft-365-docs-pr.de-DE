@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: noindex,nofollow
 description: Wir veröffentlichen neue Warnungsrichtlinien für Microsoft Defender für Office 365. Es werden außerdem zwei bestehende Warnungsrichtlinien eingestellt, die durch die neuen ersetzt wurden.
-ms.openlocfilehash: 7074002a78d6e776f24395bf6492177c1d789033
-ms.sourcegitcommit: 1206319a5d3fed8d52a2581b8beafc34ab064b1c
+ms.openlocfilehash: 4a433a5357a524f396935151e2c5895213c6524c
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52086771"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583316"
 ---
 # <a name="new-alert-policies-in-microsoft-defender-for-office-365"></a>Neue Warnungsrichtlinien in Microsoft Defender für Office 365
 
@@ -37,10 +37,10 @@ In der nachstehenden Tabelle sind die neuen sowie die bestehenden Warnungsrichtl
 
 | Neue oder bestehende Warnungsrichtlinie | Name der Warnungsrichtlinie | ID der Warnungsrichtlinie|
 |:-----------------------------|:----------------|:--------------|
-| Neu| **E-Mail-Nachrichten mit schädlicher URL wurden nach der Zustellung entfernt**   | 0179B3F7-3FDA-40C3-8F24-278563978DBB |
-| Neu| **E-Mail-Nachrichten mit schädlicher Datei wurden nach der Übermittlung entfernt**  | 8E6BA277-EF39-404E-AAF1-294F6D9A2B88 |
-| Neu| **E-Mail-Nachrichten aus einer Kampagne wurden zugestellt und später entfernt** | ef850570-5624-42b2-ff0a-08d8d899d578 |
-| Neu|**Schädliche E-Mails wurden zugestellt und später entfernt**                | a1f563cc-fb1f-466b-1fb5-08d8d71a3050 |
+| Neu| **E-Mail-Nachrichten mit schädlicher URL wurden nach der Zustellung entfernt**   | 8e6ba277-ef39-404e-aaf1-294f6d9a2b88 |
+| Neu| **E-Mail-Nachrichten mit schädlicher Datei wurden nach der Übermittlung entfernt**  | 4b1820ec-39dc-45f3-abf6-5ee80df51fd2 |
+| Neu| **E-Mail-Nachrichten aus einer Kampagne wurden zugestellt und später entfernt** | c8522cbb-9368-4e25-4ee9-08d8d899dfab |
+| Neu|**Nachrichten, die nach der Zustellung entfernt wurden**                | b8f6b088-5487-4c70-037c-08d8d71a43fe |
 | Bestehend (wird entfernt)| **E-Mail-Nachrichten mit Phishing-URLs wurden nach der Zustellung entfernt**| EA8169FA-0678-4751-8854-AEBEA7ADECEB |
 | Bestehend (wird entfernt)| **E-Mail-Nachrichten mit Schadsoftware wurden nach der Zustellung entfernt**| 0179B3F7-3FDA-40C3-8F24-278563978DBB |
 ||||
@@ -67,17 +67,17 @@ In der folgenden Tabelle ist aufgeführt, wann die neuen Warnungsrichtlinien dam
 |:------------|:-----|
 | **E-Mail-Nachrichten mit schädlicher URL wurden nach der Zustellung entfernt** (neu) | Warnungen werden ab dem 11. April 2021 ausgelöst.|
 | **E-Mail-Nachrichten mit schädlicher Datei wurden nach der Übermittlung entfernt** (neu) | Warnungen werden ab dem 11. April 2021 ausgelöst. |
-| **E-Mail-Nachrichten aus einer Kampagne wurden zugestellt und später entfernt** (neu) | Warnungen werden ab dem 14. Mai 2021 ausgelöst.|
-| **Schädliche E-Mails wurden zugestellt und später entfernt** (neu) | Warnungen werden ab dem 14. Mai 2021 ausgelöst.|
-| **E-Mail-Nachrichten mit Phishing-URLs wurden nach der Zustellung entfernt** (bestehend, wird entfernt)| Die Warnungsrichtlinie wird am 14. Mai 2021 entfernt. Lesen Sie hierzu den Abschnitt [Was Sie tun müssen, um sich auf diese Änderungen vorzubereiten](#what-you-need-to-do-to-prepare-for-these-changes).|
-| **E-Mail-Nachrichten mit Schadsoftware wurden nach der Zustellung entfernt** (bestehend, wird entfernt) | Die Warnungsrichtlinie wird am 14. Mai 2021 entfernt. Lesen Sie hierzu den Abschnitt [Was Sie tun müssen, um sich auf diese Änderungen vorzubereiten](#what-you-need-to-do-to-prepare-for-these-changes). |
+| **E-Mail-Nachrichten aus einer Kampagne wurden zugestellt und später entfernt** (neu) | Warnungen werden ab dem 28. Mai 2021 ausgelöst.|
+| **Schädliche E-Mails wurden zugestellt und später entfernt** (neu) | Warnungen werden ab dem 28. Mai 2021 ausgelöst.|
+| **E-Mail-Nachrichten mit Phishing-URLs wurden nach der Zustellung entfernt** (bestehend, wird entfernt)| Die Warnungsrichtlinie wird am 28. Mai 2021 entfernt. Lesen Sie hierzu den Abschnitt [Was Sie tun müssen, um sich auf diese Änderungen vorzubereiten](#what-you-need-to-do-to-prepare-for-these-changes).|
+| **E-Mail-Nachrichten mit Schadsoftware wurden nach der Zustellung entfernt** (bestehend, wird entfernt) | Die Warnungsrichtlinie wird am 28. Mai 2021 entfernt. Lesen Sie hierzu den Abschnitt [Was Sie tun müssen, um sich auf diese Änderungen vorzubereiten](#what-you-need-to-do-to-prepare-for-these-changes). |
 |||
 
 Die Änderungen an den Warnungsschweregraden werden bis zum 14. Mai 2021 für alle Organisationen veröffentlicht.
 
 ## <a name="how-this-will-affect-your-organization"></a>Auswirkungen auf Ihre Organisation
 
-Die neuen Warnungen werden ab den oben genannten Terminen ausgelöst und beginnen mit dem Triggern von AIR-Untersuchungen in Ihrer Organisation. Um die Auswirkungen auf Sicherheitsorganisationen zu verringern, die die zwei zu entfernenden Warnungen implementiert haben, werden zwischen dem 5. April 2021 und dem 14. Mai 2021 durch die bestehenden *und* die neuen Warnungsrichtlinien ausgelöste Warnungen angezeigt. Dadurch haben Sicherheitsteams ausreichend Zeit, die erforderlichen Änderungen vorzunehmen. Um die Sicherheitsteams das Handling des erhöhten Warnungsvolumen während dieser kurzen Dauer zu erleichtern, werden sowohl die alten als auch die neuen Warnungen in derselben AIR-Untersuchung und im selben Vorfall korreliert. Dies schließt insbesondere das folgende Verhalten für Warnungen, AIR-Untersuchungen und Vorfälle ein:
+Die neuen Warnungen werden ab den oben genannten Terminen ausgelöst und beginnen mit dem Triggern von AIR-Untersuchungen in Ihrer Organisation. Um die Auswirkungen auf Sicherheitsorganisationen zu verringern, die die zwei zu entfernenden Warnungen implementiert haben, werden zwischen dem 5. April 2021 und dem 28. Mai 2021 durch die bestehenden *und* die neuen Warnungsrichtlinien ausgelöste Warnungen angezeigt. Dadurch haben Sicherheitsteams ausreichend Zeit, die erforderlichen Änderungen vorzunehmen. Um die Sicherheitsteams das Handling des erhöhten Warnungsvolumen während dieser kurzen Dauer zu erleichtern, werden sowohl die alten als auch die neuen Warnungen in derselben AIR-Untersuchung und im selben Vorfall korreliert. Dies schließt insbesondere das folgende Verhalten für Warnungen, AIR-Untersuchungen und Vorfälle ein:
 
 - **Warnungen**: Standardmäßig werden alte und neue Warnungen als folgende Warnungspaare angezeigt:
 
@@ -109,11 +109,11 @@ Was Sie zur Vorbereitung tun müssen, hängt davon ab, wie Ihre Organisation die
 
   - **E-Mail-Nachrichten mit Schadsoftware wurden nach der Zustellung entfernt**
 
-- Nichts tun. Die bestehenden Warnungsrichtlinien werden am 14. Mai 2021 deaktiviert.
+- Keine Aktion ausführen. Die bestehenden Warnungsrichtlinien werden am 28. Mai 2021 deaktiviert.
 
-**Wenn Sie diese Warnungen implentiert haben:**
+**Wenn Sie diese Warnungen implementiert haben:**
 
-- Beginnen Sie damit, die neuen Alarme als Teil Ihrer Arbeitsabläufe zu verwenden, in Erwartung der Entfernung der bestehenden Alarm-Richtlinie am 14. Mai 2021. Im Falle einer benutzerdefinierten Logik in Ihrem Ticketingsystem, einem Sicherheitspostfach, über das Sie Warnungs-E-Mail-Benachrichtigungen erhalten, oder einer SIEM-Lösung, die vom Warnungsnamen oder der Warnungsrichtlinien-ID (CorrelationId) abhängt, müssen Sie die Logik an die Änderung anpassen.
+- Beginnen Sie damit, die neuen Warnungen als Teil Ihrer Arbeitsabläufe zu verwenden, in Erwartung der Entfernung der bestehenden Warnungsrichtlinie am 28. Mai 2021. Im Falle einer benutzerdefinierten Logik in Ihrem Ticketingsystem, einem Sicherheitspostfach, über das Sie Warnungs-E-Mail-Benachrichtigungen erhalten, oder einer SIEM-Lösung, die vom Warnungsnamen oder der Warnungsrichtlinien-ID (CorrelationId) abhängt, müssen Sie die Logik an die Änderung anpassen.
 
   > [!NOTE]
   > An den Informationen in den Warnungen, Untersuchungen und Vorfällen hat sich nicht geändert. Diese Informationen wurden vielmehr durch zusätzliche Details zu den damit verbundenen Bedrohungen verbessert.
@@ -124,4 +124,4 @@ Was Sie zur Vorbereitung tun müssen, hängt davon ab, wie Ihre Organisation die
 
   - **E-Mail-Nachrichten mit Schadsoftware wurden nach der Zustellung entfernt**
 
-  Alternativ können Sie diese Warnungsrichtlinien aktiviert lassen, bis sie am 14. Mai 2021 gelöscht werden.
+  Alternativ können Sie diese Warnungsrichtlinien aktiviert lassen, bis sie am 28. Mai 2021 gelöscht werden.

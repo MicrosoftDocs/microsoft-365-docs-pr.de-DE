@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Hier erfahren Sie, wie Sie Teams bereitstellen, in denen hochgradig vertrauliche Daten geschützt sind.
-ms.openlocfilehash: d83c10df50d02f47a6d70ee80b2ddbf89fff37d0
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 7c5485a008434b351eebbec3ea1f20b10d82278a
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538195"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583688"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Teams für den Schutz hochgradig vertraulicher Daten konfigurieren
 
@@ -115,31 +115,19 @@ Sie können auch [Teams-Richtlinien](/MicrosoftTeams/teams-policies) verwenden, 
 
 Jedes Mal, wenn Sie ein neues Team mit der Bezeichnung „Hochgradig vertraulich“ erstellen, müssen Sie in SharePoint zwei Schritte ausführen:
 
-- Aktualisieren Sie die Gastfreigabeeinstellungen für die Website im SharePoint Admin Center so, dass sie jenen entsprechen, die Sie beim Erstellen der Bezeichnung vorgenommen haben, und legen Sie für den standardmäßigen Freigabelink *Personen mit vorhandenem Zugriff* fest.
+- Aktualisieren Sie die Gastfreigabeeinstellungen für die Website im SharePoint Online Admin Center, um den standardmäßigen Freigabelink auf *Personen mit vorhandenem Zugriff* zu aktualisieren.
 - Aktualisieren Sie die Website-Freigabeeinstellungen auf der Website selbst, um zu verhindern, dass Mitglieder Dateien, Ordner oder die Website freigeben, und Zugriffsanforderungen ausschalten.
 
-### <a name="site-guest-sharing-settings"></a>Einstellungen für die Gastfreigabe von Websites
+### <a name="site-default-sharing-link-settings"></a>Einstellungen des Standardfreigabelinks der Website
 
-Die Einstellung für die Gastfreigabe, die Sie beim Erstellen der Bezeichnung ausgewählt haben (die sich nur auf die Teammitgliedschaft auswirkt), sollten mit den Gast-Freigabeeinstellungen für die zugeordnete SharePoint-Website wie folgt übereinstimmen:
+So aktualisieren Sie den Standardfreigabelinktyp der Website
 
-|Bezeichnungseinstellung|Einstellung für die SharePoint-Website|
-|:------------|:----------------------|
-|**Office 365-Gruppenbesitzer dürfen Personen außerhalb der Organisation zur Gruppe hinzufügen** ausgewählt|**Neue und vorhandene Gäste** (Standard für neue Teams)|
-|**Office 365-Gruppenbesitzer dürfen Personen außerhalb der Organisation zur Gruppe hinzufügen** nicht ausgewählt|**Nur Personen in Ihrer Organisation**|
-
-So aktualisieren Sie Websiteeinstellungen
 1. Öffnen Sie das [SharePoint Admin Center](https://admin.microsoft.com/sharepoint).
 2. Klicken Sie unter **Websites** auf **Aktive Websites**.
 3. Klicken Sie auf die dem Team zugeordnete Website.
 4. Klicken Sie auf der Registerkarte **Richtlinien** unter **Externe Freigabe** auf **Bearbeiten**.
-5. Wenn Sie beim Erstellen der Bezeichnung „Hochgradig vertraulich“ die Gastfreigabe zugelassen haben, stellen Sie sicher, dass **Neue und vorhandene Gäste** ausgewählt ist. Wenn Sie beim Erstellen der Bezeichnung keine Freigabe zugelassen haben, wählen Sie **Nur Personen in Ihrer Organisation** aus.
-6. Deaktivieren Sie unter "Standardmäßiger Freigabe-Linktyp" das Kontrollkästchen **Identisch mit der Einstellung auf Organisationsebene**, und wählen Sie **Personen mit vorhandenem Zugriff** aus.
-7. Klicken Sie auf **Speichern**.
-
-Wenn Sie dies als Teil des Team-Erstellungsprozesses in Form eines Skripts festlegen möchten, können Sie [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) mit den folgenden Parametern verwenden:
-
-- `-SharingCapability Disabled` um die Gastfreigabe zu deaktivieren (standardmäßig aktiviert)
-- `-DefaultSharingLinkType Internal` um den standardmäßigen Freigabelink zu *Bestimmte Personen* zu ändern
+5. Deaktivieren Sie unter "Standardmäßiger Freigabe-Linktyp" das Kontrollkästchen **Identisch mit der Einstellung auf Organisationsebene**, und wählen Sie **Personen mit vorhandenem Zugriff** aus.
+6. Klicken Sie auf **Speichern**.
 
 #### <a name="private-channels"></a>Private Kanäle
 

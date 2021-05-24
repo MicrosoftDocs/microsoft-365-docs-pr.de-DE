@@ -18,14 +18,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_subscriptions
 search.appverid: MET150
-description: Erfahren Sie, wie Sie Ihr Microsoft 365 verlängern, indem Sie wiederkehrende Abrechnungen aktivieren oder deaktivieren.
+description: Erfahren Sie, wie Sie die meisten Microsoft 365 Business-Abonnements verlängern, indem Sie eine wiederholte Abrechnung deaktivieren oder aktivieren.
 ms.date: 05/04/2021
-ms.openlocfilehash: 7421bb59a26d3c88114ebd9145dcbfe3916e7472
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 43dd467d83375f74c7650262c40021ba631e3c72
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344638"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594037"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Verlängern von Microsoft 365 Business
 

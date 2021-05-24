@@ -23,13 +23,13 @@ search.appverid:
 - BSA160
 ms.assetid: 854b6b2b-0255-4089-8019-b765cff70377
 ROBOTS: NOINDEX
-description: Erfahren Sie mehr über Domänen und die zugehörigen DNS-Einträge, um Domänen verwalten zu können.
-ms.openlocfilehash: f8d8171e306a0206facec1621bf2b1a9f8085757
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Das Domain Name System (DNS) ordnet Computerhostnamen IP-Adressen zu. Ein grundlegendes Verständnis von DNS und Domänenregistrierungsstellen hilft Ihnen dabei, Domänen zu verwalten.
+ms.openlocfilehash: f9982ad55652eac9faf33986bb1481e29897a48e
+ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915662"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52582944"
 ---
 # <a name="dns-basics"></a>Grundlagen von DNS
 
@@ -53,7 +53,7 @@ Domänennamen wie „contoso.com“ werden über ein weltweites System aus Domä
 
 ::: moniker range="o365-21vianet"
 
-Domänennamen wie "contoso.com" werden über ein weltweites System aus Domänenregistrierungsstellen und Datenbanken verwaltet. Hierbei sorgt das Domain Name System (Domänennamensystem, DNS) für die Zuordnung von lesbaren Computerhostnamen zu den IP-Adressen, die von Netzwerkgeräten verwendet werden. Ein grundlegendes Verständnis von DNS und Domänenregistrierungsstellen kann Administratoren helfen, Domänen zu verwalten.
+Domänennamen wie „contoso.com“ werden über ein weltweites System aus Domänenregistrierungsstellen und Datenbanken verwaltet. Hierbei sorgt das Domain Name System (Domänennamensystem, DNS) für die Zuordnung von lesbaren Computerhostnamen zu den IP-Adressen, die von Netzwerkgeräten verwendet werden. Ein grundlegendes Verständnis von DNS und Domänenregistrierungsstellen hilft Administratoren dabei, Domänen zu verwalten.
   
 ::: moniker-end
 
@@ -90,7 +90,7 @@ Zur Einrichtung Ihrer Domäne bei einem Clouddienst wie Microsoft 365 gehört da
   
 Das Internet ist für die Verwendung des DNS eingerichtet, was dafür sorgt, dass wir vertraute Namen wie "contoso.com" verwenden können, um bestimmte Internetspeicherorte zu finden, die hinter den Kulissen eigentlich mit schwer zu merkenden Zahlen, den so genannten IP-Adressen (Internet Protocol) bezeichnet werden. IP-Adressen sehen ähnlich wie 70.42.241.42 aus, und wie Sie sehen, ist es wesentlich einfacher, einen Domänennamen für die Identifikation von Speicherorten wie E-Mail-Hosts und Websites zu verwenden.
   
-Kurz gesagt: Das DNS teilt dem Internet mit, wohin eine E-Mail (wie "jonas@contoso.com") gesendet werden soll oder wo sich eine Website (wie "www.contoso.com") befindet, die Ihren Domänennamen verwendet. Wenn Sie die korrekten Informationen in die korrekten DNS-Einträge für Ihre Domäne eingeben, leitet das DNS alles ordnungsgemäß weiter, d. h. Ihre E-Mails kommen in Microsoft 365 und nicht irgendwo anders an.
+Kurz gesagt: Das DNS teilt dem Internet mit, wohin eine E-Mail (wie "jonas@contoso.com") gesendet werden soll oder wo sich eine Website (wie "www.contoso.com") befindet, die Ihren Domänennamen verwendet. Wenn Sie die korrekten Informationen in die korrekten DNS-Einträge für Ihre Domäne eingeben, leitet das DNS alles ordnungsgemäß weiter, d. h. Ihre E-Mails kommen in Microsoft 365 und nicht irgendwo anders an.
   
 Die DNS-Einträge einer Domäne können aber auch in anderer Weise hilfreich sein. So prüft Exchange beispielsweise einen DNS-Eintrag, der dafür sorgt, dass Outlook automatisch eine Verbindung zum richtigen Exchange-Server herstellt.
   
@@ -122,7 +122,7 @@ Einmal angenommen, der Wert des NS-Eintrags für "contoso.com" würde "godaddy.c
 
 ::: moniker range="o365-21vianet"
 
-Einmal angenommen, der Wert des NS-Eintrags für "contoso.com" würde "hichina.com" lauten. Damit weiß das Internet, dass es bei "hichina.com" nach der Zonendatei suchen muss, in der sich alle anderen DNS-Einträge für "contoso.com" befinden. Zu diesen DNS-Einträgen gehören auch der MX-Eintrag, der angibt, wohin E-Mails für "contoso.com" gesendet werden sollen, sowie weitere Einträge. Wenn der MX-Eintrag einen Wert aufweist, der (allerdings in technischen Begriffen) besagt: "E-Mails an Microsoft 365 senden", dann werden alle E-Mail-Nachrichten, die an E-Mail-Adressen bei "contoso.com" gerichtet sind (wie "joe@contoso.com") dorthin gesendet. Anschließend wird die E-Mail an diesen Speicherort übermittelt, sofern es dort ein Postfach mit dem Namen "joe" gibt.
+Einmal angenommen, der Wert des NS-Eintrags für „contoso.com“ würde „hichina.com“ lauten. Damit weiß das Internet, dass es bei „hichina.com“ nach der Zonendatei suchen muss, in der sich alle anderen DNS-Einträge für „contoso.com“ befinden. Zu diesen DNS-Einträgen gehören auch der MX-Eintrag, der angibt, wohin E-Mails für „contoso.com“ gesendet werden sollen, sowie weitere Einträge. Wenn der MX-Eintrag einen Wert aufweist, der (allerdings in technischen Begriffen) besagt: „E-Mails an Microsoft 365 senden“, dann werden alle E-Mail-Nachrichten, die an E-Mail-Adressen bei „contoso.com“ gerichtet sind (wie „joe@contoso.com“) dorthin gesendet. Anschließend wird die E-Mail an diesen Speicherort übermittelt, sofern es dort ein Postfach mit dem Namen „joe“ gibt.
 
 ::: moniker-end
 
@@ -142,7 +142,7 @@ Warum befindet sich die Zonendatei Ihrer Domäne möglicherweise an einer andere
 
 ::: moniker range="o365-21vianet"
 
-Warum befindet sich die Zonendatei Ihrer Domäne möglicherweise an einer anderen Stelle und nicht bei Ihrer Domänenregistrierungsstelle? Nun, Sie können Ihre Domäne bei einer Domänenregistrierungsstelle wie HiChina registrieren, die DNS-Einträge werden aber möglicherweise von einer anderen Stelle verwaltet, wie einem anderen DNS-Hostinganbieter oder einem Webhostingunternehmen. In den NS-Einträgen für Ihre Domäne werden diese Informationen abgelegt, damit alle DNS-Server wissen, wo sie suchen müssen.
+Warum befindet sich die Zonendatei Ihrer Domäne möglicherweise an einer anderen Stelle und nicht bei Ihrer Domänenregistrierungsstelle? Nun, Sie können Ihre Domäne bei einer Domänenregistrierungsstelle wie HiChina registrieren, die DNS-Einträge werden aber möglicherweise von einer anderen Stelle verwaltet, wie einem anderen DNS-Hostinganbieter oder einem Webhostingunternehmen. Diese Informationen sind in den NS-Einträgen für Ihre Domäne gespeichert, daher wissen alle DNS-Server, wo sie danach suchen müssen.
 
 ::: moniker-end
 
@@ -150,7 +150,7 @@ Warum befindet sich die Zonendatei Ihrer Domäne möglicherweise an einer andere
 ## <a name="why-add-a-domain-in-microsoft-365"></a>Warum muss ich in Microsoft 365 eine Domäne hinzufügen?
 
 
-Indem Sie eine benutzerdefinierte Domäne, z. B. "fourthcoffee.com" zu Microsoft 365 hinzufügen, können Sie eine kürzere, vertrautere E-Mail-Adresse und Benutzer-ID mit dem Dienst verwenden. Wenn Sie sich für ein Microsoft 365-Konto registrieren, [erhalten Sie eine Domäne, die Sie verwenden können](../setup/domains-faq.yml). Diese enthält jedoch "onmicrosoft.com" im Namen. Viele Benutzer möchten lieber die Domäne ihrer Organisation oder ihres Unternehmens hinzufügen, wenn sie die Verwendung von Microsoft 365 für E-Mail planen. 
+Indem Sie eine benutzerdefinierte Domäne, z. B. "fourthcoffee.com" zu Microsoft 365 hinzufügen, können Sie eine kürzere, vertrautere E-Mail-Adresse und Benutzer-ID mit dem Dienst verwenden. Wenn Sie sich für ein Microsoft 365-Konto registrieren, [erhalten Sie eine Domäne, die Sie verwenden können](../setup/domains-faq.yml). Diese enthält jedoch "onmicrosoft.com" im Namen. Viele Benutzer möchten lieber die Domäne ihrer Organisation oder ihres Unternehmens hinzufügen, wenn sie die Verwendung von Microsoft 365 für E-Mail planen. 
   
 > [!NOTE]
 > Wenn Sie nur Microsoft-Apps wie Outlook oder Word herunterladen und verwenden möchten, müssen Sie keine Domäne hinzufügen: [Installieren von Office auf Ihrem PC oder Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658). 
@@ -169,7 +169,7 @@ Sie können Ihren Domänennamen in Microsoft 365 mit Ihrer E-Mail-, öffentliche
 ## <a name="why-add-a-domain-in-microsoft-365"></a>Warum muss ich in Microsoft 365 eine Domäne hinzufügen?
 
 
-Indem Sie eine benutzerdefinierte Domäne, z. B. "fourthcoffee.com" zu Microsoft 365 hinzufügen, können Sie eine kürzere, vertrautere E-Mail-Adresse und Benutzer-ID mit dem Dienst verwenden. Wenn Sie sich für ein Microsoft 365-Konto registrieren, [erhalten Sie eine Domäne, die Sie verwenden können](../setup/domains-faq.yml). Diese enthält jedoch "onmicrosoft.com" im Namen. Viele Benutzer möchten lieber die Domäne ihrer Organisation oder ihres Unternehmens hinzufügen, wenn sie die Verwendung von Microsoft 365 für E-Mail planen. 
+Indem Sie eine benutzerdefinierte Domäne, z. B. "fourthcoffee.com" zu Microsoft 365 hinzufügen, können Sie eine kürzere, vertrautere E-Mail-Adresse und Benutzer-ID mit dem Dienst verwenden. Wenn Sie sich für ein Microsoft 365-Konto registrieren, [erhalten Sie eine Domäne, die Sie verwenden können](../setup/domains-faq.yml). Diese enthält jedoch "onmicrosoft.com" im Namen. Viele Benutzer möchten lieber die Domäne ihrer Organisation oder ihres Unternehmens hinzufügen, wenn sie die Verwendung von Microsoft 365 für E-Mail planen. 
   
 > [!NOTE]
 > Wenn Sie nur Microsoft 365-Apps wie Outlook oder Word herunterladen und verwenden möchten, müssen Sie keine Domäne hinzufügen: [Installieren von Office auf Ihrem PC oder Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658). 
@@ -186,9 +186,9 @@ Sie können Ihren Domänennamen in Microsoft 365 mit Ihrer E-Mail-, öffentliche
 
 ## <a name="the-dns-records-required-for-microsoft-365"></a>Die für Microsoft 365 erforderlichen DNS-Einträge
 
-In Microsoft 365 wird eine Reihe von DNS-Einträgen benötigt, damit der Dienst mit Ihrer Domäne zusammenarbeitet. Neben dem MX-Eintrag für Ihre Domäne, der benötigt wird, damit E-Mail-Nachrichten an Microsoft 365 gesendet werden, gibt es weitere Einträge, die dafür sorgen, dass Outlook automatisch die Verbindung zu dem richtigen Exchange-Server aufnimmt, dass Sofortnachrichten ordnungsgemäß eingerichtet werden und dass Spam-E-Mails abgewehrt werden.
+In Microsoft 365 werden mehrere DNS-Einträge benötigt, damit der Dienst mit Ihrer Domäne zusammenarbeitet. Neben dem MX-Eintrag für Ihre Domäne, der benötigt wird, damit E-Mail-Nachrichten an Microsoft 365 gesendet werden, gibt es weitere Einträge, die dafür sorgen, dass Outlook automatisch die Verbindung zu dem richtigen Exchange-Server aufnimmt, dass Sofortnachrichten ordnungsgemäß eingerichtet werden und dass Spam-E-Mails abgewehrt werden.
   
-Sie können [eine Liste von Werten suchen](information-for-dns-records.md), um Ihre Domäne einzurichten. Diese befinden sich unmittelbar im Microsoft 365 Admin Center. 
+Hier [finden Sie eine Liste mit Werten](information-for-dns-records.md) zum Einrichten Ihrer Domäne. Sie sind direkt im Microsoft 365 Admin Center enthalten. 
   
 Oder, wenn Sie eine Bereitstellung planen, möchten Sie sich vielleicht eine Liste aller für Microsoft 365 erforderlichen DNS-Einträge mit Funktion und Beispielwerten anschauen. Lesen Sie die Informationen unter [Externe DNS-Einträge für Microsoft 365](../../enterprise/external-domain-name-system-records.md).
   
@@ -198,3 +198,11 @@ Sehen Sie sich die folgenden Informationen an:
   
 - Sie wissen nicht sicher, wo Ihre Domäne registriert ist? [Hilfe zum Ermitteln Ihrer Domänenregistrierungsstelle anfordern.](find-your-domain-registrar.md)
 - Erfahren Sie, [warum Sie die Schritte des Assistenten ausführen müssen](../setup/add-domain.md), bevor Sie Ihre Domäne mit Microsoft 365 verwenden können.
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Häufig gestellte Fragen zu Domänen](../setup/domains-faq.yml) (Artikel)
+
+[Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden](find-and-fix-issues.md) (Artikel)
+
+[Domänen verwalten](index.yml) (Linkseite)

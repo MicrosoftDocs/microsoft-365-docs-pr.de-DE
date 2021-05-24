@@ -15,12 +15,12 @@ ms.custom:
 description: Der Administrator kann sich über die Optionen zum Konfigurieren des Nachrichtenflusses und des Routings in Exchange Online Protection (EOP) informieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7cd5bfcc95227c59f645422d4939ea6ff77bee1e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2ad80c4176c1b8b1c47b6b9ecafd34b4ca301f3f
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206364"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623417"
 ---
 # <a name="mail-flow-in-eop"></a>Nachrichtenfluss in EOP
 
@@ -47,10 +47,10 @@ Wenn Sie Ihrer Organisation Unterdomänen hinzufügen, können Sie auch diese mi
 
 [Erweiterte Filterung für Connectors](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) beschreibt, wie Sie Connectors konfigurieren, wenn Ihre E-Mails vor EOP an einen Dienst oder ein Gerät geroutet werden.
 
-In eigenständigen EOP-Organisationen müssen Sie einige Konfigurationsschritte ausführen, um sicherzustellen, dass Junk-E-Mails ordnungsgemäß an den Junk-E-Mail-Ordner jedes Benutzers geroutet werden. Diese finden Sie unter Konfigurieren eigenständiger EOP zum Senden von Spam an den [Junk-E-Mail-Ordner in Hybridumgebungen.](ensure-that-spam-is-routed-to-each-user-s-junk-email-folder.md) Wenn Sie Nachrichten nicht in den Junk-E-Mail-Ordner jedes Benutzers verschieben möchten, können Sie eine andere Aktion auswählen, indem Sie Ihre Antispamrichtlinien bearbeiten (auch als Inhaltsfilterrichtlinien bekannt). Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md).
+In Hybridumgebungen, in denen EOP lokale Exchange-Postfächer schützt, müssen Sie Nachrichtenflussregeln (auch als Transportregeln bezeichnet) in der lokalen Exchange konfigurieren, um das EOP-Spamfilter-Urteil zu übersetzen, damit die Junk-E-Mail-Regel die Nachricht in den Junk-E-Mail-Ordner verschieben kann. Weitere Informationen finden Sie unter [Configure EOP to deliver spam to the Junk Email folder in hybrid environments](/exchange/standalone-eop/configure-eop-spam-protection-hybrid). Wenn Sie Nachrichten nicht in den Junk-E-Mail-Ordner der einzelnen Benutzer verschieben möchten, können Sie eine andere Aktion auswählen, indem Sie Ihre Antispamrichtlinien bearbeiten (auch als Inhaltsfilterrichtlinien bekannt). Weitere Informationen finden Sie unter [Konfigurieren von Anti-Spam-Richtlinien](configure-your-spam-filter-policies.md).
 
 ## <a name="verify-mail-flow"></a>Überprüfen des Nachrichtenflusses
 
-Weitere Informationen zum Überprüfen des EOP-Setups und der Connectorkonfiguration finden Sie im Abschnitt "Woher wissen Sie, dass diese Aufgabe erfolgreich war?" unter [Einrichten Ihres EOP-Diensts](set-up-your-eop-service.md).
+Weitere Informationen zum Überprüfen des EOP-Setups und der Connectorkonfiguration finden Sie im Abschnitt "Woher wissen Sie, dass diese Aufgabe erfolgreich war?" unter [Einrichten Ihres EOP-Diensts](/exchange/standalone-eop/set-up-your-eop-service).
 
 [Test mail flow by validating your Microsoft 365 connectors](/exchange/mail-flow-best-practices/test-mail-flow) provides instructions for testing that your mail flow is set up correctly.

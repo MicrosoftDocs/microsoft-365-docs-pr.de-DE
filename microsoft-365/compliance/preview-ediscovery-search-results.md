@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Anzeigen einer Vorschau einer Stichprobe der Ergebnisse, die von einer Inhaltssuche oder einer eDiscovery-Suche im Microsoft 365 Compliance Center zurückgegeben wurden.
-ms.openlocfilehash: ebe4aa0d5f08ab97376cfde63eb59351fccd1911
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: a89c8c9ed2500b4e2a859c75be3da177203d1406
+ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52314306"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52538601"
 ---
 # <a name="preview-ediscovery-search-results"></a>Anzeigen einer Vorschau von eDiscovery-Suchergebnissen
 
@@ -39,9 +39,25 @@ So zeigen Sie eine Stichprobe der von einer Suche zurückgegeben Ergebnisse:
 
 3. Klicken Sie unten auf der Flyoutseite auf **Stichprobe überprüfen**.
 
+   ![Klicken Sie auf der Flyoutseite auf "Beispiel überprüfen", um eine Vorschau der Ergebnisse anzuzeigen.](../media/PreviewSearchResults1.png)
+
    Es wird eine Seite mit einer Stichprobe der Suchergebnisse angezeigt.
 
 4. Wählen Sie ein Element aus, um dessen Inhalt im Lesebereich anzuzeigen.
+
+   ![Vorschau der Elemente im Lesebereich](../media/PreviewSearchResults2.png)
+
+   Beachten Sie, dass im vorherigen Screenshot Schlüsselwörter aus der Suchabfrage hervorgehoben werden, wenn Sie eine Vorschau von Elementen anzeigen.
+
+## <a name="how-the-search-result-samples-are-selected"></a>So werden die Beispiele für Suchergebnisse ausgewählt
+
+Zur Vorschau stehen maximal 1 000 zufällig ausgewählte Elemente zur Verfügung. Die für die Vorschau verfügbaren Elemente müssen nicht nur zufällig ausgewählt werden, sondern müssen auch die folgenden Kriterien erfüllen:
+
+- Es können maximal 100 Elemente aus einem einzigen Inhaltsspeicherort (einem Postfach oder einer Website) in der Vorschau angezeigt werden. Dies bedeutet, dass möglicherweise weniger als 1 000 Elemente zur Vorschau zur Verfügung stehen. Wenn Sie beispielsweise vier Postfächer durchsuchen und die Suche 1 500 geschätzte Elemente zurückgibt, stehen nur 400 zur Vorschau zur Verfügung, da nur 100 Elemente aus jedem Postfach in der Vorschau angezeigt werden können.
+
+- Bei Postfachelementen stehen nur E-Mail-Nachrichten zur Vorschau zur Verfügung. Elemente wie Aufgaben, Kalenderelemente und Kontakte können nicht in der Vorschau angezeigt werden.
+
+- Bei Websiteelementen stehen nur Dokumente zur Vorschau zur Verfügung. Elemente wie Ordner, Listen oder Listenanlagen können nicht in der Vorschau angezeigt werden.
 
 ## <a name="file-types-supported-when-previewing-search-results"></a>Unterstützte Dateitypen beim Anzeigen der Suchergebnisse in der Vorschau
 

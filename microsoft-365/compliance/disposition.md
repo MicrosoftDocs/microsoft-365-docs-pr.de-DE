@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und verwalten Sie die Entsorgung von Inhalten, wenn Sie eine Löschungsprüfung verwenden, oder wenn als Datensätze markierte Elemente gemäß den von Ihnen konfigurierten Einstellungen automatisch gelöscht werden.
-ms.openlocfilehash: 13310eca369949e2b66163907be4268120aa0ed0
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 99ab789b99385af9ad2677995606d21ece54705c
+ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52344943"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "52594073"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -30,9 +30,11 @@ ms.locfileid: "52344943"
 Verwenden Sie die Seite **Löschung** aus der **Datensatzverwaltung** im Microsoft 365 Compliance Center, um die Löschungsprüfungen zu verwalten und die Metadaten von [Datensätzen](records-management.md#records) anzuzeigen, die am Ende des Aufbewahrungszeitraums automatisch gelöscht wurden.
 
 > [!NOTE]
-> Bereitstellung in der Vorschau: **mehrstufige Löschungsprüfung**
+> In der Vorschau: **mehrstufige Löschungsprüfung**
 > 
 > Ein Administrator kann jetzt bis zu fünf aufeinanderfolgende Stufen der Löschungsprüfung zu einer Aufbewahrungsbezeichnung hinzufügen, und Prüfer können andere Benutzer zu ihrer Löschungsprüfungsstufe hinzufügen. Sie können auch die E-Mail-Benachrichtigungen und -Erinnerungen anpassen. Die folgenden Abschnitte enthalten weitere Informationen zu den Änderungen in dieser Vorschau.
+>
+> Informationen zur Veröffentlichungsankündigung finden Sie im Blogbeitrag [Ankündigung der mehrstufigen Löschung in der Microsoft-Datensatzverwaltung](https://techcommunity.microsoft.com/t5/security-compliance-and-identity/announcing-multi-stage-disposition-in-microsoft-records/ba-p/2361849).
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Voraussetzungen für die Anzeige von Inhaltsdispositionen
 
@@ -45,7 +47,7 @@ Um im Microsoft 365 Compliance Center erfolgreich auf die Registerkarte **Lösch
 > [!NOTE]
 > Die Rolle **Löschungsverwaltung** wird einem globalen Administrator standardmäßig nicht zugewiesen. 
 
-Um Benutzern nur die Berechtigungen zu gewähren, die sie für Löschungsprüfungen benötigen, ohne ihnen Berechtigungen zum Anzeigen und Konfigurieren anderer Features für die Aufbewahrung und die Datensatzverwaltung zu gewähren, erstellen Sie eine benutzerdefinierte Rollengruppe (z. B. mit dem Namen „Löschungsprüfer“) und gewähren dieser Gruppe die Rolle **Löschungsverwaltung**.
+Um Benutzern nur die Berechtigungen zu gewähren, die sie für Löschungsprüfungen benötigen, ohne ihnen Berechtigungen zum Anzeigen und Konfigurieren anderer Features für die Aufbewahrung und die Datensatzverwaltung zu gewähren, erstellen Sie eine benutzerdefinierte Rollengruppe (z. B. mit dem Namen „Löschungsprüfer“) und gewähren dieser Gruppe die Rolle **Löschungsverwaltung**.
 
 Anweisungen zum Konfigurieren dieser Berechtigungen finden Sie unter [Gewähren des Benutzerzugriffs auf das Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
@@ -58,11 +60,19 @@ Zusätzlich:
     Microsoft 365-Gruppen und -Sicherheitsgruppen, welche nicht E-Mail-aktiviert sind, unterstützten dieses Feature nicht und würden in der Liste nicht zur Auswahl angezeigt. Wenn Sie eine neue E-Mail-aktivierte Sicherheitsgruppe erstellen müssen, verwenden Sie den Link zum Microsoft 365 Admin Center, um eine neue Gruppe zu erstellen. 
     
     > [!IMPORTANT]
-    > Sie können diese Berechtigung nicht deaktivieren oder die Gruppe ersetzen, die Sie aus dem Compliance Center aktiviert haben. Sie können jedoch eine andere E-Mail-aktivierte Sicherheitsgruppe aktivieren, indem Sie das Cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) verwenden.
-    > 
-    > Beispiel: `Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com`
+    > Nachdem Sie die Gruppe aktiviert haben, können Sie sie nicht mehr im Compliance Center ändern. Informationen zum Aktivieren einer anderen Gruppe mithilfe von PowerShell finden Sie im nächsten Abschnitt.
 
 - In Vorschau: Die Option **Datensatzverwaltungseinstellungen** ist nur für Datensatzverwaltungsadministratoren sichtbar. 
+
+#### <a name="enabling-another-security-group-for-disposition"></a>Aktivieren einer anderen Sicherheitsgruppe für die Löschung
+
+Nachdem Sie im Microsoft 365 Compliance Center eine Sicherheitsgruppe für die Löschung aus den **Einstellungen für die Datensatzverwaltung** aktiviert haben, können Sie diese Berechtigung für die Gruppe nicht deaktivieren oder die ausgewählte Gruppe im Compliance Center ersetzen. Sie können jedoch eine andere E-Mail-aktivierte Sicherheitsgruppe aktivieren, indem Sie das Cmdlet [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage) verwenden.
+
+Beispiel: 
+
+```PowerShell
+Enable-ComplianceTagStorage -RecordsManagementSecurityGroupEmail dispositionreviewers@contosoi.com
+````
 
 ### <a name="enable-auditing"></a>Überwachung aktivieren
 
@@ -76,7 +86,7 @@ Wenn Inhalte das Ende des Aufbewahrungszeitraums erreichen, können Sie aus mehr
 
 - Zuweisen eines anderen Aufbewahrungszeitraums für die Inhalte, vielleicht, weil die ursprünglichen Aufbewahrungseinstellungen eine vorübergehende oder vorläufige Lösung waren.
 
-- Verschieben des Inhalts von seinem bisherigen Speicherort an einen Archivspeicherort, z. B. wenn dieser Inhalt von wissenschaftlichem oder historischem Wert ist.
+- Verschieben des Inhalts von seinem bisherigen Speicherort an einen Archivspeicherort, z. B. wenn dieser Inhalt von wissenschaftlichem oder historischem Wert ist.
 
 Wenn am Ende des Aufbewahrungszeitraums eine Löschungsprüfung ausgelöst wird:
   
@@ -142,17 +152,21 @@ Denken Sie daran, dass Sie nach dem Festlegen Ihrer Prüfer die Rollenberechtigu
 
 ### <a name="how-to-customize-email-messages-for-disposition-review"></a>So passen Sie E-Mail-Nachrichten für die Löschungsprüfung an
 
+Beispiel für eine standardmäßige E-Mail-Benachrichtigung, die an einen Prüfer gesendet wurde:
+
+![Beispiel für eine E-Mail-Benachrichtigung mit Standardtext, wenn ein Element zur Löschungsprüfung bereit ist](../media/disposition-review-email.png)
+
 Ebenfalls in der Vorschau können Sie die E-Mail-Nachrichten anpassen, welche den Löschungsprüfern für die anfängliche Benachrichtigung und danach für die Erinnerungen zugestellt werden.
 
 Wählen Sie auf einer beliebigen Löschungsseite im Compliance Center die Option **Datensatzverwaltungseinstellungen** aus:  
 
-![Datensatzverwaltungseinstellungen](../media/record-management-settings.png)
+![Einstellungen für die Datensatzverwaltung](../media/record-management-settings.png)
 
-Wählen Sie dann die Registerkarte **E-Mail-Vorlagen** aus, und geben Sie an, ob Sie nur die Standard-E-Mail-Vorlagen verwenden, oder Ihren eigenen Text der Standardvorlage hinzufügen wollen. Ihr benutzerdefinierter Text wird den E-Mail-Anweisungen nach den Informationen über die Aufbewahrungsbezeichnung und vor den Anweisungen für die nächsten Schritte hinzugefügt.
+Wählen Sie dann die Registerkarte **Benachrichtigungen zur Löschung** aus, und geben Sie an, ob Sie nur die Standard-E-Mail-Vorlagen verwenden oder Ihren eigenen Text der Standardvorlage hinzufügen wollen. Ihr benutzerdefinierter Text wird den E-Mail-Anweisungen nach den Informationen über die Aufbewahrungsbezeichnung und vor den Anweisungen für die nächsten Schritte hinzugefügt.
 
 Text kann für alle Sprachen hinzugefügt werden, aber Formatierung und Bilder sind derzeit nicht unterstützt. URLs und E-Mail-Adressen können als Text eingegeben werden und werden abhängig vom E-Mail-Client als Hyperlinks oder unformatierter Text in der angepassten E-Mail angezeigt.
 
-Beispieltext für die Anpassung:
+Beispieltext zum Hinzufügen:
 
 ```console
 If you need additional information, visit the helpdesk website (https://support.contoso.com) or send them an email (helpdesk@contoso.com).
@@ -162,7 +176,7 @@ Wählen Sie **Speichern** aus, um Änderungen zu speichern.
 
 ### <a name="viewing-and-disposing-of-content"></a>Anzeigen und Verwerfen von Inhalten
 
-Wenn ein Prüfer per E-Mail benachrichtigt wird, dass Inhalte zur Überprüfung bereitstehen, wechseln sie zur Registerkarte **Disposition** aus der **Datensatzverwaltung** im Microsoft 365 Compliance Center. Die Prüfer können sehen, wie viele Elemente für jede Aufbewahrungsbezeichnung auf die Löschung warten, wenn der **Typ** **Ausstehende Löschung** anzeigt. Sie wählen dann eine Aufbewahrungsbezeichnung aus und **Öffnen in einem neuen Fenster**, um alle Inhalte mit dieser Bezeichnung zu sehen:
+Wenn ein Prüfer per E-Mail benachrichtigt wird, dass Inhalte zur Überprüfung bereitstehen, kann er auf einen Link in der E-Mail klicken, wodurch er direkt zur Registerkarte **Löschung** aus der **Datensatzverwaltung** im Microsoft 365 Compliance Center wechseln wird. Dort können die Prüfer sehen, wie viele Elemente für jede Aufbewahrungsbezeichnung auf die Löschung warten, wenn der **Typ** **Ausstehende Löschung** anzeigt. Sie wählen dann eine Aufbewahrungsbezeichnung aus und **Öffnen in einem neuen Fenster**, um alle Inhalte mit dieser Bezeichnung zu sehen:
 
 ![Öffnen in einem neuen Fenster zur Löschungsprüfung](../media/open-in-new-window.png)
 

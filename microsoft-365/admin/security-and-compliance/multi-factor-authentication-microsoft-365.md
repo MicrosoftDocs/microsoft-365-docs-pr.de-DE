@@ -22,13 +22,13 @@ search.appverid:
 - MOE150
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
-description: Erfahren Sie mehr über die mehrstufige Authentifizierung in Microsoft 365.
-ms.openlocfilehash: 080251efa7d7d3bda6ad89e95960e43dd38d076d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: Die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) verwendet sowohl ein Kennwort, das stark sein sollte, als auch eine zusätzliche Überprüfungsmethode.
+ms.openlocfilehash: 84d26d0a9908e51ce734e71961d4643a2df3471b
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050666"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623689"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Mehrstufige Authentifizierung für Microsoft 365
 
@@ -127,7 +127,7 @@ Weitere Informationen finden Sie in dieser [Übersicht über den bedingten Zugri
 
 ### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-Mit Azure AD Identity Protection können Sie eine zusätzliche Richtlinie für bedingten Zugriff erstellen, um MFA zu erfordern, wenn das Anmelderisiko mittel oder [hoch ist.](../../security/defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)
+Mit Azure AD Identity Protection können Sie eine zusätzliche Richtlinie für bedingten Zugriff erstellen, um MFA zu erfordern, wenn das Anmelderisiko mittel oder [hoch ist.](../../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)
 
 Sie können Azure AD Identity Protection und risikobasierte Richtlinien für bedingten Zugriff mit:
 
@@ -174,8 +174,7 @@ Im Microsoft 365 Admin Center können Sie benutzer- und Dienst-MFA-Einstellungen
 
 [Einrichten von MFA für Microsoft 365](set-up-multi-factor-authentication.md)
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Video: Aktivieren der mehrstufigen Authentifizierung](../../business-video/turn-on-mfa.md)
-
-[Video: Aktivieren der mehrstufigen Authentifizierung für Ihr Telefon](../../business-video/set-up-mfa.md)
+[Aktivieren der mehrstufigen Authentifizierung](../../business-video/turn-on-mfa.md) (Video)\
+[Aktivieren der mehrstufigen Authentifizierung für Ihr Telefon](../../business-video/set-up-mfa.md) (Video)
