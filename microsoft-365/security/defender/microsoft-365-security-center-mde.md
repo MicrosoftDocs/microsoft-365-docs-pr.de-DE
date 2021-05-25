@@ -19,12 +19,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: bad31160bb27c79f672ddd28a5fced3bf8c2ee1b
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+ms.openlocfilehash: e7cecd645d857a5c2d5e7a98c78bd3f39b68449d
+ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943041"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52639407"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft Defender für Endpunkt im Microsoft 365 Security Center
 
@@ -35,6 +35,28 @@ ms.locfileid: "51943041"
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender für Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
+
+## <a name="quick-reference"></a>Kurzübersicht
+
+Das Bild und die folgende Tabelle enthält die Änderungen bei der Navigation zwischen Microsoft Defender Security Center und Microsoft 365 Security Center.
+
+> [!div class="mx-imgBorder"]
+> ![Abbildung der zu dem Ort verschobenen](../../media/mde-m3d-security-center.png)
+
+| Microsoft Defender Security Center | Microsoft 365 Security Center |
+|---------|---------|
+| Dashboards <ul><li>Sicherheitsvorgänge</li><li>Bedrohungsanalyse</li></ul>  |Start <ul><li>Bedrohungsanalyse</li></ul>   |
+| Vorfälle | Vorfälle und Benachrichtigungen |
+| Geräteübersicht | Geräteübersicht |
+| Benachrichtigungswarteschlange | Vorfälle und Benachrichtigungen |
+| Automatisierte Untersuchungen | Info-Center |
+| Erweiterte Suche | Suche |
+| Berichte | Berichte |
+| Partner & APIs | Partner & APIs |
+| Sicherheitsrisikoverwaltung & Bedrohungen | Bedrohungs- und Sicherheitsrisikomanagement |
+| Evaluierung und Lernprogramme | Evaluierungs- & Lernprogramme |
+| Konfigurationsverwaltung | Konfigurationsverwaltung |
+| Einstellungen | Einstellungen | 
 
 Das verbesserte [Microsoft 365 Security Center](overview-security-center.md) kombiniert Sicherheitsfunktionen, die E-Mails, Zusammenarbeit, Identität und Gerätebedrohungen schützen, erkennen, untersuchen und darauf [https://security.microsoft.com](https://security.microsoft.com) reagieren. Dieses Sicherheitscenter vereint Funktionen aus vorhandenen Microsoft-Sicherheitsportalen, einschließlich Microsoft Defender Security Center und Office 365 Security & Compliance Center.
 
@@ -65,7 +87,7 @@ Diese Tabelle ist eine Kurzübersicht über die Änderungen zwischen Microsoft D
 
 ### <a name="alerts-and-actions"></a>Warnungen und Aktionen
 
-|**Bereich**  |**Beschreibung der Änderung** |
+| Bereich | Beschreibung der Änderung |
 |---------|---------|
 | [Vorfälle & Warnungen](incidents-overview.md)  | Im Microsoft 365 Security Center können Sie Vorfälle und Warnungen über alle Endpunkte, E-Mails und Identitäten hinweg verwalten. Wir haben die Erfahrung zusammengeführt, um ihnen zu helfen, verwandte Ereignisse einfacher zu finden. Weitere Informationen finden Sie unter [Incidents Overview](incidents-overview.md).   |
 | [Suche](advanced-hunting-overview.md)  |  Wenn Sie benutzerdefinierte Erkennungsregeln ändern, die in Microsoft Defender for Endpoint erstellt wurden, um Identitäts- und E-Mail-Tabellen zu enthalten, werden sie automatisch zu Microsoft 365 Defender bewegt. Die entsprechenden Warnungen werden auch in defender Microsoft 365 angezeigt. Weitere Informationen zu diesen Änderungen finden Sie unter [Migrate custom detection rules](advanced-hunting-migrate-from-mde.md#migrate-custom-detection-rules). <br><br>Die Tabelle für die erweiterte Suche ist in Defender Microsoft 365 `DeviceAlertEvents` verfügbar. Zum Abfragen gerätespezifischer Benachrichtigungsinformationen in Microsoft 365 Defender können Sie die Und-Tabellen verwenden, um noch mehr Informationen aus einer Vielzahl von `AlertInfo` `AlertEvidence` Quellen zu speichern. Erstellen Sie Ihre nächste gerätebezogene Abfrage, indem Sie [Write-Abfragen ohne DeviceAlertEvents folgen.](advanced-hunting-migrate-from-mde.md#write-queries-without-devicealertevents)|
@@ -74,7 +96,7 @@ Diese Tabelle ist eine Kurzübersicht über die Änderungen zwischen Microsoft D
 
 ### <a name="endpoints"></a>Endpunkte
 
-|**Bereich**  |**Beschreibung der Änderung**  |
+| Bereich | Beschreibung der Änderung |
 |---------|---------|
 |Suche   |  Anstatt in der Überschrift zu sein, bewegt sich die Microsoft Defender for Endpoint-Suchleiste unter dem Abschnitt Endpunkte. Sie können weiterhin nach Geräten, Dateien, Benutzern, URLs, IPs, Sicherheitsrisiken, Software und Empfehlungen suchen.  |
 |[Dashboard](/windows/security/threat-protection/microsoft-defender-atp/security-operations-dashboard)   |  Dies ist Ihr Sicherheitsbetriebsdashboard. Sehen Sie sich eine Übersicht darüber an, wie viele aktive Warnungen ausgelöst wurden, welche Geräte gefährdet sind, welche Benutzer gefährdet sind, und den Schweregrad für Warnungen, Geräte und Benutzer. Sie können auch sehen, ob auf geräten Sensorprobleme auftreten, ihr Gesamtdienstzustand und wie nicht aufgelöste Warnungen erkannt wurden. |
@@ -92,7 +114,7 @@ Diese Tabelle ist eine Kurzübersicht über die Änderungen zwischen Microsoft D
 
 ### <a name="access-and-reporting"></a>Zugriff und Berichterstellung
 
-|**Bereich**  |**Beschreibung der Änderung**  |
+| Bereich | Beschreibung der Änderung |
 |---------|---------|
 | Berichte  | Siehe Berichte für Endpunkte und E-Mail& zusammenarbeiten, einschließlich Bedrohungsschutz, Geräteintehität und -compliance und anfällige Geräte. |
 | Gesundheitswesen  |  Zurzeit werden Links zur Seite "Dienstinte health" im [Microsoft 365 Admin Center angezeigt.](https://admin.microsoft.com/) |
@@ -122,7 +144,7 @@ Suchen Sie proaktiv mithilfe von [erweiterten Suchabfragen](advanced-hunting-ove
 
 Im Info-Center zeigt werden die Untersuchungen angezeigt, die durch automatisierte Untersuchungs- und Reaktionsfunktionen erstellt wurden. Diese Möglichkeit der automatisierten Selbstreparatur in Microsoft 365 Defender unterstützt Sicherheitsteams durch automatische Reaktionen auf bestimmte Ereignisse.
 
-[Erfahren Sie mehr über das Info-Center](m365d-action-center.md)
+[Erfahren Sie mehr über das Aktionscenter](m365d-action-center.md).
 
 ### <a name="threat-analytics"></a>Bedrohungsanalyse
 
@@ -134,7 +156,7 @@ Nutzen Sie Informationen zu Bedrohungen von erfahrenen Microsoft-Sicherheitsexpe
 
 Sie können auf Die Bedrohungsanalyse entweder über die obere linke Navigationsleiste im Microsoft 365 Security Center oder über eine dedizierte Dashboardkarte zugreifen, auf der die obersten Bedrohungen für Ihre Organisation angezeigt werden.
 
-Erfahren Sie mehr über das [Nachverfolgen und Reagieren auf neue Bedrohungen mit Bedrohungsanalysen](./threat-analytics.md).
+Erfahren Sie mehr über das [Nachverfolgen und Reagieren auf neue Bedrohungen mit Bedrohungsanalysen.](./threat-analytics.md)
 
 ### <a name="endpoints-section"></a>Abschnitt "Endpoints"
 

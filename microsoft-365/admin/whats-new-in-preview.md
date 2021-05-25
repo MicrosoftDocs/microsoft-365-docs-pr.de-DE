@@ -21,12 +21,12 @@ description: Das Microsoft 365 Admin Center – Erfahren Sie mehr über die Feat
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: b75c6be901dfe2bcfe9a0d8fad8fbb56eecd34d6
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 964689c431b45671a92dda62ccf8a083291213a3
+ms.sourcegitcommit: ddf6c25d1ed6387d07614f7042e033bad7f406f9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535746"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52639545"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neues im Microsoft 365 Admin Center
 
@@ -49,6 +49,24 @@ Und wenn Sie wissen möchten, was mit anderen Microsoft-Clouddiensten neu ist:
 - [Aktive Websites im SharePoint Online Admin Center](/sharepoint/what-s-new-in-admin-center)
 - [Office-Updates](/OfficeUpdates/)
 - [Überprüfen der Windows Release-Integrität](/windows/deployment/update/check-release-health)
+
+## <a name="may-2021"></a>Mai 2021
+
+### <a name="admin-mobile-app"></a>Mobile Admin-App
+
+### <a name="keep-track-of-support-ticket-updates-using-the-admin-mobile-app"></a>Nachverfolgen von Supportticketupdates mithilfe der mobilen Admin-App
+
+Für alle in Ihrem Mandanten erstellten Dienstanforderungen können Sie nun den Ticketstatus nachverfolgen, Ticketdetails anzeigen und zusätzliche Informationen bereitstellen/anfordern, indem Sie Notizen & hinzufügen. 
+
+:::image type="content" source="../media/whats-new-track-support-tickets.png" alt-text="Screenshot: Nachverfolgen von Supportticketupdates":::
+
+### <a name="stay-on-top-of-all-the-major-updates-to-the-app-and-your-microsoft-365-subscription"></a>Bleiben Sie über alle wichtigen Updates für die App und Ihr Microsoft 365. 
+
+- Bleiben Sie über Pushbenachrichtigungen (jetzt standardmäßig aktiviert) über alle wichtigen Updates für Ihr Microsoft 365-Abonnement auf dem Neuesten. 
+
+- Verfolgen Sie mithilfe des Abschnitts Neuigkeiten die neuesten Features, die in der **App verfügbar** sind. Wechseln Sie **zu Einstellungen** Was  >  **ist neu?**
+
+:::image type="content" source="../media/whats-new-updates.png" alt-text="Screenshot: Nachverfolgen wichtiger Updates und Features":::
 
 ## <a name="april-2021"></a>April 2021
 
@@ -223,7 +241,7 @@ Die Domänenverwaltung kann kompliziert sein, und wir haben ein neues Feature ve
 
 [](https://youtu.be/m1Nu8WJgCDY) Neues bei Microsoft 365-Videoserien: In diesem Monat werden die neue Yammer-Erfahrung für Web und Mobile, die Integration der Yammer Communities-App für Microsoft Teams, neue Richtlinienpakete zur Unterstützung von Firstline-Mitarbeitern und -Managern und vieles mehr.
 
-## <a name="june-2020"></a>Juni 2020
+## <a name="june-2020"></a>Juni 2020
 
 ### <a name="keeping-up-with-office-whats-new-management"></a>Halten Sie mit Office What's New Management auf dem Neuen
 
