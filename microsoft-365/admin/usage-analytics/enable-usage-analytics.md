@@ -20,22 +20,22 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Erfahren Sie, wie Sie mit dem Sammeln von Daten für Ihren Mandanten mithilfe der Microsoft 365 Usage Analytics-Vorlagen-App in Power BI.
-ms.openlocfilehash: 329878365aa07da4615a849ad04cde7f75a07872
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 01923887b4af143d1490e14d59a6174700e6ae93
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593369"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635414"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Aktivieren von Microsoft 365-Nutzungsanalysen
 
 Microsoft 365 Verwendungsanalyse ist für us Government Microsoft 365 noch nicht Community.
   
-## <a name="steps-to-enable-microsoft-365-usage-analytics"></a>Schritte zum Aktivieren von Microsoft 365-Nutzungsanalysen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Um mit der Microsoft 365 zu beginnen, müssen Sie die Daten zuerst im Microsoft 365 Admin Center verfügbar machen und dann die Vorlagen-App in der Power BI.
   
-### <a name="get-power-bi"></a>So erhalten Sie Power BI
+## <a name="get-power-bi"></a>So erhalten Sie Power BI
 
 Wenn Sie noch nicht über Power BI verfügen, können Sie [sich für Power BI Pro.](https://go.microsoft.com/fwlink/p/?linkid=845347) Wählen **Sie Kostenlos testen,** um sich für eine Testversion zu registrieren, oder **Kaufen Sie** jetzt, um Power BI Pro.
   
@@ -47,7 +47,7 @@ Sie können auch **Produkte** erweitern, um eine Power BI-Version zu erwerben.
 
 Um Ihre Daten zu teilen, benötigen Sie und die Personen, für die Sie die Daten freigeben, eine Power BI Pro-Lizenz, oder der Inhalt muss sich in einem Arbeitsbereich in einem Power BI [Premium Service befinden.](/power-bi/service-premium-what-is) 
   
-### <a name="enable-the-template-app"></a>Aktivieren der Vorlagen-App
+## <a name="enable-the-template-app"></a>Aktivieren der Vorlagen-App
 
 Um die Vorlagen-App zu aktivieren, müssen Sie ein **globaler Administrator sein.**
   
@@ -61,7 +61,7 @@ Weitere [Informationen finden Sie unter Informationen](../add-users/about-admin-
   
 Der Datensammlungsprozess wird in zwei bis 48 Stunden abgeschlossen, abhängig von der Größe Ihres Mandanten. Die **Schaltfläche Zu Power BI** wird aktiviert (nicht mehr grau), wenn die Datensammlung abgeschlossen ist. 
     
-### <a name="start-the-template-app"></a>Starten der Vorlagen-App
+## <a name="start-the-template-app"></a>Starten der Vorlagen-App
 
 Zum Starten der Vorlagen-App müssen Sie entweder globaler **Administrator,** Berichtsleser,  **Exchange** Administrator, **Skype for Business** Administrator oder SharePoint **sein.** 
   
@@ -99,8 +99,6 @@ Sie müssen ein globaler Administrator sein, um die für alle Berichte gesammelt
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Informationen zur Verwendungsanalyse](usage-analytics.md) (Artikel)
-
-[Aktuelle Version der Verwendungsanalyse](get-the-latest-version-of-usage-analytics.md) (Artikel)
-
+[Informationen zur Verwendungsanalyse](usage-analytics.md) (Artikel)\
+[Hier erhalten Sie die neueste Version der Verwendungsanalyse](get-the-latest-version-of-usage-analytics.md) (Artikel)\
 [Navigieren und verwenden Sie die Berichte in Microsoft 365 Verwendungsanalyse](navigate-and-utilize-reports.md) (Artikel)

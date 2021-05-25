@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: be5b6d90-3344-4c5e-bf40-5733eb845beb
 description: Erfahren Sie, wie Sie Windows AutoPilot verwenden, um neue Windows 10 für Ihr Unternehmen zu einrichten, damit sie für die Verwendung durch Mitarbeiter bereit sind.
-ms.openlocfilehash: cc5495f42214b222a70b281a713be782b1bf5c4f
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: e178e7df220e89605502d9ed400265bcd963e57e
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623671"
+ms.locfileid: "52636104"
 ---
 # <a name="use-the-step-by-step-guide-to-add-autopilot-devices-and-profile"></a>Verwenden der schrittweisen Anleitung zum Hinzufügen von AutoPilot-Geräten und -Profilen
 
@@ -45,8 +45,6 @@ Geräte müssen die folgenden Anforderungen erfüllen:
 - Neue Geräte, die noch nicht über eine Windows-out-of-Box-Erfahrung verfügen
     
 ## <a name="use-the-setup-guide-to-create-devices-and-profiles"></a>Befolgen der Setupanleitung zum Erstellen von Geräten und Profilen
-
-[![Hinweis, der Sie darüber informiert, dass sich das Admin Center ändert und Sie unter "aka.ms/aboutM365preview" weitere Details finden.](../media/m365admincenterchanging.png)](/office365/admin/microsoft-365-admin-center-preview)
 
 Wenn Sie noch keine Gerätegruppen oder Profile erstellt haben, können Sie am besten die schrittweise Anleitung verwenden. Sie können auch [Geräte hinzufügen](create-and-edit-autopilot-devices.md) und [ihnen Profile](create-and-edit-autopilot-profiles.md) zuweisen, ohne die Anleitung zu verwenden. 
   

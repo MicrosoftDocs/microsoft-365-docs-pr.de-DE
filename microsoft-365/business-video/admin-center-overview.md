@@ -20,22 +20,22 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie mehr über Microsoft 365 Admin Center.
-ms.openlocfilehash: 6d7fe36345ebd9234027e943d11266b7bcc2b30f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Verwenden Sie eine vereinfachte Ansicht in Microsoft 365, um allgemeine Aufgaben oder Dashboardansichten für komplexere Einstellungen und Aufgaben zu verwalten.
+ms.openlocfilehash: bca3aa7bb071d9334f7a5162a78db89690421f1a
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537391"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635890"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Übersicht über das Microsoft 365 Admin Center
 
-- [Das Admin Center in vereinfachter Ansicht](#the-admin-center-in-simplified-view)
-- [Das Admin Center in der Dashboardansicht](#the-admin-center-in-dashboard-view)
+- [Das Admin Center in vereinfachter Ansicht](#watch-the-admin-center-in-simplified-view)
+- [Das Admin Center in der Dashboardansicht](#watch-the-admin-center-in-dashboard-view)
 
 Das Microsoft 365 Admin Center verfügt über zwei Ansichten: Die vereinfachte Ansicht hilft kleineren Organisationen bei der Verwaltung ihrer gängigsten Aufgaben. Die Dashboardansicht enthält komplexere Einstellungen und Aufgaben. Sie können über eine Schaltfläche oben im Admin Center zwischen diesen wechseln.
 
-## <a name="the-admin-center-in-simplified-view"></a>Das Admin Center in vereinfachter Ansicht
+## <a name="watch-the-admin-center-in-simplified-view"></a>Watch: Das Admin Center in der vereinfachten Ansicht
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWD3sq?autoplay=false]
 
@@ -57,7 +57,7 @@ Navigieren Sie **auf** der Registerkarte Lernen zu Videos und Artikeln über das
 
 Wenn Sie Unterstützung benötigen, wählen Sie **Hilfe & Support aus.** Suchen Sie nach einem Thema, bei dem Sie Hilfe wünschen, und zeigen Sie die empfohlene Lösung an, oder wählen Sie das Headset aus, um den Support zu kontaktieren, und geben Sie dann Ihre Fragen und Kontaktinformationen ein. 
 
-## <a name="the-admin-center-in-dashboard-view"></a>Das Admin Center in der Dashboardansicht
+## <a name="watch-the-admin-center-in-dashboard-view"></a>Watch: Das Admin Center in der Dashboardansicht
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfvDL?autoplay=false]
 
@@ -188,4 +188,10 @@ Das Microsoft 365 Admin Center ist vollständig in 40 Sprachen lokalisiert.
 |Vietnamesisch | vi |
 |Chinese Simplified | zh-hans |
 |Chinese Traditional | zh-hant |
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Was ist ein Microsoft 365 Administrator?](what-is-admin.md) (Video)\
+[Hinzufügen eines Administrator](add-admin.md) (Video)\
+[Anpassen des Microsoft 365 Design für Ihre Organisation](../admin/setup/customize-your-organization-theme.md) (Artikel)
   

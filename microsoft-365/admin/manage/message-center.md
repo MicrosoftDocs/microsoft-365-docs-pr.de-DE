@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 38fb3333-bfcc-4340-a37b-deda509c2093
 description: Verschaffen Sie sich einen Überblick Microsoft 365 Message Center und dessen Rolle beim Nachverfolgen neuer und geänderter Features und anderer wichtiger Ankündigungen.
-ms.openlocfilehash: edef3bb5a9016cf6f65f307fcd7c706bf4424d2f
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 51cdf1924b3aaa507a6b41f903a6aea5d81d68f1
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593957"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636046"
 ---
 # <a name="message-center"></a>Nachrichtencenter
 
@@ -303,8 +303,6 @@ Eine Übersicht über das Nachrichtencenter finden Sie unter [Das Nachrichtencen
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Einrichten der Standard- oder Gezielten Veröffentlichungsoptionen](../manage/release-options-in-office-365.md) (Artikel)
-
-[Verwalten, Office Features in What's New](../manage/show-hide-new-features.md) angezeigt werden (Artikel)
-
-[Geschäftsabonnements und Abrechnungsdokumentation](../../commerce/index.yml) (Links)
+[Einrichten der Standard- oder Zielversionsoptionen](../manage/release-options-in-office-365.md) (Artikel)\
+[Verwalten, Office features in What's New](../manage/show-hide-new-features.md) (article)\ angezeigt werden.
+[Geschäftsabonnements und Abrechnungsdokumentation](../../commerce/index.yml) (Linkseite)

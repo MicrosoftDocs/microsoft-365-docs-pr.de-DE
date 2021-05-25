@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie ein Team mit Gästen im Microsoft 365 erstellen und wie Sie einem Team als Gast beitreten.
-ms.openlocfilehash: c05a8d7e10b40c22bb041ce88748eb3dd919d83d
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: b458aaba464121e2e408013d4c8f32cd8a6852c5
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593865"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634184"
 ---
 # <a name="guest-users-in-microsoft-365-admin-center"></a>Gastbenutzer im Microsoft 365 Admin Center
 
@@ -65,4 +65,4 @@ Informationen zum Entfernen von Benutzern im Azure AD-Portal finden Sie unter [R
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Verwalten des Gastzugriffs in Microsoft 365 Gruppen](../create-groups/manage-guest-access-in-groups.md) (Artikel)\
-[Verhindern, dass Gäste zu einer bestimmten Gruppe oder Microsoft 365 hinzugefügt Microsoft Teams werden](../../solutions/per-group-guest-access.md)
+[Verhindern, dass Gäste zu einer bestimmten](../../solutions/per-group-guest-access.md) Gruppe oder Microsoft 365 hinzugefügt Microsoft Teams werden (Artikel)

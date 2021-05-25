@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: Ändern Sie Ihre E-Mail-Adresse in eine tom@fourthcoffee.com E-Mail-Adresse, indem Sie einen Domänennamen kaufen und Microsoft 365.
-ms.openlocfilehash: d5e70856c9200cd7e5df0eded25b6ff460e5d1fe
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 1a248cb67bab5d0467cad35dc5be8023b8013a12
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572093"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635522"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Ändern der E-Mail-Adresse auf die eigene benutzerdefinierte Domäne
 
@@ -91,4 +91,6 @@ Sie werden durch das Verfahren zum ordnungsgemäßen Einrichten Ihrer Domäne in
   
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Erwerben einer benutzerdefinierten Domäne mithilfe Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (Artikel)
+[Erwerben einer benutzerdefinierten Domäne mithilfe Microsoft 365](../get-help-with-domains/buy-a-domain-name.md) (Artikel)\
+[Verwalten von Domänen](../get-help-with-domains/index.yml) (Linkseite)\
+[Häufig gestellte Fragen zu Domänen](../setup/domains-faq.yml) (Artikel)

@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 77f90d4a-dc7f-4f09-8972-c1b03ea85a67
 description: Sammeln Sie die Werte/Informationen, die Sie zum Erstellen von DNS-Einträgen benötigen, um Ihre Domäne mit Ihrem Microsoft 365 verbinden.
-ms.openlocfilehash: c8ff30c27e67c8a29b7122ea80a6a33f0594b1b9
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: e65d53269f5fb8625b12c4eb22f78516818045be
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582956"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635726"
 ---
 # <a name="gather-the-information-you-need-to-create-dns-records"></a>Sammeln der Informationen, die Sie zum Erstellen von DNS-Einträgen benötigen
 
@@ -100,8 +100,6 @@ ms.locfileid: "52582956"
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Häufig gestellte Fragen](../setup/domains-faq.yml) zu Domänen (Artikel)
-
-[Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden](find-and-fix-issues.md) (Artikel)
-
+[Häufig gestellte Fragen](../setup/domains-faq.yml) zu Domänen (Artikel)\
+[Suchen und Beheben von Problemen nach dem Hinzufügen Ihrer Domäne oder Ihrer DNS-Einträge](find-and-fix-issues.md) (Artikel)\
 [Domänen verwalten](index.yml) (Linkseite)

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7257cb50-0d5c-4f7a-ac2e-9fe5d13bb5cb
 description: Benutzer mit gültigen Arbeits- oder Schulkonten können Cortana in Microsoft 365, die Office 365 Sicherheitszusagen auf Unternehmensebene erfüllen.
-ms.openlocfilehash: aad371fc531a03f42e1756a41405082b6b528b06
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f626ba0d0295655dcdb3d4df2b332dcf05f1a6b5
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582776"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635798"
 ---
 # <a name="cortana-in-microsoft-365"></a>Cortana in Microsoft 365
 
@@ -187,8 +187,6 @@ Für Dienste, die dem [Microsoft Services Agreement](https://go.microsoft.com/fw
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Cortana-Sprachunterstützung in Teams](/microsoftteams/cortana-in-teams) (Artikel)
-
-[Konfigurieren von Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (Artikel)
-
+[Cortana-Sprachunterstützung in Teams](/microsoftteams/cortana-in-teams) (Artikel)\
+[Konfigurieren von Cortana in Windows 10](/windows/configuration/cortana-at-work/cortana-at-work-overview) (Artikel)\
 [Was können Sie mit "Meine E-Mails von Cortana" abspielen?](https://support.microsoft.com/help/4558256)

@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erstellen Sie ein freigegebenes Postfach, und konfigurieren Sie einige Einstellungen f체r ihre Benutzer, z. B. E-Mail-Weiterleitung und automatische Antworten.
-ms.openlocfilehash: ab23353f07a24f06d43172e8087819dd915ab720
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: c1d8007a2fcc45fbdd1a6943ee464e5aae8917b9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582668"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635510"
 ---
 # <a name="configure-shared-mailbox-settings"></a>Konfigurieren der Einstellungen f체r das freigegebene Postfach
 
@@ -144,12 +144,8 @@ Wenn Sie das freigegebene Postfach nicht in der globalen Adressliste anzeigen m�
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Informationen zu freigegebenen Postf채chern](about-shared-mailboxes.md) (Artikel)
-
-[Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md) (Artikel)
-
-[Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach](convert-user-mailbox-to-shared-mailbox.md) (Artikel)
-
-[Entfernen einer Lizenz aus einem freigegebenen Postfach](remove-license-from-shared-mailbox.md) (Artikel)
-
+[Informationen zu freigegebenen Postf채chern](about-shared-mailboxes.md) (Artikel)\
+[Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md) (Artikel)\
+[Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach](convert-user-mailbox-to-shared-mailbox.md) (Artikel)\
+[Entfernen einer Lizenz aus einem freigegebenen Postfach](remove-license-from-shared-mailbox.md) (Artikel)\
 [Beheben von Problemen mit freigegebenen Postf채chern](resolve-issues-with-shared-mailboxes.md) (Artikel)

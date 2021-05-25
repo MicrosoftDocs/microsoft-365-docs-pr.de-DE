@@ -21,12 +21,12 @@ ms.custom:
 - commerce_purchase
 description: Wenn Sie Microsoft 365 Business Standard in einem Einzelhandelsgeschäft erworben haben, erfahren Sie, wie Sie den Product Key einlösen und Ihr Abonnement aktivieren.
 ms.date: 11/13/2020
-ms.openlocfilehash: bc2b07b5a98c13a919596bdbf85a21bdc6c8d2bf
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: e075a9d06b45f823540a3a99a1943caa9d116954
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593393"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636122"
 ---
 # <a name="enter-your-product-key-for-microsoft-365-business-standard"></a>Geben Sie Ihren Product Key für Microsoft 365 Business Standard
 
@@ -57,11 +57,9 @@ Wenn Sie Microsoft 365 Business Standard in einem Einzelhandelsgeschäft erworbe
 
 Verwenden Sie einen neuen und nicht verwendeten Schlüssel für den gleichen Microsoft 365, um das Ablaufdatum zu verlängern oder ihrem vorhandenen Microsoft 365 Business Standard eine Lizenz hinzuzufügen. Das Eingeben des ursprünglichen Microsoft 365 funktioniert nicht, da ein bereits eingelöster Schlüssel nicht erneut verwendet werden kann. Weitere Informationen finden Sie unter Hinzufügen von [Lizenzen zu oder Erweitern eines Abonnements, das für die Verwendung eines Product Key bezahlt wird.](licenses/add-licenses-using-product-key.md)
 
-## <a name="whats-next"></a>Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 Wenn Sie neu in Microsoft 365 Business sind, erfahren Sie, wie [Sie Microsoft 365.](../admin/setup/setup.md)
-  
-## <a name="still-having-trouble-with-product-keys"></a>Haben Sie weiterhin Probleme mit Product Keys?
 
 Sehen Sie sich diese Liste gängiger Fehler und Lösungen an: [Probleme mit Microsoft 365 Business Product Key?](product-key-errors-and-solutions.md)
   
@@ -69,8 +67,6 @@ Oder [rufen Sie den Microsoft-Support an](../business-video/get-help-support.md)
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Upgrade auf einen anderen Plan](./subscriptions/upgrade-to-different-plan.md) (Artikel)
-
-[Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Microsoft 365 Business-Abonnement endet?](./subscriptions/what-if-my-subscription-expires.md) (Artikel)
-
+[Upgrade auf einen anderen Plan](./subscriptions/upgrade-to-different-plan.md) (Artikel)\
+[Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Microsoft 365 Business-Abonnement endet?](./subscriptions/what-if-my-subscription-expires.md) (Artikel)\
 [Verstehen von Abonnements und Lizenzen in Microsoft 365 Business](./licenses/subscriptions-and-licenses.md) (Artikel)

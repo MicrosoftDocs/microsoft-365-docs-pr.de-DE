@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2dee1193e9f852e66df324927bf38d37d736d251
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: ed4e0c477bd2a8840e920b337f05c8730965bcff
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245948"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636242"
 ---
 # <a name="device-discovery-overview"></a>Übersicht über die Geräteermittlung
 
@@ -62,7 +62,7 @@ Es gibt zwei Erkennungsmodi:
 
 
 > [!IMPORTANT]
-> Die Ermittlung ist auf den Basismodus festgelegt. Sie können diese Konfiguration über die Einstellungsseite beibehalten. Die Standardermittlung ist der Standardmodus für alle Vorschaukunden ab dem 10. Mai 2021 , sofern sie nicht vor diesem Datum über die Einstellungsseite geändert wird.
+> Die Ermittlung ist auf den Basismodus festgelegt. Sie können diese Konfiguration über die Einstellungsseite beibehalten. Die Standardermittlung ist der Standardmodus für alle Kunden ab dem 19. Juli 2021 – sofern sie nicht vor diesem Datum über die Einstellungsseite geändert wird.
 
 ### <a name="basic-discovery"></a>Grundlegende Ermittlung 
 

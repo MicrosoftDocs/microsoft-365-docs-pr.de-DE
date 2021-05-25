@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Erfahren Sie, wie Sie einen Domänennamen in Microsoft 365.
-ms.openlocfilehash: 53c71796c09f08d1f50c58704b8dd95c1a241518
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 3d5a5568a0e75a06f0880d82ea8e4a1a8d003689
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537571"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635462"
 ---
 # <a name="buy-a-domain-name"></a>Kaufen eines Domänennamens
 
@@ -119,8 +119,6 @@ Nachdem Sie Ihre Domäne (bei einer Domänenregistrierungsstelle) registriert ha
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Hinzufügen einer Domäne zu Microsoft 365](../setup/add-domain.md) (Artikel)
-
-[Häufig gestellte Fragen](../setup/domains-faq.yml) zu Domänen (Artikel)
-
+[Hinzufügen einer Domäne zu Microsoft 365](../setup/add-domain.md) (Artikel)\
+[Häufig gestellte Fragen](../setup/domains-faq.yml) zu Domänen (Artikel)\
 [Aktualisieren von DNS-Einträgen, um Ihre Website bei Ihrem aktuellen Hostinganbieter zu halten](../dns/update-dns-records-to-retain-current-hosting-provider.md) (Artikel)

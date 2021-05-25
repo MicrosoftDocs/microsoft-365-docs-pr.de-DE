@@ -25,18 +25,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2d75860f-c527-4352-a7f6-73eba54c0c72
 description: Verwalten von E-Mail-Signaturen, einschließlich rechtlicher Haftungsausschlüsse oder Offenlegungsanweisungen für alle E-Mail-Nachrichten, die Ihre Organisation betreten oder verlassen.
-ms.openlocfilehash: 05cfeeb01231e7f99d2a96fc37581b4c9a23f5aa
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f72d522c7dc592a7f719d716e22ecf726d00a6de
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582752"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635654"
 ---
 # <a name="create-organization-wide-signatures-and-disclaimers"></a>Erstellen von organisationsweiten Signaturen und Haftungsausschlüssen
 
  Sie können E-Mail-Signaturen verwalten, indem Sie den E-Mail-Nachrichten, die an Ihre Organisation oder von ihr gesendet werden, eine E-Mail-Signatur, einen rechtlichen Haftungsausschluss oder eine Offenlegungserklärung hinzufügen. Das können Sie so einrichten, dass diese Hinzufügung auf alle ein- und ausgehenden Nachrichten angewendet wird, wie unten beschrieben wird. Oder Sie können sie nur auf bestimmte Nachrichten anwenden, z. B. solche, die bestimmte Wörter oder Textmuster enthalten.
 
- Sehen Sie sich ein kurzes Video über die Erstellung einer unternehmensweiten E-Mail-Signatur an. <br><br>
+## <a name="watch-create-a-company-wide-email-signature"></a>Watch: Erstellen einer unternehmensweiten E-Mail-Signatur
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf] 
 
@@ -119,9 +119,7 @@ Informationen zur Verwendung von PowerShell finden Sie unter [Organisationsweite
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Migrieren von E-Mails und Kontakten zu Microsoft 365](migrate-email-and-contacts-admin.md) (Video)
-
-[Benutzer-E-Mail-Einstellungen](../email/office-365-user-email-settings.md) (Artikel)
-
+[Migrieren von E-Mails und Kontakten zu Microsoft 365](migrate-email-and-contacts-admin.md) (Video)\
+[Benutzer-E-Mail-Einstellungen](../email/office-365-user-email-settings.md) (Artikel)\
 [Übersicht über das Microsoft 365 Admin Center](../../business-video/admin-center-overview.md) (Video)
 

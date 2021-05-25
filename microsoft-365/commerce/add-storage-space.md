@@ -22,12 +22,12 @@ ms.custom:
 search.appverid: MET150
 description: Fügen Sie Dateispeicher in Ihrem Microsoft 365 hinzu. Mit zusätzlichem Dateispeicher können Sie weitere Inhalte in SharePoint Online und OneDrive.
 ms.date: 04/02/2021
-ms.openlocfilehash: b573205c7053aba0339d1f32deb2996ef80f8754
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 14b688e850f62a06c39e4a315d871202e57d70d6
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572321"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635858"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Hinzufügen von Speicherplatz für Ihr Abonnement
 
@@ -104,4 +104,4 @@ Office 365 Extra File Storage steht im Rahmen der folgenden Abonnements zur Verf
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Verwalten von Websitespeichergrenzwerte](/sharepoint/manage-site-collection-storage-limits) (Artikel)\
-[Festlegen des Standardspeicherplatzes für OneDrive Benutzer](/onedrive/set-default-storage-space)(Artikel)
+[Festlegen des Standardspeicherplatzes für OneDrive Benutzer](/onedrive/set-default-storage-space) (Artikel)

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Nachrichtencenterbeiträge sind nur auf Englisch verfügbar, können jedoch automatisch in der Sprache angezeigt werden, die Sie für die Microsoft 365.
-ms.openlocfilehash: 88b34fcca1d4cedfd6e1a7cb4ee19aef5c3262b7
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: f500baccbf3c78b9d775629d38864444c78fb2e3
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582920"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636034"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Sprachübersetzung für Nachrichtencenterbeiträge
 
@@ -49,10 +49,8 @@ Wenn Sie für Nachrichtencenter-Beiträge festlegen möchten, dass sie automatis
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Übersicht über das Microsoft 365 Admin Center](../../business-video/admin-center-overview.md) (Video)
-
-[Welches Abonnement habe ich?](../admin-overview/what-subscription-do-i-have.md) (Artikel)
-
+[Übersicht über Microsoft 365 Admin Center](../../business-video/admin-center-overview.md) (Video)\
+[Welches Abonnement habe ich?](../admin-overview/what-subscription-do-i-have.md) (Artikel)\
 [Bleiben Sie über Änderungen](../manage/stay-on-top-of-updates.md) (Artikel)
 
 

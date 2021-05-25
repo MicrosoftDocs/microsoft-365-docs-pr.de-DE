@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ermitteln Sie, ob Der Mandant und die Benutzer die Anforderungen erfüllen, sodass Sie die zentrale Bereitstellung zum Bereitstellen Office-Add-Ins verwenden können.
-ms.openlocfilehash: e5d3337cdf1bbb0dc18ee6940ab8bd289d2e5f65
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 25fe217a41274b6a239e4ee482ee105238465999
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593921"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635450"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert
 
@@ -160,11 +160,8 @@ Wenn bei der Verwendung von Office-Apps für das Web (Word, Excel usw.), die zen
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Bereitstellen von Add-Ins im Admin Center](../manage/manage-deployment-of-add-ins.md) (Artikel)
-
-[Verwalten von Add-Ins im Admin Center](manage-addins-in-the-admin-center.md) (Artikel)
-
-[Häufig gestellte Fragen zur zentralen](../manage/centralized-deployment-faq.md) Bereitstellung (Artikel)
-
+[Bereitstellen von Add-Ins im Admin Center](../manage/manage-deployment-of-add-ins.md) (Artikel)\
+[Verwalten von Add-Ins im Admin Center](manage-addins-in-the-admin-center.md) (Artikel)\
+[Häufig gestellte Fragen](../manage/centralized-deployment-faq.md) zur zentralen Bereitstellung (Artikel)\
 [Aktualisieren Der Microsoft 365 für Geschäftsbenutzer auf den](../setup/upgrade-users-to-latest-office-client.md) neuesten Office (Artikel)
  

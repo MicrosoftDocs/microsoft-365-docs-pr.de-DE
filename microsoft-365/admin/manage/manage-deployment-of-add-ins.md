@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informationen zum Bereitstellen von Add-Ins für Benutzer und Gruppen in Ihrer Organisation mithilfe der zentralen Bereitstellung im Admin Center.
-ms.openlocfilehash: 2d3b90a75f38a2c1146c0b0e5470c80b0af2c63f
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 8cc4f29cd2593d9651edaf87791f46dabdcc30b2
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572273"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636022"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Bereitstellen von Add-Ins im Admin Center
 
@@ -131,12 +131,7 @@ Aktualisierungen für Add-Ins werden auf folgende Weise ausgeführt:
   
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Verwalten von Add-Ins im Admin Center](manage-addins-in-the-admin-center.md) (Artikel)
-
-[Erstellen Des ersten Word-Aufgabenbereich-Add-Ins](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (Artikel)
-
-[Minderjährige und Erwerben von Add-Ins aus dem Store](minors-and-acquiring-addins-from-the-store.md) (Artikel)
-  
-[Verwenden von PowerShell-Cmdlets](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) für die zentrale Bereitstellung zum Verwalten von Add-Ins (Artikel)
-  
+[Verwalten von Add-Ins im Admin Center](manage-addins-in-the-admin-center.md) (Artikel)\
+[Erstellen Des ersten Word-Aufgabenbereich-Add-Ins](/office/dev/add-ins/quickstarts/word-quickstart?tabs=yeomangenerator) (Artikel\
+[Minderjährige und Erwerben von Add-Ins](minors-and-acquiring-addins-from-the-store.md) aus dem Store (Artikel)\ Verwenden von [PowerShell-Cmdlets](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) für die zentrale Bereitstellung zum Verwalten von Add-Ins (Artikel)\  
 [Problembehandlung: Benutzer sieht keine Add-Ins](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (Artikel)

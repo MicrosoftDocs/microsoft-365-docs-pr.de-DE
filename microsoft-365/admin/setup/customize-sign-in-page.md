@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: a1229cdb-ce19-4da5-90c7-2b9b146aef0a
 description: Passen Sie Microsoft 365 Anmeldeseite mithilfe der Azure Active Directory. Sie können der Anmeldeseite eine Illustration, ein Logo und Text hinzufügen.
-ms.openlocfilehash: dba75d5178f3c4a879ae2cdc9694697df45f6b8b
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 6c873409a06d824c7b63f5ea02e178e22337a345
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624441"
+ms.locfileid: "52635938"
 ---
 # <a name="add-your-company-branding-to-the-sign-in-page"></a>Hinzufügen Ihres Unternehmensbrandings zur Anmeldeseite
 
@@ -49,6 +49,8 @@ Die folgende Abbildung zeigt, welche Teile der Anmeldeseite in Azure geändert w
     
 Zusätzlich zur Anmeldeseite können Sie die Zugriffsbereichsseite in Azure anpassen.
   
+## <a name="next-steps"></a>Nächste Schritte
+
 Wenn Sie Branding hinzufügen möchten, sollten Sie die Anpassungsoptionen in der Azure-Inhaltsgruppe ausprobieren: [Hinzufügen Ihres Unternehmensbranding zur Anmelde- und Zugriffsbereichsseite](/azure/active-directory/fundamentals/customize-branding)
 
 ## <a name="related-content"></a>Verwandte Inhalte

@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Erfahren Sie, wie Sie ein Mitglied zu einer Gruppe hinzufügen, Mitglieder aus der Gruppe entfernen und den Gruppenbesitzerstatus im Microsoft 365 verwalten.
-ms.openlocfilehash: 3ab3ebe21caa2d9d3dfa381dd3b68c9d2512cb79
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: b5b0a398a5ebb47a5f27066f1daea1a822adbff2
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593381"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635606"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Hinzufügen oder Entfernen von Mitgliedern aus Microsoft 365 Gruppen mithilfe des Admin Centers
 
@@ -99,9 +99,9 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
 
 4. Wählen Sie das X neben dem Namen des Besitzers aus.
 
-5. Klicken Sie auf **Speichern**.
+5. Wählen Sie **Speichern** aus.
 
-## <a name="more-on-managing-membership"></a>###Weitere Informationen zum Verwalten der Mitgliedschaft
+## <a name="next-steps"></a>Nächste Schritte
 
 - [Dynamisches Verwalten von Gruppen in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal): Lesen Sie den Abschnitt "Wie kann ich die Mitgliedschaft in einer Gruppe dynamisch verwalten?"
 
@@ -111,12 +111,8 @@ Die Person, die eine Gruppe erstellt hat, ist standardmäßig der Gruppenbesitze
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Aktualisieren von Verteilerlisten auf Microsoft 365 Gruppen in Outlook](../manage/upgrade-distribution-lists.md) (Artikel)
-
-[Warum Sie Ihre Verteilerlisten zu Gruppen in Outlook aktualisieren sollten](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) (Artikel)
-
-[Verwalten des Gastzugriffs in Microsoft 365 Gruppen](manage-guest-access-in-groups.md) (Artikel)
-
+[Aktualisieren von Verteilerlisten auf Microsoft 365 Gruppen in Outlook](../manage/upgrade-distribution-lists.md) (Artikel)\
+[Warum Sollten Sie Ihre Verteilerlisten](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188) auf Gruppen in Outlook aktualisieren (Artikel)\
+[Verwalten des Gastzugriffs in Microsoft 365 Gruppen](manage-guest-access-in-groups.md) (Artikel)\
 [Verwalten Microsoft 365 Gruppen mit PowerShell](../../enterprise/manage-microsoft-365-groups-with-powershell.md): In diesem Artikel werden Die wichtigsten Cmdlets und Beispiele (Artikel) erläutert.
-
 [Microsoft 365 gruppenbenennungsrichtlinie](../../solutions/groups-naming-policy.md) (Artikel)

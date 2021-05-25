@@ -15,17 +15,17 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Erfahren Sie, wie Sie einen QR-Code zum Authentifizieren und Herunterladen von Outlook verwenden.
-ms.openlocfilehash: bc8ab14d3c1c0621e84d0c95ad7448c6c50825d6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2c1853a6ea1dd1a5d2ad30b975d1dbd23b942040
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914966"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635998"
 ---
 # <a name="use-a-qr-code-to-sign-in-to-the-outlook-mobile-apps"></a>Verwenden eines QR-Codes zum Anmelden bei Outlook mobilen Apps
 
 > [!IMPORTANT]
-> Dieses Feature ist nur für Organisationen verfügbar, die die zielorientierte Veröffentlichung im Microsoft 365 aktiviert haben. Weitere Informationen zur Funktionsweise der gezielten Veröffentlichung finden Sie unter [Set up the Standard or Targeted release options](release-options-in-office-365.md). Wir werden in den kommenden Wochen über die öffentliche Vorschau auf weitere Organisationen erweitern. Die öffentliche Vorschau bietet frühzeitigen Zugriff auf Microsoft 365 Features.
+> Dieses Feature ist nur für Organisationen verfügbar, die die gezielte Veröffentlichung im Microsoft 365 aktiviert haben. Weitere Informationen zur Funktionsweise der gezielten Veröffentlichung finden Sie unter [Set up the Standard or Targeted release options](release-options-in-office-365.md). Wir werden in den kommenden Wochen über die öffentliche Vorschau auf weitere Organisationen erweitern. Die öffentliche Vorschau bietet frühzeitigen Zugriff auf Microsoft 365 Features.
 
 Als Microsoft 365 können Sie Ihren Benutzern die Anmeldung bei Outlook für Android oder iOS-App auf ihren mobilen Geräten ermöglichen, ohne ihren Benutzernamen und ihr Kennwort eingeben zu müssen. Durch Das Scannen eines QR-Codes können Benutzer sich sicher authentifizieren und sich bei Outlook anmelden.
 
@@ -39,12 +39,13 @@ In Outlook im Web oder in anderen Desktop-Outlook können Benutzern Benachrichti
 Diese Funktion ist standardmäßig aktiviert. Führen Sie die folgenden Schritte aus, um dieses Feature zu deaktivieren.
 
 1. [Verbinden zum Exchange PowerShell .](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps)
-2. Mit PowerShell können Sie die Benachrichtigungen deaktivieren, die Ihre Benutzer über die Outlook informieren. Dadurch wird auch verhindert, dass der Qr-Code-Anmeldefluss angezeigt wird.
+2. Mit PowerShell können Sie die Benachrichtigungen deaktivieren, die Ihre Benutzer über die Outlook informieren. Dadurch wird auch verhindert, dass der QR-Code-Anmeldefluss angezeigt wird.
 
 ```powershell
 Set-OrganizationConfig -MobileAppEducationEnabled <Boolean>
 ```
 
-Verwandte Themen
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig?view=exchange-ps)
+[Einrichten der Standard- oder Zielversionsoptionen](release-options-in-office-365.md) (Artikel)\
+[Set-OrganizationConfig](/powershell/module/exchange/set-organizationconfig?view=exchange-ps) (Artikel)

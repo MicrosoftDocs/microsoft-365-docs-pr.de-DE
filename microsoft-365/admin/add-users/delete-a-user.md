@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Erfahren Sie, wie Sie ein Benutzerkonto löschen und was Sie mit den E-Mails des Benutzers tun und OneDrive inhalten und ob die Produktlizenz erhalten werden soll.
-ms.openlocfilehash: c30edb598f659337778ec956737934da5fedad18
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: ff10d3289eae87f84685c22b81db03798ca9d7eb
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593405"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634208"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Löschen eines Benutzers aus Ihrer Organisation
   
@@ -171,12 +171,8 @@ Nachfolgend sind die beim Löschen eines Benutzers am häufigsten auftretenden P
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Wiederherstellen eines Benutzers](restore-user.md) (Artikel)
-  
-[Dauerhaftes Löschen eines Postfachs](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (Artikel)
-
-[Entfernen eines ehemaligen Mitarbeiters aus Office 365](remove-former-employee.md) (Artikel)
-
-[Hinzufügen eines neuen Mitarbeiters zu Office 365](add-new-employee.md) (Artikel)
-
+[Wiederherstellen eines Benutzers](restore-user.md) (Artikel)\
+[Dauerhaftes Löschen eines Postfachs](/exchange/permanently-delete-a-mailbox-exchange-2013-help) (Artikel)\
+[Entfernen eines ehemaligen Mitarbeiters aus Office 365](remove-former-employee.md) (Artikel)\
+[Hinzufügen eines neuen Mitarbeiters zu Office 365](add-new-employee.md) (Artikel)\
 [Löschen eines Benutzerkontos](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)): Folgen Sie diesen Anweisungen, wenn Ihr Unternehmen **Active Directory** verwendet und mit Azure AD synchronisiert. Dies ist nicht über Office 365 möglich. (Artikel)

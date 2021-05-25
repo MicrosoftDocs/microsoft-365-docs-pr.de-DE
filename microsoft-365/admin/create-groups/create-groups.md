@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 74a1ef8b-3844-4d08-9980-9f8f7a36000f
 description: Informationen zum Erstellen und Löschen Microsoft 365 Gruppen, Zum Hinzufügen und Entfernen von Gruppenmitgliedern und zum Anpassen der Funktionsweise der Gruppe.
-ms.openlocfilehash: b3fb637867229489a3e3abe93373cc46fbce365f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: b8cbd194825ef114fa8e4ce999355248a61e7830
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241724"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635582"
 ---
 # <a name="create-a-group-in-the-microsoft-365-admin-center"></a>Erstellen einer Gruppe im Microsoft 365 Admin Center
   
@@ -80,14 +80,12 @@ Ein Mitglied kann eine E-Mail-Unterhaltung aus dem Posteingang der Gruppe lösch
   
 Wenn eine E-Mail aus dem Gruppenpostfach gelöscht wird, wird Sie nicht aus den persönlichen Postfächern der Gruppenmitglieder gelöscht.
 
-## <a name="next-step-manage-your-group"></a>Nächster Schritt: Verwalten der Gruppe
+## <a name="next-steps"></a>Nächste Schritte
 
 Nachdem Sie eine neue Gruppe erstellt und Mitglieder hinzugefügt haben, können Sie Ihre Gruppe weiter konfigurieren, z. B. den Gruppennamen oder die Beschreibung bearbeiten, Besitzer oder Mitglieder ändern und festlegen, ob externe Absender E-Mails an die Gruppe senden können und ob Kopien der Gruppenunterhaltungen an die Mitglieder gesendet werden. Weitere Informationen finden Sie unter Manage [a Microsoft 365 group.](manage-groups.md)
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Verwalten des Gastzugriffs auf Microsoft 365 Gruppen](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (Artikel)
-
-[Wählen Sie die Domäne aus, die](../../solutions/choose-domain-to-create-groups.md) beim Erstellen Microsoft 365 verwendet werden soll (Artikel)
-
+[Verwalten des Gastzugriffs auf Microsoft 365 Gruppen](https://support.microsoft.com/office/bfc7a840-868f-4fd6-a390-f347bf51aff6) (Artikel)\
+[Wählen Sie die Domäne aus, die](../../solutions/choose-domain-to-create-groups.md) beim Erstellen Microsoft 365 (Artikel)\ verwendet werden soll.
 [Aktualisieren von Verteilerlisten auf Microsoft 365 Gruppen](../manage/upgrade-distribution-lists.md) (Artikel)

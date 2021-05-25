@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Interpretieren von Gebühren, Abrechnungs- und Zahlungsinformationen auf Ihrer Microsoft 365 für Geschäftsrechnungen oder Rechnungen und Ändern einer Bestellnummer.
 ms.date: 05/04/2021
-ms.openlocfilehash: aa898f570fb17f2d9e2ebba769e285cb9d507c31
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 63d532ddfb86eb80a1cdeb6001fff683c5999146
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593525"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635834"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Grundlegendes zu Ihrer Rechnung für Microsoft 365 für Unternehmen
 
@@ -128,12 +128,8 @@ Wenn Sie per Rechnung bezahlen, können Sie Ihrem Abonnement die Auftragsnummer 
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Erfahren Sie, wie Sie Ihre Rechnung oder Rechnung](view-your-bill-or-invoice.md) finden und anzeigen (Artikel)
-
-[Ändern Ihrer Abrechnungsadressen](change-your-billing-addresses.md) (Artikel)
-
-Ändern der Adresse Ihrer Organisation, der [technischen Kontakt-E-Mail und anderer Informationen](../../admin/manage/change-address-contact-and-more.md) (Artikel)
-
-[Bezahlen Für Ihr Microsoft 365 business-Abonnement](pay-for-your-subscription.md) (Artikel)
-
+[Erfahren Sie, wie Sie Ihre Rechnung oder Rechnung](view-your-bill-or-invoice.md) suchen und anzeigen (Artikel)\
+[Ändern Ihrer Abrechnungsadressen](change-your-billing-addresses.md) (Artikel)\
+[Ändern der Adresse Ihrer Organisation, der technischen Kontakt-E-Mail und anderer Informationen](../../admin/manage/change-address-contact-and-more.md) (Artikel)\
+[Bezahlen Sie für Microsoft 365 für Ihr Geschäftsabonnement](pay-for-your-subscription.md) (Artikel)\
 [Minecraft: Education Edition – Zahlungsoptionen](/education/windows/school-get-minecraft) (Artikel)

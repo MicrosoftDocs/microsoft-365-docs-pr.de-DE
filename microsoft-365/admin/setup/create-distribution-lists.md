@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Erstellen Sie Verteilergruppen oder Listen im Microsoft 365 Admin Center, damit Sie E-Mails an eine Gruppe senden können, ohne den Namen jedes Empfängers eintippen zu müssen.
-ms.openlocfilehash: 7c04ca3e17959afd4138a6ddf9d9cbcd6c4dbafb
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 845aa04e5e26beb14fca0fa3bc08c0599077b152
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572249"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635666"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Erstellen von Verteilergruppen im Microsoft 365 Admin Center
   
@@ -76,8 +76,6 @@ Hilfe bei [Problemen mit Verteilerlisten finden](/office365/troubleshoot/groups/
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Benutzer-E-Mail-Einstellungen](../email/office-365-user-email-settings.md) (Artikel)
-
-[Erstellen, Bearbeiten oder Löschen einer Sicherheitsgruppe im Microsoft 365 Admin Center](../email/create-edit-or-delete-a-security-group.md) (Artikel)
-
+[Benutzer-E-Mail-Einstellungen](../email/office-365-user-email-settings.md) (Artikel)\
+[Erstellen, Bearbeiten oder Löschen einer Sicherheitsgruppe im Microsoft 365 Admin Center](../email/create-edit-or-delete-a-security-group.md) (Artikel)\
 [Erstellen eines freigegebenen Postfachs](../email/create-a-shared-mailbox.md) (Artikel)

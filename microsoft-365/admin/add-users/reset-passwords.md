@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Melden Sie sich mit Ihrem Microsoft 365 Administratorkonto an, um Kennwörter für Benutzer in Microsoft 365 Business-Abonnement zurückzusetzen.
-ms.openlocfilehash: 8d4666eb70b1d5349f71c906f05510a8a54ded74
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 0cec6c7874b51c76fca60c6c237395c940c47bbe
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571973"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635570"
 ---
 # <a name="reset-passwords"></a>Kennwörter zurücksetzen
 
@@ -122,12 +122,8 @@ Lesen Sie den Artikel [Ich habe den Benutzernamen oder das Kennwort für das Kon
   
 ## <a name="related-content"></a>Verwandte Inhalte
   
-[Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten](../add-users/let-users-reset-passwords.md) (Artikel)
-
-[Kennwörter zurücksetzen](../add-users/reset-passwords.md) (Artikel)
-
-[Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft](set-password-to-never-expire.md) (Artikel)
-
-[Festlegen der Kennwortablaufrichtlinie für Ihre Organisation](../manage/set-password-expiration-policy.md) (Artikel)
-
+[Benutzer können ihre eigenen Kennwörter](../add-users/let-users-reset-passwords.md) zurücksetzen (Artikel)\
+[Zurücksetzen von Kennwörtern](../add-users/reset-passwords.md) (Artikel)\
+[Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft](set-password-to-never-expire.md) (Artikel)\
+[Festlegen der Kennwortablaufrichtlinie für Ihre Organisation](../manage/set-password-expiration-policy.md) (Artikel)\
 [Microsoft 365 Für Unternehmen Schulungsvideos](../../business-video/index.yml) (Linkseite)

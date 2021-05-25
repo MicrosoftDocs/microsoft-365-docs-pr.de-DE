@@ -20,16 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
 description: 'Erfahren Sie, wie Sie ein privates Postfach in ein freigegebenes Postfach konvertieren, auf das von mehreren Personen statt von nur einer Person zugegriffen werden kann. '
-ms.openlocfilehash: 73e2bad40037e1343f4e08c07ca6b26df16b1a30
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0beb85e5a69b72bcd244cd654c399e91ded06ba7
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537619"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635474"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach
 
 Wenn Sie das Postfach eines Benutzers in ein freigegebenes Postfach konvertieren, werden alle vorhandenen E-Mails und Kalender beibehalten. Sie befinden sich nun nur in einem freigegebenen Postfach, auf das mehrere Personen (nicht nur eine Person) zugreifen können. Zu einem späteren Zeitpunkt können Sie ein freigegebenes Postfach wieder in ein (privates) Benutzerpostfach konvertieren.
+
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 **Hier sind einige wirklich wichtige Dinge, die Sie wissen müssen:**
 
@@ -59,7 +61,6 @@ Weitere Informationen zu freigegebenen Postfächern finden Sie unter [Informatio
 > [!NOTE]
 > Freigegebene Postfächer erfordern keine separate Lizenz. Wenn Sie jedoch In-Place Archive aktivieren oder ein In-Place-Archiv oder ein Prozesssicherungsverfahren für ein freigegebenes Postfach aktivieren möchten, müssen Sie dem Postfach eine Exchange Online Plan 1 mit Exchange Online-Archivierung- oder Exchange Online Plan 2-Lizenz zuweisen.
 
-
 ## <a name="convert-the-mailbox-of-a-deleted-user"></a>Konvertieren des Postfachs eines gelöschten Benutzers
 
 Angenommen, Sie haben ein Benutzerkonto gelöscht und möchten nun das alte Postfach in ein freigegebenes Postfach konvertieren. Nachstehend wird beschrieben, wie Sie vorgehen müssen:
@@ -77,7 +78,6 @@ Angenommen, Sie haben ein Benutzerkonto gelöscht und möchten nun das alte Post
 6. Anschließend können Sie die Lizenz aus dem Postfach des Benutzers entfernen. Löschen Sie das alte Postfach des Benutzers nicht. Das freigegebene Postfach benötigt dieses als Anker.
     
 7. Fügen Sie dem freigegebenen Postfach Mitglieder hinzu.
-
 
 ## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>Konvertieren eines freigegebenen Postfachs zurück in das (private) Postfach eines Benutzers
 
@@ -104,12 +104,8 @@ Weitere Informationen zum Konvertieren eines Benutzerpostfachs in ein freigegebe
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Informationen zu freigegebenen Postfächern](about-shared-mailboxes.md) (Artikel)
-
-[Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md) (Artikel)
-
-[Konfigurieren eines freigegebenen Postfachs](configure-a-shared-mailbox.md) (Artikel)
-
-[Entfernen einer Lizenz aus einem freigegebenen Postfach](remove-license-from-shared-mailbox.md) (Artikel)
-
+[Informationen zu freigegebenen Postfächern](about-shared-mailboxes.md) (Artikel)\
+[Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md) (Artikel)\
+[Konfigurieren eines freigegebenen Postfachs](configure-a-shared-mailbox.md) (Artikel)\
+[Entfernen einer Lizenz aus einem freigegebenen Postfach](remove-license-from-shared-mailbox.md) (Artikel)\
 [Beheben von Problemen mit freigegebenen Postfächern](resolve-issues-with-shared-mailboxes.md) (Artikel)

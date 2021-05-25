@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b9707ec8-2247-4e25-9bad-f11ddbc686e4
 description: Erfahren Sie, wie Sie Ihren E-Mail- und Domänenbesitz überprüfen, um einen nicht verwalteten Mandanten zu übernehmen, der durch eine Self-Service-Benutzerregistrierung in einem Microsoft 365.
-ms.openlocfilehash: c37bf153edf39f53b5c10f020b0cbb8d630eb4a6
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: aa44023ffdc2b59e4db024706323c5b872566260
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593933"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635986"
 ---
 # <a name="perform-an-internal-admin-takeover"></a>Durchführen einer internen Administratorübernahme
 
@@ -68,10 +68,7 @@ Wenn Sie ein Administrator sind und einen nicht verwalteten Mandanten übernehme
   
 ## <a name="related-content"></a>Verwandte Inhalte
 
-YouTube: [3 Schritte zum Ausführen einer Übernahme](https://www.youtube.com/watch?v=xt5EsrQBZZk) von IT-Administratoren für Power BI und Microsoft 365 (Video)
-
-[Admin-Übernahme in Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (Artikel)
-
-[Verwenden der Self-Service-Anmeldung in Ihrer Organisation](self-service-sign-up.md) (Artikel)
-  
+YouTube: [3 Schritte zum Ausführen einer Übernahme](https://www.youtube.com/watch?v=xt5EsrQBZZk) von IT-Administratoren für Power BI und Microsoft 365 (Video)\
+[Administratorübernahme in Azure AD](/azure/active-directory/users-groups-roles/domains-admin-takeover) (Artikel)\
+[Verwenden der Self-Service-Anmeldung in Ihrer Organisation](self-service-sign-up.md) (Artikel)\
 [Grundlegendes zur Power BI Dienstadministratorrolle](/power-bi/service-admin-role) (Artikel)

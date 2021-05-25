@@ -19,14 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Sie müssen administrator für ein Geschäftsabonnement sein, um Administratorhilfe oder Online- oder Telefonsupport in Microsoft 365 Business Premium.
-ms.openlocfilehash: e6308a9728731052d540cf3e872b6e153b64aae2
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e1250d5c291832e5a337f34e49ce0b7cf68fb08d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535710"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635902"
 ---
 # <a name="get-support"></a>Anfordern von Support
+
+## <a name="watch-get-help-or-support"></a>Watch: Hilfe oder Support erhalten 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -256,8 +258,6 @@ Sie können auch die [Communityforen von Microsoft 365 for Business](https://go.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Suchen von Dokumenten und Schulungen](find-help-answers.md) (Artikel)
-
-[Mitarbeiter-Schnelleinrichtung](employee-quick-setup.md) (Artikel)
-
+[Suchen von Dokumenten und Schulungen](find-help-answers.md) (Artikel)\
+[Mitarbeiter-Schnelleinrichtung](employee-quick-setup.md) (Artikel)\
 [Übersicht über Microsoft 365 Business Premium Setup](setup-overview.md) (Video)

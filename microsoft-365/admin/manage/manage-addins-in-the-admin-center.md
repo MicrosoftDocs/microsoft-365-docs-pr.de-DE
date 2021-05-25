@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Erfahren Sie mehr über die Verwendung von zentralisierten Add-Ins zum Bereitstellen von Add-Ins für Benutzer und Gruppen in Ihrer Organisation.
-ms.openlocfilehash: c103cfc4e3e7b404ea4d31d81bc30d7990a922dc
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: d678755b28daea1578ce2a5d2e387492cf32d368
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593969"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636058"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Verwalten von Add-Ins im Admin Center
 
@@ -157,12 +157,8 @@ Wenn das bereitgestellte Add-In keine Add-In-Befehle unterstützt oder Sie alle 
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Bereitstellen von Add-Ins im Admin Center](./manage-deployment-of-add-ins.md) (Artikel)
-
-Weitere Informationen zum Erstellen und Erstellen [Office Add-Ins](/office/dev/add-ins/overview/office-add-ins) (Artikel)
-  
-[Verwenden von PowerShell-Cmdlets](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) für die zentrale Bereitstellung zum Verwalten von Add-Ins (Artikel)
-  
-[Problembehandlung: Benutzer sieht keine Add-Ins](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (Artikel)
-
+[Bereitstellen von Add-Ins im Admin Center](./manage-deployment-of-add-ins.md) (Artikel)\
+Weitere Informationen zum Erstellen und Erstellen [Office Add-Ins](/office/dev/add-ins/overview/office-add-ins) (Artikel)\
+[Verwenden von PowerShell-Cmdlets](../../enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md) für die zentrale Bereitstellung zum Verwalten von Add-Ins (Artikel)\
+[Problembehandlung: Benutzer sieht keine Add-Ins](/office365/troubleshoot/access-management/user-not-seeing-add-ins) (Artikel)\
 [Minderjährige und Erwerben von Add-Ins Microsoft Store](./minors-and-acquiring-addins-from-the-store.md) (Artikel)

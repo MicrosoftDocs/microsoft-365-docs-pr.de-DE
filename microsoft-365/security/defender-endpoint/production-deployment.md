@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7abf1c9e4115c928ae581da3789270fd8ed036d3
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 6b49565c45c1f38d0d2ce71b097af079782ba4de
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476310"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636194"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Einrichten der Bereitstellung von Microsoft Defender for Endpoint
 
@@ -82,36 +82,9 @@ Um Zugriff darauf zu erhalten, welche Lizenzen für Ihr Unternehmen bereitgestel
 
 
 ## <a name="tenant-configuration"></a>Mandantenkonfiguration
+Das Onboarding in Microsoft Defender for Endpoint ist einfach. Wählen Sie im Navigationsmenü ein beliebiges Element im Abschnitt Endpunkte oder ein beliebiges Microsoft 365 Defender-Feature wie Vorfälle, Suche, Aktionscenter oder Bedrohungsanalyse aus, um den Onboardingprozess zu initiieren.
 
-Beim ersten Zugriff Microsoft Defender Security Center ein Assistent, der Sie durch einige erste Schritte führt. Am Ende des Setup-Assistenten wird eine dedizierte Cloudinstanz von Defender for Endpoint erstellt. Die einfachste Methode besteht in der Ausführung dieser Schritte auf einem Windows 10 Clientgerät.
-
-1. Navigieren Sie in einem Webbrowser zu <https://securitycenter.windows.com> .
-
-    ![Abbildung von Einrichten Ihrer Berechtigungen für Microsoft Defender for Endpoint](images/atp-setup-permissions-wdatp-portal.png)
-
-2. Wenn Sie eine TRIAL-Lizenz durchgehen, wechseln Sie zu dem Link ( <https://signup.microsoft.com/Signup?OfferId=6033e4b5-c320-4008-a936-909c2825d83c&dl=WIN_DEF_ATP&pc=xxxxxxx-xxxxxx-xxx-x> )
-
-    Sobald der Autorisierungsschritt abgeschlossen ist, wird der **Willkommensbildschirm** angezeigt.
-3. Gehen Sie durch die Autorisierungsschritte.
-
-    ![Abbildung des Willkommensbildschirms für die Einrichtung des Portals](images/welcome1.png)
-
-4. Richten Sie Einstellungen ein.
-
-   **Datenspeicherort:** Es ist wichtig, dass Sie dies ordnungsgemäß einrichten. Bestimmen Sie, wo der Kunde hauptsächlich gehostet werden möchte: USA, EU oder Großbritannien. Sie können den Speicherort nach dieser Einrichtung nicht mehr ändern, und Microsoft übertstrat die Daten nicht von der angegebenen Geolocation. 
-
-    **Datenaufbewahrung** – Der Standardwert ist sechs Monate.
-
-    **Aktivieren von Vorschaufeatures** – Der Standardwert ist aktiviert, kann später geändert werden.
-
-    ![Abbildung des geografischen Standorts in der Einrichtung](images/setup-preferences.png)
-
-5. Wählen Sie **Weiter** aus.
-
-     ![Abbildung der endgültigen Einstellungseinstellung](images/setup-preferences2.png)
-
-6. Wählen Sie **Weiter** aus.
-
+Navigieren Sie in einem Webbrowser zum [Microsoft 365 Security Center](https://security.microsoft.com).
 
 ## <a name="network-configuration"></a>Netzwerkkonfiguration
 Wenn die Organisation nicht erfordert, dass die Endpunkte einen Proxy für den Zugriff auf das Internet verwenden, überspringen Sie diesen Abschnitt.

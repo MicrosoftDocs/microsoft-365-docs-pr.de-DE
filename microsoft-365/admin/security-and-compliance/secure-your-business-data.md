@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: Schützen Sie Ihre Geschäftlichen E-Mails und Daten vor Cyberbedrohungen, einschließlich Ransomware, Phishing und schädlichen Anlagen.
-ms.openlocfilehash: 12bdb9f12c1b0d3072a4c84c006787c26050cc8b
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: b274bb6bcdf71641ff8b196921a501bae9cbba28
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582800"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635962"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>Die 10 besten Möglichkeiten zum Sichern Microsoft 365 Unternehmenspläne
 
@@ -348,8 +348,6 @@ Weitere Informationen finden Sie unter [Safe Links in Microsoft Defender for Off
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Mehrstufige Authentifizierung für Microsoft 365](multi-factor-authentication-microsoft-365.md) (Artikel)
-
-[Verwalten und Überwachen von Prioritätskonten](../setup/priority-accounts.md) (Artikel)
-
+[Mehrstufige Authentifizierung für Microsoft 365](multi-factor-authentication-microsoft-365.md) (Artikel)\
+[Verwalten und Überwachen von Prioritätskonten](../setup/priority-accounts.md) (Artikel)\
 [Microsoft 365 Berichte im Admin Center](../activity-reports/activity-reports.md) (Video)

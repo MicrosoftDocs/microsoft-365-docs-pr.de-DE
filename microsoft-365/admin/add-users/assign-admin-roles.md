@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Erfahren Sie, wie Sie einem Benutzer oder mehreren Benutzern in Ihrem Unternehmen Administratorrollen zuweisen, damit sie bestimmte Aufgaben im Admin Center ausführen können.
-ms.openlocfilehash: f23a30cfd1be53982572d745d476558c3be615e6
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 8a9da12a8ebc01a02e4362f09ccaa9e92c21b7e9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571865"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634172"
 ---
 # <a name="assign-admin-roles"></a>Zuweisen von Administratorrollen
 
@@ -42,7 +42,7 @@ Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](ab
 
 Wenn Sie neue Benutzer hinzufügen und ihnen keine Administratorrolle zuweisen,  befinden sie sich in der Benutzerrolle und verfügen nicht über Administratorrechte für die Microsoft Admin Center. Wenn Sie jedoch Hilfe beim Erledigen von Aufgaben benötigen, können Sie einem Benutzer eine Administratorrolle zuweisen. Wenn Sie z. B. eine Person benötigen, die beim Zurücksetzen von Kennwörtern helfen soll, sollten Sie ihnen nicht die globale Administratorrolle zuweisen, sondern ihnen die Administratorrolle kennwort zuweisen. Zu viele globale Administratoren mit unbegrenztem Zugriff auf Ihre Daten und Ihr Onlinegeschäft zu ernennen, stellt ein Sicherheitsrisiko dar.
 
-## <a name="watch-add-an-adminbrbr"></a>Watch: Add an admin.<br><br>
+## <a name="watch-add-an-adminbrbr"></a>Watch: Hinzufügen eines Admins<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO] 
 
@@ -121,10 +121,7 @@ Sie können die Administratorrolleberechtigungen auf zwei verschiedene Arten üb
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Informationen Microsoft 365 Administratorrollen](about-admin-roles.md) (Artikel)
-
-[Administratorrolleberechtigungen in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) (Artikel)
-
-[Zuweisen von Rollen zu Benutzerkonten mit PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (Artikel)
-
+[Informationen Microsoft 365 Administratorrollen](about-admin-roles.md) (Artikel)\
+[Administratorrolleberechtigungen in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) (Artikel)\
+[Zuweisen von Rollen zu Benutzerkonten mit PowerShell](../../enterprise/assign-roles-to-user-accounts-with-microsoft-365-powershell.md) (Artikel)\
 [Autorisieren oder Entfernen von Partnerbeziehungen](../misc/add-partner.md) (Artikel)

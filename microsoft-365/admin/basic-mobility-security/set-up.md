@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Richten Sie Grundlegende Mobilität und Sicherheit ein, um die mobilen Geräte Ihrer Benutzer zu sichern und zu verwalten, indem Sie Aktionen wie das Remotewischen eines Geräts ausführen.
-ms.openlocfilehash: 830baa79838818501101c0c4f2d3163f57d47611
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 02ba28deca6286456af5f87841a741262c1a135d
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593417"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634292"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Einrichten von grundlegender Mobilität und Sicherheit
 
@@ -129,6 +129,5 @@ Benutzer mit Android- oder iOS-Geräten müssen die Unternehmensportal-App im Ra
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Funktionen der grundlegenden Mobilität und Sicherheit](capabilities.md) (Artikel)
-
+[Funktionen der grundlegenden Mobilität und Sicherheit](capabilities.md) (Artikel)\
 [Erstellen von Gerätesicherheitsrichtlinien in Basic Mobility and Security](create-device-security-policies.md) (Artikel)

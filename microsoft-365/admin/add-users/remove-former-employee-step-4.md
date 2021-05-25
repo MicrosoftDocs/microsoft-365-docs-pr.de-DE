@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Führen Sie die Schritte in diesem Artikel aus, um einem anderen Mitarbeiter Zugriff auf die Daten des ehemaligen Mitarbeiters OneDrive Outlook geben.
-ms.openlocfilehash: cb5c27cbc7f1c184af8f0d1ad32b822660e93791
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 55bc2c3d8530e5cb7702f99a77b3918bfb7c0dee
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52582692"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634256"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Schritt 4: Geben Sie einem anderen Mitarbeiter Zugriff auf OneDrive und Outlook Daten
 
@@ -163,8 +163,6 @@ Um einem anderen Mitarbeiter Zugriff auf E-Mail-Nachrichten, Kalender, Aufgaben 
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Hinzufügen und Entfernen von Administratoren in einem OneDrive](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) Konto (Artikel)
-
-[Wiederherstellen eines gelöschten OneDrive](/onedrive/restore-deleted-onedrive) (Artikel)
-  
+[Hinzufügen und Entfernen von Administratoren zu einem OneDrive Konto](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive) (Artikel)\
+[Wiederherstellen eines gelöschten OneDrive](/onedrive/restore-deleted-onedrive) (Artikel)\
 [OneDrive Aufbewahrung und Löschung](/onedrive/retention-and-deletion) (Artikel)

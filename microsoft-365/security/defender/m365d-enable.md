@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2d69ae70b137c9e5378958721f7f9958e57c0306
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3d7564b5d509190c8c8e799c541bb0ca583097f1
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935641"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52636230"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Microsoft 365 Defender aktivieren
 
@@ -56,7 +56,7 @@ Microsoft 365 Defender aggregiert Daten aus den verschiedenen unterstützten Die
 Um den bestmöglichen Schutz zu erhalten und Microsoft 365 Defender zu optimieren, empfehlen wir die Bereitstellung aller anwendbaren unterstützten Dienste in Ihrem Netzwerk. Weitere Informationen finden Sie [unter Bereitstellen von unterstützten Diensten](deploy-supported-services.md).
 
 ## <a name="onboard-to-the-service"></a>Onboarding in den Dienst
-Das Onboarding Microsoft 365 Defender ist einfach. Wählen Sie im Navigationsmenü ein beliebiges Element im Abschnitt Endpunkte aus, z. B. Vorfälle, Suche, Aktionscenter oder Bedrohungsanalyse, um den Onboardingprozess zu initiieren. 
+Das Onboarding Microsoft 365 Defender ist einfach. Wählen Sie im Navigationsmenü alle Microsoft 365 Defender-Elemente aus, z. B. Vorfälle, Suche, Aktionscenter oder Bedrohungsanalyse, um den Onboardingprozess zu initiieren. 
 
 ### <a name="data-center-location"></a>Rechenzentrumsspeicherort
 
