@@ -13,12 +13,12 @@ metadata:
   ms.author: macapara
   ms.date: 02/05/2021
   localization_priority: Priority
-  ms.openlocfilehash: b7e193c15951a446d2fa21f36394085ad5016ee2
-  ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+  ms.openlocfilehash: 732bf6a455baaf3f75c1da956d25d85133f13b0e
+  ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 05/21/2021
-  ms.locfileid: "52593981"
+  ms.lasthandoff: 05/24/2021
+  ms.locfileid: "52625377"
 landingContent:
 - title: Microsoft 365 Defender
   linkLists:
@@ -55,7 +55,7 @@ landingContent:
   - linkListType: overview
     links:
     - text: Was ist Defender for Office 365?
-      url: /office-365-security/defender-for-office-365
+      url: office-365-security/defender-for-office-365.md
     - text: Defender for Office 365-Dienstbeschreibung
       url: /office365/servicedescriptions/office-365-advanced-threat-protection-service-description
 - title: Microsoft Defender für Endpunkt
@@ -63,9 +63,9 @@ landingContent:
   - linkListType: overview
     links:
     - text: Was ist Microsoft Defender für Endpunkt?
-      url: /defender-endpoint/microsoft-defender-endpoint
+      url: defender-endpoint/microsoft-defender-endpoint.md
     - text: Übersicht über das Microsoft Defender Security Center-Portal
-      url: /defender-endpoint/portal-overview
+      url: defender-endpoint/portal-overview.md
 - title: Azure Defender
   linkLists:
   - linkListType: overview

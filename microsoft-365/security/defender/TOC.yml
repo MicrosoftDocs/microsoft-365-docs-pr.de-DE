@@ -93,13 +93,11 @@
             - name: Verwalten
               href: manage-incidents.md
             - name: Untersuchen
-              items:
-                - name: Übersicht
-                  href: investigate-incidents.md
-                - name: Warnungen
-                  href: investigate-alerts.md
-                - name: Benutzer
-                  href: investigate-users.md
+              href: investigate-incidents.md
+            - name: Warnung vor Vorfällen
+              href: investigate-alerts.md
+            - name: Benutzer mit Vorfällen
+              href: investigate-users.md
             - name: Reagieren auf Ihren ersten Vorfall
               items:
                 - name: Einführung
