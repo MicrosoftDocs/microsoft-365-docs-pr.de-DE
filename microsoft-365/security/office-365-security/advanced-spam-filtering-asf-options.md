@@ -19,12 +19,12 @@ ms.custom:
 description: Administratoren können sich über die Erweiterten Spamfiltereinstellungen (Advanced Spam Filter, ASF) informieren, die in Antispamrichtlinien in Exchange Online Protection (EOP) verfügbar sind.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5ade36086d1503b89b506730b98ac7965845e86b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3639b12c0003c958681671fce6bb2b857b3931b8
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206724"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651200"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Erweiterte Spamfiltereinstellungen (Advanced Spam Filter, ASF) in EOP
 
@@ -81,6 +81,8 @@ Für jede ASF-Einstellung stehen die folgenden Optionen in Antispamrichtlinien z
 
 Die folgenden ASF-Einstellungen legen die Spamsicherheitsstufe (Spam Confidence Level, SCL)  der erkannten Nachrichten auf 5 oder 6, was dem Spamfilter-Urteil und der entsprechenden Aktion in Antispamrichtlinien entspricht.
 
+<br>
+
 ****
 
 |Antispamrichtlinieneinstellung|Beschreibung|X-Header hinzugefügt|
@@ -94,6 +96,8 @@ Die folgenden ASF-Einstellungen legen die Spamsicherheitsstufe (Spam Confidence 
 ## <a name="mark-as-spam-settings"></a>Als Spameinstellungen markieren
 
 Mit den folgenden ASF-Einstellungen wird die SCL der  erkannten Nachrichten auf 9 festgelegt, was dem Spamfilter-Filter-Urteil mit hoher Sicherheit und der entsprechenden Aktion in Antispamrichtlinien entspricht.
+
+<br>
 
 ****
 

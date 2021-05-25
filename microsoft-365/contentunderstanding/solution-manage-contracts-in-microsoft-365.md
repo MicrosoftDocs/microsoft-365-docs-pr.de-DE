@@ -12,17 +12,19 @@ ms.collection: m365solution-managecontracts
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
-description: Erfahren Sie, wie Sie Verträge mithilfe Microsoft 365 Lösung SharePoint Syntex, Microsoft Teams und Power Automate.
-ms.openlocfilehash: 18866425cb331b01525dd488a6688608a3d1e559
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Erfahren Sie, wie Sie Verträge mithilfe einer Microsoft 365 Lösung von SharePoint Syntex, SharePoint Listen, Microsoft Teams und Power Automate.
+ms.openlocfilehash: 219ab13eb5787bef566ede0c5dc856da29d96837
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636218"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651284"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Verwalten von Verträgen mithilfe einer Microsoft 365 Lösung
 
 In diesem Artikel wird beschrieben, wie Sie eine Vertragsverwaltungslösung für Ihre Organisation mithilfe von SharePoint Syntex und Komponenten von Microsoft 365. Es bietet Ihnen ein Framework, mit dem Sie eine Lösung planen und erstellen können, die Ihren individuellen Geschäftsanforderungen entspricht. Auch wenn diese Lösung nicht ihren geschäftlichen Anforderungen insgesamt entspricht, können Teile davon in Ihre Planung übernommen werden, um eine benutzerdefinierte Vertragsverwaltungslösung zu erstellen.
+
+*Dieser Inhaltssatz dokumentiert eine Microsoft 365 lösung, die von Thomas Molbach mit dem Team für die Strategie für moderne Arbeitslösungen bei Microsoft entwickelt wurde.*
 
 ## <a name="identify-the-business-problem"></a>Identifizieren des Geschäftsproblems
 

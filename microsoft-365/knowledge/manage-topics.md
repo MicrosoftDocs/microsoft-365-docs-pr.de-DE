@@ -13,12 +13,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: ba8f27c90f9c84729a10f461e85b2e1441b49549
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f2429b0ffdd4a238bc9322ae9199eebbbfd407b5
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625401"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651157"
 ---
 # <a name="manage-topics-in-the-topic-center-in-microsoft-viva-topics"></a>Verwalten von Themen im Themencenter in Microsoft Viva Topics
 
@@ -82,9 +82,9 @@ So überprüfen Sie ein vorgeschlagenes Thema:
 
 2. Überprüfen Sie auf der Themenseite die Themenseite, und wählen Sie **Bearbeiten** aus, wenn Sie Änderungen an der Seite vornehmen müssen. Wenn Sie alle Bearbeitungen veröffentlichen, wird dieses Thema auf die Registerkarte **Veröffentlicht** verschieben.
 
-3. Nachdem Sie das Thema überprüft haben, wechseln Sie zurück zur Seite **Themen** verwalten. Für das ausgewählte Thema können Sie:
+3. Nachdem Sie das Thema überprüft haben, wechseln Sie zurück zur Seite **Themen** verwalten. Für das ausgewählte Thema können Sie folgendes tun:
 
-   - Aktivieren Sie das Häkchen, um das Thema zu bestätigen.
+   - Das Kontrollkästchen aktivieren, um das Thema zu bestätigen.
     
    - Wählen Sie **das x** aus, wenn Sie das Thema entfernen möchten.
 
@@ -119,3 +119,11 @@ Beachten Sie, dass Sie ein bestätigtes Thema weiterhin ablehnen können. Wechse
 Veröffentlichte Themen wurden bearbeitet, sodass immer bestimmte Informationen angezeigt werden, die auf die Seite stoßen. Auch manuell erstellte Themen werden hier aufgeführt.
 
    ![Verwalten von Themen](../media/knowledge-management/manage-topics-new.png)
+
+## <a name="topic-count-dashboard"></a>Dashboard für die Anzahl von Themen
+
+In diesem Diagramm in der Dashboardansicht können Sie die Anzahl der Themen in Ihrem Themencenter für Themen von "Viva Topics" anzeigen. Das Diagramm zeigt die Themenanzahlen pro Themenlebenszyklusphase und zeigt auch, wie die Themenanzahl im Laufe der Zeit trendiert ist. Wissensmanager können die Rate, mit der neue Themen von AI entdeckt werden, und die Rate, mit der Themen vom Knowledge Manager oder von Benutzeraktionen bestätigt oder veröffentlicht werden, visuell überwachen.
+
+Wissensmanagern wird möglicherweise eine andere Anzahl von Themen  in der Liste der Themen auf der Seite Themen verwalten als im Dashboard angezeigt. Dies liegt daran, dass ein Knowledge Manager möglicherweise nicht auf alle Themen zugreifen kann. Die in der Dashboardansicht angezeigte Anzahl wird vor dem Anwenden der Berechtigungstrimmerung verwendet. 
+
+   ![Screenshot des Dashboards für die Anzahl von Themen](../media/knowledge-management/topic-count-dashboard.png)

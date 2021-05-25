@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Nachdem Sie die Einrichtung von Office 365-Nachrichtenverschlüsselung (OME) abgeschlossen haben, erfahren Sie, wie Sie Ihre Bereitstellung auf verschiedene Weise anpassen.
-ms.openlocfilehash: 06e9d22d51c05fe9f7bc4c1a014607feafbf2dba
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a2b3dde44ea541deb41eeb9d55d5ed745fa6c719
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908185"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52650984"
 ---
 # <a name="manage-office-365-message-encryption"></a>Verwalten der Office 365-Nachrichtenverschlüsselung
 
@@ -67,7 +67,7 @@ Wenn der Empfänger einer von OME verschlüsselten Nachricht Outlook nicht verwe
 2. Führen Sie Set-OMEConfiguration cmdlet mit dem PARAMETER OTPEnabled aus:
 
    ```powershell
-   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter "> -OTPEnabled <$true|$false>
+   Set-OMEConfiguration -Identity <"OMEConfigurationIdParameter"> -OTPEnabled <$true|$false>
    ```
 
    So deaktivieren Sie beispielsweise einmal bestandene Codes:

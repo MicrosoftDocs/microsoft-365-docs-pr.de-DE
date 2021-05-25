@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a1e07ac2e2e544605f04e9090177004db64d2f04
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: d01e1d847a8932d95e645a89eff15cf0793491e5
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994997"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651272"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Neues in Microsoft Defender for Endpoint auf Mac
 
@@ -37,6 +37,14 @@ ms.locfileid: "51994997"
 
 > [!IMPORTANT]
 > Unter macOS 11 (Big Sur) erfordert Microsoft Defender for Endpoint zusätzliche Konfigurationsprofile. Wenn Sie ein vorhandenes Kunden-Upgrade von früheren Versionen von macOS sind, stellen Sie sicher, dass Sie die zusätzlichen Konfigurationsprofile bereitstellen, die auf dieser [Seite aufgeführt sind.](mac-sysext-policies.md)
+
+## <a name="1012964-20121042129640"></a>101.29.64 (20.121042.12964.0)
+
+- Ab dieser Version werden Bedrohungen, die während der überprüfungen bei Bedarf erkannt werden, die über den Befehlszeilenclient ausgelöst werden, automatisch behoben. Bedrohungen, die bei Scans erkannt werden, die über die Benutzeroberfläche ausgelöst werden, erfordern weiterhin manuelle Aktionen.
+- `mdatp diagnostic real-time-protection-statistics` unterstützt jetzt zwei zusätzliche Switches:
+  - `--sort`: sortiert die Ausgabe absteigend nach der Gesamtzahl der gescannten Dateien
+  - `--top N`: zeigt die obersten N-Ergebnisse an (funktioniert nur, wenn `--sort` auch angegeben ist)
+- Leistungsverbesserungen (insbesondere für die Verwendung von YARN) & Fehlerbehebungen
 
 ## <a name="1012750-20121022127500"></a>101.27.50 (20.121022.12750.0)
 

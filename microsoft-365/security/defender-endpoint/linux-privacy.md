@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cbf68b6ce8397f0339b374a041ba2629b20db699
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4be0960e8ba868df2acb313b171a08f667c287a7
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933337"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651332"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Datenschutz für Microsoft Defender for Endpoint unter Linux
 
@@ -135,6 +135,7 @@ Die folgenden Felder werden erfasst:
 | cloud_service.service_uri                           | URI, der für die Kommunikation mit der Cloud verwendet wird. |
 | cloud_service.diagnostic_level                      | Diagnosestufe des Geräts (erforderlich, optional). |
 | cloud_service.automatic_sample_submission           | Automatische Beispielübermittlungsstufe des Geräts (keine, sicher, alle). |
+| cloud_service.automatic_definition_update_enabled   | Gibt an, ob die automatische Definitionsaktualisierung aktiviert ist oder nicht. |
 | edr.early_preview                                   | Gibt an, ob das Gerät EDR vorschaufeatures ausgeführt werden soll. |
 | edr.group_id                                        | Gruppen-ID, die von der Erkennungs- und Antwortkomponente verwendet wird. |
 | edr.tags                                            | Benutzerdefinierte Tags. |
@@ -207,6 +208,7 @@ Die folgenden Felder werden erfasst:
 | antivirus_engine.scan_cache_maximum                | Größe des Produktcaches. |
 | antivirus_engine.maximum_scan_threads              | Maximale Anzahl von Threads, die zum Scannen verwendet werden. |
 | antivirus_engine.threat_restoration_exclusion_time | Zeit bis eine aus der Quarantäne wiederhergestellte Datei erneut erkannt werden kann. |
+| antivirus_engine.threat_type_settings              | Konfiguration, wie verschiedene Bedrohungstypen vom Produkt behandelt werden. |
 | filesystem_scanner.full_scan_directory             | Vollständiges Scanverzeichnis. |
 | filesystem_scanner.quick_scan_directories          | Liste der Verzeichnisse, die beim Schnellscan verwendet werden. |
 | edr.latency_mode                                   | Latenzmodus, der von der Erkennungs- und Antwortkomponente verwendet wird. |

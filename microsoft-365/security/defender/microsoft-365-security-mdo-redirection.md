@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 40d86f9f3a4896bbe788f0a9894a7e08efe3a690
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: 2a4b122b3ef3a1ddaf61d8f9373bec3e721db177
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52301728"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651380"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-office-365-to-the-microsoft-365-security-center"></a>Umleiten von Konten von Microsoft Defender für Office 365 zum Microsoft 365 Security Center
 
@@ -64,13 +64,13 @@ So starten Sie das Routing von Konten Microsoft 365 Sicherheitscenter unter secu
 > Nachdem die Umleitung aktiviert wurde, werden Konten in aktiven Sitzungen, während diese Einstellung angewendet wird, nicht aus ihrer Sitzung entfernt und erst an das Microsoft 365 Security Center geroutet, nachdem ihre aktuelle Sitzung beendet und sich erneut anmelden.
 
 ## <a name="can-i-go-back-to-using-the-former-portal"></a>Kann ich wieder auf das frühere Portal zugreifen?
-Wenn etwas nicht für Sie funktioniert oder wenn sie nicht über das Microsoft 365 Security Center-Portal abgeschlossen werden können, möchten wir über die Portalfeedbackoption darüber erfahren. Wenn Probleme mit der Umleitung aufgetreten sind, empfehlen wir Ihnen, sich direkt über die private Vorschau an Ihren PM-Kumpel zu wenden oder uns über das Feedback-Übermittlungsformular zu kontaktieren.
+Wenn etwas nicht für Sie funktioniert oder wenn sie nicht über das Microsoft 365 Security Center-Portal abgeschlossen werden können, möchten wir über die Portalfeedbackoption darüber erfahren. Wenn Probleme mit der Umleitung aufgetreten sind, teilen Sie uns dies bitte mit.
 
 So kehren Sie zum vorherigen Portal zurück:
 
 1. [Melden Sie](https://security.microsoft.com/) sich beim Microsoft 365 sicherheitscenter als globaler Administrator an oder verwenden und konto mit Sicherheitsadministratorberechtigungen in Azure Active Directory.
 
-2. Navigieren Sie **zu Einstellungen**  >  **Endpoints**  >  **General**  >  **Portal redirection**.  
+2. Navigieren Sie **zu Einstellungen**  >  **E-Mail &-Portal-Umleitung**  >  .   
 
 3. Umschalten der Einstellung Automatische Umleitung auf **Aus**.
 

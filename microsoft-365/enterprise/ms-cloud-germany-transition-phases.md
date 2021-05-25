@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: a99103083c8fabae3934a6622acc55a59ff5c9a0
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
-ms.translationtype: HT
+ms.openlocfilehash: df2407deeaa3cd6e0b0925b48f888a25c0435042
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346292"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651110"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktionen während der Migrationsphasen und Auswirkungen für die Migration von Microsoft Cloud Deutschland
 
@@ -305,12 +305,15 @@ Falls Sie über branchenspezifische Apps verfügen, stellen Sie sicher, dass Sie
 
 **Gilt für:** Alle Kunden
 
-Wenn der Office 365-Mandant den letzten Schritt der Migration (Azure AD-Abschluss (Phase 9)) abgeschlossen hat, sind alle Dienste auf die weltweite Bereitstellung umgestellt. Weder Anwendungen noch Benutzer sollten über einen der Microsoft Cloud Deutschland-Endpunkte auf Ressourcen für den Mandanten zugreifen. 30 Tage nach Ende des Abschlusses wird der Azure AD-Dienst „Microsoft Cloud Deutschland“ automatisch den Endpunktzugriff für den umgestellten Mandanten beenden. Endpunktanforderungen wie Authentifizierung werden ab diesem Zeitpunkt für den Dienst „Microsoft Cloud Deutschland“ fehlschlagen. 
+Wenn der Office 365 den letzten Schritt der Migration (Phase 9: Azure AD Finalization) abgeschlossen hat, werden alle Dienste in die welt umstiegen. Weder Anwendungen noch Benutzer sollten über einen der Microsoft Cloud Deutschland-Endpunkte auf Ressourcen für den Mandanten zugreifen. 30 Tage nach Ende des Abschlusses wird der Azure AD-Dienst „Microsoft Cloud Deutschland“ automatisch den Endpunktzugriff für den umgestellten Mandanten beenden. Endpunktanforderungen wie die Authentifizierung werden ab diesem Zeitpunkt für den Microsoft Cloud Deutschland-Dienst fehlschlagen.  
+
+Microsoft Azure Kunden müssen ihre Azure-Workloads nach den im [Azure-Migrations-Playbook](/azure/germany/germany-migration-main) beschriebenen Schritten umstiegen, sobald ihr Mandant die Migration nach weltweit abgeschlossen hat (Phase 9).  
 
 | Schritte: | Beschreibung | Auswirkung |
 |:-------|:-------|:-------|
 | Aktualisieren von Benutzerendpunkten | Sicherstellen, dass alle Benutzer mithilfe der entsprechenden weltweiten Microsoft-Endpunkte auf den Dienst zugreifen |30 Tage nach Abschluss der Migration werden Anforderungen von Microsoft Cloud Deutschland-Endpunkten nicht mehr unterstützt. Client- oder Anwendungsverkehr schlägt dann fehl.  |
 | Aktualisieren der Azure AD-Anwendungsendpunkte | Sie müssen die Authentifizierungs-, Azure Active Directory (Azure AD) Graph- und MS Graph-Endpunkte für Ihre Anwendungen auf diejenigen des Dienstes „Microsoft weltweit“ aktualisieren. | 30 Tage nach Abschluss der Migration werden Anforderungen von Microsoft Cloud Deutschland-Endpunkten nicht mehr unterstützt. Client- oder Anwendungsverkehr schlägt dann fehl. |
+| Migrieren von Azure Workloads | Azure-Dienste-Kunden müssen neue weltweite Abonnements für Azure-Dienste bereitstellen und die Migration im [Azure-Migrations-Playbook ausführen.](/azure/germany/germany-migration-main) | Bei einem vollständigen Übergang zum weltweiten Dienst (Phase 10) können Kunden nicht mehr auf Azure-Workloads zugreifen, die im Microsoft Cloud Deutschland Azure-Portal vorhanden sind. |
 ||||
 
 ### <a name="azure-ad-connect"></a>Azure AD Connect

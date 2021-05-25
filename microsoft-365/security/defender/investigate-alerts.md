@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b9bbe058042a49586e8515fde85371b1487e8d25
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6a34269c414f59d40c9160d5728159ed9cddf976
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297128"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651349"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Untersuchen von Warnungen in Microsoft 365 Defender
 
@@ -38,15 +38,15 @@ ms.locfileid: "52297128"
 
 Warnungen sind die Grundlage aller Vorfälle und geben das Auftreten von böswilligen oder verdächtigen Ereignissen in Ihrer Umgebung an. Warnungen sind in der Regel Teil eines umfassenderen Angriffs und geben Hinweise zu einem Vorfall.
 
-In Microsoft 365 Defender werden verwandte Warnungen zu Vorfällen [zusammengefasst.](incidents-overview.md) Vorfälle bieten immer den umfassenderen Kontext eines Angriffs. Die Analyse von Warnungen kann jedoch hilfreich sein, wenn eine tiefergehende Analyse erforderlich ist. 
+In Microsoft 365 Defender werden zugehörige Warnungen zu Vorfällen [zusammengefasst.](incidents-overview.md) Vorfälle bieten immer den umfassenderen Kontext eines Angriffs. Die Analyse von Warnungen kann jedoch hilfreich sein, wenn eine tiefergehende Analyse erforderlich ist. 
 
 Die **Warnungswarteschlange** zeigt den aktuellen Satz von Warnungen an. Sie erhalten die Benachrichtigungswarteschlange von **Incidents & alerts > Alerts** beim Schnellstart des Microsoft 365 Security Centers ([security.microsoft.com](https://security.microsoft.com)).
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Beispiel für die Benachrichtigungswarteschlange":::
 
-Hier werden Warnungen von verschiedenen Microsoft-Sicherheitslösungen wie Microsoft Defender for Endpoint, Microsoft Defender für Office 365 und Microsoft 365 Defender angezeigt.
+Warnungen von verschiedenen Microsoft-Sicherheitslösungen wie Microsoft Defender for Endpoint, Microsoft Defender für Office 365 und Microsoft 365 Defender werden hier angezeigt.
 
-Standardmäßig werden in der Benachrichtigungswarteschlange im Microsoft 365 Security Center die neuen und in Bearbeitung benachrichtigungen aus den letzten 30 Tagen angezeigt. Die letzte Warnung befindet sich am Anfang der Liste, damit Sie sie zuerst sehen können. 
+Standardmäßig werden in der Benachrichtigungswarteschlange im Microsoft 365 die neuen und in Bearbeitung benachrichtigungen aus den letzten 30 Tagen angezeigt. Die letzte Warnung befindet sich am Anfang der Liste, damit Sie sie zuerst sehen können. 
 
 In der Standardbenachrichtigungswarteschlange können  Sie **Filter** auswählen, um einen Filterbereich anzuzeigen, aus dem Sie eine Teilmenge der Warnungen angeben können. Im Folgenden sehen Sie ein Beispiel.
 
@@ -72,20 +72,18 @@ Sie können auch die Aktion **Hauptbenachrichtigungsseite öffnen** im Bereich *
 
 Eine Warnungsseite besteht aus den folgenden Abschnitten: 
 
-- Warnungsgeschichte
-- Ergriffene Aktionen (einschließlich betroffener Objekte)
-- Verwandte Ereignisse
+- Warnungsgeschichte, bei der es sich um die Kette von Ereignissen und Warnungen im Zusammenhang mit dieser Warnung in chronologischer Reihenfolge handelt
 - Zusammenfassungsdetails
 
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Beispiel für die Detailseite einer Warnung im Microsoft 365 Security Center":::
 
-Auf einer Warnungsseite können Sie neben jeder Entität die Ellipsen (**...**) auswählen, um verfügbare Aktionen zu sehen, z. B. das Öffnen der bestimmten Objektseite oder das Ausführen bestimmter Korrekturschritte.
+Auf einer Warnungsseite können Sie neben jeder Entität die Ellipsen (**...**) auswählen, um verfügbare Aktionen zu sehen, z. B. das Öffnen der Warnungsseite oder das Verknüpfen der Warnung mit einem anderen Vorfall.
 
 ### <a name="analyze-affected-assets"></a>Analysieren betroffener Objekte
 
 Der **Abschnitt "Aktionen"** enthält eine Liste der betroffenen Objekte, z. B. Postfächer, Geräte und Benutzer, die von dieser Warnung betroffen sind. 
 
-Sie können auch Ansicht **im Aktionscenter auswählen,** um die Registerkarte **Verlauf** des **Aktionscenters** im Microsoft 365 Security Center zu sehen. 
+Sie können auch Ansicht **im Aktionscenter auswählen,** um die Registerkarte **Verlauf** des **Aktionscenters** im Microsoft 365 anzeigen. 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>Verfolgen der Rolle einer Warnung im Warnungsstory
 

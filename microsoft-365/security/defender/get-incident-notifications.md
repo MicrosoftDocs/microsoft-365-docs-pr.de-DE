@@ -1,5 +1,5 @@
 ---
-title: Vorfallbenachrichtigungen per E-Mail in Microsoft 365 Defender erhalten
+title: Erhalten von Vorfallbenachrichtigungen per E-Mail in Microsoft 365 Defender
 description: Informationen zum Erstellen von Regeln zum Erhalten von E-Mail-Benachrichtigungen für Vorfälle in Microsoft 365 Defender
 keywords: Incident, email, email notfications, configure, users, mailbox, email, incidents, analyze, response
 search.product: eADQiWindows 10XVcnh
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8d29291c63bdc437163feecce8164089d958d71d
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 2e47b35646a1cd6e1075d80f9ed0550e8e1e819f
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52299964"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651392"
 ---
 # <a name="get-incident-notifications-by-email"></a>Vorfallbenachrichtigungen per E-Mail erhalten
 
@@ -37,7 +37,7 @@ ms.locfileid: "52299964"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Sie können Microsoft 365 Defender einrichten, um Ihre Mitarbeiter per E-Mail über neue Vorfälle oder Updates zu vorhandenen Vorfällen zu benachrichtigen. Sie können Benachrichtigungen basierend auf:
+Sie können einen Microsoft 365 einrichten, um Ihre Mitarbeiter per E-Mail über neue Vorfälle oder Updates zu vorhandenen Vorfällen zu benachrichtigen. Sie können Benachrichtigungen basierend auf:
 
 - Schweregrad des Vorfalls.
 - Gerätegruppe.
@@ -55,7 +55,7 @@ Wenn Ihre Organisation rollenbasierte Zugriffssteuerung (Role-Based Access Contr
 
 Führen Sie die folgenden Schritte aus, um eine neue Regel zu erstellen und E-Mail-Benachrichtigungseinstellungen anzupassen.
 
-1. Wählen Sie im Navigationsbereich Einstellungen **> Microsoft 365 Defender > Vorfall-E-Mail-Benachrichtigungen aus.**
+1. Wählen Sie im Navigationsbereich **die Option Einstellungen > Microsoft 365 Defender > Vorfall-E-Mail-Benachrichtigungen aus.**
 2. Wählen **Sie Element hinzufügen aus.**
 3. Geben Sie **auf der** Seite Grundlagen den Regelnamen und eine Beschreibung ein, und wählen Sie dann **Weiter aus.**
 4. Konfigurieren Sie **auf der** Seite Benachrichtigungseinstellungen:
@@ -63,7 +63,7 @@ Führen Sie die folgenden Schritte aus, um eine neue Regel zu erstellen und E-Ma
     - **Gerätegruppenbereich** : Sie können alle Gerätegruppen angeben oder aus der Liste der Gerätegruppen in Ihrem Mandanten auswählen.
     - **Nur beim ersten Auftreten pro Vorfall** benachrichtigen – Wählen Sie aus, wenn Sie eine Benachrichtigung nur für die erste Warnung wünschen, die Mit Ihrer anderen Auswahl entspricht. Spätere Updates oder Warnungen im Zusammenhang mit dem Vorfall senden keine zusätzlichen Benachrichtigungen.
     - **Organisationsname in die E-Mail eingeben** – Wählen Sie aus, ob Ihr Organisationsname in der E-Mail-Benachrichtigung angezeigt werden soll.
-    - **Mandantenspezifischer Portallink hinzufügen** – Wählen Sie aus, ob Sie einen Link mit der Mandanten-ID in der E-Mail-Benachrichtigung für den Zugriff auf einen bestimmten Microsoft 365-Mandanten hinzufügen möchten.
+    - **Mandantenspezifischer Portallink hinzufügen** – Wählen Sie aus, ob Sie einen Link mit der Mandanten-ID in der E-Mail-Benachrichtigung für den Zugriff auf einen bestimmten Mandanten Microsoft 365 möchten.
 
     :::image type="content" source="../../media/get-incident-notifications/incidents-ss-email-notification-settings.png" alt-text="Benachrichtigungseinstellungen für Vorfall-E-Mail-Benachrichtigungen":::
 
@@ -72,7 +72,7 @@ Führen Sie die folgenden Schritte aus, um eine neue Regel zu erstellen und E-Ma
 
 Um eine vorhandene Regel zu bearbeiten, wählen Sie sie aus der Liste der Regeln aus. Wählen Sie im Bereich mit  dem Regelnamen Regel bearbeiten aus, und nehmen Sie ihre Änderungen auf den Seiten **Grundlagen, Benachrichtigungseinstellungen** **und** **Empfänger** vor.
 
-Um eine vorhandene Regel zu bearbeiten, wählen Sie sie aus der Liste der Regeln aus. Wählen Sie im Bereich mit dem Regelnamen Löschen **aus.**
+Wenn Sie eine Regel löschen möchten, wählen Sie sie aus der Liste der Regeln aus. Wählen Sie im Bereich mit dem Regelnamen Löschen **aus.**
 
 ## <a name="see-also"></a>Siehe auch
 - [Übersicht über Vorfälle](incidents-overview.md)

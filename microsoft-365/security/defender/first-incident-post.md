@@ -1,6 +1,6 @@
 ---
 title: 'SCHRITT 3: Durchführen einer Überprüfung Ihres ersten Vorfalls nach dem Vorfall'
-description: So führen Sie eine Überprüfung Ihres ersten Vorfalls in Microsoft 365 Defender durch.
+description: Durchführen einer Überprüfung Ihres ersten Vorfalls in Microsoft 365 Defender.
 keywords: Vorfälle, Warnungen, untersuchen, Korrelation, Angriff, Computer, Geräte, Benutzer, Identitäten, Identität, Postfach, E-Mail, 365, Microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 44f583d32de166fe3d68a182406eb3a2ee814084
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: 6b5311a2923d7b299ba4f70ef3c2e8d91809e7c8
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52297152"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651368"
 ---
 # <a name="step-3-perform-a-post-incident-review-of-your-first-incident"></a>Schritt 3: Durchführen einer Überprüfung Ihres ersten Vorfalls nach dem Vorfall
 
@@ -36,9 +36,9 @@ ms.locfileid: "52297152"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Das National Institute of Standards and Technology (NIST) empfiehlt, dass Organisationen, sobald alle Schritte zur Wiederherstellung nach dem Angriff unternommen wurden, den Vorfall überprüfen müssen, um daraus zu lernen und die Sicherheitslage oder Prozesse zu erlernen und zu verbessern. Die Bewertung der verschiedenen Aspekte der Behandlung von Vorfällen wird bei der Vorbereitung auf den nächsten Vorfall wichtig.
+Das National Institute of Standards and Technology (NIST) empfiehlt, dass Organisationen den Vorfall überprüfen müssen, um daraus zu lernen und die Sicherheitslage oder Prozesse zu verbessern, sobald alle Schritte zur Wiederherstellung nach dem Angriff unternommen wurden. Die Bewertung der verschiedenen Aspekte der Behandlung von Vorfällen wird bei der Vorbereitung auf den nächsten Vorfall wichtig.
 
-Microsoft 365 Defender kann bei der Durchführung von Aktivitäten nach Vorfällen helfen, indem es einer Organisation Warnungen zur Verfügung stellt, die mit [MITRE ATT&CK Framework ausgerichtet sind.](https://attack.mitre.org/) Alle Microsoft Defender-Lösungen beschriften Angriffe in Übereinstimmung mit einer ATT-&CK-Taktik oder -Technik. 
+Microsoft 365 Defender kann bei der Durchführung von Aktivitäten nach einem Vorfall helfen, indem es einer Organisation Warnungen zur Verfügung stellt, die mit [MITRE ATT&CK Framework ausgerichtet sind.](https://attack.mitre.org/) Alle Microsoft Defender-Lösungen beschriften Angriffe in Übereinstimmung mit einer ATT-&CK-Taktik oder -Technik. 
 
 Durch Zuordnen von Warnungen zu diesem Branchenframework können Sie:
 
