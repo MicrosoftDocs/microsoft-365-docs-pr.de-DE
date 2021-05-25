@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Konfigurieren Sie Vertraulichkeitsbezeichnungen für die Verschlüsselung, die Ihre Daten durch Einschränken von Zugriff und Nutzung schützt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 804cfa9da39b5dc9b9dffdcd68fb196e8676f9af
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: f6fff2bc595e9317ef037929a8a6828935b15bbf
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532086"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624681"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Einschränken des Zugriffs auf Inhalte mithilfe von Vertraulichkeitsbezeichnungen zur Verschlüsselung
 
@@ -65,7 +65,7 @@ Wenn Sie diese Verschlüsselungslösung verwenden, wird mit der Funktion **Admin
 
 4.  Wählen Sie auf der Seite **Verschlüsselung** des Assistenten eine der folgenden Optionen aus:
     
-    - **Verschlüsselung entfernen, wenn die Datei verschlüsselt ist**: Diese Option wird nur von Azure Information Protection-Clients mit einheitlichen Bezeichnungen unterstützt. Wenn Sie diese Option auswählen und integrierte Bezeichnungen verwenden, wird die Bezeichnung möglicherweise nicht in Apps angezeigt, oder es werden keine Verschlüsselungsänderungen angezeigt oder vorgenommen.
+    - **Verschlüsselung entfernen, wenn die Datei verschlüsselt ist**: Diese Option wird nur von Azure Information Protection-Clients mit einheitlichen Bezeichnungen unterstützt. Wenn Sie diese Option auswählen und integrierte Bezeichnungen verwenden, wird die Bezeichnung möglicherweise nicht in Apps angezeigt, oder es werden keine Verschlüsselungsänderungen angezeigt oder vorgenommen.
         
         Weitere Informationen zu diesem Szenario finden Sie in dem Abschnitt [Was geschieht mit einer bestehenden Verschlüsselung, wenn eine Bezeichnung angewendet wird?](#what-happens-to-existing-encryption-when-a-labels-applied). Es ist wichtig zu wissen, dass diese Einstellung zu einer Vertraulichkeitsbezeichnung führen kann, die Benutzer ohne ausreichende Berechtigungen unter Umständen nicht anwenden können.
     
@@ -95,7 +95,7 @@ In der folgenden Tabelle wird dargestellt, was mit einer vorhandenen Verschlüss
 
 **Fußnote:**
 
-<sup>\*</sup> Wird nur von Azure Information Protection-Clients mit einheitlichen Bezeichnungen unterstützt
+<sup>\*</sup> Wird nur von Azure Information Protection-Clients mit einheitlichen Bezeichnungen unterstützt
 
 Beachten Sie, dass in den Fällen, in denen die neue Verschlüsselung mit Bezeichnungen angewendet oder die ursprüngliche Verschlüsselung entfernt wird, dies geschieht nur, wenn der Benutzer, der die Bezeichnung angewendet hat, über ein Nutzungsrecht oder eine Rolle verfügt, die diese Aktion unterstützt:
 
@@ -131,7 +131,7 @@ Auswählen, ob Berechtigungen jetzt zugewiesen werden sollen oder ob Benutzer Be
 
 Steuern Sie über die folgenden Optionen, wer auf E-Mails oder Dokumente zugreifen kann, auf die eine bestimmte Bezeichnung angewendet wurde. Sie können:
 
-- **Zulassen, dass der Zugriff auf gekennzeichnete Inhalte abläuft** – entweder zu einem bestimmten Datum oder nach einer bestimmten Anzahl von Tagen, nachdem die Bezeichnung angewendet wurde. Danach können Benutzer das gekennzeichnete Element nicht mehr öffnen. Wenn Sie ein Datum angeben, gilt es ab Mitternacht an diesem Tag in Ihrer aktuellen Zeitzone. (Beachten Sie, dass einige E-Mail-Clients aufgrund ihrer Caching-Mechanismen möglicherweise das Ablaufen nicht erzwingen können und deshalb E-Mails anzeigen, deren Ablaufdatum überschritten ist.)
+- **Zulassen, dass der Zugriff auf gekennzeichnete Inhalte abläuft** – entweder zu einem bestimmten Datum oder nach einer bestimmten Anzahl von Tagen, nachdem die Bezeichnung angewendet wurde. Danach können Benutzer das gekennzeichnete Element nicht mehr öffnen. Wenn Sie ein Datum angeben, gilt es ab Mitternacht an diesem Tag in Ihrer aktuellen Zeitzone. (Beachten Sie, dass einige E-Mail-Clients aufgrund ihrer Caching-Mechanismen möglicherweise das Ablaufen nicht erzwingen können und deshalb E-Mails anzeigen, deren Ablaufdatum überschritten ist.)
 
 - **Offlinezugriff zulassen** entweder „niemals“, „immer“ oder für eine bestimmte Anzahl von Tagen, nachdem die Bezeichnung angewendet wurde. Wenn Sie den Offlinezugriff jedoch auf „nie“ oder eine Anzahl von Tagen einschränken, müssen Benutzer erneut authentifiziert werden, und ihr Zugriff wird protokolliert. Weitere Informationen finden Sie im nächsten Abschnitt zur Verwendungslizenz von Rights Management.
 
@@ -212,7 +212,7 @@ Weisen Sie hierfür Benutzern und Gruppen Berechtigungen zu, und speichern Sie d
 
 #### <a name="rights-management-issuer-user-applying-the-sensitivity-label-always-has-full-control"></a>Rights Management-Aussteller (Benutzer, der die Vertraulichkeitsbezeichnung anwendet) hat immer Vollzugriff
 
-Die Verschlüsselung für eine Vertraulichkeitsbezeichnung verwendet den Microsoft Azure AD Rights Management-Dienst aus Azure Information Protection. Wenn ein Benutzer eine Vertraulichkeitsbezeichnung anwendet, um ein Dokument oder eine E-Mail mithilfe von Verschlüsselung zu schützen, wird dieser Benutzer der Rights Management-Aussteller für diesen Inhalt.
+Die Verschlüsselung für eine Vertraulichkeitsbezeichnung verwendet den Microsoft Azure AD Rights Management-Dienst aus Azure Information Protection. Wenn ein Benutzer eine Vertraulichkeitsbezeichnung anwendet, um ein Dokument oder eine E-Mail mithilfe von Verschlüsselung zu schützen, wird dieser Benutzer der Rights Management-Aussteller für diesen Inhalt.
 
 Der Rights Management-Aussteller erhält immer Vollzugriff für das Dokument oder die E-Mail. Außerdem gilt:
 
@@ -427,6 +427,10 @@ Bevor Sie Verschlüsselung verwenden können, müssen Sie möglicherweise einige
 - Schutz vor Azure Information Protection aktivieren
     
     Damit Vertraulichkeitsbezeichnungen angewendet werden können, muss der Protection Service (Azure Rights Management) aus Azure Information Protection für Ihren Mandanten aktiviert werden. In neueren Mandanten ist dies die Standardeinstellung, möglicherweise müssen Sie den Dienst jedoch manuell aktivieren. Weitere Informationen finden Sie unter [Aktivieren des Schutzdienstes von Azure Information Protection](/azure/information-protection/activate-service).
+
+- Überprüfen auf Netzwerkanforderungen
+    
+    Möglicherweise müssen Sie einige Änderungen an Ihren Netzwerkgeräten vornehmen, z. B. Firewalls erstellen. Einzelheiten hierzu finden Sie in der Azure Information Protection-Dokumentation unter [Firewalls und Netzwerkinfrastruktur](/azure/information-protection/requirements#firewalls-and-network-infrastructure).
 
 - Konfigurieren von Exchange für Azure Information Protection
     

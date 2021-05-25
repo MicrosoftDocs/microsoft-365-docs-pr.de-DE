@@ -23,13 +23,13 @@ search.appverid:
 - MET150
 - MOE150
 - BEA160
-description: Erfahren Sie, wie Sie Ihr Microsoft 365 Business Standard-Abonnement einrichten.
-ms.openlocfilehash: ce45b4869000892b5640730e765dbfc9c21386ed
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Wenn Sie Microsoft 365 Business Standard erwerben, haben Sie die Möglichkeit, eine Domäne zu verwenden, die Sie besitzen, oder während der Registrierung eine zu erwerben.
+ms.openlocfilehash: cee91edaab09506dca90cf5ed64ee9bc669c98cf
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244455"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52624417"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Einrichten von Microsoft Business Standard
 
@@ -139,4 +139,7 @@ Microsoft 365 enthält keine öffentliche Website für Ihr Unternehmen. Wenn Sie
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 
-Mehr dazu unter [Verwenden einer öffentlichen Website](../../business-video/create-web-site.md).
+## <a name="related-content"></a>Verwandte Inhalte
+
+[GoDaddy-Website erstellen](../../business-video/create-web-site.md) (Video)\
+[Microsoft 365 für Ihr Unternehmen](../../business-video/index.yml) (Linkseite)

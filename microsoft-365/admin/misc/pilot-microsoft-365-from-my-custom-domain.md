@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Hier erfahren Sie, wie Sie die E-Mail-Funktionalität aus Ihrer benutzerdefinierten Domäne an ein Microsoft 365-Postfach mit nur zwei Testkonten testen können.
-ms.openlocfilehash: bdcf86474a7f2edb458075e884c20e56d231df6d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b2017da30aba3b48b51de26b7907167dc5dd3e6e
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197839"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52623645"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Testen von Microsoft 365 aus Ihrer benutzerdefinierten Domäne
 
@@ -60,7 +60,7 @@ Führen Sie die folgenden Schritte aus, um ein Microsoft 365-Pilotprojekt einzur
 
 3. Wählen Sie die Dienste aus, die Sie mit Ihrer Domäne testen möchten, z. B. E-Mail und Chat.
 
-5. Befolgen Sie auf der Seite **Domäne überprüfen** die schrittweisen Anleitungen, und wählen Sie dann **Überprüfen**.
+4. Befolgen Sie auf der Seite **Domäne überprüfen** die schrittweisen Anleitungen, und wählen Sie dann **Überprüfen**.
 
     Es kann zwischen einigen Minuten und 72 Stunden dauern, bis DNS-Änderungen wirksam werden.
 
@@ -70,7 +70,7 @@ Führen Sie die folgenden Schritte aus, um ein Microsoft 365-Pilotprojekt einzur
 
 1. Wählen Sie im Exchange Admin Center im Abschnitt **Nachrichtenfluss** die Option **Akzeptierte Domänen** aus, und wählen Sie dann die Domäne aus, die Sie ändern möchten.
 
-2. Doppelklicken Sie, um das Fenster zu öffnen, und wählen Sie dann **Internes Relay** aus. 
+2. Doppelklicken Sie, um das Fenster zu öffnen, und wählen Sie dann **Internes Relay** aus.
 
 3. Wählen Sie **Speichern** aus.
 
@@ -85,7 +85,7 @@ Microsoft 365 verwendet Exchange Online Protection (EOP) zum Schutz vor Spam. EO
 
 1. Wählen Sie im Navigationsbereich des Exchange Admin Centers **Schutz** aus, und wählen Sie dann **Verbindungsfilter** aus.
 
-2. Wählen Sie in der **IP-Zulassungsliste** den Eintrag **+** aus, und fügen Sie die IP-Adresse des Mailservers für Ihren aktuellen E-Mail-Anbieter hinzu. 
+2. Wählen Sie in der **IP-Zulassungsliste** den Eintrag **+** aus, und fügen Sie die IP-Adresse des Mailservers für Ihren aktuellen E-Mail-Anbieter hinzu.
 
 ### <a name="step-5-create-user-accounts-and-set-the-primary-reply-to-address"></a>Schritt 5: Erstellen von Benutzerkonten und Festlegen der primären Antwortadresse
 
@@ -97,9 +97,9 @@ Microsoft 365 verwendet Exchange Online Protection (EOP) zum Schutz vor Spam. EO
 
     Um sicherzustellen, dass die E-Mail eines Benutzers unverändert bleibt, muss das Feld **Benutzername** der aktuellen E-Mail-Adresse des Benutzers entsprechen.
 
-3. Wählen Sie die entsprechende Lizenz aus, klicken Sie auf **Weiter**, und klicken Sie dann auf **Hinzufügen fertig stellen**. 
+3. Wählen Sie die entsprechende Lizenz aus, klicken Sie auf **Weiter**, und klicken Sie dann auf **Hinzufügen fertig stellen**.
 
-4. Wählen Sie neben **Benutzername** Ihren benutzerdefinierten Domänennamen aus der Dropdownliste aus. 
+4. Wählen Sie neben **Benutzername** Ihren benutzerdefinierten Domänennamen aus der Dropdownliste aus.
 
 5. Wählen Sie **Erstellen** > **Schließen**.
 
@@ -115,7 +115,7 @@ Dafür sind zwei Schritte nötig:
 
 Stellen Sie sicher, dass Sie Folgendes in Microsoft 365 oder Office 365 erledigt haben:
 
-1. Zum Einrichten von Connectors benötigen Sie Ihnen zugewiesene Berechtigungen, bevor Sie beginnen können. Welche Berechtigungen Sie benötigen, können Sie dem Eintrag "Microsoft 365- und Office 365-Connectors" im Thema [Featureberechtigungen in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop) entnehmen.
+1. Zum Einrichten von Connectors benötigen Sie Ihnen zugewiesene Berechtigungen, bevor Sie beginnen können. Welche Berechtigungen Sie benötigen, können Sie dem Eintrag "Microsoft 365- und Office 365-Connectors" im Thema [Featureberechtigungen in Exchange Online](/exchange/permissions-exo/feature-permissions) entnehmen.
 
 2. Wenn Sie möchten, dass EOP oder Exchange Online E-Mails von Ihren E-Mail-Servern an das Internet weiterleitet, gehen Sie wie folgt vor:
 
@@ -156,7 +156,7 @@ Melden Sie sich bei der Website Ihres DNS-Hostinganbieters an, und folgen Sie de
 
     Beispiel: "v=spf1 mx include:adatum.com include:spf.protection.outlook.com ~all"
 
-    Wenn Sie nicht über einen SPF-Eintrag verfügen, ändern Sie den von Microsoft 365 empfohlenen so, dass er die Domäne für Ihren aktuellen E-Mail-Anbieter einschließt, und fügen Sie "spf.protection.outlook.com" hinzu. Dadurch werden ausgehende Nachrichten von beiden E-Mail-Systemen autorisiert.
+    Wenn Sie über keinen SPF-Eintrag verfügen, ändern Sie den von Microsoft 365 empfohlenen so, dass er die Domäne für Ihren aktuellen E-Mail-Anbieter einschließt, und fügen Sie „spf.protection.outlook.com“ hinzu. Dadurch werden ausgehende Nachrichten von beiden E-Mail-Systemen autorisiert.
 
 ### <a name="step-8-set-up-email-forwarding-at-your-current-provider"></a>Schritt 8: Einrichten von E-Mail-Weiterleitung bei Ihrem aktuellen Anbieter
 
@@ -179,7 +179,7 @@ Nachdem Sie diesen Schritt ausgeführt haben, sind alle an usera@yourcompany.com
 
 2. Führen Sie die folgenden Tests aus:
 
-    - Testen Sie lokale Microsoft-E-Mail, indem Sie eine E-Mail z. B. an Benutzer B senden. Die E-Mail wird sofort zugestellt. In diesem Szenario wird die Nachricht nicht an das Postfach für Benutzer B auf dem ursprünglichen Server weitergeleitet, da das Microsoft 365-Postfach lokal ist.
+    - Testen Sie lokale Microsoft-E-Mail, indem Sie eine E-Mail z. B. an Benutzer B senden. Die E-Mail wird sofort zugestellt. In diesem Szenario wird die Nachricht nicht an das Postfach für Benutzer B auf dem ursprünglichen Server weitergeleitet, da das Microsoft 365-Postfach lokal ist.
 
     - Testen Sie E-Mail an einen Benutzer auf dem vorhandenen E-Mail-System, indem Sie eine E-Mail z. B. an Benutzer C senden. Die E-Mail wird an das Postfach für Benutzer C auf Ihrem ursprünglichen E-Mail-Server übermittelt.
 

@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Machen Sie Ihr Unternehmen sicherer gegen Kennwortangriffe, verbieten Sie gängige Kennwörter und aktivieren Sie die risikobasierte mehrstufige Authentifizierung.
-ms.openlocfilehash: f2b9b9188a6f05bbcdae45dcc22d401e1eb6f1a8
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: f42905c6bf7769e558581338fd122f26d530423e
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593909"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52635974"
 ---
 # <a name="password-policy-recommendations"></a>Empfehlungen für Kennwortrichtlinien
 
@@ -128,7 +128,9 @@ Weitere Informationen finden Sie unter [Einrichten der mehrstufigen Authentifizi
 
 Durch die risikobasierte mehrstufige Authentifizierung wird sichergestellt, dass sich der Benutzer nachweisen kann, dass er der rechtmäßige Kontoinhaber ist, falls unser System verdächtige Aktivitäten erkennt. 
   
-## <a name="want-to-know-more-recommended-reading"></a>Möchten Sie mehr darüber wissen? Empfohlene Literatur
+## <a name="next-steps"></a>Nächste Schritte
+
+Möchten Sie mehr über das Verwalten von Kennwörtern erfahren? Hier finden Sie Leseempfehlungen:
 
 - [Können starke Webkennwörter etwas bewirken?](https://go.microsoft.com/fwlink/p/?linkid=861008)
 
@@ -144,10 +146,7 @@ Durch die risikobasierte mehrstufige Authentifizierung wird sichergestellt, dass
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Kennwörter zurücksetzen](../add-users/reset-passwords.md) (Artikel)
-
-[Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft](../add-users/set-password-to-never-expire.md) (Artikel)
-
-[Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten](../add-users/let-users-reset-passwords.md) (Artikel)
-
+[Kennwörter zurücksetzen](../add-users/reset-passwords.md) (Artikel)\
+[Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft](../add-users/set-password-to-never-expire.md) (Artikel)\
+[Benutzern das Zurücksetzen ihrer eigenen Kennwörter gestatten](../add-users/let-users-reset-passwords.md) (Artikel)\
 [Erneutes Senden eines Benutzerkennworts – Administratorhilfe](../add-users/resend-user-password.md) (Artikel)

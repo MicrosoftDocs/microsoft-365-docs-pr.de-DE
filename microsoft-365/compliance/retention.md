@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 2695d34e29492a88da86c2511ce32e4036031e9d
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: ba17a94fa4ae0d12405cc7e38d7d74e90fa7ad02
+ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572657"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52625221"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -368,7 +368,7 @@ Die Erhaltungssperre wird angewendet, nachdem die Aufbewahrungsrichtlinie oder A
 
 Sofern eine Aufbewahrungsrichtlinie keiner Erhaltungssperre unterliegt, können Sie sie jederzeit löschen. Dadurch werden die zuvor angewendeten Aufbewahrungseinstellungen effektiv deaktiviert. Sie können die Richtlinie auch beibehalten, jedoch eine Website für SharePoint oder ein Konto für OneDrive entfernen oder den Standortstatus auf "Aus" ändern oder die Richtlinie deaktivieren.
  
-Wenn Sie eine dieser Aktionen ausführen, werden alle SharePoint- oder OneDrive-Inhalte, die wegen der Richtlinie aufbewahrt werden müssen, 30 Tage lang aufbewahrt, um versehentlichen Datenverlust zu vermeiden. Während dieser 30-tägigen Nachfrist können Sie die Site nicht löschen. Gelöschte Dateien bleiben weiterhin erhalten (Dateien werden weiterhin zum permanenten Dokumentarchiv hinzugefügt), aber der Zeitgeberauftrag, der das permanente Dokumentarchiv regelmäßig bereinigt, wird für diese Dateien aufbewahrt, sodass Sie sie bei Bedarf wiederherstellen können.
+Wenn Sie eine dieser Aktionen ausführen, werden alle SharePoint- oder OneDrive-Inhalte, die wegen der Richtlinie aufbewahrt werden müssen, 30 Tage lang aufbewahrt, um versehentlichen Datenverlust zu vermeiden. Während dieser 30-tägigen Nachfrist bleiben gelöschte Dateien weiterhin erhalten (Dateien werden weiterhin zum permanenten Dokumentarchiv hinzugefügt), aber der Zeitgeberauftrag, der das permanente Dokumentarchiv regelmäßig bereinigt, wird für diese Dateien aufbewahrt, sodass Sie sie bei Bedarf wiederherstellen können.
 
 Weitere Informationen zum permanenten Dokumentarchiv finden Sie unter [Funktionsweise der Aufbewahrung für SharePoint und OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
