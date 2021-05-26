@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Verwenden Sie eDiscovery und Suchtools, um einen Datenlecksvorfall in Ihrer Organisation zu verwalten und darauf zu reagieren.
-ms.openlocfilehash: da473fcdf553176d3c6d4dfa2a4c4b17b2bcce03
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4305dbdb2fb59e4275852c88f8b74f6c4128a5cb
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051977"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653523"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery-Lösungsreihe: Datenleckszenario – Suchen und Löschen
 
@@ -52,7 +52,7 @@ Hier erfahren Sie, wie Sie einen Datenleckvorfall verwalten:
 
 - Wenn sich ein Postfach im Haltezeitraum befindet, verbleibt eine gelöschte Nachricht im Ordner "Wiederherstellbare Elemente", bis der Aufbewahrungszeitraum abläuft oder die Aufbewahrungszeit freigegeben wird. [In Schritt 6](#step-6-prepare-the-mailboxes) wird beschrieben, wie der Halteraum aus den Postfächern entfernt wird. Informieren Sie sich vor dem Entfernen des Halteraums bei Der Datensatzverwaltung oder den Rechtsabteilungen. Ihre Organisation kann über eine Richtlinie verfügen, die definiert, ob ein Postfach im Archiv oder ein Datenlecksvorfall Vorrang hat. 
     
-- Um zu steuern, welche Benutzerpostfächer ein Datenschmauser durchsuchen und verwalten kann, wer auf den Fall zugreifen kann, können Sie Compliancegrenzen einrichten und eine benutzerdefinierte Rollengruppe erstellen, die in [Schritt 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)beschrieben wird. Dazu müssen Sie Mitglied der Rollengruppe Organisationsverwaltung sein oder der Rollenverwaltungsrolle zugewiesen werden. Wenn Sie oder der Administrator in Ihrer Organisation bereits Compliancegrenzen festgelegt haben, können Sie Schritt 1 überspringen.
+- Um zu steuern, welche Benutzerpostfächer ein Ermittler für Datenlecks durchsuchen und verwalten kann, wer auf den Fall zugreifen kann, können Sie Compliancegrenzen einrichten und eine benutzerdefinierte Rollengruppe erstellen, die in [Schritt 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)beschrieben wird. Dazu müssen Sie Mitglied der Rollengruppe Organisationsverwaltung sein oder der Rollenverwaltungsrolle zugewiesen werden. Wenn Sie oder der Administrator in Ihrer Organisation bereits Compliancegrenzen festgelegt haben, können Sie Schritt 1 überspringen.
     
 - Zum Erstellen eines Falls müssen Sie Mitglied der Rollengruppe eDiscovery Manager oder Mitglied einer benutzerdefinierten Rollengruppe sein, der die Rolle Fallverwaltung zugewiesen ist. Wenn Sie kein Mitglied sind, bitten Sie einen Microsoft 365, Sie der [Rollengruppe des eDiscovery-Managers hinzuzufügen.](assign-ediscovery-permissions.md)
     
@@ -89,7 +89,7 @@ Wenn Sie mehr als 1.000 Postfächer oder mehr als 100 E-Mail-Nachrichten pro Pos
 
 Wenn einem Verwahrer oder Endbenutzer eine Office 365 E5-Lizenz zugewiesen ist, können Sie bis zu 10.000 Suchergebnisse gleichzeitig mithilfe von Advanced eDiscovery. Wenn mehr als 10.000 E-Mail-Nachrichten überprüft werden müssen, können Sie die Suchabfrage nach Datumsbereich teilen und jedes Ergebnis einzeln überprüfen, da die Suchergebnisse nach Datum sortiert sind. In Advanced eDiscovery können Sie Suchergebnisse mit dem **Feature Bezeichnung** als Feature im Vorschaubereich markieren und das Suchergebnis nach dem gekennzeichneten Tag filtern. Dies ist hilfreich, wenn Sie mit einem sekundären Prüfer zusammenarbeiten. Mithilfe zusätzlicher Analysetools in Advanced eDiscovery, z. B. optische Zeichenerkennung, E-Mail-Threading und Vorhersagecodierung, können Sie Tausende von Nachrichten schnell verarbeiten und überprüfen und zur weiteren Überprüfung kennzeichnen. Weitere Informationen finden Sie unter [Quick setup for Advanced eDiscovery](./get-started-with-advanced-ediscovery.md).
 
-Wenn Sie eine E-Mail-Nachricht mit überlaufenen Daten finden, überprüfen Sie die Empfänger der Nachricht, um zu ermitteln, ob sie extern freigegeben wurde. Um eine Nachricht weiter zu verfolgen, können Sie Absenderinformationen und Datumsbereich erfassen, damit Sie die Nachrichtenverfolgungsprotokolle verwenden können, die in [Schritt 5 beschrieben werden.](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)
+Wenn Sie eine E-Mail-Nachricht mit überlaufenen Daten finden, überprüfen Sie die Empfänger der Nachricht, um zu ermitteln, ob sie extern freigegeben wurde. Um eine Nachricht weiter zu verfolgen, können Sie Absenderinformationen und Datumsbereiche erfassen, damit Sie die Nachrichtenverfolgungsprotokolle verwenden können. Dieser Vorgang wird in [Schritt 5 beschrieben.](#step-5-use-message-trace-log-to-check-how-spilled-data-was-shared)
 
 Nachdem Sie die Suchergebnisse überprüft haben, können Sie Ihre Ergebnisse für eine sekundäre Überprüfung mit anderen teilen. Personen, die Sie dem Fall in Schritt 1 zugewiesen haben, können den Fallinhalt sowohl in eDiscovery als auch in Advanced eDiscovery überprüfen und Fallbefunde genehmigen. Sie können auch einen Bericht generieren, ohne den tatsächlichen Inhalt zu exportieren. Sie können diesen Bericht auch als Löschnachweis verwenden, der in [Schritt 8 beschrieben wird.](#step-8-verify-provide-a-proof-of-deletion-and-audit)
   
@@ -105,7 +105,7 @@ Nachdem Sie die Suchergebnisse überprüft haben, können Sie Ihre Ergebnisse f�
     
 3. Wählen **Sie Alle Elemente aus,** einschließlich der Elemente, die ein unbekanntes Format haben, verschlüsselt sind oder aus anderen Gründen nicht indiziert wurden, und klicken Sie dann auf Bericht **generieren.**
 
-4. Klicken Sie im Fall eDiscovery auf **Exportieren,** um die Liste der Exportaufträge anzeigen zu können. Möglicherweise müssen Sie auf **Aktualisieren klicken,** um die Liste zu aktualisieren, um den gerade erstellten Exportauftrag anzeigen zu können.
+4. Klicken Sie im Fall eDiscovery auf **Exportieren,** um die Liste der Exportaufträge anzeigen zu können. Möglicherweise müssen Sie auf **Aktualisieren klicken,** um die Liste zu aktualisieren, um den von Ihnen erstellten Exportauftrag anzeigen zu können.
 
 5. Klicken Sie auf den Exportauftrag, und klicken Sie dann auf **der** Flyoutseite auf Bericht herunterladen.
  
@@ -117,17 +117,17 @@ Weitere Informationen zum Exportieren von Berichten finden Sie unter [Export a C
     
 ## <a name="step-5-use-message-trace-log-to-check-how-spilled-data-was-shared"></a>Schritt 5: Verwenden des Nachrichtenverfolgungsprotokolls, um zu überprüfen, wie datenlecks freigegeben wurden
 
-Um weiter zu untersuchen, ob E-Mails mit überlaufenen Daten freigegeben wurden, können Sie optional die Nachrichtenverfolgungsprotokolle mit den Absenderinformationen und den Datumsbereichsinformationen abfragen, die Sie in Schritt 4 gesammelt haben. Beachten Sie, dass der Aufbewahrungszeitraum für Nachrichtenverfolgung 30 Tage für Echtzeitdaten und 90 Tage für Verlaufsdaten beträgt.
+Um weiter zu untersuchen, ob E-Mails mit überlaufenen Daten freigegeben wurden, können Sie optional die Nachrichtenverfolgungsprotokolle mit den Absenderinformationen und den Datumsbereichsinformationen abfragen, die Sie in Schritt 4 gesammelt haben. Der Aufbewahrungszeitraum für die Nachrichtenverfolgung beträgt 30 Tage für Echtzeitdaten und 90 Tage für Verlaufsdaten.
   
 Sie können die Nachrichtenverfolgung im Security and Compliance Center oder die entsprechenden Cmdlets in Exchange Online PowerShell verwenden. Beachten Sie, dass die Nachrichtenablaufverfolgung keine vollständigen Garantien für die Vollständigkeit der zurückgegebenen Daten bietet. Weitere Informationen zur Verwendung der Nachrichtenverfolgung finden Sie unter: 
   
-- [Nachrichtenablaufverfolgung im Security & Compliance Center](../security/defender-365-security/message-trace-scc.md)
+- [Nachrichtenablaufverfolgung im Security & Compliance Center](../security/office-365-security/message-trace-scc.md)
     
 - [Neue Nachrichtenverfolgung im Security & Compliance Center](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Schritt 6: Vorbereiten der Postfächer
 
-Nachdem Sie überprüft und überprüft haben, ob die Suchergebnisse nur die Nachrichten enthalten, die gelöscht werden müssen, müssen Sie eine Liste der E-Mail-Adressen der betroffen postfächer sammeln, die in Schritt 7 verwendet werden sollen, wenn Sie die überlaufenen Daten löschen. Möglicherweise müssen Sie auch die Postfächer vorbereiten, bevor Sie E-Mail-Nachrichten dauerhaft löschen können, je nachdem, ob die Wiederherstellung einzelner Elemente für die Postfächer aktiviert ist, die die überlaufenen Daten enthalten, oder ob sich eines dieser Postfächer im Haltezustand befindet.
+Nachdem Sie überprüft und überprüft haben, ob die Suchergebnisse nur die Nachrichten enthalten, die gelöscht werden müssen, müssen Sie eine Liste der E-Mail-Adressen der betroffen postfächer erfassen, die in Schritt 7 verwendet werden sollen, wenn Sie die überlaufenen Daten löschen. Möglicherweise müssen Sie auch die Postfächer vorbereiten, bevor Sie E-Mail-Nachrichten dauerhaft löschen können, je nachdem, ob die Wiederherstellung einzelner Elemente für die Postfächer aktiviert ist, die die überlaufenen Daten enthalten, oder ob sich eines dieser Postfächer im Haltezustand befindet.
   
 ### <a name="get-a-list-of-addresses-of-mailboxes-with-spilled-data"></a>Eine Liste der Adressen von Postfächern mit überlaufenen Daten
 
@@ -174,14 +174,20 @@ Stellen Sie sicher, dass das Postfach auf frühere Konfigurationen zurückgesetz
 
 Mithilfe der Postfachspeicherorte, die Sie in Schritt 6 gesammelt und vorbereitet haben, und der Suchabfrage, die in Schritt 3 erstellt und verfeinert wurde, um E-Mail-Nachrichten zu finden, die die übergelaufenen Daten enthalten, können Sie die überlaufenen Daten nun endgültig löschen.  Wie bereits erläutert, müssen Sie zum Löschen von Nachrichten Mitglied der Rollengruppe Organisationsverwaltung sein oder der Verwaltungsrolle Suchen und Löschen zugewiesen werden. Informationen zum Hinzufügen von Benutzern zu einer Rollengruppe finden Sie unter [Zuweisen von eDiscovery-Berechtigungen im Security & Compliance Center](./assign-ediscovery-permissions.md).
 
-Informationen zum Löschen der übergelaufenen Nachrichten finden Sie unter Schritte 2 & 3 unter Suchen und Löschen [von E-Mail-Nachrichten](./search-for-and-delete-messages-in-your-organization.md)
+Informationen zum Löschen der überlaufenen Nachrichten finden Sie unter [Suchen nach und Löschen von E-Mail-Nachrichten.](search-for-and-delete-messages-in-your-organization.md)
+
+Beachten Sie beim Löschen von übergelaufenen Daten die folgenden Grenzwerte:
+
+- Die maximale Anzahl von Postfächern in einer Suche, die Sie zum Löschen von Elementen verwenden können, indem Sie eine Such- und Bereinigungsaktion tun, beträgt 50.000. Wenn bei der in Schritt 3 erstellten Suche mehr als 50.000 Postfächer durchsucht werden, tritt bei der Bereinigungsaktion ein Fehler auf. Zum Durchsuchen von mehr als 50.000 Postfächern in einer einzigen Suche kann es typischerweise kommen, wenn Sie die Suche so konfigurieren, dass alle Postfächer in Ihrer Organisation durchsucht werden. Diese Einschränkung gilt auch dann, wenn weniger als 50.000 Postfächer Elemente enthalten, die der Suchabfrage entsprechen.
+
+- Aus jedem Postfach können maximal 10 Elemente gleichzeitig entfernt werden. Da die Funktion zum Suchen und Entfernen von Nachrichten ein Tool zur Reaktion auf Vorfälle sein soll, stellt dieser Höchstwert sicher, dass Nachrichten schnell aus Postfächern entfernt werden können. Das Feature ist nicht zum Bereinigen von Benutzerpostfächern vorgesehen.
 
 > [!IMPORTANT]
 > E-Mail-Elemente in einer Überprüfung in einem erweiterten eDiscovery-Fall können nicht mithilfe der in diesem Artikel beschriebenen Verfahren gelöscht werden. Das liegt daran, dass Elemente in einem Überprüfungssatz Kopien von Elementen im Livedienst sind, die kopiert und an einem speicherort Azure Storage werden. Dies bedeutet, dass sie nicht von einer Inhaltssuche zurückgegeben werden, die Sie in Schritt 3 erstellen. Wenn Sie Elemente in einem Überprüfungssatz löschen möchten, müssen Sie den erweiterten eDiscovery-Fall löschen, der den Überprüfungssatz enthält. Weitere Informationen finden Sie unter [Schließen oder Löschen eines erweiterten eDiscovery-Falls](close-or-delete-case.md).
   
 ## <a name="step-8-verify-provide-a-proof-of-deletion-and-audit"></a>Schritt 8: Überprüfen, Bereitstellen eines Löschnachweises und Überwachung
 
-Der letzte Schritt im Workflow zum Verwalten eines Datenleckvorfalls besteht in der Überprüfung, ob die übergelaufenen Daten dauerhaft aus dem Postfach entfernt wurden, indem Sie zum eDiscovery-Fall gehen und dieselbe Suchabfrage erneut ausführen, mit der diese Daten gelöscht wurden, um zu bestätigen, dass keine Ergebnisse zurückgegeben werden. Nachdem Sie bestätigt haben, dass die übergelaufenen Daten endgültig entfernt wurden, können Sie einen Bericht exportieren und ihn (zusammen mit dem ursprünglichen Bericht) als Löschnachweis verwenden. Anschließend können Sie [den Fall schließen,](close-reopen-delete-core-ediscovery-cases.md) mit dem Sie ihn erneut öffnen können, wenn Sie in Zukunft auf ihn verweisen. Darüber hinaus können Sie Postfächer auch auf ihren vorherigen Status zurücksetzen, die Suchabfrage löschen, mit der die übergelaufenen Daten gefunden werden, und nach Überwachungsdatensätzen von Aufgaben suchen, die beim Verwalten des Datenleckvorfalls ausgeführt wurden.
+Der letzte Schritt im Workflow zum Verwalten eines Datenleckvorfalls besteht in der Überprüfung, ob die übergelaufenen Daten dauerhaft aus dem Postfach entfernt wurden, indem Sie zum eDiscovery-Fall gehen und dieselbe Suchabfrage erneut ausführen, mit der diese Daten gelöscht wurden, um zu bestätigen, dass keine Ergebnisse zurückgegeben werden. Nachdem Sie bestätigt haben, dass die übergelaufenen Daten endgültig entfernt wurden, können Sie einen Bericht exportieren und ihn (zusammen mit dem ursprünglichen Bericht) als Löschnachweis verwenden. Anschließend können Sie [den Fall schließen,](close-reopen-delete-core-ediscovery-cases.md) damit Sie ihn erneut öffnen können, wenn Sie in Zukunft auf ihn verweisen müssen. Darüber hinaus können Sie Postfächer auch auf ihren vorherigen Status zurücksetzen, die Suchabfrage löschen, mit der die übergelaufenen Daten gefunden werden, und nach Überwachungsdatensätzen von Aufgaben suchen, die beim Verwalten des Datenleckvorfalls ausgeführt wurden.
   
 ### <a name="reverting-the-mailboxes-to-their-previous-state"></a>Zurücksetzen der Postfächer auf den vorherigen Status
 
@@ -192,11 +198,11 @@ Wenn Sie eine Postfachkonfiguration in Schritt 6 geändert haben, um die Postfä
 Wenn die Schlüsselwörter in der Suchabfrage, die Sie in Schritt 3 erstellt und verwendet haben, einige der tatsächlichen übergelaufenen Daten enthalten, sollten Sie die Suchabfrage löschen, um weitere Datenlecks zu verhindern.
   
 1. Öffnen Sie im Security and Compliance Center den eDiscovery-Fall, wechseln Sie zur Seite Suchen, und wählen Sie die entsprechende Inhaltssuche aus. 
-    
+
 2. Klicken Sie auf der Flyoutseite auf **Löschen**.
 
     ![Wählen Sie die Suche aus, und klicken Sie dann auf der Flyoutseite auf Löschen.](../media/O365-eDiscoverySolutions-DataSpillage-DeleteSearch.png)
-    
+
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Überwachen des Datenleckuntersuchungsprozesses
 
 Sie können das Überwachungsprotokoll nach den eDiscovery-Aktivitäten durchsuchen, die während der Untersuchung ausgeführt wurden. Sie können auch das Überwachungsprotokoll durchsuchen, um die Überwachungsdatensätze für den **Befehl New-ComplianceSearchAction -Purge** zurückzukehren, den Sie in Schritt 7 ausgeführt haben, um die übergelaufenen Daten zu löschen. Weitere Informationen finden Sie unter:

@@ -22,18 +22,18 @@ search.appverid:
 ms.assetid: ed48d448-3714-4c42-85f5-10f75f6a4278
 description: Exportieren Sie die Suchergebnisse aus einer Inhaltssuche im Microsoft 365 Compliance Center auf einen lokalen Computer. E-Mail-Ergebnisse werden als PST-Dateien exportiert. Inhalte von SharePoint und OneDrive for Business werden als systemeigene Office exportiert.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ec09706fecbe703fa2ab38cad5f8f8304484f44
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b39bb52457599090f2898da222c71a3a56889290
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536058"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653535"
 ---
 # <a name="export-content-search-results"></a>Exportieren von Inhaltssuchergebnissen
 
 Nachdem eine Inhaltssuche erfolgreich ausgeführt wurde, können Sie die Suchergebnisse auf einen lokalen Computer exportieren. Wenn Sie E-Mail-Ergebnisse exportieren, werden diese als PST-Dateien auf Ihren Computer heruntergeladen. Wenn Sie Inhalte aus SharePoint und OneDrive for Business exportieren, werden Kopien systemeigener Office exportiert. In den exportierten Suchergebnissen sind weitere Dokumente und Berichte enthalten.
   
-Beim Exportieren der Ergebnisse einer Inhaltssuche werden die Ergebnisse vorbereitet und dann auf einen lokalen Computer heruntergeladen.
+Beim Exportieren der Ergebnisse einer Inhaltssuche werden die Ergebnisse vorbereitet und dann auf einen lokalen Computer heruntergeladen. Diese Schritte zum Exportieren von Suchergebnissen gelten auch für das Exportieren der Ergebnisse einer Suche, die Core eDiscovery-Fällen zugeordnet ist.
   
 ## <a name="before-you-export-search-results"></a>Vor dem Exportieren von Suchergebnissen
 
@@ -57,6 +57,8 @@ Beim Exportieren der Ergebnisse einer Inhaltssuche werden die Ergebnisse vorbere
   > <sup>1</sup> Microsoft stellt keine Erweiterungen oder Add-Ons von Drittanbietern für ClickOnce her. Das Exportieren von Suchergebnissen mithilfe eines nicht unterstützten Browsers mit Drittanbietererweiterungen oder -add-ons wird nicht unterstützt.<br/>
   > <sup>2</sup> Als Ergebnis der letzten Änderungen an Microsoft Edge ist ClickOnce unterstützung standardmäßig nicht mehr aktiviert. Anweisungen zum Aktivieren ClickOnce in Edge finden Sie unter [Use the eDiscovery Export Tool in Microsoft Edge](configure-edge-to-export-search-results.md).
   
+- Das eDiscovery-Exporttool, das Sie in Schritt 2 zum Herunterladen von Suchergebnissen verwenden, unterstützt keine Automatisierung (mithilfe eines Skripts oder ausführender Cmdlets). Es wird dringend empfohlen, den Vorbereitungsprozess in Schritt 1 oder den Downloadvorgang in Schritt 2 nicht zu automatisieren. Wenn Sie einen dieser Prozesse automatisieren, bietet der Microsoft Support keine Unterstützung, wenn Probleme auftreten.
+
 - Es wird empfohlen, Suchergebnisse auf einen lokalen Computer herunterzuladen. Um zu vermeiden, dass die Firewall oder Proxyinfrastruktur Ihres Unternehmens beim Herunterladen von Suchergebnissen Probleme verursacht, können Sie das Herunterladen von Suchergebnissen auf einen virtuellen Desktop außerhalb Ihres Netzwerks in Betracht ziehen. Dadurch können Timeouts verringert werden, die in Azure-Datenverbindungen beim Exportieren einer großen Anzahl von Dateien auftreten. Weitere Informationen zu virtuellen Desktops finden Sie [unter Windows Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop).
 
 - Um die Leistung beim Herunterladen von Suchergebnissen zu verbessern, sollten Sie Suchen, die einen großen Satz von Ergebnissen zurückgeben, in kleinere Suchen unterteilen. Beispielsweise können Sie Datumsbereiche in Suchabfragen verwenden, um einen kleineren Satz von Ergebnissen zurückzukehren, die schneller heruntergeladen werden können.
@@ -82,7 +84,7 @@ Beim Exportieren der Ergebnisse einer Inhaltssuche werden die Ergebnisse vorbere
     </system.net>
     ```
 
-- Wenn die Ergebnisse einer Inhaltssuche älter als 7 Tage sind und Sie einen Exportauftrag übermitteln, wird eine Fehlermeldung angezeigt, in der Sie aufgefordert werden, die Suche erneut zu führen, um die Suchergebnisse zu aktualisieren. Brechen Sie in diesem Fall den Export ab, führen Sie die Suche erneut aus, und starten Sie den Export erneut.
+- Wenn die Ergebnisse einer Suche älter als 7 Tage sind und Sie einen Exportauftrag übermitteln, wird eine Fehlermeldung angezeigt, in der Sie aufgefordert werden, die Suche erneut zu führen, um die Suchergebnisse zu aktualisieren. Brechen Sie in diesem Fall den Export ab, führen Sie die Suche erneut aus, und starten Sie den Export erneut.
 
 ## <a name="step-1-prepare-search-results-for-export"></a>Schritt 1: Vorbereiten der Suchergebnisse für Export
 
@@ -169,7 +171,7 @@ Im nächsten Schritt laden Sie die Suchergebnisse aus dem Azure Storage auf Ihre
       >- Deaktivieren Sie die Virenschutzprüfung für den Ordner, in den Sie das Suchergebnis herunterladen.<br/>
       >- Laden Sie Suchergebnisse für gleichzeitige Downloadaufträge in verschiedene Ordner herunter.
 
-6. Klicken Sie zum Herunterladen der Suchergebnisse auf Ihren Computer auf **Starten**.
+7. Klicken Sie zum Herunterladen der Suchergebnisse auf Ihren Computer auf **Starten**.
   
     Das **eDiscovery-Exporttool** zeigt Statusinformationen zum Exportvorgang an, einschließlich einer Schätzung der Anzahl (und Größe) der verbleibenden Elemente, die heruntergeladen werden sollen. Wenn der Exportvorgang abgeschlossen ist, können Sie auf die Dateien am Speicherort zugreifen, an dem sie heruntergeladen wurden.
 

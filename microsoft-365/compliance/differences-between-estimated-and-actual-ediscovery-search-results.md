@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 ms.assetid: 8f20ca4f-a908-46ec-99e6-9890d269ecf2
 description: Verstehen Sie, warum geschätzte und tatsächliche Suchergebnisse bei Suchdurchsuchungen mit eDiscovery-Tools in Office 365.
-ms.openlocfilehash: d530b083b2353b66ee5d4fd4bb72b175aef28be8
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 17a4c2eea9833afa2112fa8ab918dcda074eeb36
+ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532115"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52653511"
 ---
 # <a name="differences-between-estimated-and-actual-ediscovery-search-results"></a>Unterschiede zwischen geschätzten und tatsächlichen eDiscovery-Suchergebnissen
 
@@ -81,7 +81,7 @@ Hier sind einige Gründe für diese Unterschiede:
 
 - **Deduplizierung von Exchange Elementen während des Exports**. Bei Exchange reduziert die Deduplizierung die Anzahl der exportierten Elemente. Sie haben die Möglichkeit, die Suchergebnisse beim Exportieren zu deduplizieren. Bei Exchange bedeutet dies, dass nur eine einzelne Instanz einer Nachricht exportiert wird, auch wenn diese Nachricht in mehreren Postfächern gefunden werden kann. Die geschätzten Suchergebnisse umfassen jede Instanz einer Nachricht. Wenn Sie also beim Exportieren von Suchergebnissen die Deduplizierungsoption auswählen, ist die tatsächliche Anzahl der exportierten Elemente möglicherweise erheblich kleiner als die geschätzte Anzahl von Elementen.
 
-    Wenn Sie die Deduplizierungsoption auswählen, sollten Sie auch beachten, dass alle Exchange-Elemente in einer einzelnen PST-Datei exportiert werden und die Ordnerstruktur aus den Quellpostfächern nicht beibehalten wird. Die exportierte PST-Datei enthält nur die E-Mail-Elemente. Ein Suchergebnisseinsbericht enthält jedoch einen Eintrag für jede exportierte Nachricht, der das Quellpostfach identifiziert, in dem sich die Nachricht befindet. Dadurch können Sie alle Postfächer identifizieren, die eine doppelte Nachricht enthalten. Wenn Sie Deduplizierung nicht aktivieren, wird für jedes durchsuchte Postfach eine separate PST-Datei exportiert.
+Der Suchergebnisseuchbericht (Results.csv) enthält einen Eintrag für jede doppelte Nachricht und identifiziert das Quellpostfach, in dem sich eine doppelte Nachricht befindet. Dadurch können Sie alle Postfächer identifizieren, die eine doppelte Nachricht enthalten.
 
 > [!NOTE]
 > Wenn Sie beim Exportieren von **Suchergebnissen** oder beim Herunterladen der Berichte nicht die Option Verschlüsselte Elemente enthalten oder über ein nicht unbekanntes Format verfügen, werden die Indexfehlerberichte heruntergeladen, aber keine Einträge. Dies bedeutet nicht, dass es keine Indizierungsfehler gibt. Das bedeutet nur, dass nicht indizierte Elemente nicht in den Export einbezogen wurden.
