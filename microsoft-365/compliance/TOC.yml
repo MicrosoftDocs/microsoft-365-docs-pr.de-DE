@@ -798,7 +798,7 @@
           href: detailed-properties-in-the-office-365-audit-log.md
         - name: 'Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen'
           href: export-view-audit-log-records.md
-        - name: Aktivieren oder Deaktivieren der Überwachungsprotokollsuche
+        - name: Aktivieren oder Deaktivieren der Überwachung
           href: turn-audit-log-search-on-or-off.md
         - name: 'Verwenden des Überwachungsprotokolls, um häufige Probleme zu untersuchen'
           href: auditing-troubleshooting-scenarios.md
