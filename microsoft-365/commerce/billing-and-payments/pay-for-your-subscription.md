@@ -14,7 +14,7 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 search.appverid: MET150
-description: Verwenden Sie eine Kreditkarte oder Debitkarte oder ein Bankkonto, um Ihr Microsoft 365 Business-Abonnement zu bezahlen. In einigen Fällen können Sie auch per Rechnung bezahlen.
+description: Verwenden Sie eine Kreditkarte oder Debitkarte oder ein Bankkonto, um Ihr Microsoft 365 Business-Abonnement zu bezahlen. In einigen Fällen können Sie auch per Rechnung bezahlen.
 ms.custom:
 - okr_SMB
 - fwlink 808700 for SEPA UI glink 906 for older uI

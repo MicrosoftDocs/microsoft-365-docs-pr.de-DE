@@ -1,5 +1,5 @@
 ---
-title: Berechtigungen im Microsoft 365 Compliance Center und Security Center
+title: Berechtigungen im Microsoft 365 Compliance Center und Security Center
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -35,7 +35,7 @@ ms.locfileid: "52530826"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Ihre Organisation muss Compliance- und Sicherheitsszenarien verwalten, die alle Microsoft 365-Dienste umfassen. Und Sie benötigen die Flexibilität, die richtigen Administratorberechtigungen für die richtigen Personen in der IT-Gruppe Ihrer Organisation bereitzustellen. Mithilfe des Microsoft 365 Security Centers oder des Microsoft 365 Compliance Centers können Sie Berechtigungen zentral für alle Aufgaben im Zusammenhang mit Sicherheit und Compliance verwalten.
+Ihre Organisation muss Compliance- und Sicherheitsszenarien verwalten, die alle Microsoft 365-Dienste umfassen. Und Sie benötigen die Flexibilität, die richtigen Administratorberechtigungen für die richtigen Personen in der IT-Gruppe Ihrer Organisation bereitzustellen. Mithilfe des Microsoft 365 Security Centers oder des Microsoft 365 Compliance Centers können Sie Berechtigungen zentral für alle Aufgaben im Zusammenhang mit Sicherheit und Compliance verwalten.
 
 Nachdem ein globaler Administrator Benutzer zu diesen Administratorrollen hinzugefügt hat, haben diese Administratoren Zugriff auf Features und Daten, die alle Dienste in Microsoft 365 umfassen, z. B. das Microsoft 365 Security Center, das Microsoft 365 Compliance Center, Azure, Office 365 und Enterprise Mobility + Security.
 

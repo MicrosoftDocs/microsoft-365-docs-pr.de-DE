@@ -59,7 +59,7 @@ Inhalt dieses Artikels:
 > [!NOTE]
 > Microsoft 365 richtet DKIM automatisch für die "onmicrosoft.com"-Anfangsdomänen ein. Das bedeutet, dass Sie keine weiteren Aktionen durchführen müssen, um DKIM für jegliche Anfangsdomänennamen einzurichten (z. B. litware.onmicrosoft.com). Weitere Informationen zu Domänen finden Sie unter [Häufig gestellte Fragen (FAQ) zu Domänen](../../admin/setup/domains-faq.yml#why-do-i-have-an--onmicrosoft-com--domain).
 
-DKIM ist eine der drei Authentifizierungsmethoden (SPF, DKIM und DMARC), die verhindern, dass Angreifer Nachrichten senden können, die aussehen, wie wenn sie von Ihrer Domäne stammen würden.
+DKIM ist eine der drei Authentifizierungsmethoden (SPF, DKIM und DMARC), die verhindern, dass Angreifer Nachrichten senden können, die aussehen, als ob sie von Ihrer Domäne stammen würden.
 
 Mit DKIM können Sie für ausgehende E-Mail-Nachrichten im Nachrichtenkopf eine digitale Signatur hinzufügen. Wenn Sie DKIM konfigurieren, autorisieren Sie Ihre Domäne, ihren Namen einer E-Mail-Nachricht mithilfe einer kryptografischen Authentifizierung zuzuordnen oder die E-Mail damit zu signieren. E-Mail-Systeme, die E-Mails von Ihrer Domäne erhalten, können diese digitale Signatur verwenden, um zu überprüfen, ob eingehende E-Mails legitim sind.
 
@@ -225,7 +225,7 @@ Nachdem Sie die CNAME-Einträge im DNS veröffentlicht haben, können Sie die DK
 
 > [!IMPORTANT]
 >:::image type="content" source="../../media/DKIMNoKeysSavedForThisDomain.PNG" alt-text="Der Fehler „Für diese Domäne werden keine DKIM-Schlüssel gespeichert“.":::
-> Wenn Sie DKIM zum ersten Mal konfigurieren und die Fehlermeldung „Für diese Domäne werden keine DKIM-Schlüssel gespeichert“ angezeigt wird, führen Sie den Befehl in Schritt 2 unten aus (z. B. *Set-DkimSigningConfig -Identity contoso.com -Enabled $true*), um den Schlüssel anzuzeigen.
+> Wenn Sie DKIM zum ersten Mal konfigurieren und die Fehlermeldung „Für diese Domäne werden keine DKIM-Schlüssel gespeichert“ angezeigt wird, führen Sie den Befehl in Schritt 2 unten aus (z. B. *Set-DkimSigningConfig -Identity contoso.com -Enabled $true*), um den Schlüssel anzuzeigen.
 
 1. [Stellen Sie eine Verbindung mit Exchange Online PowerShell her](/powershell/exchange/connect-to-exchange-online-powershell).
 

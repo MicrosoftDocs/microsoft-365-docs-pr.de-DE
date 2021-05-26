@@ -46,7 +46,7 @@ Wollen Sie herausfinden, ob ein Benutzer ein bestimmtes Dokument angezeigt oder 
 
 - Aktivitäten von Benutzern und Administratoren in Microsoft Teams
 
-- Aktivitäten von Benutzern und Administratoren in Dynamics 365
+- Aktivitäten von Benutzern und Administratoren in Dynamics 365
 
 - Aktivitäten von Benutzern und Administratoren in Yammer
 
@@ -75,7 +75,7 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
   ```
   Der Wert `True` für die Eigenschaft *UnifiedLogIngestionEnabled* gibt an, dass die Überwachungsprotokollsuche aktiviert ist. Weitere Informationen finden Sie unter [Aktivieren und Deaktivieren der Überwachungsprotokollsuche](turn-audit-log-search-on-or-off.md).
 
-- Ihnen wurde in Exchange Online eine entweder die Rolle „Überwachungsprotokolle nur anzeigen“ oder „Überwachungsprotokolle“ zugewiesen, um das Überwachungsprotokoll zu durchsuchen. Standardmäßig sind diese Rollen im Exchange Admin Center zugewiesen den Rollengruppen „Complianceverwaltung“ und „Organisationsverwaltung“ auf der Seite **Berechtigungen**. Bitte beachten Sie, dass globale Administratoren in Office 365 und Microsoft 365 automatisch Mitglieder der Verwaltungsrollengruppe „Organisationsverwaltung“ in Exchange Online sind. Damit ein Benutzer die Möglichkeit hat, das Überwachungsprotokoll mit minimalen Rechten zu durchsuchen, können Sie in Exchange Online eine benutzerdefinierte Rollengruppe erstellen, ihr die Rollen "Überwachungsprotokolle nur anzeigen" oder "Überwachungsprotokolle" hinzufügen und den Benutzer dann als Mitglied der neuen Rollengruppe hinzufügen. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](/Exchange/permissions-exo/role-groups).
+- Ihnen wurde in Exchange Online eine entweder die Rolle „Überwachungsprotokolle nur anzeigen“ oder „Überwachungsprotokolle“ zugewiesen, um das Überwachungsprotokoll zu durchsuchen. Standardmäßig sind diese Rollen im Exchange Admin Center zugewiesen den Rollengruppen „Complianceverwaltung“ und „Organisationsverwaltung“ auf der Seite **Berechtigungen**. Bitte beachten Sie, dass globale Administratoren in Office 365 und Microsoft 365 automatisch Mitglieder der Verwaltungsrollengruppe „Organisationsverwaltung“ in Exchange Online sind. Damit ein Benutzer die Möglichkeit hat, das Überwachungsprotokoll mit minimalen Rechten zu durchsuchen, können Sie in Exchange Online eine benutzerdefinierte Rollengruppe erstellen, ihr die Rollen "Überwachungsprotokolle nur anzeigen" oder "Überwachungsprotokolle" hinzufügen und den Benutzer dann als Mitglied der neuen Rollengruppe hinzufügen. Weitere Informationen finden Sie unter [Verwalten von Rollengruppen in Exchange Online](/Exchange/permissions-exo/role-groups).
 
   > [!IMPORTANT]
   > Wenn Sie einem Benutzer auf der Seite **Berechtigungen** im Security and Compliance Center die Rolle „Überwachungsprotokolle nur anzeigen“ oder „Überwachungsprotokolle“ zuweisen, kann er das Überwachungsprotokoll nicht durchsuchen. Sie müssen die Berechtigungen in Exchange Online zuweisen. Der Grund dafür ist, dass es sich bei dem zugrundeliegenden Cmdlet, das für die Durchsuchung des Überwachungsprotokolls verwendet wird, um ein Exchange Online-Cmdlet handelt.
@@ -110,9 +110,9 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
 
   Informationen zum Exportieren der vom **Search-UnifiedAuditLog**-Cmdlet zurückgegebenen Suchergebnisse in eine CSV-Datei finden Sie im Abschnitt „Tipps zum Exportieren, konfigurieren und Anzeigen des Überwachungsprotokolls“ in [Exportieren und Anzeigen des Überwachungsprotokolls](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
-- Wenn Sie programmgesteuert Daten aus dem Überwachungsprotokoll herunterladen möchten, empfehlen wir die Verwendung der Office 365-Verwaltungsaktivitäts-API anstelle eines PowerShell-Skripts. Die Office 365-Verwaltungsaktivitäts-API ist ein REST-Webdienst, den Sie beim Entwickeln von Lösungen zur Überwachung von Vorgängen, der Sicherheit und Compliance für Ihre Organisation verwenden können. Weitere Informationen finden Sie in der [Referenz der Office 365-Verwaltungsaktivitäts-API](/office/office-365-management-api/office-365-management-activity-api-reference).
+- Wenn Sie programmgesteuert Daten aus dem Überwachungsprotokoll herunterladen möchten, empfehlen wir die Verwendung der Office 365-Verwaltungsaktivitäts-API anstelle eines PowerShell-Skripts. Die Office 365-Verwaltungsaktivitäts-API ist ein REST-Webdienst, den Sie beim Entwickeln von Lösungen zur Überwachung von Vorgängen, der Sicherheit und Compliance für Ihre Organisation verwenden können. Weitere Informationen finden Sie in der [Referenz der Office 365-Verwaltungsaktivitäts-API](/office/office-365-management-api/office-365-management-activity-api-reference).
 
-- Nach dem Auftreten eines Ereignisses kann es bis zu 30 Minuten oder sogar bis zu 24 Stunden dauern, bis der entsprechende Überwachungsprotokolleintrag in den Ergebnissen der Überwachungsprotokollsuche angezeigt wird. Aus der folgenden Tabelle geht die Zeit hervor, die für die unterschiedlichen Dienste in Office 365 benötigt wird.
+- Nach dem Auftreten eines Ereignisses kann es bis zu 30 Minuten oder sogar bis zu 24 Stunden dauern, bis der entsprechende Überwachungsprotokolleintrag in den Ergebnissen der Überwachungsprotokollsuche angezeigt wird. Aus der folgenden Tabelle geht die Zeit hervor, die für die unterschiedlichen Dienste in Office 365 benötigt wird.
 
   |Microsoft 365-Dienst oder -Feature|30 Minuten|24 Stunden|
   |:-----|:-----:|:-----:|
@@ -126,24 +126,24 @@ Lesen Sie die folgenden Punkte, bevor Sie mit dem Durchsuchen des Überwachungsp
   |Microsoft Power Automate||![Häkchen](../media/checkmark.png)|
   |Microsoft Project|![Häkchen](../media/checkmark.png)||
   |Microsoft Stream|![Häkchen](../media/checkmark.png)||
-  |Microsoft Teams|![Häkchen](../media/checkmark.png)||
+  |Microsoft Teams|![Häkchen](../media/checkmark.png)||
   |Power-Apps||![Häkchen](../media/checkmark.png)|
   |Power BI|![Häkchen](../media/checkmark.png)||
   |Security & Compliance Center|![Häkchen](../media/checkmark.png)||
   |Vertraulichkeitsbezeichnungen||![Häkchen](../media/checkmark.png)|
-  |SharePoint Online und OneDrive for Business|![Häkchen](../media/checkmark.png)||
+  |SharePoint Online und OneDrive for Business|![Häkchen](../media/checkmark.png)||
   |Workplace Analytics|![Häkchen](../media/checkmark.png)||
   |Yammer||![Häkchen](../media/checkmark.png)||
   |Microsoft Forms|![Häkchen](../media/checkmark.png)|
   ||||
 
-- Azure Active Directory (Azure AD) ist der Verzeichnisdienst von Office 365. Das vereinheitlichte Überwachungsprotokoll enthält Benutzer-, Gruppen-, Anwendungs-, Domänen- und Verzeichnisaktivitäten, die im Microsoft 365 Admin Center oder im Azure-Verwaltungsportal ausgeführt wurden. Eine vollständige Liste der Azure AD-Ereignisse finden Sie unter [Azure Active Directory-Überwachungsberichtsereignisse](/azure/active-directory/reports-monitoring/concept-audit-logs).
+- Azure Active Directory (Azure AD) ist der Verzeichnisdienst von Office 365. Das vereinheitlichte Überwachungsprotokoll enthält Benutzer-, Gruppen-, Anwendungs-, Domänen- und Verzeichnisaktivitäten, die im Microsoft 365 Admin Center oder im Azure-Verwaltungsportal ausgeführt wurden. Eine vollständige Liste der Azure AD-Ereignisse finden Sie unter [Azure Active Directory-Überwachungsberichtsereignisse](/azure/active-directory/reports-monitoring/concept-audit-logs).
 
 - Die Überwachungsprotokollierung für Power BI ist standardmäßig nicht aktiviert. Wenn Sie im Überwachungsprotokoll nach Power BI-Aktivitäten suchen möchten, müssen Sie die Überwachung für das Power BI-Verwaltungsportal aktivieren. Anweisungen hierzu finden Sie im Abschnitt "Überwachungsprotokolle" im [Power BI-Verwaltungsportal](/power-bi/service-admin-portal#audit-logs).
 
 ## <a name="search-the-audit-log"></a>Durchsuchen des Überwachungsprotokolls
 
-Nachfolgend ist der Prozess zum Durchsuchen des Überwachungsprotokolls in Office 365 dargestellt. 
+Nachfolgend ist der Prozess zum Durchsuchen des Überwachungsprotokolls in Office 365 dargestellt. 
 
 [Schritt 1: Durchführen einer Überwachungsprotokollsuche](#step-1-run-an-audit-log-search)
 
@@ -173,18 +173,18 @@ Nachfolgend ist der Prozess zum Durchsuchen des Überwachungsprotokolls in Offic
 
 4. Konfigurieren Sie die folgenden Suchkriterien: 
 
-   1. **Aktivitäten**: Klicken Sie auf die Dropdownliste, um die Aktivitäten anzuzeigen, nach denen Sie suchen können. Benutzer- und Verwaltungsaktivitäten sind in Gruppen verwandter Aktivitäten organisiert. Sie können bestimmte Aktivitäten auswählen oder auf den Namen der Aktivitätsgruppe klicken, um alle Aktivitäten in der Gruppe auszuwählen. Sie können auch auf eine ausgewählte Aktivität klicken, um die Auswahl aufzuheben. Nachdem Sie die Suche ausgeführt haben, werden nur die Überwachungsprotokolleinträge für die ausgewählten Aktivitäten angezeigt. Durch Auswahl von **Ergebnisse für alle Aktivitäten anzeigen** werden Ergebnisse für alle Aktivitäten angezeigt, die von dem ausgewählten Benutzer oder der ausgewählten Benutzergruppe ausgeführt wurden.
+   1. **Aktivitäten**: Klicken Sie auf die Dropdownliste, um die Aktivitäten anzuzeigen, nach denen Sie suchen können. Benutzer- und Verwaltungsaktivitäten sind in Gruppen verwandter Aktivitäten organisiert. Sie können bestimmte Aktivitäten auswählen oder auf den Namen der Aktivitätsgruppe klicken, um alle Aktivitäten in der Gruppe auszuwählen. Sie können auch auf eine ausgewählte Aktivität klicken, um die Auswahl aufzuheben. Nachdem Sie die Suche ausgeführt haben, werden nur die Überwachungsprotokolleinträge für die ausgewählten Aktivitäten angezeigt. Durch Auswahl von **Ergebnisse für alle Aktivitäten anzeigen** werden Ergebnisse für alle Aktivitäten angezeigt, die von dem ausgewählten Benutzer oder der ausgewählten Benutzergruppe ausgeführt wurden.
 
       Es werden mehr als 100 Benutzer- und Administratoraktivitäten im Überwachungsprotokoll erfasst. Klicken Sie beim Thema dieses Artikels auf die Registerkarte **Überwachte Aktivitäten**, um die Beschreibungen der einzelnen Aktivitäten in den verschiedenen Diensten anzuzeigen.
 
-   1. **Startdatum** und **Enddatum**: Standardmäßig sind die letzten sieben Tage ausgewählt. Wählen Sie einen Datums- und Uhrzeitbereich aus, um die Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. Das Datum und die Uhrzeit werden in Ortszeit angezeigt. Der maximale Datumsbereich, den Sie angeben können, umfasst 90 Tage. Es wird ein Fehler angezeigt, wenn der ausgewählte Datumsbereich mehr als 90 Tage umfasst.
+   1. **Startdatum** und **Enddatum**: Standardmäßig sind die letzten sieben Tage ausgewählt. Wählen Sie einen Datums- und Uhrzeitbereich aus, um die Ereignisse anzuzeigen, die innerhalb dieses Zeitraums aufgetreten sind. Das Datum und die Uhrzeit werden in Ortszeit angezeigt. Der maximale Datumsbereich, den Sie angeben können, umfasst 90 Tage. Es wird ein Fehler angezeigt, wenn der ausgewählte Datumsbereich mehr als 90 Tage umfasst.
 
       > [!TIP]
       > Wenn Sie den maximalen Datumsbereich von 90 Tagen verwenden, wählen Sie den aktuellen Zeitpunkt für das **Startdatum** aus. Andernfalls wird eine Fehlermeldung angezeigt, in der mitgeteilt wird, dass das Startdatum vor dem Enddatum liegt. Wenn Sie die Überwachung innerhalb der letzten 90 Tage aktiviert haben, kann der maximale Datumsbereich nicht vor dem Datum beginnen, an dem die Überwachung aktiviert wurde.
 
    1. **Benutzer**: Klicken Sie in dieses Feld, und wählen Sie dann einen oder mehrere Benutzer aus, für die Suchergebnisse angezeigt werden sollen. In der Liste der Ergebnisse werden die Überwachungsprotokolleinträge für die ausgewählte Aktivität angezeigt, die von den Benutzern ausgeführt wurde, die Sie in diesem Feld ausgewählt haben. Lassen Sie dieses Feld leer, um die Einträge für alle Benutzer (und Dienstkonten) in Ihrer Organisation zurückzugeben.
 
-   1. **Datei, Ordner oder Website**: Geben Sie einen Datei- oder Ordnernamen ganz oder teilweise ein, um nach Aktivitäten für die Datei oder den Ordner zu suchen, die bzw. der das angegebene Schlüsselwort enthält. Sie können auch die URL einer Datei oder eines Ordners verwenden. Wenn Sie eine URL verwenden wollen, geben Sie unbedingt den vollständigen URL-Pfad ein. Falls Sie nur einen Teil der URL eingeben, verwenden Sie bitte keine Sonder- oder Leerzeichen.
+   1. **Datei, Ordner oder Website**: Geben Sie einen Datei- oder Ordnernamen ganz oder teilweise ein, um nach Aktivitäten für die Datei oder den Ordner zu suchen, die bzw. der das angegebene Schlüsselwort enthält. Sie können auch die URL einer Datei oder eines Ordners verwenden. Wenn Sie eine URL verwenden wollen, geben Sie unbedingt den vollständigen URL-Pfad ein. Falls Sie nur einen Teil der URL eingeben, verwenden Sie bitte keine Sonder- oder Leerzeichen.
 
       Lassen Sie dieses Feld leer, um Einträge für alle Dateien und Ordner in Ihrer Organisation zurückzugeben.
 
@@ -196,7 +196,7 @@ Nachfolgend ist der Prozess zum Durchsuchen des Überwachungsprotokolls in Offic
 
 5. Klicken Sie auf **Suchen**, um die Suche anhand der Suchkriterien auszuführen. 
 
-   Die Suchergebnisse werden geladen und nach wenigen Augenblicken unter **Ergebnisse** angezeigt. Nach Abschluss der Suche wird die Anzahl der gefundenen Ergebnisse angezeigt. Im Bereich **Ergebnisse** werden maximal 5.000 Ereignisse in Schritten von jeweils 150 Ereignissen angezeigt. Wenn mehr als 5.000 Ereignisse die Suchkriterien erfüllen, werden die aktuellsten 5.000 Ereignisse angezeigt.
+   Die Suchergebnisse werden geladen und nach wenigen Augenblicken unter **Ergebnisse** angezeigt. Nach Abschluss der Suche wird die Anzahl der gefundenen Ergebnisse angezeigt. Im Bereich **Ergebnisse** werden maximal 5.000 Ereignisse in Schritten von jeweils 150 Ereignissen angezeigt. Wenn mehr als 5.000 Ereignisse die Suchkriterien erfüllen, werden die aktuellsten 5.000 Ereignisse angezeigt.
 
    ![Die Anzahl der Ergebnisse wird nach Abschluss der Suche angezeigt.](../media/986216f1-ca2f-4747-9480-e232b5bf094c.png)
 
@@ -212,11 +212,11 @@ Nachfolgend ist der Prozess zum Durchsuchen des Überwachungsprotokolls in Offic
 
 - Klicken Sie auf **Auswahl aufheben**, um die aktuelle Auswahl von Suchkriterien aufzuheben. Der Datumsbereich wird auf die Standardeinstellung für die letzten sieben Tage zurückgesetzt. Sie können auch auf **Gesamte Auswahl aufheben, um Ergebnisse für alle Aktivitäten anzuzeigen** klicken, um die getroffene Auswahl von Aktivitäten aufzuheben.
 
-- Wenn 5,000 Ergebnisse gefunden werden, können Sie wahrscheinlich davon ausgehen, dass mehr als 5.000 Ereignisse die Suchkriterien erfüllen. Sie können entweder die Suchkriterien verfeinern und die Suche erneut durchführen, damit weniger Ergebnisse zurückgegeben werden, oder Sie können alle Suchergebnisse exportieren, indem Sie **Ergebnisse exportieren** \> **Alle Ergebnisse herunterladen** auswählen.
+- Wenn 5,000 Ergebnisse gefunden werden, können Sie wahrscheinlich davon ausgehen, dass mehr als 5.000 Ereignisse die Suchkriterien erfüllen. Sie können entweder die Suchkriterien verfeinern und die Suche erneut durchführen, damit weniger Ergebnisse zurückgegeben werden, oder Sie können alle Suchergebnisse exportieren, indem Sie **Ergebnisse exportieren** \> **Alle Ergebnisse herunterladen** auswählen.
 
 ### <a name="step-2-view-the-search-results"></a>Schritt 2: Anzeigen der Suchergebnisse
 
-Die Ergebnisse einer Überwachungsprotokollsuche werden unter **Ergebnisse** auf der Seite **Überwachungsprotokollsuche** angezeigt. Wie bereits erwähnt werden maximal 5.000 Ereignisse (ggf. die 5.000 neuesten Ereignisse) in Schritten von 150 Ereignissen angezeigt. Zum Anzeigen weiterer Ereignisse können Sie die Bildlaufleiste im Bereich **Ergebnisse** verwenden oder **UMSCHALT+ENDE** drücken, um die nächsten 150 Ereignisse anzuzeigen.
+Die Ergebnisse einer Überwachungsprotokollsuche werden unter **Ergebnisse** auf der Seite **Überwachungsprotokollsuche** angezeigt. Wie bereits erwähnt werden maximal 5.000 Ereignisse (ggf. die 5.000 neuesten Ereignisse) in Schritten von 150 Ereignissen angezeigt. Zum Anzeigen weiterer Ereignisse können Sie die Bildlaufleiste im Bereich **Ergebnisse** verwenden oder **UMSCHALT+ENDE** drücken, um die nächsten 150 Ereignisse anzuzeigen.
 
 Die Ergebnisse enthalten die folgenden Informationen zu den einzelnen Ereignissen, die bei der Suche zurückgegeben werden:
 
@@ -273,12 +273,12 @@ Sie können die Ergebnisse einer Überwachungsprotokollsuche in eine Datei mit k
 
 2. Klicken Sie auf **Ergebnisse exportieren**, und wählen Sie eine der folgenden Optionen aus:
 
-   - **Geladene Ergebnisse speichern**: Wählen Sie diese Option aus, um nur die Einträge zu exportieren, die unter **Ergebnisse** auf der Seite **Überwachungsprotokollsuche** angezeigt werden. Die heruntergeladene CSV-Datei enthält dieselben Spalten (und Daten), die auch auf der Seite angezeigt werden (Datum, Benutzer, Aktivität, Element und Details). Eine zusätzliche Spalte (mit dem Namen **Mehr**) wird in die CSV-Datei aufgenommen und enthält weitere Informationen aus dem Überwachungsprotokolleintrag. Da Sie dieselben Ergebnisse exportieren, die auf der Seite **Überwachungsprotokollsuche** geladen werden (und angezeigt werden können), werden maximal 5.000 Einträge exportiert.
+   - **Geladene Ergebnisse speichern**: Wählen Sie diese Option aus, um nur die Einträge zu exportieren, die unter **Ergebnisse** auf der Seite **Überwachungsprotokollsuche** angezeigt werden. Die heruntergeladene CSV-Datei enthält dieselben Spalten (und Daten), die auch auf der Seite angezeigt werden (Datum, Benutzer, Aktivität, Element und Details). Eine zusätzliche Spalte (mit dem Namen **Mehr**) wird in die CSV-Datei aufgenommen und enthält weitere Informationen aus dem Überwachungsprotokolleintrag. Da Sie dieselben Ergebnisse exportieren, die auf der Seite **Überwachungsprotokollsuche** geladen werden (und angezeigt werden können), werden maximal 5.000 Einträge exportiert.
 
-   - **Alle Ergebnisse herunterladen**: Wählen Sie diese Option aus, um alle Einträge aus dem Überwachungsprotokoll zu exportieren, die den Suchkriterien entsprechen. Wenn Sie eine große Menge von Suchergebnissen exportieren möchten, wählen Sie diese Option aus, um zusätzlich zu den 5.000 Ergebnissen, die auf der Seite **Überwachungsprotokollsuche** angezeigt werden können, alle Einträge aus dem Überwachungsprotokoll herunterzuladen. Mit dieser Option werden die unformatierten Daten aus dem Überwachungsprotokoll in eine CSV-Datei heruntergeladen, und es sind zusätzliche Informationen aus dem Überwachungsprotokolleintrag in einer Spalte mit dem Namen **AuditData** enthalten. Bei Auswahl dieser Exportoption kann das Herunterladen der Datei etwas länger dauern, da die Datei möglicherweise wesentlich größer als diejenige ist, die bei Auswahl einer anderen Option heruntergeladen wird.
+   - **Alle Ergebnisse herunterladen**: Wählen Sie diese Option aus, um alle Einträge aus dem Überwachungsprotokoll zu exportieren, die den Suchkriterien entsprechen. Wenn Sie eine große Menge von Suchergebnissen exportieren möchten, wählen Sie diese Option aus, um zusätzlich zu den 5.000 Ergebnissen, die auf der Seite **Überwachungsprotokollsuche** angezeigt werden können, alle Einträge aus dem Überwachungsprotokoll herunterzuladen. Mit dieser Option werden die unformatierten Daten aus dem Überwachungsprotokoll in eine CSV-Datei heruntergeladen, und es sind zusätzliche Informationen aus dem Überwachungsprotokolleintrag in einer Spalte mit dem Namen **AuditData** enthalten. Bei Auswahl dieser Exportoption kann das Herunterladen der Datei etwas länger dauern, da die Datei möglicherweise wesentlich größer als diejenige ist, die bei Auswahl einer anderen Option heruntergeladen wird.
 
      > [!IMPORTANT]
-     > Aus seiner einzigen Suche in einer Protokolldatei können Sie maximal 50.000 Einträge in eine CSV-Datei herunterladen. Wenn 50.000 Einträge in die CSV-Datei heruntergeladen werden, können Sie wahrscheinlich davon ausgehen, dass mehr als 50.000 Ereignisse die Suchkriterien erfüllen. Wenn Sie mehr als diesen Grenzwert exportieren möchten, versuchen Sie es mit einem Datenbereich, um die Anzahl der Einträge im Überwachungsprotokoll zu verringern. Möglicherweise müssen Sie mehrere Suchläufe mit kleineren Datumsbereichen durchführen, um mehr als 50.000 Einträge zu exportieren.
+     > Aus seiner einzigen Suche in einer Protokolldatei können Sie maximal 50.000 Einträge in eine CSV-Datei herunterladen. Wenn 50.000 Einträge in die CSV-Datei heruntergeladen werden, können Sie wahrscheinlich davon ausgehen, dass mehr als 50.000 Ereignisse die Suchkriterien erfüllen. Wenn Sie mehr als diesen Grenzwert exportieren möchten, versuchen Sie es mit einem Datenbereich, um die Anzahl der Einträge im Überwachungsprotokoll zu verringern. Möglicherweise müssen Sie mehrere Suchläufe mit kleineren Datumsbereichen durchführen, um mehr als 50.000 Einträge zu exportieren.
 
 3. Nachdem Sie eine Exportoption ausgewählt haben, wird eine Meldung am unteren Rand des Fensters angezeigt, in der Sie aufgefordert werden, die CSV-Datei zu öffnen, sie im Ordner "Downloads" oder in einem bestimmten Ordner zu speichern.
 
@@ -296,7 +296,7 @@ Sie können die Ergebnisse einer Überwachungsprotokollsuche in eine Datei mit k
 
 ## <a name="audited-activities"></a>Überwachte Aktivitäten
 
-In den Tabellen in diesem Abschnitt sind die Aktivitäten beschrieben, die in Office 365 überwacht werden. Sie können nach diesen Ereignissen suchen, indem Sie das Überwachungsprotokoll im Security and Compliance Center durchsuchen.
+In den Tabellen in diesem Abschnitt sind die Aktivitäten beschrieben, die in Office 365 überwacht werden. Sie können nach diesen Ereignissen suchen, indem Sie das Überwachungsprotokoll im Security and Compliance Center durchsuchen.
 
 In diesen Tabellen werden verwandte Aktivitäten oder die Aktivitäten eines bestimmten Diensts gruppiert. Die Tabellen enthalten den „benutzerfreundlichen“ Anzeigenamen, der in der Dropdownliste **Aktivitäten** angezeigt wird, sowie den Namen des zugehörigen Vorgangs, der in den Detailinformationen eines Überwachungsdatensatzes und in der CSV-Datei erscheint, wenn Sie Ihre Suchergebnisse exportieren. Beschreibungen der Detailinformationen finden Sie in [Detaillierte Eigenschaften im Überwachungsprotokoll](detailed-properties-in-the-office-365-audit-log.md).
 
@@ -501,7 +501,7 @@ Nachstehend sind einige weitere Szenarien aufgeführt, in denen "app@sharepoint"
 
 - Microsoft 365-Gruppen Wenn ein Benutzer oder Administrator eine neue Gruppe erstellt, werden Überwachungsdatensätze für die Erstellung einer Websitesammlung, das Aktualisieren von Listen und das Hinzufügen von Mitgliedern zu einer SharePoint-Gruppe generiert. Diese Aufgaben werden von einer Anwendung im Namen des Benutzers ausgeführt, der die Gruppe erstellt hat.
 
-- Microsoft Teams. Bei der Erstellung eines Teams werden ähnlich wie bei Microsoft 365-Gruppen Überwachungsdatensätze für die Erstellung einer Websitesammlung, das Aktualisieren von Listen und das Hinzufügen von Mitgliedern zu einer SharePoint-Gruppe generiert.
+- Microsoft Teams. Bei der Erstellung eines Teams werden ähnlich wie bei Microsoft 365-Gruppen Überwachungsdatensätze für die Erstellung einer Websitesammlung, das Aktualisieren von Listen und das Hinzufügen von Mitgliedern zu einer SharePoint-Gruppe generiert.
 
 - Compliance-Features. Wenn ein Administrator Compliance-Features implementiert, z. B. Aufbewahrungsrichtlinien, eDiscovery-Aufbewahrungsvorgaben und automatisch angewendete Vertraulichkeitsbezeichnungen.
 
@@ -638,7 +638,7 @@ Die folgende Tabelle enthält die Ereignisse, die aus Websiteverwaltungsaufgaben
 |Benutzer das Erstellen von Gruppen gestattet|AllowGroupCreationSet|Der Websiteadministrator oder -besitzer fügt eine Berechtigungsstufe zu einer Website hinzu, die einem Benutzer, dem diese Berechtigung zugewiesen wird, das Erstellen einer Gruppe für diese Website gestattet. |
 |Verschiebung der Websitegeografie abgebrochen|SiteGeoMoveCancelled|Ein SharePoint- oder globaler Administrator bricht erfolgreich eine Verschiebung der SharePoint-oder OneDrive-Websitegeografie ab. Mit der Multi-Geo-Funktion kann eine Organisation mehrere Microsoft-Rechenzentrumregionen, so genannte Geos, umfassen. Weitere Informationen finden Sie unter [Multi-Geo-Funktionen in OneDrive und SharePoint Online](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
 |Freigaberichtlinie geändert|SharingPolicyChanged|Ein SharePoint- oder globaler Administrator hat eine SharePoint-Freigaberichtlinie mithilfe des Microsoft 365 Admin-Portals, des SharePoint Admin Portals oder der SharePoint Online Management Shell geändert. Alle Änderungen an den Einstellungen der Freigaberichtlinie in Ihrer Organisation werden protokolliert. Die geänderte Richtlinie wird im Feld **ModifiedProperties** in den Detailinformationen des Ereignisdatensatzes aufgeführt.|
-|Zugriffsrichtlinie des Geräts geändert|DeviceAccessPolicyChanged|Ein SharePoint- oder globaler Administrator hat die Richtlinie für nicht verwaltete Geräte in Ihrer Organisation geändert. Diese Richtlinie steuert den Zugriff auf SharePoint, OneDrive und Microsoft 365 von Geräten, die Ihrer Organisation nicht beigetreten sind. Zum Konfigurieren dieser Richtlinie ist ein Enterprise Mobility + Security-Abonnement erforderlich. Weitere Informationen finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten](/sharepoint/control-access-from-unmanaged-devices).|
+|Zugriffsrichtlinie des Geräts geändert|DeviceAccessPolicyChanged|Ein SharePoint- oder globaler Administrator hat die Richtlinie für nicht verwaltete Geräte in Ihrer Organisation geändert. Diese Richtlinie steuert den Zugriff auf SharePoint, OneDrive und Microsoft 365 von Geräten, die Ihrer Organisation nicht beigetreten sind. Zum Konfigurieren dieser Richtlinie ist ein Enterprise Mobility + Security-Abonnement erforderlich. Weitere Informationen finden Sie unter [Steuern des Zugriffs von nicht verwalteten Geräten](/sharepoint/control-access-from-unmanaged-devices).|
 |Ausgenommene Benutzer-Agents geändert|CustomizeExemptUsers|Ein SharePoint- oder globaler Administrator hat die Liste der ausgenommenen Benutzer-Agents im SharePoint Admin Center angepasst. Sie können angeben, welche Benutzer-Agents vom Empfangen einer gesamten Webseite zum Indizieren ausgenommen werden sollen. Das bedeutet: Wenn ein Benutzer-Agent, den Sie als ausgenommen festgelegt haben, auf ein InfoPath-Formular trifft, wird das Formular als eine XML-Datei und nicht als eine gesamte Webseite zurückgegeben. Dadurch werden InfoPath-Formulare schneller indiziert.|
 |Netzwerkzugriffsrichtlinie geändert|NetworkAccessPolicyChanged|Ein SharePoint- oder globaler Administrator hat die standortbasierte Zugriffsrichtlinie (auch als „Grenze des vertrauenswürdigen Netzwerks“ bezeichnet) im SharePoint Admin Center oder mithilfe der SharePoint PowerShell geändert. Dieser Richtlinientyp steuert, wer basierend auf von Ihnen festgelegten autorisierten IP-Adressbereichen Zugriff auf SharePoint- und OneDrive-Ressourcen in Ihrer Organisation hat. Weitere Informationen finden Sie unter [Steuern des Zugriffs auf SharePoint Online- und OneDrive-Daten auf der Grundlage von definierten Netzwerkspeicherorten](/sharepoint/control-access-based-on-network-location).|
 |Verschiebung der Websitegeografie abgeschlossen|SiteGeoMoveCompleted|Eine von einem globalen Administrator in Ihrer Organisation angesetzte Verschiebung der Websitegeografie wurde erfolgreich abgeschlossen. Mit der Multi-Geo-Funktion kann eine Organisation mehrere Microsoft-Rechenzentrumregionen, so genannte Geos, umfassen. Weitere Informationen finden Sie unter [Multi-Geo-Funktionen in OneDrive und SharePoint Online in Office 365](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md).|
@@ -666,7 +666,7 @@ Die folgende Tabelle enthält die Ereignisse, die aus Websiteverwaltungsaufgaben
 
 ### <a name="exchange-mailbox-activities"></a>Exchange-Postfachaktivitäten
 
-In der folgenden Tabelle sind die Aktivitäten aufgelistet, die von der Postfachüberwachungsprotokollierung erfasst werden können. Postfachaktivitäten, die vom Besitzer des Postfachs, einem delegierten Benutzer oder einem Administrator ausgeführt werden, werden automatisch für bis zu 90 Tage im Überwachungsprotokoll protokolliert. Ein Administrator kann die Postfachüberwachungsprotokollierung für alle Benutzer in Ihrer Organisation deaktivieren. In diesem Fall werden für alle Benutzer Postfachaktivitäten nicht protokolliert. Weitere Informationen finden Sie unter [Postfachüberwachungen verwalten](enable-mailbox-auditing.md).
+In der folgenden Tabelle sind die Aktivitäten aufgelistet, die von der Postfachüberwachungsprotokollierung erfasst werden können. Postfachaktivitäten, die vom Besitzer des Postfachs, einem delegierten Benutzer oder einem Administrator ausgeführt werden, werden automatisch für bis zu 90 Tage im Überwachungsprotokoll protokolliert. Ein Administrator kann die Postfachüberwachungsprotokollierung für alle Benutzer in Ihrer Organisation deaktivieren. In diesem Fall werden für alle Benutzer Postfachaktivitäten nicht protokolliert. Weitere Informationen finden Sie unter [Postfachüberwachungen verwalten](enable-mailbox-auditing.md).
 
  Sie können auch mithilfe des Cmdlets [Search-MailboxAuditLog in Exchange Online PowerShell](/powershell/module/exchange/search-mailboxauditlog) nach Postfachaktivitäten suchen.
 
@@ -699,7 +699,7 @@ In der folgenden Tabelle sind die Aktivitäten aufgelistet, die von der Postfach
 
 ### <a name="user-administration-activities"></a>Benutzerverwaltungsaktivitäten
 
-In der folgenden Tabelle sind Benutzerverwaltungsaktivitäten aufgelistet, die protokolliert werden, wenn ein Administrator ein Benutzerkonto über das Microsoft 365 Admin Center oder das Azure-Verwaltungsportal hinzufügt oder ändert.
+In der folgenden Tabelle sind Benutzerverwaltungsaktivitäten aufgelistet, die protokolliert werden, wenn ein Administrator ein Benutzerkonto über das Microsoft 365 Admin Center oder das Azure-Verwaltungsportal hinzufügt oder ändert.
 
 > [!NOTE]
 > Die Vorgangsnamen, die in der Spalte **Vorgang** in der folgenden Tabelle aufgeführt sind, enthalten einen Punkt ( `.` ). Sie müssen den Punkt in den Vorgangsnamen einbinden, wenn Sie den Vorgang in einem PowerShell-Befehl angeben wenn Sie das Überwachungsprotokoll durchsuchen, Aufbewahrungsrichtlinien für die Überwachung, Warnungsrichtlinien oder Aktivitätswarnungen erstellen. Achten Sie auch darauf, den Vorgangsnamen in doppelte Anführungszeichen (`" "`) zu setzen.
@@ -711,14 +711,14 @@ In der folgenden Tabelle sind Benutzerverwaltungsaktivitäten aufgelistet, die p
 |Benutzerkennwort geändert|Benutzerkennwort ändern.|Ein Benutzer ändert sein Kennwort. Das Zurücksetzen von Kennwörtern durch den Benutzer muss (für alle oder ausgewählte Benutzer) in Ihrer Organisation aktiviert sein, damit Benutzer ihr Kennwort zurücksetzen können. Sie können die Aktivitäten im Zusammenhang mit dem Zurücksetzen von Kennwörtern durch den Benutzer auch in Azure Active Directory überwachen. Weitere Informationen finden Sie unter [Berichtsoptionen für die Azure AD-Kennwortverwaltung](/azure/active-directory/authentication/howto-sspr-reporting).
 |Benutzer gelöscht|Benutzer löschen.|Ein Benutzerkonto wurde gelöscht.|
 |Benutzerkennwort zurücksetzen|Benutzerkennwort zurücksetzen.|Der Administrator setzt das Kennwort für einen Benutzer zurück.|
-|Eigenschaft festgelegt, die einen Benutzer zur Kennwortänderung zwingt|Erzwungene Änderung des Benutzerkennworts festlegen.|Der Administrator hat die Eigenschaft festgelegt, die einen Benutzer dazu zwingt, sein Kennwort bei der nächsten Anmeldung bei Office 365 zu ändern.|
+|Eigenschaft festgelegt, die einen Benutzer zur Kennwortänderung zwingt|Erzwungene Änderung des Benutzerkennworts festlegen.|Der Administrator hat die Eigenschaft festgelegt, die einen Benutzer dazu zwingt, sein Kennwort bei der nächsten Anmeldung bei Office 365 zu ändern.|
 |Lizenzeigenschaften festgelegt|Lizenzeigenschaften festlegen.|Der Administrator ändert die Eigenschaften einer Lizenz, die einem Benutzer zugewiesen ist.|
 |Benutzer aktualisiert|Benutzer aktualisieren.|Ein Administrator ändert eine oder mehrere Eigenschaften eines Benutzerkontos. Eine Liste der Benutzereigenschaften, die aktualisiert werden können, finden Sie im Abschnitt "Aktualisieren von Benutzerattributen" unter [Azure Active Directory-Überwachungsberichtsereignisse](/azure/active-directory/reports-monitoring/concept-audit-logs).|
 ||||
 
 ### <a name="azure-ad-group-administration-activities"></a>Azure Active Directory-Gruppenverwaltungsaktivitäten
 
-In der nachstehenden Tabelle werden die Gruppenverwaltungsaktivitäten aufgeführt, die protokolliert werden, wenn ein Administrator oder ein Benutzer eine Microsoft 365-Gruppe erstellt oder ändert, oder aber wenn ein Administrator eine Sicherheitsgruppe über das Microsoft 365 Admin Center oder das Azure-Verwaltungsportal erstellt. Weitere Informationen zu Gruppen in Office 365 finden Sie unter [Anzeigen, Erstellen und Löschen von Gruppen im Office 365 Admin Center](../admin/create-groups/create-groups.md).
+In der nachstehenden Tabelle werden die Gruppenverwaltungsaktivitäten aufgeführt, die protokolliert werden, wenn ein Administrator oder ein Benutzer eine Microsoft 365-Gruppe erstellt oder ändert, oder aber wenn ein Administrator eine Sicherheitsgruppe über das Microsoft 365 Admin Center oder das Azure-Verwaltungsportal erstellt. Weitere Informationen zu Gruppen in Office 365 finden Sie unter [Anzeigen, Erstellen und Löschen von Gruppen im Office 365 Admin Center](../admin/create-groups/create-groups.md).
 
 > [!NOTE]
 > Die Vorgangsnamen, die in der Spalte **Vorgang** in der folgenden Tabelle aufgeführt sind, enthalten einen Punkt ( `.` ). Sie müssen den Punkt in den Vorgangsnamen einbinden, wenn Sie den Vorgang in einem PowerShell-Befehl angeben wenn Sie das Überwachungsprotokoll durchsuchen, Aufbewahrungsrichtlinien für die Überwachung, Warnungsrichtlinien oder Aktivitätswarnungen erstellen. Achten Sie auch darauf, den Vorgangsnamen in doppelte Anführungszeichen (`" "`) zu setzen.
@@ -752,21 +752,21 @@ In der folgenden Tabelle sind Anwendungsverwaltungsaktivitäten aufgelistet, die
 
 ### <a name="role-administration-activities"></a>Rollenverwaltungsaktivitäten
 
-In der folgenden Tabelle sind Azure AD-Rollenverwaltungsaktivitäten aufgelistet, die protokolliert werden, wenn ein Administrator Administratorrollen im Microsoft 365 Admin Center oder im Azure-Verwaltungsportal verwaltet.
+In der folgenden Tabelle sind Azure AD-Rollenverwaltungsaktivitäten aufgelistet, die protokolliert werden, wenn ein Administrator Administratorrollen im Microsoft 365 Admin Center oder im Azure-Verwaltungsportal verwaltet.
 
 > [!NOTE]
 > Die Vorgangsnamen, die in der Spalte **Vorgang** in der folgenden Tabelle aufgeführt sind, enthalten einen Punkt ( `.` ). Sie müssen den Punkt in den Vorgangsnamen einbinden, wenn Sie den Vorgang in einem PowerShell-Befehl angeben wenn Sie das Überwachungsprotokoll durchsuchen, Aufbewahrungsrichtlinien für die Überwachung, Warnungsrichtlinien oder Aktivitätswarnungen erstellen. Achten Sie auch darauf, den Vorgangsnamen in doppelte Anführungszeichen (`" "`) zu setzen.
 
 |Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
-|Mitglied zu Rolle hinzugefügt|Mitglied zu Rolle hinzufügen.|Ein Benutzer wurde einer Administratorrolle in Microsoft 365 hinzugefügt.|
-|Benutzer aus einer Directory-Rolle entfernt|Mitglied aus Rolle entfernen.|Ein Benutzer wurde aus einer Administratorrolle in Microsoft 365 entfernt.|
+|Mitglied zu Rolle hinzugefügt|Mitglied zu Rolle hinzufügen.|Ein Benutzer wurde einer Administratorrolle in Microsoft 365 hinzugefügt.|
+|Benutzer aus einer Directory-Rolle entfernt|Mitglied aus Rolle entfernen.|Ein Benutzer wurde aus einer Administratorrolle in Microsoft 365 entfernt.|
 |Kontaktinformationen für Unternehmen festgelegt|Kontaktinformationen für Unternehmen festlegen.|Die Kontakteinstellungen auf Unternehmensebene für Ihre Organisation wurden aktualisiert. Dies umfasst E-Mail-Adressen für Nachrichten in Bezug auf Abonnements, die von Microsoft 365 gesendet werden, sowie technische Benachrichtigungen zu Diensten.|
 ||||
 
 ### <a name="directory-administration-activities"></a>Verzeichnisverwaltungsaktivitäten
 
-In der folgenden Tabelle sind Aktivitäten in Bezug auf Verzeichnisse und Domänen in Azure AD aufgelistet, die protokolliert werden, wenn ein Administrator seine Organisation im Microsoft 365 Admin Center oder im Azure-Verwaltungsportal verwaltet.
+In der folgenden Tabelle sind Aktivitäten in Bezug auf Verzeichnisse und Domänen in Azure AD aufgelistet, die protokolliert werden, wenn ein Administrator seine Organisation im Microsoft 365 Admin Center oder im Azure-Verwaltungsportal verwaltet.
 
 > [!NOTE]
 > Die Vorgangsnamen, die in der Spalte **Vorgang** in der folgenden Tabelle aufgeführt sind, enthalten einen Punkt ( `.` ). Sie müssen den Punkt in den Vorgangsnamen einbinden, wenn Sie den Vorgang in einem PowerShell-Befehl angeben wenn Sie das Überwachungsprotokoll durchsuchen, Aufbewahrungsrichtlinien für die Überwachung, Warnungsrichtlinien oder Aktivitätswarnungen erstellen. Achten Sie auch darauf, den Vorgangsnamen in doppelte Anführungszeichen (`" "`) zu setzen.
@@ -777,7 +777,7 @@ In der folgenden Tabelle sind Aktivitäten in Bezug auf Verzeichnisse und Domän
 |Partner zum Verzeichnis hinzugefügt|Partner zu Unternehmen hinzufügen.|Es wurde ein Partner (delegierter Administrator) zu Ihrer Organisation hinzugefügt.|
 |Domäne aus Unternehmen entfernt|Domäne aus Unternehmen entfernen.|Es wurde eine Domäne aus Ihrer Organisation entfernt.|
 |Partner aus dem Verzeichnis entfernt|Partner aus Unternehmen entfernen.|Es wurde ein Partner (delegierter Administrator) aus Ihrer Organisation entfernt.|
-|Unternehmensinformationen festgelegen|Unternehmensinformationen festgelegen.|Die Unternehmensinformationen für Ihre Organisation wurden aktualisiert. Dies umfasst E-Mail-Adressen für Nachrichten in Bezug auf Abonnements, die von Microsoft 365 gesendet werden, sowie technische Benachrichtigungen zu Microsoft 365-Diensten.|
+|Unternehmensinformationen festgelegen|Unternehmensinformationen festgelegen.|Die Unternehmensinformationen für Ihre Organisation wurden aktualisiert. Dies umfasst E-Mail-Adressen für Nachrichten in Bezug auf Abonnements, die von Microsoft 365 gesendet werden, sowie technische Benachrichtigungen zu Microsoft 365-Diensten.|
 |Domänenauthentifizierung festgelegt|Domänenauthentifizierung festlegen.|Die Einstellung der Domänenauthentifizierung für Ihre Organisation wurde geändert.|
 |Verbundeinstellungen für eine Domäne aktualisiert|Verbundeinstellungen für Domäne festlegen.|Die Verbundeinstellungen (externe Freigabe) für Ihre Organisation wurden geändert.|
 |Kennwortrichtlinie festlegen|Kennwortrichtlinie festlegen.|Die Längen- und Zeicheneinschränkungen für Benutzerkennwörter in Ihrer Organisation wurden geändert.|
@@ -829,7 +829,7 @@ Workplace Analytics bietet einen Einblick in die Zusammenarbeit von Gruppen inne
 |Bericht heruntergeladen|DownloadedReport|Ein Analyst hat eine Abfrageergebnisdatei heruntergeladen.|
 |Abfrage ausgeführt|ExecutedQuery|Ein Analyst hat eine Abfrage ausgeführt.|
 |Datenzugriffseinstellungen aktualisiert|UpdatedDataAccessSetting|Ein Administrator hat die Datenzugriffseinstellungen aktualisiert.|
-|Datenschutzeinstellung aktualisiert|UpdatedPrivacySetting|Ein Administrator hat die Datenschutzeinstellungen aktualisiert, z. B. die minimale Gruppengröße.|
+|Datenschutzeinstellung aktualisiert|UpdatedPrivacySetting|Ein Administrator hat die Datenschutzeinstellungen aktualisiert, z. B. die minimale Gruppengröße.|
 |Organisationsdaten hochgeladen|UploadedOrgData|Ein Administrator hat eine Organisationsdatendatei hochgeladen.|
 |Explore angezeigt|ViewedExplore|Ein Analyst hat Visualisierungen in einer oder mehreren Explore-Registerkarten angezeigt.|
 ||||
@@ -943,7 +943,7 @@ Wo nachstehend in den Beschreibungen erwähnt, enthalten einige Vorgänge zusät
 |Angezeigte Antwort|ViewResponse|Der Formularbesitzer zeigt eine bestimmte Antwort an. <br><br>Eigenschaft ResponseId: Zeichenfolge und Eigenschaft ResponderId: Zeichenfolge gibt an, welches Ergebnis angezeigt wird. <br><br>Bei einem anonymen Responder ist die ResponderId-Eigenschaft Null.|
 |Erstellter Zusammenfassungs-Link|GetSummaryLink|Der Formularbesitzer erstellt einen Zusammenfassungs-Link, um Ergebnisse freizugeben.|
 |Gelöschte Zusammenfassungs-Link|DeleteSummaryLink|Der Formularbesitzer löscht den Link für die Zusammenfassungsergebnisse.|
-|Aktualisierter Phishing-Status von Formularen|UpdatePhishingStatus|Dieses Ereignis wird protokolliert, wenn der detaillierte Wert des internen Sicherheitsstatus geändert wurde, und zwar unabhängig davon, ob dadurch der endgültige Sicherheitsstatus geändert wurde (z. B. Formular ist nun geschlossen oder geöffnet). Dies bedeutet, dass Ihnen möglicherweise doppelte Ereignisse ohne eine endgültige Sicherheitsstatusänderung angezeigt werden. Zu den möglichen Statuswerten für dieses Ereignis gehören:<br/>– Take Down <br/>– Take Down by Admin <br/>– Admin Unblocked <br/>– Auto Blocked <br/>– Auto Unblocked <br/>– Customer Reported <br/>– Reset Customer Reported|
+|Aktualisierter Phishing-Status von Formularen|UpdatePhishingStatus|Dieses Ereignis wird protokolliert, wenn der detaillierte Wert des internen Sicherheitsstatus geändert wurde, und zwar unabhängig davon, ob dadurch der endgültige Sicherheitsstatus geändert wurde (z. B. Formular ist nun geschlossen oder geöffnet). Dies bedeutet, dass Ihnen möglicherweise doppelte Ereignisse ohne eine endgültige Sicherheitsstatusänderung angezeigt werden. Zu den möglichen Statuswerten für dieses Ereignis gehören:<br/>– Take Down <br/>– Take Down by Admin <br/>– Admin Unblocked <br/>– Auto Blocked <br/>– Auto Unblocked <br/>– Customer Reported <br/>– Reset Customer Reported|
 |Updated user phishing status|UpdateUserPhishingStatus|Dieses Ereignis wird protokolliert, wenn der Wert für den Sicherheitsstatus des Benutzers geändert wurde. Der Wert des Benutzerstatus im Überwachungsdatensatz ist **Confirmed as Phisher**, wenn der Benutzer ein Phishing-Formular erstellt hat, das vom Microsoft Online Safety-Team heruntergenommen wurde. Wenn ein Administrator die Sperrung des Benutzers aufhebt, wird der Wert des Benutzerstatus auf **Reset as Normal User** festgelegt.|
 |Versendete Forms-Pro-Einladung|ProInvitation|Der Benutzer klickt, um eine Pro-Testversion zu aktivieren.|
 |Aktualisierte Formulareinstellung|UpdateFormSetting|Der Formularbesitzer aktualisiert eine Formulareinstellung. <br><br>Eigenschaft FormSettingName: Zeichenfolge gibt den Namen und neuen Wert der Einstellung an.|
@@ -985,21 +985,21 @@ In der folgenden Tabelle sind Ereignisse aufgelistet, die sich aus Bezeichnungsa
 
 |Anzeigename|Vorgang|Beschreibung|
 |:-----|:-----|:-----|
-| Einstellungen für eine Aufbewahrungsrichtlinie konfiguriert |NewRetentionComplianceRule |Der Administrator hat die Aufbewahrungseinstellungen für eine neue Aufbewahrungsrichtlinie konfiguriert. Die Aufbewahrungseinstellungen umfassen, wie lange Elemente aufbewahrt werden und was mit Elementen geschieht, wenn die Aufbewahrungsfrist abläuft (z. B. Elemente löschen, Elemente aufbewahren oder Elemente aufbewahren und anschließend löschen). Diese Aktivität entspricht auch dem Ausführen des Cmdlets [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule).|
+| Einstellungen für eine Aufbewahrungsrichtlinie konfiguriert |NewRetentionComplianceRule |Der Administrator hat die Aufbewahrungseinstellungen für eine neue Aufbewahrungsrichtlinie konfiguriert. Die Aufbewahrungseinstellungen umfassen, wie lange Elemente aufbewahrt werden und was mit Elementen geschieht, wenn die Aufbewahrungsfrist abläuft (z. B. Elemente löschen, Elemente aufbewahren oder Elemente aufbewahren und anschließend löschen). Diese Aktivität entspricht auch dem Ausführen des Cmdlets [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule).|
 | Aufbewahrungsbezeichnung erstellt |NewComplianceTag |Der Administrator hat eine neue Aufbewahrungsbezeichnung erstellt.|
 | Aufbewahrungsrichtlinie erstellt |NewRetentionCompliancePolicy|Der Administrator hat eine neue Aufbewahrungsrichtlinie erstellt.|
 | Einstellungen für eine Aufbewahrungsrichtlinie gelöscht| RemoveRetentionComplianceRule<br/>| Der Administrator hat die Konfigurationseinstellungen einer Aufbewahrungsrichtlinie gelöscht. Höchstwahrscheinlich wird diese Aktivität protokolliert, wenn ein Administrator eine Aufbewahrungsrichtlinie löscht oder das Cmdlet [Remove-RetentionComplianceRule](/powershell/module/exchange/Remove-RetentionComplianceRule) ausführt.|
 | Aufbewahrungsbezeichnung gelöscht |RemoveComplianceTag | Der Administrator hat eine Aufbewahrungsbezeichnung gelöscht.|
 | Aufbewahrungsrichtlinie gelöscht |RemoveRetentionCompliancePolicy<br/> |Der Administrator hat eine Aufbewahrungsrichtlinie gelöscht. |
 | Option "Regulatorischer Datensatz" für Aufbewahrungsbezeichnungen aktiviert<br/> |SetRestrictiveRetentionUI |Der Administrator hat das Cmdlet [Set-RegulatoryComplianceUI](/powershell/module/exchange/set-regulatorycomplianceui) ausgeführt, sodass ein Administrator die Option für die Benutzeroberflächenkonfiguration für eine Aufbewahrungsbezeichnung auswählen kann, um Inhalte als regulatorischen Datensatz zu kennzeichnen.|
-| Einstellungen für eine Aufbewahrungsrichtlinie aktualisiert | SetRetentionComplianceRule | Der Administrator hat die Aufbewahrungseinstellungen für eine vorhandene Aufbewahrungsrichtlinie geändert. Die Aufbewahrungseinstellungen umfassen, wie lange Elemente aufbewahrt werden und was mit Elementen geschieht, wenn die Aufbewahrungsfrist abläuft (z. B. Elemente löschen, Elemente aufbewahren oder Elemente aufbewahren und anschließend löschen). Diese Aktivität entspricht auch dem Ausführen des Cmdlets [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule). |
+| Einstellungen für eine Aufbewahrungsrichtlinie aktualisiert | SetRetentionComplianceRule | Der Administrator hat die Aufbewahrungseinstellungen für eine vorhandene Aufbewahrungsrichtlinie geändert. Die Aufbewahrungseinstellungen umfassen, wie lange Elemente aufbewahrt werden und was mit Elementen geschieht, wenn die Aufbewahrungsfrist abläuft (z. B. Elemente löschen, Elemente aufbewahren oder Elemente aufbewahren und anschließend löschen). Diese Aktivität entspricht auch dem Ausführen des Cmdlets [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule). |
 | Aufbewahrungsbezeichnung aktualisiert |SetComplianceTag  | Der Administrator hat eine vorhandene Aufbewahrungsbezeichnung aktualisiert.|
 | Aufbewahrungsrichtlinie aktualisiert |SetRetentionCompliancePolicy |Der Administrator hat eine vorhandene Aufbewahrungsrichtlinie aktualisiert. Updates, die dieses Ereignis auslösen, sind beispielsweise das Hinzufügen oder Ausschließen von Inhaltsspeicherorten, auf die die Aufbewahrungsrichtlinie angewendet ist.|
 ||||
 
 ### <a name="briefing-email-activities"></a>Briefing-E-Mail-Aktivitäten
 
-Die folgende Tabelle enthält die Aktivitäten in Briefing-E-Mail, die im Office 365-Überwachungsprotokoll protokolliert werden. Weitere Informationen zu Briefing-E-Mail finden Sie unter:
+Die folgende Tabelle enthält die Aktivitäten in Briefing-E-Mail, die im Office 365-Überwachungsprotokoll protokolliert werden. Weitere Informationen zu Briefing-E-Mail finden Sie unter:
 
 - [Übersicht über Briefing-E-Mail](/Briefing/be-overview)
 
@@ -1013,7 +1013,7 @@ Die folgende Tabelle enthält die Aktivitäten in Briefing-E-Mail, die im Office
 
 ### <a name="myanalytics-activities"></a>MyAnalytics-Aktivitäten
 
-Die folgende Tabelle enthält die Aktivitäten in MyAnalytics, die im Office 365-Überwachungsprotokoll protokolliert werden. Weitere Informationen zu MyAnalytics finden Sie unter [MyAnalytics für Administratoren](/workplace-analytics/myanalytics/overview/mya-for-admins).
+Die folgende Tabelle enthält die Aktivitäten in MyAnalytics, die im Office 365-Überwachungsprotokoll protokolliert werden. Weitere Informationen zu MyAnalytics finden Sie unter [MyAnalytics für Administratoren](/workplace-analytics/myanalytics/overview/mya-for-admins).
 
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:-----|:-----|:-----|
@@ -1023,7 +1023,7 @@ Die folgende Tabelle enthält die Aktivitäten in MyAnalytics, die im Office 36
 
 ### <a name="information-barriers-activities"></a>Informationsbarrierenaktivitäten
 
-Die folgende Tabelle enthält die Aktivitäten in Informationsbarrieren, die im Office 365-Überwachungsprotokoll protokolliert werden. Weitere Informationen zu Informationsbarrieren finden Sie unter [Weitere Informationen zu Informationsbarrieren in Microsoft 365](information-barriers.md).
+Die folgende Tabelle enthält die Aktivitäten in Informationsbarrieren, die im Office 365-Überwachungsprotokoll protokolliert werden. Weitere Informationen zu Informationsbarrieren finden Sie unter [Weitere Informationen zu Informationsbarrieren in Microsoft 365](information-barriers.md).
 
 |**Anzeigename**|**Vorgang**|**Beschreibung**|
 |:----------------|:------------|:--------------|
@@ -1034,7 +1034,7 @@ Die folgende Tabelle enthält die Aktivitäten in Informationsbarrieren, die im 
 
 ### <a name="exchange-admin-audit-log"></a>Exchange-Administratorüberwachungsprotokoll
 
-Mit der Exchange-Administratorüberwachungsprotokollierung, die in Office 365 standardmäßig aktiviert ist, wird ein Ereignis im Überwachungsprotokoll erfasst, wenn ein Administrator (oder ein Benutzer, dem Administratorrechte zugewiesen wurden) eine Änderung in Ihrer Exchange Online-Organisation vornimmt. Änderungen, die im Exchange Admin Center oder durch Ausführen eines Cmdlets in der Exchange Online PowerShell vorgenommen werden, werden im Exchange-Administratorüberwachungsprotokoll erfasst. Cmdlets, die mit den Verben **Get-**, **Search-** oder **Test-** beginnen, werden nicht Überwachungsprotokoll protokolliert. Ausführlichere Informationen zur Administratorüberwachungsprotokollierung in Exchange finden Sie unter [Administratorüberwachungsprotokollierung](/exchange/administrator-audit-logging-exchange-2013-help).
+Mit der Exchange-Administratorüberwachungsprotokollierung, die in Office 365 standardmäßig aktiviert ist, wird ein Ereignis im Überwachungsprotokoll erfasst, wenn ein Administrator (oder ein Benutzer, dem Administratorrechte zugewiesen wurden) eine Änderung in Ihrer Exchange Online-Organisation vornimmt. Änderungen, die im Exchange Admin Center oder durch Ausführen eines Cmdlets in der Exchange Online PowerShell vorgenommen werden, werden im Exchange-Administratorüberwachungsprotokoll erfasst. Cmdlets, die mit den Verben **Get-**, **Search-** oder **Test-** beginnen, werden nicht Überwachungsprotokoll protokolliert. Ausführlichere Informationen zur Administratorüberwachungsprotokollierung in Exchange finden Sie unter [Administratorüberwachungsprotokollierung](/exchange/administrator-audit-logging-exchange-2013-help).
 
 > [!IMPORTANT]
 > Einige Exchange Online-Cmdlets, die nicht im Exchange-administratorüberwachungsprotokoll (oder im Überwachungsprotokoll) protokolliert sind. Viele dieser Cmdlets beziehen sich auf die Verwaltung des Exchange Online-Diensts und werden vom Personal des Microsoft-Rechenzentrums oder Dienstkonten ausgeführt. Diese Cmdlets werden nicht protokolliert, weil die große Anzahl von Überwachungsereignissen zu großem „Rauschen“ führen würde. Wenn ein Exchange Online-Cmdlet vorhanden ist, das nicht überwacht wird, senden Sie uns bitte einen Vorschlag an das [ Security & Compliance User Voice-Forum](https://office365.uservoice.com/forums/289138-office-365-security-compliance), und fordern Sie an, dass es für die Überwachung aktiviert wird. Sie können auch einen Desing Change Request (DCR) an den Microsoft-Support senden.
@@ -1049,7 +1049,7 @@ Nachfolgend finden Sie einige Tipps für die Suche nach Exchange-Administratorak
 
 - Um Informationen darüber zu erhalten, welches Cmdlet ausgeführt wurde, welche Parameter und Parameterwerte verwendet wurden und welche Objekte betroffen waren, können Sie die Suchergebnisse exportieren, indem Sie die Option **Alle Ergebnisse herunterladen** auswählen. Weiter Informationen findn Sie unter[Exportieren, Konfigurieren und Anzeigen von Überwachungsprotokoll-Datensätzen](export-view-audit-log-records.md).
 
-- Sie können auch den Befehl `Search-UnifiedAuditLog -RecordType ExchangeAdmin` in der Exchange Online PowerShell verwenden, um nur Überwachungsdatensätze aus dem Exchange-Administratorüberwachungsprotokoll zurückzugeben. Nach der Ausführung eines Exchange-Cmdlet kann es bis zu 30 Minuten dauern, bis der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen zurückgegeben wird. Weitere Informationen finden Sie unter [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog). Informationen zum Exportieren der vom **Search-UnifiedAuditLog**-Cmdlet zurückgegebenen Suchergebnisse in eine CSV-Datei finden Sie im Abschnitt „Tipps zum Exportieren, konfigurieren und Anzeigen des Überwachungsprotokolls“ in [Exportieren und Anzeigen des Überwachungsprotokolls](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
+- Sie können auch den Befehl `Search-UnifiedAuditLog -RecordType ExchangeAdmin` in der Exchange Online PowerShell verwenden, um nur Überwachungsdatensätze aus dem Exchange-Administratorüberwachungsprotokoll zurückzugeben. Nach der Ausführung eines Exchange-Cmdlet kann es bis zu 30 Minuten dauern, bis der entsprechende Überwachungsprotokolleintrag in den Suchergebnissen zurückgegeben wird. Weitere Informationen finden Sie unter [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog). Informationen zum Exportieren der vom **Search-UnifiedAuditLog**-Cmdlet zurückgegebenen Suchergebnisse in eine CSV-Datei finden Sie im Abschnitt „Tipps zum Exportieren, konfigurieren und Anzeigen des Überwachungsprotokolls“ in [Exportieren und Anzeigen des Überwachungsprotokolls](export-view-audit-log-records.md#tips-for-exporting-and-viewing-the-audit-log).
 
 - Sie können Ereignisse auch im Exchange Admin Center anzeigen, oder durch Ausführen von **Search-AdminAuditLog** in der Exchange Online PowerShell. Dies ist eine gute Möglichkeit, um gezielt nach Aktivitäten zu suchen, die von Exchange Online-Administratoren durchgeführt wurden. Weitere Anweisungen finden Sie in:
 
@@ -1061,11 +1061,11 @@ Nachfolgend finden Sie einige Tipps für die Suche nach Exchange-Administratorak
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-**Welche verschiedenen Microsoft 365-Dienste werden zur Zeit überwacht?**
+**Welche verschiedenen Microsoft 365-Dienste werden zur Zeit überwacht?**
 
 Die am häufigsten verwendeten Dienste wie Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Dynamics 365, Defender für Office 365 und Power BI werden überwacht. Eine Liste der Dienste mit Überwachung finden Sie [am Anfang dieses Artikels ](search-the-audit-log-in-security-and-compliance.md).
 
-**Welche Aktivitäten werden vom Überwachungsdienst in Office 365 überwacht?**
+**Welche Aktivitäten werden vom Überwachungsdienst in Office 365 überwacht?**
 
 Im Abschnitt [überwachte Aktivitäten](#audited-activities) in diesem Artikel finden Sie eine Liste inklusive Beschreibung der überwachten Aktivitäten.
 
@@ -1079,7 +1079,7 @@ Wie bereits erläutert, werden Überwachungseinträge für Aktivitäten, die von
 
 **Kann ich programmgesteuert auf die Überwachungsdaten zugreifen?**
 
-Ja. Die Office 365-Verwaltungsaktivitäts-API dient zum programmgesteuerten Abrufen der Überwachungsprotokolle.  Informationen zum Einstieg finden Sie unter [Erste Schritte mit der Office 365-Verwaltungsaktivitäts-API](/office/office-365-management-api/get-started-with-office-365-management-apis).
+Ja. Die Office 365-Verwaltungsaktivitäts-API dient zum programmgesteuerten Abrufen der Überwachungsprotokolle.  Informationen zum Einstieg finden Sie unter [Erste Schritte mit der Office 365-Verwaltungsaktivitäts-API](/office/office-365-management-api/get-started-with-office-365-management-apis).
 
 **Gibt es andere Möglichkeiten zum Abrufen von Überwachungsprotokollen außer der Verwendung des Security and Compliance Centers oder der Office 365-Verwaltungsaktivitäts-API?**
 

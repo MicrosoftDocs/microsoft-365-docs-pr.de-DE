@@ -19,7 +19,7 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Kaufen Sie Business-Produkte oder -Dienste von Microsoft, indem Sie eine vorhandene Zahlungsmethode verwenden oder eine neue im Microsoft 365 Admin Center hinzufügen.
+description: Kaufen Sie Business-Produkte oder -Dienste von Microsoft, indem Sie eine vorhandene Zahlungsmethode verwenden oder eine neue im Microsoft 365 Admin Center hinzufügen.
 ms.date: 04/02/2021
 ms.openlocfilehash: bda7eca29b92cdf131c6d3f5a6069ea2be77f6fa
 ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad

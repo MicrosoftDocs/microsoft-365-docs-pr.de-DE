@@ -22,19 +22,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
-description: 'Erfahren Sie, wie ein globaler Microsoft 365-Administrator die E-Mail-Adresse und den Anzeigenamen eines Benutzers ändern kann, wenn sich sein Name ändert. '
-ms.openlocfilehash: 2614e0ae53e5ff1cf08ded384e7470cc5967e682
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 'Erfahren Sie, wie ein globaler Microsoft 365-Administrator die E-Mail-Adresse und den Anzeigenamen eines Benutzers ändern kann, wenn sich sein Name ändert. '
+ms.openlocfilehash: 1aa3fd3b67333937e64aab825e64533ccb09eea9
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535986"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52634220"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändern von Benutzernamen und -E-Mail-Adressen
 
-Es kann vorkommen, dass Sie die E-Mail-Adresse und den Anzeigenamen einer Person ändern müssen, wie z. B. wenn diese heiratet und ihren Nachnamen ändert.
+Es kann vorkommen, dass Sie die E-Mail-Adresse und den Anzeigenamen einer Person ändern müssen, wie z. B. wenn diese heiratet und ihren Nachnamen ändert.
 
-Sehen Sie sich ein kurzes Video zum Ändern der E-Mail-Adresse eines Benutzers an. <br><br>
+## <a name="watch-change-a-users-name-or-email-address"></a>Ansehen: Namen oder E-Mail-Adresse eines Benutzers ändern
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc] 
 
@@ -254,7 +254,5 @@ Wenn Sie erfahren möchten, wie ein Benutzername einer Person in Active Director
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Administratoren: Zurücksetzen eines Kennworts für ein oder mehrere Benutzer](reset-passwords.md) (Artikel)
-  
 [Hinzufügen einer weiteren E-Mail-Adresse für einen Benutzer](../email/add-another-email-alias-for-a-user.md) (Artikel)
-
 [Erstellen eines freigegebenen Postfachs](../email/create-a-shared-mailbox.md) (Artikel)

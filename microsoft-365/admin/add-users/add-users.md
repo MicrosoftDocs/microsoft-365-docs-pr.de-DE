@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Jede Person in Ihrem Team benötigt ein Benutzerkonto, um sich bei Microsoft 365 für Unternehmen anmelden und darauf zugreifen zu können. Erfahren Sie, wie Sie Benutzer hinzufügen und Lizenzen zuweisen können.
+description: Jede Person in Ihrem Team benötigt ein Benutzerkonto, um sich bei Microsoft 365 für Unternehmen anmelden und darauf zugreifen zu können. Erfahren Sie, wie Sie Benutzer hinzufügen und Lizenzen zuweisen können.
 ms.date: 07/01/2020
 ms.openlocfilehash: 390576f46bed57929471b16848f9e1fd7e95304d
 ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
@@ -110,16 +110,16 @@ Sie können eine der folgenden Methoden verwenden, um mehrere Benutzer gleichzei
 - **Mithilfe einer Kalkulationstabelle können Sie Benutzer in Massen hinzufügen.** Weitere Informationen hierzu finden Sie unter [Gleichzeitiges Hinzufügen von mehreren Benutzern](../../enterprise/add-several-users-at-the-same-time.md).
 - **Automatisieren Sie das Hinzufügen von Konten und Zuweisen von Lizenzen.** Lesen Sie dazu [Erstellen von Benutzerkonten mit Microsoft 365 PowerShell](../../enterprise/create-user-accounts-with-microsoft-365-powershell.md). Wählen Sie diese Methode, wenn Sie mit der Nutzung von Windows PowerShell-Cmdlets bereits vertraut sind.
 - **Sie verwenden Active Directory?**[Richten Sie die Directory-Synchronisierung für Microsoft 365 ein](../../enterprise/set-up-directory-synchronization.md). Mithilfe des Azure AD Connect-Tools können Sie Active Directory-Benutzerkonten (und andere Active Directory-Objekte) in Microsoft 365 replizieren. Bei der Synchronisierung werden nur die Benutzerkonten hinzugefügt. Sie müssen den synchronisierten Benutzern Lizenzen zuweisen, damit diese E-Mail und andere Office-Apps verwenden können.
-- **Sie migrieren aus Exchange?** Siehe [Methoden zum Migrieren mehrerer E-Mail-Konten zu Office 365](/Exchange/mailbox-migration/mailbox-migration). Wenn Sie mithilfe einer Übernahmemigration oder mit einer mehrstufigen bzw. hybriden Exchange-Methode mehrere Postfächer zu Microsoft 365 migrieren, werden die Benutzer als Teil der Migration automatisch hinzugefügt. Bei der Migration werden nur die Benutzerkonten hinzugefügt. Sie müssen den Benutzern Lizenzen zuweisen, damit sie E-Mail und andere Office-Apps verwenden können. Wenn Sie einem Benutzer keine Lizenz zuweisen, wird sein Postfach nach Ablauf einer 30-tägigen Kulanzzeit deaktiviert. Erfahren Sie, wie Sie unter Verwendung des Microsoft 365 Admin Centers [Benutzern Lizenzen zuweisen](../manage/assign-licenses-to-users.md).
+- **Sie migrieren aus Exchange?** Siehe [Methoden zum Migrieren mehrerer E-Mail-Konten zu Office 365](/Exchange/mailbox-migration/mailbox-migration). Wenn Sie mithilfe einer Übernahmemigration oder mit einer mehrstufigen bzw. hybriden Exchange-Methode mehrere Postfächer zu Microsoft 365 migrieren, werden die Benutzer als Teil der Migration automatisch hinzugefügt. Bei der Migration werden nur die Benutzerkonten hinzugefügt. Sie müssen den Benutzern Lizenzen zuweisen, damit sie E-Mail und andere Office-Apps verwenden können. Wenn Sie einem Benutzer keine Lizenz zuweisen, wird sein Postfach nach Ablauf einer 30-tägigen Kulanzzeit deaktiviert. Erfahren Sie, wie Sie unter Verwendung des Microsoft 365 Admin Centers [Benutzern Lizenzen zuweisen](../manage/assign-licenses-to-users.md).
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Sie einen Benutzer hinzugefügt haben, erhalten Sie eine E-Mail-Benachrichtigung von Microsoft. Die E-Mail enthält die Benutzer-ID und das Kennwort der Person, damit sie sich bei Microsoft 365 anmelden kann. Verwenden Sie hierzu Ihre normale Vorgehensweise für die Übermittlung neuer Kennwörter. Geben Sie die [Mitarbeiter-Kurzanleitung](../../business-video/employee-quick-setup.md) für Ihre neuen Benutzer frei, um die Umgebung einzurichten, z. B. [wie Office-Apps heruntergeladen und auf einem PC oder Mac installiert werden](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658), und [wie Office-Apps und E-Mails auf einem mobilen Gerät eingerichtet werden](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
+Nachdem Sie einen Benutzer hinzugefügt haben, erhalten Sie eine E-Mail-Benachrichtigung von Microsoft. Die E-Mail enthält die Benutzer-ID und das Kennwort der Person, damit sie sich bei Microsoft 365 anmelden kann. Verwenden Sie hierzu Ihre normale Vorgehensweise für die Übermittlung neuer Kennwörter. Geben Sie die [Mitarbeiter-Kurzanleitung](../../business-video/employee-quick-setup.md) für Ihre neuen Benutzer frei, um die Umgebung einzurichten, z. B. [wie Office-Apps heruntergeladen und auf einem PC oder Mac installiert werden](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658), und [wie Office-Apps und E-Mails auf einem mobilen Gerät eingerichtet werden](https://support.microsoft.com/office/7dabb6cb-0046-40b6-81fe-767e0b1f014f).
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Hinzufügen eines neuen Mitarbeiters zu Microsoft 365](add-new-employee.md) (Artikel)\
-[Gleichzeitiges Hinzufügen mehrerer Benutzer zu Microsoft 365](../../enterprise/add-several-users-at-the-same-time.md) (Artikel)\
-[Wiederherstellen eines Benutzers in Microsoft 365](restore-user.md) (Artikel)\
+[Hinzufügen eines neuen Mitarbeiters zu Microsoft 365](add-new-employee.md) (Artikel)\
+[Gleichzeitiges Hinzufügen mehrerer Benutzer zu Microsoft 365](../../enterprise/add-several-users-at-the-same-time.md) (Artikel)\
+[Wiederherstellen eines Benutzers in Microsoft 365](restore-user.md) (Artikel)\
 [Zuweisen von Lizenzen zu Benutzern ](../manage/assign-licenses-to-users.md) (Artikel)\
 [Löschen eines Benutzers aus Ihrer Organisation](delete-a-user.md) (Artikel)
