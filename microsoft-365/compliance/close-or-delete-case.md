@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: ''
 description: Erfahren Sie, was geschieht, wenn eine Untersuchung oder ein von einem Fall Advanced eDiscovery Fall geschlossen oder gelöscht wird.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ffdd93351325be0c4b5d6d8cdfb78e55b710c0be
-ms.sourcegitcommit: 6746fae2f68400fd985711b1945b66766d2a59a4
+ms.openlocfilehash: 7b11faa2ccdb44fca916b2f602d5120adadf1739
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "44419061"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657639"
 ---
 # <a name="close-or-delete-an-advanced-ediscovery-case"></a>Schließen oder Löschen eines Advanced eDiscovery Fall
 
@@ -46,7 +46,9 @@ So schließen Sie einen Fall ab
 
 2. Klicken Sie auf der Registerkarte **Einstellungen** unter **Fallinformationen** auf **Auswählen**.
 
-3. Klicken Sie auf **Fall schließen**.
+3. Klicken Sie unten auf **der** Flyoutseite Fallinformationen auf (**...**) **Weitere Optionen**, und klicken Sie dann auf **Schließen Fall**.
+
+   ![Option im Menü Weitere Optionen zum Schließen eines Advanced eDiscovery Fall](..\Media\CloseAdvancedeDiscoveryCase.png)
 
    Es kann bis zu 60 Minuten dauern, bis der Abschlussvorgang abgeschlossen ist.
 
@@ -60,7 +62,9 @@ So öffnen Sie einen geschlossenen Fall erneut:
 
 2. Klicken Sie auf der Registerkarte **Einstellungen** unter **Fallinformationen** auf **Auswählen**.
 
-3. Klicken Sie auf **Fall erneut öffnen**.
+3. Klicken Sie unten auf **der** Flyoutseite Fallinformationen auf (**...**) **Weitere Optionen**, und klicken Sie dann auf **Erneuter Fall .**
+
+   ![Option im Menü Weitere Optionen zum erneuten Öffnen eines Advanced eDiscovery Fall](..\Media\ReopenAdvancedeDiscoveryCase.png)
 
    Es kann bis zu 60 Minuten dauern, bis der Erneutes Öffnen abgeschlossen ist.
 
@@ -87,4 +91,6 @@ So löschen Sie einen Fall
 
 2. Klicken Sie auf der Registerkarte **Einstellungen** unter **Fallinformationen** auf **Auswählen**.
 
-3. Klicken Sie auf **Fall löschen**.
+3. Klicken Sie unten auf **der** Flyoutseite Fallinformationen auf (**...**) **Weitere Optionen**, und klicken Sie dann auf **Fall löschen**.
+
+   ![Option im Menü Weitere Optionen zum Löschen eines Advanced eDiscovery Fall](..\Media\DeleteAdvancedeDiscoveryCase.png)

@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: 67cc7f42-a53d-4751-b929-6005c80798f7
 description: Erfahren Sie, welche Ereignisse protokolliert werden, wenn Benutzer, denen eDiscovery-Berechtigungen zugewiesen sind, inhaltssuche, Core eDiscovery und Advanced eDiscovery Aufgaben im Microsoft 365 ausführen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ce0dcc50c13ad705cb36f065639a4e971d032f22
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: 8b1f3f235f3411e2f637e4e32104c6179643757d
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653499"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657693"
 ---
 # <a name="search-for-ediscovery-activities-in-the-audit-log"></a>Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll
 
@@ -112,7 +112,7 @@ In der folgenden Tabelle werden die Aktivitäten Inhaltssuche und eDiscovery-Ker
 |Export von Inhaltssuche gestartet  <br/> |SearchExported  <br/> |New-ComplianceSearchAction  <br/> |Ein Benutzer hat die Ergebnisse einer Inhaltssuche exportiert.  <br/> |
 |Exportbericht gestartet  <br/> |SearchReport  <br/> |New-ComplianceSearchAction  <br/> |Ein Benutzer hat einen Bericht zur Inhaltssuche exportiert.  <br/> |
 |Beendete Inhaltssuche  <br/> |SearchStopped  <br/> |Stop-ComplianceSearch  <br/> |Ein Benutzer hat eine Inhaltssuche beendet.  <br/> |
-|(keine)|CaseViewed|Get-ComplianceCase|Ein Benutzer hat die Liste der Fälle auf der Seite **Core eDiscovery** im Compliance Center oder durch Ausführen des cmdlets Get-ComplianceCase angezeigt.|
+|(keine)|CaseViewed|Get-ComplianceCase|Ein Benutzer hat die Liste der Fälle auf der Core **eDiscovery-Seite** oder der **Advanced eDiscovery-Seite** im Compliance Center oder durch Ausführen des cmdlets Get-ComplianceCase angezeigt.|
 |(keine)|SearchViewed|Get-ComplianceSearch|Ein Benutzer hat die Liste für Inhaltssuchen (auf der Registerkarte Suchen aufgeführt) im Compliance Center oder durch Ausführen des Cmdlets angezeigt.  Diese Aktivität wird auch protokolliert, wenn ein Benutzer die Liste der Inhaltssuchen im  Zusammenhang mit einem eDiscovery-Fall (durch Klicken auf die Registerkarte Suchen in einem Fall) oder durch Ausführen des **Befehls Get-ComplianceSearch -Case** aufruft.|
 |(keine)|ViewedSearchExported|Get-ComplianceSearchAction -Export|Ein Benutzer hat die Liste der Exportaufträge  für die Inhaltssuche (auf der Registerkarte Exporte aufgeführt) im Compliance Center oder durch Ausführen des Cmdlets angezeigt. Diese Aktivität wird auch protokolliert, wenn ein Benutzer die Liste der Exportaufträge  in einem eDiscovery-Fall (in einem Fall auf der Registerkarte Exporte aufgeführt) oder durch Ausführen des **Befehls Get-ComplianceSearchAction -Case -Export** aufruft.|
 |(keine)|ViewedSearchPreviewed|Get-ComplianceSearchAction -Preview|Ein Benutzer zeigt eine Vorschau der Ergebnisse einer Inhaltssuche im Compliance Center oder durch Ausführen des Cmdlets an.|

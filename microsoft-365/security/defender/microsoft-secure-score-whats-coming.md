@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d23ec690194f87046e6c5f2ab859201bbf2dede9
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 8880f045202fd1c4374e9cec3076144f81eb68d2
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569803"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657717"
 ---
 # <a name="whats-coming-to-microsoft-secure-score"></a>What's coming to Microsoft Secure Score
 
@@ -35,9 +35,11 @@ Microsoft Secure Score finden Sie im https://security.microsoft.com/securescore 
 
 Wir nehmen in naher Zukunft einige Änderungen vor, um [Microsoft Secure Score](microsoft-secure-score.md) zu einem besseren Vertreter Ihrer Sicherheitslage zu machen und die Benutzerfreundlichkeit zu verbessern. Ihre Bewertung und die maximal mögliche Bewertung können sich ändern.
 
-### <a name="no-planned-changes"></a>Keine geplanten Änderungen
+### <a name="june-2021"></a>Juni 2021
 
-Derzeit sind keine Änderungen geplant.
+#### <a name="remove-improvement-action-related-to-microsoft-cloud-app-security"></a>Entfernen von Verbesserungsmaßnahmen im Zusammenhang mit Microsoft Cloud App Security
+
+- Verwenden Cloud App Security, um anomales Verhalten zu erkennen
 
 ## <a name="related-resources"></a>Verwandte Ressourcen
 
