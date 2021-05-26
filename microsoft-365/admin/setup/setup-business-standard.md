@@ -24,12 +24,12 @@ search.appverid:
 - MOE150
 - BEA160
 description: Wenn Sie Microsoft 365 Business Standard erwerben, haben Sie die Möglichkeit, eine Domäne zu verwenden, die Sie besitzen, oder während der Registrierung eine zu erwerben.
-ms.openlocfilehash: cee91edaab09506dca90cf5ed64ee9bc669c98cf
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: ca9cc359aaabfc16a5d0c57a75362c7826dea0db
+ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624417"
+ms.locfileid: "52635630"
 ---
 # <a name="set-up-microsoft-business-standard"></a>Einrichten von Microsoft Business Standard
 
@@ -103,6 +103,8 @@ Zum Einrichten von Diensten müssen Sie einige Einträge bei Ihrem DNS-Host oder
 
 3. Geben Sie Ihre Microsoft E-Mail-Adresse ein, und wählen Sie **Verbinden** aus.
 
+## <a name="watch-set-up-outlook-for-email"></a>Ansehen: Einrichten von Outlook für E-Mail
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/9fe86884-8a83-42cc-bca9-61a12e6dad31?autoplay=false]
   
 Mehr dazu unter [Einrichten von Outlook für E-Mail](https://support.microsoft.com/office/f5bf0cd1-e1f3-4b0d-a022-ecab17efe86f).
@@ -123,6 +125,8 @@ Wenn Sie Outlook mit einem anderen E-Mail-Konto verwendet haben, können Sie Ihr
 
     Dieses Mal wählen Sie **Aus anderen Programmen oder Dateien importieren** aus, und befolgen die Schritte zum Importieren der Sicherungsdatei, die Sie erstellt haben, als Sie Ihre alten E-Mails exportiert haben.
 
+## <a name="watch-import-and-redirect-email"></a>Ansehen: Importieren und Umleiten von E-Mails
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/40f7df36-9e24-44e5-8791-e9ed0dd8fd21?autoplay=false]
   
 Mehr dazu unter [Importieren von E-Mails mit Outlook](https://support.microsoft.com/office/6a3771d4-4c1d-4a25-92a6-0b8e476335de).
@@ -136,6 +140,8 @@ Microsoft 365 enthält keine öffentliche Website für Ihr Unternehmen. Wenn Sie
 1. Wechseln Sie aus dem Admin Center zu **Ressourcen** und wählen Sie **Öffentliche Website** aus.
 
 2. Wählen Sie unter einer der Optionen **Weitere Informationen** aus. Registrieren Sie sich dann bei einem Websitepartner, und verwenden Sie dessen Tools zum Einrichten und Entwerfen Ihrer Website.
+
+## <a name="watch-create-your-business-website"></a>Ansehen: Erstellen Ihrer Geschäftswebsite
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/4839abc6-9323-4cbf-a79d-2907235f9ebb]
 

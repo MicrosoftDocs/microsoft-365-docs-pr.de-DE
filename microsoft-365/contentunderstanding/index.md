@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Hier erfahren Sie, wie Sie Ressourcen für Microsoft SharePoint Syntex finden.
-ms.openlocfilehash: 350dd1a526b56525f0aca7a167841e3a77833533
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0daad53e1f6a84f0399c3bfcfb48b92db547f64b
+ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538075"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52657621"
 ---
 # <a name="introduction-to-microsoft-sharepoint-syntex"></a>Einführung in Microsoft SharePoint Syntex
 
-Microsoft SharePoint Syntex ist ein Microsoft 365-Dienst, der Organisationen bei folgenden Aufgaben hilft:
+Microsoft SharePoint Syntex ist ein Microsoft 365-Dienst, der Organisationen bei folgenden Aufgaben hilft:
 
 - Fortgeschrittene KI und maschinelles Lehren nutzen, um menschliche Erfahrungen zu erweitern
 - Inhaltsverarbeitung automatisieren
@@ -55,7 +55,8 @@ Erfahren Sie mehr darüber, wie Sie SharePoint Syntex in Ihrer Organisation verw
 
 | Diese Informationen finden Sie unter: | Hilfreiche Ressource: |
 |:-----|:-----|
-|Erfahren Sie, wie Sie mit der Planung der Nutzung von SharePoint Syntex beginnen. |[SharePoint Syntex-Einführung: Erste Schritte](./adoption-getstarted.md)<br><br>|  
+|Erfahren Sie, wie Sie mit der Nutzung von SharePoint Syntex beginnen |[SharePoint Syntex-Einführung: Erste Schritte](./adoption-getstarted.md)| 
+|Informationen zur Verwendung von SharePoint Syntex zum Automatisieren von Dokumentprozessen |[Verwalten von Verträgen mithilfe einer Microsoft 365-Lösung](./solution-manage-contracts-in-microsoft-365.md)| 
 
 ## <a name="set-up-sharepoint-syntex"></a>Einrichten von SharePoint Syntex
 
