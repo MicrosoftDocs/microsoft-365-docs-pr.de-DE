@@ -122,7 +122,7 @@
 ###### [Konfigurieren von iOS-Features](ios-configure-features.md)
 
 ##### [Problembehandlung]()
-###### [Behandeln von Problemen](ios-troubleshoot.md)
+###### [Häufig gestellte Fragen und Problembehandlung](ios-troubleshoot.md)
 
 ##### [Datenschutz](ios-privacy.md)
  
@@ -481,6 +481,12 @@
 ####### [Erhalten von Informationen zu Benachrichtigungen zu IPs](get-alert-related-ip-info.md)
 ####### [Erhalten von Informationen zu Benachrichtigungen zu Geräten](get-alert-related-machine-info.md)
 ####### [Erhalten von Informationen zu Benachrichtigungen zu Benutzern](get-alert-related-user-info.md)
+
+###### [Bewertungen von Sicherheitsrisiken und sicheren Konfigurationen]()
+####### [Exportieren von Bewertungsmethoden und -eigenschaften](get-assessmnt-1methods-properties.md)
+####### [Exportieren der Bewertung einer sicheren Konfiguration](get-assessmnt-secure-cfg.md)
+####### [Exportieren der Bewertung des Softwarebestands](get-assessmnt-software-inventory.md)
+####### [Exportieren der Bewertung von Sicherheitsrisiken](get-assessmnt-software-vulnerabilities.md)
 
 ###### [Automatisierte Untersuchung]()
 ####### [Untersuchungsmethoden und -eigenschaften](investigation.md)
