@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über die Dienste und Elementtypen, die Sie mit Vertraulichkeitsbezeichnungen als Bedingungen in DLP-Richtlinien verwenden können.
-ms.openlocfilehash: 19bd80de225f703b5c280163e94826498fa097bd
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: b33e6704a3311740c1e386f77f1c751382ee6958
+ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876294"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52651092"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Verwenden von Vertraulichkeitsbezeichnungen als Bedingungen in DLP-Richtlinien
 
@@ -54,7 +54,7 @@ Sie können Vertraulichkeitsbezeichnungen als Bedingungen für diese Elemente un
 |Dienst  |Elementtyp  |Verfügbar für Richtlinientipps  |Durchsetzbar  |
 |---------|---------|---------|---------|
 |Exchange    |E-Mail-Nachricht         |ja         |ja         |
-|Exchange    |E-Mail-Anlage         |nein *         |ja *         |
+|Exchange    |E-Mail-Anlage         |nein         |ja *         |
 |Microsoft Office SharePoint Online     |Elemente in Microsoft Office SharePoint Online         |ja         |ja         |
 |OneDrive for Business     |Elemente         |ja         |ja         |
 |Teams     |Microsoft Teams- und Kanalnachrichten         |nicht zutreffend         |nicht zutreffend         |
@@ -62,7 +62,7 @@ Sie können Vertraulichkeitsbezeichnungen als Bedingungen für diese Elemente un
 |Windows 10-Geräte     |Elemente         |ja         |ja         |
 |MCAS (Vorschau) |Elemente         |ja         |ja         |
 
-\* Die DLP-Erkennung und das Erzwingen von Vertraulichkeitsbezeichnungen auf E-Mails und Anlagen während der Übertragung werden unterstützt. DLP-Richtlinientipps für Vertraulichkeitsbezeichnungen in E-Mails werden nicht unterstützt.
+\* DLP-Erkennung von E-Mail-Anlagen mit Vertraulichkeitsbezeichnungen wird nur für Office-Dateitypen unterstützt.
 
 \** Anlagen, die in Teams über einen 1:1-Chat oder über Kanäle gesendet werden, werden automatisch auf OneDrive for Business und Microsoft Office SharePoint Online hochgeladen. Wenn also Microsoft Office SharePoint Online oder OneDrive for Business als Speicherorte in ihrer DLP-Richtlinie enthalten sind, werden bezeichnete Anlagen, die in Teams gesendet wurden, automatisch in den Umfang dieser Bedingung einbezogen. Teams muss in der DLP-Richtlinie nicht als Speicherort ausgewählt werden.
 

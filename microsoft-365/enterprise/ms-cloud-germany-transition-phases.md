@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
 ms.openlocfilehash: df2407deeaa3cd6e0b0925b48f888a25c0435042
 ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/25/2021
 ms.locfileid: "52651110"
@@ -40,17 +40,17 @@ Der Migrationsprozess dauert mehrere Wochen, abhängig von der Gesamtgröße und
 |:--------|:--------|:--------|:--------|
 |Anmelden|Stunden|Kunde|Anmelden Ihrer Organisation für die Migration.|
 |Vorarbeit|Tage|Kunde|Durchführen der erforderlichen Maßnahmen, um Benutzer, Arbeitsstationen und das Netzwerk für die Migration vorzubereiten.|
-|Azure Active Directory (Azure AD)|1-2 Tage|Microsoft|Migrieren der Azure AD-Organisation zu weltweit.|
+|Azure Active Directory (Azure AD)|1-2 Tage|Microsoft|Migrieren der Azure AD-Organisation zu weltweit.|
 |Azure|Wochen|Kunde|Erstellen neuer weltweiter Azure-Abonnements und [überführen von Azure-Diensten](/azure/azure-resource-manager/management/move-resource-group-and-subscription).|
-|Abonnement- und Lizenzüberführung|1-2 Tage|Microsoft|Erwerben weltweiter Abonnements, kündigen von Microsoft Cloud Deutschland-Abonnements und Überführen von Benutzerlizenzen.|
+|Abonnement- und Lizenzüberführung|1-2 Tage|Microsoft|Erwerben weltweiter Abonnements, kündigen von Microsoft Cloud Deutschland-Abonnements und Überführen von Benutzerlizenzen.|
 |SharePoint und OneDrive|Mehr als 15 Tage|Microsoft|Migrieren von SharePoint- und OneDrive for Business-Inhalten, Beibehalten von sharepoint.de-URLs.|
 |Exchange Online|Mehr als 15 Tage|Microsoft|Migrieren von Exchange Online-Inhalten und Umstieg auf weltweite URLs.|
-|Sicherheit und Compliance|1-2 Tage|Microsoft|Überführen von Sicherheits- und Compliancerichtlinien und -inhalten.|
-|Skype for Business|1-2 Tage|Microsoft|Wechsel von Skype for Business zu Microsoft Teams.|
+|Sicherheit und Compliance|1-2 Tage|Microsoft|Überführen von Sicherheits- und Compliancerichtlinien und -inhalten.|
+|Skype for Business|1-2 Tage|Microsoft|Wechsel von Skype for Business zu Microsoft Teams.|
 |Power BI und Dynamics 365|Mehr als 15 Tage|Microsoft|Migrieren von Power BI- und Dynamics 365-Inhalten.|
-|Azure AD finalisieren|1-2 Tage|Microsoft|Endgültige Mandantenumstellung auf weltweit.|
-|Bereinigung|1-2 Tage|Kunde|Bereinigen älterer Verbindungen mit Microsoft Cloud Deutschland, z. B. Active Directory-Verbunddienste (AD FS) – Vertrauensstellung der vertrauenden Seite, Azure AD Connect und Office-Client-Neustarts.|
-|Deaktivieren der Endpunkte|30 Tage|Microsoft|30 Tage nach Abschluss von Azure AD wird der Azure AD-Dienst „Microsoft Cloud Deutschland“ den Endpunktzugriff für die umgestiegene Organisation beenden. Endpunktanforderungen wie Authentifizierung werden ab diesem Zeitpunkt für den Dienst „Microsoft Cloud Deutschland“ fehlschlagen. |
+|Azure AD finalisieren|1-2 Tage|Microsoft|Endgültige Mandantenumstellung auf weltweit.|
+|Bereinigung|1-2 Tage|Kunde|Bereinigen älterer Verbindungen mit Microsoft Cloud Deutschland, z. B. Active Directory-Verbunddienste (AD FS) – Vertrauensstellung der vertrauenden Seite, Azure AD Connect und Office-Client-Neustarts.|
+|Deaktivieren der Endpunkte|30 Tage|Microsoft|30 Tage nach Abschluss von Azure AD wird der Azure AD-Dienst „Microsoft Cloud Deutschland“ den Endpunktzugriff für die umgestiegene Organisation beenden. Endpunktanforderungen wie Authentifizierung werden ab diesem Zeitpunkt für den Dienst „Microsoft Cloud Deutschland“ fehlschlagen. |
 
 
 Die Phasen und die entsprechenden Aktionen stellen sicher, dass kritische Daten und Lösungen zu den Office 365 Global-Diensten migriert werden. Nachdem Ihr Mandant der Migrations-Warteschlange hinzugefügt wurde, wird jeder Workload als eine Reihe von Schritten abgeschlossen, die auf dem Backend-Dienst ausgeführt werden. Einige Workloads erfordern möglicherweise Aktionen des Administrators (oder Benutzers), oder die Migration kann die Verwendung der ausgeführten Phasen beeinflussen, die unter [Wie ist die Migration organisiert?](ms-cloud-germany-transition.md#how-is-the-migration-organized) diskutiert werden.
@@ -208,8 +208,8 @@ Kunden, die nur Exchange Online-Funktionen verwenden (nicht hybrid) müssen dies
 Stellen Sie sicher, dass die [Exchange-Vorbereitungen](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-customers) durchgeführt wurden, **bevor der Migrationsschritt der Phase 5 beginnt**. Exchange Online-Hybrid-Kunden müssen die neueste Version des Assistenten für die Exchange-Hybridkonfiguration (Exchange Hybrid Configuration Wizard, HCW) im Modus „Office 365 Deutschland“ ausführen, um die lokale Konfiguration für die Migration zu Office 365-Globalen Diensten vorzubereiten.
 
 **Administrator-Aktionen:**
-- Zwischen dem Start der Migrationsphase 6 und dem Abschluss der Migrationsphase 9 (wenn der Nachrichtencenterhinweis veröffentlicht wurde) müssen Sie erneut den HCW mit Office 365 Worldwide-Einstellungen ausführen, um Ihre lokalen Systeme auf die Office 365 Global-Dienste zu verweisen. Wenn Sie diese Aufgabe nicht vor Beginn der Phase 9 [Migration abgeschlossen] abschließen, können Unzustellbarkeitsberichte (NDRs) für E-Mails auftreten, die zwischen Ihrer lokalen Exchange-Bereitstellung und Office 365 geroutet werden.
-- Beenden oder löschen Sie alle Onboarding- oder Offboarding-Postfachverschiebungen, d. h. verschieben Sie keine Postfächer zwischen Exchange (lokal) und Exchange Online.  Dadurch wird sichergestellt, dass die Anforderungen zum Verschieben der Postfächer nicht fehlschlagen. Wird diese Aktion nicht ausgeführt, kann dies zu einem Ausfall des Diensts oder der Office-Clients führen.
+- Zwischen dem Start der Migrationsphase 6 und dem Abschluss der Migrationsphase 9 (wenn der Nachrichtencenterhinweis veröffentlicht wurde) müssen Sie erneut den HCW mit Office 365 Worldwide-Einstellungen ausführen, um Ihre lokalen Systeme auf die Office 365 Global-Dienste zu verweisen. Wenn Sie diese Aufgabe nicht vor Beginn der Phase 9 [Migration abgeschlossen] abschließen, können Unzustellbarkeitsberichte (NDRs) für E-Mails auftreten, die zwischen Ihrer lokalen Exchange-Bereitstellung und Office 365 geroutet werden.
+- Beenden oder löschen Sie alle Onboarding- oder Offboarding-Postfachverschiebungen, d. h. verschieben Sie keine Postfächer zwischen Exchange (lokal) und Exchange Online.  Dadurch wird sichergestellt, dass die Anforderungen zum Verschieben der Postfächer nicht fehlschlagen. Wird diese Aktion nicht ausgeführt, kann dies zu einem Ausfall des Diensts oder der Office-Clients führen.
 - Zusätzliche Send-Connectors, die neben dem vom HCW erstellten Connector angelegt wurden und die auf Exchange Online abzielen, müssen in dieser Phase unmittelbar nach Ausführung des HCW-Laufs aktualisiert werden, da sie sonst nicht mehr funktionieren. Die TLS-Domäne muss für diese Send-Connectors aktualisiert werden. <br> Verwenden Sie folgenden PowerShell-Befehl in Ihrem Exchange Server-Umgebung, um die TLS-Domäne zu aktualisieren:
 ```powershell
 Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outlook.com"
@@ -243,7 +243,7 @@ Connect-MicrosoftTeams -Credential $userCredential
 Microsoft Teams nutzt Features von Azure AD. Solange die Migration von Azure AD nicht abgeschlossen ist, sind einige Features von Microsoft Teams nicht vollständig verfügbar. Nach Phase 9, wenn die Migration von Azure AD abgeschlossen ist, werden die folgenden Features vollständig verfügbar:
 
 - Apps können im Microsoft Teams Admin Center nicht verwaltet werden.
-- Neue Teams können nur im Microsoft Teams-Client erstellt werden, außer wenn der Teams-Administrator die Berechtigungen von Benutzern zum Erstellen neuer Teams eingeschränkt hat. Neue Teams können im Microsoft Teams Admin Center nicht erstellt werden. 
+- Neue Teams können nur im Microsoft Teams-Client erstellt werden, es sei denn, der Teams-Administrator hat die Berechtigungen zum Erstellen neuer Teams für Benutzer beschränkt. Im Microsoft Teams Admin Center können keine neuen Teams erstellt werden. 
 - Die Web-Version von Microsoft Teams ist nicht verfügbar.
 
 ## <a name="phase-8-dynamics-365"></a>Phase 8: Dynamics 365
@@ -305,15 +305,15 @@ Falls Sie über branchenspezifische Apps verfügen, stellen Sie sicher, dass Sie
 
 **Gilt für:** Alle Kunden
 
-Wenn der Office 365 den letzten Schritt der Migration (Phase 9: Azure AD Finalization) abgeschlossen hat, werden alle Dienste in die welt umstiegen. Weder Anwendungen noch Benutzer sollten über einen der Microsoft Cloud Deutschland-Endpunkte auf Ressourcen für den Mandanten zugreifen. 30 Tage nach Ende des Abschlusses wird der Azure AD-Dienst „Microsoft Cloud Deutschland“ automatisch den Endpunktzugriff für den umgestellten Mandanten beenden. Endpunktanforderungen wie die Authentifizierung werden ab diesem Zeitpunkt für den Microsoft Cloud Deutschland-Dienst fehlschlagen.  
+Wenn der Office 365-Mandant den letzten Schritt der Migration (Phase 9: Azure AD-Abschluss) abgeschlossen hat, sind alle Dienste auf die weltweite Bereitstellung umgestellt. Weder Anwendungen noch Benutzer sollten über einen der Microsoft Cloud Deutschland-Endpunkte auf Ressourcen für den Mandanten zugreifen. 30 Tage nach Ende des Abschlusses wird der Azure AD-Dienst „Microsoft Cloud Deutschland“ automatisch den Endpunktzugriff für den umgestellten Mandanten beenden. Endpunktanforderungen wie die Authentifizierung werden ab diesem Zeitpunkt für den Microsoft Cloud Deutschland-Dienst fehlschlagen.  
 
-Microsoft Azure Kunden müssen ihre Azure-Workloads nach den im [Azure-Migrations-Playbook](/azure/germany/germany-migration-main) beschriebenen Schritten umstiegen, sobald ihr Mandant die Migration nach weltweit abgeschlossen hat (Phase 9).  
+Microsoft Azure-Kunden müssen ihre Azure-Workloads gemäß der im [Azure-Migrations-Playbook](/azure/germany/germany-migration-main) beschriebenen Schritte umstellen, sobald ihr Mandant die Migration auf weltweit abgeschlossen hat (Phase 9).  
 
 | Schritte: | Beschreibung | Auswirkung |
 |:-------|:-------|:-------|
 | Aktualisieren von Benutzerendpunkten | Sicherstellen, dass alle Benutzer mithilfe der entsprechenden weltweiten Microsoft-Endpunkte auf den Dienst zugreifen |30 Tage nach Abschluss der Migration werden Anforderungen von Microsoft Cloud Deutschland-Endpunkten nicht mehr unterstützt. Client- oder Anwendungsverkehr schlägt dann fehl.  |
 | Aktualisieren der Azure AD-Anwendungsendpunkte | Sie müssen die Authentifizierungs-, Azure Active Directory (Azure AD) Graph- und MS Graph-Endpunkte für Ihre Anwendungen auf diejenigen des Dienstes „Microsoft weltweit“ aktualisieren. | 30 Tage nach Abschluss der Migration werden Anforderungen von Microsoft Cloud Deutschland-Endpunkten nicht mehr unterstützt. Client- oder Anwendungsverkehr schlägt dann fehl. |
-| Migrieren von Azure Workloads | Azure-Dienste-Kunden müssen neue weltweite Abonnements für Azure-Dienste bereitstellen und die Migration im [Azure-Migrations-Playbook ausführen.](/azure/germany/germany-migration-main) | Bei einem vollständigen Übergang zum weltweiten Dienst (Phase 10) können Kunden nicht mehr auf Azure-Workloads zugreifen, die im Microsoft Cloud Deutschland Azure-Portal vorhanden sind. |
+| Migrieren von Azure-Workloads | Kunden von Azure-Diensten müssen neue weltweite Abonnements für Azure-Dienste bereitstellen und die Migration gemäß dem [Azure-Migrations-Playbook](/azure/germany/germany-migration-main) ausführen. | Nach vollständigem Übergang zum weltweiten Dienst (Phase 10) können Kunden nicht mehr auf die Azure-Workloads zugreifen, die im Azure-Portal von Microsoft Cloud Deutschland vorhanden sind. |
 ||||
 
 ### <a name="azure-ad-connect"></a>Azure AD Connect

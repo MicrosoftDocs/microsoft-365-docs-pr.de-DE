@@ -1,5 +1,5 @@
 ---
-title: Prä-Migrationsaktivitäten für die Migration von Microsoft Cloud Deutschland
+title: Prä-Migrationsaktivitäten für die Migration von Microsoft Cloud Deutschland
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -20,12 +20,12 @@ ms.custom:
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
 ms.openlocfilehash: 66f23d33e9e55c432c33e9d90549d33ea42536db
 ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/25/2021
 ms.locfileid: "52651020"
 ---
-# <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Prä-Migrationsaktivitäten für die Migration von Microsoft Cloud Deutschland
+# <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Prä-Migrationsaktivitäten für die Migration von Microsoft Cloud Deutschland
 
 Über diese Links gelangen Sie zu den Prä-Migrationsschritten, die für Ihre Organisation relevant sind:
 
@@ -126,7 +126,7 @@ Lesen und Anwenden der [ADFS-Migrationsschritte](ms-cloud-germany-transition-add
 
 | Schritte: | Beschreibung | Auswirkung |
 |:-------|:-------|:-------|
-| Benachrichtigen Sie externe Partner über den bevorstehenden Umstieg zu Office 365-Diensten. |  Kunden müssen ihre Partner benachrichtigen, für die sie die Kalenderfreigabe und die Adressraumverfügbarkeitskonfiguration aktiviert haben (ermöglichen des Teilens von Frei/Gebucht-Informationen mit Office 365). Die Verfügbarkeitskonfiguration muss umgestellt werden, damit die [weltweiten Office 365-Endpunkte](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) verwendet werden, wenn die Exchange Online-Migration abgeschlossen wird. | Ohne Umstellung kann es in einer späteren Phase der Kundenmigration zu einem Dienst- oder Clientausfall kommen. |
+| Benachrichtigen Sie externe Partner über den bevorstehenden Umstieg zu Office 365-Diensten. |  Kunden müssen ihre Partner benachrichtigen, für die sie die Kalenderfreigabe und die Adressraumverfügbarkeitskonfiguration aktiviert haben (ermöglichen des Teilens von Frei/Gebucht-Informationen mit Office 365). Die Verfügbarkeitskonfiguration muss umgestellt werden, damit die [weltweiten Office 365-Endpunkte](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide) verwendet werden, wenn die Exchange Online-Migration abgeschlossen wird. | Ohne Umstellung kann es in einer späteren Phase der Kundenmigration zu einem Dienst- oder Clientausfall kommen. |
 | Benachrichtigen Sie Benutzer über erforderliche Änderungen am IMAP4-/POP3/SMTP-Client. | Benutzer, die Geräteverbindungen mit Microsoft Cloud Deutschland-Endpunkten für Clientprotokolle wie IMAP4, POP3 und SMTP haben, müssen ihre Clientgeräte manuell aktualisieren, um zu den [Exchange Online-Servernamen](/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/pop3-and-imap4#settings-users-use-to-set-up-pop3-or-imap4-access-to-their-exchange-online-mailboxes) zu wechseln. | Teilen Sie den Benutzern dieser Protokolle vorab diese Abhängigkeit mit, und stellen Sie sicher, dass sie während dieser Migration entweder zu Outlook Mobile oder Outlook im Web wechseln. Fehler beim Aktualisieren von Clientendpunkten führen zu Clientverbindungsfehlern mit Microsoft Cloud Deutschland, wenn Benutzerpostfächer migriert werden. |
 ||||
 
@@ -135,13 +135,13 @@ Lesen und Anwenden der [ADFS-Migrationsschritte](ms-cloud-germany-transition-add
 **Gilt für:** Alle Kunden, die eine aktive Exchange-Hybridkonfiguration mit lokalen Exchange-Servern verwenden<br>
 **Bei Anwendung**: Jederzeit vor Beginn der Phase 5
 
-Enterprise-Kunden mit einer Hybridbereitstellung von Exchange Online und einem lokalen Exchange Server führen den Hybridkonfigurationsassistenten ( Hybrid Configuration Wizard, HCW) und AAD Connect aus, um das Hybridsetup zu verwalten und einzurichten. Exchange Online Hybrid-Administratoren  **müssen den Assistenten für die Hybridkonfiguration (Hybrid Configuration Wizard, HCW)** im Rahmen dieser Überführung mehrmals ausführen. Beim Umstieg von Microsoft Cloud Deutschland auf die Region „Office 365 Deutschland“ muss der Administrator den neuesten Build des Hybridkonfigurationsassistenten im Modus „Office 365 Deutschland“ erneut ausführen, bevor die Exchange-Migration (Phase 5) beginnt. Führen Sie nach Abschluss der Phase 5 den Hybridkonfigurationsassistenten erneut im Modus „Office 365 weltweit“ aus, um die lokale Bereitstellung mit den Regionseinstellungen „Office 365 Deutschland“ fertigzustellen. Die HCW-Ausführung darf nicht während der Phase 5 laufen, es ist wichtig, dass die Ausführung des HCW erst nach Beendigung der Phase 5 erfolgt.
+Enterprise-Kunden mit einer Hybridbereitstellung von Exchange Online und einem lokalen Exchange Server führen den Hybridkonfigurationsassistenten ( Hybrid Configuration Wizard, HCW) und AAD Connect aus, um das Hybridsetup zu verwalten und einzurichten. Exchange Online Hybrid-Administratoren  **müssen den Assistenten für die Hybridkonfiguration (Hybrid Configuration Wizard, HCW)** im Rahmen dieser Überführung mehrmals ausführen. Beim Umstieg von Microsoft Cloud Deutschland auf die Region „Office 365 Deutschland“ muss der Administrator den neuesten Build des Hybridkonfigurationsassistenten im Modus „Office 365 Deutschland“ erneut ausführen, bevor die Exchange-Migration (Phase 5) beginnt. Führen Sie nach Abschluss der Phase 5 den Hybridkonfigurationsassistenten erneut im Modus „Office 365 weltweit“ aus, um die lokale Bereitstellung mit den Regionseinstellungen „Office 365 Deutschland“ fertigzustellen. Die HCW-Ausführung darf nicht während der Phase 5 laufen, es ist wichtig, dass die Ausführung des HCW erst nach Beendigung der Phase 5 erfolgt.
 Verzeichnisattribute werden zwischen Office 365 und Azure AD synchronisiert, mit der lokalen Bereitstellung über AAD Connect. 
 
 | Schritte: | Beschreibung | Auswirkung |
 |:-------|:-------|:-------|
-| Erneutes Ausführen des HCW mithilfe der Einstellungen für „Office 365 Deutschland“ <br><br> <i>Sie können diese Aktivität unmittelbar nach Erhalt der Benachrichtigung des Nachrichtencenters starten, dass die Migration Ihres Office 365-Mandanten begonnen hat (Phase 1).</i>| Durch Deinstallieren und erneutes Ausführen des HCW (Version 17.0.5378.0 oder höher) aus [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) vor der Phase 5 wird sichergestellt, dass Ihre lokale Konfiguration für das Senden und Empfangen von E-Mails sowohl für Benutzer von Microsoft Cloud Deutschland als auch für Benutzer, die zur Region „Office 365 Deutschland” migriert sind, vorbereitet ist. <p><li> Wählen Sie im HCW im untenstehenden Listenfeld **Meine Office 365-Organisation wird von gehostet von** die Option **Office 365 Deutschland** aus. | Wenn Sie diese Aufgabe nicht vor Beginn der Phase 5 [Exchange-Migration] abschließen, können Unzustellbarkeitsberichte (NDRs) für E-Mails auftreten, die zwischen Ihrer lokalen Exchange-Bereitstellung und Office 365 geroutet werden.  
-| Bewahren der Einstellungen für freigegebene Postfächer | Einige Hybrid-Kunden haben Cloud-Benutzerpostfächer mithilfe von Exchange Online-Befehlen in „freigegebene“ Postfächer konvertiert. Diese Cloud-Postfachkonfiguration wird in das Postfach und das lokale Exchange Online-Verzeichnis geschrieben, jedoch nicht über AAD Connect zurück zum Active Directory des Kunden synchronisiert. Das Ergebnis ist eine Diskrepanz zwischen der Active Directory-Darstellung der Postfachwerte „RemoteRecipientType“ und „RemoteDisplayType“ und derjenigen in Exchange Online, die das Postfach als freigegeben definiert. <br><br> Der Kunde ist dafür verantwortlich, dass alle freigegebenen Postfächer mit `New-RemoteMailbox -Shared`, `Enable-RemoteMailbox -Shared` oder `Set-RemoteMailbox -Shared` ordnungsgemäß bereitgestellt werden.  In dieser Referenz erfahren Sie, wie Sie [das Postfach eines Benutzers in einer hybriden Umgebung konvertieren](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide) können.| Wenn Sie diese Aufgabe nicht vor Beginn der Phase 5 [Exchange Online-Migration] abschließen, können Unzustellbarkeitsberichte (NDRs) für freigegebene Postfächer auftreten, die wieder in nicht lizenzierte Postfächer umgewandelt werden, und es kann zum Verlust des gemeinsamen Zugriffs für die betroffenen Postfächer kommen. Der Artikel [Freigegebene Postfächer werden unerwartet in Benutzerpostfächer umgewandelt, nachdem die Verzeichnissynchronisierung in einer Exchange-Hybridbereitstellung ausgeführt wurde](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes) skizziert die Auswirkungen, wenn dieses Problem nicht vor Abschluss der Exchange Online-Migration behoben wird.  
+| Erneutes Ausführen des HCW mithilfe der Einstellungen für „Office 365 Deutschland“ <br><br> <i>Sie können diese Aktivität unmittelbar nach Erhalt der Benachrichtigung des Nachrichtencenters starten, dass die Migration Ihres Office 365-Mandanten begonnen hat (Phase 1).</i>| Durch Deinstallieren und erneutes Ausführen des HCW (Version 17.0.5378.0 oder höher) aus [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) vor der Phase 5 wird sichergestellt, dass Ihre lokale Konfiguration für das Senden und Empfangen von E-Mails sowohl für Benutzer von Microsoft Cloud Deutschland als auch für Benutzer, die zur Region „Office 365 Deutschland” migriert sind, vorbereitet ist. <p><li> Wählen Sie im HCW im untenstehenden Listenfeld **Meine Office 365-Organisation wird von gehostet von** die Option **Office 365 Deutschland** aus. | Wenn Sie diese Aufgabe nicht vor Beginn der Phase 5 [Exchange-Migration] abschließen, können Unzustellbarkeitsberichte (NDRs) für E-Mails auftreten, die zwischen Ihrer lokalen Exchange-Bereitstellung und Office 365 geroutet werden.  
+| Bewahren der Einstellungen für freigegebene Postfächer | Einige Hybrid-Kunden haben Cloud-Benutzerpostfächer mithilfe von Exchange Online-Befehlen in „freigegebene“ Postfächer konvertiert. Diese Cloud-Postfachkonfiguration wird in das Postfach und das lokale Exchange Online-Verzeichnis geschrieben, jedoch nicht über AAD Connect zurück zum Active Directory des Kunden synchronisiert. Das Ergebnis ist eine Diskrepanz zwischen der Active Directory-Darstellung der Postfachwerte „RemoteRecipientType“ und „RemoteDisplayType“ und derjenigen in Exchange Online, die das Postfach als freigegeben definiert. <br><br> Der Kunde ist dafür verantwortlich, dass alle freigegebenen Postfächer mit `New-RemoteMailbox -Shared`, `Enable-RemoteMailbox -Shared` oder `Set-RemoteMailbox -Shared` ordnungsgemäß bereitgestellt werden.  In dieser Referenz erfahren Sie, wie Sie [das Postfach eines Benutzers in einer hybriden Umgebung konvertieren](/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox?view=o365-worldwide) können.| Wenn Sie diese Aufgabe nicht vor Beginn der Phase 5 [Exchange Online-Migration] abschließen, können Unzustellbarkeitsberichte (NDRs) für freigegebene Postfächer auftreten, die wieder in nicht lizenzierte Postfächer umgewandelt werden, und es kann zum Verlust des gemeinsamen Zugriffs für die betroffenen Postfächer kommen. Der Artikel [Freigegebene Postfächer werden unerwartet in Benutzerpostfächer umgewandelt, nachdem die Verzeichnissynchronisierung in einer Exchange-Hybridbereitstellung ausgeführt wurde](/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes) skizziert die Auswirkungen, wenn dieses Problem nicht vor Abschluss der Exchange Online-Migration behoben wird.  
 ||||
 
 ## <a name="skype-for-business-online"></a>Skype for Business Online
@@ -205,7 +205,7 @@ Wenn Sie Drittanbieterdienste oder branchenspezifische Apps verwenden, die mit O
 Wenn Sie in der Microsoft Cloud Deutschland-Instanz dieselbe Azure Active Directory-Identitätspartition für Office 365 und Microsoft Azure verwenden, stellen Sie sicher, dass Sie sich auf die kundengesteuerte Migration von Microsoft Azure-Diensten vorbereiten.
 
 > [!NOTE]
-> Die Migration Ihrer Microsoft Azure kann nicht gestartet werden, bevor Ihr Office 365-Mandant die Migrationsphase 9 erreicht hat und vor Abschluss der Migrationsphase 10 abgeschlossen werden muss.
+> Die Migration Ihrer Microsoft Azure-Dienste wird möglicherweise nicht gestartet, bevor Ihr Office 365-Mandant die Migrationsphase 9 erreicht hat, und muss abgeschlossen sein, bevor die Migrationsphase 10 abgeschlossen ist.
 
 Kunden, die Office 365- und Azure-Ressourcen (z. B. Netzwerk, Datenverarbeitung und Speicher) verwenden, führen die Migration von Ressourcen zur Office 365-Dienstinstanz aus. Diese Migration obliegt dem Kunden. Beiträge des Nachrichtencenters signalisieren den Anfang. Die Migration muss vor Abschluss der Azure AD-Organisation in der Office 365-Diensteumgebung abgeschlossen sein. Informationen zu Azure-Migrationen finden Sie im Azure-Migrationsplaybook [Übersicht über den Migrationsleitfaden für Azure Deutschland](https://docs.microsoft.com/azure/germany/germany-migration-main).
 
@@ -238,7 +238,7 @@ Office 365 Germany customers who have Azure subscriptions under the same identit
 
 Erste Schritte:
 
-- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
+- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
 - [Hilfe zur Microsoft Cloud Deutschland-Migration Assistance](https://aka.ms/germanymigrateassist)
 - [So können Sie sich für die Migration anmelden](ms-cloud-germany-migration-opt-in.md)
 - [Kundenerfahrung während der Migration](ms-cloud-germany-transition-experience.md)
@@ -247,7 +247,7 @@ Der Weg durch die Umstellung:
 
 - [Phasen, Aktionen und Auswirkungen der Migration](ms-cloud-germany-transition-phases.md)
 - [Zusätzliche Vorarbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud-Apps:
 
