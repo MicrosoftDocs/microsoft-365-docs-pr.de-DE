@@ -20,12 +20,12 @@ ms.custom:
 description: In diesem Thema werden Sie durch die empfohlene Konfiguration für mandantenweite Einstellungen, die sich auf die Sicherheit Ihrer Microsoft 365 auswirken, beschrieben.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 686768d05e37a4e103640c2973fd30abaa25630b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8a449d9647ae5a8b892967116f28aa6203a5e815
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538939"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684171"
 ---
 # <a name="configure-your-microsoft-365-tenant-for-increased-security"></a>Konfigurieren Ihres Microsoft 365-Mandanten für höhere Sicherheit 
 
@@ -46,12 +46,14 @@ Office 365 Secure Score analysiert die Sicherheit Ihrer Organisation basierend a
 
 Das Microsoft 365 Security Center umfasst Funktionen zum Schutz Ihrer Umgebung. Es enthält auch Berichte und Dashboards, die Sie zum Überwachen und Ergreifen von Maßnahmen verwenden können. Einige Bereiche verfügen über Standardrichtlinienkonfigurationen. Einige Bereiche enthalten keine Standardrichtlinien oder -regeln. Besuchen Sie diese Richtlinien unter Bedrohungsverwaltung, um die Einstellungen für die Bedrohungsverwaltung für eine sicherere Umgebung zu optimieren.
 
+<br>
+
 ****
 
 |Bereich|Enthält eine Standardrichtlinie|Empfehlung|
 |---|---|---|
 |**Antiphishing**|Ja|<ul><li>Identitätswechselschutz – Wenn Sie Über Defender für Office 365 und eine benutzerdefinierte Domäne verfügen, konfigurieren Sie die Einstellungen für den Identitätswechselschutz in der Standardmäßigen Antiphishingrichtlinie, um die E-Mail-Konten Ihrer wertvollsten Benutzer, z. B. Ihres CEO, zu schützen und Ihre Domäne zu schützen. Weitere Informationen: [Identitätswechseleinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) und [Einblick in den Identitätswechsel](impersonation-insight.md)</li><li>Spoof intelligence – Überprüfen Sie Absender, die Ihre Domäne spoofieren. Blockieren oder Zulassen dieser Absender. Weitere Informationen: [Einblick in spoof intelligence in EOP](learn-about-spoof-intelligence.md) und [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).</li></ul>|
-|**An-Malware-Modul**|Ja| Bearbeiten Sie die Standardrichtlinie: <ul><li>Filter für allgemeine Anlagentypen: Aktivieren</li></ul> <p> Sie können auch benutzerdefinierte Schadsoftwarefilterrichtlinien erstellen und diese auf bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation anwenden. <p> Weitere Informationen: <ul><li>[Schutz vor Schadsoftware](anti-malware-protection.md)</li><li>[Konfigurieren von Antischadsoftwarerichtlinien](configure-anti-malware-policies.md)</li></ul>|
+|**An-Malware-Modul**|Ja|Bearbeiten Sie die Standardrichtlinie: <ul><li>Select **Enable the common attachments filter**</li></ul> <p> Sie können auch benutzerdefinierte Schadsoftwarefilterrichtlinien erstellen und diese auf bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation anwenden. <p> Weitere Informationen: <ul><li>[Schutz vor Schadsoftware](anti-malware-protection.md)</li><li>[Konfigurieren von Antischadsoftwarerichtlinien](configure-anti-malware-policies.md)</li></ul>|
 |**Sichere Anlagen in Microsoft Defender für Office 365**|Nein|Klicken Sie auf der Hauptseite für sichere Anlagen auf **Globale Einstellungen,** und aktivieren Sie diese Einstellung: <ul><li>**Defender für Office 365 für SharePoint, OneDrive und Microsoft Teams aktivieren**</li></ul> <p> Erstellen Sie eine Richtlinie für sichere Anlagen mit den folgenden Einstellungen: <ul><li> **Block**: Wählen Sie **Blockieren** als unbekannte Schadsoftwareantwort aus.</li><li>**Umleitung aktivieren:** Aktivieren Sie dieses Kontrollkästchen, und geben Sie eine E-Mail-Adresse ein, z. B. ein Administrator- oder Quarantänekonto.</li><li>**Wenden Sie die obige Auswahl an,** wenn die Schadsoftwareprüfung auf Anlagen ein Zeit- oder Fehlerfehler auftritt: Aktivieren Sie dieses Kontrollkästchen.</li><li>**_Angewendet auf_*: **Die Empfängerdomäne wird Ihre** Domäne \> auswählen.</li></ul> <p> Weitere Informationen: [Sichere Anlagen für SharePoint, OneDrive und Microsoft Teams](mdo-for-spo-odb-and-teams.md) und Einrichten von Richtlinien für sichere [Anlagen](set-up-safe-attachments-policies.md)|
 |**Sichere Links in Microsoft Defender für Office 365**|Ja|Klicken Sie auf der Hauptseite für sichere Links auf **Globale Einstellungen**: <ul><li>**Verwenden Sicherer Links in: Office 365:** Überprüfen Sie, ob diese Einstellung aktiviert ist.</li><li>**Nicht nachverfolgen, wenn Benutzer auf Sichere Links klicken:** Deaktivieren Sie diese Einstellung, um Benutzerklicks nachverfolgt zu werden.</li></ul> <p> Erstellen Sie eine Richtlinie für sichere Links mit den folgenden Einstellungen: <ul><li>**Wählen Sie die Aktion für unbekannte potenziell** schädliche URLs in Nachrichten aus: Überprüfen Sie, ob diese Einstellung auf ein **ist.**</li><li>**Wählen Sie die Aktion für unbekannte oder** potenziell schädliche URLs innerhalb Microsoft Teams : Überprüfen Sie, ob diese Einstellung auf Ein **ist.**</li><li>**Wenden Sie die Echtzeit-URL-Überprüfung auf verdächtige Links** und Links an, die auf Dateien verweisen: Aktivieren Sie dieses Kontrollkästchen.</li><li>**Warten Sie, bis die URL-Überprüfung abgeschlossen ist, bevor Sie die Nachricht senden:** Aktivieren Sie dieses Kontrollkästchen.</li><li>**Wenden Sie sichere Links auf E-Mail-Nachrichten an, die innerhalb der Organisation gesendet werden:** Aktivieren Sie dieses Kontrollkästchen.</li><li>**Benutzer dürfen nicht zur ursprünglichen URL klicken:** Aktivieren Sie dieses Kontrollkästchen.</li><li>**Angewendet auf**: **Die Empfängerdomäne wird Ihre** Domäne \> auswählen.</li></ul> <p> Weitere Informationen: [Einrichten von Richtlinien für sichere Links](set-up-safe-links-policies.md).|
 |**Antispam (E-Mail-Filterung)**|Ja| Worauf Sie achten müssen: Zu viel Spam – Wählen Sie die benutzerdefinierten Einstellungen aus, und bearbeiten Sie die Standardfilterrichtlinie für Spam. Weitere Informationen: [Microsoft 365 E-Mail-Antispamschutz](anti-spam-protection.md).|
@@ -64,6 +66,8 @@ Das Microsoft 365 Security Center umfasst Funktionen zum Schutz Ihrer Umgebung. 
 ## <a name="view-dashboards-and-reports-in-the-security--compliance-center"></a>Anzeigen von Dashboards und Berichten im Security & Compliance Center
 
 Besuchen Sie diese Berichte und Dashboards, um mehr über den Zustand Ihrer Umgebung zu erfahren. Die Daten in diesen Berichten werden reicher, wenn Ihre Organisation Office 365 verwendet. Machen Sie sich vorerst mit den Aktionen vertraut, die Sie überwachen und ergreifen können. Weitere Informationen finden Sie [unter Berichte im Security & Compliance Center](../../compliance/reports-in-security-and-compliance.md).
+
+<br>
 
 ****
 
@@ -80,6 +84,8 @@ Besuchen Sie diese Berichte und Dashboards, um mehr über den Zustand Ihrer Umge
 
 Viele der Steuerelemente für Sicherheit und Schutz im Exchange Admin Center sind auch im Security Center enthalten. Sie müssen diese nicht an beiden Stellen konfigurieren. Hier sind einige zusätzliche Einstellungen, die empfohlen werden.
 
+<br>
+
 ****
 
 |Bereich|Enthält eine Standardrichtlinie|Empfehlung|
@@ -95,6 +101,8 @@ Microsoft-Empfehlungen zum Konfigurieren SharePoint Teamwebsites auf einem zuneh
 SharePoint auf Basisebene konfigurierten Teamwebsites ermöglichen die Freigabe von Dateien für externe Benutzer mithilfe anonymer Zugriffslinks. Dieser Ansatz wird empfohlen, anstatt Dateien in E-Mails zu senden.
 
 Um die Ziele für den basisweiten Schutz zu unterstützen, konfigurieren Sie mandantenweite Freigaberichtlinien wie hier empfohlen. Freigabeeinstellungen für einzelne Websites können restriktiver sein als diese mandantenweite Richtlinie, aber nicht weniger streng.
+
+<br>
 
 ****
 
@@ -138,9 +146,7 @@ Da diese Lösung den EMS E5-Plan empfiehlt, sollten Sie mit Cloud App Security b
 Weitere Informationen:
 
 - [Bereitstellen von Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
-
 - [Weitere Informationen zu Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
-
 - [Was ist Cloud App Security?](/cloud-app-security/what-is-cloud-app-security)
 
 ![Cloud App Security-Dashboard](../../media/1fb2aa65-54b8-4746-9f5e-c187d339e9f5.png)

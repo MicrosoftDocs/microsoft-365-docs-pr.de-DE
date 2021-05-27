@@ -13,12 +13,12 @@ localization_priority: Normal
 description: Folgen Sie dem Pfad einer eingehenden Nachricht über den Bedrohungsfilterstapel in Microsoft Defender für Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01ad901f7f746d9b5d2c50632c1344701120c20f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: e892ebe04887527cf57e4ea44f67c4aaa775b228
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538687"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683295"
 ---
 # <a name="step-by-step-threat-protection-in-microsoft-defender-for-office-365"></a>Schrittweiser Bedrohungsschutz in Microsoft Defender für Office 365
 
@@ -111,13 +111,13 @@ Die letzte Phase erfolgt nach der E-Mail- oder Dateizustellung, die auf E-Mails 
 
 :::image type="content" source="../../media/mdo-filtering-stack/mdo-filter-stack-phase4.png" alt-text="Phase 4 der Filterung in Defender for Office 365 ist Post-Delivery Protection.":::
 
-1. **Sichere Links** ist der Zeit-und-Klick-Schutz von MDO. Jede URL in jeder Nachricht wird so umschlossen, dass sie auf Microsoft Safe Links-Server verweist. Wenn auf eine URL geklickt wird, wird sie mit der neuesten Reputation überprüft, bevor der Benutzer zur Zielwebsite umgeleitet wird. Die URL wird asynchron sandkasteniert, um ihre Reputation zu aktualisieren.
+1. **Sichere Links** ist Defender für Office 365 klickzeitschutz. Jede URL in jeder Nachricht wird so umschlossen, dass sie auf Microsoft Safe Links-Server verweist. Wenn auf eine URL geklickt wird, wird sie mit der neuesten Reputation überprüft, bevor der Benutzer zur Zielwebsite umgeleitet wird. Die URL wird asynchron sandkasteniert, um ihre Reputation zu aktualisieren.
 
-2. **Phish Zero-Hour Auto-Purge (ZAP)** erkennt und neutralisiert schädliche Phishingnachrichten, die bereits an Exchange Online übermittelt wurden.
+2. **Zero-Hour Auto-Purge (ZAP)** für Phishing erkennt und neutralisiert schädliche Phishingnachrichten, die bereits an Exchange Online wurden.
 
-3. **Schadsoftware ZAP** erkennt und neutralisiert schadsoftwareaktive Nachrichten, die bereits an Exchange Online zugestellt wurden.
+3. **ZAP für Schadsoftware** erkennt und neutralisiert schadhaft schädliche Schadsoftwarenachrichten, die bereits an Exchange Online übermittelt wurden.
 
-4. **Spam ZAP** erkennt und neutralisiert schädliche Spamnachrichten, die bereits an andere Postfächer Exchange Online wurden.
+4. **ZAP für Phishing** erkennt und neutralisiert schädliche Spamnachrichten, die bereits an Exchange Online zugestellt wurden.
 
 5. **Mit Kampagnenansichten** können Administratoren das Gesamtbild eines Angriffs schneller und vollständiger sehen als jedes Team ohne Automatisierung. Microsoft nutzt die enormen Mengen an Antiphishing-, Antispam- und Anti-Malware-Daten über den gesamten Dienst, um Kampagnen zu identifizieren, und ermöglicht Administratoren dann, sie von Anfang bis Ende zu untersuchen, einschließlich Zielen, Auswirkungen und Flüssen, die auch in einem herunterladbaren Kampagnen-Write-up verfügbar sind.
 
@@ -128,7 +128,6 @@ Die letzte Phase erfolgt nach der E-Mail- oder Dateizustellung, die auf E-Mails 
 8. Der Schutz für **OneDrive, SharePoint** und Teams bietet den gleichen Schutz vor schädlichen Dateien, nativ, innerhalb von OneDrive, SharePoint und Microsoft Teams.
 
 9. Wenn eine URL, die auf eine Datei verweist, nach der Zustellung ausgewählt wird, wird bei der **Detonation** verknüpfter Inhalte eine Warnseite angezeigt, bis der Sandkasten der Datei abgeschlossen ist und die URL als sicher eingestuft wird.
-
 
 ## <a name="the-filtering-stack-diagram"></a>Das Filterstapeldiagramm
 

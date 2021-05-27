@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In diesem Artikel wird die Verwaltung von Core eDiscovery-Fällen beschrieben. Dies umfasst das Schließen eines Falls, das erneute Öffnen eines geschlossenen Falls und das Löschen eines Falls.
-ms.openlocfilehash: 8a54d5c8f93d36351538bc235a6dbeaaa602c3e9
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: d729c91d4e81ad12d0b4b16574aa4edad8e239a3
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52532446"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684099"
 ---
 # <a name="close-reopen-and-delete-a-core-ediscovery-case"></a>Schließen, Erneut öffnen und Löschen eines Core eDiscovery-Falls
 
@@ -92,7 +92,7 @@ Bevor Sie einen Fall löschen können (unabhängig davon, ob  er aktiv oder gesc
 
 So löschen Sie einen eDiscovery-Halteraum:
 
-1. Wechseln Sie **in** dem Fall, den Sie löschen möchten, auf die Registerkarte Halte haltet.
+1. Wechseln Sie **in** dem Fall, den Sie löschen möchten, zur Registerkarte Halte.
 
 2. Wählen Sie den Halteraum aus, den Sie löschen möchten.
 

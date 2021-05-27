@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Erfahren Sie Power BI, wie Benutzer in Ihrer Organisation diesen Geschäftsanalysedienst verwenden können.
-ms.openlocfilehash: 34a48ed6ee854f0057e79ba86dbd888a65b41c5e
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 6da25932e1813744aa38bab2b399d6ac30c3429a
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537427"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683367"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI in Ihrer Organisation
 
@@ -83,19 +83,19 @@ Wenn ein Mandant von Microsoft erstellt wurde, können Sie diesen mit den folgen
 
 ::: moniker range="o365-worldwide"
 
-3. Wechseln Sie zu [https://admin.microsoft.com](https://admin.microsoft.com).
+3. Wechseln Sie zu <a href="https://admin.microsoft.com" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-3. Wechseln Sie zu [https://portal.office.de](https://portal.office.de).
+3. Gehe zu <a href="https://portal.office.de" target="_blank">https://portal.office.de</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-3. Wechseln Sie zu [https://portal.partner.microsoftonline.cn](https://portal.partner.microsoftonline.cn).
+3. Wechseln Sie zu <a href="https://portal.partner.microsoftonline.cn" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
 ::: moniker-end
 

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
 description: Erfahren Sie, wie Sie eine alte Domäne aus Microsoft 365 entfernen und Benutzer und Gruppen in eine andere Domäne verschieben oder Ihr Abonnement kündigen.
-ms.openlocfilehash: a8e636059a84a2086844a8ff139d240268ee5b19
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: deec298dda037009e2c66f1b686396c689ecd883
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635702"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683355"
 ---
 # <a name="remove-a-domain"></a>Entfernen einer Domäne
   
@@ -43,7 +43,21 @@ Entfernen Sie Ihre Domäne, weil Sie sie zu einem anderen Abonnementplan Microso
 
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin Center</a>.
 
-2. Wählen Sie **Benutzer** > **Aktive Benutzer aus.**
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a>.  
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>.  
+
+::: moniker-end
+
+2. Wählen Sie **Benutzer**  >  **Aktive Benutzer aus.**
 
 3. Wählen Sie die Felder neben den Namen aller Benutzer aus, die Sie verschieben möchten.
 
@@ -53,21 +67,17 @@ Entfernen Sie Ihre Domäne, weil Sie sie zu einem anderen Abonnementplan Microso
 
 Sie müssen diesen Vorgang auch für die eigene E-Mail-Adresse ausführen, wenn Sie Mitglied der Domäne sind, die Sie entfernen möchten. Wenn Sie die Domäne für Ihr Konto bearbeiten, müssen Sie sich abmelden und mit der ausgewählten neuen Domäne wieder anmelden, um den Vorgang fortzusetzen.
 
+#### <a name="move-yourself"></a>Verschieben Sie sich selbst
+
+::: moniker range="o365-worldwide"
+
+1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin Center</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Admin Center</a>.  
-
-2. Wählen Sie **Benutzer** > **Aktive Benutzer aus.**
-
-3. Wählen Sie die Felder neben den Namen aller Benutzer aus, die Sie verschieben möchten.
-
-4. Wählen Sie oben auf  der Seite weitere > **Domänen bearbeiten aus.**
-
-5. Wählen Sie **im Bereich** Domänen bearbeiten eine andere Domäne aus.
-  
-Sie müssen diesen Vorgang auch für die eigene E-Mail-Adresse ausführen, wenn Sie Mitglied der Domäne sind, die Sie entfernen möchten. Wenn Sie die Domäne für Ihr Konto bearbeiten, müssen Sie sich abmelden und mit der ausgewählten neuen Domäne wieder anmelden, um den Vorgang fortzusetzen.
 
 ::: moniker-end
 
@@ -75,23 +85,7 @@ Sie müssen diesen Vorgang auch für die eigene E-Mail-Adresse ausführen, wenn 
 
 1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>.  
 
-2. Wählen Sie **Benutzer** > **Aktive Benutzer aus.**
-
-3. Wählen Sie die Felder neben den Namen aller Benutzer aus, die Sie verschieben möchten.
-
-4. Wählen Sie oben auf  der Seite weitere > **Domänen bearbeiten aus.**
-
-5. Wählen Sie **im Bereich** Domänen bearbeiten eine andere Domäne aus.
-  
-Sie müssen diesen Vorgang auch für die eigene E-Mail-Adresse ausführen, wenn Sie Mitglied der Domäne sind, die Sie entfernen möchten. Wenn Sie die Domäne für Ihr Konto bearbeiten, müssen Sie sich abmelden und mit der ausgewählten neuen Domäne wieder anmelden, um den Vorgang fortzusetzen.
-
 ::: moniker-end
-
-#### <a name="move-yourself"></a>Verschieben Sie sich selbst
-
-::: moniker range="o365-worldwide"
-
-1. Wechseln Sie zum <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Admin Center</a>.
 
 2. Wechseln Sie **zu** \> **Aktive Benutzer**, und wählen Sie Ihr Konto aus der Liste aus.
 
@@ -101,65 +95,18 @@ Sie müssen diesen Vorgang auch für die eigene E-Mail-Adresse ausführen, wenn 
 
 5. Melden Sie sich mit der neuen Domäne und demselben Kennwort an.
 
-Sie können Sie auch PowerShell verwenden, um Benutzer in eine andere Domäne zu verschieben. Weitere Informationen finden Sie unter [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Wenn die Standarddomäne festlegen möchten, verwenden Sie [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie **zu Aktive** \> **Benutzer**, und wählen Sie Ihren Namen in der Liste aus.
-
-2. Wählen Sie **im Abschnitt Benutzername/E-Mail** die Option **Bearbeiten** aus, und wählen Sie dann eine andere Domäne aus.
-
-3. Wählen **Sie Set as primary** > **Save** Close > **aus.**
-  
-4. Wählen Sie oben Ihren Kontonamen aus, und wählen Sie **dann Abmelden aus.**
-
-5. Melden Sie sich mit der neuen Domäne und demselben Kennwort an.
-
-Sie können Sie auch PowerShell verwenden, um Benutzer in eine andere Domäne zu verschieben. Weitere Informationen finden Sie unter [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Wenn die Standarddomäne festlegen möchten, verwenden Sie [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie **zu Aktive** \> **Benutzer**, und wählen Sie Ihren Namen in der Liste aus.
-
-2. Wählen Sie **im Abschnitt Benutzername/E-Mail** die Option **Bearbeiten** aus, und wählen Sie dann eine andere Domäne aus.
-
-3. Wählen **Sie Set as primary** > **Save** Close > **aus.**
-  
-4. Wählen Sie oben Ihren Kontonamen aus, und wählen Sie **dann Abmelden aus.**
-
-5. Melden Sie sich mit der neuen Domäne und demselben Kennwort an.
-
-Sie können Sie auch PowerShell verwenden, um Benutzer in eine andere Domäne zu verschieben. Weitere Informationen finden Sie unter [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Wenn die Standarddomäne festlegen möchten, verwenden Sie [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
-
-::: moniker-end
+Sie können Sie auch PowerShell verwenden, um Benutzer in eine andere Domäne zu verschieben. Weitere Informationen finden Sie unter [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0&preserve-view=true). Wenn die Standarddomäne festlegen möchten, verwenden Sie [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0&preserve-view=true).
 
 ### <a name="step-2-move-groups-to-another-domain"></a>Schritt 2: Verschieben von Gruppen in eine andere Domäne
 
 ::: moniker range="o365-worldwide"
 
 1. Wechseln Sie im Admin Center zur Seite **Gruppen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppen</a>.
-  
-2. Wählen Sie den Gruppennamen aus, und wählen Sie dann auf der Registerkarte **Allgemein** unter **E-Mail-Adresse, Primär,** **Bearbeiten aus.**
-
-3. Verwenden Sie die Dropdownliste, um eine andere Domäne zu wählen.
-
-4. Wählen Sie **Speichern** und dann **Schließen** aus. Wiederholen Sie diesen Vorgang für alle Gruppen oder Verteilerlisten, die der Domäne zugeordnet sind, die Sie entfernen möchten.
 
 ::: moniker-end
-
 ::: moniker range="o365-germany"
 
 1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">im Admin Center</a>zur Seite  > **Gruppengruppen.**
-
-2. Wählen Sie den Gruppennamen aus, und wählen Sie dann **Bearbeiten neben** **Name aus.**
-
-3. Verwenden Sie die Dropdownliste, um eine andere Domäne zu wählen.
-
-4. Wählen Sie **Speichern** und dann **Schließen** aus. Wiederholen Sie diesen Vorgang für alle Gruppen oder Verteilerlisten, die der Domäne zugeordnet sind, die Sie entfernen möchten.
 
 ::: moniker-end
 
@@ -167,13 +114,13 @@ Sie können Sie auch PowerShell verwenden, um Benutzer in eine andere Domäne zu
 
 1. Wechseln Sie <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">im Admin Center</a>zur Seite  > **Gruppengruppen.**
 
-2. Wählen Sie den Gruppennamen aus, und wählen Sie dann **Bearbeiten neben** **Name aus.**
+::: moniker-end
+  
+2. Wählen Sie den Gruppennamen aus, und wählen Sie dann auf der Registerkarte **Allgemein** unter **E-Mail-Adresse, Primär,** **Bearbeiten aus.**
 
 3. Verwenden Sie die Dropdownliste, um eine andere Domäne zu wählen.
 
 4. Wählen Sie **Speichern** und dann **Schließen** aus. Wiederholen Sie diesen Vorgang für alle Gruppen oder Verteilerlisten, die der Domäne zugeordnet sind, die Sie entfernen möchten.
-
-::: moniker-end
 
 ### <a name="step-3-remove-the-old-domain"></a>Schritt 3: Entfernen der alten Domäne
 
@@ -205,7 +152,7 @@ Sie können Sie auch PowerShell verwenden, um Benutzer in eine andere Domäne zu
 
 Es kann bis zu 5 Minuten dauern, bis Microsoft 365 eine Domäne entfernt, wenn nicht an vielen Stellen wie Sicherheitsgruppen, Verteilerlisten, Benutzern und anderen Gruppen Microsoft 365 wird. Wenn es viele Verweise gibt, die die Domäne verwenden, kann es mehrere Stunden (pro Tag) dauern, bis die Domäne entfernt wird.
   
-Wenn Sie über Hunderte oder Tausende von Benutzern verfügen, verwenden Sie PowerShell, um alle Benutzer abzufragen und in eine andere Domäne zu verschieben. Andernfalls könnte es passieren, dass einige Benutzer der Benutzeroberfläche vergessen werden. Wenn dann das Entfernen der Domäne nicht möglich ist, wissen Sie nicht, warum. Weitere Informationen finden Sie unter [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Wenn die Standarddomäne festlegen möchten, verwenden Sie [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
+Wenn Sie über Hunderte oder Tausende von Benutzern verfügen, verwenden Sie PowerShell, um alle Benutzer abzufragen und in eine andere Domäne zu verschieben. Andernfalls könnte es passieren, dass einige Benutzer der Benutzeroberfläche vergessen werden. Wenn dann das Entfernen der Domäne nicht möglich ist, wissen Sie nicht, warum. Weitere Informationen finden Sie unter [Set-MsolUserPrincipalName](/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0&preserve-view=true). Wenn die Standarddomäne festlegen möchten, verwenden Sie [Set-MsolDomain](/powershell/module/msonline/set-msoldomain?view=azureadps-1.0&preserve-view=true).
   
 ## <a name="still-need-help"></a>Benötigen Sie weitere Hilfe?
 
@@ -218,8 +165,26 @@ Funktioniert es immer noch nicht? Die Domäne muss möglicherweise manuell entfe
   
 ::: moniker-end
 
+::: moniker range="o365-germany"
+
+> [!NOTE]
+> Sie können die Domäne [".onmicrosoft.de"](../setup/domains-faq.yml) nicht aus Ihrem Konto entfernen. Wenn Sie eine Domäne entfernen, werden Benutzerkonten wieder zur Adresse ".onmicrosoft.de" als primärer SMTP/UserprincipalName zurückgesetzt.
+  
+Funktioniert es immer noch nicht? Die Domäne muss möglicherweise manuell entfernt werden. [Rufen Sie uns an](../../business-video/get-help-support.md?view=o365-germany&preserve-view=true), und wir helfen Ihnen bei der Problemlösung!
+  
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+> [!NOTE]
+> Sie können die Domäne [".partner.onmschina.cn"](../setup/domains-faq.yml) nicht aus Ihrem Konto entfernen. Wenn Sie eine Domäne entfernen, werden Benutzerkonten wieder auf die Adresse ".partner.onmschina.cn" als primärer SMTP/UserprincipalName zurückgesetzt.
+  
+Funktioniert es immer noch nicht? Die Domäne muss möglicherweise manuell entfernt werden. [Rufen Sie uns an](../../business-video/get-help-support.md?view=o365-21vianet&preserve-view=true), und wir helfen Ihnen bei der Problemlösung!
+  
+::: moniker-end
+
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Häufig gestellte Fragen](../setup/domains-faq.yml) zu Domänen (Artikel)\
+[Häufig gestellte Fragen zu Domänen](../setup/domains-faq.yml) (Artikel)\
 [Wechseln zu einem anderen Microsoft 365 geschäftsplan](../../commerce/subscriptions/switch-to-a-different-plan.md) (Artikel)\
 [Kündigen Ihres Abonnements](../../commerce/subscriptions/cancel-your-subscription.md) (Artikel)

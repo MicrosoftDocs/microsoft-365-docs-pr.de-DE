@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 69345a0db42ec838dc0758cdb0e93a49a8ba6cfd
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: f3fd597181d73c1768057ea7740ab111e5af2068
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259403"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689157"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Microsoft 365 Voraussetzungen für Defender
 
@@ -73,6 +73,18 @@ Derzeit ist Microsoft 365 Defender *nicht* verfügbar für:
 - US Government Community Cloud High (GCC High)
 - US Department of Defense
 - Alle US-Behörden mit kommerziellen Lizenzen
+
+
+Derzeit ist die Integration von Microsoft Defender for Office 365 in die unified Microsoft 365 Defender-Features für Kunden an den folgenden Office 365 nicht verfügbar:
+
+- Brasilien 
+- Deutschland 
+- Norwegen 
+- Singapur 
+- Südafrika
+- Schweiz 
+- Vereinigte Arabische Emirate 
+
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Microsoft 365 Übersicht über Defender](microsoft-365-defender.md)

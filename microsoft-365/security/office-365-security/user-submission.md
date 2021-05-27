@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie ein Postfach zum Sammeln von Spam- und Phishing-E-Mails konfigurieren, die von Benutzern gemeldet werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 852e87ee76d9692b789ca217720ac3efb08f31a8
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 906048609ce70c761bb014961e02c86f912cd638
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624609"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683499"
 ---
 # <a name="user-submissions-policy"></a>Richtlinie für Benutzerübermittlungen
 
@@ -141,7 +141,7 @@ Nachdem Sie überprüft haben, ob Ihr Postfach alle erforderlichen Voraussetzung
 
 Sie können Tools für die Nachrichtenberichterstellung von Drittanbietern so konfigurieren, dass gemeldete Nachrichten an das benutzerdefinierte Postfach gesendet werden. Die einzige Voraussetzung ist, dass die ursprüngliche Nachricht als Anlage in der Nachricht enthalten ist, die an das benutzerdefinierte Postfach gesendet wird (nicht nur die ursprüngliche Nachricht an das benutzerdefinierte Postfach weiterleiten).
 
-Die Anforderungen an die Nachrichtenformatierung werden im nächsten Abschnitt beschrieben.
+Die Anforderungen an die Nachrichtenformatierung werden im nächsten Abschnitt beschrieben. Die Formatierung ist optional, aber wenn sie nicht dem vorgeschriebenen Format folgt, werden die Berichte immer als Phish übermittelt.
 
 ## <a name="message-submission-format"></a>Nachrichtenübermittlungsformat
 

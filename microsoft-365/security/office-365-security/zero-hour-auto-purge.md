@@ -22,12 +22,12 @@ ms.custom:
 description: Administratoren können erfahren, wie das automatische Löschen (Zero-Hour Auto Purge, ZAP) zugestellte Nachrichten in einem Exchange Online-Postfach rückwirkend in den Junk-E-Mail-Ordner oder die Quarantäne verschieben kann, bei der es sich rückwirkend um Spam oder Phishing handelt.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81d37b3d02cb1009ef718fdd0d50eeadd819d3b6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ee5a3fee8e189ff9cc08f187971e728670766d6d
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206861"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684195"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Automatisches Löschen (Zero-Hour Auto Purge, ZAP) in Exchange Online
 
@@ -53,13 +53,13 @@ Die #A0 ist für den Benutzer nahtlos. sie werden nicht benachrichtigt, wenn ein
 
 [Listen sicherer Absender,](create-safe-sender-lists-in-office-365.md)Nachrichtenflussregeln (auch als Transportregeln bezeichnet), Posteingangsregeln oder zusätzliche Filter haben Vorrang vor ZAP. Ähnlich wie beim Nachrichtenfluss bedeutet dies, dass die Nachricht aufgrund der Konfiguration sicherer Absender nicht reagiert wird, auch wenn der Dienst bestimmt, dass die zugestellte Nachricht ZAP benötigt. Dies ist ein weiterer Grund, um beim Konfigurieren von Nachrichten zur Umgehung der Filterung vorsichtig zu sein.
 
-### <a name="malware-zap"></a>Schadsoftware ZAP
+### <a name="zap-for-malware"></a>ZAP für Schadsoftware
 
 Für **lese- oder ungelesene** Nachrichten, die nach der Zustellung Schadsoftware enthalten, isoliert ZAP die Nachricht, die die Schadsoftwareanlage enthält. Nur Administratoren können Schadsoftwarenachrichten aus Quarantäne anzeigen und verwalten.
 
-Schadsoftware-ZAP ist standardmäßig in Anti-Malware-Richtlinien aktiviert. Weitere Informationen finden Sie unter [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
+ZAP für Schadsoftware ist standardmäßig in Anti-Malware-Richtlinien aktiviert. Weitere Informationen finden Sie unter [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
-### <a name="phish-zap"></a>Phish ZAP
+### <a name="zap-for-phishing"></a>ZAP für Phishing
 
 Für lese- oder **ungelesene** Nachrichten, die nach der Zustellung als Phishing identifiziert  werden, hängt das ERGEBNIS von der Aktion ab, die für ein Phishing-E-Mail-Filterergebnis in der entsprechenden Antispamrichtlinie konfiguriert ist. Die verfügbaren Filterungsaktionen für Phishing und deren mögliche ZAP-Ergebnisse werden in der folgenden Liste beschrieben:
 
@@ -69,11 +69,11 @@ Für lese- oder **ungelesene** Nachrichten, die nach der Zustellung als Phishing
 
 - **Quarantänenachricht:** ZAP isoliert die Nachricht.
 
-Standardmäßig ist phish ZAP in Antispamrichtlinien aktiviert, und  die Standardaktion für das Phishing-E-Mail-Filter-Urteil ist **Quarantänenachricht,** was bedeutet, dass die Nachricht standardmäßig von phish ZAP isoliert wird.
+Standardmäßig ist ZAP für Phishing in Antispamrichtlinien aktiviert,  und die Standardaktion für das Phishing-E-Mail-Filter-Urteil ist **Quarantänenachricht**, was bedeutet, dass die Nachricht standardmäßig von ZAP für Phishingquarantäne isoliert wird.
 
 Weitere Informationen zum Konfigurieren von Spamfilterungsverkündungen finden Sie unter [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
-### <a name="spam-zap"></a>Spam-ZAP
+### <a name="zap-for-spam"></a>ZAP für Spam
 
 Bei **ungelesenen** Nachrichten, die nach der Zustellung als Spam identifiziert werden,  hängt das Ergebnis des Zap von der Aktion ab, die für das Spamfilter-Urteil in der entsprechenden Antispamrichtlinie konfiguriert ist. Die verfügbaren Filterungsaktionen für Spam und deren mögliche ZAP-Ergebnisse werden in der folgenden Liste beschrieben:
 

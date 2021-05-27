@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6a34269c414f59d40c9160d5728159ed9cddf976
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 4957c92cb95464213cce4a81ded07de166468c73
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651349"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689013"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Untersuchen von Warnungen in Microsoft 365 Defender
 
@@ -78,6 +78,23 @@ Eine Warnungsseite besteht aus den folgenden Abschnitten:
 :::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Beispiel für die Detailseite einer Warnung im Microsoft 365 Security Center":::
 
 Auf einer Warnungsseite können Sie neben jeder Entität die Ellipsen (**...**) auswählen, um verfügbare Aktionen zu sehen, z. B. das Öffnen der Warnungsseite oder das Verknüpfen der Warnung mit einem anderen Vorfall.
+
+### <a name="alert-sources"></a>Warnungsquellen
+Microsoft 365 Defender-Warnungen können von Lösungen wie Microsoft Defender for Endpoint, Microsoft Defender for Office 365 und Microsoft Cloud App Security. Möglicherweise werden Warnungen mit vorkonfigurierten Zeichen in der Warnung angezeigt. Die folgende Tabelle enthält Anleitungen, mit deren Hilfe Sie die Zuordnung von Warnungsquellen basierend auf dem vorkonfigurierten Zeichen für die Warnung verstehen können.
+
+> [!NOTE]
+> - Die vorab verwendeten GUIDs sind nur für einheitliche Benutzeroberflächen wie vereinheitlichte Benachrichtigungswarteschlange, Seite mit einheitlichen Warnungen, einheitliche Untersuchung und einheitlichen Vorfall spezifisch.<br>
+> - Das vorkonfigurierte Zeichen ändert die GUID der Warnung nicht. Die einzige Änderung an der GUID ist die vorkondierte Komponente.<br>
+
+
+Warnungsquelle | Vorkonfiguriertes Zeichen 
+:---|:---
+Microsoft Defender für Office 365 | `fa{GUID}` <br> Beispiel: `fa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Defender für Endpunkt | `da` oder `ed` für benutzerdefinierte Erkennungswarnungen <br> 
+Microsoft Defender for Identity | `aa{GUID}` <br> Beispiel: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+Microsoft Cloud App Security |`ca{GUID}` <br> Beispiel: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
+
+
 
 ### <a name="analyze-affected-assets"></a>Analysieren betroffener Objekte
 
@@ -140,7 +157,7 @@ Das Klassifizieren von Warnungen und das Angeben ihrer Bestimmung trägt dazu be
 
 Setzen Sie ihre Untersuchung nach Bedarf für Prozessvorfälle [fort.](investigate-incidents.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Übersicht über Vorfälle](incidents-overview.md)
 - [Verwalten von Vorfällen](manage-incidents.md)

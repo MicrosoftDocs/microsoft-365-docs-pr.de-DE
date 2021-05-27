@@ -14,19 +14,16 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.date: 05/06/2021
+ms.date: 05/26/2021
 ms.topic: how-to
-ms.openlocfilehash: 1942531b77df1c2bd9408815d3ad54b4b7211e8b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 34f423222068236271afdda13afb95cffa58b709
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538399"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683811"
 ---
 # <a name="configure-microsoft-defender-antivirus-scanning-options"></a>Konfigurieren der Scanoptionen von Microsoft Defender Antivirus
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Gilt für:**
 
@@ -34,67 +31,75 @@ ms.locfileid: "52538399"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Verwenden Microsoft Intune zum Konfigurieren von Überprüfungsoptionen
 
-Für mehr Details lesen Sie [Konfigurieren von Einstellungen für Geräteeinschränkungen in Microsoft Intune](/intune/device-restrictions-configure) und [Einstellungen für Microsoft Defender Antivirus-Geräteeinschränkungen für Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus).
+Informationen finden Sie in den folgenden Ressourcen: 
+
+- [Konfigurieren von Geräteeinschränkungseinstellungen in Microsoft Intune](/intune/device-restrictions-configure) 
+- [Microsoft Defender Antivirus geräteeinschränkungseinstellungen für Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Verwenden Microsoft Endpoint Manager zum Konfigurieren von Überprüfungsoptionen
 
-Weitere [Informationen zum Konfigurieren von](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings) Microsoft Endpoint Manager (current branch) finden Sie unter Erstellen und Bereitstellen von Antischalwarerichtlinien: Überprüfen Sie die Einstellungen.
+Weitere Informationen finden Sie unter Erstellen [und Bereitstellen von Antischalwarerichtlinien: Überprüfen von Einstellungen](/configmgr/protect/deploy-use/endpoint-antimalware-policies#scan-settings).
 
 ## <a name="use-group-policy-to-configure-scanning-options"></a>Konfigurieren von Überprüfungsoptionen mithilfe von Gruppenrichtlinien
 
-So konfigurieren Sie die in der folgenden Tabelle beschriebenen Gruppenrichtlinieneinstellungen:
+1. Öffnen Sie auf dem Computer, der Ihre Gruppenrichtlinie verwaltet, die [Gruppenrichtlinien-Verwaltungskonsole](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11)).
 
-1. Öffnen Sie auf dem Computer für die Gruppenrichtlinienverwaltung die [Gruppenrichtlinienverwaltungskonsole,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt, das Sie konfigurieren möchten, und klicken Sie auf **Bearbeiten**.
+2. Klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt, das Sie konfigurieren möchten, und wählen Sie dann **Bearbeiten aus.**
 
-2. Wechseln Sie **im Gruppenrichtlinienverwaltungs-Editor** zu **Computerkonfiguration,** und klicken Sie auf **Administrative Vorlagen**.
+3. Wechseln Sie **im Gruppenrichtlinienverwaltungs-Editor** zu **Computerkonfiguration,** und klicken Sie auf **Administrative Vorlagen**.
 
-3. Erweitern Sie die **Struktur, Windows komponenten > Microsoft Defender Antivirus** und  dann den in der folgenden Tabelle angegebenen Speicherort.
+4. Erweitern Sie die **Struktur, Windows Komponenten Microsoft Defender Antivirus**, und wählen Sie dann einen Speicherort aus (siehe Einstellungen  >  und [Speicherorte](#settings-and-locations) in diesem Artikel).
 
-4. Doppelklicken Sie auf die **Richtlinieneinstellung,** wie in der folgenden Tabelle angegeben, und legen Sie die Option auf die gewünschte Konfiguration fest. Klicken **Sie auf OK,** und wiederholen Sie dies für alle anderen Einstellungen.
+5. Bearbeiten Sie das Richtlinienobjekt. 
 
-| Beschreibung | Speicherort und Einstellung | Standardeinstellung (wenn nicht konfiguriert) | `Set-MpPreference`PowerShell-Parameter oder WMI-Eigenschaft für `MSFT_MpPreference` Klasse |
-|---|---|---|---|
-| E-Mail-Überprüfung Siehe [E-Mail-Überprüfungseinschränkungen](#ref1)| Überprüfen > Aktivieren der E-Mail-Überprüfung | Deaktiviert | `-DisableEmailScanning` |
-|Überprüfen [von Überprüfungspunkten](/windows/win32/fileio/reparse-points) | Überprüfen > Aktivieren der Überprüfung von Reparaturpunkts | Deaktiviert | Nicht verfügbar |
-| Überprüfen zugeordneter Netzwerklaufwerke | Scan > Ausführen der vollständigen Überprüfung auf zugeordneten Netzwerklaufwerken | Deaktiviert | `-DisableScanningMappedNetworkDrivesForFullScan`|
- Überprüfen von Archivdateien (z. B. .zip oder .rar Dateien). Die [Ausschlussliste für Erweiterungen](configure-extension-file-exclusions-microsoft-defender-antivirus.md) hat Vorrang vor dieser Einstellung. | Scannen > Archivdateien | Aktiviert | `-DisableArchiveScanning` |
-| Überprüfen von Dateien im Netzwerk | Scannen > Netzwerkdateien | Deaktiviert | `-DisableScanningNetworkFiles` |
-| Scannen von verpackten ausführbaren Dateien | Scannen > von verpackten ausführbaren Dateien | Aktiviert | Nicht verfügbar |
-| Scannen von Wechseldatenträgern nur bei vollständigen Scans | Überprüfen > von Wechseldatenträgern | Deaktiviert | `-DisableRemovableDriveScanning` |
-| Angeben der Ebene der Unterordner in einem zu überprüfenden Archivordner | Scan > Die maximale Tiefe zum Scannen von Archivdateien angeben | 0 | Nicht verfügbar |
-| Geben Sie die maximale CPU-Auslastung (als Prozentsatz) während einer Überprüfung an. Hinweis: Dies ist keine harte Grenze, sondern eine Anleitung für das Scanmodul, dieses Maximum im Durchschnitt nicht zu überschreiten. Manuelles Ausführen von Scans ignoriert diese Einstellung und wird ohne CPU-Grenzwerte ausgeführt. | Scan > Geben Sie den maximalen Prozentsatz der CPU-Auslastung während eines Scans an. | 50 |  `-ScanAvgCPULoadFactor` |
-| Geben Sie die maximale Größe (in Kilobyte) von Archivdateien an, die gescannt werden sollen. Der **Standardwert, 0**, gilt ohne Beschränkung. | Scan > Geben Sie die maximale Größe der zu scannende Archivdateien an. | Keine Begrenzung | Nicht verfügbar |
-| Konfigurieren einer niedrigen CPU-Priorität für geplante Scans | Scan > Konfigurieren einer niedrigen CPU-Priorität für geplante Scans | Deaktiviert | Nicht verfügbar |
+6. Klicken **Sie auf OK,** und wiederholen Sie dies für alle anderen Einstellungen.
+
+### <a name="settings-and-locations"></a>Einstellungen und Speicherorte
+
+| Richtlinienelement und -speicherort | Standardeinstellung (wenn nicht konfiguriert) | `Set-MpPreference`PowerShell-Parameter oder WMI-Eigenschaft für `MSFT_MpPreference` Klasse |
+|---|---|---|
+| E-Mail-Überprüfung <p> **Scannen**  >  **Aktivieren der E-Mail-Überprüfung**<p>Weitere [Informationen finden Sie unter Einschränkungen der E-Mail-Überprüfung](#email-scanning-limitations) (in diesem Artikel) | Deaktiviert | `-DisableEmailScanning` |
+|Überprüfen [von Überprüfungspunkten](/windows/win32/fileio/reparse-points) <p> **Scannen**  >  **Aktivieren der Überprüfung von Reparse point** | Deaktiviert | Nicht verfügbar <p>Weitere [Informationen finden Sie unter Reparse points](/windows/win32/fileio/reparse-points)  |
+| Überprüfen zugeordneter Netzwerklaufwerke <p> **Scannen**  >  **Ausführen der vollständigen Überprüfung auf zugeordneten Netzwerklaufwerken** | Deaktiviert | `-DisableScanningMappedNetworkDrivesForFullScan`|
+| Überprüfen von Archivdateien (z. B. .zip oder .rar Dateien).  <p> **Scannen**  >  **Überprüfen von Archivdateien** | Aktiviert | `-DisableArchiveScanning` <p>Die [Ausschlussliste für Erweiterungen](configure-extension-file-exclusions-microsoft-defender-antivirus.md) hat Vorrang vor dieser Einstellung.|
+| Überprüfen von Dateien im Netzwerk <p> **Scannen**  >  **Überprüfen von Netzwerkdateien** | Deaktiviert | `-DisableScanningNetworkFiles` |
+| Scannen von verpackten ausführbaren Dateien <p> **Scannen**  >  **Scannen von verpackten ausführbaren Dateien** | Aktiviert | Nicht verfügbar |
+| Scannen von Wechseldatenträgern nur bei vollständigen Scans <p> **Scannen**  >  **Scannen von Wechseldatenträgern** | Deaktiviert | `-DisableRemovableDriveScanning` |
+| Angeben der Ebene der Unterordner in einem zu überprüfenden Archivordner <p>**Scannen**  >  **Angeben der maximalen Tiefe zum Überprüfen von Archivdateien** | 0 | Nicht verfügbar |
+| Geben Sie die maximale CPU-Auslastung (als Prozentsatz) während einer Überprüfung an. <p> **Scannen**  >  **Angeben des maximalen Prozentsatzes der CPU-Auslastung während einer Überprüfung** | 50 |  `-ScanAvgCPULoadFactor` <p>**HINWEIS:** Die maximale CPU-Auslastung ist kein harter Grenzwert, sondern eine Anleitung für das Überprüfungsmodul, die maximale durchschnittliche Auslastung nicht zu überschreiten. Manuelles Ausführen von Scans ignoriert diese Einstellung und wird ohne CPU-Grenzwerte ausgeführt. |
+| Geben Sie die maximale Größe (in Kilobyte) von Archivdateien an, die gescannt werden sollen. <p> **Scannen**  >  **Angeben der maximalen Größe der zu scannende Archivdateien** | Keine Begrenzung | Nicht verfügbar <p>Der Standardwert 0 gilt nicht |
+| Konfigurieren einer niedrigen CPU-Priorität für geplante Scans <p> **Scannen**  >  **Konfigurieren einer niedrigen CPU-Priorität für geplante Scans** | Deaktiviert | Nicht verfügbar |
  
 > [!NOTE]
 > Wenn der Echtzeitschutz aktiviert ist, werden Die Dateien überprüft, bevor auf sie zugegriffen und ausgeführt wird. Der Überprüfungsbereich umfasst alle Dateien, einschließlich Dateien auf bereitgestellten Wechselmedien, z. B. USB-Laufwerke. Wenn das Gerät, das die Überprüfung durchführen, über echtzeit- oder Zugriffsschutz verfügt, enthält die Überprüfung auch Netzwerkfreigaben.
 
 ## <a name="use-powershell-to-configure-scanning-options"></a>Konfigurieren von Überprüfungsoptionen mithilfe von PowerShell
 
-Weitere Informationen zur Verwendung von PowerShell mit Microsoft Defender Antivirus finden Sie unter Manage [Microsoft Defender Antivirus with PowerShell cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md) and [Defender cmdlets.](/powershell/module/defender/)
+Informationen finden Sie in den folgenden Ressourcen:
+
+- [Verwalten Microsoft Defender Antivirus mit PowerShell-Cmdlets](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+- [Defender-Cmdlets](/powershell/module/defender/)
 
 ## <a name="use-wmi-to-configure-scanning-options"></a>Konfigurieren von Überprüfungsoptionen mithilfe von WMI
 
-Informationen zur Verwendung von WMI-Klassen finden Sie [Windows Defender WMIv2-APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
-
-<a id="ref1"></a>
+Weitere [Windows Defender WMIv2-APIs finden Sie](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)unter .
 
 ## <a name="email-scanning-limitations"></a>Einschränkungen bei der E-Mail-Überprüfung
 
-Die E-Mail-Überprüfung ermöglicht das Scannen von E-Mail-Dateien, die von Outlook und anderen E-Mail-Clients während bedarfs- und geplanten Scans verwendet werden. Eingebettete Objekte in einer E-Mail-Datei (z. B. Anlagen und archivierte Dateien) werden ebenfalls überprüft. Die folgenden Dateiformattypen können gescannt und behoben werden:
+Die E-Mail-Überprüfung ermöglicht das Scannen von E-Mail-Dateien, die von Outlook und anderen E-Mail-Clients während bedarfs- und geplanten Scans verwendet werden. Eingebettete Objekte in E-Mails (z. B. Anlagen und archivierte Dateien) werden ebenfalls überprüft. Die folgenden Dateiformattypen können gescannt und behoben werden:
 
 - DBX
 - MBX
 - MIME
 
-PST-Dateien, die von Outlook 2003 oder älter verwendet werden (wobei der Archivtyp auf Nicht-Unicode festgelegt ist), werden ebenfalls überprüft, aber Windows Defender kann bedrohungen, die in PST-Dateien erkannt wurden, nicht behoben werden.
+PST-Dateien, die von Outlook 2003 oder älter verwendet werden (wobei der Archivtyp auf Nicht-Unicode festgelegt ist), werden ebenfalls überprüft, aber Microsoft Defender Antivirus kann bedrohungen, die in PST-Dateien erkannt werden, nicht be behebung.
 
-Wenn Microsoft Defender Antivirus eine Bedrohung in einer E-Mail erkennt, werden Ihnen die folgenden Informationen zur Identifizierung der gefährdeten E-Mail-Nachricht gezeigt, sodass Sie die Bedrohung manuell 2013 2013 2013 2013 2014 2014 2014 2014 2013 löschen können:
+Wenn Microsoft Defender Antivirus eine Bedrohung in einer E-Mail-Nachricht erkennt, werden die folgenden Informationen angezeigt, die Ihnen bei der Identifizierung der gefährdeten E-Mail helfen, sodass Sie die Bedrohung manuell 2013 2012 2013 2013 2014 2014 2014 2013 2014 2014 löschen können:
 
 - E-Mail-Betreff
 - Anlagenname
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="see-also"></a>Weitere Artikel
 
 - [Anpassen, Initiieren und Überprüfen der Ergebnisse Microsoft Defender Antivirus Überprüfungen und Korrekturen](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Konfigurieren und Ausführen von bedarfsgesteuerten Scans durch Microsoft Defender Antivirus](run-scan-microsoft-defender-antivirus.md)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f97947c2c9f02720facae4f0c3c29ff702416261
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 99a07b1517058b0e5ab241aaae9c6899e2994432
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023129"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689109"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -48,18 +48,28 @@ Informationen zu anderen Tabellen im Schema "Erweiterte Suche" finden Sie unter 
 | `DeviceId` | string | Eindeutiger Bezeichner für den Computer im Dienst |
 | `DeviceName` | string | Vollqualifizierter Domänenname (FQDN) des Computers |
 | `ClientVersion` | string | Version des Endpunkt-Agents oder -Sensors, der auf dem Computer ausgeführt wird |
-| `PublicIP` | Zeichenfolge | Öffentliche IP-Adresse, die vom integrierten Computer zum Herstellen einer Verbindung mit dem Microsoft Defender for Endpoint-Dienst verwendet wird. Dies kann die IP-Adresse des Computers selbst, eines NAT-Geräts oder eines Proxys sein. |
+| `PublicIP` | string | Öffentliche IP-Adresse, die vom integrierten Computer zum Herstellen einer Verbindung mit dem Microsoft Defender for Endpoint-Dienst verwendet wird. Dies kann die IP-Adresse des Computers selbst, eines NAT-Geräts oder eines Proxys sein. |
 | `OSArchitecture` | string | Die Architektur des Betriebssystem, das auf dem Computer ausgeführt wird. |
 | `OSPlatform` | string | Die Plattform des Betriebssystem, das auf dem Computer ausgeführt wird. Dies gibt bestimmte Betriebssysteme an, einschließlich Variationen innerhalb derselben Familie, z. B. Windows 10 und Windows 7 |
-| `OSBuild` | Zeichenfolge | Erstellen der Version des Betriebssystems, das auf dem Computer ausgeführt wird |
+| `OSBuild` | string | Erstellen der Version des Betriebssystems, das auf dem Computer ausgeführt wird |
 | `IsAzureADJoined` | boolean | Boolescher Indikator, ob der Computer mit der Azure Active Directory |
-| `AadObjectId` | Zeichenfolge | Eindeutige ID für das Gerät in Azure AD |
-| `LoggedOnUsers` | Zeichenfolge | Liste aller Benutzer, die zum Zeitpunkt des Ereignisses im JSON-Arrayformat auf dem Computer angemeldet sind |
-| `RegistryDeviceTag` | Zeichenfolge | Computertag, das über die Registrierung hinzugefügt wurde |
+| `AadObjectId` | string | Eindeutige ID für das Gerät in Azure AD |
+| `LoggedOnUsers` | string | Liste aller Benutzer, die zum Zeitpunkt des Ereignisses im JSON-Arrayformat auf dem Computer angemeldet sind |
+| `RegistryDeviceTag` | string | Computertag, das über die Registrierung hinzugefügt wurde |
 | `OSVersion` | string | Die Version des Betriebssystem, das auf dem Computer ausgeführt wird. |
 | `MachineGroup` | string | Computergruppe des Computers. Diese Gruppe wird von der rollenbasierten Zugriffssteuerung verwendet, um den Zugriff auf den Computer zu bestimmen. |
 | `ReportId` | long | Ereignisbezeichner basierend auf einem Repeating-Indikator. Um eindeutige Ereignisse zu identifizieren, muss diese Spalte in Verbindung mit den Spalten DeviceName und Timestamp verwendet werden. |
-|`AdditionalFields` | Zeichenfolge | Zusätzliche Informationen zum Ereignis im JSON-Arrayformat |
+| `OnboardingStatus` | string | Gibt an, ob das Gerät derzeit in Microsoft Defender For Endpoint onboarded ist oder ob das Gerät nicht unterstützt wird. |
+|`AdditionalFields` | string | Zusätzliche Informationen zum Ereignis im JSON-Arrayformat |
+|`DeviceCategory` | string | Umfassendere Klassifizierung, die bestimmte Gerätetypen in den folgenden Kategorien einteilt: Endpunkt, Netzwerkgerät, IoT, Unbekannt |
+|`DeviceType` | string | Gerätetyp basierend auf Zweck und Funktionalität, z. B. Netzwerkgerät, Arbeitsstation, Server, Mobil, Spielekonsole oder Drucker |
+|`DeviceSubType` | string | Zusätzlicher Modifizierer für bestimmte Gerätetypen, z. B. ein mobiles Gerät kann ein Tablet oder ein Smartphone sein |
+|`Model` | string | Modellname oder Nummer des Produkts des Herstellers oder Herstellers |
+|`Vendor` | string | Name des Produktanbieters oder Herstellers |
+|`OSDistribution` | string | Verteilung der Betriebssystemplattform, z. B. Ubuntu oder RedHat für Linux-Plattformen |
+|`OSVersionInfo` | string | Zusätzliche Informationen zur Betriebssystemversion, z. B. der beliebte Name, der Codename oder die Versionsnummer |
+|`MergedDeviceIds` | string | Frühere Geräte-IDs, die demselben Gerät zugewiesen wurden |
+|`MergedToDeviceId` | string | Die neueste Geräte-ID, die einem Gerät zugewiesen ist |
 
 Die Tabelle enthält Geräteinformationen basierend auf Takten, bei denen es sich um periodische Berichte oder `DeviceInfo` Signale eines Geräts handelt. Alle 15 Minuten sendet das Gerät einen teilweisen Takt, der häufig geänderte Attribute wie `LoggedOnUsers` enthält. Einmal am Tag wird ein vollständiger Takt mit den Attributen des Geräts gesendet.
 

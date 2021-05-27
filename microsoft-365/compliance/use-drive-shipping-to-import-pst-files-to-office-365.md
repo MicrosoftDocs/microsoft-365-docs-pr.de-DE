@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 40829b57-793c-4d41-b171-e9270129173d
 ms.custom: seo-marvel-apr2020
 description: Administratoren erfahren, wie Sie PST-Dateien Microsoft 365 massenimportieren, indem Sie PST-Dateien auf eine Festplatte kopieren und dann an Microsoft senden.
-ms.openlocfilehash: 54b4e3bd7e092699017626c8257c17f965f46f6a
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: a0858e3c1b6bcbe48a4060e8efaa3094768236fb
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52114371"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684078"
 ---
 # <a name="use-drive-shipping-to-import-your-organizations-pst-files"></a>Verwenden des Laufwerkversands zum Importieren der PST-Dateien Ihrer Organisation
 
@@ -55,7 +55,7 @@ Häufig gestellte Fragen zur Verwendung des Laufwerkversands zum Importieren von
 
 - Ihnen muss die Rolle für den Postfachimport/-export in Exchange Online zugewiesen werden, damit Sie PST-Dateien in Microsoft 365-Postfächer importieren können. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle „Postfachimport/-export“ zur Rollengruppe „Organisationsverwaltung“ hinzufügen. Oder Sie erstellen eine Rollengruppe, weisen die Rolle „Postfachimport/-export“ zu und fügen sich dann selbst als Mitglied hinzu. Weitere Informationen finden Sie im Abschnitt "Hinzufügen einer Rolle zu einer Rollengruppe" oder "Erstellen einer Rollengruppe" in [Verwalten von Rollengruppen](/Exchange/permissions-exo/role-groups).
     
-    Darüber hinaus muss eine der folgenden Bedingungen erfüllt sein, um Importaufträge im Security & Compliance Center erstellen zu können:
+    Darüber hinaus muss einer der folgenden Bedingungen erfüllt sein, um Importaufträge im Microsoft 365 Compliance Center zu erstellen:
     
   - In Exchange Online muss Ihnen die Rolle „E-Mail-Empfänger“ zugewiesen werden. Standardmäßig ist diese Rolle den Rollengruppen „Organisationsverwaltung“ und „Empfängerverwaltung“ zugewiesen.
     
@@ -115,16 +115,16 @@ Häufig gestellte Fragen zur Verwendung des Laufwerkversands zum Importieren von
 Der erste Schritt besteht im Herunterladen des sicheren Speicherschlüssels und des Tools, den Sie in Schritt 2 zum Kopieren von PST-Dateien auf die Festplatte verwenden.
   
 > [!IMPORTANT]
-> Sie müssen Azure Import/Export Tool Version 1 (WAimportExportV1) verwenden, um PST-Dateien mithilfe der Laufwerkversandmethode erfolgreich zu importieren. Version 2 des Azure Import/Export wird nicht unterstützt, und die Verwendung dieses Tools führt zu einer fehlerhaften Vorbereitung der Festplatte für den Importauftrag. Laden Sie das Azure Import/Export-Tool aus dem Security & Compliance Center herunter, indem Sie die Verfahren in diesem Schritt durchführen. 
+> Sie müssen Azure Import/Export Tool Version 1 (WAimportExportV1) verwenden, um PST-Dateien mithilfe der Laufwerkversandmethode erfolgreich zu importieren. Version 2 des Azure Import/Export wird nicht unterstützt, und die Verwendung dieses Tools führt zu einer fehlerhaften Vorbereitung der Festplatte für den Importauftrag. Laden Sie das Azure Import/Export-Tool aus dem Microsoft 365 Compliance Center herunter, indem Sie die Verfahren in diesem Schritt durchführen. 
   
-1. Navigieren Sie zu [https://protection.office.com/](https://protection.office.com/), und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an. 
-    
-2. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Information Governance** \> **Import** \> **Importieren von PST-Dateien**.
+1. Navigieren Sie zu <https://compliance.microsoft.com>, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
+
+2. Klicken Sie im linken Navigationsbereich Microsoft 365 Compliance Center auf **Information Governance** \> **Import**.
     
     > [!NOTE]
-    > Wie bereits erwähnt, müssen Ihnen die entsprechenden  Berechtigungen für den Zugriff auf die Importseite im Security & Compliance Center zugewiesen werden. 
+    > Wie bereits erwähnt, müssen Ihnen die entsprechenden  Berechtigungen für den Zugriff auf die Importseite im Microsoft 365 zugewiesen werden. 
   
-3. Klicken Sie auf der Seite **Import von PST-Dateien** ![Symbol hinzufügen](../media/ITPro-EAC-AddIcon.gif) **Neuer Importauftrag**.
+3. Klicken Sie **auf der** Registerkarte Importieren auf Symbol Hinzufügen ![ Neuer ](../media/ITPro-EAC-AddIcon.gif) **Importauftrag**.
     
 4. Geben Sie im Assistenten für den Importauftrag einen Namen für den PST-Importauftrag ein, und klicken Sie dann auf **Weiter**. Verwenden Sie Kleinbuchstaben, Zahlen, Bindestriche und Unterstriche. Sie dürfen weder Großbuchstaben noch Leerzeichen in dem Namen verwenden.
     
@@ -136,7 +136,7 @@ Der erste Schritt besteht im Herunterladen des sicheren Speicherschlüssels und 
     
     ![Kopieren Sie den Sicheren Speicherschlüssel, und laden Sie das Azure Import Export-Tool auf der Seite Daten importieren herunter.](../media/e22e0b48-e5ce-48e0-95bc-0490a2b3b983.png)
   
-    a. Klicken Sie in Schritt 2 auf **Sicherer Speicherschlüssel kopieren.** Nachdem der Speicherschlüssel angezeigt wurde, klicken Sie auf **In** Zwischenablage kopieren, fügen Sie ihn ein, und speichern Sie ihn in einer Datei, damit Sie später darauf zugreifen können.
+    a. Klicken Sie in Schritt 2 auf **Sicherer Speicherschlüssel anzeigen.** Nachdem der Speicherschlüssel angezeigt wurde, klicken Sie auf **In** Zwischenablage kopieren, fügen Sie ihn ein, und speichern Sie ihn in einer Datei, damit Sie später darauf zugreifen können.
     
     b. Laden Sie in Schritt 3 das **Tool Azure Import/Export herunter,** um das Azure Import/Export (Version 1) herunterzuladen und zu installieren.
     
@@ -146,7 +146,7 @@ Der erste Schritt besteht im Herunterladen des sicheren Speicherschlüssels und 
     
 7. Klicken **Sie auf Abbrechen,** um den Assistenten zu schließen. 
     
-    Beim Erstellen des **Importauftrags** in Schritt 4 & Sie zur Seite Importieren im Security & Compliance Center zurück. 
+    Beim Erstellen des **Importauftrags** in Schritt 4 Microsoft 365 Sie zur Seite Importieren im compliance center zurück. 
 
 ## <a name="step-2-copy-the-pst-files-to-the-hard-drive"></a>Schritt 2: Kopieren der PST-Dateien auf die Festplatte
 
@@ -179,7 +179,7 @@ Der nächste Schritt besteht darin, die PST-Dateien mithilfe des Tools WAImportE
     | `/t:` <br/> |Gibt den Buchstaben des Laufwerks an, wenn die Festplatte an Ihren lokalen Computer angeschlossen ist.  <br/> | `/t:h` <br/> |
     | `/id:` <br/> |Gibt den Namen der Kopiersitzung an. Eine Sitzung ist definiert als jeder einzelne Vorgang, in dem Sie das Tool „WAImportExport.exe“ ausführen und Dateien auf die Festplatte kopieren. Die PST-Dateien werden in einen Ordner mit dem Namen der Sitzung kopiert, der durch diesen Parameter angegeben wird.   <br/> | `/id:driveship1` <br/> |
     | `/srcdir:` <br/> |Gibt das Quellverzeichnis in Ihrer Organisation an, das die PST-Dateien enthält, die während der Sitzung kopiert werden. Beachten Sie, den Wert dieses Parameters in doppelte Anführungszeichen (" ") einzuschließen.  <br/> | `/srcdir:"\\FILESERVER01\PSTs"` <br/> |
-    | `/dstdir:` <br/> |Gibt das Zielverzeichnis im Azure Storage in der Microsoft Cloud an, in dem die PSTs hochgeladen werden. Sie müssen den Wert  `ingestiondata/` verwenden. Beachten Sie, den Wert dieses Parameters in doppelte Anführungszeichen (" ") einzuschließen.  <br/> Optional können Sie dem Wert dieses Parameters auch einen zusätzlichen Dateipfad hinzufügen. Sie können z. B. den Dateipfad des Quellverzeichnisses auf der Festplatte (in ein URL-Format konvertiert) verwenden, der im Parameter angegeben  `/srcdir:` ist. Wird z.  `\\FILESERVER01\PSTs` B. in  `FILESERVER01/PSTs` geändert. In diesem Fall müssen Sie den  `ingestiondata` Dateipfad weiterhin verwenden. In diesem Beispiel ist der Wert für den  `/dstdir:` Parameter also  `"ingestiondata/FILESERVER01/PSTs"` .  <br/> Das Hinzufügen des zusätzlichen Dateipfads ist z. B. dann sinnvoll, wenn einige Ihrer PST-Dateien den gleichen Dateinamen aufweisen.  <br/> > [!NOTE]> Wenn Sie den optionalen Pfadnamen eingeben, enthält der Namespace für eine #A0 nach dem Hochladen in den bereich Azure Storage den Pfadnamen und den Namen der PST-Datei. Beispiel: `FILESERVER01/PSTs/annb.pst` . Wenn Sie keinen Pfadnamen eingeben, ist der Namespace nur der PST-Dateiname. beispiel:  `annb.pst` .           | `/dstdir:"ingestiondata/"` <br/> Oder  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
+    | `/dstdir:` <br/> |Gibt das Zielverzeichnis im Azure Storage in der Microsoft Cloud an, in dem die PSTs hochgeladen werden. Sie müssen den Wert  `ingestiondata/` verwenden. Beachten Sie, den Wert dieses Parameters in doppelte Anführungszeichen (" ") einzuschließen.  <br/> Optional können Sie dem Wert dieses Parameters auch einen zusätzlichen Dateipfad hinzufügen. Sie können z. B. den Dateipfad des Quellverzeichnisses auf der Festplatte (in ein URL-Format konvertiert) verwenden, der im Parameter angegeben  `/srcdir:` ist. Wird z.  `\\FILESERVER01\PSTs` B. in  `FILESERVER01/PSTs` geändert. In diesem Fall müssen Sie den  `ingestiondata` Dateipfad weiterhin verwenden. In diesem Beispiel ist der Wert für den  `/dstdir:` Parameter also  `"ingestiondata/FILESERVER01/PSTs"` .  <br/> Das Hinzufügen des zusätzlichen Dateipfads ist z. B. dann sinnvoll, wenn einige Ihrer PST-Dateien den gleichen Dateinamen aufweisen.  <br/> > [!NOTE]> Wenn Sie den optionalen Pfadnamen eingeben, enthält der Namespace für eine #A0 nach dem Hochladen in den bereich Azure Storage den Pfadnamen und den Namen der PST-Datei. Beispiel: `FILESERVER01/PSTs/annb.pst` . Wenn Sie keinen Pfadnamen eingeben, ist der Namespace nur der PST-Dateiname. beispiel:  `annb.pst` .           | `/dstdir:"ingestiondata/"` <br/> Oder:  <br/>  `/dstdir:"ingestiondata/FILESERVER01/PSTs"` <br/> |
     | `/sk:` <br/> |Gibt den Speicherkontoschlüssel an, den Sie in Schritt 1 abgerufen haben. Beachten Sie, den Wert dieses Parameters in doppelte Anführungszeichen (" ") einzuschließen.  <br/> | `"yaNIIs9Uy5g25Yoak+LlSHfqVBGOeNwjqtBEBGqRMoidq6/e5k/VPkjOXdDIXJHxHvNoNoFH5NcVUJXHwu9ZxQ=="` <br/> |
     | `/blobtype:` <br/> |Gibt den Typ der Blobs im Bereich Azure Storage an, in den die PST-Dateien importiert werden. Verwenden Sie zum Importieren von PST-Dateien den Wert **BlockBlob**. Dieser Parameter ist erforderlich.   <br/> | `/blobtype:BlockBlob` <br/> |
     | `/encrypt` <br/> |Diese Option aktiviert BitLocker für die Festplatte. Dieser Parameter ist beim erstmaligen Ausführen des Tools „WAImportExport.exe“ erforderlich.  <br/> Der BitLocker-Verschlüsselungsschlüssel wird in die Journaldatei und die Protokolldatei kopiert, die erstellt wird, wenn Sie den Parameter `/logfile:` verwenden. Wie bereits erwähnt wird die Journaldatei im selben Ordner gespeichert, in dem sich das Tool „WAImportExport.exe“ befindet.  <br/> | `/encrypt` <br/> |
@@ -251,111 +251,109 @@ Nachdem Mitarbeiter des Microsoft Rechenzentrums die PST-Dateien von der Festpla
 
 Der nächste Schritt besteht darin, den PST-Importauftrag im Importdienst in Office 365 zu erstellen. Wie bereits erläutert, übermitteln Sie die pst-Importzuordnungsdatei, die Sie in Schritt 3 erstellt haben. Nachdem Sie den Auftrag erstellt haben, verwendet der Importdienst die Informationen in der Zuordnungsdatei, um die PST-Dateien in das angegebene Benutzerpostfach zu importieren, nachdem die PST-Dateien von der Festplatte in den Bereich Azure Storage kopiert wurden und Sie den Importauftrag erstellen und starten.
   
-1. Navigieren Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an. 
-    
-2. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Information Governance** \> **Import** \> **Importieren von PST-Dateien**.
-    
-3. Klicken Sie auf der Seite **Import von PST-Dateien** ![Symbol hinzufügen](../media/ITPro-EAC-AddIcon.gif) **Neuer Importauftrag**.
-    
+1. Navigieren Sie zu <https://compliance.microsoft.com>, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
+
+2. Klicken Sie im linken Navigationsbereich Microsoft 365 Compliance Center auf **Information Governance** \> **Import**.
+
+3. Klicken Sie **auf der** Registerkarte Importieren auf Symbol Hinzufügen ![ Neuer ](../media/ITPro-EAC-AddIcon.gif) **Importauftrag**.
+
     > [!NOTE]
-    > Wie bereits erwähnt, müssen Ihnen die entsprechenden  Berechtigungen für den Zugriff auf die Importseite im Security & Compliance Center zugewiesen werden. 
+    > Wie bereits erwähnt, müssen Ihnen die entsprechenden  Berechtigungen für den Zugriff auf die Importseite im Microsoft 365 zugewiesen werden.
   
 4. Geben Sie einen Namen für den PST-Importauftrag ein, und klicken Sie dann auf **Weiter**. Verwenden Sie Kleinbuchstaben, Zahlen, Bindestriche und Unterstriche. Sie dürfen weder Großbuchstaben noch Leerzeichen in dem Namen verwenden.
-    
+
 5. Klicken Sie **auf der Seite Auftragstyp** importieren auf **Festplatten** an einen unserer physischen Speicherorte versenden, und klicken Sie dann auf **Weiter**.
-    
-    ![Klicken Sie auf Festplatten an einen unserer physischen Speicherorte versenden, um einen Importauftrag für den Laufwerkversand zu erstellen.](../media/1584fdc5-cd4c-4e47-932e-db6c8e07f5f8.png)
   
 6. Klicken Sie in Schritt 6 auf die Kontrollkästchen Ich **habe** meine  Festplatten vorbereitet und habe Zugriff auf die erforderlichen Laufwerkjournaldateien, und ich habe Zugriff auf die Zuordnungsdatei, und klicken Sie dann auf **Weiter**.
-    
+
     ![Klicken Sie in Schritt 6 auf die beiden Kontrollkästchen.](../media/fad43078-ea68-4acd-b2ed-75a800183262.png)
   
 7. Klicken Sie **auf** der Seite Laufwerkdatei auswählen auf Laufwerksdatei **auswählen,** und wechseln Sie dann zu dem Ordner, in dem sich WAImportExport.exe befindet. Die in Schritt 2 erstellte Journaldatei wurde in diesen Ordner kopiert.
-    
+
     ![Klicken Sie auf Laufwerksdatei auswählen, um die Journaldatei zu übermitteln, die beim Durchführen des Tools WAImportExport.exe wurde](../media/1ea35c04-bd88-4d7e-b7d9-dc390149d94f.png)
   
 8. Wählen Sie die Journaldatei aus. Beispiel: `PSTHDD1.jrn` .
-    
+
     > [!TIP]
-    > Wenn Sie das Tool WAImportExport.exe Schritt 2 ausgeführt haben, wurde der Name der Journaldatei durch den Parameter  `/j:` angegeben. 
+    > Wenn Sie das Tool WAImportExport.exe Schritt 2 ausgeführt haben, wurde der Name der Journaldatei durch den Parameter  `/j:` angegeben.
   
-9. Nachdem der Name der Laufwerksdatei unter **Laufwerkdateiname** angezeigt wird, klicken Sie auf **Überprüfen,** um die Laufwerksdatei auf Fehler zu überprüfen. 
-    
+9. Nachdem der Name der Laufwerksdatei unter **Laufwerkdateiname** angezeigt wird, klicken Sie auf **Überprüfen,** um die Laufwerksdatei auf Fehler zu überprüfen.
+
     ![Klicken Sie auf Überprüfen, um die ausgewählte Laufwerksdatei zu überprüfen.](../media/4b707f5a-152a-4e74-b9f5-449c88d1fec4.png)
   
     Die Laufwerksdatei muss erfolgreich überprüft werden, um einen PST-Importauftrag zu erstellen. Der Dateiname wird grün angezeigt, wenn die Überprüfung der Datei erfolgreich war. Wenn die Überprüfung fehlschlägt, klicken Sie auf den Link **Protokoll anzeigen**. Es wird ein Überprüfungsfehlerbericht mit einer Fehlermeldung mit Informationen dazu geöffnet, warum die Datei fehlgeschlagen ist. 
-    
+
     > [!NOTE]
     > Sie müssen eine Journaldatei für jede Festplatte hinzufügen und überprüfen, die Sie an Microsoft senden. 
   
 10. Klicken Sie nach dem Hinzufügen und Überprüfen einer Journaldatei für jede Festplatte, die Sie an Microsoft senden, auf **Weiter**.
     
 11. Klicken ![ Sie auf Symbol auswählen ](../media/ITPro-EAC-AddIcon.gif) **Zuordnungsdatei auswählen,** um die pst-Importzuordnungsdatei zu übermitteln, die Sie in Schritt 3 erstellt haben. 
-    
+
     ![Klicken Sie auf "Zuordnungsdatei auswählen", um die CSV-Datei zu übermitteln, die Sie für den Importvorgang erstellt haben.](../media/d30b1d73-80bb-491e-a642-a21673d06889.png)
   
 12. Wenn der Name der CSV-Datei unter **Name der Zuordnungsdatei** angezeigt wird, klicken Sie auf **Überprüfen**, um die CSV-Datei auf Fehler zu überprüfen. 
-    
+
     ![Klicken Sie auf "Überprüfen", um die CSV-Datei auf Fehler zu überprüfen.](../media/4680999d-5538-4059-b878-2736a5445037.png)
   
     Die CSV-Datei muss erfolgreich überprüft werden, um einen PST-Importauftrag zu erstellen. Der Dateiname wird grün angezeigt, wenn die Überprüfung der Datei erfolgreich war. Wenn die Überprüfung fehlschlägt, klicken Sie auf den Link **Protokoll anzeigen**. Der Bericht mit den Überprüfungsfehlern wird geöffnet, in dem für jede Zeile in der Datei, in der ein Fehler aufgetreten ist, eine Fehlermeldung aufgeführt ist. 
-    
+
 13. Nachdem die PST-Zuordnungsdatei erfolgreich überprüft wurde, klicken Sie auf **Weiter**.
-    
+
 14. Geben Sie **auf der Seite Kontaktinformationen** bereitstellen Ihre Kontaktinformationen in die entsprechenden Felder ein. 
-    
+
     Die Adresse für den Microsoft-Standort, an den Sie Ihre Festplatten versenden, wird angezeigt. Diese Adresse wird basierend auf Ihrem Microsoft-Rechenzentrumsspeicherort automatisch generiert. Kopieren Sie diese Adresse in eine Datei oder erstellen Sie einen Screenshot.
-    
+
 15. Lesen Sie das Dokument mit den Geschäftsbedingungen, klicken Sie auf das Kontrollkästchen, und klicken Sie dann auf **Speichern,** um den Importauftrag zu übermitteln. 
-    
+
     Wenn der Importauftrag erfolgreich erstellt wurde, wird eine Statusseite angezeigt, auf der die nächsten Schritte des Laufwerkversandprozesses erläutert werden.
-    
-16. Klicken Sie **auf der Seite PST-Dateien** importieren auf Aktualisierungssymbol Aktualisieren, um den neuen Importauftrag für den Laufwerkversand in der Liste ![ der ](../media/O365-MDM-Policy-RefreshIcon.gif)  Importaufträge angezeigt zu bekommen. Der Status ist auf Warten **auf Nachverfolgungsnummer festgelegt.** Sie können auch auf den Importauftrag klicken, um die Statusf flyout-Seite mit ausführlicheren Informationen zum Importauftrag anzeigen zu können.
- 
+
+16. Klicken Sie **auf der** Registerkarte Importieren auf Aktualisierungssymbol Aktualisieren, um den neuen Importauftrag für den Laufwerkversand in der Liste ![ der ](../media/O365-MDM-Policy-RefreshIcon.gif)  Importaufträge angezeigt zu bekommen. Der Status ist auf Warten **auf Nachverfolgungsnummer festgelegt.** Sie können auch auf den Importauftrag klicken, um die Statusf flyout-Seite mit ausführlicheren Informationen zum Importauftrag anzeigen zu können.
+
 ## <a name="step-5-ship-the-hard-drive-to-microsoft"></a>Schritt 5: Versenden der Festplatte an Microsoft
 
 Im nächsten Schritt wird die Festplatte an Microsoft gesendet und dann die Nachverfolgungsnummer für die Lieferung und die Lieferinformationen für den Laufwerkversandauftrag zur Verfügung stellen. Nachdem das Laufwerk von Microsoft empfangen wurde, dauert es zwischen 7 und 10 Werktagen, bis Mitarbeiter des Rechenzentrums Ihre PST-Dateien in den Azure Storage ihrer Organisation hochladen.
   
 > [!NOTE]
-> Wenn Sie die Nachverfolgungsnummer und die Lieferinformationen nicht innerhalb von 14 Tagen nach dem Erstellen des Importauftrags zurückgeben, läuft der Importauftrag ab. In diesem Fall müssen Sie einen neuen Importauftrag für den Laufwerkversand erstellen (siehe Schritt 4: Erstellen eines [PST-Importauftrags in Office 365](#step-4-create-a-pst-import-job-in-office-365)) und die Laufwerksdatei und die PST-Importzuordnungsdatei erneut übermitteln. 
+> Wenn Sie die Nachverfolgungsnummer und die Lieferinformationen nicht innerhalb von 14 Tagen nach dem Erstellen des Importauftrags zurückgeben, läuft der Importauftrag ab. In diesem Fall müssen Sie einen neuen Importauftrag für den Laufwerkversand erstellen (siehe Schritt 4: Erstellen eines [PST-Importauftrags in Office 365](#step-4-create-a-pst-import-job-in-office-365)) und die Laufwerksdatei und die PST-Importzuordnungsdatei erneut übermitteln.
   
 ### <a name="ship-the-hard-drive"></a>Versenden der Festplatte
 
 Beachten Sie die folgenden Punkte, wenn Sie Festplatten an Microsoft senden:
   
 - Versenden Sie den SATA-zu-USB-Adapter nicht. Sie müssen nur die Festplatte versenden.
-    
+
 - Verpacken Sie die Laufwerke ordnungsgemäß; verwenden Sie z. B. antistatische Verpackung oder Luftpolsterfolie.
-    
+
 - Senden Sie die Festplatte mit einem Spediteur Ihrer Wahl an Microsoft.
-    
+
 - Verwenden Sie als Versandadresse den Microsoft-Standort, der Ihnen beim Erstellen des Importauftrags in Schritt 4 angezeigt wurde. Vergessen Sie nicht, in der Versandadresse den Zusatz „Office 365 Import Service“ anzugeben.
-    
+
 - Nachdem Sie die Festplatte versendet haben, notieren Sie sich den Namen des Spediteurs und die Nachverfolgungsnummer. Diese müssen Sie im nächsten Schritt angeben.
     
 ### <a name="enter-the-tracking-number-and-other-shipping-information"></a>Eingabe der Nachverfolgungsnummer und anderer Versandinformationen
 
 Nachdem Sie die Festplatte an Microsoft gesendet haben, führen Sie auf der Seite des Importdiensts die folgenden Schritte aus.
   
-1. Navigieren Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an. 
-    
-2. Klicken Sie im linken Bereich auf **Informationsverwaltung > Importieren > Importieren von PST-Dateien**.
-    
-3. Klicken Sie auf der Seite **PST-Dateien** importieren auf den Auftrag für die Laufwerkslieferung, für die Sie die Nachverfolgungsnummer eingeben möchten. 
-    
+1. Navigieren Sie zu <https://compliance.microsoft.com>, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
+
+2. Klicken Sie im linken Navigationsbereich des compliance center Microsoft 365 auf **Informationsverwaltung > Importieren**.
+
+3. Klicken Sie **auf** der Registerkarte Importieren auf den Auftrag für die Laufwerkslieferung, für die Sie die Nachverfolgungsnummer eingeben möchten.
+
 4. Klicken Sie auf der Seite Statusf flyout auf **Trackingnummer eingeben.**
-    
+
 5. Geben Sie die folgenden Versandinformationen an:
-    
-1. **Zustellungsanbieter** Geben Sie den Namen des Zustellanbieters ein, den Sie zum Versenden der Festplatte an Microsoft verwendet haben. 
-    
-2. **Nachverfolgungsnummer** Geben Sie die Nachverfolgungsnummer für die Festplattenlieferung ein. 
-    
-3. **Kontonummer des Netzbetreibers zurückgeben** Geben Sie die Kontonummer Ihrer Organisation für den Netzbetreiber ein, der unter **Rückgabeanbieter aufgeführt ist.** Microsoft verwendet (und berechnet) dieses Konto, um Ihre Festplatte an Sie zurück zu senden. Organisationen in den USA und Europa müssen über ein Konto bei FedEx verfügen. Organisationen in Asien und dem Rest der Welt müssen über ein Konto bei DHL verfügen.
-    
+
+   1. **Zustellungsanbieter** Geben Sie den Namen des Zustellanbieters ein, den Sie zum Versenden der Festplatte an Microsoft verwendet haben. 
+
+   2. **Nachverfolgungsnummer** Geben Sie die Nachverfolgungsnummer für die Festplattenlieferung ein. 
+
+   3. **Kontonummer des Netzbetreibers zurückgeben** Geben Sie die Kontonummer Ihrer Organisation für den Netzbetreiber ein, der unter **Rückgabeanbieter aufgeführt ist.** Microsoft verwendet (und berechnet) dieses Konto, um Ihre Festplatte an Sie zurück zu senden. Organisationen in den USA und Europa müssen über ein Konto bei FedEx verfügen. Organisationen in Asien und dem Rest der Welt müssen über ein Konto bei DHL verfügen.
+
 6. Klicken Sie auf **Speichern**, um diese Informationen für den Importauftrag zu speichern. 
-    
-    Klicken Sie **auf der Seite PST-Dateien** importieren auf Aktualisierungssymbol Aktualisieren, um die Informationen für Ihren Importauftrag für ![ den ](../media/O365-MDM-Policy-RefreshIcon.gif)  Laufwerkversand zu aktualisieren. Beachten Sie, dass der Status jetzt **Festplatten werden gesendet** lautet.
+
+    Klicken Sie **auf der Registerkarte** Import auf Aktualisierungssymbol Aktualisieren, um die Informationen für Ihren Importauftrag für ![ den ](../media/O365-MDM-Policy-RefreshIcon.gif)  Laufwerkversand zu aktualisieren. Beachten Sie, dass der Status jetzt **Festplatten werden gesendet** lautet.
 
 ## <a name="step-6-filter-data-and-start-the-pst-import-job"></a>Schritt 6: Filtern von Daten und Starten des PST-Importauftrags
 
@@ -363,85 +361,82 @@ Nachdem Ihre Festplatte von Microsoft empfangen wurde, ändert sich der Status f
   
 Nachdem PST-Dateien in Azure hochgeladen wurden, wird der Status in **Analyse in Bearbeitung geändert.** Dies bedeutet, Microsoft 365 die Daten in den PST-Dateien (sicher und sicher) analysiert, um das Alter der Elemente und die verschiedenen Nachrichtentypen zu identifizieren, die in den PST-Dateien enthalten sind. Wenn die Analyse abgeschlossen ist und die Daten importiert werden können, wird der Status für den Importauftrag in **Analysis completed geändert.** An diesem Punkt haben Sie die Möglichkeit, alle In den PST-Dateien enthaltenen Daten zu importieren, oder Sie können die importierten Daten kürzen, indem Sie Filter festlegen, die steuern, welche Daten importiert werden.
   
-1. Navigieren Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an. 
-    
-2. Klicken Sie im linken Bereich auf **Informationsverwaltung** \> **Importieren von** \> **PST-Dateien importieren.**
-    
-3. Klicken Sie auf der Seite **PST-Dateien** importieren auf Bereit zum Importieren in **Office 365** für den Importauftrag, den Sie in Schritt 4 erstellt haben. 
-    
-    ![Klicken Sie neben dem von Ihnen erstellten Importvorgang auf "Bereit für den Import in Microsoft 365".](../media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
+1. Navigieren Sie zu <https://compliance.microsoft.com>, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
+
+2. Klicken Sie im linken Navigationsbereich Microsoft 365 Compliance Center auf **Informationsverwaltung** \> **Import****.
+
+3. Wählen Sie **auf der** Registerkarte Importieren den Importauftrag aus, den Sie in Schritt 4 erstellt haben, und klicken Sie auf Importieren **in Office 365**.
   
     Nun wird eine Flyout-Seite mit Informationen zu den PST-Dateien und anderen Informationen zur Importaufgabe angezeigt.
-    
+
 4. Klicken **Sie auf Importieren in Office 365**.
-    
+
 5. Die Seite **Ihre Daten filtern** wird angezeigt. Sie enthält die Datenerkenntnisse, die sich aus der Analyse ergeben haben, die Office 365 für die PST-Dateien ausgeführt hat, einschließlich Informationen über das Alter der Daten. An diesem Punkt haben Sie die Möglichkeit, die zu importierenden Daten zu filtern oder alle Daten ungeändert zu importieren. 
-    
+
     ![Sie können die Daten in den PST-Dateien kürzen oder alles importieren](../media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
 6. Führen Sie einen der folgenden Schritte aus:
-    
+
     a. Um die Daten, die Sie importieren, zu trimmen, klicken Sie auf **Ja, ich möchte meine Daten vor dem Import filtern**.
-    
+
     Detaillierte schrittweise Anweisungen zum Filtern der Daten in den PST-Dateien und anschließenden Starten des Importvorgangs finden Sie unter [Filtern von Daten beim Importieren von PST-Dateien in Office 365](filter-data-when-importing-pst-files.md).
-    
+
     Oder
-    
+
     b. Um alle Daten zu importieren, die sich in den PST-Dateien befinden, klicken Sie auf **Nein, ich möchte alles importieren**, und klicken Sie auf **Weiter**.
-    
+
 7. Wenn Sie sich entschieden haben, alle Daten zu importieren, klicken Sie auf **Daten importieren**, um den Importvorgang zu starten. 
-    
+
     Der Status des Importauftrags wird auf der Seite **PST-Dateien importieren** angezeigt. Klicken Sie auf ![Aktualisieren-Symbol](../media/O365-MDM-Policy-RefreshIcon.gif) **Aktualisieren**, um die Statusinformationen zu aktualisieren, die in der Spalte **Status** angezeigt werden. Klicken Sie auf den Importauftrag, um die Status-Flyout-Seite anzuzeigen, auf der die Statusinformationen zu jeder zu importierenden PST-Datei angezeigt werden. Wenn der Import abgeschlossen ist, und die PST-Dateien in die Benutzerpostfächer importiert wurden, wird der Status in **Abgeschlossen** geändert.
 
 ## <a name="view-a-list-of-the-pst-files-uploaded-to-microsoft-365"></a>Anzeigen einer Liste der pst-Dateien, die in das Microsoft 365
 
 Sie können das Microsoft Azure Storage-Explorer (ein kostenloses Open-Source-Tool) installieren und verwenden, um die Liste der PST-Dateien, die wir hochgeladen haben (von Mitarbeitern des Microsoft Rechenzentrums) in den Azure Storage-Bereich für Ihre Organisation zu sehen. So können Sie überprüfen, ob PST-Dateien von den festplatten, die Sie an Microsoft gesendet haben, erfolgreich in den Azure Storage wurden.
   
-Der Microsoft Azure Storage-Explorer befindet sich in der Vorschau. 
+> [!IMPORTANT]
+> Sie können den Azure Storage-Explorer nicht verwenden, um PST-Dateien hochzuladen oder zu ändern. Die einzige unterstützte Methode zum Importieren von PST-Dateien in Microsoft 365 ist die Verwendung von AzCopy. Außerdem können Sie keine PST-Dateien löschen, die Sie in das Azure-Blob hochgeladen haben. Wenn Sie versuchen, eine PST-Datei zu löschen, wird eine Fehlermeldung angezeigt, dass Sie nicht über die erforderlichen Berechtigungen verfügen. Alle PST-Dateien werden automatisch aus Ihrem Azure Storage gelöscht. Wenn keine Importaufträge ausgeführt werden, werden alle PST-Dateien im Container ** ingestiondata ** 30 Tage nach dem Erstellen des letzten Importauftrags gelöscht.
   
- **Wichtig:** Sie können das Azure Storage-Explorer nicht zum Hochladen oder Ändern von PST-Dateien verwenden. Die einzige unterstützte Methode zum Importieren von PST-Dateien in Microsoft 365 ist die Verwendung von AzCopy. Außerdem können Sie keine PST-Dateien löschen, die Sie in das Azure-Blob hochgeladen haben. Wenn Sie versuchen, eine PST-Datei zu löschen, wird eine Fehlermeldung angezeigt, dass Sie nicht über die erforderlichen Berechtigungen verfügen. Alle PST-Dateien werden automatisch aus Ihrem Azure Storage gelöscht. Wenn keine Importaufträge ausgeführt werden, werden alle PST-Dateien im Container ** ingestiondata ** 30 Tage nach dem Erstellen des letzten Importauftrags gelöscht. 
-  
+Führen Sie die folgenden Schritte aus, um die SAS-URL (Shared Access Signature) für Ihre Organisation zu erhalten. Diese URL ist eine Kombination aus der Netzwerk-URL für Azure Storage standort in der Microsoft-Cloud für Ihre Organisation und einem SAS-Schlüssel. Dieser Schlüssel bietet Ihnen die erforderlichen Berechtigungen für den Zugriff auf den Standort Azure Storage Organisation.
+
 So installieren Sie den Azure Storage-Explorer und Verbinden diesen mit Ihrem -Speicherbereich:
-  
-1. Führen Sie die folgenden Schritte aus, um die SAS-URL (Shared Access Signature) für Ihre Organisation zu erhalten. Diese URL ist eine Kombination aus der Netzwerk-URL für Azure Storage standort in der Microsoft-Cloud für Ihre Organisation und einem SAS-Schlüssel. Dieser Schlüssel bietet Ihnen die erforderlichen Berechtigungen für den Zugriff auf den Standort Azure Storage Organisation.
-    
-1. Navigieren Sie zu [https://protection.office.com/](https://protection.office.com/), und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an. 
-    
-2. Klicken Sie im linken Bereich des Security & Compliance Center auf **Information Governance > Import > Importieren von PST-Dateien**.
-    
-3. Klicken Sie auf der Seite **Import von PST-Dateien** ![Symbol hinzufügen](../media/ITPro-EAC-AddIcon.gif) **Neuer Importauftrag**.
-    
+
+1. Navigieren Sie zu <https://compliance.microsoft.com>, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
+
+2. Klicken Sie im linken Bereich Microsoft 365 Compliance Center auf **Informationsverwaltung > Importieren**.
+
+3. Klicken Sie **auf der** Registerkarte Importieren auf Symbol Hinzufügen ![ Neuer ](../media/ITPro-EAC-AddIcon.gif) **Importauftrag**.
+
 4. Geben Sie im Assistenten für den Importauftrag einen Namen für den PST-Importauftrag ein, und klicken Sie dann auf **Weiter**. Verwenden Sie Kleinbuchstaben, Zahlen, Bindestriche und Unterstriche. Sie dürfen weder Großbuchstaben noch Leerzeichen in dem Namen verwenden.
-    
+
 5. Klicken Sie auf der Seite **Auftragstyp** importieren auswählen **auf Hochladen** Und klicken Sie dann auf **Weiter**.
-    
+
 6. Klicken Sie in Schritt 2 auf **SAS-URL für Netzwerkupload anzeigen**.
-    
+
 7. Nachdem die URL angezeigt wurde, kopieren Sie sie, und speichern Sie sie in einer Datei. Kopieren Sie unbedingt die gesamte URL.
-    
+
     > [!IMPORTANT]
-    > Achten Sie darauf, dass Sie entsprechende Vorsichtsmaßnahmen ergreifen, um die SAS-URL zu schützen. Dies kann von jedem Benutzer verwendet werden, um auf den Azure-Speicherbereich für Ihre Organisation zu zugreifen. 
+    > Achten Sie darauf, dass Sie entsprechende Vorsichtsmaßnahmen ergreifen, um die SAS-URL zu schützen. Dies kann von jedem Benutzer verwendet werden, um auf den Azure-Speicherbereich für Ihre Organisation zu zugreifen.
   
-8. Klicken **Sie auf Abbrechen,** um den Importauftrags-Assistenten zu schließen. 
-    
-2. Laden Sie das Tool [Microsoft Azure Storage-Explorer](https://go.microsoft.com/fwlink/p/?LinkId=544842) herunter, und installieren Sie es.
-    
-3. Starten Sie den Microsoft Azure Storage-Explorer, klicken Sie im linken Bereich mit der rechten Maustaste auf **Speicherkonten**, und klicken Sie dann auf **Mit Azure Storage verbinden**.
-    
+8. Klicken **Sie auf Abbrechen,** um den Importauftrags-Assistenten zu schließen.
+
+9. Laden Sie das Tool [Microsoft Azure Storage-Explorer](https://go.microsoft.com/fwlink/p/?LinkId=544842) herunter, und installieren Sie es.
+
+10. Starten Sie den Microsoft Azure Storage-Explorer, klicken Sie im linken Bereich mit der rechten Maustaste auf **Speicherkonten**, und klicken Sie dann auf **Mit Azure Storage verbinden**.
+
     ![Klicken Sie mit der rechten Maustaste auf "Speicherkonten", und klicken Sie dann auf "Mit Azure Storage verbinden".](../media/75b80cc3-c336-4f96-ad32-54ac9b96a7af.png)
   
-4. Klicken Sie auf **SAS-URI (Shared Access Signature) oder -Verbindungszeichenfolge verwenden**, und klicken Sie dann auf **Weiter**.
-    
-5. Klicken **Sie auf SAS-URI verwenden,** fügen Sie die IN-URL, die Sie in Schritt 1 erhalten haben, in das Feld unter **URI** ein, und klicken Sie dann auf **Weiter**.
-    
-6. Auf der Seite **Verbindungszusammenfassung** können Sie die Verbindungsinformationen überprüfen und dann auf **Verbinden** klicken.
-    
+11. Klicken Sie auf **SAS-URI (Shared Access Signature) oder -Verbindungszeichenfolge verwenden**, und klicken Sie dann auf **Weiter**.
+
+12. Klicken **Sie auf SAS-URI verwenden,** fügen Sie die IN-URL, die Sie in Schritt 1 erhalten haben, in das Feld unter **URI** ein, und klicken Sie dann auf **Weiter**.
+
+13. Auf der Seite **Verbindungszusammenfassung** können Sie die Verbindungsinformationen überprüfen und dann auf **Verbinden** klicken.
+
     Der **Container** ingestiondata wird geöffnet. Es enthält die PST-Dateien von Ihrer Festplatte. Der Container **ingestiondata** befindet sich unter **Speicherkonten** \> **(SAS-Attached Services)** \> **BLOB-Container**.
-    
+
     ![Im Azure Storage-Explorer wird eine Liste der PST-Dateien angezeigt, die Sie hochgeladen haben.](../media/12376fed-13a5-4a09-8fe6-e819e011b334.png)
   
-7. Wenn Sie mit der Verwendung des Microsoft Azure Storage-Explorers fertig sind, klicken Sie mit der rechten Maustaste auf **ingestiondata**, und klicken Sie dann auf **Trennen**, um die Verbindung mit dem Azure-Speicherbereich zu trennen. Andernfalls wird beim nächsten Anfügen eine Fehlermeldung angezeigt. 
-    
+14. Wenn Sie mit der Verwendung des Microsoft Azure Storage-Explorers fertig sind, klicken Sie mit der rechten Maustaste auf **ingestiondata**, und klicken Sie dann auf **Trennen**, um die Verbindung mit dem Azure-Speicherbereich zu trennen. Andernfalls wird beim nächsten Anfügen eine Fehlermeldung angezeigt. 
+
     ![Klicken Sie mit der rechten Maustaste auf "ingestion", und klicken Sie dann auf "Trennen", um die Verbindung von Ihrem Azure-Speicherbereich zu trennen.](../media/1e8e5e95-4215-4ce4-a13d-ab5f826a0510.png)
 
 ## <a name="troubleshooting-tips"></a>Tipps zur Problembehandlung
@@ -454,23 +449,22 @@ So installieren Sie den Azure Storage-Explorer und Verbinden diesen mit Ihrem -S
 ## <a name="more-information"></a>Weitere Informationen
 
 - Der Laufwerkversand ist eine effektive Möglichkeit, große Mengen von Archivnachrichtendaten in Microsoft 365 zu importieren, um die Compliancefeatures zu nutzen, die In Ihrer Organisation zur Verfügung stehen. Nachdem Archivdaten in Benutzerpostfächer importiert wurden, können Sie:
-    
+
   - Aktivieren [Sie Archivpostfächer und](enable-archive-mailboxes.md) automatisch [erweiternde Archivierung,](enable-unlimited-archiving.md) um Benutzern mehr Speicherplatz für die Daten zu bieten. 
-    
+
   - Platzieren Sie Postfächer im [Prozesssicherungsverfahren,](./create-a-litigation-hold.md) um die Daten zu speichern. 
-    
+
   - Verwenden Sie Microsoft [eDiscovery-Tools,](search-for-content.md) um die Daten zu durchsuchen. 
-    
+
   - Wenden [Microsoft 365 Aufbewahrungsrichtlinien](retention.md) an, um zu steuern, wie lange die Daten aufbewahrt werden und welche Maßnahmen nach Ablauf des Aufbewahrungszeitraums zu ergreifen sind. 
-    
+
   - Durchsuchen Sie [das Überwachungsprotokoll](search-the-audit-log-in-security-and-compliance.md) nach Ereignissen im Zusammenhang mit diesen Daten. 
-    
+
   - Importieren Sie Daten [in inaktive Postfächer,](create-and-manage-inactive-mailboxes.md) um Daten zu Compliancezwecken zu archivieren. 
-    
+
   - Schützen Sie Ihre Organisation [vor Datenverlusten](dlp-learn-about-dlp.md) vertraulicher Informationen. 
-    
+
 - Im Folgenden sehen Sie ein Beispiel für einen sicheren Speicherkontoschlüssel und einen BitLocker-Verschlüsselungsschlüssel. Dieses Beispiel enthält auch die Syntax für den Befehl „WAImportExport.exe“, den Sie zum Kopieren der PST-Dateien auf die Festplatte ausführen. Ergreifen Sie entsprechende Vorsichtsmaßnahmen, um diese so zu schützen, wie Sie Kennwörter oder andere Sicherheitsinformationen schützen würden.
-    
 
     ```text
     Secure storage account key: 
@@ -503,11 +497,9 @@ So installieren Sie den Azure Storage-Explorer und Verbinden diesen mit Ihrem -S
     ```
 
 - Wie weiter oben erläutert, aktiviert der Office 365-Import-Dienst die Einstellung zum Anhalten der Aufbewahrungszeit (für eine unbestimmte Dauer), nachdem PST-Dateien in ein Postfach importiert wurden. Dies  *bedeutet, dass die Eigenschaft RentionHoldEnabled*  auf festgelegt ist, damit die dem Postfach zugewiesene  `True` Aufbewahrungsrichtlinie nicht verarbeitet wird. Dadurch erhält der Postfachbesitzer Zeit zum Verwalten der neu importierten Nachrichten, indem verhindert wird, dass eine Lösch- oder Archivrichtlinie ältere Nachrichten löscht oder archiviert. Hier sind einige Schritte, die Sie zum Verwalten des Anhaltens der Aufbewahrungszeit ausführen können: 
-    
-  - Nach einem bestimmten Zeitraum können Sie die Aufbewahrungsaufbewahrung deaktivieren, indem Sie den Befehl  `Set-Mailbox -RetentionHoldEnabled $false` ausführen. Entsprechende Anweisungen finden Sie unter [Anhalten der Aufbewahrungszeit für ein Postfach](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold).
-    
-  - Sie können das Anhalten der Aufbewahrungszeit so konfigurieren, dass es an irgendeinem Datum in der Zukunft deaktiviert wird. Dazu wird der Befehl  `Set-Mailbox -EndDateForRetentionHold <date>` ausgeführt. Angenommen, das heutige Datum ist der 1. Juni 2016, und Sie möchten, dass die Aufbewahrungsaufbewahrung in 30 Tagen deaktiviert ist, führen Sie den folgenden Befehl aus:  `Set-Mailbox -EndDateForRetentionHold 7/1/2016` . In diesem Szenario würden Sie die *RentionHoldEnabled-Eigenschaft* auf *True festlegen.* Weitere Informationen finden Sie unter [Set-Mailbox](/powershell/module/exchange/set-mailbox).
-    
-  - Sie können die Einstellungen für die dem Postfach zugewiesene Aufbewahrungsrichtlinie ändern, damit ältere importierte Elemente nicht sofort gelöscht oder in das Archivpostfach des Benutzers verschoben werden. So könnten Sie beispielsweise die Aufbewahrungszeit bei einer Lösch- oder Archivrichtlinie, die dem Postfach zugewiesen wurde, verlängern. In diesem Szenario würden Sie das Anhalten der Aufbewahrungszeit für das Postfach deaktivieren, nachdem Sie die Einstellungen der Aufbewahrungsrichtlinie geändert haben. Weitere Informationen finden Sie unter [Einrichten einer Archivierungs- und Löschrichtlinie für Postfächer in Ihrer Organisation](set-up-an-archive-and-deletion-policy-for-mailboxes.md).
-    
 
+  - Nach einem bestimmten Zeitraum können Sie die Aufbewahrungsaufbewahrung deaktivieren, indem Sie den Befehl  `Set-Mailbox -RetentionHoldEnabled $false` ausführen. Entsprechende Anweisungen finden Sie unter [Anhalten der Aufbewahrungszeit für ein Postfach](/exchange/security-and-compliance/messaging-records-management/mailbox-retention-hold).
+
+  - Sie können das Anhalten der Aufbewahrungszeit so konfigurieren, dass es an irgendeinem Datum in der Zukunft deaktiviert wird. Dazu wird der Befehl  `Set-Mailbox -EndDateForRetentionHold <date>` ausgeführt. Angenommen, das heutige Datum ist der 1. Juni 2016, und Sie möchten, dass die Aufbewahrungsaufbewahrung in 30 Tagen deaktiviert ist, führen Sie den folgenden Befehl aus:  `Set-Mailbox -EndDateForRetentionHold 7/1/2016` . In diesem Szenario würden Sie die *RentionHoldEnabled-Eigenschaft* auf *True festlegen.* Weitere Informationen finden Sie unter [Set-Mailbox](/powershell/module/exchange/set-mailbox).
+
+  - Sie können die Einstellungen für die dem Postfach zugewiesene Aufbewahrungsrichtlinie ändern, damit ältere importierte Elemente nicht sofort gelöscht oder in das Archivpostfach des Benutzers verschoben werden. So könnten Sie beispielsweise die Aufbewahrungszeit bei einer Lösch- oder Archivrichtlinie, die dem Postfach zugewiesen wurde, verlängern. In diesem Szenario würden Sie das Anhalten der Aufbewahrungszeit für das Postfach deaktivieren, nachdem Sie die Einstellungen der Aufbewahrungsrichtlinie geändert haben. Weitere Informationen finden Sie unter [Einrichten einer Archivierungs- und Löschrichtlinie für Postfächer in Ihrer Organisation](set-up-an-archive-and-deletion-policy-for-mailboxes.md).

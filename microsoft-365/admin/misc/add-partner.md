@@ -21,12 +21,12 @@ search.appverid:
 - GEA150
 ms.assetid: f86e8177-936e-491e-9024-44dea2b296ff
 description: Fügen Sie zum Zeitpunkt des Kaufs Microsoft 365 einen Datensatzpartner hinzu, ändern Sie den Partner, oder löschen Sie einen Partner aus einem Abonnement.
-ms.openlocfilehash: e21c324bc84e360b80deae2abeec610e73834819
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 4cebbce41cbd2a500cc502b808734f6056271d12
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624525"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683343"
 ---
 # <a name="add-change-or-delete-a-subscription-advisor-partner"></a>Hinzufügen, Ändern oder Löschen eines Abonnementberaterpartners
 
@@ -43,17 +43,17 @@ ms.locfileid: "52624525"
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>Bevor Sie beginnen
+::: moniker range="o365-germany"
+
+[] Ein autorisierter Microsoft-Partner, der als Abonnementberater fungiert, verfügt in den Bereichen Verkauf, Support und Technik über das Fachwissen, das Sie benötigen, um Ihr Abonnement einzurichten und zu verwalten. Sie können einen Abonnementberaterpartner beim Erwerb von Office 365 oder zu einem anderen Zeitpunkt als Partner of Record hinzufügen. Wenn Sie derzeit nicht mit einem Partner arbeiten, finden Sie diese auch auf der [Microsoft Pinpoint-Website.](https://pinpoint.microsoft.com)
+
+::: moniker-end
+
+## <a name="before-you-begin"></a>Vorabinformationen
 
 ::: moniker range="o365-worldwide"
 
 Der von Ihnen bzw. Ihnen Microsoft-Dienste Partner hängt von der von Ihnen verwendeten Umgebung und dem Land oder der Region ab, in dem Sie diese Dienste nutzen. Wenn Sie einen Partner hinzufügen oder den Partner für Ihr Abonnement ändern, müssen Sie den Partner zuerst nach seiner Microsoft Partner-ID fragen.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-[] Ein autorisierter Microsoft-Partner, der als Abonnementberater fungiert, verfügt in den Bereichen Verkauf, Support und Technik über das Fachwissen, das Sie benötigen, um Ihr Abonnement einzurichten und zu verwalten. Sie können einen Abonnementberaterpartner beim Erwerb von Office 365 oder zu einem anderen Zeitpunkt als Partner of Record hinzufügen. Wenn Sie derzeit nicht mit einem Partner arbeiten, finden Sie diese auch auf der [Microsoft Pinpoint-Website.](https://pinpoint.microsoft.com)
 
 ::: moniker-end
 
@@ -73,7 +73,7 @@ Als Administrator für Office 365 können Sie u. a. Benutzer erstellen oder bear
 
 ## <a name="add-a-partner-at-the-time-of-purchase"></a>Hinzufügen eines Partners beim Erwerb
 
-1. Wechseln Sie im Admin  Center zur Seite \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Abrechnungskaufdienste.</a>
+1. Wechseln Sie im Admin  Center zur Seite \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">**Abrechnungskaufdienste.**</a>
 2. Wählen Sie das Produkt aus, das Sie kaufen möchten, und wählen Sie dann **Kaufen aus.**
 3. Um einen neuen Partner hinzuzufügen, erweitern **Sie Hilfe bei Ihrer Bestellung benötigen?** und wählen Sie Unterstützung von einem Microsoft Partner erhalten **aus.**<br>
 Führen Sie die Schritte auf der Seite Anbieter aus, um nach einem Partner zu suchen oder einen Partner zu finden.
@@ -136,30 +136,22 @@ So akzeptieren Sie dieses Angebot
 ::: moniker range="o365-worldwide"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-2. Wählen Sie auf der Seite Abonnementsdetails unter **Partnerinformationen** die Option **Entfernen aus.**
-3. Geben Sie die **Microsoft Partner Network ID** für den neuen Partner ein. Fragen Sie den Partner nach seiner Microsoft Partner-ID.
-4. Klicken Sie auf **Hinzufügen**.
-  
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-2. Wenn Sie über mehrere Abonnements verfügen, wählen Sie den Namen des Abonnements aus, das Sie bearbeiten möchten.
-3. Wählen Sie unter der **Partner-ID** die Option **Partner of Record bearbeiten** aus.
-4. Geben Sie die neue Microsoft Partner-ID des Partners ein, den Sie hinzufügen, wählen Sie **ID überprüfen** und dann **Absenden** aus. Sie können die entsprechende Microsoft Partner-ID erhalten, indem Sie den Partner danach fragen.
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Ihre Produkte</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
-2. Wenn Sie über mehrere Abonnements verfügen, wählen Sie den Namen des Abonnements aus, das Sie bearbeiten möchten.
-3. Wählen Sie unter der **Partner-ID** die Option **Partner of Record bearbeiten** aus.
-4. Geben Sie die neue Microsoft Partner-ID des Partners ein, den Sie hinzufügen, wählen Sie **ID überprüfen** und dann **Absenden** aus. Sie können die entsprechende Microsoft Partner-ID erhalten, indem Sie den Partner danach fragen.
-
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ihre Produkte</a>.
 ::: moniker-end
-
+2. Wählen Sie auf der Seite Abonnementsdetails unter **Partnerinformationen** die Option **Entfernen aus.**
+3. Geben Sie die **Microsoft Partner Network ID** für den neuen Partner ein. Fragen Sie den Partner nach seiner Microsoft Partner-ID.
+4. Klicken Sie auf **Hinzufügen**.
+  
 ## <a name="view-your-partner-relationships"></a>Anzeigen Ihrer Partnerbeziehungen
 
 - Wechseln Sie im Admin Center zur Seite **Einstellungen**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Partnerbeziehungen.</a> Ihre Partner sind auf dieser Seite aufgeführt.
@@ -171,50 +163,38 @@ So akzeptieren Sie dieses Angebot
 ::: moniker range="o365-worldwide"
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Ihre Produkte</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ihre Produkte</a>.
+::: moniker-end
 2. Wählen Sie **auf der** Registerkarte Produkte das Abonnement aus, das Sie bearbeiten möchten.
 3. Wählen Sie auf der Seite Abonnementdetails unter **Partnerinformationen** die Option **Entfernen aus.**
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abonnements</a>.
-2. Wenn Sie über mehrere Abonnements verfügen, wählen Sie den Namen des Abonnements aus, das Sie bearbeiten möchten.
-3. Wählen Sie unter der **Partner-ID** die Option **Partner of Record bearbeiten** aus.
-4. Deaktivieren Sie auf der Seite **Partnerinformationen** das Kontrollkästchen **Partner-ID**, und wählen Sie dann **Absenden** aus.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abonnements</a>.
-2. Wenn Sie über mehrere Abonnements verfügen, wählen Sie den Namen des Abonnements aus, das Sie bearbeiten möchten.
-3. Wählen Sie unter der **Partner-ID** die Option **Partner of Record bearbeiten** aus.
-4. Deaktivieren Sie auf der Seite **Partnerinformationen** das Kontrollkästchen **Partner-ID**, und wählen Sie dann **Absenden** aus.
-
-::: moniker-end
-
 ## <a name="remove-a-reseller-relationship"></a>Entfernen einer Vertriebspartnerschaft
 
-::: moniker range="o365-worldwide"
-
 Händlerbeziehungen können Sie nicht selbst entfernen.
+
+::: moniker range="o365-worldwide"
   
 Wenn Sie eine Vertriebspartnerschaft entfernen, ist die Option Löschen ausgegraut, und Sie müssen Ihren Vertriebspartner bitten, die folgenden Anweisungen zu [befolgen:](/partner-center/remove-a-relationship)Entfernen einer Vertriebspartnerschaft mit partner . 
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
-
-Händlerbeziehungen können Sie nicht selbst entfernen.
   
 Wenn Sie eine Vertriebspartnerschaft entfernen, ist die Option Löschen ausgegraut, und Sie müssen Ihren Vertriebspartner bitten, die folgenden Anweisungen zu [befolgen:](/partner-center/remove-a-relationship)Entfernen einer Vertriebspartnerschaft mit partner . 
   
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
-
-Händlerbeziehungen können Sie nicht selbst entfernen.
   
 Sie müssen Ihren Vertriebspartner bitten, die folgenden Anweisungen zu befolgen: [Entfernen einer Vertriebspartnerschaft mit partner](/partner-center/remove-a-relationship).
   

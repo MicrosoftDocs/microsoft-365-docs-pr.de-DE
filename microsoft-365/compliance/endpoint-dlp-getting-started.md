@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Richten Sie Microsoft 365 Endpunkt-DLP (Data Loss Prevention, Verhinderung von Datenverlust) ein, um Dateiaktivitäten zu überwachen und schützende Maßnahmen für diese Dateien auf Endpunkten anzuwenden.
-ms.openlocfilehash: a6c0ec6f1248fdeecd8616b7eda000b7608d452d
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 34355a25283207929a12a7bc504b929fbf3041a0
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651008"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683655"
 ---
 # <a name="get-started-with-endpoint-data-loss-prevention"></a>Erste Schritte mit Endpunkt-DLP
 
@@ -104,7 +104,6 @@ Vergewissern Sie sich, dass die Windows 10-Geräte, auf die Sie Endpunkt-DLP anw
 
 4. Alle Geräte müssen eines der Folgenden sein:
 - [In Azure Active Directory (Azure AD) eingebunden](/azure/active-directory/devices/concept-azure-ad-join)
-- In AD eingebunden
 - [In Azure AD Hybrid eingebunden](/azure/active-directory/devices/concept-azure-ad-join-hybrid)
 - [In AAD registriert](/azure/active-directory/user-help/user-help-register-device-on-network)
 

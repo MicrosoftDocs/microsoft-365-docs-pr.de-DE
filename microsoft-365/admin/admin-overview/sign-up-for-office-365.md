@@ -23,37 +23,27 @@ ms.custom:
 search.appverid:
 - MET150
 ROBOTS: NOINDEX
-description: Verstehen Sie, was Sie wissen müssen, bevor Sie den Anmeldevorgang für Office 365 durchgehen.
+description: Verstehen Sie, was Sie wissen müssen, bevor Sie den Anmeldevorgang für Office 365.
 ms.date: 03/17/2021
-ms.openlocfilehash: 12262a2165392b9dca699605f0b86fd7f3129ef0
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 393c1304ba4e699c6bf7d09bf51f6c81bb7389d9
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332690"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683103"
 ---
 # <a name="how-to-sign-up---admin-help"></a>So registrieren Sie sich – Administratorhilfe
 
-::: moniker range="o365-worldwide"
-
-Registrieren Sie sich für Microsoft 365 Business, damit Ihr Team mit der Verwendung der neuesten Versionen von Word, Excel, PowerPoint und anderen Office-Programmen beginnen kann.
-  
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-Registrieren Sie sich für Microsoft 365 Business, damit Ihr Team mit der Verwendung der neuesten Versionen von Word, Excel, PowerPoint und anderen Office-Programmen beginnen kann.
-  
-::: moniker-end
+Registrieren Sie sich für Microsoft 365 Business, damit Ihr Team mit der Verwendung der neuesten Versionen von Word, Excel, PowerPoint und anderen Office kann.
 
 ::: moniker range="o365-21vianet"
 
-Office 365, betrieben von 21Vianet, wurde entwickelt, um die Anforderungen an sichere, zuverlässige und skalierbare Clouddienste in China zu erfüllen. Dieser Dienst verfügt über die Technologie, die Microsoft an 21Vianet lizenziert hat. Microsoft betreibt den Dienst nicht selbst. 21Vianet arbeitet, stellt und verwaltet die Zustellung des Diensts. 21Vianet ist der größte anbieterneutrale Service Provider für Internet-Rechenzentrumsdienste in China. Er stellt Dienste für Hosting, verwaltete Netzwerke und Cloud Computing-Infrastrukturen bereit. Durch lizenzierung von Microsoft-Technologien betreibt 21Vianet lokale Microsoft-Rechenzentren, um Ihnen die Möglichkeit zu bieten, Microsoft-Dienste zu verwenden, während Ihre Daten in China gespeichert werden. 21Vianet bietet Ihnen außerdem Abonnement- und Abrechnungsdienste sowie Support.
+Wenn Sie in China sind, Office 365 von 21Vianet betrieben wird, so konzipiert, dass sie die Anforderungen an sichere, zuverlässige und skalierbare Clouddienste in China erfüllt. Dieser Dienst verfügt über die Technologie, die Microsoft an 21Vianet lizenziert hat. Microsoft betreibt den Dienst nicht selbst. 21Vianet arbeitet, stellt und verwaltet die Zustellung des Diensts. 21Vianet ist der größte anbieterneutrale Service Provider für Internet-Rechenzentrumsdienste in China. Er stellt Dienste für Hosting, verwaltete Netzwerke und Cloud Computing-Infrastrukturen bereit. Durch lizenzierung von Microsoft-Technologien betreibt 21Vianet lokale Microsoft-Rechenzentren, um Ihnen die Möglichkeit zu bieten, Microsoft-Dienste daten in China zu verwenden. 21Vianet bietet Ihnen außerdem Abonnement- und Abrechnungsdienste sowie Support.
   
 > [!NOTE]
 > Diese Dienste unterliegen den chinesischen Gesetzen.
   
-Registrieren Sie sich für Office 365, betrieben von 21Vianet, damit Ihr Team mit der Verwendung der neuesten Versionen von Word, Excel, PowerPoint und anderen Office-Programmen beginnen kann.
+Registrieren Sie sich für Office 365 betrieben von 21Vianet, damit Ihr Team mit der Verwendung der neuesten Versionen von Word, Excel, PowerPoint und anderen Office kann.
   
 Bereit für die Anmeldung? [Wählen Sie einen Plan aus.](https://products.office.com/zh-cn/business/compare-office-365-for-business-plans)
   
@@ -64,7 +54,7 @@ Bereit für die Anmeldung? [Wählen Sie einen Plan aus.](https://products.office
 
 Bevor Sie kaufen, denken Sie an den Plan, für den Sie sich registrieren. Dies hilft, zu einem späteren Zeitpunkt zu verhindern, dass es zu wachsenden Qualen kommt.
 
-Sehen Sie sich ein kurzes Video zur Auswahl eines Microsoft 365 For Business-Plans an.<br><br>
+## <a name="watch-choose-a-microsoft-365-subscription"></a>Watch: Choose a Microsoft 365 subscription
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/906be77d-ded6-48fb-a25f-da110f787282]
 
@@ -92,7 +82,7 @@ Wenn Sie mit einer kostenlosen Testversion beginnen, können Sie sie [später ka
   
 Sie müssen Ihre Testversion nicht abbrechen. Wenn Sie das Testabonnement nicht kaufen, läuft es automatisch am Ende des Testzeitraums ab, und alle Informationen werden dauerhaft gelöscht.
 
-Sehen Sie sich ein kurzes Video an, das den Anmeldevorgang zeigt.<br><br>
+## <a name="watch-set-up-microsoft-365-business-premium"></a>Watch: Set up Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE471FJ]
 
@@ -118,9 +108,9 @@ Sie müssen Ihre Testversion nicht abbrechen. Wenn Sie das Testabonnement nicht 
   - Die **E-Mail-Adresse** und **Telefonnummer**, damit wir mit Ihnen bei Bedarf Kontakt zu Ihrem Abonnement aufnehmen können. Wenn Sie beispielsweise Ihr Kennwort vergessen haben, würden wir Ihnen anhand dieser Information ein temporäres Kennwort zusenden. Wir senden auch Ihre Abrechnungsinformationen an die von Ihnen angegebene E-Mail-Adresse.
 
     > [!NOTE]
-    > Die E-Mail-Adresse, die Sie hier eingeben, ist anders als Ihre Microsoft 365-E-Mail-Adresse (Ihr Anmeldename unten). Weil wir auch Ihre Abrechnungsinformationen dorthin senden, empfehlen wir, dass Sie beispielsweise eine E-Mail-Adresse verwenden, die für den Empfang geschäftlicher E-Mails geeignet ist.
+    > Die E-Mail-Adresse, die Sie hier eingeben, ist Microsoft 365 E-Mail-Adresse (Ihr Anmeldename unten). Weil wir auch Ihre Abrechnungsinformationen dorthin senden, empfehlen wir, dass Sie beispielsweise eine E-Mail-Adresse verwenden, die für den Empfang geschäftlicher E-Mails geeignet ist.
   
-- **Ein Anmeldename (Benutzer-ID):** Diese Benutzer-ID wird zur ursprünglichen Microsoft 365-E-Mail-Adresse, damit Sie schnell beginnen können.
+- **Ein Anmeldename (Benutzer-ID):** Diese Benutzer-ID wird ihre erste Microsoft 365 E-Mail-Adresse, um Sie schnell zu starten.
 
     Diese Benutzer-ID ist die E-Mail-Adresse, die Sie zum Anmelden verwenden. Wenn der Name Ihres Unternehmens beispielsweise "Fourth Coffee" lautet, könnten Sie "ralf@fourthcoffee.onmicrosoft.com"als Ihre Benutzer-ID wählen.
 
@@ -135,4 +125,4 @@ Sie müssen Ihre Testversion nicht abbrechen. Wenn Sie das Testabonnement nicht 
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Microsoft 365 Business Schulungsvideos](../../business-video/index.yml) (Linkseite)
+[Microsoft 365 Für Unternehmen Schulungsvideos](../../business-video/index.yml) (Linkseite)

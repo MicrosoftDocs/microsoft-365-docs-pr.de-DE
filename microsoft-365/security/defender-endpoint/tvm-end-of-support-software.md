@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bb436cbd2d0fa453872760c1d2656585e02d1767
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 1800cfdabd402321c49b737eff7f9d67639eb300
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538867"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689001"
 ---
 # <a name="plan-for-end-of-support-software-and-software-versions-with-threat-and-vulnerability-management"></a>Planen von Software- und Softwareversionen am Ende der Unterstützung mit Bedrohungs- und Sicherheitsrisikomanagement
 
@@ -42,7 +42,7 @@ End-of-Support (EOS), auch als End-of-Life (EOL) bezeichnet, bedeutet für Softw
 Es ist wichtig, dass Sicherheits- und IT-Administratoren zusammenarbeiten und sicherstellen, dass das Softwareinventar der Organisation für optimale Ergebnisse, Compliance und ein gesundes Netzwerkökosystem konfiguriert ist. Sie sollten die Optionen zum Entfernen oder Ersetzen von Apps untersuchen, die das Ende der Support- und Updateversionen erreicht haben, die nicht mehr unterstützt werden. Es ist am besten, einen  Plan vor dem Ende der Supporttermine zu erstellen und zu implementieren.
 
 >[!NOTE]
-> Die EOS-Funktion ist derzeit nicht für nicht Windows (Mac, Linux) verfügbar. Sie wird jedoch in Zukunft hinzugefügt.
+> Die End-of-Support-Funktion ist derzeit nur für Windows verfügbar.
 
 ## <a name="find-software-or-software-versions-that-are-no-longer-supported"></a>Suchen nach Software- oder Softwareversionen, die nicht mehr unterstützt werden
 

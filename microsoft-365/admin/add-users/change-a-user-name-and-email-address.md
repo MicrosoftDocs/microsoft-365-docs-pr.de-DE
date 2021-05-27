@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: 'Erfahren Sie, wie ein globaler Microsoft 365-Administrator die E-Mail-Adresse und den Anzeigenamen eines Benutzers ändern kann, wenn sich sein Name ändert. '
-ms.openlocfilehash: 1aa3fd3b67333937e64aab825e64533ccb09eea9
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 4f65bade32b2998f395c3b4eab7a1d2a2e5f3f33
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634220"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683115"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Ändern von Benutzernamen und -E-Mail-Adressen
 
@@ -47,25 +47,12 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 ::: moniker range="o365-worldwide"
  
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
-    
-2. Wählen Sie den Namen des Benutzers aus, und wählen Sie dann in der Registerkarte **Konto** **Benutzernamen verwalten** aus.
-    
-3. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen. 
 
-4. Wählen Sie **Änderungen speichern** aus.
-
-   
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.  
-
-2. Wählen Sie den Benutzer aus. Wählen Sie im Bereich „Flyout“ neben **Benutzername/E-Mail-** **Bearbeiten** aus.
-
-3. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen.
-
-4. Klicken Sie auf **Speichern**.
 
 ::: moniker-end
 
@@ -73,13 +60,13 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>. 
 
-2. Wählen Sie den Benutzer aus. Wählen Sie im Bereich „Flyout“ neben **Benutzername/E-Mail-** **Bearbeiten** aus.
-
-3. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen.
-
-4. Wählen Sie **Speichern** aus.
-
 ::: moniker-end
+
+1. Wählen Sie den Namen des Benutzers aus, und wählen Sie dann in der Registerkarte **Konto** **Benutzernamen verwalten** aus.
+    
+1. Geben Sie im ersten Feld den ersten Teil der neuen E-Mail-Adresse ein. Wenn Sie Ihre eigene Domäne zu Microsoft 365 hinzugefügt haben, können Sie die Domäne für den neuen E-Mail-Alias über die Dropdownliste auswählen. 
+
+1. Wählen Sie **Änderungen speichern** aus.
 
 > [!IMPORTANT]
 > Wenn Sie eine Fehlermeldung erhalten, sehen Sie unter [Fehlermeldungen lösen](#resolve-error-messages) nach.
@@ -89,6 +76,20 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 ::: moniker range="o365-worldwide"
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>. 
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>.  
+
+::: moniker-end
     
 2. Wählen Sie den Namen des Benutzers aus, und wählen Sie dann in der Registerkarte **Konto** **E-Mail-Alias-Adressen verwalten** aus.
 
@@ -113,34 +114,17 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
   
    - Wenn auch das Kennwort geändert wurde, wird die Person aufgefordert, das neue Kennwort auf ihrem mobilen Gerät einzugeben. Andernfalls wird es nicht synchronisiert.
   
+## <a name="change-a-users-display-name"></a>Ändern des Anzeigenamens eines Benutzers
+
+::: moniker range="o365-worldwide"
+
+1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.  
-
-2. Wählen Sie den Benutzer aus. Wählen Sie im Bereich „Flyout“ neben **Benutzername/E-Mail-** **Bearbeiten** aus.
-
-3. Wählen Sie **Als primäre E-Mail-Adresse festlegen** für die E-Mail-Adresse aus, die Sie als primäre E-Mail-Adresse für diese Person festlegen möchten. 
-    
-   > [!IMPORTANT]
-   > Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Microsoft 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
-   > 
-   > Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
-  
-4. Es wird eine große gelbe Warnmeldung angezeigt, dass Sie dabei sind, die Anmeldeinformationen der Person zu ändern. Wählen Sie **Speichern** und dann **Schließen** aus.
-    
-5. Teilen Sie der Person die folgenden Informationen mit:
- 
-   - Es kann einige Zeit dauern, bis diese Änderung wirksam wird.
-  
-   - Den neuen Benutzernamen, der für die Anmeldung bei Microsoft 365 benötigt wird.
-    
-   - Wenn die Person Skype for Business Online verwendet, muss sie eventuelle von ihr organisierte Skype for Business Online-Besprechungen erneut planen und ihre externen Kontakte auffordern, die alten Kontaktinformationen zu aktualisieren.
-
-   - Wenn Sie OneDrive verwenden, teilen Sie der Person mit, dass die URL zu diesem Speicherort geändert wurde. Wenn sie OneNote-Notizbücher auf ihrem OneDrive hat, müssen sie diese möglicherweise in OneNote schließen und erneut öffnen. Wenn sie über ihr OneDrive Dateien freigegeben hat, funktionieren die Links zu den Dateien möglicherweise nicht, und der Benutzer kann diese wieder freigeben.    
-  
-   - Wenn auch das Kennwort geändert wurde, wird die Person aufgefordert, das neue Kennwort auf ihrem mobilen Gerät einzugeben. Andernfalls wird es nicht synchronisiert.
+1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>. 
 
 ::: moniker-end
 
@@ -148,36 +132,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>. 
 
-2. Wählen Sie den Benutzer aus. Wählen Sie im Bereich „Flyout“ neben **Benutzername/E-Mail-** **Bearbeiten** aus.
-
-3. Wählen Sie **Als primäre E-Mail-Adresse festlegen** für die E-Mail-Adresse aus, die Sie als primäre E-Mail-Adresse für diese Person festlegen möchten. 
-    
-   > [!IMPORTANT]
-   > Die Option zum Festlegen der primären E-Mail-Adresse wird nicht angezeigt, wenn Sie Microsoft 365 bei GoDaddy oder einem anderen Partnerdienst mit einer Verwaltungskonsole erworben haben. Melden Sie sich stattdessen bei der Verwaltungskonsole von GoDaddy bzw. des Partners an, um den primären Alias festzulegen. 
-   >  
-   > Diese Option wird außerdem nur angezeigt, wenn Sie ein globaler Administrator sind. Wenn Sie die Option nicht sehen, verfügen Sie nicht über die Berechtigung, den Namen und die primäre E-Mail-Adresse eines Benutzers zu ändern.
-  
-4. Es wird eine große gelbe Warnmeldung angezeigt, dass Sie dabei sind, die Anmeldeinformationen der Person zu ändern. Wählen Sie **Speichern** und dann **Schließen** aus.
-    
-5. Teilen Sie der Person die folgenden Informationen mit:
- 
-   - Es kann einige Zeit dauern, bis diese Änderung wirksam wird.
-  
-   - Den neuen Benutzernamen, der für die Anmeldung bei Microsoft 365 benötigt wird.
-    
-   - Wenn die Person Skype for Business Online verwendet, muss sie eventuelle von ihr organisierte Skype for Business Online-Besprechungen erneut planen und ihre externen Kontakte auffordern, die alten Kontaktinformationen zu aktualisieren.
-
-   - Wenn Sie OneDrive verwenden, teilen Sie der Person mit, dass die URL zu diesem Speicherort geändert wurde. Wenn sie OneNote-Notizbücher auf ihrem OneDrive hat, müssen sie diese möglicherweise in OneNote schließen und erneut öffnen. Wenn sie über ihr OneDrive Dateien freigegeben hat, funktionieren die Links zu den Dateien möglicherweise nicht, und der Benutzer kann diese wieder freigeben.    
-  
-   - Wenn auch das Kennwort geändert wurde, wird die Person aufgefordert, das neue Kennwort auf ihrem mobilen Gerät einzugeben. Andernfalls wird es nicht synchronisiert.
-
 ::: moniker-end
-  
-## <a name="change-a-users-display-name"></a>Ändern des Anzeigenamens eines Benutzers
-
-::: moniker range="o365-worldwide"
-
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 
 2. Wählen Sie den Namen des Benutzers aus, und wählen Sie dann in der Registerkarte **Konto** **Kontaktinformationen verwalten** aus.
 
@@ -186,37 +141,7 @@ Sie müssen [globaler Administrator](about-admin-roles.md) sein, um diese Schrit
    Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen, und versuchen Sie es noch einmal**“ erhalten, sehen Sie unter [Fehlermeldungen lösen](#resolve-error-messages) nach.
 
 Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam wird. Nachdem die Änderung wirksam geworden ist, muss sich die Person mit dem aktualisierten Benutzernamen bei Outlook, Skype for Business und SharePoint anmelden.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Aktive Benutzer</a>.  
-
-2. Wählen Sie den Benutzer aus. Wählen Sie im Bereich „Flyout“ neben **Kontaktinformationen****Bearbeiten** aus.
-
-3. Geben Sie im Feld **Anzeigename** einen neuen Namen für die Person ein und wählen Sie dann **Speichern** aus.
-
-   Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen, und versuchen Sie es noch einmal**“ erhalten, sehen Sie unter [Fehlermeldungen lösen](#resolve-error-messages) nach.
-
-Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam wird. Nachdem die Änderung wirksam geworden ist, muss sich die Person mit dem aktualisierten Benutzernamen bei Outlook, Skype for Business und SharePoint anmelden. Daher sollten Sie den Benutzer unbedingt über diese Änderung informieren.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Aktive Benutzer</a>. 
-
-2. Wählen Sie den Benutzer aus. Wählen Sie im Bereich „Flyout“ neben **Kontaktinformationen****Bearbeiten** aus.
-
-3. Geben Sie im Feld **Anzeigename** einen neuen Namen für die Person ein und wählen Sie dann **Speichern** aus.
-
-   Wenn Sie die Fehlermeldung „**Der Benutzer konnte leider nicht bearbeitet werden. Überprüfen Sie die Benutzerinformationen, und versuchen Sie es noch einmal**“ erhalten, sehen Sie unter [Fehlermeldungen lösen](#resolve-error-messages) nach.
-
-Es kann bis zu 24 Stunden dauern, bis diese Änderung in allen Diensten wirksam wird. Nachdem die Änderung wirksam geworden ist, muss sich die Person mit dem aktualisierten Benutzernamen bei Outlook, Skype for Business und SharePoint anmelden. Daher sollten Sie den Benutzer unbedingt über diese Änderung informieren.
-
-::: moniker-end
-
+ 
 ## <a name="resolve-error-messages"></a>Auflösen von Fehlermeldungen
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>„Es wurde kein Parameter gefunden, der dem Parameternamen ‚E-Mail-Adressen‘ entspricht“

@@ -20,12 +20,12 @@ description: Administratoren können informationen über den Bedrohungsschutz in
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 438200f3f8a6a846d49bc397d6a4b0a0a33cad40
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 12b519d45df005471e3d87cfdb24f87edddbf6f3
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624621"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683331"
 ---
 # <a name="protect-against-threats"></a>Schutz vor Bedrohungen
 
@@ -78,27 +78,26 @@ Zum Konfigurieren von Defender Office 365 Richtlinien muss Ihnen eine entspreche
 
 Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-## <a name="before-you-begin-turn-on-audit-logging-for-reporting-and-investigation"></a>Bevor Sie beginnen, aktivieren Sie die Überwachungsprotokollierung für Berichte und Untersuchungen.
+### <a name="turn-on-audit-logging-for-reporting-and-investigation"></a>Aktivieren der Überwachungsprotokollierung für Berichterstellung und Untersuchung
 
-Starten Sie die Überwachungsprotokollierung frühzeitig. Die Überwachung muss für **bestimmte** der folgenden Schritte eins sein. Die Überwachungsprotokollierung ist in Abonnements verfügbar, die [Exchange Online.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) Zum Anzeigen von Daten in Bedrohungsschutzberichten, [](view-email-security-reports.md)wie z. B. dem Sicherheitsdashboard, E-Mail-Sicherheitsberichten und [Explorer,](threat-explorer.md)muss die Überwachungsprotokollierung *auf lauten.* [](security-dashboard.md) Weitere Informationen finden Sie unter Aktivieren oder Deaktivieren [der Überwachungsprotokollsuche.](../../compliance/turn-audit-log-search-on-or-off.md)
+- Starten Sie die Überwachungsprotokollierung frühzeitig. Für einige der folgenden  Schritte muss die Überwachung aktiviert sein. Die Überwachungsprotokollierung ist in Abonnements verfügbar, die [Exchange Online.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) Zum Anzeigen von Daten in Bedrohungsschutzberichten, [](view-email-security-reports.md)wie z. B. dem Sicherheitsdashboard, E-Mail-Sicherheitsberichten und [Explorer,](threat-explorer.md)muss die Überwachungsprotokollierung *auf lauten.* [](security-dashboard.md) Weitere Informationen finden Sie unter Aktivieren oder Deaktivieren [der Überwachungsprotokollsuche.](../../compliance/turn-audit-log-search-on-or-off.md)
 
 ## <a name="part-1---anti-malware-protection"></a>Teil 1 – Schutz vor Schadsoftware
 
-[Der Schutz vor Schadsoftware](anti-malware-protection.md) ist in Abonnements verfügbar, die [EOP enthalten.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
+Weitere Informationen zu den empfohlenen Einstellungen für Schadsoftware finden Sie unter [EOP Anti-Malware Policy Settings](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings).
 
-1. Wählen Sie [im Security & Compliance Center](https://protection.office.com)die Option **Bedrohungsverwaltungsrichtlinie** \>  \> **An malware aus.**
+1. Öffnen <https://security.microsoft.com/antimalwarev2> Sie .
 
-2. Doppelklicken Sie auf **die Standardrichtlinie,** und wählen Sie dann **Einstellungen aus.**
+2. Wählen Sie die Standardrichtlinie aus, indem Sie auf den Namen der Richtlinie klicken.
 
-3. Geben Sie die folgenden Einstellungen an:
+3. Klicken Sie im geöffneten Flyout für Richtliniendetails auf **Schutzeinstellungen bearbeiten,** und konfigurieren Sie dann die folgenden Einstellungen:
+   - Wählen **Sie Den allgemeinen Anlagenfilter aktivieren aus,** um den filter für häufige Anlagen zu aktivieren. Klicken **Sie auf Dateitypen anpassen,** um weitere Dateitypen hinzuzufügen.
+   - Stellen Sie **sicher, dass** automatisches Löschen von Schadsoftware im Wert von null Stunden aktiviert ist.
+   - Stellen Sie sicher, dass keine der Einstellungen im Abschnitt **Benachrichtigung** ausgewählt ist.
 
-    - Behalten Sie **im Abschnitt** Reaktion auf die Schadsoftwareerkennung die Standardeinstellung **Nein bei.**
+   Klicken Sie nach Abschluss des Abschlusses auf **Speichern.**
 
-    - Wählen Sie **im Abschnitt Filter für allgemeine Anlagentypen** die Option Ein **aus.**
-
-4. Klicken Sie auf **Speichern**.
-
-Weitere Informationen zu Optionen für An malware-Richtlinien finden Sie unter [Configure anti-malware policies](configure-anti-malware-policies.md).
+Ausführliche Anweisungen zum Konfigurieren von An malware-Richtlinien finden Sie unter [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
 ## <a name="part-2---anti-phishing-protection"></a>Teil 2 – Schutz vor Phishing
 

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 886195de38856306d69932446eae34212fe4bb0d
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e08781455888595d57bd8a9e6f792796ea1853cd
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934501"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684207"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Bereitstellen von Updates für Microsoft Defender for Endpoint unter macOS
 
@@ -79,7 +79,7 @@ Der `Current` Kanal enthält die stabilste Version des Produkts.
 |Abschnitt|Wert|
 |:--|:--|
 | **Domäne** | `com.microsoft.autoupdate2` |
-| **Key** | ChannelName |
+| **Schlüssel** | ChannelName |
 | **Datentyp** | String |
 | **Mögliche Werte** | Beta <br/> Vorschau <br/> Current |
 |||
@@ -97,7 +97,7 @@ Der `Current` Kanal enthält die stabilste Version des Produkts.
 |Abschnitt|Wert|
 |:--|:--|
 | **Domäne** | `com.microsoft.autoupdate2` |
-| **Key** | UpdateCheckFrequency |
+| **Schlüssel** | UpdateCheckFrequency |
 | **Datentyp** | Ganze Zahl |
 | **Standardwert** | 720 (Minuten) |
 | **Kommentar** | Dieser Wert wird in Minuten festgelegt. |
@@ -110,7 +110,7 @@ Der `Current` Kanal enthält die stabilste Version des Produkts.
 |Abschnitt|Wert|
 |:--|:--|
 | **Domäne** | `com.microsoft.autoupdate2` |
-| **Key** | HowToCheck |
+| **Schlüssel** | HowToCheck |
 | **Datentyp** | String |
 | **Mögliche Werte** | Manuell <br/> AutomaticCheck <br/> AutomaticDownload |
 | **Kommentar** |  Beachten Sie, dass AutomaticDownload nach Möglichkeit automatisch heruntergeladen und installiert wird. |
@@ -123,7 +123,7 @@ Der `Current` Kanal enthält die stabilste Version des Produkts.
 |Abschnitt|Wert|
 |:--|:--|
 | **Domäne** | `com.microsoft.autoupdate2` |
-| **Key** | EnableCheckForUpdatesButton |
+| **Schlüssel** | EnableCheckForUpdatesButton |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | True (Standard) <br/> Falsch |
 
@@ -135,7 +135,7 @@ Auf true festgelegt, um das "Join the Office Insider Program..." zu erstellen. K
 |Abschnitt|Wert|
 |:--|:--|
 | **Domäne** | `com.microsoft.autoupdate2` |
-| **Key** | DisableInsiderCheckbox |
+| **Schlüssel** | DisableInsiderCheckbox |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | False (Standard) <br/> Wahr |
 
@@ -147,7 +147,7 @@ Auf false festgelegt, um minimale Taktdaten, keine Anwendungsverwendung und kein
 |Abschnitt|Wert|
 |:--|:--|
 | **Domäne** | `com.microsoft.autoupdate2` |
-| **Key** | SendAllTelemetryEnabled |
+| **Schlüssel** | SendAllTelemetryEnabled |
 | **Datentyp** | Boolesch |
 | **Mögliche Werte** | True (Standard) <br/> Falsch |
 
@@ -155,10 +155,17 @@ Auf false festgelegt, um minimale Taktdaten, keine Anwendungsverwendung und kein
 ## <a name="example-configuration-profile"></a>Beispielkonfigurationsprofil
 
 Das folgende Konfigurationsprofil wird verwendet für:
-- Platzieren des Geräts im Betakanal
+- Platzieren des Geräts im Produktionskanal
 - Updates automatisch herunterladen und installieren
 - Aktivieren der Schaltfläche "Auf Updates überprüfen" auf der Benutzeroberfläche
 - Zulassen, dass Sich Benutzer auf dem Gerät bei den Insiderkanälen registrieren
+
+
+>[!WARNING]
+>Die folgende Konfiguration ist eine Beispielkonfiguration und sollte nicht in der Produktion ohne ordnungsgemäße Überprüfung der Einstellungen und Anpassung der Konfigurationen verwendet werden.
+
+>[!TIP]
+>Um eine Vorschau neuer Features anzuzeigen und frühzeitig Feedback zu geben, wird empfohlen, einige Geräte in Ihrem Unternehmen auf oder `Beta` zu `Preview` konfigurieren.
 
 ### <a name="jamf"></a>JAMF
 
@@ -168,7 +175,7 @@ Das folgende Konfigurationsprofil wird verwendet für:
 <plist version="1.0">
 <dict>
     <key>ChannelName</key>
-    <string>Beta</string>
+    <string>Production</string>
     <key>HowToCheck</key>
     <string>AutomaticDownload</string>
     <key>EnableCheckForUpdatesButton</key>
@@ -228,7 +235,7 @@ Das folgende Konfigurationsprofil wird verwendet für:
             <key>PayloadEnabled</key>
             <true/>
             <key>ChannelName</key>
-            <string>Beta</string>
+            <string>Production</string>
             <key>HowToCheck</key>
             <string>AutomaticDownload</string>
             <key>EnableCheckForUpdatesButton</key>

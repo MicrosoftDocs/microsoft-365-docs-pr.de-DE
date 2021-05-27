@@ -7,26 +7,27 @@ audience: Admin
 ms.topic: article
 ms.service: bookings
 localization_priority: Normal
-ms.assetid: 298c529b-407b-4a2b-b2c5-6e77a9d1f07f
 description: Verwenden Sie diese Seite, um Ihre Mitarbeiterliste zu erstellen und Mitarbeiterdetails wie Name, Telefonnummer und E-Mail-Adresse zu verwalten.
-ms.openlocfilehash: 11d62cc34522de21e63b8bdf6e7e15729ac73dc1
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 7fd19e3281b3dc075b5f72ca0471f5c66f93752d
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48399193"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683319"
 ---
 # <a name="add-staff-to-bookings"></a>Mitarbeiter zu Bookings hinzufügen
 
 Auf der Seite Mitarbeiter in Bookings erstellen Sie Ihre Personalliste und verwalten Mitarbeiterdetails wie Name, Telefonnummer und E-Mail-Adresse. Sie können von hier aus auch die Arbeitszeiten für jeden Mitarbeiter festlegen.
 
-## <a name="add-staff"></a>Hinzufügen von Mitarbeitern
+## <a name="before-you-begin"></a>Vorabinformationen
 
 Obwohl Bookings ein Feature der Microsoft 365 ist, müssen nicht alle Mitarbeiter über ein Microsoft 365 verfügen. Alle Mitarbeiter müssen über eine gültige E-Mail-Adresse verfügen, damit sie Buchungen empfangen und Änderungen planen können.
 
-Sehen Sie sich dieses Video an, oder führen Sie die folgenden Schritte aus, um Ihre Mitarbeiter hinzuzufügen.
+## <a name="watch-add-your-staff-in-microsoft-bookings"></a>Watch: Add your staff in Microsoft Bookings
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWuVka]
+
+## <a name="steps"></a>Schritte
 
 1. Wechseln Sie zur Seite [Mitarbeiter verwalten,](https://outlook.office.com/bookings/staff) und wählen Sie **Mitarbeiter hinzufügen aus.**
 
@@ -65,3 +66,15 @@ Sehen Sie sich dieses Video an, oder führen Sie die folgenden Schritte aus, um 
 
     > [!NOTE]
     > Nur die ersten 31 Mitarbeiter, die Sie Ihrer Mitarbeiterseite hinzufügen, werden angezeigt, wenn Sie einem Dienst Mitarbeiter zuweisen.
+
+## <a name="next-steps"></a>Nächste Schritte
+
+Nachdem Sie Mitarbeiter hinzugefügt [](schedule-closures-time-off-vacation.md) haben, können Sie Geschäftsschließungen und Auszeiten planen und [Ihre Terminplanungsrichtlinien festlegen.](set-scheduling-policies.md)
+
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Microsoft Bookings](bookings-overview.md)
+
+[Planen von Betriebsferien, arbeitsfreier Zeit und Urlaubszeit](schedule-closures-time-off-vacation.md)
+
+[Festlegen Ihrer Planungsrichtlinien](set-scheduling-policies.md)

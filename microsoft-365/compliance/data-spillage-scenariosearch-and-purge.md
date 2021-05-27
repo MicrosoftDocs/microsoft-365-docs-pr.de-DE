@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Verwenden Sie eDiscovery und Suchtools, um einen Datenlecksvorfall in Ihrer Organisation zu verwalten und darauf zu reagieren.
-ms.openlocfilehash: 4305dbdb2fb59e4275852c88f8b74f6c4128a5cb
-ms.sourcegitcommit: 727a75b604d5ff5946a0854662ad5a8b049f2874
+ms.openlocfilehash: f92887018a7ab1cec35526c2a36cce4b0889172e
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52653523"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683775"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>eDiscovery-Lösungsreihe: Datenleckszenario – Suchen und Löschen
 
@@ -52,7 +52,7 @@ Hier erfahren Sie, wie Sie einen Datenleckvorfall verwalten:
 
 - Wenn sich ein Postfach im Haltezeitraum befindet, verbleibt eine gelöschte Nachricht im Ordner "Wiederherstellbare Elemente", bis der Aufbewahrungszeitraum abläuft oder die Aufbewahrungszeit freigegeben wird. [In Schritt 6](#step-6-prepare-the-mailboxes) wird beschrieben, wie der Halteraum aus den Postfächern entfernt wird. Informieren Sie sich vor dem Entfernen des Halteraums bei Der Datensatzverwaltung oder den Rechtsabteilungen. Ihre Organisation kann über eine Richtlinie verfügen, die definiert, ob ein Postfach im Archiv oder ein Datenlecksvorfall Vorrang hat. 
     
-- Um zu steuern, welche Benutzerpostfächer ein Ermittler für Datenlecks durchsuchen und verwalten kann, wer auf den Fall zugreifen kann, können Sie Compliancegrenzen einrichten und eine benutzerdefinierte Rollengruppe erstellen, die in [Schritt 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)beschrieben wird. Dazu müssen Sie Mitglied der Rollengruppe Organisationsverwaltung sein oder der Rollenverwaltungsrolle zugewiesen werden. Wenn Sie oder der Administrator in Ihrer Organisation bereits Compliancegrenzen festgelegt haben, können Sie Schritt 1 überspringen.
+- Um zu steuern, welche Benutzerpostfächer ein Ermittler für Datenlecks durchsuchen und verwalten kann, wer auf den Fall zugreifen kann, können Sie Compliancegrenzen einrichten und eine benutzerdefinierte Rollengruppe erstellen, die in [Schritt 1](#optional-step-1-manage-who-can-access-the-case-and-set-compliance-boundaries)beschrieben wird. Dazu müssen Sie Mitglied der Rollengruppe Organisationsverwaltung sein oder der Rollenverwaltungsrolle zugewiesen werden. Wenn Sie oder ein Administrator in Ihrer Organisation bereits Compliancegrenzen festgelegt haben, können Sie Schritt 1 überspringen.
     
 - Zum Erstellen eines Falls müssen Sie Mitglied der Rollengruppe eDiscovery Manager oder Mitglied einer benutzerdefinierten Rollengruppe sein, der die Rolle Fallverwaltung zugewiesen ist. Wenn Sie kein Mitglied sind, bitten Sie einen Microsoft 365, Sie der [Rollengruppe des eDiscovery-Managers hinzuzufügen.](assign-ediscovery-permissions.md)
     
@@ -64,7 +64,7 @@ Hier erfahren Sie, wie Sie einen Datenleckvorfall verwalten:
 
 Je nach Organisationspraxis müssen Sie steuern, wer auf den eDiscovery-Fall zugreifen kann, der zum Untersuchen eines Datenleckvorfalls und zum Einrichten von Compliancegrenzen verwendet wird. Die einfachste Möglichkeit besteht in dem Hinzufügen von Ermittlern als Mitglieder einer vorhandenen Rollengruppe im Security & Compliance Center und anschließend dem Hinzufügen der Rollengruppe als Mitglied des eDiscovery-Falls. Informationen zu den integrierten eDiscovery-Rollengruppen und zum Hinzufügen von Mitgliedern zu einem eDiscovery-Fall finden Sie unter [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
   
-Sie können auch eine neue Rollengruppe erstellen, die ihren organisatorischen Anforderungen entspricht. Beispielsweise möchten Sie, dass eine Gruppe von Ermittlern für Datenlecks in der Organisation auf alle Fälle von Datenlecks zugreifen und zusammenarbeiten kann. Dazu erstellen Sie eine Rollengruppe "Datenleck-Ermittler", weisen die entsprechenden Rollen (Export, RMS Decrypt, Review, Preview, Compliance Search und Case Management) zu, fügen die Ermittler für Datenlecks zur Rollengruppe hinzu und fügen dann die Rollengruppe als Mitglied des eDiscovery-Falls für Datenlecks hinzu. Ausführliche Anweisungen dazu finden Sie unter Set [up compliance boundaries for eDiscovery investigations in Office 365.](tagging-and-assessment-in-advanced-ediscovery.md) 
+Sie können auch eine neue Rollengruppe erstellen, die ihren organisatorischen Anforderungen entspricht. Beispielsweise möchten Sie, dass eine Gruppe von Ermittlern für Datenlecks in der Organisation auf alle Fälle von Datenlecks zugreifen und zusammenarbeiten kann. Dazu erstellen Sie eine Rollengruppe "Datenleck-Ermittler", weisen die entsprechenden Rollen (Export, RMS Decrypt, Review, Preview, Compliance Search und Case Management) zu, fügen die Ermittler für Datenlecks zur Rollengruppe hinzu und fügen dann die Rollengruppe als Mitglied des eDiscovery-Falls für Datenlecks hinzu. Ausführliche Anweisungen dazu finden Sie unter Set [up compliance boundaries for eDiscovery investigations in Office 365.](set-up-compliance-boundaries.md) 
   
 ## <a name="step-2-create-an-ediscovery-case"></a>Schritt 2: Erstellen eines eDiscovery-Falls
 
@@ -123,7 +123,7 @@ Sie können die Nachrichtenverfolgung im Security and Compliance Center oder die
   
 - [Nachrichtenablaufverfolgung im Security & Compliance Center](../security/office-365-security/message-trace-scc.md)
     
-- [Neue Nachrichtenverfolgung im Security & Compliance Center](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
+- [Neue Nachrichtenverfolgung im Security & Compliance Center](https://techcommunity.microsoft.com/t5/exchange-team-blog/new-message-trace-in-office-365-security-038-compliance-center/ba-p/607893)
     
 ## <a name="step-6-prepare-the-mailboxes"></a>Schritt 6: Vorbereiten der Postfächer
 

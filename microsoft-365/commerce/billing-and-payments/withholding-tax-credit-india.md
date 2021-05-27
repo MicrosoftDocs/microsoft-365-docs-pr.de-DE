@@ -20,18 +20,18 @@ ms.custom:
 - commerce_billing
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: 4866bcd07cb4a54088d230166f9b04f8258d7185
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: b34fd0fd2e35d71e6b35cde250be822201aa719a
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331790"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689025"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Anfordern einer Gutschrift für die Quellensteuer für Ihr Konto (Indien-Kunden)
 
 Kunden in Indien erhalten Von Microsoft Regional Sales Pte Ltd. Singapur (MRS) in Rechnung gestellte Web Direct-Rechnungen (Azure und Microsoft 365) und zahlungen zur Abrechnung der Rechnung an Singapur. Wenn Sie Steuern beim Übermitleiden der Zahlung einbehalten haben, wird in diesem Artikel das Verfahren für die Forderung einer Gutschrift für die Quellensteuer (Withholding Tax, WHT) in Ihrem Konto bei MRS erläutert.
 
-## <a name="for-invoice-pay-customers-who-pay-by-check-and-wire"></a>Für Abrechnungskunden, die per Scheck und Überweisung bezahlen
+## <a name="for-invoice-pay-customers-who-pay-by-check-or-wire"></a>Für Abrechnungskunden, die per Scheck oder Überweisung bezahlen
 
 Wenn Sie steuern bei der Übereignung der Zahlung an MRS einbehalten und die einbehaltene Steuer bei der Einkommenssteuerabteilung hinterlegt haben, müssen Sie eine WHT-Anforderung einreichen, um den in Ihrem Konto einbehaltenen Steuerbetrag zu begleichen.
 
@@ -44,7 +44,7 @@ Ihre WHT-Anforderung muss die folgenden Elemente enthalten:
 
 ## <a name="for-customers-who-pay-by-credit-card"></a>Für Kunden, die per Kreditkarte bezahlen
 
-Wenn Ihre Zahlungsmethode eine Kreditkarte ist und Sie eine vollständige Zahlung an MRS vorgenommen haben und WHT an die Einkommenssteuerabteilung gezahlt haben, müssen Sie eine WHT-Anforderung einreichen, um die Rückerstattung des Steuerbetrags zu fordern.
+Wenn Es sich bei Ihrer Zahlungsmethode um eine Kreditkarte handelt und Sie eine vollständige Zahlung an MRS vorgenommen haben und whT auch an die Einkommenssteuerabteilung gezahlt haben, müssen Sie eine WHT-Anforderung einreichen, um die Rückerstattung des Steuerbetrags zu fordern.
 
 Ihre WHT-Anforderung muss die folgenden Elemente enthalten:
 
@@ -68,11 +68,11 @@ In der folgenden Tabelle sind die Fälligkeitsdaten und Zeitachsen zum Übermitt
 >
 > - Kunden können nur nach Zahlung der Rechnung eine Rückerstattung des WHT-Betrags anfordern.
 > - Der Rechnungsbetrag im Quellensteuergutschriftsformular muss mit dem im TDS-Zertifikat identifizierten Rechnungsbetrag übereinstimmen. Wenn der Rechnungsbetrag zwischen den beiden Formularen unterschiedlich ist, müssen Sie den Grund für die Differenz im Formular "Quellensteuergutschrift" angeben. Diese Informationen werden vom Überprüfungsteam überprüft, das gegebenenfalls klärende Fragen stellt.
-> - TDS-Zertifikatdateien müssen in einem der folgenden Dateiformate vorliegen: .PDF oder Image (. JPEG, .PNG und .GIF). Darüber hinaus dürfen Dateinamen keine Leerzeichen oder Sonderzeichen enthalten. Die Dateigröße darf 1 MB nicht überschreiten.
+> - TDS-Zertifikatdateien müssen in einem der folgenden Dateiformate vorliegen: .PDF oder Image (. JPEG, .PNG oder .GIF). Darüber hinaus dürfen Dateinamen keine Leerzeichen oder Sonderzeichen enthalten. Die Dateigröße darf 1 MB nicht überschreiten.
 
 Nachdem Sie die Anforderung übermittelt haben, wird sie in den Genehmigungsprozess ein, wo sie entweder zur Fertigstellung genehmigt oder zur Korrektur an Sie zurückgeschickt wird.
 
-Wenn ein Problem mit Ihrer Anforderung vor liegt, kann es sein, dass das Überprüfungsteam Korrekturen am Einbehaltungsbetrag oder an der Ersetzung des TDS-Zertifikats erfordert. Sie müssen die Anforderung erneut übermitteln, bevor sie genehmigt wird. Das Überprüfungsteam genehmigt die Anforderung oder fordert weitere Änderungen an.
+Wenn ein Problem mit Ihrer Anforderung vor liegt, kann es sein, dass das Überprüfungsteam Korrekturen am Einbehaltungsbetrag oder an der Ersetzung des TDS-Zertifikats erfordert. Sie müssen die Anforderung erneut übermitteln, bevor sie genehmigt werden kann. Das Überprüfungsteam genehmigt die Anforderung oder fordert weitere Änderungen an.
 
 ## <a name="approved-requests"></a>Genehmigte Anforderungen
 

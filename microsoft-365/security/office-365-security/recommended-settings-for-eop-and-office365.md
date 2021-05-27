@@ -19,12 +19,12 @@ ms.collection:
 description: Was sind bewährte Methoden für Exchange Online Protection (EOP) und Defender für Office 365 Sicherheitseinstellungen? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie Defender auch für Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04668932747462d2636b466d87c2655d97569657
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 10fac8cb7241faa652bbcb4726610abef741e70c
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624076"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683271"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Empfohlene Einstellungen für EOP und Microsoft Defender für Office 365 Sicherheit
 
@@ -137,11 +137,11 @@ Informationen zum Erstellen und Konfigurieren von An malware-Richtlinien finden 
 
 |Name des Sicherheitsfeatures|Standard|Standard|Strict|Kommentar|
 |---|:---:|:---:|:---:|---|
-|**Möchten Sie Empfänger benachrichtigen, wenn ihre Nachrichten unter Quarantäne gestellt werden?** <p> _Action_|Nein <p> _DeleteMessage_|Nein <p> _DeleteMessage_|Nein <p> _DeleteMessage_|Wenn Schadsoftware in einer E-Mail-Anlage erkannt wird, wird die Nachricht in Quarantäne gestellt und kann nur von einem Administrator freigegeben werden.|
-|**Filter für häufige Anlagentypen** <p> _EnableFileFilter_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`|Mit dieser Einstellung werden Nachrichten isoliert, die ausführbare Anlagen basierend auf dem Dateityp enthalten, unabhängig vom Anlageninhalt.|
-|**Schadsoftware Null-Stunden-Autobereinigung** <p> _ZapEnabled_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
-|**Benachrichtigen interner Absender** über die nicht zugestellte Nachricht <p> _EnableInternalSenderNotifications_|Deaktiviert <p> `$false`|Deaktiviert <p> `$false`|Deaktiviert <p> `$false`||
-|**Benachrichtigen externer Absender** über die nicht zugestellte Nachricht <p> _EnableExternalSenderNotifications_|Deaktiviert <p> `$false`|Deaktiviert <p> `$false`|Deaktiviert <p> `$false`||
+|**Benachrichtigen von Empfängern, wenn Nachrichten als Schadsoftware isoliert werden** <p> _Action_|Nein <p> _DeleteMessage_|Nein <p> _DeleteMessage_|Nein <p> _DeleteMessage_|Wenn Schadsoftware in einer E-Mail-Anlage erkannt wird, wird die Nachricht in Quarantäne gestellt und kann nur von einem Administrator freigegeben werden.|
+|**Aktivieren des allgemeinen Anlagenfilters** <p> _EnableFileFilter_|Off <p> `$false`|Ein <p> `$true`|Ein <p> `$true`|Mit dieser Einstellung werden Nachrichten isoliert, die ausführbare Anlagen basierend auf dem Dateityp enthalten, unabhängig vom Anlageninhalt.|
+|**Aktivieren der automatischen NS-Bereinigung für Schadsoftware** <p> _ZapEnabled_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
+|**Benachrichtigen interner Absender, wenn Nachrichten als Schadsoftware isoliert werden** <p> _EnableInternalSenderNotifications_|Deaktiviert <p> `$false`|Deaktiviert <p> `$false`|Deaktiviert <p> `$false`||
+|**Benachrichtigen externer Absender, wenn Nachrichten als Schadsoftware isoliert werden** <p> _EnableExternalSenderNotifications_|Deaktiviert <p> `$false`|Deaktiviert <p> `$false`|Deaktiviert <p> `$false`||
 |
 
 ### <a name="eop-default-anti-phishing-policy-settings"></a>EOP-Standardeinstellungen für Antiphishingrichtlinien

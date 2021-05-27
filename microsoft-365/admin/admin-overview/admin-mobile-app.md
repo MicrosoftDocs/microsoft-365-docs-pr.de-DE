@@ -1,5 +1,5 @@
 ---
-title: Informationen zur mobilen Microsoft 365 Admin-App
+title: Informationen zur Microsoft 365 mobilen Admin-App
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -22,34 +22,38 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Holen Sie sich die Microsoft 365 Admin-App, und erfahren Sie, wie Sie Ihre Onlineorganisation über Ihr Smartphone oder Tablet verwalten.
-ms.openlocfilehash: 2f6b27b409dd456a88a17a9825fae3ec24d787a4
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Erhalten Sie Microsoft 365 Admin-App, und erfahren Sie, wie Sie Ihre Onlineorganisation über Ihr Smartphone oder Tablet verwalten können.
+ms.openlocfilehash: f8834aca0835a209a4df32a934eca736c5f7808f
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244020"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683235"
 ---
-# <a name="about-the-microsoft-365-admin-mobile-app"></a>Informationen zur mobilen Microsoft 365 Admin App
+# <a name="about-the-microsoft-365-admin-mobile-app"></a>Informationen zur Microsoft 365 mobilen Administrator-App
 
-Sind Sie ein Administrator, der in der Regel unterwegs ist? Auch wenn Sie dies nicht sind, kann es manchmal sein, dass Sie Microsoft 365 über Ihr Smartphone oder Tablet verwalten müssen. Sehen Sie sich die [kostenlose Microsoft 365 Admin-App](https://go.microsoft.com/fwlink/?LinkID=627216)an, der perfekte Begleiter zum webbasierten Microsoft 365 Admin Center. Sie können die App aus dem [Apple App Store und](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)aus dem Google Play Store [herunterladen.](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)
+Sind Sie ein Administrator, der in der Regel unterwegs ist? Auch wenn Sie dies nicht sind, kann es manchmal sein, dass Sie Microsoft 365 Smartphone oder Tablet verwalten müssen. Sehen Sie sich die [kostenlose Microsoft 365 Admin App](https://go.microsoft.com/fwlink/?LinkID=627216)an, der perfekte Begleiter zum webbasierten Microsoft 365 Admin Center. Sie können die App aus dem [Apple App-Store](https://apps.apple.com/app/apple-store/id761397963?pt=80423&ct=docsaboutadminapp&mt=8)und aus dem [Google Play-Store.](https://play.google.com/store/apps/details?id=com.ms.office365admin&referrer=utm_source%3Ddocsaboutadminapp%26utm_campaign%25docsaboutadminapp)
 
 :::image type="content" source="../../media/DocsMicrosoftFinalImage.PNG" alt-text="Screenshot: Startseite der mobilen App verwalten, Anzeigen von Such-, Nachrichtencenter-, Integritäts- und Schnelllinks":::
 
-Die Admin-App verfügt über viele Funktionen, mit denen Sie Microsoft 365 von Ihrem Mobile- oder Tablet-Gerät aus verwalten können, wenn Sie nicht auf einen Computer zugreifen können. Hier finden Sie eine Liste der Aufgaben, die Sie über die App ausführen können:
+Die Admin-App verfügt über viele Funktionen, mit denen Sie Microsoft 365 Mobile oder Tablet-Gerät verwalten können, wenn Sie nicht auf einen Computer zugreifen können. Hier finden Sie eine Liste der Aufgaben, die Sie über die App ausführen können:
 
 - **Verwalten von Benutzern und Geräten** Hinzufügen oder Bearbeiten eines Benutzers, Zurücksetzen des Kennworts eines Benutzers, Zuweisen einer Rolle, Blockieren des Benutzers, Löschen des Benutzers, Verwalten von Alias, Zuweisen von Lizenzen, Zurücksetzen von Gerätedaten und mehr.
 - **Verwalten von Gruppen** Hinzufügen einer Gruppe, Hinzufügen oder Entfernen von Benutzern aus Gruppen.
 - **Lizenzverwaltung und Abrechnung** Zeigen Sie eine Liste der erworbenen und zugewiesenen Lizenzen an, weisen Sie Benutzern Lizenzen zu, erwerben oder entfernen Sie Lizenzen, und zeigen Sie Rechnungen an und laden Sie sie herunter.
 - **Support** Erstellen Sie eine neue Dienstanforderung, und verfolgen Sie alle Updates im Zusammenhang mit den Dienstanforderungen, während Sie unterwegs sind.
-- **Nachrichtencenter** Bleiben Sie über alle anstehenden Änderungen, geplante Wartungen oder andere wichtige Ankündigungen im Zusammenhang mit Microsoft 365 auf dem Besten
+- **Nachrichtencenter** Bleiben Sie über alle anstehenden Änderungen, geplante Wartungen oder andere wichtige Ankündigungen im Zusammenhang mit Microsoft 365
 - **Dienstinte health** Überwachen Sie die Integrität aller Dienste, indem Sie den aktuellen Status des Diensts sowie Details zu Dienstunterbrechungen und -ausbrüchen anzeigen.
 - **Benachrichtigungen** Bleiben Sie über alle wichtigen Informationen und Updates im Zusammenhang mit Nachrichtencenterbeiträgen, Dienstinte health und Abrechnung über Pushbenachrichtigungen auf dem Neuesten. Sie können sogar anpassen, wofür Sie benachrichtigt werden möchten.
 
-Wenn Sie Administrator sind und für mehr als eine Microsoft 365-Organisation verantwortlich sind, können Sie sich bei mehreren Organisationen anmelden und schnell zwischen diesen wechseln. Die App unterstützt dunkle Designs und ist in 39 Sprachen verfügbar.
+Wenn Sie ein Administrator sind und für mehr als eine organisation Microsoft 365 sind, können Sie sich bei mehreren Organisationen anmelden und schnell zwischen diesen wechseln. Die App unterstützt dunkle Designs und ist in 39 Sprachen verfügbar.
   
 > [!IMPORTANT]
 > Wenn Sie Probleme mit der mobilen Admin-App unter iOS oder Android haben, senden Sie uns eine E-Mail an [feedback365@microsoft.com,](mailto:feedback365@microsoft.com) um uns dies zu sagen.
+
+## <a name="before-you-begin"></a>Vorabinformationen
+
+Sie müssen ein Administrator in einer Microsoft 365 sein, um die mobile Administrator-App verwenden zu können.
   
 ## <a name="download-the-admin-mobile-app"></a>Herunterladen der mobilen Administrator-App
 
@@ -67,7 +71,7 @@ Im Folgenden finden Sie Antworten auf häufig gestellte Fragen.
   
 ### <a name="what-do-i-need-to-do-to-be-able-to-use-the-app"></a>Was muss ich tun, um die App verwenden zu können?
 
-Für die Verwendung der App benötigen Sie Administratorberechtigungen und ein gültiges Abonnement für eines der folgenden Microsoft 365-Abonnements:
+Um die App zu verwenden, benötigen Sie Administratorberechtigungen und ein gültiges Abonnement für eines der folgenden Microsoft 365 Abonnements:
 
 - Microsoft 365 Apps for Enterprise
 - Microsoft 365 Apps for Business
@@ -76,12 +80,12 @@ Für die Verwendung der App benötigen Sie Administratorberechtigungen und ein g
 - Microsoft 365 Business Basic
 - Microsoft 365 E3/E5
 - Office 365: E1, E3/E5
-- Exchange Online-Plan
-- OneDrive for Business Plan
+- Exchange Online Plan
+- OneDrive business plan
   
-### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Kann ich die App mit meinem Microsoft 365-Familienabonnement verwenden?
+### <a name="can-i-use-the-app-with-my-microsoft-365-family-subscription"></a>Kann ich die App mit meinem Microsoft 365 Family verwenden?
 
-Nein, die App funktioniert nicht mit Microsoft 365 Family- oder Microsoft 365 Personal-Abonnements.
+Nein, die App funktioniert nicht mit Microsoft 365 Family oder Microsoft 365 Single Abonnements.
 
 ### <a name="will-the-app-work-if-my-organization-has-directory-synchronization-enabled"></a>Funktioniert die App auch dann, wenn in meiner Organisation die Verzeichnissynchronisierung aktiviert ist?
 
@@ -89,7 +93,7 @@ Ja, aber mit eingeschränkter Funktionalität. Sie können sich anmelden und Die
   
 ### <a name="what-languages-are-supported-by-the-app"></a>Welche Sprachen werden von der App unterstützt?
 
-Die App unterstützt alle 39 Sprachen, die vom webbasierten Microsoft 365 Admin Center unterstützt werden. Um die Sprache zu ändern, wechseln Sie im linken Navigationsmenü im Admin Center zu Einstellungen Sprache, oder wählen Sie im Abschnitt  >   **Schnelllinks** auf der Homepage der mobilen Administrator-App das Symbol Sprache aus. 
+Die App unterstützt alle 39 Sprachen, die vom webbasierten Microsoft 365 Admin Center unterstützt werden. Um die Sprache zu ändern, wechseln Sie im linken Navigationsmenü im Admin Center zu **Einstellungen** Sprache, oder wählen Sie das Sprachsymbol im Abschnitt Schnelllinks der Homepage der mobilen  >   Administrator-App aus.  
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>Wie kann ich Dienstvorfälle und Nachrichten für die restliche Organisation freigeben?
 
@@ -105,17 +109,21 @@ Sie können es mit einigen allgemeinen Problembehandlungsschritten für mobile A
 
 1. Schließen Sie die App, und öffnen Sie sie erneut.
 1. Deinstallieren Sie die App, und installieren Sie sie erneut. Stellen Sie sicher, dass Sie auf der neuesten Version der App sind.
-1. Wenn Sie Microsoft Authenticator oder die Unternehmensportal-App auf Ihrem Gerät installiert haben, versuchen Sie es erneut zu installieren oder auf die neueste Version zu aktualisieren.
+1. Wenn Sie eine Microsoft Authenticator Oder Unternehmensportal-App auf Ihrem Gerät installiert haben, versuchen Sie, sie erneut zu installieren oder auf die neueste Version zu aktualisieren.
 1. Wenn dies nicht funktioniert, können Sie uns eine E-Mail an feedback365@microsoft.com senden, um uns das zu sagen.
 
 ### <a name="how-do-i-manage-notifications-in-the-app"></a>Wie verwalte ich Benachrichtigungen in der App?
 
-Wechseln Sie im linken Navigationsmenü zu **Einstellungsbenachrichtigungen**  >  . Hier können Sie den Dienstzustand, das Nachrichtencenter und Abrechnungsbenachrichtigungen verwalten.
+Wechseln Sie im linken Navigationsmenü zu **Einstellungen**  >  **Benachrichtigungen**. Hier können Sie den Dienstzustand, das Nachrichtencenter und Abrechnungsbenachrichtigungen verwalten.
 
 ### <a name="what-do-i-do-if-my-question-isnt-answered"></a>Was kann ich tun, wenn meine Frage hier nicht beantwortet wurde?
 
 [E feedback365@microsoft.com,](mailto:feedback365@microsoft.com) um ein Problem mit der App zu melden. Oder Sie können am Ende dieses Artikels Feedback geben.
-  
-## <a name="related-content"></a>Verwandte Inhalte 
 
-[Microsoft 365 Business Schulungsvideos](../../business-video/index.yml) (Linkseite)
+## <a name="next-steps"></a>Nächste Schritte
+
+Nachdem Sie das Administratormobil heruntergeladen haben, können Sie Benutzer hinzufügen, um Sie zu starten.
+  
+## <a name="related-content"></a>Verwandte Inhalte
+
+[Microsoft 365 für Unternehmen-Schulungsvideos](../../business-video/index.yml)

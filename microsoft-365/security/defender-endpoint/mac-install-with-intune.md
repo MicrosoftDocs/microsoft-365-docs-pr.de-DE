@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: da82b24b8a6bb6aa22028615bb3dd0c9d45acfa1
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 5aeffdaff39c2f10dfa5164764bff38e99c00010
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345984"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684219"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Intune-basierte Bereitstellung für Microsoft Defender for Endpoint unter macOS
 
@@ -170,7 +170,7 @@ Dieses Profil ist für macOS 10.15 (Catalina) oder älter erforderlich. Sie wird
    >
    > Dieses Konfigurationsprofil gewährt Volldatenträgerzugriff auf Microsoft Defender for Endpoint. Wenn Sie Microsoft Defender for Endpoint zuvor über Intune konfiguriert haben, wird empfohlen, die Bereitstellung mit diesem Konfigurationsprofil zu aktualisieren.
 
-Laden [**Sie fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) aus [unserem GitHub herunter.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
+Laden [**Sie fulldisk.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) aus [unserem GitHub herunter.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
 Befolgen Sie die Anweisungen für [das Onboarding-Blob](#onboarding-blob) von oben, indem Sie "MDATP Full Disk Access" als Profilnamen verwenden und **fulldisk.mobileconfig** als Konfigurationsprofilnamen heruntergeladen haben.
 
@@ -178,7 +178,7 @@ Befolgen Sie die Anweisungen für [das Onboarding-Blob](#onboarding-blob) von ob
 
 Im Rahmen der Funktionen für die Erkennung und Reaktion von Endpunkten prüft Microsoft Defender for Endpoint auf macOS den Socketdatenverkehr und meldet diese Informationen Microsoft Defender Security Center Portal. Mit der folgenden Richtlinie kann die Netzwerkerweiterung diese Funktionalität ausführen.
 
-Laden [**Sie netfilter.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) aus [unserem GitHub herunter.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
+Laden [**Sie netfilter.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/netfilter.mobileconfig) aus [unserem GitHub herunter.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
 Befolgen Sie die Anweisungen für [das Onboarding-Blob](#onboarding-blob) von oben, indem Sie "MDATP Network Filter" als Profilnamen verwenden und **netfilter.mobileconfig** als Konfigurationsprofilnamen heruntergeladen haben.
 
@@ -186,7 +186,7 @@ Befolgen Sie die Anweisungen für [das Onboarding-Blob](#onboarding-blob) von ob
 
 Dieses Profil wird verwendet, um Microsoft Defender for Endpoint unter macOS und Microsoft Auto Update das Anzeigen von Benachrichtigungen in der Benutzeroberfläche unter macOS 10.15 (Catalina) oder neuer zu ermöglichen.
 
-Laden [**Sie notif.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/kext.mobileconfig) aus [unserem GitHub herunter.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
+Laden [**Sie notif.mobileconfig**](https://raw.githubusercontent.com/microsoft/mdatp-xplat/master/macos/mobileconfig/profiles/notif.mobileconfig) aus [unserem GitHub herunter.](https://github.com/microsoft/mdatp-xplat/tree/master/macos/mobileconfig/profiles)
 
 Befolgen Sie die Anweisungen für [das Onboarding-Blob](#onboarding-blob) von oben, indem Sie "MDATP Netzwerkfilter" als Profilnamen verwenden und **notif.mobileconfig** als Konfigurationsprofilnamen heruntergeladen haben.
 

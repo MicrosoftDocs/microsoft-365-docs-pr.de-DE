@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 'Erfahren Sie, wie Sie Ihre Domäne in Microsoft 365 hinzufügen und einrichten, damit Ihre Dienste wie E-Mail und Skype for Business Online Ihren eigenen Domänennamen verwenden. '
-ms.openlocfilehash: c6394b505e025c565713aae753879601f5a6aecf
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 7f1ade6cb3013126fb011fe9232b3b4c2e9a82d4
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635438"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683127"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Ändern des Namenservers zum Einrichten von Microsoft 365 mit einer beliebigen Domänenregistrierungsstelle.
 
@@ -43,7 +43,6 @@ Befolgen Sie diese Anweisungen, um Ihre Domäne in Microsoft 365 hinzuzufügen u
 - Sie wollen, dass Microsoft 365 Ihre DNS-Einträge für Sie verwaltet. (Wenn Sie es Ihnen lieber ist, können Sie [Ihre eigenen DNS-Einträge verwalten](../setup/add-domain.md).)
     
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>Hinzufügen eines TXT- oder MX-Eintrags zur Überprüfung
-<a name="BKMK_verify"> </a>
 
 > [!NOTE]
 > Sie müssen nur einen der beiden Einträge erstellen. TXT ist der bevorzugte Eintragstyp, jedoch wird er von einigen DNS-Hostinganbietern nicht unterstützt. In diesem Fall können Sie stattdessen einen MX-Datensatz erstellen. 
@@ -94,17 +93,13 @@ Wenn Microsoft 365 den richtigen TXT-Eintrag findet, ist die Domäne überprüft
   
 3. Wählen Sie auf der Seite **Setup** die Option **Setup starten** aus.
  
-    
   
 4. Wählen Sie auf der Seite **Domäne überprüfen** die Option **Überprüfen** aus.
-    
-    
   
 > [!NOTE]
 >  Normalerweise dauert es ungefähr 15 Minuten, bis DNS-Änderungen wirksam werden. Es kann jedoch gelegentlich länger dauern, bis eine von Ihnen vorgenommene Änderung im Internet im DNS-System aktualisiert wurde. Wenn nach dem Hinzufügen von DNS-Einträgen Probleme mit dem E-Mail-Fluss oder andere Probleme auftreten, lesen Sie [Behandeln von Problemen nach Änderung des Domänennamens oder von DNS-Einträgen](../get-help-with-domains/find-and-fix-issues.md). 
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Ändern der Namenservereinträge (NS-Einträge) Ihrer Domäne
-<a name="BKMK_nameservers"> </a>
 
 Als letzten Schritt im Setupassistenten für Domänen in Microsoft 365 müssen Sie nur noch eine einzige Aufgabe ausführen. Um Ihre Domäne mit Microsoft 365-Diensten wie E-Mail einzurichten, ändern Sie die Namenservereinträge (oder NS-Einträge) bei Ihrer Domänenregistrierungsstelle so, dass diese auf die primären und sekundären Microsoft 365-Namenserver verweisen. Weil Ihr DNS von Microsoft 365 gehostet wird, werden anschließend die erforderlichen DNS-Einträge für Ihre Dienste für Sie automatisch eingerichtet. Sie können die Namenservereinträge selbst aktualisieren, indem Sie die Schritte durchführen, die Ihre Domänenregistrierungsstelle eventuell in den Hilfeinhalten auf ihrer Website bereitstellt. Wenn Sie mit DNS nicht vertraut sind, wenden Sie sich an den Support bei der Domänenregistrierungsstelle.
 
@@ -199,5 +194,5 @@ Nachdem die Nameservereinträge so aktualisiert wurden, dass sie auf Microsoft v
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Hinzufügen von DNS-Einträgen zum Verbinden Ihrer Domäne](create-dns-records-at-any-dns-hosting-provider.md) (Artikel)\
-[Suchen und Beheben von Problemen nach dem Hinzufügen Ihrer Domäne oder Ihrer DNS-Einträge](find-and-fix-issues.md) (Artikel)\
+[Suchen und Beheben von Problemen, nachdem Ihre Domäne oder DNS-Einträge hinzugefügt wurden](find-and-fix-issues.md) (Artikel)\
 [Domänen verwalten](index.yml) (Linkseite)

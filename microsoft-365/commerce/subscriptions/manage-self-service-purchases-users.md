@@ -18,21 +18,14 @@ search.appverid:
 - MET150
 description: Benutzer können erfahren, wie sie ihre Self-Service-Käufe verwalten.
 ms.date: 03/17/2021
-ms.openlocfilehash: ed6f2fc3b55756fb88dccd748fd4a4a9a34a5c81
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: fb8431bce82893d8ca2903caf96968dd3b0ef359
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536082"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683667"
 ---
 # <a name="manage-self-service-purchases-users"></a>Self-Service-Einkäufe (Benutzer) verwalten
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> Das Admin Center wird geändert. Wenn Ihre Erfahrung nicht den hier aufgeführten Details entspricht, lesen Sie [über das neue Microsoft 365 Admin Center](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Als Benutzer können Sie Abonnements für bestimmte Produkte erwerben und Lizenzen für diese Abonnements Personen in Ihrem Team zuweisen. Sie sind für die Zahlung von Self-Service-Käufen verantwortlich, die Sie tätigen. Sie können Ihre Abonnements im Microsoft 365 Admin Center unter <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">admin.microsoft.com.</a>
 
@@ -42,12 +35,42 @@ Ihr Administrator hat eine schreibgeschützte Ansicht in allen Abonnements, die 
 
 Sie können eine Liste aller gekauften Self-Service-Abonnements anzeigen.
 
+::: moniker range="o365-worldwide"
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Ihre Produkte</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ihre Produkte</a>.
+::: moniker-end
 2. Wählen Sie **auf der** Registerkarte Produkte das Filtersymbol aus, und wählen Sie **dann Self-Service aus.**
 
 ## <a name="how-to-buy-more-or-reduce-licenses"></a>So kaufen Sie mehr oder reduzieren Sie Lizenzen
 
+::: moniker range="o365-worldwide"
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Ihre Produkte</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ihre Produkte</a>.
+::: moniker-end
 2. Wählen Sie **auf der** Registerkarte Produkte das Abonnement aus, für das Sie mehr kaufen oder Lizenzen reduzieren möchten.
 3. Wählen **Sie Lizenzen kaufen** oder Lizenzen entfernen **aus.**
 4. Geben Sie im rechten Bereich im **Feld** Lizenzen insgesamt die Gesamtanzahl der Lizenzen ein, die Sie für dieses Abonnement benötigen, und wählen Sie dann **Speichern aus.** Wenn Sie beispielsweise über 100 Lizenzen verfügen und 5 weitere hinzufügen möchten, geben Sie 105 ein.
@@ -56,7 +79,23 @@ Sie können eine Liste aller gekauften Self-Service-Abonnements anzeigen.
 
 ### <a name="to-assign-licenses"></a>So weisen Sie Lizenzen zu
 
-1. Wechseln Sie im Admin Center zur Seite  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Abrechnungslizenzen.</a>
+:: moniker range="o365-worldwide"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Lizenzen</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Lizenzen</a>.
+
+::: moniker-end
 2. Wählen Sie das Abonnement aus, für das Sie Lizenzen zuweisen möchten.
 3. Wählen **Sie Lizenzen zuweisen aus.**
 4. Beginnen Sie im Bereich **Lizenzen an Benutzer zuweisen** mit der Eingabe eines Namens, und wählen Sie ihn dann aus den Ergebnissen aus, um ihn der Liste hinzuzufügen. Sie können bis zu 20 Benutzer gleichzeitig hinzufügen.
@@ -66,7 +105,23 @@ Sie können eine Liste aller gekauften Self-Service-Abonnements anzeigen.
 
 ### <a name="to-unassign-licenses"></a>So designiert das Zuweisen von Lizenzen
 
-1. Wechseln Sie im Admin Center zur Seite  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Abrechnungslizenzen.</a>
+:: moniker range="o365-worldwide"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Lizenzen</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Lizenzen</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Lizenzen</a>.
+
+::: moniker-end
 2. Wählen Sie das Produkt aus, für das Sie Lizenzen nicht mehr zuweisen möchten.
 3. Wählen Sie die Benutzer aus, von der Sie Lizenzen zuweisen möchten.
 4. Wählen **Sie Lizenzen nicht zuweisen aus.**
@@ -74,8 +129,23 @@ Sie können eine Liste aller gekauften Self-Service-Abonnements anzeigen.
 
 ## <a name="cancel-a-subscription"></a>Kündigen eines Abonnements
 
+::: moniker range="o365-worldwide"
+
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
-2. Suchen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie kündigen möchten. Wählen Sie die drei Punkte (weitere Aktionen) aus, und wählen Sie dann **Abonnement abbrechen aus.**
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Ihre Produkte</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Ihre Produkte</a>.
+::: moniker-end
+2. Suchen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie kündigen möchten. Wählen Sie die drei Punkte (weitere Aktionen) und dann **Abonnement kündigen** aus.
 3. Wählen Sie im Bereich **Abonnement kündigen** einen Grund aus, warum Sie kündigen. Geben Sie optional Feedback, das Sie haben.
 4. Klicken Sie auf **Speichern**.
 

@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f96cfd56cb8d61bc62c34e2b1ee08d6313c6a8ad
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 43a136bb3432adcd47589d29aa5de8f8f6299ba8
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186641"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683067"
 ---
 # <a name="machine-resource-type"></a>Computerressourcentyp
 
@@ -59,18 +59,18 @@ Methode|Rückgabetyp |Beschreibung
 
 Eigenschaft |   Typ   |   Beschreibung
 :---|:---|:---
-id | String | [Computeridentität.](machine.md)
-computerDnsName | String | [vollqualifizierten](machine.md) Namen des Computers.
+id | Zeichenfolge | [Computeridentität.](machine.md)
+computerDnsName | Zeichenfolge | [vollqualifizierten](machine.md) Namen des Computers.
 firstSeen | DateTimeOffset | Datum und Uhrzeit des ersten [Zeitpunkts, an dem der](machine.md) Computer von Microsoft Defender for Endpoint beobachtet wurde.
 lastSeen | DateTimeOffset |Uhrzeit und Datum des letzten empfangenen vollständigen Geräteberichts. Ein Gerät sendet in der Regel alle 24 Stunden einen vollständigen Bericht.
-osPlatform | String | Betriebssystemplattform.
-osProcessor | String | Betriebssystemprozessor.
+osPlatform | Zeichenfolge | Betriebssystemplattform.
+osProcessor | Zeichenfolge | Betriebssystemprozessor. Verwenden Sie stattdessen die osArchitecture-Eigenschaft.
 Version | String | Betriebssystemversion.
 osBuild | Nullable long | Buildnummer des Betriebssystems.
-lastIpAddress | String | Letzte IP auf der lokalen NIC auf dem [Computer](machine.md).
-lastExternalIpAddress | String | Letzte IP, über die [der Computer](machine.md) auf das Internet zugegriffen hat.
+lastIpAddress | Zeichenfolge | Letzte IP auf der lokalen NIC auf dem [Computer](machine.md).
+lastExternalIpAddress | Zeichenfolge | Letzte IP, über die [der Computer](machine.md) auf das Internet zugegriffen hat.
 healthStatus | Enum | [Zustand des](machine.md) Computers. Mögliche Werte sind: "Active", "Inactive", "ImpairedCommunication", "NoSensorData", "NoSensorDataImpairedCommunication" und "Unknown". 
-rbacGroupName | String | Computergruppenname.
+rbacGroupName | Zeichenfolge | Computergruppenname.
 riskScore | Nullable Enum | Risikobewertung, wie von Microsoft Defender for Endpoint ausgewertet. Mögliche Werte sind: "None", "Informational", "Low", "Medium" und "High".
 exposureScore | Nullable Enum | [Belichtungsergebnis,](tvm-exposure-score.md) wie von Microsoft Defender for Endpoint ausgewertet. Mögliche Werte sind: "None", "Low", "Medium" und "High".
 aadDeviceId | Guid für nullierbare Darstellung | AAD-Geräte-ID (wenn [der Computer](machine.md) mit AAD verbunden ist).
@@ -78,5 +78,6 @@ machineTags | String collection | Satz von [Computertags.](machine.md)
 exposureLevel | Nullable Enum | Die Belichtungsstufe wird von Microsoft Defender for Endpoint ausgewertet. Mögliche Werte sind: "None", "Low", "Medium" und "High".
 deviceValue | Nullable Enum | Der [Wert des Geräts](tvm-assign-device-value.md). Mögliche Werte sind: "Normal", "Niedrig" und "Hoch".
 ipAddresses | IpAddress-Auflistung | Satz von ***IpAddress-Objekten.*** Weitere [Informationen finden Sie unter Abrufen der Computer-API](get-machines.md).
+osArchitecture | Zeichenfolge | Betriebssystemarchitektur. Mögliche Werte sind: "32-Bit", "64-Bit". Verwenden Sie diese Eigenschaft anstelle von osProcessor.
 
 

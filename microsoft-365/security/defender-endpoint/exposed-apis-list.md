@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 656aa26d80db73bfc52511f9dd94e58e771f3ac6
-ms.sourcegitcommit: 9063c7a50a1d7dd6d2e1ca44f53d3c26f21f4ae8
+ms.openlocfilehash: f7a620ad56496b1a26e193a18fa93f4d217431df
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52073829"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684147"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>Unterstütze Microsoft Defender für Endpoint-APIs
 
@@ -61,6 +61,7 @@ Thema | Beschreibung
 :---|:---
 [Erweiterte Suche](run-advanced-query-api.md) | Führen Sie Abfragen aus der API aus.
 [Warnungsmethoden und Eigenschaften](alerts.md) | Führen Sie API-Aufrufe \- aus, z. B. Warnungen abrufen, Warnung erstellen, Warnung aktualisieren und vieles mehr.
+[Exportieren von Bewertungsmethoden und Eigenschaften pro Gerät](get-assessmnt-1methods-properties.md) | Führen Sie API-Aufrufe wie \- export secure configuration assessment, export software inventory assessment und export software vulnerabilities assessment aus.
 [Methoden und Eigenschaften der automatisierten Untersuchung](investigation.md) | Führen Sie API-Aufrufe aus, \- z. B. Abrufen der Untersuchung.
 [Domänenbezogene Benachrichtigungen erhalten](get-domain-related-alerts.md) | Führen Sie API-Aufrufe aus, z. B. \- domänenbezogene Geräte, Domänenstatistiken und vieles mehr.
 [Dateimethoden und -eigenschaften](files.md) | Führen Sie API-Aufrufe aus, z. \- B. Dateiinformationen abrufen, dateibezogene Warnungen, dateibezogene Geräte und Dateistatistiken.
@@ -69,12 +70,13 @@ Thema | Beschreibung
 [Computermethoden und Eigenschaften](machine.md) | Führen Sie API-Aufrufe aus, z. B. Geräte abrufen, Geräte nach ID abrufen, Informationen zu angemeldeten \- Benutzern, Bearbeiten von Tags und mehr.
 [Computer-Aktionsmethoden und Eigenschaften](machineaction.md) | Führen Sie API-Aufrufe \- wie Isolation, Virenschutzscan ausführen und vieles mehr aus.
 [Methoden und Eigenschaften für Empfehlung](recommendation.md) | Führen Sie API-Aufrufe aus, \- z. B. Empfehlung nach ID abrufen.
+[Methoden und Eigenschaften der Korrekturaktivität](get-remediation-methods-properties.md) | Führen Sie API-Aufrufe aus, z. B. alle Wartungsaufgaben abrufen, Aufgaben zur Behebung verfügbarer Geräte abrufen und eine Problembehebungsaufgabe \- nach ID abrufen.
 [Bewertungsmethoden und -eigenschaften](score.md) | Führen Sie API-Aufrufe aus, z. B. das Abrufen \- der Belichtungsergebnis oder das Abrufen der gerätesicheren Bewertung.
 [Softwaremethoden und -eigenschaften](software.md) | Führen Sie API-Aufrufe wie \- z. B. das Auflisten von Sicherheitsrisiken nach Software aus.
 [Benutzermethoden](user.md) | Führen Sie API-Aufrufe aus, z. B. \- benutzerbezogene Warnungen und benutzerbezogene Geräte.
 [Methoden und Eigenschaften für Sicherheitsrisiko](vulnerability.md) | Führen Sie API-Aufrufe wie \- z. B. Listengeräte nach Sicherheitsrisiko aus.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 
