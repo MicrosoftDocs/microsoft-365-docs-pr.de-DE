@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Einrichten des Inhaltsverständnisses in Projekt Cortex
-ms.openlocfilehash: 2f9fd4e035152a127f9f1c254f4c489a6ca4c976
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 7589003505aafb480872b14a09c383cfbe0dff40
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51994701"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683549"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Einrichten von SharePoint Syntex
 
@@ -42,6 +42,8 @@ Vergewissern Sie sich vor dem Einrichten, dass Sie die beste Möglichkeit zum Ei
 > Sie müssen über globale Administrator- oder SharePoint-Administratorberechtigungen verfügen, um auf das Microsoft 365 Admin Center zugreifen und SharePoint Syntex einrichten zu können.
 
 Als Administrator können Sie nach dem Einrichten und in den Verwaltungseinstellungen für das Inhaltsverständnis im Microsoft 365 Admin Center jederzeit Änderungen an den ausgewählten Einstellungen vornehmen.
+
+Wenn Sie beabsichtigen, eine benutzerdefinierte Power Platform-Umgebung zu verwenden, müssen Sie [die App *KI-Generator für Project Cortex* in dieser Umgebung installieren](/power-platform/admin/manage-apps#install-an-app-in-the-environment-view) und ihr [KI-Generator-Punkte zuweisen](/power-platform/admin/capacity-add-on), bevor Sie Modelle zur Formularverarbeitung erstellen können.
 
 ### <a name="licensing"></a>Lizenzierung
 
@@ -67,9 +69,9 @@ Wechseln Sie zum [Power Platform Admin Center](https://admin.powerplatform.micro
 
 1. Wählen Sie im Microsoft 365 Admin Center **Setup** aus, und zeigen Sie dann den Abschnitt **Dateien und Inhalte** an.
 
-2. Wählen Sie im Abschnitt **Dateien und Inhalte** > **Inhaltsverständnis automatisieren** aus.<br/>
+2. Wählen Sie im Abschnitt **Dateien und Inhalte** > **Inhaltsverständnis automatisieren** aus. Beachten Sie, dass die Verfügbarkeit der Punkte Ihres aktuellen KI-Generators im Bereich **Auf einen Blick** angezeigt wird.<br/>
 
-3. Klicken Sie auf der Seite **Inhaltsverständnis automatisieren** auf **Erste Schritte**, um den Setupvorgang zu durchlaufen.<br/>
+3. Klicken Sie auf der Seite **Inhaltsverständnis automatisieren** auf **Erste Schritte**, um den Setupvorgang zu durchlaufen. <br/>
 
     > [!div class="mx-imgBorder"]
     > ![Setup starten](../media/content-understanding/admin-content-understanding-get-started.png)</br>
@@ -93,7 +95,7 @@ Wechseln Sie zum [Power Platform Admin Center](https://admin.powerplatform.micro
 
     Für **Power Platform-Umgebung** können Sie wählen:
     - **Standardumgebung verwenden**, um Ihre standardmäßige Power Platform-Umgebung zu verwenden.
-    - **Benutzerdefinierte Umgebung verwenden**, um eine benutzerdefinierte Umgebung zu verwenden. Wählen Sie die zu verwendende Umgebung aus der Liste aus. Sie müssen die App *KI-Generator für Project Cortex* in dieser Umgebung installieren und ihr KI-Generator-Guthaben zuweisen, bevor Sie Modelle zur Formularverarbeitung erstellen können.
+    - **Benutzerdefinierte Umgebung verwenden**, um eine benutzerdefinierte Umgebung zu verwenden. Wählen Sie die zu verwendende Umgebung aus der Liste aus. ([Weitere Informationen zu den Anforderungen für eine benutzerdefinierte Umgebung](/microsoft-365/contentunderstanding/set-up-content-understanding#requirements)).
 
     Klicken Sie auf **Weiter**.
 
