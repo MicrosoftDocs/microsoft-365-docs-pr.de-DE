@@ -66,6 +66,8 @@
       href: billing-and-payments/change-your-billing-addresses.md
     - name: Informationen zur „Zahlungsdienstleistungsrichtlinie 2“ und „Strengen Kundenauthentifizierung“
       href: billing-and-payments/psd2.md
+    - name: Anfordern einer Gutschrift für die Quellensteuer auf Ihr Konto
+      href: billing-and-payments/withholding-tax-credit-global.md
 - name: Abrechnungskonten
   items:
     - name: Abrechnungskonten verstehen
