@@ -42,19 +42,21 @@
   items:
     - name: Erste Schritte mit der Einführung
       href: adoption-getstarted.md
-    - name: "Verträge in Microsoft\_365 verwalten"
+    - name: Szenarien und Anwendungsfälle
+      href: adoption-scenarios.md
+    - name: Verträge in Microsoft 365 verwalten
       items:
         - name: Übersicht
           href: solution-manage-contracts-in-microsoft-365.md
-        - name: "Schritt 1. SharePoint\_Syntex verwenden"
+        - name: Schritt 1. SharePoint Syntex verwenden
           href: solution-manage-contracts-step1.md
-        - name: "Schritt\_2. Microsoft\_Teams verwenden"
+        - name: Schritt 2. Microsoft Teams verwenden
           href: solution-manage-contracts-step2.md
-        - name: "Schritt\_3: Power Automate"
+        - name: 'Schritt 3: Power Automate'
           href: solution-manage-contracts-step3.md
 - name: Setup und Verwaltung
   items:
-    - name: Inhaltsverständnis einrichten
+    - name: Einrichten von SharePoint Syntex
       href: set-up-content-understanding.md
 - name: Inhaltsdienste
   items:
