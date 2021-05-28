@@ -22,12 +22,12 @@ ms.custom:
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 recommendations: false
 description: Erfahren Sie, wie Sie Teams für eine bessere Sicherheit bei der gemeinsamen Nutzung von Dateien konfigurieren können, indem Sie drei Schutzebenen verwenden, die ein Gleichgewicht zwischen Sicherheit und einfacher Zusammenarbeit herstellen.
-ms.openlocfilehash: ab2dd4cbf2b9cfc7b285f049eeaa876371574202
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 34351b202575302e2929db48d7807b91e4308905
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539215"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683403"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Konfigurieren von Teams mit drei Schutzebenen
 
@@ -117,6 +117,14 @@ Lesen Sie die folgenden Verweise, um eine sichere und produktive Gastumgebung f�
 Bei den Ebenen „Vertraulich“ und „Streng vertraulich“ wird der Zugriff auf SharePoint-Inhalte mit Vertraulichkeitsbezeichnungen eingeschränkt. Der bedingte Zugriff über Azure AD bietet zahlreiche Optionen, um zu bestimmen, wie Personen auf Microsoft 365 zugreifen, einschließlich Einschränkungen basierend auf Standort, Risiko, Gerätekonformität und anderen Faktoren. Wir empfehlen Ihnen, den Artikel [Was ist bedingter Zugriff?](/azure/active-directory/conditional-access/overview) zu lesen, und sich zu überlegen, welche zusätzlichen Richtlinien für Ihre Organisation geeignet sein könnten.
 
 Beachten Sie, dass Gäste oft keine Geräte haben, die von Ihrer Organisation verwaltet werden. Wenn Sie Gäste in eine der Ebenen erlauben, überlegen Sie, welche Arten von Geräten diese für den Zugriff auf Teams und Websites verwenden, und legen Sie Ihre Richtlinien für nicht verwaltete Geräte entsprechend fest.
+
+### <a name="control-device-access-across-microsoft-365"></a>Steuern des Gerätezugriffs in Microsoft 365
+
+Die Einstellung für nicht verwaltete Geräte in Vertraulichkeitsbezeichnungen wirkt sich nur auf den SharePoint-Zugriff aus. Wenn Sie die Kontrolle über nicht verwaltete Geräte über SharePoint hinaus erweitern möchten, können Sie stattdessen eine [Azure Active Directory-Richtlinie für bedingten Zugriff für alle Apps und Dienste in Ihrer Organisation erstellen](/azure/active-directory/conditional-access/howto-conditional-access-policy-compliant-device). Um diese Richtlinie speziell für [Microsoft 365-Dienste](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#office-365) zu konfigurieren, wählen Sie die **Office 365**-Cloud-App unter **Cloud-Apps oder -Aktionen** aus.
+
+![Screenshot der Office 365-Cloud-App in einer Azure Active Directory-Richtlinie für den bedingten Zugriff](https://docs.microsoft.com/sharepoint/sharepointonline/media/azure-ca-office365-policy.png)
+
+Die Verwendung einer Richtlinie, die alle Microsoft 365-Dienste betrifft, kann zu einer besseren Sicherheit und einer besseren Benutzererfahrung führen. Wenn Sie beispielsweise nur den Zugriff auf nicht verwaltete Geräte in SharePoint blockieren, können Benutzer auf den Chat in einem Team mit einem nicht verwalteten Gerät zugreifen, verlieren jedoch den Zugriff, wenn sie versuchen, auf die Registerkarte **Dateien** zuzugreifen. Durch die Verwendung der Office 365-Cloud-App können Probleme mit [Dienstabhängigkeiten](/azure/active-directory/conditional-access/service-dependencies) vermieden werden.
 
 ## <a name="next-step"></a>Nächster Schritt
 
