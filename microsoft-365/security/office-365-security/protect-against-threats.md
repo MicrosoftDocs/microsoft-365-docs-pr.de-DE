@@ -20,12 +20,12 @@ description: Administratoren können informationen über den Bedrohungsschutz in
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12b519d45df005471e3d87cfdb24f87edddbf6f3
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 77b76a56c34a005b0e0742f207e2824359ae8cac
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683331"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696550"
 ---
 # <a name="protect-against-threats"></a>Schutz vor Bedrohungen
 
@@ -50,6 +50,8 @@ Bedrohungsschutzfunktionen sind in *allen Microsoft-* oder Office 365 enthalten.
 > [!TIP]
 > Beachten Sie, dass über die Anweisungen  zum Aktivieren der Überwachung hinaus Schritte zum Starten von Schadsoftware, Antiphishing und Antispam beginnen, die als Teil von Office 365 Exchange Online Protection (**EOP**) gekennzeichnet sind. Dies kann in einem Defender for Office 365 seltsam erscheinen, bis Sie sich erinnern (**Defender für Office 365**) EOP enthält und darauf aufbaut.
 
+<br>
+
 ****
 
 |Schutztyp|Abonnementanforderung|
@@ -67,6 +69,8 @@ Bedrohungsschutzfunktionen sind in *allen Microsoft-* oder Office 365 enthalten.
 
 Zum Konfigurieren von Defender Office 365 Richtlinien muss Ihnen eine entsprechende Rolle im [Security & Compliance Center zugewiesen werden.](/office365/servicedescriptions/office-365-platform-service-description/office-365-securitycompliance-center) In der folgenden Tabelle finden Sie Rollen, die diese Aktionen ausführen können.
 
+<br>
+
 ****
 
 |Rolle oder Rollengruppe|Weitere Informationen|
@@ -82,20 +86,22 @@ Weitere Informationen finden Sie unter [Berechtigungen im Security & Compliance 
 
 - Starten Sie die Überwachungsprotokollierung frühzeitig. Für einige der folgenden  Schritte muss die Überwachung aktiviert sein. Die Überwachungsprotokollierung ist in Abonnements verfügbar, die [Exchange Online.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-service-description) Zum Anzeigen von Daten in Bedrohungsschutzberichten, [](view-email-security-reports.md)wie z. B. dem Sicherheitsdashboard, E-Mail-Sicherheitsberichten und [Explorer,](threat-explorer.md)muss die Überwachungsprotokollierung *auf lauten.* [](security-dashboard.md) Weitere Informationen finden Sie unter Aktivieren oder Deaktivieren [der Überwachungsprotokollsuche.](../../compliance/turn-audit-log-search-on-or-off.md)
 
-## <a name="part-1---anti-malware-protection"></a>Teil 1 – Schutz vor Schadsoftware
+## <a name="part-1---anti-malware-protection-in-eop"></a>Teil 1 – Schutz vor Schadsoftware in EOP
 
 Weitere Informationen zu den empfohlenen Einstellungen für Schadsoftware finden Sie unter [EOP Anti-Malware Policy Settings](recommended-settings-for-eop-and-office365.md#eop-anti-malware-policy-settings).
 
 1. Öffnen <https://security.microsoft.com/antimalwarev2> Sie .
 
-2. Wählen Sie die Standardrichtlinie aus, indem Sie auf den Namen der Richtlinie klicken.
+2. Wählen Sie **auf der** Seite An malware die Richtlinie mit dem Namen **Standardrichtlinie** aus, indem Sie auf den Namen klicken.
 
 3. Klicken Sie im geöffneten Flyout für Richtliniendetails auf **Schutzeinstellungen bearbeiten,** und konfigurieren Sie dann die folgenden Einstellungen:
    - Wählen **Sie Den allgemeinen Anlagenfilter aktivieren aus,** um den filter für häufige Anlagen zu aktivieren. Klicken **Sie auf Dateitypen anpassen,** um weitere Dateitypen hinzuzufügen.
    - Stellen Sie **sicher, dass** automatisches Löschen von Schadsoftware im Wert von null Stunden aktiviert ist.
    - Stellen Sie sicher, dass keine der Einstellungen im Abschnitt **Benachrichtigung** ausgewählt ist.
 
-   Klicken Sie nach Abschluss des Abschlusses auf **Speichern.**
+   Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
+
+4. Klicken Sie wieder im Flyout für Richtliniendetails auf **Schließen**.
 
 Ausführliche Anweisungen zum Konfigurieren von An malware-Richtlinien finden Sie unter [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
 
@@ -135,23 +141,23 @@ Im folgenden Verfahren wird beschrieben, wie Sie eine Antiphishingrichtlinie in 
 
 Weitere Informationen zu Ihren Antiphishingrichtlinienoptionen finden Sie unter [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md).
 
-## <a name="part-3---anti-spam-protection"></a>Teil 3 – Antispamschutz
+## <a name="part-3---anti-spam-protection-in-eop"></a>Teil 3 – Antispamschutz in EOP
 
-[Antispamschutz ist](anti-spam-protection.md) in Abonnements verfügbar, die [EOP enthalten.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
+Weitere Informationen zu den empfohlenen Einstellungen für Antispam finden Sie unter [EOP Antispamrichtlinieneinstellungen](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
-1. Wählen Sie [im Security & Compliance Center](https://protection.office.com)die Option **Bedrohungsverwaltungsrichtlinie** \>  \> **Antispam aus.**
+1. Öffnen <https://security.microsoft.com/antispam> Sie .
 
-2. Aktivieren Sie **auf** der Registerkarte Benutzerdefinierte Einstellungen benutzerdefinierte Einstellungen.
+2. Wählen Sie auf der Seite **Antispamrichtlinien** die Richtlinie mit dem Namen **Antispamrichtlinie in** der Liste aus, indem Sie auf den Namen klicken.
 
-3. Erweitern **Sie Die Standardmäßige Spamfilterrichtlinie,** klicken **Sie auf Richtlinie bearbeiten,** und geben Sie dann die folgenden Einstellungen an:
+3. Klicken Sie im angezeigten Flyout für Richtliniendetails auf Spamschwellenwert und Eigenschaften bearbeiten im Abschnitt Massen-E-Mail-Schwellenwert **& Spameigenschaften.** 
 
-   - Legen Sie **im Abschnitt Spam-** und Massenaktionen den Schwellenwert auf den Wert 5 oder 6.
+4. Legen Sie **im angezeigten** Flyout für  Spamschwellenwert und Eigenschaften den Schwellenwert für Massen-E-Mails auf 5 (Streng) oder 6 (Standard) fest. Klicken Sie nach Abschluss des Abschlusses auf **Speichern.**
 
-   - Überprüfen **(und/oder** bearbeiten) Sie im Abschnitt Listen zulassen Ihre zulässigen Absender und Domänen.
+5. Wechseln Sie zurück zum Flyout  für Richtliniendetails zum Abschnitt Zugelassene und blockierte Absender und Domänen, und überprüfen oder bearbeiten Sie ihre zulässigen Absender und zulässigen Domänen.
 
-4. Klicken Sie auf **Speichern**.
+6. Klicken Sie nach Abschluss des Vorgangs auf **Schließen**.
 
-Weitere Informationen zu Ihren Antispamrichtlinienoptionen finden Sie unter [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
+Ausführliche Anweisungen zum Konfigurieren von Antispamrichtlinien finden Sie unter [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Teil 4 – Schutz vor schädlichen URLs und Dateien (Sichere Links und sichere Anlagen in Defender for Office 365)
 

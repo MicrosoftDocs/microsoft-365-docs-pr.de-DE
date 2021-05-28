@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sie sind bereit, Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen zum Schutz der Daten Ihrer Organisation zu implementieren, sind aber nicht sicher, wo Sie starten sollen? Lesen Sie einige praxisbezogene Anleitungen für den Einstieg.
-ms.openlocfilehash: b39f6246fc9265319e0d4e5b053db6dfddc0d43a
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: bd3ed5e354ee80831cb1af073b6da6f277418b51
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244588"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689037"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Erste Schritte zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -88,4 +88,4 @@ Die meisten Aufbewahrungsrichtlinien arbeiten unauffällig im Hintergrund ohne B
 
 Da Aufbewahrungsbezeichnungen in Microsoft 365-Apps über eine Benutzeroberfläche verfügen, sollten Sie den Endbenutzern und Ihrem Helpdesk eine Anleitung geben, bevor Sie diese Bezeichnungen in Ihrem Produktionsnetzwerk bereitstellen. Informationen zum Anwenden von Aufbewahrungsbezeichnungen in SharePoint und OneDrive, finden Sie unter [Anwenden von Aufbewahrungsbezeichnungen auf Dateien in SharePoint oder OneDrive ](https://support.microsoft.com/office/apply-retention-labels-to-files-in-sharepoint-or-onedrive-11a6835b-ec9f-40db-8aca-6f5ef18132df).
 
-Die effektivste Art der Dokumentation für Endbenutzer sind jedoch maßgeschneiderte Anleitungen und Anweisungen zu den von Ihnen gewählten Namen und Konfigurationen von Aufbewahrungsbezeichnungen. Lesen Sie den folgenden Blogbeitrag für ein Downloadpaket, mit dem sie Benutzer trainieren und Einführungen nutzen können: [Endbenutzertraining in Aufbewahrungsbezeichnungen in M365 – Wie Sie Ihre Einführung beschleunigen können](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
+Die effektivste Art der Dokumentation für Endbenutzer sind jedoch maßgeschneiderte Anleitungen und Anweisungen zu den von Ihnen gewählten Namen und Konfigurationen von Aufbewahrungsbezeichnungen. Schauen Sie sich die folgende Seite und Downloads an, die Sie verwenden können, um Ihre Benutzer zu schulen: [Endbenutzerschulungen für Aufbewahrungsbezeichnungen](https://microsoft.github.io/ComplianceCxE/enduser/retention/).

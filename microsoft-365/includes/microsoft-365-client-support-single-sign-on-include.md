@@ -13,7 +13,7 @@
 |OFFICE.COM|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|✔|
 |ONEDRIVE|✔|✔|Geplant|✔|✔|
 |ONENOTE|✔|✔|✔|Geplant|✔|
-|OUTLOOK|✔|✔|Geplant|✔|✔|
+|OUTLOOK|✔|✔|✔|✔|✔|
 |PLANNER|✔|✔|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|
 |POWER APPS|✔|✔|Nicht zutreffend|Nicht zutreffend|Geplant|
 |POWER AUTOMATE|✔|✔|Nicht zutreffend|Nicht zutreffend|Nicht zutreffend|

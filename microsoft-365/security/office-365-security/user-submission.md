@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie ein Postfach zum Sammeln von Spam- und Phishing-E-Mails konfigurieren, die von Benutzern gemeldet werden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 906048609ce70c761bb014961e02c86f912cd638
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 719bd2b86cae1c6a951cb34408ecb9d2b8da699a
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683499"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696586"
 ---
 # <a name="user-submissions-policy"></a>Richtlinie für Benutzerübermittlungen
 
@@ -56,9 +56,9 @@ Verwenden Sie die folgenden Artikel, um die erforderlichen Voraussetzungen zu ko
 
 - Deaktivieren Sie die URL-Überprüfung für Nachrichten im benutzerdefinierten Postfach. Verwenden [Sie Set up Safe Links policies in Defender for Office 365,](set-up-safe-links-policies.md) um eine Richtlinie für sichere Links mit der Einstellung **Aus** für Auswählen der Aktion für unbekannte potenziell schädliche URLs in Nachrichten **zu erstellen.**
 
-- Erstellen Sie eine Richtlinie für Schadsoftware, um die automatische Bereinigung von Schadsoftware in null Stunden zu deaktivieren. Weitere Informationen finden Sie unter Use [the Security & Compliance Center to create anti-malware policies](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) to set Malware **Zero-hour Auto Purge** to **Off**.
+- Erstellen Sie eine Richtlinie für Schadsoftware, um die automatische Bereinigung von Schadsoftware in null Stunden zu deaktivieren. Weitere Informationen finden Sie unter Use [the Security & Compliance Center to create anti-malware policies](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies) to set Malware **Zero-hour Auto Purge** to **Off**.
 
-- Erstellen Sie eine Spamfilterrichtlinie, um die automatische Reinigung (Zero-Hour Auto Purge, ZAP) für Spam und Phishing im benutzerdefinierten Postfach zu deaktivieren. Weitere Informationen finden Sie unter Verwenden des Security & Compliance Center zum Erstellen von [Antispamrichtlinien](configure-your-spam-filter-policies.md#use-the-security--compliance-center-to-create-anti-spam-policies) und Löschen der Kontrollkästchen **Ein** für **Spam ZAP** und **Phish ZAP**.
+- Erstellen Sie eine Spamfilterrichtlinie, um die automatische Reinigung (Zero-Hour Auto Purge, ZAP) für Spam und Phishing im benutzerdefinierten Postfach zu deaktivieren. Weitere Informationen finden Sie unter Verwenden des Security & Compliance Center zum Erstellen von [Antispamrichtlinien](configure-your-spam-filter-policies.md#use-the-security-center-to-create-anti-spam-policies) und Löschen der Kontrollkästchen **Ein** für **Spam ZAP** und **Phish ZAP**.
 
 - Deaktivieren Sie die Junk-E-Mail-Regel im benutzerdefinierten Postfach. Verwenden [Sie Configure junk email settings on Exchange Online mailboxes,](configure-junk-email-settings-on-exo-mailboxes.md) um die Junk-E-Mail-Regel zu deaktivieren. Nach der Deaktivierung kann EOP Nachrichten nicht in den Junk-E-Mail-Ordner verschieben, basierend auf der Spamfilterungsaktion **Nachricht** in Junk-E-Mail-Ordner oder die Sammlung sicherer Adressen im Postfach verschieben.
 

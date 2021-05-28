@@ -3,6 +3,7 @@
 |:----------------------------|:-------|:---------------------------------|
 |Asien-Pazifik                 |APC     |Rechenzentren in Südost- oder Ostasien|
 |Australien                    |AUS     |Rechenzentren in Südost- oder Ostasien|
+|Brasilien                       |BRA     |(eDiscovery Datenspeicherort in Kürze verfügbar)|
 |Kanada                       |CAN     |Rechenzentren in den USA                    |
 |Europa/Naher Osten/Afrika|EUR     |Rechenzentren in Europa                |
 |Frankreich                       |FRA     |Rechenzentren in Europa                |

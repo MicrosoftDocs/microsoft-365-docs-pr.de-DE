@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c9cd9ef649ec60fc8d880ae525469980a00f69b2
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 7632efb2014af9f55e9cad700bceeeabe555fb8b
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275000"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696574"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatisierte Untersuchung und Reaktion (AIR) in Microsoft Defender für Office 365
 
@@ -78,9 +78,9 @@ Während und nach jeder automatisierten Untersuchung kann Ihr Sicherheitsteam:
 Air-Funktionen sind in [Microsoft Defender for Office 365](defender-for-office-365.md#microsoft-defender-for-office-365-plan-1-and-plan-2)enthalten, sofern Ihre Richtlinien und Warnungen konfiguriert sind. Benötigen Sie Hilfe? Befolgen Sie die Anweisungen unter [Schützen vor Bedrohungen](protect-against-threats.md) zum Einrichten oder Konfigurieren der folgenden Schutzeinstellungen:
 
 - [Überwachungsprotokollierung](../../compliance/turn-audit-log-search-on-or-off.md) (sollte aktiviert sein)
-- [Richtlinien für Antischadsoftware](protect-against-threats.md#part-1---anti-malware-protection)
-- [Schutz vor Phishing](protect-against-threats.md#part-2---anti-phishing-protection)
-- [Antispamschutz](protect-against-threats.md#part-3---anti-spam-protection)
+- [Anschmieren von Schadsoftwarerichtlinien](protect-against-threats.md#part-1---anti-malware-protection-in-eop)
+- [Antiphishingschutz](protect-against-threats.md#part-2---anti-phishing-protection)
+- [Antispamschutz](protect-against-threats.md#part-3---anti-spam-protection-in-eop)
 - [Sichere Links und sichere Anlagen](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 - [Sichere Anlagen für SharePoint, OneDrive und Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
 - [Automatisches Löschen von E-Mails in null Stunden](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)

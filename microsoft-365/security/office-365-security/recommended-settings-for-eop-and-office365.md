@@ -19,12 +19,12 @@ ms.collection:
 description: Was sind bewährte Methoden für Exchange Online Protection (EOP) und Defender für Office 365 Sicherheitseinstellungen? Was sind die aktuellen Empfehlungen für Standardschutz? Was sollte verwendet werden, wenn Sie strenger sein möchten? Und welche Extras erhalten Sie, wenn Sie Defender auch für Office 365?
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 10fac8cb7241faa652bbcb4726610abef741e70c
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: b6661c31d0cc05a1bdfd51de986af1e7b22c9d70
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683271"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696526"
 ---
 # <a name="recommended-settings-for-eop-and-microsoft-defender-for-office-365-security"></a>Empfohlene Einstellungen für EOP und Microsoft Defender für Office 365 Sicherheit
 
@@ -44,7 +44,7 @@ Informationen zum automatischen Anwenden der Standard- oder Strict-Einstellungen
 > [!NOTE]
 > Die Junk-E-Mail-Regel muss für Postfächer aktiviert sein, damit die Filterung ordnungsgemäß funktioniert. Es ist standardmäßig aktiviert, sie sollte jedoch überprüft werden, wenn die Filterung scheinbar nicht funktioniert. Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Junk-E-Mails für Exchange Online-Postfächer in Office 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
-In diesem Artikel werden die Standardeinstellungen sowie die empfohlenen Standard- und Strict-Einstellungen beschrieben, um Ihre Benutzer zu schützen.
+In diesem Artikel werden die Standardeinstellungen sowie die empfohlenen Standard- und Strict-Einstellungen beschrieben, um Ihre Benutzer zu schützen. Die Tabellen enthalten die Einstellungen im Microsoft 365 Security Center und in PowerShell (Exchange Online PowerShell oder eigenständige Exchange Online Protection PowerShell für Organisationen ohne Exchange Online Postfächer).
 
 > [!TIP]
 > Das Office 365 Advanced Threat Protection Recommended Configuration Analyzer (ORCA)-Modul für PowerShell hilft Ihnen (Administratoren), die aktuellen Werte dieser Einstellungen zu finden. Insbesondere generiert das **Cmdlet Get-ORCAReport** eine Bewertung von Antispam-, Antiphishing- und anderen Nachrichtenhygieneeinstellungen. Sie können das ORCA-Modul unter <https://www.powershellgallery.com/packages/ORCA/> herunterladen.
@@ -65,26 +65,26 @@ Informationen zum Erstellen und Konfigurieren von Antispamrichtlinien finden Sie
 |---|:---:|:---:|:---:|---|
 |**Spamerkennungsaktion** <p> _SpamAction_|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`||
 |**Spamerkennungsaktion** mit hoher Vertrauenssicherheit <p> _HighConfidenceSpamAction_|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`||
-|**Phishing-E-Mail-Erkennungsaktion** <p> _PhishSpamAction_|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`||
-|**Phishing-E-Mail-Erkennungsaktion** mit hoher Vertrauen <p> _HighConfidencePhishAction_|**Nachricht in Quarantäne verschieben** <p> `Quarantine`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`||
-|**Massen-E-Mail-Erkennungsaktion** <p> _BulkSpamAction_|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`||
-|Schwellenwert für Massen-E-Mails <p> _BulkThreshold_|7 |6 |4 |Weitere Informationen finden Sie unter [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
-|Aufbewahrungszeitraum für Quarantäne <p> _QuarantineRetentionPeriod_|15 Tage|30 Tage|30 Tage||
-|**Sicherheit Tipps** <p> _InlineSafetyTipsEnabled_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
+|**Phishingerkennungsaktion** <p> _PhishSpamAction_|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`||
+|**Phishingerkennungsaktion** mit hoher Vertrauenssicherheit <p> _HighConfidencePhishAction_|**Nachricht in Quarantäne verschieben** <p> `Quarantine`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`||
+|**Massenerkennungsaktion** <p> _BulkSpamAction_|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Junk-E-Mail-Ordner verschieben** <p> `MoveToJmf`|**Nachricht in Quarantäne verschieben** <p> `Quarantine`||
+|**Schwellenwert für Massen-E-Mails** <p> _BulkThreshold_|7 |6 |4 |Weitere Informationen finden Sie unter [Bulk Complaint Level (BCL) in Office 365](bulk-complaint-level-values.md).|
+|_MarkAsSpamBulkMail_|Ein|Ein|Ein|Diese Einstellung ist nur in PowerShell verfügbar.|
+|**Spam in Quarantäne für diese vielen Tage beibehalten** <p> _QuarantineRetentionPeriod_|15 Tage|30 Tage|30 Tage||
+|**Aktivieren von Tipps zur Spamsicherheit** <p> _InlineSafetyTipsEnabled_|Ein <p> `$true`|Ein <p> `$true`|Ein <p> `$true`||
 |Zugelassene Absender <p> _AllowedSenders_|Keine|Keine|Keine||
-|Zulässige Absenderdomänen <p> _AllowedSenderDomains_|Keine|Keine|Keine|Das Hinzufügen von Domänen zur Liste der zulässigen Absender ist eine sehr schlechte Idee. Angreifer können Ihnen E-Mails senden, die andernfalls herausgefiltert würden. <p> Verwenden Sie den Einblick in [spoof intelligence](learn-about-spoof-intelligence.md) und die Mandanten-Allow/Block [List](tenant-allow-block-list.md) im Security & Compliance Center, um alle Absender zu überprüfen, die Absender-E-Mail-Adressen in den E-Mail-Domänen Ihrer Organisation spoofieren oder Absender-E-Mail-Adressen in externen Domänen spoofieren.|
+|Zulässige Absenderdomänen <p> _AllowedSenderDomains_|Keine|Keine|Keine|Das Hinzufügen von Domänen zur Liste der zulässigen Absender ist eine sehr schlechte Idee. Angreifer können Ihnen E-Mails senden, die andernfalls herausgefiltert würden. <p> Verwenden Sie den Einblick in [spoof intelligence](learn-about-spoof-intelligence.md) und die Mandanten-Allow/Block [List,](tenant-allow-block-list.md) um alle Absender zu überprüfen, die Absender-E-Mail-Adressen in den E-Mail-Domänen Ihrer Organisation spoofieren oder Absender-E-Mail-Adressen in externen Domänen spoofieren.|
 |Blockierte Absender <p> _BlockedSenders_|Keine|Keine|Keine||
 |Blockierte Absenderdomänen <p> _BlockedSenderDomains_|Keine|Keine|Keine||
 |**Spambenachrichtigungen für Endbenutzer aktivieren** <p> _EnableEndUserSpamNotifications_|Deaktiviert <p> `$false`|Aktiviert <p> `$true`|Aktiviert <p> `$true`||
 |**Spambenachrichtigungen an Endbenutzer senden alle ... Tage** <p> _EndUserSpamNotificationFrequency_|3 Tage|3 Tage|3 Tage||
-|**Spam-ZAP** <p> _SpamZapEnabled_|Aktiviert <p> `$true`|Aktiviert <p> `$true`|Aktiviert <p> `$true`||
-|**Phish ZAP** <p> _PhishZapEnabled_|Aktiviert <p> `$true`|Aktiviert <p> `$true`|Aktiviert <p> `$true`||
-|_MarkAsSpamBulkMail_|Ein|Ein|Ein|Diese Einstellung ist nur in PowerShell verfügbar.|
+|Aktivieren der automatischen Bereinigung (Zero-Hour Auto Purge, ZAP) für Phishingnachrichten <p> _PhishZapEnabled_|Aktiviert <p> `$true`|Aktiviert <p> `$true`|Aktiviert <p> `$true`||
+|Aktivieren von ZAP für Spamnachrichten <p> _SpamZapEnabled_|Aktiviert <p> `$true`|Aktiviert <p> `$true`|Aktiviert <p> `$true`||
 |
 
-Es gibt mehrere andere Erweiterte Spamfiltereinstellungen (Advanced Spam Filter, ASF) in Antispamrichtlinien, die derzeit veraltet sind. Weitere Informationen zu den Zeitachsen für die Abschreibung dieser Features werden außerhalb dieses Artikels mitgeteilt.
+Es gibt viele Erweiterte Spamfiltereinstellungen (Advanced Spam Filter, ASF) in Antispamrichtlinien, die derzeit veraltet sind. Weitere Informationen zu den Zeitachsen für die Abschreibung dieser Features werden außerhalb dieses Artikels mitgeteilt.
 
-Es wird empfohlen, diese ASF-Einstellungen **für Standard-** und  **Strict-Ebenen zu** deaktivieren. Weitere Informationen zu den ASF-Einstellungen finden Sie unter [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
+Es wird empfohlen, die folgenden ASF-Einstellungen **für** Standard- und  **Strict-Stufen deaktiviert zu** lassen. Weitere Informationen zu den ASF-Einstellungen finden Sie unter [Advanced Spam Filter (ASF) settings in Office 365](advanced-spam-filtering-asf-options.md).
 
 <br>
 
