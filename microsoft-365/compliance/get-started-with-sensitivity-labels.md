@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Sind Sie bereit für die Bereitstellung von Vertraulichkeitsbezeichnungen, um die Daten Ihrer Organisation zu schützen, aber nicht sicher, wo Sie beginnen sollten? Hier finden Sie einige praktische Anleitungen, die Ihnen auf dem Weg zu Bezeichnungen helfen.
-ms.openlocfilehash: 2e757f7f07dbb911a8d89890b1f1cce80d7247b5
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: c87289fc7017e75db3b8a5b84a8af3a42dc16a10
+ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302112"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689121"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Erste Schritte mit Vertraulichkeitsbezeichnungen
 
@@ -62,7 +62,7 @@ Standardmäßig haben globale Administratoren für Ihren Mandanten Zugriff auf d
 
 Alternativ zur Verwendung der Standardrollen können Sie eine neue Rollengruppe erstellen und dieser entweder die Rolle **Administrator für Vertraulichkeitsbezeichnungen** oder die Rolle **Organisationskonfiguration** hinzufügen. Verwenden Sie für eine schreibgeschützte Rolle den **Vertraulichkeitsbezeichnungen-Leser**. 
 
-Anweisungen zum Hinzufügen von Benutzern zu den Standardrollen oder zum Erstellen eigener Rollengruppen finden Sie unter [Freigeben des Benutzerzugriffs auf das Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Anweisungen zum Hinzufügen von Benutzern zu den Standardrollen oder zum Erstellen eigener Rollengruppen finden Sie unter [Freigeben des Benutzerzugriffs auf das Office 365 Security & Compliance Center](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Diese Berechtigungen sind nur zum Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Bezeichnungsrichtlinien erforderlich. Sie müssen die Bezeichnungen in Apps oder Diensten nicht anwenden. Wenn für bestimmte Konfigurationen, die sich auf Vertraulichkeitsbezeichnungen beziehen, zusätzliche Berechtigungen erforderlich sind, sind diese Berechtigungen in den entsprechenden Dokumentations-Anweisungen aufgelistet.
 
@@ -79,7 +79,7 @@ In allen Szenarien müssen Sie [Vertraulichkeitsbezeichnungen und deren Richtlin
 
 |Ich möchte...|Dokumentation|
 |----------------|---------------|
-|Verwalten von Vertraulichkeitsbezeichnungen für Office-Apps, sodass der Inhalt bei seiner Erstellung mit Bezeichnungen versehen wird – enthält Unterstützung für manuelle Bezeichnung auf allen Plattformen |[Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps](sensitivity-labels-office-apps.md)|
+|Verwalten von Vertraulichkeitsbezeichnungen für Office-Apps, sodass der Inhalt bei seiner Erstellung mit Bezeichnungen versehen wird – enthält Unterstützung für manuelle Bezeichnung auf allen Plattformen |[Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps](sensitivity-labels-office-apps.md)|
 |Erlauben Sie Benutzern, Dateien von Windows-Computern mithilfe von Office-Apps, Datei-Explorer und PowerShell zu bezeichnen und zu schützen.|[Azure Information Protection-Clients mit einheitlichen Bezeichnungen für Windows](/azure/information-protection/rms-client/aip-clientv2)|
 |Verschlüsseln von Dokumenten und E-Mails mit Vertraulichkeitsbezeichnungen sowie Einschränken, wer darauf zugreifen kann und wie diese Inhalte verwendet werden können |[Einschränken des Zugriffs auf Inhalte mithilfe der Vertraulichkeitsbezeichnungen zur Verschlüsselung](encryption-sensitivity-labels.md)|
 |Aktivieren Sie Vertraulichkeitsbezeichnungen für Office im Web mit Unterstützung für die gemeinsame Dokumenterstellung, eDiscovery, Verhinderung von Datenverlust und Suche – sogar für verschlüsselte Dokumente. | [Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
@@ -102,7 +102,7 @@ Die effektivste Dokumentation für Endbenutzer sind maßgeschneiderte Anleitunge
 - Weitere Informationen zur integrierten Beschriftung: Menüoption **Weitere Informationen**.
 - Für den einheitlichen Bezeichnungs-Assistenten von Azure Information Protection: Menüoption **Hilfe und Feedback** > Link **Weitere Informationen** im Dialogfeld "Microsoft Azure Information Protection".
 
-Für Hilfe beim Schreiben Ihrer benutzerdefinierten Dokumentation, lesen Sie den folgenden Blogbeitrag für ein Downloadpaket, mit dem Sie Benutzer schulen und die Einführung vorantreiben können: [Endbenutzertraining in Vertraulichkeitsbezeichnungen in M365 – Wie Sie Ihre Einführung beschleunigen können](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880). 
+Informationen zur Bereitstellung Ihrer angepassten Dokumentation finden Sie auf der folgenden Seite und den folgenden Downloads, die Sie zur Schulung Ihrer Benutzer verwenden können: [Endbenutzerschulungen für Vertraulichkeitsbezeichnungen](https://microsoft.github.io/ComplianceCxE/enduser/sensitivity/). 
 
 Für grundlegende Anweisungen können Sie auch die folgenden Ressourcen verwenden:
 
@@ -114,4 +114,4 @@ Für grundlegende Anweisungen können Sie auch die folgenden Ressourcen verwende
 
 - [Azure Information Protection-Benutzerleitfaden zu einheitliche Bezeichnungen](/azure/information-protection/rms-client/clientv2-user-guide)
 
-Wenn Ihre Vertraulichkeitsbezeichnungen Verschlüsselung für PDF-Dokumente anwenden, können Sie diese Dokumente mit Microsoft Edge unter Windows oder Mac öffnen. Weitere Informationen und alternative Reader finden Sie unter [Welche PDF-Reader werden bei geschützten PDFs unterstützt?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+Wenn Ihre Vertraulichkeitsbezeichnungen Verschlüsselung für PDF-Dokumente anwenden, können Sie diese Dokumente mit Microsoft Edge unter Windows oder Mac öffnen. Weitere Informationen und alternative Reader finden Sie unter [Welche PDF-Reader werden bei geschützten PDFs unterstützt?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)

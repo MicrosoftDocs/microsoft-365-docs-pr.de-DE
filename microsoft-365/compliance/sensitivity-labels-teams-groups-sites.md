@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in SharePoint- und Microsoft Teams-Websites sowie in Microsoft 365-Gruppen.
-ms.openlocfilehash: ef4559a278ce83f429790efcd20517b5c8545cb3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 6baca2e24e50bd3ee418da994adcfbe7fca8338c
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52531042"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694401"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden
 
@@ -138,7 +138,7 @@ Da Sie die SharePoint-Einstellungen unabhängig von den Bezeichnungseinstellunge
 
 Um in der Dropdownliste für die Auswahl angezeigt zu werden, müssen Authentifizierungskontexte im Rahmen Ihrer Konfiguration des bedingten Azure Active Directory-Zugriffs erstellt, konfiguriert und veröffentlicht werden. Weitere Informationen und Anweisungen finden Sie im Abschnitt [Konfigurieren von Authentifizierungskontexten](/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps#configure-authentication-contexts) in der Dokumentation zu bedingtem Zugriff in Azure AD.
 
-Nicht alle Apps unterstützen Authentifizierungskontexte. Wenn ein Benutzer mit einer nicht unterstützten App eine Verbindung mit der Site herstellt, die für einen Authentifizierungskontext konfiguriert ist, wird entweder eine Meldung angezeigt, dass der Zugriff verweigert wurde, oder er wird aufgefordert, sich zu authentifizieren, jedoch abgelehnt. Die folgenden Apps unterstützen derzeit Authentifizierungskontexte:
+Nicht alle Apps unterstützen Authentifizierungskontexte. Wenn ein Benutzer mit einer nicht unterstützten App eine Verbindung mit der Website herstellt, die für einen Authentifizierungskontext konfiguriert ist, wird entweder eine Nachricht angezeigt, dass der Zugriff verweigert wurde, oder er wird aufgefordert, sich zu authentifizieren, aber abgelehnt. Die folgenden Apps unterstützen derzeit Authentifizierungskontexte:
 
 - Office im Web, welches Outlook im Web umfasst
 
@@ -163,6 +163,20 @@ Nicht alle Apps unterstützen Authentifizierungskontexte. Wenn ein Benutzer mit 
     - Android: Wird noch nicht unterstützt
 
 Bekannte Einschränkungen bei dieser Vorschau:
+
+- Dieses Feature gilt weiterhin für einige Mandanten. Wenn die Richtlinie für den bedingten Zugriff mit dem ausgewählten Authentifizierungskontext nicht wirksam wird, wenn ein Benutzer auf die Website zugreift, können Sie mithilfe von PowerShell überprüfen, ob die Konfiguration korrekt ist und alle Voraussetzungen erfüllt sind. Sie müssen die Vertraulichkeitsbezeichnung von der Website entfernen und dann die Website für den Authentifizierungskontext konfigurieren, indem Sie das [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite)-Cmdlet aus der aktuellen [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) verwenden. Wenn diese Methode funktioniert, warten Sie einige weitere Tage, bevor Sie erneut versuchen, die Vertraulichkeitsbezeichnung anzuwenden.
+    
+    So testen Sie den Authentifizierungskontext mithilfe von PowerShell:
+    
+    ```powershell
+    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "Name of authentication context"
+    ```
+    
+    So entfernen Sie den Authentifizierungskontext, damit Sie versuchen können, die Vertraulichkeitsbezeichnung erneut anzuwenden:
+    
+    ```powershell
+    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName ""
+    ```
 
 - Bei der OneDrive-Synchronisierungs-App: wird nur für OneDrive und nicht für andere Sites unterstützt.
 

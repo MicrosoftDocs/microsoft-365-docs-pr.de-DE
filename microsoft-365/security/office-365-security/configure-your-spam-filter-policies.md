@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1241e6ebb838938f82fce5dc08ea93a3038f4ace
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: fb4ba4f48d6f336444861b4407461efd4c8862d0
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624233"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694509"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
@@ -47,7 +47,7 @@ Die grundlegenden Elemente einer Antispamrichtlinie sind:
 Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Antispamrichtlinien im Security & Compliance Center verwalten:
 
 - Beim Erstellen einer Antispamrichtlinie erstellen Sie tatsächlich gleichzeitig eine Spamfilterregel und die zugehörige Spamfilterrichtlinie, beide mit demselben Namen.
-- Beim Ändern einer Antispamrichtlinie ändern die Einstellungen im Zusammenhang mit Name, Priorität, aktiviert oder deaktiviert und Empfängerfilter tatsächlich die Spamfilterregel. Alle anderen Einstellungen ändern die zugehörige Spamfilterrichtlinie.
+- Wenn Sie eine Antispamrichtlinie ändern, dann ändern Einstellungen in Bezug auf Name, Priorität, aktiviert oder deaktiviert und Empfängerfilter die Spamfilterregel. Alle anderen Einstellungen ändern die zugehörige Spamfilterrichtlinie.
 - Wenn Sie eine Antispamrichtlinie entfernen, werden die Spamfilterregel und die zugeordnete Spamfilterrichtlinie entfernt.
 
 In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten Sie die Richtlinie und die Regel getrennt. Weitere Informationen finden Sie im Abschnitt [Verwenden von Exchange Online PowerShell oder eigenständige EOP PowerShell zum Konfigurieren von Antispamrichtlinien](#use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies) weiter unten in diesem Artikel.
@@ -312,7 +312,7 @@ Die Standard-Antispamrichtlinie kann nicht deaktiviert werden.
 
 ### <a name="set-the-priority-of-custom-anti-spam-policies"></a>Festlegen der Priorität von benutzerdefinierten Antispamrichtlinien
 
-Standardmäßig erhalten Antispamrichtlinien eine Priorität, die auf der Reihenfolge ihrer Erstellung basiert (neuere Richtlinien haben eine niedrigere Priorität als ältere). Eine niedrigere Prioritätsnummer gibt eine höhere Priorität für die Richtlinie an (0 ist die höchste), und Richtlinien werden in der Reihenfolge der Priorität verarbeitet (Richtlinien mit einer höheren Priorität werden vor Richtlinien mit einer niedrigeren Priorität verarbeitet). Keine zwei Richtlinien können die gleiche Priorität aufweisen, und die Richtlinienverarbeitung endet, nachdem die erste Richtlinie angewendet wurde.
+Standardmäßig erhalten Antispamrichtlinien eine Priorität, die auf der Reihenfolge ihrer Erstellung basiert (neuere Richtlinien haben eine niedrigere Priorität als ältere). Eine niedrigere Prioritätsnummer gibt eine höhere Priorität für die Richtlinie an (0 ist die höchste), und Richtlinien werden in der Reihenfolge der Priorität verarbeitet (Richtlinien mit einer höheren Priorität werden vor Richtlinien mit einer niedrigeren Priorität verarbeitet). Keine zwei Richtlinien können die gleiche Priorität aufweisen und die Richtlinienverarbeitung endet, nachdem die erste Richtlinie angewendet wurde.
 
 Weitere Informationen über die Prioritätsreihenfolge und darüber, wie mehrere Richtlinien ausgewertet und angewendet werden, finden Sie unter [Reihenfolge und Priorität beim E-Mail-Schutz](how-policies-and-protections-are-combined.md).
 
