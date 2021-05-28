@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1aaae2970cfb2f6da82507eefa87c8d0e2227661
-ms.sourcegitcommit: 4076b43a4b661de029f6307ddc1a989ab3108edb
+ms.openlocfilehash: c72e9491303d3f14ddb184e6a302a518643f709d
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51939624"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694341"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender für Endpunkt unter Android – Datenschutzinformationen
 
@@ -37,6 +37,8 @@ Defender for Endpoint unter Android sammelt Informationen von Ihren konfiguriert
 Weitere Informationen zur Datenspeicherung finden Sie unter [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
 
 Es werden Informationen gesammelt, um Defender for Endpoint für Android sicher, auf dem neuesten Stand zu halten, wie erwartet zu gewährleisten und den Dienst zu unterstützen.
+
+Weitere Informationen zu den häufigsten Datenschutzfragen zu Microsoft Defender for Endpoint auf mobilen Android- und iOS-Geräten finden Sie unter Microsoft Defender for Endpoint und Ihre Privatsphäre auf [mobilen Android- und iOS-Geräten.](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)
 
 ## <a name="required-data"></a>Erforderliche Daten 
 

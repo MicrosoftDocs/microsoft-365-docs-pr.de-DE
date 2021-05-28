@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13c0a575fd2614f58eb6a2163cda04118c2a391d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 2f9d56b7e72befb8acddf6d9f810a7ba5cec1083
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636278"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694365"
 ---
 # <a name="troubleshoot-issues-and-find-answers-to-faqs-on-microsoft-defender-for-endpoint-on-ios"></a>Behandeln von Problemen und Finden von Antworten auf häufig gestellte Fragen zu Microsoft Defender for Endpoint unter iOS
 
@@ -60,18 +60,21 @@ Obwohl standardmäßig aktiviert, kann es einige Fälle sein, in denen Sie VPN d
 
 ## <a name="issues-with-multiple-vpn-profiles"></a>Probleme mit mehreren VPN-Profilen
 
-Apple iOS unterstützt nicht mehrere geräteweite VPNs, um gleichzeitig aktiv zu sein. Auf dem Gerät können zwar mehrere VPN-Profile vorhanden sein, aber nur ein VPN kann gleichzeitig aktiv sein.
+Apple iOS unterstützt nicht mehrere **geräteweite** VPNs, um gleichzeitig aktiv zu sein. Auf dem Gerät können zwar mehrere VPN-Profile vorhanden sein, aber nur ein VPN kann gleichzeitig aktiv sein.
 
+Microsoft Defender for Endpoint VPN kann mit anderen VPNs koexistent sein, die als pro *App* oder *"Persönlich" konfiguriert sind.*
 
 ## <a name="battery-consumption"></a>Akkuverbrauch
 
-Der Akkuverbrauch einer App wird von Apple basierend auf einer Vielzahl von Faktoren wie CPU- und Netzwerknutzung berechnet. Microsoft Defender for Endpoint verwendet ein lokales /Loop-Back-VPN im Hintergrund, um den Webdatenverkehr auf schädliche Websites oder Verbindungen zu überprüfen. Netzwerkpakete von jeder App durchgehen diese Prüfung, was dazu führt, dass der Akkuverbrauch von Microsoft Defender for Endpoint ungenau berechnet wird. Dies gibt dem Benutzer einen falschen Eindruck. Der tatsächliche Akkuverbrauch von Microsoft Defender for Endpoint ist geringer als der, der auf der Seite Battery Einstellungen auf dem Gerät angezeigt wird. Dies basiert auf durchgeführten Tests, die mit der Microsoft Defender for Endpoint-App durchgeführt wurden, um den Akkuverbrauch zu verstehen.
+In der Einstellungen zeigt iOS nur den Akkuverbrauch von Apps an, die für den Benutzer für einen bestimmten Zeitraum sichtbar sind. Der Akkuverbrauch von Apps, die auf dem Bildschirm angezeigt werden, gilt nur für diese Zeitdauer und wird von iOS basierend auf einer Vielzahl von Faktoren wie CPU- und Netzwerknutzung berechnet. Microsoft Defender for Endpoint verwendet ein lokales /Loop-Back-VPN im Hintergrund, um den Webdatenverkehr auf schädliche Websites oder Verbindungen zu überprüfen. Netzwerkpakete von jeder App durchgehen diese Prüfung, was dazu führt, dass der Akkuverbrauch von Microsoft Defender for Endpoint ungenau berechnet wird. Der tatsächliche Akkuverbrauch von Microsoft Defender for Endpoint ist viel geringer als der, der auf der Seite Battery Einstellungen auf dem Gerät angezeigt wird.
 
-Auch das verwendete VPN ist ein lokales VPN und im Gegensatz zu einem herkömmlichen VPN wird der Netzwerkdatenverkehr nicht außerhalb des Geräts gesendet.
+Im Durchschnitt beträgt der Akkuverbrauch pro Tag von Microsoft Defender for Endpoint, der im Hintergrund ausgeführt wird, ca. **8,81 %** des gesamten Akkuverbrauchs an diesem Tag. Diese Metrik wird von Apple basierend auf der tatsächlichen Verwendung von Microsoft Defender for Endpoint auf Endbenutzergeräten gemeldet und kann aus den oben genannten Gründen auch anderen Apps mit Netzwerkaktivität berücksichtigt werden.
+
+Außerdem handelt es sich bei dem verwendeten VPN um ein lokales VPN, und im Gegensatz zu einem herkömmlichen VPN wird der Netzwerkdatenverkehr nicht außerhalb des Geräts gesendet.
 
 ## <a name="data-usage"></a>Datenverwendung
 
-Microsoft Defender for Endpoint verwendet ein lokales /loopback-VPN, um den Webdatenverkehr auf schädliche Websites oder Verbindungen zu überprüfen. Aus diesem Grund macht Apple die Datenverwendung für Microsoft Defender for Endpoint ungenau. Die tatsächliche Datenverwendung durch Microsoft Defender for Endpoint ist nicht signifikant und viel geringer als die Datenverwendungs-Einstellungen auf dem Gerät.
+Microsoft Defender for Endpoint verwendet ein lokales /loopback-VPN, um den Webdatenverkehr auf schädliche Websites oder Verbindungen zu überprüfen. Aus diesem Grund kann die Datenverwendung von Microsoft Defender for Endpoint falsch berücksichtigt werden. Die tatsächliche Datenverwendung durch Microsoft Defender for Endpoint ist nicht signifikant und kleiner als die Datenverwendungs-Einstellungen auf dem Gerät.
 
 ## <a name="report-unsafe-site"></a>Unsichere Website melden
 

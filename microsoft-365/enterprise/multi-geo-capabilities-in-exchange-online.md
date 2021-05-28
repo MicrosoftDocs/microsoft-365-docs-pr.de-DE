@@ -12,12 +12,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Erfahren Sie mehr über multi-geo-Funktionen in Exchange Online, z. B. Funktionseinschränkungen und Postfachplatzierung.
-ms.openlocfilehash: bf1c3c8f510c57f47cbfc7b2609d97f5932e05d3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4c8f873039cd14251931125f5af2c04b7cbfe719
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923732"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694305"
 ---
 # <a name="multi-geo-capabilities-in-exchange-online"></a>Multi-Geo-Funktionen in Exchange Online
 
@@ -43,7 +43,7 @@ Exchange Online synchronisiert die Eigenschaft **PreferredDataLocation** von Azu
 
 - Wenn **PreferredDataLocation** nicht für einen Benutzer angegeben ist, wird es bei der Bereitstellung des Postfachs in dem zentralen Geo-Speicherort bereitgestellt.
 
-- Wenn der **PreferredDataLocation**-Code falsch ist (z. B. ein Typ von NAN anstelle von NAM), wird das Postfach in den zentralen Geo-Speicherort bereitgestellt.
+- Wenn der **PreferredDataLocation-Code** falsch ist (z. B. ein Tippfehler von NAN anstelle von NAM), wird das Postfach am zentralen geografischen Standort bereitgestellt.
 
 **Hinweis**: Multi-Geo-Funktionen und regional gehostete Besprechungen von Skype for Business Online verwenden beide die Eigenschaft **PreferredDataLocation** auf Benutzerobjekten, um Dienste zu finden. Wenn Sie die **PreferredDataLocation**-Werte für Benutzerobjekte für regional gehostete Besprechungen konfigurieren, wird das Postfach für diese Benutzer automatisch an den angegebenen Geo-Speicherort verschoben, nachdem Multi-Geo auf dem Microsoft 365-Mandanten aktiviert wurde.
 

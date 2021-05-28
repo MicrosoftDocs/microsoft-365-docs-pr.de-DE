@@ -16,12 +16,12 @@ ms.collection:
 description: Administratoren können erfahren, wie Sie im Sicherheitsportal in der Liste "Mandanten zulassen/blockieren" Zulassen und Blockieren von Zulassen und Blockieren konfigurieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 270e38d65857de2f4d06460fb3bb77f72a165ecf
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 636114180a1814f5ef842b2a704f2df98488f46e
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538963"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694485"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Verwalten der Zulassungs-/Sperrliste des Mandanten
 
@@ -44,7 +44,6 @@ Mit der Mandanten-Allow/Block-Liste im Security & Compliance Center können Sie 
 
 - ZU blockierende URLs.
 - Zu blockierende Dateien.
-- Zu erlaubende Massen-E-Mail-Absenderdomänen. Weitere Informationen zu Massen-E-Mails, der Massenvertrauensstufe (Bulk Confidence Level, BCL) und der Massen-E-Mail-Filterung nach Antispamrichtlinien finden Sie unter [Bulk Complaint Level (BCL) in EOP](bulk-complaint-level-values.md).
 - Spoofed senders to allow or block. Wenn Sie das Allow- oder Block-Urteil in der [Spoof Intelligence-Einsicht](learn-about-spoof-intelligence.md)außer Kraft setzen, wird der gefälschte Absender zu einem manuellen Zulassen- oder Blockiereneintrag, der nur auf der Registerkarte **Spoof** in der Mandanten-Zulassen-/Sperrliste angezeigt wird. Sie können hier auch manuell Zulassen oder Blockieren von Einträgen für spoofierte Absender erstellen, bevor sie von Spoof Intelligence erkannt werden.
 
 In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten zulassen/blockieren-Liste im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online-Postfächer) konfigurieren.
@@ -76,7 +75,7 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten zulassen/
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Sie müssen in Exchange Online Berechtigungen erhalten, bevor Sie die in diesem Artikel beschriebenen Schritte ausführen können:
-  - **URLs, Dateien und Zulassen von Massensendern**:
+  - **URLs und Dateien**:
     - Zum Hinzufügen und Entfernen von Werten aus der Mandantenberechtigungs-/Sperrliste müssen Sie Mitglied der Rollengruppen Organisationsverwaltung oder **Sicherheitsadministrator** sein. 
     - Für den schreibgeschützten Zugriff auf die Mandantenzugriffs-/Sperrliste müssen Sie Mitglied der Rollengruppen **"Globaler Leser"** oder **"Sicherheitsleser"** sein.
   - **Spoofing**: Eine der folgenden Kombinationen:
@@ -87,7 +86,7 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten zulassen/
 
   > [!NOTE]
   >
-  > - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+  > - Durch das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   >
   > - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
@@ -135,26 +134,6 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten zulassen/
 
 4. Klicken Sie nach Abschluss des Vorgangs auf **Hinzufügen**.
 
-## <a name="use-the-security--compliance-center-to-create-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Erstellen zulässiger Domäneneinträge für Massen-E-Mail-Absender in der Mandantenzu-/Sperrliste
-
-1. Wechseln Sie im Security & Compliance Center zu Richtlinien für die **Bedrohungsverwaltung** \>  \> **Mandanten zulassen/blockieren Listen**.
-
-2. Wählen Sie auf der Seite Mandanten **zulassen/blockieren** die Registerkarte **Absenderdomänen für die BCL-Umgehung** aus, und klicken Sie dann auf **Hinzufügen**.
-
-3. Konfigurieren Sie **im angezeigten Flyout Absenderdomäne** für die BCL-Umgehung hinzufügen die folgenden Einstellungen:
-
-   - **Hinzufügen von Absenderdomänen für die BCL-Umgehung:** Geben Sie eine Quelldomäne mit guten Massen-E-Mails pro Zeile ein, bis zu maximal 20.
-
-   - **Nie ablaufen:** Gehen Sie wie folgt vor:
-
-     - Überprüfen Sie, ob die Einstellung deaktiviert ist ( Umschalten ) und verwenden Sie das Feld Läuft auf, um das ![ ](../../media/scc-toggle-off.png) Ablaufdatum für die Einträge anzugeben. 
-
-     oder
-
-     - Verschieben Sie den Umschalter nach rechts, um die Einträge so zu konfigurieren, dass sie nie ablaufen: ![Umschaltfläche ein](../../media/scc-toggle-on.png).
-
-4. Klicken Sie nach Abschluss des Vorgangs auf **Hinzufügen**.
-
 ## <a name="use-the-security--compliance-center-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Erstellen oder Blockieren gefälschter Absendereinträge in der Mandantenzu-/Sperrliste
 
 **Hinweise**:
@@ -198,11 +177,6 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten zulassen/
      - **Datum der letzten Aktualisierung**
      - **Ablaufdatum**
      - **Hinweis**
-
-   - **Absenderdomänen für die BCL-Umgehung**
-     - **Wert:** Die Domäne des Massen-E-Mail-Absenders.
-     - **Datum der letzten Aktualisierung**
-     - **Ablaufdatum**
 
    - **Spoofing**
      - **Spoofed user**
@@ -312,23 +286,6 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-add-allow-bulk-mail-sender-domain-entries-to-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Hinzufügen zulässiger Domäneneinträge für Massen-E-Mail-Absender zur Mandantenzu-/Sperrliste
-
-Verwenden Sie die folgende Syntax, um #A0 in der Mandanten zulassen/blockieren-Liste hinzuzufügen:
-
-```powershell
-New-TenantAllowBlockListItems -ListType BulkSender -Block:$false -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
-```
-
-In diesem Beispiel wird ein zulässiger Massensendereintrag für die angegebene Domäne, der nie abläuft, hinzufügt.
-
-```powershell
-New-TenantAllowBlockListItem -ListType BulkSender -Block:$false -Entries contosodailydeals.com
-New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
-```
-
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
-
 ### <a name="use-powershell-to-add-allow-or-block-spoofed-sender-entries-to-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Hinzufügen zulässiger oder blockieren von gefälschten Absendereinträgen zur Mandantenzu-/Sperrliste
 
 Verwenden Sie die folgende Syntax, um spoofierte Absendereinträge in der Mandanten zulassen/blockieren-Liste hinzuzufügen:
@@ -357,28 +314,6 @@ In diesem Beispiel werden alle blockierten URLs zurückgegeben.
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType Url -Block
-```
-
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
-
-### <a name="use-powershell-to-view-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Anzeigen von Domäneneinträgen für Massen-E-Mail-Absender in der Mandantenzu-/-sperrliste
-
-Verwenden Sie die folgende Syntax, um Domäneneinträge für Massen-E-Mail-Absender in der Mandanten zulassen/blockieren-Liste anzeigen zu können:
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender [-Entry <BulkSenderDomainValue>] [<-ExpirationDate Date | -NoExpiration>]
-```
-
-In diesem Beispiel werden alle zulässigen Massen-E-Mail-Absenderdomänen zurückgegeben.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender
-```
-
-In diesem Beispiel werden Informationen für die angegebene Massensenderdomäne zurückgegeben.
-
-```powershell
-Get-TenantAllowBlockListItems -ListType FileHash -Entry "contosodailydeals.com"
 ```
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
@@ -427,22 +362,6 @@ Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBw
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-modify-allow-bulk-mail-sender-domain-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Ändern zulässiger Domäneneinträge für Massen-E-Mail-Absender in der Mandantenzu-/Sperrliste
-
-Verwenden Sie die folgende Syntax, um Domäneneinträge für Massen-E-Mail-Absender in der Mandanten zulassen/blockieren-Liste zu ändern:
-
-```powershell
-Get-TenantAllowBlockListItems -ListType BulkSender -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
-```
-
-In diesem Beispiel wird der Ablauf des angegebenen Domäneneintrags "Massen-E-Mail-Absender zulassen" so geändert, dass er nie abläuft.
-
-```powershell
-Set-TenantAllowBlockListItems -ListType BulkSender -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -NoExpiration
-```
-
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
-
 ### <a name="use-powershell-to-modify-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Ändern zulässiger oder blockierter Absendereinträge in der Mandantenzu-/Sperrliste
 
 Verwenden Sie die folgende Syntax, um gefälschte Absendereinträge in der Mandanten zulassen/blockieren-Liste zu ändern oder zu blockieren:
@@ -459,12 +378,12 @@ Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdl
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems).
 
-### <a name="use-powershell-to-remove-bulk-mail-sender-domain-file-and-domain-entries-from-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Entfernen von Domänen-, Datei- und Domäneneinträgen von Massen-E-Mail-Absendern aus der Mandantenzu-/Sperrliste
+### <a name="use-powershell-to-remove-url-or-file-entries-from-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Entfernen von URL- oder Dateieinträgen aus der Liste mandanten zulassen/blockieren
 
-Verwenden Sie die folgende Syntax, um Domäneneinträge für Massen-E-Mail-Absender zu entfernen, Dateieinträge zu blockieren und #A0 aus der Mandantenzu-/Sperrliste zu blockieren:
+Verwenden Sie die folgende Syntax, um Datei- und URL-Einträge aus der Mandantenzu-/Sperrliste zu entfernen:
 
 ```powershell
-Remove-TenantAllowBlockListItems -ListType <BulkSender | FileHash | Url> -Ids <"Id1","Id2",..."IdN">
+Remove-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN">
 ```
 
 In diesem Beispiel wird der angegebene Block-URL-Eintrag aus der Mandanten-Allow/Block List entfernt.

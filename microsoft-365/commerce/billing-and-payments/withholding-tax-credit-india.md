@@ -18,16 +18,21 @@ description: Erfahren Sie, wie Sie eine Gutschrift auf Ihrem Konto für die von 
 ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
+ROBOTS: NOINDEX, NOFOLLOW
 monikerRange: o365-worldwide
 ms.date: 05/03/2021
-ms.openlocfilehash: b34fd0fd2e35d71e6b35cde250be822201aa719a
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.openlocfilehash: 68afdd9c5dddc071faa96a78981c68cc2c20e1ed
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689025"
+ms.locfileid: "52694221"
 ---
 # <a name="request-a-credit-for-withholding-tax-on-your-account-india-customers"></a>Anfordern einer Gutschrift für die Quellensteuer für Ihr Konto (Indien-Kunden)
+
+> [!NOTE]
+>
+> Wenn Ihre Organisation nicht in Indien ansässig ist, finden Sie weitere Informationen unter Anfordern einer Gutschrift für Die Quellensteuer auf Ihr Konto [(globale Kunden).](withholding-tax-credit-global.md)
 
 Kunden in Indien erhalten Von Microsoft Regional Sales Pte Ltd. Singapur (MRS) in Rechnung gestellte Web Direct-Rechnungen (Azure und Microsoft 365) und zahlungen zur Abrechnung der Rechnung an Singapur. Wenn Sie Steuern beim Übermitleiden der Zahlung einbehalten haben, wird in diesem Artikel das Verfahren für die Forderung einer Gutschrift für die Quellensteuer (Withholding Tax, WHT) in Ihrem Konto bei MRS erläutert.
 

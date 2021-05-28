@@ -18,12 +18,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie Richtlinien für sichere Links und globale Sichere Links in Microsoft Defender for Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c8b2cb8b57dcf630b3e07ac387e96ab099ca7403
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 61cb4746289a8acbdd9af7f668010604de511902
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205618"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694497"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Einrichten von Richtlinien für sichere Links in Microsoft Defender für Office 365
 
@@ -49,6 +49,9 @@ Die grundlegenden Elemente einer Richtlinie für sichere Links sind:
 
 - Die Richtlinie für sichere **Links:** Aktivieren Sie den Schutz für sichere Links, aktivieren Sie die Echtzeit-URL-Überprüfung, geben Sie an, ob die Echtzeitprüfung abgeschlossen ist, bevor die Nachricht gesendet wird, aktivieren Sie die Überprüfung auf interne Nachrichten, geben Sie an, ob Benutzerklicks auf URLs nachverfolgt werden sollen, und geben Sie an, ob Benutzer auf die ursprüngliche URL klicken dürfen.
 - **Die Regel für sichere Links**: Gibt die Prioritäts- und Empfängerfilter an (auf wen die Richtlinie angewendet wird).
+
+> [!IMPORTANT]
+> Administratoren sollten die verschiedenen Konfigurationseinstellungen für SafeLinks berücksichtigen. Eine der verfügbaren Optionen ist, benutzeridentifizierbare Informationen in SafeLinks zu verwenden. Dieses Feature ermöglicht *Es Security Ops-Teams,* potenzielle Benutzerverstöße zu untersuchen, Korrekturmaßnahmen zu ergreifen und kostspielige Verstöße zu begrenzen.
 
 Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Richtlinien für sichere Links im Security & Compliance Center verwalten:
 
@@ -414,7 +417,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Enable-Sa
 
 ### <a name="use-powershell-to-set-the-priority-of-safe-links-rules"></a>Festlegen der Priorität von Regeln für sichere Links mithilfe von PowerShell
 
-Der höchste Prioritätswert, den Sie für eine Regel festlegen können, ist 0. Der niedrigste Wert, den Sie festlegen können, hängt von der Anzahl von Regeln ab. Wenn Sie z. B. fünf Regeln haben, können Sie die Prioritätswerte 0 bis 4 verwenden. Das Ändern der Priorität einer vorhandenen Regel kann sich entsprechend auf andere Regeln auswirken. Wenn Sie z. B. fünf benutzerdefinierte Regeln haben (Priorität 0 bis 4) und die Priorität einer Regel in 2 ändern, erhält die vorhandene Regel mit Priorität 2 die Priorität 3, und die Regel mit Priorität 3 erhält Priorität 4.
+Der höchste Prioritätswert, den Sie für eine Regel festlegen können, ist 0. Der niedrigste Wert, den Sie festlegen können, hängt von der Anzahl von Regeln ab. Wenn Sie z. B. fünf Regeln haben, können Sie die Prioritätswerte 0 bis 4 verwenden. Das Ändern der Priorität einer vorhandenen Regel kann sich entsprechend auf andere Regeln auswirken. Wenn Sie z. B. fünf benutzerdefinierte Regeln haben (Priorität 0 bis 4) und die Priorität einer Regel in 2 ändern, erhält die vorhandene Regel mit Priorität 2 die Priorität 3, und die Regel mit Priorität 3 erhält Priorität 4.
 
 Verwenden Sie die folgende Syntax, um die Priorität einer Regel für sichere Links in PowerShell zu setzen:
 

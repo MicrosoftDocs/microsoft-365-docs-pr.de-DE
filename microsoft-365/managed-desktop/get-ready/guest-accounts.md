@@ -10,18 +10,18 @@ ms.author: jaimeo
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: bbf679a01716fc48d37b241d69740f50a985f048
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: d29b9d6bdc30d981b273d95925ba740bc92304c4
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574607"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694245"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>Voraussetzungen für Gastkonten
 
-Microsoft Managed Desktop erfordert die folgenden Einstellungen in Ihrer Azure AD-Organisation für den Gastkontozugriff. Sie können diese Einstellungen im [Azure-Portal unter](https://portal.azure.com) **Externe Identitäten /Externe Zusammenarbeit anpassen:**
+Microsoft Managed Desktop erfordert die folgenden Einstellungen in Ihrer Azure AD-Organisation für den Gastkontozugriff. Sie können diese Einstellungen im [Azure-Portal unter](https://portal.azure.com) **Einstellungen für externe Identitäten/externe Zusammenarbeit anpassen:**
 
--   **Administratoren und Benutzer in der Gast einladenden Rolle können auf** Ja festlegen **einladen**
+-   Für **Gast-Einladungseinschränkungen,** die auf Mitglieder festgelegt sind, und Benutzer, die bestimmten Administratorrollen zugewiesen sind, Können Gastbenutzer einladen, einschließlich **Gäste mit Mitgliedsberechtigungen**
 -   Wählen **Sie für Einschränkungen für** die Zusammenarbeit eine der folgenden Optionen aus:
     -   Wenn Sie Einladungen an eine Beliebige Domäne **(einschließlich)** zulassen auswählen, ist keine andere Konfiguration erforderlich.
     -   Wenn Sie **Einladungen an** die angegebenen Domänen verweigern auswählen, stellen Sie sicher, dass Microsoft.com nicht in den Zieldomänen aufgeführt ist.

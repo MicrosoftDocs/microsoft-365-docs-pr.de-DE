@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 15c22a6f6b581ff68488db6628f7647d49487652
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: b1d64ceb7b0027546e84a9c42c8d2ffed188c03b
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934285"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694473"
 ---
 # <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Datenschutzinformationen – Microsoft Defender for Endpoint unter iOS
 
@@ -39,6 +39,9 @@ ms.locfileid: "51934285"
 Defender for Endpoint unter iOS sammelt Informationen von Ihren konfigurierten iOS-Geräten und speichert sie im selben Mandanten, in dem Sie Defender for Endpoint haben. Die Informationen werden gesammelt, um Defender for Endpoint unter iOS sicher, auf dem neuesten Stand zu halten, wie erwartet zu gewährleisten und den Dienst zu unterstützen.
 
 Weitere Informationen zur Datenspeicherung finden Sie unter [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
+
+
+Weitere Informationen zu den häufigsten Datenschutzfragen zu Microsoft Defender for Endpoint auf mobilen Android- und iOS-Geräten finden Sie unter Microsoft Defender for Endpoint und Ihre Privatsphäre auf [mobilen Android- und iOS-Geräten.](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)
 
 ## <a name="required-data"></a>Erforderliche Daten 
 

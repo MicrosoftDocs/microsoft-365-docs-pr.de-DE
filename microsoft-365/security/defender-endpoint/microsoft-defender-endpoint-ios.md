@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3d9dd871edba29ec6119329f98ada990abad6e8d
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 4a051742775c3d4e8b36bf0ba7a4fd2502763014
+ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52246416"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694461"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender für Endpunkt für iOS
 
@@ -62,9 +62,6 @@ ms.locfileid: "52246416"
 
 - Zugriff auf [Microsoft Endpoint Manager Admin Center,](https://go.microsoft.com/fwlink/?linkid=2109431)um die App für registrierte Benutzergruppen in Ihrer Organisation zu bereitstellen.
 
-**Netzwerkanforderungen**
-- Damit Microsoft Defender for Endpoint unter iOS funktioniert, wenn es mit einem Netzwerk verbunden ist, muss die Firewall/der Proxy so konfiguriert werden, dass der Zugriff auf URLs des [Microsoft Defender for Endpoint-Diensts ermöglicht wird.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
-
 **Systemanforderungen**
 
 - iOS-Geräte mit iOS 11.0 und höher. iPad Geräte werden ab Version 1.1.15010101 offiziell unterstützt.
@@ -72,7 +69,7 @@ ms.locfileid: "52246416"
 - Das Gerät wird bei der Intune-Unternehmensportal [registriert.](https://apps.apple.com/us/app/intune-company-portal/id719171358)
 
 > [!NOTE]
-> **Microsoft Defender ATP (Microsoft Defender for Endpoint) unter iOS ist jetzt unter [Apple App Store.](https://aka.ms/mdatpiosappstore)**
+> **Microsoft Defender for Endpoint unter iOS ist unter [Apple App Store.](https://aka.ms/mdatpiosappstore)**
 
 ## <a name="installation-instructions"></a>Installationsanweisungen
 
