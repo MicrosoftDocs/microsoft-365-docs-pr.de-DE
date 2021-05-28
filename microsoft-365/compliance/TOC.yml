@@ -110,12 +110,14 @@
           href: sit-modify-edm-schema-configurable-match.md
         - name: Erstellen von Benachrichtigungen für exakte Datenübereinstimmungsaktivitäten (Vorschau)
           href: sit-edm-notifications-activities.md
-        - name: Erstellen eines benutzerdefinierten Typs vertraulicher Informationen – Security & Compliance Center
+        - name: Erstellen eines benutzerdefinierten Typs vertraulicher Informationen – Compliance Center
           href: create-a-custom-sensitive-information-type.md
         - name: Erstellen eines benutzerdefinierten Typs vertraulicher Informationen – PowerShell
           href: create-a-custom-sensitive-information-type-in-scc-powershell.md
         - name: Schlüsselwörterbuch erstellen
           href: create-a-keyword-dictionary.md
+        - name: Schlüsselwörterbuch ändern
+          href: sit-modify-keyword-dictionary.md
         - name: Dokumentfingerabdrücke
           href: document-fingerprinting.md
     - name: Trainierbare Klassifizierungsmerkmale
@@ -124,8 +126,6 @@
           href: classifier-learn-about.md
         - name: Erste Schritte mit trainierbaren Klassifizierern
           href: classifier-get-started-with.md
-        - name: Neutrainieren eines Klassifizierers in der Kommunikationscompliance
-          href: classifier-how-to-retrain-comms-compliance.md
         - name: Neutrainieren eines Klassifizierers im Inhalts-Explorer
           href: classifier-how-to-retrain-content-explorer.md
     - name: Datenklassifizierung

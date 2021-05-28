@@ -1,8 +1,9 @@
 ---
 title: Übersicht über das Dokumentenverständnis
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: ssquires
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,12 +13,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Hier erhalten Sie einen Überblick über das Dokumentverständnis-Feature in Microsoft SharePoint Syntex.
-ms.openlocfilehash: 73e217e458fb9e1ccad8b64ffc81a6c9522a04f4
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 7e5818a929fa0f4554a7ee4ece460b4fe0d691aa
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222755"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683823"
 ---
 # <a name="document-understanding-overview"></a>Übersicht über das Dokumentenverständnis
 
@@ -48,16 +49,40 @@ Sie können Beispieldateien verwenden, um Ihre Klassifizierungen und Extraktoren
 
 Nach dessen Veröffentlichung können Sie das Modell über das Inhaltscenter auf eine beliebige SharePoint-Dokumentbibliothek anwenden, auf die Sie Zugriff haben.  
 
-### <a name="file-limitations"></a>Dateieinschränkungen
+## <a name="file-limitations"></a>Dateieinschränkungen
 
 Dokumentverständnismodelle nutzen die Technik der optischen Zeichenerkennung (OCR), um PDF-, Bild- und TIFF-Dateien zu scannen, und zwar sowohl beim Trainieren eines Modells mit Beispieldateien als auch beim Ausführen des Modells mit Dateien einer Dokumentbibliothek.
 
 Beachten Sie bitte die folgenden Unterschiede zwischen textbasierten Microsoft Office-Dateien und mit OCR gescannten Dateien (PDF, Bild oder TIFF):
 
-- Office-Dateien: Bei einer Länge von 64K Zeichen werden diese abgeschnitten (beim Training und beim Ausführen mit Dateien einer Dokumentbibliothek)
+- Office-Dateien: Bei einer Länge von 64K Zeichen abgeschnitten (beim Training und beim Ausführen mit Dateien einer Dokumentbibliothek)
+
 - Mit OCR gescannte Dateien: Es besteht Limit von 20 Seiten.  
 
-#### <a name="supported-file-types"></a>Unterstützte Dateitypen
+### <a name="requirements"></a>Anforderungen
+
+Die OCR-Verarbeitung funktioniert am besten bei Dokumenten, die die folgenden Kriterien erfüllen:
+
+- JPG-, PNG- oder PDF-Format (Text oder Scan). PDF-Dateien mit eingebettetem Text eignen sich besser, da bei Zeichenextraktion und -position keine Fehler auftreten.
+
+- Wenn Ihre PDF-Dateien durch ein Kennwort gesperrt sind, müssen Sie die Sperre vor dem Senden entfernen.
+
+- Die kombinierte Dateigröße der für die Schulung verwendeten Dokumente pro Sammlung darf 50 MB nicht überschreiten, und PDF-Dokumente sollten nicht mehr als 500 Seiten haben.
+
+- Bei Bildern müssen Abmessungen zwischen 50 × 50 und 10.000 × 10.000 Pixel liegen.
+   > [!NOTE]
+   > Bilder, die sehr breit sind oder seltsame Abmessungen haben (z. B. Grundrisse), werden im OCR-Prozess möglicherweise abgeschnitten und verlieren an Genauigkeit.
+ 
+- Bei PDF-Dateien dürfen die Abmessungen höchstens 17 x 17 Zoll betragen, was der Papiergröße „Legal“ oder A3 und kleiner entspricht.
+
+- Wenn von Papierdokumenten gescannt wird, sollte es sich bei den Scans um Bilder mit hoher Auflösung handeln.
+
+- Das lateinische Alphabet (englische Zeichen) müssen verwendet werden.
+
+> [!NOTE]
+> Der KI-Generator unterstützt derzeit die folgenden Arten von Eingabedaten für die Formularverarbeitung nicht:<br>– Kontrollkästchen oder Optionsfelder<br>– Signaturen<br>– Ausfüllbare PDF-Dateien
+
+### <a name="supported-file-types"></a>Unterstützte Dateitypen
 
 Dokumentverständnismodelle unterstützen die folgenden Dateitypen:
 
