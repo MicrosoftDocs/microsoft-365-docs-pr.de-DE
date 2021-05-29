@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: 5b4ba843-24b8-4526-8e1f-f9b9eab89d06
 description: Erfahren Sie, Microsoft 365 Business Standard und Microsoft 365 Business Premium und wie Sie ein Upgrade auf Microsoft 365 Business Premium.
-ms.openlocfilehash: 1f38270c9acb6b803d16bb842140cc6df9cee768
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0968b877820590987f6f3ceca3efbd106b62cbd1
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578305"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705488"
 ---
 # <a name="upgrade-to-microsoft-365-business-premium-from-microsoft-365-business-standard"></a>Upgrade auf Microsoft 365 Business Premium von Microsoft 365 Business Standard
 
@@ -46,7 +46,7 @@ Weitere Informationen zu Microsoft 365 Business Premium finden Sie [unter Micros
 
 Wir haben einen vergleich dieser beiden Pläne zur Microsoft 365 Business Premium [Service Description hinzugefügt.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description) 
 
-## <a name="before-you-get-started"></a>Bevor Sie beginnen
+## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 - **Wann sollte ich ein Upgrade durchführen?** Upgrade ist die richtige Wahl, wenn Sie alle Benutzer aktualisieren **möchten,** die einem einzelnen Plan zugewiesen sind. Wenn Sie ein Upgrade auswählen, werden alle Planbenutzer gleichzeitig zu einem anderen Plan gewechselt. Wenn Sie nicht alle Benutzer aktualisieren möchten, die einem einzelnen Plan zugewiesen sind, erwerben Sie [](../admin/manage/assign-licenses-to-users.md) Lizenzen für den neuen Plan (in diesem Fall Microsoft 365 Business Premium), und weisen Sie diese Lizenzen jedem Benutzer, den Sie aktualisieren möchten, einzeln zu.
 

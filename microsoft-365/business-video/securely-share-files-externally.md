@@ -19,15 +19,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Ihre Geschäftsdateien extern sicher freigeben.
-ms.openlocfilehash: 317267b4051b4e250cf53f2fbc375b9277c7d000
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Erfahren Sie, wie Sie Ihre Geschäftsdateien über einen sicheren Link sicher für Personen außerhalb Ihrer Organisation freigeben.
+ms.openlocfilehash: 17875dc403c96caac55a5487cf5649d6778ec160
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578675"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705582"
 ---
 # <a name="securely-share-files-externally"></a>Sicheres Freigeben von Dateien für Personen außerhalb Ihrer Organisation
+
+## <a name="watch-securely-share-files-outside-your-organization"></a>Watch: Sicheres Freigeben von Dateien außerhalb Ihrer Organisation
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE22Yf0?autoplay=false]
 

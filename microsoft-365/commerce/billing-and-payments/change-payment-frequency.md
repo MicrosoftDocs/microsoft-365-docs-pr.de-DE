@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Erfahren Sie, wie Sie ändern können, wie oft Sie für Ihr Geschäftsabonnement in Rechnung gestellt werden.
 ms.date: 04/02/2021
-ms.openlocfilehash: 010857d9092ef62d11e1b7c6019f2fe0eaafb58f
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 529003210e37897f8c1e0d30a692a6f3a1464a80
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537343"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705570"
 ---
 # <a name="change-your-billing-frequency"></a>Ändern der Abrechnungshäufigkeit
 
@@ -39,10 +39,7 @@ Wenn Sie ein Abonnement kaufen, wählen Sie monatliche oder jährliche Abrechnun
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Anzeigen Ihrer Rechnung oder Rechnung](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (Artikel)
-
-[Bezahlen für Ihr Abonnement](../../commerce/billing-and-payments/pay-for-your-subscription.md) (Artikel)
-
-[Erfahren Sie, wie Sie Ihre Rechnung oder Rechnung](view-your-bill-or-invoice.md) finden und anzeigen (Artikel)
-
+[Anzeigen Ihrer Rechnung](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (Artikel)\
+[Bezahlen für Ihr Abonnement](../../commerce/billing-and-payments/pay-for-your-subscription.md) (Artikel)\
+[Erfahren Sie, wie Sie Ihre Rechnung oder Rechnung](view-your-bill-or-invoice.md) suchen und anzeigen (Artikel)\
 [Ändern Ihrer Abrechnungsadressen](change-your-billing-addresses.md) (Artikel)

@@ -21,14 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Ihre Zahlungsmethode für Microsoft 365 Business aktualisieren.
-ms.openlocfilehash: 3b659da6745c92d777629b2912114ee214582623
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: b0ed8541068fe02e0bd1f005a5a9c7ee8f50ae1b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580354"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705538"
 ---
-# <a name="update-yor-payment-method-for-your-subscription"></a>Aktualisieren der Yor-Zahlungsmethode für Ihr Abonnement
+# <a name="update-the-payment-method-for-your-subscription"></a>Aktualisieren der Zahlungsmethode für Ihr Abonnement
+
+## <a name="watch-update-your-payment-method"></a>Watch: Aktualisieren Ihrer Zahlungsmethode
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AVxy?autoplay=false]
 

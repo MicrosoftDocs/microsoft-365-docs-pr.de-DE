@@ -25,12 +25,12 @@ search.appverid:
 - MOE150
 ms.assetid: 70a62f09-45ea-4968-8482-43cddfb8cc01
 description: Erfahren Sie, wie Sie Ihre SharePoint mit Dokumentbibliotheken, Listen und Hubs anpassen, organisieren und verwalten.
-ms.openlocfilehash: aca2b2ff147fdb030540712133b27eba706b0985
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 47033f286f2661a8cfffa3efce0cc7deda82ea63
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244515"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706346"
 ---
 # <a name="customize-your-team-site-for-file-storage-and-sharing"></a>Anpassen der Teamwebsite für dateispeicherung und -freigabe
 
@@ -103,15 +103,15 @@ Dateispeicher und Dokumentverwaltung sind zwar ein Anfang, aber die Freigabe fü
 
 Wenn Sie Ihre Teamwebsite verwalten, müssen Sie möglicherweise Benutzer hinzufügen oder entfernen. Hier finden Sie Informationen, die Ihnen helfen, Benutzer auf Ihrer Teamwebsite zu verstehen, hinzuzufügen und zu verwalten.
   
-Anzeigen eines Videos zu Gruppen mit [Verstehen und Verwalten von Gruppen](https://docs.microsoft.com/learn/m365/). 
+Anzeigen eines Videos zu Gruppen mit [Verstehen und Verwalten von Gruppen](/learn/m365/). 
   
 Informationen zum Hinzufügen von Benutzern zu einer Microsoft 365 finden Sie unter Hinzufügen von Benutzern und gleichzeitiges Zuweisen [von Lizenzen.](../add-users/add-users.md)
   
 Erfahren Sie, wie Sie Zugriffsanforderungen mit [Einrichten und Verwalten von Zugriffsanforderungen behandeln.](https://support.microsoft.com/office/94B26E0B-2822-49D4-929A-8455698654B3)
   
-## <a name="here-are-more-articles-you-might-be-interested-in"></a>Hier sind weitere Artikel, die Sie interessieren könnten
+## <a name="next-steps"></a>Nächste Schritte
 
-- **Einrichten von Office-Apps auf Tablets und Smartphones**. Sie müssen dies tun, damit Sie Dateien bearbeiten können, die auf Ihrer Teamwebsite auf Ihrem Tablet oder Smartphone gespeichert sind. Wenn Sie die Office-Apps für Ihr Tablet oder Smartphone nicht installieren, können Sie die Dateien auf Ihrer Teamwebsite zwar anzeigen, aber nicht bearbeiten. 
+Sie müssen Office Apps auf Ihren Geräten einrichten, damit Sie Dateien bearbeiten können, die auf Ihrer Teamwebsite auf Ihrem Tablet oder Smartphone gespeichert sind. Wenn Sie die Office-Apps für Ihr Tablet oder Smartphone nicht installieren, können Sie die Dateien auf Ihrer Teamwebsite zwar anzeigen, aber nicht bearbeiten. 
     
   - [Installieren und Einrichten von Office auf einem Android mit Microsoft 365](https://support.microsoft.com/office/cafe9d6f-8b0c-4b03-b20a-12438a82a22d)
     
