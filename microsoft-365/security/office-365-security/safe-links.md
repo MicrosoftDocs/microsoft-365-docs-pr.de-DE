@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In diesem Artikel erfahren Administratoren mehr über den Schutz sicherer Links in Defender for Office 365, um ihre Organisation vor Phishing und anderen Angriffen zu schützen, die bösartige URLs verwenden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 407f04685e41269c0e8436d3b68db7d755fce129
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 675de13410ac98e18a8b72125c2226d2c9c62821
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593569"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698988"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Sichere Links in Microsoft Defender für Office 365
 
@@ -74,7 +74,7 @@ Dieser Artikel enthält detaillierte Beschreibungen der folgenden Arten von Eins
   - [Einstellungen für sichere Links für Microsoft Teams](#safe-links-settings-for-microsoft-teams)
   - ["Die folgenden URLs nicht umschreiben" in Richtlinien für sichere Links](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies)
 
-- **Einstellungen für globale sichere** Links: Diese Einstellungen sind global konfiguriert, nicht in Richtlinien für sichere Links. Die Einstellungen gelten jedoch nur für Benutzer, die in aktiven Richtlinien für sichere Links enthalten sind. Dazu zählen die folgenden Einstellungen:
+- **Einstellungen für globale sichere** Links: Diese Einstellungen sind global konfiguriert, nicht in Richtlinien für sichere Links. Dazu zählen die folgenden Einstellungen:
 
   - [Einstellungen für sichere Links für Office 365 Apps](#safe-links-settings-for-office-365-apps)
   - [Liste "Blockieren der folgenden URLs" für sichere Links](#block-the-following-urls-list-for-safe-links)
@@ -299,7 +299,7 @@ Informationen zum Hinzufügen von Einträgen zur Liste in neuen oder vorhandenen
 **Hinweise**:
 
 - Die folgenden Clients erkennen die Folgenden **URLs-Listen** in Richtlinien für sichere Links nicht umschreiben. Benutzer, die in den Polizeien enthalten sind, können basierend auf den Ergebnissen der Überprüfung sicherer Links in diesen Clients am Zugriff auf die URLs blockiert werden:
-  - Microsoft Teams
+  - Microsoft Teams
   - Office-Web-Apps
 
   Eine wirklich universelle Liste der überall zulässigen URLs finden Sie unter [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
