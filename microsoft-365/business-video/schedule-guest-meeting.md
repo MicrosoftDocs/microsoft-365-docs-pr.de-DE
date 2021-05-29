@@ -1,5 +1,5 @@
 ---
-title: Planen Sie eine Teams-Besprechung mit Gästen
+title: Planen einer Teams mit externen Benutzern
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -19,15 +19,15 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie eine Teams mit Gästen planen.
-ms.openlocfilehash: 1a48fa290211507453004c54637e588ad9ad6759
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Erfahren Sie, wie Sie eine Teams mit externen Benutzern planen.
+ms.openlocfilehash: e4fec84613dc968298569284c7f026de47005ce3
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578699"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698892"
 ---
-# <a name="schedule-a-teams-meeting-with-guests"></a>Planen Sie eine Teams-Besprechung mit Gästen
+# <a name="schedule-a-teams-meeting-with-external-users"></a>Planen einer Teams mit externen Benutzern
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 
@@ -35,14 +35,13 @@ Sie können Personen von außerhalb Ihrer Organisation zu einer Besprechung einl
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-Mit Microsoft Teams können Sie neue Teams erstellen, während Sie neue Projekte starten oder Kunden hinzufügen.
+Verwenden Sie zum Planen von Besprechungen mit Ihren Mitarbeitern, Clients, externen Benutzern und anderen Gästen Microsoft Teams. 
 
-1. Wählen Sie **Teams** Registerkarte Team beitreten oder **erstellen,** Team **erstellen,** **Team** von Grund auf erstellen und dann **Privat aus.**
-2. Geben Sie einen Namen für Ihr Team, eine Beschreibung ein, und wählen Sie dann **Erstellen aus.**
-3. Fügen Sie **auf der** Seite Mitglieder hinzufügen interne Mitglieder hinzu, indem Sie sie suchen und auswählen, und fügen Sie Gastmitglieder hinzu, indem Sie ihre E-Mail-Adresse eingeben, und wählen Sie dann **Hinzufügen aus.**
-
-    Wenn Sie sehen, dass wir  **keine Übereinstimmungen finden,** müssen Sie die Gastfreigabe aktivieren. Wechseln Sie zum Microsoft 365 Admin Center, wählen Sie das Teams Admin Center aus, wählen Sie **Organisationsweite** **Einstellungen,** Gastzugriff aus, und aktivieren Sie Gastzugriff **in** Teams . Diese Änderung kann bis zu 24 Stunden dauern.
-
-1. Wählen Sie  **Schließen** aus. Ihre Gäste und Mitglieder erhalten Einladungen an das Team.
-2. Geben Sie im Kanal Allgemein eine Begrüßung für alle ein, und wählen Sie **Senden aus.**
-3. Fügen Sie  **auf** der Registerkarte Dateien Dokumente hinzu, an der Sie zusammenarbeiten möchten. Sie können sie hier erstellen oder Dateien vom Computer ziehen und ablegen.
+1. Wählen Microsoft Teams in der linken Navigationsleiste **Besprechungen aus.**
+2. Wählen **Sie Besprechung planen aus.**
+3. Geben Sie **im Feld Neue Besprechung** einen Titel **und** **einen Ort** für die Besprechung ein.
+4. Geben Sie **eine Start-** **und Endzeit** und ein Datum ein.
+5. Geben Sie **im Feld Details** eine Beschreibung der Besprechung und alle anderen Details ein, die Sie hinzufügen möchten, z. B. eine Besprechungsagenda.
+6. Geben **Sie unter Personen einladen** die Namen der Mitarbeiter oder Clients ein, die Sie einladen möchten.
+7. Wenn Unterhalb von Namen **Tentative** oder **Busy** angezeigt wird, wählen Sie eine der angegebenen kostenlosen Zeiten aus, oder klicken Sie auf **Zeitplanungs-Assistent,** um weitere Optionen zu erhalten. 
+8. Wählen **Sie Besprechung planen aus.**

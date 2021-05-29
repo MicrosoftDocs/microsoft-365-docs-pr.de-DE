@@ -24,19 +24,20 @@ search.appverid:
 - MET150
 - MOE150
 description: Blockieren der Anmeldung eines ehemaligen Mitarbeiters und Sperren des Zugriffs auf Microsoft 365 Dienste.
-ms.openlocfilehash: 8eb41c3b449e63284371aaf168262307a4c21941
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 84852e9bccb1d4370db07492baf7ccaed7f6db3d
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535950"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698904"
 ---
 # <a name="step-1---prevent-a-former-employee-from-logging-in-and-block-access-to-microsoft-365-services"></a>Schritt 1 – Verhindern, dass sich ein ehemaliger Mitarbeiter an einem Dienst anmelden und den Zugriff auf Microsoft 365 blockieren
 
 Wenn Sie den Anmeldezugriff eines Benutzers sofort verhindern müssen, sollten Sie sein Kennwort zurücksetzen. Erzwingen Sie in diesem Schritt das Abmelden des Benutzers aus Microsoft 365.
 
 > [!NOTE]
-> Sie müssen ein globaler Administrator sein, um das Abmelden zu initiieren.
+> Sie müssen ein globaler Administrator sein, um das Abmelden für andere Administratoren zu initiieren. Für Benutzer ohne Administratorrechte können Sie einen Benutzeradministrator oder einen Helpdeskadministrator verwenden, um diese Aktion durchzuführen.
+> Weitere Informationen zu Administratorrollen <a href="https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles">zu Administratorrollen</a>
 
 1. Wechseln Sie im Admin Center zu der Seite **Benutzer** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Aktive Benutzer</a>.
 2. Wählen Sie das Feld neben dem Namen des Benutzers aus, und wählen Sie dann **Kennwort zurücksetzen aus.**
