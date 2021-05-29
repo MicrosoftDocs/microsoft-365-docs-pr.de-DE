@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Aktivieren oder Deaktivieren des Überwachungsprotokollsuchfeatures im Microsoft 365 Compliance Center, um die Möglichkeit von Administratoren zum Durchsuchen des Überwachungsprotokolls zu aktivieren oder zu deaktivieren.
-ms.openlocfilehash: 091331a40a2ab6bf3c05bb289d49f63ab2dd2794
-ms.sourcegitcommit: 4f6ef4cd09c3ed36dc0be3702b0636bad6cff8a9
+ms.openlocfilehash: 457f453b001f71a095bc60932c8e0cebf46aa7b1
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52657733"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706664"
 ---
 # <a name="turn-auditing-on-or-off"></a>Aktivieren oder Deaktivieren der Überwachung
 
@@ -63,7 +63,7 @@ Wenn die Überwachung für Ihre Organisation nicht aktiviert ist, können Sie si
 
    Wenn die Überwachung für Ihre Organisation nicht aktiviert ist, wird ein Banner mit der Aufforderung angezeigt, Benutzer- und Administratoraktivitäten zu erfassen.
 
-   ![Banner auf der Seite "Überwachung"](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
+   ![Banner auf der Seite "Überwachung"](../media/AuditingBanner.png)
 
 3. Klicken Sie **auf das Banner Start recording user and admin activity.**
 

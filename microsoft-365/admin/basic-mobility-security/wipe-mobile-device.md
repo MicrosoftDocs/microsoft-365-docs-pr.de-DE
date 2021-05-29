@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Verwenden Sie integrierte Grundlegende Mobilität und Sicherheit, um Informationen von registrierten Geräten zu entfernen.
-ms.openlocfilehash: 7830a0f4ef609f6465c171ecab2c9e3c48198424
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 8c873923505fe527f5a44df0e8b15d290e92023b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023857"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706142"
 ---
 # <a name="wipe-a-mobile-device-in-basic-mobility-and-security"></a>Wischen eines mobilen Geräts in Basic Mobility and Security
 
@@ -88,7 +88,3 @@ Die Löschung wird sofort an das mobile Gerät gesendet, und das Gerät ist in A
 |Von Basic Mobility and Security erstellte E-Mail-Profile werden entfernt und zwischengespeicherte E-Mails auf dem Gerät gelöscht.|Ja|Nicht zutreffend|
 >[!NOTE]
 >Unternehmensportal App ist im App-Store für iOS und im Play-Store für Android-Geräte verfügbar.
-
-## <a name="related-topics"></a>Verwandte Themen
-
-[Einrichten von grundlegender Mobilität und Sicherheit](set-up.md)

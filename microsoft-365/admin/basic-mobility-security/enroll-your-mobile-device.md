@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Bevor Sie die Microsoft 365 ihrem Gerät verwenden können, müssen Sie sie möglicherweise zuerst in Basic Mobility and Security for Microsoft 365.
-ms.openlocfilehash: 119039f86f1c7f81ffb535b4a159c935823f2f07
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2ad0aac331969696bbf53d0b06c18ee5c0ee90f6
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904228"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706166"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Registrieren Ihres mobilen Geräts mithilfe von Basic Mobility and Security
 
@@ -77,6 +77,6 @@ Wechseln Sie zum Microsoft Store, und laden Sie die Intune-Unternehmensportal
 
 Informationen zum Verbinden und Konfigurieren ihres Windows oder PCs mit dem Unternehmensportal für Microsoft 365 finden Sie unter [Windows Geräteregistrierung in Intune-Unternehmensportal](/intune-user-help/windows-enrollment-company-portal).
 
-## <a name="whats-next"></a>Nächste Schritte
+## <a name="next-steps"></a>Nächste Schritte
 
 Nachdem Ihr Gerät in Basic Mobility and Security registriert wurde, können Sie mit der Verwendung von Office-Apps auf Ihrem Gerät beginnen, um mit E-Mails, Kalendern, Kontakten und Dokumenten zu arbeiten.

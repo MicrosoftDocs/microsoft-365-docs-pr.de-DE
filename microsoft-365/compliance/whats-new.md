@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Unabhängig davon, ob Sie dem Compliance Center neue Lösungen hinzufügen, vorhandene Features basierend auf Ihrem Feedback aktualisieren oder eine aktuelle und aktualisierte Dokumentation auf den Markt bringen, Microsoft 365 hilft Ihnen, die sich ständig ändernde Compliancelandschaft auf dem neuesten Stand zu halten. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ae1df2ce6373e4a8f6b01c33e50bea5e6c16ca0a
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: f249108dba279e255efd57ecd56159d3c71dcb4b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698952"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706618"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in Microsoft 365 Compliance
 
@@ -48,7 +48,7 @@ Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365
 
 ### <a name="data-connectors"></a>Datenconnectors
 
-- [Einrichten eines Connectors zum Archivieren von Cisco Jabber auf Oracle-Daten]/microsoft-365/compliance/archive-ciscojabberonoracle-data)
+- [Einrichten eines Connectors zum Archivieren von Cisco Jabber auf Oracle-Daten](/microsoft-365/compliance/archive-ciscojabberonoracle-data)
 - [Einrichten eines Connectors zum Archivieren von Cisco Jabber auf PostgreSQL-Daten](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
 
 ### <a name="data-loss-prevention"></a>Verhinderung von Datenverlust
@@ -59,14 +59,15 @@ Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365
 
 ### <a name="retention-policies-and-retention-label-policies"></a>Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien
 
-- Der speicherort Microsoft 365 Groups unterstützt jetzt das Anwenden der Aufbewahrungseinstellungen auf nur Microsoft 365 Postfächer oder nur auf die verbundenen SharePoint-Websites mithilfe des [Set-RetentionCompliancePolicy PowerShell-Cmdlets](/powershell/module/exchange/set-retentioncompliancepolicy) mit dem Parameter Applications.
+- Der Speicherort Microsoft 365-Gruppen unterstützt jetzt das Anwenden der Aufbewahrungseinstellungen auf nur Microsoft 365 Postfächer oder nur auf die verbundenen SharePoint-Websites mithilfe des [Set-RetentionCompliancePolicy PowerShell-Cmdlets](/powershell/module/exchange/set-retentioncompliancepolicy) mit dem *Parameter Applications.*
 
 ### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 
 Outlook und Updates:
-- Bisher nur vom AIP-Client für einheitliche Bezeichnungen unterstützt, unterstützt die integrierte Bezeichnung jetzt unterschiedliche Einstellungen für Standardbezeichnungen und [obligatorische Bezeichnungen.](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)
-- Encrypt-Only wird jetzt von macOS, iOS und Android unterstützt
-- Verwalten von Vertraulichkeitsbezeichnungen [in Office-Apps,](/microsoft-365/compliance/sensitivity-labels-office-apps) die mit neuen [](/microsoft-365/compliance/sensitivity-labels-office-apps#outlook-specific-options-for-default-label-and-mandatory-labeling) Einträgen in der [Outlook-Funktionstabelle](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-label-capabilities-in-outlook) für Unterschiedliche Einstellungen für Standardbezeichnungen und obligatorische Bezeichnungen für die neue Outlook-Featureversion für integrierte Bezeichnungen aktualisiert wurden, um eine andere Standardbezeichnung und Eine Ausnahme von der obligatorischen Bezeichnung zu unterstützen. Darüber hinaus wird Encrypt-Only option jetzt von macOS/iOS/Android unterstützt, und alle dynamischen Markierungen mit Variablen werden jetzt für alle Outlook unterstützt. Die obligatorische Bezeichnung wird jetzt für die verbleibenden Plattformen rolliert.
+- [Für die integrierte](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling) Bezeichnung werden jetzt unterschiedliche Einstellungen für die Standardbezeichnung und die obligatorische Bezeichnung unterstützt. Bisher wurden diese Einstellungen nur vom AIP Unified Labeling-Client unterstützt.
+- [Encrypt-Only](encryption-sensitivity-labels.md#let-users-assign-permissions) wird jetzt von macOS, iOS und Android unterstützt.
+- [Die obligatorische Bezeichnung](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) wird für die verbleibenden Plattformen rolliert.
+- [Dynamische Markierungen mit allen Variablen](sensitivity-labels-office-apps.md#dynamic-markings-with-variables) werden für alle Outlook unterstützt.
 
 ## <a name="march-2021"></a>März 2021
 

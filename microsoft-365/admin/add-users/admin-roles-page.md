@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Administratorrollen sind Geschäftsfunktionen zugeordnet. Über sie werden Berechtigungen für bestimmte Aufgaben im Admin Center erteilt. Der Dienstadministrator öffnet beispielsweise Supporttickets bei Microsoft.
-ms.openlocfilehash: 3c55619dc1193d7c41f8a52fc027f03f13f3c9ad
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: c1baf7fcd9189973864929550b19ca6e32d499ae
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759954"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706202"
 ---
 # <a name="get-started-with-the-roles-page"></a>Erste Schritte mit der Rollenseite
 
@@ -96,8 +96,7 @@ Im Admin Center:
 
 ![Eine Abbildung, die einen Vergleich der Administratorrollen zeigt](../../media/compare-roles-list.png)
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Informationen zu Microsoft 365-Administratorrollen](about-admin-roles.md)
-
-[Zuweisen von Administratorrollen](assign-admin-roles.md)
+[Informationen Microsoft 365 Administratorrollen](about-admin-roles.md) (Artikel)\
+[Zuweisen von Administratorrollen](assign-admin-roles.md) (Artikel)

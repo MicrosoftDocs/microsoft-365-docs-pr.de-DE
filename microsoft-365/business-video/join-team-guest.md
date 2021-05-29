@@ -20,14 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie ein Team als Gast in Microsoft Teams.
-ms.openlocfilehash: 0260365e8a064dd96cda75c9becf9f82bc6871a3
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 04ee1a32e63c6cbff1f6352362ed04b06a9791fa
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903718"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706238"
 ---
 # <a name="join-a-team-as-a-guest"></a>Treten Sie einem Team als Gast bei
+
+## <a name="watch-join-a-team-as-a-guest"></a>Watch: Join a team as a guest
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4tyys?autoplay=false]
 
@@ -47,8 +49,10 @@ Wenn Sie eine einladung Microsoft Teams, einem Team bei treten, gibt es einige S
     Wenn Sie bereits die Teams in Ihrer Organisation verwenden, ist der Beitritt zu einem Team als Gast wesentlich einfacher.
 
 1. Öffnen Sie Microsoft Teams App, und wählen Sie **Ja** aus, um zu dem Team zu wechseln, zu dem Sie eingeladen sind.  Jetzt können Sie an dem Projekt in einer Teams.
-2. Wenn Sie zum Team Ihres Unternehmens wechseln möchten, wählen Sie es in der  **Dropdownliste Organisation**  aus.
+1. Wenn Sie zum Team Ihres Unternehmens wechseln möchten, wählen Sie es in der  **Dropdownliste Organisation**  aus.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Gasterfahrung in Teams](https://docs.microsoft.com/microsoftteams/guest-experience) (Artikel) Verwalten von [Microsoft Teams-Einstellungen](https://docs.microsoft.com/microsoftteams/enable-features-office-365) für Ihre Organisation (Artikel) Verwenden des Gastzugriffs und des externen Zugriffs für die Zusammenarbeit mit Personen außerhalb [Ihrer Organisation](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations) (Artikel)
+[Gasterfahrung in Teams](/microsoftteams/guest-experience) (Artikel)\
+[Verwalten Microsoft Teams Einstellungen für Ihre Organisation](/microsoftteams/enable-features-office-365) (Artikel)\
+[Verwenden des Gastzugriffs und des externen Zugriffs für die Zusammenarbeit mit Personen außerhalb Ihrer Organisation](/microsoftteams/communicate-with-users-from-other-organizations) (Artikel)

@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Ihrem Abonnement eine weitere Domäne hinzufügen können.
-ms.openlocfilehash: a641005913f7dfd866366f0f8065019dd5c17fe8
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: Ihre Organisation benötigt möglicherweise mehrere Domänen, damit Kunden Sie finden können. Erfahren Sie, wie Sie Ihrem Abonnement eine weitere Domäne hinzufügen können.
+ms.openlocfilehash: 13fc3cf73a112945db4372231cce70c1837c1321
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903742"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706430"
 ---
 # <a name="add-another-domain"></a>Hinzufügen einer weiteren Domäne
 
@@ -56,4 +56,7 @@ Um E-Mails in Ihrer neuen Domäne zu empfangen, müssen Sie für jeden Benutzer 
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Hinzufügen einer](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) Domäne zu Microsoft 365 (Artikel) Hinzufügen von [DNS-Einträgen](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) zum Verbinden Ihrer Domäne (Artikel) Ändern von [Namenservern](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/change-nameservers-at-any-domain-registrar) zum Einrichten von Microsoft 365 mit beliebigen Domänenregistrierungsstellen (Artikel) [Häufig](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) gestellte Fragen zu Domänen (Artikel)
+[Hinzufügen einer Domäne zu Microsoft 365](../admin/setup/add-domain.md) (Artikel)\
+[Hinzufügen von DNS-Einträgen zum Verbinden Ihrer Domäne](../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) (Artikel)\
+[Ändern des Namenservers zum Einrichten von Microsoft 365 mit einer beliebigen Domänenregistrierungsstelle](../admin/get-help-with-domains/change-nameservers-at-any-domain-registrar.md) (Artikel)\
+[Häufig gestellte Fragen zu Domänen](../admin/setup/domains-faq.yml) (Artikel)

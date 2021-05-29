@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Erfahren Sie, wie Sie Compliancegrenzen verwenden, um logische Grenzen zu erstellen, die die Speicherorte von Benutzerinhalten steuern, die ein eDiscovery-Manager in einem Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8b19347ad8e1c87d5b66cb49ed2af152b4765c37
-ms.sourcegitcommit: efb932db63ad3ab4af4b585428d567d069410e4e
+ms.openlocfilehash: 02e2e2f048ab521ad5640003cb127ed7bfa19641
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52311916"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706606"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Einrichten von Compliancegrenzen für eDiscovery-Untersuchungen
 
@@ -288,6 +288,8 @@ Beachten Sie die folgenden Einschränkungen bei der Verwaltung von eDiscovery-F�
 - Compliancegrenzen gelten nicht für halte in eDiscovery-Fällen. Dies bedeutet, dass ein eDiscovery-Manager in einer Organisation einen Benutzer in einer anderen Organisation im Haltebereich platzieren kann. Die Compliance-Begrenzung wird jedoch erzwungen, wenn der eDiscovery-Manager die Inhaltsspeicherorte des Benutzers durchsucht, der in den Haltebereich gesetzt wurde. Dies bedeutet, dass der eDiscovery-Manager nicht in der Lage ist, die Inhaltsspeicherorte des Benutzers zu durchsuchen, auch wenn er den Benutzer im Haltebereich platzieren konnte.
 
     Außerdem gelten Haltestatistiken nur für Inhaltsspeicherorte in der Organisation.
+
+- Wenn Ihnen ein Filter für Suchberechtigungen (entweder ein Postfach oder ein Websitefilter) zugewiesen ist und Sie versuchen, nicht indizierte Elemente für eine Suche zu exportieren, die alle SharePoint-Websites in Ihrer Organisation enthält, erhalten Sie die folgende Fehlermeldung: `Unable to execute the task. Reason: The scope options UnindexedItemsOnly or BothIndexedandUnindexedItems are not allowed when the executing user has a compliance security filter applied` . Wenn Ihnen ein Suchberechtigungsfilter zugewiesen ist und Sie nicht indizierte Elemente aus SharePoint exportieren möchten, müssen Sie die Suche erneut ausführen und bestimmte SharePoint für die Suche verwenden. Andernfalls können Sie nur indizierte Elemente aus einer Suche exportieren, die alle SharePoint enthält. Weitere Informationen zu den Optionen beim Exportieren von Suchergebnissen finden Sie unter [Exportieren von Inhaltssuchergebnissen](export-search-results.md#step-1-prepare-search-results-for-export).
 
 - Suchberechtigungsfilter werden nicht auf öffentliche Exchange-Ordner angewendet.
 

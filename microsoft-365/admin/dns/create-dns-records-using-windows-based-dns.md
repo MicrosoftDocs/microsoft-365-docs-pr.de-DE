@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Erfahren Sie, wie Sie Ihre Domäne überprüfen und DNS-Einträge für E-Mail, Skype for Business Online und andere Dienste unter Windows-basierten DNS für Microsoft einrichten.
-ms.openlocfilehash: fd7c56b6db9fe5f5dbb0637ad5abcb40a64bef8f
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: b9088fe3efd58700db0234a2839665a783731eb0
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876349"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706112"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Erstellen von DNS-Einträgen für Microsoft mithilfe Windows-basierten DNS
 
@@ -76,14 +76,14 @@ Hinzufügen des CNAME-Eintrags für SIP
     - Hostname: sip
     - Typ: CNAME
     - Adresse: sipdir.online.lync.com
-- Klicken Sie auf **OK**.
+- Wählen Sie **OK** aus.
 
 Hinzufügen des CNAME-Eintrags für Skype for Business Online-AutoErmittlung  
 - Wechseln Sie auf der Seite DNS-Manager für die Domäne zu **Aktion** \> **CNAME (CNAME)**. Stellen Sie im Dialogfeld Neuer **Ressourcendatensatz** sicher, dass die Felder auf genau die folgenden Werte festgelegt sind:  
     - Hostname: lyncdiscover
     - Typ: CNAME
     - Adresse: webdir.online.lync.com
-- Klicken Sie auf **OK**.
+- Wählen Sie **OK** aus.
    
 ### <a name="add-two-cname-records-for-mobile-device-management-mdm-for-microsoft"></a>Hinzufügen von zwei #A0 für mobile Geräteverwaltung (Mobile Device Management, MDM) für Microsoft
 
@@ -97,7 +97,7 @@ Hinzufügen des CNAME-Eintrags für MDM-Enterpriseregistration
 - Hostname: enterpriseregistration
 - Typ: CNAME
 - Adresse: enterpriseregistration.windows.net
-- Klicken Sie auf **OK**. 
+- Wählen Sie **OK** aus. 
 
 Hinzufügen des CNAME-Eintrags für MDM-Enterpriseenrollment 
 -  Wechseln Sie auf der Seite DNS-Manager für die Domäne zu **Aktion** \> **CNAME (CNAME)**. 
@@ -105,7 +105,7 @@ Hinzufügen des CNAME-Eintrags für MDM-Enterpriseenrollment
     - Hostname: enterpriseenrollment
     - Typ: CNAME
     - Adresse: enterpriseenrollment-s.manage.microsoft.com
-- Klicken Sie auf **OK**.
+- Wählen Sie **OK** aus.
    
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Hinzufügen eines TXT-Eintrags für SPF, um E-Mail-Spam zu verhindern
 <a name="BKMK_add_TXT"> </a>
@@ -125,7 +125,7 @@ Fügen Sie den SPF TXT-Eintrag für Ihre Domäne hinzu, um E-Mail-Spam zu verhin
 -  Datensatztyp: TXT
 -  Adresse: v=spf1 include:spf.protection.outlook.com -all 
          
--  Klicken Sie auf **OK**.
+-  Wählen Sie **OK** aus.
    
 ## <a name="add-srv-records"></a>Hinzufügen von SRV-Einträgen
 <a name="BKMK_add_SRV"> </a>
@@ -142,7 +142,7 @@ Hinzufügen des SIP SRV-Eintrags für Skype for Business Online-Webkonferenzen  
     -  Weight (Gewichtung): 1
     -  Port: 443
     -  Ziel (Hostname): sipdir.online.lync.com
--  Klicken Sie auf **OK**. 
+-  Wählen Sie **OK** aus. 
 
 
 Hinzufügen des SIP SRV-Eintrags für den Skype for Business Online-Partnerverbund  
@@ -155,7 +155,7 @@ Hinzufügen des SIP SRV-Eintrags für den Skype for Business Online-Partnerverbu
     -  Weight (Gewichtung): 1
     -  Port: 5061
     -  Target (Hostname): sipfed.online.lync.com
--  Klicken Sie auf **OK**. 
+-  Wählen Sie **OK** aus. 
    
 ## <a name="add-a-record-to-verify-that-you-own-the-domain-if-you-havent-already"></a>Hinzufügen eines Eintrags zum Überprüfen des Domänenbesitzes, sofern das noch nicht geschehen ist
 <a name="BKMK_verify"> </a>
@@ -208,8 +208,6 @@ Wenn Sie planen, Ihr lokales Active Directory mit Microsoft zu synchronisieren, 
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Übertragen einer Domäne von Micrsoft 365 auf einen anderen Host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host) (Artikel)
-
-[Pilot Microsoft 365 aus meiner benutzerdefinierten Domäne](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain) (Artikel)
-
-[Häufig gestellte Fragen](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) zu Domänen (Artikel)
+[Übertragen einer Domäne von Micrsoft 365 auf einen anderen Host](../get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host.md) (Artikel)\
+[Pilot Microsoft 365 aus meiner benutzerdefinierten Domäne](../misc/pilot-microsoft-365-from-my-custom-domain.md) (Artikel)\
+[Häufig gestellte Fragen zu Domänen](../setup/domains-faq.yml) (Artikel)

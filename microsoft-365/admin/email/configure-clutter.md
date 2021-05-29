@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
 description: 'Erfahren Sie, wie Sie das Clutter-Feature für alle oder bestimmte Benutzer in Ihrer Organisation mithilfe von powerShell Exchange aktivieren oder deaktivieren. '
-ms.openlocfilehash: ac68893bc0aeea5ab214698c54524921e2b1921d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 059fb8e626a0b05e0224fc89931453aaae43be0b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915902"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706111"
 ---
 # <a name="configure-clutter-for-your-organization"></a>Konfigurieren von 'Clutter' für Ihre Organisation
 
@@ -96,11 +96,8 @@ Als Administrator können Sie "Clutter" mithilfe Exchange PowerShell erneut akti
     
   - Die "Clutter"-Einstellungen werden angezeigt.
     
-## <a name="related-articles"></a>Verwandte Artikel
-<a name="bkmk_onoff"> </a>
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Verwenden der Funktion „Clutter" zum Sortieren von Nachrichten mit niedriger Priorität in Outlook](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
-    
-[Sortieren von Nachrichten mit niedriger Priorität in OWA mithilfe von "Clutter"](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce)
-    
-[Deaktivieren von "Clutter" in Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
+[Verwenden von Clutter zum Sortieren von](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0) Nachrichten mit niedriger Priorität in Outlook (Artikel)\
+[Verwenden von Clutter zum Sortieren von Nachrichten](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce) mit niedriger Priorität in OWA (Artikel)\
+[Deaktivieren von "Unübersichtlichkeit" in Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c) (Artikel)

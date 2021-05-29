@@ -22,15 +22,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Benutzer in ein anderes Abonnement verschieben.
-ms.openlocfilehash: 8d919cc4d84654a17ac52813a287da0d75590536
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+description: Erfahren Sie, wie Sie Benutzer in ein anderes Abonnement verschieben, wenn Sie neue Features benötigen.
+ms.openlocfilehash: ffba2184908ccdc4736bae3dc0ac835c0d088143
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332198"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706274"
 ---
 # <a name="move-users-to-different-subscriptions"></a>Verschieben von Benutzern in verschiedene Abonnements
+
+## <a name="watch-move-users-to-a-different-subscription"></a>Watch: Verschieben von Benutzern in ein anderes Abonnement
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 

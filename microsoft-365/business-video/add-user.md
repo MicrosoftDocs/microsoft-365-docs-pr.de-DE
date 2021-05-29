@@ -21,14 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie Benutzer in Microsoft 365 Business hinzufügen.
-ms.openlocfilehash: d1167241a7b4c6012663f900973cb2fdbb7792bb
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 8a9d9cbf0204d9cf4ef878116ddddbe1b2103ccb
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580714"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706406"
 ---
 # <a name="add-a-new-user"></a>Hinzufügen eines neuen Benutzers
+
+## <a name="watch-add-a-user"></a>Watch: Hinzufügen eines Benutzers
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfN?autoplay=false]
 

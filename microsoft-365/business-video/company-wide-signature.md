@@ -21,14 +21,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie Sie eine unternehmensweite E-Mail-Signatur erstellen.
-ms.openlocfilehash: a1a85826be2a799b56cf3d06b6416778470a116f
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 669c61d17784641d1ecc88ac0952a46575c7898b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578951"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706262"
 ---
 # <a name="create-a-company-wide-email-signature"></a>Erstellen einer unternehmensweiten E-Mail-Signatur
+
+## <a name="watch-create-a-company-wide-email-signature"></a>Watch: Erstellen einer unternehmensweiten E-Mail-Signatur
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1IEWf?autoplay=false]
 

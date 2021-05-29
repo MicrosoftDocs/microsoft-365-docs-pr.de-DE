@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie die automatische Weiterleitung von E-Mails beenden.
-ms.openlocfilehash: f8bd599c7c8bca8d4789188acbcd3574b7473dcb
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: Erfahren Sie, wie Sie die automatische Weiterleitung von E-Mails beenden, indem Sie eine Nachrichtenflussregel erstellen, um den Diebstahl proprietärer Informationen zu vermeiden.
+ms.openlocfilehash: 82e4c80b0edc501889e0fc4dc28f1ec1ad703568
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903682"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706474"
 ---
 # <a name="stop-email-auto-forward"></a>Automatische Weiterleitung von E-Mails beenden
+
+## <a name="watch-stop-auto-forwarding-emails"></a>Watch: Beenden der automatischen Weiterleitung von E-Mails
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2W6kS?autoplay=false]
 
@@ -50,4 +52,6 @@ Wenn ein Hacker Zugriff auf das Postfach eines Benutzers erhält, kann er die E-
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Hinzufügen eines weiteren E-Mail-Alias](https://docs.microsoft.com/microsoft-365/admin/email/add-another-email-alias-for-a-user) für einen Benutzer (Artikel) Konfigurieren der E-Mail-Weiterleitung [in Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/email/configure-email-forwarding) (Artikel) Suchen und Beheben von Problemen bei der E-Mail-Zustellung als [Office 365 business admin](https://docs.microsoft.com/exchange/troubleshoot/email-delivery/email-delivery-issues) (Artikel)
+[Hinzufügen eines weiteren E-Mail-Alias für einen Benutzer](../admin/email/add-another-email-alias-for-a-user.md) (Artikel)\
+[Konfigurieren der E-Mail-Weiterleitung in Microsoft 365](../admin/email/configure-email-forwarding.md) (Artikel)\
+Suchen und Beheben von Problemen bei der [E-Mail-Zustellung als Office 365 für Geschäftsadministrator](/exchange/troubleshoot/email-delivery/email-delivery-issues) (Artikel)

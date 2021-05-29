@@ -21,12 +21,12 @@ ms.custom:
 search.appverid: MET150
 description: Erfahren Sie, welche Abonnements Ihre Organisation besitzt, indem Sie zur Seite Ihre Produkte gehen.
 ms.date: 01/21/2021
-ms.openlocfilehash: c33ba799880e6c687a08c2d49b17cbae8e80552c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: b0f5f11f34ec4cf84648709ae5557bc5f637a55f
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52535890"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706298"
 ---
 # <a name="what-subscription-do-i-have"></a>Welches Abonnement habe ich?
 
@@ -41,10 +41,7 @@ Wenn Sie Administrator sind, können Sie überprüfen, welche Abonnements Ihre O
 
 ## <a name="related-content"></a>Verwandte Inhalte
   
-[Abonnements und Abrechnung](../../commerce/index.yml) (Links)
-
-[Anzeigen Ihrer Rechnung oder Rechnung](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (Artikel)
-
-[Bezahlen für Ihr Abonnement](../../commerce/billing-and-payments/pay-for-your-subscription.md) (Artikel)
-
+[Abonnements und Abrechnung](../../commerce/index.yml) (Links)\
+[Anzeigen Ihrer Rechnung](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (Artikel)\
+[Bezahlen für Ihr Abonnement](../../commerce/billing-and-payments/pay-for-your-subscription.md) (Artikel)\
 [Ändern Ihrer Abrechnungsadressen](../../commerce/billing-and-payments/change-your-billing-addresses.md) (Artikel)

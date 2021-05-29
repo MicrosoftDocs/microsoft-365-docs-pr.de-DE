@@ -18,13 +18,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie den Mandantenschalter verwenden, und erfahren Sie mehr mandantenverdingte Ansichten.
-ms.openlocfilehash: d59760b8a143acc33747aff9f7deaa0b6dd3e711
-ms.sourcegitcommit: 682ed2c4e2bc6979025cdb89094866cef6c8751a
+description: Erfahren Sie, wie Sie die Mandanten-Switcher- und Mehr-Mandanten-Ansichten verwenden, die Ihnen die Möglichkeit geben, Mandanten von einem einzigen Standort aus zu verwalten.
+ms.openlocfilehash: e0bf6c872d4998c0cd0263fd8474ac5e9c99ef14
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51943029"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706154"
 ---
 # <a name="multi-tenant-management"></a>Verwaltung mit mehreren Mandanten
 

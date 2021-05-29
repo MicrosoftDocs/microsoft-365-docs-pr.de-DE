@@ -28,12 +28,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Erfahren Sie Microsoft 365 Unternehmens, wie Sie sie einrichten und wie Sie die Geräte und PCs Ihrer Benutzer vorbereiten, um sicherzustellen, dass sie von Microsoft 365 geschützt sind.
-ms.openlocfilehash: ddf6f8d12587c6fb562a599a41c190ffef32c147
-ms.sourcegitcommit: de5fce90de22ba588e75e1a1d2e87e03b9e25ec7
+ms.openlocfilehash: be5f0e74b71f412bf647e4ef0e496cd932fc306a
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52293705"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706456"
 ---
 # <a name="get-started-with-microsoft-365-for-business"></a>Erste Schritte mit Microsoft 365 Business
 
@@ -41,7 +41,7 @@ ms.locfileid: "52293705"
 
 Microsoft 365 business ist eine umfassende Reihe von Tools für Produktivität und Zusammenarbeit, z. B. Outlook, Word, Excel und andere Office-Produkte, die immer auf dem neuesten Stand sind. Sie können Ihre Arbeitsdateien auf all Ihren iOS-, Android- und Windows 10 mit sicherheit auf Unternehmensqualität schützen, die einfach zu verwalten ist.
 
-Sehen Sie sich dieses Video an, um eine kurze Übersicht über Microsoft 365 Business zu erhalten.<br><br>
+## <a name="watch-what-is-microsoft-365-business-premium"></a>Watch: Was ist Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -61,7 +61,7 @@ Im folgenden Diagramm wird beschrieben, wie Administratoren Microsoft 365 Untern
   
 ![A diagram that shows the setup and management flow for admins, and also for a user](../media/249f81fc-7e79-44c7-8425-3a0b7b651c3b.png)
 
-Sehen Sie sich dieses Video an, um eine Übersicht Microsoft 365 Unternehmenseinrichtung zu erhalten.<br><br>
+## <a name="watch-set-up-microsoft-365-business"></a>Watch: Set up Microsoft 365 Business
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FYSM] 
 
@@ -99,7 +99,7 @@ Wenn Ihre Organisation Windows Server Active Directory lokal verwendet, können 
 Wenn Sie ein lokales Active Directory beibehalten, das einige lokale Ressourcen (z. B. Dateifreigaben und Drucker) enthält, können Sie Ihren **Azure AD-beigetretenen** Geräten Zugriff auf diese Ressourcen geben, indem Sie die folgenden Schritte ausführen: Zugreifen auf lokale Ressourcen von einem [Azure AD-beigetretenen](access-resources.md)Gerät in Microsoft 365 business .
   
   
-## <a name="contact-support"></a>wenden Sie sich an den Support,
+## <a name="contact-support"></a>Support kontaktieren
 
  **Wenn Sie den Support kontaktieren müssen:**
   
@@ -109,8 +109,7 @@ Wenn Sie ein lokales Active Directory beibehalten, das einige lokale Ressourcen 
     
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Microsoft 365 für Geschäftsdokumentationen und -ressourcen](./index.yml)
-  
-[Manage Microsoft 365 for Business](manage.md)[Migrate to Microsoft 365 business](migrate-to-microsoft-365-business.md)
-
-[Microsoft 365 für Unternehmen-Schulungsvideos](../business-video/index.yml)
+[Microsoft 365 für Geschäftsdokumentationen und -ressourcen](./index.yml) (Linkseite)\
+[Verwalten Microsoft 365 für Unternehmen](manage.md) (Artikel)\
+[Migrieren zu Microsoft 365 für Unternehmen](migrate-to-microsoft-365-business.md) (Artikel)\
+[Microsoft 365 Für Unternehmen Schulungsvideos](../business-video/index.yml) (Linkseite)

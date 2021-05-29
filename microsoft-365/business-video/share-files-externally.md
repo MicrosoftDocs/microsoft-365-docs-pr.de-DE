@@ -19,15 +19,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Ihre Geschäftsdateien problemlos extern freigeben können.
-ms.openlocfilehash: 469e4b16277b048a539767f6fc9fd54d2ea2e6cf
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Erfahren Sie, wie Sie einen Jeder-Link in Microsoft 365, um Ihre Geschäftsdateien extern zu teilen.
+ms.openlocfilehash: cbe6a12fd8d0c2b2ec16db32178f9c2559a08c22
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578627"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706498"
 ---
 # <a name="easily-share-files-externally"></a>Einfaches Freigeben von Dateien für Personen außerhalb Ihrer Organisation
+
+## <a name="watch-share-files-with-an-anyone-link"></a>Watch: Freigeben von Dateien mit einem Jeder-Link
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2dCOV?autoplay=false]
 

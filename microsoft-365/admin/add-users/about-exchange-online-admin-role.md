@@ -20,21 +20,19 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 097ae285-c4af-4319-9770-e2559d66e4c8
-description: 'Exchange Onlineadministratoren verwalten die E-Mails und Postfächer Ihrer Organisation. Beispielsweise stellen sie gelöschte Elemente im Postfach eines Benutzers wiederher. '
-ms.openlocfilehash: 4dc1f435571650ae4a805198782c3c24a92024fb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+description: Exchange Onlineadministratoren verwalten die E-Mails und Postfächer Ihrer Organisation. Beispielsweise stellen sie gelöschte Elemente im Postfach eines Benutzers wiederher.
+ms.openlocfilehash: 58f0da87c0db57a3df62834a4375d561e20a98f8
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197649"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706214"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Informationen zur Exchange Online-Administratorrolle
 
 Zur Unterstützung der Verwaltung Microsoft 365 Können [](assign-admin-roles.md) Sie Benutzern Berechtigungen zum Verwalten der E-Mails und Postfächer Ihrer Organisation über das [Exchange zuweisen.](/exchange/exchange-admin-center) Weisen Sie sie dazu der Exchange-Administratorrolle zu.
   
  **Tipp:** Wenn Sie der Administratorrolle Exchange zuweisen, weisen Sie sie auch der Administratorrolle Dienst zu. Auf diese Weise können sie wichtige Informationen im Microsoft 365 Admin Center anzeigen, z. B. die Integrität des Exchange Online-Diensts und Änderungs- und Veröffentlichungsbenachrichtigungen.
-  
-## <a name="before-you-begin"></a>Bevor Sie beginnen
 
 Hier folgen einige der wichtigsten Aufgaben, die Benutzer ausführen können, wenn ihnen die Exchange-Administratorrolle zugewiesen wurde:
   
@@ -48,7 +46,7 @@ Hier folgen einige der wichtigsten Aufgaben, die Benutzer ausführen können, we
 
 - [Erstellen Sie ein freigegebenes Postfach,](../email/create-a-shared-mailbox.md) damit eine Gruppe von Personen E-Mails von einer gemeinsamen E-Mail-Adresse überwachen und senden kann.
 
-- [E-Mail-Antispamschutz-](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) und Schadsoftwarefilter für die Organisation.
+- [E-Mail-Antispamschutz-](../../security/office-365-security/anti-spam-protection.md) und Schadsoftwarefilter für die Organisation.
 
 - Verwalten von Microsoft 365-Gruppen
 

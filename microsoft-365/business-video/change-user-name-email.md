@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie den Namen oder die E-Mail-Adresse eines Benutzers ändern.
-ms.openlocfilehash: 0f2a378cccf2def9cd951483b23a11c2a414607d
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: Erfahren Sie, wie Sie den Namen oder die E-Mail-Adresse eines Benutzers ändern, indem Sie einen Anzeigenamen, alias oder eine E-Mail-Adresse ändern.
+ms.openlocfilehash: e012923ebe12a04b07c9236f5ebbd30623cd2dd5
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903730"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706418"
 ---
 # <a name="change-a-users-name-or-email-address"></a>Ändern des Namens oder der E-Mail-Adresse eines Benutzers
+
+## <a name="watch-change-a-users-name-or-email-address"></a>Ansehen: Namen oder E-Mail-Adresse eines Benutzers ändern
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SJuc?autoplay=false]
 
@@ -63,4 +65,6 @@ Gelegentlich müssen Sie möglicherweise den Namen oder die E-Mail-Adresse eines
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Erteilen von Postfachberechtigungen für](https://docs.microsoft.com/microsoft-365/admin/add-users/give-mailbox-permissions-to-another-user) einen anderen Benutzer (Artikel) [Konvertieren eines Benutzerpostfachs](https://docs.microsoft.com/microsoft-365/admin/email/convert-user-mailbox-to-shared-mailbox) in ein freigegebenes Postfach (Artikel) [Benutzer-E-Mail-Einstellungen](https://docs.microsoft.com/microsoft-365/admin/email/office-365-user-email-settings) (Artikel)
+[Erteilen von Postfachberechtigungen für einen anderen Benutzer](../admin/add-users/give-mailbox-permissions-to-another-user.md) (Artikel)\
+[Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach](../admin/email/convert-user-mailbox-to-shared-mailbox.md) (Artikel)\
+[Benutzer-E-Mail-Einstellungen](../admin/email/office-365-user-email-settings.md) (Artikel)

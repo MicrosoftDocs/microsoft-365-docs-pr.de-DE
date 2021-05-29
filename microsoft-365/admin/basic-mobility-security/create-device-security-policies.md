@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Verwenden Sie Grundlegende Mobilität und Sicherheit, um Geräterichtlinien zu erstellen, die Ihre Unternehmensinformationen schützen.
-ms.openlocfilehash: 5abd27f963208140a53cfd885152301992830b5e
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 5519351db428faa837a63eedb384b42c8d8ee07c
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023905"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706322"
 ---
 # <a name="create-device-security-policies-in-basic-mobility-and-security"></a>Erstellen von Gerätesicherheitsrichtlinien in Basic Mobility and Security
 
@@ -148,8 +148,7 @@ Die Richtlinie wird vom mobilen Gerät für jeden Benutzer entfernt, für den di
 
 Sie können ein Gerät auch vollständig oder selektiv vom Gerät löschen. Weitere Informationen finden Sie unter [Wipe a mobile device in Basic Mobility and Security](wipe-mobile-device.md).
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Übersicht von grundlegender Mobilität und Sicherheit](overview.md)
-
-[Funktionen von grundlegender Mobilität und Sicherheit](capabilities.md)
+[Übersicht über grundlegende Mobilität und Sicherheit](overview.md) (Artikel)\
+[Funktionen der grundlegenden Mobilität und Sicherheit](capabilities.md) (Artikel)

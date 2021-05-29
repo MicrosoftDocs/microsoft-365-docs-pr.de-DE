@@ -19,15 +19,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie sich für Microsoft 365 Business Premium.
-ms.openlocfilehash: dcc6fd42b2aab073e027135cb5e939867b2bdc9d
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Erfahren Sie, wie Sie sich für Microsoft 365 Business Premium (zuvor als Microsoft 365 Business.
+ms.openlocfilehash: 998c1ad6a7ed30adb0d6beb9ebb7762dec8a8485
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578615"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706486"
 ---
 # <a name="sign-up-for-microsoft-365-business-premium-subscription"></a>Registrieren für Microsoft 365 Business Premium Abonnement
+
+## <a name="watch-sign-up-for-microsoft-365-business-premium"></a>Watch: Sign up for Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3znhX?autoplay=false]
 

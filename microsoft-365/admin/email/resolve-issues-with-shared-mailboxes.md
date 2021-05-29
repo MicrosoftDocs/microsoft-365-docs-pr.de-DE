@@ -21,13 +21,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Probieren Sie diese Lösungen aus, wenn Probleme mit freigegebenen Postfächern auftreten.
-ms.openlocfilehash: ba62db76edff6e4ab3d738ed0af8db2a40c18394
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Beim Einrichten freigegebener Postfächer können Fehler auftreten. Probieren Sie diese Lösungen aus, wenn Probleme mit freigegebenen Postfächern auftreten.
+ms.openlocfilehash: 89cdfbe29ab035b1eb6c3a0183629eef59d67477
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926486"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706130"
 ---
 # <a name="resolve-issues-with-shared-mailboxes"></a>Beheben von Problemen mit freigegebenen Postfächern
 
@@ -50,17 +50,13 @@ Wenn Sie ein freigegebenes Postfach erstellt haben und dann versuchen, eine Nach
 
 Diese Meldung wird angezeigt, Microsoft 365 beim Auftreten eines Replikationslatenzproblems angezeigt wird. Sie sollte in etwa einer Stunde entfernt werden, wenn die Informationen zu Ihrem neuen freigegebenen Postfach (oder hinzugefügten Benutzer) in allen unseren Rechenzentren repliziert werden. Warten Sie eine Stunde, und versuchen Sie dann erneut, eine Nachricht zu senden.
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Informationen zu freigegebenen Postfächern](about-shared-mailboxes.md)
-
-[Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md)
-
-[Konfigurieren eines freigegebenen Postfachs](configure-a-shared-mailbox.md)
-
-[Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach](convert-user-mailbox-to-shared-mailbox.md)
-
-[Entfernen einer Lizenz aus einem freigegebenen Postfach](remove-license-from-shared-mailbox.md)
+[Informationen zu freigegebenen Postfächern](about-shared-mailboxes.md) (Artikel)\
+[Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md) (Artikel)\
+[Konfigurieren eines freigegebenen Postfachs](configure-a-shared-mailbox.md) (Artikel)\
+[Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach](convert-user-mailbox-to-shared-mailbox.md) (Artikel)\
+[Entfernen einer Lizenz aus einem freigegebenen Postfach](remove-license-from-shared-mailbox.md) (Artikel)
 
 
     

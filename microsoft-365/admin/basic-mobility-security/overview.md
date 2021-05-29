@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Verwenden Sie Grundlegende Mobilität und Sicherheit zum Festlegen von Gerätesicherheitsrichtlinien und Zugriffsregeln.
-ms.openlocfilehash: e74a5df6d10f8f3fb7b420e428380af97ba75597
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 37be420a4b9499da3d1290b8b6a898b9fcb09c5b
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906252"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706310"
 ---
 # <a name="overview-of-basic-mobility-and-security-for-microsoft-365"></a>Übersicht über grundlegende Mobilität und Sicherheit für Microsoft 365
 
@@ -59,12 +59,9 @@ Nachdem Sie grundlegende Mobilität und Sicherheit eingerichtet haben und Ihre B
 
 Wenn Sie nur die Verwaltung mobiler Apps (Mobile App Management, MAM) benötigen, z. B. für Personen, die Arbeitsprojekte auf ihren eigenen Geräten aktualisieren, bietet Intune neben der Registrierung und Verwaltung von Geräten eine weitere Option. Mit einem Intune-Abonnement können Sie MAM-Richtlinien mithilfe des Azure-Portals einrichten, auch wenn die Geräte von Personen nicht in Intune registriert sind. Weitere Informationen finden Sie unter [Übersicht über App-Schutzrichtlinien](/mem/intune/apps/app-protection-policy).
 
-## <a name="related-topics"></a>Verwandte Themen
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Einrichten von grundlegender Mobilität und Sicherheit](set-up.md)
-
-[Registrieren Ihres mobilen Geräts mithilfe von Basic Mobility and Security](enroll-your-mobile-device.md)
-
-[Verwalten von Geräten, die für mobile Geräteverwaltung für geräte Microsoft 365](manage-enrolled-devices.md)
-
-[Erhalten von Details zu Geräten, die von Basic Mobility and Security verwaltet werden](get-details-about-managed-devices.md)
+[Einrichten der grundlegenden Mobilität und Sicherheit](set-up.md) (Artikel)\
+[Registrieren Ihres mobilen Geräts mithilfe von Basic Mobility and Security](enroll-your-mobile-device.md) (Artikel)\
+[Verwalten von Geräten, die in der Mobile Device Management for Microsoft 365](manage-enrolled-devices.md) registriert sind (Artikel)\
+[Details zu Geräten, die von Basic Mobility and Security](get-details-about-managed-devices.md) verwaltet werden (Artikel)
