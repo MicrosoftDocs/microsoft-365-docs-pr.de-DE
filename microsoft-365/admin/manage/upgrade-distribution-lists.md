@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
 description: Erfahren Sie, wie Sie eine oder mehrere Verteilerlisten auf Microsoft 365 Gruppen in Outlook aktualisieren und wie Sie PowerShell verwenden, um mehrere Verteilerlisten gleichzeitig zu aktualisieren.
-ms.openlocfilehash: 7e1fc4e971a22ec785662f684a4f9e08970c808a
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: d4686e7f2ec305194130b60fbacab24c9cf7f4e9
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636010"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698940"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Aktualisieren von Verteilerlisten auf Microsoft 365 Gruppen in Outlook
 
@@ -86,10 +86,10 @@ Wenn Sie im Umgang mit PowerShell erfahren sind, können Sie diese Methode anste
 Führen Sie zum Aktualisieren einer einzelnen DL den folgenden Befehl aus:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>
+Upgrade-DistributionGroup -DlIdentities <Dl SMTP address>
 ```
 
-Wenn Sie z. B. ein Upgrade einer DLs mit SMTP-Dl1@contoso.com möchten, führen Sie den folgenden Befehl aus:
+Wenn Sie z. B. ein Upgrade einer DL mit SMTP-Dl1@contoso.com möchten, führen Sie den folgenden Befehl aus:
 
 ```PowerShell
 Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
@@ -103,8 +103,8 @@ Upgrade-DistributionGroup -DlIdentities dl1@contoso.com
 Sie können auch mehrere DLs als Batch übergeben und gemeinsam aktualisieren:
 
 ```PowerShell
-Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address2\>,
-\< DL SMTP address3\>, \< DL SMTP address 4\>
+Upgrade-DistributionGroup -DlIdentities <DL SMTP address1>, <DL SMTP address2>,
+<DL SMTP address3>, <DL SMTP address4>
 ```
 
 Wenn Sie beispielsweise fünf DLs mit SMTP-Adresse und , und aktualisieren möchten, führen `dl1@contoso.com` Sie den folgenden Befehl `dl2@contoso.com` `dl3@contoso.com` `dl4@contoso.com` `dl5@contoso.com` aus:
@@ -159,7 +159,7 @@ Sie können nur für in der Cloud verwaltete, einfache, nicht geschachtelte Vert
 
 Wenn Sie überprüfen möchten, ob eine DL berechtigt ist oder nicht, können Sie den folgenden Befehl ausführen:
 
-`Get-DistributionGroup \<DL SMTP address\> | Get-EligibleDistributionGroupForMigration`
+`Get-DistributionGroup <DL SMTP address> | Get-EligibleDistributionGroupForMigration`
 
 Wenn Sie überprüfen möchten, welche DLs für ein Upgrade berechtigt sind, führen Sie den folgenden Befehl aus:
 

@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Unabhängig davon, ob Sie dem Compliance Center neue Lösungen hinzufügen, vorhandene Features basierend auf Ihrem Feedback aktualisieren oder eine aktuelle und aktualisierte Dokumentation auf den Markt bringen, Microsoft 365 hilft Ihnen, die sich ständig ändernde Compliancelandschaft auf dem neuesten Stand zu halten. Finden Sie heraus, was wir diesen Monat vorhaben.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 11055e6f27df08a1726fb3ba65a5accafbf93723
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: ae1df2ce6373e4a8f6b01c33e50bea5e6c16ca0a
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029039"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698952"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Neuerungen in Microsoft 365 Compliance
 
@@ -34,7 +34,39 @@ Ob es darum geht, dem Microsoft 365 Compliance [Center](microsoft-365-compliance
 
 > [!TIP]
 > Interessieren Sie sich dafür, was in anderen Admin Centers geschieht? Dann lesen Sie die folgenden Artikel:<br>[Neuerungen im Microsoft 365 Admin Center](/office365/admin/whats-new-in-preview)<br>[Aktive Websites im SharePoint Online Admin Center](/sharepoint/what-s-new-in-admin-center)<br>[Neuerungen in Microsoft 365 Defender](../security/defender/whats-new.md)<br><br>
-Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/en-us/microsoft-365/roadmap), um sich über Features von Microsoft 365 zu informieren, die eingeführt wurden, bereitgestellt werden, sich in der Entwicklung befinden, eingestellt oder zuvor veröffentlicht wurden.
+Besuchen Sie die [Microsoft 365-Roadmap](https://www.microsoft.com/microsoft-365/roadmap), um sich über Features von Microsoft 365 zu informieren, die eingeführt wurden, bereitgestellt werden, sich in der Entwicklung befinden, eingestellt oder zuvor veröffentlicht wurden.
+
+## <a name="april-2021"></a>April 2021
+
+### <a name="advanced-ediscovery"></a>Advanced eDiscovery
+
+- [Grenzwerte in Advanced eDiscovery](/microsoft-365/compliance/limits-ediscovery20#export-limits---final-export-out-of-review-set). Organisationen können nun bis zu 5 Millionen Elemente oder 500 MB (je nachdem, was kleiner ist) in einem einzigen Export von Elementen aus einem Überprüfungssatz exportieren.
+
+### <a name="data-classification"></a>Datenklassifikation
+
+- [Im Aktivitäts-Explorer verfügbare Bezeichnungsaktivitäten](/microsoft-365/compliance/data-classification-activity-explorer-available-events)
+
+### <a name="data-connectors"></a>Datenconnectors
+
+- [Einrichten eines Connectors zum Archivieren von Cisco Jabber auf Oracle-Daten]/microsoft-365/compliance/archive-ciscojabberonoracle-data)
+- [Einrichten eines Connectors zum Archivieren von Cisco Jabber auf PostgreSQL-Daten](/microsoft-365/compliance/archive-ciscojabberonpostgresql-data)
+
+### <a name="data-loss-prevention"></a>Verhinderung von Datenverlust
+
+- Neues Thema für [Richtlinientipps zur Verhinderung von Datenverlust](/microsoft-365/compliance/dlp-policy-tips-reference).
+- Neues Thema für [Informationen zur Verhinderung von Datenverlust](/microsoft-365/compliance/dlp-learn-about-dlp).
+- Neues Thema für [Erste Schritte mit dem Warnungsdashboard zur](/microsoft-365/compliance/dlp-alerts-dashboard-get-started)Verhinderung von Datenverlust.
+
+### <a name="retention-policies-and-retention-label-policies"></a>Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien
+
+- Der speicherort Microsoft 365 Groups unterstützt jetzt das Anwenden der Aufbewahrungseinstellungen auf nur Microsoft 365 Postfächer oder nur auf die verbundenen SharePoint-Websites mithilfe des [Set-RetentionCompliancePolicy PowerShell-Cmdlets](/powershell/module/exchange/set-retentioncompliancepolicy) mit dem Parameter Applications.
+
+### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
+
+Outlook und Updates:
+- Bisher nur vom AIP-Client für einheitliche Bezeichnungen unterstützt, unterstützt die integrierte Bezeichnung jetzt unterschiedliche Einstellungen für Standardbezeichnungen und [obligatorische Bezeichnungen.](sensitivity-labels-office-apps.md#outlook-specific-options-for-default-label-and-mandatory-labeling)
+- Encrypt-Only wird jetzt von macOS, iOS und Android unterstützt
+- Verwalten von Vertraulichkeitsbezeichnungen [in Office-Apps,](/microsoft-365/compliance/sensitivity-labels-office-apps) die mit neuen [](/microsoft-365/compliance/sensitivity-labels-office-apps#outlook-specific-options-for-default-label-and-mandatory-labeling) Einträgen in der [Outlook-Funktionstabelle](/microsoft-365/compliance/sensitivity-labels-office-apps#sensitivity-label-capabilities-in-outlook) für Unterschiedliche Einstellungen für Standardbezeichnungen und obligatorische Bezeichnungen für die neue Outlook-Featureversion für integrierte Bezeichnungen aktualisiert wurden, um eine andere Standardbezeichnung und Eine Ausnahme von der obligatorischen Bezeichnung zu unterstützen. Darüber hinaus wird Encrypt-Only option jetzt von macOS/iOS/Android unterstützt, und alle dynamischen Markierungen mit Variablen werden jetzt für alle Outlook unterstützt. Die obligatorische Bezeichnung wird jetzt für die verbleibenden Plattformen rolliert.
 
 ## <a name="march-2021"></a>März 2021
 
@@ -42,27 +74,27 @@ Hier sind einige der Änderungen an Microsoft 365 Und Inhalten für den Monat M�
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-- **Advanced eDiscovery Sammlungen** unterstützt jetzt das [neue Sammlungstool und den Workflow](https://docs.microsoft.com/microsoft-365/compliance/collections-overview). Weitere neue Themen umfassen das [Erstellen einer Entwurfssammlung,](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection)das Commit [einer Entwurfssammlung](https://docs.microsoft.com/microsoft-365/compliance/commit-draft-collection)für einen Überprüfungssatz sowie [Sammlungsstatistiken und Berichte.](https://docs.microsoft.com/microsoft-365/compliance/collection-statistics-reports)
-- **Exportieren von** Dokumenten in einem Überprüfungssatz in [ein Azure Storage](https://docs.microsoft.com/microsoft-365/compliance/download-export-jobs) Konto.
-- **Vorhersagecodierungsmodul für Advanced eDiscovery**. Sehen Sie sich zunächst die [neue](https://docs.microsoft.com/microsoft-365/compliance/predictive-coding-overview) Funktion für die Vorhersagecodierung an, die das eingestellte Relevanzmodul ersetzt.
+- **Advanced eDiscovery Sammlungen** unterstützt jetzt das [neue Sammlungstool und den Workflow](/microsoft-365/compliance/collections-overview). Weitere neue Themen umfassen das [Erstellen einer Entwurfssammlung,](https://docs.microsoft.com/microsoft-365/compliance/create-draft-collection)das Commit [einer Entwurfssammlung](/microsoft-365/compliance/commit-draft-collection)für einen Überprüfungssatz sowie [Sammlungsstatistiken und Berichte.](/microsoft-365/compliance/collection-statistics-reports)
+- **Exportieren von** Dokumenten in einem Überprüfungssatz in [ein Azure Storage](/microsoft-365/compliance/download-export-jobs) Konto.
+- **Vorhersagecodierungsmodul für Advanced eDiscovery**. Sehen Sie sich zunächst die [neue](/microsoft-365/compliance/predictive-coding-overview) Funktion für die Vorhersagecodierung an, die das eingestellte Relevanzmodul ersetzt.
 
 ### <a name="data-classification"></a>Datenklassifizierung
 
-- **Datenklassifizierungs-Explorer**. [Erste Schritte](https://docs.microsoft.com/microsoft-365/compliance/data-classification-activity-explorer) mit dem Datenklassifizierungs-Explorer.
+- **Datenklassifizierungs-Explorer**. [Erste Schritte](/microsoft-365/compliance/data-classification-activity-explorer) mit dem Datenklassifizierungs-Explorer.
 
 ### <a name="data-connectors"></a>Datenconnectors
 
-- **Private Schlüssel**. Unterstützung für private Schlüssel wurde [Bloomberg Nachrichtendaten,](https://docs.microsoft.com/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys) [ICE Chat-Daten](https://docs.microsoft.com/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) und [Instant Bloomberg-Datenconnectors](https://docs.microsoft.com/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys) hinzugefügt.
+- **Private Schlüssel**. Unterstützung für private Schlüssel wurde [Bloomberg Nachrichtendaten,](/microsoft-365/compliance/archive-bloomberg-message-data#set-up-a-connector-using-public-keys) [ICE Chat-Daten](/microsoft-365/compliance/archive-icechat-data#set-up-a-connector-using-public-keys) und [Instant Bloomberg-Datenconnectors](/microsoft-365/compliance/archive-instant-bloomberg-data#set-up-a-connector-using-public-keys) hinzugefügt.
 
 ### <a name="data-loss-prevention"></a>Verhinderung von Datenverlust
 
-- **Microsoft Teams unterstützung**. Unterstützung für die Verhinderung von Datenverlust wurde auf [Microsoft Teams.](https://docs.microsoft.com/microsoft-365/compliance/dlp-teams-default-policy)
-- **Microsoft Compliance-Erweiterung**. Erste Schritte mit der [Microsoft Compliance-Erweiterung](https://docs.microsoft.com/microsoft-365/compliance/dlp-chrome-get-started).
+- **Microsoft Teams unterstützung**. Unterstützung für die Verhinderung von Datenverlust wurde auf [Microsoft Teams.](/microsoft-365/compliance/dlp-teams-default-policy)
+- **Microsoft Compliance-Erweiterung**. Erste Schritte mit der [Microsoft Compliance-Erweiterung](/microsoft-365/compliance/dlp-chrome-get-started).
 
 ### <a name="encryption"></a>Verschlüsselung
 
-- **Kundenschlüssel für Microsoft 365**. [Übersicht über den Kundenschlüssel für](https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level) Microsoft 365 mandantenebene (öffentliche Vorschau).
-- **Double Key Encryption**. Erfahren Sie mehr über die Aktivierung der Unterstützung für [gekennzeichnete](https://docs.microsoft.com/microsoft-365/compliance/double-key-encryption) und geschützte Dokumente in SharePoint und OneDrive for Business.
+- **Kundenschlüssel für Microsoft 365**. [Übersicht über den Kundenschlüssel für](/microsoft-365/compliance/customer-key-tenant-level) Microsoft 365 mandantenebene (öffentliche Vorschau).
+- **Double Key Encryption**. Erfahren Sie mehr über die Aktivierung der Unterstützung für [gekennzeichnete](/microsoft-365/compliance/double-key-encryption) und geschützte Dokumente in SharePoint und OneDrive for Business.
 
 ### <a name="insider-risk-management"></a>Insider-Risikomanagement
 
@@ -82,16 +114,16 @@ Die folgenden Updates für insider risk management wurden im März für die öff
 
 Die folgenden Themen wurden aktualisiert oder hinzugefügt, um diese neuen Features zu unterstützen:
 
-- [Informationen zum Insider-Risikomanagement](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management)
-- [Planen des Insider-Risikomanagements](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-plan)
-- [Erste Schritte mit Insider-Risikomanagementeinstellungen](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-settings)
-- [Erste Schritte mit dem Insider-Risikomanagement](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-configure)
-- [Erstellen und Verwalten von Insider-Risikorichtlinien](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-policies)
-- [Untersuchen von Insider-Risikowarnungen](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-alerts)
-- [Maßnahmen bei Insider-Risikofällen ergreifen](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-cases)
-- [Überprüfen von Aktivitäten mit dem Insider-Risiko-Überwachungsprotokoll](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-audit-log)
-- [Überprüfen von Daten mit dem Inhalts-Explorer für Insider-Risiken](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-content-explorer)
-- [Verwalten des Workflows mit dem Benutzerdashboard](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-users)
+- [Informationen zum Insider-Risikomanagement](/microsoft-365/compliance/insider-risk-management)
+- [Planen des Insider-Risikomanagements](/microsoft-365/compliance/insider-risk-management-plan)
+- [Erste Schritte mit Insider-Risikomanagementeinstellungen](/microsoft-365/compliance/insider-risk-management-settings)
+- [Erste Schritte mit dem Insider-Risikomanagement](/microsoft-365/compliance/insider-risk-management-configure)
+- [Erstellen und Verwalten von Insider-Risikorichtlinien](/microsoft-365/compliance/insider-risk-management-policies)
+- [Untersuchen von Insider-Risikowarnungen](/microsoft-365/compliance/insider-risk-management-alerts)
+- [Maßnahmen bei Insider-Risikofällen ergreifen](/microsoft-365/compliance/insider-risk-management-cases)
+- [Überprüfen von Aktivitäten mit dem Insider-Risiko-Überwachungsprotokoll](/microsoft-365/compliance/insider-risk-management-audit-log)
+- [Überprüfen von Daten mit dem Inhalts-Explorer für Insider-Risiken](/microsoft-365/compliance/insider-risk-management-content-explorer)
+- [Verwalten des Workflows mit dem Benutzerdashboard](/microsoft-365/compliance/insider-risk-management-users)
 
 ### <a name="records-management"></a>Datensatzverwaltung
 
@@ -102,13 +134,13 @@ Die folgenden Themen wurden aktualisiert oder hinzugefügt, um diese neuen Featu
 
 Inhalte wurden in den folgenden Themen hinzugefügt oder aktualisiert:
 
-- [Erste Schritte mit benutzerdefiniertem vertraulichen Informationstyp](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type)
-- [Informationen zu Typen vertraulicher Informationen](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-learn-about)
-- [Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung](https://docs.microsoft.com/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
-- [Erstellen von Benachrichtigungen für genaue Daten match-Aktivitäten](https://docs.microsoft.com/microsoft-365/compliance/sit-edm-notifications-activities)
-- [Entitätsdefinitionen des Typs "Vertraulicher Informationstyp"](https://docs.microsoft.com/microsoft-365/compliance/sensitive-information-type-entity-definitions)
-- [Erstellen eines benutzerdefinierten vertraulichen Informationstyps mithilfe von PowerShell](https://docs.microsoft.com/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
-- [Erstellen eines Schlüsselwörterbuchs](https://docs.microsoft.com/microsoft-365/compliance/create-a-keyword-dictionary)
+- [Erste Schritte mit benutzerdefiniertem vertraulichen Informationstyp](/microsoft-365/compliance/create-a-custom-sensitive-information-type)
+- [Informationen zu Typen vertraulicher Informationen](/microsoft-365/compliance/sensitive-information-type-learn-about)
+- [Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung](/microsoft-365/compliance/create-custom-sensitive-information-types-with-exact-data-match-based-classification)
+- [Erstellen von Benachrichtigungen für genaue Daten match-Aktivitäten](/microsoft-365/compliance/sit-edm-notifications-activities)
+- [Entitätsdefinitionen des Typs "Vertraulicher Informationstyp"](/microsoft-365/compliance/sensitive-information-type-entity-definitions)
+- [Erstellen eines benutzerdefinierten vertraulichen Informationstyps mithilfe von PowerShell](/microsoft-365/compliance/create-a-custom-sensitive-information-type-in-scc-powershell)
+- [Erstellen eines Schlüsselwörterbuchs](/microsoft-365/compliance/create-a-keyword-dictionary)
 
 ### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
 
@@ -122,15 +154,15 @@ Hier sind einige der Änderungen an Microsoft 365 Und Inhalten für den Monat Fe
 
 ### <a name="auditing"></a>Überwachung
 
-- **Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle**. Erfahren Sie mehr über das neue [Dashboard für Überwachungsaufbewahrungsrichtlinien](https://docs.microsoft.com/microsoft-365/compliance/audit-log-retention-policies#manage-audit-log-retention-policies-1).
-- **Durchsuchen des Überwachungsprotokolls**. [Verwenden Sie das PowerShell-Skript, um das Überwachungsprotokoll zu durchsuchen.](https://docs.microsoft.com/microsoft-365/compliance/audit-log-search-script)
+- **Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle**. Erfahren Sie mehr über das neue [Dashboard für Überwachungsaufbewahrungsrichtlinien](/microsoft-365/compliance/audit-log-retention-policies#manage-audit-log-retention-policies-1).
+- **Durchsuchen des Überwachungsprotokolls**. [Verwenden Sie das PowerShell-Skript, um das Überwachungsprotokoll zu durchsuchen.](/microsoft-365/compliance/audit-log-search-script)
 
 ### <a name="data-classification-content-explorer"></a>Inhalts-Explorer für die Datenklassifizierung
 
 Inhalte wurden in den folgenden Themen hinzugefügt oder aktualisiert:
 
-- [Erste Schritte mit dem Inhalts-Explorer](https://docs.microsoft.com/microsoft-365/compliance/data-classification-content-explorer)
-- [Veröffentlichungshinweise zur Datenklassifizierung](https://docs.microsoft.com/microsoft-365/compliance/data-classification-pub-preview-relnotes)
+- [Erste Schritte mit dem Inhalts-Explorer](/microsoft-365/compliance/data-classification-content-explorer)
+- [Veröffentlichungshinweise zur Datenklassifizierung](/microsoft-365/compliance/data-classification-pub-preview-relnotes)
 
 ### <a name="data-loss-prevention"></a>Verhinderung von Datenverlust
 
@@ -211,7 +243,7 @@ Die folgenden Microsoft 365 unterstützen jetzt die Erkennung [](/microsoftteams
 - Vertraulichkeitsbezeichnungen werden jetzt für Us Government Tenants (GCC und GCC-H) unterstützt.
 - Neue [automatische Bezeichnungsunterstützung](sensitivity-labels-office-apps.md) für macOS.
 
-## <a name="december-2020"></a>Dezember 2020
+## <a name="december-2020"></a>Dezember 2020
 
 ### <a name="spotlight-new-content-for-insider-risk-solutions"></a>Spotlight: Neue Inhalte für Insider-Risikolösungen
 
@@ -256,46 +288,3 @@ Die [Rollengruppe Datensatzverwaltung gewährt](get-started-with-records-managem
 
 - [Automatische Bezeichnung von Daten in Azure Purview (Vorschau)](/azure/purview/create-sensitivity-label). Sie können jetzt Vertraulichkeitsbezeichnungen in Azure Purview erstellen und automatisch anwenden, z. B. Dateien in Azure Blob Storage und Datenbankspalten in SQL Server.
 - [Benutzer müssen eine Bezeichnung auf Elemente anwenden.](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) Diese neue Option, die auch als "obligatorische Bezeichnung" bezeichnet wird, erfordert, dass Benutzer eine Vertraulichkeitsbezeichnung unter den jeweiligen Szenarien auswählen und anwenden.
-
-## <a name="november-2020"></a>November 2020
-Nur eine Erinnerung daran, dass wir häufig neue und aktualisierte Features in einem Vorschauzustand veröffentlichen, um zu erfahren, wie sie verwendet werden, damit wir sie optimieren und verbessern können, bevor wir sie für die allgemeine Verfügbarkeit freigeben. Ihr Feedback ist während der Vorschau (und darüber hinaus) wichtig. Teilen Sie uns daher unbedingt mit, was Sie denken, indem Sie die Feedbackkarte unten rechts im Compliance Center öffnen.
-
-![Feedback](../media/Feedback_card_MCC.JPG)
-
-### <a name="spotlight-endpoint-data-loss-prevention-dlp-released"></a>Spotlight: Endpoint Data Loss Prevention (DLP) veröffentlicht
-
-[Endpoint DLP](endpoint-dlp-learn-about.md) erweitert die Aktivitätsüberwachungs- und Schutzfunktionen von DLP auf vertrauliche Informationen auf Windows 10 Geräten. Nachdem Geräte [in das compliance](dlp-configure-endpoints.md) center Microsoft 365 werden, können Sie DLP-Richtlinien einrichten, um die vertraulichen Informationen auf diesen Geräten zu schützen.
-
-### <a name="advanced-ediscovery"></a>Advanced eDiscovery
-
-Um die Verwaltung verschlüsselter Inhalte im eDiscovery-Workflow zu vereinfachen, umfassen [](ediscovery-decryption.md) die eDiscovery-Tools von Microsoft 365 jetzt die Entschlüsselung verschlüsselter Dateien, die an E-Mail-Nachrichten angefügt und an E-Mail-Nachrichten gesendet Exchange. Darüber hinaus werden verschlüsselte Dokumente, die in SharePoint und OneDrive gespeichert sind, in Advanced eDiscovery.
-
-### <a name="compliance-manager"></a>Compliance-Manager
-
-- [Unterstützung für Microsoft 365 Government-Abonnements](compliance-manager.md). Compliance Manager ist jetzt für mäßige und Community (GCC) US Government verfügbar.
-- [Microsoft Compliance Configuration Analyzer for Compliance Manager](compliance-manager-mcca.md). Neues PowerShell-basiertes Tool, mit dem Sie mit Compliance Manager beginnen können, indem Sie die aktuellen Konfigurationen Ihrer Organisation überprüfen und anhand der empfohlenen Microsoft 365 überprüfen.
-- [Neue Vorlagen](compliance-manager-templates-list.md). Es wurden 56 neue Vorlagen hinzugefügt, die insgesamt mehr als 230 Compliance-Manager-Vorlagen zur Verfügung stellen.
-
-### <a name="data-connectors"></a>Datenconnectors
-
-[Fünf neue Connectors in der Vorschau](archiving-third-party-data.md#third-party-data-connectors). Neue Connectors sind Reuters Dealing, Reuters FX, CellTrust, XIP, generische MS-SQL-Datenbank Daten.
-
-### <a name="retention-labels-disposition-review"></a>Aufbewahrungsbezeichnungen (Dispositionsüberprüfung)
-
-Zum Anzeigen von Elementen während einer Dispositionsüberprüfung müssen Benutzer jetzt Mitglieder der Rollengruppen [Inhalts-Explorer-Inhaltsanzeige und Inhalts-Explorer-Listenanzeige sein.](disposition.md#permissions-for-disposition) Obwohl zum Überprüfen von Elementen erforderlich, sind diese Rollengruppen nicht erforderlich, um die Dispositionsüberprüfung abschließen zu können.
-
-### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
-
-- [(Vorschau) Einstellungen für die externe Freigabe für SharePoint Websites](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings). Beim Erstellen einer Bezeichnung, die für Gruppen und Websites verwendet wird, wird eine Option zum Steuern der externen Freigabe für SharePoint websites angezeigt, auf die die Bezeichnung angewendet wurde. Sie können angeben, dass die Freigabe für alle, neue und vorhandene Gäste, nur für vorhandene Gäste oder nur für Benutzer in Ihrer Organisation zulässig ist. Wenn die Bezeichnung angewendet wird, ersetzen die Bezeichnungseinstellungen alle externen Freigabeeinstellungen, die im SharePoint [Admin Center konfiguriert sind.](/sharepoint/change-external-sharing-site)
-- [Entfernen von Bezeichnung und Verschlüsselung aus einem mit Bezeichnungen versehenen Dokument](sensitivity-labels-sharepoint-onedrive-files.md#remove-encryption-for-a-labeled-document). Zum Entfernen einer Bezeichnung und der verschlüsselung, die sie aus einem mit Bezeichnungen versehenen Dokument in SharePoint erzwingt, können globale Administratoren und SharePoint Administratoren das neue `Unlock-SPOSensitivityLabelEncryptedFile` Cmdlet ausführen. Dieses Cmdlet wird auch dann ausgeführt, wenn der Administrator nicht über Zugriffsberechtigungen für die Website oder Datei verfügt oder wenn der Azure Rights Management-Dienst nicht verfügbar ist.
-
-## <a name="october-2020"></a>Oktober 2020
-
-### <a name="advanced-ediscovery"></a>Advanced eDiscovery
-
-[CJK-Sprachunterstützung](ediscovery-cjk-support.md). Advanced eDiscovery unterstützt jetzt Doppel-Byte-Zeichensatzsprachen, die gemeinsam als #A0 (einschließlich vereinfachtes Chinesisch, traditionelles Chinesisch, Japanisch und Koreanisch) bekannt sind. Diese können in mehreren erweiterten Überprüfungssatzszenarien verwendet werden.
-
-### <a name="sensitivity-labels"></a>Vertraulichkeitsbezeichnungen
-
-- [Bezeichnungsbereich](sensitivity-labels.md#label-scopes). Beim Erstellen einer Vertraulichkeitsbezeichnung wird eine neue Option zum Definieren des Bereichs für die Bezeichnung angezeigt. Mit dieser Option können Sie Bezeichnungen nur für Dateien und E-Mails, Container (SharePoint websites und Teams) oder beides konfigurieren.
-- [Dynamische Inhaltsmarkierung](sensitivity-labels-office-apps.md#dynamic-markings-with-variables). Beim Konfigurieren der Inhaltskennzeichnung für eine Vertraulichkeitsbezeichnung können Sie jetzt die dynamischen Variablen wie und in der Textzeichenfolge für Die Kopfzeile, Fußzeile oder `${Item.Label}` `${Item.Location}` Wasserzeichen verwenden.
