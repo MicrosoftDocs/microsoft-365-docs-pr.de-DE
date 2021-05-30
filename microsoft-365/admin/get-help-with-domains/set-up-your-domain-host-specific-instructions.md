@@ -29,16 +29,16 @@ ms.contentlocale: de-DE
 ms.lasthandoff: 05/29/2021
 ms.locfileid: "52706382"
 ---
-# <a name="set-up-your-domain"></a><span data-ttu-id="5a96b-103">Einrichten Ihrer Domäne</span><span class="sxs-lookup"><span data-stu-id="5a96b-103">Set up your domain</span></span>
+# <a name="set-up-your-domain"></a><span data-ttu-id="526d4-103">Einrichten Ihrer Domäne</span><span class="sxs-lookup"><span data-stu-id="526d4-103">Set up your domain</span></span>
 
-<span data-ttu-id="5a96b-104">Um mit der Verwendung einer benutzerdefinierten Domäne (contoso.com) mit Microsoft 365 zu beginnen, müssen Sie Ihre Domäne überprüfen und die DNS-Einträge Ihrer Domäne konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="5a96b-104">To start using a custom domain (contoso.com) with Microsoft 365, you need to verify your domain and configure your domain's DNS records.</span></span> 
+<span data-ttu-id="526d4-104">Um mit der Verwendung einer benutzerdefinierten Domäne (contoso.com) mit Microsoft 365 zu beginnen, müssen Sie Ihre Domäne überprüfen und die DNS-Einträge Ihrer Domäne konfigurieren.</span><span class="sxs-lookup"><span data-stu-id="526d4-104">To start using a custom domain (contoso.com) with Microsoft 365, you need to verify your domain and configure your domain's DNS records.</span></span> 
   
-<span data-ttu-id="5a96b-105">Sie können DNS-Einträge mithilfe der Verwaltungstools auf Ihrem Domänenhost hinzufügen und verwalten oder Microsoft die Kontrolle über Ihre Domänendatensätze geben, und wir richten sie für Sie ein.</span><span class="sxs-lookup"><span data-stu-id="5a96b-105">You can add and manage DNS records using the administrative tools at your domain host, or give Microsoft control of your domain records and we'll set them up for you.</span></span>
+<span data-ttu-id="526d4-105">Sie können DNS-Einträge mithilfe der Verwaltungstools auf Ihrem Domänenhost hinzufügen und verwalten oder Microsoft die Kontrolle über Ihre Domänendatensätze geben, und wir richten sie für Sie ein.</span><span class="sxs-lookup"><span data-stu-id="526d4-105">You can add and manage DNS records using the administrative tools at your domain host, or give Microsoft control of your domain records and we'll set them up for you.</span></span>
 
-## <a name="let-microsoft-365-manage-your-dns-records"></a><span data-ttu-id="5a96b-106">Lassen Microsoft 365 Ihre DNS-Einträge verwalten</span><span class="sxs-lookup"><span data-stu-id="5a96b-106">Let Microsoft 365 manage your DNS records</span></span> 
+## <a name="let-microsoft-365-manage-your-dns-records"></a><span data-ttu-id="526d4-106">Lassen Microsoft 365 Ihre DNS-Einträge verwalten</span><span class="sxs-lookup"><span data-stu-id="526d4-106">Let Microsoft 365 manage your DNS records</span></span> 
 
-<span data-ttu-id="5a96b-107">Erfahren Sie, [wie Sie Namensserver ändern, um Microsoft 365 domänenregistrierungsstelle einrichten.](change-nameservers-at-any-domain-registrar.md)</span><span class="sxs-lookup"><span data-stu-id="5a96b-107">Learn how to [change nameservers to set up Microsoft 365 with any domain registrar](change-nameservers-at-any-domain-registrar.md).</span></span>
+<span data-ttu-id="526d4-107">Erfahren Sie, [wie Sie Namensserver ändern, um Microsoft 365 domänenregistrierungsstelle einrichten.](change-nameservers-at-any-domain-registrar.md)</span><span class="sxs-lookup"><span data-stu-id="526d4-107">Learn how to [change nameservers to set up Microsoft 365 with any domain registrar](change-nameservers-at-any-domain-registrar.md).</span></span>
 
-## <a name="manage-your-own-dns-records"></a><span data-ttu-id="5a96b-108">Verwalten eigener DNS-Einträge</span><span class="sxs-lookup"><span data-stu-id="5a96b-108">Manage your own DNS records</span></span>
+## <a name="manage-your-own-dns-records"></a><span data-ttu-id="526d4-108">Verwalten eigener DNS-Einträge</span><span class="sxs-lookup"><span data-stu-id="526d4-108">Manage your own DNS records</span></span>
 
-<span data-ttu-id="5a96b-109">Anweisungen finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter.](create-dns-records-at-any-dns-hosting-provider.md)</span><span class="sxs-lookup"><span data-stu-id="5a96b-109">For instructions, see [Create DNS records at any DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md)</span></span>
+<span data-ttu-id="526d4-109">Anweisungen finden Sie unter [Erstellen von DNS-Einträgen bei einem beliebigen DNS-Hostinganbieter.](create-dns-records-at-any-dns-hosting-provider.md)</span><span class="sxs-lookup"><span data-stu-id="526d4-109">For instructions, see [Create DNS records at any DNS hosting provider](create-dns-records-at-any-dns-hosting-provider.md)</span></span>
