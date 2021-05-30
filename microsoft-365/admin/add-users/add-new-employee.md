@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9cdfa29d-7681-4af2-a79d-3e72e7ab9778
 description: Fügen Sie neue Mitarbeiter zu Microsoft 365 business for email, Skype und Office hinzu.
-ms.openlocfilehash: 572f49170aecba0e8cbb57f9e365b286ee18cb67
-ms.sourcegitcommit: 72795ec56a7c4db863dcaaff5e9f7c41c653fda8
+ms.openlocfilehash: 2dbdb9cb931b95241b0bd3599fdae154ab72ea24
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52023713"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706190"
 ---
 # <a name="add-a-new-employee-to-microsoft-365"></a>Hinzufügen eines neuen Mitarbeiters zu Microsoft 365
 
@@ -86,8 +86,7 @@ Hier finden Sie einen kurzen Überblick über die ersten Schritte:
 |Führen Sie die OneDrive for Business aus, um zu erfahren, wie Sie Ihre Dokumente, Präsentationen und Tabellen in der Cloud speichern und organisieren.  <br/> |Behalten Sie Ihre geschäftsbezogenen Dokumente in der Cloud bei, indem Sie OneDrive for Business. Sie können immer zu Ihren Inhalten zugreifen, auch wenn Sie bei Microsoft 365 computer angemeldet sind. [Sehen Sie sich ein Video an, um zu erfahren, wie Sie Ihre OneDrive for Business](https://support.microsoft.com/office/b30da4eb-ddd2-44b6-943b-e6fbfc6b8dde) <br/><br/> **Training:** [OneDrive for Business Training](https://support.microsoft.com/office/1f608184-b7e6-43ca-8753-2ff679203132) (Select OneDrive for Business).  <br/> |
 |Schließen Sie die SharePoint Online-Schulung ab, um Sie bei der Zusammenarbeit mit Kollegen und beim Freigeben von Inhalten zu unterstützen.  <br/> |Der beste Ort, um Dokumente zu behalten, auf die Ihre Kollegen auch zugreifen, finden Sie in SharePoint Online.  <br/> <br/>**Schulung:** [Video: Zusammenarbeit mit Teaminhalten mithilfe von SharePoint Online](https://support.microsoft.com/office/c17b6824-cc22-478f-8757-497cc6b57121) <br/><br/> **Hier finden Sie:** Wie verwendet Ihre Organisation SharePoint Online und welche Art von Dokumenten dort gespeichert wird. Außerdem, welche Dokumente in einem OneDrive for Business.  <br/> |
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Entfernen eines ehemaligen Mitarbeiters aus Microsoft 365](remove-former-employee.md)
-  
-[Hinzufügen von Benutzern und gleichzeitiges Zuweisen von Lizenzen65](add-users.md)
+[Entfernen eines ehemaligen Mitarbeiters aus Microsoft 365](remove-former-employee.md) (Artikel)\
+[Hinzufügen von Benutzern und gleichzeitiges Zuweisen von Lizenzen65](add-users.md) (Artikel)

@@ -20,15 +20,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Ihre Rechnung anzeigen, herunterladen oder drucken.
-ms.openlocfilehash: 81b8e2551b7c5cfe1ade205d5b1b82b481e04273
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Erfahren Sie, wie Sie Ihr monatliches Microsoft 365 Business, indem Sie Ihre Rechnung anzeigen, herunterladen oder drucken.
+ms.openlocfilehash: 0d323ca79153920fd4b20361729994d4162c2d98
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580342"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705506"
 ---
 # <a name="view-download-or-print-your-bill-for-microsoft-365"></a>Anzeigen, Herunterladen oder Drucken Ihrer Rechnung für Microsoft 365
+
+## <a name="watch-view-download-or-print-your-bill"></a>Watch: Anzeigen, Herunterladen oder Drucken Ihrer Rechnung
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FGmo?autoplay=false]
 

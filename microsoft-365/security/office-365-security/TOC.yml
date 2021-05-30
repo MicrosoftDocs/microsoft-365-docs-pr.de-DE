@@ -20,8 +20,6 @@
           items:
             - name: Exchange Online Protection im Überblick
               href: exchange-online-protection-overview.md
-            - name: EOP-Funktionen
-              href: eop-features.md
             - name: Nachrichtenfluss in EOP
               href: mail-flow-in-eop.md
             - name: Quarantäne

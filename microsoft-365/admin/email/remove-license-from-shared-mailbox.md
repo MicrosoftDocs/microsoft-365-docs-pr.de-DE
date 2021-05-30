@@ -20,13 +20,13 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: 'Entfernen Sie die Lizenz aus einem freigegebenen Postfach, um sie einem anderen Benutzer zuzuordnen. '
-ms.openlocfilehash: d552cfb77ff0ab2853939c6cb25fd4737f8c17d3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: 'Entfernen Sie eine Lizenz aus einem freigegebenen Postfach, um sie einem anderen Benutzer zuzuordnen, oder geben Sie die Lizenz zurück, damit Sie nicht dafür bezahlen. '
+ms.openlocfilehash: d33487879506402c5f0de2f7942c3299c5698b73
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537583"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706286"
 ---
 # <a name="remove-a-license-from-a-shared-mailbox"></a>Entfernen einer Lizenz aus einem freigegebenen Postfach
 
@@ -74,14 +74,10 @@ Für freigegebene Postfächer ist in der Regel keine Lizenz erforderlich. Befolg
 
 6. Sie zahlen weiterhin für die Lizenz. Um die Zahlung zu beenden, [entfernen Sie die Lizenz aus Ihrem Abonnement.](../../commerce/licenses/buy-licenses.md)
 
-## <a name="related-articles"></a>Verwandte Artikel
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Informationen zu freigegebenen Postfächern](about-shared-mailboxes.md)
-
-[Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md)
-
-[Konfigurieren eines freigegebenen Postfachs](configure-a-shared-mailbox.md)
-
-[Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach](convert-user-mailbox-to-shared-mailbox.md)
-
-[Beheben von Problemen mit freigegebenen Postfächern](resolve-issues-with-shared-mailboxes.md)
+[Informationen zu freigegebenen Postfächern](about-shared-mailboxes.md) (Artikel)\
+[Erstellen eines freigegebenen Postfachs](create-a-shared-mailbox.md) (Artikel)\
+[Konfigurieren eines freigegebenen Postfachs](configure-a-shared-mailbox.md) (Artikel)\
+[Konvertieren eines Benutzerpostfachs in ein freigegebenes Postfach](convert-user-mailbox-to-shared-mailbox.md) (Artikel)\
+[Beheben von Problemen mit freigegebenen Postfächern](resolve-issues-with-shared-mailboxes.md) (Artikel)

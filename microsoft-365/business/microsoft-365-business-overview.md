@@ -28,13 +28,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
-description: Erfahren Sie mehr über Microsoft 365 Business Premium, einen Abonnementdienst, der Office-Produktivitäts-Apps und erweiterten Schutz für Ihr Unternehmen gegen Cyberbedrohungen umfasst.
-ms.openlocfilehash: a355c9856ead4a66f6876cc7cb5aa8eb469d7f12
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Erfahren Sie Microsoft 365 Business Premium, einen Abonnementdienst, der Office und erweiterten Schutz vor Cyberbedrohungen umfasst.
+ms.openlocfilehash: e4a182c5dd5444392486dd137e70361e880534bd
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244854"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705520"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Überblick über Microsoft 365 Business Premium
 
@@ -42,7 +42,7 @@ ms.locfileid: "52244854"
 
 Microsoft 365 Business Premium (vormals Microsoft 365 Business) ist ein umfassender Abonnementdienst für Unternehmen mit weniger als 300 Mitarbeitern. Er enthält Ihre bevorzugten Office-Produktivitäts-Apps und -Dienste sowie Tools für die Zusammenarbeit wie Microsoft Teams mit erweiterten Funktionen für Sicherheit und Geräteverwaltung.
 
-Schauen Sie sich dieses Video an, um einen schnellen Überblick über Microsoft 365 Business Premium zu erhalten.<br><br>
+## <a name="watch-what-is-microsoft-365-business-premium"></a>Watch: Was ist Microsoft 365 Business Premium
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2mhaA] 
   
@@ -105,7 +105,7 @@ So werden **Ihre Geräte gesichert**:
 
 Eine vollständige Liste der Sicherheitsfunktionen finden Sie unter [Microsoft 365 Business Premium Sicherheitsfeatures](security-features.md). Nachdem Sie [Microsoft 365 Business Premium](set-up.md) eingerichtet haben, erfahren Sie, wie Sie [den Schutz vor Bedrohungen erhöhen](increase-threat-protection.md) und [Compliance-Funktionen einrichten](set-up-compliance.md) können, um Ihre ersten Schritte mit den Sicherheitsfunktionen zu machen, die nicht Teil der geführten Einrichtung sind. Lesen Sie auch die [Top 10 Methoden zum Sichern von Office 365 und Microsoft 365 Business Pläne-Pläne](/office365/admin/security-and-compliance/secure-your-business-data), um einen guten Überblick darüber zu erhalten, wie Sie Schutzmaßnahmen gegen Internetkriminelle und Hacker einrichten können.
 
-## <a name="get-microsoft-365-business-premium"></a>Holen Sie sich Microsoft 365 Business Premium
+## <a name="next-steps"></a>Nächste Schritte
 
 - Wenn Sie über einen Partner verfügen, erhält dieser Microsoft 365 Business Premium: [Abrufen von Microsoft 365 Business Premium bei Microsoft über Microsoft Partner Center](get-microsoft-365-business.md).
 
