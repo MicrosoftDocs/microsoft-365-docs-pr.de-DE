@@ -18,6 +18,8 @@
           href: microsoft-365-security-mde-redirection.md
         - name: Umleitung von Defender für Office 365 zum Microsoft 365 Security Center
           href: microsoft-365-security-mdo-redirection.md
+        - name: Microsoft 365 Defender-Integration in Azure Sentinel
+          href: microsoft-365-defender-integration-with-azure-sentinel.md
         - name: Vorschaufeatures
           href: preview.md
         - name: Behandeln von Problemen
@@ -110,15 +112,15 @@
                   href: first-incident-prepare.md
                 - name: Schritt 1. Triage und Analyse
                   href: first-incident-analyze.md
-                - name: "Schritt\_2. Korrigieren"
+                - name: Schritt 2. Korrigieren
                   href: first-incident-remediate.md
-                - name: "Schritt\_3: Überprüfung"
+                - name: 'Schritt 3: Überprüfung'
                   href: first-incident-post.md
                 - name: Zusätzliche Vorfallbeispiele
                   items:
                     - name: Phishing-E-Mail
                       href: first-incident-path-phishing.md
-                    - name: Identität
+                    - name: Identity
                       href: first-incident-path-identity.md
             - name: Playbooks zur Reaktion auf Vorfälle
               href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
