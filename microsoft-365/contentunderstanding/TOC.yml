@@ -32,6 +32,8 @@
       href: create-a-form-processing-model.md
     - name: Anwenden einer Aufbewahrungsbezeichnung
       href: apply-a-retention-label-to-a-model.md
+    - name: Anwenden einer Vertraulichkeitsbezeichnung
+      href: apply-a-sensitivity-label-to-a-model.md
     - name: Modellverwendungsanalysen
       href: model-usage-analytics.md
     - name: Nutzung der Terminologiespeichertaxonomie beim Erstellen eines Extraktors
