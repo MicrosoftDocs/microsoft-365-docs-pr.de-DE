@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Erfahren Sie mehr über die maximale Anzahl von Richtlinien und Elementen pro Richtlinie für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien.
-ms.openlocfilehash: 007ca6eec50b243e1b820938ffa67553d7882c7b
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 1ee2d07a42aaf4dff45ae22e9dfc005b3c4593d9
+ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107657"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52698964"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Einschränkungen für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien
 
@@ -33,13 +33,15 @@ Wenn Sie [Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien](ret
 
 ## <a name="maximum-number-of-policies-per-tenant"></a>Maximale Anzahl von Richtlinien pro Mandant
 
-Ein einzelner Mandant kann maximal 10.000 Richtlinien (beliebige Konfiguration) besitzen. Diese maximale Anzahl umfasst die verschiedenen Richtlinien für die Aufbewahrung und andere Richtlinien für Compliance wie z. B. DLP-Richtlinien.
+Ein einzelner Mandant kann maximal 10.000 Richtlinien (beliebige Konfiguration) besitzen. Diese maximale Anzahl umfasst die verschiedenen Richtlinien für die Aufbewahrung und andere Richtlinien für Compliance, beispielsweise DLP-Richtlinien, Informationsbarrieren, eDiscovery-Aufbewahrungen und Vertraulichkeitsbezeichnungen.
 
-Maximale Anzahl von Richtlinien für die Aufbewahrung pro Workload:
+Innerhalb dieses Grenzwertes von 10 000 Richtlinien gibt es ebenfalls einige Grenzwerte hinsichtlich der maximalen Anzahl von Richtlinien für die Aufbewahrung pro Workload:
 
 - Exchange Online (beliebige Konfiguration): 1.800
 - SharePoint oder OneDrive: (alle Websites automatisch enthalten): 13
 - SharePoint oder OneDrive (bestimmte Speicherorte eingeschlossen oder ausgeschlossen): 2.600
+
+Obwohl Aufbewahrungsrichtlinien für Microsoft Teams und Yammer Postfächer zum Speichern von Daten für Aufbewahrungszwecke verwenden, schließt die maximale Anzahl von Richtlinien für Exchange Online die Aufbewahrungsrichtlinien für Teams und Yammer aus.
 
 ## <a name="maximum-number-of-items-per-policy"></a>Höchstzahl der Einträge pro Richtlinie
 
@@ -47,7 +49,7 @@ Wenn Sie die optionale Konfiguration verwenden, um Ihre Aufbewahrungseinstellung
 
 Maximale Anzahl von Elementen pro Aufbewahrungsrichtlinie:
 
-  - 1.000 Postfächer (Benutzerpostfächer oder Gruppenpostfächer)
+  - 1.000 Postfächer (Benutzerpostfächer oder Gruppenpostfächer)
   - 1.000 Microsoft 365-Gruppen
   - 1.000 Benutzer für private Teams-Chats
   - 100 Websites (OneDrive oder SharePoint)
@@ -65,18 +67,18 @@ Die folgenden Beispiele bieten ein paar Entwurfslösungen für Fälle, in denen 
 
 Exchange-Beispiel:
 
-- **Voraussetzung**: In einer Organisation, die mehr als 40.000 Benutzerpostfächer hat, müssen die E-Mails der meisten Benutzer für 7 Jahre aufbewahrt werden, aber für eine Untermenge identifizierter Benutzer (425) müssen die E-Mails nur 5 Jahre aufbewahrt werden.
+- **Voraussetzung**: In einer Organisation, die mehr als 40.000 Benutzerpostfächer hat, müssen die E-Mails der meisten Benutzer für 7 Jahre aufbewahrt werden, aber für eine Untermenge identifizierter Benutzer (425) müssen die E-Mails nur 5 Jahre aufbewahrt werden.
 
-- **Lösung**: Erstellen Sie eine Aufbewahrungsrichtlinie für Exchange-E-Mail mit einem Aufbewahrungszeitraum von 7 Jahren, und schließen Sie die Untermenge der Benutzer aus. Erstellen Sie dann eine zweite Aufbewahrungsrichtlinie für Exchange-E-Mail mit einem Aufbewahrungszeitraum von 5 Jahren, und schließen Sie die Untermenge der Benutzer ein. 
+- **Lösung**: Erstellen Sie eine Aufbewahrungsrichtlinie für Exchange-E-Mail mit einem Aufbewahrungszeitraum von 7 Jahren, und schließen Sie die Untermenge der Benutzer aus. Erstellen Sie dann eine zweite Aufbewahrungsrichtlinie für Exchange-E-Mail mit einem Aufbewahrungszeitraum von 5 Jahren, und schließen Sie die Untermenge der Benutzer ein. 
     
     In beiden Fällen liegt die Anzahl der ein- und ausgeschlossenen Benutzer unter der maximalen Anzahl angegebener Postfächer für eine einzelne Richtlinie, und die Untermenge der Benutzer muss explizit aus der ersten Richtlinie ausgeschlossen werden, weil sie einen längeren [Aufbewahrungszeitraum](retention.md#the-principles-of-retention-or-what-takes-precedence) als die zweite Richtlinie hat. Wäre für die Untermenge von Benutzern eine Aufbewahrungsrichtlinie mit längerem Aufbewahrungszeitraum erforderlich, müssten Sie sie nicht aus der ersten Richtlinie ausschließen.
      
-    Bei dieser Lösung wird, wenn ein neuer Benutzer der Organisation beitritt, dessen Postfach automatisch in die erste Richtlinie für 7 Jahre aufgenommen, was keine Auswirkungen auf die maximale Anzahl unterstützter Benutzer hat. Neue Benutzer, für die ein Aufbewahrungszeitraum von 5 Jahren erforderlich ist, erhöhen jedoch die Ein- und Ausschlussanzahl, deren Grenzwert bei 1.000 erreicht würde.
+    Bei dieser Lösung wird, wenn ein neuer Benutzer der Organisation beitritt, dessen Postfach automatisch in die erste Richtlinie für 7 Jahre aufgenommen, was keine Auswirkungen auf die maximale Anzahl unterstützter Benutzer hat. Neue Benutzer, für die ein Aufbewahrungszeitraum von 5 Jahren erforderlich ist, erhöhen jedoch die Ein- und Ausschlussanzahl, deren Grenzwert bei 1.000 erreicht würde.
 
 SharePoint-Beispiel:
 
-- **Voraussetzung**: Eine Organisation hat mehrere Tausend SharePoint-Sites, aber nur 2.000 Sites erfordern einen Aufbewahrungszeitraum von 10 Jahren, und 8.000 Sites erfordern einen Aufbewahrungszeitraum von 4 Jahren.
+- **Voraussetzung**: Eine Organisation hat mehrere Tausend SharePoint-Sites, aber nur 2.000 Sites erfordern einen Aufbewahrungszeitraum von 10 Jahren, und 8.000 Sites erfordern einen Aufbewahrungszeitraum von 4 Jahren.
 
-- **Lösung**: Erstellen Sie 20 Aufbewahrungsrichtlinien für SharePoint mit einem Aufbewahrungszeitraum von 10 Jahren, die 100 spezifische Sites enthalten, und erstellen Sie 80 Aufbewahrungsrichtlinien für SharePoint mit einem Aufbewahrungszeitraum von 4 Jahren, die 100 spezifische Sites enthalten.
+- **Lösung**: Erstellen Sie 20 Aufbewahrungsrichtlinien für SharePoint mit einem Aufbewahrungszeitraum von 10 Jahren, die 100 spezifische Sites enthalten, und erstellen Sie 80 Aufbewahrungsrichtlinien für SharePoint mit einem Aufbewahrungszeitraum von 4 Jahren, die 100 spezifische Sites enthalten.
     
-    Da Sie nicht alle SharePoint-Sites aufbewahren müssen, müssen Sie Aufbewahrungsrichtlinien erstellen, die die spezifischen Sites angeben. Da eine Aufbewahrungsrichtlinie nicht mehr als 100 angegebene Sites unterstützt, müssen Sie mehrere Richtlinien für die zwei Aufbewahrungszeiträume erstellen. Diese Aufbewahrungszeiträume belegen die maximale Anzahl eingeschlossener Sites, weshalb die nächste neue Site, die aufbewahrt werden muss, eine neue Aufbewahrungsrichtlinie erfordern würde, unabhängig vom Aufbewahrungszeitraum.
+    Da Sie nicht alle SharePoint-Sites aufbewahren müssen, müssen Sie Aufbewahrungsrichtlinien erstellen, die die spezifischen Sites angeben. Da eine Aufbewahrungsrichtlinie nicht mehr als 100 angegebene Sites unterstützt, müssen Sie mehrere Richtlinien für die zwei Aufbewahrungszeiträume erstellen. Diese Aufbewahrungszeiträume belegen die maximale Anzahl eingeschlossener Sites, weshalb die nächste neue Site, die aufbewahrt werden muss, eine neue Aufbewahrungsrichtlinie erfordern würde, unabhängig vom Aufbewahrungszeitraum.

@@ -1,8 +1,9 @@
 ---
 title: Unterschied zwischen Dokumentverständnis- und Formularverarbeitungsmodellen
-ms.author: efrene
-author: efrene
+ms.author: chucked
+author: chuckedmonson
 manager: pamgreen
+ms.reviewer: lauriellis
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -12,15 +13,14 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Beschreibung des Unterschieds zwischen Dokumentverständnis- und Formularverarbeitungsmodellen
-ms.openlocfilehash: f12cc46e1ffcbc610f50ba327e22ad46a2591521
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: f19017ce8b748644177ac00f4daf7cb29ad522c6
+ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222269"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52706510"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Unterschied zwischen Dokumentverständnis- und Formularverarbeitungsmodellen 
-
 
 Das Inhaltsverständnis-Feature (Content Understanding) in Microsoft SharePoint Syntex ermöglicht es Ihnen, in SharePoint-Dokumentbibliotheken hochgeladene Dokumente zu identifizieren und zu klassifizieren sowie relevante Informationen aus jeder Datei zu extrahieren.  Wenn Dateien beispielsweise in eine SharePoint-Dokumentbibliothek hochgeladen werden, werden alle Dateien, die als *Aufträge* erkannt werden, als solche klassifiziert und anschließend in einer benutzerdefinierten Dokumentbibliotheksansicht angezeigt. Darüber hinaus können aus jeder Datei bestimmte Informationen (z. B. *Auftragsnummer* und *Gesamtbetrag*) abgerufen und als Spalte in Ihrer Dokumentbibliotheksansicht angezeigt werden. 
 
@@ -36,16 +36,14 @@ Beide Modelle werden in der Regel für den gleichen Zweck verwendet, doch die un
 > [!NOTE]
 > Weitere Informationen zu Beispielszenarien für Formularverarbeitung und Dokumentverständnis finden Sie unter [SharePoint Syntex – Leitfaden für die ersten Schritte](./adoption-getstarted.md).
 
-
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Strukturierte, unstrukturierte und teilstrukturierte Inhalte
 
-Verwenden Sie Dokumentverständnismodelle, um Daten aus unstrukturierten Dokumenten (z. B. Briefen oder Verträgen) zu identifizieren und zu extrahieren, bei denen sich die Textentitäten, die Sie extrahieren möchten, in Sätzen oder bestimmten Bereichen des Dokuments befinden. So könnte beispielsweise ein unstrukturiertes Dokument ein Vertragsverlängerungsdokument sein, das auf unterschiedliche Weise verfasst sein kann. Allerdings enthält der Text jedes Vertragsverlängerungsdokuments übereinstimmende Informationen, z. B. die Textzeichenfolge *Startdatum Dienst* und dann ein bestimmtes Datum.
+Verwenden Sie Dokumentverständnismodelle, um Daten aus unstrukturierten Dokumenten (z. B. Briefen oder Verträgen) zu identifizieren und zu extrahieren, bei denen sich die Textentitäten, die Sie extrahieren möchten, in Sätzen oder bestimmten Bereichen des Dokuments befinden. So könnte beispielsweise ein unstrukturiertes Dokument ein Vertragsverlängerungsdokument sein, das auf unterschiedliche Weise verfasst sein kann. Allerdings enthält der Text jedes Vertragsverlängerungsdokuments übereinstimmende Informationen, z. B. die Textzeichenfolge *Startdatum Dienst* und dann ein bestimmtes Datum.
 
-Verwenden Sie Formularverarbeitungsmodelle, um Dateien zu identifizieren und Daten aus strukturierten oder teilstrukturierten Dokumenten wie Formularen oder Rechnungen zu extrahieren. Formularverarbeitungsmodelle werden trainiert, den Aufbau eines Formulars anhand von Beispieldokumenten zu erkennen, und lernen, nach den Daten zu suchen, die aus ähnlichen Orten extrahiert werden sollen. Formulare weisen normalerweise einen strukturierteren Aufbau auf, in dem sich Entitäten an der selben Stelle befinden (beispielsweise eine Sozialversicherungsnummer in einem Steuerformular)
+Verwenden Sie Formularverarbeitungsmodelle, um Dateien zu identifizieren und Daten aus strukturierten oder halbstrukturierten Dokumenten, wie z. B. Formularen oder Rechnungen, zu extrahieren. Formularverarbeitungsmodelle werden trainiert, das Layout eines Formulars anhand von Beispieldokumenten zu erkennen, und lernen, nach den Daten zu suchen, die aus ähnlichen Orten extrahiert werden sollen. Formulare weisen normalerweise einen strukturierteren Aufbau auf, in dem sich Entitäten an der gleichen Stelle befinden (beispielsweise eine Sozialversicherungsnummer in einem Steuerformular).
 
 > [!NOTE]
 > Um ein Dokumentverständnismodell erstellen oder ein solches auf eine SharePoint-Dokumentbibliothek anwenden zu können, benötigen Sie Zugang zu eine Inhaltscenter-Website. 
-
 
 ## <a name="where-models-are-created"></a>Wo die Modelle erstellt werden
 
@@ -72,13 +70,13 @@ Verwenden Sie die folgende Tabelle, um zu verstehen, wann Sie die Formularverarb
 
 | Feature | Formularverarbeitung | Dokumentverständnis |
 | ------- | ------- | ------- |
-| Modelltyp – wann ist welcher zu verwenden | Wird für semistrukturierte Dateiformate verwendet, beispielsweise PDFs für Formularinhalte wie Rechnungen oder Bestellungen, bei denen das Layout und die Formatierung ähnlich sind.  | Wird für halbstrukturierte Dateiformate verwendet, beispielsweise für Office-Dokumente, bei denen es Unterschiede im Layout gibt, aber dennoch ähnliche Informationen extrahiert werden sollen. |
+| Modelltyp – wann ist welcher zu verwenden | Wird für semistrukturierte Dateiformate verwendet, beispielsweise PDFs für Formularinhalte wie Rechnungen oder Bestellungen, bei denen das Layout und die Formatierung ähnlich sind.  | Wird für halbstrukturierte Dateiformate verwendet, beispielsweise für Office-Dokumente, bei denen es Unterschiede im Layout gibt, aber dennoch ähnliche Informationen extrahiert werden sollen. |
 | Modellbildung | Im KI-Generator erstelltes Modell mit nahtlosem Zugriff aus der SharePoint-Dokumentenbibliothek.| In SharePoint erstelltes Modell auf einer neuen Website – dem Inhaltscenter. |
 | Klassifizierungstyp| Einstellbarer Klassifizierer, der verwendet wird, um dem System Hinweise zu geben, welche Daten zu extrahieren sind.| Trainierbarer Klassifizierer mit optionalen Extraktoren, der mit Hilfe von maschinellem Lernen festlegt, an welcher Stelle des Dokuments welche Daten zu extrahieren sind.|
 | Speicherorte | Für eine einzige Dokumentbibliothek trainiert.| Kann auf mehrere Bibliotheken angewendet werden.|
 | Unterstützte Dateitypen| Training im Format PDF, JPG, PNG, insgesamt 50 MB und 500 Seiten.| Training auf 5–10 PDF-, Office- oder E-Mail-Dateien, einschließlich negativer Beispiele.<br>Office-Dateien werden bei 64k Zeichen abgeschnitten. OCR-gescannte Dateien sind auf 20 Seiten begrenzt.|
 | Integrieren mit verwalteten Metadaten | Nein | Ja, durch das Training der Entitätsextraktionsfunktion, die sich auf ein konfiguriertes verwaltetes Metadatenfeld bezieht.|
-| Integration von Compliance-Features, wenn Microsoft Information Protection aktiviert ist | Veröffentlichte Aufbewahrungsbezeichnungen festlegen.<br>Vertraulichkeitsbezeichnungen können bald eingestellt werden. | Veröffentlichte Aufbewahrungsbezeichnungen festlegen.<br>Vertraulichkeitsbezeichnungen können bald eingestellt werden. |
+| Integration von Compliance-Features, wenn Microsoft Information Protection aktiviert ist | Veröffentlichte Aufbewahrungsbezeichnungen festlegen.<br>Vertraulichkeitsbezeichnungen können bald eingestellt werden. | Veröffentlichte Aufbewahrungsbezeichnungen festlegen.<br>Veröffentlichte Vertraulichkeitsbezeichnungen festlegen. |
 | Unterstützte Regionen| Die Formularverarbeitung basiert auf der Power-Platform. Informationen zur globalen Verfügbarkeit von Power-Platform und AI Builder finden Sie unter [Verfügbarkeit von Power-Platform](https://dynamics.microsoft.com/geographic-availability/). | In allen Regionen verfügbar.|
 | Transaktionskosten | Verwendet AI Builder-Kreditpunkte.<br>Kreditpunkte können in Stapeln von 1 Mio. gekauft werden.<br>Beim Kauf von 300+ SharePoint Syntex Lizenzen sind 1 Mio. Kreditpunkte enthalten.<br>1 Mio. Kreditpunkte ermöglichen die Verarbeitung von 2000 Dateiseiten.<br>| Nicht zutreffend |
 | Kapazität | Verwendet die Standard-Power Platform-Umgebung (benutzerdefinierte Umgebungen mit unterstützter Datenverse-Datenbank). | Hat keine Kapazitätsbeschränkungen.|

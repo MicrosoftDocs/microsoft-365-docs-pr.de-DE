@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 recommendations: false
 description: Implementieren Sie die Microsoft-Informationsgovernance-Funktionen, um Ihre Daten mit Blick auf die Einhaltung von Compliance-Vorschriften oder behördlichen Anforderungen zu kontrollieren.
-ms.openlocfilehash: 304b4e57702c55242e49fae7fdf4a36e9b2f7cdb
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: a62b1a20aa07c8b5d147fd24e3867c4d4c50174e
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244564"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683535"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Microsoft-Informationsgovernance in Microsoft 365
 
@@ -30,9 +30,9 @@ Verwenden Sie die Microsoft Information Governance (MIG)-Funktionen, um Ihre Dat
 
 ![Kontrollieren Sie Ihre Daten – Informationsverwaltung und Datensatzverwaltung](../media/information-governance-records-management.png)
 
-Wollen Sie Ihre Daten schützen? Erfahren Sie mehr in [Microsoft Information Protection in Microsoft 365](information-protection.md).
+Wollen Sie Ihre Daten schützen? Erfahren Sie mehr in [Microsoft Information Protection in Microsoft 365](information-protection.md).
 
-Um Sie bei der Einhaltung der Datenschutzbestimmungen zu unterstützen, haben wir einen Workflow entwickelt, der Sie durch einen End-to-End-Prozess zur Planung und Implementierung von Funktionen in Microsoft 365 führt, einschließlich sicherem Zugriff, Bedrohungsschutz, Informationsschutz und Data Governance. Weiter Informationen finden Sie unter [Bereitstellen des Informationsschutzes für Datenschutzbestimmungen mit Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
+Um Sie bei der Einhaltung der Datenschutzbestimmungen zu unterstützen, haben wir einen Workflow entwickelt, der Sie durch einen End-to-End-Prozess zur Planung und Implementierung von Funktionen in Microsoft 365 führt, einschließlich sicherem Zugriff, Bedrohungsschutz, Informationsschutz und Data Governance. Weitere Informationen finden Sie unter [Bereitstellen des Datenschutzes für Datenschutzbestimmungen mit Microsoft 365](../solutions/information-protection-deploy.md) (aka.ms/m365dataprivacy). 
 
 ## <a name="information-governance"></a>Informationsverwaltung
 
@@ -52,3 +52,7 @@ So verwalten Sie hochwertige Inhalte für gesetzliche, geschäftliche oder behö
 |Funktion|Welches Probleme löst es für Sie?|Erste Schritte|
 |:------|:------------|---------------------|:----------------------------|
 |[Datensatzverwaltung](records-management.md)| Eine einheitliche Lösung für E-Mails und Dokumente, die Aufbewahrungspläne und -anforderungen in einen Ablageplan integriert, der den gesamten Lebenszyklus Ihrer Inhalte mit der Deklaration, Aufbewahrung und Löschung von Datensätzen unterstützt. <br /><br />Beispielszenario: [Löschen von Datensätzen](disposition.md#disposition-of-records)|[Erste Schritte mit der Datensatzverwaltung](get-started-with-records-management.md) |
+
+## <a name="licensing-requirements"></a>Lizenzierungsanforderungen
+
+Die Lizenzanforderungen für Microsoft Information Governance hängen von den von Ihnen verwendeten Szenarien und Features ab, anstatt von Lizenzanforderungen für jede auf dieser Seite aufgeführten und festgelegten Features. Informationen zu Ihren Lizenzanforderungen und -optionen finden Sie in den Abschnitten [Information Governance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) und [Datensatzverwaltung](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) in der Microsoft 365-Lizenzdokumentation. Laden Sie das zugehörige PDF oder Excel herunter.

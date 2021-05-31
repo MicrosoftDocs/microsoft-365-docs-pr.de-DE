@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 103f940c-0468-4e1a-b527-cc8ad13a5ea6
 description: 'Für Administratoren: Sie erfahren, wie Sie über den Netzwerkupload einen Massenimport mehrerer PST-Dateien in Benutzerpostfächer in Microsoft 365 ausführen.'
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6ff645589337260cd8e29d1e1d066abdf60c1f1a
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: ebbc9b080bf42ef309741dc8bfa4283df9776902
+ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280921"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52683986"
 ---
 # <a name="use-network-upload-to-import-your-organizations-pst-files-to-microsoft-365"></a>Verwenden Sie Netzwerkuploads zum Importieren von PST-Dateien Ihrer Organisation in Microsoft 365
 
@@ -37,7 +37,7 @@ Nachfolgend finden Sie die Schritt-für-Schritt-Anleitungen zum Ausführen eines
 
 [Schritt 2: Hochladen Ihrer PST-Dateien in Microsoft 365](#step-2-upload-your-pst-files-to-office-365)
 
-[(Optional) Schritt 3: Anzeigen einer Liste der PST-Dateien, die hochgeladen wurden](#optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365)
+[(Optional) Schritt 3: Anzeigen einer Liste der PST-Dateien, die hochgeladen wurden](#optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365)
 
 [Schritt 4: Erstellen der PST-Importzuordnungsdatei](#step-4-create-the-pst-import-mapping-file)
 
@@ -51,7 +51,7 @@ Sie müssen Schritt 1 nur einmal ausführen, um PST-Dateien in Microsoft 365-Pos
   
 - Ihnen muss die Rolle für den Postfachimport/-export in Exchange Online zugewiesen werden, damit Sie PST-Dateien in Microsoft 365-Postfächer importieren können. Standardmäßig ist diese Rolle keiner Rollengruppe in Exchange Online zugewiesen. Sie können die Rolle „Postfachimport/-export“ zur Rollengruppe „Organisationsverwaltung“ hinzufügen. Oder Sie erstellen eine Rollengruppe, weisen die Rolle „Postfachimport/-export“ zu und fügen sich dann selbst als Mitglied hinzu. Weitere Informationen finden Sie im Abschnitt "Hinzufügen einer Rolle zu einer Rollengruppe" oder "Erstellen einer Rollengruppe" in [Verwalten von Rollengruppen](/Exchange/permissions-exo/role-groups).
 
-    Außerdem muss eine der folgenden Bedingungen erfüllt sein, um Importaufträge im Security & Compliance Center erstellen zu können:
+    Außerdem muss eine der folgenden Bedingungen erfüllt sein, um Importaufträge im Microsoft 365 Compliance Center erstellen zu können:
 
   - In Exchange Online muss Ihnen die Rolle „E-Mail-Empfänger“ zugewiesen werden. Standardmäßig ist diese Rolle den Rollengruppen „Organisationsverwaltung“ und „Empfängerverwaltung“ zugewiesen.
 
@@ -70,7 +70,7 @@ Sie müssen Schritt 1 nur einmal ausführen, um PST-Dateien in Microsoft 365-Pos
 
 - Diese Vorgehensweise umfasst das Kopieren und Speichern einer Kopie einer URL, die einen Zugriffsschlüssel enthält. Diese Informationen werden in Schritt 2 zum Hochladen Ihrer PST-Dateien und in Schritt 3 verwendet, wenn Sie eine Liste der PST-Dateien anzeigen möchten, die in Office 365 hochgeladen wurden. Schützen Sie diese URL unbedingt genauso wie Kennwörter und andere sicherheitsbezogene Informationen. Sie können sie beispielsweise in einem kennwortgeschützten Microsoft Word-Dokument vermerken oder auf einem verschlüsselten USB-Laufwerk speichern. Im Abschnitt [Weitere Informationen](#more-information) finden Sie ein Beispiel für diese Kombination aus Schlüssel und URL.
 
-- Sie können PST-Dateien in ein inaktives Postfach in Office 365 importieren. Geben Sie hierzu den GUID des inaktiven Postfachs im Parameter `Mailbox` in der PST-Importzuordnungsdatei an. Informationen hierzu finden Sie in diesem Thema auf der Registerkarte **Anweisungen** im Schritt 4. 
+- Sie können PST-Dateien in ein inaktives Postfach in Office 365 importieren. Geben Sie hierzu den GUID des inaktiven Postfachs im Parameter `Mailbox` in der PST-Importzuordnungsdatei an. Informationen hierzu finden Sie in diesem Thema auf der Registerkarte **Anweisungen** im Schritt 4.
 
 - In einer Exchange-Hybridumgebung können Sie PST-Dateien für einen Benutzer, dessen primäres Postfach lokal gehostet wird, in ein cloudbasiertes Archivpostfach importieren. Gehen Sie hierzu in der PST-Importzuordnungsdatei folgendermaßen vor:
 
@@ -96,14 +96,14 @@ Im ersten Schritt laden Sie das AzCopy-Tool herunter (das Tool, das Sie in Schri
 > [!IMPORTANT]
 > Wenn Sie PST-Dateien mit der in diesem Artikel beschriebenen Netzwerkuploadmethode und Befehlssyntax importieren möchten, müssen Sie die Version von AzCopy verwenden, die in Schritt 6b im folgenden Verfahren heruntergeladen werden kann. Sie können die gleiche Version von AzCopy auch [hier](https://aka.ms/downloadazcopy) herunterladen. Die Verwendung einer anderen Version von AzCopy wird nicht unterstützt.
   
-1. Navigieren Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
+1. Navigieren Sie zu <https://compliance.microsoft.com>, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Klicken Sie im linken Bereich des Security & Compliance Centers auf **Information Governance** \> **Import** \> **Importieren von PST-Dateien**.
+2. Klicken Sie im linken Bereich des Microsoft 365 Compliance Centers auf **Informationsgovernance** \> **Importieren**.
 
     > [!NOTE]
-    > Sie müssen über die erforderlichen Berechtigungen für den Zugriff auf die Seite **Import** im Security & Compliance Center verfügen. Weitere Informationen finden Sie im Abschnitt **Bevor Sie beginnen**. 
+    > Sie müssen über die erforderlichen Berechtigungen für den Zugriff auf die Seite **Importieren** im Microsoft 365 Compliance Center verfügen. Weitere Informationen finden Sie im Abschnitt **Bevor Sie beginnen**. 
 
-3. Klicken Sie auf der Seite **Import von PST-Dateien** ![Symbol hinzufügen](../media/ITPro-EAC-AddIcon.gif) **Neuer Importauftrag**.
+3. Klicken Sie auf der Registerkarte **Importieren** auf ![Symbol hinzufügen](../media/ITPro-EAC-AddIcon.gif) **Neuer Importauftrag**.
 
     Der Assistent für Importaufträge wird angezeigt.
 
@@ -165,7 +165,7 @@ Nachdem Sie den Befehl ausgeführt haben, werden Statusmeldungen angezeigt, die 
 > [!TIP]
 > Nachdem Sie den Befehl "AzCopy.exe" erfolgreich ausgeführt und sichergestellt haben, dass alle Parameter richtig sind, speichern Sie eine Kopie der Befehlszeilensyntax in der gleichen (gesicherten) Datei, in die Sie die in Schritt 1 abgerufenen Informationen kopiert haben. Anschließend können Sie diesen Befehl jedes Mal, wenn Sie das Tool "AzCopy.exe" zum Hochladen von PST-Dateien in Office 365 ausführen möchten, in eine Eingabeaufforderung kopieren und einfügen. Der einzige Wert, den Sie möglicherweise ändern müssen, ist der Wert für den `/Source:`-Parameter. Dies hängt vom Quellverzeichnis ab, in dem sich die PST-Dateien befinden.
 
-## <a name="optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>(Optional) Schritt 3: Anzeigen einer Liste der PST-Dateien, die in Office 365 hochgeladen wurden
+## <a name="optional-step-3-view-a-list-of-the-pst-files-uploaded-to-office-365"></a>(Optional) Schritt 3: Anzeigen einer Liste der PST-Dateien, die in Office 365 hochgeladen wurden
 
 Als optionalen Schritt können Sie den Microsoft Azure Storage-Explorer (ein kostenloses Open Source-Tool) installieren und verwenden, um die Liste der PST-Dateien anzuzeigen, die Sie in den Azure-Blob hochgeladen haben. Es gibt zwei gute Gründe hierfür:
   
@@ -242,20 +242,18 @@ Nachdem die PST-Dateien in den Azure Storage-Speicherort für Ihre Organisation 
 
 Der nächste Schritt besteht darin, den PST-Importauftrag im Importdienst in Microsoft 365 zu erstellen. Wie zuvor beschrieben, übermitteln Sie die erstellte PST-Importzuordnungsdatei in Schritt 4. Nachdem Sie den Auftrag erstellt haben, analysiert Microsoft 365 die Daten in den PST-Dateien und gibt Ihnen die Möglichkeit, die Daten zu filtern, die tatsächlich in die Postfächer importiert werden, die in der PST-Importzuordnungsdatei angegeben sind (siehe [Schritt 6](#step-6-filter-data-and-start-the-pst-import-job)).
   
-1. Navigieren Sie zu [https://protection.office.com](https://protection.office.com), und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an. 
+1. Navigieren Sie zu <https://compliance.microsoft.com>, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
 
-2. Klicken Sie im linken Bereich des Security & Compliance Center auf **Information Governance > Import > Importieren von PST-Dateien**.
+2. Klicken Sie im linken Bereich des Microsoft 365 Compliance Centers auf **Informationsgovernance > Importieren**.
 
-3. Klicken Sie auf der Seite **Import von PST-Dateien** ![Symbol hinzufügen](../media/ITPro-EAC-AddIcon.gif) **Neuer Importauftrag**.
+3. Klicken Sie auf der Registerkarte **Importieren** auf ![Symbol hinzufügen](../media/ITPro-EAC-AddIcon.gif) **Neuer Importauftrag**.
 
    > [!NOTE]
-   > Sie müssen über die erforderlichen Berechtigungen für den Zugriff auf die Seite **Import** im Security & Compliance Center verfügen, um einen Importauftrag erstellen zu können. Weitere Informationen finden Sie im Abschnitt **Bevor Sie beginnen**. 
+   > Sie müssen über die erforderlichen Berechtigungen für den Zugriff auf die Seite **Importieren** im Microsoft 365 Compliance Center verfügen, um einen Importauftrag erstellen zu können. Weitere Informationen finden Sie im Abschnitt **Bevor Sie beginnen**. 
 
 4. Geben Sie einen Namen für den PST-Importauftrag ein, und klicken Sie dann auf **Weiter**. Verwenden Sie Kleinbuchstaben, Zahlen, Bindestriche und Unterstriche. Sie dürfen weder Großbuchstaben noch Leerzeichen in dem Namen verwenden.
 
 5. Klicken Sie auf der Seite **Möchten Sie Daten hochladen oder ausliefern?** auf **Daten hochladen** und dann auf **Weiter**.
-
-    ![Klicken Sie auf "Daten hochladen", um einen Importauftrags für den Netzwerkupload zu erstellen.](../media/e59f9dc3-ccde-44ff-ac38-c4e39d76ae85.png)
   
 6. Klicken Sie in Schritt 4 auf der Seite zum **Importieren von Daten** auf die Kontrollkästchen zur Angabe, dass **das Hochladen der Dateien abgeschlossen ist** und **Zugriff auf die Zuordnungsdatei besteht**, und klicken Sie dann auf **Weiter**.
 
@@ -265,7 +263,7 @@ Der nächste Schritt besteht darin, den PST-Importauftrag im Importdienst in Mic
 
     ![Klicken Sie auf "Zuordnungsdatei auswählen", um die CSV-Datei zu übermitteln, die Sie für den Importvorgang erstellt haben.](../media/d30b1d73-80bb-491e-a642-a21673d06889.png)
   
-8. Wenn der Name der CSV-Datei unter **Name der Zuordnungsdatei** angezeigt wird, klicken Sie auf **Überprüfen**, um die CSV-Datei auf Fehler zu überprüfen. 
+8. Wenn der Name der CSV-Datei unter **Name der Zuordnungsdatei** angezeigt wird, klicken Sie auf **Überprüfen**, um die CSV-Datei auf Fehler zu überprüfen.
 
     ![Klicken Sie auf "Überprüfen", um die CSV-Datei auf Fehler zu überprüfen.](../media/4680999d-5538-4059-b878-2736a5445037.png)
   
@@ -288,19 +286,13 @@ Der nächste Schritt besteht darin, den PST-Importauftrag im Importdienst in Mic
 
 Nachdem Sie den Importauftrag in Schritt 5 erstellt haben, analysiert Microsoft 365 die Daten in den PST-Dateien (auf gefahrlose und sichere Weise), indem das Alter der Elemente und die unterschiedlichen Nachrichtentypen identifiziert werden, die in den PST-Dateien enthalten sind. Wenn die Analyse abgeschlossen ist und die Daten für den Import bereit sind, haben Sie die Möglichkeit, alle in den PST-Dateien enthaltenen Daten zu importieren oder die zu importierenden Daten einzuschränken, indem Sie Filter festlegen, mit denen gesteuert wird, welche Daten importiert werden.
   
-1. Klicken Sie auf der Seite **Import von PST-Dateien** im Security & Compliance Center auf **bereit zum Import in Office 365** für den Importvorgang, den Sie in Schritt 5 erstellt haben.
-
-    ![Klicken Sie neben dem von Ihnen erstellten Importvorgang auf "Bereit für den Import in Microsoft 365".](../media/5760aac3-300b-4e31-b894-253c42a4b82b.png)
+1. Wählen Sie auf der Registerkarte **Importieren** im Microsoft 365 Compliance Center die Importaufträge aus, die Sie in Schritt 5 erstellt haben, und klicken Sie dann auf **In Office 365 importieren**.
   
-    Nun wird eine Flyout-Seite mit Informationen zu den PST-Dateien und anderen Informationen zur Importaufgabe angezeigt.
-
-2. Klicken Sie auf der Flyoutseite auf **In Office 365 importieren**.
-
-    Die Seite **Ihre Daten filtern** wird angezeigt. Sie enthält die Datenerkenntnisse, die sich aus der Analyse ergeben haben, die Office 365 für die PST-Dateien ausgeführt hat, einschließlich Informationen über das Alter der Daten. An diesem Punkt haben Sie die Möglichkeit, die zu importierenden Daten zu filtern oder alle Daten ungeändert zu importieren. 
+   Die Seite **Ihre Daten filtern** wird angezeigt. Sie enthält die Datenerkenntnisse, die sich aus der Analyse ergeben haben, die Office 365 für die PST-Dateien ausgeführt hat, einschließlich Informationen über das Alter der Daten. An diesem Punkt haben Sie die Möglichkeit, die zu importierenden Daten zu filtern oder alle Daten ungeändert zu importieren. 
 
     ![Sie können die Daten in den PST-Dateien kürzen oder alles importieren](../media/287fc030-99e9-417b-ace7-f64617ea5d4e.png)
   
-3. Führen Sie einen der folgenden Schritte aus:
+2. Führen Sie einen der folgenden Schritte aus:
 
    1. Um die Daten, die Sie importieren, zu trimmen, klicken Sie auf **Ja, ich möchte meine Daten vor dem Import filtern**.
 
@@ -310,9 +302,9 @@ Nachdem Sie den Importauftrag in Schritt 5 erstellt haben, analysiert Microsoft 
 
    2. Um alle Daten zu importieren, die sich in den PST-Dateien befinden, klicken Sie auf **Nein, ich möchte alles importieren**, und klicken Sie auf **Weiter**.
 
-4. Wenn Sie sich entschieden haben, alle Daten zu importieren, klicken Sie auf **Daten importieren**, um den Importvorgang zu starten. 
+3. Wenn Sie sich entschieden haben, alle Daten zu importieren, klicken Sie auf **Daten importieren**, um den Importvorgang zu starten. 
 
-   Der Status des Importauftrags wird auf der Seite **Import von PST-Dateien** angezeigt. Klicken Sie auf ![Aktualisieren-Symbol](../media/O365-MDM-Policy-RefreshIcon.gif) **Aktualisieren**, um die Statusinformationen zu aktualisieren, die in der Spalte **Status** angezeigt werden. Klicken Sie auf den Importauftrag, um die Status-Flyout-Seite anzuzeigen, auf der die Statusinformationen zu jeder zu importierenden PST-Datei angezeigt werden. 
+   Der Status des Importauftrags wird auf der Seite **Import von PST-Dateien** angezeigt. Klicken Sie auf ![Aktualisieren-Symbol](../media/O365-MDM-Policy-RefreshIcon.gif) **Aktualisieren**, um die Statusinformationen zu aktualisieren, die in der Spalte **Status** angezeigt werden. Klicken Sie auf den Importauftrag, um die Status-Flyout-Seite anzuzeigen, auf der die Statusinformationen zu jeder zu importierenden PST-Datei angezeigt werden.
 
 ## <a name="more-information"></a>Weitere Informationen
 
@@ -372,7 +364,7 @@ Es folgen eine Darstellung und eine Beschreibung des Netzwerkuploadprozesses, in
   
 ![Workflow des Netzwerkuploadprozesses zum Importieren von PST-Dateien in Office 365](../media/9e05a19e-1e7a-4f1f-82df-9118f51588c4.png)
   
-1. **PST-Importtool und Schlüssel für den privaten Azure Storage-Speicherort herunterladen**: Der erste Schritt besteht darin, das Befehlszeilentool AzCopy und einen Zugriffsschlüssel herunterzuladen, die dazu verwendet werden, die PST-Dateien in einen Azure Storage-Speicherort in der Microsoft Cloud hochzuladen. Sie erhalten das Tool und den Schlüssel über die Seite **Import** im Security & Compliance Center. Der Schlüssel, der als SAS-Schlüssel (Shared Access Signature) bezeichnet wird, stellt Ihnen die Berechtigungen bereit, die erforderlich sind, um PST-Dateien in einen privaten und sicheren Azure Storage-Speicherort hochzuladen. Dieser Zugriffsschlüssel ist für Ihr Unternehmen eindeutig und verhindert nicht autorisierten Zugriff auf Ihre PST-Dateien, nachdem diese in die Microsoft-Cloud hochgeladen wurden. Für das Importieren von PST-Dateien ist es nicht erforderlich, dass Ihre Organisation über ein eigenes Azure-Abonnement verfügt. 
+1. **PST-Importtool und Schlüssel für den privaten Azure Storage-Speicherort herunterladen**: Der erste Schritt besteht darin, das Befehlszeilentool AzCopy und einen Zugriffsschlüssel herunterzuladen, die dazu verwendet werden, die PST-Dateien in einen Azure Storage-Speicherort in der Microsoft Cloud hochzuladen. Sie erhalten das Tool und den Schlüssel über die Seite **Importieren** im Microsoft 365 Compliance Center. Der Schlüssel, der als SAS-Schlüssel (Shared Access Signature) bezeichnet wird, stellt Ihnen die Berechtigungen bereit, die erforderlich sind, um PST-Dateien in einen privaten und sicheren Azure Storage-Speicherort hochzuladen. Dieser Zugriffsschlüssel ist für Ihr Unternehmen eindeutig und verhindert nicht autorisierten Zugriff auf Ihre PST-Dateien, nachdem diese in die Microsoft-Cloud hochgeladen wurden. Für das Importieren von PST-Dateien ist es nicht erforderlich, dass Ihre Organisation über ein eigenes Azure-Abonnement verfügt. 
 
 2. **PST-Dateien in den Azure Storage-Speicherort hochladen**: Der nächste Schritt besteht darin, mit dem (in Schritt 1 heruntergeladenen) Tool "AzCopy.exe" Ihre PST-Dateien in einen Azure Storage-Speicherort hochzuladen, der sich im selben regionalen Microsoft-Datencenter befindet wie Ihre Organisation. Damit Sie die PST-Dateien, die Sie importieren möchten, hochladen können, müssen sich diese auf einer Dateifreigabe oder einem Dateiserver Ihrer Organisation befinden.
 
@@ -380,8 +372,8 @@ Es folgen eine Darstellung und eine Beschreibung des Netzwerkuploadprozesses, in
 
 3. **Erstellung einer PST-Importzuordnungsdatei**: Nachdem die PST-Dateien in den Azure Storage-Speicherort hochgeladen wurden, besteht der nächste Schritt darin, eine Datei mit kommagetrennten Werten (CSV-Datei) zu erstellen, die angibt, in welche Benutzerpostfächer die PST-Dateien importiert werden (wobei eine PST-Datei in das primäre Postfach eines Benutzers oder in dessen Archivpostfach importiert werden kann). Der Office 365-Importdienst verwendet die Informationen in der CSV-Datei, um die PST-Dateien zu importieren.
 
-4. **Erstellen eines PST-Importauftrags**: Im nächsten Schritt wird auf der Seite **PST_Dateien importieren** im Security & Compliance Center ein PST-Importauftrag erstellt und die im vorherigen Schritt erstellte PST-Importzuordnungsdatei gesendet. Nachdem Sie den Importauftrag erstellt haben, analysiert Microsoft 365 die Daten in den PST-Dateien und gibt Ihnen die Möglichkeit, Filter festzulegen, mit denen gesteuert wird, welche Daten tatsächlich in die Postfächer importiert werden, die in der PST-Importzuordnungsdatei angegeben sind. 
+4. **Erstellen eines PST-Importauftrags:** Im nächsten Schritt wird auf der Seite **PST-Dateien importieren** im Microsoft 365 Compliance Center ein Importauftrag erstellt und die im vorherigen Schritt erstellte PST-Importzuordnungsdatei gesendet. Nachdem Sie den Importauftrag erstellt haben, analysiert Microsoft 365 die Daten in den PST-Dateien und gibt Ihnen die Möglichkeit, Filter festzulegen, mit denen gesteuert wird, welche Daten tatsächlich in die Postfächer importiert werden, die in der PST-Importzuordnungsdatei angegeben sind. 
 
 5. **PST-Daten, die in Postfächer importiert werden sollen, filtern**: Nachdem der Importauftrag erstellt und gestartet wurde, analysiert Microsoft 365 die Daten in den PST-Dateien (gefahrlos und sicher), indem das Alter der Elemente und die verschiedenen Nachrichtentypen bestimmt werden, die in den PST-Dateien enthalten sind. Wenn die Analyse abgeschlossen ist und die Daten für den Import bereit sind, haben Sie die Möglichkeit, alle in den PST-Dateien enthaltenen Daten zu importieren oder die zu importierenden Daten einzuschränken, indem Sie Filter festlegen, mit denen gesteuert wird, welche Daten importiert werden.
 
-6. **Starten des PST-Importauftrags**: Nachdem der Importauftrag gestartet wurde, verwendet Microsoft 365 die Informationen in der PST-Importzuordnungsdatei, um die PST-Dateien aus dem Azure-Speicherort in Benutzerpostfächer zu importieren. Statusinformationen zu dem Importauftrag (einschließlich Informationen zu jeder PST-Datei, die importiert wird) werden auf der Seite **PST-Dateien importieren** im Security & Compliance Center angezeigt. Wenn der Importauftrag abgeschlossen ist, wird sein Status auf **Abgeschlossen** festgelegt.
+6. **Starten des PST-Importauftrags**: Nachdem der Importauftrag gestartet wurde, verwendet Microsoft 365 die Informationen in der PST-Importzuordnungsdatei, um die PST-Dateien aus dem Azure-Speicherort in Benutzerpostfächer zu importieren. Statusinformationen zu dem Importauftrag (einschließlich Informationen zu jeder PST-Datei, die importiert wird) werden auf der Seite **PST-Dateien importieren** im Microsoft 365 Compliance Center angezeigt. Wenn der Importauftrag abgeschlossen ist, wird sein Status auf **Abgeschlossen** festgelegt.

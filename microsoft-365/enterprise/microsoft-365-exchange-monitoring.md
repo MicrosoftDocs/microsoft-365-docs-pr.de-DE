@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Verwenden Sie die Exchange Online-Überwachung, um Informationen zu E-Mail-Vorfällen oder Empfehlungen in Microsoft 365 zu erhalten.
-ms.openlocfilehash: 53dc7f990f57fd8d4da68bd424947676cbf0e85d
-ms.sourcegitcommit: d81c7cea85af6ad5fef81d3c930514a51464368c
+ms.openlocfilehash: ee31f8e152d7c54e37b850563bea57971e07f61c
+ms.sourcegitcommit: 76c91e7b0d3172de57988eb4576d2b91c2f9ce18
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49572875"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52707296"
 ---
 # <a name="exchange-online-monitoring-for-microsoft-365"></a>Exchange Online-Überwachung für Microsoft 365
 
@@ -49,9 +49,9 @@ Auf der **Exchange Online**-Überwachungsseite können Sie sehen, ob der Exchang
 
 Diese Vorschau ist für Kunden verfügbar, die die folgenden Anforderungen erfüllen: 
 
-- Ihre Organisation muss über mindestens 10.000 Lizenzen für eines oder eine Kombination dieser Produkte verfügen: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+- Ihre Organisation muss über mindestens 5000 Lizenzen für eines oder eine Kombination dieser Produkte verfügen: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
 
-  So kann Ihre Organisation beispielsweise über 3.000 Office 365 E3-Lizenzen und 8.500 Microsoft 365 E5-Lizenzen verfügen, die insgesamt 11.500 Lizenzen für berechtigende Produkte ergeben.
+  So kann Ihre Organisation beispielsweise über 3000 Office 365 E3-Lizenzen und 2500 Microsoft 365 E5-Lizenzen verfügen, die insgesamt 5500 Lizenzen für berechtigende Produkte ergeben.
 
 - Ihre Organisation muss über mindestens 50 monatlich aktive Exchange Online-Benutzer verfügen.
 
@@ -95,10 +95,10 @@ Vergewissern Sie sich zunächst, dass Sie das neue Admin Center auf der **Starts
 
 Stellen Sie dann sicher, dass Sie die beiden folgenden Voraussetzungen erfüllen: 
 
-- Ihre Organisation muss über mindestens 10.000 Lizenzen für eines oder eine Kombination dieser Produkte verfügen: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
+- Ihre Organisation muss über mindestens 5000 Lizenzen für eines oder eine Kombination dieser Produkte verfügen: Office 365 E3, Microsoft 365 E3, Office 365 E5, Microsoft 365 E5. 
 - Ihre Organisation muss über mindestens 50 monatlich aktive Exchange Online-Benutzer verfügen.
 
-Wenn die Anzahl der Lizenzen für Ihre Organisation unter 10.000 Benutzern liegt und die monatlich aktiven Benutzer weniger als 50 sind, wird die Exchange Online-Überwachung erst aktiviert, wenn diese Voraussetzungen erfüllt sind.
+Wenn die Anzahl der Lizenzen für Ihre Organisation unter 5000 Benutzern liegt und die monatlich aktiven Benutzer weniger als 50 sind, wird die Exchange Online-Überwachung erst aktiviert, wenn diese Voraussetzungen erfüllt sind.
 
 #### <a name="2-the-active-user-count-in-the-dashboard-for-each-client-appears-to-be-low-we-have-a-lot-of-active-licenses-assigned-to-users-what-does-this-mean"></a>2. Die Anzahl der im Dashboard für jeden Client angezeigten aktiven Benutzer scheint niedrig zu sein. Wir verfügen über viele Benutzern zugewiesene aktive Lizenzen. Was bedeutet dies? 
 
