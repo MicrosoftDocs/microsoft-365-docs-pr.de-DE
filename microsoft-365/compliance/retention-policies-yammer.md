@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Yammer gelten.
-ms.openlocfilehash: 0426fdf04090e535a99f8acd3bf376adfb016796
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1b99d0915cfb159f821818fb1425d7191a011351
+ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917801"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710706"
 ---
 # <a name="learn-about-retention-for-yammer"></a>Informationen zur Aufbewahrung für Yammer
 
@@ -49,7 +49,7 @@ Reaktionen von anderen Personen in der Form von Emoticons sind in diesen Nachric
 
 Sie können eine Aufbewahrungsrichtlinie zum Aufbewahren und Löschen von Communitynachrichten und privaten Nachrichten in Yammer verwenden. Private Nachrichten werden in einem verborgenen Ordner im Postfach jedes Benutzers gespeichert, der in die Nachricht eingebunden ist, und Communitynachrichten werden in einem ähnlichen verborgenen Ordner im Gruppenpostfach für die Community gespeichert.
 
-Aufbewahrungsrichtlinien, die für Benutzer- oder Gruppenpostfächer konfiguriert sind, wirken sich nicht auf Yammer-Nachrichten aus. Obwohl Yammer-Nachrichten in Exchange gespeichert sind, werden diese Yammer-Daten nur von einer Aufbewahrungsrichtlinie eingeschlossen, die für die Speicherorte **Yammer-Communitynachrichten** und **Private Yammer-Nachrichten** konfiguriert ist.
+Aufbewahrungsrichtlinien, die für Benutzer- oder Gruppenpostfächer konfiguriert sind, wirken sich nicht auf Yammer-Nachrichten aus. Obwohl Yammer-Nachrichten in Exchange gespeichert sind, sind diese Yammer-Daten nur in einer Aufbewahrungsrichtlinie enthalten, die für die Speicherorte von **Yammer-Communitynachrichten** und **Benutzernachrichten in Yammer** konfiguriert ist.
 
 > [!NOTE]
 > Wenn eine aktive Aufbewahrungsrichtlinie, durch die Yammer-Daten aufbewahrt werden, Benutzer einbezieht, und Sie ein Postfach eines in diese Richtlinie einbezogenen Benutzers löschen, wird es in ein [inaktives Postfach](inactive-mailboxes-in-office-365.md) konvertiert, damit die Yammer-Daten aufbewahrt werden. Wenn diese Yammer-Daten für den Benutzer nicht aufbewahrt werden müssen, schließen Sie das Benutzerkonto aus der Aufbewahrungsrichtlinie aus, bevor Sie das Postfach löschen.
@@ -88,13 +88,13 @@ Wenn die Aufbewahrungsrichtlinie dem reinen Aufbewahren oder dem reinen Löschen
 
 ## <a name="messages-and-external-users"></a>Nachrichten und externe Benutzer
 
-Standardmäßig gilt eine Aufbewahrungsrichtlinie für private Yammer-Nachrichten für alle Benutzer in Ihrer Organisation, jedoch nicht für externe Benutzer. Sie können eine Aufbewahrungsrichtlinie auf externe Benutzer anwenden, indem Sie die Option **Benutzer auswählen** verwenden und die fraglichen Konten angeben. 
+Standardmäßig gilt eine Aufbewahrungsrichtlinie für Benutzernachrichten in Yammer für alle Benutzer in Ihrer Organisation, jedoch nicht für externe Benutzer. Sie können eine Aufbewahrungsrichtlinie auf externe Benutzer anwenden, indem Sie die Option **Benutzer auswählen** verwenden und die fraglichen Konten angeben. 
 
 Zurzeit werden Azure-B2B-Gastbenutzer nicht unterstützt.
 
 ## <a name="when-a-user-leaves-the-organization"></a>Wenn ein Benutzer die Organisation verlässt 
 
-Wenn ein Benutzer Ihre Organisation verlässt und sein Microsoft 365-Konto gelöscht wird, werden seine privaten Yammer-Nachrichten, die der Aufbewahrung unterliegen, in einem inaktiven Postfach gespeichert. Die Nachrichten unterliegen weiterhin jeder Aufbewahrungsrichtlinie, die dem Benutzer zugewiesen wurde, bevor sein Postfach inaktiv wurde, und die Inhalte sind für eine eDiscovery-Suche verfügbar. Weitere Informationen finden Sie unter [Inaktive Postfächer in Exchange Online](inactive-mailboxes-in-office-365.md). 
+Wenn ein Benutzer Ihre Organisation verlässt und sein Microsoft 365-Konto gelöscht wird, werden seine Benutzernachrichten in Yammer, die der Aufbewahrung unterliegen, in einem inaktiven Postfach gespeichert. Die Nachrichten unterliegen weiterhin jeder Aufbewahrungsrichtlinie, die dem Benutzer zugewiesen wurde, bevor sein Postfach inaktiv wurde, und die Inhalte sind für eine eDiscovery-Suche verfügbar. Weitere Informationen finden Sie unter [Inaktive Postfächer in Exchange Online](inactive-mailboxes-in-office-365.md). 
 
 Wenn der Benutzer Dateien in Yammer gespeichert hat, lesen Sie den [entsprechenden Abschnitt](retention-policies-sharepoint.md#when-a-user-leaves-the-organization) für SharePoint und OneDrive.
 
@@ -102,7 +102,7 @@ Wenn der Benutzer Dateien in Yammer gespeichert hat, lesen Sie den [entsprechend
 
 Yammer-Aufbewahrungsrichtlinien befinden sich derzeit in der Vorschau, und wir arbeiten kontinuierlich an der Optimierung der Aufbewahrungsfunktionen. Es gibt folgende Einschränkungen, die Sie bei der Aufbewahrung von Yammer-Community-Nachrichten und privaten Nachrichten beachten sollten:
 
-- Wenn Sie **Benutzer auswählen** für den Speicherort **Private Yammer-Nachrichten** auswählen, werden möglicherweise Gäste und Nicht-Postfachbenutzer angezeigt. Aufbewahrungsrichtlinien sind nicht auf diese Benutzer ausgerichtet, deshalb sollten Sie sie nicht auswählen.
+- Wenn Sie **Benutzer auswählen** für den Speicherort **Benutzernachrichten in Yammer** auswählen, werden möglicherweise Gäste und Nicht-Postfachbenutzer angezeigt. Aufbewahrungsrichtlinien sind nicht auf diese Benutzer ausgerichtet, deshalb sollten Sie sie nicht auswählen.
 
 ## <a name="configuration-guidance"></a>Konfigurationsleitfaden
 

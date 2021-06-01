@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: ba17a94fa4ae0d12405cc7e38d7d74e90fa7ad02
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: ab02559a439899fe25a560aa52718045b730ebd4
+ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625221"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "52710718"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -116,7 +116,7 @@ Aufbewahrungsrichtlinien können auf die folgenden Speicherorte angewendet werde
 - Teams-Kanalnachrichten
 - Teams-Chats
 - Nachrichten in der Yammer-Community
-- Private Nachrichten in Yammer
+- Benutzernachrichten in Yammer
 
 Sie können eine einzelne Richtlinie sehr effizient auf mehrere Speicherorte oder auf bestimmte Speicherorte oder Benutzer anwenden.
 
@@ -308,7 +308,7 @@ Erläuterung der vier verschiedenen Ebenen:
     
     Dokumente auf dieser Marketing-SharePoint-Website werden 10 Jahre lang aufbewahrt, da es sich hierbei um den längsten Aufbewahrungszeitraum handelt.
 
-3. **Explizit hat Vorrang vor implizit.** Wird beim Bestimmen, wann Elemente gelöscht werden, angewendet: 
+3. **Explizit gewinnt gegen implizit bei Löschungen.** Wenn Konflikte jetzt für die Aufbewahrung gelöst sind, bleiben nur Konflikte für Löschungen erhalten: 
     
     1. Eine Aufbewahrungsbezeichnung (wie auch immer angewendet) gibt im Gegensatz zu Aufbewahrungsrichtlinien eine explizite Aufbewahrung vor, da die Aufbewahrungseinstellungen auf ein einzelnes Element angewendet werden, und nicht implizit aus einem Container zugeordnet werden. Dies bedeutet, dass eine Löschaktion aufgrund einer Aufbewahrungsbezeichnung immer Vorrang vor einer Löschaktion aufgrund einer Aufbewahrungsrichtlinie hat.
         

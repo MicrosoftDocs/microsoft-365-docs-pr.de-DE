@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fb4ba4f48d6f336444861b4407461efd4c8862d0
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 1ed4b04acd7fec75af4e157837312b824a8d9f98
+ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694509"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52696562"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
@@ -37,14 +37,14 @@ In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder Organis
 
 Administratoren können die standardmäßige Antispamrichtlinie anzeigen, bearbeiten und konfigurieren (aber nicht löschen). Um eine höhere Granularität zu erzielen, können Sie auch benutzerdefinierte Antispamrichtlinien erstellen, die für bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation gelten. Benutzerdefinierte Richtlinien haben immer Vorrang vor der standardmäßigen Richtlinie, die Priorität (Reihenfolge der Ausführung) Ihrer benutzerdefinierten Richtlinien können Sie jedoch ändern.
 
-Sie können Antispamrichtlinien im Security & Compliance Center oder in PowerShell konfigurieren (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online-Postfächer).
+Sie können Antispamrichtlinien im Microsoft 365 Security Center oder in PowerShell konfigurieren (Exchange Online-PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP-PowerShell für Organisationen ohne Exchange Online-Postfächer).
 
 Die grundlegenden Elemente einer Antispamrichtlinie sind:
 
 - **Die Spamfilterrichtlinie**: gibt die Aktionen für Spamfilterbewertungen und die Benachrichtigungsoptionen an.
 - **Die Spamfilterregel**: gibt die Priorität und die Empfängerfilter (für wen die Richtlinie gilt) für eine Spamfilterrichtlinie an.
 
-Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Antispamrichtlinien im Security & Compliance Center verwalten:
+Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Antispamrichtlinien im Security Center verwalten:
 
 - Beim Erstellen einer Antispamrichtlinie erstellen Sie tatsächlich gleichzeitig eine Spamfilterregel und die zugehörige Spamfilterrichtlinie, beide mit demselben Namen.
 - Wenn Sie eine Antispamrichtlinie ändern, dann ändern Einstellungen in Bezug auf Name, Priorität, aktiviert oder deaktiviert und Empfängerfilter die Spamfilterregel. Alle anderen Einstellungen ändern die zugehörige Spamfilterrichtlinie.
@@ -62,7 +62,7 @@ Wenn Sie die Effektivität der Spamfilterung erhöhen möchten, können Sie benu
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **Antispameinstellungen** zu wechseln, verwenden Sie <https://protection.office.com/antispam>.
+- Sie öffnen das Security Center über <https://security.microsoft.com/>. Wechseln Sie direkt zur Seite **Antispamrichtlinien**, verwenden Sie <https://security.microsoft.com/antispam>.
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -79,40 +79,75 @@ Wenn Sie die Effektivität der Spamfilterung erhöhen möchten, können Sie benu
 
 - Die empfohlenen Einstellungen für Richtlinien für Antispam finden Sie unter [EOP-Antispam-Richtlinieneinstellungen](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
-## <a name="use-the-security--compliance-center-to-create-anti-spam-policies"></a>Verwenden des Security & Compliance Centers zum Erstellen von Antispamrichtlinien
+## <a name="use-the-security-center-to-create-anti-spam-policies"></a>Verwenden des Security Centers zum Erstellen von Antispamrichtlinien
 
-Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security & Compliance Center werden gleichzeitig die Spamfilterregel und die zugehörige Spamfilterrichtlinie mit demselben Namen erstellt.
+Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security Center werden gleichzeitig die Spamfilterregel und die zugehörige Spamfilterrichtlinie mit demselben Namen erstellt.
 
-1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
+1. Wechseln Sie im Security Center zu **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Antispam**.
 
-2. Klicken Sie auf der Seite **Antispameinstellungen** auf **Richtlinie erstellen**.
+2. Klicken Sie auf ![Symbol „Erstellen“](../../media/m365-cc-sc-create-icon.png) **Richtlinie erstellen**, und wählen Sie dann **Eingehend** aus der Dropdownliste aus.
 
-3. Konfigurieren Sie im sich öffnenden Flyout **Neue Spamfilterrichtlinie** die folgenden Einstellungen:
-
-   - **Name**: Geben Sie einen eindeutigen, aussagekräftigen Namen für die Richtlinie ein. Verwenden Sie nicht die folgenden Zeichen: `\ % & * + / = ? { } | < > ( ) ; : , [ ] "`.
-
-      Wenn Sie zuvor Antispamrichtlinien im Exchange Admin Center (EAC) erstellt haben, die diese Zeichen enthalten, müssen Sie die Antispamrichtlinie in PowerShell umbenennen. Anweisungen hierzu finden Sie im Abschnitt [Verwenden von PowerShell zum Ändern von Spamfilterregeln](#use-powershell-to-modify-spam-filter-rules) weiter unten in diesem Artikel.
-
+3. Der Richtlinienassistent wird geöffnet. Konfigurieren Sie auf der Seite **Benennen Sie Ihre Richtlinie** diese Einstellungen:
+   - **Name**: Geben Sie einen eindeutigen, aussagekräftigen Namen für die Richtlinie ein.
    - **Beschreibung**: Geben Sie eine optionale Beschreibung für die Richtlinie ein.
 
-4. (Optional) Erweitern Sie den Abschnitt **Spam- und Massenaktionen**, und überprüfen oder konfigurieren Sie die folgenden Einstellungen:
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-   - **Wählen Sie die für eingehende Spam- und Massen-E-Mails auszuführende Aktion aus**: Wählen oder überprüfen Sie die Aktion, die für Nachrichten auf der Grundlage der folgenden Spamfilterbewertungen ausgeführt werden soll:
+4. Auf der dann angezeigten Seite **Benutzer, Gruppen und Domänen** identifizieren Sie die internen Empfänger, für welche die Richtlinie gilt (Empfängerbedingungen):
+   - **Benutzer**: Die angegebenen Postfächer, E-Mail-Benutzer oder E-Mail-Kontakte in Ihrer Organisation.
+   - **Gruppen**: Die angegebenen Verteilergruppen, E-Mail-aktivierten Sicherheitsgruppen oder Microsoft 365-Gruppen in Ihrer Organisation.
+   - **Domänen**: Alle Empfänger in der angegebenen [akzeptierten Domäne](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in Ihrer Organisation.
 
+   Klicken Sie auf das entsprechende Feld, beginnen Sie mit der Eingabe eines Wertes, und wählen Sie den gewünschten Wert aus den Ergebnissen aus. Wiederholen Sie diesen Vorgang so oft wie nötig. Um einen vorhandenen Wert zu entfernen, klicken Sie auf das ![Symbol „Entfernen“](../../media/m365-cc-sc-remove-selection-icon.png) neben dem Wert.
+
+   Für Benutzer oder Gruppen können Sie die meisten Bezeichner verwenden (Name, Anzeigename, Alias, E-Mail-Adresse, Kontoname usw.), aber in den Ergebnissen wird der entsprechende Anzeigename angezeigt. Geben Sie für Benutzer einen einzelnen Stern (\*) ein, um alle verfügbaren Werte anzuzeigen.
+
+   Mehreren Werten in der gleichen Bedingung verwenden die „ODER“-Logik (z. B. _\<recipient1\>_ ODER _\<recipient2\>_). Unterschiedlichen Bedingungen verwenden die „UND“-Logik (z. B. _\<recipient1\>_ UND _\<member of group 1\>_).
+
+   - **Ausschließen dieser Benutzer, Gruppen und Domänen**: Um Ausnahmen für die internen Empfänger hinzuzufügen, für welche die Richtlinie gilt (Empfängerausnahmen), wählen Sie diese Option und konfigurieren Sie die Ausnahmen. Die Einstellungen und das Verhalten entsprechen genau den Bedingungen.
+
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
+
+5. Konfigurieren Sie auf der Seite **Massen-E-Mail-Schwellenwert und Spam-Eigenschaften**, die erscheint, die folgenden Einstellungen:
+
+   - **Massen-E-Mail-Schwellenwert**: Gibt das Massenbeschwerdeniveau (Bulk Complaint Level, BCL) einer Nachricht an, das die angegebene Aktion für die **Massen**-Spamfilterbewertung auslöst (größer als, nicht größer als oder gleich wie der angegebene Wert). Ein höherer Wert gibt an, dass die Nachricht weniger erwünscht ist (eher Spam ähnelt). Der Standardwert ist 7. Weitere Informationen finden Sie unter [BCL-Werte (Bulk Complaint Level) in EOP](bulk-complaint-level-values.md) und [Worin besteht der Unterschied zwischen Junk- und Massen-E-Mail?](what-s-the-difference-between-junk-email-and-bulk-email.md).
+
+     Standardmäßig hat die ausschließliche PowerShell-Einstellung _MarkAsSpamBulkMail_ in Antispamrichtlinien den Wert `On`. Diese Einstellung hat einen wesentlichen Einfluss auf die Ergebnisse einer **Massen**-Filterbewertung:
+
+     - **_MarkAsSpamBulkMail_ ist „Ein“**: Ein BCL-Wert, der größer als der Schwellenwert ist, wird in einen SCL-Wert 6 konvertiert, der einer Filterbewertung **Spam** entspricht, und die Aktion für die **Massen**-Filterbewertung wird für Nachricht ausgeführt.
+     - **_MarkAsSpamBulkMail_ ist „Aus“**: Die Nachricht wird mit dem BCL gestempelt, aber es wird _keine Aktion_ für eine **Massen**-Filterbewertung ausgeführt. Tatsächlich sind der BCL-Schwellenwert und die Aktion für die **Massen**-Filterbewertung irrelevant.
+
+   - **Spam-Bewertung erhöhen**, **Als Spam markieren**<sup>\*</sup> und **Testmodus**: Enthalten die Einstellungen für den erweiterten Spamfilter (Advanced Spam Filter, ASF), die standardmäßig deaktiviert sind. ASF-Einstellungen werden demnächst nicht mehr unterstützt, und ihre Funktionalität wird in andere Teile des Filterstapels übernommen. Wir empfehlen, alle diese ASF-Einstellungen in Ihren Antispamrichtlinien deaktiviert zu lassen.
+
+     Ausführliche Informationen zu diesen Einstellungen finden Sie unter [Einstellungen für erweiterte Spam Filter (ASF) in EOP](advanced-spam-filtering-asf-options.md).
+
+      <sup>\*</sup> **Enthält bestimmte Sprachen** und **Aus diesen Ländern** sind nicht Teil der ASF-Einstellungen.
+
+   - **Enthält bestimmte Sprachen**: Klicken Sie auf das Feld und wählen Sie **Ein** oder **Aus** in der Dropdownliste aus. Wenn Sie die Option aktivieren, erscheint ein Feld. Beginnen Sie mit der Eingabe des Namens einer Sprache im Feld. Eine gefilterte Liste unterstützter Sprachen wird angezeigt. Wenn Sie die Sprache finden, die Sie suchen, wählen Sie diese aus. Wiederholen Sie diesen Schritt so oft wie nötig. Um einen bestehenden Wert zu entfernen, klicken Sie „entfernen“ ![Symbol „Entfernen“](../../media/m365-cc-sc-remove-selection-icon.png) neben dem Wert.
+
+   - **Aus diesen Ländern** _: Klicken Sie auf das Feld und wählen Sie _ *Ein** oder **Aus** in der Dropdownliste aus. Wenn Sie die Option aktivieren, erscheint ein Feld. Beginnen Sie mit der Eingabe des Namens eines Landes im Feld. Eine gefilterte Liste der unterstützten Länder wird angezeigt. Wenn Sie das Land finden, das Sie suchen, wählen Sie es aus. Wiederholen Sie diesen Schritt so oft wie nötig. Um einen bestehenden Wert zu entfernen, klicken Sie „entfernen“ ![Symbol „Entfernen“](../../media/m365-cc-sc-remove-selection-icon.png) neben dem Wert.
+
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
+
+6. Konfigurieren Sie auf der angezeigten Seite **Aktionen** die folgenden Einstellungen:
+
+   - **Nachrichtenaktionen**: Wählen oder überprüfen Sie die Aktion, die für Nachrichten auf der Grundlage der folgenden Spamfilterbewertungen ausgeführt werden soll:
      - **Spam**
      - **Nachricht mit hoher Spamwahrscheinlichkeit**
-     - **Phishing-E-Mail**
-     - **Nachricht mit hoher Phishingwahrscheinlichkeit**
-     - **Massen-E-Mail**
+     - **Phishing**
+     - **Hohe Phishing-Konfidenz**
+     - **Masse**
 
      In der folgenden Tabelle sind die verfügbaren Aktionen für die Spamfilterbewertungen beschrieben.
 
-     - Ein Häkchen ( ![Häkchen](../../media/checkmark.png)) gibt an, dass die Aktion verfügbar ist (nicht alle Aktionen sind für alle Spamfilterbewertungen verfügbar).
+     - Ein Häkchen ( ![Häkchen](../../media/checkmark.png)) gibt an, dass die Aktion verfügbar ist (nicht alle Aktionen sind für alle Bewertungen verfügbar).
      - Ein Sternchen ( <sup>\*</sup> ) nach dem Häkchen kennzeichnet die Standardaktion für die Spamfilterbewertung.
+
+     <br>
 
      ****
 
-     |Aktion|Spam|Hoch<br>Konfidenz<br>Spam|Phishing<br>E-Mail|Hoch<br>Konfidenz<br>Phishing<br>E-Mail|Masse<br>E-Mail|
+     |Aktion|Spam|Hoch<br>Konfidenz<br>Spam|Phishing|Hoch<br>Konfidenz<br>Phishing|Masse|
      |---|:---:|:---:|:---:|:---:|:---:|
      |**Nachricht in Junk-E-Mail-Ordner verschieben**: Die Nachricht wird an das Postfach übermittelt und in den Junk-E-Mail-Ordner verschoben.<sup>1</sup>|![Häkchen](../../media/checkmark.png)<sup>\*</sup>|![Häkchen](../../media/checkmark.png)<sup>\*</sup>|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)<sup>\*</sup>|
      |**X-Header hinzufügen**: Fügt dem Nachrichtenheader einen X-Header hinzu und übermittelt die Nachricht an das Postfach. <p> Sie geben den Namen des X-Header-Felds (nicht den Wert) zu einem späteren Zeitpunkt in das Feld **Diesen X-Header-Text hinzufügen** ein. <p> Bei den Bewertungen **Spam** und **Nachricht mit hoher Spamwahrscheinlichkeit** wird die Nachricht in den Junk-E-Mail-Ordner verschoben.<sup>1,2</sup>|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)||![Häkchen](../../media/checkmark.png)<sup>\*</sup>|
@@ -129,15 +164,7 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security & Compli
      >
      > <sup>2</sup> Sie können diesen Wert als Bedingung in Nachrichtenflussregeln verwenden, um die Nachricht zu filtern oder weiterzuleiten.
 
-   - **Schwellenwert auswählen**: Gibt das Massenbeschwerdeniveau (Bulk Complaint Level, BCL) einer Nachricht an, das die angegebene Aktion für die Spamfilterbewertung **Massen-E-Mail** auslöst (größer als, nicht größer als oder gleich wie der angegebene Wert). Ein höherer Wert gibt an, dass die Nachricht weniger erwünscht ist (eher Spam ähnelt). Der Standardwert ist 7. Weitere Informationen finden Sie unter [BCL-Werte (Bulk Complaint Level) in EOP](bulk-complaint-level-values.md) und [Worin besteht der Unterschied zwischen Junk- und Massen-E-Mail?](what-s-the-difference-between-junk-email-and-bulk-email.md).
-
-     Standardmäßig hat die ausschließliche PowerShell-Einstellung _MarkAsSpamBulkMail_ in Antispamrichtlinien den Wert `On`. Diese Einstellung hat einen wesentlichen Einfluss auf die Ergebnisse einer Filterungsbewertung **Massen-E-Mail-**:
-
-     - **_MarkAsSpamBulkMail_ ist Ein**: Ein BCL-Wert, der größer als der Schwellenwert ist, wird in einen SCL-Wert 6 konvertiert, der einer Filterungsbewertung **Spam** entspricht, und die Aktion für die Filterungsbewertung **Massen-E-Mail** wird für Nachricht ausgeführt.
-
-     - **_MarkAsSpamBulkMail_ ist Aus**: Die Nachricht wird mit dem BCL gestempelt, aber _keine Aktion_ wird für eine Filterungsbewertung **Massen-E-Mail** ausgeführt. Tatsächlich sind der BCL-Schwellenwert und die Aktion für die Filterungsbewertung **Massen-E-Mail** irrelevant.
-
-   - **Quarantäne**: Gibt an, wie lange die Nachricht in Quarantäne bleibt, wenn Sie **Nachricht in Quarantäne verschieben** als Aktion für eine Spamfilterbewertung ausgewählt haben. Nach Ablauf des Zeitraums wird die Nachricht gelöscht. Die Standardeinstellung beträgt 30 Tage. Ein gültiger Wert liegt zwischen 1 und 30 Tagen. Informationen zur Quarantäne finden Sie in den folgenden Themen:
+   - **Spam für so viele Tage in Quarantäne aufbewahren**: Gibt an, wie lange die Nachricht in Quarantäne bleibt, wenn Sie **Nachricht in Quarantäne verschieben** als Aktion für eine Spamfilterbewertung ausgewählt haben. Nach Ablauf des Zeitraums wird die Nachricht gelöscht. Die Standardeinstellung beträgt 30 Tage. Ein gültiger Wert liegt zwischen 1 und 30 Tagen. Informationen zur Quarantäne finden Sie in den folgenden Themen:
 
      - [In Quarantäne befindliche Nachrichten in EOP](quarantine-email-messages.md)
      - [Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP](manage-quarantined-messages-and-files.md)
@@ -155,225 +182,173 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security & Compli
 
    - **An diese E-Mail-Adresse umleiten**: Dieses Feld ist nur dann erforderlich und verfügbar, wenn Sie **An diese E-Mail-Adresse umleiten** als Aktion für eine Spamfilterbewertung ausgewählt haben. Geben Sie die E-Mail-Adresse ein, an die Sie die Nachricht senden möchten. Mehrere Werte können durch Semikolons (;) getrennt angegeben werden.
 
-   - **Sicherheitstipps**: Standardmäßig sind Sicherheitstipps aktiviert, Sie können sie jedoch deaktivieren, indem Sie das Kontrollkästchen **Ein** deaktivieren. Weitere Informationen zu Sicherheitstipps finden Sie unter [Sicherheitstipps in E-Mail-Nachrichten](safety-tips-in-office-365.md).
+   - **Sicherheitstipps aktivieren**: Standardmäßig sind Sicherheitstipps aktiviert, Sie können sie jedoch deaktivieren, indem Sie das Kontrollkästchen löschen. Weitere Informationen zu Sicherheitstipps finden Sie unter [Sicherheitstipps in E-Mail-Nachrichten](safety-tips-in-office-365.md).
 
-   Einstellungen für **Automatische Bereinigung zur Nullstunde (ZAP)**: ZAP erkennt Nachrichten, die bereits an Exchange Online-Postfächer übermittelt wurden, und ergreift Maßnahmen für diese. Weitere Informationen zu ZAP finden Sie unter [Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware](zero-hour-auto-purge.md).
+   - **Automatische Bereinigung zur Nullstunde (Zero-Hour Auto Purge, ZAP) aktivieren**: ZAP erkennt Nachrichten, die bereits an Exchange Online-Postfächer übermittelt wurden, und ergreift Maßnahmen für diese. Weitere Informationen finden Sie unter [Automatische Bereinigung zur Nullstunde – Schutz vor Spam und Schadsoftware](zero-hour-auto-purge.md).
 
-   - **Spam-ZAP**: Standardmäßig ist ZAP für Spamerkennungen aktiviert, Sie können es aber deaktivieren, indem Sie das Kontrollkästchen **Ein** deaktivieren.
+     ZAP ist standardmäßig aktiviert. Wenn ZAP aktiviert ist, sind die folgenden Einstellungen verfügbar:
 
-   - **Phishing-ZAP**: Standardmäßig ist ZAP für Phishingerkennungen aktiviert, Sie können es aber deaktivieren, indem Sie das Kontrollkästchen **Ein** deaktivieren.
+     - **ZAP für Phishing-Nachrichten aktivieren**: Standardmäßig ist ZAP für das Erkennen von Phishing aktiviert, aber Sie können dies deaktivieren, indem Sie das Kontrollkästchen löschen.
+     - **ZAP für Spam-Nachrichten aktivieren**: Standardmäßig ist ZAP für das Erkennen von Spam aktiviert, aber Sie können dies deaktivieren, indem Sie das Kontrollkästchen löschen.
 
-5. (Optional) Erweitern Sie den Abschnitt **Zulassungslisten**, um Nachrichtenabsender anhand der E-Mail-Adresse oder der E-Mail-Domäne zu konfigurieren, die die Spamfilterung überspringen dürfen:
+   - **Endbenutzer-Spam-Benachrichtigungen aktivieren**: Weitere Informationen finden Sie im Abschnitt [Konfigurieren von Endbenutzer-Spam-Benachrichtigungen](#configure-end-user-spam-notifications) später in diesem Thema.
 
-   > [!CAUTION]
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
+
+7. Im angezeigten Flyout **Zulassungs- und Blockierungsliste** können Sie Absender von Nachrichten nach E-Mail-Adresse oder E-Mail-Domäne konfigurieren, welche die Spamfilterung überspringen dürfen.
+
+   Im Abschnitt **Zugelassen** können Sie erlaubte Absender und Domänen konfigurieren. Im Abschnitt **Blockiert** können Sie blockierte Absender und Domänen hinzufügen.
+
+   > [!IMPORTANT]
    >
-   > - Überlegen Sie es sich genau, bevor Sie hier Domänen hinzufügen. Weitere Informationen finden Sie unter [Erstellen sicherer Absenderlisten in EOP](create-safe-sender-lists-in-office-365.md).
+   > Überlegen Sie es sich genau, bevor Sie Domänen zur Liste der erlaubten Domänen hinzufügen. Weitere Informationen finden Sie unter [Erstellen sicherer Absenderlisten in EOP](create-safe-sender-lists-in-office-365.md).
    >
-   > - Fügen Sie der Liste der zulässigen Domänen niemals akzeptierte Domänen (Domänen, die Sie besitzen) oder allgemeine Domänen (z. B. microsoft.com oder office.com) hinzu. Auf diese Weise könnten Angreifer E-Mails senden, die die Spamfilterung in Ihrer Organisation umgehen.
+   > Fügen Sie der Liste der zulässigen Domänen niemals Ihre eigenen [akzeptierte Domänen](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) oder allgemeine Domänen (z. B. microsoft.com oder office.com) hinzu. Wenn diese Domänen die Spam-Filterung umgehen dürfen, können Angreifer problemlos E-Mails in Ihr Unternehmen senden.
+   >
+   > Das manuelle Sperren von Domänen durch das Hinzufügen zur Liste der blockierten Domänen ist nicht gefährlich, kann jedoch zusätzliche Verwaltungsarbeit bedeuten. Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in EOP](create-block-sender-lists-in-office-365.md).
+   >
+   > Es kann vorkommen, dass eine Nachricht von unseren Filtern übersehen wird, dass Sie nicht mit der Filterbewertung einverstanden sind, oder dass es einige Zeit dauert, bis sich unsere Systeme darauf einstellen. In diesen Fällen stehen die Zulassungsliste und die Blockierungsliste zur Verfügung, um die aktuelle Filterbewertung zu überschreiben. Sie sollten diese Listen aber sparsam und zeitlich begrenzt einsetzen: Lange Listen können unübersichtlich werden, und unser Filterstapel sollte das tun, wofür er vorgesehen ist. Wenn Sie eine zugelassene Domäne über einen längeren Zeitraum behalten wollen, sollten Sie den Sender bitten, zu verifizieren, dass seine Domäne authentifiziert ist und, falls dies nicht der Fall ist, die DMARC-Option „Ablehnen“ dafür festzulegen.
 
-   - **Absender zulassen**: Klicken Sie auf **Bearbeiten**. Führen Sie im angezeigten Flyout **Liste der zulässigen Absender** Folgendes aus:
+   Die Schritte, um einen Eintrag zu einer beliebigen Liste hinzuzufügen, sind die gleichen:
 
-      a. Geben Sie die E-Mail-Adresse des Absenders ein. Mehrere E-Mail-Adressen können durch Semikolons (;) getrennt angegeben werden.
+   1. Klicken Sie auf den Link für die Liste, die Sie konfigurieren wollen:
+      - **Zugelassene** \> **Absender**: Klicken Sie auf **Verwalten von (nn) Absender(n)**.
+      - **Zugelassene** \> **Domänen**: Klicken Sie auf **Zugelassene Domänen**.
+      - **Blockierte** \> **Absender**: Klicken Sie auf **Verwalten von (nn) Absender(n)**.
+      - **Blockierte** \> **Domänen**: Klicken Sie auf **Blockierte Domänen**.
 
-      b. Click ![Hinzufügen (Symbol)](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) um die Absender hinzuzufügen.
+   2. Führen Sie im angezeigten Flyout folgende Schritte aus:
+      1. Klicken Sie auf ![Symbol „Erstellen“](../../media/m365-cc-sc-create-icon.png) **Absender hinzufügen** oder **Domäne hinzufügen**.
+      2. Geben Sie im angezeigten Flyout **Absender hinzufügen** oder **Domäne hinzufügen** die E-Mail-Adresse des Absenders im Feld **Absender** ein, oder die Domäne im Feld **Domäne**. Während Sie tippen, erscheint der Wert unter dem Feld. Wenn Sie mit der Eingabe der E-Mail-Adresse oder Domäne fertig sind, wählen Sie den Wert unter dem Feld aus.
+      3. Wiederholen Sie den vorstehenden Schritt so oft wie nötig. Um einen vorhandenen Wert zu entfernen, klicken Sie auf das ![Symbol „Entfernen“](../../media/m365-cc-sc-remove-selection-icon.png) neben dem Wert.
 
-      Wiederholen Sie diese Schritte so oft wie nötig.
+      Wenn Sie den Vorgang abgeschlossen haben, klicken Sie auf **Absender hinzufügen** oder **Domäne hinzufügen**.
 
-      Die von Ihnen hinzugefügten Absender werden im Flyout im Abschnitt **Zulässiger Absender** angezeigt. Zum Löschen eines Absenders klicken Sie auf ![Entfernen (Symbol)](../../media/scc-remove-icon.png).
+      Zurück im Haupt-Flyout werden die von Ihnen hinzugefügten Absender oder Domänen auf der Seite aufgelistet. Um einen Eintrag von dieser Seite zu entfernen, führen Sie die folgenden Schritte aus:
 
-      Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
+      1. Wählen Sie mindestens einen Eintrag aus der Liste aus. Sie können auch das Feld **Suchen** verwenden, um Werte in der Liste zu finden.
+      2. Nachdem Sie mindestens einen Eintrag ausgewählt haben, wird das Löschsymbol ![Symbol „Löschen“](../../media/m365-cc-sc-delete-icon.png) angezeigt.
+      3. Klicken Sie auf das Löschsymbol ![Symbol „Löschen“](../../media/m365-cc-sc-delete-icon.png) , um die ausgewählten Einträge zu entfernen.
 
-   - **Domäne zulassen**: Klicken Sie auf **Bearbeiten**. Führen Sie im angezeigten Flyout **Liste zulässiger Domänen** folgende Schritte aus:
+      Wenn Sie den Vorgang abgeschlossen haben, klicken Sie auf **Fertig**.
 
-      a. Geben Sie die Domäne ein. Mehrere Domänen können durch Semikolons (;) getrennt angegeben werden.
+      Zurück auf der Seite **Zulassungs- und Blockierungsliste** klicken Sie auf **Weiter**, wenn Sie bereit sind, fortzufahren.
 
-      b. Click ![Hinzufügen (Symbol)](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) um die Domänen hinzuzufügen.
+8. Überprüfen Sie auf der angezeigten Seite **Überprüfung** Ihre Einstellungen. Sie können in jedem Abschnitt **Bearbeiten** auswählen, um die Einstellungen in diesem Abschnitt zu ändern.
 
-      Wiederholen Sie diese Schritte so oft wie nötig.
+   Wenn Sie den Vorgang abgeschlossen haben, klicken Sie auf **Erstellen**.
 
-      Die von Ihnen hinzugefügten Domänen werden im Flyout im Abschnitt **Zulässige Domäne** angezeigt. Wenn Sie eine Domäne löschen möchten, klicken Sie auf ![Entfernen (Symbol)](../../media/scc-remove-icon.png).
+9. Klicken Sie in der angezeigten Bestätigungsseite auf **Fertig**.
 
-      Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
+## <a name="use-the-security-center-to-view-anti-spam-policies"></a>Verwenden des Security Centers zum Anzeigen von Antispamrichtlinien
 
-6. (Optional) Erweitern Sie den Abschnitt **Sperrlisten**, um Nachrichtenabsender nach E-Mail-Adresse oder E-Mail-Domäne zu konfigurieren, die immer als Nachricht mit hoher Spamwahrscheinlichkeit gekennzeichnet werden:
+1. Wechseln Sie im Security Center zu **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Antispam**.
 
-   > [!NOTE]
-   > Das manuelle Sperren von Domänen ist nicht gefährlich, kann jedoch zusätzliche Verwaltungsarbeit bedeuten. Weitere Informationen finden Sie unter [Erstellen von Listen blockierter Absender in EOP](create-block-sender-lists-in-office-365.md).
+2. Suchen Sie auf der Seite **Antispamrichtlinie** nach einem der folgenden Werte:
+   - Der Wert für **Typ** ist **Benutzerdefinierte Antispamrichtlinie**
+   - Der Wert für **Name** ist **Eingehende Antispamrichtlinie (Standard)**
 
-   - **Absender blockieren**: Klicken Sie auf **Bearbeiten**. Führen Sie im angezeigten Flyout **Liste blockierter Absender** folgende Schritte aus:
+   Die folgenden Eigenschaften werden in der Liste der Antispamrichtlinien angezeigt:
 
-      a. Geben Sie die E-Mail-Adresse des Absenders ein. Mehrere E-Mail-Adressen können durch Semikolons (;) getrennt angegeben werden. Platzhalter (*) sind nicht zulässig.
+   - **Name**
+   - **Status**
+   - **Priorität**
+   - **Typ**
 
-      b. Click ![Hinzufügen (Symbol)](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) um die Absender hinzuzufügen.
+3. Wenn Sie eine Antispamrichtlinie durch Klicken auf den Namen auswählen, werden die Richtlinieneinstellungen in einem Flyout angezeigt.
 
-      Wiederholen Sie diese Schritte so oft wie nötig.
+## <a name="use-the-security-center-to-modify-anti-spam-policies"></a>Verwenden des Security Centers zum Ändern von Antispamrichtlinien
 
-      Die von Ihnen hinzugefügten Absender werden im Flyout im Abschnitt **Blockierter Absender** angezeigt. Zum Löschen eines Absenders klicken Sie auf ![Schaltfläche „Entfernen“](../../media/scc-remove-icon.png).
+1. Wechseln Sie im Security Center zu **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Antispam**.
 
-      Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
-
-   - **Domäne blockieren**: Klicken Sie auf **Bearbeiten**. Führen Sie im angezeigten Flyout **Liste blockierter Domänen** Folgendes aus:
-
-      a. Geben Sie die Domäne ein. Mehrere Domänen können durch Semikolons (;) getrennt angegeben werden. Platzhalter (*) sind nicht zulässig.
-
-      b. Click ![Hinzufügen (Symbol)](../../media/c2dd8b3a-5a22-412c-a7fa-143f5b2b5612.png) um die Domänen hinzuzufügen.
-
-      Wiederholen Sie diese Schritte so oft wie nötig.
-
-      Die hinzugefügten Domänen werden im Flyout in der Liste **Blockierte Domäne** angezeigt. Wenn Sie eine Domäne löschen möchten, klicken Sie auf ![Schaltfläche „Entfernen“](../../media/scc-remove-icon.png).
-
-      Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
-
-7. (Optional) Erweitern Sie den Abschnitt **Internationale Spamnachrichten**, um die E-Mail-Sprachen bzw. Quellländer zu konfigurieren, die durch Spamfilterung blockiert werden:
-
-   - **E-Mails in den folgenden Sprachen filtern**: Diese Einstellung ist standardmäßig deaktiviert (**Status: AUS**). Klicken Sie auf **Bearbeiten**. Konfigurieren Sie im daraufhin angezeigten Flyout **Internationale Spameinstellungen** die folgenden Einstellungen:
-
-     - **E-Mails in den folgenden Sprachen filtern**: Aktivieren Sie das Kontrollkästchen, um diese Einstellung zu aktivieren. Deaktivieren Sie das Kontrollkästchen, um diese Einstellung zu deaktivieren.
-
-     - Klicken Sie in das Feld *Name*, und beginnen Sie mit der Eingabe des Namens der Sprache. Eine gefilterte Liste der unterstützten Sprachen wird zusammen mit dem entsprechenden ISO 639-2-Sprachcode angezeigt. Wenn Sie die gesuchte Sprache gefunden haben, wählen Sie sie aus. Wiederholen Sie diesen Schritt so oft wie nötig.
-
-       Die Liste der Sprachen, die Sie ausgewählt haben, wird im Flyout angezeigt. Klicken Sie zum Löschen einer Sprache auf ![Schaltfläche "Entfernen"](../../media/scc-remove-icon.png).
-
-     Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
-
-   - **E-Mails aus den folgenden Ländern oder Regionen filtern**: Diese Einstellung ist standardmäßig deaktiviert (**Status: AUS**). Klicken Sie zum Aktivieren auf **Bearbeiten**. Konfigurieren Sie im daraufhin angezeigten Flyout **Internationale Spameinstellungen** die folgenden Einstellungen:
-
-     - **E-Mails aus den folgenden Ländern oder Regionen filtern**: Aktivieren Sie das Kontrollkästchen, um diese Einstellung zu aktivieren. Deaktivieren Sie das Kontrollkästchen, um diese Einstellung zu deaktivieren.
-
-     - Klicken Sie in das Feld *Name*, und beginnen Sie mit der Eingabe des Namens des Landes oder der Region. Eine gefilterte Liste der unterstützten Länder wird zusammen mit dem entsprechenden aus zwei Buchstaben bestehenden Ländercode nach ISO 3166-1 angezeigt. Wenn Sie das gewünschte Land oder die Region finden, wählen Sie sie aus. Wiederholen Sie diesen Schritt so oft wie nötig.
-
-       Die Liste der Länder, die Sie ausgewählt haben, wird im Flyout angezeigt. Klicken Sie zum Löschen eines Landes oder einer Region auf ![Schaltfläche "Entfernen"](../../media/scc-remove-icon.png).
-
-     Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
-
-8. Der optionale Abschnitt **Spameigenschaften** enthält erweiterte Einstellungen für Spamfilter (Advanced Spam Filter, ASF), die standardmäßig deaktiviert sind. ASF-Einstellungen werden demnächst nicht mehr unterstützt, und ihre Funktionalität wird in andere Teile des Filterstapels übernommen. Wir empfehlen, alle diese ASF-Einstellungen in Ihren Antispamrichtlinien deaktiviert zu lassen.
-
-   Ausführliche Informationen zu diesen Einstellungen finden Sie unter [Einstellungen für erweiterte Spam Filter (ASF) in EOP](advanced-spam-filtering-asf-options.md).
-
-9. (Erforderlich) Erweitern Sie den Abschnitt **Angewendet auf**, um die internen Empfänger zu identifizieren, auf die die Richtlinie angewendet wird.
-
-    Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_).
-
-    Um alle verfügbaren Bedingungen anzuzeigen, ist es am einfachsten, wenn Sie auf **Bedingung hinzufügen** klicken. Sie können auf ![Schaltfläche „Entfernen“](../../media/scc-remove-icon.png) klicken, um Bedingungen zu entfernen, die Sie nicht konfigurieren möchten.
-
-    - **Die Empfängerdomäne ist**: Gibt Empfänger in einer oder mehreren der konfigurierten akzeptierten Domänen in Ihrer Organisation an. Klicken Sie in das Feld **Tag hinzufügen**, um eine Domäne anzuzeigen und auszuwählen. Klicken Sie erneut auf das Feld **Tag hinzufügen**, um weitere Domänen auszuwählen, falls mehrere Domänen verfügbar sind.
-
-    - **Der Empfänger ist**: Gibt ein oder mehrere Postfächer, einen oder mehrere E-Mail-Benutzer oder E-Mail-Kontakte in Ihrer Organisation an. Klicken Sie auf **Tag hinzufügen**, und beginnen Sie mit der Eingabe, um die Liste zu filtern. Klicken Sie erneut auf das Feld **Tag hinzufügen**, um weitere Empfänger auszuwählen.
-
-    - **Der Empfänger ist Mitglied von**: Gibt eine oder mehrere Gruppen in Ihrer Organisation an. Klicken Sie auf **Tag hinzufügen**, und beginnen Sie mit der Eingabe, um die Liste zu filtern. Klicken Sie erneut auf das Feld **Tag hinzufügen**, um weitere Empfänger auszuwählen.
-
-    - **Außer wenn**: Klicken Sie zum Angeben von Ausnahmen für die Regel dreimal auf **Bedingung hinzufügen**, um alle verfügbaren Ausnahmen anzuzeigen. Die Einstellungen und das Verhalten entsprechen genau den Bedingungen.
-
-10. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
-
-## <a name="use-the-security--compliance-center-to-view-anti-spam-policies"></a>Verwenden des Security & Compliance Centers zum Anzeigen von Antispamrichtlinien
-
-1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
-
-2. Klicken Sie auf der Seite **Antispameinstellungen** auf ![Erweitern (Symbol)](../../media/scc-expand-icon.png), um eine Antispamrichtlinie zu erweitern:
-
-   - Die Standardrichtlinie namens **Standard-Spamfilterrichtlinie**.
-
+2. Wählen Sie auf der Seite **Antispamrichtlinie** eine Antispamrichtlinie aus der Liste aus, indem Sie auf den Namen klicken:
    - Eine benutzerdefinierte Richtlinie, die Sie erstellt haben, wobei die Spalte **Typ** den Wert **Benutzerdefinierte Antispamrichtlinie** enthält.
+   - Die Standardrichtlinie mit dem Namen **Eingehende Antispamrichtlinie (Standard)**.
 
-3. Die wichtigen Richtlinieneinstellungen werden in den erweiterten Richtliniendetails angezeigt, die eingeblendet werden. Wenn Sie weitere Details anzeigen möchten, klicken Sie auf **Richtlinie bearbeiten**.
+3. Wählen Sie im angezeigten Flyout für die Richtliniendetails in jedem Abschnitt die Option **Bearbeiten** aus, um die Einstellungen innerhalb des Abschnitts zu ändern. Weitere Informationen zu den Einstellungen finden Sie im vorherigen Abschnitt [Verwenden des Security Centers zum Erstellen von Antispamrichtlinien](#use-the-security-center-to-create-anti-spam-policies) in diesem Artikel.
 
-## <a name="use-the-security--compliance-center-to-modify-anti-spam-policies"></a>Verwenden des Security & Compliance Centers zum Ändern von Antispamrichtlinien
-
-1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
-
-2. Klicken Sie auf der Seite **Antispameinstellungen** auf ![Erweitern (Symbol)](../../media/scc-expand-icon.png), um eine Antispamrichtlinie zu erweitern:
-
-   - Die Standardrichtlinie namens **Standard-Spamfilterrichtlinie**.
-
-   - Eine benutzerdefinierte Richtlinie, die Sie erstellt haben, wobei die Spalte **Typ** den Wert **Benutzerdefinierte Antispamrichtlinie** enthält.
-
-3. Klicken Sie auf **Richtlinie bearbeiten**.
-
-Bei benutzerdefinierten Antispamrichtlinien sind die verfügbaren Einstellungen im eingeblendeten Flyout mit denen identisch, die im Abschnitt [Verwenden des Security & Compliance Centers zum Erstellen von Antispamrichtlinien](#use-the-security--compliance-center-to-create-anti-spam-policies) beschrieben sind.
-
-Bei der standardmäßigen Antispamrichtlinie namens **Standard-Spamfilterrichtlinie** ist der Abschnitt **Angewendet auf** nicht verfügbar (die Richtlinie gilt für alle), und Sie können die Richtlinie nicht umbenennen.
+   Bei der Standard-Antispamrichtlinie ist der Abschnitt **Angewendet auf** nicht verfügbar (die Richtlinie gilt für alle), und Sie können die Richtlinie nicht umbenennen.
 
 Informationen zum Aktivieren oder Deaktivieren einer Richtlinie, zum Festlegen der Prioritätsreihenfolge der Richtlinien oder zum Konfigurieren der Quarantänebenachrichtigungen für Endbenutzer finden Sie in den folgenden Abschnitten.
 
 ### <a name="enable-or-disable-anti-spam-policies"></a>Aktivieren oder Deaktivieren von Antispamrichtlinien
 
-1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
-
-2. Klicken Sie auf der Seite **Antispameinstellungen** auf ![Erweitern (Symbol)](../../media/scc-expand-icon.png), um eine benutzerdefinierte Richtlinie zu erweitern, die Sie erstellt haben (der Wert in der Spalte **Typ** ist **Benutzerdefinierte Antispamrichtlinie**).
-
-3. Achten Sie in den angezeigten erweiterten Richtliniendetails auf den Wert in der Spalte **Ein**.
-
-   Schieben Sie die Umschaltfläche nach links, um die Richtlinie zu deaktivieren: ![Umschaltfläche aus](../../media/scc-toggle-off.png)
-
-   Schieben Sie die Umschaltfläche nach rechts, um die Richtlinie zu aktivieren: ![Umschaltfläche ein](../../media/scc-toggle-on.png)
-
 Die Standard-Antispamrichtlinie kann nicht deaktiviert werden.
+
+1. Wechseln Sie im Security Center zu **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Antispam**.
+
+2. Wählen Sie auf der Seite **Antispamrichtlinie** eine Richtlinie mit dem **Typenwert** **Benutzerdefinierte Antispamrichtlinie** aus der Liste aus, indem Sie auf den Namen klicken.
+
+3. Ganz oben im angezeigten Flyout der Richtliniendetails werden Sie einen der folgenden Werte sehen:
+   - **Richtlinie deaktiviert**: Um die Richtlinie zu aktivieren, klicken Sie auf ![Symbol „Aktivieren“](../../media/m365-cc-sc-turn-on-off-icon.png) **Aktivieren**.
+   - **Richtlinie aktiviert**: Um die Richtlinie zu deaktivieren, klicken Sie auf ![Symbol „Deaktivieren“](../../media/m365-cc-sc-turn-on-off-icon.png) **Deaktivieren**.
+
+4. Klicken Sie im angezeigten Bestätigungsdialog auf **Aktivieren** oder **Deaktivieren**.
+
+5. Klicken Sie im Flyout der Richtliniendetails auf **Schließen**.
+
+Zurück auf der Richtlinien-Hauptseite wird der Wert **Status** der Richtlinie **Aktiviert** oder **Deaktiviert** sein.
 
 ### <a name="set-the-priority-of-custom-anti-spam-policies"></a>Festlegen der Priorität von benutzerdefinierten Antispamrichtlinien
 
 Standardmäßig erhalten Antispamrichtlinien eine Priorität, die auf der Reihenfolge ihrer Erstellung basiert (neuere Richtlinien haben eine niedrigere Priorität als ältere). Eine niedrigere Prioritätsnummer gibt eine höhere Priorität für die Richtlinie an (0 ist die höchste), und Richtlinien werden in der Reihenfolge der Priorität verarbeitet (Richtlinien mit einer höheren Priorität werden vor Richtlinien mit einer niedrigeren Priorität verarbeitet). Keine zwei Richtlinien können die gleiche Priorität aufweisen und die Richtlinienverarbeitung endet, nachdem die erste Richtlinie angewendet wurde.
 
-Weitere Informationen über die Prioritätsreihenfolge und darüber, wie mehrere Richtlinien ausgewertet und angewendet werden, finden Sie unter [Reihenfolge und Priorität beim E-Mail-Schutz](how-policies-and-protections-are-combined.md).
+Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften einer Richtlinie auf **Priorität erhöhen** oder **Priorität verringern** (Sie können den Zahlenwert der **Priorität** im Security Center nicht direkt modifizieren). Die Priorität einer Richtlinie zu verändern macht nur Sinn, wenn Sie mehrere Richtlinien haben.
 
-Benutzerdefinierte Antispamrichtlinien werden in der Reihenfolge angezeigt, in der sie verarbeitet werden (die erste Richtlinie hat den **Priorität**-Wert 0). Die Standard-Antispamrichtlinie namens **Standard-Spamfilterrichtlinie** hat den Prioritätswert **Niedrigste**. Dies kann nicht geändert werden.
+ **Anmerkungen**:
 
- **Hinweis**: Im Security & Compliance Center können Sie die Priorität der Antispamrichtlinie erst nach der Erstellung ändern. In PowerShell können Sie die standardmäßige Priorität bereits beim Erstellen der Spamfilterregel überschreiben (was sich auf die Priorität vorhandener Regeln auswirken kann).
+- Im Security Center können Sie die Priorität der Antispamrichtlinie erst nach deren Erstellung ändern. In PowerShell können Sie die standardmäßige Priorität bereits beim Erstellen der Spamfilterregel überschreiben (was sich auf die Priorität vorhandener Regeln auswirken kann).
+- Antispamrichtlinien werden in der Reihenfolge verarbeitet, in der sie angezeigt werden (die erste Richtlinie hat den **Prioritätswert** 0). Die Standard-Antispamrichtlinie hat den Prioritätswert **Am niedrigsten**, und Sie können dies nicht ändern.
 
-Zum Ändern der Priorität einer Richtlinie verschieben Sie die Richtlinie in der Liste nach oben oder unten (Sie können den **Priorität**-Wert im Security & Compliance Center nicht direkt ändern).
+1. Wechseln Sie im Security Center zu **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Antispam**.
 
-1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
+2. Wählen Sie auf der Seite **Antispamrichtlinie** eine Richtlinie mit dem **Typenwert** **Benutzerdefinierte Antispamrichtlinie** aus der Liste aus, indem Sie auf den Namen klicken.
 
-2. Suchen Sie auf der Seite **Antispameinstellungen** nach den Richtlinien, bei denen die Spalte **Typ** den Wert **Benutzerdefinierte Antispamrichtlinie** enthält. Beachten Sie die Werte in der Spalte **Priorität**:
+3. Ganz oben im angezeigten Flyout der Richtliniendetails werden Sie **Priorität erhöhen** oder **Priorität verringern** sehen, abhängig vom aktuellen Prioritätswert und der Anzahl der benutzerdefinierten Richtlinien:
+   - Der Antispamrichtlinie mit dem **Prioritätswert** **0** steht nur die Option **Priorität verringern** zur Verfügung.
+   - Der Antispamrichtlinie mit dem tiefsten **Prioritätswert** (beispielsweise **3**) steht nur die Option **Priorität erhöhen** zur Verfügung.
+   - Wenn Sie drei oder mehr Antispamrichtlinien haben, stehen für die Richtlinien zwischen dem höchsten und dem niedrigsten Prioritätswert sowohl die Option **Priorität erhöhen** als auch die Option **Priorität vermindern** zur Verfügung.
 
-   - Die benutzerdefinierte Antispamrichtlinie mit der höchsten Priorität hat den Wert ![Abwärtspfeil](../../media/ITPro-EAC-DownArrowIcon.png) **0**.
+   Klicken Sie auf ![Symbol „Priorität erhöhen“](../../media/m365-cc-sc-increase-icon.png) **Priorität erhöhen** oder ![Symbol „Priorität verringern“](../../media/m365-cc-sc-decrease-icon.png) **Priorität verringern**, um den **Prioritätswert** zu ändern.
 
-   - Die benutzerdefinierte Antispamrichtlinie mit der niedrigsten Priorität hat den Wert ![Aufwärtspfeil](../../media/ITPro-EAC-UpArrowIcon.png) **n** (z. B. ![Aufwärtspfeil](../../media/ITPro-EAC-UpArrowIcon.png) **3**).
-
-   - Bei drei oder mehr benutzerdefinierten Antispamrichtlinien haben die Richtlinien zwischen der höchsten und der niedrigsten Priorität die Werte ![Aufwärtspfeil](../../media/ITPro-EAC-UpArrowIcon.png)![Abwärtspfeil](../../media/ITPro-EAC-DownArrowIcon.png) **n** (beispielsweise ![Aufwärtspfeil](../../media/ITPro-EAC-UpArrowIcon.png)![Abwärtspfeil](../../media/ITPro-EAC-DownArrowIcon.png) **2**).
-
-3. Klicken Sie auf ![Pfeil-nach-oben-Symbol](../../media/ITPro-EAC-UpArrowIcon.png) oder ![Pfeil-nach-unten-Symbol,](../../media/ITPro-EAC-DownArrowIcon.png) um die benutzerdefinierte Antispamrichtlinie nach oben oder nach unten in der Prioritätsliste zu verschieben.
+4. Wenn Sie den Vorgang abgeschlossen haben, klicken Sie im Flyout der Richtliniendetails auf **Schließen**.
 
 ### <a name="configure-end-user-spam-notifications"></a>Konfigurieren von Spambenachrichtigungen für Endbenutzer
 
 Wenn eine Nachricht durch eine Spamfilterbewertung in Quarantäne versetzt wird, können Sie Spambenachrichtigungen für Endbenutzer konfigurieren, damit die Empfänger wissen, was mit Nachrichten passiert ist, die an sie gesendet wurden. Weitere Informationen zu diesen Benachrichtigungen finden Sie unter [Spambenachrichtigungen für Endbenutzer in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
+1. Wechseln Sie im Security Center zu **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Antispam**.
 
-2. Klicken Sie auf der Seite **Antispameinstellungen** auf ![Erweitern (Symbol)](../../media/scc-expand-icon.png), um eine Antispamrichtlinie zu erweitern:
-
-   - Die Standardrichtlinie namens **Standard-Spamfilterrichtlinie**.
-
+2. Wählen Sie auf der Seite **Antispamrichtlinien** eine Antispamrichtlinie aus der Liste aus, indem Sie auf den Namen klicken:
    - Eine benutzerdefinierte Richtlinie, die Sie erstellt haben, wobei die Spalte **Typ** den Wert **Benutzerdefinierte Antispamrichtlinie** enthält.
+   - Die Standardrichtlinie mit dem Namen **Eingehende Antispamrichtlinie (Standard)**.
 
-3. Klicken Sie in den angezeigten erweiterten Richtliniendetails auf **Spambenachrichtigungen für Endbenutzer konfigurieren**.
+3. Klicken Sie im angezeigten Flyout der Richtliniendetails im Abschnitt **Aktionen** auf **Bearbeiten**. Konfigurieren Sie im angezeigten Flyout **Aktionen** die folgenden Einstellungen:
 
-4. Konfigurieren Sie im daraufhin geöffneten Dialogfeld **\<Policy Name\>** die folgenden Einstellungen:
+   - **Spambenachrichtigungen für Endbenutzer aktivieren**: Wählen Sie das Kontrollkästchen aus, um Benachrichtigungen zu aktivieren, oder löschen Sie es, um Benachrichtigungen zu deaktivieren. Wenn Sie das Kontrollkästchen aktivieren, werden die folgenden zusätzlichen Einstellungen angezeigt:
 
-   - **Spambenachrichtigungen für Endbenutzer aktivieren**: Aktivieren Sie das Kontrollkästchen, um Benachrichtigungen zu aktivieren. Deaktivieren Sie das Kontrollkästchen, um Benachrichtigungen zu deaktivieren.
+     - **Spambenachrichtigungen für Endbenutzer senden alle (Tage)**: Wählen Sie aus, wie häufig Benachrichtigungen gesendet werden. Die Standardeinstellung beträgt 3 Tage. Sie können 1 bis 15 Tage eingeben.
 
-   - **Spambenachrichtigungen für Endbenutzer senden alle (Tage)**: Wählen Sie aus, wie häufig Benachrichtigungen gesendet werden. Die Standardeinstellung beträgt 3 Tage. Sie können 1 bis 15 Tage eingeben.
+       Es gibt 3 Zyklen der Spambenachrichtigung für Endbenutzer innerhalb eines 24-Stunden-Zeitraums, die zu den folgenden Zeiten beginnen: 01:00 UTC, 08:00 UTC und 16:00 UTC.
 
-     Es gibt 3 Zyklen der Spambenachrichtigung für Endbenutzer innerhalb eines 24-Stunden-Zeitraums, die zu den folgenden Zeiten beginnen: 01:00 UTC, 08:00 UTC und 16:00 UTC.
+       > [!NOTE]
+       > Wenn eine Benachrichtigung während eines vorherigen Zyklus ausgelassen wurde, wird die Benachrichtigung durch einen nachfolgenden Zyklus per Push gesendet. Dies könnte dazu führen, dass mehrere Benachrichtigungen am selben Tag erscheinen.
 
-     > [!NOTE]
-     > Wenn eine Benachrichtigung während eines vorherigen Zyklus ausgelassen wurde, wird die Benachrichtigung durch einen nachfolgenden Zyklus per Push gesendet. Dies kann dazu führen, dass mehrere Benachrichtigungen am selben Tag auftreten.
-
-   - **Benachrichtigungssprache**: Klicken Sie auf die Dropdownliste, und wählen Sie eine verfügbare Sprache aus. Der Standardwert ist **Standard**, d. h. Englisch.
+     - **Sprache**: Klicken Sie auf die Dropdownliste, und wählen Sie eine verfügbare Sprache aus. Der Standardwert ist **Standard**, d. h. Englisch.
 
    Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
-## <a name="use-the-security--compliance-center-to-remove-anti-spam-policies"></a>Verwenden des Security & Compliance Centers zum Entfernen von Antispamrichtlinien
+4. Zurück auf dem Flyout der Richtliniendetails klicken Sie auf **Schließen**.
 
-1. Navigieren Sie im Security & Compliance Center zu **Bedrohungsmanagement** \> **Richtlinie** \> **Antispam**.
+## <a name="use-the-security-center-to-remove-anti-spam-policies"></a>Verwenden des Security Centers zum Entfernen von Antispamrichtlinien
 
-2. Klicken Sie auf der Seite **Antispameinstellungen** auf ![Erweitern (Symbol)](../../media/scc-expand-icon.png), um eine benutzerdefinierte Richtlinie zu erweitern, die Sie löschen möchten (die Spalte **Typ** enthält den Wert **Benutzerdefinierte Antispamrichtlinie**).
+Wenn Sie das Security Center verwenden, um eine Antispamrichtlinie zu entfernen, werden sowohl die Spamfilterregel als auch die entsprechende Spamfilterrichtlinie gelöscht. Sie können die Standardrichtlinie nicht entfernen.
 
-3. Klicken Sie in den angezeigten erweiterten Richtliniendetails auf **Richtlinie löschen**.
+1. Wechseln Sie im Security Center zu **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Antispam**.
 
-4. Klicken Sie im angezeigten Dialogfeld mit der Warnung auf **Ja**.
+2. Wählen Sie auf der Seite **Antispamrichtlinie** eine Richtlinie mit dem **Typenwert** **Benutzerdefinierte Antispamrichtlinie** aus der Liste aus, indem Sie auf den Namen klicken. Ganz oben auf dem angezeigten Flyout der Richtliniendetails klicken Sie auf ![Symbol „Weiter Aktionen“](../../media/m365-cc-sc-more-actions-icon.png) **Weitere Aktionen** \> ![Symbol „Richtlinie löschen“](../../media/m365-cc-sc-delete-icon.png) **Richtlinie löschen**.
 
-Die Standardrichtlinie kann nicht entfernt werden.
+3. Klicken Sie im angezeigten Bestätigungsdialog auf **Ja**.
 
 ## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-anti-spam-policies"></a>Verwenden von Exchange Online PowerShell oder eigenständige EOP PowerShell zum Konfigurieren von Antispamrichtlinien
 
@@ -387,12 +362,10 @@ In Exchange Online PowerShell oder der eigenständigen Exchange Online Protectio
 
 Die folgenden Einstellungen für Antispamrichtlinien sind nur in PowerShell verfügbar:
 
-- Der Parameter _MarkAsSpamBulkMail_, der standardmäßig `On` ist. Die Auswirkungen dieser Einstellung wurden im Abschnitt [Verwenden des Security & Compliance Centers zum Erstellen von Antispamrichtlinien](#use-the-security--compliance-center-to-create-anti-spam-policies) weiter oben in diesem Artikel erläutert.
+- Der Parameter _MarkAsSpamBulkMail_, der standardmäßig `On` ist. Die Auswirkungen dieser Einstellung wurden im Abschnitt [Verwenden des Security Centers zum Erstellen von Antispamrichtlinien](#use-the-security-center-to-create-anti-spam-policies) weiter oben in diesem Artikel erläutert.
 
 - Die folgenden Einstellungen für Spam-Quarantänebenachrichtigungen für Endbenutzer:
-
   - Der Parameter _DownloadLink_, der den Link zum Junk-E-Mail-Berichtstool für Outlook anzeigt oder ausblendet.
-
   - Der Parameter _EndUserSpamNotificationCustomSubject_, den Sie verwenden können, um die Betreffzeile der Benachrichtigung anzupassen.
 
 ### <a name="use-powershell-to-create-anti-spam-policies"></a>Verwenden von PowerShell zum Erstellen von Antispamrichtlinien
@@ -406,12 +379,12 @@ Das Erstellen einer Antispamrichtlinie in PowerShell ist ein zweistufiger Vorgan
 
 - Sie können eine neue Spamfilterregel erstellen und ihr eine vorhandene, nicht zugeordnete Spamfilterrichtlinie zuweisen. Eine Spamfilterregel kann nicht mit mehreren Spamfilterrichtlinien verknüpft werden.
 
-- Sie können die folgenden Einstellungen für neue Spamfilterrichtlinien in PowerShell konfigurieren, die erst dann im Security & Compliance Center verfügbar sind, wenn Sie die Richtlinie erstellt haben:
+- Sie können die folgenden Einstellungen für neue Spamfilterrichtlinien in PowerShell konfigurieren, die erst dann im Security Center verfügbar sind, wenn Sie die Richtlinie erstellt haben:
 
   - Erstellen Sie die neue Richtlinie als deaktiviert (_Aktiviert_ `$false` im Cmdlet **New-HostedContentFilterRule**).
   - Legen Sie die Priorität der Richtlinie bei der Erstellung fest (_Priority_ _\<Number\>_) im Cmdlet **New-HostedContentFilterRule**).
 
-- Eine neue Spamfilterrichtlinie, die Sie in PowerShell erstellen, wird erst im Security & Compliance Center angezeigt, nachdem Sie die Richtlinie einer Spamfilterregel zugewiesen haben.
+- Eine neue Spamfilterrichtlinie, die Sie in PowerShell erstellen, wird erst im Security Center angezeigt, nachdem Sie die Richtlinie einer Spamfilterregel zugewiesen haben.
 
 #### <a name="step-1-use-powershell-to-create-a-spam-filter-policy"></a>Schritt 1: Verwenden von PowerShell zum Erstellen einer Spamfilterrichtlinie
 
@@ -424,15 +397,11 @@ New-HostedContentFilterPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments
 In diesem Beispiel wird eine Spamfilterrichtlinie namens Contoso Executives mit den folgenden Einstellungen erstellt:
 
 - Nachrichten werden in Quarantäne gestellt, wenn die Spamfilterbewertung „Spam“ oder „Nachricht mit hoher Spamwahrscheinlichkeit“ lautet.
-
-- BCL 6 löst die Aktion für eine Spamfilterbewertung „Massen-E-Mail“ aus.
+- BCL 7, 8 oder 9 lösen die Aktion für eine Spamfilterbewertung „Massen-E-Mail“ aus.
 
 ```PowerShell
 New-HostedContentFilterPolicy -Name "Contoso Executives" -HighConfidenceSpamAction Quarantine -SpamAction Quarantine -BulkThreshold 6
 ```
-
-> [!NOTE]
-> **New-HostedContentFilterPolicy** und **Set-HostedContentFilterPolicy** enthalten einen älteren _ZapEnabled_-Parameter sowie neuere _PhishZapEnabled_ und _SpamZapEnabled_-Parameter. Der Parameter _ZapEnabled_ gilt seit Februar 2020 als veraltet. Die Parameter _PhishZapEnabled_ und _SpamZapEnabled_ haben bisher ihre Werte aus dem Parameter _ZapEnabled_ geerbt. Wenn Sie aber die Parameter _PhishZapEnabled_ und _SpamZapEnabled_ in einem Befehl verwenden oder wenn Sie die Einstellungen **Spam ZAP** oder **Phish ZAP** in der Antispamrichtlinie im Security & Compliance Center verwenden, wird der Wert des Parameters _ZapEnabled_ ignoriert. Verwenden Sie also nicht den Parameter _ZapEnabled_. Verwenden Sie stattdessen die Parameter _PhishZapEnabled_ und _SpamZapEnabled_.
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy).
 
@@ -447,7 +416,6 @@ New-HostedContentFilterRule -Name "<RuleName>" -HostedContentFilterPolicy "<Poli
 In diesem Beispiel wird eine neue Spamfilterregel namens Contoso Executives mit den folgenden Einstellungen erstellt:
 
 - Die Spamfilterrichtlinie namens Contoso Executives ist der Regel zugeordnet.
-
 - Die Regel gilt für Mitglieder der Gruppe mit dem Namen „Contoso Executive Group“.
 
 ```PowerShell
@@ -521,8 +489,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-Hoste
 Abgesehen von den nachfolgenden Elementen stehen beim Ändern einer Spamfilterrichtlinie in PowerShell dieselben Einstellungen zur Verfügung, wie wenn Sie die Richtlinie erstellen gemäß Abschnitt [Schritt 1: Verwenden von PowerShell zum Erstellen einer Spamfilterrichtlinie](#step-1-use-powershell-to-create-a-spam-filter-policy) weiter oben in diesem Artikel.
 
 - Die Option _MakeDefault_, mit der die angegebene Richtlinie zur Standardrichtlinie erklärt wird (angewendet auf alle, immer **Niedrigste** Priorität, und Sie können sie nicht löschen), steht nur zur Verfügung, wenn Sie eine Spamfilterrichtlinie in PowerShell ändern.
-
-- Sie können eine Spamfilterrichtlinie nicht umbenennen (das Cmdlet **Set-HostedContentFilterPolicy** hat keinen _Name_-Parameter). Wenn Sie eine Antispamrichtlinie im Security & Compliance Center umbenennen, benennen Sie nur die Spamfilter _regel_ um.
+- Sie können eine Spamfilterrichtlinie nicht umbenennen (das Cmdlet **Set-HostedContentFilterPolicy** hat keinen _Name_-Parameter). Wenn Sie eine Antispamrichtlinie im Security Center umbenennen, benennen Sie nur die _Regel_ für den Spamfilter um.
 
 Verwenden Sie zum Ändern einer Spamfilterrichtlinie folgende Syntax:
 
@@ -544,7 +511,7 @@ Verwenden Sie zum Ändern einer Spamfilterregel folgende Syntax:
 Set-HostedContentFilterRule -Identity "<RuleName>" <Settings>
 ```
 
-In diesem Beispiel wird die vorhandene Spamfilterregel namens `{Fabrikam Spam Filter}` umbenannt, die im Security & Compliance Center zu Problemen führen kann.
+In diesem Beispiel wird die vorhandene Spamfilterregel namens `{Fabrikam Spam Filter}` umbenannt.
 
 ```powershell
 Set-HostedContentFilterRule -Identity "{Fabrikam Spam Filter}" -Name "Fabrikam Spam Filter"
@@ -595,7 +562,6 @@ Set-HostedContentFilterRule -Identity "Marketing Department" -Priority 2
 **Hinweise**:
 
 - Verwenden Sie stattdessen den Parameter _Priority_ im Cmdlet **New-HostedContentFilterRule**, um die Priorität einer neuen Regel bei ihrer Erstellung festzulegen.
-
 - Die Standard-Spamfilterrichtlinie weist keine entsprechende Spamfilterregel auf und hat immer den nicht änderbaren Prioritätswert **Niedrigste**.
 
 ### <a name="use-powershell-to-remove-spam-filter-policies"></a>Verwenden von PowerShell zum Entfernen von Spamfilterrichtlinien
@@ -639,7 +605,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Ho
 ### <a name="send-a-gtube-message-to-test-your-spam-policy-settings"></a>Senden einer GTUBE-Nachricht, um die Einstellungen für die Spamrichtlinie zu testen
 
 > [!NOTE]
-> Diese Schritte funktionieren nur, wenn die E-Mail-Organisation, von der Sie die GTUBE-Nachricht senden, nicht nach ausgehenden Spam-E-Mails sucht. Wenn sie dies tut, kann die Testnachricht nicht gesendet werden.
+> Diese Schritte funktionieren nur, wenn die E-Mail-Organisation, von der Sie die GTUBE-Nachricht senden, nicht nach ausgehenden Spam-E-Mails sucht. Wenn sie dies tut, können Sie die Testnachricht nicht senden.
 
 GTUBE (Generic Test for Unsolicited Bulk Email) ist eine Textzeichenfolge, die Sie in eine Testnachricht einschließen, um die Antispameinstellungen Ihrer Organisation zu überprüfen. Eine GTUBE-Nachricht ähnelt der EICAR-Textdatei (European Institute for Computer Antivirus Research) zum Testen der Schadsoftwareeinstellungen.
 
@@ -648,10 +614,3 @@ Geben Sie den folgenden GTUBE-Text in eine E-Mail in einer Zeile ohne Leerzeiche
 ```text
 XJS*C4JDBQADN1.NSBN3*2IDNEN*GTUBE-STANDARD-ANTI-UBE-TEST-EMAIL*C.34X
 ```
-
-## <a name="allowblock-lists"></a>Zulassungs- und Sperrlisten
-
-Es kann vorkommen, dass eine Nachricht von unseren Filtern übersehen wird, oder dass es einige Zeit dauert, bis sich unsere Systeme darauf einstellen. Für diese Fälle bietet die Antispamrichtlinie Zulassungs- und Sperrlisten, um die aktuelle Bewertung außer Kraft zu setzen. Diese Option sollte sehr sparsam genutzt werden, weil die Verwaltung der Listen mühsam werden kann, und nur vorübergehend, da unser Filter-Stack seinen Zweck normalerweise wie vorgesehen erfüllen sollte.
-
-> [!TIP]
-> Es kann vorkommen, dass Ihre Organisation mit einer Bewertung von Seiten des Dienstes nicht einverstanden ist. In diesem Fall können Sie die Zulassungs- bzw. Sperrlisteneinträge dauerhaft beibehalten. Wenn Sie allerdings beabsichtigen, eine Domäne einer Zulassungsliste für längere Zeiträume hinzuzufügen, sollten Sie den Sender bitten, sicherzustellen, dass seine Domäne authentifiziert ist und, falls dies nicht der Fall ist, die DMARC-Option „Ablehnen“ dafür festlegen.
