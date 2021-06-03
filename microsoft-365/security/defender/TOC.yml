@@ -296,6 +296,8 @@
           items:
             - name: Übersicht über Microsoft 365 Defender-APIs (Vorschau)
               href: api-overview.md
+            - name: Unterstützte Microsoft 365 Defender-APIs
+              href: api-supported.md
             - name: Erste Schritte mit Microsoft 365 Defender-APIs (Vorschau)
               items:
                 - name: Microsoft 365 Defender-API-Lizenz und Nutzungsbedingungen
@@ -314,15 +316,21 @@
                   href: api-articles.md
             - name: Microsoft 365 Defender-APIs und -Schema (Vorschau)
               items:
-                - name: Unterstützte Microsoft 365 Defender-APIs
-                  href: api-supported.md
                 - name: Häufige Rest-API-Fehlercodes
                   href: api-error-codes.md
+                - name: Streaming-API
+                  items:
+                    - name: Microsoft 365 Streaming-API
+                      href: ../defender-endpoint/raw-data-export.md
+                    - name: Streamen erweiterter Ereignissuchen an den Azure Events-Hub
+                      href: ../defender-endpoint/raw-data-export-event-hub.md
+                    - name: Streamen erweiterter Ereignissuchen an Ihr Speicherkonto
+                      href: ../defender-endpoint/raw-data-export-storage.md
                 - name: Erweiterte Suche-API
                   href: api-advanced-hunting.md
-                - name: Vorfall-APIs
+                - name: APIs für Vorfälle
                   items:
-                    - name: Vorfall-Methoden und Eigenschaften
+                    - name: Methoden und Eigenschaften von Vorfällen
                       href: api-incident.md
                     - name: Auflisten von Vorfällen
                       href: api-list-incidents.md

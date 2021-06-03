@@ -137,7 +137,7 @@
               href: get-started/m365-apps.md
             - name: Microsoft Teams
               href: get-started/teams.md
-            - name: "Microsoft\_OneDrive"
+            - name: Microsoft OneDrive
               href: get-started/onedrive.md
     - name: Arbeiten mit Microsoft Managed Desktop
       href: working-with-managed-desktop/index.md
@@ -147,14 +147,6 @@
           items:
             - name: Gerätebestandsbericht
               href: working-with-managed-desktop/device-inventory-report.md
-            - name: Benutzungseinblicke
-              href: working-with-managed-desktop/usage-insights.md
-            - name: Zuverlässigkeitseinblicke
-              href: working-with-managed-desktop/reliability-insights.md
-            - name: Akku-Einblicke
-              href: working-with-managed-desktop/battery-insights.md
-            - name: Informationen zu Windows-Sicherheitsupdates
-              href: working-with-managed-desktop/security-update-insights.md
         - name: Administratorunterstützung
           href: working-with-managed-desktop/admin-support.md
         - name: Benutzerunterstützung

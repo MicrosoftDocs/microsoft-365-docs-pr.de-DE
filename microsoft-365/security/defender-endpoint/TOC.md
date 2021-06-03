@@ -593,11 +593,6 @@
 ###### [Erweiterte Bedrohungssuche mit PowerShell](run-advanced-query-sample-powershell.md)
 ###### [Verwenden von OData-Abfragen](exposed-apis-odata-samples.md)
 
-#### [API für das Streaming von Rohdaten]()
-##### [Streaming von Rohdaten](raw-data-export.md)
-##### [Streamen erweiterter Ereignissuchen an den Azure Events-Hub](raw-data-export-event-hub.md)
-##### [Streamen erweiterter Ereignissuchen an Ihr Speicherkonto](raw-data-export-storage.md)
-
 #### [SIEM-Integration]()
 ##### [Grundlegendes zu Threat Intelligence-Konzepten](threat-indicator-concepts.md)
 ##### [Informationen zu den verschiedenen Möglichkeiten zum Herausziehen von Erkennungen](configure-siem.md)

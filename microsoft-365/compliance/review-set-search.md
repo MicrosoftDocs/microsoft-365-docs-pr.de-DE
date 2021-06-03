@@ -1,5 +1,5 @@
 ---
-title: Abfragen der Daten in einem Prüfdateisatz
+title: Abfragen des Inhalts in einem Prüfdateisatz
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,55 +15,104 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Erfahren Sie, wie Sie eine Abfrage in einem Überprüfungssatz erstellen und ausführen, um Daten für eine effizientere Überprüfung in einem Advanced eDiscovery organisieren.
+description: Erfahren Sie, wie Sie eine Abfrage in einem Prüfdateisatz erstellen und ausführen, um Inhalte für eine effizientere Überprüfung in einem Advanced eDiscovery Fall zu organisieren.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5a03b0c863f9cc2050b18ce83ed11b8a71d1db4d
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
+ms.openlocfilehash: 64dbeb8ad68f4188e5768a0a7e0e80ca6c22760b
+ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52345800"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52736422"
 ---
-# <a name="query-the-data-in-a-review-set"></a><span data-ttu-id="56328-103">Abfragen der Daten in einem Prüfdateisatz</span><span class="sxs-lookup"><span data-stu-id="56328-103">Query the data in a review set</span></span>
+# <a name="query-and-filter-content-in-a-review-set"></a><span data-ttu-id="155fc-103">Abfragen und Filtern von Inhalten in einem Prüfdateisatz</span><span class="sxs-lookup"><span data-stu-id="155fc-103">Query and filter content in a review set</span></span>
 
-<span data-ttu-id="56328-104">In den meisten Fällen ist es hilfreich, sich tiefer in die Daten in einem Überprüfungssatz zu vertiefen und diese Daten zu organisieren, um eine effizientere Überprüfung zu ermöglichen.</span><span class="sxs-lookup"><span data-stu-id="56328-104">In most cases, it will be useful to be able to dig deeper into the data in a review set and organize that data to facilitate a more efficient review.</span></span> <span data-ttu-id="56328-105">Die Verwendung von Abfragen in einem Überprüfungssatz hilft Ihnen, sich auf eine Teilmenge von Dokumenten zu konzentrieren, die die Kriterien Ihrer Überprüfung erfüllen.</span><span class="sxs-lookup"><span data-stu-id="56328-105">Using Queries in a review set helps you focus on a subset of documents that meet the criteria of your review.</span></span>
+<span data-ttu-id="155fc-104">In den meisten Fällen ist es hilfreich, sich eingehender mit den Inhalten in einem Prüfdateisatz zu befassen und sie zu organisieren, um eine effizientere Überprüfung zu ermöglichen.</span><span class="sxs-lookup"><span data-stu-id="155fc-104">In most cases, it will be useful to dig deeper into the content in a review set and organize it to facilitate a more efficient review.</span></span> <span data-ttu-id="155fc-105">Mithilfe von Filtern und Abfragen in einem Prüfdateisatz können Sie sich auf eine Teilmenge von Dokumenten konzentrieren, die den Kriterien Ihrer Rezension entsprechen.</span><span class="sxs-lookup"><span data-stu-id="155fc-105">Using filters and queries in a review set helps you focus on a subset of documents that meet the criteria of your review.</span></span>
 
-## <a name="creating-and-running-a-query-in-a-review-set"></a><span data-ttu-id="56328-106">Erstellen und Ausführen einer Abfrage in einem Überprüfungssatz</span><span class="sxs-lookup"><span data-stu-id="56328-106">Creating and running a query in a review set</span></span>
+## <a name="default-filters"></a><span data-ttu-id="155fc-106">Standardfilter</span><span class="sxs-lookup"><span data-stu-id="155fc-106">Default filters</span></span>
 
-<span data-ttu-id="56328-107">Wenn Sie eine Abfrage für die Dokumente in einem Überprüfungssatz erstellen und ausführen möchten, wählen Sie im Überprüfungssatz **Neue** Abfrage aus.</span><span class="sxs-lookup"><span data-stu-id="56328-107">To create and run a query on the documents in a review set, select **New query** in the review set.</span></span> <span data-ttu-id="56328-108">Nachdem Sie die Abfrage benennen und die Bedingungen definiert haben, wählen Sie **Speichern** aus, um die Abfrage zu speichern und ausführen.</span><span class="sxs-lookup"><span data-stu-id="56328-108">After you name your query and define the conditions, select **Save** to save and run the query.</span></span> <span data-ttu-id="56328-109">Wählen Sie zum Ausführen einer zuvor gespeicherten Abfrage eine gespeicherte Abfrage aus.</span><span class="sxs-lookup"><span data-stu-id="56328-109">To run a query that has been previously saved, select a saved query.</span></span>
+<span data-ttu-id="155fc-107">In einem Prüfdateisatz gibt es fünf Standardfilter, die im Prüfdateisatz vorinstalliert sind:</span><span class="sxs-lookup"><span data-stu-id="155fc-107">In a review set, there are five default filters that are pre-loaded in the review set:</span></span>
 
-![Überprüfen von Satzabfragen](../media/AeDReviewSetQueries.png)
+- <span data-ttu-id="155fc-108">Schlüsselwörter</span><span class="sxs-lookup"><span data-stu-id="155fc-108">Keywords</span></span>
+- <span data-ttu-id="155fc-109">Datum</span><span class="sxs-lookup"><span data-stu-id="155fc-109">Date</span></span>
+- <span data-ttu-id="155fc-110">Absender/Autor</span><span class="sxs-lookup"><span data-stu-id="155fc-110">Sender/Author</span></span>
+- <span data-ttu-id="155fc-111">Betreff/Titel</span><span class="sxs-lookup"><span data-stu-id="155fc-111">Subject/Title</span></span>
+- <span data-ttu-id="155fc-112">Tags</span><span class="sxs-lookup"><span data-stu-id="155fc-112">Tags</span></span>
 
-## <a name="building-a-review-set-query"></a><span data-ttu-id="56328-111">Erstellen einer Überprüfungssatzabfrage</span><span class="sxs-lookup"><span data-stu-id="56328-111">Building a review set query</span></span>
+![Standardfiltertypen](../media/DefaultFilterTypes.png)
 
-<span data-ttu-id="56328-112">Sie können eine Abfrage mithilfe einer Kombination aus Schlüsselwörtern, Eigenschaften und Bedingungen in der Keywords-Bedingung erstellen.</span><span class="sxs-lookup"><span data-stu-id="56328-112">You can build a query by using a combination of keywords, properties, and conditions in the Keywords condition.</span></span> <span data-ttu-id="56328-113">Sie können Bedingungen auch als Block gruppieren (als *Bedingungsgruppe* bezeichnet), um eine komplexere Abfrage zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="56328-113">You can also group conditions as a block (called a *condition group*) to build a more complex query.</span></span> <span data-ttu-id="56328-114">Eine Liste und Beschreibung der Metadaten-Eigenschaften, die Sie durchsuchen können, finden Sie unter [Dokumentmetadatenfeldern in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).</span><span class="sxs-lookup"><span data-stu-id="56328-114">For a list and description of metadata properties that you can search, see [Document metadata fields in Advanced eDiscovery](document-metadata-fields-in-Advanced-eDiscovery.md).</span></span>
+<span data-ttu-id="155fc-114">Klicken Sie auf jeden Filter, um ihn zu erweitern und einen Wert zuzuweisen.</span><span class="sxs-lookup"><span data-stu-id="155fc-114">Click each filter to expand it and assign a value.</span></span> <span data-ttu-id="155fc-115">Klicken Sie außerhalb des Filters, um den Filter automatisch auf den Prüfdateisatz anzuwenden.</span><span class="sxs-lookup"><span data-stu-id="155fc-115">Click outside the filter to automatically apply the filter to the review set.</span></span> <span data-ttu-id="155fc-116">Der folgende Screenshot zeigt den Datumsfilter, der so konfiguriert ist, dass Dokumente innerhalb eines Datumsbereichs angezeigt werden.</span><span class="sxs-lookup"><span data-stu-id="155fc-116">The following screenshot shows the Date filter configured to show documents within a date range.</span></span>
 
-### <a name="conditions"></a><span data-ttu-id="56328-115">Bedingungen</span><span class="sxs-lookup"><span data-stu-id="56328-115">Conditions</span></span>
+![Erweiterter Standardfilter](../media/ExpandedFilter.png)
 
-<span data-ttu-id="56328-116">Jedes durchsuchbare Feld in einem Überprüfungssatz hat eine entsprechende Bedingung, die Sie zum Erstellen ihrer Abfrage verwenden können.</span><span class="sxs-lookup"><span data-stu-id="56328-116">Every searchable field in a review set has a corresponding condition that you can use to build your query.</span></span>
+## <a name="add-or-remove-filters"></a><span data-ttu-id="155fc-118">Hinzufügen oder Entfernen von Filtern</span><span class="sxs-lookup"><span data-stu-id="155fc-118">Add or remove filters</span></span>
 
-<span data-ttu-id="56328-117">Es gibt mehrere Arten von Bedingungen:</span><span class="sxs-lookup"><span data-stu-id="56328-117">There are multiple types of conditions:</span></span>
+<span data-ttu-id="155fc-119">Um Filter hinzuzufügen oder zu entfernen, die für den Prüfdateisatz angezeigt werden, wählen Sie **Filter** aus, um den Filterbereich zu öffnen, der auf einer Flyoutseite angezeigt wird.</span><span class="sxs-lookup"><span data-stu-id="155fc-119">To add or remove filters that are displayed for the review set, select **Filters** to open the filter panel, which is displayed on a flyout page.</span></span> 
 
-- <span data-ttu-id="56328-118">Freetext: Eine Freetextbedingung wird für Textfelder wie betreff verwendet.</span><span class="sxs-lookup"><span data-stu-id="56328-118">Freetext: A freetext condition is used for text fields such as subject.</span></span> <span data-ttu-id="56328-119">Sie können mehrere Suchbegriffe auflisten, indem Sie sie durch ein Komma trennen.</span><span class="sxs-lookup"><span data-stu-id="56328-119">You can list multiple search terms by separating them out with a comma.</span></span>
+![Filterbereich](../media/FilterPanel.png)
 
-- <span data-ttu-id="56328-120">Date: Eine Datumsbedingung wird für Datumsfelder wie das Datum der letzten Änderung verwendet.</span><span class="sxs-lookup"><span data-stu-id="56328-120">Date: A date condition is used for date fields such as last modified date.</span></span>
+<span data-ttu-id="155fc-121">Die verfügbaren Filter sind in vier Abschnitten unterteilt:</span><span class="sxs-lookup"><span data-stu-id="155fc-121">The available filters are organized in four sections:</span></span>
 
-- <span data-ttu-id="56328-121">Suchoptionen: Eine Suchoptionenbedingung enthält eine Liste der möglichen Werte für das bestimmte Feld in Ihrem Überprüfungssatz.</span><span class="sxs-lookup"><span data-stu-id="56328-121">Search options: A search options condition will provide a list of possible values for the particular field in your review set.</span></span> <span data-ttu-id="56328-122">Dies wird für Felder verwendet, z. B. Absender, bei denen eine begrenzte Anzahl möglicher Werte in Ihrem Überprüfungssatz enthalten ist.</span><span class="sxs-lookup"><span data-stu-id="56328-122">This is used for fields, such as sender, where there is a finite number of possible values in your review set.</span></span>
+- <span data-ttu-id="155fc-122">**Suche:** Filter, die unterschiedliche Suchfunktionen bereitstellen.</span><span class="sxs-lookup"><span data-stu-id="155fc-122">**Search**: Filters that provide different search capabilities.</span></span>
 
-- <span data-ttu-id="56328-123">Schlüsselwort: Eine Schlüsselwortbedingung ist eine bestimmte Instanz von Freetextbedingung, die Sie zum Suchen nach Begriffen oder verwenden KQL- like query language in verwenden können.</span><span class="sxs-lookup"><span data-stu-id="56328-123">Keyword: A keyword condition is a specific instance of freetext condition that you can use to search for terms, or use KQL-like query language in.</span></span> <span data-ttu-id="56328-124">Weitere Informationen finden Sie unten.</span><span class="sxs-lookup"><span data-stu-id="56328-124">See below for more detail.</span></span>
+- <span data-ttu-id="155fc-123">**Analyse & vorhersagebasierte Codierung:** Filter für Eigenschaften, die generiert und zu Dokumenten hinzugefügt werden, wenn Sie das **Dokument & E-Mail-Analyseauftrag** ausführen oder Modelle für die Vorhersagecodierung verwenden.</span><span class="sxs-lookup"><span data-stu-id="155fc-123">**Analytics & predictive coding**: Filters for properties generated and added to documents when you run the **Document & email analytic** job or use predictive coding models.</span></span>
 
-### <a name="query-language"></a><span data-ttu-id="56328-125">Abfragesprache</span><span class="sxs-lookup"><span data-stu-id="56328-125">Query language</span></span>
+- <span data-ttu-id="155fc-124">**IDs:** Filtert nach allen ID-Eigenschaften von Dokumenten.</span><span class="sxs-lookup"><span data-stu-id="155fc-124">**IDs**: Filters for all ID properties of documents.</span></span>
 
-<span data-ttu-id="56328-126">Zusätzlich zu den Bedingungen können Sie eine KQL- like query language in der Keywords-Bedingung verwenden, um Ihre Abfrage zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="56328-126">In addition to conditions, you can use a KQL-like query language in the Keywords condition to build your query.</span></span> <span data-ttu-id="56328-127">Die Abfragesprache für Überprüfungssatzabfragen unterstützt standardmäßige boolesche Operatoren, z. B. **AND**, **OR**, **NOT** und **NEAR**.</span><span class="sxs-lookup"><span data-stu-id="56328-127">The query language for review set queries supports standard Boolean operators, such as **AND**, **OR**, **NOT**, and **NEAR**.</span></span> <span data-ttu-id="56328-128">Es unterstützt auch einen einstelligen Platzhalter (?) und einen mehrstelligen Platzhalter (\*).</span><span class="sxs-lookup"><span data-stu-id="56328-128">It also supports a single-character wildcard (?) and a multi-character wildcard (\*).</span></span>
+- <span data-ttu-id="155fc-125">**Elementeigenschaften:** Filter für Dokumenteigenschaften.</span><span class="sxs-lookup"><span data-stu-id="155fc-125">**Item properties**: Filters for document properties.</span></span> 
 
-## <a name="filters"></a><span data-ttu-id="56328-129">Filter</span><span class="sxs-lookup"><span data-stu-id="56328-129">Filters</span></span>
+<span data-ttu-id="155fc-126">Erweitern Sie jeden Abschnitt, und wählen Oder deaktivieren Sie Filter, um sie im Filtersatz hinzuzufügen oder zu entfernen.</span><span class="sxs-lookup"><span data-stu-id="155fc-126">Expand each section and select or deselect filters to add or remove them in the filter set.</span></span> <span data-ttu-id="155fc-127">Wenn Sie einen Filter hinzufügen, wird er im Filtersatz angezeigt.</span><span class="sxs-lookup"><span data-stu-id="155fc-127">When you add a filter, it's displayed in the filter set.</span></span> 
 
-<span data-ttu-id="56328-130">Zusätzlich zu den Abfragen, die Sie speichern können, können Sie Mithilfe von Überprüfungssatzfiltern schnell zusätzliche Bedingungen auf eine Überprüfungssatzabfrage anwenden.</span><span class="sxs-lookup"><span data-stu-id="56328-130">In addition to queries that you can save, you can use review set filters to quickly apply additional conditions to a review set query.</span></span> <span data-ttu-id="56328-131">Mithilfe von Filtern können Sie die Ergebnisse, die von einer Überprüfungssatzabfrage angezeigt werden, weiter verfeinern.</span><span class="sxs-lookup"><span data-stu-id="56328-131">Using filters help you further refine the results displayed by a review set query.</span></span>
+![Liste der Filterabschnitte und Eigenschaften im Filterbereich](../media/FilterPanel2.png)
 
-![Überprüfen von Satzfiltern](../media/AeDReviewSetFilters.png)
+> [!NOTE]
+> <span data-ttu-id="155fc-129">Wenn Sie einen Abschnitt im Filterbereich erweitern, werden Sie feststellen, dass die Standardfiltertypen ausgewählt sind.</span><span class="sxs-lookup"><span data-stu-id="155fc-129">When you expand a section in the filter panel, you'll notice that the default filter types are selected.</span></span> <span data-ttu-id="155fc-130">Sie können diese ausgewählt lassen oder die Auswahl aufheben und sie aus dem Filtersatz entfernen.</span><span class="sxs-lookup"><span data-stu-id="155fc-130">You can keep these selected or deselect them and removed them from the filter set.</span></span> 
 
-<span data-ttu-id="56328-133">Filter unterscheiden sich auf zwei wesentliche Weise von Abfragen:</span><span class="sxs-lookup"><span data-stu-id="56328-133">Filters differ from queries in two significant ways:</span></span>
+## <a name="filter-types"></a><span data-ttu-id="155fc-131">Filtertypen</span><span class="sxs-lookup"><span data-stu-id="155fc-131">Filter types</span></span>
 
-- <span data-ttu-id="56328-134">Filter sind vorübergehend.</span><span class="sxs-lookup"><span data-stu-id="56328-134">Filters are transient.</span></span> <span data-ttu-id="56328-135">Sie bleiben nicht über die vorhandene Sitzung hinaus erhalten.</span><span class="sxs-lookup"><span data-stu-id="56328-135">They don't persist beyond the existing session.</span></span> <span data-ttu-id="56328-136">Anders ausgedrückt: Sie können keinen Filter speichern.</span><span class="sxs-lookup"><span data-stu-id="56328-136">In other words, you can't save a filter.</span></span> <span data-ttu-id="56328-137">Abfragen werden im Überprüfungssatz gespeichert und greifen auf sie zu, wenn Sie den Überprüfungssatz öffnen.</span><span class="sxs-lookup"><span data-stu-id="56328-137">Queries are saved to the review set, and access them whenever you open the review set.</span></span>
+<span data-ttu-id="155fc-132">Jedes durchsuchbare Feld in einem Prüfdateisatz verfügt über einen entsprechenden Filter, den Sie für Filterelemente verwenden können, die auf einem bestimmten Feld basieren.</span><span class="sxs-lookup"><span data-stu-id="155fc-132">Every searchable field in a review set has a corresponding filter that you can use for filter items based on a specific field.</span></span>
 
-- <span data-ttu-id="56328-138">Filter sind immer additiv.</span><span class="sxs-lookup"><span data-stu-id="56328-138">Filters are always additive.</span></span> <span data-ttu-id="56328-139">Filter werden zusätzlich zur aktuellen Prüfdateisatz-Abfrage angewendet.</span><span class="sxs-lookup"><span data-stu-id="56328-139">Filters are applied in addition to the current review set query.</span></span> <span data-ttu-id="56328-140">Durch das Anwenden einer anderen Abfrage werden die von der aktuellen Abfrage zurückgegebenen Ergebnisse ersetzt.</span><span class="sxs-lookup"><span data-stu-id="56328-140">Applying a different query will replace the results returned by the current query.</span></span>
+<span data-ttu-id="155fc-133">Es gibt mehrere Filtertypen:</span><span class="sxs-lookup"><span data-stu-id="155fc-133">There are multiple types of filters:</span></span>
+
+- <span data-ttu-id="155fc-134">**Freetext:** Auf Textfelder wie "Subject" wird ein Freitextfilter angewendet.</span><span class="sxs-lookup"><span data-stu-id="155fc-134">**Freetext**: A freetext filter is applied to text fields such as "Subject".</span></span> <span data-ttu-id="155fc-135">Sie können mehrere Suchbegriffe auflisten, indem Sie sie durch ein Komma trennen.</span><span class="sxs-lookup"><span data-stu-id="155fc-135">You can list multiple search terms by separating them with a comma.</span></span>
+
+- <span data-ttu-id="155fc-136">**Datum:** Ein Datumsfilter wird für Datumsfelder wie "Datum der letzten Änderung" verwendet.</span><span class="sxs-lookup"><span data-stu-id="155fc-136">**Date**: A date filter is used for date fields such as "Last modified date".</span></span>
+
+- <span data-ttu-id="155fc-137">**Suchoptionen:** Ein Suchoptionenfilter stellt eine Liste möglicher Werte (jeder Wert wird mit einem Kontrollkästchen angezeigt, das Sie auswählen können) für bestimmte Felder in der Rezension bereit.</span><span class="sxs-lookup"><span data-stu-id="155fc-137">**Search options**: A search options filter provides a list of possible values (each value is displayed with a checkbox that you can select) for particular fields in the review.</span></span> <span data-ttu-id="155fc-138">Dieser Filter wird für Felder wie "Sender" verwendet, in denen eine begrenzte Anzahl möglicher Werte im Prüfdateisatz vorhanden ist.</span><span class="sxs-lookup"><span data-stu-id="155fc-138">This filter is used for fields, such as "Sender", where there is a finite number of possible values in the review set.</span></span>
+
+- <span data-ttu-id="155fc-139">**Schlüsselwort:** Eine Schlüsselwortbedingung ist eine bestimmte Instanz der Freitextbedingung, die Sie verwenden können, um nach Begriffen zu suchen.</span><span class="sxs-lookup"><span data-stu-id="155fc-139">**Keyword**: A keyword condition is a specific instance of freetext condition that you can use to search for terms.</span></span> <span data-ttu-id="155fc-140">Sie können auch KQL-ähnliche Abfragesprache in diesem Filtertyp verwenden.</span><span class="sxs-lookup"><span data-stu-id="155fc-140">You can also use KQL-like query language in this type of filter.</span></span> <span data-ttu-id="155fc-141">Weitere Informationen finden Sie in den Abschnitten "Abfragesprache" und "Erweiterter Abfrage-Generator" in diesem Thema.</span><span class="sxs-lookup"><span data-stu-id="155fc-141">For more information, see the Query language and Advanced query builder sections in this topic.</span></span>
+
+## <a name="include-and-exclude-filter-relationships"></a><span data-ttu-id="155fc-142">Einschließen und Ausschließen von Filterbeziehungen</span><span class="sxs-lookup"><span data-stu-id="155fc-142">Include and exclude filter relationships</span></span>
+
+<span data-ttu-id="155fc-143">Sie haben die Möglichkeit, die Ein- und Ausschließen-Beziehung für einen bestimmten Filter zu ändern.</span><span class="sxs-lookup"><span data-stu-id="155fc-143">You have the option to change the include and exclude relationship for a particular filter.</span></span> <span data-ttu-id="155fc-144">Im Tag-Filter können Sie beispielsweise Elemente ausschließen, die mit einem bestimmten Tag markiert sind, indem Sie im Dropdownfilter **"Gleich"** auswählen.</span><span class="sxs-lookup"><span data-stu-id="155fc-144">For example, in the Tag filter, you can exclude items that are tagged with a particular tag by selecting **Equals none of** in the dropdown filter.</span></span> 
+
+![Tagfilter ausschließen](../media/TagFilterExclude.png)
+
+## <a name="save-filters-as-queries"></a><span data-ttu-id="155fc-146">Speichern von Filtern als Abfragen</span><span class="sxs-lookup"><span data-stu-id="155fc-146">Save filters as queries</span></span>
+
+<span data-ttu-id="155fc-147">Nachdem Sie mit Ihren Filtern zufrieden sind, können Sie die Filterkombination als Filterabfrage speichern.</span><span class="sxs-lookup"><span data-stu-id="155fc-147">After you are satisfied with your filters, you can save the filter combination as a filter query.</span></span> <span data-ttu-id="155fc-148">Auf diese Weise können Sie den Filter in zukünftigen Überprüfungssitzungen anwenden.</span><span class="sxs-lookup"><span data-stu-id="155fc-148">This lets you apply the filter in the future review sessions.</span></span>
+
+<span data-ttu-id="155fc-149">Wählen Sie zum Speichern eines Filters **die Option "Abfrage speichern"** aus, und nennen Sie sie.</span><span class="sxs-lookup"><span data-stu-id="155fc-149">To save a filter, select **Save the query** and name it.</span></span> <span data-ttu-id="155fc-150">Sie oder andere Prüfer können zuvor gespeicherte Filterabfragen ausführen, indem Sie die Dropdownliste **"Gespeicherte Filterabfragen"** und eine Filterabfrage auswählen, die auf Prüfdateisatzdokumente angewendet werden soll.</span><span class="sxs-lookup"><span data-stu-id="155fc-150">You or other reviewers can run previously saved filter queries by selecting the **Saved filter queries** dropdown and selecting a filter query to apply to review set documents.</span></span> 
+
+![Speichern einer Filterabfrage](../media/SaveFilterQuery.png)
+
+<span data-ttu-id="155fc-152">Um eine Filterabfrage zu löschen, öffnen Sie den Filterbereich, und wählen Sie neben der Abfrage das Papierkorbsymbol aus.</span><span class="sxs-lookup"><span data-stu-id="155fc-152">To delete a filter query, open the filter panel and select the trashcan icon next to the query.</span></span>
+
+![Löschen einer Filterabfrage](../media/DeleteFilterQuery.png)
+
+## <a name="query-language"></a><span data-ttu-id="155fc-154">Abfragesprache</span><span class="sxs-lookup"><span data-stu-id="155fc-154">Query language</span></span>
+
+<span data-ttu-id="155fc-155">Zusätzlich zur Verwendung von Filtern können Sie auch eine KQL-ähnliche Abfragesprache im Filter "Schlüsselwörter" verwenden, um die Suchabfrage für den Prüfdateisatz zu erstellen.</span><span class="sxs-lookup"><span data-stu-id="155fc-155">In addition to using filters, you can also use a KQL-like query language in the Keywords filter to build your review set search query.</span></span> <span data-ttu-id="155fc-156">Die Abfragesprache für Überprüfungssatzabfragen unterstützt standardmäßige boolesche Operatoren wie **AND**, **OR**, **NOT** und **NEAR**.</span><span class="sxs-lookup"><span data-stu-id="155fc-156">The query language for review set queries supports standard Boolean operators, such as **AND**, **OR**, **NOT**, and **NEAR**.</span></span> <span data-ttu-id="155fc-157">Es unterstützt auch einen einstelligen Platzhalter (?) und einen mehrstelligen Platzhalter (\*).</span><span class="sxs-lookup"><span data-stu-id="155fc-157">It also supports a single-character wildcard (?) and a multi-character wildcard (\*).</span></span>
+
+## <a name="advanced-query-builder"></a><span data-ttu-id="155fc-158">Erweiterter Abfrage-Generator</span><span class="sxs-lookup"><span data-stu-id="155fc-158">Advanced query builder</span></span>
+
+<span data-ttu-id="155fc-159">Sie können auch erweiterte Abfragen erstellen, um nach Dokumenten in einem Prüfdateisatz zu suchen.</span><span class="sxs-lookup"><span data-stu-id="155fc-159">You can also build more advanced queries to search for documents in a review set.</span></span>
+
+1. <span data-ttu-id="155fc-160">Öffnen Sie den Filterbereich, wählen Sie **Filter** aus, und erweitern Sie den **Suchabschnitt.**</span><span class="sxs-lookup"><span data-stu-id="155fc-160">Open the filter panel, select **Filters**, and expand the **Search** section.</span></span>
+
+  ![Hinzufügen eines KQL-Filters](../media/AddKQLFilter.png)
+
+2. <span data-ttu-id="155fc-162">Wählen Sie den **KQL-Filter** aus, und klicken Sie auf **"Abfrage-Generator öffnen".**</span><span class="sxs-lookup"><span data-stu-id="155fc-162">Select the **KQL** filter and click **Open query builder**.</span></span>
+
+   <span data-ttu-id="155fc-163">In diesem Bereich können Sie komplexe KQL-Abfragen mithilfe des Abfrage-Generators erstellen.</span><span class="sxs-lookup"><span data-stu-id="155fc-163">In this panel, you can create complex KQL queries by using the query builder.</span></span> <span data-ttu-id="155fc-164">Sie können Bedingungen hinzufügen oder Bedingungsgruppen hinzufügen, die aus mehreren Bedingungen bestehen, die logisch durch **AND-** oder **OR-Beziehungen** verbunden sind.</span><span class="sxs-lookup"><span data-stu-id="155fc-164">You can add conditions or add condition groups that are made up of multiple conditions that are logically connected by **AND** or **OR** relationships.</span></span>
+
+   ![Verwenden des Abfrage-Generators zum Konfigurieren komplexer Filterabfragen](../media/ComplexQuery.png)
