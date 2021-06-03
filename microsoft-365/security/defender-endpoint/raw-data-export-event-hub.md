@@ -1,7 +1,7 @@
 ---
-title: Streamen von Microsoft Defender for Endpoint-Ereignissen an Azure Event Hubs
-description: Erfahren Sie, wie Sie Microsoft Defender for Endpoint zum Streamen von Advanced Hunting-Ereignissen an Ihren Event Hub konfigurieren.
-keywords: Rohdatenexport, Streaming-API, API, Azure Event Hubs, Azure-Speicher, Speicherkonto, Erweiterte Suche, Unformatierte Datenfreigabe
+title: Streamen Microsoft 365 Defender-Ereignisse auf Azure Event Hubs
+description: Erfahren Sie, wie Sie Microsoft 365 Defender so konfigurieren, dass Advanced Hunting-Ereignisse auf Ihren Event Hub gestreamt werden.
+keywords: Rohdatenexport, Streaming-API, API, Azure Event Hubs, Azure-Speicher, Speicherkonto, Erweiterte Suche, Freigabe von Rohdaten
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,49 +16,54 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: df305c9fcc7fb9249f2387567600adb899f8c49a
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: e2ede14d6b93a61bc232d42b5926c6adb7c9585f
+ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861047"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52736324"
 ---
-# <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Konfigurieren von Microsoft Defender for Endpoint zum Streamen von Advanced Hunting-Ereignissen an Ihre Azure Event Hubs
+# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-azure-event-hubs"></a>Konfigurieren Microsoft 365 Defender zum Streamen von Advanced Hunting-Ereignissen auf Ihre Azure Event Hubs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Gilt für:**
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-- [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
-
-> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
+[!include[Prerelease information](../../includes/prerelease.md)]
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
-1. Erstellen Sie [einen Ereignishub](https://docs.microsoft.com/azure/event-hubs/) in Ihrem Mandanten.
+1. Erstellen Sie einen [Event Hub](/azure/event-hubs/) in Ihrem Mandanten.
 
-2. Melden Sie sich bei Ihrem [Azure-Mandanten](https://ms.portal.azure.com/)an, wechseln Sie zu **Abonnements > Ihr Abonnement > Ressourcenanbieter > Registrieren bei **Microsoft.insights**.
+2. Melden Sie sich bei Ihrem [Azure-Mandanten](https://ms.portal.azure.com/)an, wechseln Sie zu **Abonnements > Ihr Abonnement > Ressourcenanbieter > Registrieren bei Microsoft.Insights.**
 
-## <a name="enable-raw-data-streaming"></a>Aktivieren des Streamings von Rohdaten:
+3. Erstellen Sie einen Event Hub-Namespace, wechseln Sie zu **Event Hubs > Hinzufügen,** und wählen Sie die Preisstufe, die Durchsatzeinheiten und die automatische Aufblasung aus, die für die erwartete Last geeignet sind. Weitere Informationen finden Sie unter [Preise – Event Hubs | Microsoft Azure](https://azure.microsoft.com/en-us/pricing/details/event-hubs/).  
 
-1. Melden Sie sich beim [Microsoft Defender Security Center](https://securitycenter.windows.com) als ***Globaler Administrator** _ oder _*_Sicherheitsadministrator_** an.
+4. Nachdem der Event Hub-Namespace erstellt wurde, müssen Sie den App-Registrierungsdienstprinzipal als Leser, Azure Event Hubs-Datenempfänger und den Benutzer hinzufügen, der sich bei Microsoft 365 Defender als Mitwirkender anmeldet (dies kann auch auf Ressourcengruppen- oder Abonnementebene erfolgen). Wechseln Sie zu **Event Hubs Namespace > Access Control (IAM) > Hinzufügen** und Überprüfen unter **Rollenzuweisungen.**
 
-2. Wechseln Sie zur [Seite Datenexporteinstellungen](https://securitycenter.windows.com/interoperability/dataexport) auf Microsoft Defender Security Center.
+## <a name="enable-raw-data-streaming"></a>Aktivieren Des Streamings von Rohdaten:
 
-3. Klicken Sie auf **Datenexporteinstellungen hinzufügen.**
+1. Melden Sie sich beim [Microsoft 365 Defender Security Center](https://security.microsoft.com) als * globaler **Administrator** _ oder _*_Sicherheitsadministrator_**an.
 
-4. Wählen Sie einen Namen für Ihre neuen Einstellungen aus.
+2. Wechseln Sie zur [Seite "Datenexporteinstellungen".](https://security.microsoft.com/settings/mtp_settings/raw_data_export)
 
-5. Wählen **Sie Weiterleiten von Ereignissen an Azure Event Hubs aus.**
+3. Klicken Sie auf **"Hinzufügen".**
 
-6. Geben Sie **ihren Event Hubs-Namen** und Ihre **Event Hubs-Ressourcen-ID ein.**
+4. Wählen Sie einen Namen für ihre neuen Einstellungen aus.
 
-   Um Ihre **Event Hubs-Ressourcen-ID** zu erhalten, wechseln Sie zu Ihrer Azure Event Hubs-Namespaceseite auf der Registerkarte Eigenschaften von [Azure](https://ms.portal.azure.com/) > > kopieren Sie den Text unter **Ressourcen-ID**:
+5. Wählen Sie **"Forward"-Ereignisse an Azure Event Hubs aus.**
 
-   ![Abbildung der Event Hub-Ressource Id1](images/event-hub-resource-id.png)
+6. Sie können auswählen, ob Sie die Ereignisdaten in einen einzelnen Event Hub exportieren oder jede Ereignistabelle in einen anderen geraden Hub im Event Hub-Namespace exportieren möchten. 
 
-7. Wählen Sie die Ereignisse aus, die Sie streamen möchten, und klicken Sie auf **Speichern.**
+7. Um die Ereignisdaten in einen einzelnen Event Hub zu exportieren, geben Sie ihren **Event Hub-Namen** und Ihre **Event Hub-Ressourcen-ID** ein.
+
+   Um Ihre **Event Hubs-Ressourcen-ID** abzurufen, wechseln Sie zur Azure Event Hubs-Namespaceseite auf der Registerkarte ["Azure-Eigenschaften",](https://ms.portal.azure.com/)> kopieren Sie den Text unter  >   **"Ressourcen-ID":**
+
+   ![Abbildung der Event Hub-Ressourcen-ID1](images/event-hub-resource-id.png)
+
+8. Wählen Sie die Ereignisse aus, die Sie streamen möchten, und klicken Sie auf **"Speichern".**
 
 ## <a name="the-schema-of-the-events-in-azure-event-hubs"></a>Das Schema der Ereignisse in Azure Event Hubs:
 
@@ -66,31 +71,34 @@ ms.locfileid: "51861047"
 {
     "records": [
                     {
-                        "time": "<The time WDATP received the event>"
+                        "time": "<The time Microsoft 365 Defender received the event>"
                         "tenantId": "<The Id of the tenant that the event belongs to>"
                         "category": "<The Advanced Hunting table name with 'AdvancedHunting-' prefix>"
-                        "properties": { <WDATP Advanced Hunting event as Json> }
+                        "properties": { <Microsoft 365 Defender Advanced Hunting event as Json> }
                     }
                     ...
                 ]
 }
 ```
 
-- Jede Ereignishubnachricht in Azure Event Hubs enthält eine Liste von Datensätzen.
+- Jede Event Hub-Nachricht in Azure Event Hubs enthält eine Liste von Datensätzen.
 
-- Jeder Datensatz enthält den Ereignisnamen, den Zeitpunkt, zu dem Microsoft Defender for Endpoint das Ereignis empfangen hat, den Mandanten, zu dem er gehört (Sie erhalten nur Ereignisse von Ihrem Mandanten), und das Ereignis im JSON-Format in einer Eigenschaft namens "**properties**".
+- Jeder Datensatz enthält den Ereignisnamen, den Zeitpunkt, zu dem Microsoft 365 Defender das Ereignis empfangen hat, den Mandanten, zu dem es gehört (Sie erhalten nur Ereignisse von Ihrem Mandanten) und das Ereignis im JSON-Format in einer Eigenschaft namens **"Properties".**
 
-- Weitere Informationen zum Schema von Microsoft Defender for Endpoint-Ereignissen finden Sie unter [Advanced Hunting overview](advanced-hunting-overview.md).
+- Weitere Informationen zum Schema von Microsoft 365 Defender-Ereignissen finden Sie unter ["Erweiterte Suche" (Übersicht).](../defender/advanced-hunting-overview.md)
 
-- In Advanced Hunting verfügt **die DeviceInfo-Tabelle** über eine Spalte mit dem Namen **MachineGroup,** die die Gruppe des Geräts enthält. Hier wird jedes Ereignis auch mit dieser Spalte eingerichtet. Weitere [Informationen finden Sie](machine-groups.md) unter Gerätegruppen.
+- Bei der erweiterten Suche verfügt die **DeviceInfo-Tabelle** über eine Spalte mit dem Namen **MachineGroup,** die die Gruppe des Geräts enthält. Hier wird jedes Ereignis auch mit dieser Spalte versehen. 
 
-## <a name="data-types-mapping"></a>Datentypzuordnung:
+9. Um jede Ereignistabelle in einen anderen Event Hub zu exportieren, lassen Sie einfach den Namen des **Event Hub** leer, und Microsoft 365 Defender übernimmt den Rest.
 
-Gehen Sie wie folgt vor, um die Datentypen für Ereigniseigenschaften zu erhalten:
 
-1. Melden Sie sich bei [Microsoft Defender Security Center](https://securitycenter.windows.com) an, und wechseln Sie zur [Seite Erweiterte Suche](https://securitycenter.windows.com/hunting-package).
+## <a name="data-types-mapping"></a>Zuordnung von Datentypen:
 
-2. Führen Sie die folgende Abfrage aus, um die Datentypzuordnung für jedes Ereignis zu erhalten:
+Gehen Sie folgendermaßen vor, um die Datentypen für Ereigniseigenschaften abzurufen:
+
+1. Melden Sie sich bei [Microsoft 365 Security Center](https://security.microsoft.com) an, und wechseln Sie zur Seite ["Erweiterte Suche".](https://security.microsoft.com/hunting-package)
+
+2. Führen Sie die folgende Abfrage aus, um die Datentypzuordnung für jedes Ereignis abzurufen:
  
    ```
    {EventType}
@@ -98,13 +106,13 @@ Gehen Sie wie folgt vor, um die Datentypen für Ereigniseigenschaften zu erhalte
    | project ColumnName, ColumnType 
    ```
 
-- Im Folgenden finden Sie ein Beispiel für ein Device Info-Ereignis: 
+- Hier ist ein Beispiel für das Device Info-Ereignis: 
 
-  ![Abbildung der Event Hub-Ressource Id2](images/machine-info-datatype-example.png)
+  ![Abbildung der Event Hub-Ressourcen-ID2](images/machine-info-datatype-example.png)
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
-- [Microsoft Defender for Endpoint-Streaming-API](raw-data-export.md)
-- [Streamen von Microsoft Defender for Endpoint-Ereignissen an Ihr Azure-Speicherkonto](raw-data-export-storage.md)
-- [Dokumentation zu Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/)
-- [Problembehandlung bei Konnektivitätsproblemen – Azure Event Hubs](https://docs.microsoft.com/azure/event-hubs/troubleshooting-guide)
+- [Übersicht über die erweiterte Suche](../defender/advanced-hunting-overview.md)
+- [Microsoft 365 Defender-Streaming-API](raw-data-export.md)
+- [Streamen Microsoft 365 Defender-Ereignisse auf Ihr Azure-Speicherkonto](raw-data-export-storage.md)
+- [Dokumentation zu Azure Event Hubs](/azure/event-hubs/)
+- [Behandeln von Konnektivitätsproblemen – Azure Event Hubs](/azure/event-hubs/troubleshooting-guide)

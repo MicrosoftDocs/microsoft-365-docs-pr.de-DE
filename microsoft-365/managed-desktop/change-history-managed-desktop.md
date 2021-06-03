@@ -13,12 +13,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 5e57f21690372b16c86a65fcfe4d00cb5c907391
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: bc04059d3ec63dd9395ed8f7a0e02b948e5cead1
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587527"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730738"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Änderungsverlauf für Microsoft Managed Desktop-Dokumentation
 
@@ -59,7 +59,7 @@ Neuer oder geänderter Artikel | Beschreibung
 [Zugreifen auf das Administratorportal](get-started/access-admin-portal.md) | Aktualisierter Artikel
 
 
-## <a name="december-2020"></a>Dezember 2020
+## <a name="december-2020"></a>Dezember 2020
 Neuer oder geänderter Artikel | Beschreibung
 --- | ---
 [Was ist Microsoft Managed Desktop?](./intro/index.md) | Aktualisierter Artikel
@@ -86,7 +86,7 @@ Neuer oder geänderter Artikel | Beschreibung
 Neuer oder geänderter Artikel | Beschreibung
 --- | ---
 [Voraussetzungen](get-ready/prerequisites.md) | Aktualisierter Artikel
-[Mit Insights arbeiten](working-with-managed-desktop/insights.md) | Aktualisierter Artikel
+Arbeiten mit Einblicken | Aktualisierter Artikel
 [Schritte für Partner zum Registrieren von Geräten](get-started/register-devices-partner.md) | Aktualisierter Artikel
 [Zugreifen auf das Administratorportal](get-started/access-admin-portal.md) | Aktualisierter Artikel
 [Bereitstellen von Apps auf Geräten](get-started/deploy-apps.md) | Aktualisierter Artikel
@@ -109,7 +109,7 @@ Neuer oder geänderter Artikel | Beschreibung
 [Selbstregistrieren neuer Geräte](get-started/register-devices-self.md) | Aktualisierter Artikel
 [Vorbereiten von Zertifikaten und Netzwerkprofilen für Microsoft Managed Desktop](get-ready/certs-wifi-lan.md) | Aktualisierter Artikel
 [Voraussetzungen für Microsoft Managed Desktop](get-ready/prerequisites.md) | Aktualisierter Artikel
-[Mit Insights arbeiten](working-with-managed-desktop/insights.md) | Aktualisierter Artikel
+Arbeiten mit Einblicken| Aktualisierter Artikel
 
 ## <a name="august-2020"></a>August 2020
 Neuer oder geänderter Artikel | Beschreibung
@@ -137,9 +137,9 @@ Neuer oder geänderter Artikel | Beschreibung
 [Neue Microsoft Edge-App](get-started/edge-browser-app.md) | Aktualisierter Artikel
 [Zugreifen auf das Administratorportal](get-started/access-admin-portal.md) | Neuer Artikel
 [App-Steuerung](service-description/app-control.md) | Neuer Artikel
-[Installieren von Microsoft Project oder Microsoft Visio auf Microsoft Managed Desktop-Geräten](get-started/project-visio.md) | Aktualisierter Artikel
+[Installieren Microsoft Project oder Microsoft Visio auf Microsoft Managed Desktop Geräten](get-started/project-visio.md) | Aktualisierter Artikel
 
-## <a name="june-2020"></a>Juni 2020
+## <a name="june-2020"></a>Juni 2020
 Neuer oder geänderter Artikel | Beschreibung
 --- | ---
 [Neue Microsoft Edge-App](get-started/edge-browser-app.md) | Neuer Artikel
@@ -152,7 +152,7 @@ Neuer oder geänderter Artikel | Beschreibung
 --- | ---
 [Hilfe für Benutzer](working-with-managed-desktop/end-user-support.md) | Aktualisierter Artikel
 [Schritte für Partner zum Registrieren von Geräten](get-started/register-devices-partner.md) | Aktualisierter Artikel
-[Microsoft Managed Desktop-Geräte](service-description/device-list.md) | Aktualisierter Artikel
+[Microsoft Managed Desktop Geräte](service-description/device-list.md) | Aktualisierter Artikel
 [Selbstregistrieren neuer Geräte](get-started/register-devices-self.md) | Aktualisierter Artikel
 
 
@@ -179,8 +179,8 @@ Neuer oder geänderter Artikel | Beschreibung
 Neuer oder geänderter Artikel | Beschreibung
 --- | ---
 [Sicherheit in Microsoft Managed Desktop](service-description/security.md)| Aktualisierter Artikel
-[Mit Insights arbeiten](working-with-managed-desktop/insights.md) | Aktualisierter Artikel
-[Informationen zu Windows-Sicherheitsupdates](working-with-managed-desktop/security-update-insights.md) | Neuer Artikel
+Arbeiten mit Einblicken | Aktualisierter Artikel
+Informationen zu Windows-Sicherheitsupdates| Neuer Artikel
 [So werden Updates in Microsoft Managed Desktop](service-description/updates.md) | Aktualisierter Artikel
 [Microsoft Managed Desktop Gerätedienste](service-description/device-services.md) | Aktualisierter Artikel
 
@@ -206,9 +206,9 @@ Neuer oder geänderter Artikel | Beschreibung
 ## <a name="november-2019"></a>November 2019
 Neuer oder geänderter Artikel | Beschreibung
 --- | ---
-[Mit Insights arbeiten](working-with-managed-desktop/insights.md) | Neuer Artikel
-[Benutzungseinblicke](working-with-managed-desktop/usage-insights.md) | Neuer Artikel
-[Zuverlässigkeitseinblicke](working-with-managed-desktop/reliability-insights.md) | Neuer Artikel
+Arbeiten mit Einblicken | Neuer Artikel
+Benutzungseinblicke | Neuer Artikel
+Zuverlässigkeitseinblicke | Neuer Artikel
 [Microsoft Managed Desktop Geräte](service-description/device-list.md) | Aktualisierter Artikel
 [Microsoft Managed Desktop Hauptseite](./index.yml) | Aktualisierter Artikel
 [Was ist Microsoft Managed Desktop?](./intro/index.md) | Aktualisierter Artikel

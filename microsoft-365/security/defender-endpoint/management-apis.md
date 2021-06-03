@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a57cebd2cb7d35f968ed9ddfa4d9215eac2182d6
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 78ab364f8a261b1201fad17ebf86adc1a7456a46
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934455"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730839"
 ---
 # <a name="overview-of-management-and-apis"></a>Übersicht über die Verwaltung und APIs 
 
@@ -71,12 +71,13 @@ Die **Untersuchungs-API** macht den Reichhaltigen von Defender for Endpoint verf
 
 Die **Reaktions-API** macht die Möglichkeit verfügbar, Aktionen im Dienst und auf Geräten zu ergreifen, sodass Kunden Indikatoren abrufen, Einstellungen verwalten, Warnungsstatus verwalten sowie Reaktionsaktionen auf Geräten programmgesteuert ausführen können, z. B. Geräte vom Netzwerk isolieren, Quarantänedateien und andere. 
 
-## <a name="raw-data-streaming-api"></a>API für das Streaming von Rohdaten 
-Die Raw Data Streaming-API von Defender for Endpoint bietet Kunden die Möglichkeit, Echtzeitereignisse und Warnungen von ihren Instanzen innerhalb eines einzelnen Datenstroms zu senden, was einen Mechanismus für die Zustellung mit niedriger Latenz und hohem Durchsatz bietet.
+## <a name="streaming-api"></a>Streaming-API 
+Die Streaming-API bietet Kunden die Möglichkeit, Echtzeitereignisse und Warnungen von ihren Instanzen innerhalb eines einzelnen Datenstroms zu senden, was einen Mechanismus für die Zustellung mit niedriger Latenz und hohem Durchsatz bietet.
 
-Die Defender for Endpoint-Ereignisinformationen werden zur langfristigen Datenaufbewahrung direkt an den Azure-Speicher oder an Azure Event Hubs zur Nutzung durch Visualisierungsdienste oder zusätzliche Datenverarbeitungsmodule gesendet. 
+Ereignisinformationen werden zur langfristigen Datenaufbewahrung direkt an den Azure-Speicher oder an Azure Event Hubs zur Nutzung durch Visualisierungsdienste oder zusätzliche Datenverarbeitungsmodule bereitgestellt. 
 
-Weitere Informationen finden Sie unter [Raw data streaming API](raw-data-export.md).
+>[!NOTE]
+>Die Streaming-API wurde nun zu Microsoft 365 Defender verschoben. Weitere Informationen finden Sie unter [Streaming-API](raw-data-export.md).
 
 
 ## <a name="siem-api"></a>SIEM-API

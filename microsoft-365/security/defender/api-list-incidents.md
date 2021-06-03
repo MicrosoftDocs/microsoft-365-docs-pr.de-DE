@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 6f0c92371e7e9b7a3348f90df788ee8c3a46374b
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 833bc1d8284829323cc2f0c391e42f4e563a6948
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572153"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730882"
 ---
 # <a name="list-incidents-api-in-microsoft-365-defender"></a>Auflisten der Incidents-API in Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "52572153"
 
 **Gilt für:**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
@@ -61,8 +61,8 @@ Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weit
 
 Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 -|-|-
-Anwendung | Incident.Read.All | Alle Vorfälle lesen
-Anwendung | Incident.ReadWrite.All | Lesen und Schreiben aller Vorfälle
+Application | Incident.Read.All | Alle Vorfälle lesen
+Application | Incident.ReadWrite.All | Lesen und Schreiben aller Vorfälle
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Incident.Read | Lesen von Vorfällen
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Incident.ReadWrite | Lese- und Schreibvorfälle
 

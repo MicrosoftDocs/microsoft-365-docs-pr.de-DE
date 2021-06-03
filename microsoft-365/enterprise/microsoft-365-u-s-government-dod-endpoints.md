@@ -3,7 +3,7 @@ title: Office 365 DOD-Endpunkte der US-Regierung
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/29/2021
+ms.date: 05/28/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -22,12 +22,12 @@ f1.keywords:
 description: Office 365 setzt eine Internetverbindung voraus. Die unten aufgeführten Endpunkte sollten nur für Kunden erreichbar sein, die Office 365 Us.S. Government DoD-Pläne verwenden.
 hideEdit: true
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e3ab0c85387521a75953b2fdfae5b00e588de74c
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2fcfad7e0ad3ddafeffc79490ff99d949a8bfa7b
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52245324"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730750"
 ---
 # <a name="office-365-us-government-dod-endpoints"></a>Office 365 DoD-Endpunkte der US-Regierung
 
@@ -39,7 +39,7 @@ ms.locfileid: "52245324"
   
 |||
 |:-----|:-----|
-|**Letzte Aktualisierung:** 29.04.2021 – ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abonnement des Änderungsprotokolls](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** die vollständige Liste im [JSON-Format](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Last updated:** 28.05.2021 - ![ ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [RSS-Änderungsprotokollabonnement](https://endpoints.office.com/version/USGOVDoD?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** die vollständige Liste im [JSON-Format](https://endpoints.office.com/endpoints/USGOVDoD?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
 
  Beginnen Sie mit [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md), um unsere Empfehlungen zum Verwalten der Netzwerkverbindungen anhand dieser Daten zu verstehen. Endpunktdaten werden bei Bedarf zu Beginn jedes Monats 30 Tage vor ihrer Aktivierung mit neuen IP-Adressen und URLs aktualisiert und veröffentlicht. Auf diese Weise können Kunden, die noch nicht über automatisierte Updates verfügen, Ihre Prozesse abschließen, bevor eine neue Verbindung erforderlich ist. Endpunktdaten werden unter Umständen auch bei Bedarf aktualisiert, um Support-Probleme, Sicherheitsvorfälle oder andere sofortige betriebliche Erfordernisse zu adressieren. Die auf dieser Seite unten angezeigten Daten werden alle aus den REST-basierten Webdiensten generiert. Wenn Sie für den Zugriff auf diese Daten ein Skript oder ein Netzwerkgerät verwenden, sollten Sie direkt zum [Webdienst](microsoft-365-ip-web-service.md) wechseln.
 

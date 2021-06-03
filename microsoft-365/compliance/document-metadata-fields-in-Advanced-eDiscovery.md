@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: In diesem Artikel werden die Metadatenfelder für Dokumente in einem Überprüfungssatz in einem Fall in Advanced eDiscovery in Microsoft 365.
-ms.openlocfilehash: e801f60b69c796dfcd2cb6d83cc4fbc721dc7658
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 7b8628973a8b07a3cd31e2b42df28c181e77e288
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259463"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730498"
 ---
 # <a name="document-metadata-fields-in-advanced-ediscovery"></a>Dokument-Metadatenfelder in Advanced eDiscovery
 
@@ -50,7 +50,7 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einem Überp
 |Inhalt*|Inhalt||Extrahierter Text des Elements.|
 |Unterhaltungstext|Unterhaltungstext||Unterhaltungstext des Elements.|
 |Unterhaltungsthema|Unterhaltungsthema||Unterhaltungsthema des Elements.|
-|Unterhaltungs-ID|ConversationId|Email_conversation_ID|Unterhaltungs-ID aus der Nachricht.|
+|Unterhaltungs-ID|ConversationId|Conversation_ID|Unterhaltungs-ID aus der Nachricht.|
 |Unterhaltungsindex||Conversation_index|Unterhaltungsindex aus der Nachricht.|
 |Unterhaltungs-PDF-Zeit|ConversationPdfTime||Datum, an dem die PDF-Version der Unterhaltung erstellt wurde.|
 |Unterhaltung Redaction Burn Time|ConversationRedactionBurnTime||Datum, an dem die PDF-Version der Unterhaltung für Chat erstellt wurde.|
@@ -73,12 +73,12 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einem Überp
 |Dominantes Design|DominantTheme|Dominant_theme|Dominantes Design, wie für analysen berechnet.|
 |Doppelte Teilmenge||Duplicate_subset|Gruppen-ID für exakte Duplikate.|
 |EmailAction*||Email_action|Die Werte sind **None**, **Reply** oder **Forward**; basierend auf der Betreffzeile einer Nachricht.|
-|Angeforderter E-Mail-Zustellungsbeleg||Email_delivery_receipt_requested|E-Mail-Adresse, die in Internetheadern für den Zustellungsbeleg bereitgestellt wird.|
+|Angeforderter E-Mail-Zustellungsbeleg||Email_delivery_receipt|E-Mail-Adresse, die in Internetheadern für den Zustellungsbeleg bereitgestellt wird.|
 |Importance|EmailImportance|Email_importance|Wichtigkeit der Nachricht: **0** – Niedrig; **1** – Normal; **2** – Hoch|
 |EmailInternetHeaders|EmailInternetHeaders|Email_internet_headers|Der vollständige Satz von E-Mail-Headern aus der E-Mail-Nachricht|
 |EmailLevel*||Email_level|Gibt die Ebene einer Nachricht innerhalb des E-Mail-Threads an, zu dem sie gehört. Anlagen erben den Wert der übergeordneten Nachricht.|
 |E-Mail-Nachrichten-ID||Email_message_ID|Internetnachrichten-ID aus der Nachricht.|
-|EmailReadReceiptRequested||Email_read_receipt_requested|E-Mail-Adresse, die in Internetheadern für lesebestätigung bereitgestellt wird.|
+|EmailReadReceiptRequested||Email_read_receipt|E-Mail-Adresse, die in Internetheadern für lesebestätigung bereitgestellt wird.|
 |E-Mail-Sicherheit|EmailSecurity|Email_security|Sicherheitseinstellung der Nachricht: **0** – Keine; **1** – Signiert; **2** – Verschlüsselt; **3** – Verschlüsselt und signiert.|
 |E-Mail-Vertraulichkeit|EmailSensitivity|email_sensitivity|Vertraulichkeitseinstellung der Nachricht: **0** – Keine; **1** Persönlich; **2** – Privat; **3** - CompanyConfidential.|
 |E-Mail-Satz|EmailSet|Email_set|Gruppen-ID für alle Nachrichten im gleichen E-Mail-Satz.|
@@ -112,7 +112,7 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einem Überp
 |Elementklasse|ItemClass|Item_class|Vom #A0 bereitgestellte Elementklasse; z. **B. IPM. Hinweis**|
 |Datum der letzten Änderung|LastModifiedDate|Doc_date_modified|Datum der letzten Änderung aus Dokumentmetadaten.|
 |Lade-ID|LoadId|Load_ID|Die ID des Lastensatz, in dem das Element einem Überprüfungssatz hinzugefügt wurde.|
-|Speicherort|Speicherort|Speicherort|Zeichenfolge, die den Speicherort angibt, von dem Dokumente stammen.<br /><br />**Importierte Daten** – nicht Office 365 Daten<br />**Teams** – Microsoft Teams<br />**Exchange** - Exchange Postfächer<br />**SharePoint** - SharePoint Websites<br />**OneDrive** - OneDrive Konten|
+|Ort|Ort|Ort|Zeichenfolge, die den Speicherort angibt, von dem Dokumente stammen.<br /><br />**Importierte Daten** – nicht Office 365 Daten<br />**Teams** – Microsoft Teams<br />**Exchange** - Exchange Postfächer<br />**SharePoint** - SharePoint Websites<br />**OneDrive** - OneDrive Konten|
 |Ortsname|LocationName|Location_name|Zeichenfolge, die die Quelle des Elements identifiziert. Für Exchange ist dies die #A0 des Postfachs. für SharePoint und OneDrive die URL für die Websitesammlung.|
 |||Marked_as_pivot|Diese Datei ist der Pivot in einem nahezu doppelten Satz.|
 |Als repräsentativ gekennzeichnet|MarkAsRepresentative||Ein Dokument aus jedem Satz exakter Duplikate wird als Vertreter gekennzeichnet.|
@@ -131,7 +131,7 @@ In der folgenden Tabelle sind die Metadatenfelder für Dokumente in einem Überp
 |O365-Datum erstellt||O365_date_created|Erstelltes Datum aus SharePoint.|
 |O365-Datum geändert||O365_date_modified|Datum der letzten Änderung aus SharePoint.|
 |O365 geändert von||O365_modified_by|Geändert von von SharePoint.|
-|Übergeordnete ID|ParentId|Container_ID|Id des übergeordneten Elements.|
+|Übergeordnete ID|ParentId|Parent_ID|Id des übergeordneten Elements.|
 |ParentNode||Parent_node|Die nächste vorangehende E-Mail-Nachricht im E-Mail-Thread.|
 |Teilnehmerdomänen|ParticipantDomains|Email_participant_domains|Liste aller Domänen der Teilnehmer einer Nachricht.|
 |Teilnehmer|Teilnehmer|Email_participants|Liste aller Teilnehmer einer Nachricht; z. B. Sender, An, Cc, Bcc.|

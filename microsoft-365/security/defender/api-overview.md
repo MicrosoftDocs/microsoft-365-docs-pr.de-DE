@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 496ad5695d9cd491817bad5daf3c76a02addefd1
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: b19a6072be5f97b90c117f053ccae4593587c43d
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904188"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730894"
 ---
 # <a name="overview-of--microsoft-365-defender-apis"></a>Übersicht über Microsoft 365 Defender-APIs
 
@@ -45,6 +45,9 @@ Verwenden Sie die Microsoft 365 Defender-APIs, um Workflows basierend auf dem fr
 - **[Warteschlange für kombinierte](api-incident.md)** Vorfälle – Konzentrieren Sie sich auf das Wichtige, indem Sie den vollständigen Angriffsbereich und alle sich auswirkenden Ressourcen unter der Vorfall-API gruppieren.
 
 - **[Produktübergreifende](api-advanced-hunting.md)** Bedrohungssuche : Nutzen Sie das Organisationswissen Ihres Sicherheitsteams, um nach Anzeichen von Kompromissen zu fahnen, indem Sie Eigene benutzerdefinierte Abfragen erstellen, um Rohdaten zu siften, die in mehreren Schutzprodukten gesammelt wurden.
+
+Verwenden Sie [die Streaming-API,](../defender-endpoint/raw-data-export.md) um Echtzeitereignisse und Warnungen von Instanzen zu senden, die innerhalb eines einzelnen Datenstroms auftreten.
+
 
 Zusammen mit diesen Microsoft 365 defender-spezifischen APIs stellen unsere anderen Sicherheitsprodukte zusätzliche [APIs](api-articles.md) bereit, damit Sie ihre einzigartigen Funktionen nutzen können.
 

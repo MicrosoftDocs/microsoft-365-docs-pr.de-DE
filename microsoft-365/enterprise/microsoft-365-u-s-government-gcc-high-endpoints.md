@@ -3,7 +3,7 @@ title: Office 365 Us.S. Government GCC High endpoints
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 01/28/2021
+ms.date: 05/28/2021
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -20,12 +20,12 @@ search.appverid: MET150
 ms.assetid: cbd2369c-fd96-464c-bf48-c99826b459ee
 description: In diesem Artikel finden Sie Endpunkte, die für Kunden erreichbar sind, die Office 365 U.S. Government GCC High-Pläne verwenden.
 hideEdit: true
-ms.openlocfilehash: 4089be4e3e28493afc27972d77f30bca81364f37
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: da721d7d0a8965c4dea9bc812df755f19e69ea55
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923874"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730162"
 ---
 # <a name="office-365-us-government-gcc-high-endpoints"></a>Office 365 Us.S. Government GCC High endpoints
 
@@ -37,7 +37,7 @@ Office 365 setzt eine Internetverbindung voraus. Die unten aufgeführten Endpunk
   
 |||
 |:-----|:-----|
-|**Last updated:** 28.01.2021 - ![ ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [RSS-Änderungsprotokollabonnement](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** die vollständige Liste im [JSON-Format](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
+|**Last updated:** 28.05.2021 - ![ ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [RSS-Änderungsprotokollabonnement](https://endpoints.office.com/version/USGOVGCCHigh?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |**Download:** die vollständige Liste im [JSON-Format](https://endpoints.office.com/endpoints/USGOVGCCHigh?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) <br/> |
 
  Beginnen Sie mit [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md), um unsere Empfehlungen zum Verwalten der Netzwerkverbindungen anhand dieser Daten zu verstehen. Endpunktdaten werden bei Bedarf zu Beginn jedes Monats 30 Tage vor ihrer Aktivierung mit neuen IP-Adressen und URLs aktualisiert und veröffentlicht. Auf diese Weise können Kunden, die noch nicht über automatisierte Updates verfügen, Ihre Prozesse abschließen, bevor eine neue Verbindung erforderlich ist. Endpunktdaten werden unter Umständen auch bei Bedarf aktualisiert, um Support-Probleme, Sicherheitsvorfälle oder andere sofortige betriebliche Erfordernisse zu adressieren. Die auf dieser Seite unten angezeigten Daten werden alle aus den REST-basierten Webdiensten generiert. Wenn Sie für den Zugriff auf diese Daten ein Skript oder ein Netzwerkgerät verwenden, sollten Sie direkt zum [Webdienst](microsoft-365-ip-web-service.md) wechseln.
 

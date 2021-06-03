@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 103f5d0ad9d12a37f3a3b8065f39c24d592cc252
-ms.sourcegitcommit: f000358c01a8006e5749a86b256300ee3a73174c
+ms.openlocfilehash: 6d92cbacba72210c6accbbb1e5ecf25de660fc3c
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "51995057"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730534"
 ---
 # <a name="create-indicators-for-files"></a>Erstellen von Indikatoren für Dateien
 
@@ -91,11 +91,11 @@ Die Behandlung von Konflikten zwischen Cert- und File IoC-Richtlinien folgt der 
 
 - Wenn die Datei nicht von der Anwendungskontrolle Windows Defender appLocker richtlinien/richtlinien für den Erzwungenen Modus zulässig ist, dann **Blockieren**
 
-- Andern falls die Datei vom Defender Anti-Virus Exclusion zugelassen ist, dann **Zulassen**
+- Andern falls die Datei durch den Microsoft Defender Antivirus zulässig ist, dann **Zulassen**
 
 - Andern falls die Datei durch einen Block oder eine Warndatei blockiert oder gewarnt wird, dann **Blockieren/Warnen**
 
-- Wenn die Datei von einer IOC-Richtlinie für zugelassene Dateien zulässig ist, wird **"Zulassen"**
+- Andern falls die Datei von einer IoC-Richtlinie für zugelassene Dateien zulässig ist, dann **Zulassen**
 
 - Andern falls die Datei durch #A0 blockiert wird, CFA, AV, SmartScreen und **dann Blockieren**  
 

@@ -17,12 +17,12 @@ search.appverid:
 - SPO160
 - MET150
 description: In diesem Artikel wird beschrieben, wie Sie Ihr Portal mit dem Portalstartplaner starten können.
-ms.openlocfilehash: fdf92f2bbdfb673f1db446b562e941d61679fa9a
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: ac55a5b0cc9d252642c890b78ccec1ba720f0957
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694353"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730258"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Starten Des Portals mithilfe des SharePoint Portalstartplaner
 
@@ -120,7 +120,7 @@ Früher konnten Portalstarts nur über powerShell SharePoint werden. Jetzt stehe
 
 ### <a name="launch-portal-with-over-100k-users"></a>Startportal mit mehr als 100.000 Benutzern
 
-Wenn Sie beabsichtigen, mehr als 100 TB zu migrieren, senden Sie eine Supportanfrage, indem Sie die nachstehenden Schritte ausführen. Stellen Sie sicher, dass Sie alle angeforderten Informationen angeben.
+Wenn Sie planen, ein Portal mit mehr als 100.000 Benutzern zu starten, senden Sie bitte eine Supportanfrage nach den unten aufgeführten Schritten. Stellen Sie sicher, dass Sie alle angeforderten Informationen angeben.
 
 Führen Sie die folgenden Schritte aus:
 1. Navigieren Sie zu https://admin.microsoft.com.
@@ -136,7 +136,7 @@ Führen Sie die folgenden Schritte aus:
 7. Füllen Sie die restlichen Informationen aus, und wählen Sie **Kontakt** aus.
 8. Stellen Sie nach der Erstellung des Tickets sicher, dass Sie dem Supportmitarbeiter folgende Informationen mitteilen:
 - Startportal-URL 
-- Anzahl der erwarteten Benutzer
+- Erwartete Anzahl von Benutzern
 - Geschätzte Startzeit 
 
 ## <a name="make-changes-to-a-scheduled-portal-launch"></a>Vornehmen von Änderungen an einem geplanten Portalstart

@@ -1,6 +1,6 @@
 ---
 title: Mit Berichten arbeiten
-description: ''
+description: Die verschiedenen Berichte, die in Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: e509ae63225362613962cd0c366c51239f3d4493
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 28035a9f0a669c1daa7526d0b1fefac52a77c81a
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917682"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52729968"
 ---
 # <a name="work-with-reports"></a>Mit Berichten arbeiten
 
@@ -37,16 +37,6 @@ Darüber hinaus können Sie berichte Microsoft Endpoint Manager anderen Produktg
 > [!NOTE]
 > Benutzerdefinierte Microsoft Managed Desktop garantieren nur zugriff auf die Microsoft Managed Desktop Berichte. Informationen zum Zugriff auf andere Microsoft Endpoint Manager, z. B. **Alle** Geräte, finden Sie unter [Rollenbasierte](/mem/intune/fundamentals/role-based-access-control)Zugriffssteuerung mit Microsoft Intune . 
 
-## <a name="reports-in-microsoft-365-admin-center"></a>Berichte im Microsoft 365 Admin Center
-
-Sie finden Microsoft Managed Desktop Einblickeberichte, indem Sie das [Microsoft 365 Admin Center](https://admin.microsoft.com/adminportal/home?previewoff=false#/microsoftmanageddesktop)öffnen und  dann zu Berichte navigieren und **Microsoft Managed Desktop**. Sie können den direkten Link zu  diesen Berichten auch über die Registerkarte Microsoft Managed Desktop auf der Homepage [Microsoft Endpoint Manager.](https://endpoint.microsoft.com) 
-
-Zu diesen Berichten gehören: 
-
-- [Nutzungseinblicke](usage-insights.md) – Diese Ansicht bietet Verwendungsmetriken für Ihre Microsoft Managed Desktop Geräte.
-- [Einblicke in die](reliability-insights.md) Zuverlässigkeit – Diese Ansicht enthält eine Integritätszusammenfassung Ihrer verwalteten Geräte.
-- [Einblicke in den](battery-insights.md) Akku: In dieser Ansicht werden Informationen zum Energieverbrauch von Apps und zur projizierten Akkulaufzeit für Geräte in Ihrer Umgebung angezeigt.
-- [Windows Einblicke in](security-update-insights.md) Sicherheitsupdates– Diese Ansicht zeigt Informationen zum Status von Sicherheitsupdates für Ihre Microsoft Managed Desktop Geräte.
 
  ## <a name="inventory-data"></a>Bestandsdaten
 

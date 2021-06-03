@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ed2165c0102170256f50964180a550d8eccbce8c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: f6ef1d3dbc111e5d10bf4d3c42dfd08e5e9d63e3
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932787"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730633"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Microsoft Defender for Endpoint-Evaluierungslabor
 
@@ -75,9 +75,8 @@ Sie können über das Menü auf die Übungseinheit zugreifen. Wählen Sie im Nav
 
 >[!NOTE]
 >- Je nachdem, welche Umgebungsstruktur Sie auswählen, stehen Geräte für die angegebene Anzahl von Stunden ab dem Aktivierungstag zur Verfügung.
->- Jede Umgebung wird mit einer begrenzten Anzahl von Testgeräten bereitgestellt. Wenn Sie die bereitgestellten Geräte verwendet haben, werden keine neuen Geräte bereitgestellt. Ein gelöschtes Gerät aktualisiert die anzahl der verfügbaren Testgeräte nicht.
->- Sie können die Übungseinheit nicht mehr verwenden, wenn die Ressourcen aufb gewesen sind. Es wird weder zurückgesetzt noch aktualisiert.
->- Es empfiehlt sich, die Ressourcen sorgfältig zu verwenden. Die Laborressourcen sind begrenzt. Sie werden weder zurückgesetzt noch aktualisiert. 
+>- Jede Umgebung wird mit einer begrenzten Anzahl von Testgeräten bereitgestellt. Wenn Sie die bereitgestellten Geräte verwendet und gelöscht haben, können Sie weitere Geräte anfordern. 
+>- Sie können einmal im Monat Laborressourcen anfordern. 
 
 Sie haben bereits ein Labor? Stellen Sie sicher, dass sie die neuen Bedrohungssimulatoren aktivieren und über aktive Geräte verfügen.
 
@@ -113,26 +112,23 @@ Wenn Sie Ihrer Umgebung ein Gerät hinzufügen, richtet Defender for Endpoint ei
 
 Das Gerät wird mit der neuesten Version des Betriebssystems und Office 2019 Standard sowie anderen Apps wie Java, Python und SysIntenals konfiguriert. 
 
-   >[!TIP]
-   > Benötigen Sie weitere Geräte in Ihrem Labor? Senden Sie ein Supportticket, damit Ihre Anforderung vom Defender for Endpoint-Team überprüft wird. 
-
 Wenn Sie während der Übungseinrichtung einen Bedrohungssimulator hinzufügen möchten, wird auf allen Geräten der Threat Simulator Agent auf den geräten installiert, die Sie hinzufügen.
 
 Das Gerät wird automatisch in Ihren Mandanten mit den empfohlenen sicherheitskomponenten Windows aktiviert und im Überwachungsmodus – ohne Aufwand auf Ihrer Seite. 
 
 Die folgenden Sicherheitskomponenten sind auf den Testgeräten vorkonfiguriert:
 
-- [Verringerung der Angriffsfläche](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard):
-- [Bei erster Sicht blockieren](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
-- [Kontrollierter Ordnerzugriff](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
-- [Exploit-Schutz.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
-- [Netzwerkschutz](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
-- [Erkennung potenziell unerwünschter Anwendungen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [In der Cloud zugestellter Schutz](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
-- [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
+- [Verringerung der Angriffsfläche](attack-surface-reduction.md):
+- [Bei erster Sicht blockieren](configure-block-at-first-sight-microsoft-defender-antivirus.md)
+- [Kontrollierter Ordnerzugriff](controlled-folders.md)
+- [Exploit-Schutz.](enable-exploit-protection.md)
+- [Netzwerkschutz](network-protection.md)
+- [Erkennung potenziell unerwünschter Anwendungen](detect-block-potentially-unwanted-apps-microsoft-defender-antivirus.md)
+- [In der Cloud zugestellter Schutz](cloud-protection-microsoft-defender-antivirus.md)
+- [Microsoft Defender SmartScreen](/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview)
 
 >[!NOTE]
-> Microsoft Defender Antivirus ist aktiviert (nicht im Überwachungsmodus). Wenn Microsoft Defender Antivirus, dass Sie ihre Simulation nicht ausführen können, können Sie den Echtzeitschutz auf dem Gerät über Windows-Sicherheit. Weitere Informationen finden Sie unter [Configure always-on protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus).
+> Microsoft Defender Antivirus ist aktiviert (nicht im Überwachungsmodus). Wenn Microsoft Defender Antivirus, dass Sie ihre Simulation nicht ausführen können, können Sie den Echtzeitschutz auf dem Gerät über Windows-Sicherheit. Weitere Informationen finden Sie unter [Configure always-on protection](configure-real-time-protection-microsoft-defender-antivirus.md).
 
 Automatische Untersuchungseinstellungen hängen von den Mandanteneinstellungen ab. Sie wird standardmäßig als halbautomatisiert konfiguriert. Weitere Informationen finden Sie unter [Overview of Automated investigations](automated-investigations.md).
 
@@ -163,10 +159,29 @@ Automatische Untersuchungseinstellungen hängen von den Mandanteneinstellungen a
     ![Abbildung der Registerkarte "Geräte"](images/machines-tab.png)
     
 
-    >[!TIP]
-    >In der **Spalte Simulatorstatus** können Sie mit der Maus auf das Informationssymbol zeigen, um den Installationsstatus eines Agents zu erfahren.
+    > [!TIP]
+    > In der **Spalte Simulatorstatus** können Sie mit der Maus auf das Informationssymbol zeigen, um den Installationsstatus eines Agents zu erfahren.
+
+## <a name="request-for-more-devices"></a>Anfordern von weiteren Geräten
+Wenn alle vorhandenen Geräte verwendet und gelöscht werden, können Sie weitere Geräte anfordern. Sie können einmal im Monat Laborressourcen anfordern. 
 
 
+1. Wählen Sie im Evaluierungslabordashboard **Die Option Weitere Geräte anfordern aus.**
+
+   ![Abbildung der Anforderung für weitere Geräte](images/request-more-devices.png)
+
+2. Wählen Sie Ihre Konfiguration aus. 
+3. Senden Sie die Anforderung. 
+
+Wenn die Anforderung erfolgreich übermittelt wird, wird ein grünes Bestätigungsbanner und das Datum der letzten Übermittlung angezeigt.
+ 
+Den Status Ihrer Anforderung finden Sie auf der Registerkarte **Benutzeraktionen,** die in einer Frage von Stunden genehmigt wird.
+
+Nach der Genehmigung werden die angeforderten Geräte zu Ihrer Laborumgebung hinzugefügt, und Sie können weitere Geräte erstellen. 
+
+
+> [!TIP]
+> Um mehr aus Ihrem Labor heraus zu holen, vergessen Sie nicht, unsere Simulationsbibliothek zu besuchen.
 
 ## <a name="simulate-attack-scenarios"></a>Simulieren von Angriffsszenarien
 Verwenden Sie die Testgeräte, um eigene Angriffssimulationen durchzuführen, indem Sie eine Verbindung mit ihnen herstellen. 
@@ -175,7 +190,7 @@ Sie können Angriffsszenarien mit folgenden Bedingungen simulieren:
 - Die [Angriffsszenarien "Do It Yourself"](https://securitycenter.windows.com/tutorials)
 - Bedrohungssimulatoren
 
-Sie können die [erweiterte](advanced-hunting-query-language.md) Suche auch verwenden, um Daten und [Bedrohungsanalysen](threat-analytics.md) zu abfragen, um Berichte zu neuen Bedrohungen anzeigen zu können.
+Sie können die [erweiterte](advanced-hunting-overview.md) Suche auch verwenden, um Daten und [Bedrohungsanalysen](threat-analytics.md) zu abfragen, um Berichte zu neuen Bedrohungen anzeigen zu können.
 
 ### <a name="do-it-yourself-attack-scenarios"></a>Do-it-yourself-Angriffsszenarien
 Wenn Sie nach einer vordefinierten Simulation suchen, können Sie unsere [Angriffsszenarien "Do It Yourself" verwenden.](https://securitycenter.windows.com/tutorials) Diese Skripts sind sicher, dokumentiert und einfach zu verwenden. Diese Szenarien spiegeln die Defender for Endpoint-Funktionen wider und zeigen Ihnen die Untersuchungserfahrung.

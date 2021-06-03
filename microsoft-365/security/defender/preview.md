@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c82e1abf9e539ad169bbc488ade9cd21bb8e6727
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 8ad5ffe2b175a8f7a42b2fad353fcde13a60cfec
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52029074"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730522"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Microsoft 365 Defender-Vorschaufeatures
 
@@ -68,7 +68,8 @@ Sie wissen, dass Sie Vorschaufeatures aktiviert haben, wenn Sie sehen, dass das 
 
 Die folgenden Features und Verbesserungen sind derzeit in der Vorschau verfügbar:
 
+- **[Streaming-API](../defender-endpoint/raw-data-export.md)** – Microsoft 365 Defender unterstützt das Streaming aller ereignisse, die über die erweiterte Suche verfügbar sind, an event hubs und/oder azure storage account.
 - **[Microsoft 365 Defender-APIs](api-overview.md)** – Die top-level-Microsoft 365 Defender-APIs ermöglichen es Ihnen, Workflows basierend auf den freigegebenen Vorfällen und erweiterten Nachschlagetabellen zu automatisieren. 
-- **[Ergreifen Sie Maßnahmen bei der erweiterten Suche](advanced-hunting-take-action.md)**– Enthalten Sie schnell Bedrohungen oder adressieren sie gefährdete Objekte, die Sie bei der [erweiterten Suche finden.](advanced-hunting-overview.md)
-- **[In-Portal-Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)**– Informationen zu Schematabellen für die erweiterte Suche direkt im Security Center erhalten. Zusätzlich zu Tabellen- und Spaltenbeschreibungen enthält dieser Verweis unterstützte Ereignistypen ( `ActionType` Werte) und Beispielabfragen.
-- **[DeviceFromIP() -Funktion](advanced-hunting-devicefromip-function.md)**– Erhalten Sie Informationen darüber, welchen Geräten zu einem bestimmten Zeitraum eine bestimmte IP-Adresse zugewiesen wurde.
+- **[Ergreifen Sie Maßnahmen bei der erweiterten Suche](advanced-hunting-take-action.md)** – Enthalten Sie schnell Bedrohungen oder adressieren sie gefährdete Objekte, die Sie bei der [erweiterten Suche finden.](advanced-hunting-overview.md)
+- **[In-Portal-Schemareferenz](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** : Informationen zu Schematabellen für die erweiterte Suche direkt im Security Center erhalten. Zusätzlich zu Tabellen- und Spaltenbeschreibungen enthält dieser Verweis unterstützte Ereignistypen ( `ActionType` Werte) und Beispielabfragen.
+- **[DeviceFromIP()-Funktion](advanced-hunting-devicefromip-function.md)** : Hier erhalten Sie Informationen darüber, welchen Geräten zu einem bestimmten Zeitraum eine bestimmte IP-Adresse oder -Adresse zugewiesen wurde.

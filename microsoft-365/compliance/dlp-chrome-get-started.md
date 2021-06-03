@@ -1,5 +1,5 @@
 ---
-title: Erste Schritte mit der Microsoft Compliance Erweiterung (Vorschau)
+title: Erste Schritte mit der Microsoft Compliance Erweiterung
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Vorbereitung und Bereitstellung der Microsoft Compliance Erweiterung.
-ms.openlocfilehash: 6ae44a86d415161cd3d7adf40671f02d93fb83c6
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: 084d8fea1bffb012b4a4685dd28ec93df8e29b19
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113863"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730510"
 ---
-# <a name="get-started-with-microsoft-compliance-extension-preview"></a>Erste Schritte mit Microsoft Compliance Erweiterung (Vorschau)
+# <a name="get-started-with-microsoft-compliance-extension"></a>Erste Schritte mit der Microsoft Compliance Erweiterung
 
 Verwenden Sie diese Verfahren, um die Microsoft Compliance Erweiterung auszurollen.
 
@@ -39,8 +39,8 @@ Um Microsoft Compliance Erweiterung zu verwenden, muss das Gerät in Endpunkt-DL
 - [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 - [Erstellen einer DLP-Richtlinie aus einer Vorlage](create-a-dlp-policy-from-a-template.md)
 - [Informationen zur Verhinderung von Datenverlust am Endpunkt](endpoint-dlp-learn-about.md)
-- [Verhinderung von Datenverlust am Endpunkt – Erste Schritte](endpoint-dlp-getting-started.md)
-- [Onboarding-Tools und -Methoden für Windows 10-Computer](dlp-configure-endpoints.md)
+- [Verhinderung von Datenverlust am Endpunkt – Erste Schritte](endpoint-dlp-getting-started.md)
+- [Onboarding-Tools und -Methoden für Windows 10-Computer](dlp-configure-endpoints.md)
 - [Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen für die Verhinderung von Datenverlust am Endpunkt](endpoint-dlp-configure-proxy.md)
 - [Nutzen der Verhinderung von Datenverlust am Endpunkt](endpoint-dlp-using.md)
 
@@ -93,8 +93,8 @@ Wenn Sie die Microsoft Compliance Erweiterung auf alle Ihre überwachten Windows
 ### <a name="prepare-your-devices"></a>Bereiten Sie Ihre Geräte vor
 
 1. Verwenden Sie die Verfahren in diesen Topics, um Ihre Geräte zu integrieren:
-    1. [Verhinderung von Datenverlust am Endpunkt – Erste Schritte](endpoint-dlp-getting-started.md)
-    1. [Onboarding-Tools und -Methoden für Windows 10-Computer](dlp-configure-endpoints.md)
+    1. [Verhinderung von Datenverlust am Endpunkt – Erste Schritte](endpoint-dlp-getting-started.md)
+    1. [Onboarding-Tools und -Methoden für Windows 10-Computer](dlp-configure-endpoints.md)
     1. [Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen für die Verhinderung von Datenverlust am Endpunkt](endpoint-dlp-configure-proxy.md)
 
 ### <a name="basic-setup-single-machine-selfhost"></a>Grundlegende Einrichtung Einzel Computer Selfhost
@@ -261,9 +261,8 @@ Nachdem Sie nun Chrome aus der Liste der nicht zugelassenen Browser/Apps entfern
 
 ### <a name="known-issues-and-limitations"></a>Bekannte Probleme und Einschränkungen
 
-1. Die Drag & Drop-Erzwingung für das Hochladen von Ordnern wird nicht unterstützt.
-2. Die Erzwingung der Außerkraftsetzung von Sperren für den Cloudausgang wird nicht unterstützt.
-3. Der Inkognito-Modus wird nicht unterstützt und muss deaktiviert werden.
+1. Die Erzwingung der Außerkraftsetzung von Sperren für den Cloudausgang wird nicht unterstützt.
+2. Der Inkognito-Modus wird nicht unterstützt und muss deaktiviert werden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 Jetzt, da Geräte eingebunden sind und entsprechende Aktivitätsdaten im Aktivitäten-Explorer angezeigt werden, können Sie mit dem nächsten Schritt fortfahren, bei dem Sie DLP-Richtlinien zum Schutz Ihrer vertraulichen Elemente erstellen werden.
@@ -279,6 +278,6 @@ Jetzt, da Geräte eingebunden sind und entsprechende Aktivitätsdaten im Aktivit
 - [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/)
 - [Onboarding-Tools und -Methoden für Windows 10-Computer](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
-- [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
+- [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure AD-verbundene Geräte](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
 - [Herunterladen des auf Chromium basierenden neuen Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

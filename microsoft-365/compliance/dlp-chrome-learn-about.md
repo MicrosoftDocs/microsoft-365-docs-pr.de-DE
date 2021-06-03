@@ -1,5 +1,5 @@
 ---
-title: Erfahren Sie mehr über das Microsoft Compliance-Erweiterung (Vorschau)
+title: Erfahren Sie mehr über die Microsoft Compliance-Erweiterung
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -19,14 +19,14 @@ ms.collection:
 search.appverid:
 - MET150
 description: Die Microsoft Compliance-Erweiterung erweitert die Überwachung von Dateiaktivitäten und Schutzaktionen auf den Google Chrome-Browser
-ms.openlocfilehash: c8a5795b3be8b393fd3a934504449bf6db0c2f01
-ms.sourcegitcommit: 05f40904f8278f53643efa76a907968b5c662d9a
+ms.openlocfilehash: b8d9be88f42cce736cdbf66a97f4363106fa5820
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52113381"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730486"
 ---
-# <a name="learn-about-the-microsoft-compliance-extension-preview"></a>Erfahren Sie mehr über das Microsoft Compliance-Erweiterung (Vorschau)
+# <a name="learn-about-the-microsoft-compliance-extension"></a>Erfahren Sie mehr über die Microsoft Compliance-Erweiterung
 
 [Verhinderung von Datenverlust am Endpunkt (Endpunkt-DLP)](endpoint-dlp-learn-about.md) erweitert die Aktivitätsüberwachung und die Schutzfunktionen von [Microsoft 365-Verhinderung von Datenverlust](dlp-learn-about-dlp.md) auf sensible Elemente auf Windows 10-Geräten. Sobald Geräte in den Microsoft 365 Compliance-Lösungen eingebunden wurden, werden die Informationen zu den Aktionen, die Benutzer mit und an vertraulichen Elementen ausführen, im [Aktivitäten-Explorer](data-classification-activity-explorer.md) angezeigt, und Sie können Schutzmaßnahmen für diese Elemente über [DLP-Richtlinien](create-test-tune-dlp-policy.md) erzwingen.
 
@@ -46,7 +46,7 @@ Aktivität |Beschreibung  | Unterstützte Richtlinienaktionen|
 
 ## <a name="deployment-process"></a>Bereitstellungsprozess
 1. [Endpunkt-DLP – Erste Schritte](endpoint-dlp-getting-started.md)
-2. [Onboarding-Tools und -Methoden für Windows 10-Computer](dlp-configure-endpoints.md)
+2. [Onboarding-Tools und -Methoden für Windows 10-Computer](dlp-configure-endpoints.md)
 3. [Erweiterung auf Ihre Windows 10-Geräte installieren](dlp-chrome-get-started.md)
 4. [DLP-Richtlinien erstellen oder bearbeiten](create-test-tune-dlp-policy.md), die „In Cloud hochladen“-Dienste einschränken, oder greifen Sie mittels unzulässiger Browseraktionen zu und wenden Sie sie auf Ihren Microsoft 10-Geräten an
 

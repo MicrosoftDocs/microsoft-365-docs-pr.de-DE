@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Datensätze mithilfe von Aufbewahrungsbezeichnungen deklarieren.
-ms.openlocfilehash: fd88858c8d5cd1870f594050607b784a9dc5b78c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fed988d2f880e4c0af1321cfb6ef4a873bd4e7ab
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925661"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730546"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Datensätzen mithilfe von Aufbewahrungsbezeichnungen deklarieren
 
@@ -54,7 +54,7 @@ Wenn Sie es sich anders überlegen, können Sie sie erneut ausblenden, indem Sie
 
 ## <a name="configuring-retention-labels-to-declare-records"></a>Aufbewahrungsbezeichnugen zum Deklarieren von Datensätzen konfigurieren
 
-Wenn Sie eine Aufbewahrungsbezeichnung aus der **Datensatzverwaltung** s-Lösung im Microsoft 365 Compliance Center erstellen oder bearbeiten, haben Sie die Möglichkeit, Elemente als Datensatz zu kennzeichnen. Wenn Sie den PowerShell-Befehl aus dem vorherigen Abschnitt ausgeführt haben, können Sie alternativ Elemente als regulatorischen Datensatz festlegen.
+Wenn Sie eine Aufbewahrungsbezeichnung aus der **Datensatzverwaltung**-Lösung im Microsoft 365 Compliance Center erstellen oder bearbeiten, haben Sie die Option zum Markieren von Elementen als Datensatz. Wenn Sie den PowerShell-Befehl aus dem vorherigen Abschnitt ausgeführt haben, können Sie alternativ Elemente als regulatorischen Datensatz festlegen.
 
 Zum Beispiel:
 
@@ -69,12 +69,12 @@ Vollständige Anweisungen:
 - [Automatisches Anwenden einer Aufbewahrungsbezeichnung auf Inhalte](apply-retention-labels-automatically.md) (wird bei regulatorischen Datensätzen nicht unterstützt)
 
 
-## <a name="applying-the-configured-retention-label-to-content"></a>Anwenden der konfigurierten Aufbewahrungsbezeichnung auf Inhalte
+## <a name="applying-the-configured-retention-label-to-content&quot;></a>Anwenden der konfigurierten Aufbewahrungsbezeichnung auf Inhalte
 
 Wenn Aufbewahrungsbezeichnungen, die Inhalte als Datensatz oder regulatorischen Datensatz markieren, Benutzern zur Verfügung gestellt werden, um sie in Apps anzuwenden:
 
 - Bei Exchange kann jeder Benutzer mit Schreibzugriff auf das Postfach diese Bezeichnung anwenden. 
-- Bei SharePoint und OneDrive kann jeder Benutzer in der Standardgruppe "Mitglieder" (Berechtigungsstufe "Beitrag") diese Bezeichnung anwenden.
+- Bei SharePoint und OneDrive kann jeder Benutzer in der Standardgruppe &quot;Mitglieder&quot; (Berechtigungsstufe &quot;Beitrag") diese Bezeichnung anwenden.
 
 Beispiel für ein Dokument, das mithilfe einer Aufbewahrungsbezeichnung als Datensatz markiert wurde:
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 945645e0f20f316c094f746adb6ba193f6806f86
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 7ed7390f67747d176145bb051d8b1633a7146a23
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861359"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730810"
 ---
 # <a name="onboard-previous-versions-of-windows"></a>Onboarding von früheren Windows-Versionen
 
@@ -78,7 +78,7 @@ Die folgenden Schritte sind erforderlich, um diese Integration zu aktivieren:
     > Gilt nur für Windows 7 SP1 Enterprise und Windows 7 SP1 Pro.
     > Installieren Sie nicht .NET Framework 4.0.x, da die oben aufgeführte Installation negiert wird.
 
-- Erfüllen Sie die Mindestsystemanforderungen des Azure Log Analytics-Agents. Weitere Informationen finden Sie unter [Sammeln von Daten von Computern in Ihrer Umgebung mit Log Analytics.](https://docs.microsoft.com/azure/log-analytics/log-analytics-concept-hybrid#prerequisites)
+- Erfüllen Sie die Mindestsystemanforderungen des Azure Log Analytics-Agents. Weitere Informationen finden Sie unter [Sammeln von Daten von Computern in Ihrer Umgebung mit Log Analytics](/azure/log-analytics/log-analytics-concept-hybrid#prerequisites).
 
 
 
@@ -111,4 +111,3 @@ Sobald sie abgeschlossen sind, sollten integrierte Endpunkte innerhalb einer Stu
 In offboard können Sie den MMA-Agent vom Endpunkt deinstallieren oder von der Berichterstellung an Ihren Defender for Endpoint-Arbeitsbereich trennen. Nach dem Offboarding des Agents sendet der Endpunkt keine Sensordaten mehr an Defender for Endpoint. 
 
 > Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-downlevele-belowfoldlink).
-

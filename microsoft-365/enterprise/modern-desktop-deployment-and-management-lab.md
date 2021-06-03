@@ -1,5 +1,5 @@
 ---
-title: Windows und Office Deployment Lab Kit
+title: Windows 10 und Office 365 Deployment Lab Kit
 f1.keywords:
 - NOCSH
 ms.author: greglin
@@ -15,28 +15,28 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: c0cf3ce239ed91261bd6e53cf317a7053168509a
-ms.sourcegitcommit: e5b1a900043e2e41650ea1cbf4227043729c6053
+ms.openlocfilehash: da51e0e3509ac2be60b9961dc2a0532d29f4f137
+ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "52060873"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52736348"
 ---
-# <a name="windows-and-office-deployment-lab-kit"></a>Windows und Office Deployment Lab Kit
+# <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 und Office 365 Deployment Lab Kit
 
-Das Windows und Office-Bereitstellungslaborkit ist so konzipiert, dass Sie Ihre Bereitstellung und Verwaltung von Desktops planen, testen und überprüfen können, auf Windows 10 Enterprise und Microsoft 365 Apps for Enterprise. Die Labore im Kit umfassen Microsoft Endpoint Configuration Manager, Desktop Analytics, das Office Customization Tool, OneDrive, Windows Autopilot und vieles mehr.
+Das Windows 10- und Office 365 Deployment Lab Kit ist so konzipiert, dass Sie Ihre Bereitstellung und Verwaltung von Desktops, auf denen Windows 10 Enterprise und Microsoft 365 Apps for Enterprise ausgeführt werden, planen, testen und überprüfen können. Die Labore im Kit umfassen Microsoft Endpoint Configuration Manager, Desktop Analytics, das anpassungstool Office, OneDrive, Windows Autopilot und vieles mehr.
 
-Dieses Kit wird dringend für Organisationen empfohlen, die Windows 8.1 Upgrades auf Windows 10. Sie gilt auch, wenn Sie derzeit Windows 10, Microsoft 365 Apps for Enterprise (früher Office 365 ProPlus) oder Office 2019 verwenden. Als isolierte Umgebung eignet sich die resultierende Übungseinheit ideal zum Erkunden von Bereitstellungstoolupdates und zum Testen Ihrer bereitstellungsbezogenen Automatisierung.
+Dieses Kit wird dringend für Organisationen empfohlen, die sich auf Windows 8.1 Upgrades auf Windows 10 vorbereiten. Dies gilt auch, wenn Sie derzeit Windows 10, Microsoft 365 Apps for Enterprise (früher Office 365 ProPlus) oder Office 2019 verwenden. Als isolierte Umgebung eignet sich das resultierende Labor ideal für die Untersuchung von Bereitstellungstoolupdates und das Testen der automatisierungsbezogenen Bereitstellung.
 
 [Herunterladen des Deployment Lab Kit für Windows und Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
 ## <a name="a-complete-lab-environment"></a>Vollständige Übungsumgebung
 
-Das Kit bietet Ihnen eine automatisch bereitgestellte virtuelle Lab-Umgebung, einschließlich in die Domäne integrierten Desktopclients, einen Domänencontroller, ein Internetgateway und eine vollständig konfigurierte Configuration Manager-Instanz. Das Kit enthält die neuesten Evaluierungsversionen der folgenden Produkte:
+Das Kit bietet Ihnen eine automatisch bereitgestellte virtuelle Lab-Umgebung, einschließlich in die Domäne eingebundener Desktopclients, eines Domänencontrollers, eines Internetgateways und einer vollständig konfigurierten Configuration Manager-Instanz. Das Kit enthält die neuesten Evaluierungsversionen der folgenden Produkte:
 
-  - NEU! Windows 10 Enterprise, Version 20H2
+  - NEU! Windows 10 Enterprise, Version 21H1
   - Windows 7 Enterprise
-  - Microsoft Endpoint Configuration Manager, Version 2010*
+  - NEU! Microsoft Endpoint Configuration Manager, Version 2103*
   - Windows Assessment and Deployment Kit für Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -44,9 +44,10 @@ Das Kit bietet Ihnen eine automatisch bereitgestellte virtuelle Lab-Umgebung, ei
   - Windows Server 
   - Microsoft SQL Server 
 
-Das resultierende Labor ist so konzipiert, dass es mit Testversionen verbunden werden kann für: 
+Das resultierende Labor ist so konzipiert, dass es mit Testversionen für Folgendes verbunden werden kann: 
 
   - Microsoft 365 E5
+  - Microsoft 365 Apps for Enterprise
   - Office 365 E5 mit Enterprise Mobility + Security (EMS)
 
 ## <a name="step-by-step-labs"></a>Schritt-für-Schritt-Übungen
@@ -56,17 +57,17 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 ### <a name="plan-and-prepare-infrastructure"></a>Planen und Vorbereiten der Infrastruktur 
 - Desktop Analytics 
 - Cloud Management Gateway & Cloud Distribution Point 
-- Mandanten-Anfügen, Co-Management und Wechseln von Arbeitsauslastungen 
+- Mandantenanfügung, Co-Verwaltung und Wechsel von Workloads 
 - Remotezugriff (VPN) 
 
 ### <a name="prepare-configuration"></a>Vorbereiten der Konfiguration   
 
-- Optimieren Windows 10 Aktualisierungsbereitstellung   
-- Servicing Windows 10 using Group Policy
-- Servicing Windows 10 using Microsoft Intune   
-- Servicing Windows 10 with Configuration Manager   
-- Servicing Microsoft 365 Apps for Enterprise using Configuration Manager   
-- Servicing Microsoft 365 Apps for Enterprise using Intune  
+- Optimieren Windows 10 Updatebereitstellung   
+- Wartung Windows 10 mithilfe von Gruppenrichtlinien
+- Wartung Windows 10 mithilfe von Microsoft Intune   
+- Wartungs-Windows 10 mit Configuration Manager   
+- Wartung Microsoft 365 Apps for Enterprise mit configuration Manager   
+- Wartung Microsoft 365 Apps for Enterprise mit Intune  
 - Sicherheit und Compliance   
 
 ### <a name="prepare-applications"></a>Vorbereiten von Anwendungen    
@@ -76,30 +77,31 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 
 ### <a name="deploy-windows-10"></a>Bereitstellen von Windows 10   
 
-- Tasksequenzen für die Betriebssystembereitstellung im Configuration Manager
+- Tasksequenzen für die Betriebssystembereitstellung in Configuration Manager
 - Tasksequenzen für die Betriebssystembereitstellung im Microsoft Deployment Toolkit (MDT)
 - Windows Autopilot
 - Bereitstellen und Verwalten der neuen Microsoft Edge  
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Bereitstellung von Microsoft 365 Apps for Enterprise    
 
-- Cloud verwaltete Bereitstellung  
+- Cloud-verwaltete Bereitstellung  
 - Lokal verwaltete Bereitstellung    
-- Microsoft 365 Apps for Enterprise Bereitstellung auf Nicht-AD-beigetretenen Geräten 
-- Enterprise verwaltete Bereitstellung mithilfe von Configuration Manager
+- Microsoft 365 Apps for Enterprise Bereitstellung auf Nicht-AD-verbundenen Geräten 
+- Enterprise der verwalteten Bereitstellung mit configuration Manager
 - Enterprise verwaltete Bereitstellung mithilfe von Microsoft Intune  
 - Branchenbereitstellung und -verwaltung mit Microsoft Intune
-- Bereitstellen Microsoft Teams
+- Bereitstellen von Microsoft Teams
 
 ### <a name="deploy-windows-virtual-desktop"></a>Bereitstellen Windows virtuellen Desktops  
 
 - Vorbereiten, Bereitstellen, Optimieren
  
-## <a name="where-to-find-the-windows-and-office-deployment-lab-kit"></a>Wo finden Sie das Windows und Office Deployment Lab Kit
+## <a name="where-to-find-the-windows-10-and-office-365-deployment-lab-kit"></a>Hier finden Sie das Windows 10- und Office 365 Deployment Lab Kit
 
 [Herunterladen des Deployment Lab Kit für Windows und Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* Die installierte Basisversion 2002 kann mithilfe und in der Konsole auf Version 2010 aktualisiert werden. Verwenden Sie eine Internetverbindung mit breiter Bandbreite, um diese Inhalte herunterzuladen, und erlauben Sie der automatischen Bereitstellung 30 bis 45 Minuten. Die Laborumgebung erfordert mindestens 16 GB verfügbaren Arbeitsspeicher und 150 GB freien Speicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Arbeitsspeicher und 300 GB freier Speicherplatz empfohlen. Das Kit läuft am 22. Juli 2021 ab. Eine neue Version wird vor ablaufen veröffentlicht.
+> [!NOTE]
+> Verwenden Sie eine Breitband-Internetverbindung, um diese Inhalte herunterzuladen, und lassen Sie 30 bis 45 Minuten für die automatische Bereitstellung zu. Die Lab-Umgebung erfordert mindestens 16 GB verfügbaren Arbeitsspeicher und 150 GB freien Speicherplatz. Für eine optimale Leistung werden 32 GB verfügbarer Arbeitsspeicher und 300 GB freier Speicherplatz empfohlen. Das Kit läuft am 23. August 2021 ab. Eine neue Version wird vor ablaufen veröffentlicht.
 
 ## <a name="additional-guidance"></a>Zusätzliche Anleitung
 

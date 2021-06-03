@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Führen Sie die Schritte in diesem Artikel aus, um einem anderen Mitarbeiter Zugriff auf die Daten des ehemaligen Mitarbeiters OneDrive Outlook geben.
-ms.openlocfilehash: 55bc2c3d8530e5cb7702f99a77b3918bfb7c0dee
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: abcad87498f6670fe7fe2f5457321f1b3f6e0930
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634256"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730198"
 ---
 # <a name="step-4---give-another-employee-access-to-onedrive-and-outlook-data"></a>Schritt 4: Geben Sie einem anderen Mitarbeiter Zugriff auf OneDrive und Outlook Daten
 
@@ -52,6 +52,30 @@ Um die Dateien eines ehemaligen Benutzers OneDrive zu erhalten, geben Sie sich z
 > [!NOTE]
 > Sie können bis zu 500 MB an Dateien und Ordnern gleichzeitig verschieben oder kopieren.<br/>
 > Wenn Sie Dokumente mit Versionsverlauf verschieben oder kopieren, wird nur die neueste Version verschoben.  
+
+Sie können auch einem anderen Benutzer Zugriff auf das Konto eines ehemaligen Mitarbeiters OneDrive.
+
+1. Melden Sie sich beim <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Admin Center</a> als globaler Administrator oder SharePoint an.
+
+    Wenn Sie eine Meldung erhalten, dass Sie nicht über die Berechtigung zum Zugriff auf das Admin Center verfügen, verfügen Sie nicht über Administratorberechtigungen in Ihrer Organisation.
+
+2. Wählen Sie im linken Bereich **Admin Center SharePoint.** \>  (Möglicherweise müssen Sie **Alle anzeigen** auswählen, um die Liste der Admin Center anzuzeigen.)
+
+3. Wenn das klassische SharePoint Admin Center  angezeigt wird, wählen Sie jetzt öffnen oben auf der Seite aus, um das SharePoint zu öffnen.
+
+4. Wählen Sie im linken Bereich Weitere **Features aus.**
+
+5. Wählen Sie unter **Benutzerprofile** **Öffnen** aus.
+
+6. Wählen **Sie unter Personen** die Option **Benutzerprofile verwalten aus.**
+
+7. Geben Sie den Namen des ehemaligen Mitarbeiters ein, und wählen Sie **Suchen aus.**
+
+8. Klicken Sie mit der rechten Maustaste auf den Benutzer, und wählen Sie **dann Websitesammlungsbesitzer verwalten aus.**
+
+9. Fügen Sie den Benutzer **websitesammlungsadministratoren hinzu,** und wählen Sie **Ok aus.**
+
+10. Der Benutzer kann nun über die OneDrive auf die OneDrive zugreifen. 
 
 ### <a name="revoke-admin-access-to-a-users-onedrive"></a>Widerrufen des Administratorzugriffs auf die OneDrive
 

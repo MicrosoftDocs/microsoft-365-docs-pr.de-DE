@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: aeb669aa-1770-4537-9de2-a82ac11b0540
 description: In diesem Artikel erfahren Sie, wie Sie allgemeine Verwaltungsaufgaben für Microsoft 365 in PowerShell ausführen.
-ms.openlocfilehash: adf796ad2f2ee7a304c578cd42c700f2b44e7a5b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 22bf4d1f3187746483d8d904378e675562a62142
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911050"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730558"
 ---
 # <a name="manage-microsoft-365-groups-with-powershell"></a>Verwalten von Microsoft 365-Gruppen mit PowerShell
 
@@ -39,7 +39,7 @@ In diesem Artikel werden die Schritte zum Ausführen häufiger Verwaltungsaufgab
 
 Wenn Benutzer [eine Gruppe in Outlook erstellen oder bearbeiten](https://support.office.com/article/04d0c9cf-6864-423c-a380-4fa858f27102.aspx), können Sie über einen Link auf die Nutzungsrichtlinien Ihrer Organisation verweisen. Angenommen, einem Gruppennamen muss ein spezielles Präfix oder Suffix hinzugefügt werden.
 
-Verwenden Sie Azure Active Directory (Azure AD) PowerShell, um Ihre Benutzer auf die Verwendungsrichtlinien Ihrer Organisation für Microsoft 365 verweisen. Lesen Sie [Azure Active Directory-Cmdlets zum Konfigurieren von Gruppeneinstellungen](/azure/active-directory/enterprise-users/groups-settings-cmdlets), und führen Sie die Schritte unter **Erstellen von Einstellungen auf Verzeichnisebene** aus, um den Link zu den Nutzungsrichtlinien zu definieren. Nachdem Sie das AAD-Cmdlet ausgeführt haben, wird den Benutzern beim Erstellen oder Bearbeiten einer Gruppe in Outlook der Link zu Ihren Richtlinien angezeigt.
+Verwenden Sie Azure Active Directory (Azure AD) PowerShell, um Ihre Benutzer auf die Verwendungsrichtlinien Ihrer Organisation für Microsoft 365 verweisen. Lesen Sie [Azure Active Directory-Cmdlets zum Konfigurieren von Gruppeneinstellungen](/azure/active-directory/enterprise-users/groups-settings-cmdlets), und führen Sie die Schritte unter **Erstellen von Einstellungen auf Verzeichnisebene** aus, um den Link zu den Nutzungsrichtlinien zu definieren. Nachdem Sie das AAD-Cmdlet ausgeführt haben, wird benutzern der Link zu Ihren Richtlinien beim Erstellen oder Bearbeiten einer Gruppe in Outlook.
 
 ![Eine neue Gruppe mit Link zu Nutzungsrichtlinien erstellen](../media/3f74463f-3448-4f24-a0ec-086d9aa95caa.png)
 

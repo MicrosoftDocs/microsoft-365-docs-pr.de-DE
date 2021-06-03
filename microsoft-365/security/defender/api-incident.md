@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 APIs für Defender-Vorfälle und der Ressourcentyp für Vorfälle
-description: Erfahren Sie mehr über die Methoden und Eigenschaften des Ressourcentyps Incident in Microsoft 365 Defender
+title: Microsoft 365 ApIs für Defender-Vorfälle und den Ressourcentyp "Vorfälle"
+description: Erfahren Sie mehr über die Methoden und Eigenschaften des Ressourcentyps Incidents in Microsoft 365 Defender
 keywords: Vorfall, Vorfälle, API
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,20 +20,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5cc149668e49e21b38b5fb95ae3f40db6c296e1d
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 587d6107b0c09b2178311d8da6606968e7fda083
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572585"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730930"
 ---
-# <a name="microsoft-365-defender-incidents-api-and-the-incident-resource-type"></a>Microsoft 365 Defender Incidents-API und der Ressourcentyp für Vorfälle
+# <a name="microsoft-365-defender-incidents-api-and-the-incidents-resource-type"></a>Microsoft 365 Defender Incidents API und der Ressourcentyp "Incidents"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Gilt für:**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.

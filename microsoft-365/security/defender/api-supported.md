@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f2c66dca326589807f5712c5548c177a0d08ade0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: c10b2863503a5bda829cbf67379a606b687ac2e3
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935725"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730942"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>Unterstützte Microsoft 365 Defender-APIs 
 
@@ -43,6 +43,7 @@ Artikel | Beschreibung
 -|-
 [Erweiterte Suche-API](api-advanced-hunting.md) | Führen Sie Erweiterte Suchabfragen aus.
 [Vorfall-APIs](api-incident.md) | Auflisten und Aktualisieren von Vorfällen sowie andere praktische Aufgaben.
+[Streaming-API](../defender-endpoint/raw-data-export.md) (Vorschau) | Senden von Echtzeitereignissen und -warnungen, die in einem einzelnen Datenstrom auftreten.
 
 ### <a name="endpoint-uris"></a>Endpunkt-URIs
 
@@ -60,5 +61,6 @@ Alle APIs entlang des `/api` Pfads verwenden das [OData-Protokoll,](/odata/overv
 
 - [Microsoft 365 Übersicht über Defender-APIs](api-overview.md)
 - [Zugreifen auf die Microsoft 365 Defender-APIs](api-access.md)
+- [Streaming-API](../defender-endpoint/raw-data-export.md)
 - [Informationen zu API-Beschränkungen und -Lizenzierung](api-terms.md)
 - [Verstehen von Fehlercodes](api-error-codes.md)

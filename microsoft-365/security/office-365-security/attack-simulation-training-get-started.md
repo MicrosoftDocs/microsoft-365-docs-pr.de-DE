@@ -20,12 +20,12 @@ ms.custom:
 description: Administratoren erfahren, wie Sie mithilfe von Attack Simulationsschulungen simulierte Phishing- und Kennwortangriffe in ihren organisationen Microsoft 365 E5 oder Microsoft Defender for Office 365 Plan 2 ausführen können.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e344153ef433bc13b16136e584ec4da73fcef6a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a5986bbeebd49223ebfd74773346f27fc5297243
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204089"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730908"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Erste Schritte mit dem Angriffssimulationstraining
 
@@ -51,6 +51,11 @@ Wenn Ihre Organisation über Microsoft 365 E5 oder Microsoft Defender für Offic
 - Es gibt keine entsprechenden PowerShell-Cmdlets für attack simulation training.
 
 - Angriffssimulations- und Schulungsdaten werden zusammen mit anderen Kundendaten für Microsoft 365 gespeichert. Weitere Informationen finden Sie [unter Microsoft 365 Speicherorte](../../enterprise/o365-data-locations.md). Die Angriffssimulation ist in den folgenden Regionen verfügbar: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN und KOR.
+
+- Ab dem 15. Juni 2021 ist das Training zur Angriffssimulation in GCC. Wenn Ihre Organisation über Office 365 G5 GCC oder Microsoft Defender für Office 365 (Plan 2) für Die Regierung verfügt, können Sie das Training zur Angriffssimulation im Microsoft Security Center verwenden, um realistische Angriffsszenarien in Ihrer Organisation wie in diesem Artikel beschrieben durchzuführen. Das Training zur Angriffssimulation ist in GCC oder DoD-Umgebungen noch nicht verfügbar.
+
+> [!NOTE]
+> Das Training zur Angriffssimulation bietet E3-Kunden eine Teilmenge der Funktionen als Testversion. Das Testangebot enthält die Möglichkeit, eine Nutzlast für die Verwendung von Credential Harvest zu verwenden, und die Möglichkeit, "ISA Phishing" oder "Massenmarktphishing" auszuwählen. Keine anderen Funktionen sind Teil des E3-Testangebots.
 
 ## <a name="simulations"></a>Simulationen
 

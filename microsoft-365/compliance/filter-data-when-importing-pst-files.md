@@ -18,17 +18,17 @@ search.appverid:
 - MET150
 ms.assetid: 26af16df-34cd-4f4a-b893-bc1d2e74039e
 ms.custom: seo-marvel-apr2020
-description: Erfahren Sie, wie Sie Daten mithilfe des intelligenten Importfeatures im Office 365 importieren, wenn Sie PST-Dateien in Office 365.
-ms.openlocfilehash: fb978332f70495044a457147d29d8cdcf1194264
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+description: Erfahren Sie, wie Sie Daten mithilfe des intelligenten Importfeatures im Microsoft 365 importieren, wenn Sie PST-Dateien in Microsoft 365.
+ms.openlocfilehash: fc89467e3ea9c0af86ec6b9ef6a9d7d61079e116
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684053"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730570"
 ---
 # <a name="filter-data-when-importing-pst-files"></a>Filtern von Daten beim Importieren von PST-Dateien
 
-Verwenden Sie das neue Feature Intelligent Import im Office 365 Import service, um die Elemente in PST-Dateien zu filtern, die tatsächlich in die Zielpostfächer importiert werden. Funktionsweise:
+Verwenden Sie das neue Feature Intelligent Import im Microsoft 365 Import service, um die Elemente in PST-Dateien zu filtern, die tatsächlich in die Zielpostfächer importiert werden. Funktionsweise:
   
 - Nachdem Sie einen PST-Importauftrag erstellt und übermittelt haben, werden PST-Dateien in einen Azure-Speicherbereich in der Microsoft Cloud hochgeladen.
   
@@ -66,7 +66,7 @@ Nachdem Sie einen PST-Importauftrag erstellt haben, führen Sie die folgenden Sc
   
 1. Navigieren Sie zu <https://compliance.microsoft.com>, und melden Sie sich mit den Anmeldeinformationen für ein Administratorkonto in Ihrer Organisation an.
     
-2. Klicken Sie im linken Bereich des Microsoft 365 Compliance Center auf **Information Governance** \> **Import**.
+2. Klicken Sie im linken Bereich des Microsoft 365 Compliance Centers auf **Informationsgovernance** \> **Importieren**.
     
     Die Importaufträge für Ihre Organisation sind auf der Registerkarte **Importieren** aufgeführt. Der **Wert Analysis completed** in der Spalte **Status** gibt die Importaufträge an, die von Microsoft 365 analysiert wurden und zum Importieren bereit sind.
     
@@ -119,7 +119,7 @@ Nachdem Sie einen PST-Importauftrag erstellt haben, führen Sie die folgenden Sc
   
     e. Klicken **Sie auf Daten importieren,** um den Import zu starten. Die Gesamtanzahl der importierten Daten wird angezeigt. 
   
-    Oder:
+    Oder
   
     a. Klicken **Sie auf Nein, ich möchte alles importieren,** um alle Daten in den PST-Dateien in Office 365 importieren, und klicken Sie dann auf **Weiter**.
   

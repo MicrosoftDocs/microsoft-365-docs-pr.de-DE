@@ -22,12 +22,12 @@ ms.custom:
 description: Administratoren können erfahren, wie das automatische Löschen (Zero-Hour Auto Purge, ZAP) zugestellte Nachrichten in einem Exchange Online-Postfach rückwirkend in den Junk-E-Mail-Ordner oder die Quarantäne verschieben kann, bei der es sich rückwirkend um Spam oder Phishing handelt.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ee5a3fee8e189ff9cc08f187971e728670766d6d
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 9612f6267a0786b6f81f1c9a3f2ac270e344d0a8
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684195"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730678"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Automatisches Löschen (Zero-Hour Auto Purge, ZAP) in Exchange Online
 
@@ -72,6 +72,12 @@ Für lese- oder **ungelesene** Nachrichten, die nach der Zustellung als Phishing
 Standardmäßig ist ZAP für Phishing in Antispamrichtlinien aktiviert,  und die Standardaktion für das Phishing-E-Mail-Filter-Urteil ist **Quarantänenachricht**, was bedeutet, dass die Nachricht standardmäßig von ZAP für Phishingquarantäne isoliert wird.
 
 Weitere Informationen zum Konfigurieren von Spamfilterungsverkündungen finden Sie unter [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
+
+### <a name="zap-for-high-confidence-phishing"></a>ZAP für Phishing mit hoher Vertrauenssicherheit 
+
+Für **lese- oder ungelesene Nachrichten,** die nach der Zustellung als Phishing mit hoher Sicherheit identifiziert werden, isoliert ZAP die Nachricht. Nur Administratoren können Nachrichten mit hoher Vertrauenssicherheit aus der Quarantäne anzeigen und verwalten. 
+
+ZAP für hohe Vertrauenssicherheit ist standardmäßig aktiviert. Weitere Informationen finden Sie unter [Secure by Default in Office 365](secure-by-default.md).
 
 ### <a name="zap-for-spam"></a>ZAP für Spam
 
@@ -119,6 +125,6 @@ ZAP funktioniert weiterhin, solange die Nachricht nicht gelöscht wurde oder sol
 
 ### <a name="how-does-zap-affect-mailboxes-on-hold"></a>Wie wirkt sich ZAP auf postfächer im Halteraum aus?
 
-Zap isoliert Nachrichten nicht aus Postfächern, die sich im Haltebereich halten. ZAP kann Nachrichten basierend auf der Aktion, die für ein Spam- oder Phishing-Urteil in Antispamrichtlinien konfiguriert ist, in den Junk-E-Mail-Ordner verschieben.
+ZAP isoliert Nachrichten aus Postfächern, die sich im Haltebereich halten. ZAP kann Nachrichten basierend auf der Aktion, die für ein Spam- oder Phishing-Urteil in Antispamrichtlinien konfiguriert ist, in den Junk-E-Mail-Ordner verschieben.
 
 Weitere Informationen zu Halterechten in Exchange Online finden Sie unter [In-Place Hold and Litigation Hold in Exchange Online](/Exchange/security-and-compliance/in-place-and-litigation-holds).

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen für IT-Administratoren zur Verwaltung von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobilgeräte und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dd3f1e7329612755a1806b5d9af8e13f07790cd6
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: a7ac7415ce5e7f88b21128846b7cff957e388fd5
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625125"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730378"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -387,54 +387,24 @@ Eine Anleitung, wann diese Einstellung verwendet werden sollte, finden Sie in de
 
 ## <a name="outlook-specific-options-for-default-label-and-mandatory-labeling"></a>Outlook-spezifische Optionen für Standardbezeichnungen und obligatorische Bezeichnungen
 
-Für integrierte Bezeichnungen ermitteln Sie die Mindestversionen von Outlook, die diese Features unterstützen, anhand der [Funktionstabelle für Outlook](#sensitivity-label-capabilities-in-outlook) auf dieser Seite und der Zeile **Verschiedene Einstellungen für Standardbezeichnungen und obligatorische Bezeichnungen**.
+Für integrierte Bezeichnungen ermitteln Sie die Mindestversionen von Outlook, die diese Features unterstützen, anhand der [Funktionstabelle für Outlook](#sensitivity-label-capabilities-in-outlook) auf dieser Seite und der Zeile **Verschiedene Einstellungen für Standardbezeichnungen und obligatorische Bezeichnungen**. Alle Versionen des Bezeichnungs-Assistenten von Azure Information Protection unterstützen diese für Outlook spezifischen Optionen.
 
-Wenn Sie die Bezeichnungsrichtlinieneinstellungen **Diese Bezeichnung standardmäßig auf Dokumente und E-Mails anwenden** und **Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden** auswählen, gilt Ihre Konfigurationsauswahl standardmäßig sowohl für E-Mails als auch für Dokumente.
+Wenn die Outlook-App eine Standardbezeichnungseinstellung unterstützt, die sich von der Standardbezeichnungseinstellung für Dokumente unterscheidet:
 
-Wenn Sie unterschiedliche Einstellungen auf E-Mails anwenden möchten, verwenden Sie die erweiterten PowerShell-Einstellungen:
+- Im Assistenten für die Bezeichnungsrichtlinie können Sie auf der Seite **Eine Standardbezeichnung auf E-Mails anwenden** Ihre gewählte Vertraulichkeitsbezeichnung angeben, die auf alle E-Mails ohne Bezeichnung angewendet wird, oder keine Standardbezeichnung angeben. Diese Einstellung ist unabhängig von der Einstellung **Diese Bezeichnung standardmäßig auf Dokumente anwenden** auf der vorherigen Seite **Richtlinieneinstellungen für Dokumente** des Assistenten.
 
-- **OutlookDefaultLabel**: Verwenden Sie diese Einstellung, wenn Sie möchten, dass Outlook eine andere Standardbezeichnung oder keine Bezeichnung anwendet.
+Wenn die Outlook-App eine Standardbezeichnungseinstellung unterstützt, die sich von der Standardbezeichnungseinstellung für Dokumente unterscheidet: Outlook verwendet immer den Wert, den Sie für **Diese Bezeichnung standardmäßig auf Dokumente anwenden** auf der Seite **Richtlinieneinstellungen für Dokumente** des Assistenten für die Bezeichnungsrichtlinie angeben.
 
-- **DisableMandatoryInOutlook**: Verwenden Sie diese Einstellung, wenn Sie möchten, dass Outlook die Benutzer nicht auffordert, eine Bezeichnung für nicht bezeichnete E-Mail-Nachrichten auszuwählen.
+Wenn die Outlook-App das Deaktivieren von obligatorischen Bezeichnungen unterstützt:
 
-Weitere Informationen zum Konfigurieren dieser Einstellungen mithilfe von PowerShell finden Sie im nächsten Abschnitt.
+- Wählen Sie im Assistenten für die Bezeichnungsrichtlinie auf der Seite **Richtlinieneinstellungen** die Option **Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden**. Wählen Sie dann **Weiter** > **Weiter** aus und deaktivieren Sie das Kontrollkästchen **Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden**. Lassen Sie das Kontrollkästchen aktiviert, wenn die obligatorische Bezeichnung für E-Mails und Dokumente gelten soll.
 
-### <a name="powershell-advanced-settings-outlookdefaultlabel-and-disablemandatoryinoutlook"></a>Erweiterte PowerShell-Einstellungen „OutlookDefaultLabel“ und „DisableMandatoryInOutlook“
+Wenn die Outlook-App das Deaktivieren der obligatorischen Bezeichnung nicht unterstützt: Wenn Sie **Benutzer müssen eine Bezeichnung auf ihre E-Mails und Dokumente anwenden** als Richtlinieneinstellung anwenden müssen, fordert Outlook Benutzer immer auf, eine Bezeichnung für nicht gekennzeichnete E-Mails auszuwählen.
 
-Diese Einstellungen werden unter Verwendung von PowerShell mit dem Parameter *AdvancedSettings* sowie den Cmdlets [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) und [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) aus [Security & Compliance Center PowerShell](/powershell/exchange/scc-powershell) unterstützt. Diese beiden erweiterten Einstellungen wurden zuvor nur vom Azure Information Protection-Client für einheitliche Bezeichnungen unterstützt, werden jetzt jedoch auch für integrierte Bezeichnungen unterstützt.
-
-PowerShell-Beispiele mit der Bezeichnungsrichtlinie namens **Global**:
-
-- So legen Sie fest, dass Outlook keine Standardbezeichnung festlegen muss:
-    
-    ````powershell
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel="None"}
-    ````
-
-- So legen Sie fest, dass Outlook keine obligatorischen Bezeichnungen verwenden muss:
-    
-    ````powershell
-    Set-LabelPolicy -Identity Global -AdvancedSettings @{DisableMandatoryInOutlook="True"}
-    ````
-
-Derzeit sind „OutlookDefaultLabel“ und „DisableMandatoryInOutlook“ die einzigen erweiterten PowerShell-Einstellungen, die sowohl für integrierte Bezeichnungen als auch den Azure Information Protection-Client unterstützt werden.
-
-Die anderen erweiterten PowerShell-Einstellungen werden nur für den Azure Information Protection-Client unterstützt. Weitere Informationen zur Verwendung erweiterter Einstellungen für den Azure Information Protection-Client finden Sie im [Handbuch für Administratoren: Benutzerdefinierte Konfigurationen für den Azure Information Protection-Client für einheitliche Bezeichnungen](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#configuring-advanced-settings-for-the-client-via-powershell).
-
-#### <a name="powershell-tips-for-specifying-the-advanced-settings"></a>PowerShell-Tipps zum Festlegen der erweiterten Einstellungen
-
-Um eine andere Standardbezeichnung für Outlook festzulegen, identifizieren Sie die Bezeichnung durch ihre GUID. Diesen Wert können Sie mit dem folgenden Befehl abrufen:
-
-````powershell
-Get-Label | Format-Table -Property DisplayName, Name, Guid
-````
-
-Wenn Sie eine dieser erweiterten Einstellungen aus einer Bezeichnungsrichtlinie entfernen möchten, verwenden Sie die gleiche AdvancedSettings-Parametersyntax, allerdings mit einem leeren Zeichenfolgenwert. Zum Beispiel:
-
-````powershell
-Set-LabelPolicy -Identity Global -AdvancedSettings @{OutlookDefaultLabel=""}
-````
-
+> [!NOTE]
+> Wenn Sie die erweiterten PowerShell-Einstellungen **OutlookDefaultDomain** und **DisableButoryInOutlook** mithilfe der Cmdlets [Set-LabelPolicy](/powershell/module/exchange/set-labelpolicy) oder [New-LabelPolicy](/powershell/module/exchange/new-labelpolicy) konfiguriert haben:
+> 
+> Ihre ausgewählten Werte für diese PowerShell-Einstellungen werden im Assistenten für die Bezeichnungsrichtlinie angezeigt und funktionieren automatisch für Outlook-Apps, die diese Einstellungen unterstützen. Die anderen erweiterten PowerShell-Einstellungen werden nur für den Bezeichnungs-Assistent von Azure Information Protection unterstützt.
 
 ## <a name="end-user-documentation"></a>Dokumentation für Endbenutzer
 

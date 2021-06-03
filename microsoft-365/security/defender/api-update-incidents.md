@@ -1,5 +1,5 @@
 ---
-title: Aktualisieren der Vorfall-API
+title: Update incidents API
 description: Informationen zum Aktualisieren von Vorfällen mithilfe Microsoft 365 Defender-API
 keywords: update, api, incident
 search.product: eADQiWindows 10XVcnh
@@ -20,20 +20,20 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e3f3919d067078ef1fd1e116dc52e8a73c0726d9
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: e3b445b2f9612f0113f353450ca7bf0b8a1a2bb2
+ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52571781"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52730858"
 ---
-# <a name="update-incident-api"></a>Aktualisieren der Vorfall-API
+# <a name="update-incidents-api"></a>Update incidents API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Gilt für:**
 
-- Microsoft 365 Defender
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
@@ -55,7 +55,7 @@ Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weit
 
 Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 -|-|-
-Anwendung | Incident.ReadWrite.All | Lesen und Schreiben aller Vorfälle
+Application | Incident.ReadWrite.All | Lesen und Schreiben aller Vorfälle
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Incident.ReadWrite | Lese- und Schreibvorfälle
 
 > [!NOTE]
