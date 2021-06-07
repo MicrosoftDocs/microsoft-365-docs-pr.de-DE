@@ -694,7 +694,7 @@
               href: advanced-ediscovery-dashboard.md
             - name: Anzeigen von Dokumenten in einem Prüfdateisatz
               href: view-documents-in-review-set.md
-            - name: Abfragen der Daten in einem Prüfdateisatz
+            - name: Abfragen und filtern von Inhalten in einem Prüfdateisatz
               href: review-set-search.md
             - name: Markieren von Dokumenten in einem Prüfdateisatz
               href: tagging-documents.md
