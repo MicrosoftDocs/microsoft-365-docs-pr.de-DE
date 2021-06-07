@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: 244a784b0e28f9d5629f5af242a6cf8227abdb01
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
-ms.translationtype: HT
+ms.openlocfilehash: 5eefa56b96eb616c694b26c374b235ccd95c3ee9
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770377"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796018"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Prä-Migrationsaktivitäten für die Migration von Microsoft Cloud Deutschland
 
@@ -201,7 +201,7 @@ Wenn Sie Drittanbieterdienste oder branchenspezifische Apps verwenden, die mit O
 Wenn Sie in der Microsoft Cloud Deutschland-Instanz dieselbe Azure Active Directory-Identitätspartition für Office 365 und Microsoft Azure verwenden, stellen Sie sicher, dass Sie sich auf die kundengesteuerte Migration von Microsoft Azure-Diensten vorbereiten.
 
 > [!NOTE]
-> Die Migration Ihrer Microsoft Azure-Dienste wird möglicherweise nicht gestartet, bevor Ihr Office 365-Mandant die Migrationsphase 9 erreicht hat, und muss abgeschlossen sein, bevor die Migrationsphase 10 abgeschlossen ist.
+> Die Migration Ihrer Microsoft Azure Dienste beginnt möglicherweise nicht, bevor Ihr Office 365 Mandant die Migrationsphase 9 erreicht hat, und muss abgeschlossen werden, bevor die Migrationsphase 10 gestartet wurde.
 
 Kunden, die Office 365- und Azure-Ressourcen (z. B. Netzwerk, Datenverarbeitung und Speicher) verwenden, führen die Migration von Ressourcen zur Office 365-Dienstinstanz aus. Diese Migration obliegt dem Kunden. Beiträge des Nachrichtencenters signalisieren den Anfang. Die Migration muss vor Abschluss der Azure AD-Organisation in der Office 365-Diensteumgebung abgeschlossen sein. Informationen zu Azure-Migrationen finden Sie im Azure-Migrationsplaybook [Übersicht über den Migrationsleitfaden für Azure Deutschland](https://docs.microsoft.com/azure/germany/germany-migration-main).
 
