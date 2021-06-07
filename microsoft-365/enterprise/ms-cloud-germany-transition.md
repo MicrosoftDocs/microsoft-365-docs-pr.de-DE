@@ -19,19 +19,19 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verstehen.'
-ms.openlocfilehash: ad6c81f04b9e8551ad6eeb6521f7562243df53e9
-ms.sourcegitcommit: 94e64afaf12f3d8813099d8ffa46baba65772763
-ms.translationtype: HT
+ms.openlocfilehash: 4162e51164120cecaa431ad6883d3ee112ad4880
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52346304"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796006"
 ---
 # <a name="migration-from-microsoft-cloud-deutschland-to-office-365-services-in-the-new-german-datacenter-regions"></a>Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen
 
 > [!NOTE]
 > Dieser Artikel gilt nur für anspruchsberechtigte Kunden von Microsoft Cloud Deutschland.
 
-Im August 2018 hat Microsoft die Absicht angekündigt, die gesamte Microsoft-Cloud – Azure, Office 365, Dynamics 365 und Power Platform – aus neuen Cloud-Regionen in Deutschland bereitzustellen, um die digitale Transformation seiner Kunden noch besser zu unterstützen. Im August 2019 haben wir angekündigt, dass wir die neuen Cloud-Regionen in Deutschland für erste Kunden eröffnen. Wir haben seitdem die Verfügbarkeit von Azure, Office 365, Dynamics 365 und Power Platform angekündigt.
+Im August 2018 hat Microsoft angekündigt, dass wir die gesamte Microsoft-Cloud – Azure, Office 365, Dynamics 365 und Power Platform – aus neuen Cloudregionen in Deutschland bereitstellen möchten, um die digitale Transformation unserer Kunden besser zu ermöglichen. Im August 2019 haben wir angekündigt, dass wir die neuen Cloud-Regionen in Deutschland für erste Kunden eröffnen. Wir haben seitdem die Verfügbarkeit von Azure, Office 365, Dynamics 365 und Power Platform angekündigt.
 
 Die neuen Regionen sind für die Anpassung an die sich ständig verändernden Anforderungen deutscher Kunden ausgelegt und bieten größere Flexibilität, die neuesten intelligenten Cloud-Dienste und die umfassende Verbindung zu unserem Microsoft 365 Cloud-Netzwerk sowie Kundendatenhaltung in Deutschland.
 
@@ -64,7 +64,7 @@ Office 365 Video wird am 1. März 2021 eingestellt. Wenn Sie Ihren Office 365-Ma
 
 Diese Abbildung zeigt die zehn Phasen der Migration in die neuen deutschen Rechenzentren.
 
-![Die zehn Phasen der Migration in die neuen deutschen Rechenzentren](../media/ms-cloud-germany-migration-opt-in/migration-organization.png)
+:::image type="content" alt-text="Die zehn Phasen der Migration in die neuen deutschen Rechenzentren" source="../media/ms-cloud-germany-migration-opt-in/migration-organization.png" lightbox="../media/ms-cloud-germany-migration-opt-in/migration-organization.png":::
 
 Diese Phasen beginnen mit Ihrer [Anmeldung für die Migration](./ms-cloud-germany-migration-opt-in.md). Die meisten Migrationsphasen werden nach und nach als Back-End-Dienstvorgänge durchgeführt, bei denen nur wenige Kundeninteraktionen erforderlich sind. Ab wann Maßnahmen auf Kundenseite erforderlich sind sowie der allgemeine Stand der Migration werden während des Migrationsprozesses über das Nachrichtencenter des Microsoft 365 Admin Centers mitgeteilt. Zu den kundenseitig erforderlichen Maßnahmen zählen beispielsweise durch Kunden verwaltete DNS-Updates, die Neukonfiguration des Hybrid-Setups für Kunden von Exchange-Hybridlösungen oder Azure-Migrationen.
 
@@ -201,7 +201,7 @@ Derzeit sind 39 Dienste als Bestandteil von Office 365-Diensten in den neuen deu
 
 Wenn Sie nur Azure-Kunde sind, können Sie bereits mit der [Migration](/azure/germany/germany-migration-main) Ihrer Azure-Ressourcen beginnen. 
 
-Wenn Sie Azure mit Office 365, Dynamics 365 oder Power BI verwenden, müssen Sie den Migrationsprozess befolgen, um eine erfolgreiche AzureAD-Migration sicherzustellen, bevor Sie die selbstgesteuerte Azure-Migration beginnen. Sie müssen die Azure-Migration vor der Dienstschließung abschließen, um Ihre Azure-Workloads mit Ihrer AzureAD- und Office 365-Organisation beizubehalten.
+Wenn Sie Azure mit Office 365, Dynamics 365 oder Power BI haben, müssen Sie zuerst den Migrationsprozess für Office 365 Dienste befolgen, um die erfolgreiche Migration von Azure AD sicherzustellen, bevor Sie mit der selbstgesteuerten Azure-Migration beginnen können. Sie müssen die Azure-Migration abschließen, bevor Sie die Mandantenmigration abschließen, um Ihre Azure-Workloads mit Azure AD und Office 365 Organisation zu verwalten. Weitere Details finden Sie in [den Migrationsphasenaktionen und -auswirkungen für die Migration von Microsoft Cloud Deutschland.](ms-cloud-germany-transition-phases.md)
 
 **Office 365**
 
@@ -303,7 +303,7 @@ Die Migration wirkt sich minimal auf Endbenutzer/Kunden aus.
 
 ### <a name="which-customers-are-affected-by-the-azure-active-directory-migration"></a>Welche Kunden sind von der Azure Active Directory-Migration betroffen? 
 
-Alle Kunden von Office 365 sind auf Azure Active Directory angewiesen, um sich zu authentifizieren und wichtige Dienstkomponenten zu speichern, die für den Betrieb von von Microsoft gehosteten Diensten erforderlich sind. 
+Alle Kunden von Office 365 sind von Azure Active Directory abhängig, um wichtige Dienstkomponenten zu authentifizieren und zu speichern, die für den Betrieb von von Microsoft gehosteten Diensten benötigt werden. 
 
 
 ### <a name="what-are-the-impacts-of-the-azure-active-directory-migration"></a>Welche Auswirkungen hat die Azure Active Directory-Migration?
@@ -350,7 +350,7 @@ Der Weg durch die Umstellung:
 
 - [Phasen, Aktionen und Auswirkungen der Migration](ms-cloud-germany-transition-phases.md)
 - [Zusätzliche Vorarbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud-Apps:
 

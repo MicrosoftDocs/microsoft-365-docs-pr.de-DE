@@ -16,12 +16,12 @@ ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: 48d299f2318b0a1be251132a4b50a333a1a0c7a8
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: e25fab99718c791c64b583283237815736c450ae
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782957"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793184"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Konfigurieren automatisierter Untersuchungs- und Reaktionsfunktionen in Microsoft 365 Defender
 
@@ -74,7 +74,7 @@ Sicherheitseinstellungen in Office 365 zum Schutz von E-Mails und Inhalten beitr
 1. Wechseln Sie im Microsoft 365 Security Center ( [https://security.microsoft.com](https://security.microsoft.com) ) zu Richtlinien & Richtlinien für **Bedrohungsregeln.** \> 
 2. Stellen Sie sicher, dass alle folgenden Richtlinien konfiguriert sind. Hilfe und Empfehlungen finden Sie unter ["Schutz vor Bedrohungen".](/microsoft-365/security/office-365-security/protect-against-threats)
    - [Antischadsoftware](../office-365-security/protect-against-threats.md#part-1---anti-malware-protection-in-eop)
-   - [Antiphishing](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection)
+   - [Antiphishing](../office-365-security/protect-against-threats.md#part-2---anti-phishing-protection-in-eop-and-defender-for-office-365)
    - [Sichere Anlagen](../office-365-security/protect-against-threats.md#safe-attachments-policies-in-microsoft-defender-for-office-365)
    - [Sichere Links](../office-365-security/protect-against-threats.md#safe-links-policies-in-microsoft-defender-for-office-365)
    - [Antispam](../office-365-security/protect-against-threats.md#part-3---anti-spam-protection-in-eop)

@@ -15,12 +15,12 @@ ms.collection:
 description: Administratoren können erfahren, wie sie die erweiterten Antiphishingrichtlinien erstellen, ändern und löschen, die in Organisationen mit Microsoft Defender für Office 365 verfügbar sind.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8cbe517ef2a702e3e4fd7f6af4ee1d7ed1dd13d2
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 9af3824b245cd976d1e859d6ebc4efcda47325e0
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789165"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793088"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "52789165"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Antiphishingrichtlinien in [Microsoft Defender für Office 365](defender-for-office-365.md) können Dazu beitragen, Ihre Organisation vor phishing-Angriffen mit böswilligem Identitätswechsel und anderen Arten von Phishingangriffen zu schützen. Weitere Informationen zu den Unterschieden zwischen Antiphishingrichtlinien in Exchange Online Protection (EOP) und Antiphishingrichtlinien in Microsoft Defender für Office 365 finden Sie unter [Antiphishingschutz.](anti-phishing-protection.md)
+Antiphishingrichtlinien in [Microsoft Defender für Office 365](defender-for-office-365.md) können Dazu beitragen, Ihre Organisation vor phishing-Angriffen durch böswilligen Identitätswechsel und anderen Arten von Phishingangriffen zu schützen. Weitere Informationen zu den Unterschieden zwischen Antiphishingrichtlinien in Exchange Online Protection (EOP) und Antiphishingrichtlinien in Microsoft Defender für Office 365 finden Sie unter [Antiphishingschutz.](anti-phishing-protection.md)
 
 Administratoren können die standardmäßige Antiphishingrichtlinie anzeigen, bearbeiten und konfigurieren (aber nicht löschen). Für eine höhere Granularität können Sie auch benutzerdefinierte Antiphishingrichtlinien erstellen, die für bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation gelten. Benutzerdefinierte Richtlinien haben immer Vorrang vor der standardmäßigen Richtlinie, die Priorität (Reihenfolge der Ausführung) Ihrer benutzerdefinierten Richtlinien können Sie jedoch ändern.
 
@@ -164,7 +164,7 @@ Beim Erstellen einer benutzerdefinierten Antiphishingrichtlinie im Sicherheitsce
 
        Zurück im Flyout **"Benutzerdefinierte Domänen für Identitätswechsel verwalten"** können Sie Einträge entfernen, indem Sie einen oder mehrere Einträge aus der Liste auswählen. Sie können mithilfe des ![ ](../../media/m365-cc-sc-create-icon.png) **Suchsymbol-Suchfelds** nach Einträgen suchen.
 
-       Nachdem Sie mindestens einen Eintrag ausgewählt haben, wird das ![ Symbol ](../../media/m365-cc-sc-delete-icon.png) **"Löschen"** angezeigt, mit dem Sie die ausgewählten Einträge entfernen können.
+       Nachdem Sie mindestens einen Eintrag ausgewählt haben, wird das ![ Symbol "Domänen ](../../media/m365-cc-sc-delete-icon.png) **löschen"** angezeigt, mit dem Sie die ausgewählten Einträge entfernen können.
 
    - **Vertrauenswürdige Absender und Domänen hinzufügen:** Geben Sie Identitätswechselschutz-Ausnahmen für die Richtlinie an, indem Sie auf **vertrauenswürdige Absender und Domänen verwalten (nn)** klicken. Konfigurieren Sie im angezeigten Flyout **"Benutzerdefinierte Domänen für Identitätswechselschutz verwalten"** die folgenden Einstellungen:
       - **Absender:** Überprüfen Sie, ob die Registerkarte **"Absender"** ausgewählt ist, und klicken Sie auf ![ das Symbol "Absender hinzufügen". ](../../media/m365-cc-sc-create-icon.png) Geben Sie im angezeigten Flyout **"Vertrauenswürdige Absender hinzufügen"** eine E-Mail-Adresse in das Feld ein, und klicken Sie dann auf **"Hinzufügen".** Wiederholen Sie diesen Schritt so oft wie nötig. Klicken Sie zum Entfernen eines vorhandenen Eintrags auf ![ das Symbol ](../../media/m365-cc-sc-close-icon.png) "Löschen" für den Eintrag.
@@ -243,7 +243,7 @@ Beim Erstellen einer benutzerdefinierten Antiphishingrichtlinie im Sicherheitsce
 
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-7. Überprüfen Sie auf der angezeigten Seite **Überprüfung** Ihre Einstellungen. Sie können in jedem Abschnitt **Bearbeiten** auswählen, um die Einstellungen in diesem Abschnitt zu ändern.
+7. Überprüfen Sie auf der angezeigten Seite **Überprüfung** Ihre Einstellungen. Sie können in jedem Abschnitt **Bearbeiten** auswählen, um die Einstellungen in diesem Abschnitt zu ändern. Sie können auch auf **"Zurück"** klicken oder die entsprechende Seite im Assistenten auswählen.
 
    Wenn Sie fertig sind, klicken Sie auf **"Absenden".**
 

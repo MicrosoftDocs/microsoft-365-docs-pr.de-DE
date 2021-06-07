@@ -1,7 +1,7 @@
 ---
 title: Client-Verhaltensblockierung
-description: Das Blockieren von Clientverhalten ist Teil der Funktionen zum Blockieren und Eindähen von Verhaltensweisen in Microsoft Defender for Endpoint
-keywords: Verhaltensblockierung, schneller Schutz, Clientverhalten, Microsoft Defender for Endpoint
+description: Das Blockieren von Clientverhalten ist Teil der Funktionen zum Blockieren und Eindämmen von Verhaltensweisen in Microsoft Defender für Endpunkt.
+keywords: Verhaltensblockierung, schneller Schutz, Clientverhalten, Microsoft Defender für Endpunkt
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -19,84 +19,73 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: c58c81cd4623ec03850c167cad285e052413174c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 4e416aa9484f251280649035247a59dcc82ce750
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933421"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795958"
 ---
 # <a name="client-behavioral-blocking"></a>Client-Verhaltensblockierung
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>Übersicht
 
-Die Clientverhaltensblockierung ist eine Komponente von Funktionen zum [Blockieren](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) und Eindämmung von Verhaltensweisen in Defender for Endpoint. Da verdächtige Verhaltensweisen auf Geräten (auch als Clients oder Endpunkte bezeichnet) erkannt werden, werden Artefakte (z. B. Dateien oder Anwendungen) automatisch blockiert, überprüft und behoben. 
+Das Blockieren von Clientverhalten ist eine Komponente der Funktionen zum [Blockieren und Eindämmen](behavioral-blocking-containment.md) von Verhaltensweisen in Defender für Endpunkt. Da verdächtige Verhaltensweisen auf Geräten erkannt werden (auch als Clients oder Endpunkte bezeichnet), werden Artefakte (z. B. Dateien oder Anwendungen) automatisch blockiert, überprüft und behoben. 
 
 :::image type="content" source="images/pre-execution-and-post-execution-detection-engines.png" alt-text="Cloud- und Clientschutz":::
 
-Antivirusschutz funktioniert am besten, wenn er mit Cloudschutz gekoppelt ist.
+Antivirusschutz funktioniert am besten, wenn er mit Cloudschutz kombiniert wird.
 
-## <a name="how-client-behavioral-blocking-works"></a>Funktionsweise der Clientverhaltensblockierung
+## <a name="how-client-behavioral-blocking-works"></a>Funktionsweise der Blockierung von Clientverhalten
 
-[Microsoft Defender Antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) können verdächtiges Verhalten, bösartigen Code, Datei- und Speicherangriffe und vieles mehr auf einem Gerät erkennen. Wenn verdächtige Verhaltensweisen erkannt werden, Microsoft Defender Antivirus überwacht und sendet diese verdächtigen Verhaltensweisen und deren Prozessstrukturen an den Cloudschutzdienst. Maschinelles Lernen unterscheidet zwischen schädlichen Anwendungen und gutem Verhalten innerhalb von Millisekunden und klassiert jedes Artefakt. Sobald sich ein Artefakt als schädlich herausgefunden hat, wird es in fast Echtzeit auf dem Gerät blockiert. 
+[Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md) können verdächtiges Verhalten, bösartigen Code, Datei- und Speicherangriffe und vieles mehr auf einem Gerät erkennen. Wenn verdächtige Verhaltensweisen erkannt werden, überwacht und sendet Microsoft Defender Antivirus diese verdächtigen Verhaltensweisen und deren Prozessstrukturen an den Cloudschutzdienst. Machine Learning unterscheidet zwischen schädlichen Anwendungen und gutem Verhalten innerhalb von Millisekunden und klassifiziert jedes Artefakt. Sobald ein Artefakt als bösartig eingestuft wird, wird es nahezu in Echtzeit auf dem Gerät blockiert. 
 
-Wenn ein verdächtiges Verhalten erkannt wird, wird [eine](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/alerts-queue) Warnung generiert und im Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) angezeigt.
+Wenn ein verdächtiges Verhalten erkannt wird, wird eine [Warnung](alerts-queue.md) generiert und ist im Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) sichtbar.
 
-Die Clientverhaltensblockierung ist effektiv, da sie nicht nur den Start eines Angriffs verhindert, sondern auch dazu beitragen kann, einen Angriff zu beenden, der mit der Ausführung begonnen hat. Und mit der [Blockierung von Feedbackschleifen](feedback-loop-blocking.md) (eine weitere Funktion der Verhaltensblockierung und -eindämmung) werden Angriffe auf andere Geräte in Ihrer Organisation verhindert.
+Das Blockieren von Clientverhalten ist effektiv, da es nicht nur dazu beiträgt, den Start eines Angriffs zu verhindern, es kann auch dazu beitragen, einen Angriff zu stoppen, der mit der Ausführung begonnen hat. Und mit der Blockierung von [Feedbackschleifen](feedback-loop-blocking.md) (eine weitere Möglichkeit zum Blockieren und Eindämmen von Verhaltensweisen) werden Angriffe auf anderen Geräten in Ihrer Organisation verhindert.
 
 ## <a name="behavior-based-detections"></a>Verhaltensbasierte Erkennungen
 
-Verhaltensbasierte Erkennungen werden gemäß der [MITRE ATT-&CK-Matrix für Enterprise.](https://attack.mitre.org/matrices/enterprise) Die Benennungskonvention hilft dabei, die Angriffsphase zu identifizieren, in der das schädliche Verhalten beobachtet wurde:
+Verhaltensbasierte Erkennungen werden gemäß der [MITRE ATT-&CK-Matrix für Enterprise](https://attack.mitre.org/matrices/enterprise)benannt. Die Benennungskonvention hilft bei der Identifizierung der Angriffsphase, in der das böswillige Verhalten beobachtet wurde:
 
 
-|Taktik |   Name der Erkennungsbedrohung |
+|Taktik |   Name der Erkennungsgefahr |
 |----|----|
-|Anfänglicher Zugriff | Verhalten:Win32/InitialAccess.*!ml |
-|Ausführung  | Behavior:Win32/Execution.*!ml |
-|Persistenz    | Behavior:Win32/Persistence.*!ml |
-|Berechtigungseskalation   | Verhalten:Win32/PrivilegeEscalation.*!ml |
-|Schutzhinterziehung    | Behavior:Win32/DefenseEvasion.*!ml |
-|Zugriff auf Anmeldeinformationen  | Verhalten:Win32/CredentialAccess.*!ml |
-|Suche  | Behavior:Win32/Discovery.*!ml |
-|Laterale Bewegung | Verhalten:Win32/LateralMovement.*!ml |
-|Auflistung |   Behavior:Win32/Collection.*!ml |
-|Befehl und Steuerelement | Verhalten:Win32/CommandAndControl.*!ml |
-|Exfiltration   | Verhalten:Win32/Exfiltration.*!ml |
-|Auswirkung | Behavior:Win32/Impact.*!ml |
-|Nicht kategorisiert  | Verhalten:Win32/Generic.*!ml |
+|Anfänglicher Zugriff | `Behavior:Win32/InitialAccess.*!ml` |
+|Ausführung  | `Behavior:Win32/Execution.*!ml` |
+|Persistenz    | `Behavior:Win32/Persistence.*!ml` |
+|Berechtigungseskalation   | `Behavior:Win32/PrivilegeEscalation.*!ml` |
+|DefenseSynekte    | `Behavior:Win32/DefenseEvasion.*!ml` |
+|Zugriff auf Anmeldeinformationen  | `Behavior:Win32/CredentialAccess.*!ml` |
+|Suche  | `Behavior:Win32/Discovery.*!ml` |
+|Lateralverschiebung | `Behavior:Win32/LateralMovement.*!ml` |
+|Auflistung |   `Behavior:Win32/Collection.*!ml` |
+|Befehl und Steuerelement | `Behavior:Win32/CommandAndControl.*!ml` |
+|Exfiltration   | `Behavior:Win32/Exfiltration.*!ml` |
+|Auswirkung | `Behavior:Win32/Impact.*!ml` |
+|Uncategorized  | `Behavior:Win32/Generic.*!ml` |
 
 > [!TIP]
-> Weitere Informationen zu bestimmten Bedrohungen finden Sie unter **[recent global threat activity](https://www.microsoft.com/wdsi/threats)**.
+> Weitere Informationen zu bestimmten Bedrohungen finden Sie unter **[den aktuellen globalen Bedrohungsaktivitäten.](https://www.microsoft.com/wdsi/threats)**
 
 
-## <a name="configuring-client-behavioral-blocking"></a>Konfigurieren von Clientverhaltensblockierung
+## <a name="configuring-client-behavioral-blocking"></a>Konfigurieren der Blockierung von Clientverhalten
 
-Wenn Ihre Organisation Defender for Endpoint verwendet, ist die Clientverhaltensblockierung standardmäßig aktiviert. Um jedoch von allen Defender for [](behavioral-blocking-containment.md)Endpoint-Funktionen zu profitieren, einschließlich der Verhaltensblockierung und -eindämmung, stellen Sie sicher, dass die folgenden Features und Funktionen von Defender for Endpoint aktiviert und konfiguriert sind:
+Wenn Ihre Organisation Defender für Endpunkt verwendet, ist die Blockierung von Clientverhalten standardmäßig aktiviert. Um jedoch von allen Defender für Endpunkt-Funktionen zu profitieren, einschließlich [verhaltensbasierter Blockierung und Eindämmung,](behavioral-blocking-containment.md)stellen Sie sicher, dass die folgenden Features und Funktionen von Defender für Endpunkt aktiviert und konfiguriert sind:
 
-- [Defender for Endpoint-Baselines](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-security-baseline)
+- [Baselines für Defender für Endpunkt](configure-machines-security-baseline.md)
 
-- [In Defender for Endpoint integrierte Geräte](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-configure)
+- [Geräte, die in Defender für Endpunkt integriert sind](onboard-configure.md)
 
-- [EDR im Blockmodus](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode)
+- [EDR im Blockmodus](edr-in-block-mode.md)
 
-- [Verringerung der Angriffsfläche](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction):
+- [Verringerung der Angriffsfläche](attack-surface-reduction.md):
 
-- [Schutz der nächsten Generation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (Antivirus)
+- [Schutz](configure-microsoft-defender-antivirus-features.md) der nächsten Generation (Antivirus, Antischadsoftware und andere Bedrohungsschutzfunktionen)
 
-## <a name="related-articles"></a>Verwandte Artikel
-
-- [Verhaltensbasiertes Blockieren und Eindämmen](behavioral-blocking-containment.md)
-
-- [Feedback-Loop-Blockierung](feedback-loop-blocking.md)
-
-- [(Blog) Verhaltensblockierung und -eindämmung: Transformieren von Optik in Schutz](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection/)
-
-- [Hilfreiche Defender for Endpoint-Ressourcen](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/helpful-resources)

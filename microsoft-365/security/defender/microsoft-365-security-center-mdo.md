@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 2322dbab657d6dd73ce79b3a8e52a3d968c45809
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: ec5d22caa52ffaa061637cb8c510a0efaf566b6a
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770978"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782897"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender für Office 365 im Microsoft 365 Security Center
 
@@ -54,7 +54,7 @@ Das Bild und die folgende Tabelle enthalten die Änderungen in der Navigation zw
 |Bedrohungsverwaltung|E-Mail und Zusammenarbeit|||
 |Nachrichtenübermittlung|||Siehe [Exchange Admin Center](https://admin.exchange.microsoft.com/#/)|
 |Datenschutz||Siehe [Microsoft 365 Compliance Center](https://compliance.microsoft.com/homepage)||
-|Suchen|Suchen|||
+|Suche|Suche|||
 |Berichte|Bericht|||
 |Dienstüberprüfung|Einstellungen|||
 |
@@ -139,7 +139,7 @@ Suchen Sie proaktiv mithilfe von [erweiterten Suchabfragen](advanced-hunting-ove
 
 Im Info-Center zeigt werden die Untersuchungen angezeigt, die durch automatisierte Untersuchungs- und Reaktionsfunktionen erstellt wurden. Diese Möglichkeit der automatisierten Selbstreparatur in Microsoft 365 Defender unterstützt Sicherheitsteams durch automatische Reaktionen auf bestimmte Ereignisse.
 
-[Erfahren Sie mehr über das Info-Center](m365d-action-center.md)
+[Weitere Informationen zum Info-Center](m365d-action-center.md)
 
 #### <a name="threat-analytics"></a>Bedrohungsanalyse
 
@@ -165,7 +165,7 @@ Zeigen Sie Berichte an, und nehmen Sie Änderungen an Einstellungen und Benutzer
 :::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="Das Schnellstartmenü für Berechtigungen und Berichte im Microsoft 365 Security Center auf der linken Seite des Sicherheitscenters.":::
 
 > [!NOTE]
-> Für Defender für Office 365 Benutzer können Sie jetzt DomainKeys Identified Mail (DKIM)-Schlüssel über das Microsoft 365 Security Center *verwalten und drehen:* <https://security.microsoft.com/threatpolicy> oder zu Richtlinien & **Regeln** für \> **Bedrohungsrichtlinien** \> **DKIM** navigieren.
+> Für Benutzer von Defender für Office 365 können Sie jetzt DomainKeys Identified Mail (DKIM)-Schlüssel über das Microsoft 365 Security Center *verwalten und drehen:* <https://security.microsoft.com/threatpolicy> oder zu **"Richtlinien-&-Regeln** \> **für Bedrohungsrichtlinien** \> **DKIM"** navigieren.
 
 ## <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Beispiel für erweiterte Bedrohungssuche für Microsoft Defender für Office 365
 

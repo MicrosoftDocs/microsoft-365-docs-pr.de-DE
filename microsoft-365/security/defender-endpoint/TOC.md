@@ -288,6 +288,9 @@
 ##### [Verwenden von PowerShell-Cmdlets zum Verwalten von Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md)
 ##### [Verwenden von Windows-Verwaltungsinstrumentation (WMI) zum Verwalten von Microsoft Defender Antivirus](use-wmi-microsoft-defender-antivirus.md)
 ##### [Verwenden des mpcmdrun.exe-Tools zum Verwalten von Microsoft Defender Antivirus](command-line-arguments-microsoft-defender-antivirus.md)
+##### [Konfigurieren der Benachrichtigungen, die auf Endpunkten angezeigt werden](configure-notifications-microsoft-defender-antivirus.md)
+##### [Angeben, ob Benutzer die Richtlinieneinstellungen von Microsoft Defender Antivirus lokal ändern können](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+##### [Angeben, ob Benutzer die Benutzeroberfläche von Microsoft Defender Antivirus anzeigen oder damit interagieren können](prevent-end-user-interaction-microsoft-defender-antivirus.md)
 
 #### [Bereitstellung und Berichte zu Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
 ##### [Bereitstellen und Aktivieren von Microsoft Defender Antivirus](deploy-microsoft-defender-antivirus.md)
@@ -480,10 +483,10 @@
 ####### [Erhalten von Informationen zu Benachrichtigungen zu Benutzern](get-alert-related-user-info.md)
 
 ###### [Bewertungen von Sicherheitsrisiken und sicheren Konfigurationen]()
-####### [Exportieren von Bewertungsmethoden und -eigenschaften](get-assessmnt-1methods-properties.md)
-####### [Exportieren der Bewertung einer sicheren Konfiguration](get-assessmnt-secure-cfg.md)
-####### [Exportieren der Bewertung des Softwarebestands](get-assessmnt-software-inventory.md)
-####### [Exportieren der Bewertung von Sicherheitsrisiken](get-assessmnt-software-vulnerabilities.md)
+####### [Exportieren von Bewertungsmethoden und -eigenschaften](get-assessment-methods-properties.md)
+####### [Exportieren der Bewertung einer sicheren Konfiguration](get-assessment-secure-config.md)
+####### [Exportieren der Bewertung des Softwarebestands](get-assessment-software-inventory.md)
+####### [Exportieren der Bewertung von Sicherheitsrisiken](get-assessment-software-vulnerabilities.md)
 
 ###### [Automatisierte Untersuchung]()
 ####### [Untersuchungsmethoden und -eigenschaften](investigation.md)

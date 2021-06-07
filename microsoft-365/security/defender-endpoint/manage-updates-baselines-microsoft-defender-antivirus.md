@@ -17,12 +17,12 @@ ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
 ms.date: 06/04/2021
-ms.openlocfilehash: 264a3b7a4a24c446048d6cfc6863f1ae9765566f
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: a1b7891e9e397e7345eb73a94d6298a9da781d98
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789183"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52795982"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Verwalten Microsoft Defender Antivirus Updates und Anwenden von Basisplänen
 
@@ -80,7 +80,7 @@ Informationen zum Aktualisieren oder Installieren des Plattformupdates finden Si
 Alle unsere Updates enthalten 
 - Leistungsverbesserungen;
 - Verbesserungen der Dienstbarkeit; Und 
-- Integrationsverbesserungen (Cloud, Microsoft 365 Defender).
+- Integrationsverbesserungen (Cloud, [Microsoft 365 Defender).](/microsoft-365/security/defender/microsoft-365-defender)
 <br/>
 <details>
 <summary> Mai-2021 (Plattform: 4.18.2105.4 | Modul: 1.1.18200.4)</summary>
@@ -92,13 +92,14 @@ Alle unsere Updates enthalten
 &ensp;Supportphase: **Sicherheits- und kritische Updates**
     
 ### <a name="whats-new"></a>Neuerungen
-- Verbesserungen bei der Verhaltensüberwachung 
+- Verbesserungen bei der [Verhaltensüberwachung](client-behavioral-blocking.md) 
+- Benachrichtigungsfilterungsfeature für den Fixed [Network-Schutz](network-protection.md)
 
 ### <a name="known-issues"></a>Bekannte Probleme
 Keine bekannten Probleme  
 <br/>
 </details><details>
-<summary> April-2021 (Plattform: 4.18.2104.14 | Modul: 1.1.18100.5)</summary>
+<summary> April -2021 (Plattform: 4.18.2104.14 | Modul: 1.1.18100.5)</summary>
 
 &ensp;Security Intelligence Update Version: **1.337.2.0**  
 &ensp;Veröffentlicht: **1. April 2021**  
@@ -453,7 +454,7 @@ Plattform- und Modulupdates werden monatlich bereitgestellt. Um vollständig unt
 
 \*Für Upgrades von der Windows 10-Version (siehe [Plattformversion in Windows 10-Versionen)](#platform-version-included-with-windows-10-releases)auf die neueste Plattformversion wird weiterhin technischer Support bereitgestellt.
 
-Während der Phase des technischen Supports (nur) werden kommerzielle angemessene Supportvorfälle über den Microsoft-Kundendienst & Support und die von Microsoft verwalteten Supportangebote (z. B. Premier Support) bereitgestellt. Wenn ein Supportvorfall eine Eskalation zur Entwicklung erfordert, um weitere Anleitungen zu erhalten, ein nicht sicherheitsrelevantes Update oder ein Sicherheitsupdate erfordert, werden Kunden aufgefordert, auf die neueste Plattformversion oder ein Zwischenupdate (*) zu aktualisieren.
+Während der Phase des technischen Supports (nur) werden kommerzielle angemessene Supportvorfälle über den Microsoft-Kundendienst & Support und die verwalteten Supportangebote von Microsoft (z. B. Premier Support) bereitgestellt. Wenn ein Supportvorfall eine Eskalation zur Entwicklung erfordert, um weitere Anleitungen zu erhalten, ein nicht sicherheitsrelevantes Update oder ein Sicherheitsupdate erfordert, werden Kunden aufgefordert, auf die neueste Plattformversion oder ein Zwischenupdate (*) zu aktualisieren.
 
 ### <a name="platform-version-included-with-windows-10-releases"></a>In Windows 10-Versionen enthaltene Plattformversion
 Die folgende Tabelle enthält die Microsoft Defender Antivirus Plattform- und Modulversionen, die mit den neuesten Windows 10 Versionen ausgeliefert werden:    
