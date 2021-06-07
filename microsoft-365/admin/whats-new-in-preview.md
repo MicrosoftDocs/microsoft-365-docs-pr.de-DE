@@ -21,12 +21,12 @@ description: Das Microsoft 365 Admin Center – Erfahren Sie mehr über die Feat
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 654f8de8d931f26efbcba5b60d730a9d9e477e65
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: d4bd7d02b8c14f8b57b6f2e3eef99c2233d820fe
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769080"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779891"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Neuigkeiten im Microsoft 365 Admin Center
 
@@ -42,13 +42,25 @@ Wir fügen kontinuierlich neue Features zum [Microsoft 365 Admin Center](../busi
 Und wenn Sie wissen möchten, was mit anderen Microsoft Cloud Services neu ist:
 
 - [Neuerungen in Azure Active Directory](/azure/active-directory/fundamentals/whats-new)
-- [Neuerungen im Exchange Admin Center](/Exchange/whats-new)
+- [Neuigkeiten im Exchange Admin Center](/Exchange/whats-new)
 - [Neuerungen in Microsoft Intune](/mem/intune/fundamentals/whats-new)
 - [Neuerungen im Microsoft 365 Compliance Center](/Office365/SecurityCompliance/whats-new)
 - [Neuerungen in Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [Aktive Websites im SharePoint Online Admin Center](/sharepoint/what-s-new-in-admin-center)
 - [Office-Updates](/OfficeUpdates/)
 - [So überprüfen Sie Windows Releaseintegrität](/windows/deployment/update/check-release-health)
+
+## <a name="june-2021"></a>Juni 2021
+
+### <a name="microsoft-365-admin-center-search"></a>Microsoft 365 Admin Center-Suche
+
+Wir haben der Suchfunktion einige neue Kategorien hinzugefügt.
+
+- Sie können jetzt in der globalen Suche nach Microsoft 365 Administratorrollen suchen und Rollenzuweisungen schnell von einer beliebigen Seite aus anzeigen und verwalten. Suchen Sie beispielsweise nach **einem Intune-Administrator.**
+
+- Sie finden jetzt eine vereinfachte Einrichtungsoberfläche über die globale Suche. Dies kann Ihnen und Ihrem Team helfen, schnell mit der Verwendung neuer Features zu beginnen. For example, search for **set password to never expire**.
+
+Weitere Informationen zur Suche im Admin Center finden Sie unter [Suchen im Microsoft 365 Admin Center.](manage/search-in-the-mac.md)
 
 ## <a name="may-2021"></a>Mai 2021
 
@@ -105,7 +117,7 @@ Weitere Informationen zu den neuen Features finden Sie im [Nachrichtencenter.](m
 
 ### <a name="whats-new-features"></a>Neuerungen
 
-Wir haben Verbesserungen daran vorgenommen, wie Sie die Features "Neuigkeiten" für Benutzer in den Office-Apps anzeigen. Sie können nun den umfangreichen Inhalt im neuen Bereich "Whats" anzeigen, den Ihre Benutzer sehen können. Sie können auch mehr über das Feature erfahren, bevor Sie ihre Benutzer über das Feature informieren möchten. Weitere Informationen finden Sie unter [Verwalten, welche Office Features in "Neuigkeiten" angezeigt werden.](manage/show-hide-new-features.md)
+Wir haben Verbesserungen daran vorgenommen, wie Sie die Features "Neuigkeiten" für Benutzer in den Office-Apps anzeigen. Sie können nun den umfangreichen Inhalt im neuen Bereich "Whats" anzeigen, den Ihre Benutzer sehen können. Sie können auch mehr über das Feature erfahren, bevor Sie ihre Benutzer über das Feature informieren möchten. Weitere Informationen finden [Sie unter Verwalten, welche Office Features in "Neuigkeiten" angezeigt werden.](manage/show-hide-new-features.md)
 
 :::image type="content" source="../media/power-bi-whats-new2.png" alt-text="Screenshot: Office apps what's new page showing improvements to Power BI":::
 
@@ -190,7 +202,7 @@ Weitere Informationen zum sicheren Zulassen von Remotearbeit und einer praktisch
 
 Wir betrachten und aktualisieren die Inhalte und Tools kontinuierlich, um mit Änderungen im Produkt Schritt zu halten. Wir verfügen nun über viele weitere Selbstbedienungsdiagnosetools, die Ihnen helfen, Probleme schnell und effizient zu beheben. Hier sind einige, die kürzlich hinzugefügt wurden:
 
-- Ändern der Einschränkungsrichtlinie für den Exchange Webdienst
+- Ändern der Einschränkungsrichtlinie für Exchange Webdienst
 - Überprüfen des Status der Teams Bereitstellung und Überprüfung für bestimmte Benutzer
 - Beheben von DKIM-Setupproblemen
 - Diagnose von Intune-Benutzerregistrierungsfehlern
@@ -207,9 +219,9 @@ Weitere Informationen hierzu finden Sie in diesem Artikel und video, um zu sehen
 
 ### <a name="documentation-training-and-videos"></a>Dokumentation, Schulungen und Videos
 
-- Brand new and just in time for Microsoft Ignite -[The Virtual Hub](https://adoption.microsoft.com/virtual-hub/). Tiefe Einblicke in die technische Schulung für IT-Spezialisten und Entwickler. Suchen Sie im Rahmen der #SIDETRACKED schnell ca. 20 neue Videos, den Namen des Ignite-Administratortitels in diesem Jahr.
+- Brand new and just in time for Microsoft Ignite -[The Virtual Hub](https://adoption.microsoft.com/virtual-hub/). Tiefe Einblicke in die technische Schulung für IT-Spezialisten und Entwickler. Suchen Sie im Rahmen der #SIDETRACKED, dem Namen des Ignite-Administratortitels in diesem Jahr, schnell ca. 20 neue Videos.
 - [Neuigkeiten bei Microsoft 365](https://www.youtube.com/watch?v=OVjb2lGJ4GU&t=2s) Videoreihe: In diesem Monat behandeln wir neue Features, die in Whiteboard für Teams und im Web verfügbar sind, wie sie die Benutzerbereitstellung für Azure AD automatisieren, neue Power Automate Trigger und Aktionen in Teams und vieles mehr. Und bleiben Sie auf dem Laufenden für den nächsten Monat, in dem wir eine Übersicht über alle großartigen Dinge haben, die bei Ignite geschehen!
-- Wir haben die [Microsoft 365 Dokumentationsseite](/microsoft-365) neu gestaltet, die sich zuerst auf Lösungen konzentriert. Wir werden neue Lösungen hervorheben, sobald sie auf dieser Seite verfügbar sind, also achten Sie darauf.
+- Wir haben die [Microsoft 365-Dokumentationsseite](/microsoft-365) neu gestaltet, die sich zuerst auf Lösungen konzentriert. Wir werden neue Lösungen hervorheben, sobald sie auf dieser Seite verfügbar sind, also achten Sie darauf.
 
 ![Neue Zielseite für Microsoft 365 Lösungsdokumentation mit Lösungen wie "Fördern von Remotemitarbeitern".](../media/MAC-WN-M365Docspage.png)
 
@@ -239,7 +251,7 @@ Die Domänenverwaltung kann kompliziert sein, und wir haben ein neues Feature ve
 
 ### <a name="docs-training-and-videos-july-2020"></a>Dokumente, Schulungen und Videos (Juli 2020)
 
-[Neuigkeiten in Microsoft 365](https://youtu.be/m1Nu8WJgCDY) Videoreihe: In diesem Monat befassen wir uns mit dem neuen Yammer für Web und Mobilgeräte, der Integration der Yammer Community-App für Microsoft Teams, neuen Richtlinienpaketen zur Unterstützung von Mitarbeitern und Vorgesetzten in Service und Produktion und mehr.
+[Neuigkeiten bei Microsoft 365](https://youtu.be/m1Nu8WJgCDY) Videoreihe: In diesem Monat befassen wir uns mit der neuen Yammer-Erfahrung für Web und Mobilgeräte, der Integration der Yammer Community-App für Microsoft Teams, neuen Richtlinienpaketen zur Unterstützung von Mitarbeitern und Vorgesetzten in Service und Produktion und vieles mehr.
 
 ## <a name="june-2020"></a>Juni 2020
 
@@ -257,7 +269,7 @@ Vor ein paar Monaten haben wir eine Einstellung hinzugefügt, mit der Sie die Na
 
 Am 12. Mai haben wir die Verfügbarkeit eines neuen Updatekanals für Office angekündigt: monatlicher Enterprise Kanal. Dieser Updatekanal bietet Ihren Benutzern einmal im Monat neue Office Funktionen, am zweiten Dienstag des Monats.
 
-Wenn Sie Ihren Benutzern erlauben, Office über das Portal selbst zu installieren, können Sie für sie den monatlichen Enterprise Kanal auswählen. Melden Sie sich dazu beim Microsoft 365 Admin Center an, und wechseln Sie zu **"Alle**  > **Einstellungen**  >  **Organisationseinstellungsdienste**  >    >  **Office Softwaredownloadeinstellungen anzeigen".** Wenn Sie **"Einmal im Monat" (monatlicher Enterprise Kanal)** auswählen, werden alle neuen Selbstinstallationen von Office so konfiguriert, dass sie den monatlichen Enterprise Kanal verwenden.
+Wenn Sie Ihren Benutzern erlauben, Office über das Portal selbst zu installieren, können Sie für sie den monatlichen Enterprise Kanal auswählen. Melden Sie sich dazu beim Microsoft 365 Admin Center an, und wechseln Sie zu **"Alle**  > **Einstellungen**  >  **Organisationseinstellungen**  >  **anzeigen" Office**  >  **Softwaredownloadeinstellungen.** Wenn Sie **"Einmal im Monat" (monatlicher Enterprise Kanal)** auswählen, werden alle neuen Selbstinstallationen von Office so konfiguriert, dass sie den monatlichen Enterprise Kanal verwenden.
 
 In Verbindung mit der Veröffentlichung des monatlichen Enterprise Kanals überarbeiten wir auch die Namen der vorhandenen Updatekanäle. Beispielsweise wird der monatliche Kanal in den aktuellen Kanal umbenannt. Die neuen Namen werden am 9. Juni 2020 wirksam.
 
@@ -265,7 +277,7 @@ Weitere Informationen finden Sie unter [Änderungen an den Updatekanälen für M
 
 ### <a name="new-admin-roles"></a>Neue Administratorrollen
 
-Wir haben dem Microsoft 365 Admin Center einige neue Administratorrollen für Azure Active Directory hinzugefügt.
+Wir haben einige neue Azure Active Directory Administratorrollen zum Microsoft 365 Admin Center hinzugefügt.
 
 - Die Rolle des Hybrididentitätsadministrators gewährt Benutzern die Berechtigung zum Verwalten von Cloudbereitstellungs- und Authentifizierungsdiensten.
 - Mit der Rolle "Netzwerkadministrator" können Benutzer Netzwerkstandorte verwalten und Netzwerkerkenntnisse für Microsoft 365 Software as a Service-Apps überprüfen.
@@ -285,7 +297,7 @@ Just this month, we released a new site on [https://docs.microsoft.com]() called
 - Arbeitsauslastungslösungen und Szenarioleitfaden
 - Lösungs- und Architekturillustrationen (Die Poster!!!)
 - Branchenspezifischer Leitfaden
-- Enterprise-Architekturdesignprinzipale
+- entwurfsprinzipale Enterprise Architektur
 
 ### <a name="docs-training-and-videos-may"></a>Dokumente, Schulungen und Videos (Mai)
 
@@ -310,7 +322,7 @@ Ab Mai sehen Administratoren, die sich in der gezielten Version befinden, die Sc
 
 ### <a name="need-help-launched-in-teams-admin-center--security-and-compliance-centers"></a>"Benötigen Sie Hilfe?" gestartet in Teams Admin Center & Security and Compliance Center
 
-Im Teams Admin Center, Security Center und Compliance Center wird jetzt die gleiche "Benötigen Sie Hilfe?" verwendet. feature that the Microsoft 365 admin center uses for finding help and contacting support. Wir haben sehr viel Feedback von Administratoren erhalten, dass Sie das gleiche Maß an Hilfe und Support wünschen, und wir freuen uns, Ihnen dies zu bieten. Probieren Sie es aus, und geben Sie uns Ihr Feedback!
+Das Teams Admin Center, Security Center und Compliance Center verwenden jetzt die gleiche "Benötigen Sie Hilfe?" feature that the Microsoft 365 admin center uses for finding help and contacting support. Wir haben sehr viel Feedback von Administratoren erhalten, dass Sie das gleiche Maß an Hilfe und Support wünschen, und wir freuen uns, Ihnen dies zu bieten. Probieren Sie es aus, und geben Sie uns Ihr Feedback!
 
 #### <a name="need-chat"></a>Benötigen Sie Chat?
 
@@ -336,7 +348,7 @@ Die Produktivitätsbewertung gibt Einblicke darüber, wie Benutzer Microsoft-Clo
 - Neue Kommunikationskategorie als Teil der Mitarbeitererfahrung
 - Benutzerdetails mit Organisationsmetadaten in den Kategorien "Mitarbeitererfahrung"
 
-Wenn Sie mehr erfahren möchten, lesen Sie den Blog: [Messen und Verbessern der Microsoft 365 Erfahrung mit der Microsoft-Produktivitätsbewertung.](https://techcommunity.microsoft.com/t5/microsoft-365-blog/measure-and-improve-the-microsoft-365-experience-with-microsoft/ba-p/1348618) Die Produktivitätsbewertung befindet sich derzeit in der privaten Vorschau. [Nehmen Sie an der privaten Vorschau der Produktivitätsbewertung teil,](https://aka.ms/productivityscorepreview) um zu beginnen.
+Wenn Sie mehr erfahren möchten, sehen Sie sich den Blog an: [Messen und Verbessern der Microsoft 365 Erfahrung mit der Microsoft-Produktivitätsbewertung.](https://techcommunity.microsoft.com/t5/microsoft-365-blog/measure-and-improve-the-microsoft-365-experience-with-microsoft/ba-p/1348618) Die Produktivitätsbewertung befindet sich derzeit in der privaten Vorschau. [Nehmen Sie an der privaten Vorschau der Produktivitätsbewertung teil,](https://aka.ms/productivityscorepreview) um zu beginnen.
 
 ### <a name="groups-updates"></a>Gruppenupdates
 
@@ -375,7 +387,7 @@ Wir haben viel Feedback von Administratoren darüber erhalten, wie schwierig es 
 
 ### <a name="microsoft-teams-home-page-card"></a>Microsoft Teams Homepagekarte
 
-Mit der Nutzung von Teams erhalten einige Organisationen eine angeheftete Dashboardkarte, die das Aktivieren Teams leichter erkennbar macht. Die Karte enthält auch Links zu Schulungen und Dokumenten, um Ihrer Organisation den Übergang zur Remotearbeit zu erleichtern. Wechseln Sie einfach zur **Startseite,** um die neue Karte anzuzeigen.
+Mit der Nutzung von Teams erhalten einige Organisationen eine angeheftete Dashboardkarte, die das Aktivieren Teams auffindbarer macht. Die Karte enthält auch Links zu Schulungen und Dokumenten, um Ihrer Organisation den Übergang zur Remotearbeit zu erleichtern. Wechseln Sie einfach zur **Startseite,** um die neue Karte anzuzeigen.
 
 ![Microsoft Teams Homepagekarte](../media/MAC-WN-TeamsCard.PNG)
 
@@ -393,7 +405,7 @@ Wenn Administratoren eine neue Gruppe erstellt und gleichzeitig zu einem Team ge
 
 Wir wissen, dass dies eine Ankündigung für den nächsten Monat ist, aber wir möchten sicherstellen, dass Sie vorbereitet sind.
 
-Ab dem 21. April nehmen wir Änderungen im Zusammenhang mit unseren Office 365-Abonnements für kleine und mittlere Unternehmen vor – und Office 365 ProPlus. Diese Produkte verwenden jetzt die Marke Microsoft 365.
+Ab dem 21. April nehmen wir Änderungen im Zusammenhang mit unseren Office 365-Abonnements für kleine und mittlere Unternehmen vor – und Office 365 ProPlus. Diese Produkte verwenden jetzt die marke Microsoft 365.
 
 Die neuen Produktnamen treten am 21. April 2020 in Kraft. Dies ist nur eine Änderung des Produktnamens, und es gibt derzeit keine Preis- oder Funktionsänderungen.
 
@@ -407,7 +419,7 @@ Die neuen Produktnamen treten am 21. April 2020 in Kraft. Dies ist nur eine Änd
 
 ### <a name="videos-training-and-docs"></a>Videos, Schulungen und Dokumente
 
-[Neuigkeiten in Microsoft 365 Webserie:](https://go.microsoft.com/fwlink/p/?linkid=2118096)In der Folge dieses Monats heben wir das 3-jahres-Bestehen von Microsoft Teams hervor und behandeln neue Features, einschließlich verbesserter Audioqualität in Onlinebesprechungen, gezielte Kommunikation für Manager in Service und Produktion mit der Shifts-App, Teams und Skype Interoperabilität von Verbrauchern und vieles mehr.
+[Neuigkeiten in Microsoft 365 Webserie:](https://go.microsoft.com/fwlink/p/?linkid=2118096)In der Folge dieses Monats heben wir das 3-jahres-Bestehen von Microsoft Teams hervor und befassen uns mit neuen Features, einschließlich verbesserter Audioqualität in Onlinebesprechungen, gezielter Kommunikation für Manager in Service und Produktion mit der Shifts-App, Teams und Skype Interoperabilität von Verbrauchern und mehr.
 
 ## <a name="february-2020"></a>Februar 2020
 
@@ -417,7 +429,7 @@ Wir haben viel Feedback von Partnern und Administratoren zu den Herausforderunge
 > [!TIP]
 > Sie müssen nichts unternehmen, damit der Organisationswechsel so lange angezeigt wird, wie Sie der Partner der Aufzeichnung für mindestens eine Organisation sind.
 
-1. Wählen Sie im Microsoft 365 Admin Center den Namen der Organisation aus.
+1. Wählen Sie im Microsoft 365 Admin Center den Organisationsnamen aus.
 ![Bildschirmaufnahme: oben auf der Startseite, auf der der Organisationsprofilname mit dem Switchersymbol angezeigt wird.](../media/MAC-Organization-switcher.png)
 
 2. Wählen Sie in der Organisationswitcher die Organisation aus, die Sie verwalten möchten.
@@ -430,10 +442,10 @@ Das ist tatsächlich der Fall!!!
 Einige Änderungen im Gruppenbereich in diesem Monat:
 
 - **Sortieren nach Gruppenname:** Sie können die Gruppenliste alphabetisch sortieren, indem Sie die Spalte **"Gruppenname"** auswählen.
-- **Gelöschte Microsoft 365 Gruppen wiederherstellen:** Sie müssen nicht mehr zum Exchange Admin Center wechseln, um gelöschte Microsoft 365 Gruppen wiederherzustellen. Wechseln Sie zu **Microsoft 365 Admin Center** \>  \> **Gelöschte Gruppen** \> (wählen Sie eine Gruppe aus der Liste aus) \> **Gruppe wiederherstellen.** Sie stellt die Gruppe wieder in die **Gruppenliste** zurück und stellt E-Mails, Unterhaltungen, Notizbücher, Dateien und Kalender der Gruppe wieder her.
+- **Gelöschte Microsoft 365 Gruppen wiederherstellen:** Sie müssen nicht mehr zum Exchange Admin Center wechseln, um gelöschte Microsoft 365 Gruppen wiederherzustellen. Wechseln Sie zu **Microsoft 365 Admin Center** \> **Gruppen** \> **gelöschte Gruppen** \> (wählen Sie eine Gruppe aus der Liste aus) \> **Gruppe wiederherstellen.** Sie stellt die Gruppe wieder in die **Gruppenliste** zurück und stellt E-Mails, Unterhaltungen, Notizbücher, Dateien und Kalender der Gruppe wieder her.
 
 ### <a name="videos-training-and-docs-february"></a>Videos, Schulungen und Dokumente (Februar)
 
 - **Neuigkeiten in Microsoft 365 Videoreihe:** In diesem Monat konzentrieren wir uns auf benutzerdefinierte Suchfunktionen für SharePoint Online, das Office Verwaltungsfeature "What's New", mit dem Sie bestimmte Features für Endbenutzer über den In-App-Hilfebereich, die neuesten Sicherheits- und Complianceupdates in Yammer und vieles mehr anzeigen oder ausblenden können. Hier ist die neueste Folge: [Neuigkeiten in Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2118096)
 
-- **Dokumente verschieben:** Wir haben die Office 365 Admin-Webartikel mit den Microsoft 365 Inhalten kombiniert, und Sie haben die neue URL möglicherweise bemerkt. Dieser Artikel wurde beispielsweise unter: **docs.microsoft.com/Office365/Admin/whats-new-in-preview** gehostet, aber die URL lautet jetzt: **docs.microsoft.com/microsoft-365/admin/whats-new-in-preview**. Wenn Sie Seiten mit Lesezeichen erstellt haben, sollten Sie Ihre Links aktualisieren. Inhaltslinks werden jedoch zum neuen Inhaltsre repository umgeleitet.
+- **Dokumente verschieben:** Wir haben die Office 365 Webartikel des Administrators mit den Microsoft 365 Inhalten kombiniert, und Sie haben die neue URL möglicherweise bemerkt. Dieser Artikel wurde z. B. unter: **docs.microsoft.com/Office365/Admin/whats-new-in-preview** gehostet, aber die URL lautet jetzt: **docs.microsoft.com/microsoft-365/admin/whats-new-in-preview**. Wenn Sie Seiten mit Lesezeichen erstellt haben, sollten Sie Ihre Links aktualisieren. Inhaltslinks werden jedoch zum neuen Inhaltsre repository umgeleitet.

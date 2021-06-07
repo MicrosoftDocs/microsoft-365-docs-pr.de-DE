@@ -14,12 +14,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 232f7133f177e3d0aa93fcb2835fb86bcfd0d37c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: c03bc2a61ba2dae1b5db34c6b48d623c58c0c613
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769323"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782873"
 ---
 # <a name="customize-attack-surface-reduction-rules"></a>Anpassen der Regeln zur Verringerung der Angriffsfläche
 
@@ -32,13 +32,13 @@ ms.locfileid: "52769323"
 > [!IMPORTANT]
 > Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
 
-[Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md) helfen, Softwareverhalten zu verhindern, die häufig missbraucht werden, um Ihr Gerät oder Netzwerk zu kompromittieren. Beispielsweise kann ein Angreifer versuchen, ein nicht signiertes Skript von einem USB-Laufwerk auszuführen, oder ein Makro in einem Office Dokument aufruft direkt an die Win32-API. Regeln zur Verringerung der Angriffsfläche können diese Arten riskanter Verhaltensweisen einschränken und die verteidigungsbereitschaft Ihrer Organisation verbessern.
+[Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md) helfen, Softwareverhalten zu verhindern, die häufig missbraucht werden, um Ihr Gerät oder Netzwerk zu kompromittieren. Ein Angreifer könnte beispielsweise versuchen, ein nicht signiertes Skript von einem USB-Laufwerk aus auszuführen, oder ein Makro in einem Office Dokument aufruft direkt an die Win32-API. Regeln zur Verringerung der Angriffsfläche können diese Arten riskanter Verhaltensweisen einschränken und die verteidigungsbereitschaft Ihrer Organisation verbessern.
 
 Erfahren Sie, wie Sie Regeln zur Verringerung der Angriffsfläche anpassen, indem [Sie Dateien und Ordner ausschließen](#exclude-files-and-folders) oder der [Benachrichtigungswarnung, die](#customize-the-notification) auf dem Computer eines Benutzers angezeigt wird, benutzerdefinierten Text hinzufügen.
 
 Sie können Regeln zur Verringerung der Angriffsfläche für Geräte festlegen, auf denen eine der folgenden Editionen und Versionen von Windows ausgeführt wird:
 - Windows 10 Pro, Version [1709](/windows/whats-new/whats-new-windows-10-version-1709) oder höher
-- Windows 10 Enterprise, [Version 1709](/windows/whats-new/whats-new-windows-10-version-1709) oder höher
+- Windows 10 Enterprise, Version [1709](/windows/whats-new/whats-new-windows-10-version-1709) oder höher
 - Windows Server, [Version 1803 (Halbjährlicher Kanal)](/windows-server/get-started/whats-new-in-windows-server-1803) oder höher
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19) Sie können diese Einstellungen mithilfe von Gruppenrichtlinien- und PowerShell-Konfigurationsdienstanbietern (CSP) für die mobile Geräteverwaltung (Mobile Device Management, MDM) konfigurieren.
 
@@ -46,8 +46,14 @@ Sie können Regeln zur Verringerung der Angriffsfläche für Geräte festlegen, 
 
 Sie können dateien und Ordner von der Auswertung durch Attack Surface Reduction-Regeln ausschließen. Nach dem Ausschließen wird die Ausführung der Datei auch dann nicht blockiert, wenn eine Regel zur Verringerung der Angriffsfläche erkennt, dass die Datei schädliches Verhalten enthält.
 
+Betrachten Sie beispielsweise die Ransomware-Regel:
+
+Die Ransomware-Regel soll Unternehmenskunden dabei helfen, Risiken von Ransomware-Angriffen zu verringern und gleichzeitig die Geschäftskontinuität zu gewährleisten. Standardmäßig wird die Ransomware-Regel auf der Seite der Vorsicht und zum Schutz vor Dateien, die noch nicht genügend Zuverlässigkeit und Vertrauenswürdigkeit erhalten haben, einen Fehler auslösen. Zur Neubetonierung wird die Ransomware-Regel nur für Dateien ausgelöst, die nicht genügend positive Reputation und Verbreitung auf der Grundlage von Nutzungsmetriken von Millionen unserer Kunden erhalten haben. In der Regel werden die Blöcke selbst aufgelöst, da die "Zuverlässigkeits- und Vertrauenswerte" jeder Datei inkrementell aktualisiert werden, wenn die Nutzung nicht problematisch wird.
+
+In Fällen, in denen Blöcke nicht zeitnah selbst aufgelöst werden, können Kunden – _auf eigenes Risiko_ – entweder den Self-Service-Mechanismus oder eine Auf IOC-basierte "Zulassungsliste"-Funktion (Indicator of Compromise, Kompromissindikator) verwenden, um die Blockierung der Dateien selbst aufzuheben.  
+
 > [!WARNING]
-> Dadurch können möglicherweise unsichere Dateien ausgeführt und Ihre Geräte infiziert werden. Das Ausschließen von Dateien oder Ordnern kann den Schutz durch Regeln zur Verringerung der Angriffsfläche erheblich beeinträchtigen. Dateien, die durch eine Regel blockiert worden wären, dürfen ausgeführt werden, und es wird kein Bericht oder Ereignis aufgezeichnet.
+> Durch das Ausschließen oder Aufheben der Blockierung von Dateien oder Ordnern können möglicherweise unsichere Dateien ausgeführt und Ihre Geräte infiziert werden. Das Ausschließen von Dateien oder Ordnern kann den Schutz durch Regeln zur Verringerung der Angriffsfläche erheblich beeinträchtigen. Dateien, die durch eine Regel blockiert worden wären, dürfen ausgeführt werden, und es wird kein Bericht oder Ereignis aufgezeichnet.
 
 Ein Ausschluss gilt für alle Regeln, die Ausschlüsse zulassen. Sie können eine einzelne Datei, einen Ordnerpfad oder den vollqualifizierten Domänennamen für eine Ressource angeben. Sie können einen Ausschluss jedoch nicht auf eine bestimmte Regel beschränken.
 
@@ -57,7 +63,7 @@ Attack Surface Reduction unterstützt Umgebungsvariablen und Platzhalter. Inform
 Wenn Probleme mit Regeln auftreten, die Dateien erkennen, von denen Sie glauben, dass sie nicht erkannt werden sollten, verwenden Sie [den Überwachungsmodus, um die Regel zu testen.](evaluate-attack-surface-reduction.md)
 
 | Regelbeschreibung | GUID |
-|:----|:----|:----|
+|:----|:----|
 | Alle Office-Anwendungen am Erstellen von untergeordneten Prozessen hindern | `D4F940AB-401B-4EFC-AADC-AD5F3C50688A` |
 | Ausführung potenziell verborgener Skripts blockieren | `5BEB7EFE-FD9A-4556-801D-275E5FFC04CC` |
 | Blockieren von Win32-API-Aufrufen von Office Makro | `92E97FA1-2EDF-4476-BDD6-9DD0B4DDDC7B` |
@@ -116,4 +122,4 @@ Sie können die Benachrichtigung anpassen, wenn eine Regel ausgelöst wird und e
 * [Reduzieren von Angriffsflächen mit Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md)
 * [Aktivieren der Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md)
 * [Auswerten der Regeln zur Verringerung der Angriffsfläche](evaluate-attack-surface-reduction.md)
-* [FAQ zu Verringerung der Angriffsfläche](attack-surface-reduction.md)
+* [Häufig gestellte Fragen zur Verringerung der Angriffsfläche](attack-surface-reduction.md)

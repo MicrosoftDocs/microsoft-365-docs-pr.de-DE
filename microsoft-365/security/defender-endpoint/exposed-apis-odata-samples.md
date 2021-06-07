@@ -1,8 +1,8 @@
 ---
-title: OData-Abfragen mit Microsoft Defender for Endpoint
+title: OData-Abfragen mit Microsoft Defender für Endpunkt
 ms.reviewer: ''
-description: Verwenden Sie diese Beispiele für Open Data Protocol (OData)-Abfragen, um Datenzugriffsprotokolle in Microsoft Defender for Endpoint zu unterstützen.
-keywords: apis, supported apis, odata, query
+description: Verwenden Sie diese Beispiele für OData-Abfragen (Open Data Protocol), um Datenzugriffsprotokolle in Microsoft Defender für Endpunkt zu unterstützen.
+keywords: APIs, unterstützte APIs, odata, Abfrage
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,32 +15,33 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 37319e5af6121a38965e5d2d350a7697bb78c0b1
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: a2570aba26d65a573c19777bc70db77f4118e336
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198293"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771045"
 ---
-# <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>OData-Abfragen mit Microsoft Defender for Endpoint
+# <a name="odata-queries-with-microsoft-defender-for-endpoint"></a>OData-Abfragen mit Microsoft Defender für Endpunkt
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Wenn Sie mit OData-Abfragen nicht vertraut sind, lesen Sie: [OData V4-Abfragen](https://www.odata.org/documentation/)
+Wenn Sie nicht mit OData-Abfragen vertraut sind, lesen Sie: [OData V4-Abfragen](https://www.odata.org/documentation/)
 
-Nicht alle Eigenschaften können gefiltert werden.
+Nicht alle Eigenschaften sind filterbar.
 
-## <a name="properties-that-support-filter"></a>Eigenschaften, die $filter:
+## <a name="properties-that-support-filter"></a>Eigenschaften, die $filter unterstützen:
 ```
 - [Alert](alerts.md): ```alertCreationTime```, ```lastUpdateTime```, ```incidentId```,```InvestigationId```, ```status```, ```severity``` and ```category```.
 - [Machine](machine.md): ```ComputerDnsName```, ```LastSeen```, ```HealthStatus```, ```OsPlatform```, ```RiskScore``` and ```RbacGroupId```.
@@ -49,7 +50,7 @@ Nicht alle Eigenschaften können gefiltert werden.
 ```
 ### <a name="example-1"></a>Beispiel 1
 
-Get 10 latest Alerts with related Evidence:
+Abrufen von 10 neuesten Warnungen mit verwandten Nachweisen:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
@@ -194,7 +195,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=ev
 
 ### <a name="example-2"></a>Beispiel 2
 
-Alle Warnungen nach dem 2019-11-22 00:00:00:
+Abrufen aller Warnungen, die zuletzt nach 2019-11-22 00:00:00 aktualisiert wurden:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdateTime+ge+2019-11-22T00:00:00Z
@@ -256,7 +257,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/alerts?$filter=lastUpdate
 
 ### <a name="example-3"></a>Beispiel 3
 
-Alle Geräte mit "High" 'RiskScore' erhalten:
+Rufen Sie alle Geräte mit "High" "RiskScore" ab:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScore+eq+'High'
@@ -309,7 +310,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=riskScor
 
 ### <a name="example-4"></a>Beispiel 4
 
-Get top 100 devices with 'HealthStatus' not equals to 'Active':
+Rufen Sie die 100 wichtigsten Geräte mit "HealthStatus" ab, die nicht "Aktiv" sind:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthStatus+ne+'Active'&$top=100 
@@ -362,7 +363,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=healthSt
 
 ### <a name="example-5"></a>Beispiel 5
 
-Alle Geräte, die zuletzt nach dem 2018-10-20 angezeigt wurden:
+Rufen Sie alle Geräte ab, die zuletzt nach 2018-10-20 angezeigt wurden:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen gt 2018-08-01Z
@@ -415,7 +416,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=lastSeen
 
 ### <a name="example-6"></a>Beispiel 6
 
-Alle Antivirenscans, die der Benutzer erstellt Analyst@examples.onmicrosoft.com Microsoft Defender for Endpoint, erhalten:
+Rufen Sie alle Virenscans ab, die der Benutzer mit Microsoft Defender für Endpunkt erstellt Analyst@examples.onmicrosoft.com:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machineactions?$filter=requestor eq 'Analyst@contoso.com' and type eq 'RunAntiVirusScan'
@@ -447,7 +448,7 @@ json{
 
 ### <a name="example-7"></a>Beispiel 7
 
-Hier erhalten Sie die Anzahl der geöffneten Warnungen für ein bestimmtes Gerät:
+Rufen Sie die Anzahl der geöffneten Warnungen für ein bestimmtes Gerät ab:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa415b8e5f383c6388bff446c62/alerts/$count?$filter=status ne 'Resolved'
@@ -461,7 +462,7 @@ HTTP GET  https://api.securitycenter.microsoft.com/api/machines/123321d0c675eaa4
 
 ### <a name="example-8"></a>Beispiel 8
 
-Alle Geräte mit "computerDnsName" ab "mymachine" erhalten:
+Rufen Sie alle Geräte mit "computerDnsName" ab "mymachine" ab:
 
 ```http
 HTTP GET  https://api.securitycenter.microsoft.com/api/machines?$filter=startswith(computerDnsName,'mymachine')

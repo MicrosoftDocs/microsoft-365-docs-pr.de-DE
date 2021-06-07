@@ -1,5 +1,5 @@
 ---
-title: 'Schritt 4: Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte'
+title: Schritt 4. Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte
 f1.keywords:
 - NOCSH
 author: JoeDavies-MSFT
@@ -17,16 +17,16 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Verwenden Sie Microsoft Endpoint Manager zur Verwaltung Ihrer Geräte, PCs und anderen Endgeräte.
-ms.openlocfilehash: 116f2a92ccae43a36a8a4ceafcd598c532a852c3
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: ef43f447b819a6e5d9d0de1d979d7d30887e30fb
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028992"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789105"
 ---
-# <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Schritt 4. Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte
+# <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Schritt 4. Bereitstellen der Endpunktverwaltung für Ihre Geräte, PCs und andere Endpunkte
 
-Bei Remotemitarbeitern müssen Sie eine wachsende Anzahl von persönlichen Geräten unterstützen. Die Endpunktverwaltung ist ein richtlinienbasierter Sicherheitsansatz, bei dem Geräte bestimmte Kriterien erfüllen müssen, bevor sie Zugriff auf Ressourcen erhalten. Microsoft Endpoint Manager bietet moderne Verwaltungsfunktionen, um Ihre Daten in der Cloud und vor Ort sicher zu halten. 
+Bei Hybrid-Mitarbeitern müssen Sie eine wachsende Anzahl von persönlichen Geräten unterstützen. Die Endpunktverwaltung ist ein richtlinienbasierter Sicherheitsansatz, bei dem Geräte bestimmte Kriterien erfüllen müssen, bevor sie Zugriff auf Ressourcen erhalten. Microsoft Endpoint Manager bietet moderne Verwaltungsfunktionen, um Ihre Daten in der Cloud und vor Ort sicher zu halten. 
 
 [Microsoft Endpoint Manager](/mem/endpoint-manager-overview) bietet Dienste und Tools für die Verwaltung von mobilen Geräten, Desktop-Computern, virtuellen Maschinen, eingebetteten Geräten und Servern durch die Kombination der folgenden Dienste, die Sie möglicherweise bereits kennen und nutzen.
 
@@ -38,7 +38,7 @@ Microsoft Intune ist ein Cloud-basierter Dienst, der sich auf die Verwaltung mob
 
 - **MDM:** Sie können über Geräte im Besitz der Organisation die vollständige Kontrolle ausüben, einschließlich der Einstellungen, Features und Sicherheit. Geräte werden in Intune "registriert", wo Sie Intune-Richtlinien mit Regeln und Einstellungen erhalten. Sie können z. b. die Anforderungen für Kennwort und PIN festlegen, eine VPN-Verbindung erstellen, den Bedrohungsschutz einrichten und vieles mehr.
 
-- **MAM:** Remotemitarbeiter möchten möglicherweise nicht, dass Sie die vollständige Kontrolle über ihre persönlichen Geräte haben, auch bekannt als BYOD-Geräte (Bring-your-own Device). Sie können Ihren Remotemitarbeiter Optionen anbieten und Ihre Organisation trotzdem schützen. So können beispielsweise Remotemitarbeiter Ihre Geräte registrieren, wenn Sie Vollzugriff auf die Ressourcen Ihrer Organisation wünschen. Wenn diese Benutzer jedoch nur Zugriff auf E-Mail oder Microsoft Teams haben möchten, verwenden Sie die APP-Schutzrichtlinien, bei denen die mehrstufige Authentifizierung (MFA) erforderlich ist, um diese Apps zu verwenden.
+- **MAM:** Remotemitarbeiter möchten möglicherweise nicht, dass Sie die vollständige Kontrolle über ihre persönlichen Geräte haben, auch bekannt als BYOD-Geräte (Bring-your-own Device). Sie können Ihren Hybrid-Mitarbeiter Optionen anbieten und Ihre Organisation trotzdem schützen. So können beispielsweise Hybrid-Mitarbeiter Ihre Geräte registrieren, wenn Sie Vollzugriff auf die Ressourcen Ihrer Organisation wünschen. Wenn diese Benutzer jedoch nur Zugriff auf E-Mail oder Microsoft Teams haben möchten, verwenden Sie die APP-Schutzrichtlinien, bei denen die mehrstufige Authentifizierung (MFA) erforderlich ist, um diese Apps zu verwenden.
 
 Weitere Informationen finden Sie in dieser [Übersicht über Microsoft Intune](/intune/fundamentals/what-is-intune).
 
@@ -93,6 +93,6 @@ Sie verwenden die Suite der Funktionen und Möglichkeiten von Endpoint Manager, 
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[![Schritt 5: Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
+[![Schritt 5: Bereitstellen von Produktivitätsanwendungen und -diensten für Remotemitarbeiter](../media/empower-people-to-work-remotely/remote-workers-step-grid-5.png)](empower-people-to-work-remotely-teams-productivity-apps.md)
 
-Fahren Sie mit [Schritt 5](empower-people-to-work-remotely-teams-productivity-apps.md) fort, um Ihre Remotemitarbeiter mit Microsoft 365 Produktivitäts-Apps wie Microsoft Teams auszustatten.
+Fahren Sie mit [Schritt 5](empower-people-to-work-remotely-teams-productivity-apps.md) fort, um Ihre Hybrid-Mitarbeiter mit Microsoft 365 Produktivitäts-Apps wie Microsoft Teams auszustatten.

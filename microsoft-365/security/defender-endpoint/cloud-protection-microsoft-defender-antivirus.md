@@ -14,13 +14,12 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.date: 06/03/2021
-ms.openlocfilehash: ce54f8205e62b953022fd2518caac058f4f9bab2
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 836025b42bbe6142f462ee31f266a636f5101fe9
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788799"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52783005"
 ---
 # <a name="cloud-delivered-protection-and-microsoft-defender-antivirus"></a>Schutz über die Cloud und Microsoft Defender Antivirus
 
@@ -62,7 +61,7 @@ Organisationen, die Windows 10 E5 ausführen, können auch Dynamische Intelligen
 
 2. [Geben Sie die über die Cloud bereitgestellte Schutzebene an.](specify-cloud-protection-level-microsoft-defender-antivirus.md) Sie können das von der Cloud angebotene Schutzniveau mithilfe von Microsoft Endpoint Manager oder Gruppenrichtlinien angeben. Die Schutzebene wirkt sich auf die Menge der informationen aus, die für die Cloud freigegeben wurden, und die Art und Weise, wie aggressiv neue Dateien blockiert werden.
 
-3. [Konfigurieren und Überprüfen von Netzwerkverbindungen für Microsoft Defender Antivirus.](configure-network-connections-microsoft-defender-antivirus.md) Es gibt bestimmte Microsoft-URLs, mit denen Ihr Netzwerk und Ihre Endpunkte eine Verbindung herstellen können müssen, damit der über die Cloud bereitgestellte Schutz effektiv funktioniert. In diesem Artikel werden die URLs aufgeführt, die über Firewall- oder Netzwerkfilterregeln zulässig sein sollten, sowie Anweisungen zur Bestätigung, dass Ihr Netzwerk ordnungsgemäß im über die Cloud bereitgestellten Schutz registriert ist.
+3. Konfigurieren und Überprüfen von [Netzwerkverbindungen für Microsoft Defender Antivirus.](configure-network-connections-microsoft-defender-antivirus.md) Es gibt bestimmte Microsoft-URLs, mit denen Ihr Netzwerk und Ihre Endpunkte eine Verbindung herstellen können müssen, damit der über die Cloud bereitgestellte Schutz effektiv funktioniert. In diesem Artikel werden die URLs aufgeführt, die über Firewall- oder Netzwerkfilterregeln zulässig sein sollten, sowie Anweisungen zur Bestätigung, dass Ihr Netzwerk ordnungsgemäß im über die Cloud bereitgestellten Schutz registriert ist.
 
 4. [Konfigurieren Sie das Feature "Bei erster Anzeige blockieren".](configure-block-at-first-sight-microsoft-defender-antivirus.md) Das Feature "Bei erster Anzeige blockieren" kann neue Schadsoftware innerhalb von Sekunden blockieren, ohne stundenlang auf herkömmliche Security Intelligence warten zu müssen. Sie können sie mithilfe Microsoft Endpoint Manager oder mithilfe von Gruppenrichtlinien aktivieren und konfigurieren.
 

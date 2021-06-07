@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 63e38d5c9cfe50d1fa4cda1f7ae9c7df55a45083
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 61c7c8022ed89a4d10e5737e2dcdf92a4375bedd
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788835"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770409"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>Unterstütze Microsoft Defender für Endpoint-APIs
 
@@ -62,7 +62,7 @@ Thema | Beschreibung
 :---|:---
 [Erweiterte Suche](run-advanced-query-api.md) | Führen Sie Abfragen aus der API aus.
 [Warnungsmethoden und Eigenschaften](alerts.md) | Führen Sie API-Aufrufe aus, z. \- B. Warnungen abrufen, Warnung erstellen, Warnung aktualisieren und vieles mehr.
-[Exportieren von Bewertungsmethoden und Eigenschaften pro Gerät](get-assessment-methods-properties.md) | Führen Sie API-Aufrufe aus, z. B. die Bewertung der sicheren Konfiguration exportieren, die Bewertung des \- Softwarebestands exportieren und die Bewertung von Software-Sicherheitsrisiken exportieren.
+[Exportieren von Bewertungsmethoden und Eigenschaften pro Gerät](get-assessmnt-1methods-properties.md) | Führen Sie API-Aufrufe aus, z. B. die Bewertung der sicheren Konfiguration exportieren, die Bewertung des \- Softwarebestands exportieren und die Bewertung von Software-Sicherheitsrisiken exportieren.
 [Automatisierte Untersuchungsmethoden und -eigenschaften](investigation.md) | Führen Sie API-Aufrufe aus, \- z. B. abrufen einer Sammlung von Untersuchungen.
 [Domänenbezogene Benachrichtigungen erhalten](get-domain-related-alerts.md) | Führen Sie API-Aufrufe aus, z. \- B. abrufen von domänenbezogenen Geräten, Domänenstatistiken und mehr.
 [Dateimethoden und -eigenschaften](files.md) | Führen Sie API-Aufrufe aus, z. B. das Abrufen von \- Dateiinformationen, dateibezogenen Warnungen, dateibezogenen Geräten und Dateistatistiken.

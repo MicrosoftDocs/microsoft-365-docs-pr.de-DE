@@ -11,12 +11,12 @@ ms.topic: article
 localization_priority: Normal
 description: Erfahren Sie mehr über die automatische Umleitung Office 365 Security and Compliance Center-Benutzer zum Microsoft 365 Compliance Center.
 ms.collection: M365-security-compliance
-ms.openlocfilehash: fb667e8f19b26cbe229b3aceffe194a86133c261
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: b51b2e225c833ac499379bbee119f8cb6f4216e9
+ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772478"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52782837"
 ---
 # <a name="redirect-users-from-the-office-365-security-and-compliance-center-to-the-microsoft-365-compliance-center"></a>Umleiten von Benutzern vom Office 365 Security and Compliance Center zum Microsoft 365 Compliance Center
 
@@ -51,7 +51,7 @@ Führen Sie die folgenden Schritte aus, um zum Office 365 Security and Complianc
 1. Melden Sie sich beim [Microsoft 365 Compliance Center](https://compliance.microsoft.com) als globaler Administrator oder mit einem beliebigen Konto mit Complianceadministratorberechtigungen in Azure Active Directory an.
 2. Navigieren Sie zu **Einstellungen**  >  **Compliance Center-Umleitung.**
 3. Schalten Sie die Einstellung für die automatische Umleitung auf **"Aus" um.**
-4. Wählen Sie **"Deaktivieren"** und "Feedback teilen" aus, wenn Sie dazu aufgefordert werden.
+4. Wählen Sie **"Deaktivieren" und** "Feedback teilen" aus, wenn Sie dazu aufgefordert werden.
 
 Nach der Deaktivierung werden die Benutzer nicht mehr an compliance.microsoft.com weitergeleitet und an das Office 365 Security and Compliance Center (protection.microsoft.com) weitergeleitet. Diese Einstellung kann von globalen oder Compliance-Administratoren jederzeit erneut aktiviert werden.
 

@@ -1,7 +1,7 @@
 ---
 title: Computer-API auflisten
-description: Hier erfahren Sie, wie Sie die Api "Computer auflisten" verwenden, um eine Sammlung von Computern abzurufen, die mit der Microsoft Defender for Endpoint-Cloud kommuniziert haben.
-keywords: apis, graph api, supported apis, get, devices
+description: Erfahren Sie, wie Sie die Computer-API für Listen verwenden, um eine Sammlung von Computern abzurufen, die mit der Microsoft Defender für Endpunkt-Cloud kommuniziert haben.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Geräte
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -13,37 +13,38 @@ localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
-ms.topic: article
-ms.openlocfilehash: 01e36427116ad7bd845901e7da7f5aa152bd44f9
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: f06973bc45ecac05c15d48afe5f0e2e9e7788f78
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893353"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770746"
 ---
 # <a name="list-machines-api"></a>Computer-API auflisten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API-Beschreibung
-Ruft eine Sammlung von Computern [ab,](machine.md) die mit der Microsoft Defender for Endpoint-Cloud kommuniziert haben.
-<br>Unterstützt [OData V4-Abfragen](https://www.odata.org/documentation/).
-<br>Die OData-Abfrage `$filter` wird unterstützt unter: , `computerDnsName` , , , und `lastSeen` `healthStatus` `osPlatform` `riskScore` `rbacGroupId` .
-<br>Beispiele finden Sie unter [OData-Abfragen mit Defender for Endpoint](exposed-apis-odata-samples.md)
+Ruft eine Sammlung von [Computern](machine.md) ab, die mit der Microsoft Defender für Endpunkt-Cloud kommuniziert haben.
+<br>Unterstützt [OData V4-Abfragen.](https://www.odata.org/documentation/)
+<br>Die `$filter` OData-Abfrage wird unterstützt für: `computerDnsName` , , , und `lastSeen` `healthStatus` `osPlatform` `riskScore` `rbacGroupId` .
+<br>Beispiele für [OData-Abfragen mit Defender für Endpunkt](exposed-apis-odata-samples.md)
 
 
-## <a name="limitations"></a>Einschränkungen
-1. Sie können Geräte nach Ihrem konfigurierten Aufbewahrungszeitraum zuletzt sehen.
+## <a name="limitations"></a>Begrenzungen
+1. Sie können Geräte abrufen, die zuletzt gemäß Ihrem konfigurierten Aufbewahrungszeitraum angezeigt wurden.
 2. Die maximale Seitengröße beträgt 10.000.
-3. Die Tarifeinschränkungen für diese API sind 100 Anrufe pro Minute und 1500 Anrufe pro Stunde. 
+3. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde. 
 
 
 ## <a name="permissions"></a>Berechtigungen
@@ -53,12 +54,12 @@ Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 Anwendung |   Machine.Read.All |  "Alle Computerprofile lesen"
 Anwendung |   Machine.ReadWrite.All | "Alle Computerinformationen lesen und schreiben"
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Machine.Read | "Computerinformationen lesen"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | Machine.ReadWrite | "Computerinformationen lesen und schreiben"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Machine.ReadWrite | "Lesen und Schreiben von Computerinformationen"
 
 >[!Note]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
->- Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Daten anzeigen" (Weitere Informationen finden Sie unter [Erstellen](user-roles.md) und Verwalten von Rollen)
->- Die Antwort umfasst nur Geräte, auf die der Benutzer basierend auf den Gerätegruppeneinstellungen Zugriff hat (weitere Informationen finden Sie unter [Erstellen](machine-groups.md) und Verwalten von Gerätegruppen).
+>- Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Daten anzeigen" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
+>- Die Antwort enthält nur Geräte, auf die der Benutzer basierend auf den Gerätegruppeneinstellungen Zugriff hat (weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -77,7 +78,7 @@ Authorization | String | Bearer {token}. **Erforderlich**.
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn erfolgreich und Computer vorhanden sind – [](machine.md) 200 OK mit der Liste der Computerentitäten im Textkörper. Wenn keine aktuellen Computer – 404 Nicht gefunden.
+Wenn erfolgreich und Computer vorhanden – 200 OK mit liste der Computerentitäten im Textkörper. [](machine.md) Wenn keine aktuellen Computer – 404 Nicht gefunden.
 
 
 ## <a name="example"></a>Beispiel
@@ -126,4 +127,4 @@ Content-type: application/json
 ```
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [OData-Abfragen mit Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+- [OData-Abfragen mit Microsoft Defender für Endpunkt](exposed-apis-odata-samples.md)

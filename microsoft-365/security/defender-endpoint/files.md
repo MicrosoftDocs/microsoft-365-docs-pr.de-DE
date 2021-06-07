@@ -1,7 +1,7 @@
 ---
 title: File-Ressourcentyp
-description: Abrufen der letzten Microsoft Defender for Endpoint-Warnungen im Zusammenhang mit Dateien.
-keywords: apis, graph api, supported apis, get, alerts, recent
+description: Rufen Sie aktuelle Microsoft Defender für Endpunkt-Warnungen im Zusammenhang mit Dateien ab.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Warnungen, zuletzt verwendet
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,37 +14,38 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 9079a47dcc078b582586370b322502b74ce3838c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: c4d392c9c7777a5ab5435d70e36822e11aa39dae
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199981"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771189"
 ---
 # <a name="file-resource-type"></a>File-Ressourcentyp
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-Stellen Sie eine Dateientität in Defender for Endpoint dar.
+Stellt eine Dateientität in Defender für Endpunkt dar.
 
 ## <a name="methods"></a>Methoden
 Methode|Rückgabetyp |Beschreibung
 :---|:---|:---
-[Datei herunterladen](get-file-information.md) | [file](files.md) | Herunterladen einer einzelnen Datei 
-[Auflisten dateibezogener Warnungen](get-file-related-alerts.md) | [Warnung](alerts.md) Sammlung | Get the [alert](alerts.md) entities that are associated with the file.
-[Auflisten dateibezogener Computer](get-file-related-machines.md) | [Computersammlung](machine.md) | Get the [machine](machine.md) entities associated with the alert.
-[Dateistatistiken](get-file-statistics.md) | Zusammenfassung der Statistik | Ruft die Verbreitung für die angegebene Datei ab.
+[Datei abrufen](get-file-information.md) | [file](files.md) | Abrufen einer einzelnen Datei 
+[Dateibezogene Warnungen auflisten](get-file-related-alerts.md) | [Warnung](alerts.md) Sammlung | Ruft [](alerts.md) die Warnungsentitäten ab, die der Datei zugeordnet sind.
+[Dateibezogene Computer auflisten](get-file-related-machines.md) | [Computersammlung](machine.md) | Ruft [](machine.md) die Computerentitäten ab, die der Warnung zugeordnet sind.
+[Dateistatistiken](get-file-statistics.md) | Statistikzusammenfassung | Ruft die Verbreitung für die angegebene Datei ab.
 
 
 ## <a name="properties"></a>Eigenschaften
@@ -53,22 +54,22 @@ Methode|Rückgabetyp |Beschreibung
 |sha1 | String | Sha1-Hash des Dateiinhalts |
 |sha256 | String | Sha256-Hash des Dateiinhalts |
 |globalPrevalence | Nullable long | Dateiprävalenz in der gesamten Organisation |
-|globalFirstObserved | DateTimeOffset | Erstes Mal, wenn die Datei beobachtet wurde |
-|globalLastObserved | DateTimeOffset | Letztes Mal, wenn die Datei beobachtet wurde |
+|globalFirstObserved | DateTimeOffset | Zeitpunkt, zu dem die Datei zum ersten Mal beobachtet wurde |
+|globalLastObserved | DateTimeOffset | Zeitpunkt, zu dem die Datei zuletzt beobachtet wurde |
 |Größe | Nullable long | Größe der Datei |
-|fileType | String | Dateityp |
-|isPeFile | Boolescher Wert | true, wenn die Datei portierbar ist (z. B. "DLL", "EXE"usw.) |
+|Filetype | String | Typ der Datei |
+|isPeFile | Boolesch | "true", wenn die Datei portierbar ist (z. B. "DLL", "EXE" usw.) |
 |filePublisher | String | Dateiherausgeber |
 |fileProductName | String | Produktname |
-|Signer | String | Datei signer |
-|Issuer | String | Dateiherausgeber |
+|Signer | String | Dateisignierer |
+|Emittenten | String | Dateiaussteller |
 |signerHash | String | Hash des Signaturzertifikats |
-|isValidCertificate | Boolescher Wert | Wurde das Signaturzertifikat vom Microsoft Defender for Endpoint-Agent erfolgreich überprüft |
+|isValidCertificate | Boolesch | Wurde das Signaturzertifikat vom Microsoft Defender für Endpunkt-Agent erfolgreich überprüft? |
 |determinationType | String | Der Bestimmungstyp der Datei |
 |determinationValue | String | Ermittlungswert |
 
 
-## <a name="json-representation"></a>Json-Darstellung
+## <a name="json-representation"></a>JSON-Darstellung
 
 ```json
 {

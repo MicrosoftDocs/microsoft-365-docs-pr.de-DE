@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender für Office 365 im Microsoft 365 Security Center
 description: Erfahren Sie mehr über die Änderungen vom Office 365 Security and Compliance Center zum Microsoft 365 Security Center.
-keywords: Microsoft 365 Sicherheit, Erste Schritte mit dem Microsoft 365 Security Center, Microsoft Defender für Office 365, Microsoft Defender for Endpoint, MDO, MDE, einzelner Fensterausschnitt, neues Sicherheitsportal, neues Defender-Sicherheitsportal
+keywords: Microsoft 365 Sicherheit, Erste Schritte mit dem Microsoft 365 Security Center, Microsoft Defender für Office 365, Microsoft Defender für Endpunkt, MDO, MDE, einzelner Fensterausschnitt, neues Sicherheitsportal, neues Defender-Sicherheitsportal
 ms.date: 02/21/2021
 ms.author: tracyp
 author: msfttracyp
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: 62a917b36355335c8eb52d83caecdbba691f8175
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 2322dbab657d6dd73ce79b3a8e52a3d968c45809
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52242132"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770978"
 ---
 # <a name="microsoft-defender-for-office-365-in-the-microsoft-365-security-center"></a>Microsoft Defender für Office 365 im Microsoft 365 Security Center
 
@@ -33,7 +33,33 @@ ms.locfileid: "52242132"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft Defender für Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
-Das verbesserte [Microsoft 365 Security Center](./overview-security-center.md) unter [https://security.microsoft.com](https://security.microsoft.com) kombiniert die Sicherheitsfunktionen bestehender Microsoft-Sicherheitsportale wie Microsoft Defender Security Center und Office 365 Security & Compliance Center. Dieses verbesserte Center unterstützt Sicherheitsteams dabei, ihre Organisationen effektiver und effizienter vor Bedrohungen zu schützen.
+## <a name="quick-reference"></a>Kurzübersicht
+
+Das Bild und die folgende Tabelle enthalten die Änderungen in der Navigation zwischen dem Office 365 Security & Compliance Center und dem Microsoft 365 Security Center.
+
+> [!div class="mx-imgBorder"]
+> ![Abbildung, was wohin verschoben wurde](../../media/mdo-m3d-security-center.png)
+
+<br>
+
+****
+
+|Office 365 Security & Compliance|Microsoft 365 Security Center|Microsoft 365 Compliance Center|Exchange Admin-Center|
+|---|---|---|---|
+|Warnungen|E-Mail und Zusammenarbeit|||
+|Klassifizierung||Siehe [Microsoft 365 Compliance Center](https://compliance.microsoft.com/homepage)||
+|Verhinderung von Datenverlust||Siehe [Microsoft 365 Compliance Center](https://compliance.microsoft.com/homepage)||
+|Datensatzverwaltung||Siehe [Microsoft 365 Compliance Center](https://compliance.microsoft.com/homepage) ||
+|Informationsverwaltung||Siehe [Microsoft 365 Compliance Center](https://compliance.microsoft.com/homepage)||
+|Bedrohungsverwaltung|E-Mail und Zusammenarbeit|||
+|Nachrichtenübermittlung|||Siehe [Exchange Admin Center](https://admin.exchange.microsoft.com/#/)|
+|Datenschutz||Siehe [Microsoft 365 Compliance Center](https://compliance.microsoft.com/homepage)||
+|Suchen|Suchen|||
+|Berichte|Bericht|||
+|Dienstüberprüfung|Einstellungen|||
+|
+
+Das verbesserte [Microsoft 365 Security Center](./overview-security-center.md) unter <https://security.microsoft.com> kombiniert die Sicherheitsfunktionen bestehender Microsoft-Sicherheitsportale wie Microsoft Defender Security Center und Office 365 Security & Compliance Center. Dieses verbesserte Center unterstützt Sicherheitsteams dabei, ihre Organisationen effektiver und effizienter vor Bedrohungen zu schützen.
 
 Für Personen, die mit dem Office 365 Security & Compliance-Portal (protection.office.com) vertraut sind, werden in diesem Artikel einige der Änderungen und Verbesserungen im Microsoft 365 Security Center beschrieben.
 
@@ -69,10 +95,10 @@ Keine Änderungen an diesen Bereichen:
 Lesen Sie auch den Abschnitt **Verwandte Informationen** am Ende dieses Artikels.
 
 > [!IMPORTANT]
-> Das Microsoft 365-Sicherheitsportal (https://security.microsoft.com) führt Sicherheitsfeatures von https://securitycenter.windows.comund https://protection.office.com zusammen. Was Sie darin sehen, hängt jedoch von Ihrem Abonnement ab. Wenn Sie z. B. nur über Microsoft Defender für Office 365 Plan 1 oder 2 als eigenständige Abonnements verfügen, werden Sie keine Funktionen für die Sicherheit von Endpunkten sehen, und Kunden mit Defender für Office Plan 1 werden Elemente wie "Bedrohungsanalyse" nicht angezeigt.
+> Das Microsoft 365 Sicherheitsportal ( <https://security.microsoft.com> ) kombiniert Sicherheitsfeatures in <https://securitycenter.windows.com> und <https://protection.office.com> . Was Sie darin sehen, hängt jedoch von Ihrem Abonnement ab. Wenn Sie z. B. nur über Microsoft Defender für Office 365 Plan 1 oder 2 als eigenständige Abonnements verfügen, werden Sie keine Funktionen für die Sicherheit von Endpunkten sehen, und Kunden mit Defender für Office Plan 1 werden Elemente wie "Bedrohungsanalyse" nicht angezeigt.
 
 > [!TIP]
-> Alle Exchange Online Protection (EOP)-Funktionen werden in das Microsoft 365 Security Center einbezogen, da EOP ein Kernelement von Defender für Office 365.
+> Alle Funktionen Exchange Online Protection (EOP) werden im Microsoft 365 Security Center enthalten sein, da EOP ein Kernelement von Defender für Office 365 ist.
 
 ## <a name="microsoft-365-security-center-home-page"></a>Microsoft 365 Security Center-Startseite
 
@@ -80,7 +106,7 @@ Auf der Startseite des Portals wird Folgendes angezeigt:
 
 - Sicherheitsbewertungen
 - Anzahl der gefährdeten Benutzer und Geräte
-- Aktive Warteschlange für Vorfälle
+- Aktive Vorfallwarteschlange
 - Listen privilegierter OAuth-Apps
 - Daten zur Geräteintegrität
 - Tweets aus dem Twitter-Feed "Security Intelligence" von Microsoft
@@ -139,7 +165,7 @@ Zeigen Sie Berichte an, und nehmen Sie Änderungen an Einstellungen und Benutzer
 :::image type="content" source="../../media/converge-4-access-and-reporting-new.png" alt-text="Das Schnellstartmenü für Berechtigungen und Berichte im Microsoft 365 Security Center auf der linken Seite des Sicherheitscenters.":::
 
 > [!NOTE]
-> Für Defender für Office 365-Benutzer können  Sie jetzt Domänenschlüssel identifizierte E-Mail-Schlüssel (DomainKeys Identified Mail, DKIM) über das Microsoft 365 Security Center verwalten und drehen: , oder navigieren Sie zu Richtlinien & Regeln Bedrohungsrichtlinien <https://security.microsoft.com/threatpolicy>  \>  \> **DKIM**.
+> Für Defender für Office 365 Benutzer können Sie jetzt DomainKeys Identified Mail (DKIM)-Schlüssel über das Microsoft 365 Security Center *verwalten und drehen:* <https://security.microsoft.com/threatpolicy> oder zu Richtlinien & **Regeln** für \> **Bedrohungsrichtlinien** \> **DKIM** navigieren.
 
 ## <a name="advanced-hunting-example-for-microsoft-defender-for-office-365"></a>Beispiel für erweiterte Bedrohungssuche für Microsoft Defender für Office 365
 
@@ -147,21 +173,21 @@ Möchten Sie mit der erweiterten Bedrohungssuche nach E-Mail-Bedrohungen beginne
 
 Der Abschnitt [Erste Schritte](/microsoft-365/security/office-365-security/defender-for-office-365.md#getting-started) im Artikel [Microsoft Defender für Office 365](/microsoft-365/security/office-365-security/defender-for-office-365) enthält logische erste Konfigurationsblöcke, die so aussehen:
 
-1. Konfigurieren Sie alles mit "anti" im Namen.
+1. Konfigurieren Sie alles mit "Anti" im Namen.
    - Antischadsoftware
    - Antiphishing
    - Antispam
-2. Richten Sie alles mit "sicher" im Namen ein.
+2. Richten Sie alles mit "Sicher" im Namen ein.
    - Sichere Links
    - Sichere Anlagen
-3. Sichern Sie die Workloads (z. B. SharePoint Online, OneDrive, und Teams)
-4. Schutz durch automatische Bereinigung zur Nullstunde
+3. Sichern Sie die Workloads (z. B. SharePoint Online, OneDrive und Teams).
+4. Schützen Mit automatischer Nullstunde-Bereinigung.
 
 Zusammen mit einem [Link](../office-365-security/protect-against-threats.md) für den Sofortstart und um schon am ersten Tag mit der Konfiguration zu beginnen.
 
 Der letzte Schritt in **Erste Schritte** dient dem Schutz von Benutzern mittels **automatischer Bereinigung zur Nullstunde**, auch bekannt als ZAP (Zero-Hour auto purge). Es kann sehr wichtig sein zu wissen, ob Ihre Bemühungen, ZAP auf verdächtige oder schädliche E-Mails nach der Zustellung anzuwenden, erfolgreich waren.
 
-Der schnelle Wechsel zur Kusto-Abfragesprache, um nach Problemen zu suchen, stellt einen Vorteil der Zusammenführung dieser beiden Sicherheitscenter dar. Sicherheitsteams können ZAP-Verpasste überwachen, indem sie hier [unter](https://security.microsoft.com/advanced-hunting) **Hunting** Advanced Hunting die \> **nächsten Schritte ausführen.**
+Der schnelle Wechsel zur Kusto-Abfragesprache, um nach Problemen zu suchen, stellt einen Vorteil der Zusammenführung dieser beiden Sicherheitscenter dar. Sicherheitsteams können ZAP-Fehler überwachen, indem sie [hier](https://security.microsoft.com/advanced-hunting)unter **"Erweiterte Suche"** die nächsten Schritte \> ausführen.
 
 1. Klicken Sie auf der Seite "Erweiterte Bedrohungssuche" auf "Abfrage".
 1. Kopieren Sie die nachstehende Abfrage in das Abfragefenster.
@@ -181,7 +207,7 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="Die Seite &quot;Erweiterte Bedrohungssuche&quot; (unter &quot;Suche&quot;) mit ausgewählter &quot;Abfrage&quot;-Option oben im Abfragebereich, und Ausführen einer Kusto-Abfrage zum Erfassen von ZAP-Aktionen während der letzten 7 Tage.":::
+:::image type="content" source="../../media/converge-13-advanced-hunt-an-email-zap-new.png" alt-text="Die Seite &quot;Erweiterte Suche&quot; (unter &quot;Suche&quot;) mit ausgewählter Abfrage am oberen Rand des Abfragebereichs und ausführen einer Kusto-Abfrage, um ZAP-Aktionen in den letzten 7 Tagen zu erfassen.":::
 
 Die Daten aus dieser Abfrage werden im Ergebnisbereich unterhalb der Abfrage selbst angezeigt. Die Ergebnisse enthalten Informationen wie "DeviceName", "AccountDisplayName" und "ZapTime" in einem anpassbaren Ergebnisset. Die Ergebnisse können auch zur Dokumentation exportiert werden. Wenn die Abfrage später erneut benötigt wird, wählen Sie **Speichern** > **Speichern unter**, und fügen Sie die Abfrage Ihrer Liste von Abfragen, freigegebenen oder Communityabfragen hinzu.
 

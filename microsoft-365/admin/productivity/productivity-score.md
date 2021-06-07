@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie die Microsoft-Produktivitätsbewertung Messwerte für Personen- und Technologieerfahrungen widerspiegelt und vergleichen Sie sie mit Organisationen ähnlicher Größe.
-ms.openlocfilehash: 0735fb6d47b475146deade6ab3ca2f8d24ec27a7
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: af0e8583bec00b1ddfd62145a4757a4e568108e8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779674"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789039"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft-Produktivitätsbewertung 
 
@@ -116,13 +116,13 @@ Der empfohlene Benchmark-Wert für Netzwerkverbindungen beträgt 80 Punkte.
 
 Der Abschnitt **Score-Aufschlüsselung** enthält eine Aufschlüsselung Ihrer Produktivitätsbewertung mit Benchmarks in den Bereichen Mitarbeiter- und Technologie-Erfahrungen.
 
-Der Bewertungsverlauf zeigt Ihnen, wie sich Ihr Ergebnis in jeder Kategorie innerhalb der letzten 6 Monate verändert hat.
+Der Bewertungsverlauf zeigt Ihnen, wie sich Ihr Ergebnis in jeder Kategorie innerhalb der letzten sechs Monate verändert hat.
 
-Die Bereiche **Mitarbeiter-Erfahrungen** und **Technologie-Erfahrungen** enthalten die wichtigsten Erkenntnisse für die Kategorien in diesen Bereichen. Sie können auf jede Kategorie klicken, um vertiefte Einblicke zu sehen.
+Die Bereiche **Mitarbeiter-Erfahrungen** und **Technologie-Erfahrungen** enthalten die wichtigsten Erkenntnisse für die Kategorien in diesen Bereichen. Sie können jede Kategorie auswählen, um vertiefte Einblicke zu sehen.
 
 ## <a name="category-details-pages"></a>Kategoriedetailseiten
 
-Jede Kategoriedetailseite zeigt die wichtigsten Erkenntnisse und unterstützenden Metriken sowie zugehörige Forschungsergebnisse und Maßnahmen an, die Sie ergreifen können, um Veränderungen in Ihrem Unternehmen voranzutreiben. Forschungsergebnisse unterstützen die Bedeutung und Begründung der wichtigsten Erkenntnisse für jede Kategorie. Weitere Informationen [finden Sie im Forrester-Bericht](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf).
+Jede Kategoriedetailseite zeigt die wichtigsten Erkenntnisse und unterstützenden Metriken sowie zugehörige Forschungsergebnisse und Maßnahmen an, die Sie ergreifen können, um Veränderungen in Ihrem Unternehmen voranzutreiben. Forschungsergebnisse unterstützen die Bedeutung und Begründung der wichtigsten Erkenntnisse für jede Kategorie. Weitere Informationen [finden Sie im Forrester-Bericht](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PBrb).
 
 Die Detailseiten sind:
 - [Inhaltszusammenarbeit – Mitarbeiter-Erfahrungen](content-collaboration.md)

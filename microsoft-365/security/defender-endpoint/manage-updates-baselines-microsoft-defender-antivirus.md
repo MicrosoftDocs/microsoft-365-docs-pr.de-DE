@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/03/2021
-ms.openlocfilehash: e67f783552cca5cc36c1563f5e5557796028ea18
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.date: 06/04/2021
+ms.openlocfilehash: 264a3b7a4a24c446048d6cfc6863f1ae9765566f
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772017"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52789183"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Verwalten Microsoft Defender Antivirus Updates und Anwenden von Basisplänen
 
@@ -83,6 +83,21 @@ Alle unsere Updates enthalten
 - Integrationsverbesserungen (Cloud, Microsoft 365 Defender).
 <br/>
 <details>
+<summary> Mai-2021 (Plattform: 4.18.2105.4 | Modul: 1.1.18200.4)</summary>
+
+&ensp;Security Intelligence Update-Version: **1.341.8.0**  
+&ensp;Veröffentlicht: **4. Juni 2021**  
+&ensp;Plattform: **4.18.2105.4**  
+&ensp;Modul: **1.1.18200.4**  
+&ensp;Supportphase: **Sicherheits- und kritische Updates**
+    
+### <a name="whats-new"></a>Neuerungen
+- Verbesserungen bei der Verhaltensüberwachung 
+
+### <a name="known-issues"></a>Bekannte Probleme
+Keine bekannten Probleme  
+<br/>
+</details><details>
 <summary> April-2021 (Plattform: 4.18.2104.14 | Modul: 1.1.18100.5)</summary>
 
 &ensp;Security Intelligence Update Version: **1.337.2.0**  
@@ -98,9 +113,7 @@ Alle unsere Updates enthalten
 ### <a name="known-issues"></a>Bekannte Probleme
 Keine bekannten Probleme  
 <br/>
-</details>
-
-<details>
+</details><details>
 <summary> März-2021 (Plattform: 4.18.2103.7 | Modul: 1.1.18000.5)</summary>
 
 &ensp;Version des Security Intelligence-Updates: **1.335.36.0**  
@@ -118,14 +131,20 @@ Keine bekannten Probleme
 ### <a name="known-issues"></a>Bekannte Probleme
 Keine bekannten Probleme  
 <br/>
-</details><details>
+</details>
+
+### <a name="previous-version-updates-technical-upgrade-support-only"></a>Frühere Versionsupdates: Nur Support für technische Upgrades
+
+Nachdem eine neue Paketversion veröffentlicht wurde, wird der Support für die vorherigen beiden Versionen auf den technischen Support reduziert. Ältere Versionen sind in diesem Abschnitt aufgeführt und werden nur für technischen Upgrade-Support bereitgestellt. 
+<br/><br/>
+<details>
 <summary> Februar-2021 (Plattform: 4.18.2102.3 | Modul: 1.1.17900.7)</summary>
 
 &ensp;Version des Security Intelligence-Updates: **1.333.7.0**  
 &ensp;Veröffentlicht: **9. März 2021**  
 &ensp;Plattform: **4.18.2102.3**  
 &ensp;Modul: **1.1.17900.7**  
-&ensp;Supportphase: **Sicherheits- und kritische Updates**
+&ensp;Supportphase: **Technischer Upgrade-Support (nur)**
     
 ### <a name="whats-new"></a>Neuerungen
 
@@ -135,13 +154,7 @@ Keine bekannten Probleme
 ### <a name="known-issues"></a>Bekannte Probleme
 Keine bekannten Probleme  
 <br/>
-</details>
-
-### <a name="previous-version-updates-technical-upgrade-support-only"></a>Frühere Versionsupdates: Nur Support für technische Upgrades
-
-Nachdem eine neue Paketversion veröffentlicht wurde, wird der Support für die vorherigen beiden Versionen auf den technischen Support reduziert. Ältere Versionen sind in diesem Abschnitt aufgeführt und werden nur für technischen Upgrade-Support bereitgestellt. 
-<br/><br/>
-<details>
+</details><details>
 <summary> Januar -2021 (Plattform: 4.18.2101.9 | Modul: 1.1.17800.5)</summary>
 
 &ensp;Version des Security Intelligence-Updates: **1.327.1854.0**  
@@ -438,9 +451,9 @@ Plattform- und Modulupdates werden monatlich bereitgestellt. Um vollständig unt
  
 - Phase des **technischen Supports (nur)** – Nach der Veröffentlichung einer neuen Plattformversion wird der Support für ältere Versionen (N-2) auf den technischen Support reduziert. Plattformversionen, die älter als N-2 sind, werden nicht mehr unterstützt.*
 
-\*Für Upgrades von der Windows 10-Version (siehe [Plattformversion, die in Windows 10-Versionen enthalten ist)](#platform-version-included-with-windows-10-releases)auf die neueste Plattformversion wird weiterhin technischer Support bereitgestellt.
+\*Für Upgrades von der Windows 10-Version (siehe [Plattformversion in Windows 10-Versionen)](#platform-version-included-with-windows-10-releases)auf die neueste Plattformversion wird weiterhin technischer Support bereitgestellt.
 
-Während der Phase des technischen Supports (nur) werden kommerzielle angemessene Supportvorfälle über den Microsoft-Kundendienst & Support und die verwalteten Supportangebote von Microsoft (z. B. Premier Support) bereitgestellt. Wenn ein Supportvorfall eine Eskalation zur Entwicklung erfordert, um weitere Anleitungen zu erhalten, ein nicht sicherheitsrelevantes Update oder ein Sicherheitsupdate erfordert, werden Kunden aufgefordert, auf die neueste Plattformversion oder ein Zwischenupdate (*) zu aktualisieren.
+Während der Phase des technischen Supports (nur) werden kommerzielle angemessene Supportvorfälle über den Microsoft-Kundendienst & Support und die von Microsoft verwalteten Supportangebote (z. B. Premier Support) bereitgestellt. Wenn ein Supportvorfall eine Eskalation zur Entwicklung erfordert, um weitere Anleitungen zu erhalten, ein nicht sicherheitsrelevantes Update oder ein Sicherheitsupdate erfordert, werden Kunden aufgefordert, auf die neueste Plattformversion oder ein Zwischenupdate (*) zu aktualisieren.
 
 ### <a name="platform-version-included-with-windows-10-releases"></a>In Windows 10-Versionen enthaltene Plattformversion
 Die folgende Tabelle enthält die Microsoft Defender Antivirus Plattform- und Modulversionen, die mit den neuesten Windows 10 Versionen ausgeliefert werden:    
@@ -460,7 +473,7 @@ Informationen zu Windows 10 Version finden Sie im [Windows-Lifecycle-Information
 
 ## <a name="updates-for-deployment-image-servicing-and-management-dism"></a>Updates für die Abbildverwaltung für die Bereitstellung (Deployment Image Servicing and Management, DISM)
 
-Es wird empfohlen, ihre Windows 10 (Enterprise-, Pro- und Home-Editionen), Windows Server 2019 und Windows Server 2016 Betriebssysteminstallationsimages mit den neuesten Antiviren- und Antischadsoftwareupdates zu aktualisieren. Wenn Sie Ihre Betriebssysteminstallationsimages auf dem neuesten Stand halten, vermeiden Sie eine Lücke beim Schutz. 
+Es wird empfohlen, ihre Windows 10 (Enterprise-, Pro- und Home-Editionen), Windows Server 2019 und Windows Server 2016 Betriebssysteminstallationsimages mit den neuesten Antivirus- und Antischadsoftwareupdates zu aktualisieren. Wenn Sie Ihre Betriebssysteminstallationsimages auf dem neuesten Stand halten, vermeiden Sie eine Lücke beim Schutz. 
 
 Weitere Informationen finden Sie unter [Microsoft Defender Update für Windows Installationsimages](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)des Betriebssystems.
 

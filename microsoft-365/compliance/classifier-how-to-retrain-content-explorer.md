@@ -14,23 +14,23 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Erfahren Sie, wie Sie einem trainierbaren Klassifikator im Inhalts-Explorer Feedback geben.
-ms.openlocfilehash: d61437634dcad7f01a6737947b0f32f42de2818e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Erfahren Sie, wie Sie Feedback an einen trainierbaren Klassifizierer im Inhalts-Explorer senden.
+ms.openlocfilehash: ef0539a3d474ffecaeac8633b4a58aa068a5c182
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918101"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793064"
 ---
 # <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Neutrainieren eines Klassifizierers im Inhalts-Explorer
 
-Ein Microsoft 365 trainierbarer Klassifikator ist ein Tool, das Sie schulen können, um verschiedene Arten von Inhalten zu erkennen, indem Sie ihm Beispiele zum Betrachten geben. Nach der Ausbildung können Sie es verwenden, um Elemente für die Anwendung Office Vertraulichkeitsbezeichnungen, Kommunikationskonformitätsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien zu identifizieren.
+Ein Microsoft 365 trainierbarer Klassifizierer ist ein Tool, das Sie trainieren können, um verschiedene Arten von Inhalten zu erkennen, indem Sie ihm Beispiele zum Betrachten geben. Sobald Sie geschult sind, können Sie damit Elemente für die Anwendung von Office Vertraulichkeitsbezeichnungen, Kommunikationscompliancerichtlinien und Aufbewahrungsbezeichnungsrichtlinien identifizieren.
 
-In diesem Artikel erfahren Sie, wie Sie die Leistung von benutzerdefinierten trainierbaren Klassifikatoren und einigen vordefinierten Klassifizierungen verbessern können, indem Sie ihnen zusätzliches Feedback bereitstellen.
+In diesem Artikel erfahren Sie, wie Sie die Leistung von benutzerdefinierten trainierbaren Klassifizierern und einigen bereits trainierten Klassifizierern durch zusätzliches Feedback verbessern.
 
-Weitere Informationen zu den verschiedenen Typen von Klassifizierungen finden Sie [unter Learn about trainable classifiers](classifier-learn-about.md).
+Weitere Informationen zu den verschiedenen Typen von Klassifizierern finden Sie unter [Informationen zu trainierbaren Klassifizierern.](classifier-learn-about.md)
 
-Sehen Sie sich dieses Video an, um eine kurze Zusammenfassung des Optimierungs- und Umschulungsprozesses zu finden. Sie müssen weiterhin diesen vollständigen Artikel lesen, um die Details zu erhalten.
+Sehen Sie sich dieses Video an, um einen schnellen Überblick über den Optimierungs- und Umschulungsprozess zu geben. Sie müssen immer noch diesen vollständigen Artikel lesen, um die Details zu erhalten.
 
 </br>
 
@@ -39,75 +39,75 @@ Sehen Sie sich dieses Video an, um eine kurze Zusammenfassung des Optimierungs- 
 
 ## <a name="permissions"></a>Berechtigungen
 
-So greifen Sie auf Klassifikatoren im Microsoft 365 Compliance Center zu:
+So greifen Sie im Microsoft 365 Compliance Center auf Klassifizierer zu:
 
-- Die Rolle des Complianceadministrators oder der Compliancedatenadministrator ist erforderlich, um einen Klassifizierer zu schulen.
+- Die Rolle "Complianceadministrator" oder "Compliancedatenadministrator" ist erforderlich, um einen Klassifizierer zu trainieren.
 
-Sie benötigen Konten mit diesen Berechtigungen, um Klassifizierungen in den folgenden Szenarien verwenden zu können:
+Sie benötigen Konten mit diesen Berechtigungen, um Klassifizierer in diesen Szenarien zu verwenden:
 
-- Szenario der Aufbewahrungsbezeichnungsrichtlinie: Rollen "Datensatzverwaltung" und "Aufbewahrungsverwaltung" 
+- Szenario mit Aufbewahrungsbezeichnungsrichtlinien: Rollen "Datensatzverwaltung" und "Aufbewahrungsverwaltung" 
 
-## <a name="overall-workflow"></a>Gesamtworkflow
+## <a name="overall-workflow"></a>Gesamter Workflow
 
 > [!IMPORTANT]
-> Sie geben Feedback im Inhalts-Explorer für die automatische Anwendung von Aufbewahrungsbezeichnungsrichtlinien auf Exchange Elemente und verwenden den Klassifikator als Bedingung. **Wenn Sie nicht über eine Aufbewahrungsrichtlinie verfügen, die automatisch eine Aufbewahrungsbezeichnung auf elemente Exchange und einen Klassifikator als Bedingung verwendet, beenden Sie hier.**
+> Sie geben im Inhalts-Explorer Feedback für die automatische Anwendung von Aufbewahrungsbezeichnungsrichtlinien auf Exchange Elemente und verwenden den Klassifizierer als Bedingung. **Wenn Sie keine Aufbewahrungsrichtlinie haben, die automatisch eine Aufbewahrungsbezeichnung auf Exchange Elemente anwendet und eine Klassifizierung als Bedingung verwendet, beenden Sie hier.**
 
-Wenn Sie Ihre Klassifizierungen verwenden, können Sie die Genauigkeit der Klassifizierungen erhöhen, die sie machen. Dazu bewerten Sie die Qualität der Klassifizierungen, die für Elemente vorgenommen wurden, die als Übereinstimmung oder nicht übereinstimmend identifiziert wurden. Nachdem Sie 30 Auswertungen für einen Klassifikator erstellt haben, wird dieses Feedback benötigt und automatisch neu trainiert.
+Wenn Sie Ihre Klassifizierer verwenden, sollten Sie die Genauigkeit der Klassifizierungen erhöhen, die sie erstellen. Dazu bewerten Sie die Qualität der Klassifizierungen, die für Elemente erstellt wurden, die als Übereinstimmung oder nicht als Übereinstimmung identifiziert wurden. Nachdem Sie 30 Auswertungen für einen Klassifizierer durchgeführt haben, nimmt er dieses Feedback und trainiert sich automatisch neu.
 
-Weitere Informationen zum allgemeinen Workflow zum Umschulungstraining eines Klassifikierers finden Sie unter [Prozessablauf zum Umschulungen eines Klassifizierers](classifier-learn-about.md#retraining-classifiers).
+Weitere Informationen zum allgemeinen Workflow der Umschulung eines Klassifizierers finden Sie unter [Prozessablauf für die Umschulung eines Klassifizierers.](classifier-learn-about.md#retraining-classifiers)
 
 > [!NOTE]
-> Ein Klassifikator muss bereits veröffentlicht und verwendet werden, bevor er umtrainiert werden kann.
+> Ein Klassifizierer muss bereits veröffentlicht und verwendet werden, bevor er umgeleitet werden kann.
 
 ## <a name="how-to-retrain-a-classifier-in-content-explorer"></a>Neutrainieren eines Klassifizierers im Inhalts-Explorer
 
-1. Melden Sie sich Microsoft 365 Compliance Center mit Dem Zugriff auf die Rolle des Complianceadministrators oder Sicherheitsadministrators an, und öffnen Sie **Microsoft 365** Compliance Center  >  **Datenklassifizierung**  >  **Inhalts-Explorer**. 
-2. Erweitern Sie **unter Filter on labels, info types, or categories list** **trainable classifiers**.
+1. Melden Sie sich bei Microsoft 365 Compliance Center mit Compliance-Administrator- oder Sicherheitsadministratorrollenzugriff an, und öffnen **Sie Microsoft 365 Compliance Center Data**  >  **classification**  >  **Content Explorer.** 
+2. Erweitern Sie unter dem **Filter nach Bezeichnungen, Informationstypen oder Kategorienlisten** **trainierbare Klassifizierer.**
 
 > [!IMPORTANT]
-> Es kann bis zu acht Tage dauern, bis aggregierte Elemente unter der Überschrift trainierbare Klassifizierungen angezeigt werden.
+> Es kann bis zu acht Tage dauern, bis aggregierte Elemente unter der Überschrift der trainierbaren Klassifizierer angezeigt werden.
 
-3. Wählen Sie den trainierbaren Klassifikator aus, den Sie in Der Aufbewahrungsbezeichnungsrichtlinie automatisch anwenden. Dies ist der trainierbare Klassifikator, zu dem Sie Feedback geben.
+3. Wählen Sie den trainierbaren Klassifizierer aus, den Sie bei der automatischen Anwendung der Aufbewahrungsbezeichnungsrichtlinie verwendet haben. Dies ist der trainierbare Klassifizierer, zu dem Sie Feedback geben.
 
 > [!NOTE]
-> Wenn ein Element über einen Eintrag in der **Spalte** Aufbewahrungsbezeichnung verfügt, bedeutet dies, dass das Element als klassifiziert `match` wurde.  Wenn ein Element keinen Eintrag in der Spalte Aufbewahrungsbezeichnung **hat,** bedeutet dies, dass es als klassifiziert `close match` wurde. Sie können die Klassifiziergenauigkeit am besten verbessern, indem Sie Feedback zu Elementen `close match` bereitstellen. 
+> Wenn ein Element einen Eintrag in der Spalte **"Aufbewahrungsbezeichnung"** aufweist, bedeutet dies, dass das Element als . `match`  Wenn ein Element keinen Eintrag in der Spalte **"Aufbewahrungsbezeichnung"** enthält, bedeutet dies, dass es als klassifiziert `close match` wurde. Sie können die Klassifizierergenauigkeit am besten verbessern, indem Sie Feedback zu `close match` Elementen bereitstellen. 
 
 4. Wählen Sie ein Element aus, und öffnen Sie es.
  
  > [!TIP]
-> Sie können Feedback zu mehreren Elementen gleichzeitig bereitstellen, indem Sie sie alle auswählen und dann **in** der Befehlsleiste die Klassifizierung verbessern auswählen.
+> Sie können Feedback zu mehreren Elementen gleichzeitig bereitstellen, indem Sie sie alle auswählen und dann in der Befehlsleiste **"Klassifizierung verbessern"** auswählen.
 
-5. Wählen **Sie Feedback bereitstellen aus.**
-6. Wenn das **Element im Bereich** Detailliertes Feedback ein echtes Positives ist, wählen Sie Match **aus.**  Wenn das Element ein falsch positives Element ist, d. h. es wurde fälschlicherweise in die Kategorie eingeschlossen, wählen Sie **Keine Übereinstimmung aus.**
-7. Wenn es einen anderen Klassifikator gibt, der für das Element geeigneter wäre, können Sie ihn in der Liste **Andere trainierbare Klassifikatoren** vorschlagen auswählen. Dadurch wird der andere Klassifikator ausgelöst, um das Element auszuwerten.
-8. Wählen **Sie Feedback senden** aus, um Ihre Bewertung der , Klassifizierungen zu senden und andere `match` `not a match` trainierbare Klassifikatoren vorschlagen. Wenn Sie einem Klassifikator 30 Feedbackinstanzen bereitgestellt haben, wird dieser automatisch umtrainiert. Eine Umschulung kann zwischen ein und vier Stunden dauern. Klassifizierungen können nur zweimal pro Tag umtrainiert werden.
+5. Wählen Sie **"Feedback bereitstellen"** aus.
+6. Wenn das Element ein echtes Positives ist, wählen Sie im Bereich **"Detailliertes Feedback"** die Option **"Übereinstimmung"** aus.  Wenn das Element ein falsch positives Ergebnis ist, d. h. es wurde nicht ordnungsgemäß in die Kategorie aufgenommen, wählen Sie **"Nicht übereinstimmend"** aus.
+7. Wenn es einen anderen Klassifizierer gibt, der für das Element besser geeignet wäre, können Sie ihn aus der Liste **"Andere trainierbare Klassifizierer vorschlagen"** auswählen. Dadurch wird der andere Klassifizierer ausgelöst, um das Element auszuwerten.
+8. Wählen Sie **"Feedback senden"** aus, um Ihre Auswertung der Klassifizierungen zu senden `match` und andere `not a match` trainierbare Klassifizierer vorzuschlagen. Wenn Sie 30 Instanzen von Feedback an einen Klassifizierer übermittelt haben, wird er automatisch neu trainiert. Die Umschulung kann zwischen 1 und 4 Stunden dauern. Klassifizierer können nur zweimal pro Tag trainiert werden.
 
 > [!IMPORTANT]
-> Diese Informationen werden an den Klassifikator in Ihrem Mandanten gesendet, **sie gehen nicht zurück zu Microsoft.**
+> Diese Informationen werden an den Klassifizierer in Ihrem Mandanten weitergeleitet, **sie gehen nicht an Microsoft zurück.**
 
-9. Öffnen **Sie Trainable-Klassifikatoren**.
-10. Der Klassifikator, der in Ihrer Kommunikationskonformitätsrichtlinie verwendet wurde, wird unter der Überschrift **Neuschulung** angezeigt.
+9. Öffnen **Sie trainierbare Klassifizierer.**
+10. Der Klassifizierer, der in Ihrer Kommunikationscompliancerichtlinie verwendet wurde, wird unter der Überschrift **"Erneute Schulung"** angezeigt.
 
-![Klassifizierung im Umschulungsstatus](../media/classifier-retraining.png)
+![Klassifizierer im Umschulungsstatus](../media/classifier-retraining.png)
 
-11. Nachdem die Umschulung abgeschlossen ist, wählen Sie den Klassifikator aus, um die Übersicht über die Umschulung zu öffnen.
+11. Nachdem die Umschulung abgeschlossen ist, wählen Sie den Klassifizierer aus, um die Übersicht über die Umschulung zu öffnen.
 
-![Übersicht über die Klassifizierer-Umschulungsergebnisse](../media/classifier-retraining-overview.png)
+![Übersicht über die Klassifizierer-Neuschulungsergebnisse](../media/classifier-retraining-overview.png)
 
-12. Überprüfen Sie die empfohlene Aktion und die Vorhersagevergleiche der umtrainierten und aktuell veröffentlichten Versionen des Klassifizierungsklassifikierers.
-13. Wenn Sie mit den Ergebnissen der Umschulung zufrieden sind, wählen Sie **Erneut veröffentlichen aus.**
-14. Wenn Sie mit den Ergebnissen der Umschulung nicht zufrieden sind, können Sie zusätzliches Feedback an den Klassifikator in der Kommunikationskonformitätsschnittstelle senden und einen weiteren Umschulungszyklus starten oder nichts tun. In diesem Fall wird die aktuell veröffentlichte Version des Klassifizierungsmoduls weiterhin verwendet. 
+12. Überprüfen Sie die empfohlene Aktion und die Vorhersagevergleiche der umgeleiteten und aktuell veröffentlichten Versionen des Klassifizierers.
+13. Wenn Sie mit den Ergebnissen der Umschulung zufrieden sind, wählen Sie **"Erneut veröffentlichen"** aus.
+14. Wenn Sie mit den Ergebnissen der Umschulung nicht zufrieden sind, können Sie zusätzliches Feedback an den Klassifizierer in der Benutzeroberfläche des Inhalts-Explorers senden und einen weiteren Umschulungszyklus starten oder nichts unternehmen, in diesem Fall wird die derzeit veröffentlichte Version des Klassifizierers weiterhin verwendet. 
 
-## <a name="details-on-republishing-recommendations"></a>Details zur erneuten Veröffentlichen von Empfehlungen
+## <a name="details-on-republishing-recommendations"></a>Details zu Empfehlungen zur erneuten Veröffentlichung
 
-Hier finden Sie ein wenig Informationen dazu, wie wir die Empfehlung formulieren, einen umtrainierten Klassifizierer erneut zu veröffentlichen oder weitere Umschulungen vorschlagen. Dies erfordert ein wenig tieferes Verständnis der Funktionsweise trainierbarer Klassifizierungen.
+Hier finden Sie einige Informationen dazu, wie wir die Empfehlung formulieren, einen umgeleiteten Klassifizierer erneut zu veröffentlichen oder eine weitere Umschulung vorzuschlagen. Dies erfordert ein wenig tieferes Verständnis der Funktionsweise trainierbarer Klassifizierer.
 
-Nach einer Umschulung bewerten wir die Leistung des Klassifikierers sowohl für die Elemente mit Feedback als auch für alle Elemente, die ursprünglich zum Trainieren des Klassifizierungsfeeders verwendet wurden. 
+Nach einer Neuschulung bewerten wir die Leistung des Klassifizierers sowohl für die Elemente mit Feedback als auch für alle Elemente, die ursprünglich zum Trainieren des Klassifizierers verwendet wurden. 
 
-- Bei integrierten Modellen sind Elemente, die zum Trainieren des Klassifizierers verwendet werden, die Elemente, die von Microsoft zum Erstellen des Modells verwendet werden.
-- Bei benutzerdefinierten Modellen werden elemente, die in der ursprünglichen Schulung verwendet werden, von den Websites, die Sie zum Testen und Überprüfen hinzugefügt haben, verwendet.
+- Bei integrierten Modellen sind Elemente, die zum Trainieren des Klassifizierers verwendet werden, die Von Microsoft zum Erstellen des Modells verwendeten Elemente.
+- Bei benutzerdefinierten Modellen stammen die Elemente, die in der ursprünglichen Schulung verwendet werden, von den Websites, die Sie zum Testen und Überprüfen hinzugefügt haben.
 
-Wir vergleichen die Leistungszahlen für beide Gruppen von Elementen für den umtrainierten und veröffentlichten Klassifikator, um eine Empfehlung zur Verbesserung der Veröffentlichung zu geben. 
+Wir vergleichen die Leistungsnummern für beide Gruppen von Elementen für den neu geschulten und veröffentlichten Klassifizierer, um eine Empfehlung zu geben, ob eine erneute Veröffentlichung verbessert werden konnte. 
 
 ## <a name="see-also"></a>Siehe auch
 

@@ -15,12 +15,12 @@ ms.collection:
 description: Administratoren können erfahren, wie Standard- und Strict-Richtlinieneinstellungen für die Schutzfunktionen von Exchange Online Protection (EOP) und Microsoft Defender für Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ca65f003b0c206b0f7e23f3498a4ef0d0bc03fa6
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: ca0b8b8dd879f3f662c96f1527bca13efbe5ef6c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788979"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771225"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Voreingestellte Sicherheitsrichtlinien in EOP und Microsoft Defender für Office 365
 
@@ -119,7 +119,7 @@ Mit anderen Worten, die Einstellungen der **Strict-Schutzrichtlinie** setzen die
 
 ### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>Verwenden des Sicherheitscenters zum Zuweisen vordefinierter Sicherheitsrichtlinien zu Benutzern
 
-1. Wechseln Sie im Security Center zu Richtlinien für **die E-Mail-& Zusammenarbeit** & Richtlinien mit \>  \>  \> **vorlagenbasierten Richtlinien** \> für Regeln.
+1. Wechseln Sie im Security Center zu **E-Mail-& Richtlinien** für die Zusammenarbeit & \>  \> Voreingestellte **Sicherheitsrichtlinien für** \> **Bedrohungsrichtlinien** für Regeln.
 
 2. Klicken Sie unter **"Standardschutz"** oder **"Strenger Schutz"** auf **"Bearbeiten".**
 
@@ -136,7 +136,7 @@ Mit anderen Worten, die Einstellungen der **Strict-Schutzrichtlinie** setzen die
 
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-4. In Microsoft Defender für Office 365 Organisationen werden Sie zum Defender weitergeleitet, um Office 365 Schutzmaßnahmen gelten für die **Seite,** um die internen Empfänger zu identifizieren, auf die [Microsoft Defender für Office 365 Schutz](#policies-in-preset-security-policies) angewendet wird (Empfängerbedingungen).
+4. In Microsoft Defender für Office 365 Organisationen werden Sie zum Defender weitergeleitet, um Office 365 Schutzmaßnahmen gelten für die **Seite,** um die internen Empfänger zu identifizieren, für die [Microsoft Defender für Office 365 Schutz](#policies-in-preset-security-policies) gilt (Empfängerbedingungen).
 
    Die Einstellungen und das Verhalten entsprechen genau den **EOP-Schutzmaßnahmen,** die auf die Seite angewendet werden.
 

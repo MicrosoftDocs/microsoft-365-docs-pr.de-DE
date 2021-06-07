@@ -1,7 +1,7 @@
 ---
 title: Entfernen der App-Einschränkungs-API
-description: Verwenden Sie diese API, um Aufrufe im Zusammenhang mit dem Entfernen einer Einschränkung aus Anwendungen aus der Ausführung zu erstellen.
-keywords: apis, graph api, supported apis, remove device from isolation
+description: Verwenden Sie diese API, um Aufrufe zu erstellen, die sich auf das Entfernen einer Einschränkung von Anwendungen beziehen.
+keywords: APIs, Graph-API, unterstützte APIs, Gerät aus Isolation entfernen
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: abff4e02bfdfe6f5598ca96121815930dce3c85e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 989e44647a5f0661bfdefa184c6c26f4cdf2b456
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199321"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770877"
 ---
 # <a name="remove-app-restriction-api"></a>Entfernen der App-Einschränkungs-API
 
@@ -30,7 +31,7 @@ ms.locfileid: "51199321"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -42,24 +43,24 @@ ms.locfileid: "51199321"
 Aktivieren Sie die Ausführung einer beliebigen Anwendung auf dem Gerät.
 
 
-## <a name="limitations"></a>Einschränkungen
-1. Die Tarifeinschränkungen für diese API sind 100 Anrufe pro Minute und 1500 Anrufe pro Stunde.
+## <a name="limitations"></a>Begrenzungen
+1. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
 
 [!include[Device actions note](../../includes/machineactionsnote.md)]
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |   Machine.RestrictExecution | "Codeausführung einschränken"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | Machine.RestrictExecution | "Codeausführung einschränken"
+Anwendung |   Machine.RestrictExecution | "Einschränken der Codeausführung"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Machine.RestrictExecution | "Einschränken der Codeausführung"
 
 >[!Note]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
->- Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Aktive Korrekturaktionen" (Weitere Informationen finden Sie unter [Erstellen](user-roles.md) und Verwalten von Rollen)
->- Der Benutzer muss basierend auf den Gerätegruppeneinstellungen Zugriff auf das Gerät haben (weitere Informationen finden Sie unter [Erstellen](machine-groups.md) und Verwalten von Gerätegruppen).
+>- Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Aktive Korrekturaktionen" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
+>- Der Benutzer muss basierend auf den Gerätegruppeneinstellungen Zugriff auf das Gerät haben (Weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```
@@ -73,14 +74,14 @@ Authorization | String | Bearer {token}. **Erforderlich**.
 Content-Type | Zeichenfolge | application/json. **Erforderlich**.
 
 ## <a name="request-body"></a>Anforderungstext
-Stellen Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern zur Verfügung:
+Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an:
 
 Parameter | Typ    | Beschreibung
 :---|:---|:---
 Kommentar |   Zeichenfolge | Kommentar, der der Aktion zugeordnet werden soll. **Erforderlich**.
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich ist, wird 201 – Antwortcode erstellt und [Computeraktion](machineaction.md) im Antworttext zurückgegeben.
+Bei erfolgreicher Ausführung gibt die Methode den Antwortcode 201 – Erstellt und die [Computeraktion](machineaction.md) im Antworttext zurück.
 
 
 ## <a name="example"></a>Beispiel
@@ -101,4 +102,4 @@ POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2
 ```
 
 
-Informationen zum Einschränken der Codeausführung auf einem Gerät finden Sie unter [Restrict app execution](restrict-code-execution.md).
+Informationen zum Einschränken der Codeausführung auf einem Gerät finden Sie unter "Einschränken der [App-Ausführung".](restrict-code-execution.md)

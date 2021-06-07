@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: df2407deeaa3cd6e0b0925b48f888a25c0435042
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
-ms.translationtype: HT
+ms.openlocfilehash: 6778248b127894102d15d4d94e3d2f099e3bfa37
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651110"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771201"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktionen während der Migrationsphasen und Auswirkungen für die Migration von Microsoft Cloud Deutschland
 
@@ -80,7 +80,7 @@ Falls Sie ein einmaliges Anmelden für Office 365 und Azure in der Microsoft Clo
 
 **Wird angewendet**: Vor Beginn von Phase 2
 
-Wenn Sie Active Directory-Verbunddienste (AD FS) verwenden, sorgen Sie für die [Sicherung Ihrer ADFS-Konfiguration vor und nach dem Hinzufügen der Vertrauensstellung der vertrauenden Seite](ms-cloud-germany-transition-azure-ad.md) für den globalen Office 365-Dienst **vor** Beginn von Phase 2.
+Wenn Sie Active Directory-Verbunddienste (AD FS) verwenden, sorgen Sie für die [Sicherung Ihrer ADFS-Konfiguration vor und nach dem Hinzufügen der Vertrauensstellung der vertrauenden Seite](ms-cloud-germany-transition-add-adfs.md) für den globalen Office 365-Dienst **vor** Beginn von Phase 2.
 
 ## <a name="phase-2-azure-ad-migration"></a>Phase 2: Azure AD-Migration
 In dieser Phase wird Azure Active Directory in die neue Rechenzentrumsregion migriert und wird aktiv. Die alten Azure AD-Endpunkte sind weiterhin verfügbar.

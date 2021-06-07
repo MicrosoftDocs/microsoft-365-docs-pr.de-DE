@@ -12,13 +12,13 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-description: Erfahren Sie mehr über Erklärungstypen in Microsoft SharePoint Syntex.
-ms.openlocfilehash: 515fd8af289ec7c64e14eb6d54b236ba3a8aa9f6
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+description: Weitere Informationen zur Begriffsliste, regulärem Ausdruck und Arten der Näherungserklärung in Microsoft SharePoint Syntex.
+ms.openlocfilehash: 8748b2fd33e20cf7e402d499db05f1f6722e735a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706561"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770865"
 ---
 # <a name="explanation-types-in-microsoft-sharepoint-syntex"></a>Erklärungstypen in Microsoft SharePoint Syntex
 
@@ -115,6 +115,15 @@ So fügen Sie einen Erklärungstyp für einen regulären Ausdruck hinzu:
 
    ![Screenshot zeigt den Bereich „Erstellen einer Erklärung“ mit der Vorlage „E-Mail-Adresse“ angewendet.](../media/content-understanding/create-regular-expression-email.png)
 
+### <a name="limitations"></a>Einschränkungen
+
+Die nachfolgende Tabelle zeigt Inline-Zeichenoptionen, die derzeit für Muster eines regulären Ausdrucks nicht verwendet werden können. 
+
+|Option  |Status  |Aktuelle Funktionalität  |
+|---------|---------|---------|
+|Unterscheidung nach Groß-/Kleinschreibung | Derzeit nicht unterstützt. | Bei allen durchgeführten Aktionen wird nicht nach Groß-/Kleinschreibung unterschieden.  |
+|Zeilenanker     | Derzeit nicht unterstützt. | Es konnte keine spezifische Position in einer Zeichenfolge bestimmt werden, an der eine Übereinstimmung erfolgen muss.   |
+
 ## <a name="proximity"></a>Näherung 
 
 Der Erklärungstyp "Näherung" hilft Ihrem Modell bei der Identifizierung von Daten, indem er definiert, wie nahe ein anderes Datenelement an ihm liegt. Beispielsweise haben Sie in Ihrem Modell zwei Erklärungen definiert, die sowohl die *Straßennummer* als auch die *Telefonnummer* des Kunden bezeichnen. 
@@ -139,7 +148,7 @@ Die folgende Tabelle zeigt Beispiele, wie die Anzahl der Token in einer Phrase e
 |Phrase|Anzahl von Token|Erklärung|
 |--|--|--|
 |`Dog`|1|Ein einzelnes Wort ohne Interpunktionszeichen oder Leerzeichen.|
-|`RMT33W`|1|Eine Datensatz-Locator-Nummer. Sie könnte Zahlen und Buchstaben beinhalten, hat aber keine Interpunktion.|
+|`RMT33W`|1|Eine Datensatz-Locator-Nummer. Diese kann Zahlen und Buchstaben beinhalten, hat jedoch keine Interpunktion.|
 |`425-555-5555`|5|Eine Telefonnummer. Jedes Interpunktionszeichen ist ein einzelnes Token, also ist `425-555-5555` 5 Tokens:<br>`425`<br>`-`<br>`555`<br>`-`<br>`5555` |
 |`https://luis.ai`|7|`https`<br>`:`<br>`/`<br>`/`<br>`luis`<br>`.`<br>`ai`<br>|
 
