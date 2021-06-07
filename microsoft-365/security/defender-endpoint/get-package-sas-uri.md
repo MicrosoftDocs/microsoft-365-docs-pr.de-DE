@@ -1,7 +1,7 @@
 ---
-title: Abrufen der SAS-URI-API des Pakets
-description: Verwenden Sie diese API, um einen URI zu erhalten, der das Herunterladen eines Untersuchungspakets ermöglicht.
-keywords: apis, graph api, supported apis, get package, sas, uri
+title: Abrufen der SAS-URI-PAKET-API
+description: Verwenden Sie diese API, um einen URI abzurufen, der das Herunterladen eines Untersuchungspakets ermöglicht.
+keywords: APIs, Graph-API, unterstützte APIs, Paket abrufen, SAS, URI
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,78 +14,80 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b9c8877e341e7438532ab3eb3f7af4c2a9114af7
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 054db1766cdab3aa5b49da4940dcdddfe6086434
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893341"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770685"
 ---
-# <a name="get-package-sas-uri-api"></a><span data-ttu-id="d1268-104">Abrufen der SAS-URI-API des Pakets</span><span class="sxs-lookup"><span data-stu-id="d1268-104">Get package SAS URI API</span></span>
+# <a name="get-package-sas-uri-api"></a><span data-ttu-id="b2514-104">Abrufen der SAS-URI-PAKET-API</span><span class="sxs-lookup"><span data-stu-id="b2514-104">Get package SAS URI API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="d1268-105">**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="d1268-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
+<span data-ttu-id="b2514-105">**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)</span><span class="sxs-lookup"><span data-stu-id="b2514-105">**Applies to:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)</span></span>
 
-- <span data-ttu-id="d1268-106">Möchten Sie Microsoft Defender for Endpoint erleben?</span><span class="sxs-lookup"><span data-stu-id="d1268-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="d1268-107">Registrieren Sie sich für eine kostenlose Testversion.</span><span class="sxs-lookup"><span data-stu-id="d1268-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- <span data-ttu-id="b2514-106">Möchten Sie Microsoft Defender für Endpunkt erleben?</span><span class="sxs-lookup"><span data-stu-id="b2514-106">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="b2514-107">Registrieren Sie sich für eine kostenlose Testversion.</span><span class="sxs-lookup"><span data-stu-id="b2514-107">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a><span data-ttu-id="d1268-108">API-Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d1268-108">API description</span></span>
-<span data-ttu-id="d1268-109">Einen URI erhalten, der das Herunterladen eines [Untersuchungspakets ermöglicht.](collect-investigation-package.md)</span><span class="sxs-lookup"><span data-stu-id="d1268-109">Get a URI that allows downloading of an [Investigation package](collect-investigation-package.md).</span></span>
+## <a name="api-description"></a><span data-ttu-id="b2514-108">API-Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b2514-108">API description</span></span>
+<span data-ttu-id="b2514-109">Rufen Sie einen URI ab, der das Herunterladen eines [Untersuchungspakets](collect-investigation-package.md)ermöglicht.</span><span class="sxs-lookup"><span data-stu-id="b2514-109">Get a URI that allows downloading of an [Investigation package](collect-investigation-package.md).</span></span>
 
 
-## <a name="permissions"></a><span data-ttu-id="d1268-110">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="d1268-110">Permissions</span></span>
-<span data-ttu-id="d1268-111">Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich.</span><span class="sxs-lookup"><span data-stu-id="d1268-111">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="d1268-112">Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="d1268-112">To learn more, including how to choose permissions, see [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
+## <a name="permissions"></a><span data-ttu-id="b2514-110">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="b2514-110">Permissions</span></span>
+<span data-ttu-id="b2514-111">Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen.</span><span class="sxs-lookup"><span data-stu-id="b2514-111">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="b2514-112">Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="b2514-112">To learn more, including how to choose permissions, see [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)</span></span>
 
-<span data-ttu-id="d1268-113">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="d1268-113">Permission type</span></span> |   <span data-ttu-id="d1268-114">Berechtigung</span><span class="sxs-lookup"><span data-stu-id="d1268-114">Permission</span></span>  |   <span data-ttu-id="d1268-115">Anzeigename der Berechtigung</span><span class="sxs-lookup"><span data-stu-id="d1268-115">Permission display name</span></span>
+<span data-ttu-id="b2514-113">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="b2514-113">Permission type</span></span> |   <span data-ttu-id="b2514-114">Berechtigung</span><span class="sxs-lookup"><span data-stu-id="b2514-114">Permission</span></span>  |   <span data-ttu-id="b2514-115">Anzeigename der Berechtigung</span><span class="sxs-lookup"><span data-stu-id="b2514-115">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="d1268-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="d1268-116">Application</span></span> |   <span data-ttu-id="d1268-117">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="d1268-117">Machine.CollectForensics</span></span> |  <span data-ttu-id="d1268-118">"Forensik sammeln"</span><span class="sxs-lookup"><span data-stu-id="d1268-118">'Collect forensics'</span></span>
-<span data-ttu-id="d1268-119">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="d1268-119">Delegated (work or school account)</span></span> | <span data-ttu-id="d1268-120">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="d1268-120">Machine.CollectForensics</span></span> | <span data-ttu-id="d1268-121">"Forensik sammeln"</span><span class="sxs-lookup"><span data-stu-id="d1268-121">'Collect forensics'</span></span>
+<span data-ttu-id="b2514-116">Anwendung</span><span class="sxs-lookup"><span data-stu-id="b2514-116">Application</span></span> |   <span data-ttu-id="b2514-117">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="b2514-117">Machine.CollectForensics</span></span> |  <span data-ttu-id="b2514-118">"Forensik sammeln"</span><span class="sxs-lookup"><span data-stu-id="b2514-118">'Collect forensics'</span></span>
+<span data-ttu-id="b2514-119">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="b2514-119">Delegated (work or school account)</span></span> | <span data-ttu-id="b2514-120">Machine.CollectForensics</span><span class="sxs-lookup"><span data-stu-id="b2514-120">Machine.CollectForensics</span></span> | <span data-ttu-id="b2514-121">"Forensik sammeln"</span><span class="sxs-lookup"><span data-stu-id="b2514-121">'Collect forensics'</span></span>
 
 >[!Note]
-> <span data-ttu-id="d1268-122">Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:</span><span class="sxs-lookup"><span data-stu-id="d1268-122">When obtaining a token using user credentials:</span></span>
->- <span data-ttu-id="d1268-123">Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Warnungsuntersuchung" (Weitere Informationen finden Sie unter [Erstellen](user-roles.md) und Verwalten von Rollen)</span><span class="sxs-lookup"><span data-stu-id="d1268-123">The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)</span></span>
->- <span data-ttu-id="d1268-124">Der Benutzer muss basierend auf den Gerätegruppeneinstellungen Zugriff auf das Gerät haben (weitere Informationen finden Sie unter [Erstellen](machine-groups.md) und Verwalten von Gerätegruppen).</span><span class="sxs-lookup"><span data-stu-id="d1268-124">The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
+> <span data-ttu-id="b2514-122">Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:</span><span class="sxs-lookup"><span data-stu-id="b2514-122">When obtaining a token using user credentials:</span></span>
+>- <span data-ttu-id="b2514-123">Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Warnungsuntersuchung" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)</span><span class="sxs-lookup"><span data-stu-id="b2514-123">The user needs to have at least the following role permission: 'Alerts Investigation' (See [Create and manage roles](user-roles.md) for more information)</span></span>
+>- <span data-ttu-id="b2514-124">Der Benutzer muss basierend auf den Gerätegruppeneinstellungen Zugriff auf das Gerät haben (Weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)</span><span class="sxs-lookup"><span data-stu-id="b2514-124">The user needs to have access to the device, based on device group settings (See [Create and manage device groups](machine-groups.md) for more information)</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="d1268-125">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="d1268-125">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="b2514-125">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="b2514-125">HTTP request</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/{machine action id}/getPackageUri
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="d1268-126">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="d1268-126">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="b2514-126">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="b2514-126">Request headers</span></span>
 
-<span data-ttu-id="d1268-127">Name</span><span class="sxs-lookup"><span data-stu-id="d1268-127">Name</span></span> | <span data-ttu-id="d1268-128">Typ</span><span class="sxs-lookup"><span data-stu-id="d1268-128">Type</span></span> | <span data-ttu-id="d1268-129">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="d1268-129">Description</span></span>
+<span data-ttu-id="b2514-127">Name</span><span class="sxs-lookup"><span data-stu-id="b2514-127">Name</span></span> | <span data-ttu-id="b2514-128">Typ</span><span class="sxs-lookup"><span data-stu-id="b2514-128">Type</span></span> | <span data-ttu-id="b2514-129">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="b2514-129">Description</span></span>
 :---|:---|:---
-<span data-ttu-id="d1268-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="d1268-130">Authorization</span></span> | <span data-ttu-id="d1268-131">String</span><span class="sxs-lookup"><span data-stu-id="d1268-131">String</span></span> | <span data-ttu-id="d1268-132">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="d1268-132">Bearer {token}.</span></span> <span data-ttu-id="d1268-133">**Erforderlich**.</span><span class="sxs-lookup"><span data-stu-id="d1268-133">**Required**.</span></span>
+<span data-ttu-id="b2514-130">Authorization</span><span class="sxs-lookup"><span data-stu-id="b2514-130">Authorization</span></span> | <span data-ttu-id="b2514-131">String</span><span class="sxs-lookup"><span data-stu-id="b2514-131">String</span></span> | <span data-ttu-id="b2514-132">Bearer {token}.</span><span class="sxs-lookup"><span data-stu-id="b2514-132">Bearer {token}.</span></span> <span data-ttu-id="b2514-133">**Erforderlich**.</span><span class="sxs-lookup"><span data-stu-id="b2514-133">**Required**.</span></span>
 
 
-## <a name="request-body"></a><span data-ttu-id="d1268-134">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="d1268-134">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="b2514-134">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="b2514-134">Request body</span></span>
 
-<span data-ttu-id="d1268-135">Empty</span><span class="sxs-lookup"><span data-stu-id="d1268-135">Empty</span></span>
+<span data-ttu-id="b2514-135">Empty</span><span class="sxs-lookup"><span data-stu-id="b2514-135">Empty</span></span>
 
-## <a name="response"></a><span data-ttu-id="d1268-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="d1268-136">Response</span></span>
+## <a name="response"></a><span data-ttu-id="b2514-136">Antwort</span><span class="sxs-lookup"><span data-stu-id="b2514-136">Response</span></span>
 
-<span data-ttu-id="d1268-137">Wenn die Methode erfolgreich ist, gibt sie den Antwortcode 200, Ok mit dem Objekt zurück, das den Link zum Paket im Parameter "value" enthält.</span><span class="sxs-lookup"><span data-stu-id="d1268-137">If successful, this method returns 200, Ok response code with object that holds the link to the package in the “value” parameter.</span></span> <span data-ttu-id="d1268-138">Dieser Link ist für sehr kurze Zeit gültig und sollte sofort zum Herunterladen des Pakets in einen lokalen Speicher verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="d1268-138">This link is valid for a very short time and should be used immediately for downloading the package to a local storage.</span></span>
+<span data-ttu-id="b2514-137">Bei erfolgreicher Ausführung gibt die Methode den Antwortcode 200,Ok mit dem Objekt zurück, das den Link zum Paket im Parameter "value" enthält.</span><span class="sxs-lookup"><span data-stu-id="b2514-137">If successful, this method returns 200, Ok response code with object that holds the link to the package in the “value” parameter.</span></span> <span data-ttu-id="b2514-138">Dieser Link ist sehr kurz gültig und sollte sofort zum Herunterladen des Pakets in einen lokalen Speicher verwendet werden.</span><span class="sxs-lookup"><span data-stu-id="b2514-138">This link is valid for a very short time and should be used immediately for downloading the package to a local storage.</span></span>
 
 
-## <a name="example"></a><span data-ttu-id="d1268-139">Beispiel</span><span class="sxs-lookup"><span data-stu-id="d1268-139">Example</span></span>
+## <a name="example"></a><span data-ttu-id="b2514-139">Beispiel</span><span class="sxs-lookup"><span data-stu-id="b2514-139">Example</span></span>
 
-<span data-ttu-id="d1268-140">**Anforderung**</span><span class="sxs-lookup"><span data-stu-id="d1268-140">**Request**</span></span>
+<span data-ttu-id="b2514-140">**Anforderung**</span><span class="sxs-lookup"><span data-stu-id="b2514-140">**Request**</span></span>
 
-<span data-ttu-id="d1268-141">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="d1268-141">Here is an example of the request.</span></span>
+<span data-ttu-id="b2514-141">Nachfolgend sehen Sie ein Beispiel der Anforderung.</span><span class="sxs-lookup"><span data-stu-id="b2514-141">Here is an example of the request.</span></span>
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/machineactions/7327b54fd718525cbca07dacde913b5ac3c85673/GetPackageUri
 
 ```
 
-<span data-ttu-id="d1268-142">**Antwort**</span><span class="sxs-lookup"><span data-stu-id="d1268-142">**Response**</span></span>
+<span data-ttu-id="b2514-142">**Antwort**</span><span class="sxs-lookup"><span data-stu-id="b2514-142">**Response**</span></span>
 
-<span data-ttu-id="d1268-143">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="d1268-143">Here is an example of the response.</span></span>
+<span data-ttu-id="b2514-143">Nachfolgend sehen Sie ein Beispiel der Antwort.</span><span class="sxs-lookup"><span data-stu-id="b2514-143">Here is an example of the response.</span></span>
 
 ```http
 HTTP/1.1 200 Ok

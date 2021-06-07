@@ -1,7 +1,7 @@
 ---
 title: Auflisten verfügbarer Geräte einer Korrekturaktivität
-description: Gibt Informationen zu verfügbar gemachten Geräten für die angegebene Behebungsaufgabe zurück.
-keywords: apis, remediation, remediation api, get, remediation tasks, remediation exposed devices
+description: Gibt Informationen zu verfügbar gemachten Geräten für die angegebene Korrekturaufgabe zurück.
+keywords: APIs, Wartung, Korrektur-API, abrufen, Wartungsaufgaben, bereitgestellte Geräte zur Problembehebung
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,24 +14,25 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 92b5a93e86a20f36469d2b5cb606a8ddc2e97077
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 9b10659f76e5b05bea11f5c6c55ca7c2a34a2db5
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52241712"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772161"
 ---
-# <a name="list-exposed-devices-of-one-remediation-activity"></a><span data-ttu-id="6e01a-104">Auflisten verfügbarer Geräte einer Korrekturaktivität</span><span class="sxs-lookup"><span data-stu-id="6e01a-104">List exposed devices of one remediation activity</span></span>
+# <a name="list-exposed-devices-of-one-remediation-activity"></a><span data-ttu-id="8c039-104">Auflisten verfügbarer Geräte einer Korrekturaktivität</span><span class="sxs-lookup"><span data-stu-id="8c039-104">List exposed devices of one remediation activity</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="6e01a-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="6e01a-105">**Applies to:**</span></span>
+<span data-ttu-id="8c039-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="8c039-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="6e01a-106">Microsoft Defender für Endpunkt</span><span class="sxs-lookup"><span data-stu-id="6e01a-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="6e01a-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="6e01a-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [<span data-ttu-id="8c039-106">Microsoft Defender für Endpunkt</span><span class="sxs-lookup"><span data-stu-id="8c039-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="8c039-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="8c039-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="6e01a-108">Möchten Sie Microsoft Defender for Endpoint erleben?</span><span class="sxs-lookup"><span data-stu-id="6e01a-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="6e01a-109">Registrieren Sie sich für eine kostenlose Testversion.</span><span class="sxs-lookup"><span data-stu-id="6e01a-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> <span data-ttu-id="8c039-108">Möchten Sie Microsoft Defender für Endpunkt erleben?</span><span class="sxs-lookup"><span data-stu-id="8c039-108">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="8c039-109">Registrieren Sie sich für eine kostenlose Testversion.</span><span class="sxs-lookup"><span data-stu-id="8c039-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
@@ -39,43 +40,43 @@ ms.locfileid: "52241712"
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-## <a name="api-description"></a><span data-ttu-id="6e01a-110">API-Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6e01a-110">API Description</span></span>
+## <a name="api-description"></a><span data-ttu-id="8c039-110">API-Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8c039-110">API Description</span></span>
 
-<span data-ttu-id="6e01a-111">Gibt Informationen zu verfügbar gemachten Geräten für die angegebene Behebungsaufgabe zurück.</span><span class="sxs-lookup"><span data-stu-id="6e01a-111">Returns information about exposed devices for the specified remediation task.</span></span>
+<span data-ttu-id="8c039-111">Gibt Informationen zu verfügbar gemachten Geräten für die angegebene Korrekturaufgabe zurück.</span><span class="sxs-lookup"><span data-stu-id="8c039-111">Returns information about exposed devices for the specified remediation task.</span></span>
 
-<span data-ttu-id="6e01a-112">[Erfahren Sie mehr über Korrekturaktivitäten](tvm-remediation.md).</span><span class="sxs-lookup"><span data-stu-id="6e01a-112">[Learn more about remediation activities](tvm-remediation.md).</span></span>
+<span data-ttu-id="8c039-112">[Erfahren Sie mehr über Korrekturaktivitäten.](tvm-remediation.md)</span><span class="sxs-lookup"><span data-stu-id="8c039-112">[Learn more about remediation activities](tvm-remediation.md).</span></span>
 
-## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a><span data-ttu-id="6e01a-113">Auflisten verfügbarer Geräte, die einer Problembehebungsaufgabe zugeordnet sind (id)</span><span class="sxs-lookup"><span data-stu-id="6e01a-113">List exposed devices associated with a remediation task (id)</span></span>
+## <a name="list-exposed-devices-associated-with-a-remediation-task-id"></a><span data-ttu-id="8c039-113">Auflisten verfügbarer Geräte, die einer Korrekturaufgabe zugeordnet sind (ID)</span><span class="sxs-lookup"><span data-stu-id="8c039-113">List exposed devices associated with a remediation task (id)</span></span>
 
-<span data-ttu-id="6e01a-114">**URL:** GET: /api/remediationTasks/ \{ id \} /machineReferences</span><span class="sxs-lookup"><span data-stu-id="6e01a-114">**URL:** GET: /api/remediationTasks/\{id\}/machineReferences</span></span>
+<span data-ttu-id="8c039-114">**URL:** GET: /api/remediationTasks/id \{ \} /machineReferences</span><span class="sxs-lookup"><span data-stu-id="8c039-114">**URL:** GET: /api/remediationTasks/\{id\}/machineReferences</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="6e01a-115">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="6e01a-115">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="8c039-115">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="8c039-115">Permissions</span></span>
 
-<span data-ttu-id="6e01a-116">Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich.</span><span class="sxs-lookup"><span data-stu-id="6e01a-116">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="6e01a-117">Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Use Microsoft Defender for Endpoint APIs for Details.](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="6e01a-117">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)</span></span>
+<span data-ttu-id="8c039-116">Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen.</span><span class="sxs-lookup"><span data-stu-id="8c039-116">One of the following permissions is required to call this API.</span></span> <span data-ttu-id="8c039-117">Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs.](apis-intro.md)</span><span class="sxs-lookup"><span data-stu-id="8c039-117">To learn more, including how to choose permissions, see [Use Microsoft Defender for Endpoint APIs for details.](apis-intro.md)</span></span>
 
-<span data-ttu-id="6e01a-118">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="6e01a-118">Permission type</span></span> | <span data-ttu-id="6e01a-119">Berechtigung</span><span class="sxs-lookup"><span data-stu-id="6e01a-119">Permission</span></span> | <span data-ttu-id="6e01a-120">Anzeigename der Berechtigung</span><span class="sxs-lookup"><span data-stu-id="6e01a-120">Permission display name</span></span>
+<span data-ttu-id="8c039-118">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="8c039-118">Permission type</span></span> | <span data-ttu-id="8c039-119">Berechtigung</span><span class="sxs-lookup"><span data-stu-id="8c039-119">Permission</span></span> | <span data-ttu-id="8c039-120">Anzeigename der Berechtigung</span><span class="sxs-lookup"><span data-stu-id="8c039-120">Permission display name</span></span>
 :---|:---|:---
-<span data-ttu-id="6e01a-121">Anwendung</span><span class="sxs-lookup"><span data-stu-id="6e01a-121">Application</span></span> | <span data-ttu-id="6e01a-122">RemediationTask.Read.All</span><span class="sxs-lookup"><span data-stu-id="6e01a-122">RemediationTask.Read.All</span></span> | <span data-ttu-id="6e01a-123">\'Informationen zu Sicherheitslücken in Bedrohungs- und Sicherheitsrisikoverwaltung lesen\'</span><span class="sxs-lookup"><span data-stu-id="6e01a-123">\'Read Threat and Vulnerability Management vulnerability information\'</span></span>
-<span data-ttu-id="6e01a-124">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="6e01a-124">Delegated (work or school account)</span></span> | <span data-ttu-id="6e01a-125">RemediationTask.Read.Read</span><span class="sxs-lookup"><span data-stu-id="6e01a-125">RemediationTask.Read.Read</span></span> | <span data-ttu-id="6e01a-126">\'Informationen zu Sicherheitslücken in Bedrohungs- und Sicherheitsrisikoverwaltung lesen\'</span><span class="sxs-lookup"><span data-stu-id="6e01a-126">\'Read Threat and Vulnerability Management vulnerability information\'</span></span>
+<span data-ttu-id="8c039-121">Anwendung</span><span class="sxs-lookup"><span data-stu-id="8c039-121">Application</span></span> | <span data-ttu-id="8c039-122">RemediationTask.Read.All</span><span class="sxs-lookup"><span data-stu-id="8c039-122">RemediationTask.Read.All</span></span> | <span data-ttu-id="8c039-123">\'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'</span><span class="sxs-lookup"><span data-stu-id="8c039-123">\'Read Threat and Vulnerability Management vulnerability information\'</span></span>
+<span data-ttu-id="8c039-124">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="8c039-124">Delegated (work or school account)</span></span> | <span data-ttu-id="8c039-125">RemediationTask.Read.Read</span><span class="sxs-lookup"><span data-stu-id="8c039-125">RemediationTask.Read.Read</span></span> | <span data-ttu-id="8c039-126">\'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'</span><span class="sxs-lookup"><span data-stu-id="8c039-126">\'Read Threat and Vulnerability Management vulnerability information\'</span></span>
 
-## <a name="properties-details"></a><span data-ttu-id="6e01a-127">Eigenschaftendetails</span><span class="sxs-lookup"><span data-stu-id="6e01a-127">Properties details</span></span>
+## <a name="properties-details"></a><span data-ttu-id="8c039-127">Eigenschaftendetails</span><span class="sxs-lookup"><span data-stu-id="8c039-127">Properties details</span></span>
 
-<span data-ttu-id="6e01a-128">Property (id)</span><span class="sxs-lookup"><span data-stu-id="6e01a-128">Property (id)</span></span> | <span data-ttu-id="6e01a-129">Datentyp</span><span class="sxs-lookup"><span data-stu-id="6e01a-129">Data type</span></span> | <span data-ttu-id="6e01a-130">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6e01a-130">Description</span></span> | <span data-ttu-id="6e01a-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6e01a-131">Example</span></span>
+<span data-ttu-id="8c039-128">Eigenschaft (ID)</span><span class="sxs-lookup"><span data-stu-id="8c039-128">Property (id)</span></span> | <span data-ttu-id="8c039-129">Datentyp</span><span class="sxs-lookup"><span data-stu-id="8c039-129">Data type</span></span> | <span data-ttu-id="8c039-130">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="8c039-130">Description</span></span> | <span data-ttu-id="8c039-131">Beispiel</span><span class="sxs-lookup"><span data-stu-id="8c039-131">Example</span></span>
 :---|:---|:---|:---
-<span data-ttu-id="6e01a-132">id</span><span class="sxs-lookup"><span data-stu-id="6e01a-132">id</span></span> | <span data-ttu-id="6e01a-133">String</span><span class="sxs-lookup"><span data-stu-id="6e01a-133">String</span></span> | <span data-ttu-id="6e01a-134">Geräte-ID</span><span class="sxs-lookup"><span data-stu-id="6e01a-134">Device ID</span></span> | <span data-ttu-id="6e01a-135">w2957837fwda8w9ae7f023dba081059dw8d94503</span><span class="sxs-lookup"><span data-stu-id="6e01a-135">w2957837fwda8w9ae7f023dba081059dw8d94503</span></span>
-<span data-ttu-id="6e01a-136">computerDnsName</span><span class="sxs-lookup"><span data-stu-id="6e01a-136">computerDnsName</span></span> | <span data-ttu-id="6e01a-137">String</span><span class="sxs-lookup"><span data-stu-id="6e01a-137">String</span></span> | <span data-ttu-id="6e01a-138">Gerätename</span><span class="sxs-lookup"><span data-stu-id="6e01a-138">Device name</span></span> | <span data-ttu-id="6e01a-139">PC-SRV2012R2Foo.UserNameVldNet.local</span><span class="sxs-lookup"><span data-stu-id="6e01a-139">PC-SRV2012R2Foo.UserNameVldNet.local</span></span>
-<span data-ttu-id="6e01a-140">osPlatform</span><span class="sxs-lookup"><span data-stu-id="6e01a-140">osPlatform</span></span> | <span data-ttu-id="6e01a-141">String</span><span class="sxs-lookup"><span data-stu-id="6e01a-141">String</span></span> | <span data-ttu-id="6e01a-142">Gerätebetriebssystem</span><span class="sxs-lookup"><span data-stu-id="6e01a-142">Device operating system</span></span> | <span data-ttu-id="6e01a-143">WindowsServer2012R2</span><span class="sxs-lookup"><span data-stu-id="6e01a-143">WindowsServer2012R2</span></span>
-<span data-ttu-id="6e01a-144">rbacGroupName</span><span class="sxs-lookup"><span data-stu-id="6e01a-144">rbacGroupName</span></span> | <span data-ttu-id="6e01a-145">String</span><span class="sxs-lookup"><span data-stu-id="6e01a-145">String</span></span> | <span data-ttu-id="6e01a-146">Name der Gerätegruppe, der dieses Gerät zugeordnet ist</span><span class="sxs-lookup"><span data-stu-id="6e01a-146">Name of the device group this device is associated with</span></span> | <span data-ttu-id="6e01a-147">Server</span><span class="sxs-lookup"><span data-stu-id="6e01a-147">Servers</span></span>
+<span data-ttu-id="8c039-132">id</span><span class="sxs-lookup"><span data-stu-id="8c039-132">id</span></span> | <span data-ttu-id="8c039-133">String</span><span class="sxs-lookup"><span data-stu-id="8c039-133">String</span></span> | <span data-ttu-id="8c039-134">Geräte-ID</span><span class="sxs-lookup"><span data-stu-id="8c039-134">Device ID</span></span> | <span data-ttu-id="8c039-135">w2957837fwda8w9ae7f023dba081059dw8d94503</span><span class="sxs-lookup"><span data-stu-id="8c039-135">w2957837fwda8w9ae7f023dba081059dw8d94503</span></span>
+<span data-ttu-id="8c039-136">computerDnsName</span><span class="sxs-lookup"><span data-stu-id="8c039-136">computerDnsName</span></span> | <span data-ttu-id="8c039-137">String</span><span class="sxs-lookup"><span data-stu-id="8c039-137">String</span></span> | <span data-ttu-id="8c039-138">Gerätename</span><span class="sxs-lookup"><span data-stu-id="8c039-138">Device name</span></span> | <span data-ttu-id="8c039-139">PC-SRV2012R2Foo.UserNameVldNet.local</span><span class="sxs-lookup"><span data-stu-id="8c039-139">PC-SRV2012R2Foo.UserNameVldNet.local</span></span>
+<span data-ttu-id="8c039-140">osPlatform</span><span class="sxs-lookup"><span data-stu-id="8c039-140">osPlatform</span></span> | <span data-ttu-id="8c039-141">String</span><span class="sxs-lookup"><span data-stu-id="8c039-141">String</span></span> | <span data-ttu-id="8c039-142">Betriebssystem des Geräts</span><span class="sxs-lookup"><span data-stu-id="8c039-142">Device operating system</span></span> | <span data-ttu-id="8c039-143">WindowsServer2012R2</span><span class="sxs-lookup"><span data-stu-id="8c039-143">WindowsServer2012R2</span></span>
+<span data-ttu-id="8c039-144">rbacGroupName</span><span class="sxs-lookup"><span data-stu-id="8c039-144">rbacGroupName</span></span> | <span data-ttu-id="8c039-145">String</span><span class="sxs-lookup"><span data-stu-id="8c039-145">String</span></span> | <span data-ttu-id="8c039-146">Name der Gerätegruppe, der dieses Gerät zugeordnet ist</span><span class="sxs-lookup"><span data-stu-id="8c039-146">Name of the device group this device is associated with</span></span> | <span data-ttu-id="8c039-147">Server</span><span class="sxs-lookup"><span data-stu-id="8c039-147">Servers</span></span>
 
-## <a name="example"></a><span data-ttu-id="6e01a-148">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6e01a-148">Example</span></span>
+## <a name="example"></a><span data-ttu-id="8c039-148">Beispiel</span><span class="sxs-lookup"><span data-stu-id="8c039-148">Example</span></span>
 
-### <a name="request-example"></a><span data-ttu-id="6e01a-149">Anforderungsbeispiel</span><span class="sxs-lookup"><span data-stu-id="6e01a-149">Request example</span></span>
+### <a name="request-example"></a><span data-ttu-id="8c039-149">Anforderungsbeispiel</span><span class="sxs-lookup"><span data-stu-id="8c039-149">Request example</span></span>
 
 ```http
 GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-aecb-4c6e-b555-d6a97013844c/machinereferences
 ```
 
-### <a name="response-example"></a><span data-ttu-id="6e01a-150">Anforderungsbeispiel</span><span class="sxs-lookup"><span data-stu-id="6e01a-150">Response example</span></span>
+### <a name="response-example"></a><span data-ttu-id="8c039-150">Anforderungsbeispiel</span><span class="sxs-lookup"><span data-stu-id="8c039-150">Response example</span></span>
 
 ```json
 {
@@ -113,14 +114,14 @@ GET https://api-luna.securitycenter.windows.com/api/remediationtasks/03942ef5-ae
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="6e01a-151">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="6e01a-151">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8c039-151">Siehe auch</span><span class="sxs-lookup"><span data-stu-id="8c039-151">See also</span></span>
 
-- [<span data-ttu-id="6e01a-152">Korrekturmethoden und -eigenschaften</span><span class="sxs-lookup"><span data-stu-id="6e01a-152">Remediation methods and properties</span></span>](get-remediation-methods-properties.md)
+- [<span data-ttu-id="8c039-152">Korrekturmethoden und -eigenschaften</span><span class="sxs-lookup"><span data-stu-id="8c039-152">Remediation methods and properties</span></span>](get-remediation-methods-properties.md)
 
-- [<span data-ttu-id="6e01a-153">Erhalten einer Korrekturaktivität nach ID</span><span class="sxs-lookup"><span data-stu-id="6e01a-153">Get one remediation activity by Id</span></span>](get-remediation-one-activity.md)
+- [<span data-ttu-id="8c039-153">Erhalten einer Korrekturaktivität nach ID</span><span class="sxs-lookup"><span data-stu-id="8c039-153">Get one remediation activity by Id</span></span>](get-remediation-one-activity.md)
 
-- [<span data-ttu-id="6e01a-154">Auflisten aller Korrekturaktivitäten</span><span class="sxs-lookup"><span data-stu-id="6e01a-154">List all remediation activities</span></span>](get-remediation-all-activities.md)
+- [<span data-ttu-id="8c039-154">Auflisten aller Korrekturaktivitäten</span><span class="sxs-lookup"><span data-stu-id="8c039-154">List all remediation activities</span></span>](get-remediation-all-activities.md)
 
-- [<span data-ttu-id="6e01a-155">Risikobasierte Bedrohungsrisiken & Sicherheitsrisikomanagement</span><span class="sxs-lookup"><span data-stu-id="6e01a-155">Risk-based threat & vulnerability management</span></span>](next-gen-threat-and-vuln-mgt.md)
+- [<span data-ttu-id="8c039-155">Risikobasierte Bedrohungs-& Sicherheitsrisikomanagement</span><span class="sxs-lookup"><span data-stu-id="8c039-155">Risk-based threat & vulnerability management</span></span>](next-gen-threat-and-vuln-mgt.md)
 
-- [<span data-ttu-id="6e01a-156">Sicherheitsrisiken in Ihrer Organisation</span><span class="sxs-lookup"><span data-stu-id="6e01a-156">Vulnerabilities in your organization</span></span>](tvm-weaknesses.md)
+- [<span data-ttu-id="8c039-156">Sicherheitsrisiken in Ihrer Organisation</span><span class="sxs-lookup"><span data-stu-id="8c039-156">Vulnerabilities in your organization</span></span>](tvm-weaknesses.md)
