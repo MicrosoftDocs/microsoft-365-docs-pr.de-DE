@@ -1,7 +1,7 @@
 ---
 title: Erhalten von entdeckten Sicherheitsrisiken
-description: Ruft eine Sammlung von entdeckten Sicherheitsrisiken im Zusammenhang mit einer bestimmten Geräte-ID ab.
-keywords: apis, graph api, supported apis, get, list, file, information, discovered vulnerabilities, threat & Sicherheitsrisikomanagement api, Microsoft Defender for Endpoint tvm api
+description: Ruft eine Sammlung von ermittelten Sicherheitsrisiken im Zusammenhang mit einer bestimmten Geräte-ID ab.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Liste, Datei, Informationen, erkannte Sicherheitsrisiken, Api für Bedrohungen & Sicherheitsrisikomanagement, Microsoft Defender für Endpunkt-TVM-API
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 133a8525a2e561062a492f7148de97a77d37444e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: ac7a9ef932f2640bbc5325f0154c0ceb48ae3018
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934321"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772293"
 ---
 # <a name="get-discovered-vulnerabilities"></a>Erhalten von entdeckten Sicherheitsrisiken
 
@@ -30,26 +31,26 @@ ms.locfileid: "51934321"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API-Beschreibung
-Ruft eine Sammlung von entdeckten Sicherheitsrisiken im Zusammenhang mit einer bestimmten Geräte-ID ab.
+Ruft eine Sammlung von ermittelten Sicherheitsrisiken im Zusammenhang mit einer bestimmten Geräte-ID ab.
 
-## <a name="limitations"></a>Einschränkungen
-1. Die Tarifeinschränkungen für diese API sind 50 Anrufe pro Minute und 1500 Anrufe pro Stunde.
+## <a name="limitations"></a>Begrenzungen
+1. Die Rateneinschränkungen für diese API sind 50 Anrufe pro Minute und 1500 Anrufe pro Stunde.
 
 ## <a name="permissions"></a>Berechtigungen
 
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 
 Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |Vulnerability.Read.All | "Informationen zu Sicherheitslücken in Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | Vulnerability.Read | "Informationen zu Sicherheitslücken in Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
+Anwendung |Vulnerability.Read.All | "Informationen zu Sicherheitsrisiken und Sicherheitsrisikoverwaltung lesen"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Vulnerability.Read | "Informationen zu Sicherheitsrisiken und Sicherheitsrisikoverwaltung lesen"
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -69,7 +70,7 @@ Empty
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich ist, gibt sie 200 OK mit den ermittelten Sicherheitsrisikoinformationen im Textkörper zurück.
+Wenn die Methode erfolgreich ist, wird 200 OK mit den ermittelten Sicherheitsrisikoinformationen im Text zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 
@@ -109,5 +110,5 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Risikobasiertes Bedrohungs- & Sicherheitsrisikomanagement](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Risikobasiertes Bedrohungs- & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Sicherheitsrisiken in Ihrer Organisation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)

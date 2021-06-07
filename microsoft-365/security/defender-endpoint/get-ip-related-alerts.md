@@ -1,7 +1,7 @@
 ---
-title: Abrufen der IP-bezogenen Benachrichtigungs-API
-description: Abrufen einer Sammlung von Warnungen im Zusammenhang mit einer bestimmten IP-Adresse mithilfe von Microsoft Defender for Endpoint
-keywords: apis, graph api, supported apis, get, ip, related, alerts
+title: API zum Abrufen von IP-bezogenen Warnungen
+description: Abrufen einer Sammlung von Warnungen im Zusammenhang mit einer bestimmten IP-Adresse mithilfe von Microsoft Defender für Endpunkt
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, IP, im Zusammenhang, Warnungen
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,15 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: dbcde70b32f9a10280dd43e98c5a237a0027a33c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: a12ae502702b7fc9f69b01cd67857003258c20f2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166734"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770121"
 ---
-# <a name="get-ip-related-alerts-api"></a>Abrufen der IP-bezogenen Benachrichtigungs-API
+# <a name="get-ip-related-alerts-api"></a>API zum Abrufen von IP-bezogenen Warnungen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,22 +31,22 @@ ms.locfileid: "51166734"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API-Beschreibung
-Ruft eine Auflistung von Warnungen im Zusammenhang mit einer bestimmten IP-Adresse ab.
+Ruft eine Sammlung von Warnungen im Zusammenhang mit einer bestimmten IP-Adresse ab.
 
 
-## <a name="limitations"></a>Einschränkungen
-1. Die Tarifeinschränkungen für diese API sind 100 Anrufe pro Minute und 1500 Anrufe pro Stunde.
+## <a name="limitations"></a>Begrenzungen
+1. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Defender for Endpoint APIs](apis-intro.md)
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Defender für Endpunkt-APIs](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
@@ -56,8 +57,8 @@ Delegiert (Geschäfts-, Schul- oder Unikonto) | Alert.ReadWrite | "Warnungen les
 
 >[!Note]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
->- Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Daten anzeigen" (Weitere Informationen finden Sie unter [Erstellen](user-roles.md) und Verwalten von Rollen)
->- Die Antwort umfasst nur Warnungen, die Geräten zugeordnet sind und auf die der Benutzer basierend auf den Gerätegruppeneinstellungen Zugriff hat (weitere Informationen finden Sie unter [Erstellen](machine-groups.md) und Verwalten von Gerätegruppen).
+>- Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Daten anzeigen" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
+>- Die Antwort enthält nur Warnungen, die Geräten zugeordnet sind, auf die der Benutzer zugriff hat, basierend auf Gerätegruppeneinstellungen (weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```
@@ -75,7 +76,7 @@ Authorization | String | Bearer {token}. **Erforderlich**.
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn erfolgreich und IP vorhanden ist – 200 OK mit Liste [der](alerts.md) Benachrichtigungsentitäten im Textkörper. Wenn IP nicht vorhanden ist – 404 Nicht gefunden.
+Wenn erfolgreich und IP vorhanden – 200 OK mit Liste der Warnungsentitäten im Textkörper. [](alerts.md) Wenn ip nicht vorhanden – 404 Nicht gefunden.
 
 
 ## <a name="example"></a>Beispiel

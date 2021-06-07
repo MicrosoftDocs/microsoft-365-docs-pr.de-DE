@@ -1,7 +1,7 @@
 ---
 title: Auflisten von Geräten nach Software
-description: Rufen Sie eine Liste der Geräte ab, auf der diese Software installiert ist.
-keywords: apis, graph api, supported apis, get, list devices, devices list, list devices by software, Microsoft Defender for Endpoint tvm api
+description: Rufen Sie eine Liste der Geräte ab, auf denen diese Software installiert ist.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Listengeräte, Geräteliste, Listengeräte nach Software, Microsoft Defender für Endpunkt-TVM-API
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,20 +14,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: ff0bb9a6f17b8d4dc6432292ec98743d3eaf952c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e1adf28823d6b86417c32578a89480958946c50d
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929097"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770554"
 ---
 # <a name="list-devices-by-software"></a>Auflisten von Geräten nach Software
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -35,15 +37,15 @@ ms.locfileid: "51929097"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Rufen Sie eine Liste der Geräteverweise ab, auf die diese Software installiert ist.
+Rufen Sie eine Liste der Geräteverweise ab, auf denen diese Software installiert ist.
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for Details.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs.](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung | Software.Read.All | "Informationen zur Software zur Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | Software.Read | "Informationen zur Software zur Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
+Anwendung | Software.Read.All | "Informationen zur Bedrohungs- und Sicherheitsrisikoverwaltungssoftware lesen"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Software.Read | "Informationen zur Bedrohungs- und Sicherheitsrisikoverwaltungssoftware lesen"
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```
@@ -60,7 +62,7 @@ GET /api/Software/{Id}/machineReferences
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich ist, werden 200 OK und eine Liste der Geräte zurückgegeben, deren Software im Textkörper installiert ist. 
+Wenn die Methode erfolgreich ist, werden 200 OK und eine Liste der Geräte mit der im Textkörper installierten Software zurückgegeben. 
 
 
 ## <a name="example"></a>Beispiel
@@ -100,5 +102,5 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 ```
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Risikobasiertes Bedrohungs- & Sicherheitsrisikomanagement](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Softwareinventar & Sicherheitsrisiko](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Risikobasiertes Bedrohungs- & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Softwareinventarisierung von Sicherheitsrisiken &](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)

@@ -1,7 +1,7 @@
 ---
-title: Abrufen der Dateiinformations-API
-description: Erfahren Sie, wie Sie die API Dateiinformationen abrufen verwenden, um eine Datei nach Sha1- oder Sha256- oder MD5-ID in Microsoft Defender for Endpoint zu erhalten.
-keywords: apis, graph api, supported apis, get, file, information, sha1, sha256, md5
+title: Api zum Abrufen von Dateiinformationen
+description: Erfahren Sie, wie Sie die API zum Abrufen von Dateiinformationen verwenden, um eine Datei nach Sha1, Sha256 oder MD5-Bezeichner in Microsoft Defender für Endpunkt abzurufen.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Datei, Informationen, sha1, sha256, md5
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,15 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 181d808b465bfbf26eeff48a564e231b00a9a77f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: b7877fb2d9b616b487d23befd0f0af35ce2c0753
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166566"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770291"
 ---
-# <a name="get-file-information-api"></a>Abrufen der Dateiinformations-API
+# <a name="get-file-information-api"></a>Api zum Abrufen von Dateiinformationen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +31,7 @@ ms.locfileid: "51166566"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,15 +39,15 @@ ms.locfileid: "51166566"
 
 
 ## <a name="api-description"></a>API-Beschreibung
-Ruft eine [Datei nach bezeichner](files.md) Sha1 oder Sha256 ab
+Ruft eine [Datei](files.md) anhand des Bezeichners "Sha1" oder "Sha256" ab.
 
 
-## <a name="limitations"></a>Einschränkungen
-1. Die Tarifeinschränkungen für diese API sind 100 Anrufe pro Minute und 1500 Anrufe pro Stunde.
+## <a name="limitations"></a>Begrenzungen
+1. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
@@ -55,7 +56,7 @@ Delegiert (Geschäfts-, Schul- oder Unikonto) | File.Read.All |    "Alle Dateipr
 
 >[!Note]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
->- Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Daten anzeigen" (Weitere Informationen finden Sie unter [Erstellen](user-roles.md) und Verwalten von Rollen)
+>- Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Daten anzeigen" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```
@@ -73,7 +74,7 @@ Authorization | String | Bearer {token}. **Erforderlich**.
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn erfolgreich und Datei vorhanden ist – 200 OK mit der [Dateientität](files.md) im Textkörper. Wenn die Datei nicht vorhanden ist – 404 Nicht gefunden.
+Wenn erfolgreich und Datei vorhanden – 200 OK mit der [Dateientität](files.md) im Textkörper. Wenn datei nicht vorhanden – 404 Nicht gefunden.
 
 
 ## <a name="example"></a>Beispiel

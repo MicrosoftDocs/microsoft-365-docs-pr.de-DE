@@ -1,7 +1,7 @@
 ---
-title: Abrufen der SAS-URI-API des Pakets
-description: Verwenden Sie diese API, um einen URI zu erhalten, der das Herunterladen eines Untersuchungspakets ermöglicht.
-keywords: apis, graph api, supported apis, get package, sas, uri
+title: Abrufen der SAS-URI-PAKET-API
+description: Verwenden Sie diese API, um einen URI abzurufen, der das Herunterladen eines Untersuchungspakets ermöglicht.
+keywords: APIs, Graph-API, unterstützte APIs, Paket abrufen, SAS, URI
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,31 +14,33 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: b9c8877e341e7438532ab3eb3f7af4c2a9114af7
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 054db1766cdab3aa5b49da4940dcdddfe6086434
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893341"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770685"
 ---
-# <a name="get-package-sas-uri-api"></a>Abrufen der SAS-URI-API des Pakets
+# <a name="get-package-sas-uri-api"></a>Abrufen der SAS-URI-PAKET-API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 ## <a name="api-description"></a>API-Beschreibung
-Einen URI erhalten, der das Herunterladen eines [Untersuchungspakets ermöglicht.](collect-investigation-package.md)
+Rufen Sie einen URI ab, der das Herunterladen eines [Untersuchungspakets](collect-investigation-package.md)ermöglicht.
 
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Access the Microsoft Defender for Endpoint APIs](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
@@ -47,8 +49,8 @@ Delegiert (Geschäfts-, Schul- oder Unikonto) | Machine.CollectForensics | "Fore
 
 >[!Note]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
->- Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Warnungsuntersuchung" (Weitere Informationen finden Sie unter [Erstellen](user-roles.md) und Verwalten von Rollen)
->- Der Benutzer muss basierend auf den Gerätegruppeneinstellungen Zugriff auf das Gerät haben (weitere Informationen finden Sie unter [Erstellen](machine-groups.md) und Verwalten von Gerätegruppen).
+>- Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Warnungsuntersuchung" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
+>- Der Benutzer muss basierend auf den Gerätegruppeneinstellungen Zugriff auf das Gerät haben (Weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -69,7 +71,7 @@ Empty
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich ist, gibt sie den Antwortcode 200, Ok mit dem Objekt zurück, das den Link zum Paket im Parameter "value" enthält. Dieser Link ist für sehr kurze Zeit gültig und sollte sofort zum Herunterladen des Pakets in einen lokalen Speicher verwendet werden.
+Bei erfolgreicher Ausführung gibt die Methode den Antwortcode 200,Ok mit dem Objekt zurück, das den Link zum Paket im Parameter "value" enthält. Dieser Link ist sehr kurz gültig und sollte sofort zum Herunterladen des Pakets in einen lokalen Speicher verwendet werden.
 
 
 ## <a name="example"></a>Beispiel

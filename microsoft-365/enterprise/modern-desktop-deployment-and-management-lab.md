@@ -15,20 +15,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Erfahren Sie mehr über das Deployment Lab Kit für Windows und Office und wo Sie darauf zugreifen.
-ms.openlocfilehash: da51e0e3509ac2be60b9961dc2a0532d29f4f137
-ms.sourcegitcommit: cc9e3cac6af23f20d7cc5ac6fc6f6e01bc3cc5c5
+ms.openlocfilehash: bb73c303e1266a7d19b3578fb01b849b5e96990f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52736348"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770673"
 ---
 # <a name="windows-10-and-office-365-deployment-lab-kit"></a>Windows 10 und Office 365 Deployment Lab Kit
 
-Das Windows 10- und Office 365 Deployment Lab Kit ist so konzipiert, dass Sie Ihre Bereitstellung und Verwaltung von Desktops, auf denen Windows 10 Enterprise und Microsoft 365 Apps for Enterprise ausgeführt werden, planen, testen und überprüfen können. Die Labore im Kit umfassen Microsoft Endpoint Configuration Manager, Desktop Analytics, das anpassungstool Office, OneDrive, Windows Autopilot und vieles mehr.
+Das Windows 10- und Office 365 Deployment Lab Kit soll Ihnen helfen, Die Bereitstellung und Verwaltung von Desktops mit Windows 10 Enterprise und Microsoft 365 Apps for Enterprise zu planen, zu testen und zu überprüfen. Die Labore im Kit umfassen Microsoft Endpoint Configuration Manager, Desktop Analytics, das Office-Anpassungstool, OneDrive, Windows Autopilot und vieles mehr.
 
 Dieses Kit wird dringend für Organisationen empfohlen, die sich auf Windows 8.1 Upgrades auf Windows 10 vorbereiten. Dies gilt auch, wenn Sie derzeit Windows 10, Microsoft 365 Apps for Enterprise (früher Office 365 ProPlus) oder Office 2019 verwenden. Als isolierte Umgebung eignet sich das resultierende Labor ideal für die Untersuchung von Bereitstellungstoolupdates und das Testen der automatisierungsbezogenen Bereitstellung.
 
-[Herunterladen des Deployment Lab Kit für Windows und Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
+[Laden Sie das Windows 10- und Office 365 Deployment Lab Kit herunter.](https://www.microsoft.com/evalcenter/evaluate-lab-kit)
 
 ## <a name="a-complete-lab-environment"></a>Vollständige Übungsumgebung
 
@@ -36,7 +36,7 @@ Das Kit bietet Ihnen eine automatisch bereitgestellte virtuelle Lab-Umgebung, ei
 
   - NEU! Windows 10 Enterprise, Version 21H1
   - Windows 7 Enterprise
-  - NEU! Microsoft Endpoint Configuration Manager, Version 2103*
+  - NEU! Microsoft Endpoint Configuration Manager, Version 2103
   - Windows Assessment and Deployment Kit für Windows 10
   - Microsoft Deployment Toolkit
   - Microsoft Application Virtualization (App-V)
@@ -44,7 +44,7 @@ Das Kit bietet Ihnen eine automatisch bereitgestellte virtuelle Lab-Umgebung, ei
   - Windows Server 
   - Microsoft SQL Server 
 
-Das resultierende Labor ist so konzipiert, dass es mit Testversionen für Folgendes verbunden werden kann: 
+Das resultierende Lab ist so konzipiert, dass es mit Testversionen für Folgendes verbunden wird: 
 
   - Microsoft 365 E5
   - Microsoft 365 Apps for Enterprise
@@ -65,7 +65,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 - Optimieren Windows 10 Updatebereitstellung   
 - Wartung Windows 10 mithilfe von Gruppenrichtlinien
 - Wartung Windows 10 mithilfe von Microsoft Intune   
-- Wartungs-Windows 10 mit Configuration Manager   
+- Wartung Windows 10 mit Configuration Manager   
 - Wartung Microsoft 365 Apps for Enterprise mit configuration Manager   
 - Wartung Microsoft 365 Apps for Enterprise mit Intune  
 - Sicherheit und Compliance   
@@ -88,7 +88,7 @@ Detaillierte Übungsleitfäden führen Sie durch mehrere Bereitstellungs- und Ve
 - Lokal verwaltete Bereitstellung    
 - Microsoft 365 Apps for Enterprise Bereitstellung auf Nicht-AD-verbundenen Geräten 
 - Enterprise der verwalteten Bereitstellung mit configuration Manager
-- Enterprise verwaltete Bereitstellung mithilfe von Microsoft Intune  
+- Enterprise verwaltete Bereitstellung mit Microsoft Intune  
 - Branchenbereitstellung und -verwaltung mit Microsoft Intune
 - Bereitstellen von Microsoft Teams
 

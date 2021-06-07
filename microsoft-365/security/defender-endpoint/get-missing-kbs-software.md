@@ -1,7 +1,7 @@
 ---
-title: Fehlende KBs nach Software-ID erhalten
-description: Ruft fehlende Sicherheitsupdates nach Software-ID ab
-keywords: apis, graph api, supported apis, get, list, file, information, software id, threat & Sicherheitsrisikomanagement api, Microsoft Defender for Endpoint tvm api
+title: Abrufen fehlender KBs nach Software-ID
+description: Ruft fehlende Sicherheitsupdates anhand der Software-ID ab.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Liste, Datei, Informationen, Software-ID, Api für Bedrohungen & Sicherheitsrisikomanagement, Microsoft Defender für Endpunkt-TVM-API
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,35 +14,37 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 25ac8ce2c9fb17b2576f86dae1da984865b19018
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: d9218ad447f926f0086801036277323e7c1efb4c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933889"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770559"
 ---
-# <a name="get-missing-kbs-by-software-id"></a>Fehlende KBs nach Software-ID erhalten
+# <a name="get-missing-kbs-by-software-id"></a>Abrufen fehlender KBs nach Software-ID
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Ruft fehlende KBs (Sicherheitsupdates) nach Software-ID ab
+Ruft fehlende KBs (Sicherheitsupdates) anhand der Software-ID ab.
 
 ## <a name="permissions"></a>Berechtigungen
 
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for Details.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs.](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung   |   Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |Software.Read.All |   "Informationen zur Software zur Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | Software.Read |   "Informationen zur Software zur Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
+Anwendung |Software.Read.All |   "Informationen zur Bedrohungs- und Sicherheitsrisikoverwaltungssoftware lesen"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Software.Read |   "Informationen zur Bedrohungs- und Sicherheitsrisikoverwaltungssoftware lesen"
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -62,7 +64,7 @@ Empty
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich ist, gibt sie 200 OK zurück, und die angegebene Software enthält keine KB-Daten im Textkörper.
+Wenn die Methode erfolgreich ist, wird 200 OK zurückgegeben, wobei der angegebenen Software kb-Daten im Text fehlen.
 
 ## <a name="example"></a>Beispiel
 
@@ -100,5 +102,5 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Risikobasiertes Bedrohungs- & Sicherheitsrisikomanagement](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Softwareinventar & Sicherheitsrisiko](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Risikobasiertes Bedrohungs- & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Softwareinventarisierung von Sicherheitsrisiken &](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)

@@ -1,7 +1,7 @@
 ---
 title: Computerressourcentyp
-description: Erfahren Sie mehr über die Methoden und Eigenschaften des Ressourcentyps Machine in Microsoft Defender for Endpoint.
-keywords: apis, supported apis, get, machines
+description: Erfahren Sie mehr über die Methoden und Eigenschaften des Machine-Ressourcentyps in Microsoft Defender für Endpunkt.
+keywords: APIs, unterstützte APIs, abrufen, Computer
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 43a136bb3432adcd47589d29aa5de8f8f6299ba8
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 7b95fc487a8ee3e82e0f215b34aa564e063534af
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683067"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772077"
 ---
 # <a name="machine-resource-type"></a>Computerressourcentyp
 
@@ -30,7 +31,7 @@ ms.locfileid: "52683067"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,42 +43,42 @@ ms.locfileid: "52683067"
 
 Methode|Rückgabetyp |Beschreibung
 :---|:---|:---
-[Auflisten von Computern](get-machines.md) | [Computersammlung](machine.md) | Listet den [Satz von Computerentitäten](machine.md) in der Organisation auf.
-[Computer erhalten](get-machine-by-id.md) | [machine](machine.md) | Einen Computer [nach](machine.md) seiner Identität erhalten.
-[Angemeldete Benutzer erhalten](get-machine-log-on-users.md) | [Benutzer](user.md)sammlung | Get the set of [User](user.md) that logged on the [machine](machine.md).
-[Erhalten verwandter Warnungen](get-machine-related-alerts.md) | [Warnung](alerts.md) Sammlung | Get the set of [alert](alerts.md) entities that were raised on the [machine](machine.md).
-[Erhalten von installierter Software](get-installed-software.md) | [Softwaresammlung](software.md) | Ruft eine Sammlung installierter Software im Zusammenhang mit einer bestimmten Computer-ID ab.
-[Erhalten von entdeckten Sicherheitsrisiken](get-discovered-vulnerabilities.md) | [Vulnerability-Auflistung](vulnerability.md) | Ruft eine Sammlung von entdeckten Sicherheitsrisiken im Zusammenhang mit einer bestimmten Computer-ID ab.
+[Auflisten von Computern](get-machines.md) | [Computersammlung](machine.md) | Listet [](machine.md) den Satz von Computerentitäten in der Organisation auf.
+[Computer abrufen](get-machine-by-id.md) | [Maschine](machine.md) | Rufen Sie einen [Computer](machine.md) anhand seiner Identität ab.
+[Angemeldete Benutzer abrufen](get-machine-log-on-users.md) | [Benutzersammlung](user.md) | Rufen Sie die Gruppe von [Benutzern](user.md) ab, die sich auf dem [Computer](machine.md)angemeldet haben.
+[Abrufen verwandter Warnungen](get-machine-related-alerts.md) | [Warnung](alerts.md) Sammlung | Rufen Sie den Satz von Warnungsentitäten ab, die auf dem [Computer](machine.md)ausgelöst wurden. [](alerts.md)
+[Erhalten von installierter Software](get-installed-software.md) | [Softwaresammlung](software.md) | Ruft eine Auflistung der installierten Software im Zusammenhang mit einer bestimmten Computer-ID ab.
+[Erhalten von entdeckten Sicherheitsrisiken](get-discovered-vulnerabilities.md) | [Sammlung von Sicherheitsrisiken](vulnerability.md) | Ruft eine Sammlung von ermittelten Sicherheitsrisiken im Zusammenhang mit einer bestimmten Computer-ID ab.
 [Erhalten von Sicherheitsempfehlungen](get-security-recommendations.md) | [Empfehlungssammlung](recommendation.md) | Ruft eine Sammlung von Sicherheitsempfehlungen im Zusammenhang mit einer bestimmten Computer-ID ab.
-[Hinzufügen oder Entfernen von Computertags](add-or-remove-machine-tags.md) | [machine](machine.md) | Hinzufügen oder Entfernen eines Tags zu einem bestimmten Computer.
-[Suchen von Computern nach IP](find-machines-by-ip.md) | [Computersammlung](machine.md) | Suchen von Computern, die mit IP gesehen werden.
+[Hinzufügen oder Entfernen von Computertags](add-or-remove-machine-tags.md) | [Maschine](machine.md) | Hinzufügen oder Entfernen eines Tags zu einem bestimmten Computer.
+[Suchen von Computern nach IP](find-machines-by-ip.md) | [Computersammlung](machine.md) | Suchen sie Computer, die mit IP angezeigt werden.
 [Suchen von Computern nach Tag](find-machines-by-tag.md) | [Computersammlung](machine.md) | Suchen von Computern nach [Tag](machine-tags.md).
-[Fehlende KBs erhalten](get-missing-kbs-machine.md) | KB-Auflistung | Erhalten einer Liste fehlender KBs, die der Computer-ID zugeordnet sind
-[Setzen des Gerätewerts](set-device-value.md)| [Computersammlung](machine.md) | Legen Sie [den Wert eines Geräts .](tvm-assign-device-value.md)
+[Fehlende KBs erhalten](get-missing-kbs-machine.md) | KB-Auflistung | Abrufen einer Liste der fehlenden KBs, die der Computer-ID zugeordnet sind
+[Setzen des Gerätewerts](set-device-value.md)| [Computersammlung](machine.md) | Legen Sie den [Wert eines Geräts](tvm-assign-device-value.md)fest.
 
 ## <a name="properties"></a>Eigenschaften
 
 Eigenschaft |   Typ   |   Beschreibung
 :---|:---|:---
-id | Zeichenfolge | [Computeridentität.](machine.md)
-computerDnsName | Zeichenfolge | [vollqualifizierten](machine.md) Namen des Computers.
-firstSeen | DateTimeOffset | Datum und Uhrzeit des ersten [Zeitpunkts, an dem der](machine.md) Computer von Microsoft Defender for Endpoint beobachtet wurde.
+id | String | [Computeridentität.](machine.md)
+computerDnsName | String | [Computer](machine.md) vollqualifizierte Name.
+firstSeen | DateTimeOffset | Das erste Datum und die erste Uhrzeit, an dem der [Computer](machine.md) von Microsoft Defender für Endpunkt beobachtet wurde.
 lastSeen | DateTimeOffset |Uhrzeit und Datum des letzten empfangenen vollständigen Geräteberichts. Ein Gerät sendet in der Regel alle 24 Stunden einen vollständigen Bericht.
-osPlatform | Zeichenfolge | Betriebssystemplattform.
-osProcessor | Zeichenfolge | Betriebssystemprozessor. Verwenden Sie stattdessen die osArchitecture-Eigenschaft.
+osPlatform | String | Betriebssystemplattform.
+osProcessor | String | Betriebssystemprozessor. Verwenden Sie stattdessen die osArchitecture-Eigenschaft.
 Version | String | Betriebssystemversion.
 osBuild | Nullable long | Buildnummer des Betriebssystems.
-lastIpAddress | Zeichenfolge | Letzte IP auf der lokalen NIC auf dem [Computer](machine.md).
-lastExternalIpAddress | Zeichenfolge | Letzte IP, über die [der Computer](machine.md) auf das Internet zugegriffen hat.
-healthStatus | Enum | [Zustand des](machine.md) Computers. Mögliche Werte sind: "Active", "Inactive", "ImpairedCommunication", "NoSensorData", "NoSensorDataImpairedCommunication" und "Unknown". 
-rbacGroupName | Zeichenfolge | Computergruppenname.
-riskScore | Nullable Enum | Risikobewertung, wie von Microsoft Defender for Endpoint ausgewertet. Mögliche Werte sind: "None", "Informational", "Low", "Medium" und "High".
-exposureScore | Nullable Enum | [Belichtungsergebnis,](tvm-exposure-score.md) wie von Microsoft Defender for Endpoint ausgewertet. Mögliche Werte sind: "None", "Low", "Medium" und "High".
-aadDeviceId | Guid für nullierbare Darstellung | AAD-Geräte-ID (wenn [der Computer](machine.md) mit AAD verbunden ist).
-machineTags | String collection | Satz von [Computertags.](machine.md)
-exposureLevel | Nullable Enum | Die Belichtungsstufe wird von Microsoft Defender for Endpoint ausgewertet. Mögliche Werte sind: "None", "Low", "Medium" und "High".
-deviceValue | Nullable Enum | Der [Wert des Geräts](tvm-assign-device-value.md). Mögliche Werte sind: "Normal", "Niedrig" und "Hoch".
-ipAddresses | IpAddress-Auflistung | Satz von ***IpAddress-Objekten.*** Weitere [Informationen finden Sie unter Abrufen der Computer-API](get-machines.md).
-osArchitecture | Zeichenfolge | Betriebssystemarchitektur. Mögliche Werte sind: "32-Bit", "64-Bit". Verwenden Sie diese Eigenschaft anstelle von osProcessor.
+lastIpAddress | String | Last IP on local NIC on the [machine](machine.md).
+lastExternalIpAddress | String | Letzte IP, über die der [Computer](machine.md) auf das Internet zugegriffen hat.
+healthStatus | Enum | [](machine.md) Computerintegritätsstatus. Mögliche Werte sind: "Active", "Inactive", "ImpairedCommunication", "NoSensorData", "NoSensorDataImpairedCommunication" und "Unknown". 
+rbacGroupName | String | Computergruppenname.
+riskScore | Nullable Enum | Risikobewertung gemäß Bewertung durch Microsoft Defender für Endpunkt. Mögliche Werte sind: "None", "Informational", "Low", "Medium" und "High".
+exposureScore | Nullable Enum | Von Microsoft Defender für Endpunkt ausgewertete [Belichtungsbewertung.](tvm-exposure-score.md) Mögliche Werte sind: 'None', 'Low', 'Medium' und 'High'.
+aadDeviceId | Guid für nullfähige Darstellung | AAD-Geräte-ID (wenn [der Computer](machine.md) AAD beigetreten ist).
+machineTags | String collection | Satz [](machine.md) von Computertags.
+exposureLevel | Nullable Enum | Belichtungsstufe, die von Microsoft Defender für Endpunkt ausgewertet wird. Mögliche Werte sind: 'None', 'Low', 'Medium' und 'High'.
+deviceValue | Nullable Enum | Der [Wert des Geräts.](tvm-assign-device-value.md) Mögliche Werte sind: 'Normal', 'Low' und 'High'.
+Ipaddresses | IpAddress-Sammlung | Satz von ***IpAddress-Objekten.*** Siehe "Abrufen der [Computer-API".](get-machines.md)
+osArchitecture | String | Betriebssystemarchitektur. Mögliche Werte sind: "32-Bit", "64-Bit". Verwenden Sie diese Eigenschaft anstelle von osProcessor.
 
 

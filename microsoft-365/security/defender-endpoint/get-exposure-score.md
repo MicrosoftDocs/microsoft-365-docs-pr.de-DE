@@ -1,7 +1,7 @@
 ---
 title: Erhalten des Gefährdungsscores
-description: Ruft die belichtungsergebnis der Organisation ab.
-keywords: apis, graph api, supported apis, get, exposure score, organizational exposure score
+description: Ruft die Belichtungsbewertung der Organisation ab.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Belichtungsbewertung, Belichtungsbewertung der Organisation
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: c6b3f965c7abb1cb9208f0bfa157c1fd8aa3f891
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 9da87dcb64f8c62966382e3a2888f03c49149a09
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500710"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770429"
 ---
 # <a name="get-exposure-score"></a>Erhalten des Gefährdungsscores
 
@@ -30,7 +31,7 @@ ms.locfileid: "51500710"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,16 +40,16 @@ ms.locfileid: "51500710"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Ruft die belichtungsergebnis der Organisation ab.
+Ruft die Belichtungsbewertung der Organisation ab.
 
 ## <a name="permissions"></a>Berechtigungen
 
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 
 Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung | Score.Read.All | "Bewertung zur Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | Score.Read | "Bewertung zur Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
+Anwendung | Score.Read.All | "Bewertung der Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Score.Read | "Bewertung der Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -68,7 +69,7 @@ Empty
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich ist, gibt sie 200 OK zurück, mit den Belichtungsdaten im Antworttext.
+Wenn die Methode erfolgreich ist, wird 200 OK mit den Belichtungsdaten im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 
@@ -85,7 +86,7 @@ GET https://api.securitycenter.microsoft.com/api/exposureScore
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 >[!NOTE]
->Die hier gezeigte Antwortliste kann aus Kürze gekürzt werden. 
+>Die hier gezeigte Antwortliste ist möglicherweise aus Platzgründen abgeschnitten. 
 
 ```json
 {
@@ -98,5 +99,5 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Risikobasiertes Bedrohungs- & Sicherheitsrisikomanagement](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Gefährdungsrisiko & Gefährdungsrisikos](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-exposure-score)
+- [Risikobasiertes Bedrohungs- & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Bewertung der Gefährdung durch Bedrohungen &](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-exposure-score)

@@ -15,12 +15,12 @@ ms.custom:
 description: .
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0f42da077ca84341824fad01fcb23eae976336a1
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
-ms.translationtype: HT
+ms.openlocfilehash: 6b96d3d656a89e7102550d09a2f5052fdb5ae818
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51204204"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52792956"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Automatische externe E-Mail-Weiterleitung in Microsoft 365 steuern
 
@@ -33,16 +33,14 @@ ms.locfileid: "51204204"
 
 Als Administrator haben Sie möglicherweise Unternehmensanforderungen, um automatisch weitergeleitete Nachrichten an externe Empfänger (Empfänger außerhalb Ihrer Organisation) einzuschränken oder zu kontrollieren. Die E-Mail-Weiterleitung kann nützlich sein, aber auch ein Sicherheitsrisiko aufgrund der möglichen Veröffentlichung von Informationen darstellen. Angreifer könnten diese Informationen nutzen, um Ihr Unternehmen oder Ihre Partner anzugreifen.
 
-
 Die folgenden Arten der automatischen Weiterleitung sind in Microsoft 365 verfügbar:
 
 - Benutzer können [Posteingangsregeln](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) konfigurieren, um Nachrichten automatisch an externe Absender weiterzuleiten (absichtlich oder als Folge eines kompromittierten Kontos).
-
 - Administratoren können eine [Postfach-Weiterleitung](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) (auch _SMTP-Weiterleitung_ genannt) konfigurieren, um Nachrichten automatisch an externe Empfänger weiterzuleiten. Der Administrator kann wählen, ob er Nachrichten einfach weiterleiten oder Kopien der weitergeleiteten Nachrichten in dem Postfach behalten möchte.
 
 Sie können ausgehende Spamfilterrichtlinien verwenden, um die automatische Weiterleitung an externe Empfänger zu steuern. Es stehen drei Einstellungen zur Verfügung:
 
-- **Automatisch**: Die automatische externe Weiterleitung ist gesperrt. Die interne automatische Weiterleitung von Nachrichten funktioniert weiterhin. Dies ist die Standardeinstellung.
+- **Automatisch – vom System gesteuert:** Die automatische externe Weiterleitung wird blockiert. Die interne automatische Weiterleitung von Nachrichten funktioniert weiterhin. Dies ist die Standardeinstellung.
 - **Ein**: Die automatische externe Weiterleitung ist erlaubt und nicht eingeschränkt.
 - **Aus**: Die automatische externe Weiterleitung ist deaktiviert und führt zu einem Unzustellbarkeitsbericht (auch als NDR oder Unzustellbarkeitsnachricht bezeichnet) an den Absender.
 
@@ -61,13 +59,11 @@ Eine Anleitung zur Konfiguration dieser Einstellungen finden Sie unter [Konfigur
 Als Administrator haben Sie möglicherweise bereits andere Steuerelemente konfiguriert, um die automatische E-Mail-Weiterleitung zuzulassen oder zu blockieren. Zum Beispiel:
 
 - [Remotedomänen](/exchange/mail-flow-best-practices/remote-domains/remote-domains), um die automatische E-Mail-Weiterleitung an einige oder alle externen Domänen zuzulassen oder zu blockieren.
-
 - Bedingungen und Aktionen in Exchange [E-Mailflussregeln](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) (auch Transportregeln genannt), um automatisch weitergeleitete Nachrichten an externe Empfänger zu erkennen und zu blockieren.
 
 Die Einstellungen für die Remotedomäne und die E-Mailflussregeln sind unabhängig von den Einstellungen für ausgehende Spamfilterrichtlinien. Zum Beispiel:
 
 - Sie erlauben die automatische Weiterleitung für eine Remotedomäne, blockieren aber die automatische Weiterleitung in den ausgehenden Spamfilterrichtlinien. In diesem Beispiel werden automatisch weitergeleitete Nachrichten blockiert.
-
 - Sie erlauben die automatische Weiterleitung in den ausgehenden Spamfilterrichtlinien, aber Sie verwenden E-Mailflussregeln oder Einstellungen für Remotedomänen, um automatisch weitergeleitete E-Mails zu blockieren. In diesem Beispiel blockieren die E-Mailflussregeln oder die Remotedomäneneinstellungen automatisch weitergeleitete Nachrichten.
 
 Mit dieser Funktionsunabhängigkeit können Sie (z. B.) die automatische Weiterleitung für ausgehende Spamfilterrichtlinien zulassen, aber die externen Domänen, an die Benutzer Nachrichten weiterleiten können, über Remotedomänen steuern.

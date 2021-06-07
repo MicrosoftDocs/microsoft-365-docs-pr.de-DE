@@ -1,7 +1,7 @@
 ---
-title: Abrufen der domänenbezogenen Benachrichtigungs-API
-description: Erfahren Sie, wie Sie die API Zum Abrufen domänenbezogener Warnungen verwenden, um Warnungen im Zusammenhang mit einer bestimmten Domänenadresse in Microsoft Defender for Endpoint abzurufen.
-keywords: apis, graph api, supported apis, get, domain, related, alerts
+title: API zum Abrufen domänenbezogener Warnungen
+description: Erfahren Sie, wie Sie die API zum Abrufen domänenbezogener Warnungen verwenden, um Warnungen im Zusammenhang mit einer bestimmten Domänenadresse in Microsoft Defender für Endpunkt abzurufen.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Domäne, verwandte, Warnungen
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,15 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: f8de54072c0b0ebef69b8e5586fee058b971c51f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: c5de779566f1aa8e53da10b9aa5bceb92f5a0a3c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166572"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772257"
 ---
-# <a name="get-domain-related-alerts-api"></a>Abrufen der domänenbezogenen Benachrichtigungs-API
+# <a name="get-domain-related-alerts-api"></a>API zum Abrufen domänenbezogener Warnungen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +31,7 @@ ms.locfileid: "51166572"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,16 +39,16 @@ ms.locfileid: "51166572"
 
 
 ## <a name="api-description"></a>API-Beschreibung
-Ruft eine Auflistung von [Warnungen im](alerts.md) Zusammenhang mit einer bestimmten Domänenadresse ab.
+Ruft eine Sammlung von [Warnungen](alerts.md) im Zusammenhang mit einer bestimmten Domänenadresse ab.
 
 
-## <a name="limitations"></a>Einschränkungen
-1. Sie können Warnungen abfragen, die zuletzt entsprechend ihrem konfigurierten Aufbewahrungszeitraum aktualisiert wurden.
-2. Die Tarifeinschränkungen für diese API sind 100 Anrufe pro Minute und 1500 Anrufe pro Stunde.
+## <a name="limitations"></a>Begrenzungen
+1. Sie können nach Warnungen abfragen, die zuletzt gemäß Ihrem konfigurierten Aufbewahrungszeitraum aktualisiert wurden.
+2. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
@@ -58,8 +59,8 @@ Delegiert (Geschäfts-, Schul- oder Unikonto) | Alert.ReadWrite | "Warnungen les
 
 >[!Note]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
->- Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Daten anzeigen" (Weitere Informationen finden Sie unter [Erstellen](user-roles.md) und Verwalten von Rollen)
->- Die Antwort umfasst nur Warnungen, die Geräten zugeordnet sind und auf die der Benutzer basierend auf den Gerätegruppeneinstellungen Zugriff hat (weitere Informationen finden Sie unter [Erstellen](machine-groups.md) und Verwalten von Gerätegruppen).
+>- Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Daten anzeigen" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
+>- Die Antwort enthält nur Warnungen, die Geräten zugeordnet sind, auf die der Benutzer zugriff hat, basierend auf Gerätegruppeneinstellungen (weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```http
@@ -76,7 +77,7 @@ GET /api/domains/{domain}/alerts
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn erfolgreich und Domäne vorhanden ist – 200 OK mit Liste der [Benachrichtigungsentitäten.](alerts.md) Wenn domäne nicht vorhanden ist - 404 Nicht gefunden.
+Wenn erfolgreich und Domäne vorhanden – 200 OK mit Liste der Warnungsentitäten. [](alerts.md) Wenn Domäne nicht vorhanden – 404 Nicht gefunden.
 
 
 ## <a name="example"></a>Beispiel

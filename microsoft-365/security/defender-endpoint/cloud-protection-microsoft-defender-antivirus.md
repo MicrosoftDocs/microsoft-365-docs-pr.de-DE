@@ -1,7 +1,7 @@
 ---
 title: Schutz über die Cloud und Microsoft Defender Antivirus
-description: Erfahren Sie mehr über den von der Cloud zugestellten Schutz und Microsoft Defender Antivirus
-keywords: Microsoft Defender Antivirus, Technologien der nächsten Generation, av der nächsten Generation, maschinelles Lernen, Antischantischung, Sicherheit, Defender, Cloud, Cloud-basierten Schutz
+description: Erfahren Sie mehr über den über die Cloud bereitgestellten Schutz und Microsoft Defender Antivirus
+keywords: Microsoft Defender Antivirus, Technologien der nächsten Generation, Av der nächsten Generation, maschinelles Lernen, Antischadsoftware, Sicherheit, Defender, Cloud, über die Cloud bereitgestellter Schutz
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -14,82 +14,56 @@ manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: d95f8dec433f29dea0fd5f7f718f34f571b790d4
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.date: 06/03/2021
+ms.openlocfilehash: ce54f8205e62b953022fd2518caac058f4f9bab2
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274808"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788799"
 ---
-# <a name="use-next-generation-technologies-in-microsoft-defender-antivirus-through-cloud-delivered-protection"></a>Verwenden von Technologien der nächsten Generation in Microsoft Defender Antivirus cloudbasiertem Schutz
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
+# <a name="cloud-delivered-protection-and-microsoft-defender-antivirus"></a>Schutz über die Cloud und Microsoft Defender Antivirus
 
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 - Microsoft Defender Antivirus
 
-Technologien der nächsten Generation von Microsoft in Microsoft Defender Antivirus bieten nahezu sofortigen, automatisierten Schutz vor neuen und neuen Bedrohungen. Um neue Bedrohungen dynamisch zu erkennen, arbeiten diese Technologien mit großen Gruppen von verbundenen Daten im Microsoft Intelligent Security Graph und leistungsfähigen AI-Systemen (Artificial Intelligence) zusammen, die von fortschrittlichen maschinellen Lernmodellen gesteuert werden.  
+Technologien der nächsten Generation in Microsoft Defender Antivirus nahezu sofortigen automatisierten Schutz vor neuen und neuen Bedrohungen bieten. Um neue Bedrohungen dynamisch zu erkennen, arbeiten Technologien der nächsten Generation mit großen Gruppen von verbundenen Daten in den Microsoft Intelligent Security-Graph und leistungsstarken KI-Systemen (Künstliche Intelligenz), die von fortschrittlichen Machine Learning-Modellen gesteuert werden. Microsoft Defender Antivirus verwendet mehrere Erkennungs- und Verhinderungstechnologien, um präzisen, echtzeitbasierten und intelligenten Schutz zu bieten. 
 
-Microsoft Defender Antivirus verwendet mehrere Erkennungs- und Verhinderungstechnologien, um präzisen, echtzeitgenauen und intelligenten Schutz zu bieten. Lernen Sie die erweiterten Technologien kennen, die im Kern des [Microsoft Defender for Endpoint-Schutzes der nächsten Generation zu finden sind.](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)
-![Liste der Microsoft Defender Antiviren-Module](images/microsoft-defender-atp-next-generation-protection-engines.png)  
+> [!TIP]
+> Möchten Sie mehr erfahren? Weitere Informationen zu den erweiterten Technologien im [Kern des Schutzes der nächsten Generation von Microsoft Defender für Endpunkt](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)finden Sie im Blogbeitrag.
 
-Um die Leistung und Geschwindigkeit dieser Technologien der nächsten Generation zu nutzen, funktioniert Microsoft Defender Antivirus nahtlos mit Microsoft Cloud Services. Diese Cloudschutzdienste, die auch als Microsoft Advanced Protection Service (MAPS) bezeichnet werden, verbessern den standardmäßigen Echtzeitschutz und bieten die wohl beste Antivirenabwehr. 
+Microsoft Defender Antivirus funktioniert nahtlos mit Microsoft Cloud Services. Diese Cloud-Schutzdienste, auch als Microsoft Advanced Protection Service (MAPS) bezeichnet, verbessern den standardmäßigen Echtzeitschutz und stellen die wohl beste Antivirenschutzlösung bereit. 
 
->[!NOTE]
->Der Microsoft Defender Antivirus cloud service ist ein Mechanismus für die Bereitstellung aktualisierten Schutzes für Ihr Netzwerk und Ihre Endpunkte. Obwohl er als Clouddienst bezeichnet wird, ist er nicht nur Schutz für in der Cloud gespeicherte Dateien, sondern verwendet verteilte Ressourcen und maschinelles Lernen, um Ihren Endpunkten Schutz mit einer Geschwindigkeit zu bieten, die wesentlich schneller ist als herkömmliche Security Intelligence-Updates.
+> [!NOTE]
+> Der Microsoft Defender Antivirus Clouddienst ist ein Mechanismus für die Bereitstellung eines aktualisierten Schutzes für Ihr Netzwerk und Ihre Endpunkte. Als Clouddienst ist es nicht nur Schutz für in der Cloud gespeicherte Dateien; Stattdessen verwendet der Clouddienst verteilte Ressourcen und maschinelles Lernen, um Schutz für Ihre Endpunkte in einer Geschwindigkeit bereitzustellen, die viel schneller als herkömmliche Security Intelligence-Updates ist.
 
-Mit cloudbasiertem Schutz bieten Technologien der nächsten Generation eine schnelle Identifizierung neuer Bedrohungen, manchmal sogar noch bevor ein einzelner Computer infiziert wird. Sehen Sie sich das folgende Video über Microsoft AI und Microsoft Defender Antivirus in Aktion an: 
+Mit dem über die Cloud bereitgestellten Schutz bieten Technologien der nächsten Generation eine schnelle Identifizierung neuer Bedrohungen, manchmal sogar, bevor ein einzelner Computer infiziert wird. Die folgenden Blogbeiträge veranschaulichen, wie der über die Cloud bereitgestellte Schutz funktioniert:
+
+- [Warum Microsoft Defender Antivirus am häufigsten im Unternehmen bereitgestellt wird](https://www.microsoft.com/security/blog/2018/03/22/why-windows-defender-antivirus-is-the-most-deployed-in-the-enterprise) 
+- [Die Verhaltensüberwachung in Kombination mit maschinellem Lernen beeinträchtigt eine massive Coin-Mining-Kampagne](https://www.microsoft.com/security/blog/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign)
+- [Wie künstliche Intelligenz einen "Emotet"-Ausbruch stoppte](https://www.microsoft.com/security/blog/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)
+- [Detonieren eines schlechten Diktierens: Microsoft Defender Antivirus und mehrstufige Machine Learning-Abwehr](https://www.microsoft.com/security/blog/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses)
+- [Microsoft Defender Antivirus Cloudschutzdienst: Erweiterte Echtzeitschutzmaßnahmen gegen noch nie zuvor gesehene Schadsoftware](https://www.microsoft.com/security/blog/2017/07/18/windows-defender-antivirus-cloud-protection-service-advanced-real-time-defense-against-never-before-seen-malware) 
  
-<iframe 
-src="https://www.microsoft.com/videoplayer/embed/RE1Yu4B" width="768" height="432" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+## <a name="how-to-get-cloud-delivered-protection"></a>So erhalten Sie über die Cloud bereitgestellten Schutz 
 
-Um zu verstehen, wie Technologien der nächsten Generation die Bereitstellungszeit des Schutzes über die Cloud kürzen, sehen Sie sich das folgende Video an: 
- 
-<iframe 
-src="https://videoplayercdn.osi.office.net/embed/c2f20f59-ca56-4a7b-ba23-44c60bc62c59" width="768" height="432" allowFullScreen="true" frameBorder="0" scrolling="no"></iframe>
+Der über die Cloud bereitgestellte Schutz ist standardmäßig aktiviert. Möglicherweise müssen Sie es jedoch erneut aktivieren, wenn es im Rahmen früherer Organisationsrichtlinien deaktiviert wurde. Weitere Informationen finden Sie unter Aktivieren des über [die Cloud bereitgestellten Schutzes.](enable-cloud-protection-microsoft-defender-antivirus.md)
 
-In den folgenden Blogbeiträgen finden Sie ausführliche Schutzberichte zu Cloudschutz und Microsoft AI: 
+Organisationen, die Windows 10 E5 ausführen, können auch Dynamische Intelligence-Notfallupdates nutzen, die nahezu in Echtzeit Schutz vor neuen Bedrohungen bieten. Wenn Sie den über die Cloud bereitgestellten Schutz aktivieren, können Korrekturen für Schadsoftwareprobleme innerhalb von Minuten über die Cloud bereitgestellt werden, anstatt auf das nächste Update zu warten. [Konfigurieren Sie Microsoft Defender Antivirus, um automatisch neue Schutzupdates basierend auf Berichten von unserem Clouddienst zu erhalten.](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates)
 
-- [Warum Microsoft Defender Antivirus die am häufigsten im Unternehmen bereitgestellte Lösung ist](https://www.microsoft.com/security/blog/2018/03/22/why-windows-defender-antivirus-is-the-most-deployed-in-the-enterprise) 
-- [Die Verhaltensüberwachung in Kombination mit maschinellem Lernen verdorben eine massive Dofoil-Minen-Kampagne](https://www.microsoft.com/security/blog/2018/03/07/behavior-monitoring-combined-with-machine-learning-spoils-a-massive-dofoil-coin-mining-campaign)
-- [Wie künstliche Intelligenz einen Emotet-Ausbruch beendet hat](https://www.microsoft.com/security/blog/2018/02/14/how-artificial-intelligence-stopped-an-emotet-outbreak)
-- [Detonieren eines schlechten Hasen: Microsoft Defender Antivirus und mehrschichtige Machine Learning-Abwehr](https://www.microsoft.com/security/blog/2017/12/11/detonating-a-bad-rabbit-windows-defender-antivirus-and-layered-machine-learning-defenses)
-- [Microsoft Defender Antivirus Cloud Protection Service: Erweiterte Echtzeitabwehr vor noch nie gesehener Schadsoftware](https://www.microsoft.com/security/blog/2017/07/18/windows-defender-antivirus-cloud-protection-service-advanced-real-time-defense-against-never-before-seen-malware) 
- 
-## <a name="get-cloud-delivered-protection"></a>In der Cloud zugestellten Schutz erhalten 
+> [!TIP]
+> Besuchen Sie die Windows Defender Testground-Website unter [demo.wd.microsoft.com,](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) um zu bestätigen, dass das Feature funktioniert, und sehen Sie, wie es funktioniert.
 
-Der in der Cloud zugestellte Schutz ist standardmäßig aktiviert. Möglicherweise müssen Sie sie jedoch erneut aktivieren, wenn sie im Rahmen vorheriger Organisationsrichtlinien deaktiviert wurde.
+## <a name="next-steps"></a>Nächste Schritte
 
-Organisationen, Windows 10 E5 ausführen, können auch dynamische Notfallupdates nutzen, die nahezu Echtzeitschutz vor neuen Bedrohungen bieten. Wenn Sie den in der Cloud zugestellten Schutz aktivieren, können Korrekturen für Schadsoftwareprobleme innerhalb von Minuten über die Cloud übermittelt werden, anstatt auf das nächste Update zu warten.
+1. [Aktivieren Sie den über die Cloud bereitgestellten Schutz.](enable-cloud-protection-microsoft-defender-antivirus.md) Sie können den über die Cloud bereitgestellten Schutz mit Microsoft Endpoint Manager (die jetzt Microsoft Endpoint Configuration Manager und Microsoft Intune umfasst), Gruppenrichtlinien oder PowerShell-Cmdlets aktivieren.
 
->[!TIP]
->Sie können auch die Windows Defender Testground-Website unter [demo.wd.microsoft.com,](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) um zu bestätigen, dass das Feature funktioniert und wie es funktioniert.
+2. [Geben Sie die über die Cloud bereitgestellte Schutzebene an.](specify-cloud-protection-level-microsoft-defender-antivirus.md) Sie können das von der Cloud angebotene Schutzniveau mithilfe von Microsoft Endpoint Manager oder Gruppenrichtlinien angeben. Die Schutzebene wirkt sich auf die Menge der informationen aus, die für die Cloud freigegeben wurden, und die Art und Weise, wie aggressiv neue Dateien blockiert werden.
 
-In der folgenden Tabelle werden die Unterschiede beim cloudbasierten Schutz zwischen den letzten Versionen von Windows Configuration Manager beschrieben.
+3. [Konfigurieren und Überprüfen von Netzwerkverbindungen für Microsoft Defender Antivirus.](configure-network-connections-microsoft-defender-antivirus.md) Es gibt bestimmte Microsoft-URLs, mit denen Ihr Netzwerk und Ihre Endpunkte eine Verbindung herstellen können müssen, damit der über die Cloud bereitgestellte Schutz effektiv funktioniert. In diesem Artikel werden die URLs aufgeführt, die über Firewall- oder Netzwerkfilterregeln zulässig sein sollten, sowie Anweisungen zur Bestätigung, dass Ihr Netzwerk ordnungsgemäß im über die Cloud bereitgestellten Schutz registriert ist.
 
-|Betriebssystemversion oder Dienstanwendung |Bezeichnung des Cloudschutzdiensts  |Berichtsebene (MAPS-Mitgliedschaftsebene)  |Timeoutzeitraum für Cloudblocks  |
-|---------|---------|---------|---------|
-|Windows 8.1 (Gruppenrichtlinie)     |Microsoft Advanced Protection Service   |Basic, Advanced   |Nein         |
-|Windows 10, Version 1607 (Gruppenrichtlinie)  |Microsoft Advanced Protection Service      |Fortgeschritten         |Nein         |
-|Windows 10, Version 1703 oder höher (Gruppenrichtlinie)      |Cloudbasierter Schutz      |Fortgeschritten         |Konfigurierbar         |
-|System Center 2012 Configuration Manager  |      Nicht zutreffend         |Abhängig von Windows Version         |Nicht konfigurierbar |
-|Microsoft Endpoint Manager (Current Branch)         |Cloudschutzdienst         |Abhängig von Windows Version          |Konfigurierbar         |
-|Microsoft Intune     |Microsoft Advanced Protection Service         |Abhängig von Windows Version         |Konfigurierbar         |
+4. [Konfigurieren Sie das Feature "Bei erster Anzeige blockieren".](configure-block-at-first-sight-microsoft-defender-antivirus.md) Das Feature "Bei erster Anzeige blockieren" kann neue Schadsoftware innerhalb von Sekunden blockieren, ohne stundenlang auf herkömmliche Security Intelligence warten zu müssen. Sie können sie mithilfe Microsoft Endpoint Manager oder mithilfe von Gruppenrichtlinien aktivieren und konfigurieren.
 
-Sie können auch Microsoft Defender Antivirus so konfigurieren, dass neue Schutzupdates basierend auf [Berichten von unserem Clouddienst automatisch empfangen werden.](manage-event-based-updates-microsoft-defender-antivirus.md#cloud-report-updates)
-
-
-## <a name="tasks"></a>Aufgaben
-
-- [Aktivieren des in der Cloud übermittelten Schutzes](enable-cloud-protection-microsoft-defender-antivirus.md). Sie können den in der Cloud übermittelten Schutz mit Microsoft Endpoint Configuration Manager, Gruppenrichtlinien, Microsoft Intune und PowerShell-Cmdlets aktivieren.
-
-- [Geben Sie die in der Cloud zugestellte Schutzstufe an.](specify-cloud-protection-level-microsoft-defender-antivirus.md) Sie können das Von der Cloud gebotene Schutzniveau mit Gruppenrichtlinien und Microsoft Endpoint Configuration Manager. Die Schutzstufe wirkt sich auf die Menge der in der Cloud freigegebenen Informationen und darauf aus, wie aggressiv neue Dateien blockiert werden.
-
-- [Konfigurieren und Überprüfen von Netzwerkverbindungen für Microsoft Defender Antivirus.](configure-network-connections-microsoft-defender-antivirus.md) Es gibt bestimmte Microsoft-URLs, mit deren Netzwerk und Endpunkten eine Verbindung hergestellt werden kann, damit der von der Cloud zugestellte Schutz effektiv funktioniert. In diesem Artikel werden die URLs aufgeführt, die über Firewall- oder Netzwerkfilterregeln zulässig sein sollten, sowie Anweisungen zum Bestätigen, dass Ihr Netzwerk ordnungsgemäß für den cloudbasierten Schutz registriert ist.
-
-- [Konfigurieren Sie das Feature "Beim ersten Blick blockieren".](configure-block-at-first-sight-microsoft-defender-antivirus.md) Das Feature "Beim ersten Blick blockieren" kann neue Schadsoftware innerhalb von Sekunden blockieren, ohne stundenlang auf herkömmliche Sicherheitsintelligenz warten zu müssen. Sie können sie mit Microsoft Endpoint Manager und Gruppenrichtlinien aktivieren und konfigurieren.
-
-- [Konfigurieren Sie den Zeitraum für das Timeout für Cloudblocks.](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) Microsoft Defender Antivirus können die Ausführung verdächtiger Dateien blockieren, während sie unseren in der Cloud zugestellten Schutzdienst abfragen. Sie können den Zeitraum konfigurieren, für den die Datei nicht mit Microsoft Endpoint Manager und Gruppenrichtlinien ausgeführt werden kann.
+5. [Konfigurieren Des Cloudblock-Timeoutzeitraums.](configure-cloud-block-timeout-period-microsoft-defender-antivirus.md) Microsoft Defender Antivirus können die Ausführung verdächtiger Dateien blockieren, während sie unseren über die Cloud bereitgestellten Schutzdienst abfragen. Mit Microsoft Endpoint Manager oder Gruppenrichtlinien können Sie konfigurieren, wie viel Zeit die Ausführung der Datei verhindert wird.

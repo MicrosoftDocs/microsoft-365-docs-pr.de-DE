@@ -1,7 +1,7 @@
 ---
 title: Sicherheitsbewertung des Geräts erhalten
-description: Ruft die sicherheitse Bewertung des Organisationsgeräts ab.
-keywords: apis, graph api, supported apis, get, alerts, recent
+description: Ruft die Sicherheitsbewertung des Unternehmensgeräts ab.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Warnungen, zuletzt verwendet
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: db4682d0d2fccd7504eb46d9099a9783408cfb73
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: dd9def688619b6079d947cb76069aa0f77d768de
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570936"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52772305"
 ---
 # <a name="get-device-secure-score"></a>Sicherheitsbewertung des Geräts erhalten
 
@@ -30,25 +31,25 @@ ms.locfileid: "51570936"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-Ruft Ihre [Microsoft Secure Score für Geräte ab.](tvm-microsoft-secure-score-devices.md) Eine höhere Microsoft Secure Score für Geräte bedeutet, dass Ihre Endpunkte widerstandsfähiger gegen Cybersicherheitsangriffe sind. 
+Ruft Ihre [Microsoft-Sicherheitsbewertung für Geräte](tvm-microsoft-secure-score-devices.md)ab. Eine höhere Microsoft-Sicherheitsbewertung für Geräte bedeutet, dass Ihre Endpunkte stabiler vor Angriffen auf Cybersicherheitsbedrohungen sind. 
 
 ## <a name="permissions"></a>Berechtigungen
 
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for Details.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs.](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |   Score.Read.Alll |   "Bewertung zur Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | Score.Read | "Bewertung zur Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
+Anwendung |   Score.Read.Alll |   "Bewertung der Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Score.Read | "Bewertung der Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -68,7 +69,7 @@ Empty
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich ist, gibt sie 200 OK zurück, und das Gerät enthält sichere Bewertungsdaten im Antworttext.
+Wenn die Methode erfolgreich ist, wird 200 OK zurückgegeben, wobei die Daten der Geräte-Sicherheitsbewertung im Antworttext enthalten sind.
 
 ## <a name="example"></a>Beispiel
 
@@ -85,7 +86,7 @@ GET https://api.securitycenter.microsoft.com/api/configurationScore
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 >[!NOTE]
->Die hier gezeigte Antwortliste kann aus Kürze gekürzt werden. 
+>Die hier gezeigte Antwortliste ist möglicherweise aus Platzgründen abgeschnitten. 
 
 ```json
 {
@@ -97,4 +98,4 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [OData-Abfragen mit Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+- [OData-Abfragen mit Microsoft Defender für Endpunkt](exposed-apis-odata-samples.md)

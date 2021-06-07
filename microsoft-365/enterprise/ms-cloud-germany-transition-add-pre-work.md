@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
-ms.openlocfilehash: 66f23d33e9e55c432c33e9d90549d33ea42536db
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 244a784b0e28f9d5629f5af242a6cf8227abdb01
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651020"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770377"
 ---
 # <a name="pre-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Prä-Migrationsaktivitäten für die Migration von Microsoft Cloud Deutschland
 
@@ -98,16 +98,12 @@ Das OCCT kann jederzeit vor der Phase 9 auf Windows-Clients bereitgestellt werde
 
 ## <a name="active-directory-federation-services-ad-fs"></a>Active Directory-Verbunddienste (AD FS)
 
-<!-- before phase 4 -->
-
 **Gilt für**: Kunden, die AD FS lokal für die Authentifizierung von Benutzern verwenden, die eine Verbindung mit Microsoft Office 365 herstellen<br>
-**Bei Anwendung**: Jederzeit vor Beginn der Phase 4
+**Wann angewendet**: Jederzeit vor Beginn der Phase 2
 
 Lesen und Anwenden der [ADFS-Migrationsschritte](ms-cloud-germany-transition-add-adfs.md)
 
 ## <a name="sharepoint-online"></a>SharePoint Online
-
-<!-- before phase 4 -->
 
 **Gilt für**: Kunden, die SharePoint 2013 lokal verwenden<br>
 **Bei Anwendung**: Jederzeit vor Beginn der Phase 4
