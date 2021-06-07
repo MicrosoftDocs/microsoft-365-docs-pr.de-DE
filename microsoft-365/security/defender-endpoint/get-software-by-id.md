@@ -1,7 +1,7 @@
 ---
-title: Software nach Id herunterladen
+title: Software nach ID abrufen
 description: Ruft eine Liste der Belichtungsergebnisse nach Gerätegruppe ab.
-keywords: apis, graph api, supported apis, get, software, Microsoft Defender for Endpoint tvm api
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Software, Microsoft Defender für Endpunkt-TVM-API
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,20 +14,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 31203e83570dbeb2404c9f1578301b5d6c18223c
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 7e9e6b5e64099e7ab49fec624d83f13f18e6029c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934309"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769161"
 ---
-# <a name="get-software-by-id"></a>Software nach Id herunterladen
+# <a name="get-software-by-id"></a>Software nach ID abrufen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,12 +40,12 @@ ms.locfileid: "51934309"
 Ruft Softwaredetails nach ID ab.
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for Details.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs.](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung | Software.Read.All | "Informationen zur Software zur Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | Software.Read | "Informationen zur Software zur Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
+Anwendung | Software.Read.All | "Informationen zur Bedrohungs- und Sicherheitsrisikoverwaltungssoftware lesen"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Software.Read | "Informationen zur Bedrohungs- und Sicherheitsrisikoverwaltungssoftware lesen"
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```
@@ -60,7 +62,7 @@ GET /api/Software/{Id}
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich ist, gibt sie 200 OK mit den angegebenen Softwaredaten im Textkörper zurück. 
+Wenn die Methode erfolgreich ist, wird 200 OK mit den angegebenen Softwaredaten im Text zurückgegeben. 
 
 
 ## <a name="example"></a>Beispiel
@@ -93,5 +95,5 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 ```
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Risikobasiertes Bedrohungs- & Sicherheitsrisikomanagement](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Softwareinventar & Sicherheitsrisiko](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Risikobasiertes Bedrohungs- & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Softwareinventarisierung von Sicherheitsrisiken &](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)

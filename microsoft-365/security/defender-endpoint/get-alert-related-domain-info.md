@@ -1,7 +1,7 @@
 ---
 title: Erhalten von Informationen zu Benachrichtigungen zu Domänen
-description: Rufen Sie alle Domänen im Zusammenhang mit einer bestimmten Warnung mithilfe von Microsoft Defender for Endpoint ab.
-keywords: apis, graph api, supported apis, get alert information, alert information, related domain
+description: Rufen Sie alle Domänen im Zusammenhang mit einer bestimmten Warnung mit Microsoft Defender für Endpunkt ab.
+keywords: APIs, Graph-API, unterstützte APIs, Warnungsinformationen abrufen, Warnungsinformationen, verwandte Domäne
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,20 +14,21 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 0cb09b23df8243d970069d087976ddc79394b67d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: a5f3db65b42d8dc98c11f2ef2c3c5d509340e386
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200413"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771261"
 ---
-# <a name="get-alert-related-domain-information-api"></a>Abrufen der Benachrichtigungsdomäneninformations-API
+# <a name="get-alert-related-domain-information-api"></a>Api zum Abrufen von Domäneninformationen zu Warnungen
 
 **Gilt für:** 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,23 +39,23 @@ ms.locfileid: "51200413"
 Ruft alle Domänen im Zusammenhang mit einer bestimmten Warnung ab.
 
 
-## <a name="limitations"></a>Einschränkungen
-1. Sie können Warnungen abfragen, die zuletzt entsprechend ihrem konfigurierten Aufbewahrungszeitraum aktualisiert wurden.
-2. Die Tarifeinschränkungen für diese API sind 100 Anrufe pro Minute und 1500 Anrufe pro Stunde.
+## <a name="limitations"></a>Begrenzungen
+1. Sie können nach Warnungen abfragen, die zuletzt gemäß Ihrem konfigurierten Aufbewahrungszeitraum aktualisiert wurden.
+2. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 
 Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung | URL. Read.All | 'UrLs lesen'
-Delegiert (Geschäfts-, Schul- oder Unikonto) | URL. Read.All | 'UrLs lesen'
+Anwendung | Url. Read.All | "Lese-URLs"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Url. Read.All | "Lese-URLs"
 
 >[!Note]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
->- Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Daten anzeigen" (Weitere Informationen finden Sie unter [Erstellen](user-roles.md) und Verwalten von Rollen)
->- Der Benutzer muss auf das Gerät zugreifen können, das der Warnung zugeordnet ist, basierend auf den Gerätegruppeneinstellungen (Weitere Informationen finden Sie unter [Erstellen](machine-groups.md) und Verwalten von Gerätegruppen)
+>- Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Daten anzeigen" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
+>- Der Benutzer muss basierend auf den Gerätegruppeneinstellungen Zugriff auf das Gerät haben, das der Warnung zugeordnet ist (Weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```
@@ -72,7 +73,7 @@ Authorization | String | Bearer {token}. **Erforderlich**.
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn erfolgreich und Warnung und Domäne vorhanden sind – 200 OK. Wenn die Warnung nicht gefunden wurde – 404 Nicht gefunden.
+Wenn erfolgreich und Warnung und Domäne vorhanden – 200 OK. Wenn Warnung nicht gefunden – 404 Nicht gefunden.
 
 ## <a name="example"></a>Beispiel
 

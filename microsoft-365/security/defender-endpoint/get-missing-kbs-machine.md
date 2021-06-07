@@ -1,7 +1,7 @@
 ---
-title: Fehlende KBs nach Geräte-ID erhalten
-description: Ruft fehlende Sicherheitsupdates nach Geräte-ID ab
-keywords: apis, graph api, supported apis, get, list, file, information, device id, threat & Sicherheitsrisikomanagement api, Microsoft Defender for Endpoint tvm api
+title: Abrufen fehlender KBs nach Geräte-ID
+description: Ruft fehlende Sicherheitsupdates nach Geräte-ID ab.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Liste, Datei, Informationen, Geräte-ID, Bedrohungs-& Sicherheitsrisikomanagement-API, Microsoft Defender für Endpunkt-TVM-API
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,26 +14,28 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: aa22b90b95788d9f5a65d54c7a335a2e0f4c3091
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 97cad51938c4ff3498234dbf2e9d69fd48a52367
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933577"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771873"
 ---
-# <a name="get-missing-kbs-by-device-id"></a>Fehlende KBs nach Geräte-ID erhalten
+# <a name="get-missing-kbs-by-device-id"></a>Abrufen fehlender KBs nach Geräte-ID
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Ruft fehlende KBs (Sicherheitsupdates) nach Geräte-ID ab
+Ruft fehlende KBs (Sicherheitsupdates) nach Geräte-ID ab.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -53,7 +55,7 @@ Empty
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich ist, gibt sie 200 OK zurück, und auf dem angegebenen Gerät fehlen kb-Daten im Textkörper.
+Wenn die Methode erfolgreich ist, wird 200 OK zurückgegeben, wobei dem angegebenen Gerät kb-Daten im Text fehlen.
 
 ## <a name="example"></a>Beispiel
 
@@ -93,5 +95,5 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Risikobasiertes Bedrohungs- & Sicherheitsrisikomanagement](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Softwareinventar & Sicherheitsrisiko](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Risikobasiertes Bedrohungs- & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Softwareinventarisierung von Sicherheitsrisiken &](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)

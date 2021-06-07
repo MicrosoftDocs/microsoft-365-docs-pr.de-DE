@@ -1,7 +1,7 @@
 ---
 title: Softwaremethoden und -eigenschaften
-description: Ruft die aktuellsten Warnungen ab.
-keywords: apis, graph api, supported apis, get, alerts, recent
+description: Ruft die wichtigsten warnungen der letzten Zeit ab.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Warnungen, zuletzt verwendet
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 9bfec2c4e65a390189556c14347eaf17236fb95e
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 14291cbbba2272d268a8e79b6df7bd87992885db
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187198"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771403"
 ---
 # <a name="software-resource-type"></a>Softwareressourcentyp
 
@@ -30,9 +31,9 @@ ms.locfileid: "51187198"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -45,12 +46,12 @@ ms.locfileid: "51187198"
 
 Methode |Rückgabetyp |Beschreibung
 :---|:---|:---
-[Software auflisten](get-software.md) | Softwaresammlung | Listet das Inventar der Organisationssoftware auf.
-[Software nach ID erhalten](get-software-by-id.md) | Software | Erhalten Sie eine bestimmte Software nach ihrer Software-ID.
-[Softwareversionsverteilung auflisten](get-software-ver-distribution.md)| Verteilungssammlung | Listet die Softwareversionsverteilung nach Software-ID auf.
-[Auflisten von Computern nach Software](get-machines-by-software.md)| MachineRef-Auflistung | Rufen Sie eine Liste der Geräte ab, die der Software-ID zugeordnet sind.
-[Auflisten von Sicherheitsrisiken nach Software](get-vuln-by-software.md) | [Vulnerability-Auflistung](vulnerability.md) | Rufen Sie eine Liste der Sicherheitsrisiken ab, die der Software-ID zugeordnet sind.
-[Fehlende KBs erhalten](get-missing-kbs-software.md) | KB-Auflistung | Erhalten einer Liste fehlender KBs, die der Software-ID zugeordnet sind
+[Software auflisten](get-software.md) | Softwaresammlung | Auflisten des Softwarebestands der Organisation.
+[Software nach ID erhalten](get-software-by-id.md) | Software | Rufen Sie eine bestimmte Software anhand ihrer Software-ID ab.
+[Softwareversionsverteilung auflisten](get-software-ver-distribution.md)| Distributionssammlung | Auflisten der Softwareversionsverteilung nach Software-ID.
+[Auflisten von Computern nach Software](get-machines-by-software.md)| MachineRef-Sammlung | Rufen Sie eine Liste der Geräte ab, die der Software-ID zugeordnet sind.
+[Auflisten von Sicherheitsrisiken nach Software](get-vuln-by-software.md) | [Sammlung von Sicherheitsrisiken](vulnerability.md) | Rufen Sie eine Liste der Sicherheitsrisiken ab, die der Software-ID zugeordnet sind.
+[Fehlende KBs erhalten](get-missing-kbs-software.md) | KB-Auflistung | Abrufen einer Liste fehlender KBs, die der Software-ID zugeordnet sind
 
 ## <a name="properties"></a>Eigenschaften
 
@@ -59,8 +60,8 @@ Eigenschaft |   Typ   |   Beschreibung
 id | String | Software-ID
 Name | String | Softwarename
 Anbieter | String | Name des Softwareanbieters
-Schwächen | Long | Anzahl der erkannten Sicherheitsrisiken
-publicExploit | Boolescher Wert | Für einige der Sicherheitsrisiken ist ein öffentlicher Exploit vorhanden.
-activeAlert | Boolescher Wert | Dieser Software ist eine aktive Warnung zugeordnet.
+Schwächen | Long | Anzahl der entdeckten Sicherheitsrisiken
+publicExploit | Boolesch | Öffentliche Exploits sind für einige der Sicherheitsrisiken vorhanden
+activeAlert | Boolesch | Dieser Software ist eine aktive Warnung zugeordnet.
 exposedMachines | Long | Anzahl der verfügbar gemachten Geräte
-impactScore | Gleitkommawert mit doppelter Genauigkeit | Auswirkungen dieser Software auf die Belichtungswertung
+impactScore | Gleitkommawert mit doppelter Genauigkeit | Auswirkung dieser Software auf die Belichtungsbewertung

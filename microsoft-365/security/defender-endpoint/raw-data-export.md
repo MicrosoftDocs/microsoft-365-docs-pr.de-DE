@@ -1,7 +1,7 @@
 ---
-title: Streamen Microsoft 365 Defender-Ereignissen
-description: Informationen zum Konfigurieren von Microsoft 365 Defender zum Streamen von Advanced Hunting-Ereignissen an Event Hubs oder Azure-Speicherkonto
-keywords: Rohdatenexport, Streaming-API, API, Event Hubs, Azure-Speicher, Speicherkonto, Erweiterte Suche, Freigabe von Rohdaten
+title: Streamen des Microsoft Defender für Endpunkt-Ereignisses
+description: Erfahren Sie, wie Sie Microsoft Defender für Endpunkt so konfigurieren, dass Advanced Hunting-Ereignisse auf Event Hubs oder Azure-Speicherkonten gestreamt werden.
+keywords: Rohdatenexport, Streaming-API, API, Event Hubs, Azure Storage, Speicherkonto, Erweiterte Suche, Freigabe von Rohdaten
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,37 +16,39 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0c25ec8bc88a2714fb2f02ef8641c3eae700efe0
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.custom: api
+ms.openlocfilehash: 3e6d4df1c2c0f4934de1e8a54e8c1676aae230e3
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730690"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771621"
 ---
-# <a name="streaming-api"></a>Streaming-API
+# <a name="raw-data-streaming-api"></a>RAW-Datenstreaming-API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
+> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 
-## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Streamen von Advanced Hunting-Ereignissen an Event Hubs und/oder Azure-Speicherkonto.
+## <a name="stream-advanced-hunting-events-to-event-hubs-andor-azure-storage-account"></a>Streamen Von Advanced Hunting-Ereignissen an Event Hubs und/oder Azure-Speicherkonten.
 
-Microsoft 365 Defender unterstützt das Streaming aller ereignisse, die über [die erweiterte Suche](../defender/advanced-hunting-overview.md) verfügbar sind, an Event [Hubs](/azure/event-hubs/) und/oder [azure speicherkonto](/azure/event-hubs/).
+Defender für Endpunkt unterstützt das Streamen aller über die [erweiterte Suche](advanced-hunting-overview.md) verfügbaren Ereignisse an [Event Hubs](/azure/event-hubs/) und/oder [Azure-Speicherkonten.](/azure/event-hubs/)
 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4ga]
 
 
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 
 Thema | Beschreibung
 :---|:---
-[Streamen von Ereignissen an Azure Event Hubs](raw-data-export-event-hub.md)| Erfahren Sie, wie Sie die Streaming-API in Ihrem Mandanten aktivieren und Microsoft 365 Defender so konfigurieren, dass [Advanced Hunting](../defender/advanced-hunting-overview.md) zu Event Hubs gestreamt wird.
-[Streamen von Ereignissen an Ihr Azure-Speicherkonto](raw-data-export-storage.md)| Erfahren Sie, wie Sie die Streaming-API in Ihrem Mandanten aktivieren und Microsoft 365 Defender so konfigurieren, dass [Advanced Hunting](../defender/advanced-hunting-overview.md) auf Ihr Azure-Speicherkonto gestreamt wird.
+[Streamen von Microsoft Defender für Endpunkt-Ereignissen an Azure Event Hubs](raw-data-export-event-hub.md)| Erfahren Sie, wie Sie die Streaming-API in Ihrem Mandanten aktivieren und Defender für Endpunkt so konfigurieren, dass [die erweiterte Suche](advanced-hunting-overview.md) auf Event Hubs gestreamt wird.
+[Stream defender für Endpunkt-Ereignisse auf Ihr Azure-Speicherkonto](raw-data-export-storage.md)| Erfahren Sie, wie Sie die Streaming-API in Ihrem Mandanten aktivieren und Defender für Endpunkt so konfigurieren, dass [advanced Hunting](advanced-hunting-overview.md) auf Ihr Azure-Speicherkonto gestreamt wird.
 
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Übersicht über die erweiterte Suche](../defender/advanced-hunting-overview.md)
+- [Übersicht über die erweiterte Suche](advanced-hunting-overview.md)
 - [Dokumentation zu Azure Event Hubs](/azure/event-hubs/)
 - [Azure Storage Kontodokumentation](/azure/storage/common/storage-account-overview)

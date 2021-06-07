@@ -1,7 +1,7 @@
 ---
 title: Auflisten aller Empfehlungen
-description: Ruft eine Liste aller Sicherheitsempfehlungen ab, die die Organisation betreffen.
-keywords: apis, graph api, supported apis, get, security recommendations, Microsoft Defender for Endpoint tvm api, Bedrohungs- und Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement api
+description: Ruft eine Liste aller Sicherheitsempfehlungen ab, die sich auf die Organisation auswirken.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Sicherheitsempfehlungen, Microsoft Defender für Endpunkt-TVM-API, Bedrohungs- und Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement-API
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 0cb0a1f8a42b419db960e5097667c335bf7f7877
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 0a58287a9bd48a4d19144a40674e1d3ad3bd256a
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935017"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768928"
 ---
 # <a name="list-all-recommendations"></a>Auflisten aller Empfehlungen
 
@@ -31,7 +32,7 @@ ms.locfileid: "51935017"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,15 +40,15 @@ ms.locfileid: "51935017"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Ruft eine Liste aller Sicherheitsempfehlungen ab, die die Organisation betreffen.
+Ruft eine Liste aller Sicherheitsempfehlungen ab, die sich auf die Organisation auswirken.
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for Details.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs.](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |   SecurityRecommendation.Read.All |   "Informationen zur Sicherheitsempfehlung zur Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | SecurityRecommendation.Read |  "Informationen zur Sicherheitsempfehlung zur Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
+Anwendung |   SecurityRecommendation.Read.All |   "Sicherheitsempfehlungen zu Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | SecurityRecommendation.Read |  "Sicherheitsempfehlungen zu Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```
@@ -65,7 +66,7 @@ Authorization | String | Bearer {token}. **Erforderlich**.
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich ist, gibt sie 200 OK mit der Liste der Sicherheitsempfehlungen im Textkörper zurück.
+Wenn die Methode erfolgreich ist, wird 200 OK mit der Liste der Sicherheitsempfehlungen im Text zurückgegeben.
 
 
 ## <a name="example"></a>Beispiel
@@ -120,6 +121,6 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 }
 ```
 ## <a name="see-also"></a>Siehe auch
-- [Risikobasiertes Bedrohungs- & Sicherheitsrisikomanagement](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Sicherheitsempfehlung & Bedrohungsrisikos](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Risikobasiertes Bedrohungs- & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Sicherheitsempfehlungen für Sicherheitsrisiken &](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
 

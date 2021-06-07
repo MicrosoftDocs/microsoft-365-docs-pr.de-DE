@@ -1,7 +1,7 @@
 ---
-title: Ressourcentyp "Untersuchung"
-description: Microsoft Defender for Endpoint Investigation-Entität.
-keywords: apis, graph api, supported apis, get, alerts, investigations
+title: Untersuchungsressourcentyp
+description: Microsoft Defender für Endpunkt-Untersuchungsentität.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Warnungen, Untersuchungen
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,15 +16,16 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 3872976717a5b472ab8d471db7eff9975dbc2258
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 252b273995d48d523604802c0c4365a613d86dbe
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587683"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771729"
 ---
-# <a name="investigation-resource-type"></a>Ressourcentyp "Untersuchung"
+# <a name="investigation-resource-type"></a>Untersuchungsressourcentyp
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,38 +33,38 @@ ms.locfileid: "51587683"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Stellen Sie eine Automatisierte Untersuchungsentität in Defender for Endpoint dar.
-<br> Weitere [Informationen finden Sie unter Übersicht](automated-investigations.md) über automatisierte Untersuchungen.
+Stellt eine Entität für automatische Untersuchung in Defender für Endpunkt dar.
+<br> Weitere Informationen finden Sie [unter "Übersicht über automatisierte Untersuchungen".](automated-investigations.md)
 
 ## <a name="methods"></a>Methoden
 Methode|Rückgabetyp |Beschreibung
 :---|:---|:---
-[Auflisten von Untersuchungen](get-investigation-collection.md) | Untersuchungssammlung | Sammlung von Investigation erhalten
-[Einzelne Untersuchung erhalten](get-investigation-object.md) | Untersuchungsentität | Ruft eine einzelne Investigation-Entität ab.
+[Auflisten von Untersuchungen](get-investigation-collection.md) | Untersuchungssammlung | Abrufen der Sammlung von Untersuchungen
+[Abrufen einer einzelnen Untersuchung](get-investigation-object.md) | Untersuchungsentität | Ruft eine einzelne Untersuchungsentität ab.
 [Untersuchung starten](initiate-autoir-investigation.md) | Untersuchungsentität | Startet die Untersuchung auf einem Gerät.
 
 
 ## <a name="properties"></a>Eigenschaften
 Eigenschaft |  Typ    |   Beschreibung
 :---|:---|:---
-id | String | Identität der Untersuchungsentität. 
-startTime | DateTime Nullable | Das Datum und die Uhrzeit, zu der die Untersuchung erstellt wurde. 
-endTime | DateTime Nullable | Datum und Uhrzeit des Abschlusses der Untersuchung. 
-cancelledBy | String | Die ID des Benutzers/der Anwendung, der diese Untersuchung abgebrochen hat. 
-investigationState | Enum | Der aktuelle Status der Untersuchung. Mögliche Werte sind: "Unknown", "Terminated", "SuccessfullyRemediated", "Benign", "Failed", "PartiallyRemediated", "Running", "PendingApproval", "PendingResource", "PartiallyInvestigated", "TerminatedByUser", "TerminatedBySystem", "Queued", "InnerFailure", "PreexistingAlert", "UnsupportedOs", "UnsupportedAlertType", "SuppressedAlert".
+id | String | Die Identität der Untersuchungsentität. 
+startTime | DateTime lässt Nullwerte zu | Datum und Uhrzeit der Erstellung der Untersuchung. 
+endTime | DateTime lässt Nullwerte zu | Datum und Uhrzeit des Abschlusses der Untersuchung. 
+cancelledBy | String | Die ID des Benutzers/der Anwendung, die diese Untersuchung abgebrochen hat. 
+investigationState | Enum | Der aktuelle Status der Untersuchung. Mögliche Werte sind: 'Unknown', 'Terminated', 'SuccessfullyRemediated', "Gutartig", "Fehlgeschlagen", "PartiallyRemediated", "Running", "PendingApproval", "PendingResource", "PartiallyInvestigated", "TerminatedByUser", "TerminatedBySystem", "Queued", "InnerFailure", "PreexistingAlert", "UnsupportedOs", "UnsupportedAlertType", "SuppressedAlert".
 statusDetails | String | Zusätzliche Informationen zum Untersuchungsstatus.
 machineId | String | Die ID des Geräts, auf dem die Untersuchung ausgeführt wird.
 computerDnsName | String | Der Name des Geräts, auf dem die Untersuchung ausgeführt wird.
 triggeringAlertId | String | Die ID der Warnung, die die Untersuchung ausgelöst hat.
 
 
-## <a name="json-representation"></a>Json-Darstellung
+## <a name="json-representation"></a>JSON-Darstellung
 
 ```json
 {

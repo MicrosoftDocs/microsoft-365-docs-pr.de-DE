@@ -1,7 +1,7 @@
 ---
-title: Abrufen von Warnungsinformationen über die ID-API
-description: Erfahren Sie, wie Sie mithilfe der API Abrufen von Warnungsinformationen nach ID eine bestimmte Warnung mithilfe ihrer ID in Microsoft Defender for Endpoint abrufen.
-keywords: apis, graph api, supported apis, get, alert, information, id
+title: Abrufen von Warnungsinformationen nach ID-API
+description: Erfahren Sie, wie Sie die API zum Abrufen von Warnungsinformationen nach ID verwenden, um eine bestimmte Warnung anhand ihrer ID in Microsoft Defender für Endpunkt abzurufen.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Warnung, Informationen, ID
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,22 +14,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: f9130b054ccea762e6c5cc4f2952bbfa82d24b83
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: b9de7645abc59849b3ca28f64904b0ba49d4eef5
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200425"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771897"
 ---
-# <a name="get-alert-information-by-id-api"></a>Abrufen von Warnungsinformationen über die ID-API
+# <a name="get-alert-information-by-id-api"></a>Abrufen von Warnungsinformationen nach ID-API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -37,16 +38,16 @@ ms.locfileid: "51200425"
 
 
 ## <a name="api-description"></a>API-Beschreibung
-Ruft eine bestimmte [Warnung nach](alerts.md) ihrer ID ab.
+Ruft eine bestimmte [Warnung](alerts.md) anhand ihrer ID ab.
 
 
-## <a name="limitations"></a>Einschränkungen
-1. Sie können Warnungen nach Dem konfigurierten Aufbewahrungszeitraum zuletzt aktualisieren.
-2. Die Tarifeinschränkungen für diese API sind 100 Anrufe pro Minute und 1500 Anrufe pro Stunde.
+## <a name="limitations"></a>Begrenzungen
+1. Sie können Benachrichtigungen erhalten, die nach Dem konfigurierten Aufbewahrungszeitraum zuletzt aktualisiert wurden.
+2. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
@@ -57,8 +58,8 @@ Delegiert (Geschäfts-, Schul- oder Unikonto) | Alert.ReadWrite | "Warnungen les
 
 >[!Note]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
->- Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Daten anzeigen" (Weitere Informationen finden Sie unter [Erstellen](user-roles.md) und Verwalten von Rollen)
->- Der Benutzer muss auf das Gerät zugreifen können, das der Warnung zugeordnet ist, basierend auf den Gerätegruppeneinstellungen (Weitere Informationen finden Sie unter [Erstellen](machine-groups.md) und Verwalten von Gerätegruppen)
+>- Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Daten anzeigen" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
+>- Der Benutzer muss basierend auf den Gerätegruppeneinstellungen Zugriff auf das Gerät haben, das der Warnung zugeordnet ist (Weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```
@@ -76,4 +77,4 @@ Authorization | String | Bearer {token}. **Erforderlich**.
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich ist, werden 200 OK und die Warnungsentität im Antworttext zurückgegeben. [](alerts.md) Wenn eine Warnung mit der angegebenen ID nicht gefunden wurde - 404 Nicht gefunden.
+Wenn die Methode erfolgreich ist, werden 200 OK und die [Warnungsentität](alerts.md) im Antworttext zurückgegeben. Wenn warnung mit der angegebenen ID nicht gefunden wurde – 404 Nicht gefunden.

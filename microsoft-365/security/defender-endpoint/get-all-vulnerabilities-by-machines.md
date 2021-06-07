@@ -1,7 +1,7 @@
 ---
-title: Alle Sicherheitsrisiken per Computer und Software erhalten
-description: Ruft eine Liste aller Sicherheitsrisiken ab, die die Organisation durch Computer und Software betreffen
-keywords: apis, graph api, supported apis, get, vulnerability information, Microsoft Defender for Endpoint tvm api
+title: Abrufen aller Sicherheitsrisiken nach Computer und Software
+description: Ruft eine Liste aller Sicherheitsrisiken ab, die sich auf die Organisation durch Computer und Software auswirken.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Sicherheitsrisikoinformationen, Microsoft Defender für Endpunkt-TVM-API
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 229c1f9e77a0cb85744155e82934b48dd63052b2
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 3aa58f3df4a4c3562cbd4dfbf6113c30816e2a0f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933409"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769197"
 ---
 # <a name="list-vulnerabilities-by-machine-and-software"></a>Auflisten von Sicherheitsrisiken nach Computer und Software
 
@@ -30,28 +31,28 @@ ms.locfileid: "51933409"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
 
-Ruft eine Liste aller Sicherheitsrisiken ab, die die Organisation pro [Computer und Software](machine.md) [betreffen.](software.md)
-- Wenn die Sicherheitsanfälligkeit über eine Behebungs-KB verfügt, wird sie in der Antwort angezeigt.
-- Unterstützt [OData V4-Abfragen](https://www.odata.org/documentation/).
-- Das OData ```$filter``` wird für alle Eigenschaften unterstützt.
+Ruft eine Liste aller Sicherheitsrisiken ab, die sich auf die Organisation pro [Computer](machine.md) und [Software](software.md)auswirken.
+- Wenn die Sicherheitsanfälligkeit über ein Beheben von KB verfügt, wird sie in der Antwort angezeigt.
+- Unterstützt [OData V4-Abfragen.](https://www.odata.org/documentation/)
+- OData ```$filter``` wird für alle Eigenschaften unterstützt.
 
 >[!Tip]
->Dies ist eine großartige API für [Power BI Integration.](api-power-bi.md)
+>Dies ist eine hervorragende API für [Power BI Integration.](api-power-bi.md)
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for Details.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs.](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |   Vulnerability.Read.All |    "Informationen zu Sicherheitslücken in Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | Vulnerability.Read |   "Informationen zu Sicherheitslücken in Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
+Anwendung |   Vulnerability.Read.All |    "Informationen zu Sicherheitsrisiken und Sicherheitsrisikoverwaltung lesen"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Vulnerability.Read |   "Informationen zu Sicherheitsrisiken und Sicherheitsrisikoverwaltung lesen"
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```
@@ -69,7 +70,7 @@ Authorization | String | Bearer {token}. **Erforderlich**.
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich ist, gibt sie 200 OK mit der Liste der Sicherheitsrisiken im Textkörper zurück.
+Wenn die Methode erfolgreich ist, wird 200 OK mit der Liste der Sicherheitsrisiken im Text zurückgegeben.
 
 
 ## <a name="example"></a>Beispiel

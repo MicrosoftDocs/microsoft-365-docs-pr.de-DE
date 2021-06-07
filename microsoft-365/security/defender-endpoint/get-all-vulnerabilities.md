@@ -1,7 +1,7 @@
 ---
-title: Alle Sicherheitsrisiken erhalten
-description: Ruft eine Liste aller Sicherheitsrisiken ab, die die Organisation betreffen
-keywords: apis, graph api, supported apis, get, vulnerability information, Microsoft Defender for Endpoint tvm api
+title: Abrufen aller Sicherheitsrisiken
+description: Ruft eine Liste aller Sicherheitsrisiken ab, die sich auf die Organisation auswirken.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Sicherheitsrisikoinformationen, Microsoft Defender für Endpunkt-TVM-API
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: bfce003f586c5bfa32d65c834bb244ac13f6cf31
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e9dd7e7d87e9343b0aae93e7ba47d89f9ed4bf41
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935089"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769005"
 ---
 # <a name="list-vulnerabilities"></a>Sicherheitsrisiken auflisten
 
@@ -30,7 +31,7 @@ ms.locfileid: "51935089"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,15 +39,15 @@ ms.locfileid: "51935089"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Ruft eine Liste aller Sicherheitsrisiken ab, die die Organisation betreffen.
+Ruft eine Liste aller Sicherheitsrisiken ab, die sich auf die Organisation auswirken.
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for Details.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs.](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |   Vulnerability.Read.All |    "Informationen zu Sicherheitslücken in Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | Vulnerability.Read |   "Informationen zu Sicherheitslücken in Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
+Anwendung |   Vulnerability.Read.All |    "Informationen zu Sicherheitsrisiken und Sicherheitsrisikoverwaltung lesen"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Vulnerability.Read |   "Informationen zu Sicherheitsrisiken und Sicherheitsrisikoverwaltung lesen"
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```
@@ -64,7 +65,7 @@ Authorization | String | Bearer {token}. **Erforderlich**.
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich ist, gibt sie 200 OK mit der Liste der Sicherheitsrisiken im Textkörper zurück.
+Wenn die Methode erfolgreich ist, wird 200 OK mit der Liste der Sicherheitsrisiken im Text zurückgegeben.
 
 
 ## <a name="example"></a>Beispiel
@@ -108,5 +109,5 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 ```
 
 ## <a name="see-also"></a>Siehe auch
-- [Risikobasiertes Bedrohungs- & Sicherheitsrisikomanagement](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Risikobasiertes Bedrohungs- & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
 - [Sicherheitsrisiken in Ihrer Organisation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)

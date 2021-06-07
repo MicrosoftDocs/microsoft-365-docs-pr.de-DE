@@ -1,6 +1,6 @@
 ---
-title: Abrufen von Microsoft Defender for Endpoint-Erkennungen mithilfe der REST-API
-description: Erfahren Sie, wie Sie einen Microsoft Defender for Endpoint-API-Endpunkt aufrufen, um Erkennungen im JSON-Format mithilfe der SIEM REST-API zu ziehen.
+title: Abrufen von Microsoft Defender für Endpunkterkennungen mithilfe der REST-API
+description: Erfahren Sie, wie Sie einen Microsoft Defender für Endpunkt-API-Endpunkt aufrufen, um Erkennungen mithilfe der SIEM-REST-API im JSON-Format abzurufen.
 keywords: Erkennungen, Pullerkennungen, Rest-API, Anforderung, Antwort
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,15 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 06028f64a3340aeeef52269bc8a1e739d18e6db7
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.custom: api
+ms.openlocfilehash: 6716b0eb029b49ec08cb52ebefc23e50b19036ca
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903118"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771669"
 ---
-# <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Abrufen von Microsoft Defender for Endpoint-Erkennungen mithilfe der SIEM REST-API
+# <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Abrufen von Microsoft Defender für Endpunkterkennungen mithilfe der SIEM-REST-API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,39 +33,39 @@ ms.locfileid: "51903118"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+>Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 >[!Note]
->- [Microsoft Defender for Endpoint Alert](alerts.md) besteht aus einer oder mehreren Erkennungen.
->- [Microsoft Defender for Endpoint Detection](api-portal-mapping.md) besteht aus dem verdächtigen Ereignis, das auf dem Gerät aufgetreten ist, und den zugehörigen Warnungsdetails.
->-Die Microsoft Defender for Endpoint Alert-API ist die neueste API für den Warnungsverbrauch und enthält eine detaillierte Liste verwandter Nachweise für jede Warnung. Weitere Informationen finden Sie unter [Warnungsmethoden und -eigenschaften und](alerts.md) [Warnungen auflisten.](get-alerts.md)
+>- [Microsoft Defender für Endpunkt-Warnung](alerts.md) besteht aus einer oder mehreren Erkennungen.
+>- [Die Microsoft Defender für Endpunkterkennung](api-portal-mapping.md) besteht aus dem verdächtigen Ereignis, das auf dem Gerät aufgetreten ist, und den zugehörigen Warnungsdetails.
+>-Die Microsoft Defender für Endpunkt-Warnungs-API ist die neueste API für die Benachrichtigungsnutzung und enthält eine detaillierte Liste der zugehörigen Nachweise für jede Warnung. Weitere Informationen finden Sie unter ["Warnungsmethoden und -eigenschaften"](alerts.md) und ["Warnungen auflisten".](get-alerts.md)
 
-Microsoft Defender for Endpoint unterstützt das OAuth 2.0-Protokoll zum Abrufen von Erkennungen aus der API.
+Microsoft Defender für Endpunkt unterstützt das OAuth 2.0-Protokoll, um Erkennungen aus der API abzurufen.
 
 Im Allgemeinen unterstützt das OAuth 2.0-Protokoll vier Arten von Flüssen:
-- Autorisierungszuteilungsfluss
+- Autorisierungserteilungsfluss
 - Impliziter Fluss
-- Ablauf von Clientanmeldeinformationen
-- Fluss des Ressourcenbesitzers
+- Clientanmeldeinformationsfluss
+- Ressourcenbesitzerablauf
 
-Weitere Informationen zu den OAuth-Spezifikationen finden Sie auf der [OAuth-Website](http://www.oauth.net).
+Weitere Informationen zu den OAuth-Spezifikationen finden Sie auf der [OAuth-Website.](http://www.oauth.net)
 
-Microsoft Defender for  Endpoint unterstützt den Autorisierungserteilungsfluss und den Clientanmeldeinformationenfluss, um Zugriff auf Pullerkennungen zu erhalten, mit Azure Active Directory (AAD) als Autorisierungsserver. 
+Microsoft Defender für Endpunkt unterstützt den _Autorisierungserteilungs-_ und _Clientanmeldeinformationsfluss,_ um Zugriff auf Pullerkennungen mit Azure Active Directory (AAD) als Autorisierungsserver zu erhalten.
 
-Der _Autorisierungszuteilungsfluss_ verwendet Benutzeranmeldeinformationen, um einen Autorisierungscode abzurufen, der dann zum Abrufen eines Zugriffstokens verwendet wird.
+Der _Autorisierungserteilungsfluss_ verwendet Benutzeranmeldeinformationen, um einen Autorisierungscode abzurufen, der dann zum Abrufen eines Zugriffstokens verwendet wird.
 
-Der _Clientanmeldeinformationenfluss_ verwendet Clientanmeldeinformationen, um sich bei der Microsoft Defender for Endpoint-Endpunkt-URL zu authentifizieren. Dieser Fluss eignet sich für Szenarien, in denen ein OAuth-Client Anforderungen an eine API erstellt, für die keine Benutzeranmeldeinformationen erforderlich sind.
+Der _Clientanmeldeinformationsfluss_ verwendet Clientanmeldeinformationen, um sich bei der Microsoft Defender für Endpunkt-Endpunkt-URL zu authentifizieren. Dieser Fluss eignet sich für Szenarien, in denen ein OAuth-Client Anforderungen an eine API erstellt, für die keine Benutzeranmeldeinformationen erforderlich sind.
 
-Verwenden Sie die folgende Methode in der Microsoft Defender for Endpoint-API, um Erkennungen im JSON-Format zu ziehen.
+Verwenden Sie die folgende Methode in der Microsoft Defender für Endpunkt-API, um Erkennungen im JSON-Format abzurufen.
 
 >[!NOTE]
->Microsoft Defender Security Center werden ähnliche Warnungserkennungen in einer einzelnen Warnung zusammengeführt. Diese API erstellt Warnungserkennungen in ihrer rohen Form basierend auf den von Ihnen festgelegten Abfrageparametern, sodass Sie Ihre eigene Gruppierung und Filterung anwenden können. 
+>Microsoft Defender Security Center führt ähnliche Warnungserkennungen in einer einzigen Warnung zusammen. Diese API ruft Warnungserkennungen in der rohen Form basierend auf den von Ihnen festgelegten Abfrageparametern ab, sodass Sie Ihre eigene Gruppierung und Filterung anwenden können. 
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
-- Bevor Sie den Microsoft Defender for Endpoint-Endpunkt zum Ziehen von Erkennungen aufrufen, müssen Sie die SIEM-Integrationsanwendung in Azure Active Directory (AAD) aktivieren. Weitere Informationen finden Sie unter [Aktivieren der SIEM-Integration in Microsoft Defender for Endpoint](enable-siem-integration.md).
+- Bevor Sie den Microsoft Defender für Endpunkt-Endpunkt aufrufen, um Erkennungen abzurufen, müssen Sie die SIEM-Integrationsanwendung in Azure Active Directory (AAD) aktivieren. Weitere Informationen finden Sie unter [Aktivieren der SIEM-Integration in Microsoft Defender für Endpunkt.](enable-siem-integration.md)
 
 - Notieren Sie sich die folgenden Werte bei der Registrierung Ihrer Azure-App. Sie benötigen diese Werte, um den OAuth-Fluss in Ihrem Dienst oder Ihrer Dämon-App zu konfigurieren:
   - App-ID (eindeutig für Ihre Anwendung)
@@ -73,11 +74,11 @@ Verwenden Sie die folgende Methode in der Microsoft Defender for Endpoint-API, u
     - Klicken Sie für diesen Wert auf **Endpunkte anzeigen** am unteren Rand des Azure-Verwaltungsportals auf der App-Seite. Der Endpunkt sieht wie `https://login.microsoftonline.com/{tenantId}/oauth2/token` aus.
 
 ## <a name="get-an-access-token"></a>Abrufen eines Zugriffstokens
-Vor dem Erstellen von Aufrufen an den Endpunkt müssen Sie ein Zugriffstoken erhalten.
+Bevor Sie Aufrufe an den Endpunkt erstellen, müssen Sie ein Zugriffstoken abrufen.
 
-Sie verwenden das Zugriffstoken für den Zugriff auf die geschützte Ressource, d. h. Erkennungen in Microsoft Defender for Endpoint.
+Sie verwenden das Zugriffstoken, um auf die geschützte Ressource zuzugreifen, bei der es sich um Erkennungen in Microsoft Defender für Endpunkt handelt.
 
-Um ein Zugriffstoken abzurufen, müssen Sie eine POST-Anforderung an den Tokenausstellenden Endpunkt senden. Hier ist eine Beispielanforderung:
+Um ein Zugriffstoken abzurufen, müssen Sie eine POST-Anforderung an den Token ausgebenden Endpunkt ausführen. Hier ist eine Beispielanforderung:
 
 ```http
 
@@ -100,44 +101,44 @@ Als Antwort werden ein Zugriffstoken und Ablauf Access-Token und Gültigkeitsinf
   "access_token":"eyJ0eXaioJJOIneiowiouqSuzNiZ345FYOVkaJL0625TueyaJasjhIjEnbMlWqP..."
 }
 ```
-Sie können jetzt den Wert im Feld *access_token* in einer Anforderung an die Defender for Endpoint-API verwenden.
+Sie können nun den Wert im *feld access_token* in einer Anforderung an die Defender für Endpunkt-API verwenden.
 
 ## <a name="request"></a>Anforderung
-Mit einem Zugriffstoken kann Ihre App authentifizierte Anforderungen an die Microsoft Defender for Endpoint-API senden. Ihre App muss das Zugriffstoken an den Autorisierungs-Header jeder Anforderung anfügen.
+Mit einem Zugriffstoken kann Ihre App authentifizierte Anforderungen an die Microsoft Defender für Endpunkt-API senden. Ihre App muss das Zugriffstoken an den Autorisierungs-Header jeder Anforderung anfügen.
 
 ### <a name="request-syntax"></a>Anforderungssyntax
 Methode | Anforderungs-URI
 :---|:---|
-GET| Verwenden Sie den URI, der für Ihre Region gilt. <br><br> **Für EU:**`https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **Für USA**: `https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **Für Großbritannien**: `https://wdatp-alertexporter-uk.windows.com/api/alerts` 
+GET| Verwenden Sie den für Ihre Region geltenden URI. <br><br> **Für die EU:**`https://wdatp-alertexporter-eu.windows.com/api/alerts` </br> **Für die USA:**`https://wdatp-alertexporter-us.windows.com/api/alerts` <br> **Für Großbritannien:**`https://wdatp-alertexporter-uk.windows.com/api/alerts` 
 
 ### <a name="request-header"></a>Anforderungsheader
 Kopfzeile | Typ | Beschreibung|
 :--|:--|:--
-Authorization | string | Erforderlich. Das Azure AD-Zugriffstoken im Format **Bearer-Token** &lt;  &gt; . |
+Authorization | string | Erforderlich. Das Azure AD-Zugriffstoken im Formular **Bearertoken.** &lt;  &gt; |
 
 ### <a name="request-parameters"></a>Anforderungsparameter
 
-Verwenden Sie optionale Abfrageparameter, um die In einer Antwort zurückgegebene Datenmenge anzugeben und zu steuern. Wenn Sie diese Methode ohne Parameter aufrufen, enthält die Antwort alle Warnungen in Ihrer Organisation in den letzten 2 Stunden.
+Verwenden Sie optionale Abfrageparameter, um die in einer Antwort zurückgegebene Datenmenge anzugeben und zu steuern. Wenn Sie diese Methode ohne Parameter aufrufen, enthält die Antwort alle Warnungen in Ihrer Organisation in den letzten 2 Stunden.
 
 Name | Wert| Beschreibung
 :---|:---|:---
-sinceTimeUtc | DateTime | Definiert die Warnungen mit niedrigerer Zeit, die basierend auf dem Feld abgerufen werden: <br> `LastProcessedTimeUtc` <br> Der Zeitbereich ist: von sinceTimeUtc-Zeit bis zur aktuellen Uhrzeit. <br><br> **HINWEIS**: Wenn nicht angegeben, werden alle Warnungen abgerufen, die in den letzten zwei Stunden generiert wurden.
-untilTimeUtc | DateTime | Definiert die Warnungen für die obere Zeit, die abgerufen werden. <br> Der Zeitraum ist: von `sinceTimeUtc` Zeit zu `untilTimeUtc` Zeit. <br><br> **HINWEIS**: Wenn dieser Wert nicht angegeben wird, ist der Standardwert die aktuelle Uhrzeit.
-ago | Zeichenfolge | Zieht Warnungen im folgenden Zeitraum: von `(current_time - ago)` Zeit zu `current_time` Zeit. <br><br> Wert sollte gemäß **ISO 8601-Dauerformat** festgelegt werden <br> Beispiel: `ago=PT10M` Benachrichtigungen, die in den letzten 10 Minuten empfangen wurden.
-Begrenzung | int | Definiert die Anzahl der abzurufenden Warnungen. Die neuesten Warnungen werden basierend auf der definierten Anzahl abgerufen.<br><br> **HINWEIS**: Wenn nicht angegeben, werden alle im Zeitraum verfügbaren Warnungen abgerufen.
-machinegroups | Zeichenfolge | Gibt Gerätegruppen an, aus der Warnungen abziehen sollen. <br><br> **HINWEIS:** Wenn nicht angegeben, werden Warnungen von allen Gerätegruppen abgerufen. <br><br> Beispiel: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
+sinceTimeUtc | DateTime | Definiert die unteren zeitgebundenen Warnungen, aus denen basierend auf dem Feld abgerufen wird: <br> `LastProcessedTimeUtc` <br> Der Zeitraum ist: von sinceTimeUtc-Zeit bis zur aktuellen Zeit. <br><br> **HINWEIS:** Wenn nicht angegeben, werden alle Warnungen abgerufen, die in den letzten zwei Stunden generiert wurden.
+untilTimeUtc | DateTime | Definiert, dass warnungen mit oberen Zeitgrenzen abgerufen werden. <br> Der Zeitraum ist: von `sinceTimeUtc` Zeit zu `untilTimeUtc` Zeit. <br><br> **HINWEIS:** Wenn nicht angegeben, ist der Standardwert die aktuelle Uhrzeit.
+Vor | Zeichenfolge | Ruft Warnungen im folgenden Zeitraum ab: von `(current_time - ago)` Zeit zu `current_time` Zeit. <br><br> Der Wert sollte gemäß **dem ISO 8601-Dauerformat** festgelegt werden. <br> Beispiel: `ago=PT10M` Ruft Warnungen ab, die in den letzten 10 Minuten empfangen wurden.
+Begrenzung | int | Definiert die Anzahl der abzurufenden Warnungen. Die neuesten Warnungen werden basierend auf der definierten Anzahl abgerufen.<br><br> **HINWEIS:** Wenn nicht angegeben, werden alle im Zeitraum verfügbaren Warnungen abgerufen.
+Computergruppen | Zeichenfolge | Gibt Gerätegruppen an, aus denen Warnungen abgerufen werden sollen. <br><br> **HINWEIS:** Wenn nicht angegeben, werden Warnungen von allen Gerätegruppen abgerufen. <br><br> Beispiel: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | Zeichenfolge | Einzelnes Gerätetag aus der Registrierung.
-CloudCreatedMachineTags | Zeichenfolge | Gerätetags, die in einem Microsoft Defender Security Center.
+CloudCreatedMachineTags | Zeichenfolge | Gerätetags, die in Microsoft Defender Security Center erstellt wurden.
 
 ### <a name="request-example"></a>Anforderungsbeispiel
-Im folgenden Beispiel wird veranschaulicht, wie alle Erkennungen in Ihrer Organisation abgerufen werden.
+Im folgenden Beispiel wird veranschaulicht, wie Sie alle Erkennungen in Ihrer Organisation abrufen.
 
 ```http
 GET  https://wdatp-alertexporter-eu.windows.com/api/alerts
 Authorization: Bearer <your access token>
 ```
 
-Das folgende Beispiel veranschaulicht eine Anforderung zum Anfordern der letzten 20 Erkennungen seit 2016-09-12 00:00:00.
+Das folgende Beispiel zeigt eine Anforderung zum Abrufen der letzten 20 Erkennungen seit 2016-09-12 00:00:00.
 
 ```http
 GET  https://wdatp-alertexporter-eu.windows.com/api/alerts?limit=20&sinceTimeUtc=2016-09-12T00:00:00.000
@@ -147,7 +148,7 @@ Authorization: Bearer <your access token>
 ## <a name="response"></a>Antwort
 Der Rückgabewert ist ein Array von Warnungsobjekten im JSON-Format.
 
-Im Folgenden finden Sie ein Beispiel für den Rückgabewert:
+Hier ist ein Beispiel für einen Rückgabewert:
 
 ```json 
 [
@@ -207,8 +208,8 @@ Im Folgenden finden Sie ein Beispiel für den Rückgabewert:
 ```
 
 ## <a name="code-examples"></a>Codebeispiele
-### <a name="get-access-token"></a>Zugriffstoken erhalten
-In den folgenden Codebeispielen wird gezeigt, wie Sie ein Zugriffstoken zum Aufrufen der Microsoft Defender for Endpoint SIEM-API abrufen.
+### <a name="get-access-token"></a>Zugriffstoken abrufen
+Die folgenden Codebeispiele veranschaulichen, wie Sie ein Zugriffstoken zum Aufrufen der Microsoft Defender für Endpunkt-SIEM-API abrufen.
 
 ```csharp
 AuthenticationContext context = new AuthenticationContext(string.Format("https://login.microsoftonline.com/{0}", tenantId));
@@ -257,8 +258,8 @@ tokenArr=(${apiResponseArr[6]})
 echo ${tokenArr[1]} | cut -d "\"" -f2 | cut -d "\"" -f1 >> $scriptDir/LatestSIEM-token.txt
 ```
 
-### <a name="use-token-to-connect-to-the-detections-endpoint"></a>Verwenden von Token zum Herstellen einer Verbindung mit dem Erkennungsendpunkt
-In den folgenden Codebeispielen wird die Verwendung eines Zugriffstokens zum Aufrufen der Defender for Endpoint SIEM-API zum Abrufen von Warnungen gezeigt.
+### <a name="use-token-to-connect-to-the-detections-endpoint"></a>Verwenden des Tokens zum Herstellen einer Verbindung mit dem Erkennungsendpunkt
+Die folgenden Codebeispiele veranschaulichen, wie Sie ein Zugriffstoken zum Aufrufen der Defender für Endpunkt-SIEM-API zum Abrufen von Warnungen verwenden.
 
 ```csharp
 HttpClient httpClient = new HttpClient();
@@ -326,17 +327,17 @@ echo $apiResponse
 ```
 
 ## <a name="error-codes"></a>Fehlercodes
-Die Microsoft Defender for Endpoint REST-API gibt die folgenden Fehlercodes zurück, die durch eine ungültige Anforderung verursacht wurden.
+Die Rest-API von Microsoft Defender für Endpunkt gibt die folgenden Fehlercodes zurück, die durch eine ungültige Anforderung verursacht wurden.
 
 HTTP-Fehlercode | Beschreibung
 :---|:---
-401 | Falsch formatierte Anforderung oder ungültiges Token.
-403 | Nicht autorisierte Ausnahme: Eine der Domänen wird nicht vom Mandantenadministrator verwaltet, oder der Mandantenstatus wird gelöscht.
+401 | Fehlerhafte Anforderung oder ungültiges Token.
+403 | Nicht autorisierte Ausnahme : Eine der Domänen wird nicht vom Mandantenadministrator verwaltet, oder der Mandantenstatus wird gelöscht.
 500 | Fehler im Dienst.
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Aktivieren der SIEM-Integration in Microsoft Defender for Endpoint](enable-siem-integration.md)
-- [Konfigurieren von ArcSight zum Ziehen von Microsoft Defender for Endpoint-Erkennungen](configure-arcsight.md)
-- [Ziehen von Erkennungen an Ihre SIEM-Tools](configure-siem.md)
-- [Microsoft Defender for Endpoint Detection-Felder](api-portal-mapping.md)
+- [Aktivieren der SIEM-Integration in Microsoft Defender für Endpunkt](enable-siem-integration.md)
+- [Konfigurieren von ArcSight zum Abrufen von Microsoft Defender für Endpunkterkennungen](configure-arcsight.md)
+- [Abrufen von Erkennungen an Ihre SIEM-Tools](configure-siem.md)
+- [Microsoft Defender für Endpunkterkennungsfelder](api-portal-mapping.md)
 - [Behandeln von Problemen mit der Integration von SIEM-Tools](troubleshoot-siem.md)

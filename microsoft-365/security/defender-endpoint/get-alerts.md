@@ -1,7 +1,7 @@
 ---
-title: Warnungs-API auflisten
-description: Erfahren Sie, wie Sie mithilfe der API Warnungen auflisten eine Sammlung von Warnungen in Microsoft Defender for Endpoint abrufen.
-keywords: apis, graph api, supported apis, get, alerts, recent
+title: API zum Auflisten von Warnungen
+description: Erfahren Sie, wie Sie die Listenbenachrichtigungs-API verwenden, um eine Sammlung von Warnungen in Microsoft Defender für Endpunkt abzurufen.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Warnungen, zuletzt verwendet
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,15 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: f4b62ca7fecb8e66fc082b6cf0972c1c2c06afb5
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 4da646a52392871cde99271a17ed6eb9111f51ab
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166626"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769243"
 ---
-# <a name="list-alerts-api"></a>Warnungs-API auflisten
+# <a name="list-alerts-api"></a>API zum Auflisten von Warnungen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +31,7 @@ ms.locfileid: "51166626"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
@@ -39,24 +40,24 @@ ms.locfileid: "51166626"
 
 
 ## <a name="api-description"></a>API-Beschreibung
-Ruft eine Auflistung von Warnungen ab.
-<br>Unterstützt [OData V4-Abfragen](https://www.odata.org/documentation/).
-<br>OData unterstützte Operatoren:
-<br>```$filter``` on: ```alertCreationTime``` ```lastUpdateTime``` , , , , , ```incidentId``` ```InvestigationId``` und ```status``` ```severity``` ```category``` Eigenschaften.
+Ruft eine Sammlung von Warnungen ab.
+<br>Unterstützt [OData V4-Abfragen.](https://www.odata.org/documentation/)
+<br>Von OData unterstützte Operatoren:
+<br>```$filter``` on: ```alertCreationTime``` , , , , , und ```lastUpdateTime``` ```incidentId``` ```InvestigationId``` ```status``` ```severity``` ```category``` properties.
 <br>```$top``` mit einem maximalen Wert von 10.000
 <br>```$skip```
 <br>```$expand``` von ```evidence```
-<br>Beispiele finden Sie [unter OData-Abfragen mit Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+<br>Beispiele für [OData-Abfragen mit Microsoft Defender für Endpunkt](exposed-apis-odata-samples.md)
 
 
-## <a name="limitations"></a>Einschränkungen
-1. Sie können Warnungen nach Dem konfigurierten Aufbewahrungszeitraum zuletzt aktualisieren.
+## <a name="limitations"></a>Begrenzungen
+1. Sie können Benachrichtigungen erhalten, die nach Dem konfigurierten Aufbewahrungszeitraum zuletzt aktualisiert wurden.
 2. Die maximale Seitengröße beträgt 10.000.
-3. Die Tarifeinschränkungen für diese API sind 100 Anrufe pro Minute und 1500 Anrufe pro Stunde. 
+3. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde. 
 
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
@@ -67,8 +68,8 @@ Delegiert (Geschäfts-, Schul- oder Unikonto) | Alert.ReadWrite | "Warnungen les
 
 >[!Note]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
->- Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Daten anzeigen" (Weitere Informationen finden Sie unter [Erstellen](user-roles.md) und Verwalten von Rollen)
->- Die Antwort enthält nur Warnungen, die Geräten zugeordnet sind, auf die der Benutzer basierend auf den Gerätegruppeneinstellungen zugreifen kann (weitere Informationen finden Sie unter [Erstellen](machine-groups.md) und Verwalten von Gerätegruppen).
+>- Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Daten anzeigen" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
+>- Die Antwort enthält nur Warnungen, die Geräten zugeordnet sind, auf die der Benutzer zugreifen kann, basierend auf Gerätegruppeneinstellungen (Weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```
@@ -86,7 +87,7 @@ Authorization | String | Bearer {token}. **Erforderlich**.
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich ist, werden 200 OK und eine Liste der Warnungsobjekte im Antworttext zurückgegeben. [](alerts.md)
+Bei erfolgreicher Ausführung gibt die Methode 200 OK und eine Liste der [Warnungsobjekte](alerts.md) im Antworttext zurück.
 
 
 ## <a name="example-1---default"></a>Beispiel 1 – Standard
@@ -104,7 +105,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 >[!NOTE]
->Die hier gezeigte Antwortliste kann aus Kürze gekürzt werden. Alle Warnungen werden von einem tatsächlichen Anruf zurückgegeben.
+>Die hier gezeigte Antwortliste ist möglicherweise aus Platzgründen abgeschnitten. Alle Warnungen werden von einem tatsächlichen Aufruf zurückgegeben.
 
 
 ```json
@@ -159,7 +160,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 }
 ```
 
-## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a>Beispiel 2 – 10 neueste Warnungen mit zugehörigen Nachweisen erhalten
+## <a name="example-2---get-10-latest-alerts-with-related-evidence"></a>Beispiel 2 – Abrufen von 10 neuesten Warnungen mit zugehörigen Nachweisen
 
 **Anforderung**
 
@@ -175,7 +176,7 @@ GET https://api.securitycenter.microsoft.com/api/alerts?$top=10&$expand=evidence
 Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 >[!NOTE]
->Die hier gezeigte Antwortliste kann aus Kürze gekürzt werden. Alle Warnungen werden von einem tatsächlichen Anruf zurückgegeben.
+>Die hier gezeigte Antwortliste ist möglicherweise aus Platzgründen abgeschnitten. Alle Warnungen werden von einem tatsächlichen Aufruf zurückgegeben.
 
 
 ```json
@@ -315,4 +316,4 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 
 ## <a name="see-also"></a>Siehe auch
-- [OData-Abfragen mit Microsoft Defender for Endpoint](exposed-apis-odata-samples.md)
+- [OData-Abfragen mit Microsoft Defender für Endpunkt](exposed-apis-odata-samples.md)

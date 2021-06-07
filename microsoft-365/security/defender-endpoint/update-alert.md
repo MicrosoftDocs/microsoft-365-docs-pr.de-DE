@@ -1,7 +1,7 @@
 ---
-title: Aktualisieren der Benachrichtigungsentitäts-API
-description: Erfahren Sie, wie Sie eine Microsoft Defender for Endpoint-Warnung mithilfe dieser API aktualisieren. Sie können die Eigenschaften status, determination, classification und assignedTo aktualisieren.
-keywords: apis, graph api, supported apis, get, alert, information, id
+title: Aktualisieren der Warnungsentitäts-API
+description: Erfahren Sie, wie Sie eine Microsoft Defender für Endpunkt-Warnung mithilfe dieser API aktualisieren. Sie können die Eigenschaften Status, Bestimmung, Klassifizierung und assignedTo aktualisieren.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Warnung, Informationen, ID
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 94be185bd30cd36f456a66d5ae30a4361abc0c48
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 043d423e1016d77cad4a175aa41718329f464252
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688249"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52768925"
 ---
 # <a name="update-alert"></a>Warnung aktualisieren
 
@@ -30,7 +31,7 @@ ms.locfileid: "51688249"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,18 +39,18 @@ ms.locfileid: "51688249"
 
 
 ## <a name="api-description"></a>API-Beschreibung
-Aktualisiert die Eigenschaften der vorhandenen [Warnung](alerts.md).
-<br>Die Übermittlung **von Kommentaren** ist mit oder ohne Aktualisierung von Eigenschaften verfügbar.
-<br>Die updatablen Eigenschaften sind: ```status``` ```determination``` , und ```classification``` ```assignedTo``` .
+Aktualisiert die Eigenschaften vorhandener [Warnungen.](alerts.md)
+<br>Die Übermittlung eines **Kommentars** ist mit oder ohne Aktualisierung der Eigenschaften verfügbar.
+<br>Aktualisierbare Eigenschaften sind: ```status``` , ```determination``` und ```classification``` ```assignedTo``` .
 
 
-## <a name="limitations"></a>Einschränkungen
-1. Sie können Warnungen aktualisieren, die in der API verfügbar sind. Weitere Informationen finden Sie unter [Warnungen](get-alerts.md) auflisten.
-2. Die Tarifeinschränkungen für diese API sind 100 Anrufe pro Minute und 1500 Anrufe pro Stunde.
+## <a name="limitations"></a>Begrenzungen
+1. Sie können Warnungen aktualisieren, die in der API verfügbar sind. Weitere Informationen finden Sie unter ["Warnungen auflisten".](get-alerts.md)
+2. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
@@ -58,8 +59,8 @@ Delegiert (Geschäfts-, Schul- oder Unikonto) | Alert.ReadWrite | "Warnungen les
 
 >[!Note]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
->- Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Warnungsuntersuchung" (Weitere Informationen finden Sie unter [Erstellen](user-roles.md) und Verwalten von Rollen)
->- Der Benutzer muss auf das Gerät zugreifen können, das der Warnung zugeordnet ist, basierend auf den Gerätegruppeneinstellungen (Weitere Informationen finden Sie unter [Erstellen](machine-groups.md) und Verwalten von Gerätegruppen)
+>- Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Warnungsuntersuchung" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
+>- Der Benutzer muss basierend auf den Gerätegruppeneinstellungen Zugriff auf das Gerät haben, das der Warnung zugeordnet ist (Weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```
@@ -75,20 +76,20 @@ Content-Type | Zeichenfolge | application/json. **Erforderlich**.
 
 
 ## <a name="request-body"></a>Anforderungstext
-Stellen Sie im Anforderungstext die Werte für die relevanten Felder zur Verfügung, die aktualisiert werden sollen.
+Geben Sie im Anforderungstext die Werte für die relevanten Felder an, die aktualisiert werden sollen.
 <br>Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre vorherigen Werte oder werden basierend auf Änderungen an anderen Eigenschaftswerten neu berechnet. 
-<br>Um eine optimale Leistung zu erzielen, sollten Sie keine vorhandenen Werte enthalten, die sich nicht geändert haben.
+<br>Um eine optimale Leistung zu erzielen, sollten Sie vorhandene Werte, die sich nicht geändert haben, nicht einschließen.
 
 Eigenschaft | Typ | Beschreibung
 :---|:---|:---
 status | String | Gibt den aktuellen Status der Warnung an. Die Eigenschaftswerte sind: 'New', 'InProgress' und 'Resolved'.
 assignedTo | String | Besitzer der Warnung
-classification | Zeichenfolge | Gibt die Spezifikation der Warnung an. Die Eigenschaftswerte sind: "Unbekannt", "FalsePositive", "TruePositive". 
-Bestimmung | String | Gibt die Bestimmung der Warnung an. Die Eigenschaftswerte sind: "NotAvailable", "Apt", "Malware", "SecurityPersonnel", "SecurityTesting", "UnwantedSoftware", "Other"
+classification | Zeichenfolge | Gibt die Spezifikation der Warnung an. Die Eigenschaftswerte sind: 'Unknown', 'FalsePositive', 'TruePositive'. 
+Bestimmung | String | Gibt die Bestimmung der Warnung an. Die Eigenschaftswerte sind: 'NotAvailable', 'Apt', 'Malware', 'SecurityPersonnel', 'SecurityTesting', 'UnwantedSoftware', 'Other'
 comment | String | Kommentar, der der Warnung hinzugefügt werden soll.
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich ist, werden 200 OK und die Warnungsentität im Antworttext mit den aktualisierten Eigenschaften zurückgegeben. [](alerts.md) Wenn eine Warnung mit der angegebenen ID nicht gefunden wurde - 404 Nicht gefunden.
+Wenn die Methode erfolgreich ist, werden 200 OK und die [Warnungsentität](alerts.md) im Antworttext mit den aktualisierten Eigenschaften zurückgegeben. Wenn warnung mit der angegebenen ID nicht gefunden wurde – 404 Nicht gefunden.
 
 
 ## <a name="example"></a>Beispiel

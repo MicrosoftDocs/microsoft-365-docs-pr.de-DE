@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: d7559e5fa75db1fb23592dec1a3a5f35bad603df
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4c39e5895c3315d77d7bfc211f0ba3e65f06659b
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538536"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769293"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -93,7 +93,7 @@ Verwenden Sie die folgende Tabelle, um die Unterschiede im Verhalten der beiden 
 |Exchange-Anlagen auf Bedingungen geprüft|Nein | Ja|
 |Visuelle Markierungen anwenden |Ja |Ja (nur E-Mail) |
 |Außerkraftsetzen der IRM-Verschlüsselung ohne Bezeichnung angewendet|Ja, wenn der Benutzer das Mindestnutzungsrecht des Exportierens hat |Ja (nur E-Mail) |
-|Bezeichnen eingehender E-Mails|Nein |Ja (Verschlüsselung nicht angewendet) |
+|Bezeichnen eingehender E-Mails|Nein |Ja|
 
 \* Die Funktion „Automatisches Bezeichnen“ ist derzeit nicht in allen Regionen verfügbar. Wenn Ihr Mandant diese Funktion nicht unterstützt, wird die Registerkarte „Automatisches Bezeichnen“ im Admin Center für Bezeichnungen nicht angezeigt.
 

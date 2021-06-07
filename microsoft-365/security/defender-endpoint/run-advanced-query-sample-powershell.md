@@ -1,8 +1,8 @@
 ---
 title: Erweiterte Suche mit PowerShell-API-Grundlagen
 ms.reviewer: ''
-description: Erfahren Sie mehr über die Grundlagen der Abfrage der Microsoft Defender for Endpoint-API mithilfe von PowerShell.
-keywords: apis, supported apis, advanced hunting, query
+description: Lernen Sie die Grundlagen der Abfrage der Microsoft Defender für Endpunkt-API mithilfe von PowerShell kennen.
+keywords: APIs, unterstützte APIs, erweiterte Suche, Abfrage
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,44 +15,45 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 20c63daaf61b85f35aaceccb540b6d50824c801d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 9192662b8d4ed23a5903dddb555f07bf182ab17f
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198671"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771501"
 ---
 # <a name="advanced-hunting-using-powershell"></a>Erweiterte Bedrohungssuche mit PowerShell
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-Führen Sie erweiterte Abfragen mit PowerShell aus, siehe [Advanced Hunting API](run-advanced-query-api.md).
+Führen Sie erweiterte Abfragen mithilfe von PowerShell aus. Weitere Informationen finden Sie unter ["Erweiterte Suche"-API.](run-advanced-query-api.md)
 
-In diesem Abschnitt teilen wir PowerShell-Beispiele, um ein Token abzurufen und es zum Ausführen einer Abfrage zu verwenden.
+In diesem Abschnitt geben wir PowerShell-Beispiele frei, um ein Token abzurufen und es zum Ausführen einer Abfrage zu verwenden.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
-Sie müssen zuerst [eine App erstellen.](apis-intro.md)
+Zunächst müssen Sie [eine App erstellen.](apis-intro.md)
 
 ## <a name="preparation-instructions"></a>Vorbereitungsanweisungen
 
 - Öffnen Sie ein PowerShell-Fenster.
-- Wenn Die Ausführung der PowerShell-Befehle in Ihrer Richtlinie nicht zulässig ist, können Sie den folgenden Befehl ausführen:
+- Wenn Ihre Richtlinie das Ausführen der PowerShell-Befehle nicht zulässt, können Sie den folgenden Befehl ausführen:
   ```
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
 >Weitere Informationen finden Sie in der [PowerShell-Dokumentation.](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
-## <a name="get-token"></a>Token erhalten
+## <a name="get-token"></a>Token abrufen
 
 - Führen Sie den folgenden Befehl aus:
 
@@ -73,12 +74,12 @@ $response = Invoke-RestMethod -Method Post -Uri $oAuthUri -Body $body -ErrorActi
 $aadToken = $response.access_token
 ```
 
-where
-- $tenantId: ID des Mandanten, für den Sie die Abfrage ausführen möchten (d. h. die Abfrage wird auf den Daten dieses Mandanten ausgeführt)
-- $appId: ID Ihrer Azure AD-App (die App muss über die Berechtigung "Erweiterte Abfragen ausführen" für Defender for Endpoint verfügen)
-- $appSecret: Geheimnis Ihrer Azure AD-App
+Wo
+- $tenantId: ID des Mandanten, für den Sie die Abfrage ausführen möchten (d. a. die Abfrage wird auf den Daten dieses Mandanten ausgeführt)
+- $appId: ID Ihrer Azure AD-App (die App muss über die Berechtigung "Erweiterte Abfragen ausführen" für Defender für Endpunkt verfügen)
+- $appSecret: Geheimer Schlüssel Ihrer Azure AD-App
 
-## <a name="run-query"></a>Ausführen einer Abfrage
+## <a name="run-query"></a>Abfrage ausführen
 
 Führen Sie die folgende Abfrage aus:
 
@@ -98,12 +99,12 @@ $results = $response.Results
 $schema = $response.Schema
 ```
 
-- $results enthalten die Ergebnisse Ihrer Abfrage
-- $schema enthält das Schema der Ergebnisse Ihrer Abfrage
+- $results die Ergebnisse der Abfrage enthalten
+- $schema enthält das Schema der Ergebnisse Der Abfrage
 
 ### <a name="complex-queries"></a>Komplexe Abfragen
 
-Wenn Sie komplexe Abfragen (oder Mehrlinienabfragen) ausführen möchten, speichern Sie ihre Abfrage in einer Datei, und führen Sie anstelle der ersten Zeile im obigen Beispiel den folgenden Befehl aus:
+Wenn Sie komplexe Abfragen (oder Abfragen mit mehreren Leitungen) ausführen möchten, speichern Sie Ihre Abfrage in einer Datei, und führen Sie anstelle der ersten Zeile im obigen Beispiel den folgenden Befehl aus:
 
 ```
 $query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to your file
@@ -113,13 +114,13 @@ $query = [IO.File]::ReadAllText("C:\myQuery.txt"); # Replace with the path to yo
 
 Sie können jetzt die Abfrageergebnisse verwenden.
 
-Gehen Sie wie folgt vor, um die Ergebnisse der Abfrage im CSV-Format in file1.csv aus:
+Gehen Sie folgendermaßen vor, um die Ergebnisse der Abfrage im CSV-Format in einer Datei auszugeben file1.csv:
 
 ```
 $results | ConvertTo-Csv -NoTypeInformation | Set-Content file1.csv
 ```
 
-Gehen Sie wie folgt vor, um die Ergebnisse der Abfrage im JSON-Format in file1.jsaus:
+Gehen Sie wie folgt vor, um die Ergebnisse der Abfrage im JSON-Format in Datei file1.jsauszugeben:
 
 ```
 $results | ConvertTo-Json | Set-Content file1.json

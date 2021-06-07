@@ -1,7 +1,7 @@
 ---
-title: Auflisten von Geräten nach Empfehlung
+title: Geräte nach Empfehlung auflisten
 description: Ruft eine Liste der Geräte ab, die der Sicherheitsempfehlung zugeordnet sind.
-keywords: apis, graph api, supported apis, get, security recommendation for vulnerable devices, Bedrohungs- und Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement api
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Sicherheitsempfehlungen für gefährdete Geräte, Bedrohungs- und Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement-API
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,20 +14,22 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 515542f6eca208e92228a8d0b344b6013b11a148
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 6c762a15051444ec950e92998317db4f7e51783c
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198269"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771813"
 ---
-# <a name="list-devices-by-recommendation"></a>Auflisten von Geräten nach Empfehlung
+# <a name="list-devices-by-recommendation"></a>Geräte nach Empfehlung auflisten
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -38,12 +40,12 @@ ms.locfileid: "51198269"
 Ruft eine Liste der Geräte ab, die der Sicherheitsempfehlung zugeordnet sind.
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for Details.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs.](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |   SecurityRecommendation.Read.All |   "Informationen zur Sicherheitsempfehlung zur Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | SecurityRecommendation.Read |  "Informationen zur Sicherheitsempfehlung zur Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
+Anwendung |   SecurityRecommendation.Read.All |   "Sicherheitsempfehlungen zu Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | SecurityRecommendation.Read |  "Sicherheitsempfehlungen zu Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```
@@ -61,7 +63,7 @@ Authorization | String | Bearer {token}. **Erforderlich**.
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich ist, gibt sie 200 OK mit der Liste der Geräte zurück, die der Sicherheitsempfehlung zugeordnet sind.
+Wenn die Methode erfolgreich ist, wird 200 OK mit der Liste der Geräte zurückgegeben, die der Sicherheitsempfehlung zugeordnet sind.
 
 
 ## <a name="example"></a>Beispiel
@@ -94,5 +96,5 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 ```
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Risikobasiertes Bedrohungs- & Sicherheitsrisikomanagement](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Sicherheitsempfehlung & Bedrohungsrisikos](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Risikobasiertes Bedrohungs- & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Sicherheitsempfehlungen für Sicherheitsrisiken &](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

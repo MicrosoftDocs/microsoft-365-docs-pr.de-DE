@@ -1,7 +1,7 @@
 ---
 title: Festlegen der Gerätewert-API
-description: Erfahren Sie, wie Sie den Wert eines Geräts mithilfe einer Microsoft Defender for Endpoint-API angeben.
-keywords: apis, graph api, supported apis, tags, machine tags
+description: Erfahren Sie, wie Sie den Wert eines Geräts mithilfe einer Microsoft Defender für Endpunkt-API angeben.
+keywords: APIs, Graph-API, unterstützte APIs, Tags, Computertags
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 76df62243db837ec91819497980ff1de2295e3b6
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e14e696169a2d1cd76e4fb5b2ee8de951e9e1280
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498315"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52771405"
 ---
 # <a name="set-device-value-api"></a>Festlegen der Gerätewert-API
 
@@ -30,9 +31,9 @@ ms.locfileid: "51498315"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -41,30 +42,30 @@ ms.locfileid: "51498315"
 
 ## <a name="api-description"></a>API-Beschreibung
 
-Legen Sie den Gerätewert eines bestimmten Computers [.](machine.md)<br>
-Weitere [Informationen finden Sie unter Zuweisen von](tvm-assign-device-value.md) Gerätewerten.
+Legen Sie den Gerätewert eines bestimmten [Computers fest.](machine.md)<br>
+Weitere Informationen finden Sie unter ["Zuweisen von Gerätewerten".](tvm-assign-device-value.md)
 
-## <a name="limitations"></a>Einschränkungen
+## <a name="limitations"></a>Begrenzungen
 
-1. Sie können auf Geräten posten, die zuletzt gemäß Ihrem konfigurierten Aufbewahrungszeitraum angezeigt wurden.
+1. Sie können Beiträge auf Geräten veröffentlichen, die zuletzt gemäß Ihrem konfigurierten Aufbewahrungszeitraum angezeigt wurden.
 
-2. Die Tarifeinschränkungen für diese API sind 100 Anrufe pro Minute und 1500 Anrufe pro Stunde.
+2. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
 
 ## <a name="permissions"></a>Berechtigungen
 
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 
 Berechtigungstyp |    Berechtigung    |    Anzeigename der Berechtigung
 :---|:---|:---
 Anwendung |    Machine.ReadWrite.All |    "Alle Computerinformationen lesen und schreiben"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | Machine.ReadWrite | "Computerinformationen lesen und schreiben"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Machine.ReadWrite | "Lesen und Schreiben von Computerinformationen"
 
 >[!Note]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
 >
->- Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Sicherheitseinstellung verwalten". Weitere Informationen finden Sie unter [Erstellen und Verwalten von](user-roles.md) Rollen.
->- Der Benutzer muss auf der Grundlage der Computergruppeneinstellungen auf den Computer zugreifen können (weitere Informationen finden Sie unter [Erstellen](machine-groups.md) und Verwalten von Computergruppen).
+>- Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Sicherheitseinstellung verwalten". Weitere Informationen (weitere Informationen finden Sie unter [Erstellen und Verwalten von Rollen)](user-roles.md)
+>- Der Benutzer muss basierend auf den Computergruppeneinstellungen Zugriff auf den Computer haben (Weitere Informationen finden Sie unter [Erstellen und Verwalten von Computergruppen).](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -81,7 +82,7 @@ Content-Type | Zeichenfolge | application/json. **Erforderlich**.
 
 ## <a name="request-body"></a>Anforderungstext
 
-Stellen Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern zur Verfügung:
+Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an:
 
 Parameter |    Typ    | Beschreibung
 :---|:---|:---
@@ -89,13 +90,13 @@ DeviceValue |    Enum |    Gerätewert. Zulässige Werte sind: "Normal", "Niedri
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich ist, werden der Antwortcode 200 – Ok und der aktualisierte Computer im Antworttext zurückgegeben.
+Wenn die Methode erfolgreich ist, werden der Antwortcode "200 – Ok" und der aktualisierte Computer im Antworttext zurückgegeben.
 
 ## <a name="example"></a>Beispiel
 
 **Anforderung**
 
-Im Folgenden finden Sie ein Beispiel für eine Anforderung, die ein Computertag hinzufügt.
+Nachfolgend sehen Sie ein Beispiel für eine Anforderung, die ein Computertag hinzufügt.
 
 ```http
 POST https://api.securitycenter.microsoft.com/api/machines/1e5bc9d7e413ddd7902c2932e418702b84d0cc07/setDeviceValue
