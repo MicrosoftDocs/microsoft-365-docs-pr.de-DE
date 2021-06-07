@@ -100,9 +100,9 @@
               href: manage-incidents.md
             - name: Untersuchen
               href: investigate-incidents.md
-            - name: Warnung vor Vorfällen
+            - name: Vorfallwarnungen
               href: investigate-alerts.md
-            - name: Benutzer mit Vorfällen
+            - name: Vorfallbenutzer
               href: investigate-users.md
             - name: Reagieren auf Ihren ersten Vorfall
               items:
@@ -114,7 +114,7 @@
                   href: first-incident-analyze.md
                 - name: Schritt 2. Korrigieren
                   href: first-incident-remediate.md
-                - name: 'Schritt 3: Überprüfung'
+                - name: Schritt 3. Bewertung
                   href: first-incident-post.md
                 - name: Zusätzliche Vorfallbeispiele
                   items:
@@ -122,7 +122,7 @@
                       href: first-incident-path-phishing.md
                     - name: Identity
                       href: first-incident-path-identity.md
-            - name: Playbooks zur Reaktion auf Vorfälle
+            - name: Playbooks für die Reaktion auf Vorfälle
               href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
             - name: E-Mail-Benachrichtigungen
               href: get-incident-notifications.md
@@ -130,7 +130,7 @@
           items:
             - name: Nachverfolgen und Reagieren auf neue Bedrohungen
               href: threat-analytics.md
-            - name: Verstehen des Analystenberichts
+            - name: Grundlegendes zum Analystenbericht
               href: threat-analytics-analyst-reports.md
         - name: Automatische Untersuchung und Reaktion
           items:
@@ -142,11 +142,11 @@
               href: m365d-remediation-actions.md
             - name: Verwenden des Info-Centers
               href: m365d-action-center.md
-            - name: Anzeigen und Verwalten von Korrekturaktionen
+            - name: Anzeigen und Verwalten von Wartungsaktionen
               href: m365d-autoir-actions.md
             - name: Anzeigen von Details und Ergebnissen
               href: m365d-autoir-results.md
-            - name: Adress false positives und negatives
+            - name: Beheben falsch positiver und negativer Ergebnisse
               href: m365d-autoir-report-false-positives-negatives.md
         - name: Erweiterte Suche
           items:
@@ -322,15 +322,15 @@
                   items:
                     - name: Microsoft 365 Streaming-API
                       href: ../defender-endpoint/raw-data-export.md
-                    - name: Streamen erweiterter Ereignissuchen an den Azure Events-Hub
+                    - name: Streamen erweiterter Such-Evens an den Azure Events Hub
                       href: ../defender-endpoint/raw-data-export-event-hub.md
                     - name: Streamen erweiterter Ereignissuchen an Ihr Speicherkonto
                       href: ../defender-endpoint/raw-data-export-storage.md
                 - name: Erweiterte Suche-API
                   href: api-advanced-hunting.md
-                - name: APIs für Vorfälle
+                - name: Incidents-APIs
                   items:
-                    - name: Methoden und Eigenschaften von Vorfällen
+                    - name: Incidents-Methoden und -Eigenschaften
                       href: api-incident.md
                     - name: Auflisten von Vorfällen
                       href: api-list-incidents.md

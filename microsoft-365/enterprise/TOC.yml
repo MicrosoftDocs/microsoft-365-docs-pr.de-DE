@@ -16,7 +16,7 @@
           href: assessing-network-connectivity.md
         - name: Netzwerkplanung mit ExpressRoute für Office 365
           href: network-planning-with-expressroute.md
-        - name: "Planen von Netzwerkgeräten, die eine Verbindung zu Microsoft\_365-Diensten herstellen"
+        - name: 'Planen von Netzwerkgeräten, die eine Verbindung zu Microsoft 365-Diensten herstellen'
           href: plan-for-network-devices.md
         - name: Netzwerk- und Migrationsplanung für Microsoft 365
           href: network-and-migration-planning.md
@@ -142,7 +142,7 @@
         - name: Planen Sie Ihre Upgrades
           href: plan-upgrade-previous-versions-office.md
           items:
-            - name: "Office\_2007"
+            - name: Office 2007
               items:
                 - name: Upgrade von Office 2007-Servern und -Clients
                   href: upgrade-from-office-2007-servers-and-products.md
@@ -158,7 +158,7 @@
                   href: pps-2007-end-of-support.md
                 - name: Project Server 2007
                   href: project-server-2007-end-of-support.md
-            - name: "Office\_2010"
+            - name: Office 2010
               items:
                 - name: Upgrade von Office 2010-Servern und -Clients
                   href: upgrade-from-office-2010-servers-and-products.md
@@ -337,7 +337,7 @@
                       href: high-availability-federated-authentication-phase-2-configure-domain-controllers.md
                     - name: 'Phase 3: Konfigurieren von AD FS-Servern'
                       href: high-availability-federated-authentication-phase-3-configure-ad-fs-servers.md
-                    - name: "Phase\_4: Konfigurieren von Webanwendungsproxys"
+                    - name: 'Phase 4: Konfigurieren von Webanwendungsproxys'
                       href: high-availability-federated-authentication-phase-4-configure-web-application-pro.md
                     - name: 'Phase 5: Konfigurieren von Verbundauthentifizierung'
                       href: high-availability-federated-authentication-phase-5-configure-federated-authentic.md
@@ -383,7 +383,7 @@
           href: plan-upgrade-previous-versions-office.md
     - name: Bereitstellen
       items:
-        - name: "Office\_2007"
+        - name: Office 2007
           items:
             - name: Upgrade von Office 2007-Servern und -Clients
               href: upgrade-from-office-2007-servers-and-products.md
@@ -399,7 +399,7 @@
               href: pps-2007-end-of-support.md
             - name: Project Server 2007
               href: project-server-2007-end-of-support.md
-        - name: "Office\_2010"
+        - name: Office 2010
           items:
             - name: Upgrade von Office 2010-Servern und -Clients
               href: upgrade-from-office-2010-servers-and-products.md
@@ -431,7 +431,7 @@
           href: /sharepoint/sharepoint-online
         - name: Skype for Business
           href: /SkypeForBusiness/skype-for-business-online
-        - name: "Microsoft\_Teams"
+        - name: Microsoft Teams
           href: /MicrosoftTeams/Teams-overview
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
@@ -453,7 +453,7 @@
           href: 'https://support.office.com/article/79eb0420-8cbd-4bcb-a90b-ddc7d3ab4b3a'
         - name: Skype for Business
           href: /SkypeForBusiness/skype-for-business-online
-        - name: "Microsoft\_Teams"
+        - name: Microsoft Teams
           href: 'https://docs.microsoft.com/microsoftteams/upgrade-monitor-quality'
         - name: Yammer
           href: 'https://support.office.com/article/e1464355-1f97-49ac-b2aa-dd320b179dbe'
@@ -500,7 +500,7 @@
       href: deploy-update-channels-examples.md
     - name: Allgemeine Bereitstellung der neuesten Versionen
       href: deploy-update-channels-examples-rapid-deploy.md
-- name: "Verwalten von Microsoft\_365 mit PowerShell"
+- name: Verwalten von Microsoft 365 mit PowerShell
   href: manage-microsoft-365-with-microsoft-365-powershell.md
   items:
     - name: Erste Schritte
@@ -508,7 +508,7 @@
       items:
         - name: Warum Sie PowerShell verwenden müssen
           href: why-you-need-to-use-microsoft-365-powershell.md
-        - name: "Verbinden mit Microsoft\_365 über PowerShell"
+        - name: Verbinden mit Microsoft 365 über PowerShell
           href: connect-to-microsoft-365-powershell.md
         - name: Herstellen einer Verbindung mit allen Microsoft 365-Diensten in einem einzigen Windows PowerShell-Fenster
           href: connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window.md
@@ -575,7 +575,7 @@
           href: manage-sharepoint-site-groups-with-powershell.md
     - name: Verwalten von Exchange Online
       href: /powershell/exchange/connect-to-exchange-online-powershell
-    - name: "Verwenden von PowerShell zum Migrieren von E-Mails zu Microsoft\_365"
+    - name: Verwenden von PowerShell zum Migrieren von E-Mails zu Microsoft 365
       href: use-powershell-for-email-migration-to-microsoft-365.md
       items:
         - name: Verwenden von PowerShell zum Ausführen einer Übernahmemigration zu Microsoft 365
@@ -606,6 +606,8 @@
           href: assign-per-user-skype-for-business-online-policies-with-microsoft-365-powershell.md
     - name: Verwalten von Add-Ins mit der PowerShell für zentrale Bereitstellung
       href: use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins.md
+- name: Deployment Lab Kit für Windows 10 und Office 365
+  href: modern-desktop-deployment-and-management-lab.md
 - name: Leitfäden für Testumgebungen
   href: m365-enterprise-test-lab-guides.md
   items:
