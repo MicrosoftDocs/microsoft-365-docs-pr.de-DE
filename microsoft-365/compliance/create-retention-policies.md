@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Mithilfe einer Aufbewahrungsrichtlinie können Sie die Inhalte, die Benutzer mit E-Mails, Dokumenten und Unterhaltungen generieren, effizient verwalten. Bewahren Sie auf, was Sie wollen, und werden Sie los, was Sie nicht mehr wollen.
-ms.openlocfilehash: 7b23ed2b45a24e8999785909f9357043bef731e5
-ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
+ms.openlocfilehash: 9f550aa2e0a79170c4651f29c23a8ed0c8c9b3a4
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710694"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769431"
 ---
 # <a name="create-and-configure-retention-policies"></a>Erstellen und Konfigurieren von Aufbewahrungsrichtlinien
 
@@ -221,11 +221,11 @@ Um zum Standardwert für das Postfach und die SharePoint-Website für die ausgew
 
 ### <a name="configuration-information-for-skype-for-business"></a>Konfigurationsinformationen für Skype for Business
 
-Im Gegensatz zu Exchange-E-Mails kann der Status des Skype-Speicherorts nicht einfach aktiviert werden, um alle Benutzer automatisch einzuschließen. Wenn Sie diesen Speicherort jedoch aktivieren, müssen Sie anschließend manuell die Benutzer auswählen, deren Unterhaltungen Sie aufbewahren möchten:
+Im Gegensatz zu anderen Speicherorten können Sie den Status des Skype-Speicherorts nicht so festlegen, dass alle Benutzer automatisch eingeschlossen sind. Wenn Sie diesen Speicherort aktivieren, müssen Sie stattdessen die Option **Bearbeiten** auswählen, um manuell die Benutzer auszuwählen, deren Unterhaltungen Sie beibehalten möchten:
 
-![Auswählen des Skype-Speicherorts für Aufbewahrungsrichtlinien](../media/skype-location-retention-policies.png)
+![Bearbeiten des Skype-Speicherorts für Aufbewahrungsrichtlinien](../media/skype-location-retention-policies.png)
 
-Bei Auswahl von **Benutzer auswählen** können Sie schnell alle Benutzer hinzufügen, indem Sie das Kontrollkästchen **Alle auswählen** aktivieren. Es ist jedoch wichtig zu wissen, dass jeder Benutzer als ein bestimmtes eingeschlossenes Element in der Richtlinie zählt. Wenn Sie also 1.000-Benutzer hinzufügen, indem Sie das Kontrollkästchen **Alle auswählen** aktivieren, entspricht das dem manuellen Auswählen von 1.000 einzuschließenden Benutzern. Dies ist die maximale unterstützte Anzahl von Skype for Business-Benutzern.
+Nachdem Sie die Option **Bearbeiten** ausgewählt haben, können Sie im Bereich **Skype for Business** schnell alle Benutzer einbeziehen, indem Sie das ausgeblendete Kästchen vor der Spalte **Name** aktivieren. Es ist jedoch wichtig zu wissen, dass jeder Benutzer in der Richtlinie als ein einzelnes eingeschlossenes Element zählt. Wenn Sie also 1.000-Benutzer hinzufügen, indem Sie dieses Kontrollkästchen aktivieren, entspricht das dem manuellen Auswählen von 1.000 einzuschließenden Benutzern. Dies ist die maximale unterstützte Anzahl von Skype for Business-Benutzern.
 
 Achtung: **Aufgezeichnete Unterhaltungen**, ein Ordner in Outlook, ist eine Funktion, die nichts mit der Skype-Archivierung zu tun hat. Die Option **Aufgezeichnete Unterhaltungen** kann vom Endbenutzer deaktiviert werden, die Archivierung für Skype erfolgt jedoch durch das Speichern einer Kopie von Skype-Unterhaltungen in einem ausgeblendeten Ordner, auf den die Benutzer nicht zugreifen können, der aber für eDiscovery verfügbar ist.
 

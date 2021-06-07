@@ -6,10 +6,14 @@
       href: compliance-quick-tasks.md
     - name: Neuerungen in Microsoft 365 Compliance
       href: whats-new.md
-    - name: Microsoft 365 Compliance Center
-      href: microsoft-365-compliance-center.md
     - name: Microsoft 365-Lösungskatalog
       href: microsoft-365-solution-catalog.md
+    - name: Microsoft 365 Compliance Center
+      href: microsoft-365-compliance-center.md
+    - name: Berechtigungen im Microsoft 365 Compliance Center
+      href: microsoft-365-compliance-center-permissions.md
+    - name: Umleiten von Benutzern zum Microsoft 365 Compliance Center
+      href: microsoft-365-compliance-center-redirection.md
     - name: Verwenden Ihres kostenlosen Azure Active Directory-Abonnements
       href: use-your-free-azure-ad-subscription-in-office-365.md
     - name: Planen von Sicherheit und Compliance in Office 365

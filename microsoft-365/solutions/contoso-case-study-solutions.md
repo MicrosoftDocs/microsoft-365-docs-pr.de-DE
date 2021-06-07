@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: So hat ein fiktives, aber repräsentatives globales Unternehmen Microsoft 365-Lösungen bereitgestellt.
-ms.openlocfilehash: 74eacd4a7de2cf60eb2f1f388f3690496c6cc0e1
-ms.sourcegitcommit: e02cf5702af178ddd2968877a808874ecb49ed2c
+ms.openlocfilehash: 3112dc452ff03fbd661ffff80b6b25b1f38f8a66
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/26/2021
-ms.locfileid: "52028925"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788331"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Microsoft 365-Lösungen für die Contoso Corporation
 
@@ -32,7 +32,7 @@ Zunächst, erfahren Sie mehr über die [Contoso Corporation](../enterprise/conto
 
 Sehen Sie als nächstes, wie Contoso Microsoft 365 für diese Lösungen und Szenarien verwendet hat:
 
-- [COVID-19-Reaktion und Infrastruktur für Arbeiten zu Hause und im Büro](contoso-remote-onsite-work.md)
+- [COVID-19-Reaktion und Infrastruktur für die Arbeit zu Hause und im Büro](contoso-remote-onsite-work.md)
 
 - [Ein isoliertes Team für ein streng geheimes Projekt](contoso-team-for-top-secret-project.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Exportieren von Bewertungsmethoden und Eigenschaften pro Gerät
-description: Stellt Informationen zu den APIs zur Verfügung, die "Bedrohungs- und Sicherheitsrisikomanagement" ziehen. Es gibt verschiedene API-Aufrufe, um verschiedene Datentypen zu erhalten. Im Allgemeinen enthält jeder API-Aufruf die erforderlichen Daten für Geräte in Ihrer Organisation. Da die Datenmenge groß sein kann, gibt es zwei Möglichkeiten, sie abzurufen.
-keywords: api, apis, export assessment, per device assessment, per machine assessment, vulnerability assessment report, device vulnerability assessment, device vulnerability report, secure configuration assessment, secure configuration report, software vulnerabilites assessment, software vulnerability report, vulnerability report by machine,
+description: Stellt Informationen zu den APIs bereit, die "Bedrohungs- und Sicherheitsrisikomanagement"-Daten abrufen. Es gibt verschiedene API-Aufrufe, um unterschiedliche Arten von Daten abzurufen. Im Allgemeinen enthält jeder API-Aufruf die erforderlichen Daten für Geräte in Ihrer Organisation. Da die Datenmenge groß sein kann, gibt es zwei Möglichkeiten, sie abzurufen.
+keywords: API, APIs, Exportbewertung, pro Gerätebewertung, pro Computerbewertung, Bericht zur Bewertung von Sicherheitsrisiken, Bewertung der Sicherheitslücken des Geräts, Bericht über Sicherheitsrisiko, Bewertung der sicheren Konfiguration, Bericht über sichere Konfiguration, Bewertung von Software-Sicherheitsrisiken, Bericht über Sicherheitsrisiken nach Computer,
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,11 +17,11 @@ ms.topic: article
 ms.technology: mde
 ms.custom: api
 ms.openlocfilehash: e820875a3350761824c3e4e67311e55507a9cb6f
-ms.sourcegitcommit: 82a4d74020cd93ba444006317cfecc178c6d41dc
+ms.sourcegitcommit: 83df0be7144c9c5d606f70b4efa65369e86693d2
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689201"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52778352"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exportieren von Bewertungsmethoden und Eigenschaften pro Gerät
 
@@ -32,50 +32,50 @@ ms.locfileid: "52689201"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
 ## <a name="api-description"></a>API-Beschreibung
 
-Stellt Methoden und Eigenschaftendetails zu den APIs zur Verfügung, Bedrohungs- und Sicherheitsrisikomanagement Daten auf Gerätebasis ziehen. Es gibt verschiedene API-Aufrufe, um verschiedene Datentypen zu erhalten. Im Allgemeinen enthält jeder API-Aufruf die erforderlichen Daten für Geräte in Ihrer Organisation.
+Stellt Methoden und Eigenschaftendetails zu den APIs bereit, die Bedrohungs- und Sicherheitsrisikomanagement Daten pro Gerät abrufen. Es gibt verschiedene API-Aufrufe, um unterschiedliche Arten von Daten abzurufen. Im Allgemeinen enthält jeder API-Aufruf die erforderlichen Daten für Geräte in Ihrer Organisation.
 
 > [!Note]
 >
-> Sofern nicht anders angegeben, sind **** alle aufgeführten Exportbewertungsmethoden der vollständige Export und nach Gerät **_(auch_** als pro **_Gerät bezeichnet)._**
+> Sofern nicht anders angegeben, sind alle aufgeführten Exportbewertungsmethoden **_vollständige Exporte_** und **_nach Gerät_** (auch als **_pro Gerät_** bezeichnet).
 
 Es gibt drei API-Methoden, die Sie zum Abrufen (Exportieren) verschiedener Informationstypen verwenden können:
 
-1. Bewertung sicherer Konfigurationen exportieren
+1. Exportieren der Bewertung sicherer Konfigurationen
 
 2. Exportieren der Bewertung des Softwarebestands
 
 3. Exportieren der Bewertung von Sicherheitsrisiken
 
-Für jede Methode gibt es unterschiedliche API-Aufrufe, um verschiedene Datentypen zu erhalten. Da die Datenmenge groß sein kann, gibt es zwei Möglichkeiten, sie abzurufen:
+Für jede Methode gibt es unterschiedliche API-Aufrufe, um unterschiedliche Datentypen abzurufen. Da die Datenmenge groß sein kann, gibt es zwei Möglichkeiten, sie abzurufen:
 
-- **OData**  Die API verwendet alle Daten in Ihrer Organisation als Json-Antworten nach dem OData-Protokoll. Diese Methode ist für _kleine Organisationen mit weniger als 100 K-Geräten am besten._ Die Antwort wird paginiert, sodass Sie das odata.nextLink-Feld aus der Antwort verwenden können, \@ um die nächsten Ergebnisse zu erhalten.
+- **OData**  Die API ruft alle Daten in Ihrer Organisation als JSON-Antworten nach dem OData-Protokoll ab. Diese Methode eignet sich am besten für _kleine Organisationen mit weniger als 100-K-Geräten._ Die Antwort ist paginiert, sodass Sie das \@ Feld odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen.
 
-- **über Dateien** Diese API-Lösung ermöglicht das schnellere und zuverlässigere Abrufen größerer Datenmengen. Daher wird es für große Organisationen mit mehr als 100-K-Geräten empfohlen. Diese API verwendet alle Daten in Ihrer Organisation als Downloaddateien. Die Antwort enthält URLs zum Herunterladen aller Daten aus Azure Storage. Mit dieser API können Sie alle Ihre Daten aus Azure Storage wie folgt herunterladen:
+- **über Dateien** Diese API-Lösung ermöglicht das schnellere und zuverlässigere Abrufen größerer Datenmengen. Daher wird es für große Organisationen mit mehr als 100-K-Geräten empfohlen. Diese API ruft alle Daten in Ihrer Organisation als Downloaddateien ab. Die Antwort enthält URLs zum Herunterladen aller Daten aus Azure Storage. Mit dieser API können Sie alle Ihre Daten aus Azure Storage wie folgt herunterladen:
 
-  - Rufen Sie die API auf, um eine Liste der Download-URLs mit allen Organisationsdaten zu erhalten.
+  - Rufen Sie die API auf, um eine Liste der Download-URLs mit allen Organisationsdaten abzurufen.
 
-  - Laden Sie alle Dateien mithilfe der URLs zum Herunterladen herunter, und verarbeiten Sie die Daten nach Ben.
+  - Laden Sie alle Dateien mithilfe der Download-URLs herunter, und verarbeiten Sie die Daten nach Bedarf.
 
-Erfasste Daten (entweder mithilfe von _OData_ oder über Dateien _)_ sind die aktuelle Momentaufnahme des aktuellen Zustands und enthalten keine historischen Daten. Um historische Daten zu sammeln, müssen Kunden die Daten in ihren eigenen Datenspeichern speichern.
+Daten, die gesammelt werden (entweder mit _OData_ oder _über Dateien),_ sind die aktuelle Momentaufnahme des aktuellen Zustands und enthalten keine historischen Daten. Um historische Daten zu sammeln, müssen Kunden die Daten in ihren eigenen Datenspeichern speichern.
 
-## <a name="1-export-secure-configurations-assessment"></a>1. Bewertung sicherer Konfigurationen exportieren
+## <a name="1-export-secure-configurations-assessment"></a>1. Exportieren der Bewertung sicherer Konfigurationen
 
-Gibt alle Konfigurationen und deren Status auf Gerätebasis zurück.
+Gibt alle Konfigurationen und deren Status pro Gerät zurück.
 
-### <a name="11-methods"></a>1.1-Methoden
+### <a name="11-methods"></a>1.1 Methoden
 
 Methode | Datentyp | Beschreibung
 :---|:---|:---
-Export secure configuration assessment **(OData)** | Sichere Konfiguration nach Gerätesammlung. Siehe: [1.2 Properties (OData)](#12-properties-odata) | Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination von DeviceId, ConfigurationId zurück. Die API verwendet alle Daten in Ihrer Organisation als Json-Antworten nach dem OData-Protokoll. Diese Methode ist am besten für kleine Organisationen mit weniger als 100-K-Geräten. Die Antwort wird paginiert, sodass Sie das Feld @odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse zu erhalten.
-Exportieren einer sicheren Konfigurationsbewertung **(über Dateien)** | Sichere Konfiguration nach Gerätesammlung. Siehe: [1.2 Properties (OData)](#12-properties-odata) | Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination von DeviceId, ConfigurationId zurück. Diese API-Lösung ermöglicht das schnellere und zuverlässigere Abrufen größerer Datenmengen. Daher wird es für große Organisationen mit mehr als 100-K-Geräten empfohlen. Diese API verwendet alle Daten in Ihrer Organisation als Downloaddateien. Die Antwort enthält URLs zum Herunterladen aller Daten aus Azure Storage. Mit dieser API können Sie alle Ihre Daten aus Azure Storage wie folgt herunterladen: 1.  Rufen Sie die API auf, um eine Liste der Download-URLs mit allen Organisationsdaten zu erhalten. 2.  Laden Sie alle Dateien mithilfe der URLs zum Herunterladen herunter, und verarbeiten Sie die Daten nach Ben.
+Exportieren der Bewertung der sicheren Konfiguration **(OData)** | Sichere Konfiguration nach Gerätesammlung. Siehe: [1.2-Eigenschaften (OData)](#12-properties-odata) | Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination aus DeviceId, ConfigurationId, zurück. Die API ruft alle Daten in Ihrer Organisation als JSON-Antworten nach dem OData-Protokoll ab. Diese Methode eignet sich am besten für kleine Organisationen mit weniger als 100-K-Geräten. Die Antwort ist paginiert, sodass Sie das Feld @odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen.
+Exportieren der Bewertung der sicheren Konfiguration **(über Dateien)** | Sichere Konfiguration nach Gerätesammlung. Siehe: [1.2-Eigenschaften (OData)](#12-properties-odata) | Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination aus DeviceId, ConfigurationId, zurück. Diese API-Lösung ermöglicht das schnellere und zuverlässigere Abrufen größerer Datenmengen. Daher wird es für große Organisationen mit mehr als 100-K-Geräten empfohlen. Diese API ruft alle Daten in Ihrer Organisation als Downloaddateien ab. Die Antwort enthält URLs zum Herunterladen aller Daten aus Azure Storage. Mit dieser API können Sie alle Ihre Daten aus Azure Storage wie folgt herunterladen: 1.  Rufen Sie die API auf, um eine Liste der Download-URLs mit allen Organisationsdaten abzurufen. 2.  Laden Sie alle Dateien mithilfe der Download-URLs herunter, und verarbeiten Sie die Daten nach Bedarf.
 
-### <a name="12-properties-odata"></a>1.2 Properties (OData)
+### <a name="12-properties-odata"></a>1.2-Eigenschaften (OData)
 
 Eigenschaft (ID) | Datentyp | Beschreibung
 :---|:---|:---
@@ -84,112 +84,112 @@ ConfigurationId | string | Eindeutiger Bezeichner für eine bestimmte Konfigurat
 ConfigurationImpact | string | Bewertung der Auswirkungen der Konfiguration auf die Gesamtkonfigurationsbewertung (1-10)
 ConfigurationName | string | Anzeigename der Konfiguration
 ConfigurationSubcategory | string | Unterkategorie oder Untergruppe, zu der die Konfiguration gehört. In vielen Fällen beschreibt dies bestimmte Funktionen oder Features.
-DeviceId | string | Eindeutige ID für das Gerät im Dienst.
-DeviceName | string | Vollqualifizierter Domänenname (FQDN) des Geräts.
-IsApplicable | bool | Gibt an, ob die Konfiguration oder Richtlinie anwendbar ist
+Deviceid | Zeichenfolge | Eindeutiger Bezeichner für das Gerät im Dienst.
+DeviceName | Zeichenfolge | Vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des Geräts.
+IsApplicable | bool | Gibt an, ob die Konfiguration oder Richtlinie anwendbar ist.
 IsCompliant | bool | Gibt an, ob die Konfiguration oder Richtlinie ordnungsgemäß konfiguriert ist
-IsExpectedUserImpact | bool | Gibt an, ob sich benutzer auswirken wird, wenn die Konfiguration angewendet wird.
-OSPlatform | string | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. Weitere Informationen finden Sie unter tvm supported operating systems and platforms.
-RbacGroupName | string | Die rollenbasierte Zugriffssteuerungsgruppe (RBAC). Wenn dieses Gerät keinem RBAC-Gruppen zugewiesen ist, wird der Wert "Nicht zugewiesen" angezeigt. Wenn die Organisation keine RBAC-Gruppen enthält, ist der Wert "None".
-RecommendationReference | string | Ein Verweis auf die Empfehlungs-ID im Zusammenhang mit dieser Software.
-Zeitstempel | string | Das letzte Mal, als die Konfiguration auf dem Gerät angezeigt wurde
+IsExpectedUserImpact | bool | Gibt an, ob es Auswirkungen auf den Benutzer gibt, wenn die Konfiguration angewendet wird.
+OSPlatform | Zeichenfolge | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. Ausführliche Informationen finden Sie unter tvm-unterstützte Betriebssysteme und Plattformen.
+RbacGroupName | Zeichenfolge | Die Rollenbasierte Zugriffssteuerungsgruppe (RBAC). Wenn dieses Gerät keiner RBAC-Gruppe zugewiesen ist, lautet der Wert "Nicht zugewiesen". Wenn die Organisation keine RBAC-Gruppen enthält, lautet der Wert "None".
+RecommendationReference | Zeichenfolge | Ein Verweis auf die Empfehlungs-ID im Zusammenhang mit dieser Software.
+Zeitstempel | Zeichenfolge | Zeitpunkt, zu dem die Konfiguration zuletzt auf dem Gerät angezeigt wurde
 
 ### <a name="13-properties-via-files"></a>1.3 Eigenschaften (über Dateien)
 
 Eigenschaft (ID) | Datentyp | Beschreibung
 :---|:---|:---
 Exportieren von Dateien | \[Arrayzeichenfolge\] | Eine Liste der Download-URLs für Dateien, die die aktuelle Momentaufnahme der Organisation enthalten.
-GeneratedTime | string | Der Zeitpunkt, zu dem der Export generiert wurde.
+GeneratedTime | Zeichenfolge | Die Zeit, zu der der Export generiert wurde.
 
-## <a name="2-export-software-inventory-assessment"></a>2. Exportieren der Softwareinventarbewertung
+## <a name="2-export-software-inventory-assessment"></a>2. Exportieren der Softwareinventarisierungsbewertung
 
 Gibt alle installierten Software und deren Details auf jedem Gerät zurück.
 
-### <a name="21-methods"></a>2.1-Methoden
+### <a name="21-methods"></a>2.1 Methoden
 
 Methode | Datentyp | Beschreibung
 :---|:---|:---
-Export software inventory assessment **(OData)** | Softwareinventar nach Gerätesammlung. Siehe: [2.2 Properties (OData)](#22-properties-odata) | Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination aus DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion zurück. Die API verwendet alle Daten in Ihrer Organisation als Json-Antworten nach dem OData-Protokoll. Diese Methode ist am besten für kleine Organisationen mit weniger als 100-K-Geräten. Die Antwort wird paginiert, sodass Sie das Feld @odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse zu erhalten.
-Exportieren der Softwareinventarbewertung **(über Dateien)** | Softwareinventar nach Gerätedateien. Siehe: [2.3 Eigenschaften (über Dateien)](#23-properties-via-files) | Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination aus DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion zurück. Diese API-Lösung ermöglicht das schnellere und zuverlässigere Abrufen größerer Datenmengen. Daher wird es für große Organisationen mit mehr als 100-K-Geräten empfohlen. Diese API verwendet alle Daten in Ihrer Organisation als Downloaddateien. Die Antwort enthält URLs zum Herunterladen aller Daten aus Azure Storage. Mit dieser API können Sie alle Ihre Daten aus Azure Storage wie folgt herunterladen: 1.  Rufen Sie die API auf, um eine Liste der Download-URLs mit allen Organisationsdaten zu erhalten. 2.  Laden Sie alle Dateien mithilfe der URLs zum Herunterladen herunter, und verarbeiten Sie die Daten nach Ben.
+Exportieren der Softwareinventarbewertung **(OData)** | Softwareinventarisierung nach Gerätesammlung. Siehe: [2.2-Eigenschaften (OData)](#22-properties-odata) | Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination aus DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion zurück. Die API ruft alle Daten in Ihrer Organisation als JSON-Antworten nach dem OData-Protokoll ab. Diese Methode eignet sich am besten für kleine Organisationen mit weniger als 100-K-Geräten. Die Antwort ist paginiert, sodass Sie das Feld @odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen.
+Exportieren der Softwareinventarisierungsbewertung **(über Dateien)** | Softwareinventarisierung nach Gerätedateien. Siehe: [2.3 Eigenschaften (über Dateien)](#23-properties-via-files) | Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination aus DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion zurück. Diese API-Lösung ermöglicht das schnellere und zuverlässigere Abrufen größerer Datenmengen. Daher wird es für große Organisationen mit mehr als 100-K-Geräten empfohlen. Diese API ruft alle Daten in Ihrer Organisation als Downloaddateien ab. Die Antwort enthält URLs zum Herunterladen aller Daten aus Azure Storage. Mit dieser API können Sie alle Ihre Daten aus Azure Storage wie folgt herunterladen: 1.  Rufen Sie die API auf, um eine Liste der Download-URLs mit allen Organisationsdaten abzurufen. 2.  Laden Sie alle Dateien mithilfe der Download-URLs herunter, und verarbeiten Sie die Daten nach Bedarf.
 
-### <a name="22-properties-odata"></a>2.2 Properties (OData)
+### <a name="22-properties-odata"></a>2.2-Eigenschaften (OData)
 
 Eigenschaft (ID) | Datentyp | Beschreibung
 :---|:---|:---
-DeviceId | string | Eindeutige ID für das Gerät im Dienst.
-DeviceName | string | Vollqualifizierter Domänenname (FQDN) des Geräts.
-DiskPaths | Array[string]  | Datenträgerbeweis, dass das Produkt auf dem Gerät installiert ist.
-EndOfSupportDate | string | Das Datum, an dem die Unterstützung für diese Software endet.
-EndOfSupportStatus | string | Ende des Supportstatus. Kann die folgenden möglichen Werte enthalten: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
-Id | string | Eindeutige ID für den Datensatz.
+Deviceid | Zeichenfolge | Eindeutiger Bezeichner für das Gerät im Dienst.
+DeviceName | Zeichenfolge | Vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des Geräts.
+DiskPaths | Array[string]  | Datenträgernachweis, dass das Produkt auf dem Gerät installiert ist.
+EndOfSupportDate | Zeichenfolge | Das Datum, an dem die Unterstützung für diese Software endet oder endet.
+EndOfSupportStatus | Zeichenfolge | Ende des Supportstatus. Kann diese möglichen Werte enthalten: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software.
+Id | string | Eindeutiger Bezeichner für den Datensatz.
 NumberOfWeaknesses | int|Anzahl der Schwachstellen dieser Software auf diesem Gerät
-OSPlatform | string | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. Weitere Informationen finden Sie unter tvm supported operating systems and platforms.
-RbacGroupName | string | Die rollenbasierte Zugriffssteuerungsgruppe (RBAC). Wenn dieses Gerät keinem RBAC-Gruppen zugewiesen ist, wird der Wert "Nicht zugewiesen" angezeigt. Wenn die Organisation keine RBAC-Gruppen enthält, ist der Wert "None".
-RegistryPaths | Array[string] | Registrierungsbeweis, dass das Produkt auf dem Gerät installiert ist.
-SoftwareFirstSeenTimestamp | string | Das erste Mal, dass diese Software auf dem Gerät angezeigt wurde.
-SoftwareName | string | Name des Softwareprodukts.
-SoftwareVendor | string | Name des Softwareanbieters.
-SoftwareVersion | string | Versionsnummer des Softwareprodukts.
+OSPlatform | Zeichenfolge | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. Ausführliche Informationen finden Sie unter tvm-unterstützte Betriebssysteme und Plattformen.
+RbacGroupName | Zeichenfolge | Die Rollenbasierte Zugriffssteuerungsgruppe (RBAC). Wenn dieses Gerät keiner RBAC-Gruppe zugewiesen ist, lautet der Wert "Nicht zugewiesen". Wenn die Organisation keine RBAC-Gruppen enthält, lautet der Wert "None".
+RegistryPaths | Array[string] | Registrierungsnachweis, dass das Produkt auf dem Gerät installiert ist.
+SoftwareFirstSeenTimestamp | Zeichenfolge | Diese Software wurde zum ersten Mal auf dem Gerät angezeigt.
+SoftwareName | Zeichenfolge | Name des Softwareprodukts.
+SoftwareVendor | Zeichenfolge | Name des Softwareanbieters.
+SoftwareVersion | Zeichenfolge | Versionsnummer des Softwareprodukts.
 
 ### <a name="23-properties-via-files"></a>2.3 Eigenschaften (über Dateien)
 
 Eigenschaft (ID) | Datentyp | Beschreibung
 :---|:---|:---
 Exportieren von Dateien | \[Arrayzeichenfolge\] | Eine Liste der Download-URLs für Dateien, die die aktuelle Momentaufnahme der Organisation enthalten.
-GeneratedTime | string | Der Zeitpunkt, zu dem der Export generiert wurde.
+GeneratedTime | Zeichenfolge | Die Zeit, zu der der Export generiert wurde.
 
-## <a name="3-export-software-vulnerabilities-assessment"></a>3. Bewertung von Softwarerisiken exportieren
+## <a name="3-export-software-vulnerabilities-assessment"></a>3. Bewertung von Software-Sicherheitsrisiken exportieren
 
 Gibt alle bekannten Sicherheitsrisiken auf einem Gerät und deren Details für alle Geräte zurück.
 
-### <a name="31-methods"></a>3.1-Methoden
+### <a name="31-methods"></a>3.1 Methoden
 
 Methode | Datentyp | Beschreibung
 :---|:---|:---
-Export software vulnerabilities assessment **(OData)** | Untersuchungssammlung Siehe: [3.2 Properties (OData)](#32-properties-odata) | Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination aus DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId zurück. Die API verwendet alle Daten in Ihrer Organisation als Json-Antworten nach dem OData-Protokoll. Diese Methode ist am besten für kleine Organisationen mit weniger als 100-K-Geräten. Die Antwort wird paginiert, sodass Sie das Feld @odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse zu erhalten.
-Export software vulnerabilities assessment **(via files)** | Untersuchungsentität Siehe: [3.3 Eigenschaften (über Dateien)](#33-properties-via-files) | Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination aus DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId zurück. Diese API-Lösung ermöglicht das schnellere und zuverlässigere Abrufen größerer Datenmengen. Daher wird es für große Organisationen mit mehr als 100-K-Geräten empfohlen. Diese API verwendet alle Daten in Ihrer Organisation als Downloaddateien. Die Antwort enthält URLs zum Herunterladen aller Daten aus Azure Storage. Mit dieser API können Sie alle Ihre Daten aus Azure Storage wie folgt herunterladen: 1.  Rufen Sie die API auf, um eine Liste der Download-URLs mit allen Organisationsdaten zu erhalten. 2.  Laden Sie alle Dateien mithilfe der URLs zum Herunterladen herunter, und verarbeiten Sie die Daten nach Ben.
+Bewertung von Software-Sicherheitsrisiken **exportieren (OData)** | Untersuchungssammlung Siehe: [3.2 Eigenschaften (OData)](#32-properties-odata) | Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination aus DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId zurück. Die API ruft alle Daten in Ihrer Organisation als JSON-Antworten nach dem OData-Protokoll ab. Diese Methode eignet sich am besten für kleine Organisationen mit weniger als 100-K-Geräten. Die Antwort ist paginiert, sodass Sie das Feld @odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen.
+Bewertung von Software-Sicherheitsrisiken **exportieren (über Dateien)** | Untersuchungsentität Siehe: [3.3 Eigenschaften (über Dateien)](#33-properties-via-files) | Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination aus DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId zurück. Diese API-Lösung ermöglicht das schnellere und zuverlässigere Abrufen größerer Datenmengen. Daher wird es für große Organisationen mit mehr als 100-K-Geräten empfohlen. Diese API ruft alle Daten in Ihrer Organisation als Downloaddateien ab. Die Antwort enthält URLs zum Herunterladen aller Daten aus Azure Storage. Mit dieser API können Sie alle Ihre Daten aus Azure Storage wie folgt herunterladen: 1.  Rufen Sie die API auf, um eine Liste der Download-URLs mit allen Organisationsdaten abzurufen. 2.  Laden Sie alle Dateien mithilfe der Download-URLs herunter, und verarbeiten Sie die Daten nach Bedarf.
 
-### <a name="32-properties-odata"></a>3.2 Properties (OData)
+### <a name="32-properties-odata"></a>3.2-Eigenschaften (OData)
 
 Eigenschaft (ID) | Datentyp | Beschreibung
 :---|:---|:---
-CveId | string | Eindeutige ID, die der Sicherheitslücke unter dem System für häufige Sicherheitsrisiken und -risiken (Common Vulnerabilities and Exposures, CVE) zugewiesen ist.
-CvssScore | string | Die CVSS-Bewertung des CVE.
-DeviceId | string | Eindeutige ID für das Gerät im Dienst.
-DeviceName | string | Vollqualifizierter Domänenname (FQDN) des Geräts.
-DiskPaths | \[Arrayzeichenfolge\] | Datenträgerbeweis, dass das Produkt auf dem Gerät installiert ist.
-ExploitabilityLevel | string | Die Ausnutzungsebene dieser Sicherheitsanfälligkeit (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
-FirstSeenTimestamp | string | Das erste Mal, dass der CVE dieses Produkts auf dem Gerät angezeigt wurde.
-Id | string | Eindeutige ID für den Datensatz.
-LastSeenTimestamp | string | Das letzte Mal, dass der CVE auf dem Gerät angezeigt wurde.
-OSPlatform | string | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. Weitere Informationen finden Sie unter tvm supported operating systems and platforms.
-RbacGroupName | string | Die rollenbasierte Zugriffssteuerungsgruppe (RBAC). Wenn dieses Gerät keinem RBAC-Gruppen zugewiesen ist, wird der Wert "Nicht zugewiesen" angezeigt. Wenn die Organisation keine RBAC-Gruppen enthält, ist der Wert "None".
-RecommendationReference | string | Ein Verweis auf die Empfehlungs-ID im Zusammenhang mit dieser Software.
-RecommendedSecurityUpdate | string | Name oder Beschreibung des Sicherheitsupdates, das vom Softwareanbieter bereitgestellt wird, um die Sicherheitslücke zu bean standen.
-RecommendedSecurityUpdateId | string | Bezeichner der anwendbaren Sicherheitsupdates oder bezeichner für die entsprechenden Anleitungen oder Knowledge Base (KB)-Artikel
-Arrayzeichenfolge für \[ Registrierungspfade\] | Registrierungsbeweis, dass das Produkt auf dem Gerät installiert ist.
-SoftwareName | string | Name des Softwareprodukts.
-SoftwareVendor | string | Name des Softwareanbieters.
-SoftwareVersion | string | Versionsnummer des Softwareprodukts.
-VulnerabilitySeverityLevel | string | Schweregrad, der der Sicherheitslücke zugewiesen ist, basierend auf der CVSS-Bewertung und dynamischen Faktoren, die von der Bedrohungslandschaft beeinflusst werden.
+CveId | Zeichenfolge | Eindeutiger Bezeichner, der dem Sicherheitsrisiko unter dem System für allgemeine Sicherheitsrisiken und Sicherheitsrisiken (CVE) zugewiesen ist.
+CvssScore | Zeichenfolge | Die CVSS-Bewertung des CVE.
+Deviceid | Zeichenfolge | Eindeutiger Bezeichner für das Gerät im Dienst.
+DeviceName | Zeichenfolge | Vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des Geräts.
+DiskPaths | \[Arrayzeichenfolge\] | Datenträgernachweis, dass das Produkt auf dem Gerät installiert ist.
+ExploitabilityLevel | Zeichenfolge | Die Ausnutzbarkeitsstufe dieser Sicherheitsanfälligkeit (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
+FirstSeenTimestamp | Zeichenfolge | Die CVE dieses Produkts wurde zum ersten Mal auf dem Gerät angezeigt.
+Id | string | Eindeutiger Bezeichner für den Datensatz.
+LastSeenTimestamp | Zeichenfolge | Das letzte Mal, als das CVE auf dem Gerät angezeigt wurde.
+OSPlatform | Zeichenfolge | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. Ausführliche Informationen finden Sie unter tvm-unterstützte Betriebssysteme und Plattformen.
+RbacGroupName | Zeichenfolge | Die Rollenbasierte Zugriffssteuerungsgruppe (RBAC). Wenn dieses Gerät keiner RBAC-Gruppe zugewiesen ist, lautet der Wert "Nicht zugewiesen". Wenn die Organisation keine RBAC-Gruppen enthält, lautet der Wert "None".
+RecommendationReference | Zeichenfolge | Ein Verweis auf die Empfehlungs-ID im Zusammenhang mit dieser Software.
+RecommendedSecurityUpdate | Zeichenfolge | Name oder Beschreibung des sicherheitsrelevanten Updates, das vom Softwareanbieter bereitgestellt wurde, um die Sicherheitsanfälligkeit zu beheben.
+RecommendedSecurityUpdateId | Zeichenfolge | Bezeichner der anwendbaren Sicherheitsupdates oder bezeichner für die entsprechenden Anleitungen oder Knowledge Base (KB)-Artikel
+Arrayzeichenfolge für Registrierungspfade \[\] | Registrierungsnachweis, dass das Produkt auf dem Gerät installiert ist.
+SoftwareName | Zeichenfolge | Name des Softwareprodukts.
+SoftwareVendor | Zeichenfolge | Name des Softwareanbieters.
+SoftwareVersion | Zeichenfolge | Versionsnummer des Softwareprodukts.
+VulnerabilitySeverityLevel | Zeichenfolge | Schweregrad, der dem Sicherheitsrisiko zugewiesen ist, basierend auf der CVSS-Bewertung und dynamischen Faktoren, die von der Bedrohungslandschaft beeinflusst werden.
 
 ### <a name="33-properties-via-files"></a>3.3 Eigenschaften (über Dateien)
 
 Eigenschaft (ID) | Datentyp | Beschreibung
 :---|:---|:---
 Exportieren von Dateien | \[Arrayzeichenfolge\]  | Eine Liste der Download-URLs für Dateien, die die aktuelle Momentaufnahme der Organisation enthalten.
-GeneratedTime | string | Der Zeitpunkt, zu dem der Export generiert wurde.
+GeneratedTime | Zeichenfolge | Die Zeit, zu der der Export generiert wurde.
 
-## <a name="see-also"></a>Weitere Artikel
+## <a name="see-also"></a>Siehe auch
 
-- [Exportieren einer sicheren Konfigurationsbewertung pro Gerät](get-assessmnt-secure-cfg.md)
+- [Exportieren der Bewertung der sicheren Konfiguration pro Gerät](get-assessmnt-secure-cfg.md)
 
-- [Exportieren der Softwareinventarbewertung pro Gerät](get-assessmnt-software-inventory.md)
+- [Exportieren der Softwareinventarisierungsbewertung pro Gerät](get-assessmnt-software-inventory.md)
 
-- [Exportieren der Bewertung von Softwarerisiken pro Gerät](get-assessmnt-software-vulnerabilities.md)
+- [Exportieren der Bewertung von Software-Sicherheitsrisiken pro Gerät](get-assessmnt-software-vulnerabilities.md)
 
 Andere verwandte
 
-- [Risikobasierte Bedrohungsrisiken & Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
+- [Risikobasierte Bedrohungs-& Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 
 - [Sicherheitsrisiken in Ihrer Organisation](tvm-weaknesses.md)

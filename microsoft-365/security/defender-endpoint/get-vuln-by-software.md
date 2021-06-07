@@ -1,7 +1,7 @@
 ---
 title: Auflisten von Sicherheitsrisiken nach Software
 description: Rufen Sie eine Liste der Sicherheitsrisiken in der installierten Software ab.
-keywords: apis, graph api, supported apis, get, vulnerabilities list, Microsoft Defender for Endpoint tvm api
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Liste der Sicherheitslücken, Microsoft Defender für Endpunkt-TVM-API
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,13 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: c28417d9782d14d890e771ed401f8ee5d3c26bc0
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 18a2cf87cd0e6b898a9f2aa4d6ecd47a86a8c7f6
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932763"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769917"
 ---
 # <a name="list-vulnerabilities-by-software"></a>Auflisten von Sicherheitsrisiken nach Software
 
@@ -30,7 +31,7 @@ ms.locfileid: "51932763"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,12 +43,12 @@ ms.locfileid: "51932763"
 Rufen Sie eine Liste der Sicherheitsrisiken in der installierten Software ab. 
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Use Microsoft Defender for Endpoint APIs](apis-intro.md) for Details.
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs.](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung | Software.Read.All | "Informationen zur Software zur Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | Software.Read | "Informationen zur Software zur Bedrohungs- und Sicherheitsrisikoverwaltung lesen"
+Anwendung | Software.Read.All | "Informationen zur Bedrohungs- und Sicherheitsrisikoverwaltungssoftware lesen"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Software.Read | "Informationen zur Bedrohungs- und Sicherheitsrisikoverwaltungssoftware lesen"
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```
@@ -64,7 +65,7 @@ GET /api/Software/{Id}/vulnerabilities
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn die Methode erfolgreich ist, gibt sie 200 OK mit einer Liste von Sicherheitsrisiken zurück, die von der angegebenen Software verfügbar gemacht werden. 
+Wenn die Methode erfolgreich ist, wird 200 OK mit einer Liste von Sicherheitsrisiken zurückgegeben, die von der angegebenen Software verfügbar gemacht werden. 
 
 
 ## <a name="example"></a>Beispiel

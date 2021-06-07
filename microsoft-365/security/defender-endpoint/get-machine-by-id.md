@@ -1,7 +1,7 @@
 ---
 title: Abrufen des Computers nach ID-API
-description: Erfahren Sie, wie Sie die Api Computer nach ID abrufen verwenden, um einen Computer mithilfe der Geräte-ID oder des Computernamens in Microsoft Defender for Endpoint abzurufen.
-keywords: apis, graph api, supported apis, get, devices, entity, id
+description: Erfahren Sie, wie Sie die API "Computer nach ID abrufen" verwenden, um einen Computer anhand seiner Geräte-ID oder des Computernamens in Microsoft Defender für Endpunkt abzurufen.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Geräte, Entität, ID
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,21 +14,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 29423230d0d8d4baaa1acca9a3661dc3436f303d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: e4ed5a68b0f4c5e9472702d3cc2798a810e4f84e
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200094"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769473"
 ---
 # <a name="get-machine-by-id-api"></a>Abrufen des Computers nach ID-API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
-> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -36,28 +38,28 @@ ms.locfileid: "51200094"
 
 
 ## <a name="api-description"></a>API-Beschreibung
-Ruft einen [bestimmten Computer über](machine.md) die Geräte-ID oder den Computernamen ab.
+Ruft einen bestimmten [Computer](machine.md) anhand seiner Geräte-ID oder des Computernamens ab.
 
 
-## <a name="limitations"></a>Einschränkungen
-1. Sie können Geräte gemäß Ihrer konfigurierten Aufbewahrungsrichtlinie zuletzt sehen.
-2. Die Tarifeinschränkungen für diese API sind 100 Anrufe pro Minute und 1500 Anrufe pro Stunde.
+## <a name="limitations"></a>Begrenzungen
+1. Sie können Geräte abrufen, die zuletzt gemäß Ihrer konfigurierten Aufbewahrungsrichtlinie angezeigt wurden.
+2. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
 Anwendung |   Machine.Read.All |  "Alle Computerprofile lesen"
 Anwendung |   Machine.ReadWrite.All | "Alle Computerinformationen lesen und schreiben"
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Machine.Read | "Computerinformationen lesen"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | Machine.ReadWrite | "Computerinformationen lesen und schreiben"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Machine.ReadWrite | "Lesen und Schreiben von Computerinformationen"
 
 >[!Note]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
->- Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Daten anzeigen" (Weitere Informationen finden Sie unter [Erstellen](user-roles.md) und Verwalten von Rollen)
->- Der Benutzer muss basierend auf den Gerätegruppeneinstellungen Zugriff auf das Gerät haben (weitere Informationen finden Sie unter [Erstellen](machine-groups.md) und Verwalten von Gerätegruppen).
+>- Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Daten anzeigen" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
+>- Der Benutzer muss basierend auf den Gerätegruppeneinstellungen Zugriff auf das Gerät haben (Weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)
 
 
 ## <a name="http-request"></a>HTTP-Anforderung
@@ -76,8 +78,8 @@ Authorization | String | Bearer {token}. **Erforderlich**.
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn erfolgreich und Gerät vorhanden ist – 200 OK mit der [Computerentität](machine.md) im Textkörper.
-Wenn computer mit der angegebenen ID nicht gefunden wurde - 404 Nicht gefunden.
+Wenn erfolgreich und Gerät vorhanden – 200 OK mit der [Computerentität](machine.md) im Textkörper.
+Wenn der Computer mit der angegebenen ID nicht gefunden wurde – 404 Nicht gefunden.
 
 
 ## <a name="example"></a>Beispiel

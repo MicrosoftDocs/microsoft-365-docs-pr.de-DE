@@ -22,32 +22,32 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
-description: Erfahren Sie, wie Sie einen Domänennamen in Microsoft 365.
-ms.openlocfilehash: 3d5a5568a0e75a06f0880d82ea8e4a1a8d003689
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+description: Erfahren Sie, wie Sie einen Domänennamen in Microsoft 365 kaufen.
+ms.openlocfilehash: c4b3b0ac88671e72ed567998ad9d97486dfb6342
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635462"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779686"
 ---
 # <a name="buy-a-domain-name"></a>Kaufen eines Domänennamens
 
 > [!NOTE]
-> Wenn Ihre Organisation Office 365 21Vianet in China verwendet, lesen Sie [How to buy a domain for Office 365 operated by 21Vianet in China](/buy-a-domain-name?view=o365-21vianet#how-to-buy-a-domain-for-office-365-operated-by-21vianet.md).
+> Wenn Ihre Organisation Office 365 verwendet, die von 21Vianet in China betrieben wird, finden Sie informationen [zum Kauf einer Domäne für Office 365 betrieben von 21Vianet in China.](#how-to-buy-a-domain-for-office-365-operated-by-21vianet)
 
  *Um Domänen hinzuzufügen, zu ändern oder zu entfernen, **müssen** Sie ein **globaler Administrator** eines [Geschäfts- oder Unternehmensplans](https://products.office.com/business/office) sein. Diese Änderungen betreffen den gesamten Mandanten. *Benutzerdefinierte Administratoren* oder *reguläre Benutzer* können diese Änderungen nicht vornehmen.*  
 
  **[Überprüfen Sie die häufig gestellten Fragen (FAQ) zu Domänen](../setup/domains-faq.yml)**, wenn Sie nicht finden, wonach Sie suchen. 
   
-## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Melden Sie sich an, und wechseln Sie zu Einstellungen \> Domänen \> Kaufen einer Domäne
+## <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Melden Sie sich an und wechseln Sie zu Einstellungen \> Domänen \> kaufen
 
 1. Wechseln Sie im Admin Center zur Seite **Einstellungen** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domänen</a>.
     
-3. Wählen Sie **auf der** Seite Domänen die Option Domäne **kaufen aus.**
+3. Wählen Sie auf der Seite **"Domänen"** die Option **"Domäne kaufen"** aus.
     
 Sie können aus den folgenden Domänen der obersten Ebene für Ihre Domäne auswählen.
   
-- .biz
+- BIZ
     
 - .com
     
@@ -69,16 +69,16 @@ Sie können aus den folgenden Domänen der obersten Ebene für Ihre Domäne ausw
     
 
 > [!NOTE]
-> Wenn Sie **Domäne kaufen auswählen,** werden Sie möglicherweise auf die Website Ihres Microsoft-Partners umgeleitet, wenn der Mandant über einen Microsoft-Partner erworben/verwaltet wird.
+> Wenn Sie **"Domäne kaufen"** auswählen, werden Sie möglicherweise auf die Website Ihres Microsoft-Partners umgeleitet, wenn der Mandant über einen Microsoft-Partner erworben/verwaltet wird.
 
 ## <a name="domain-privacy"></a>Domänendatenschutz
-Wir bieten ein kostenloses Domänendatenschutzabonnement mit dem Kauf einer Domäne an. Dadurch bleiben Ihre Kontaktinformationen, die der Registrierung Ihrer Domäne bei ICANN zugeordnet sind, privat. [Weitere Informationen.](https://whois.icann.org/en/privacy-and-proxy-services)
+Wir bieten ein kostenloses Domain Privacy-Abonnement mit dem Kauf einer Domäne an. Dadurch bleiben Ihre Kontaktinformationen an die Registrierung Ihrer Domäne bei ICANN privat. [Weitere Informationen.](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ## <a name="buy-a-domain-from-another-domain-registrar"></a>Erwerben eines Domänennamens von einer anderen Domänenregistrierungsstelle
-Wenn Sie eine Domäne von einer anderen Domänenregistrierungsstelle als [GoDaddy](https://www.godaddy.com)kaufen möchten, wird empfohlen, eine der folgenden Domänen zu verwenden, die die automatische Einrichtung unterstützt (Domain Verbinden). 
+Wenn Sie eine Domäne von einer anderen Domänenregistrierungsstelle als [GoDaddy](https://www.godaddy.com)kaufen möchten, empfehlen wir, unten eine zu verwenden, die die automatische Einrichtung unterstützt (Domänen-Verbinden). 
   
 - [1&amp;1 IONOS](https://www.1and1.com/)
-- [WordPress](https://www.wordpress.com) 
+- [Wordpress](https://www.wordpress.com) 
 
    
 ## <a name="transfer-your-domain-to-a-different-domain-registrar"></a>Übertragen Ihrer Domäne auf eine andere Domänenregistrierungsstelle
@@ -89,27 +89,26 @@ Fordern Sie die Übertragung bei der Registrierungsstelle an, auf die Sie Ihre D
 
 
 ::: moniker range="o365-21vianet"
+
 ## <a name="how-to-buy-a-domain-for-office-365-operated-by-21vianet"></a>Erwerben einer Domäne für Office 365, betrieben von 21Vianet
-
-
 
 Wenn Sie noch über keine eigene Domäne verfügen, können Sie bei einer Domänenregistrierungsstelle, einem Domänenwiederverkäufer oder sogar Ihrem aktuellen Internetanbieter problemlos online eine Domäne erwerben. Sie erhalten bei Ihrer Anmeldung bei Office 365, betrieben von 21Vianet einen Domänennamen wie contoso.partner.onmschina.cn. Vielleicht möchten Sie aber lieber einen benutzerdefinierten Domänennamen wie fourthcoffee.com verwenden.
   
-Zum Einrichten einer Domäne in Microsoft 365 müssen Sie eine Domäne besitzen und einige der DNS-Einträge für Ihre Domäne ändern.
+Um eine Domäne in Microsoft 365 einzurichten, müssen Sie eine Domäne besitzen und einige der DNS-Einträge für Ihre Domäne ändern.
   
 > [!CAUTION]
-> Einige Domänenregistrierungsstellen oder DNS-Hostinganbieter erlauben nicht das Erstellen aller dns-Einträge, die für die Microsoft 365. Die in der folgenden Liste aufgeführten Hostinganbieter unterstützen alle erforderlichen Einträge. Falls Sie erwägen, einen anderen Hostinganbieter zu verwenden, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
+> Einige Domänenregistrierungsstellen oder DNS-Hostinganbieter erlauben nicht das Erstellen aller DNS-Einträge, die für Microsoft 365 erforderlich sind. Die in der folgenden Liste aufgeführten Hostinganbieter unterstützen alle erforderlichen Einträge. Falls Sie erwägen, einen anderen Hostinganbieter zu verwenden, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
-Nachdem Sie Ihre Domäne (bei einer Domänenregistrierungsstelle) registriert haben, melden Sie sich bei Microsoft 365 als Administrator an und richten Ihre Domäne so ein, dass Sie sie mit Ihrer E-Mail-Adresse und anderen Diensten verwenden können.
+Nachdem Sie Ihre Domäne (bei einer Domänenregistrierungsstelle) registriert haben, melden Sie sich bei Microsoft 365 als Administrator an und richten Ihre Domäne ein, damit Sie sie mit Ihrer E-Mail-Adresse und anderen Diensten verwenden können.
   
 > [!NOTE]
-> Die SharePoint öffentlichen Onlinewebsiteinformationen in diesem Artikel gelten nur, wenn Ihre Organisation Microsoft 365 9. März 2015 erworben hat. 
+> Die Informationen SharePoint öffentlichen Onlinewebsite in diesem Artikel gelten nur, wenn Ihre Organisation Microsoft 365 vor dem 9. März 2015 erworben hat. 
 
-### <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Domänenregistrierungsstellen, die alle für die Registrierung erforderlichen DNS-Einträge Microsoft 365
+### <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Domänenregistrierungsstellen, die alle für Microsoft 365 erforderlichen DNS-Einträge unterstützen
 
 - [Oray](https://oray.com/)
     
-- [HiChina](https://www.hichina.com/)
+- [HiChin](https://www.hichina.com/)
     
 - [east.net](http://www.east.net/)
     
@@ -120,5 +119,5 @@ Nachdem Sie Ihre Domäne (bei einer Domänenregistrierungsstelle) registriert ha
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Hinzufügen einer Domäne zu Microsoft 365](../setup/add-domain.md) (Artikel)\
-[Häufig gestellte Fragen](../setup/domains-faq.yml) zu Domänen (Artikel)\
+[Häufig gestellte Fragen zu Domänen](../setup/domains-faq.yml) (Artikel)\
 [Aktualisieren von DNS-Einträgen, um Ihre Website bei Ihrem aktuellen Hostinganbieter zu halten](../dns/update-dns-records-to-retain-current-hosting-provider.md) (Artikel)

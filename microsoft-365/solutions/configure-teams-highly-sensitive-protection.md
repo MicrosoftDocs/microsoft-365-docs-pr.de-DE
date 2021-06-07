@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Hier erfahren Sie, wie Sie Teams bereitstellen, in denen hochgradig vertrauliche Daten geschützt sind.
-ms.openlocfilehash: 7c5485a008434b351eebbec3ea1f20b10d82278a
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: 3e98b1a52e698d52eba16d4296c062d7347759d0
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583688"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788355"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Teams für den Schutz hochgradig vertraulicher Daten konfigurieren
 
@@ -38,6 +38,13 @@ Die "Hochgradig vertraulich"-Stufe bietet den folgenden zusätzlichen Schutz geg
 - Einen restriktiveren standardmäßigen Freigabe-Linktyp
 - Nur Teambesitzer können private Kanäle erstellen.
 - Zugriffsanforderungen für die zugehörige SharePoint-Website werden deaktiviert.
+
+## <a name="video-demonstration"></a>Videodemonstration
+
+Schauen Sie sich dieses Video an, um eine exemplarische Vorgehensweise für die in diesem Artikel beschriebenen Verfahren zu finden.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NzI7]
 
 ## <a name="guest-sharing"></a>Gastfreigabe
 

@@ -20,16 +20,16 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Ermitteln Sie, ob Ihr Mandant und Ihre Benutzer die Anforderungen erfüllen, damit Sie die zentrale Bereitstellung verwenden können, um Office-Add-Ins bereitzustellen.
-ms.openlocfilehash: 63775ed6bab2d595ae87085e1607be5818b355e2
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 531281eba6accfb2e1ffdab1e662a03b077869bd
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782486"
+ms.locfileid: "52779758"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert
 
-Die zentrale Bereitstellung ist die empfohlene und funktionsreichere Möglichkeit für die meisten Kunden, Office-Add-Ins für Benutzer und Gruppen in Ihrer Organisation bereitzustellen. Wenn Sie ein Administrator sind, verwenden Sie diese Anleitung, um festzustellen, ob Ihre Organisation und Ihre Benutzer die Anforderungen erfüllen, damit Sie die zentrale Bereitstellung verwenden können.
+Die zentrale Bereitstellung ist die empfohlene und funktionsreichere Methode für die meisten Kunden, um Office-Add-Ins für Benutzer und Gruppen in Ihrer Organisation bereitzustellen. Wenn Sie ein Administrator sind, verwenden Sie diese Anleitung, um festzustellen, ob Ihre Organisation und Ihre Benutzer die Anforderungen erfüllen, damit Sie die zentrale Bereitstellung verwenden können.
 
 Die zentrale Bereitstellung bietet die folgenden Vorteile:
   
@@ -61,7 +61,7 @@ Folgendes wird von der zentralen Bereitstellung nicht unterstützt:
 ### <a name="office-requirements"></a>Office Anforderungen
 
 - Für Word-, Excel- und PowerPoint-Add-Ins müssen Ihre Benutzer eine der folgenden Optionen verwenden:
-  - Auf einem Windows Gerät, Version 1704 oder höher von Microsoft 365 Enterprise SKUs: E3/E5/F3 oder Business SKUs: Business Basic, Business Standard, Business Premium.
+  - Auf einem Windows Gerät, Version 1704 oder höher Microsoft 365 Enterprise SKUs: E3/E5/F3 oder Business SKUs: Business Basic, Business Standard, Business Premium.
   - Auf einem Mac, Version 15.34 oder höher.
 
 - Für Outlook müssen Ihre Benutzer eine der folgenden Optionen verwenden: 
@@ -121,7 +121,7 @@ Sobald die Ausführung des Tools abgeschlossen ist, wird eine Ausgabedatei im CS
 - Unterstütztes Postfach - Wenn das Postfach für OAuth aktiviert ist
 
 > [!NOTE]
-> Die mehrstufige Authentifizierung wird bei Verwendung des PowerShell-Moduls für die zentrale Bereitstellung nicht unterstützt. Das Modul funktioniert nur mit der Standardauthentifizierung.
+> Die mehrstufige Authentifizierung wird bei Verwendung des PowerShell-Moduls für die zentrale Bereitstellung nicht unterstützt.
   
 ## <a name="user-and-group-assignments"></a>Benutzer- und Gruppenzuordnungen
 

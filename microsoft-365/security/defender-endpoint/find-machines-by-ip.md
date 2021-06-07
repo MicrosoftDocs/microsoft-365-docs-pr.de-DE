@@ -1,7 +1,7 @@
 ---
 title: Suchen von Geräten nach interner IP-API
 description: Suchen von Geräten mit der angeforderten internen IP im Zeitraum von 15 Minuten vor und nach einem bestimmten Zeitstempel
-keywords: apis, graph api, supported apis, get, device, IP, find, find device, by ip, ip
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Gerät, IP, suchen, Gerät suchen, nach IP, IP
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,22 +14,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: fa523a7f9b997f3a8d36dff42d10c1229e7a467f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 46afa945ce86c35e3af1c542eb1a9770041b3430
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200437"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769437"
 ---
 # <a name="find-devices-by-internal-ip-api"></a>Suchen von Geräten nach interner IP-API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -37,29 +38,29 @@ ms.locfileid: "51200437"
 
 
 ## <a name="api-description"></a>API-Beschreibung
-Suchen [Sie Computer,](machine.md) die mit der angeforderten internen IP im Zeitraum von 15 Minuten vor und nach einem bestimmten Zeitstempel gesehen werden.
+Suchen Sie [Computer](machine.md) mit der angeforderten internen IP im Zeitraum von 15 Minuten vor und nach einem bestimmten Zeitstempel.
 
 
-## <a name="limitations"></a>Einschränkungen
+## <a name="limitations"></a>Begrenzungen
 1. Der angegebene Zeitstempel muss in den letzten 30 Tagen sein.
-2. Die Tarifeinschränkungen für diese API sind 100 Anrufe pro Minute und 1500 Anrufe pro Stunde.
+2. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
 Anwendung |   Machine.Read.All |  "Alle Computerprofile lesen"
 Anwendung |   Machine.ReadWrite.All | "Alle Computerinformationen lesen und schreiben"
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Machine.Read | "Computerinformationen lesen"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | Machine.ReadWrite | "Computerinformationen lesen und schreiben"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Machine.ReadWrite | "Lesen und Schreiben von Computerinformationen"
 
 >[!Note]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
-> - Die Antwort umfasst nur Geräte, auf die der Benutzer basierend auf den Gerätegruppeneinstellungen Zugriff hat (weitere Informationen finden Sie unter [Erstellen](machine-groups.md) und Verwalten von Gerätegruppen).
-> - Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Daten anzeigen" (Weitere Informationen finden Sie unter [Erstellen](user-roles.md) und Verwalten von Rollen)
-> - Die Antwort umfasst nur Geräte, auf die der Benutzer basierend auf den Gerätegruppeneinstellungen Zugriff hat (weitere Informationen finden Sie unter [Erstellen](machine-groups.md) und Verwalten von Gerätegruppen).
+> - Die Antwort enthält nur Geräte, auf die der Benutzer basierend auf den Gerätegruppeneinstellungen Zugriff hat (Weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)
+> - Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Daten anzeigen" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
+> - Die Antwort enthält nur Geräte, auf die der Benutzer basierend auf den Gerätegruppeneinstellungen Zugriff hat (Weitere Informationen finden Sie unter [Erstellen und Verwalten von Gerätegruppen).](machine-groups.md)
 
 ## <a name="http-request"></a>HTTP-Anforderung
 ```
@@ -76,7 +77,7 @@ Authorization | String | Bearer {token}. **Erforderlich**.
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn erfolgreich – 200 OK mit liste der Computer im Antworttext.
+Wenn erfolgreich – 200 OK mit der Liste der Computer im Antworttext.
 Wenn der Zeitstempel nicht in den letzten 30 Tagen liegt – 400 Ungültige Anforderung.
 
 ## <a name="example"></a>Beispiel

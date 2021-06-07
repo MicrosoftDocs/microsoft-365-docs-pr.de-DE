@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1ed4b04acd7fec75af4e157837312b824a8d9f98
-ms.sourcegitcommit: a3359982fea01339c7377e3ee89f223788cee0bf
+ms.openlocfilehash: b830c165d91dfdc8c5c6c47abecd73ba7a9621c8
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52696562"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788463"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
@@ -83,9 +83,9 @@ Wenn Sie die Effektivität der Spamfilterung erhöhen möchten, können Sie benu
 
 Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security Center werden gleichzeitig die Spamfilterregel und die zugehörige Spamfilterrichtlinie mit demselben Namen erstellt.
 
-1. Wechseln Sie im Security Center zu **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Antispam**.
+1. Wechseln Sie im Security Center zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
 
-2. Klicken Sie auf ![Symbol „Erstellen“](../../media/m365-cc-sc-create-icon.png) **Richtlinie erstellen**, und wählen Sie dann **Eingehend** aus der Dropdownliste aus.
+2. Klicken Sie auf der Seite **Antispamrichtlinien** auf das ![Symbol „Erstellen“](../../media/m365-cc-sc-create-icon.png) **Richtlinie erstellen**, und wählen Sie dann **Eingehend** aus der Dropdownliste aus.
 
 3. Der Richtlinienassistent wird geöffnet. Konfigurieren Sie auf der Seite **Benennen Sie Ihre Richtlinie** diese Einstellungen:
    - **Name**: Geben Sie einen eindeutigen, aussagekräftigen Namen für die Richtlinie ein.
@@ -242,9 +242,9 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security Center w
 
 ## <a name="use-the-security-center-to-view-anti-spam-policies"></a>Verwenden des Security Centers zum Anzeigen von Antispamrichtlinien
 
-1. Wechseln Sie im Security Center zu **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Antispam**.
+1. Wechseln Sie im Security Center zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
 
-2. Suchen Sie auf der Seite **Antispamrichtlinie** nach einem der folgenden Werte:
+2. Suchen Sie auf der Seite **Antispamrichtlinien** nach einem der folgenden Werte:
    - Der Wert für **Typ** ist **Benutzerdefinierte Antispamrichtlinie**
    - Der Wert für **Name** ist **Eingehende Antispamrichtlinie (Standard)**
 
@@ -259,9 +259,9 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security Center w
 
 ## <a name="use-the-security-center-to-modify-anti-spam-policies"></a>Verwenden des Security Centers zum Ändern von Antispamrichtlinien
 
-1. Wechseln Sie im Security Center zu **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Antispam**.
+1. Wechseln Sie im Security Center zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
 
-2. Wählen Sie auf der Seite **Antispamrichtlinie** eine Antispamrichtlinie aus der Liste aus, indem Sie auf den Namen klicken:
+2. Wählen Sie auf der Seite **Antispamrichtlinien** eine Antispamrichtlinie aus der Liste aus, indem Sie auf den Namen klicken:
    - Eine benutzerdefinierte Richtlinie, die Sie erstellt haben, wobei die Spalte **Typ** den Wert **Benutzerdefinierte Antispamrichtlinie** enthält.
    - Die Standardrichtlinie mit dem Namen **Eingehende Antispamrichtlinie (Standard)**.
 
@@ -275,7 +275,7 @@ Informationen zum Aktivieren oder Deaktivieren einer Richtlinie, zum Festlegen d
 
 Die Standard-Antispamrichtlinie kann nicht deaktiviert werden.
 
-1. Wechseln Sie im Security Center zu **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Antispam**.
+1. Wechseln Sie im Security Center zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
 
 2. Wählen Sie auf der Seite **Antispamrichtlinie** eine Richtlinie mit dem **Typenwert** **Benutzerdefinierte Antispamrichtlinie** aus der Liste aus, indem Sie auf den Namen klicken.
 
@@ -300,7 +300,7 @@ Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften 
 - Im Security Center können Sie die Priorität der Antispamrichtlinie erst nach deren Erstellung ändern. In PowerShell können Sie die standardmäßige Priorität bereits beim Erstellen der Spamfilterregel überschreiben (was sich auf die Priorität vorhandener Regeln auswirken kann).
 - Antispamrichtlinien werden in der Reihenfolge verarbeitet, in der sie angezeigt werden (die erste Richtlinie hat den **Prioritätswert** 0). Die Standard-Antispamrichtlinie hat den Prioritätswert **Am niedrigsten**, und Sie können dies nicht ändern.
 
-1. Wechseln Sie im Security Center zu **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Antispam**.
+1. Wechseln Sie im Security Center zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
 
 2. Wählen Sie auf der Seite **Antispamrichtlinie** eine Richtlinie mit dem **Typenwert** **Benutzerdefinierte Antispamrichtlinie** aus der Liste aus, indem Sie auf den Namen klicken.
 
@@ -317,7 +317,7 @@ Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften 
 
 Wenn eine Nachricht durch eine Spamfilterbewertung in Quarantäne versetzt wird, können Sie Spambenachrichtigungen für Endbenutzer konfigurieren, damit die Empfänger wissen, was mit Nachrichten passiert ist, die an sie gesendet wurden. Weitere Informationen zu diesen Benachrichtigungen finden Sie unter [Spambenachrichtigungen für Endbenutzer in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. Wechseln Sie im Security Center zu **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Antispam**.
+1. Wechseln Sie im Security Center zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
 
 2. Wählen Sie auf der Seite **Antispamrichtlinien** eine Antispamrichtlinie aus der Liste aus, indem Sie auf den Namen klicken:
    - Eine benutzerdefinierte Richtlinie, die Sie erstellt haben, wobei die Spalte **Typ** den Wert **Benutzerdefinierte Antispamrichtlinie** enthält.
@@ -340,11 +340,11 @@ Wenn eine Nachricht durch eine Spamfilterbewertung in Quarantäne versetzt wird,
 
 4. Zurück auf dem Flyout der Richtliniendetails klicken Sie auf **Schließen**.
 
-## <a name="use-the-security-center-to-remove-anti-spam-policies"></a>Verwenden des Security Centers zum Entfernen von Antispamrichtlinien
+## <a name="use-the-security-center-to-remove-custom-anti-spam-policies"></a>Verwenden des Security Centers zum Entfernen von benutzerdefinierten Antispamrichtlinien
 
-Wenn Sie das Security Center verwenden, um eine Antispamrichtlinie zu entfernen, werden sowohl die Spamfilterregel als auch die entsprechende Spamfilterrichtlinie gelöscht. Sie können die Standardrichtlinie nicht entfernen.
+Wenn Sie das Security Center verwenden, um eine benutzerdefinierte Antispamrichtlinie zu entfernen, werden sowohl die Spamfilterregel als auch die entsprechende Spamfilterrichtlinie gelöscht. Die Standard-Antispamrichtlinie kann nicht entfernt werden.
 
-1. Wechseln Sie im Security Center zu **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Antispam**.
+1. Wechseln Sie im Security Center zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
 
 2. Wählen Sie auf der Seite **Antispamrichtlinie** eine Richtlinie mit dem **Typenwert** **Benutzerdefinierte Antispamrichtlinie** aus der Liste aus, indem Sie auf den Namen klicken. Ganz oben auf dem angezeigten Flyout der Richtliniendetails klicken Sie auf ![Symbol „Weiter Aktionen“](../../media/m365-cc-sc-more-actions-icon.png) **Weitere Aktionen** \> ![Symbol „Richtlinie löschen“](../../media/m365-cc-sc-delete-icon.png) **Richtlinie löschen**.
 
@@ -378,9 +378,7 @@ Das Erstellen einer Antispamrichtlinie in PowerShell ist ein zweistufiger Vorgan
  **Hinweise**:
 
 - Sie können eine neue Spamfilterregel erstellen und ihr eine vorhandene, nicht zugeordnete Spamfilterrichtlinie zuweisen. Eine Spamfilterregel kann nicht mit mehreren Spamfilterrichtlinien verknüpft werden.
-
 - Sie können die folgenden Einstellungen für neue Spamfilterrichtlinien in PowerShell konfigurieren, die erst dann im Security Center verfügbar sind, wenn Sie die Richtlinie erstellt haben:
-
   - Erstellen Sie die neue Richtlinie als deaktiviert (_Aktiviert_ `$false` im Cmdlet **New-HostedContentFilterRule**).
   - Legen Sie die Priorität der Richtlinie bei der Erstellung fest (_Priority_ _\<Number\>_) im Cmdlet **New-HostedContentFilterRule**).
 

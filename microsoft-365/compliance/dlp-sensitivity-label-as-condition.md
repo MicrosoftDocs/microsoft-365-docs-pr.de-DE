@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie mehr über die Dienste und Elementtypen, die Sie mit Vertraulichkeitsbezeichnungen als Bedingungen in DLP-Richtlinien verwenden können.
-ms.openlocfilehash: b33e6704a3311740c1e386f77f1c751382ee6958
-ms.sourcegitcommit: 07e536f1a6e335f114da55048844e4a866fe731b
+ms.openlocfilehash: 94d5e9f53471f6113dcc755995a3f94e95a58e53
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "52651092"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779843"
 ---
 # <a name="use-sensitivity-labels-as-conditions-in-dlp-policies"></a>Verwenden von Vertraulichkeitsbezeichnungen als Bedingungen in DLP-Richtlinien
 
@@ -65,6 +65,9 @@ Sie können Vertraulichkeitsbezeichnungen als Bedingungen für diese Elemente un
 \* DLP-Erkennung von E-Mail-Anlagen mit Vertraulichkeitsbezeichnungen wird nur für Office-Dateitypen unterstützt.
 
 \** Anlagen, die in Teams über einen 1:1-Chat oder über Kanäle gesendet werden, werden automatisch auf OneDrive for Business und Microsoft Office SharePoint Online hochgeladen. Wenn also Microsoft Office SharePoint Online oder OneDrive for Business als Speicherorte in ihrer DLP-Richtlinie enthalten sind, werden bezeichnete Anlagen, die in Teams gesendet wurden, automatisch in den Umfang dieser Bedingung einbezogen. Teams muss in der DLP-Richtlinie nicht als Speicherort ausgewählt werden.
+
+> [!NOTE]
+> Die DLP-Funktion zum Erkennen von Vertraulichkeitsbezeichnungen in SharePoint und OneDrive for Business ist eingeschränkt. Weitere Informationen finden Sie unter [Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md#limitations).
 
 ### <a name="supported-scenarios"></a>Unterstützte Szenarien
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Erfahren Sie, wie die Microsoft-Produktivitätsbewertung Messwerte für Personen- und Technologieerfahrungen widerspiegelt und vergleichen Sie sie mit Organisationen ähnlicher Größe.
-ms.openlocfilehash: ded8b3ee6cbe6df308a4e7388107ea394debe020
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 0735fb6d47b475146deade6ab3ca2f8d24ec27a7
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52593841"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779674"
 ---
 # <a name="microsoft-productivity-score"></a>Microsoft-Produktivitätsbewertung 
 
@@ -40,7 +40,7 @@ Es werden Metriken, Erkenntnisse und Empfehlungen in zwei Bereichen bereitgestel
 
 - **Mitarbeitererfahrung:** Quantifiziert, wie die Organisation mit Microsoft 365-Kategorien wie Zusammenarbeit an Inhalten, Mobilität, Kommunikation, Besprechungen und Teamwork arbeitet.  
 
-    In jeder der genannten Kategorien wird auf öffentliche Forschung eingegangen, um bewährte Methoden und die entsprechenden Vorteile im Sinne betrieblicher Effizienz zu ermitteln. So haben Untersuchungen von [Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) beispielsweise ergeben, dass Personen, die in der Cloud zusammenarbeiten und Inhalte für andere freigeben (anstatt Anlagen per E-Mail zu senden), bis zu 100 Minuten pro Woche sparen können. Die Verwendung solcher bewährten Methoden in Ihrer Organisation wird zudem quantifiziert, damit Sie sehen können, wo Sie sich auf dem Weg der digitalen Transformation befinden. 
+    In jeder der genannten Kategorien wird auf öffentliche Forschung eingegangen, um bewährte Methoden und die entsprechenden Vorteile im Sinne betrieblicher Effizienz zu ermitteln. So haben Untersuchungen von Forrester beispielsweise ergeben, dass Personen, die in der Cloud zusammenarbeiten und Inhalte für andere freigeben (anstatt Anlagen per E-Mail zu senden), bis zu 100 Minuten pro Woche sparen können. Die Verwendung solcher bewährten Methoden in Ihrer Organisation wird zudem quantifiziert, damit Sie sehen können, wo Sie sich auf dem Weg der digitalen Transformation befinden. 
 
 - **Technologieerfahrung:** Ihre Organisation hängt von zuverlässigen und leistungsfähigen Technologien wie auch von der effizienten Nutzung von Microsoft 365 ab. [Endpunktanalyse:](https://aka.ms/endpointanalytics) Sie hilft Ihnen zu verstehen, wie Ihre Organisation durch Probleme mit der Leistung und Integrität Ihrer Hardware und Software beeinträchtigt werden kann. Die Microsoft 365 Apps-Integrität hilft Ihnen zu verstehen, ob Microsoft 365-Apps auf den Geräten in Ihrer Organisation in den empfohlenen Kanälen ausgeführt werden.
 

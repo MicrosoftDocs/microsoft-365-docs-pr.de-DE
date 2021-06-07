@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erstellen Sie Aufbewahrungsbezeichnungen und Richtlinien für das automatische Anwenden von Bezeichnungen, damit Sie Bezeichnungen automatisch auf Inhalte anwenden können, die Sie beibehalten möchten, und nicht benötigte Inhalte löschen können.
-ms.openlocfilehash: 12e909964422d0c15312c1794ce3d9aacc2a1da8
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+ms.openlocfilehash: 0324f988402d407e30d10a725aa5acebb0a69964
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107637"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788397"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Aufbewahrungsbezeichnungen automatisch anwenden, um Inhalte beizubehalten oder zu löschen
 
@@ -130,23 +130,21 @@ Aufbewahrungsbezeichnungen können automatisch auf Inhalte angewendet werden, we
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Automatisches Anwenden von Bezeichnungen auf Inhalte mit bestimmten Typen von vertraulichen Informationen
 
 > [!WARNING]
-> Für diese Konfiguration gilt derzeit eine bekannte Einschränkung, bei der allen E-Mails ohne Bezeichnungen immer die ausgewählte Aufbewahrungsbezeichnung zugewiesen wird, wenn es eine Übereinstimmung für die von Ihnen ausgewählten Typen vertraulicher Informationen gibt. Selbst wenn Sie z. B. die Richtlinie für die automatische Anwendung auf bestimmte Benutzer beschränken oder andere Speicherorte als Exchange für die Richtlinie auswählen, wird die Bezeichnung auf E-Mails ohne Bezeichnungen immer angewendet, wenn eine Übereinstimmung vorliegt.
+> Für diese Konfiguration gilt derzeit eine bekannte Einschränkung, bei der allen E-Mails ohne Bezeichnungen immer die ausgewählte Aufbewahrungsbezeichnung zugewiesen wird, wenn es eine Übereinstimmung für die von Ihnen ausgewählten Typen vertraulicher Informationen gibt. Selbst wenn Sie z. B. die Richtlinie für die automatische Anwendung auf bestimmte Benutzer beschränken oder andere Speicherorte als Exchange für die Richtlinie auswählen, wird die Bezeichnung auf E-Mails ohne Bezeichnungen immer angewendet, wenn eine Übereinstimmung vorliegt.
 
-Wenn Sie automatisch angewendete Richtlinien für Aufbewahrungsbezeichnungen für vertrauliche Informationen erstellen, wird dieselbe Liste von Richtlinienvorlagen wie beim Erstellen einer DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) angezeigt. Jede Vorlage ist für die Suche nach bestimmten Typen vertraulicher Informationen vorkonfiguriert. Die hier gezeigte Vorlage sucht beispielsweise nach US ITIN-, SSN- und Reisepassnummern aus der **Datenschutz**-Kategorie und der Vorlage **USA – Daten mit persönlich identifizierbaren Informationen (PII)**:
+Wenn Sie automatisch angewendete Richtlinien für Aufbewahrungsbezeichnungen für vertrauliche Informationen erstellen, wird dieselbe Liste von Richtlinienvorlagen wie beim Erstellen einer DLP-Richtlinie (Data Loss Prevention, Verhinderung von Datenverlust) angezeigt. Jede Vorlage ist für die Suche nach bestimmten Typen vertraulicher Informationen vorkonfiguriert. Im folgenden Beispiel wurden die Typen vertraulicher Informationen aus der Kategorie **Datenschutz** und aus der Vorlage **"USA – Personenbezogene Daten (PII)"** verwendet:
 
 ![Richtlinienvorlagen für Arten von vertraulichen Informationen](../media/sensitive-info-configuration.png)
 
 Weitere Informationen zu Typen vertraulicher Informationen finden Sie unter [Entitätsdefinitionen für Typen vertraulicher Informationen](sensitive-information-type-entity-definitions.md). Derzeit werden [genaue Datenübereinstimmungen](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) und [Erstellen eines digitalen Dokumentfingerabdrucks](document-fingerprinting.md) für dieses Szenario nicht unterstützt.
 
-Nach der Auswahl einer Richtlinienvorlage können Sie beliebige Typen vertraulicher Informationen hinzufügen oder entfernen, und Sie können die Instanzenzahl und die Übereinstimmungsgenauigkeit ändern. Im folgenden Beispielscreenshot wird eine Aufbewahrungsbezeichnung nur dann automatisch angewendet, wenn Folgendes zutrifft:
+Nach der Auswahl einer Richtlinienvorlage können Sie beliebige Typen vertraulicher Informationen hinzufügen oder entfernen, und Sie können das Konfidenzniveau und die Anzahl der Instanzen ändern. Im vorherigen Beispielscreenshot wurden diese Optionen so geändert, dass eine Aufbewahrungsbezeichnung nur dann automatisch angewendet wird, wenn Folgendes zutrifft: dann automatisch angewendet, wenn Folgendes zutrifft:
   
-- Der erkannte Typ vertraulicher Informationen hat eine Übereinstimmungsgenauigkeit (oder eine Zuverlässigkeitsstufe) von mindestens 75. Viele vertrauliche Informationstypen werden mit mehreren Mustern definiert. Dabei erfordert ein Muster mit einer höheren Übereinstimmungsgenauigkeit mehr Nachweise, um gefunden zu werden (z. B. Stichwörter, Datumsangaben oder Adressen), während ein Muster mit einer niedrigeren Übereinstimmungsgenauigkeit weniger Nachweise erfordert.  Je niedriger die **minimale** Übereinstimmungsgenauigkeit, desto einfacher können Inhalte die Bedingung erfüllen.
+- Der erkannte Typ vertraulicher Informationen besitzt eine Übereinstimmungsgenauigkeit (oder ein [Konfidenzniveau](sensitive-information-type-learn-about.md#more-on-confidence-levels)) von mindestens **mittlerer Konfidenz** für zwei der Typen vertraulicher Informationen und **hoher Konfidenz** für einen Typ. Viele vertrauliche Informationstypen werden mit mehreren Mustern definiert. Dabei erfordert ein Muster mit einer höheren Übereinstimmungsgenauigkeit mehr Nachweise, um gefunden zu werden (z. B. Stichwörter, Datumsangaben oder Adressen), während ein Muster mit einer niedrigeren Übereinstimmungsgenauigkeit weniger Nachweise erfordert.  Je niedriger das Konfidenzniveau, desto einfacher ist es für den Inhalt, die Bedingung zu erfüllen, aber mit dem Potenzial für mehr falsch-positive Ergebnisse.
 
-- Der Inhalt besteht aus zwischen einer und neun Instanzen von einem dieser drei vertraulichen Informationstypen. Sie können den **bis**-Wert löschen, sodass er in **Beliebig** geändert wird.
+- Der Inhalt besteht aus zwischen einer und neun Instanzen von einem dieser drei Typen vertraulicher Informationen. Der Standardwert für den "**nach**"-Wert ist "**Alle**".
 
 Weitere Informationen zu diesen Optionen finden Sie in der folgenden Anleitung aus der DLP-Dokumentation [Optimieren von Regeln, um Übereinstimmungen zu vereinfachen oder zu erschweren](data-loss-prevention-policies.md#tuning-rules-to-make-them-easier-or-harder-to-match).
-    
-![Optionen zum Identifizieren von Typen vertraulicher Informationen](../media/de255881-f596-4c8d-8359-e974e3a0819a.png)
 
 Folgendes ist bei der Verwendung von Typen vertraulicher Informationen zum automatischen Anwenden von Aufbewahrungsbezeichnungen zu beachten:
 
@@ -170,13 +168,13 @@ Folgendes muss berücksichtigt werden, wenn Sie Stichwörter oder durchsuchbare 
 
 - Wenn Sie eine benutzerdefinierte Eigenschaft einer der Einschränkungseigenschaften zuordnen, warten Sie 24 Stunden, bevor Sie sie in Ihrer KQL-Abfrage für eine Aufbewahrungsbezeichnung verwenden.
 
-- Verwaltete SharePoint-Eigenschaften können zwar durch die Verwendung von Aliasen umbenannt werden, Sie sollten diese aber nicht für KQL-Abfragen in Ihren Bezeichnungen verwenden. Sie müssen immer den tatsächlichen Namen der verwalteten Eigenschaft angeben, z. B "RefinableString01".
+- Verwaltete SharePoint-Eigenschaften können zwar durch die Verwendung von Aliasen umbenannt werden, Sie sollten diese aber nicht für KQL-Abfragen in Ihren Bezeichnungen verwenden. Sie müssen immer den tatsächlichen Namen der verwalteten Eigenschaft angeben, z. B "RefinableString01".
 
 - Um nach Werten zu suchen, die Leerzeichen oder Sonderzeichen enthalten, schließen Sie den Suchbegriff in doppelte Anführungszeichen (`" "`) ein; z. B. `subject:"Financial Statements"`.
 
 - Verwenden Sie die Eigenschaft *DocumentLink* anstelle von *Path*, um ein Element auf der Grundlage seiner URL zuzuordnen. 
 
-- Suffixsuchen mit Platzhalter (z. B. `*cat`) oder Teilzeichenfolgensuchen mit Platzhalter (z. B. `*cat*`) werden nicht unterstützt. Präfixsuchen mit Platzhaltern (z. B. `cat*`) werden jedoch unterstützt.
+- Suffixsuchen mit Platzhalter (z. B. `*cat`) oder Teilzeichenfolgensuchen mit Platzhalter (z. B. `*cat*`) werden nicht unterstützt. Präfixsuchen mit Platzhaltern (z. B. `cat*`) werden jedoch unterstützt.
 
 - Beachten Sie, dass teilweise indizierte Elemente dafür verantwortlich sein können, dass Elemente, die eigentlich mit Bezeichnungen versehen werden sollten, nicht bezeichnet werden, oder dass Elemente mit Bezeichnungen versehen werden, von denen Sie erwarten, dass sie von der Bezeichnung ausgeschlossen werden, wenn Sie den Operator NOT verwenden. Weitere Informationen finden Sie unter [Teilweise indizierte Elemente in der Inhaltssuche](partially-indexed-items-in-content-search.md).
 

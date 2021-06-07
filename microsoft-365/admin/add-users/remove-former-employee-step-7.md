@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Führen Sie die folgenden Schritte aus, um das Benutzerkonto eines ehemaligen Mitarbeiters zu löschen.
-ms.openlocfilehash: 735821c9c4d6edf3d23fa3535ed9fa6b3d294b8c
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: e9f87f68650394a81c735346db929bf592e91d18
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782381"
+ms.locfileid: "52779831"
 ---
 # <a name="step-7---delete-a-former-employees-user-account"></a>Schritt 7 – Löschen des Benutzerkontos eines ehemaligen Mitarbeiters
 
@@ -84,6 +84,8 @@ Die oben genannten Vorgänge können an drei Stellen ausgeführt werden:
   
  **Schnellste Option für einen Benutzer mit lokaler Präsenz und im Exchange-Rechenzentrum**: Beenden Sie die Sitzung über das Azure Active Directory Admin Center bzw. das Exchange Admin Center, UND führen Sie die Änderung auch in der lokalen Umgebung auch. Andernfalls wird die Änderung im Azure Active Directory Admin Center bzw. Exchange Admin Center durch DirSync überschrieben.
   
-## <a name="related-content"></a>Verwandte Inhalte
+## <a name="related-articles"></a>Verwandte Artikel
 
-[Wiederherstellen eines Benutzers](restore-user.md) (Artikel)/Zurücksetzen [von Kennwörtern](reset-passwords.md) (Artikel)
+[Wiederherstellen eines Benutzers](restore-user.md)
+
+[Zurücksetzen von Kennwörtern](reset-passwords.md)

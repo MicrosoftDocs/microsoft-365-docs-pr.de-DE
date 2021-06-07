@@ -1,8 +1,8 @@
 ---
-title: Microsoft Defender for Endpoint Flow Connector
+title: Microsoft Defender für Endpunkt Flow Connector
 ms.reviewer: ''
-description: Verwenden Sie Microsoft Defender for Endpoint Flow Connector, um die Sicherheit zu automatisieren und einen Fluss zu erstellen, der bei jedem Auftreten einer neuen Warnung für Ihren Mandanten ausgelöst wird.
-keywords: flow, supported apis, api, Microsoft flow, query, automation
+description: Verwenden Sie Microsoft Defender für Endpunkt Flow Connector, um die Sicherheit zu automatisieren und einen Fluss zu erstellen, der jedes Mal ausgelöst wird, wenn eine neue Warnung auf Ihrem Mandanten auftritt.
+keywords: Flow, unterstützte APIs, API, Microsoft-Fluss, Abfrage, Automatisierung
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,15 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 33a7c7b1907ac761dfdde43a70bfb8f515235150
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: dd0cc3c2da134750f905b1f80746d6ec65cc70b2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929299"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769703"
 ---
-# <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (früher Microsoft Flow) und Azure Functions
+# <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (früher Microsoft Flow) und Azure-Funktionen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,29 +33,29 @@ ms.locfileid: "51929299"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
-Das Automatisieren von Sicherheitsverfahren ist eine Standardanforderung für jedes moderne Security Operations Center. Der Mangel an professionellen Cyber defenders zwingt SOC, auf effizienteste Weise zu arbeiten, und Automatisierung ist ein Muss. Microsoft Power Automate unterstützt verschiedene Connectors, die genau dafür erstellt wurden. Sie können eine End-to-End-Prozedurautomatisierung innerhalb weniger Minuten erstellen.
+Die Automatisierung von Sicherheitsverfahren ist eine Standardanforderung für jedes moderne Security Operations Center. Der Mangel an professionellen Cyber defendern zwingt SOC, auf die effizienteste Weise zu arbeiten, und Automatisierung ist ein Muss. Microsoft Power Automate unterstützt verschiedene Connectors, die genau dafür erstellt wurden. Sie können innerhalb weniger Minuten eine End-to-End-Prozedurautomatisierung erstellen.
 
-Microsoft Defender API verfügt über einen offiziellen Flow Connector mit vielen Funktionen.
+Die Microsoft Defender-API verfügt über einen offiziellen Flow Connector mit vielen Funktionen.
 
 ![Abbildung der Anmeldeinformationen bearbeiten1](images/api-flow-0.png)
 
 > [!NOTE]
-> Weitere Informationen zu den Voraussetzungen für die Lizenzierung von PremiumConnectors finden Sie unter [Licensing for premium connectors](https://docs.microsoft.com/power-automate/triggers-introduction#licensing-for-premium-connectors).
+> Weitere Informationen zu den Voraussetzungen für die Lizenzierung von Premium-Connectors finden Sie unter ["Lizenzierung für Premium-Connectors".](https://docs.microsoft.com/power-automate/triggers-introduction#licensing-for-premium-connectors)
 
 
 ## <a name="usage-example"></a>Verwendungsbeispiel
 
-Im folgenden Beispiel wird veranschaulicht, wie Sie eine Flow, die jedes Mal ausgelöst wird, wenn eine neue Warnung für Ihren Mandanten auftritt.
+Im folgenden Beispiel wird veranschaulicht, wie Sie ein Flow erstellen, das jedes Mal ausgelöst wird, wenn eine neue Warnung auf Ihrem Mandanten auftritt.
 
-1. Melden Sie sich bei [Microsoft Power Automate an.](https://flow.microsoft.com)
+1. Melden Sie sich bei [Microsoft Power Automate](https://flow.microsoft.com)an.
 
-2. Wechseln Sie **zu My flows**  >  **New**  >  **Automated-from leer**.
+2. Wechseln Sie zu **"My flows**  >  **New**  >  **Automated-from blank".**
 
-    ![Abbildung der Anmeldeinformationen für die Bearbeitung2](images/api-flow-1.png)
+    ![Abbildung der Anmeldeinformationen bearbeiten2](images/api-flow-1.png)
 
-3. Wählen Sie einen Namen für Flow, suchen Sie nach "Microsoft Defender ATP Trigger" als Trigger, und wählen Sie dann den neuen Alerts-Trigger aus.
+3. Wählen Sie einen Namen für Ihre Flow aus, suchen Sie nach "Microsoft Defender ATP Triggers" als Auslöser, und wählen Sie dann den neuen Trigger "Alerts" aus.
 
     ![Abbildung der Anmeldeinformationen bearbeiten3](images/api-flow-2.png)
 
@@ -62,35 +63,35 @@ Jetzt haben Sie eine Flow, die jedes Mal ausgelöst wird, wenn eine neue Warnung
 
 ![Abbildung der Anmeldeinformationen bearbeiten4](images/api-flow-3.png)
 
-Jetzt müssen Sie nur noch die nächsten Schritte auswählen.
-Beispielsweise können Sie das Gerät isolieren, wenn der Schweregrad der Warnung hoch ist, und eine E-Mail darüber senden.
-Der Warnungsauslöser stellt nur die Warnungs-ID und die Computer-ID zur Verfügung. Sie können den Connector verwenden, um diese Entitäten zu erweitern.
+Sie müssen nur noch die nächsten Schritte auswählen.
+Sie können das Gerät beispielsweise isolieren, wenn der Schweregrad der Warnung hoch ist, und eine E-Mail darüber senden.
+Der Warnungsauslöser stellt nur die Warnungs-ID und die Computer-ID bereit. Sie können den Connector verwenden, um diese Entitäten zu erweitern.
 
-### <a name="get-the-alert-entity-using-the-connector"></a>Get the Alert entity using the connector
+### <a name="get-the-alert-entity-using-the-connector"></a>Abrufen der Warnungsentität mithilfe des Connectors
 
-1. Wählen **Microsoft Defender ATP** für den neuen Schritt aus.
+1. Wählen Sie **Microsoft Defender ATP** für den neuen Schritt aus.
 
-2. Wählen Sie **Warnungen – Abrufen einer einzelnen Warnungs-API aus.**
+2. Wählen Sie **Warnungen aus – Rufen Sie die api für einzelne Warnungen** ab.
 
-3. Legen Sie **die Warnungs-ID** aus dem letzten Schritt als **Eingabe .**
+3. Legen Sie die **Warnungs-ID** aus dem letzten Schritt als **Eingabe** fest.
 
     ![Abbildung der Anmeldeinformationen bearbeiten5](images/api-flow-4.png)
 
 ### <a name="isolate-the-device-if-the-alerts-severity-is-high"></a>Isolieren des Geräts, wenn der Schweregrad der Warnung hoch ist
 
-1. Fügen **Sie Condition** als neuen Schritt hinzu.
+1. Fügen Sie **"Bedingung"** als neuen Schritt hinzu.
 
-2. Überprüfen Sie, ob der Schweregrad der Warnung **dem Wert High** entspricht.
+2. Überprüfen Sie, ob der Schweregrad der Warnung **"Hoch" ist.**
 
-   Wenn ja, fügen Sie die **Microsoft Defender ATP - Computeraktion** mit der Computer-ID und einem Kommentar isolieren hinzu.
+   Wenn ja, fügen Sie die **Microsoft Defender ATP – Computeraktion isolieren** mit der Computer-ID und einem Kommentar hinzu.
 
     ![Abbildung der Anmeldeinformationen bearbeiten6](images/api-flow-5.png)
 
-3. Fügen Sie einen neuen Schritt zum Senden von E-Mails zu Warnung und Isolation hinzu. Es gibt mehrere E-Mail-Connectors, die sehr einfach zu verwenden sind, z. B. Outlook oder Gmail.
+3. Fügen Sie einen neuen Schritt für die E-Mail-Nachricht über die Warnung und die Isolation hinzu. Es gibt mehrere E-Mail-Connectors, die sehr einfach zu verwenden sind, z. B. Outlook oder Gmail.
 
 4. Speichern Sie Ihren Flow.
 
-Sie können auch einen **geplanten Fluss** erstellen, in dem Erweiterte Suchabfragen und vieles mehr ausgeführt werden.
+Sie können auch einen **geplanten** Fluss erstellen, der Abfragen der erweiterten Suche ausführt und vieles mehr!
 
 ## <a name="related-topic"></a>Verwandtes Thema
 - [Microsoft Defender für Endpunkt-APIs](apis-intro.md)

@@ -1,7 +1,7 @@
 ---
-title: Abrufen der IP-Statistik-API
-description: Mit Microsoft Defender for Endpoint erhalten Sie die neuesten Statistiken für Ihre IP.
-keywords: apis, graph api, supported apis, get, ip, statistics, prevalence
+title: IP-Statistik-API abrufen
+description: Rufen Sie die neuesten Statistiken für Ihre IP mit Microsoft Defender für Endpunkt ab.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, IP, Statistiken, Verbreitung
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,15 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: c47a5e58b1888447a4428fad78e71b85cfe79b69
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 55bf10d01093c17ba2d186ce0a1d1313db2c3a75
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166729"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52770085"
 ---
-# <a name="get-ip-statistics-api"></a>Abrufen der IP-Statistik-API
+# <a name="get-ip-statistics-api"></a>IP-Statistik-API abrufen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -30,7 +31,7 @@ ms.locfileid: "51166729"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -39,20 +40,20 @@ ms.locfileid: "51166729"
 ## <a name="api-description"></a>API-Beschreibung
 Ruft die Statistiken für die angegebene IP ab.
 
-## <a name="limitations"></a>Einschränkungen
-1. Die Tarifeinschränkungen für diese API sind 100 Anrufe pro Minute und 1500 Anrufe pro Stunde.
+## <a name="limitations"></a>Begrenzungen
+1. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
 ## <a name="permissions"></a>Berechtigungen
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie [unter Use Microsoft Defender for Endpoint APIs](apis-intro.md)
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs](apis-intro.md)
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |   Ip.Read.All |   "Lesen von IP-Adressprofilen"
-Delegiert (Geschäfts-, Schul- oder Unikonto) | Ip.Read.All |  "Lesen von IP-Adressprofilen"
+Anwendung |   Ip.Read.All |   "Ip-Adressprofile lesen"
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Ip.Read.All |  "Ip-Adressprofile lesen"
 
 >[!NOTE]
 > Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:
->- Der Benutzer benötigt mindestens die folgende Rollenberechtigung: "Daten anzeigen" (Weitere Informationen finden Sie unter [Erstellen](user-roles.md) und Verwalten von Rollen)
+>- Der Benutzer muss mindestens über die folgende Rollenberechtigung verfügen: "Daten anzeigen" (Weitere Informationen finden Sie unter ["Erstellen und Verwalten von Rollen")](user-roles.md)
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -70,13 +71,13 @@ Authorization | String | Bearer {token}. **Erforderlich**.
 
 Name | Typ | Beschreibung
 :---|:---|:---
-lookBackHours | Int32 | Definiert die Stunden, die wir zurücksuchen, um die Statistiken zu erhalten. Standardmäßig 30 Tage. **Optional**.
+lookBackHours | Int32 | Definiert die Stunden, die wir zurücksuchen, um die Statistiken abzurufen. Der Standardwert ist 30 Tage. **Optional**.
 
 ## <a name="request-body"></a>Anforderungstext
 Empty
 
 ## <a name="response"></a>Antwort
-Wenn erfolgreich und ip vorhanden ist – 200 OK mit statistischen Daten im Textkörper. IP nicht vorhanden – 404 Nicht gefunden.
+Wenn erfolgreich und ip vorhanden – 200 OK mit statistischen Daten im Textkörper. IP nicht vorhanden – 404 Nicht gefunden.
 
 
 ## <a name="example"></a>Beispiel
@@ -107,9 +108,9 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 | Name | Beschreibung |
 | :--- | :---------- |
-| Organisationsprävalenz | die unterschiedliche Anzahl von Geräten, die die Netzwerkverbindung zu dieser IP geöffnet haben. |
-| Org first seen | die erste Verbindung für diese IP in der Organisation. |
+| Verbreitung von Organisationen | die unterschiedliche Anzahl von Geräten, die eine Netzwerkverbindung mit dieser IP-Adresse hergestellt haben. |
+| Organisation zuerst gesehen | die erste Verbindung für diese IP in der Organisation. |
 | Organisation zuletzt gesehen  | die letzte Verbindung für diese IP in der Organisation. |
 
 > [!NOTE]
-> Diese Statistikinformationen basieren auf Daten aus den letzten 30 Tagen. 
+> Diese statistischen Informationen basieren auf Daten aus den letzten 30 Tagen. 

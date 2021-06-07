@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Administratoren können sich über die Anti-Spoofing-Funktionen informieren, die in Exchange Online Protection (EOP) verfügbar sind und die dazu beitragen können, Phishing-Angriffe von gefälschten Absendern und Domänen abzuschwächen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7680c2f4eae54aa53eba72b328baf1bf92fbcf98
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 17228f634dc4aee9cfd416ca676920a5b4e0fba2
+ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537967"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52779494"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Schutz vor Spoofing in EOP
 
@@ -54,14 +54,14 @@ Die folgenden Anti-Spoofing-Technologien stehen in EOP zur Verfügung:
 
 - **Zulassen oder Blockieren von Spoofingabsendern in der Liste Mandantenzulassungsliste/ -sperrliste**: Wenn Sie die Sicherheitsbewertung in dem Spoofintelligenz-Erkenntnis außer Kraft setzen, wird der Spoofingabsender zu einem manuellen zugelassenen oder blockierten Eintrag, die nur auf der Registerkarte **Spoofen** in der Mandantenzulassungsliste/ -sperrliste angezeigt wird. Sie können auch zugelassene oder blockierte Einträge für Spoofingabsender erstellen, bevor diese von der Spoofintelligenz erkannt werden. Weitere Informationen finden Sie unter [Verwalten der Mandantenzulassungsliste/ -sperrliste in EOP](tenant-allow-block-list.md).
 
-- **Antiphishingrichtlinien**: In EOP enthalten Antiphishingrichtlinien die folgenden Antispoofingeinstellungen:
+- **Antiphishingrichtlinien**: In EOP und Microsoft Defender für Office 365 enthalten Antiphishingrichtlinien die folgenden Antispoofingeinstellungen:
   - Aktivieren oder Deaktivieren der Spoofintelligenz.
   - Aktivieren oder Deaktivieren der Identifizierung nicht authentifizierter Absender in Outlook.
   - Angeben der Aktion für blockierte Spoofingsbsender.
 
   Weitere Informationen finden Sie unter [Spoofeinstellungen in Antiphishingrichtlinien](set-up-anti-phishing-policies.md#spoof-settings).
 
-  **Hinweis**: Antiphishingrichtlinien in Microsoft Defender für Office 365 enthalten zusätzlichen Schutz, einschließlich des **Identitätswechsel**-Schutzes. Weitere Informationen finden Sie unter [Exklusive Einstellungen in Antiphishingrichtlinien in Microsoft Defender für Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
+  **Hinweis**: Antiphishingrichtlinien in Microsoft Defender für Office 365 enthalten zusätzliche Schutzmaßnahmen, einschließlich Schutz vor **Identitätswechsel**. Weitere Informationen finden Sie unter [Exklusive Einstellungen in Antiphishingrichtlinien in Microsoft Defender für Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365).
 
 - **Bericht „Erkannte Fälschungen“**“ Weitere Informationen finden Sie unter [Bericht „Erkannte Fälschungen“](view-email-security-reports.md#spoof-detections-report).
 

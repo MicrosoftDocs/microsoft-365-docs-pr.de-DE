@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender for Endpoint-API-Lizenz und Nutzungsbedingungen
+title: Microsoft Defender für Endpunkt-API-Lizenz und Nutzungsbedingungen
 description: Beschreibung der Lizenz und der Nutzungsbedingungen für Microsoft Defender-APIs
-keywords: lizenz, terms, apis, legal, notices, code of conduct
+keywords: Lizenz, Bedingungen, APIs, rechtliche Hinweise, Verhaltensregeln
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,15 +14,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: f737f5a9aeb9bc45e0cf40c3be0cfdde2bde3779
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 6f0fcf101388f9cae08655117caa5380af1242c2
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51933613"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769665"
 ---
-# <a name="microsoft-defender-for-endpoint-api-license-and-terms-of-use"></a>Microsoft Defender for Endpoint-API-Lizenz und Nutzungsbedingungen
+# <a name="microsoft-defender-for-endpoint-api-license-and-terms-of-use"></a>Microsoft Defender für Endpunkt-API-Lizenz und Nutzungsbedingungen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,7 +33,7 @@ ms.locfileid: "51933613"
 
 ## <a name="apis"></a>APIs
 
-Defender for Endpoint-APIs unterliegen der [Microsoft-API-Lizenz und den Nutzungsbedingungen.](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)
+Defender für Endpunkt-APIs unterliegen der [Microsoft-API-Lizenz und den Nutzungsbedingungen.](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)
 
 ### <a name="throttling-limits"></a>Einschränkungsgrenzwerte
 
@@ -43,8 +44,8 @@ API-Aufrufe pro Verbindung | 100 | 60 Sekunden
 
 ## <a name="legal-notices"></a>Rechtliche Hinweise
 
-Microsoft und alle Mitwirkenden gewähren Ihnen eine Lizenz für die Microsoft-Dokumentation und andere Inhalte in diesem Repository unter der öffentlichen Creative Commons Attribution 4.0 International License, siehe lizenzdatei.
+Microsoft und alle Mitwirkenden gewähren Ihnen eine Lizenz für die Microsoft-Dokumentation und andere Inhalte in diesem Repository unter der creative Commons Attribution 4.0 International Public License, siehe LIZENZdatei.
 
 Microsoft, Windows, Microsoft Azure und/oder andere Microsoft-Produkte und -Dienste, auf die in der Dokumentation verwiesen wird, können Marken oder eingetragene Marken von Microsoft in den USA und/oder anderen Ländern sein. Die Lizenzen für dieses Projekt gewähren Ihnen keine Rechte zur Verwendung von Microsoft-Namen, -Logos oder -Marken. Die allgemeinen Markenrichtlinien von Microsoft finden Sie unter https://go.microsoft.com/fwlink/?LinkID=254653.
 
-Datenschutzinformationen finden Sie bei Microsoft, und alle Mitwirkenden behalten sich alle anderen Rechte vor, unabhängig davon, ob es sich um ihre jeweiligen Urheberrechte, Patente oder Marken, sei es um Diebung, https://privacy.microsoft.com/en-us/ estoppel oder anderweitig, geht.
+Datenschutzinformationen finden Sie bei https://privacy.microsoft.com/en-us/ Microsoft, und alle Mitwirkenden behalten sich alle anderen Rechte vor, sei es unter ihren jeweiligen Urheberrechten, Patenten oder Marken, ob implizit, estoppel oder anderweitig.

@@ -1,8 +1,8 @@
 ---
-title: Verbindung von Microsoft Defender für Endpunkt-APIs Power BI
+title: Microsoft Defender für Endpunkt-APIs mit Power BI
 ms.reviewer: ''
-description: Erstellen Sie einen Power Business Intelligence (BI)-Bericht über Microsoft Defender for Endpoint-APIs.
-keywords: apis, supported apis, Power BI, reports
+description: Erstellen Sie einen Power Business Intelligence (BI)-Bericht über Microsoft Defender für Endpunkt-APIs.
+keywords: APIs, unterstützte APIs, Power BI, Berichte
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,15 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 7c99267d75c89b3484d207cd763131e4bcc91527
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: 5c76784d78837c324922ffc25539746a4921e426
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935041"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769710"
 ---
-# <a name="create-custom-reports-using-power-bi"></a>Erstellen benutzerdefinierter Berichte mithilfe Power BI
+# <a name="create-custom-reports-using-power-bi"></a>Erstellen von benutzerdefinierten Berichten mit Power BI
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,29 +33,29 @@ ms.locfileid: "51935041"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-- Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
-In diesem Abschnitt erfahren Sie, wie Sie Power BI defender for Endpoint-APIs erstellen.
+In diesem Abschnitt erfahren Sie, wie Sie einen Power BI Bericht über Defender für Endpunkt-APIs erstellen.
 
-Im ersten Beispiel wird veranschaulicht, wie Power BI mit der Advanced Hunting-API verbunden wird, und im zweiten Beispiel wird eine Verbindung mit unseren OData-APIs, z. B. Computeraktionen oder Warnungen, veranschaulicht.
+Im ersten Beispiel wird veranschaulicht, wie Power BI mit der API für die erweiterte Suche verbunden werden, und im zweiten Beispiel wird eine Verbindung mit unseren OData-APIs wie Computeraktionen oder Warnungen veranschaulicht.
 
-## <a name="connect-power-bi-to-advanced-hunting-api"></a>Verbinden Power BI zu Advanced Hunting API
+## <a name="connect-power-bi-to-advanced-hunting-api"></a>Verbinden Power BI zur API für die erweiterte Suche
 
-- Öffnen Sie Microsoft Power BI
+- Öffnen von Microsoft Power BI
 
-- Klicken **Sie auf Daten leere Abfrage**  >  **erhalten**
+- Klicken Sie auf  >  **"Leere Daten abrufen"**
 
     ![Abbildung des Erstellens einer leeren Abfrage](images/power-bi-create-blank-query.png)
 
-- Klicken Sie **auf Erweiterter Editor**
+- Klicken Sie auf **"Erweiterter Editor"**
 
     ![Abbildung des geöffneten erweiterten Editors](images/power-bi-open-advanced-editor.png)
 
-- Kopieren Sie den folgenden Text, und fügen Sie ihn in den Editor ein:
+- Kopieren Sie die folgende Datei, und fügen Sie sie in den Editor ein:
 
 ```
     let 
@@ -95,31 +96,31 @@ Im ersten Beispiel wird veranschaulicht, wie Power BI mit der Advanced Hunting-A
 
 ```
 
-- Klicken Sie auf **Fertig**
+- Klicken Sie auf **"Fertig".**
 
-- Klicken **Sie auf Anmeldeinformationen bearbeiten**
+- Klicken Sie auf **"Anmeldeinformationen bearbeiten".**
 
-    ![Abbildung der Anmeldeinformationen bearbeiten0](images/power-bi-edit-credentials.png)
+    ![Abbildung der Bearbeitungsanmeldeinformationen0](images/power-bi-edit-credentials.png)
 
-- Auswählen **des Organisationskontos**  >  **Anmelden**
+- Organisationskonto   >  **anmelden** auswählen
 
-    ![Abbildung der festgelegten Anmeldeinformationen1](images/power-bi-set-credentials-organizational.png)
+    ![Abbildung der Festgelegten Anmeldeinformationen1](images/power-bi-set-credentials-organizational.png)
 
-- Geben Sie Ihre Anmeldeinformationen ein, und warten Sie, bis sie angemeldet sind
+- Geben Sie Ihre Anmeldeinformationen ein, und warten Sie, bis Sie angemeldet sind.
 
-- Klicken Sie **Verbinden**
+- Klicken Sie auf **Verbinden**
 
     ![Abbildung der festgelegten Anmeldeinformationen2](images/power-bi-set-credentials-organizational-cont.png)
 
-- Jetzt werden die Ergebnisse Ihrer Abfrage als Tabelle angezeigt, und Sie können mit dem Erstellen von Visualisierungen beginnen.
+- Jetzt werden die Ergebnisse Ihrer Abfrage als Tabelle angezeigt, und Sie können mit der Erstellung von Visualisierungen beginnen.
 
-- Sie können diese Tabelle duplizieren, umbenennen und die Erweiterte Suche bearbeiten, um beliebige Daten zu erhalten.
+- Sie können diese Tabelle duplizieren, umbenennen und die Abfrage "Erweiterte Suche" darin bearbeiten, um alle gewünschten Daten abzurufen.
 
 ## <a name="connect-power-bi-to-odata-apis"></a>Verbinden Power BI zu OData-APIs
 
 - Der einzige Unterschied zum obigen Beispiel ist die Abfrage innerhalb des Editors. 
 
-- Kopieren Sie die folgende Datei, und fügen Sie sie in den Editor ein, um alle **Computeraktionen aus** Ihrer Organisation zu ziehen:
+- Kopieren Sie die folgende Datei, und fügen Sie sie in den Editor ein, um alle **Computeraktionen** aus Ihrer Organisation abzurufen:
 
 ```
     let
@@ -132,16 +133,16 @@ Im ersten Beispiel wird veranschaulicht, wie Power BI mit der Advanced Hunting-A
 
 ```
 
-- Sie können dasselbe für Warnungen **und** **Computer tun.**
+- Sie können dies auch für **Warnungen** und **Computer** tun.
 
-- Sie können auch OData-Abfragen für Abfragenfilter verwenden. Weitere Informationen finden Sie unter [Using OData Queries](exposed-apis-odata-samples.md)
+- Sie können auch OData-Abfragen für Abfragefilter verwenden. Weitere Informationen finden Sie unter [Verwenden von OData-Abfragen](exposed-apis-odata-samples.md)
 
 
 ## <a name="power-bi-dashboard-samples-in-github"></a>Power BI Dashboardbeispiele in GitHub
-Weitere Informationen finden Sie unter [Power BI Berichtsvorlagen](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI).
+Weitere Informationen finden Sie in den [Power BI Berichtsvorlagen.](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)
 
 ## <a name="sample-reports"></a>Beispielberichte
-Anzeigen der Microsoft Defender for Endpoint Power BI Berichtsbeispiele. Weitere Informationen finden Sie unter [Durchsuchen von Codebeispielen](https://docs.microsoft.com/samples/browse/?products=mdatp).
+Sehen Sie sich die Microsoft Defender für Endpunkt-Power BI Berichtsbeispiele an. Weitere Informationen finden Sie unter [Durchsuchen von Codebeispielen.](https://docs.microsoft.com/samples/browse/?products=mdatp)
 
 
 ## <a name="related-topic"></a>Verwandtes Thema

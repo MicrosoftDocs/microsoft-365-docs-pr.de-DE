@@ -19,12 +19,12 @@ ms.custom:
 - Ent_Solutions
 recommendations: false
 description: Hier erfahren Sie, wie Sie Teams bereitstellen, in denen vertrauliche Daten geschützt sind.
-ms.openlocfilehash: 0590e63aa0feb5b699eca98c0056604fe09b77f5
-ms.sourcegitcommit: 9541d5e6720a06327dc785e3ad7e8fb11246fd72
+ms.openlocfilehash: a3f715cb05ad1d5acf3c93c58959f12ebec46978
+ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "52583652"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "52788342"
 ---
 # <a name="configure-teams-with-protection-for-sensitive-data"></a>Teams für den Schutz vertraulicher Daten konfigurieren
 
@@ -33,6 +33,13 @@ In diesem Artikel sehen wir uns das Einrichten eines Teams an, in dem vertraulic
 - Eine Vertraulichkeitsbezeichnung für das Team, die es Ihnen ermöglicht, die Gastfreigabe ein- oder auszuschalten und den Zugriff auf SharePoint-Inhalte für nicht verwaltete Geräte auf die Webebene zu beschränken. Diese Bezeichnung kann auch zum klassifizieren von Dateien verwendet werden.
 - Einen restriktiveren standardmäßigen Freigabe-Linktyp
 - Nur Teambesitzer können private Kanäle erstellen.
+
+## <a name="video-demonstration"></a>Videodemonstration
+
+Schauen Sie sich dieses Video an, um eine exemplarische Vorgehensweise für die in diesem Artikel beschriebenen Verfahren zu finden.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4NMS6]
 
 ## <a name="guest-sharing"></a>Gastfreigabe
 

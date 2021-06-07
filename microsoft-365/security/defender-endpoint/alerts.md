@@ -1,7 +1,7 @@
 ---
-title: Abrufen der Benachrichtigungs-API
-description: Erfahren Sie mehr über die Methoden und Eigenschaften des Ressourcentyps Warnung in Microsoft Defender for Endpoint.
-keywords: apis, graph api, supported apis, get, alerts, recent
+title: Api zum Abrufen von Warnungen
+description: Erfahren Sie mehr über die Methoden und Eigenschaften des Ressourcentyps "Warnung" in Microsoft Defender für Endpunkt.
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Warnungen, zuletzt verwendet
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -14,22 +14,23 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.technology: mde
-ms.openlocfilehash: 4997d7118b139d993ed94ed917137ca107940e46
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+MS.technology: mde
+ms.custom: api
+ms.openlocfilehash: c935df1abddc3d0ebee74e09280d6e3ec961ca97
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51199621"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769809"
 ---
-# <a name="alert-resource-type"></a>Ressourcentyp "Warnung"
+# <a name="alert-resource-type"></a>Warnungsressourcentyp
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,16 +41,16 @@ ms.locfileid: "51199621"
 
 Methode |Rückgabetyp |Beschreibung
 :---|:---|:---
-[Warnung erhalten](get-alert-info-by-id.md) | [Warnung](alerts.md) | Ein einzelnes [Warnungsobjekt](alerts.md) erhalten.
-[Warnungen auflisten](get-alerts.md) | [Warnungssammlung](alerts.md) | Auflisten [der Warnungssammlung.](alerts.md)
-[Warnung aktualisieren](update-alert.md) | [Warnung](alerts.md) | Aktualisieren einer [bestimmten Warnung](alerts.md).
-[Batchupdatewarnungen](batch-update-alerts.md) | | Aktualisieren eines Batches von [Warnungen](alerts.md).
-[Warnung erstellen](create-alert-by-reference.md)|[Warnung](alerts.md)|Erstellen Sie eine Warnung basierend auf Ereignisdaten, die von [Advanced Hunting erhalten wurden.](run-advanced-query-api.md)
-[Auflisten verwandter Domänen](get-alert-related-domain-info.md)|Domänensammlung| Listet URLs auf, die der Warnung zugeordnet sind.
-[Auflisten verwandter Dateien](get-alert-related-files-info.md) | [Dateisammlung](files.md) |  Listet [die](files.md) Dateientitäten auf, die der Warnung [zugeordnet sind.](alerts.md)
-[Auflisten verwandter IPs](get-alert-related-ip-info.md) | IP-Auflistung | Listet IPs auf, die der Warnung zugeordnet sind.
-[Verwandte Computer erhalten](get-alert-related-machine-info.md) | [Computer](machine.md) | Der [Computer,](machine.md) der der Warnung [zugeordnet ist.](alerts.md)
-[Verwandte Benutzer erhalten](get-alert-related-user-info.md) | [Benutzer](user.md) | Der [Benutzer,](user.md) der der Warnung [zugeordnet ist.](alerts.md)
+[Warnung erhalten](get-alert-info-by-id.md) | [Warnung](alerts.md) | Ruft ein einzelnes [Warnungsobjekt](alerts.md) ab.
+[Warnungen auflisten](get-alerts.md) | [Warnungssammlung](alerts.md) | [Warnungssammlung auflisten.](alerts.md)
+[Warnung aktualisieren](update-alert.md) | [Warnung](alerts.md) | Aktualisieren sie eine bestimmte [Warnung.](alerts.md)
+[Warnungen bei Batchaktualisierungen](batch-update-alerts.md) | | Aktualisieren eines Batches von [Warnungen.](alerts.md)
+[Warnung erstellen](create-alert-by-reference.md)|[Warnung](alerts.md)|Erstellen Sie eine Warnung basierend auf Ereignisdaten, die aus [der erweiterten Suche](run-advanced-query-api.md)abgerufen wurden.
+[Verwandte Domänen auflisten](get-alert-related-domain-info.md)|Domänensammlung| Listet URLs auf, die der Warnung zugeordnet sind.
+[Auflisten verwandter Dateien](get-alert-related-files-info.md) | [Dateisammlung](files.md) |  Auflisten der Dateientitäten, die der [Warnung](alerts.md)zugeordnet sind. [](files.md)
+[Verwandte IPs auflisten](get-alert-related-ip-info.md) | IP-Sammlung | IPs auflisten, die der Warnung zugeordnet sind.
+[Abrufen verwandter Computer](get-alert-related-machine-info.md) | [Computer](machine.md) | Der [Computer,](machine.md) der der [Warnung](alerts.md)zugeordnet ist.
+[Abrufen verwandter Benutzer](get-alert-related-user-info.md) | [Benutzer](user.md) | Der [Benutzer,](user.md) der der [Warnung](alerts.md)zugeordnet ist.
 
 
 ## <a name="properties"></a>Eigenschaften
@@ -59,31 +60,31 @@ Eigenschaft |    Typ    |    Beschreibung
 id | String | Warnungs-ID.
 title | String | Warnungstitel.
 description | String | Warnungsbeschreibung.
-alertCreationTime | Nullable DateTimeOffset | Das Datum und die Uhrzeit (in UTC), zu der die Warnung erstellt wurde.
-lastEventTime | Nullable DateTimeOffset | Das letzte Vorkommen des Ereignisses, das die Warnung auf demselben Gerät ausgelöst hat.
-firstEventTime | Nullable DateTimeOffset | Das erste Vorkommen des Ereignisses, das die Warnung auf diesem Gerät ausgelöst hat.
-lastUpdateTime | Nullable DateTimeOffset | Datum und Uhrzeit (in UTC), zu der die Warnung zuletzt aktualisiert wurde.
-resolvedTime | Nullable DateTimeOffset | Datum und Uhrzeit, in dem der Status der Warnung in "Aufgelöst" geändert wurde.
+alertCreationTime | Nullable DateTimeOffset | Datum und Uhrzeit (in UTC), an dem die Warnung erstellt wurde.
+lastEventTime | Nullable DateTimeOffset | Das letzte Auftreten des Ereignisses, das die Warnung auf demselben Gerät ausgelöst hat.
+firstEventTime | Nullable DateTimeOffset | Das erste Auftreten des Ereignisses, das die Warnung auf diesem Gerät ausgelöst hat.
+lastUpdateTime | Nullable DateTimeOffset | Datum und Uhrzeit (in UTC), an dem die Warnung zuletzt aktualisiert wurde.
+resolvedTime | Nullable DateTimeOffset | Datum und Uhrzeit, an denen der Status der Warnung in "Aufgelöst" geändert wurde.
 incidentId | Nullable Long | Die [Vorfall-ID](view-incidents-queue.md) der Warnung.
 investigationId | Nullable Long | Die [Untersuchungs-ID](automated-investigations.md) im Zusammenhang mit der Warnung.
-investigationState | Nullable Enum | Der aktuelle Status der [Untersuchung](automated-investigations.md). Mögliche Werte sind: "Unknown", "Terminated", "SuccessfullyRemediated", "Benign", "Failed", "PartiallyRemediated", "Running", "PendingApproval", "PendingResource", "PartiallyInvestigated", "TerminatedByUser", "TerminatedBySystem", "Queued", "InnerFailure", "PreexistingAlert", "UnsupportedOs", "UnsupportedAlertType", "SuppressedAlert".
+investigationState | Nullable Enum | Der aktuelle Status der [Untersuchung](automated-investigations.md). Mögliche Werte sind: 'Unknown', 'Terminated', 'SuccessfullyRemediated', "Gutartig", "Fehlgeschlagen", "PartiallyRemediated", "Running", "PendingApproval", "PendingResource", "PartiallyInvestigated", "TerminatedByUser", "TerminatedBySystem", "Queued", "InnerFailure", "PreexistingAlert", "UnsupportedOs", "UnsupportedAlertType", "SuppressedAlert".
 assignedTo | String | Besitzer der Warnung.
 Schweregrad | Enum | Der Schweregrad der Warnung. Mögliche Werte sind: "UnSpecified", "Informational", "Low", "Medium" und "High".
-status | Enum | Gibt den aktuellen Status der Warnung an. Mögliche Werte sind: "Unbekannt", "Neu", "InProgress" und "Aufgelöst".
-classification | Nullable Enum | Spezifikation der Warnung. Mögliche Werte sind: "Unbekannt", "FalsePositive", "TruePositive".
+status | Enum | Gibt den aktuellen Status der Warnung an. Mögliche Werte sind: "Unknown", "New", "InProgress" und "Resolved".
+classification | Nullable Enum | Spezifikation der Warnung. Mögliche Werte sind: 'Unknown', 'FalsePositive', 'TruePositive'.
 Bestimmung | Nullable Enum | Gibt die Bestimmung der Warnung an. Mögliche Werte sind: "NotAvailable", "Apt", "Malware", "SecurityPersonnel", "SecurityTesting", "UnwantedSoftware", "Other".
 category| String | Die Kategorie der Warnung.
 detectionSource | String | Erkennungsquelle.
 threatFamilyName | String | Bedrohungsfamilie.
-threatName | String | Bedrohungsname.
-machineId | String | ID einer [Computerentität,](machine.md) die der Warnung zugeordnet ist.
-computerDnsName | String | [vollqualifizierten](machine.md) Namen des Computers.
+threatName | String | Name der Bedrohung.
+machineId | String | ID einer [](machine.md) Computerentität, die der Warnung zugeordnet ist.
+computerDnsName | String | [Computer](machine.md) vollqualifizierte Name.
 aadTenantId | String | Die Azure Active Directory-ID.
-detectorId | String | Die ID des Melders, der die Warnung ausgelöst hat.
+detectorId | String | Die ID des Identifikationsgeräts, das die Warnung ausgelöst hat.
 Kommentare | Liste der Warnungskommentare | Alert Comment-Objekt enthält: Kommentarzeichenfolge, createdBy-Zeichenfolge und createTime-Datumszeit.
-Beweis | Liste der Warnungsbeweis | Nachweise im Zusammenhang mit der Warnung. Siehe Beispiel unten.
+Beweis | Liste der Warnungsnachweise | Nachweise im Zusammenhang mit der Warnung. Siehe Beispiel unten.
 
-### <a name="response-example-for-getting-single-alert"></a>Antwortbeispiel zum Abrufen einer einzelnen Warnung:
+### <a name="response-example-for-getting-single-alert"></a>Antwortbeispiel für das Abrufen einer einzelnen Warnung:
 
 ```http
 GET https://api.securitycenter.microsoft.com/api/alerts/da637472900382838869_1364969609
