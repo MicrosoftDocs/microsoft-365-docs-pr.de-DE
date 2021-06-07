@@ -1,6 +1,6 @@
 ---
-title: Microsoft 365 Defender advanced hunting API
-description: Erfahren Sie, wie Sie erweiterte Suchabfragen mithilfe Microsoft 365 erweiterten Such-API von Defender ausführen.
+title: Microsoft 365 API für die erweiterte Defender-Suche
+description: Erfahren Sie, wie Sie Abfragen für die erweiterte Suche mithilfe Microsoft 365 Api für die erweiterte Suche von Defender ausführen.
 keywords: Erweiterte Suche, APIs, API, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,92 +20,91 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c988a609a329c8f7f8988314e56aae942beebac5
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 3ff62265783be846a95964164e372100fe1ef662
+ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932893"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "52769585"
 ---
-# <a name="microsoft-365-defender-advanced-hunting-api"></a><span data-ttu-id="98bb3-104">Microsoft 365 Defender Advanced hunting API</span><span class="sxs-lookup"><span data-stu-id="98bb3-104">Microsoft 365 Defender Advanced hunting API</span></span>
+# <a name="microsoft-365-defender-advanced-hunting-api"></a><span data-ttu-id="6aa2b-104">Microsoft 365 Api für die erweiterte Defender-Suche</span><span class="sxs-lookup"><span data-stu-id="6aa2b-104">Microsoft 365 Defender Advanced hunting API</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-<span data-ttu-id="98bb3-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="98bb3-105">**Applies to:**</span></span>
+<span data-ttu-id="6aa2b-105">**Gilt für:**</span><span class="sxs-lookup"><span data-stu-id="6aa2b-105">**Applies to:**</span></span>
 
-- <span data-ttu-id="98bb3-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="98bb3-106">Microsoft 365 Defender</span></span>
+- <span data-ttu-id="6aa2b-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="6aa2b-106">Microsoft 365 Defender</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="98bb3-107">Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können.</span><span class="sxs-lookup"><span data-stu-id="98bb3-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="98bb3-108">Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.</span><span class="sxs-lookup"><span data-stu-id="98bb3-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
+> <span data-ttu-id="6aa2b-107">Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-107">Some information relates to prereleased product which may be substantially modified before it's commercially released.</span></span> <span data-ttu-id="6aa2b-108">Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-108">Microsoft makes no warranties, express or implied, with respect to the information provided here.</span></span>
 
-<span data-ttu-id="98bb3-109">[Die erweiterte Suche](advanced-hunting-overview.md) ist ein Tool zur [Bedrohungssuche,](advanced-hunting-query-language.md) das speziell konstruierte Abfragen verwendet, um die letzten 30 Tage der Ereignisdaten in Microsoft 365 untersuchen.</span><span class="sxs-lookup"><span data-stu-id="98bb3-109">[Advanced hunting](advanced-hunting-overview.md) is a threat-hunting tool that uses [specially constructed queries](advanced-hunting-query-language.md) to examine the past 30 days of event data in Microsoft 365 Defender.</span></span> <span data-ttu-id="98bb3-110">Sie können erweiterte Suchabfragen verwenden, um ungewöhnliche Aktivitäten zu untersuchen, mögliche Bedrohungen zu erkennen und sogar auf Angriffe zu reagieren.</span><span class="sxs-lookup"><span data-stu-id="98bb3-110">You can use advanced hunting queries to inspect unusual activity, detect possible threats, and even respond to attacks.</span></span> <span data-ttu-id="98bb3-111">Mit der erweiterten Such-API können Sie Ereignisdaten programmgesteuert abfragen.</span><span class="sxs-lookup"><span data-stu-id="98bb3-111">The advanced hunting API allows you to programatically query event data.</span></span>
+<span data-ttu-id="6aa2b-109">[Die erweiterte Suche](advanced-hunting-overview.md) ist ein Tool zur [Bedrohungssuche,](advanced-hunting-query-language.md) das speziell erstellte Abfragen verwendet, um die Ereignisdaten der letzten 30 Tage in Microsoft 365 Defender zu untersuchen.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-109">[Advanced hunting](advanced-hunting-overview.md) is a threat-hunting tool that uses [specially constructed queries](advanced-hunting-query-language.md) to examine the past 30 days of event data in Microsoft 365 Defender.</span></span> <span data-ttu-id="6aa2b-110">Sie können erweiterte Suchabfragen verwenden, um ungewöhnliche Aktivitäten zu untersuchen, mögliche Bedrohungen zu erkennen und sogar auf Angriffe zu reagieren.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-110">You can use advanced hunting queries to inspect unusual activity, detect possible threats, and even respond to attacks.</span></span> <span data-ttu-id="6aa2b-111">Mit der API für die erweiterte Suche können Sie Ereignisdaten programmgesteuert abfragen.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-111">The advanced hunting API allows you to programatically query event data.</span></span>
 
-## <a name="quotas-and-resource-allocation"></a><span data-ttu-id="98bb3-112">Kontingente und Ressourcenzuordnung</span><span class="sxs-lookup"><span data-stu-id="98bb3-112">Quotas and resource allocation</span></span>
+## <a name="quotas-and-resource-allocation"></a><span data-ttu-id="6aa2b-112">Kontingente und Ressourcenzuweisung</span><span class="sxs-lookup"><span data-stu-id="6aa2b-112">Quotas and resource allocation</span></span>
 
-<span data-ttu-id="98bb3-113">Die folgenden Bedingungen beziehen sich auf alle Abfragen.</span><span class="sxs-lookup"><span data-stu-id="98bb3-113">The following conditions relate to all queries.</span></span>
+<span data-ttu-id="6aa2b-113">Die folgenden Bedingungen beziehen sich auf alle Abfragen.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-113">The following conditions relate to all queries.</span></span>
 
-1. <span data-ttu-id="98bb3-114">Abfragen untersuchen und geben Daten aus den letzten 30 Tagen zurück.</span><span class="sxs-lookup"><span data-stu-id="98bb3-114">Queries explore and return data from the past 30 days.</span></span>
-2. <span data-ttu-id="98bb3-115">Ergebnisse können bis zu 100.000 Zeilen zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="98bb3-115">Results can return up to 100,000 rows.</span></span>
-3. <span data-ttu-id="98bb3-116">Sie können bis zu 15 Anrufe pro Minute pro Mandant machen.</span><span class="sxs-lookup"><span data-stu-id="98bb3-116">You can make up to 15 calls per minute per tenant.</span></span>
-4. <span data-ttu-id="98bb3-117">Sie haben 10 Minuten Laufzeit pro Stunde pro Mandant.</span><span class="sxs-lookup"><span data-stu-id="98bb3-117">You have 10 minutes of running time per hour per tenant.</span></span>
-5. <span data-ttu-id="98bb3-118">Sie haben vier Gesamtstunden Laufzeit pro Tag pro Mandant.</span><span class="sxs-lookup"><span data-stu-id="98bb3-118">You have four total hours of running time per day per tenant.</span></span>
-6. <span data-ttu-id="98bb3-119">Wenn eine einzelne Anforderung länger als 10 Minuten ausgeführt wird, tritt ein Zeitfehler auf, und es wird ein Fehler zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="98bb3-119">If a single request runs for more than 10 minutes, it will time out and return an error.</span></span>
-7. <span data-ttu-id="98bb3-120">Ein HTTP-Antwortcode gibt an, dass Sie ein Kontingent erreicht haben, entweder nach der Anzahl der gesendeten Anforderungen oder nach der zugewiesenen `429` Laufzeit.</span><span class="sxs-lookup"><span data-stu-id="98bb3-120">A `429` HTTP response code indicates that you've reached a quota, either by number of requests sent, or by allotted running time.</span></span> <span data-ttu-id="98bb3-121">Lesen Sie den Antworttext, um den grenzwert zu verstehen, den Sie erreicht haben.</span><span class="sxs-lookup"><span data-stu-id="98bb3-121">Read the response body to understand the limit you have reached.</span></span> 
+1. <span data-ttu-id="6aa2b-114">Abfragen untersuchen Und geben Daten aus den letzten 30 Tagen zurück.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-114">Queries explore and return data from the past 30 days.</span></span>
+2. <span data-ttu-id="6aa2b-115">Ergebnisse können bis zu 100.000 Zeilen zurückgeben.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-115">Results can return up to 100,000 rows.</span></span>
+3. <span data-ttu-id="6aa2b-116">Sie können bis zu 15 Anrufe pro Minute und Mandant tätigen.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-116">You can make up to 15 calls per minute per tenant.</span></span>
+4. <span data-ttu-id="6aa2b-117">Abfragen werden blockiert, wenn der Mandant bis nach dem nächsten 15-Minuten-Zyklus 100 % erreicht hat.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-117">Queries are blocked if the tenant has reached 100% until after the next 15-minute cycle.</span></span>
+5. <span data-ttu-id="6aa2b-118">Wenn eine einzelne Anforderung länger als 10 Minuten ausgeführt wird, tritt ein Timeout auf und es wird ein Fehler zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-118">If a single request runs for more than 10 minutes, it will time out and return an error.</span></span>
+6. <span data-ttu-id="6aa2b-119">Ein `429` HTTP-Antwortcode gibt an, dass Sie ein Kontingent erreicht haben, entweder nach anzahl der gesendeten Anforderungen oder nach zugewiesener Laufzeit.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-119">A `429` HTTP response code indicates that you've reached a quota, either by number of requests sent, or by allotted running time.</span></span> <span data-ttu-id="6aa2b-120">Lesen Sie den Antworttext, um den erreichten Grenzwert zu verstehen.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-120">Read the response body to understand the limit you have reached.</span></span> 
 
 > [!NOTE]
-> <span data-ttu-id="98bb3-122">Alle oben aufgeführten Kontingente (z. B. 15 Anrufe pro Minute) sind pro Mandantengröße.</span><span class="sxs-lookup"><span data-stu-id="98bb3-122">All quotas listed above (for example 15 calls per min) are per tenant size.</span></span> <span data-ttu-id="98bb3-123">Diese Kontingente sind das Minimum.</span><span class="sxs-lookup"><span data-stu-id="98bb3-123">These quotas are the minimum.</span></span>
+> <span data-ttu-id="6aa2b-121">Alle oben aufgeführten Kontingente (z. B. 15 Anrufe pro Minute) sind pro Mandantengröße.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-121">All quotas listed above (for example 15 calls per min) are per tenant size.</span></span> <span data-ttu-id="6aa2b-122">Diese Kontingente sind das Minimum.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-122">These quotas are the minimum.</span></span>
 
-## <a name="permissions"></a><span data-ttu-id="98bb3-124">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="98bb3-124">Permissions</span></span>
+## <a name="permissions"></a><span data-ttu-id="6aa2b-123">Berechtigungen</span><span class="sxs-lookup"><span data-stu-id="6aa2b-123">Permissions</span></span>
 
-<span data-ttu-id="98bb3-125">Eine der folgenden Berechtigungen ist erforderlich, um die api für die erweiterte Suche aufrufen zu können.</span><span class="sxs-lookup"><span data-stu-id="98bb3-125">One of the following permissions is required to call the advanced hunting API.</span></span> <span data-ttu-id="98bb3-126">Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Access the Microsoft 365 Defender Protection APIs](api-access.md)</span><span class="sxs-lookup"><span data-stu-id="98bb3-126">To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender Protection APIs](api-access.md)</span></span>
+<span data-ttu-id="6aa2b-124">Eine der folgenden Berechtigungen ist erforderlich, um die API für die erweiterte Suche aufzurufen.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-124">One of the following permissions is required to call the advanced hunting API.</span></span> <span data-ttu-id="6aa2b-125">Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Access the Microsoft 365 Defender Protection APIs](api-access.md)</span><span class="sxs-lookup"><span data-stu-id="6aa2b-125">To learn more, including how to choose permissions, see [Access the Microsoft 365 Defender Protection APIs](api-access.md)</span></span>
 
-<span data-ttu-id="98bb3-127">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="98bb3-127">Permission type</span></span> | <span data-ttu-id="98bb3-128">Berechtigung</span><span class="sxs-lookup"><span data-stu-id="98bb3-128">Permission</span></span> | <span data-ttu-id="98bb3-129">Anzeigename der Berechtigung</span><span class="sxs-lookup"><span data-stu-id="98bb3-129">Permission display name</span></span>
+<span data-ttu-id="6aa2b-126">Berechtigungstyp</span><span class="sxs-lookup"><span data-stu-id="6aa2b-126">Permission type</span></span> | <span data-ttu-id="6aa2b-127">Berechtigung</span><span class="sxs-lookup"><span data-stu-id="6aa2b-127">Permission</span></span> | <span data-ttu-id="6aa2b-128">Anzeigename der Berechtigung</span><span class="sxs-lookup"><span data-stu-id="6aa2b-128">Permission display name</span></span>
 -|-|-
-<span data-ttu-id="98bb3-130">Anwendung</span><span class="sxs-lookup"><span data-stu-id="98bb3-130">Application</span></span> | <span data-ttu-id="98bb3-131">AdvancedHunting.Read.All</span><span class="sxs-lookup"><span data-stu-id="98bb3-131">AdvancedHunting.Read.All</span></span> | <span data-ttu-id="98bb3-132">Ausführen erweiterter Abfragen</span><span class="sxs-lookup"><span data-stu-id="98bb3-132">Run advanced queries</span></span>
-<span data-ttu-id="98bb3-133">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="98bb3-133">Delegated (work or school account)</span></span> | <span data-ttu-id="98bb3-134">AdvancedHunting.Read</span><span class="sxs-lookup"><span data-stu-id="98bb3-134">AdvancedHunting.Read</span></span> | <span data-ttu-id="98bb3-135">Ausführen erweiterter Abfragen</span><span class="sxs-lookup"><span data-stu-id="98bb3-135">Run advanced queries</span></span>
+<span data-ttu-id="6aa2b-129">Anwendung</span><span class="sxs-lookup"><span data-stu-id="6aa2b-129">Application</span></span> | <span data-ttu-id="6aa2b-130">AdvancedHunting.Read.All</span><span class="sxs-lookup"><span data-stu-id="6aa2b-130">AdvancedHunting.Read.All</span></span> | <span data-ttu-id="6aa2b-131">Ausführen erweiterter Abfragen</span><span class="sxs-lookup"><span data-stu-id="6aa2b-131">Run advanced queries</span></span>
+<span data-ttu-id="6aa2b-132">Delegiert (Geschäfts-, Schul- oder Unikonto)</span><span class="sxs-lookup"><span data-stu-id="6aa2b-132">Delegated (work or school account)</span></span> | <span data-ttu-id="6aa2b-133">AdvancedHunting.Read</span><span class="sxs-lookup"><span data-stu-id="6aa2b-133">AdvancedHunting.Read</span></span> | <span data-ttu-id="6aa2b-134">Ausführen erweiterter Abfragen</span><span class="sxs-lookup"><span data-stu-id="6aa2b-134">Run advanced queries</span></span>
 
 >[!Note]
-> <span data-ttu-id="98bb3-136">Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:</span><span class="sxs-lookup"><span data-stu-id="98bb3-136">When obtaining a token using user credentials:</span></span>
+> <span data-ttu-id="6aa2b-135">Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen:</span><span class="sxs-lookup"><span data-stu-id="6aa2b-135">When obtaining a token using user credentials:</span></span>
 >
->- <span data-ttu-id="98bb3-137">Der Benutzer benötigt die AD-Rolle "Daten anzeigen"</span><span class="sxs-lookup"><span data-stu-id="98bb3-137">The user needs to have the 'View Data' AD role</span></span>
->- <span data-ttu-id="98bb3-138">Der Benutzer muss basierend auf den Gerätegruppeneinstellungen Zugriff auf das Gerät haben.</span><span class="sxs-lookup"><span data-stu-id="98bb3-138">The user needs to have access to the device, based on device group settings.</span></span>
+>- <span data-ttu-id="6aa2b-136">Der Benutzer muss über die AD-Rolle "Daten anzeigen" verfügen.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-136">The user needs to have the 'View Data' AD role</span></span>
+>- <span data-ttu-id="6aa2b-137">Der Benutzer muss basierend auf den Gerätegruppeneinstellungen Zugriff auf das Gerät haben.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-137">The user needs to have access to the device, based on device group settings.</span></span>
 
-## <a name="http-request"></a><span data-ttu-id="98bb3-139">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="98bb3-139">HTTP request</span></span>
+## <a name="http-request"></a><span data-ttu-id="6aa2b-138">HTTP-Anforderung</span><span class="sxs-lookup"><span data-stu-id="6aa2b-138">HTTP request</span></span>
 
 ```HTTP
 POST https://api.security.microsoft.com/api/advancedhunting/run
 ```
 
-## <a name="request-headers"></a><span data-ttu-id="98bb3-140">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="98bb3-140">Request headers</span></span>
+## <a name="request-headers"></a><span data-ttu-id="6aa2b-139">Anforderungsheader</span><span class="sxs-lookup"><span data-stu-id="6aa2b-139">Request headers</span></span>
 
-<span data-ttu-id="98bb3-141">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="98bb3-141">Header</span></span> | <span data-ttu-id="98bb3-142">Wert</span><span class="sxs-lookup"><span data-stu-id="98bb3-142">Value</span></span>
+<span data-ttu-id="6aa2b-140">Kopfzeile</span><span class="sxs-lookup"><span data-stu-id="6aa2b-140">Header</span></span> | <span data-ttu-id="6aa2b-141">Wert</span><span class="sxs-lookup"><span data-stu-id="6aa2b-141">Value</span></span>
 -|-
-<span data-ttu-id="98bb3-143">Authorization</span><span class="sxs-lookup"><span data-stu-id="98bb3-143">Authorization</span></span> | <span data-ttu-id="98bb3-144">Bearer {token} **Hinweis: erforderlich**</span><span class="sxs-lookup"><span data-stu-id="98bb3-144">Bearer {token} **Note: required**</span></span>
-<span data-ttu-id="98bb3-145">Content-Type</span><span class="sxs-lookup"><span data-stu-id="98bb3-145">Content-Type</span></span> | <span data-ttu-id="98bb3-146">application/json</span><span class="sxs-lookup"><span data-stu-id="98bb3-146">application/json</span></span>
+<span data-ttu-id="6aa2b-142">Authorization</span><span class="sxs-lookup"><span data-stu-id="6aa2b-142">Authorization</span></span> | <span data-ttu-id="6aa2b-143">Bearer {token} **Hinweis: erforderlich**</span><span class="sxs-lookup"><span data-stu-id="6aa2b-143">Bearer {token} **Note: required**</span></span>
+<span data-ttu-id="6aa2b-144">Content-Type</span><span class="sxs-lookup"><span data-stu-id="6aa2b-144">Content-Type</span></span> | <span data-ttu-id="6aa2b-145">application/json</span><span class="sxs-lookup"><span data-stu-id="6aa2b-145">application/json</span></span>
 
-## <a name="request-body"></a><span data-ttu-id="98bb3-147">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="98bb3-147">Request body</span></span>
+## <a name="request-body"></a><span data-ttu-id="6aa2b-146">Anforderungstext</span><span class="sxs-lookup"><span data-stu-id="6aa2b-146">Request body</span></span>
 
-<span data-ttu-id="98bb3-148">Stellen Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern zur Verfügung:</span><span class="sxs-lookup"><span data-stu-id="98bb3-148">In the request body, supply a JSON object with the following parameters:</span></span>
+<span data-ttu-id="6aa2b-147">Geben Sie im Anforderungstext ein JSON-Objekt mit den folgenden Parametern an:</span><span class="sxs-lookup"><span data-stu-id="6aa2b-147">In the request body, supply a JSON object with the following parameters:</span></span>
 
-<span data-ttu-id="98bb3-149">Parameter</span><span class="sxs-lookup"><span data-stu-id="98bb3-149">Parameter</span></span> | <span data-ttu-id="98bb3-150">Typ</span><span class="sxs-lookup"><span data-stu-id="98bb3-150">Type</span></span> | <span data-ttu-id="98bb3-151">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="98bb3-151">Description</span></span>
+<span data-ttu-id="6aa2b-148">Parameter</span><span class="sxs-lookup"><span data-stu-id="6aa2b-148">Parameter</span></span> | <span data-ttu-id="6aa2b-149">Typ</span><span class="sxs-lookup"><span data-stu-id="6aa2b-149">Type</span></span> | <span data-ttu-id="6aa2b-150">Beschreibung</span><span class="sxs-lookup"><span data-stu-id="6aa2b-150">Description</span></span>
 -|-|-
-<span data-ttu-id="98bb3-152">Abfrage</span><span class="sxs-lookup"><span data-stu-id="98bb3-152">Query</span></span> | <span data-ttu-id="98bb3-153">Text</span><span class="sxs-lookup"><span data-stu-id="98bb3-153">Text</span></span> | <span data-ttu-id="98bb3-154">Die abfrage, die ausgeführt werden soll.</span><span class="sxs-lookup"><span data-stu-id="98bb3-154">The query to run.</span></span> <span data-ttu-id="98bb3-155">**Hinweis: erforderlich**</span><span class="sxs-lookup"><span data-stu-id="98bb3-155">**Note: required**</span></span>
+<span data-ttu-id="6aa2b-151">Abfrage</span><span class="sxs-lookup"><span data-stu-id="6aa2b-151">Query</span></span> | <span data-ttu-id="6aa2b-152">Text</span><span class="sxs-lookup"><span data-stu-id="6aa2b-152">Text</span></span> | <span data-ttu-id="6aa2b-153">Die auszuführende Abfrage.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-153">The query to run.</span></span> <span data-ttu-id="6aa2b-154">**Hinweis: erforderlich**</span><span class="sxs-lookup"><span data-stu-id="6aa2b-154">**Note: required**</span></span>
 
-## <a name="response"></a><span data-ttu-id="98bb3-156">Antwort</span><span class="sxs-lookup"><span data-stu-id="98bb3-156">Response</span></span>
+## <a name="response"></a><span data-ttu-id="6aa2b-155">Antwort</span><span class="sxs-lookup"><span data-stu-id="6aa2b-155">Response</span></span>
 
-<span data-ttu-id="98bb3-157">Wenn die Methode erfolgreich ist, wird `200 OK` ein _QueryResponse-Objekt_ im Antworttext zurückgegeben.</span><span class="sxs-lookup"><span data-stu-id="98bb3-157">If successful, this method will return `200 OK`, and a _QueryResponse_ object in the response body.</span></span>
+<span data-ttu-id="6aa2b-156">Bei erfolgreicher Ausführung gibt die Methode ein `200 OK` _QueryResponse-Objekt_ im Antworttext zurück.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-156">If successful, this method will return `200 OK`, and a _QueryResponse_ object in the response body.</span></span>
 
-<span data-ttu-id="98bb3-158">Das Antwortobjekt enthält drei Eigenschaften auf oberster Ebene:</span><span class="sxs-lookup"><span data-stu-id="98bb3-158">The response object contains three top-level properties:</span></span>
+<span data-ttu-id="6aa2b-157">Das Antwortobjekt enthält drei Eigenschaften auf oberster Ebene:</span><span class="sxs-lookup"><span data-stu-id="6aa2b-157">The response object contains three top-level properties:</span></span>
 
-1. <span data-ttu-id="98bb3-159">Stats – Ein Wörterbuch mit Abfrageleistungsstatistiken.</span><span class="sxs-lookup"><span data-stu-id="98bb3-159">Stats - A dictionary of query performance statistics.</span></span>
-2. <span data-ttu-id="98bb3-160">Schema – Das Schema der Antwort, eine Liste der Name-Type für jede Spalte.</span><span class="sxs-lookup"><span data-stu-id="98bb3-160">Schema - The schema of the response, a list of Name-Type pairs for each column.</span></span>
-3. <span data-ttu-id="98bb3-161">Ergebnisse – Eine Liste der erweiterten Jagdereignisse.</span><span class="sxs-lookup"><span data-stu-id="98bb3-161">Results - A list of advanced hunting events.</span></span>
+1. <span data-ttu-id="6aa2b-158">Statistiken – Ein Wörterbuch mit Abfrageleistungsstatistiken.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-158">Stats - A dictionary of query performance statistics.</span></span>
+2. <span data-ttu-id="6aa2b-159">Schema – Das Schema der Antwort, eine Liste Name-Type Paare für jede Spalte.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-159">Schema - The schema of the response, a list of Name-Type pairs for each column.</span></span>
+3. <span data-ttu-id="6aa2b-160">Ergebnisse – Eine Liste der Ereignisse der erweiterten Suche.</span><span class="sxs-lookup"><span data-stu-id="6aa2b-160">Results - A list of advanced hunting events.</span></span>
 
-## <a name="example"></a><span data-ttu-id="98bb3-162">Beispiel</span><span class="sxs-lookup"><span data-stu-id="98bb3-162">Example</span></span>
+## <a name="example"></a><span data-ttu-id="6aa2b-161">Beispiel</span><span class="sxs-lookup"><span data-stu-id="6aa2b-161">Example</span></span>
 
-<span data-ttu-id="98bb3-163">Im folgenden Beispiel sendet ein Benutzer die folgende Abfrage und empfängt ein API-Antwortobjekt mit `Stats` , `Schema` und `Results` .</span><span class="sxs-lookup"><span data-stu-id="98bb3-163">In the following example, a user sends the query below and receives an API response object containing `Stats`, `Schema`, and `Results`.</span></span>
+<span data-ttu-id="6aa2b-162">Im folgenden Beispiel sendet ein Benutzer die folgende Abfrage und empfängt ein API-Antwortobjekt mit `Stats` `Schema` , und `Results` .</span><span class="sxs-lookup"><span data-stu-id="6aa2b-162">In the following example, a user sends the query below and receives an API response object containing `Stats`, `Schema`, and `Results`.</span></span>
 
-### <a name="query"></a><span data-ttu-id="98bb3-164">Abfrage</span><span class="sxs-lookup"><span data-stu-id="98bb3-164">Query</span></span>
+### <a name="query"></a><span data-ttu-id="6aa2b-163">Abfrage</span><span class="sxs-lookup"><span data-stu-id="6aa2b-163">Query</span></span>
 
 ```json
 {
@@ -114,7 +113,7 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 
 ```
 
-### <a name="response-object"></a><span data-ttu-id="98bb3-165">Response-Objekt</span><span class="sxs-lookup"><span data-stu-id="98bb3-165">Response object</span></span>
+### <a name="response-object"></a><span data-ttu-id="6aa2b-164">Response-Objekt</span><span class="sxs-lookup"><span data-stu-id="6aa2b-164">Response object</span></span>
 
 ```json
 {
@@ -178,9 +177,9 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 }
 ```
 
-## <a name="related-articles"></a><span data-ttu-id="98bb3-166">Verwandte Artikel</span><span class="sxs-lookup"><span data-stu-id="98bb3-166">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="6aa2b-165">Verwandte Artikel</span><span class="sxs-lookup"><span data-stu-id="6aa2b-165">Related articles</span></span>
 
-- [<span data-ttu-id="98bb3-167">Zugreifen auf die Microsoft 365 Defender-APIs</span><span class="sxs-lookup"><span data-stu-id="98bb3-167">Access the Microsoft 365 Defender APIs</span></span>](api-access.md)
-- [<span data-ttu-id="98bb3-168">Informationen zu API-Beschränkungen und -Lizenzierung</span><span class="sxs-lookup"><span data-stu-id="98bb3-168">Learn about API limits and licensing</span></span>](api-terms.md)
-- [<span data-ttu-id="98bb3-169">Verstehen von Fehlercodes</span><span class="sxs-lookup"><span data-stu-id="98bb3-169">Understand error codes</span></span>](api-error-codes.md)
-- [<span data-ttu-id="98bb3-170">Übersicht über die erweiterte Suche</span><span class="sxs-lookup"><span data-stu-id="98bb3-170">Advanced hunting overview</span></span>](advanced-hunting-overview.md)
+- [<span data-ttu-id="6aa2b-166">Zugreifen auf die Microsoft 365 Defender-APIs</span><span class="sxs-lookup"><span data-stu-id="6aa2b-166">Access the Microsoft 365 Defender APIs</span></span>](api-access.md)
+- [<span data-ttu-id="6aa2b-167">Informationen zu API-Grenzwerten und Lizenzierung</span><span class="sxs-lookup"><span data-stu-id="6aa2b-167">Learn about API limits and licensing</span></span>](api-terms.md)
+- [<span data-ttu-id="6aa2b-168">Grundlegendes zu Fehlercodes</span><span class="sxs-lookup"><span data-stu-id="6aa2b-168">Understand error codes</span></span>](api-error-codes.md)
+- [<span data-ttu-id="6aa2b-169">Übersicht über die erweiterte Suche</span><span class="sxs-lookup"><span data-stu-id="6aa2b-169">Advanced hunting overview</span></span>](advanced-hunting-overview.md)

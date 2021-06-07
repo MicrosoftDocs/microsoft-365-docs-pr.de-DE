@@ -244,17 +244,14 @@
 
 ### [Verringerung der Angriffsfläche]():
 #### [Übersicht der Verringerung der Angriffsfläche](overview-attack-surface-reduction.md)
+#### [Konfigurieren der Funktionen zur Verringerung der Angriffsfläche](configure-attack-surface-reduction.md)
+#### [Weitere Informationen zu den Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md)
 #### [Auswerten der Regeln zur Verringerung der Angriffsfläche](evaluate-attack-surface-reduction.md)
-#### [Konfigurationseinstellungen für die Verringerung der Angriffsfläche](configure-attack-surface-reduction.md)
-#### [FAQ zu Verringerung der Angriffsfläche](attack-surface-reduction-faq.md)
-
-#### [Steuerelemente zur Verringerung der Angriffsfläche]()
-##### [Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md)
-##### [Aktivieren der Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md)
-##### [Anpassen der Regeln zur Verringerung der Angriffsfläche](customize-attack-surface-reduction.md)
-##### [Anzeigen der Ereignisse zur Verringerung der Angriffsfläche](event-views.md)
-
-#### [Verwenden des Überwachungsmodus](audit-windows-defender.md)
+#### [Aktivieren der Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md)
+#### [Anpassen der Regeln zur Verringerung der Angriffsfläche](customize-attack-surface-reduction.md)
+#### [Häufig gestellte Fragen zur Verringerung der Angriffsfläche](attack-surface-reduction-faq.md)
+#### [Anzeigen der Ereignisse zur Verringerung der Angriffsfläche](event-views.md)
+#### [Verwenden des Überwachungsmodus zur Verringerung der Angriffsfläche](audit-windows-defender.md)
 
 ### Schutzlösungen der nächsten Generation
 #### [Übersicht über Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md)
@@ -592,6 +589,13 @@
 ###### [Erweiterte Bedrohungssuche mit Python](run-advanced-query-sample-python.md)
 ###### [Erweiterte Bedrohungssuche mit PowerShell](run-advanced-query-sample-powershell.md)
 ###### [Verwenden von OData-Abfragen](exposed-apis-odata-samples.md)
+
+
+#### [API für das Streaming von Rohdaten]()
+##### [Streaming von Rohdaten](raw-data-export.md)
+##### [Streamen erweiterter Ereignissuchen an den Azure Events-Hub](raw-data-export-event-hub.md)
+##### [Streamen erweiterter Ereignissuchen an Ihr Speicherkonto](raw-data-export-storage.md)
+
 
 #### [SIEM-Integration]()
 ##### [Grundlegendes zu Threat Intelligence-Konzepten](threat-indicator-concepts.md)
