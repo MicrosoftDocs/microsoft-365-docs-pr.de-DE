@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b830c165d91dfdc8c5c6c47abecd73ba7a9621c8
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: a272e78e05f86a8f9f918c873e9fb1a85f863bfc
+ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788463"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52793100"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
@@ -234,7 +234,7 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security Center w
 
       Zurück auf der Seite **Zulassungs- und Blockierungsliste** klicken Sie auf **Weiter**, wenn Sie bereit sind, fortzufahren.
 
-8. Überprüfen Sie auf der angezeigten Seite **Überprüfung** Ihre Einstellungen. Sie können in jedem Abschnitt **Bearbeiten** auswählen, um die Einstellungen in diesem Abschnitt zu ändern.
+8. Überprüfen Sie auf der angezeigten Seite **Überprüfung** Ihre Einstellungen. Sie können in jedem Abschnitt **Bearbeiten** auswählen, um die Einstellungen in diesem Abschnitt zu ändern. Alternativ können Sie auf **Zurück** klicken oder die entsprechende Seite im Assistenten auswählen.
 
    Wenn Sie den Vorgang abgeschlossen haben, klicken Sie auf **Erstellen**.
 
