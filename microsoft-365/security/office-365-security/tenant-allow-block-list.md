@@ -1,5 +1,5 @@
 ---
-title: Verwalten Ihrer Zulässigen und Blöcke in der Liste "Mandanten zulassen/blockieren"
+title: Verwalten Ihrer Zulassungen und Blöcke in der Mandanten-Zulassungs-/Sperrliste
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -13,15 +13,15 @@ search.appverid:
 - MET150
 ms.collection:
 - M365-security-compliance
-description: Administratoren können erfahren, wie Sie im Sicherheitsportal in der Liste "Mandanten zulassen/blockieren" Zulassen und Blockieren von Zulassen und Blockieren konfigurieren.
+description: Administratoren können im Sicherheitsportal erfahren, wie Sie Zulassungen und Blöcke in der Mandanten-Zulassungs-/Sperrliste konfigurieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 636114180a1814f5ef842b2a704f2df98488f46e
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 12139708fc5cde133819713fd7185435e594a1a9
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694485"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809179"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Verwalten der Zulassungs-/Sperrliste des Mandanten
 
@@ -34,53 +34,53 @@ ms.locfileid: "52694485"
 
 > [!NOTE]
 >
-> Die in diesem Artikel beschriebenen Features befinden sich in Vorschau, können geändert werden und sind nicht in allen Organisationen verfügbar.  Wenn Ihre Organisation nicht über die in diesem Artikel beschriebenen Spooffunktionen verfügt, lesen Sie die ältere [Spoofverwaltungserfahrung unter Manage spoofed senders using the spoof intelligence policy and spoof intelligence insight in EOP](walkthrough-spoof-intelligence-insight.md).
+> Die in diesem Artikel beschriebenen Features befinden sich in der Vorschau, können geändert werden und sind nicht in allen Organisationen verfügbar.  Wenn Ihre Organisation nicht über die in diesem Artikel beschriebenen Spoofingfeatures verfügt, lesen Sie die ältere Spoofverwaltungserfahrung unter [Verwalten von gefälschten Absendern mithilfe der Spoof Intelligence-Richtlinie und des Einblicks in spoofintelligenz in EOP.](walkthrough-spoof-intelligence-insight.md)
 >
-> Sie können zu **diesem** Zeitpunkt keine zulässigen URL- oder Dateielemente in der Mandanten zulassen/blockieren-Liste konfigurieren.
+> Sie können derzeit keine zulässigen URL- oder Dateielemente in der Mandanten-Zulassungs-/Sperrliste **konfigurieren.**
 
-In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online Postfächer können Sie mit dem EOP-Filter-Urteil nicht einverstanden sein. Beispielsweise kann eine gute Nachricht als ungültig (falsch positiv) gekennzeichnet werden, oder eine schlechte Nachricht kann als ungültig (falsch negativ) zugelassen werden.
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online Postfächer, können Sie mit der EOP-Filterbewertung nicht einverstanden sein. Beispielsweise kann eine gute Nachricht als falsch markiert werden (ein falsch positives Ergebnis), oder eine ungültige Nachricht kann durchgelassen werden (ein falsch negativer Wert).
 
-Mit der Mandanten-Allow/Block-Liste im Security & Compliance Center können Sie die Filterungs-Microsoft 365 manuell außer Kraft setzen. Die Mandanten zulassen/blockieren Liste wird während des Nachrichtenflusses und zum Zeitpunkt der Benutzerklicks verwendet. Sie können die folgenden Arten von Außerkraftsetzungen angeben:
+Die Mandanten-Zulassungs-/Sperrliste im Security & Compliance Center bietet Ihnen die Möglichkeit, die Microsoft 365 Filterbewertungen manuell zu überschreiben. Die Mandanten-Zulassungs-/Sperrliste wird während des Nachrichtenflusses und zum Zeitpunkt der Benutzerklicks verwendet. Sie können die folgenden Arten von Außerkraftsetzungen angeben:
 
-- ZU blockierende URLs.
+- Zu blockierende URLs.
 - Zu blockierende Dateien.
-- Spoofed senders to allow or block. Wenn Sie das Allow- oder Block-Urteil in der [Spoof Intelligence-Einsicht](learn-about-spoof-intelligence.md)außer Kraft setzen, wird der gefälschte Absender zu einem manuellen Zulassen- oder Blockiereneintrag, der nur auf der Registerkarte **Spoof** in der Mandanten-Zulassen-/Sperrliste angezeigt wird. Sie können hier auch manuell Zulassen oder Blockieren von Einträgen für spoofierte Absender erstellen, bevor sie von Spoof Intelligence erkannt werden.
+- Gefälschte Absender, die zugelassen oder blockiert werden sollen. Wenn Sie die Zulassungs- oder Blockbewertung im Einblick in die [Spoofintelligenz](learn-about-spoof-intelligence.md)außer Kraft setzen, wird der gefälschte Absender zu einem manuellen Zulassungs- oder Blockierungseintrag, der nur auf der Registerkarte **"Spoofing"** in der Mandanten-Zulassungs-/Sperrliste angezeigt wird. Sie können hier auch manuell Zulassungseinträge für gefälschte Absender erstellen oder blockieren, bevor sie durch Spoofintelligenz erkannt werden.
 
-In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten zulassen/blockieren-Liste im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online-Postfächer) konfigurieren.
+In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassungs-/Sperrliste im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer) konfigurieren.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **Mandanten zulassen/blockieren zu** wechseln, verwenden Sie <https://protection.office.com/tenantAllowBlockList> .
+- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **"Mandanten-Zulassungs-/Sperrliste"** zu wechseln, verwenden Sie <https://protection.office.com/tenantAllowBlockList> .
 
-- Sie geben Dateien mithilfe des SHA256-Hashwerts der Datei an. Führen Sie den folgenden Befehl in einer Eingabeaufforderung aus, um den SHA256-Hashwert einer Datei in Windows zu finden:
+- Sie geben Dateien mithilfe des SHA256-Hashwerts der Datei an. Um den SHA256-Hashwert einer Datei in Windows zu finden, führen Sie den folgenden Befehl an einer Eingabeaufforderung aus:
 
   ```console
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
-  Ein Beispielwert ist `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a` . #A0 (Perceptual Hash) werden nicht unterstützt.
+  Ein Beispielwert ist `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a` . Perceptual Hash (pHash)-Werte werden nicht unterstützt.
 
-- Die verfügbaren #A0 werden weiter unten in diesem Artikel in der #A1 für den Abschnitt [Mandanten zulassen/blockieren](#url-syntax-for-the-tenant-allowblock-list) beschrieben.
+- Die verfügbaren URL-Werte werden in der [URL-Syntax für den Abschnitt "Mandanten-Zulassungs-/Sperrliste"](#url-syntax-for-the-tenant-allowblock-list) weiter unten in diesem Artikel beschrieben.
 
-- Die Mandantenzu-/-sperrliste ermöglicht maximal 500 Einträge für URLs und 500 Einträge für Dateihashes.
+- Die Mandanten-Zulassungs-/Sperrliste lässt maximal 500 Einträge für URLs und 500 Einträge für Dateihashes zu.
 
-- Die maximale Anzahl von Zeichen für jeden Eintrag ist:
+- Die maximale Anzahl von Zeichen für jeden Eintrag lautet:
   - Dateihashes = 64
   - URL = 250
 
 - Ein Eintrag sollte innerhalb von 30 Minuten aktiv sein.
 
-- Standardmäßig laufen Einträge in der Mandanten-Zulassen-/Sperrliste nach 30 Tagen ab. Sie können ein Datum angeben oder festlegen, dass es nie abläuft.
+- Standardmäßig laufen Einträge in der Mandanten-Zulassungs-/Sperrliste nach 30 Tagen ab. Sie können ein Datum angeben oder festlegen, dass es nie abläuft.
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 - Sie müssen in Exchange Online Berechtigungen erhalten, bevor Sie die in diesem Artikel beschriebenen Schritte ausführen können:
-  - **URLs und Dateien**:
-    - Zum Hinzufügen und Entfernen von Werten aus der Mandantenberechtigungs-/Sperrliste müssen Sie Mitglied der Rollengruppen Organisationsverwaltung oder **Sicherheitsadministrator** sein. 
-    - Für den schreibgeschützten Zugriff auf die Mandantenzugriffs-/Sperrliste müssen Sie Mitglied der Rollengruppen **"Globaler Leser"** oder **"Sicherheitsleser"** sein.
-  - **Spoofing**: Eine der folgenden Kombinationen:
+  - **URLs und Dateien:**
+    - Um Werte aus der Mandanten-Zulassungs-/Sperrliste hinzuzufügen und zu entfernen, müssen Sie Mitglied der Rollengruppen **"Organisationsverwaltung"** oder **"Sicherheitsadministrator"** sein.
+    - Für den schreibgeschützten Zugriff auf die Mandanten-Zulassungs-/Sperrliste müssen Sie Mitglied der Rollengruppe **"Globaler Leser"** oder **"Sicherheitsleseberechtigter"** sein.
+  - **Spoofing:** Eine der folgenden Kombinationen:
     - **Organisationsverwaltung**
-    - **Sicherheitsadministrator** und **Nur-Ansicht-Konfiguration** oder **Nur-Ansicht-Organisationsverwaltung**. <u></u>
+    - **Sicherheitsadministrator** <u>und</u> **Nur-Ansicht-Konfiguration** oder **Nur-Ansicht-Organisationsverwaltung**.
 
   Weitere Informationen finden Sie unter [Berechtigungen in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
@@ -90,19 +90,19 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten zulassen/
   >
   > - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
-## <a name="use-the-security--compliance-center-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Erstellen von Block-URL-Einträgen in der Mandantenzu-/-sperrliste
+## <a name="use-the-security--compliance-center-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Centers zum Erstellen von Block-URL-Einträgen in der Mandanten-Zulassungs-/Sperrliste
 
-1. Wechseln Sie im Security & Compliance Center zu Richtlinien für die **Bedrohungsverwaltung** \>  \> **Mandanten zulassen/blockieren Listen**.
+1. Wechseln Sie im Security & Compliance  Center zu \> "Zulassungs-/Sperrlisten des Mandanten für die Bedrohungsverwaltungsrichtlinie".  \> 
 
-2. Überprüfen Sie auf der Seite Mandanten **zulassen/blockieren,** ob die Registerkarte **URLs** ausgewählt ist, und klicken Sie dann auf **Blockieren.**
+2. Überprüfen Sie auf der Seite **"Mandanten-Zulassungs-/Sperrliste",** ob die Registerkarte **"URLs"** ausgewählt ist, und klicken Sie dann auf **"Blockieren".**
 
-3. Konfigurieren Sie **im angezeigten** Flyout UrLs blockieren die folgenden Einstellungen:
+3. Konfigurieren Sie im angezeigten Flyout **"URLs blockieren"** die folgenden Einstellungen:
 
-   - **Zu blockierende URLs hinzufügen:** Geben Sie eine URL pro Zeile ein, bis zu maximal 20. Weitere Informationen zur Syntax für #A0 finden Sie in der URL-Syntax für den Abschnitt [Mandantenzu-/Sperrliste](#url-syntax-for-the-tenant-allowblock-list) weiter unten in diesem Artikel.
+   - **Hinzufügen von ZU blockierenden URLs:** Geben Sie eine URL pro Zeile ein, bis maximal 20. Ausführliche Informationen zur Syntax für URL-Einträge finden Sie in der [URL-Syntax für den Abschnitt "Mandanten-Zulassungs-/Sperrliste"](#url-syntax-for-the-tenant-allowblock-list) weiter unten in diesem Artikel.
 
-   - **Nie ablaufen:** Gehen Sie wie folgt vor:
+   - **Läuft nie ab:** Führen Sie einen der folgenden Schritte aus:
 
-     - Überprüfen Sie, ob die Einstellung deaktiviert ist ( Umschalten ) und verwenden Sie das Feld Läuft auf, um das ![ ](../../media/scc-toggle-off.png) Ablaufdatum für die Einträge anzugeben. 
+     - Stellen Sie sicher, dass die Einstellung deaktiviert ist ( ![ Umschalten ](../../media/scc-toggle-off.png) ) und verwenden Sie das Feld **"Läuft ab",** um das Ablaufdatum für die Einträge anzugeben.
 
        oder
 
@@ -112,19 +112,19 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten zulassen/
 
 4. Klicken Sie nach Abschluss des Vorgangs auf **Hinzufügen**.
 
-## <a name="use-the-security--compliance-center-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Erstellen von Blockdateieinträgen in der Mandantenzu-/-sperrliste
+## <a name="use-the-security--compliance-center-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Centers zum Erstellen von Blockierungsdateieinträgen in der Mandanten-Zulassungs-/Sperrliste
 
-1. Wechseln Sie im Security & Compliance Center zu Richtlinien für die **Bedrohungsverwaltung** \>  \> **Mandanten zulassen/blockieren Listen**.
+1. Wechseln Sie im Security & Compliance  Center zu \> "Zulassungs-/Sperrlisten des Mandanten für die Bedrohungsverwaltungsrichtlinie".  \> 
 
-2. Wählen Sie auf der Seite Mandanten **zulassen/blockieren** die Registerkarte **Dateien** aus, und klicken Sie dann auf **Blockieren**.
+2. Wählen Sie auf der Seite **"Mandanten-Zulassungs-/Sperrliste"** die Registerkarte **"Dateien"** aus, und klicken Sie dann auf **"Blockieren".**
 
-3. Konfigurieren Sie **im angezeigten Flyout** Dateien zum Blockieren von Dateien hinzufügen die folgenden Einstellungen:
+3. Konfigurieren Sie in den angezeigten **Add-Dateien zum Blockieren** des Flyouts die folgenden Einstellungen:
 
-   - **Hinzufügen von Dateihashes:** Geben Sie einen SHA256-Hashwert pro Zeile ein, bis zu maximal 20.
+   - **Hinzufügen von Dateihashes:** Geben Sie einen SHA256-Hashwert pro Zeile ein, bis maximal 20.
 
-   - **Nie ablaufen:** Gehen Sie wie folgt vor:
+   - **Läuft nie ab:** Führen Sie einen der folgenden Schritte aus:
 
-     - Überprüfen Sie, ob die Einstellung deaktiviert ist ( Umschalten ) und verwenden Sie das Feld Läuft auf, um das ![ ](../../media/scc-toggle-off.png) Ablaufdatum für die Einträge anzugeben. 
+     - Stellen Sie sicher, dass die Einstellung deaktiviert ist ( ![ Umschalten ](../../media/scc-toggle-off.png) ) und verwenden Sie das Feld **"Läuft ab",** um das Ablaufdatum für die Einträge anzugeben.
 
      oder
 
@@ -134,70 +134,70 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten zulassen/
 
 4. Klicken Sie nach Abschluss des Vorgangs auf **Hinzufügen**.
 
-## <a name="use-the-security--compliance-center-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Erstellen oder Blockieren gefälschter Absendereinträge in der Mandantenzu-/Sperrliste
+## <a name="use-the-security--compliance-center-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Erstellen oder Blockieren von Spoofing-Absendereinträgen in der Mandanten-Zulassungs-/Sperrliste
 
 **Hinweise**:
 
-- Nur die _Kombination_ aus dem  spoofierten Benutzer und der sendenden Infrastruktur, wie im Domänenpaar definiert, ist ausdrücklich zulässig oder von Spoofing blockiert.
-- Wenn Sie einen zulässigen oder blockierten Eintrag für ein Domänenpaar konfigurieren, werden Nachrichten dieses Domänenpaars nicht mehr in der Spoof Intelligence-Einsicht angezeigt.
-- Einträge für spoofierte Absender laufen nie ab.
+- Nur die _Kombination aus_ dem gefälschten Benutzer _und_ der sendenden Infrastruktur, wie im Domänenpaar definiert, ist ausdrücklich zulässig oder am Spoofing gehindert.
+- Wenn Sie einen Zulassungs- oder Blockeintrag für ein Domänenpaar konfigurieren, werden Nachrichten von diesem Domänenpaar nicht mehr in der Spoofintelligenz angezeigt.
+- Einträge für gefälschte Absender laufen nie ab.
 
-1. Wechseln Sie im Security & Compliance Center zu Richtlinien für die **Bedrohungsverwaltung** \>  \> **Mandanten zulassen/blockieren Listen**.
+1. Wechseln Sie im Security & Compliance  Center zu \> "Zulassungs-/Sperrlisten des Mandanten für die Bedrohungsverwaltungsrichtlinie".  \> 
 
-2. Wählen Sie auf der Seite Mandanten **zulassen/blockieren** die Registerkarte **Spoofing** aus, und klicken Sie dann auf **Hinzufügen**.
+2. Wählen Sie auf der Seite **"Mandanten-Zulassungs-/Sperrliste"** die Registerkarte **"Spoofing"** aus, und klicken Sie dann auf **"Hinzufügen".**
 
-3. Konfigurieren Sie **im angezeigten** Flyout Neue Domänenpaare hinzufügen die folgenden Einstellungen:
+3. Konfigurieren Sie im angezeigten Flyout **"Neue Domänenpaare hinzufügen"** die folgenden Einstellungen:
 
-   - **Hinzufügen neuer Domänenpaare mit Platzhaltern:** Geben Sie ein Domänenpaar pro Zeile ein, bis maximal 20. Weitere Informationen zur Syntax für spoofierte Absendereinträge finden Sie in der Syntax des Domänenpaars für spoofierte Absendereinträge im Abschnitt [Mandantenzu-/-sperrliste](#domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list) weiter unten in diesem Artikel.
+   - **Hinzufügen neuer Domänenpaare mit Platzhaltern:** Geben Sie ein Domänenpaar pro Zeile ein, maximal 20. Ausführliche Informationen zur Syntax für spoofierte Absendereinträge finden Sie in der [Domänenpaarsyntax für spoofierte Absendereinträge im Abschnitt "Mandanten-Zulassungs-/Sperrliste"](#domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list) weiter unten in diesem Artikel.
 
-   - **Spooftyp**: Wählen Sie einen der folgenden Werte aus:
-     - **Intern:** Der gefälschte Absender befindet sich in einer Domäne, die zu Ihrer Organisation gehört (eine [akzeptierte Domäne](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)).
+   - **Spooftyp:** Wählen Sie einen der folgenden Werte aus:
+     - **Intern:** Der gefälschte Absender befindet sich in einer Domäne, die zu Ihrer Organisation gehört (einer [akzeptierten Domäne).](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
      - **Extern:** Der gefälschte Absender befindet sich in einer externen Domäne.
 
-   - **Aktion**: Wählen Sie **Zulassen** oder **Blockieren aus.**
+   - **Aktion:** Wählen Sie **"Zulassen"** oder **"Blockieren"** aus.
 
 4. Klicken Sie nach Abschluss des Vorgangs auf **Hinzufügen**.
 
-## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Anzeigen von Einträgen in der Mandantenzu-/-sperrliste
+## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Centers zum Anzeigen von Einträgen in der Mandanten-Zulassungs-/Sperrliste
 
-1. Wechseln Sie im Security & Compliance Center zu Richtlinien für die **Bedrohungsverwaltung** \>  \> **Mandanten zulassen/blockieren Listen**.
+1. Wechseln Sie im Security & Compliance  Center zu \> "Zulassungs-/Sperrlisten des Mandanten für die Bedrohungsverwaltungsrichtlinie".  \> 
 
-2. Wählen Sie die registerkarte aus, die Sie möchten. Die verfügbaren Spalten hängen von der ausgewählten Registerkarte ab:
+2. Wählen Sie die gewünschte Registerkarte aus. Welche Spalten verfügbar sind, hängt von der ausgewählten Registerkarte ab:
 
-   - **URLs**:
-     - **Wert**: Die URL.
-     - **Aktion**: Der Wert **Block**.
+   - **URLs:**
+     - **Wert:** Die URL.
+     - **Aktion:** Der Wert **Block**.
      - **Datum der letzten Aktualisierung**
      - **Ablaufdatum**
      - **Hinweis**
 
    - **Files**
-     - **Wert**: Der Dateihash.
-     - **Aktion**: Der Wert **Block**.
+     - **Wert:** Der Dateihash.
+     - **Aktion:** Der Wert **Block**.
      - **Datum der letzten Aktualisierung**
      - **Ablaufdatum**
      - **Hinweis**
 
    - **Spoofing**
-     - **Spoofed user**
-     - **Senden von Infrastruktur**
-     - **Spooftyp**: Der Wert **Internal** oder **External**.
-     - **Aktion**: Der Wert **Block** oder **Allow**.
+     - **Gefälschter Benutzer**
+     - **Senden der Infrastruktur**
+     - **Spooftyp:** Der Wert **Internal** oder **External**.
+     - **Aktion:** Der Wert **Block** oder **Allow**.
 
-   Sie können auf eine Spaltenüberschrift klicken, um in aufsteigender oder absteigender Reihenfolge zu sortieren.
+   Sie können auf eine Spaltenüberschrift klicken, um sie in aufsteigender oder absteigender Reihenfolge zu sortieren.
 
-   Sie können auf **Gruppe klicken,** um die Ergebnisse zu gruppieren. Die verfügbaren Werte hängen von der ausgewählten Registerkarte ab:
+   Sie können auf **"Gruppieren"** klicken, um die Ergebnisse zu gruppieren. Die verfügbaren Werte hängen von der ausgewählten Registerkarte ab:
 
-   - **URLs**: Sie können die Ergebnisse nach **Aktion gruppieren.**
-   - **Dateien**: Sie können die Ergebnisse nach **Aktion gruppieren.**
+   - **URLs:** Sie können die Ergebnisse nach **Aktion** gruppieren.
+   - **Dateien:** Sie können die Ergebnisse nach **Aktion** gruppieren.
    - **Absenderdomänen für die BCL-Umgehung:** **Die Gruppe** ist auf dieser Registerkarte nicht verfügbar.
-   - **Spoofing**: Sie können die Ergebnisse nach **Aktions-** oder **Spooftyp gruppieren.**
+   - **Spoofing:** Sie können die Ergebnisse nach **Aktions-** oder **Spooftyp** gruppieren.
 
-   Klicken **Sie auf Suchen,** geben Sie einen Wert ganz oder teilweise ein, und drücken Sie die EINGABETASTE, um einen bestimmten Wert zu finden. Wenn Sie fertig sind, klicken Sie auf **Suche löschen Suchsymbol** ![ löschen ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) .
+   Klicken Sie auf **"Suchen",** geben Sie einen Wert ganz oder teilweise ein, und drücken Sie dann die EINGABETASTE, um einen bestimmten Wert zu finden. Wenn Sie fertig sind,  klicken Sie auf ![ Suchsymbol löschen ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) .
 
-   Klicken **Sie auf Filtern,** um die Ergebnisse zu filtern. Die im angezeigten **Filterf** flyout verfügbaren Werte hängen von der ausgewählten Registerkarte ab:
+   Klicken Sie auf **"Filtern",** um die Ergebnisse zu filtern. Die werte, die  im angezeigten Filter-Flyout verfügbar sind, hängen von der ausgewählten Registerkarte ab:
 
-   - **URLs**
+   - **Urls**
      - **Action**
      - **Nie ablaufen**
      - **Datum der letzten Aktualisierung**
@@ -209,7 +209,7 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten zulassen/
      - **Datum der letzten Aktualisierung**
      - **Ablaufdatum**
 
-   - **Absenderdomänen für die BCL-Umgehung**
+   - **Absenderdomänen für BCL-Umgehung**
      - **Nie ablaufen**
      - **Datum der letzten Aktualisierung**
      - **Ablaufdatum**
@@ -218,61 +218,61 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten zulassen/
      - **Action**
      - **Spooftyp**
 
-   Klicken Sie nach Abschluss des Abschlusses auf **Übernehmen**. Klicken Sie zum Löschen vorhandener Filter auf **Filter,** und klicken Sie im angezeigten **Flyout** Filter **auf Filter löschen.**
+   Wenn Sie fertig sind, klicken Sie auf **"Übernehmen".** Klicken Sie zum Löschen vorhandener Filter auf **"Filter",** und klicken Sie im angezeigten **Flyout "Filter"** auf **"Filter löschen".**
 
-## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Ändern von Einträgen in der Mandantenzu-/-sperrliste
+## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Centers zum Ändern von Einträgen in der Mandanten-Zulassungs-/Sperrliste
 
-1. Wechseln Sie im Security & Compliance Center zu Richtlinien für die **Bedrohungsverwaltung** \>  \> **Mandanten zulassen/blockieren Listen**.
+1. Wechseln Sie im Security & Compliance  Center zu \> "Zulassungs-/Sperrlisten des Mandanten für die Bedrohungsverwaltungsrichtlinie".  \> 
 
-2. Wählen Sie die Registerkarte aus, die den Typ des Eintrags enthält, den Sie ändern möchten:
-   - **URLs**
+2. Wählen Sie die Registerkarte aus, die den Eintragstyp enthält, den Sie ändern möchten:
+   - **Urls**
    - **Files**
-   - **Absenderdomänen für die BCL-Umgehung**
+   - **Absenderdomänen für BCL-Umgehung**
    - **Spoofing**
 
-3. Wählen Sie den Eintrag aus, den Sie ändern möchten, und klicken Sie dann auf **Bearbeiten** ![ (Symbol). ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) Die Werte, die Sie im angezeigten Flyout ändern können, hängen von der Registerkarte ab, die Sie im vorherigen Schritt ausgewählt haben:
+3. Wählen Sie den Eintrag aus, den  Sie ändern möchten, und klicken Sie dann auf ![ "Bearbeiten". ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) Die Werte, die Sie im angezeigten Flyout ändern können, hängen von der Registerkarte ab, die Sie im vorherigen Schritt ausgewählt haben:
 
-   - **URLs**
-     - **Niemals ablaufen** und/oder Ablaufdatum.
+   - **Urls**
+     - **Nie ablaufen** und/oder Ablaufdatum.
      - **Optionaler Hinweis**
 
    - **Files**
-     - **Niemals ablaufen** und/oder Ablaufdatum.
+     - **Nie ablaufen** und/oder Ablaufdatum.
      - **Optionaler Hinweis**
 
-   - **Absenderdomänen für die BCL-Umgehung**
-     - **Niemals ablaufen** und/oder Ablaufdatum.
+   - **Absenderdomänen für BCL-Umgehung**
+     - **Nie ablaufen** und/oder Ablaufdatum.
 
    - **Spoofing**
-     - **Aktion**: Sie können den Wert in **Zulassen oder** **Blockieren ändern.**
+     - **Aktion:** Sie können den Wert in **Zulassen** oder **Blockieren** ändern.
 
 4. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
-## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Entfernen von Einträgen aus der Mandantenzu-/-sperrliste
+## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Centers zum Entfernen von Einträgen aus der Mandanten-Zulassungs-/Sperrliste
 
-1. Wechseln Sie im Security & Compliance Center zu Richtlinien für die **Bedrohungsverwaltung** \>  \> **Mandanten zulassen/blockieren Listen**.
+1. Wechseln Sie im Security & Compliance  Center zu \> "Zulassungs-/Sperrlisten des Mandanten für die Bedrohungsverwaltungsrichtlinie".  \> 
 
-2. Wählen Sie die Registerkarte aus, die den Typ des Eintrags enthält, den Sie entfernen möchten:
-   - **URLs**
+2. Wählen Sie die Registerkarte aus, die den Eintragstyp enthält, den Sie entfernen möchten:
+   - **Urls**
    - **Files**
-   - **Absenderdomänen für die BCL-Umgehung**
+   - **Absenderdomänen für BCL-Umgehung**
    - **Spoofing**
 
-3. Wählen Sie den Eintrag aus, den Sie entfernen möchten, und klicken Sie dann **auf Löschen** ![ -Symbol ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png) .
+3. Wählen Sie den Eintrag aus, den  Sie entfernen möchten, und klicken Sie dann auf das Symbol ![ "Löschen". ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png)
 
-4. Klicken Sie im angezeigten Warnungsdialogfeld auf **Löschen**.
+4. Klicken Sie im angezeigten Warndialogfeld auf **"Löschen".**
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>Verwenden Exchange Online PowerShell oder eigenständiger EOP PowerShell zum Konfigurieren der Mandanten zulassen/Blockieren-Liste
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>Verwenden Exchange Online PowerShell oder der eigenständigen EOP-PowerShell zum Konfigurieren der Mandanten-Zulassungs-/Sperrliste
 
-### <a name="use-powershell-to-add-block-file-or-url-entries-to-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Hinzufügen von Blockdatei- oder URL-Einträgen zur Mandantenzu-/Sperrliste
+### <a name="use-powershell-to-add-block-file-or-url-entries-to-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Hinzufügen von Blockierungsdateien oder URL-Einträgen zur Mandanten-Zulassungs-/Sperrliste
 
-Verwenden Sie die folgende Syntax, um Blockdatei- oder #A0 in der Mandanten zulassen/blockieren-Liste hinzuzufügen:
+Verwenden Sie die folgende Syntax, um Blockierungsdateien oder URL-Einträge in der Mandanten-Zulassungs-/Sperrliste hinzuzufügen:
 
 ```powershell
 New-TenantAllowBlockListItems -ListType <FileHash | Url> -Block -Entries "Value1","Value2",..."ValueN" <-ExpirationDate Date | -NoExpiration> [-Notes <String>]
 ```
 
-In diesem Beispiel wird ein Blockdateieintrag für die angegebenen Dateien, die nie abläuft, hinzufügt.
+In diesem Beispiel wird ein Blockdateieintrag für die angegebenen Dateien hinzugefügt, die nie ablaufen.
 
 ```powershell
 New-TenantAllowBlockListItem -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
@@ -286,9 +286,9 @@ New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-TenantAllowBlockListItems](/powershell/module/exchange/new-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-add-allow-or-block-spoofed-sender-entries-to-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Hinzufügen zulässiger oder blockieren von gefälschten Absendereinträgen zur Mandantenzu-/Sperrliste
+### <a name="use-powershell-to-add-allow-or-block-spoofed-sender-entries-to-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Hinzufügen oder Blockieren von Spoofing-Absendereinträgen zur Mandanten-Zulassungs-/Sperrliste
 
-Verwenden Sie die folgende Syntax, um spoofierte Absendereinträge in der Mandanten zulassen/blockieren-Liste hinzuzufügen:
+Verwenden Sie die folgende Syntax, um gefälschte Absendereinträge in der Mandanten-Zulassungs-/Sperrliste hinzuzufügen:
 
 ```powershell
 New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -SendingInfrastructure <Domain | IPAddress/24> -SpoofType <External | Internal> -Action <Allow | Block>
@@ -296,9 +296,9 @@ New-TenantAllowBlockListSpoofItems -SpoofedUser <Domain | EmailAddress | *> -Sen
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-TenantAllowBlockListSpoofItems](/powershell/module/exchange/new-tenantallowblocklistspoofitems).
 
-### <a name="use-powershell-to-view-block-file-or-url-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Anzeigen von Blockdatei- oder URL-Einträgen in der Mandantenzu-/-sperrliste
+### <a name="use-powershell-to-view-block-file-or-url-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Anzeigen von Blockierungsdateien oder URL-Einträgen in der Mandanten-Zulassungs-/Sperrliste
 
-Verwenden Sie die folgende Syntax, um Blockdatei- oder #A0 in der Mandanten zulassen/blockieren-Liste anzeigen zu können:
+Verwenden Sie die folgende Syntax, um Blockierungsdateien oder URL-Einträge in der Mandanten-Zulassungs-/Sperrliste anzuzeigen:
 
 ```powershell
 Get-TenantAllowBlockListItems -ListType <FileHash | URL> [-Entry <FileHashValue | URLValue>] [<-ExpirationDate Date | -NoExpiration>]
@@ -316,23 +316,23 @@ In diesem Beispiel werden alle blockierten URLs zurückgegeben.
 Get-TenantAllowBlockListItems -ListType Url -Block
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-TenantAllowBlockListItems](/powershell/module/exchange/get-tenantallowblocklistitems).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Get-TenantAllowBlockListItems".](/powershell/module/exchange/get-tenantallowblocklistitems)
 
-### <a name="use-powershell-to-view-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Anzeigen zulässiger oder blockierter Absendereinträge in der Mandantenzu-/Sperrliste
+### <a name="use-powershell-to-view-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Anzeigen oder Blockieren von Spoofing-Absendereinträgen in der Mandanten-Zulassungs-/Sperrliste
 
-Verwenden Sie die folgende Syntax, um spoofierte Absendereinträge in der Mandantenzu-/Sperrliste anzeigen zu können:
+Verwenden Sie die folgende Syntax, um gefälschte Absendereinträge in der Mandanten-Zulassungs-/Sperrliste anzuzeigen:
 
 ```powershell
 Get-TenantAllowBlockListSpoofItems [-Action <Allow | Block>] [-SpoofType <External | Internal>
 ```
 
-In diesem Beispiel werden alle spoofierten Absendereinträge in der Mandanten zulassen/blockieren-Liste zurückgegeben.
+In diesem Beispiel werden alle gefälschten Absendereinträge in der Mandanten-Zulassungs-/Sperrliste zurückgegeben.
 
 ```powershell
 Get-TenantAllowBlockListSpoofItems
 ```
 
-In diesem Beispiel werden alle zulässigen spoofierten Absendereinträge zurückgegeben, die intern sind.
+This example returns all allow spoofed sender entries that are internal.
 
 ```powershell
 Get-TenantAllowBlockListSpoofItems -Action Allow -SpoofType Internal
@@ -344,11 +344,11 @@ In diesem Beispiel werden alle blockierten spoofierten Absendereinträge zurück
 Get-TenantAllowBlockListSpoofItems -Action Block -SpoofType External
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-TenantAllowBlockListSpoofItems](/powershell/module/exchange/get-tenantallowblocklistspoofitems).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Get-TenantAllowBlockListSpoofItems".](/powershell/module/exchange/get-tenantallowblocklistspoofitems)
 
-### <a name="use-powershell-to-modify-block-file-and-url-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Ändern von Blockdatei- und URL-Einträgen in der Mandantenzu-/Sperrliste
+### <a name="use-powershell-to-modify-block-file-and-url-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Ändern von Blockdatei- und URL-Einträgen in der Mandanten-Zulassungs-/Sperrliste
 
-Verwenden Sie die folgende Syntax, um Blockdatei- und #A0 in der Mandanten-Allow/Block List zu ändern:
+Verwenden Sie die folgende Syntax, um Blockdatei- und URL-Einträge in der Mandanten-Zulassungs-/Sperrliste zu ändern:
 
 ```powershell
 Set-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN"> [<-ExpirationDate Date | -NoExpiration>] [-Notes <String>]
@@ -360,33 +360,33 @@ In diesem Beispiel wird das Ablaufdatum des angegebenen Block-URL-Eintrags geän
 Set-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -ExpirationDate "5/30/2020"
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-TenantAllowBlockListItems](/powershell/module/exchange/set-tenantallowblocklistitems).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Set-TenantAllowBlockListItems".](/powershell/module/exchange/set-tenantallowblocklistitems)
 
-### <a name="use-powershell-to-modify-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Ändern zulässiger oder blockierter Absendereinträge in der Mandantenzu-/Sperrliste
+### <a name="use-powershell-to-modify-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Ändern oder Blockieren von Spoofing-Absendereinträgen in der Mandanten-Zulassungs-/Sperrliste
 
-Verwenden Sie die folgende Syntax, um gefälschte Absendereinträge in der Mandanten zulassen/blockieren-Liste zu ändern oder zu blockieren:
+Verwenden Sie die folgende Syntax, um spoofierte Absendereinträge in der Mandanten-Zulassungs-/Sperrliste zu ändern oder zu blockieren:
 
 ```powershell
 Set-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN"> -Action <Allow | Block>
 ```
 
-In diesem Beispiel wird der Spoofing-Absendereintrag von "Blockieren" geändert.
+In diesem Beispiel wird der Spoofing-Absendereintrag von "Blockieren zulassen" geändert.
 
 ```powershell
 Set-TenantAllowBlockListItems -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSRAAAA" -Action Block
 ```
 
-Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Set-TenantAllowBlockListSpoofItems](/powershell/module/exchange/set-tenantallowblocklistspoofitems).
+Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Set-TenantAllowBlockListSpoofItems".](/powershell/module/exchange/set-tenantallowblocklistspoofitems)
 
-### <a name="use-powershell-to-remove-url-or-file-entries-from-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Entfernen von URL- oder Dateieinträgen aus der Liste mandanten zulassen/blockieren
+### <a name="use-powershell-to-remove-url-or-file-entries-from-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Entfernen von URL- oder Dateieinträgen aus der Mandanten-Zulassungs-/Sperrliste
 
-Verwenden Sie die folgende Syntax, um Datei- und URL-Einträge aus der Mandantenzu-/Sperrliste zu entfernen:
+Verwenden Sie die folgende Syntax, um Datei- und URL-Einträge aus der Mandanten-Zulassungs-/Sperrliste zu entfernen:
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType <FileHash | Url> -Ids <"Id1","Id2",..."IdN">
 ```
 
-In diesem Beispiel wird der angegebene Block-URL-Eintrag aus der Mandanten-Allow/Block List entfernt.
+In diesem Beispiel wird der angegebene Block-URL-Eintrag aus der Mandanten-Zulassungs-/Sperrliste entfernt.
 
 ```powershell
 Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBywBwCqfQNJY8hBTbdlKFkv6BcUAAAl_QCZAACqfQNJY8hBTbdlKFkv6BcUAAAl_oSPAAAA0"
@@ -394,9 +394,9 @@ Remove-TenantAllowBlockListItems -ListType Url -Ids "RgAAAAAI8gSyI_NmQqzeh-HXJBy
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-TenantAllowBlockListItems](/powershell/module/exchange/remove-tenantallowblocklistitems).
 
-### <a name="use-powershell-to-remove-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Entfernen zulässiger oder blockierter Gefälschter Absendereinträge aus der Mandantenzu-/Sperrliste
+### <a name="use-powershell-to-remove-allow-or-block-spoofed-sender-entries-from-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Entfernen von Spoofing-Absendereinträgen aus der Mandanten-Zulassungs-/Sperrliste
 
-Verwenden Sie die folgende Syntax, um Spoof-Absendereinträge aus der Mandanten zulassen/blockieren-Liste zu entfernen oder zu blockieren:
+Verwenden Sie die folgende Syntax, um Spoofing von Absendereinträgen aus der Mandanten-Zulassungs-/Sperrliste zu entfernen oder zu blockieren:
 
 ```powershell
 Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">
@@ -404,7 +404,7 @@ Remove-TenantAllowBlockListSpoofItems -Ids <"Id1","Id2",..."IdN">
 
 Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-TenantAllowBlockListSpoofItems](/powershell/module/exchange/remove-tenantallowblocklistspoofitems).
 
-## <a name="url-syntax-for-the-tenant-allowblock-list"></a>#A0 für die Mandanten-Allow/Block List
+## <a name="url-syntax-for-the-tenant-allowblock-list"></a>URL-Syntax für die Mandanten-Zulassungs-/Sperrliste
 
 - IP4v- und IPv6-Adressen sind zulässig, TCP/UDP-Ports jedoch nicht.
 
@@ -412,32 +412,32 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Te
 
 - Unicode wird nicht unterstützt, Punycode jedoch.
 
-- Hostnamen sind zulässig, wenn alle folgenden Anweisungen zutreffen:
-  - Der Hostname enthält einen Zeitraum.
-  - Es gibt mindestens ein Zeichen links vom Zeitraum.
-  - Rechts neben dem Zeitraum befinden sich mindestens zwei Zeichen.
+- Hostnamen sind zulässig, wenn alle folgenden Anweisungen wahr sind:
+  - Der Hostname enthält einen Punkt.
+  - Links vom Punkt befindet sich mindestens ein Zeichen.
+  - Rechts neben dem Punkt befinden sich mindestens zwei Zeichen.
 
-  Beispielsweise ist `t.co` zulässig oder nicht `.com` `contoso.` zulässig.
+  Ist beispielsweise `t.co` zulässig `.com` oder nicht `contoso.` zulässig.
 
 - Unterpfade werden nicht impliziert.
 
-  Enthält z. `contoso.com` B. nicht `contoso.com/a` .
+  Enthält z. B. `contoso.com` nicht `contoso.com/a` .
 
 - Platzhalter (*) sind in den folgenden Szenarien zulässig:
 
-  - Auf einen linken Platzhalter muss ein Zeitraum folgen, um eine Unterdomäne anzugeben.
+  - Auf einen linken Platzhalter muss ein Punkt folgen, um eine Unterdomäne anzugeben.
 
     Ist beispielsweise `*.contoso.com` zulässig; `*contoso.com` ist nicht zulässig.
 
   - Ein rechter Platzhalter muss einem Schrägstrich (/) folgen, um einen Pfad anzugeben.
 
-    Beispielsweise ist `contoso.com/*` zulässig oder nicht `contoso.com*` `contoso.com/ab*` zulässig.
+    Ist beispielsweise `contoso.com/*` zulässig `contoso.com*` oder nicht `contoso.com/ab*` zulässig.
 
   - Alle Unterpfade werden nicht durch einen rechten Platzhalter impliziert.
 
-    Enthält z. `contoso.com/*` B. nicht `contoso.com/a` .
+    Enthält z. B. `contoso.com/*` nicht `contoso.com/a` .
 
-  - `*.com*` ist ungültig (keine auflösbare Domäne, und der rechte Platzhalter folgt keinem Schrägstrich).
+  - `*.com*` ungültig ist (keine auflösbare Domäne, und der rechte Platzhalter folgt keinem Schrägstrich).
 
   - Platzhalter sind in IP-Adressen nicht zulässig.
 
@@ -445,9 +445,9 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Te
 
   - Eine linke Tilde impliziert eine Domäne und alle Unterdomänen.
 
-    Enthält `~contoso.com` z. `contoso.com` B. und `*.contoso.com` .
+    Beispiel: `~contoso.com` "includes" `contoso.com` und `*.contoso.com` ".
 
-- URL-Einträge, die Protokolle (z. B. , oder ) enthalten, werden fehlschlagen, da `http://` URL-Einträge für alle Protokolle `https://` `ftp://` gelten.
+- URL-Einträge, die Protokolle enthalten (z. B. `http://` , oder ) schlagen `https://` `ftp://` fehl, da URL-Einträge für alle Protokolle gelten.
 
 - Ein Benutzername oder Kennwort wird nicht unterstützt oder ist nicht erforderlich.
 
@@ -455,7 +455,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Te
 
 - Eine URL sollte nach Möglichkeit alle Umleitungen enthalten.
 
-### <a name="url-entry-scenarios"></a>Szenarien für den URL-Eintrag
+### <a name="url-entry-scenarios"></a>URL-Eintragsszenarien
 
 Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten beschrieben.
 
@@ -463,7 +463,7 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
 
 **Eintrag**: `contoso.com`
 
-- **Übereinstimmung zulassen**: contoso.com
+- **Übereinstimmung zulassen:** contoso.com
 
 - **Nicht übereinstimmend zulassen:**
 
@@ -475,7 +475,7 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
 
-- **Übereinstimmung blockieren**:
+- **Blocküberstimmung:**
 
   - contoso.com
   - contoso.com/a
@@ -485,52 +485,52 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
 
-- **Block nicht übereinstimmend**: abc-contoso.com
+- **Block nicht abgeglichen:** abc-contoso.com
 
 #### <a name="scenario-left-wildcard-subdomain"></a>Szenario: Linker Platzhalter (Unterdomäne)
 
 **Eintrag**: `*.contoso.com`
 
-- **Übereinstimmung zulassen** und **Übereinstimmung blockieren**:
+- **Übereinstimmung zulassen** und **Übereinstimmung blockieren:**
 
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Allow not matched** and **Block not matched**:
+- **Nicht übereinstimmende** und **nicht übereinstimmende Blockierung** zulassen:
 
   - 123contoso.com
   - contoso.com
   - test.com/contoso.com
   - www.contoso.com/abc
 
-#### <a name="scenario-right-wildcard-at-top-of-path"></a>Szenario: Rechter Platzhalter am oberen Rand des Pfads
+#### <a name="scenario-right-wildcard-at-top-of-path"></a>Szenario: Rechter Platzhalter oben im Pfad
 
 **Eintrag**: `contoso.com/a/*`
 
-- **Übereinstimmung zulassen** und **Übereinstimmung blockieren**:
+- **Übereinstimmung zulassen** und **Übereinstimmung blockieren:**
 
   - contoso.com/a/b
   - contoso.com/a/b/c
   - contoso.com/a/?q=joe@t.com
 
-- **Allow not matched** and **Block not matched**:
+- **Nicht übereinstimmende** und **nicht übereinstimmende Blockierung** zulassen:
 
   - contoso.com
   - contoso.com/a
   - www.contoso.com
   - www.contoso.com/q=a@contoso.com
 
-#### <a name="scenario-left-tilde"></a>Szenario: Left tilde
+#### <a name="scenario-left-tilde"></a>Szenario: Linke Tilde
 
 **Eintrag**: `~contoso.com`
 
-- **Übereinstimmung zulassen** und **Übereinstimmung blockieren**:
+- **Übereinstimmung zulassen** und **Übereinstimmung blockieren:**
 
   - contoso.com
   - www.contoso.com
   - xyz.abc.contoso.com
 
-- **Allow not matched** and **Block not matched**:
+- **Nicht übereinstimmende** und **nicht übereinstimmende Blockierung** zulassen:
 
   - 123contoso.com
   - contoso.com/abc
@@ -540,7 +540,7 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
 
 **Eintrag**: `contoso.com/*`
 
-- **Übereinstimmung zulassen** und **Übereinstimmung blockieren**:
+- **Übereinstimmung zulassen** und **Übereinstimmung blockieren:**
 
   - contoso.com/?q=whatever@fabrikam.com
   - contoso.com/a
@@ -550,13 +550,13 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
   - contoso.com/b/a/c
   - contoso.com/ba
 
-- **Nicht übereinstimmend zulassen und** **Block nicht** übereinstimmen: contoso.com
+- **Nicht übereinstimmende** und **nicht übereinstimmende Blockierung** zulassen: contoso.com
 
 #### <a name="scenario-left-wildcard-subdomain-and-right-wildcard-suffix"></a>Szenario: Linke Platzhalterunterdomäne und rechtes Platzhaltersuffix
 
 **Eintrag**: `*.contoso.com/*`
 
-- **Übereinstimmung zulassen** und **Übereinstimmung blockieren**:
+- **Übereinstimmung zulassen** und **Übereinstimmung blockieren:**
 
   - abc.contoso.com/ab
   - abc.xyz.contoso.com/a/b/c
@@ -564,13 +564,13 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
   - www.contoso.com/b/a/c
   - xyz.contoso.com/ba
 
-- **Nicht übereinstimmend zulassen und** **Block nicht** übereinstimmen : contoso.com/b
+- **Nicht übereinstimmende** und **nicht übereinstimmende Blockierung** zulassen: contoso.com/b
 
-#### <a name="scenario-left-and-right-tilde"></a>Szenario: Linker und rechter Tilde
+#### <a name="scenario-left-and-right-tilde"></a>Szenario: Linke und rechte Tilde
 
 **Eintrag**: `~contoso.com~`
 
-- **Übereinstimmung zulassen** und **Übereinstimmung blockieren**:
+- **Übereinstimmung zulassen** und **Übereinstimmung blockieren:**
 
   - contoso.com
   - contoso.com/a
@@ -578,7 +578,7 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
   - www.contoso.com/b
   - xyz.abc.contoso.com
 
-- **Allow not matched** and **Block not matched**:
+- **Nicht übereinstimmende** und **nicht übereinstimmende Blockierung** zulassen:
 
   - 123contoso.com
   - contoso.org
@@ -587,9 +587,9 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
 
 **Eintrag**: `1.2.3.4`
 
-- **Übereinstimmung zulassen** und **Übereinstimmung blockieren**: 1.2.3.4
+- **Übereinstimmung zulassen** und **Übereinstimmung blockieren:** 1.2.3.4
 
-- **Allow not matched** and **Block not matched**:
+- **Nicht übereinstimmende** und **nicht übereinstimmende Blockierung** zulassen:
 
   - 1.2.3.4/a
   - 11.2.3.4/a
@@ -598,7 +598,7 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
 
 **Eintrag**: `1.2.3.4/*`
 
-- **Übereinstimmung zulassen** und **Übereinstimmung blockieren**:
+- **Übereinstimmung zulassen** und **Übereinstimmung blockieren:**
 
   - 1.2.3.4/b
   - 1.2.3.4/baaaa
@@ -607,14 +607,14 @@ Gültige URL-Einträge und deren Ergebnisse werden in den folgenden Abschnitten 
 
 Die folgenden Einträge sind ungültig:
 
-- **Fehlende oder ungültige Domänenwerte**:
+- **Fehlende oder ungültige Domänenwerte:**
 
-  - contoso
+  - Contoso
   - \*.contoso.\*
   - \*.com
-  - \*.PDF
+  - \*.pdf
 
-- **Platzhalter für Text oder ohne Abstandszeichen**:
+- **Platzhalter für Text oder ohne Leerzeichen:**
 
   - \*contoso.com
   - contoso.com\*
@@ -623,17 +623,17 @@ Die folgenden Einträge sind ungültig:
   - contoso.com/a\*
   - contoso.com/ab\*
 
-- **IP-Adressen mit Ports**:
+- **IP-Adressen mit Ports:**
 
   - contoso.com:443
   - abc.contoso.com:25
 
-- **Nicht beschreibende Platzhalter**:
+- **Nicht beschreibende Platzhalter:**
 
   - \*
   - \*.\*
 
-- **Mittlere Platzhalter**:
+- **Mittlere Platzhalter:**
 
   - conto \* so.com
   - conto~so.com
@@ -643,30 +643,32 @@ Die folgenden Einträge sind ungültig:
   - contoso.com/\*\*
   - contoso.com/\*/\*
 
-## <a name="domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Domänenpaarsyntax für spoofierte Absendereinträge in der Mandantenzu-/-sperrliste
+## <a name="domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Domänenpaarsyntax für gefälschte Absendereinträge in der Mandanten-Zulassungs-/Sperrliste
 
-Ein Domänenpaar für einen gefälschten Absender in der Mandanten-Allow/Block List verwendet die folgende Syntax: `<Spoofed user>, <Sending infrastructure>` .
+Ein Domänenpaar für einen gefälschten Absender in der Mandanten-Zulassungs-/Sperrliste verwendet die folgende Syntax: `<Spoofed user>, <Sending infrastructure>` .
 
-- **Spoofed user**: Dieser Wert umfasst die E-Mail-Adresse des spoofierten Benutzers, der im Feld **Von** in E-Mail-Clients angezeigt wird. Diese Adresse wird auch als Adresse `5322.From` bezeichnet. Gültige Werte sind:
+- **Gefälschter Benutzer:** Dieser Wert bezieht sich auf die E-Mail-Adresse des gefälschten Benutzers, der im **Feld "Von"** in E-Mail-Clients angezeigt wird. Diese Adresse wird auch als `5322.From` Adresse bezeichnet. Gültige Werte sind:
   - Eine einzelne E-Mail-Adresse (z. B. chris@contoso.com).
   - Eine E-Mail-Domäne (z. B. contoso.com).
   - Das Platzhalterzeichen (z. B. \* ).
 
-- **Sendende Infrastruktur:** Dieser Wert gibt die Quelle von Nachrichten des spoofierten Benutzers an. Gültige Werte sind:
-  - Die Domäne in einer Reverse-DNS-Suche (PTR-Eintrag) der IP-Adresse des Quell-E-Mail-Servers (z. B. fabrikam.com).
-  - Wenn die Quell-IP-Adresse keinen PTR-Eintrag enthält, wird die sendende Infrastruktur als \<source IP\> /24 identifiziert (z. B. 192.168.100.100/24).
+- Senden der **Infrastruktur:** Dieser Wert gibt die Quelle von Nachrichten des gefälschten Benutzers an. Gültige Werte sind:
+  - Die Domäne in einer reversen DNS-Suche (PTR-Eintrag) der IP-Adresse des Quell-E-Mail-Servers (z. B. fabrikam.com).
+  - Wenn die Quell-IP-Adresse keinen PTR-Eintrag aufweist, wird die sendende Infrastruktur als \<source IP\> /24 identifiziert (z. B. 192.168.100.100/24).
 
-Im Folgenden finden Sie einige Beispiele für gültige Domänenpaare zum Identifizieren gefälschter Absender:
+Hier sind einige Beispiele für gültige Domänenpaare zum Identifizieren von gefälschten Absendern:
 
 - `contoso.com, 192.168.100.100/24`
 - `chris@contoso.com, fabrikam.com`
 - `*, contoso.net`
 
-Das Hinzufügen eines Domänenpaars ermöglicht oder blockiert nur die *Kombination* des spoofierten Benutzers *und der sendenden* Infrastruktur. E-Mails vom spoofierten Benutzer aus einer Beliebigen Quelle werden nicht zulässig, und es werden auch keine E-Mails aus der sendenden Infrastrukturquelle für spoofierte Benutzer zulässig.
+Die maximale Anzahl von gefälschten Absendereinträgen beträgt 1000. 
 
-Beispielsweise fügen Sie einen zulässigen Eintrag für das folgende Domänenpaar hinzu:
+Das Hinzufügen eines Domänenpaars erlaubt oder blockiert nur die *Kombination aus* dem gefälschten Benutzer *und* der sendenden Infrastruktur. Es erlaubt weder E-Mails vom gefälschten Benutzer aus einer Quelle noch E-Mails aus der sendenden Infrastrukturquelle für spoofierte Benutzer. 
 
-- **Domäne**: gmail.com
-- **Infrastruktur**: tms.mx.com
+Beispielsweise fügen Sie einen Zulassungseintrag für das folgende Domänenpaar hinzu:
 
-Nur Nachrichten von dieser Domäne und *dem sendenden* Infrastrukturpaar dürfen spoofen. Andere Absender, die versuchen, gmail.com zu spoofen, sind nicht zulässig. Nachrichten von Absendern in anderen Domänen, die von tms.mx.com stammen, werden durch Spoof intelligence überprüft.
+- **Domäne:** gmail.com
+- **Infrastruktur:** tms.mx.com
+
+Nur Nachrichten aus dieser Domäne *und* dem sendenden Infrastrukturpaar dürfen Spoofing ausführen. Andere Absender, die versuchen, gmail.com zu spoofen, sind nicht zulässig. Nachrichten von Absendern in anderen Domänen, die von tms.mx.com stammen, werden durch Spoofintelligenz überprüft.
