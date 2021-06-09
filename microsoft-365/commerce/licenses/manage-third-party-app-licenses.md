@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
+ms.reviewer: argani
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -15,16 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 - commerce_licensing
-ms.reviewer: argani
 search.appverid:
 - MET150
-description: Erfahren Sie, wie Sie Lizenzen für Apps von Drittanbietern im Microsoft 365 Admin Center verwalten.
-ms.openlocfilehash: 91c2a75aefe28b3525996522f7fdd55d22524d43
-ms.sourcegitcommit: 794f9767aaebe13ab1aead830b214ea674289d19
+description: Erfahren Sie, wie Sie Lizenzen für Drittanbieter-Apps im Microsoft 365 Admin Center verwalten.
+ms.date: 04/30/2021
+ms.openlocfilehash: 2b74c8a43f759ca2cdcecac6a59fca5c0952b44f
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52107718"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821403"
 ---
 # <a name="manage-third-party-app-licenses-in-the-microsoft-365-admin-center"></a>Verwalten von Drittanbieter-App-Lizenzen im Microsoft 365 Admin Center
 
@@ -36,18 +37,18 @@ Sie müssen ein globaler, Lizenz- oder Benutzeradministrator sein, um Lizenzen z
 
 ## <a name="assign-third-party-app-licenses-to-users-or-groups"></a>Zuweisen von Drittanbieter-App-Lizenzen zu Benutzern oder Gruppen
 
-1. Wechseln Sie im Microsoft 365 Admin Center zur Seite  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Abrechnungslizenzen.</a>
+1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **"Abrechnungslizenzen".**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a>
 2. Wählen Sie die App aus, für die Sie Lizenzen zuweisen möchten.
-3. Wählen Sie auf der Seite Lizenzdetails die Option Lizenzen **zuweisen aus.**
-4. Geben Sie **im** Bereich Lizenzen zuweisen den Namen eines Benutzers oder einer Gruppe ein, und wählen Sie ihn dann aus den Ergebnissen aus, um ihn der Liste hinzuzufügen.
+3. Wählen Sie auf der Seite "Lizenzdetails" die Option **"Lizenzen zuweisen" aus.**
+4. Beginnen Sie im Bereich **"Lizenzen zuweisen"** mit der Eingabe des Namens eines Benutzers oder einer Gruppe, und wählen Sie ihn dann aus den Ergebnissen aus, um ihn der Liste hinzuzufügen.
 5. Wählen Sie abschließend **Zuweisen** und dann **Schließen** aus.
 
-## <a name="unassign-third-party-app-licenses-from-users-or-groups"></a>Zuweisen von Drittanbieter-App-Lizenzen von Benutzern oder Gruppen
+## <a name="unassign-third-party-app-licenses-from-users-or-groups"></a>Aufheben der Zuweisung von Drittanbieter-App-Lizenzen von Benutzern oder Gruppen
 
-1. Seite "Abrechnungslizenzen" **im** Admin  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a> Center.
-2. Wählen Sie die App aus, für die Sie Lizenzen nicht mehr zuweisen möchten.
-3. Wählen Sie auf der Seite Lizenzdetails die Benutzer und Gruppen aus, aus der Lizenzen entfernt werden, und wählen Sie dann Lizenzen zuweisen aus.
-4. Vergewissern Sie sich im Dialogfeld, dass Sie die Lizenzen entfernen möchten, und wählen Sie Dann Zuweisen entfernen aus.
+1. Im Admin Center, Seite   >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">"Abrechnungslizenzen".</a>
+2. Wählen Sie die App aus, für die Sie die Zuweisung von Lizenzen aufheben möchten.
+3. Wählen Sie auf der Seite "Lizenzdetails" die Benutzer und Gruppen aus, aus denen Lizenzen entfernt werden sollen, und wählen Sie dann "Lizenzen zuweisen aufheben" aus.
+4. Bestätigen Sie im Dialogfeld, dass Sie die Lizenzen entfernen möchten, und wählen Sie dann Die Zuweisung aufheben aus.
 
 ## <a name="add-or-remove-third-party-app-licenses-for-your-account"></a>Hinzufügen oder Entfernen von Drittanbieter-App-Lizenzen für Ihr Konto
 
@@ -55,13 +56,13 @@ Drittanbieter-App-Lizenzen werden vom App-Anbieter verwaltet. Wenden Sie sich an
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Je nach gekaufter Drittanbieter-App besteht der nächste Schritt möglicherweise in der Installation der App in der Umgebung Ihrer Organisation. Durch die Installation der App ist sie für Ihre Benutzer verfügbar. Verwenden Sie die folgenden Schritte, um eine Drittanbieter-App in Ihrer Umgebung zu installieren.
+Abhängig von der Drittanbieter-App, die Sie gekauft haben, können Sie die App im nächsten Schritt in der Umgebung Ihrer Organisation installieren. Durch die Installation der App wird sie für Ihre Benutzer verfügbar. Führen Sie die folgenden Schritte aus, um eine Drittanbieter-App in Ihrer Umgebung zu installieren.
 
-1. Seite "Abrechnungslizenzen" **im** Admin  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank"></a> Center.
+1. Im Admin Center, Seite   >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">"Abrechnungslizenzen".</a>
 2. Wählen Sie die App aus, die Sie in Ihrem Konto installieren möchten.
-3. Wählen Sie auf der Seite Lizenzdetails die Option Installieren dieses Produkts aus. Sie werden zu einer anderen Plattformwebsite umgeleitet, auf der Sie die App in Ihrer Umgebung installieren.
+3. Wählen Sie auf der Seite "Lizenzdetails" die Option "Dieses Produkt installieren" aus. Sie werden zu einer anderen Plattformwebsite umgeleitet, auf der Sie die App in Ihrer Umgebung installieren.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Zuweisen von Lizenzen zu Benutzern](../../admin/manage/assign-licenses-to-users.md) (Artikel) \
-[Zuweisen von Lizenzen von Benutzern (Artikel)](../../admin/manage/remove-licenses-from-users.md)
+[Aufheben der Zuweisung von Lizenzen von Benutzern](../../admin/manage/remove-licenses-from-users.md) (Artikel)

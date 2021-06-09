@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Die Microsoft Compliance-Erweiterung erweitert die Überwachung von Dateiaktivitäten und Schutzaktionen auf den Google Chrome-Browser
-ms.openlocfilehash: b8d9be88f42cce736cdbf66a97f4363106fa5820
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: cf7a3cd2e26f2e7d7a116e4a609f98aeea78be19
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730486"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843806"
 ---
 # <a name="learn-about-the-microsoft-compliance-extension"></a>Erfahren Sie mehr über die Microsoft Compliance-Erweiterung
 
@@ -63,5 +63,5 @@ Lesen Sie [Erste Schritte mit der Microsoft Compliance-Erweiterung](dlp-chrome-g
 - [Informationen zur Verhinderung von Datenverlust](dlp-learn-about-dlp.md)
 - [Erstellen, Testen und Optimieren einer DLP-Richtlinie](create-test-tune-dlp-policy.md)
 - [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)
-- [Microsoft Defender für Endpunkt](https://docs.microsoft.com/windows/security/threat-protection/)
+- [Microsoft Defender für Endpunkt](/windows/security/threat-protection/)
 - [Insider-Risikomanagement](insider-risk-management.md)

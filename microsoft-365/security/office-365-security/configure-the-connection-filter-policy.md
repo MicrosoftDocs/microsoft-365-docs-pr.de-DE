@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren erfahren, wie Sie die Verbindungsfilterung in Exchange Online Protection (EOP) konfigurieren, um E-Mails von E-Mail-Servern zuzulassen oder zu blockieren.
+description: Administratoren können erfahren, wie Sie die Verbindungsfilterung in Exchange Online Protection (EOP) konfigurieren, um E-Mails von E-Mail-Servern zuzulassen oder zu blockieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 27c8cbbc70a4844e11bf85003215d2798a57a7ff
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: b5eb24377dd9f9ac304e1df7b2902d29e4a738b9
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52792980"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821961"
 ---
 # <a name="configure-connection-filtering"></a>Konfigurieren von Verbindungsfiltern
 
@@ -51,7 +51,7 @@ In diesem Artikel wird beschrieben, wie Sie die Standardverbindungsfilterrichtli
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security Center über <https://security.microsoft.com/>. Wechseln Sie direkt zur Seite **Antispamrichtlinien**, verwenden Sie <https://security.microsoft.com/antispam>.
+- Sie öffnen das Security Center über <https://security.microsoft.com>. Wechseln Sie direkt zur Seite **Antispamrichtlinien**, verwenden Sie <https://security.microsoft.com/antispam>.
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -66,7 +66,7 @@ In diesem Artikel wird beschrieben, wie Sie die Standardverbindungsfilterrichtli
   - Durch Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
-- Um die Quell-IP-Adressen der E-Mail-Server (Absender) zu finden, die Sie zulassen oder blockieren möchten, können Sie das Headerfeld für die Verbindungs-IP **(CIP)** im Nachrichtenheader überprüfen. Informationen zum Anzeigen einer Nachrichtenkopfzeile in verschiedenen E-Mail-Clients finden Sie unter Anzeigen von [Internet-Nachrichtenkopfzeilen in Outlook.](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)
+- Um die Quell-IP-Adressen der E-Mail-Server (Absender) zu finden, die Sie zulassen oder blockieren möchten, können Sie das Headerfeld für die Verbindungs-IP **(CIP)** im Nachrichtenheader überprüfen. Informationen zum Anzeigen eines Nachrichtenkopfs in verschiedenen E-Mail-Clients finden Sie unter Anzeigen von [Internet-Nachrichtenkopfzeilen in Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
 - Die IP-Zulassungsliste hat Vorrang vor der IP-Sperrliste (eine Adresse in beiden Listen wird nicht blockiert).
 
@@ -152,7 +152,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Set-Host
 
 Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie die Standardverbindungsfilterrichtlinie erfolgreich geändert haben:
 
-- Wechseln Sie im Security Center zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln, indem Sie in der Liste die \>  \>  \>  \> **Verbindungsfilterrichtlinie (Standard)** auswählen, indem Sie auf den Namen der Richtlinie klicken und die Einstellungen überprüfen.
+- Wechseln Sie im Security Center zu **E-Mail & Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln, wählen Sie in der Liste die \>  \>  \>  \> **Verbindungsfilterrichtlinie (Standard)** aus, indem Sie auf den Namen der Richtlinie klicken und die Einstellungen überprüfen.
 
 - Führen Sie in Exchange Online PowerShell oder der eigenständigen EOP PowerShell den folgenden Befehl aus, und überprüfen Sie die Einstellungen:
 
@@ -207,4 +207,4 @@ Wenn eines dieser Szenarien auftritt, können Sie eine Nachrichtenflussregel mit
 
 ****
 
-![Das kurze Symbol für LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Entdecken Sie kostenlose Videokurse für **Microsoft 365 Administratoren und IT-Spezialisten,** die Ihnen von LinkedIn Learning zur Verfügung gestellt werden.
+![Das kurze Symbol für LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New zum Microsoft 365?** Entdecken Sie kostenlose Videokurse für **Microsoft 365 Administratoren und IT-Spezialisten,** die Ihnen von LinkedIn Learning zur Verfügung gestellt werden.

@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie mehr über die Advanced eDiscovery Lösung in Microsoft 365. Dieser Artikel bietet eine Übersicht über Advanced eDiscovery in Microsoft 365, ein Tool, das Sie bei der Verwaltung interner und externer Untersuchungen unterstützt. Außerdem werden die geschäftlichen Gründe für die Verwendung von Advanced eDiscovery zur Verwaltung Ihrer rechtlichen Untersuchungen untersucht.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ec5ea7b32abb03edd31ab69abc7b8d3044b1d353
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 16f597fdbbbad89116af73fdd0a607f3f03116ad
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782789"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840838"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Übersicht über Microsoft 365 Advanced eDiscovery
 
@@ -33,7 +33,7 @@ Die Advanced eDiscovery-Lösung in Microsoft 365 baut auf den vorhandenen Micros
 
 ## <a name="advanced-ediscovery-capabilities"></a>Advanced eDiscovery-Funktionen
 
-Advanced eDiscovery können Ihrer Organisation helfen, auf Rechtliches oder interne Untersuchungen zu reagieren, indem sie Daten ermitteln, wo sie sich befinden. Sie können eDiscovery-Workflows nahtlos verwalten, indem Sie Personen identifizieren, die von Interesse sind, und deren Datenquellen identifizieren, nahtlos Haltebereiche anwenden, um Daten zu speichern, und dann den Prozess der rechtlichen Aufbewahrung verwalten. Durch das Sammeln von Daten aus der Quelle können Sie die Live-Microsoft 365-Plattform durchsuchen, um schnell zu finden, was Sie benötigen. Intelligente Machine Learning-Funktionen wie tiefe Indizierung, E-Mail-Threading und Erkennung von Nahezu-Duplikaten helfen Ihnen auch dabei, große Datenmengen auf einen relevanten Datensatz zu reduzieren.
+Advanced eDiscovery können Ihrer Organisation helfen, auf rechtliche Fragen oder interne Untersuchungen zu reagieren, indem sie Daten ermitteln, in denen sie sich befindet. Sie können eDiscovery-Workflows nahtlos verwalten, indem Sie Personen identifizieren, die von Interesse sind, und deren Datenquellen identifizieren, nahtlos Haltebereiche anwenden, um Daten zu speichern, und dann den Prozess der rechtlichen Aufbewahrung verwalten. Durch das Sammeln von Daten aus der Quelle können Sie die Live-Microsoft 365-Plattform durchsuchen, um schnell das zu finden, was Sie benötigen. Intelligente Machine Learning-Funktionen wie tiefe Indizierung, E-Mail-Threading und Erkennung von Nahezu-Duplikaten helfen Ihnen auch dabei, große Datenmengen auf einen relevanten Datensatz zu reduzieren.
 
 In den folgenden Abschnitten wird beschrieben, wie diese Advanced eDiscovery Funktionen Ihrer Organisation helfen können.
 
@@ -43,7 +43,7 @@ In den folgenden Abschnitten wird beschrieben, wie diese Advanced eDiscovery Fun
 
 Organisationen, die auf mehrere eDiscovery-Lösungen von Drittanbietern angewiesen sind, müssen traditionell große Datenmengen aus Microsoft 365 kopieren, um doppelte Daten zu verarbeiten und hosten zu müssen. Diese Notwendigkeit erhöht die Zeit für die Suche nach relevanten Daten sowie das Risiko, die Kosten und die Komplexität der Verwaltung mehrerer Lösungen.
 
-Advanced eDiscovery in Microsoft 365 können Sie Daten an der Quelle ermitteln und innerhalb Ihrer Microsoft 365 Sicherheits- und Compliance-Grenze bleiben.  Durch die direkte Erfassung von Daten aus dem Live-System reduziert Advanced eDiscovery die Reiberei des Zurückkehrens zur Quelle und reduziert unnötige Arbeit beim Auffinden fehlender Inhalte, was häufig bei Journalverzögerungen in herkömmlichen eDiscovery-Lösungen geschieht.
+Advanced eDiscovery in Microsoft 365 können Sie Daten an der Quelle ermitteln und innerhalb Ihrer Microsoft 365 Sicherheits- und Compliancegrenze bleiben.  Durch die direkte Erfassung von Daten aus dem Live-System reduziert Advanced eDiscovery die Reibereien beim Zurückkehren zur Quelle und reduziert unnötige Arbeit bei der Suche nach fehlenden Inhalten, was häufig bei Journalverzögerungen in herkömmlichen eDiscovery-Lösungen geschieht.
 
 Systemeigene Such- und Sammlungsfunktionen für Daten in Teams, Yammer, SharePoint Online, OneDrive for Business und Exchange Online verbessern die Datenermittlung weiter. Beispiel: Advanced eDiscovery:
 
@@ -53,21 +53,21 @@ Systemeigene Such- und Sammlungsfunktionen für Daten in Teams, Yammer, SharePoi
 
 - Bietet integrierte Unterstützung für Hunderte von Nicht-Microsoft 365-Dateitypen.
 
-- Sammelt Daten aus Drittanbieterquellen (z. B. Bloomberg, Facebook, Slack und Zoom-Besprechungen), die in Microsoft 365 von [Datenconnectors](archiving-third-party-data.md)importiert und archiviert werden.
+- Sammelt Daten aus Drittanbieterquellen (z. B. Bloomberg, Facebook, Slack und Zoom-Besprechungen), die in Microsoft 365 von [Datenkonnektoren](archiving-third-party-data.md)importiert und archiviert werden.
 
 ### <a name="manage-ediscovery-workflow-in-one-platform"></a>Verwalten von eDiscovery-Workflows auf einer Plattform
 
-Advanced eDiscovery können Ihnen helfen, die Anzahl der eDiscovery-Lösungen zu reduzieren, auf die Sie sich verlassen müssen. Es bietet einen optimierten End-to-End-Workflow, der alle innerhalb Microsoft 365 erfolgt. Advanced eDiscovery trägt dazu bei, die Reibungslose Identifizierung und Sammlung potenzieller Quellen relevanter Informationen zu verringern, indem eindeutige und freigegebene Datenquellen automatisch der Person zugeordnet werden, die von Interesse ist (auch als *Verwahrer* bezeichnet), und indem Berichte und Analysen zu potenziell relevanten Daten bereitgestellt werden, bevor sie zur Analyse und Überprüfung gesammelt werden.
+Advanced eDiscovery können Ihnen helfen, die Anzahl der eDiscovery-Lösungen zu reduzieren, auf die Sie sich verlassen müssen. Es bietet einen optimierten End-to-End-Workflow, der alle innerhalb Microsoft 365 erfolgt. Advanced eDiscovery trägt dazu bei, die Konflikte beim Identifizieren und Sammeln potenzieller Quellen relevanter Informationen zu verringern, indem eindeutige und freigegebene Datenquellen automatisch der Person zugeordnet werden, die von Interesse ist (auch als *Verwahrer* bezeichnet), und indem Berichte und Analysen zu potenziell relevanten Daten bereitgestellt werden, bevor sie zur Analyse und Überprüfung gesammelt werden.
 
 Darüber hinaus können Microsoft Graph-APIs Ihnen helfen, den eDiscovery-Workflow zu automatisieren und Advanced eDiscovery für benutzerdefinierte Lösungen zu erweitern.
 
 ### <a name="cull-data-intelligently"></a>Intelligentes Cullieren von Daten
 
-Intelligente Machine Learning-Funktionen in Advanced eDiscovery ihnen dabei helfen, die Menge der zu überprüfenden Daten zu reduzieren. Diese intelligenten Funktionen helfen Ihnen, große Datenmengen zu reduzieren und in einen relevanten Satz zu überstürzten. Beispielsweise hilft eine integrierte Prüfdateisatzabfrage, nur nach eindeutigen Inhalten zu filtern, indem nahezu Doppelte identifiziert werden. Diese Funktion kann die Menge der zu überprüfenden Daten erheblich reduzieren.
+Intelligente Machine Learning-Funktionen in Advanced eDiscovery helfen Ihnen, die menge der zu überprüfenden Daten zu reduzieren. Diese intelligenten Funktionen helfen Ihnen, große Datenmengen zu reduzieren und in einen relevanten Satz zu überstürzten. Beispielsweise hilft eine integrierte Prüfdateisatzabfrage, nur nach eindeutigen Inhalten zu filtern, indem nahezu Doppelte identifiziert werden. Diese Funktion kann die Menge der zu überprüfenden Daten erheblich reduzieren.
 
 Zusätzliche Machine Learning-Funktionen können relevante Daten mithilfe von Smarttags und technologieunterstützten Prüftools wie den Relevanzmodulen weiter verfeinern und identifizieren.
 
-## <a name="advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model"></a>Advanced eDiscovery Ausrichtung an dem Electronic Discovery-Referenzmodell
+## <a name="advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model"></a>Advanced eDiscovery Ausrichtung an das Electronic Discovery-Referenzmodell
 
 Der integrierte Workflow von Advanced eDiscovery in Microsoft 365 entspricht dem eDiscovery-Prozess, der vom Electronic Discovery Reference Model (EDRM) beschrieben wird.
 
@@ -95,7 +95,7 @@ So unterstützt Advanced eDiscovery den EDRM-Workflow auf hohem Niveau:
 
 Die Lizenzierung für Advanced eDiscovery erfordert das entsprechende Organisationsabonnement und eine Lizenzierung pro Benutzer.
 
-- **Organisationsabonnement:** Um auf Advanced eDiscovery im Microsoft 365 Compliance Center zugreifen zu können, muss Ihre Organisation über eine der folgenden Komponenten verfügen:
+- **Organisationsabonnement:** Für den Zugriff auf Advanced eDiscovery im Microsoft 365 Compliance Center muss Ihre Organisation über eine der folgenden Komponenten verfügen:
 
   - Microsoft 365 E5- oder Office 365 E5-Abonnement
   
@@ -105,7 +105,7 @@ Die Lizenzierung für Advanced eDiscovery erfordert das entsprechende Organisati
 
   - Microsoft 365 Education A5- oder Office 365 Education A5-Abonnement
 
-   Wenn Sie keinen vorhandenen Microsoft 365 E5 Plan haben und Advanced eDiscovery testen möchten, können Sie Ihrem vorhandenen Abonnement [Microsoft 365 hinzufügen](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) oder sich für eine Testversion von Microsoft 365 E5 [registrieren.](https://www.microsoft.com/microsoft-365/enterprise)
+   Wenn Sie keinen Microsoft 365 E5 Plan haben und Advanced eDiscovery testen möchten, können Sie Ihrem vorhandenen Abonnement [Microsoft 365 hinzufügen](/office365/admin/try-or-buy-microsoft-365) oder sich für eine Testversion von Microsoft 365 E5 [registrieren.](https://www.microsoft.com/microsoft-365/enterprise)
 
 - **Lizenzierung pro Benutzer:** Um einen Benutzer als Verwahrer in einem Advance eDiscovery-Fall hinzuzufügen, muss diesem Benutzer je nach Organisationsabonnement eine der folgenden Lizenzen zugewiesen werden:
 
@@ -113,10 +113,10 @@ Die Lizenzierung für Advanced eDiscovery erfordert das entsprechende Organisati
 
   - Office 365: Benutzern muss eine Office 365 E5- oder Office 365 Education A5-Lizenz zugewiesen werden.
 
-   Informationen zum Zuweisen von Lizenzen finden Sie unter [Zuweisen von Lizenzen zu Benutzern.](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
+   Informationen zum Zuweisen von Lizenzen finden Sie unter [Zuweisen von Lizenzen zu Benutzern.](/microsoft-365/admin/manage/assign-licenses-to-users)
 
 > [!NOTE]
-> Benutzer benötigen nur eine E5- oder A5-Lizenz (oder die entsprechende Add-On-Lizenz), um einem Advanced eDiscovery Fall als Verwahrer hinzugefügt zu werden. IT-Administratoren, eDiscovery-Manager, Führungskräfte, Paralegale oder Ermittler, die Advanced eDiscovery verwenden, um Fälle zu verwalten und Falldaten zu überprüfen, benötigen keine E5-, A5- oder Add-On-Lizenz.
+> Benutzer benötigen nur eine E5- oder A5-Lizenz (oder die entsprechende Add-On-Lizenz), um einem Advanced eDiscovery Fall als Verwahrer hinzugefügt zu werden. IT-Administratoren, eDiscovery-Manager, Verwalter, Paralegale oder Ermittler, die Advanced eDiscovery verwenden, um Fälle zu verwalten und Falldaten zu überprüfen, benötigen keine E5-, A5- oder Add-On-Lizenz.
 
 ## <a name="get-started-with-advanced-ediscovery"></a>Erste Schritte mit Advanced eDiscovery
 
@@ -130,7 +130,7 @@ Es gibt zwei schnelle und einfache Schritte, um mit Advanced eDiscovery zu begin
 |[Erstellen und Verwalten von Fällen](create-and-manage-advanced-ediscoveryv2-case.md) | Erstellen Sie Fälle, um den Advanced eDiscovery-Workflow für alle rechtlichen und anderen Arten von Untersuchungen in Ihrer Organisation zu verwalten.|
 |||
 
-## <a name="advanced-ediscovery-architecture"></a>architektur Advanced eDiscovery
+## <a name="advanced-ediscovery-architecture"></a>Advanced eDiscovery Architektur
 
 Hier ist ein Advanced eDiscovery Architekturdiagramm, das den End-to-End-Workflow in einer einzelnen Geo-Umgebung und in einer Multi-Geo-Umgebung sowie den End-to-End-Datenfluss zeigt, der am [EDRM](#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)ausgerichtet ist.
 

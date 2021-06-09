@@ -1,7 +1,7 @@
 ---
-title: Untersuchen von Geräten in der Liste "Defender for Endpoint Devices"
-description: Untersuchen Sie betroffene Geräte, indem Sie Warnungen, Netzwerkverbindungsinformationen, Gerätetags und Gruppen hinzufügen und den Dienstzustand überprüfen.
-keywords: Geräte, Tags, Gruppen, Endpunkt, Warnungswarteschlange, Warnungen, Gerätename, Domäne, zuletzt gesehen, interne IP, aktive Warnungen, Bedrohungskategorie, Filter, Sortierung, Warnungen überprüfen, Netzwerk, Verbindung, Typ, Kennwortdiebstahl, Ransomware, Exploit, Bedrohung, niedriger Schweregrad, Dienstintegheit
+title: Untersuchen von Geräten in der Liste "Defender für Endpunktgeräte"
+description: Untersuchen Sie betroffene Geräte durch Überprüfen von Warnungen, Netzwerkverbindungsinformationen, Hinzufügen von Gerätetags und -gruppen und Überprüfen des Dienststatus.
+keywords: Geräte, Tags, Gruppen, Endpunkt, Warnungswarteschlange, Warnungen, Gerätename, Domäne, zuletzt gesehen, interne IP, aktive Warnungen, Bedrohungskategorie, filtern, sortieren, Warnungen überprüfen, Netzwerk, Verbindung, Typ, Kennwortdiebstahler, Ransomware, Exploit, Bedrohung, niedriger Schweregrad, Dienststatus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c1e572910ad311daba18a8b0f5eeb546ffe36956
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: e64f17f2bedea89db1190e6c758c514f14fc3a68
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929109"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843578"
 ---
-# <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Untersuchen von Geräten in der Microsoft Defender for Endpoint Devices-Liste
+# <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Untersuchen von Geräten in der Liste "Microsoft Defender für Endpunktgeräte"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,171 +34,171 @@ ms.locfileid: "51929109"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+>Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
-Untersuchen Sie die Details einer Warnung, die auf einem bestimmten Gerät ausgelöst wird, um andere Verhaltensweisen oder Ereignisse zu identifizieren, die im Zusammenhang mit der Warnung oder dem potenziellen Umfang der Verletzung stehen können.
+Untersuchen Sie die Details einer Warnung, die auf einem bestimmten Gerät ausgelöst wird, um andere Verhaltensweisen oder Ereignisse zu identifizieren, die mit der Warnung oder dem potenziellen Umfang der Verletzung zusammenhängen könnten.
 
 > [!NOTE]
-> Im Rahmen des Untersuchungs- oder Reaktionsprozesses können Sie ein Untersuchungspaket von einem Gerät erfassen. So geht's: [Erfassen des Untersuchungspakets von Geräten](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices).
+> Im Rahmen des Untersuchungs- oder Reaktionsprozesses können Sie ein Untersuchungspaket von einem Gerät erfassen. Hier sehen Sie, wie: [Erfassen Sie untersuchungspaket von Geräten](/microsoft-365/security/defender-endpoint/respond-machine-alerts#collect-investigation-package-from-devices).
 
-Sie können auf betroffene Geräte klicken, wenn sie im Portal angezeigt werden, um einen detaillierten Bericht über dieses Gerät zu öffnen. Betroffene Geräte werden in den folgenden Bereichen identifiziert:
+Sie können auf betroffene Geräte klicken, wenn sie im Portal angezeigt werden, um einen detaillierten Bericht zu diesem Gerät zu öffnen. Betroffene Geräte werden in den folgenden Bereichen identifiziert:
 
 - [Geräteliste](investigate-machines.md)
 - [Benachrichtigungswarteschlange](alerts-queue.md)
 - [Dashboard für Sicherheitsvorgänge](security-operations-dashboard.md)
 - Jede einzelne Warnung
 - Jede einzelne Dateidetailseansicht
-- Ansicht mit allen IP-Adressen oder Domänendetails
+- Alle IP-Adressen oder Domänendetails
 
-Wenn Sie ein bestimmtes Gerät untersuchen, sehen Sie:
+Wenn Sie ein bestimmtes Gerät untersuchen, sehen Sie Folgendes:
 
 - Gerätedetails
-- Reaktionsaktionen
-- Registerkarten (Übersicht, Warnungen, Zeitachse, Sicherheitsempfehlungen, Softwareinventar, ermittelte Sicherheitsrisiken, fehlende KBs)
+- Antwortaktionen
+- Registerkarten (Übersicht, Warnungen, Zeitachse, Sicherheitsempfehlungen, Softwareinventarisierung, erkannte Sicherheitsrisiken, fehlende KBs)
 - Karten (aktive Warnungen, angemeldete Benutzer, Sicherheitsbewertung)
 
 ![Abbildung der Geräteansicht](images/specific-device.png)
 
 ## <a name="device-details"></a>Gerätedetails
 
-Der Abschnitt Gerätedetails enthält Informationen wie die Domäne, das Betriebssystem und den Integritätsstatus des Geräts. Wenn auf dem Gerät ein Untersuchungspaket verfügbar ist, wird ein Link angezeigt, über den Sie das Paket herunterladen können.
+Der Abschnitt "Gerätedetails" enthält Informationen wie Domäne, Betriebssystem und Integritätsstatus des Geräts. Wenn ein Untersuchungspaket auf dem Gerät verfügbar ist, wird ein Link angezeigt, über den Sie das Paket herunterladen können.
 
-## <a name="response-actions"></a>Reaktionsaktionen
+## <a name="response-actions"></a>Antwortaktionen
 
-Reaktionsaktionen werden am oberen Rand einer bestimmten Geräteseite ausgeführt und umfassen Folgendes:
+Antwortaktionen werden oben auf einer bestimmten Geräteseite ausgeführt und umfassen Folgendes:
 
 - Verwalten von Kategorien
-- Isolieren des Geräts
+- Gerät isolieren
 - Einschränken der App-Ausführung
 - Antivirusscan ausführen
 - Untersuchungspaket sammeln
-- Initiieren der Liveantwortsitzung
+- Initiieren einer Liveantwortsitzung
 - Initiieren einer automatisierten Untersuchung
 - Wenden Sie sich an einen Bedrohungsexperten
 - Info-Center
 
-Sie können Reaktionsaktionen im Aktionscenter, auf einer bestimmten Geräteseite oder auf einer bestimmten Dateiseite ausführen.
+Sie können Reaktionsaktionen im Info-Center, auf einer bestimmten Geräteseite oder auf einer bestimmten Dateiseite ausführen.
 
-Weitere Informationen zum Ergreifen von Aktionen auf einem Gerät finden Sie unter [Take response action on a device](respond-machine-alerts.md).
+Weitere Informationen zum Ausführen von Maßnahmen auf einem Gerät finden Sie unter "Ergreifen von [Gegenmaßnahmen auf einem Gerät".](respond-machine-alerts.md)
 
-Weitere Informationen finden Sie unter [Untersuchen von Benutzerentitäten](investigate-user.md).
+Weitere Informationen finden Sie unter [Untersuchen von Benutzerentitäten.](investigate-user.md)
 
 ## <a name="tabs"></a>Registerkarten
 
-Die Registerkarten bieten relevante Sicherheits- und Bedrohungsschutzinformationen im Zusammenhang mit dem Gerät. Auf jeder Registerkarte können Sie die angezeigten  Spalten anpassen, indem Sie Spalten in der Leiste oberhalb der Spaltenüberschriften anpassen auswählen.
+Die Registerkarten enthalten relevante Informationen zur Sicherheit und Bedrohungsverhütung im Zusammenhang mit dem Gerät. Auf jeder Registerkarte können Sie die angezeigten Spalten anpassen, indem Sie **Spalten** auf der Leiste oberhalb der Spaltenüberschriften anpassen auswählen.
 
 ### <a name="overview"></a>Übersicht
-Auf **der** Registerkarte Übersicht werden die [Karten für](#cards) aktive Warnungen, angemeldete Benutzer und Sicherheitsbewertung angezeigt.
+Auf der Registerkarte **"Übersicht"** werden die [Karten](#cards) für aktive Warnungen, angemeldete Benutzer und Sicherheitsbewertungen angezeigt.
 
-![Abbildung der Registerkarte Übersicht auf der Geräteseite](images/overview-device.png)
+![Abbildung der Registerkarte "Übersicht" auf der Geräteseite](images/overview-device.png)
 
 ### <a name="alerts"></a>Warnungen
 
-Die **Registerkarte Warnungen** enthält eine Liste der Warnungen, die dem Gerät zugeordnet sind. Diese Liste ist eine gefilterte Version der Warnungswarteschlange [und](alerts-queue.md)zeigt eine kurze Beschreibung der Warnung, des Schweregrads (hoch, mittel, niedrig, informationsell), des Status in der Warteschlange (neu, in Bearbeitung, aufgelöst), der Klassifizierung (nicht festgelegt, falscher Alarm, wahrer Alarm), des Untersuchungsstatus, der Kategorie der Warnung, der Adressierung der Warnung und der letzten Aktivität. Sie können die Warnungen auch filtern.
+Die Registerkarte **"Warnungen"** enthält eine Liste der Warnungen, die dem Gerät zugeordnet sind. Diese Liste ist eine gefilterte Version der [Warnungswarteschlange](alerts-queue.md)und zeigt eine kurze Beschreibung der Warnung, des Schweregrads (hoch, mittel, niedrig, informational), des Status in der Warteschlange (neu, in Bearbeitung, aufgelöst), der Klassifizierung (nicht festgelegt, falsch, true alert), des Untersuchungsstatus, der Kategorie der Warnung, der Adressierung der Warnung und der letzten Aktivität. Sie können die Warnungen auch filtern.
 
 ![Abbildung von Warnungen im Zusammenhang mit dem Gerät](images/alerts-device.png)
 
-Wenn das Kreissymbol links neben einer Warnung ausgewählt ist, wird ein Fly-Out angezeigt. In diesem Bereich können Sie die Warnung verwalten und weitere Details wie die Vorfallnummer und zugehörige Geräte anzeigen. Mehrere Warnungen können gleichzeitig ausgewählt werden.
+Wenn das Kreissymbol links neben einer Warnung ausgewählt ist, wird ein Flyout angezeigt. In diesem Bereich können Sie die Warnung verwalten und weitere Details wie die Vorfallnummer und verwandte Geräte anzeigen. Mehrere Warnungen können gleichzeitig ausgewählt werden.
 
-Wählen Sie den Titel der Warnung aus, um eine vollständige Seitenansicht einer Warnung einschließlich eines Vorfalldiagramms und einer Prozessstruktur anzuzeigen.
+Um eine vollständige Seitenansicht einer Warnung einschließlich Vorfalldiagramm und Prozessstruktur anzuzeigen, wählen Sie den Titel der Warnung aus.
 
 ### <a name="timeline"></a>Zeitachse
 
-Die **Registerkarte Zeitachse** bietet eine chronologische Ansicht der Ereignisse und zugeordneten Warnungen, die auf dem Gerät beobachtet wurden. Dadurch können Sie Ereignisse, Dateien und IP-Adressen in Bezug auf das Gerät korrelieren.
+Die Registerkarte **"Zeitachse"** bietet eine chronologische Ansicht der Ereignisse und zugehörigen Warnungen, die auf dem Gerät beobachtet wurden. Dies kann Ihnen dabei helfen, ereignisse, Dateien und IP-Adressen in Bezug auf das Gerät zu korrelieren.
 
-Die Zeitachse ermöglicht es Ihnen auch, einen selektiven Drilldown auf Ereignisse zu erstellen, die innerhalb eines bestimmten Zeitraums aufgetreten sind. Sie können die zeitliche Abfolge von Ereignissen anzeigen, die auf einem Gerät über einen ausgewählten Zeitraum aufgetreten sind. Um Ihre Ansicht weiter zu steuern, können Sie nach Ereignisgruppen filtern oder die Spalten anpassen.
+Auf der Zeitachse können Sie auch selektiv Einen Drilldown zu Ereignissen ausführen, die innerhalb eines bestimmten Zeitraums aufgetreten sind. Sie können die zeitliche Abfolge von Ereignissen anzeigen, die über einen ausgewählten Zeitraum auf einem Gerät aufgetreten sind. Um die Ansicht weiter zu steuern, können Sie nach Ereignisgruppen filtern oder die Spalten anpassen.
 
 >[!NOTE]
-> Damit Firewallereignisse angezeigt werden, müssen Sie die Überwachungsrichtlinie aktivieren, siehe [Überwachung filterplattformverbindung](https://docs.microsoft.com/windows/security/threat-protection/auditing/audit-filtering-platform-connection).
+> Zum Anzeigen von Firewallereignissen müssen Sie die Überwachungsrichtlinie aktivieren. Weitere Informationen finden Sie unter ["Audit Filtering Platform connection".](/windows/security/threat-protection/auditing/audit-filtering-platform-connection)
 >Firewall deckt die folgenden Ereignisse ab
 >
->- [5025](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5025) – Firewalldienst beendet
->- [5031](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5031) – Anwendung blockiert, eingehende Verbindungen im Netzwerk zu akzeptieren
->- [5157](https://docs.microsoft.com/windows/security/threat-protection/auditing/event-5157) – blockierte Verbindung
+>- [5025](/windows/security/threat-protection/auditing/event-5025) – Firewalldienst beendet
+>- [5031](/windows/security/threat-protection/auditing/event-5031) – Anwendung, die am Akzeptieren eingehender Verbindungen im Netzwerk gehindert wird
+>- [5157 –](/windows/security/threat-protection/auditing/event-5157) blockierte Verbindung
 
 ![Abbildung der Gerätezeitachse mit Ereignissen](images/timeline-device.png)
 
-Zu den Funktionen gehören:
+Einige der Funktionen umfassen:
 
 - Suchen nach bestimmten Ereignissen
   - Verwenden Sie die Suchleiste, um nach bestimmten Zeitachsenereignissen zu suchen.
-- Filtern von Ereignissen aus einem bestimmten Datum
-  - Wählen Sie das Kalendersymbol in der oberen linken Ecke der Tabelle aus, um Ereignisse im vergangenen Tag, in der letzten Woche, in 30 Tagen oder im benutzerdefinierten Bereich anzuzeigen. Standardmäßig ist die Gerätezeitachse so festgelegt, dass die Ereignisse aus den letzten 30 Tagen angezeigt werden.
-  - Verwenden Sie die Zeitachse, um zu einem bestimmten Zeitpunkt zu springen, indem Sie den Abschnitt hervorheben. Die Pfeile auf der Zeitachse zeigen automatisierte Untersuchungen an
+- Filtern von Ereignissen anhand eines bestimmten Datums
+  - Wählen Sie oben links in der Tabelle das Kalendersymbol aus, um Ereignisse des letzten Tags, der letzten Woche, der 30 Tage oder des benutzerdefinierten Bereichs anzuzeigen. Standardmäßig ist die Gerätezeitachse so festgelegt, dass die Ereignisse aus den letzten 30 Tagen angezeigt werden.
+  - Verwenden Sie die Zeitachse, um zu einem bestimmten Zeitpunkt zu springen, indem Sie den Abschnitt hervorheben. Die Pfeile auf der Zeitachse zeigen automatisierte Untersuchungen an.
 - Exportieren detaillierter Gerätezeitachsenereignisse
   - Exportieren Sie die Gerätezeitachse für das aktuelle Datum oder einen angegebenen Datumsbereich bis zu sieben Tage.
 
-Weitere Informationen zu bestimmten Ereignissen finden Sie im **Abschnitt Zusätzliche** Informationen. Diese Details variieren je nach Ereignistyp, z. B.: 
+Weitere Informationen zu bestimmten Ereignissen finden Sie im Abschnitt **"Zusätzliche Informationen".** Diese Details variieren je nach Ereignistyp, z. B.: 
 
-- Von Application Guard enthalten – das Webbrowserereignis wurde durch einen isolierten Container eingeschränkt
-- Erkannte aktive Bedrohung – Die Bedrohungserkennung wurde während der Ausführung der Bedrohung erkannt.
-- Behebung nicht erfolgreich – Ein Versuch zur Behebung der erkannten Bedrohung wurde aufgerufen, aber fehlgeschlagen
-- Behebung erfolgreich – die erkannte Bedrohung wurde beendet und bereinigt
-- Vom Benutzer umgangene Warnung – die Windows Defender SmartScreen-Warnung wurde von einem Benutzer verworfen und überschrieben.
-- Verdächtiges Skript erkannt – Es wurde ein potenziell schädliches Skript gefunden, das ausgeführt wird
-- Die Warnungskategorie – wenn das Ereignis zur Generierung einer Warnung geführt hat, wird die Warnungskategorie ("Laterale Bewegung" z. B. ) bereitgestellt.
+- In Application Guard enthalten – das Webbrowserereignis wurde durch einen isolierten Container eingeschränkt.
+- Aktive Bedrohung erkannt – Die Bedrohungserkennung ist aufgetreten, während die Bedrohung ausgeführt wurde
+- Problembehebung nicht erfolgreich : Ein Versuch, die erkannte Bedrohung zu beheben, wurde aufgerufen, aber fehlgeschlagen.
+- Behebung erfolgreich – die erkannte Bedrohung wurde beendet und bereinigt.
+- Warnung, die vom Benutzer umgangen wird – die Windows Defender SmartScreen-Warnung wurde von einem Benutzer geschlossen und überschrieben.
+- Verdächtiges Skript erkannt – es wurde ein potenziell schädliches Skript gefunden, das ausgeführt wurde
+- Die Warnungskategorie – wenn das Ereignis zur Generierung einer Warnung geführt hat, wird die Warnungskategorie ("Lateral Movement" (z. B. Lateral Movement) bereitgestellt.
 
 #### <a name="event-details"></a>Ereignisdetails
-Wählen Sie ein Ereignis aus, um relevante Details zu diesem Ereignis anzuzeigen. Ein Bereich wird angezeigt, um allgemeine Ereignisinformationen zu zeigen. Wenn zutreffend und Daten verfügbar sind, wird auch ein Diagramm mit verwandten Entitäten und deren Beziehungen angezeigt.
+Wählen Sie ein Ereignis aus, um relevante Details zu diesem Ereignis anzuzeigen. Ein Bereich wird angezeigt, um allgemeine Ereignisinformationen anzuzeigen. Wenn zutreffend und Daten verfügbar sind, wird auch ein Diagramm mit verwandten Entitäten und deren Beziehungen angezeigt.
 
-Um das Ereignis und die zugehörigen Ereignisse [](advanced-hunting-overview.md) weiter zu untersuchen, können Sie schnell eine erweiterte Suchabfrage ausführen, indem **Sie Hunt für verwandte Ereignisse auswählen.** Die Abfrage gibt das ausgewählte Ereignis und die Liste der anderen Ereignisse zurück, die etwa zur gleichen Zeit auf demselben Endpunkt aufgetreten sind.
+Um das Ereignis und verwandte Ereignisse weiter zu untersuchen, können Sie schnell eine [erweiterte Suchabfrage](advanced-hunting-overview.md) ausführen, indem Sie **"Suche nach verwandten Ereignissen"** auswählen. Die Abfrage gibt das ausgewählte Ereignis und die Liste der anderen Ereignisse zurück, die ungefähr zur gleichen Zeit auf demselben Endpunkt aufgetreten sind.
 
-![Abbildung des Ereignisdetailsepanels](images/event-details.png)
+![Abbildung des Bereichs "Ereignisdetails"](images/event-details.png)
 
 ### <a name="security-recommendations"></a>Sicherheitsempfehlungen
 
-**Sicherheitsempfehlungen** werden aus der Bedrohungsverwaltungsfunktion von Microsoft Defender [& Endpoint](tvm-dashboard-insights.md) generiert. Wenn Sie eine Empfehlung auswählen, wird ein Panel angezeigt, in dem Sie relevante Details anzeigen können, z. B. die Beschreibung der Empfehlung und die potenziellen Risiken, die mit der nichten Umsetzung verbunden sind. Weitere [Informationen finden Sie unter Sicherheitsempfehlung.](tvm-security-recommendation.md)
+**Sicherheitsempfehlungen** werden aus der [Funktion "Bedrohungs- & Sicherheitsrisikoverwaltung"](tvm-dashboard-insights.md) von Microsoft Defender für Endpunkt generiert. Wenn Sie eine Empfehlung auswählen, wird ein Panel angezeigt, in dem Sie relevante Details anzeigen können, z. B. eine Beschreibung der Empfehlung und die potenziellen Risiken, die mit der Nichtersetzung verbunden sind. Weitere Informationen finden Sie in der [Sicherheitsempfehlung.](tvm-security-recommendation.md)
 
 ![Abbildung der Registerkarte "Sicherheitsempfehlungen"](images/security-recommendations-device.png)
 
 ### <a name="software-inventory"></a>Softwarebestand
 
-Auf **der Registerkarte Softwareinventar** können Sie Software auf dem Gerät sowie alle Schwächen oder Bedrohungen anzeigen. Wenn Sie den Namen der Software auswählen, gelangen Sie zur Seite mit den Softwaredetails, auf der Sie Sicherheitsempfehlungen, ermittelte Sicherheitsrisiken, installierte Geräte und Versionsverteilung anzeigen können. Weitere [Informationen finden Sie unter Softwareinventar](tvm-software-inventory.md)
+Auf der Registerkarte **"Softwareinventur"** können Sie Software auf dem Gerät zusammen mit etwaigen Schwachstellen oder Bedrohungen anzeigen. Wenn Sie den Namen der Software auswählen, gelangen Sie zur Seite "Softwaredetails", auf der Sie Sicherheitsempfehlungen, ermittelte Sicherheitsrisiken, installierte Geräte und Versionsverteilung anzeigen können. Weitere Informationen finden Sie [unter "Softwareinventur"](tvm-software-inventory.md)
 
-![Abbildung der Registerkarte "Softwareinventar"](images/software-inventory-device.png)
+![Abbildung der Registerkarte "Softwareinventur"](images/software-inventory-device.png)
 
-### <a name="discovered-vulnerabilities"></a>Gefundene Sicherheitsrisiken
+### <a name="discovered-vulnerabilities"></a>Ermittelte Sicherheitsrisiken
 
-Auf **der Registerkarte Ermittelte Sicherheitsrisiken** werden der Name, der Schweregrad und die Bedrohungseinblicke entdeckter Sicherheitsrisiken auf dem Gerät angezeigt. Wenn Sie bestimmte Sicherheitsrisiken auswählen, werden eine Beschreibung und Details angezeigt.
+Auf der Registerkarte **"Ermittelte Sicherheitsrisiken" werden** der Name, der Schweregrad und die Bedrohungserkenntnisse der entdeckten Sicherheitsrisiken auf dem Gerät angezeigt. Wenn Sie bestimmte Sicherheitsrisiken auswählen, werden eine Beschreibung und Details angezeigt.
 
 ![Abbildung der Registerkarte "Ermittelte Sicherheitsrisiken"](images/discovered-vulnerabilities-device.png)
 
 ### <a name="missing-kbs"></a>Fehlende KBs
-Auf der Registerkarte Fehlende **KBs** werden die fehlenden Sicherheitsupdates für das Gerät aufgeführt.
+Auf der Registerkarte **"Fehlende KBs"** sind die fehlenden Sicherheitsupdates für das Gerät aufgeführt.
 
-![Abbildung fehlender Kbs-Registerkarte](images/missing-kbs-device.png)
+![Abbildung der fehlenden Kbs-Registerkarte](images/missing-kbs-device.png)
 
 ## <a name="cards"></a>Karten
 
 ### <a name="active-alerts"></a>Aktive Warnungen
 
-Die **Azure Advanced Threat Protection-Karte** zeigt eine übersicht über Warnungen im Zusammenhang mit dem Gerät und deren Risikostufe an, wenn Sie das Microsoft Defender for Identity-Feature aktiviert haben und aktive Warnungen verfügbar sind. Weitere Informationen finden Sie im Drilldown "Alerts".
+Die **Azure Advanced Threat Protection-Karte** zeigt eine allgemeine Übersicht über Warnungen im Zusammenhang mit dem Gerät und deren Risikostufe an, wenn Sie das Microsoft Defender for Identity-Feature aktiviert haben und aktive Warnungen vorhanden sind. Weitere Informationen finden Sie im Drilldown "Warnungen".
 
-![Abbildung der aktiven Benachrichtigungskarte](images/risk-level-small.png)
+![Abbildung der karte für aktive Warnungen](images/risk-level-small.png)
 
 >[!NOTE]
->Sie müssen die Integration in Microsoft Defender for Identity und Defender for Endpoint aktivieren, um dieses Feature verwenden zu können. In Defender for Endpoint können Sie dieses Feature in erweiterten Features aktivieren. Weitere Informationen zum Aktivieren erweiterter Features finden Sie unter [Turn on advanced features](advanced-features.md).
+>Sie müssen die Integration sowohl in Microsoft Defender for Identity als auch in Defender für Endpunkt aktivieren, um dieses Feature zu verwenden. In Defender für Endpunkt können Sie dieses Feature in erweiterten Features aktivieren. Weitere Informationen zum Aktivieren erweiterter Features finden Sie unter [Aktivieren erweiterter Features.](advanced-features.md)
 
 ### <a name="logged-on-users"></a>Angemeldete Benutzer
 
-Die **Karte Angemeldete** Benutzer zeigt an, wie viele Benutzer sich in den letzten 30 Tagen angemeldet haben, zusammen mit den meisten und am wenigsten häufigen Benutzern. Wenn Sie den Link "Alle Benutzer anzeigen" auswählen, wird der Detailbereich geöffnet, in dem Informationen wie Benutzertyp, Anmeldetyp und der erste und letzte Benutzer angezeigt werden. Weitere Informationen finden Sie unter [Untersuchen von Benutzerentitäten](investigate-user.md).
+Die Karte **"Angemeldete Benutzer"** zeigt, wie viele Benutzer sich in den letzten 30 Tagen angemeldet haben, zusammen mit den am häufigsten verwendeten Benutzern. Durch Auswählen des Links "Alle Benutzer anzeigen" wird der Detailbereich geöffnet, in dem Informationen wie Benutzertyp, Anmeldetyp und Wann der Benutzer zum ersten und letzten Mal angezeigt wurde. Weitere Informationen finden Sie unter [Untersuchen von Benutzerentitäten.](investigate-user.md)
 
-![Abbildung des Benutzerdetailsebereichs](images/logged-on-users.png)
+![Abbildung des Bereichs "Benutzerdetails"](images/logged-on-users.png)
 
 ### <a name="security-assessments"></a>Sicherheitsbewertungen
 
-Die **Karte "Sicherheitsbewertungen"** zeigt die allgemeine Belichtungsstufe, Sicherheitsempfehlungen, installierte Software und ermittelte Sicherheitsrisiken an. Die Belichtungsstufe eines Geräts wird durch die kumulierten Auswirkungen der ausstehenden Sicherheitsempfehlungen bestimmt.
+Die **Karte "Sicherheitsbewertungen"** zeigt die Gesamtbelichtungsstufe, Sicherheitsempfehlungen, installierte Software und ermittelte Sicherheitsrisiken. Die Belichtungsstufe eines Geräts wird durch die kumulativen Auswirkungen der ausstehenden Sicherheitsempfehlungen bestimmt.
 
-![Abbildung der Sicherheitsbewertungskarte](images/security-assessments.png)
+![Abbildung der Karte für Sicherheitsbewertungen](images/security-assessments.png)
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Anzeigen und Organisieren der Microsoft Defender for Endpoint Alerts-Warteschlange](alerts-queue.md)
-- [Verwalten von Microsoft Defender for Endpoint-Warnungen](manage-alerts.md)
-- [Untersuchen von Microsoft Defender for Endpoint-Warnungen](investigate-alerts.md)
-- [Untersuchen einer Datei, die einer Defender for Endpoint-Warnung zugeordnet ist](investigate-files.md)
-- [Untersuchen einer einer Defender for Endpoint-Warnung zugeordneten IP-Adresse](investigate-ip.md)
-- [Untersuchen einer Domäne, die einer Defender for Endpoint-Warnung zugeordnet ist](investigate-domain.md)
-- [Untersuchen eines Benutzerkontos in Defender for Endpoint](investigate-user.md)
-- [Sicherheitsempfehlung](tvm-security-recommendation.md)
+- [Anzeigen und Organisieren der Microsoft Defender für Endpunkt-Warnungswarteschlange](alerts-queue.md)
+- [Verwalten von Microsoft Defender für Endpunkt-Warnungen](manage-alerts.md)
+- [Untersuchen von Microsoft Defender für Endpunkt-Warnungen](investigate-alerts.md)
+- [Untersuchen einer Datei, die einer Defender für Endpunkt-Warnung zugeordnet ist](investigate-files.md)
+- [Untersuchen einer IP-Adresse, die einer Defender für Endpunkt-Warnung zugeordnet ist](investigate-ip.md)
+- [Untersuchen einer Domäne, die einer Defender für Endpunkt-Warnung zugeordnet ist](investigate-domain.md)
+- [Untersuchen eines Benutzerkontos in Defender für Endpunkt](investigate-user.md)
+- [Sicherheitsempfehlungen](tvm-security-recommendation.md)
 - [Softwarebestand](tvm-software-inventory.md)

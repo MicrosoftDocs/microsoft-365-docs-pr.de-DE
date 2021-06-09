@@ -1,8 +1,8 @@
 ---
 title: Erstellen von Indikatoren für IPs und URLs/Domänen
 ms.reviewer: ''
-description: Erstellen Sie Indikatoren für IPs und URLs/Domänen, die die Erkennung, Verhinderung und den Ausschluss von Entitäten definieren.
-keywords: ip, url, domain, manage, allowed, blocked, block, clean, malicious, file hash, ip address, urls, domain
+description: Erstellen Von Indikatoren für IP-Adressen und URLs/Domänen, die die Erkennung, Verhinderung und den Ausschluss von Entitäten definieren.
+keywords: IP, URL, Domäne, verwalten, zulässig, blockiert, blockieren, sauber, bösartig, Dateihash, IP-Adresse, URLs, Domäne
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d468a77d2c1ab4f1b363e2e91b6e8507a5390d93
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: e7dc11fe709a6d04b6309706df90f0ebbc177e25
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198483"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841066"
 ---
 # <a name="create-indicators-for-ips-and-urlsdomains"></a>Erstellen von Indikatoren für IPs und URLs/Domänen 
 
@@ -35,56 +35,56 @@ ms.locfileid: "51198483"
 
 
 > [!TIP]
-> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 
-Defender for Endpoint kann das blockieren, was Microsoft als bösartige IPs/URLs bezeichnet, über Windows Defender SmartScreen für Microsoft-Browser und über Netzwerkschutz für Nicht-Microsoft-Browser oder Anrufe außerhalb eines Browsers.
+Defender für Endpunkt kann blockieren, was Microsoft als bösartige IPs/URLs angibt, über Windows Defender SmartScreen für Microsoft-Browser und über Netzwerkschutz für Nicht-Microsoft-Browser oder Anrufe außerhalb eines Browsers.
 
-Der Datensatz für Die Bedrohungsintelligenz wurde von Microsoft verwaltet.
+Der dafür festgelegte Datensatz für die Bedrohungserkennung wurde von Microsoft verwaltet.
 
-Durch das Erstellen von Indikatoren für IPs und URLs oder Domänen können Sie jetzt IPs, URLs oder Domänen basierend auf Ihrer eigenen Bedrohungsintelligenz zulassen oder blockieren. Sie können dies über die Einstellungsseite oder durch Computergruppen tun, wenn Sie bestimmte Gruppen als mehr oder weniger gefährdet als andere personen sehen.
+Durch das Erstellen von Indikatoren für IPs und URLs oder Domänen können Sie jetzt IPs, URLs oder Domänen basierend auf Ihrer eigenen Bedrohungserkennung zulassen oder blockieren. Sie können dies über die Einstellungsseite oder nach Computergruppen tun, wenn Sie bestimmte Gruppen als mehr oder weniger gefährdet betrachten als andere.
 
 > [!NOTE]
-> Klassenlose Inter-Domain (CIDR)-Notation für IP-Adressen wird nicht unterstützt. 
+> Die CiDR-Notation (Classless Inter-Domain Routing) für IP-Adressen wird nicht unterstützt. 
 
 ### <a name="before-you-begin"></a>Bevor Sie beginnen
-Es ist wichtig, vor dem Erstellen von Indikatoren für IPS, URLs oder Domänen die folgenden Voraussetzungen zu kennen:
-- URL/IP allow and block basiert darauf, dass die Defender for Endpoint-Komponente Netzwerkschutz im Blockmodus aktiviert wird. Weitere Informationen zu Netzwerkschutz und Konfigurationsanweisungen finden Sie unter [Enable network protection](enable-network-protection.md).
-- Die Antischalware-Clientversion muss 4.18.1906.x oder höher sein. 
-- Unterstützt auf Computern auf Windows 10 Version 1709 oder höher. 
-- Stellen Sie sicher, **dass** benutzerdefinierte Netzwerkindikatoren in erweiterten **Microsoft Defender Security Center > Einstellungen > aktiviert sind.** Weitere Informationen finden Sie unter [Erweiterte Features](advanced-features.md).
-- Informationen zur Unterstützung von Indikatoren unter iOS finden Sie unter [Configure custom indicators](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators).
+Es ist wichtig, die folgenden Voraussetzungen zu verstehen, bevor Sie Indikatoren für IPS, URLs oder Domänen erstellen:
+- Die URL/IP-Zulassung und -Blockierung basiert darauf, dass der Netzwerkschutz der Defender für Endpunktkomponente im Blockierungsmodus aktiviert wird. Weitere Informationen zu Netzwerkschutz und Konfigurationsanweisungen finden Sie unter Aktivieren des [Netzwerkschutzes.](enable-network-protection.md)
+- Die Antischadsoftware-Clientversion muss 4.18.1906.x oder höher sein. 
+- Unterstützt auf Computern mit Windows 10, Version 1709 oder höher. 
+- Stellen Sie sicher, dass **benutzerdefinierte Netzwerkindikatoren** in **Microsoft Defender Security Center > Einstellungen > Erweiterten Features** aktiviert sind. Weitere Informationen finden Sie unter ["Erweiterte Features".](advanced-features.md)
+- Informationen zur Unterstützung von Indikatoren unter iOS finden Sie unter [Konfigurieren benutzerdefinierter Indikatoren.](/microsoft-365/security/defender-endpoint/ios-configure-features#configure-custom-indicators)
 
 
 > [!IMPORTANT]
 > Der Indikatorliste können nur externe IPs hinzugefügt werden. Indikatoren können nicht für interne IPs erstellt werden.
-> Für Webschutzszenarien empfehlen wir die Verwendung der integrierten Funktionen in Microsoft Edge. Microsoft Edge verwendet [Network Protection](network-protection.md) zum Überprüfen des Netzwerkdatenverkehrs und ermöglicht Blöcke für TCP, HTTP und HTTPS (TLS). Wenn richtlinien für in Konflikt konfliktende URL-Indikatoren enthalten sind, wird der längere Pfad angewendet. Beispielsweise hat die Richtlinie zum URL-Indikator `https:\\support.microsoft.com/en-us/office` Vorrang vor der RICHTLINIE für URL-Indikator. `https:\\support.microsoft.com`
+> Für Webschutzszenarien empfehlen wir die Verwendung der integrierten Funktionen in Microsoft Edge. Microsoft Edge verwendet Network [Protection,](network-protection.md) um Netzwerkdatenverkehr zu überprüfen, und lässt Blöcke für TCP, HTTP und HTTPS (TLS) zu. Wenn es widersprüchliche URL-Indikatorrichtlinien gibt, wird der längere Pfad angewendet. Beispielsweise hat die URL-Indikatorrichtlinie `https:\\support.microsoft.com/en-us/office` Vorrang vor der URL-Indikatorrichtlinie. `https:\\support.microsoft.com`
 
 > [!NOTE]
-> Für alle anderen Prozesse nutzen Webschutzszenarien Network Protection für die Überprüfung und Durchsetzung: 
-> - IP wird für alle drei Protokolle unterstützt
+> Für alle anderen Prozesse nutzen Webschutzszenarien Den Netzwerkschutz zur Überprüfung und Durchsetzung: 
+> - IP wird für alle drei Protokolle unterstützt.
 > - Es werden nur einzelne IP-Adressen unterstützt (keine CIDR-Blöcke oder IP-Bereiche)
-> - Verschlüsselte URLs (vollständiger Pfad) können nur in Browsern erster Partei (Internet Explorer, Edge) blockiert werden.
-> - Verschlüsselte URLs (nur FQDN) können außerhalb von Browsern von Drittanbietern blockiert werden (Internet Explorer, Edge)
+> - Verschlüsselte URLs (vollständiger Pfad) können nur in Erstanbieterbrowsern (Internet Explorer, Edge) blockiert werden.
+> - Verschlüsselte URLS (nur FQDN) können außerhalb von Erstanbieterbrowsern (Internet Explorer, Edge) blockiert werden.
 > - Vollständige URL-Pfadblöcke können auf Domänenebene und alle unverschlüsselten URLs angewendet werden.
  
 > [!NOTE]
-> Es kann bis zu 2 Stunden Wartezeit (in der Regel weniger) zwischen dem Zeitpunkt, zu dem die Aktion ergriffen wird, und der URL und der BLOCKIERTen IP liegen. 
+> Es kann bis zu 2 Stunden Wartezeit (in der Regel weniger) zwischen dem Zeitpunkt, zu dem die Aktion ausgeführt wird, und der URL und der IP-Adresse, die blockiert wird, geben. 
 
 ### <a name="create-an-indicator-for-ips-urls-or-domains-from-the-settings-page"></a>Erstellen eines Indikators für IPs, URLs oder Domänen auf der Einstellungsseite
 
-1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Indikatoren aus.**  
+1. Wählen Sie im Navigationsbereich **Einstellungen**  >  **Indikatoren** aus.  
 
-2. Wählen Sie die **Registerkarte IP-Adressen oder URLs/Domänen** aus.
+2. Wählen Sie die Registerkarte **"IP-Adressen" oder "URLs/Domänen"** aus.
 
-3. Wählen **Sie Element hinzufügen aus.**
+3. Wählen Sie **"Element hinzufügen"** aus.
 
 4. Geben Sie die folgenden Details an:
    - Indikator – Geben Sie die Entitätsdetails an, und definieren Sie den Ablauf des Indikators.
-   - Aktion – Geben Sie die zu ergreifende Aktion an, und geben Sie eine Beschreibung an.
-   - Bereich : Definieren Sie den Bereich der Computergruppe.
+   - Aktion – Geben Sie die auszuführende Aktion an, und geben Sie eine Beschreibung an.
+   - Bereich: Definieren Sie den Bereich der Computergruppe.
 
-5. Überprüfen Sie die Details auf der Registerkarte Zusammenfassung, und klicken Sie dann auf **Speichern**.
+5. Überprüfen Sie die Details auf der Registerkarte "Zusammenfassung", und klicken Sie dann auf **"Speichern".**
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Indikatoren erstellen](manage-indicators.md)

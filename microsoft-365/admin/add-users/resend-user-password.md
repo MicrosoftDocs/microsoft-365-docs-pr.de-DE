@@ -19,23 +19,23 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
-description: Erfahren Sie, wie Sie das Kennwort zurücksetzen und eine E-Mail an einen neuen Benutzer Microsoft 365 senden.
-ms.openlocfilehash: 17db9a61dc12c349f0aea032655b56c2a448653f
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+description: Erfahren Sie, wie Sie das Kennwort zurücksetzen und eine E-Mail an einen neuen Microsoft 365 Benutzer senden.
+ms.openlocfilehash: 916ac2f92f8cd6a7236525c733d4b5061368b0ef
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244044"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840862"
 ---
 # <a name="resend-a-users-password---admin-help"></a>Erneutes Senden eines Benutzerkennworts – Administratorhilfe
 
-In diesem Artikel wird erläutert, wie Sie die Benachrichtigungs-E-Mail erneut an einen neuen Benutzer in Office 365. Dies kann passieren, wenn Sie einen neuen Benutzer erstellen und keine E-Mail mit dem neuen Kennwort erhalten. Verwenden Sie dazu das Zurücksetzen des Kennworts des Benutzers.
+In diesem Artikel wird erläutert, wie die Benachrichtigungs-E-Mail an einen neuen Benutzer in Office 365 erneut gesendet wird. Dies kann passieren, wenn Sie einen neuen Benutzer erstellen und dieser keine E-Mail mit dem neuen Kennwort erhält. Sie können dies tun, indem Sie das Kennwort des Benutzers zurücksetzen.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen:
 
-Dieser Artikel richtet sich an Personen, die eine Kennwortablaufrichtlinie für ein Unternehmen, eine Schule/Uni oder eine gemeinnützige Organisation festlegen. Um diese Schritte auszuführen, müssen Sie sich mit Ihrem Microsoft 365-Administratorkonto anmelden. [Was ist ein Administratorkonto?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)
+Dieser Artikel richtet sich an Personen, die eine Kennwortablaufrichtlinie für ein Unternehmen, eine Schule/Uni oder eine gemeinnützige Organisation festlegen. Um diese Schritte auszuführen, müssen Sie sich mit Ihrem Microsoft 365-Administratorkonto anmelden. [Was ist ein Administratorkonto?](/microsoft-365/business-video/admin-center-overview)
 
-Sie müssen ein globaler [Administrator oder Kennwortadministrator sein,](about-admin-roles.md) um diese Schritte ausführen zu können.
+Sie müssen ein [globaler Administrator oder Kennwortadministrator](about-admin-roles.md) sein, um diese Schritte ausführen zu können.
 
 ## <a name="resend-user-password"></a>Erneutes Senden des Benutzerkennworts
   

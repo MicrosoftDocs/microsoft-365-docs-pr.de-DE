@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratorrollen wie der Service-Administrator ordnen Geschäftsfunktionen zu und erteilen Berechtigungen für bestimmte Aufgaben im Admin Center.
-ms.openlocfilehash: 3163b7a4037a923122d2da170ac5ea9e8c2d0185
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 68a5c92faa6f5cdbbd56678649441a45a600ed04
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52634196"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809035"
 ---
 # <a name="about-admin-roles"></a>Info zu Administratorrollen
 
@@ -76,7 +76,10 @@ Es genügt wahrscheinlich, wenn Sie in Ihrer Organisation nur die nachstehend au
 |Lizenzadministrator    |   Weisen Sie die Rolle des Lizenzadministrators Benutzern zu, die Lizenzen für Benutzer zuweisen und entfernen und deren Verwendungsort bearbeiten müssen. <br/><br/> Lizenzadministratoren können ebenfalls: <br> – Lizenzzuweisungen für die gruppenbasierte Lizenzierung erneut verarbeiten <br> – Produktlizenzen für die gruppenbasierte Lizenzierung an Gruppen zuweisen  |
 |Office-Apps-Administrator    |   Weisen Sie die Rolle des Office-Apps-Administrators Benutzern zu, die folgende Aktionen ausführen müssen: <br> - Verwenden des Office-Cloudrichtliniendiensts zum Erstellen und Verwalten von cloudbasierten Richtlinien für Office <br> - Serviceanfragen erstellen und verwalten <br> - Verwalten der Inhalte im Dialogfenster "Neuigkeiten", das den Benutzern in ihren Office-Apps angezeigt wird   <br> - Den Dienststatus überwachen  |
 |Kennwortadministrator  |   Weisen Sie die Rolle des Kennwortadministrators Benutzern zu, die Kennwörter für Nicht-Administratoren und Kennwortadministratoren zurücksetzen müssen.   |
-|Dienstsupportadministrator   |   Weisen Sie die Rolle des Dienstsupportadministrators als zusätzliche Rolle für Administratoren oder Benutzer zu, die zusätzlich zu ihrer normalen Administratorrolle folgende Aufgaben erfüllen müssen: <br> - Serviceanfragen öffnen und verwalten <br> - Nachrichtencenter-Beiträge anzeigen und freigeben <br> - Den Dienststatus überwachen   |
+|Nachrichtencenter-Leseberechtigter |   Weisen Sie die Rolle „Berichtleseberechtigter“ Benutzern zu, die folgende Aktionen ausführen müssen: <br> – Überwachen der Nachrichtencenter-Benachrichtigungen <br> – Wöchentliche E-Mail-Zusammenfassungen von Beiträgen und Aktualisierungen des Nachrichtencenters erhalten <br> – Freigeben von Beiträgen im Nachrichtencenter <br> – Schreibgeschützten Zugriff auf Azure AD-Dienste haben, wie z. B. Benutzer und Gruppen|
+|Power Plattform-Administrator |   Weisen Sie die Rolle „Berichtleseberechtigter“ Benutzern zu, die folgende Aktionen ausführen müssen: <br> – Verwalten aller Administrator-Features für PowerApps, Microsoft Flow und DLP (Verhinderung von Datenverlust) <br> – Serviceanfragen erstellen und verwalten <br> – Den Dienststatus überwachen  |
+|Berichtleseberechtigter |   Weisen Sie die Rolle „Berichtleseberechtigter“ Benutzern zu, die folgende Aktionen ausführen müssen: <br> – Nutzungsdaten und Aktivitätsberichte im Microsoft 365 Admin Center anzeigen <br> – Zugriff auf das Inhaltspakets zur Power BI-Einführung erhalten <br> – Zugriff auf Anmeldeberichte und Aktivitäten in Azure AD erhalten <br> – Vom Microsoft Graph-Berichterstellungs--API zurückgegebene Daten anzeigen|
+|Dienstsupportadministrator   |   Weisen Sie die Rolle des Dienstsupportadministrators als zusätzliche Rolle Administratoren oder Benutzern zu, die zusätzlich zu ihrer normalen Administratorrolle folgende Aufgaben erfüllen müssen: <br> - Serviceanfragen öffnen und verwalten <br> - Nachrichtencenter-Beiträge anzeigen und freigeben <br> - Den Dienststatus überwachen   |
 |SharePoint-Administrator    |   Weisen Sie die SharePoint-Administratorrolle Benutzern zu, die auf das SharePoint Online Admin Center zugreifen und dieses verwalten müssen. <br><br>SharePoint-Administratoren sind zudem zu Folgendem berechtigt: <br> - Erstellen und Löschen von Websites <br> - Verwalten von Websitesammlungen und globalen SharePoint-Einstellungen   |
 |Teams-Dienstadministrator    |   Weisen Sie die Teams-Dienstadministratorrolle Benutzern zu, die auf das Teams Admin Center zugreifen und es verwalten müssen. <br><br>Teams-Dienstadministratoren können auch folgende Aktionen ausführen: <br> - Verwalten von Besprechungen <br> - Verwalten von Konferenzbrücken <br> - Verwalten aller organisationsweiten Einstellungen einschließlich Partnerverbund, Microsoft Teams-Upgrades und Einstellungen des Microsoft Teams-Clients   |
 |Benutzeradministrator     |    Weisen Sie die Rolle des Benutzeradministrators Benutzern zu, die folgende Aktionen für alle Benutzer ausführen müssen: <br> - Benutzer und Gruppen hinzufügen <br> - Lizenzen zuweisen <br> - Die meisten Benutzereigenschaften verwalten <br> - Benutzeransichten erstellen und verwalten <br> - Kennwortablaufrichtlinien aktualisieren <br> - Serviceanfragen verwalten <br> - Den Dienststatus überwachen <br><br>  Der Benutzeradministrator kann außerdem die unten aufgeführten Aktionen für Benutzer ohne Administratorrolle sowie für Benutzer ausführen, denen die folgenden Rollen zugewiesen sind: Verzeichnisleseberechtigter, Gasteinladender, Helpdesk-Administrator, Nachrichtencenter-Leseberechtigter und Berichtleseberechtigter. <br> - Benutzernamen verwalten<br> - Benutzerkonten löschen und wiederherstellen<br> - Kennwörter zurücksetzen <br> - Die Abmeldung von Benutzern erzwingen <br> - (FIDO)-Geräteschlüssel aktualisieren   |

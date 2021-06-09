@@ -19,22 +19,22 @@ search.appverid:
 - MET150
 - MOE150
 description: Verwalten Sie Feedback, das Ihre Benutzer an Microsoft zu Microsoft-Produkten senden können.
-ms.openlocfilehash: 490081ace32203d015ee8cf3561ccf0ae978bace
-ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
+ms.openlocfilehash: 70ea1d5c176dd603f6a5addb09356909f13f9ace
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51657007"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840670"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Microsoft-Feedback für Ihre Organisation verwalten
 
-Als Administrator einer Microsoft 365 gibt es nun mehrere Richtlinien, mit denen Sie die Feedbacksammlung und die Kundenbindungserfahrung Ihrer Benutzer bei der Verwendung von Microsoft 365 verwalten können. Sie können für jede dieser Richtlinien vorhandene Azure Active Directory-Gruppen in Ihrer Organisation erstellen und verwenden. Mit diesen Policen können Sie steuern, wie verschiedene Abteilungen in Ihrer Organisation Feedback an Microsoft senden können. Microsoft überprüft alle von Kunden übermittelten Feedbacks und verwendet dieses Feedback, um das Produkt zu verbessern. Wenn Sie die Feedbackerfahrung **aktiviert** halten, können Sie sehen, was Ihre Benutzer zu den von ihnen verwendeten Microsoft-Produkten sagen. Das Feedback, das wir von Ihren Benutzern sammeln, wird bald im Microsoft 365 Admin Center verfügbar sein.
+Als Administrator einer Microsoft 365 Organisation gibt es jetzt mehrere Richtlinien, mit denen Sie die Feedbacksammlung und die Kundenbindung Ihrer Benutzer bei der Verwendung Microsoft 365 Anwendungen verwalten können. Sie können vorhandene Azure Active Directory-Gruppen in Ihrer Organisation für jede dieser Richtlinien erstellen und verwenden. Mit diesen Richtlinien können Sie steuern, wie verschiedene Abteilungen in Ihrer Organisation Feedback an Microsoft senden können. Microsoft überprüft alle von Kunden übermittelten Feedbacks und verwendet dieses Feedback, um das Produkt zu verbessern. Wenn Sie die Feedback-Erfahrungen **aktiviert** lassen, können Sie sehen, was Ihre Benutzer zu den von ihnen verwendeten Microsoft-Produkten sagen. Das Feedback, das wir von Ihren Benutzern sammeln, wird in Kürze im Microsoft 365 Admin Center verfügbar sein.
 
-Weitere Informationen zu den Arten von Feedback und dazu, wie Microsoft Benutzerfeedback verwendet, finden Sie unter Erfahren Sie mehr über [Das Feedback von Microsoft für Ihre Organisation.](../misc/feedback-user-control.md)
+Weitere Informationen zu den Arten von Feedback und zur Verwendung von Benutzerfeedback durch Microsoft finden Sie unter ["Informationen zu Microsoft-Feedback für Ihre Organisation".](../misc/feedback-user-control.md)
 
-Die folgende Tabelle stellt dar, welche Apps und Dienste derzeit mit den Feedbackrichtlinien in der folgenden Tabelle mit Feedbackrichtlinien verbunden sind. Unter der Tabelle finden Sie Screenshotbeispiele.
+Die folgende Tabelle gibt an, welche Apps und Dienste derzeit mit den Feedbackrichtlinien verbunden sind, die in der nachstehenden Tabelle mit den Feedbackrichtlinien aufgeführt sind. Screenshotbeispiele finden Sie unter der Tabelle.
 
-|**Apps & Services**|**Produktfeedback** <br> |**In-Product-Umfragen** <br> |**Metadatensammlung** <br> |**Kundenbindung** <br> |
+|**Apps &-Dienste**|**Produktinternes Feedback** <br> |**Produktinterne Umfragen** <br> |**Metadatensammlung** <br> |**Kundenbindung** <br> |
 |:-----|:-----|:-----|:-----|:-----|
 |**Access**|Ja|Ja|Ja|Ja|
 |**Excel**|Ja|Ja|Ja|Ja|
@@ -51,7 +51,7 @@ Die folgende Tabelle stellt dar, welche Apps und Dienste derzeit mit den Feedbac
 |**Visio**|Ja|Ja|Ja|Ja|
 |**Yammer**|Ja|Ja|Ja|Ja|
 
-[Hier finden Sie einige Beispiele für Produktumfragen und Feedback.](https://docs.microsoft.com/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#in-product-surveys)
+[Hier finden Sie einige Beispiele für Produktumfragen und Feedback.](/microsoft-365/admin/misc/feedback-user-control#in-product-surveys)
 
 **Metadatensammlung**
 
@@ -59,46 +59,46 @@ Die folgende Tabelle stellt dar, welche Apps und Dienste derzeit mit den Feedbac
 
 **Kundenbindung**
 
-:::image type="content" source="../../media/feedback-in-product-customer-engagement.png" alt-text="Screenshot: In-Product Customer Research Question Example":::
+:::image type="content" source="../../media/feedback-in-product-customer-engagement.png" alt-text="Screenshot: Beispiel für Produktfrage zur Kundenrecherchfrage":::
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Ihre Geräte müssen sich auf einer Mindest buildnummer für die Verwendung dieser Richtlinien benennen. Weitere Informationen finden Sie in der folgenden Tabelle.
+Ihre Geräte müssen mindestens eine Buildnummer aufweisen, um diese Richtlinien verwenden zu können. Weitere Informationen finden Sie in der folgenden Tabelle.
 
-|**Build #**|**Win32**|**iOS**|**Android**|**Mac**|**Web**|
+|**Bauen #**|**Win32**|**iOS**|**Android**|**Mac**|**Web**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
-|Produktfeedback|Mindestens 16.0.13328|Mindestens 2,42|Mindestens 16.0.13328|Mindestens 16,42|Öffentlich verfügbar|
-|In-Product-Umfragen|Mindestens 16.0.13328|Mindestens 2,42|Mindestens 16.0.13426|Mindestens 16,42|Ausstehendes Rollout|
+|Produktinternes Feedback|Mindestens 16.0.13328|Mindestens 2,42|Mindestens 16.0.13328|Mindestens 16,42|Öffentlich verfügbar|
+|Produktinterne Umfragen|Mindestens 16.0.13328|Mindestens 2,42|Mindestens 16.0.13426|Mindestens 16,42|Ausstehendes Rollout|
 |Metadatensammlung|Mindestens 16.0.13328|Mindestens 2,42|Mindestens 16.0.13328|Mindestens 16,42|Öffentlich verfügbar|
 |Kundenbindung|Mindestens 16.0.13328|Mindestens 2,42|Mindestens 16.0.13426|Mindestens 16,42|Ausstehendes Rollout|
 
-## <a name="specific-policies-you-can-configure"></a>Bestimmte Richtlinien, die Sie konfigurieren können
+## <a name="specific-policies-you-can-configure"></a>Spezifische Richtlinien, die Sie konfigurieren können
 
 ### <a name="feedback-policies"></a>Feedbackrichtlinien
 
 |**Name der Richtlinie**|**Standardzustand**|**Steuerelementzusammenfassung**|
 |:-----|:-----|:-----|
-|Zulassen, dass Benutzer Feedback an Microsoft senden|Ein|Steuert Feedback-Einstiegspunkte in mehreren Anwendungen|
-|Zulassen, dass Benutzer Produktumfragen von Microsoft empfangen und beantworten können|Ein|Steuert Umfrageaufforderungen innerhalb des Produkts|
-|Zulassen, dass Benutzer Screenshots und Anlagen hinzufügen, wenn sie Feedback an Microsoft senden|Off|Bestimmt, welche Metadaten der Benutzer mit Feedback/Umfrage übermitteln kann|
-|Zulassen, dass Microsoft Feedback von Benutzern weiter verfolgen kann|Off|Bestimmt, ob Benutzer Kontaktinformationen mit Feedback/Umfrage freigeben können|
-|Zulassen, dass Benutzer Protokolldateien und Inhaltsbeispiele enthalten, wenn Feedback an Microsoft übermittelt wird|Off|Bestimmt Metadaten, die der Benutzer mit Feedback/Umfrage übermitteln kann|
+|Zulassen, dass Benutzer Feedback an Microsoft senden|Ein|Steuert Feedback-Einstiegspunkte in allen Anwendungen|
+|Zulassen, dass Benutzer Produktinterne Umfragen von Microsoft empfangen und beantworten können|Ein|Steuert Umfrageaufforderungen innerhalb des Produkts|
+|Zulassen, dass Benutzer Screenshots und Anlagen einschließen, wenn sie Feedback an Microsoft senden|Aus|Bestimmt, welche Metadaten der Benutzer mit Feedback/Umfrage übermitteln kann|
+|Zulassen, dass Microsoft das von Benutzern übermittelte Feedback nachverfolgung|Aus|Bestimmt, ob Benutzer Kontaktinformationen mit Feedback/Umfrage teilen können|
+|Zulassen, dass Benutzer Protokolldateien und Inhaltsbeispiele einschließen, wenn Feedback an Microsoft gesendet wird|Aus|Legt Metadaten fest, die der Benutzer mit Feedback/Umfrage übermitteln kann|
 
 ## <a name="configure-policies"></a>Konfigurieren von Richtlinien
 
-1. Wechseln Sie [https://config.office.com](https://config.office.com) zu und melden Sie sich als Benutzer mit globalen Administratorberechtigungen an.
-1. Wählen **Sie Anpassung** und dann **Richtlinienverwaltung aus.**
+1. Wechseln Sie zu [https://config.office.com](https://config.office.com) und melden Sie sich als Benutzer mit globalen Administratorberechtigungen an.
+1. Wählen Sie **"Anpassung"** und dann **"Richtlinienverwaltung" aus.**
 1. Wählen Sie **Erstellen** aus.
-1. Geben **Sie Namen** und Beschreibung **ein.**
-1. Wählen Sie die Azure Active -Verzeichnisgruppen aus, die Sie konfigurieren möchten.
-1. Suchen Sie nach **Feedback** und **Umfrage**.
-1. Legen Sie für jede aufgeführte Richtlinie den wert, den Sie möchten.
+1. Geben Sie **den Namen** und die **Beschreibung** ein.
+1. Wählen Sie die Azure Active Directory-Gruppen aus, die Sie konfigurieren möchten.
+1. Suchen Sie nach **Feedback** und **Umfrage.**
+1. Legen Sie für jede aufgeführte Richtlinie den gewünschten Wert fest.
 
-Weitere Informationen finden Sie unter [Overview of the Office cloud policy service](/deployoffice/overview-office-cloud-policy-service).
+Weitere Informationen finden Sie unter [Übersicht über den Office Cloudrichtliniendienst.](/deployoffice/overview-office-cloud-policy-service)
 
-Diese Richtlinieneinstellungen sind auch verfügbar, wenn Sie Gruppenrichtlinien verwenden. Um diese Richtlinieneinstellungen zu verwenden, laden Sie mindestens Version 5146.1000 der administrativen Vorlagendateien [(ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030)herunter, die am 22. März 2021 veröffentlicht wurden.
+Diese Richtlinieneinstellungen sind auch verfügbar, wenn Sie Gruppenrichtlinien verwenden. Um diese Richtlinieneinstellungen zu verwenden, laden Sie mindestens Version 5146.1000 der [administrativen Vorlagendateien (ADMX/ADML)](https://www.microsoft.com/download/details.aspx?id=49030)herunter, die am 22. März 2021 veröffentlicht wurden.
 
-Sie finden diese Richtlinieneinstellungen unter Benutzerkonfiguration -> Richtlinien -> Administrative Vorlagen -> Microsoft Office 2016 -> Privacy -> Trust Center.
+Sie finden diese Richtlinieneinstellungen unter "Benutzerkonfiguration – > Richtlinien –> Administrative Vorlagen –> Microsoft Office 2016 -> Datenschutz – > Trust Center".
 
 > [!NOTE]
-> Es dauert einige Stunden, bis die Clientanwendungen aktualisiert werden.
+> Es dauert ein paar Stunden, bis die Clientanwendungen aktualisiert wurden.

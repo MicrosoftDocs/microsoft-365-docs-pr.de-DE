@@ -1,7 +1,7 @@
 ---
 title: Untersuchen von Verbindungsereignissen hinter Weiterleitungsproxys
-description: Erfahren Sie, wie Sie die erweiterte ÜBERWACHUNG auf HTTP-Ebene mithilfe von Netzwerkschutz in Microsoft Defender for Endpoint verwenden, der anstelle eines Proxys ein echtes Ziel zeigt.
-keywords: Proxy, Netzwerkschutz, Weiterleitungsproxy, Netzwerkereignisse, Überwachung, Block, Domänennamen, Domäne
+description: Erfahren Sie, wie Sie die erweiterte Überwachung auf HTTP-Ebene über den Netzwerkschutz in Microsoft Defender für Endpunkt verwenden, der ein echtes Ziel anstelle eines Proxys aufweist.
+keywords: Proxy, Netzwerkschutz, Weiterleitungsproxy, Netzwerkereignisse, Überwachung, blockieren, Domänennamen, Domäne
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47be07759a72a080a3687ed3bb50cef9d0a959b7
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 55c001781ff016d7a23dc5db286d454b39fac5de
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51904046"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841054"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Untersuchen von Verbindungsereignissen hinter Weiterleitungsproxys
 
@@ -32,46 +32,46 @@ ms.locfileid: "51904046"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
+> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigatemachines-abovefoldlink)
 
-Defender for Endpoint unterstützt die Netzwerkverbindungsüberwachung von verschiedenen Ebenen des Netzwerkstapels. Ein anspruchsvoller Fall ist, wenn das Netzwerk einen Weiterleitungsproxy als Gateway zum Internet verwendet.
+Defender für Endpunkt unterstützt die Netzwerkverbindungsüberwachung von verschiedenen Ebenen des Netzwerkstapels. Ein schwieriger Fall ist, wenn das Netzwerk einen Weiterleitungsproxy als Gateway zum Internet verwendet.
 
-Der Proxy verhält sich so, als wäre er der Zielendpunkt.  In diesen Fällen überwachen einfache Netzwerkverbindungsmonitore die Verbindungen mit dem Proxy, der korrekt ist, aber einen niedrigeren Untersuchungswert hat. 
+Der Proxy verhält sich wie der Zielendpunkt.  In diesen Fällen überwachen einfache Netzwerkverbindungsmonitore die Verbindungen mit dem Proxy, was korrekt ist, aber einen niedrigeren Untersuchungswert aufweist. 
 
-Defender for Endpoint unterstützt die erweiterte Überwachung auf HTTP-Ebene durch Netzwerkschutz. Wenn dies aktiviert ist, wird ein neuer Ereignistyp angezeigt, der die tatsächlichen Zieldomänennamen verfügbar macht.
+Defender für Endpunkt unterstützt die erweiterte Überwachung auf HTTP-Ebene über Netzwerkschutz. Wenn diese Einstellung aktiviert ist, wird ein neuer Ereignistyp angezeigt, der die tatsächlichen Zieldomänennamen verfügbar macht.
 
-## <a name="use-network-protection-to-monitor-network-connection-behind-a-firewall"></a>Verwenden von Netzwerkschutz zum Überwachen der Netzwerkverbindung hinter einer Firewall
-Die Überwachung der Netzwerkverbindung hinter einem Weiterleitungsproxy ist aufgrund zusätzlicher Netzwerkereignisse möglich, die aus dem Netzwerkschutz stammen. Um sie auf einer Gerätezeitachse anzuzeigen, aktivieren Sie den Netzwerkschutz (mindestens im Überwachungsmodus). 
+## <a name="use-network-protection-to-monitor-network-connection-behind-a-firewall"></a>Verwenden des Netzwerkschutzes zum Überwachen der Netzwerkverbindung hinter einer Firewall
+Die Überwachung der Netzwerkverbindung hinter einem Weiterleitungsproxy ist aufgrund zusätzlicher Netzwerkereignisse möglich, die aus dem Netzwerkschutz stammen. Um sie auf einer Gerätezeitachse anzuzeigen, aktivieren Sie den Netzwerkschutz (zumindest im Überwachungsmodus). 
 
-Der Netzwerkschutz kann mithilfe der folgenden Modi gesteuert werden:
+Der Netzwerkschutz kann mit den folgenden Modi gesteuert werden:
 
-- **Blockieren** <br> Benutzer oder Apps werden an der Verbindung mit gefährlichen Domänen blockiert. Sie können diese Aktivität in einem Microsoft Defender Security Center.
-- **Audit** <br> Benutzer oder Apps werden nicht an der Verbindung mit gefährlichen Domänen blockiert. Diese Aktivität wird jedoch weiterhin in der Microsoft Defender Security Center.
+- **Blockieren** <br> Benutzer oder Apps werden am Herstellen einer Verbindung mit gefährlichen Domänen gehindert. Sie können diese Aktivität in Microsoft Defender Security Center sehen.
+- **Audit** <br> Benutzer oder Apps werden nicht daran gehindert, sich mit gefährlichen Domänen zu verbinden. Diese Aktivität wird jedoch weiterhin in Microsoft Defender Security Center angezeigt.
 
 
-Wenn Sie den Netzwerkschutz deaktivieren, werden Benutzer oder Apps nicht an der Verbindung mit gefährlichen Domänen blockiert. Es werden keine Netzwerkaktivitäten in der Microsoft Defender Security Center.
+Wenn Sie den Netzwerkschutz deaktivieren, werden Benutzer oder Apps nicht daran gehindert, sich mit gefährlichen Domänen zu verbinden. In Microsoft Defender Security Center werden keine Netzwerkaktivitäten angezeigt.
 
-Wenn Sie dies nicht konfigurieren, wird die Netzwerksperrung standardmäßig deaktiviert.
+Wenn Sie es nicht konfigurieren, wird die Netzwerkblockierung standardmäßig deaktiviert.
 
-Weitere Informationen finden Sie unter [Aktivieren des Netzwerkschutzes](enable-network-protection.md).
+Weitere Informationen finden Sie unter [Aktivieren des Netzwerkschutzes.](enable-network-protection.md)
 
-## <a name="investigation-impact"></a>Untersuchungswirkung
-Wenn der Netzwerkschutz aktiviert ist, wird auf der Zeitachse eines Geräts angezeigt, dass die IP-Adresse den Proxy weiterhin darstellt, während die tatsächliche Zieladresse angezeigt wird.
+## <a name="investigation-impact"></a>Untersuchungsauswirkungen
+Wenn der Netzwerkschutz aktiviert ist, sehen Sie, dass auf der Zeitachse eines Geräts die IP-Adresse weiterhin den Proxy darstellt, während die eigentliche Zieladresse angezeigt wird.
 
-![Abbildung von Netzwerkereignissen auf der Zeitachse des Geräts](images/atp-proxy-investigation.png)
+![Abbildung von Netzwerkereignissen auf der Gerätezeitachse](images/atp-proxy-investigation.png)
 
-Zusätzliche Ereignisse, die von der Netzwerkschutzebene ausgelöst werden, stehen nun zur Verfügung, um die tatsächlichen Domänennamen auch hinter einem Proxy zu verwenden.
+Zusätzliche Ereignisse, die von der Netzwerkschutzebene ausgelöst werden, sind jetzt verfügbar, um die echten Domänennamen auch hinter einem Proxy anzuzeigen.
 
-Informationen des Ereignisses:
+Informationen zum Ereignis:
 
-![Abbildung eines einzelnen Netzwerkereigniss](images/atp-proxy-investigation-event.png)
+![Abbildung eines einzelnen Netzwerkereignisses](images/atp-proxy-investigation-event.png)
 
 
 
 ## <a name="hunt-for-connection-events-using-advanced-hunting"></a>Suche nach Verbindungsereignissen mithilfe der erweiterten Suche 
-Alle neuen Verbindungsereignisse stehen Ihnen auch für die erweiterte Suche zur Verfügung. Da es sich bei diesen Ereignissen um Verbindungsereignisse handelt, finden Sie sie unter der Tabelle DeviceNetworkEvents unter dem `ConnecionSuccess` Aktionstyp.
+Alle neuen Verbindungsereignisse stehen Ihnen auch für die Erweiterte Suche zur Verfügung. Da es sich bei diesen Ereignissen um Verbindungsereignisse handelt, finden Sie sie in der DeviceNetworkEvents-Tabelle unter dem `ConnecionSuccess` Aktionstyp.
 
-Bei Verwendung dieser einfachen Abfrage werden alle relevanten Ereignisse angezeigt:
+Mit dieser einfachen Abfrage werden alle relevanten Ereignisse angezeigt:
 
 ```
 DeviceNetworkEvents
@@ -79,11 +79,11 @@ DeviceNetworkEvents
 | take 10
 ```
 
-![Abbildung der erweiterten Suchabfrage](images/atp-proxy-investigation-ah.png)
+![Abbildung der Abfrage für die erweiterte Suche](images/atp-proxy-investigation-ah.png)
 
-Sie können auch Ereignisse herausfiltern, die mit der Verbindung mit dem Proxy selbst verbunden sind. 
+Sie können auch Ereignisse herausfiltern, die sich auf die Verbindung mit dem Proxy selbst beziehen. 
 
-Verwenden Sie die folgende Abfrage, um die Verbindungen mit dem Proxy herausfiltern:
+Verwenden Sie die folgende Abfrage, um die Verbindungen mit dem Proxy herauszufiltern:
 
 ```
 DeviceNetworkEvents
@@ -94,4 +94,4 @@ DeviceNetworkEvents
 
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Anwenden von Netzwerkschutz mit GP – Richtlinien-CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
+- [Anwenden des Netzwerkschutzes mit GP – Richtlinien-CSP](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)

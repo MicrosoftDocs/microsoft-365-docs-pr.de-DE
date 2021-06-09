@@ -1,7 +1,7 @@
 ---
 title: Sicherstellen, dass Ihre Geräte ordnungsgemäß konfiguriert sind
-description: Konfigurieren Sie Geräte ordnungsgemäß, um die Ausfallsicherheit gegen Bedrohungen insgesamt zu erhöhen und Ihre Fähigkeit zum Erkennen und Reagieren auf Angriffe zu verbessern.
-keywords: Onboard, Intune-Verwaltung, Microsoft Defender for Endpoint, Microsoft Defender, Windows Defender, Attack Surface Reduction, ASR, Security Baseline
+description: Konfigurieren Sie Geräte ordnungsgemäß, um die resilienz gegenüber Bedrohungen insgesamt zu erhöhen und Ihre Fähigkeit, Angriffe zu erkennen und darauf zu reagieren, zu verbessern.
+keywords: Onboarding, Intune-Verwaltung, Microsoft Defender für Endpunkt, Microsoft Defender, Windows Defender, Verringerung der Angriffsfläche, ASR, Sicherheitsgrundwerte
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 3fd58ee17b2cb86c0bcc858b9b0fd57c12ac501e
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: dccc623bfa6c3f5e8fe4d88ccfafd66d3e53482a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932811"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840898"
 ---
 # <a name="ensure-your-devices-are-configured-properly"></a>Sicherstellen, dass Ihre Geräte ordnungsgemäß konfiguriert sind
 
@@ -31,60 +31,60 @@ ms.locfileid: "51932811"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
+>Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
 
-Mit ordnungsgemäß konfigurierten Geräten können Sie die Ausfallsicherheit gegen Bedrohungen insgesamt erhöhen und Ihre Fähigkeit zum Erkennen und Reagieren auf Angriffe verbessern. Die Verwaltung der Sicherheitskonfiguration trägt dazu bei, dass Ihre Geräte:
+Mit ordnungsgemäß konfigurierten Geräten können Sie die resilienz insgesamt gegen Bedrohungen erhöhen und Ihre Fähigkeit verbessern, Angriffe zu erkennen und darauf zu reagieren. Mithilfe der Sicherheitskonfigurationsverwaltung können Sie sicherstellen, dass Ihre Geräte:
 
-- Onboarding bei Microsoft Defender for Endpoint
-- Erfüllen oder Überschreiten der Basiskonfiguration der Defender for Endpoint-Sicherheitsbasis
-- Strategische Gegenmaßnahmen zur Angriffsfläche
+- Onboarding in Microsoft Defender für Endpunkt
+- Erfüllen oder Überschreiten der Sicherheitsbaselinekonfiguration von Defender für Endpunkt
+- Strategische Angriffsflächen-Gegenmaßnahmen
 
-Klicken **Sie im Navigationsmenü** auf Konfigurationsverwaltung, um die Seite Gerätekonfigurationsverwaltung zu öffnen.
+Klicken Sie im Navigationsmenü auf **"Konfigurationsverwaltung",** um die Seite "Gerätekonfigurationsverwaltung" zu öffnen.
 
-![Sicherheitskonfigurationsverwaltungsseite](images/secconmgmt_main.png)<br>
+![Seite "Verwaltung der Sicherheitskonfiguration"](images/secconmgmt_main.png)<br>
 *Seite "Gerätekonfigurationsverwaltung"*
 
-Sie können den Konfigurationsstatus auf Organisatorischer Ebene nachverfolgen und schnell Maßnahmen ergreifen, um auf eine schlechte Onboardingabdeckung, Kompatibilitätsprobleme und schlecht optimierte Gegenmaßnahmen zur Angriffsfläche durch direkte, tiefe Links zu Geräteverwaltungsseiten auf Microsoft Intune und Microsoft 365 Security Center zu reagieren.
+Sie können den Konfigurationsstatus auf Organisationsebene nachverfolgen und schnell Maßnahmen ergreifen, um auf eine schlechte Onboarding-Abdeckung, Compliance-Probleme und schlecht optimierte Angriffsflächenminderungen über direkte, tiefe Links zu Geräteverwaltungsseiten in Microsoft Intune und Microsoft 365 Security Center zu reagieren.
 
-Dabei profitieren Sie von:
+Dadurch profitieren Sie von Folgendem:
 - Umfassende Sichtbarkeit der Ereignisse auf Ihren Geräten
-- Robuste Bedrohungsintelligenz und leistungsstarke Gerätelerntechnologien für die Verarbeitung von Unformatereignissen und das Identifizieren der Verletzungsaktivität und Bedrohungsindikatoren
-- Ein vollständiger Stapel von Sicherheitsfeatures, die so konfiguriert sind, dass die Installation von schädlichen Implanten, die Entführung von Systemdateien und -verfahren, die Daten-Exfiltration und andere Bedrohungsaktivitäten effizient beendet werden.
-- Optimierte Gegenmaßnahmen gegen Angriffsflächen, Maximierung der strategischen Verteidigung gegen Bedrohungsaktivitäten bei gleichzeitiger Minimierung der Produktivitätsauswirkungen
+- Robuste Bedrohungserkennung und leistungsstarke Gerätelerntechnologien für die Verarbeitung von Rohereignissen und die Identifizierung der Aktivität von Sicherheitsverletzungen und Bedrohungsindikatoren
+- Ein vollständiger Stapel von Sicherheitsfeatures, die so konfiguriert sind, dass die Installation schädlicher Implente, das Missbrauch von Systemdateien und -prozessen, die Datenexfiltration und andere Bedrohungsaktivitäten effizient beendet werden.
+- Optimierte Angriffsflächenminderungen, die die strategische Abwehr von Bedrohungsaktivitäten maximieren und gleichzeitig die Auswirkungen auf die Produktivität minimieren
 
-## <a name="enroll-devices-to-intune-management"></a>Registrieren von Geräten für die Intune-Verwaltung
+## <a name="enroll-devices-to-intune-management"></a>Registrieren von Geräten bei der Intune-Verwaltung
 
-Die Gerätekonfigurationsverwaltung arbeitet eng mit der Intune-Geräteverwaltung zusammen, um das Inventar der Geräte in Ihrer Organisation und die grundlegende Sicherheitskonfiguration zu erstellen. Sie können Konfigurationsprobleme auf von Intune verwalteten Geräten nachverfolgen und Windows 10 verwalten.
+Die Gerätekonfigurationsverwaltung arbeitet eng mit der Intune-Geräteverwaltung zusammen, um den Bestand der Geräte in Ihrer Organisation und die grundlegende Sicherheitskonfiguration einzurichten. Sie können Konfigurationsprobleme auf von Intune verwalteten Windows 10-Geräten nachverfolgen und verwalten.
 
-Bevor Sie sicherstellen können, dass Ihre Geräte ordnungsgemäß konfiguriert sind, registrieren Sie sie bei der Intune-Verwaltung. Die Intune-Registrierung ist robust und verfügt über mehrere Registrierungsoptionen für Windows 10 Geräte. Weitere Informationen zu Intune-Registrierungsoptionen finden Sie unter Einrichten der Registrierung [für Windows Geräte.](https://docs.microsoft.com/intune/windows-enroll)
+Bevor Sie sicherstellen können, dass Ihre Geräte ordnungsgemäß konfiguriert sind, registrieren Sie sie bei der Intune-Verwaltung. Die Intune-Registrierung ist robust und verfügt über mehrere Registrierungsoptionen für Windows 10 Geräte. Weitere Informationen zu Intune-Registrierungsoptionen finden Sie unter "Einrichten der [Registrierung für Windows Geräte".](/intune/windows-enroll)
 
 >[!NOTE]
->Zum Registrieren Windows Geräte bei Intune müssen Administratoren bereits Lizenzen zugewiesen worden sein. [Informationen zum Zuweisen von Lizenzen für die Geräteregistrierung](https://docs.microsoft.com/intune/licenses-assign).
+>Um Windows Geräte bei Intune zu registrieren, müssen Administratoren bereits Lizenzen zugewiesen worden sein. [Informationen zum Zuweisen von Lizenzen für die Geräteregistrierung.](/intune/licenses-assign)
 
 >[!TIP] 
->Um die Geräteverwaltung über Intune zu optimieren, [verbinden Sie Intune mit Defender for Endpoint](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).
+>Um die Geräteverwaltung über Intune zu optimieren, [verbinden Sie Intune mit Defender für Endpunkt.](/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune)
 
 ## <a name="obtain-required-permissions"></a>Abrufen der erforderlichen Berechtigungen
-Standardmäßig können nur Benutzer, denen die Rolle "Globaler Administrator" oder "Intune Service Administrator" in Azure AD zugewiesen wurde, die gerätekonfigurationsprofile verwalten und zuweisen, die für das Onboarding von Geräten und die Bereitstellung der Sicherheitsbasis erforderlich sind.
+Standardmäßig können nur Benutzer, denen die Rolle "Globaler Administrator" oder "Intune-Dienstadministrator" in Azure AD zugewiesen wurde, die gerätekonfigurationsprofile verwalten und zuweisen, die für das Onboarding von Geräten und die Bereitstellung der Sicherheitsgrundwerte erforderlich sind.
 
 Wenn Ihnen andere Rollen zugewiesen wurden, stellen Sie sicher, dass Sie über die erforderlichen Berechtigungen verfügen:
 
 - Vollständige Berechtigungen für Gerätekonfigurationen
 - Vollständige Berechtigungen für Sicherheitsgrundwerte
-- Lesen von Berechtigungen für Gerätekonformitätsrichtlinien
-- Lesen von Berechtigungen für die Organisation
+- Leseberechtigungen für Gerätekompatibilitätsrichtlinien
+- Leseberechtigungen für die Organisation
 
 ![Erforderliche Berechtigungen für Intune](images/secconmgmt_intune_permissions.png)<br>
-*Gerätekonfigurationsberechtigungen für Intune*
+*Gerätekonfigurationsberechtigungen in Intune*
 
 >[!TIP] 
->Weitere Informationen zum Zuweisen von Berechtigungen für Intune finden Sie [unter Erstellen benutzerdefinierter Rollen](https://docs.microsoft.com/intune/create-custom-role#to-create-a-custom-role).
+>Weitere Informationen zum Zuweisen von Berechtigungen für Intune [finden Sie unter Erstellen benutzerdefinierter Rollen.](/intune/create-custom-role#to-create-a-custom-role)
 
 ## <a name="in-this-section"></a>Inhalt dieses Abschnitts
 Thema | Beschreibung
 :---|:---
-[In Defender for Endpoint integrierte Geräte](configure-machines-onboarding.md)| Verfolgen Sie den Onboardingstatus von von Intune verwalteten Geräten, und integrieren Sie weitere Geräte über Intune. 
-[Erhöhen der Einhaltung der Sicherheitsgrundlinie für Defender for Endpoint](configure-machines-security-baseline.md) | Verfolgen Sie die Geplante Compliance und Nichtcompliance. Stellen Sie die Sicherheitsgrundlinie auf mehr von Intune verwalteten Geräten zur Verfügung.
-[Optimieren der Bereitstellung und Erkennung von ASR-Regeln](configure-machines-asr.md) | Überprüfen sie die Erkennung von Regelbereitstellungen und Optimierungen mithilfe von Impact Analysis Tools in Microsoft 365 Security Center.
+[Geräte in Defender für Endpunkt integrieren](configure-machines-onboarding.md)| Nachverfolgen des Onboardingstatus von von Intune verwalteten Geräten und Onboarding weiterer Geräte über Intune. 
+[Erhöhen der Compliance für die Defender für Endpunkt-Sicherheitsgrundwerte](configure-machines-security-baseline.md) | Nachverfolgen der Geplanten Compliance und Nichtkonformität. Stellen Sie die Sicherheitsgrundwerte auf mehr von Intune verwalteten Geräten bereit.
+[Optimieren der Bereitstellung und Erkennung von ASR-Regeln](configure-machines-asr.md) | Überprüfen Sie die Regelbereitstellung und optimieren Sie die Erkennungen mithilfe von Auswirkungsanalysetools im Microsoft 365 Security Center.
 
->Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)
+>Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-belowfoldlink)

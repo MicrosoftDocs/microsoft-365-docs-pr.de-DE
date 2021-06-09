@@ -1,7 +1,7 @@
 ---
 title: Erhalten von installierter Software
 description: Ruft eine Sammlung der installierten Software im Zusammenhang mit einer bestimmten Geräte-ID ab.
-keywords: APIs, Graph-API, unterstützte APIs, abrufen, Liste, Datei, Informationen, Softwarebestand, installierte Software pro Gerät, Bedrohungs-& Sicherheitsrisikomanagement-API, Microsoft Defender für Endpunkt-TVM-API
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Liste, Datei, Informationen, Softwareinventarisierung, installierte Software pro Gerät, Bedrohungs-& Sicherheitsrisikomanagement-API, Microsoft Defender für Endpunkt-TVM-API
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 35cbeedc5d13f5eeb99718b4f98e2d8aabe1e965
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: e13e2072ad1c18f3c6bf1abbbe95c95bb519dc3e
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770157"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841108"
 ---
 # <a name="get-installed-software"></a>Erhalten von installierter Software
 
@@ -103,5 +103,5 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Risikobasiertes Bedrohungs- & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Softwareinventarisierung von Sicherheitsrisiken &](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Risikobasiertes Bedrohungs- & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Softwareinventarisierung von Bedrohungen & Sicherheitsrisiko](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

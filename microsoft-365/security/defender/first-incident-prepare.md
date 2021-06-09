@@ -1,6 +1,6 @@
 ---
-title: Vorbereiten Ihrer Sicherheitslage für Ihren ersten Vorfall
-description: Richten Sie die Microsoft 365 des Mandanten für Ihren ersten Vorfall in Microsoft 365 ein.
+title: Vorbereiten des Sicherheitsstatus für Ihren ersten Vorfall
+description: Richten Sie den Sicherheitsstatus Ihres Microsoft 365 Mandanten für Ihren ersten Vorfall in Microsoft 365 Defender ein.
 keywords: Vorfälle, Warnungen, untersuchen, Korrelation, Angriff, Computer, Geräte, Benutzer, Identitäten, Identität, Postfach, E-Mail, 365, Microsoft, m365
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,74 +22,74 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4fc124bf8787d5880d78a4f5208bd66329da07a0
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: da9147955c5da9ea727854420b3d4d160583ef73
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539035"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840934"
 ---
-# <a name="prepare-your-security-posture-for-your-first-incident"></a>Vorbereiten Ihrer Sicherheitslage für Ihren ersten Vorfall
+# <a name="prepare-your-security-posture-for-your-first-incident"></a>Vorbereiten des Sicherheitsstatus für Ihren ersten Vorfall
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Gilt für:**
 - Microsoft 365 Defender
 
-Die Vorbereitung der Behandlung von Vorfällen umfasst die Einrichtung eines ausreichenden Schutzes des Netzwerks einer Organisation vor verschiedenen Arten von Sicherheitsvorfällen. Um das Risiko von Sicherheitsvorfällen zu verringern, empfiehlt das National Institute of Standards and Technology (NIST) mehrere Sicherheitspraktiken, einschließlich Risikobewertungen, Die Sicherung der Hostsicherheit, das sichere Konfigurieren von Netzwerken und das Verhindern von Schadsoftware. 
+Die Vorbereitung auf die Behandlung von Sicherheitsvorfällen umfasst das Einrichten eines ausreichenden Schutzes des Netzwerks einer Organisation vor verschiedenen Arten von Sicherheitsvorfällen. Um das Risiko von Sicherheitsvorfällen zu verringern, empfiehlt das National Institute of Standards and Technology (NIST) verschiedene Sicherheitspraktiken, einschließlich Risikobewertungen, Härtung der Hostsicherheit, sichere Konfiguration von Netzwerken und Verhinderung von Schadsoftware. 
 
-Microsoft 365 Defender kann dabei helfen, verschiedene Aspekte der Verhinderung von Vorfällen zu berücksichtigen: 
+Microsoft 365 Defender kann verschiedene Aspekte der Vorfallsverhütung behandeln: 
 
-- Implementieren eines [Zero Trust-Frameworks](https://docs.microsoft.com/security/zero-trust/)
-- Bestimmen Ihrer Sicherheitslage durch Zuweisen einer Bewertung mit [Microsoft Secure Score](microsoft-secure-score.md)
+- Implementieren eines [Zero Trust-Frameworks](/security/zero-trust/)
+- Bestimmen Ihres Sicherheitsstatus durch Zuweisen einer Bewertung mit [der Microsoft-Sicherheitsbewertung](microsoft-secure-score.md)
 - Verhindern von Bedrohungen durch Sicherheitsrisikobewertungen im [Bedrohungs- und Sicherheitsrisikomanagement](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Grundlegendes zu den neuesten Sicherheitsbedrohungen, damit Sie sich darauf vorbereiten können
 
-## <a name="step-1-implement-zero-trust"></a>Schritt 1. Implementieren der Nullvertrauensstellung
+## <a name="step-1-implement-zero-trust"></a>Schritt 1. Implementieren von Zero Trust
 
-[Zero Trust](https://docs.microsoft.com/security/zero-trust/) ist eine integrierte Sicherheitsphilosophie und End-to-End-Strategie, die den komplexen Charakter jeder modernen Umgebung berücksichtigt, einschließlich der mobilen Mitarbeiter und der Benutzer, Geräte, Anwendungen und Daten, unabhängig davon, wo sie sich befinden. Durch die Bereitstellung eines einzigen Fensterausschnitts zum konsistenten Verwalten aller Erkennungen kann Microsoft 365 Defender das [](https://docs.microsoft.com/security/zero-trust/#guiding-principles-of-zero-trust) Implementieren der Leitprinzipien von Zero Trust für Ihr Sicherheitsbetriebsteam vereinfachen. 
+[Zero Trust](/security/zero-trust/) ist eine integrierte Sicherheits-Philosophie und End-to-End-Strategie, die den komplexen Charakter jeder modernen Umgebung berücksichtigt, einschließlich der mobilen Mitarbeiter und der Benutzer, Geräte, Anwendungen und Daten, unabhängig davon, wo sie sich befinden. Durch die Bereitstellung eines einzigen Fensterausschnitts zur konsistenten Verwaltung aller Erkennungen kann Microsoft 365 Defender es Ihrem Sicherheitsteam erleichtern, die [Leitprinzipien](/security/zero-trust/#guiding-principles-of-zero-trust) von Zero Trust zu implementieren. 
 
-Komponenten von Microsoft 365 Defender können Verstöße gegen Regeln anzeigen, die implementiert wurden, um Richtlinien für bedingten Zugriff für Zero Trust zu erstellen, indem Daten von Microsoft Defender for Endpoint (MDE) oder anderen mobilen Sicherheitsanbietern als Informationsquelle für Gerätekonformitätsrichtlinien und die Implementierung gerätebasierter Richtlinien für bedingten Zugriff integriert werden. 
+Komponenten von Microsoft 365 Defender können Verstöße gegen Regeln anzeigen, die implementiert wurden, um Richtlinien für bedingten Zugriff für Zero Trust einzurichten, indem Daten von Microsoft Defender für Endpunkt (MDE) oder anderen mobilen Sicherheitsanbietern als Informationsquelle für Gerätekompatibilitätsrichtlinien und die Implementierung von gerätebasierten Richtlinien für bedingten Zugriff integriert werden. 
 
-Das Geräterisiko wirkt sich direkt darauf aus, auf welche Ressourcen der Benutzer dieses Geräts zugreifen kann. Die Verweigerung des Zugriffs auf Ressourcen basierend auf bestimmten Kriterien ist das Hauptthema von Zero Trust, und Microsoft 365 Defender stellt Informationen zur Verfügung, die zum Bestimmen der Kriterien auf Vertrauensebene erforderlich sind. Beispielsweise kann Microsoft 365 Defender die Softwareversionsebene eines Geräts über die Seite Bedrohungs- und Sicherheitsrisikoverwaltung bereitstellen, während Richtlinien für bedingten Zugriff Geräte mit veralteten oder anfälligen Versionen einschränken.
+Das Geräterisiko beeinflusst direkt, auf welche Ressourcen der Benutzer dieses Geräts zugegriffen werden kann. Die Verweigerung des Zugriffs auf Ressourcen basierend auf bestimmten Kriterien ist das Hauptdesign von Zero Trust, und Microsoft 365 Defender informationen bereitstellt, die erforderlich sind, um die Kriterien auf Vertrauensebene zu bestimmen. Beispielsweise kann Microsoft 365 Defender die Softwareversionsebene eines Geräts über die Seite "Bedrohungs- und Sicherheitsrisikoverwaltung" bereitstellen, während Richtlinien für bedingten Zugriff Geräte mit veralteten oder anfälligen Versionen einschränken.
 
-Die Automatisierung ist ein wichtiger Bestandteil der Implementierung und Aufrechterhaltung einer Zero Trust-Umgebung und reduziert gleichzeitig die Anzahl der Warnungen, die potenziell zu Vorfallreaktionsereignissen führen würden. Komponenten von Microsoft 365 Defender können automatisiert werden, z. B. Korrekturaktionen [(auch](m365d-autoir.md) als Untersuchungen für einen Vorfall im Microsoft 365 Security Center bezeichnet), Benachrichtigungsaktionen und sogar das Erstellen von Supporttickets wie in [ServiceNow](https://microsoft.service-now.com/sp/).
+Automatisierung ist ein wichtiger Bestandteil der Implementierung und Pflege einer Zero Trust-Umgebung, während gleichzeitig die Anzahl der Warnungen reduziert wird, die möglicherweise zu Ereignissen bei der Reaktion auf Vorfälle (Incident Response, IR) führen würden. Komponenten von Microsoft 365 Defender können automatisiert werden, z. B. [Wartungsaktionen](m365d-autoir.md) (bekannt als Untersuchungen für einen Vorfall im Microsoft 365 Security Center), Benachrichtigungsaktionen und sogar die Erstellung von Supporttickets wie in [ServiceNow.](https://microsoft.service-now.com/sp/)
 
-## <a name="step-2-determine-your-organizations-security-posture"></a>Schritt 2. Bestimmen der Sicherheitslage Ihrer Organisation
+## <a name="step-2-determine-your-organizations-security-posture"></a>Schritt 2. Bestimmen des Sicherheitsstatus Ihrer Organisation
 
-Als Nächstes können Organisationen die [Microsoft Secure Score](microsoft-secure-score.md) in Microsoft 365 Defender verwenden, um Ihre aktuelle Sicherheitslage zu ermitteln und Empfehlungen zur Verbesserung zu berücksichtigen. Je höher die Bewertung ist, desto mehr Sicherheitsempfehlungen und Verbesserungsmaßnahmen wurden von der Organisation ergriffen. Empfehlungen für die sichere Bewertung können für verschiedene Produkte verwendet werden und es Organisationen ermöglichen, ihre Ergebnisse noch weiter zu erhöhen. 
+Als Nächstes können Organisationen die [Microsoft-Sicherheitsbewertung](microsoft-secure-score.md) in Microsoft 365 Defender verwenden, um Ihren aktuellen Sicherheitsstatus zu bestimmen und Empfehlungen zur Verbesserung zu berücksichtigen. Je höher die Bewertung ist, desto mehr Sicherheitsempfehlungen und Verbesserungsmaßnahmen wurden von der Organisation durchgeführt. Empfehlungen für die Sicherheitsbewertung können über verschiedene Produkte hinweg angewendet werden und ermöglichen Es Organisationen, ihre Bewertungen noch weiter zu erhöhen. 
 
-:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Beispiel für Microsoft Secure Score im Microsoft Security Center":::
+:::image type="content" source="../../media/first-incident-prepare/first-incident-secure-score.png" alt-text="Beispiel für die Microsoft-Sicherheitsbewertung im Microsoft Security Center":::
  
-## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>Schritt 3: Bewerten der Sicherheitsrisikorisiken In Ihrer Organisation
+## <a name="step-3-assess-your-organizations-vulnerability-exposure"></a>Schritt 3. Bewerten der Sicherheitsrisiken Ihrer Organisation
 
-Die Verhinderung von Vorfällen kann dazu beitragen, die Sicherheitsvorgänge zu optimieren, um sich auf wichtige und wichtige Sicherheitsvorfälle zu konzentrieren. Softwarerisiken sind häufig ein verhinderbarer Einstiegspunkt für Angriffe, die zu Datendiebstahl, Datenverlust oder Unterbrechungen des Geschäftsbetriebs führen können. Wenn keine Angriffe im Einsatz sind, müssen Sicherheitsvorgänge bestrebt sein, ein akzeptables Maß an Sicherheitsrisiko [in](../defender-endpoint/tvm-exposure-score.md) ihrer Organisation zu erreichen und auf dem Niveau zu halten.
+Die Verhinderung von Vorfällen kann dazu beitragen, die Sicherheitsvorgänge zu optimieren, um sich auf laufende kritische und wichtige Sicherheitsvorfälle zu konzentrieren. Softwarerisiken sind häufig ein verhinderbarer Einstiegspunkt für Angriffe, die zu Datendiebstahl, Datenverlust oder Betriebsunterbrechungen führen können. Wenn keine Angriffe ausgeführt werden, müssen Sicherheitsvorgänge versuchen, ein akzeptables Maß an [Sicherheitsrisiken](../defender-endpoint/tvm-exposure-score.md) in ihrer Organisation zu erreichen und aufrechtzuerhalten.
 
-Um den Fortschritt des Softwarepatchings zu überprüfen, besuchen Sie die Seite Bedrohungs- und Sicherheitsrisikoverwaltung in Defender for Endpoint, auf die Sie über Microsoft 365 Defender über die Registerkarte Weitere Ressourcen **zugreifen** können. [](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
+Um den Fortschritt des Softwarepatchings zu überprüfen, besuchen Sie die Seite ["Bedrohungs- und Sicherheitsrisikoverwaltung"](../defender-endpoint/next-gen-threat-and-vuln-mgt.md) in Defender für Endpunkt, auf die Sie über die Registerkarte **"Weitere Ressourcen"** von Microsoft 365 Defender zugreifen können.
 
 :::image type="content" source="../../media/first-incident-prepare/first-incident-vulnerability.png" alt-text="Beispiel für die Seite &quot;Bedrohung und Sicherheitsanfälligkeit&quot; im Microsoft Security Center"::: 
  
 ## <a name="4-understand-emerging-threats"></a>4. Verstehen neuer Bedrohungen
 
-Verwenden [Sie die Bedrohungsanalyse](threat-analytics.md) im Microsoft 365 Security Center, um mit der aktuellen Sicherheitsrisikolandschaft auf dem neuesten Stand zu bleiben. Erfahrene Microsoft-Sicherheitsforscher erstellen Berichte, in denen die neuesten Cyberbedrohungen detailliert beschrieben werden, damit Sie verstehen können, wie sich diese auf Ihr Microsoft 365, Geräte und Benutzer auswirken können. Diese Berichte können Folgendes umfassen:
+Verwenden Sie [die Bedrohungsanalyse](threat-analytics.md) im Microsoft 365 Security Center, um mit der aktuellen Sicherheitsbedrohungslandschaft auf dem neuesten Stand zu bleiben. Erfahrene Microsoft-Sicherheitsexperten erstellen Berichte, die die neuesten Cyberbedrohungen detailliert beschreiben, damit Sie verstehen können, wie sie sich auf Ihr Microsoft 365 Abonnement, Geräte und Benutzer auswirken können. Diese Berichte können Folgendes umfassen:
 
-- Aktive Bedrohungsakteure und ihre Kampagnen
+- Aktive Bedrohungsteilnehmer und ihre Kampagnen
 - Beliebte und neue Angriffstechniken
 - Kritische Sicherheitsrisiken
-- Allgemeine Angriffsoberflächen
-- Verbreitete Schadsoftware
+- Allgemeine Angriffsflächen
+- Weit verbreitete Schadsoftware
 
-Die Bedrohungsanalyse betrachtet auch Ihre Konfiguration und Warnungen, um festzustellen, wie riskant Sie sind und ob aktive Warnungen für einen Bericht gelten.
+Die Bedrohungsanalyse untersucht auch Ihre Konfiguration und Warnungen, um zu ermitteln, wie gefährdet Sie sind und ob aktive Warnungen für einen Bericht anwendbar sind.
 
-Sie können die Empfehlungen einer neuen Bedrohung implementieren, um Ihre Sicherheitslage zu stärken und ihre Angriffsfläche zu minimieren.
+Sie können die Empfehlungen einer neuen Bedrohung implementieren, um Ihren Sicherheitsstatus zu stärken und den Angriffsbereich zu minimieren.
 
-Nehmen Sie sich Zeit in Ihrem Zeitplan, um den Abschnitt [Threat Analytics](threat-analytics.md) des Microsoft 365 zu überprüfen.
+Nehmen Sie sich Zeit in Ihrem Zeitplan, um den Abschnitt ["Bedrohungsanalyse"](threat-analytics.md) im Microsoft 365 Security Center regelmäßig zu überprüfen.
 
 ## <a name="next-step"></a>Nächster Schritt
 
-[![Schritt 1: Erfahren Sie, wie Sie Vorfälle analysieren und analysieren.](../../media/first-incident-overview/first-incident-path-step1.png)](first-incident-analyze.md)
+[![Schritt 1: Erfahren Sie, wie Sie Vorfälle selektieren und analysieren](../../media/first-incident-overview/first-incident-path-step1.png)](first-incident-analyze.md)
 
-Erfahren Sie, [wie Sie Vorfälle triagen und analysieren.](first-incident-analyze.md)
+Erfahren Sie, wie Sie [Vorfälle selektieren und analysieren.](first-incident-analyze.md)
 
 ## <a name="see-also"></a>Siehe auch
 

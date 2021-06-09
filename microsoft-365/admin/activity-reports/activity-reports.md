@@ -19,13 +19,13 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: 0d6dfb17-8582-4172-a9a9-aed798150263
-description: Erhalten Sie einen regelmäßigen Bericht darüber, wie Personen in Ihrer Organisation Microsoft 365-Dienste verwenden, und untersuchen Sie jedes Diagramm, um weitere Erkenntnisse zu erhalten.
-ms.openlocfilehash: 917a44f4b6f7458c50ac193b95c7751c66c9e7cd
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Erhalten Sie einen regelmäßigen Bericht darüber, wie Personen in Ihrer Organisation Microsoft 365-Dienste verwenden, und untersuchen Sie jedes Diagramm, um weitere Erkenntnisse zu erhalten.
+ms.openlocfilehash: 66cb3436fe6903c429e3c1950eee040b21c6dc9d
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530970"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52808999"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center"></a>Microsoft 365-Berichte im Admin Center
 
@@ -33,7 +33,7 @@ Sie können ganz einfach sehen, wie Personen in Ihrem Unternehmen die Microsoft 
   
 Berichte sind für die letzten 7 Tage, 30 Tage, 90 Tage und 180 Tage verfügbar.  Es stehen nicht sofort Daten für alle Berichtszeiträume zur Verfügung. Die Berichte sind erst nach 48 Stunden verfügbar.
   
-Sehen Sie sich dieses Video an, um eine Übersicht darüber zu erhalten, wie Sie die Berichte verwenden können:
+## <a name="watch-act-on-a-usage-report-in-office-365"></a>Schauen Sie sich an: Handeln aufgrund eines Verwendungsberichts in Office 365
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/fb726f8e-aead-43b2-ba0f-53ba5b886bf7?autoplay=false]
   
@@ -57,7 +57,7 @@ Sehen Sie sich dieses Video an, um eine Übersicht darüber zu erhalten, wie Sie
 
 ::: moniker-end
 
-2. Klicken Sie auf die Schaltfläche **Mehr anzeigen** auf der Aktivitätskarte "Auf-einen-Blick" für einen Dienst (z. B. E-Mail oder OneDrive), um die Berichtsdetailseite anzuzeigen. Dort werden verschiedene Berichte für den Dienst auf Registerkarten bereitgestellt. <br/>![Das Dashboard "Verwendung"](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
+2. Klicken Sie auf die Schaltfläche **Mehr anzeigen** auf der Aktivitätskarte "Auf-einen-Blick" für einen Dienst (z. B. E-Mail oder OneDrive), um die Berichtsdetailseite anzuzeigen. Dort werden verschiedene Berichte für den Dienst auf Registerkarten bereitgestellt. <br/>![Das Dashboard "Verwendung"](../../media/4c0f966d-9d2b-4a6f-a106-a6e2b9a2de07.png) 
 
 ## <a name="who-can-see-reports"></a>Wer kann Berichte sehen
 
@@ -88,52 +88,30 @@ Je nach Abonnement stehen die folgenden Berichte zur Verfügung.
 - [Microsoft-Browserverwendung](browser-usage-report.md) 
   
 - [E-Mail-Aktivitäten](email-activity-ww.md)
-
-- [E-Mail-Aktivität für US-Regierungsbehörden](email-activity.md)
     
 - [Postfachnutzung](mailbox-usage.md)
     
 - [Office-Aktivierungen](microsoft-office-activations-ww.md)
 
-- [Office-Aktivierungen für US-Regierungsbehörden](microsoft-office-activations.md)
-
 - [Aktive Benutzer](active-users-ww.md)
-
-- [Aktive Benutzer für US-Regierungsbehörden](active-users.md)
   
 - [Nutzung der E-Mail-Apps](email-apps-usage-ww.md)
 
-- [Verwendung von E-Mail-Apps für US-Regierungsbehörden](email-apps-usage.md)
-
 - [Forms-Aktivitäten](forms-activity-ww.md)
 
-- [Forms-Aktivität für die US-Regierung](forms-activity.md)
-
 - [Dynamics 365 Customer Voice-Aktivität](forms-pro-activity-ww.md)
-  
-- [Dynamics 365 Customer Voice-Aktivität für die US-Regierung](forms-pro-activity.md)
 
 - [Microsoft 365-Gruppen](office-365-groups-ww.md)
-
-- [Microsoft 365-Gruppen für US-Regierungsbehörden](office-365-groups.md)
   
 - [OneDrive for Business-Benutzeraktivität](onedrive-for-business-activity-ww.md)
 
-- [OneDrive for Business-Benutzeraktivitäten für US-Regierungsbehörden](onedrive-for-business-activity.md)
-
 - [Nutzung von OneDrive for Business](onedrive-for-business-usage-ww.md)
-
-- [Nutzung von OneDrive for Business für US-Regierungsbehörden](onedrive-for-business-usage.md)
 
 - [Verwendung von Microsoft 365 Apps](microsoft365-apps-usage-ww.md)
   
 - [Nutzung der SharePoint-Website](sharepoint-site-usage-ww.md)
-
-- [SharePoint-Websitenutzung für US-Regierungsbehörden](sharepoint-site-usage.md)
   
 - [SharePoint-Aktivität](sharepoint-activity-ww.md)
-
-- [SharePoint-Aktivitäten für US-Regierungsbehörden](sharepoint-activity.md)
   
 - [Skype for Business Online-Aktivitäten](/SkypeForBusiness/skype-for-business-online-reporting/activity-report)
   
@@ -145,23 +123,13 @@ Je nach Abonnement stehen die folgenden Berichte zur Verfügung.
 
 - [Yammer-Aktivitäten](yammer-activity-report-ww.md)
 
-- [Yammer-Aktivitäten für US Government](yammer-activity-report.md)
-
 - [Yammer-Gerätenutzung](yammer-device-usage-report-ww.md)
-
-- [Yammer-Gerätenutzung für US Government](yammer-device-usage-report.md)
 
 - [Yammer-Gruppenaktivitätsbericht](yammer-groups-activity-report-ww.md)
 
-- [Yammer-Gruppenaktivitätsbericht für US Government](yammer-groups-activity-report.md)
-
 - [Microsoft Teams-Benutzeraktivität](microsoft-teams-user-activity-preview.md)
 
-- [Microsoft Teams-Benutzeraktivität für "US Government"](microsoft-teams-user-activity.md)
-
 - [Microsoft Teams-Gerätenutzung](microsoft-teams-device-usage-preview.md)
-
-- [Microsoft Teams-Geräteverwendung für "US Government"](microsoft-teams-device-usage.md)
 
 ## <a name="how-to-view-licensing-information"></a>Anzeigen von Lizenzierungsinformationen
 
@@ -201,8 +169,6 @@ Wenn Sie jedoch einen bestimmten Tag auswählen (siehe Nummer 3), wird in dem Be
   
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Berichte im Security &amp; Compliance Center](../../compliance/reports-in-security-and-compliance.md) (Artikel)
-
-[Analysen zur Nutzung von Microsoft 365](../usage-analytics/usage-analytics.md) (Artikel)
-
-[Individuelles Anpassen der Berichte in Microsoft 365-Nutzungsanalysen](../usage-analytics/customize-reports.md) (Artikel)
+[Berichte im Security &amp; Compliance Center](../../compliance/reports-in-security-and-compliance.md) (Artikel)\
+[Microsoft 365-Nutzungsanalysen](../usage-analytics/usage-analytics.md) (Artikel)\
+[Individuelles Anpassen der Berichte in Microsoft 365-Nutzungsanalysen](../usage-analytics/customize-reports.md) (Artikel)

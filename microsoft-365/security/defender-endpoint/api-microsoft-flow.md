@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: dd0cc3c2da134750f905b1f80746d6ec65cc70b2
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: a0718f8e3aba27e6fbfc92a4308278f4c629275f
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769703"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843794"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (früher Microsoft Flow) und Azure-Funktionen
 
@@ -42,12 +42,12 @@ Die Microsoft Defender-API verfügt über einen offiziellen Flow Connector mit v
 ![Abbildung der Anmeldeinformationen bearbeiten1](images/api-flow-0.png)
 
 > [!NOTE]
-> Weitere Informationen zu den Voraussetzungen für die Lizenzierung von Premium-Connectors finden Sie unter ["Lizenzierung für Premium-Connectors".](https://docs.microsoft.com/power-automate/triggers-introduction#licensing-for-premium-connectors)
+> Weitere Informationen zu den Voraussetzungen für die Lizenzierung von Premium-Connectors finden Sie unter ["Lizenzierung für Premium-Connectors".](/power-automate/triggers-introduction#licensing-for-premium-connectors)
 
 
 ## <a name="usage-example"></a>Verwendungsbeispiel
 
-Im folgenden Beispiel wird veranschaulicht, wie Sie ein Flow erstellen, das jedes Mal ausgelöst wird, wenn eine neue Warnung auf Ihrem Mandanten auftritt.
+Im folgenden Beispiel wird veranschaulicht, wie Sie eine Flow erstellen, die jedes Mal ausgelöst wird, wenn eine neue Warnung auf Ihrem Mandanten auftritt.
 
 1. Melden Sie sich bei [Microsoft Power Automate](https://flow.microsoft.com)an.
 
@@ -55,7 +55,7 @@ Im folgenden Beispiel wird veranschaulicht, wie Sie ein Flow erstellen, das jede
 
     ![Abbildung der Anmeldeinformationen bearbeiten2](images/api-flow-1.png)
 
-3. Wählen Sie einen Namen für Ihre Flow aus, suchen Sie nach "Microsoft Defender ATP Triggers" als Auslöser, und wählen Sie dann den neuen Trigger "Alerts" aus.
+3. Wählen Sie einen Namen für Ihre Flow aus, suchen Sie nach "Microsoft Defender ATP Triggers" als Auslöser, und wählen Sie dann den neuen Warnungsauslöser aus.
 
     ![Abbildung der Anmeldeinformationen bearbeiten3](images/api-flow-2.png)
 

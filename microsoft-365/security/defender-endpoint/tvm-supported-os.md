@@ -1,7 +1,7 @@
 ---
 title: Unterstützte Betriebssystemplattformen und -funktionen
-description: Stellen Sie sicher, dass Sie die Betriebssystem- oder Plattformvoraussetzungen für Bedrohungs- und Sicherheitsrisikomanagement erfüllen, damit die Aktivitäten auf allen Geräten ordnungsgemäß berücksichtigt werden.
-keywords: Bedrohung & Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement, Betriebssystem, Plattformanforderungen, Voraussetzungen, von Microsoft Defender für Endpunkt-tvm unterstützte Betriebssysteme, Microsoft Defender für Endpunkt-tvm, unterstützte Betriebssysteme, unterstützte Plattformen, Linux-Support, Mac-Support
+description: Stellen Sie sicher, dass Sie die Betriebssystem- oder Plattformanforderungen für Bedrohungs- und Sicherheitsrisikomanagement erfüllen, damit die Aktivitäten auf allen Geräten ordnungsgemäß berücksichtigt werden.
+keywords: Bedrohung & Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement, Betriebssystem, Plattformanforderungen, Voraussetzungen, von Microsoft Defender für Endpunkt-tvm unterstützte Betriebssysteme, Microsoft Defender für Endpunkt-tvm, unterstützte Betriebssysteme, unterstützte Plattformen, Linux-Support, Mac-Unterstützung
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a037b9070fff2a208e7ee0a0602ce60cf3e042bf
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 8297fac0f733b93b1d8e3eabb25eeee7b1e07acb
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770013"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821973"
 ---
 # <a name="supported-operating-systems-platforms-and-capabilities---for-threat-and-vulnerability-management"></a>Unterstützte Betriebssysteme, Plattformen und Funktionen – für Bedrohungs- und Sicherheitsrisikomanagement
 
@@ -44,7 +44,7 @@ Bevor Sie beginnen, stellen Sie sicher, dass Sie die folgenden Betriebssystem- o
 
 ## <a name="capabilities-per-supported-operating-systems-os-and-platforms"></a>Funktionen pro unterstützten Betriebssystemen und Plattformen
 
-In der folgenden Tabelle gibt "Ja" an, dass eine Bedrohungs- und Sicherheitsrisikomanagement Funktion für das Betriebssystem oder die Plattform in dieser Zeile unterstützt wird.
+In der folgenden Tabelle gibt "Ja" an, dass eine Bedrohungs- und Sicherheitsrisikomanagement-Funktion für das Betriebssystem oder die Plattform in dieser Zeile unterstützt wird.
 
 Unterstützte Betriebssysteme oder Plattformen | BS-Sicherheitsrisiken | Sicherheitsrisiken für Softwareprodukt | Bewertung der Betriebssystemkonfiguration | Konfigurationsbewertung für Sicherheitskontrollen | Bewertung der Softwareproduktkonfiguration
 :---|:---|:---|:---|:---|:---
@@ -60,7 +60,7 @@ macOS 10.14 "Mojave" und höher | Ja | Ja | Ja (Vorschau) | Ja (Vorschau) | Ja (
 Red Hat Enterprise Linux 7.2 oder höher **(Vorschau)** ( \* Siehe "Wichtiger Hinweis unten") | Ja | Ja | Ja | Ja | Ja
 CentOS 7.2 oder höher **(Vorschau)** | Ja | Ja | Ja | Ja | Ja
 Ubuntu 16.04 LTS oder höher LTS **(Vorschau)** | Ja | Ja | Ja | Ja | Ja
-Oracle Linux 7.2 oder höher | Ja | Ja | Ja | Ja | Ja
+Oracle Linux 7.2 oder höher **(Vorschau)** | Ja | Ja | Ja | Ja | Ja
 
 >[!IMPORTANT]
 > \*Red Hat Enterprise Linux: "Die Sicherheitsrisikodaten, die als Teil Ihrer Microsoft Defender für Endpunkt-Dienste bereitgestellt und angezeigt werden, werden Ihnen in der rohen Form "AS IS" von Red Hat, Inc. zur Verfügung gestellt und sind möglicherweise nicht auf dem neuesten Stand. Die Daten, auf die in der Red Hat Security Data API zugegriffen werden kann, sind unter der Creative Commons Attribution 4.0 International License lizenziert. Sie tragen das Risiko bei der Verwendung dieser Daten. Microsoft und seine Drittanbieter verweigern jegliche Haftung für Folgeschäden und andere indirekte Schäden und konkludente Gewährleistungen, einschließlich konkludente Gewährleistungen von Nichtverletzung, Handelsüblichkeit und Eignung für einen bestimmten Zweck. © 2020 Red Hat. Alle Rechte vorbehalten. © 2020 Microsoft. Alle Rechte vorbehalten."

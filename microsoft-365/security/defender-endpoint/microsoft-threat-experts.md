@@ -1,8 +1,8 @@
 ---
 title: Microsoft-Bedrohungsexperten
 ms.reviewer: ''
-description: Microsoft-Bedrohungsexperten bietet Microsoft Defender for Endpoint eine zusätzliche Kompetenzebene.
-keywords: Managed Threat Hunting Service, Managed Threat Hunting, Managed Detection and Response (MDR) Service, MTE, Microsoft-Bedrohungsexperten, MTE-TAN, targeted attack notification, Targeted Attack Notification
+description: Microsoft-Bedrohungsexperten bietet Microsoft Defender für Endpunkt eine zusätzliche Expertise.
+keywords: Managed Threat Hunting Service, Managed Threat Hunting, Managed Detection and Response (MDR)-Dienst, MTE, Microsoft-Bedrohungsexperten, MTE-TAN, Benachrichtigung über gezielte Angriffe, Benachrichtigung über gezielte Angriffe
 search.product: Windows 10
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 466e67bb4649f8cf87e4152a07122d57c5071b79
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: ebde023db5196117a02a2372784a3110839c51fa
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185575"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843530"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft-Bedrohungsexperten
 
@@ -34,56 +34,56 @@ ms.locfileid: "51185575"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 
-Microsoft-Bedrohungsexperten ist ein verwalteter Bedrohungssuchedienst, der Ihren Security Operation Centers (SOCs) Überwachung und Analyse auf Expertenebene bietet, um sicherzustellen, dass kritische Bedrohungen in Ihren einzigartigen Umgebungen nicht übersehen werden.
+Microsoft-Bedrohungsexperten ist ein verwalteter Dienst für die Bedrohungssuche, der Ihren Security Operation Centers (SOCs) Überwachung und Analyse auf Expertenebene bereitstellt, um sicherzustellen, dass kritische Bedrohungen in Ihren einzigartigen Umgebungen nicht übersehen werden.
   
-Dieser dienst für die Suche nach verwalteten Bedrohungen bietet expertengesteuerte Einblicke und Daten über diese beiden Funktionen: gezielte Angriffsbenachrichtigung und Zugriff auf Experten bei Bedarf.
+Dieser Dienst für die verwaltete Bedrohungssuche bietet expertengesteuerte Einblicke und Daten über diese beiden Funktionen: gezielte Angriffsbenachrichtigung und Zugriff auf Experten bei Bedarf.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen 
 > [!NOTE]
-> Besprechen Sie die Berechtigungsanforderungen mit Ihrem Microsoft Technical Service-Anbieter und Ihrem Kontoteam, bevor Sie sich auf den dienst für die Suche nach verwalteten Bedrohungen bewerben.
+> Besprechen Sie die Berechtigungsanforderungen mit Ihrem Microsoft Technical Service-Anbieter und Ihrem Kontoteam, bevor Sie sich auf den Verwalteten Dienst für die Bedrohungssuche anwenden.
 
-Wenn Sie Microsoft Defender for Endpoint-Kunde sind, müssen Sie sich für **Microsoft-Bedrohungsexperten – Targeted Attack Notifications** bewerben, um spezielle Einblicke und Analysen zu erhalten, die ihnen helfen, die wichtigsten Bedrohungen in Ihrer Umgebung zu identifizieren, damit Sie schnell darauf reagieren können.
+Wenn Sie Ein Kunde von Microsoft Defender für Endpunkt sind, müssen Sie Microsoft-Bedrohungsexperten – **Benachrichtigungen** über gezielte Angriffe beantragen, um spezielle Einblicke und Analysen zu erhalten, die ihnen helfen, die kritischsten Bedrohungen in Ihrer Umgebung zu identifizieren, damit Sie schnell darauf reagieren können.
 
-Um sich bei Microsoft-Bedrohungsexperten – Vorteile für gezielte Angriffsbenachrichtigungen zu registrieren, wechseln Sie zu **Einstellungen** Allgemeine erweiterte Features  >    >    >  **Microsoft-Bedrohungsexperten – Benachrichtigungen** für gezielte Angriffe, die angewendet werden sollen. Sobald sie akzeptiert wurden, erhalten Sie die Vorteile von Benachrichtigungen über gezielte Angriffe.
+Wenn Sie sich für Microsoft-Bedrohungsexperten – Vorteile von gezielten Angriffsbenachrichtigungen – registrieren möchten, wechseln Sie zu **Einstellungen**  >  **allgemeinen**  >  **erweiterten Features** Microsoft-Bedrohungsexperten –  >  **Zutreffende gezielte Angriffsbenachrichtigungen.** Nach der Annahme erhalten Sie die Vorteile von Benachrichtigungen über gezielte Angriffe.
 
-Wenden Sie sich an Ihr Kontoteam oder Ihren Microsoft-Vertreter, um **Microsoft-Bedrohungsexperten – Experten** bei Bedarf zu abonnieren, um sich mit unseren Bedrohungsexperten zu relevanten Erkennungen und Gegnern in Ihrer Organisation zu beraten.
+Wenden Sie sich an Ihr Kontoteam oder einen Microsoft-Mitarbeiter, um Microsoft-Bedrohungsexperten – **Experts on Demand** zu abonnieren, um sich mit unseren Bedrohungsexperten über relevante Erkennungen und Angreifer zu beraten, mit denen Ihre Organisation konfrontiert ist.
 
-Weitere [Informationen finden Sie unter Configure Microsoft-Bedrohungsexperten capabilities.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin) 
+Weitere Informationen finden Sie unter [Konfigurieren Microsoft-Bedrohungsexperten Funktionen.](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#before-you-begin) 
 
 ## <a name="microsoft-threat-experts---targeted-attack-notification"></a>Microsoft-Bedrohungsexperten – Benachrichtigung über gezielte Angriffe 
-Microsoft-Bedrohungsexperten – Die Benachrichtigung über gezielte Angriffe bietet eine proaktive Suche nach den wichtigsten Bedrohungen für Ihr Netzwerk, einschließlich Angriffen von menschlichen Angreifern, Hand-auf-Tastatur-Angriffen oder erweiterten Angriffen wie Cyberspionage. Diese Benachrichtigungen werden als neue Warnung angezeigt. Der verwaltete Suchesdienst umfasst:  
-- Überwachung und Analyse von Bedrohungen, Reduzierung der Verweilzeit und des Risikos für das Unternehmen 
-- Von Jägern geschulte künstliche Intelligenz zum Ermitteln und Priorisieren bekannter und unbekannter Angriffe  
-- Identifizieren der wichtigsten Risiken, die so beitragen, dass SOCs Zeit und Energie maximieren 
-- Umfang der Kompromisse und so viel Kontext, wie schnell zugestellt werden kann, um eine schnelle SOC-Antwort zu ermöglichen. 
+Microsoft-Bedrohungsexperten : Die Benachrichtigung über gezielte Angriffe ermöglicht die proaktive Suche nach den wichtigsten Bedrohungen für Ihr Netzwerk, einschließlich Angreiferangriffen, praktischen Tastaturangriffen oder fortgeschrittenen Angriffen wie Cyber-E-Mails. Diese Benachrichtigungen werden als neue Warnung angezeigt. Der verwaltete Suchdienst umfasst:  
+- Bedrohungsüberwachung und -analyse, Reduzierung der Verweilzeit und des Risikos für das Unternehmen 
+- Von Hunter trainierte künstliche Intelligenz, um bekannte und unbekannte Angriffe zu erkennen und zu priorisieren  
+- Identifizieren der wichtigsten Risiken, die SOCs dabei helfen, Zeit und Energie zu maximieren 
+- Umfang der Kompromittierung und so viel Kontext wie möglich schnell bereitgestellt werden können, um eine schnelle SOC-Antwort zu ermöglichen. 
  
 ## <a name="microsoft-threat-experts---experts-on-demand"></a>Microsoft-Bedrohungsexperten – Experten bei Bedarf
-Kunden können unsere Sicherheitsexperten direkt innerhalb der Microsoft Defender Security Center für eine zeitnahe und genaue Antwort. Experten bieten Einblicke, die erforderlich sind, um die komplexen Bedrohungen, die Ihre Organisation betreffen, besser zu verstehen, von Warnungsanfragen, potenziell gefährdeten Geräten, der Hauptursache einer verdächtigen Netzwerkverbindung bis zu zusätzlicher Bedrohungsintelligenz im Zusammenhang mit laufenden erweiterten Kampagnen für dauerhafte Bedrohungen. Mit dieser Funktion können Sie:
-- Weitere Erläuterungen zu Warnungen, einschließlich der Ursache oder des Umfangs des Vorfalls, erhalten 
-- Verschaffen Sie sich Klarheit über das Verhalten verdächtiger Geräte und die nächsten Schritte, wenn sie mit einem erweiterten Angreifer konfrontiert werden  
-- Bestimmen des Risikos und des Schutzes von Bedrohungsakteuren, Kampagnen oder neuen Angreifertechniken 
+Kunden können unsere Sicherheitsexperten direkt aus Microsoft Defender Security Center für eine zeitnahe und genaue Antwort einbeziehen. Experten bieten Einblicke, die erforderlich sind, um die komplexen Bedrohungen, die Sich auf Ihre Organisation auswirken, besser zu verstehen, von Warnungsanfragen, potenziell kompromittierten Geräten, der Ursache einer verdächtigen Netzwerkverbindung bis hin zu zusätzlichen Bedrohungsinformationen in Bezug auf laufende fortgeschrittene dauerhafte Bedrohungskampagnen. Mit dieser Funktion können Sie:
+- Erhalten Sie zusätzliche Erläuterungen zu Warnungen, einschließlich der Ursache oder des Umfangs des Vorfalls 
+- Verschaffen Sie sich Klarheit über verdächtiges Geräteverhalten und die nächsten Schritte, wenn Sie mit einem erweiterten Angreifer konfrontiert sind.  
+- Ermitteln von Risiken und Schutz in Bezug auf Bedrohungsteilnehmer, Kampagnen oder neue Angreifertechniken 
 
-Die Option, **einen Bedrohungsexperten** zu konsultieren, steht an mehreren Stellen im Portal zur Verfügung, sodass Sie im Rahmen Ihrer Untersuchung mit Experten interagieren können:
+Die Möglichkeit, **einen Bedrohungsexperten** zu konsultieren, ist an mehreren Stellen im Portal verfügbar, sodass Sie sich im Rahmen Ihrer Untersuchung mit Experten in Verbindung setzen können:
 
-- <i>**Hilfe- und Supportmenü**</i><BR>
+- <i>**Menü "Hilfe und Support"**</i><BR>
 ![Screenshot der MTE-EOD-Menüoption](images/mte-eod-menu.png)
 
 - <i>**Menü "Geräteseitenaktionen"**</i><BR>
-![Screenshot der MTE-EOD-Aktionsmenüoption für Geräteseiten](images/mte-eod-machines.png)
+![Screenshot der Aktionsmenüoption "MTE-EOD-Geräteseite"](images/mte-eod-machines.png)
 
-- <i>**Menü Benachrichtigungen für Seitenaktionen**</i><BR>
-![Screenshot der Menüoption MTE-EOD-Warnungsseite](images/mte-eod-alerts.png)
+- <i>**Menü "Warnungsseitenaktionen"**</i><BR>
+![Screenshot der Aktionsmenüoption "MTE-EOD-Warnungsseite"](images/mte-eod-alerts.png)
 
 - <i>**Menü "Dateiseitenaktionen"**</i><BR>
-![Screenshot der MTE-EOD-Dateiseiten-Aktionsmenüoption](images/mte-eod-file.png)
+![Screenshot der Aktionsmenüoption "MTE-EOD-Dateiseite"](images/mte-eod-file.png)
 
 > [!NOTE]
-> Wenn Sie den Status Ihrer Experts on Demand-Fälle über Microsoft Services Hub nachverfolgen möchten, erreichen Sie Ihren Technical Account Manager. 
+> Wenn Sie den Status Ihrer Experts on Demand-Fälle über den Microsoft Services Hub nachverfolgen möchten, wenden Sie sich an Ihren Technical Account Manager. 
 
-Sehen Sie sich dieses Video an, um einen schnellen Überblick über den Microsoft Services Hub zu erhalten.
+Sehen Sie sich dieses Video an, um einen schnellen Überblick über den Microsoft Services Hub zu geben.
 
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pk9f] 
 

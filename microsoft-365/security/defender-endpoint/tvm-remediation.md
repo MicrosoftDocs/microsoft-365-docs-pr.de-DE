@@ -1,7 +1,7 @@
 ---
-title: Behebung von Sicherheitsrisiken mit Bedrohungs- und Sicherheitsrisikomanagement
-description: Beheben von Sicherheitslücken, die durch Sicherheitsempfehlungen erkannt wurden, und erstellen Sie bei Bedarf Ausnahmen in Bedrohungs- und Sicherheitsrisikomanagement.
-keywords: Microsoft Defender for Endpoint tvm remediation, Microsoft Defender for Endpoint tvm, Bedrohungs- und Sicherheitsrisikomanagement, threat & Sicherheitsrisikomanagement, threat & Sicherheitsrisikomanagement remediation, tvm remediation intune, tvm remediation sccm
+title: Beheben von Sicherheitsrisiken mit Bedrohungs- und Sicherheitsrisikomanagement
+description: Beheben Von Sicherheitsschwächen, die durch Sicherheitsempfehlungen erkannt werden, und Erstellen von Ausnahmen bei Bedarf in Bedrohungs- und Sicherheitsrisikomanagement.
+keywords: Microsoft Defender für Endpunkt-TVM-Wartung, Microsoft Defender für Endpunkt-TVM, Bedrohungs- und Sicherheitsrisikomanagement, Bedrohungs-& Sicherheitsrisikomanagement, Bedrohungs-& Sicherheitsrisikomanagement-Wartung, TVM-Wartungs-Intune, TVM-Korrektur sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 56b6c809e31285bbfae47a5fdcc0446890919e8b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 602a38d8ad27505e81628db265681ac89218e593
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934069"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840911"
 ---
-# <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>Behebung von Sicherheitsrisiken mit Bedrohungs- und Sicherheitsrisikomanagement
+# <a name="remediate-vulnerabilities-with-threat-and-vulnerability-management"></a>Beheben von Sicherheitsrisiken mit Bedrohungs- und Sicherheitsrisikomanagement
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,74 +34,74 @@ ms.locfileid: "51934069"
 - [Bedrohung und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+>Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
-## <a name="request-remediation"></a>Anforderungsbehebung
+## <a name="request-remediation"></a>Korrektur anfordern
 
-Die Bedrohungs- und Sicherheitsrisikomanagement in Microsoft Defender for Endpoint überbrückt die Lücke zwischen Sicherheits- und IT-Administratoren über den Workflow für Korrekturanforderung. Sicherheitsadministratoren wie Sie können den IT-Administrator bitten, eine  Sicherheitslücke von den Sicherheitsempfehlungsseiten auf Intune zu be behebung.
+Die Bedrohungs- und Sicherheitsrisikomanagement-Funktion in Microsoft Defender für Endpunkt schließt die Lücke zwischen Sicherheits- und IT-Administratoren über den Korrekturanforderungsworkflow. Sicherheitsadministratoren wie Sie können anfordern, dass der IT-Administrator eine Sicherheitslücke von den **Sicherheitsempfehlungen** an Intune behebt.
 
 ### <a name="enable-microsoft-intune-connection"></a>Aktivieren Microsoft Intune Verbindung
 
-Um diese Funktion zu verwenden, aktivieren Sie Microsoft Intune Verbindungen. Navigieren Sie im Microsoft Defender Security Center zu **Einstellungen**  >  **Allgemeine Erweiterte**  >  **Features**. Scrollen Sie nach unten, und **suchen Microsoft Intune Verbindung**. Standardmäßig ist der Umschalter deaktiviert. Schalten Sie **Microsoft Intune Verbindung** **ein.**
+Um diese Funktion zu verwenden, aktivieren Sie Ihre Microsoft Intune Verbindungen. Navigieren Sie im Microsoft Defender Security Center zu **Einstellungen**  >  **Allgemeinen**  >  **erweiterten Features.** Scrollen Sie nach unten, und suchen Sie **nach Microsoft Intune Verbindung.** Standardmäßig ist die Umschaltfläche deaktiviert. Schalten Sie die **Microsoft Intune Verbindungsschaltfläche** **ein.**
 
-**Hinweis:** Wenn Sie die Intune-Verbindung aktiviert haben, erhalten Sie eine Option zum Erstellen einer Intune-Sicherheitsaufgabe beim Erstellen einer Korrekturanforderung. Diese Option wird nicht angezeigt, wenn die Verbindung nicht festgelegt ist.
+**Hinweis:** Wenn Sie die Intune-Verbindung aktiviert haben, erhalten Sie eine Option zum Erstellen einer Intune-Sicherheitsaufgabe beim Erstellen einer Wartungsanforderung. Diese Option wird nicht angezeigt, wenn die Verbindung nicht festgelegt ist.
 
-Weitere [Informationen finden Sie unter Verwenden](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) von Intune zur Behebung von von Microsoft Defender for Endpoint identifizierten Sicherheitsrisiken.
+Weitere Informationen finden Sie unter ["Verwenden von Intune zum Beheben von Von Microsoft Defender für Endpunkt identifizierten Sicherheitsrisiken".](/intune/atp-manage-vulnerabilities)
 
-### <a name="remediation-request-steps"></a>Schritte zur Behebungsanforderung
+### <a name="remediation-request-steps"></a>Schritte zur Korrekturanforderung
 
-1. Wechseln Sie zum Bedrohungs- und Sicherheitsrisikomanagement Navigationsmenü in der Microsoft Defender Security Center, und wählen Sie [**Sicherheitsempfehlungen aus.**](tvm-security-recommendation.md)
+1. Wechseln Sie im Microsoft Defender Security Center zum navigationsmenü Bedrohungs- und Sicherheitsrisikomanagement, und wählen Sie [**Sicherheitsempfehlungen aus.**](tvm-security-recommendation.md)
 
-2. Wählen Sie eine Sicherheitsempfehlung aus, für die Sie eine Korrektur anfordern möchten, und wählen Sie dann **Korrekturoptionen aus.**
+2. Wählen Sie eine Sicherheitsempfehlung aus, für die Sie eine Korrektur anfordern möchten, und wählen Sie dann **Korrekturoptionen** aus.
 
-3. Füllen Sie das Formular aus, einschließlich der Informationen, für die Sie eine Korrektur anfordern, anwendbare Gerätegruppen, Priorität, Fälligkeitsdatum und optionale Notizen.
-    1. Wenn Sie die Option "Aufmerksamkeit erforderlich" auswählen, ist die Auswahl eines Fälligkeitsdatums nicht verfügbar, da keine bestimmte Aktion vorhanden ist.
+3. Füllen Sie das Formular aus, einschließlich der Informationen, für die Sie eine Korrektur anfordern, zutreffender Gerätegruppen, Priorität, Fälligkeitsdatum und optionaler Hinweise.
+    1. Wenn Sie die Korrekturoption "Achtung erforderlich" auswählen, ist die Auswahl eines Fälligkeitsdatums nicht verfügbar, da keine bestimmte Aktion vorhanden ist.
 
-4. Wählen **Sie Anforderung übermitteln aus.** Durch das Senden einer Korrekturanforderung wird ein Wartungsaktivitätselement innerhalb Bedrohungs- und Sicherheitsrisikomanagement erstellt, das zum Überwachen des Korrekturfortschritts für diese Empfehlung verwendet werden kann. Dadurch wird keine Korrektur ausgelöst oder Änderungen auf Geräten angewendet.
+4. Wählen Sie **"Anforderung senden"** aus. Durch das Senden einer Korrekturanforderung wird innerhalb Bedrohungs- und Sicherheitsrisikomanagement ein Wartungsaktivitätselement erstellt, das zum Überwachen des Wartungsfortschritts für diese Empfehlung verwendet werden kann. Dies löst keine Korrektur aus oder wendet keine Änderungen auf Geräte an.
 
-5. Benachrichtigen Sie Ihren IT-Administrator über die neue Anforderung, und lassen Sie sie sich bei Intune anmelden, um die Anforderung zu genehmigen oder abzulehnen und eine Paketbereitstellung zu starten.
+5. Benachrichtigen Sie Ihren IT-Administrator über die neue Anforderung, und lassen Sie ihn sich bei Intune anmelden, um die Anforderung zu genehmigen oder abzulehnen und eine Paketbereitstellung zu starten.
 
-6. Wechseln Sie zur [**Seite Korrektur,**](tvm-remediation.md) um den Status Ihrer Behebungsanforderung zu sehen.
+6. Wechseln Sie zur Seite [**"Korrektur",**](tvm-remediation.md) um den Status Ihrer Korrekturanfrage anzuzeigen.
 
-Wenn Sie überprüfen möchten, wie das Ticket in Intune angezeigt wird, finden Sie weitere Informationen unter Verwenden von Intune zur Behebung von von [Microsoft Defender for Endpoint](https://docs.microsoft.com/intune/atp-manage-vulnerabilities) identifizierten Sicherheitsrisiken.
+Wenn Sie überprüfen möchten, wie das Ticket in Intune angezeigt wird, finden Sie weitere Informationen unter [Verwenden von Intune zum Beheben von Sicherheitsrisiken,](/intune/atp-manage-vulnerabilities) die von Microsoft Defender für Endpunkt identifiziert wurden.
 
 >[!NOTE]
 >Wenn Ihre Anforderung die Behebung von mehr als 10.000 Geräten umfasst, können wir nur 10.000 Geräte zur Behebung an Intune senden.
 
-Nachdem die Cybersicherheitsschwächen Ihrer Organisation identifiziert und den Empfehlungen für umsetzbare Sicherheit zugeordnet [wurden,](tvm-security-recommendation.md)beginnen Sie mit dem Erstellen von Sicherheitsaufgaben. Sie können Aufgaben durch die Integration mit Microsoft Intune erstellen, in denen Wartungstickets erstellt werden.
+Nachdem die Cybersicherheitsschwächen Ihrer Organisation identifiziert und umsetzbaren [Sicherheitsempfehlungen](tvm-security-recommendation.md)zugeordnet wurden, beginnen Sie mit der Erstellung von Sicherheitsaufgaben. Sie können Aufgaben durch die Integration in Microsoft Intune erstellen, in denen Wartungstickets erstellt werden.
 
-Verringern Sie die Gefährdung Ihrer Organisation durch Sicherheitsrisiken, und erhöhen Sie Ihre Sicherheitskonfiguration, indem Sie die Sicherheitsempfehlungen abstellen.
+Verringern Sie die Gefährdung Ihrer Organisation durch Sicherheitsrisiken, und erhöhen Sie Ihre Sicherheitskonfiguration, indem Sie die Sicherheitsempfehlungen korrigieren.
 
 ## <a name="view-your-remediation-activities"></a>Anzeigen Ihrer Korrekturaktivitäten
 
-Wenn Sie eine Behebungsanforderung von der Seite Sicherheitsempfehlungen übermitteln, wird eine Korrekturaktivität ins Jahr 2013 starten. Es wird eine Sicherheitsaufgabe erstellt, die auf  der Seite Bedrohungs- und Sicherheitsrisikomanagement Nachverfolgt werden kann, und ein Wartungsticket wird in Microsoft Intune.
+Wenn Sie eine Korrekturanforderung von der Seite "Sicherheitsempfehlungen" übermitteln, wird eine Korrekturaktivität gestartet. Eine Sicherheitsaufgabe wird erstellt, die auf der Seite Bedrohungs- und Sicherheitsrisikomanagement **Korrektur** nachverfolgt werden kann, und ein Wartungsticket wird in Microsoft Intune erstellt.
 
-Wenn Sie die Option "Aufmerksamkeit erforderlich" ausgewählt haben, gibt es keine Statusanzeige, keinen Ticketstatus oder kein Fälligkeitsdatum, da es keine tatsächliche Aktion gibt, die wir überwachen können.
+Wenn Sie die Korrekturoption "Aufmerksamkeit erforderlich" ausgewählt haben, gibt es keine Statusanzeige, keinen Ticketstatus oder kein Fälligkeitsdatum, da keine tatsächliche Aktion vorhanden ist, die wir überwachen können.
 
-Sobald Sie sich auf der Seite Korrektur befinden, wählen Sie die Korrekturaktivität aus, die Sie anzeigen möchten. Sie können die Korrekturschritte ausführen, den Fortschritt nachverfolgen, die zugehörige Empfehlung anzeigen, in CSV exportieren oder als abgeschlossen markieren.
-![Beispiel für die Seite "Korrektur" mit einer ausgewählten Korrekturaktivität und dem Flyout dieser Aktivität, in dem die Beschreibung, die IT-Dienst- und Geräteverwaltungstools sowie der Fortschritt der Gerätebehebung auflistet werden.](images/remediation_flyouteolsw.png)
+Sobald Sie sich auf der Seite "Korrektur" befinden, wählen Sie die Korrekturaktivität aus, die Sie anzeigen möchten. Sie können die Korrekturschritte ausführen, den Fortschritt nachverfolgen, die zugehörige Empfehlung anzeigen, in CSV exportieren oder als abgeschlossen markieren.
+![Beispiel für die Seite "Korrektur" mit einer ausgewählten Korrekturaktivität und dem Flyout dieser Aktivität, in dem die Beschreibung, IT-Dienst- und Geräteverwaltungstools sowie der Fortschritt der Gerätebehebung aufgeführt sind.](images/remediation_flyouteolsw.png)
 
 >[!NOTE]
-> Es gibt einen Aufbewahrungszeitraum von 180 Tage für abgeschlossene Korrekturaktivitäten. Damit die Korrekturseite optimal funktioniert, wird die Behebungsaktivität 6 Monate nach abschluss entfernt.
+> Es gibt einen Aufbewahrungszeitraum von 180 Tagen für abgeschlossene Korrekturaktivitäten. Damit die Seite "Korrektur" optimal ausgeführt wird, wird die Korrekturaktivität 6 Monate nach abschluss entfernt.
 
-### <a name="completed-by-column"></a>Nach Spalte abgeschlossen
+### <a name="completed-by-column"></a>Abgeschlossen nach Spalte
 
-Verfolgen Sie, wer die Korrekturaktivität mit der Spalte "Abgeschlossen von" auf der Seite Korrektur geschlossen hat.
+Verfolgen Sie, wer die Korrekturaktivität mit der Spalte "Abgeschlossen von" auf der Seite "Korrektur" geschlossen hat.
 
-- **E-Mail-Adresse**: Die E-Mail der Person, die die Aufgabe manuell abgeschlossen hat
-- **Systembestätigung**: Die Aufgabe wurde automatisch abgeschlossen (alle Geräte wurden behoben)
-- **N/A**: Informationen sind nicht verfügbar, da wir nicht wissen, wie diese ältere Aufgabe abgeschlossen wurde.
+- **E-Mail-Adresse:** Die E-Mail-Adresse der Person, die die Aufgabe manuell abgeschlossen hat
+- **Systembestätigung:** Die Aufgabe wurde automatisch abgeschlossen (alle Geräte behoben)
+- **Nicht** verfügbar: Informationen sind nicht verfügbar, da wir nicht wissen, wie diese ältere Aufgabe abgeschlossen wurde
 
-![Erstellt von und wird von Spalten mit zwei Zeilen abgeschlossen. Eine Zeile für completed by hat ein Beispiel für eine E-Mail, die andere Zeile die Systembestätigung.](images/tvm-completed-by.png)
+![Wird von Spalten mit zwei Zeilen erstellt und abgeschlossen. Eine Zeile für "Abgeschlossen durch" weist ein Beispiel für eine E-Mail auf, die andere Zeile gibt die Systembestätigung an.](images/tvm-completed-by.png)
 
-### <a name="top-remediation-activities-in-the-dashboard"></a>Die obersten Korrekturaktivitäten im Dashboard
+### <a name="top-remediation-activities-in-the-dashboard"></a>Wichtigste Wartungsaktivitäten im Dashboard
 
-Anzeigen **der Obersten Korrekturaktivitäten im** Bedrohungs- und Sicherheitsrisikomanagement [Dashboard](tvm-dashboard-insights.md). Wählen Sie einen der Einträge aus, die zur Seite **Korrektur wechseln.** Sie können die Korrekturaktivität als abgeschlossen markieren, nachdem das IT-Administratorteam die Aufgabe behoben hat.
+Zeigen Sie die **wichtigsten Wartungsaktivitäten** im [Bedrohungs- und Sicherheitsrisikomanagement-Dashboard](tvm-dashboard-insights.md)an. Wählen Sie einen der Einträge aus, um zur Seite **"Korrektur"** zu wechseln. Sie können die Korrekturaktivität als abgeschlossen markieren, nachdem das IT-Administratorteam die Aufgabe behoben hat.
 
-![Beispiel für die Karte "Top remediation activities" mit einer Tabelle, in der die top Aktivitäten aufgeführt sind, die aus Sicherheitsempfehlungen generiert wurden.](images/tvm-remediation-activities-card.png)
+![Beispiel für karte top remediation activities with a table that lists top activities that were generated from security recommendations.](images/tvm-remediation-activities-card.png)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Übersicht über Bedrohungen Sicherheitsrisikomanagement Bedrohungen](next-gen-threat-and-vuln-mgt.md)
+- [Übersicht über Bedrohungen und Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 - [Dashboard](tvm-dashboard-insights.md)
 - [Sicherheitsempfehlungen](tvm-security-recommendation.md)

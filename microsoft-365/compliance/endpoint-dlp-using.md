@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Hier erfahren Sie, wie Sie DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust) so konfigurieren können, dass Microsoft 365-EPDLP-Speicherorte (Endpoint Data Loss Prevention) verwendet werden.
-ms.openlocfilehash: cbd95ed3ee70b69b395f73c83852a9f37a269f0b
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 1a0297271c3e0e8fb94a476982f146aa8c221e7a
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259487"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809131"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Nutzen der Verhinderung von Datenverlust am Endpunkt
 
@@ -68,8 +68,11 @@ Sie können diese Logik verwenden, um Ihre Pfadausschlüsse zu erstellen:
 Wenn die Einstellung **Zugriff durch nicht zulässige Apps und Browser** einer Richtlinie aktiviert ist und Benutzer versuchen, solche Apps für den Zugriff auf eine geschützte Datei zu verwenden, wird die Aktivität zugelassen, blockiert oder blockiert, aber die Benutzer können die Einschränkung außer Kraft setzen. Alle Aktivitäten werden überwacht und können im Aktivitäten-Explorer überprüft werden.
 
 > [!IMPORTANT]
-> Es wird nicht der Pfad zu der ausführbaren Datei angegeben, sondern nur der ausführbare Name (z. B. „browser.exe“).
+> Es wird nicht der Pfad zu der ausführbaren Datei angegeben, sondern nur der ausführbare Name (z. B. „browser.exe“).
 
+### <a name="unallowed-bluetooth-apps"></a>Nicht zugelassene Bluetooth-Apps
+
+Verhindern Sie, dass Personen Dateien, die durch Ihre Richtlinien geschützt sind, über bestimmte Bluetooth-Apps übertragen.
 
 ### <a name="browser-and-domain-restrictions"></a>Browser- und Domäneneinschränkungen:
 Schränken Sie die Freigabe sensibler Dateien, die Ihren Richtlinien entsprechen, für uneingeschränkte Clouddienstdomänen ein.
@@ -97,6 +100,11 @@ Sie können mit den Optionen für die geschäftliche Begründung in den DLP-Rich
 - Benutzer können nur eine integrierte Begründung auswählen.
 - Benutzer können nur ihre eigene Begründung eingeben.
 
+### <a name="always-audit-file-activity-for-devices"></a>Dateiaktivitäten für Geräte immer überwachen
+
+Standardmäßig werden beim Einbinden von Geräten die Aktivitäten für Office-, PDF- und CSV-Dateien automatisch geprüft und stehen zur Überprüfung im Aktivitäten-Explorer zur Verfügung. Deaktivieren Sie diese Funktion, wenn Sie möchten, dass diese Aktivität nur dann überwacht wird, wenn eingebundene Geräte in einer aktiven Richtlinie enthalten sind.
+
+Dateiaktivitäten werden für eingebundene Geräte immer überwacht, unabhängig davon, ob sie in einer aktiven Richtlinie enthalten sind.
 
 ## <a name="tying-dlp-settings-together"></a>DLP-Einstellungen kombinieren
 
@@ -222,7 +230,7 @@ Bei diesen Szenarien ist es erforderlich, dass Sie bereits über Geräte verfüg
 - [Erste Schritte mit dem Aktivitäten-Explorer](data-classification-activity-explorer.md)
 - [Microsoft Defender für Endpunkt](/windows/security/threat-protection/)
 - [Onboarding-Tools und -Methoden für Windows 10-Computer](/microsoft-365/compliance/dlp-configure-endpoints)
-- [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
+- [Microsoft 365-Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
 - [Azure Active Directory (AAD) Einbindung](/azure/active-directory/devices/concept-azure-ad-join)
 - [Herunterladen des auf Chromium basierenden neuen Microsoft Edge](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)
 - [Erste Schritte mit der standardmäßigen DLP-Richtlinie](get-started-with-the-default-dlp-policy.md)

@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 description: Verwenden Sie das Microsoft 365 Compliance Center, um das einheitliche Überwachungsprotokoll zu durchsuchen und Benutzer- und Administratoraktivitäten aus Ihrer Organisation anzuzeigen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dfda69e5695d2097de5bfae48b580e23799edf87
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 8817ed09673ec23d0a41d680942276bcb1fe297d
+ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536046"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52809143"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Durchsuchen des Überwachungsprotokolls im Compliance-Center
 
@@ -158,7 +158,7 @@ Nachfolgend ist der Prozess zum Durchsuchen des Überwachungsprotokolls in Offic
 1. Wechseln Sie zu [https://protection.office.com](https://protection.office.com).
 
     > [!TIP]
-    > Verwenden Sie eine private Browsersitzung (keine gewöhnliche Sitzung) für den Zugriff auf das Security and Compliance Center, weil dadurch die Verwendung Ihrer Anmeldeinformationen verhindert wird. Um ein InPrivate-Browserfenster in Internet Explorer oder in Microsoft Edge zu öffnen, drücken Sie einfach STRG+UMSCHALT+P. Drücken Sie STRG+UMSCHALT+N, um eine private Browsersitzung in Google Chrome (ein sogenanntes „Inkognito-Fenster“) zu öffnen.
+    > Verwenden Sie eine private Browsersitzung (keine gewöhnliche Sitzung) für den Zugriff auf das Security & Compliance Center, weil dadurch die Verwendung der Anmeldeinformationen, mit denen Sie aktuell angemeldet sind, verhindert wird. Um eine InPrivate-Browsersitzung in Internet Explorer oder Microsoft Edge zu öffnen, drücken Sie STRG+UMSCHALT+P. Um eine private Browsersitzung in Google Chrome zu öffnen (die als Inkognitofenster bezeichnet wird), drücken Sie STRG+UMSCHALT+N.
 
 2. Melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto an.
 
@@ -446,7 +446,7 @@ In der folgenden Tabelle sind die Datei- und Seitenaktivitäten in SharePoint On
 |Datensatzstatus in "gesperrt" geändert|LockRecord|Der Datensatzstatus einer Aufbewahrungsbezeichnung, die ein Dokument als Datensatz klassifiziert, wurde gesperrt. Dies bedeutet, dass das Dokument nicht geändert oder gelöscht werden kann. Nur Benutzer, denen mindestens die Berechtigung „Mitwirkender“ für eine Website zugewiesen ist, können den Datensatzstatus eines Dokuments ändern.|
 |Datensatzstatus in "nicht gesperrt" geändert|UnlockRecord|Der Datensatzstatus einer Aufbewahrungsbezeichnung, die ein Dokument als Datensatz klassifiziert, wurde entsperrt. Dies bedeutet, dass das Dokument geändert oder gelöscht werden kann. Nur Benutzer, denen mindestens die Berechtigung „Mitwirkender“ für eine Website zugewiesen ist, können den Datensatzstatus eines Dokuments ändern.|
 |Datei eingecheckt|FileCheckedIn|Der Benutzer checkt ein Dokument ein, das er aus einer Dokumentbibliothek ausgecheckt hat.|
-|Datei ausgecheckt|FileCheckedOut|Der Benutzer checkt ein Dokument aus, das sich in einer Dokumentbibliothek befindet. Benutzer können alle Dokumente, die für sie freigegeben wurden, auschecken oder ändern.|
+|Datei ausgecheckt|FileCheckedOut|Der Benutzer checkt ein Dokument aus, das sich in einer Dokumentbibliothek befindet. Benutzer können Dokumente, die für sie freigegeben wurden, auschecken und Änderungen daran vornehmen.|
 |Datei kopiert|FileCopied|Der Benutzer kopiert ein Dokument von einer Website. Die kopierte Datei kann in einem anderen Ordner auf der Website gespeichert werden.|
 |Datei gelöscht|FileDeleted|Der Benutzer löscht ein Dokument von einer Website.|
 |Datei aus Papierkorb gelöscht|FileDeletedFirstStageRecycleBin|Der Benutzer löscht eine Datei aus dem Papierkorb einer Website.|
@@ -963,7 +963,7 @@ In der folgenden Tabelle sind die Überwachungsaktivitäten und die Informatione
 |Gemeinsame Dokumenterstellung|Intern|UPN|Organisation des Formularbesitzers|Koautor|
 |Gemeinsame Dokumenterstellung|Extern|UPN<br>|Organisation des Koautors<br>|Koautor|
 |Gemeinsame Dokumenterstellung|Extern|`urn:forms:coauthor#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers<br>|Koautor|
-|Antwortaktivitäten|Extern|UPN<br>|Organisation des Antwortenden<br>|Responder|
+|Antwortaktivitäten|Extern|UPN<br>|Organisation des Antwortenden<br>|Antwortender|
 |Antwortaktivitäten|Extern|`urn:forms:external#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der Benutzer-ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers|Antwortender|
 |Antwortaktivitäten|Anonym|`urn:forms:anonymous#a0b1c2d3@forms.office.com`<br>(Der zweite Teil der Benutzer-ID ist ein Hash, der sich für unterschiedliche Benutzer unterscheidet.)|Organisation des Formularbesitzers|Antwortender|
 ||||

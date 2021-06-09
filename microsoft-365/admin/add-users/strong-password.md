@@ -1,5 +1,5 @@
 ---
-title: Deaktivieren starker Kennwortanforderungen für Benutzer
+title: Deaktivieren der Anforderungen für sichere Kennwörter für Benutzer
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,29 +20,29 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie starke Kennwortanforderungen für Ihre Benutzer mithilfe von Windows PowerShell.
-ms.openlocfilehash: de2f47bb88fe4cb3d00e45698fe006035faa4e5c
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+description: Erfahren Sie, wie Sie mithilfe von Windows PowerShell sichere Kennwortanforderungen für Ihre Benutzer festlegen.
+ms.openlocfilehash: 898eaf30d813e883e88c3ccc8ff500d72ae72854
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222073"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52840658"
 ---
-# <a name="turn-off-strong-password-requirements-for-users"></a>Deaktivieren starker Kennwortanforderungen für Benutzer
+# <a name="turn-off-strong-password-requirements-for-users"></a>Deaktivieren der Anforderungen für sichere Kennwörter für Benutzer
 
-In diesem Artikel wird erläutert, wie Sie starke Kennwortanforderungen für Ihre Benutzer deaktivieren. Starke Kennwortanforderungen sind standardmäßig in Ihrer Microsoft 365 Business Organization aktiviert. Ihre Organisation muss möglicherweise sichere Kennwörter deaktivieren. Führen Sie die folgenden Schritte aus, um starke Kennwortanforderungen zu deaktivieren. Sie müssen diese Schritte mithilfe von PowerShell ausführen.
+In diesem Artikel wird erläutert, wie Sie sichere Kennwortanforderungen für Ihre Benutzer deaktivieren. Sichere Kennwortanforderungen sind in Ihrer Microsoft 365 for Business-Organisation standardmäßig aktiviert. Ihre Organisation hat möglicherweise Anforderungen, um sichere Kennwörter zu deaktivieren. Führen Sie die folgenden Schritte aus, um sichere Kennwortanforderungen zu deaktivieren. Sie müssen diese Schritte mithilfe von PowerShell ausführen.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-Dieser Artikel ist für Personen, die die Kennwortrichtlinie für ein Unternehmen, eine Schule oder gemeinnützige Organisation verwalten. Um diese Schritte auszuführen, müssen Sie sich mit Ihrem Microsoft 365-Administratorkonto anmelden. [Was ist ein Administratorkonto?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) Sie müssen ein globaler [Administrator oder Kennwortadministrator sein,](about-admin-roles.md) um diese Schritte ausführen zu können.
+Dieser Artikel richtet sich an Personen, die die Kennwortrichtlinie für ein Unternehmen, eine Schule oder eine gemeinnützige Organisation verwalten. Um diese Schritte auszuführen, müssen Sie sich mit Ihrem Microsoft 365-Administratorkonto anmelden. [Was ist ein Administratorkonto?](/microsoft-365/business-video/admin-center-overview) Sie müssen ein [globaler Administrator oder Kennwortadministrator](about-admin-roles.md) sein, um diese Schritte ausführen zu können.
 
-Sie müssen auch eine Verbindung mit Microsoft 365 PowerShell herstellen.
+Sie müssen auch eine Verbindung mit Microsoft 365 mit PowerShell herstellen.
 
-## <a name="set-strong-passwords"></a>Festlegen von starken Kennwörtern
+## <a name="set-strong-passwords"></a>Festlegen sicherer Kennwörter
 
-1. [Verbinden sie Microsoft 365 PowerShell .](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+1. [Verbinden mit PowerShell Microsoft 365.](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
-2. Mit PowerShell können Sie starke Kennwortanforderungen für alle Benutzer mit dem folgenden Befehl deaktivieren:
+2. Mithilfe von PowerShell können Sie die Anforderungen für sichere Kennwörter für alle Benutzer mit dem folgenden Befehl deaktivieren:
 
     ```powershell
     Get-MsolUser | Set-MsolUser -StrongPasswordRequired $false
@@ -54,11 +54,11 @@ Sie müssen auch eine Verbindung mit Microsoft 365 PowerShell herstellen.
     ```
 
 > [!NOTE]
-> Der userPrincipalName muss im Anmeldeformat im Internetformat vorliegen, in dem auf den Benutzernamen das At-Zeichen (@) und ein Domänenname folgen. Beispiel: user@contoso.com.
+> "userPrincipalName" muss im Anmeldeformat im Internetformat vorliegen, auf das der Benutzername folgt, gefolgt von "at sign" (@) und einem Domänennamen. Beispiel: user@contoso.com.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Herstellen einer Verbindung mit Microsoft 365 PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+[Herstellen einer Verbindung mit Microsoft 365 mit PowerShell](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 [Weitere Informationen zu PowerShell-MsolUser-Befehlen](/powershell/module/msonline/set-msoluser?view=azureadps-1.0)
 

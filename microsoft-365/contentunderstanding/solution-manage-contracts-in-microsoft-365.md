@@ -8,23 +8,23 @@ audience: admin
 ms.topic: article
 ms.date: ''
 ms.prod: microsoft-365-enterprise
-ms.collection: m365solution-managecontracts
+ms.collection: m365solution-managecontracts m365solution-overview
 search.appverid: ''
 localization_priority: None
 ROBOTS: ''
 description: Erfahren Sie, wie Sie Verträge mithilfe einer Microsoft 365 Lösung von SharePoint Syntex, SharePoint Lists, Microsoft Teams und Power Automate verwalten.
-ms.openlocfilehash: d12ccd2d4bc777b05489556f0d96ce9de80954a8
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 352ebd1b9170aaf7829c414e87f7a79c4f17a1df
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770817"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843770"
 ---
 # <a name="manage-contracts-using-a-microsoft-365-solution"></a>Verwalten von Verträgen mithilfe einer Microsoft 365-Lösung
 
 In diesem Artikel wird beschrieben, wie Sie mithilfe von SharePoint Syntex und Komponenten von Microsoft 365 eine Vertragsverwaltungslösung für Ihre Organisation erstellen. Es bietet Ihnen ein Framework, das Sie bei der Planung und Erstellung einer Lösung unterstützt, die Ihren individuellen Geschäftlichen Anforderungen entspricht. Auch wenn diese Lösung nicht ihren geschäftlichen Anforderungen als Ganzes entspricht, können Teile davon in Ihre Planung übernommen werden, um eine benutzerdefinierte Vertragsverwaltungslösung zu erstellen.
 
-*Dieser Inhaltssatz dokumentiert eine Microsoft 365 Lösung, die von Einem Mol über das Team für moderne Arbeitslösungsstrategie von Microsoft entwickelt wurde.*
+*Dieser Inhaltssatz dokumentiert eine Microsoft 365 Lösung, die von Ihnen mit dem Modern Work Solution Strategy Team von Microsoft entwickelt wurde.*
 
 ## <a name="identify-the-business-problem"></a>Identifizieren des Geschäftsproblems
 
@@ -46,11 +46,11 @@ Dieser Leitfaden zur Vertragsverwaltungslösung umfasst vier Komponenten von Mic
 
 - **Microsoft SharePoint Syntex:** Erstellen Sie Modelle, um Ihre Vertragsdateien zu identifizieren und zu klassifizieren und dann die entsprechenden Daten daraus zu extrahieren.
 
-- **Microsoft SharePoint-Listen:** Verwenden Sie die in modernen SharePoint-Listen verfügbaren Formatierungen, um Verträge in einem unternehmensfreundlichen Format darzustellen.
+- **Microsoft SharePoint Listen:** Verwenden Sie die in modernen SharePoint Listen verfügbare Formatierung, um Verträge in einem unternehmensfreundlichen Format darzustellen.
 
 - **Microsoft Teams:** Verwenden Sie die Funktionalität eines Teams Kanals und zugehöriger Registerkarten, um Ihren Projektbeteiligten die Überprüfung und Verwaltung von Verträgen zu ermöglichen.
 
-- **Power Automate:** Verwenden Sie Flüsse, um Verträge durch den Genehmigungsprozess und dann zu einer Drittanbieteranwendung für die Zahlung zu führen.
+- **Power Automate:** Verwenden Sie Flüsse, um Verträge durch den Genehmigungsprozess und dann zu einer Drittanbieteranwendung zur Zahlung zu führen.
 
 ### <a name="how-it-all-works"></a>Funktionsweise
 
@@ -70,13 +70,13 @@ Dieser Leitfaden zur Vertragsverwaltungslösung umfasst vier Komponenten von Mic
 
 5.  Wenn ein Mitglied einen Vertrag ablehnt, wird der Status in "Abgelehnt" geändert, und alle Mitglieder werden über einen Teams Beitrag benachrichtigt.
 
-6. Das Endergebnis dieser Lösung ist ein automatisierter Geschäftsprozess für Ihre Organisation. Mitarbeiter können die benutzerdefinierte Kachelansicht ganz einfach in Teams verwenden, um den Genehmigungsworkflow Ihrer Dokumente zu initiieren und zu überwachen. 
+6. Das Endergebnis dieser Lösung ist ein automatisierter Geschäftsprozess für Ihre Organisation. Mitarbeiter können ganz einfach die benutzerdefinierte Kachelansicht in Teams verwenden, um den Genehmigungsworkflow Ihrer Dokumente zu initiieren und zu überwachen. 
 
      ![Registerkarte "Verträge".](../media/content-understanding/tile-view.png)
 
 ### <a name="licensing-requirements"></a>Lizenzierungsanforderungen
 
-Diese Lösung basiert auf den folgenden Funktionen, die alle als Teil einer Microsoft 365 Enterprise (E1, E3, E5, F3) oder Business-Lizenz (Basic, Standard oder Premium) verfügbar sind:
+Diese Lösung basiert auf den folgenden Funktionen, die alle als Teil einer Microsoft 365 Enterprise -Lizenz (E1, E3, E5, F3) oder Business (Basic, Standard oder Premium) verfügbar sind:
 
 -   Microsoft SharePoint Syntex
 -   Microsoft Teams
@@ -87,5 +87,5 @@ Diese Lösung basiert auf den folgenden Funktionen, die alle als Teil einer Micr
 In den nächsten Abschnitten wird ausführlich erläutert, wie Sie Ihre Vertragsverwaltungslösung konfigurieren. Es ist in drei Schritte unterteilt:
 
 - [Schritt 1. Verwenden von SharePoint Syntex zum Identifizieren von Vertragsdateien und Extrahieren von Daten](solution-manage-contracts-step1.md)
-- [Schritt 2. Verwenden Microsoft Teams zum Erstellen Ihres Vertragsverwaltungskanals](solution-manage-contracts-step2.md)
-- [Schritt 3. Verwenden sie Power Automate, um Ihren Flow zur Verarbeitung Ihrer Verträge zu erstellen.](solution-manage-contracts-step3.md)
+- [Schritt 2. Verwenden von Microsoft Teams zum Erstellen Ihres Vertragsverwaltungskanals](solution-manage-contracts-step2.md)
+- [Schritt 3. Verwenden sie Power Automate, um Ihren Flow zur Verarbeitung Ihrer Verträge zu erstellen](solution-manage-contracts-step3.md)
