@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: ac7a9ef932f2640bbc5325f0154c0ceb48ae3018
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 73d9803736df546f2381b7a84c9089d2460c4c44
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772293"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52843082"
 ---
 # <a name="get-discovered-vulnerabilities"></a>Erhalten von entdeckten Sicherheitsrisiken
 
@@ -40,7 +40,7 @@ ms.locfileid: "52772293"
 ## <a name="api-description"></a>API-Beschreibung
 Ruft eine Sammlung von ermittelten Sicherheitsrisiken im Zusammenhang mit einer bestimmten Geräte-ID ab.
 
-## <a name="limitations"></a>Begrenzungen
+## <a name="limitations"></a>Einschränkungen
 1. Die Rateneinschränkungen für diese API sind 50 Anrufe pro Minute und 1500 Anrufe pro Stunde.
 
 ## <a name="permissions"></a>Berechtigungen
@@ -110,5 +110,5 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Risikobasiertes Bedrohungs- & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Sicherheitsrisiken in Ihrer Organisation](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-weaknesses)
+- [Risikobasiertes Bedrohungs- & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Sicherheitsrisiken in Ihrer Organisation](/microsoft-365/security/defender-endpoint/tvm-weaknesses)

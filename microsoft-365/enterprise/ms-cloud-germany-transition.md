@@ -21,7 +21,7 @@ ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Die Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verstehen.'
 ms.openlocfilehash: 4162e51164120cecaa431ad6883d3ee112ad4880
 ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/07/2021
 ms.locfileid: "52796006"
@@ -31,7 +31,7 @@ ms.locfileid: "52796006"
 > [!NOTE]
 > Dieser Artikel gilt nur für anspruchsberechtigte Kunden von Microsoft Cloud Deutschland.
 
-Im August 2018 hat Microsoft angekündigt, dass wir die gesamte Microsoft-Cloud – Azure, Office 365, Dynamics 365 und Power Platform – aus neuen Cloudregionen in Deutschland bereitstellen möchten, um die digitale Transformation unserer Kunden besser zu ermöglichen. Im August 2019 haben wir angekündigt, dass wir die neuen Cloud-Regionen in Deutschland für erste Kunden eröffnen. Wir haben seitdem die Verfügbarkeit von Azure, Office 365, Dynamics 365 und Power Platform angekündigt.
+Im August 2018 hat Microsoft die Absicht angekündigt, die gesamte Microsoft-Cloud – Azure, Office 365, Dynamics 365 und Power Platform – aus neuen Cloud-Regionen in Deutschland bereitzustellen, um die digitale Transformation seiner Kunden noch besser zu unterstützen. Im August 2019 haben wir angekündigt, dass wir die neuen Cloud-Regionen in Deutschland für erste Kunden eröffnen. Wir haben seitdem die Verfügbarkeit von Azure, Office 365, Dynamics 365 und Power Platform angekündigt.
 
 Die neuen Regionen sind für die Anpassung an die sich ständig verändernden Anforderungen deutscher Kunden ausgelegt und bieten größere Flexibilität, die neuesten intelligenten Cloud-Dienste und die umfassende Verbindung zu unserem Microsoft 365 Cloud-Netzwerk sowie Kundendatenhaltung in Deutschland.
 
@@ -172,7 +172,7 @@ Derzeit sind 39 Dienste als Bestandteil von Office 365-Diensten in den neuen deu
 15. OneDrive for Business
 16. Microsoft Stream
 17. Skype for Business (während der Migration erfolgt ein Wechsel zu Microsoft Teams)
-18. Cloud PBX
+18. Cloud PBX
 19. PSTN-Konferenzen
 20. PSTN-Anrufe
 21. Microsoft Teams
@@ -201,7 +201,7 @@ Derzeit sind 39 Dienste als Bestandteil von Office 365-Diensten in den neuen deu
 
 Wenn Sie nur Azure-Kunde sind, können Sie bereits mit der [Migration](/azure/germany/germany-migration-main) Ihrer Azure-Ressourcen beginnen. 
 
-Wenn Sie Azure mit Office 365, Dynamics 365 oder Power BI haben, müssen Sie zuerst den Migrationsprozess für Office 365 Dienste befolgen, um die erfolgreiche Migration von Azure AD sicherzustellen, bevor Sie mit der selbstgesteuerten Azure-Migration beginnen können. Sie müssen die Azure-Migration abschließen, bevor Sie die Mandantenmigration abschließen, um Ihre Azure-Workloads mit Azure AD und Office 365 Organisation zu verwalten. Weitere Details finden Sie in [den Migrationsphasenaktionen und -auswirkungen für die Migration von Microsoft Cloud Deutschland.](ms-cloud-germany-transition-phases.md)
+Wenn Sie durch Office 365, Dynamics 365 oder Power BI über Azure verfügen, müssen Sie zuerst den Migrationsprozess für Office 365-Dienste befolgen, um die erfolgreiche Migration von Azure AD sicherzustellen, bevor Sie mit der selbstgesteuerten Azure-Migration beginnen können. Sie müssen die Azure-Migration abschließen, bevor Sie Ihre Mandantenmigration abschließen, um Ihre Azure-Workloads mit Ihrer Azure AD- und Office 365-Organisation zu verwalten. Zusätzliche Details finden Sie unter [Migrationsphasenaktionen und -Auswirkungen auf die Migration von Microsoft Cloud Deutschland](ms-cloud-germany-transition-phases.md).
 
 **Office 365**
 
@@ -303,7 +303,7 @@ Die Migration wirkt sich minimal auf Endbenutzer/Kunden aus.
 
 ### <a name="which-customers-are-affected-by-the-azure-active-directory-migration"></a>Welche Kunden sind von der Azure Active Directory-Migration betroffen? 
 
-Alle Kunden von Office 365 sind von Azure Active Directory abhängig, um wichtige Dienstkomponenten zu authentifizieren und zu speichern, die für den Betrieb von von Microsoft gehosteten Diensten benötigt werden. 
+Alle Kunden von Office 365 sind auf Azure Active Directory angewiesen, um kritische Dienstkomponenten zu authentifizieren und zu speichern, die für den Betrieb von durch Microsoft gehosteten Diensten benötigt werden. 
 
 
 ### <a name="what-are-the-impacts-of-the-azure-active-directory-migration"></a>Welche Auswirkungen hat die Azure Active Directory-Migration?

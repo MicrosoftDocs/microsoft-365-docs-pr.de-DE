@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Aktivieren Sie eine Einstellung, die gemeinsame Erstellung und AutoSave in Desktop-Apps für beschriftete und verschlüsselte Dokumente in SharePoint und OneDrive aktiviert.
-ms.openlocfilehash: 6506f72a7ff663c1fc1c32ca22a562f1f8ad3e0a
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 926f8aa188aeb1dbc7bb7b042d0a402acc49f7a3
+ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52332726"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796054"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Aktivieren Sie die gemeinsame Erstellung für Dateien, die mit Vertraulichkeitsbezeichnungen verschlüsselt sind
 
@@ -48,7 +48,7 @@ Um die Releaseankündigung zu lesen, wechseln Sie zum Blogbeitrag [Ankündigung 
 
 Bevor Sie die Einstellung aktivieren, um die gemeinsame Erstellung für Office-Desktop-Apps zu unterstützen, müssen Sie wissen, dass diese Aktion Änderungen an den Bezeichnungsmetadaten vornimmt, die in Office-Dateien gespeichert und aus diesen gelesen werden.
 
-Die Bezeichnungsmetadaten enthalten Informationen, die Ihren Mandanten und das angewendete Vertraulichkeitsbezeichnung identifizieren. Diese Einstellung ändert das Metadatenformat und den Speicherort für unverschlüsselte Dateien für Word, Excel und PowerPoint. Es gibt keine Änderungen an den Bezeichnungsmetadaten für verschlüsselte Dateien oder E-Mails.
+Die Bezeichnungsmetadaten enthalten Informationen, die Ihren Mandanten und das angewendete Vertraulichkeitsbezeichnung identifizieren. Diese Einstellung ändert das Metadatenformat und den Speicherort für Word-, Excel- und PowerPoint-Dateien. Sie müssen keine Maßnahmen für verschlüsselte Dateien oder E-Mails treffen; die Metadatenänderung ist für verschlüsselte Dateien abwärtskompatibel und für E-Mails gibt es keine Änderungen. Sie müssen jedoch die Metadatenänderungen für verschlüsselte Dateien, die automatisch aktualisiert werden können, die jedoch nicht abwärtskompatibel sind, in Betracht ziehen.
 
 Diese Änderung betrifft sowohl neu bezeichnete als auch bereits bezeichnete Dateien. Bei Verwendung von Apps und Diensten, welche die zusammenarbeitende Erstellung unterstützen:
 - Bei neu beschrifteten Dateien werden nur das neue Format und der neue Speicherort für die Bezeichnungsmetadaten verwendet.
