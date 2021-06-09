@@ -20,12 +20,12 @@ ms.custom:
 description: Benutzer können erfahren, wie sie in Exchange Online Protection (EOP) isolierte (unter Quarantäne gestellte) Nachrichten anzeigen und verwalten, die sie hätten empfangen sollen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 68656d21b8c10157ebae5d030e56293ba1ce07f7
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 4913d0c6fc34d912474bcceac8b1785c4a7e07b3
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52539119"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52821295"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Suchen und Freigeben von isolierten Nachrichten als Benutzer in EOP
 
@@ -38,13 +38,26 @@ ms.locfileid: "52539119"
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder in eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer, enthält die Quarantäne potenziell gefährliche oder unerwünschte Nachrichten. Weitere Informationen finden Sie unter [Quarantäne in EOP](quarantine-email-messages.md).
 
-Als Benutzer können Sie unter Quarantäne gestellte Nachrichten anzeigen, freigeben und löschen, wenn Sie ein Empfänger sind und die Nachricht als Spam oder Massen-E-Mail unter Quarantäne gestellt wurde. Seit April 2020 können Sie unter Quarantäne gestellte Phishing-Nachrichten (nicht mit hoher Phishingwahrscheinlichkeit), für die Sie als Empfänger gelten, anzeigen oder löschen. Sie können die in Quarantäne befindlichen Nachrichten im Security & Compliance Center oder (wenn ein Administrator dies eingerichtet hat) in [Spambenachrichtigungen für Endbenutzer](use-spam-notifications-to-release-and-report-quarantined-messages.md) anzeigen und verwalten.
+Als Empfänger einer Quarantänenachricht wird in der folgenden Tabelle beschrieben, was Sie als regulärer Benutzer mit der Nachricht tun können:
+
+<br>
+
+****
+
+|Quarantänegrund|Anzeigen|Freigabe|Löschen|
+|---|:---:|:---:|:---:|
+|Masse|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
+|Spam|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
+|Phishing (keine hohe Phishingwahrscheinlichkeit)|![Häkchen](../../media/checkmark.png)||![Häkchen](../../media/checkmark.png)|
+|
+
+Sie können die in Quarantäne befindlichen Nachrichten im Microsoft 365 Security Center oder (wenn ein Administrator dies eingerichtet hat) in [Spambenachrichtigungen für Endbenutzer](use-spam-notifications-to-release-and-report-quarantined-messages.md) anzeigen und verwalten.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Zum Öffnen des Security & Compliance Centers wechseln Sie zu <https://protection.office.com>. Um die Quarantäne-Seite direkt zu öffnen, wechseln Sie zu <https://protection.office.com/quarantine>.
+- Um das Security Center zu öffnen, wechseln Sie zu <https://security.microsoft.com>. Um die Quarantäne-Seite direkt zu öffnen, wechseln Sie zu <https://security.microsoft.com/quarantine>.
 
-- Administratoren können konfigurieren, wie lange Nachrichten isoliert werden, bevor sie endgültig gelöscht werden (Anti-Spam-Richtlinien). Nachrichten, die aus der Quarantäne abgelaufen sind, können nicht wiederhergestellt werden. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
+- Administratoren können konfigurieren, wie lange Nachrichten isoliert werden, bevor sie endgültig in Anti-Spam-Richtlinien gelöscht werden. Nachrichten, die aus der Quarantäne abgelaufen sind, können nicht wiederhergestellt werden. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
 
 - Administratoren können auch [Spam-Benachrichtigungen für Endbenutzer](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications) in Anti-Spam-Richtlinien aktivieren. Benutzende können in Quarantäne befindliche Spamnachrichten direkt über diese Benachrichtigungen freigeben. Benutzende können die in Quarantäne befindlichen Phishing-Nachrichten (keine Phishing-Nachrichten mit hohem Sicherheitsrisiko) direkt aus diesen Benachrichtigungen überprüfen. Weitere Informationen finden Sie unter [Spam-Benachrichtigungen für Endbenutzer in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
@@ -54,7 +67,7 @@ Als Benutzer können Sie unter Quarantäne gestellte Nachrichten anzeigen, freig
 
 ## <a name="view-your-quarantined-messages"></a>Anzeigen Ihrer isolierten Nachrichten
 
-1. Wechseln Sie im Security and Compliance Center zu **Bedrohungsmanagement** \> **Überprüfung** \> **Quarantäne**.
+1. Wechseln Sie im Security Center zu **E-Mail und Zusammenarbeit** \> **Überprüfung** \> **Quarantäne**.
 
 2. Sie können die Ergebnisse sortieren, indem Sie auf eine verfügbare Spaltenüberschrift klicken. Klicken Sie auf **Spalten ändern**, um höchstens sieben Spalten anzuzeigen. Die Standardwerte sind mit einem Sternchen (<sup>\*</sup>) gekennzeichnet:
 
@@ -89,21 +102,22 @@ Als Benutzer können Sie unter Quarantäne gestellte Nachrichten anzeigen, freig
      - **Phishing**
 
    - **Richtlinientyp**: Filtern von Nachrichten nach Richtlinientyp:
+     - **Anti-Schadsoftware-Richtlinie**
+     - **Richtlinie für sichere Anlagen** (Defender für Office 365)
      - **Antiphishing-Richtlinie**
      - **Richtlinie für gehostete Inhaltsfilter** (Antispamrichtlinie)
+     - **Transportregel**
+
+     <sup>\*</sup>
 
    Klicken Sie auf **Löschen**, um den Filter zu löschen. Um das Filter-Flyout auszublenden, klicken Sie erneut auf **Filter**.
 
 4. Verwenden Sie **Ergebnisse sortieren nach** (standardmäßig die Schaltfläche **Nachrichten-ID**) und einen entsprechenden Wert, um bestimmte Nachrichten zu finden. Platzhalter werden nicht unterstützt. Sie können nach den folgenden Werten suchen:
 
    - **Nachrichten-ID**: Die globale eindeutige ID der Nachricht. Wenn Sie eine Nachricht in der Liste auswählen, wird der Wert **Nachrichten-ID** im Flyout-Fenster **Details** angezeigt, der angezeigt wird. Administratoren können [Nachrichtenverfolgung](message-trace-scc.md) verwenden, um Nachrichten und die entsprechenden Nachrichten-ID-Werte zu suchen.
-
    - **E-Mail-Adresse des Absenders**: Die E-Mail-Adresse eines einzelnen Absenders.
-
    - **Richtlinienname**: Verwenden Sie den vollständigen Namen der Nachricht. Bei der Suche wird nicht zwischen Groß- und Kleinschreibung unterschieden.
-
    - **E-Mail-Adresse des Empfängers**: Die E-Mail-Adresse eines einzelnen Empfängers.
-
    - **Betreff**: Verwenden Sie den gesamten Betreff der Nachricht. Bei der Suche wird nicht zwischen Groß- und Kleinschreibung unterschieden.
 
    Nachdem Sie die Suchkriterien eingegeben haben, klicken Sie auf die ![Schaltfläche Aktualisieren](../../media/scc-quarantine-refresh.png) **Aktualisieren**, um die Ergebnisse zu filtern.
@@ -123,21 +137,13 @@ Nachdem Sie eine bestimmte isolierte Nachricht gefunden haben, wählen Sie die N
 Wenn Sie eine E-Mail-Nachricht in der Liste auswählen, werden die folgenden Nachrichtendetails im Flyout-Fenster **Details** angezeigt:
 
 - **Nachrichten-ID**: Die globale eindeutige ID für die Nachricht.
-
 - **Absenderadresse**
-
 - **Empfangen**: Das Datum/die Uhrzeit des Nachrichtenempfangs.
-
 - **Betreff**
-
 - **Quarantänegrund**: Zeigt an, ob eine Nachricht als **Spam**, **Massensendung** oder **Phishing** erkannt wurde.
-
 - **Empfänger**: Wenn die Nachricht mehrere Empfänger enthält, müssen Sie auf **Vorschau der Nachricht anzeigen** oder **Nachrichten** Kopfzeile anzeigen klicken, um die gesamte Liste der Empfänger anzuzeigen.
-
 - **Läuft ab**. Das Datum/die Uhrzeit, zu der die Nachricht automatisch und dauerhaft aus der Quarantäne gelöscht wird.
-
 - **Freigegeben für**: Alle E-Mail-Adressen (sofern vorhanden), für die die Nachricht freigegeben wurde.
-
 - **Noch nicht freigegeben für**: Alle E-Mail-Adressen (sofern vorhanden), für die die Nachricht noch nicht freigegeben wurde.
 
 ### <a name="take-action-on-quarantined-email"></a>Maßnahmen für isolierte E-Mails ergreifen
@@ -169,7 +175,6 @@ Wenn Sie die Nachricht nicht freigeben oder entfernen, wird sie nach Ablauf der 
 Wenn Sie mehrere isolierte Nachrichten in der Liste auswählen (bis zu 100), erscheint das Flyout-Fenster **Massenaktionen**, in dem Sie die folgenden Aktionen durchführen können:
 
 - **Nachrichten freigeben**: Die Optionen sind die gleichen wie bei der Freigabe einer einzelnen Nachricht, außer dass Sie nicht **Nachrichten an bestimmte Empfänger freigeben** auswählen können; Sie können nur **Nachricht an alle Empfänger freigeben** oder **Nachrichten an andere Personen freigeben** auswählen.
-
 - **Nachrichten löschen**: Nachdem Sie in der angezeigten Warnung auf **Ja** klicken, wird die Nachricht sofort gelöscht, ohne an die ursprünglichen Empfänger gesendet zu werden.
 
 Klicken Sie nach Abschluss des Vorgangs auf **Schließen**.
