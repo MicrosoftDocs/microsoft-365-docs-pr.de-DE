@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 97cad51938c4ff3498234dbf2e9d69fd48a52367
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 63400295061cd7adc58a4ddebf73f4c82b0cc969
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771873"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845234"
 ---
 # <a name="get-missing-kbs-by-device-id"></a>Abrufen fehlender KBs nach Geräte-ID
 
@@ -95,5 +95,5 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
-- [Risikobasiertes Bedrohungs- & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Softwareinventarisierung von Sicherheitsrisiken &](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-software-inventory)
+- [Risikobasiertes Bedrohungs- & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Softwareinventarisierung von Bedrohungen & Sicherheitsrisiko](/microsoft-365/security/defender-endpoint/tvm-software-inventory)

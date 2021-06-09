@@ -1,7 +1,7 @@
 ---
 title: Feedback-Loop-Blockierung
-description: Das Blockieren von Feedbackschleifen, auch als schneller Schutz bezeichnet, ist Teil der Funktionen zum Blockieren und Eindähen von Verhaltensweisen in Microsoft Defender for Endpoint
-keywords: Verhaltensblockierung, schneller Schutz, Feedbackblockierung, Microsoft Defender for Endpoint
+description: Das Blockieren von Feedbackschleifen, auch als schneller Schutz bezeichnet, ist Teil der Funktionen zum Blockieren und Eindämmen von Verhaltensweisen in Microsoft Defender für Endpunkt.
+keywords: Verhaltensblockierung, schneller Schutz, Feedbackblockierung, Microsoft Defender für Endpunkt
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -17,12 +17,12 @@ ms.custom:
 - edr
 ms.collection: ''
 ms.technology: mde
-ms.openlocfilehash: b1ec879a2f05a0354b1a49cf94fccacb4a382193
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7319ff5a89a20529eed7d36aa0d0b1522013abd4
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068575"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842458"
 ---
 # <a name="feedback-loop-blocking"></a>Feedback-Loop-Blockierung
 
@@ -34,33 +34,33 @@ ms.locfileid: "51068575"
 
 ## <a name="overview"></a>Übersicht
 
-Das Blockieren von Feedbackschleifen, auch als schneller Schutz bezeichnet, ist eine Komponente von Funktionen zum Blockieren und Eindähen von Verhaltensweisen [in](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) Microsoft Defender [for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/). Durch das Blockieren von Feedbackschleifen sind Geräte in Ihrer Organisation besser vor Angriffen geschützt. 
+Das Blockieren von Feedbackschleifen, auch als schneller Schutz bezeichnet, ist eine Komponente der Funktionen zum [Blockieren und Eindämmen](/microsoft-365/security/defender-endpoint/behavioral-blocking-containment) von Verhaltensweisen in [Microsoft Defender für Endpunkt.](/windows/security/threat-protection/) Dank der Blockierung der Feedbackschleife sind Geräte in Ihrer Organisation besser vor Angriffen geschützt. 
 
-## <a name="how-feedback-loop-blocking-works"></a>Funktionsweise der Feedbackschleifensperrung
+## <a name="how-feedback-loop-blocking-works"></a>Funktionsweise der Blockierung von Feedbackschleifen
 
-Wenn ein verdächtiges Verhalten oder eine Datei erkannt wird, z. B. durch [Microsoft Defender Antivirus,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)werden Informationen zu diesem Artefakt an mehrere Klassifizierungen gesendet. Das Schnellschutzschleifenmodul prüft und korreliert die Informationen mit anderen Signalen, um eine Entscheidung darüber zu treffen, ob eine Datei blockiert werden soll. Das Überprüfen und Klassifizieren von Artefakten erfolgt schnell. Es führt zu einer schnellen Blockierung bestätigter Schadsoftware und treibt den Schutz im gesamten Ökosystem voran. 
+Wenn ein verdächtiges Verhalten oder eine Datei erkannt wird, z. B. durch [Microsoft Defender Antivirus,](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10)werden Informationen zu diesem Artefakt an mehrere Klassifizierer gesendet. Das Modul für schnelle Schutzschleifen prüft und korreliert die Informationen mit anderen Signalen, um zu einer Entscheidung zu gelangen, ob eine Datei blockiert werden soll. Das Überprüfen und Klassifizieren von Artefakten erfolgt schnell. Dies führt zu einer schnellen Blockierung bestätigter Schadsoftware und treibt den Schutz im gesamten Ökosystem voran. 
 
-Mit schnellem Schutz kann ein Angriff auf einem Gerät, auf anderen Geräten in der Organisation und auf Geräten in anderen Organisationen beendet werden, während ein Angriff versucht, seine Fußstapfen zu erweitern.
+Bei schnellem Schutz kann ein Angriff auf einem Gerät, auf anderen Geräten in der Organisation und auf Geräten in anderen Organisationen beendet werden, da ein Angriff versucht, seine Reichweite zu erweitern.
 
 
-## <a name="configuring-feedback-loop-blocking"></a>Konfigurieren des Blockierens von Feedbackschleifen
+## <a name="configuring-feedback-loop-blocking"></a>Konfigurieren der Blockierung von Feedbackschleifen
 
-Wenn Ihre Organisation Defender for Endpoint verwendet, ist das Blockieren von Feedbackschleifen standardmäßig aktiviert. Der schnelle Schutz erfolgt jedoch durch eine Kombination aus Defender for Endpoint-Funktionen, Funktionen zum Schutz von maschinellem Lernen und Signalfreigabe über Microsoft-Sicherheitsdienste hinweg. Stellen Sie sicher, dass die folgenden Features und Funktionen von Defender for Endpoint aktiviert und konfiguriert sind:
+Wenn Ihre Organisation Defender für Endpunkt verwendet, ist das Blockieren von Feedbackschleifen standardmäßig aktiviert. Der schnelle Schutz erfolgt jedoch durch eine Kombination aus Defender für Endpunkt-Funktionen, Machine Learning-Schutzfeatures und Signalfreigabe über Microsoft-Sicherheitsdienste hinweg. Stellen Sie sicher, dass die folgenden Features und Funktionen von Defender für Endpunkt aktiviert und konfiguriert sind:
 
-- [Microsoft Defender for Endpoint-Baselines](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-machines-security-baseline)
+- [Microsoft Defender für Endpunkt-Basispläne](/microsoft-365/security/defender-endpoint/configure-machines-security-baseline)
 
-- [In Microsoft Defender for Endpoint integrierte Geräte](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-configure)
+- [Geräte, die in Microsoft Defender für Endpunkt integriert sind](/microsoft-365/security/defender-endpoint/onboard-configure)
 
-- [EDR im Blockmodus](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode)
+- [EDR im Blockmodus](/microsoft-365/security/defender-endpoint/edr-in-block-mode)
 
-- [Verringerung der Angriffsfläche](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction):
+- [Verringerung der Angriffsfläche](/microsoft-365/security/defender-endpoint/attack-surface-reduction):
 
-- [Schutz der nächsten Generation](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (Antivirus)
+- [Schutz](/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) der nächsten Generation (Antivirus)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
 - [Verhaltensbasiertes Blockieren und Eindämmen](behavioral-blocking-containment.md)
 
-- [(Blog) Verhaltensblockierung und -eindämmung: Transformieren von Optik in Schutz](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection/)
+- [(Blog) Blockieren und Eindämmen von Verhaltensweisen: Umwandeln von Optik in Schutz](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection/)
 
-- [Hilfreiche Microsoft Defender for Endpoint-Ressourcen](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/helpful-resources)
+- [Hilfreiche Microsoft Defender für Endpunkt-Ressourcen](/microsoft-365/security/defender-endpoint/helpful-resources)

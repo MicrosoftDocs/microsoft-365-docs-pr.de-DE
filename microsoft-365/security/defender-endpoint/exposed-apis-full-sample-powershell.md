@@ -1,8 +1,8 @@
 ---
-title: Leitfaden zur erweiterten Suche mit der PowerShell-API
+title: Leitfaden zur erweiterten Suche mit PowerShell-API
 ms.reviewer: ''
-description: Verwenden Sie diese Codebeispiele, und fragen Sie mehrere Microsoft Defender for Endpoint-APIs ab.
-keywords: apis, supported apis, advanced hunting, query
+description: Verwenden Sie diese Codebeispiele, um mehrere Microsoft Defender für Endpunkt-APIs abfragt.
+keywords: APIs, unterstützte APIs, erweiterte Suche, Abfrage
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,53 +17,53 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/24/2018
 ms.technology: mde
-ms.openlocfilehash: 9913d1b0b0d5d0462fdee0b9c576a590bd3ddbc9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ef6d05bb27018bb72f731da2e8b7837c9d9f0127
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198323"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842062"
 ---
 # <a name="microsoft-defender-for-endpoint-apis-using-powershell"></a>Microsoft Defender für Endpunkt-APIs mit PowerShell
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-**Gilt für:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
+**Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
 [!include[Improve request performance](../../includes/improve-request-performance.md)]
 
->Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+>Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Vollständiges Szenario mit mehreren APIs von Microsoft Defender for Endpoint.
+Vollständiges Szenario mit mehreren APIs von Microsoft Defender für Endpunkt.
 
-In diesem Abschnitt teilen wir PowerShell-Beispiele für 
+In diesem Abschnitt geben wir PowerShell-Beispiele für 
 - Abrufen eines Tokens 
-- Verwenden des Tokens zum Abrufen der neuesten Warnungen in Microsoft Defender for Endpoint
-- Wenn die Warnung für jede Warnung mittlere oder hohe Priorität hat und noch ausgeführt wird, überprüfen Sie, wie oft das Gerät mit verdächtiger URL verbunden ist.
+- Verwenden des Tokens zum Abrufen der neuesten Warnungen in Microsoft Defender für Endpunkt
+- Wenn die Warnung für jede Warnung mittlere oder hohe Priorität hat und noch in Bearbeitung ist, überprüfen Sie, wie oft das Gerät mit einer verdächtigen URL verbunden ist.
 
 **Voraussetzung:** Sie müssen zuerst [eine App erstellen.](apis-intro.md)
 
 ## <a name="preparation-instructions"></a>Vorbereitungsanweisungen
 
 - Öffnen Sie ein PowerShell-Fenster.
-- Wenn Die Ausführung der PowerShell-Befehle in Ihrer Richtlinie nicht zulässig ist, können Sie den folgenden Befehl ausführen:
+- Wenn Ihre Richtlinie das Ausführen der PowerShell-Befehle nicht zulässt, können Sie den folgenden Befehl ausführen:
   ```
   Set-ExecutionPolicy -ExecutionPolicy Bypass
   ```
 
-Weitere Informationen finden Sie in der [PowerShell-Dokumentation.](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+Weitere Informationen finden Sie in der [PowerShell-Dokumentation.](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
-## <a name="get-token"></a>Token erhalten
+## <a name="get-token"></a>Token abrufen
 
 Führen Sie die folgenden Schritte aus:
 
-- $tenantId: ID des Mandanten, für den Sie die Abfrage ausführen möchten (d. h., die Abfrage wird auf den Daten dieses Mandanten ausgeführt)
-- $appId: ID Ihrer AAD-App (die App muss über die Berechtigung "Erweiterte Abfragen ausführen" für Defender for Endpoint verfügen)
-- $appSecret: Geheimnis Ihrer Azure AD-App
+- $tenantId: ID des Mandanten, für den Sie die Abfrage ausführen möchten (d. h. die Abfrage wird auf den Daten dieses Mandanten ausgeführt)
+- $appId: ID Ihrer AAD-App (die App muss über die Berechtigung "Erweiterte Abfragen ausführen" für Defender für Endpunkt verfügen)
+- $appSecret: Geheimer Schlüssel Ihrer Azure AD-App
 
 - $suspiciousUrl: Die URL
 

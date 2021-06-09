@@ -1,8 +1,8 @@
 ---
-title: Bereitstellen von Microsoft Defender for Endpoint unter Linux mit Ansible
+title: Bereitstellen von Microsoft Defender für Endpunkt unter Linux mit Ansible
 ms.reviewer: ''
-description: Beschreibt, wie Microsoft Defender for Endpoint unter Linux mithilfe von Ansible bereitgestellt wird.
-keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installation, deploy, uninstallation, puppet, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+description: Beschreibt, wie Microsoft Defender für Endpunkt unter Linux mithilfe von Ansible bereitgestellt wird.
+keywords: Microsoft, Defender, Microsoft Defender für Endpunkt, Linux, Installation, bereitstellen, Deinstallation, entinstallation, ansible, linux, redhat, ubuntu, git, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 36095f14ad3ed71c6a8d4707522c08c07ea738c4
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 13bcbc74fcb9c540c45a6eec7e7e506b6943986a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572729"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841792"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Bereitstellen von Microsoft Defender for Endpoint unter Linux mit Ansible
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Bereitstellen von Microsoft Defender für Endpunkt unter Linux mit Ansible
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,28 +34,28 @@ ms.locfileid: "52572729"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-In diesem Artikel wird beschrieben, wie Sie Defender for Endpoint unter Linux mithilfe von Ansible bereitstellen. Eine erfolgreiche Bereitstellung erfordert den Abschluss aller folgenden Aufgaben:
+In diesem Artikel wird beschrieben, wie Sie Defender für Endpunkt unter Linux mithilfe von Ansible bereitstellen. Eine erfolgreiche Bereitstellung erfordert den Abschluss aller folgenden Aufgaben:
 
 - [Herunterladen des Onboardingpakets](#download-the-onboarding-package)
-- [Erstellen von ansiblen YAML-Dateien](#create-ansible-yaml-files)
+- [Erstellen von Ansible YAML-Dateien](#create-ansible-yaml-files)
 - [Bereitstellung](#deployment)
 - [References](#references)
 
 ## <a name="prerequisites-and-system-requirements"></a>Voraussetzungen und Systemanforderungen
 
-Bevor Sie beginnen, finden Sie auf der Hauptseite [von Defender for Endpoint unter Linux](microsoft-defender-endpoint-linux.md) eine Beschreibung der Voraussetzungen und Systemanforderungen für die aktuelle Softwareversion.
+Bevor Sie beginnen, finden Sie [auf der Hauptseite von Defender für Endpunkt unter Linux](microsoft-defender-endpoint-linux.md) eine Beschreibung der Voraussetzungen und Systemanforderungen für die aktuelle Softwareversion.
 
-Darüber hinaus müssen Sie für die Ansible-Bereitstellung mit ansiblen Verwaltungsaufgaben vertraut sein, ansible konfigurieren und wissen, wie Sie Playbooks und Aufgaben bereitstellen. Ansible hat viele Möglichkeiten, dieselbe Aufgabe auszuführen. Diese Anweisungen setzen voraus, dass unterstützte Ansible-Module verfügbar sind, z. B. *apt* und *unarchive,* um das Paket bereitstellen zu können. Ihre Organisation kann einen anderen Workflow verwenden. Ausführliche Informationen finden Sie in [der Ansible-Dokumentation.](https://docs.ansible.com/)
+Darüber hinaus müssen Sie für die Ansible-Bereitstellung mit Ansible-Verwaltungsaufgaben vertraut sein, Ansible konfiguriert haben und wissen, wie Playbooks und Aufgaben bereitgestellt werden. Ansible hat viele Möglichkeiten, dieselbe Aufgabe auszuführen. Bei diesen Anweisungen wird davon ausgegangen, dass unterstützte Ansible-Module verfügbar sind, z. *B. apt* und *die Archivierung* aufheben, um die Bereitstellung des Pakets zu unterstützen. Ihre Organisation kann einen anderen Workflow verwenden. Weitere Informationen finden Sie in der [Ansible-Dokumentation.](https://docs.ansible.com/)
 
-- Ansible muss auf mindestens einem Computer installiert werden (Ansible ruft dies als Kontrollknoten auf).
-- SSH muss für ein Administratorkonto zwischen dem Steuerelementknoten und allen verwalteten Knoten konfiguriert sein (Geräte, auf der Defender for Endpoint installiert ist), und es wird empfohlen, mit der Authentifizierung mit öffentlichen Schlüsseln konfiguriert zu werden.
+- Ansible muss auf mindestens einem Computer installiert sein (Ansible ruft dies als Steuerknoten auf).
+- SSH muss für ein Administratorkonto zwischen dem Steuerknoten und allen verwalteten Knoten konfiguriert werden (Geräte, auf denen Defender für Endpunkt installiert ist), und es wird empfohlen, mit der Authentifizierung mit öffentlichem Schlüssel konfiguriert zu werden.
 - Die folgende Software muss auf allen verwalteten Knoten installiert sein:
-  - locken
+  - Curl
   - python-apt
 
-- Alle verwalteten Knoten müssen in der oder den relevanten Dateien im folgenden `/etc/ansible/hosts` Format aufgeführt werden:
+- Alle verwalteten Knoten müssen in der oder der relevanten Datei im folgenden Format aufgeführt `/etc/ansible/hosts` werden:
 
     ```bash
     [servers]
@@ -71,15 +71,15 @@ Darüber hinaus müssen Sie für die Ansible-Bereitstellung mit ansiblen Verwalt
 
 ## <a name="download-the-onboarding-package"></a>Herunterladen des Onboardingpakets
 
-Laden Sie das Onboardingpaket von Microsoft Defender Security Center:
+Laden Sie das Onboardingpaket von Microsoft Defender Security Center herunter:
 
-1. Wechseln Microsoft Defender Security Center zu Einstellungen > **Device Management > Onboarding**.
+1. Wechseln Sie in Microsoft Defender Security Center zu **Einstellungen > Geräteverwaltung > Onboarding.**
 2. Wählen Sie im ersten Dropdownmenü **Linux Server** als Betriebssystem aus. Wählen Sie im zweiten Dropdownmenü **Ihr bevorzugtes Linux-Konfigurationsverwaltungstool** als Bereitstellungsmethode aus.
-3. Wählen **Sie Onboardingpaket herunterladen aus.** Speichern Sie die Datei WindowsDefenderATPOnboardingPackage.zip.
+3. Wählen Sie **"Onboardingpaket herunterladen"** aus. Speichern Sie die Datei als WindowsDefenderATPOnboardingPackage.zip.
 
-    ![Microsoft Defender Security Center Screenshot](images/atp-portal-onboarding-linux-2.png)
+    ![Screenshot Microsoft Defender Security Center](images/atp-portal-onboarding-linux-2.png)
 
-4. Überprüfen Sie an einer Eingabeaufforderung, ob Sie über die Datei verfügen. Extrahieren sie den Inhalt des Archivs:
+4. Überprüfen Sie an einer Eingabeaufforderung, ob Die Datei vorhanden ist. Extrahieren Sie den Inhalt des Archivs:
 
     ```bash
     ls -l
@@ -96,9 +96,9 @@ Laden Sie das Onboardingpaket von Microsoft Defender Security Center:
     inflating: mdatp_onboard.json
     ```
 
-## <a name="create-ansible-yaml-files"></a>Erstellen von ansiblen YAML-Dateien
+## <a name="create-ansible-yaml-files"></a>Erstellen von Ansible YAML-Dateien
 
-Erstellen Sie eine Unteraufgabe oder Rollendateien, die zu einem Playbook oder einer Aufgabe beitragen.
+Erstellen Sie eine Teilaufgabe oder Rollendateien, die zu einem Playbook oder einer Aufgabe beitragen.
 
 - Erstellen Sie die `onboarding_setup.yml` Onboardingaufgabe:
 
@@ -127,29 +127,29 @@ Erstellen Sie eine Unteraufgabe oder Rollendateien, die zu einem Playbook oder e
       when: not mdatp_onboard.stat.exists
     ```
 
-- Fügen Sie das Defender for Endpoint-Repository und den Schlüssel `add_apt_repo.yml` hinzu:
+- Fügen Sie das Repository und den Schlüssel für Defender für Endpunkt `add_apt_repo.yml` hinzu:
 
-    Defender for Endpoint unter Linux kann über einen der folgenden Kanäle bereitgestellt werden (unten als *[Channel]* bezeichnet): *insiders-fast*, *insiders-slow* oder *prod*. Jeder dieser Kanäle entspricht einem Linux-Softwarerepository.
+    Defender für Endpunkt unter Linux kann von einem der folgenden Kanäle bereitgestellt werden (unten als *[Kanal]* bezeichnet): *insiders-fast*, *insiders-slow* oder *prod*. Jeder dieser Kanäle entspricht einem Linux-Software-Repository.
 
-    Die Auswahl des Kanals bestimmt den Typ und die Häufigkeit der Updates, die auf Ihrem Gerät angeboten werden. Geräte in *insiders-fast* sind die ersten, die Updates und neue Features erhalten, gefolgt von *insiders-slow* und schließlich von *prod*.
+    Die Wahl des Kanals bestimmt den Typ und die Häufigkeit von Updates, die auf Ihrem Gerät angeboten werden. Geräte in *Insider-Fast* sind die ersten Geräte, die Updates und neue Features erhalten, gefolgt von *insider-slow* und schließlich von *prod*.
 
-    Um eine Vorschau neuer Features anzuzeigen und frühzeitig Feedback zu geben, empfiehlt es sich, einige Geräte in Ihrem Unternehmen so zu konfigurieren, dass sie entweder *insider-schnell* oder *insider-slow verwenden.*
+    Um eine Vorschau der neuen Features anzuzeigen und frühzeitigEs Feedback zu geben, empfiehlt es sich, einige Geräte in Ihrem Unternehmen so zu konfigurieren, dass sie entweder *insiderschnell* oder langsam verwendet *werden.*
 
     > [!WARNING]
-    > Wenn Sie den Kanal nach der Erstinstallation wechseln, muss das Produkt neu installiert werden. Um den Produktkanal zu wechseln: Deinstallieren Sie das vorhandene Paket, konfigurieren Sie Ihr Gerät neu, um den neuen Kanal zu verwenden, und führen Sie die Schritte in diesem Dokument aus, um das Paket vom neuen Speicherort aus zu installieren.
+    > Um den Kanal nach der Erstinstallation zu wechseln, muss das Produkt neu installiert werden. Um den Produktkanal zu wechseln: Deinstallieren Sie das vorhandene Paket, konfigurieren Sie Ihr Gerät erneut für die Verwendung des neuen Kanals, und führen Sie die Schritte in diesem Dokument aus, um das Paket vom neuen Speicherort aus zu installieren.
 
     Notieren Sie sich Ihre Verteilung und Version, und identifizieren Sie den nächstgelegenen Eintrag unter `https://packages.microsoft.com/config/` .
 
     Ersetzen Sie in den folgenden Befehlen *[distro]* und *[version]* durch die von Ihnen identifizierten Informationen.
 
     > [!NOTE]
-    > Ersetzen Sie bei Oracle Linux *[distro] durch* "rhel".
+    > Ersetzen Sie *[distro]* bei Oracle Linux durch "rhel".
 
   ```bash
   - name: Add Microsoft APT key
     apt_key:
-      keyserver: https://packages.microsoft.com/
-      id: BC528686B50D79E339D3721CEB3E94ADBE1229CF
+      url: https://packages.microsoft.com/keys/microsoft.asc
+      state: present
     when: ansible_os_family == "Debian"
 
   - name: Add Microsoft apt repository for MDATP
@@ -157,7 +157,7 @@ Erstellen Sie eine Unteraufgabe oder Rollendateien, die zu einem Playbook oder e
       repo: deb [arch=arm64,armhf,amd64] https://packages.microsoft.com/[distro]/[version]/prod [channel] main
       update_cache: yes
       state: present
-      filename: microsoft-[channel].list
+      filename: microsoft-[channel]
     when: ansible_os_family == "Debian"
 
   - name: Add Microsoft DNF/YUM key
@@ -239,7 +239,7 @@ Erstellen Sie eine Unteraufgabe oder Rollendateien, die zu einem Playbook oder e
 
 ## <a name="deployment"></a>Bereitstellung)
 
-Führen Sie nun die Aufgabendateien unter `/etc/ansible/playbooks/` oder relevantem Verzeichnis aus.
+Führen Sie nun die Aufgabendateien unter `/etc/ansible/playbooks/` oder im relevanten Verzeichnis aus.
 
 - Installation:
 
@@ -248,7 +248,7 @@ Führen Sie nun die Aufgabendateien unter `/etc/ansible/playbooks/` oder relevan
     ```
 
 > [!IMPORTANT]
-> Wenn das Produkt zum ersten Mal gestartet wird, werden die neuesten Antischalwaredefinitionen heruntergeladen. Je nach Internetverbindung kann dies bis zu ein paar Minuten dauern.
+> Wenn das Produkt zum ersten Mal gestartet wird, werden die neuesten Antischadsoftwaredefinitionen heruntergeladen. Je nach Internetverbindung kann dies bis zu ein paar Minuten dauern.
 
 - Validierung/Konfiguration:
 
@@ -265,13 +265,13 @@ Führen Sie nun die Aufgabendateien unter `/etc/ansible/playbooks/` oder relevan
     ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
     ```
 
-## <a name="log-installation-issues"></a>Probleme bei der Protokollinstallation
+## <a name="log-installation-issues"></a>Protokollieren von Installationsproblemen
 
-Weitere [Informationen zum](linux-resources.md#log-installation-issues) Suchen des automatisch generierten Protokolls, das beim Auftreten eines Fehlers vom Installationsprogramm erstellt wird, finden Sie unter Protokollinstallationsprobleme.
+Weitere Informationen zum Auffinden des automatisch generierten Protokolls, das beim Auftreten eines Fehlers vom Installationsprogramm erstellt wird, finden Sie unter ["Protokollinstallationsprobleme".](linux-resources.md#log-installation-issues)
 
 ## <a name="operating-system-upgrades"></a>Betriebssystemupgrades
 
-Wenn Sie Ihr Betriebssystem auf eine neue Hauptversion aktualisieren, müssen Sie zunächst Defender for Endpoint unter Linux deinstallieren, das Upgrade installieren und schließlich Defender for Endpoint unter Linux auf Ihrem Gerät neu konfigurieren.
+Wenn Sie Ihr Betriebssystem auf eine neue Hauptversion aktualisieren, müssen Sie zuerst Defender für Endpunkt unter Linux deinstallieren, das Upgrade installieren und defender für Endpunkt auf Linux auf Ihrem Gerät neu konfigurieren.
 
 ## <a name="references"></a>Informationsquellen
 

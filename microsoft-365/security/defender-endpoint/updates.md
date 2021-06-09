@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f5db08e4eb98dd3fe6f7e8a84fb0c49e889fb73f
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 435a77432caa9d7335a22993f85cae69eff6cd38
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809300"
+ms.locfileid: "52841762"
 ---
 #  <a name="manage-the-gradual-rollout-process-for-microsoft-defender-updates"></a>Verwalten des schrittweisen Rollouts für Microsoft Defender-Updates
 
@@ -56,7 +56,7 @@ Es folgt das folgende graduelle Rolloutmodell:
 
 1. Die erste Version wird für Abonnenten des Betakanals veröffentlicht.
 2. Nach Überprüfung, Feedback und Korrekturen starten wir den schrittweisen Rollout-Prozess gedrosselt und zeigen zuerst die Abonnenten des Kanals an.
-3. Anschließend veröffentlichen wir das Update für den Rest der Globalen Population und skalieren die Skalierung von 10 bis 100 %.
+3. Anschließend veröffentlichen wir das Update für die restliche Weltgesamtheit und skalieren die Skalierung von 10 bis 100 %.
 
 Unsere Techniker überwachen die Auswirkungen kontinuierlich und eskalieren alle Probleme, um eine Korrektur nach Bedarf zu erstellen.
 
@@ -69,7 +69,7 @@ Wenn Ihre Computer Defender-Updates von Windows Update erhalten, kann der gradue
 
 Für Computer, die Updates erhalten, z. B. Windows Server Update Services (WSUS) oder Microsoft Endpoint Configuration Manager (MECM), stehen allen Windows Updates weitere Optionen zur Verfügung, einschließlich Optionen für Microsoft Defender für Endpunkt.
 
-- Weitere Informationen zur Verwendung einer Lösung wie WSUS, MECM zum Verwalten der Verteilung und Anwendung von Updates finden Sie unter Verwalten Microsoft Defender Antivirus Updates und Anwenden von [Basisplänen – Windows Sicherheits-| Microsoft Docs](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
+- Weitere Informationen zur Verwendung einer Lösung wie WSUS, MECM zum Verwalten der Verteilung und Anwendung von Updates finden Sie unter Verwalten von Microsoft Defender Antivirus Updates und Anwenden von [Basisplänen – Windows Sicherheits-| Microsoft Docs](manage-updates-baselines-microsoft-defender-antivirus.md#product-updates).
 
 ## <a name="update-channels-for-monthly-updates"></a>Aktualisieren von Kanälen für monatliche Updates
 
@@ -102,7 +102,7 @@ Sie können einen Computer einem Updatekanal zuweisen, um die Häufigkeit zu def
 
 ## <a name="update-guidance"></a>Leitfaden zum Aktualisieren
 
-In den meisten Fällen ist die empfohlene Konfiguration bei verwendung von Windows Update, dass Endpunkte monatliche Defender-Updates empfangen und anwenden können, sobald sie eintreffen. Dies bietet die beste Balance zwischen Schutz und möglichen Auswirkungen im Zusammenhang mit den Änderungen, die sie einführen können.
+In den meisten Fällen ist die empfohlene Konfiguration bei der Verwendung von Windows Update, dass Endpunkte monatliche Defender-Updates empfangen und anwenden können, sobald sie eintreffen. Dies bietet die beste Balance zwischen Schutz und möglichen Auswirkungen im Zusammenhang mit den Änderungen, die sie einführen können.
 
 Für Umgebungen, in denen ein kontrollierterer gradueller Rollout automatischer Defender-Updates erforderlich ist, sollten Sie einen Ansatz mit Bereitstellungsgruppen in Betracht ziehen:
 

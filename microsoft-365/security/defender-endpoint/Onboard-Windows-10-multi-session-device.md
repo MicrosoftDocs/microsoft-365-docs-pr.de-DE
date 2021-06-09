@@ -1,7 +1,7 @@
 ---
 title: Onboarden von Windows 10-Geräten für mehrere Sitzungen in Windows Virtual Desktop
-description: Weitere Informationen finden Sie in diesem Artikel zum Onboarding Windows 10 Geräten mit mehreren Sitzungen in Windows Virtual Desktop
-keywords: Windows Virtual Desktop, WVD, Microsoft Defender, Endpunkt, Onboard
+description: Weitere Informationen finden Sie in diesem Artikel zum Onboarding von Windows 10 Geräten mit mehreren Sitzungen in Windows Virtual Desktop
+keywords: Windows Virtual Desktop, WVD, Microsoft Defender, Endpunkt, onboard
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: manage
@@ -15,76 +15,76 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 0ef80e2aaccbf25a79083c2f95ea7399e30ea651
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 7ade1ae1e045cb52f48d231acbc1712e753b6bc3
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764317"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841846"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Onboarden von Windows 10-Geräten für mehrere Sitzungen in Windows Virtual Desktop 
 6 Minuten zu lesen 
 
 Gilt für: 
-- Windows 10, die auf einem virtuellen Windows (Virtual Desktop, WVD) ausgeführt werden 
+- Windows 10 multi-session running on Windows Virtual Desktop (WVD) 
 
-Microsoft Defender for Endpoint unterstützt die Überwachung von VDI- und Windows Virtual Desktop-Sitzungen. Je nach Den Anforderungen Ihrer Organisation müssen Sie möglicherweise VDI- oder Windows Virtual Desktop-Sitzungen implementieren, um Ihren Mitarbeitern den Zugriff auf Unternehmensdaten und Apps von einem nicht verwalteten Gerät, Remotespeicherort oder ähnlichem Szenario zu unterstützen. Mit Microsoft Defender for Endpoint können Sie diese virtuellen Computer auf anomale Aktivitäten überwachen.
+Microsoft Defender für Endpunkt unterstützt die Überwachung von VDI- und Windows Virtual Desktop-Sitzungen. Je nach den Anforderungen Ihrer Organisation müssen Sie möglicherweise VDI- oder Windows Virtual Desktop-Sitzungen implementieren, damit Ihre Mitarbeiter über ein nicht verwaltetes Gerät, einen Remotestandort oder ein ähnliches Szenario auf Unternehmensdaten und Apps zugreifen können. Mit Microsoft Defender für Endpunkt können Sie diese virtuellen Computer auf anomale Aktivitäten überwachen.
 
  ## <a name="before-you-begin"></a>Bevor Sie beginnen
-Machen Sie sich mit den [Überlegungen für nicht persistente VDI vertraut.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Obwohl [Windows Virtual Desktop](https://docs.microsoft.com/azure/virtual-desktop/overview) keine Nichtpersistenzoptionen bietet, bietet es Möglichkeiten, ein goldenes Windows-Image zu verwenden, das zum Bereitstellen neuer Hosts und erneut bereitgestellter Computer verwendet werden kann. Dies erhöht die Unbeständigkeit in der Umgebung und wirkt sich somit auf die Einträge aus, die im Microsoft Defender for Endpoint-Portal erstellt und verwaltet werden, wodurch die Sichtbarkeit für Ihre Sicherheitsanalysten potenziell reduziert wird.
+Machen Sie sich mit den [Überlegungen für nicht persistente VDI](/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)vertraut. [Während Windows Virtual Desktop](/azure/virtual-desktop/overview) keine Nichtpersistenzoptionen bereitstellt, bietet es möglichkeiten, ein goldenen Windows-Image zu verwenden, das zum Bereitstellen neuer Hosts und zum erneuten Bereitstellen von Computern verwendet werden kann. Dies erhöht die Aufmerksamkeit in der Umgebung und wirkt sich daher darauf aus, welche Einträge im Microsoft Defender für Endpunkt-Portal erstellt und verwaltet werden, wodurch die Sichtbarkeit für Ihre Sicherheitsanalysten möglicherweise reduziert wird.
 
 > [!NOTE]
-> Je nach Wahl der Onboardingmethode können Geräte im Microsoft Defender for Endpoint-Portal wie folgt angezeigt werden: 
+> Je nachdem, welche Onboardingmethode Sie auswählen, können Geräte im Microsoft Defender für Endpunkt-Portal als eine der folgenden Optionen angezeigt werden: 
 > - Einzelner Eintrag für jeden virtuellen Desktop 
 > - Mehrere Einträge für jeden virtuellen Desktop 
 
-Microsoft empfiehlt das Onboarding Windows Virtual Desktop als einzelnen Eintrag pro virtuellem Desktop. Dadurch wird sichergestellt, dass sich die Untersuchungserfahrung im Microsoft Defender Endpoint-Portal im Kontext eines Geräts befindet, das auf dem Computernamen basiert. Organisationen, die häufig WVD-Hosts löschen und erneut bereitstellen, sollten die Verwendung dieser Methode in Betracht ziehen, da dadurch verhindert wird, dass mehrere Objekte für denselben Computer im Microsoft Defender for Endpoint-Portal erstellt werden. Dies kann bei der Untersuchung von Vorfällen zu Verwirrung führen. Für Testumgebungen oder nicht flüchtige Umgebungen können Sie eine andere Auswahl auswählen. 
+Microsoft empfiehlt, Windows virtuellen Desktop als einen einzigen Eintrag pro virtuellem Desktop zu integrieren. Dadurch wird sichergestellt, dass sich die Untersuchung im Microsoft Defender Endpoint-Portal im Kontext eines Geräts basierend auf dem Computernamen befindet. Organisationen, die häufig WVD-Hosts löschen und erneut bereitstellen, sollten die Verwendung dieser Methode dringend in Betracht ziehen, da sie verhindert, dass mehrere Objekte für denselben Computer im Microsoft Defender für Endpunkt-Portal erstellt werden. Dies kann bei der Untersuchung von Vorfällen zu Verwirrung führen. Für Testumgebungen oder nicht veränderliche Umgebungen können Sie sich für eine andere Auswahl entscheiden. 
 
-Microsoft empfiehlt das Hinzufügen des Microsoft Defender for Endpoint-Onboardingskripts zum goldenen WVD-Image. Auf diese Weise können Sie sicher sein, dass dieses Onboardingskript sofort beim ersten Start ausgeführt wird. Es wird beim ersten Start auf allen WVD-Computern, die aus dem goldenen WVD-Image bereitgestellt werden, als Startskript ausgeführt. Wenn Sie jedoch eines der Katalogbilder ohne Änderung verwenden, platzieren Sie das Skript an einem freigegebenen Speicherort, und rufen Sie es entweder aus einer lokalen oder einer Domänengruppenrichtlinie auf. 
+Microsoft empfiehlt das Hinzufügen des Microsoft Defender für Endpunkt-Onboarding-Skripts zum goldenen WVD-Image. Auf diese Weise können Sie sicher sein, dass dieses Onboardingskript sofort beim ersten Start ausgeführt wird. Es wird als Startskript beim ersten Start auf allen WVD-Computern ausgeführt, die vom goldenen WVD-Image bereitgestellt werden. Wenn Sie jedoch eines der Katalogbilder ohne Änderung verwenden, platzieren Sie das Skript an einem freigegebenen Speicherort, und rufen Sie es aus der lokalen oder Domänengruppenrichtlinie auf. 
 
 > [!NOTE]
-> Die Platzierung und Konfiguration des Startskripts für das VDI-Onboarding im goldenen WVD-Image konfiguriert es als Startskript, das beim Starten der WVD ausgeführt wird. Es wird NICHT empfohlen, das tatsächliche goldene WVD-Image zu integrieren. Eine weitere Überlegung ist die Methode, mit der das Skript ausgeführt wird. Sie sollte so früh wie möglich im Start-/Bereitstellungsprozess ausgeführt werden, um die Zeit zwischen dem Computer, der für den Empfang von Sitzungen verfügbar ist, und dem Onboarding des Geräts an den Dienst zu reduzieren. In den folgenden Szenarien 1 & 2 wird dies berücksichtigt.
+> Die Platzierung und Konfiguration des VDI-Onboarding-Startskripts auf dem goldenen WVD-Image konfiguriert es als Startskript, das beim Starten der WVD ausgeführt wird. Es wird NICHT empfohlen, das eigentliche WVD-Golden-Image zu integrieren. Eine weitere Überlegung ist die Methode, die zum Ausführen des Skripts verwendet wird. Es sollte so früh wie möglich im Start-/Bereitstellungsprozess ausgeführt werden, um die Zeit zwischen dem Computer, der für den Empfang von Sitzungen verfügbar ist, und dem Onboarding des Geräts in den Dienst zu reduzieren. In den folgenden Szenarien 1 & 2 wird dies berücksichtigt.
 
 ### <a name="scenarios"></a>Szenarien
 Es gibt mehrere Möglichkeiten zum Onboarding eines WVD-Hostcomputers:
 
-- Führen Sie das Skript während des Startvorgangs im goldenen Bild (oder von einem freigegebenen Speicherort) aus.
+- Führen Sie das Skript während des Starts im goldenen Bild (oder von einem freigegebenen Speicherort) aus.
 - Verwenden Sie ein Verwaltungstool, um das Skript auszuführen.
 
-#### <a name="scenario-1-using-local-group-policy"></a>*Szenario 1: Verwenden der lokalen Gruppenrichtlinie*
-In diesem Szenario muss das Skript in einem goldenen Bild platziert werden und verwendet lokale Gruppenrichtlinien, um frühzeitig im Startvorgang ausgeführt zu werden.
+#### <a name="scenario-1-using-local-group-policy"></a>*Szenario 1: Verwenden einer lokalen Gruppenrichtlinie*
+Dieses Szenario erfordert, dass das Skript in einem goldenen Image platziert wird und die lokale Gruppenrichtlinie verwendet wird, um früh im Startprozess ausgeführt zu werden.
 
-Verwenden Sie die Anweisungen unter [Onboard non-persistent virtual desktop infrastructure VDI devices](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1).
+Verwenden Sie die Anweisungen unter [Onboarding nicht persistenter VDI-Geräte der virtuellen Desktopinfrastruktur.](configure-endpoints-vdi.md#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1)
 
 Befolgen Sie die Anweisungen für einen einzelnen Eintrag für jedes Gerät.
 
 #### <a name="scenario-2-using-domain-group-policy"></a>*Szenario 2: Verwenden von Domänengruppenrichtlinien*
-In diesem Szenario wird ein zentral gelegenes Skript verwendet und mithilfe einer domänenbasierten Gruppenrichtlinie ausgeführt. Sie können das Skript auch in das goldene Bild platzieren und auf die gleiche Weise ausführen.
+In diesem Szenario wird ein zentral gespeichertes Skript verwendet und mithilfe einer domänenbasierten Gruppenrichtlinie ausgeführt. Sie können das Skript auch im goldenen Bild platzieren und auf die gleiche Weise ausführen.
 
-**Herunterladen der WindowsDefenderATPOnboardingPackage.zip aus dem Windows Defender Security Center**
+**Laden Sie die datei WindowsDefenderATPOnboardingPackage.zip aus dem Windows Defender Security Center herunter.**
 
-1. Öffnen Sie die VDI-Konfigurationspaketdatei .zip (WindowsDefenderATPOnboardingPackage.zip)  
+1. Öffnen Des VDI-Konfigurationspakets .zip Datei (WindowsDefenderATPOnboardingPackage.zip)  
 
-    1. Wählen Sie Microsoft Defender Security Center Navigationsbereich Einstellungen   >  **Onboarding aus.** 
-    1. Wählen Windows 10 als Betriebssystem aus. 
-    1. Wählen Sie **im Feld Bereitstellungsmethode** die Option VDI-Onboardingskripts für nicht persistente Endpunkte aus. 
-    1. Klicken **Sie auf Paket** herunterladen, und speichern .zip Datei. 
+    1. Wählen Sie im Navigationsbereich Microsoft Defender Security Center **Einstellungen**  >  **Onboarding** aus. 
+    1. Wählen Sie Windows 10 als Betriebssystem aus. 
+    1. Wählen Sie im Feld **"Bereitstellungsmethode"** VDI-Onboardingskripts für nicht persistente Endpunkte aus. 
+    1. Klicken Sie auf **"Paket herunterladen",** und speichern Sie die .zip Datei. 
 
-2. Extrahieren Sie den Inhalt der .zip an einen freigegebenen, schreibgeschützten Speicherort, auf den das Gerät zugreifen kann. Sie sollten über einen Ordner **namens OptionalParamsPolicy** und die **Dateien WindowsDefenderATPOnboardingScript.cmd** und **Onboard-NonPersistentMachine.ps1**.
+2. Extrahieren Sie den Inhalt der .zip-Datei an einen freigegebenen, schreibgeschützten Speicherort, auf den das Gerät zugreifen kann. Sie sollten über einen Ordner namens **"OptionalParamsPolicy"** und die Dateien **"WindowsDefenderATPOnboardingScript.cmd"** und **Onboard-NonPersistentMachine.ps1** verfügen.
 
-**Verwenden der Gruppenrichtlinienverwaltungskonsole zum Ausführen des Skripts beim Starten des virtuellen Computers**
+**Verwenden der Gruppenrichtlinien-Verwaltungskonsole zum Ausführen des Skripts beim Starten des virtuellen Computers**
 
-1. Öffnen Sie die Gruppenrichtlinienverwaltungskonsole (Group Policy Management Console, GPMC), klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt(GPO), das Sie konfigurieren möchten, und klicken Sie auf **Bearbeiten**.
+1. Öffnen Sie die Gruppenrichtlinien-Verwaltungskonsole (Group Policy Management Console, GPMC), klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt (Group Policy Object, GPO), das Sie konfigurieren möchten, und klicken Sie auf **"Bearbeiten".**
 
-2. Wechseln Sie im Gruppenrichtlinienverwaltungs-Editor zu **Einstellungen** für die \> Systemsteuerung **der** \> **Computerkonfiguration.** 
+2. Wechseln Sie im Gruppenrichtlinienverwaltungs-Editor zu Einstellungen der Systemsteuerung für **die Computerkonfiguration.** \>  \>  
 
-3. Klicken Sie mit der rechten Maustaste auf Geplante **Vorgänge,** klicken Sie auf **Neu,** und klicken Sie dann auf Sofortaufgabe **(mindestens** Windows 7). 
+3. Klicken Sie mit der rechten Maustaste auf **Geplante Vorgänge,** klicken Sie auf **Neu** und dann auf **"Sofortvorgang"** (mindestens Windows 7). 
 
-4. Wechseln Sie im geöffneten Aufgabenfenster zur Registerkarte **Allgemein.** Klicken **Sie unter Sicherheitsoptionen** **auf Benutzer oder Gruppe ändern, und** geben Sie SYSTEM ein. Klicken **Sie auf Namen** überprüfen, und klicken Sie dann auf OK. NT AUTHORITY\SYSTEM wird als Benutzerkonto angezeigt, unter dem die Aufgabe ausgeführt wird. 
+4. Wechseln Sie im geöffneten Aufgabenfenster zur Registerkarte **"Allgemein".** Klicken Sie unter **"Sicherheitsoptionen"** auf **"Benutzer oder Gruppe ändern",** und geben Sie "SYSTEM" ein. Klicken Sie auf **"Namen überprüfen",** und klicken Sie dann auf "OK". NT AUTHORITY\SYSTEM wird als Benutzerkonto angezeigt, unter dem die Aufgabe ausgeführt wird. 
 
-5. Aktivieren **Sie Ausführen, ob der Benutzer** angemeldet ist oder nicht, und aktivieren Sie das Kontrollkästchen Mit höchsten **Rechten** ausführen. 
+5. Wählen Sie **"Ausführen" aus, ob der Benutzer angemeldet ist oder nicht,** und aktivieren Sie das Kontrollkästchen **"Ausführen mit höchsten Berechtigungen".** 
 
-6. Wechseln Sie zur **Registerkarte Aktionen,** und klicken Sie auf **Neu**. Stellen Sie **sicher, dass Programm starten** im Feld Aktion ausgewählt ist. Geben Sie Folgendes ein: 
+6. Wechseln Sie zur Registerkarte **"Aktionen",** und klicken Sie auf **"Neu".** Stellen Sie sicher, dass **"Programm starten"** im Feld "Aktion" ausgewählt ist. Geben Sie Folgendes ein: 
 
    `Action = "Start a program"`
 
@@ -92,29 +92,29 @@ In diesem Szenario wird ein zentral gelegenes Skript verwendet und mithilfe eine
 
    `Add Arguments (optional) = -ExecutionPolicy Bypass -command "& \\Path\To\Onboard-NonPersistentMachine.ps1"`
 
-   Wählen Sie dann **OK aus,** und schließen Sie alle geöffneten GPMC-Fenster.
+   Wählen Sie dann **OK** aus, und schließen Sie alle geöffneten GPMC-Fenster.
 
 #### <a name="scenario-3-onboarding-using-management-tools"></a>*Szenario 3: Onboarding mithilfe von Verwaltungstools*
 
-Wenn Sie Planen, Ihre Computer mit einem Verwaltungstool zu verwalten, können Sie Geräte mit Microsoft Endpoint Configuration Manager.
+Wenn Sie beabsichtigen, Ihre Computer mit einem Verwaltungstool zu verwalten, können Sie Geräte mit Microsoft Endpoint Configuration Manager integrieren.
 
-Weitere Informationen finden Sie unter [Onboard Windows 10 devices using Configuration Manager](configure-endpoints-sccm.md).
+Weitere Informationen finden Sie unter [Onboarding Windows 10 Geräte mit Configuration Manager.](configure-endpoints-sccm.md)
 
 > [!WARNING]
-> Wenn Sie attack [surface reduction Rules](attack-surface-reduction.md)verwenden möchten, beachten Sie, dass die Regel " Block process[creations from PSExec and WMI commands](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)" nicht verwendet werden sollte, da diese Regel nicht mit der Verwaltung über die Microsoft Endpoint Configuration Manager. Die Regel blockiert WMI-Befehle, die der Configuration Manager-Client verwendet, um ordnungsgemäß zu funktionieren. 
+> Wenn Sie die [Attack Surface Reduction-Regeln](attack-surface-reduction.md)verwenden möchten, beachten Sie, dass die Regel["Prozesserstellungen blockieren, die von PSExec- und WMI-Befehlen stammen"](attack-surface-reduction.md#block-process-creations-originating-from-psexec-and-wmi-commands)nicht verwendet werden sollte, da diese Regel mit der Verwaltung über Microsoft Endpoint Configuration Manager nicht kompatibel ist. Die Regel blockiert WMI-Befehle, die der Configuration Manager-Client verwendet, um ordnungsgemäß zu funktionieren. 
 
 > [!TIP]
-> Nach dem Onboarding des Geräts können Sie einen Erkennungstest ausführen, um sicherzustellen, dass das Gerät ordnungsgemäß in den Dienst integrierte ist. Weitere Informationen finden Sie unter Ausführen eines Erkennungstests auf einem neu integrierten [Microsoft Defender for Endpoint-Gerät.](run-detection-test.md) 
+> Nach dem Onboarding des Geräts können Sie einen Erkennungstest ausführen, um zu überprüfen, ob das Gerät ordnungsgemäß in den Dienst integriert ist. Weitere Informationen finden Sie unter [Ausführen eines Erkennungstests auf einem neu integrierten Microsoft Defender für Endpunkt-Gerät.](run-detection-test.md) 
 
-#### <a name="tagging-your-machines-when-building-your-golden-image"></a>Markieren Ihrer Computer beim Erstellen Ihres goldenen Bilds 
+#### <a name="tagging-your-machines-when-building-your-golden-image"></a>Kennzeichnen Ihrer Computer beim Erstellen ihres goldenen Bilds 
 
-Im Rahmen Ihres Onboardings sollten Sie ein Computertag festlegen, um WVD-Computer im Microsoft Security Center einfacher voneinander zu unterscheiden. Weitere Informationen finden Sie unter [Hinzufügen von Gerätetags durch Festlegen eines Registrierungsschlüsselwerts.](machine-tags.md#add-device-tags-by-setting-a-registry-key-value) 
+Im Rahmen Ihres Onboardings sollten Sie erwägen, ein Computertag festzulegen, um WVD-Computer im Microsoft Security Center einfacher unterscheiden zu können. Weitere Informationen finden Sie unter [Hinzufügen von Gerätetags durch Festlegen eines Registrierungsschlüsselwerts.](machine-tags.md#add-device-tags-by-setting-a-registry-key-value) 
 
-#### <a name="other-recommended-configuration-settings"></a>Weitere empfohlene Konfigurationseinstellungen 
+#### <a name="other-recommended-configuration-settings"></a>Andere empfohlene Konfigurationseinstellungen 
 
-Beim Erstellen Ihres goldenen Bilds sollten Sie möglicherweise auch die anfänglichen Schutzeinstellungen konfigurieren. Weitere Informationen finden Sie unter [Weitere empfohlene Konfigurationseinstellungen](configure-endpoints-gp.md#other-recommended-configuration-settings). 
+Beim Erstellen ihres goldenen Images sollten Sie auch die anfänglichen Schutzeinstellungen konfigurieren. Weitere Informationen finden Sie unter ["Weitere empfohlene Konfigurationseinstellungen".](configure-endpoints-gp.md#other-recommended-configuration-settings) 
 
-Wenn Sie außerdem FSlogix-Benutzerprofile verwenden, wird empfohlen, die folgenden Dateien vom Immer-On-Schutz auszuschließen: 
+Wenn Sie FSlogix-Benutzerprofile verwenden, wird außerdem empfohlen, die folgenden Dateien vom always-on-Schutz auszuschließen: 
 
 **Ausschließen von Dateien:** 
 
@@ -146,5 +146,5 @@ Wenn Sie außerdem FSlogix-Benutzerprofile verwenden, wird empfohlen, die folgen
 
 #### <a name="licensing-requirements"></a>Lizenzierungsanforderungen 
 
-Hinweis zur Lizenzierung: Wenn Sie Windows 10 Enterprise mehrere Sitzungen verwenden, können Sie je nach Ihren Anforderungen auswählen, ob alle Benutzer über Microsoft Defender for Endpoint (pro Benutzer), Windows Enterprise E5, Microsoft 365 Security oder Microsoft 365 E5 lizenziert werden oder den virtuellen Computer über Azure Defender lizenziert haben.
-Lizenzierungsanforderungen für Microsoft Defender für Endpunkt finden Sie unter: [Lizenzierungsanforderungen](minimum-requirements.md#licensing-requirements).
+Hinweis zur Lizenzierung: Wenn Sie Windows 10 Enterprise multi-session verwenden, können Sie je nach Ihren Anforderungen entweder festlegen, dass alle Benutzer über Microsoft Defender für Endpunkt (pro Benutzer), Windows Enterprise E5, Microsoft 365 Sicherheit oder Microsoft 365 E5 lizenziert sind, oder den virtuellen Computer über Azure Defender lizenziert haben.
+Die Lizenzierungsanforderungen für Microsoft Defender für Endpunkt finden Sie unter: [Lizenzierungsanforderungen.](minimum-requirements.md#licensing-requirements)

@@ -1,7 +1,7 @@
 ---
 title: Geräte nach Empfehlung auflisten
 description: Ruft eine Liste der Geräte ab, die der Sicherheitsempfehlung zugeordnet sind.
-keywords: APIs, Graph-API, unterstützte APIs, abrufen, Sicherheitsempfehlungen für gefährdete Geräte, Bedrohungs- und Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement-API
+keywords: APIs, Graph-API, unterstützte APIs, abrufen, Sicherheitsempfehlungen für anfällige Geräte, Bedrohungs- und Sicherheitsrisikomanagement, Bedrohungs- und Sicherheitsrisikomanagement-API
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6c762a15051444ec950e92998317db4f7e51783c
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: a321a3aec9bbd0e7e405b82b7cbd56cf214694ca
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771813"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845197"
 ---
 # <a name="list-devices-by-recommendation"></a>Geräte nach Empfehlung auflisten
 
@@ -96,5 +96,5 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 ```
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Risikobasiertes Bedrohungs- & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Sicherheitsempfehlungen für Sicherheitsrisiken &](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Risikobasiertes Bedrohungs- & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Sicherheitsempfehlungen für Sicherheitsrisiken &](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

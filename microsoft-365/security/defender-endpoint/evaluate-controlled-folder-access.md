@@ -1,7 +1,7 @@
 ---
 title: Auswerten des kontrollierten Ordnerzugriffs
-description: Erfahren Sie, wie der kontrollierte Ordnerzugriff dazu beitragen kann, Dateien vor der Änderung durch schädliche Apps zu schützen.
-keywords: Exploit-Schutz, Windows 10, Windows Defender, Ransomware, Schützen, Bewerten, Testen, Demo, Testen
+description: Erfahren Sie, wie der kontrollierte Ordnerzugriff dazu beitragen kann, Dass Dateien von schädlichen Apps geändert werden.
+keywords: Exploit-Schutz, Windows 10, Windows Defender, Ransomware, schützen, auswerten, testen, Demo, testen
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
@@ -13,12 +13,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: f996a8fdaf630c8ea389ac9648369cc955a6e95d
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 15ea4696052a6c987314e3c7b0dd282a49ed4df8
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51569905"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842914"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Auswerten des kontrollierten Ordnerzugriffs
 
@@ -28,21 +28,21 @@ ms.locfileid: "51569905"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+>Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
 
-[Der kontrollierte Ordnerzugriff](controlled-folders.md) ist ein Feature, das Ihre Dokumente und Dateien vor Änderungen durch verdächtige oder schädliche Apps schützt. Der kontrollierte Ordnerzugriff wird auf Windows Server 2019 und Windows 10 unterstützt.
+[Der kontrollierte Ordnerzugriff](controlled-folders.md) ist ein Feature, das Ihre Dokumente und Dateien vor Änderungen durch verdächtige oder schädliche Apps schützt. Der kontrollierte Ordnerzugriff wird auf Windows Server 2019- und Windows 10-Clients unterstützt.
 
-Es ist besonders hilfreich beim Schutz vor [Ransomware,](https://www.microsoft.com/wdsi/threats/ransomware) die versucht, Ihre Dateien zu verschlüsseln und als Host zu halten.
+Es ist besonders hilfreich, um sich vor [Ransomware](https://www.microsoft.com/wdsi/threats/ransomware) zu schützen, die versucht, Ihre Dateien zu verschlüsseln und sie als Host zu halten.
 
 Dieser Artikel hilft Ihnen bei der Auswertung des kontrollierten Ordnerzugriffs. Es wird erläutert, wie Sie den Überwachungsmodus aktivieren, damit Sie das Feature direkt in Ihrer Organisation testen können.
 
 > [!TIP]
-> Sie können auch die Microsoft Defender for Endpoint-Demoszenariowebsite unter [demo.wd.microsoft.com,](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) um zu bestätigen, dass das Feature funktioniert und wie es funktioniert.
+> Sie können auch die Microsoft Defender für Endpunkt-Demoszenario-Website unter [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) besuchen, um zu bestätigen, dass das Feature funktioniert und wie es funktioniert.
 
-## <a name="use-audit-mode-to-measure-impact"></a>Verwenden des Überwachungsmodus zum Messen der Auswirkung
+## <a name="use-audit-mode-to-measure-impact"></a>Verwenden des Überwachungsmodus zum Messen der Auswirkungen
 
-Aktivieren Sie den kontrollierten Ordnerzugriff im  Überwachungsmodus, um einen Datensatz zu sehen, was passiert wäre, wenn er vollständig aktiviert wäre. Testen Sie, wie das Feature in Ihrer Organisation funktioniert, um sicherzustellen, dass es sich nicht auf Ihre Unternehmensanwendungen auswirken wird. Sie können auch eine Vorstellung davon erhalten, wie viele verdächtige Dateiänderungsversuche in der Regel über einen bestimmten Zeitraum erfolgen.
+Aktivieren Sie den kontrollierten Ordnerzugriff im Überwachungsmodus, um zu sehen, was passiert *wäre,* wenn er vollständig aktiviert wäre. Testen Sie, wie das Feature in Ihrer Organisation funktioniert, um sicherzustellen, dass es sich nicht auf Ihre Branchen-Apps auswirkt. Sie können sich auch ein Bild davon machen, wie viele verdächtige Dateiänderungsversuche in der Regel über einen bestimmten Zeitraum erfolgen.
 
 Verwenden Sie das folgende PowerShell-Cmdlet, um den Überwachungsmodus zu aktivieren:
 
@@ -51,30 +51,30 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 ```
 
 > [!TIP]
-> Wenn Sie vollständig überwachen möchten, wie der kontrollierte Ordnerzugriff in Ihrer Organisation funktioniert, müssen Sie ein Verwaltungstool verwenden, um diese Einstellung auf Geräten in Ihren Netzwerken bereitstellen zu können.
-Sie können auch Gruppenrichtlinien, Intune, mobile Geräteverwaltung (MDM) oder Microsoft Endpoint Manager verwenden, um die Einstellung zu konfigurieren und bereitzustellen, wie im Thema "Zugriff auf hauptgesteuerte Ordner" [beschrieben.](controlled-folders.md)
+> Wenn Sie die Funktionsweise des kontrollierten Ordnerzugriffs in Ihrer Organisation vollständig überwachen möchten, müssen Sie ein Verwaltungstool verwenden, um diese Einstellung auf Geräten in Ihren Netzwerken bereitzustellen.
+Sie können auch Gruppenrichtlinien, Intune, Mdm (Mobile Device Management) oder Microsoft Endpoint Manager verwenden, um die Einstellung zu konfigurieren und bereitzustellen, wie im Thema zum kontrollierten [Ordnerzugriff](controlled-folders.md)beschrieben.
 
-## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Überprüfen gesteuerter Ordnerzugriffsereignisse in Windows Ereignisanzeige
+## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Überprüfen der Ereignisse des kontrollierten Ordnerzugriffs in Windows Ereignisanzeige
 
-Die folgenden Ereignisse für den kontrollierten Ordnerzugriff werden in der Windows unter Microsoft/Windows/Windows Defender/Operational angezeigt.
+Die folgenden Kontrollierten Ordnerzugriffsereignisse werden in Windows Ereignisanzeige unter dem Ordner "Microsoft/Windows/Windows Defender/Operational" angezeigt.
 
 Ereignis-ID | Beschreibung
 -|-
  5007 | Ereignis, wenn Einstellungen geändert werden
- 1124 | Überwachtes kontrolliertes Ordnerzugriffsereignis
+ 1124 | Überwachtes Ereignis für den kontrollierten Ordnerzugriff
  1123 | Blockiertes Ereignis für den kontrollierten Ordnerzugriff
 
 > [!TIP]
-> Sie können ein Windows [Event Forwarding-Abonnement](https://docs.microsoft.com/windows/win32/wec/setting-up-a-source-initiated-subscription) konfigurieren, um die Protokolle zentral zu erfassen. 
+> Sie können ein [Windows Ereignisweiterleitungsabonnement](/windows/win32/wec/setting-up-a-source-initiated-subscription) so konfigurieren, dass die Protokolle zentral erfasst werden. 
 
 ## <a name="customize-protected-folders-and-apps"></a>Anpassen geschützter Ordner und Apps
 
-Während der Auswertung können Sie der Liste der geschützten Ordner hinzufügen oder bestimmten Apps das Ändern von Dateien erlauben.
+Während der Auswertung möchten Sie möglicherweise der Liste der geschützten Ordner hinzufügen oder bestimmten Apps erlauben, Dateien zu ändern.
 
-Weitere [Informationen finden](controlled-folders.md) Sie unter Schützen wichtiger Ordner mit kontrolliertem Ordnerzugriff zum Konfigurieren des Features mit Verwaltungstools, einschließlich Gruppenrichtlinien, PowerShell und MDM-Konfigurationsdienstanbietern (CSPs).
+Informationen zum Konfigurieren des Features mit Verwaltungstools, einschließlich Gruppenrichtlinien, PowerShell und MDM-Konfigurationsdienstanbietern (Configuration Service Providers, CSPs), finden Sie unter ["Schützen wichtiger Ordner mit kontrollierten Ordnerzugriff".](controlled-folders.md)
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Schützen wichtiger Ordner mit kontrolliertem Ordnerzugriff](controlled-folders.md)
+* [Schützen wichtiger Ordner mit kontrollierten Ordnerzugriff](controlled-folders.md)
 * [Auswerten des Microsoft Defender für Endpunkt](evaluate-mde.md)
 * [Verwenden des Überwachungsmodus](audit-windows-defender.md)

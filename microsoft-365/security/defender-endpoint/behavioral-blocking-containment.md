@@ -1,7 +1,7 @@
 ---
 title: Verhaltensbasiertes Blockieren und Eindämmen
-description: Erfahren Sie mehr über die Funktionen zum Blockieren und Eindämmung von Verhaltensweisen in Microsoft Defender for Endpoint
-keywords: Microsoft Defender for Endpoint, EDR im Blockmodus, Blockieren des passiven Modus
+description: Erfahren Sie mehr über die Funktionen zum Blockieren und Eindämmen von Verhaltensweisen in Microsoft Defender für Endpunkt
+keywords: Microsoft Defender für Endpunkt, EDR im Blockierungsmodus, Blockieren des passiven Modus
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
 author: denisebmsft
@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: fdaa4d7cbc24ae2ebe28d0856b413f4982fe6b01
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 00ed505b153e5af4d89038bdc53e988ee763827b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51929049"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845642"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Verhaltensbasiertes Blockieren und Eindämmen
 
@@ -34,98 +34,98 @@ ms.locfileid: "51929049"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
+>Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
 
 ## <a name="overview"></a>Übersicht
 
-Die heutige Bedrohungslandschaft wird [](https://docs.microsoft.com/windows/security/threat-protection/intelligence/fileless-threats) von schadloser Schadsoftware überrollt, die vom Land lebt, hochgradig polymorphe Bedrohungen, die schneller mutieren, als herkömmliche Lösungen mithalten können, und vom Menschen betriebene Angriffe, die sich an das anpassen, was Gegner auf gefährdeten Geräten finden. Herkömmliche Sicherheitslösungen reichen nicht aus, um solche Angriffe zu beenden. Sie benötigen gesicherte Funktionen für künstliche Intelligenz (KI) und Gerätelernen (ML), z. B. Verhaltensblockierung und Eindämmung, die in [Defender for Endpoint enthalten sind.](https://docs.microsoft.com/windows/security) 
+Die heutige Bedrohungslandschaft wird von [dateiloser Schadsoftware](/windows/security/threat-protection/intelligence/fileless-threats) übersprungen, die sich außerhalb des Landes befindet, hochgradig polymorphe Bedrohungen, die schneller als herkömmliche Lösungen mithalten können, und von Menschen betriebene Angriffe, die sich an das anpassen, was Angreifer auf kompromittierten Geräten finden. Herkömmliche Sicherheitslösungen sind nicht ausreichend, um solche Angriffe zu stoppen. Sie benötigen künstliche Intelligenz (KI) und Gerätelernfunktionen (ML), die in [Defender für Endpunkt](/windows/security)unterstützt werden, z. B. Verhaltensblockierung und -eindämmung. 
 
-Verhaltensblockierungs- und -eindämmungsfunktionen können dazu beitragen, Bedrohungen basierend auf ihrem Verhalten und ihren Prozessstrukturen zu identifizieren und zu beenden, selbst wenn die Bedrohung mit der Ausführung begonnen hat. Komponenten und Features der nächsten Generation EDR und Defender for Endpoint arbeiten bei den Funktionen zum Blockieren und Eindämmung von Verhaltensweisen zusammen. 
+Funktionen zum Blockieren und Eindämmen von Verhaltensweisen können dazu beitragen, Bedrohungen basierend auf ihren Verhaltensweisen und Prozessstrukturen zu erkennen und zu stoppen, selbst wenn die Bedrohung mit der Ausführung begonnen hat. Die Komponenten und Features von Schutz, EDR und Defender für Endpunkt der nächsten Generation arbeiten bei der Blockierung und Eindämmung von Verhaltensweisen zusammen. 
 
 :::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Verhaltensbasiertes Blockieren und Eindämmen":::
 
-Verhaltensblockierungs- und Eindämmungsfunktionen funktionieren mit mehreren Komponenten und Features von Defender for Endpoint, um Angriffe sofort zu beenden und zu verhindern, dass Angriffe ausgeführt werden.
+Funktionen zum Blockieren und Eindämmen von Verhaltensweisen funktionieren mit mehreren Komponenten und Features von Defender für Endpunkt, um Angriffe sofort zu stoppen und angriffe zu verhindern.
 
-- [Der Schutz der](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) nächsten Generation (einschließlich Microsoft Defender Antivirus) kann Bedrohungen erkennen, indem Verhaltensweisen analysiert und Bedrohungen beendet werden, die bereits ausgeführt wurden.
+- [Der Schutz](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) der nächsten Generation (der Microsoft Defender Antivirus umfasst) kann Bedrohungen erkennen, indem Verhaltensweisen analysiert und Bedrohungen beendet werden, die gestartet wurden.
 
-- [Endpunkterkennung und -reaktion](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (EDR) empfängt Sicherheitssignale im netzwerk-, geräte- und kernel-Verhalten. Wenn Bedrohungen erkannt werden, werden Warnungen erstellt. Mehrere Warnungen desselben Typs werden in Vorfälle aggregiert, was es Ihrem Sicherheitsteam erleichtert, zu untersuchen und zu reagieren.
+- [Die Endpunkterkennung und -antwort](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (EDR) empfängt Sicherheitssignale in Ihrem Netzwerk, Ihren Geräten und Ihrem Kernelverhalten. Wenn Bedrohungen erkannt werden, werden Warnungen erstellt. Mehrere Warnungen des gleichen Typs werden zu Vorfällen aggregiert, was es Ihrem Sicherheitsteam erleichtert, zu untersuchen und zu reagieren.
 
-- [Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) verfügt über eine breite Palette von Optiken für Identitäten, E-Mails, Daten und Apps sowie über die Netzwerk-, Endpunkt- und Kernelverhaltenssignale, die über die EDR. Eine Komponente von [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection), Defender for Endpoint verarbeitet und korreliert diese Signale, löst Erkennungswarnungen aus und verbindet verwandte Warnungen bei Vorfällen.
+- [Defender für Endpunkt](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) verfügt über eine breite Palette von Optiken für Identitäten, E-Mails, Daten und Apps sowie über das Netzwerk-, Endpunkt- und Kernelverhaltenssignale, die über EDR empfangen werden. Eine Komponente von [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection), Defender für Endpunkt verarbeitet und korreliert diese Signale, löst Erkennungswarnungen aus und verbindet zugehörige Warnungen in Vorfällen.
 
-Mit diesen Funktionen können weitere Bedrohungen verhindert oder blockiert werden, auch wenn sie gestartet werden. Wenn verdächtiges Verhalten erkannt wird, ist die Bedrohung enthalten, Warnungen werden erstellt, und Bedrohungen werden in ihren Spuren beendet. 
+Mit diesen Funktionen können weitere Bedrohungen verhindert oder blockiert werden, auch wenn sie gestartet werden. Wenn verdächtiges Verhalten erkannt wird, ist die Bedrohung eingedämmt, Warnungen werden erstellt und Bedrohungen werden auf ihren Spuren gestoppt. 
 
-Die folgende Abbildung zeigt ein Beispiel für eine Warnung, die durch verhaltene Blockierungs- und Eindämmungsfunktionen ausgelöst wurde:
+Die folgende Abbildung zeigt ein Beispiel für eine Warnung, die durch Funktionen zum Blockieren und Eindämmen von Verhaltensweisen ausgelöst wurde:
 
-:::image type="content" source="images/blocked-behav-alert.png" alt-text="Beispiel für eine Warnung durch Verhaltensblockierung und Eindämmung":::
+:::image type="content" source="images/blocked-behav-alert.png" alt-text="Beispiel für eine Warnung durch Verhaltensblockierung und -eindämmung":::
 
-## <a name="components-of-behavioral-blocking-and-containment"></a>Komponenten von Verhaltensblockierung und -eindämmung
+## <a name="components-of-behavioral-blocking-and-containment"></a>Komponenten des Blockierens und Eindämmens von Verhaltensweisen
 
-- Richtliniengesteuerte Regeln zur Reduzierung der **[Angriffsfläche](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)** auf dem Client Vordefinierte allgemeine Angriffsverhalten werden gemäß den Regeln zur Reduzierung der Angriffsfläche an der Ausführung gehindert. Wenn solche Verhaltensweisen ausgeführt werden sollen, werden sie im Microsoft Defender Security Center [https://securitycenter.windows.com](https://securitycenter.windows.com) als Informationswarnungen angezeigt. (Regeln zur Reduzierung der Angriffsfläche sind standardmäßig nicht aktiviert; Sie konfigurieren ihre Richtlinien im Microsoft Defender Security Center.)
+- Regeln zur Reduzierung der **[Angriffsfläche](/microsoft-365/security/defender-endpoint/attack-surface-reduction)** auf dem Client Vordefinierte allgemeine Angriffsverhaltensweisen werden gemäß den Regeln zur Verringerung der Angriffsfläche daran gehindert. Wenn solche Verhaltensweisen ausgeführt werden sollen, werden sie im Microsoft Defender Security Center [https://securitycenter.windows.com](https://securitycenter.windows.com) als Informationswarnungen angezeigt. (Attack Surface Reduction-Regeln sind standardmäßig nicht aktiviert; Sie konfigurieren Ihre Richtlinien im Microsoft Defender Security Center.)
 
-- **[Clientverhaltensblockierung](client-behavioral-blocking.md)** Bedrohungen für Endpunkte werden durch maschinelles Lernen erkannt und dann automatisch blockiert und behoben. (Clientverhaltensblockierung ist standardmäßig aktiviert.) 
+- **[Blockieren von Clientverhalten](client-behavioral-blocking.md)** Bedrohungen auf Endpunkten werden durch maschinelles Lernen erkannt und dann automatisch blockiert und behoben. (Das Blockieren von Clientverhalten ist standardmäßig aktiviert.) 
 
-- **[Blockieren von Feedbackschleifen](feedback-loop-blocking.md)** (auch als schneller Schutz bezeichnet) Bedrohungserkennungen werden durch Verhaltensintelligenz beobachtet. Bedrohungen werden angehalten und an der Ausführung auf anderen Endpunkten gehindert. (Das Blockieren von Feedbackschleifen ist standardmäßig aktiviert.) 
+- Das Blockieren von **[Feedbackschleifen](feedback-loop-blocking.md)** (auch als schneller Schutz bezeichnet) Bedrohungserkennungen werden durch Verhaltensintelligenz beobachtet. Bedrohungen werden angehalten und daran gehindert, auf anderen Endpunkten ausgeführt zu werden. (Das Blockieren von Feedbackschleifen ist standardmäßig aktiviert.) 
 
-- **[Endpunkterkennung und -antwort (EDR) im Blockmodus](edr-in-block-mode.md)** Bösartige Artefakte oder Verhaltensweisen, die durch den Schutz nach der Verletzung beobachtet werden, werden blockiert und enthalten. EDR im Blockmodus funktioniert, auch wenn Microsoft Defender Antivirus nicht die primäre Antivirenlösung ist. (EDR im Blockmodus ist standardmäßig nicht aktiviert; Sie aktivieren es im Microsoft Defender Security Center.) 
+- **[Endpunkterkennung und -antwort (EDR) im Blockierungsmodus](edr-in-block-mode.md)** Bösartige Artefakte oder Verhaltensweisen, die durch den Schutz nach der Verletzung beobachtet werden, werden blockiert und eingedämmt. EDR im Blockierungsmodus funktioniert auch dann, wenn Microsoft Defender Antivirus nicht die primäre Antivirenlösung ist. (EDR im Blockierungsmodus ist nicht standardmäßig aktiviert, sie wird im Microsoft Defender Security Center aktiviert.) 
 
-Erwarten Sie mehr im Bereich der Verhaltensblockierung und -eindämmung, da Microsoft die Features und Funktionen des Bedrohungsschutzes weiter verbessert. Informationen zu den geplanten und jetzt geplanten Plänen finden Sie unter [Microsoft 365 Roadmap](https://www.microsoft.com/microsoft-365/roadmap).
+Erwarten Sie mehr im Bereich der Blockierung und Eindämmung von Verhaltensweisen, da Microsoft die Funktionen und Funktionen für den Bedrohungsschutz weiter verbessert. Wenn Sie sehen möchten, was jetzt geplant ist und welche Bereitstellung geplant ist, besuchen Sie die [Roadmap für Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap)
 
-## <a name="examples-of-behavioral-blocking-and-containment-in-action"></a>Beispiele für Verhaltensblockierung und Eindämmung in Aktion
+## <a name="examples-of-behavioral-blocking-and-containment-in-action"></a>Beispiele für Verhaltensblockierung und -eindämmung in Aktion
 
-Verhaltensblockierungs- und Eindämmungsfunktionen haben Angreifertechniken blockiert, z. B.:
+Verhaltensbasierte Blockierungs- und Eindämmungsfunktionen haben Angreifertechniken blockiert, z. B. die folgenden:
 
-- Abdumping von Anmeldeinformationen aus LSASS
-- Prozessübergreifende Einspritzung
-- Prozesshing
+- Anmeldeinformationen von LSASS
+- Prozessübergreifende Einfügung
+- Prozessbeendung
 - Umgehung der Benutzerkontensteuerung
-- Manipulation von Antivirenprogrammen (z. B. Deaktivieren oder Hinzufügen der Schadsoftware als Ausschluss)
-- Kontaktieren von Command and Control (C&C) zum Herunterladen von Nutzlasten
-- Minenmining
+- Manipulation von Antivirensoftware (z. B. Deaktivieren oder Hinzufügen der Schadsoftware als Ausschluss)
+- Kontaktieren von Befehl und Steuerelement (C&C) zum Herunterladen von Nutzlasten
+- Minen von Münzen
 - Änderung des Startdatensatzes
 - Pass-the-Hash-Angriffe
 - Installation des Stammzertifikats
 - Ausnutzungsversuch für verschiedene Sicherheitsrisiken
 
-Im Folgenden finden Sie zwei reale Beispiele für das Blockieren und Eindähen von Verhaltensweisen in Aktion.
+Im Folgenden finden Sie zwei praxisbezogene Beispiele für Verhaltensblockierung und -eindämmung in Aktion.
 
-### <a name="example-1-credential-theft-attack-against-100-organizations"></a>Beispiel 1: Angriff auf den Diebstahl von Anmeldeinformationen gegen 100 Organisationen
+### <a name="example-1-credential-theft-attack-against-100-organizations"></a>Beispiel 1: Diebstahl von Anmeldeinformationen gegen 100 Organisationen
 
-Wie unter In hoten verfolgung von schwer fassbaren Bedrohungen [beschrieben: AI-basierte](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks)verhaltensbasierte Blockierung beendet Angriffe in ihren Spuren, wurde ein Angriff auf Anmeldeinformationendiebstahl gegen 100 Organisationen auf der ganzen Welt durch verhaltensbasierte Blockierungs- und Eindämmungsfunktionen beendet. Spear-Phishing-E-Mail-Nachrichten, die ein Lockendokument enthielten, wurden an die zielgerichteten Organisationen gesendet. Wenn ein Empfänger die Anlage geöffnet hat, konnte ein zugehöriges Remotedokument Code auf dem Gerät des Benutzers ausführen und Lokibot-Schadsoftware laden, die Anmeldeinformationen gestohlen, gestohlene Daten exfiltriert und auf weitere Anweisungen von einem Befehls- und Kontrollserver gewartet hat. 
+Wie unter "Bedrohungen, die [nur schwer zu erkennen sind" beschrieben: Ki-gesteuertes verhaltensbasiertes Blockieren stoppt Angriffe in ihren Spuren,](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks)ein Angriff auf den Diebstahl von Anmeldeinformationen gegen 100 Organisationen auf der ganzen Welt wurde durch Verhaltensblockierungs- und Eindämmungsfunktionen gestoppt. Spear-Phishing-E-Mail-Nachrichten, die ein Lockdokument enthielten, wurden an die Zielorganisationen gesendet. Wenn ein Empfänger die Anlage öffnete, konnte ein verwandtes Remotedokument Code auf dem Gerät des Benutzers ausführen und Lokibot-Schadsoftware laden, die Anmeldeinformationen gestohlen, gestohlene Daten exfiltriert und auf weitere Anweisungen von einem Befehls- und Steuerungsserver gewartet hat. 
 
-Verhaltensbasierte Gerätelernmodelle in Defender for Endpoint haben die Techniken des Angreifers an zwei Punkten in der Angriffskette erfasst und beendet:
-- Die erste Schutzebene hat das Exploitverhalten erkannt. Gerätelernklassifikatoren in der Cloud identifizierten die Bedrohung ordnungsgemäß als und angewiesenen das Clientgerät sofort, den Angriff zu blockieren.
-- Die zweite Schutzschicht, die dazu beit half, Fälle zu beenden, in denen der Angriff über die erste Ebene hinaus kam, erkannte Prozesshohlen, beendete diesen Prozess und entfernte die entsprechenden Dateien (z. B. Lokibot). 
+Verhaltensbasierte Gerätelernmodelle in Defender für Endpunkt haben die Techniken des Angreifers an zwei Punkten in der Angriffskette abgefangen und beendet:
+- Die erste Schutzebene hat das Exploit-Verhalten erkannt. Gerätelernklassifizierungen in der Cloud haben die Bedrohung richtig erkannt und das Clientgerät sofort angewiesen, den Angriff zu blockieren.
+- Die zweite Schutzebene, die dazu beigetragen hat, Fälle zu stoppen, in denen der Angriff über die erste Ebene hinausgehe, prozessabfällig wurde, diesen Prozess beendete und die entsprechenden Dateien entfernte (z. B. Lokibot). 
 
-Während der Angriff erkannt und beendet wurde, wurden Warnungen, z. B. eine "Erstzugriffswarnung", ausgelöst und im Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) angezeigt.
+Während der Angriff erkannt und beendet wurde, wurden Warnungen, z. B. eine "Warnung zum ersten Zugriff", ausgelöst und im Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ):
 
-:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Anfängliche Zugriffswarnung im Microsoft Defender Security Center":::
+:::image type="content" source="images/behavblockcontain-initialaccessalert.png" alt-text="Warnung zum ersten Zugriff im Microsoft Defender Security Center":::
 
-In diesem Beispiel wird gezeigt, wie verhaltensbasierte Gerätelernmodelle in der Cloud neue Schutzebenen gegen Angriffe hinzufügen, auch nachdem sie ausgeführt wurden.
+Dieses Beispiel zeigt, wie verhaltensbasierte Gerätelernmodelle in der Cloud neue Schutzebenen vor Angriffen hinzufügen, auch nachdem sie gestartet wurden.
 
-### <a name="example-2-ntlm-relay---juicy-potato-malware-variant"></a>Beispiel 2: NTLM-Relay – Schadsoftwarevariante "Juicy-
+### <a name="example-2-ntlm-relay---juicy-potato-malware-variant"></a>Beispiel 2: NTLM-Relay – Schadsoftwarevariante "Juicy Variant"
 
-Wie im kürzlich veröffentlichten Blogbeitrag [Behavioral blocking and containment: Transforming optics into protection](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection)beschrieben, hat Defender for Endpoint im Januar 2020 eine Aktivität zur Rechteeskalation auf einem Gerät in einer Organisation erkannt. Eine Warnung mit dem Namen "Mögliche Rechteeskalation mithilfe von NTLM-Relay" wurde ausgelöst.
+Wie im kürzlich veröffentlichten Blogbeitrag ["Verhaltensblockierung und -eindämmung: Transformieren von Optik in Schutz"](https://www.microsoft.com/security/blog/2020/03/09/behavioral-blocking-and-containment-transforming-optics-into-protection)beschrieben, hat Defender für Endpunkt im Januar 2020 eine Berechtigungseskalierungsaktivität auf einem Gerät in einer Organisation erkannt. Eine Warnung namens "Mögliche Berechtigungseskalation mit NTLM-Relay" wurde ausgelöst.
 
-:::image type="content" source="images/NTLMalertjuicypotato.png" alt-text="NTLM-Warnung für Schadsoftware &quot;Juicy-":::
+:::image type="content" source="images/NTLMalertjuicypotato.png" alt-text="NTLM-Warnung für Schadsoftware vom &quot;Juicy&quot;-Schadsoftware":::
 
-Die Bedrohung stellte sich als Schadsoftware heraus. Es handelte sich um eine neue, nicht gesehene Variante eines berüchtigten Hackertools namens Juicy Escalation, das von Angreifern verwendet wird, um die Rechteeskalation auf einem Gerät zu erhalten. 
+Die Bedrohung hat sich als Schadsoftware erwiesen. Es handelte sich um eine neue, noch nicht gesehene Variante eines Hacker-Tools namens Juicy Escalation, das von Angreifern verwendet wird, um eine Rechteeskalation auf einem Gerät zu erhalten. 
 
-Minuten nach dem Auslösen der Warnung wurde die Datei analysiert und als schädlich bestätigt. Der Prozess wurde angehalten und blockiert, wie in der folgenden Abbildung gezeigt:
+Minuten nach dem Auslösen der Warnung wurde die Datei analysiert und als bösartig bestätigt. Der Prozess wurde angehalten und blockiert, wie in der folgenden Abbildung dargestellt:
 
 :::image type="content" source="images/Artifactblockedjuicypotato.png" alt-text="Artefakt blockiert":::
 
-Wenige Minuten nach dem Blockieren des Artefakts wurden mehrere Instanzen derselben Datei auf demselben Gerät blockiert, was verhindert, dass zusätzliche Angreifer oder andere Schadsoftware auf dem Gerät bereitgestellt werden. 
+Ein paar Minuten nach der Blockierung des Artefakts wurden mehrere Instanzen derselben Datei auf demselben Gerät blockiert, wodurch verhindert wurde, dass zusätzliche Angreifer oder andere Schadsoftware auf dem Gerät bereitgestellt werden. 
 
-In diesem Beispiel wird gezeigt, dass bedrohungen bei Denk- und Eindämmungsfunktionen automatisch erkannt, enthalten und blockiert werden. 
+Dieses Beispiel zeigt, dass Bedrohungen bei der Blockierung und Eindämmung von Verhaltensweisen automatisch erkannt, eingedämmt und blockiert werden. 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Weitere Informationen zu Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
+- [Weitere Informationen zu Defender für Endpunkt](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
 
-- [Konfigurieren von Regeln zur Reduzierung der Angriffsfläche](attack-surface-reduction.md)
+- [Konfigurieren der Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md)
 
-- [Aktivieren EDR im Blockmodus](edr-in-block-mode.md)
+- [Aktivieren EDR im Blockierungsmodus](edr-in-block-mode.md)
 
-- [Siehe aktuelle globale Bedrohungsaktivität](https://www.microsoft.com/wdsi/threats)
+- [Anzeigen der aktuellen globalen Bedrohungsaktivität](https://www.microsoft.com/wdsi/threats)
 
-- [Verschaffen Sie sich eine Übersicht über Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-threat-protection)
+- [Übersicht über Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)

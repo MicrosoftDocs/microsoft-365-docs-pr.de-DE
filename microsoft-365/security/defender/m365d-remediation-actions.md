@@ -1,6 +1,6 @@
 ---
 title: Korrekturaktionen in Microsoft 365 Defender
-description: Erhalten Sie einen Überblick über Korrekturaktionen, die automatisierten Untersuchungen in Microsoft 365 Defender folgen.
+description: Erhalten Sie einen Überblick über Korrekturaktionen, die automatisierten Untersuchungen in Microsoft 365 Defender folgen
 keywords: automatisch, Untersuchung, Warnung, Trigger, Aktion, Wartung
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: f025f23242c28f698e6f67755cc59d21c4463914
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: c8d3838194c25ba49b2611dc355b21e228291b01
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782945"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842528"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Korrekturaktionen in Microsoft 365 Defender
 
@@ -40,7 +40,7 @@ Während und nach einer automatisierten Untersuchung in Microsoft 365 Defender w
 
 > [!IMPORTANT]
 > Ob Korrekturmaßnahmen automatisch oder nur nach Genehmigung durchgeführt werden, hängt von bestimmten Einstellungen ab, z. B. von den Automatisierungsstufen. Weitere Informationen finden Sie in den folgenden Artikeln:
-> - [Konfigurieren Der Funktionen für automatisierte Untersuchung und Reaktion in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md)
+> - [Konfigurieren Der Funktionen für automatische Untersuchung und Reaktion in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md)
 > - [Wie Bedrohungen auf Geräten behoben werden](../defender-endpoint/automated-investigations.md)
 > - [Bedrohungen und Abhilfemaßnahmen für E-Mail-& Inhalte für die Zusammenarbeit](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
@@ -74,7 +74,7 @@ Zusätzlich zu Korrekturmaßnahmen, die auf automatisierte Untersuchungen folgen
 - Manuelle E-Mail-Aktion, z. B. vorläufiges Löschen von E-Mail-Nachrichten 
 - [Erweiterte Suchaktion](../defender-endpoint/advanced-hunting-overview.md) auf Geräten oder E-Mails
 - [Explorer-Aktion](../office-365-security/threat-explorer.md) für E-Mail-Inhalte, z. B. Verschieben von E-Mails in Junk, vorläufiges Löschen von E-Mails oder endgültiges Löschen von E-Mails
-- Manuelle [Liveantwortaktion,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) z. B. Löschen einer Datei, Beenden eines Prozesses und Entfernen einer geplanten Aufgabe
+- Manuelle [Liveantwortaktion,](/windows/security/threat-protection/microsoft-defender-atp/live-response) z. B. Löschen einer Datei, Beenden eines Prozesses und Entfernen einer geplanten Aufgabe
 - Live-Antwortaktion mit [Microsoft Defender für Endpunkt-APIs,](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)z. B. Isolieren eines Geräts, Ausführen eines Antivirenscans und Abrufen von Informationen zu einer Datei
 
 ## <a name="next-steps"></a>Nächste Schritte

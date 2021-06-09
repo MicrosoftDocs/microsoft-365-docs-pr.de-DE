@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4742a32fd899f41d4e7772c52415891cdd8895bf
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 2d78b7ea31c45220735a8579d728f9c0f7bda181
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769521"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842110"
 ---
 # <a name="create-an-app-to-access-microsoft-defender-for-endpoint-without-a-user"></a>Erstellen einer App für den Zugriff auf Microsoft Defender für Endpunkt ohne Benutzer
 
@@ -39,7 +39,7 @@ ms.locfileid: "52769521"
 
 Auf dieser Seite wird beschrieben, wie Sie eine Anwendung erstellen, um programmgesteuerten Zugriff auf Defender für Endpunkt ohne Einen Benutzer zu erhalten. Wenn Sie programmgesteuerten Zugriff auf Defender für Endpunkt im Namen eines Benutzers benötigen, lesen [Sie "Zugriff mit Benutzerkontext](exposed-apis-create-app-nativeapp.md)erhalten". Wenn Sie nicht sicher sind, welchen Zugriff Sie benötigen, lesen Sie ["Erste Schritte".](apis-intro.md)
 
-Microsoft Defender für Endpunkt macht einen Großteil seiner Daten und Aktionen über eine Reihe programmgesteuerter APIs verfügbar. Diese APIs helfen Ihnen bei der Automatisierung von Arbeitsabläufen und Innovationen basierend auf den Defender für Endpunkt-Funktionen. Der API-Zugriff erfordert die OAuth2.0-Authentifizierung. Weitere Informationen finden Sie unter [OAuth 2.0 Authorization Code Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender für Endpunkt macht einen Großteil seiner Daten und Aktionen über eine Reihe programmgesteuerter APIs verfügbar. Diese APIs helfen Ihnen bei der Automatisierung von Arbeitsabläufen und Innovationen basierend auf den Defender für Endpunkt-Funktionen. Der API-Zugriff erfordert die OAuth2.0-Authentifizierung. Weitere Informationen finden Sie unter [OAuth 2.0-Autorisierungscode Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 Im Allgemeinen müssen Sie die folgenden Schritte ausführen, um die APIs zu verwenden:
 - Erstellen Sie eine Azure Active Directory (Azure AD)-Anwendung.
@@ -58,7 +58,7 @@ In diesem Artikel wird erläutert, wie Sie eine Azure AD-Anwendung erstellen, ei
 
 3. Wählen Sie im Registrierungsformular einen Namen für Ihre Anwendung aus, und wählen Sie dann **Registrieren** aus.
 
-4. Um Ihrer App den Zugriff auf Defender für Endpunkt zu ermöglichen und ihr die Berechtigung **"Alle Warnungen lesen"** zuzuweisen, wählen Sie auf der Anwendungsseite **API-Berechtigungen**  >  **hinzufügen-APIs** aus, die meine Organisation >  >  **verwendet,** geben Sie **WindowsDefenderATP** ein, und wählen Sie dann **WindowsDefenderATP** aus.
+4. Um Ihrer App den Zugriff auf Defender für Endpunkt zu ermöglichen und ihr die Berechtigung **"Alle Warnungen lesen"** zuzuweisen, wählen Sie auf der Anwendungsseite **API-Berechtigungen**  >  **hinzufügen,** die meine Organisation >  >  **verwendet,** geben Sie **WindowsDefenderATP** ein, und wählen Sie dann **WindowsDefenderATP** aus.
 
    > [!NOTE]
    > *WindowsDefenderATP* wird nicht in der ursprünglichen Liste angezeigt. Beginnen Sie damit, den Namen in das Textfeld zu schreiben, damit er angezeigt wird.
@@ -116,7 +116,7 @@ In diesem Artikel wird erläutert, wie Sie eine Azure AD-Anwendung erstellen, ei
 
 ## <a name="get-an-access-token"></a>Abrufen eines Zugriffstokens
 
-Weitere Informationen zu Azure AD-Token finden Sie im [Azure AD-Lernprogramm.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Weitere Informationen zu Azure AD-Token finden Sie im [Azure AD-Lernprogramm.](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="use-powershell"></a>PowerShell verwenden
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8fc9bb53fd2cfe768710129704c13ee751a695a2
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: d5a59c3cd57aa369b1edb46eebddffb84a2b8c78
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770445"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52845150"
 ---
 # <a name="list-vulnerabilities-by-recommendation"></a>Auflisten von Sicherheitsrisiken nach Empfehlung
 
@@ -105,5 +105,5 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 ```
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Risikobasiertes Bedrohungs- & Vulnerability Management](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
-- [Sicherheitsempfehlungen für Sicherheitsrisiken &](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation)
+- [Risikobasiertes Bedrohungs- & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt)
+- [Sicherheitsempfehlungen für Sicherheitsrisiken &](/microsoft-365/security/defender-endpoint/tvm-security-recommendation)

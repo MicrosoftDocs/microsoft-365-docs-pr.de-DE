@@ -1,6 +1,6 @@
 ---
-title: Verwalten von Microsoft Defender for Endpoint-Vorfällen
-description: Verwalten von Vorfällen durch Zuweisen, Aktualisieren des Status oder Festlegen der Klassifizierung.
+title: Verwalten von Microsoft Defender für Endpunkt-Vorfällen
+description: Verwalten Sie Vorfälle, indem Sie sie zuweisen, ihren Status aktualisieren oder die Klassifizierung festlegen.
 keywords: Vorfälle, verwalten, zuweisen, Status, Klassifizierung, echte Warnung, falsche Warnung
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: abb538972b48f8790286c0a546eecdd69fc83fb5
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: c86b53abf54788740c8c78cb0ecf9251b10ea8f7
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862139"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52842338"
 ---
-# <a name="manage-microsoft-defender-for-endpoint-incidents"></a>Verwalten von Microsoft Defender for Endpoint-Vorfällen
+# <a name="manage-microsoft-defender-for-endpoint-incidents"></a>Verwalten von Microsoft Defender für Endpunkt-Vorfällen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -34,39 +34,39 @@ ms.locfileid: "51862139"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Die Verwaltung von Vorfällen ist ein wichtiger Bestandteil jedes Cybersicherheitsvorgangs. Sie können Vorfälle verwalten, indem Sie einen Vorfall in der **Incidents-Warteschlange** oder im **Bereich Incidents Management auswählen.** 
-
-
-Wenn Sie einen Vorfall aus  der **Incidents-Warteschlange auswählen,** wird der Bereich "Vorfallverwaltung" geöffnet, auf dem Sie die Vorfallseite für Details öffnen können.
+Die Verwaltung von Vorfällen ist ein wichtiger Bestandteil jedes Cybersicherheitsvorgangs. Sie können Vorfälle verwalten, indem Sie einen Vorfall in der **Vorfallwarteschlange** oder im **Bereich "Vorfallverwaltung"** auswählen. 
 
 
-![Abbildung des Bereichs "Verwaltung von Vorfällen"](images/atp-incidents-mgt-pane-updated.png)
+Wenn Sie einen Vorfall aus der **Vorfallwarteschlange** auswählen, wird der **Bereich "Vorfallverwaltung"** angezeigt, auf dem Sie die Vorfallseite für Details öffnen können.
 
-Sie können Vorfälle sich selbst zuweisen, den Status und die Klassifizierung ändern, sie umbenennen oder kommentieren, um den Fortschritt nachzuverfolgen.
+
+![Abbildung des Bereichs "Vorfallverwaltung"](images/atp-incidents-mgt-pane-updated.png)
+
+Sie können Sich selbst Vorfälle zuweisen, den Status und die Klassifizierung ändern, umbenennen oder kommentieren, um ihren Fortschritt nachzuverfolgen.
 
 > [!TIP]
-> Für eine zusätzliche Sichtbarkeit auf einen Blick werden Vorfallnamen automatisch basierend auf Warnungsattributen wie der Anzahl betroffener Endpunkte, betroffener Benutzer, Erkennungsquellen oder Kategorien generiert. Auf diese Weise können Sie den Umfang des Vorfalls schnell verstehen.
+> Für eine zusätzliche Sichtbarkeit auf einen Blick werden Vorfallnamen automatisch basierend auf Warnungsattributen generiert, z. B. der Anzahl der betroffenen Endpunkte, betroffenen Benutzer, Erkennungsquellen oder Kategorien. Auf diese Weise können Sie den Umfang des Vorfalls schnell verstehen.
 >
-> Beispiel: *Mehrstufiger Vorfall auf mehreren Endpunkten, die von mehreren Quellen gemeldet wurden.*
+> Beispiel: *Mehrstufiger Vorfall auf mehreren Endpunkten, die von mehreren Quellen gemeldet werden.*
 >
-> Vorfälle, die vor dem Rollout der automatischen Benennung von Vorfällen vorhanden waren, behalten ihre Namen bei.
+> Vorfälle, die vor dem Rollout der automatischen Benennung von Vorfällen vorhanden waren, behalten ihre Namen.
 >
 
 
-![Abbildung der Detailseite für Vorfälle](images/atp-incident-details-updated.png)
+![Abbildung der Vorfalldetailseite](images/atp-incident-details-updated.png)
 
 ## <a name="assign-incidents"></a>Zuweisen von Vorfällen
-Wenn ein Vorfall noch nicht zugewiesen wurde, können Sie **zuweisen** auswählen, um den Vorfall sich selbst zuzuordnen. Dies setzt voraus, dass nicht nur der Vorfall, sondern auch alle ihm zugeordneten Alerts in Ihrem Besitz sind.
+Wenn ein Vorfall noch nicht zugewiesen wurde, können Sie **"Mir zuweisen"** auswählen, um den Vorfall sich selbst zuzuweisen. Dies setzt voraus, dass nicht nur der Vorfall, sondern auch alle ihm zugeordneten Alerts in Ihrem Besitz sind.
 
 ## <a name="set-status-and-classification"></a>Festlegen des Status und der Klassifizierung
 ### <a name="incident-status"></a>Status des Vorfalls
 Sie können Ereignisse kategorisieren (z.B. als **aktive** oder **aufgelöste**), indem Sie deren Status ändern, während ihre Untersuchung voranschreitet. Auf diese Weise können Sie organisieren und verwalten, wie Ihr Team auf Vorfälle reagiert.
 
-Beispielsweise kann Ihr SoC-Analyst die dringenden **Aktiven** Vorfälle für den Tag überprüfen und sie sich selbst zur Untersuchung zuweisen.
+Beispielsweise kann Ihr SoC-Analyst die dringenden **aktiven** Vorfälle für den Tag überprüfen und sie sich selbst zur Untersuchung zuweisen.
 
-Alternativ kann Ihr SoC-Analyst den Vorfall als **Aufgelöst** festlegen, wenn der Vorfall behoben wurde. 
+Alternativ kann Ihr SoC-Analyst den Vorfall als **behoben** festlegen, wenn der Vorfall behoben wurde. 
 
 ### <a name="classification"></a>Klassifizierung
 Sie können festlegen, dass keine Klassifizierung festgelegt wird, oder Sie können angeben, ob ein Vorfall wahr oder falsch ist. Auf diese Weise kann das Team Muster erkennen und von ihnen lernen.
@@ -81,6 +81,6 @@ Hinzugefügte Kommentare werden sofort in diesem Bereich angezeigt.
 
 
 ## <a name="related-topics"></a>Verwandte Themen
-- [Vorfallswarteschlange](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [Vorfallswarteschlange](/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Anzeigen und Organisieren der Vorfallswarteschlange](view-incidents-queue.md)
 - [Untersuchen von Vorfällen](investigate-incidents.md)
