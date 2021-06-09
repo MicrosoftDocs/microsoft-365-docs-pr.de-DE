@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: d8f589da32ae72383bbe2da7624c9bb846265679
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 26695df0e34c0e06adc4f58acf3fea83122c1982
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809299"
+ms.locfileid: "52844478"
 ---
 # <a name="create-a-custom-gradual-rollout-process-for-microsoft-defender-updates"></a>Erstellen eines benutzerdefinierten schrittweisen Rollouts für Microsoft Defender-Updates
 
@@ -54,7 +54,7 @@ In der folgenden Tabelle sind die verfügbaren Gruppenrichtlinieneinstellungen z
 > [!NOTE]
 > Eine aktualisierte Defender ADMX-Vorlage wird zusammen mit der 21H2-Version von Windows 10 veröffentlicht.
 
-Mithilfe von [Gruppenrichtlinien](https://docs.microsoft.com/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN)können Sie   Microsoft Defender Antivirus auf Ihren Endpunkten konfigurieren und verwalten.
+Mithilfe von [Gruppenrichtlinien](/windows/win32/srvnodes/group-policy?redirectedfrom=MSDN)können Sie   Microsoft Defender Antivirus auf Ihren Endpunkten konfigurieren und verwalten.
 
 Im Allgemeinen können Sie das folgende Verfahren verwenden, um Microsoft Defender Antivirus Gruppenrichtlinieneinstellungen zu konfigurieren oder zu ändern:
 
@@ -74,7 +74,7 @@ Im Allgemeinen können Sie das folgende Verfahren verwenden, um Microsoft Defend
 
 Folgen Sie den Anweisungen im folgenden Link, um eine benutzerdefinierte Richtlinie in Intune zu erstellen:
 
-[Hinzufügen von benutzerdefinierten Einstellungen für Windows 10 Geräte in Microsoft Intune – Azure \| Microsoft Docs](https://docs.microsoft.com/mem/intune/configuration/custom-settings-windows-10)
+[Hinzufügen von benutzerdefinierten Einstellungen für Windows 10 Geräte in Microsoft Intune – Azure \| Microsoft Docs](/mem/intune/configuration/custom-settings-windows-10)
 
 ## <a name="powershell"></a>PowerShell
 
@@ -94,4 +94,4 @@ Beispiel:
 
 Dient zum Konfigurieren von `Set-MpPreference -PlatformUpdatesChannel Beta` Plattformupdates für die Eintreffen aus dem Betakanal.
 
-Weitere Informationen zu den Parametern und deren Konfiguration finden Sie unter [Set-MpPreference (Defender) | Microsoft Docs](https://docs.microsoft.com/powershell/module/defender/set-mppreference?view=windowsserver2019-ps).
+Weitere Informationen zu den Parametern und deren Konfiguration finden Sie unter [Set-MpPreference (Defender) | Microsoft Docs](/powershell/module/defender/set-mppreference?view=windowsserver2019-ps).

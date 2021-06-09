@@ -1,5 +1,5 @@
 ---
-title: Benutzern das Zurücksetzen ihrer Kennwörter ermöglichen
+title: Zulassen, dass Benutzer ihre Kennwörter zurücksetzen
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -20,29 +20,33 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Erfahren Sie, wie Sie Benutzern das Zurücksetzen ihrer eigenen Kennwörter in Microsoft 365 Business Premium.
-ms.openlocfilehash: 62f82f106327c5378310bac0d41fde8462449329
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+description: Erfahren Sie, wie Benutzer ihre eigenen Kennwörter in Microsoft 365 Business Premium zurücksetzen können.
+ms.openlocfilehash: b3cdd388c27b0f75bddb2544e36bd3ade210955b
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903706"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841318"
 ---
 # <a name="set-up-self-service-password-reset"></a>Einrichten der Self-Service-Kennwortzurücksetzung
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3AY8S?autoplay=false]
 
-Damit Ihre Benutzer ihre eigenen Kennwörter zurücksetzen können, ohne sie jedes Mal kontaktieren zu müssen, können Sie die Self-Service-Kennwortzurücksetzung in Microsoft 365 Business Premium.
+Damit Ihre Benutzer ihre eigenen Kennwörter zurücksetzen können, ohne sie jedes Mal kontaktieren zu müssen, können Sie die Self-Service-Kennwortzurücksetzung in Microsoft 365 Business Premium einrichten.
 
 ## <a name="try-it"></a>Probieren Sie es aus!
 
-1. Wählen Sie im Microsoft 365 Admin Center im linken Navigationsbereich die Option **Einstellungen** und dann Sicherheit **& Datenschutz aus.**
-1. Wählen **Sie unter Ihre Eigenen Kennwörter zurücksetzen** lassen die Option Azure AD Admin Center **aus.**
-1. Wählen Sie im linken Navigationsbereich **Benutzer** aus, und wählen Sie dann auf der Seite Benutzer **–** alle Benutzer die Option **Kennwortzurücksetzung aus.**
-1. Wählen **Sie Alle** aus, um die Self-Service-Kennwortzurücksetzung zu aktivieren, und wählen Sie dann Speichern **aus.**
+1. Wählen Sie im Microsoft 365 Admin Center im linken Navigationsbereich **Einstellungen** und dann **Sicherheit & Datenschutz** aus.
+1. Wählen Sie unter **"Zulassen, dass Ihre Benutzer ihre eigenen Kennwörter zurücksetzen"** das **Azure AD Admin Center** aus.
+1. Wählen Sie im linken Navigationsbereich **"Benutzer"** und dann auf der Seite **"Benutzer – alle Benutzer"** die Option **"Kennwortzurücksetzung" aus.**
+1. Wählen Sie **"Alle"** aus, um die Self-Service-Kennwortzurücksetzung zu aktivieren, und wählen Sie dann **"Speichern"** aus.
 
-Wenn sich ein Benutzer das nächste Mal bei ihrem Konto einschreibt, wird er nach seiner Benutzer-ID und dem Kennwort gefragt. Sie wählen **Weiter** aus, und wählen dann aus, ob sie sich mit ihrem Telefon, ihrer E-Mail oder mit beiden authentifizieren möchten. Sie geben den empfangenen Code ein, wählen **Überprüfen** und dann **Fertig stellen aus.** Wenn sie fertig sind, können sie ihr eigenes Kennwort zurücksetzen.
+Wenn sich ein Benutzer das nächste Mal bei ihrem Konto anmeldet, wird er nach seiner Benutzer-ID und dem Kennwort gefragt. Sie wählen **"Weiter"** und dann aus, ob sie sich mit ihrem Telefon, ihrer E-Mail oder mit beiden authentifizieren möchten. Sie geben den empfangenen Code ein, wählen **"Überprüfen"** und dann **"Fertig stellen"** aus. Wenn sie fertig sind, können sie ihr eigenes Kennwort zurücksetzen.
 
-## <a name="related-content"></a>Verwandte Inhalte 
+## <a name="related-content"></a>Verwandte Inhalte
 
-[Festlegen der Kennwortablaufrichtlinie](https://docs.microsoft.com/microsoft-365/admin/manage/set-password-expiration-policy) für Ihre [](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire) Organisation (Artikel) Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft (Artikel) [](https://docs.microsoft.com/microsoft-365/admin/add-users/strong-password) Starke Kennwortanforderungen für Benutzer deaktivieren (Artikel)
+[Festlegen der Kennwortablaufrichtlinie für Ihre Organisation](/microsoft-365/admin/manage/set-password-expiration-policy) (Artikel)
+
+[Festlegen, dass das Kennwort eines einzelnen Benutzers nie abläuft](/microsoft-365/admin/add-users/set-password-to-never-expire) (Artikel)
+
+[Deaktivieren der Anforderungen für sichere Kennwörter für Benutzer](/microsoft-365/admin/add-users/strong-password) (Artikel)

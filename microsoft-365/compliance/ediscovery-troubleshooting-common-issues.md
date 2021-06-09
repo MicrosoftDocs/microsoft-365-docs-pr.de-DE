@@ -19,12 +19,12 @@ ms.assetid: ''
 description: Erfahren Sie mehr über grundlegende Schritte zur Problembehandlung, die Sie ausführen können, um allgemeine Probleme in Office 365 eDiscovery zu beheben.
 siblings_only: true
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 26ca41774e1e09619fdf5e518258f8acf3a9d938
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 28c092cefbdd8add46d3f36aa118e230d16a918a
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809119"
+ms.locfileid: "52822238"
 ---
 # <a name="investigate-troubleshoot-and-resolve-common-ediscovery-issues"></a>Untersuchen, Beheben und Beheben allgemeiner eDiscovery-Probleme
 
@@ -112,7 +112,7 @@ Bei einer eDiscovery-Suche tritt ein Fehler `recipient not found` auf. Dieser Fe
 
 1. Stellen Sie eine Verbindung mit [Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) her.
 
-2. Führen Sie den folgenden Befehl aus, um zu überprüfen, ob der Benutzer mit Exchange Online Protection synchronisiert wird:
+2. Führen Sie den folgenden Befehl aus, um zu überprüfen, ob der Benutzer mit Exchange Online Protection synchronisiert ist:
 
    ```powershell
    Get-Recipient <userId> | FL
@@ -226,7 +226,7 @@ Dies ist ein clientseitiges Problem, und um es zu beheben, versuchen Sie die fol
 
 1. Versuchen Sie, einen anderen Client/Computer zum Herunterladen zu verwenden.
 
-2. Entfernen Sie alte Suchen, die nicht mehr benötigt werden, mit dem Cmdlet [Remove-ComplianceSearch][/powershell/module/exchange/remove-compliancesearch].
+2. Entfernen Sie alte Suchen, die nicht mehr benötigt werden, mithilfe des [Cmdlets Remove-ComplianceSearch.](/powershell/module/exchange/remove-compliancesearch)
 
 3. Stellen Sie sicher, dass Sie auf ein lokales Laufwerk herunterladen.
 

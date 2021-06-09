@@ -15,12 +15,12 @@ ms.collection:
 description: Administratoren können erfahren, wie sie die erweiterten Antiphishingrichtlinien erstellen, ändern und löschen, die in Organisationen mit Microsoft Defender für Office 365 verfügbar sind.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9af3824b245cd976d1e859d6ebc4efcda47325e0
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: bc7575b87b8c5e512116f60ae98b700071e2bbd0
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793088"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822382"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "52793088"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Antiphishingrichtlinien in [Microsoft Defender für Office 365](defender-for-office-365.md) können Dazu beitragen, Ihre Organisation vor phishing-Angriffen durch böswilligen Identitätswechsel und anderen Arten von Phishingangriffen zu schützen. Weitere Informationen zu den Unterschieden zwischen Antiphishingrichtlinien in Exchange Online Protection (EOP) und Antiphishingrichtlinien in Microsoft Defender für Office 365 finden Sie unter [Antiphishingschutz.](anti-phishing-protection.md)
+Antiphishingrichtlinien in [Microsoft Defender für Office 365](defender-for-office-365.md) können Dazu beitragen, Ihre Organisation vor phishing-Angriffen mit böswilligem Identitätswechsel und anderen Arten von Phishingangriffen zu schützen. Weitere Informationen zu den Unterschieden zwischen Antiphishingrichtlinien in Exchange Online Protection (EOP) und Antiphishingrichtlinien in Microsoft Defender für Office 365 finden Sie unter [Antiphishingschutz.](anti-phishing-protection.md)
 
 Administratoren können die standardmäßige Antiphishingrichtlinie anzeigen, bearbeiten und konfigurieren (aber nicht löschen). Für eine höhere Granularität können Sie auch benutzerdefinierte Antiphishingrichtlinien erstellen, die für bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation gelten. Benutzerdefinierte Richtlinien haben immer Vorrang vor der standardmäßigen Richtlinie, die Priorität (Reihenfolge der Ausführung) Ihrer benutzerdefinierten Richtlinien können Sie jedoch ändern.
 
@@ -51,7 +51,7 @@ Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn 
 
 In Exchange Online PowerShell verwalten Sie die Richtlinie und die Regel separat. Weitere Informationen finden Sie im Abschnitt ["Verwenden von Exchange Online PowerShell zum Konfigurieren von Antiphishingrichtlinien"](#use-exchange-online-powershell-to-configure-anti-phishing-policies) weiter unten in diesem Artikel.
 
-Jede Defender für Office 365 Organisation verfügt über eine integrierte Antiphishingrichtlinie namens Office365 AntiPhish Default mit den folgenden Eigenschaften:
+Jede Defender für Office 365 Organisation verfügt über eine integrierte Antiphishingrichtlinie mit dem Namen Office365 AntiPhish Default, die über die folgenden Eigenschaften verfügt:
 
 - Die Richtlinie wird auf alle Empfänger in der Organisation angewendet, obwohl der Richtlinie keine Antiphishingregel (Empfängerfilter) zugeordnet ist.
 - Die Richtlinie weist den benutzerdefinierten Prioritätswert **Niedrigster** auf, der nicht geändert werden kann (die Richtlinie wird immer als letztes angewendet). Alle benutzerdefinierten Richtlinien, die Sie erstellen, haben immer eine höhere Priorität.
@@ -61,7 +61,7 @@ Um die Effektivität des Antiphishingschutzes in Defender für Office 365 zu erh
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security Center über <https://security.microsoft.com/>. Um direkt zur **Antiphishingseite** zu wechseln, verwenden Sie <https://security.microsoft.com/antiphishing> .
+- Sie öffnen das Security Center über <https://security.microsoft.com>. Um direkt zur **Antiphishingseite** zu wechseln, verwenden Sie <https://security.microsoft.com/antiphishing> .
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -86,7 +86,7 @@ Um die Effektivität des Antiphishingschutzes in Defender für Office 365 zu erh
 
 Beim Erstellen einer benutzerdefinierten Antiphishingrichtlinie im Sicherheitscenter werden die Antiphishingregel und die zugeordnete Antiphishingrichtlinie gleichzeitig mit demselben Namen für beide erstellt.
 
-1. Wechseln Sie im Security Center zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \>  \> **Antiphishing.**
+1. Wechseln Sie im Security Center zu **E-Mail-&** \> **Zusammenarbeitsrichtlinien &** Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \> **Antiphishing.**
 
 2. Klicken Sie auf der **Seite "Antiphishing"** auf ![ das Symbol ](../../media/m365-cc-sc-create-icon.png) **"Erstellen".**
 
@@ -231,10 +231,10 @@ Beim Erstellen einer benutzerdefinierten Antiphishingrichtlinie im Sicherheitsce
 
    - **Sicherheitstipps & Indikatoren:** Konfigurieren Sie die folgenden Einstellungen:
      - **Benutzeridentitätswechsel Sicherheitstipp anzeigen:** Diese Einstellung ist nur verfügbar, wenn Sie auf der vorherigen Seite **"Benutzer schützen"** ausgewählt haben.
-     - Anzeigen des **Domänenidentitätswechsels Sicherheitstipp:** Diese Einstellung ist nur verfügbar, wenn Sie auf der vorherigen Seite **"Domänen zum Schutz aktivieren"** ausgewählt haben.
+     - Anzeigen des **Domänenidentitätswechsels Sicherheitstipp:** Diese Einstellung ist nur verfügbar, wenn Sie auf der vorherigen Seite **"Domänen zum Schützen aktivieren"** ausgewählt haben.
      - **Ungewöhnliche Zeichen für den Benutzeridentitätswechsel anzeigen Sicherheitstipp** Diese Einstellung ist nur verfügbar, wenn Sie auf der vorherigen Seite **"Benutzer schützen"** oder **"Domänen zum Schutz aktivieren"** ausgewählt haben.
      - **Show (?) for unauthenticated senders for spoof:** This setting is available only if you selected **Enable spoof intelligence** on the previous page. Fügt dem Foto des Absenders im Feld "Von" in Outlook ein Fragezeichen hinzu, wenn die Nachricht keine SPF- oder DKIM-Prüfungen besteht **und** die Nachricht keine DMARC- oder [verbundbasierte Authentifizierung](email-validation-and-authentication.md#composite-authentication)besteht.
-     - **Show "via" tag:** This setting is available only if you selected **Enable spoof intelligence** on the previous page. Fügt der Absenderadresse ein Via-Tag (chris@contoso.com über fabrikam.com) hinzu, wenn sie sich von der Domäne in der DKIM-Signatur oder der **MAIL FROM-Adresse** unterscheidet. Der Standardwert ist aktiviert (ausgewählt). Deaktivieren Sie das Kontrollkästchen, um es zu deaktivieren.
+     - **Show "via" tag:** This setting is available only if you selected **Enable spoof intelligence** on the previous page. Fügt der Absenderadresse ein via-Tag (chris@contoso.com über fabrikam.com) hinzu, wenn sie sich von der Domäne in der DKIM-Signatur oder der **MAIL FROM-Adresse** unterscheidet. Der Standardwert ist aktiviert (ausgewählt). Deaktivieren Sie das Kontrollkästchen, um es zu deaktivieren.
 
        > [!NOTE]
        > Derzeit ist die Tageinstellung **"Über"** anzeigen nicht in allen Organisationen verfügbar. Wenn Sie nicht über die Einstellung für das **Show-Tag "via"** verfügen, werden sowohl das **Fragezeichen** als auch das Via-Tag von der **Show (?) für nicht authentifizierte Absender für spoofing-Einstellungen** in Ihrer Organisation gesteuert.
@@ -243,7 +243,7 @@ Beim Erstellen einer benutzerdefinierten Antiphishingrichtlinie im Sicherheitsce
 
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-7. Überprüfen Sie auf der angezeigten Seite **Überprüfung** Ihre Einstellungen. Sie können in jedem Abschnitt **Bearbeiten** auswählen, um die Einstellungen in diesem Abschnitt zu ändern. Sie können auch auf **"Zurück"** klicken oder die entsprechende Seite im Assistenten auswählen.
+7. Überprüfen Sie auf der angezeigten Seite **Überprüfung** Ihre Einstellungen. Sie können in jedem Abschnitt **Bearbeiten** auswählen, um die Einstellungen in diesem Abschnitt zu ändern. Alternativ können Sie auf **Zurück** klicken oder die entsprechende Seite im Assistenten auswählen.
 
    Wenn Sie fertig sind, klicken Sie auf **"Absenden".**
 
@@ -251,7 +251,7 @@ Beim Erstellen einer benutzerdefinierten Antiphishingrichtlinie im Sicherheitsce
 
 ## <a name="use-the-security-center-to-view-anti-phishing-policies"></a>Verwenden des Sicherheitscenters zum Anzeigen von Antiphishingrichtlinien
 
-1. Wechseln Sie im Security Center zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \>  \> **Antiphishing.**
+1. Wechseln Sie im Security Center zu **E-Mail-&** \> **Zusammenarbeitsrichtlinien &** Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \> **Antiphishing.**
 
 2. Auf der **Seite "Antiphishing"** werden die folgenden Eigenschaften in der Liste der Antiphishingrichtlinien angezeigt:
 
@@ -264,7 +264,7 @@ Beim Erstellen einer benutzerdefinierten Antiphishingrichtlinie im Sicherheitsce
 
 ## <a name="use-the-security-center-to-modify-anti-phishing-policies"></a>Verwenden des Sicherheitscenters zum Ändern von Antiphishingrichtlinien
 
-1. Wechseln Sie im Security Center zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \>  \> **Antiphishing.**
+1. Wechseln Sie im Security Center zu **E-Mail-&** \> **Zusammenarbeitsrichtlinien &** Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \> **Antiphishing.**
 
 2. Wählen Sie auf der **Seite "Antiphishing"** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
 
@@ -278,7 +278,7 @@ Informationen zum Aktivieren oder Deaktivieren einer Richtlinie oder zum Festleg
 
 Sie können die standardmäßige Antiphishingrichtlinie nicht deaktivieren.
 
-1. Wechseln Sie im Security Center zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \>  \> **Antiphishing.**
+1. Wechseln Sie im Security Center zu **E-Mail-&** \> **Zusammenarbeitsrichtlinien &** Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \> **Antiphishing.**
 
 2. Wählen Sie auf der **Seite "Antiphishing"** eine benutzerdefinierte Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
 
@@ -303,7 +303,7 @@ Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften 
 - Im Security Center können Sie die Priorität der Antiphishingrichtlinie nur ändern, nachdem Sie sie erstellt haben. In PowerShell können Sie die Standardpriorität überschreiben, wenn Sie die Antiphishingregel erstellen (was sich auf die Priorität vorhandener Regeln auswirken kann).
 - Antiphishingrichtlinien werden in der Reihenfolge verarbeitet, in der sie angezeigt werden (die erste Richtlinie hat den **Prioritätswert** 0). Die Standardmäßige Antiphishingrichtlinie hat den Prioritätswert **Niedrigste**, und Sie können sie nicht ändern.
 
-1. Wechseln Sie im Security Center zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \>  \> **Antiphishing.**
+1. Wechseln Sie im Security Center zu **E-Mail-&** \> **Zusammenarbeitsrichtlinien &** Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \> **Antiphishing.**
 
 2. Wählen Sie auf der **Seite "Antiphishing"** eine benutzerdefinierte Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
 
@@ -320,7 +320,7 @@ Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften 
 
 Wenn Sie das Sicherheitscenter zum Entfernen einer benutzerdefinierten Antiphishingrichtlinie verwenden, werden die Antiphishingregel und die entsprechende Antiphishingrichtlinie gelöscht. Sie können die standardmäßige Antiphishingrichtlinie nicht entfernen.
 
-1. Wechseln Sie im Security Center zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \>  \> **Antiphishing.**
+1. Wechseln Sie im Security Center zu **E-Mail-&** \> **Zusammenarbeitsrichtlinien &** Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \> **Antiphishing.**
 
 2. Wählen Sie eine benutzerdefinierte Richtlinie aus der Liste aus, indem Sie auf den Namen der Richtlinie klicken. Ganz oben auf dem angezeigten Flyout der Richtliniendetails klicken Sie auf ![Symbol „Weiter Aktionen“](../../media/m365-cc-sc-more-actions-icon.png) **Weitere Aktionen** \> ![Symbol „Richtlinie löschen“](../../media/m365-cc-sc-delete-icon.png) **Richtlinie löschen**.
 
@@ -565,7 +565,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-An
 
 Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie Antiphishingrichtlinien in Defender für Office 365 erfolgreich konfiguriert haben:
 
-- Wechseln Sie im Security Center zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \>  \> **Antiphishing.** Überprüfen Sie die Liste der Richtlinien, ihre **Statuswerte** und ihre **Prioritätswerte.** Um weitere Details anzuzeigen, wählen Sie die Richtlinie aus der Liste aus, indem Sie auf den Namen klicken und die Details im angezeigten Flyout anzeigen.
+- Wechseln Sie im Security Center zu **E-Mail-&** \> **Zusammenarbeitsrichtlinien &** Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \> **Antiphishing.** Überprüfen Sie die Liste der Richtlinien, ihre **Statuswerte** und ihre **Prioritätswerte.** Um weitere Details anzuzeigen, wählen Sie die Richtlinie aus der Liste aus, indem Sie auf den Namen klicken und die Details im angezeigten Flyout anzeigen.
 
 - Ersetzen Sie in Exchange Online PowerShell \<Name\> den Namen der Richtlinie oder Regel, führen Sie den folgenden Befehl aus, und überprüfen Sie die Einstellungen:
 

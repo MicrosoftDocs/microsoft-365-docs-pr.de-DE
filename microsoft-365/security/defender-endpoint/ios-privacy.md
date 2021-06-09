@@ -1,8 +1,8 @@
 ---
-title: Datenschutzinformationen – Microsoft Defender for Endpoint unter iOS
+title: Datenschutzinformationen – Microsoft Defender für Endpunkt unter iOS
 ms.reviewer: ''
-description: Beschreibt Datenschutzinformationen für Microsoft Defender for Endpoint unter iOS
-keywords: microsoft, defender, Microsoft Defender for Endpoint, ios, policy, overview
+description: Beschreibt Datenschutzinformationen für Microsoft Defender für Endpunkt unter iOS
+keywords: Microsoft, Defender, Microsoft Defender für Endpunkt, ios, Richtlinie, Übersicht
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,68 +18,68 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b1d64ceb7b0027546e84a9c42c8d2ffed188c03b
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: a232bd8d600df37d5b9b01921859556476ced345
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694473"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822370"
 ---
-# <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Datenschutzinformationen – Microsoft Defender for Endpoint unter iOS
+# <a name="privacy-information---microsoft-defender-for-endpoint-on-ios"></a>Datenschutzinformationen – Microsoft Defender für Endpunkt unter iOS
 
 **Gilt für:**
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 > [!NOTE]
-> Defender for Endpoint unter iOS verwendet ein VPN, um das Web Protection-Feature zur Verfügung zu stellen. Dies ist kein normales VPN und ein lokales oder selbstschleifendes VPN, das keinen Datenverkehr außerhalb des Geräts über sich nimmt. **Microsoft oder Ihre Organisation wird Ihre Browseraktivität nicht sehen.**
+> Defender für Endpunkt unter iOS verwendet ein VPN, um das Web protection-Feature bereitzustellen. Dies ist kein reguläres VPN und ein lokales vpn oder selbstschleifend, das keinen Datenverkehr außerhalb des Geräts annimmt. **Microsoft oder Ihrer Organisation wird Ihre Browseraktivität nicht angezeigt.**
 
-Defender for Endpoint unter iOS sammelt Informationen von Ihren konfigurierten iOS-Geräten und speichert sie im selben Mandanten, in dem Sie Defender for Endpoint haben. Die Informationen werden gesammelt, um Defender for Endpoint unter iOS sicher, auf dem neuesten Stand zu halten, wie erwartet zu gewährleisten und den Dienst zu unterstützen.
+Defender für Endpunkt unter iOS sammelt Informationen von Ihren konfigurierten iOS-Geräten und speichert sie im selben Mandanten, in dem Sie Defender für Endpunkt haben. Die Informationen werden gesammelt, um Defender für Endpunkt unter iOS sicher, aktuell und erwartungsgemäß zu halten und den Dienst zu unterstützen.
 
-Weitere Informationen zur Datenspeicherung finden Sie unter [Microsoft Defender for Endpoint data storage and privacy](data-storage-privacy.md).
+Weitere Informationen zur Datenspeicherung finden Sie unter [Microsoft Defender für Endpunkt Datenspeicherung und Datenschutz.](data-storage-privacy.md)
 
 
-Weitere Informationen zu den häufigsten Datenschutzfragen zu Microsoft Defender for Endpoint auf mobilen Android- und iOS-Geräten finden Sie unter Microsoft Defender for Endpoint und Ihre Privatsphäre auf [mobilen Android- und iOS-Geräten.](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)
+Weitere Informationen zu den häufigsten Datenschutzfragen zu Microsoft Defender für Endpunkt auf mobilen Android- und iOS-Geräten finden Sie unter [Microsoft Defender für Endpunkt und Ihren Datenschutz auf mobilen Android- und iOS-Geräten.](https://support.microsoft.com/topic/microsoft-defender-for-endpoint-and-your-privacy-on-android-and-ios-mobile-devices-4109bc54-8ec5-4433-9c33-d359b75ac22a)
 
 ## <a name="required-data"></a>Erforderliche Daten 
 
-Erforderliche Daten bestehen aus Daten, die erforderlich sind, damit Defender for Endpoint unter iOS wie erwartet funktioniert. Diese Daten sind für den Betrieb des Diensts unerlässlich und können Daten im Zusammenhang mit dem Endbenutzer, der Organisation, dem Gerät und den Apps enthalten. 
+Erforderliche Daten bestehen aus Daten, die erforderlich sind, damit Defender für Endpunkt unter iOS wie erwartet funktioniert. Diese Daten sind für den Betrieb des Diensts unerlässlich und können Daten im Zusammenhang mit dem Endbenutzer, der Organisation, dem Gerät und den Apps enthalten. 
 
-Im Folgenden finden Sie eine Liste der Arten von Daten, die erfasst werden: 
+Es folgt eine Liste der Arten von Daten, die gesammelt werden: 
 
-### <a name="web-page-or-network-information"></a>Webseiten- oder Netzwerkinformationen 
+### <a name="web-page-or-network-information"></a>Webseite oder Netzwerkinformationen 
 
-- Domänenname der Website nur, wenn eine schädliche Verbindung oder Webseite erkannt wird. 
+- Domänenname und IP-Adresse der Website nur, wenn eine schädliche Verbindung oder Webseite erkannt wird. 
 
 ### <a name="device-and-account-information"></a>Geräte- und Kontoinformationen 
 
-- Geräteinformationen, z. B. Datum & Uhrzeit, iOS-Version, CPU-Informationen und Geräte-ID, wobei gerätebezeichner einer der folgenden Punkte ist: 
+- Geräteinformationen wie Datum & Uhrzeit, iOS-Version, CPU-Informationen und Geräte-ID, wobei der Gerätebezeichner eine der folgenden ist: 
 
-    - Wi-Fi-MAC-Adresse des Adapters 
+    - Wi-Fi Mac-Adresse des Adapters 
 
     - Nach dem Zufallsprinzip generierte GUID (Globally Unique Identifier) 
 
 - Mandanten-, Geräte- und Benutzerinformationen 
 
-    - Azure Active Directory (AD) Geräte-ID und Azure-Benutzer-ID – Identifiziert das Gerät eindeutig, benutzerisch bzw. in Azure Active Directory. 
+    - Azure Active Directory (AD)-Geräte-ID und Azure-Benutzer-ID – Identifiziert das Gerät eindeutig bzw. den Benutzer im Azure Active Directory. 
 
-    - Azure-Mandanten-ID – GUID, die Ihre Organisation innerhalb Azure Active Directory. 
+    - Azure-Mandanten-ID – GUID, die Ihre Organisation innerhalb Azure Active Directory identifiziert. 
 
-    - Microsoft Defender for Endpoint Org ID – Eindeutige ID, die dem Unternehmen zugeordnet ist, zu dem das Gerät gehört. Ermöglicht Microsoft zu ermitteln, ob Probleme auftreten, die sich auf eine ausgewählte Gruppe von Unternehmen und die Anzahl betroffener Unternehmen auswirken. 
+    - Microsoft Defender für Endpunkt-Organisations-ID : Eindeutiger Bezeichner, der dem Unternehmen zugeordnet ist, zu dem das Gerät gehört. Ermöglicht Microsoft zu erkennen, ob Probleme auftreten, die sich auf eine ausgewählte Gruppe von Unternehmen und die Anzahl der betroffenen Unternehmen auswirken. 
 
     - Benutzerprinzipalname – E-Mail-ID des Benutzers. 
 
 ### <a name="product-and-service-usage-data"></a>Produkt- und Dienstnutzungsdaten 
 
-Die folgenden Informationen werden nur für die auf dem Gerät installierte Microsoft Defender for Endpoint-App gesammelt. 
+Die folgenden Informationen werden nur für die auf dem Gerät installierte Microsoft Defender für Endpunkt-App gesammelt. 
 
-- Informationen zum App-Paket, einschließlich Name, Version und App-Upgradestatus. 
+- App-Paketinformationen, einschließlich Name, Version und App-Upgradestatus. 
 
-- Aktionen, die in der App durchgeführt werden. 
+- Aktionen, die in der App ausgeführt werden. 
 
-- Absturzberichtsprotokolle, die von iOS generiert werden. 
+- Von iOS generierte Absturzberichtsprotokolle. 
 
 - Speichernutzungsdaten. 
 
@@ -89,16 +89,16 @@ Optionale Daten umfassen Diagnosedaten und Feedbackdaten vom Client. Optionale D
 
 Optionale Diagnosedaten umfassen: 
 
-- App-, CPU- und Netzwerknutzung für Defender for Endpoint. 
+- App-, CPU- und Netzwerkauslastung für Defender für Endpunkt. 
 
-- Vom Administrator für Defender for Endpoint konfigurierte Features. 
+- Features, die vom Administrator für Defender für Endpunkt konfiguriert wurden. 
 
-FeedbackDaten werden über in-App-Feedback gesammelt, das vom Benutzer bereitgestellt wird. 
+Feedbackdaten werden durch In-App-Feedback gesammelt, das vom Benutzer bereitgestellt wird. 
 
-- Die E-Mail-Adresse des Benutzers, wenn er sie angeben will.
+- Die E-Mail-Adresse des Benutzers, wenn er sie bereitstellen möchte.
 
-- Feedbacktyp (Schmunzeln, Stirnrunzeln, Idee) und alle vom Benutzer übermittelten Feedbackkommentare. 
+- Feedbacktyp (Gesichter, Stirnrunzeln, Idee) und feedbackkommentare, die der Benutzer übermittelt hat. 
 
-Weitere Informationen finden Sie unter [More on Privacy](https://aka.ms/mdatpiosprivacystatement).
+Weitere Informationen finden Sie unter "Weitere Informationen [zum Datenschutz".](https://aka.ms/mdatpiosprivacystatement)
 
 

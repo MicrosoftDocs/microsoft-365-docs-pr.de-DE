@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/07/2021
-ms.openlocfilehash: 33170d4706ed53f4de687c34806bb0492a08836e
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.date: 06/08/2021
+ms.openlocfilehash: ccbb57d781196e352e0fed456a1f7cb43eb17300
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809107"
+ms.locfileid: "52822274"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Verwalten Microsoft Defender Antivirus Updates und Anwenden von Basisplänen
 
@@ -54,7 +54,7 @@ Microsoft Defender Antivirus verwendet über die Cloud bereitgestellten Schutz (
 
 Der über die Cloud bereitgestellte Schutz ist immer aktiviert und erfordert eine aktive Verbindung mit dem Internet, damit er funktioniert. Security Intelligence-Updates erfolgen in einem geplanten Zeitplan (konfigurierbar über die Richtlinie). Weitere Informationen finden Sie unter Verwenden des von [Microsoft in der Cloud bereitgestellten Schutzes in Microsoft Defender Antivirus.](cloud-protection-microsoft-defender-antivirus.md) 
 
-Eine Liste der neuesten Sicherheitsupdates finden Sie unter [Security Intelligence-Updates für Microsoft Defender Antivirus und andere Antischadsoftware](https://www.microsoft.com/en-us/wdsi/defenderupdates)von Microsoft.
+Eine Liste der neuesten Sicherheitsupdates finden Sie unter [Security Intelligence-Updates für Microsoft Defender Antivirus und andere Antischadsoftware von Microsoft.](https://www.microsoft.com/en-us/wdsi/defenderupdates)
 
 Modulupdates sind in Security Intelligence-Updates enthalten und werden monatlich veröffentlicht.
 
@@ -99,7 +99,7 @@ Alle unsere Updates enthalten
 Keine bekannten Probleme  
 <br/>
 </details><details>
-<summary> April-2021 (Plattform: 4.18.2104.14 | Modul: 1.1.18100.5)</summary>
+<summary> April -2021 (Plattform: 4.18.2104.14 | Modul: 1.1.18100.5)</summary>
 
 &ensp;Security Intelligence Update Version: **1.337.2.0**  
 &ensp;Veröffentlicht: **1. April 2021**  
@@ -110,6 +110,7 @@ Keine bekannten Probleme
 ### <a name="whats-new"></a>Neuerungen
 - Zusätzliche Verhaltensüberwachungslogik
 - Verbesserte Kernelmodus-Keyloggererkennung
+- Neue Steuerelemente zum Verwalten des schrittweisen Rollouts für [Microsoft Defender-Updates hinzugefügt](updates.md)
 
 ### <a name="known-issues"></a>Bekannte Probleme
 Keine bekannten Probleme  
@@ -457,7 +458,7 @@ Plattform- und Modulupdates werden monatlich bereitgestellt. Um vollständig unt
 Während der Phase des technischen Supports (nur) werden kommerzielle angemessene Supportvorfälle über den Microsoft-Kundendienst & Support und die verwalteten Supportangebote von Microsoft (z. B. Premier Support) bereitgestellt. Wenn ein Supportvorfall eine Eskalation zur Entwicklung erfordert, um weitere Anleitungen zu erhalten, ein nicht sicherheitsrelevantes Update oder ein Sicherheitsupdate erfordert, werden Kunden aufgefordert, auf die neueste Plattformversion oder ein Zwischenupdate (*) zu aktualisieren.
 
 ### <a name="platform-version-included-with-windows-10-releases"></a>Plattformversion, die in Windows 10 Versionen enthalten ist
-Die folgende Tabelle enthält die Microsoft Defender Antivirus Plattform- und Modulversionen, die mit den neuesten Windows 10 Versionen ausgeliefert werden:    
+Die folgende Tabelle enthält die Microsoft Defender Antivirus Plattform- und Modulversionen, die mit den neuesten Windows 10-Versionen ausgeliefert werden:    
 
 |Windows 10-Version  |Plattformversion  |Modulversion |Supportphase |
 |:---|:---|:---|:---|
@@ -476,7 +477,7 @@ Informationen zu Windows 10 Version finden Sie im [Windows-Lifecycle-Information
 
 Es wird empfohlen, ihre Windows 10 (Enterprise-, Pro- und Home-Editionen), Windows Server 2019 und Windows Server 2016 Betriebssysteminstallationsimages mit den neuesten Antiviren- und Antischadsoftwareupdates zu aktualisieren. Wenn Sie Ihre Betriebssysteminstallationsimages auf dem neuesten Stand halten, vermeiden Sie eine Lücke beim Schutz. 
 
-Weitere Informationen finden Sie unter [Microsoft Defender Update für Windows Betriebssysteminstallationsimages.](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)
+Weitere Informationen finden Sie unter [Microsoft Defender Update für Windows Installationsimages](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)des Betriebssystems.
 
 <details>
 <summary>1.1.2106.01</summary>

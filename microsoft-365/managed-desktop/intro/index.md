@@ -10,12 +10,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d058cfefbc31be6d355ed61e745c36af684829b4
-ms.sourcegitcommit: 5a1cb7d95070eef47d401a4693cc137a90550a5e
+ms.openlocfilehash: 0c08f5d05c42ed8d1e84632377be28e542771c2a
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52259667"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841366"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Was ist Microsoft Managed Desktop?
 
@@ -61,7 +61,7 @@ Microsoft Managed Desktop übernimmt die Verwaltung registrierter Geräte und de
 
 - **Updates:** Microsoft Managed Desktop richtet alle Aspekte von [Bereitstellungsgruppen](../service-description/updates.md) für Windows 10-Qualitäts- und Funktionsupdates, Treiber, Firmware, Antivirendefinitionen und Microsoft 365 Apps für Unternehmensupdates ein und verwaltet sie. Dies umfasst umfangreiche Tests und Überprüfungen aller Aktualisierungen, um sicherzustellen, dass registrierte Geräte immer auf dem neuesten Stand sind, und um Minimierungen von Störungen, wodurch Ihre IT-Abteilung von dieser laufenden Aufgabe befreit wird.
 
-- **Anwendungen:** Als Teil von Microsoft 365 Enterprise stellt Microsoft mehrere wichtige Microsoft-Apps für Sie bereit (und verwaltet diese). Aber Sie haben wahrscheinlich auch andere Anwendungen, die Sie für Ihr Unternehmen benötigen. Anstatt dass Ihre IT-Abteilung diese Apps testen, verpacken und bereitstellen muss, unterstützt Microsoft Sie bei der Bereitstellung über das [FastTrack](https://www.microsoft.com/FastTrack)-Programm. Darüber hinaus kann das [App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assuree)-Programm von Microsoft dazu beitragen, App-Kompatibilitätsprobleme zu beheben, die bei der Migration auf die neuesten Versionen unserer Produkte auftreten. Weitere Informationen finden Sie unter[Anwendungen in Microsoft Managed Desktop](../get-ready/apps.md).
+- **Anwendungen:** Als Teil von Microsoft 365 Enterprise stellt Microsoft mehrere wichtige Microsoft-Apps für Sie bereit (und verwaltet diese). Aber Sie haben wahrscheinlich auch andere Anwendungen, die Sie für Ihr Unternehmen benötigen. Anstatt dass Ihre IT-Abteilung diese Apps testen, verpacken und bereitstellen muss, unterstützt Microsoft Sie bei der Bereitstellung über das [FastTrack](https://www.microsoft.com/FastTrack)-Programm. Darüber hinaus kann das [App Assure](/fasttrack/products-and-capabilities#app-assuree)-Programm von Microsoft dazu beitragen, App-Kompatibilitätsprobleme zu beheben, die bei der Migration auf die neuesten Versionen unserer Produkte auftreten. Weitere Informationen finden Sie unter[Anwendungen in Microsoft Managed Desktop](../get-ready/apps.md).
 
 
 ## <a name="device-monitoring"></a>Geräteüberwachung

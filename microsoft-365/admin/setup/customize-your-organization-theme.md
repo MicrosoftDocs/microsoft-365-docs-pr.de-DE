@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Erfahren Sie, wie Sie das Standarddesign für den oberen Rand der Navigationsleiste in Microsoft 365 ändern und an Ihr Firmenlogo oder Ihre Farbe anpassen.
-ms.openlocfilehash: e609cbbc116f932d9c41f7ec797bf04a2a9c8ef8
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 7dc1eb4df22cbd96b2370437991aee936243189e
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809047"
+ms.locfileid: "52841306"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Passen Sie das Microsoft 365-Design für Ihr Unternehmen an
 
@@ -74,7 +74,7 @@ Sie können bis zu vier zusätzliche Gruppendesigns erstellen.
 
 2. Unter **"Gruppen"** können Sie bis zu 5 Microsoft 365 Gruppen auswählen, die Ihr Gruppendesign anzeigen können, anstatt das Standarddesign zu verwenden. Sie können auch verhindern, dass Benutzer ihr Design überschreiben und den Anzeigenamen des Benutzers anzeigen.
 
-3. Wählen Sie **Speichern** aus.
+3. Wählen Sie **Speichern**.
 
 :::image type="content" source="../../media/default-theme-general-users.png" alt-text="Screenshot: Registerkarte &quot;Allgemein&quot; mit dem Standarddesign für eine Gruppe von Benutzern in Ihrer Organisation":::
 
@@ -82,20 +82,13 @@ Sie können bis zu vier zusätzliche Gruppendesigns erstellen.
 
 Auf **der** Logos-Seite können Sie Ihre Logos hinzufügen und die URL angeben, zu der Benutzer navigieren, wenn sie das Logo auswählen.
 
-- **Standardlogo:** Fügen Sie einen URL-Speicherort hinzu, der auf Ihr Logo zeigt. Stellen Sie sicher, dass die URL HTTPS verwendet und das Bild mindestens 200 x 30 Pixel beträgt. Ihr Standardlogo kann im JPG-, PNG-, GIF- oder SVG-Format vorliegen.
+- **Standardlogo:** Fügen Sie einen URL-Speicherort hinzu, der auf Ihr Logo zeigt. Stellen Sie sicher, dass die URL HTTPS verwendet. Wenn Sie ein Logo hochladen, stellen Sie sicher, dass es kleiner als 10 KB ist. Ihr Standardlogo kann im JPG-, PNG-, GIF- oder SVG-Format vorliegen. Bei SVG-Bildern werden sie so angepasst, dass sie vertikal auf 24 Pixel passen. JPG-, PNG- und GIF-Bilder werden auf 200 x 48 Pixel skaliert.
 - **Alternatives Logo:** Fügen Sie eine URL-Position hinzu, die auf Ihr Logo zeigt. Ihr alternatives Logo sollte für die Verwendung in Office dunklen Designs optimiert werden. Die gleichen Anforderungen wie das Standardlogo.
-- **Kleines Standardlogo:** Fügen Sie eine URL-Position hinzu, die auf Ihr Logo zeigt. Das Bild muss mindestens 48 x 48 Pixel groß sein. Sie können dieses Bild so skalieren, dass es auf kleinere oder mobile Geräte passt.
-- **Kleines alternatives Logo:** Fügen Sie eine URL-Position hinzu, die auf Ihr Logo zeigt. Dieses Bild hat die gleichen Anforderungen wie das kleine Standardlogo.
 - **On-Click-Link:** Fügen Sie einen URL-Speicherort hinzu, der auf Ihr Logo zeigt. Sie können Ihr Logo als Link zu einer beliebigen Unternehmensressource verwenden, z. B. zur Website Ihres Unternehmens.
 
 Wählen Sie **Speichern** aus, um Ihre Änderungen zu speichern.
 
 Sie können Ihre Logos jederzeit entfernen. Kehren Sie einfach zur **Logos-Seite** zurück, und wählen Sie **"Entfernen" aus.**
-
-:::image type="content" source="../../media/default-theme-logos.png" alt-text="Screenshot: Registerkarte &quot;Logos&quot; mit standardem Designlogo für Ihre Organisation":::
-
-> [!NOTE]
-> Standardmäßig wird zuerst die Logoauswahl angezeigt, die von den meisten Organisationen verwendet wird. To see all the logo selections, go to the bottom of the list and select **See advanced options**.
   
 ## <a name="colors-choose-theme-colors"></a>Farben: Designfarben auswählen
 
@@ -130,7 +123,7 @@ Nein, neue Gruppendesigns müssen einer oder mehreren Microsoft 365 Gruppen und 
 > [!NOTE]
 > Sie können [Verteilergruppen](../manage/upgrade-distribution-lists.md) in Microsoft 365 Gruppen in Outlook konvertieren.
 
-### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>Kann ich unabhängig von Microsoft 365 Gruppen manuell ein Design zuweisen?  
+### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>Kann ich ein Design unabhängig von Microsoft 365 Gruppen manuell zuweisen?  
 
 Nein, neue Gruppendesigns müssen einer oder mehreren Microsoft 365 Gruppen zugeordnet werden. Benutzer, die Mitglieder der Microsoft 365 Gruppe sind, erhalten das Design, das auf ihre Gruppe angewendet wird. Sie können [eine Microsoft 365 Gruppe erstellen und neue Mitglieder hinzufügen,](../create-groups/create-groups.md) indem Sie im Admin Center zu den ****   >  **Einstellungen-Gruppen** wechseln.
 
@@ -150,7 +143,7 @@ Stellen Sie sicher, dass das von Ihnen verwendete Logo als öffentlich adressier
 
 Das empfohlene Kontrastverhältnis zwischen Text, Symbol- oder Schaltflächenfarbe und Hintergrundfarbe beträgt 4,5:1. Sie können diese Empfehlung außer Kraft setzen und Ihr Design speichern, da dies keine Anforderung ist.
 
-### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Welche Orte in Microsoft 365 werden verwendet, wenn ich ein Design definiere?
+### <a name="if-i-define-a-theme-which-places-in-microsoft-365-will-this-be-used"></a>Welche Orte in Microsoft 365 werden verwendet, wenn ich ein Design definiert habe?
 
 Jedes Design wird in der oberen Navigationsleiste für alle Benutzer in der Organisation als Teil des Microsoft 365 Suite-Headers angezeigt.  
   

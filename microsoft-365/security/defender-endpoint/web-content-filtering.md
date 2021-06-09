@@ -1,7 +1,7 @@
 ---
 title: Internet-Inhaltsfilterung
-description: Verwenden Sie die Webinhaltsfilterung in Microsoft Defender for Endpoint, um den Zugriff auf Websites basierend auf ihren Inhaltskategorien nachverfolgt und zu regeln.
-keywords: Webschutz, Schutz vor Webbedrohungen, Browsen im Web, Überwachung, Berichte, Karten, Domänenliste, Sicherheit, Phishing, Schadsoftware, Exploit, Websites, Netzwerkschutz, Edge, Internet Explorer, Chrome, Firefox, Webbrowser
+description: Verwenden Sie die Webinhaltsfilterung in Microsoft Defender für Endpunkt, um den Zugriff auf Websites basierend auf ihren Inhaltskategorien nachzuverfolgen und zu steuern.
+keywords: Webschutz, Schutz vor Webbedrohungen, Webbrowsen, Überwachung, Berichte, Karten, Domänenliste, Sicherheit, Phishing, Schadsoftware, Exploit, Websites, Netzwerkschutz, Edge, Internet Explorer, Chrome, Firefox, Webbrowser
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 47211e187d1f9f883745f008c6d94d04ee762e98
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: a16e3eb8f6f7eae9fbaa82c9fd978f4fef429818
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302064"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822322"
 ---
 # <a name="web-content-filtering"></a>Internet-Inhaltsfilterung
 
@@ -32,107 +32,103 @@ ms.locfileid: "52302064"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
-> **Webinhaltsfilterung befindet sich derzeit in der öffentlichen Vorschau**<br>
-> Diese Vorschauversion wird ohne Vereinbarung zum Servicelevel bereitgestellt und wird für Produktionsworkloads nicht empfohlen. Bestimmte Features werden möglicherweise nicht unterstützt oder verfügen möglicherweise über eingeschränkte Funktionen.
-> Weitere Informationen finden Sie unter [Microsoft Defender for Endpoint Preview Features](preview.md).
+> **Die Webinhaltsfilterung befindet sich derzeit in der öffentlichen Vorschau**<br>
+> Diese Vorschauversion wird ohne Vereinbarung zum Servicelevel bereitgestellt und für Produktionsarbeitslasten nicht empfohlen. Bestimmte Features werden möglicherweise nicht unterstützt oder verfügen über eingeschränkte Funktionen.
+> Weitere Informationen finden Sie unter [Microsoft Defender für Endpunkt-Vorschaufeatures.](preview.md)
 
 > [!TIP]
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-main-abovefoldlink&rtc=1)
 
-Die Webinhaltsfilterung ist Teil der [Webschutzfunktionen](web-protection-overview.md) in Microsoft Defender for Endpoint. Sie ermöglicht Es Ihrer Organisation, den Zugriff auf Websites basierend auf ihren Inhaltskategorien nachverfolgt und zu regeln. Viele dieser Websites sind zwar nicht bösartig, können jedoch aufgrund von Compliancebestimmungen, Bandbreitennutzung oder anderen Bedenken problematisch sein.
+Die Webinhaltsfilterung ist Teil der [Webschutzfunktionen](web-protection-overview.md) in Microsoft Defender für Endpunkt. Es ermöglicht Ihrer Organisation, den Zugriff auf Websites basierend auf ihren Inhaltskategorien nachzuverfolgen und zu regeln. Viele dieser Websites, obwohl sie nicht bösartig sind, können aufgrund von Compliance-Vorschriften, Bandbreitennutzung oder anderen Bedenken problematisch sein.
 
-Konfigurieren Sie Richtlinien für alle Gerätegruppen, um bestimmte Kategorien zu blockieren. Das Blockieren einer Kategorie verhindert, dass Benutzer innerhalb angegebener Gerätegruppen auf URLs zugreifen, die der Kategorie zugeordnet sind. Für jede Kategorie, die nicht blockiert ist, werden die URLs automatisch überwacht. Ihre Benutzer können ohne Unterbrechung auf die URLs zugreifen, und Sie sammeln Zugriffsstatistiken, um eine benutzerdefiniertere Richtlinienentscheidung zu erstellen. Ihren Benutzern wird eine Sperrbenachrichtigung angezeigt, wenn ein Element auf der angezeigten Seite Aufrufe einer blockierten Ressource vor sich hat.
+Konfigurieren Sie Richtlinien für Alle Gerätegruppen, um bestimmte Kategorien zu blockieren. Durch das Blockieren einer Kategorie wird verhindert, dass Benutzer innerhalb der angegebenen Gerätegruppen auf URLs zugreifen, die der Kategorie zugeordnet sind. Für jede Kategorie, die nicht blockiert ist, werden die URLs automatisch überwacht. Ihre Benutzer können ohne Unterbrechung auf die URLs zugreifen, und Sie erfassen Zugriffsstatistiken, um eine benutzerdefinierte Richtlinienentscheidung zu erstellen. Ihren Benutzern wird eine Blockierungsbenachrichtigung angezeigt, wenn ein Element auf der angezeigten Seite Aufrufe an eine blockierte Ressource durchführt.
 
-Die Webinhaltsfilterung ist in den wichtigsten Webbrowsern mit Blöcken verfügbar, die von Windows Defender SmartScreen (Microsoft Edge) und Network Protection (Chrome, Firefox, Brave und Opera) ausgeführt werden. Weitere Informationen zur Browserunterstützung finden Sie im Abschnitt Voraussetzungen.
+Die Webinhaltsfilterung ist in den wichtigsten Webbrowsern mit Blöcken verfügbar, die von Windows Defender SmartScreen (Microsoft Edge) und Netzwerkschutz (Chrome, Firefox, Opera und Opera) ausgeführt werden. Weitere Informationen zur Browserunterstützung finden Sie im Abschnitt "Voraussetzungen".
 
 Zusammenfassung der Vorteile:
 
-- Benutzer werden am Zugriff auf Websites in blockierten Kategorien gehindert, unabhängig davon, ob sie lokal oder fern surfen
-- Ihr Sicherheitsteam kann Richtlinien mithilfe von Gerätegruppen, die in rollenbasierten Zugriffssteuerungseinstellungen von Microsoft Defender for Endpoint definiert sind, bequem für Benutzergruppen [bereitstellen.](/microsoft-365/security/defender-endpoint/rbac)
-- Ihr Sicherheitsteam kann auf Webberichte am gleichen zentralen Speicherort zugreifen, mit Sichtbarkeit über tatsächliche Blöcke und Webnutzung
+- Benutzern wird der Zugriff auf Websites in blockierten Kategorien verhindert, unabhängig davon, ob sie lokal oder abwesend surfen.
+- Ihr Sicherheitsteam kann Richtlinien bequem für Benutzergruppen bereitstellen, die Gerätegruppen verwenden, die in [den rollenbasierten Zugriffssteuerungseinstellungen](/microsoft-365/security/defender-endpoint/rbac) von Microsoft Defender für Endpunkt definiert sind.
+- Ihr Sicherheitsteam kann an demselben zentralen Ort auf Webberichte zugreifen, mit Sichtbarkeit der tatsächlichen Blöcke und der Webnutzung
 
 ## <a name="user-experience"></a>Verwendung durch den Benutzer
 
-Die Sperrerfahrung für von Drittanbietern unterstützte Browser wird von Network Protection bereitgestellt, das ein Popup auf Systemebene bietet, das den Benutzer über eine blockierte Verbindung informiert. Für eine benutzerfreundlichere, browserfreundlichere Benutzeroberfläche sollten Sie die Verwendung von Microsoft Edge.
+Die Blockierungsfunktion für von Drittanbietern unterstützte Browser wird durch Netzwerkschutz bereitgestellt, der eine Popupbenachrichtigung auf Systemebene bereitstellt, die den Benutzer über eine blockierte Verbindung benachrichtigt. Für eine benutzerfreundlichere, browserinterne Erfahrung sollten Sie Microsoft Edge verwenden.
 
 ## <a name="prerequisites"></a>Voraussetzungen
 
-Stellen Sie vor dem Ausprobieren dieses Features sicher, dass Die folgenden Anforderungen erfüllt sind:
+Bevor Sie dieses Feature ausprobieren, stellen Sie sicher, dass Sie die folgenden Anforderungen erfüllen:
 
-- Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security oder die eigenständige Microsoft Defender for Endpoint-Lizenz. 
+- Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security Add-On oder die eigenständige Microsoft Defender für Endpunkt-Lizenz. 
 - Zugriff auf Microsoft Defender Security Center Portal ( https://securitycenter.windows.com) .
-- Geräte mit Windows 10 Anniversary Update (Version 1607) oder höher mit dem neuesten MoCAMP-Update.
+- Geräte, auf denen Windows 10 Anniversary Update (Version 1607) oder höher mit dem neuesten Update des Microsoft Defender-Antischadsoftwaremoduls ausgeführt wird.
 
 ## <a name="data-handling"></a>Datenverarbeitung
 
-Wir folgen der Region, die Sie als Teil Ihrer [Microsoft Defender for Endpoint-Datenverarbeitungseinstellungen verwendet haben.](data-storage-privacy.md) Ihre Daten verlassen das Rechenzentrum nicht in dieser Region. Darüber hinaus werden Ihre Daten nicht an Dritte, einschließlich unserer Datenanbieter, weitergegeben.
+Daten werden in der Region gespeichert, die als Teil Ihrer [Microsoft Defender für Endpunkt-Datenverarbeitungseinstellungen](data-storage-privacy.md)ausgewählt wurde. Ihre Daten verlassen das Rechenzentrum in dieser Region nicht. Darüber hinaus werden Ihre Daten nicht an Dritte, einschließlich unserer Datenanbieter, weitergegeben.
 
 ## <a name="turn-on-web-content-filtering"></a>Aktivieren der Webinhaltsfilterung
 
-Wählen Sie im linken Navigationsmenü die **Option Einstellungen**  >  **Erweiterte Features**  >  **aus.** Scrollen Sie nach unten, bis der Eintrag für die **Webinhaltsfilterung angezeigt wird.** Wechseln Sie zum Umschalten zu **Ein** und **Speichern der Einstellungen**.
+Wählen Sie im linken Navigationsmenü **Einstellungen**  >  **Allgemeine**  >  **erweiterte Features** aus. Scrollen Sie nach unten, bis der Eintrag für **die Webinhaltsfilterung** angezeigt wird. Setzen Sie die Umschaltfläche auf **"Ein",** und **speichern Sie die Einstellungen.**
 
-### <a name="configure-web-content-filtering-policies"></a>Konfigurieren von Webinhaltsfilterrichtlinien
+### <a name="configure-web-content-filtering-policies"></a>Konfigurieren von Richtlinien für die Webinhaltsfilterung
 
-Web content filtering policies specify which site categories are blocked on which device groups. Um die Richtlinien zu verwalten, wechseln Sie **zu Einstellungen**  >  **Rules**  >  **Web content filtering**.
+Web content filtering policies specify which site categories are blocked on which device groups. Um die Richtlinien zu verwalten, wechseln Sie zu **Einstellungen**  >    >  **Webinhaltsfilterung** für Regeln.
 
-Verwenden Sie den Filter, um Richtlinien zu finden, die bestimmte blockierte Kategorien enthalten oder auf bestimmte Gerätegruppen angewendet werden.
+Verwenden Sie den Filter, um Nachschlagerichtlinien zu suchen, die bestimmte blockierte Kategorien enthalten oder auf bestimmte Gerätegruppen angewendet werden.
 
 ### <a name="create-a-policy"></a>Erstellen einer Richtlinie
 
 So fügen Sie eine neue Richtlinie hinzu:
 
-1. Wählen **Sie Richtlinie hinzufügen** auf der **Webinhaltsfilterseite** in **Einstellungen**.
+1. Wählen Sie auf der **Seite "Webinhaltsfilterung"** in **Einstellungen** die Option **"Richtlinie hinzufügen"** aus.
 
 2. Geben Sie einen Namen an.
 
-3. Wählen Sie die zu blockierende Kategorie aus. Verwenden Sie das Erweiterungssymbol, um alle übergeordneten Kategorien vollständig zu erweitern und bestimmte Webinhaltskategorien auszuwählen.
+3. Wählen Sie die Kategorien aus, die blockiert werden sollen. Verwenden Sie das Symbol zum Erweitern, um die einzelnen übergeordneten Kategorien vollständig zu erweitern und bestimmte Webinhaltskategorien auszuwählen.
 
-4. Geben Sie den Richtlinienbereich an. Wählen Sie die Gerätegruppen aus, um anzugeben, wo die Richtlinie angewendet werden soll. Nur Geräte in den ausgewählten Gerätegruppen können nicht auf Websites in den ausgewählten Kategorien zugreifen.
+4. Geben Sie den Richtlinienbereich an. Wählen Sie die Gerätegruppen aus, um anzugeben, wo die Richtlinie angewendet werden soll. Nur Geräte in den ausgewählten Gerätegruppen werden am Zugriff auf Websites in den ausgewählten Kategorien gehindert.
 
-5. Überprüfen Sie die Zusammenfassung, und speichern Sie die Richtlinie. Die Richtlinienaktualisierung kann bis zu 2 Stunden dauern, bis sie auf ihre ausgewählten Geräte angewendet wird.
+5. Überprüfen Sie die Zusammenfassung, und speichern Sie die Richtlinie. Die Aktualisierung der Richtlinie kann bis zu 2 Stunden dauern, bis sie auf die ausgewählten Geräte angewendet wurde.
 
-> [!TIP]
-> Sie können eine Richtlinie bereitstellen, ohne eine Kategorie in einer Gerätegruppe auswählen zu müssen. Mit dieser Aktion wird eine Nur-Überwachung-Richtlinie erstellt, damit Sie das Benutzerverhalten besser verstehen können, bevor Sie eine Sperrrichtlinie erstellen.
+> [!NOTE]
+> - Sie können eine Richtlinie bereitstellen, ohne eine Kategorie in einer Gerätegruppe auszuwählen. Mit dieser Aktion wird eine Nur-Überwachungsrichtlinie erstellt, die Ihnen dabei hilft, das Benutzerverhalten zu verstehen, bevor Sie eine Blockierungsrichtlinie erstellen.
+> - Wenn Sie eine Richtlinie entfernen oder Gerätegruppen gleichzeitig ändern, kann dies zu einer Verzögerung bei der Richtlinienbereitstellung führen.
+> - Das Blockieren der Kategorie "Nicht kategorisiert" kann zu unerwarteten und unerwünschten Ergebnissen führen.  
 
->[!NOTE]
->Wenn Sie gleichzeitig eine Richtlinie entfernen oder Gerätegruppen ändern, kann dies zu verzögerungen bei der Richtlinienbereitstellung führen.
+### <a name="allow-specific-websites"></a>Bestimmte Websites zulassen
 
->[!IMPORTANT]
->Das Blockieren der Kategorie "Uncategorized" kann zu unerwarteten und unerwünschten Ergebnissen führen.  
+Es ist möglich, die blockierte Kategorie in der Webinhaltsfilterung zu überschreiben, um eine einzelne Website zuzulassen, indem Sie eine benutzerdefinierte Indikatorrichtlinie erstellen. Die benutzerdefinierte Indikatorrichtlinie ersetzt die Webinhaltsfilterrichtlinie, wenn sie auf die betreffende Gerätegruppe angewendet wird.
 
-### <a name="allow-specific-websites"></a>Zulassen bestimmter Websites
-
-Es ist möglich, die blockierte Kategorie in der Webinhaltsfilterung außer Kraft zu setzen, um eine einzelne Website durch Erstellen einer benutzerdefinierten Indikatorrichtlinie zu ermöglichen. Die benutzerdefinierte Indikatorrichtlinie ersetzt die Webinhaltsfilterrichtlinie, wenn sie auf die entsprechende Gerätegruppe angewendet wird.
-
-1. Erstellen Sie einen benutzerdefinierten Indikator im Microsoft Defender Security Center, indem Sie **Einstellungen**  >    >  **Indikatoren-URL/Domänen-Add-Element**  >  **.**
+1. Erstellen Sie einen benutzerdefinierten Indikator im Microsoft Defender Security Center, indem Sie zu **Einstellungen**  >  **Indicators**  >  **URL/Domain**  >  **Add Item wechseln.**
 
 2. Geben Sie die Domäne der Website ein.
 
-3. Legen Sie die Richtlinienaktion auf **Zulassen .**  
+3. Legen Sie die Richtlinienaktion auf **"Zulassen"** fest.  
 
 ### <a name="reporting-inaccuracies"></a>Melden von Ungenauigkeiten
 
-Wenn Eine Domäne fälschlicherweise kategorisiert wurde, können Sie Ungenauigkeiten direkt über die Seite Web content filtering reports melden. Dieses Feature ist nur im neuen Microsoft 365 Security Center (security.microsoft.com) verfügbar.
+Wenn sie auf eine Domäne stoßen, die falsch kategorisiert wurde, können Sie Ungenauigkeiten direkt über die Berichtsseite der Webinhaltsfilterung an uns melden. Dieses Feature ist nur im neuen Microsoft 365 Security Center (security.microsoft.com) verfügbar.
 
-Um eine Ungenauigkeit zu melden, navigieren Sie zu **Berichte**  >  **Webschutz Web** Content Filtering  >  **Details**  >  **Domains**. Auf der Registerkarte Domänen unserer Web Content Filtering-Berichte wird neben jeder Domäne ein Auslassungsauslassungsblatt angezeigt. Zeigen Sie auf diese Auslassungspunkte, und wählen **Sie Ungenauigkeit melden aus.**
+Um eine Ungenauigkeit zu melden, navigieren Sie zu  >  Webinhaltsfilterungs-Detaildomänen für Den **Webschutz.**  >    >   Auf der Registerkarte "Domänen" unserer Webinhaltsfilter-Berichte werden neben jeder Domäne auslassungszeichen angezeigt. Zeigen Sie auf diese Auslassungszeichen, und wählen Sie **"Ungenauigkeit melden"** aus.
 
-Ein Bereich wird geöffnet, in dem Sie die Priorität auswählen und zusätzliche Details hinzufügen können, z. B. die vorgeschlagene Kategorie für die erneute Kategorisierung. Nachdem Sie das Formular abgeschlossen haben, wählen Sie **Absenden aus.** Unser Team überprüft die Anforderung innerhalb eines Arbeitstags. Erstellen Sie zum sofortigen Aufheben der Blockierung einen [benutzerdefinierten Zulässigen Indikator](indicator-ip-domain.md).
+Ein Bereich wird geöffnet, in dem Sie die Priorität auswählen und zusätzliche Details wie die vorgeschlagene Kategorie für die erneute Kategorisierung hinzufügen können. Nachdem Sie das Formular ausgefüllt haben, wählen Sie **"Absenden"** aus. Unser Team überprüft die Anforderung innerhalb eines Geschäftstags. Erstellen Sie zum sofortigen Aufheben der Blockierung eine [benutzerdefinierte Zulassungsanzeige.](indicator-ip-domain.md)
 
-## <a name="web-content-filtering-cards-and-details"></a>Webinhaltsfilterkarten und -details
+## <a name="web-content-filtering-cards-and-details"></a>Karten und Details zum Filtern von Webinhalten
 
-Wählen **Sie Berichte > Webschutz aus,** um Karten mit Informationen zur Filterung von Webinhalten und zum Schutz vor Webbedrohungen anzuzeigen. Die folgenden Karten enthalten Zusammenfassende Informationen zur Webinhaltsfilterung.
+Wählen Sie   >  **"Berichtswebschutz"** aus, um Karten mit Informationen zur Webinhaltsfilterung und zum Schutz vor Webbedrohungen anzuzeigen. Die folgenden Karten enthalten zusammenfassende Informationen zur Webinhaltsfilterung.
 
 ### <a name="web-activity-by-category"></a>Webaktivität nach Kategorie
 
-Diese Karte listet die übergeordneten Webinhaltskategorien mit der größten Zunahme oder Verringerung der Anzahl der Zugriffsversuche auf. Verstehen Sie drastische Änderungen an Webaktivitätsmustern in Ihrer Organisation seit den letzten 30 Tagen, 3 Monaten oder 6 Monaten. Wählen Sie einen Kategorienamen aus, um weitere Informationen anzeigen zu können.
+Diese Karte listet die übergeordneten Webinhaltskategorien mit der größten Erhöhung oder Verringerung der Anzahl der Zugriffsversuche auf. Grundlegendes zu tiefgreifenden Änderungen der Webaktivitätsmuster in Ihrer Organisation von den letzten 30 Tagen, 3 Monaten oder 6 Monaten. Wählen Sie einen Kategorienamen aus, um weitere Informationen anzuzeigen.
 
-In den ersten 30 Tagen nach der Verwendung dieses Features verfügt Ihre Organisation möglicherweise nicht über genügend Daten, um diese Informationen anzeigen zu können.
+In den ersten 30 Tagen der Verwendung dieses Features verfügt Ihre Organisation möglicherweise nicht über genügend Daten, um diese Informationen anzuzeigen.
 
 ![Abbildung der Webaktivität nach Kategoriekarte](images/web-activity-by-category600.png)
 
 ### <a name="web-content-filtering--summary-card"></a>Zusammenfassungskarte für die Webinhaltsfilterung
 
-Diese Karte zeigt die Verteilung blockierter Zugriffsversuche auf die verschiedenen übergeordneten Webinhaltskategorien an. Wählen Sie einen der farbigen Balken aus, um weitere Informationen zu einer bestimmten übergeordneten Webkategorie anzeigen zu können.
+Diese Karte zeigt die Verteilung blockierter Zugriffsversuche in den verschiedenen übergeordneten Webinhaltskategorien an. Wählen Sie einen der farbigen Balken aus, um weitere Informationen zu einer bestimmten übergeordneten Webkategorie anzuzeigen.
 
 ![Abbildung der Zusammenfassungskarte für die Webinhaltsfilterung](images/web-content-filtering-summary.png)
 
@@ -144,31 +140,26 @@ Diese Karte zeigt die Gesamtzahl der Anforderungen für Webinhalte in allen URLs
 
 ### <a name="view-card-details"></a>Anzeigen von Kartendetails
 
-Sie können auf die **Berichtsdetails** für jede Karte zugreifen, indem Sie im Diagramm auf der Karte eine Tabellenzeile oder einen farbigen Balken auswählen. Die Berichtsdetailsepage für jede Karte enthält umfangreiche statistische Daten zu Webinhaltskategorien, Websitedomänen und Gerätegruppen.
+Sie können auf die **Berichtsdetails** für jede Karte zugreifen, indem Sie eine Tabellenzeile oder eine farbige Leiste aus dem Diagramm auf der Karte auswählen. Die Berichtsdetailseite für jede Karte enthält umfangreiche statistische Daten zu Webinhaltskategorien, Websitedomänen und Gerätegruppen.
 
-![Abbildung der Details des Webschutzberichts](images/web-protection-report-details.png)
+![Abbildung der Webschutzberichtsdetails](images/web-protection-report-details.png)
 
-- **Webkategorien:** Listet die Webinhaltskategorien auf, für die in Ihrer Organisation Zugriffsversuche versucht wurden. Wählen Sie eine bestimmte Kategorie aus, um ein Zusammenfassungsf flyout zu öffnen.
+- **Webkategorien:** Listet die Webinhaltskategorien auf, für die in Ihrer Organisation Zugriffsversuche ausgeführt wurden. Wählen Sie eine bestimmte Kategorie aus, um ein Zusammenfassungs-Flyout zu öffnen.
 
-- **Domänen:** Listet die Webdomänen auf, auf die in Ihrer Organisation zugegriffen oder blockiert wurde. Wählen Sie eine bestimmte Domäne aus, um detaillierte Informationen zu dieser Domäne anzeigen zu können.
+- **Domänen:** Listet die Webdomänen auf, auf die in Ihrer Organisation zugegriffen oder blockiert wurde. Wählen Sie eine bestimmte Domäne aus, um detaillierte Informationen zu dieser Domäne anzuzeigen.
 
-- **Gerätegruppen**: Listet alle Gerätegruppen auf, die Webaktivitäten in Ihrer Organisation generiert haben
+- **Gerätegruppen:** Listet alle Gerätegruppen auf, die Webaktivitäten in Ihrer Organisation generiert haben
 
-Verwenden Sie den Zeitbereichsfilter oben links auf der Seite, um einen Zeitraum auszuwählen. Sie können die Informationen auch filtern oder die Spalten anpassen. Wählen Sie eine Zeile aus, um einen Flyoutbereich mit noch mehr Informationen zum ausgewählten Element zu öffnen.
+Verwenden Sie den Zeitbereichsfilter oben links auf der Seite, um einen Zeitraum auszuwählen. Sie können auch die Informationen filtern oder die Spalten anpassen. Wählen Sie eine Zeile aus, um einen Flyoutbereich mit noch mehr Informationen zum ausgewählten Element zu öffnen.
 
 ## <a name="errors-and-issues"></a>Fehler und Probleme
 
 ### <a name="limitations-and-known-issues-in-this-preview"></a>Einschränkungen und bekannte Probleme in dieser Vorschau
 
-- Nur Microsoft Edge wird unterstützt, wenn die Betriebssystemkonfiguration Ihres Geräts Server (**cmd**  >  **Systeminfo** OS Configuration )  >  **ist.** Network Protection wird nur im Inspect-Modus auf Servergeräten unterstützt, der für die Sicherung des Datenverkehrs über unterstützte Browser von Drittanbietern verantwortlich ist.
+- Nur Microsoft Edge wird unterstützt, wenn die Betriebssystemkonfiguration Ihres Geräts server (**cmd**  >  **Systeminfo**  >  **OS Configuration**) ist. Der Netzwerkschutz wird nur im Inspect-Modus auf Servergeräten unterstützt, der für die Sicherung des Datenverkehrs über unterstützte Browser von Drittanbietern verantwortlich ist.
 
-- Auf nicht zugewiesenen Geräten werden falsche Daten im Bericht angezeigt. Im **Pivot "Berichtdetails**  >  **Gerätegruppen"** wird möglicherweise eine Zeile mit einem leeren Feld Gerätegruppe angezeigt. Diese Gruppe enthält Ihre nicht zugewiesenen Geräte, bevor sie in Ihre angegebene Gruppe eingesenert werden. Der Bericht für diese Zeile enthält möglicherweise keine genaue Anzahl von Geräten oder Zugriffsanzahlen.
+- Nicht zugewiesene Geräte verfügen über falsche Daten, die im Bericht angezeigt werden. Im Pivot **"Berichtsdetails**  >  **Gerätegruppen"** wird möglicherweise eine Zeile mit einem leeren Feld "Gerätegruppe" angezeigt. Diese Gruppe enthält Ihre nicht zugewiesenen Geräte, bevor sie in die angegebene Gruppe aufgenommen werden. Der Bericht für diese Zeile enthält möglicherweise keine genaue Anzahl von Geräten oder Zugriffsanzahlen.
 
 - Web content filtering reports are currently limited to showing the top 5000 records. Der Domänenbericht zeigt beispielsweise nur maximal 5000 Domänen für eine bestimmte Filterabfrage an, sofern zutreffend. 
 
-## <a name="related-topics"></a>Verwandte Themen
 
-- [Übersicht über Internetschutz](web-protection-overview.md)
-- [Internet-Bedrohungsschutz](web-threat-protection.md)
-- [Überwachen der Websicherheit](web-protection-monitoring.md)
-- [Reagieren auf Internetbedrohungen](web-protection-response.md)

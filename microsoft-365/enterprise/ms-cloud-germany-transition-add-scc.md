@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: eDiscovery-Migrationsschritte für die Migration aus Microsoft Cloud Deutschland'
-ms.openlocfilehash: 16da6e6d1994ae107b62ff1f915454568a35344d
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
-ms.translationtype: HT
+ms.openlocfilehash: 0128c8563b2043e4ec41d2c5ab1b208bd3977511
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51592135"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844250"
 ---
 # <a name="information-about-the-ediscovery-experience-during-the-migration-from-microsoft-cloud-deutschland"></a>Informationen zur eDiscovery-Erfahrung während der Migration aus Microsoft Cloud Deutschland
 Die folgenden Abschnitte enthalten zusätzliche Informationen zur eDiscovery-Erfahrung beim Wechsel aus Microsoft Cloud Deutschland zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.
@@ -35,20 +35,22 @@ Bis Phase 4 ist das Security & Compliance Center vollständig verfügbar. Alle I
 Von Beginn von Phase 4 bis zum Abschluss von Phase 9 schlagen eDiscovery-Suchen fehl oder geben 0 (null) Ergebnisse für SharePoint Online-, OneDrive for Business- und Exchange Online-Speicherorte zurück, die migriert wurden.
 
 > [!NOTE]
-> Während der Migration können Kunden weiterhin Fälle, Archive, Suchvorgänge und Exporte im [Security & Compliance Center](https://docs.microsoft.com/microsoft-365/compliance/manage-legal-investigations) erstellen, einschließlich [Inhaltssuche](https://docs.microsoft.com/microsoft-365/compliance/search-for-content). Bei Suchvorgängen in SharePoint Online-, OneDrive for Business- und Exchange Online-Speicherorten, die migriert wurden, werden jedoch entweder 0 Ergebnisse oder ein Fehler zurückgegeben.
+> Während der Migration können Kunden weiterhin Fälle, Archive, Suchvorgänge und Exporte im [Security & Compliance Center](/microsoft-365/compliance/manage-legal-investigations) erstellen, einschließlich [Inhaltssuche](/microsoft-365/compliance/search-for-content). Bei Suchvorgängen in SharePoint Online-, OneDrive for Business- und Exchange Online-Speicherorten, die migriert wurden, werden jedoch entweder 0 Ergebnisse oder ein Fehler zurückgegeben.
 
-Für den Fall, dass eine Suche 0 (null) Ergebnisse oder einen Fehler während der Migration zurückgibt, sollten Sie die folgende Aktion für SharePoint Online ausführen: 
+Für den Fall, dass eine Suche 0 (null) Ergebnisse oder einen Fehler während der Migration zurückgibt, sollten Sie die folgende Aktion für SharePoint Online ausführen:
+
 - Laden Sie Websites direkt von der SharePoint Online- oder OneDrive for Business-Website herunter, indem Sie die Anweisungen in [Herunterladen von Dateien und Ordnern aus OneDrive oder SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05) befolgen. Für diese Methode sind SharePoint Online-Administratorberechtigungen oder Nur-Lesen-Berechtigungen auf der Website erforderlich.
 - Wenn Limits überschritten werden, wie in [Herunterladen von Dateien und Ordnern aus OneDrive oder SharePoint](https://support.office.com/article/download-files-and-folders-from-onedrive-or-sharepoint-5c7397b7-19c7-4893-84fe-d02e8fa5df05) erläutert wird, können Kunden den OneDrive for Business-Synchronisierungsclient verwenden, indem sie den Anweisungen unter [Synchronisieren von SharePoint- und Team Dateien mit Ihrem Computer](https://support.office.com/article/sync-sharepoint-files-with-the-new-onedrive-sync-app-6de9ede8-5b6e-4503-80b2-6190f3354a88) folgen.
 
-- Weitere Informationen finden Sie unter [In-Situ-eDiscovery in Exchange Server](https://docs.microsoft.com/Exchange/policy-and-compliance/ediscovery/ediscovery).
+- Weitere Informationen finden Sie unter [In-Situ-eDiscovery in Exchange Server](/Exchange/policy-and-compliance/ediscovery/ediscovery).
 
 
 ## <a name="ediscovery-administration-after-phase-9"></a>eDiscovery-Verwaltung nach Phase 9
 
 **Gilt für:** Alle Kunden, die eDiscovery verwenden
 
-In Phase 9 werden die letzten Schritte für den Wechsel in die neue deutsche Rechenzentrumsregion ausgeführt. In dieser Phase werden alle verbleibenden Dienstkomponenten migriert. Nach Phase 9 wird die Verwendung des Security & Compliance Centers in der Microsoft Cloud Deutschland (protection.office.de) nicht mehr unterstützt. Verwenden Sie stattdessen das neue [Security Center](https://security.microsoft.com/) oder [Compliance Center](https://compliance.microsoft.com/). Alle Daten wurden in die neuen Verwaltungsportale übertragen. 
+In Phase 9 werden die letzten Schritte für den Wechsel in die neue deutsche Rechenzentrumsregion ausgeführt. In dieser Phase werden alle verbleibenden Dienstkomponenten migriert.
+Nach Phase 9 wird die Verwendung des Security & Compliance Centers in der Microsoft Cloud Deutschland (protection.office.de) nicht mehr unterstützt. Verwenden Sie stattdessen das neue [Security Center](https://security.microsoft.com/) oder [Compliance Center](https://compliance.microsoft.com/). Alle Daten wurden in die neuen Verwaltungsportale übertragen.
 
 | Schritte: | Beschreibung | Auswirkung |
 |:-------|:-------|:-------|

@@ -1,7 +1,7 @@
 ---
 title: Das neue Microsoft Edge
-description: Erläutert, wie der neue Edgebrowser bereitgestellt und aktualisiert wird
-keywords: browser, Microsoft Managed Desktop, Microsoft 365, service, documentation
+description: Erläutert, wie der neue Edgebrowser bereitgestellt und aktualisiert wird.
+keywords: Browser, Microsoft Managed Desktop, Microsoft 365, Dienst, Dokumentation
 ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
@@ -10,85 +10,85 @@ audience: ITpro
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 033826a7f82278f6e36b422284a1076cba57d584
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2bf1fab504ae77a1e66235f49333c3b123e38904
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921978"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822250"
 ---
 # <a name="new-microsoft-edge-app"></a>Neue Microsoft Edge-App
 
-Der neue [Microsoft Edge bietet](https://www.microsoft.com/edge) erstklassige Leistung mit mehr Datenschutz, mehr Produktivität und mehr Wert beim Browsen. Microsoft Managed Desktop bietet eine öffentliche Vorschau der Bereitstellung des neuen Edgebrowsers in Ihrer Umgebung.
+Der neue [Microsoft Edge Browser](https://www.microsoft.com/edge) bietet erstklassige Leistung mit mehr Datenschutz, mehr Produktivität und mehr Nutzen beim Browsen. Microsoft Managed Desktop bietet eine öffentliche Vorschau der Bereitstellung des neuen Edgebrowsers in Ihrer Umgebung.
 
 ## <a name="initial-deployment"></a>Erstbereitstellung
 
-Um Ihre Microsoft Managed Desktop zum neuen Microsoft Edge zu migrieren, müssen Sie ein IT-Supportticket über das Microsoft Managed Desktop erstellen. Wir stellen den Edge stable-Kanal bei der Testgruppe zur Datei des Tickets und anschließend alle 24 Stunden in jeder nachfolgenden Bereitstellungsgruppe. Um die Bereitstellung anzuhalten, führen Sie ein weiteres Ticket aus, in dem Operations zum Anhalten aufgefordert wird.
+Um Ihre Microsoft Managed Desktop Geräte zum neuen Microsoft Edge Browser zu migrieren, melden Sie über das Microsoft Managed Desktop Portal ein IT-Supportticket an. Wir stellen den Edge Stable-Kanal für die Testgruppe bereit, wenn Sie das Ticket einreichen, und stellen ihn dann alle 24 Stunden in jeder nachfolgenden Bereitstellungsgruppe bereit. Wenn Sie die Bereitstellung anhalten möchten, geben Sie ein weiteres Ticket ein, in dem Operations zur Aufbewahrung aufgefordert wird.
 
-Der [Betakanal](/deployedge/microsoft-edge-channels#beta-channel) ist auch auf Anfrage für eine repräsentative Überprüfung in Ihrer Organisation verfügbar. Microsoft Managed Desktop stellt die Anwendung nach Bedarf für die Test- und erste Gruppen zur Verfügung, sodass alle diese Benutzer zusätzlich zum Stable Channel über den Betakanal verfügen. Für alle anderen Benutzer, die Zugriff auf den Betakanal benötigen, fügen Sie sie der Gruppe **Modern Workplace - Edge Beta Users** hinzu, und lassen Sie sie von der Unternehmensportal
+Der [Betakanal](/deployedge/microsoft-edge-channels#beta-channel) steht auch auf Anfrage zur repräsentativen Validierung innerhalb Ihrer Organisation zur Verfügung. Microsoft Managed Desktop stellt die Anwendung nach Bedarf in den Test- und Erstgruppen bereit, sodass alle diese Benutzer zusätzlich zum Stable Channel über den Betakanal verfügen. Für alle anderen Benutzer, die Zugriff auf den Betakanal benötigen, fügen Sie sie der Gruppe **"Modern Workplace - Edge Beta-Benutzer"** hinzu und lassen Sie sie über die Unternehmensportal
 
 ## <a name="updates-to-microsoft-edge"></a>Updates für Microsoft Edge
 
-Microsoft Managed Desktop stellt den [Stable-Kanal](/deployedge/microsoft-edge-channels#stable-channel) von Microsoft Edge, der etwa alle sechs Wochen automatisch aktualisiert wird. Updates auf dem Stable-Kanal werden schrittweise von der Microsoft Edge produktgruppe veröffentlicht, um eine optimale Benutzererfahrung für Kunden zu gewährleisten. [](/deployedge/microsoft-edge-update-progressive-rollout) 
+Microsoft Managed Desktop stellt den [Stable-Kanal](/deployedge/microsoft-edge-channels#stable-channel) von Microsoft Edge bereit, der etwa alle sechs Wochen automatisch aktualisiert wird. Updates für den Stable-Kanal werden [schrittweise](/deployedge/microsoft-edge-update-progressive-rollout) von der Microsoft Edge Produktgruppe eingeführt, um die beste Benutzererfahrung für Kunden sicherzustellen. 
 
-Der [Betakanal](/deployedge/microsoft-edge-channels#beta-channel) wird auf Geräten in den Gruppen Test und First zur repräsentativen Überprüfung innerhalb der Organisation bereitgestellt. Dieser Kanal wird vollständig unterstützt und mit neuen Features etwa alle sechs Wochen automatisch aktualisiert.
+Der [Betakanal](/deployedge/microsoft-edge-channels#beta-channel) wird für Geräte in der Test- und der ersten Gruppe zur repräsentativen Überprüfung innerhalb der Organisation bereitgestellt. Dieser Kanal wird vollständig unterstützt und etwa alle sechs Wochen automatisch mit neuen Features aktualisiert.
 
-Um sicherzustellen, dass Microsoft Edge aktualisiert werden, ändern Sie nicht die Microsoft Edge [Updaterichtlinien](/deployedge/microsoft-edge-update-policies).
+Um sicherzustellen, dass Microsoft Edge Updates ordnungsgemäß aktualisiert, ändern Sie nicht die Microsoft Edge [Updaterichtlinien.](/deployedge/microsoft-edge-update-policies)
 
 
 
-## <a name="settings-managed-by-microsoft-managed-desktop"></a>Einstellungen verwaltet von Microsoft Managed Desktop
+## <a name="settings-managed-by-microsoft-managed-desktop"></a>von Microsoft Managed Desktop verwaltete Einstellungen
 
 Microsoft Managed Desktop hat einen Standardsatz von Richtlinien für Microsoft Edge zum Sichern des Browsers erstellt. Die Standardbrowsereinstellungen sind wie folgt:
 
-### <a name="microsoft-edge-extensions"></a>Microsoft Edge-Erweiterungen
+### <a name="microsoft-edge-extensions"></a>Microsoft Edge Erweiterungen
 
-Die Sicherheitsgrundlinie für Microsoft Edge auf Microsoft Managed Desktop legt zwei Richtlinien fest, um alle Chrome-Erweiterungen zu deaktivieren und Benutzer zu schützen. Informationen zum Aktivieren und Bereitstellen von Erweiterungen in Ihrer Umgebung finden Sie unter Einstellungen sie verwalten. 
+Die Sicherheitsgrundwerte für Microsoft Edge auf Microsoft Managed Desktop Geräten legen zwei Richtlinien fest, um alle Chrome-Erweiterungen und sicheren Benutzer zu deaktivieren. Informationen zum Aktivieren und Bereitstellen von Erweiterungen in Ihrer Umgebung finden Sie unter Einstellungen Sie verwalten. 
 
-#### <a name="extension-installation-blocklist"></a>Blockliste der Erweiterungsinstallation
-**Standardwert:** All
+#### <a name="extension-installation-blocklist"></a>Erweiterungsinstallationsblockliste
+**Standardwert:** Alle
 
-Microsoft Managed Desktop legt diese Richtlinie fest, um zu verhindern, dass Chrome-Erweiterungen auf verwalteten Endpunkten installiert werden. Es gibt bekannte Risiken im Zusammenhang mit Chromium Erweiterungsmodell, einschließlich Schutz vor Datenverlust, Datenschutz und andere Risiken, die Geräte in Gefahr führen können. 
+Microsoft Managed Desktop legt diese Richtlinie fest, um zu verhindern, dass Chrome-Erweiterungen auf verwalteten Endpunkten installiert werden. Es gibt bekannte Risiken im Zusammenhang mit dem Chromium Erweiterungsmodell, einschließlich Schutz vor Datenverlust, Datenschutz und andere Risiken, die Geräte beeinträchtigen können. 
 
 #### <a name="allow-user-level-native-messaging-hosts-installed-without-admin-permissions"></a>Zulassen systemeigener Messaginghosts auf Benutzerebene (ohne Administratorberechtigungen installiert)
 
 **Standardwert:** Deaktiviert
 
-Wenn Sie diese Richtlinie deaktivieren, Microsoft Edge nur systemeigene Messaginghosts verwendet, die auf Systemebene installiert sind. Native Messaginghosts sind Teil von Chrome-Erweiterungen, die es dem Browser ermöglichen, mit anderen Teilen des Endpunkts des Benutzers zu interagieren, was eine Vielzahl von Sicherheitsbedenken schafft.  
+Durch Deaktivieren dieser Richtlinie verwenden Microsoft Edge nur systemeigene Messaginghosts, die auf Systemebene installiert sind. Systemeigene Messaginghosts sind Teil von Chrome-Erweiterungen, die es dem Browser ermöglichen, mit anderen Teilen des Endpunkts des Benutzers zu interagieren, wodurch eine Vielzahl von Sicherheitsbedenken entsteht.  
 
 ### <a name="secure-sockets-layer-tlsssl"></a>Secure Sockets Layer (TLS/SSL)
 
 #### <a name="minimum-tls-version"></a>Minimale TLS-Version
 
-**Standardwert:** Mindestens TLS 1.2 unterstützt
+**Standardwert:** Mindestens tls 1.2 unterstützt
 
-Wenn Sie das weniger sichere TLS 1.1 verwenden möchten, können Sie eine Anforderung dazu senden.
+Wenn Sie das weniger sichere TLS 1.1 verwenden möchten, können Sie eine Entsprechendeanforderung senden.
 
-#### <a name="allows-users-to-proceed-from-the-ssl-warning-page"></a>Ermöglicht Benutzern das Fortfahren von der SSL-Warnungsseite
+#### <a name="allows-users-to-proceed-from-the-ssl-warning-page"></a>Ermöglicht Benutzern das Fortfahren von der SSL-Warnseite
 
 **Standardwert:** Deaktiviert
 
-Es wird nicht empfohlen, diese Einstellung zu aktivieren, da sie Benutzern das Besuchen von Websites mit TSL-Fehlern ermöglicht.
+Es wird davon abgeraten, diese Einstellung zu aktivieren, da benutzer websites mit TSL-Fehlern besuchen können.
 
 ### <a name="microsoft-defender-smartscreen"></a>Microsoft Defender SmartScreen
 
-#### <a name="configure-windows-defender-smartscreen"></a>Konfigurieren Windows Defender SmartScreen
+#### <a name="configure-windows-defender-smartscreen"></a>Konfigurieren von Windows Defender SmartScreen
 
 **Standardwert:** Aktiviert
 
 Standardmäßig aktiviert, um Benutzer zu schützen.
 
-#### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Windows Defender SmartScreen-Eingabeaufforderungen für Websites
+#### <a name="windows-defender-smartscreen-prompts-for-sites"></a>Windows Defender SmartScreen-Aufforderungen für Websites
 
 **Standardwert:** Aktiviert
 
-Es wird nicht empfohlen, diese Einstellung zu deaktivieren, da benutzer Warnungen ignorieren und weiterhin potenziell schädliche Websites verwenden können.
+Es wird nicht empfohlen, diese Einstellung zu deaktivieren, da dies es Benutzern ermöglichen würde, Warnungen zu ignorieren und weiterhin potenziell schädliche Websites zu verwenden.
 
-#### <a name="prevent-bypassing-of-windows-defender-smartscreen-warnings-about-downloads"></a>Verhindern der Umgehung Windows Defender Von SmartScreen-Warnungen zu Downloads
+#### <a name="prevent-bypassing-of-windows-defender-smartscreen-warnings-about-downloads"></a>Verhindern der Umgehung von Windows Defender SmartScreen-Warnungen zu Downloads
 
 **Standardwert:** Aktiviert
 
-Es wird nicht empfohlen, diese Einstellung zu deaktivieren, da benutzer Warnungen ignorieren und nicht überprüfte Downloads abschließen können.
+Es wird nicht empfohlen, diese Einstellung zu deaktivieren, da dadurch Benutzer Warnungen ignorieren und nicht überprüfte Downloads abschließen können.
 
 ### <a name="adobe-flash"></a>Adobe Flash
 
@@ -96,7 +96,7 @@ Es wird nicht empfohlen, diese Einstellung zu deaktivieren, da benutzer Warnunge
 
 **Standardwert:** Deaktiviert
 
-Die Verwendung von Flash wird aufgrund der damit verbundenen Sicherheitsrisiken nicht empfohlen. Wenn Sie noch prozesse haben, die von Flash abhängen, legen Sie die **[Richtlinie PluginsAllowedForUrls](/deployedge/microsoft-edge-policies#pluginsallowedforurls)** so fest, dass Flash für Websites aktiviert wird, die es benötigen. Wenn Sie keine liste der zulässigen Websites für die Verwendung von Flash verwalten können, senden Sie eine Änderungsanforderung, um den Wert in Klick auf **Wiedergabe** zu ändern, wodurch Benutzer auswählen können, wann Flash ausgeführt werden soll.
+Aufgrund der damit verbundenen Sicherheitsrisiken wird die Verwendung von Flash nicht empfohlen. Wenn Sie weiterhin Prozesse haben, die von Flash abhängig sind, legen Sie die **[PluginsAllowedForUrls-Richtlinie](/deployedge/microsoft-edge-policies#pluginsallowedforurls)** fest, um Flash für Websites zu aktivieren, die es benötigen. Wenn Sie keine Liste zulässiger Websites zur Verwendung von Flash verwalten können, senden Sie eine Änderungsanforderung, um den Wert in **"Klick-und-Los" zu** ändern, sodass Benutzer auswählen können, wann Flash ausgeführt werden soll.
 
 ### <a name="password-manager"></a>Kennwort-Manager
 
@@ -104,32 +104,32 @@ Die Verwendung von Flash wird aufgrund der damit verbundenen Sicherheitsrisiken 
 
 **Standardwert:** Deaktiviert
 
-Es wird nicht empfohlen, Benutzern das Speichern von Kennwörtern auf ihrem Gerät zu erlauben.
+Der Kennwort-Manager ist standardmäßig deaktiviert. Wenn Sie diese Funktion aktiviert haben, senden Sie eine Supportanfrage, und unsere Servicetechniker können die Einstellung in Ihrer Umgebung aktivieren. 
 
 ### <a name="internet-explorer-mode-in-microsoft-edge"></a>Internet Explorer-Modus in Microsoft Edge
-Der IE-Microsoft Edge erleichtert die Verwendung aller Websites, die Ihre Organisation in einem einzigen Browser benötigt. Es verwendet das integrierte Chromium-Modul für Websites, die mit dem Chromium-Renderingmodul kompatibel sind, und es verwendet das Trident-MSHTML-Modul von Internet Explorer 11 (IE11) für Websites, die nicht von der IE-Funktionalität abhängig sind oder abhängigkeiten. [Weitere Informationen] (https://docs.microsoft.com/DeployEdge/edge-ie-mode) 
+Der IE-Modus auf Microsoft Edge erleichtert die Verwendung aller Websites, die Ihre Organisation benötigt, in einem einzigen Browser. Es verwendet das integrierte Chromium-Modul für Websites, die mit dem Chromium Renderingmodul kompatibel sind, und das Trident MSHTML-Modul aus Internet Explorer 11 (IE11) für Websites, die nicht von IE-Funktionen abhängig sind oder davon abhängig sind. [Weitere Informationen](/DeployEdge/edge-ie-mode) 
 
 Microsoft Managed Desktop aktiviert standardmäßig den Internet Explorer-Modus für Ihre Geräte 
 
 #### <a name="internet-explorer-mode-integration"></a>Integration des Internet Explorer-Modus
 **Standardwert:** Internet Explorer-Modus
 
-Standardmäßig ist für Geräte die Verwendung des Internet Explorer-Modus festgelegt, Sie können jedoch festlegen, dass websites stattdessen in einem eigenständigen Internet Explorer 11-Fenster geöffnet werden. Um dieses Verhalten zu ändern, senden Sie eine Supportanfrage.
+Standardmäßig ist für Geräte die Verwendung des Internet Explorer-Modus festgelegt, Sie können jedoch festlegen, dass Websites stattdessen in einem eigenständigen Internet Explorer 11-Fenster geöffnet werden. Um dieses Verhalten zu ändern, stellen Sie eine Supportanfrage.
 
-#### <a name="add-sites-to-the-enterprise-mode-site-list"></a>Hinzufügen von Websites zur liste Enterprise Moduswebsite
-Damit Websites im Internet Explorer-Modus geöffnet werden können, müssen Sie sie in die Liste [Enterprise Website hinzufügen.](/DeployEdge/edge-ie-mode-sitelist) Die Verwaltung und Bereitstellung Enterprise Websiteliste liegt in Ihrer Verantwortung. Weitere Informationen finden Sie unter [Configure using the Configure Enterprise Mode Site List policy](/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
+#### <a name="add-sites-to-the-enterprise-mode-site-list"></a>Hinzufügen von Websites zur Websiteliste für den Enterprise modus
+Damit Websites im Internet Explorer-Modus geöffnet werden können, müssen Sie sie in die [websiteliste Enterprise](/DeployEdge/edge-ie-mode-sitelist)einschließen. Die Verwaltung und Bereitstellung der Enterprise Websiteliste liegt in Ihrer Verantwortung. Ausführliche Informationen finden Sie unter [Konfigurieren der Richtlinie "Konfigurieren Enterprise Mode Site List"](/DeployEdge/edge-ie-mode-policies#configure-using-the-configure-the-enterprise-mode-site-list-policy)
 
 ### <a name="other-settings"></a>Weitere Einstellungen
 
-#### <a name="enable-site-isolation-for-every-site"></a>Aktivieren der Websiteisolation für jede Website
+#### <a name="enable-site-isolation-for-every-site"></a>Aktivieren der Websiteisolation für jeden Standort
 
 **Standardwert:** Aktiviert
 
-Wenn diese Richtlinie aktiviert ist, können Benutzer das Standardverhalten, bei dem jede Website in einem eigenen Prozess ausgeführt wird, nicht abmelden.
+Wenn diese Richtlinie aktiviert ist, können Benutzer das Standardverhalten, in dem jede Website in einem eigenen Prozess ausgeführt wird, nicht deaktivieren.
 
 #### <a name="supported-authentication-schemes"></a>Unterstützte Authentifizierungsschemas
 
-**Standardwert:** NTLM, Negotiate
+**Standardwert:** NTLM, Aushandeln
 
 Microsoft Managed Desktop unterstützt keine Standard- oder Digestauthentifizierungsschemas.
 
@@ -137,29 +137,29 @@ Microsoft Managed Desktop unterstützt keine Standard- oder Digestauthentifizier
 
 **Standardwert:** Automatisches Importieren aller unterstützten Datentypen und Einstellungen aus dem Standardbrowser 
 
-Wenn diese Richtlinie angewendet wird, überspringt die First Run Experience den Importabschnitt, wodurch die Benutzerinteraktion minimiert wird. Die Browserdaten aus älteren Versionen von Microsoft Edge werden unabhängig von dieser Einstellung bei der ersten Ausführung immer automatisch migriert. 
+Wenn diese Richtlinie angewendet wird, überspringt die Erste Ausführungserfahrung den Importabschnitt, wodurch die Benutzerinteraktion minimiert wird. Die Browserdaten aus älteren Versionen von Microsoft Edge werden unabhängig von dieser Einstellung bei der ersten Ausführung immer im Hintergrund migriert. 
 
 
-## <a name="settings-you-manage"></a>Einstellungen, die Sie verwalten
+## <a name="settings-you-manage"></a>Einstellungen Sie verwalten
 
-Sie können alle einstellungen Microsoft Edge, die zuvor nicht beschrieben wurden, mithilfe des Profils administrative Vorlagen in Microsoft Intune. Weitere Informationen finden Sie unter [Configure Microsoft Edge policy settings with Microsoft Intune](/deployedge/configure-edge-with-intune). Wenn Sie eine Richtlinie auswerten möchten, die derzeit nicht in den Microsoft Edge Administrative Vorlagen in Intune enthalten ist, können Sie benutzerdefinierte Einstellungen für Windows 10 in Intune verwenden.
+Sie können alle Microsoft Edge Einstellungen bereitstellen, die zuvor nicht beschrieben wurden, indem Sie das Profil "Administrative Vorlagen" in Microsoft Intune verwenden. Ausführliche Informationen finden Sie unter [Konfigurieren Microsoft Edge Richtlinieneinstellungen mit Microsoft Intune.](/deployedge/configure-edge-with-intune) Wenn Sie eine Richtlinie auswerten möchten, die derzeit nicht in der Microsoft Edge Administrative Vorlagen in Intune enthalten ist, können Sie benutzerdefinierte Einstellungen für Windows 10 Geräte in Intune verwenden.
 
 ### <a name="enabling-specific-chrome-extensions"></a>Aktivieren bestimmter Chrome-Erweiterungen
 
-Die Administrative Vorlage bietet eine Einstellung zum Bereitstellen bestimmter Chrome-Erweiterungen mit Microsoft Intune. Informationen dazu finden Sie unter **Computerkonfiguration > Microsoft Edge > Erweiterungen > Zulassen** der Installation bestimmter Erweiterungen .
+Die administrative Vorlage bietet eine Einstellung zum Bereitstellen bestimmter Chrome-Erweiterungen mit Microsoft Intune. Sie finden sie unter **Computerkonfiguration > Microsoft Edge > Erweiterungen > Zulassen, dass bestimmte Erweiterungen installiert werden.**
 
 ### <a name="install-extensions-silently"></a>Automatisches Installieren von Erweiterungen
 
-Sie können auch mithilfe der Administrativen Vorlage festlegen, Microsoft Edge Erweiterungen zu installieren, ohne den Benutzer zu warnen. Sie finden sie unter **Computerkonfiguration > Microsoft Edge > Erweiterungen > Steuern,** welche Erweiterungen im Hintergrund installiert werden.
+Sie können die administrative Vorlage auch verwenden, um Microsoft Edge zum Installieren von Erweiterungen festzulegen, ohne den Benutzer zu benachrichtigen. Sie finden es unter **Computerkonfiguration > Microsoft Edge > Erweiterungen > Steuern, welche Erweiterungen im Hintergrund installiert werden.**
 
-### <a name="microsoft-edge-update-policies"></a>Microsoft Edge Updaterichtlinien
-Um sicherzustellen, dass Microsoft Edge aktualisiert werden, ändern Sie nicht die Microsoft Edge [Updaterichtlinien](/deployedge/microsoft-edge-update-policies).
+### <a name="microsoft-edge-update-policies"></a>Microsoft Edge Aktualisieren von Richtlinien
+Um sicherzustellen, dass Microsoft Edge Updates ordnungsgemäß aktualisiert, ändern Sie nicht die Microsoft Edge [Updaterichtlinien.](/deployedge/microsoft-edge-update-policies)
 
 ### <a name="other-common-enterprise-policies"></a>Andere allgemeine Unternehmensrichtlinien
 
-Microsoft Edge bietet viele andere Richtlinien. Dies sind einige der gängigen:
+Microsoft Edge bietet viele andere Richtlinien. Dies sind einige der gängigsten:
  
-- [Konfigurieren von Websites in Enterprise Websiteliste und im IE-Modus](/deployedge/edge-ie-mode-sitelist)
-- [Konfigurieren von Einstellungen für Start-, Homepage- und neue Registerkartenseiten](/deployedge/microsoft-edge-policies#startup-home-page-and-new-tab-page)
-- [Konfigurieren der Einstellung für Surfspiele](/deployedge/microsoft-edge-policies#allowsurfgame)
+- [Konfigurieren von Websites im Enterprise-Websitelisten- und IE-Modus](/deployedge/edge-ie-mode-sitelist)
+- [Konfigurieren der Einstellungen für Start-Up, Startseite und neue Registerkartenseite](/deployedge/microsoft-edge-policies#startup-home-page-and-new-tab-page)
+- [Konfigurieren der Surf-Spieleinstellung](/deployedge/microsoft-edge-policies#allowsurfgame)
 - [Konfigurieren von Proxyservereinstellungen](/deployedge/microsoft-edge-policies#proxy-server)

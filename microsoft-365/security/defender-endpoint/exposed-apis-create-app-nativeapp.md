@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 8f23a0b269986f4caa199ad3744c563fcc6ff6b2
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 876dddf7a68b9844dea6a30ff4ebbbe3c2b75b69
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769101"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844550"
 ---
 # <a name="use-microsoft-defender-for-endpoint-apis"></a>Verwenden von Microsoft Defender für Endpunkt-APIs
 
@@ -44,7 +44,7 @@ Wenn Sie programmgesteuerten Zugriff auf Microsoft Defender für Endpunkt ohne E
 
 Wenn Sie nicht sicher sind, welchen Zugriff Sie benötigen, lesen Sie die [Einführungsseite.](apis-intro.md)
 
-Microsoft Defender für Endpunkt macht einen Großteil seiner Daten und Aktionen über eine Reihe programmgesteuerter APIs verfügbar. Mit diesen APIs können Sie Arbeitsabläufe automatisieren und Innovationen basierend auf den Microsoft Defender für Endpunkt-Funktionen durchführen. Der API-Zugriff erfordert die OAuth2.0-Authentifizierung. Weitere Informationen finden Sie unter [OAuth 2.0-Autorisierungscode Flow](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
+Microsoft Defender für Endpunkt macht einen Großteil seiner Daten und Aktionen über eine Reihe programmgesteuerter APIs verfügbar. Mit diesen APIs können Sie Arbeitsabläufe automatisieren und Innovationen basierend auf den Microsoft Defender für Endpunkt-Funktionen durchführen. Der API-Zugriff erfordert die OAuth2.0-Authentifizierung. Weitere Informationen finden Sie unter [OAuth 2.0-Autorisierungscode Flow](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code).
 
 Im Allgemeinen müssen Sie die folgenden Schritte ausführen, um die APIs zu verwenden:
 - Erstellen einer AAD-Anwendung
@@ -89,13 +89,13 @@ Auf dieser Seite wird erläutert, wie Sie eine AAD-Anwendung erstellen, ein Zugr
 
 4. Erlauben Sie Ihrer Anwendung, auf Microsoft Defender für Endpunkt zuzugreifen, und weisen Sie ihr die Berechtigung "Warnungen lesen" zu:
 
-    - Wählen Sie auf der Anwendungsseite **"API-Berechtigungen** Hinzufügen von  >    >  **Berechtigungs-APIs" aus,** die meine Organisation > Typ **"WindowsDefenderATP"** verwendet, und wählen Sie **"WindowsDefenderATP"** aus.
+    - Wählen Sie auf der Anwendungsseite **"API-Berechtigungen**  >  Berechtigungs-APIs **hinzufügen"** aus, die  >  meine Organisation > Typ **"WindowsDefenderATP"** **verwendet,** und wählen Sie unter **"WindowsDefenderATP"** aus.
 
     - **Hinweis:** *WindowsDefenderATP* wird nicht in der ursprünglichen Liste angezeigt. Beginnen Sie damit, den Namen in das Textfeld zu schreiben, damit er angezeigt wird.
 
       ![Berechtigung hinzufügen](images/add-permission.png)
 
-    - Wählen Sie **"Warnung zu delegierten**  >  **Berechtigungen".>** **"Berechtigungen hinzufügen"** aus.
+    - Delegierte **Berechtigungen**  >  **auswählen Warnung.Lesen** > Berechtigungen **hinzufügen** auswählen
 
       ![Anwendungsberechtigungen](images/application-permissions-public-client.png)
 
@@ -122,7 +122,7 @@ Auf dieser Seite wird erläutert, wie Sie eine AAD-Anwendung erstellen, ein Zugr
 
 ## <a name="get-an-access-token"></a>Abrufen eines Zugriffstokens
 
-Weitere Informationen zu AAD-Token finden Sie im [Azure AD-Lernprogramm](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
+Weitere Informationen zu AAD-Token finden Sie im [Azure AD-Lernprogramm](/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 ### <a name="using-c"></a>Verwenden von C #
 

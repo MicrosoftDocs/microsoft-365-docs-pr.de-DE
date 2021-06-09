@@ -1,7 +1,7 @@
 ---
-title: Behandeln von Problemen mit der Liveantwort von Microsoft Defender for Endpoint
-description: Behandeln von Problemen, die bei der Verwendung von Liveantworten in Microsoft Defender for Endpoint auftreten können
-keywords: Problembehandlung für Liveantwort, Live, Antwort, gesperrt, Datei
+title: Behandeln von Problemen mit der Liveantwort von Microsoft Defender für Endpunkt
+description: Behandeln von Problemen, die bei Verwendung der Liveantwort in Microsoft Defender für Endpunkt auftreten können
+keywords: Problembehandlung bei Liveantwort, Live, Antwort, gesperrt, Datei
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 2601001687fc22da98ca3cd81010237d12705ea4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 99a52188dd5f6eca2f8368aa3c114d0bfb950b10
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687411"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844154"
 ---
-# <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Behandeln von Problemen mit der Liveantwort von Microsoft Defender for Endpoint
+# <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Behandeln von Problemen mit der Liveantwort von Microsoft Defender für Endpunkt
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -31,12 +31,12 @@ ms.locfileid: "51687411"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
+> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
-Diese Seite enthält detaillierte Schritte zur Problembehandlung bei Liveantwortproblemen.
+Auf dieser Seite finden Sie ausführliche Schritte zur Behandlung von Problemen mit Liveantworten.
 
-## <a name="file-cannot-be-accessed-during-live-response-sessions"></a>Zugriff auf Datei während Liveantwortsitzungen nicht möglich
-Wenn beim Versuch, während einer Liveantwortsitzung eine Aktion zu ergreifen, eine Fehlermeldung angezeigt wird, dass auf die Datei nicht zugegriffen werden kann, müssen Sie die folgenden Schritte ausführen, um das Problem zu beheben.
+## <a name="file-cannot-be-accessed-during-live-response-sessions"></a>Auf die Datei kann während der Liveantwortsitzungen nicht zugegriffen werden.
+Wenn Sie während einer Live-Antwortsitzung versuchen, eine Aktion auszuführen, wird eine Fehlermeldung angezeigt, die besagt, dass auf die Datei nicht zugegriffen werden kann, müssen Sie die folgenden Schritte ausführen, um das Problem zu beheben.
 
 1. Kopieren Sie den folgenden Skriptcodeausschnitt, und speichern Sie ihn als PS1-Datei:
 
@@ -56,18 +56,18 @@ Wenn beim Versuch, während einer Liveantwortsitzung eine Aktion zu ergreifen, e
     ```
 
 
-2. Fügen Sie das Skript der Liveantwortbibliothek hinzu.
-3. Führen Sie das Skript mit einem Parameter aus: dem Dateipfad der zu kopierende Datei.
+2. Fügen Sie das Skript der Live-Antwortbibliothek hinzu.
+3. Führen Sie das Skript mit einem Parameter aus: dem Dateipfad der zu kopierenden Datei.
 4. Navigieren Sie zu Ihrem TEMP-Ordner.
 5. Führen Sie die Aktion aus, die Sie für die kopierte Datei ausführen möchten.
 
-## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>Langsame Liveantwortsitzungen oder Verzögerungen bei anfänglichen Verbindungen
-Die Liveantwort nutzt die Defender for Endpoint-Sensorregistrierung beim WNS-Dienst in Windows. Wenn Konnektivitätsprobleme bei der Liveantwort auftreten, bestätigen Sie die folgenden Details:
-1. `notify.windows.com` in Ihrer Umgebung nicht blockiert ist. Weitere Informationen finden Sie unter [Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
-2. WpnService (Windows Push Notifications System Service) ist nicht deaktiviert.
+## <a name="slow-live-response-sessions-or-delays-during-initial-connections"></a>Langsame Liveantwortsitzungen oder Verzögerungen während der ersten Verbindungen
+Live Response nutzt die Defender für Endpunkt-Sensorregistrierung beim WNS-Dienst in Windows. Wenn Verbindungsprobleme mit Liveantworten auftreten, bestätigen Sie die folgenden Details:
+1. `notify.windows.com` wird in Ihrer Umgebung nicht blockiert. Weitere Informationen finden Sie unter [Konfigurieren der Einstellungen für Geräteproxy und Internetverbindung.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
+2. WpnService (Windows Pushbenachrichtigungssystemdienst) ist nicht deaktiviert.
 
 Lesen Sie die folgenden Artikel, um das Verhalten und die Anforderungen des WpnService-Diensts vollständig zu verstehen:
-- [Windows Übersicht Notification Services (WNS)](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
-- [Enterprise Firewall- und Proxykonfigurationen zur Unterstützung des WNS-Datenverkehrs](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
-- [Öffentliche IP-Bereiche des Microsoft Push Notifications Service (MPNS)](https://www.microsoft.com/en-us/download/details.aspx?id=44535)
+- [Windows Übersicht über Pushbenachrichtigungsdienste (Push Notification Services, WNS)](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview)
+- [Enterprise Firewall- und Proxykonfigurationen zur Unterstützung von WNS-Datenverkehr](/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config)
+- [Öffentliche IP-Bereiche des Microsoft-Pushbenachrichtigungsdiensts (MPNS)](https://www.microsoft.com/en-us/download/details.aspx?id=44535)
 

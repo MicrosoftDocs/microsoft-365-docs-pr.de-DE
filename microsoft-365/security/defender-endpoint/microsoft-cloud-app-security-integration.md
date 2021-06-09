@@ -1,7 +1,7 @@
 ---
 title: Übersicht über Microsoft Cloud App Security
 ms.reviewer: ''
-description: Microsoft Defender for Endpoint integriert sich in Cloud App Security, indem alle Cloud-App-Netzwerkaktivitäten weitergeleitet werden.
+description: Microsoft Defender für Endpunkt lässt sich in Cloud App Security integrieren, indem alle Cloud-App-Netzwerkaktivitäten weitergeleitet werden.
 keywords: Cloud, App, Netzwerk, Sichtbarkeit, Nutzung
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 10/18/2018
 ms.technology: mde
-ms.openlocfilehash: d756c738f9f61638a9e7424aa3fdf639f8f02f2a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 5a5a81bde283a9eba4d5db77ed7e4c0b7567abc9
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185599"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844742"
 ---
-# <a name="microsoft-cloud-app-security-in-defender-for-endpoint-overview"></a>Microsoft Cloud App Security in Defender for Endpoint (Übersicht)
+# <a name="microsoft-cloud-app-security-in-defender-for-endpoint-overview"></a>übersicht über Microsoft Cloud App Security in Defender für Endpunkt
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,29 +36,29 @@ ms.locfileid: "51185599"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
-> Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Microsoft Cloud App Security (Cloud App Security) ist eine umfassende Lösung, die Einblicke in Cloud-Apps und -Dienste bietet, indem Sie den Zugriff auf Cloud-Apps steuern und einschränken und gleichzeitig Complianceanforderungen für in der Cloud gespeicherte Daten erzwingen. Weitere Informationen finden Sie unter [Cloud App Security](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).
+Microsoft Cloud App Security (Cloud App Security) ist eine umfassende Lösung, die Einblicke in Cloud-Apps und -Dienste bietet, indem Sie den Zugriff auf Cloud-Apps steuern und einschränken und gleichzeitig Complianceanforderungen für in der Cloud gespeicherte Daten erzwingen können. Weitere Informationen finden Sie unter [Cloud App Security](/cloud-app-security/what-is-cloud-app-security).
 
 >[!NOTE]
->Dieses Feature ist mit einer [](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) E5-Lizenz für Enterprise Mobility + Security Geräten mit Windows 10 Version 1809 oder höher verfügbar.
+>Dieses Feature ist mit einer E5-Lizenz für [Enterprise Mobility + Security](https://www.microsoft.com/cloud-platform/enterprise-mobility-security) auf Geräten mit Windows 10 Version 1809 oder höher verfügbar.
 
-## <a name="microsoft-defender-for-endpoint-and-cloud-app-security-integration"></a>Microsoft Defender für Endpoint und Cloud App Security Integration 
+## <a name="microsoft-defender-for-endpoint-and-cloud-app-security-integration"></a>Integration von Microsoft Defender für Endpunkt und Cloud App Security 
 
-Cloud App Security ermittlung basiert auf Clouddatenverkehrsprotokollen, die von der Unternehmensfirewall und Proxyservern an sie weitergeleitet werden. Microsoft Defender for Endpoint integriert sich in Cloud App Security, indem alle Cloud-App-Netzwerkaktivitäten gesammelt und weitergeleitet werden, was eine unvergleichliche Sichtbarkeit für die Cloud-App-Nutzung bietet. Die Überwachungsfunktionalität ist in das Gerät integrierte und bietet eine vollständige Abdeckung der Netzwerkaktivität.
+Cloud App Security Ermittlung basiert auf Clouddatenverkehrsprotokollen, die von Unternehmensfirewall- und Proxyservern an sie weitergeleitet werden. Microsoft Defender für Endpunkt lässt sich in Cloud App Security integrieren, indem alle Cloud-App-Netzwerkaktivitäten gesammelt und weitergeleitet werden, sodass die Cloud-App-Nutzung sichtbar wird. Die Überwachungsfunktionalität ist in das Gerät integriert und bietet eine vollständige Abdeckung der Netzwerkaktivität.
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4r4yQ]
 
 
-Die Integration bietet die folgenden wichtigen Verbesserungen an der vorhandenen Cloud App Security Ermittlung: 
+Die Integration bietet die folgenden wesentlichen Verbesserungen an der vorhandenen Cloud App Security Ermittlung: 
 
-- Überall verfügbar– Da die Netzwerkaktivität direkt vom Endpunkt erfasst wird, ist sie überall verfügbar, wo sich das Gerät befindet, im oder aus dem Unternehmensnetzwerk, da es nicht mehr vom Datenverkehr abhängig ist, der über die Unternehmensfirewall oder proxyserver geleitet wird. 
+- Überall verfügbar– Da die Netzwerkaktivität direkt vom Endpunkt erfasst wird, ist sie überall verfügbar, wo sich das Gerät im oder außerhalb des Unternehmensnetzwerks befindet, da es nicht mehr vom Datenverkehr abhängt, der über die Unternehmensfirewall oder Proxyserver geleitet wird. 
 
-- Funktioniert nicht, es ist keine Konfiguration erforderlich: Das Weiterleiten von Clouddatenverkehrsprotokollen an Cloud App Security erfordert eine Firewall- und Proxyserverkonfiguration. Bei der Integration von Defender for Endpoint und Cloud App Security ist keine Konfiguration erforderlich. Schalten Sie es einfach in Microsoft Defender Security Center ein, und Sie sind gut zu gehen. 
+- Funktioniert sofort einsatzbereit, keine Konfiguration erforderlich – Das Weiterleiten von Clouddatenverkehrsprotokollen an Cloud App Security erfordert eine Firewall- und Proxyserverkonfiguration. Bei der Integration von Defender für Endpunkt und Cloud App Security ist keine Konfiguration erforderlich. Schalten Sie es einfach in Microsoft Defender Security Center Einstellungen ein, und Sie können loslegen. 
 
-- Gerätekontext – Clouddatenverkehrsprotokolle haben keinen Gerätekontext. Die Netzwerkaktivität von Defender for Endpoint wird mit dem Gerätekontext (auf welches Gerät auf die Cloud-App zugegriffen hat) gemeldet, damit Sie genau verstehen können, wo (Gerät) die Netzwerkaktivität stattgefunden hat, und nicht nur, wer (Benutzer) sie ausgeführt hat. 
+- Gerätekontext: Clouddatenverkehrsprotokollen fehlt der Gerätekontext. Defender für Endpunkt-Netzwerkaktivität wird mit dem Gerätekontext gemeldet (welches Gerät auf die Cloud-App zugegriffen hat), sodass Sie genau verstehen können, wo (Gerät) die Netzwerkaktivität stattgefunden hat, zusätzlich zu dem, wer (Benutzer) sie ausgeführt hat. 
 
-Weitere Informationen zur Clouderkennung finden Sie unter [Arbeiten mit ermittelten Apps](https://docs.microsoft.com/cloud-app-security/discovered-apps).
+Weitere Informationen zur Cloudermittlung finden Sie unter [Arbeiten mit ermittelten Apps.](/cloud-app-security/discovered-apps)
 
 ## <a name="related-topic"></a>Verwandtes Thema
 

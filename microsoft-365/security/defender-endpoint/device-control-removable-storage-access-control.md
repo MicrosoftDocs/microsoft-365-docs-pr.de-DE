@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 018bc3549cd7a25df5bdd86d98d351e19027c31f
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: fba74990d8e4465f957acda83e66e1dc43a317e8
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796030"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841186"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender für Endpunkt-Gerätesteuerung – Wechselmedien Storage Zugriffssteuerung
 
@@ -41,7 +41,7 @@ Microsoft Defender für Endpunkt-Gerätesteuerung – Wechselmedien Storage Zugr
 
 ## <a name="prepare-your-endpoints"></a>Vorbereiten der Endpunkte
 
-Stellen Sie wechselbare Storage Zugriffssteuerung auf Windows 10 Geräten bereit, die über Die Antischadsoftware-Clientversion **4.18.2103.3 oder höher** verfügen.
+Bereitstellen von Wechseldatenträgern Storage Zugriffssteuerung auf Windows 10 Geräten mit Der Clientversion **4.18.2103.3 oder höher** für Antischadsoftware.
 1. **4.18.2104 oder höher:** Hinzufügen von SerialNumberId, VID_PID, Dateipfad-basierter GPO-Unterstützung
 
 2. **4.18.2105 oder höher:** Hinzufügen von Platzhalterunterstützung für HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, die Kombination aus einem bestimmten Benutzer auf einem bestimmten Computer, entfernender SSD (sanDisk Extreme SSD)/USB Attached SCSI (UAS)-Unterstützung
@@ -68,7 +68,7 @@ Weitere Informationen zu jeder Geräteeigenschaft finden Sie weiter oben im Absc
         - CdRomDevices
     - Deviceid
     - HardwareId
-    - InstancePathId: InstancePathId ist eine Zeichenfolge, die das Gerät im System eindeutig identifiziert, z. B. USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. Die Zahl am Ende (z. **B.&0)** stellt den verfügbaren Slot dar und kann sich von Gerät zu Gerät ändern. Um optimale Ergebnisse zu erzielen, verwenden Sie am Ende einen Platzhalter. Beispiel: USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
+    - InstancePathId: InstancePathId ist eine Zeichenfolge, die das Gerät im System eindeutig identifiziert, z. B. USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611&0. Die Zahl am Ende (z. **B.&0)** stellt den verfügbaren Steckplatz dar und kann sich von Gerät zu Gerät ändern. Um optimale Ergebnisse zu erzielen, verwenden Sie am Ende einen Platzhalter. Beispiel: USBSTOR\DISK&VEN_GENERIC&PROD_FLASH_DISK&REV_8.07\8735B611*
     - FriendlyNameId
     - SerialNumberId
     - Vid
@@ -196,7 +196,7 @@ Mit dem Feature "Wechselbare Storage Zugriffssteuerung" können Sie Richtlinien 
 
 ### <a name="licensing"></a>Lizenzierung
 
-Bevor Sie mit wechselbaren Storage Zugriffssteuerung beginnen, müssen Sie Ihr [Microsoft 365 Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)bestätigen. Um auf wechselbare Storage Zugriffssteuerung zuzugreifen und sie zu verwenden, müssen Sie über Microsoft 365 E3 verfügen.
+Bevor Sie mit wechselbaren Storage Zugriffssteuerung beginnen, müssen Sie Ihr [Microsoft 365 Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)bestätigen. Um auf wechselbare Storage Zugriffssteuerung zuzugreifen und sie zu verwenden, benötigen Sie Microsoft 365 E3 oder Microsoft 365 E5.
 
 ### <a name="deploying-policy-via-group-policy"></a>Bereitstellen von Richtlinien über Gruppenrichtlinien
 
@@ -226,7 +226,7 @@ Mit dem Feature "Wechselbare Storage Zugriffssteuerung" können Sie Richtlinien 
 
 ### <a name="licensing"></a>Lizenzierung
 
-Bevor Sie mit wechselbaren Storage Zugriffssteuerung beginnen, müssen Sie Ihr [Microsoft 365 Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)bestätigen. Um auf wechselbare Storage Zugriffssteuerung zuzugreifen und sie zu verwenden, müssen Sie über Microsoft 365 E3 verfügen.
+Bevor Sie mit wechselbaren Storage Zugriffssteuerung beginnen, müssen Sie Ihr [Microsoft 365 Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)bestätigen. Um auf wechselbare Storage Zugriffssteuerung zuzugreifen und sie zu verwenden, benötigen Sie Microsoft 365 E3 oder Microsoft 365 E5.
 
 ### <a name="permission"></a>Berechtigung
 
@@ -265,19 +265,19 @@ Für die Richtlinienbereitstellung in Intune muss das Konto über Berechtigungen
 
     - Datentyp: Zeichenfolge (XML-Datei)
 
-      :::image type="content" source="images/xml-data-type-string-2.png" alt-text="Anzeigen der XML-Datei für den DATENTYP STRING":::
+      :::image type="content" source="images/xml-data-type-string-2.png" lightbox="images/xml-data-type-string-2.png" alt-text="Anzeigen der XML-Datei für den DATENTYP STRING":::
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Bereitstellen und Verwalten von Richtlinien mithilfe der Intune-Benutzeroberfläche
 
-Diese Funktion ist noch nicht verfügbar. 
+Diese Funktion (in Microsoft Endpoint Manager Admin Center ( https://endpoint.microsoft.com/) > Devices > Configuration profiles > Create profile > Platform: Windows 10 and later & Profile: Device Control) ist noch nicht verfügbar. 
 
-## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Anzeigen von Wechseldaten von Gerätesteuerungs- Storage Zugriffssteuerungsdaten in Microsoft Defender für Endpunkt
+## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Anzeigen von Wechseldaten von Gerätesteuerungen Storage Zugriffssteuerungsdaten in Microsoft Defender für Endpunkt
 
-Das Microsoft 365-Sicherheitsportal zeigt Wechselmedien an, die von der Wechselmediensteuerung Storage Zugriffssteuerung blockiert werden. Um auf die Microsoft 365 Sicherheit zugreifen zu können, benötigen Sie das folgende Abonnement:
+Das Microsoft 365-Sicherheitsportal zeigt Wechselmedien an, die von der Gerätesteuerung (Removable Storage Access Control) blockiert werden. Um auf die Microsoft 365 Sicherheit zugreifen zu können, benötigen Sie das folgende Abonnement:
 
 - Microsoft 365 für E5-Berichte
 
-```
+```kusto
 //events triggered by RemovableStoragePolicyTriggered
 DeviceEvents
 | where ActionType == &quot;RemovableStoragePolicyTriggered&quot; 

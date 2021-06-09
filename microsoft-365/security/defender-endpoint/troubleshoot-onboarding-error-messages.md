@@ -1,6 +1,6 @@
 ---
-title: Problembehandlung bei Onboardingproblemen und Fehlermeldungen
-description: Behandeln von Problemen und Fehlermeldungen beim Onboarding während des Setups von Microsoft Defender for Endpoint.
+title: Behandeln von Problemen beim Onboarding und Fehlermeldungen
+description: Behandeln von Problemen beim Onboarding und Fehlermeldungen beim Abschließen der Einrichtung von Microsoft Defender für Endpunkt.
 keywords: Problembehandlung, Problembehandlung, Azure Active Directory, Onboarding, Fehlermeldung, Fehlermeldungen, Microsoft Defender für Endpunkt
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 1b769c1b3e4201802ea6150358568bf57894d305
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: b8e15f27ffe4babe730870fb576980c62cb0fd59
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185807"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52844034"
 ---
 # <a name="troubleshoot-subscription-and-portal-access-issues"></a>Problembehandlung bei Abonnement- und Portalzugriffsproblemen.
 
@@ -31,54 +31,54 @@ ms.locfileid: "51185807"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Microsoft Defender for Endpoint erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
+>Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-troublshootonboarding-abovefoldlink)
 
-Diese Seite enthält detaillierte Schritte zur Problembehandlung, die beim Einrichten Ihres Microsoft Defender for Endpoint-Diensts auftreten können.
+Auf dieser Seite finden Sie ausführliche Schritte zur Behandlung von Problemen, die beim Einrichten Ihres Microsoft Defender für Endpunkt-Diensts auftreten können.
 
-Wenn Sie eine Fehlermeldung erhalten, Microsoft Defender Security Center eine ausführliche Erläuterung dazu, was das Problem ist, und relevante Links werden bereitgestellt.
+Wenn Sie eine Fehlermeldung erhalten, geben Microsoft Defender Security Center eine ausführliche Erläuterung des Problems an, und es werden relevante Links bereitgestellt.
 
 ## <a name="no-subscriptions-found"></a>Keine Abonnements gefunden
 
-Wenn Sie beim Zugriff auf Microsoft Defender Security Center  eine Meldung "Keine Abonnements gefunden" erhalten, bedeutet dies, dass die Azure Active Directory (Azure AD), die zum Anmelden des Benutzers beim Portal verwendet wird, keine Microsoft Defender for Endpoint-Lizenz besitzt.
+Wenn Sie beim Zugriff auf Microsoft Defender Security Center eine Meldung **"Keine Abonnements gefunden" erhalten,** bedeutet dies, dass die Azure Active Directory (Azure AD), die zum Anmelden des Benutzers beim Portal verwendet wird, nicht über eine Microsoft Defender für Endpunkt-Lizenz verfügt.
 
 Mögliche Gründe:
 - Die Lizenzen für Windows E5 und Office E5 sind separate Lizenzen.
 - Die Lizenz wurde erworben, aber nicht für diese Azure AD-Instanz bereitgestellt.
-    - Dies kann ein Problem mit der Lizenzbereitstellung sein.
-    - Es kann sein, dass Sie die Lizenz versehentlich für eine andere Microsoft Azure AD als die für die Authentifizierung im Dienst verwendete bereitgestellt haben.
+    - Dies kann ein Lizenzbereitstellungsproblem sein.
+    - Es kann sein, dass Sie die Lizenz versehentlich für eine andere Microsoft Azure AD bereitgestellt haben als die für die Authentifizierung beim Dienst verwendete Lizenz.
 
-In beiden Fällen sollten Sie sich an den Microsoft-Support unter [General Microsoft Defender for Endpoint Support](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) oder Volume license support [wenden.](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)
+In beiden Fällen sollten Sie sich an den Microsoft-Support unter [General Microsoft Defender for Endpoint Support](https://support.microsoft.com/getsupport?wf=0&tenant=ClassicCommercial&oaspworkflow=start_1.0.0.0&locale=en-us&supportregion=en-us&pesid=16055&ccsid=636419533611396913) oder [Volumenlizenzsupport](https://www.microsoft.com/licensing/servicecenter/Help/Contact.aspx)wenden.
 
-![Abbildung der nicht gefundenen Abonnements](images/atp-no-subscriptions-found.png)
+![Abbildung der gefundenen Abonnements](images/atp-no-subscriptions-found.png)
 
 ## <a name="your-subscription-has-expired"></a>Ihr Abonnement ist abgelaufen
 
-Wenn Sie beim Zugriff auf Microsoft Defender Security Center  erhalten, dass Ihr Abonnement abgelaufen ist, ist Ihr Onlinedienstabonnement abgelaufen. Microsoft Defender for Endpoint-Abonnement hat wie jedes andere Onlinedienstabonnement ein Ablaufdatum. 
+Wenn Sie während des Zugriffs auf Microsoft Defender Security Center erhalten, dass **Ihr Abonnement abgelaufen ist,** ist Ihr Onlinedienstabonnement abgelaufen. Das Microsoft Defender für Endpunkt-Abonnement hat wie jedes andere Onlinedienstabonnement ein Ablaufdatum. 
 
-Sie können die Lizenz jederzeit verlängern oder erweitern. Wenn Sie nach ablaufendem  Ablaufdatum auf das Portal zugreifen, wird einer Nachricht, die Ihr Abonnement abgelaufen ist, eine Option zum Herunterladen des Geräte-Offboarding-Pakets angezeigt, falls Sie die Lizenz nicht verlängern möchten.
+Sie können die Lizenz jederzeit verlängern oder verlängern. Beim Zugriff auf das Portal nach dem Ablaufdatum, an dem ein **Abonnement abgelaufen ist,** wird eine Option zum Herunterladen des Offboarding-Pakets für Geräte angezeigt, falls Sie die Lizenz nicht verlängern möchten.
 
 > [!NOTE]
-> Aus Sicherheitsgründen läuft das für Offboard-Geräte verwendete Paket 30 Tage nach dem Downloaddatum ab. Abgelaufene offboarding-Pakete, die an ein Gerät gesendet werden, werden abgelehnt. Beim Herunterladen eines offboarding-Pakets werden Sie über das Ablaufdatum der Pakete benachrichtigt und es wird auch im Paketnamen enthalten sein.
+> Aus Sicherheitsgründen läuft das Paket, das für Offboard-Geräte verwendet wird, 30 Tage nach dem Datum ab, an dem es heruntergeladen wurde. Abgelaufene Offboardingpakete, die an ein Gerät gesendet werden, werden abgelehnt. Beim Herunterladen eines Offboardingpakets werden Sie über das Ablaufdatum der Pakete benachrichtigt, und es wird auch im Paketnamen enthalten sein.
 
 ![Abbildung des abgelaufenen Abonnements](images/atp-subscription-expired.png)
 
-## <a name="you-are-not-authorized-to-access-the-portal"></a>Sie sind nicht autorisiert, auf das Portal zu zugreifen
+## <a name="you-are-not-authorized-to-access-the-portal"></a>Sie sind nicht berechtigt, auf das Portal zuzugreifen
 
-Wenn Sie ein Produkt erhalten, das Sie nicht autorisiert haben, auf das Portal zu **zugreifen,** beachten Sie, dass Microsoft Defender for Endpoint ein Produkt für die Sicherheitsüberwachung, Die Untersuchung von Vorfällen und Reaktionen ist und daher der Zugriff darauf vom Benutzer eingeschränkt und gesteuert wird.
-Weitere Informationen finden Sie unter [**Zuweisen von Benutzerzugriff auf das Portal**](https://docs.microsoft.com/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection).
+Wenn Sie erhalten, dass **Sie nicht berechtigt sind, auf das Portal zuzugreifen,** beachten Sie, dass Microsoft Defender für Endpunkt ein Sicherheitsüberwachungs-, Vorfalluntersuchungs- und Reaktionsprodukt ist und daher der Zugriff darauf eingeschränkt und vom Benutzer gesteuert wird.
+Weitere Informationen finden Sie unter Zuweisen des [**Benutzerzugriffs auf das Portal.**](/windows/threat-protection/windows-defender-atp/assign-portal-access-windows-defender-advanced-threat-protection)
 
-![Bild des nicht autorisierten Zugriffsportals](images/atp-not-authorized-to-access-portal.png)
+![Abbildung eines nicht autorisierten Zugriffs auf das Portal](images/atp-not-authorized-to-access-portal.png)
 
-## <a name="data-currently-isnt-available-on-some-sections-of-the-portal"></a>Daten sind derzeit in einigen Abschnitten des Portals nicht verfügbar
-Wenn im Portaldashboard und in anderen Abschnitten eine Fehlermeldung angezeigt wird, z. B. "Daten sind derzeit nicht verfügbar":
+## <a name="data-currently-isnt-available-on-some-sections-of-the-portal"></a>Daten sind derzeit in einigen Abschnitten des Portals nicht verfügbar.
+Wenn im Portaldashboard und anderen Abschnitten eine Fehlermeldung angezeigt wird, z. B. "Daten sind derzeit nicht verfügbar":
 
-![Bild der Daten ist derzeit nicht verfügbar](images/atp-data-not-available.png)
+![Abbildung der Daten, die derzeit nicht verfügbar sind](images/atp-data-not-available.png)
 
-Sie müssen die und alle Untergeordneten Domänen unter `securitycenter.windows.com` ihr zulassen. Beispiel: `*.securitycenter.windows.com`.
+Sie müssen die `securitycenter.windows.com` und alle darunter befindlichen Unterdomänen zulassen. Beispiel: `*.securitycenter.windows.com`.
 
 
-## <a name="portal-communication-issues"></a>Probleme mit der Portalkommunikation
-Wenn Probleme beim Zugriff auf das Portal, fehlende Daten oder eingeschränkter Zugriff auf Teile des Portals auftreten, müssen Sie überprüfen, ob die folgenden URLs für die Kommunikation zulässig und geöffnet sind.
+## <a name="portal-communication-issues"></a>Probleme bei der Portalkommunikation
+Wenn Probleme beim Zugriff auf das Portal, fehlende Daten oder eingeschränkter Zugriff auf Teile des Portals auftreten, müssen Sie überprüfen, ob die folgenden URLs zulässig und für die Kommunikation geöffnet sind.
 
 - `*.blob.core.windows.net`
 - `crl.microsoft.com`

@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von Funktionen von Microsoft Defender für Endpunkt unter Android
-description: Beschreibt das Konfigurieren von Microsoft Defender for Endpoint unter Android
-keywords: microsoft, defender, Microsoft Defender for Endpoint, mde, android, configuration
+description: Beschreibt, wie Microsoft Defender für Endpunkt unter Android konfiguriert wird
+keywords: Microsoft, Defender, Microsoft Defender für Endpunkt, MDE, Android, Konfiguration
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 462fa6177ee35d5d988efa985422b499e2339ff4
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: 264ebbe0ceb6d6b83c006dbd1dd071a78ae219c3
+ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51935317"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52841351"
 ---
-# <a name="configure-defender-for-endpoint-on-android-features"></a>Konfigurieren von Defender for Endpoint unter Android-Features
+# <a name="configure-defender-for-endpoint-on-android-features"></a>Konfigurieren von Defender für Endpunkt unter Android-Features
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -32,23 +32,23 @@ ms.locfileid: "51935317"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-## <a name="conditional-access-with-defender-for-endpoint-on-android"></a>Bedingter Zugriff mit Defender for Endpoint unter Android  
-Microsoft Defender for Endpoint unter Android ermöglicht Microsoft Intune und Azure Active Directory die Erzwingung von Gerätekonformität und Richtlinien für bedingten Zugriff basierend auf Geräterisikostufen. Defender for Endpoint ist eine Mobile Threat Defense (MTD)-Lösung, die Sie bereitstellen können, um diese Funktion über Intune zu nutzen.
+## <a name="conditional-access-with-defender-for-endpoint-on-android"></a>Bedingter Zugriff mit Defender für Endpunkt unter Android  
+Microsoft Defender für Endpunkt unter Android zusammen mit Microsoft Intune und Azure Active Directory ermöglicht das Erzwingen von Gerätekompatibilitäts- und Richtlinien für bedingten Zugriff basierend auf Geräterisikostufen. Defender für Endpunkt ist eine MTD-Lösung (Mobile Threat Defense), die Sie bereitstellen können, um diese Funktion über Intune zu nutzen.
 
-Weitere Informationen zum Einrichten von Defender for Endpoint unter Android und bedingten Zugriff finden Sie unter [Defender for Endpoint und Intune](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection).
+Weitere Informationen zum Einrichten von Defender für Endpunkt unter Android und bedingtem Zugriff finden Sie unter [Defender für Endpunkt und Intune.](/mem/intune/protect/advanced-threat-protection)
 
-## <a name="configure-custom-indicators"></a>Konfigurieren benutzerdefinierter Indikatoren  
+## <a name="configure-custom-indicators"></a>Konfigurieren von benutzerdefinierten Indikatoren  
 
 > [!NOTE]
-> Defender for Endpoint unter Android unterstützt nur das Erstellen benutzerdefinierter Indikatoren für IP-Adressen und URLs/Domänen.
+> Defender für Endpunkt unter Android unterstützt nur das Erstellen benutzerdefinierter Indikatoren für IP-Adressen und URLs/Domänen.
 
-Defender for Endpoint unter Android ermöglicht Administratoren die Konfiguration benutzerdefinierter Indikatoren zur Unterstützung von Android-Geräten. Weitere Informationen zum Konfigurieren benutzerdefinierter Indikatoren finden Sie unter [Manage indicators](manage-indicators.md).
+Defender für Endpunkt unter Android ermöglicht Administratoren das Konfigurieren benutzerdefinierter Indikatoren zur Unterstützung von Android-Geräten. Weitere Informationen zum Konfigurieren von benutzerdefinierten Indikatoren finden Sie unter [Verwalten von Indikatoren.](manage-indicators.md)
 
 ## <a name="configure-web-protection"></a>Konfigurieren des Webschutzes
-Defender für Endpoint unter Android ermöglicht IT-Administratoren die Konfiguration des Webschutzfeatures. Diese Funktion ist im Microsoft Endpoint Manager Admin Center verfügbar.
+Defender für Endpunkt unter Android ermöglicht IT-Administratoren die Konfiguration des Webschutzfeatures. Diese Funktion ist im Microsoft Endpoint Manager Admin Center verfügbar.
 
 > [!NOTE]
-> Defender für Endpoint unter Android würde ein VPN verwenden, um das Web Protection-Feature zur Verfügung zu stellen. Dies ist kein normales VPN und ein lokales VPN mit selbstschleifender Schleife, das keinen Datenverkehr außerhalb des Geräts verwendet. Weitere Informationen finden Sie unter [Configure web protection on devices that run Android](https://docs.microsoft.com/mem/intune/protect/advanced-threat-protection-manage-android).
+> Defender für Endpunkt unter Android würde ein VPN verwenden, um das Webschutzfeature bereitzustellen. Dies ist kein reguläres VPN und ein lokales/selbstschleifendes VPN, das keinen Datenverkehr außerhalb des Geräts aufnimmt. Weitere Informationen finden Sie unter [Konfigurieren des Webschutzes auf Geräten mit Android.](/mem/intune/protect/advanced-threat-protection-manage-android)
 
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über Microsoft Defender für Endpunkt unter Android](microsoft-defender-endpoint-android.md)
