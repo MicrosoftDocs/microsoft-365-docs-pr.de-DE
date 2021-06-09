@@ -241,7 +241,7 @@
               href: productivity/teamwork.md
             - name: Besprechungen
               href: productivity/meetings.md
-            - name: "Microsoft\_365 Apps – Integrität"
+            - name: Microsoft 365 Apps – Integrität
               href: productivity/apps-health.md
             - name: Endpunktanalysen
               href: /mem/analytics/productivity-score
@@ -326,7 +326,7 @@
             - name: Einrichten von Compliancefeatures
               href: ../business/set-up-compliance.md
         - name: Sicherheitsbewertung
-          href: 'https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score'
+          href: /microsoft-365/security/defender/microsoft-secure-score
         - name: Ein Leitfaden zur DSGVO-Compliance
           href: security-and-compliance/gdpr-compliance.md
     - name: Verwalten Sie Geräte und App-Daten
@@ -348,7 +348,7 @@
               href: ../business/map-protection-features-to-intune-settings.md
             - name: Gerätestatus
               href: ../business/device-states.md
-            - name: "App-Schutzeinstellungen für Windows\_10-PCs"
+            - name: App-Schutzeinstellungen für Windows 10-PCs
               href: ../business/protection-settings-for-windows-10-devices.md
             - name: Festlegen von App-Schutzeinstellungen für Android und iOS
               href: ../business/app-protection-settings-for-android-and-ios.md

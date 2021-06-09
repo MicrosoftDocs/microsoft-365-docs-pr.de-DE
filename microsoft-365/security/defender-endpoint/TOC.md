@@ -242,6 +242,8 @@
 
 ### [Netzwerkgeräte](network-devices.md)
 
+### [Hostfirewallberichte in Microsoft Defender für Endpunkt](host-firewall-reporting.md)
+
 ### [Verringerung der Angriffsfläche]():
 #### [Übersicht der Verringerung der Angriffsfläche](overview-attack-surface-reduction.md)
 #### [Konfigurieren der Funktionen zur Verringerung der Angriffsfläche](configure-attack-surface-reduction.md)
@@ -278,6 +280,8 @@
 #### [Herunterladen von Updates für Antivirensoftware und Antimalware](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Verwalten der Quellen für Updates für Microsoft Defender Antivirus-Schutz](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [Verwalten des Zeitplans für Download und Anwendung von Schutzupdates](manage-protection-update-schedule-microsoft-defender-antivirus.md)
+#####  [Verwalten des schrittweisen Rollouts von Microsoft Defender-Updates](updates.md)
+#####  [Konfigurieren des schrittweisen Rollouts von Microsoft Defender-Updates](configure-updates.md)
 ##### [Verwalten von Updates und Scans von Microsoft Defender Antivirus für veraltete Endpunkte](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [Verwalten von ereignisbasierten erzwungenen Updates](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [Verwalten von Updates für Mobilgeräte und virtuelle Computer (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -351,6 +355,7 @@
 ##### [Steuern von USB-Geräten](control-usb-devices-using-intune.md)
 ##### [Wechselmedienschutz](device-control-removable-storage-protection.md)
 ##### [Zugriffssteuerung für Wechselmedien](device-control-removable-storage-access-control.md)
+##### [Druckerschutz für Gerätesteuerung](printer-protection.md)
 
 #### [Verhaltensbasiertes Blockieren und Eindämmen]()
 ##### [Verhaltensbasiertes Blockieren und Eindämmen](behavioral-blocking-containment.md)

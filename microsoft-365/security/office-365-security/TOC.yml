@@ -349,4 +349,4 @@
     - name: Microsoft Defender für Endpunkt
       href: ../defender-endpoint/index.yml
     - name: Microsoft Defender for Identity
-      href: 'https://docs.microsoft.com/defender-for-identity/'
+      href: /defender-for-identity/
