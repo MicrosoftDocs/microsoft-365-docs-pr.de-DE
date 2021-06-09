@@ -6,17 +6,17 @@
       items:
         - name: Was ist Microsoft 365 Defender?
           href: microsoft-365-defender.md
-        - name: Microsoft 365 Security Center
+        - name: Microsoft 365 Übersicht über Defender
           href: overview-security-center.md
         - name: Neuerungen in Microsoft 365 Defender
           href: whats-new.md
-        - name: Microsoft Defender für Endpunkt im Microsoft 365 Security Center
+        - name: Defender für Endpunkt in Microsoft 365 Defender
           href: microsoft-365-security-center-mde.md
-        - name: Microsoft Defender für Office 365 im Microsoft 365 Security Center
+        - name: Defender für Office 365 in Microsoft 365 Defender
           href: microsoft-365-security-center-mdo.md
-        - name: Umleiten von Microsoft Defender für Endpunkt in das Microsoft 365 Security Center
+        - name: Umleiten von Defender für Endpunkt zu Microsoft 365 Defender
           href: microsoft-365-security-mde-redirection.md
-        - name: Umleitung von Defender für Office 365 zum Microsoft 365 Security Center
+        - name: Umleiten von Office 365 Security and Compliance Center zu Microsoft 365 Defender
           href: microsoft-365-security-mdo-redirection.md
         - name: Microsoft 365 Defender-Integration in Azure Sentinel
           href: microsoft-365-defender-integration-with-azure-sentinel.md
@@ -114,16 +114,16 @@
                   href: first-incident-analyze.md
                 - name: Schritt 2. Korrigieren
                   href: first-incident-remediate.md
-                - name: Schritt 3. Bewertung
+                - name: Schritt 3. Überprüfung
                   href: first-incident-post.md
                 - name: Zusätzliche Vorfallbeispiele
                   items:
                     - name: Phishing-E-Mail
                       href: first-incident-path-phishing.md
-                    - name: Identity
+                    - name: Identität
                       href: first-incident-path-identity.md
             - name: Playbooks für die Reaktion auf Vorfälle
-              href: 'https://docs.microsoft.com/security/compass/incident-response-playbooks'
+              href: /security/compass/incident-response-playbooks
             - name: E-Mail-Benachrichtigungen
               href: get-incident-notifications.md
         - name: Bedrohungsanalyse
@@ -321,11 +321,11 @@
                 - name: Streaming-API
                   items:
                     - name: Microsoft 365 Streaming-API
-                      href: ../defender-endpoint/raw-data-export.md
-                    - name: Streamen erweiterter Such-Evens an den Azure Events Hub
-                      href: ../defender-endpoint/raw-data-export-event-hub.md
+                      href: streaming-api.md
+                    - name: Streamen erweiterter Ereignissuchen an den Azure Events-Hub
+                      href: streaming-api-event-hub.md
                     - name: Streamen erweiterter Ereignissuchen an Ihr Speicherkonto
-                      href: ../defender-endpoint/raw-data-export-storage.md
+                      href: streaming-api-storage.md
                 - name: Erweiterte Suche-API
                   href: api-advanced-hunting.md
                 - name: Incidents-APIs
