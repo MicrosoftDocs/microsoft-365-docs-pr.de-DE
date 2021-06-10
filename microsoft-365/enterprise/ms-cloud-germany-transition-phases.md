@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
-ms.openlocfilehash: 3a5b95bac74ae405f4e1d6fa91ba4ab51e4a9d05
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
-ms.translationtype: HT
+ms.openlocfilehash: 28d5eebbe63db13edfb1bfc297bdd6ad0c13536c
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796042"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861245"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Aktionen während der Migrationsphasen und Auswirkungen für die Migration von Microsoft Cloud Deutschland
 
@@ -315,6 +315,11 @@ Microsoft Azure-Kunden müssen ihre Azure-Workloads gemäß der im [Azure-Migrat
 | Aktualisieren der Azure AD-Anwendungsendpunkte | Sie müssen die Authentifizierungs-, Azure Active Directory (Azure AD) Graph- und MS Graph-Endpunkte für Ihre Anwendungen auf diejenigen des Dienstes „Microsoft weltweit“ aktualisieren. | 30 Tage nach Abschluss der Migration werden Anforderungen von Microsoft Cloud Deutschland-Endpunkten nicht mehr unterstützt. Client- oder Anwendungsverkehr schlägt dann fehl. |
 | Migrieren von Azure-Workloads | Kunden von Azure-Diensten müssen neue weltweite Abonnements für Azure-Dienste bereitstellen und die Migration gemäß dem [Azure-Migrations-Playbook](/azure/germany/germany-migration-main) ausführen. | Nach vollständigem Übergang zum weltweiten Dienst (Phase 10) können Kunden nicht mehr auf die Azure-Workloads zugreifen, die im Azure-Portal von Microsoft Cloud Deutschland vorhanden sind. |
 ||||
+
+**Gilt für:** Kunden mit registrierten oder verbundenen Azure AD-Geräten
+
+Nach Abschluss der Phase 9 müssen registrierte und verbundene Azure AD-Geräte mit der übergangenen Azure AD-Instanz in der neuen deutschen Rechenzentrumsregion verbunden werden.
+Geräte, die nicht erneut mit Azure AD verbunden sind, funktionieren möglicherweise am Ende der Phase 10 nicht mehr. Ausführliche Anweisungen und weitere Details finden Sie in [den zusätzlichen Informationen zu Geräten.](ms-cloud-germany-transition-add-devices.md)
 
 ### <a name="azure-ad-connect"></a>Azure AD Connect
 **Gilt für:** Alle Kunden, die Identitäten mit Azure AD Connect synchronisieren

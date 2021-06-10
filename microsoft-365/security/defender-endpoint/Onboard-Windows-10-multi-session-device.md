@@ -1,6 +1,6 @@
 ---
 title: Onboarden von Windows 10-Geräten für mehrere Sitzungen in Windows Virtual Desktop
-description: Weitere Informationen finden Sie in diesem Artikel zum Onboarding von Windows 10 Geräten mit mehreren Sitzungen in Windows Virtual Desktop
+description: Weitere Informationen zum Onboarding von Windows 10 Geräten mit mehreren Sitzungen in Windows Virtual Desktop finden Sie in diesem Artikel.
 keywords: Windows Virtual Desktop, WVD, Microsoft Defender, Endpunkt, onboard
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 7ade1ae1e045cb52f48d231acbc1712e753b6bc3
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5bf9f856e93ae1424373a917490a264c04e07feb
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841846"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861179"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Onboarden von Windows 10-Geräten für mehrere Sitzungen in Windows Virtual Desktop 
 6 Minuten zu lesen 
@@ -146,5 +146,9 @@ Wenn Sie FSlogix-Benutzerprofile verwenden, wird außerdem empfohlen, die folgen
 
 #### <a name="licensing-requirements"></a>Lizenzierungsanforderungen 
 
-Hinweis zur Lizenzierung: Wenn Sie Windows 10 Enterprise multi-session verwenden, können Sie je nach Ihren Anforderungen entweder festlegen, dass alle Benutzer über Microsoft Defender für Endpunkt (pro Benutzer), Windows Enterprise E5, Microsoft 365 Sicherheit oder Microsoft 365 E5 lizenziert sind, oder den virtuellen Computer über Azure Defender lizenziert haben.
+Hinweis zur Lizenzierung: Wenn Sie Windows 10 Enterprise mehrere Sitzung verwenden, können Sie je nach Ihren Anforderungen auswählen, ob alle Benutzer über Microsoft Defender für Endpunkt (pro Benutzer), Windows Enterprise E5, Microsoft 365 Security oder Microsoft 365 E5 lizenziert sind oder ob der virtuelle Computer über Azure Defender lizenziert ist.
 Die Lizenzierungsanforderungen für Microsoft Defender für Endpunkt finden Sie unter: [Lizenzierungsanforderungen.](minimum-requirements.md#licensing-requirements)
+
+#### <a name="related-links"></a>Links zu verwandten Themen
+
+[Hinzufügen von Ausschlüssen für Microsoft Defender mithilfe von PowerShell](/azure/architecture/example-scenario/wvd/windows-virtual-desktop-fslogix#add-exclusions-for-windows-defender-by-using-powershell)

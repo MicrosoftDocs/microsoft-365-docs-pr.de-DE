@@ -4,6 +4,7 @@ keywords: Kontrollierter Ordnerzugriff, Windows 10, Windows Defender, Ransomware
 description: Erfahren Sie, wie Sie Ihre wichtigen Dateien schützen, indem Sie den kontrollierten Ordnerzugriff aktivieren.
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.topic: article
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
@@ -14,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 1d09eaf04999478a0cd0b4907667a522a23fb39f
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 5a90a12457597fa38c648fd44bf194d2322a26af
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841978"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861222"
 ---
 # <a name="enable-controlled-folder-access"></a>Kontrollierte Ordnerzugriff aktivieren
 
@@ -36,7 +37,7 @@ ms.locfileid: "52841978"
 Sie können den kontrollierten Ordnerzugriff mithilfe einer der folgenden Methoden aktivieren:
 
 * [Windows-Sicherheit-App](#windows-security-app)
-* [Microsoft Intune](#intune)
+* [Microsoft Endpoint Manager](#endpoint-manager)
 * [Verwaltung mobiler Geräte (Mobile Device Management, MDM)](#mobile-device-management-mdm)
 * [Microsoft Endpoint Configuration Manager](#microsoft-endpoint-configuration-manager)
 * [Gruppenrichtlinie](#group-policy)
@@ -64,24 +65,30 @@ Weitere Informationen zum Deaktivieren der lokalen Listenzusammenführung finden
 > Wenn das Feature mit einem dieser Tools auf den **Überwachungsmodus** festgelegt ist, zeigt die Windows-Sicherheit App den Status **"Aus"** an.
 > Wenn Sie Benutzerprofildaten schützen, wird empfohlen, dass sich das Benutzerprofil auf dem Standardmäßigen Windows Installationslaufwerk befindet.
 
-## <a name="intune"></a>Intune
+## <a name="endpoint-manager"></a>Endpoint Manager
 
-1. Melden Sie sich beim [Azure-Portal](https://portal.azure.com) an, und öffnen Sie Intune.
+1. Melden Sie sich beim [Endpoint Manager](https://endpoint.microsoft.com) an, und öffnen Sie **Endpoint Security.**
 
-2. Wechseln Sie zu **"Gerätekonfigurationsprofile**  >    >  **erstellen".**
+2. Wechseln Sie zur **Attack Surface**  >  **Reduction-Richtlinie.**
 
-3. Benennen Sie das Profil, wählen Sie **Windows 10 und höher und** **Endpunktschutz** aus. <br/> ![Erstellen eines Endpunktschutzprofils](/microsoft-365/security/defender-endpoint/images/create-endpoint-protection-profile) <br/>
+3. Wählen Sie **"Plattform",** **"Windows 10" und höher** aus, und wählen Sie **"Attack Surface Reduction"-Regeln**  >  **erstellen** aus.
 
-4. Wechseln **Sie** zu Configure  >  **Windows Defender Exploit Guard**  >  **Controlled folder access**  >  **Enable**.
+4.  Benennen Sie die Richtlinie, und fügen Sie eine Beschreibung hinzu. Klicken Sie auf **Weiter**.
 
-5. Geben Sie den Pfad zu jeder Anwendung ein, die Zugriff auf geschützte Ordner hat, und den Pfad zu allen zusätzlichen Ordnern, die Schutz benötigen. Wählen Sie **Hinzufügen**.<br/> ![Aktivieren des kontrollierten Ordnerzugriffs in Intune](/microsoft-365/security/defender-endpoint/images/enable-cfa-intune)<br/>
+5.  Scrollen Sie nach unten, wählen Sie die Dropdownliste **"Ordnerschutz aktivieren"** aus, und wählen Sie **"Aktivieren"** aus.
+
+6.  Wählen Sie **die Liste der zusätzlichen Ordner aus, die geschützt werden müssen,** und fügen Sie die Ordner hinzu, die geschützt werden müssen.
+
+7.  Wählen Sie **die Liste der Apps aus, die Zugriff auf geschützte Ordner haben,** und fügen Sie die Apps hinzu, die Zugriff auf geschützte Ordner haben.
+
+8.  Wählen Sie **"Dateien und Pfade von Attack Surface Reduction-Regeln ausschließen" aus,** und fügen Sie die Dateien und Pfade hinzu, die von Attack Surface Reduction-Regeln ausgeschlossen werden müssen.
+
+9.  Wählen Sie die **Profilzuweisungen** aus, weisen Sie **alle Benutzer & Alle Geräte** zu, und wählen Sie **Speichern** aus.
+
+10.  Wählen Sie **"Weiter"** aus, um jedes geöffnete Blatt zu speichern, und **erstellen Sie** dann .
 
    > [!NOTE]
-   > Wilcard wird für Anwendungen, aber nicht für Ordner unterstützt. Unterordner sind nicht geschützt. Zulässige Apps lösen weiterhin Ereignisse aus, bis sie neu gestartet werden.
-
-6. Klicken Sie auf **"OK",** um jedes geöffnete Blatt zu speichern und **zu erstellen.**
-
-7. Wählen Sie die **Profilzuweisungen aus,** weisen Sie **alle Benutzer & Alle Geräte** zu, und speichern **Sie**.
+   > Platzhalter werden für Anwendungen, aber nicht für Ordner unterstützt. Unterordner sind nicht geschützt. Zulässige Apps lösen weiterhin Ereignisse aus, bis sie neu gestartet werden.
 
 ## <a name="mobile-device-management-mdm"></a>Mobile Geräteverwaltung (MDM)
 
@@ -116,7 +123,7 @@ Verwenden Sie [den Konfigurationsdienstanbieter ./Vendor/MSFT/Policy/Config/Cont
     * **Deaktivieren (Standard)** – Das Feature für den kontrollierten Ordnerzugriff funktioniert nicht. Alle Apps können Änderungen an Dateien in geschützten Ordnern vornehmen.
     * **Überwachungsmodus:** Änderungen sind zulässig, wenn eine schädliche oder verdächtige App versucht, eine Änderung an einer Datei in einem geschützten Ordner vorzunehmen. Es wird jedoch im Windows Ereignisprotokoll aufgezeichnet, in dem Sie die Auswirkungen auf Ihre Organisation bewerten können.
     * **Nur Datenträgeränderung blockieren** – Versuche nicht vertrauenswürdiger Apps, in Datenträgerbereiche zu schreiben, werden Windows Ereignisprotokoll protokolliert. Diese Protokolle finden Sie in **den Anwendungs- und Dienstprotokollen** > Microsoft > Windows > Windows Defender > Operational > ID 1123.
-    * **Nur Datenträgeränderung überwachen** – Nur Versuche, in geschützte Datenträgerbereiche zu schreiben, werden im ereignisprotokoll Windows aufgezeichnet (unter **Anwendungs- und Dienstprotokolle**  >  **Microsoft**  >  **Windows**  >  **Windows Defender**  >    >  **Betriebs-ID 1124).** Versuche, Dateien in geschützten Ordnern zu ändern oder zu löschen, werden nicht aufgezeichnet.
+    * **Nur Datenträgeränderung überwachen** – Nur Versuche, in geschützte Datenträgerbereiche zu schreiben, werden im Windows Ereignisprotokoll aufgezeichnet (unter **Anwendungs- und Dienstprotokolle**  >  **Microsoft**  >  **Windows**  >  **Windows Defender**  >    >  **Betriebs-ID 1124).** Versuche, Dateien in geschützten Ordnern zu ändern oder zu löschen, werden nicht aufgezeichnet.
 
       ![Screenshot der in der Dropdownliste ausgewählten Gruppenrichtlinienoption "Aktiviert" und "Überwachungsmodus"](/microsoft-365/security/defender-endpoint/images/cfa-gp-enable)
 
@@ -125,7 +132,7 @@ Verwenden Sie [den Konfigurationsdienstanbieter ./Vendor/MSFT/Policy/Config/Cont
 
 ## <a name="powershell"></a>PowerShell
 
-1. Geben Sie **powershell** im Startmenü ein, klicken Sie mit der rechten Maustaste auf **Windows PowerShell,** und wählen Sie **Als Administrator ausführen** aus.
+1. Geben Sie **PowerShell** im Startmenü ein, klicken Sie mit der rechten Maustaste auf **Windows PowerShell,** und wählen Sie **"Als Administrator ausführen"** aus.
 
 2. Geben Sie das folgende Cmdlet ein:
 

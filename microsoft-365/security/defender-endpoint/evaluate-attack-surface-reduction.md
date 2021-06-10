@@ -14,12 +14,12 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: c2dea22cc8a0ebb875f83ebd5a3e42f723e5f254
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 5d3cd7893af4c91807782c269231a280b413733e
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771321"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861219"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Auswerten der Regeln zur Verringerung der Angriffsfläche
 
@@ -38,9 +38,12 @@ Regeln zur Verringerung der Angriffsfläche tragen dazu bei, Aktionen zu verhind
 Legen Sie Regeln zur Verringerung der Angriffsfläche für Geräte fest, auf denen eine der folgenden Editionen und Versionen von Windows ausgeführt wird:
 
 - Windows 10 Pro, Version [1709](/windows/whats-new/whats-new-windows-10-version-1709) oder höher
-- Windows 10 Enterprise, [Version 1709](/windows/whats-new/whats-new-windows-10-version-1709) oder höher
+- Windows 10 Enterprise, Version [1709](/windows/whats-new/whats-new-windows-10-version-1709) oder höher
 - Windows Server, [Version 1803 (Halbjährlicher Kanal)](/windows-server/get-started/whats-new-in-windows-server-1803) oder höher
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
+
+> [!WARNING]
+> Das Aktivieren von Regeln zur Verringerung des Angriffsdiensts auf Windows Server 2016 kann zu unerwarteten Ergebnissen führen und sich auf die Serverleistung auswirken. Es wird nicht empfohlen, Regeln zur Verringerung der Angriffsfläche auf nicht unterstützten Plattformen zu aktivieren oder bereitzustellen.
 
 Erfahren Sie, wie Sie Regeln zur Verringerung der Angriffsfläche auswerten, indem Sie den Überwachungsmodus aktivieren, um das Feature direkt in Ihrer Organisation zu testen.
 
@@ -90,4 +93,4 @@ Informationen zum Konfigurieren des Features mit Verwaltungstools, einschließli
 
 * [Reduzieren von Angriffsflächen mit Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md)
 * [Verwenden des Überwachungsmodus zum Auswerten Windows Defender](audit-windows-defender.md)
-* [FAQ zu Verringerung der Angriffsfläche](attack-surface-reduction.md)
+* [Häufig gestellte Fragen zur Verringerung der Angriffsfläche](attack-surface-reduction.md)

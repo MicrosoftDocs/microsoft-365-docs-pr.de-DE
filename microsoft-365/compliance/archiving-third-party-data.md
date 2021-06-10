@@ -22,12 +22,12 @@ ms.assetid: 0ce338d5-3666-4a18-86ab-c6910ff408cc
 ms.custom:
 - seo-marvel-apr2020
 description: Erfahren Sie, wie Sie Daten von Drittanbietern von Social Media-Plattformen, Chatplattformen und Plattformen für die Zusammenarbeit von Dokumenten in Microsoft 365 Postfächer importieren.
-ms.openlocfilehash: 17172daa60721523bbfb97ab81f7a57078eb1b1c
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: a51b298b934431a1be8a416dac1f831ddaca5ffe
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822153"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861203"
 ---
 # <a name="archive-third-party-data"></a>Archivieren von Drittanbieterdaten
 
@@ -77,6 +77,7 @@ In der folgenden Tabelle sind die datenkonnektoren von Drittanbietern aufgeführ
 |[Verizon Network <sup>1</sup>](archive-verizon-network-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[Webex Teams <sup>2</sup>](archive-webexteams-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[Webseiten <sup>2</sup>](archive-webpagecapture-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|||
+|[WeChat <sup>1</sup>](archive-wechat-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[WhatsApp <sup>1</sup>](archive-whatsapp-data.md)     |![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[Workplace von Facebook <sup>2</sup>](archive-workplacefromfacebook-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
 |[XIP <sup>2</sup>](archive-xip-data.md)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)|![Häkchen](../media/checkmark.png)||
@@ -86,7 +87,7 @@ In der folgenden Tabelle sind die datenkonnektoren von Drittanbietern aufgeführ
 ||||||||
 
 > [!NOTE]
-> <sup>1</sup> Von TeleMessage bereitgestellter Datenkonnektor. Bevor Sie Daten in Microsoft 365 archivieren können, müssen Sie mit TeleMessage zusammenarbeiten, um deren Archivierungsdienst für Ihre Organisation einzurichten. Weitere Informationen finden Sie im Abschnitt "Voraussetzungen" in den schrittweisen Anweisungen für diesen Datentyp. TeleMessage-Datenconnectors sind auch in GCC Umgebungen in der Microsoft 365 US Government-Cloud verfügbar. Weitere Informationen finden Sie im Abschnitt ["Datenkonnektoren" im Abschnitt "US Government Cloud"](#data-connectors-in-the-us-government-cloud) in diesem Artikel. <br/><br/><sup>2</sup> Datenkonnektor, der von Dere bereitgestellt wird. Bevor Sie Daten in Microsoft 365 archivieren können, müssen Sie mit Csv zusammenarbeiten, um deren Archivierungsdienst für Ihre Organisation einzurichten. Weitere Informationen finden Sie im Abschnitt "Voraussetzungen" in den schrittweisen Anweisungen für diesen Datentyp.
+> <sup>1</sup> Von TeleMessage bereitgestellter Datenkonnektor. Bevor Sie Daten in Microsoft 365 archivieren können, müssen Sie mit TeleMessage zusammenarbeiten, um deren Archivierungsdienst für Ihre Organisation einzurichten. Weitere Informationen finden Sie im Abschnitt "Voraussetzungen" in den schrittweisen Anweisungen für diesen Datentyp. TeleMessage-Datenconnectors sind auch in GCC Umgebungen in der Microsoft 365 US Government-Cloud verfügbar. Weitere Informationen finden Sie im Abschnitt ["Datenkonnektoren" im Abschnitt "US Government Cloud"](#data-connectors-in-the-us-government-cloud) in diesem Artikel. <br/><br/><sup>2</sup> Datenkonnektor, der von Dere bereitgestellt wird. Bevor Sie Daten in Microsoft 365 archivieren können, müssen Sie mit Csv zusammenarbeiten, um ihren Archivierungsdienst für Ihre Organisation einzurichten. Weitere Informationen finden Sie im Abschnitt "Voraussetzungen" in den schrittweisen Anweisungen für diesen Datentyp.
 
 Die in der vorherigen Tabelle aufgeführten Drittanbieterdaten (mit Ausnahme von PERSONAL-Daten und physischen Daten für Fehlerhafte) werden in Benutzerpostfächer importiert. Die entsprechenden Compliancelösungen, die Drittanbieterdaten unterstützen, werden auf das Benutzerpostfach angewendet, in dem die Daten gespeichert sind.
 
@@ -108,7 +109,7 @@ Die drei wichtigsten eDiscovery-Tools in Microsoft 365 sind Inhaltssuche, Core e
 
 - **[Advanced eDiscovery](overview-ediscovery-20.md).** Dieses leistungsstarke Tool erweitert die Fallfunktionalität von Core eDiscovery, indem Sie einem Fall Verwahrer hinzufügen, die Daten des Verwalters in die Sperre setzen und dann die Daten eines Verwahrers in eine Überprüfung laden, um weitere Analysen wie Designs und die Erkennung von Duplikaten durchzuführen. Nachdem Sie Daten von Drittanbietern in einen Prüfdateisatz geladen haben, können Sie sie abfragen und in ein schmales Resultset filtern.
 
-   Sowohl mit Core eDiscovery als auch mit Advanced eDiscovery können Sie Daten von Drittanbietern verwalten, die für die rechtlichen oder internen Untersuchungen Ihrer Organisation relevant sein können.
+   Sowohl Mit Core eDiscovery als auch Advanced eDiscovery können Sie Daten von Drittanbietern verwalten, die für die rechtlichen oder internen Untersuchungen Ihrer Organisation relevant sein können.
 
 ### <a name="retention-settings"></a>Aufbewahrungseinstellungen
 
@@ -136,9 +137,10 @@ Wie bereits erwähnt, sind datenkonnektoren, die von TeleMessage bereitgestellt 
 |AT&T SMS/MMS-Netzwerkarchivierer | Ja | Nein | Nein |
 |Bell SMS/MMS-Netzwerkarchivierer | Ja | Nein | Nein |
 |Enterprise Zahlenarchivierer | Ja | Nein | Nein |
-|O2-SMS und VoIP-Netzwerkarchivierer | Ja         | Nein | Nein |
+|O2 SMS und Voice Network Archiver | Ja         | Nein | Nein |
 |TELUS SMS Network Archiver | Ja | Nein | Nein |
 |Verizon SMS/MMS-Netzwerkarchivierer | Ja | Nein | Nein |
+|WeChat-Archivierer | Ja | Nein | Nein |
 |WhatsApp-Archivierer | Ja | Nein | Nein |
 |||||
 
