@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: 00ed505b153e5af4d89038bdc53e988ee763827b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: a6271c1bd3714cfdffc606b7ada9b027e394216d
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845642"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866727"
 ---
 # <a name="behavioral-blocking-and-containment"></a>Verhaltensbasiertes Blockieren und Eindämmen
 
@@ -46,11 +46,11 @@ Funktionen zum Blockieren und Eindämmen von Verhaltensweisen können dazu beitr
 
 Funktionen zum Blockieren und Eindämmen von Verhaltensweisen funktionieren mit mehreren Komponenten und Features von Defender für Endpunkt, um Angriffe sofort zu stoppen und angriffe zu verhindern.
 
-- [Der Schutz](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10) der nächsten Generation (der Microsoft Defender Antivirus umfasst) kann Bedrohungen erkennen, indem Verhaltensweisen analysiert und Bedrohungen beendet werden, die gestartet wurden.
+- [Der Schutz](microsoft-defender-antivirus-in-windows-10.md) der nächsten Generation (der Microsoft Defender Antivirus umfasst) kann Bedrohungen erkennen, indem Verhaltensweisen analysiert und Bedrohungen beendet werden, die gestartet wurden.
 
-- [Die Endpunkterkennung und -antwort](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) (EDR) empfängt Sicherheitssignale in Ihrem Netzwerk, Ihren Geräten und Ihrem Kernelverhalten. Wenn Bedrohungen erkannt werden, werden Warnungen erstellt. Mehrere Warnungen des gleichen Typs werden zu Vorfällen aggregiert, was es Ihrem Sicherheitsteam erleichtert, zu untersuchen und zu reagieren.
+- [Die Endpunkterkennung und -antwort](overview-endpoint-detection-response.md) (EDR) empfängt Sicherheitssignale in Ihrem Netzwerk, Ihren Geräten und Ihrem Kernelverhalten. Wenn Bedrohungen erkannt werden, werden Warnungen erstellt. Mehrere Warnungen des gleichen Typs werden zu Vorfällen aggregiert, was es Ihrem Sicherheitsteam erleichtert, zu untersuchen und zu reagieren.
 
-- [Defender für Endpunkt](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) verfügt über eine breite Palette von Optiken für Identitäten, E-Mails, Daten und Apps sowie über das Netzwerk-, Endpunkt- und Kernelverhaltenssignale, die über EDR empfangen werden. Eine Komponente von [Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection), Defender für Endpunkt verarbeitet und korreliert diese Signale, löst Erkennungswarnungen aus und verbindet zugehörige Warnungen in Vorfällen.
+- [Defender für Endpunkt](overview-endpoint-detection-response.md) verfügt über eine breite Palette von Optiken für Identitäten, E-Mails, Daten und Apps sowie über das Netzwerk-, Endpunkt- und Kernelverhaltenssignale, die über EDR empfangen werden. Eine Komponente von [Microsoft 365 Defender](../defender/microsoft-365-defender.md), Defender für Endpunkt verarbeitet und korreliert diese Signale, löst Erkennungswarnungen aus und verbindet zugehörige Warnungen in Vorfällen.
 
 Mit diesen Funktionen können weitere Bedrohungen verhindert oder blockiert werden, auch wenn sie gestartet werden. Wenn verdächtiges Verhalten erkannt wird, ist die Bedrohung eingedämmt, Warnungen werden erstellt und Bedrohungen werden auf ihren Spuren gestoppt. 
 
@@ -60,7 +60,7 @@ Die folgende Abbildung zeigt ein Beispiel für eine Warnung, die durch Funktione
 
 ## <a name="components-of-behavioral-blocking-and-containment"></a>Komponenten des Blockierens und Eindämmens von Verhaltensweisen
 
-- Regeln zur Reduzierung der **[Angriffsfläche](/microsoft-365/security/defender-endpoint/attack-surface-reduction)** auf dem Client Vordefinierte allgemeine Angriffsverhaltensweisen werden gemäß den Regeln zur Verringerung der Angriffsfläche daran gehindert. Wenn solche Verhaltensweisen ausgeführt werden sollen, werden sie im Microsoft Defender Security Center [https://securitycenter.windows.com](https://securitycenter.windows.com) als Informationswarnungen angezeigt. (Attack Surface Reduction-Regeln sind standardmäßig nicht aktiviert; Sie konfigurieren Ihre Richtlinien im Microsoft Defender Security Center.)
+- Regeln zur Reduzierung der **[Angriffsfläche](attack-surface-reduction.md)** auf dem Client Vordefinierte allgemeine Angriffsverhaltensweisen werden gemäß den Regeln zur Verringerung der Angriffsfläche daran gehindert. Wenn solche Verhaltensweisen ausgeführt werden sollen, werden sie im Microsoft Defender Security Center [https://securitycenter.windows.com](https://securitycenter.windows.com) als Informationswarnungen angezeigt. (Attack Surface Reduction-Regeln sind standardmäßig nicht aktiviert; Sie konfigurieren Ihre Richtlinien im Microsoft Defender Security Center.)
 
 - **[Blockieren von Clientverhalten](client-behavioral-blocking.md)** Bedrohungen auf Endpunkten werden durch maschinelles Lernen erkannt und dann automatisch blockiert und behoben. (Das Blockieren von Clientverhalten ist standardmäßig aktiviert.) 
 
@@ -93,6 +93,7 @@ Im Folgenden finden Sie zwei praxisbezogene Beispiele für Verhaltensblockierung
 Wie unter "Bedrohungen, die [nur schwer zu erkennen sind" beschrieben: Ki-gesteuertes verhaltensbasiertes Blockieren stoppt Angriffe in ihren Spuren,](https://www.microsoft.com/security/blog/2019/10/08/in-hot-pursuit-of-elusive-threats-ai-driven-behavior-based-blocking-stops-attacks-in-their-tracks)ein Angriff auf den Diebstahl von Anmeldeinformationen gegen 100 Organisationen auf der ganzen Welt wurde durch Verhaltensblockierungs- und Eindämmungsfunktionen gestoppt. Spear-Phishing-E-Mail-Nachrichten, die ein Lockdokument enthielten, wurden an die Zielorganisationen gesendet. Wenn ein Empfänger die Anlage öffnete, konnte ein verwandtes Remotedokument Code auf dem Gerät des Benutzers ausführen und Lokibot-Schadsoftware laden, die Anmeldeinformationen gestohlen, gestohlene Daten exfiltriert und auf weitere Anweisungen von einem Befehls- und Steuerungsserver gewartet hat. 
 
 Verhaltensbasierte Gerätelernmodelle in Defender für Endpunkt haben die Techniken des Angreifers an zwei Punkten in der Angriffskette abgefangen und beendet:
+
 - Die erste Schutzebene hat das Exploit-Verhalten erkannt. Gerätelernklassifizierungen in der Cloud haben die Bedrohung richtig erkannt und das Clientgerät sofort angewiesen, den Angriff zu blockieren.
 - Die zweite Schutzebene, die dazu beigetragen hat, Fälle zu stoppen, in denen der Angriff über die erste Ebene hinausgehe, prozessabfällig wurde, diesen Prozess beendete und die entsprechenden Dateien entfernte (z. B. Lokibot). 
 
@@ -120,7 +121,7 @@ Dieses Beispiel zeigt, dass Bedrohungen bei der Blockierung und Eindämmung von 
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-- [Weitere Informationen zu Defender für Endpunkt](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)
+- [Weitere Informationen zu Defender für Endpunkt](overview-endpoint-detection-response.md)
 
 - [Konfigurieren der Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md)
 
@@ -128,4 +129,4 @@ Dieses Beispiel zeigt, dass Bedrohungen bei der Blockierung und Eindämmung von 
 
 - [Anzeigen der aktuellen globalen Bedrohungsaktivität](https://www.microsoft.com/wdsi/threats)
 
-- [Übersicht über Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)
+- [Übersicht über Microsoft 365 Defender](../defender/microsoft-365-defender.md)

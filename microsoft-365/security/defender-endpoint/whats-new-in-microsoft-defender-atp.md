@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e87a7423d6d69968bdf4224938e10799dcb89d1b
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: bb4d50c06c123d3d380604ef64b887f4f00f751d
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844190"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866667"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Neuigkeiten in Microsoft Defender für Endpunkt
 
@@ -45,6 +45,9 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 > ```https
 > /api/search/rss?search=%22features+are+generally+available+%28GA%29+in+the+latest+release+of+Microsoft+Defender+for+Endpoint%22&locale=en-us&facet=
 > ```
+
+## <a name="june-2021"></a>Juni 2021
+- [Gerätegruppendefinitionen](/microsoft-365/security/defender-endpoint/machine-groups) können jetzt mehrere Werte für jede Bedingung enthalten. Sie können mehrere Tags, Gerätenamen und Domänen auf die Definition einer einzelnen Gerätegruppe festlegen.
 
 ## <a name="march-2021"></a>März 2021
 - [Verwalten des Manipulationsschutzes mithilfe der Microsoft Defender Security Center](prevent-changes-to-security-settings-with-tamper-protection.md#manage-tamper-protection-for-your-organization-using-the-microsoft-defender-security-center) <br> Sie können Manipulationsschutzeinstellungen auf Windows 10, Windows Server 2016 und Windows Server 2019 mithilfe einer Methode namens *Tenant Attach* verwalten. 
@@ -76,7 +79,7 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 
 ## <a name="april-2020"></a>April 2020
 
-- [Unterstützung der API für die Bedrohungsverwaltung &](exposed-apis-list.md) <BR>Führen Sie API-Aufrufe im Zusammenhang mit der Bedrohungsverwaltung & aus, z. B. abrufen sie die Bewertung der Bedrohungsrisiken Oder die Sicherheitsbewertung ihres Geräts, den Bestand an Software- und Gerätesicherheitsrisiken, die Verteilung von Softwareversionen, Informationen zu Sicherheitsrisiken des Geräts, Informationen zu Sicherheitsempfehlungen. Weitere Informationen finden Sie in diesem [Blogbeitrag von Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)
+- [Api-Unterstützung für die Bedrohungs- &-Sicherheitsrisikoverwaltung](exposed-apis-list.md) <BR>Führen Sie API-Aufrufe im Zusammenhang mit der Bedrohungsverwaltung & aus, z. B. abrufen der Bewertung der Bedrohungsrisiken Oder der Sicherheitsbewertung ihres Geräts, des Inventars von Software- und Gerätesicherheitsrisiken, der Softwareversionsverteilung, Informationen zu Sicherheitsrisiken des Geräts, Informationen zu Sicherheitsempfehlungen. Weitere Informationen finden Sie in diesem [Blogbeitrag von Microsoft Tech Community.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/threat-amp-vulnerability-management-apis-are-now-generally/ba-p/1304615)
 
 ## <a name="november-december-2019"></a>November-December 2019
 
@@ -86,7 +89,7 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 
 - [Schemas für die erweiterte Bedrohungs- &-Sicherheitsrisikoverwaltung](advanced-hunting-schema-reference.md) <BR>Verwenden Sie die Tabellen "Bedrohungs- & Sicherheitsrisikoverwaltung" im Schema "Erweiterte Suche", um Fragen zu Softwarebestand, Sicherheitsrisiko-Wissensbasis, Sicherheitskonfigurationsbewertung und Sicherheitskonfigurations-Wissensdatenbank zu erstellen. 
  
- - [Rollenbasierte Zugriffssteuerungen für die Bedrohungs- & Sicherheitsrisikoverwaltung](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>Verwenden Sie die neuen Berechtigungen, um maximale Flexibilität beim Erstellen von SecOps-orientierten Rollen, Threat & Vulnerability Management-orientierten Rollen oder Hybridrollen zu ermöglichen, sodass nur autorisierte Benutzer auf bestimmte Daten zugreifen, um ihre Aufgabe auszuführen. Sie können auch noch mehr Granularität erreichen, indem Sie angeben, ob eine Rolle "Bedrohungs- & Sicherheitsrisikoverwaltung" nur Sicherheitsrisikodaten anzeigen oder Wiederherstellungs- und Ausnahmen erstellen und verwalten kann.
+ - [Rollenbasierte Zugriffssteuerungen für die Bedrohungs- & Sicherheitsrisikoverwaltung](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group) <BR>Verwenden Sie die neuen Berechtigungen, um maximale Flexibilität beim Erstellen von SecOps-orientierten Rollen, Threat & Vulnerability Management-orientierten Rollen oder Hybridrollen zu ermöglichen, sodass nur autorisierte Benutzer auf bestimmte Daten zugreifen, um ihre Aufgabe auszuführen. Sie können auch noch mehr Granularität erreichen, indem Sie angeben, ob eine Rolle "Bedrohungs- & Sicherheitsrisikoverwaltung" nur Sicherheitsrisiko-bezogene Daten anzeigen oder Wiederherstellungs- und Ausnahmen erstellen und verwalten kann.
 
 - [Bericht über Geräteintegrität und -compliance](machine-reports.md) <br/> Der Bericht über Geräteintegrität und -compliance enthält allgemeine Informationen zu den Geräten in Ihrer Organisation.
 
@@ -95,7 +98,7 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 - [Indikatoren für IP-Adressen, URLs/Domänen](manage-indicators.md) <BR> Sie können jetzt URLs/Domänen mitHilfe Ihrer eigenen Bedrohungserkennung zulassen oder blockieren. 
 
 
-- [Microsoft-Bedrohungsexperten – Experten bei Bedarf](microsoft-threat-experts.md) <BR> Sie haben jetzt die Möglichkeit, sich mit Microsoft-Bedrohungsexperten von mehreren Stellen im Portal in Verbindung zu nehmen, um Sie im Zusammenhang mit Ihrer Untersuchung zu unterstützen.   
+- [Microsoft-Bedrohungsexperten – Experten bei Bedarf](microsoft-threat-experts.md) <BR> Sie haben jetzt die Möglichkeit, Microsoft-Bedrohungsexperten von mehreren Stellen im Portal zu konsultieren, um Sie im Zusammenhang mit Ihrer Untersuchung zu unterstützen.   
  
 - [Verbundene Azure AD-Anwendungen](connected-applications.md)<br> Die Seite "Verbundene Anwendungen" enthält Informationen zu den Azure AD-Anwendungen, die mit Microsoft Defender für Endpunkt in Ihrer Organisation verbunden sind. 
 
@@ -124,7 +127,7 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 - [Berichte zum Bedrohungsschutz](threat-protection-reports.md)<BR>Der Bedrohungsschutzbericht enthält allgemeine Informationen zu Warnungen, die in Ihrer Organisation generiert werden. 
 
 
-- [Microsoft-Bedrohungsexperten](microsoft-threat-experts.md)<BR> Microsoft-Bedrohungsexperten ist der neue Dienst für die verwaltete Bedrohungssuche in Microsoft Defender für Endpunkt, der proaktive Suche, Priorisierung und zusätzlichen Kontext und Einblicke bietet, die Sicherheits-Operations Center (SOCs) weiter unterstützen, Bedrohungen schnell und präzise zu erkennen und darauf zu reagieren. Es bietet zusätzliche Expertise und Optik, die Microsoft-Kunden nutzen können, um die Sicherheitsfunktionen im Rahmen Microsoft 365 zu erweitern.  
+- [Microsoft-Bedrohungsexperten](microsoft-threat-experts.md)<BR> Microsoft-Bedrohungsexperten ist der neue Dienst für die verwaltete Bedrohungssuche in Microsoft Defender für Endpunkt, der proaktive Suche, Priorisierung sowie zusätzlichen Kontext und Einblicke bietet, die Sicherheits-Operations Center (SOCs) weiter unterstützen, Bedrohungen schnell und präzise zu identifizieren und darauf zu reagieren. Es bietet zusätzliche Expertise und Optik, die Microsoft-Kunden nutzen können, um die Sicherheitsfunktionen im Rahmen Microsoft 365 zu erweitern.  
 
 - [Indikatoren](ti-indicator.md) <BR> APIs für Indikatoren sind jetzt allgemein verfügbar. 
 
@@ -163,7 +166,7 @@ Weitere Informationen zu Vorschaufeatures finden Sie unter ["Vorschaufeatures".]
 - [Bedrohungsanalyse](threat-analytics.md)<BR>
 Threat Analytics ist eine Reihe von interaktiven Berichten, die vom Microsoft Defender für Endpunkt-Forschungsteam veröffentlicht werden, sobald neue Bedrohungen und Fälle erkannt werden. Die Berichte helfen Sicherheitsteams bei der Bewertung der Auswirkungen auf ihre Umgebung und bieten empfohlene Maßnahmen, um die Resilienz der Organisation zu erhöhen und bestimmte Bedrohungen zu verhindern.
 
-- Neu in Windows 10 Version 1809 sind zwei neue Regeln zur Verringerung der Angriffsfläche: 
+- Neu in Windows 10 Version 1809 gibt es zwei neue Regeln zur Verringerung der Angriffsfläche: 
   - Adobe Reader am Erstellen von untergeordneten Prozessen hindern
   - Verhindern, dass Office Kommunikationsanwendung untergeordnete Prozesse erstellt.
   

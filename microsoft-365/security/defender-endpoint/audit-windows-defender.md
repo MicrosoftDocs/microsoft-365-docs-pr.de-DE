@@ -16,12 +16,12 @@ manager: dansimp
 ms.technology: mde
 ms.date: 06/02/2021
 ms.topic: article
-ms.openlocfilehash: 10351d97ba72945f929e042dc72a37724a1df291
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: e78b21b751aa398ed4449fb398f12b60f1929873
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769605"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866679"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>Testen der Verringerung der Angriffsfläche in Microsoft Defender für Endpunkt
 
@@ -46,7 +46,7 @@ Sie können gruppenrichtlinien, PowerShell und Konfigurationsdienstanbieter (Con
 > [!TIP]
 > Sie können auch die Windows Defender Testground-Website unter [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) besuchen, um zu bestätigen, dass die Features funktionieren und wie sie funktionieren.
 
- **Überwachungsoptionen** | **So aktivieren Sie den Überwachungsmodus** | **Anzeigen von Ereignissen**
+| Überwachungsoptionen | So aktivieren Sie den Überwachungsmodus | Anzeigen von Ereignissen |
 |---------|---------|---------|
 | Überwachung gilt für alle Ereignisse | [Kontrollierte Ordnerzugriff aktivieren](enable-controlled-folders.md) | [Kontrollierte Ordnerzugriffsereignisse](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
 | Überwachung gilt für einzelne Regeln | [Aktivieren der Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md) | [Regelereignisse zur Verringerung der Angriffsfläche](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)

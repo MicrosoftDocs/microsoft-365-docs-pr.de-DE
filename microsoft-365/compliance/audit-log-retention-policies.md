@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Aufbewahrungsrichtlinien für Überwachungsprotokolle sind Bestandteil der neuen erweiterten Überwachungsfunktionen in Microsoft 365. Mit einer Aufbewahrungsrichtlinie für Überwachungsprotokolle können Sie festlegen, wie lange Überwachungsprotokolle in Ihrer Organisation aufbewahrt werden sollen.
-ms.openlocfilehash: 2ac95d9bb9c13b6bf0c0e31d17b4fb46c30c492a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b3534f5d0572b2656711850b483651270b9e3315
+ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687358"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "52822141"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Verwalten von Aufbewahrungsrichtlinien für Überwachungsprotokolle
 
@@ -39,7 +39,7 @@ Sie können Aufbewahrungsrichtlinien für Überwachungsprotokolle im Security & 
 Die erweiterte Überwachung in Microsoft 365 stellt eine Standardaufbewahrungsrichtlinie für Überwachungsprotokolle für alle Organisationen bereit. Diese Richtlinie bewahrt alle Exchange Online-, SharePoint Online-, OneDrive for Business- und Azure Active Directory-Überwachungsdatensätze für ein Jahr auf. Diese Standardrichtlinie bewahrt Überwachungsdatensätze auf, die den Wert **Exchange**, **SharePoint**, **OneDrive** oder **AzureActiveDirectory** für die Eigenschaft **Workload** (der Dienst, in dem die Aktivität aufgetreten ist) enthalten. Die Standardrichtlinie kann nicht geändert werden. Im Abschnitt [Weitere Informationen](#more-information) in diesem Artikel finden Sie eine Liste der Datensatztypen für die einzelnen Workloads, die in der Standardrichtlinie enthalten sind.
 
 > [!NOTE]
-> Die Standardrichtlinie zur Aufbewahrung von Überwachungsprotokollen gilt nur für Überwachungsdatensätze für Aktivitäten, die von Benutzern durchgeführt werden, denen eine Office 365- oder Microsoft 365 E5-Lizenz zugewiesen ist, oder die über eine Microsoft 365 E5 Compliance- oder E5 eDiscovery- und Überwachungs-Add-on-Lizenz verfügen. Wenn Sie Nicht-E5-Benutzer oder Gastbenutzer in Ihrer Organisation haben, werden die entsprechenden Audit-Aufzeichnungen 90 Tage lang aufbewahrt.
+> Die Standardrichtlinie zur Aufbewahrung von Überwachungsprotokollen gilt nur für Überwachungsdatensätze für Aktivitäten, die von Benutzern durchgeführt werden, denen eine Office 365- oder Microsoft 365 E5-Lizenz zugewiesen ist, oder die über eine Microsoft 365 E5 Compliance- oder E5 eDiscovery- und Überwachungs-Add-on-Lizenz verfügen. Wenn Sie Nicht-E5-Benutzer oder Gastbenutzer in Ihrer Organisation haben, werden die entsprechenden Audit-Aufzeichnungen 90 Tage lang aufbewahrt.
 
 ## <a name="before-you-create-an-audit-log-retention-policy"></a>Vor dem Erstellen einer Aufbewahrungsrichtlinie für Überwachungsprotokolle
 
@@ -77,7 +77,7 @@ Die erweiterte Überwachung in Microsoft 365 stellt eine Standardaufbewahrungsri
 
    5. **Dauer:** die Zeitdauer, wie lange die Überwachungsprotokolle aufbewahrt werden, die den Kriterien der Richtlinie entsprechen
 
-   6. **Priorität:** Dieser Wert bestimmt die Reihenfolge, in der Aufbewahrungsrichtlinien für Überwachungsprotokolle in Ihrer Organisation angewandt werden. Ein höherer Wert weist auf eine höhere Priorität hin.  So würde beispielsweise eine Richtlinie mit einem Prioritätswert von **5** Vorrang vor einer Richtlinie mit einem Prioritätswert von **0** haben. Wie zuvor erläutert, hat jede benutzerdefinierte Aufbewahrungsrichtlinie für Überwachungsprotokolle Vorrang vor der Standardrichtlinie für Ihre Organisation.
+   6. **Priorität:** Dieser Wert bestimmt die Reihenfolge, in der Aufbewahrungsrichtlinien für Überwachungsprotokolle in Ihrer Organisation angewandt werden. Ein niedrigerer Wert gibt eine höhere Priorität an. Gültige Prioritäten sind numerische Werte zwischen **1** und **10000**. Ein Wert von **1** ist die höchste Priorität, und der Wert **10000** ist die niedrigste Priorität. Beispielsweise hat eine Richtlinie mit dem Wert **5** Vorrang vor einer Richtlinie mit dem Wert **10**. Wie zuvor erläutert, hat jede benutzerdefinierte Aufbewahrungsrichtlinie für Überwachungsprotokolle Vorrang vor der Standardrichtlinie für Ihre Organisation.
 
 5. Klicken Sie auf **Speichern**, um die neue Aufbewahrungsrichtlinie für Überwachungsprotokolle zu erstellen.
 
@@ -163,7 +163,7 @@ Verwenden Sie das Cmdlet [Set-UnifiedAuditLogRetentionPolicy](/powershell/module
 
 ### <a name="delete-policies-in-powershell"></a>Löschen von Richtlinien in PowerShell
 
-Verwenden Sie das Cmdlet [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) in Security & Compliance Center PowerShell, um eine Aufbewahrungsrichtlinie für Überwachungsprotokolle zu löschen. Es kann bis zu 30 Minuten dauern, bis die Richtlinie aus Ihrer Organisation entfernt wurde.
+Verwenden Sie das Cmdlet [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) in Security & Compliance Center PowerShell, um eine Aufbewahrungsrichtlinie für Überwachungsprotokolle zu löschen. Es kann bis zu 30 Minuten dauern, bis die Richtlinie aus Ihrer Organisation entfernt wurde.
 
 ## <a name="more-information"></a>Weitere Informationen
 

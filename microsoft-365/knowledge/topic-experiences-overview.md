@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Übersicht über Viva-Themen.
-ms.openlocfilehash: ecd090036f35a3cfdaffe532c800244c8174183b
-ms.sourcegitcommit: 58d74ff60303a879e35d112f10f79724ba41188f
+ms.openlocfilehash: c7a5af9d2a038c2b9cc5f26d851eb3776a00c71f
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52302124"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866691"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics – Übersicht 
 
-Viva Topics verwendet Microsoft AI-Technologie, Microsoft 365, Microsoft Graph, Suche und andere Komponenten und Dienste, um Ihren Benutzern Wissen in Microsoft 365-Apps zu vermitteln, die sie täglich verwenden, beginnend mit SharePoint modernen Seiten, Microsoft Search und Search in Word, PowerPoint, Outlook und Excel.
+Viva Topics verwendet Microsoft AI-Technologie, Microsoft 365, Microsoft Graph, Suche und andere Komponenten und Dienste, um Ihren Benutzern Wissen in den Microsoft 365 Apps bereitzustellen, die sie täglich verwenden, beginnend mit SharePoint modernen Seiten, Microsoft Search und Suche in Word, PowerPoint, Outlook und Excel.
 
 <br/>
 
@@ -31,10 +31,9 @@ Viva Topics verwendet Microsoft AI-Technologie, Microsoft 365, Microsoft Graph, 
 
 <br/>
 
-Viva Topics hilft bei der Lösung eines wichtigen Geschäftsproblems in vielen Unternehmen – indem Sie die Informationen für Benutzer bereitstellen, wenn diese benötigt werden. Beispielsweise müssen neue Mitarbeiter schnell viele neue Informationen lernen und beim Lesen von Unternehmensinformationen auf Begriffe stoßen, über die sie nichts wissen. Um mehr zu erfahren, muss der Benutzer möglicherweise seine Aktivitäten unterbrechen und wertvolle Zeit damit verbringen, nach Details zu suchen, z. B. nach Informationen über den Begriff, wer in der Organisation Fachexperte ist, und möglicherweise nach Websites und Dokumenten im Zusammenhang mit dem Begriff.
+Viva Topics hilft bei der Behandlung eines wichtigen Geschäftsproblems in vielen Unternehmen – indem die Informationen den Benutzern bereitgestellt werden, wenn sie es benötigen. Beispielsweise müssen neue Mitarbeiter schnell viele neue Informationen lernen und beim Lesen von Unternehmensinformationen auf Begriffe stoßen, über die sie nichts wissen. Um mehr zu erfahren, muss der Benutzer möglicherweise seine Aktivitäten unterbrechen und wertvolle Zeit damit verbringen, nach Details zu suchen, z. B. nach Informationen über den Begriff, wer in der Organisation Fachexperte ist, und möglicherweise nach Websites und Dokumenten im Zusammenhang mit dem Begriff.
 
-Viva Topics verwendet KI, um automatisch nach **Themen** in Ihrer Organisation zu suchen und diese zu identifizieren. Es werden Informationen über sie zusammengestellt, z. B. eine kurze Beschreibung, Personen, die an dem Thema arbeiten, sowie Websites, Dateien und Seiten, die sich darauf beziehen. Ein Wissensmanager oder Mitwirkender kann die Themeninformationen nach Bedarf aktualisieren. Die Themen stehen Ihren Benutzern zur Verfügung. Dies bedeutet, dass für jede Instanz des Themas, die auf einer modernen SharePoint-Website in Nachrichten und Seiten angezeigt wird, der Text hervorgehoben wird. Benutzer können das Thema auswählen, um mehr darüber in den Themendetails zu erfahren. Themen finden Sie auch in der SharePoint-Suche.
-
+Viva Topics verwendet KI, um automatisch nach *Themen* in Ihrer Organisation zu suchen und diese zu identifizieren. Es werden Informationen über sie zusammengestellt, z. B. eine kurze Beschreibung, Personen, die an dem Thema arbeiten, sowie Websites, Dateien und Seiten, die sich darauf beziehen. Ein Wissensmanager oder Mitwirkender kann die Themeninformationen nach Bedarf aktualisieren. Die Themen stehen Ihren Benutzern zur Verfügung. Dies bedeutet, dass für jede Instanz des Themas, die auf einer modernen SharePoint-Website in Nachrichten und Seiten angezeigt wird, der Text hervorgehoben wird. Benutzer können das Thema auswählen, um mehr darüber in den Themendetails zu erfahren. Themen finden Sie auch in der SharePoint-Suche.
 
 ## <a name="how-topics-are-displayed-to-users"></a>Wie Themen den Benutzern angezeigt werden
 
@@ -42,17 +41,18 @@ Wenn ein Thema in Inhalten auf SharePoint-Nachrichten und -Seiten erwähnt wird,
 
    ![Themenhighlights](../media/knowledge-management/saturn.png) 
 
-Wenn Sie Die Suche in Word, PowerPoint, Outlook oder Excel verwenden, entweder über das  Suchfeld oder durch Auswählen von Suchen im Kontextmenü, werden die angezeigten Ergebnisse möglicherweise auch die Themenzusammenfassung angezeigt.
+Wenn Sie die Suche in Word, PowerPoint, Outlook oder Excel verwenden, entweder über das Suchfeld oder durch Auswählen der **Suche** im Kontextmenü, werden die angezeigten Ergebnisse möglicherweise auch die Themenzusammenfassung anzeigen.
 
    ![Screenshot der Suche in Word über das Suchfeld.](../media/knowledge-management/word-search-2.png)
 
-   ![Screenshot, der die Suche in Word über das Kontextmenü Suchen zeigt.](../media/knowledge-management/word-search-1.png)
+   ![Screenshot der Suche in Word über das Kontextmenü "Suchen".](../media/knowledge-management/word-search-1.png)
 
 ## <a name="knowledge-indexing"></a>Wissensindizierung
 
-Viva Topics verwendet die Microsoft KI-Technologie, um **Themen** in Ihrer Microsoft 365-Umgebung zu identifizieren.
+Viva Topics verwendet die Microsoft KI-Technologie, um *Themen* in Ihrer Microsoft 365-Umgebung zu identifizieren.
 
 Ein Thema ist eine Phrase oder ein Begriff, der organisatorisch bedeutsam oder wichtig ist. Es hat eine spezifische Bedeutung für die Organisation und verfügt über Ressourcen, die den Menschen helfen können, zu verstehen, was es ist, und weitere Informationen darüber zu finden. Es gibt viele verschiedene Arten von Themen, die für Ihr Unternehmen wichtig sind. Zunächst konzentriert sich die Microsoft KI-Technologie auf die folgenden Typen:
+
 - Project
 - Event
 - Organisation
@@ -61,8 +61,7 @@ Ein Thema ist eine Phrase oder ein Begriff, der organisatorisch bedeutsam oder w
 - Kreative Arbeit
 - Forschungsgebiet
 
-
-Wenn ein Thema identifiziert wird und KI feststellt, dass es über genügend Informationen verfügt, um ein vorgeschlagenes Thema zu sein, werden auf einer **Themenseite** die Informationen angezeigt, die durch Themenindizierung gesammelt wurden, z.B.:
+Wenn ein Thema identifiziert wird und KI feststellt, dass es über genügend Informationen verfügt, um ein vorgeschlagenes Thema zu sein, werden auf einer *Themenseite* die Informationen angezeigt, die durch Themenindizierung gesammelt wurden, z.B.:
 
 - Alternative Namen und Akronyme.
 - Eine kurze Beschreibung des Themas.
@@ -71,7 +70,7 @@ Wenn ein Thema identifiziert wird und KI feststellt, dass es über genügend Inf
 
 Ihre Wissensmanager können wählen, ob sie alle SharePoint-Sites in Ihrem Mandanten nach Themen durchsuchen oder nur bestimmte auswählen möchten.
 
-Weitere [Informationen finden Sie unter Topic discovery and curation](./topic-experiences-discovery-curation.md).
+Siehe [Themensuche und -kuration.](./topic-experiences-discovery-curation.md)
 
 ## <a name="roles"></a>Rollen
 
@@ -81,17 +80,17 @@ Wenn Sie Viva Topics in Ihrer Microsoft 365-Umgebung verwenden, haben Ihre Benut
 
 - Mitwirkende: Benutzer, die das Recht haben, vorhandene Themen zu bearbeiten oder neue zu erstellen. Wissensadministratoren weisen Benutzern über die Viva Topics-Einstellungen im Microsoft 365 Admin Center Berechtigungen für Mitwirkende zu. Beachten Sie, dass Sie auch festlegen können, dass alle Themenbetrachter die Berechtigung zum Bearbeiten und Erstellen von Themen erhalten, damit jeder zu den Themen beitragen kann, die er sieht.
 
-- Wissensmanager: Benutzer, die Themen durch den Themenlebenszyklus führen. Wissensmanager verwenden die Seite **Themen verwalten** im Themencenter, um von der KI vorgeschlagene Themen zu bestätigen, nicht mehr relevante Themen zu entfernen sowie vorhandene Themen zu bearbeiten oder neue zu erstellen. Sie sind die einzigen Benutzer, die Zugriff darauf haben. Wissensadministratoren weisen Benutzern über die Viva Topics-Administratoreinstellungen im Microsoft 365 Admin Center Wissensmanagerberechtigungen zu. 
+- Wissensmanager: Benutzer, die Themen durch den Themenlebenszyklus führen. Wissensmanager verwenden die Seite **"Themen verwalten"** im Themencenter, um ki-vorgeschlagene Themen zu bestätigen, nicht mehr relevante Themen zu entfernen, vorhandene Themen zu bearbeiten oder neue zu erstellen, und sind die einzigen Benutzer, die Zugriff darauf haben. Wissensadministratoren weisen Benutzern über die Viva Topics-Administratoreinstellungen im Microsoft 365 Admin Center Wissensmanagerberechtigungen zu. 
 
-- Wissensadministratoren: Wissensadministratoren richten Viva Topics ein und verwalten sie über die Administratorsteuerelemente im Microsoft 365 Admin Center. Derzeit kann ein globaler Microsoft 365- oder SharePoint-Administrator als Wissensadministrator fungieren.
+- Wissensadministratoren: Administratoren richten Viva Topics ein und verwalten sie über die Administratorsteuerelemente im Microsoft 365 Admin Center. Derzeit kann ein globaler Microsoft 365- oder SharePoint-Administrator als Wissensadministrator fungieren.
 
-Weitere Informationen finden Sie unter [Viva-Themenrollen](topic-experiences-roles.md).
+Weitere Informationen finden Sie unter [Viva Topics-Rollen.](topic-experiences-roles.md)
 
 ## <a name="topic-management"></a>Themenverwaltung
 
-Die Themenverwaltung erfolgt auf der Seite **Themen verwalten** im **Themenzentrum** Ihrer Organisation. Das Themenzentrum wird während der Einrichtung erstellt und dient als Wissenszentrum für Ihre Organisation. 
+Die Themenverwaltung erfolgt auf der Seite **"Themen verwalten"** im *Themencenter* Ihrer Organisation. Das Themencenter wird während des Setups erstellt und dient als Wissen für Ihre Organisation. 
 
-Während alle lizenzierten Benutzer Themen, mit denen sie verbunden sind, im Themenzentrum sehen können, können nur Benutzer mit Berechtigungen zum *Verwalten von Themen* (Wissensmanager) die Seite Themen verwalten anzeigen und verwenden.
+Während alle lizenzierten Benutzer Themen sehen können, mit deren Hilfe sie im Themencenter verbunden sind, können nur Benutzer mit Berechtigungen zum *Verwalten von Themen* (Wissensmanager) die Seite **"Themen** verwalten" anzeigen und verwenden.
 
 Wissensverwalter können:
 
@@ -99,12 +98,11 @@ Wissensverwalter können:
 - Neue Themen nach Bedarf manuell erstellen (z. B. wenn nicht genügend Informationen bereitgestellt wurden, um über KI erkannt zu werden).
 - Vorhandene Themenseiten bearbeiten.<br/>
 
-Weitere Informationen finden Sie unter [Verwalten von Themen im Themencenter](manage-topics.md).  
-
+Weitere Informationen finden Sie unter [Verwalten von Themen im Themencenter.](manage-topics.md)  
 
 ## <a name="admin-controls"></a>Administratorsteuerelemente
 
-Administratorsteuerelemente im Microsoft 365 Admin Center ermöglichen ihnen die Verwaltung von Themen von "Viva". Mit ihnen können Microsoft 365 Global- oder SharePoint-Administrator:
+Mit Administratorsteuerelementen im Microsoft 365 Admin Center können Sie Viva Topics verwalten. Mit ihnen können Microsoft 365 Global- oder SharePoint-Administrator:
 
 - Steuern, welche Benutzer in Ihrer Organisation Themen auf modernen SharePoint-Seiten oder in SharePoint-Suchergebnissen anzeigen dürfen.
 - Steuern, welche SharePoint-Websites durchsucht werden, um Themen zu identifizieren.
@@ -113,20 +111,20 @@ Administratorsteuerelemente im Microsoft 365 Admin Center ermöglichen ihnen die
 - Steuern, welche Benutzer Themen erstellen und bearbeiten können.
 - Steuern, welcher Benutzer Themen anzeigen kann.
 
-Weitere Informationen zu Administratorsteuerelementen finden Sie unter [Zuweisen von Benutzerberechtigungen](./plan-topic-experiences.md#user-permissions), [Verwalten der Themensichtbarkeit](./topic-experiences-knowledge-rules.md) und [Verwalten der Themenerkennung](./topic-experiences-discovery.md).
+Weitere Informationen zu Administratorsteuerelementen finden Sie unter [Zuweisen von Benutzerberechtigungen,](./plan-topic-experiences.md#user-permissions) [Verwalten der Themensichtbarkeit](./topic-experiences-knowledge-rules.md)und [Verwalten der Themensuche.](./topic-experiences-discovery.md)
 
 ## <a name="topic-curation--feedback"></a>Kuration und Feedback zum Thema
 
 KI wird kontinuierlich daran arbeiten, Ihnen Vorschläge zur Verbesserung Ihrer Themen zu unterbreiten, wenn Änderungen in Ihrer Umgebung auftreten. 
 
-Benutzer mit Berechtigungen zum Bearbeiten oder Erstellen von Themen können Aktualisierungen an Themenseiten direkt vornehmen, wenn sie Korrekturen vornehmen oder zusätzliche Informationen hinzufügen möchten. Sie können auch neue Themen hinzufügen, die die KI nicht identifizieren konnte. Wenn genügend Informationen zu diesen manuell hinzugefügten Themen vorhanden sind und KI diese Art von Thema identifizieren kann, können zusätzliche Vorschläge von KI diese manuell hinzugefügten Themen verbessern 
+Benutzer mit Berechtigungen zum Bearbeiten oder Erstellen von Themen können Aktualisierungen an Themenseiten direkt vornehmen, wenn sie Korrekturen vornehmen oder zusätzliche Informationen hinzufügen möchten. Sie können auch neue Themen hinzufügen, die die KI nicht identifizieren konnte. Wenn genügend Informationen zu diesen manuell hinzugefügten Themen vorhanden sind und KI in der Lage ist, diese Art von Thema zu identifizieren, können zusätzliche Vorschläge von KI diese manuell hinzugefügten Themen verbessern.
 
 Benutzer, denen Sie Zugriff gewähren, um Themen in ihrer täglichen Arbeit anzuzeigen, werden möglicherweise gefragt, ob das Thema für sie nützlich war. Das System überprüft diese Antworten und verwendet sie, um die Themenhervorhebung zu verbessern und um festzustellen, was in Themenzusammenfassungen und in Themendetails angezeigt wird.
 
 Darüber hinaus können Benutzer mit entsprechenden Berechtigungen Elemente wie die Yammer-Konversation, die für ein Thema relevant sind, mit Tags versehen und einem bestimmten Thema hinzufügen. 
 
-Weitere [Informationen finden Sie unter Topic discovery and curation](./topic-experiences-discovery-curation.md).
+Weitere Informationen finden Sie unter ["Themenermittlung und Kuratierung".](./topic-experiences-discovery-curation.md)
 
-<!--
-## See also
--->
+## <a name="see-also"></a>Siehe auch
+
+[Verwenden von Microsoft Search zum Suchen von Themen in Viva Topics](./search.md)

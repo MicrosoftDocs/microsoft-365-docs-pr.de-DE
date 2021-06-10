@@ -16,16 +16,14 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 55b06ca25047fe615bd0011528fbdbe5112a4533
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: f157a03d9a56aa0bbca695a27be57391e6b92360
+ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844982"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52866631"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Verwenden von Regeln zur Verringerung der Angriffsfläche, um eine Infektion mit Schadsoftware zu verhindern
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 
@@ -72,7 +70,7 @@ Der Warnmodus wird auf Geräten unterstützt, auf denen die folgenden Versionen 
 - [Windows 10, Version 1809](/windows/whats-new/whats-new-windows-10-version-1809) oder höher
 - [Windows Server, Version 1809](/windows-server/get-started/whats-new-in-windows-server-1809) oder höher
 
-Microsoft Defender Antivirus muss mit Echtzeitschutz im aktiven [Modus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)ausgeführt werden.
+Microsoft Defender Antivirus müssen mit Echtzeitschutz im [aktiven Modus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)ausgeführt werden.
 
 Stellen Sie außerdem sicher, dass [Microsoft Defender Antivirus- und Antischadsoftwareupdates](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) installiert sind.
 
@@ -116,7 +114,7 @@ Sie können Regeln zur Verringerung der Angriffsfläche für Geräte festlegen, 
 - Windows Server, [Version 1803 (Halbjährlicher Kanal)](/windows-server/get-started/whats-new-in-windows-server-1803) oder höher
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Obwohl die Regeln zur Verringerung der Angriffsfläche keine [Windows E5-Lizenz](/windows/deployment/deploy-enterprise-licenses)erfordern, erhalten Sie, wenn Sie über Windows E5 verfügen, erweiterte Verwaltungsfunktionen. Zu diesen Funktionen, die nur in Windows E5 verfügbar sind, gehören Überwachung, Analysen und Workflows, die in [Defender für Endpunkt](microsoft-defender-endpoint.md)verfügbar sind, sowie Berichterstellungs- und Konfigurationsfunktionen im Microsoft 365 Security [Center.](/microsoft-365/security/defender/overview-security-center) Diese erweiterten Funktionen sind nicht mit einer Windows Professional- oder Windows E3-Lizenz verfügbar. Wenn Sie jedoch über diese Lizenzen verfügen, können Sie die Ereignisanzeige und Microsoft Defender Antivirus Protokolle verwenden, um ihre Regelereignisse zur Verringerung der Angriffsfläche zu überprüfen.
+Obwohl Regeln zur Verringerung der Angriffsfläche keine [Windows E5-Lizenz](/windows/deployment/deploy-enterprise-licenses)erfordern, erhalten Sie, wenn Sie über Windows E5 verfügen, erweiterte Verwaltungsfunktionen. Zu diesen Funktionen, die nur in Windows E5 verfügbar sind, gehören Überwachung, Analysen und Workflows, die in [Defender für Endpunkt](microsoft-defender-endpoint.md)verfügbar sind, sowie Berichterstellungs- und Konfigurationsfunktionen im Microsoft 365 Security [Center.](/microsoft-365/security/defender/overview-security-center) Diese erweiterten Funktionen sind nicht mit einer Windows Professional- oder Windows E3-Lizenz verfügbar. Wenn Sie jedoch über diese Lizenzen verfügen, können Sie die Ereignisanzeige und Microsoft Defender Antivirus Protokolle verwenden, um ihre Regelereignisse zur Verringerung der Angriffsfläche zu überprüfen.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Überprüfen von Ereignissen zur Verringerung der Angriffsfläche im Microsoft Defender Security Center
 
@@ -263,10 +261,10 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>Ausführbare Inhalte aus E-Mail-Client und Web-E-Mail blockieren
 
-Diese Regel verhindert, dass die folgenden Dateitypen von E-Mails gestartet werden, die in der Microsoft Outlook-Anwendung oder Outlook.com und anderen beliebten Webmailanbietern geöffnet werden:
+Diese Regel verhindert, dass die folgenden Dateitypen von E-Mails gestartet werden, die in der Microsoft Outlook-Anwendung oder Outlook.com und anderen beliebten Webmailanbietern geöffnet wurden:
 
 - Ausführbare Dateien (z. B. .exe, .dll oder SCR)
-- Skriptdateien (z. B. eine PowerShell-PS-, Visual Basic VBS- oder JavaScript-.js datei)
+- Skriptdateien (z. B. eine PowerShell-PS-, Visual Basic -VBS- oder JavaScript-.js datei)
 
 Diese Regel wurde eingeführt in:
 
@@ -356,7 +354,7 @@ GUID: `D3E037E1-3EB8-44C8-A917-57927947596D`
 
 ### <a name="block-office-applications-from-creating-executable-content"></a>Office-Anwendungen am Erstellen ausführbarer Inhalte hindern
 
-Diese Regel verhindert, dass Office Apps, einschließlich Word, Excel und PowerPoint, potenziell schädliche ausführbare Inhalte erstellen, indem verhindert wird, dass schädlicher Code auf den Datenträger geschrieben wird.
+Diese Regel verhindert, dass Office Apps, einschließlich Word, Excel und PowerPoint, potenziell schädliche ausführbare Inhalte erstellen, indem verhindert wird, dass bösartiger Code auf den Datenträger geschrieben wird.
 
 Schadsoftware, die Office als Vektor missbraucht, versucht möglicherweise, Office zu unterbrechen und schädliche Komponenten auf dem Datenträger zu speichern. Diese schädlichen Komponenten würden einen Computerneustart überstehen und auf dem System beibehalten. Daher schützt diese Regel vor einer gängigen Persistenztechnik.
 
