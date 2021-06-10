@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie den Assistenten für das Schema exakter Datenübereinstimmung und vertrauliche Informationstypen verwenden können.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d9d6f870239b963ee7483b9f08e93e40b10f4f0b
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 5fdf289c403d8c09342a1eac1434c4219bb7b13c
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878004"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861659"
 ---
 # <a name="use-the-exact-data-match-schema-and-sensitive-information-type-wizard"></a>Verwenden Sie den Assistenten für das Schema exakter Datenübereinstimmung und vertrauliche Informationstypen.
 
@@ -42,7 +42,7 @@ Schritte für [Teil 1: Einrichten der EDM-basierten Klassifizierung](create-cust
 
 1. Machen Sie sich mit den Schritten vertraut, um einen benutzerdefinierten vertraulichen Informationstyp mit dem EDM-[Workflow auf einen Blick](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#the-work-flow-at-a-glance) zu erstellen.
 
-2. Führen Sie die Schritte unter [Speichern vertraulicher Daten im .csv- oder TSV-Format](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-or-tsv-format)aus.
+2. Führen Sie die Schritte im Abschnitt [Vertrauliche Daten im .csv-Format speichern](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md#save-sensitive-data-in-csv-format) durch.
 
 ## <a name="use-the-exact-data-match-schema-and-sensitive-information-type-pattern-wizard"></a>Verwenden Sie den Assistenten für das Schema für exakte Datenübereinstimmung und Muster vertraulicher Informationstypen
 

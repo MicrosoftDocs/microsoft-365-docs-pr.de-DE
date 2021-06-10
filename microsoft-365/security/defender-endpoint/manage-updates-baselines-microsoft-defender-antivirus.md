@@ -16,13 +16,13 @@ ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.date: 06/08/2021
-ms.openlocfilehash: ccbb57d781196e352e0fed456a1f7cb43eb17300
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.date: 06/09/2021
+ms.openlocfilehash: 05b2b2af87e423058d18651571d52a97ac387506
+ms.sourcegitcommit: 3584c1fe59d12512d67faf3efc955e1d67e2baa0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822274"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52862147"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Verwalten Microsoft Defender Antivirus Updates und Anwenden von Basisplänen
 
@@ -86,7 +86,7 @@ Alle unsere Updates enthalten
 <summary> Mai-2021 (Plattform: 4.18.2105.4 | Modul: 1.1.18200.4)</summary>
 
 &ensp;Security Intelligence Update-Version: **1.341.8.0**  
-&ensp;Veröffentlicht: **4. Juni 2021**  
+&ensp;Veröffentlicht: **3. Juni 2021**  
 &ensp;Plattform: **4.18.2105.4**  
 &ensp;Modul: **1.1.18200.4**  
 &ensp;Supportphase: **Sicherheits- und kritische Updates**
@@ -99,18 +99,16 @@ Alle unsere Updates enthalten
 Keine bekannten Probleme  
 <br/>
 </details><details>
-<summary> April -2021 (Plattform: 4.18.2104.14 | Modul: 1.1.18100.5)</summary>
+<summary> April-2021 (Plattform: 4.18.2104.14 | Modul: 1.1.18100.5)</summary>
 
 &ensp;Security Intelligence Update Version: **1.337.2.0**  
-&ensp;Veröffentlicht: **1. April 2021**  
-&ensp;Plattform: **4.18.2104.14**  
+&ensp;Veröffentlicht: **26. April 2021**  (Modul: 1.1.18100.6 veröffentlicht am 5. Mai 2021) &ensp; Plattform: **4.18.2104.14**  
 &ensp;Modul: **1.1.18100.5**  
 &ensp;Supportphase: **Sicherheits- und kritische Updates**
     
 ### <a name="whats-new"></a>Neuerungen
 - Zusätzliche Verhaltensüberwachungslogik
 - Verbesserte Kernelmodus-Keyloggererkennung
-- Neue Steuerelemente zum Verwalten des schrittweisen Rollouts für [Microsoft Defender-Updates hinzugefügt](updates.md)
 
 ### <a name="known-issues"></a>Bekannte Probleme
 Keine bekannten Probleme  
@@ -119,7 +117,7 @@ Keine bekannten Probleme
 <summary> März-2021 (Plattform: 4.18.2103.7 | Modul: 1.1.18000.5)</summary>
 
 &ensp;Version des Security Intelligence-Updates: **1.335.36.0**  
-&ensp;Veröffentlicht: **1. April 2021**  
+&ensp;Veröffentlicht: **2. April 2021**  
 &ensp;Plattform: **4.18.2103.7**  
 &ensp;Modul: **1.1.18000.5**  
 &ensp;Supportphase: **Sicherheits- und kritische Updates**
@@ -253,7 +251,7 @@ Keine bekannten Probleme
 - Verbesserte Telemetrie für Scanereignisse
 - Verbesserte Verhaltensüberwachung für Speicherscans
 - Verbessertes Scannen von Makrodatenströmen
-- `AMRunningMode`Hinzugefügt zu Get-MpComputerStatus PowerShell-Cmdlet
+- `AMRunningMode`Zu Get-MpComputerStatus PowerShell-Cmdlet hinzugefügt
 - [DisableAntiSpyware](/windows-hardware/customize/desktop/unattend/security-malware-windows-defender-disableantispyware) wird ignoriert. Microsoft Defender Antivirus schaltet sich automatisch aus, wenn ein anderes Antivirenprogramm erkannt wird.
 
 
@@ -328,7 +326,7 @@ Keine bekannten Probleme
 </details>
 
 <details>
-<summary> April-2020 (Plattform: 4.18.2004.6 | Modul: 1.1.17000.2)</summary>
+<summary> April -2020 (Plattform: 4.18.2004.6 | Modul: 1.1.17000.2)</summary>
 
 &ensp;Security Intelligence Update-Version: **1.315.12.0**  
 &ensp;Veröffentlicht: **30. April 2020**  
@@ -404,7 +402,7 @@ Modul: **1.1.16700.2**
      
 ### <a name="whats-new"></a>Neuerungen
 
-- BSOD auf WS2016 mit Exchange behoben
+- BSOD in WS2016 mit Exchange behoben
 - Unterstützen von Plattformupdates, wenn TMP an den Netzwerkpfad umgeleitet wird
 - Plattform- und Modulversionen werden [zu WDSI](https://www.microsoft.com/en-us/wdsi/defenderupdates) hinzugefügt <!-- The preceding URL must include "/en-us" -->
 - Erweitern des Notfallsignaturupdates auf [den passiven Modus](./microsoft-defender-antivirus-compatibility.md)
@@ -477,7 +475,7 @@ Informationen zu Windows 10 Version finden Sie im [Windows-Lifecycle-Information
 
 Es wird empfohlen, ihre Windows 10 (Enterprise-, Pro- und Home-Editionen), Windows Server 2019 und Windows Server 2016 Betriebssysteminstallationsimages mit den neuesten Antiviren- und Antischadsoftwareupdates zu aktualisieren. Wenn Sie Ihre Betriebssysteminstallationsimages auf dem neuesten Stand halten, vermeiden Sie eine Lücke beim Schutz. 
 
-Weitere Informationen finden Sie unter [Microsoft Defender Update für Windows Installationsimages](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)des Betriebssystems.
+Weitere Informationen finden Sie unter [Microsoft Defender Update für Windows Betriebssysteminstallationsimages.](https://support.microsoft.com/help/4568292/defender-update-for-windows-operating-system-installation-images)
 
 <details>
 <summary>1.1.2106.01</summary>

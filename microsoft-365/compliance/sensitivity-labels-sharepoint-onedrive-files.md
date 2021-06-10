@@ -17,20 +17,20 @@ search.appverid:
 - MOE150
 - MET150
 description: Administratoren können die Unterstützung von Vertraulichkeitsbezeichnungen für Word-, Excel- und PowerPoint dateien in SharePoint und OneDrive aktivieren.
-ms.openlocfilehash: 695084443ee10de87f091d358b63fad079e03093
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: d4c0f9b4c280394dd63820320ba7ca30e349c361
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861515"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878040"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Aktivieren von Vertraulichkeitsbezeichnungen für Office-Dateien in SharePoint und OneDrive
 
 >*[Microsoft 365-Lizenzierungsleitfaden für Sicherheit und Compliance](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
-Aktivieren Sie Vertraulichkeitsbezeichnungen für Office Dateien in SharePoint und OneDrive, damit Benutzer Ihre [Vertraulichkeitsbezeichnungen](sensitivity-labels.md) in Office für das Web anwenden können. Wenn dieses Feature aktiviert ist, wird benutzern die Schaltfläche **"Vertraulichkeit"** auf dem Menüband angezeigt, sodass sie Bezeichnungen anwenden können, und alle angewendeten Bezeichnungsnamen werden auf der Statusleiste angezeigt.
+Aktivieren Sie integrierte Bezeichnungen für [unterstützte Office-Dateien](sensitivity-labels-office-apps.md#office-file-types-supported) in SharePoint und OneDrive, damit Benutzer Ihre [Vertraulichkeitsbezeichnungen](sensitivity-labels.md) in Office für das Web anwenden können. Wenn dieses Feature aktiviert ist, wird benutzern die Schaltfläche **"Vertraulichkeit"** auf dem Menüband angezeigt, sodass sie Bezeichnungen anwenden können, und alle angewendeten Bezeichnungsnamen werden auf der Statusleiste angezeigt.
 
-Das Aktivieren dieses Features führt auch dazu, dass SharePoint und OneDrive den Inhalt von Dateien verarbeiten können, die mithilfe einer Vertraulichkeitsbezeichnung verschlüsselt wurden. Die Bezeichnung kann in Office für das Web oder in Office Desktop-Apps angewendet und in SharePoint und OneDrive hochgeladen oder gespeichert werden. Bis Sie dieses Feature aktivieren, können diese Dienste verschlüsselte Dateien nicht verarbeiten, was bedeutet, dass die gemeinsame Dokumenterstellung, eDiscovery, Verhinderung von Datenverlust, Suche und andere Features für die Zusammenarbeit für diese Dateien nicht funktionieren.
+Das Aktivieren dieses Features führt auch dazu, dass SharePoint und OneDrive den Inhalt Office Dateien verarbeiten können, die mithilfe einer Vertraulichkeitsbezeichnung verschlüsselt wurden. Die Bezeichnung kann in Office für das Web oder in Office Desktop-Apps angewendet und in SharePoint und OneDrive hochgeladen oder gespeichert werden. Bis Sie dieses Feature aktivieren, können diese Dienste verschlüsselte Dateien nicht verarbeiten, was bedeutet, dass die gemeinsame Dokumenterstellung, eDiscovery, Verhinderung von Datenverlust, Suche und andere Features für die Zusammenarbeit für diese Dateien nicht funktionieren.
 
 Nachdem Sie Vertraulichkeitsbezeichnungen für Office Dateien in SharePoint und OneDrive aktiviert haben, für neue und geänderte Dateien mit einer Vertraulichkeitsbezeichnung, die Verschlüsselung mit einem cloudbasierten Schlüssel anwendet (und keine [Doppelschlüsselverschlüsselung](double-key-encryption.md)verwendet):
 
@@ -120,7 +120,7 @@ Verwenden Sie die OneDrive Synchronisierungs-App Version 19.002.0121.0008 oder h
 
 ## <a name="how-to-enable-sensitivity-labels-for-sharepoint-and-onedrive-opt-in"></a>Aktivieren von Vertraulichkeitsbezeichnungen für SharePoint und OneDrive (Opt-In)
 
-Sie können die neuen Funktionen mithilfe des Microsoft 365 Compliance Centers oder mithilfe von PowerShell aktivieren. Wie bei allen Konfigurationsänderungen auf Mandantenebene für SharePoint und OneDrive dauert es etwa 15 Minuten, bis die Änderung wirksam wird.
+Sie können die neuen Funktionen über das Microsoft 365 Compliance Center oder mithilfe von PowerShell aktivieren. Wie bei allen Konfigurationsänderungen auf Mandantenebene für SharePoint und OneDrive dauert es etwa 15 Minuten, bis die Änderung wirksam wird.
 
 ### <a name="use-the-compliance-center-to-enable-support-for-sensitivity-labels"></a>Verwenden des Compliance Centers zum Aktivieren der Unterstützung für Vertraulichkeitsbezeichnungen
 

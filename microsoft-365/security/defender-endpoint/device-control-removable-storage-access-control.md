@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fba74990d8e4465f957acda83e66e1dc43a317e8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cf8e74a6886d7086da062d6258e3e1e1a1cbd730
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841186"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861719"
 ---
 # <a name="microsoft-defender-for-endpoint-device-control-removable-storage-access-control"></a>Microsoft Defender für Endpunkt-Gerätesteuerung – Wechselmedien Storage Zugriffssteuerung
 
@@ -42,13 +42,17 @@ Microsoft Defender für Endpunkt-Gerätesteuerung – Wechselmedien Storage Zugr
 ## <a name="prepare-your-endpoints"></a>Vorbereiten der Endpunkte
 
 Bereitstellen von Wechseldatenträgern Storage Zugriffssteuerung auf Windows 10 Geräten mit Der Clientversion **4.18.2103.3 oder höher** für Antischadsoftware.
-1. **4.18.2104 oder höher:** Hinzufügen von SerialNumberId, VID_PID, Dateipfad-basierter GPO-Unterstützung
+1. **4.18.2104 oder höher:** Hinzufügen von SerialNumberId, VID_PID, dateipfadbasierter GPO-Unterstützung, ComputerSid
 
 2. **4.18.2105 oder höher:** Hinzufügen von Platzhalterunterstützung für HardwareId/DeviceId/InstancePathId/FriendlyNameId/SerialNumberId, die Kombination aus einem bestimmten Benutzer auf einem bestimmten Computer, entfernender SSD (sanDisk Extreme SSD)/USB Attached SCSI (UAS)-Unterstützung
 
 :::image type="content" source="images/powershell.png" alt-text="Die PowerShell-Schnittstelle":::
 
+   > [!NOTE]
+   > Keine der Windows-Sicherheit Komponenten aktiv sein muss, können Sie wechselbare Storage Zugriffssteuerung unabhängig von Windows-Sicherheit Status ausführen.
+
 ## <a name="policy-properties"></a>Richtlinieneigenschaften
+
 
 Sie können die folgenden Eigenschaften verwenden, um eine Wechselmediengruppe zu erstellen:
 
@@ -87,6 +91,8 @@ Weitere Informationen zu jeder Geräteeigenschaft finden Sie weiter oben im Absc
 
     - MatchAny: Die Attribute unter "DescriptorIdList" sind **"Or".** Wenn der Administrator beispielsweise DeviceID und InstancePathID platziert, führt das System für jeden angeschlossenen USB-Stick die Erzwingung aus, solange der USB-Stick entweder über einen identischen **DeviceID-** oder **InstanceID-Wert** verfügt.
 
+
+
 Es folgen die Eigenschaften der Zugriffssteuerungsrichtlinie:
 
 **Eigenschaftenname: PolicyRuleId**
@@ -124,6 +130,14 @@ Das folgende Beispiel zeigt die Verwendung von GroupID:
     - AuditDenied: Definiert Benachrichtigung und Ereignis, wenn der Zugriff verweigert wird; muss mit **der Verweigerungseingabe zusammenarbeiten.**
 
 Wenn es Konflikttypen für dieselben Medien gibt, wendet das System den ersten in der Richtlinie an. Ein Beispiel für einen Konflikttyp ist **Allow** and **Deny**.
+
+**Eigenschaftenname: Sid**
+
+1. Beschreibung: Definiert, ob diese Richtlinie auf bestimmte Benutzer oder Benutzergruppen angewendet wird; Ein Eintrag kann maximal eine Sid haben, und ein Eintrag ohne Sid bedeutet, dass die Richtlinie auf dem Computer angewendet wird.
+
+**Eigenschaftenname: ComputerSid**
+
+1. Beschreibung: Definiert, ob diese Richtlinie auf bestimmte Computer oder Computergruppen angewendet wird; Ein Eintrag kann maximal eine ComputerSid haben, und ein Eintrag ohne ComputerSid bedeutet, dass die Richtlinie auf dem Computer angewendet wird. Wenn Sie einen Eintrag auf einen bestimmten Benutzer und einen bestimmten Computer anwenden möchten, fügen Sie sid und computerSid demselben Eintrag hinzu.
 
 **Eigenschaftenname: Optionen**
 
@@ -188,7 +202,7 @@ Um Sie mit Microsoft Defender für Endpunkt-Wechselmedien Storage Zugriffssteuer
 2. Richtlinie erstellen
     1. Richtlinie 1: Schreib- und Ausführungszugriff auf alle nicht genehmigten USBs blockieren. Ein Beispiel für diesen Anwendungsfall ist: PolicyRule **23b8e437-66ac-4b32-b3d7-24044637fc98** im [Beispielszenario 2 Audit Write and Execute access to all but block specific unapproved USBs.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
     
-    2. Richtlinie 2: Überwachen des Schreib- und Ausführungszugriffs auf andere Personen. Ein Beispiel für diesen Anwendungsfall ist: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** im [Beispielszenario 2 Audit Write and Execute access to others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
+    2. Richtlinie 2: Überwachen des Schreib- und Ausführungszugriffs auf andere Personen. Ein Beispiel für diesen Anwendungsfall ist: PolicyRule **b58ab853-9a6f-405c-a194-740e69422b48** in the sample [Scenario 2 Audit Write and Execute access to others.xml](https://github.com/microsoft/mdatp-devicecontrol/tree/main/Removable%20Storage%20Access%20Control%20Samples) file.
 
 ## <a name="deploying-and-managing-policy-via-group-policy"></a>Bereitstellen und Verwalten von Richtlinien über Gruppenrichtlinien
 
@@ -196,7 +210,7 @@ Mit dem Feature "Wechselbare Storage Zugriffssteuerung" können Sie Richtlinien 
 
 ### <a name="licensing"></a>Lizenzierung
 
-Bevor Sie mit wechselbaren Storage Zugriffssteuerung beginnen, müssen Sie Ihr [Microsoft 365 Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)bestätigen. Um auf wechselbare Storage Zugriffssteuerung zuzugreifen und sie zu verwenden, benötigen Sie Microsoft 365 E3 oder Microsoft 365 E5.
+Bevor Sie mit wechselbaren Storage Zugriffssteuerung beginnen, müssen Sie Ihr [Microsoft 365 Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)bestätigen. Um auf wechselbare Storage Zugriffssteuerung zuzugreifen und sie zu verwenden, müssen Sie über Microsoft 365 E3 oder Microsoft 365 E5 verfügen.
 
 ### <a name="deploying-policy-via-group-policy"></a>Bereitstellen von Richtlinien über Gruppenrichtlinien
 
@@ -226,7 +240,7 @@ Mit dem Feature "Wechselbare Storage Zugriffssteuerung" können Sie Richtlinien 
 
 ### <a name="licensing"></a>Lizenzierung
 
-Bevor Sie mit wechselbaren Storage Zugriffssteuerung beginnen, müssen Sie Ihr [Microsoft 365 Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)bestätigen. Um auf wechselbare Storage Zugriffssteuerung zuzugreifen und sie zu verwenden, benötigen Sie Microsoft 365 E3 oder Microsoft 365 E5.
+Bevor Sie mit wechselbaren Storage Zugriffssteuerung beginnen, müssen Sie Ihr [Microsoft 365 Abonnement](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=2)bestätigen. Um auf wechselbare Storage Zugriffssteuerung zuzugreifen und sie zu verwenden, müssen Sie über Microsoft 365 E3 oder Microsoft 365 E5 verfügen.
 
 ### <a name="permission"></a>Berechtigung
 
@@ -269,7 +283,7 @@ Für die Richtlinienbereitstellung in Intune muss das Konto über Berechtigungen
 
 ## <a name="deploying-and-managing-policy-by-using-intune-user-interface"></a>Bereitstellen und Verwalten von Richtlinien mithilfe der Intune-Benutzeroberfläche
 
-Diese Funktion (in Microsoft Endpoint Manager Admin Center ( https://endpoint.microsoft.com/) > Devices > Configuration profiles > Create profile > Platform: Windows 10 and later & Profile: Device Control) ist noch nicht verfügbar. 
+Diese Funktion (in Microsoft Endpoint Manager Admin Center ( https://endpoint.microsoft.com/) > Geräte > Konfigurationsprofile > Profil > Plattform erstellen: Windows 10 und höher & Profil: Gerätesteuerung) ist noch nicht verfügbar. 
 
 ## <a name="view-device-control-removable-storage-access-control-data-in-microsoft-defender-for-endpoint"></a>Anzeigen von Wechseldaten von Gerätesteuerungen Storage Zugriffssteuerungsdaten in Microsoft Defender für Endpunkt
 

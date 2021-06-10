@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Überwachen und verwalten Sie die Entsorgung von Inhalten, wenn Sie eine Löschungsprüfung verwenden, oder wenn als Datensätze markierte Elemente gemäß den von Ihnen konfigurierten Einstellungen automatisch gelöscht werden.
-ms.openlocfilehash: 99ab789b99385af9ad2677995606d21ece54705c
-ms.sourcegitcommit: b0d3abbccf4dd37e32d69664d3ebc9ab8dea760d
+ms.openlocfilehash: 577cf25ffc8735be19434496bd16202a8e383761
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "52594073"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878124"
 ---
 # <a name="disposition-of-content"></a>Disposition von Inhalten
 
@@ -38,7 +38,7 @@ Verwenden Sie die Seite **Löschung** aus der **Datensatzverwaltung** im Microso
 
 ## <a name="prerequisites-for-viewing-content-dispositions"></a>Voraussetzungen für die Anzeige von Inhaltsdispositionen
 
-Zum Verwalten von Löschungsprüfungen und zum bestätigen, dass Datensätze gelöscht wurden, müssen Sie über ausreichende Berechtigungen verfügen, und die Überwachung muss aktiviert sein.
+Zum Verwalten von Löschungsprüfungen und zum bestätigen, dass Datensätze gelöscht wurden, müssen Sie über ausreichende Berechtigungen verfügen, und die Überwachung muss aktiviert sein. Beachten Sie außerdem etwaige [Einschränkungen](retention-limits.md#maximum-number-of-items-for-disposition)für Anordnungen.
 
 ### <a name="permissions-for-disposition"></a>Berechtigungen für Dispositionen
 
@@ -215,8 +215,6 @@ Verwenden Sie die Registerkarte **Löschung** von der Seite **Datensatzverwaltun
 Diese Elemente zeigen **Verworfene Datensätze** in der Spalte **Typ** an. Beispiel:
 
 ![Elemente, die ohne eine Löschungsprüfung verworfen wurden](../media/records-disposed2.png)
-
-Elemente, die in der Registerkarte **Verworfene Elemente** angezeigt werden, werden bis zu sieben Jahre nach der Verwerfung des Elements gespeichert, und es wird ein Limit von 1 Million Elementen pro Datensatz für diesen Zeitraum angezeigt. Wenn sich die **Anzahl** dem Limit von 1 Million nähert und Sie einen Dispositionsnachweis benötigen, wenden Sie sich an [Microsoft-Support](../business-video/get-help-support.md).
 
 > [!NOTE]
 > Diese Funktionalität verwendet Informationen aus dem [einheitlichen Überwachungsprotokoll](search-the-audit-log-in-security-and-compliance.md) und erfordert daher, dass die Überwachung [aktiviert und durchsuchbar ist](turn-audit-log-search-on-or-off.md) damit die entsprechenden Ereignisse erfasst werden.

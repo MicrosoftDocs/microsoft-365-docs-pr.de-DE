@@ -280,8 +280,6 @@
 #### [Herunterladen von Updates für Antivirensoftware und Antimalware](manage-updates-baselines-microsoft-defender-antivirus.md)
 ##### [Verwalten der Quellen für Updates für Microsoft Defender Antivirus-Schutz](manage-protection-updates-microsoft-defender-antivirus.md)
 ##### [Verwalten des Zeitplans für Download und Anwendung von Schutzupdates](manage-protection-update-schedule-microsoft-defender-antivirus.md)
-#####  [Verwalten des schrittweisen Rollouts von Microsoft Defender-Updates](updates.md)
-#####  [Konfigurieren des schrittweisen Rollouts von Microsoft Defender-Updates](configure-updates.md)
 ##### [Verwalten von Updates und Scans von Microsoft Defender Antivirus für veraltete Endpunkte](manage-outdated-endpoints-microsoft-defender-antivirus.md)
 ##### [Verwalten von ereignisbasierten erzwungenen Updates](manage-event-based-updates-microsoft-defender-antivirus.md)
 ##### [Verwalten von Updates für Mobilgeräte und virtuelle Computer (VMs)](manage-updates-mobile-devices-vms-microsoft-defender-antivirus.md)
@@ -513,8 +511,9 @@
 
 ###### [Indikatoren]()
 ####### [Methoden und Eigenschaften von Indikatoren](ti-indicator.md)
-####### [Indikator für "Absenden"](post-ti-indicator.md)
 ####### [Indikatoren auflisten](get-ti-indicators-collection.md)
+####### [Indikator einreichen](post-ti-indicator.md)
+####### [Indikator importieren](import-ti-indicators.md)
 ####### [Indikator löschen](delete-ti-indicator-by-id.md)
 
 ###### [IP]()

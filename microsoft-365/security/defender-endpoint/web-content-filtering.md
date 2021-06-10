@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a16e3eb8f6f7eae9fbaa82c9fd978f4fef429818
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: c7b39b600af2fed130a0b78a590740a8bc063f50
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822322"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861695"
 ---
 # <a name="web-content-filtering"></a>Internet-Inhaltsfilterung
 
@@ -43,7 +43,7 @@ Die Webinhaltsfilterung ist Teil der [Webschutzfunktionen](web-protection-overvi
 
 Konfigurieren Sie Richtlinien für Alle Gerätegruppen, um bestimmte Kategorien zu blockieren. Durch das Blockieren einer Kategorie wird verhindert, dass Benutzer innerhalb der angegebenen Gerätegruppen auf URLs zugreifen, die der Kategorie zugeordnet sind. Für jede Kategorie, die nicht blockiert ist, werden die URLs automatisch überwacht. Ihre Benutzer können ohne Unterbrechung auf die URLs zugreifen, und Sie erfassen Zugriffsstatistiken, um eine benutzerdefinierte Richtlinienentscheidung zu erstellen. Ihren Benutzern wird eine Blockierungsbenachrichtigung angezeigt, wenn ein Element auf der angezeigten Seite Aufrufe an eine blockierte Ressource durchführt.
 
-Die Webinhaltsfilterung ist in den wichtigsten Webbrowsern mit Blöcken verfügbar, die von Windows Defender SmartScreen (Microsoft Edge) und Netzwerkschutz (Chrome, Firefox, Opera und Opera) ausgeführt werden. Weitere Informationen zur Browserunterstützung finden Sie im Abschnitt "Voraussetzungen".
+Web content filtering is available on the major web browsers, with blocks performed by Windows Defender SmartScreen (Microsoft Edge) and Network Protection (Chrome, Firefox, Barre and Opera). Weitere Informationen zur Browserunterstützung finden Sie im Abschnitt "Voraussetzungen".
 
 Zusammenfassung der Vorteile:
 
@@ -61,7 +61,9 @@ Bevor Sie dieses Feature ausprobieren, stellen Sie sicher, dass Sie die folgende
 
 - Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Microsoft 365 E5 Security Add-On oder die eigenständige Microsoft Defender für Endpunkt-Lizenz. 
 - Zugriff auf Microsoft Defender Security Center Portal ( https://securitycenter.windows.com) .
-- Geräte, auf denen Windows 10 Anniversary Update (Version 1607) oder höher mit dem neuesten Update des Microsoft Defender-Antischadsoftwaremoduls ausgeführt wird.
+- Geräte mit Windows 10 Anniversary Update (Version 1607) oder höher mit dem neuesten MoCAMP-Update.
+- Windows Defender SmartScreen und Netzwerkschutz aktiviert.
+
 
 ## <a name="data-handling"></a>Datenverarbeitung
 
@@ -73,7 +75,7 @@ Wählen Sie im linken Navigationsmenü **Einstellungen**  >  **Allgemeine**  >  
 
 ### <a name="configure-web-content-filtering-policies"></a>Konfigurieren von Richtlinien für die Webinhaltsfilterung
 
-Web content filtering policies specify which site categories are blocked on which device groups. Um die Richtlinien zu verwalten, wechseln Sie zu **Einstellungen**  >    >  **Webinhaltsfilterung** für Regeln.
+Web content filtering policies specify which site categories are blocked on which device groups. Wechseln Sie zum Verwalten der Richtlinien zu **Einstellungen**  >    >  **Webinhaltsfilterung** für Regeln.
 
 Verwenden Sie den Filter, um Nachschlagerichtlinien zu suchen, die bestimmte blockierte Kategorien enthalten oder auf bestimmte Gerätegruppen angewendet werden.
 
@@ -162,4 +164,11 @@ Verwenden Sie den Zeitbereichsfilter oben links auf der Seite, um einen Zeitraum
 
 - Web content filtering reports are currently limited to showing the top 5000 records. Der Domänenbericht zeigt beispielsweise nur maximal 5000 Domänen für eine bestimmte Filterabfrage an, sofern zutreffend. 
 
+
+
+- [Übersicht über Internetschutz](web-protection-overview.md)
+- [Internet-Bedrohungsschutz](web-threat-protection.md)
+- [Überwachen der Websicherheit](web-protection-monitoring.md)
+- [Reagieren auf Internetbedrohungen](web-protection-response.md)
+- [Anforderungen für den Netzwerkschutz](web-content-filtering.md)
 
