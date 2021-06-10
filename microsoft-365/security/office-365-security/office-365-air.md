@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c3a86436706b350557e9a39f81c1ef6430ac88ff
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: c761b4896ea5b616aed80ed2c54ef91fc465b201
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793160"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877884"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Automatisierte Untersuchung und Reaktion (AIR) in Microsoft Defender für Office 365
 
@@ -46,7 +46,7 @@ Inhalt dieses Artikels
 - Der [allgemeine Fluss von AIR;](#the-overall-flow-of-air)
 - [So erhalten Sie AIR](#how-to-get-air); Und
 - Die [erforderlichen Berechtigungen](#required-permissions-to-use-air-capabilities) zum Konfigurieren oder Verwenden von AIR-Funktionen.
-- Änderungen, die in Kürze in Ihrem Sicherheitscenter verfügbar sind
+- Änderungen, die in Kürze an Ihrem Microsoft 365 Defender-Portal vorgenommen werden
 
 Dieser Artikel enthält auch [die nächsten Schritte](#next-steps)und Ressourcen, um mehr zu erfahren.
 
@@ -62,7 +62,7 @@ Eine Warnung wird ausgelöst, und ein Sicherheits-Playbook startet eine automati
 4. Ihr Sicherheitsteam überprüft die [Untersuchungsergebnisse und Empfehlungen](air-view-investigation-results.md)und [genehmigt oder lehnt Abhilfemaßnahmen ab.](air-review-approve-pending-completed-actions.md)
 5. Sobald ausstehende Abhilfemaßnahmen genehmigt (oder abgelehnt) werden, wird die automatisierte Untersuchung abgeschlossen.
 
-In Microsoft Defender für Office 365 werden keine Korrekturmaßnahmen automatisch ausgeführt. Abhilfemaßnahmen werden nur nach Genehmigung durch das Sicherheitsteam Ihrer Organisation ausgeführt. AIR-Funktionen sparen Ihrem Sicherheitsteam Zeit, indem Sie Abhilfemaßnahmen identifizieren und die details bereitstellen, die für eine fundierte Entscheidung erforderlich sind.
+In Microsoft Defender für Office 365 werden keine Automatischen Abhilfemaßnahmen ausgeführt. Abhilfemaßnahmen werden nur nach Genehmigung durch das Sicherheitsteam Ihrer Organisation ausgeführt. AIR-Funktionen sparen Ihrem Sicherheitsteam Zeit, indem Sie Abhilfemaßnahmen identifizieren und die details bereitstellen, die für eine fundierte Entscheidung erforderlich sind.
 
 Während und nach jeder automatisierten Untersuchung kann Ihr Sicherheitsteam:
 
@@ -89,7 +89,11 @@ AIR-Funktionen sind in [Microsoft Defender für Office 365](defender-for-office-
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>Welche Warnungsrichtlinien lösen automatisierte Untersuchungen aus?
 
-Microsoft 365 bietet viele integrierte Warnungsrichtlinien, die dazu beitragen, Exchange Missbrauch von Administratorberechtigungen, Schadsoftwareaktivitäten, potenzielle externe und interne Bedrohungen und Informationsgovernance-Risiken zu identifizieren. Mehrere der [Standardwarnungsrichtlinien](../../compliance/alert-policies.md#default-alert-policies) können automatisierte Untersuchungen auslösen. In der folgenden Tabelle werden die Warnungen beschrieben, die automatisierte Untersuchungen auslösen, deren Schweregrad im Microsoft 365 Security Center und ihre Generierung:
+Microsoft 365 bietet viele integrierte Warnungsrichtlinien, die dazu beitragen, Exchange Missbrauch von Administratorberechtigungen, Schadsoftwareaktivitäten, potenzielle externe und interne Bedrohungen und Informationsgovernance-Risiken zu identifizieren. Mehrere der [Standardwarnungsrichtlinien](../../compliance/alert-policies.md#default-alert-policies) können automatisierte Untersuchungen auslösen. In der folgenden Tabelle werden die Warnungen beschrieben, die automatisierte Untersuchungen auslösen, deren Schweregrad im Microsoft 365 Defender-Portal und ihre Generierung:
+
+<br>
+
+****
 
 |Warnung|Severity|Generieren der Warnung|
 |---|---|---|
@@ -102,16 +106,21 @@ Microsoft 365 bietet viele integrierte Warnungsrichtlinien, die dazu beitragen, 
 |
 
 > [!TIP]
-> Weitere Informationen zu Warnungsrichtlinien oder zum Bearbeiten der Standardeinstellungen finden Sie [unter "Warnungsrichtlinien" im Microsoft 365 Compliance Center.](../../compliance/alert-policies.md)
+> Weitere Informationen zu Warnungsrichtlinien oder zum Bearbeiten der Standardeinstellungen finden Sie [unter Warnungsrichtlinien im Microsoft 365 Compliance Center.](../../compliance/alert-policies.md)
 
 ## <a name="required-permissions-to-use-air-capabilities"></a>Erforderliche Berechtigungen für die Verwendung von AIR-Funktionen
 
 Berechtigungen werden über bestimmte Rollen erteilt, z. B. über die in der folgenden Tabelle beschriebenen Rollen:
 
+<br>
+
+****
+
 |Aufgabe|Rolle(n) erforderlich|
 |---|---|
 |Einrichten von AIR-Features|Eine der folgenden Rollen: <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li></ul> <p> Diese Rollen können in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)zugewiesen werden.|
 |Beginnen einer automatische Untersuchung <p> --- oder --- <p> Genehmigen oder Ablehnen empfohlener Aktionen|Eine der folgenden Rollen, die in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) oder im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)zugewiesen ist: <ul><li>Globaler Administrator</li><li>Sicherheitsadministrator</li><li>Sicherheitsoperator</li><li>Sicherheitsleseberechtigter <br> --- und --- </li><li>Suchen und Löschen (diese Rolle wird nur im [Security & Compliance Center](permissions-in-the-security-and-compliance-center.md)zugewiesen. Möglicherweise müssen Sie dort eine neue Rollengruppe erstellen und der neuen Rollengruppe die Rolle "Suchen und Löschen" hinzufügen.</li></ul>|
+|
 
 ## <a name="required-licenses"></a>Erforderliche Lizenzen
 
@@ -121,16 +130,16 @@ Berechtigungen werden über bestimmte Rollen erteilt, z. B. über die in der fol
 - Sicherheitsteam Ihrer Organisation (einschließlich Sicherheitsleser und Personen mit der Rolle **"Suchen und Löschen")**
 - Endbenutzer
 
-## <a name="changes-are-coming-soon-in-your-security-center"></a>Änderungen werden in Kürze in Ihrem Security Center verfügbar sein.
+## <a name="changes-are-coming-soon-in-your-microsoft-365-defender-portal"></a>Änderungen werden in Kürze in Ihrem Microsoft 365 Defender-Portal veröffentlicht.
 
-Wenn Sie bereits AIR-Funktionen in Microsoft Defender für Office 365 verwenden, werden Einige Änderungen im [verbesserten Microsoft 365 Security Center angezeigt.](../defender/overview-security-center.md)
+Wenn Sie bereits AIR-Funktionen in Microsoft Defender für Office 365 verwenden, werden einige Änderungen im [verbesserten Microsoft 365 Defender-Portal angezeigt.](../defender/overview-security-center.md)
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Einheitliches Info-Center":::
 
-Das neue und verbesserte Sicherheitscenter vereint AIR-Funktionen in [Microsoft Defender für Office 365](defender-for-office-365.md) und in Microsoft Defender für [Endpunkt.](../defender-endpoint/automated-investigations.md) Dank dieser Updates und Verbesserungen kann Ihr Sicherheitsteam Details zu automatisierten Untersuchungen und Abhilfemaßnahmen für Ihre E-Mails, von mehreren Personen gemeinsam erstellte/genutzte Inhalte, Benutzerkonten und Geräte an einem Ort anzeigen.
+Das neue und verbesserte Microsoft 365 Defender-Portal vereint AIR-Funktionen in [Microsoft Defender für Office 365](defender-for-office-365.md) und in Microsoft Defender für [Endpunkt.](../defender-endpoint/automated-investigations.md) Dank dieser Updates und Verbesserungen kann Ihr Sicherheitsteam Details zu automatisierten Untersuchungen und Abhilfemaßnahmen für Ihre E-Mails, von mehreren Personen gemeinsam erstellte/genutzte Inhalte, Benutzerkonten und Geräte an einem Ort anzeigen.
 
 > [!TIP]
-> Das neue Microsoft 365 Security Center ( <https://security.microsoft.com> ) ersetzt die folgenden Center:
+> Das neue Microsoft 365 Microsoft 365 Defender-Portal ( <https://security.microsoft.com> ) ersetzt die folgenden Center:
 >
 > - Office 365 Security & Compliance Center ( <https://protection.office.com> )
 > - Microsoft Defender Security Center ( <https://securitycenter.windows.com> )
@@ -140,6 +149,10 @@ Das neue und verbesserte Sicherheitscenter vereint AIR-Funktionen in [Microsoft 
 ### <a name="what-to-expect"></a>Das erwartet Sie
 
 In der folgenden Tabelle sind Änderungen und Verbesserungen aufgeführt, die AIR in Microsoft Defender für Office 365.
+
+<br>
+
+****
 
 |Element|Was ändert sich?|
 |---|---|

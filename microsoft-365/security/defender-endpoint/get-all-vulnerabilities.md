@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4be87e296739020c80babb864c57bc803f10d3e0
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 6def1b64430ad70dc4b4898ba2b914288826873e
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843686"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861491"
 ---
 # <a name="list-vulnerabilities"></a>Sicherheitsrisiken auflisten
 
@@ -39,7 +39,7 @@ ms.locfileid: "52843686"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-Ruft eine Liste aller Sicherheitsrisiken ab, die sich auf die Organisation auswirken.
+Ruft eine Liste aller Sicherheitsrisiken ab.
 
 ## <a name="permissions"></a>Berechtigungen
 Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Verwenden von Microsoft Defender für Endpunkt-APIs.](apis-intro.md)
@@ -58,7 +58,7 @@ GET /api/vulnerabilities
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | String | Bearer {token}. **Erforderlich**.
+Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
 
 
 ## <a name="request-body"></a>Anforderungstext

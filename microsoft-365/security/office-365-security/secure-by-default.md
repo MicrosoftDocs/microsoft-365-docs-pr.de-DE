@@ -1,5 +1,5 @@
 ---
-title: Standardmäßig sicher in Office 365
+title: Standardmäßige Sicherheit in Office 365
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -14,17 +14,17 @@ search.appverid:
 - MOE150
 ms.collection:
 - M365-security-compliance
-description: Erfahren Sie mehr über die Standardmäßige Sicherheitseinstellung in Exchange Online Protection (EOP)
+description: Weitere Informationen zur Standardmäßigen Einstellung "Sicher" in Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2d5cdc8f8faa9c2d5772fd1572134ea49cdd77da
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f197556426171b867b49781b38ea5f5116f80aa2
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624049"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861527"
 ---
-# <a name="secure-by-default-in-office-365"></a>Standardmäßig sicher in Office 365
+# <a name="secure-by-default-in-office-365"></a>Standardmäßige Sicherheit in Office 365
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
@@ -34,54 +34,54 @@ ms.locfileid: "52624049"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-"Standardmäßig sicher" ist ein Begriff, der verwendet wird, um die Standardeinstellungen zu definieren, die möglichst sicher sind.
+"Standardmäßig sicher" ist ein Begriff, der verwendet wird, um die Standardeinstellungen zu definieren, die so sicher wie möglich sind.
 
-Sicherheit muss jedoch mit Produktivität abgewogen werden. Dies kann einen Abgleich zwischen folgenden Übergreifend umfassen:
+Die Sicherheit muss jedoch mit der Produktivität ausgeglichen werden. Dies kann einen Ausgleich über Folgendes umfassen:
 
-- **Benutzerfreundlichkeit**: Einstellungen benutzerproduktivität sollte nicht in Frage kommen.
-- **Risiko**: Sicherheit kann wichtige Aktivitäten blockieren.
+- **Benutzerfreundlichkeit:** Einstellungen sollte der Produktivität der Benutzer nicht im Wege kommen.
+- **Risiko:** Die Sicherheit kann wichtige Aktivitäten blockieren.
 - **Legacyeinstellungen:** Einige Konfigurationen für ältere Produkte und Features müssen möglicherweise aus geschäftlichen Gründen beibehalten werden, auch wenn neue, moderne Einstellungen verbessert werden.
 
 Microsoft 365 Organisationen mit Postfächern in Exchange Online sind durch Exchange Online Protection (EOP) geschützt. Dieser Schutz umfasst:
 
-- E-Mails mit mutmaßlicher Schadsoftware werden automatisch isoliert, und Empfänger werden benachrichtigt. Weitere Informationen finden Sie unter [Configure anti-malware policies in EOP](configure-anti-malware-policies.md).
-- E-Mails, die als Phishing mit hoher Sicherheit identifiziert werden, werden gemäß der Antispamrichtlinienaktion behandelt. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
+- E-Mails mit verdächtiger Schadsoftware werden automatisch unter Quarantäne gestellt, und die Empfänger werden benachrichtigt. Siehe [Konfigurieren von Antischadsoftwarerichtlinien in EOP.](configure-anti-malware-policies.md)
+- E-Mails, die als Phishing mit hohem Vertrauen erkannt werden, werden gemäß der Antispamrichtlinienaktion behandelt. Siehe [Konfigurieren von Antispamrichtlinien in EOP.](configure-your-spam-filter-policies.md)
 
-Weitere Informationen zu EOP finden Sie [unter Exchange Online Protection Übersicht](exchange-online-protection-overview.md).
+Weitere Informationen zu EOP finden Sie [unter Exchange Online Protection Übersicht.](exchange-online-protection-overview.md)
 
-Da Microsoft unsere Kunden standardmäßig schützen möchte, werden einige Mandantenüberschreibungen nicht für Schadsoftware oder Phishing mit hoher Sicherheit angewendet. Zu diesen Außerkraftsetzungen gehören:
+Da Microsoft unsere Kunden standardmäßig schützen möchte, werden einige Außerkraftsetzungen von Mandanten nicht auf Schadsoftware oder Phishing mit hoher Vertrauenswürdigkeit angewendet. Zu diesen Außerkraftsetzungen gehören:
 
-- Zugelassene Absenderlisten oder zulässige Domänenlisten (Antispamrichtlinien)
+- Listen zulässiger Absender oder listen zugelassener Domänen (Antispamrichtlinien)
 - Outlook Sichere Absender
-- IP-Zulässige Liste (Verbindungsfilterung)
+- IP-Zulassungsliste (Verbindungsfilterung)
 
-Weitere Informationen zu diesen Außerkraftsetzungen finden Sie unter [Create safe sender lists](create-safe-sender-lists-in-office-365.md).
+Weitere Informationen zu diesen Außerkraftsetzungen finden Sie unter Erstellen von [Listen sicherer Absender.](create-safe-sender-lists-in-office-365.md)
 
 > [!NOTE]
-> Wir sind dabei, die Aktion Nachricht  in Junk-E-Mail-Ordner verschieben für ein Phishing-E-Mail-Urteil mit hoher Vertrauen in EOP-Antispamrichtlinien zu veraltet.  Antispamrichtlinien, die diese Aktion für Phishingnachrichten mit hoher Vertrauenssicherheit verwenden, werden in **Quarantänenachrichten konvertiert.** Die **Aktion Nachricht an E-Mail-Adresse** umleiten für Phishingnachrichten mit hoher Vertrauen ist davon nicht betroffen.
+> Wir haben die Aktion **"Nachricht in Junk-E-Mail-Ordner verschieben"** für ein **Hochzuverlässigen von Phishing-E-Mails** in EOP-Antispamrichtlinien als veraltet eingestuft. Antispamrichtlinien, die diese Aktion für Phishing-Nachrichten mit hoher Konfidenz verwenden, werden in **Quarantäne-Nachrichten** konvertiert. Die Aktion **"Nachricht an E-Mail-Adresse umleiten"** für Phishingnachrichten mit hoher Konfidenz ist davon nicht betroffen.
 
-Sicherheit ist standardmäßig keine Einstellung, die aktiviert oder deaktiviert werden kann, sondern ist die Art und Weise, wie unsere Filterung aus dem Feld heraus funktioniert, um potenziell gefährliche oder unerwünschte Nachrichten aus Ihren Postfächern zu entfernen. Schadsoftware und Phishingnachrichten mit hoher Vertrauenssicherheit sollten in Quarantäne gestellt werden. Nur Administratoren können Nachrichten verwalten, die als Schadsoftware oder Phishing mit hoher Vertrauen in Quarantäne gestellt werden, und sie können auch falsch positive Nachrichten von dort an Microsoft melden. Weitere Informationen finden Sie unter [Manage quarantined messages and files as an admin in EOP](manage-quarantined-messages-and-files.md)
+"Sicher" ist standardmäßig keine Einstellung, die aktiviert oder deaktiviert werden kann, aber unsere Filterung funktioniert sofort, um potenziell gefährliche oder unerwünschte Nachrichten aus Ihren Postfächern fernzuhalten. Phishingnachrichten mit hoher Vertrauenswürdigkeit sollten unter Quarantäne gestellt werden. Nur Administratoren können Nachrichten verwalten, die als Schadsoftware oder Phishing mit hohem Vertrauen unter Quarantäne gestellt werden, und sie können von dort aus auch falsch positive Ergebnisse an Microsoft melden. Weitere Informationen finden Sie unter [Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP](manage-quarantined-messages-and-files.md)
 
 ## <a name="more-on-why-were-doing-this"></a>Weitere Informationen dazu, warum wir dies tun
 
-Der Geist der Standardmäßigen Sicherheit lautet: Wir ergreifen dieselbe Aktion für die Nachricht, die Sie ergreifen würden, wenn Sie die Nachricht als bösartig kennen, auch wenn eine konfigurierte Ausnahme andernfalls die Zugestellte Nachricht zu ermöglichen würde. Dies ist der gleiche Ansatz, den wir immer bei Schadsoftware verwendet haben, und jetzt erweitern wir dieses Verhalten auf Phishingnachrichten mit hoher Vertrauenssicherheit.
+Die Sicherheit ist standardmäßig: Wir ergreifen die gleiche Aktion für die Nachricht, die Sie ausführen würden, wenn Sie die Nachricht schädlich erkannt hätten, auch wenn eine konfigurierte Ausnahme andernfalls die Zustellung der Nachricht zulassen würde. Dies ist der gleiche Ansatz, den wir immer für Schadsoftware verwendet haben, und jetzt erweitern wir dieses Verhalten auf Phishingnachrichten mit hoher Vertrauenswürdigkeit.
 
-Unsere Daten deuten darauf hin, dass ein Benutzer 30-mal häufiger auf einen schädlichen Link in Nachrichten im Ordner Junk-E-Mail im Vergleich zur Quarantäne klickt. Unsere Daten deuten auch darauf hin, dass die falsch positive Rate (gute Nachrichten, die als schlecht gekennzeichnet sind) für Phishingnachrichten mit hoher Vertrauensrate sehr niedrig ist, und Administratoren können falsch positive Nachrichten mit Administratorübermittlungen beheben.
+Unsere Daten deuten darauf hin, dass ein Benutzer 30 Mal häufiger auf einen schädlichen Link in Nachrichten im Junk-E-Mail-Ordner klickt als auf Quarantäne. Unsere Daten deuten außerdem darauf hin, dass die falsch positive Rate (gute Nachrichten als schlecht markiert) für Phishingnachrichten mit hoher Konfidenz sehr niedrig ist und Administratoren falsch positive Ergebnisse mit Administratorübermittlungen beheben können.
 
-Außerdem haben wir festgestellt, dass die zulässigen Absender- und zulässigen Domänenlisten in Antispamrichtlinien und sicheren Absendern in Outlook zu breit waren und mehr Schaden als Schaden anrichten.
+Außerdem haben wir festgestellt, dass die Listen zulässiger und zulässiger Domänen in Antispamrichtlinien und sicheren Absendern in Outlook zu breit waren und mehr Schaden als Nutzen verursachen.
 
-Anders ausgedrückt: Als Sicherheitsdienst handeln wir in Ihrem Namen, um zu verhindern, dass Ihre Benutzer gefährdet werden.
+Anders ausgedrückt: Als Sicherheitsdienst agieren wir in Ihrem Auftrag, um zu verhindern, dass Ihre Benutzer kompromittiert werden.
 
 ## <a name="exceptions"></a>Ausnahmen
 
 > [!NOTE]
-> Im Juli 2021 wird die Sicherheit standardmäßig auf Exchange Nachrichtenflussregeln (auch als Transportregeln bekannt) erweitert. Wenn Sie Nachrichtenflussregeln verwenden, um Phishingsimulationen von Drittanbietern oder die ungefilterte Zustellung an Sicherheitsvorgangspostfächer [](configure-advanced-delivery.md) zu ermöglichen, müssen Sie diese Regeln schließlich entfernen und zur Verwendung der erweiterten Übermittlungsrichtlinie wechseln, wenn das Feature für Sie verfügbar _ist._
+> Im Juli 2021 wird die standardmäßige Sicherheit auf Exchange Nachrichtenflussregeln (auch als Transportregeln bezeichnet) erweitert. Wenn Sie Nachrichtenflussregeln verwenden, um Phishingsimulationen von Drittanbietern oder die ungefilterte Übermittlung an Postfächer für Sicherheitsvorgänge zuzulassen, müssen Sie diese Regeln schließlich entfernen und zur Verwendung der [erweiterten Übermittlungsrichtlinie](configure-advanced-delivery.md) _wechseln, wenn das Feature für Sie verfügbar ist._
 
-Die einzige Außerkraftsetzung, mit der Phishingnachrichten mit hoher Vertrauen die Filterung umgehen können, sind Nachrichtenflussregeln. Informationen zur Verwendung von Nachrichtenflussregeln zum Umgehen der Filterung finden Sie unter Verwenden von Nachrichtenflussregeln zum Festlegen der [SCL in Nachrichten.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)
+Die einzige Außerkraftsetzung, die das Umgehen der Filterung durch Phishingnachrichten mit hoher Konfidenz ermöglicht, sind Nachrichtenflussregeln. Informationen zum Verwenden von Nachrichtenflussregeln zum Umgehen der Filterung finden Sie unter [Verwenden von Nachrichtenflussregeln zum Festlegen der SCL in Nachrichten.](/exchange/security-and-compliance/mail-flow-rules/use-rules-to-set-scl)
 
 Sie sollten die Verwendung von Außerkraftsetzungen nur in den folgenden Szenarien in Betracht ziehen:
 
-- Phishing-Simulationen: Simulierte Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren, bevor sich ein tatsächlicher Angriff auf Ihre Organisation aus wirkt.
-- Sicherheits-/SecOps-Postfächer: Dedizierte Postfächer, die von Sicherheitsteams verwendet werden, um ungefilterte Nachrichten (sowohl gut als auch schlecht) zu erhalten. Teams können dann überprüfen, ob sie schädliche Inhalte enthalten.
-- Filter von Drittanbietern: Sicherheit gilt standardmäßig nicht, wenn der MX-Eintrag der Domäne nicht auf Office 365.
-- Falsch positive Ergebnisse: Möglicherweise möchten Sie bestimmte Nachrichten, die noch von Microsoft über Administratorübermittlungen analysiert werden, [vorübergehend zulassen.](admin-submission.md) Wie bei allen Außerkraftsetzungen wird empfohlen, dass sie temporär sind.
+- Phishingsimulationen: Simulierte Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren, bevor sich ein realer Angriff auf Ihre Organisation auswirkt.
+- Security/SecOps-Postfächer: Dedizierte Postfächer, die von Sicherheitsteams verwendet werden, um ungefilterte Nachrichten zu erhalten (sowohl gut als auch schlecht). Teams können dann überprüfen, ob sie schädliche Inhalte enthalten.
+- Filter von Drittanbietern: Standardmäßig "Sicher" gilt nicht, wenn der MX-Eintrag der Domäne nicht auf Office 365 verweist.
+- Falsch positive Ergebnisse: Möglicherweise möchten Sie bestimmte Nachrichten, die noch von Microsoft [über Administratorübermittlungen](admin-submission.md)analysiert werden, vorübergehend zulassen. Wie bei allen Außerkraftsetzungen wird empfohlen, dass sie temporär sind.

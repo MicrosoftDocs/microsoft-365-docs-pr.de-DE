@@ -14,16 +14,16 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Übersicht über Viva-Themen.
-ms.openlocfilehash: c7a5af9d2a038c2b9cc5f26d851eb3776a00c71f
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: c95e611a98609ff13a41854a6fb25b6ae88b43d8
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866691"
+ms.locfileid: "52877812"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics – Übersicht 
 
-Viva Topics verwendet Microsoft AI-Technologie, Microsoft 365, Microsoft Graph, Suche und andere Komponenten und Dienste, um Ihren Benutzern Wissen in den Microsoft 365 Apps bereitzustellen, die sie täglich verwenden, beginnend mit SharePoint modernen Seiten, Microsoft Search und Suche in Word, PowerPoint, Outlook und Excel.
+Viva Topics verwendet Microsoft AI-Technologie, Microsoft 365, Microsoft Graph, Suche und andere Komponenten und Dienste, um Ihren Benutzern Wissen in den Microsoft 365 Apps zu vermitteln, die sie täglich verwenden, beginnend mit SharePoint modernen Seiten, Microsoft Search und Suche in Word, PowerPoint, Outlook und Excel.
 
 <br/>
 
@@ -70,7 +70,7 @@ Wenn ein Thema identifiziert wird und KI feststellt, dass es über genügend Inf
 
 Ihre Wissensmanager können wählen, ob sie alle SharePoint-Sites in Ihrem Mandanten nach Themen durchsuchen oder nur bestimmte auswählen möchten.
 
-Siehe [Themensuche und -kuration.](./topic-experiences-discovery-curation.md)
+Weitere Informationen finden Sie unter ["Themenermittlung und Kuratierung".](./topic-experiences-discovery-curation.md)
 
 ## <a name="roles"></a>Rollen
 
@@ -90,13 +90,13 @@ Weitere Informationen finden Sie unter [Viva Topics-Rollen.](topic-experiences-r
 
 Die Themenverwaltung erfolgt auf der Seite **"Themen verwalten"** im *Themencenter* Ihrer Organisation. Das Themencenter wird während des Setups erstellt und dient als Wissen für Ihre Organisation. 
 
-Während alle lizenzierten Benutzer Themen sehen können, mit deren Hilfe sie im Themencenter verbunden sind, können nur Benutzer mit Berechtigungen zum *Verwalten von Themen* (Wissensmanager) die Seite **"Themen** verwalten" anzeigen und verwenden.
+Während alle lizenzierten Benutzer Themen sehen können, mit deren Hilfe sie im Themencenter verbunden sind, können nur Benutzer mit Berechtigungen zum Verwalten von *Themen* (Wissensmanager) die Seite **"Themen verwalten"** anzeigen und verwenden.
 
 Wissensverwalter können:
 
 - Themen bestätigen oder entfernen, die in Ihrem Mandanten entdeckt wurden.
 - Neue Themen nach Bedarf manuell erstellen (z. B. wenn nicht genügend Informationen bereitgestellt wurden, um über KI erkannt zu werden).
-- Vorhandene Themenseiten bearbeiten.<br/>
+- Vorhandene Themenseiten bearbeiten.
 
 Weitere Informationen finden Sie unter [Verwalten von Themen im Themencenter.](manage-topics.md)  
 

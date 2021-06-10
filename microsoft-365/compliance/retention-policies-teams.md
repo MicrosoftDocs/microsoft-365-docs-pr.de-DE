@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: db167894f32bcc1e30054b9cc4738af300b6d704
-ms.sourcegitcommit: 8e4c107e4da3a00be0511b05bc655a98fe871a54
+ms.openlocfilehash: 607fbdd02cfaccfee79df67c4946c178ff3eb383
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52280799"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861575"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informationen zur Aufbewahrung für Microsoft Teams
 
@@ -64,7 +64,7 @@ Diese Postfächer sind nach ihrem Attribut "RecipientTypeDetails" aufgelistet:
 - **MailUser**: In diesen Postfächern werden Nachrichtendaten für [lokale Teams-Benutzer](search-cloud-based-mailboxes-for-on-premises-users.md) gespeichert.
 - **GroupMailbox**: In diesen Postfächern werden Nachrichtendaten für Teams-Kanäle gespeichert.
 
-Andere Postfachtypen, z. B. RoomMailbox, die für Teams-Konferenzräume verwendet werden, werden für Teams-Aufbewahrungsrichtlinien nicht unterstützt.
+Andere Postfachtypen, z. B. RoomMailbox, die für Teams-Konferenzräume verwendet werden, werden für Teams-Aufbewahrungsrichtlinien nicht unterstützt.
 
 Teams verwendet einen Azure-unterstützten Chatdienst als primären Speicher für alle Nachrichten (Chats und Kanalnachrichten). Wenn Sie aus Compliance-Gründen Teams-Nachrichten löschen müssen, können Aufbewahrungsrichtlinien für Teams die Nachrichten nach einem bestimmten Zeitraum löschen, je nachdem, wann sie erstellt wurden. Nachrichten werden dann sowohl aus den Exchange-Postfächern, in denen sie für Compliancevorgänge gespeichert wurden, als auch aus dem primären Speicher gelöscht, der vom zugrunde liegenden Azure-unterstützten Chatdienst verwendet wird. Weitere Informationen über die zugrunde liegende Architektur finden Sie unter [Sicherheit und Compliance in Microsoft Teams](/MicrosoftTeams/security-compliance-overview), insbesondere im Abschnitt [Information Protection-Architektur](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
@@ -76,6 +76,9 @@ Obwohl diese Daten aus Teams-Chats und -Kanalnachrichten in Postfächern gespeic
 Nachdem eine Aufbewahrungsrichtlinie für Chat- und Kanalnachrichten konfiguriert wurde, wertet ein Timer-Job des Exchange-Dienstes regelmäßig Elemente im verborgenen Ordner aus, in dem diese Teams-Nachrichten gespeichert sind. Die Ausführung des Timer-Jobs dauert 1–7 Tage. Wenn die Aufbewahrungszeit für die Elemente abgelaufen ist, werden sie in den Ordner SubstrateHolds verschoben – einen weiteren versteckten Ordner, der sich im Postfach von Benutzenden oder Gruppen befindet, um "vorläufig gelöschte" Elemente zu speichern, bevor sie endgültig gelöscht werden. 
 
 Nachrichten bleiben mindestens 1 Tag lang im Ordner "SubstrateHolds". Wenn sie dann zum Löschen berechtigt sind, löscht der Timer-Job sie bei der nächsten Ausführung endgültig.
+
+> [!NOTE]
+> Aufgrund des [ ersten Aufbewahrungsprinzips](retention.md#the-principles-of-retention-or-what-takes-precedence) wird die endgültige Löschung immer ausgesetzt, wenn dasselbe Element aufgrund von einer anderen Aufbewahrungsrichtlinie aufbewahrt werden muss oder sich aus rechtlichen oder juristischen Gründen in eDiscovery-Aufbewahrungspflichten befindet.
 
 Nachdem eine Aufbewahrungsrichtlinie für Chat- oder Kanalnachrichten konfiguriert wurde, sind die Inhaltspfade davon abhängig, ob die Aufbewahrungsrichtlinie beibehalten und dann gelöscht, nur beibehalten oder nur gelöscht werden soll.
 

@@ -1,7 +1,7 @@
 ---
-title: Update incidents API
-description: Informationen zum Aktualisieren von Vorfällen mithilfe Microsoft 365 Defender-API
-keywords: update, api, incident
+title: Api zum Aktualisieren von Vorfällen
+description: Erfahren Sie, wie Sie Vorfälle mithilfe Microsoft 365 Defender-API aktualisieren.
+keywords: Update, API, Vorfall
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: e3b445b2f9612f0113f353450ca7bf0b8a1a2bb2
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b50fe4672dd4cd721464c7414297efcc4a4921b7
+ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730858"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52861503"
 ---
-# <a name="update-incidents-api"></a>Update incidents API
+# <a name="update-incidents-api"></a>API zum Aktualisieren von Vorfällen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -40,26 +40,26 @@ ms.locfileid: "52730858"
 
 ## <a name="api-description"></a>API-Beschreibung
 
-Aktualisiert die Eigenschaften vorhandener Vorfälle. Updatable Eigenschaften sind: ```status``` , , , , , und ```determination``` ```classification``` ```assignedTo``` ```tags``` ```comments``` .
+Aktualisiert die Eigenschaften eines vorhandenen Vorfalls. Aktualisierbare Eigenschaften sind: ```status``` , , , , und ```determination``` ```classification``` ```assignedTo``` ```tags``` ```comments``` .
 
-### <a name="quotas-resource-allocation-and-other-constraints"></a>Kontingente, Ressourcenzuordnung und andere Einschränkungen
+### <a name="quotas-resource-allocation-and-other-constraints"></a>Kontingente, Ressourcenzuweisung und andere Einschränkungen
 
-1. Sie können bis zu 50 Anrufe pro Minute oder 1500 Anrufe pro Stunde machen, bevor Sie den Drosselungsschwellenwert erreichen.
-2. Sie können die Eigenschaft `determination` nur festlegen, `classification` wenn truePositive festgelegt ist.
+1. Sie können bis zu 50 Anrufe pro Minute oder 1500 Anrufe pro Stunde tätigen, bevor Sie den Einschränkungsschwellenwert erreichen.
+2. Sie können die `determination` Eigenschaft nur festlegen, wenn `classification` sie auf "TruePositive" festgelegt ist.
 
-Wenn Ihre Anforderung gedrosselt wird, gibt sie einen `429` Antwortcode zurück. Der Antworttext gibt den Zeitpunkt an, zu dem Sie mit dem Starten neuer Anrufe beginnen können.
+Wenn Ihre Anforderung gedrosselt wird, wird ein `429` Antwortcode zurückgegeben. Der Antworttext gibt den Zeitpunkt an, zu dem Sie mit neuen Aufrufen beginnen können.
 
 ## <a name="permissions"></a>Berechtigungen
 
-Zum Aufrufen dieser API ist eine der folgenden Berechtigungen erforderlich. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Access the Microsoft 365 Defender APIs](api-access.md).
+Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Weitere Informationen, einschließlich der Auswahl von Berechtigungen, finden Sie unter [Access the Microsoft 365 Defender APIs.](api-access.md)
 
 Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 -|-|-
-Application | Incident.ReadWrite.All | Lesen und Schreiben aller Vorfälle
-Delegiert (Geschäfts-, Schul- oder Unikonto) | Incident.ReadWrite | Lese- und Schreibvorfälle
+Anwendung | Incident.ReadWrite.All | Lesen und Schreiben aller Vorfälle
+Delegiert (Geschäfts-, Schul- oder Unikonto) | Incident.ReadWrite | Lesen und Schreiben von Vorfällen
 
 > [!NOTE]
-> Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen benötigt der Benutzer die Berechtigung, den Vorfall im Portal zu aktualisieren.
+> Beim Abrufen eines Tokens mithilfe von Benutzeranmeldeinformationen muss der Benutzer über die Berechtigung zum Aktualisieren des Vorfalls im Portal verfügen.
 
 ## <a name="http-request"></a>HTTP-Anforderung
 
@@ -71,31 +71,31 @@ PATCH /api/incidents/{id}
 
 Name | Typ | Beschreibung
 -|-|-
-Authorization | String | Bearer {token}. **Erforderlich**.
+Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
 Content-Type | Zeichenfolge | application/json. **Erforderlich**.
 
 ## <a name="request-body"></a>Anforderungstext
 
-Stellen Sie im Anforderungstext die Werte für die Felder zur Verfügung, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre Werte bei, es sei denn, sie müssen aufgrund von Änderungen an verwandten Werten neu berechnet werden. Um eine optimale Leistung zu erzielen, sollten Sie vorhandene Werte auslassen, die sich nicht geändert haben.
+Geben Sie im Anforderungstext die Werte für die Felder an, die aktualisiert werden sollen. Vorhandene Eigenschaften, die nicht im Anforderungstext enthalten sind, behalten ihre Werte bei, es sei denn, sie müssen aufgrund von Änderungen an verwandten Werten neu berechnet werden. Um eine optimale Leistung zu erzielen, sollten Sie vorhandene Werte auslassen, die sich nicht geändert haben.
 
 Eigenschaft | Typ | Beschreibung
 -|-|-
-status | Enum | Gibt den aktuellen Status des Vorfalls an. Mögliche Werte sind: ```Active``` ```Resolved``` , , und ```Redirected``` .
+status | Enum | Gibt den aktuellen Status des Vorfalls an. Mögliche Werte sind: ```Active``` ```Resolved``` , und ```Redirected``` .
 assignedTo | Zeichenfolge | Besitzer des Vorfalls.
 classification | Enum | Spezifikation des Vorfalls. Mögliche Werte sind: ```Unknown```, ```FalsePositive``` und ```TruePositive```.
 Bestimmung | Enum | Gibt die Ermittlung des Vorfalls an. Mögliche Werte: ```NotAvailable```, ```Apt```, ```Malware```, ```SecurityPersonnel```, ```SecurityTesting```, ```UnwantedSoftware```, ```Other```.
-tags | Zeichenfolgenliste | Liste der Incident-Tags.
+tags | Zeichenfolgenliste | Liste der Vorfalltags.
 Kommentar | string | Kommentar, der dem Vorfall hinzugefügt werden soll.
 
 ## <a name="response"></a>Antwort
 
-Wenn die Methode erfolgreich ist, gibt sie `200 OK` zurück. Der Antworttext enthält die Vorfallentität mit aktualisierten Eigenschaften. Wenn ein Vorfall mit der angegebenen ID nicht gefunden wurde, gibt die Methode `404 Not Found` zurück.
+Wenn die Methode erfolgreich ist, wird `200 OK` . Der Antworttext enthält die Vorfallentität mit aktualisierten Eigenschaften. Wenn ein Vorfall mit der angegebenen ID nicht gefunden wurde, gibt die Methode `404 Not Found` zurück.
 
 ## <a name="example"></a>Beispiel
 
 **Anforderung**
 
-Hier sehen Sie ein Beispiel für die Anforderung.
+Hier ist ein Beispiel für die Anforderung.
 
 ```HTTP
  PATCH https://api.security.microsoft.com/api/incidents/{id}
@@ -128,8 +128,8 @@ Hier sehen Sie ein Beispiel für die Anforderung.
 ## <a name="related-articles"></a>Verwandte Artikel
 
 - [Zugreifen auf die Microsoft 365 Defender-APIs](api-access.md)
-- [Informationen zu API-Beschränkungen und -Lizenzierung](api-terms.md)
-- [Verstehen von Fehlercodes](api-error-codes.md)
+- [Informationen zu API-Grenzwerten und Lizenzierung](api-terms.md)
+- [Grundlegendes zu Fehlercodes](api-error-codes.md)
 - [Vorfall-APIs](api-incident.md)
 - [Auflisten von Vorfällen](api-list-incidents.md)
 - [Übersicht über Vorfälle](incidents-overview.md)
