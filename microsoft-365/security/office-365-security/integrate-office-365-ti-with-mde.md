@@ -6,7 +6,7 @@ keywords: Integration, Microsoft Defender, Microsoft Defender für Endpunkt
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
-ms.date: 01/21/2021
+ms.date: 06/10/2021
 audience: ITPro
 ms.topic: article
 localization_priority: Normal
@@ -19,12 +19,12 @@ description: Verwenden Sie Microsoft Defender für Office 365 zusammen mit Micro
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f1d92d2433267b89398c7f7f582a8d1ee8cdba5
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 63ae9f8c1136a973e4fccb63ecfbaee2639c3f6f
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878604"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904080"
 ---
 # <a name="use-microsoft-defender-for-office-365-together-with-microsoft-defender-for-endpoint"></a>Verwenden von Microsoft Defender für Office 365 zusammen mit Microsoft Defender für Endpunkt
 
@@ -39,24 +39,24 @@ Die folgende Abbildung zeigt, wie die Registerkarte **"Geräte"** aussieht, wenn
 
 ![Wenn Microsoft Defender für Endpunkt aktiviert ist, sehen Sie eine Liste der Geräte mit Warnungen.](../../media/fec928ea-8f0c-44d7-80b9-a2e0a8cd4e89.PNG)
 
-In diesem Beispiel können Sie sehen, dass die Empfänger der erkannten E-Mail-Nachricht über vier Geräte verfügen und eines über eine Warnung verfügt. Durch Klicken auf den Link für ein Gerät wird die Seite im Microsoft Defender Security Center ( <https://securitycenter.windows.com> ) geöffnet.
+In diesem Beispiel können Sie sehen, dass die Empfänger der erkannten E-Mail-Nachricht über vier Geräte verfügen und eines über eine Warnung verfügt. Wenn Sie auf den Link für ein Gerät klicken, wird seine Seite in [Microsoft 365 Defender](../defender-endpoint/microsoft-defender-security-center.md) (früher Microsoft Defender Security Center) geöffnet.
 
 > [!TIP]
-> **[Erfahren Sie mehr über die Microsoft Defender Security Center](/windows/security/threat-protection/microsoft-defender-atp/use)** (auch als Microsoft Defender für Endpunkt-Portal bezeichnet).)
+> Das Microsoft 365 Defender-Portal ersetzt die Microsoft Defender Security Center. Siehe [Microsoft Defender für Endpunkt in Microsoft 365 Defender](../defender/microsoft-365-security-center-mde.md).
 
 ## <a name="requirements"></a>Anforderungen
 
-- Ihre Organisation benötigt Microsoft Defender für Office 365 (oder Office 365 E5) und Microsoft Defender für Endpunkt.
+- Ihre Organisation muss Über Microsoft Defender für Office 365 (oder Office 365 E5) und Microsoft Defender für Endpunkt verfügen.
 
-- Sie müssen ein globaler Administrator sein oder eine Sicherheitsadministratorrolle (z. B. Sicherheitsadministrator) im [Security & Compliance Center](https://protection.office.com)zugewiesen haben. (Siehe [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md))
+- Sie müssen ein globaler Administrator sein oder eine Sicherheitsadministratorrolle (z. B. Sicherheitsadministrator) in Microsoft 365 zugewiesen haben. (Siehe [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md))
 
-- Sie müssen zugriff auf [Explorer (oder Echtzeiterkennungen)](threat-explorer.md) im Security & Compliance Center und im Microsoft Defender Security Center haben.
+- Sie müssen Zugriff auf [Explorer (oder Echtzeiterkennungen)](threat-explorer.md)haben.
 
 ## <a name="to-integrate-microsoft-defender-for-office-365-with-microsoft-defender-for-endpoint"></a>So integrieren Sie Microsoft Defender für Office 365 in Microsoft Defender für Endpunkt
 
-Die Integration von Microsoft Defender für Office 365 in Microsoft Defender für Endpunkt wird mithilfe des Security & Compliance Centers und des Microsoft Defender Security Center eingerichtet.
+Die Integration von Microsoft Defender für Office 365 in Microsoft Defender für Endpunkt ist sowohl in Defender für Endpunkt als auch in Defender für Office 365 eingerichtet.
 
-1. Wechseln Sie als globaler Administrator oder Sicherheitsadministrator zu <https://protection.office.com> und melden Sie sich an. (Dadurch gelangen Sie zum Office 365 Security & Compliance Center.)
+1. Wechseln Sie als globaler Administrator oder Sicherheitsadministrator zu [https://protection.office.com](https://protection.office.com) und melden Sie sich an. (Dadurch gelangen Sie zum Office 365 Security & Compliance Center.)
 
 2. Wählen Sie im Navigationsbereich **den Explorer für die Bedrohungsverwaltung** \> aus.
 
@@ -64,11 +64,11 @@ Die Integration von Microsoft Defender für Office 365 in Microsoft Defender fü
 
 3. Wählen Sie in der oberen rechten Ecke des Bildschirms **Defender für Endpunkt Einstellungen (MDE Einstellungen)** aus.
 
-4. Aktivieren Sie im Microsoft Defender für Endpunkt-Verbindungsdialogfeld **Verbinden zu Microsoft Defender für Endpunkt.**
+4. Aktivieren Sie im Dialogfeld "Verbindung mit Microsoft Defender für Endpunkt" **Verbinden zu Microsoft Defender für Endpunkt.**
 
    ![Microsoft Defender für Endpunkt-Verbindung](../../media/Explorer-WDATPConnection-dialog.png)
 
-5. Wechseln Sie zum Microsoft Defender Security Center ( <https://securitycenter.windows.com> ).
+5. Wechseln Sie zum Microsoft 365 Defender-Portal ( [https://security.microsoft.com](https://security.microsoft.com) .
 
 6. Wählen Sie in der Navigationsleiste **Einstellungen** aus. Wählen Sie dann unter **"Allgemein"** die Option **"Erweiterte Features" aus.**
 

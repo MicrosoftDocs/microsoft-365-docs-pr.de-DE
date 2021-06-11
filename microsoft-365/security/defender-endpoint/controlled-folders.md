@@ -11,18 +11,18 @@ localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
 audience: ITPro
-ms.date: 02/03/2021
+ms.date: 06/10/2021
 ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 7c471dc99a5deafcc60177812f60f1f884b10ee1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: c60620d2a589c8473764b810d1fcb0e24f674451
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52845570"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904056"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Schützen wichtiger Ordner mit kontrollierten Ordnerzugriff
 
@@ -52,7 +52,7 @@ Der kontrollierte Ordnerzugriff funktioniert nur, indem vertrauenswürdigen Apps
 
 Der kontrollierte Ordnerzugriff funktioniert mit einer Liste vertrauenswürdiger Apps. Apps, die in der Liste der vertrauenswürdigen Software enthalten sind, funktionieren erwartungsgemäß. Apps, die nicht in der Liste enthalten sind, werden daran gehindert, Änderungen an Dateien in geschützten Ordnern vorzunehmen. 
 
-Apps werden der Liste basierend auf ihrer Verbreitung und Ihrem Ruf hinzugefügt. Apps, die in Ihrer Gesamten Organisation sehr weit verbreitet sind und nie als bösartig eingestuftes Verhalten angezeigt haben, gelten als vertrauenswürdig. Diese Apps werden automatisch zur Liste hinzugefügt.
+Apps werden der Liste basierend auf ihrer Verbreitung und Ihrem Ruf hinzugefügt. Apps, die in Ihrer Gesamten Organisation sehr weit verbreitet sind und nie ein als bösartig eingestuftes Verhalten angezeigt haben, gelten als vertrauenswürdig. Diese Apps werden automatisch zur Liste hinzugefügt.
 
 Apps können der vertrauenswürdigen Liste auch manuell mithilfe von Configuration Manager oder Intune hinzugefügt werden. Zusätzliche Aktionen, z. [B. das Hinzufügen eines Dateiindikators](respond-file-alerts.md#add-indicator-to-block-or-allow-a-file) für eine App, können über die Security Center-Konsole ausgeführt werden.
 
@@ -62,7 +62,7 @@ Der kontrollierte Ordnerzugriff ist besonders nützlich, um Ihre Dokumente und I
 
 Zu den [geschützten Ordnern](#review-controlled-folder-access-events-in-windows-event-viewer) gehören allgemeine Systemordner (einschließlich Startbereichen), und Sie können [weitere Ordner hinzufügen.](customize-controlled-folders.md#protect-additional-folders) Sie können Apps auch den Zugriff auf die geschützten Ordner [gestatten.](customize-controlled-folders.md#allow-specific-apps-to-make-changes-to-controlled-folders)
 
-Sie können den [Überwachungsmodus](audit-windows-defender.md) verwenden, um zu bewerten, wie sich der kontrollierte Ordnerzugriff auf Ihre Organisation auswirken würde, wenn er aktiviert wäre. Sie können auch die Website Windows Defender Test-Boden unter [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) besuchen, um zu bestätigen, dass das Feature funktioniert und wie es funktioniert.
+Sie können den [Überwachungsmodus](audit-windows-defender.md) verwenden, um zu bewerten, wie sich der kontrollierte Ordnerzugriff auf Ihre Organisation auswirken würde, wenn er aktiviert wäre. Sie können auch die Website Windows Defender Testwebsite unter [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) besuchen, um zu bestätigen, dass das Feature funktioniert und wie es funktioniert.
 
 Der kontrollierte Ordnerzugriff wird in den folgenden Versionen von Windows unterstützt:
 - [Windows 10, Version 1709](/windows/whats-new/whats-new-windows-10-version-1709) und höher
@@ -89,9 +89,9 @@ Windows Systemordner sind standardmäßig zusammen mit mehreren anderen Ordnern 
 
 Für den kontrollierten Ordnerzugriff muss [Microsoft Defender Antivirus Echtzeitschutz](/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)aktiviert werden.
 
-## <a name="review-controlled-folder-access-events-in-the-microsoft-defender-security-center"></a>Überprüfen der Ereignisse des kontrollierten Ordnerzugriffs in der Microsoft Defender Security Center
+## <a name="review-controlled-folder-access-events-in-the-microsoft-365-defender-portal"></a>Überprüfen der Ereignisse des kontrollierten Ordnerzugriffs im Microsoft 365 Defender-Portal
 
-Defender für Endpunkt bietet detaillierte Berichte zu Ereignissen und Blöcken im Rahmen seiner [Warnungsuntersuchungsszenarien.](investigate-alerts.md)
+Defender für Endpunkt bietet detaillierte Berichte zu Ereignissen und Blöcken als Teil seiner [Warnungsuntersuchungsszenarien](investigate-alerts.md) im Microsoft 365 Defender-Portal. (Siehe [Microsoft Defender für Endpunkt in Microsoft 365 Defender.)](../defender/microsoft-365-security-center-mde.md)
 
 Sie können Microsoft Defender für Endpunktdaten mithilfe der [erweiterten Suche](/microsoft-365/security/defender-endpoint/advanced-hunting-windows-defender-advanced-threat-protection)abfragen. Wenn Sie den [Überwachungsmodus](audit-windows-defender.md)verwenden, können Sie die [erweiterte Suche](advanced-hunting-overview.md) verwenden, um zu sehen, wie sich die Einstellungen für den kontrollierten Ordnerzugriff auf Ihre Umgebung auswirken würden, wenn sie aktiviert würden.
 
@@ -122,7 +122,7 @@ In der folgenden Tabelle sind Ereignisse im Zusammenhang mit dem kontrollierten 
 
 ## <a name="view-or-change-the-list-of-protected-folders"></a>Anzeigen oder Ändern der Liste der geschützten Ordner
 
-Mit der Windows-Sicherheit-App können Sie die Liste der Ordner anzeigen, die durch den kontrollierten Ordnerzugriff geschützt sind. 
+Sie können die Windows-Sicherheit-App verwenden, um die Liste der Ordner anzuzeigen, die durch den kontrollierten Ordnerzugriff geschützt sind. 
 
 1. Öffnen Sie auf Ihrem Windows 10 Gerät die Windows-Sicherheit-App.
 2. Wählen Sie **Viren- und Bedrohungsschutz** aus.
@@ -135,8 +135,4 @@ Mit der Windows-Sicherheit-App können Sie die Liste der Ordner anzeigen, die du
 > [!NOTE]
 > [Windows Systemordner](#windows-system-folders-are-protected-by-default) sind standardmäßig geschützt, und Sie können sie nicht aus der Liste entfernen.
 
-## <a name="see-also"></a>Siehe auch
 
-- [Auswerten des kontrollierten Ordnerzugriffs](evaluate-controlled-folder-access.md)
-- [Kontrollierte Ordnerzugriff anpassen](customize-controlled-folders.md)
-- [Schützen weiterer Ordner](customize-controlled-folders.md#protect-additional-folders)

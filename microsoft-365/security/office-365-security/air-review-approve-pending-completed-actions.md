@@ -18,13 +18,13 @@ ms.collection:
 description: Erfahren Sie mehr über Abhilfemaßnahmen in automatisierten Untersuchungs- und Reaktionsfunktionen in Microsoft Defender für Office 365 Plan 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.date: 01/29/2021
-ms.openlocfilehash: 525f6cf922f80067219f6c33a2c11559e9e58a39
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.date: 06/10/2021
+ms.openlocfilehash: 7894a9aa38239bf661c809cce96ea2a2a96c3725
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878772"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904128"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Überprüfen und Verwalten von Abhilfemaßnahmen in Office 365
 
@@ -52,16 +52,16 @@ Diese Korrekturmaßnahmen werden erst ausgeführt, wenn sie von Ihrem Sicherheit
    - Wählen Sie **"Genehmigen"** aus, um eine ausstehende Aktion zu initiieren.
    - Wählen Sie **"Ablehnen"** aus, um zu verhindern, dass eine ausstehende Aktion ausgeführt wird.
 
-## <a name="undo-one-remediation-action"></a>Rückgängigmachen einer Korrekturaktion
+## <a name="change-or-undo-one-remediation-action"></a>Ändern oder Rückgängigmachen einer Korrekturaktion
 
 1. Wechseln Sie zum Info-Center ( <https://security.microsoft.com/action-center> ) und melden Sie sich an.
-2. Wählen Sie auf der Registerkarte **"Verlauf"** eine Aktion aus, die Sie rückgängig machen möchten.
+2. Wählen Sie auf der Registerkarte **"Verlauf"** eine Aktion aus, die Sie ändern oder rückgängig machen möchten.
 3. Wählen Sie im Bereich auf der rechten Seite des Bildschirms **"Rückgängig"** aus.
 
-## <a name="undo-multiple-remediation-actions"></a>Rückgängigmachen mehrerer Korrekturaktionen
+## <a name="change-or-undo-multiple-remediation-actions"></a>Ändern oder Rückgängigmachen mehrerer Korrekturaktionen
 
 1. Wechseln Sie zum Info-Center ( <https://security.microsoft.com/action-center> ) und melden Sie sich an.
-2. Wählen Sie auf der Registerkarte **"Verlauf"** die Aktionen aus, die Sie rückgängig machen möchten. Stellen Sie sicher, dass Sie Elemente mit demselben Aktionstyp auswählen. Ein Flyoutbereich wird geöffnet.
+2. Wählen Sie auf der Registerkarte **"Verlauf"** die Aktionen aus, die Sie ändern oder rückgängig machen möchten. Stellen Sie sicher, dass Sie Elemente mit demselben Aktionstyp auswählen. Ein Flyoutbereich wird geöffnet.
 3. Wählen Sie im Flyoutbereich "Rückgängig" aus.
 
 ## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>So entfernen Sie eine Datei aus der Quarantäne auf mehreren Geräten

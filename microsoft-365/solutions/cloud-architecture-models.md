@@ -13,18 +13,18 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: 73e29109a429d8a3fffc69b79939c8dff7ecb087
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 29d52ea4b40cb876c6e8b314ab2f3b07c3123c05
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769269"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52904020"
 ---
 # <a name="microsoft-cloud-for-it-architects-illustrations"></a>Illustrationen zu Microsoft Cloud für IT-Architekten
 
 Diese Poster zur Cloudarchitektur enthalten Informationen zu Microsoft Cloud Services, einschließlich Microsoft 365, Azure Active Directory (Azure AD), Microsoft Intune, Microsoft Dynamics 365 sowie hybriden lokalen und Cloudlösungen. 
 
-IT-Entscheidungsträger und Architekten können diese Ressourcen verwenden, um die idealen Lösungen für ihre Arbeitsauslastungen zu ermitteln und Entscheidungen zu wichtigen Infrastrukturkomponenten wie Netzwerk, Identität und Sicherheit zu treffen.
+IT-Entscheidungsträger und Architekten können diese Ressourcen verwenden, um die idealen Lösungen für ihre Workloads zu ermitteln und Entscheidungen über wichtige Infrastrukturkomponenten wie Netzwerk, Identität und Sicherheit zu treffen.
 
 
 <a name="identity"></a>
@@ -68,7 +68,7 @@ Diese Themenreihe illustriert mehrere Architekturansätze für Fusionen, Überna
 
 |**Aspekt**|**Beschreibung**|
 |:-----|:-----|
-|[![Miniaturbild für Migrationen zwischen Microsoft-Cloudmandanten und -Mandanten](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) \| [Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.vsdx) <br>Aktualisiert: Februar 2021    |Dieses Modell enthält Folgendes: <ul><li>Eine Zuordnung von Geschäftsszenarien zu Architekturansätzen</li><li>Überlegungen zum Entwurf</li><li>Beispiel für Migrationsfluss für ein einzelnes Ereignis</li><li>Beispiel für phasenweisen Migrationsfluss</li><li>Beispiel für Mandanten-Verschiebung oder geteilten Fluss</li></ul>|
+|[![Miniaturbild für Migrationen zwischen Microsoft-Cloudmandanten und -Mandanten](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) <br/> [PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) \| Aktualisiert: Februar 2021    |Dieses Modell enthält Folgendes: <ul><li>Eine Zuordnung von Geschäftsszenarien zu Architekturansätzen</li><li>Überlegungen zum Entwurf</li><li>Beispiel für Migrationsfluss für ein einzelnes Ereignis</li><li>Beispiel für phasenweisen Migrationsfluss</li><li>Beispiel für Mandanten-Verschiebung oder geteilten Fluss</li></ul>|
 
 <a name="attacks"></a>
 ### <a name="common-attacks-and-microsoft-capabilities-that-protect-your-organization"></a>Häufige Angriffe und Microsoft-Funktionen zum Schutz Ihrer Organisation

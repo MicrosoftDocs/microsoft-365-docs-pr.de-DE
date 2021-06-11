@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: f157a03d9a56aa0bbca695a27be57391e6b92360
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: 58c2230d3a2e3323f7b9a315ca5d2a049f5f44fb
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866631"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903852"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Verwenden von Regeln zur Verringerung der Angriffsfläche, um eine Infektion mit Schadsoftware zu verhindern
 
@@ -95,7 +95,7 @@ Wenn eine Regel zur Verringerung der Angriffsfläche ausgelöst wird, wird eine 
 
 Wenn außerdem bestimmte Regeln zur Verringerung der Angriffsfläche ausgelöst werden, werden Warnungen generiert.
 
-Benachrichtigungen und generierte Warnungen können im Microsoft Defender Security Center ( ) und im Microsoft 365 Security Center ( ) angezeigt [https://securitycenter.windows.com](https://securitycenter.windows.com) [https://security.microsoft.com](https://security.microsoft.com) werden.
+Benachrichtigungen und generierte Warnungen können im Microsoft 365 Defender-Portal ( ) angezeigt werden [https://security.microsoft.com](https://security.microsoft.com) (früher [Microsoft Defender Security Center).](microsoft-defender-security-center.md)
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Erweiterte Suche und Attack Surface Reduction-Ereignisse
 
@@ -114,13 +114,13 @@ Sie können Regeln zur Verringerung der Angriffsfläche für Geräte festlegen, 
 - Windows Server, [Version 1803 (Halbjährlicher Kanal)](/windows-server/get-started/whats-new-in-windows-server-1803) oder höher
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Obwohl Regeln zur Verringerung der Angriffsfläche keine [Windows E5-Lizenz](/windows/deployment/deploy-enterprise-licenses)erfordern, erhalten Sie, wenn Sie über Windows E5 verfügen, erweiterte Verwaltungsfunktionen. Zu diesen Funktionen, die nur in Windows E5 verfügbar sind, gehören Überwachung, Analysen und Workflows, die in [Defender für Endpunkt](microsoft-defender-endpoint.md)verfügbar sind, sowie Berichterstellungs- und Konfigurationsfunktionen im Microsoft 365 Security [Center.](/microsoft-365/security/defender/overview-security-center) Diese erweiterten Funktionen sind nicht mit einer Windows Professional- oder Windows E3-Lizenz verfügbar. Wenn Sie jedoch über diese Lizenzen verfügen, können Sie die Ereignisanzeige und Microsoft Defender Antivirus Protokolle verwenden, um ihre Regelereignisse zur Verringerung der Angriffsfläche zu überprüfen.
+Obwohl Regeln zur Verringerung der Angriffsfläche keine [Windows E5-Lizenz](/windows/deployment/deploy-enterprise-licenses)erfordern, erhalten Sie, wenn Sie über Windows E5 verfügen, erweiterte Verwaltungsfunktionen. Zu diesen Funktionen, die nur in Windows E5 verfügbar sind, gehören Überwachung, Analysen und Workflows, die in [Defender für Endpunkt](microsoft-defender-endpoint.md)verfügbar sind, sowie Berichterstellungs- und Konfigurationsfunktionen in Microsoft 365 [Defender.](/microsoft-365/security/defender/overview-security-center) Diese erweiterten Funktionen sind nicht mit einer Windows Professional- oder Windows E3-Lizenz verfügbar. Wenn Sie jedoch über diese Lizenzen verfügen, können Sie die Ereignisanzeige und Microsoft Defender Antivirus Protokolle verwenden, um ihre Regelereignisse zur Verringerung der Angriffsfläche zu überprüfen.
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Überprüfen von Ereignissen zur Verringerung der Angriffsfläche im Microsoft Defender Security Center
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Überprüfen von Ereignissen zur Verringerung der Angriffsfläche im Microsoft 365 Defender-Portal
 
 Defender für Endpunkt bietet detaillierte Berichte für Ereignisse und Blöcke im Rahmen von Warnungsuntersuchungsszenarien.
 
-Sie können Defender für Endpunktdaten mithilfe der [erweiterten Suche](advanced-hunting-query-language.md)abfragen. Wenn Sie den [Überwachungsmodus](audit-windows-defender.md)ausführen, können Sie die erweiterte Suche verwenden, um zu verstehen, wie sich Regeln zur Verringerung der Angriffsfläche auf Ihre Umgebung auswirken können.
+Sie können Defender für Endpunktdaten in [Microsoft 365 Defender](microsoft-defender-security-center.md) mithilfe der [erweiterten Suche](advanced-hunting-query-language.md)abfragen. Wenn Sie den [Überwachungsmodus](audit-windows-defender.md)ausführen, können Sie die erweiterte Suche verwenden, um zu verstehen, wie sich Regeln zur Verringerung der Angriffsfläche auf Ihre Umgebung auswirken können.
 
 Hier ist eine Beispielabfrage:
 
@@ -134,9 +134,13 @@ DeviceEvents
 Sie können das Windows Ereignisprotokoll überprüfen, um Ereignisse anzuzeigen, die durch Attack Surface Reduction-Regeln generiert werden:
 
 1. Laden Sie das [Evaluierungspaket herunter,](https://aka.ms/mp7z2w) und extrahieren Sie die Datei *cfa-events.xml* an einen leicht zugänglichen Speicherort auf dem Gerät.
+
 2. Geben Sie die Wörter *Ereignisanzeige* in das Startmenü ein, um die Windows Ereignisanzeige zu öffnen.
+
 3. Wählen Sie unter **"Aktionen"** die Option **"Benutzerdefinierte Ansicht importieren" aus...**.
+
 4. Wählen Sie die Datei *cfa-events.xml* aus, aus der sie extrahiert wurde. Alternativ können [Sie den XML-Code direkt kopieren.](event-views.md)
+
 5. Wählen Sie **OK** aus.
 
 Sie können eine benutzerdefinierte Ansicht erstellen, die Ereignisse filtert, um nur die folgenden Ereignisse anzuzeigen, die alle mit dem kontrollierten Ordnerzugriff zusammenhängen:
@@ -183,7 +187,7 @@ Diese Regel verhindert nicht, dass ein bereits auf dem System vorhandener Treibe
 
 >[!NOTE]
 >
-> Diese Regel kann mithilfe von [MEM-OMA-URI](enable-attack-surface-reduction.md#mem) für benutzerdefinierte MEM-OMA-URI-Regeln konfiguriert werden.
+> Diese Regel kann mithilfe von [MEM-OMA-URI](enable-attack-surface-reduction.md#mem) für benutzerdefinierte Mem-OMA-URI-Regeln konfiguriert werden.
 >
 > Diese Regel kann auch [mithilfe](enable-attack-surface-reduction.md#powershell)von PowerShell konfiguriert werden.
 >
@@ -237,7 +241,7 @@ Configuration Manager-Name: `Block Office application from creating child proces
 
 GUID: `D4F940AB-401B-4EFC-AADC-AD5F3C50688A`
 
-### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Blockieren des Diebstahls von Anmeldeinformationen aus dem Windows Subsystem der lokalen Sicherheitsautorität
+### <a name="block-credential-stealing-from-the-windows-local-security-authority-subsystem"></a>Blockieren des Diebstahls von Anmeldeinformationen aus dem subsystem der Windows lokalen Sicherheitsautorität
 
 Diese Regel trägt dazu bei, das Stehlen von Anmeldeinformationen zu verhindern, indem der Subsystemdienst der lokalen Sicherheitsautorität (Local Security Authority Subsystem Service, LSASS) gesperrt wird.
 
@@ -501,7 +505,7 @@ Diese Regel bietet eine zusätzliche Schutzebene vor Ransomware. Es verwendet Cl
 Die Regel tendiert zu einem Fehler auf der Seite der Vorsicht, um Ransomware zu verhindern.
 
 > [!NOTE]
-> Sie müssen den über die [Cloud bereitgestellten Schutz aktivieren,](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) um diese Regel verwenden zu können.
+> Sie müssen den über die [Cloud bereitgestellten Schutz aktivieren,](enable-cloud-protection-microsoft-defender-antivirus.md) um diese Regel verwenden zu können.
 
 Diese Regel wurde eingeführt in:
 
@@ -516,9 +520,4 @@ Configuration Manager-Name: `Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
-## <a name="see-also"></a>Siehe auch
 
-- [Häufig gestellte Fragen zur Verringerung der Angriffsfläche](attack-surface-reduction-faq.md)
-- [Aktivieren der Regeln zur Verringerung der Angriffsfläche](enable-attack-surface-reduction.md)
-- [Auswerten der Regeln zur Verringerung der Angriffsfläche](evaluate-attack-surface-reduction.md)
-- [Kompatibilität von Microsoft Defender Antivirus mit anderen Antiviren-/Antischadsoftwarelösungen](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
