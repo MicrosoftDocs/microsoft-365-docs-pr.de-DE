@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informationen für IT-Administratoren zur Verwaltung von Vertraulichkeitsbezeichnungen in Office-Apps für Desktop, Mobilgeräte und das Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 3da3d971a1ef55d343ac1b61e6457981022c4c92
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 6e22ca460acf96151ff54e3b2bbbe03ad1a97a27
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770380"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888397"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Verwalten von Vertraulichkeitsbezeichnungen in Office-Apps
 
@@ -61,7 +61,7 @@ Die aufgelisteten Zahlen sind die minimale Office-Anwendungsversion, die für je
 |[Eine Begründung für die Änderung einer Beschriftung verlangen](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Link zu einer benutzerdefinierten Hilfeseite bereitstellen](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Inhalt markieren](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | Wird überprüft |
+|[Dynamische Markierungen mit Variablen](#dynamic-markings-with-variables)                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | Wird eingeführt |
 |[Berechtigungen sofort zuweisen](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Ja – teilnehmen](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Benutzern das Zuweisen von Berechtigungen gestatten: <br /> – Benutzer auffordern](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | Wird überprüft   | Wird überprüft         | Wird überprüft                                                        |
 |[Überwachung bezeichnungsbezogener Benutzeraktivitäten](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | Rollout: 16.0.13628+ | Ja <sup>\*</sup>                                                        |
