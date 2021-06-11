@@ -15,12 +15,12 @@ metadata:
   ms.date: 02/27/2020
   localization_priority: Normal
   search.appverid: MET150
-  ms.openlocfilehash: 2c048207d0528856924b348697e1f7c48114e82a
-  ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+  ms.openlocfilehash: ecf809c3fe771e38b6edc758d8f2654c0cb89ca6
+  ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
   ms.translationtype: HT
   ms.contentlocale: de-DE
-  ms.lasthandoff: 05/19/2021
-  ms.locfileid: "52537283"
+  ms.lasthandoff: 06/10/2021
+  ms.locfileid: "52888337"
 landingContent:
 - title: Abrechnungen und Zahlungen verwalten
   linkLists:
@@ -28,26 +28,28 @@ landingContent:
     links:
     - text: Anzeigen Ihrer Rechnung
       url: billing-and-payments/view-your-bill-or-invoice.md
+    - text: Ihre Rechnung verstehen
+      url: billing-and-payments/understand-your-invoice2.md
+    - text: Bezahlen Sie für Ihr Abonnement
+      url: billing-and-payments/pay-for-your-subscription.md
     - text: Verwalten von Zahlungsmethoden
       url: billing-and-payments/manage-payment-methods.md
-    - text: Erläuterungen zu Ihrer Rechnung
-      url: billing-and-payments/understand-your-invoice.md
-    - text: Verwalten von Abrechnungsprofilen
-      url: billing-and-payments/manage-billing-profiles.md
-    - text: Abrechnungskonten verwalten
-      url: manage-billing-accounts.md
-- title: Verwalten von Lizenzen
+    - text: Rechnungsadressen ändern
+      url: billing-and-payments/change-your-billing-addresses.md
+- title: Lizenzen verwalten
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: Lizenzen kaufen oder entfernen
+      url: licenses/buy-licenses.md
     - text: Zuweisen von Lizenzen an Benutzer
       url: ../admin/manage/assign-licenses-to-users.md
+    - text: Aufheben der Zuweisung von Benutzerlizenzen
+      url: ../admin/manage/remove-licenses-from-users.md
     - text: Grundlegendes zu Abonnements und Lizenzen
       url: licenses/subscriptions-and-licenses.md
-    - text: Erwerben von Lizenzen für Ihr Abonnement
-      url: licenses/buy-licenses.md
-    - text: Entfernen von Lizenzen aus Ihrem Abonnement
-      url: ./licenses/buy-licenses.md
+    - text: Unbefristete Software und Produktlizenzschlüssel herunterladen
+      url: ../admin/setup/download-software-licenses-csp.md
 - title: Upgraden, verlängern oder kündigen
   linkLists:
   - linkListType: how-to-guide
@@ -56,10 +58,10 @@ landingContent:
       url: subscriptions/upgrade-to-different-plan.md
     - text: Verlängern Ihres Abonnements
       url: subscriptions/renew-your-subscription.md
-    - text: Kündigen Ihres Abonnements
-      url: subscriptions/cancel-your-subscription.md
     - text: Reaktivieren Ihres Abonnements
       url: subscriptions/reactivate-your-subscription.md
+    - text: Kündigen Ihres Abonnements
+      url: subscriptions/cancel-your-subscription.md
     - text: Schließen Ihres Kontos
       url: close-your-account.md
 - title: Testen oder kaufen
@@ -68,9 +70,11 @@ landingContent:
     links:
     - text: Testen oder Kaufen von Microsoft 365
       url: try-or-buy-microsoft-365.md
-    - text: Erwerb eines Abonnements aus Ihrer kostenlosen Testversion
-      url: ./try-or-buy-microsoft-365.md
-    - text: Verlängern Ihrer Testversion
-      url: extend-your-trial.md
+    - text: Abonnement aus Ihrer kostenlosen Testversion heraus erwerben
+      url: ./try-or-buy-microsoft-365.md#buy-a-subscription-from-your-free-trial
+    - text: Testversion verlängern
+      url: extend-your-trial.md#extend-your-trial
+    - text: Speicherplatz hinzufügen
+      url: add-storage-space.md
     - text: Kaufen eines Domänennamens
       url: ../admin/get-help-with-domains/buy-a-domain-name.md

@@ -566,6 +566,8 @@
               href: configure-edge-to-export-search-results.md
             - name: Massenbearbeitung mehrerer Inhaltssuchen
               href: bulk-edit-content-searches.md
+            - name: Suchen nach eDiscovery-Aktivitäten im Überwachungsprotokoll
+              href: search-for-ediscovery-activities-in-the-audit-log.md
         - name: PowerShell-Skripts für die Inhaltssuche
           items:
             - name: Verwenden der Inhaltssuche für gezielte Sammlungen
