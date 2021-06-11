@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können sich über die Einstellungen für den erweiterten Spamfilter (ADVANCED Spam Filter, ASF) informieren, die in Antispamrichtlinien in Exchange Online Protection (EOP) verfügbar sind.
+description: Administratoren können sich über die AsF-Einstellungen (Advanced Spam Filter) informieren, die in Antispamrichtlinien in Exchange Online Protection (EOP) verfügbar sind.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12f193ef61205e8568341c774b957ce4a9dd7988
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: 77676277678bd6f8dcfade2b6929a9e1e113bf4b
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779422"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878232"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Erweiterte Einstellungen für den Spamfilter (ASF) in EOP
 
@@ -47,7 +47,7 @@ In allen Microsoft 365 Organisationen ermöglichen die AsF-Einstellungen (Advanc
 > - Das Vorhandensein gefilterter Nachrichten in Quarantäne.
 > - Die spezifischen `X-CustomSpam:` X-Header-Felder, die Nachrichten hinzugefügt werden, wie in diesem Artikel beschrieben.
 
-In den folgenden Abschnitten werden die ASF-Einstellungen und -Optionen beschrieben, die in Antispamrichtlinien im Microsoft 365 Security Center und in Exchange Online PowerShell oder in eigenständiger EOP PowerShell ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) und [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)) verfügbar sind. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
+In den folgenden Abschnitten werden die ASF-Einstellungen und -Optionen beschrieben, die in Antispamrichtlinien im Microsoft 365 Defender-Portal und in Exchange Online PowerShell oder in eigenständiger EOP-PowerShell ([New-HostedContentFilterPolicy](/powershell/module/exchange/new-hostedcontentfilterpolicy) und [Set-HostedContentFilterPolicy](/powershell/module/exchange/set-hostedcontentfilterpolicy)) verfügbar sind. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="enable-disable-or-test-asf-settings"></a>Aktivieren, Deaktivieren oder Testen von ASF-Einstellungen
 
@@ -58,7 +58,7 @@ Für jede ASF-Einstellung sind die folgenden Optionen in Antispamrichtlinien ver
 - **Test:** ASF fügt der Nachricht das entsprechende X-Header-Feld hinzu. Was mit der Nachricht geschieht, wird durch den **Testmoduswert** (*TestModeAction*) bestimmt:
   - **Keine:** Die Nachrichtenübermittlung ist von der ASF-Erkennung nicht betroffen. Die Nachricht unterliegt weiterhin anderen Arten von Filtern und Regeln in EOP.
   - **Fügen Sie standardmäßigen X-Header-Text (*AddXHeader*)** hinzu: Der X-Header-Wert `X-CustomSpam: This message was filtered by the custom spam filter option` wird der Nachricht hinzugefügt. Sie können diesen Wert in Posteingangsregeln oder Nachrichtenflussregeln (auch als Transportregeln bezeichnet) verwenden, um die Zustellung der Nachricht zu beeinflussen.
-  - **Senden einer Bcc-Nachricht (*BccMessage*):** Die angegebenen E-Mail-Adressen (der *Parameterwert "TestModeBccToRecipients"* in PowerShell) werden dem Bcc-Feld der Nachricht hinzugefügt, und die Nachricht wird an die zusätzlichen Bcc-Empfänger übermittelt. Im Sicherheitscenter trennen Sie mehrere E-Mail-Adressen durch Semikolons (;). In PowerShell trennen Sie mehrere E-Mail-Adressen durch Kommas.
+  - **Senden einer Bcc-Nachricht (*BccMessage*):** Die angegebenen E-Mail-Adressen (der *Parameterwert "TestModeBccToRecipients"* in PowerShell) werden dem Bcc-Feld der Nachricht hinzugefügt, und die Nachricht wird an die zusätzlichen Bcc-Empfänger übermittelt. Im Microsoft 365 Defender-Portal trennen Sie mehrere E-Mail-Adressen durch Semikolons (;). In PowerShell trennen Sie mehrere E-Mail-Adressen durch Kommas.
 
   **Hinweise**:
 

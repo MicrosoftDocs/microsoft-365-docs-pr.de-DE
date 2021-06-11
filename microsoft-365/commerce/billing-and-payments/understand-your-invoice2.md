@@ -19,14 +19,14 @@ ms.custom:
 - AdminSurgePortfolio
 - commerce_billing
 search.appverid: MET150
-description: Interpretieren von Gebühren, Abrechnungs- und Zahlungsinformationen auf Ihrer Microsoft 365 für Geschäftsrechnungen oder Rechnungen und Ändern einer Bestellnummer.
+description: Interpretieren Sie Gebühren, Abrechnungs- und Zahlungsinformationen auf Ihrer Microsoft 365 für Geschäftsrechnungen oder Rechnungen und wie Sie eine Bestellnummer ändern.
 ms.date: 05/04/2021
-ms.openlocfilehash: 63d532ddfb86eb80a1cdeb6001fff683c5999146
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: ba20e390e279d45d56671d49e32250d2db04c220
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635834"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888373"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Grundlegendes zu Ihrer Rechnung für Microsoft 365 für Unternehmen
 
@@ -122,14 +122,15 @@ Wenn Sie per Rechnung bezahlen, können Sie Ihrem Abonnement die Auftragsnummer 
 
 1. Wählen Sie auf der Registerkarte **Produkte** das Abonnement aus, das Sie ändern möchten.
 
-1. Wählen Sie auf der Seite Abonnementdetails im Abschnitt **Abonnement- und** Zahlungseinstellungen die Option **Rechnung bearbeiten aus.**
+1. Wählen Sie auf der Seite "Abonnementdetails" im Abschnitt **"Abonnement- und Zahlungseinstellungen"** die Option **"Rechnung bearbeiten"** aus.
 
-1. Geben Sie unten im Bereich Details für die Zahlung **per** Sprachsteuerung bearbeiten Ihre Postfachnummer ein, und wählen Sie dann **Speichern aus.**
+1. Geben Sie am unteren Rand der **Bearbeitungsdetails für die Zahlung per VoIP-Bereich** Ihre Bestellnummer ein, und wählen Sie dann **Speichern** aus.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Erfahren Sie, wie Sie Ihre Rechnung oder Rechnung](view-your-bill-or-invoice.md) suchen und anzeigen (Artikel)\
-[Ändern Ihrer Abrechnungsadressen](change-your-billing-addresses.md) (Artikel)\
-[Ändern der Adresse Ihrer Organisation, der technischen Kontakt-E-Mail und anderer Informationen](../../admin/manage/change-address-contact-and-more.md) (Artikel)\
-[Bezahlen Sie für Microsoft 365 für Ihr Geschäftsabonnement](pay-for-your-subscription.md) (Artikel)\
+[Erfahren Sie, wie Sie Ihre Rechnung finden und anzeigen](view-your-bill-or-invoice.md) (Artikel)\
+[Abrechnungsinformationen für Microsoft 365 business in Mexiko](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (Artikel) \
+[Ändern Ihrer Rechnungsadressen](change-your-billing-addresses.md) (Artikel)\
+[Ändern der Adresse Ihrer Organisation, der E-Mail-Adresse des technischen Kontakts und anderer Informationen](../../admin/manage/change-address-contact-and-more.md) (Artikel)\
+[Bezahlen Ihres Microsoft 365 business-Abonnements](pay-for-your-subscription.md) (Artikel)\
 [Minecraft: Education Edition – Zahlungsoptionen](/education/windows/school-get-minecraft) (Artikel)

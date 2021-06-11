@@ -17,18 +17,18 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie benutzerdefinierte vertrauliche Informationstypen mit genauer Datenübereinstimmungsklassifizierung erstellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ff190fa85e631562a07dcecc1f75713ecacdf07e
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 6839401bc1dd00acc45992f902a6360eb7f20120
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822117"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878196"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Erstellen von benutzerdefinierten vertraulichen Informationstypen mit genauer Datenübereinstimmungsklassifizierung
 
 
 
-[Benutzerdefinierte Typen vertraulicher Informationen](sensitive-information-type-learn-about.md) werden verwendet, um vertrauliche Elemente zu identifizieren, sodass Sie verhindern können, dass Sie versehentlich oder in unangemessener Weise geteilt werden. Sie können einen benutzerdefinierten Typ vertraulicher Informationen folgendermaßen definieren:
+[Benutzerdefinierte Typen vertraulicher Informationen](sensitive-information-type-learn-about.md) werden verwendet, um vertrauliche Elemente zu identifizieren, sodass Sie verhindern können, dass Sie versehentlich oder in unangemessener Weise geteilt werden. Sie definieren einen benutzerdefinierten vertraulichen Informationstyp (SIT) basierend auf:
 
 - Durch Muster
 - Durch den Nachweis von Schlüsselwörtern, z. B. *Mitarbeiter*,*Badge* oder *ID*
@@ -93,21 +93,22 @@ Die EDM-basierte Klassifizierung ist in diesen Abonnements enthalten.
 
 Das Einrichten und Konfigurieren der EDM-basierten Klassifizierung umfasst:
 
-1. [Speichern vertraulicher Daten im CSV-Format](#save-sensitive-data-in-csv-format)
+1. [Speichern vertraulicher Daten im .csv- oder TSV-Format](#save-sensitive-data-in-csv-or-tsv-format)
 2. [Definieren Ihres Datenbankschemas für vertrauliche Informationen](#define-the-schema-for-your-database-of-sensitive-information)
 3. [Erstellen eines Regelpakets](#set-up-a-rule-package)
 
 
-#### <a name="save-sensitive-data-in-csv-format"></a>Speichern vertraulicher Daten im CSV-Format
+#### <a name="save-sensitive-data-in-csv-or-tsv-format"></a>Speichern vertraulicher Daten im .csv- oder TSV-Format
 
-1. Identifizieren Sie die vertraulichen Informationen, die Sie verwenden möchten. Exportieren Sie die Daten in eine App, wie z. B. Microsoft Excel, und speichern Sie die Datei im CSV-Format. Die Datendatei kann maximal Folgendes umfassen:
+1. Identifizieren Sie die vertraulichen Informationen, die Sie verwenden möchten. Exportieren Sie die Daten in eine App, z. B. Microsoft Excel, und speichern Sie die Datei in einer Textdatei. Die Datei kann im format .csv (durch Trennzeichen getrennte Werte), TSV (durch Tabstopps getrennte Werte) oder im pipetrennten Format (|) gespeichert werden. Das TSV-Format wird in Fällen empfohlen, in denen Ihre Datenwerte Kommas enthalten können, z. B. Straßenadressen.
+Die Datendatei kann maximal Folgendes umfassen:
       - bis zu 100 Millionen Zeilen vertraulicher Daten
       - bis zu 32 Spalten (Felder) pro Datenquelle
       - bis zu 5 als durchsuchbar markierte Spalten (Felder)
 
-2. Strukturieren Sie die vertraulichen Daten in der CSV-Datei so, dass die erste Zeile die Namen der für die EDM-basierte Klassifizierung verwendeten Felder enthält. Möglicherweise gibt es in Ihrer CSV-Datei Feldnamen, wie z. B. "SSN", "Geburtsdatum", "Vorname" oder "Nachname". Die Namen der Spaltenüberschriften dürfen keine Leerzeichen oder Unterstriche enthalten. Die CSV-Datei, die wir in diesem Artikel verwenden, trägt beispielsweise den Namen *PatientRecords.csv* und hat u. a. die Spalten *PatientID*, *MRN*, *LastName*, *FirstName* und *SSN*.
+2. Strukturierung der vertraulichen Daten in der .csv- oder TSV-Datei, sodass die erste Zeile die Namen der Felder enthält, die für die EDM-basierte Klassifizierung verwendet werden. In Ihrer Datei haben Sie möglicherweise Feldnamen wie "ssn", "birthdate", "firstname", "lastname". Die Namen der Spaltenüberschriften dürfen keine Leerzeichen oder Unterstriche enthalten. Die CSV-Datei, die wir in diesem Artikel verwenden, trägt beispielsweise den Namen *PatientRecords.csv* und hat u. a. die Spalten *PatientID*, *MRN*, *LastName*, *FirstName* und *SSN*.
 
-3. Achten Sie auf das Format der Felder für die vertraulichen Daten. Insbesondere würden Felder, deren Inhalt Kommas enthalten kann (z. B. eine Straßenadresse, die den Wert „Seattle,WA“ enthält), beim Parsen durch das EDM-Tool als zwei getrennte Felder interpretiert werden. Um dies zu vermeiden, müssen Sie sicherstellen, dass solche Felder in der Tabelle mit den vertraulichen Daten von einfachen oder doppelten Anführungszeichen umgeben sind. Wenn Felder, die Kommas enthalten können, auch Leerzeichen enthalten können, müssen Sie einen benutzerdefinierten Datentyp für vertrauliche Daten erstellen, der dem entsprechenden Format entspricht (z. B. eine Zeichenfolge aus mehreren Wörtern mit Kommas und Leerzeichen darin), um sicherzustellen, dass die Zeichenfolge beim Scannen des Dokuments richtig zugeordnet wird.
+3. Achten Sie auf das Format der Felder für die vertraulichen Daten. Insbesondere Felder, die Kommas in ihrem Inhalt enthalten können, z. B. eine Straßenadresse, die den Wert "Seattle, WA" enthält, werden bei der Analyse als zwei separate Felder analysiert, wenn das .csv Format ausgewählt ist. Um dies zu vermeiden, verwenden Sie das TSV-Format oder umgeben das Komma mit Werten in doppelte Anführungszeichen in der Tabelle mit vertraulichen Daten. Wenn Kommas, die Werte enthalten, auch Leerzeichen enthalten, müssen Sie eine benutzerdefinierte SIT erstellen, die dem entsprechenden Format entspricht. Beispielsweise eine SIT, die zeichenfolgen mit mehreren Wörtern mit Kommas und Leerzeichen erkennt.
 
 #### <a name="define-the-schema-for-your-database-of-sensitive-information"></a>Definieren des Schemas für Ihre Datenbank mit vertraulichen Informationen
 
@@ -205,7 +206,7 @@ In diesem Beispiel, in dem beide, `caseInsensitive` und `ignoredDelimiters`, ver
 
 1. Erstellen Sie ein Regelpaket im XML-Format (mit Unicode-Codierung), ähnlich wie im folgenden Beispiel. (Sie können das Beispiel kopieren, ändern und verwenden.)
 
-      Vergewissern Sie sich beim Einrichten des Regelpakets, dass Sie die CSV-Datei und die **edm.xml**-Datei korrekt referenzieren. Sie können das Beispiel kopieren, ändern und verwenden. In dieser XML-Beispieldatei müssen die folgenden Felder so angepasst werden, dass Sie Ihren vertraulichen EDM-Typ erstellen:
+      Stellen Sie beim Einrichten des Regelpakets sicher, dass Sie ordnungsgemäß auf die .csv- oder TSV-Datei und **edm.xml** Datei verweisen. Sie können das Beispiel kopieren, ändern und verwenden. In dieser XML-Beispieldatei müssen die folgenden Felder so angepasst werden, dass Sie Ihren vertraulichen EDM-Typ erstellen:
 
       - **RulePack id und ExactMatch id**: Verwenden Sie [New-GUID](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6), um eine GUID zu generieren.
 
@@ -385,7 +386,7 @@ Wenn Sie Ihre vertrauliche Datendatei im Klartext nicht verfügbar machen möcht
 - Einen Computer mit Windows 10 oder Windows Server 2016 mit .NET Version 4.6.2, um den EDM-Upload-Agenten auszuführen
 - Ein Verzeichnis auf dem für das Hochladen verwendeten Computer für den:
     -  EDM-Upload-Agenten
-    - Ihre vertrauliche Elementdatei im CSV-Format (in unseren Beispielen **"PatientRecords.csv"**)
+    - Ihre Datei für vertrauliche Elemente im .csv- oder TSV-Format **PatientRecords.csv** in unseren Beispielen
     -  sowie die Output-Hash- und-Saltdateien
     - Den Namen des Datenspeichers aus der Datei **EDM.xml** (in diesem Beispiel `PatientRecords`)
 - Wenn Sie den Assistenten für das [Schema exakter Datenübereinstimmung und den vertraulichen Informationstyp](sit-edm-wizard.md) verwendet haben, ***müssen*** Sie ihn herunterladen.
@@ -404,7 +405,7 @@ Dieser Computer muss direkten Zugriff auf Ihren Microsoft 365-Mandanten haben.
 > Bevor Sie mit diesem Verfahren beginnen, stellen Sie sicher, dass Sie Mitglied der **EDM\_DataUploaders**-Sicherheitsgruppe sind.
 
 > [!TIP]
-> Optional können Sie vor dem Hochladen eine Validierung für Ihre CSV-Datei ausführen, indem Sie Folgendes ausführen:
+> Optional können Sie eine Überprüfung für Ihre .csv- oder TSV-Datei vor dem Hochladen ausführen, indem Sie Folgendes ausführen:
 >
 >`EdmUploadAgent.exe /ValidateData /DataFile [data file] /Schema [schema file]`
 >
@@ -443,11 +444,12 @@ Dieser Computer muss direkten Zugriff auf Ihren Microsoft 365-Mandanten haben.
 
 4. Um den Hashvorgang durchzuführen die vertraulichen Daten hochzuladen, führen Sie den folgenden Befehl in der Eingabeaufforderung aus:
 
-   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file]`
+   `EdmUploadAgent.exe /UploadData /DataStoreName [DS Name] /DataFile [data file] /HashLocation [hash file location] /Schema [Schema file] /ColumnSeparator ["{Tab}"|"|"]`
 
    Beispiel: **EdmUploadAgent.exe /UploadData /DataStoreName PatientRecords /DataFile C:\Edm\Hash\PatientRecords.csv /HashLocation C:\Edm\Hash /Schema edm.xml**
 
-   Dadurch wird dem Hashwert automatisch ein zufällig generierter Saltwert hinzugefügt, um die Sicherheit zu vergrößern. Wenn Sie optional einen eigenen Saltwert verwenden möchten, fügen Sie dem Befehl **/Salt <saltvalue>** hinzu. Dieser Wert muss 64 Zeichen umfassen und darf nur die Zeichen a-z und die Ziffern 0-9 enthalten.
+   Das Standardformat für die Datei mit vertraulichen Daten ist durch Trennzeichen getrennte Werte. Sie können eine durch Registerkarten getrennte Datei angeben, indem Sie die Option "{Tab}" mit dem Parameter "/ColumnSeparator" angeben, oder Sie können eine durch Pipe getrennte Datei angeben, indem Sie die Option "|" angeben.  
+   Dieser Befehl fügt automatisch einen zufällig generierten Saltwert zum Hash hinzu, um die Sicherheit zu erhöhen. Wenn Sie optional einen eigenen Saltwert verwenden möchten, fügen Sie dem Befehl **/Salt <saltvalue>** hinzu. Dieser Wert muss 64 Zeichen umfassen und darf nur die Zeichen a-z und die Ziffern 0-9 enthalten.
 
 5. Überprüfen Sie den Uploadstatus, indem Sie den folgenden Befehl ausführen:
 
@@ -477,7 +479,7 @@ OPTIONAL: Wenn Sie den Assistenten für Exact Data Match Schema und vertrauliche
    - .EdmHash
    - .EdmSalt
 
-2. Kopieren Sie diese Dateien auf sichere Weise auf den Computer, den Sie verwenden, um Ihre CSV-Datei mit den vertraulichen Elementen (PatientRecords) in ihren-Mandanten hochzuladen.
+2. Kopieren Sie diese Dateien auf sichere Weise auf den Computer, mit dem Sie Ihre vertraulichen Elemente .csv oder TSV-Datei (PatientRecords) in Ihren Mandanten hochladen.
 
    Führen Sie zum Hochladen gehashter Daten den folgenden Befehl in der Windows-Eingabeaufforderung aus:
 
@@ -508,10 +510,10 @@ Sie können Ihre Datenbank für vertrauliche Informationen täglich aktualisiere
 
 1. Ermitteln Sie den Vorgang und die Häufigkeit (täglich oder wöchentlich) zum Aktualisieren der Datenbank mit vertraulichen Informationen.
 
-2. Exportieren Sie die vertraulichen Daten erneut in eine App, wie z. B. Microsoft Excel, und speichern Sie die Datei im CSV-Format. Behalten Sie den Dateinamen und den Speicherort bei, den Sie beim Ausführen der unter [Hashen und Hochladen vertraulicher Daten](#part-2-hash-and-upload-the-sensitive-data) beschriebenen Schritte verwendet haben.
+2. Exportieren Sie die vertraulichen Daten erneut in eine App, z. B. Microsoft Excel, und speichern Sie die Datei im .csv- oder TSV-Format. Behalten Sie den Dateinamen und den Speicherort bei, den Sie beim Ausführen der unter [Hashen und Hochladen vertraulicher Daten](#part-2-hash-and-upload-the-sensitive-data) beschriebenen Schritte verwendet haben.
 
       > [!NOTE]
-      > Wenn es keine Änderungen an der Struktur (Feldnamen) der CSV-Datei gibt, müssen Sie auch keine an der Datenbankschemadatei vornehmen, wenn Sie die Daten aktualisieren. Wenn Sie jedoch Änderungen vornehmen müssen, stellen Sie sicher, dass Sie das Datenbankschema und Ihr Regelpaket entsprechend bearbeiten.
+      > Wenn keine Änderungen an der Struktur (Feldnamen) der .csv- oder TSV-Datei vorgenommen werden, müssen Sie beim Aktualisieren der Daten keine Änderungen an der Datenbankschemadatei vornehmen. Wenn Sie jedoch Änderungen vornehmen müssen, stellen Sie sicher, dass Sie das Datenbankschema und Ihr Regelpaket entsprechend bearbeiten.
 
 3. Verwenden Sie die [Aufgabenplanung](/windows/desktop/TaskSchd/task-scheduler-start-page), um die Schritte 2 und 3 im Verfahren [Hashen und Hochladen vertraulicher Daten](#part-2-hash-and-upload-the-sensitive-data) zu automatisieren. Sie können Aufgaben mithilfe verschiedener Methoden planen:
 
@@ -535,7 +537,7 @@ $edminstallpath = 'C:\\Program Files\\Microsoft\\EdmUploadAgent\\'
 $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
 $schemaext = '.xml'
-\# Assuming CSV file name is same as data store name
+\# Assuming file name is same as data store name and file is in .csv format
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 \# Assuming location to store hash file is same as the location of csv file
 $hashLocation = $fileLocation
@@ -571,7 +573,7 @@ $edmuploader = $edminstallpath + 'EdmUploadAgent.exe'
 $csvext = '.csv'
 $edmext = '.EdmHash'
 $schemaext = '.xml'
-\# Assuming CSV file name is same as data store name
+\# Assuming file name is same as data store name and file is in .csv format
 $dataFile = "$fileLocation\\$dataStoreName$csvext"
 $hashFile = "$fileLocation\\$dataStoreName$edmext"
 \# Assuming Schema file name is same as data store name

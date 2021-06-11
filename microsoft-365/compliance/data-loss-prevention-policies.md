@@ -22,17 +22,17 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Referenzmaterial zur Verhinderung von Datenverlust
-ms.openlocfilehash: a6dc0b2702899e05f78c54331fb33b87495672d8
-ms.sourcegitcommit: 0936f075a1205b8f8a71a7dd7761a2e2ce6167b3
+ms.openlocfilehash: 7e8494c0199d62951e7b5f01bb1b65e90e8584f2
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52572561"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878160"
 ---
 # <a name="data-loss-prevention-reference"></a>Referenz zur Verhinderung von Datenverlust
  
 > [!IMPORTANT]
-> Dieses Referenzthema ist nicht mehr die Hauptressource für Microsoft 365 Verhinderung von Datenverlust (Data Loss Prevention, DLP). Der DLP-Inhaltssatz wird aktualisiert und neu strukturiert. Die in diesem Artikel behandelten Themen werden zu neuen, aktualisierten Artikeln geändert. Weitere Informationen zu DLP finden Sie [unter Learn about data loss prevention](dlp-learn-about-dlp.md).
+> Dies ist ein Referenzthema, das nicht mehr die Hauptressource für Microsoft 365 DLP-Informationen (Data Loss Prevention, Verhinderung von Datenverlust) ist. Der DLP-Inhaltssatz wird aktualisiert und umstrukturiert. Die in diesem Artikel behandelten Themen werden in neue, aktualisierte Artikel verschoben. Weitere Informationen zu DLP finden Sie unter [Informationen zur Verhinderung von Datenverlust.](dlp-learn-about-dlp.md)
 
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
 <!-- move this note to a more appropriate place, no topic should start with a note -->
@@ -112,7 +112,7 @@ Wenn Sie festlegen, dass bestimmte SharePoint-Websites berücksichtigt oder ausg
 Wenn Sie festlegen, dass bestimmte OneDrive-Konten oder -Gruppen berücksichtigt oder ausgeschlossen werden sollen, beachten Sie, dass eine DLP-Richtlinie höchstens 100 Benutzerkonten bzw. 50 Gruppen als Ein- oder Ausschlüsse enthalten kann.
 
 > [!NOTE]
-> OneDrive for Business-Richtlinienbegrenzung mit Konten oder Gruppen befindet sich in der öffentlichen Vorschau. In dieser Phase können Sie Benutzerkonten und Gruppen als Teil einer DLP-Richtlinie entweder ein- oder ausschließen. Ein- und Ausschlüsse als Teil derselben Richtlinie werden nicht unterstützt.
+> OneDrive für Geschäftsrichtlinien- Bereichsdefinitionen mit Benutzerkonten oder Gruppen befindet sich in der öffentlichen Vorschau. 
   
 ### <a name="rules"></a>Regeln
 
@@ -385,7 +385,7 @@ Wenn Sie eine zuvor erstellte und veröffentlichte [Aufbewahrungsbezeichnung](re
 
 ### <a name="using-a-sensitivity-label-as-a-condition-in-a-dlp-policy"></a>Verwenden einer Vertraulichkeitsbezeichnung als Bedingung in einer DLP-Richtlinie
 
-[Erfahren Sie mehr](./dlp-sensitivity-label-as-condition.md) über die Verwendung der Vertraulichkeitsbezeichnung als Bedingung in DLP-Richtlinien.
+[Erfahren Sie mehr](./dlp-sensitivity-label-as-condition.md) über die Verwendung von Vertraulichkeitsbezeichnungen als Bedingung in DLP-Richtlinien.
   
 ### <a name="how-this-feature-relates-to-other-features"></a>Die Beziehung dieses Features zu anderen Features
 
@@ -520,7 +520,7 @@ Während Dokumente auf Websites hinzugefügt oder geändert werden, werden die I
 Eine DLP wertet alle Inhalte aus, die indiziert werden können. Weitere Informationen zu den Dateitypen, die standardmäßig durchforstet werden, finden Sie unter [Standardmäßig durchforstete Dateinamenerweiterungen und analysierte Dateitypen in SharePoint Server](/SharePoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types).
 
 > [!NOTE]
-> Um zu verhindern, dass Dokumente freigegeben werden, bevor DLP-Richtlinien sie analysieren können, kann die Freigabe neuer Dateien in SharePoint blockiert werden, bis der Inhalt indiziert wurde. Ausführliche Informationen finden Sie unter [Neue Dateien standardmäßig als vertraulich kennzeichnen](/sharepoint/sensitive-by-default). 
+> Um zu verhindern, dass Dokumente freigegeben werden, bevor DLP-Richtlinien die Möglichkeit hatten, sie zu analysieren, kann die Freigabe neuer Dateien in SharePoint blockiert werden, bis der Inhalt indiziert wurde. Ausführliche Informationen finden Sie unter [Neue Dateien standardmäßig als vertraulich kennzeichnen](/sharepoint/sensitive-by-default). 
   
 ### <a name="policy-evaluation-in-exchange-online-outlook-and-outlook-on-the-web"></a>Richtlinienauswertung in Exchange, Outlook und Outlook im Web
 
@@ -542,7 +542,7 @@ Wenn Sie eine DLP-Richtlinie erstellen, die Microsoft Teams als Speicherort umfa
  
 ## <a name="permissions"></a>Berechtigungen
 
-Mitglieder des Complianceteams, die DLP-Richtlinien erstellen, benötigen Berechtigungen zum Zugreifen auf das Security &amp; Compliance Center. Standardmäßig verfügt der Mandantenadministrator über Zugriff auf diesen Ort und kann den Compliance Officers und anderen Personen den Zugriff auf das Security &amp; Compliance Center gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zuzuweisen. Hierfür empfehlen wir, folgendermaßen vorzugehen:
+Standardmäßig haben globale Administratoren, Sicherheitsadministratoren und Compliance-Administratoren Zugriff, um eine DLP-Richtlinie zu erstellen und anzuwenden. Andere Mitglieder Ihres Complianceteams, die DLP-Richtlinien erstellen, benötigen Berechtigungen für das Security &amp; Compliance Center. Standardmäßig hat Ihr Mandantenadministrator Zugriff auf diesen Standort und kann Compliance Officern und anderen Personen Zugriff auf das Security &amp; Compliance Center gewähren, ohne ihnen alle Berechtigungen eines Mandantenadministrators zu erteilen. Zu diesem Zweck empfehlen wir Folgendes:
   
 1. Erstellen Sie eine Gruppe in Microsoft 365, und fügen Sie dieser Compliance Officers hinzu.
     

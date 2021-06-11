@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie, wie Sie einen benutzerdefinierten Typ für vertrauliche Informationen für Richtlinien im Compliance Center erstellen und importieren können.
-ms.openlocfilehash: 75e767b0ea5ebe4940af5ee0fbfa85f858f65e9c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: deb29b768c136c9c952d2abe791b310f2fd1dbdd
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538704"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878244"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Erstellen eines benutzerdefinierten vertraulichen Informationstyps mit PowerShell
 
@@ -38,6 +38,9 @@ Aufgrund der Unterschiede in Kundenumgebungen und Anforderungen an die Inhaltsü
 Lesen Sie auch [Mögliche Überprüfungsprobleme, die zu beachten sind](#potential-validation-issues-to-be-aware-of) in diesem Thema.
 
 Weitere Informationen über die Boost.RegEx-Engine (ehemals RegEx++), die für die Verarbeitung des Textes verwendet wird, finden Sie unter [Boost.Regex 5.1.3](https://www.boost.org/doc/libs/1_68_0/libs/regex/doc/html/).
+
+> [!NOTE]
+> Wenn Sie ein kaufmännisches Und-Zeichen (&) als Teil eines Schlüsselworts in Ihrem benutzerdefinierten vertraulichen Informationstyp verwenden, beachten Sie, dass ein bekanntes Problem vorliegt. Sie sollten einen zusätzlichen Begriff mit Leerzeichen um das Zeichen herum hinzufügen, um sicherzustellen, dass das Zeichen ordnungsgemäß identifiziert ist, z. B. L & P _nicht_ L&P.
 
 ## <a name="sample-xml-of-a-rule-package"></a>Beispiel-XML für ein Regelpaket
 
