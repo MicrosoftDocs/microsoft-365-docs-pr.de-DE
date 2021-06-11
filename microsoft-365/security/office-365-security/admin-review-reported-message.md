@@ -13,12 +13,12 @@ ms.collection:
 description: Erfahren Sie, wie Sie gemeldete Nachrichten überprüfen und Ihren Benutzern Feedback geben.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 217f5ebb1692d68b5dc70988888bf78d4bd36a0c
-ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
+ms.openlocfilehash: 9e6969b6dee38135ee2d1d41bbcdb2561943d1fe
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52893728"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878712"
 ---
 # <a name="admin-review-for-reported-messages"></a>Überprüfung gemeldeter Nachrichten durch den Administrator
 
@@ -37,15 +37,17 @@ Dieses Feature ist darauf ausgelegt, Ihren Benutzern Feedback zu geben, ändert 
 
 Sie können Benutzer nur dann markieren und über Rezensionsergebnisse informieren, wenn die Nachricht als [falsch positive oder falsch negative](report-false-positives-and-false-negatives.md)Ergebnisse gemeldet wurde.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Wissenswertes, bevor Sie anfangen
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Microsoft 365 Defender-Portal unter <https://security.microsoft.com/> . Um direkt zur Seite **"Übermittlungen"** zu wechseln, verwenden Sie <https://security.microsoft.com/reportsubmission> .
+
+- Sie öffnen das Microsoft 365 Security Center unter <https://security.microsoft.com/> . Um direkt zur Seite **"Übermittlungen"** zu wechseln, verwenden Sie <https://security.microsoft.com/reportsubmission> .
 
 - Um die Konfiguration für Benutzerübermittlungen zu ändern, müssen Sie Mitglied einer der folgenden Rollengruppen sein:
-  - Organisationsverwaltung oder Sicherheitsadministrator im [Microsoft 365 Defender-Portal.](permissions-microsoft-365-security-center.md)
+  - Organisationsverwaltung oder Sicherheitsadministrator im [Microsoft 365 Security Center.](permissions-microsoft-365-security-center.md)
   - Organisationsverwaltung in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
-- Sie benötigen auch Zugriff auf Exchange Online PowerShell. Wenn das Konto, das Sie verwenden möchten, keinen Zugriff auf Exchange Online PowerShell hat, erhalten Sie eine Fehlermeldung, die besagt, dass *eine E-Mail-Adresse in Ihrer Domäne angegeben* wird. Weitere Informationen zum Aktivieren oder Deaktivieren des Zugriffs auf Exchange Online PowerShell finden Sie in den folgenden Themen:
+
+- Sie benötigen auch Zugriff auf die Exchange Online PowerShell. Wenn das Konto, das Sie verwenden möchten, keinen Zugriff auf Exchange Online PowerShell hat, erhalten Sie eine Fehlermeldung, die besagt, dass *eine E-Mail-Adresse in Ihrer Domäne angegeben* wird. Weitere Informationen zum Aktivieren oder Deaktivieren des Zugriffs auf Exchange Online PowerShell finden Sie in den folgenden Themen:
   - [Aktivieren oder Deaktivieren des Zugriffs auf Exchange Online PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)
   - [Clientzugriffsregeln in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 

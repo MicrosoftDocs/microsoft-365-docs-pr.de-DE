@@ -431,6 +431,8 @@
               href: archive-webexteams-data.md
             - name: Webseiten
               href: archive-webpagecapture-data.md
+            - name: Webseiten
+              href: archive-webpagecapture-data.md
             - name: Workplace von Facebook
               href: archive-workplacefromfacebook-data.md
             - name: XIP
@@ -457,6 +459,8 @@
               href: archive-telus-network-data.md
             - name: Verizon-Netzwerk
               href: archive-verizon-network-data.md
+            - name: WeChat (Vorschau)
+              href: archive-wechat-data.md
             - name: WhatsApp
               href: archive-whatsapp-data.md
         - name: Zusammenarbeit mit einem Partner zum Archivieren von Drittanbieterdaten

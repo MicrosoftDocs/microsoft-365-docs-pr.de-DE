@@ -23,12 +23,12 @@ ms.custom:
 - commerce_billing
 description: Suchen Sie Ihre Rechnung oder Ihren Kontoauszug im Microsoft 365 Admin Center. Sie können auch eine Kopie Ihrer Rechnung speichern und ausdrucken.
 ms.date: 07/31/2020
-ms.openlocfilehash: 3c41e52803c78cc687134c6c68899466236ceca3
-ms.sourcegitcommit: 967f64dfa1a05f31179c8316b96bfb7758a5d990
+ms.openlocfilehash: 7e37e296f37583e1fc0b2fc3474609e11c5a5e1f
+ms.sourcegitcommit: 03aa8ed22d9ef685a851e28c7d0cfb725732fe4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52331910"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52888349"
 ---
 # <a name="view-your-bill-or-invoice"></a>Anzeigen Ihrer Rechnung
 
@@ -105,4 +105,5 @@ Wenn Sie über ein Guthaben verfügen, können Sie online bezahlen. Wie das geht
 
 [Zahlung per Rechnung, Kreditkarte oder Bankkonto](pay-for-your-subscription.md) (Artikel) \
 [Zahlungsmethoden verwalten](manage-payment-methods.md) (Artikel) \
+[Abrechnungsinformationen für Microsoft 365 für Unternehmen in Mexiko](/microsoft-365/commerce/billing-and-payments/mexico-billing-info) (Artikel) \
 [Minecraft: Education Edition – Zahlungsoptionen](/education/windows/school-get-minecraft) (Artikel)
