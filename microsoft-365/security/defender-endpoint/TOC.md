@@ -174,7 +174,7 @@
 
 ### [Behandeln von Onboarding-Problemen]()
 #### [Behandeln von Problemen beim Onboarding](troubleshoot-onboarding.md)
-#### [Problembehandlung bei Abonnement- und Portalzugriffsproblemen](troubleshoot-onboarding-error-messages.md).
+#### [Problembehandlung bei Abonnement- und Portalzugriffsproblemen](troubleshoot-onboarding-error-messages.md)
 
 
 
@@ -212,7 +212,7 @@
 #### [Konfigurieren der Zeitzoneneinstellungen im Microsoft Defender Security Center](time-settings.md)
 
 ## [Entdecken von Bedrohungen und Schützen von Endpunkten]()
-### [Bedrohungs- und Sicherheitsrisikomanagement]():
+### [Bedrohungs- und Sicherheitsrisikomanagement]()
 #### [Übersicht](next-gen-threat-and-vuln-mgt.md)
 #### [Erste Schritte]()
 ##### [Voraussetzungen & Berechtigungen](tvm-prerequisites.md)
@@ -244,7 +244,7 @@
 
 ### [Hostfirewallberichte in Microsoft Defender für Endpunkt](host-firewall-reporting.md)
 
-### [Verringerung der Angriffsfläche]():
+### [Verringerung der Angriffsfläche]()
 #### [Übersicht der Verringerung der Angriffsfläche](overview-attack-surface-reduction.md)
 #### [Konfigurieren der Funktionen zur Verringerung der Angriffsfläche](configure-attack-surface-reduction.md)
 #### [Weitere Informationen zu den Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md)
