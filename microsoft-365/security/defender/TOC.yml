@@ -120,7 +120,7 @@
                   items:
                     - name: Phishing-E-Mail
                       href: first-incident-path-phishing.md
-                    - name: Identität
+                    - name: Identity
                       href: first-incident-path-identity.md
             - name: Playbooks für die Reaktion auf Vorfälle
               href: /security/compass/incident-response-playbooks
@@ -336,6 +336,8 @@
                       href: api-list-incidents.md
                     - name: Aktualisieren von Vorfällen
                       href: api-update-incidents.md
+                    - name: Vorfall abrufen
+                      href: api-get-incident.md
     - name: Microsoft Defender für Office 365
       href: ../office-365-security/index.yml
     - name: Microsoft Defender für Endpunkt

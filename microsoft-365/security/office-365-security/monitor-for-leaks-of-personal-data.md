@@ -19,12 +19,12 @@ search.appverid:
 description: Lernen Sie drei Tools kennen, mit denen Sie Lecks für personenbezogene Daten aufspüren können.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0976c0d1c0c8d3ebb25ebf423f1d9df2f71fc852
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 05d31ac36fbdc687c60ec3c03efac9be43da9c39
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538279"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878484"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Überwachen auf Lecks für personenbezogene Daten
 
@@ -50,20 +50,15 @@ Nachdem Sie DLP-Richtlinien (Data Loss Prevention, Verhinderung von Datenverlust
 Sie können die DLP-Berichte für Folgendes verwenden:
 
 - Sie können sich auf bestimmte Zeiträume konzentrieren und so mehr über die Gründe für Spitzen und Trends erfahren.
-
 - Sie können die Geschäftsprozesse ermitteln, die gegen die DLP-Richtlinien Ihrer Organisation verstoßen.
-
 - Sie können die geschäftlichen Auswirkungen der DLP-Richtlinien besser nachvollziehen.
-
 - Zeigen Sie die Begründungen an, die von Benutzern gesendet werden, wenn diese einen Richtlinientipp durch Außerkraftsetzen der Richtlinie oder durch Melden eines falsch positiven Resultats lösen.
-
 - Sie können die Einhaltung einer bestimmten DLP-Richtlinie durch Anzeigen von Übereinstimmungen für diese Richtlinie überprüfen.
-
 - Sie können Detailbereich eine Liste von Dateien mit vertraulichen Daten anzeigen, die mit den DLP-Richtlinien übereinstimmen.
 
 Darüber hinaus können Sie anhand der DLP-Berichte Ihre DLP-Richtlinien bei der Ausführung im Testmodus genauer anpassen.
 
-DLP-Berichte finden sich im Security Center und Compliance Center. Navigieren Sie zu Berichte \> Berichte anzeigen. Wechseln Sie unter „Verhinderung von Datenverlust (Data Loss Prevention, DLP)“ entweder zu „DLP-Richtlinien- und -Regelübereinstimmungen“ oder zu „Falsch positive Meldungen der DLP-Richtlinie und Außerkraftsetzungen“.
+DLP-Berichte befinden sich im Microsoft 365 Compliance Center. Gehen Sie zum Abschnitt **Berichte** \> **Organisationsdaten**, um die Berichte **DLP-Richtlinienübereinstimmungen**, **DLP-Vorfälle** und **DLP-Falschmeldungen und Überschreibungen zu finden**.
 
 Weitere Informationen finden Sie unter [Anzeigen der Berichte zur Verhinderung von Datenverlust](../../compliance/view-the-dlp-reports.md).
 
@@ -73,30 +68,24 @@ Weitere Informationen finden Sie unter [Anzeigen der Berichte zur Verhinderung v
 
 Das Überwachungsprotokoll enthält Ereignisse von Exchange Online, SharePoint Online, OneDrive for Business, Azure Active Directory, Microsoft Teams, Power BI, Sway und anderen Diensten.
 
-Security Center und Compliance Center bieten zwei Möglichkeiten zum Überwachen und Berichten anhand des Überwachungsprotokolls:
+Das Microsoft 365 Defender-Portal und das Microsoft 365 Compliance Center bieten zwei Möglichkeiten, das Überwachungsprotokoll zu überwachen und Berichte zu erstellen:
 
-- Einrichten von Warnungsrichtlinien, Anzeigen von Warnungen und überwachen von Trends – Verwenden Sie die Warnungsrichtlinien- und Warnungsdashboardtools im Security oder Compliance Center.
+- Einrichten von Warnrichtlinien, Anzeigen von Warnungen und Überwachen von Trends – Verwenden Sie die Tools für Warnrichtlinien und das Dashboard für Warnungen entweder im Microsoft 365 Defender-Portal oder im Microsoft 365 Compliance Center.
+- Direktes Durchsuchen des Überwachungsprotokolls – Suchen Sie nach allen Ereignissen in einem bestimmten Datumsbereich. Oder filtern Sie die Ergebnisse nach bestimmten Kriterien, z. B. nach dem Benutzer, der die Aktion ausgeführt hat, der Aktion oder dem Zielobjekt.
 
-- Direktes Durchsuchen des Überwachungsprotokolls – Suchen Sie nach allen Ereignissen in einem bestimmten Datumsbereich. Oder filtern Sie die Ergebnisse nach bestimmten Kriterien, z. B. nach dem Benutzer, der die Aktion ausgeführt hat, der Aktion oder dem Zielobjekt.
+Informationenssicherheits- und Compliance-Teams können diese Tools verwenden, um von Endbenutzern und Administratoren in Diensten ausgeführte Aktivitäten proaktiv zu überprüfen. Automatische Warnungen können konfiguriert werden, sodass E-Mail-Benachrichtigungen gesendet werden, wenn bestimmte Aktivitäten für bestimmte Websitesammlungen auftreten – z. B., wenn Inhalte von Websites freigegeben werden, die bekanntermaßen DSGVO-relevante Informationen enthalten. Dadurch können sich die Teams gezielt an die Benutzer wenden, um sicherzustellen, dass die Sicherheitsrichtlinien des Unternehmens eingehalten werden. Oder sie können zusätzliche Schulung bereitstellen.
 
-Informationenssicherheits- und Compliance-Teams können diese Tools verwenden, um von Endbenutzern und Administratoren in Diensten ausgeführte Aktivitäten proaktiv zu überprüfen. Automatische Warnungen können konfiguriert werden, sodass E-Mail-Benachrichtigungen gesendet werden, wenn bestimmte Aktivitäten für bestimmte Websitesammlungen auftreten – z. B., wenn Inhalte von Websites freigegeben werden, die bekanntermaßen DSGVO-relevante Informationen enthalten. Dadurch können sich die Teams gezielt an die Benutzer wenden, um sicherzustellen, dass die Sicherheitsrichtlinien des Unternehmens eingehalten werden. Oder sie können zusätzliche Schulung bereitstellen.
-
-Informationssicherheitsteams können auch das Überwachungsprotokoll durchsuchen, um einen vermeintlichen Datenmissbrauch zu untersuchen sowie Ursache und Ausmaß der Verletzung zu bestimmen. Diese integrierte Funktionalität erleichtert die Einhaltung der Artikel 33 und 34 der DSGVO. Diese verlangen bei einer Datenpanne die Benachrichtigung der Aufsichtsbehörde der DSGVO und der betroffenen Person selbst innerhalb eines bestimmten Zeitraums. Einträge im Überwachungsprotokoll werden nur 90 Tage lang im Dienst aufbewahrt. Häufig empfiehlt es sich, und viele Organisationen erfordern dies, dass die Protokolle länger aufbewahrt werden.
+Informationssicherheitsteams können auch das Überwachungsprotokoll durchsuchen, um einen vermeintlichen Datenmissbrauch zu untersuchen sowie Ursache und Ausmaß der Verletzung zu bestimmen. Diese integrierte Funktionalität erleichtert die Einhaltung der Artikel 33 und 34 der DSGVO. Diese verlangen bei einer Datenpanne die Benachrichtigung der Aufsichtsbehörde der DSGVO und der betroffenen Person selbst innerhalb eines bestimmten Zeitraums. Einträge im Überwachungsprotokoll werden nur 90 Tage lang im Dienst aufbewahrt. Häufig empfiehlt es sich, und viele Organisationen erfordern dies, dass die Protokolle länger aufbewahrt werden.
 
 Es sind Lösungen verfügbar, die über die Microsoft Verwaltungsaktivitäts-API die einheitlichen Überwachungsprotokolle (Unified Audit Logs) abonnieren und beide Protokolleinträge nach Bedarf speichern können. Diese bieten erweiterte Dashboards und Warnungen. Ein Beispiel hierfür ist [Microsoft Operations Management Suite (OMS)](/azure/operations-management-suite/oms-solution-office-365).
 
 Weitere Informationen zu Warnungsrichtlinien und zum Durchsuchen des Überwachungsprotokolls finden Sie unter:
 
-- [Warnungsrichtlinien in Microsoft 365](../../compliance/alert-policies.md)
-
+- [Warnungsrichtlinien in Microsoft 365](../../compliance/alert-policies.md)
 - [Durchsuchen des Überwachungsprotokolls nach Benutzer- und Administratoraktivitäten in Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (Einführung)
-
 - [Aktivieren oder Deaktivieren der Überwachungsprotokollsuche](../../compliance/turn-audit-log-search-on-or-off.md)
-
 - [Durchsuchen des Überwachungsprotokolls](../../compliance/search-the-audit-log-in-security-and-compliance.md)
-
 - [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (Cmdlet)
-
 - [Detaillierte Eigenschaften im Überwachungsprotokoll](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
@@ -124,16 +113,15 @@ Die folgenden Attributtypen werden in Kürze in Cloud App Security verfügbar se
 
 Wenn Sie Cloud App Security noch nicht verwenden, starten Sie es zunächst. So greifen Sie auf Cloud App Security zu: <https://portal.cloudappsecurity.com>
 
-Hinweis: Aktivieren Sie unbedingt „Automatisch Dateien auf Azure Information Protection-Klassifizierungsbezeichnungen überprüfen“ (in den allgemeinen Einstellungen), entweder bei den ersten Schritten mit Cloud App Security oder bevor Sie Bezeichnungen zuweisen. Nach der Installation überprüft Cloud App Security vorhandene Dateien erst wieder, wenn sie geändert werden.
+> [!NOTE]
+> Hinweis: Aktivieren Sie unbedingt „Automatisch Dateien auf Azure Information Protection-Klassifizierungsbezeichnungen überprüfen“ (in den allgemeinen Einstellungen), entweder bei den ersten Schritten mit Cloud App Security oder bevor Sie Bezeichnungen zuweisen. Nach der Installation überprüft Cloud App Security vorhandene Dateien erst wieder, wenn sie geändert werden.
 
 ![Dashboard mit Informationen zu Warnungen](../../media/Monitor-for-leaks-of-personal-data-image4.png)
 
 Weitere Informationen:
 
 - [Bereitstellen von Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
-
 - [Weitere Informationen zu Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
-
 - [Blockieren von Downloads vertraulicher Daten mithilfe des Microsoft Cloud App Security-Proxys](/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>Beispieldatei und Aktivitätsrichtlinien zum Erkennen der Freigabe von personenbezogenen Daten
@@ -141,6 +129,8 @@ Weitere Informationen:
 ### <a name="detect-sharing-of-files-containing-pii--credit-card-number"></a>Freigabe von Dateien mit PII erkennen – Kreditkartennummer
 
 Benachrichtigen, wenn eine Datei mit einer Kreditkartennummer von einer genehmigten Cloud-App freigegeben wird.
+
+<br>
 
 ****
 
@@ -170,6 +160,8 @@ Hinweise:
 
 - Zum Überwachen von Box muss mithilfe des API-Connector-SDK ein Connector konfiguriert werden.
 - Diese Richtlinie erfordert Funktionen, die sich derzeit im privaten Vorschaumodus befinden.
+
+<br>
 
 ****
 
