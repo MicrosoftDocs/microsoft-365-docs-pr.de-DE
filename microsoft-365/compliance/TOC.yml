@@ -245,7 +245,7 @@
               href: dlp-teams-default-policy.md
             - name: 'Informationen zum lokalen Microsoft 365-DLP-Scanner (Data Loss Prevention, Verhinderung von Datenverlust) (Vorschau)'
               href: dlp-on-premises-scanner-learn.md
-            - name: Erfahren Sie mehr über das Microsoft Compliance-Erweiterung (Vorschau)
+            - name: Erfahren Sie mehr über die Microsoft Compliance-Erweiterung
               href: dlp-chrome-learn-about.md
             - name: Informationen zum Dashboard zur Verhinderung von Datenverlust
               href: dlp-alerts-dashboard-learn.md
@@ -267,7 +267,7 @@
               href: endpoint-dlp-getting-started.md
             - name: Konfigurieren von Geräteproxy- und Internetverbindungseinstellungen für die Verhinderung von Datenverlust am Endpunkt
               href: endpoint-dlp-configure-proxy.md
-            - name: Erste Schritte mit der Microsoft Compliance Erweiterung (Vorschau)
+            - name: Erste Schritte mit der Microsoft Compliance Erweiterung
               href: dlp-chrome-get-started.md
             - name: Erste Schritte mit dem Dashboard zur Verhinderung von Datenverlust
               href: dlp-alerts-dashboard-get-started.md
@@ -694,14 +694,14 @@
               href: add-data-to-review-set-from-another-review-set.md
         - name: Überprüfen von Fallinhalten
           items:
-            - name: Verwenden des Prüfdateisatz-Dashboards
-              href: advanced-ediscovery-dashboard.md
-            - name: Anzeigen von Dokumenten in einem Prüfdateisatz
-              href: view-documents-in-review-set.md
             - name: Abfragen und filtern von Inhalten in einem Prüfdateisatz
               href: review-set-search.md
             - name: Markieren von Dokumenten in einem Prüfdateisatz
               href: tagging-documents.md
+            - name: Anzeigen von Dokumenten in einem Prüfdateisatz
+              href: view-documents-in-review-set.md
+            - name: Verwenden des Prüfdateisatz-Dashboards
+              href: advanced-ediscovery-dashboard.md
         - name: Analysieren von Fallinhalten
           href: analyzing-data-in-review-set.md
           items:
@@ -711,12 +711,20 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: Designs
               href: themes-in-advanced-ediscovery.md
-            - name: Predictive Coding-Modul (Vorschau)
+        - name: Verwenden von Predictive Coding (Vorschau)
+          items:
+            - name: Schnellstart – Predictive Coding
+              href: predictive-coding-quick-start.md
+            - name: Informationen zur Predictive Coding
               href: predictive-coding-overview.md
-            - name: Verwenden des Relevanzmoduls zur Inhaltsanalyse
-              href: using-relevance.md
-            - name: Ausmusterung des Relevanzmoduls
-              href: relevance-module-retirement.md
+            - name: Erstellen eines Predictive Coding-Modells
+              href: predictive-coding-create-model.md
+            - name: Trainieren eines Predictive Coding-Modells
+              href: predictive-coding-train-model.md
+            - name: Anwenden des Filter für die Vorhersagebewertung
+              href: predictive-coding-apply-prediction-filter.md
+            - name: Predictive Coding-Referenz
+              href: predictive-coding-reference.md
         - name: Exportieren des Fallinhalts
           href: exporting-data-ediscover20.md
           items:
