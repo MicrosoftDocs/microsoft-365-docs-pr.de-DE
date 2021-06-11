@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ebde023db5196117a02a2372784a3110839c51fa
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 956fb591154df374c8010d875645e1122f3419b2
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843530"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879240"
 ---
 # <a name="microsoft-threat-experts"></a>Microsoft-Bedrohungsexperten
 
@@ -47,7 +47,7 @@ Dieser Dienst für die verwaltete Bedrohungssuche bietet expertengesteuerte Einb
 
 Wenn Sie Ein Kunde von Microsoft Defender für Endpunkt sind, müssen Sie Microsoft-Bedrohungsexperten – **Benachrichtigungen** über gezielte Angriffe beantragen, um spezielle Einblicke und Analysen zu erhalten, die ihnen helfen, die kritischsten Bedrohungen in Ihrer Umgebung zu identifizieren, damit Sie schnell darauf reagieren können.
 
-Wenn Sie sich für Microsoft-Bedrohungsexperten – Vorteile von gezielten Angriffsbenachrichtigungen – registrieren möchten, wechseln Sie zu **Einstellungen**  >  **allgemeinen**  >  **erweiterten Features** Microsoft-Bedrohungsexperten –  >  **Zutreffende gezielte Angriffsbenachrichtigungen.** Nach der Annahme erhalten Sie die Vorteile von Benachrichtigungen über gezielte Angriffe.
+Um sich für Microsoft-Bedrohungsexperten – Vorteile von gezielten Angriffsbenachrichtigungen – zu registrieren, wechseln Sie zu **Einstellungen** Allgemeinen  >    >    >  **erweiterten Endpunktfunktionen**  >  **Microsoft-Bedrohungsexperten – Anzuwendende Benachrichtigungen** über gezielte Angriffe. Nach der Annahme erhalten Sie die Vorteile von Benachrichtigungen über gezielte Angriffe.
 
 Wenden Sie sich an Ihr Kontoteam oder einen Microsoft-Mitarbeiter, um Microsoft-Bedrohungsexperten – **Experts on Demand** zu abonnieren, um sich mit unseren Bedrohungsexperten über relevante Erkennungen und Angreifer zu beraten, mit denen Ihre Organisation konfrontiert ist.
 
@@ -61,7 +61,7 @@ Microsoft-Bedrohungsexperten : Die Benachrichtigung über gezielte Angriffe erm�
 - Umfang der Kompromittierung und so viel Kontext wie möglich schnell bereitgestellt werden können, um eine schnelle SOC-Antwort zu ermöglichen. 
  
 ## <a name="microsoft-threat-experts---experts-on-demand"></a>Microsoft-Bedrohungsexperten – Experten bei Bedarf
-Kunden können unsere Sicherheitsexperten direkt aus Microsoft Defender Security Center für eine zeitnahe und genaue Antwort einbeziehen. Experten bieten Einblicke, die erforderlich sind, um die komplexen Bedrohungen, die Sich auf Ihre Organisation auswirken, besser zu verstehen, von Warnungsanfragen, potenziell kompromittierten Geräten, der Ursache einer verdächtigen Netzwerkverbindung bis hin zu zusätzlichen Bedrohungsinformationen in Bezug auf laufende fortgeschrittene dauerhafte Bedrohungskampagnen. Mit dieser Funktion können Sie:
+Kunden können unsere Sicherheitsexperten direkt in Microsoft Defender Security Center einbeziehen, um zeitnah und präzise antworten zu können. Experten bieten Einblicke, die erforderlich sind, um die komplexen Bedrohungen, die Sich auf Ihre Organisation auswirken, besser zu verstehen, von Warnungsanfragen, potenziell kompromittierten Geräten, der Ursache einer verdächtigen Netzwerkverbindung bis hin zu zusätzlichen Bedrohungsinformationen in Bezug auf laufende fortgeschrittene dauerhafte Bedrohungskampagnen. Mit dieser Funktion können Sie:
 - Erhalten Sie zusätzliche Erläuterungen zu Warnungen, einschließlich der Ursache oder des Umfangs des Vorfalls 
 - Verschaffen Sie sich Klarheit über verdächtiges Geräteverhalten und die nächsten Schritte, wenn Sie mit einem erweiterten Angreifer konfrontiert sind.  
 - Ermitteln von Risiken und Schutz in Bezug auf Bedrohungsteilnehmer, Kampagnen oder neue Angreifertechniken 

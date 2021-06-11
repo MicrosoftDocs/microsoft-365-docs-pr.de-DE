@@ -20,12 +20,12 @@ ms.custom:
 description: Benutzer können erfahren, wie sie in Exchange Online Protection (EOP) isolierte (unter Quarantäne gestellte) Nachrichten anzeigen und verwalten, die sie hätten empfangen sollen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4913d0c6fc34d912474bcceac8b1785c4a7e07b3
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 60b319b81362b9d88afcd734021db227969b04d0
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821295"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52877872"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Suchen und Freigeben von isolierten Nachrichten als Benutzer in EOP
 
@@ -51,11 +51,11 @@ Als Empfänger einer Quarantänenachricht wird in der folgenden Tabelle beschrie
 |Phishing (keine hohe Phishingwahrscheinlichkeit)|![Häkchen](../../media/checkmark.png)||![Häkchen](../../media/checkmark.png)|
 |
 
-Sie können die in Quarantäne befindlichen Nachrichten im Microsoft 365 Security Center oder (wenn ein Administrator dies eingerichtet hat) in [Spambenachrichtigungen für Endbenutzer](use-spam-notifications-to-release-and-report-quarantined-messages.md) anzeigen und verwalten.
+Sie sehen und verwalten Ihre unter Quarantäne gestellten Nachrichten im Microsoft 365 Defender-Portal oder (wenn ein Administrator dies eingerichtet hat) in den [Spam-Benachrichtigungen für Endbenutzer](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Wissenswertes, bevor Sie anfangen
 
-- Um das Security Center zu öffnen, wechseln Sie zu <https://security.microsoft.com>. Um die Quarantäne-Seite direkt zu öffnen, wechseln Sie zu <https://security.microsoft.com/quarantine>.
+- Um das Microsoft 365 Defender-Portal zu öffnen, gehen Sie zu <https://security.microsoft.com>. Um die Quarantäne-Seite direkt zu öffnen, wechseln Sie zu <https://security.microsoft.com/quarantine>.
 
 - Administratoren können konfigurieren, wie lange Nachrichten isoliert werden, bevor sie endgültig in Anti-Spam-Richtlinien gelöscht werden. Nachrichten, die aus der Quarantäne abgelaufen sind, können nicht wiederhergestellt werden. Weitere Informationen finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md).
 
@@ -67,7 +67,7 @@ Sie können die in Quarantäne befindlichen Nachrichten im Microsoft 365 Securit
 
 ## <a name="view-your-quarantined-messages"></a>Anzeigen Ihrer isolierten Nachrichten
 
-1. Wechseln Sie im Security Center zu **E-Mail und Zusammenarbeit** \> **Überprüfung** \> **Quarantäne**.
+1. Gehen Sie im Microsoft 365 Defender-Portal zu **E-Mail & Zusammenarbeit** \> **Überprüfung** \> **Quarantäne**.
 
 2. Sie können die Ergebnisse sortieren, indem Sie auf eine verfügbare Spaltenüberschrift klicken. Klicken Sie auf **Spalten ändern**, um höchstens sieben Spalten anzuzeigen. Die Standardwerte sind mit einem Sternchen (<sup>\*</sup>) gekennzeichnet:
 

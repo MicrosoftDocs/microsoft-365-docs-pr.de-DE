@@ -18,12 +18,12 @@ ms.collection:
 description: Administratoren können erfahren, wie Sie die Konfigurationsanalyse verwenden, um Sicherheitsrichtlinien zu finden und zu beheben, die sich unterhalb des Standardschutzes und der voreingestellten Sicherheitsrichtlinien für den strengen Schutz befinden.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0d2ad1449730f392adc27c8ed2a8fc8e9ecc7a04
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: f98ab9b251894a5821d308d95fd786b496e396e4
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789304"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878664"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Konfigurationsanalyse für Schutzrichtlinien in EOP und Microsoft Defender für Office 365
 
@@ -34,11 +34,11 @@ ms.locfileid: "52789304"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Configuration Analyzer im Microsoft 365 Security Center bietet einen zentralen Ort zum Suchen und Beheben von Sicherheitsrichtlinien, in denen sich die Einstellungen unter den Standardschutz- und Strict Protection-Profileinstellungen in [vordefinierten Sicherheitsrichtlinien befinden.](preset-security-policies.md)
+Configuration Analyzer im Microsoft 365 Defender-Portal bietet einen zentralen Ort zum Suchen und Beheben von Sicherheitsrichtlinien, in denen sich die Einstellungen unter den Standardschutz- und Strict Protection-Profileinstellungen in [vordefinierten Sicherheitsrichtlinien](preset-security-policies.md)befinden.
 
 Die folgenden Richtlinientypen werden vom Konfigurationsanalyseprogramm analysiert:
 
-- **Exchange Online Protection (EOP)-Richtlinien:** Dies umfasst Microsoft 365 Organisationen mit Exchange Online Postfächern und eigenständige EOP-Organisationen ohne Exchange Online Postfächer:
+- **Exchange Online Protection (EOP)-Richtlinien:** Dazu gehören Microsoft 365 Organisationen mit Exchange Online Postfächern und eigenständige EOP-Organisationen ohne Exchange Online Postfächer:
 
   - [Antispamrichtlinien.](configure-your-spam-filter-policies.md)
   - [Antischadsoftwarerichtlinien](configure-anti-malware-policies.md).
@@ -57,27 +57,27 @@ Die Standard- und **Strict-Richtlinieneinstellungswerte,** die als Basislinien v
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security Center über <https://security.microsoft.com>. To go directly to the **Configuration analyzer** page, use <https://security.microsoft.com/configurationAnalyzer> .
+- Sie öffnen das Microsoft 365 Defender-Portal unter <https://security.microsoft.com> . To go directly to the **Configuration analyzer** page, use <https://security.microsoft.com/configurationAnalyzer> .
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-- Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen berechtigungen im Security Center zugewiesen werden:
+- Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen im Microsoft 365 Defender-Portal Berechtigungen zugewiesen werden:
   - Um die Konfigurationsanalyse zu verwenden **und** Aktualisierungen an Sicherheitsrichtlinien vorzunehmen, müssen Sie Mitglied der Rollengruppen **"Organisationsverwaltung"** oder **"Sicherheitsadministrator"** sein.
   - Für den schreibgeschützten Zugriff auf die Konfigurationsanalyse müssen Sie Mitglied der Rollengruppe **"Globaler Leser"** oder **"Sicherheitsleseberechtigter"** sein.
 
-  Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Security Center.](permissions-microsoft-365-security-center.md)
+  Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender-Portal.](permissions-microsoft-365-security-center.md)
 
   > [!NOTE]
   >  
-  > - Wenn Sie Benutzer zur entsprechenden Azure Active Directory Rolle hinzufügen, erhalten Benutzer die erforderlichen Berechtigungen im Sicherheitscenter _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
+  > - Wenn Sie Benutzer zur entsprechenden Azure Active Directory Rolle hinzufügen, erhalten Benutzer die erforderlichen Berechtigungen im Microsoft 365 Defender-Portal _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   >
   > - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
-## <a name="use-the-configuration-analyzer-in-the-security-center"></a>Verwenden der Konfigurationsanalyse im Security Center
+## <a name="use-the-configuration-analyzer-in-the-microsoft-365-defender-portal"></a>Verwenden der Konfigurationsanalyse im Microsoft 365 Defender-Portal
 
-Wechseln Sie im Security Center zu **E-Mail-& Richtlinien** für die Zusammenarbeit \> **& Regeln** \> **bedrohungsrichtlinien** \> **vorlagenbasierte Richtlinien** Abschnitt Configuration \> **Analyzer**.
+Wechseln Sie im Microsoft 365 **Defender-Portal zu E-Mail-& Richtlinien** für die Zusammenarbeit \> **& Regeln** \> **Bedrohungsrichtlinien** \> **Vorlagenrichtlinien** Abschnitt Configuration \> **Analyzer**.
 
-Die Konfigurationsanalyse verfügt über zwei Hauptregisterkarten:
+Die **Seite "Konfigurationsanalyse"** verfügt über zwei Hauptregisterkarten:
 
 - **Einstellungen und Empfehlungen:** Wählen Sie **"Standard"** oder **"Streng"** aus, und vergleichen Sie diese Einstellungen mit Ihren vorhandenen Sicherheitsrichtlinien. In den Ergebnissen können Sie die Werte Ihrer Einstellungen anpassen, um sie auf die gleiche Ebene wie Standard oder Strict zu bringen.
 - Analyse und Verlauf der **Konfigurationsverwehung:** Mit dieser Ansicht können Sie Richtlinienänderungen im Laufe der Zeit nachverfolgen.
@@ -86,7 +86,7 @@ Die Konfigurationsanalyse verfügt über zwei Hauptregisterkarten:
 
 Standardmäßig wird die Registerkarte für den Vergleich mit dem Standardschutzprofil geöffnet. Sie können zum Vergleich des Streng-Schutzprofils wechseln, indem Sie die **Empfehlungen "Streng anzeigen"** auswählen. Um zurück zu wechseln, wählen Sie **"Standardempfehlungen anzeigen" aus.**
 
-![Ansicht Einstellungen und Empfehlungen im Configuration Analyzer](../../media/configuration-analyzer-settings-and-recommendations-view.png)
+![Einstellungen und Empfehlungen in der Konfigurationsanalyse](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
 Standardmäßig enthält die Spalte **"Richtliniengruppe/Einstellungsname"** eine reduzierte Ansicht der verschiedenen Typen von Sicherheitsrichtlinien und der Anzahl der Einstellungen, die verbessert werden müssen (sofern vorhanden). Die Arten von Richtlinien sind:
 

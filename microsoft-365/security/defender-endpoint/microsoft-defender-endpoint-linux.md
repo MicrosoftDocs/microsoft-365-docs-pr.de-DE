@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bd9d42ed85e9a489107a72ccbe841537a7e524d4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4175d3bedff86dc7f8cdafc1ff2366ca1c9cffc4
+ms.sourcegitcommit: d0c160e89e17f451199bc4a85699effd2d935213
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843518"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52893740"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender für Endpunkt unter Linux
 
@@ -39,7 +39,7 @@ ms.locfileid: "52843518"
 In diesem Thema wird beschrieben, wie Sie Microsoft Defender für Endpunkt unter Linux installieren, konfigurieren, aktualisieren und verwenden.
 
 > [!CAUTION]
-> Das Ausführen anderer Endpunktschutzprodukte von Drittanbietern zusammen mit Microsoft Defender für Endpunkt unter Linux führt wahrscheinlich zu Leistungsproblemen und unvorhersehbaren Nebeneffekten. Wenn der Nicht-Microsoft-Endpunktschutz eine absolute Anforderung in Ihrer Umgebung ist, können Sie nach der Konfiguration der Antivirenfunktionen für die Ausführung im [passiven Modus](linux-preferences.md#enable--disable-passive-mode)weiterhin die Funktionen von Defender für Endpunkt unter Linux EDR nutzen.
+> Das Ausführen anderer Endpunktschutzprodukte von Drittanbietern zusammen mit Microsoft Defender für Endpunkt unter Linux führt wahrscheinlich zu Leistungsproblemen und unvorhersehbaren Nebeneffekten. Wenn der Schutz nicht von Microsoft stammender Endpunkte eine absolute Anforderung in Ihrer Umgebung ist, können Sie nach der Konfiguration der Antivirenfunktionen für die Ausführung im [passiven Modus](linux-preferences.md#enable--disable-passive-mode)weiterhin die Funktionen von Defender für Endpunkt unter Linux EDR nutzen.
 
 ## <a name="how-to-install-microsoft-defender-for-endpoint-on-linux"></a>So installieren Sie Microsoft Defender für Endpunkt unter Linux
 
@@ -101,7 +101,9 @@ Wenn Installationsfehler auftreten, finden Sie informationen zur [Problembehandl
 
 - /opt/microsoft/mdatp/sbin/wdavdaemon erfordert eine ausführbare Berechtigung. Weitere Informationen finden Sie unter "Sicherstellen, dass der Daemon über ausführbare Berechtigungen verfügt" in [der Problembehandlung von Installationsproblemen für Microsoft Defender für Endpunkt unter Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
 
-- Arbeitsspeicher: 1 GB
+- Kerne: mindestens 2, 4 bevorzugt
+
+- Arbeitsspeicher: mindestens 1 GB, 4 bevorzugt
 
     > [!NOTE]
     > Stellen Sie sicher, dass Sie über freien Speicherplatz in /var verfügen.

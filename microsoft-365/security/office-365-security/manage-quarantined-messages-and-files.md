@@ -16,15 +16,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können erfahren, wie sie isolierte Nachrichten für alle Benutzer in Exchange Online Protection (EOP) anzeigen und verwalten. Administratoren in Organisationen mit Microsoft Defender für Office 365 können auch isolierte Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams verwalten.
+description: Administratoren können erfahren, wie sie isolierte Nachrichten für alle Benutzer in Exchange Online Protection (EOP) anzeigen und verwalten. Administratoren in Organisationen mit Microsoft Defender für Office 365 können auch isolierte Dateien in SharePoint Online- OneDrive for Business und Microsoft Teams verwalten.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b484cc3a8462115b5151b34ba93ba0c041e16b4
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 01d5011248d1c0fc0daab0d04e1cca39e26e34bd
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822298"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878892"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Verwalten von isolierten Nachrichten und Dateien als Administrator in EOP
 
@@ -41,11 +41,11 @@ Administratoren können alle Arten von isolierten Nachrichten für alle Benutzer
 
 Administratoren in Organisationen mit Microsoft Defender für Office 365 können auch isolierte Dateien in SharePoint Online, OneDrive for Business und Microsoft Teams anzeigen, herunterladen und löschen.
 
-Sie können isolierte Nachrichten im Microsoft 365 Security Center oder in PowerShell anzeigen und verwalten (Exchange Online PowerShell für Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer).
+Sie können isolierte Nachrichten im Microsoft 365 Defender-Portal oder in PowerShell anzeigen und verwalten (Exchange Online PowerShell für Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Um das Sicherheitscenter zu öffnen, wechseln Sie zu <https://security.microsoft.com> . Um die Quarantäne-Seite direkt zu öffnen, wechseln Sie zu <https://security.microsoft.com/quarantine>.
+- Um das Microsoft 365 Defender-Portal zu öffnen, wechseln Sie zu <https://security.microsoft.com> . Um die Quarantäne-Seite direkt zu öffnen, wechseln Sie zu <https://security.microsoft.com/quarantine>.
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -68,11 +68,11 @@ Sie können isolierte Nachrichten im Microsoft 365 Security Center oder in Power
 
   Wenn eine Nachricht aus der Quarantäne abläuft, können Sie sie nicht wiederherstellen.
 
-## <a name="use-the-security-center-to-manage-quarantined-email-messages"></a>Verwenden des Sicherheitscenters zum Verwalten von isolierten E-Mail-Nachrichten
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-email-messages"></a>Verwenden des Microsoft 365 Defender-Portals zum Verwalten von isolierten E-Mail-Nachrichten
 
 ### <a name="view-quarantined-email"></a>Anzeigen von isolierten E-Mails
 
-1. Wechseln Sie im Security Center zu **E-Mail &** \> **Zusammenarbeitsüberprüfungsquarantäne.** \> 
+1. Wechseln Sie im Microsoft 365 **Defender-Portal zu "E-Mail & Zusammenarbeit** \> **überprüfen** \> **Quarantäne".**
 
 2. Überprüfen Sie auf der **Seite "Quarantäne",** ob **"In Quarantäne befindliche Ansicht"** auf den Standardwert **"E-Mail"** festgelegt ist.
 
@@ -102,13 +102,13 @@ Sie können isolierte Nachrichten im Microsoft 365 Security Center oder in Power
    - **Empfangszeit**: Geben Sie ein **Anfangsdatum** und **Enddatum** ein.
    - **Quarantänegrund**:
      - **Richtlinie:** Die Nachricht stimmte mit den Bedingungen einer Nachrichtenflussregel überein (auch als Transportregel bezeichnet).
-     - **Masse**
+     - **Massensendung**
      - **Phishing:** Die Spamfilterbewertung **lautete Phishing-E-Mail** oder Antiphishingschutz isoliert die Nachricht ([Spoofingeinstellungen](set-up-anti-phishing-policies.md#spoof-settings) oder [Identitätswechselschutz](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)).
      - **Schadsoftware**
      - **Spam**
      - **Phishing mit hoher Konfidenz**
    - **Richtlinientyp**: Filtern von Nachrichten nach Richtlinientyp:
-     - **Antischadsoftwarerichtlinie**
+     - **Anti-Schadsoftware-Richtlinie**
      - **Richtlinie für sichere Anlagen**
      - **Antiphishing-Richtlinie**
      - **Richtlinie für gehostete Inhaltsfilter** (Antispamrichtlinie)
@@ -195,7 +195,7 @@ Wenn Sie mehrere isolierte Nachrichten in der Liste auswählen (bis zu 100), wir
 
 Klicken Sie nach Abschluss des Vorgangs auf **Schließen**.
 
-## <a name="use-the-security-center-to-manage-quarantined-files-in-defender-for-office-365"></a>Verwenden des Sicherheitscenters zum Verwalten von isolierten Dateien in Defender für Office 365
+## <a name="use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365"></a>Verwenden des Microsoft 365 Defender-Portals zum Verwalten von isolierten Dateien in Defender für Office 365
 
 > [!NOTE]
 > Die Verfahren für isolierte Dateien in diesem Abschnitt sind nur für Abonnenten von Microsoft Defender für Office 365 Plan 1 und Plan 2 verfügbar.
@@ -204,7 +204,7 @@ In Organisationen mit Defender für Office 365 können Administratoren isolierte
 
 ### <a name="view-quarantined-files"></a>Anzeigen von isolierten Dateien
 
-1. Wechseln Sie im Security Center zu **E-Mail &** \> **Zusammenarbeitsüberprüfungsquarantäne.** \> 
+1. Wechseln Sie im Microsoft 365 **Defender-Portal zu "E-Mail & Zusammenarbeit** \> **überprüfen** \> **Quarantäne".**
 
 2. Ändern Sie auf der **Quarantäneseite** die Ansicht in **Quarantäne** in den **Wertdateien.** Sie können nach einem Feld sortieren, indem Sie auf eine verfügbare Spaltenüberschrift klicken.
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8973a78787345532055161507e2d30f75b3b2cf1
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: aeb6d93017f138ce898d25f7d76e05cdcf3e90c5
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844970"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878568"
 ---
 # <a name="microsoft-defender-for-endpoint-and-other-microsoft-solutions"></a>Microsoft Defender für Endpunkt und andere Microsoft-Lösungen
 
@@ -66,9 +66,9 @@ Verdächtige Aktivitäten sind Prozesse, die unter einem Benutzerkontext ausgef�
 Die Skype for Business Integration bietet Analysten die Möglichkeit, über eine einfache Schaltfläche aus dem Portal mit einem potenziell gefährdeten Benutzer oder Gerätebesitzer zu kommunizieren.
 
 ## <a name="microsoft-365-defender"></a>Microsoft 365 Defender
-Mit Microsoft 365 Defender bilden Microsoft Defender für Endpunkt und verschiedene Sicherheitslösungen von Microsoft eine einheitliche Unternehmensschutzsuite vor und nach einem Angriff, die sich nativ in Endpunkte, Identitäten, E-Mails und Anwendungen integriert, um komplexe Angriffe zu erkennen, zu verhindern, zu untersuchen und automatisch darauf zu reagieren. 
+Mit Microsoft 365 Defender, Microsoft Defender für Endpunkt und verschiedenen Sicherheitslösungen von Microsoft bilden Sie eine einheitliche Unternehmensschutzsuite vor und nach dem Angriff, die systemintern in Endpunkt, Identität, E-Mail und Anwendungen integriert ist, um komplexe Angriffe zu erkennen, zu verhindern, zu untersuchen und automatisch darauf zu reagieren. 
  
-[Weitere Informationen zu Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-threat-protection)
+[Weitere Informationen zu Microsoft 365 Defender](/microsoft-365/security/defender/microsoft-365-defender)
 
 
 ## <a name="related-topics"></a>Verwandte Themen

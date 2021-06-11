@@ -17,98 +17,98 @@ ms.collection:
 - m365initiative-defender-office365
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren erfahren, wie Sie den Angriffssimulator verwenden, um simulierte Phishing- und Kennwortangriffe in ihren organisationen Microsoft 365 E5 oder Microsoft Defender for Office 365 Plan 2 ausführen.
+description: Administratoren können erfahren, wie Sie den Angriffssimulator verwenden, um simulierte Phishing- und Kennwortangriffe in ihren Microsoft 365 E5 oder Microsoft Defender für Office 365 Plan 2-Organisationen auszuführen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73ad3501ed9818261c9fbec6ba12b4dc884da84f
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: 03e6c0077f13c85bfd20ac0583b64ce29e2535a1
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52624825"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878676"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Angriffssimulator in Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Gilt für** [Microsoft Defender für Office 365 Plan 2](defender-for-office-365.md)
+**Gilt** [für Microsoft Defender für Office 365 Plan 2](defender-for-office-365.md)
 
-Wenn Ihre Organisation über Microsoft Defender für Office 365 Plan 2 verfügt, der Funktionen zur Bedrohungsuntersuchung und -reaktion [umfasst,](office-365-ti.md)können Sie den Angriffssimulator im Security & Compliance Center verwenden, um realistische Angriffsszenarien in Ihrer Organisation ausführen. Diese simulierten Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren und zu finden, bevor sich ein tatsächlicher Angriff auf Ihr Endergebnis aus wirkt. Weitere Informationen finden Sie in diesem Artikel.
+Wenn Ihre Organisation über Microsoft Defender für Office 365 Plan 2 verfügt, der Funktionen für [die Untersuchung und Reaktion auf Bedrohungen](office-365-ti.md)umfasst, können Sie den Angriffssimulator im Security & Compliance Center verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen. Diese simulierten Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren und zu finden, bevor sich ein realer Angriff auf Ihre Unterlinie auswirkt. Lesen Sie diesen Artikel, um mehr zu erfahren.
 
 > [!NOTE]
 >
-> Der In diesem Artikel beschriebene Angriffssimulator ist  jetzt schreibgeschützt und wurde durch Angriffssimulationsschulungen im Knoten **E-Mail & Zusammenarbeit** im Microsoft 365 Security [Center ersetzt.](https://security.microsoft.com) Weitere Informationen finden Sie unter [Erste Schritte mit attack simulation training](attack-simulation-training-get-started.md).
+> Der Angriffssimulator, wie in diesem Artikel beschrieben, ist jetzt schreibgeschützt und wurde im Knoten **"E-Mail & Zusammenarbeit"** im Microsoft 365 Defender-Portal unter **"Angriffssimulationsschulung"** <https://security.microsoft.com> ersetzt. Weitere Informationen finden Sie unter ["Erste Schritte mit der Angriffssimulationsschulung".](attack-simulation-training-get-started.md)
 >
-> Die Möglichkeit, neue Simulationen aus dieser Version des Angriffssimulators zu starten, wurde deaktiviert. Sie können jedoch ab dem 24. Januar 2021 bis zu 90 Tage lang auf Berichte zugreifen.
+> Die Möglichkeit, neue Simulationen aus dieser Version des Angriffssimulators zu starten, wurde deaktiviert. Sie können jedoch noch bis zum 24. April 2021 auf Berichte zugreifen.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Zum Öffnen des Security & Compliance Centers wechseln Sie zu <https://protection.office.com/>. Der Angriffssimulator ist unter **Threat Management** \> **Attack simulator verfügbar.** Öffnen Sie , um direkt zum Angriffssimulator zu <https://protection.office.com/attacksimulator> wechseln.
+- Zum Öffnen des Security & Compliance Centers wechseln Sie zu <https://protection.office.com/>. Der Angriffssimulator ist im Angriffssimulator für die **Bedrohungsverwaltung** \> verfügbar. Um direkt zum Angriffssimulator zu wechseln, öffnen Sie <https://protection.office.com/attacksimulator> .
 
-- Weitere Informationen zur Verfügbarkeit von Attack Simulator für verschiedene Microsoft 365 finden Sie unter [Microsoft Defender for Office 365 service description](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description).
+- Weitere Informationen zur Verfügbarkeit des Angriffssimulators in verschiedenen Microsoft 365-Abonnements finden Sie unter [Microsoft Defender für Office 365 Dienstbeschreibung.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
-- Sie müssen Mitglied der Rollengruppen **Organisationsverwaltung** oder **Sicherheitsadministrator** sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+- Sie müssen Mitglied der Rollengruppen **"Organisationsverwaltung"** oder **"Sicherheitsadministrator"** sein. Weitere Informationen zu Rollengruppen im Security & Compliance Center finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-- Ihr Konto muss für die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) konfiguriert werden, um Kampagnen im Angriffssimulator zu erstellen und zu verwalten. Anweisungen finden Sie unter [Einrichten der mehrstufigen Authentifizierung](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
+- Ihr Konto muss für die mehrstufige Authentifizierung (Multi-Factor Authentication, MFA) konfiguriert werden, um Kampagnen im Angriffssimulator zu erstellen und zu verwalten. Anweisungen finden Sie unter Einrichten der [mehrstufigen Authentifizierung.](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)
 
 - Der Angriffssimulator funktioniert nur für cloudbasierte Postfächer.
 
-- Phishingkampagnen sammeln und verarbeiten Ereignisse für 30 Tage. Verlaufskampagnendaten sind bis zu 90 Tage nach dem Starten der Kampagne verfügbar.
+- Phishingkampagnen sammeln und verarbeiten Ereignisse für 30 Tage. Verlaufskampagnendaten stehen bis zu 90 Tage nach dem Start der Kampagne zur Verfügung.
 
-- Angriffssimulations- und Schulungsdaten werden zusammen mit anderen Kundendaten für Microsoft 365 gespeichert. Weitere Informationen finden Sie [unter Microsoft 365 Speicherorte](../../enterprise/o365-data-locations.md).
+- Angriffssimulations- und Schulungsdaten werden zusammen mit anderen Kundendaten für Microsoft 365-Dienste gespeichert. Weitere Informationen finden Sie unter [Microsoft 365 Datenspeicherorten.](../../enterprise/o365-data-locations.md)
 
-- Es gibt keine entsprechenden PowerShell-Cmdlets für Den Angriffssimulator.
+- Es gibt keine entsprechenden PowerShell-Cmdlets für den Angriffssimulator.
 
-## <a name="spear-phishing-campaigns"></a>Phishingkampagnen für Speerer
+## <a name="spear-phishing-campaigns"></a>Spear-Phishingkampagnen
 
-*Phishing* ist ein allgemeiner Begriff für E-Mail-Angriffe, die versuchen, vertrauliche Informationen in Nachrichten zu stehlen, die von legitimen oder vertrauenswürdigen Absendern zu sein scheinen. *Bei Dem Phishing* handelt es sich um einen gezielten Phishingangriff, bei dem fokussierte und angepasste Inhalte verwendet werden, die speziell auf die Zielempfänger zugeschnitten sind (in der Regel nach der Aufklärung der Empfänger durch den Angreifer).
+*Phishing* ist ein allgemeiner Begriff für E-Mail-Angriffe, die versuchen, vertrauliche Informationen in Nachrichten zu stehlen, die scheinbar von legitimen oder vertrauenswürdigen Absendern stammen. *Spear-Phishing* ist ein gezielter Phishing-Angriff, der fokussierte und angepasste Inhalte verwendet, die speziell auf die Zielempfänger zugeschnitten sind (in der Regel nach der Aufarbeitung der Empfänger durch den Angreifer).
 
-Im Angriffssimulator stehen zwei verschiedene Arten von Speerphishingkampagnen zur Verfügung:
+Im Angriffssimulator stehen zwei verschiedene Arten von Phishingkampagnen zur Verfügung:
 
-- **Spear phishing (credentials harvest)**: The attack tries to convince the recipients to click a URL in the message. Wenn sie auf den Link klicken, werden sie aufgefordert, ihre Anmeldeinformationen ein eingeben. In diesem Beispiel werden sie an einen der folgenden Speicherorte übernommen:
+- **Spear-Phishing (Credentials Harvest):** Der Angriff versucht, die Empfänger davon zu überzeugen, auf eine URL in der Nachricht zu klicken. Wenn sie auf den Link klicken, werden sie aufgefordert, ihre Anmeldeinformationen einzugeben. Wenn dies der Fall ist, werden sie an einen der folgenden Speicherorte weitergeleitet:
 
-  - Eine Standardseite, auf der erklärt wird, dass dies nur ein Test war, und gibt Tipps zum Erkennen von Phishingnachrichten.
+  - Eine Standardseite, auf der erläutert wird, dass dies nur ein Test war, und gibt Tipps zum Erkennen von Phishingnachrichten.
 
-    ![Was Benutzer sehen, wenn sie auf den Phishinglink klicken und ihre Anmeldeinformationen eingeben](../../media/attack-simulator-phishing-result.png)
+    ![Was Benutzern angezeigt wird, wenn sie auf den Phishing-Link klicken und ihre Anmeldeinformationen eingeben](../../media/attack-simulator-phishing-result.png)
 
   - Eine benutzerdefinierte Seite (URL), die Sie angeben.
 
-- **Spear phishing (attachment)**: Der Angriff versucht, die Empfänger davon zu überzeugen, eine .docx oder .pdf in der Nachricht zu öffnen. Die Anlage enthält den gleichen Inhalt aus dem Standardmäßigen Phishinglink, aber der erste Satz beginnt mit " , Sie sehen diese Nachricht als kürzlich geöffnete \<Display Name\> E-Mail-Nachricht...".
+- **Spear-Phishing (Anlage):** Der Angriff versucht, die Empfänger davon zu überzeugen, eine .docx oder .pdf Anlage in der Nachricht zu öffnen. Die Anlage enthält den gleichen Inhalt aus dem Standardmäßigen Phishing-Link, aber der erste Satz beginnt mit " \<Display Name\> , diese Nachricht wird als zuletzt geöffnete E-Mail-Nachricht angezeigt...".
 
 > [!NOTE]
-> Derzeit laufen Speerphishingkampagnen im Angriffssimulator nicht ab.
+> Derzeit laufen Spear-Phishingkampagnen im Angriffssimulator nicht ab.
 
-### <a name="create-a-spear-phishing-campaign"></a>Erstellen einer Speerphishingkampagne
+### <a name="create-a-spear-phishing-campaign"></a>Erstellen einer Spear-Phishing-Kampagne
 
-Ein wichtiger Bestandteil jeder Speerphishingkampagne ist das Aussehen und Gefühl der E-Mail-Nachricht, die an die Zielempfänger gesendet wird. Zum Erstellen und Konfigurieren der E-Mail-Nachricht stehen Ihnen die folgenden Optionen zur Verfügung:
+Ein wichtiger Bestandteil jeder Spear-Phishing-Kampagne ist das Aussehen und Verhalten der E-Mail-Nachricht, die an die Zielempfänger gesendet wird. Zum Erstellen und Konfigurieren der E-Mail-Nachricht stehen Ihnen die folgenden Optionen zur Verfügung:
 
-- **Verwenden Sie eine integrierte E-Mail-Vorlage:** Zwei integrierte Vorlagen sind verfügbar: Preiszusend und **Gehaltsabrechnungsupdate**.  Sie können einige, alle oder keine der E-Mail-Eigenschaften aus der Vorlage weiter anpassen, wenn Sie die Kampagne erstellen und starten.
+- **Verwenden Sie eine integrierte E-Mail-Vorlage:** Zwei integrierte Vorlagen sind verfügbar: **"Give away"** und **"Payroll Update".** Sie können einige, alle oder keine der E-Mail-Eigenschaften aus der Vorlage weiter anpassen, wenn Sie die Kampagne erstellen und starten.
 
-- **Erstellen einer wiederverwendbaren** E-Mail-Vorlage: Nachdem Sie die E-Mail-Vorlage erstellt und gespeichert haben, können Sie sie in zukünftigen Phishingkampagnen erneut verwenden. Sie können einige, alle oder keine der E-Mail-Eigenschaften aus der Vorlage weiter anpassen, wenn Sie die Kampagne erstellen und starten.
+- **Erstellen Sie eine wiederverwendbare E-Mail-Vorlage:** Nachdem Sie die E-Mail-Vorlage erstellt und gespeichert haben, können Sie sie in zukünftigen Spear-Phishingkampagnen erneut verwenden. Sie können einige, alle oder keine der E-Mail-Eigenschaften aus der Vorlage weiter anpassen, wenn Sie die Kampagne erstellen und starten.
 
-- **Erstellen Sie die E-Mail-Nachricht** im Assistenten: Sie können die E-Mail-Nachricht direkt im Assistenten erstellen, während Sie die Speerphishingkampagne erstellen und starten.
+- **Erstellen Sie die E-Mail-Nachricht im Assistenten:** Sie können die E-Mail-Nachricht direkt im Assistenten erstellen, während Sie die Speerphishingkampagne erstellen und starten.
 
 #### <a name="step-1-optional-create-a-custom-email-template"></a>Schritt 1 (Optional): Erstellen einer benutzerdefinierten E-Mail-Vorlage
 
 Wenn Sie eine der integrierten Vorlagen verwenden oder die E-Mail-Nachricht direkt im Assistenten erstellen möchten, können Sie diesen Schritt überspringen.
 
-1. Wechseln Sie im Security & Compliance Center zu **Angriffssimulator für die Bedrohungsverwaltung.** \> 
+1. Wechseln Sie im Security & Compliance Center zum Angriffssimulator für die **Bedrohungsverwaltung.** \> 
 
-2. Klicken Sie **auf der Seite** Angriffe simulieren in den Abschnitten Spear Phishing **(Credentials Harvest)** oder **Spear Phishing (Attachment)** auf **Angriffsdetails**.
+2. Klicken Sie auf der Seite **"Angriffe simulieren"** in den **Abschnitten "Spear Phishing (Credentials Harvest)** " oder **"Spear Phishing (Attachment)** " auf **"Angriffsdetails".**
 
    Es spielt keine Rolle, wo Sie die Vorlage erstellen. Die verfügbaren Optionen in der Vorlage sind für beide Arten von Phishingangriffen identisch.
 
-3. Klicken Sie auf der Seite **Angriffsdetails,** die  geöffnet wird, im Abschnitt **Phishingvorlagen** im Bereich Vorlagen erstellen auf **Neue Vorlage**.
+3. Klicken Sie auf der daraufhin geöffneten **Seite "Angriffsdetails"** im Abschnitt **"Phishingvorlagen"** im Bereich **"Vorlagen erstellen"** auf **"Neue Vorlage".**
 
-4. Der **Assistent zum** Konfigurieren von Phishingvorlagen wird in einem neuen Flyout gestartet. Geben Sie **im Schritt Start** einen eindeutigen Anzeigenamen für die Vorlage ein, und klicken Sie dann auf **Weiter**.
+4. Der Assistent **zum Konfigurieren von Phishingvorlagen** wird in einem neuen Flyout gestartet. Geben Sie im **Startschritt** einen eindeutigen Anzeigenamen für die Vorlage ein, und klicken Sie dann auf **"Weiter".**
 
-5. Konfigurieren Sie **im Schritt** Konfigurieren von E-Mail-Details die folgenden Einstellungen:
+5. Konfigurieren Sie im Schritt **"E-Mail-Details konfigurieren"** die folgenden Einstellungen:
 
-   - **From (Name)**: Der Anzeigename, der für den Nachrichtensender verwendet wird.
+   - **From (Name)**: Der Anzeigename, der für den Absender der Nachricht verwendet wird.
 
-   - **From (Email)**: Die E-Mail-Adresse des Absenders.
+   - **Von (E-Mail):** Die E-Mail-Adresse des Absenders.
 
-   - **Phishing-Anmeldeserver-URL:** Klicken Sie auf die Dropdownliste, und wählen Sie eine der verfügbaren URLs aus der Liste aus. Dies ist die URL, auf die Benutzer versucht sind zu klicken. Sie können wie folgt vorgehen:
+   - URL des **Phishing-Anmeldeservers:** Klicken Sie auf die Dropdownliste, und wählen Sie eine der verfügbaren URLs aus der Liste aus. Dies ist die URL, auf die Benutzer klicken möchten. Sie können wie folgt vorgehen:
 
      - <http://portal.docdeliveryapp.com>
      - <http://portal.docdeliveryapp.net>
@@ -125,66 +125,66 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die E-Mail-Nachricht dire
 
      > [!NOTE]
      >
-     > Ein URL-Reputationsdienst identifiziert eine oder mehrere dieser URLs möglicherweise als unsicher. Überprüfen Sie die Verfügbarkeit der URL in Ihren unterstützten Webbrowsern, bevor Sie die URL in einer Phishingkampagne verwenden.
+     > Ein URL-Zuverlässigkeitsdienst identifiziert möglicherweise eine oder mehrere dieser URLs als unsicher. Überprüfen Sie die Verfügbarkeit der URL in Ihren unterstützten Webbrowsern, bevor Sie die URL in einer Phishingkampagne verwenden.
 
-   - **Url der benutzerdefinierten** Zielseite: Geben Sie eine optionale Zielseite ein, auf der Benutzer aufgenommen werden, wenn sie auf den Phishinglink klicken und ihre Anmeldeinformationen eingeben. Dieser Link ersetzt die Standardlandeseite. Wenn Sie beispielsweise über ein internes Sensibilisierungstraining verfügen, können Sie diese URL hier angeben.
+   - URL der **benutzerdefinierten Zielseite:** Geben Sie eine optionale Zielseite ein, auf die Benutzer weitergeleitet werden, wenn sie auf den Phishing-Link klicken und ihre Anmeldeinformationen eingeben. Dieser Link ersetzt die Standardzielseite. Wenn Sie beispielsweise über eine interne Sensibilisierungsschulung verfügen, können Sie diese URL hier angeben.
 
-   - **Kategorie**: Derzeit wird diese Einstellung nicht verwendet (alles, was Sie eingeben, wird ignoriert).
+   - **Kategorie:** Diese Einstellung wird derzeit nicht verwendet (alles, was Sie eingeben, wird ignoriert).
 
-   - **Betreff**: Das **Betrefffeld** der E-Mail-Nachricht.
+   - **Betreff:** Das **Feld "Betreff"** der E-Mail-Nachricht.
 
-   Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-6. Erstellen Sie **im Schritt** E-Mail verfassen den Nachrichtentext der E-Mail-Nachricht. Sie können die Registerkarte **E-Mail** (ein Rich-HTML-Editor) oder die **Registerkarte Quelle** (html-Rohcode) verwenden.
+6. Erstellen Sie im Schritt **"E-Mail verfassen"** den Nachrichtentext der E-Mail-Nachricht. Sie können die Registerkarte **"E-Mail"** (ein Rich-HTML-Editor) oder die Registerkarte **"Quelle"** (unformatierter HTML-Code) verwenden.
 
-   Die HTML-Formatierung kann so einfach oder komplex sein, wie Sie es benötigen. Sie können Bilder und Text einfügen, um die Glaubhaftigkeit der Nachricht im E-Mail-Client des Empfängers zu verbessern.
+   Die HTML-Formatierung kann so einfach oder komplex sein, wie Sie benötigen. Sie können Bilder und Text einfügen, um die Zuverlässigkeit der Nachricht im E-Mail-Client des Empfängers zu verbessern.
 
    - `${username}` fügt den Namen des Empfängers ein.
 
-   - `${loginserverurl}` fügt den **Wert der Phishing-Anmeldeserver-URL** aus dem vorherigen Schritt ein.
+   - `${loginserverurl}` fügt den **URL-Wert des Phishing-Anmeldeservers** aus dem vorherigen Schritt ein.
 
-   Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-7. Klicken Sie **im Schritt** Bestätigen auf **Fertig stellen**.
+7. Klicken Sie im Schritt **"Bestätigen"** auf **"Fertig stellen".**
 
-#### <a name="step-2-create-and-launch-the-spear-phishing-campaign"></a>Schritt 2: Erstellen und Starten der Speerphishingkampagne
+#### <a name="step-2-create-and-launch-the-spear-phishing-campaign"></a>Schritt 2: Erstellen und Starten der Spear-Phishing-Kampagne
 
-1. Wechseln Sie im Security & Compliance Center zu **Angriffssimulator für die Bedrohungsverwaltung.** \> 
+1. Wechseln Sie im Security & Compliance Center zum Angriffssimulator für die **Bedrohungsverwaltung.** \> 
 
-2. Treffen Sie **auf** der Seite Angriffe simulieren eine der folgenden Auswahlen basierend auf dem Typ der Kampagne, die Sie erstellen möchten:
+2. Treffen Sie auf der Seite **"Angriffe simulieren"** eine der folgenden Auswahlen basierend auf dem Typ der Kampagne, die Sie erstellen möchten:
 
-   - Klicken Sie **im Abschnitt Spear Phishing (Credentials Harvest)** auf Angriff **starten** oder **Angriffsdetails** \> **Starten Angriff**.
+   - Klicken Sie im Abschnitt **"Spear Phishing (Credentials Harvest)"** auf **"Angriff starten",** oder klicken Sie auf **"Angriffsdetails** \> **starten".**
 
-   - Klicken Sie **im Abschnitt Speerphishing (Anlage)** auf **Angriff starten** oder **Angriffsdetails** \> **Starten Angriff**.
+   - Klicken Sie im Abschnitt **"Spear Phishing (Attachment)"** auf **"Angriff starten",** oder klicken Sie auf **"Angriffsdetails** \> **starten".**
 
-3. Der **Assistent zum Konfigurieren von Phishingangriffen** wird in einem neuen Flyout gestartet. Gehen Sie **im Schritt** Start wie folgt vor:
+3. Der Assistent **zum Konfigurieren von Phishingangriffen** wird in einem neuen Flyout gestartet. Führen Sie im **Startschritt** einen der folgenden Schritte aus:
 
-   - Geben Sie **im Feld Name** einen eindeutigen Anzeigenamen für die Kampagne ein. Klicken Sie nicht auf **Vorlage verwenden,** da Sie die E-Mail-Nachricht später im Assistenten erstellen.
+   - Geben Sie im **Feld "Name"** einen eindeutigen Anzeigenamen für die Kampagne ein. Klicken Sie nicht auf **Vorlage verwenden,** da Sie die E-Mail-Nachricht später im Assistenten erstellen.
 
-   - Klicken **Sie auf Vorlage verwenden,** und wählen Sie eine integrierte oder benutzerdefinierte E-Mail-Vorlage aus. Nachdem Sie die Vorlage ausgewählt haben, wird das **Feld Name** basierend auf der Vorlage automatisch gefüllt, Sie können den Namen jedoch ändern.
+   - Klicken Sie auf **Vorlage verwenden,** und wählen Sie eine integrierte oder benutzerdefinierte E-Mail-Vorlage aus. Nachdem Sie die Vorlage ausgewählt haben, wird das **Feld Name** basierend auf der Vorlage automatisch ausgefüllt, Sie können den Namen jedoch ändern.
 
    > [!div class="mx-imgBorder"]
    > ![Phishing-Startseite](../../media/5e93b3cc-5981-462f-8b45-bdf85d97f1b8.jpg)
 
-   Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-4. Gehen Sie **im Schritt** Zielempfänger wie folgt vor:
+4. Führen Sie im Schritt **"Zielempfänger"** einen der folgenden Schritte aus:
 
-   - Klicken **Sie auf Adressbuch,** um die Empfänger (Benutzer oder Gruppen) für die Kampagne auszuwählen. Jeder Zielempfänger muss über ein Exchange Online verfügen. Wenn Sie auf **Filtern** und **Anwenden** klicken, ohne ein Suchkriterium ein eingeben zu müssen, werden alle Empfänger zurückgegeben und der Kampagne hinzugefügt.
+   - Klicken Sie auf **"Adressbuch",** um die Empfänger (Benutzer oder Gruppen) für die Kampagne auszuwählen. Jeder Zielempfänger muss über ein Exchange Online Postfach verfügen. Wenn Sie auf **"Filtern"** und **"Anwenden"** klicken, ohne suchkriterien einzugeben, werden alle Empfänger zurückgegeben und der Kampagne hinzugefügt.
 
-   - Klicken **Sie auf Importieren** und anschließend auf **Dateiimport,** um einen durch Kommas getrennten Wert (CSV) oder eine zeilenge trennte Datei mit E-Mail-Adressen zu importieren. Jede Zeile muss die E-Mail-Adresse des Empfängers enthalten.
+   - Klicken Sie auf **"Importieren"** und dann auf **"Dateiimport",** um einen durch Trennzeichen getrennten Wert (CSV) oder eine zeilentrennte Datei mit E-Mail-Adressen zu importieren. Jede Zeile muss die E-Mail-Adresse des Empfängers enthalten.
 
-   Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-5. Konfigurieren Sie **im Schritt** Konfigurieren von E-Mail-Details die folgenden Einstellungen:
+5. Konfigurieren Sie im Schritt **"E-Mail-Details konfigurieren"** die folgenden Einstellungen:
 
-   Wenn Sie im Schritt **Start** eine Vorlage ausgewählt haben, sind die meisten dieser Werte bereits konfiguriert, Sie können sie jedoch ändern.
+   Wenn Sie im **Startschritt** eine Vorlage ausgewählt haben, sind die meisten dieser Werte bereits konfiguriert, sie können jedoch geändert werden.
 
-   - **From (Name)**: Der Anzeigename, der für den Nachrichtensender verwendet wird.
+   - **From (Name)**: Der Anzeigename, der für den Absender der Nachricht verwendet wird.
 
-   - **From (Email)**: Die E-Mail-Adresse des Absenders. Sie können eine echte oder gefälschte E-Mail-Adresse aus der E-Mail-Domäne Ihrer Organisation eingeben, oder Sie können eine echte oder gefälschte externe E-Mail-Adresse eingeben. Eine gültige Absender-E-Mail-Adresse aus Ihrer Organisation wird tatsächlich im E-Mail-Client des Empfängers aufgelöst.
+   - **Von (E-Mail):** Die E-Mail-Adresse des Absenders. Sie können eine echte oder gefälschte E-Mail-Adresse aus der E-Mail-Domäne Ihrer Organisation eingeben oder eine echte oder gefälschte externe E-Mail-Adresse eingeben. Eine gültige Absender-E-Mail-Adresse aus Ihrer Organisation wird tatsächlich im E-Mail-Client des Empfängers aufgelöst.
 
-   - **Phishing-Anmeldeserver-URL:** Klicken Sie auf die Dropdownliste, und wählen Sie eine der verfügbaren URLs aus der Liste aus. Dies ist die URL, auf die Benutzer versucht sind zu klicken. Sie können wie folgt vorgehen:
+   - URL des **Phishing-Anmeldeservers:** Klicken Sie auf die Dropdownliste, und wählen Sie eine der verfügbaren URLs aus der Liste aus. Dies ist die URL, auf die Benutzer klicken möchten. Sie können wie folgt vorgehen:
 
      - <http://portal.docdeliveryapp.com>
      - <http://portal.docdeliveryapp.net>
@@ -203,182 +203,182 @@ Wenn Sie eine der integrierten Vorlagen verwenden oder die E-Mail-Nachricht dire
      >
      > - Alle URLs sind absichtlich http, nicht https.
      >
-     > - Ein URL-Reputationsdienst identifiziert eine oder mehrere dieser URLs möglicherweise als unsicher. Überprüfen Sie die Verfügbarkeit der URL in Ihren unterstützten Webbrowsern, bevor Sie die URL in einer Phishingkampagne verwenden.
+     > - Ein URL-Zuverlässigkeitsdienst identifiziert möglicherweise eine oder mehrere dieser URLs als unsicher. Überprüfen Sie die Verfügbarkeit der URL in Ihren unterstützten Webbrowsern, bevor Sie die URL in einer Phishingkampagne verwenden.
      >
-     > - Sie müssen eine URL auswählen. Bei **Spear Phishing (Attachment)-Kampagnen** können Sie den Link im nächsten Schritt aus dem Nachrichtentext entfernen  (andernfalls enthält die Nachricht sowohl einen Link als auch eine Anlage).
+     > - Sie müssen eine URL auswählen. Bei **Kampagnen für Spear-Phishing (Attachment)** können Sie den Link im nächsten Schritt aus dem Nachrichtentext entfernen (andernfalls enthält die Nachricht sowohl einen **Link** als auch eine Anlage).
 
-   - **Anlagentyp**: Diese Einstellung ist nur in **Spear Phishing (Attachment)-Kampagnen** verfügbar. Klicken Sie auf die Dropdownliste, **und wählen.DOCX** oder **.PDF** in der Liste aus.
+   - **Anlagentyp:** Diese Einstellung ist nur in **Spear-Phishing-Kampagnen (Attachment)** verfügbar. Klicken Sie auf die Dropdownliste, und wählen Sie **.DOCX** oder **.PDF** aus der Liste aus.
 
-   - **Anlagenname**: Diese Einstellung ist nur in **Spear Phishing (Attachment)-Kampagnen** verfügbar. Geben Sie einen Dateinamen für die .docx oder .pdf anlage ein.
+   - **Anlagenname:** Diese Einstellung ist nur in **Spear-Phishing-Kampagnen (Attachment)** verfügbar. Geben Sie einen Dateinamen für die .docx- oder .pdf-Anlage ein.
 
-   - **Url der benutzerdefinierten** Zielseite: Geben Sie eine optionale Zielseite ein, auf der Benutzer aufgenommen werden, wenn sie auf den Phishinglink klicken und ihre Anmeldeinformationen eingeben. Dieser Link ersetzt die Standardlandeseite. Wenn Sie beispielsweise über ein internes Sensibilisierungstraining verfügen, können Sie diese URL hier angeben.
+   - URL der **benutzerdefinierten Zielseite:** Geben Sie eine optionale Zielseite ein, auf die Benutzer weitergeleitet werden, wenn sie auf den Phishing-Link klicken und ihre Anmeldeinformationen eingeben. Dieser Link ersetzt die Standardzielseite. Wenn Sie beispielsweise über eine interne Sensibilisierungsschulung verfügen, können Sie diese URL hier angeben.
 
-   - **Betreff**: Das **Betrefffeld** der E-Mail-Nachricht.
+   - **Betreff:** Das **Feld "Betreff"** der E-Mail-Nachricht.
 
-   Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-6. Erstellen Sie **im Schritt** E-Mail verfassen den Nachrichtentext der E-Mail-Nachricht. Wenn Sie im Schritt **Start** eine Vorlage ausgewählt haben, ist der Nachrichtentext bereits konfiguriert, Sie können sie jedoch anpassen. Sie können die Registerkarte **E-Mail** (ein Rich-HTML-Editor) oder die **Registerkarte Quelle** (html-Rohcode) verwenden.
+6. Erstellen Sie im Schritt **"E-Mail verfassen"** den Nachrichtentext der E-Mail-Nachricht. Wenn Sie im **Startschritt** eine Vorlage ausgewählt haben, ist der Nachrichtentext bereits konfiguriert, Sie können sie jedoch anpassen. Sie können die Registerkarte **"E-Mail"** (ein Rich-HTML-Editor) oder die Registerkarte **"Quelle"** (unformatierter HTML-Code) verwenden.
 
-   Die HTML-Formatierung kann so einfach oder komplex sein, wie Sie es benötigen. Sie können Bilder und Text einfügen, um die Glaubhaftigkeit der Nachricht im E-Mail-Client des Empfängers zu verbessern.
+   Die HTML-Formatierung kann so einfach oder komplex sein, wie Sie benötigen. Sie können Bilder und Text einfügen, um die Zuverlässigkeit der Nachricht im E-Mail-Client des Empfängers zu verbessern.
 
    - `${username}` fügt den Namen des Empfängers ein.
 
-   - `${loginserverurl}` fügt den **Wert der Phishing-Anmeldeserver-URL** ein.
+   - `${loginserverurl}` fügt den **URL-Wert des Phishing-Anmeldeservers** ein.
 
-   Bei **Spear Phishing (Attachment)-Kampagnen** sollten Sie den Link aus dem Nachrichtentext entfernen (andernfalls enthält die Nachricht sowohl einen Link als auch eine Anlage, und Linkklicks werden in einer Anlagenkampagne nicht nachverfolgt). 
+   Für **Spear Phishing -Kampagnen (Attachment)** sollten Sie den Link aus dem Textkörper der Nachricht entfernen (andernfalls enthält die Nachricht sowohl einen **Link** als auch eine Anlage, und Linkklicks werden in einer Anlagenkampagne nicht nachverfolgt).
 
    > [!div class="mx-imgBorder"]
    > ![Verfassen des E-Mail-Textkörpers](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
-   Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-7. Klicken Sie **im Schritt Bestätigen** auf Fertig **stellen,** um die Kampagne zu starten. Die Phishingnachricht wird an die Zielempfänger übermittelt.
+7. Klicken Sie im Schritt **"Bestätigen"** auf **"Fertig stellen",** um die Kampagne zu starten. Die Phishingnachricht wird an die Zielempfänger übermittelt.
 
-## <a name="password-attack-campaigns"></a>Kennwortangriffskampagnen
+## <a name="password-attack-campaigns"></a>Kampagnen für Kennwortangriffe
 
-Ein *Kennwortangriff versucht,* Kennwörter für Benutzerkonten in einer Organisation zu erraten, in der Regel, nachdem der Angreifer ein oder mehrere gültige Benutzerkonten identifiziert hat.
+Ein *Kennwortangriff* versucht, Kennwörter für Benutzerkonten in einer Organisation zu erraten, in der Regel nachdem der Angreifer ein oder mehrere gültige Benutzerkonten identifiziert hat.
 
 Im Angriffssimulator stehen Ihnen zwei verschiedene Arten von Kennwortangriffskampagnen zur Verfügung, um die Komplexität der Kennwörter Ihrer Benutzer zu testen:
 
-- **Brute Force Password (Wörterbuchangriff):** Ein  *Brute* Force- oder Wörterbuchangriff verwendet eine große Wörterbuchdatei mit Kennwörtern für ein Benutzerkonto mit der Hoffnung, dass eines davon funktioniert (viele Kennwörter für ein Konto). Falsche Kennwortsperrungen helfen, Brute Force-Kennwortangriffe zu verhindern.
+- **Brute-Force-Kennwort (Wörterbuchangriff):** Bei einem *Brute-Force-* oder *Wörterbuchangriff* wird eine große Wörterbuchdatei mit Kennwörtern für ein Benutzerkonto verwendet, in der Wunsch, dass eines davon funktioniert (viele Kennwörter für ein Konto). Falsche Kennwortsperrungen verhindern Brute-Force-Kennwortangriffe.
 
-  Für den Wörterbuchangriff können Sie ein oder mehrere Kennwörter angeben, die Sie ausprobieren möchten (manuell eingegeben oder in eine hochgeladene Datei), und Sie können einen oder mehrere Benutzer angeben.
+  Für den Wörterbuchangriff können Sie ein oder mehrere Kennwörter angeben, die Sie ausprobieren möchten (manuell eingegeben oder in einer hochgeladenen Datei), und Sie können einen oder mehrere Benutzer angeben.
 
-- **Kennwort-Spray-Angriff:** Ein *Kennwort-Spray-Angriff* verwendet dasselbe sorgfältig überlegte Kennwort für eine Liste von Benutzerkonten (ein Kennwort für viele Konten). Kennwortschutzangriffe sind schwieriger zu erkennen als Brute-Force-Kennwortangriffe (die Wahrscheinlichkeit eines Erfolgs steigt, wenn ein Angreifer ein Kennwort über Dutzende oder Hunderte von Konten versucht, ohne das Risiko zu riskieren, dass die falsche Kennwortsperre des Benutzers ausreist).
+- **Kennwort-Spray-Angriff:** Ein *Kennwort-Spray-Angriff* verwendet das gleiche sorgfältig durchdachte Kennwort für eine Liste von Benutzerkonten (ein Kennwort für viele Konten). Kennwort-Spray-Angriffe sind schwieriger zu erkennen als Brute-Force-Kennwortangriffe (die Wahrscheinlichkeit eines Erfolgs erhöht sich, wenn ein Angreifer ein Kennwort über Dutzende oder Hunderte von Konten hinweg versucht, ohne dass das Risiko besteht, dass er die falsche Kennwortsperrung des Benutzers durchläuft).
 
   Für den Kennwort-Spray-Angriff können Sie nur ein Kennwort angeben, das Sie ausprobieren möchten, und Sie können einen oder mehrere Benutzer angeben.
 
 > [!NOTE]
-> Die Kennwortangriffe im Angriffssimulator übergeben Benutzernamen und Kennwort Grundlegende Authentifizierungsanforderungen an einen Endpunkt, damit sie auch mit anderen Authentifizierungsmethoden (AD FS, Kennworthashsynchronisierung, Pass-Through, PingFederate usw.) funktionieren. Für Benutzer, für die MFA aktiviert ist, wird der Versuch auch dann, wenn der Kennwortangriff sein **tatsächliches** Kennwort versucht, immer als Fehler registriert (D. h. MFA-Benutzer werden nie in der Anzahl der erfolgreichen Versuche der Kampagne angezeigt). Dies ist das erwartete Ergebnis. MFA ist eine primäre Methode zum Schutz vor Kennwortangriffen.
+> Die Kennwortangriffe im Angriffssimulator übergeben Benutzernamen- und Kennwort-Standardauthentifizierungsanforderungen an einen Endpunkt, sodass sie auch mit anderen Authentifizierungsmethoden (AD FS, Kennworthashsynchronisierung, Pass-Through, PingFederate usw.) funktionieren. Für Benutzer, für die MFA aktiviert ist, wird der Versuch auch dann immer als Fehler registriert, wenn der Kennwortangriff ihr tatsächliches Kennwort ausprobiert (mit anderen Worten, MFA-Benutzer werden nie in der Anzahl der **erfolgreichen Versuche** der Kampagne angezeigt). Dies ist das erwartete Ergebnis. MFA ist eine primäre Methode zum Schutz vor Kennwortangriffen.
 
 ### <a name="create-and-launch-a-password-attack-campaign"></a>Erstellen und Starten einer Kennwortangriffskampagne
 
-1. Wechseln Sie im Security & Compliance Center zu **Angriffssimulator für die Bedrohungsverwaltung.** \> 
+1. Wechseln Sie im Security & Compliance Center zum Angriffssimulator für die **Bedrohungsverwaltung.** \> 
 
-2. Treffen Sie **auf** der Seite Angriffe simulieren eine der folgenden Auswahlen basierend auf dem Typ der Kampagne, die Sie erstellen möchten:
+2. Treffen Sie auf der Seite **"Angriffe simulieren"** eine der folgenden Auswahlen basierend auf dem Typ der Kampagne, die Sie erstellen möchten:
 
-   - Klicken Sie **im Abschnitt Brute Force Password (Dictionary Attack)** auf **Angriff starten** oder **Angriffsdetails** \> **Starten Angriff**.
+   - Klicken Sie im Abschnitt **"Brute Force Password (Dictionary Attack)"** auf **"Angriff starten"** oder **"Angriffsdetails** \> **starten".**
 
-   - Klicken Sie **im Abschnitt Kennwort-Sprayangriff** auf **Angriff starten,** oder klicken Sie auf **Angriffsdetails** \> **Starten Angriff**.
+   - Klicken Sie im Abschnitt **"Kennwort-Sprayangriff"** auf **"Angriff starten",** oder klicken Sie auf **"Angriffsdetails** \> **starten".**
 
-3. Der **Assistent zum Konfigurieren von Kennwortangriffen** wird in einem neuen Flyout gestartet. Geben Sie **im Schritt Start** einen eindeutigen Anzeigenamen für die Kampagne ein, und klicken Sie dann auf **Weiter**.
+3. Der Assistent zum **Konfigurieren von Kennwortangriffen** wird in einem neuen Flyout gestartet. Geben Sie im **Startschritt** einen eindeutigen Anzeigenamen für die Kampagne ein, und klicken Sie dann auf **"Weiter".**
 
-4. Gehen Sie **im Schritt** Zielbenutzer wie folgt vor:
+4. Führen Sie im Schritt **"Zielbenutzer"** einen der folgenden Schritte aus:
 
-   - Klicken **Sie auf Adressbuch,** um die Empfänger (Benutzer oder Gruppen) für die Kampagne auszuwählen. Jeder Zielempfänger muss über ein Exchange Online verfügen. Wenn Sie auf **Filtern** und **Anwenden** klicken, ohne ein Suchkriterium ein eingeben zu müssen, werden alle Empfänger zurückgegeben und der Kampagne hinzugefügt.
+   - Klicken Sie auf **"Adressbuch",** um die Empfänger (Benutzer oder Gruppen) für die Kampagne auszuwählen. Jeder Zielempfänger muss über ein Exchange Online Postfach verfügen. Wenn Sie auf **"Filtern"** und **"Anwenden"** klicken, ohne suchkriterien einzugeben, werden alle Empfänger zurückgegeben und der Kampagne hinzugefügt.
 
-   - Klicken **Sie auf Importieren** und anschließend auf **Dateiimport,** um einen durch Kommas getrennten Wert (CSV) oder eine zeilenge trennte Datei mit E-Mail-Adressen zu importieren. Jede Zeile muss die E-Mail-Adresse des Empfängers enthalten.
+   - Klicken Sie auf **"Importieren"** und dann auf **"Dateiimport",** um einen durch Trennzeichen getrennten Wert (CSV) oder eine zeilentrennte Datei mit E-Mail-Adressen zu importieren. Jede Zeile muss die E-Mail-Adresse des Empfängers enthalten.
 
-   Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-5. Wählen Sie **im Schritt Angriffseinstellungen** auswählen basierend auf dem Kampagnentyp die schritte aus:
+5. Wählen Sie im Schritt **"Angriffseinstellungen auswählen"** basierend auf dem Kampagnentyp die gewünschten Aktionen aus:
 
-   - **Brute Force Password (Dictionary Attack)**: Gehen Sie wie folgt vor:
+   - **Brute Force Password (Dictionary Attack):** Führen Sie einen der folgenden Schritte aus:
 
-     - **Geben Sie Kennwörter manuell** ein: Geben Sie in das Feld **Drücken** Sie die Eingabetaste ein, um ein Kennwort hinzuzufügen, geben Sie ein Kennwort ein, und drücken Sie dann die EINGABETASTE. Wiederholen Sie diesen Schritt so oft wie nötig.
+     - **Geben Sie Kennwörter manuell** ein: Geben Sie in der **Eingabetaste zum Hinzufügen eines Kennwortfelds** ein Kennwort ein, und drücken Sie dann die EINGABETASTE. Wiederholen Sie diesen Schritt so oft wie nötig.
 
-     - **Hochladen** aus einer Wörterbuchdatei : Klicken Sie auf **Hochladen,** um eine vorhandene Textdatei zu importieren, die ein Kennwort in jeder Zeile und eine leere letzte Zeile enthält. Die Textdatei muss mindestens 10 MB groß sein und darf nicht mehr als 30.000 Kennwörter enthalten.
+     - **Hochladen Kennwörter aus einer Wörterbuchdatei:** Klicken Sie auf **Hochladen,** um eine vorhandene Textdatei zu importieren, die ein Kennwort in jeder Zeile und eine leere letzte Zeile enthält. Die Textdatei darf maximal 10 MB groß sein und darf nicht mehr als 30.000 Kennwörter enthalten.
 
-   - **Kennwort-Spray-Angriff:** Geben Sie im **Feld Kennwort(en)** ein Kennwort ein.
+   - **Kennwort-Sprayangriff:** Geben Sie **in die im Angriffsfeld zu verwendenden Kennwörter** ein Kennwort ein.
 
-   Klicken Sie nach Abschluss des Vorgangs auf **Weiter**.
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-6. Klicken Sie **im Schritt Bestätigen** auf Fertig **stellen,** um die Kampagne zu starten. Die von Ihnen angegebenen Kennwörter werden für Benutzer ausprobiert, die Sie angegeben haben.
+6. Klicken Sie im Schritt **"Bestätigen"** auf **"Fertig stellen",** um die Kampagne zu starten. Die von Ihnen angegebenen Kennwörter werden für die von Ihnen angegebenen Benutzer ausprobiert.
 
-## <a name="view-campaign-results"></a>Anzeigen von Kampagnenergebnissen
+## <a name="view-campaign-results"></a>Anzeigen der Kampagnenergebnisse
 
-Nachdem Sie eine Kampagne gestartet haben, können Sie den Fortschritt und die Ergebnisse auf der Hauptseite Simulierte **Angriffe** überprüfen.
+Nachdem Sie eine Kampagne gestartet haben, können Sie den Fortschritt und die Ergebnisse auf der Hauptseite **"Angriffe simulieren"** überprüfen.
 
-Aktive Kampagnen zeigen eine Statusleiste, einen abgeschlossenen Prozentwert und die Anzahl "(abgeschlossene Benutzer) (Gesamtbenutzer)" an. Durch Klicken auf **die Schaltfläche Aktualisieren** wird der Fortschritt aller aktiven Kampagnen aktualisiert. Sie können auch auf **Beenden klicken,** um eine aktive Kampagne zu beenden.
+Aktive Kampagnen zeigen eine Statusleiste, einen abgeschlossenen Prozentwert und die Anzahl "(abgeschlossene Benutzer) von (Benutzer insgesamt)" an. Durch Klicken auf die Schaltfläche **"Aktualisieren"** wird der Fortschritt aller aktiven Kampagnen aktualisiert. Sie können auch auf **"Beenden"** klicken, um eine aktive Kampagne zu beenden.
 
-Nach Abschluss der Kampagne wird der Status in **Angriff abgeschlossen geändert.** Sie können die Ergebnisse der Kampagne anzeigen, indem Sie eine der folgenden Aktionen ausführen:
+Wenn die Kampagne abgeschlossen ist, ändert sich der Status in **Angriff abgeschlossen.** Sie können die Ergebnisse der Kampagne anzeigen, indem Sie eine der folgenden Aktionen ausführen:
 
-- Klicken Sie auf der **Hauptseite** Angriffe simulieren **unter** dem Namen der Kampagne auf Bericht anzeigen.
+- Klicken Sie auf der Hauptseite **"Angriffe simulieren"** unter dem Namen der Kampagne auf **"Bericht anzeigen".**
 
-- Klicken Sie auf der **Hauptseite** Angriffe simulieren im Abschnitt für den Angriffstyp auf **Angriffsdetails.** Wählen Sie **auf der Seite Angriffsdetails,** die geöffnet wird, die Kampagne im **Abschnitt Angriffsverlauf** aus.
+- Klicken Sie auf der Hauptseite **"Angriffe simulieren"** im Abschnitt auf **"Angriffsdetails"** für die Art des Angriffs. Wählen Sie auf der daraufhin geöffneten **Seite "Angriffsdetails"** die Kampagne im Abschnitt **"Angriffsverlauf"** aus.
 
-Mit einer der vorherigen Aktionen gelangen Sie zu einer Seite mit dem Namen **Attack details**. Die Informationen, die auf dieser Seite für jeden Kampagnentyp verfügbar sind, werden in den folgenden Abschnitten beschrieben.
+Eine der vorherigen Aktionen führt Sie zu einer Seite mit dem Namen **"Angriffsdetails".** Die Informationen, die auf dieser Seite für jeden Kampagnentyp verfügbar sind, werden in den folgenden Abschnitten beschrieben.
 
-### <a name="spear-phishing-credentials-harvest-campaign-results"></a>Spear Phishing (Credentials Harvest)-Kampagnenergebnisse
+### <a name="spear-phishing-credentials-harvest-campaign-results"></a>Ergebnisse der Kampagne "Spear Phishing (Credentials Harvest)"
 
-Die folgenden Informationen sind auf der Seite **Angriffsdetails** für jede Kampagne verfügbar:
+Die folgenden Informationen sind auf der **Seite "Angriffsdetails"** für jede Kampagne verfügbar:
 
 - Die Dauer (Startdatum/-uhrzeit und Enddatum/-uhrzeit) der Kampagne.
 
-- **Ziel aller Benutzer**
+- **Gesamtzahl der Benutzer, die als Ziel verwendet werden**
 
-- **Erfolgreiche Versuche:** Die Anzahl der Benutzer,  die auf den Link geklickt und ihre Anmeldeinformationen eingegeben haben *(beliebiger* Benutzername und Kennwortwert).
+- **Erfolgreiche Versuche:** Die Anzahl der Benutzer, die auf den Link geklickt **und** ihre Anmeldeinformationen eingegeben haben *(beliebiger* Benutzername und Kennwortwert).
 
-- **Gesamterfolgsrate:** Ein Prozentsatz, der durch erfolgreiche Versuche berechnet wird  /  **Gesamtbenutzer gezielt**.
+- **Gesamterfolgsrate:** Ein Prozentsatz, der von **der** Gesamtzahl der  /  **benutzerzielen** erfolgreichen Versuche berechnet wird.
 
-- **Schnellster Klick**: Wie lange es dauerte, bis der erste Benutzer auf den Link geklickt hat, nachdem Sie die Kampagne gestartet haben.
+- **Schnellster Klick:** Wie lange es gedauert hat, bis der erste Benutzer nach dem Start der Kampagne auf den Link geklickt hat.
 
-- **Durchschnittlicher Klick**: Die Summe der Dauer, die jeder benutzer brauchte, um auf den Link zu klicken, geteilt durch die Anzahl der Benutzer, die auf den Link geklickt haben.
+- **Durchschnittlicher Klick**: Die Summe, wie lange es gedauert hat, bis jeder auf den Link geklickt hat, dividiert durch die Anzahl der Benutzer, die auf den Link geklickt haben.
 
 - **Click Success Rate**: A percentage that's calculated by (number of users who clicked the link) / **Total users targeted**.
 
-- **Schnellste Anmeldeinformationen:** Wie lange es dauerte, bis der erste Benutzer seine Anmeldeinformationen eingegeben hat, nachdem Sie die Kampagne gestartet haben.
+- **Schnellste Anmeldeinformationen:** Wie lange der erste Benutzer nach dem Start der Kampagne seine Anmeldeinformationen eingegeben hat.
 
-- **Durchschnittliche** Anmeldeinformationen : Die Summe der Dauer, die jeder für die Eingabe seiner Anmeldeinformationen brauchte, geteilt durch die Anzahl der Benutzer, die seine Anmeldeinformationen eingegeben haben.
+- **Durchschnittliche Anmeldeinformationen:** Die Summe, wie lange es gedauert hat, bis alle Ihre Anmeldeinformationen eingegeben haben, dividiert durch die Anzahl der Benutzer, die ihre Anmeldeinformationen eingegeben haben.
 
-- **Erfolgsrate der Anmeldeinformationen**: Ein Prozentsatz, der durch (Anzahl der Benutzer, die ihre Anmeldeinformationen eingegeben haben) / **Zielbenutzer insgesamt berechnet wird.**
+- **Erfolgsrate für Anmeldeinformationen:** Ein Prozentsatz, der von (Anzahl der Benutzer, die ihre Anmeldeinformationen eingegeben haben) **/Die Gesamtzahl** der benutzerorientierte berechnet wird.
 
-- Ein Balkendiagramm, das zeigt, **auf "Link geklickt"** und **"Anmeldeinformationen" zahlen** pro Tag angegeben sind.
+- Ein Balkendiagramm, das den **angeklickten Link** und **die angegebenen Anmeldeinformationen** pro Tag anzeigt.
 
-- Ein Kreisdiagramm, in dem die Prozentsätze **Link geklickt,** Angegebene Anmeldeinformationen **und** **Keine** für die Kampagne angezeigt werden.
+- Ein Kreisdiagramm, das die Prozentsätze **Link geklickt ,** **Credential** supplied und **None** für die Kampagne anzeigt.
 
-- Im **Abschnitt "Gefährdete Benutzer"** werden die Details der Benutzer aufgeführt, die auf den Link geklickt haben:
+- Im Abschnitt **"Kompromittierte Benutzer"** werden die Details der Benutzer aufgelistet, die auf den Link geklickt haben:
 
   - Die E-Mail-Adresse des Benutzers
 
-  - Datum/Uhrzeit, zu dem sie auf den Link geklickt haben.
+  - Das Datum/die Uhrzeit, an dem/der auf den Link geklickt wurde.
 
   - Die Client-IP-Adresse.
 
-  - Details zur Benutzerversion von Windows und Webbrowser.
+  - Details zur Version des Benutzers von Windows und Webbrowser.
 
-  Sie können auf **Exportieren klicken,** um die Ergebnisse in eine CSV-Datei zu exportieren.
+  Sie können auf **"Exportieren"** klicken, um die Ergebnisse in eine CSV-Datei zu exportieren.
 
-### <a name="spear-phishing-attachment-campaign-results"></a>Spear Phishing (Attachment)-Kampagnenergebnisse
+### <a name="spear-phishing-attachment-campaign-results"></a>Ergebnisse der Kampagne "Spear Phishing (Attachment) "
 
-Die folgenden Informationen sind auf der Seite **Angriffsdetails** für jede Kampagne verfügbar:
-
-- Die Dauer (Startdatum/-uhrzeit und Enddatum/-uhrzeit) der Kampagne.
-
-- **Ziel aller Benutzer**
-
-- **Erfolgreiche Versuche:** Die Anzahl der Benutzer, die die Anlage geöffnet oder heruntergeladen und geöffnet haben (vorschau zählt nicht).
-
-- **Gesamterfolgsrate:** Ein Prozentsatz, der durch erfolgreiche Versuche berechnet wird  /  **Gesamtbenutzer gezielt**.
-
-- **Schnellstmögliche Anlagenöffnzeit:** Wie lange der erste Benutzer die Anlage geöffnet hat, nachdem Sie die Kampagne gestartet haben.
-
-- **Durchschnittliche Anlagenöffnzeit:** Die Summe der Dauer, die jeder zum Öffnen der Anlage brauchte, geteilt durch die Anzahl der Benutzer, die die Anlage geöffnet haben.
-
-- **Erfolgsrate für offene Anlagen:** Ein Prozentsatz, der durch (Anzahl der Benutzer, die die Anlage geöffnet haben) / **Zielbenutzer insgesamt berechnet wird.**
-
-### <a name="brute-force-password-dictionary-attack-campaign-results"></a>Brute Force Password (Dictionary Attack)-Kampagnenergebnisse
-
-Die folgenden Informationen sind auf der Seite **Angriffsdetails** für jede Kampagne verfügbar:
+Die folgenden Informationen sind auf der **Seite "Angriffsdetails"** für jede Kampagne verfügbar:
 
 - Die Dauer (Startdatum/-uhrzeit und Enddatum/-uhrzeit) der Kampagne.
 
-- **Ziel aller Benutzer**
+- **Gesamtzahl der Benutzer, die als Ziel verwendet werden**
+
+- **Erfolgreiche Versuche:** Die Anzahl der Benutzer, die die Anlage geöffnet oder heruntergeladen und geöffnet haben (Vorschau zählt nicht).
+
+- **Gesamterfolgsrate:** Ein Prozentsatz, der von **der** Gesamtzahl der  /  **benutzerzielen** erfolgreichen Versuche berechnet wird.
+
+- Schnellste Zeit zum Öffnen von **Anlagen:** Wie lange es gedauert hat, bis der erste Benutzer die Anlage geöffnet hat, nachdem Sie die Kampagne gestartet haben.
+
+- **Durchschnittliche Anlageöffnungszeit:** Die Summe, wie lange es gedauert hat, bis alle Personen die Anlage geöffnet haben, dividiert durch die Anzahl der Benutzer, die die Anlage geöffnet haben.
+
+- **Erfolgsrate** beim Öffnen von Anlagen: Ein Prozentsatz, der von (Anzahl der Benutzer, die die Anlage geöffnet haben) /Die Gesamtzahl der benutzer, auf die **verwiesen wird,** berechnet wird.
+
+### <a name="brute-force-password-dictionary-attack-campaign-results"></a>Ergebnisse der Brute Force Password (Dictionary Attack)-Kampagne
+
+Die folgenden Informationen sind auf der **Seite "Angriffsdetails"** für jede Kampagne verfügbar:
+
+- Die Dauer (Startdatum/-uhrzeit und Enddatum/-uhrzeit) der Kampagne.
+
+- **Gesamtzahl der Benutzer, die als Ziel verwendet werden**
 
 - **Erfolgreiche Versuche:** Die Anzahl der Benutzer, die eines der angegebenen Kennwörter verwendet haben.
 
-- **Gesamterfolgsrate:** Ein Prozentsatz, der durch erfolgreiche Versuche berechnet wird  /  **Gesamtbenutzer gezielt**.
+- **Gesamterfolgsrate:** Ein Prozentsatz, der von **der** Gesamtzahl der  /  **benutzerzielen** erfolgreichen Versuche berechnet wird.
 
-- Im **Abschnitt Gefährdete Benutzer** werden die E-Mail-Adressen der betroffenen Benutzer aufgeführt. Sie können auf **Exportieren klicken,** um die Ergebnisse in eine CSV-Datei zu exportieren.
+- Im Abschnitt **"Kompromittierte Benutzer"** sind die E-Mail-Adressen der betroffenen Benutzer aufgeführt. Sie können auf **"Exportieren"** klicken, um die Ergebnisse in eine CSV-Datei zu exportieren.
 
 ### <a name="password-spray-attack-campaign-results"></a>Ergebnisse der Kennwort-Spray-Angriffskampagne
 
-Die folgenden Informationen sind auf der Seite **Angriffsdetails** für jede Kampagne verfügbar:
+Die folgenden Informationen sind auf der **Seite "Angriffsdetails"** für jede Kampagne verfügbar:
 
 - Die Dauer (Startdatum/-uhrzeit und Enddatum/-uhrzeit) der Kampagne.
 
-- **Ziel aller Benutzer**
+- **Gesamtzahl der Benutzer, die als Ziel verwendet werden**
 
-- **Erfolgreiche Versuche:** Die Anzahl der Benutzer, die gefunden wurden, dass sie das angegebene Kennwort verwenden.
+- **Erfolgreiche Versuche:** Die Anzahl der Benutzer, die das angegebene Kennwort verwendet haben.
 
-- **Gesamterfolgsrate:** Ein Prozentsatz, der durch erfolgreiche Versuche berechnet wird  /  **Gesamtbenutzer gezielt**.
+- **Gesamterfolgsrate:** Ein Prozentsatz, der von **der** Gesamtzahl der  /  **benutzerzielen** erfolgreichen Versuche berechnet wird.

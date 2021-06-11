@@ -19,12 +19,12 @@ ms.collection:
 description: Erfahren Sie mehr über Kampagnenansichten in Microsoft Defender für Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04e3d76271e95d36d73dd473076029cb60c06900
-ms.sourcegitcommit: 50f484fc501d81506a714b127a56a6979888d849
+ms.openlocfilehash: ba619c5341913190bfb84dbc34b938deee8f42ca
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52779455"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879132"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Kampagnenansichten in Microsoft Defender für Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "52779455"
 **Gilt für**
 - [Microsoft Defender für Office 365 – Plan 2](defender-for-office-365.md)
 
-Kampagnenansichten ist ein Feature in Microsoft Defender für Office 365 Plan 2 (z. B. Microsoft 365 E5 oder Organisationen mit einem Defender for Office 365 Plan 2-Add-On). Kampagnenansichten im Microsoft 365 Security Center identifiziert und kategorisiert Phishing-Angriffe im Dienst. Kampagnenansichten können Ihnen bei Folgendem helfen:
+Kampagnenansichten sind ein Feature in Microsoft Defender für Office 365 Plan 2 (z. B. Microsoft 365 E5 oder Organisationen mit einem Defender for Office 365 Plan 2-Add-On). Kampagnenansichten im Microsoft 365 Defender-Portal identifiziert und kategorisiert Phishingangriffe im Dienst. Kampagnenansichten können Ihnen bei Folgendem helfen:
 
 - Phishing-Angriffe effektiv untersuchen und darauf reagieren.
 - Besseres Verständnis des Umfangs des Angriffs.
@@ -45,7 +45,7 @@ Mit Kampagnenansichten können Sie das Gesamtbild eines Angriffs schneller und v
 
 Eine Kampagne ist ein koordinierter E-Mail-Angriff gegen eine oder mehrere Organisationen. E-Mail-Angriffe, die Anmeldeinformationen und Unternehmensdaten stehlen, sind eine große und lukrative Branche. Da die Technologien immer mehr versuchen, Angriffe zu stoppen, ändern Angreifer ihre Methoden, um einen fortgesetzten Erfolg sicherzustellen.
 
-Microsoft nutzt die großen Mengen an Antiphishing-, Antispam- und Antischadsoftwaredaten über den gesamten Dienst, um Kampagnen zu identifizieren. Wir analysieren und klassifizieren die Angriffsinformationen nach mehreren Faktoren. Zum Beispiel:
+Microsoft nutzt die großen Mengen an Antiphishing-, Antispam- und Antischadsoftwaredaten über den gesamten Dienst, um Kampagnen zu identifizieren. Wir analysieren und klassifizieren die Angriffsinformationen nach mehreren Faktoren. Beispiel:
 
 - **Angriffsquelle:** Die QUELL-IP-Adressen und E-Mail-Domänen des Absenders.
 - **Nachrichteneigenschaften:** Inhalt, Format und Tonfall der Nachrichten.
@@ -54,11 +54,11 @@ Microsoft nutzt die großen Mengen an Antiphishing-, Antispam- und Antischadsoft
 
 Eine Kampagne kann kurzlebig sein oder mehrere Tage, Wochen oder Monate mit aktiven und inaktiven Zeiträumen umfassen. Möglicherweise wird eine Kampagne gegen Ihre bestimmte Organisation gestartet, oder Ihre Organisation ist möglicherweise Teil einer größeren Kampagne über mehrere Unternehmen hinweg.
 
-## <a name="campaign-views-in-the-security-center"></a>Kampagnenansichten im Sicherheitscenter
+## <a name="campaign-views-in-the-microsoft-365-defender-portal"></a>Kampagnenansichten im Microsoft 365 Defender-Portal
 
-Kampagnenansichten sind im [Microsoft 365 Security Center](https://security.microsoft.com) unter **E-Mail &** \> **Zusammenarbeitskampagnen** oder direkt unter <https://security.microsoft.com/campaigns> verfügbar.
+Kampagnenansichten sind im Microsoft 365 Defender-Portal ( <https://security.microsoft.com> ) unter **E-Mail &** \> **Zusammenarbeitskampagnen** oder direkt unter <https://security.microsoft.com/campaigns> verfügbar.
 
-![Kampagnenübersicht im Microsoft 365 Security Center](../../media/campaigns-overview.png)
+![Kampagnenübersicht im Microsoft 365 Defender-Portal](../../media/campaigns-overview.png)
 
 Sie können auch zu Kampagnenansichten wechseln von:
 
@@ -67,7 +67,7 @@ Sie können auch zu Kampagnenansichten wechseln von:
 - **E-Mail-& Zusammenarbeit** \> **Explorer** \> **Anzeigen** \> **Phishing** \> **Registerkarte "Kampagne"**
 - **E-Mail-& Zusammenarbeit** \> **Explorer** \> **Anzeigen** \> **Schadsoftware** \> **Registerkarte "Kampagne"**
 
-Um auf Kampagnenansichten zugreifen zu können, müssen Sie Mitglied der Rollengruppen **"Organisationsverwaltung",** **"Sicherheitsadministrator"** oder **"Sicherheitsleseberechtigter"** im Security Center sein. Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Compliance Center und Microsoft 365 Security Center.](permissions-microsoft-365-security-center.md)
+Um auf Kampagnenansichten zugreifen zu können, müssen Sie Mitglied der Rollengruppen **"Organisationsverwaltung",** **"Sicherheitsadministrator"** oder **"Sicherheitsleseberechtigter"** im Microsoft 365 Defender-Portal sein. Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender-Portal.](permissions-microsoft-365-security-center.md)
 
 ## <a name="campaigns-overview"></a>Kampagnenübersicht
 
@@ -88,11 +88,11 @@ Die Tabelle unterhalb des Diagramms auf der Übersichtsseite zeigt die folgenden
 
 - **Typ:** Dieser Wert ist entweder Phishing oder **Schadsoftware.** 
 
-- **Untertyp:** Dieser Wert enthält weitere Details zur Kampagne. Zum Beispiel:
+- **Untertyp:** Dieser Wert enthält weitere Details zur Kampagne. Beispiel:
   - **Phishing:** Wenn verfügbar, die Marke, die von dieser Kampagne gephisst wird. Beispiel: `Microsoft` , `365` , , oder `Unknown` `Outlook` `DocuSign` .
   - **Schadsoftware:** `HTML/PHISH` `HTML/<MalwareFamilyName>` z. B. oder .
 
-  Sofern verfügbar, die Marke, die von dieser Kampagne gephisst wird. Wenn die Erkennung von Defender für Office 365 Technologie gesteuert wird, wird das Präfix **ATP-** dem Untertypwert hinzugefügt.
+  Sofern verfügbar, die Marke, die von dieser Kampagne gephisst wird. Wenn die Erkennung von Defender für Office 365 Technologie gesteuert wird, wird dem Untertypwert das Präfix **ATP-** hinzugefügt.
 
 - **Empfänger**: Die Anzahl der Benutzer, auf die diese Kampagne abzielt.
 
@@ -143,7 +143,7 @@ Die filterbaren Kampagneneigenschaften, die in der Schaltfläche **"Kampagnentyp
   - **Internetnachrichten-ID:** Verfügbar im **Nachrichten-ID-Kopfzeilenfeld** im Nachrichtenkopf. Ein Beispielwert ist `<08f1e0f6806a47b4ac103961109ae6ef@server.domain>` (beachten Sie die spitzen Klammern).
   - **Netzwerknachrichten-ID:** Ein GUID-Wert, der im **Headerfeld "X-MS-Exchange-Organization-Network-Message-Id"** im Nachrichtenkopf verfügbar ist.
   - **Sender-IP**
-  - **Anlage SHA256:** Um den SHA256-Hashwert einer Datei in Windows zu finden, führen Sie den folgenden Befehl in einer Eingabeaufforderung aus: `certutil.exe -hashfile "<Path>\<Filename>" SHA256` .
+  - **Anlage SHA256:** Um den SHA256-Hashwert einer Datei in Windows zu finden, führen Sie den folgenden Befehl an einer Eingabeaufforderung aus: `certutil.exe -hashfile "<Path>\<Filename>" SHA256` .
   - **Cluster-ID**
   - **Warnungs-ID**
   - **Warnungsrichtlinien-ID**
@@ -309,4 +309,4 @@ Mit den Schaltflächen unten in der Ansicht "Kampagnendetails" können Sie Detai
   - **Posteingangsnachrichten:** Öffnet eine neue Suchregisterkarte für den Bedrohungs-Explorer mithilfe der **Kampagnen-ID** und des **Übermittlungsorts: Posteingang** als Suchfilter.
   - **Interne Nachrichten:** Öffnet eine neue Suchregisterkarte für den Bedrohungs-Explorer mithilfe der **Kampagnen-ID** und der **Direktionalität: Organisationsinterner** Suchfilter.
 
-- Herunterladen des **Bedrohungsberichts:** Laden Sie die Kampagnendetails in ein Word-Dokument herunter (standardmäßig mit dem Namen CampaignReport.docx). Beachten Sie, dass der Download Details über die gesamte Lebensdauer der Kampagne enthält (nicht nur die ausgewählten Filterdaten).
+- **Bedrohungsbericht herunterladen:** Laden Sie die Kampagnendetails in ein Word-Dokument herunter (standardmäßig mit dem Namen CampaignReport.docx). Beachten Sie, dass der Download Details über die gesamte Lebensdauer der Kampagne enthält (nicht nur die ausgewählten Filterdaten).

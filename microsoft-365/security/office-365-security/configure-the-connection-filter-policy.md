@@ -19,12 +19,12 @@ ms.custom:
 description: Administratoren können erfahren, wie Sie die Verbindungsfilterung in Exchange Online Protection (EOP) konfigurieren, um E-Mails von E-Mail-Servern zuzulassen oder zu blockieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b5eb24377dd9f9ac304e1df7b2902d29e4a738b9
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 416fbd73d8412cf8697577df19f2fd2893b4ce96
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821961"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878820"
 ---
 # <a name="configure-connection-filtering"></a>Konfigurieren von Verbindungsfiltern
 
@@ -44,14 +44,14 @@ Wenn Sie ein Microsoft 365 Kunde mit Postfächern in Exchange Online oder ein EO
 
 - **Sichere Liste:** Die *sichere Liste* ist eine dynamische Zulassungsliste im Microsoft-Rechenzentrum, die keine Kundenkonfiguration erfordert. Microsoft identifiziert diese vertrauenswürdigen E-Mail-Quellen aus Abonnements für verschiedene Listen von Drittanbietern. Sie aktivieren oder deaktivieren die Verwendung der sicheren Liste. Sie können die Quell-E-Mail-Server in der sicheren Liste nicht konfigurieren. Die Spamfilterung wird bei eingehenden Nachrichten von den E-Mail-Servern in der sicheren Liste übersprungen.
 
-In diesem Artikel wird beschrieben, wie Sie die Standardverbindungsfilterrichtlinie im Microsoft 365 Security Center oder in PowerShell konfigurieren (Exchange Online PowerShell für Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer). Weitere Informationen dazu, wie EOP die Verbindungsfilterung verwendet, ist Teil der allgemeinen Antispameinstellungen Ihrer Organisation. Weitere Informationen finden Sie unter [Antispamschutz.](anti-spam-protection.md)
+In diesem Artikel wird beschrieben, wie Sie die Standardverbindungsfilterrichtlinie im Microsoft 365 Microsoft 365 Defender-Portal oder in PowerShell konfigurieren (Exchange Online PowerShell für Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer). Weitere Informationen dazu, wie EOP die Verbindungsfilterung verwendet, ist Teil der allgemeinen Antispameinstellungen Ihrer Organisation. Weitere Informationen finden Sie unter [Antispamschutz.](anti-spam-protection.md)
 
 > [!NOTE]
 > Die IP-Zulassungsliste, die sichere Liste und die BLOCKIERTE IP-Sperrliste sind ein Teil Ihrer Gesamtstrategie, um E-Mails in Ihrer Organisation zuzulassen oder zu blockieren. Weitere Informationen finden Sie unter [Erstellen von Listen sicherer Absender](create-safe-sender-lists-in-office-365.md) und Erstellen [blockierter Absenderlisten.](create-block-sender-lists-in-office-365.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security Center über <https://security.microsoft.com>. Wechseln Sie direkt zur Seite **Antispamrichtlinien**, verwenden Sie <https://security.microsoft.com/antispam>.
+- Sie öffnen das Microsoft 365 Defender-Portal unter <https://security.microsoft.com> . Wechseln Sie direkt zur Seite **Antispamrichtlinien**, verwenden Sie <https://security.microsoft.com/antispam>.
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -66,15 +66,15 @@ In diesem Artikel wird beschrieben, wie Sie die Standardverbindungsfilterrichtli
   - Durch Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
-- Um die Quell-IP-Adressen der E-Mail-Server (Absender) zu finden, die Sie zulassen oder blockieren möchten, können Sie das Headerfeld für die Verbindungs-IP **(CIP)** im Nachrichtenheader überprüfen. Informationen zum Anzeigen eines Nachrichtenkopfs in verschiedenen E-Mail-Clients finden Sie unter Anzeigen von [Internet-Nachrichtenkopfzeilen in Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
+- Um die Quell-IP-Adressen der E-Mail-Server (Absender) zu finden, die Sie zulassen oder blockieren möchten, können Sie das Headerfeld für die Verbindungs-IP **(CIP)** im Nachrichtenheader überprüfen. Informationen zum Anzeigen einer Nachrichtenkopfzeile in verschiedenen E-Mail-Clients finden Sie unter Anzeigen von [Internet-Nachrichtenkopfzeilen in Outlook](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c).
 
 - Die IP-Zulassungsliste hat Vorrang vor der IP-Sperrliste (eine Adresse in beiden Listen wird nicht blockiert).
 
 - Die IP-Zulassungsliste und die IP-Sperrliste unterstützen jeweils maximal 1273 Einträge, wobei ein Eintrag eine einzelne IP-Adresse, ein IP-Adressbereich oder eine CLASSless InterDomain Routing (CIDR)-IP ist.
 
-## <a name="use-the-security-center-to-modify-the-default-connection-filter-policy"></a>Verwenden des Sicherheitscenters zum Ändern der Standardverbindungsfilterrichtlinie
+## <a name="use-the-microsoft-365-defender-portal-to-modify-the-default-connection-filter-policy"></a>Verwenden des Microsoft 365 Defender-Portals zum Ändern der Standardverbindungsfilterrichtlinie
 
-1. Wechseln Sie im Security Center zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
+1. Wechseln Sie im Microsoft 365 **Defender-Portal zu E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \>  \> **Antispam.**
 
 2. Wählen Sie auf der Seite **"Antispamrichtlinien"** die **Verbindungsfilterrichtlinie (Standard)** aus der Liste aus, indem Sie auf den Namen der Richtlinie klicken.
 
@@ -103,9 +103,9 @@ In diesem Artikel wird beschrieben, wie Sie die Standardverbindungsfilterrichtli
 
 4. Zurück auf dem Flyout der Richtliniendetails klicken Sie auf **Schließen**.
 
-## <a name="use-the-security-center-to-view-the-default-connection-filter-policy"></a>Verwenden des Sicherheitscenters zum Anzeigen der Standardverbindungsfilterrichtlinie
+## <a name="use-the-microsoft-365-defender-portal-to-view-the-default-connection-filter-policy"></a>Verwenden des Microsoft 365 Defender-Portals zum Anzeigen der Standardverbindungsfilterrichtlinie
 
-1. Wechseln Sie im Security Center zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
+1. Wechseln Sie im Microsoft 365 **Defender-Portal zu E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \>  \> **Antispam.**
 
 2. Auf der Seite **"Antispamrichtlinien"** werden die folgenden Eigenschaften in der Liste der Richtlinien angezeigt:
 
@@ -152,7 +152,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Set-Host
 
 Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie die Standardverbindungsfilterrichtlinie erfolgreich geändert haben:
 
-- Wechseln Sie im Security Center zu **E-Mail & Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln, wählen Sie in der Liste die \>  \>  \>  \> **Verbindungsfilterrichtlinie (Standard)** aus, indem Sie auf den Namen der Richtlinie klicken und die Einstellungen überprüfen.
+- Wechseln Sie im Microsoft 365 Defender-Portal zu **E-Mail & Richtlinien** für die Zusammenarbeit & Richtlinien für Bedrohungsrichtlinien für \> **Regeln,** wählen Sie in der Liste die \>  \>  \>  \> **Verbindungsfilterrichtlinie (Standard)** aus, indem Sie auf den Namen der Richtlinie klicken und die Einstellungen überprüfen.
 
 - Führen Sie in Exchange Online PowerShell oder der eigenständigen EOP PowerShell den folgenden Befehl aus, und überprüfen Sie die Einstellungen:
 
@@ -175,7 +175,7 @@ Da Sie nun die potenziellen Probleme vollständig kennen, können Sie eine Nachr
 - Regelbedingung: **Wenden Sie diese Regel an, wenn** sich die \>  \> **Absender-IP-Adresse in einem dieser Bereiche befindet oder genau übereinstimmt** \> (geben Sie Ihre CIDR-IP mit einer /1- bis /23-Netzwerkmaske ein).
 - Regelaktion: **Ändern Sie die Nachrichteneigenschaften** Festlegen der Spam confidence level \> **(SCL)** Bypass Spam \> **filtering**.
 
-Sie können die Regel überwachen, die Regel testen, die Regel während eines bestimmten Zeitraums und andere Auswahlen aktivieren. Wir empfehlen, die Regel über eine bestimmte Zeit zu testen, bevor Sie sie erzwingen. Weitere Informationen finden Sie unter [Verwalten von Nachrichtenflussregeln in Exchange Online](/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules).
+Sie können die Regel überwachen, die Regel testen, die Regel während eines bestimmten Zeitraums und andere Auswahlen aktivieren. Wir empfehlen, die Regel über eine bestimmte Zeit zu testen, bevor Sie sie erzwingen. Weitere Informationen finden Sie unter [Verwalten von Nachrichtenflussregeln in Exchange Online.](/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
 
 ### <a name="skip-spam-filtering-on-selective-email-domains-from-the-same-source"></a>Überspringen der Spamfilterung für selektive E-Mail-Domänen aus derselben Quelle
 
@@ -207,4 +207,4 @@ Wenn eines dieser Szenarien auftritt, können Sie eine Nachrichtenflussregel mit
 
 ****
 
-![Das kurze Symbol für LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New zum Microsoft 365?** Entdecken Sie kostenlose Videokurse für **Microsoft 365 Administratoren und IT-Spezialisten,** die Ihnen von LinkedIn Learning zur Verfügung gestellt werden.
+![Das kurze Symbol für LinkedIn Learning ](../../media/eac8a413-9498-4220-8544-1e37d1aaea13.png) **New to Microsoft 365?** Entdecken Sie kostenlose Videokurse für **Microsoft 365 Administratoren und IT-Spezialisten,** die Ihnen von LinkedIn Learning zur Verfügung gestellt werden.

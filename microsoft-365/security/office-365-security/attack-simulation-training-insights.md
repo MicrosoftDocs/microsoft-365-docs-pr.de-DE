@@ -10,45 +10,47 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Administratoren können erfahren, wie sich das Training zur Angriffssimulation im Microsoft 365 sicherheitscenter auf Mitarbeiter auswirkt und Einblicke aus Simulations- und Schulungsergebnissen gewinnen.
+description: Administratoren können erfahren, wie sich Angriffssimulationsschulungen im Microsoft 365 Defender-Portal auf Mitarbeiter auswirken und erkenntnisse aus Simulations- und Schulungsergebnissen gewinnen.
 ms.technology: mdo
-ms.openlocfilehash: 0fcb88406558f73b587d8452375c33dbbec1c78b
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: e189864a42d025bb5ce720a6edb6c1c2c8c84623
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51600007"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878376"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Gewinnen Sie Erkenntnisse durch Angriffssimulationsschulungen
 
-Im Rahmen von Attack Simulation Training bietet Microsoft Ihnen Einblicke basierend auf den Ergebnissen von Simulationen und Schulungen, die Mitarbeiter durch geführt haben. Diese Einblicke helfen Ihnen, über den Fortschritt der Bedrohungsbereitschaft Ihrer Mitarbeiter auf dem Laufenden zu bleiben, und empfehlen ihnen die nächsten Schritte, um Ihre Mitarbeiter und Ihre Umgebung besser auf Angriffe vorzubereiten.
+**Gilt** [für Microsoft Defender für Office 365 Plan 2](defender-for-office-365.md)
 
-Wir arbeiten kontinuierlich daran, die Für Sie verfügbaren Einblicke zu erweitern. Verhaltensfolgen und empfohlene Aktionen sind derzeit verfügbar. Beginnen Sie mit attack [simulation training im Microsoft 365 Security Center](https://security.microsoft.com/attacksimulator?viewid=overview).
+Microsoft bietet Ihnen im Rahmen der Angriffssimulationsschulung Einblicke basierend auf den Ergebnissen von Simulationen und Schulungen, die Mitarbeiter durchlaufen haben. Diese Erkenntnisse helfen Ihnen, über den Fortschritt der Bedrohungsbereitschaft Ihrer Mitarbeiter auf dem Laufenden zu bleiben, und empfehlen die nächsten Schritte, um Ihre Mitarbeiter und Ihre Umgebung besser auf Angriffe vorzubereiten.
 
-## <a name="behavior-impact-on-compromise-rate"></a>Auswirkungen des Verhaltens auf die Kompromissrate
+Wir arbeiten kontinuierlich daran, die Einblicke zu erweitern, die Ihnen zur Verfügung stehen. Verhaltensauswirkungen und empfohlene Aktionen sind derzeit verfügbar. Beginnen Sie mit [dem Angriffssimulationstraining im Microsoft 365 Defender-Portal.](https://security.microsoft.com/attacksimulator?viewid=overview)
 
-Auf der **Registerkarte Übersicht** des Angriffssimulationstrainings finden Sie die Auswirkungen des Verhaltens auf die Karte für **die Kompromissrate.** Diese Karte zeigt, wie Mitarbeiter mit den Simulationen umgegangen sind, die Sie im Gegensatz zur **vorhergesagten Kompromissrate ausführen.** Mit diesen Erkenntnissen können Sie den Fortschritt bei der Bereitschaft zur Bedrohung von Mitarbeitern nachverfolgen, indem Sie mehrere Simulationen für die gleichen Mitarbeitergruppen ausführen.
+## <a name="behavior-impact-on-compromise-rate"></a>Verhaltensauswirkungen auf die Gefährdungsrate
 
-Im Diagramm sehen Sie:
+Auf der Registerkarte **"Übersicht"** des Angriffssimulationstrainings finden Sie die Auswirkungen auf das Verhalten auf die Karte mit **der Kompromittierungsrate.** Diese Karte zeigt, wie mitarbeiter mit den Simulationen vertraut waren, die Sie ausgeführt haben, im Gegensatz zur **prognostizierten Kompromittiertrate.** Sie können diese Erkenntnisse verwenden, um den Fortschritt der Bedrohungsbereitschaft der Mitarbeiter nachzuverfolgen, indem Sie mehrere Simulationen für dieselben Gruppen von Mitarbeitern ausführen.
 
-- **Vorhergesagte Kompromissrate,** die die durchschnittliche Kompromissrate für Simulationen mit dem gleichen Nutzlasttyp für andere mandanten Microsoft 365, die Attack Simulation Training verwenden.
-- **Die tatsächliche Kompromissrate** spiegelt den Prozentsatz der Mitarbeiter wider, die für die Simulation gefallen sind.
+Im Diagramm sehen Sie Folgendes:
 
-Darüber hinaus wird der Unterschied zwischen der tatsächlichen Anzahl der durch den Angriff gefährdeten Mitarbeiter und der `<number> less susceptible to phishing` vorhergesagten Kompromissrate wider. Diese Anzahl von Mitarbeitern ist in Zukunft weniger wahrscheinlich durch ähnliche Angriffe gefährdet, während sie im Gegensatz zur vorhergesagten Kompromissrate angibt, wie die Mitarbeiter insgesamt `<percent%> better than predicted rate` waren.
+- **Die prognostizierte Kompromittierungsrate,** die die durchschnittliche Kompromittierungsrate für Simulationen widerspiegelt, die dieselbe Nutzlast für andere Microsoft 365 Mandanten verwenden, die Angriffssimulationsschulungen verwenden.
+- **Die tatsächliche Kompromittierungsrate** spiegelt den Prozentsatz der Mitarbeiter wider, die für die Simulation verantwortlich sind.
+
+Darüber hinaus `<number> less susceptible to phishing` spiegelt den Unterschied zwischen der tatsächlichen Anzahl von Mitarbeitern, die durch den Angriff kompromittiert wurden, und der prognostizierten Gefährdungsrate wider. Diese Anzahl von Mitarbeitern wird in Zukunft mit geringerer Wahrscheinlichkeit durch ähnliche Angriffe kompromittiert, während sie zeigt, wie sich die Mitarbeiter insgesamt im Gegensatz zur `<percent%> better than predicted rate` prognostizierten Kompromissrate verhalten haben.
 
 > [!div class="mx-imgBorder"]
-> ![Übersicht über die Verhaltensfolgenkarte für Das Training zur Angriffssimulation](../../media/attack-sim-preview-behavior-impact-card.png)
+> ![Übersicht über die Verhaltensauswirkungskarte für Angriffssimulationsschulungen](../../media/attack-sim-preview-behavior-impact-card.png)
 
-Klicken Sie auf Simulationen und Schulungseffizienzbericht anzeigen, um einen ausführlicheren **Bericht zu erhalten.** Dieser Bericht enthält dieselben Informationen mit zusätzlichem Kontext aus der Simulation selbst (z. B. Simulationstechnik und Zielbenutzer insgesamt).
+Klicken Sie auf **"Simulationen und Schulungseffizienzbericht anzeigen",** um einen detaillierteren Bericht anzuzeigen. Dieser Bericht enthält die gleichen Informationen mit zusätzlichem Kontext aus der Simulation selbst (z. B. Simulationstechnik und Gesamtzahl der benutzerzielen).
 
 ## <a name="recommended-actions"></a>Empfohlene Aktionen
 
-Auf der [ **Registerkarte Simulationen**](https://security.microsoft.com/attacksimulator?viewid=simulations)finden Sie durch Auswählen einer Simulation die Simulationsdetails, in denen Sie den Abschnitt **Empfohlene Aktionen** finden.
+Wenn Sie auf der Registerkarte [ **"Simulationen"**](https://security.microsoft.com/attacksimulator?viewid=simulations)eine Simulation auswählen, gelangen Sie zu den Simulationsdetails, in denen Sie den Abschnitt **"Empfohlene Aktionen"** finden.
 
-Im Abschnitt empfohlene Aktionen werden empfehlungen beschrieben, die in [Microsoft Secure Score verfügbar sind.](../defender/microsoft-secure-score.md) Diese Empfehlungen basieren auf der In der Simulation verwendeten Nutzlast und helfen Ihnen, Ihre Mitarbeiter und Ihre Umgebung zu schützen. Wenn Sie auf jede Verbesserungsaktion klicken, erfahren Sie mehr über die Details.
+Der Abschnitt "Empfohlene Aktionen" enthält empfehlungen wie in [der Microsoft-Sicherheitsbewertung](../defender/microsoft-secure-score.md)verfügbar. Diese Empfehlungen basieren auf der Nutzlast, die in der Simulation verwendet wird, und helfen Ihnen, Ihre Mitarbeiter und Ihre Umgebung zu schützen. Wenn Sie auf jede Verbesserungsmaßnahme klicken, gelangen Sie zu den Details.
 
 > [!div class="mx-imgBorder"]
-> ![Abschnitt "Empfehlungsaktionen" zum Training zur Angriffssimulation](../../media/attack-sim-preview-recommended-actions.png)
+> ![Abschnitt "Empfehlungsaktionen" zu Angriffssimulationsschulungen](../../media/attack-sim-preview-recommended-actions.png)
 
 ## <a name="related-links"></a>Links zu verwandten Themen
 

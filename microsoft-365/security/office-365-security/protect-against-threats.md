@@ -20,12 +20,12 @@ description: Administratoren können mehr über den Bedrohungsschutz in Microsof
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4c32026ab4f33a68b1f63cb000807671839f6bad
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 5d61b17fc4575249bb592fc4ca865c34a628361a
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52821283"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878328"
 ---
 # <a name="protect-against-threats"></a>Schutz vor Bedrohungen
 
@@ -119,7 +119,7 @@ Im folgenden Verfahren wird beschrieben, wie Sie die Standardmäßige Antiphishi
 
 3. Konfigurieren Sie im angezeigten Richtliniendetails-Flyout die folgenden Einstellungen:
 
-   - **Phishingschwellenwert & Schutzabschnitt:** Klicken Sie auf **"Schutzeinstellungen bearbeiten",** und konfigurieren Sie die folgenden Einstellungen im Flyout **"Schutzeinstellungen bearbeiten",** das geöffnet wird:
+   - **Phishingschwellenwert & Schutzabschnitt:** Klicken Sie auf **"Schutzeinstellungen bearbeiten",** und konfigurieren Sie die folgenden Einstellungen im flyout **"Schutzeinstellungen bearbeiten",** das geöffnet wird:
      - **Schwellenwert für Phishing-E-Mails:** <sup>\*</sup> Wählen Sie **2 – Aggressiv** (Standard) oder **3 – Aggressiver** (streng) aus.
      - Abschnitt **"Identitätswechsel":** <sup>\*</sup> Konfigurieren Sie die folgenden Werte:
        - Wählen Sie **"Schützen von Benutzern aktivieren"** aus, klicken Sie auf den angezeigten Link **"Absender verwalten",** und fügen Sie interne und externe Absender hinzu, um sich vor Identitätswechseln zu schützen, z. B. die Vorstände Ihrer Organisation, Ihren CEO, GIF und andere leitende Führungskräfte.
@@ -236,7 +236,7 @@ Workloads wie SharePoint, OneDrive und Teams werden für die Zusammenarbeit erst
 
 1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)die Option **"Threat Management** \> **Policy** \> **ATP Safe Attachments" aus,** und klicken Sie dann auf **"Globale Einstellungen".**
 
-2. Vergewissern Sie sich, dass sich der Umschalter **"Defender für Office 365 für SharePoint", "OneDrive" und "Microsoft Teams"** rechts befindet: ![ "Einschalten" ](../../media/scc-toggle-on.png) und klicken Sie dann auf **"Speichern".**
+2. Überprüfen Sie, ob sich der Umschalter **"Defender für Office 365 für SharePoint", "OneDrive" und Microsoft Teams** auf der rechten Seite befindet: ![ "Einschalten", ](../../media/scc-toggle-on.png) und klicken Sie dann auf **"Speichern".**
 
 3. Überprüfen (und ggf. bearbeiten) Sie die [Richtlinien für sichere Anlagen](set-up-safe-attachments-policies.md) und sichere [Links](set-up-safe-links-policies.md)In Ihrer Organisation.
 
@@ -278,7 +278,7 @@ Weitere Informationen zu Warnungen finden Sie unter [Erstellen von Aktivitätswa
 > Wenn Sie die Konfiguration abgeschlossen haben, verwenden Sie diese Links, um Workloaduntersuchungen zu starten:
 >
 >- [Threat Protection-Statusbericht](view-email-security-reports.md#threat-protection-status-report)
->- [Verwenden des Sicherheitscenters zum Verwalten von isolierten Dateien in Defender für Office 365](manage-quarantined-messages-and-files.md#use-the-security-center-to-manage-quarantined-files-in-defender-for-office-365)
+>- [Verwenden des Microsoft 365 Defender-Portals zum Verwalten von isolierten Dateien in Defender für Office 365](manage-quarantined-messages-and-files.md#use-the-microsoft-365-defender-portal-to-manage-quarantined-files-in-defender-for-office-365)
 >- [Vorgehensweise, wenn eine schädliche Datei in SharePoint Online, OneDrive oder Microsoft Teams gefunden wird](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 >- [Verwalten von isolierten Nachrichten und Dateien als Administrator in Microsoft 365](manage-quarantined-messages-and-files.md)
 

@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Administratoren können erfahren, wie Standard- und Strict-Richtlinieneinstellungen für die Schutzfunktionen von Exchange Online Protection (EOP) und Microsoft Defender für Office 365
+description: Administratoren erfahren, wie Standard- und Strict-Richtlinieneinstellungen für die Schutzfunktionen von Exchange Online Protection (EOP) und Microsoft Defender für Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 244364b423ee633a9131aabf93b5fc1e7cf756c0
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 24fe67a7465ec71451b649dbc5963c28e0dc7cf3
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822286"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879012"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Voreingestellte Sicherheitsrichtlinien in EOP und Microsoft Defender für Office 365
 
@@ -105,7 +105,7 @@ Mit anderen Worten, die Einstellungen der **Strict-Schutzrichtlinie** setzen die
 
 ### <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Microsoft 365 Security Center unter <https://security.microsoft.com> . To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies> .
+- Sie öffnen das Microsoft 365 Defender-Portal unter <https://security.microsoft.com> . To go directly to the **Preset security policies** page, use <https://security.microsoft.com/presetSecurityPolicies> .
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -117,9 +117,9 @@ Mit anderen Worten, die Einstellungen der **Strict-Schutzrichtlinie** setzen die
 
   **Hinweis:** Wenn Sie Benutzer zur entsprechenden Azure Active Directory Rolle im Microsoft 365 Admin Center hinzufügen, erhalten Benutzer die erforderlichen Berechtigungen _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
-### <a name="use-the-security-center-to-assign-preset-security-policies-to-users"></a>Verwenden des Sicherheitscenters zum Zuweisen vordefinierter Sicherheitsrichtlinien zu Benutzern
+### <a name="use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users"></a>Verwenden des Microsoft 365 Defender-Portals, um Benutzern voreingestellte Sicherheitsrichtlinien zuzuweisen
 
-1. Wechseln Sie im Security Center zu Richtlinien für **die E-Mail-& Zusammenarbeit** & Richtlinien mit \>  \>  \> **vorlagenbasierten Richtlinien** \> für Regeln.
+1. Wechseln Sie im Microsoft 365 Defender-Portal zu Richtlinien für die **E-Mail-& Zusammenarbeit** & Richtlinien für Bedrohungsrichtlinien mit Vorlagen für \> **Regeln** im Abschnitt \>  \>  \> **"Voreingestellte Sicherheitsrichtlinien".**
 
 2. Klicken Sie unter **"Standardschutz"** oder **"Strenger Schutz"** auf **"Bearbeiten".**
 
@@ -136,7 +136,7 @@ Mit anderen Worten, die Einstellungen der **Strict-Schutzrichtlinie** setzen die
 
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-4. In Microsoft Defender für Office 365 Organisationen werden Sie zum Defender für **Office 365 Schutzmaßnahmen gelten für** die Seite, um die internen Empfänger zu identifizieren, für die microsoft Defender für Office 365 [Schutz](#policies-in-preset-security-policies) gilt (Empfängerbedingungen).
+4. In Microsoft Defender für Office 365 Organisationen werden Sie zum Defender weitergeleitet, um Office 365 Schutzmaßnahmen gelten für die **Seite,** um die internen Empfänger zu identifizieren, für die [microsoft Defender für Office 365 Schutz](#policies-in-preset-security-policies) gilt (Empfängerbedingungen).
 
    Die Einstellungen und das Verhalten entsprechen genau den **EOP-Schutzmaßnahmen,** die auf die Seite angewendet werden.
 
@@ -144,9 +144,9 @@ Mit anderen Worten, die Einstellungen der **Strict-Schutzrichtlinie** setzen die
 
 5. Überprüfen Sie auf der Seite **"Überprüfen und bestätigen Sie Ihre Änderungen",** überprüfen Sie Ihre Auswahl, und klicken Sie dann auf **"Bestätigen".**
 
-### <a name="use-the-security-center-to-modify-the-assignments-of-preset-security-policies"></a>Verwenden des Sicherheitscenters zum Ändern der Zuweisungen vordefinierter Sicherheitsrichtlinien
+### <a name="use-the-microsoft-365-defender-portal-to-modify-the-assignments-of-preset-security-policies"></a>Verwenden des Microsoft 365 Defender-Portals zum Ändern der Zuweisungen voreingestellter Sicherheitsrichtlinien
 
-Die Schritte zum Ändern der Zuweisung der **Standardschutz-** oder **Strict Protection-Sicherheitsrichtlinie** sind die gleichen wie bei der anfänglichen Zuweisung der [voreingestellten Sicherheitsrichtlinien zu Benutzern.](#use-the-security-center-to-assign-preset-security-policies-to-users)
+Die Schritte zum Ändern der Zuweisung der **Standardschutz-** oder **Strict Protection-Sicherheitsrichtlinie** sind die gleichen wie bei der anfänglichen Zuweisung der [voreingestellten Sicherheitsrichtlinien zu Benutzern.](#use-the-microsoft-365-defender-portal-to-assign-preset-security-policies-to-users)
 
 Um den **Standardschutz** oder **strenge Schutzsicherheitsrichtlinien** zu deaktivieren und gleichzeitig die vorhandenen Bedingungen und Ausnahmen zu erhalten, ziehen Sie die Umschaltfläche auf **"Deaktiviert"** ![ ](../../media/scc-toggle-off.png) um. Um die Richtlinien zu aktivieren, schieben Sie die Umschaltfläche auf **"Aktiviert"** ![ ](../../media/scc-toggle-on.png) ein.
 

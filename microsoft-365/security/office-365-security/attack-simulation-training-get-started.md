@@ -17,28 +17,30 @@ ms.collection:
 - m365initiative-m365-defender
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können erfahren, wie Sie angriffssimulationsschulungen verwenden, um simulierte Phishing- und Kennwortangriffe in ihren Microsoft 365 E5 oder Microsoft Defender für Office 365 Plan 2-Organisationen auszuführen.
+description: Administratoren können erfahren, wie Sie mithilfe von Angriffssimulationsschulungen simulierte Phishing- und Kennwortangriffe in ihren Microsoft 365 E5 oder Microsoft Defender für Office 365 Plan 2-Organisationen ausführen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c5d4b77204f207c31f2014df797f6209b92c9ccb
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 182d3d3c1d3b7c0c43caa8a809e993933707af00
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822334"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878784"
 ---
 # <a name="get-started-using-attack-simulation-training"></a>Erste Schritte mit dem Angriffssimulationstraining
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-Wenn Ihre Organisation über Microsoft 365 E5 oder Microsoft Defender für Office 365 Plan 2 verfügt, der Funktionen für [die Untersuchung und Reaktion auf Bedrohungen](office-365-ti.md)umfasst, können Sie die Angriffssimulationsschulung im Microsoft Security Center verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen. Diese simulierten Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren und zu finden, bevor sich ein realer Angriff auf Ihre Unterlinie auswirkt. Lesen Sie diesen Artikel, um mehr zu erfahren.
+**Gilt** [für Microsoft Defender für Office 365 Plan 2](defender-for-office-365.md)
+
+Wenn Ihre Organisation über Microsoft 365 E5 oder Microsoft Defender für Office 365 Plan 2 verfügt, der Funktionen für [die Untersuchung und Reaktion auf Bedrohungen](office-365-ti.md)umfasst, können Sie die Angriffssimulationsschulung im Microsoft 365 Defender-Portal verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen. Diese simulierten Angriffe können Ihnen helfen, anfällige Benutzer zu identifizieren und zu finden, bevor sich ein realer Angriff auf Ihre Unterlinie auswirkt. Lesen Sie diesen Artikel, um mehr zu erfahren.
 
 > [!NOTE]
-> Das Angriffssimulationstraining ersetzt die alte Angriffssimulator-V1-Erfahrung, die im [Angriffssimulator in Microsoft Defender für Office 365](attack-simulator.md)beschrieben wird.
+> Das Angriffssimulationstraining ersetzt die alte Angriffssimulator-v1-Erfahrung, die im [Angriffssimulator in Microsoft Defender für Office 365](attack-simulator.md)beschrieben wird.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Um das Microsoft Security Center zu öffnen, wechseln Sie zu <https://security.microsoft.com> . Angriffssimulationsschulungen sind im Angriffssimulationstraining für **E-Mail und Zusammenarbeit** \> verfügbar. Um direkt zum Angriffssimulationstraining zu wechseln, öffnen Sie <https://security.microsoft.com/attacksimulator> .
+- Um das Microsoft 365 Defender-Portal zu öffnen, wechseln Sie zu <https://security.microsoft.com> . Angriffssimulationsschulungen sind im Angriffssimulationstraining für **E-Mail und Zusammenarbeit** \> verfügbar. Um direkt zum Angriffssimulationstraining zu wechseln, öffnen Sie <https://security.microsoft.com/attacksimulator> .
 
 - Weitere Informationen zur Verfügbarkeit von Angriffssimulationsschulungen in verschiedenen Microsoft 365-Abonnements finden Sie unter [Microsoft Defender für Office 365 Dienstbeschreibung.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
@@ -50,9 +52,9 @@ Wenn Ihre Organisation über Microsoft 365 E5 oder Microsoft Defender für Offic
 
 - Es gibt keine entsprechenden PowerShell-Cmdlets für Angriffssimulationsschulungen.
 
-- Angriffssimulations- und Schulungsdaten werden mit anderen Kundendaten für Microsoft 365-Dienste gespeichert. Weitere Informationen finden Sie unter [Microsoft 365 Datenspeicherorten.](../../enterprise/o365-data-locations.md) Die Angriffssimulation ist in den folgenden Regionen verfügbar: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN und KOR.
+- Angriffssimulations- und Schulungsdaten werden zusammen mit anderen Kundendaten für Microsoft 365-Dienste gespeichert. Weitere Informationen finden Sie unter [Microsoft 365 Datenspeicherorten.](../../enterprise/o365-data-locations.md) Die Angriffssimulation ist in den folgenden Regionen verfügbar: NAM, APC, EUR, IND, CAN, AUS, FRA, GBR, JPN und KOR.
 
-- Ab dem 15. Juni 2021 ist das Angriffssimulationstraining in GCC verfügbar. Wenn Ihre Organisation über Office 365 G5-GCC oder Microsoft Defender für Office 365 (Plan 2) für Behörden verfügt, können Sie die Angriffssimulationsschulung im Microsoft Security Center verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen, wie in diesem Artikel beschrieben. Angriffssimulationsschulungen sind in GCC High- oder DoD-Umgebungen noch nicht verfügbar.
+- Ab dem 15. Juni 2021 ist das Angriffssimulationstraining in GCC verfügbar. Wenn Ihre Organisation über Office 365 G5-GCC oder Microsoft Defender für Office 365 (Plan 2) für Behörden verfügt, können Sie die Angriffssimulationsschulung im Microsoft 365 Defender-Portal verwenden, um realistische Angriffsszenarien in Ihrer Organisation auszuführen, wie in diesem Artikel beschrieben. Angriffssimulationsschulungen sind in GCC High- oder DoD-Umgebungen noch nicht verfügbar.
 
 > [!NOTE]
 > Die Angriffssimulationsschulung bietet E3-Kunden eine Teilmenge der Funktionen als Testversion. Das Testangebot enthält die Möglichkeit, eine Credential Harvest-Nutzlast zu verwenden, und die Möglichkeit, "ISA-Phishing" oder "Massenmarktphishing" auszuwählen. Keine anderen Funktionen sind Teil des E3-Testangebots.
