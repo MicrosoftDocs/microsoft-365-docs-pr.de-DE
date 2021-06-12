@@ -10,22 +10,23 @@ ms.service: o365-administration
 search.appverid: ''
 localization_priority: None
 description: Erfahren Sie, wie Sie in Microsoft Viva nach Themen suchen können.
-ms.openlocfilehash: bce9309d27b76854b927922f39389c18e1c09449
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 3bd247bfacc6a85bb19c8f4eeedb5aad8662e60e
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844731"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908065"
 ---
 # <a name="use-microsoft-search-to-find-topics-in-microsoft-viva-topics"></a>Verwenden von Microsoft Search zum Suchen von Themen in Microsoft Viva Topics
 
-Während Viva Topics-Benutzer Themen über Themenhighlights in ihren SharePoint-Websites finden, können sie sie auch über Microsoft Search finden. 
+Während Viva Topics-Benutzer Themen über Themenhighlights in ihren SharePoint-Websites finden können, können sie sie auch über Microsoft Search finden. 
 
 ## <a name="topic-answer"></a>Themenantwort
 
-Wenn Sie in Microsoft Search nach einem bestimmten Thema (z. B. "Saturn") suchen, wenn ein Thema vorhanden ist und gefunden wird, wird das Ergebnis im Vorschlagsformat für die Themenantwort angezeigt.
+Wenn Sie auf der SharePoint Startseite, auf Office.com oder auf einer SharePoint Website, die auf Ihre Organisation beschränkt ist, nach einem bestimmten Thema suchen, wenn ein Thema vorhanden ist und gefunden wird, wird das Ergebnis im Format für die Themenantwort angezeigt.
 
 In der Themenantwort wird Folgendes angezeigt:
+
 - Themenname
 - Alternative Namen: Alternative Namen oder Akronyme für das Thema.
 - Definition: Beschreibung des Themas, die von der KI bereitgestellt oder manuell von einer Person hinzugefügt wurde.
@@ -38,10 +39,9 @@ Die Themenseite kann in den Suchergebnissen auch dann angezeigt werden, wenn die
 
 In den Suchergebnissen in Word, PowerPoint, Outlook und Excel wird auch die Themenantwort angezeigt, wenn eine gefunden wird.
 
-
 ## <a name="acronyms"></a>Akronyme
 
-In Viva Topics können Sie ein Thema manuell bearbeiten, um ein Akronym für es als <b>alternativen Namen</b>einzuschließen. Dadurch kann ein Benutzer, der nur mit dem Akronym des Themas sucht, die Themenantwort über Microsoft Search finden.
+In Viva Topics können Sie ein Thema manuell bearbeiten, um ein Akronym für es als *alternativen Namen* einzuschließen. Dadurch kann ein Benutzer, der nur mit dem Akronym des Themas sucht, die Themenantwort über Microsoft Search finden.
 
 [Akronyme Antworten](/microsoftsearch/manage-acronyms) ist ein Feature, das über Microsoft Search bereitgestellt wird und separat von Viva Topics verwaltet wird.
 
@@ -52,8 +52,13 @@ In Viva Topics können Sie ein Thema manuell bearbeiten, um ein Akronym für es 
 Für Benutzer, die Informationen zum Buchen einer Reise für die Arbeit suchen:
 
 - Wenn einige Benutzer den Namen des Reisetools (z. B. "Concur") kennen, ist es einfacher, ein Lesezeichen zu erstellen, um direkt zur externen Website zu wechseln.
-- Für Benutzer, die im Allgemeinen nach "Reisen" suchen, erstellen Sie ein Thema zu "Reisen", das die informationen enthält, die sie erwarten. Erwägen Sie das Hinzufügen eines Links zur externen Parallel-Website in der Beschreibung des Themas. Wenn sich der Link stattdessen zu einer internen Reisebuchungswebsite befindet, die auf dem Microsoft 365 Mandanten gehostet wird, können Sie ihn den "angehefteten Ressourcen" hinzufügen.
+
+- Für Benutzer, die im Allgemeinen nach "Reisen" suchen, erstellen Sie ein Thema zu "Reisen", das die informationen enthält, die sie erwarten. Erwägen Sie das Hinzufügen eines Links zur externen Parallel-Website in der Beschreibung des Themas. Wenn sich der Link stattdessen zu einer internen Reisebuchungswebsite befindet, die auf dem Microsoft 365 Mandanten gehostet wird, können Sie ihn den angehefteten Ressourcen hinzufügen.
  
 ### <a name="search-results-priority"></a>Priorität der Suchergebnisse 
 
 Wenn ein Benutzer in der Suchumgebung nach einem Begriff wie "Reise" sucht, wird anstelle eines Themas ein Lesezeichen angezeigt, wenn ein Lesezeichen verfügbar ist.
+
+## <a name="see-also"></a>Weitere Informationen
+
+[Übersicht über Viva Topics](topic-experiences-overview.md)

@@ -3,7 +3,7 @@ title: Microsoft Viva Topics – Übersicht
 ms.author: chucked
 author: chuckedmonson
 manager: pamgreen
-ms.reviewer: cjtan
+ms.reviewer: cjtan; lauris
 audience: admin
 ms.topic: article
 ms.service: ''
@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Übersicht über Viva-Themen.
-ms.openlocfilehash: c95e611a98609ff13a41854a6fb25b6ae88b43d8
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 89f35062009372c2a44dddcb4e4d2934e494282f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877812"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908322"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics – Übersicht 
 
@@ -37,15 +37,36 @@ Viva Topics verwendet KI, um automatisch nach *Themen* in Ihrer Organisation zu 
 
 ## <a name="how-topics-are-displayed-to-users"></a>Wie Themen den Benutzern angezeigt werden
 
-Wenn ein Thema in Inhalten auf SharePoint-Nachrichten und -Seiten erwähnt wird, wird es hervorgehoben. Sie können die Themenübersicht über die Markierung öffnen. Öffnen Sie die Themendetails aus dem Titel der Zusammenfassung. Das erwähnte Thema kann automatisch identifiziert werden oder wurde der Seite mit einem direkten Verweis auf das Thema durch den Seitenautor hinzugefügt. 
+Themen werden Benutzern über Folgendes angezeigt:
 
-   ![Themenhighlights](../media/knowledge-management/saturn.png) 
+- [Themenhighlights](topic-experiences-overview.md#topic-highlights) auf SharePoint Seiten
+- Themenantworten in [Suchergebnissen](topic-experiences-overview.md#search-results)
+- Suchen in [Office-Anwendungen](topic-experiences-overview.md#office-application-search)
+- [Themencenter-Startseite](topic-experiences-overview.md#topic-center)
 
-Wenn Sie die Suche in Word, PowerPoint, Outlook oder Excel verwenden, entweder über das Suchfeld oder durch Auswählen der **Suche** im Kontextmenü, werden die angezeigten Ergebnisse möglicherweise auch die Themenzusammenfassung anzeigen.
+### <a name="topic-highlights"></a>Themenhighlights
+
+Wenn ein Thema in Inhalten auf SharePoint-Nachrichten und -Seiten erwähnt wird, wird es hervorgehoben. Sie können die Themenübersicht über die Markierung öffnen. Öffnen Sie die Themendetails aus dem Titel der Zusammenfassung, um die vollständige Themenseite anzuzeigen. Das genannte Thema könnte automatisch identifiziert werden oder der Seite mit einem direkten Verweis auf das Thema durch den Seitenautor hinzugefügt worden sein. 
+
+   ![Screenshot mit Themenhighlights.](../media/knowledge-management/saturn.png) 
+
+### <a name="search-results"></a>Suchergebnisse
+
+Sie können eine [Themenantwort](search.md#topic-answer) in Suchergebnissen anzeigen, wenn Sie auf der SharePoint Startseite suchen, auf Office.com suchen oder auf einer SharePoint Website suchen, nachdem Sie den Suchbereich so geändert haben, dass er die gesamte Organisation einschließt. Die Themenantwort wird im Thema der Ergebnisliste angezeigt und enthält einen kurzen Satz von Informationen zu diesem Thema. 
+
+   ![Screenshot der Suchergebnisse einer SharePoint Websitesuche.](../media/knowledge-management/site-search-results.png) 
+
+### <a name="office-application-search"></a>Office Anwendungssuche
+
+Wenn Sie die Suche in Office Apps wie Word, PowerPoint, Outlook oder Excel verwenden – entweder über das Suchfeld oder durch Auswählen der **Suche** im Kontextmenü – werden die Themenantworten in den Suchergebnissen angezeigt.
 
    ![Screenshot der Suche in Word über das Suchfeld.](../media/knowledge-management/word-search-2.png)
 
    ![Screenshot der Suche in Word über das Kontextmenü "Suchen".](../media/knowledge-management/word-search-1.png)
+
+### <a name="topic-center"></a>Themencenter
+
+Benutzer können Themen in ihrer Organisation sehen, mit denen sie eine Verbindung auf der [Themencenter-Startseite](topic-center-overview.md#home-page)haben.
 
 ## <a name="knowledge-indexing"></a>Wissensindizierung
 
@@ -125,6 +146,6 @@ Darüber hinaus können Benutzer mit entsprechenden Berechtigungen Elemente wie 
 
 Weitere Informationen finden Sie unter ["Themenermittlung und Kuratierung".](./topic-experiences-discovery-curation.md)
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Informationen
 
 [Verwenden von Microsoft Search zum Suchen von Themen in Viva Topics](./search.md)

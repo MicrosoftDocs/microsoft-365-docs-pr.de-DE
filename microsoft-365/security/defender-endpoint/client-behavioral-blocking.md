@@ -19,12 +19,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: fcf2310929937d1dacfc9c101d3e14414bad262b
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: b85c0c63cc7c72ad555d80bd8ce6c07c95b4b97b
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903744"
+ms.locfileid: "52908077"
 ---
 # <a name="client-behavioral-blocking"></a>Client-Verhaltensblockierung
 
@@ -46,9 +46,9 @@ Antivirusschutz funktioniert am besten, wenn er mit Cloudschutz kombiniert wird.
 
 [Microsoft Defender Antivirus](microsoft-defender-antivirus-in-windows-10.md) können verdächtiges Verhalten, bösartigen Code, Datei- und Speicherangriffe und vieles mehr auf einem Gerät erkennen. Wenn verdächtige Verhaltensweisen erkannt werden, überwacht und sendet Microsoft Defender Antivirus diese verdächtigen Verhaltensweisen und deren Prozessstrukturen an den Cloudschutzdienst. Machine Learning unterscheidet zwischen schädlichen Anwendungen und gutem Verhalten innerhalb von Millisekunden und klassifiziert jedes Artefakt. Sobald ein Artefakt als bösartig eingestuft wird, wird es nahezu in Echtzeit auf dem Gerät blockiert. 
 
-Wenn ein verdächtiges Verhalten erkannt wird, wird eine [Warnung](alerts-queue.md) generiert und ist in [Microsoft 365 Defender](microsoft-defender-security-center.md) (vormals Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )) sichtbar.
+Wenn ein verdächtiges Verhalten erkannt wird, wird eine [Warnung](alerts-queue.md) generiert und im [Microsoft 365 Defender-Portal](microsoft-defender-security-center.md) (früher Microsoft Defender Security Center) angezeigt.
 
-Das Blockieren von Clientverhalten ist effektiv, da es nicht nur dazu beiträgt, den Start eines Angriffs zu verhindern, es kann auch dazu beitragen, einen Angriff zu stoppen, der mit der Ausführung begonnen hat. Und mit der Blockierung von [Feedbackschleifen](feedback-loop-blocking.md) (eine weitere Möglichkeit zum Blockieren und Eindämmen von Verhaltensweisen) werden Angriffe auf anderen Geräten in Ihrer Organisation verhindert.
+Das Blockieren von Clientverhalten ist effektiv, da es nicht nur dazu beiträgt, den Start eines Angriffs zu verhindern, es kann auch dazu beitragen, einen Angriff zu stoppen, der mit der Ausführung begonnen hat. Und mit der Blockierung von [Feedbackschleifen](feedback-loop-blocking.md) (eine weitere Möglichkeit zur Blockierung und Eindämmung von Verhaltensweisen) werden Angriffe auf anderen Geräten in Ihrer Organisation verhindert.
 
 ## <a name="behavior-based-detections"></a>Verhaltensbasierte Erkennungen
 

@@ -17,12 +17,12 @@ ms.collection:
 description: Administratoren erfahren, wie Sie Anti-Spam-Richtlinien in Exchange Online Protection (EOP) anzeigen, erstellen, ändern und löschen können.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2214baa1c205d4e0f634c5a07f4d55522d2ad6b1
-ms.sourcegitcommit: 50908a93554290ff1157b58d0a868a33e012513c
+ms.openlocfilehash: 78cfef52988e7da611edc0cc4d475e8a4624bc0e
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52822021"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879096"
 ---
 # <a name="configure-anti-spam-policies-in-eop"></a>Konfigurieren von Antispamrichtlinien in EOP
 
@@ -37,14 +37,14 @@ In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder Organis
 
 Administratoren können die standardmäßige Antispamrichtlinie anzeigen, bearbeiten und konfigurieren (aber nicht löschen). Um eine höhere Granularität zu erzielen, können Sie auch benutzerdefinierte Antispamrichtlinien erstellen, die für bestimmte Benutzer, Gruppen oder Domänen in Ihrer Organisation gelten. Benutzerdefinierte Richtlinien haben immer Vorrang vor der standardmäßigen Richtlinie, die Priorität (Reihenfolge der Ausführung) Ihrer benutzerdefinierten Richtlinien können Sie jedoch ändern.
 
-Sie können Antispamrichtlinien im Microsoft 365 Security Center oder in PowerShell konfigurieren (Exchange Online-PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP-PowerShell für Organisationen ohne Exchange Online-Postfächer).
+Sie können Antispamrichtlinien im Microsoft 365 Defender-Portal oder in PowerShell konfigurieren (Exchange Online-PowerShell für Microsoft 365-Organisationen mit Postfächern in Exchange Online; eigenständige EOP-PowerShell für Organisationen ohne Exchange Online-Postfächer).
 
 Die grundlegenden Elemente einer Antispamrichtlinie sind:
 
 - **Die Spamfilterrichtlinie**: gibt die Aktionen für Spamfilterbewertungen und die Benachrichtigungsoptionen an.
 - **Die Spamfilterregel**: gibt die Priorität und die Empfängerfilter (für wen die Richtlinie gilt) für eine Spamfilterrichtlinie an.
 
-Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Antispamrichtlinien im Security Center verwalten:
+Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Antispamrichtlinien im Microsoft 365 Defender-Portal verwalten:
 
 - Beim Erstellen einer Antispamrichtlinie erstellen Sie tatsächlich gleichzeitig eine Spamfilterregel und die zugehörige Spamfilterrichtlinie, beide mit demselben Namen.
 - Wenn Sie eine Antispamrichtlinie ändern, dann ändern Einstellungen in Bezug auf Name, Priorität, aktiviert oder deaktiviert und Empfängerfilter die Spamfilterregel. Alle anderen Einstellungen ändern die zugehörige Spamfilterrichtlinie.
@@ -62,7 +62,7 @@ Wenn Sie die Effektivität der Spamfilterung erhöhen möchten, können Sie benu
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security Center über <https://security.microsoft.com>. Wechseln Sie direkt zur Seite **Antispamrichtlinien**, verwenden Sie <https://security.microsoft.com/antispam>.
+- Sie öffnen das Microsoft 365 Defender-Portal unter <https://security.microsoft.com>. Wechseln Sie direkt zur Seite **Antispamrichtlinien**, verwenden Sie <https://security.microsoft.com/antispam>.
 
 - Wie Sie eine Verbindung mit Exchange Online PowerShell herstellen, finden Sie unter [Herstellen einer Verbindung mit Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell). Informationen zum Herstellen einer Verbindung mit dem eigenständigen Exchange Online Protection PowerShell finden Sie unter [Verbinden mit PowerShell in Exchange Online Protection](/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -79,11 +79,11 @@ Wenn Sie die Effektivität der Spamfilterung erhöhen möchten, können Sie benu
 
 - Die empfohlenen Einstellungen für Richtlinien für Antispam finden Sie unter [EOP-Antispam-Richtlinieneinstellungen](recommended-settings-for-eop-and-office365.md#eop-anti-spam-policy-settings).
 
-## <a name="use-the-security-center-to-create-anti-spam-policies"></a>Verwenden des Security Centers zum Erstellen von Antispamrichtlinien
+## <a name="use-the-microsoft-365-defender-portal-to-create-anti-spam-policies"></a>Verwenden Sie das Microsoft 365 Defender-Portal, um Anti-Spam-Richtlinien zu erstellen
 
-Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security Center werden gleichzeitig die Spamfilterregel und die zugehörige Spamfilterrichtlinie mit demselben Namen erstellt.
+Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Microsoft 365 Defender-Portal werden gleichzeitig die Spamfilterregel und die zugehörige Spamfilterrichtlinie mit demselben Namen erstellt.
 
-1. Wechseln Sie im Security Center zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
+1. Wechseln Sie im Microsoft 365 Defender-Portal zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
 
 2. Klicken Sie auf der Seite **Antispamrichtlinien** auf das ![Symbol „Erstellen“](../../media/m365-cc-sc-create-icon.png) **Richtlinie erstellen**, und wählen Sie dann **Eingehend** aus der Dropdownliste aus.
 
@@ -240,9 +240,9 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security Center w
 
 9. Klicken Sie in der angezeigten Bestätigungsseite auf **Fertig**.
 
-## <a name="use-the-security-center-to-view-anti-spam-policies"></a>Verwenden des Security Centers zum Anzeigen von Antispamrichtlinien
+## <a name="use-the-microsoft-365-defender-portal-to-view-anti-spam-policies"></a>Verwenden Sie das Microsoft 365 Defender-Portal, um Anti-Spam-Richtlinien anzuzeigen
 
-1. Wechseln Sie im Security Center zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
+1. Wechseln Sie im Microsoft 365 Defender-Portal zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
 
 2. Suchen Sie auf der Seite **Antispamrichtlinien** nach einem der folgenden Werte:
    - Der Wert für **Typ** ist **Benutzerdefinierte Antispamrichtlinie**
@@ -257,15 +257,15 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Security Center w
 
 3. Wenn Sie eine Antispamrichtlinie durch Klicken auf den Namen auswählen, werden die Richtlinieneinstellungen in einem Flyout angezeigt.
 
-## <a name="use-the-security-center-to-modify-anti-spam-policies"></a>Verwenden des Security Centers zum Ändern von Antispamrichtlinien
+## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies"></a>Verwenden Sie das Microsoft 365 Defender-Portal, um Anti-Spam-Richtlinien ändern
 
-1. Wechseln Sie im Security Center zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
+1. Wechseln Sie im Microsoft 365 Defender-Portal zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
 
 2. Wählen Sie auf der Seite **Antispamrichtlinien** eine Antispamrichtlinie aus der Liste aus, indem Sie auf den Namen klicken:
    - Eine benutzerdefinierte Richtlinie, die Sie erstellt haben, wobei die Spalte **Typ** den Wert **Benutzerdefinierte Antispamrichtlinie** enthält.
    - Die Standardrichtlinie mit dem Namen **Eingehende Antispamrichtlinie (Standard)**.
 
-3. Wählen Sie im angezeigten Flyout für die Richtliniendetails in jedem Abschnitt die Option **Bearbeiten** aus, um die Einstellungen innerhalb des Abschnitts zu ändern. Weitere Informationen zu den Einstellungen finden Sie im vorherigen Abschnitt [Verwenden des Security Centers zum Erstellen von Antispamrichtlinien](#use-the-security-center-to-create-anti-spam-policies) in diesem Artikel.
+3. Wählen Sie im angezeigten Flyout für die Richtliniendetails in jedem Abschnitt die Option **Bearbeiten** aus, um die Einstellungen innerhalb des Abschnitts zu ändern. Weitere Informationen zu den Einstellungen finden Sie im vorherigen Abschnitt [Verwenden des Microsoft 365 Defender-Portal zum Erstellen von Antispamrichtlinien](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) in diesem Artikel.
 
    Bei der Standard-Antispamrichtlinie ist der Abschnitt **Angewendet auf** nicht verfügbar (die Richtlinie gilt für alle), und Sie können die Richtlinie nicht umbenennen.
 
@@ -275,7 +275,7 @@ Informationen zum Aktivieren oder Deaktivieren einer Richtlinie, zum Festlegen d
 
 Die Standard-Antispamrichtlinie kann nicht deaktiviert werden.
 
-1. Wechseln Sie im Security Center zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
+1. Wechseln Sie im Microsoft 365 Defender-Portal zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
 
 2. Wählen Sie auf der Seite **Antispamrichtlinie** eine Richtlinie mit dem **Typenwert** **Benutzerdefinierte Antispamrichtlinie** aus der Liste aus, indem Sie auf den Namen klicken.
 
@@ -293,14 +293,14 @@ Zurück auf der Richtlinien-Hauptseite wird der Wert **Status** der Richtlinie *
 
 Standardmäßig erhalten Antispamrichtlinien eine Priorität, die auf der Reihenfolge ihrer Erstellung basiert (neuere Richtlinien haben eine niedrigere Priorität als ältere). Eine niedrigere Prioritätsnummer gibt eine höhere Priorität für die Richtlinie an (0 ist die höchste), und Richtlinien werden in der Reihenfolge der Priorität verarbeitet (Richtlinien mit einer höheren Priorität werden vor Richtlinien mit einer niedrigeren Priorität verarbeitet). Keine zwei Richtlinien können die gleiche Priorität aufweisen und die Richtlinienverarbeitung endet, nachdem die erste Richtlinie angewendet wurde.
 
-Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften einer Richtlinie auf **Priorität erhöhen** oder **Priorität verringern** (Sie können den Zahlenwert der **Priorität** im Security Center nicht direkt modifizieren). Die Priorität einer Richtlinie zu verändern macht nur Sinn, wenn Sie mehrere Richtlinien haben.
+Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften einer Richtlinie auf **Priorität erhöhen** oder **Priorität verringern** (Sie können den Zahlenwert der **Priorität** im Microsoft 365 Defender-Portal nicht direkt modifizieren). Die Priorität einer Richtlinie zu verändern macht nur Sinn, wenn Sie mehrere Richtlinien haben.
 
  **Anmerkungen**:
 
-- Im Security Center können Sie die Priorität der Antispamrichtlinie erst nach deren Erstellung ändern. In PowerShell können Sie die standardmäßige Priorität bereits beim Erstellen der Spamfilterregel überschreiben (was sich auf die Priorität vorhandener Regeln auswirken kann).
+- Im Microsoft 365 Defender-Portal können Sie die Priorität der Antispamrichtlinie erst nach deren Erstellung ändern. In PowerShell können Sie die standardmäßige Priorität bereits beim Erstellen der Spamfilterregel überschreiben (was sich auf die Priorität vorhandener Regeln auswirken kann).
 - Antispamrichtlinien werden in der Reihenfolge verarbeitet, in der sie angezeigt werden (die erste Richtlinie hat den **Prioritätswert** 0). Die Standard-Antispamrichtlinie hat den Prioritätswert **Am niedrigsten**, und Sie können dies nicht ändern.
 
-1. Wechseln Sie im Security Center zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
+1. Wechseln Sie im Microsoft 365 Defender-Portal zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
 
 2. Wählen Sie auf der Seite **Antispamrichtlinie** eine Richtlinie mit dem **Typenwert** **Benutzerdefinierte Antispamrichtlinie** aus der Liste aus, indem Sie auf den Namen klicken.
 
@@ -317,7 +317,7 @@ Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften 
 
 Wenn eine Nachricht durch eine Spamfilterbewertung in Quarantäne versetzt wird, können Sie Spambenachrichtigungen für Endbenutzer konfigurieren, damit die Empfänger wissen, was mit Nachrichten passiert ist, die an sie gesendet wurden. Weitere Informationen zu diesen Benachrichtigungen finden Sie unter [Spambenachrichtigungen für Endbenutzer in EOP](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 
-1. Wechseln Sie im Security Center zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
+1. Wechseln Sie im Microsoft 365 Defender-Portal zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
 
 2. Wählen Sie auf der Seite **Antispamrichtlinien** eine Antispamrichtlinie aus der Liste aus, indem Sie auf den Namen klicken:
    - Eine benutzerdefinierte Richtlinie, die Sie erstellt haben, wobei die Spalte **Typ** den Wert **Benutzerdefinierte Antispamrichtlinie** enthält.
@@ -340,11 +340,11 @@ Wenn eine Nachricht durch eine Spamfilterbewertung in Quarantäne versetzt wird,
 
 4. Zurück auf dem Flyout der Richtliniendetails klicken Sie auf **Schließen**.
 
-## <a name="use-the-security-center-to-remove-custom-anti-spam-policies"></a>Verwenden des Security Centers zum Entfernen von benutzerdefinierten Antispamrichtlinien
+## <a name="use-the-microsoft-365-defender-portal-to-remove-custom-anti-spam-policies"></a>Verwenden Sie das Microsoft 365 Defender-Portal, um benutzerdefinierte Anti-Spam-Richtlinien zu entfernen
 
-Wenn Sie das Security Center verwenden, um eine benutzerdefinierte Antispamrichtlinie zu entfernen, werden sowohl die Spamfilterregel als auch die entsprechende Spamfilterrichtlinie gelöscht. Die Standard-Antispamrichtlinie kann nicht entfernt werden.
+Wenn Sie das Microsoft 365 Defender-Portal verwenden, um eine benutzerdefinierte Antispamrichtlinie zu entfernen, werden sowohl die Spamfilterregel als auch die entsprechende Spamfilterrichtlinie gelöscht. Die Standard-Antispamrichtlinie kann nicht entfernt werden.
 
-1. Wechseln Sie im Security Center zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
+1. Wechseln Sie im Microsoft 365 Defender-Portal zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
 
 2. Wählen Sie auf der Seite **Antispamrichtlinie** eine Richtlinie mit dem **Typenwert** **Benutzerdefinierte Antispamrichtlinie** aus der Liste aus, indem Sie auf den Namen klicken. Ganz oben auf dem angezeigten Flyout der Richtliniendetails klicken Sie auf ![Symbol „Weiter Aktionen“](../../media/m365-cc-sc-more-actions-icon.png) **Weitere Aktionen** \> ![Symbol „Richtlinie löschen“](../../media/m365-cc-sc-delete-icon.png) **Richtlinie löschen**.
 
@@ -362,7 +362,7 @@ In Exchange Online PowerShell oder der eigenständigen Exchange Online Protectio
 
 Die folgenden Einstellungen für Antispamrichtlinien sind nur in PowerShell verfügbar:
 
-- Der Parameter _MarkAsSpamBulkMail_, der standardmäßig `On` ist. Die Auswirkungen dieser Einstellung wurden im Abschnitt [Verwenden des Security Centers zum Erstellen von Antispamrichtlinien](#use-the-security-center-to-create-anti-spam-policies) weiter oben in diesem Artikel erläutert.
+- Der Parameter _MarkAsSpamBulkMail_, der standardmäßig `On` ist. Die Auswirkungen dieser Einstellung wurden im Abschnitt [Verwenden des Microsoft 365 Defender-Portal zum Erstellen von Antispamrichtlinien](#use-the-microsoft-365-defender-portal-to-create-anti-spam-policies) weiter oben in diesem Artikel erläutert.
 
 - Die folgenden Einstellungen für Spam-Quarantänebenachrichtigungen für Endbenutzer:
   - Der Parameter _DownloadLink_, der den Link zum Junk-E-Mail-Berichtstool für Outlook anzeigt oder ausblendet.
@@ -378,11 +378,11 @@ Das Erstellen einer Antispamrichtlinie in PowerShell ist ein zweistufiger Vorgan
  **Hinweise**:
 
 - Sie können eine neue Spamfilterregel erstellen und ihr eine vorhandene, nicht zugeordnete Spamfilterrichtlinie zuweisen. Eine Spamfilterregel kann nicht mit mehreren Spamfilterrichtlinien verknüpft werden.
-- Sie können die folgenden Einstellungen für neue Spamfilterrichtlinien in PowerShell konfigurieren, die erst dann im Security Center verfügbar sind, wenn Sie die Richtlinie erstellt haben:
+- Sie können die folgenden Einstellungen für neue Spamfilterrichtlinien in PowerShell konfigurieren, die erst dann im Microsoft 365 Defender-Portal verfügbar sind, wenn Sie die Richtlinie erstellt haben:
   - Erstellen Sie die neue Richtlinie als deaktiviert (_Aktiviert_ `$false` im Cmdlet **New-HostedContentFilterRule**).
   - Legen Sie die Priorität der Richtlinie bei der Erstellung fest (_Priority_ _\<Number\>_) im Cmdlet **New-HostedContentFilterRule**).
 
-- Eine neue Spamfilterrichtlinie, die Sie in PowerShell erstellen, wird erst im Security Center angezeigt, nachdem Sie die Richtlinie einer Spamfilterregel zugewiesen haben.
+- Eine neue Spamfilterrichtlinie, die Sie in PowerShell erstellen, wird erst im Microsoft 365 Defender-Portal angezeigt, nachdem Sie die Richtlinie einer Spamfilterregel zugewiesen haben.
 
 #### <a name="step-1-use-powershell-to-create-a-spam-filter-policy"></a>Schritt 1: Verwenden von PowerShell zum Erstellen einer Spamfilterrichtlinie
 
@@ -487,7 +487,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Get-Hoste
 Abgesehen von den nachfolgenden Elementen stehen beim Ändern einer Spamfilterrichtlinie in PowerShell dieselben Einstellungen zur Verfügung, wie wenn Sie die Richtlinie erstellen gemäß Abschnitt [Schritt 1: Verwenden von PowerShell zum Erstellen einer Spamfilterrichtlinie](#step-1-use-powershell-to-create-a-spam-filter-policy) weiter oben in diesem Artikel.
 
 - Die Option _MakeDefault_, mit der die angegebene Richtlinie zur Standardrichtlinie erklärt wird (angewendet auf alle, immer **Niedrigste** Priorität, und Sie können sie nicht löschen), steht nur zur Verfügung, wenn Sie eine Spamfilterrichtlinie in PowerShell ändern.
-- Sie können eine Spamfilterrichtlinie nicht umbenennen (das Cmdlet **Set-HostedContentFilterPolicy** hat keinen _Name_-Parameter). Wenn Sie eine Antispamrichtlinie im Security Center umbenennen, benennen Sie nur die _Regel_ für den Spamfilter um.
+- Sie können eine Spamfilterrichtlinie nicht umbenennen (das Cmdlet **Set-HostedContentFilterPolicy** hat keinen _Name_-Parameter). Wenn Sie eine Antispamrichtlinie im Microsoft 365 Defender-Portal umbenennen, benennen Sie nur die _Regel_ für den Spamfilter um.
 
 Verwenden Sie zum Ändern einer Spamfilterrichtlinie folgende Syntax:
 

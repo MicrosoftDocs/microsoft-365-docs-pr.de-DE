@@ -18,14 +18,14 @@ ms.collection:
 - M365-security-compliance
 - m365solution-scenario
 ms.topic: article
-ms.date: 09/22/2020
+ms.date: 06/11/2021
 ms.reviewer: chventou
-ms.openlocfilehash: 15902e02156c59ec4edaed94f4ba321094bd42ac
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: ce204c1a90e57a651cf9c97974a8b35d405878cc
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843022"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908292"
 ---
 # <a name="manage-microsoft-defender-for-endpoint-with-group-policy-objects"></a>Verwalten von Microsoft Defender für Endpunkt mit Gruppenrichtlinienobjekten
 
@@ -61,9 +61,7 @@ In der folgenden Tabelle sind verschiedene Aufgaben aufgeführt, die Sie ausfüh
 
 ## <a name="configure-your-microsoft-defender-security-center"></a>Konfigurieren Ihrer Microsoft Defender Security Center
 
-Wenn sie dies noch nicht getan haben, konfigurieren Sie **Ihre Microsoft Defender Security Center** ( ), [https://securitycenter.windows.com](https://securitycenter.windows.com) um Warnungen anzuzeigen, Bedrohungsschutzfeatures zu konfigurieren und detaillierte Informationen zum allgemeinen Sicherheitsstatus Ihrer Organisation anzuzeigen. 
-
-Sie können auch konfigurieren, ob und welche Features Endbenutzer im Microsoft Defender Security Center sehen können.
+Wenn sie dies noch nicht getan haben, konfigurieren Sie Ihr Microsoft 365 Defender-Portal so, dass Warnungen angezeigt werden, Bedrohungsschutzfeatures konfiguriert und detaillierte Informationen zum allgemeinen Sicherheitsstatus Ihrer Organisation angezeigt werden. Siehe [Microsoft Defender Security Center](microsoft-defender-security-center.md). Sie können auch konfigurieren, ob und welche Features Endbenutzern im Microsoft 365 Defender-Portal angezeigt werden können.
 
 - [Übersicht über die Microsoft Defender Security Center](/microsoft-365/security/defender-endpoint/use)
 

@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 description: Bei Datenverschiebungen handelt es sich um Back-End-Vorgänge, die stattfinden, wenn Microsoft Dienste und zugeordnete Daten für Ihren Mandanten in eine neue Rechenzentrumsregion verschiebt.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d3d44ffc1650989e5c39f5f79cb6a07065f9e9f1
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: c0ea94a80de993d4d1341b8f9b19850d7149583f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52625257"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908113"
 ---
 # <a name="during-and-after-your-data-move"></a>Während und nach der Datenverschiebung
 
@@ -30,7 +30,7 @@ Datenverschiebungen sind eine Back-End-Operation mit minimalen Auswirkungen auf 
 > [!NOTE]
 > Die Verschiebungen werden zu unterschiedlichen Zeiten für jeden Dienst ausgeführt. Dadurch sehen Sie die beschriebene eingeschränkte Funktionalität für jeden Dienst zu unterschiedlichen Zeiten. 
   
-Sehen Sie sich Microsoft 365 Message Center an, um zu bestätigen, wann die Exchange Online, SharePoint Online und Teams Chatdienst abgeschlossen sind. Wie in der folgenden Tabelle dargestellt, kann es bis zu 24 Monate nach dem Ende des Registrierungszeitraums dauern, bis die wichtigsten Ruhedaten des Kunden in das neue Rechenzentrums-Geo umge-   
+Sehen Sie sich das Microsoft 365 Nachrichtencenter zur Bestätigung an, wenn verschiebungen für jeden Exchange Online,SharePoint Online- und Teams Chatdienst abgeschlossen sind. Wie in der folgenden Tabelle dargestellt, kann es bis zu 24 Monate nach Ablauf des Registrierungszeitraums dauern, bis die ruhenden Kernkundendaten in die neue Geografische Region des Rechenzentrums verschoben werden.   
 
 |**Kunden mit Anmeldeland in**|**Alle Verschiebungen abgeschlossen bis**|
 |:-----|:-----|
@@ -103,11 +103,11 @@ Die folgenden Suchfunktionen sind betroffen:
     
 - Schutz vor Datenverlust (DLP): Richtlinien werden nicht auf Elemente angewendet, die sich ändern, bis die Durchforstung die Änderungen erfasst hat.
 
-Im Rahmen der Migration wird der Standardbereich geändert, und alle neuen Inhalte werden im Ruhebereich in der neuen Standardregion gespeichert. Vorhandene Inhalte werden bis zu 90 Tage nach der ersten Änderung des SharePoint Online-Datenspeicherorts im Admin Center im Hintergrund ohne Auswirkungen auf Sie bewegt.
+Im Rahmen der Migration ändert sich der Standardbereich, und alle neuen Inhalte werden im Ruhezustand in der neuen Standardregion gespeichert. Vorhandene Inhalte werden bis zu 90 Tage nach der ersten Änderung des SharePoint Online-Datenspeicherorts im Admin Center ohne Auswirkung auf Sie im Hintergrund verschoben.
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Neben Exchange Online, SharePoint Online und OneDrive for Business migriert Microsoft Teams Chatdienstdaten in das lokale Datencenter.
+Zusätzlich zu Exchange Online, SharePoint Online und OneDrive for Business migriert Microsoft Teams Chatdienstdaten in das lokale Rechenzentrum.
 
 - Teams-Chatnachrichten, einschließlich privater Nachrichten und Kanalmeldungen.
 - Bilder, die in Teams-Chats verwendet wurden.
@@ -116,13 +116,13 @@ Teams-Dateien werden in SharePoint Online gespeichert, und Teams-Chatdateien wer
 
 ## <a name="skype-for-business"></a>Skype for Business
 
-Skype for Business sind nicht mehr verfügbar.  [Skype for Business Online wird am](/lifecycle/announcements/skype-for-business-online-retirement) 31. Juli 2021 eingestellt. Nach dieser Zeit ist der Zugriff auf den Dienst nicht mehr möglich. 
+Skype for Business Verschiebungen sind nicht mehr verfügbar.  [Skype for Business Online wird](/lifecycle/announcements/skype-for-business-online-retirement) am 31. Juli 2021 eingestellt. Danach ist der Zugriff auf den Dienst nicht mehr möglich. 
   
 ## <a name="related-topics"></a>Verwandte Themen 
  
 [Anfordern der Datenverschiebung](request-your-data-move.md)
     
-[Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.md)
+[Allgemeine häufig gestellte Fragen zur Datenverschiebung](data-move-faq.yml)
   
 [Neue Rechenzentrumsregionen für Microsoft Dynamics CRM Live](/power-platform/admin/new-datacenter-regions)
   

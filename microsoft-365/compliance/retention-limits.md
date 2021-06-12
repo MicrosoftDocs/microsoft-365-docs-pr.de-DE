@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Erfahren Sie mehr über die maximale Anzahl von Richtlinien und Elementen pro Richtlinie für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien.
-ms.openlocfilehash: 1ee2d07a42aaf4dff45ae22e9dfc005b3c4593d9
-ms.sourcegitcommit: 4bcac4cb4f9399ebbd7c8cff0abb4d6ecedb731e
+ms.openlocfilehash: 2dac852342c080c4f8334562dc76449d6963facc
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52698964"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878052"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Einschränkungen für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien
 
@@ -82,3 +82,13 @@ SharePoint-Beispiel:
 - **Lösung**: Erstellen Sie 20 Aufbewahrungsrichtlinien für SharePoint mit einem Aufbewahrungszeitraum von 10 Jahren, die 100 spezifische Sites enthalten, und erstellen Sie 80 Aufbewahrungsrichtlinien für SharePoint mit einem Aufbewahrungszeitraum von 4 Jahren, die 100 spezifische Sites enthalten.
     
     Da Sie nicht alle SharePoint-Sites aufbewahren müssen, müssen Sie Aufbewahrungsrichtlinien erstellen, die die spezifischen Sites angeben. Da eine Aufbewahrungsrichtlinie nicht mehr als 100 angegebene Sites unterstützt, müssen Sie mehrere Richtlinien für die zwei Aufbewahrungszeiträume erstellen. Diese Aufbewahrungszeiträume belegen die maximale Anzahl eingeschlossener Sites, weshalb die nächste neue Site, die aufbewahrt werden muss, eine neue Aufbewahrungsrichtlinie erfordern würde, unabhängig vom Aufbewahrungszeitraum.
+
+## <a name="maximum-number-of-items-for-disposition"></a>Maximale Anzahl von Artikeln zur Löschung
+
+Bei der [Löschung von Inhalten](disposition.md) sind einige Limits zu beachten:
+
+- 1.000.000 ausstehende Elemente zur Löschung pro Phase für jede Aufbewahrungsbezeichnung
+
+- Löschungsnachweis für bis zu sieben Jahre nach der Löschung des Elements, mit einer Höchstgrenze von 1.000.000 Elementen pro Aufbewahrungsbezeichnung für diesen Zeitraum. 
+    
+    Wenn Sie für Elemente, die als Datensätze gekennzeichnet sind, einen Verfügungsnachweis benötigen, der diesen Grenzwert von 1000000 überschreitet, wenden Sie sich an den [Microsoft-Support](../business-video/get-help-support.md).

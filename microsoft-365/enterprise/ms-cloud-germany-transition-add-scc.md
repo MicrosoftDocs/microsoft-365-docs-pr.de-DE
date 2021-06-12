@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: eDiscovery-Migrationsschritte für die Migration aus Microsoft Cloud Deutschland'
 ms.openlocfilehash: 0128c8563b2043e4ec41d2c5ab1b208bd3977511
 ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "52844250"

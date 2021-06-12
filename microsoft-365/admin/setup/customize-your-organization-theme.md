@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Erfahren Sie, wie Sie das Standarddesign für den oberen Rand der Navigationsleiste in Microsoft 365 ändern und an Ihr Firmenlogo oder Ihre Farbe anpassen.
-ms.openlocfilehash: 7dc1eb4df22cbd96b2370437991aee936243189e
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 130fda016961433342969c90e309e7d8b6a7051f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841306"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908161"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Passen Sie das Microsoft 365-Design für Ihr Unternehmen an
 
@@ -74,7 +74,7 @@ Sie können bis zu vier zusätzliche Gruppendesigns erstellen.
 
 2. Unter **"Gruppen"** können Sie bis zu 5 Microsoft 365 Gruppen auswählen, die Ihr Gruppendesign anzeigen können, anstatt das Standarddesign zu verwenden. Sie können auch verhindern, dass Benutzer ihr Design überschreiben und den Anzeigenamen des Benutzers anzeigen.
 
-3. Wählen Sie **Speichern**.
+3. Wählen Sie **Speichern** aus.
 
 :::image type="content" source="../../media/default-theme-general-users.png" alt-text="Screenshot: Registerkarte &quot;Allgemein&quot; mit dem Standarddesign für eine Gruppe von Benutzern in Ihrer Organisation":::
 
@@ -89,6 +89,9 @@ Auf **der** Logos-Seite können Sie Ihre Logos hinzufügen und die URL angeben, 
 Wählen Sie **Speichern** aus, um Ihre Änderungen zu speichern.
 
 Sie können Ihre Logos jederzeit entfernen. Kehren Sie einfach zur **Logos-Seite** zurück, und wählen Sie **"Entfernen" aus.**
+
+> [!NOTE]
+> Standardmäßig wird zuerst die Logoauswahl angezeigt, die von den meisten Organisationen verwendet wird. Die Uploadoption gilt nur für Standarddesigns und nicht für Gruppendesigns.
   
 ## <a name="colors-choose-theme-colors"></a>Farben: Designfarben auswählen
 
@@ -118,10 +121,10 @@ Es können bis zu fünf Designs erstellt werden. Ein Standarddesign und vier Gru
 
 ### <a name="can-i-use-security-groups-or-distribution-groups-instead-of-microsoft-365-groups"></a>Kann ich Sicherheitsgruppen oder Verteilergruppen anstelle von Microsoft 365 Gruppen verwenden?
 
-Nein, neue Gruppendesigns müssen einer oder mehreren Microsoft 365 Gruppen und nicht Sicherheitsgruppen oder Verteilergruppen zugeordnet werden.
+Nein, neue Gruppendesigns müssen einer oder mehreren Microsoft 365-Gruppen und nicht Sicherheitsgruppen oder Verteilergruppen zugeordnet werden.
 
 > [!NOTE]
-> Sie können [Verteilergruppen](../manage/upgrade-distribution-lists.md) in Microsoft 365 Gruppen in Outlook konvertieren.
+> Sie können [Verteilergruppen](../manage/upgrade-distribution-lists.md) in Outlook in Microsoft 365 Gruppen konvertieren.
 
 ### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>Kann ich ein Design unabhängig von Microsoft 365 Gruppen manuell zuweisen?  
 

@@ -9,60 +9,61 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: d35ab0f4e99d466d283d49e0f51f8e868691b9a9
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 8a96b771fc0be5373153bc26ebfe1704fc418cdd
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52771741"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908149"
 ---
 # <a name="admin-support-for-microsoft-managed-desktop"></a>Administratorunterstützung für Microsoft Managed Desktop
 
-Sie können Supporttickets oder Feedbackanfragen über das Microsoft Managed Desktop Verwaltungsportal an Microsoft senden. Supportanfragen werden immer vor Feedbackübermittlungen priorisiert. Supportanfragen werden gemäß dem Schweregrad wie in der [Schweregraddefinitionstabelle](#sev)beschrieben triaged und verwaltet. Das Feedback wird überprüft, und es wird eine Antwort bereitgestellt, wenn dies angefordert wird. 
+Sie können Supporttickets oder Feedbackanfragen über das Microsoft Managed Desktop Admin-Portal an Microsoft senden. Supportanfragen werden immer vor Feedbackübermittlungen priorisiert. Supportanfragen werden gemäß dem Schweregrad wie in der [Schweregraddefinitionstabelle](#sev)beschrieben triaged und verwaltet. Das Feedback wird überprüft, und es wird eine Antwort bereitgestellt, wenn dies angefordert wird. 
 
 >[!IMPORTANT]
->Stellen Sie sicher, dass Sie [einen Administratorkontakt](../get-started/add-admin-contacts.md) für app Packaging, Geräte, Sicherheit und andere einrichten. Sie können in keinem dieser Bereiche eine Supportanfrage senden, wenn kein Administratorkontakt konfiguriert ist.
+>Stellen Sie sicher, dass Sie [einen Administratorkontakt](../get-started/add-admin-contacts.md) für App-Pakete, Geräte, Sicherheit und andere Anforderungen einrichten. Sie können in keinem dieser Bereiche eine Supportanfrage senden, wenn Sie keinen Administratorkontakt bereitstellen.
 
 **So senden Sie eine Supportanfrage**
-1. Melden Sie sich bei [Microsoft Endpoint Manager an,](https://endpoint.microsoft.com/) und navigieren Sie zum **Menü "Mandantenverwaltung".**
-2. Suchen Sie nach dem Abschnitt Microsoft Managed Desktop, und wählen Sie **"Serviceanfrage"** aus.
+1. Melden Sie sich bei [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) an, und navigieren Sie zum **Menü "Mandantenverwaltung".**
+2. Suchen Sie nach dem Abschnitt Microsoft Managed Desktop, und wählen Sie dann **Serviceanfrage** aus.
 3. Wählen Sie bei **Supportanfragen** **+ Neues Supportticket** aus.
 4. Wählen Sie den **Supportanforderungstyp** aus, der der benötigten Hilfe entspricht. In der folgenden Tabelle werden die Optionen beschrieben. 
 5. Wählen Sie den **Schweregrad** aus. Weitere Informationen finden Sie unter ["Schweregraddefinitionen für Supportanfragen".](#sev) 
 
 Supportanforderungstyp | Geeignet in folgender Situation
 --- | ---
-Vorfall | Sie müssen das Microsoft Managed Desktop Operations Team untersuchen, z. B. die weit verbreiteten Auswirkungen einer Änderung oder eines Dienstausfalls.
-Anfordern von Informationen | Sie planen eine Änderung für Netzwerke, Proxykonfiguration, VPN-Systeme, Zertifikatablauf oder benötigen nur einige Informationen über den Dienst. Bei der Kommunikation einer Änderung innerhalb Ihrer Organisation wird eine Antwort des Microsoft Managed Desktop Operations Teams empfohlen.
-Änderungsanforderung | Sie müssen vom Microsoft Managed Desktop Operations Team eine Änderung vornehmen, z. B. das Verschieben von Geräten zwischen Updategruppen.
+Vorfall | Das Microsoft Managed Desktop Operations-Team muss beispielsweise die weit verbreiteten Auswirkungen einer Änderung oder eines Dienstausfalls untersuchen.
+Anfordern von Informationen | Sie planen eine Änderung in Bezug auf Netzwerk, Proxykonfiguration, VPN-Systeme, Zertifikatablauf oder benötigen nur einige Informationen über den Dienst. Bei der Kommunikation einer Änderung innerhalb Ihrer Organisation wird eine Antwort des Microsoft Managed Desktop Operations-Teams empfohlen.
+Änderungsanforderung | Sie müssen vom Microsoft Managed Desktop Operations-Team eine Änderung vornehmen, z. B. das Verschieben von Geräten zwischen Updategruppen.
 
 <span id="sev" />
 
-## <a name="support-request-severity-definitions"></a>Support-Schweregraddefinitionen für Anforderungen
+## <a name="support-request-severity-definitions"></a>Supportanforderungen – Schweregraddefinitionen
 
 Die erste Antwortzeit ist der Zeitraum von der Übermittlung Ihrer Supportanfrage bis zu dem Zeitpunkt, an dem ein Microsoft Managed Desktop Techniker Sie kontaktiert und mit der Bearbeitung Ihrer Supportanfrage beginnt. Die anfängliche Antwortzeit variiert je nach den geschäftlichen Auswirkungen der Anforderung, je nach Schweregrad der Anforderung.
 
-Schweregrad  | Kundensituation |  Anfängliche Antwortzeit   | Kundenantwort erwartet
---- | --- | --- | ---
-**Schweregrad A – Kritische Auswirkungen** |  **Wichtige geschäftliche Auswirkungen**<br><br>Das Unternehmen des Kunden hat einen erheblichen Verlust oder eine Beeinträchtigung der Dienste und erfordert sofortige Aufmerksamkeit.<br><br>**Wichtige Auswirkungen auf die Anwendungskompatibilität**<br><br>Das gesamte Unternehmen des Kunden hat finanzielle Auswirkungen aufgrund von Abstürzen oder Verlust wichtiger Funktionen. | Initial: < 1 Stunde<br>Update: 60 Minuten<br>24 x 7 verfügbar | Wenn Sie Schweregrad A auswählen, bestätigen Sie, dass das Problem kritische geschäftliche Auswirkungen hat, mit schwerwiegenden Verlusten und Beeinträchtigungen der Dienste. <br><br>Das Problem erfordert eine sofortige Reaktion, und Sie führen jeden Tag einen kontinuierlichen 24x7-Vorgang mit dem Microsoft-Team durch, bis die Lösung behoben ist. Andernfalls kann Microsoft nach eigenem Ermessen den Schweregrad auf Ebene B verringern.<br><br> Sie stellen außerdem sicher, dass Microsoft über Ihre korrekten Kontaktinformationen verfügt. 
-**Schweregrad B – Moderate Auswirkungen** |  **Moderate Geschäftliche Auswirkungen**<br><br>Das Geschäft des Kunden hat einen moderaten Verlust oder eine Beeinträchtigung von Diensten, aber die Arbeit kann in angemessenem Maß beeinträchtigt fortgesetzt werden.<br><br>**Moderate Auswirkungen auf die Anwendungskompatibilität**<br><br>Eine bestimmte Unternehmensgruppe ist aufgrund des Absturzverhaltens oder des Verlusts kritischer Funktionen nicht mehr produktiv. |  Initial: < 4 Stunden<br>Update: 12 Stunden<br>Geschäftszeiten (24 x 7 verfügbar) | Wenn Sie "Schweregrad B" auswählen, bestätigen Sie, dass das Problem moderate Auswirkungen auf Ihr Unternehmen mit Verlust und Beeinträchtigung von Diensten hat. Problemumgehungen ermöglichen jedoch eine angemessene, vorübergehende Geschäftskontinuität. <br><br>Das Problem erfordert eine dringende Antwort. Wenn Sie sich bei der Übermittlung der Supportanfrage für 24 x 7 entschieden haben, führen Sie jeden Tag bis zur Lösung einen kontinuierlichen 24x7-Vorgang mit dem Microsoft-Team durch, andernfalls kann Microsoft nach eigenem Ermessen den Schweregrad auf Stufe C verringern. Wenn Sie bei der Übermittlung eines Vorfalls mit Schweregrad B den Support für die Geschäftszeiten ausgewählt haben, wird Microsoft Sie nur während der Geschäftszeiten kontaktieren.<br><br>Sie stellen außerdem sicher, dass Microsoft über Ihre korrekten Kontaktinformationen verfügt.
-**Schweregrad C – Minimale Auswirkungen** |   **Minimale Geschäftliche Auswirkungen**<br><br> Das Geschäft des Kunden funktioniert mit geringfügigen Hindernissen für Dienste.<br><br>**Geringe Auswirkungen auf die Anwendungskompatibilität**<br><br>Möglicherweise nicht verbundene Benutzer haben kleinere Kompatibilitätsprobleme, die die Produktivität nicht verhindern |    Initial: < 8 Stunden<br>Update: 24 Stunden<br>Geschäftszeiten  | Wenn Sie Schweregrad C auswählen, bestätigen Sie, dass das Problem minimale Auswirkungen auf Ihr Unternehmen mit geringfügigen Diensthindernkung hat.<br><br>Bei einem Vorfall des Schweregrads C wird Microsoft Sie nur während der Geschäftszeiten kontaktieren.<br><br>Sie stellen außerdem sicher, dass Microsoft über Ihre korrekten Kontaktinformationen verfügt.
+> [!NOTE]
+> In dieser Tabelle bedeutet "Supportstunden für Administratoren", dass Microsoft Managed Desktop Support für Administratoren für die meisten Länder 24 Stunden am Tag **montags bis freitags** verfügbar ist. Schweregrad A kann 24 Stunden am Tag an allen sieben Tagen der Woche bearbeitet werden.
 
-Weitere Details:
+Schweregrad  | Situation |   Anfängliche Antwortzeit   | Antwort von Ihnen erwartet
+--- | --- | --- | ---
+**Schweregrad A – Kritische Auswirkungen** |  **Wichtige geschäftliche Auswirkungen**<br><br>Ihr Unternehmen hat einen erheblichen Verlust oder eine Beeinträchtigung von Diensten und erfordert sofortige Aufmerksamkeit.<br><br>**Wichtige Auswirkungen auf die Anwendungskompatibilität**<br><br>Ihr gesamtes Unternehmen hat finanzielle Auswirkungen, weil Geräte nicht reagieren oder kritische Funktionen verloren gehen | Initial: < 1 Stunde<br>Update: 60 Minuten<br>24-Stunden-Support täglich verfügbar | Wenn Sie Schweregrad A auswählen, bestätigen Sie, dass das Problem kritische geschäftliche Auswirkungen hat, mit schwerwiegenden Verlusten und Beeinträchtigungen der Dienste. <br><br>Das Problem erfordert eine sofortige Reaktion, und Sie setzen sich bis zur Lösung täglich für ein kontinuierliches Engagement mit dem Microsoft-Team ein. Andernfalls kann Microsoft den Schweregrad nach eigenem Ermessen auf Ebene B verkleinern.<br><br> Sie stellen außerdem sicher, dass Microsoft über Ihre korrekten Kontaktinformationen verfügt. 
+**Schweregrad B – Moderate Auswirkungen** |  **Moderate Geschäftliche Auswirkungen**<br><br>Ihr Unternehmen hat einen moderaten Verlust oder eine Beeinträchtigung von Diensten, aber die Arbeit kann in angemessener Weise beeinträchtigt fortgesetzt werden.<br><br>**Moderate Auswirkungen auf die Anwendungskompatibilität**<br><br>Eine bestimmte Unternehmensgruppe ist nicht mehr produktiv, da Geräte nicht reagieren oder kritische Funktionen verloren gehen. |   Initial: < 4 Stunden<br>Update: 12 Stunden<br>24 Stunden am Tag während der Supportzeiten des Administrators (Montag bis Freitag). | Wenn Sie "Schweregrad B" auswählen, bestätigen Sie, dass das Problem moderate Auswirkungen auf Ihr Unternehmen mit Verlust und Beeinträchtigung von Diensten hat. Problemumgehungen ermöglichen jedoch eine angemessene, vorübergehende Geschäftskontinuität. <br><br>Das Problem erfordert eine dringende Antwort. Wenn Sie bei der Übermittlung der Supportanfrage den täglichen Support ausgewählt haben, setzen Sie sich bis zur Lösung täglich für ein kontinuierliches Engagement mit dem Microsoft-Team ein. Andernfalls kann Microsoft den Schweregrad nach eigenem Ermessen auf die Stufe C verringern. Wenn Sie beim Übermitteln eines Vorfalls mit Schweregrad B support-Stunden für Administratoren ausgewählt haben, wird Microsoft Sie nur während der Administrator-Supportzeiten kontaktieren.<br><br>Sie stellen außerdem sicher, dass Microsoft über Ihre korrekten Kontaktinformationen verfügt.
+**Schweregrad C – Minimale Auswirkungen** |   **Minimale Geschäftliche Auswirkungen**<br><br> Ihr Unternehmen funktioniert mit geringfügigen Hindernissen für Dienste.<br><br>**Geringe Auswirkungen auf die Anwendungskompatibilität**<br><br>Möglicherweise nicht verbundene Benutzer haben kleinere Kompatibilitätsprobleme, die die Produktivität nicht verhindern |  Initial: < 8 Stunden<br>Update: 24 Stunden<br>Support 24 Stunden am Tag während der Supportzeiten des Administrators (Montag bis Freitag)  |  Wenn Sie Schweregrad C auswählen, bestätigen Sie, dass das Problem minimale Auswirkungen auf Ihr Unternehmen mit geringfügigen Diensthindernkung hat.<br><br>Bei einem Vorfall mit Schweregrad C wird Microsoft Sie nur während der Supportzeiten des Administrators kontaktieren.<br><br>Sie stellen außerdem sicher, dass Microsoft über Ihre korrekten Kontaktinformationen verfügt.
+
+
 - **Supportsprachen** – Der gesamte Support wird auf Englisch bereitgestellt.
-- **Änderungen der Schweregrade** – Microsoft kann die Schweregrade herabstufen, wenn der Kunde nicht in der Lage ist, ausreichende Ressourcen oder Antworten bereitzustellen, damit Microsoft die Problemlösung fortsetzen kann. 
-- **Geschäftszeiten** – In den meisten Ländern sind die Geschäftszeiten von 9:00 Uhr bis 17:00 Uhr (Pacific Standard Time).
-- **Anwendungskompatibilität:** Damit ein Anwendungskompatibilitätsproblem berücksichtigt werden kann, muss zwischen der vorherigen und der aktuellen Version von Windows oder Office ein replizierbarer Fehler derselben Version der Anwendung auftreten. Um Anwendungskompatibilitätsprobleme zu beheben, benötigt Microsoft eine Kundenkontaktstelle, mit der sie zusammenarbeiten kann. Die Person muss direkt mit unserem Fast Track-Team zusammenarbeiten, um das Problem zu untersuchen und zu beheben.
-- **Kundenantwortzeitpunkt** Wenn ein Kunde die erwarteten Antwortanforderungen nicht erfüllen kann, stuft Microsoft die Anforderung um einen Schweregrad auf ein Minimum von Schweregrad C herunter. Wenn ein Kunde auf Handlungsaufforderungen nicht reagiert, entschärft und schließt Microsoft die Supportanfrage innerhalb von 48 Stunden nach der letzten Anforderung.
+- **Änderungen der Schweregradebene** – Microsoft stuft den Schweregrad möglicherweise herunter, wenn Sie nicht in der Lage sind, ausreichende Ressourcen oder Antworten bereitzustellen, damit wir die Problembehebung fortsetzen können. 
+- **Anwendungskompatibilität:** Damit ein Anwendungskompatibilitätsproblem berücksichtigt werden kann, muss zwischen der vorherigen und der aktuellen Version von Windows oder Microsoft 365 Apps for Enterprise ein replizierbarer Fehler derselben Version der Anwendung auftreten. Um Anwendungskompatibilitätsprobleme zu beheben, benötigen wir eine Kontaktstelle in Ihrer Organisation, mit der sie zusammenarbeiten kann. Der Kontakt muss direkt mit unserem Fast Track-Team zusammenarbeiten, um das Problem zu untersuchen und zu beheben.
+- **Kundenantwortzeitpunkt** Wenn Sie die erwarteten Antwortanforderungen nicht erfüllen können, wird die Anforderung um einen Schweregrad auf ein Minimum von Schweregrad C herabgestuft. Wenn Sie auf Aktionsanforderungen nicht reagieren, werden wir die Supportanfrage innerhalb von 48 Stunden nach der letzten Anforderung entschärfen und schließen.
 
 ## <a name="provide-feedback"></a>Feedback geben
 
 Wir freuen uns über Ihr Feedback und verwenden es, um den Support für Administratoren zu verbessern.
 
-Sobald sich ein Ticket im Status **"Entschärft"** oder **"Gelöst"** befindet, können Sie Ihr Feedback zu Ihrer Erfahrung mit diesem bestimmten Problem teilen. Um Feedback zu geben, wechseln Sie zur Seite **"Serviceanfragen"** im Menü **"Problembehandlung + Support"** des MEM-Portals. Wählen Sie das spezifische Ticket aus. Die Ticketdetails werden im Fly-In auf der rechten Seite angezeigt, wählen Sie die Registerkarte **"Feedback"** aus, und geben Sie die angeforderten Informationen an. Achten Sie darauf, keine persönlichen Informationen in das Feedbackformular einzuschließen. Weitere Informationen zum Datenschutz finden Sie in den [Datenschutzbestimmungen von Microsoft.](https://privacy.microsoft.com/privacystatement)
+Sobald sich ein Ticket im Status **"Entschärft"** oder **"Gelöst"** befindet, können Sie Ihr Feedback zu Ihrer Erfahrung mit diesem bestimmten Problem teilen. Um Feedback zu teilen, wechseln Sie im Menü **"Problembehandlung + Support"** des Microsoft Endpoint Manager Portals zur Seite **"Serviceanfragen".** Wählen Sie das spezifische Ticket aus. Die Ticketdetails werden im Fly-In auf der rechten Seite angezeigt. Wählen Sie die Registerkarte **"Feedback"** aus, und geben Sie die angeforderten Informationen ein. Achten Sie darauf, keine persönlichen Informationen in das Feedbackformular einzuschließen. Weitere Informationen zum Datenschutz finden Sie in den [Datenschutzbestimmungen von Microsoft.](https://privacy.microsoft.com/privacystatement)
 
-![Feedbackformular](../../media/feedback_form.png)
-
+:::image type="content" alt-text="Beispiel für ein Feedbackformular." source="../../media/feedback_form.png" lightbox="../../media/feedback_form.png":::
 
 
 ## <a name="more-resources"></a>Weitere Ressourcen
