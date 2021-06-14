@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Datensätze mithilfe von Aufbewahrungsbezeichnungen deklarieren.
-ms.openlocfilehash: fed988d2f880e4c0af1321cfb6ef4a873bd4e7ab
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: b5114253c99533e890d66248529b4713700b9016
+ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730546"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52903900"
 ---
 # <a name="declare-records-by-using-retention-labels"></a>Datensätzen mithilfe von Aufbewahrungsbezeichnungen deklarieren
 
@@ -79,6 +79,18 @@ Wenn Aufbewahrungsbezeichnungen, die Inhalte als Datensatz oder regulatorischen 
 Beispiel für ein Dokument, das mithilfe einer Aufbewahrungsbezeichnung als Datensatz markiert wurde:
 
 ![Detailbereich für ein als Datensatz markiertes Dokument](../media/recordversioning7.png)
+
+## <a name="searching-the-audit-log-for-labeled-items-that-were-declared-records"></a>Durchsuchen des Überwachungsprotokolls auf gekennzeichnete Elemente, die als Datensätze deklariert wurden.
+
+Die Aktionen der Kennzeichnung, um Elemente als Datensätze zu deklarieren, werden im Überwachungsprotokoll festgeschrieben.
+
+Für SharePoint-Elemente: 
+- Wählen Sie aus **Datei- und Seiten-Aktivitäten** die Option **Geänderte Aufbewahrungsbezeichnung für eine Datei** aus. Dieses Überwachungsereignis wird für Aufbewahrungsbezeichnungen angewendet, die Elemente als Datensätze oder regulatorische Datensätze markieren, oder die Standard-Aufbewahrungsbezeichnungen sind.
+
+Für Exchange-Elemente:
+- Wählen Sie aus den **Exchange-Postfachaktivitäten** die Option **Gekennzeichnete Nachricht als ein Datensatz**. Dieses Überwachungsereignis wird für Aufbewahrungsbezeichnungen angewendet, die Elemente als Datensätze oder regulatorische Datensätze markieren.
+
+Weitere Informationen für die Suche nach diesen Ereignissen finden Sie unter [Durchsuchen des Überwachungsprotokolls im Security & Compliance Center](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
 
 ## <a name="next-steps"></a>Weitere Schritte
 

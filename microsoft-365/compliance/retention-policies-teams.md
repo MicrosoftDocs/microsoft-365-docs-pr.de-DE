@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Erfahren Sie Näheres über Aufbewahrungsrichtlinien, die für Microsoft Teams gelten.
-ms.openlocfilehash: 607fbdd02cfaccfee79df67c4946c178ff3eb383
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 908c6a1482761815995330b71f0d2d2f96677b64
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861575"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908269"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informationen zur Aufbewahrung für Microsoft Teams
 
@@ -44,9 +44,6 @@ Informationen zu anderen Arbeitsbereichen finden Sie unter:
 ## <a name="whats-included-for-retention-and-deletion"></a>Lieferumfang für Aufbewahrung und Löschung
 
 Teams-Chatnachrichten und -Kanalnachrichten können mithilfe von Aufbewahrungsrichtlinien für Teams gelöscht werden. Zusätzlich zum Text in den Nachrichten können die folgenden Elemente aus Compliance-Gründen beibehalten werden: Eingebettete Bilder, Tabellen, Hypertext-Links, Links zu anderen Teams-Nachrichten und Dateien und [Karteninhalt](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Chatnachrichten umfassen alle Namen der Personen im Chat, und Kanalmeldungen umfassen den Teamnamen und den Nachrichtentitel (sofern vorhanden). 
-
-> [!NOTE]
-> Die Einbeziehung von Karteninhalten in eine Aufbewahrungsrichtlinie für Teams ist eine relativ neue Ergänzung. Weitere Informationen finden Sie unter [Microsoft 365 Compliance-Funktionen für adaptive Karteninhalte über Apps in Teams jetzt verfügbar](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
 Teams-Nachrichten in privaten Kanälen werden derzeit nicht für Aufbewahrungsrichtlinien unterstützt. Codeausschnitte, aufgezeichnete Sprachnotizen vom Mobile Microsoft Teams-Clients, Miniaturansichten, Ankündigungsbilder und Reaktionen anderer in Form von Emoticons sind nicht beibehalten, wenn Sie Aufbewahrungsrichtlinien für Teams verwenden.
 
@@ -71,7 +68,7 @@ Teams verwendet einen Azure-unterstützten Chatdienst als primären Speicher fü
 Obwohl diese Daten aus Teams-Chats und -Kanalnachrichten in Postfächern gespeichert sind, müssen Sie eine Aufbewahrungsrichtlinie für die Speicherorte von **Teams-Kanalnachrichten** und **Teams-Chats** konfigurieren. Aufbewahrungsrichtlinien, die für Postfächer von Exchange-Benutzern oder Gruppen konfiguriert sind, sind nicht in Teams-Chats und -Kanalnachrichten enthalten.
 
 > [!NOTE]
-> Wenn ein Benutzer in einer aktiven Aufbewahrungsrichtlinie enthalten ist, in der Teams-Nachrichten gespeichert sind, und Sie ein Postfach eines Benutzers löschen, der in dieser Richtlinie enthalten ist, wird das Postfach in ein [inaktives Postfach](inactive-mailboxes-in-office-365.md) konvertiert, um die Teams-Daten beizubehalten. Wenn diese Microsoft Teams-Daten für den Benutzer nicht aufbewahrt werden müssen, schließen Sie das Benutzerkonto aus der Aufbewahrungsrichtlinie aus, bevor Sie das Postfach löschen.
+> Wenn ein Benutzer in einer aktiven Aufbewahrungsrichtlinie enthalten ist, in der Teams-Nachrichten enthalten sind, und Sie ein Postfach eines Benutzers löschen, der in dieser Richtlinie enthalten ist, wird das Postfach in ein [inaktives Postfach](inactive-mailboxes-in-office-365.md) konvertiert, um die Teams-Daten beizubehalten. Wenn diese Microsoft Teams-Daten für den Benutzer nicht aufbewahrt werden müssen, schließen Sie das Benutzerkonto aus der Aufbewahrungsrichtlinie aus, bevor Sie das Postfach löschen.
 
 Nachdem eine Aufbewahrungsrichtlinie für Chat- und Kanalnachrichten konfiguriert wurde, wertet ein Timer-Job des Exchange-Dienstes regelmäßig Elemente im verborgenen Ordner aus, in dem diese Teams-Nachrichten gespeichert sind. Die Ausführung des Timer-Jobs dauert 1–7 Tage. Wenn die Aufbewahrungszeit für die Elemente abgelaufen ist, werden sie in den Ordner SubstrateHolds verschoben – einen weiteren versteckten Ordner, der sich im Postfach von Benutzenden oder Gruppen befindet, um "vorläufig gelöschte" Elemente zu speichern, bevor sie endgültig gelöscht werden. 
 

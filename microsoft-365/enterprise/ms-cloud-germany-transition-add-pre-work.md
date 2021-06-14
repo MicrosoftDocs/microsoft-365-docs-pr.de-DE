@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Vorbereitung der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) nach Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen.'
 ms.openlocfilehash: db4563b4a63dc39ee8171e80fd76ae15b7cd10e9
 ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/08/2021
 ms.locfileid: "52844286"
@@ -203,7 +203,7 @@ Wenn Sie Drittanbieterdienste oder branchenspezifische Apps verwenden, die mit O
 Wenn Sie in der Microsoft Cloud Deutschland-Instanz dieselbe Azure Active Directory-Identitätspartition für Office 365 und Microsoft Azure verwenden, stellen Sie sicher, dass Sie sich auf die kundengesteuerte Migration von Microsoft Azure-Diensten vorbereiten.
 
 > [!NOTE]
-> Die Migration Ihrer Microsoft Azure Dienste beginnt möglicherweise nicht, bevor Ihr Office 365 Mandant die Migrationsphase 9 erreicht hat, und muss abgeschlossen werden, bevor die Migrationsphase 10 gestartet wurde.
+> Die Migration Ihrer Microsoft Azure-Dienste startet möglicherweise nicht, bevor Ihr Office 365-Mandant die Migrationsphase 9 erreicht hat, und muss abgeschlossen sein, bevor die Migrationsphase 10 gestartet wurde.
 
 Kunden, die Office 365- und Azure-Ressourcen (z. B. Netzwerk, Datenverarbeitung und Speicher) verwenden, führen die Migration von Ressourcen zur Office 365-Dienstinstanz aus. Diese Migration obliegt dem Kunden. Beiträge des Nachrichtencenters signalisieren den Anfang. Die Migration muss vor Abschluss der Azure AD-Organisation in der Office 365-Diensteumgebung abgeschlossen sein. Informationen zu Azure-Migrationen finden Sie im Azure-Migrationsplaybook [Übersicht über den Migrationsleitfaden für Azure Deutschland](/azure/germany/germany-migration-main).
 

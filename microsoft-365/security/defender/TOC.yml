@@ -6,17 +6,17 @@
       items:
         - name: Was ist Microsoft 365 Defender?
           href: microsoft-365-defender.md
-        - name: Microsoft 365 Übersicht über Defender
+        - name: Microsoft 365 Defender im Überblick
           href: overview-security-center.md
         - name: Neuerungen in Microsoft 365 Defender
           href: whats-new.md
-        - name: Defender für Endpunkt in Microsoft 365 Defender
+        - name: Microsoft Defender für Endpunkt im Microsoft 365 Defender
           href: microsoft-365-security-center-mde.md
-        - name: Defender für Office 365 in Microsoft 365 Defender
+        - name: Microsoft Defender für Office 365 im Microsoft 365 Defender
           href: microsoft-365-security-center-mdo.md
-        - name: Umleiten von Defender für Endpunkt zu Microsoft 365 Defender
+        - name: Umleiten von Microsoft Defender für Endpunkt im Microsoft 365 Defender
           href: microsoft-365-security-mde-redirection.md
-        - name: Umleiten von Office 365 Security and Compliance Center zu Microsoft 365 Defender
+        - name: Umleiten des Office 365 Security & Compliance Centers an Microsoft 365 Defender
           href: microsoft-365-security-mdo-redirection.md
         - name: Microsoft 365 Defender-Integration in Azure Sentinel
           href: microsoft-365-defender-integration-with-azure-sentinel.md
@@ -64,11 +64,11 @@
       items:
         - name: Übersicht
           href: get-started.md
-        - name: "Microsoft\_365 Defender aktivieren"
+        - name: Microsoft 365 Defender aktivieren
           href: m365d-enable.md
         - name: Bereitstellen unterstützter Dienste
           href: deploy-supported-services.md
-        - name: "Aktivieren von Microsoft\_365 Defender – Häufig gestellte Fragen"
+        - name: Aktivieren von Microsoft 365 Defender – Häufig gestellte Fragen
           href: m365d-enable-faq.md
     - name: Schutz vor Bedrohungen
       items:
@@ -110,43 +110,43 @@
                   href: first-incident-overview.md
                 - name: Vorbereiten
                   href: first-incident-prepare.md
-                - name: Schritt 1. Triage und Analyse
+                - name: Schritt 1. Triage und analysieren
                   href: first-incident-analyze.md
                 - name: Schritt 2. Korrigieren
                   href: first-incident-remediate.md
-                - name: Schritt 3. Überprüfung
+                - name: 'Schritt 3: Überprüfung'
                   href: first-incident-post.md
-                - name: Zusätzliche Vorfallbeispiele
+                - name: Weitere Beispiele für Vorfälle
                   items:
                     - name: Phishing-E-Mail
                       href: first-incident-path-phishing.md
-                    - name: Identity
+                    - name: Identität
                       href: first-incident-path-identity.md
-            - name: Playbooks für die Reaktion auf Vorfälle
+            - name: Playbook zur Reaktion auf Vorfälle
               href: /security/compass/incident-response-playbooks
             - name: E-Mail-Benachrichtigungen
               href: get-incident-notifications.md
         - name: Bedrohungsanalyse
           items:
-            - name: Nachverfolgen und Reagieren auf neue Bedrohungen
+            - name: Nachverfolgen und Reagieren auf neue Bedrohungen mit Bedrohungsanalysen
               href: threat-analytics.md
-            - name: Grundlegendes zum Analystenbericht
+            - name: Den Bericht der Analysten verstehen
               href: threat-analytics-analyst-reports.md
-        - name: Automatische Untersuchung und Reaktion
+        - name: Automatisierte Untersuchung und Antwort (AIR)
           items:
             - name: Übersicht
               href: m365d-autoir.md
-            - name: Konfigurieren von Funktionen
+            - name: Konfigurieren von AIR-Funktionen
               href: m365d-configure-auto-investigation-response.md
             - name: Wartungsaktionen
               href: m365d-remediation-actions.md
             - name: Verwenden des Info-Centers
               href: m365d-action-center.md
-            - name: Anzeigen und Verwalten von Wartungsaktionen
+            - name: Anzeigen und Genehmigen von Korrekturaktionen
               href: m365d-autoir-actions.md
-            - name: Anzeigen von Details und Ergebnissen
+            - name: Anzeigen der Details und Ergebnissen
               href: m365d-autoir-results.md
-            - name: Beheben falsch positiver und negativer Ergebnisse
+            - name: Adressiert falsch positive und negative Ergebnisse
               href: m365d-autoir-report-false-positives-negatives.md
         - name: Erweiterte Suche
           items:
@@ -318,19 +318,19 @@
               items:
                 - name: Häufige Rest-API-Fehlercodes
                   href: api-error-codes.md
-                - name: Streaming-API
+                - name: Streaming- API
                   items:
                     - name: Microsoft 365 Streaming-API
                       href: streaming-api.md
-                    - name: Streamen erweiterter Ereignissuchen an den Azure Events-Hub
+                    - name: Streaming von Ereignissen der erweiterten Bedrohungssuche an den Azure Events-Hub
                       href: streaming-api-event-hub.md
-                    - name: Streamen erweiterter Ereignissuchen an Ihr Speicherkonto
+                    - name: Streaming von Ereignissen der erweiterten Bedrohungssuche an Ihr Speicherkonto
                       href: streaming-api-storage.md
-                - name: Erweiterte Suche-API
+                - name: Erweiterte Bedrohungssuche-API
                   href: api-advanced-hunting.md
-                - name: Incidents-APIs
+                - name: APIs von Vorfällen
                   items:
-                    - name: Incidents-Methoden und -Eigenschaften
+                    - name: Methoden und Eigenschaften von Vorfällen
                       href: api-incident.md
                     - name: Auflisten von Vorfällen
                       href: api-list-incidents.md

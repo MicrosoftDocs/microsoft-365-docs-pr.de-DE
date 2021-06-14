@@ -22,16 +22,16 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: Administratorrollen wie der Service-Administrator ordnen Geschäftsfunktionen zu und erteilen Berechtigungen für bestimmte Aufgaben im Admin Center.
-ms.openlocfilehash: 68a5c92faa6f5cdbbd56678649441a45a600ed04
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 1fea8720b174846dd95d9dd6aeee91f7ecfbc7fa
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809035"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908053"
 ---
 # <a name="about-admin-roles"></a>Info zu Administratorrollen
 
-Das Microsoft 365- oder Office 365-Abonnement bietet eine Reihe von Administratorrollen, die Sie Benutzern in Ihrer Organisation mithilfe von Microsoft 365 Admin Center zuweisen können. Jede Administratorrolle ist häufig genutzten Geschäftsfunktionen zugeordnet. Über diese Rollen erhalten Personen in Ihrer Organisation die Berechtigung zum Ausführen bestimmter Aufgaben in den Admin Centern.
+Das Microsoft 365- oder Office 365-Abonnement bietet eine Reihe von Administratorrollen, die Sie Benutzern in Ihrer Organisation mithilfe von Microsoft 365 Admin Center zuweisen können. Jede Administratorrolle ist häufig genutzten Geschäftsfunktionen zugeordnet und über diese Rollen erhalten Personen in Ihrer Organisation die Berechtigung zum Ausführen bestimmter Aufgaben in den Admin Centern.
 
 Im Microsoft 365 Admin Center können Sie Azure AD-Rollen und Microsoft Intune-Rollen verwalten. Bei diesen Rollen handelt es sich jedoch um eine Teilmenge der Rollen, die im Azure AD-Portal und im Intune Admin Center verfügbar sind.
 
@@ -86,7 +86,7 @@ Es genügt wahrscheinlich, wenn Sie in Ihrer Organisation nur die nachstehend au
 
 ## <a name="delegated-administration-for-microsoft-partners"></a>Delegierte Administration für Microsoft-Partner
 
-Wenn Sie mit einem Microsoft-Partner arbeiten, können Sie den entsprechenden Personen Administratorrollen zuweisen. Diese können wiederum Benutzern in Ihrem (oder deren) Unternehmen Administratorrollen zuweisen. Dies kann beispielsweise sinnvoll sein, wenn diese Personen Ihre Online-Organisation für Sie einrichten und verwalten.
+Wenn Sie mit einem Microsoft-Partner arbeiten, können Sie den entsprechenden Personen Administratorrollen zuweisen. Diese können wiederum den Benutzern in Ihrem (oder deren) Unternehmen Administratorrollen zuweisen. Dies kann beispielsweise sinnvoll sein, wenn diese Personen Ihre Online-Organisation für Sie einrichten und verwalten.
   
 Ein Partner kann die folgenden Rollen zuweisen: 
   
@@ -100,4 +100,5 @@ Bevor der Partner diese Rollen Benutzern zuweisen kann, müssen Sie ihn als dele
 
 [Zuweisen von Administratorrollen](assign-admin-roles.md) (Artikel)\
 [Azure AD-Rollen im Microsoft 365 Admin Center](azure-ad-roles-in-the-mac.md) (Artikel)\
-[Exchange Online-Administratorrolle](about-exchange-online-admin-role.md) (Artikel)\ [Aktivitätsberichte im Microsoft 365 Admin Center](../activity-reports/activity-reports.md) (Artikel)
+[Aktivitätsberichte im Microsoft 365 Admin Center](../activity-reports/activity-reports.md) (Artikel)\
+[Exchange Online-Administratorrolle](about-exchange-online-admin-role.md) (Artikel)

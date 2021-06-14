@@ -1,5 +1,5 @@
 ---
-title: Berechtigungen im Microsoft 365 Security Center
+title: Berechtigungen im Microsoft 365 Defender-Portal
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,18 +15,18 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Administratoren erfahren, wie Berechtigungen im Microsoft 365 Security Center für alle Aufgaben im Zusammenhang mit Sicherheit verwaltet werden.
+description: Administratoren erfahren, wie Sie Berechtigungen im Microsoft 365 Defender-Portal für alle sicherheitsrelevanten Aufgaben verwalten.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9c2d28510c25290921084e6a238fa8c781c35624
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: e810b0146803d22246db6d4248d7d4a6a203834b
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772522"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52879024"
 ---
-# <a name="permissions-in-the-microsoft-365-security-center"></a>Berechtigungen im Microsoft 365 Security Center
+# <a name="permissions-in-the-microsoft-365-defender-portal"></a>Berechtigungen im Microsoft 365 Defender-Portal
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -37,33 +37,36 @@ ms.locfileid: "52772522"
 
 Ihre Organisation muss Sicherheitsszenarien verwalten, die alle Microsoft 365-Dienste umfassen. Und Sie benötigen die Flexibilität, die richtigen Administratorberechtigungen für die richtigen Personen in Ihrer Organisation bereitzustellen.
 
-Das Microsoft 365 Security Center in <https://security.microsoft.com> unterstützt das direkte Verwalten von Berechtigungen für Benutzer, die Sicherheitsaufgaben in Microsoft 365 ausführen. Mithilfe des Security Centers können Sie Berechtigungen zentral für alle Aufgaben im Zusammenhang mit Sicherheit verwalten.
+Das Microsoft 365 Defender-Portal in <https://security.microsoft.com> unterstützt das direkte Verwalten von Berechtigungen für Benutzer, die Sicherheitsaufgaben in Microsoft 365 ausführen. Mithilfe des Microsoft 365 Defender-Portal können Sie Berechtigungen zentral für alle Aufgaben im Zusammenhang mit Sicherheit verwalten.
 
-Zum Verwalten von Berechtigungen wechseln Sie im Security Center zu **Berechtigungen und Rollen** oder <https://security.microsoft.com/securitypermissions>. Sie müssen ein **globaler Administrator** oder ein Mitglied der Rollengruppe **Organisationsverwaltung** im Security Center sein. Insbesondere ermöglicht die Rolle **Rollenverwaltung** Benutzern das Anzeigen, Erstellen und Ändern von Rollengruppen im Security Center. Standardmäßig wird diese Rolle nur der Rollengruppe **Organisationsverwaltung** zugewiesen.
+Zum Verwalten von Berechtigungen wechseln Sie im Microsoft 365 Defender-Portal zu **Berechtigungen und Rollen** oder <https://security.microsoft.com/securitypermissions>. Sie müssen ein **globaler Administrator** oder ein Mitglied der Rollengruppe **Organisationsverwaltung** im Microsoft 365 Defender-Portal sein. Insbesondere ermöglicht die Rolle **Rollenverwaltung** Benutzern das Anzeigen, Erstellen und Ändern von Rollengruppen im Microsoft 365 Defender-Portal. Standardmäßig wird diese Rolle nur der Rollengruppe **Organisationsverwaltung** zugewiesen.
+
+> [!NOTE]
+> Informationen zu Berechtigungen im Microsoft 365 Compliance Center finden Sie unter [Berechtigungen im Microsoft 365 Compliance Center](../../compliance/microsoft-365-compliance-center-permissions.md).
 
 ## <a name="relationship-of-members-roles-and-role-groups"></a>Beziehung zwischen Mitgliedern, Rollen und Rollengruppen
 
-Die Berechtigungen im Security Center basieren auf dem Berechtigungsmodell der rollenbasierten Zugriffssteuerung (Role Based Access Control, RBAC). Das RBAC ist das gleiche Berechtigungsmodell, das von den meisten Microsoft 365-Diensten verwendet wird. Wenn Sie sich also mit der Berechtigungsstruktur in diesen Diensten auskennen, wird Ihnen das Erteilen von Berechtigungen im Security Center sehr vertraut sein.
+Die Berechtigungen im Microsoft 365 Defender-Portal basieren auf dem Berechtigungsmodell der rollenbasierten Zugriffssteuerung (Role Based Access Control, RBAC). Das RBAC ist das gleiche Berechtigungsmodell, das von den meisten Microsoft 365-Diensten verwendet wird. Wenn Sie sich also mit der Berechtigungsstruktur in diesen Diensten auskennen, wird Ihnen das Erteilen von Berechtigungen im Microsoft 365 Defender-Portal sehr vertraut sein.
 
 Eine **Rolle** erteilt ihnen die Berechtigungen zum Ausführen einer Reihe von Aufgaben.
 
-Eine **Rollengruppe** besteht aus einer Reihe von Rollen, mit denen Personen ihre Aufgaben im Security Center erfüllen können. Die Rollengruppe „Angriffssimulatoradministratoren“ umfasst z. B. die Rolle des Angriffssimulatoradministrators, zum Erstellen und Verwalten aller Aspekte der Schulung zur Angriffssimulation.
+Eine **Rollengruppe** besteht aus einer Reihe von Rollen, mit denen Personen ihre Aufgaben im Microsoft 365 Defender-Portal erfüllen können. Die Rollengruppe „Angriffssimulatoradministratoren“ umfasst z. B. die Rolle des Angriffssimulatoradministrators, zum Erstellen und Verwalten aller Aspekte der Schulung zur Angriffssimulation.
 
-Das Security Center enthält Standardrollengruppen für die gängigsten Aufgaben und am häufigsten verwendeten Funktionen, die Sie zuweisen müssen. Allgemein empfiehlt es sich, den Standardrollengruppen einzelne Benutzer einfach als **Mitglieder** hinzuzufügen.
+Das Microsoft 365 Defender-Portal enthält Standardrollengruppen für die gängigsten Aufgaben und am häufigsten verwendeten Funktionen, die Sie zuweisen müssen. Allgemein empfiehlt es sich, den Standardrollengruppen einzelne Benutzer einfach als **Mitglieder** hinzuzufügen.
 
 ![Diagramm mit dem Verhältnis von Rollengruppen zu Rollen und Elementen](../../media/2a16d200-968c-4755-98ec-f1862d58cb8b.png)
 
-## <a name="roles-and-role-groups-in-the-security-center"></a>Rollen und Rollengruppen im Security Center
+## <a name="roles-and-role-groups-in-the-microsoft-365-defender-portal"></a>Rollen und Rollengruppen im Microsoft 365 Defender-Portal
 
-Die folgenden Arten von Rollen und Rollengruppen sind im Security Center unter **Berechtigungen und Rollen** verfügbar:
+Die folgenden Arten von Rollen und Rollengruppen sind im Microsoft 365 Defender-Portal unter **Berechtigungen und Rollen** verfügbar:
 
-- **Azure AD-Rollen**: Sie können die Rollen und zugewiesenen Benutzer anzeigen, sie aber nicht direkt im Security Center verwalten. Azure AD-Rollen sind zentrale Rollen, die Berechtigungen für **alle** Microsoft 365-Dienste zuweisen.
+- **Azure AD-Rollen**: Sie können die Rollen und zugewiesenen Benutzer anzeigen, sie aber nicht direkt im Microsoft 365 Defender-Portal verwalten. Azure AD-Rollen sind zentrale Rollen, die Berechtigungen für **alle** Microsoft 365-Dienste zuweisen.
 
-- **Rollen für E-Mails und Zusammenarbeit**: Hierbei handelt es sich um dieselben Rollengruppen, die im Security & Compliance Center zur Verfügung stehen, Sie können sie aber direkt im Security Center verwalten. Die hier zugewiesenen Berechtigungen gelten speziell für das Microsoft 365 Security Center, das Microsoft 365 Compliance Center sowie das Security & Compliance Center und umfassen nicht alle Berechtigungen, die in anderen Microsoft 365-Workloads erforderlich sind.
+- **Rollen für E-Mails und Zusammenarbeit**: Hierbei handelt es sich um dieselben Rollengruppen, die im Security & Compliance Center zur Verfügung stehen, Sie können sie aber direkt im Microsoft 365 Defender-Portal verwalten. Die hier zugewiesenen Berechtigungen gelten speziell für das Microsoft 365 Defender-Portal, das Microsoft 365 Compliance Center sowie das Security & Compliance Center und umfassen nicht alle Berechtigungen, die in anderen Microsoft 365-Workloads erforderlich sind.
 
-![Seite „Berechtigungen und Rollen“ im Microsoft 365 Security Center](../../media/m365-sc-permissions-and-roles-page.png)
+![Seite „Berechtigungen und Rollen“ im Microsoft 365 Defender-Portal](../../media/m365-sc-permissions-and-roles-page.png)
 
-### <a name="azure-ad-roles-in-the-security-center"></a>Azure AD-Rollen im Security Center
+### <a name="azure-ad-roles-in-the-microsoft-365-defender-portal"></a>Azure AD-Rollen im Microsoft 365 Defender-Portal
 
 Wenn Sie zu **Rollen für E-Mails und Zusammenarbeit** \> **Berechtigungen und Rollen** \> **Azure AD-Rollen** \> **Rollen** (oder direkt zu <https://security.microsoft.com/aadpermissions>) wechseln, werden die Azure AD-Rollen angezeigt, die in diesem Abschnitt beschrieben werden.
 
@@ -90,15 +93,15 @@ Weitere Informationen finden Sie unter [Anzeigen und Zuweisen von Administratorr
 |**Angriffsnutzlastautor**|Erstellen Sie Angriffsnutzlasten, ohne sie tatsächlich zu starten oder zu planen. Weitere Informationen finden Sie unter [Angriffsnutzlastautor](/azure/active-directory/roles/permissions-reference#attack-payload-author).|
 |
 
-### <a name="email--collaboration-roles-in-the-security-center"></a>Rollen für E-Mails und Zusammenarbeit im Security Center
+### <a name="email--collaboration-roles-in-the-microsoft-365-defender-portal"></a>E-Mail- und Zusammenarbeitsrollen im Microsoft 365 Defender-Portal
 
 Wenn Sie zu **Rollen für E-Mails und Zusammenarbeit** \> **Berechtigungen und Rollen** \> **Rollen für E-Mails und Zusammenarbeit** \> **Rollen** (oder direkt zu <https://security.microsoft.com/emailandcollabpermissions>) wechseln, werden die gleichen Rollengruppen wie im Security & Compliance Center angezeigt.
 
 Vollständige Informationen zu diesen Rollengruppen finden Sie unter [Berechtigungen im Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
 
-#### <a name="modify-email--collaboration-role-membership-in-the-security-center"></a>Ändern von Rollenmitgliedschaften für E-Mails und Zusammenarbeit im Security Center
+#### <a name="modify-email--collaboration-role-membership-in-the-microsoft-365-defender-portal"></a>E-Mail- und Zusammenarbeitsrollen-Mitgliedschaft im Microsoft 365 Defender-Portal ändern
 
-1. Wechseln Sie im Security Center zu **Rollen für E-Mails und Zusammenarbeit** \> **Berechtigungen und Rollen** \> **Rollen für E-Mails und Zusammenarbeit** \> **Rollen**.
+1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Rollen für E-Mails und Zusammenarbeit** \> **Berechtigungen und Rollen** \> **Rollen für E-Mails und Zusammenarbeit** \> **Rollen**.
 
 2. Wählen Sie auf der sich öffnenden Seite **Berechtigungen** die Rollengruppe, die Sie ändern möchten, aus der Liste aus. Sie können auf die Spaltenüberschrift **Name** klicken, um die Liste nach Namen zu sortieren, oder Sie können auf **Suchen** ![Symbol „Suchen2](../../media/m365-cc-sc-search-icon.png) klicken, um die Rollengruppe zu suchen.
 

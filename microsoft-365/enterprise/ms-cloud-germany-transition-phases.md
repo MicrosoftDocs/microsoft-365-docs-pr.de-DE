@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Verstehen der Aktionen und Auswirkungen der Migrationsphasen für die Verschiebung von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in der neuen deutschen Rechenzentrumsregion.'
 ms.openlocfilehash: 28d5eebbe63db13edfb1bfc297bdd6ad0c13536c
 ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/09/2021
 ms.locfileid: "52861245"
@@ -316,10 +316,10 @@ Microsoft Azure-Kunden müssen ihre Azure-Workloads gemäß der im [Azure-Migrat
 | Migrieren von Azure-Workloads | Kunden von Azure-Diensten müssen neue weltweite Abonnements für Azure-Dienste bereitstellen und die Migration gemäß dem [Azure-Migrations-Playbook](/azure/germany/germany-migration-main) ausführen. | Nach vollständigem Übergang zum weltweiten Dienst (Phase 10) können Kunden nicht mehr auf die Azure-Workloads zugreifen, die im Azure-Portal von Microsoft Cloud Deutschland vorhanden sind. |
 ||||
 
-**Gilt für:** Kunden mit registrierten oder verbundenen Azure AD-Geräten
+**Gilt für:** Kunden mit in Azure AD registrierten oder verbundenen Geräten
 
-Nach Abschluss der Phase 9 müssen registrierte und verbundene Azure AD-Geräte mit der übergangenen Azure AD-Instanz in der neuen deutschen Rechenzentrumsregion verbunden werden.
-Geräte, die nicht erneut mit Azure AD verbunden sind, funktionieren möglicherweise am Ende der Phase 10 nicht mehr. Ausführliche Anweisungen und weitere Details finden Sie in [den zusätzlichen Informationen zu Geräten.](ms-cloud-germany-transition-add-devices.md)
+Nach Abschluss von Phase 9 müssen die in Azure AD registrierten und verbundenen Geräte mit der umgestellten Azure AD-Instanz in der neuen deutschen Rechenzentrumsregion verbunden werden.
+Geräte, die nicht erneut mit Azure AD verbunden sind, können nach Abschluss von Phase 10 möglicherweise nicht mehr ausgeführt werden. Detaillierte Anweisungen und weitere Details finden Sie unter [den Zusatzinformationen zu Geräten](ms-cloud-germany-transition-add-devices.md).
 
 ### <a name="azure-ad-connect"></a>Azure AD Connect
 **Gilt für:** Alle Kunden, die Identitäten mit Azure AD Connect synchronisieren

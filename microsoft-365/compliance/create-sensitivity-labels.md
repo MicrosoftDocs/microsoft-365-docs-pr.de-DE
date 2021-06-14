@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: 'Eine Anforderung für alle Microsoft Information Protection-Lösungen: Erstellen, Konfigurieren und Veröffentlichen Sie Vertraulichkeitsbezeichnungen, um die Daten Ihres Unternehmens zu klassifizieren und zu schützen.'
-ms.openlocfilehash: fc7debbe2fe1d59d4d172fd23587d0b2a1e6705e
-ms.sourcegitcommit: ff20f5b4e3268c7c98a84fb1cbe7db7151596b6d
+ms.openlocfilehash: 328bf7bdac3a8de23820d861932ee20d71e911b4
+ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52244624"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52878184"
 ---
 # <a name="create-and-configure-sensitivity-labels-and-their-policies"></a>Erstellen und Konfigurieren von Vertraulichkeitsbezeichnungen und deren Richtlinien
 
@@ -52,7 +52,7 @@ Der globale Administrator für Ihre Organisation verfügt über vollständige Be
 
 2. Wählen Sie auf der Seite **Bezeichnungen** die Option **+ Bezeichnung erstellen** aus, um den Assistenten für neue Vertraulichkeitsbezeichnungen zu starten. 
     
-    Öffnen Sie z. B. im Microsoft 365 Compliance Center:
+    Öffnen Sie z. B. im Microsoft 365 Compliance Center:
     
     ![Erstellen einer Vertraulichkeitsbezeichnung](../media/create-sensitivity-label-full.png)
     
@@ -86,7 +86,7 @@ Um eine vorhandene Bezeichnung zu bearbeiten, markieren Sie sie, und wählen Sie
 Löschen Sie eine Bezeichnung nur dann, wenn Sie die Auswirkungen für die Benutzer verstehen. Weitere Informationen finden Sie im Abschnitt [Entfernen und Löschen von Bezeichnungen](#removing-and-deleting-labels). 
 
 > [!NOTE]
-> Wenn Sie eine Bezeichnung bearbeiten, die bereits mit einer Bezeichnungsrichtlinie veröffentlicht wurde, sind nach Abschluss des Assistenten keine zusätzlichen Schritte erforderlich. Sie brauchen sie beispielsweise keiner neuen Bezeichnungsrichtlinie hinzufügen, um die Änderungen für dieselben Benutzer verfügbar zu machen. Es kann jedoch bis zu 24 Stunden dauern, bis die Änderungen für alle Apps und Dienste repliziert wurden.
+> Wenn Sie eine Bezeichnung bearbeiten, die bereits mit einer Bezeichnungsrichtlinie veröffentlicht wurde, sind nach Abschluss des Assistenten keine zusätzlichen Schritte erforderlich. Sie brauchen sie beispielsweise keiner neuen Bezeichnungsrichtlinie hinzufügen, um die Änderungen für dieselben Benutzer verfügbar zu machen. Es kann jedoch bis zu 24 Stunden dauern, bis die Änderungen für alle Apps und Dienste repliziert wurden.
 
 Solange Sie Ihre Bezeichnungen noch nicht veröffentlicht haben, stehen sie in Apps oder für Services nicht zur Verfügung. Um die Bezeichnungen zu veröffentlichen, müssen sie [zu einer Bezeichnungsrichtlinie hinzugefügt](#publish-sensitivity-labels-by-creating-a-label-policy) werden.
 
@@ -146,7 +146,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
 
 2. Wählen Sie die Registerkarte **Bezeichnungsrichtlinien** und dann **Bezeichnungen veröffentlichen** aus, um den Assistenten zum Erstellen von Richtlinien zu starten:
     
-    Öffnen Sie z. B. im Microsoft 365 Compliance Center:
+    Öffnen Sie z. B. im Microsoft 365 Compliance Center:
         
     ![Bezeichnungen veröffentlichen](../media/publish-sensitivity-labels-full.png)
     
@@ -168,7 +168,7 @@ Set-Label -Identity $Label -LocaleSettings (ConvertTo-Json $DisplayNameLocaleSet
     
     Für Bezeichnungen, die für **Azure Purview-Ressourcen (Vorschau)** konfiguriert wurden, gilt: Diese Bezeichnungen sind mit keinen Richtlinieneinstellungen verknüpft.
 
-7. Wiederholen Sie diese Schritte, wenn Sie für verschiedene Benutzer oder Bereiche unterschiedliche Richtlinieneinstellungen benötigen. Sie möchten z. B. zusätzliche Bezeichnungen für eine Gruppe von Benutzern oder eine andere Standardbezeichnung für eine Untergruppe von Benutzern festlegen. Oder Sie haben Bezeichnungen so konfiguriert, dass ihnen unterschiedliche Bereiche zugewiesen sind.
+7. Wiederholen Sie diese Schritte, wenn Sie für verschiedene Benutzer oder Bereiche unterschiedliche Richtlinieneinstellungen benötigen. Sie möchten z. B. zusätzliche Bezeichnungen für eine Gruppe von Benutzern oder eine andere Standardbezeichnung für eine Untergruppe von Benutzern festlegen. Oder Sie haben Bezeichnungen so konfiguriert, dass ihnen unterschiedliche Bereiche zugewiesen sind.
 
 8. Wenn Sie mehrere Bezeichnungsrichtlinie erstellen, die zu einem Konflikt für einen Benutzer führen könnten, überprüfen Sie die Reihenfolge der Richtlinien und verschieben Sie einzelne Richtlinien gegebenenfalls nach oben oder unten. Wenn Sie die Reihenfolge der Bezeichnungsrichtlinien ändern möchten, wählen Sie **...** für **Weitere Aktionen** und dann **Nach oben** oder **Nach unten** aus. Weitere Informationen hierzu finden Sie unter [Priorität der Bezeichnungsrichtlinien (Reihenfolge wesentlich)](sensitivity-labels.md#label-policy-priority-order-matters) aus den Übersichtsinformationen.
 
@@ -180,7 +180,10 @@ Um eine vorhandene Bezeichnungsrichtlinie zu bearbeiten, markieren Sie sie, und 
 
 Über diese Schaltfläche wird der Assistent **Richtlinie erstellen** gestartet, mit dem Sie die Bezeichnungen und die Bezeichnungseinstellungen bearbeiten können. Wenn Sie den Assistenten abschließen, werden alle Änderungen automatisch für die ausgewählten Benutzer und Dienste repliziert.
 
-Wenn Sie integrierte Bezeichnungen für Office-Apps unter Windows, MacOS, iOS und Android verwenden, sehen Benutzer neue Bezeichnungen innerhalb von vier Stunden und innerhalb einer Stunde für Word, Excel und PowerPoint im Web, wenn Sie den Browser aktualisieren. Es kann jedoch bis zu 24 Stunden dauern, bis die Änderungen für alle Apps und Dienste repliziert wurden.
+Wenn Sie integrierte Bezeichnungen für Office-Apps unter Windows, MacOS, iOS und Android verwenden, sehen Benutzer neue Bezeichnungen innerhalb von vier Stunden und innerhalb einer Stunde für Word, Excel und PowerPoint im Web, wenn Sie den Browser aktualisieren. Es kann jedoch bis zu 24 Stunden dauern, bis die Änderungen für alle Apps und Dienste repliziert wurden.
+
+> [!NOTE]
+> Andere Apps und Dienste, die Vertraulichkeitsbezeichnungen unterstützen, werden möglicherweise häufiger als 24 Stunden mit ihren eigenen Aktualisierungszeitplänen und Auslösern für Richtlinienaktualisierungen aktualisiert. Weitere Informationen finden Sie in deren Dokumentation. Informationen zum einheitlichen Bezeichnungsclient von Azure Information Protection finden Sie beispielsweise in der Zeile **Richtlinienaktualisierung** in der Tabelle [Detaillierte Vergleiche für die Azure Information Protection-Clients](/azure/information-protection/rms-client/use-client#detailed-comparisons-for-the-azure-information-protection-clients).
 
 ### <a name="additional-label-policy-settings-with-security--compliance-center-powershell"></a>Zusätzliche Bezeichnungsrichtlinieneinstellungen mit Security & Compliance Center PowerShell
 
@@ -219,7 +222,7 @@ Anders verhält es sich beim Löschen einer Bezeichnung:
 
 - Für Office im Web: Benutzer sehen den Bezeichnungsnamen in der Statusleiste oder in der Spalte **Vertraulichkeit** nicht. Die Bezeichnungsinformationen in den Metadaten bleiben nur erhalten, wenn die Bezeichnung keine Verschlüsselung angewendet hat. Wenn die Bezeichnung Verschlüsselung angewendet hat und Sie [Vertraulichkeitsbezeichnungen für SharePoint und OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)aktiviert haben, werden die Bezeichnungsinformationen in den Metadaten entfernt und die Verschlüsselung wird aufgehoben. 
 
-Wenn Sie eine Vertraulichkeitsbezeichnung aus einer Bezeichnungsrichtlinie entfernen oder eine Vertraulichkeitsbezeichnung löschen, kann es bis zu 24 Stunden dauern, bis diese Änderungen für alle Benutzer und Dienste repliziert wurden.
+Wenn Sie eine Vertraulichkeitsbezeichnung aus einer Bezeichnungsrichtlinie entfernen oder eine Vertraulichkeitsbezeichnung löschen, kann es bis zu 24 Stunden dauern, bis diese Änderungen für alle Benutzer und Dienste repliziert wurden.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

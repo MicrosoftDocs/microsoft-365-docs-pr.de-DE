@@ -18,12 +18,12 @@ search.appverid:
 - MET150
 hideEdit: true
 description: Erfahren Sie mehr über die maximale Anzahl von Richtlinien und Elementen pro Richtlinie für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien.
-ms.openlocfilehash: 2dac852342c080c4f8334562dc76449d6963facc
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 92647911cfc3435c2d88ce5caa0624a34467a60f
+ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878052"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52908101"
 ---
 # <a name="limits-for-retention-policies-and-retention-label-policies"></a>Einschränkungen für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungsrichtlinien
 
@@ -37,7 +37,7 @@ Ein einzelner Mandant kann maximal 10.000 Richtlinien (beliebige Konfiguration) 
 
 Innerhalb dieses Grenzwertes von 10 000 Richtlinien gibt es ebenfalls einige Grenzwerte hinsichtlich der maximalen Anzahl von Richtlinien für die Aufbewahrung pro Workload:
 
-- Exchange Online (beliebige Konfiguration): 1.800
+- Exchange (beliebige Konfiguration): 1.800
 - SharePoint oder OneDrive: (alle Websites automatisch enthalten): 13
 - SharePoint oder OneDrive (bestimmte Speicherorte eingeschlossen oder ausgeschlossen): 2.600
 
@@ -49,10 +49,16 @@ Wenn Sie die optionale Konfiguration verwenden, um Ihre Aufbewahrungseinstellung
 
 Maximale Anzahl von Elementen pro Aufbewahrungsrichtlinie:
 
-  - 1.000 Postfächer (Benutzerpostfächer oder Gruppenpostfächer)
-  - 1.000 Microsoft 365-Gruppen
-  - 1.000 Benutzer für private Teams-Chats
-  - 100 Websites (OneDrive oder SharePoint)
+- Exchange-Postfächer: 1.000
+- Microsoft 365-Gruppen: 1.000
+- Teams Kanalnachrichten: 1.000
+- Teams-Chats: 1.000
+- Nachrichten in der Yammer-Community: 1.000
+- Benutzernachrichten in Yammer: 1.000
+- SharePoint-Websites: 100
+- OneDrive-Konten: 100
+
+Skype for Business muss für bestimmte Benutzer angelegt werden und die maximal unterstützte Anzahl pro Richtlinie beträgt 1.000.
 
 Da diese Grenzwerte pro Richtlinie gelten, können Sie bei der Verwendung spezifischer Ein- oder Ausschlüsse, die dazu führen, dass diese Werte überschritten werden, zusätzliche Richtlinien mit denselben Aufbewahrungseinstellungen erstellen. [Beispielszenarios und Lösungen](#examples-of-using-multiple-policies-to-avoid-exceeding-maximum-numbers), die aus diesem Grund mehrere Aufbewahrungsrichtlinien verwenden, finden Sie im nächsten Abschnitt.
 
@@ -91,4 +97,4 @@ Bei der [Löschung von Inhalten](disposition.md) sind einige Limits zu beachten:
 
 - Löschungsnachweis für bis zu sieben Jahre nach der Löschung des Elements, mit einer Höchstgrenze von 1.000.000 Elementen pro Aufbewahrungsbezeichnung für diesen Zeitraum. 
     
-    Wenn Sie für Elemente, die als Datensätze gekennzeichnet sind, einen Verfügungsnachweis benötigen, der diesen Grenzwert von 1000000 überschreitet, wenden Sie sich an den [Microsoft-Support](../business-video/get-help-support.md).
+Wenn Sie für Elemente, die als Datensätze gekennzeichnet sind, einen Verfügungsnachweis benötigen, der diesen Grenzwert von 1000000 überschreitet, wenden Sie sich an den [Microsoft-Support](../business-video/get-help-support.md).
