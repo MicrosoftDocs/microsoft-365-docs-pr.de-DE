@@ -26,31 +26,30 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: aa31319c-9196-48c9-a90b-4057e0494c7a
-description: Erfahren Sie mehr über Schutzrichtlinien, mit denen Sie verwalten können, wie Benutzer auf Office und Arbeitsdateien von mobilen Geräten zugreifen können.
-ms.openlocfilehash: a48aa241c9e70cf087da3f1701e859dae7238024
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+description: Erfahren Sie mehr über Schutzrichtlinien, mit denen Sie verwalten können, wie Benutzer von mobilen Geräten aus auf Office Apps und Arbeitsdateien zugreifen.
+ms.openlocfilehash: 7602b712f2dfc3ba369fd76979baaaa8d5da5c5c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578385"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925277"
 ---
 # <a name="manage-how-users-access-office-documents-on-mobile-devices"></a>Den Benutzerzugriff auf Office-Dokumente auf mobilen Geräten verwalten
 
-Dieser Artikel gilt für Microsoft 365 Business Premium.
+Dieser Artikel bezieht sich auf Microsoft 365 Business Premium.
 
-[] Richtlinieneinstellungen zum Steuern, wie Benutzer mit ihren mobilen Geräten auf Office-Dateien zugreifen können, sind standardmäßig auf **Aus** eingestellt. Es wird empfohlen, die Standardwerte während des Setups zu akzeptieren, um Anwendungsrichtlinien für Android, iOS und Windows 10 zu erstellen, die für alle Benutzer gelten. Nach Abschluss des Setups können Sie weitere Richtlinien erstellen. 
+[] Richtlinieneinstellungen zum Steuern, wie Benutzer mit ihren mobilen Geräten auf Office-Dateien zugreifen können, sind standardmäßig auf **Aus** eingestellt. Es wird empfohlen, dass Sie die Standardwerte während des Setups akzeptieren, um Anwendungsrichtlinien für Android, iOS und Windows 10 zu erstellen, die für alle Benutzer gelten. Nach Abschluss des Setups können Sie weitere Richtlinien erstellen. 
   
 ## <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>Einstellungen, die steuern, wie Benutzer auf mobilen Geräten auf Office-Dateien zugreifen
 
 Mit den folgenden Einstellungen können Sie den Zugriff von Benutzern auf Office-Arbeitsdateien verwalten:
-  
-|||
-|:-----|:-----|
+
 |Einstellung  <br/> |Beschreibung  <br/> |
-|Für den Zugriff auf Office-Apps PIN bzw. digitalen Fingerabdruck anfordern  <br/> |Wenn diese Einstellung **Auf** ist, müssen Benutzer zusätzlich zu Ihrem Benutzernamen und Kennwort eine andere Form der Authentifizierung bereitstellen, bevor sie Office apps auf ihrem mobilen Gerät verwenden können.  <br/> |
+|:-----|:-----|
+|Für den Zugriff auf Office-Apps PIN bzw. digitalen Fingerabdruck anfordern  <br/> |Wenn diese Einstellung **aktiviert** ist, müssen Benutzer zusätzlich zu ihrem Benutzernamen und Kennwort eine andere Form der Authentifizierung bereitstellen, bevor sie Office Apps auf ihrem mobilen Gerät verwenden können.  <br/> |
 |PIN nach dieser Anzahl von fehlerhaften Anmeldeversuchen zurücksetzen  <br/> |Um zu verhindern, dass ein nicht autorisierter Benutzer eine PIN nach dem Zufallsprinzip errät, wird die PIN, die nach der angegebenen Anzahl von Fehlversuchen zurückgesetzt.  <br/> |
-|Benutzer müssen sich erneut anmelden, nachdem Office-Apps im Leerlauf waren für  <br/> |Diese Einstellung bestimmt, wie lange ein Benutzer im Leerlauf sein kann, bevor er zur erneuten Anmeldung aufgefordert wird.  <br/> |
-|Zugriff auf Arbeitsdateien auf Geräten mit entfernten Nutzungsbeschränkungen verweigern  <br/> |Clevere Benutzer verfügen möglicherweise über ein Gerät, bei dem die Nutzungsbeschränkungen entfernt wurden. Dies bedeutet, dass der Benutzer das Betriebssystem ändern kann, wodurch das Gerät anfälliger für Schadsoftware werden kann. Solche Geräte können gesperrt werden, wenn die Einstellung auf **Ein** festgelegt wurde.  <br/> |
-|Nicht zulassen, dass Benutzer Inhalte aus Office apps in persönliche Apps kopieren  <br/> |Wenn die Einstellung **Auf** ist, kann der Benutzer keine Informationen in einer Arbeitsdatei in eine persönliche Datei kopieren. Wenn die Einstellung **deaktiviert ist,** kann der Benutzer Informationen aus einer Arbeitsdatei in eine persönliche App oder ein persönliches Konto kopieren.  <br/> |
+|Benutzer müssen sich erneut anmelden, nachdem Office-Apps im Leerlauf waren für  <br/> |Diese Einstellung bestimmt, wie lange sich ein Benutzer im Leerlauf befinden kann, bevor er aufgefordert wird, sich erneut anzumelden.  <br/> |
+|Zugriff auf Arbeitsdateien auf Geräten mit entfernten Nutzungsbeschränkungen verweigern  <br/> |Clevere Benutzer verfügen möglicherweise über ein Gerät, bei dem die Nutzungsbeschränkungen entfernt wurden. Dies bedeutet, dass der Benutzer das Betriebssystem ändern kann, wodurch das Gerät anfälliger für Schadsoftware wird. Solche Geräte können gesperrt werden, wenn die Einstellung auf **Ein** festgelegt wurde.  <br/> |
+|Benutzern nicht erlauben, Inhalte aus Office Apps in persönliche Apps zu kopieren  <br/> |Wenn die Einstellung **aktiviert** ist, kann der Benutzer Informationen in einer Arbeitsdatei nicht in eine persönliche Datei kopieren. Wenn die Einstellung **deaktiviert** ist, kann der Benutzer Informationen aus einer Arbeitsdatei in eine persönliche App oder ein persönliches Konto kopieren.  <br/> |
    
 

@@ -5,6 +5,7 @@ f1.keywords:
 ms.author: cabailey
 author: cabailey
 ms.date: ''
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
@@ -18,12 +19,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Weitere Informationen zum Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen mithilfe von PowerShell über die Befehlszeile, unabhängig vom Microsoft 365 Compliance Center.
-ms.openlocfilehash: 1c3a1e1b9e363659b276d2f11a929308f43737b3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6dc008784d46567bfa76b5bbcf9b3fa6ee8155a1
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918221"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924963"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Erstellen und Veröffentlichen von Aufbewahrungsbezeichnungen mithilfe von PowerShell
 
@@ -43,7 +44,7 @@ Die bereitgestellten Anweisungen unterstützen keine Aufbewahrungsbezeichnungen,
   
 ## <a name="disclaimer"></a>Haftungsausschluss
 
-Die in diesem Artikel bereitgestellten Beispielskripts werden von keinem standardmäßigen Supportprogramm oder Dienst von Microsoft unterstützt. Die Beispielskripts werden wie besehen ohne jegliche Garantie zur Verfügung gestellt. Microsoft schließt ferner alle konkludenten Gewährleistungen, einschließlich, aber nicht beschränkt auf konkludente Gewährleistungen der Handelsüblichkeit oder Eignung für einen bestimmten Zweck aus. Das gesamte Risiko, das mit der Verwendung oder Leistung der Beispielskripts und der Dokumentation einhergeht, liegt bei Ihnen. In keinem Fall sind Microsoft, seine Autoren oder an der Erstellung, Produktion oder Übermittlung der Skripts beteiligte Personen für Schäden jeglicher Art (einschließlich und ohne Einschränkung Schäden durch Verlust entgangener Gewinne, Geschäftsunterbrechungen, Verlust von Geschäftsinformationen oder andere geldliche Verluste) haftbar, die aus der Nutzung bzw. Unfähigkeit zur Nutzung der Beispielskripts oder Dokumentation entstehen, auch wenn Microsoft auf die Möglichkeit solcher Schäden hingewiesen wurde.
+Die in diesem Artikel bereitgestellten Beispielskripts werden in den Microsoft-Standardsupportprogrammen oder -diensten nicht unterstützt. Die Beispielskripts werden WIE BESEHEN ohne Garantie jeglicher Art bereitgestellt. Microsoft schließt ferner alle stillschweigenden Garantien aus, einschließlich, aber nicht beschränkt auf, stillschweigende Garantien der Handelsüblichkeit oder der Eignung für einen bestimmten Zweck.. Alle Risiken, die aus der Nutzung oder Ausführung der Beispielskripts und Dokumentation entstehen, liegen bei Ihnen. Microsoft, seine Autoren oder an der Erstellung, Produktion oder Bereitstellung der Skripts beteiligte Personen sind in keinem Fall haftbar für entstandene Schäden (einschließlich entgangene Gewinne, Geschäftsunterbrechungen, Verluste von Geschäftsinformationen oder sonstige finanzielle Verluste), die aus der Nutzung oder der Nutzungsunfähigkeit der Beispielskripts oder Dokumentation entstanden sind, selbst dann nicht, wenn Microsoft über die Möglichkeit solcher Schäden informiert wurde.
   
 ## <a name="step-1-create-a-csv-file-for-the-retention-labels"></a>Schritt 1: Erstellen einer CSV-Datei für die Aufbewahrungsbezeichnungen
 

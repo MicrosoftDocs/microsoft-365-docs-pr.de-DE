@@ -22,12 +22,12 @@ search.appverid:
 ms.assetid: a8ab5061-3346-4da0-bb7c-5260822b53ae
 description: Erfahren Sie hier mehr über das von 21Vianet betriebene Office 365. Es erfüllt die Anforderungen an sichere, zuverlässige und skalierbare Clouddienste in China.
 monikerRange: o365-21vianet
-ms.openlocfilehash: bc416ca253d26cc5d391d226039223eac02720b0
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 75bf7c7a4d7e453fa2be711c7332878b8a8f1150
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706370"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924719"
 ---
 # <a name="office-365-operated-by-21vianet"></a>Office 365, betrieben von 21Vianet
 
@@ -53,7 +53,7 @@ Wenn Sie wissen möchten, wie Sie die ersten Schritte mit allgemeinen Office 365
   
 ## <a name="office-365-suite"></a>Office 365-Suite
 
-|||
+|Funktion|Verfügbarkeit|
 |:-----|:-----|
 |Benutzerdefinierte Domänen  <br/> |Administratoren können benutzerdefinierte Domänen erstellen und/oder solche verwenden, die über Chinesisch-spezifische Domänenanbieter registriert wurden. Wenn Sie keine benutzerdefinierte Domäne besitzen, können Sie [einen Domänennamen von einer Domänenregistrierungsstelle erwerben](../get-help-with-domains/buy-a-domain-name.md). Sollten Sie hingegen eine besitzen, [finden Sie Ihre Domänenregistrierungsstelle oder Ihren DNS-Hostinganbieter](../get-help-with-domains/find-your-domain-registrar.md)  <br/> Wenn Sie eine öffentliche Website mit dem Office 365 SharePoint Online-Dienst erstellen, erfordert die Compliancerichtlinie für das Internet in China außerdem, dass Sie eine ICP-Nummer (Internet Content Provider, Internetinhaltsanbieter) beziehen.  **Hinweis:** Die automatische Überprüfung von nicht zulässigen Wörtern in benutzerdefinierten Domänennamen ist nicht verfügbar.           |
 |Abonnements, Abrechnung und technischer Support  <br/> |Bereitgestellt von 21Vianet. Informationen zum Kontaktieren des Supports finden Sie unter [Kontaktieren des Supports für Office 365 Business](../../business-video/get-help-support.md).  <br/> |
@@ -72,7 +72,7 @@ Wenn Sie wissen möchten, wie Sie die ersten Schritte mit allgemeinen Office 365
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-|||
+|Funktion|Verfügbarkeit|
 |:-----|:-----|
 |Freigeben von Dokumenten, Bibliotheken oder Websites per E-Mail für Personen außerhalb Ihrer Organisation  <br/> |Dieses Feature steht zur Verfügung, ist aber standardmäßig deaktiviert, da durch dessen Verwendung u. U. auf freigegebene Dateien außerhalb Ihres Landes zugegriffen werden kann. Administratoren können diese Option aktivieren, es wird jedoch eine Warnmeldung angezeigt, die darauf hinweist, dass auf freigegebene Dateien dadurch möglicherweise außerhalb Ihres Landes zugegriffen werden kann. Benutzer, die versuchen, Dateien für Personen außerhalb der Organisation freizugeben, erhalten ebenfalls eine Warnmeldung. Weitere Informationen finden Sie unter [Freigeben von SharePoint-Dateien oder -Ordnern in Office 365](https://support.microsoft.com/office/1fe37332-0f9a-4719-970e-d2578da4941c).  <br/> |
 |Access-Dienste  <br/> |Access 2013 wird unterstützt, aber das Hinzufügen von neuen Access-Apps ist möglicherweise nicht verfügbar, da dieses Feature in Office 365 und SharePoint Online eingestellt wird. Die Erstellung neuer Access-basierter Web-Apps und Access-Webdatenbanken in Office 365 und SharePoint Online wird ab Juni 2017 eingestellt. Verbleibende Web-Apps und Webdatenbanken werden innerhalb April 2018 deaktiviert. Außerdem wird die Access 2010-Funktionalität nicht unterstützt, und wenn Sie versuchen, eine Access 2010-Datenbank zu verwenden, wird dies zu Fehlern und u. U. Datenverlusten führen.  <br/> |
@@ -91,7 +91,7 @@ Wenn Sie wissen möchten, wie Sie die ersten Schritte mit allgemeinen Office 365
   
 ## <a name="outlook-web-app"></a>Outlook Web App
 
-|||
+|Funktion|Verfügbarkeit|
 |:-----|:-----|
 |Blackberry Business Cloud Services (BBCS)  <br/> |Nicht verfügbar. Sie können jedoch Exchange ActiveSync-Geräte oder ein Angebot von Research in Motion (RIM, drahtlose E-Mail-Lösung von Blackberry) verwenden, um Blackberry Enterprise Server (BES) auszuführen.  <br/> |
 |Verwaltung von Informationsrechten  <br/> |In Kürze verfügbar.  <br/> |
@@ -167,8 +167,8 @@ Weitere Informationen zum Konfigurieren einer Hybridbereitstellung mit Office 36
 > [!IMPORTANT]
 >  Der [Bereitstellungs-Assistent für Exchange Server](https://go.microsoft.com/fwlink/?LinkId=506768) ist ein kostenloses webbasiertes Tool, mit dem Sie in Ihrer lokalen Organisation eine Hybridbereitstellung zwischen Ihrer lokalen Organisation und Office 365 konfigurieren oder eine vollständige Migration zu Office 365 vornehmen können. Der Assistent stellt Ihnen einige einfache Fragen und erstellt dann anhand Ihrer Antworten eine angepasste Checkliste mit Anweisungen zum Konfigurieren der Hybridbereitstellung. Es wird dringend empfohlen, den Bereitstellungs-Assistenten zum Konfigurieren einer Hybridbereitstellung zu verwenden. > Für Organisationen, die kein Upgrade auf Exchange 2013 CU5-Server durchführen bzw. keinen solchen hinzufügen möchten; Exchange 2013 SP1-Organisationen können den Austausch von Frei/Beschäftigt-Informationen zwischen ihren lokalen und Exchange Online-Organisationen konfigurieren. Wenn Sie dieses Feature für die Hybridbereitstellung konfigurieren möchten, lesen Sie [Konfigurieren von Features der Exchange-Hybridbereitstellung mit Office 365, betrieben von 21Vianet](https://support.microsoft.com/office/26e7cc26-c980-4cc5-a082-c333de544b6d). 
 
-|||  
-|---|---|
+|Funktion|Verfügbarkeit|
+|:-----|:-----|
 |Koexistenz und Freigabe von Frei-/Beschäftigt-Informationen|Die Freigabe von Frei/Beschäftigt-Informationen des Kalenders zwischen zwei oder mehr lokalen Exchange-Organisationen oder zwischen zwei 21Vianet Office 365-Mandanten wird nicht unterstützt. Dieses Feature wird in Kürze verfügbar sein! | 
 |Kalenderfreigabe|Exchange 2013 SP1 und höher unterstützt die manuelle Konfiguration der Internet-Kalenderfreigabe mit anderen lokalen Exchange- oder Exchange Online-Organisationen. Weitere Details zum manuellen Konfigurieren dieser Funktion finden Sie unter [Aktivieren der Veröffentlichung von Kalenderinformationen im Internet](/exchange/enable-internet-calendar-publishing-exchange-2013-help). | 
 Teilen von Exchange-Kontaktdaten auf mobilen Apple-Geräten mit Apple iCloud |Diese Einstellung/dieses Feature ist standardmäßig aktiviert. Administratoren sollten dieses Feature deaktivieren, um zu verhindern, dass Benutzer Exchange-Daten außerhalb Ihrer Organisation freigeben. |
@@ -177,7 +177,7 @@ Teilen von Exchange-Kontaktdaten auf mobilen Apple-Geräten mit Apple iCloud |Di
    
 ## <a name="office"></a>Office
 
-|||
+|Funktion|Verfügbarkeit|
 |:-----|:-----|
 |Öffnen einer Office-Anwendung über **Datei** \> **Öffnen in...** Schaltfläche  <br/> |Verfügbar. Die Möglichkeit dazu während des Roamings wird in Kürze verfügbar sein.  <br/> |
 |Speichern auf OneDrive for Business, während Sie mit einem Microsoft-Konto angemeldet sind  <br/> |Damit Ihre Daten innerhalb Ihres Landes bleiben, können Sie ein Dokument auf Ihrer Organisations-Website (OneDrive for Business) nicht speichern, wenn Sie bei Office mit einem Microsoft-Konto angemeldet sind.  <br/> |
@@ -185,13 +185,13 @@ Teilen von Exchange-Kontaktdaten auf mobilen Apple-Geräten mit Apple iCloud |Di
    
 ## <a name="office-client"></a>Office-Client
 
-|||
+|Funktion|Verfügbarkeit|
 |:-----|:-----|
-|Konto verwalten (vom Office-Client aus)  <br/> |Dieses und andere ähnliche Features, die auf Ihr Office 365-Portal zugreifen sollen, verweisen derzeit auf das weltweite Office 365-Portal, und Sie können sich nicht mit Ihrem Office 365-Konto anmelden, das von 21Vianet betrieben wird. Hierbei handelt es sich um ein bekanntes Problem, an dessen Behebung gearbeitet wird. In der Zwischenzeit können Sie die URL https://portal.partner.microsoftonline.cn/ verwenden, um sich bei Ihrem Konto anzumelden und die Einstellungen von dort aus zu verwalten. Weitere Informationen finden Sie unter [Manage your Microsoft 365 Apps for Enterprise account for Office 365 operated by 21Vianet](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8).  <br/> |
+|Konto verwalten (vom Office-Client aus)  <br/> |Dieses und andere ähnliche Features, die auf Ihr Office 365-Portal zugreifen sollen, verweisen derzeit auf das weltweite Office 365-Portal, und Sie können sich nicht mit Ihrem Office 365-Konto anmelden, das von 21Vianet betrieben wird. Hierbei handelt es sich um ein bekanntes Problem, an dessen Behebung gearbeitet wird. In der Zwischenzeit können Sie die URL https://portal.partner.microsoftonline.cn/ verwenden, um sich bei Ihrem Konto anzumelden und die Einstellungen von dort aus zu verwalten. Weitere Informationen finden Sie unter [Verwalten Ihres Microsoft 365 Apps for Enterprise Kontos für Office 365 betrieben von 21Vianet.](https://support.microsoft.com/office/fbe473d3-69de-4d0c-aecb-b9c2d0d45bc8)  <br/> |
    
 ## <a name="onenote"></a>OneNote
 
-|||
+|Funktion|Verfügbarkeit|
 |:-----|:-----|
 |Online-Videos einfügen und wiedergeben  <br/> |Nicht verfügbar.  <br/> |
 |Integration des Recherchebereichs in Bing Services  <br/> |Nicht verfügbar.  <br/> |
@@ -209,7 +209,7 @@ Teilen von Exchange-Kontaktdaten auf mobilen Apple-Geräten mit Apple iCloud |Di
    
 ## <a name="skype-for-business"></a>Skype for Business
 
-|||
+|Funktion|Verfügbarkeit|
 |:-----|:-----|
 |Domain-Provider zur Unterstützung von Skype for Business  <br/> |Sie müssen Ihre Domäne bei einem chinesischen Domänenanbieter registrieren, der SRV-Einträge unterstützt. Weitere Informationen zum Registrieren von Domänen finden Sie unter [Finden Ihrer Domänenregistrierungsstelle oder Ihres DNS-Hostinganbieters](../get-help-with-domains/find-your-domain-registrar.md).  <br/> |
 |Einwahlkonferenzen (die Ermöglichung der telefonischen Teilnahme an Besprechungen für Benutzer, die keinen Zugang zu einem Computer haben)  <br/> |Möglicherweise werden Optionen für Einwahlkonferenzen und Anbieter in Skype for Business oder im Skype for Business Admin Center angezeigt, diese Features stehen aber noch nicht zur Verfügung. Sie werden jedoch in Kürze verfügbar sein.  <br/> |
@@ -236,6 +236,6 @@ Ausführliche Informationen und Anweisungen finden Sie unter [Anträge betroffen
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Probieren oder kaufen Sie Microsoft 365 business-Abonnement](../../commerce/try-or-buy-microsoft-365.md) (Artikel)\
-[Azure Information Protection-Unterstützung für Office 365 betrieben von 21Vianet](parity-between-azure-information-protection.md) (Artikel)\
-[Anzeigen Ihrer Rechnung oder Erhalten eines Fapiao](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (Artikel)
+[Testen oder kaufen Sie ein Microsoft 365 business-Abonnement](../../commerce/try-or-buy-microsoft-365.md) (Artikel)\
+[Azure Information Protection-Support für Office 365 betrieben von 21Vianet](parity-between-azure-information-protection.md) (Artikel)\
+[Anzeigen Ihrer Rechnung oder Abrufen eines Fapiaos](../../commerce/billing-and-payments/view-your-bill-or-invoice.md) (Artikel)

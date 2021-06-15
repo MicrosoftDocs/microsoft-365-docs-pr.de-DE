@@ -11,18 +11,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
-ms.topic: article
 ms.date: 05/17/2021
-ms.openlocfilehash: 2d212bedf9033b0824d32e7f42afea3944d9ca67
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: f6217cccf79b951c3103e1024ac74669d68645cd
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782813"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925935"
 ---
 # <a name="protect-security-settings-with-tamper-protection"></a>Schützen von Sicherheitseinstellungen mit Manipulationsschutz
 
@@ -50,7 +50,7 @@ Mit Manipulationsschutz wird verhindert, dass schädliche Apps Aktionen ausführ
 - Deaktivieren des über die Cloud bereitgestellten Schutzes
 - Entfernen von Sicherheitsupdates
 
-### <a name="how-it-works"></a>Funktionsweise
+### <a name="how-it-works"></a>So funktioniert's
 
 Der Manipulationsschutz sperrt im Wesentlichen Microsoft Defender Antivirus und verhindert, dass Ihre Sicherheitseinstellungen durch Apps und Methoden geändert werden, z. B.:
 
@@ -91,7 +91,7 @@ Der Manipulationsschutz kann für Ihren Mandanten mithilfe der Microsoft Defende
 
 - Wenn Sie die Microsoft Defender Security Center zum Verwalten des Manipulationsschutzes verwenden, müssen Sie intune oder die Methode zum Anfügen von Mandanten nicht verwenden.
 
-- Wenn Sie den Manipulationsschutz im Microsoft Defender Security Center verwalten, wird die Einstellung mandantenweit angewendet und wirkt sich auf alle Ihre Geräte aus, auf denen Windows 10, Windows Server 2016 oder Windows Server 2019 ausgeführt wird. Verwenden Sie [Intune](#manage-tamper-protection-for-your-organization-using-intune) oder [Configuration Manager mit Mandantenanfügung,](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)um den Manipulationsschutz (z. B. Manipulationsschutz für einige Geräte, aber deaktiviert für andere Geräte) zu optimieren.
+- Wenn Sie den Manipulationsschutz im Microsoft Defender Security Center verwalten, wird die Einstellung mandantenweit angewendet und wirkt sich auf alle Geräte aus, auf denen Windows 10, Windows Server 2016 oder Windows Server 2019 ausgeführt wird. Verwenden Sie [Intune](#manage-tamper-protection-for-your-organization-using-intune) oder [Configuration Manager mit Mandantenanfügung,](#manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006)um den Manipulationsschutz (z. B. Manipulationsschutz für einige Geräte, aber deaktiviert für andere Geräte) zu optimieren.
 
 - Wenn Sie über eine Hybridumgebung verfügen, haben in Intune konfigurierte Manipulationsschutzeinstellungen Vorrang vor einstellungen, die im Microsoft Defender Security Center konfiguriert sind. 
 
@@ -114,9 +114,9 @@ Der Manipulationsschutz kann für Ihren Mandanten mithilfe der Microsoft Defende
 
 ### <a name="turn-tamper-protection-on-or-off-in-the-microsoft-defender-security-center"></a>Manipulationsschutz im Microsoft Defender Security Center aktivieren (oder deaktivieren) 
 
-![Manipulationsschutz im Microsoft Defender Security Center aktivieren](images/mde-turn-tamperprotect-on.png)
+![Aktivieren des Manipulationsschutzes im Microsoft Defender Security Center](images/mde-turn-tamperprotect-on.png)
 
-1. Wechseln Sie zum Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ) und melden Sie sich an.
+1. Wechseln Sie zum Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) ), und melden Sie sich an.
 
 2. Wählen Sie **Einstellungen** aus.
 
@@ -132,9 +132,9 @@ Wenn Sie Teil des Sicherheitsteams Ihrer Organisation sind und Ihr Abonnement [I
 
 - Ihre Organisation verwendet [Intune zum Verwalten von Geräten.](/intune/fundamentals/what-is-device-management) ([Intune-Lizenzen](/intune/fundamentals/licenses) sind erforderlich; Intune ist in Microsoft 365 E5 enthalten.)
 
-- Ihre Windows Geräte müssen Windows 10 Betriebssystem [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) oder höher ausgeführt werden. (Weitere Informationen zu Releases finden Sie [unter Windows 10 Versionsinformationen.)](/windows/release-health/release-information)
+- Ihre Windows Geräte müssen Windows 10 Betriebssystem [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803), [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019) oder höher ausgeführt werden. (Weitere Informationen zu Releases finden Sie unter [Windows 10 Versionsinformationen.)](/windows/release-health/release-information)
 
-- Sie müssen Windows Sicherheit mit [Security Intelligence](https://www.microsoft.com/wdsi/definitions) verwenden, die auf Version 1.287.60.0 (oder höher) aktualisiert wurde.
+- Sie müssen Windows Sicherheit mit auf Version 1.287.60.0 (oder höher) aktualisierten [Sicherheitsinformationen](https://www.microsoft.com/wdsi/definitions) verwenden.
 
 - Ihre Geräte müssen die Antischadsoftwareplattform version 4.18.1906.3 (oder höher) und die Antischadsoftware-Modulversion 1.1.15500.X (oder höher) verwenden. ([Verwalten Microsoft Defender Antivirus Updates und Anwenden von Basisplänen.)](manage-updates-baselines-microsoft-defender-antivirus.md)
 
@@ -156,7 +156,7 @@ Wenn Sie Teil des Sicherheitsteams Ihrer Organisation sind und Ihr Abonnement [I
 
 ### <a name="are-you-using-windows-os-1709-1803-or-1809"></a>Verwenden Sie Windows Betriebssystem 1709, 1803 oder 1809?
 
-Wenn Sie Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [1803](/windows/release-health/status-windows-10-1803)oder [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019)verwenden, wird der **Manipulationsschutz** in der Windows-Sicherheit-App nicht angezeigt. Stattdessen können Sie PowerShell verwenden, um zu bestimmen, ob der Manipulationsschutz aktiviert ist.
+Wenn Sie Windows 10 OS [1709 , 1803](/windows/release-health/status-windows-10-1709)oder [1809](/windows/release-health/status-windows-10-1809-and-windows-server-2019)verwenden, wird der **Manipulationsschutz** in der Windows-Sicherheit-App nicht angezeigt. [](/windows/release-health/status-windows-10-1803) Stattdessen können Sie PowerShell verwenden, um zu bestimmen, ob der Manipulationsschutz aktiviert ist.
 
 #### <a name="use-powershell-to-determine-whether-tamper-protection-is-turned-on"></a>Verwenden von PowerShell, um zu bestimmen, ob der Manipulationsschutz aktiviert ist
 
@@ -168,16 +168,16 @@ Wenn Sie Windows 10 OS [1709](/windows/release-health/status-windows-10-1709), [
 
 ## <a name="manage-tamper-protection-for-your-organization-with-configuration-manager-version-2006"></a>Verwalten des Manipulationsschutzes für Ihre Organisation mit Configuration Manager, Version 2006
 
-Wenn Sie [Version 2006 von Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)verwenden, können Sie Manipulationsschutzeinstellungen auf Windows 10, Windows Server 2016 und Windows Server 2019 mithilfe einer Methode namens Tenant *Attach* verwalten. Die Mandantenanfügung ermöglicht es Ihnen, Ihre lokalen Configuration Manager-Geräte im Microsoft Endpoint Manager Admin Center zu synchronisieren und dann Endpunktsicherheitsrichtlinien für lokale Sammlungen & Geräte bereitzustellen.
+Wenn Sie [Version 2006 von Configuration Manager](/mem/configmgr/core/plan-design/changes/whats-new-in-version-2006)verwenden, können Sie Manipulationsschutzeinstellungen auf Windows 10, Windows Server 2016 und Windows Server 2019 mithilfe einer Methode namens Tenant *Attach* verwalten. Mit tenant attach können Sie Ihre nur lokal gehosteten Configuration Manager-Geräte im Microsoft Endpoint Manager Admin Center synchronisieren und dann Endpunktsicherheitskonfigurationsrichtlinien für lokale Sammlungen & Geräte bereitstellen.
 
-:::image type="content" source="images/win-security- exp-policy-endpt-security.png" alt-text="Windows-Sicherheit in Endpoint Manager":::
+:::image type="content" source="images/win-security- exp-policy-endpt-security.png" alt-text="Windows-Sicherheit Erfahrung in Endpoint Manager":::
 
 > [!NOTE]
-> Das Verfahren kann verwendet werden, um den Manipulationsschutz auf Geräte zu erweitern, auf denen Windows 10 und Windows Server 2019 ausgeführt wird. Überprüfen Sie die voraussetzungen und andere Informationen in den in diesem Verfahren erwähnten Ressourcen.
+> Das Verfahren kann verwendet werden, um den Manipulationsschutz auf Geräte zu erweitern, die Windows 10 und Windows Server 2019 ausgeführt werden. Überprüfen Sie die voraussetzungen und andere Informationen in den in diesem Verfahren erwähnten Ressourcen.
 
-1. Einrichten von Mandantenanfügung. Weitere Informationen finden Sie [unter Microsoft Endpoint Manager Mandantenanfügung: Gerätesynchronisierung und Geräteaktionen.](/mem/configmgr/tenant-attach/device-sync-actions)
+1. Einrichten von Mandantenanfügung. Weitere Informationen finden Sie unter [Microsoft Endpoint Manager Mandantenanfügung: Gerätesynchronisierung und Geräteaktionen.](/mem/configmgr/tenant-attach/device-sync-actions)
 
-2. Wechseln [Sie](https://go.microsoft.com/fwlink/?linkid=2109431)im Microsoft Endpoint Manager Admin Center zu **Endpoint Security**  >  **Antivirus,** und wählen Sie dann **+ Richtlinie erstellen** aus.<br/> 
+2. Wechseln Sie im [Microsoft Endpoint Manager Admin Center](https://go.microsoft.com/fwlink/?linkid=2109431)zu Endpoint **Security**  >  **Antivirus,** und wählen Sie dann **+ Richtlinie erstellen** aus.<br/> 
    - Wählen Sie in der **Plattformliste** **Windows 10 und Windows Server (ConfigMgr)** aus.  
    - Wählen Sie in der **Profilliste** **Windows-Sicherheit Erfahrung (Vorschau)** aus. <br/>
 
@@ -207,7 +207,7 @@ In der Windows-Sicherheit-App sehen Sie Folgendes:
 
 1. Wählen Sie **"Start"** aus, und beginnen Sie mit der Eingabe von *"Sicherheit".* Wählen Sie in den Suchergebnissen **Windows-Sicherheit** aus.
 
-2. Wählen Sie Die Einstellungen **für viren- & Bedrohungsschutz**  >  **& Bedrohungsschutz** aus.
+2. Wählen Sie **"Viren- & Bedrohungsschutz**  >  **virus & Bedrohungsschutzeinstellungen"** aus.
 
 3. Legen Sie **den Manipulationsschutz** auf **"Ein"** oder **"Aus"** fest.
 
@@ -219,11 +219,11 @@ Wenn ein Manipulationsversuch erkannt wird, wird im [Microsoft Defender Security
 
 ![Microsoft Defender Security Center](images/tamperattemptalert.png)
 
-Mit [EDR](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) und [erweiterten Suchfunktionen](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) in Microsoft Defender für Endpunkt kann Ihr Sicherheitsteam solche Versuche untersuchen und behandeln.
+Mit [EDR](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) und [erweiterten Suchfunktionen](/microsoft-365/security/defender-endpoint/advanced-hunting-overview) in Microsoft Defender für Endpunkt kann Ihr Sicherheitsteam solche Versuche untersuchen und beheben.
 
 ## <a name="review-your-security-recommendations"></a>Überprüfen Ihrer Sicherheitsempfehlungen
 
-Der Manipulationsschutz lässt sich in die Funktionen [von Threat & Vulnerability Management](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) integrieren. [Sicherheitsempfehlungen](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) umfassen das Sicherstellen, dass der Manipulationsschutz aktiviert ist. Sie können z. B. nach *Manipulationen* suchen, wie in der folgenden Abbildung dargestellt:
+Der Manipulationsschutz lässt sich in die Funktionen [für die Bedrohungs- & Sicherheitsrisikoverwaltung](/microsoft-365/security/defender-endpoint/next-gen-threat-and-vuln-mgt) integrieren. [Sicherheitsempfehlungen](/microsoft-365/security/defender-endpoint/tvm-security-recommendation) umfassen das Sicherstellen, dass der Manipulationsschutz aktiviert ist. Sie können z. B. nach *Manipulationen* suchen, wie in der folgenden Abbildung dargestellt:
 
 ![Manipulationsschutz führt zu Sicherheitsempfehlungen](/images/securityrecs-tamperprotect.jpg)
 
@@ -231,7 +231,7 @@ In den Ergebnissen können Sie **"Manipulationsschutz aktivieren"** auswählen, 
 
 ![Aktivieren des Manipulationsschutzes](images/tamperprotectsecurityrecos.png)
 
-Weitere Informationen zur Bedrohungs- & Sicherheitsrisikoverwaltung finden Sie unter ["Bedrohungs- & Sicherheitsrisikoverwaltung" in Microsoft Defender Security Center.](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center)
+Weitere Informationen zur Bedrohungs- & Sicherheitsrisikoverwaltung finden Sie unter [Bedrohungs- & Sicherheitsrisikoverwaltung in Microsoft Defender Security Center.](/microsoft-365/security/defender-endpoint/tvm-dashboard-insights#threat--vulnerability-management-in-microsoft-defender-security-center)
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
@@ -289,7 +289,7 @@ Nein. Lokale Administratoren können die Einstellungen für den Manipulationssch
 
 Wenn ein Gerät aus Microsoft Defender für Endpunkt aus dem Board entfernt ist, ist der Manipulationsschutz aktiviert, was der Standardzustand für nicht verwaltete Geräte ist. 
 
-### <a name="will-there-be-an-alert-about-tamper-protection-status-changing-in-the-microsoft-defender-security-center"></a>Wird eine Warnung zum Status des Manipulationsschutzes im Microsoft Defender Security Center angezeigt?
+### <a name="will-there-be-an-alert-about-tamper-protection-status-changing-in-the-microsoft-defender-security-center"></a>Wird im Microsoft Defender Security Center eine Warnung zum Status des Manipulationsschutzes angezeigt?
 
 Ja. Die Warnung wird [https://securitycenter.microsoft.com](https://securitycenter.microsoft.com) unter **Warnungen** angezeigt.
 

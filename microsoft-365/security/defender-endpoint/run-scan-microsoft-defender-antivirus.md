@@ -7,7 +7,8 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,13 +16,12 @@ ms.date: 06/10/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: how-to
-ms.openlocfilehash: 3ee37d7220527c9032b630e02258c684b6c860b3
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: b2910f9fe1c49178b8696d1a421248156b0fc4c2
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878808"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925731"
 ---
 # <a name="configure-and-run-on-demand-microsoft-defender-antivirus-scans"></a>Konfigurieren und Ausführen von bedarfsgesteuerten Scans durch Microsoft Defender Antivirus
 
@@ -36,7 +36,7 @@ In Kombination mit always-on-Echtzeitschutz, der Dateien überprüft, wenn sie g
 > [!IMPORTANT]
 > Microsoft Defender Antivirus wird im Kontext des [LocalSystem-Kontos](/windows/win32/services/localsystem-account) ausgeführt, wenn eine lokale Überprüfung ausgeführt wird. Für Netzwerkscans wird der Kontext des Gerätekontos verwendet. Wenn das Domänengerätekonto nicht über die entsprechenden Berechtigungen für den Zugriff auf die Freigabe verfügt, funktioniert die Überprüfung nicht. Stellen Sie sicher, dass das Gerät über Berechtigungen für die Zugriffsnetzwerkfreigabe verfügt.
 
-## <a name="use-microsoft-endpoint-manager-to-run-a-scan"></a>Verwenden Microsoft Endpoint Manager zum Ausführen einer Überprüfung
+## <a name="use-microsoft-endpoint-manager-to-run-a-scan"></a>Verwenden von Microsoft Endpoint Manager zum Ausführen einer Überprüfung
 
 1. Wechseln Sie zum Microsoft Endpoint Manager Admin Center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ), und melden Sie sich an.
 
@@ -59,7 +59,7 @@ Verwenden Sie den folgenden `-scan` Parameter:
 mpcmdrun.exe -scan -scantype 1
 ```
 
-Weitere Informationen zur Verwendung des Tools und zu zusätzlichen Parametern, z. B. zum Starten einer vollständigen Überprüfung oder zum Definieren von Pfaden, finden Sie unter [Verwenden des mpcmdrun.exe-Befehlszeilentools zum Konfigurieren und Verwalten Microsoft Defender Antivirus.](command-line-arguments-microsoft-defender-antivirus.md)
+Weitere Informationen zur Verwendung des Tools und zu zusätzlichen Parametern, z. B. zum Starten einer vollständigen Überprüfung oder zum Definieren von Pfaden, finden Sie unter [Verwenden des mpcmdrun.exe Befehlszeilentools zum Konfigurieren und Verwalten Microsoft Defender Antivirus.](command-line-arguments-microsoft-defender-antivirus.md)
 
 ## <a name="use-microsoft-intune-to-run-a-scan"></a>Verwenden von Microsoft Intune zum Ausführen einer Überprüfung
 
@@ -71,7 +71,7 @@ Weitere Informationen zur Verwendung des Tools und zu zusätzlichen Parametern, 
 
 ## <a name="use-the-windows-security-app-to-run-a-scan"></a>Verwenden der Windows-Sicherheit-App zum Ausführen einer Überprüfung
 
-Anweisungen zum Ausführen einer Überprüfung auf einzelnen Endpunkten finden Sie [unter Ausführen eines Scans in der Windows-Sicherheit-App.](microsoft-defender-security-center-antivirus.md)
+Anweisungen zum Ausführen einer Überprüfung auf einzelnen Endpunkten finden Sie [unter "Ausführen eines Scans in der Windows-Sicherheit-App".](microsoft-defender-security-center-antivirus.md)
 
 ## <a name="use-powershell-cmdlets-to-run-a-scan"></a>Verwenden von PowerShell-Cmdlets zum Ausführen einer Überprüfung
 
@@ -85,7 +85,7 @@ Weitere Informationen zur Verwendung von PowerShell mit Microsoft Defender Antiv
 
 ## <a name="use-windows-management-instruction-wmi-to-run-a-scan"></a>Verwenden Windows Management Instruction (WMI) zum Ausführen einer Überprüfung
 
-Verwenden Sie die [ **Start-Methode**](/previous-versions/windows/desktop/defender/start-msft-mpscan) der **MSFT_MpScan** Klasse.
+Verwenden Sie die [ **Start-Methode**](/previous-versions/windows/desktop/defender/start-msft-mpscan) der **MSFT_MpScan-Klasse.**
 
 Weitere Informationen dazu, welche Parameter zulässig sind, finden Sie unter [Windows Defender WMIv2-APIs.](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 

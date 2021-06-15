@@ -16,12 +16,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Erfahren Sie mehr über das Business Assist-Programm und wie es Ihrer Organisation mit verbesserter Hilfe und Nutzung für Microsoft 365 für Unternehmen helfen kann.
-ms.openlocfilehash: ee0884ec1c95795a6a7847dfeaffdfcb2fac4beb
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 1df0be7d53f01b83e76dd70741d043f0a6a1e0e4
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52768981"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924587"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Business-Assistent für Microsoft 365
 
@@ -33,7 +33,7 @@ Profitieren Sie von Ihrem Abonnement mit experten Ratschlägen von Kleinunterneh
 
 |&nbsp;|&nbsp;|&nbsp;|
 |:-----|:-----|:-----|
-|**Schnelles Starten** <br> Arbeiten Sie mit einem Kleinunternehmen zusammen, um Microsoft 365 Features einzurichten, die Ihr Unternehmen schützen und ihm ein professionelles Aussehen verleihen. |**Fördern aller Mitarbeiter in Ihrem Unternehmen** <br> Alle Ihre Mitarbeiter, nicht nur die für die IT-Abteilung zuständige Person, können sich direkt an Microsoft-Experten wenden, um den laufenden Support zu beschleunigen. |**Entsperren des Geschäftspotenzials** <br> Erfahren Sie mehr über nicht genutzte Features und erhalten Sie Tipps, wie Sie Ihr Abonnement besser nutzen können. |
+|Arbeiten Sie mit einem Kleinunternehmen zusammen, um Microsoft 365 Features einzurichten, die Ihr Unternehmen schützen und ihm ein professionelles Aussehen verleihen. |Alle Ihre Mitarbeiter, nicht nur die für die IT-Abteilung zuständige Person, können sich direkt an Microsoft-Experten wenden, um den laufenden Support zu beschleunigen. |Erfahren Sie mehr über nicht genutzte Features und erhalten Sie Tipps, wie Sie Ihr Abonnement besser nutzen können. |
 |**Beschleunigen der Cloudmigration** <br> Erhalten Sie personalisierte Hilfe beim Verschieben aller Ihrer aktuellen Dateien (E-Mail, Speicher, Dokumente und Kommunikation) in Microsoft 365. |**Einfacher Zugriff auf Spezialisten** <br> Unser Team nimmt die Unterhaltung dort auf, wo Sie sie zuletzt verlassen haben. Keine Tickets zum Nachverfolgen, keine Bots, keine langen Wartezeiten. |**Immer auf dem neuesten Stand** <br> Regelmäßige Überprüfungen, mit denen Sie immer auf dem neuesten Stand bleiben, wenn neue Servicefunktionen hinzugefügt werden und die Anforderungen Ihres Unternehmens weiterentwickelt werden. |
 | | | |
 
@@ -42,7 +42,7 @@ Profitieren Sie von Ihrem Abonnement mit experten Ratschlägen von Kleinunterneh
 
 ## <a name="eligibility-for-business-assist"></a>Berechtigung für Business Assist
 
-Kunden mit einem aktiven Abonnementplan für Microsoft 365 Business können Business Assist-Onboarding-, Migrations- und Verwaltungsdienste verwenden. Ihre Organisation muss über 5 oder weniger Benutzerlizenzen verfügen.
+Kunden mit einem aktiven abonnementbasierten Microsoft 365 für Unternehmen können Business Assist-Onboarding-, Migrations- und Verwaltungsdienste verwenden. Ihre Organisation muss über 5 oder weniger Benutzerlizenzen verfügen.
 
 > [!IMPORTANT]
 > Business Assist ist nur in den USA verfügbar.

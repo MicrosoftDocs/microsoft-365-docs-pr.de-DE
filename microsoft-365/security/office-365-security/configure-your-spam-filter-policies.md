@@ -257,7 +257,7 @@ Beim Erstellen einer benutzerdefinierten Antispamrichtlinie im Microsoft 365 Def
 
 3. Wenn Sie eine Antispamrichtlinie durch Klicken auf den Namen auswählen, werden die Richtlinieneinstellungen in einem Flyout angezeigt.
 
-## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies"></a>Verwenden Sie das Microsoft 365 Defender-Portal, um Anti-Spam-Richtlinien ändern
+## <a name="use-the-microsoft-365-defender-portal-to-modify-anti-spam-policies"></a>Verwenden Sie das Microsoft 365 Defender-Portal, um Anti-Spam-Richtlinien zu ändern
 
 1. Wechseln Sie im Microsoft 365 Defender-Portal zum Abschnitt **E-Mail und Zusammenarbeit** \> **Richtlinien und Regeln** \> **Bedrohungsrichtlinien** \> **Richtlinien**\> **Antispam**.
 

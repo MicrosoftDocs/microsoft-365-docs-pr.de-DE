@@ -7,20 +7,20 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: ab987089c20d0a1d0baed152e7ddcfdd2878cc65
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 405955de63de9f84a783ca1b8c0348c3935440cd
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843458"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926175"
 ---
 # <a name="troubleshoot-microsoft-defender-antivirus-reporting-in-update-compliance"></a>Behandeln von Problemen bei der Microsoft Defender Antivirus-Berichterstattung in Update Compliance
 
@@ -43,7 +43,7 @@ In der Regel sind die häufigsten Indikatoren für ein Problem:
 - Es werden überhaupt keine Geräte angezeigt.
 - Die Angezeigten Berichte und Informationen sind veraltet (älter als einige Tage).
 
-Allgemeine Fehlercodes und Ereignis-IDs im Zusammenhang mit dem Microsoft Defender Antivirus Dienst, die nicht mit der Updatecompliance zusammenhängen, finden Sie unter [Microsoft Defender Antivirus Ereignisse.](troubleshoot-microsoft-defender-antivirus.md) 
+Allgemeine Fehlercodes und Ereignis-IDs im Zusammenhang mit dem Microsoft Defender Antivirus Dienst, die nicht mit der Updatecompliance in Zusammenhang stehen, finden Sie unter [Microsoft Defender Antivirus Ereignisse.](troubleshoot-microsoft-defender-antivirus.md) 
 
 Es gibt drei Schritte, um diese Probleme zu beheben:
 
@@ -57,7 +57,7 @@ Es gibt drei Schritte, um diese Probleme zu beheben:
 
 ## <a name="confirm-prerequisites"></a>Bestätigen der Voraussetzungen
 
-Damit Geräte ordnungsgemäß in der Updatecompliance angezeigt werden, müssen Sie bestimmte Voraussetzungen sowohl für den Updatekompatibilitätsdienst als auch für Microsoft Defender Antivirus erfüllen:
+Damit Geräte ordnungsgemäß in der Updatecompliance angezeigt werden, müssen Sie bestimmte Voraussetzungen sowohl für den Updatecompliancedienst als auch für Microsoft Defender Antivirus erfüllen:
 
 >[!div class="checklist"]
 >- Endpunkte verwenden Microsoft Defender Antivirus als einzige Antivirenschutz-App. [Die Verwendung einer anderen Antiviren-App bewirkt, dass Microsoft Defender AV sich selbst deaktiviert,](microsoft-defender-antivirus-compatibility.md) und der Endpunkt wird nicht in der Updatecompliance gemeldet.

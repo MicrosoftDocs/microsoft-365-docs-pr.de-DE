@@ -25,12 +25,12 @@ search.appverid:
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
 description: 'Erfahren Sie, wie Sie Ihre Domäne in Microsoft 365 hinzufügen und einrichten, damit Ihre Dienste wie E-Mail und Skype for Business Online Ihren eigenen Domänennamen verwenden. '
-ms.openlocfilehash: 7f1ade6cb3013126fb011fe9232b3b4c2e9a82d4
-ms.sourcegitcommit: a6fb731fdf726d7d9fe4232cf69510013f2b54ce
+ms.openlocfilehash: 9c26f9afcf17857c4b3b8f05b89253272cf20e56
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52683127"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924503"
 ---
 # <a name="change-nameservers-to-set-up-microsoft-365-with-any-domain-registrar"></a>Ändern des Namenservers zum Einrichten von Microsoft 365 mit einer beliebigen Domänenregistrierungsstelle.
 
@@ -66,18 +66,17 @@ Je nachdem, ob Sie einen TXT-Eintrag oder einen MX-Eintrag erstellen möchten, f
   
 **Wenn Sie einen TXT-Eintrag erstellen, verwenden Sie die folgenden Werte:**
     
-|||||
+
+|Eintragstyp<br/> |Alias oder Hostname <br/> |Wert <br/> |TTL<br/> |
 |:-----|:-----|:-----|:-----|
-|**Record Type** <br/> |**Alias** oder **Hostname** <br/> |**Value** <br/> |**TTL** <br/> |
 |TXT  <br/> |Führen Sie eine der folgenden Aktionen aus: Geben Sie **@** ein, lassen Sie das Feld leer, oder geben Sie Ihren Domänennamen ein.    <br/> > [!NOTE]> Die Anforderungen für dieses Feld sind je nach DNS-Host unterschiedlich.           
-|MS=ms *XXXXXXXX*  <br/> > [!NOTE]> Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel oder verweisende Adresse** aus der Tabelle in Microsoft 365.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest.  <br/> |
+|MS=ms *XXXXXXXX*  <br/>**Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel oder verweisende Adresse** aus der Tabelle in Microsoft 365.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest.  <br/> |
    
 **Wenn Sie einen MX-Eintrag erstellen, verwenden Sie die folgenden Werte:**
     
-||||||
+|Eintragstyp|Alias oder Hostname|Wert|Priority|TTL|
 |:-----|:-----|:-----|:-----|:-----|
-|**Record Type**|**Alias** oder **Hostname**|**Value**|**Priorität**|**TTL**|
-|MX|Geben Sie **@** oder Ihren Domänennamen ein. |MS=ms *XXXXXXXX* > [!NOTE]> Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel oder verweisende Adresse** aus der Tabelle in Microsoft 365.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |Für **Priority** (Priorität) verwenden Sie eine geringere Priorität als für die bereits vorhandenen MX-Einträge, um Konflikte mit dem MX-Eintrag für den E-Mail-Verkehr zu vermeiden. Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](../setup/domains-faq.yml) |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest. |
+|MX|Geben Sie **@** oder Ihren Domänennamen ein. |MS=ms *XXXXXXXX* **Hinweis:** Dies ist ein Beispiel. Verwenden Sie hier Ihren spezifischen Wert für **Ziel oder verweisende Adresse** aus der Tabelle in Microsoft 365.           [Wie finde ich diese Angabe?](../get-help-with-domains/information-for-dns-records.md)          |Für **Priority** (Priorität) verwenden Sie eine geringere Priorität als für die bereits vorhandenen MX-Einträge, um Konflikte mit dem MX-Eintrag für den E-Mail-Verkehr zu vermeiden. Weitere Informationen zur Priorität finden Sie unter [Was ist MX-Priorität?](../setup/domains-faq.yml) |Legen Sie diesen Wert auf **1 Stunde** oder die entsprechende Anzahl von Minuten ( **60** ), Sekunden ( **3600** ) usw. fest. |
    
 ### <a name="save-the-record"></a>Speichern des Eintrags
 
@@ -110,13 +109,12 @@ Wenn Sie die Namenserver der Domäne auf der Website Ihrer Domänenregistrierung
 1. Suchen Sie den Bereich auf der Website der Domänenregistrierungsstelle, in dem Sie die Namenserver für Ihre Domäne bearbeiten können, oder einen Bereich, in dem Sie benutzerdefinierte Namensserver verwenden können.
     
 2. Erstellen Sie Namenservereinträge, oder bearbeiten Sie die vorhandenen Namenservereinträge so, dass sie den folgenden Werten entsprechen:
-    
-|||
-|:-----|:-----|
-|Erster Namenserver  <br/> |ns1.bdm.microsoftonline.com  <br/> |
-|Zweiter Namenserver  <br/> |ns2.bdm.microsoftonline.com  <br/> |
-|Dritter Namenserver  <br/> |ns3.bdm.microsoftonline.com  <br/> |
-|Vierter Namenserver  <br/> |ns4.bdm.microsoftonline.com  <br/> |
+
+    - Vornamenserver: ns1.bdm.microsoftonline.com
+    - Zweiter Nameserver: ns2.bdm.microsoftonline.com
+    - Dritter Nameserver: ns3.bdm.microsoftonline.com
+    - Vierter Nameserver: ns4.bdm.microsoftonline.com
+      
    
    > [!TIP]
    > Idealerweise fügen Sie alle vier Einträge hinzu, aber wenn Ihre Registrierungsstelle nur zwei unterstützt, fügen Sie **ns1.bdm.microsoftonline.com** und **ns2.bdm.microsoftonline.com** hinzu. 
@@ -133,12 +131,10 @@ Wenn Sie die Namenserver der Domäne auf der Website Ihrer Domänenregistrierung
 1. Suchen Sie den Bereich auf der Website der Domänenregistrierungsstelle, in dem Sie die Namenserver für Ihre Domäne bearbeiten können.
     
 2. Erstellen Sie zwei Namenservereinträge, oder bearbeiten Sie die vorhandenen Namenservereinträge so, dass sie den folgenden Werten entsprechen:
+
+   - Vornamenserver: ns1.dns.partner.microsoftonline.cn
+   - Zweiter Nameserver: ns2.dns.partner.microsoftonline.cn
     
-|||
-|:-----|:-----|
-|Erster Namenserver  <br/> |ns1.dns.partner.microsoftonline.cn  <br/> |
-|Zweiter Namenserver  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
-   
    > [!TIP]
    > Sie sollten mindestens zwei Namenservereinträge verwenden. Wenn weitere Namenserver aufgelistet sind, können Sie diese entweder löschen oder ändern in **ns3.dns.partner.microsoftonline.com** und **ns4.dns.partner.microsoftonline.com**. 
   
@@ -159,34 +155,34 @@ Hier einige weitere Schritte, die beispielsweise für E-Mail- und Websitehosting
 
 2. Wählen Sie auf der Seite **Domänen** eine Domäne aus.
 
-3. Wählen Sie auf der Seite Domänendetails die Registerkarte **DNS-Einträge** aus.
+3. Wählen Sie auf der Seite "Domänendetails" die Registerkarte **"DNS-Einträge"** aus.
  
-4. Wählen **Sie Datensatz hinzufügen aus.**
+4. Wählen Sie **Datensatz hinzufügen** aus.
 
-5. Wählen Sie **im Bereich Benutzerdefinierten DNS-Eintrag** hinzufügen in der **Dropdownliste** Typ die Option **A (Adresse) aus.**
+5. Wählen Sie im Bereich **"Benutzerdefinierten DNS-Eintrag hinzufügen"** in der Dropdownliste **"Typ"** die Option **A (Adresse)** aus.
 
-6. Geben Sie **im Feld Hostname oder Alias** **@** ein.
+6. Geben Sie im Feld **Hostname oder Alias** **@** .
 
-7. Geben Sie **im Feld IP-Adresse** die statische IP-Adresse für die Website ein, auf der sie derzeit gehostet wird. Beispiel: 172.16.140.1.
+7. Geben Sie im **Feld "IP-Adresse"** die statische IP-Adresse für die Website ein, auf der sie derzeit gehostet wird. Beispiel: 172.16.140.1.
     
 > [!IMPORTANT]
->  Dies muss eine _statische_ IP-Adresse für die Website und keine _dynamische IP-Adresse_ sein. Um sicherzustellen, dass Sie eine statische IP-Adresse für Ihre öffentliche Website erhalten können, überprüfen Sie die Website, auf der Ihre Website hostet.
+>  Dies muss eine _statische_ IP-Adresse für die Website sein, keine _dynamische_ IP-Adresse. Um sicherzustellen, dass Sie eine statische IP-Adresse für Ihre öffentliche Website abrufen können, wenden Sie sich an die Website, auf der Ihre Website gehostet wird.
    
-8. Wenn Sie die TTL-Einstellung für den Datensatz ändern möchten, wählen Sie in der Dropdownliste **TTL** eine neue Dauer aus. Fahren Sie andernfalls mit Schritt 9 fort.
+8. Wenn Sie die TTL-Einstellung für den Datensatz ändern möchten, wählen Sie eine neue Zeitspanne aus der **TTL-Dropdownliste** aus. Fahren Sie andernfalls mit Schritt 9 fort.
     
 9. Klicken Sie auf **Speichern**. 
     
 Darüber hinaus können Sie einen CNAME-Eintrag erstellen, damit Kunden Ihre Website besser finden können.
   
-1.  Wählen **Sie Datensatz hinzufügen aus.**
+1.  Wählen Sie **Datensatz hinzufügen** aus.
 
-3.  Wählen Sie im Bereich Benutzerdefinierte **#A0** hinzufügen in der **Dropdownliste** Typ die Option **CNAME (Alias)** aus.
-4.  Geben Sie **im Feld Hostname oder Alias** www **ein.**
-5.  Geben Sie im Feld Punkte **zu Adresse** den vollqualifizierten Domänennamen (Fully Qualified Domain Name, FQDN) für Ihre Website ein. Beispielsweise **contoso.com**.
-6.  Wenn Sie die TTL-Einstellung für den Datensatz ändern möchten, wählen Sie in der Dropdownliste **TTL** eine neue Dauer aus. Fahren Sie andernfalls mit Schritt 6 fort.
-7.  Klicken Sie auf **Speichern**.
+3.  Wählen Sie im Bereich **"Benutzerdefinierten DNS-Eintrag hinzufügen"** in der Dropdownliste **"Typ"** die Option **CNAME (Alias)** aus.
+4.  Geben Sie im Feld **Hostname oder Alias** **www** ein.
+5.  Geben Sie im Feld **"Punkte zu Adresse"** den vollqualifizierten Domänennamen (Fully Qualified Domain Name, FQDN) für Ihre Website ein. Beispielsweise **contoso.com**.
+6.  Wenn Sie die TTL-Einstellung für den Datensatz ändern möchten, wählen Sie eine neue Zeitspanne aus der **TTL-Dropdownliste** aus. Fahren Sie andernfalls mit Schritt 6 fort.
+7.  Wählen Sie **Speichern** aus.
 
-Nachdem die Nameservereinträge so aktualisiert wurden, dass sie auf Microsoft verweisen, ist die Domäneneinrichtung abgeschlossen. E-Mails werden an Microsoft geroutet, und der Datenverkehr zu Ihrer Websiteadresse wird weiterhin an Ihren aktuellen Websitehost gesendet."
+Nachdem die Namenservereinträge so aktualisiert wurden, dass sie auf Microsoft verweisen, ist Ihre Domäneneinrichtung abgeschlossen. E-Mails werden an Microsoft weitergeleitet, und der Datenverkehr zu Ihrer Websiteadresse wird weiterhin zu Ihrem aktuellen Websitehost geleitet."
     
 > [!NOTE]
 > Es kann mehrere Stunden dauern, bis Ihre Namenservereinträge im Internet im gesamten DNS-System aktualisiert wurden. Danach sind Ihre Microsoft-E-Mails und andere Dienste alle dafür eingerichtet, mit Ihrer Domäne zu funktionieren. 

@@ -15,12 +15,12 @@ ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5a90a12457597fa38c648fd44bf194d2322a26af
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: ed0859e6018d171b48aac83d394eacbd2163c37b
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861222"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924683"
 ---
 # <a name="enable-controlled-folder-access"></a>Kontrollierte Ordnerzugriff aktivieren
 
@@ -47,10 +47,10 @@ Im [Überwachungsmodus](evaluate-controlled-folder-access.md) können Sie testen
 
 Gruppenrichtlinieneinstellungen, die das Zusammenführen von lokalen Administratorlisten deaktivieren, setzen die Einstellungen für den kontrollierten Ordnerzugriff außer Kraft. Sie setzen auch geschützte Ordner und zulässige Apps außer Kraft, die vom lokalen Administrator durch kontrollierten Ordnerzugriff festgelegt wurden. Zu diesen Richtlinien gehören:
 
-* Microsoft Defender Antivirus Konfigurieren **des Zusammenführungsverhaltens lokaler Administratoren für Listen**
+* Microsoft Defender Antivirus **Konfigurieren des Zusammenführungsverhaltens lokaler Administratoren für Listen**
 * System Center Endpoint Protection Benutzern **das Hinzufügen von Ausschlüssen und Außerkraftsetzungen gestatten**
 
-Weitere Informationen zum Deaktivieren der lokalen Listenzusammenführung finden Sie unter "Verhindern oder Zulassen der lokalen Änderung von [Microsoft Defender AV-Richtlinieneinstellungen durch Benutzer".](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus#configure-how-locally-and-globally-defined-threat-remediation-and-exclusions-lists-are-merged)
+Weitere Informationen zum Deaktivieren der lokalen Listenzusammenführung finden Sie unter "Verhindern oder Zulassen der lokalen Änderung von [Microsoft Defender AV-Richtlinieneinstellungen durch Benutzer".](/windows/security/threat-protection/microsoft-defender-antivirus/configure-local-policy-overrides-microsoft-defender-antivirus)
 
 ## <a name="windows-security-app"></a>Windows-Sicherheit-App
 
@@ -63,7 +63,7 @@ Weitere Informationen zum Deaktivieren der lokalen Listenzusammenführung finden
 > [!NOTE]
 > Wenn der kontrollierte Ordnerzugriff mit Gruppenrichtlinien, PowerShell oder MDM-CSPs konfiguriert ist, ändert sich der Status in der Windows-Sicherheit-App nach einem Neustart des Geräts.
 > Wenn das Feature mit einem dieser Tools auf den **Überwachungsmodus** festgelegt ist, zeigt die Windows-Sicherheit App den Status **"Aus"** an.
-> Wenn Sie Benutzerprofildaten schützen, wird empfohlen, dass sich das Benutzerprofil auf dem Standardmäßigen Windows Installationslaufwerk befindet.
+> Wenn Sie Benutzerprofildaten schützen, wird empfohlen, dass sich das Benutzerprofil auf dem Standard-Windows Installationslaufwerk befindet.
 
 ## <a name="endpoint-manager"></a>Endpoint Manager
 
@@ -71,9 +71,9 @@ Weitere Informationen zum Deaktivieren der lokalen Listenzusammenführung finden
 
 2. Wechseln Sie zur **Attack Surface**  >  **Reduction-Richtlinie.**
 
-3. Wählen Sie **"Plattform",** **"Windows 10" und höher** aus, und wählen Sie **"Attack Surface Reduction"-Regeln**  >  **erstellen** aus.
+3. Wählen Sie **"Plattform",** **"Windows 10" und höher** aus, und wählen Sie das Profil **"Attack Surface Reduction"-Regeln**  >  **erstellen** aus.
 
-4.  Benennen Sie die Richtlinie, und fügen Sie eine Beschreibung hinzu. Klicken Sie auf **Weiter**.
+4.  Benennen Sie die Richtlinie, und fügen Sie eine Beschreibung hinzu. Wählen Sie **Weiter** aus.
 
 5.  Scrollen Sie nach unten, wählen Sie die Dropdownliste **"Ordnerschutz aktivieren"** aus, und wählen Sie **"Aktivieren"** aus.
 
@@ -92,7 +92,7 @@ Weitere Informationen zum Deaktivieren der lokalen Listenzusammenführung finden
 
 ## <a name="mobile-device-management-mdm"></a>Mobile Geräteverwaltung (MDM)
 
-Verwenden Sie [den Konfigurationsdienstanbieter ./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) (CSP), um Apps das Vornehmen von Änderungen an geschützten Ordnern zu ermöglichen.
+Verwenden Sie [den Konfigurationsdienstanbieter ./Vendor/MSFT/Policy/Config/ControlledFolderAccessProtectedFolders](/windows/client-management/mdm/policy-csp-defender) (CSP), um Apps das Vornehmen von Änderungen an geschützten Ordnern zu ermöglichen.
 
 ## <a name="microsoft-endpoint-configuration-manager"></a>Microsoft Endpoint Configuration Manager
 
@@ -132,7 +132,7 @@ Verwenden Sie [den Konfigurationsdienstanbieter ./Vendor/MSFT/Policy/Config/Cont
 
 ## <a name="powershell"></a>PowerShell
 
-1. Geben Sie **PowerShell** im Startmenü ein, klicken Sie mit der rechten Maustaste auf **Windows PowerShell,** und wählen Sie **"Als Administrator ausführen"** aus.
+1. Geben Sie **PowerShell** im Startmenü ein, klicken Sie mit der rechten Maustaste auf **Windows PowerShell,** und wählen Sie **Als Administrator ausführen aus.**
 
 2. Geben Sie das folgende Cmdlet ein:
 

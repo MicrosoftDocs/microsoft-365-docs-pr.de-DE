@@ -17,29 +17,29 @@ ms.custom:
 - seo-marvel-apr2020
 search.appverid: MOE150
 ms.assetid: 99cab9d4-ef59-4207-9f2b-3728eb46bf9a
-description: Erfahren Sie, wie Office 365 endpunkte so verwalten, dass sie mit der Netzwerkarchitektur Ihrer Unternehmensorganisation funktionieren.
-ms.openlocfilehash: ea89c263b1d2c89ff49ec7263269afc6030292e8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Erfahren Sie, wie Sie Office 365 Endpunkte verwalten, damit sie mit der Netzwerkarchitektur Ihrer Organisation zusammenarbeiten.
+ms.openlocfilehash: fa727c5c80521b6ff67c50d202d0c11c643b021e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905116"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925863"
 ---
 # <a name="managing-office-365-endpoints"></a>Verwalten von Office 365-Endpunkten
 
-Die meisten Unternehmen, die über mehrere geographische Standorte und ein sie verbindendes WAN verfügen, müssen für die Office 365-Netzwerkverbindung konfiguriert werden. Sie können Ihr Netzwerk optimieren, indem alle vertrauenswürdigen Office 365-Netzwerkanfragen direkt über Ihre Firewall gesendet und so alle zusätzlichen Überprüfungen oder Verarbeitungen auf Paketebene umgangen werden. Dadurch werden die Latenz und die Anforderungen an die Umkreiskapazität reduziert. Die Identifikation des Office 365-Netzwerkdatenverkehrs ist der erste Schritt, um Ihren Benutzern eine optimale Leistung zu garantieren. Weitere Informationen finden Sie unter [Office 365 Network Connectivity Principles](microsoft-365-network-connectivity-principles.md).
+Die meisten Unternehmen, die über mehrere geographische Standorte und ein sie verbindendes WAN verfügen, müssen für die Office 365-Netzwerkverbindung konfiguriert werden. Sie können Ihr Netzwerk optimieren, indem alle vertrauenswürdigen Office 365-Netzwerkanfragen direkt über Ihre Firewall gesendet und so alle zusätzlichen Überprüfungen oder Verarbeitungen auf Paketebene umgangen werden. Dadurch werden die Latenz und die Anforderungen an die Umkreiskapazität reduziert. Die Identifikation des Office 365-Netzwerkdatenverkehrs ist der erste Schritt, um Ihren Benutzern eine optimale Leistung zu garantieren. Weitere Informationen finden Sie unter [Office 365 Prinzipien der Netzwerkkonnektivität.](microsoft-365-network-connectivity-principles.md)
 
-Microsoft empfiehlt Den Zugriff auf die Office 365 Netzwerkendpunkte und laufende Änderungen an diesen mithilfe der [Office 365-IP-Adresse und des URL-Webdiensts.](microsoft-365-ip-web-service.md)
+Microsoft empfiehlt den Zugriff auf die Office 365 Netzwerkendpunkte und fortlaufende Änderungen an diesen mithilfe des [Office 365 IP-Adresse und URL-Webdiensts.](microsoft-365-ip-web-service.md)
 
 Unabhängig davon, wie Sie den notwendigen Office 365-Netzwerkdatenverkehr verwalten, benötigt Office 365 eine Verbindung zum Internet. Weitere Netzwerkendpunkte, für die eine Verbindung erforderlich ist, sind in [Weitere Endpunkten, die nicht in der Office 365-IP-Adresse und dem URL-Webdienst enthalten sind](additional-office365-ip-addresses-and-urls.md) aufgelistet.
 
-Wie Sie die Office 365-Netzwerkendpunkte verwenden, hängt von der Netzwerkarchitektur ihres Unternehmens ab. In diesem Artikel werden verschiedene Möglichkeiten beschrieben, wie Netzwerkarchitekturen Office 365-IP-Adressen und -URLs integrieren können. Am einfachsten können Sie auswählen, welche Netzwerkanforderungen vertrauenswürdig sind, wenn Sie SD-WAN-Geräte verwenden, die automatisierte Office 365 an jedem Ihrer Bürostandorte unterstützen.
+Wie Sie die Office 365-Netzwerkendpunkte verwenden, hängt von der Netzwerkarchitektur ihres Unternehmens ab. In diesem Artikel werden verschiedene Möglichkeiten beschrieben, wie Netzwerkarchitekturen Office 365-IP-Adressen und -URLs integrieren können. Die einfachste Möglichkeit, zu wählen, welche Netzwerkanforderungen als vertrauenswürdig eingestuft werden sollen, ist die Verwendung von SD-WAN-Geräten, die automatisierte Office 365 konfiguration an jedem Ihrer Bürostandorte unterstützen.
 
-## <a name="sd-wan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>SD-WAN für den lokalen Zweigstellenverkehr Office 365 Netzwerkdatenverkehr
+## <a name="sd-wan-for-local-branch-egress-of-vital-office-365-network-traffic"></a>SD-WAN für den Lokalen Zweigstellenausgang wichtiger Office 365 Netzwerkdatenverkehr
 
-An jedem Zweigstellenstandort können Sie ein SD-WAN-Gerät bereitstellen, das so konfiguriert ist, dass Datenverkehr für Office 365 Kategorie von Endpunkten optimieren oder Kategorien optimieren und zulassen direkt an das Netzwerk von Microsoft geleitet wird. Weiterer Netzwerkdatenverkehr einschließlich des Datenverkehrs des lokalen Datenzentrums, des allgemeinen Website-Datenverkehrs und des Datenverkehrs zu Office 365 Standardkategorie-Endpunkten wird an einen anderen Ort gesendet, an dem Sie einen größeren Netzwerkrand haben.
+An jedem Zweigstellenstandort können Sie ein SD-WAN-Gerät bereitstellen, das so konfiguriert ist, dass Datenverkehr für Office 365 Kategorie "Optimieren" von Endpunkten oder Kategorien "Optimieren" und "Zulassen" direkt an das Microsoft-Netzwerk weitergeleitet wird. Weiterer Netzwerkdatenverkehr einschließlich des Datenverkehrs des lokalen Datenzentrums, des allgemeinen Website-Datenverkehrs und des Datenverkehrs zu Office 365 Standardkategorie-Endpunkten wird an einen anderen Ort gesendet, an dem Sie einen größeren Netzwerkrand haben.
 
-Microsoft arbeitet mit SD-WAN-Anbietern zusammen, um die automatisierte Konfiguration zu aktivieren. Weitere Informationen finden Sie unter [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md).
+Microsoft arbeitet mit SD-WAN-Anbietern zusammen, um die automatisierte Konfiguration zu ermöglichen. Weitere Informationen finden Sie unter [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md).
 
 <a name="pacfiles"> </a>
 ## <a name="use-a-pac-file-for-direct-routing-of-vital-office-365-traffic"></a>Verwenden einer PAC-Datei für das Routing von wichtigem Office 365-Datenverkehr
@@ -76,7 +76,7 @@ Es gibt viele Parameter, die Sie an das Skript übergeben können:
 | Parameter | Beschreibung |
 |:-----|:-----|
 |**ClientRequestId** <br/> |Dies ist erforderlich, und es handelt sich um einen GUID, der an den Webdienst übergeben wird, der den Clientcomputer darstellt, der den Anruf macht. <br/> |
-|**Instanz** <br/> |Die Office 365 Dienstinstanz, die standardmäßig auf Weltweit festgelegt ist. Dies wird auch an den Webdienst übergeben. <br/> |
+|**Instanz** <br/> |Die Office 365 Dienstinstanz, die standardmäßig auf "Weltweit" festgelegt ist. Dies wird auch an den Webdienst übergeben. <br/> |
 |**TenantName** <br/> |Der Name Ihres Office 365-Mandanten. Wird an den Webdienst übergeben und in einigen Office 365-URLs als ersetzbarer Parameter verwendet. <br/> |
 |**Typ** <br/> |Der Typ der Proxy-PAC-Datei, die Sie generieren möchten. <br/> |
 
@@ -90,7 +90,7 @@ Get-PacFile -Type 2 -Instance Worldwide -TenantName Contoso -ClientRequestId b10
 
 Wo PAC-Dateien für den direkten ausgehenden Datenverkehr nicht verwendet werden, sollten Sie die Verarbeitung auf ihrem Umkreisnetzwerk trotzdem weiterhin umgehen, indem Sie Ihren Proxyserver entsprechend konfigurieren. Einige Anbieter von Proxyservern haben diese automatisierte Konfiguration aktiviert, wie sie in [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md) beschrieben ist.
 
-Wenn Sie dies manuell tun, müssen Sie die Daten der Kategorie "Endpunkte optimieren" und "Zulassen" aus dem Office 365-IP-Adress- und -URL-Webdienst erhalten und den Proxyserver so konfigurieren, dass die Verarbeitung für diese umgangen wird. Es ist wichtig, die SSL-Unterbrechung und -Überprüfung und die Proxyauthentifizierung mit den Endpunkten der Kategorien „Optimize“ und „Allow“ zu vermeiden.
+Wenn Sie dies manuell tun, müssen Sie die Daten der Endpunktkategorie "Optimieren" und "Zulassen" aus dem Office 365 IP-Adress- und URL-Webdienst abrufen und ihren Proxyserver so konfigurieren, dass die Verarbeitung für diese Daten umgangen wird. Es ist wichtig, die SSL-Unterbrechung und -Überprüfung und die Proxyauthentifizierung mit den Endpunkten der Kategorien „Optimize“ und „Allow“ zu vermeiden.
   
 <a name="bkmk_changes"> </a>
 ## <a name="change-management-for-office-365-ip-addresses-and-urls"></a>Änderungsverwaltung für Office 365-IP-Adressen und-URLs
@@ -120,7 +120,7 @@ Informationen über ein Microsoft Flow-Beispiel und eine -Vorlage finden sie unt
 <a name="FAQ"> </a>
 ## <a name="office-365-network-endpoints-faq"></a>Häufig gestellte Fragen zu Office 365-Netzwerkendpunkten
 
-Sehen Sie sich diese häufig gestellten Fragen zu Office 365 Netzwerkkonnektivität an.
+Lesen Sie diese häufig gestellten Fragen zu Office 365 Netzwerkkonnektivität.
   
 ### <a name="how-do-i-submit-a-question"></a>Wie übermittle ich eine Frage?
 
@@ -146,12 +146,12 @@ Sie sehen eine Office 365 zugeordnete IP-Adresse, über die Sie weitere Informat
 1. Überprüfen Sie mithilfe eines CIDR-Rechners, ob die IP-Adresse in einem größeren veröffentlichten Bereich enthalten ist, z. B. dem für [IPv4](https://www.ipaddressguide.com/cidr) oder [IPv6](https://www.ipaddressguide.com/ipv6-cidr).. Beispielsweise enthält 40.96.0.0/13 die IP-Adresse 40.103.0.1, obwohl 40.96 nicht mit 40.103 übereinstimmt.
 2. Überprüfen Sie mithilfe einer [Whois-Abfrage](https://dnsquery.org/), ob die IP-Adresse einem Partner gehört. Wenn die IP-Adresse von Microsoft betrieben wird, kann es sich um einen internen Partner handeln. Viele Partnernetzwerk-Endpunkte werden als zur _Standardkategorie_ gehörend aufgelistet, für die keine IP-Adressen veröffentlicht werden.
 3. Die IP-Adresse darf nicht Teil von Office 365 oder einer Abhängigkeit sein. Die Office 365-Netzwerkendpunkt-Veröffentlichung umfasst nicht alle Microsoft-Netzwerkendpunkte.
-4. Überprüfen Sie das Zertifikat. Stellen Sie mit einem Browser eine Verbindung mit der IP-Adresse mithilfe von *HTTPS://, \<IP_ADDRESS\>* und überprüfen Sie die im Zertifikat aufgeführten Domänen, um zu verstehen, welche Domänen der IP-Adresse zugeordnet sind. Wenn es sich um eine microsofteigene IP-Adresse handelt und nicht in der Liste der Office 365-IP-Adressen, ist die IP-Adresse wahrscheinlich einer Microsoft CDN wie *MSOCDN.NET* oder einer anderen Microsoft-Domäne ohne veröffentlichte IP-Informationen zugeordnet. Wenn Sie feststellen, dass es sich bei der Domäne auf dem Zertifikat um eine Domäne handelt, für die die IP-Adresse aufgelistet sein sollte, teilen Sie uns dies bitte mit.
+4. Überprüfen Sie das Zertifikat. Stellen Sie mit einem Browser über *HTTPS:// \<IP_ADDRESS\>* eine Verbindung mit der IP-Adresse her, und überprüfen Sie die im Zertifikat aufgeführten Domänen, um zu verstehen, welche Domänen der IP-Adresse zugeordnet sind. Wenn es sich um eine IP-Adresse im Besitz von Microsoft handelt und nicht in der Liste der Office 365 IP-Adressen enthalten ist, ist die IP-Adresse wahrscheinlich einer Microsoft-CDN zugeordnet, z. *B. MSOCDN.NET* oder einer anderen Microsoft-Domäne ohne veröffentlichte IP-Informationen. Wenn Sie feststellen, dass es sich bei der Domäne auf dem Zertifikat um eine Domäne handelt, für die die IP-Adresse aufgelistet sein sollte, teilen Sie uns dies bitte mit.
 
 <a name="bkmk_cname"> </a>
 ### <a name="some-office-365-urls-point-to-cname-records-instead-of-a-records-in-the-dns-what-do-i-have-to-do-with-the-cname-records"></a>Einige Office 365-URLs verweisen auf CNAME-Einträge anstelle von A-Einträgen im DNS. Was muss ich mit den CNAME-Einträgen tun?
 
-Clientcomputer benötigen einen DNS A- oder AAAA-Eintrag t)hat eine oder mehrere IP-Adressen, um eine Verbindung mit einem Clouddienst herzustellen. Einige URLs in Office 365 zeigen CNAME-Einträge anstelle von A- oder AAAA-Einträgen an. Diese CNAME-Einträge sind zwischengeschaltet und es können mehrere als Kette vorhanden sein. Sie werden immer in einen A- oder AAAA-Eintrag für eine IP-Adresse aufgelöst. Sehen Sie sich beispielsweise die folgende Liste von DNS-Einträgen an, die schließlich in die IP-Adresse _IP_1_ aufgelöst werden:
+Clientcomputer benötigen einen DNS A- oder AAAA-Eintrag, der eine oder mehrere IP-Adressen enthält, um eine Verbindung mit einem Clouddienst herzustellen. Einige URLs in Office 365 zeigen CNAME-Einträge anstelle von A- oder AAAA-Einträgen an. Diese CNAME-Einträge sind zwischengeschaltet und es können mehrere als Kette vorhanden sein. Sie werden immer in einen A- oder AAAA-Eintrag für eine IP-Adresse aufgelöst. Sehen Sie sich beispielsweise die folgende Liste von DNS-Einträgen an, die schließlich in die IP-Adresse _IP_1_ aufgelöst werden:
 
 ```console
 serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.com -> A: IP_1
@@ -159,18 +159,18 @@ serviceA.office.com -> CNAME: serviceA.domainA.com -> CNAME: serviceA.domainB.co
 
 Diese CNAME-Umleitungen sind ein normaler Bestandteil des DNS, und für den Clientcomputer wie für den Proxyserver transparent. Sie werden für den Lastenausgleich, Netzwerke für die Inhaltsübermittlung, hohe Verfügbarkeit und die Minimierung von Servicevorfällen verwendet. Microsoft veröffentlicht die zwischengeschalteten CNAME-Einträge nicht. Sie können sich jederzeit ändern, und Sie sollten Sie in Ihrem Proxyserver nicht als zulässig konfigurieren.
 
-Ein Proxyserver überprüft die ursprüngliche URL, die im obigen Beispiel serviceA.office.com ist, und diese URL würde in die Veröffentlichung Office 365 werden. Der Proxy Server fordert die DNS-Auflösung dieser URL in eine IP-Adresse an und empfängt IP_1. Er überprüft dabei nicht die Einträge der zwischengeschalteten CNAME-Einträge.
+Ein Proxyserver überprüft die ursprüngliche URL, die im obigen Beispiel serviceA.office.com ist, und diese URL wäre in Office 365 Veröffentlichung enthalten. Der Proxy Server fordert die DNS-Auflösung dieser URL in eine IP-Adresse an und empfängt IP_1. Er überprüft dabei nicht die Einträge der zwischengeschalteten CNAME-Einträge.
 
-Hart kodierte Konfigurationen oder Whitelisting basierend auf indirekten Office 365 FQDNs werden nicht empfohlen, werden von Microsoft nicht unterstützt und verursachen bekannteStend Probleme mit der Kundenkonnektivität. DNS-Lösungen, die die #A0 blockieren oder andernfalls Office 365 #A1 fälschlicherweise auflösen, können über #A1 mit aktivierter #A2 oder mithilfe von #A2 gelöst werden. Viele Netzwerkperimeterprodukte von Drittanbietern integrieren die empfohlene Office 365 in ihre Konfiguration mithilfe der [Office 365-IP-Adresse und des URL-Webdiensts.](microsoft-365-ip-web-service.md)
+Hartcodierte Konfigurationen oder die Verwendung einer Zulassungsliste basierend auf indirekten Office 365 FQDNs werden von Microsoft nicht empfohlen, nicht unterstützt und verursachen bekanntermaßen Probleme mit der Kundenkonnektivität. DNS-Lösungen, die die CNAME-Umleitung blockieren oder Office 365 DNS-Einträge anderweitig falsch auflösen, können über DNS-Weiterleitungen mit aktivierter DNS-Rekursion oder mithilfe von DNS-Stammhinweisen gelöst werden. Viele Netzwerkperimeterprodukte von Drittanbietern integrieren nativ empfohlene Office 365 Endpunkt, um eine Zulassungsliste in ihre Konfiguration mithilfe des [Office 365 IP-Adress- und URL-Webdiensts](microsoft-365-ip-web-service.md)einzuschließen.
 
 <a name="bkmk_akamai"> </a>
 ### <a name="why-do-i-see-names-such-as-nsatcnet-or-akadnsnet-in-the-microsoft-domain-names"></a>Warum enthalten Microsoft-Domänennamen Namen wie "nsatc.net" oder "akadns.net"?
 
-Office 365 und andere Microsoft-Dienste nutzen verschiedene Drittanbieterdienste wie Akamai und MarkMonitor, um die Office 365-Benutzererfahrung zu optimieren. Um stets die besten Ergebnisse zu ermöglichen, können sich diese Dienste in Zukunft ändern. Drittanbieterdomänen können Inhalte hosten, z. B. CDN, oder sie können einen Dienst hosten, z. B. einen geografischen Datenverkehrsverwaltungsdienst. Zu den derzeit genutzten Dienste gehören unter anderem:
+Office 365 und andere Microsoft-Dienste nutzen verschiedene Drittanbieterdienste wie Akamai und MarkMonitor, um die Office 365-Benutzererfahrung zu optimieren. Um stets die besten Ergebnisse zu ermöglichen, können sich diese Dienste in Zukunft ändern. Drittanbieterdomänen können Inhalte hosten, z. B. ein CDN, oder sie hosten einen Dienst, z. B. einen geografischen Datenverkehrsverwaltungsdienst. Zu den derzeit genutzten Dienste gehören unter anderem:
   
-[MarkMonitor](https://www.markmonitor.com/) wird verwendet, wenn Anforderungen angezeigt werden, die *\* .nsatc.net.* Dieser Dienst bietet Schutz und Überwachung von Domänennamen zum Schutz vor böswilligem Verhalten.
+[MarkMonitor](https://www.markmonitor.com/) wird verwendet, wenn Anforderungen angezeigt werden, die *\* .nsatc.net* enthalten. Dieser Dienst bietet Schutz und Überwachung von Domänennamen zum Schutz vor böswilligem Verhalten.
   
-[ExactTarget](https://www.marketingcloud.com/) wird verwendet, wenn Anforderungen an *\* .exacttarget.com*. Dieser Dienst bietet E-Mail-Linkverwaltung und Überwachung vor böswilligem Verhalten.
+[ExactTarget](https://www.marketingcloud.com/) wird verwendet, wenn Anforderungen an *\* .exacttarget.com* angezeigt werden. Dieser Dienst bietet E-Mail-Linkverwaltung und Überwachung vor böswilligem Verhalten.
   
 [Akamai](https://www.akamai.com/) wird verwendet, wenn Sie Anforderungen sehen, die einen der folgenden vollqualifizierten Domänennamen enthalten. Dieser Dienst stellt Geo-DNS- und CDN-Dienste (Content Delivery Network) bereit.
   
@@ -191,7 +191,7 @@ Office 365 und andere Microsoft-Dienste nutzen verschiedene Drittanbieterdienste
 
 Office 365 ist eine Suite von Diensten, die für die Verwendung über das Internet konzipiert sind. Die Versprechen hinsichtlich Zuverlässigkeit und Verfügbarkeit basieren auf der Verfügbarkeit zahlreicher Standardinternetdienste. Standardinternetdienste wie DNS, CRL und CDNs müssen beispielsweise erreichbar sein, um Office 365 zu verwenden, genau so, wie es für die meisten modernem Internetdienste der Fall ist.
 
-Die Office 365-Suite ist in ihre wichtigsten Dienstbereiche unterteilt. Diese können selektiv für die Konnektivität aktiviert werden, und es gibt einen Gemeinsamen Bereich, der eine Abhängigkeit für alle ist und immer erforderlich ist.
+Die Office 365-Suite ist in ihre wichtigsten Dienstbereiche unterteilt. Diese können selektiv für die Konnektivität aktiviert werden, und es gibt einen gemeinsamen Bereich, der eine Abhängigkeit für alle darstellt und immer erforderlich ist.
 
 | Dienstbereich | Beschreibung |
 |:-----|:-----|
@@ -200,9 +200,9 @@ Die Office 365-Suite ist in ihre wichtigsten Dienstbereiche unterteilt. Diese k�
 |**Skype for Business Online und Microsoft Teams** <br/> |Skype for Business auf Microsoft Teams <br/> |
 |**Standard** <br/> |Office 365 pro Plus, Office in einem Browser, Azure AD und andere häufige Netzwerkendpunkte <br/> |
 
-Zusätzlich zu diesen grundlegenden Internetdiensten gibt es Drittanbieterservices, die nur zur Integration zusätzlicher Funktionalitäten dienen. Diese sind zwar für die Integration erforderlich, werden aber im Artikel Office 365-Endpunkte als optional gekennzeichnet, was bedeutet, dass die Kernfunktionalität des Diensts weiterhin funktioniert, wenn auf den Endpunkt nicht zugegriffen werden kann. Für jeden erforderlichen Netzwerkendpunkt wird das erforderliche Attribut auf true festgelegt. Für jeden optionalen Netzwerkendpunkt wird das erforderliche Attribut auf false festgelegt, und das Notes-Attribut enthält die fehlenden Funktionen, die Sie erwarten sollten, wenn die Verbindung blockiert wird.
+Zusätzlich zu diesen grundlegenden Internetdiensten gibt es Drittanbieterservices, die nur zur Integration zusätzlicher Funktionalitäten dienen. Diese sind zwar für die Integration erforderlich, sind aber im Artikel Office 365 Endpunkte als optional gekennzeichnet, was bedeutet, dass die Kernfunktionen des Diensts weiterhin funktionieren, wenn auf den Endpunkt nicht zugegriffen werden kann. Für jeden erforderlichen Netzwerkendpunkt ist das erforderliche Attribut auf "true" festgelegt. Für jeden optionalen Netzwerkendpunkt ist das erforderliche Attribut auf "false" festgelegt, und das Attribut "Notes" gibt die fehlende Funktionalität an, die Sie erwarten sollten, wenn die Verbindung blockiert wird.
   
-Wenn Sie versuchen, Office 365 zu verwenden und suchen, dass auf Dienste von Drittanbietern nicht zugegriffen werden kann, sollten Sie sicherstellen, dass alle in diesem Artikel als erforderlich oder optional markierten [FQDNs](urls-and-ip-address-ranges.md)über den Proxy und die Firewall zulässig sind.
+Wenn Sie versuchen, Office 365 zu verwenden und feststellen, dass Drittanbieterdienste nicht zugänglich sind, sollten Sie [sicherstellen, dass alle FQDNs, die in diesem Artikel als erforderlich oder optional gekennzeichnet sind, über den Proxy und die Firewall zulässig sind.](urls-and-ip-address-ranges.md)
   
 <a name="bkmk_consumer"> </a>
 ### <a name="how-do-i-block-access-to-microsofts-consumer-services"></a>Wie blockiere ich den Zugriff auf Microsoft-Services für Endverbraucher?
@@ -215,7 +215,7 @@ Beachten Sie, dass das Blockieren des Zugriffs auf die Microsoft-Verbraucherdien
 <a name="bkmk_IPOnlyFirewall"> </a>
 ### <a name="my-firewall-requires-ip-addresses-and-cannot-process-urls-how-do-i-configure-it-for-office-365"></a>Meine Firewall benötigt IP-Adressen und kann keine URLs verarbeiten. Wie konfiguriere ich sie für Office 365?
 
-Office 365 stellt nicht die IP-Adressen aller erforderlichen Netzwerkendpunkte zur Verfügung. Einige werden nur als URLs bereitgestellt und sind als Standard kategorisiert. URLs in der Standardkategorie, die erforderlich sind, sollten über einen Proxyserver zulässig sein. Wenn Sie keinen Proxyserver haben, sehen Sie sich an, wie Sie Webanforderungen für URLs konfiguriert haben, die Benutzer in die Adressleiste eines Webbrowsers eingeben. Der Benutzer stellt auch keine IP-Adresse zur Verfügung. Die Office 365 kategorie-URLs, die keine IP-Adressen bereitstellen, sollten auf die gleiche Weise konfiguriert werden.
+Office 365 stellt nicht die IP-Adressen aller erforderlichen Netzwerkendpunkte zur Verfügung. Einige werden nur als URLs bereitgestellt und sind als Standard kategorisiert. UrLs in der Standardkategorie, die erforderlich sind, sollten über einen Proxyserver zulässig sein. Wenn Sie keinen Proxyserver haben, sehen Sie sich an, wie Sie Webanforderungen für URLs konfiguriert haben, die Benutzer in die Adressleiste eines Webbrowsers eingeben. Der Benutzer gibt auch keine IP-Adresse an. Die Office 365 Standardkategorie-URLs, die keine IP-Adressen bereitstellen, sollten auf die gleiche Weise konfiguriert werden.
 
 ## <a name="related-topics"></a>Verwandte Themen
 

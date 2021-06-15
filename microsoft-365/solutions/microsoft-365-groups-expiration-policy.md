@@ -1,12 +1,12 @@
 ---
-title: Microsoft 365 Gruppenablaufrichtlinie
+title: Ablaufrichtlinie für Microsoft 365-Gruppe
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -16,30 +16,30 @@ ms.collection:
 search.appverid:
 - MET150
 recommendations: false
-description: Erfahren Sie mehr Microsoft 365 Ablaufrichtlinien für Gruppen.
-ms.openlocfilehash: 90807d6c178061804e64db4440af42050a1d8e77
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+description: Erfahren Sie mehr über ablaufrichtlinien für Microsoft 365 Gruppen.
+ms.openlocfilehash: a5a57591e1659cf04b46f419bda3d3bca672729c
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52530850"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925923"
 ---
-# <a name="microsoft-365-group-expiration-policy"></a>Microsoft 365 Gruppenablaufrichtlinie
+# <a name="microsoft-365-group-expiration-policy"></a>Ablaufrichtlinie für Microsoft 365-Gruppe
 
-Mit der gestiegenen Nutzung Microsoft 365 gruppen und Microsoft Teams benötigen Administratoren und Benutzer eine Möglichkeit, nicht verwendete Gruppen und Teams zu bereinigen. Eine Microsoft 365 Gruppenablaufrichtlinie kann dazu beitragen, inaktive Gruppen aus dem System zu entfernen und die Dinge sauberer zu machen.
+Aufgrund der erhöhten Nutzung von Microsoft 365 Gruppen und Microsoft Teams benötigen Administratoren und Benutzer eine Möglichkeit, nicht verwendete Gruppen und Teams zu bereinigen. Eine Microsoft 365 Ablaufrichtlinie für Gruppen kann dazu beitragen, inaktive Gruppen aus dem System zu entfernen und die Dinge übersichtlicher zu gestalten.
 
-Wenn eine Gruppe abläuft, werden auch alle zugehörigen Dienste (Postfach, Planner, SharePoint Website, Team usw.) gelöscht.
+Wenn eine Gruppe abläuft, werden alle zugehörigen Dienste (Postfach, Planner, SharePoint Website, Team usw.) ebenfalls gelöscht.
 
-Wenn eine Gruppe abläuft, wird sie "soft-deleted", was bedeutet, dass sie bis zu 30 Tage lang wiederhergestellt werden kann.
+Wenn eine Gruppe abläuft, wird sie "vorläufig gelöscht", was bedeutet, dass sie bis zu 30 Tage lang wiederhergestellt werden kann.
 
-Administratoren können einen Ablaufzeitraum angeben, und alle inaktiven Gruppen, die das Ende dieses Zeitraums erreichen und nicht verlängert werden, werden gelöscht. (Dies umfasst archivierte Teams.) Der Ablaufzeitraum beginnt, wenn die Gruppe erstellt wird, oder an dem Datum, an dem sie zuletzt erneuert wurde. Gruppenbesitzer erhalten vor dem Ablauf automatisch eine E-Mail, die es ihnen erlaubt, die Gruppe für ein weiteres Ablaufintervall zu erneuern. Teams Benutzern werden dauerhafte Benachrichtigungen in Teams.
+Administratoren können einen Ablaufzeitraum angeben, und jede inaktive Gruppe, die das Ende dieses Zeitraums erreicht und nicht verlängert wird, wird gelöscht. (Dies umfasst archivierte Teams.) Der Ablaufzeitraum beginnt, wenn die Gruppe erstellt wird, oder an dem Datum, an dem sie zuletzt verlängert wurde. Gruppenbesitzer erhalten vor dem Ablauf automatisch eine E-Mail, die es ihnen erlaubt, die Gruppe für ein weiteres Ablaufintervall zu erneuern. Teams Benutzern werden in Teams beständige Benachrichtigungen angezeigt.
 
-Gruppen, die aktiv verwendet werden, werden automatisch erneuert. Eine der folgenden Aktionen erneuert eine Gruppe automatisch:
-- SharePoint - Dateien anzeigen, bearbeiten, herunterladen, verschieben, freigeben oder hochladen. (Das Anzeigen SharePoint seite zählt nicht als Aktion für die automatische Verlängerung.)
-- Outlook - Gruppe beitreten, Gruppennachricht aus der Gruppe lesen oder schreiben, und wie eine Nachricht (Outlook im Web).
-- Teams – Besuchen eines Teams-Kanals.
+Gruppen, die aktiv verwendet werden, werden automatisch verlängert. Eine der folgenden Aktionen erneuert automatisch eine Gruppe:
+- SharePoint – Anzeigen, Bearbeiten, Herunterladen, Verschieben, Freigeben oder Hochladen von Dateien. (Das Anzeigen einer SharePoint Seite zählt nicht als Aktion für die automatische Verlängerung.)
+- Outlook : Gruppenbeitritt, Lesen oder Schreiben von Gruppennachrichten aus der Gruppe und wie eine Nachricht (Outlook im Web).
+- Teams – Einen Teams-Kanal besuchen.
 
-Beachten Sie, dass die Yammer, die eine automatische Gruppenerneuerung auslöst, das Hochladen eines Dokuments in SharePoint Community ist.
+Beachten Sie, dass die einzige Yammer Aktivität, die eine automatische Gruppenverlängerung auslöst, das Hochladen eines Dokuments in SharePoint innerhalb der Community ist.
 
 > [!IMPORTANT]
 > Wenn Sie die Ablaufrichtlinie ändern, berechnet der Dienst das Ablaufdatum für jede Gruppe neu. Er beginnt immer ab dem Datum, an dem die Gruppe erstellt wurde, und wendet dann die neue Ablaufrichtlinie an.
@@ -47,42 +47,42 @@ Beachten Sie, dass die Yammer, die eine automatische Gruppenerneuerung auslöst,
 Es ist wichtig zu wissen, dass der Ablauf standardmäßig deaktiviert ist. Administratoren müssen sie für ihre Organisation aktivieren, wenn sie sie verwenden möchten.
 
 > [!NOTE]
-> Zum Konfigurieren und Verwenden der Ablaufrichtlinie für Microsoft 365-Gruppen müssen Sie Azure AD Premium-Lizenzen für die Mitglieder aller Gruppen besitzen, auf die die Ablaufrichtlinie angewendet wird. Weitere Informationen finden Sie unter [Erste Schritte mit Azure Active Directory Premium](/azure/active-directory/active-directory-get-started-premium).
+> Wenn Sie die Ablaufrichtlinie für Microsoft 365 Gruppen konfigurieren und verwenden, müssen Sie azure AD Premium Lizenzen für die Mitglieder aller Gruppen, auf die die Ablaufrichtlinie angewendet wird, besitzen, aber nicht unbedingt zuweisen. Weitere Informationen finden Sie unter [Erste Schritte mit Azure Active Directory Premium](/azure/active-directory/active-directory-get-started-premium).
 
-## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Wer kann die Ablaufrichtlinie für gruppen Microsoft 365 konfigurieren und verwenden?
+## <a name="who-can-configure-and-use-the-microsoft-365-groups-expiration-policy"></a>Wer können die Ablaufrichtlinie für Microsoft 365 Gruppen konfigurieren und verwenden?
 
-|Rolle|Was sie tun können|
+|Rolle|Möglichkeiten|
 |---------|---------|
-|Office 365 globalen Administrator (in Azure der Unternehmensadministrator), Benutzeradministrator|Erstellen, Lesen, Aktualisieren oder Löschen der Ablaufrichtlinieneinstellungen Microsoft 365 Gruppen.|
-|Benutzer|Erneuern oder [Wiederherstellen](/azure/active-directory/users-groups-roles/groups-restore-deleted) Microsoft 365 gruppe, die sie besitzen|
+|Office 365 globaler Administrator (in Azure, Unternehmensadministrator), Benutzeradministrator|Erstellen, Lesen, Aktualisieren oder Löschen der Ablaufrichtlinieneinstellungen für Microsoft 365 Gruppen.|
+|Benutzer|Erneuern oder [Wiederherstellen](/azure/active-directory/users-groups-roles/groups-restore-deleted) einer Microsoft 365 Gruppe, die sie besitzen|
 
-## <a name="how-to-set-the-expiration-policy"></a>Festlegen der Ablaufrichtlinie
+## <a name="how-to-set-the-expiration-policy"></a>So legen Sie die Ablaufrichtlinie fest
 
-Wie oben erwähnt, ist das Ablaufdatum standardmäßig deaktiviert. Ein Administrator muss die Ablaufrichtlinie aktivieren und die Eigenschaften festlegen, damit sie wirksam wird. Um dies zu aktivieren, wechseln Sie **zu Azure Active Directory**  >    >  **Gruppenablauf**. Hier können Sie die Standardgruppenlebensdauer festlegen und angeben, wie weit im Voraus die ersten und zweiten Ablaufbenachrichtigungen an den Gruppenbesitzer gehen sollen.
+Wie oben erwähnt, ist der Ablauf standardmäßig deaktiviert. Ein Administrator muss die Ablaufrichtlinie aktivieren und die Eigenschaften festlegen, damit sie wirksam wird. To enable it, go to **Azure Active Directory**  >  **Groups**  >  **Expiration**. Hier können Sie die Standardgruppenlebensdauer festlegen und angeben, wie weit im Voraus die erste und zweite Ablaufbenachrichtigung an den Gruppenbesitzer gehen soll.
 
-Die Gruppenlebensdauer wird in Tagen angegeben und kann auf 180, 365 oder auf einen von Ihnen angegebenen benutzerdefinierten Wert festgelegt werden. Der benutzerdefinierte Wert muss mindestens 30 Tage lang sein.
+Die Gruppenlebensdauer wird in Tagen angegeben und kann auf 180, 365 oder auf einen von Ihnen angegebenen benutzerdefinierten Wert festgelegt werden. Der benutzerdefinierte Wert muss mindestens 30 Tage betragen.
 
-Wenn die Gruppe keinen Besitzer hat, gehen die Ablauf-E-Mails an den angegebenen Administrator.
+Wenn die Gruppe keinen Besitzer hat, werden die Ablauf-E-Mails an den angegebenen Administrator gesendet.
 
-Sie können die Richtlinie für alle Ihre Gruppen festlegen, nur für ausgewählte Gruppen (bis zu 500), oder sie vollständig deaktivieren, indem Sie **Keine auswählen.** Beachten Sie, dass sie derzeit keine unterschiedlichen Richtlinien für unterschiedliche Gruppen haben können.
+Sie können die Richtlinie für alle Ihre Gruppen festlegen, nur ausgewählte Gruppen (bis zu 500), oder sie vollständig deaktivieren, indem Sie **"Keine"** auswählen. Beachten Sie, dass sie derzeit keine unterschiedlichen Richtlinien für unterschiedliche Gruppen haben können.
 
-![Screenshot der Gruppenablaufeinstellungen in Azure Active Directory](../media/azure-groups-expiration-settings.png)
+![Screenshot der Ablaufeinstellungen für Gruppen in Azure Active Directory](../media/azure-groups-expiration-settings.png)
 
 ## <a name="how-expiry-works-with-the-retention-policy"></a>Funktionsweise des Ablaufs mit der Aufbewahrungsrichtlinie
 
-Wenn Sie eine Aufbewahrungsrichtlinie für Gruppen im Security and Compliance Center eingerichtet haben, funktioniert die Ablaufrichtlinie nahtlos mit der Aufbewahrungsrichtlinie. Wenn eine Gruppe abläuft, werden die Postfachunterhaltungen und Dateien der Gruppe auf dem Gruppenstandort im Aufbewahrungscontainer für die bestimmte Anzahl von Tagen aufbewahrt, die in der Aufbewahrungsrichtlinie definiert sind. Benutzer werden die Gruppe oder deren Inhalt nach ablaufen jedoch nicht mehr sehen.
+Wenn Sie eine Aufbewahrungsrichtlinie für Gruppen im Security and Compliance Center eingerichtet haben, funktioniert die Ablaufrichtlinie nahtlos mit der Aufbewahrungsrichtlinie. Wenn eine Gruppe abläuft, werden die Postfachunterhaltungen und Dateien der Gruppe auf der Gruppenwebsite im Aufbewahrungscontainer für die bestimmte Anzahl von Tagen aufbewahrt, die in der Aufbewahrungsrichtlinie definiert sind. Benutzern wird die Gruppe oder deren Inhalt nach dem Ablauf jedoch nicht angezeigt.
 
-## <a name="how-and-when-a-group-owner-learns-if-their-groups-are-going-to-expire"></a>Wie und wann ein Gruppenbesitzer erfährt, ob seine Gruppen ablaufen
+## <a name="how-and-when-a-group-owner-learns-if-their-groups-are-going-to-expire"></a>Wie und wann ein Gruppenbesitzer erkennt, ob seine Gruppen ablaufen
 
-Gruppenbesitzer werden nur per E-Mail benachrichtigt. Wenn die Gruppe über Planner, SharePoint oder eine andere App erstellt wurde, werden die Ablaufbenachrichtigungen immer per E-Mail gesendet. Wenn die Gruppe über eine Teams erstellt wurde, erhält der Gruppenbesitzer eine Benachrichtigung zur Verlängerung über den Aktivitätsabschnitt. Es wird nicht empfohlen, den Ablauf für eine Gruppe zu aktivieren, wenn Ihr Gruppenbesitzer keine gültige E-Mail-Adresse hat.
+Gruppenbesitzer werden nur per E-Mail benachrichtigt. Wenn die Gruppe über Planner, SharePoint oder eine andere App erstellt wurde, werden die Ablaufbenachrichtigungen immer per E-Mail gesendet. Wenn die Gruppe über Teams erstellt wurde, erhält der Gruppenbesitzer eine Benachrichtigung zur Verlängerung über den Aktivitätsbereich. Es wird nicht empfohlen, den Ablauf für eine Gruppe zu aktivieren, wenn Ihr Gruppenbesitzer keine gültige E-Mail-Adresse hat.
 
-30 Tage vor Ablauf der Gruppe erhalten die Gruppenbesitzer (oder die E-Mail-Adressen, die Sie für Gruppen ohne Besitzer angegeben haben) eine E-Mail, mit der sie die Gruppe problemlos verlängern können. Wenn sie sie nicht verlängern, erhalten sie 15 Tage vor Ablauf eine weitere Verlängerungs-E-Mail. Wenn sie es noch nicht verlängert haben, erhalten sie am Tag vor ablaufen eine weitere E-Mail-Benachrichtigung.
+30 Tage vor Ablauf der Gruppe erhalten die Gruppenbesitzer (oder die E-Mail-Adressen, die Sie für Gruppen ohne Besitzer angegeben haben) eine E-Mail, mit der sie die Gruppe problemlos erneuern können. Wenn sie sie nicht verlängern, erhalten sie 15 Tage vor Ablauf eine weitere Verlängerungs-E-Mail. Wenn sie sie noch nicht verlängert haben, erhalten sie am Tag vor ablaufen eine weitere E-Mail-Benachrichtigung.
 
-Wenn aus einem bestimmten Grund keiner der Besitzer oder Administratoren die Gruppe verlängert, bevor sie abläuft, kann der Administrator die Gruppe bis zu 30 Tage nach Ablauf wiederherstellen. Weitere Informationen finden Sie unter: [Wiederherstellen einer gelöschten Microsoft 365 Gruppe](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54).
+Wenn aus irgendeinem Grund keiner der Besitzer oder Administratoren die Gruppe verlängert, bevor sie abläuft, kann der Administrator die Gruppe bis zu 30 Tage nach Ablauf wiederherstellen. Weitere Informationen finden Sie unter: [Wiederherstellen einer gelöschten Microsoft 365 Gruppe.](https://support.office.com/article/restore-a-deleted-office-365-group-b7c66b59-657a-4e1a-8aa0-8163b1f4eb54)
 
-## <a name="archiving-group-contents"></a>Archivierungsgruppeninhalte
+## <a name="archiving-group-contents"></a>Archivierung von Gruppeninhalten
 
-Wenn Sie über eine Gruppe verfügen, die Sie nicht mehr verwenden möchten, aber deren Inhalte beibehalten möchten, finden Sie unter Archivieren von [Gruppen,](end-life-cycle-groups-teams-sites-yammer.md) Teams und Yammer Informationen zum Exportieren von Informationen aus den verschiedenen Gruppendiensten.
+Wenn Sie eine Gruppe haben, die Sie nicht mehr verwenden möchten, aber ihre Inhalte beibehalten möchten, finden Sie unter [Archivgruppen, Teams und Yammer](end-life-cycle-groups-teams-sites-yammer.md) Informationen zum Exportieren von Informationen aus den verschiedenen Gruppendiensten.
 
 ## <a name="related-topics"></a>Verwandte Themen
 
@@ -94,4 +94,4 @@ Wenn Sie über eine Gruppe verfügen, die Sie nicht mehr verwenden möchten, abe
 
 [Zuweisen eines neuen Besitzers zu einer verwaisten Gruppe](https://support.office.com/article/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
-[Konfigurieren Microsoft 365 Ablauf von Gruppen](/azure/active-directory/active-directory-groups-lifecycle-azure-portal)
+[Konfigurieren Microsoft 365 Ablaufs von Gruppen](/azure/active-directory/active-directory-groups-lifecycle-azure-portal)

@@ -1,13 +1,14 @@
 ---
 title: Bereitstellen und Aktivieren von Microsoft Defender Antivirus
-description: Bereitstellen Microsoft Defender Antivirus zum Schutz Ihrer Endpunkte mit Microsoft Intune, Microsoft Endpoint Configuration Manager, Gruppenrichtlinien, PowerShell-Cmdlets oder WMI.
+description: Stellen Sie Microsoft Defender Antivirus zum Schutz Ihrer Endpunkte mit Microsoft Intune, Microsoft Endpoint Configuration Manager, Gruppenrichtlinien, PowerShell-Cmdlets oder WMI bereit.
 keywords: bereitstellen, aktivieren, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-localization_priority: Normal
+localization_priority: normal
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,13 +16,12 @@ ms.date: 01/06/2021
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 88a5401818c3d6f2b35675830a38b266db9627e4
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: a847e65adb0402d4c5f98e19424677ccdc1011da
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274496"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925743"
 ---
 # <a name="deploy-and-enable-microsoft-defender-antivirus"></a>Bereitstellen und Aktivieren von Microsoft Defender Antivirus
 
@@ -32,16 +32,16 @@ ms.locfileid: "52274496"
 
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 
-Je nach dem von Ihnen verwendeten Verwaltungstool müssen Sie den Schutz möglicherweise speziell aktivieren oder Microsoft Defender Antivirus konfigurieren. 
+Je nach dem verwendeten Verwaltungstool müssen Sie möglicherweise Microsoft Defender Antivirus Schutz explizit aktivieren oder konfigurieren. 
 
-Anweisungen zum Aktivieren des Schutzes mit Microsoft Intune, Microsoft Endpoint Configuration Manager, Gruppenrichtlinien, Active Directory, Microsoft Azure, PowerShell-Cmdlets und Windows Management Instruction (WMI) finden Sie in der Tabelle unter [Deploy, manage, and report on Microsoft Defender Antivirus.](deploy-manage-report-microsoft-defender-antivirus.md#ref2)
+Anweisungen zum Aktivieren des Schutzes mit Microsoft Intune, Microsoft Endpoint Configuration Manager, Gruppenrichtlinien, Active [Directory, Microsoft Azure,](deploy-manage-report-microsoft-defender-antivirus.md#ref2) PowerShell-Cmdlets und Windows-Verwaltungsanweisung (Windows Management Instruction, WMI) finden Sie in der Tabelle unter Bereitstellen, Verwalten und Berichten zu Microsoft Defender Antivirus.
 
-In einigen Szenarien sind weitere Anleitungen zur erfolgreichen Bereitstellung oder Konfiguration von Microsoft Defender Antivirus erforderlich, z. B. VDI-Umgebungen (Virtual Desktop Infrastructure).
+Einige Szenarien erfordern weitere Anleitungen zur erfolgreichen Bereitstellung oder Konfiguration Microsoft Defender Antivirus Schutzes, z. B. Virtual Desktop Infrastructure (VDI)-Umgebungen.
 
-Der verbleibende Artikel in diesem Abschnitt enthält End-to-End-Tipps und bewährte Methoden zum Einrichten von Microsoft Defender Antivirus auf virtuellen Computern [(VMs) in einer VDI- oder RdS-Umgebung (Remote Desktop Services).](deployment-vdi-microsoft-defender-antivirus.md)
+Der verbleibende Artikel in diesem Abschnitt enthält umfassende Ratschläge und bewährte Methoden zum [Einrichten von Microsoft Defender Antivirus auf virtuellen Computern (VMs) in einer VDI- oder RDS-Umgebung (RemoteDesktopdienste).](deployment-vdi-microsoft-defender-antivirus.md)
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Bereitstellen, Verwalten von Updates und Bericht über Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
+- [Bereitstellen, Verwalten von Updates und Melden von Microsoft Defender Antivirus](deploy-manage-report-microsoft-defender-antivirus.md)
 - [Bereitstellungshandbuch für Microsoft Defender Antivirus in einer VDI-Umgebung (Virtual Desktop Infrastructure)](deployment-vdi-microsoft-defender-antivirus.md)

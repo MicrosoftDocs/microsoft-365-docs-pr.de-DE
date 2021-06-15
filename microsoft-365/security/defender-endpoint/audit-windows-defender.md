@@ -13,15 +13,15 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
+ms.topic: article
 ms.technology: mde
 ms.date: 06/02/2021
-ms.topic: article
-ms.openlocfilehash: e78b21b751aa398ed4449fb398f12b60f1929873
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: c2ff6eac3254e855d4858edc218ae5df034352e4
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866679"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925659"
 ---
 # <a name="test-attack-surface-reduction-in-microsoft-defender-for-endpoint"></a>Testen der Verringerung der Angriffsfläche in Microsoft Defender für Endpunkt
 
@@ -44,7 +44,7 @@ Sie können Defender für Endpunkt verwenden, um mehr Details für jedes Ereigni
 Sie können gruppenrichtlinien, PowerShell und Konfigurationsdienstanbieter (Configuration Service Providers, CSPs) verwenden, um den Überwachungsmodus zu aktivieren.
 
 > [!TIP]
-> Sie können auch die Windows Defender Testground-Website unter [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) besuchen, um zu bestätigen, dass die Features funktionieren und wie sie funktionieren.
+> Sie können auch die Website Windows Defender Testground unter [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) besuchen, um zu bestätigen, dass die Features funktionieren und wie sie funktionieren.
 
 | Überwachungsoptionen | So aktivieren Sie den Überwachungsmodus | Anzeigen von Ereignissen |
 |---------|---------|---------|

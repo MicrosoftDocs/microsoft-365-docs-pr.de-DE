@@ -4,24 +4,24 @@ description: Konfigurieren und testen Sie Ihre Verbindung mit dem Microsoft Defe
 keywords: Antivirus, Microsoft Defender Antivirus, Antischadsoftware, Sicherheit, Defender, Cloud, Aggressivität, Schutzebene
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.date: 06/04/2021
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: ca5737a0224825a0c88159c4a3931cc0c310b69b
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 1fc0f76ece240c9d7efc92680c34b0477141f52b
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788451"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925139"
 ---
 # <a name="configure-and-validate-microsoft-defender-antivirus-network-connections"></a>Konfigurieren und Validieren von Microsoft Defender Antivirus-Netzwerkverbindungen
 
@@ -29,7 +29,7 @@ ms.locfileid: "52788451"
 
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 
-Um sicherzustellen, dass Microsoft Defender Antivirus über die Cloud bereitgestellte Schutz ordnungsgemäß funktioniert, muss Ihr Sicherheitsteam Ihr Netzwerk so konfigurieren, dass Verbindungen zwischen Ihren Endpunkten und bestimmten Microsoft-Servern zugelassen werden. Dieser Artikel listet die Verbindungen auf, die zulässig sein müssen, z. B. mithilfe von Firewallregeln, und enthält Anweisungen zum Überprüfen der Verbindung. Wenn Sie Ihren Schutz ordnungsgemäß konfigurieren, können Sie sicherstellen, dass Sie den besten Nutzen aus Ihren über die Cloud bereitgestellten Schutzdiensten erhalten.
+Um sicherzustellen, dass Microsoft Defender Antivirus über die Cloud bereitgestellten Schutz ordnungsgemäß funktioniert, muss Ihr Sicherheitsteam Ihr Netzwerk so konfigurieren, dass Verbindungen zwischen Ihren Endpunkten und bestimmten Microsoft-Servern zugelassen werden. Dieser Artikel listet die Verbindungen auf, die zulässig sein müssen, z. B. mithilfe von Firewallregeln, und enthält Anweisungen zum Überprüfen der Verbindung. Wenn Sie Ihren Schutz ordnungsgemäß konfigurieren, können Sie sicherstellen, dass Sie den besten Nutzen aus Ihren über die Cloud bereitgestellten Schutzdiensten erhalten.
 
 Weitere Informationen zur Netzwerkkonnektivität finden Sie im Blogbeitrag ["Wichtige Änderungen am Microsoft Active Protection Services-Endpunkt".](https://techcommunity.microsoft.com/t5/Configuration-Manager-Archive/Important-changes-to-Microsoft-Active-Protection-Service-MAPS/ba-p/274006)
 
@@ -62,7 +62,7 @@ Stellen Sie sicher, dass keine Firewall- oder Netzwerkfilterregeln vorhanden sin
 |Security Intelligence-Updates – Alternativer Downloadspeicherort (ADL)<p>Dies ist ein alternativer Speicherort für Microsoft Defender Antivirus Security Intelligence-Updates, wenn die installierte Security Intelligence veraltet ist (7 oder mehr Tage zurück)|  `*.download.microsoft.com`  <p> `*.download.windowsupdate.com`<p>  `go.microsoft.com`<p> `https://fe3cr.delivery.mp.microsoft.com/ClientWebService/client.asmx`|
 | Schadsoftwareübermittlungsspeicher <p>Dies ist der Uploadspeicherort für Dateien, die über das Übermittlungsformular oder die automatische Beispielübermittlung an Microsoft übermittelt wurden. | `ussus1eastprod.blob.core.windows.net` <p>    `ussus2eastprod.blob.core.windows.net` <p>    `ussus3eastprod.blob.core.windows.net` <p>    `ussus4eastprod.blob.core.windows.net` <p>    `wsus1eastprod.blob.core.windows.net` <p>    `wsus2eastprod.blob.core.windows.net` <p>    `ussus1westprod.blob.core.windows.net` <p>    `ussus2westprod.blob.core.windows.net` <p>    `ussus3westprod.blob.core.windows.net` <p>    `ussus4westprod.blob.core.windows.net` <p>    `wsus1westprod.blob.core.windows.net` <p>    `wsus2westprod.blob.core.windows.net` <p>    `usseu1northprod.blob.core.windows.net` <p>    `wseu1northprod.blob.core.windows.net` <p>    `usseu1westprod.blob.core.windows.net` <p>    `wseu1westprod.blob.core.windows.net` <p>    `ussuk1southprod.blob.core.windows.net` <p>    `wsuk1southprod.blob.core.windows.net` <p>    `ussuk1westprod.blob.core.windows.net` <p>    `wsuk1westprod.blob.core.windows.net` |
 | Zertifikatsperrliste (Certificate Revocation List, CRL) <p>Diese Liste wird von Windows beim Erstellen der SSL-Verbindung mit MAPS zum Aktualisieren der CRL verwendet.   | `http://www.microsoft.com/pkiops/crl/` <p> `http://www.microsoft.com/pkiops/certs` <p>   `http://crl.microsoft.com/pki/crl/products` <p> `http://www.microsoft.com/pki/certs` |
-| Symbol Store <p>Der Symbolspeicher wird von Microsoft Defender Antivirus verwendet, um bestimmte kritische Dateien während des Wartungsflusses wiederherzustellen.   | `https://msdl.microsoft.com/download/symbols` |
+| Symbol Store <p>Der Symbolspeicher wird von Microsoft Defender Antivirus verwendet, um bestimmte kritische Dateien während der Wiederherstellungsflüsse wiederherzustellen.   | `https://msdl.microsoft.com/download/symbols` |
 | Universeller Telemetrieclient <p>Dieser Client wird von Windows verwendet, um Clientdiagnosedaten zu senden.<p> Microsoft Defender Antivirus verwendet Telemetrie für Die Überwachung der Qualität der Produkte    | Das Update verwendet SSL (TCP-Port 443), um Manifeste herunterzuladen und Diagnosedaten an Microsoft hochzuladen, die die folgenden DNS-Endpunkte verwenden: <p> `vortex-win.data.microsoft.com` <p>   `settings-win.data.microsoft.com`|
 
 ## <a name="validate-connections-between-your-network-and-the-cloud"></a>Überprüfen von Verbindungen zwischen Ihrem Netzwerk und der Cloud
@@ -78,9 +78,9 @@ Verwenden Sie das folgende Argument mit dem Microsoft Defender Antivirus Befehls
 ```
 
 > [!NOTE]
-> Sie müssen eine Version der Eingabeaufforderung auf Administratorebene öffnen. Klicken Sie im Startmenü mit der rechten Maustaste auf das Element, klicken Sie **auf "Als Administrator ausführen",** und klicken Sie an der Eingabeaufforderung "Berechtigungen" auf **"Ja".** Dieser Befehl funktioniert nur für Windows 10, Version 1703 oder höher.
+> Sie müssen eine Version der Eingabeaufforderung auf Administratorebene öffnen. Klicken Sie im Startmenü mit der rechten Maustaste auf das Element, klicken Sie **auf "Als Administrator ausführen",** und klicken Sie an der Eingabeaufforderung "Berechtigungen" auf **"Ja".** Dieser Befehl funktioniert nur auf Windows 10 Version 1703 oder höher.
 
-Weitere Informationen finden Sie unter [Verwalten Microsoft Defender Antivirus mit dem mpcmdrun.exe-Befehlszeilentool.](command-line-arguments-microsoft-defender-antivirus.md)
+Weitere Informationen finden Sie unter [Manage Microsoft Defender Antivirus with the mpcmdrun.exe commandline tool](command-line-arguments-microsoft-defender-antivirus.md).
 
 ### <a name="attempt-to-download-a-fake-malware-file-from-microsoft"></a>Versuch, eine gefälschte Schadsoftwaredatei von Microsoft herunterzuladen
 
@@ -105,7 +105,7 @@ Außerdem wird im Abschnitt **"Scanverlauf"** in der Windows-Sicherheit-App eine
 
 1. Öffnen Sie die Windows-Sicherheit App, indem Sie auf das Schildsymbol in der Taskleiste klicken oder im Startmenü nach **Sicherheit** suchen.
 
-2. Wählen Sie **"Viren- & Bedrohungsschutz"** und dann **"Schutzverlauf"** aus.
+2. Wählen Sie **"Viren- & Bedrohungsschutz"** aus, und wählen Sie dann **"Schutzverlauf"** aus.
 
 3. Wählen Sie im Abschnitt **"Isolierte Bedrohungen"** den **vollständigen Verlauf** aus, um die erkannte gefälschte Schadsoftware anzuzeigen.
 

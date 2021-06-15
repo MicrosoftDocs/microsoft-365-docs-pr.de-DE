@@ -1,25 +1,26 @@
 ---
 title: Übertragen eines Microsoft 365 Business-CSP-Abonnements
-description: 'Erfahren Sie, wie Sie ein Microsoft 365 Business #A0 von der Vorschau in die allgemeine Verfügbarkeit (GA) überwechseln können.'
+description: Erfahren Sie, wie Sie ein Microsoft 365 Business CSP-Abonnement von der Vorschau auf die allgemeine Verfügbarkeit (GA) umsteigen können.
 author: jasongroce
 f1.keywords:
 - NOCSH
 ms.custom:
 - seo-marvel-mar
 - AdminSurgePortfolio
-ms.author: jasgro
-ms.topic: article 
+ms.author: jasongroce
+ms.topic: article
+manager: jasonh
 ms.prod: microsoft-365-business
 localization_priority: Normal
-audience: microsoft-business 
+audience: microsoft-business
 keywords: Microsoft 365 Business, Microsoft 365, SMB, CSP-Abonnements übertragen
 ms.date: 11/01/2017
-ms.openlocfilehash: 5fc532b4a59d8e94068e7e1bae99bf8edac75abb
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 3f6c71edb50cc3c5509e61a83efb64185c10648d
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403428"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925001"
 ---
 # <a name="transition-a-microsoft-365-business-csp-subscription"></a>Übertragen eines Microsoft 365 Business-CSP-Abonnements
 
@@ -34,29 +35,29 @@ Wenn Sie über ein Microsoft 365 Business-Vorschau-CSP-Abonnement verfügen, les
 
     ![Kundenabonnements im Partner Center](../../media/pc_customer_subscriptions_1.png)
     
-3. Wählen Sie auf der Seite **Abonnements des** Unternehmens Abonnement **hinzufügen aus.**
-4. Wählen Sie **auf der** Seite Neues Abonnement die Option **Small Business** aus, und wählen Sie dann **Microsoft 365 Business** aus der Liste aus.
+3. Wählen Sie auf der Seite **"Abonnements"** des Unternehmens die Option **"Abonnement hinzufügen"** aus.
+4. Wählen Sie auf der Seite **"Neues Abonnement"** die Option **"Kleinunternehmen"** und dann **Microsoft 365 Business** aus der Liste aus.
 5. Fügen Sie die Anzahl der Lizenzen hinzu und wählen Sie dann **Weiter: Überprüfung** aus, um das Abonnement zu überprüfen. Wählen Sie **Übermitteln** aus.
 
     ![Überprüfen Sie das neue Abonnement mit Microsoft 365 Business](../../media/pc_customer_reviewnewsubscription.png)
 
-    Das **lizenzbasierte Abonnement** zeigt **Microsoft 365 Business-Vorschau** und **Microsoft 365 Business** an. Als Nächstes wird das Vorschauabonnement angehalten.
+    Das **lizenzbasierte Abonnement** zeigt **Microsoft 365 Business-Vorschau** und **Microsoft 365 Business** an. Sie werden das Vorschauabonnement als Nächstes aussetzen.
 
 6. Wählen Sie **Microsoft 365 Business-Vorschau** aus.
-7. Wählen Sie **auf Microsoft 365 Business Seite Vorschau** die Option Angehalten **aus,** um das Vorschauabonnement zu anhalten.
+7. Wählen Sie auf der **Seite Microsoft 365 Business Vorschau** die Option **"Angehalten"** aus, um das Vorschauabonnement zu sperren.
 
     ![Anhalten des Vorschauabonnements mit Microsoft 365 Business](../../media/pc_customer_m365bpreview_suspend.png)
 
 8. Wählen Sie zur Bestätigung **Übermitteln** aus.
 
-    Vergewissern Sie **sich auf** der Seite Abonnements, dass **Microsoft 365 Business Vorschaustatus** **Angehalten angezeigt wird.**
+    Vergewissern Sie sich auf der Seite **"Abonnements",** dass der **Status "Microsoft 365 Business Vorschau"** **"Angehalten" angezeigt wird.**
 
     ![Überprüfen Sie, ob der Vorschauabonnementstatus angehalten wird](../../media/pc_customer_m365bpreview_suspend_confirm.png)
 
 9. Optional können Sie auch den Lizenzvertrag überprüfen. Gehen Sie hierzu folgendermaßen vor:
     1. Wählen Sie **Benutzer und Lizenzen** aus der Unternehmensseite **Abonnements** aus.
-    2. Wählen Sie **auf der Seite** Benutzer und Lizenzen einen Benutzer aus.
-    3. Überprüfen Sie auf der Seite des Benutzers den Abschnitt **Lizenzen** zuweisen, und vergewissern Sie sich, dass Microsoft 365 Business **.**
+    2. Wählen Sie auf der Seite **"Benutzer und Lizenzen"** einen Benutzer aus.
+    3. Überprüfen Sie auf der Seite des Benutzers den Abschnitt **"Lizenzen zuweisen",** und vergewissern Sie sich, dass **Microsoft 365 Business** angezeigt wird.
 
         ![Stellen Sie sicher, dass dem Benutzer die Microsoft 365 Business-Lizenz zugewiesen wurde](../../media/pc_customer_userslicenses_m365b_validate.png)
 
@@ -91,8 +92,8 @@ In der folgenden Tabelle sind die Auswirkungen auf die App-Verwaltungsrichtlinie
 | **Erfordert PIN oder Fingerabdruck für den Zugriff auf Office-Apps** | Eingeschränkter Zugriff auf Apps | Keine Beschränkung für den Zugriff auf App-Ebene |
 | **Zurücksetzen der PIN, wenn die Anmeldung fehlschlägt** | Eingeschränkter Zugriff auf Apps | Keine Beschränkung für den Zugriff auf App-Ebene |
 | **Erfordert, dass Benutzer sich erneut anmelden, wenn Office-Apps sich im Leerlauf befunden haben** | Anmeldung erforderlich | Keine Anmeldung erforderlich |
-| **Verweigern des Zugriffs auf Arbeitsdateien auf gehackten Geräten oder Geräten mit Nutzungsbeschränkungen** | Der Zugriff auf Arbeitsdateien ist auf Geräten mit Jailbroken/Rooted nicht möglich. | Zugriffs auf Arbeitsdateien auf gehackten Geräten oder Geräten mit Nutzungsbeschränkungen ist möglich |
-| **Benutzern ermöglichen, Inhalte von Office-Apps auf persönliche Apps zu kopieren.** | Kopieren/Einfügen auf Apps beschränkt, die im Rahmen eines Microsoft 365 verfügbar sind | Kopieren und Einfügen für alle Apps verfügbar |
+| **Verweigern des Zugriffs auf Arbeitsdateien auf gehackten Geräten oder Geräten mit Nutzungsbeschränkungen** | Auf Arbeitsdateien kann auf Geräten mit Jailbreak/Root nicht zugegriffen werden | Zugriffs auf Arbeitsdateien auf gehackten Geräten oder Geräten mit Nutzungsbeschränkungen ist möglich |
+| **Benutzern ermöglichen, Inhalte von Office-Apps auf persönliche Apps zu kopieren.** | Kopieren/Einfügen, beschränkt auf Apps, die im Rahmen Microsoft 365-Abonnements verfügbar sind | Kopieren und Einfügen für alle Apps verfügbar |
 
 ## <a name="windows-10-pc-impacts-upon-subscription-expiration"></a>Auswirkungen auf Windows 10 PC nach Ablauf des Abonnements
 
@@ -100,10 +101,10 @@ In der folgende Tabelle werden die Auswirkungen auf Windows10-Geräte-Konfigurat
 
 |                            | Vollständig lizenziert                      | T+60 Tage nach Ablauf          |
 |----------------------------|------------------------------------------------|------------------------------------|
-| **Schützt PCs vor Bedrohungen mithilfe von Windows Defender** | Aktivieren/Deaktivieren liegt außerhalb der Benutzersteuerung | Benutzer kann die Windows Defender auf dem Windows 10 aktivieren |
-| **Schützt PCs vor webbasierten Bedrohungen in Microsoft Edge** | PC-Schutz in Microsoft Edge | Benutzer können den PC-Schutz in der Microsoft Edge |
+| **Schützt PCs vor Bedrohungen mithilfe von Windows Defender** | Aktivieren/Deaktivieren liegt außerhalb der Benutzersteuerung | Der Benutzer kann Windows Defender auf dem Windows 10-PC aktivieren/deaktivieren. |
+| **Schützt PCs vor webbasierten Bedrohungen in Microsoft Edge** | PC-Schutz in Microsoft Edge | Der Benutzer kann den PC-Schutz in Microsoft Edge aktivieren/deaktivieren. |
 | **Ausschalten des Gerätebildschirms im Leerlauf** | Der Administrator legt Zeitlimitrichtlinien für Bildschirmtimeout fest | Bildschirmtimeout kann durch Endbenutzer konfiguriert werden |
 | **Ermöglicht Benutzern den Download von Apps aus dem Microsoft Store** | Der Administrator legt fest, ob ein Benutzer Apps aus dem Microsoft Store herunterladen kann | Benutzer kann Apps jederzeit aus dem Microsoft Store herunterladen |
 | **Ermöglicht Benutzern den Zugriff auf Cortana** | Administrator definiert die Richtlinie des Benutzerzugriffs auf Cortana | Anwendergerät schaltet Cortana ein/aus |
-| **Benutzer können Tipps und Werbung von Microsoft erhalten** | Der Administrator definiert die Richtlinie, ob Benutzer Tipps und Werbung von Microsoft erhalten | Benutzer kann Tipps und Ankündigungen von Microsoft aktivieren/deaktivieren |
-| **Benutzer können Inhalte von Office-Apps auf persönliche Apps kopieren** | Administrator definiert Richtlinie, um Windows 10 geräte auf dem neuesten Stand zu halten | Benutzer können entscheiden, wann Windows aktualisiert werden soll |
+| **Benutzer können Tipps und Werbung von Microsoft erhalten** | Der Administrator definiert die Richtlinie, ob Benutzer Tipps und Werbung von Microsoft erhalten | Benutzer können Tipps und Ankündigungen von Microsoft aktivieren/deaktivieren |
+| **Benutzer können Inhalte von Office-Apps auf persönliche Apps kopieren** | Der Administrator definiert eine Richtlinie, um Windows 10 Geräte auf dem neuesten Stand zu halten. | Benutzer können entscheiden, wann Windows aktualisiert werden soll |

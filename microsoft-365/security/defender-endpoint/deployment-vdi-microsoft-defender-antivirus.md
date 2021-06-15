@@ -6,7 +6,8 @@ search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+localization_priority: normal
+ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,13 +15,12 @@ ms.date: 06/11/2021
 ms.reviewer: jesquive
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: ce200ca12bacc3ae8d9f7b48d36274ca54322586
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 83e37b6d59d7356b53e5024204e39473764cea72
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908029"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924915"
 ---
 # <a name="deployment-guide-for-microsoft-defender-antivirus-in-a-virtual-desktop-infrastructure-vdi-environment"></a>Bereitstellungshandbuch für Microsoft Defender Antivirus in einer VDI-Umgebung (Virtual Desktop Infrastructure)
 
@@ -28,15 +28,15 @@ ms.locfileid: "52908029"
 
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 
-Zusätzlich zu standardmäßigen lokalen konfigurationen oder Hardwarekonfigurationen können Sie Microsoft Defender Antivirus auch in einer Remotedesktopumgebung (RDS) oder VDI-Umgebung (Virtual Desktop Infrastructure) verwenden.
+Zusätzlich zu standardmäßigen lokalen konfigurationen oder Hardwarekonfigurationen können Sie auch Microsoft Defender Antivirus in einer Remotedesktopumgebung (RDS) oder VDI-Umgebung (Virtual Desktop Infrastructure) verwenden.
 
-Weitere Informationen zur Unterstützung von Microsoft-Remotedesktop Services und VDI finden Sie in Windows [Virtual Desktop-Dokumentation.](/azure/virtual-desktop)
+Weitere Informationen zur Unterstützung von Microsoft-Remotedesktop Services und VDI finden Sie in Windows [Dokumentation zu virtuellen Desktops.](/azure/virtual-desktop)
 
 Informationen zu Azure-basierten virtuellen Computern finden Sie unter [Installieren Endpoint Protection in Azure Defender.](/azure/security-center/security-center-install-endpoint-protection)
 
 Mit der Möglichkeit, Updates auf einfachen Weise auf VMs bereitzustellen, die in VDIs ausgeführt werden, haben wir dieses Handbuch gekürzt, um uns darauf zu konzentrieren, wie Sie Updates schnell und einfach auf Ihren Computern abrufen können. Sie müssen keine goldenen Bilder mehr regelmäßig erstellen und versiegeln, da Updates auf dem Hostserver in ihre Komponentenbits erweitert und dann direkt auf die VM heruntergeladen werden, wenn sie aktiviert ist.
 
-In diesem Leitfaden wird beschrieben, wie Sie Ihre virtuellen Computer für optimalen Schutz und optimale Leistung konfigurieren, einschließlich:
+In diesem Handbuch wird beschrieben, wie Sie Ihre virtuellen Computer für optimalen Schutz und optimale Leistung konfigurieren, einschließlich der folgenden Vorgehensweisen:
 
 - [Einrichten einer dedizierten VDI-Dateifreigabe für Security Intelligence-Updates](#set-up-a-dedicated-vdi-file-share)
 - [Zufällige geplante Scans](#randomize-scheduled-scans)
@@ -53,7 +53,7 @@ Sie können auch das Whitepaper [Microsoft Defender Antivirus zur Virtuellen Des
 
 ## <a name="set-up-a-dedicated-vdi-file-share"></a>Einrichten einer dedizierten VDI-Dateifreigabe
 
-In Windows 10, Version 1903, haben wir das feature "Shared Security Intelligence" eingeführt, das das Entpacken heruntergeladener Security Intelligence-Updates auf einem Hostcomputer auslädt und somit die vorherige CPU-, Datenträger- und Speicherressourcen auf einzelnen Computern speichert. Dieses Feature wurde zurückportiert und funktioniert jetzt in Windows 10 Version 1703 und höher. Sie können dieses Feature mit einer Gruppenrichtlinie oder PowerShell festlegen.
+In Windows 10, Version 1903, haben wir das feature "Shared Security Intelligence" eingeführt, das das Entpacken heruntergeladener Security Intelligence-Updates auf einen Hostcomputer auslagert und somit frühere CPU-, Datenträger- und Speicherressourcen auf einzelnen Computern speichert. Dieses Feature wurde zurückportiert und funktioniert jetzt in Windows 10 Version 1703 und höher. Sie können dieses Feature mit einer Gruppenrichtlinie oder PowerShell festlegen.
 
 ### <a name="use-group-policy-to-enable-the-shared-security-intelligence-feature"></a>Verwenden Von Gruppenrichtlinien zum Aktivieren des Features für die gemeinsame Sicherheitsintelligenz:
 
@@ -116,7 +116,7 @@ Security Intelligence-Pakete werden in der Regel alle drei bis vier Stunden ver�
 
 5. Wählen Sie **"OK"** aus, um den geplanten Vorgang zu speichern.
  
-Sie können das Update manuell initiieren, indem Sie mit der rechten Maustaste auf die Aufgabe klicken und auf **"Ausführen"** klicken.
+Sie können das Update manuell initiieren, indem Sie mit der rechten Maustaste auf die Aufgabe klicken und auf **Ausführen** klicken.
 
 ### <a name="download-and-unpackage-manually"></a>Manuelles Herunterladen und Entpacken
 
@@ -142,7 +142,7 @@ Hier ist ein Beispiel: `c:\wdav_update\{00000000-0000-0000-0000-000000000000}`
 
 Geplante Scans werden zusätzlich zum [Echtzeitschutz und zum Scannen](configure-real-time-protection-microsoft-defender-antivirus.md)ausgeführt.
 
-Die Startzeit des Scans selbst basiert weiterhin auf der geplanten Scanrichtlinie (**ScheduleDay**, **ScheduleTime** und **ScheduleQuickScanTime**). Die Zufälligisierung führt dazu, dass Microsoft Defender Antivirus innerhalb eines 4-Stunden-Fensters ab dem für den geplanten Scan festgelegten Zeitraum auf jedem Computer einen Scan starten.
+Die Startzeit des Scans selbst basiert weiterhin auf der geplanten Scanrichtlinie (**ScheduleDay**, **ScheduleTime** und **ScheduleQuickScanTime**). Die Zufallszufälligkeit führt dazu, dass Microsoft Defender Antivirus innerhalb eines 4-Stunden-Fensters ab dem für den geplanten Scan festgelegten Zeitraum auf jedem Computer einen Scan starten.
 
 Weitere Konfigurationsoptionen, die für geplante Scans verfügbar sind, finden Sie unter ["Planen](scheduled-catch-up-scans-microsoft-defender-antivirus.md) von Scans".
 
@@ -177,7 +177,7 @@ Durch das Unterdrücken von Benachrichtigungen wird verhindert, dass Benachricht
 > [!TIP]
 > Führen Sie einen der folgenden Schritte aus, um das Info-Center für Windows 10 zu öffnen:
 > - Wählen Sie am rechten Ende der Taskleiste das Info-Center-Symbol aus.
-> - Drücken Sie die Windows Logotaste + A.
+> - Drücken Sie die Windows Taste +A.
 > - Wischen Sie auf einem Touchscreengerät vom rechten Rand des Bildschirms ein.
 
 ## <a name="disable-scans-after-an-update"></a>Deaktivieren von Scans nach einem Update

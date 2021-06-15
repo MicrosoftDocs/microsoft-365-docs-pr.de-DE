@@ -1,6 +1,6 @@
 ---
 title: Priorisieren von Vorfällen in Microsoft 365 Defender
-description: Informationen zum Filtern von Vorfällen aus der Vorfallwarteschlange in Microsoft 365 Defender
+description: Erfahren Sie, wie Sie Vorfälle aus der Vorfallwarteschlange in Microsoft 365 Defender filtern.
 keywords: Incident, queue, overview, devices, identities, users, mailbox, email, incidents, analyze, response
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: df2d2660267c38dccf5ef09fa4955615d3a78141
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: 07a49fcdcfa7ea401b16b293b4831244253d2b28
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52636266"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925887"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorisieren von Vorfällen in Microsoft 365 Defender
 
@@ -36,32 +36,32 @@ ms.locfileid: "52636266"
 **Gilt für:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender wendet Korrelationsanalysen an und aggregiert zugehörige Warnungen und automatisierte Untersuchungen aus verschiedenen Produkten in einem Vorfall. Microsoft 365 Defender löst außerdem eindeutige Warnungen für Aktivitäten aus, die nur aufgrund der End-to-End-Sichtbarkeit, die Microsoft 365 Defender über die gesamte Produktsuite verfügt, als bösartig identifiziert werden können. Diese Ansicht bietet Ihren Sicherheitsanalysten die umfassendere Angriffsgeschichte, die ihnen dabei hilft, komplexe Bedrohungen in Ihrer Organisation besser zu verstehen und zu umgehen.
+Microsoft 365 Defender wendet Korrelationsanalysen an und aggregiert zugehörige Warnungen und automatisierte Untersuchungen aus verschiedenen Produkten zu einem Vorfall. Microsoft 365 Defender löst auch eindeutige Warnungen zu Aktivitäten aus, die aufgrund der End-to-End-Sichtbarkeit, die Microsoft 365 Defender über die gesamte Produktsuite verfügt, nur als bösartig erkannt werden können. Diese Ansicht bietet Ihren Sicherheitsanalysten die umfassendere Angriffsstory, die ihnen dabei hilft, komplexe Bedrohungen in Ihrer Organisation besser zu verstehen und damit umzugehen.
 
-Die **Vorfallwarteschlange** zeigt eine Sammlung von Vorfällen an, die über Geräte, Benutzer und Postfächer hinweg erstellt wurden. Sie können damit Vorfälle sortieren, um eine fundierte Entscheidung im Hinblick auf eine geeignete Reaktion auf einen Cyberangriff zu treffen. 
+In der **Vorfallswarteschlange** wird eine Sammlung von Vorfällen angezeigt, die geräte-, benutzer- und postfachübergreifend erstellt wurden. Sie können damit Vorfälle sortieren, um eine fundierte Entscheidung im Hinblick auf eine geeignete Reaktion auf einen Cyberangriff zu treffen. 
 
-Sie erhalten die Vorfallwarteschlange von **Incidents & alerts > Incidents** beim Schnellstart des Microsoft 365 Security Centers ([security.microsoft.com](https://security.microsoft.com)). Im Folgenden sehen Sie ein Beispiel.
+Sie gelangen in der Schnellstartleiste des Microsoft 365 Security Centers [(](https://security.microsoft.com)security.microsoft.com ) von **Vorfällen & Warnungen > Vorfällen** in die Vorfallswarteschlange. Im Folgenden sehen Sie ein Beispiel.
 
-:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Beispiel für die Warteschlange für Vorfälle":::
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Beispiel für die Vorfallwarteschlange":::
 
-Der Abschnitt Neueste Vorfälle und **Warnungen** zeigt ein Diagramm der Anzahl der empfangenen Warnungen und Vorfälle, die in den letzten 24 Stunden erstellt wurden.
+Der Abschnitt **"Letzte Vorfälle und Warnungen"** zeigt ein Diagramm der Anzahl der empfangenen Warnungen und vorfälle, die in den letzten 24 Stunden erstellt wurden.
 
-Standardmäßig werden in der Warteschleife im Microsoft 365 Sicherheitscenter Vorfälle angezeigt, die in den letzten sechs Monaten angezeigt wurden. Der letzte Vorfall befindet sich ganz oben in der Liste, damit Sie ihn zuerst sehen können.
+Standardmäßig zeigt die Vorfallwarteschlange im Microsoft 365 Security Center Vorfälle an, die in den letzten sechs Monaten angezeigt wurden. Der letzte Vorfall befindet sich oben in der Liste, sodass Sie ihn zuerst sehen können.
 
-Die Vorfallwarteschlange verfügt über anpassbare Spalten **(wählen** Sie Spalten auswählen) aus, die Ihnen Einblicke in verschiedene Merkmale des Vorfalls oder der betroffenen Entitäten bieten. Dies hilft Ihnen, eine fundierte Entscheidung hinsichtlich der Priorisierung von Vorfällen für die Analyse zu treffen.
+Die Vorfallwarteschlange verfügt über anpassbare Spalten **(Spalten** auswählen), die Ihnen Einblicke in verschiedene Merkmale des Vorfalls oder die betroffenen Entitäten bieten. Auf diese Weise können Sie eine fundierte Entscheidung hinsichtlich der Priorisierung von Vorfällen für die Analyse treffen.
 
-Für eine zusätzliche Sichtbarkeit auf einen Blick generiert die automatische Vorfallbenennung Vorfallnamen basierend auf Warnungsattributen wie der Anzahl betroffener Endpunkte, betroffener Benutzer, Erkennungsquellen oder Kategorien. Auf diese Weise können Sie den Umfang des Vorfalls schnell verstehen.
+Für eine zusätzliche Sichtbarkeit auf einen Blick generiert die automatische Vorfallbenennung Vorfallnamen basierend auf Warnungsattributen wie der Anzahl der betroffenen Endpunkte, betroffenen Benutzer, Erkennungsquellen oder Kategorien. Auf diese Weise können Sie den Umfang des Vorfalls schnell verstehen.
 
-Beispiel: *Mehrstufiger Vorfall auf mehreren Endpunkten, die von mehreren Quellen gemeldet wurden.*
+Beispiel: *Mehrstufiger Vorfall auf mehreren Endpunkten, die von mehreren Quellen gemeldet werden.*
 
 > [!NOTE]
-> Vorfälle, die vor dem Rollout der automatischen Benennung von Vorfällen vorhanden waren, werden nicht geändert.
+> Bei Vorfällen, die vor dem Rollout der automatischen Benennung von Vorfällen vorhanden waren, wird ihr Name nicht geändert.
 
-Die Vorfallwarteschlange macht auch mehrere Filteroptionen verfügbar, mit denen Sie bei Anwendung eine umfassende Auswahl aller vorhandenen Vorfälle in Ihrer Umgebung durchführen oder sich auf ein bestimmtes Szenario oder eine bestimmte Bedrohung konzentrieren können. Durch Anwenden von Filtern in der Vorfallswarteschlange können Sie ermitteln, welcher Vorfall sofort beachtet werden muss. 
+Die Vorfallwarteschlange macht auch mehrere Filteroptionen verfügbar, die es Ihnen bei Anwendung ermöglichen, alle vorhandenen Vorfälle in Ihrer Umgebung umfassend zu durchlaufen oder sich auf ein bestimmtes Szenario oder eine bestimmte Bedrohung zu konzentrieren. Durch Anwenden von Filtern in der Vorfallswarteschlange können Sie ermitteln, welcher Vorfall sofort beachtet werden muss. 
 
 ## <a name="available-filters"></a>Verfügbare Filter
 
-In der Standardwarteschlange für Vorfälle können Sie **Filter** auswählen, um einen Filterbereich anzuzeigen, aus dem Sie einen gefilterten Satz von Vorfällen anzeigen können. Hier ein Beispiel.
+In der Standardvorfallswarteschlange können Sie **Filter** auswählen, um einen Filterbereich anzuzeigen, aus dem Sie eine gefilterte Gruppe von Vorfällen anzeigen können. Hier ein Beispiel.
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Beispiel für den Filterbereich für die Vorfallwarteschlange":::
 
@@ -69,28 +69,45 @@ In dieser Tabelle sind die verfügbaren Filternamen aufgeführt.
 
 | Filtername | Beschreibung |
 |:-------|:-----|
-| Zugewiesen an | Sie können Warnungen anzeigen, die Ihnen zugewiesen sind oder die von der Automatisierung verarbeitet werden. |
+| Zugewiesen an | Sie können Benachrichtigungen anzeigen, die Ihnen zugewiesen sind oder die von der Automatisierung verarbeitet werden. |
 | Kategorien | Wählen Sie Kategorien aus, um sich auf bestimmte Taktiken, Techniken oder Angriffskomponenten zu konzentrieren. |
-| Klassifizierung | Filtern von Vorfällen basierend auf den festgelegten Klassifizierungen der zugehörigen Warnungen. Die Werte umfassen echte Warnungen, falsche Warnungen oder nicht festgelegt. |
+| Klassifizierung | Filtern sie Vorfälle basierend auf den festgelegten Klassifizierungen der zugehörigen Warnungen. Zu den Werten gehören echte, falsche oder nicht festgelegte Warnungen. |
 | Vertraulichkeit der Daten | Bei einigen Angriffen liegt der Schwerpunkt auf dem Exfiltrieren von vertraulichen oder wertvollen Daten. Indem Sie einen Filter anwenden, um festzustellen, ob vertrauliche Daten an dem Vorfall beteiligt sind, können Sie schnell ermitteln, ob vertrauliche Informationen potenziell gefährdet sind, und die Behebung dieser Vorfälle priorisieren. <br><br> Gilt nur, wenn Microsoft Information Protection aktiviert ist.|
-| Gerätegruppe | Nach definierten Gerätegruppen filtern. |
-| Untersuchungsstatus | Filtern von Vorfällen nach dem Status der automatisierten Untersuchung.  |
-| Mehrere Kategorien | Sie können auswählen, dass nur Vorfälle angezeigt werden, die mehreren Kategorien zugeordnet sind und somit potenziell mehr Schaden verursachen können. |
-| Mehrere Dienstquellen  | Filtern Sie, um nur Vorfälle anzuzeigen, die Warnungen aus verschiedenen Quellen enthalten (Microsoft Defender for Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender for Office 365). |
-| Betriebssystemplattform | Beschränken Sie die Vorfallwarteschlange nach Betriebssystem. |
+| Gerätegruppe | Filtern nach definierten Gerätegruppen. |
+| Untersuchungsstatus | Filtern sie Vorfälle nach dem Status der automatischen Untersuchung.  |
+| Mehrere Kategorien | Sie können festlegen, dass nur Vorfälle angezeigt werden, die mehreren Kategorien zugeordnet sind und somit potenziell mehr Schäden verursachen können. |
+| Mehrere Dienstquellen  | Filtern Sie, um nur Vorfälle anzuzeigen, die Warnungen aus verschiedenen Quellen enthalten (Microsoft Defender für Endpunkt, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender für Office 365). |
+| Betriebssystemplattform | Beschränken Sie die Vorfallwarteschlangenansicht nach Betriebssystem. |
 | Dienstquellen | Wenn Sie eine bestimmte Quelle auswählen, können Sie sich auf Vorfälle konzentrieren, die mindestens eine Warnung aus der ausgewählten Quelle enthalten. |
-| Severity | Der Schweregrad eines Vorfalls ist ein Indiz für die Auswirkungen, die er auf Ihre Ressourcen haben kann. Je höher der Schweregrad, desto größer sind die Auswirkungen und erfordern in der Regel die unmittelbarste Aufmerksamkeit. |
+| Severity | Der Schweregrad eines Vorfalls ist ein Indikator für die Auswirkungen, die er auf Ihre Ressourcen haben kann. Je höher der Schweregrad, desto größer die Auswirkung und erfordert in der Regel die unmittelbarste Aufmerksamkeit. |
 | Status | Sie können die Liste der Vorfälle basierend auf deren Status einschränken, um zu sehen, welche Vorgänge aktiv oder aufgelöst sind. |
 |||
 
+## <a name="save-defined-filters-as-urls"></a>Speichern von definierten Filtern als URLs
+
+Nachdem Sie einen nützlichen Filter in der Vorfallwarteschlange konfiguriert haben, können Sie die URL der Browserregisterkarte mit einem Lesezeichen versehen oder auf andere Weise als Link auf einer Webseite, einem Word-Dokument oder einem Ort Ihrer Wahl speichern. Dadurch erhalten Sie Mit-Klick-Zugriff auf wichtige Ansichten der Vorfallwarteschlange, z. B.:
+
+- Neue Vorfälle
+- Vorfälle mit hohem Schweregrad
+- Nicht zugewiesene Vorfälle
+- Vorfälle mit hohem Schweregrad, nicht zugewiesen
+- Mir zugewiesene Vorfälle
+- Mir zugewiesene Vorfälle und für Microsoft Defender für Endpunkt
+- Vorfälle mit einem bestimmten Tag oder bestimmten Tags
+- Vorfälle mit einer bestimmten Bedrohungskategorie
+- Vorfälle mit einer bestimmten zugehörigen Bedrohung
+- Vorfälle mit einem bestimmten Akteur
+
+Nachdem Sie Die Liste der nützlichen Filteransichten als URLs kompiliert und gespeichert haben, können Sie sie verwenden, um die Vorfälle in Ihrer Warteschlange schnell zu verarbeiten und zu priorisieren und sie für die nachfolgende Analyse [zu verwalten.](manage-incidents.md)
+
 ## <a name="next-steps"></a>Nächste Schritte
 
-Nachdem Sie ermittelt haben, welcher Vorfall die höchste Priorität erfordert, wählen Sie ihn aus, und:
+Nachdem Sie festgestellt haben, welcher Vorfall die höchste Priorität erfordert, wählen Sie ihn aus und:
 
-- [Verwalten](manage-incidents.md) Sie die Eigenschaften des Vorfalls für Tags, Zuordnung, sofortige Lösung für falsch positive Vorfälle und Kommentare.
-- Beginnen Sie ihre [Untersuchungen](investigate-incidents.md).
+- [Verwalten Sie](manage-incidents.md) die Eigenschaften des Vorfalls für Tags, Zuweisung, sofortige Lösung für falsch positive Vorfälle und Kommentare.
+- Beginnen Sie Ihre [Untersuchungen.](investigate-incidents.md)
 
-## <a name="see-also"></a>Sehen Sie ebenfalls
+## <a name="see-also"></a>Siehe auch
 - [Übersicht über Vorfälle](incidents-overview.md)
 - [Verwalten von Vorfällen](manage-incidents.md)
 - [Untersuchen von Vorfällen](investigate-incidents.md)

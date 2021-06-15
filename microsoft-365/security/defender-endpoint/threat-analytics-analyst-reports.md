@@ -1,7 +1,7 @@
 ---
-title: Grundlegendes zum Abschnitt "Analystenbericht" in der Bedrohungsanalyse
+title: Grundlegendes zum Abschnitt "Analystenbericht" in der Bedrohungsanalyse.
 ms.reviewer: ''
-description: Erfahren Sie mehr über den Analystenberichtsabschnitt jedes Berichts zur Bedrohungsanalyse. Erfahren Sie, wie sie Informationen zu Bedrohungen, Risikominderungen, Erkennungen, erweiterten Suchabfragen und mehr bereitstellt.
+description: Wie der Berichtsbereich von Bedrohungsanalyseberichten Informationen zu Bedrohungen, Risikominderung, Erkennungen, erweiterten Suchabfragen und mehr bereitstellt.
 keywords: Analystenbericht, Bedrohungsanalyse, Erkennungen, erweiterte Suchabfragen, Risikominderungen,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2a442a642a71bd6bf3a52dbf3901c4367c2c10d8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: e791249418503ada5d98b74c8ae273664851cc8e
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844994"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926439"
 ---
-# <a name="understand-the-analyst-report-in-threat-analytics"></a>Grundlegendes zum Analystenbericht in der Bedrohungsanalyse
+# <a name="the-analyst-report-in-threat-analytics"></a>Der Analystenbericht in der Bedrohungsanalyse
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -78,7 +78,7 @@ Diese Erkennungen sind auf Geräten verfügbar, auf denen [Microsoft Defender An
 ### <a name="endpoint-detection-and-response-edr-alerts"></a>Warnungen zur Endpunkterkennung und -reaktion (EDR)
 EDR Warnungen werden für Geräte ausgelöst, [die in Microsoft Defender für Endpunkt integriert](onboard-configure.md)sind. Diese Warnungen basieren in der Regel auf Sicherheitssignalen, die vom Microsoft Defender für Endpunkt-Sensor und anderen Endpunktfunktionen wie Antivirus, Netzwerkschutz, Manipulationsschutz gesammelt werden und als leistungsstarke Signalquellen dienen.
 
-Wie die Liste der Antivirenerkennungen sind einige EDR Warnungen so konzipiert, dass verdächtiges Verhalten, das möglicherweise nicht mit der nachverfolgten Bedrohung in Verbindung gebracht wird, allgemein markiert wird. In solchen Fällen identifiziert der Bericht die Warnung eindeutig als "generisch" und hat keinen Einfluss auf die Diagramme im Bericht.
+Wie die Liste der Antivirenerkennungen sind einige EDR Warnungen so konzipiert, dass verdächtiges Verhalten, das möglicherweise nicht mit der nachverfolgten Bedrohung verknüpft ist, allgemein markiert wird. In solchen Fällen identifiziert der Bericht die Warnung eindeutig als "generisch" und hat keinen Einfluss auf die Diagramme im Bericht.
 
 ## <a name="find-subtle-threat-artifacts-using-advanced-hunting"></a>Suchen nach subtilen Bedrohungsartefakten mithilfe der erweiterten Suche
 Während Erkennungen es Ihnen ermöglichen, die nachverfolgte Bedrohung automatisch zu erkennen und zu beenden, hinterlassen viele Angriffsaktivitäten subtile Spuren, die eine zusätzliche Überprüfung erfordern. Einige Angriffsaktivitäten weisen Verhaltensweisen auf, die auch normal sein können, sodass die dynamische Erkennung zu Betriebsgeräuschen oder sogar falsch positiven Ergebnissen führen kann.

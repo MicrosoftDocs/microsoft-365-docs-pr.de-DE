@@ -1,29 +1,28 @@
 ---
 title: Konfigurieren und Überprüfen von Ausschlüssen basierend auf Erweiterung, Name oder Speicherort
-description: Schließen Sie Dateien Microsoft Defender Antivirus Dateierweiterung, Dateinamen oder Speicherort von Scans aus.
+description: Schließen Sie Dateien basierend auf ihrer Dateierweiterung, ihrem Dateinamen oder Speicherort von Microsoft Defender Antivirus Scans aus.
 keywords: Ausschlüsse, Dateien, Erweiterung, Dateityp, Ordnername, Dateiname, Scans
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
+ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: 3d65275d504ece4ac298558e660fa70c32a76d06
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 71df43639a719acb9436f64deba6b6c5cc9317f5
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274532"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52924279"
 ---
-# <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Konfigurieren und Überprüfen von Ausschlüssen basierend auf Dateierweiterung und Ordnerspeicherort
+# <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Konfigurieren und Überprüfen von Ausschlüssen basierend auf der Dateierweiterung und dem Speicherort des Ordners
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Gilt für:**
@@ -31,92 +30,92 @@ ms.locfileid: "52274532"
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus Ausschlüsse gelten nicht für andere Microsoft Defender for Endpoint-Funktionen, z. B. [EDR (EDR),](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response)Regeln zur Reduzierung der Angriffsfläche [(Attack Surface Reduction, ASR)](/microsoft-365/security/defender-endpoint/attack-surface-reduction)und kontrollierter [Ordnerzugriff.](/microsoft-365/security/defender-endpoint/controlled-folders) Dateien, die Sie mithilfe der in diesem Artikel beschriebenen Methoden ausschließen, können weiterhin EDR und andere Erkennungen auslösen. Um Dateien allgemein auszuschließen, fügen Sie sie den benutzerdefinierten Microsoft Defender for [Endpoint-Indikatoren hinzu.](/microsoft-365/security/defender-endpoint/manage-indicators)
+> Microsoft Defender Antivirus Ausschlüsse gelten nicht für andere Microsoft Defender für Endpunkt-Funktionen, einschließlich [EDR (EDR),](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) [Attack Surface Reduction (ASR)-Regeln](/microsoft-365/security/defender-endpoint/attack-surface-reduction)und [kontrollierter Ordnerzugriff.](/microsoft-365/security/defender-endpoint/controlled-folders) Dateien, die Sie mithilfe der in diesem Artikel beschriebenen Methoden ausschließen, können weiterhin EDR Warnungen und andere Erkennungen auslösen. Um Dateien allgemein auszuschließen, fügen Sie sie den [benutzerdefinierten Indikatoren](/microsoft-365/security/defender-endpoint/manage-indicators)von Microsoft Defender für Endpunkt hinzu.
 
 ## <a name="exclusion-lists"></a>Ausschlusslisten
 
-Sie können bestimmte Dateien von Microsoft Defender Antivirus ausschließen, indem Sie Ausschlusslisten ändern. **Im Allgemeinen sollten Sie keine Ausschlüsse anwenden müssen.** Microsoft Defender Antivirus umfasst viele automatische Ausschlüsse basierend auf bekannten Betriebssystemverhalten und typischen Verwaltungsdateien, z. B. in unternehmensweitem Management, Datenbankverwaltung und anderen Unternehmensszenarien und -situationen.
+Sie können bestimmte Dateien von Microsoft Defender Antivirus Scans ausschließen, indem Sie Ausschlusslisten ändern. **Im Allgemeinen sollten Sie keine Ausschlüsse anwenden müssen.** Microsoft Defender Antivirus enthält viele automatische Ausschlüsse, die auf bekannten Betriebssystemverhaltensweisen und typischen Verwaltungsdateien basieren, z. B. solche, die in der Unternehmensverwaltung, der Datenbankverwaltung und anderen Unternehmensszenarien und -situationen verwendet werden.
 
 > [!NOTE]
-> Ausschlüsse gelten auch für Erkennungen von potenziell unerwünschten Apps (PuA).
+> Ausschlüsse gelten auch für PUA-Erkennungen (Potentially Unwanted Apps).
 
 > [!NOTE]
-> Automatische Ausschlüsse gelten nur für Windows Server 2016 und höher. Diese Ausschlüsse sind in der Windows-Sicherheit und in PowerShell nicht sichtbar.
+> Automatische Ausschlüsse gelten nur für Windows Server 2016 und höher. Diese Ausschlüsse sind in der Windows-Sicherheit-App und in PowerShell nicht sichtbar.
 
-In diesem Artikel wird beschrieben, wie Ausschlusslisten für die Dateien und Ordner konfiguriert werden. Weitere [Empfehlungen zum Definieren von Ausschlüssen vor](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) dem Definieren der Ausschlusslisten finden Sie unter Empfehlungen.
+In diesem Artikel wird beschrieben, wie Ausschlusslisten für die Dateien und Ordner konfiguriert werden. Informationen zum [Definieren von Ausschlüssen](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) finden Sie unter Empfehlungen, bevor Sie Ihre Ausschlusslisten definieren.
 
 | Ausschluss | Beispiele | Ausschlussliste |
 |:---|:---|:---|
 |Jede Datei mit einer bestimmten Erweiterung | Alle Dateien mit der angegebenen Erweiterung an einer beliebigen Stelle auf dem Computer. <p> Gültige Syntax: `.test` und `test`  | Erweiterungsausschlüsse |
 |Jede Datei unter einem bestimmten Ordner | Alle Dateien unter dem `c:\test\sample` Ordner | Datei- und Ordnerausschlüsse |
-| Eine bestimmte Datei in einem bestimmten Ordner | Nur die `c:\sample\sample.test` Datei | Datei- und Ordnerausschlüsse |
+| Eine bestimmte Datei in einem bestimmten Ordner | Nur `c:\sample\sample.test` die Datei | Datei- und Ordnerausschlüsse |
 | Ein bestimmter Prozess | Die ausführbare Datei `c:\test\process.exe` | Datei- und Ordnerausschlüsse |
 
-Ausschlusslisten haben die folgenden Merkmale:
+Ausschlusslisten weisen die folgenden Merkmale auf:
 
-- Ordnerausschlüsse gelten für alle Dateien und Ordner unter diesem Ordner, es sei denn, der Unterordner ist ein Reparaturpunkt. Unterordner für Reparse-Punkte müssen separat ausgeschlossen werden.
+- Ordnerausschlüsse gelten für alle Dateien und Ordner unter diesem Ordner, es sei denn, der Unterordner ist ein Analysepunkt. Unterordner für Analysepunkte müssen separat ausgeschlossen werden.
 - Dateierweiterungen gelten für jeden Dateinamen mit der definierten Erweiterung, wenn kein Pfad oder Ordner definiert ist.
 
 > [!IMPORTANT]
-> - Die Verwendung von Platzhaltern wie dem Sternchen ( ) ändert die Interpretation \* der Ausschlussregeln. Wichtige Informationen zur Funktionsweise [von](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) Platzhaltern finden Sie im Abschnitt Verwenden von Platzhaltern im Abschnitt Dateinamen- und Ordnerpfad- oder Erweiterungsausschlusslisten.
-> - Zugeordnete Netzwerklaufwerke können nicht ausgeschlossen werden. Sie müssen den tatsächlichen Netzwerkpfad angeben.
-> - Ordner, die nach dem Starten des Microsoft Defender Antivirus erstellt werden und der Ausschlussliste hinzugefügt wurden, werden nicht einbezogen. Sie müssen den Dienst neu starten (durch neustarten Windows), damit neue Reparsepunkte als gültiges Ausschlussziel erkannt werden.
+> - Die Verwendung von Platzhaltern wie sternchen ( \* ) ändert, wie die Ausschlussregeln interpretiert werden. Wichtige Informationen zur Funktionsweise von Platzhaltern finden Sie im Abschnitt ["Verwenden von Platzhaltern im Dateinamen und Ordnerpfad oder in Erweiterungsausschlusslisten".](#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
+> - Zugeordnete Netzlaufwerke können nicht ausgeschlossen werden. Sie müssen den tatsächlichen Netzwerkpfad angeben.
+> - Ordner, bei denen es sich um Analysepunkte handelt, die nach dem Starten des Microsoft Defender Antivirus Diensts erstellt und der Ausschlussliste hinzugefügt wurden, werden nicht eingeschlossen. Sie müssen den Dienst neu starten (indem Sie Windows neu starten), damit neue Analysepunkte als gültiges Ausschlussziel erkannt werden.
 
-Informationen zum Ausschließen von Dateien, die von einem bestimmten Prozess geöffnet wurden, finden Sie unter [Configure and validate exclusions for files opened by processes](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md).
+Informationen zum Ausschließen von Dateien, die von einem bestimmten Prozess geöffnet werden, finden Sie unter [Konfigurieren und Überprüfen von Ausschlüssen für Dateien, die von Prozessen geöffnet wurden.](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-Die Ausschlüsse gelten für [geplante Scans,](scheduled-catch-up-scans-microsoft-defender-antivirus.md) [Bedarfsscans](run-scan-microsoft-defender-antivirus.md)und [Echtzeitschutz.](configure-real-time-protection-microsoft-defender-antivirus.md)
+Die Ausschlüsse gelten für [geplante Scans,](scheduled-catch-up-scans-microsoft-defender-antivirus.md) [Scans bei Bedarf](run-scan-microsoft-defender-antivirus.md)und [Echtzeitschutz.](configure-real-time-protection-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Änderungen der Ausschlussliste, die mit Gruppenrichtlinien vorgenommen **wurden,** werden in den Listen in der Windows-Sicherheit [angezeigt.](microsoft-defender-security-center-antivirus.md)
-> Änderungen, die in der Windows-Sicherheit-App **vorgenommen wurden, werden** nicht in den Gruppenrichtlinienlisten angezeigt.
+> Mit gruppenrichtlinien vorgenommene Ausschlusslistenänderungen werden in den Listen in der [Windows-Sicherheit-App](microsoft-defender-security-center-antivirus.md) **angezeigt.**
+> In der Windows-Sicherheit App vorgenommene Änderungen werden nicht in den Gruppenrichtlinienlisten **angezeigt.**
 
-Standardmäßig werden lokale Änderungen an den Listen (von Benutzern mit Administratorrechten, einschließlich änderungen, die mit PowerShell und WMI vorgenommen wurden) mit den Listen zusammengeführt, wie von Gruppenrichtlinien, Configuration Manager oder Intune definiert (und bereitgestellt). Die Gruppenrichtlinienlisten haben Vorrang, wenn Konflikte auftreten.
+Standardmäßig werden lokale Änderungen, die an den Listen vorgenommen werden (von Benutzern mit Administratorrechten, einschließlich Änderungen, die mit PowerShell und WMI vorgenommen wurden) mit den Listen zusammengeführt, die durch Gruppenrichtlinien, Configuration Manager oder Intune definiert (und bereitgestellt) werden. Die Gruppenrichtlinienlisten haben Vorrang, wenn Konflikte vorliegen.
 
-Sie können [konfigurieren, wie lokal und global definierte Ausschlusslisten](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists) zusammengeführt werden, damit lokale Änderungen verwaltete Bereitstellungseinstellungen außer Kraft setzen können.
+Sie können [konfigurieren, wie lokal und global definierte Ausschlusslisten zusammengeführt werden,](configure-local-policy-overrides-microsoft-defender-antivirus.md#merge-lists) damit lokale Änderungen verwaltete Bereitstellungseinstellungen außer Kraft setzen können.
 
 ## <a name="configure-the-list-of-exclusions-based-on-folder-name-or-file-extension"></a>Konfigurieren der Liste der Ausschlüsse basierend auf dem Ordnernamen oder der Dateierweiterung
 
-### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>Konfigurieren von Dateinamen-, Ordner- oder Dateierweiterungsausschlüssen mithilfe von Intune
+### <a name="use-intune-to-configure-file-name-folder-or-file-extension-exclusions"></a>Verwenden von Intune zum Konfigurieren von Dateinamen-, Ordner- oder Dateierweiterungsausschlüssen
 
 Lesen Sie die folgenden Artikel:
-- [Konfigurieren von Geräteeinschränkungseinstellungen in Microsoft Intune](/intune/device-restrictions-configure)
-- [Microsoft Defender Antivirus geräteeinschränkungseinstellungen für Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
+- [Konfigurieren von Einstellungen für Geräteeinschränkungen in Microsoft Intune](/intune/device-restrictions-configure)
+- [Microsoft Defender Antivirus Geräteeinschränkungseinstellungen für Windows 10 in Intune](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
-### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Konfigurieren von Dateinamen-, Ordner- oder Dateierweiterungsausschlüssen mithilfe von Configuration Manager
+### <a name="use-configuration-manager-to-configure-file-name-folder-or-file-extension-exclusions"></a>Verwenden von Configuration Manager zum Konfigurieren von Dateinamen-, Ordner- oder Dateierweiterungsausschlüssen
 
-Weitere [Informationen zum Konfigurieren von](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings) Microsoft Endpoint Manager (current branch) finden Sie unter Erstellen und Bereitstellen von Antischalwarerichtlinien: Ausschlusseinstellungen.
+Weitere Informationen zum Konfigurieren von Microsoft Endpoint Manager (current branch) finden Sie unter Erstellen und Bereitstellen von Richtlinien für [Antischadsoftware: Ausschlusseinstellungen.](/configmgr/protect/deploy-use/endpoint-antimalware-policies#exclusion-settings)
 
-### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>Konfigurieren von Ordner- oder Dateierweiterungsausschlüssen mithilfe von Gruppenrichtlinien
+### <a name="use-group-policy-to-configure-folder-or-file-extension-exclusions"></a>Verwenden von Gruppenrichtlinien zum Konfigurieren von Ordner- oder Dateierweiterungsausschlüssen
 
 >[!NOTE]
 >Wenn Sie einen vollqualifizierten Pfad zu einer Datei angeben, wird nur diese Datei ausgeschlossen. Wenn ein Ordner im Ausschluss definiert ist, werden alle Dateien und Unterverzeichnisse unter diesem Ordner ausgeschlossen.
 
-1. Öffnen Sie auf dem Computer für die Gruppenrichtlinienverwaltung die [Gruppenrichtlinienverwaltungskonsole,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt, das Sie konfigurieren möchten, und klicken Sie auf **Bearbeiten**.
+1. Öffnen Sie auf dem Computer für die Gruppenrichtlinienverwaltung die [Gruppenrichtlinien-Verwaltungskonsole,](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc731212(v=ws.11))klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt, das Sie konfigurieren möchten, und klicken Sie auf **"Bearbeiten".**
 
-2. Wechseln Sie **im Gruppenrichtlinienverwaltungs-Editor** zu **Computerkonfiguration,** und wählen Sie **Administrative Vorlagen aus.**
+2. Wechseln Sie im **Gruppenrichtlinienverwaltungs-Editor** zur **Computerkonfiguration,** und wählen Sie **Administrative Vorlagen** aus.
 
-3. Erweitern Sie die **Struktur, Windows Komponenten**  >  **Microsoft Defender Antivirus**  >  **Ausschlüsse .**
+3. Erweitern Sie die Struktur bis Windows **Komponenten**  >  **Microsoft Defender Antivirus**  >  **Ausschlüssen.**
 
-4. Öffnen Sie **die Einstellung Pfadausschlüsse** für die Bearbeitung, und fügen Sie Ihre Ausschlüsse hinzu.
+4. Öffnen Sie die Einstellung **"Pfadausschlüsse"** zum Bearbeiten, und fügen Sie Ihre Ausschlüsse hinzu.
 
-    1. Legen Sie die Option auf **Aktiviert .**
-    1. Klicken Sie **im Abschnitt Optionen** auf **Anzeigen**.
-    1. Geben Sie jeden Ordner in einer eigenen Zeile unter der **Spalte Wertname** an.
-    1. Wenn Sie eine Datei angeben, stellen Sie sicher, dass Sie einen vollqualifizierten Pfad zur Datei eingeben, einschließlich Laufwerkbuchstabe, Ordnerpfad, Dateinamen und Erweiterung. Geben **Sie 0** in die **Spalte Wert** ein.
+    1. Legen Sie die Option auf **"Aktiviert"** fest.
+    1. Klicken Sie im Abschnitt **"Optionen"** auf **"Anzeigen".**
+    1. Geben Sie jeden Ordner in einer eigenen Zeile unter der Spalte **"Wertname"** an.
+    1. Wenn Sie eine Datei angeben, stellen Sie sicher, dass Sie einen vollqualifizierten Pfad zu der Datei eingeben, einschließlich Laufwerkbuchstaben, Ordnerpfad, Dateiname und Erweiterung. Geben Sie **0** in die Spalte **Wert** ein.
 
 5. Wählen Sie **OK** aus.
 
-6. Öffnen Sie **die Einstellung Erweiterungsausschlüsse** für die Bearbeitung, und fügen Sie Ihre Ausschlüsse hinzu.
+6. Öffnen Sie die Einstellung **"Erweiterungsausschlüsse"** zum Bearbeiten, und fügen Sie Ihre Ausschlüsse hinzu.
 
-    1. Legen Sie die Option auf **Aktiviert .**
-    1. Wählen Sie **im Abschnitt Optionen** die Option Anzeigen **aus.**
-    1. Geben Sie jede Dateierweiterung in einer eigenen Zeile unter der **Spalte Wertname** ein.  Geben **Sie 0** in die **Spalte Wert** ein.
+    1. Legen Sie die Option auf **"Aktiviert"** fest.
+    1. Wählen Sie im Abschnitt **"Optionen"** die Option **"Anzeigen"** aus.
+    1. Geben Sie jede Dateierweiterung in einer eigenen Zeile unter der Spalte **"Wertname"** ein.  Geben Sie **0** in die Spalte **Wert** ein.
 
 7. Wählen Sie **OK** aus.
 
 <a id="ps"></a>
 
-### <a name="use-powershell-cmdlets-to-configure-file-name-folder-or-file-extension-exclusions"></a>Konfigurieren von Dateinamen-, Ordner- oder Dateierweiterungsausschlüssen mithilfe von PowerShell-Cmdlets
+### <a name="use-powershell-cmdlets-to-configure-file-name-folder-or-file-extension-exclusions"></a>Verwenden von PowerShell-Cmdlets zum Konfigurieren von Dateinamen-, Ordner- oder Dateierweiterungsausschlüssen
 
 Die Verwendung von PowerShell zum Hinzufügen oder Entfernen von Ausschlüssen für Dateien basierend auf der Erweiterung, dem Speicherort oder dem Dateinamen erfordert die Verwendung einer Kombination aus drei Cmdlets und dem entsprechenden Ausschlusslistenparameter. Die Cmdlets befinden sich alle im [Defender-Modul.](/powershell/module/defender/)
 
@@ -126,7 +125,7 @@ Das Format für die Cmdlets lautet wie folgt:
 <cmdlet> -<exclusion list> "<item>"
 ```
 
-Die folgenden Sind als `<cmdlet>` zulässig:
+Folgende Werte sind `<cmdlet>` zulässig:
 
 | Konfigurationsaktion | PowerShell-Cmdlet |
 |:---|:---|
@@ -134,7 +133,7 @@ Die folgenden Sind als `<cmdlet>` zulässig:
 |Zur Liste hinzufügen | `Add-MpPreference` |
 |Element aus der Liste entfernen | `Remove-MpPreference` |
 
-Die folgenden Sind als `<exclusion list>` zulässig:
+Folgende Werte sind `<exclusion list>` zulässig:
 
 | Ausschlusstyp | PowerShell-Parameter |
 |:---|:---|
@@ -142,9 +141,9 @@ Die folgenden Sind als `<exclusion list>` zulässig:
 | Alle Dateien unter einem Ordner (einschließlich Dateien in Unterverzeichnissen) oder einer bestimmten Datei | `-ExclusionPath` |
 
 > [!IMPORTANT]
-> Wenn Sie eine Liste mit oder erstellt haben, überschreibt das `Set-MpPreference` `Add-MpPreference` Cmdlet erneut die vorhandene `Set-MpPreference` Liste.
+> Wenn Sie eine Liste erstellt haben, entweder mit `Set-MpPreference` oder `Add-MpPreference` , überschreibt die verwendung des `Set-MpPreference` Cmdlets erneut die vorhandene Liste.
 
-Der folgende Codeausschnitt würde beispielsweise dazu führen, dass Microsoft Defender Antivirus Dateien mit der `.test` Dateierweiterung ausschließen:
+Der folgende Codeausschnitt würde beispielsweise dazu führen, dass Microsoft Defender Antivirus Scans alle Dateien mit der `.test` Dateierweiterung ausschließen:
 
 ```PowerShell
 Add-MpPreference -ExclusionExtension ".test"
@@ -154,57 +153,57 @@ Weitere Informationen finden Sie unter [PowerShell-Cmdlets verwenden, um Microso
 
 ### <a name="use-windows-management-instruction-wmi-to-configure-file-name-folder-or-file-extension-exclusions"></a>Verwenden Windows Management Instruction (WMI) zum Konfigurieren von Dateinamen-, Ordner- oder Dateierweiterungsausschlüssen
 
-Verwenden Sie [ **die Methoden Set,** **Add** und **Remove** der **MSFT_MpPreference**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) für die folgenden Eigenschaften:
+Verwenden Sie die Methoden [ **"Set",** **"Add"** und **"Remove"** der **MSFT_MpPreference-Klasse**](/previous-versions/windows/desktop/legacy/dn455323(v=vs.85)) für die folgenden Eigenschaften:
 
 ```WMI
 ExclusionExtension
 ExclusionPath
 ```
 
-Die Verwendung von **Set,** **Add** und **Remove** entspricht ihren Entsprechungen in PowerShell: `Set-MpPreference` , und `Add-MpPreference` `Remove-MpPreference` .
+Die Verwendung von **"Festlegen",** **"Hinzufügen"** und **"Entfernen"** entspricht ihren Entsprechungen in PowerShell: `Set-MpPreference` , und `Add-MpPreference` `Remove-MpPreference` .
 
-Weitere Informationen finden Sie unter [Windows Defender WMIv2-APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal).
+Weitere Informationen finden Sie unter [Windows Defender WMIv2-APIs.](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
 <a id="man-tools"></a>
 
-### <a name="use-the-windows-security-app-to-configure-file-name-folder-or-file-extension-exclusions"></a>Konfigurieren von Dateinamen-, Ordner- oder Dateierweiterungsausschlüssen mithilfe der Windows-Sicherheit-App
+### <a name="use-the-windows-security-app-to-configure-file-name-folder-or-file-extension-exclusions"></a>Verwenden der Windows-Sicherheit-App zum Konfigurieren von Dateinamen-, Ordner- oder Dateierweiterungsausschlüssen
 
-Anweisungen finden Sie unter Add [exclusions in the Windows-Sicherheit app.](microsoft-defender-security-center-antivirus.md)
+Anweisungen finden [Sie unter Hinzufügen von Ausschlüssen in der Windows-Sicherheit-App.](microsoft-defender-security-center-antivirus.md)
 
 <a id="wildcards"></a>
 
-## <a name="use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>Verwenden von Platzhaltern in den Listen für Dateinamen und Ordnerpfad oder Erweiterungsausschluss
+## <a name="use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>Verwenden von Platzhaltern in den Dateinamen- und Ordnerpfad- oder Erweiterungsausschlusslisten
 
-Sie können das Sternchen, fragezeichen oder Umgebungsvariablen (z. B. ) als Platzhalter verwenden, wenn Sie Elemente in der Ausschlussliste für Dateinamen oder `*` `?` `%ALLUSERSPROFILE%` Ordnerpfade definieren. Die Interpretation dieser Platzhalter unterscheidet sich von der üblichen Verwendung in anderen Apps und Sprachen. Lesen Sie diesen Abschnitt, um ihre spezifischen Einschränkungen zu verstehen.
+Sie können das `*` Sternchen, Fragezeichen `?` oder `%ALLUSERSPROFILE%` Umgebungsvariablen (z. B. ) als Platzhalter verwenden, wenn Sie Elemente in der Dateinamen- oder Ordnerpfad-Ausschlussliste definieren. Die Art und Weise, wie diese Platzhalter interpretiert werden, unterscheidet sich von der üblichen Verwendung in anderen Apps und Sprachen. Lesen Sie unbedingt diesen Abschnitt, um die spezifischen Einschränkungen zu verstehen.
 
 > [!IMPORTANT]
 > Es gibt wichtige Einschränkungen und Verwendungsszenarien für diese Platzhalter:
 > - Die Verwendung von Umgebungsvariablen ist auf Computervariablen und auf Prozesse beschränkt, die als NT AUTHORITY\SYSTEM-Konto ausgeführt werden.
-> - Sie können keinen Platzhalter an stelle eines Laufwerkbuchstabens verwenden.
-> - Für einen einzelnen Ordner wird ein Sternchen in einem `*` Ordnerausschluss angezeigt. Verwenden Sie mehrere Instanzen `\*\` von, um mehrere geschachtelte Ordner mit nicht angegebenen Namen anzugeben.
+> - Sie können keinen Platzhalter anstelle eines Laufwerkbuchstabens verwenden.
+> - Ein Sternchen `*` in einem Ordnerausschluss steht für einen einzelnen Ordner. Verwenden Sie mehrere Instanzen `\*\` von, um mehrere geschachtelte Ordner mit nicht angegebenen Namen anzugeben.
 
-In der folgenden Tabelle wird beschrieben, wie die Platzhalter verwendet werden können, und es werden einige Beispiele aufgeführt.
+Die folgende Tabelle beschreibt, wie die Platzhalter verwendet werden können, und enthält einige Beispiele.
 
 
 |Platzhalter  |Beispiele  |
 |:---------|:---------|
-|`*` (Sternchen) <p> In **Dateinamen- und Dateierweiterungseinschlüssen** ersetzt das Sternchen eine beliebige Anzahl von Zeichen und gilt nur für Dateien im letzten Ordner, der im Argument definiert ist. <p> In **Ordnerausschlüssen** ersetzt das Sternchen einen einzelnen Ordner. Verwenden Sie `*` mehrere mit Ordnerschrägstrichen, `\` um mehrere geschachtelte Ordner anzugeben. Nachdem die Anzahl der Ordner mit Platzhaltern und benannten Ordnern übereinstimmen, werden auch alle Unterordner einbezogen.   | `C:\MyData\*.txt` includes `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` enthält alle Dateien in und deren Unterordner sowie `C:\somepath\Archives\Data` `C:\somepath\Authorized\Data` deren Unterordner <p> `C:\Serv\*\*\Backup` enthält alle Dateien in `C:\Serv\Primary\Denied\Backup` und deren Unterordnern und `C:\Serv\Secondary\Allowed\Backup` unterordnern     |
-|`?` (Fragezeichen)  <p> In **Dateinamen- und Dateierweiterungseinschlüssen** ersetzt das Fragezeichen ein einzelnes Zeichen und gilt nur für Dateien im letzten Ordner, der im Argument definiert ist. <p> In **Ordnerausschlüssen** ersetzt das Fragezeichen ein einzelnes Zeichen in einem Ordnernamen. Nachdem die Anzahl der Ordner mit Platzhaltern und benannten Ordnern übereinstimmen, werden auch alle Unterordner einbezogen.   |`C:\MyData\my?.zip` includes `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` enthält eine beliebige Datei in `C:\somepath\P\Data` und ihren Unterordnern  <p> `C:\somepath\test0?\Data` würde eine beliebige Datei in `C:\somepath\test01\Data` und ihre Unterordner enthalten          |
-|Umgebungsvariablen <p> Die definierte Variable wird als Pfad aufgefüllt, wenn der Ausschluss ausgewertet wird.          |`%ALLUSERSPROFILE%\CustomLogFiles` würde umfassen `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`         |
+|`*` (Sternchen) <p> Bei **Einschlüssen von Dateinamen und Dateierweiterungen** ersetzt das Sternchen eine beliebige Anzahl von Zeichen und gilt nur für Dateien im letzten Ordner, der im Argument definiert wurde. <p> Bei **Ordnerausschlüssen** ersetzt das Sternchen einen einzelnen Ordner. Verwenden Sie mehrere `*` Mit Ordner-Schrägstriche, `\` um mehrere geschachtelte Ordner anzugeben. Nach dem Abgleich der Anzahl von Ordnern mit Platzhaltern und benannten Ordnern werden auch alle Unterordner eingeschlossen.   | `C:\MyData\*.txt` Enthält `C:\MyData\notes.txt` <p> `C:\somepath\*\Data` enthält alle Dateien `C:\somepath\Archives\Data` und ihre Unterordner `C:\somepath\Authorized\Data` sowie deren Unterordner. <p> `C:\Serv\*\*\Backup` enthält alle Dateien `C:\Serv\Primary\Denied\Backup` und ihre Unterordner `C:\Serv\Secondary\Allowed\Backup` sowie deren Unterordner.     |
+|`?` (Fragezeichen)  <p> Bei **Einschlüssen von Dateinamen und Dateierweiterungen** ersetzt das Fragezeichen ein einzelnes Zeichen und gilt nur für Dateien im letzten Ordner, der im Argument definiert wurde. <p> Bei **Ordnerausschlüssen** ersetzt das Fragezeichen ein einzelnes Zeichen in einem Ordnernamen. Nach dem Abgleich der Anzahl von Ordnern mit Platzhaltern und benannten Ordnern werden auch alle Unterordner eingeschlossen.   |`C:\MyData\my?.zip` Enthält `C:\MyData\my1.zip` <p> `C:\somepath\?\Data` enthält eine beliebige Datei `C:\somepath\P\Data` und deren Unterordner  <p> `C:\somepath\test0?\Data` alle Dateien `C:\somepath\test01\Data` in und deren Unterordner einschließen          |
+|Umgebungsvariablen <p> Die definierte Variable wird als Pfad aufgefüllt, wenn der Ausschluss ausgewertet wird.          |`%ALLUSERSPROFILE%\CustomLogFiles` würde folgendes einschließen: `C:\ProgramData\CustomLogFiles\Folder1\file1.txt`         |
         
 
 > [!IMPORTANT]
-> Wenn Sie ein Argument für den Dateiausschluss mit einem Argument für den Ordnerausschluss kombinieren, werden die Regeln bei der Übereinstimmung des Dateiarguments im übereinstimmenden Ordner beendet und in keinem Unterordner nach Datei übereinstimmungen suchen.
-> Sie können z. B. alle Dateien ausschließen, die mit "date" in den Ordnern und mit dem `c:\data\final\marked` `c:\data\review\marked` Rule-Argument `c:\data\*\marked\date*` beginnen.
-> Dieses Argument passt jedoch nicht zu Dateien in Unterordnern unter oder `c:\data\final\marked` `c:\data\review\marked` .
+> Wenn Sie ein Dateiausschlussargument mit einem Ordnerausschlussargument kombinieren, werden die Regeln bei der Übereinstimmung des Dateiarguments im übereinstimmenden Ordner beendet und in keinem Unterordner nach Dateiübereinstimmungen gesucht.
+> Sie können z. B. alle Dateien ausschließen, die mit "datum" in den `c:\data\final\marked` Ordnern und `c:\data\review\marked` mithilfe des Regelarguments `c:\data\*\marked\date*` beginnen.
+> Dieses Argument stimmt jedoch nicht mit Dateien in Unterordnern unter `c:\data\final\marked` oder `c:\data\review\marked` ab.
 
 <a id="review"></a>
 
 ### <a name="system-environment-variables"></a>Systemumgebungsvariablen
 
-In der folgenden Tabelle werden die Systemkontoumgebungsvariablen aufgeführt und beschrieben. 
+In der folgenden Tabelle sind die Systemkonto-Umgebungsvariablen aufgeführt und beschrieben. 
 
-| Diese Systemumgebungsvariable... | Umleitungen zu diesem |
+| Diese Systemumgebungsvariable... | Umleitungen zu diesem Thema |
 |:--|:--|
 | `%APPDATA%`| `C:\Users\UserName.DomainName\AppData\Roaming` |
 | `%APPDATA%\Microsoft\Internet Explorer\Quick Launch` | `C:\Windows\System32\config\systemprofile\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch` |
@@ -275,21 +274,21 @@ Sie können die Elemente in der Ausschlussliste mithilfe einer der folgenden Met
 - [Microsoft Endpoint Configuration Manager](/configmgr/protect/deploy-use/endpoint-antimalware-policies)
 - MpCmdRun
 - PowerShell
-- [Windows-Sicherheit App](microsoft-defender-security-center-antivirus.md)
+- [Windows-Sicherheit-App](microsoft-defender-security-center-antivirus.md)
 
 >[!IMPORTANT]
->Änderungen der Ausschlussliste, die mit Gruppenrichtlinien vorgenommen **wurden,** werden in den Listen in der Windows-Sicherheit [angezeigt.](microsoft-defender-security-center-antivirus.md)
+>Mit gruppenrichtlinien vorgenommene Ausschlusslistenänderungen werden in den Listen in der [Windows-Sicherheit-App](microsoft-defender-security-center-antivirus.md) **angezeigt.**
 >
->Änderungen, die in der Windows-Sicherheit-App **vorgenommen wurden, werden** nicht in den Gruppenrichtlinienlisten angezeigt.
+>In der Windows-Sicherheit App vorgenommene Änderungen werden nicht in den Gruppenrichtlinienlisten **angezeigt.**
 
 Wenn Sie PowerShell verwenden, können Sie die Liste auf zwei Arten abrufen:
 
-- Rufen Sie den Status aller Microsoft Defender Antivirus ab. Jede Liste wird in separaten Zeilen angezeigt, aber die Elemente in jeder Liste werden in derselben Zeile kombiniert.
-- Schreiben Sie den Status aller Einstellungen in eine Variable, und verwenden Sie diese Variable, um nur die bestimmte Liste auf aufruft, an der Sie interessiert sind. Jede Verwendung `Add-MpPreference` von wird in eine neue Zeile geschrieben.
+- Rufen Sie den Status aller Microsoft Defender Antivirus Einstellungen ab. Jede Liste wird in separaten Zeilen angezeigt, aber die Elemente in jeder Liste werden in derselben Zeile kombiniert.
+- Schreiben Sie den Status aller Einstellungen in eine Variable, und verwenden Sie diese Variable, um nur die spezifische Liste aufzurufen, an der Sie interessiert sind. Jede Verwendung `Add-MpPreference` wird in eine neue Zeile geschrieben.
 
 ### <a name="validate-the-exclusion-list-by-using-mpcmdrun"></a>Überprüfen der Ausschlussliste mithilfe von MpCmdRun
 
-Verwenden Sie den folgenden Befehl, um Ausschlüsse mit dem [dedizierten Befehlszeilentool mpcmdrun.exe](./command-line-arguments-microsoft-defender-antivirus.md?branch=v-anbic-wdav-new-mpcmdrun-options)zu überprüfen:
+Verwenden Sie den folgenden Befehl, um Ausschlüsse mit dem dedizierten [Befehlszeilentool mpcmdrun.exe](./command-line-arguments-microsoft-defender-antivirus.md?branch=v-anbic-wdav-new-mpcmdrun-options)zu überprüfen:
 
 ```DOS
 Start, CMD (Run as admin)
@@ -299,9 +298,9 @@ MpCmdRun.exe -CheckExclusion -path <path>
 ```
 
 >[!NOTE]
->Das Überprüfen von Ausschlüssen mit MpCmdRun erfordert Microsoft Defender Antivirus CAMP Version 4.18.1812.3 (veröffentlicht im Dezember 2018) oder höher.
+>Die Überprüfung von Ausschlüssen mit MpCmdRun erfordert Microsoft Defender Antivirus CAMP-Version 4.18.1812.3 (veröffentlicht im Dezember 2018) oder höher.
 
-### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Überprüfen der Liste der Ausschlüsse zusammen mit allen Microsoft Defender Antivirus einstellungen mithilfe von PowerShell
+### <a name="review-the-list-of-exclusions-alongside-all-other-microsoft-defender-antivirus-preferences-by-using-powershell"></a>Überprüfen Sie die Liste der Ausschlüsse zusammen mit allen anderen Microsoft Defender Antivirus-Einstellungen mithilfe von PowerShell.
 
 Verwenden Sie das folgende Cmdlet:
 
@@ -309,15 +308,15 @@ Verwenden Sie das folgende Cmdlet:
 Get-MpPreference
 ```
 
-Im folgenden Beispiel werden die in der Liste `ExclusionExtension` enthaltenen Elemente hervorgehoben:
+Im folgenden Beispiel werden die in der Liste enthaltenen Elemente `ExclusionExtension` hervorgehoben:
 
-![PowerShell-Ausgabe für Get-MpPreference, in der die Ausschlussliste neben anderen Einstellungen angezeigt wird](images/defender/wdav-powershell-get-exclusions-all.png)
+![PowerShell-Ausgabe für Get-MpPreference anzeigen der Ausschlussliste zusammen mit anderen Einstellungen](images/defender/wdav-powershell-get-exclusions-all.png)
 
 Weitere Informationen finden Sie unter [PowerShell-Cmdlets verwenden, um Microsoft Defender Antivirus zu konfigurieren und auszuführen](use-powershell-cmdlets-microsoft-defender-antivirus.md) und unter [Defender-Cmdlets](/powershell/module/defender/).
 
 ### <a name="retrieve-a-specific-exclusions-list-by-using-powershell"></a>Abrufen einer bestimmten Ausschlussliste mithilfe von PowerShell
 
-Verwenden Sie den folgenden Codeausschnitt (geben Sie jede Zeile als separaten Befehl ein); Ersetzen **Sie WDAVprefs** durch die Bezeichnung, die Sie der Variablen nennen möchten:
+Verwenden Sie den folgenden Codeausschnitt (geben Sie jede Zeile als separaten Befehl ein); Ersetzen Sie **WDAVprefs** durch die Bezeichnung, die Sie für die Variable verwenden möchten:
 
 ```PowerShell
 $WDAVprefs = Get-MpPreference
@@ -335,24 +334,24 @@ Weitere Informationen finden Sie unter [PowerShell-Cmdlets verwenden, um Microso
 
 ## <a name="validate-exclusions-lists-with-the-eicar-test-file"></a>Überprüfen von Ausschlusslisten mit der EICAR-Testdatei
 
-Sie können überprüfen, ob Ihre Ausschlusslisten funktionieren, indem Sie PowerShell mit dem Cmdlet oder der .NET WebClient-Klasse verwenden, um `Invoke-WebRequest` eine Testdatei herunterzuladen.
+Sie können überprüfen, ob Ihre Ausschlusslisten funktionieren, indem Sie PowerShell mit dem `Invoke-WebRequest` Cmdlet oder der .NET WebClient-Klasse verwenden, um eine Testdatei herunterzuladen.
 
-Ersetzen Sie im folgenden PowerShell-Codeausschnitt *test.txt* durch eine Datei, die Ihren Ausschlussregeln entspricht. Wenn Sie beispielsweise die Erweiterung ausgeschlossen `.testing` haben, ersetzen Sie `test.txt` durch `test.testing` . Wenn Sie einen Pfad testen, stellen Sie sicher, dass Sie das Cmdlet innerhalb dieses Pfads ausführen.
+Ersetzen Sie im folgenden PowerShell-Codeausschnitt *test.txt* durch eine Datei, die Ihren Ausschlussregeln entspricht. Wenn Sie die Erweiterung beispielsweise ausgeschlossen `.testing` haben, ersetzen Sie `test.txt` sie durch `test.testing` . Wenn Sie einen Pfad testen, stellen Sie sicher, dass Sie das Cmdlet innerhalb dieses Pfads ausführen.
 
 ```PowerShell
 Invoke-WebRequest "http://www.eicar.org/download/eicar.com.txt" -OutFile "test.txt"
 ```
 
-Wenn Microsoft Defender Antivirus Schadsoftware meldet, funktioniert die Regel nicht. Wenn kein Bericht über Schadsoftware vorhanden ist und die heruntergeladene Datei vorhanden ist, funktioniert der Ausschluss. Sie können die Datei öffnen, um zu bestätigen, dass die Inhalte mit den auf der [EICAR-Testdateiwebsite beschriebenen Inhalten identisch sind.](http://www.eicar.org/86-0-Intended-use.html)
+Wenn Microsoft Defender Antivirus Schadsoftware meldet, funktioniert die Regel nicht. Wenn kein Bericht über Schadsoftware vorhanden ist und die heruntergeladene Datei vorhanden ist, funktioniert der Ausschluss. Sie können die Datei öffnen, um zu bestätigen, dass der Inhalt mit dem identisch ist, was auf der [EICAR-Testdateiwebsite](http://www.eicar.org/86-0-Intended-use.html)beschrieben wird.
 
-Sie können auch den folgenden #A0 verwenden, der die .NET WebClient-Klasse aufruft, um die Testdatei herunterzuladen – wie beim Cmdlet. Ersetzen Siec:\test.txtdurch eine Datei, die der zu überprüfenden Regel `Invoke-WebRequest` entspricht: 
+Sie können auch den folgenden PowerShell-Code verwenden, der die .NET WebClient-Klasse aufruft, um die Testdatei herunterzuladen – wie beim `Invoke-WebRequest` Cmdlet; ersetzen Sie *c:\test.txt* durch eine Datei, die der regel entspricht, die Sie überprüfen:
 
 ```PowerShell
 $client = new-object System.Net.WebClient
 $client.DownloadFile("http://www.eicar.org/download/eicar.com.txt","c:\test.txt")
 ```
 
-Wenn Sie keinen Internetzugriff haben, können Sie eine eigene EICAR-Testdatei erstellen, indem Sie die EICAR-Zeichenfolge mit dem folgenden PowerShell-Befehl in eine neue Textdatei schreiben:
+Wenn Sie keinen Internetzugriff haben, können Sie Eine eigene EICAR-Testdatei erstellen, indem Sie die EICAR-Zeichenfolge mit dem folgenden PowerShell-Befehl in eine neue Textdatei schreiben:
 
 ```PowerShell
 [io.file]::WriteAllText("test.txt",'X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*')
@@ -364,5 +363,5 @@ Sie können die Zeichenfolge auch in eine leere Textdatei kopieren und versuchen
 
 - [Konfigurieren und Überprüfen von Ausschlüssen in Microsoft Defender Antivirus Scans](configure-exclusions-microsoft-defender-antivirus.md)
 - [Konfigurieren und Überprüfen von Ausschlüssen für Dateien, die von Prozessen geöffnet werden](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Konfigurieren Microsoft Defender Antivirus Ausschlüssen auf Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
+- [Konfigurieren Microsoft Defender Antivirus Ausschlüsse auf Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)
 - [Häufige Fehler, die beim Festlegen von Ausschlüssen vermieden werden sollten](common-exclusion-mistakes-microsoft-defender-antivirus.md)

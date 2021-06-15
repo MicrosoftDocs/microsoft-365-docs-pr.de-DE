@@ -1,73 +1,72 @@
 ---
-title: Konfigurieren Microsoft Defender Antivirus Ausschlüssen auf Windows Server
+title: Konfigurieren Microsoft Defender Antivirus Ausschlüsse auf Windows Server
 ms.reviewer: ''
 manager: dansimp
-description: Windows Server enthält automatische Ausschlüsse, basierend auf der Serverrolle. Sie können auch benutzerdefinierte Ausschlüsse hinzufügen.
-keywords: Ausschlüsse, Server, automatische Ausschlüsse, automatisch, benutzerdefinierte, Scans, Microsoft Defender Antivirus
+description: Windows Der Server enthält automatische Ausschlüsse, basierend auf der Serverrolle. Sie können auch benutzerdefinierte Ausschlüsse hinzufügen.
+keywords: Ausschlüsse, Server, automatische Ausschlüsse, automatisch, benutzerdefiniert, Scans, Microsoft Defender Antivirus
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
+ms.technology: mde
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 author: denisebmsft
 ms.author: deniseb
-ms.custom: nextgen
-ms.technology: mde
-ms.date: 02/10/2021
 ms.topic: article
-ms.openlocfilehash: f82da8eb0dcba39404c2b7f191e166aa78357cee
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.custom: nextgen
+ms.date: 02/10/2021
+ms.openlocfilehash: 31d5c22d11a28c9604b2be3145ebd46715a6e5b3
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274760"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925515"
 ---
-# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Konfigurieren Microsoft Defender Antivirus Ausschlüssen auf Windows Server
+# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a>Konfigurieren Microsoft Defender Antivirus Ausschlüsse auf Windows Server
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 
-Microsoft Defender Antivirus auf Windows Server 2016 und Windows Server 2019 werden Sie automatisch bei bestimmten Ausschlüssen registriert, die durch ihre angegebene Serverrolle definiert werden. Diese Ausschlüsse werden nicht in den Standardausschlusslisten angezeigt, die in der Windows-Sicherheit [angezeigt werden.](microsoft-defender-security-center-antivirus.md)
+Microsoft Defender Antivirus auf Windows Server 2016 und Windows Server 2019 registriert Sie automatisch bei bestimmten Ausschlüssen, wie von der angegebenen Serverrolle definiert. Diese Ausschlüsse werden nicht in den standardmäßigen Ausschlusslisten angezeigt, die in der [Windows-Sicherheit App](microsoft-defender-security-center-antivirus.md)angezeigt werden.
 
 > [!NOTE]
-> Automatische Ausschlüsse gelten nur für die Überprüfung des Echtzeitschutzes (Real-Time Protection, RTP). Automatische Ausschlüsse werden bei einer Vollständig-/Schnell- oder Bei-Bedarf-Überprüfung nicht berücksichtigt.
+> Automatische Ausschlüsse gelten nur für RTP-Scans (Real-Time Protection). Automatische Ausschlüsse werden während einer Vollständig-/Schnell- oder Bedarfsüberprüfung nicht berücksichtigt.
 
-Zusätzlich zu serverrolledefinierten automatischen Ausschlüssen können Sie benutzerdefinierte Ausschlüsse hinzufügen oder entfernen. Lesen Sie dazu die folgenden Artikel:
-- [Konfigurieren und Überprüfen von Ausschlüssen basierend auf Dateinamen, Erweiterung und Ordnerspeicherort](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+Zusätzlich zu automatischen Ausschlüssen, die durch die Serverrolle definiert sind, können Sie benutzerdefinierte Ausschlüsse hinzufügen oder entfernen. Lesen Sie dazu die folgenden Artikel:
+- [Konfigurieren und Überprüfen von Ausschlüssen basierend auf Dateiname, Erweiterung und Ordnerspeicherort](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Konfigurieren und Überprüfen von Ausschlüssen für Dateien, die von Prozessen geöffnet werden](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-## <a name="a-few-points-to-keep-in-mind"></a>Einige Punkte, die Sie beachten sollten
+## <a name="a-few-points-to-keep-in-mind"></a>Ein paar Punkte, die Sie beachten sollten
 
 Beachten Sie die folgenden wichtigen Punkte:
 
 - Benutzerdefinierte Ausschlüsse haben Vorrang vor automatischen Ausschlüssen.
-- Automatische Ausschlüsse gelten nur für die Überprüfung des Echtzeitschutzes (Real-Time Protection, RTP). Automatische Ausschlüsse werden bei einer Vollständig-/Schnell- oder Bei-Bedarf-Überprüfung nicht berücksichtigt.
-- Benutzerdefinierte und doppelte Ausschlüsse stehen nicht in Konflikt mit automatischen Ausschlüssen.
-- Microsoft Defender Antivirus verwendet die Tools für die Bereitstellungsimagewartung und -verwaltung (Deployment Image Servicing and Management, DISM), um zu bestimmen, welche Rollen auf Ihrem Computer installiert sind.
+- Automatische Ausschlüsse gelten nur für RTP-Scans (Real-Time Protection). Automatische Ausschlüsse werden während einer Vollständig-/Schnell- oder Bedarfsüberprüfung nicht berücksichtigt.
+- Benutzerdefinierte und doppelte Ausschlüsse führen nicht zu Konflikten mit automatischen Ausschlüssen.
+- Microsoft Defender Antivirus ermittelt mithilfe der DISM-Tools (Deployment Image Servicing and Management), welche Rollen auf Ihrem Computer installiert sind.
 
-## <a name="opt-out-of-automatic-exclusions"></a>Abmelden automatischer Ausschlüsse
+## <a name="opt-out-of-automatic-exclusions"></a>Abmelden von automatischen Ausschlüssen
 
-In Windows Server 2016 und Windows Server 2019 schließen die vordefinierten Ausschlüsse von Security Intelligence-Updates nur die Standardpfade für eine Rolle oder ein Feature aus. Wenn Sie eine Rolle oder ein Feature in einem benutzerdefinierten Pfad installiert haben oder den Satz von Ausschlüssen manuell steuern möchten, müssen Sie die automatischen Ausschlüsse, die in Sicherheitsintelligenzupdates übermittelt werden, abmelden. Beachten Sie jedoch, dass die automatisch zugestellten Ausschlüsse für Windows Server 2016 2019-Rollen optimiert sind. Weitere [Empfehlungen zum Definieren von Ausschlüssen vor](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) dem Definieren der Ausschlusslisten finden Sie unter Empfehlungen.
+In Windows Server 2016 und Windows Server 2019 schließen die vordefinierten Ausschlüsse, die von Sicherheitsupdates bereitgestellt werden, nur die Standardpfade für eine Rolle oder ein Feature aus. Wenn Sie eine Rolle oder ein Feature in einem benutzerdefinierten Pfad installiert haben oder den Satz von Ausschlüssen manuell steuern möchten, stellen Sie sicher, dass Sie die automatischen Ausschlüsse, die in Security Intelligence-Updates bereitgestellt werden, deaktivieren. Beachten Sie jedoch, dass die automatisch übermittelten Ausschlüsse für Windows Server 2016 und 2019-Rollen optimiert sind. Informationen zum [Definieren von Ausschlüssen](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) finden Sie unter Empfehlungen, bevor Sie Ihre Ausschlusslisten definieren.
 
 > [!WARNING]
-> Das Abmelden automatischer Ausschlüsse kann sich negativ auf die Leistung auswirken oder zu Datenbeschädigungen führen. Die automatisch zugestellten Ausschlüsse sind für Windows Server 2016 und Windows Server 2019-Rollen optimiert.
+> Das Deaktivieren automatischer Ausschlüsse kann sich negativ auf die Leistung auswirken oder zu einer Datenbeschädigung führen. Die automatisch übermittelten Ausschlüsse sind für Windows Server 2016- und Windows Server 2019-Rollen optimiert.
 
-Da vordefinierte Ausschlüsse nur Standardpfade **ausschließen,** müssen Sie, wenn Sie NTDS und SYSVOL auf ein anderes Laufwerk oder einen anderen Pfad *verschieben,* der sich vom ursprünglichen Pfad unterscheiden, mithilfe der hier gezeigten Informationen manuell Ausschlüsse [hinzufügen.](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension)
+Da vordefinierte Ausschlüsse **standardpfade** nur ausschließen, müssen Sie, wenn Sie NTDS und SYSVOL auf ein anderes Laufwerk oder einen anderen Pfad verschieben, *der vom ursprünglichen Pfad abweicht,* ausschlüsse manuell mithilfe der hier [aufgeführten](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension) Informationen hinzufügen.
 
 Sie können die automatischen Ausschlusslisten mit Gruppenrichtlinien, PowerShell-Cmdlets und WMI deaktivieren.
 
-### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Verwenden von Gruppenrichtlinien zum Deaktivieren der Liste automatischer Ausschlüsse auf Windows Server 2016 und Windows Server 2019
+### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Verwenden von Gruppenrichtlinien zum Deaktivieren der Liste der automatischen Ausschlüsse auf Windows Server 2016 und Windows Server 2019
 
-1. Öffnen Sie auf dem Computer, der Ihre Gruppenrichtlinie verwaltet, die [Gruppenrichtlinien-Verwaltungskonsole](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt, das Sie konfigurieren möchten, und klicken Sie dann auf **Bearbeiten**.
-2. Wechseln Sie **im Gruppenrichtlinienverwaltungs-Editor** zu **Computerkonfiguration,** und klicken Sie dann auf **Administrative Vorlagen**.
-3. Erweitern Sie die **Struktur, Windows Komponenten**  >  **Microsoft Defender Antivirus**  >  **Ausschlüsse .**
-4. Doppelklicken Sie **auf Automatische Ausschlüsse deaktivieren,** und legen Sie die Option auf **Aktiviert .** Klicken Sie anschließend auf **OK**. 
+1. Öffnen Sie auf dem Computer, der Ihre Gruppenrichtlinie verwaltet, die [Gruppenrichtlinien-Verwaltungskonsole](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)). Klicken Sie mit der rechten Maustaste auf das Gruppenrichtlinienobjekt, das Sie konfigurieren möchten, und klicken Sie dann auf **"Bearbeiten".**
+2. Wechseln Sie im **Gruppenrichtlinienverwaltungs-Editor** zur **Computerkonfiguration,** und klicken Sie dann auf **"Administrative Vorlagen".**
+3. Erweitern Sie die Struktur bis Windows **Komponenten**  >  **Microsoft Defender Antivirus**  >  **Ausschlüssen.**
+4. Doppelklicken Sie auf **"Automatische Ausschlüsse deaktivieren",** und legen Sie die Option auf **"Aktiviert"** fest. Klicken Sie anschließend auf **OK**. 
 
-### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-2019"></a>Verwenden von PowerShell-Cmdlets zum Deaktivieren der Liste automatischer Ausschlüsse auf Windows Server 2016 und 2019
+### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-2019"></a>Verwenden von PowerShell-Cmdlets zum Deaktivieren der Liste der automatischen Ausschlüsse in Windows Server 2016 und 2019
 
 Verwenden Sie die folgenden Cmdlets:
 
@@ -77,37 +76,37 @@ Set-MpPreference -DisableAutoExclusions $true
 
 Weitere Informationen hierzu finden Sie in den folgenden Ressourcen:
 
-- [Verwenden Sie PowerShell-Cmdlets zum Konfigurieren](use-powershell-cmdlets-microsoft-defender-antivirus.md)und Ausführen von Microsoft Defender Antivirus.
-- [Verwenden von PowerShell mit Microsoft Defender Antivirus](/powershell/module/defender/).
+- [Verwenden Sie PowerShell-Cmdlets, um Microsoft Defender Antivirus zu konfigurieren und auszuführen.](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+- [Verwenden Sie PowerShell mit Microsoft Defender Antivirus](/powershell/module/defender/).
 
-### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Verwenden Windows Management Instruction (WMI) zum Deaktivieren der Liste automatischer Ausschlüsse auf Windows Server 2016 und Windows Server 2019
+### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a>Verwenden Windows Management Instruction (WMI) zum Deaktivieren der Liste der automatischen Ausschlüsse auf Windows Server 2016 und Windows Server 2019
 
-Verwenden Sie **die Set-Methode** [der MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) für die folgenden Eigenschaften:
+Verwenden Sie die **Set-Methode** der [MSFT_MpPreference-Klasse](/previous-versions/windows/desktop/defender/msft-mppreference) für die folgenden Eigenschaften:
 
 ```WMI
 DisableAutoExclusions
 ```
 
-Weitere Informationen und zulässige Parameter finden Sie im Folgenden:
+Weitere Informationen und zulässige Parameter finden Sie in den folgenden Themen:
 - [Windows Defender WMIv2-APIs](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="list-of-automatic-exclusions"></a>Liste automatischer Ausschlüsse
+## <a name="list-of-automatic-exclusions"></a>Liste der automatischen Ausschlüsse
 
-Die folgenden Abschnitte enthalten die Ausschlüsse, die mit automatischen Ausschlüssen dateipfade und Dateitypen zugestellt werden.
+Die folgenden Abschnitte enthalten die Ausschlüsse, die mit automatischen Ausschlüssen von Dateipfaden und Dateitypen bereitgestellt werden.
 
 ### <a name="default-exclusions-for-all-roles"></a>Standardausschlüsse für alle Rollen
 
-In diesem Abschnitt werden die Standardausschlüsse für alle Windows Server 2016 und 2019-Rollen aufgeführt.
+In diesem Abschnitt werden die Standardausschlüsse für alle Rollen Windows Server 2016 und 2019 aufgeführt.
 
 > [!NOTE]
-> Die Standardspeicherorte können sich von den in diesem Artikel aufgeführten Unterscheiden unterscheiden.
+> Die Standardspeicherorte können sich von den in diesem Artikel aufgeführten Speicherorten unterscheiden.
 
 #### <a name="windows-tempedb-files"></a>Windows "temp.edb"-Dateien
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
 - `%ProgramData%\Microsoft\Search\Data\Applications\Windows\*\*.log`
 
-#### <a name="windows-update-files-or-automatic-update-files"></a>Windows Aktualisieren von Dateien oder Automatischen Updatedateien
+#### <a name="windows-update-files-or-automatic-update-files"></a>Windows Aktualisieren von Dateien oder Dateien mit automatischer Aktualisierung
 
 - `%windir%\SoftwareDistribution\Datastore\*\Datastore.edb`
 - `%windir%\SoftwareDistribution\Datastore\*\edb.chk`
@@ -115,7 +114,7 @@ In diesem Abschnitt werden die Standardausschlüsse für alle Windows Server 201
 - `%windir%\SoftwareDistribution\Datastore\*\Edb\*.jrs`
 - `%windir%\SoftwareDistribution\Datastore\*\Res\*.log`
 
-#### <a name="windows-security-files"></a>Windows-Sicherheit Dateien
+#### <a name="windows-security-files"></a>Windows-Sicherheit-Dateien
 
 - `%windir%\Security\database\*.chk`
 - `%windir%\Security\database\*.edb`
@@ -137,30 +136,30 @@ In diesem Abschnitt werden die Standardausschlüsse für alle Windows Server 201
 - `%systemroot%\System32\LogFiles\`
 - `%systemroot%\SysWow64\LogFiles\`
 
-#### <a name="file-replication-service-frs-exclusions"></a>Ausschlüsse des Dateireplikationsdiensts (File Replication Service, FRS)
+#### <a name="file-replication-service-frs-exclusions"></a>Dateireplikationsdienstausschlüsse (File Replication Service, FRS)
 
-- Dateien im Arbeitsordner des Dateireplikationsdiensts (File Replication Service, FRS). Der Arbeitsordner "FRS" wird im Registrierungsschlüssel angegeben. `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Working Directory`
+- Dateien im Arbeitsordner des Dateireplikationsdiensts (File Replication Service, FRS). Der FRS-Arbeitsordner wird im Registrierungsschlüssel angegeben. `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Working Directory`
 
   - `%windir%\Ntfrs\jet\sys\*\edb.chk`
   - `%windir%\Ntfrs\jet\*\Ntfrs.jdb`
   - `%windir%\Ntfrs\jet\log\*\*.log`
 
-- FRS-Datenbankprotokolldateien. Der Ordner "FRS-Datenbankprotokolldatei" wird im Registrierungsschlüssel angegeben. `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Ntfrs\Parameters\DB Log File Directory`
+- FRS-Datenbankprotokolldateien. Der Frs-Datenbankprotokollordner wird im Registrierungsschlüssel angegeben. `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Ntfrs\Parameters\DB Log File Directory`
 
   - `%windir%\Ntfrs\*\Edb\*.log`
 
-- Der FrS-Stagingordner. Der Stagingordner wird im Registrierungsschlüssel angegeben. `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Replica Sets\GUID\Replica Set Stage`
+- Der FRS-Stagingordner. Der Stagingordner wird im Registrierungsschlüssel angegeben. `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Replica Sets\GUID\Replica Set Stage`
 
   - `%systemroot%\Sysvol\*\Ntfrs_cmp*\`
 
-- Der Ordner "FRS preinstall". Dieser Ordner wird durch den Ordner angegeben. `Replica_root\DO_NOT_REMOVE_NtFrs_PreInstall_Directory`
+- Der FRS-Vorinstallationsordner. Dieser Ordner wird vom Ordner angegeben. `Replica_root\DO_NOT_REMOVE_NtFrs_PreInstall_Directory`
 
   - `%systemroot%\SYSVOL\domain\DO_NOT_REMOVE_NtFrs_PreInstall_Directory\*\Ntfrs*\`
 
-- Die DfSR-Datenbank (Distributed File System Replication) und arbeitsordner. Diese Ordner werden durch den Registrierungsschlüssel angegeben. `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`
+- Die DFSR-Datenbank (Distributed File System Replication) und Arbeitsordner. Diese Ordner werden durch den Registrierungsschlüssel angegeben. `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`
 
   > [!NOTE]
-  > Benutzerdefinierte Speicherorte finden Sie [unter Opt out of automatic exclusions](#opt-out-of-automatic-exclusions).
+  > Informationen zu benutzerdefinierten Speicherorten finden Sie unter ["Automatische Ausschlüsse deaktivieren".](#opt-out-of-automatic-exclusions)
 
   - `%systemdrive%\System Volume Information\DFSR\$db_normal$`
   - `%systemdrive%\System Volume Information\DFSR\FileIDTable_*`
@@ -182,7 +181,7 @@ In diesem Abschnitt werden die Standardausschlüsse für alle Windows Server 201
 
 #### <a name="hyper-v-exclusions"></a>Hyper-V-Ausschlüsse
 
-In der folgenden Tabelle sind die Dateitypausschlüsse, Ordnerausschlüsse und Prozessausschlüsse aufgeführt, die bei der Installation der Hyper-V-Rolle automatisch zugestellt werden.
+In der folgenden Tabelle sind die Dateitypausschlüsse, Ordnerausschlüsse und Prozessausschlüsse aufgeführt, die bei der Installation der Hyper-V-Rolle automatisch übermittelt werden.
 
 |Dateitypausschlüsse |Ausschlüsse von Ordnern  | Process exclusions |
 |:--|:--|:--|
@@ -203,7 +202,7 @@ In der folgenden Tabelle sind die Dateitypausschlüsse, Ordnerausschlüsse und P
 
 ### <a name="active-directory-exclusions"></a>Active Directory-Ausschlüsse
 
-In diesem Abschnitt werden die Ausschlüsse aufgeführt, die bei der Installation von Active Directory-Domänendiensten automatisch zugestellt werden.
+In diesem Abschnitt werden die Ausschlüsse aufgeführt, die bei der Installation von Active Directory Domain Services automatisch übermittelt werden.
 
 #### <a name="ntds-database-files"></a>NTDS-Datenbankdateien
 
@@ -236,7 +235,7 @@ Dieser Ordner wird im Registrierungsschlüssel angegeben. `HKEY_LOCAL_MACHINE\Sy
 
 ### <a name="dhcp-server-exclusions"></a>DHCP-Serverausschlüsse
 
-In diesem Abschnitt werden die Ausschlüsse aufgeführt, die bei der Installation der DHCP-Serverrolle automatisch zugestellt werden. Die Speicherorte der DHCP -Server-Datei werden durch die *Parameter DatabasePath,* *DhcpLogFilePath* und *BackupDatabasePath* im Registrierungsschlüssel angegeben. `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`
+In diesem Abschnitt werden die Ausschlüsse aufgeführt, die bei der Installation der DHCP-Serverrolle automatisch übermittelt werden. Die Speicherorte der DHCP-Serverdateien werden durch die Parameter *DatabasePath,* *DhcpLogFilePath* und *BackupDatabasePath* im Registrierungsschlüssel angegeben. `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`
 
 - `%systemroot%\System32\DHCP\*\*.mdb`
 - `%systemroot%\System32\DHCP\*\*.pat`
@@ -246,7 +245,7 @@ In diesem Abschnitt werden die Ausschlüsse aufgeführt, die bei der Installatio
 
 ### <a name="dns-server-exclusions"></a>DNS-Serverausschlüsse
 
-In diesem Abschnitt werden die Datei- und Ordnerausschlüsse sowie die Prozessausschlüsse aufgeführt, die bei der Installation der DNS-Serverrolle automatisch zugestellt werden.
+In diesem Abschnitt werden die Datei- und Ordnerausschlüsse sowie die Prozessausschlüsse aufgeführt, die automatisch übermittelt werden, wenn Sie die DNS-Serverrolle installieren.
 
 #### <a name="file-and-folder-exclusions-for-the-dns-server-role"></a>Datei- und Ordnerausschlüsse für die DNS-Serverrolle
 
@@ -259,17 +258,17 @@ In diesem Abschnitt werden die Datei- und Ordnerausschlüsse sowie die Prozessau
 
 - `%systemroot%\System32\dns.exe`
 
-### <a name="file-and-storage-services-exclusions"></a>Datei- und Storage Services-Ausschlüsse
+### <a name="file-and-storage-services-exclusions"></a>Datei- und Storage dienstausschlüsse
 
-In diesem Abschnitt werden die Datei- und Ordnerausschlüsse aufgeführt, die automatisch zugestellt werden, wenn Sie die Rolle Datei und Storage installieren. Die unten aufgeführten Ausschlüsse enthalten keine Ausschlüsse für die Clusterrolle.
+In diesem Abschnitt werden die Datei- und Ordnerausschlüsse aufgeführt, die automatisch übermittelt werden, wenn Sie die Rolle "Datei" und "Storage Dienste" installieren. Die unten aufgeführten Ausschlüsse enthalten keine Ausschlüsse für die Clusterrolle.
 
 - `%SystemDrive%\ClusterStorage`
 - `%clusterserviceaccount%\Local Settings\Temp`
 - `%SystemDrive%\mscs`
 
-### <a name="print-server-exclusions"></a>Print Server-Ausschlüsse
+### <a name="print-server-exclusions"></a>Druckserverausschlüsse
 
-In diesem Abschnitt werden die Dateitypausschlüsse, Ordnerausschlüsse und Prozessausschlüsse aufgeführt, die bei der Installation der Print Server-Rolle automatisch zugestellt werden.
+In diesem Abschnitt werden die Dateitypausschlüsse, Ordnerausschlüsse und Prozessausschlüsse aufgeführt, die automatisch übermittelt werden, wenn Sie die Rolle "Druckserver" installieren.
 
 #### <a name="file-type-exclusions"></a>Dateitypausschlüsse
 
@@ -288,7 +287,7 @@ Dieser Ordner wird im Registrierungsschlüssel angegeben. `HKEY_LOCAL_MACHINE\SY
 
 ### <a name="web-server-exclusions"></a>Webserverausschlüsse
 
-In diesem Abschnitt werden die Ordnerausschlüsse und Prozessausschlüsse aufgeführt, die bei der Installation der Webserverrolle automatisch zugestellt werden.
+In diesem Abschnitt werden die Ordnerausschlüsse und Prozessausschlüsse aufgeführt, die automatisch übermittelt werden, wenn Sie die Webserverrolle installieren.
 
 #### <a name="folder-exclusions"></a>Ausschlüsse von Ordnern
 
@@ -304,16 +303,16 @@ In diesem Abschnitt werden die Ordnerausschlüsse und Prozessausschlüsse aufgef
 - `%SystemRoot%\SysWOW64\inetsrv\w3wp.exe`
 - `%SystemDrive%\PHP5433\php-cgi.exe`
 
-#### <a name="turning-off-scanning-of-files-in-the-sysvolsysvol-folder-or-the-sysvol_dfsrsysvol-folder"></a>Deaktivieren der Überprüfung von Dateien im Ordner Sysvol\Sysvol oder im Ordner SYSVOL_DFSR\Sysvol
+#### <a name="turning-off-scanning-of-files-in-the-sysvolsysvol-folder-or-the-sysvol_dfsrsysvol-folder"></a>Deaktivieren der Überprüfung von Dateien im Ordner "Sysvol\Sysvol" oder im Ordner "SYSVOL_DFSR\Sysvol"
 
-Der aktuelle Speicherort des Oder-Ordners und aller Unterordner ist das `Sysvol\Sysvol` `SYSVOL_DFSR\Sysvol` Dateisystemreparationsziel des Replikatsatzstamms. Die `Sysvol\Sysvol` Ordner und verwenden standardmäßig die folgenden `SYSVOL_DFSR\Sysvol` Speicherorte:
+Der aktuelle Speicherort des `Sysvol\Sysvol` Ordners oder `SYSVOL_DFSR\Sysvol` ordners und alle Unterordner ist das Dateisystem-Analyseziel des Stamms der Replikatgruppe. Die `Sysvol\Sysvol` `SYSVOL_DFSR\Sysvol` Ordner und Ordner verwenden standardmäßig die folgenden Speicherorte:
 
 - `%systemroot%\Sysvol\Domain`
 - `%systemroot%\Sysvol_DFSR\Domain`
 
-Auf den Pfad zum aktuell aktiven Wird von der NETLOGON-Freigabe verwiesen und kann durch den `SYSVOL` SysVol-Wertnamen im folgenden Unterschlüssel bestimmt werden: `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`
+Der Pfad zu der aktuell aktiven `SYSVOL` Wird von der NETLOGON-Freigabe referenziert und kann durch den SysVol-Wertnamen im folgenden Unterschlüssel bestimmt werden: `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`
 
-Schließen Sie die folgenden Dateien aus diesem Ordner und allen unterordnern aus:
+Schließen Sie die folgenden Dateien aus diesem Ordner und allen unteren Ordnern aus:
 
 - `*.adm`
 - `*.admx`
@@ -328,7 +327,7 @@ Schließen Sie die folgenden Dateien aus diesem Ordner und allen unterordnern au
 
 ### <a name="windows-server-update-services-exclusions"></a>Windows Server Update Services Ausschlüsse
 
-In diesem Abschnitt werden die Ordnerausschlüsse aufgeführt, die automatisch bei der Installation der Windows Server Update Services (WSUS) zugestellt werden. Der Ordner WSUS wird im Registrierungsschlüssel angegeben. `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
+In diesem Abschnitt werden die Ordnerausschlüsse aufgeführt, die automatisch übermittelt werden, wenn Sie die Rolle Windows Server Update Services (WSUS) installieren. Der WSUS-Ordner wird im Registrierungsschlüssel angegeben. `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`
 
 - `%systemroot%\WSUS\WSUSContent`
 - `%systemroot%\WSUS\UpdateServicesDBFiles`
@@ -338,8 +337,8 @@ In diesem Abschnitt werden die Ordnerausschlüsse aufgeführt, die automatisch b
 ## <a name="see-also"></a>Siehe auch
 
 - [Konfigurieren und Überprüfen von Ausschlüssen für Microsoft Defender Antivirus Scans](configure-exclusions-microsoft-defender-antivirus.md)
-- [Konfigurieren und Überprüfen von Ausschlüssen basierend auf Dateinamen, Erweiterung und Ordnerspeicherort](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+- [Konfigurieren und Überprüfen von Ausschlüssen basierend auf Dateiname, Erweiterung und Ordnerspeicherort](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
 - [Konfigurieren und Überprüfen von Ausschlüssen für Dateien, die von Prozessen geöffnet werden](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 - [Häufige Fehler, die beim Festlegen von Ausschlüssen vermieden werden sollten](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [Anpassen, Initiieren und Überprüfen der Ergebnisse Microsoft Defender Antivirus Überprüfungen und Korrekturen](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [Anpassen, Initiieren und Überprüfen der Ergebnisse von Microsoft Defender Antivirus Überprüfungen und Korrekturen](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

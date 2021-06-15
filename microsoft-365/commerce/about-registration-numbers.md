@@ -20,12 +20,12 @@ ms.custom:
 - commerce_purchase
 description: Erfahren Sie mehr über Registrierungsnummern und Unterüberprüfungsbenachrichtigungen, wenn Sie Microsoft-Produkte oder -Dienste kaufen.
 ms.date: 03/17/2021
-ms.openlocfilehash: 93cba6c1eebf0b41a94d6a6e3aac83693218f407
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: ad1d4fe68ad42a33a2cdfa8b78c1bb5b168e9059
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52795970"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52925223"
 ---
 # <a name="about-registration-numbers-and-under-review-notifications"></a>Informationen zu Registrierungsnummern und Benachrichtigungen, die überprüft werden
 
@@ -69,31 +69,31 @@ Der folgende Screenshot zeigt die Benachrichtigung, die auf der Seite mit den De
 
 Die folgende Tabelle enthält Beispiele der Registrierungsnummern, die für jedes Land gesammelt werden.  In Fällen, in denen mehrere IDs aufgelistet sind, ist nur eine erforderlich.
 
-| Land oder Region | Details |  |  |  |  |
-|:--|:--|:--|:--|:--|:--|
-| **Armenien** | INN – Steueridentifikationsnummer<br>Umsatzsteuernummer – auch als Umsatzsteuer-Registrierungsnummer bezeichnet. Dies ist die eindeutige Nummer, die eine subjektierbare Person (Geschäftsperson) oder eine nicht steuerbare juristische Person identifiziert, die für die Umsatzsteuer registriert ist.<br>Öffentliche Dienstnummer |  |  | |  |
-| **Aserbaidschan**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Azerbaijan-TIN.pdf) – Steueridentifikationsnummer<br>INN – Steueridentifikationsnummer |  |  |  |  |
-| **Belarus (Weißrussland)**  | UNP – Dies ist eine neunstellige Zahl (numerisch für Organisationen, alphanumerisch für Einzelpersonen), die einen Regionsbezeichner, eine seriell pro Region und eine Prüfziffer enthält. |  |  |  |  |
-|**Brasilien** | [CNPJ](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Brazil-TIN.pdf) – (Cadastro Nacional da Pessoa Photoídica, or National Registry of Legal Entities). Dies ist eine Identifikationsnummer, die brasilianischen Unternehmen vom Department of Federal Revenue of Brazil ausgestellt wurde.  |  |  |  |  |
-| **China** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/China-TIN.pdf) – Steueridentifikationsnummer |  |  |  |  |
-| **Ungarn**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Hungary-TIN.pdf) – Steueridentifikationsnummer |  |  |  |  |
-| **Indien** | Steuer-ID<br>[PAN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/India-TIN.pdf) – (Anwesenheit in allen Staaten) PAN India Engagement bedeutet, dass es eine Organisation gibt, die an mehreren Standorten in Indien tätig ist. |  |  |  |  |
-| **Irak** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – Steueridentifikationsnummer |  |  |  |  |
-| **Kasachstan**  | BIN – Bankidentifikationsnummer<br>IIN – Aussteller-Identifikationsnummer |  |  |  |  |
-| **Kirgisistan**  | INN – Steueridentifikationsnummer |  |  |  |  |
-| **Moldova**  | IDNO – Die eindeutige Statusidentifikationsnummer, die der juristischen Person zugewiesen ist (auch bekannt als. Steuercode).<br>IDNP – Persönlicher Code für die Geburtsdatum ("Numarul de Identificare") |  |  |  |  |
-| **Myanmar** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – Steueridentifikationsnummer |  |  |  |  |
-| **Polen**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – Steueridentifikationsnummer<br>[PESEL](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – Die in Polen verwendete nationale Identifikationsnummer (Polish Powszechny Doppelklickniczny System Ewidencji Modalności, Universal Electronic System for Registration of the Population) |  |  |  |  |
-| **Russische Föderation**  | [INN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Russia-TIN.pdf) – Steueridentifikationsnummer (Russisch "Individualiy Nomer Nalogoplatelshika") |  |  |  |  |
-| **Saudi Arabien** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Saudi-Arabia-TIN.pdf) – Steueridentifikationsnummer |  |  |  |  |
-| **Südafrika** | TRN – Steuernummer |  |  |  |  |
-| **Süd-Sudan** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – Steueridentifikationsnummer |  |  |  |  |
-| **Tadschikistan**  | INN – Steueridentifikationsnummer<br>EIN – Identifikationsnummer des Arbeitgebers<br>KPP – Dies ist ein Code, der den Grund für die Registrierung der Organisation widerspiegelt. |  |  |  |  |
-| **Thailand** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – Steueridentifikationsnummer |  |  |  |  |
-| **Türkei** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Turkey-TIN.pdf) – Steueridentifikationsnummer<br>Nin |  |  |  |  |
-| **Ukraine**  | EGRPOU<br>EDRPOU – Lokale ID |  |  |  |  |
-| **Vereinigte Arabische Emirate** | Steuer-ID<br>[Umsatzsteuernummer](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/UAE-TIN.pdf) – auch als Umsatzsteuer-Registrierungsnummer bezeichnet. Dies ist die eindeutige Nummer, die eine subjektierbare Person (Geschäftsperson) oder eine nicht steuerbare juristische Person identifiziert, die für die Umsatzsteuer registriert ist. |  |  |  |  |
-| **Vereinigte Staaten** | [EIN](https://irs.ein-forms-gov.com/?keyword=employer%20identification%20number&source=Google&network=o&device=c&devicemodel=&mobile=&adposition%5d&targetid=kwd-81501461534755:loc-190&msclkid=458d3159f6051392f5286e8e75ed79ce) – Identifikationsnummer des Arbeitgebers |  |  |  |  |
-| **Usbekistan**  | INN – Steueridentifikationsnummer |  |  |  |  |
-| **Vietnam** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – Steueridentifikationsnummer |  |  |  |  |
-| **Venezuela** | RIF – ist eine Steuernummer ("Registro de Identificación Fiscal") |  |  |  |  |
+| Land oder Region | Details |
+|:--|:--|
+| **Armenien** | INN – Steueridentifikationsnummer<br>Umsatzsteuernummer – auch als Umsatzsteuer-Registrierungsnummer bezeichnet. Dies ist die eindeutige Nummer, die eine subjektierbare Person (Geschäftsperson) oder eine nicht steuerbare juristische Person identifiziert, die für die Umsatzsteuer registriert ist.<br>Öffentliche Dienstnummer |
+| **Aserbaidschan**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Azerbaijan-TIN.pdf) – Steueridentifikationsnummer<br>INN – Steueridentifikationsnummer |
+| **Belarus (Weißrussland)**  | UNP – Dies ist eine neunstellige Zahl (numerisch für Organisationen, alphanumerisch für Einzelpersonen), die einen Regionsbezeichner, eine seriell pro Region und eine Prüfziffer enthält. |
+|**Brasilien** | [CNPJ](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Brazil-TIN.pdf) – (Cadastro Nacional da Pessoa Photoídica, or National Registry of Legal Entities). Dies ist eine Identifikationsnummer, die brasilianischen Unternehmen vom Department of Federal Revenue of Brazil ausgestellt wurde.  |
+| **China** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/China-TIN.pdf) – Steueridentifikationsnummer |
+| **Ungarn**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Hungary-TIN.pdf) – Steueridentifikationsnummer |
+| **Indien** | Steuer-ID<br>[PAN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/India-TIN.pdf) – (Anwesenheit in allen Staaten) PAN India Engagement bedeutet, dass es eine Organisation gibt, die an mehreren Standorten in Indien tätig ist. |
+| **Irak** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – Steueridentifikationsnummer |
+| **Kasachstan**  | BIN – Bankidentifikationsnummer<br>IIN – Aussteller-Identifikationsnummer |
+| **Kirgisistan**  | INN – Steueridentifikationsnummer |
+| **Moldova**  | IDNO – Die eindeutige Statusidentifikationsnummer, die der juristischen Person zugewiesen ist (auch bekannt als. Steuercode).<br>IDNP – Persönlicher Code für die Geburtsdatum ("Numarul de Identificare") |
+| **Myanmar** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – Steueridentifikationsnummer |
+| **Polen**  | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – Steueridentifikationsnummer<br>[PESEL](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Poland-TIN.pdf) – Die in Polen verwendete nationale Identifikationsnummer (Polish Powszechny Doppelklickniczny System Ewidencji Modalności, Universal Electronic System for Registration of the Population) |
+| **Russische Föderation**  | [INN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Russia-TIN.pdf) – Steueridentifikationsnummer (Russisch "Individualiy Nomer Nalogoplatelshika") |
+| **Saudi Arabien** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Saudi-Arabia-TIN.pdf) – Steueridentifikationsnummer |
+| **Südafrika** | TRN – Steuernummer |
+| **Süd-Sudan** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – Steueridentifikationsnummer |
+| **Tadschikistan**  | INN – Steueridentifikationsnummer<br>EIN – Identifikationsnummer des Arbeitgebers<br>KPP – Dies ist ein Code, der den Grund für die Registrierung der Organisation widerspiegelt. |
+| **Thailand** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – Steueridentifikationsnummer |
+| **Türkei** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/Turkey-TIN.pdf) – Steueridentifikationsnummer<br>Nin |
+| **Ukraine**  | EGRPOU<br>EDRPOU – Lokale ID |
+| **Vereinigte Arabische Emirate** | Steuer-ID<br>[Umsatzsteuernummer](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/UAE-TIN.pdf) – auch als Umsatzsteuer-Registrierungsnummer bezeichnet. Dies ist die eindeutige Nummer, die eine subjektierbare Person (Geschäftsperson) oder eine nicht steuerbare juristische Person identifiziert, die für die Umsatzsteuer registriert ist. |
+| **Vereinigte Staaten** | [EIN](https://irs.ein-forms-gov.com/?keyword=employer%20identification%20number&source=Google&network=o&device=c&devicemodel=&mobile=&adposition%5d&targetid=kwd-81501461534755:loc-190&msclkid=458d3159f6051392f5286e8e75ed79ce) – Identifikationsnummer des Arbeitgebers |
+| **Usbekistan**  | INN – Steueridentifikationsnummer |
+| **Vietnam** | [TIN](http://www.oecd.org/tax/automatic-exchange/crs-implementation-and-assistance/tax-identification-numbers/) – Steueridentifikationsnummer |
+| **Venezuela** | RIF – ist eine Steuernummer ("Registro de Identificación Fiscal") |
