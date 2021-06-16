@@ -164,7 +164,7 @@
 
 ### [Behandeln von Onboarding-Problemen]()
 #### [Behandeln von Problemen beim Onboarding](troubleshoot-onboarding.md)
-#### [Problembehandlung bei Abonnement- und Portalzugriffsproblemen](troubleshoot-onboarding-error-messages.md).
+#### [Problembehandlung bei Abonnement- und Portalzugriffsproblemen](troubleshoot-onboarding-error-messages.md)
 
 
 
@@ -234,7 +234,7 @@
 
 ### [Hostfirewallberichte in Microsoft Defender für Endpunkt](host-firewall-reporting.md)
 
-### [Verringerung der Angriffsfläche]():
+### [Verringerung der Angriffsfläche]()
 #### [Übersicht der Verringerung der Angriffsfläche](overview-attack-surface-reduction.md)
 #### [Konfigurieren der Funktionen zur Verringerung der Angriffsfläche](configure-attack-surface-reduction.md)
 #### [Weitere Informationen zu den Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md)
@@ -314,7 +314,7 @@
 #### [Hardwarebasierte Isolation]()
 ##### [Hardwarebasierte Isolation in Windows 10](overview-hardware-based-isolation.md)
 
-#### [Exploit-Schutz.]()
+#### [Exploit-Schutz]()
 ##### [Schützen von Geräten vor Exploits](exploit-protection.md)
 ##### [Auswertung des Exploit-Schutzes](evaluate-exploit-protection.md)
 ##### [Aktivieren des Exploit-Schutzes](enable-exploit-protection.md)
