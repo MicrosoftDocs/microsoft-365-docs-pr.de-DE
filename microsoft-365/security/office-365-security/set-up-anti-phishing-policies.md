@@ -17,12 +17,12 @@ ms.custom:
 description: Administratoren können sich über die Antiphishingrichtlinien informieren, die in Exchange Online Protection (EOP) und Microsoft Defender für Office 365 verfügbar sind.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 205fd5cd40d187eada4f6b87edf64c0d35f7e3b3
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 0a0c7e9ffa37c5154b8a10b9642d484011674d6a
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52788415"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964885"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Antiphishingrichtlinien in Microsoft 365
 
@@ -93,7 +93,7 @@ Die folgenden Richtlinieneinstellungen sind in Antiphishingrichtlinien in EOP un
 
 ## <a name="spoof-settings"></a>Spoofingeinstellungen
 
-Spoofing ist der Fall, wenn die Absenderadresse in einer E-Mail-Nachricht (die Absenderadresse, die in E-Mail-Clients angezeigt wird) nicht mit der Domäne der E-Mail-Quelle übereinstimmt. Weitere Informationen zum Spoofing finden Sie unter [Antispoofingschutz in Microsoft 365.](anti-spoofing-protection.md)
+Spoofing ist der Fall, wenn die Absenderadresse in einer E-Mail-Nachricht (die Absenderadresse, die in E-Mail-Clients angezeigt wird) nicht mit der Domäne der E-Mail-Quelle übereinstimmt. Weitere Informationen zum Spoofing finden Sie unter [Antispoofingschutz in Microsoft 365](anti-spoofing-protection.md).
 
 Die folgenden Spoofingeinstellungen sind in Antiphishingrichtlinien in EOP und Microsoft Defender für Office 365 verfügbar:
 
@@ -116,7 +116,7 @@ Die folgenden Spoofingeinstellungen sind in Antiphishingrichtlinien in EOP und M
 
 - **Aktionen:** Für Nachrichten von blockierten gefälschten Absendern (automatisch durch Spoofintelligenz blockiert oder manuell in der Mandanten-Zulassungs-/Sperrliste blockiert) können Sie auch die Aktion angeben, die für die Nachrichten ausgeführt werden soll:
 
-  - **Verschieben von Nachrichten in die Junk-E-Mail-Ordner des Empfängers:** Dies ist der Standardwert. Die Nachricht wird an das Postfach übermittelt und in den Junk-E-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-E-Mail-Einstellungen für Exchange Online Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Verschieben von Nachrichten in die Junk-E-Mail-Ordner des Empfängers:** Dies ist der Standardwert. Die Nachricht wird an das Postfach übermittelt und in den Junk-E-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-E-Mail-Einstellungen für Exchange Online Postfächer in Microsoft 365.](configure-junk-email-settings-on-exo-mailboxes.md)
 
   - **Die Nachricht unter Quarantäne** stellen: Sendet die Nachricht an die Quarantäne anstelle der vorgesehenen Empfänger. Informationen zur Quarantäne finden Sie in den folgenden Artikeln:
 
@@ -209,14 +209,18 @@ Die folgenden Identitätswechseleinstellungen sind nur in Antiphishingrichtlinie
   - **Show tip for unusual characters:** The From address contains unusual character sets (for example, mathematical symbols and text or a mix of uppercase and lowercase letters) in a protected sender or domain.
 
   > [!IMPORTANT]
+  > Auch wenn die Tipps zur Identitätswechselsicherheit deaktiviert sind, **empfehlen wir,** dass Sie eine Nachrichtenflussregel (auch als Transportregel bezeichnet) verwenden, um Nachrichten den folgenden Nachrichtenkopf hinzuzufügen:
   >
-  > Auch wenn die Tipps zur Identitätswechselsicherheit deaktiviert sind, **wird empfohlen,** dass Sie eine Nachrichtenflussregel (auch als Transportregel bezeichnet) verwenden, um eine Nachrichtenkopfzeile mit dem Namen **X-MS-Exchange-EnableFirstContactSafetyTip** mit **aktiviertem** Wert für Nachrichten hinzuzufügen. Ein Sicherheitstipp benachrichtigt Empfänger, wenn sie zum ersten Mal eine Nachricht vom Absender erhalten oder wenn sie nicht oft Nachrichten vom Absender erhalten. Diese Funktion fügt eine zusätzliche Sicherheitsebene vor potenziellen Identitätswechselangriffen hinzu.
+  > - Headername: **X-MS-Exchange-EnableFirstContactSafetyTip**
+  > - Headerwert: **Enable**
   >
-  > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="Der Text des Sicherheitstipp für identitätswechselschutz mit mehreren Empfängern.":::
+  > Ein Sicherheitstipp benachrichtigt Empfänger, wenn sie zum ersten Mal eine Nachricht vom Absender erhalten oder wenn sie nicht oft Nachrichten vom Absender erhalten. Diese Funktion fügt eine zusätzliche Sicherheitsebene vor potenziellen Identitätswechselangriffen hinzu.
+  >
+  > ![Der Text des Sicherheitstipp für identitätswechselschutz mit mehreren Empfängern.](../../media/safety-tip-first-contact-multiple-recipients.png)
 
 - **Postfachintelligenz:** Aktiviert oder deaktiviert künstliche Intelligenz (KI), die Benutzer-E-Mail-Muster mit ihren häufigen Kontakten bestimmt. Diese Einstellung hilft der KI, zwischen Nachrichten von legitimen und imitierten Absendern zu unterscheiden.
 
-  Beispielsweise ist Sie CEO Ihres Unternehmens, glaureano@contoso.com sodass Sie sie als geschützte Absenderin in den Benutzern hinzufügen, um die Einstellungen der Richtlinie **zu schützen.** Einige der Empfänger, für die die Richtlinie gilt, kommunizieren jedoch regelmäßig mit einem Anbieter, der auch Gabriela Laureano (glaureano@fabrikam.com) heißt. Da diese Empfänger über einen Kommunikationsverlauf mit glaureano@fabrikam.com verfügen, identifiziert die Postfachintelligenz nachrichten von glaureano@fabrikam.com nicht als Identitätswechselversuch der glaureano@contoso.com für diese Empfänger.
+  Beispielsweise ist Sie CEO Ihres Unternehmens glaureano@contoso.com, sodass Sie sie als geschützten Absender in den Benutzern hinzufügen, um die Einstellungen der Richtlinie **zu schützen.** Einige der Empfänger, für die die Richtlinie gilt, müssen jedoch regelmäßig mit einem Anbieter kommunizieren, der auch als "Gabriela Laureano" (glaureano@fabrikam.com) bezeichnet wird. Da diese Empfänger über einen Kommunikationsverlauf mit glaureano@fabrikam.com verfügen, identifiziert die Postfachintelligenz nachrichten von glaureano@fabrikam.com nicht als Identitätswechselversuch der glaureano@contoso.com für diese Empfänger.
 
   Um häufige Kontakte zu verwenden, die von der Postfachintelligenz gelernt wurden (und die nicht vorhanden sind), um Benutzer vor Identitätswechselangriffen zu schützen, können Sie den Schutz **vor Identitätswechsel** in Mailbox Intelligence aktivieren und die auszuführende Aktion **angeben, wenn** Sie auch **die Postfachintelligenz** aktivieren.
 

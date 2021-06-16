@@ -19,17 +19,17 @@ ms.custom:
 search.appverid: MET150
 description: Wenn Sie weniger als 25 Benutzerlizenzen haben, können Sie Ihre Microsoft 365 für Unternehmen Testversion oder Ihr bezahltes Abonnement im Admin Center kündigen.
 ms.date: 04/08/2021
-ms.openlocfilehash: 5c4ce1c00bfde4a895710d737fab0836998836c6
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 18e7ca5cec91e1614808f2087ce0394f33a45c7a
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929455"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950083"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
 
 > [!IMPORTANT]
-> Dieser Artikel bezieht sich nur auf Abonnements von Microsoft 365 für Unternehmen. Wenn Sie über Microsoft 365 Family oder Single verfügen, lesen Sie [Kündigen eines Microsoft 365-Abonnements](https://support.microsoft.com/de-DE/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b).
+> Dieser Artikel bezieht sich nur auf Abonnements von Microsoft 365 für Unternehmen. Wenn Sie über Microsoft 365 Family oder Single verfügen, lesen Sie [Kündigen eines Microsoft 365-Abonnements](https://support.microsoft.com/en-us/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b?OCID=M365_DocsCancel_Link).
 
 *Teilnahmeberechtigung:* Wenn Sie weniger als 25 Lizenzen für Benutzer zugewiesen haben, können Sie Ihre Microsoft 365 für Business-Testversion oder Ihr kostenpflichtiges Abonnement online im Microsoft 365 Admin Center jederzeit kündigen. Wenn Sie mehr als 25 Lizenzen für Benutzer zugewiesen haben, reduzieren Sie sie auf weniger als 25 oder [rufen Sie den Support an, um Ihr Abonnement zu kündigen](../../business-video/get-help-support.md).
 

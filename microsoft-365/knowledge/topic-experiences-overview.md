@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Übersicht über Viva-Themen.
-ms.openlocfilehash: 89f35062009372c2a44dddcb4e4d2934e494282f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 60c276e8850ed1b824810131a13bed19424a87fa
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908322"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950023"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics – Übersicht 
 
@@ -52,7 +52,7 @@ Wenn ein Thema in Inhalten auf SharePoint-Nachrichten und -Seiten erwähnt wird,
 
 ### <a name="search-results"></a>Suchergebnisse
 
-Sie können eine [Themenantwort](search.md#topic-answer) in Suchergebnissen anzeigen, wenn Sie auf der SharePoint Startseite suchen, auf Office.com suchen oder auf einer SharePoint Website suchen, nachdem Sie den Suchbereich so geändert haben, dass er die gesamte Organisation einschließt. Die Themenantwort wird im Thema der Ergebnisliste angezeigt und enthält einen kurzen Satz von Informationen zu diesem Thema. 
+Sie können eine [Themenantwort](search.md#topic-answer) in Suchergebnissen sehen, wenn Sie auf der SharePoint Startseite suchen, auf Office.com suchen oder auf einer SharePoint Website suchen, nachdem Sie den Suchbereich so geändert haben, dass er die gesamte Organisation einschließt. Die Themenantwort wird im Thema der Ergebnisliste angezeigt und enthält einen kurzen Satz von Informationen zu diesem Thema. 
 
    ![Screenshot der Suchergebnisse einer SharePoint Websitesuche.](../media/knowledge-management/site-search-results.png) 
 
@@ -142,10 +142,8 @@ Benutzer mit Berechtigungen zum Bearbeiten oder Erstellen von Themen können Akt
 
 Benutzer, denen Sie Zugriff gewähren, um Themen in ihrer täglichen Arbeit anzuzeigen, werden möglicherweise gefragt, ob das Thema für sie nützlich war. Das System überprüft diese Antworten und verwendet sie, um die Themenhervorhebung zu verbessern und um festzustellen, was in Themenzusammenfassungen und in Themendetails angezeigt wird.
 
-Darüber hinaus können Benutzer mit entsprechenden Berechtigungen Elemente wie die Yammer-Konversation, die für ein Thema relevant sind, mit Tags versehen und einem bestimmten Thema hinzufügen. 
-
 Weitere Informationen finden Sie unter ["Themenermittlung und Kuratierung".](./topic-experiences-discovery-curation.md)
 
-## <a name="see-also"></a>Weitere Informationen
+## <a name="see-also"></a>Weitere Artikel
 
-[Verwenden von Microsoft Search zum Suchen von Themen in Viva Topics](./search.md)
+[Verwenden Microsoft Search, um Themen in Viva Topics zu finden](./search.md)

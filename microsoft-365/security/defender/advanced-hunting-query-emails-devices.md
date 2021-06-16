@@ -1,7 +1,7 @@
 ---
-title: Suche nach Bedrohungen auf geräten, E-Mails, Apps und Identitäten mit erweiterter Suche
-description: Untersuchen Sie gängige Suchszenarien und Beispielabfragen, die Geräte, E-Mails, Apps und Identitäten abdecken.
-keywords: Erweiterte Suche, Office365-Daten, Windows-Geräte, Office365-E-Mails normalisieren sich, E-Mails, Apps, Identitäten, Bedrohungssuche, Cyberbedrohungensuche, Suche, Abfrage, Telemetrie, Microsoft 365, Microsoft 365 Defender
+title: Suche nach Bedrohungen über Geräte, E-Mails, Apps und Identitäten hinweg mit erweiterter Suche
+description: Untersuchen Sie häufige Suchszenarien und Beispielabfragen, die Geräte, E-Mails, Apps und Identitäten abdecken.
+keywords: Erweiterte Suche, Office365-Daten, Windows Geräte, Office365-E-Mails normalisieren sich, E-Mails, Apps, Identitäten, Bedrohungssuche, Suche nach Cyberbedrohungen, Suche, Abfrage, Telemetrie, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8a811d60af281bb534776736e77c3eb54ab6a760
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: aacd0745ff507356035f8f460ed2b4307e9da6ed
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51932965"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964873"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Gefahrensuche über Geräte, E-Mails, Apps und Identitäten hinweg
 
@@ -35,22 +35,22 @@ ms.locfileid: "51932965"
 **Gilt für:**
 - Microsoft 365 Defender
 
-[Die erweiterte Suche](advanced-hunting-overview.md) in Microsoft 365 Defender ermöglicht Ihnen die proaktive Suche nach Bedrohungen in allen:
-- Von Microsoft Defender for Endpoint verwaltete Geräte
-- E-Mails, die von Microsoft 365
+[Mit der erweiterten Suche](advanced-hunting-overview.md) in Microsoft 365 Defender können Sie proaktiv nach Bedrohungen in folgenden Branchen suchen:
+- Von Microsoft Defender für Endpunkt verwaltete Geräte
+- Von Microsoft 365 verarbeitete E-Mails
 - Cloud-App-Aktivitäten, Authentifizierungsereignisse und Domänencontrolleraktivitäten, die von Microsoft Cloud App Security und Microsoft Defender for Identity nachverfolgt werden
 
-Mit dieser Sichtbarkeitsstufe können Sie schnell nach Bedrohungen abwehren, die Abschnitte Ihres Netzwerks durchqueren, einschließlich ausgefeilter Angriffe, die in E-Mails oder im Web eintreffen, lokale Berechtigungen erhöhen, privilegierte Domänenanmeldeinformationen erwerben und sich quer über Ihre Geräte bewegen. 
+Mit dieser Sichtbarkeit können Sie schnell nach Bedrohungen suchen, die Abschnitte Ihres Netzwerks durchlaufen, einschließlich komplexer Eindringversuche, die per E-Mail oder im Web eingehen, lokale Berechtigungen erhöhen, privilegierte Domänenanmeldeinformationen erwerben und seitlich zu Ihren Geräten wechseln. 
 
-Im Folgenden finden Sie allgemeine Techniken und Beispielabfragen basierend auf verschiedenen Suchszenarien, mit denen Sie untersuchen können, wie Sie Abfragen erstellen können, wenn Sie nach so komplexen Bedrohungen suchen.
+Hier sind allgemeine Techniken und Beispielabfragen basierend auf verschiedenen Suchszenarien, mit denen Sie untersuchen können, wie Sie Abfragen erstellen können, wenn Sie nach solchen komplexen Bedrohungen suchen.
 
-## <a name="get-entity-info"></a>Entitätsinformationen erhalten
-Verwenden Sie diese Abfragen, um zu erfahren, wie Sie schnell Informationen zu Benutzerkonten, Geräten und Dateien erhalten können. 
+## <a name="get-entity-info"></a>Abrufen von Entitätsinformationen
+Verwenden Sie diese Abfragen, um zu erfahren, wie Sie schnell Informationen zu Benutzerkonten, Geräten und Dateien abrufen können. 
 
 ### <a name="obtain-user-accounts-from-email-addresses"></a>Abrufen von Benutzerkonten aus E-Mail-Adressen
-Beim Erstellen von Abfragen über [Tabellen, die Geräte und E-Mail-Nachrichten enthalten](advanced-hunting-schema-tables.md), müssen Sie wahrscheinlich Benutzerkontonamen aus E-Mail-Adressen von Absendern oder Empfängern abrufen. Sie können dies im Allgemeinen für empfänger- oder absenderadressen mithilfe des lokalen Hosts über die *E-Mail-Adresse* tun.
+Beim Erstellen von Abfragen über [Tabellen, die Geräte und E-Mail-Nachrichten enthalten](advanced-hunting-schema-tables.md), müssen Sie wahrscheinlich Benutzerkontonamen aus E-Mail-Adressen von Absendern oder Empfängern abrufen. Sie können dies in der Regel für empfänger- oder absenderadressen mithilfe des *lokalen Hosts* aus der E-Mail-Adresse tun.
 
-Im folgenden Codeausschnitt verwenden wir die [Tostring()](/azure/data-explorer/kusto/query/tostringfunction) Kusto-Funktion, um den lokalen Host direkt vor den E-Mail-Adressen `@` des Empfängers in der Spalte zu `RecipientEmailAddress` extrahieren.
+Im folgenden Codeausschnitt verwenden wir die [tostring()](/azure/data-explorer/kusto/query/tostringfunction) Kusto-Funktion, um den lokalen Host direkt vor den `@` E-Mail-Adressen des Empfängers in der Spalte zu `RecipientEmailAddress` extrahieren.
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
@@ -66,7 +66,7 @@ EmailEvents
 
 ### <a name="merge-the-identityinfo-table"></a>Zusammenführen der IdentityInfo-Tabelle
 
-Sie können Kontonamen und andere Kontoinformationen abrufen, indem Sie die [IdentityInfo-Tabelle zusammenführen oder der Tabelle "IdentityInfo" beitreten.](advanced-hunting-identityinfo-table.md) Die folgende Abfrage ruft die Liste der Phishing- und Schadsoftwareerkennungen aus der [EmailEvents-Tabelle](advanced-hunting-emailevents-table.md) ab und schließt diese Informationen dann mit der Tabelle zusammen, um detaillierte Informationen zu den einzelnen Empfängern `IdentityInfo` zu erhalten. 
+Sie können Kontonamen und andere Kontoinformationen abrufen, indem Sie die [IdentityInfo-Tabelle](advanced-hunting-identityinfo-table.md)zusammenführen oder verknüpfen. Die folgende Abfrage ruft die Liste der Phishing- und Schadsoftwareerkennungen aus der [Tabelle EmailEvents ](advanced-hunting-emailevents-table.md) ab und verknüpft diese Informationen dann mit der `IdentityInfo` Tabelle, um detaillierte Informationen zu jedem Empfänger zu erhalten. 
 
 ```kusto
 EmailEvents
@@ -82,11 +82,11 @@ SenderFromAddress, RecipientEmailAddress, AccountDisplayName, JobTitle,
 Department, City, Country
 ```
 
-### <a name="get-device-information"></a>Geräteinformationen erhalten
-Das [schema der erweiterten Suche](advanced-hunting-schema-tables.md) enthält umfassende Geräteinformationen in verschiedenen Tabellen. Beispielsweise enthält die [DeviceInfo-Tabelle](advanced-hunting-deviceinfo-table.md) umfassende Geräteinformationen, die auf regelmäßig aggregierten Ereignisdaten basieren. Diese Abfrage verwendet die Tabelle, um zu überprüfen, ob sich ein potenziell gefährdeter Benutzer ( ) bei allen Geräten angemeldet hat, und listet dann die Warnungen auf, die auf diesen Geräten `DeviceInfo` `<account-name>` ausgelöst wurden.
+### <a name="get-device-information"></a>Abrufen von Geräteinformationen
+Das Schema für [die erweiterte Suche](advanced-hunting-schema-tables.md) enthält umfangreiche Geräteinformationen in verschiedenen Tabellen. Die [DeviceInfo-Tabelle](advanced-hunting-deviceinfo-table.md) enthält beispielsweise umfassende Geräteinformationen basierend auf regelmäßig aggregierten Ereignisdaten. Diese Abfrage verwendet die `DeviceInfo` Tabelle, um zu überprüfen, ob sich ein potenziell gefährdeter Benutzer ( `<account-name>` ) bei geräten angemeldet hat, und listet dann die Warnungen auf, die auf diesen Geräten ausgelöst wurden.
 
 >[!Tip]
-> Diese Abfrage `kind=inner` verwendet, um eine [innere Verknüpfung anzugeben,](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)die eine Deduplizierung linker Werte für `DeviceId` verhindert.
+> Diese Abfrage `kind=inner` verwendet, um eine [innere Verknüpfung](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor)anzugeben, die die Deduplizierung linker Seitenwerte für `DeviceId` verhindert.
 
 ```kusto
 DeviceInfo
@@ -101,10 +101,94 @@ DeviceInfo
 | project AlertId, Timestamp, Title, Severity, Category 
 ```
 
+
+### <a name="get-file-event-information"></a>Abrufen von Dateiereignisinformationen
+
+Verwenden Sie die folgende Abfrage, um Informationen zu dateibezogenen Ereignissen abzurufen. 
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceFileEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
+### <a name="get-network-event-information"></a>Abrufen von Netzwerkereignisinformationen
+
+Verwenden Sie die folgende Abfrage, um Informationen zu netzwerkbezogenen Ereignissen abzurufen.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceNetworkEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+### <a name="get-device-agent-version-information"></a>Abrufen von Informationen zur Geräte-Agent-Version
+
+Verwenden Sie die folgende Abfrage, um die Version des Agents abzurufen, der auf einem Gerät ausgeführt wird.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where ClientVersion startswith "20.1"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceNetworkEvents 
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
+### <a name="example-query-for-macos-devices"></a>Beispielabfrage für macOS-Geräte
+
+Verwenden Sie die folgende Beispielabfrage, um alle Geräte mit macOS mit einer älteren Version als Csv anzuzeigen.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where OSPlatform == "macOS" and  OSVersion !contains "10.15" and OSVersion !contains "11."
+| summarize by DeviceId
+| join kind=inner (
+    DeviceInfo
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+### <a name="get-device-status-info"></a>Abrufen von Gerätestatusinformationen
+
+Verwenden Sie die folgende Abfrage, um den Status eines Geräts abzurufen. Im folgenden Beispiel überprüft die Abfrage, ob das Gerät integriert ist.
+
+```kusto
+DeviceInfo
+| where Timestamp > ago(1d)
+| where OnboardingStatus != "Onboarded"
+| summarize by DeviceId
+| join kind=inner (
+    DeviceInfo
+    | where Timestamp > ago(1d)
+) on DeviceId
+| take 10
+```
+
+
 ## <a name="hunting-scenarios"></a>Suchszenarien
 
-### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>Auflisten von Anmeldeaktivitäten von Benutzern, die E-Mails empfangen haben, die nicht erfolgreich abgezapft wurden
-[Die automatische NS-Bereinigung (Zero-Hour Auto Purge, ZAP) behebt](../office-365-security/zero-hour-auto-purge.md) schädliche E-Mails, nachdem sie empfangen wurden. Wenn ZAP ausfällt, wird möglicherweise bösartiger Code auf dem Gerät ausgeführt und Konten gefährdet. Diese Abfrage überprüft die Anmeldeaktivität der Empfänger von E-Mails, die nicht erfolgreich von ZAP adressiert wurden.
+### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>Auflisten von Anmeldeaktivitäten von Benutzern, die E-Mails erhalten haben, die nicht erfolgreich angeheftet wurden
+[Zap (Zero-Hour Auto Purge)](../office-365-security/zero-hour-auto-purge.md) behebt bösartige E-Mails, nachdem sie empfangen wurden. Wenn ZAP fehlschlägt, kann bösartiger Code möglicherweise auf dem Gerät ausgeführt werden und Konten kompromittiert lassen. Diese Abfrage überprüft auf Anmeldeaktivitäten, die von den Empfängern von E-Mails vorgenommen wurden, die von ZAP nicht erfolgreich adressiert wurden.
 
 ```kusto
 EmailPostDeliveryEvents 
@@ -120,8 +204,8 @@ EmailPostDeliveryEvents
 LogonTime = Timestamp, AccountDisplayName, Application, Protocol, DeviceName, LogonType
 ```
 
-### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>Get logon attempts by domain accounts targeted by credential theft
-Diese Abfrage identifiziert zunächst alle Anmeldeinformationszugriffswarnungen in der `AlertInfo` Tabelle. Anschließend wird die Tabelle zusammengeführt oder zusammengeführt, die sie nur nach den Namen der Zielkonten analysiert und nur für `AlertEvidence` Domänenkonten filtert. Schließlich wird die Tabelle überprüft, um alle Anmeldeaktivitäten der zielorientierten Konten der `IdentityLogonEvents` Domäne zu erhalten.
+### <a name="get-logon-attempts-by-domain-accounts-targeted-by-credential-theft"></a>Abrufen von Anmeldeversuchen nach Domänenkonten, auf die der Diebstahl von Anmeldeinformationen abzielt
+Diese Abfrage identifiziert zunächst alle Warnungen beim Zugriff auf Anmeldeinformationen in der `AlertInfo` Tabelle. Anschließend wird die Tabelle zusammengeführt oder `AlertEvidence` verknüpft, die sie auf die Namen der Zielkonten analysiert und nur nach Domänenkonten filtert. Schließlich wird die Tabelle überprüft, `IdentityLogonEvents` um alle Anmeldeaktivitäten der in die Domäne eingebundenen Zielkonten abzurufen.
 
 ```kusto
 AlertInfo
@@ -141,7 +225,7 @@ AlertInfo
 ```
 
 ### <a name="check-if-files-from-a-known-malicious-sender-are-on-your-devices"></a>Überprüfen, ob Dateien bekannter bösartiger Absender auf Ihren Geräten vorhanden sind
-Vorausgesetzt, Sie kennen eine E-Mail-Adresse, die schädliche Dateien sendet ( ), können Sie diese Abfrage ausführen, um zu ermitteln, ob Dateien von diesem Absender `MaliciousSender@example.com` auf Ihren Geräten vorhanden sind. Sie können diese Abfrage beispielsweise verwenden, um Geräte zu identifizieren, die von einer Schadsoftwareverteilungskampagne betroffen sind.
+Wenn Sie von einer E-Mail-Adresse wissen, die schädliche Dateien ( `MaliciousSender@example.com` ) sendet, können Sie diese Abfrage ausführen, um zu ermitteln, ob Dateien von diesem Absender auf Ihren Geräten vorhanden sind. Sie können diese Abfrage beispielsweise verwenden, um Geräte zu identifizieren, die von einer Schadsoftwareverteilungskampagne betroffen sind.
 
 ```kusto
 EmailAttachmentInfo
@@ -177,7 +261,7 @@ IdentityLogonEvents
 ```
 
 ### <a name="review-powershell-activities-after-receipt-of-emails-from-known-malicious-sender"></a>Überprüfen von PowerShell-Aktivitäten nach dem Empfang von E-Mails von bekannten bösartigen Absendern
-Bösartige E-Mail-Nachrichten enthalten häufig Dokumente und andere speziell gestaltete Anlagen, die PowerShell-Befehle ausführen, um zusätzliche Nutzlasten zu übertragen. Wenn Sie E-Mails von einem bekannten böswilligen Absender ( ) kennen, können Sie diese Abfrage verwenden, um PowerShell-Aktivitäten auflisten und überprüfen zu können, die innerhalb von 30 Minuten nach dem Empfangen einer E-Mail vom Absender aufgetreten `MaliciousSender@example.com` sind.  
+Bösartige E-Mail-Nachrichten enthalten häufig Dokumente und andere speziell gestaltete Anlagen, die PowerShell-Befehle ausführen, um zusätzliche Nutzlasten zu übertragen. Wenn Sie wissen, dass E-Mails von einem bekannten böswilligen Absender ( ) stammen, `MaliciousSender@example.com` können Sie diese Abfrage verwenden, um PowerShell-Aktivitäten aufzuführen und zu überprüfen, die innerhalb von 30 Minuten nach dem Empfang einer E-Mail vom Absender aufgetreten sind.  
 
 ```kusto
 //Define new table for emails from specific sender

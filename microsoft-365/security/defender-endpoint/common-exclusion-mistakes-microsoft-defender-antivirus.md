@@ -15,36 +15,32 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.date: 05/17/2021
-ms.openlocfilehash: d10343538c995534878196cc57092c37fd2dcf7b
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.date: 06/15/2021
+ms.openlocfilehash: f9ca83fcfba4b79898a0fed527e38947a4c230d6
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538063"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52950131"
 ---
 # <a name="common-mistakes-to-avoid-when-defining-exclusions"></a>Häufige Fehler, die beim Festlegen von Ausschlüssen vermieden werden sollten
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+Sie können eine Ausschlussliste für Elemente definieren, die Microsoft Defender Antivirus nicht überprüfen möchten. Solche ausgeschlossenen Elemente können Bedrohungen enthalten, die Ihr Gerät anfällig machen. In diesem Artikel werden einige häufige Fehler beschrieben, die Sie beim Definieren von Ausschlüssen vermeiden sollten. 
 
-Sie können eine Ausschlussliste für Elemente definieren, die nicht von Microsoft Defender Antivirus werden sollen. Solche ausgeschlossenen Elemente können Bedrohungen enthalten, die Ihr Gerät anfällig machen. 
-
-In diesem Artikel werden einige häufige Fehler beschrieben, die Sie beim Definieren von Ausschlüssen vermeiden sollten. 
-
-Informationen zum Definieren von Ausschlusslisten finden Sie [Empfehlungen zum Definieren von Ausschlüssen](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions).
+Bevor Sie Ihre Ausschlusslisten definieren, finden Sie unter Empfehlungen Informationen [zum Definieren von Ausschlüssen.](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions)
 
 ## <a name="excluding-certain-trusted-items"></a>Ausschließen bestimmter vertrauenswürdiger Elemente
 
-Bestimmte Dateien, Dateitypen, Ordner oder Prozesse sollten nicht von der Überprüfung ausgeschlossen werden, auch wenn Sie davon aus sind, dass sie nicht schädlich sind. 
+Bestimmte Dateien, Dateitypen, Ordner oder Prozesse sollten nicht von der Überprüfung ausgeschlossen werden, obwohl Sie ihnen vertrauen, dass sie nicht bösartig sind. 
 
-Definieren Sie keine Ausschlüsse für die Ordnerstandorte, Dateierweiterungen und Prozesse, die in den folgenden Abschnitten aufgeführt sind:
-- Ordnerstandorte
+Definieren Sie keine Ausschlüsse für die Ordnerspeicherorte, Dateierweiterungen und Prozesse, die in den folgenden Abschnitten aufgeführt sind:
+- Ordnerspeicherorte
 - Dateierweiterungen
 - Prozesse
 
-### <a name="folder-locations"></a>Ordnerstandorte
+### <a name="folder-locations"></a>Ordnerspeicherorte
 
-Definieren Sie im Allgemeinen keine Ausschlüsse für die folgenden Ordnerstandorte:
+Definieren Sie im Allgemeinen keine Ausschlüsse für die folgenden Ordnerspeicherorte:
 
 `%systemdrive%` 
 
@@ -76,9 +72,9 @@ Definieren Sie im Allgemeinen keine Ausschlüsse für die folgenden Ordnerstando
 
 `C:\Users\*`
 
-`C:\Users\<UserProfileName>\AppData\Local\Temp\`**Beachten Sie die folgende Ausnahme für SharePoint**: Schließen Sie aus, wenn Sie antivirenschutz auf Dateiebene in `C:\Users\ServiceAccount\AppData\Local\Temp` [SharePoint.](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)
+`C:\Users\<UserProfileName>\AppData\Local\Temp\`**Beachten Sie die folgende Ausnahme für SharePoint:** Schließen Sie dies `C:\Users\ServiceAccount\AppData\Local\Temp` aus, wenn Sie [den Virenschutz auf Dateiebene in SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)verwenden.
 
-`C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`**Beachten Sie die folgende Ausnahme für SharePoint**: Schließen Sie aus, wenn Sie antivirenschutz auf Dateiebene in `C:\Users\Default\AppData\Local\Temp` [SharePoint.](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)
+`C:\Users\<UserProfileName>\AppData\LocalLow\Temp\`**Beachten Sie die folgende Ausnahme für SharePoint:** Schließen Sie dies `C:\Users\Default\AppData\Local\Temp` aus, wenn Sie [den Virenschutz auf Dateiebene in SharePoint](https://support.microsoft.com/office/certain-folders-may-have-to-be-excluded-from-antivirus-scanning-when-you-use-file-level-antivirus-software-in-sharepoint-01cbc532-a24e-4bba-8d67-0b1ed733a3d9)verwenden.
 
 `%Windir%\Prefetch`
 
@@ -231,7 +227,9 @@ Definieren Sie im Allgemeinen keine Ausschlüsse für die folgenden Prozesse:
 
 `dbgsvc.exe`  
 
-`dnx.exe`  
+`dnx.exe`
+
+`dotnet.exe`
 
 `fsi.exe`  
 
@@ -256,25 +254,19 @@ Definieren Sie im Allgemeinen keine Ausschlüsse für die folgenden Prozesse:
 `windbg.exe`
 
 > [!NOTE]
-> Sie können Dateitypen ausschließen, z. B. , , oder wenn Ihre Umgebung über eine moderne, aktuelle Software mit einer strikten Updaterichtlinie verfügt, um Sicherheitsrisiken `.gif` `.jpg` zu `.jpeg` `.png` behandeln.
+> Sie können Dateitypen ausschließen, z. B. `.gif` , oder wenn Ihre Umgebung über eine `.jpg` `.jpeg` `.png` moderne, aktuelle Software mit einer strengen Updaterichtlinie zur Behandlung von Sicherheitsrisiken verfügt.
 
 ## <a name="using-just-the-file-name-in-the-exclusion-list"></a>Verwenden des Dateinamens in der Ausschlussliste
 
-Eine Schadsoftware hat möglicherweise denselben Namen wie die Datei, der Sie vertrauen und von der Überprüfung ausschließen möchten. Um zu verhindern, dass eine potenzielle Schadsoftware von der Überprüfung ausgeschlossen wird, verwenden Sie daher einen vollqualifizierten Pfad zu der Datei, die Sie ausschließen möchten, anstatt nur den Dateinamen zu verwenden. Wenn Sie beispielsweise die Überprüfung ausschließen möchten, verwenden Sie den vollständigen Pfad `Filename.exe` zur Datei, z. B. `C:\program files\contoso\Filename.exe` .
+Eine Schadsoftware hat möglicherweise denselben Namen wie die Datei, der Sie vertrauen und die von der Überprüfung ausgeschlossen werden soll. Um potenzielle Schadsoftware nicht von der Überprüfung auszuschließen, verwenden Sie daher einen vollqualifizierten Pfad zu der Datei, die Sie ausschließen möchten, anstatt nur den Dateinamen zu verwenden. Wenn Sie beispielsweise die Überprüfung ausschließen `Filename.exe` möchten, verwenden Sie den vollständigen Pfad zur Datei, `C:\program files\contoso\Filename.exe` z. B. .
 
-## <a name="using-a-single-exclusion-list-for-multiple-server-workloads"></a>Verwenden einer einzelnen Ausschlussliste für mehrere Serverarbeitslasten
+## <a name="using-a-single-exclusion-list-for-multiple-server-workloads"></a>Verwenden einer einzelnen Ausschlussliste für mehrere Serverworkloads
 
-Verwenden Sie keine einzelne Ausschlussliste, um Ausschlüsse für mehrere Serverworkloads zu definieren. Teilen Sie die Ausschlüsse für verschiedene Anwendungs- oder Dienstarbeitslasten in mehrere Ausschlusslisten auf. Beispielsweise muss sich die Ausschlussliste für Ihre IIS Server-Arbeitsauslastung von der Ausschlussliste für Ihre SQL Server unterscheiden.
+Verwenden Sie keine einzige Ausschlussliste, um Ausschlüsse für mehrere Serverworkloads zu definieren. Teilen Sie die Ausschlüsse für unterschiedliche Anwendungs- oder Dienstarbeitslasten in mehrere Ausschlusslisten auf. Beispielsweise muss sich die Ausschlussliste für Ihre IIS Server-Workload von der Ausschlussliste für Ihre SQL Server Workload unterscheiden.
 
-## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>Verwenden falscher Umgebungsvariablen als Platzhalter in den Listen für Dateinamen- und Ordnerpfad oder Erweiterungsausschluss
+## <a name="using-incorrect-environment-variables-as-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists"></a>Verwenden falscher Umgebungsvariablen als Platzhalter in den Dateinamen- und Ordnerpfad- oder Erweiterungsausschlusslisten
 
-Microsoft Defender Antivirus Der Dienst wird im Systemkontext mit dem LocalSystem-Konto ausgeführt, d. h., er ruft Informationen von der Variablen systemumgebung ab, nicht von der Benutzerumgebungsvariablen. Die Verwendung von Umgebungsvariablen als Platzhalter in Ausschlusslisten ist auf Systemvariablen und auf Prozesse beschränkt, die als NT AUTHORITY\SYSTEM-Konto ausgeführt werden. Verwenden Sie daher keine Benutzerumgebungsvariablen als Platzhalter, wenn Microsoft Defender Antivirus und Prozessausschlüsse hinzufügen. Eine vollständige Liste der Systemumgebungsvariablen [finden](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables) Sie in der Tabelle unter Systemumgebungsvariablen.
+Microsoft Defender Antivirus Der Dienst wird im Systemkontext mithilfe des LocalSystem-Kontos ausgeführt, was bedeutet, dass informationen von der Systemumgebungsvariablen und nicht von der Benutzerumgebungsvariablen abgerufen werden. Die Verwendung von Umgebungsvariablen als Platzhalter in Ausschlusslisten ist auf Systemvariablen und auf Prozesse beschränkt, die als NT AUTHORITY\SYSTEM-Konto ausgeführt werden. Verwenden Sie daher beim Hinzufügen von Microsoft Defender Antivirus Ordner- und Prozessausschlüssen keine Benutzerumgebungsvariablen als Platzhalter. Eine vollständige Liste der Systemumgebungsvariablen finden Sie in der Tabelle unter ["Systemumgebungsvariablen".](configure-extension-file-exclusions-microsoft-defender-antivirus.md#system-environment-variables)
 
-Informationen zur Verwendung [von Platzhaltern in](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists) Ausschlusslisten finden Sie unter Verwenden von Platzhaltern in den Listen für Dateinamen und Ordnerpfad oder Erweiterungsausschluss.
+Informationen zur Verwendung von Platzhaltern in Ausschlusslisten finden Sie unter [Verwenden von Platzhaltern in Dateinamen- und Ordnerpfad- oder Erweiterungsausschlusslisten.](configure-extension-file-exclusions-microsoft-defender-antivirus.md#use-wildcards-in-the-file-name-and-folder-path-or-extension-exclusion-lists)
 
-## <a name="related-articles"></a>Verwandte Artikel
-
-- [Konfigurieren und Überprüfen von Ausschlüssen in Microsoft Defender Antivirus Scans](configure-exclusions-microsoft-defender-antivirus.md)
-- [Konfigurieren und Überprüfen von Ausschlüssen basierend auf Dateierweiterung und Ordnerspeicherort](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [Konfigurieren und Überprüfen von Ausschlüssen für Dateien, die von Prozessen geöffnet werden](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [Konfigurieren Microsoft Defender Antivirus Ausschlüssen auf Windows Server](configure-server-exclusions-microsoft-defender-antivirus.md)

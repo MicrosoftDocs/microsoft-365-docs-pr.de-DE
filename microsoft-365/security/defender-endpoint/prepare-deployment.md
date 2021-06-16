@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fb10e65258f6264b21851f8325b97b1bad19bf16
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 7841197594941354b21bd2104cd27ef37a1a25c9
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925651"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964596"
 ---
 # <a name="prepare-microsoft-defender-for-endpoint-deployment"></a>Vorbereiten der Bereitstellung von Microsoft Defender für Endpunkte
 
@@ -99,7 +99,7 @@ Microsoft empfiehlt die Verwendung [von Privileged Identity Management,](/azure/
 
 Defender für Endpunkt unterstützt zwei Möglichkeiten zum Verwalten von Berechtigungen:
 
--   **Grundlegende Berechtigungsverwaltung:** Legen Sie Berechtigungen entweder auf Vollzugriff oder schreibgeschützt fest. Im Fall der einfachen Berechtigungsverwaltung haben Benutzer mit globaler Administrator- oder Sicherheitsadministratorrolle in Azure Active Directory Vollzugriff, während die Rolle "Sicherheitsleseberechtigter" schreibgeschützt ist.
+-   **Grundlegende Berechtigungsverwaltung:** Legen Sie Berechtigungen entweder auf Vollzugriff oder schreibgeschützt fest. Im Fall der einfachen Berechtigungsverwaltung verfügen Benutzer mit globaler Administrator- oder Sicherheitsadministratorrolle in Azure Active Directory über Vollzugriff, während die Rolle "Sicherheitsleseberechtigter" schreibgeschützt ist.
 
 -   **Rollenbasierte Zugriffssteuerung (RBAC):** Legen Sie granulare Berechtigungen fest, indem Sie Rollen definieren, Den Rollen Azure AD-Benutzergruppen zuweisen und den Benutzergruppen Zugriff auf Gerätegruppen gewähren. Weitere Informationen. siehe [Verwalten des Portalzugriffs mithilfe der rollenbasierten Zugriffssteuerung.](rbac.md)
 
@@ -118,7 +118,7 @@ Die folgende Beispieltabelle dient zur Identifizierung der Cyber Defense Operati
 
 
 ## <a name="adoption-order"></a>Einführungsreihenfolge
-In vielen Fällen verfügen Organisationen über vorhandene Endpunktsicherheitsprodukte. Jede Organisation sollte mindestens eine Antivirenlösung sein. In einigen Fällen hat eine Organisation möglicherweise auch bereits eine EDR Lösung eingefügt.
+In vielen Fällen verfügen Organisationen über vorhandene Endpunktsicherheitsprodukte. Jede Organisation sollte mindestens eine Antivirenlösung sein. In einigen Fällen hat eine Organisation möglicherweise auch bereits eine EDR Lösung eingesetzt.
 
 In der Vergangenheit war das Ersetzen von Sicherheitslösungen aufgrund der engen Einbindung in die Anwendungsschicht und Infrastrukturabhängigkeiten zeitaufwendig und schwierig zu erreichen. Da Defender für Endpunkt jedoch in das Betriebssystem integriert ist, ist es jetzt einfach, Lösungen von Drittanbietern zu ersetzen.
 
@@ -126,8 +126,8 @@ Wählen Sie die Komponente von Defender für Endpunkt aus, die verwendet werden 
 
 | Komponente                               | Beschreibung                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Reihenfolge der Einführung |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
-| Endpunkterkennung & Antwort (EDR)     | Die Funktionen von Defender für Endpunkt EDR bieten erweiterte Angriffserkennungen, die nahezu in Echtzeit und umsetzbar sind. Sicherheitsanalysten können Benachrichtigungen effektiv priorisieren, Einblick in den gesamten Umfang einer Sicherheitsverletzung erhalten und Aktionen ergreifen, um Bedrohungen zu beheben. <br> [Weitere Informationen.](/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)                                                                                                                                                                                                                                             | 1                   |
-|Bedrohungs- &-Sicherheitsrisikoverwaltung (Threat & Vulnerability Management, TVM)|Threat & Vulnerability Management ist eine Komponente von Microsoft Defender für Endpunkt und bietet Sicherheitsadministratoren und Sicherheitsteams einen einzigartigen Nutzen, einschließlich: <br> – Einblicke in Echtzeit EDR (EDR) korreliert mit Endpunkt-Sicherheitsrisiken <br> – Wertvoller Sicherheitsrisikokontext für Geräte während Vorfalluntersuchungen <br> – Integrierte Korrekturprozesse über Microsoft Intune und Microsoft System Center Configuration Manager <br> [Weitere Informationen](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845).| 2 |
+| Endpoint Detection & Response (EDR)     | Die Funktionen von Defender für Endpunkt EDR bieten erweiterte Angriffserkennungen, die nahezu in Echtzeit und umsetzbar sind. Sicherheitsanalysten können Benachrichtigungen effektiv priorisieren, Einblick in den gesamten Umfang einer Sicherheitsverletzung erhalten und Aktionen ergreifen, um Bedrohungen zu beheben. <br> [Weitere Informationen.](/windows/security/threat-protection/windows-defender-atp/overview-endpoint-detection-response)                                                                                                                                                                                                                                             | 1                   |
+|Bedrohungs- &-Sicherheitsrisikoverwaltung (Threat & Vulnerability Management, TVM)|Threat & Vulnerability Management ist eine Komponente von Microsoft Defender für Endpunkt und bietet Sicherheitsadministratoren und Sicherheitsteams einen einzigartigen Wert, einschließlich: <br> – Einblicke in Echtzeit EDR (EDR) korreliert mit Endpunkt-Sicherheitsrisiken <br> – Wertvoller Sicherheitsrisikokontext für Geräte während Vorfalluntersuchungen <br> – Integrierte Korrekturprozesse über Microsoft Intune und Microsoft System Center Configuration Manager <br> [Weitere Informationen](https://techcommunity.microsoft.com/t5/Windows-Defender-ATP/Introducing-a-risk-based-approach-to-threat-and-vulnerability/ba-p/377845).| 2 |
 | Schutz der nächsten Generation (NGP)        | Microsoft Defender Antivirus ist eine integrierte Antischadsoftwarelösung, die Schutz der nächsten Generation für Desktops, tragbare Computer und Server bietet. Microsoft Defender Antivirus umfasst: <br> – Über die Cloud bereitgestellter Schutz für die nahezu sofortige Erkennung und Blockierung neuer und neuer Bedrohungen. Zusammen mit maschinellem Lernen und Intelligent Security Graph gehört der von der Cloud bereitgestellte Schutz zu den Technologien der neuen Generation von Microsoft Defender Antivirus.   <br> – Always-On-Überprüfung mithilfe der erweiterten Überwachung des Datei- und Prozessverhaltens und anderer Heuristiken (auch als "Echtzeitschutz" bezeichnet). <br> – Dedizierte Schutzupdates, die auf maschinellem Lernen, menschlichen und automatisierten Big Data-Analysen und detaillierten Forschungen zum Schutz vor Bedrohungen basieren. <br> [Weitere Informationen](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 | Attack Surface Reduction (ASR)          | Die Funktionen zur Verringerung der Angriffsfläche in Microsoft Defender für Endpunkt tragen dazu bei, die Geräte und Anwendungen in der Organisation vor neuen und neuen Bedrohungen zu schützen. <br> [Weitere Informationen.](/windows/security/threat-protection/windows-defender-atp/overview-attack-surface-reduction)                                                                                                                                                                                                                                                                                                                                                                                       | 4                    |
 | Auto Investigation & Remediation (AIR)  | Microsoft Defender für Endpunkt verwendet automatisierte Untersuchungen, um die Anzahl der Warnungen, die einzeln untersucht werden müssen, erheblich zu reduzieren. Das Feature für die automatische Untersuchung nutzt verschiedene Überprüfungsalgorithmen und Prozesse, die von Analysten (z. B. Playbooks) verwendet werden, um Warnungen zu untersuchen und sofortige Korrekturmaßnahmen zur Behebung von Verstößen zu ergreifen. Auf diese Weise wird das Warnungsvolumen erheblich reduziert, sodass sich Sicherheitsexperten auf komplexere Bedrohungen und andere Initiativen mit hoher Wertschöpfung konzentrieren können. <br>[Weitere Informationen.](/windows/security/threat-protection/windows-defender-atp/automated-investigations-windows-defender-advanced-threat-protection) | Nicht zutreffend      |
@@ -135,6 +135,7 @@ Wählen Sie die Komponente von Defender für Endpunkt aus, die verwendet werden 
 
 ## <a name="next-step"></a>Nächster Schritt
 
-|||
-|:-------|:-----|
-|![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) | Einrichten der Bereitstellung von Microsoft Defender für Endpunkt |
+
+![Phase 2: Setup](images/setup.png) <br>[Phase 2: Setup](production-deployment.md) 
+ 
+Einrichten der Bereitstellung von Microsoft Defender für Endpunkt 
