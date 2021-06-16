@@ -32,18 +32,8 @@
 #### [Phase 1: Vorbereiten](switch-to-microsoft-defender-prepare.md)
 #### [Phase 2: Setup](switch-to-microsoft-defender-setup.md)
 #### [Phase 3: Onboarding](switch-to-microsoft-defender-onboard.md)
-### [Wechsel von McAfee zu Microsoft Defender für Endpunkt]()
-#### [Migrationsübersicht](mcafee-to-microsoft-defender-migration.md)
-#### [Phase 1: Vorbereiten](mcafee-to-microsoft-defender-prepare.md) 
-#### [Phase 2: Setup](mcafee-to-microsoft-defender-setup.md)
-#### [Phase 3: Onboarding](mcafee-to-microsoft-defender-onboard.md)
-### [Wechsel von Symantec zu Microsoft Defender für Endpunkt]()
-#### [Migrationsübersicht](symantec-to-microsoft-defender-endpoint-migration.md)
-#### [Phase 1: Vorbereiten](symantec-to-microsoft-defender-atp-prepare.md)
-#### [Phase 2: Setup](symantec-to-microsoft-defender-atp-setup.md)
-#### [Phase 3: Onboarding](symantec-to-microsoft-defender-atp-onboard.md)
-### [Verwalten von Microsoft Defender für Endpunkt nach der Migration]()
-#### [Übersicht über die Verwaltung von Microsoft Defender für Endpunkt](manage-atp-post-migration.md)
+### [Verwalten von Defender für Endpunkt nach der Migration]()
+#### [Übersicht über die Verwaltung von Defender für Endpunkt](manage-atp-post-migration.md)
 #### [Intune (empfohlen)](manage-atp-post-migration-intune.md)
 #### [Configuration Manager](manage-atp-post-migration-configuration-manager.md)
 #### [Gruppenrichtlinienobjekte](manage-atp-post-migration-group-policy-objects.md)
@@ -174,7 +164,7 @@
 
 ### [Behandeln von Onboarding-Problemen]()
 #### [Behandeln von Problemen beim Onboarding](troubleshoot-onboarding.md)
-#### [Problembehandlung bei Abonnement- und Portalzugriffsproblemen](troubleshoot-onboarding-error-messages.md)
+#### [Problembehandlung bei Abonnement- und Portalzugriffsproblemen](troubleshoot-onboarding-error-messages.md).
 
 
 
@@ -212,7 +202,7 @@
 #### [Konfigurieren der Zeitzoneneinstellungen im Microsoft Defender Security Center](time-settings.md)
 
 ## [Entdecken von Bedrohungen und Schützen von Endpunkten]()
-### [Bedrohungs- und Sicherheitsrisikomanagement]()
+### [Bedrohungs- und Sicherheitsrisikomanagement]():
 #### [Übersicht](next-gen-threat-and-vuln-mgt.md)
 #### [Erste Schritte]()
 ##### [Voraussetzungen & Berechtigungen](tvm-prerequisites.md)
@@ -244,7 +234,7 @@
 
 ### [Hostfirewallberichte in Microsoft Defender für Endpunkt](host-firewall-reporting.md)
 
-### [Verringerung der Angriffsfläche]()
+### [Verringerung der Angriffsfläche]():
 #### [Übersicht der Verringerung der Angriffsfläche](overview-attack-surface-reduction.md)
 #### [Konfigurieren der Funktionen zur Verringerung der Angriffsfläche](configure-attack-surface-reduction.md)
 #### [Weitere Informationen zu den Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md)
