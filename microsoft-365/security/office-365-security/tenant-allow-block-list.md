@@ -16,12 +16,12 @@ ms.collection:
 description: Administratoren können im Sicherheitsportal erfahren, wie Sie Zulassungen und Blöcke in der Mandanten-Zulassungs-/Sperrliste konfigurieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4228bb8abb70bbd96605a7d0f021a1a483e8715c
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 67c3badb86f1cfb9bf644cc202ed67e3163a6772
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929731"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933155"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Verwalten der Zulassungs-/Sperrliste des Mandanten
 
@@ -60,7 +60,7 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassung
 
   Ein Beispielwert ist `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a` . Perceptual Hash (pHash)-Werte werden nicht unterstützt.
 
-- Die verfügbaren URL-Werte werden in der [URL-Syntax für den Abschnitt "Mandanten zulassen/blockieren"](#url-syntax-for-the-tenant-allowblock-list) weiter unten in diesem Artikel beschrieben.
+- Die verfügbaren URL-Werte werden in der [URL-Syntax für den Abschnitt "Mandanten-Zulassungs-/Sperrliste"](#url-syntax-for-the-tenant-allowblock-list) weiter unten in diesem Artikel beschrieben.
 
 - Die Mandanten-Zulassungs-/Sperrliste lässt maximal 500 Einträge für URLs und 500 Einträge für Dateihashes zu.
 
@@ -92,44 +92,36 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassung
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>Verwenden des Microsoft 365 Defender-Portals zum Erstellen von Block-URL-Einträgen in der Mandanten-Zulassungs-/Sperrliste
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** \> **Bedrohungsrichtlinien** \> **Mandanten-Zulassungs-/Sperrlisten.**
+1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regel** \> **für Bedrohungsrichtlinien** abschnitt \>  \> **Mandanten-Zulassungs-/Sperrlisten.**
 
-2. Überprüfen Sie auf der Seite **"Mandanten-Zulassungs-/Sperrliste",** ob die Registerkarte **"URLs"** ausgewählt ist, und klicken Sie dann auf **"Blockieren".**
+2. Überprüfen Sie auf der Seite **"Mandanten-Zulassungs-/Sperrliste",** ob die Registerkarte **"URLs"** ausgewählt ist, und klicken Sie dann auf ![ das Symbol ](../../media/m365-cc-sc-create-icon.png) **"Blockieren".**
 
 3. Konfigurieren Sie im angezeigten Flyout **"URLs blockieren"** die folgenden Einstellungen:
-
-   - **Hinzufügen von ZU blockierenden URLs:** Geben Sie eine URL pro Zeile ein, bis maximal 20. Ausführliche Informationen zur Syntax für URL-Einträge finden Sie in der [URL-Syntax für den Abschnitt "Mandanten-Zulassungs-/Sperrliste"](#url-syntax-for-the-tenant-allowblock-list) weiter unten in diesem Artikel.
-
+   - **Hinzufügen von URLs mit Platzhaltern:** Geben Sie eine URL pro Zeile ein, maximal 20. Ausführliche Informationen zur Syntax für URL-Einträge finden Sie in der [URL-Syntax für den Abschnitt "Mandanten-Zulassungs-/Sperrliste"](#url-syntax-for-the-tenant-allowblock-list) weiter unten in diesem Artikel.
    - **Läuft nie ab:** Führen Sie einen der folgenden Schritte aus:
-
-     - Stellen Sie sicher, dass die Einstellung deaktiviert ist ( ![ Umschalten ](../../media/scc-toggle-off.png) ) und verwenden Sie das Feld **"Läuft ab",** um das Ablaufdatum für die Einträge anzugeben.
+     - Stellen Sie sicher, dass die Einstellung deaktiviert ist ( ![ Umschalten ](../../media/scc-toggle-off.png) ) und verwenden Sie das Feld **"Entfernen** auf", um das Ablaufdatum für die Einträge anzugeben.
 
        oder
 
      - Verschieben Sie den Umschalter nach rechts, um die Einträge so zu konfigurieren, dass sie nie ablaufen: ![Umschaltfläche ein](../../media/scc-toggle-on.png).
-
    - **Optionaler Hinweis:** Geben Sie beschreibenden Text für die Einträge ein.
 
 4. Klicken Sie nach Abschluss des Vorgangs auf **Hinzufügen**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Verwenden des Microsoft 365 Defender-Portals zum Erstellen von Blockierungsdateieinträgen in der Mandanten-Zulassungs-/Sperrliste
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** \> **Bedrohungsrichtlinien** \> **Mandanten-Zulassungs-/Sperrlisten.**
+1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regel** \> **für Bedrohungsrichtlinien** abschnitt \>  \> **Mandanten-Zulassungs-/Sperrlisten.**
 
-2. Wählen Sie auf der Seite **"Mandanten-Zulassungs-/Sperrliste"** die Registerkarte **"Dateien"** aus, und klicken Sie dann auf **"Blockieren".**
+2. Wählen Sie auf der Seite **"Mandanten-Zulassungs-/Sperrliste"** die Registerkarte **"Dateien"** aus, und klicken Sie dann auf ![ das Symbol ](../../media/m365-cc-sc-create-icon.png) **"Blockieren".**
 
-3. Konfigurieren Sie in den angezeigten **Add-Dateien zum Blockieren** des Flyouts die folgenden Einstellungen:
-
+3. Konfigurieren Sie im angezeigten Flyout **"Dateien blockieren"** die folgenden Einstellungen:
    - **Hinzufügen von Dateihashes:** Geben Sie einen SHA256-Hashwert pro Zeile ein, bis maximal 20.
-
    - **Läuft nie ab:** Führen Sie einen der folgenden Schritte aus:
-
-     - Stellen Sie sicher, dass die Einstellung deaktiviert ist ( ![ Umschalten ](../../media/scc-toggle-off.png) ) und verwenden Sie das Feld **"Läuft ab",** um das Ablaufdatum für die Einträge anzugeben.
+     - Stellen Sie sicher, dass die Einstellung deaktiviert ist ( ![ Umschalten ](../../media/scc-toggle-off.png) ) und verwenden Sie das Feld **"Entfernen** auf", um das Ablaufdatum für die Einträge anzugeben.
 
      oder
 
      - Verschieben Sie den Umschalter nach rechts, um die Einträge so zu konfigurieren, dass sie nie ablaufen: ![Umschaltfläche ein](../../media/scc-toggle-on.png).
-
    - **Optionaler Hinweis:** Geben Sie beschreibenden Text für die Einträge ein.
 
 4. Klicken Sie nach Abschluss des Vorgangs auf **Hinzufügen**.
@@ -142,42 +134,37 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassung
 - Wenn Sie einen Zulassungs- oder Blockeintrag für ein Domänenpaar konfigurieren, werden Nachrichten von diesem Domänenpaar nicht mehr in der Spoofintelligenz angezeigt.
 - Einträge für gefälschte Absender laufen nie ab.
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** \> **Bedrohungsrichtlinien** \> **Mandanten-Zulassungs-/Sperrlisten.**
+1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regel** \> **für Bedrohungsrichtlinien** abschnitt \>  \> **Mandanten-Zulassungs-/Sperrlisten.**
 
-2. Wählen Sie auf der Seite **"Mandanten-Zulassungs-/Sperrliste"** die Registerkarte **"Spoofing"** aus, und klicken Sie dann auf **"Hinzufügen".**
+2. Wählen Sie auf der Seite **"Mandanten-Zulassungs-/Sperrliste"** die Registerkarte **"Spoofing"** aus, und klicken Sie dann auf ![ das Symbol ](../../media/m365-cc-sc-create-icon.png) **"Blockieren" hinzufügen.**
 
 3. Konfigurieren Sie im angezeigten Flyout **"Neue Domänenpaare hinzufügen"** die folgenden Einstellungen:
-
    - **Hinzufügen neuer Domänenpaare mit Platzhaltern:** Geben Sie ein Domänenpaar pro Zeile ein, maximal 20. Ausführliche Informationen zur Syntax für spoofierte Absendereinträge finden Sie in der [Domänenpaarsyntax für spoofierte Absendereinträge im Abschnitt "Mandanten-Zulassungs-/Sperrliste"](#domain-pair-syntax-for-spoofed-sender-entries-in-the-tenant-allowblock-list) weiter unten in diesem Artikel.
-
    - **Spooftyp:** Wählen Sie einen der folgenden Werte aus:
      - **Intern:** Der gefälschte Absender befindet sich in einer Domäne, die zu Ihrer Organisation gehört (einer [akzeptierten Domäne).](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains)
      - **Extern:** Der gefälschte Absender befindet sich in einer externen Domäne.
-
    - **Aktion:** Wählen Sie **"Zulassen"** oder **"Blockieren"** aus.
 
 4. Klicken Sie nach Abschluss des Vorgangs auf **Hinzufügen**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-entries-in-the-tenant-allowblock-list"></a>Verwenden des Microsoft 365 Defender-Portals zum Anzeigen von Einträgen in der Mandanten-Zulassungs-/Sperrliste
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** \> **Bedrohungsrichtlinien** \> **Mandanten-Zulassungs-/Sperrlisten.**
+1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regel** \> **für Bedrohungsrichtlinien** abschnitt \>  \> **Mandanten-Zulassungs-/Sperrlisten.**
 
 2. Wählen Sie die gewünschte Registerkarte aus. Welche Spalten verfügbar sind, hängt von der ausgewählten Registerkarte ab:
 
    - **URLs:**
      - **Wert:** Die URL.
      - **Aktion:** Der Wert **Block**.
-     - **Datum der letzten Aktualisierung**
-     - **Ablaufdatum**
-     - **Hinweis**
-
+     - **Zuletzt aktualisiert**
+     - **Entfernen von "On"**
+     - **Notizen**
    - **Files**
      - **Wert:** Der Dateihash.
      - **Aktion:** Der Wert **Block**.
-     - **Datum der letzten Aktualisierung**
-     - **Ablaufdatum**
-     - **Hinweis**
-
+     - **Zuletzt aktualisiert**
+     - **Entfernen von "On"**
+     - **Notizen**
    - **Spoofing**
      - **Gefälschter Benutzer**
      - **Senden der Infrastruktur**
@@ -190,10 +177,9 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassung
 
    - **URLs:** Sie können die Ergebnisse nach **Aktion** gruppieren.
    - **Dateien:** Sie können die Ergebnisse nach **Aktion** gruppieren.
-   - **Absenderdomänen für die BCL-Umgehung:** **Die Gruppe** ist auf dieser Registerkarte nicht verfügbar.
    - **Spoofing:** Sie können die Ergebnisse nach **Aktions-** oder **Spooftyp** gruppieren.
 
-   Klicken Sie auf **"Suchen",** geben Sie einen Wert ganz oder teilweise ein, und drücken Sie dann die EINGABETASTE, um einen bestimmten Wert zu finden. Wenn Sie fertig sind,  klicken Sie auf ![ Suchsymbol löschen ](../../media/b6512677-5e7b-42b0-a8a3-3be1d7fa23ee.gif) .
+   Klicken Sie auf **"Suchen",** geben Sie einen Wert ganz oder teilweise ein, und drücken Sie dann die EINGABETASTE, um einen bestimmten Wert zu finden. Wenn Sie fertig sind, klicken Sie auf ![ Suchsymbol löschen ](../../media/m365-cc-sc-close-icon.png) **.**
 
    Klicken Sie auf **"Filtern",** um die Ergebnisse zu filtern. Die werte, die  im angezeigten Filter-Flyout verfügbar sind, hängen von der ausgewählten Registerkarte ab:
 
@@ -201,19 +187,12 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassung
      - **Action**
      - **Nie ablaufen**
      - **Datum der letzten Aktualisierung**
-     - **Ablaufdatum**
-
+     - **Entfernen von "On"**
    - **Files**
      - **Action**
      - **Nie ablaufen**
-     - **Datum der letzten Aktualisierung**
-     - **Ablaufdatum**
-
-   - **Absenderdomänen für BCL-Umgehung**
-     - **Nie ablaufen**
-     - **Datum der letzten Aktualisierung**
-     - **Ablaufdatum**
-
+     - **Zuletzt aktualisiert**
+     - **Entfernen von "On"**
    - **Spoofing**
      - **Action**
      - **Spooftyp**
@@ -222,43 +201,34 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassung
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-entries-in-the-tenant-allowblock-list"></a>Verwenden des Microsoft 365 Defender-Portals zum Ändern von Einträgen in der Mandanten-Zulassungs-/Sperrliste
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** \> **Bedrohungsrichtlinien** \> **Mandanten-Zulassungs-/Sperrlisten.**
+1. Wechseln Sie im Microsoft 365 Defender-Portal zum Abschnitt **"Richtlinien & Regeln** für \> **Bedrohungsrichtlinien"** \>  im Abschnitt \> **"Mandanten-Zulassungs-/Sperrlisten".**
 
 2. Wählen Sie die Registerkarte aus, die den Eintragstyp enthält, den Sie ändern möchten:
    - **Urls**
    - **Files**
-   - **Absenderdomänen für BCL-Umgehung**
    - **Spoofing**
 
-3. Wählen Sie den Eintrag aus, den  Sie ändern möchten, und klicken Sie dann auf ![ "Bearbeiten". ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) Die Werte, die Sie im angezeigten Flyout ändern können, hängen von der Registerkarte ab, die Sie im vorherigen Schritt ausgewählt haben:
-
+3. Wählen Sie den Eintrag aus, den Sie ändern möchten, und klicken Sie dann auf ![ ](../../media/m365-cc-sc-edit-icon.png) **"Bearbeiten".** Die Werte, die Sie im angezeigten Flyout ändern können, hängen von der Registerkarte ab, die Sie im vorherigen Schritt ausgewählt haben:
    - **Urls**
      - **Nie ablaufen** und/oder Ablaufdatum.
      - **Optionaler Hinweis**
-
    - **Files**
      - **Nie ablaufen** und/oder Ablaufdatum.
      - **Optionaler Hinweis**
-
-   - **Absenderdomänen für BCL-Umgehung**
-     - **Nie ablaufen** und/oder Ablaufdatum.
-
    - **Spoofing**
      - **Aktion:** Sie können den Wert in **Zulassen** oder **Blockieren** ändern.
-
 4. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>Verwenden des Microsoft 365 Defender-Portals zum Entfernen von Einträgen aus der Mandanten-Zulassungs-/Sperrliste
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal  zu \> "Zulassungs-/Sperrlisten des Mandanten für die Bedrohungsverwaltungsrichtlinie".  \> 
+1. Wechseln Sie im Microsoft 365 Defender-Portal zum Abschnitt **"Richtlinien & Regeln** für \> **Bedrohungsrichtlinien"** \>  im Abschnitt \> **"Mandanten-Zulassungs-/Sperrlisten".**
 
 2. Wählen Sie die Registerkarte aus, die den Eintragstyp enthält, den Sie entfernen möchten:
    - **Urls**
    - **Files**
-   - **Absenderdomänen für BCL-Umgehung**
    - **Spoofing**
 
-3. Wählen Sie den Eintrag aus, den  Sie entfernen möchten, und klicken Sie dann auf das Symbol ![ "Löschen". ](../../media/87565fbb-5147-4f22-9ed7-1c18ce664392.png)
+3. Wählen Sie den Eintrag aus, den Sie entfernen möchten, und klicken Sie dann auf ![ ](../../media/m365-cc-sc-delete-icon.png) **"Löschen".**
 
 4. Klicken Sie im angezeigten Warndialogfeld auf **"Löschen".**
 
@@ -662,7 +632,7 @@ Hier sind einige Beispiele für gültige Domänenpaare zum Identifizieren von ge
 - `chris@contoso.com, fabrikam.com`
 - `*, contoso.net`
 
-Die maximale Anzahl von gefälschten Absendereinträgen beträgt 1000. 
+Die maximale Anzahl von gefälschten Absendereinträgen beträgt 1000.
 
 Das Hinzufügen eines Domänenpaars erlaubt oder blockiert nur die *Kombination aus* dem gefälschten Benutzer *und* der sendenden Infrastruktur. Es erlaubt weder E-Mails vom gefälschten Benutzer aus einer Quelle noch E-Mails aus der sendenden Infrastrukturquelle für spoofierte Benutzer. 
 

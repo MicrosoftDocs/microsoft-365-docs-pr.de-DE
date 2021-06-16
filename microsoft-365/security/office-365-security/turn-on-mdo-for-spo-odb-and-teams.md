@@ -20,12 +20,12 @@ description: Administratoren erfahren, wie Sie sichere Anlagen für SharePoint, 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 374e67626eab07cc8ab89a52554658a31e661eec
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a654db40e5dec8d23d07ec7455216fe4e0a8c0e7
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929947"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933011"
 ---
 # <a name="turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Aktivieren von Sicheren Anlagen für SharePoint, OneDrive und Microsoft Teams
 
@@ -53,13 +53,17 @@ Dieser Artikel enthält die Schritte zum Aktivieren und Konfigurieren von sicher
 
 ## <a name="step-1-use-the-microsoft-365-defender-portal-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Schritt 1: Verwenden des Microsoft 365 Defender-Portals zum Aktivieren von sicheren Anlagen für SharePoint, OneDrive und Microsoft Teams
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** Für \> **Bedrohungsrichtlinien** sichere \> **Anlagen,** und klicken Sie auf **"Globale Einstellungen".**
+1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Richtlinien** für \> **Bedrohungsrichtlinien** \>  im Abschnitt \> **"Sichere Anlagen".**
 
-2. Wechseln Sie in den angezeigten **globalen Einstellungen** zur Einstellung **"Defender für Office 365 aktivieren" für SharePoint, OneDrive und Microsoft Teams.** Verschieben Sie den Umschalter nach ![ rechts, ](../../media/scc-toggle-on.png) um sichere Anlagen für SharePoint, OneDrive und Microsoft Teams zu aktivieren.
+2. Klicken Sie auf der Seite **"Sichere Anlagen"** auf **"Globale Einstellungen".**
+
+3. Wechseln Sie in den angezeigten **globalen Einstellungen** zum Abschnitt **"Dateien schützen" in SharePoint, OneDrive und Microsoft Teams.**
+
+   Verschieben Sie die **Umschaltfläche "Defender für Office 365 für SharePoint", "OneDrive" und "Microsoft Teams"** auf die rechte ![ Umschaltfläche, ](../../media/scc-toggle-on.png) um sichere Anlagen für SharePoint, OneDrive und Microsoft Teams zu aktivieren.
 
    Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
-### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Verwenden von Exchange Online PowerShell zum Aktivieren von sicheren Anlagen für SharePoint, OneDrive und Microsoft Teams
+### <a name="use-exchange-online-powershell-to-turn-on-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Verwenden sie Exchange Online PowerShell, um sichere Anlagen für SharePoint, OneDrive und Microsoft Teams zu aktivieren.
 
 Wenn Sie lieber PowerShell verwenden möchten, um sichere Anlagen für SharePoint, OneDrive und Microsoft Teams zu aktivieren, [stellen Sie eine Verbindung mit Exchange Online PowerShell her,](/powershell/exchange/connect-to-exchange-online-powershell) und führen Sie den folgenden Befehl aus:
 
@@ -71,7 +75,9 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Set-AtpP
 
 ## <a name="step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files"></a>Schritt 2: (Empfohlen) Verwenden sie SharePoint Online-PowerShell, um zu verhindern, dass Benutzer schädliche Dateien herunterladen
 
-Standardmäßig können Benutzer keine schädlichen Dateien öffnen, verschieben, kopieren oder freigeben, die von ATP erkannt werden. Sie können jedoch schädliche Dateien löschen und herunterladen.
+Standardmäßig können Benutzer keine schädlichen Dateien öffnen, verschieben, kopieren oder freigeben, <sup>\*</sup> die von sicheren Anlagen für SharePoint, OneDrive und Microsoft Teams erkannt werden. Sie können jedoch schädliche Dateien löschen und herunterladen.
+
+<sup>\*</sup> Wenn Benutzer zu **"Zugriff verwalten"** wechseln, ist die Option **"Freigeben"** weiterhin verfügbar.
 
 Um zu verhindern, dass Benutzer schädliche Dateien herunterladen, [stellen Sie eine Verbindung mit SharePoint Online PowerShell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) her, und führen Sie den folgenden Befehl aus:
 
@@ -90,34 +96,31 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Set-SPOT
 
 Sie können eine Benachrichtigungsrichtlinie erstellen, die Sie und andere Administratoren benachrichtigt, wenn sichere Anlagen für SharePoint, OneDrive und Microsoft Teams eine schädliche Datei erkennt. Weitere Informationen zu Warnungen finden Sie unter [Erstellen von Aktivitätswarnungen im Microsoft 365 Defender-Portal.](../../compliance/create-activity-alerts.md)
 
-1. Wechseln Sie im [Microsoft 365 Defender-Portal](https://security.microsoft.com)zu **Richtlinien &** \> **Regelwarnungsrichtlinie,** oder öffnen Sie <https://security.microsoft.com/alertpolicies> .
+1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien &** \> **Regelwarnungsrichtlinie,** oder öffnen Sie <https://security.microsoft.com/alertpolicies> .
 
 2. Klicken Sie auf der Seite **"Warnungsrichtlinie"** auf **"Neue Warnungsrichtlinie".**
 
 3. Der Assistent **für neue Warnungsrichtlinien** wird in einem Flyout geöffnet. Konfigurieren Sie auf der Seite **"Warnung benennen"** die folgenden Einstellungen:
-
    - **Name:** Geben Sie einen eindeutigen und beschreibenden Namen ein. Beispielsweise schädliche Dateien in Bibliotheken.
    - **Beschreibung:** Geben Sie eine optionale Beschreibung ein. Benachrichtigt Administratoren beispielsweise, wenn schädliche Dateien in SharePoint Online, OneDrive oder Microsoft Teams erkannt werden.
-   - **Schweregrad:** Lassen Sie den Standardwert **Niedrig** ausgewählt, oder wählen Sie **Mittel** oder **Hoch** aus.
-   - **Kategorie:** Auswählen **der Bedrohungsverwaltung**.
+   - **Schweregrad:** Wählen Sie **"Niedrig",** **"Mittel"** oder **"Hoch"** aus der Dropdownliste aus.
+   - **Kategorie:** Wählen Sie **die Bedrohungsverwaltung** aus der Dropdownliste aus.
 
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
 4. Konfigurieren Sie auf der Seite **"Warnungseinstellungen erstellen"** die folgenden Einstellungen:
-
-   - **Was möchten Sie warnen?: Aktivität ist:** Wählen Sie **erkannte Schadsoftware in Datei** aus.
-   - **Wie soll die Warnung ausgelöst werden?**: Behalten Sie den Standardwert **bei, wenn eine Aktivität mit der** ausgewählten Regel übereinstimmt.
+   - **Wozu möchten Sie eine Warnung erstellen?** Section \> **Activity is** \> Select **Detected malware in file** from the drop down list.
+   - **Wie soll die Warnung ausgelöst werden?** section: Leave the default value **Every time an activity matches the rule** selected.
 
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
 5. Konfigurieren Sie auf der Seite **"Empfänger festlegen"** die folgenden Einstellungen:
-
-   - **Senden von E-Mail-Benachrichtigungen:** Überprüfen Sie, ob diese Einstellung ausgewählt ist. Wählen Sie im Feld **"E-Mail-Empfänger"** einen oder mehrere globale Administratoren, Sicherheitsadministratoren oder Sicherheitsleser aus, die eine Benachrichtigung erhalten sollen, wenn eine schädliche Datei erkannt wird.
+   - Überprüfen Sie, ob **"E-Mail-Benachrichtigungen senden"** ausgewählt ist. Wählen Sie im Feld **"E-Mail-Empfänger"** einen oder mehrere globale Administratoren, Sicherheitsadministratoren oder Sicherheitsleser aus, die eine Benachrichtigung erhalten sollen, wenn eine schädliche Datei erkannt wird.
    - **Grenzwert für tägliche Benachrichtigungen:** Lassen Sie den Standardwert **Kein Grenzwert** ausgewählt.
 
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-6. Überprüfen Sie auf der Seite **"Einstellungen überprüfen"** die Einstellungen, und klicken Sie in einem der Abschnitte auf **"Bearbeiten",** um Änderungen vorzunehmen.
+6. Überprüfen Sie auf der Seite **"Einstellungen überprüfen"** Ihre Einstellungen. Sie können in jedem Abschnitt **Bearbeiten** auswählen, um die Einstellungen in diesem Abschnitt zu ändern. Alternativ können Sie auf **Zurück** klicken oder die entsprechende Seite im Assistenten auswählen.
 
    Lassen Sie im Abschnitt **Möchten Sie die Richtlinie sofort aktivieren?** den Standardwert **Ja bei, und aktivieren Sie sie sofort.**
 
@@ -139,7 +142,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-Activ
 
 - Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie sichere Anlagen für SharePoint, OneDrive und Microsoft Teams erfolgreich aktiviert haben:
 
-  - Wechseln Sie im [Microsoft 365 Defender-Portal](https://security.microsoft.com)zu **Richtlinien & Regeln** für sichere \> Anlagen für **Bedrohungsrichtlinien,** wählen Sie globale Einstellungen aus, und überprüfen Sie den Wert der Einstellung \>  **"Defender für Office 365 aktivieren" für SharePoint, OneDrive und Microsoft Teams.** 
+  - Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Richtlinien** für \>  \> **Bedrohungsrichtlinien** im Abschnitt \> **"Sichere Anlagen",** wählen Sie **globale Einstellungen** aus, und überprüfen Sie den Wert der Einstellung **"Defender für Office 365 für SharePoint, OneDrive und Microsoft Teams** aktivieren".
 
   - Führen Sie in Exchange Online PowerShell den folgenden Befehl aus, um die Eigenschafteneinstellung zu überprüfen:
 
@@ -149,7 +152,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-Activ
 
     Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Get-AtpPolicyForO365".](/powershell/module/exchange/get-atppolicyforo365)
 
-- Öffnen Sie SharePoint Online-PowerShell, und führen Sie den folgenden Befehl aus, um den Eigenschaftswert zu überprüfen, um zu überprüfen, ob Sie Personen erfolgreich am Herunterladen schädlicher Dateien gehindert haben:
+- Öffnen Sie SharePoint Online-PowerShell, und führen Sie den folgenden Befehl aus, um den Eigenschaftswert zu überprüfen, um zu überprüfen, ob Sie erfolgreich verhindert haben, dass Benutzer schädliche Dateien herunterladen:
 
   ```powershell
   Get-SPOTenant | Format-List DisallowInfectedFileDownload
@@ -158,9 +161,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [New-Activ
   Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Get-SPOTenant".](/powershell/module/sharepoint-online/Set-SPOTenant)
 
 - Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie eine Benachrichtigungsrichtlinie für erkannte Dateien erfolgreich konfiguriert haben:
-
   - Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien &** \> **Regelwarnungsrichtlinie,** \> wählen Sie die Warnungsrichtlinie aus, und überprüfen Sie die Einstellungen.
-
   - Ersetzen Sie in Microsoft 365 PowerShell des Defender-Portals \<AlertPolicyName\> durch den Namen der Warnungsrichtlinie, führen Sie den folgenden Befehl aus, und überprüfen Sie die Eigenschaftswerte:
 
     ```powershell

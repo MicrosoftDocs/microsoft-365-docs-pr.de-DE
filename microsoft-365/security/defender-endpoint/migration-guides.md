@@ -17,14 +17,14 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 06/14/2021
 ms.technology: mde
-ms.openlocfilehash: 4d10de35358d528f004ee11e931fc6f41ce20482
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a0b1f82ae26ba1103ed4cc7eb0be7e9c376b5f52
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930499"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933035"
 ---
-# <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>Wechseln Sie zu Microsoft Defender für Endpunkt und Microsoft Defender Antivirus
+# <a name="make-the-switch-to-microsoft-defender-for-endpoint"></a>Wechseln zu Microsoft Defender für Endpunkt
 
 **Gilt für:**
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
@@ -34,14 +34,14 @@ ms.locfileid: "52930499"
 
 ## <a name="migration-guides"></a>Migrationsleitfäden
 
-Wenn Sie erwägen, von einer Nicht-Microsoft 365 Defender-Lösung zu Microsoft Defender für Endpunkt mit Microsoft Defender Antivirus zu wechseln, lesen Sie unsere Migrationsleitfaden. Wählen Sie das Szenario aus, das am besten darstellt, wo Sie sich in Ihrem Bereitstellungsprozess befinden, und sehen Sie sich die Anleitung an.
+Wenn Sie in Betracht ziehen, zu Defender für Endpunkt zu wechseln, haben wir Anleitungen, die Ihnen helfen können. Überprüfen Sie in der folgenden Tabelle die Szenarien. Wählen Sie das Szenario aus, das Ihre Situation am besten darstellt, und sehen Sie sich die empfohlenen Anleitungen an.
 
-|Szenario |Richtlinien |
-|:--|:--|
-|Sie verfügen noch nicht über eine Endpunktschutzlösung, und Sie möchten mehr darüber wissen, wie Microsoft Defender für Endpunkt & Microsoft Defender Antivirus funktioniert.  |[Evaluierungslabor für Microsoft Defender für Endpunkt](evaluation-lab.md)   |
-|Sie haben Microsoft Defender für Endpunkt & Microsoft Defender Antivirus und benötigen Hilfe bei der Einrichtung und Konfiguration.  |[Bereitstellungshandbuch für Microsoft Defender für Endpunkt](deployment-phases.md)  |
-|Sie planen die Migration von einer nicht von Microsoft stammenden Endpunktschutzlösung zu Microsoft Defender für Endpunkt & Microsoft Defender Antivirus. |[Wechseln zu Microsoft Defender für Endpunkt](switch-to-microsoft-defender-migration.md)   |
-|Sie haben zu Microsoft Defender für Endpunkt & Microsoft Defender Antivirus migriert und benötigen Hilfe bei den nächsten Schritten, z. B. beim Konfigurieren zusätzlicher Features oder beim Optimieren Ihrer Sicherheitseinstellungen. | [Verwalten von Microsoft Defender für Endpunkt, nach der Migration](manage-atp-post-migration.md) |
+| Szenario | Richtlinien |
+|:----|:----|
+| Sie haben noch keine Endpunktschutzlösung eingerichtet, und Sie möchten mehr über Defender für Endpunkt wissen. <p> Sie möchten sehen, wie Defender für Endpunkt funktioniert, bevor Sie es in Ihrer Umgebung bereitstellen.  | [Evaluierungslabor für Microsoft Defender für Endpunkt](evaluation-lab.md)   |
+| Sie verfügen bereits über Defender für Endpunkt, und Sie möchten Hilfe bei der Einrichtung und Konfiguration benötigen.  | [Bereitstellungshandbuch für Microsoft Defender für Endpunkt](deployment-phases.md)  |
+| Sie planen, von einer nicht von Microsoft stammenden Endpunktschutzlösung zu Defender für Endpunkt und Microsoft Defender Antivirus zu wechseln. <p> Sie möchten einen Überblick über den Migrationsprozess erhalten und erfahren, wie Sie den Wechsel vornehmen. |[Wechseln zu Microsoft Defender für Endpunkt](switch-to-microsoft-defender-migration.md)   |
+| Sie haben bereits zu Defender für Endpunkt migriert oder integriert. Sie benötigen Hilfe bei den nächsten Schritten, z. B. beim Verwalten Ihrer Sicherheitseinstellungen, beim Konfigurieren weiterer Features oder bei der Optimierung Ihrer Sicherheitsrichtlinien. | [Verwalten von Microsoft Defender für Endpunkt, nach der Migration](manage-atp-post-migration.md) |
 
 
 ## <a name="do-you-have-feedback-for-us"></a>Haben Sie Feedback für uns?

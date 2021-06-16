@@ -18,12 +18,12 @@ ms.collection:
 description: Administratoren können erfahren, wie Sie Richtlinien für sichere Links und globale Einstellungen für sichere Links in Microsoft Defender für Office 365 anzeigen, erstellen, ändern und löschen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 40ae52cfce53c3fa14253a94e72f1a2bccda9a86
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: fb157792f0f9e80e4a974b59aebaa2e1991c5d0b
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929827"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933119"
 ---
 # <a name="set-up-safe-links-policies-in-microsoft-defender-for-office-365"></a>Einrichten von Richtlinien für sichere Links in Microsoft Defender für Office 365
 
@@ -36,12 +36,15 @@ ms.locfileid: "52929827"
 > [!IMPORTANT]
 > Dieser Artikel richtet sich an Geschäftskunden, die über [Microsoft Defender für Office 365](defender-for-office-365.md) verfügen. Wenn Sie ein Privatbenutzer sind, der nach Informationen zu Safelinks in Outlook sucht, finden Sie weitere Informationen unter [Advanced Outlook.com Security](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
 
-Sichere Links ist ein Feature in [Microsoft Defender für Office 365,](defender-for-office-365.md) das die URL-Überprüfung eingehender E-Mail-Nachrichten im E-Mail-Fluss sowie den Zeitpunkt der Klicküberprüfung von URLs und Links in E-Mail-Nachrichten und an anderen Speicherorten ermöglicht. Weitere Informationen finden Sie unter ["Sichere Links" in Microsoft Defender für Office 365.](safe-links.md)
+Sichere Links in [Microsoft Defender für Office 365](defender-for-office-365.md) bieten URL-Überprüfung eingehender E-Mail-Nachrichten im E-Mail-Fluss und Zeitpunkt der Klicküberprüfung von URLs und Links in E-Mail-Nachrichten und an anderen Speicherorten. Weitere Informationen finden Sie unter ["Sichere Links" in Microsoft Defender für Office 365.](safe-links.md)
 
 Es gibt keine integrierte oder standardmäßige Richtlinie für sichere Links. Um das Scannen sicherer Links von URLs zu erhalten, müssen Sie eine oder mehrere Richtlinien für sichere Links erstellen, wie in diesem Artikel beschrieben.
 
 > [!NOTE]
+>
 > Sie konfigurieren die globalen Einstellungen für den Schutz sicherer Links **außerhalb** von Richtlinien für sichere Links. Anweisungen finden Sie unter [Konfigurieren globaler Einstellungen für sichere Links in Microsoft Defender für Office 365.](configure-global-settings-for-safe-links.md)
+>
+> Administratoren sollten die unterschiedlichen Konfigurationseinstellungen für sichere Links berücksichtigen. Eine der verfügbaren Optionen besteht darin, Benutzerdaten in sichere Links einzuschließen. Dieses Feature ermöglicht *es Sicherheitsteams,* potenzielle Benutzerkompromittierungen zu untersuchen, Korrekturmaßnahmen zu ergreifen und kostspielige Verstöße zu begrenzen.
 
 Sie können Richtlinien für sichere Links im Microsoft 365 Defender-Portal oder in PowerShell konfigurieren (Exchange Online PowerShell für berechtigte Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer, aber mit Microsoft Defender für Office 365-Add-On-Abonnements).
 
@@ -49,9 +52,6 @@ Die grundlegenden Elemente einer Richtlinie für sichere Links sind:
 
 - Die Richtlinie für **sichere Links:** Aktivieren Sie den Schutz für sichere Links, aktivieren Sie die Echtzeit-URL-Überprüfung, geben Sie an, ob auf den Abschluss der Echtzeitüberprüfung gewartet werden soll, bevor die Nachricht zuzustellen ist, aktivieren Sie die Überprüfung auf interne Nachrichten, geben Sie an, ob Benutzerklicks auf URLs nachverfolgen sollen, und geben Sie an, ob Benutzer auf die ursprüngliche URL klicken dürfen.
 - **Die Regel für sichere Verknüpfungen:** Gibt die Prioritäts- und Empfängerfilter an (für wen die Richtlinie gilt).
-
-> [!IMPORTANT]
-> Administratoren sollten die unterschiedlichen Konfigurationseinstellungen für SafeLinks berücksichtigen. Eine der verfügbaren Optionen besteht darin, Benutzerdaten in SafeLinks einzuschließen. Dieses Feature ermöglicht *es Sicherheitsteams,* potenzielle Benutzerkompromittierungen zu untersuchen, Korrekturmaßnahmen zu ergreifen und kostspielige Verstöße zu begrenzen.
 
 Der Unterschied zwischen diesen beiden Elementen ist nicht offensichtlich, wenn Sie Richtlinien für sichere Links im Microsoft 365 Defender-Portal verwalten:
 
@@ -74,7 +74,7 @@ In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten 
   Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender-Portal](permissions-in-the-security-and-compliance-center.md) und [Berechtigungen in Exchange Online](/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
-  > 
+  >
   > - Wenn Sie Benutzer zur entsprechenden Azure Active Directory Rolle im Microsoft 365 Admin Center hinzufügen, erhalten Benutzer die erforderlichen Berechtigungen im Microsoft 365 Defender-Portal _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   . – Die Rollengruppe **"Organisationsverwaltung nur anzeigen"** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) bietet auch schreibgeschützten Zugriff auf das Feature.
 
@@ -88,39 +88,45 @@ In Exchange Online PowerShell oder der eigenständigen EOP PowerShell verwalten 
 
 Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Links im Microsoft 365 Defender-Portal werden die Regel für sichere Links und die zugehörige Richtlinie für sichere Links gleichzeitig mit demselben Namen für beide erstellt.
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** Threat \> **Policies** \> **Safe Links**.
+1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Richtlinien** für \>  \> **Bedrohungsrichtlinien** im Abschnitt \> **"Sichere Links".**
 
-2. Klicken Sie auf der Seite **"Sichere Links"** auf **"Erstellen".**
+2. Klicken Sie auf der Seite **"Sichere Links"** auf ![ das Symbol ](../../media/m365-cc-sc-create-icon.png) **"Erstellen".**
 
 3. Der Assistent **für neue Richtlinien für sichere Links** wird geöffnet. Konfigurieren Sie auf der Seite **"Richtlinie benennen"** die folgenden Einstellungen:
 
    - **Name**: Geben Sie einen eindeutigen, aussagekräftigen Namen für die Richtlinie ein.
-
    - **Beschreibung**: Geben Sie eine optionale Beschreibung für die Richtlinie ein.
 
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-4. Konfigurieren Sie auf der **angezeigten Einstellungen** Seite die folgenden Einstellungen:
+4. Identifizieren Sie auf der angezeigten Seite **"Benutzer und Domänen"** die internen Empfänger, für die die Richtlinie gilt (Empfängerbedingungen):
+   - **Benutzer**: Die angegebenen Postfächer, E-Mail-Benutzer oder E-Mail-Kontakte in Ihrer Organisation.
+   - **Gruppen**: Die angegebenen Verteilergruppen, E-Mail-aktivierten Sicherheitsgruppen oder Microsoft 365-Gruppen in Ihrer Organisation.
+   - **Domänen**: Alle Empfänger in der angegebenen [akzeptierten Domäne](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) in Ihrer Organisation.
 
-   - **Wählen Sie die Aktion für unbekannte potenziell schädliche URLs in Nachrichten** aus: Aktivieren Sie **"Ein",** um den Schutz sicherer Links für Links in E-Mail-Nachrichten zu aktivieren.
+   Klicken Sie auf das entsprechende Feld, beginnen Sie mit der Eingabe eines Wertes, und wählen Sie den gewünschten Wert aus den Ergebnissen aus. Wiederholen Sie diesen Vorgang so oft wie nötig. Um einen vorhandenen Wert zu entfernen, klicken Sie auf das ![Symbol „Entfernen“](../../media/m365-cc-sc-remove-selection-icon.png) neben dem Wert.
 
+   Für Benutzer oder Gruppen können Sie die meisten Bezeichner verwenden (Name, Anzeigename, Alias, E-Mail-Adresse, Kontoname usw.), aber in den Ergebnissen wird der entsprechende Anzeigename angezeigt. Geben Sie für Benutzer einen einzelnen Stern (\*) ein, um alle verfügbaren Werte anzuzeigen.
+
+   Mehreren Werten in der gleichen Bedingung verwenden die „ODER“-Logik (z. B. _\<recipient1\>_ ODER _\<recipient2\>_). Unterschiedlichen Bedingungen verwenden die „UND“-Logik (z. B. _\<recipient1\>_ UND _\<member of group 1\>_).
+
+   - **Ausschließen dieser Benutzer, Gruppen und Domänen**: Um Ausnahmen für die internen Empfänger hinzuzufügen, für welche die Richtlinie gilt (Empfängerausnahmen), wählen Sie diese Option und konfigurieren Sie die Ausnahmen. Die Einstellungen und das Verhalten entsprechen genau den Bedingungen.
+
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
+
+5. Konfigurieren Sie auf der angezeigten Seite **"Schutzeinstellungen"** die folgenden Einstellungen:
+   - **Wählen Sie die Aktion für unbekannte potenziell schädliche URLs in Nachrichten** aus: Aktivieren Sie **"Ein",** um den Schutz sicherer Links für Links in E-Mail-Nachrichten zu aktivieren. Wenn Sie diese Einstellung aktivieren, sind die folgenden Einstellungen verfügbar:
+     - **Anwenden der Echtzeit-URL-Überprüfung auf verdächtige Links und Links, die auf Dateien verweisen:** Wählen Sie diese Option aus, um die Echtzeitüberprüfung von Links in E-Mail-Nachrichten zu aktivieren. Wenn Sie diese Einstellung aktivieren, ist folgende Einstellung verfügbar:
+       - **Warten Sie, bis die URL-Überprüfung abgeschlossen ist, bevor Sie die Nachricht übermitteln:** Wählen Sie diese Option aus, um auf den Abschluss der URL-Überprüfung in Echtzeit zu warten, bevor Sie die Nachricht übermitteln.
+     - **Anwenden von sicheren Links auf E-Mail-Nachrichten, die innerhalb der Organisation gesendet werden:** Wählen Sie diese Option aus, um die Richtlinie für sichere Links auf Nachrichten zwischen internen Absendern und internen Empfängern anzuwenden.
    - **Wählen Sie die Aktion für unbekannte oder potenziell schädliche URLs in Microsoft Teams** aus: **Aktivieren** Sie "Ein", um den Schutz sicherer Links für Links in Teams zu aktivieren.
-
-   - **Wenden Sie die URL-Überprüfung in Echtzeit auf verdächtige Links und Links an, die auf Dateien verweisen:** Wählen Sie diese Einstellung aus, um die Echtzeitüberprüfung von Links in E-Mail-Nachrichten zu aktivieren.
-
-   - **Warten Sie, bis die URL-Überprüfung abgeschlossen ist, bevor Sie die Nachricht übermitteln:** Wählen Sie diese Einstellung aus, um auf den Abschluss der URL-Überprüfung in Echtzeit zu warten, bevor Sie die Nachricht übermitteln.
-
-   - **Anwenden von sicheren Links auf E-Mail-Nachrichten, die innerhalb der Organisation gesendet werden:** Wählen Sie diese Einstellung aus, um die Richtlinie für sichere Links auf Nachrichten zwischen internen Absendern und internen Empfängern anzuwenden.
-
    - **Benutzerklicks nicht nachverfolgen:** Lassen Sie diese Einstellung deaktiviert, um das Nachverfolgen von Benutzerklicks auf URLs in E-Mail-Nachrichten zu aktivieren.
-
-   - **Benutzer dürfen nicht auf die ursprüngliche URL klicken:** Wählen Sie diese Einstellung aus, um zu verhindern, dass Benutzer auf [Warnseiten](safe-links.md#warning-pages-from-safe-links)auf die ursprüngliche URL klicken.
-
+   - **Benutzer dürfen nicht zur ursprünglichen URL klicken:** Wählen Sie diese Option aus, um zu verhindern, dass Benutzer auf [Warnseiten](safe-links.md#warning-pages-from-safe-links)zur ursprünglichen URL klicken.
    - **Schreiben Sie die folgenden URLs nicht neu:** Ermöglicht den Zugriff auf die angegebenen URLs, die andernfalls durch sichere Links blockiert würden.
 
-     Geben Sie in das Feld die gewünschte URL oder den gewünschten Wert ein, und klicken Sie dann auf ![Symbol "Schaltfläche hinzufügen"](../../media/ITPro-EAC-AddIcon.png).
+     Geben Sie in das Feld die gewünschte URL oder den gewünschten Wert ein, und klicken Sie dann auf **"Hinzufügen".** Wiederholen Sie diesen Schritt so oft wie nötig.
 
-     Um einen vorhandenen Eintrag zu entfernen, wählen Sie ihn aus, und klicken Sie dann auf ![Schaltflächensymbol löschen](../../media/ITPro-EAC-DeleteIcon.png).
+     Um einen vorhandenen Eintrag zu entfernen, klicken Sie auf ![Symbol „Entfernen“](../../media/m365-cc-sc-remove-selection-icon.png) neben dem Eintrag.
 
      Informationen zur Eintragssyntax finden Sie unter [Eintragssyntax für die Liste "Die folgenden URLs nicht neu schreiben".](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)
 
@@ -130,112 +136,100 @@ Beim Erstellen einer benutzerdefinierten Richtlinie für sichere Links im Micros
 
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-5. Identifizieren Sie auf der angezeigten Seite **Angewendet** auf die internen Empfänger, für die die Richtlinie gilt.
-
-   Sie können eine Bedingung oder Ausnahme nur einmal verwenden, aber Sie können mehrere Werte für die Bedingung oder Ausnahme angeben. Bei mehreren Werten derselben Bedingung oder Ausnahme wird ODER-Logik verwendet (z. B. _\<recipient1\>_ oder _\<recipient2\>_). Bei unterschiedlichen Bedingungen oder Ausnahmen wird UND-Logik verwendet (z. B. _\<recipient1\>_ und _\<member of group 1\>_).
-
-   Klicken Sie auf **"Bedingung hinzufügen".** Wählen Sie in der angezeigten Dropdownliste eine Bedingung unter **"Angewendet"** aus, wenn:
-
-   - **Der Empfänger lautet:** Gibt ein oder mehrere Postfächer, E-Mail-Benutzer oder E-Mail-Kontakte in Ihrer Organisation an.
-   - **Der Empfänger ist Mitglied von**: Gibt eine oder mehrere Gruppen in Ihrer Organisation an.
-   - **Die Empfängerdomäne ist**: Gibt Empfänger in einer oder mehreren der konfigurierten akzeptierten Domänen in Ihrer Organisation an.
-
-   Nachdem Sie die Bedingung ausgewählt haben, wird eine entsprechende Dropdownliste mit einem **dieser** Kontrollkästchen angezeigt.
-
-   - Klicken Sie in das Feld, und scrollen Sie durch die Liste der auszuwählenden Werte.
-   - Klicken Sie in das Feld, und beginnen Sie mit der Eingabe, um die Liste zu filtern und einen Wert auszuwählen.
-   - Klicken Sie auf einen leeren Bereich im Feld, um weitere Werte hinzuzufügen.
-   - Um einzelne Einträge zu entfernen, klicken Sie auf das Symbol **"Entfernen"** ![ für den ](../../media/scc-remove-icon.png) Wert.
-   - Klicken Sie zum Entfernen der gesamten Bedingung auf das Symbol **"Entfernen"** ![ für die ](../../media/scc-remove-icon.png) Bedingung.
-
-   Klicken Sie zum Hinzufügen einer zusätzlichen Bedingung auf **"Bedingung hinzufügen",** und wählen Sie unter **Angewendet** einen verbleibenden Wert aus.
-
-   Klicken Sie zum Hinzufügen von Ausnahmen auf **"Bedingung hinzufügen",** und wählen Sie unter **"Ausnahme wenn"** eine Ausnahme aus. Die Einstellungen und das Verhalten entsprechen genau den Bedingungen.
+6. Wählen Sie auf der **angezeigten Benachrichtigungsseite** einen der folgenden Werte **aus: Wie möchten Sie Ihre Benutzer benachrichtigen?**
+   - **Verwenden des Standardmäßigen Benachrichtigungstexts**
+   - **Verwenden Sie benutzerdefinierten Benachrichtigungstext:** Wenn Sie diesen Wert auswählen, werden die folgenden Einstellungen angezeigt:
+     - **Verwenden von Microsoft Translator für die automatische Lokalisierung**
+     - **Benutzerdefinierter Benachrichtigungstext:** Geben Sie den benutzerdefinierten Benachrichtigungstext in dieses Feld ein.
 
    Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-6. Überprüfen Sie auf der daraufhin angezeigten Seite **"Einstellungen überprüfen"** Ihre Einstellungen. Sie können in jeder Einstellung auf **Bearbeiten** klicken, um sie zu ändern.
+7. Überprüfen Sie auf der angezeigten Seite **Überprüfung** Ihre Einstellungen. Sie können in jedem Abschnitt **Bearbeiten** auswählen, um die Einstellungen in diesem Abschnitt zu ändern. Alternativ können Sie auf **Zurück** klicken oder die entsprechende Seite im Assistenten auswählen.
 
-   Klicken Sie nach Abschluss des Vorgangs auf **Fertig stellen**.
+   Wenn Sie fertig sind, klicken Sie auf **"Absenden".**
+
+8. Klicken Sie in der angezeigten Bestätigungsseite auf **Fertig**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-view-safe-links-policies"></a>Verwenden des Microsoft 365 Defender-Portals zum Anzeigen von Richtlinien für sichere Links
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** Threat \> **Policies** \> **Safe Links**.
+1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Richtlinien** für \>  \> **Bedrohungsrichtlinien** im Abschnitt \> **"Sichere Links".**
 
-2. Wählen Sie auf der Seite **"Sichere Links"** eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
+2. Auf der Seite **"Sichere Links"** werden die folgenden Eigenschaften in der Liste der Richtlinien für sichere Links angezeigt:
+   - **Name**
+   - **Status**
+   - **Priorität**
 
-   Die Richtliniendetails werden in einem Flyout angezeigt.
+3. Wenn Sie eine Richtlinie auswählen, indem Sie auf den Namen klicken, werden die Richtlinieneinstellungen in einem Flyout angezeigt.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-modify-safe-links-policies"></a>Verwenden des Microsoft 365 Defender-Portals zum Ändern von Richtlinien für sichere Links
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu ***Richtlinien & Regeln** Für \> **Bedrohungsrichtlinien** sichere \> **Links.**
+1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Richtlinien** für \>  \> **Bedrohungsrichtlinien** im Abschnitt \> **"Sichere Links".**
 
-2. Wählen Sie auf der Seite **"Sichere Links"** eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
+2. Wählen Sie auf der Seite **"Sichere Links"** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
 
-3. Klicken Sie in den angezeigten Richtliniendetails auf **"Richtlinie bearbeiten".**
-
-Die verfügbaren Einstellungen im angezeigten Flyout sind identisch mit den Einstellungen, die im Abschnitt ["Verwenden des Microsoft 365 Defender-Portals zum Erstellen von Richtlinien](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) für sichere Links" beschrieben sind.
+3. Wählen Sie im angezeigten Flyout für die Richtliniendetails in jedem Abschnitt die Option **Bearbeiten** aus, um die Einstellungen innerhalb des Abschnitts zu ändern. Weitere Informationen zu den Einstellungen finden Sie im abschnitt ["Verwenden des Microsoft 365 Defender-Portals zum Erstellen](#use-the-microsoft-365-defender-portal-to-create-safe-links-policies) von Richtlinien für sichere Links" in diesem Artikel.  
 
 Informationen zum Aktivieren oder Deaktivieren einer Richtlinie oder zum Festlegen der Reihenfolge der Richtlinienpriorität finden Sie in den folgenden Abschnitten.
 
 ### <a name="enable-or-disable-safe-links-policies"></a>Aktivieren oder Deaktivieren von Richtlinien für sichere Links
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** Für \> **Bedrohungsrichtlinien** sichere \> **Links.**
+1. Wechseln Sie im Microsoft 365 **Defender-Portal zu E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \>  \> **Regelgefährdungsrichtlinien** \>  im Abschnitt \> **"Sichere Links".**
 
-2. Beachten Sie den Wert in der Spalte **"Status":**
+2. Wählen Sie auf der Seite **"Sichere Links"** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
 
-   - Schieben Sie die Umschaltfläche nach links, um die Richtlinie zu deaktivieren: ![Richtlinie deaktivieren](../../media/scc-toggle-off.png).
+3. Ganz oben im angezeigten Flyout der Richtliniendetails werden Sie einen der folgenden Werte sehen:
+   - **Richtlinie deaktiviert**: Um die Richtlinie zu aktivieren, klicken Sie auf ![Symbol „Aktivieren“](../../media/m365-cc-sc-turn-on-off-icon.png) **Aktivieren**.
+   - **Richtlinie aktiviert**: Um die Richtlinie zu deaktivieren, klicken Sie auf ![Symbol „Deaktivieren“](../../media/m365-cc-sc-turn-on-off-icon.png) **Deaktivieren**.
 
-   - Schieben Sie die Umschaltfläche nach rechts, um die Richtlinie zu aktivieren: ![Richtlinie aktivieren](../../media/scc-toggle-on.png).
+4. Klicken Sie im angezeigten Bestätigungsdialog auf **Aktivieren** oder **Deaktivieren**.
+
+5. Klicken Sie im Flyout der Richtliniendetails auf **Schließen**.
+
+Zurück auf der Richtlinien-Hauptseite wird der Wert **Status** der Richtlinie **Aktiviert** oder **Deaktiviert** sein.
 
 ### <a name="set-the-priority-of-safe-links-policies"></a>Festlegen der Priorität von Richtlinien für sichere Links
 
-Standardmäßig erhalten Richtlinien für sichere Links eine Priorität, die auf der Reihenfolge basiert, in der sie erstellt wurden (neuere Richtlinien haben eine niedrigere Priorität als ältere Richtlinien). Eine niedrigere Prioritätsnummer gibt eine höhere Priorität für die Richtlinie an (0 ist die höchste), und Richtlinien werden in der Reihenfolge der Priorität verarbeitet (Richtlinien mit einer höheren Priorität werden vor Richtlinien mit einer niedrigeren Priorität verarbeitet). Keine zwei Richtlinien können die gleiche Priorität aufweisen, und die Richtlinienverarbeitung endet, nachdem die erste Richtlinie angewendet wurde.
+Standardmäßig erhalten sichere Links eine Priorität, die auf der Reihenfolge basiert, in der sie erstellt wurden (neuere Richtlinien haben eine niedrigere Priorität als ältere Richtlinien). Eine niedrigere Prioritätsnummer gibt eine höhere Priorität für die Richtlinie an (0 ist die höchste), und Richtlinien werden in der Reihenfolge der Priorität verarbeitet (Richtlinien mit einer höheren Priorität werden vor Richtlinien mit einer niedrigeren Priorität verarbeitet). Keine zwei Richtlinien können die gleiche Priorität aufweisen, und die Richtlinienverarbeitung endet, nachdem die erste Richtlinie angewendet wurde.
 
-Weitere Informationen über die Prioritätsreihenfolge und darüber, wie mehrere Richtlinien ausgewertet und angewendet werden, finden Sie unter [Reihenfolge und Priorität beim E-Mail-Schutz](how-policies-and-protections-are-combined.md).
+Um die Priorität einer Richtlinie zu ändern, klicken Sie in den Eigenschaften einer Richtlinie auf **Priorität erhöhen** oder **Priorität verringern** (Sie können den Zahlenwert der **Priorität** im Microsoft 365 Defender-Portal nicht direkt modifizieren). Die Priorität einer Richtlinie zu verändern macht nur Sinn, wenn Sie mehrere Richtlinien haben.
 
-Richtlinien für sichere Links werden in der Reihenfolge angezeigt, in der sie verarbeitet werden (die erste Richtlinie hat den **Prioritätswert** 0).
+**Hinweis**:
 
-> [!NOTE]
-> Im Microsoft 365 Defender-Portal können Sie die Priorität der Richtlinie für sichere Links erst ändern, nachdem Sie sie erstellt haben. In PowerShell können Sie die Standardpriorität überschreiben, wenn Sie die Regel für sichere Verknüpfungen erstellen (was sich auf die Priorität vorhandener Regeln auswirken kann).
+- Im Microsoft 365 Defender-Portal können Sie die Priorität der Richtlinie für sichere Links erst ändern, nachdem Sie sie erstellt haben. In PowerShell können Sie die Standardpriorität überschreiben, wenn Sie die Regel für sichere Verknüpfungen erstellen (was sich auf die Priorität vorhandener Regeln auswirken kann).
+- Richtlinien für sichere Links werden in der Reihenfolge verarbeitet, in der sie angezeigt werden (die erste Richtlinie hat den **Prioritätswert** 0). Weitere Informationen über die Prioritätsreihenfolge und darüber, wie mehrere Richtlinien ausgewertet und angewendet werden, finden Sie unter [Reihenfolge und Priorität beim E-Mail-Schutz](how-policies-and-protections-are-combined.md).
 
-Um die Priorität einer Richtlinie zu ändern, verschieben Sie die Richtlinie in der Liste nach oben oder unten (Sie können die **Prioritätsnummer** im Microsoft 365 Defender-Portal nicht direkt ändern).
+1. Wechseln Sie im Microsoft 365 **Defender-Portal zu E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \>  \> **Regelgefährdungsrichtlinien** \>  im Abschnitt \> **"Sichere Links".**
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** Für \> **Bedrohungsrichtlinien** sichere \> **Links.**
+2. Wählen Sie auf der Seite **"Sichere Links"** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken.
 
-2. Wählen Sie auf der Seite **"Sichere Links"** eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
+3. Ganz oben im angezeigten Flyout der Richtliniendetails werden Sie **Priorität erhöhen** oder **Priorität verringern** sehen, abhängig vom aktuellen Prioritätswert und der Anzahl der benutzerdefinierten Richtlinien:
+   - Für die Richtlinie mit dem **Prioritätswert** **0** ist nur die Option **"Priorität verringern"** verfügbar.
+   - Für die Richtlinie mit dem niedrigsten **Prioritätswert** (z. B. **3)** ist nur die Option **"Priorität erhöhen"** verfügbar.
+   - Wenn Sie über drei oder mehr Richtlinien verfügen, stehen für die Richtlinien zwischen den Werten mit der höchsten und der niedrigsten Priorität die Optionen **"Priorität erhöhen"** und **"Verringern"** zur Verfügung.
 
-3. Klicken Sie im angezeigten Flyout mit den Richtliniendetails auf die Schaltfläche "Verfügbare Priorität":
+   Klicken Sie auf ![Symbol „Priorität erhöhen“](../../media/m365-cc-sc-increase-icon.png) **Priorität erhöhen** oder ![Symbol „Priorität verringern“](../../media/m365-cc-sc-decrease-icon.png) **Priorität verringern**, um den **Prioritätswert** zu ändern.
 
-   - Für die Richtlinie für sichere Links mit dem **Prioritätswert** **0** ist nur die Schaltfläche **"Priorität verringern"** verfügbar.
-
-   - Für die Richtlinie für sichere Verknüpfungen mit dem niedrigsten **Prioritätswert** (z. B. **3)** ist nur die Schaltfläche **"Priorität erhöhen"** verfügbar.
-
-   - Wenn Sie über drei oder mehr Richtlinien für sichere Verknüpfungen verfügen, sind für Richtlinien zwischen den Werten mit der höchsten und der niedrigsten Priorität sowohl die Schaltflächen **"Priorität erhöhen"** als auch **"Priorität verringern"** verfügbar.
-
-4. Klicken Sie auf **"Priorität erhöhen"** oder **"Priorität verringern",** um den **Wert "Priorität"** zu ändern.
-
-5. Klicken Sie nach Abschluss des Vorgangs auf **Schließen**.
+4. Wenn Sie den Vorgang abgeschlossen haben, klicken Sie im Flyout der Richtliniendetails auf **Schließen**.
 
 ## <a name="use-the-microsoft-365-defender-portal-to-remove-safe-links-policies"></a>Verwenden des Microsoft 365 Defender-Portals zum Entfernen von Richtlinien für sichere Links
 
-1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** Für \> **Bedrohungsrichtlinien** sichere \> **Links.**
+1. Wechseln Sie im Microsoft 365 **Defender-Portal zu E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \>  \> **Regelgefährdungsrichtlinien** \>  im Abschnitt \> **"Sichere Links".**
 
-2. Wählen Sie auf der Seite **"Sichere Links"** eine Richtlinie aus der Liste aus, und klicken Sie darauf (aktivieren Sie nicht das Kontrollkästchen).
+2. Wählen Sie auf der Seite **"Sichere Links"** eine Richtlinie aus der Liste aus, indem Sie auf den Namen klicken. Ganz oben auf dem angezeigten Flyout der Richtliniendetails klicken Sie auf ![Symbol „Weiter Aktionen“](../../media/m365-cc-sc-more-actions-icon.png) **Weitere Aktionen** \> ![Symbol „Richtlinie löschen“](../../media/m365-cc-sc-delete-icon.png) **Richtlinie löschen**.
 
-3. Klicken Sie in den angezeigten Richtliniendetails auf **"Richtlinie löschen",** und klicken Sie dann im daraufhin angezeigten Warndialogfeld auf **"Ja".**
+3. Klicken Sie im angezeigten Bestätigungsdialog auf **Ja**.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies"></a>Verwenden Exchange Online PowerShell oder der eigenständigen EOP PowerShell zum Konfigurieren von Richtlinien für sichere Links
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-safe-links-policies&quot;></a>Verwenden Exchange Online PowerShell oder der eigenständigen EOP PowerShell zum Konfigurieren von Richtlinien für sichere Links
 
 Wie zuvor beschrieben besteht eine Richtlinie für sichere Links aus einer Richtlinie für sichere Links und einer Regel für sichere Links.
 
-In PowerShell ist der Unterschied zwischen Richtlinien für sichere Links und Regeln für sichere Links offensichtlich. Sie verwalten Richtlinien für sichere Links mithilfe der Cmdlets **\* "-SafeLinksPolicy",** und Sie verwalten Regeln für sichere Links mithilfe der Cmdlets **\* "-SafeLinksRule".**
+In PowerShell ist der Unterschied zwischen Richtlinien für sichere Links und Regeln für sichere Links offensichtlich. Sie verwalten Richtlinien für sichere Links mithilfe der Cmdlets **\* &quot;-SafeLinksPolicy&quot;,** und Sie verwalten Regeln für sichere Links mithilfe der Cmdlets **\* &quot;-SafeLinksRule&quot;.**
 
 - In PowerShell erstellen Sie zuerst die Richtlinie für sichere Links und dann die Regel für sichere Links, die die Richtlinie identifiziert, für die die Regel gilt.
 - In PowerShell ändern Sie die Einstellungen in der Richtlinie für sichere Links und die Regel für sichere Links separat.
 - Wenn Sie eine Richtlinie für sichere Links aus PowerShell entfernen, wird die entsprechende Regel für sichere Links nicht automatisch entfernt und umgekehrt.
 
-### <a name="use-powershell-to-create-safe-links-policies"></a>Verwenden von PowerShell zum Erstellen von Richtlinien für sichere Links
+### <a name=&quot;use-powershell-to-create-safe-links-policies&quot;></a>Verwenden von PowerShell zum Erstellen von Richtlinien für sichere Links
 
 Das Erstellen einer Richtlinie für sichere Links in PowerShell besteht aus zwei Schritten:
 
@@ -243,14 +237,13 @@ Das Erstellen einer Richtlinie für sichere Links in PowerShell besteht aus zwei
 2. Erstellen Sie die Regel für sichere Links, die die Richtlinie für sichere Links angibt, auf die die Regel angewendet wird.
 
 > [!NOTE]
-> 
+>
 > - Sie können eine neue Regel für sichere Links erstellen und ihr eine vorhandene Richtlinie für nicht zugeordnete sichere Links zuweisen. Eine Regel für sichere Links kann nicht mehr als einer Richtlinie für sichere Links zugeordnet werden.
-> 
+>
 > - Sie können die folgenden Einstellungen für neue Richtlinien für sichere Links in PowerShell konfigurieren, die erst nach dem Erstellen der Richtlinie im Microsoft 365 Defender-Portal verfügbar sind:
-> 
->   - Erstellen Sie die neue Richtlinie als deaktiviert _(aktiviert_ `$false` für das Cmdlet **"New-SafeLinksRule").**
+>   - Erstellen Sie die neue Richtlinie als deaktiviert _(aktiviert_ `$false` für das Cmdlet **&quot;New-SafeLinksRule").**
 >   - Legen Sie die Priorität der Richtlinie während der Erstellung _(Priorität)_ _\<Number\>_ im Cmdlet **"New-SafeLinksRule"** fest.
-> 
+>
 > - Eine neue Richtlinie für sichere Links, die Sie in PowerShell erstellen, ist erst im Microsoft 365 Defender-Portal sichtbar, wenn Sie die Richtlinie einer Regel für sichere Links zuweisen.
 
 #### <a name="step-1-use-powershell-to-create-a-safe-links-policy"></a>Schritt 1: Verwenden von PowerShell zum Erstellen einer Richtlinie für sichere Links
@@ -262,9 +255,9 @@ New-SafeLinksPolicy -Name "<PolicyName>" [-AdminDisplayName "<Comments>"] [-IsEn
 ```
 
 > [!NOTE]
-> 
+>
 > - Ausführliche Informationen zur Eintragssyntax, die für den _DoNotRewriteUrls-Parameter_ verwendet werden soll, finden Sie unter [Eintragssyntax für die Liste "Die folgenden URLs nicht neu schreiben".](safe-links.md#entry-syntax-for-the-do-not-rewrite-the-following-urls-list)
-> 
+>
 > - Eine zusätzliche Syntax, die Sie für den _DoNotRewriteUrls-Parameter_ verwenden können, wenn Sie vorhandene Richtlinien für sichere Links mithilfe des Cmdlets **"Set-SafeLinksPolicy"** ändern, finden Sie im Abschnitt ["Verwenden von PowerShell zum Ändern](#use-powershell-to-modify-safe-links-policies) von Richtlinien für sichere Verknüpfungen" weiter unten in diesem Artikel.
 
 In diesem Beispiel wird eine Richtlinie für sichere Verknüpfungen namens "Contoso All" mit den folgenden Werten erstellt:
@@ -456,7 +449,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter [Remove-Sa
 
 ### <a name="use-powershell-to-remove-safe-links-rules"></a>Verwenden von PowerShell zum Entfernen von Regeln für sichere Links
 
-Wenn Sie PowerShell verwenden, um eine Regel für sichere Links zu entfernen, wird die entsprechende Richtlinie für sichere Links nicht entfernt.
+Wenn Sie PowerShell zum Entfernen einer Regel für sichere Links verwenden, wird die entsprechende Richtlinie für sichere Links nicht entfernt.
 
 Verwenden Sie die folgende Syntax, um eine Regel für sichere Links in PowerShell zu entfernen:
 

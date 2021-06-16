@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0aa8e10545b43f6e0ee985ac11b161a3b21c3a91
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 53e60578f575e94dfb51c1c5f44a3d7ffb91110b
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929554"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932818"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Neuigkeiten in Microsoft Defender für Office 365
 
@@ -42,13 +42,13 @@ Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=Tdz
 > [!TIP]
 > Sie verfügen noch nicht über Microsoft Defender für Office 365? [Wenden Sie sich an den Vertrieb, um eine Testversion zu starten.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
 
-## <a name="aprilmay-2021"></a>April/Mai 2021 
+## <a name="aprilmay-2021"></a>April/Mai 2021
 
 - [Seite "E-Mail-Entität":](mdo-email-entity-page.md)Eine einheitliche 360-Grad-Ansicht einer E-Mail mit erweiterten Informationen zu Bedrohungen, Authentifizierung und Erkennungen, Detonationsdetails und einer völlig neuen E-Mail-Vorschau.
 - [Office 365-Verwaltungs-API:](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events)Updates für EmailEvents (RecordType 28) zum Hinzufügen von Übermittlungsaktionen, ursprünglichen und neuesten Übermittlungsspeicherorten und aktualisierten Erkennungsdetails.
-- [Bedrohungsanalyse für Defender für Office 365:](/microsoft-365/security/defender/threat-analytics)Sehen Sie sich aktive Bedrohungsteilnehmer, beliebte Techniken und Angriffsflächen sowie umfassende Berichte von Microsoft-Experten zu laufenden Kampagnen an. 
+- [Bedrohungsanalyse für Defender für Office 365:](/microsoft-365/security/defender/threat-analytics)Sehen Sie sich aktive Bedrohungsteilnehmer, beliebte Techniken und Angriffsflächen sowie umfassende Berichte von Microsoft-Experten zu laufenden Kampagnen an.
 
-## <a name="februarymarch-2021"></a>Februar/März 2021 
+## <a name="februarymarch-2021"></a>Februar/März 2021
 
 - Warnungs-ID-Integration (Suche mithilfe der Warnungs-ID und Alert-Explorer Navigation) in [suchumgebungen](threat-explorer.md)
 - Erhöhen der Grenzwerte für den Export von Datensätzen von 9990 auf 200.000 bei [der Suche](threat-explorer.md)
@@ -89,7 +89,7 @@ Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=Tdz
   - Erweiterte NICHT-Filter (hierbei handelt es sich um erweiterte Filteroptionen, die nicht enthalten, nicht enthalten usw.)
   - Granulare Zeitfilter (Tag, Stunde, halbe Stunde)
 
-- Das **Vorfall-Widget** ist jetzt das **Info-Center-Widget.** (Um Ihre Sicherheits-Widgets anzuzeigen, wechseln Sie im Microsoft 365 **Defender-Portal zu E-Mail & Zusammenarbeit** \> **Überprüfen** Sie .) (Microsoft Defender für Office 365 Plan 2)
+- Das **Vorfall-Widget** ist jetzt das **Info-Center-Widget.** (Um Ihre Sicherheits-Widgets im Security & Compliance Center anzuzeigen, wechseln Sie zur **Bedrohungsverwaltung.** \> **Überprüfen** Sie .) (Microsoft Defender für Office 365 Plan 2)
 
 - [Sichere Dokumente in Microsoft 365](safe-docs.md) **(Vorschau)**
 

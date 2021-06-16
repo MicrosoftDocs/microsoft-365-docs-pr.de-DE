@@ -17,26 +17,25 @@ ROBOTS: NOINDEX
 description: Benutzer können erfahren, wie sie isolierte Nachrichten anzeigen und bearbeiten, die an freigegebene Postfächer gesendet wurden, für die sie über Berechtigungen verfügen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d6aed4a6e3bc725635558a5e8394b671d11f47c
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: 4b958bb07660f4e0c93865300e190c713148a21d
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52929851"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52933055"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Anzeigen und Freigeben von isolierten Nachrichten aus freigegebenen Postfächern
 
 > [!NOTE]
 > Die in diesem Artikel beschriebenen Features befinden sich derzeit in der Vorschau, sind nicht für alle verfügbar und können geändert werden.
 
-Benutzer können isolierte Nachrichten verwalten, wenn sie einer der Empfänger sind, wie unter [Suchen und Freigeben von isolierten Nachrichten als Benutzer in EOP](find-and-release-quarantined-messages-as-a-user.md)beschrieben. Aber wie sieht es mit freigegebenen Postfächern aus, in denen der Benutzer über Vollzugriff und die Berechtigung "Senden als" oder "Senden im Auftrag von" für das Postfach verfügt, wie [in "Freigegebene Postfächer" in Exchange Online](/exchange/collaboration-exo/shared-mailboxes)beschrieben?
+Benutzer können isolierte Nachrichten verwalten, wenn sie einer der Empfänger sind, wie unter [Suchen und Freigeben von isolierten Nachrichten als Benutzer in EOP](find-and-release-quarantined-messages-as-a-user.md)beschrieben. Aber wie sieht es mit **freigegebenen Postfächern** aus, in denen der Benutzer über Vollzugriff und Die Berechtigung "Senden als" oder "Senden im Auftrag von" für das Postfach verfügt, wie [in "Freigegebene Postfächer" in Exchange Online](/exchange/collaboration-exo/shared-mailboxes)beschrieben?
 
 Bisher war die Möglichkeit für Benutzer, isolierte Nachrichten zu verwalten, die an ein freigegebenes Postfach gesendet wurden, erforderlich, dass Administratoren die automatische Zuordnung für das freigegebene Postfach aktiviert lassen (sie ist standardmäßig aktiviert, wenn ein Administrator einem Benutzer Zugriff auf ein anderes Postfach gewährt). Abhängig von der Größe und Anzahl der Postfächer, auf die der Benutzer Zugriff hat, kann die Leistung jedoch beeinträchtigt werden, wenn Outlook versucht, *alle* Postfächer zu öffnen, auf die der Benutzer Zugriff hat. Aus diesem Grund entscheiden sich viele Administratoren [dafür, die automatische Zuordnung für freigegebene Postfächer](/outlook/troubleshoot/profiles-and-accounts/remove-automapping-for-shared-mailbox)zu entfernen.
 
 Jetzt ist das automatischeMapping für Benutzer nicht mehr erforderlich, um isolierte Nachrichten zu verwalten, die an freigegebene Postfächer gesendet wurden. Es funktioniert einfach. Es gibt zwei verschiedene Methoden für den Zugriff auf isolierte Nachrichten, die an ein freigegebenes Postfach gesendet wurden:
 
 - Wenn der Administrator [Spambenachrichtigungen für Endbenutzer in Antispamrichtlinien aktiviert](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)hat, kann jeder Benutzer, der Zugriff auf die Spambenachrichtigungen des Endbenutzers im freigegebenen Postfach hat, auf die Schaltfläche **"Überprüfen"** in der Benachrichtigung klicken, um im Microsoft 365 Defender-Portal in Quarantäne zu gehen. Beachten Sie, dass diese Methode benutzern nur das Verwalten von isolierten Nachrichten ermöglicht, die an das freigegebene Postfach gesendet wurden. Benutzer können in diesem Kontext keine eigenen Quarantänenachrichten verwalten.
-
 - Der Benutzer kann [zur Quarantäne im Microsoft 365 Defender-Portal wechseln.](find-and-release-quarantined-messages-as-a-user.md) Standardmäßig werden nur Nachrichten angezeigt, die an den Benutzer gesendet wurden. Der Benutzer kann jedoch die **Sortierergebnisse** (standardmäßig die **Schaltfläche "Nachrichten-ID")** in die **E-Mail-Adresse** des Empfängers ändern, die E-Mail-Adresse des freigegebenen Postfachs eingeben und dann auf **"Aktualisieren"** klicken, um die isolierten Nachrichten anzuzeigen, die an das freigegebene Postfach gesendet wurden.
 
   ![Sortieren von isolierten Nachrichten nach Empfänger-E-Mail-Adresse.](../../media/quarantine-sort-results-by-recipient-email-address.png)
