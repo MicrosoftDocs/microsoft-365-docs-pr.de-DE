@@ -16,12 +16,12 @@ ms.collection:
 description: Administratoren können im Sicherheitsportal erfahren, wie Sie Zulassungen und Blöcke in der Mandanten-Zulassungs-/Sperrliste konfigurieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12139708fc5cde133819713fd7185435e594a1a9
-ms.sourcegitcommit: e1e275eb88153bafddf93327adf8f82318913a8d
+ms.openlocfilehash: 4228bb8abb70bbd96605a7d0f021a1a483e8715c
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52809179"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929731"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Verwalten der Zulassungs-/Sperrliste des Mandanten
 
@@ -40,17 +40,17 @@ ms.locfileid: "52809179"
 
 In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online Postfächer, können Sie mit der EOP-Filterbewertung nicht einverstanden sein. Beispielsweise kann eine gute Nachricht als falsch markiert werden (ein falsch positives Ergebnis), oder eine ungültige Nachricht kann durchgelassen werden (ein falsch negativer Wert).
 
-Die Mandanten-Zulassungs-/Sperrliste im Security & Compliance Center bietet Ihnen die Möglichkeit, die Microsoft 365 Filterbewertungen manuell zu überschreiben. Die Mandanten-Zulassungs-/Sperrliste wird während des Nachrichtenflusses und zum Zeitpunkt der Benutzerklicks verwendet. Sie können die folgenden Arten von Außerkraftsetzungen angeben:
+Die Mandanten-Zulassungs-/Sperrliste im Microsoft 365 Defender-Portal bietet Ihnen die Möglichkeit, die Microsoft 365 Filterbewertungen manuell zu überschreiben. Die Mandanten-Zulassungs-/Sperrliste wird während des Nachrichtenflusses und zum Zeitpunkt der Benutzerklicks verwendet. Sie können die folgenden Arten von Außerkraftsetzungen angeben:
 
 - Zu blockierende URLs.
 - Zu blockierende Dateien.
 - Gefälschte Absender, die zugelassen oder blockiert werden sollen. Wenn Sie die Zulassungs- oder Blockbewertung im Einblick in die [Spoofintelligenz](learn-about-spoof-intelligence.md)außer Kraft setzen, wird der gefälschte Absender zu einem manuellen Zulassungs- oder Blockierungseintrag, der nur auf der Registerkarte **"Spoofing"** in der Mandanten-Zulassungs-/Sperrliste angezeigt wird. Sie können hier auch manuell Zulassungseinträge für gefälschte Absender erstellen oder blockieren, bevor sie durch Spoofintelligenz erkannt werden.
 
-In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassungs-/Sperrliste im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer) konfigurieren.
+In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassungs-/Sperrliste im Microsoft 365 Defender-Portal oder in PowerShell (Exchange Online PowerShell für Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer) konfigurieren.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
-- Sie öffnen das Security & Compliance Center unter <https://protection.office.com/>. Um direkt zur Seite **"Mandanten-Zulassungs-/Sperrliste"** zu wechseln, verwenden Sie <https://protection.office.com/tenantAllowBlockList> .
+- Sie öffnen das Microsoft 365 Defender-Portal unter <https://security.microsoft.com/>. Um direkt zur Seite **"Mandanten-Zulassungs-/Sperrlisten"** zu wechseln, verwenden Sie <https://security.microsoft.com/tenantAllowBlockList> .
 
 - Sie geben Dateien mithilfe des SHA256-Hashwerts der Datei an. Um den SHA256-Hashwert einer Datei in Windows zu finden, führen Sie den folgenden Befehl an einer Eingabeaufforderung aus:
 
@@ -60,7 +60,7 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassung
 
   Ein Beispielwert ist `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a` . Perceptual Hash (pHash)-Werte werden nicht unterstützt.
 
-- Die verfügbaren URL-Werte werden in der [URL-Syntax für den Abschnitt "Mandanten-Zulassungs-/Sperrliste"](#url-syntax-for-the-tenant-allowblock-list) weiter unten in diesem Artikel beschrieben.
+- Die verfügbaren URL-Werte werden in der [URL-Syntax für den Abschnitt "Mandanten zulassen/blockieren"](#url-syntax-for-the-tenant-allowblock-list) weiter unten in diesem Artikel beschrieben.
 
 - Die Mandanten-Zulassungs-/Sperrliste lässt maximal 500 Einträge für URLs und 500 Einträge für Dateihashes zu.
 
@@ -90,9 +90,9 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassung
   >
   > - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
-## <a name="use-the-security--compliance-center-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Centers zum Erstellen von Block-URL-Einträgen in der Mandanten-Zulassungs-/Sperrliste
+## <a name="use-the-microsoft-365-defender-portal-to-create-block-url-entries-in-the-tenant-allowblock-list"></a>Verwenden des Microsoft 365 Defender-Portals zum Erstellen von Block-URL-Einträgen in der Mandanten-Zulassungs-/Sperrliste
 
-1. Wechseln Sie im Security & Compliance  Center zu \> "Zulassungs-/Sperrlisten des Mandanten für die Bedrohungsverwaltungsrichtlinie".  \> 
+1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** \> **Bedrohungsrichtlinien** \> **Mandanten-Zulassungs-/Sperrlisten.**
 
 2. Überprüfen Sie auf der Seite **"Mandanten-Zulassungs-/Sperrliste",** ob die Registerkarte **"URLs"** ausgewählt ist, und klicken Sie dann auf **"Blockieren".**
 
@@ -112,9 +112,9 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassung
 
 4. Klicken Sie nach Abschluss des Vorgangs auf **Hinzufügen**.
 
-## <a name="use-the-security--compliance-center-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Centers zum Erstellen von Blockierungsdateieinträgen in der Mandanten-Zulassungs-/Sperrliste
+## <a name="use-the-microsoft-365-defender-portal-to-create-block-file-entries-in-the-tenant-allowblock-list"></a>Verwenden des Microsoft 365 Defender-Portals zum Erstellen von Blockierungsdateieinträgen in der Mandanten-Zulassungs-/Sperrliste
 
-1. Wechseln Sie im Security & Compliance  Center zu \> "Zulassungs-/Sperrlisten des Mandanten für die Bedrohungsverwaltungsrichtlinie".  \> 
+1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** \> **Bedrohungsrichtlinien** \> **Mandanten-Zulassungs-/Sperrlisten.**
 
 2. Wählen Sie auf der Seite **"Mandanten-Zulassungs-/Sperrliste"** die Registerkarte **"Dateien"** aus, und klicken Sie dann auf **"Blockieren".**
 
@@ -134,7 +134,7 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassung
 
 4. Klicken Sie nach Abschluss des Vorgangs auf **Hinzufügen**.
 
-## <a name="use-the-security--compliance-center-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Center zum Erstellen oder Blockieren von Spoofing-Absendereinträgen in der Mandanten-Zulassungs-/Sperrliste
+## <a name="use-the-microsoft-365-defender-portal-to-create-allow-or-block-spoofed-sender-entries-in-the-tenant-allowblock-list"></a>Verwenden sie das Microsoft 365 Defender-Portal, um Gefälschte Absendereinträge in der Mandanten-Zulassungs-/Sperrliste zu erstellen oder zu blockieren.
 
 **Hinweise**:
 
@@ -142,7 +142,7 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassung
 - Wenn Sie einen Zulassungs- oder Blockeintrag für ein Domänenpaar konfigurieren, werden Nachrichten von diesem Domänenpaar nicht mehr in der Spoofintelligenz angezeigt.
 - Einträge für gefälschte Absender laufen nie ab.
 
-1. Wechseln Sie im Security & Compliance  Center zu \> "Zulassungs-/Sperrlisten des Mandanten für die Bedrohungsverwaltungsrichtlinie".  \> 
+1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** \> **Bedrohungsrichtlinien** \> **Mandanten-Zulassungs-/Sperrlisten.**
 
 2. Wählen Sie auf der Seite **"Mandanten-Zulassungs-/Sperrliste"** die Registerkarte **"Spoofing"** aus, und klicken Sie dann auf **"Hinzufügen".**
 
@@ -158,9 +158,9 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassung
 
 4. Klicken Sie nach Abschluss des Vorgangs auf **Hinzufügen**.
 
-## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Centers zum Anzeigen von Einträgen in der Mandanten-Zulassungs-/Sperrliste
+## <a name="use-the-microsoft-365-defender-portal-to-view-entries-in-the-tenant-allowblock-list"></a>Verwenden des Microsoft 365 Defender-Portals zum Anzeigen von Einträgen in der Mandanten-Zulassungs-/Sperrliste
 
-1. Wechseln Sie im Security & Compliance  Center zu \> "Zulassungs-/Sperrlisten des Mandanten für die Bedrohungsverwaltungsrichtlinie".  \> 
+1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** \> **Bedrohungsrichtlinien** \> **Mandanten-Zulassungs-/Sperrlisten.**
 
 2. Wählen Sie die gewünschte Registerkarte aus. Welche Spalten verfügbar sind, hängt von der ausgewählten Registerkarte ab:
 
@@ -220,9 +220,9 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassung
 
    Wenn Sie fertig sind, klicken Sie auf **"Übernehmen".** Klicken Sie zum Löschen vorhandener Filter auf **"Filter",** und klicken Sie im angezeigten **Flyout "Filter"** auf **"Filter löschen".**
 
-## <a name="use-the-security--compliance-center-to-modify-entries-in-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Centers zum Ändern von Einträgen in der Mandanten-Zulassungs-/Sperrliste
+## <a name="use-the-microsoft-365-defender-portal-to-modify-entries-in-the-tenant-allowblock-list"></a>Verwenden des Microsoft 365 Defender-Portals zum Ändern von Einträgen in der Mandanten-Zulassungs-/Sperrliste
 
-1. Wechseln Sie im Security & Compliance  Center zu \> "Zulassungs-/Sperrlisten des Mandanten für die Bedrohungsverwaltungsrichtlinie".  \> 
+1. Wechseln Sie im Microsoft 365 Defender-Portal zu **Richtlinien & Regeln** \> **Bedrohungsrichtlinien** \> **Mandanten-Zulassungs-/Sperrlisten.**
 
 2. Wählen Sie die Registerkarte aus, die den Eintragstyp enthält, den Sie ändern möchten:
    - **Urls**
@@ -248,9 +248,9 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassung
 
 4. Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
-## <a name="use-the-security--compliance-center-to-remove-entries-from-the-tenant-allowblock-list"></a>Verwenden des Security & Compliance Centers zum Entfernen von Einträgen aus der Mandanten-Zulassungs-/Sperrliste
+## <a name="use-the-microsoft-365-defender-portal-to-remove-entries-from-the-tenant-allowblock-list"></a>Verwenden des Microsoft 365 Defender-Portals zum Entfernen von Einträgen aus der Mandanten-Zulassungs-/Sperrliste
 
-1. Wechseln Sie im Security & Compliance  Center zu \> "Zulassungs-/Sperrlisten des Mandanten für die Bedrohungsverwaltungsrichtlinie".  \> 
+1. Wechseln Sie im Microsoft 365 Defender-Portal  zu \> "Zulassungs-/Sperrlisten des Mandanten für die Bedrohungsverwaltungsrichtlinie".  \> 
 
 2. Wählen Sie die Registerkarte aus, die den Eintragstyp enthält, den Sie entfernen möchten:
    - **Urls**
@@ -262,7 +262,7 @@ In diesem Artikel wird beschrieben, wie Sie Einträge in der Mandanten-Zulassung
 
 4. Klicken Sie im angezeigten Warndialogfeld auf **"Löschen".**
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>Verwenden Exchange Online PowerShell oder der eigenständigen EOP-PowerShell zum Konfigurieren der Mandanten-Zulassungs-/Sperrliste
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-configure-the-tenant-allowblock-list"></a>Verwenden Exchange Online PowerShell oder der eigenständigen EOP PowerShell zum Konfigurieren der Mandanten-Zulassungs-/Sperrliste
 
 ### <a name="use-powershell-to-add-block-file-or-url-entries-to-the-tenant-allowblock-list"></a>Verwenden von PowerShell zum Hinzufügen von Blockierungsdateien oder URL-Einträgen zur Mandanten-Zulassungs-/Sperrliste
 

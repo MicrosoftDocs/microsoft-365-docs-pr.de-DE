@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: ab02559a439899fe25a560aa52718045b730ebd4
-ms.sourcegitcommit: cebbdd393dcfd93ff43a1ab66ad70115853f83e7
+ms.openlocfilehash: 04c485db5f250dfc852faeeaeae669956b95a8c4
+ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "52710718"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52932866"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -263,9 +263,16 @@ Mithilfe der folgenden Tabelle können Sie anhand der Funktionen feststellen, ob
 |Dispositionsüberprüfung | Nein| Ja |
 |Dispositionsnachweise von bis zu 7 Jahren | Nein |Ja, wenn Sie die Löschungsprüfung verwenden oder ein Element als A-Datensatz markiert ist|
 |Administratoraktivitäten überwachen| Ja | Ja|
+|Aufbewahrungsaktionen überwachen| Nein | Ja <sup>\*</sup> |
 |Identifizierung von Elementen, die der Aufbewahrung unterliegen: <br /> – Inhaltssuche <br /> – Datenklassifizierungsseite, Inhalts-Explorer, Aktivitäts-Explorer | <br /> Nein <br /> Nein | <br /> Ja <br /> Ja|
 
-Beachten Sie, dass Sie sowohl Aufbewahrungsrichtlinien als auch Aufbewahrungsbezeichnungen als ergänzende Aufbewahrungsmethoden verwenden können. Beispiel:
+**Fußnote:**
+
+<sup>\*</sup> Bei Aufbewahrungsbezeichnungen, die den Inhalt nicht als Datensatz oder gesetzlichen Datensatz kennzeichnen, beschränken sich die Überwachungsereignisse darauf, wenn auf ein Element in SharePoint eine Bezeichnung angewendet, geändert oder von diesem entfernt wird. Überwachungsdetails für Aufbewahrungsbezeichnungen finden Sie im Abschnitt [Aufbewahrungsaktionen für Überwachungsprotokolle](#auditing-retention-actions) auf dieser Seite.
+
+### <a name="combining-retention-policies-and-retention-labels"></a>Kombinieren von Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
+
+Sie müssen sich nicht entscheiden, ob Sie nur Aufbewahrungsrichtlinien oder nur Aufbewahrungsbezeichnungen verwenden. Beide Methoden können zusammen verwendet werden und ergänzen sich sogar gegenseitig für eine umfassendere Lösung. Beispiel:
 
 1. Sie erstellen und konfigurieren eine Aufbewahrungsrichtlinie, die Inhalte fünf Jahre nach ihrer letzten Änderung automatisch löscht, und wenden die Richtlinie auf alle OneDrive-Konten an.
 
@@ -374,9 +381,31 @@ Weitere Informationen zum permanenten Dokumentarchiv finden Sie unter [Funktions
 
 Aufgrund des Verhaltens während der Nachfrist wird die Richtlinie während dieser Zeit ohne dauerhaften Datenverlust fortgesetzt, wenn Sie die Richtlinie erneut aktivieren oder den Standortstatus innerhalb von 30 Tagen wieder auf "Ein" ändern.
 
-## <a name="auditing-retention-configuration"></a>Prüfung der Aufbewahrungskonfiguration
+## <a name="auditing-retention-configuration-and-actions"></a>Überwachung der Aufbewahrungskonfiguration und -aktionen
 
-Administratoraktionen für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen werden im Überwachungsprotokoll gespeichert, wenn [Überwachung aktiviert](turn-audit-log-search-on-or-off.md) ist. So wird beispielsweise ein Überwachungsereignis erstellt, wenn eine Aufbewahrungsrichtlinie oder -bezeichnung erstellt, konfiguriert oder gelöscht wird. Die vollständige Liste finden Sie unter [ Aufbewahrungsrichtlinie und Aufbewahrungsbezeichnungsaktivitäten](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
+Wenn die [Überwachung aktiviert ist](turn-audit-log-search-on-or-off.md), werden Überwachungsereignisse für die Aufbewahrung sowohl für die Administrationskonfiguration (Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen) wie auch für Aufbewahrungsaktionen (nur Aufbewahrungsbezeichnungen) unterstützt.
+
+### <a name="auditing-retention-configuration"></a>Überwachung der Aufbewahrungskonfiguration
+
+Die Administratorkonfiguration für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen wird als Überwachungsereignisse protokolliert, wenn eine Aufbewahrungsrichtlinie oder -bezeichnung erstellt, neu konfiguriert oder gelöscht wird.
+
+Die vollständige Liste der Überwachungsereignisse finden Sie unter [Aktivitäten für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen](search-the-audit-log-in-security-and-compliance.md#retention-policy-and-retention-label-activities).
+
+### <a name="auditing-retention-actions"></a>Überwachen von Aufbewahrungsaktionen
+
+Aufbewahrungsaktionen, die als Überwachungsereignisse protokolliert werden, sind nur für Aufbewahrungsbezeichnungen und nicht für Aufbewahrungsrichtlinien verfügbar:
+
+- Wenn eine Aufbewahrungsbezeichnung auf einem Element in SharePoint angewendet oder verändert oder von diesem entfernt wird:
+    - Wählen Sie unter **Datei- und Seitenaktivitäten** die Option **Aufbewahrungsbezeichnung für eine Datei geändert** aus. 
+
+- Wenn ein bezeichnetes Element in SharePoint als ein Datensatz markiert wird, und es von einem Benutzer entsperrt oder gesperrt wird:
+    - Wählen Sie unter **Datei- und Seitenaktivitäten** die Option **Datensatzstatus in „entsperrt“ geändert** oder **Datensatzstatus in „gesperrt“ geändert** aus
+
+- Wenn eine Aufbewahrungsbezeichnung, die Inhalte als Datensatz oder gesetzlichen Datensatz kennzeichnet, auf ein Element in Exchange angewendet wird:
+    - Wählen Sie aus den **Exchange-Postfachaktivitäten** die Option **Nachricht als ein Datensatz bezeichnet** aus
+
+- Wenn ein bezeichnetes Element in SharePoint oder Exchange als Datensatz oder gesetzlicher Datensatz markiert ist, und es dauerhaft entfernt wird:
+    - Wählen Sie unter **Datei- und Seitenaktivitäten** die Option **Gelöschte Datei als Datensatz markiert** aus
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>PowerShell-Cmdlets für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 

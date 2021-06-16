@@ -1,12 +1,13 @@
 ---
-title: Aktivieren der eingeschränkten Microsoft Defender Antivirus Überprüfungsfunktion
-description: Mit eingeschränkter regelmäßiger Überprüfung können Sie Microsoft Defender Antivirus zusätzlich zu Ihren anderen installierten AV-Anbietern verwenden.
-keywords: lps, limited, periodic, scan, scanning, compatibility, 3rd party, other av, disable
+title: Aktivieren der eingeschränkten regelmäßigen Microsoft Defender Antivirus-Überprüfungsfunktion
+description: Mit der eingeschränkten regelmäßigen Überprüfung können Sie zusätzlich zu Ihren anderen installierten AV-Anbietern Microsoft Defender Antivirus verwenden.
+keywords: lps, limited, periodic, scan, scan, compatibility, 3rd party, other av, disable
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-localization_priority: Normal
+localization_priority: normal
+ms.topic: article
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -14,13 +15,12 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.topic: article
-ms.openlocfilehash: b2ae56c0f67501eb8603d5d28c4ed0c4af01a8c9
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: ad49b08e687f4ba389616542bd607d4140e91132
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274593"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926691"
 ---
 # <a name="use-limited-periodic-scanning-in-microsoft-defender-antivirus"></a>Verwendung von eingeschränkten periodischen Scans in Microsoft Defender Antivirus
 
@@ -31,25 +31,25 @@ ms.locfileid: "52274593"
 
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 
-Bei der begrenzten regelmäßigen Überprüfung handelt es sich um eine spezielle Art von Bedrohungserkennung und -behebung, die aktiviert werden kann, wenn Sie ein anderes Antivirenprodukt auf einem Windows 10 haben.
+Die eingeschränkte regelmäßige Überprüfung ist eine spezielle Art der Bedrohungserkennung und -behebung, die aktiviert werden kann, wenn Sie ein anderes Antivirenprodukt auf einem Windows 10 Gerät installiert haben.
 
-Sie kann nur in bestimmten Situationen aktiviert werden. Weitere Informationen zur eingeschränkten regelmäßigen Überprüfung und zur Microsoft Defender Antivirus verwendung mit anderen Antivirenprodukten finden Sie [unter Microsoft Defender Antivirus Kompatibilität](microsoft-defender-antivirus-compatibility.md).
+Sie kann nur in bestimmten Situationen aktiviert werden. Weitere Informationen zur eingeschränkten regelmäßigen Überprüfung und zur Funktionsweise Microsoft Defender Antivirus mit anderen Antivirenprodukten finden Sie unter [Microsoft Defender Antivirus Kompatibilität.](microsoft-defender-antivirus-compatibility.md)
 
-**Microsoft empfiehlt die Verwendung dieses Features in Unternehmensumgebungen nicht. Dies ist ein Feature, das in erster Linie für Verbraucher vorgesehen ist.** Dieses Feature verwendet nur eine begrenzte Teilmenge der Microsoft Defender Antivirus, um Schadsoftware zu erkennen, und kann die meisten Schadsoftware und potenziell unerwünschte Software nicht erkennen. Darüber hinaus sind die Verwaltungs- und Berichtsfunktionen eingeschränkt. Microsoft empfiehlt Unternehmen, ihre primäre Antivirenlösung zu wählen und sie exklusiv zu verwenden.
+**Microsoft empfiehlt nicht die Verwendung dieses Features in Unternehmensumgebungen. Dies ist ein Feature, das in erster Linie für Verbraucher vorgesehen ist.** Dieses Feature verwendet nur eine begrenzte Teilmenge der Microsoft Defender Antivirus Funktionen, um Schadsoftware zu erkennen, und kann nicht die meisten Schadsoftware und potenziell unerwünschte Software erkennen. Außerdem sind die Verwaltungs- und Berichtsfunktionen eingeschränkt. Microsoft empfiehlt Unternehmen, ihre primäre Antivirenlösung auszuwählen und ausschließlich zu verwenden.
 
-## <a name="how-to-enable-limited-periodic-scanning"></a>Aktivieren begrenzter regelmäßiger Überprüfungen
+## <a name="how-to-enable-limited-periodic-scanning"></a>Aktivieren der eingeschränkten regelmäßigen Überprüfung
 
-Standardmäßig aktiviert Microsoft Defender Antivirus sich selbst auf einem Windows 10-Gerät, wenn kein anderes Antivirenprodukt installiert ist oder das andere Produkt veraltet, abgelaufen oder nicht ordnungsgemäß funktioniert.
+Standardmäßig aktiviert sich Microsoft Defender Antivirus auf einem Windows 10 Gerät, wenn kein anderes Antivirenprodukt installiert ist oder wenn das andere Produkt veraltet, abgelaufen oder nicht ordnungsgemäß funktioniert.
 
-Wenn Microsoft Defender Antivirus aktiviert ist, werden die üblichen Optionen angezeigt, um sie auf diesem Gerät zu konfigurieren:
+Wenn Microsoft Defender Antivirus aktiviert ist, werden die üblichen Optionen angezeigt, um es auf diesem Gerät zu konfigurieren:
 
 ![Windows-Sicherheit-App mit Microsoft Defender AV-Optionen, einschließlich Scanoptionen, Einstellungen und Updateoptionen](images/vtp-wdav.png)
 
-Wenn ein anderes Antivirenprodukt installiert ist und ordnungsgemäß funktioniert, Microsoft Defender Antivirus selbst deaktiviert. Die Windows-Sicherheit-App ändert den Abschnitt **Virenschutz &,** um den Status des AV-Produkts anzuzeigen, und stellt einen Link zu den Konfigurationsoptionen des Produkts zur Verfügung.
+Wenn ein anderes Antivirenprodukt installiert ist und ordnungsgemäß funktioniert, deaktiviert Microsoft Defender Antivirus sich selbst. The Windows-Sicherheit app will change the **Virus & threat protection** section to show status about the AV product, and provide a link to the product's configuration options.
 
-Unterhalb von AV-Produkten von Drittanbietern wird ein neuer Link als Microsoft Defender Antivirus **angezeigt.** Wenn Sie auf diesen Link klicken, wird der Umschalter, der eine eingeschränkte regelmäßige Überprüfung ermöglicht, erweitert. Beachten Sie, dass die eingeschränkte periodische Option eine Umschalte ist, um die regelmäßige Überprüfung zu aktivieren oder zu deaktivieren. 
+Unter allen AV-Produkten von Drittanbietern wird ein neuer Link als **Microsoft Defender Antivirus Optionen** angezeigt. Durch Klicken auf diesen Link wird die Umschaltfläche angezeigt, die eine eingeschränkte regelmäßige Überprüfung ermöglicht. Beachten Sie, dass die eingeschränkte regelmäßige Option eine Umschaltfläche zum Aktivieren oder Deaktivieren der regelmäßigen Überprüfung ist. 
 
-Wenn Sie den Schalter auf **Ein** verschieben, werden die standardmäßigen Microsoft Defender AV-Optionen unterhalb des Drittanbieter-AV-Produkts angezeigt. Die eingeschränkte regelmäßige Überprüfungsoption wird am unteren Rand der Seite angezeigt.
+Wenn Sie den Schalter auf **"Ein"** setzen, werden die standardmäßigen Microsoft Defender AV-Optionen unter dem AV-Produkt des Drittanbieters angezeigt. Die eingeschränkte regelmäßige Überprüfungsoption wird am unteren Rand der Seite angezeigt.
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

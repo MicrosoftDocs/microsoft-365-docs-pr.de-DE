@@ -1,5 +1,5 @@
 ---
-title: SIEM-Serverintegration in Microsoft 365 und Anwendungen
+title: SIEM-Serverintegration mit Microsoft 365 Diensten und Anwendungen
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -15,17 +15,17 @@ ms.custom:
 - Ent_Solutions
 - SIEM
 - seo-marvel-apr2020
-description: Verschaffen Sie sich einen Überblick über die Integration von SieM-Servern (Security Information and Event Management) in Microsoft 365 cloud services and applications
+description: Hier erhalten Sie eine Übersicht über die Integration von SIEM-Servern (Security Information and Event Management) in Ihre Microsoft 365 Clouddienste und -anwendungen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: bea8aa3914da4b813f3928eddbb6df9c98ef6605
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 8b9c17ba2dcefa65b60a53ab8bff405de4850fc0
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599947"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929791"
 ---
-# <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integration von Sicherheitsinformationen und Ereignisverwaltungsservern in Microsoft 365 und Anwendungen
+# <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Siem-Serverintegration (Security Information and Event Management) in Microsoft 365 Dienste und Anwendungen
 
 **Gilt für**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
@@ -36,42 +36,42 @@ ms.locfileid: "51599947"
 
 ## <a name="summary"></a>Zusammenfassung
 
-Verwendet oder plant Ihre Organisation, einen Sicherheitsinformations- und Ereignisverwaltungsserver (Security Information and Event Management, SIEM) zu erhalten? Sie fragen sich vielleicht, wie sie in Microsoft 365 oder Office 365. Dieser Artikel enthält eine Liste der Ressourcen, die Sie verwenden können, um Ihren SIEM-Server in Microsoft 365 und Anwendungen zu integrieren.
+Verwendet Oder plant Ihre Organisation, einen SIEM-Server (Security Information and Event Management) zu erhalten? Sie fragen sich vielleicht, wie sie in Microsoft 365 oder Office 365 integriert wird. Dieser Artikel enthält eine Liste der Ressourcen, die Sie verwenden können, um Ihren SIEM-Server in Microsoft 365 Dienste und Anwendungen zu integrieren.
 
 > [!TIP]
-> Wenn Sie noch keinen SIEM-Server haben und Ihre Optionen erkunden, sollten Sie **[Microsoft Azure Sentinel verwenden.](/azure/sentinel/overview)**
+> Wenn Sie noch keinen SIEM-Server haben und Ihre Optionen erkunden, sollten Sie **[Microsoft Azure Sentinel](/azure/sentinel/overview)** in Betracht ziehen.
 
-## <a name="do-i-need-a-siem-server"></a>Benötigen Sie einen SIEM-Server?
+## <a name="do-i-need-a-siem-server"></a>Benötisiere ich einen SIEM-Server?
 
-Ob Sie einen SIEM-Server benötigen, hängt von vielen Faktoren ab, z. B. den Sicherheitsanforderungen Ihrer Organisation und dem Ort, an dem Sich Ihre Daten befinden. Microsoft 365 umfasst eine Vielzahl von Sicherheitsfeatures, die die Sicherheitsanforderungen vieler Organisationen ohne zusätzliche Server, z. B. einen SIEM-Server, erfüllen. Einige Organisationen haben spezielle Umstände, die die Verwendung eines SIEM-Servers erfordern. Hier sind einige Beispiele:
+Ob Sie einen SIEM-Server benötigen, hängt von vielen Faktoren ab, z. B. den Sicherheitsanforderungen Ihrer Organisation und dem Speicherort Ihrer Daten. Microsoft 365 umfasst eine Vielzahl von Sicherheitsfeatures, die die Sicherheitsanforderungen vieler Organisationen ohne zusätzliche Server erfüllen, z. B. einen SIEM-Server. Einige Organisationen haben besondere Umstände, die die Verwendung eines SIEM-Servers erfordern. Im Folgenden finden Sie einige Beispiele:
 
-- *Fabrikam* verfügt über einige Inhalte und Anwendungen lokal und einige in der Cloud (sie verfügen über eine Hybrid-Cloud-Bereitstellung). Um Sicherheitsberichte für alle Inhalte und Anwendungen zu erhalten, hat Fabrikam einen SIEM-Server implementiert.
+- *Fabrikam* verfügt über lokale Inhalte und Anwendungen und einige in der Cloud (sie verfügen über eine Hybrid-Cloudbereitstellung). Um Sicherheitsberichte über alle Inhalte und Anwendungen hinweg zu erhalten, hat Fabrikam einen SIEM-Server implementiert.
 
-- *Contoso* ist eine Finanzdienstleisterorganisation, die besonders strenge Sicherheitsanforderungen hat. Sie haben ihrer Umgebung einen SIEM-Server hinzugefügt, um den zusätzlichen Sicherheitsschutz zu nutzen, den sie benötigen.
+- *Contoso* ist eine Finanzdienstleistungsorganisation mit besonders strengen Sicherheitsanforderungen. Sie haben ihrer Umgebung einen SIEM-Server hinzugefügt, um den zusätzlichen Sicherheitsschutz zu nutzen, den sie benötigen.
 
 ## <a name="siem-server-integration-with-microsoft-365"></a>SIEM-Serverintegration in Microsoft 365
 
-Ein SIEM-Server kann Daten von einer Vielzahl von Microsoft 365 und Anwendungen empfangen. In der folgenden Tabelle sind verschiedene Microsoft 365 und Anwendungen sowie DIEM-Servereingaben und -ressourcen aufgeführt, um mehr zu erfahren.
+Ein SIEM-Server kann Daten aus einer Vielzahl von Microsoft 365 Diensten und Anwendungen empfangen. In der folgenden Tabelle sind mehrere Microsoft 365 Dienste und Anwendungen sowie SIEM-Servereingaben und Ressourcen aufgeführt, um mehr zu erfahren.
 
 ****
 
-|Microsoft 365 Dienst oder Anwendung|EINGABEN/Methoden des SIEM-Servers|Ressourcen mit mehr Informationen|
+|Microsoft 365 Dienst oder Anwendung|SIEM-Servereingaben/-methoden|Ressourcen mit mehr Informationen|
 |---|---|---|
-|[Microsoft Defender für Office 365](defender-for-office-365.md)|Überwachungsprotokolle|[SIEM-Integration in Microsoft Defender for Office 365](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender für Endpunkt](/windows/security/threat-protection/)|IN Azure gehosteter HTTPS-Endpunkt <p> REST-API|[Ziehen von Warnungen an Ihre SIEM-Tools](../defender-endpoint/configure-siem.md)|
+|[Microsoft Defender für Office 365](defender-for-office-365.md)|Überwachungsprotokolle|[SIEM-Integration in Microsoft Defender für Office 365](siem-integration-with-office-365-ti.md)|
+|[Microsoft Defender für Endpunkt](/windows/security/threat-protection/)|IN Azure gehosteter HTTPS-Endpunkt <p> REST-API|[Abrufen von Warnungen an Ihre SIEM-Tools](../defender-endpoint/configure-siem.md)|
 |[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)|Protokollintegration|[SIEM-Integration in Microsoft Cloud App Security](/cloud-app-security/siem)|
 |
 
 > [!TIP]
-> Sehen Sie sich [Azure Sentinel an.](/azure/sentinel/overview) Azure Sentinel bietet Connectors für Microsoft-Lösungen. Diese Connectors sind "sofort verfügbar" und ermöglichen die Echtzeitintegration. Sie können Azure Sentinel mit Ihren Microsoft 365 Defender-Lösungen und Microsoft 365-Diensten verwenden, einschließlich Office 365, Azure AD, Microsoft Defender for Identity, Microsoft Cloud App Security und mehr.
+> Werfen Sie einen Blick auf [Azure Sentinel.](/azure/sentinel/overview) Azure Sentinel enthält Connectors für Microsoft-Lösungen. Diese Connectors sind sofort verfügbar und ermöglichen die Integration in Echtzeit. Sie können Azure Sentinel mit Ihren Microsoft 365 Defender-Lösungen und Microsoft 365-Diensten verwenden, einschließlich Office 365, Azure AD, Microsoft Defender for Identity, Microsoft Cloud App Security und mehr.
 
 ### <a name="audit-logging-must-be-turned-on"></a>Überwachungsprotokollierung muss aktiviert sein
 
 Stellen Sie sicher, dass die Überwachungsprotokollierung aktiviert ist, bevor Sie die SIEM-Serverintegration konfigurieren.
 
-- Für SharePoint Online, OneDrive for Business und Azure Active Directory wird die Überwachungsprotokollierung im [Security & Compliance Center aktiviert.](../../compliance/turn-audit-log-search-on-or-off.md)
+- Bei SharePoint Online-, OneDrive for Business- und Azure Active Directory ist [die Überwachungsprotokollierung im Microsoft 365 Defender-Portal aktiviert.](../../compliance/turn-audit-log-search-on-or-off.md)
 
-- Weitere Exchange Online finden Sie unter [Verwalten der Postfachüberwachung](../../compliance/enable-mailbox-auditing.md).
+- Informationen Exchange Online finden Sie unter Verwalten der [Postfachüberwachung.](../../compliance/enable-mailbox-auditing.md)
 
 ## <a name="more-resources"></a>Weitere Ressourcen
 

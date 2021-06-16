@@ -8,17 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
+ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: b62659360e990467524ec632968dfea313d0b164
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: bde97638a39eef4561b898b2cf49e51bed6e77a5
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861671"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926655"
 ---
 # <a name="turn-on-network-protection"></a>Netzwerkschutz aktivieren
 
@@ -81,7 +82,7 @@ Aktivieren Sie den Netzwerkschutz mithilfe einer der folgenden Methoden:
 
 ### <a name="mobile-device-management-mdm"></a>Mobile Geräteverwaltung (MDM)
 
-Verwenden Sie [den Konfigurationsdienstanbieter ./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) (CSP), um den Netzwerkschutz zu aktivieren oder zu deaktivieren oder den Überwachungsmodus zu aktivieren.
+Verwenden Sie [den Konfigurationsdienstanbieter ./Vendor/MSFT/Policy/Config/Defender/EnableNetworkProtection](/windows/client-management/mdm/policy-csp-defender) (CSP), um den Netzwerkschutz zu aktivieren oder zu deaktivieren oder den Überwachungsmodus zu aktivieren.
 
 ### <a name="microsoft-endpoint-manager-formerly-intune"></a>Microsoft Endpoint Manager (früher Intune)
 
@@ -103,7 +104,7 @@ Verwenden Sie das folgende Verfahren, um den Netzwerkschutz auf Computern zu akt
 
 2. Wechseln Sie im **Gruppenrichtlinien-Verwaltungs-Editor** zu **Computerkonfiguration**, und wählen Sie **Administrative Vorlagen** aus.
 
-3. Erweitern Sie die Struktur bis Windows **Komponenten**  >  **Microsoft Defender Antivirus**  >  **Windows Defender Exploit**  >  **Guard-Netzwerkschutz.**
+3. Erweitern Sie die Struktur bis **Windows Komponenten**  >  **Microsoft Defender Antivirus**  >  **Windows Defender Exploit**  >  **Guard-Netzwerkschutz.**
 
 > [!NOTE]
 > In älteren Versionen von Windows kann der Gruppenrichtlinienpfad "Windows Defender Antivirus" anstelle von "Microsoft Defender Antivirus" sagen.

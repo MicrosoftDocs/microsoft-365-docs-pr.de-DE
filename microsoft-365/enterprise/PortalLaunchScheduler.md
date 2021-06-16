@@ -17,23 +17,23 @@ search.appverid:
 - SPO160
 - MET150
 description: In diesem Artikel wird beschrieben, wie Sie Ihr Portal mit dem Portal-Startplaner starten können.
-ms.openlocfilehash: bf01f6ae93b424543a6a509f89961a1b7a0c9ad7
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: fb092ea2500aaa139a34e511d224ec4419e04cb5
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52841666"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930259"
 ---
 # <a name="launch-your-portal-using-the-sharepoint-portal-launch-scheduler"></a>Starten Des Portals mithilfe des SharePoint Portal-Startplaners
 
-Ein Portal ist eine SharePoint Kommunikationswebsite in Ihrem Intranet mit hohem Datenverkehr – eine Website, die über mehrere Wochen zwischen 10.000 und über 100.000 Besucher verfügt. Verwenden Sie den Portal-Startplaner, um Ihr Portal zu starten, um sicherzustellen, dass Benutzer beim Zugriff auf Ihr neues SharePoint-Portal eine reibungslose Anzeige haben.
+Ein Portal ist eine SharePoint Kommunikationswebsite in Ihrem Intranet mit hohem Datenverkehr – eine Website, die über mehrere Wochen zwischen 10.000 und über 100.000 Besucher verfügt. Verwenden Sie den Portal-Startplaner, um Ihr Portal zu starten, um sicherzustellen, dass Benutzer beim Zugriff auf Ihr neues SharePoint Portal eine reibungslose Anzeige erhalten.
 <br>
 <br>
 Der Portal-Startplaner soll Ihnen dabei helfen, einen schrittweisen Rollout-Ansatz zu verfolgen, indem Sie Viewer in Wellen stapeln und die URL-Umleitungen für das neue Portal verwalten. Während des Starts jeder Phase können Sie Benutzerfeedback sammeln, die Portalleistung überwachen und den Start anhalten, um Probleme zu beheben, bevor Sie mit der nächsten Welle fortfahren. Erfahren Sie mehr darüber, wie Sie [einen Portalstart in SharePoint planen.](/microsoft-365/Enterprise/Planportallaunchroll-out?view=o365-worldwide)
 
 **Es gibt zwei Arten von Umleitungen:**
 
-- **Bidirektional:** Starten eines neuen modernen SharePoint-Portals, um ein vorhandenes SharePoint klassischen oder modernen Portals zu ersetzen
+- **Bidirektional:** Starten eines neuen modernen SharePoint Portals, um ein vorhandenes SharePoint klassischen oder modernen Portals zu ersetzen
 - **Umleiten zu einer temporären Seite:** Starten eines neuen modernen SharePoint-Portals ohne vorhandenes SharePoint Portal
 
 Websiteberechtigungen müssen im Rahmen des Starts separat von Wellen eingerichtet werden. Wenn Sie z. B. ein organisationsweites Portal veröffentlichen, können Sie Berechtigungen auf "Jeder außer externen Benutzern" festlegen und ihre Benutzer dann mithilfe von Sicherheitsgruppen in Wellen aufteilen. Das Hinzufügen einer Sicherheitsgruppe zu einer Welle gibt dieser Sicherheitsgruppe keinen Zugriff auf die Website.
@@ -46,10 +46,10 @@ Websiteberechtigungen müssen im Rahmen des Starts separat von Wellen eingericht
 > - Sie müssen über Websitebesitzerberechtigungen verfügen, damit die Website den Start eines Portals anpassen und planen kann.
 > - Starts müssen mindestens sieben Tage im Voraus geplant sein, und jede Welle kann ein bis sieben Tage dauern.
 > - Die Anzahl der erforderlichen Wellen wird automatisch durch die erwartete Anzahl von Benutzern bestimmt.
-> - Vor dem Planen eines Portalstarts muss das [Tool "Seitendiagnose für SharePoint"](https://aka.ms/perftool) ausgeführt werden, um zu überprüfen, ob die Startseite der Website fehlerfrei ist.
+> - Vor dem Planen eines Portalstarts muss die [Seitendiagnose für SharePoint](https://aka.ms/perftool) Tool ausgeführt werden, um sicherzustellen, dass die Startseite der Website fehlerfrei ist.
 > - Am Ende des Starts können alle Benutzer mit Berechtigungen für die Website auf die neue Website zugreifen.
-> - Wenn Ihre Organisation [Viva Connections](/SharePoint/viva-connections)verwendet, sehen Benutzer möglicherweise das Symbol Ihrer Organisation in der Microsoft Teams App-Leiste. Wenn das Symbol ausgewählt ist, können Benutzer jedoch erst auf das Portal zugreifen, wenn ihre Welle gestartet wurde.
-> - Dieses Feature ist nicht für Office 365 Deutschland, Office 365 betrieben von 21Vianet (China) oder Microsoft 365 US Government-Plänen verfügbar.
+> - Wenn Ihre Organisation [Viva Connections](/SharePoint/viva-connections)verwendet, wird Benutzern möglicherweise das Symbol Ihrer Organisation in der Microsoft Teams App-Leiste angezeigt. Wenn das Symbol ausgewählt ist, können Benutzer jedoch erst auf das Portal zugreifen, wenn ihre Welle gestartet wurde.
+> - Dieses Feature ist für Office 365 Deutschland, Office 365 betrieben von 21Vianet (China) oder Microsoft 365 Plänen der US-Regierung nicht verfügbar.
 
 ## <a name="understand-the-differences-between-portal-launch-scheduler-options"></a>Grundlegendes zu den Unterschieden zwischen den Optionen des Portal-Startplaners:
 
@@ -79,7 +79,7 @@ Früher konnten Portalstarts nur über SharePoint PowerShell geplant werden. Jet
 
    **Option 2:** Sie können jederzeit zur Startseite der SharePoint Kommunikationswebsite navigieren, **Einstellungen** auswählen und dann den **Websitestart planen,** um den Start Ihres Portals zu planen.
 
-   ![Abbildung des bereichs Einstellungen mit hervorgehobener Option "Websitestart planen"](../media/portal-launch-settings-2.png)
+   ![Abbildung des bereichs Einstellungen mit hervorgehobenem "Planen eines Websitestarts"](../media/portal-launch-settings-2.png)
 
 3. Bestätigen Sie als Nächstes die Integritätsbewertung des Portals, und nehmen Sie bei Bedarf Verbesserungen am Portal vor, indem Sie das Tool ["Seitendiagnose für SharePoint"](https://aka.ms/perftool) verwenden, bis Ihr Portal eine **fehlerfreie** Bewertung erhält. Wählen Sie dann **"Weiter"** aus.
 
@@ -106,7 +106,7 @@ Früher konnten Portalstarts nur über SharePoint PowerShell geplant werden. Jet
 
    **Option 3: Senden von Benutzern an eine externe Seite** – Geben Sie eine externe URL zu einer temporären Startseite an, bis die Welle des Benutzers gestartet wird.
 
-6. Teilen Sie Ihre Zielgruppe in Wellen auf. Fügen Sie bis zu 20 Sicherheitsgruppen pro Welle hinzu. Wave-Details können bis zum Start jeder Welle bearbeitet werden. Jede Welle kann mindestens einen Tag (24 Stunden) und höchstens sieben Tage dauern. Auf diese Weise können SharePoint und Ihre technische Umgebung sich an die große Anzahl von Websitebenutzern gewöhnen und skalieren. Bei der Planung eines Starts über die Benutzeroberfläche basiert die Zeitzone auf den regionalen Einstellungen der Website.
+6. Teilen Sie Ihre Zielgruppe in Wellen auf. Fügen Sie bis zu 20 Sicherheitsgruppen pro Welle hinzu. Wave-Details können bis zum Start jeder Welle bearbeitet werden. Jede Welle kann mindestens einen Tag (24 Stunden) und höchstens sieben Tage dauern. Dies ermöglicht SharePoint und Ihrer technischen Umgebung die Möglichkeit, sich an das große Volumen von Websitebenutzern zu gewöhnen und zu skalieren. Bei der Planung eines Starts über die Benutzeroberfläche basiert die Zeitzone auf den regionalen Einstellungen der Website.
 
    > [!NOTE]
    >
@@ -116,9 +116,12 @@ Früher konnten Portalstarts nur über SharePoint PowerShell geplant werden. Jet
 7. Bestimmen Sie, wer die Website sofort anzeigen muss, und geben Sie ihre Informationen in das **Feld "Benutzer" ein, das vom Wellenfeld ausgenommen ist.** Diese Benutzer werden von den Wellen ausgeschlossen und nicht vor, während oder nach dem Start umgeleitet.
 
     > [!NOTE]
-    > Es können bis zu 50 unterschiedliche Benutzer oder Sicherheitsgruppen hinzugefügt werden. Verwenden Sie Sicherheitsgruppen, wenn Sie mehr als 50 Personen benötigen, um Zugriff auf das Portal zu erhalten, bevor die Wellen gestartet werden.
+    > Bis zu 50 unterschiedliche Benutzer oder Sicherheitsgruppen können maximal für den gesamten Start verwendet werden. Jeder Start ist unabhängig voneinander. Wenn Sie also einen Start auf einem anderen Portal planen, können Sie bis zu 50 Benutzer/Sicherheitsgruppen für diesen Start verwenden. Darüber hinaus können Sie bis zu 20 unterschiedliche Benutzer oder Sicherheitsgruppen pro Welle verwenden. 
 
-8. Bestätigen Sie die Startdetails des Portals, und wählen Sie **"Zeitplan"** aus. Nachdem der Start geplant wurde, müssen alle Änderungen an der Startseite des SharePoint Portals ein fehlerfreies Diagnoseergebnis erhalten, bevor der Start des Portals fortgesetzt wird.
+>Der Portalstartplaner unterstützt Sicherheitsgruppen und E-Mail-aktivierte Sicherheitsgruppen. 
+
+
+8. Bestätigen Sie die Startdetails des Portals, und wählen Sie **"Zeitplan"** aus. Nachdem der Start geplant wurde, müssen alle Änderungen an der Startseite des SharePoint-Portals ein fehlerfreies Diagnoseergebnis erhalten, bevor der Start des Portals fortgesetzt wird.
 
 ### <a name="launch-a-portal-with-over-100k-users"></a>Starten eines Portals mit mehr als 100.000 Benutzern
 
@@ -145,7 +148,7 @@ Wenn Sie planen, ein Portal mit mehr als 100.000 Benutzern zu starten, senden Si
 
 Startdetails können für jede Welle bis zum Datum des Starts der Welle bearbeitet werden.
 
-1. Navigieren Sie zum Bearbeiten der Startdetails des Portals zu **Einstellungen,** und wählen Sie **"Websitestart planen"** aus.
+1. Navigieren Sie zum Bearbeiten von Portalstartdetails zu **Einstellungen,** und wählen Sie **"Websitestart planen"** aus.
 2. Wählen Sie dann **Bearbeiten** aus.
 3. Wenn Sie die Bearbeitung abgeschlossen haben, wählen Sie **Aktualisieren** aus.
 
@@ -153,7 +156,7 @@ Startdetails können für jede Welle bis zum Datum des Starts der Welle bearbeit
 
 Mit dem Portal-Startplanungstool geplante Starts können jederzeit abgebrochen oder gelöscht werden, auch wenn einige Phasen bereits gestartet wurden.
 
-1. Um den Start Ihres Portals abzubrechen, navigieren Sie zu **Einstellungen** und Planen des **Websitestarts.**
+1. Um den Start Ihres Portals abzubrechen, navigieren Sie zu **Einstellungen** und **planen Sie den Websitestart.**
 
 2. Wählen Sie dann **"Löschen"** und dann, wenn die folgende Meldung angezeigt wird, erneut **"Löschen"** aus.
 
@@ -195,7 +198,7 @@ Die Anzahl der erforderlichen Wellen hängt von der erwarteten Startgröße ab.
 
 #### <a name="steps-for-bidirectional-redirection"></a>Schritte für die bidirektionale Umleitung
 
-Die bidirektionale Umleitung umfasst das Starten eines neuen modernen SharePoint Online-Portals, um ein vorhandenes SharePoint klassischen oder modernen Portals zu ersetzen. Benutzer in aktiven Phasen werden zur neuen Website umgeleitet, unabhängig davon, ob sie zur alten oder neuen Website navigieren. Benutzer in einer nicht gestarteten Welle, die versuchen, auf die neue Website zuzugreifen, werden zurück zur alten Website umgeleitet, bis ihre Welle gestartet wird.
+Die bidirektionale Umleitung umfasst das Starten eines neuen modernen SharePoint Onlineportals, um ein vorhandenes SharePoint klassischen oder modernen Portals zu ersetzen. Benutzer in aktiven Phasen werden zur neuen Website umgeleitet, unabhängig davon, ob sie zur alten oder neuen Website navigieren. Benutzer in einer nicht gestarteten Welle, die versuchen, auf die neue Website zuzugreifen, werden zurück zur alten Website umgeleitet, bis ihre Welle gestartet wird.
 
 Wir unterstützen nur die Umleitung zwischen der Standardhomepage auf der alten Website und der Standardstartseite auf der neuen Website. Wenn Sie Administratoren oder Besitzer haben, die Zugriff auf die alten und neuen Websites benötigen, ohne umgeleitet zu werden, stellen Sie sicher, dass sie mithilfe des Parameters aufgeführt `WaveOverrideUsers` werden.
 
@@ -241,7 +244,7 @@ Die temporäre Seitenumleitung sollte verwendet werden, wenn kein vorhandenes Sh
 
 ### <a name="pause-or-restart-a-portal-launch-on-the-site"></a>Anhalten oder Neustarten eines Portalstarts auf der Website
 
-1. Führen Sie den folgenden Befehl aus, um den Start eines Portals anzuhalten und vorübergehend zu verhindern, dass anstehende Welle-Progressionen auftreten:
+1. Führen Sie den folgenden Befehl aus, um den Start eines Portals zu unterbrechen und vorübergehend zu verhindern, dass anstehende Welle-Progressionen auftreten:
 
    ```PowerShell
    Set-SPOPortalLaunchWaves -Status Pause - LaunchSiteUrl <object>

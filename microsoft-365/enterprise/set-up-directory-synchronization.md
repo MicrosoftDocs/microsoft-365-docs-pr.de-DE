@@ -5,7 +5,7 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.date: 09/30/2020
 audience: Admin
-ms.topic: get-started-article
+ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 f1.keywords:
@@ -22,20 +22,20 @@ search.appverid:
 - BCS160
 ms.assetid: 1b3b5318-6977-42ed-b5c7-96fa74b08846
 description: Erfahren Sie, wie Sie die Verzeichnissynchronisierung zwischen Microsoft 365 und Ihrem lokalen Active Directory einrichten.
-ms.openlocfilehash: 51cf52bd81004157606c884fd4f0b5d3604b877a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 14b44523c0a560a71ed8dc9182f677f2ebc0b865
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924904"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926526"
 ---
 # <a name="set-up-directory-synchronization-for-microsoft-365"></a>Einrichten der Verzeichnissynchronisierung für Microsoft 365
 
-*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
+*Dieser Artikel gilt sowohl für Microsoft 365 Enterprise als auch für Office 365 Enterprise.*
 
-Microsoft 365 verwendet einen Azure Active Directory (Azure AD)-Mandanten, um Identitäten für die Authentifizierung und Berechtigungen für den Zugriff auf cloudbasierte Ressourcen zu speichern und zu verwalten. 
+Microsoft 365 verwendet einen Azure Active Directory (Azure AD)-Mandanten zum Speichern und Verwalten von Identitäten für die Authentifizierung und Berechtigungen für den Zugriff auf cloudbasierte Ressourcen. 
 
-Wenn Sie über eine lokale Active Directory Domain Services (AD DS)-Domäne oder -Gesamtstruktur verfügen, können Sie Ihre AD DS-Benutzerkonten, -Gruppen und -Kontakte mit dem Azure AD-Mandanten Ihres Microsoft 365 synchronisieren. Dies ist eine Hybrididentität für Microsoft 365. Dies sind ihre Komponenten.
+Wenn Sie über eine lokale Active Directory Domain Services (AD DS)-Domäne oder -Gesamtstruktur verfügen, können Sie Ihre AD DS-Benutzerkonten, -Gruppen und -Kontakte mit dem Azure AD-Mandanten Ihres Microsoft 365-Abonnements synchronisieren. Dies ist eine Hybrididentität für Microsoft 365. Dies sind ihre Komponenten.
 
 ![Komponenten der Verzeichnissynchronisierung für Microsoft 365](../media/about-microsoft-365-identity/hybrid-identity.png)
 
@@ -51,18 +51,18 @@ Azure AD Connect wird auf einem lokalen Server ausgeführt und synchronisiert Ih
 
 - Verbundauthentifizierung
 
-  Azure AD verweist den Clientcomputer, der die Authentifizierung anfordert, an einen anderen Identitätsanbieter.
+  Azure AD verweist den Clientcomputer, der die Authentifizierung anfordert, auf einen anderen Identitätsanbieter.
 
 Weitere Informationen finden Sie unter [Hybrididentitäten](plan-for-directory-synchronization.md).
   
 ## <a name="1-review-prerequisites-for-azure-ad-connect"></a>1. Voraussetzungen für Azure AD Connect überprüfen
 
-Sie erhalten ein kostenloses Azure AD-Abonnement mit Microsoft 365 Abonnement. Wenn Sie die Verzeichnissynchronisierung einrichten, installieren Sie Azure AD Connect auf einem Ihrer lokalen Server.
+Sie erhalten ein kostenloses Azure AD-Abonnement mit Ihrem Microsoft 365-Abonnement. Wenn Sie die Verzeichnissynchronisierung einrichten, installieren Sie Azure AD Connect auf einem Ihrer lokalen Server.
   
 Für Microsoft 365 müssen Sie:
   
 - Ihre lokale Domäne hinzufügen. Der Azure AD Connect-Assistent führt Sie schrittweise durch diesen Vorgang.
-- Rufen Sie die Benutzernamen und Kennwörter für die Administratorkonten Ihres Mandanten Microsoft 365 AD DS ab.
+- Rufen Sie die Benutzernamen und Kennwörter für die Administratorkonten Ihres Microsoft 365 Mandanten und AD DS ab.
 
 Für Ihren lokalen Server, auf dem Sie Azure AD Connect installieren, benötigen Sie Folgendes:
   
@@ -80,7 +80,7 @@ Sie können auch den [Versionsveröffentlichungsverlauf](/azure/active-directory
 
 Bevor Sie beginnen, sollten Sie sicherstellen, dass Sie über Folgendes verfügen:
 
-- Benutzername und Kennwort eines globalen Microsoft 365 Administrator
+- Benutzername und Kennwort eines Microsoft 365 globalen Administrators
 - Den Benutzernamen und das Kennwort des AD-DS-Domänenadministrators.
 - Welche Authentifizierungsmethode (PHS, PTA, Federated)
 - Ob Sie [Azure AD Seamless Single Sign-On (SSO) verwenden möchten](/azure/active-directory/hybrid/how-to-connect-sso)
@@ -88,14 +88,14 @@ Bevor Sie beginnen, sollten Sie sicherstellen, dass Sie über Folgendes verfüge
 Führen Sie die folgenden Schritte aus:
 
 1. Melden Sie sich beim [Microsoft 365 Admin Center](https://admin.microsoft.com) an, (https://admin.microsoft.com) und wählen Sie im linken Navigationsbereich **Benutzer** \> **Aktive Benutzer** aus.
-2. Wählen Sie **auf der** Seite Aktive Benutzer die Option **Mehr** (drei Punkte) \> **Verzeichnissynchronisierung aus.**
+2. Wählen Sie auf der Seite **"Aktive Benutzer"** die Option **"Weitere** (drei Punkte) \> **Verzeichnissynchronisierung"** aus.
   
-3. Wählen Sie **auf Azure Active Directory** Seite Vorbereitung den Link Zum Downloadcenter wechseln aus, um den Azure **AD Verbinden-Toollink** für die ersten Schritte zu erhalten. 
+3. Wählen Sie auf der **Azure Active Directory Vorbereitungsseite** das Download center aus, um den Link zum Azure AD Verbinden Tool für die ersten Schritte zu **erhalten.** 
 4. Folgen Sie den Schritten in [Installationsübersicht: Azure AD Connect und Azure AD Connect Health](/azure/active-directory/hybrid/how-to-connect-install-roadmap).
 
 ## <a name="3-finish-setting-up-domains"></a>3. Abschließen der Einrichtung von Domänen
 
-Führen Sie die Schritte unter [Create DNS records for Microsoft 365 when you manage your DNS records](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) to finish setting up your domains aus.
+Führen Sie die Schritte unter [Erstellen von DNS-Einträgen für Microsoft 365 aus, wenn Sie Ihre DNS-Einträge verwalten,](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) um die Einrichtung Ihrer Domänen abzuschließen.
 
 ## <a name="next-step"></a>Nächster Schritt
 

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: b9d6cd374a107a403269bc3babbe4220d69e1cce
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: cb4bebe3f6998b81a00d7fd15bc919f70381a933
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844874"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929695"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Behandeln von Problemen beim Onboarding von Microsoft Defender für Endpunkten
 
@@ -110,11 +110,11 @@ Wenn keines der Ereignisprotokolle und Schritte zur Problembehandlung funktionie
 
 Fehlercode-Hexadezimalwert | Fehlercode Dez | Fehlerbeschreibung | OMA-URI | Mögliche Ursachen und Schritte zur Problembehandlung
 :---:|:---|:---|:---|:---
-0x87D1FDE8 | -2016281112 | Problembehebung fehlgeschlagen | Onboarding <br> Offboarding | **Mögliche Ursache:** Beim Onboarding oder Offboarding ist ein Fehler bei einem falschen Blob aufgetreten: falsche Signatur oder fehlende PreviousOrgIds-Felder. <br><br> **Schritte zur Problembehandlung:** <br> Überprüfen Sie die Ereignis-IDs im Abschnitt "Anzeigen von [Agent-Onboardingfehlern" im Abschnitt "Geräteereignisprotokoll".](#view-agent-onboarding-errors-in-the-device-event-log) <br><br> Überprüfen Sie die MDM-Ereignisprotokolle in der folgenden Tabelle, oder befolgen Sie die Anweisungen unter Diagnose von [MDM-Fehlern in Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
+0x87D1FDE8 | -2016281112 | Problembehebung fehlgeschlagen | Onboarding <br> Offboarding | **Mögliche Ursache:** Beim Onboarding oder Offboarding ist ein Fehler bei einem falschen Blob aufgetreten: falsche Signatur oder fehlende PreviousOrgIds-Felder. <br><br> **Schritte zur Problembehandlung:** <br> Überprüfen Sie die Ereignis-IDs im Abschnitt "Anzeigen von [Agent-Onboardingfehlern" im Abschnitt "Geräteereignisprotokoll".](#view-agent-onboarding-errors-in-the-device-event-log) <br><br> Überprüfen Sie die MDM-Ereignisprotokolle in der folgenden Tabelle, oder befolgen Sie die Anweisungen unter Diagnose von [MDM-Fehlern in Windows 10.](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)
  | | | | Onboarding <br> Offboarding <br> SampleSharing | **Mögliche Ursache:** Der Registrierungsschlüssel der Microsoft Defender für Endpunktrichtlinie ist nicht vorhanden, oder der OMA DM-Client verfügt nicht über die Berechtigungen zum Schreiben in den Client. <br><br> **Schritte zur Problembehandlung:** Stellen Sie sicher, dass der folgende Registrierungsschlüssel vorhanden ist: `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection` <br> <br> Wenn er nicht vorhanden ist, öffnen Sie einen Befehl mit erhöhten Rechten, und fügen Sie den Schlüssel hinzu.
- | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Mögliche Ursache:** Ein Versuch, die Korrektur durch schreibgeschützte Eigenschaft zu beheben. Das Onboarding ist fehlgeschlagen. <br><br> **Schritte zur Problembehandlung:** Überprüfen Sie die Schritte zur Problembehandlung in [der Problembehandlung bei Onboarding-Problemen auf dem Gerät.](#troubleshoot-onboarding-issues-on-the-device) <br><br> Überprüfen Sie die MDM-Ereignisprotokolle in der folgenden Tabelle, oder befolgen Sie die Anweisungen unter [Diagnose von MDM-Fehlern in Windows 10](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10).
- | | | | Alle | **Mögliche Ursache:** Versuchen Sie, Microsoft Defender für Endpunkt auf nicht unterstützter SKU/Plattform bereitzustellen, insbesondere holografische SKU. <br><br> Derzeit unterstützte Plattformen:<br> Enterprise, Education und Professional.<br> Der Server wird nicht unterstützt.
- 0x87D101A9 | -2016345687 |SyncML(425): Der angeforderte Befehl ist fehlgeschlagen, da der Absender nicht über ausreichende Zugriffssteuerungsberechtigungen (Access Control Permissions, ACL) für den Empfänger verfügt. | Alle |  **Mögliche Ursache:** Versuchen Sie, Microsoft Defender für Endpunkt auf nicht unterstützter SKU/Plattform bereitzustellen, insbesondere holografische SKU.<br><br> Derzeit unterstützte Plattformen:<br>  Enterprise, Education und Professional.
+ | | | | SenseIsRunning <br> OnboardingState <br> OrgId |  **Mögliche Ursache:** Ein Versuch, die Korrektur durch schreibgeschützte Eigenschaft zu beheben. Das Onboarding ist fehlgeschlagen. <br><br> **Schritte zur Problembehandlung:** Überprüfen Sie die Schritte zur Problembehandlung in [der Problembehandlung bei Onboarding-Problemen auf dem Gerät.](#troubleshoot-onboarding-issues-on-the-device) <br><br> Überprüfen Sie die MDM-Ereignisprotokolle in der folgenden Tabelle, oder befolgen Sie die Anweisungen unter Diagnose von [MDM-Fehlern in Windows 10.](/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10)
+ | | | | Alle | **Mögliche Ursache:** Versuchen Sie, Microsoft Defender für Endpunkt auf nicht unterstützter SKU/Plattform bereitzustellen, insbesondere holografische SKU. <br><br> Derzeit unterstützte Plattformen:<br> Enterprise, Bildungseinrichtungen und Professional.<br> Der Server wird nicht unterstützt.
+ 0x87D101A9 | -2016345687 |SyncML(425): Der angeforderte Befehl ist fehlgeschlagen, da der Absender nicht über ausreichende Zugriffssteuerungsberechtigungen (Access Control Permissions, ACL) für den Empfänger verfügt. | Alle |  **Mögliche Ursache:** Versuchen Sie, Microsoft Defender für Endpunkt auf nicht unterstützter SKU/Plattform bereitzustellen, insbesondere holografische SKU.<br><br> Derzeit unterstützte Plattformen:<br>  Enterprise, Bildungseinrichtungen und Professional.
 
 #### <a name="known-issues-with-non-compliance"></a>Bekannte Probleme bei Nichtkonformität
 
@@ -136,7 +136,7 @@ Kanalname: Administrator
 
 ID | Severity | Ereignisbeschreibung | Schritte zur Problembehandlung
 :---|:---|:---|:---
-1819 | Fehler | Microsoft Defender für Endpunkt-CSP: Fehler beim Festlegen des Knotenwerts. NodeId: (%1), TokenName: (%2), Result: (%3). | Laden Sie das [kumulative Update für Windows 10 1607](https://go.microsoft.com/fwlink/?linkid=829760)herunter.
+1819 | Error | Microsoft Defender für Endpunkt-CSP: Fehler beim Festlegen des Knotenwerts. NodeId: (%1), TokenName: (%2), Result: (%3). | Laden Sie das [kumulative Update für Windows 10 1607](https://go.microsoft.com/fwlink/?linkid=829760)herunter.
 
 ## <a name="troubleshoot-onboarding-issues-on-the-device"></a>Behandeln von Problemen beim Onboarding auf dem Gerät
 
@@ -152,7 +152,7 @@ Wenn die verwendeten Bereitstellungstools keinen Fehler im Onboardingprozess ang
 
 1. Klicken Sie auf **"Start",** geben **Sie "Ereignisanzeige"** ein, und drücken Sie die **EINGABETASTE.**
 
-2. Erweitern Sie im Bereich **ereignisanzeige (lokal)** **Anwendungs- und Dienstprotokolle**  >  **Microsoft**  >  **Windows**  >  **SENSE**.
+2. Erweitern Sie im Bereich **"Ereignisanzeige (lokal)** **Anwendungs- und Dienstprotokolle**  >  **Microsoft**  >  **Windows**  >  **SENSE."**
 
    > [!NOTE]
    > SENSE ist der interne Name, der verwendet wird, um auf den Verhaltenssensor zu verweisen, der Microsoft Defender für Endpunkt unterstützt.
@@ -197,7 +197,7 @@ Es gibt zusätzliche Komponenten auf dem Gerät, von denen der Microsoft Defende
 
 Wenn die Geräte nicht ordnungsgemäß melden, müssen Sie möglicherweise überprüfen, ob der Windows 10 Diagnosedatendienst automatisch gestartet wird und auf dem Gerät ausgeführt wird. Der Dienst wurde möglicherweise durch andere Programme oder Änderungen der Benutzerkonfiguration deaktiviert.
 
-Zuerst sollten Sie überprüfen, ob der Dienst automatisch gestartet wird, wenn Windows gestartet wird. Anschließend sollten Sie überprüfen, ob der Dienst derzeit ausgeführt wird (und ihn starten, wenn dies nicht der Fall ist).
+Zuerst sollten Sie überprüfen, ob der Dienst automatisch gestartet wird, wenn Windows gestartet wird, und dann sollten Sie überprüfen, ob der Dienst derzeit ausgeführt wird (und ihn starten, wenn dies nicht der Fall ist).
 
 ### <a name="ensure-the-service-is-set-to-start"></a>Stellen Sie sicher, dass der Dienst für den Start festgelegt ist.
 
@@ -334,6 +334,8 @@ Die folgenden Schritte bieten Anleitungen für das folgende Szenario:
 - Das Gerät wird deaktiviert oder neu gestartet, bevor der Endbenutzer eine erste Anmeldung durchführt.
 - In diesem Szenario wird der SENSE-Dienst nicht automatisch gestartet, obwohl das Onboardingpaket bereitgestellt wurde.
 
+<div class="alert"><b>HINWEIS:</b> Die Benutzeranmeldung nach der Windows-Willkommensseite ist nicht mehr erforderlich, damit der SENSE-Dienst mit den folgenden oder neueren Windows Versionen startet: Windows 10, Version 1809 oder Windows Server 2019 mit [Updaterollup vom 22. April 2021](https://support.microsoft.com/kb/5001384) </br> Windows 10, Version 1909 mit [Updaterollup vom April 2021](https://support.microsoft.com/kb/5001396) </br> Windows 10, Version 2004/20H2 mit [Updaterollup vom 28. April 2021](https://support.microsoft.com/kb/5001391) </div> 
+<br></br>
 > [!NOTE]
 > Die folgenden Schritte sind nur relevant, wenn Sie Microsoft Endpoint Configuration Manager verwenden. Weitere Informationen zum Onboarding mit Microsoft Endpoint Configuration Manager finden Sie unter [Microsoft Defender für Endpunkt.](/mem/configmgr/protect/deploy-use/windows-defender-advanced-threat-protection)
 
@@ -347,7 +349,7 @@ Die folgenden Schritte bieten Anleitungen für das folgende Szenario:
 
 3. Geben Sie Informationen zu der Anwendung an, und wählen Sie dann **Weiter** aus.
 
-    ![Abbildung von Microsoft Endpoint Configuration Manager Konfiguration3](images/mecm-3.png)
+    ![Abbildung von Microsoft Endpoint Configuration Manager-Konfiguration3](images/mecm-3.png)
 
 4. Geben Sie Informationen zum Software Center an, und wählen Sie dann **Weiter** aus.
 
@@ -371,27 +373,27 @@ Die folgenden Schritte bieten Anleitungen für das folgende Szenario:
 
 9. Wählen Sie in **der Erkennungsmethode** **"Regeln konfigurieren" aus, um das Vorhandensein dieses Bereitstellungstyps zu erkennen,** und wählen Sie dann **"Klausel hinzufügen"** aus.
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration9](images/mecm-9.png)
+    ![Abbildung von Microsoft Endpoint Configuration Manager Configuration9](images/mecm-9.png)
 
 10. Geben Sie die folgenden Details zur Erkennungsregel an, und wählen Sie dann **OK** aus:
 
-    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration10](images/mecm-10.png)
+    ![Abbildung von Microsoft Endpoint Configuration Manager Configuration10](images/mecm-10.png)
 
 11. Wählen Sie **in der Erkennungsmethode** **"Weiter"** aus.
 
-    ![Abbildung von Microsoft Endpoint Configuration Manager Konfiguration11](images/mecm-11.png)
+    ![Abbildung von Microsoft Endpoint Configuration Manager Configuration11](images/mecm-11.png)
 
 12. Geben Sie in der **Benutzeroberfläche** die folgenden Informationen an, und wählen Sie dann **"Weiter"** aus:
 
-    ![Abbildung von Microsoft Endpoint Configuration Manager Konfiguration12](images/mecm-12.png)
+    ![Abbildung von Microsoft Endpoint Configuration Manager Configuration12](images/mecm-12.png)
 
 13. Wählen Sie unter **"Anforderungen"** die Option **"Weiter"** aus.
 
-    ![Abbildung von Microsoft Endpoint Configuration Manager Konfiguration13](images/mecm-13.png)
+    ![Abbildung von Microsoft Endpoint Configuration Manager Configuration13](images/mecm-13.png)
 
 14. Wählen Sie in Abhängigkeiten die Option **"Weiter"** **aus.**
 
-    ![Abbildung von Microsoft Endpoint Configuration Manager Konfiguration14](images/mecm-14.png)
+    ![Abbildung von Microsoft Endpoint Configuration Manager Configuration14](images/mecm-14.png)
 
 15. In **Summary**, select **Next**.
 
@@ -403,7 +405,7 @@ Die folgenden Schritte bieten Anleitungen für das folgende Szenario:
 
 17. Wählen Sie **in Bereitstellungstypen** die Option **"Weiter"** aus.
 
-    ![Abbildung Microsoft Endpoint Configuration Manager Konfiguration17](images/mecm-17.png)
+    ![Abbildung der Microsoft Endpoint Configuration Manager-Konfiguration17](images/mecm-17.png)
 
 18. In **Summary**, select **Next**.
 
@@ -413,7 +415,7 @@ Die folgenden Schritte bieten Anleitungen für das folgende Szenario:
 
 19. Wählen Sie **"Abschluss"** aus, und wählen Sie **"Schließen"** aus.
 
-    ![Abbildung von Microsoft Endpoint Configuration Manager Konfiguration20](images/mecm-20.png)
+    ![Abbildung von Microsoft Endpoint Configuration Manager Configuration20](images/mecm-20.png)
 
 20. Sie können die Anwendung jetzt bereitstellen, indem Sie mit der rechten Maustaste auf die App klicken und **"Bereitstellen"** auswählen.
 
@@ -433,7 +435,7 @@ Die folgenden Schritte bieten Anleitungen für das folgende Szenario:
 
 24. Wählen Sie in **Planung** **so schnell wie möglich nach der verfügbaren Zeit** die Option **"Weiter"** aus.
 
-    ![Abbildung von Microsoft Endpoint Configuration Manager Konfiguration25](images/mecm-25.png)
+    ![Abbildung von Microsoft Endpoint Configuration Manager Configuration25](images/mecm-25.png)
 
 25. Wählen Sie in **der Benutzeroberfläche** **"Commit für Änderungen zum Stichtag" oder während eines Wartungsfensters aus (erfordert Neustarts),** und wählen Sie dann **"Weiter"** aus.
 
@@ -445,7 +447,7 @@ Die folgenden Schritte bieten Anleitungen für das folgende Szenario:
 
 27. In **Summary**, select **Next**.
 
-    ![Abbildung von Microsoft Endpoint Configuration Manager Konfiguration28](images/mecm-28.png)
+    ![Abbildung von Microsoft Endpoint Configuration Manager Configuration28](images/mecm-28.png)
 
     Der Status wird dann angezeigt ![ Bild Microsoft Endpoint Configuration Manager Konfiguration29](images/mecm-29.png)
 

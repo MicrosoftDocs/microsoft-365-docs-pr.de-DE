@@ -4,7 +4,7 @@ f1.keywords:
 - NOCSH
 ms.author: danbrown
 author: DHB-MSFT
-manager: scotv
+manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
@@ -18,22 +18,22 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Entscheiden Sie, welche Office Features angezeigt oder ausgeblendet werden sollen, wenn ein Benutzer die Hilfe > Neuigkeiten in seiner Office-App auf Windows auswählt, indem Sie das Feature "Neuigkeiten in Office" im Microsoft 365 Admin Center verwenden.
-ms.openlocfilehash: 319d5c0aabb0a61b01872acaeeb3ad362b72de37
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+description: Entscheiden Sie, welche Office Features angezeigt oder ausgeblendet werden sollen, wenn ein Benutzer die Hilfe > Neuigkeiten in seiner Office-App auf Windows mithilfe des Features "Neuigkeiten in Office" im Microsoft 365 Admin Center auswählt.
+ms.openlocfilehash: 395038bebda407771802a61ba5aefc350c7c5cd1
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924835"
+ms.locfileid: "52929479"
 ---
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Verwalten, welche Office Features in "Neuigkeiten" angezeigt werden
 
-Wenn ein wichtiges Office Feature veröffentlicht wird, erhalten Die Benutzer eine Meldung darüber, wenn sie  >  in ihrer Office-App auf Windows "Help **What's New"** auswählen.
+Wenn eine wichtige Office-Funktion veröffentlicht wird, erhalten Benutzer eine Meldung darüber, wenn sie  >  in ihrer Office-App auf Windows "Help **What's New"** auswählen.
 
 Sie können steuern, welche dieser Featurenachrichten Ihren Benutzern angezeigt werden, indem Sie das Feature **"Neuigkeiten in Office"** im Microsoft 365 Admin Center verwenden. Wenn Sie eine Featurenachricht für Ihre Benutzer ausblenden möchten, können Sie später jederzeit zurückkehren und sie ihnen anzeigen.
 
 > [!NOTE]
-> - Wenn Sie eine Featurenachricht vor Ihren Benutzern ausblenden, wird das Feature im Office-App nicht deaktiviert.
+> - Wenn Sie eine Featurenachricht von Ihren Benutzern ausblenden, wird das Feature im Office-App nicht deaktiviert.
 > - Ihnen muss entweder die Globale Administratorrolle oder die Administratorrolle Office Apps zugewiesen werden, um das Feature **"Neuigkeiten in Office"** zu verwenden.
 
 ## <a name="show-or-hide-new-features"></a>Ein- oder ausblenden neuer Funktionen 
@@ -50,7 +50,7 @@ Sie können steuern, welche dieser Featurenachrichten Ihren Benutzern angezeigt 
 Sie können auch mehrere Features auf der Seite **"Verwalten" auswählen, welche Office Features auf** der Seite "Neuigkeiten" angezeigt werden, und dann entweder **"Ausblenden"** oder **"Anzeigen"** auswählen.
 
 > [!NOTE]
-> - Wenn ein Feature in mehreren Office Apps verfügbar ist, blendet das Festlegen des Features auf **"Ausgeblendet"** die Featuremeldung in allen diesen Office Apps aus.
+> - Wenn ein Feature in mehreren Office Apps verfügbar ist, blendet das Festlegen des Features auf **"Ausgeblendet"** die Featuremeldung in allen Office Apps aus.
 > - Alle Featuremeldungen werden Benutzern standardmäßig angezeigt. Dies ist der Standardstatus für alle Features, und der Status ändert sich nur, wenn Sie sich entschieden haben, eine Featurenachricht auszublenden oder anzuzeigen.
 > - Sie können auch das Feature **"Neuigkeiten in Office"** im Microsoft 365 Apps Admin Center ( [https://config.office.com](https://config.office.com) ) aufrufen. Das Feature befindet sich unter **Anpassung**  >  **der neuen Verwaltung.**
 
@@ -67,7 +67,7 @@ Neue Features werden auf der Seite basierend auf dem folgenden Zeitplan angezeig
 |**Halbjährlicher Enterprise (Vorschau)** <br/> |1. September und 1. März <br/> | 2 Wochen vor der Hauptversion mit neuen Features|
 |**Semi-Annual Enterprise** <br/> |1. Januar und 1. Juli <br/> | 2 Wochen vor der Hauptversion mit neuen Features<br/> |
 
-Weitere Informationen dazu, wann neue Versionen für jeden Updatekanal veröffentlicht werden, finden Sie im [Updateverlauf für Microsoft 365 Apps (nach Datum aufgeführt).](/officeupdates/update-history-microsoft365-apps-by-date)
+Weitere Informationen dazu, wann neue Versionen für jeden Updatekanal veröffentlicht werden, finden Sie unter [Updateverlauf für Microsoft 365 Apps (nach Datum aufgelistet).](/officeupdates/update-history-microsoft365-apps-by-date)
 
 ## <a name="add-the-whats-new-in-office-card-to-the-admin-center-home-page"></a>Hinzufügen der Karte "Neuigkeiten in Office" zur Admin Center-Startseite
 

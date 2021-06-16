@@ -1,5 +1,5 @@
 ---
-title: Neuerungen in Microsoft Defender für Office 365
+title: Neuigkeiten in Microsoft Defender für Office 365
 description: Erfahren Sie mehr über die neuen Features und Funktionen, die in der neuesten Version von Microsoft Defender für Office 365 verfügbar sind.
 keywords: Neuigkeiten in Microsoft Defender für Office 365, ga, allgemein verfügbar, Funktionen, verfügbar, neu
 search.appverid: met150
@@ -21,14 +21,14 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2895598c8d891b08229f072b7bff6b6549639093
-ms.sourcegitcommit: bce733c1152dfbca782e716579074261e3c2ef65
+ms.openlocfilehash: 0aa8e10545b43f6e0ee985ac11b161a3b21c3a91
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796066"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929554"
 ---
-# <a name="whats-new-in-microsoft-defender-for-office-365"></a>Neuerungen in Microsoft Defender für Office 365
+# <a name="whats-new-in-microsoft-defender-for-office-365"></a>Neuigkeiten in Microsoft Defender für Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
@@ -45,7 +45,7 @@ Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=Tdz
 ## <a name="aprilmay-2021"></a>April/Mai 2021 
 
 - [Seite "E-Mail-Entität":](mdo-email-entity-page.md)Eine einheitliche 360-Grad-Ansicht einer E-Mail mit erweiterten Informationen zu Bedrohungen, Authentifizierung und Erkennungen, Detonationsdetails und einer völlig neuen E-Mail-Vorschau.
-- [Office 365-Verwaltungs-API:](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events)Updates für EmailEvents (RecordType 28) zum Hinzufügen von Übermittlungsaktionen, ursprünglichen und neuesten Zustellungsspeicherorten und aktualisierten Erkennungsdetails.
+- [Office 365-Verwaltungs-API:](/office/office-365-management-api/office-365-management-activity-api-schema#email-message-events)Updates für EmailEvents (RecordType 28) zum Hinzufügen von Übermittlungsaktionen, ursprünglichen und neuesten Übermittlungsspeicherorten und aktualisierten Erkennungsdetails.
 - [Bedrohungsanalyse für Defender für Office 365:](/microsoft-365/security/defender/threat-analytics)Sehen Sie sich aktive Bedrohungsteilnehmer, beliebte Techniken und Angriffsflächen sowie umfassende Berichte von Microsoft-Experten zu laufenden Kampagnen an. 
 
 ## <a name="februarymarch-2021"></a>Februar/März 2021 
@@ -62,7 +62,7 @@ Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=Tdz
 
 ## <a name="november-2020"></a>November 2020
 
-- Aktualisierte Exportgrenzwerte in Review > Action Center > Remediation from Mail Submission and Action Log (Defender for Office 365 Plan 2)
+- Exportbeschränkungen in "Überprüfen > Info-Center > Korrektur aus E-Mail-Übermittlung und Aktionsprotokoll" aktualisiert (Defender für Office 365 Plan 2)
 
 ## <a name="septemberoctober-2020"></a>September/Oktober 2020
 
@@ -89,7 +89,7 @@ Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=Tdz
   - Erweiterte NICHT-Filter (hierbei handelt es sich um erweiterte Filteroptionen, die nicht enthalten, nicht enthalten usw.)
   - Granulare Zeitfilter (Tag, Stunde, halbe Stunde)
 
-- Das **Vorfall-Widget** ist jetzt das **Info-Center-Widget.** (Um Ihre Sicherheits-Widgets anzuzeigen, wechseln Sie im Security & Compliance Center zur **Bedrohungsverwaltung.** \> **Überprüfen** Sie .) (Microsoft Defender für Office 365 Plan 2)
+- Das **Vorfall-Widget** ist jetzt das **Info-Center-Widget.** (Um Ihre Sicherheits-Widgets anzuzeigen, wechseln Sie im Microsoft 365 **Defender-Portal zu E-Mail & Zusammenarbeit** \> **Überprüfen** Sie .) (Microsoft Defender für Office 365 Plan 2)
 
 - [Sichere Dokumente in Microsoft 365](safe-docs.md) **(Vorschau)**
 
@@ -101,7 +101,7 @@ Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=Tdz
 
 ## <a name="november-2019"></a>November 2019
 
-- Sehen Sie sich die neuen Funktionen für [die Erkennung und Reaktion von kompromittierten Benutzern](address-compromised-users-quickly.md) an **(Vorschau)**(Microsoft Defender für Office 365 Plan 2)
+- Sehen Sie sich die neuen funktionen für die Erkennung und Reaktion von [kompromittierten Benutzern](address-compromised-users-quickly.md) an **(Vorschau)**(Microsoft Defender für Office 365 Plan 2)
 
 ## <a name="september-2019"></a>September 2019
 
@@ -129,6 +129,6 @@ Wissen Sie, dass Microsoft Defender für Office 365 in zwei Plänen verfügbar i
 
 ## <a name="see-also"></a>Siehe auch
 
-[roadmap für Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
+[Roadmap für Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap)
 
 [Microsoft Defender für Office 365 Dienstbeschreibung](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)

@@ -19,14 +19,17 @@ ms.custom:
 search.appverid: MET150
 description: Wenn Sie weniger als 25 Benutzerlizenzen haben, können Sie Ihre Microsoft 365 für Unternehmen Testversion oder Ihr bezahltes Abonnement im Admin Center kündigen.
 ms.date: 04/08/2021
-ms.openlocfilehash: 583433e2c2cc939724f772c1cd699cc5763cb21c
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 5c4ce1c00bfde4a895710d737fab0836998836c6
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52536118"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929455"
 ---
 # <a name="cancel-your-subscription"></a>Kündigen Ihres Abonnements
+
+> [!IMPORTANT]
+> Dieser Artikel bezieht sich nur auf Abonnements von Microsoft 365 für Unternehmen. Wenn Sie über Microsoft 365 Family oder Single verfügen, lesen Sie [Kündigen eines Microsoft 365-Abonnements](https://support.microsoft.com/de-DE/office/cancel-a-microsoft-365-subscription-46e2634c-c64b-4c65-94b9-2cc9c960e91b).
 
 *Teilnahmeberechtigung:* Wenn Sie weniger als 25 Lizenzen für Benutzer zugewiesen haben, können Sie Ihre Microsoft 365 für Business-Testversion oder Ihr kostenpflichtiges Abonnement online im Microsoft 365 Admin Center jederzeit kündigen. Wenn Sie mehr als 25 Lizenzen für Benutzer zugewiesen haben, reduzieren Sie sie auf weniger als 25 oder [rufen Sie den Support an, um Ihr Abonnement zu kündigen](../../business-video/get-help-support.md).
 
@@ -47,7 +50,7 @@ Wenn Sie Ihren eigenen Domänennamen für die Nutzung mit Ihrem Abonnement hinzu
 
 1. Navigieren Sie im Admin Center zur Seite **Abrechnung** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Ihre Produkte</a>.
 2. Suchen Sie das Abonnement, das Sie kündigen möchten. Wählen Sie die drei Punkte (weitere Aktionen) und dann **Abonnement kündigen** aus.
-3. Wählen Sie im Bereich **Abonnement kündigen** einen Grund aus, warum Sie kündigen. Geben Sie optional Feedback.
+3. Wählen Sie im Bereich **Abonnement kündigen** einen Grund für Ihre Kündigung aus. Geben Sie optional Feedback.
 4. Wählen Sie **Speichern** aus.
 
 Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nur noch eingeschränkte Funktionen, bis es gelöscht wird. Weitere Informationen über die Folgen der Kündigung eines kostenpflichtigen Microsoft 365 Business-Abonnements finden Sie unter [Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Microsoft 365 Business-Abonnement endet?](what-if-my-subscription-expires.md)
@@ -70,7 +73,7 @@ Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nu
 
 2. Wählen Sie die Registerkarte **Produkte** aus.
 3. Suchen Sie das Abonnement, das Sie kündigen möchten. Wählen Sie die drei Punkte (weitere Aktionen) und dann **Abonnement kündigen** aus.
-4. Wählen Sie im Bereich **Abonnement kündigen** einen Grund aus, warum Sie kündigen. Geben Sie optional Feedback.
+4. Wählen Sie im Bereich **Abonnement kündigen** einen Grund für Ihre Kündigung aus. Geben Sie optional Feedback.
 5. Wählen Sie **Speichern** aus.
 
 Ihr Abonnement wird jetzt mit dem Status **Deaktiviert** angezeigt und bietet nur noch eingeschränkte Funktionen, bis es gelöscht wird. Weitere Informationen über die Folgen der Kündigung eines kostenpflichtigen Microsoft 365 Business-Abonnements finden Sie unter [Was geschieht mit meinen Daten und dem Zugriff darauf, wenn mein Microsoft 365 Business-Abonnement endet?](what-if-my-subscription-expires.md)

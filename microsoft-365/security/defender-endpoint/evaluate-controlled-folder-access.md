@@ -8,17 +8,18 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
+ms.topic: conceptual
 author: dansimp
 ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 15ea4696052a6c987314e3c7b0dd282a49ed4df8
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 4254c5ea24d8c901ac5f6337b0c626afe02747e2
+ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52842914"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52926643"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Auswerten des kontrollierten Ordnerzugriffs
 
@@ -52,11 +53,11 @@ Set-MpPreference -EnableControlledFolderAccess AuditMode
 
 > [!TIP]
 > Wenn Sie die Funktionsweise des kontrollierten Ordnerzugriffs in Ihrer Organisation vollständig überwachen möchten, müssen Sie ein Verwaltungstool verwenden, um diese Einstellung auf Geräten in Ihren Netzwerken bereitzustellen.
-Sie können auch Gruppenrichtlinien, Intune, Mdm (Mobile Device Management) oder Microsoft Endpoint Manager verwenden, um die Einstellung zu konfigurieren und bereitzustellen, wie im Thema zum kontrollierten [Ordnerzugriff](controlled-folders.md)beschrieben.
+Sie können auch Gruppenrichtlinien, Intune, verwaltung mobiler Geräte (MDM) oder Microsoft Endpoint Manager verwenden, um die Einstellung zu konfigurieren und bereitzustellen, wie im Hauptthema zum [kontrollierten Ordnerzugriff](controlled-folders.md)beschrieben.
 
 ## <a name="review-controlled-folder-access-events-in-windows-event-viewer"></a>Überprüfen der Ereignisse des kontrollierten Ordnerzugriffs in Windows Ereignisanzeige
 
-Die folgenden Kontrollierten Ordnerzugriffsereignisse werden in Windows Ereignisanzeige unter dem Ordner "Microsoft/Windows/Windows Defender/Operational" angezeigt.
+Die folgenden Ereignisse für den kontrollierten Ordnerzugriff werden in Windows Ereignisanzeige unter dem Ordner "Microsoft/Windows/Windows Defender/Operational" angezeigt.
 
 Ereignis-ID | Beschreibung
 -|-
