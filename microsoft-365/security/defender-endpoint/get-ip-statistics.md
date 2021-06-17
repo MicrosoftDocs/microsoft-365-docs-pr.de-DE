@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 55bf10d01093c17ba2d186ce0a1d1313db2c3a75
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 4919f082c115d8a57960ec49532b6cda6a63833f
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770085"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998728"
 ---
 # <a name="get-ip-statistics-api"></a>IP-Statistik-API abrufen
 
@@ -31,7 +31,7 @@ ms.locfileid: "52770085"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "52770085"
 ## <a name="api-description"></a>API-Beschreibung
 Ruft die Statistiken für die angegebene IP ab.
 
-## <a name="limitations"></a>Begrenzungen
+## <a name="limitations"></a>Einschränkungen
 1. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
 ## <a name="permissions"></a>Berechtigungen
@@ -48,7 +48,7 @@ Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Wei
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |   Ip.Read.All |   "Ip-Adressprofile lesen"
+Application |   Ip.Read.All |   "Ip-Adressprofile lesen"
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Ip.Read.All |  "Ip-Adressprofile lesen"
 
 >[!NOTE]
@@ -65,7 +65,7 @@ GET /api/ips/{ip}/stats
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | String | Bearer {token}. **Erforderlich**.
+Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
 
 ## <a name="request-uri-parameters"></a>Anforderungs-URI-Parameter
 
@@ -99,7 +99,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgIPStats",
     "ipAddress": "10.209.67.177",
-    "orgPrevalence": "63515",
+    "organizationPrevalence": 63515,
     "orgFirstSeen": "2017-07-30T13:36:06Z",
     "orgLastSeen": "2017-08-29T13:32:59Z"
 }
@@ -108,7 +108,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 
 | Name | Beschreibung |
 | :--- | :---------- |
-| Verbreitung von Organisationen | die unterschiedliche Anzahl von Geräten, die eine Netzwerkverbindung mit dieser IP-Adresse hergestellt haben. |
+| Verbreitung der Organisation | die unterschiedliche Anzahl von Geräten, die eine Netzwerkverbindung mit dieser IP-Adresse hergestellt haben. |
 | Organisation zuerst gesehen | die erste Verbindung für diese IP in der Organisation. |
 | Organisation zuletzt gesehen  | die letzte Verbindung für diese IP in der Organisation. |
 

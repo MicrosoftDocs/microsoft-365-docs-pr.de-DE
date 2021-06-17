@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f189956d65e6d08d8e00272ba0d8db3ba59f6d4
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: 388d71ce4606acabaafdb32ba1baff87286951f1
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52844070"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998788"
 ---
 # <a name="take-response-actions-on-a-file"></a>Ergreifen von Reaktionen auf eine Datei
 
@@ -33,7 +33,7 @@ ms.locfileid: "52844070"
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
+> Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-responddile-abovefoldlink)
 
 Reagieren Sie schnell auf erkannte Angriffe, indem Sie Dateien beenden und quarantäneten oder eine Datei blockieren. Nachdem Sie Maßnahmen für Dateien ergriffen haben, können Sie die Aktivitätsdetails im Info-Center überprüfen.
 
@@ -68,8 +68,8 @@ Sie können einen Angriff in Ihrer Organisation enthalten, indem Sie den bösart
 > Sie können diese Aktion nur ausführen, wenn:
 >
 > - Das Gerät, auf dem Sie die Aktion ausführen, wird Windows 10, Version 1703 oder höher, ausgeführt.
-> - Die Datei gehört nicht zu vertrauenswürdigen Herausgebern von Drittanbietern oder ist nicht von Microsoft signiert.
-> - Microsoft Defender Antivirus muss mindestens im passiven Modus ausgeführt werden. Weitere Informationen finden Sie unter [Microsoft Defender Antivirus Kompatibilität.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
+> - Die Datei gehört nicht zu vertrauenswürdigen Herausgebern von Drittanbietern oder wird nicht von Microsoft signiert.
+> - Microsoft Defender Antivirus müssen mindestens im passiven Modus ausgeführt werden. Weitere Informationen finden Sie unter [Microsoft Defender Antivirus Kompatibilität.](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)
 
 Die Aktion **"Beenden und Isolieren von Dateien"** umfasst das Beenden ausgeführter Prozesse, das Isolieren der Dateien und das Löschen persistenter Daten wie Registrierungsschlüssel.
 
@@ -82,7 +82,7 @@ Diese Aktion wird auf Geräten mit Windows 10 Version 1703 oder höher wirksam, 
 
 1. Wählen Sie die Datei aus, die Sie beenden und unter Quarantäne stellen möchten. Sie können eine Datei aus einer der folgenden Ansichten auswählen oder das Suchfeld verwenden:
 
-   - **Warnungen –** Klicken Sie auf die entsprechenden Links aus der Beschreibung oder details in der Artefaktzeitachse
+   - **Warnungen –** Klicken Sie auf die entsprechenden Links aus der Beschreibung oder den Details in der Zeitachse des Warnungsartikels.
    - **Suchfeld** – Wählen Sie im Dropdownmenü die Option **"Datei"** aus, und geben Sie den Dateinamen ein.
 
    > [!NOTE]
@@ -128,21 +128,21 @@ Sie können ein Rollback ausführen und eine Datei aus der Quarantäne entfernen
 
 2. Geben Sie den folgenden Befehl ein, und drücken Sie die **EINGABETASTE:**
 
-   ```powershell
+   ```console
    “%ProgramFiles%\Windows Defender\MpCmdRun.exe” –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
    ```
 
-> [!NOTE]
-> In einigen Szenarien kann **der ThreatName** folgendermaßen aussehen: EUS:Win32/CustomEnterpriseBlock!cl.
->
-> Defender für Endpunkt stellt alle benutzerdefinierten blockierten Dateien wieder her, die in den letzten 30 Tagen auf diesem Gerät unter Quarantäne gestellt wurden.
+   > [!NOTE]
+   > In einigen Szenarien kann **der ThreatName** folgendermaßen aussehen: EUS:Win32/CustomEnterpriseBlock!cl.
+   >
+   > Defender für Endpunkt stellt alle benutzerdefinierten blockierten Dateien wieder her, die in den letzten 30 Tagen auf diesem Gerät unter Quarantäne gestellt wurden.
 
 > [!IMPORTANT]
 > Eine Datei, die als potenzielle Netzwerkgefährdung unter Quarantäne gestellt wurde, kann möglicherweise nicht wiederhergestellt werden. Wenn ein Benutzer versucht, die Datei nach der Quarantäne wiederherzustellen, kann auf diese Datei möglicherweise nicht zugegriffen werden. Dies kann darauf zurückzuführen sein, dass das System nicht mehr über Netzwerkanmeldeinformationen für den Zugriff auf die Datei verfügt. In der Regel ist dies ein Ergebnis einer temporären Anmeldung bei einem System oder freigegebenen Ordner, und die Zugriffstoken sind abgelaufen.
 
 ## <a name="download-or-collect-file"></a>Datei herunterladen oder sammeln
 
-Wenn Sie **die Datei** aus den Antwortaktionen herunterladen auswählen, können Sie ein lokales, kennwortgeschütztes .zip Archiv herunterladen, das Ihre Datei enthält. Es wird ein Flyout angezeigt, in dem Sie einen Grund für das Herunterladen der Datei aufzeichnen und ein Kennwort festlegen können.
+Wenn Sie die Datei aus den Antwortaktionen **herunterladen** auswählen, können Sie ein lokales, kennwortgeschütztes .zip Archiv herunterladen, das Ihre Datei enthält. Es wird ein Flyout angezeigt, in dem Sie einen Grund für das Herunterladen der Datei aufzeichnen und ein Kennwort festlegen können.
 
 Standardmäßig können Sie keine Dateien herunterladen, die sich in Quarantäne befinden.
 
@@ -164,7 +164,7 @@ Verhindern Sie die weitere Verbreitung eines Angriffs in Ihrer Organisation, ind
 >
 > - Die Antischadsoftware-Clientversion muss 4.18.1901.x oder höher sein.
 > - Dieses Feature soll verhindern, dass verdächtige Schadsoftware (oder potenziell schädliche Dateien) aus dem Web heruntergeladen wird. Derzeit werden portierbare ausführbare Dateien (PE) unterstützt, einschließlich _.exe-_ und _.dlldateien._ Die Abdeckung wird im Laufe der Zeit erweitert.
-> - Diese Antwortaktion ist für Geräte mit Windows 10, Version 1703 oder höher, verfügbar.
+> - Diese Antwortaktion ist für Geräte mit Windows 10 Version 1703 oder höher verfügbar.
 > - Die Funktion "Zulassen" oder "Blockieren" kann für Dateien nicht ausgeführt werden, wenn die Klassifizierung der Datei im Cache des Geräts vor der Zulassungs- oder Blockierungsaktion vorhanden ist.
 
 > [!NOTE]
@@ -185,11 +185,11 @@ Weitere Informationen zum Blockieren und Auslösen von Warnungen für Dateien fi
 
 Um das Blockieren einer Datei zu beenden, entfernen Sie den Indikator. Sie können dies über die Aktion **"Indikator bearbeiten"** auf der Profilseite der Datei tun. Diese Aktion wird an derselben Position wie die Aktion **"Indikator hinzufügen"** angezeigt, bevor Sie den Indikator hinzugefügt haben.
 
-Sie können Indikatoren auch auf der **seite Einstellungen** unter   >  **Regelindikatoren** bearbeiten. Indikatoren werden in diesem Bereich anhand des Hash ihrer Datei aufgelistet.
+Sie können Indikatoren auch auf der **Einstellungen** Seite unter   >  **Regelindikatoren** bearbeiten. Indikatoren werden in diesem Bereich anhand des Hash ihrer Datei aufgelistet.
 
 ## <a name="consult-a-threat-expert"></a>Wenden Sie sich an einen Bedrohungsexperten
 
-Wenden Sie sich an einen Microsoft-Bedrohungsexperten, um weitere Einblicke auf ein potenziell kompromittiertes Gerät oder bereits gefährdete Geräte zu erhalten. Microsoft-Bedrohungsexperten werden direkt aus dem Microsoft Defender Security Center für eine zeitnahe und genaue Antwort eingebunden. Experten bieten Einblicke auf ein potenziell kompromittiertes Gerät und helfen Ihnen, komplexe Bedrohungen und Benachrichtigungen über gezielte Angriffe zu verstehen. Sie können auch Informationen zu warnungen oder einem Kontext für die Bedrohungserkennung bereitstellen, der auf Ihrem Portaldashboard angezeigt wird.
+Wenden Sie sich an einen Microsoft-Bedrohungsexperten, um weitere Einblicke auf ein potenziell kompromittiertes Gerät oder bereits gefährdete Geräte zu erhalten. Microsoft-Bedrohungsexperten werden direkt innerhalb der Microsoft Defender Security Center für eine zeitnahe und genaue Antwort eingebunden. Experten bieten Einblicke auf ein potenziell kompromittiertes Gerät und helfen Ihnen, komplexe Bedrohungen und Benachrichtigungen über gezielte Angriffe zu verstehen. Sie können auch Informationen zu warnungen oder einem Kontext für die Bedrohungserkennung bereitstellen, der auf Ihrem Portaldashboard angezeigt wird.
 
 Weitere Informationen finden [Sie unter "Microsoft Threat Expert".](/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization)
 
@@ -211,7 +211,7 @@ Alle anderen verwandten Details werden ebenfalls angezeigt, z. B. Übermittlungs
 Untersuchungen zur Cybersicherheit werden in der Regel durch eine Warnung ausgelöst. Warnungen beziehen sich auf eine oder mehrere beobachtete Dateien, die häufig neu oder unbekannt sind. Wenn Sie eine Datei auswählen, gelangen Sie zur Dateiansicht, in der Sie die Metadaten der Datei sehen können. Um die Daten im Zusammenhang mit der Datei zu erweitern, können Sie die Datei für eine umfassende Analyse übermitteln.
 
 Das Feature "Umfassende Analyse" führt eine Datei in einer sicheren, vollständig instrumentierten Cloudumgebung aus. Umfassende Analyseergebnisse zeigen die Aktivitäten der Datei, beobachtete Verhaltensweisen und zugehörige Artefakte, z. B. verworfene Dateien, Registrierungsänderungen und Kommunikation mit IP-Adressen.
-Die umfassende Analyse unterstützt derzeit die umfassende Analyse portierbarer ausführbarer Dateien (einschließlich _.exe-_ und _.dlldateien)._
+Die umfassende Analyse unterstützt derzeit die umfassende Analyse portierbarer ausführbarer Dateien (einschließlich _.exe_ und _.dll)._
 
 Die umfassende Analyse einer Datei dauert mehrere Minuten. Sobald die Dateianalyse abgeschlossen ist, wird die Registerkarte "Umfassende Analyse" aktualisiert, um eine Zusammenfassung und das Datum und die Uhrzeit der neuesten verfügbaren Ergebnisse anzuzeigen.
 
@@ -234,15 +234,13 @@ Sie können auch ein Beispiel über das [Microsoft Security Center-Portal](https
 > [!NOTE]
 > Aufgrund von Back-End-Verarbeitungsflüssen im Microsoft Security Center-Portal kann es zwischen der Dateiübermittlung und der Verfügbarkeit des umfassenden Analysefeatures in Defender für Endpunkt eine Latenz von bis zu 10 Minuten geben.
 
-Wenn das Beispiel erfasst wird, führt Defender für Endpunkt die Datei in einer sicheren Umgebung aus. Anschließend wird ein detaillierter Bericht über beobachtete Verhaltensweisen und zugehörige Artefakte erstellt, z. B. Dateien, die auf Geräten abgelegt wurden, Kommunikation mit IP-Adressen und Registrierungsänderungen.
-
 ### <a name="submit-files-for-deep-analysis"></a>Übermitteln von Dateien für eine umfassende Analyse
 
 1. Wählen Sie die Datei aus, die Sie für eine umfassende Analyse übermitteln möchten. Sie können eine Datei aus einer der folgenden Ansichten auswählen oder durchsuchen:
 
-    - Warnungen – Wählen Sie die Dateilinks aus der **Beschreibung** oder **Details** in der Artefaktzeitachse aus.
+    - **Warnungen** – Wählen Sie die Dateilinks aus der **Beschreibung** oder **Details** in der Zeitachse des Warnungsartikels aus.
     - **Geräteliste** – Wählen Sie die Dateilinks aus dem Abschnitt **"Beschreibung"** oder **"Details"** im Abschnitt **"Gerät in Organisation"** aus.
-    - Suchfeld – Wählen Sie im Dropdownmenü die Option **"Datei"** aus, und geben Sie den Dateinamen ein.
+    - **Suchfeld** – Wählen Sie im Dropdownmenü die Option **"Datei"** aus, und geben Sie den Dateinamen ein.
 
 2. Wählen Sie auf der Registerkarte **"Umfassende Analyse"** der Dateiansicht **"Absenden"** aus.
 
@@ -251,7 +249,7 @@ Wenn das Beispiel erfasst wird, führt Defender für Endpunkt die Datei in einer
    > [!NOTE]
    > Es werden nur PE-Dateien unterstützt, einschließlich _.exe-_ und _.dlldateien._
 
-Eine Statusanzeige wird angezeigt und enthält Informationen zu den verschiedenen Phasen der Analyse. Sie können den Bericht dann anzeigen, wenn die Analyse abgeschlossen ist.
+   Eine Statusanzeige wird angezeigt und enthält Informationen zu den verschiedenen Phasen der Analyse. Sie können den Bericht dann anzeigen, wenn die Analyse abgeschlossen ist.
 
 > [!NOTE]
 > Je nach Geräteverfügbarkeit kann die Dauer der Beispielsammlung variieren. Es gibt ein 3-Stunden-Timeout für die Beispielsammlung. Die Auflistung schlägt fehl, und der Vorgang wird abgebrochen, wenn zu diesem Zeitpunkt keine Online-Windows 10 Geräteberichterstellung vorhanden ist. Sie können Dateien zur umfassenden Analyse erneut übermitteln, um neue Daten zu der Datei zu erhalten.
@@ -277,11 +275,14 @@ Die bereitgestellten Details können Ihnen dabei helfen, zu untersuchen, ob Es H
 Wenn beim Versuch, eine Datei zu übermitteln, ein Problem auftritt, führen Sie jeden der folgenden Schritte zur Problembehandlung aus.
 
 1. Stellen Sie sicher, dass es sich bei der betreffenden Datei um eine PE-Datei handelt. PE-Dateien verfügen in der Regel _über.exe_ oder _.dll_ Erweiterungen (ausführbare Programme oder Anwendungen).
+
 2. Stellen Sie sicher, dass der Dienst Zugriff auf die Datei hat, dass er noch vorhanden ist und nicht beschädigt oder geändert wurde.
+
 3. Warten Sie kurz, und versuchen Sie erneut, die Datei zu übermitteln. Die Warteschleife ist möglicherweise voll, oder es ist ein temporärer Verbindungs- oder Kommunikationsfehler aufgetreten.
+
 4. Wenn die Beispielsammlungsrichtlinie nicht konfiguriert ist, ist das Standardverhalten das Zulassen der Beispielsammlung. Wenn sie konfiguriert ist, überprüfen Sie, ob die Richtlinieneinstellung die Beispielsammlung zulässt, bevor Sie die Datei erneut übermitteln. Wenn die Beispielsammlung konfiguriert ist, überprüfen Sie den folgenden Registrierungswert:
 
-    ```powershell
+    ```console
     Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection
     Name: AllowSampleCollection
     Type: DWORD
@@ -291,6 +292,7 @@ Wenn beim Versuch, eine Datei zu übermitteln, ein Problem auftritt, führen Sie
     ```
 
 1. Ändern Sie die Organisationseinheit über die Gruppenrichtlinie. Weitere Informationen finden Sie unter ["Konfigurieren mit Gruppenrichtlinie".](configure-endpoints-gp.md)
+
 1. Wenn das Problem durch diese Schritte nicht behoben wird, wenden Sie sich an [winatp@microsoft.com](mailto:winatp@microsoft.com).
 
 ## <a name="related-topics"></a>Verwandte Themen

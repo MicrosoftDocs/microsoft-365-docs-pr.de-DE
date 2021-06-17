@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 8275da91-7a48-4591-94ab-3123a3f79530
 description: Erfahren Sie, wie Sie das Standarddesign für den oberen Rand der Navigationsleiste in Microsoft 365 ändern und an Ihr Firmenlogo oder Ihre Farbe anpassen.
-ms.openlocfilehash: 130fda016961433342969c90e309e7d8b6a7051f
-ms.sourcegitcommit: 3e197d1ff7d8100faeaf1f5a33f1ad4ed2f72e99
+ms.openlocfilehash: 908a815346485066b7208d0ff791db813540485f
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52908161"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998800"
 ---
 # <a name="customize-the-microsoft-365-theme-for-your-organization"></a>Passen Sie das Microsoft 365-Design für Ihr Unternehmen an
 
@@ -74,7 +74,7 @@ Sie können bis zu vier zusätzliche Gruppendesigns erstellen.
 
 2. Unter **"Gruppen"** können Sie bis zu 5 Microsoft 365 Gruppen auswählen, die Ihr Gruppendesign anzeigen können, anstatt das Standarddesign zu verwenden. Sie können auch verhindern, dass Benutzer ihr Design überschreiben und den Anzeigenamen des Benutzers anzeigen.
 
-3. Wählen Sie **Speichern** aus.
+3. Klicken Sie auf **Speichern**.
 
 :::image type="content" source="../../media/default-theme-general-users.png" alt-text="Screenshot: Registerkarte &quot;Allgemein&quot; mit dem Standarddesign für eine Gruppe von Benutzern in Ihrer Organisation":::
 
@@ -82,16 +82,13 @@ Sie können bis zu vier zusätzliche Gruppendesigns erstellen.
 
 Auf **der** Logos-Seite können Sie Ihre Logos hinzufügen und die URL angeben, zu der Benutzer navigieren, wenn sie das Logo auswählen.
 
-- **Standardlogo:** Fügen Sie einen URL-Speicherort hinzu, der auf Ihr Logo zeigt. Stellen Sie sicher, dass die URL HTTPS verwendet. Wenn Sie ein Logo hochladen, stellen Sie sicher, dass es kleiner als 10 KB ist. Ihr Standardlogo kann im JPG-, PNG-, GIF- oder SVG-Format vorliegen. Bei SVG-Bildern werden sie so angepasst, dass sie vertikal auf 24 Pixel passen. JPG-, PNG- und GIF-Bilder werden auf 200 x 48 Pixel skaliert.
+- **Standardlogo:** Fügen Sie einen URL-Speicherort hinzu, der auf Ihr Logo zeigt. Stellen Sie sicher, dass die URL HTTPS verwendet. Fügen Sie eine HTTPS-Bild-URL hinzu, die anonymen Zugriff zulässt und keine Authentifizierung erfordert. Für das Standarddesign haben Sie auch die Möglichkeit, ein Logobild hochzuladen, das kleiner als 10 KB ist. Ihr Standardlogo kann im JPG-, PNG-, GIF- oder SVG-Format vorliegen. Bei SVG-Bildern werden sie so angepasst, dass sie vertikal auf 24 Pixel passen. JPG-, PNG- und GIF-Bilder werden auf 200 x 48 Pixel skaliert. Das Seitenverhältnis des Logos bleibt immer erhalten.
 - **Alternatives Logo:** Fügen Sie eine URL-Position hinzu, die auf Ihr Logo zeigt. Ihr alternatives Logo sollte für die Verwendung in Office dunklen Designs optimiert werden. Die gleichen Anforderungen wie das Standardlogo.
 - **On-Click-Link:** Fügen Sie einen URL-Speicherort hinzu, der auf Ihr Logo zeigt. Sie können Ihr Logo als Link zu einer beliebigen Unternehmensressource verwenden, z. B. zur Website Ihres Unternehmens.
 
 Wählen Sie **Speichern** aus, um Ihre Änderungen zu speichern.
 
 Sie können Ihre Logos jederzeit entfernen. Kehren Sie einfach zur **Logos-Seite** zurück, und wählen Sie **"Entfernen" aus.**
-
-> [!NOTE]
-> Standardmäßig wird zuerst die Logoauswahl angezeigt, die von den meisten Organisationen verwendet wird. Die Uploadoption gilt nur für Standarddesigns und nicht für Gruppendesigns.
   
 ## <a name="colors-choose-theme-colors"></a>Farben: Designfarben auswählen
 
@@ -119,12 +116,12 @@ Nur globale Administratoren können Unternehmensdesigns anpassen.Globale Leser h
 
 Es können bis zu fünf Designs erstellt werden. Ein Standarddesign und vier Gruppendesigns.  
 
-### <a name="can-i-use-security-groups-or-distribution-groups-instead-of-microsoft-365-groups"></a>Kann ich Sicherheitsgruppen oder Verteilergruppen anstelle von Microsoft 365 Gruppen verwenden?
+### <a name="can-i-use-security-groups-or-distribution-groups-instead-of-microsoft-365-groups"></a>Kann ich Sicherheits- oder Verteilergruppen anstelle von Microsoft 365-Gruppen verwenden?
 
-Nein, neue Gruppendesigns müssen einer oder mehreren Microsoft 365-Gruppen und nicht Sicherheitsgruppen oder Verteilergruppen zugeordnet werden.
+Nein, neue Gruppendesigns müssen einer oder mehreren Microsoft 365 Gruppen und nicht Sicherheitsgruppen oder Verteilergruppen zugeordnet werden.
 
 > [!NOTE]
-> Sie können [Verteilergruppen](../manage/upgrade-distribution-lists.md) in Outlook in Microsoft 365 Gruppen konvertieren.
+> Sie können [Verteilergruppen](../manage/upgrade-distribution-lists.md) in Microsoft 365 Gruppen in Outlook konvertieren.
 
 ### <a name="can-imanually-assign-a-theme-independent-ofmicrosoft-365-groups"></a>Kann ich ein Design unabhängig von Microsoft 365 Gruppen manuell zuweisen?  
 
@@ -140,7 +137,7 @@ Das Standarddesign kann nur gelöscht werden, nachdem alle Gruppendesigns gelös
 
 ### <a name="why-am-i-receiving-an-error-message-every-time-i-uploadalogo-url"></a>Warum erhalte ich bei jedem Hochladen einer Logo-URL eine Fehlermeldung.  
 
-Stellen Sie sicher, dass das von Ihnen verwendete Logo als öffentlich adressierbare URL angegeben ist. Führen Sie die folgenden Schritte aus, um Logos in Azure Blob Storage oder die [Office 365 Content Delivery Network mit SharePoint Online](../../enterprise/use-microsoft-365-cdn-with-spo.md) [hochzuladen.](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet)
+Stellen Sie sicher, dass das von Ihnen verwendete Logo als öffentlich adressierbare URL angegeben ist. Führen Sie die folgenden Schritte aus, um Logos in Azure Blob Storage oder die [Office 365 Netzwerk für die Inhaltsübermittlung mit SharePoint Online](../../enterprise/use-microsoft-365-cdn-with-spo.md) [hochzuladen.](/azure/storage/blobs/storage-upload-process-images?tabs=dotnet)
 
 ### <a name="why-am-i-receiving-themessagedoesnt-meet-minimum-color-contrast-ratio-of-451"></a>Warum erhalte ich die Meldung "Entspricht nicht dem minimalen Farbkontrastverhältnis von 4,5:1"?
 

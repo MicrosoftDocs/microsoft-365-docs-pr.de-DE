@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6063d29562be40aed3060e241b52b1a2936aa36d
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 826b2ff25363f1d9a6276e1a42a10c1cf4995904
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770205"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998812"
 ---
 # <a name="get-file-statistics-api"></a>Api zum Abrufen von Dateistatistiken
 
@@ -31,7 +31,7 @@ ms.locfileid: "52770205"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "52770205"
 Ruft die Statistiken für die angegebene Datei ab.
 
 
-## <a name="limitations"></a>Begrenzungen
+## <a name="limitations"></a>Einschränkungen
 1. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
 
@@ -51,7 +51,7 @@ Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Wei
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |   File.Read.All | "Dateiprofile lesen"
+Application |   File.Read.All | "Dateiprofile lesen"
 Delegiert (Geschäfts-, Schul- oder Unikonto) | File.Read.All | "Dateiprofile lesen"
 
 >[!Note]
@@ -67,7 +67,7 @@ GET /api/files/{id}/stats
 
 Name | Typ | Beschreibung
 :---|:---|:---
-Authorization | String | Bearer {token}. **Erforderlich**.
+Authorization | Zeichenfolge | Bearer {token}. **Erforderlich**.
 
 ## <a name="request-uri-parameters"></a>Anforderungs-URI-Parameter
 
@@ -101,10 +101,10 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgFileStats",
     "sha1": "0991a395da64e1c5fbe8732ed11e6be064081d9f",
-    "orgPrevalence": "14850",
+    "organizationPrevalence": 14850,
     "orgFirstSeen": "2019-12-07T13:44:16Z",
     "orgLastSeen": "2020-01-06T13:39:36Z",
-    "globalPrevalence": "705012",
+    "globallyPrevalence": 705012,
     "globalFirstObserved": "2015-03-19T12:20:07.3432441Z",
     "globalLastObserved": "2020-01-06T13:39:36Z",
     "topFileNames": [

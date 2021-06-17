@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: d2edc5d429d124412134b466753b65506d2dd7a9
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: 50b05b98ba507e120bbd6a3dc09f4633dac3a005
+ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772185"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52998776"
 ---
 # <a name="get-domain-statistics-api"></a>Api zum Abrufen von Domänenstatistiken
 
@@ -31,7 +31,7 @@ ms.locfileid: "52772185"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 [!include[Microsoft Defender for Endpoint API URIs for US Government](../../includes/microsoft-defender-api-usgov.md)]
 
@@ -42,7 +42,7 @@ ms.locfileid: "52772185"
 Ruft die Statistiken für die angegebene Domäne ab.
 
 
-## <a name="limitations"></a>Begrenzungen
+## <a name="limitations"></a>Einschränkungen
 1. Die Rateneinschränkungen für diese API liegen bei 100 Aufrufen pro Minute und 1500 Aufrufen pro Stunde.
 
 
@@ -51,7 +51,7 @@ Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Wei
 
 Berechtigungstyp |   Berechtigung  |   Anzeigename der Berechtigung
 :---|:---|:---
-Anwendung |   Url. Read.All |  "Lese-URLs"
+Application |   Url. Read.All |  "Lese-URLs"
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Url. Read.All | "Lese-URLs"
 
 >[!Note]
@@ -101,7 +101,7 @@ Nachfolgend sehen Sie ein Beispiel der Antwort.
 {
     "@odata.context": "https://api.securitycenter.microsoft.com/api/$metadata#microsoft.windowsDefenderATP.api.InOrgDomainStats",
     "host": "example.com",
-    "orgPrevalence": "4070",
+    "organizationPrevalence": 4070,
     "orgFirstSeen": "2017-07-30T13:23:48Z",
     "orgLastSeen": "2017-08-29T13:09:05Z"
 }
