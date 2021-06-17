@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3a65fb6d5d3e5c6e68e100aa3ea2b4cf896dc281
-ms.sourcegitcommit: b09aee96a1e2266b33ba81dfe497f24c5300bb56
+ms.openlocfilehash: 4f2e16acf474d6da8867a6bd392f9e90e0cf166e
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "52789370"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984844"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exportieren der Softwareinventarisierungsbewertung pro Gerät
 
@@ -32,10 +32,8 @@ ms.locfileid: "52789370"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-[!include[Prerelease information](../../includes/prerelease.md)]
->
 >
 Es gibt verschiedene API-Aufrufe, um unterschiedliche Arten von Daten abzurufen. Da die Datenmenge groß sein kann, gibt es zwei Möglichkeiten, sie abzurufen:
 
@@ -71,7 +69,7 @@ Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Wei
 
 Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 ---|---|---
-Anwendung | Software.Read.All | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
+Application | Software.Read.All | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Software.Read | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
 
 ### <a name="13-url"></a>1.3 URL
@@ -98,20 +96,20 @@ GET /api/machines/SoftwareInventoryByMachine
 
 Eigenschaft (ID) | Datentyp | Beschreibung | Beispiel für einen zurückgegebenen Wert
 :---|:---|:---|:---
-Deviceid | Zeichenfolge | Eindeutiger Bezeichner für das Gerät im Dienst. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName | Zeichenfolge | Vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des Geräts. | johnlaptop.europe.contoso.com
+Deviceid | string | Eindeutiger Bezeichner für das Gerät im Dienst. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName | string | Vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des Geräts. | johnlaptop.europe.contoso.com
 DiskPaths | Array[string]  | Datenträgernachweis, dass das Produkt auf dem Gerät installiert ist. | [ "C: \\ Program Files (x86) \\ Microsoft \\ Silverlight Application \\ \\silverlight.exe" ]
-EndOfSupportDate | Zeichenfolge | Das Datum, an dem die Unterstützung für diese Software endet oder endet. | 2020-12-30
-EndOfSupportStatus | Zeichenfolge | Ende des Supportstatus. Kann diese möglichen Werte enthalten: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software. | Bevorstehende EOS
+EndOfSupportDate | string | Das Datum, an dem die Unterstützung für diese Software endet oder endet. | 2020-12-30
+EndOfSupportStatus | string | Ende des Supportstatus. Kann diese möglichen Werte enthalten: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software. | Bevorstehende EOS
 Id | string | Eindeutiger Bezeichner für den Datensatz. | 123ABG55_573AG&mnp!
 NumberOfWeaknesses | int | Anzahl der Schwachstellen dieser Software auf diesem Gerät | 3
-OSPlatform | Zeichenfolge | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. Ausführliche Informationen finden Sie unter tvm-unterstützte Betriebssysteme und Plattformen. | Windows 10
-RbacGroupName | Zeichenfolge | Die Rollenbasierte Zugriffssteuerungsgruppe (RBAC). Wenn dieses Gerät keiner RBAC-Gruppe zugewiesen ist, lautet der Wert "Nicht zugewiesen". Wenn die Organisation keine RBAC-Gruppen enthält, lautet der Wert "None". | Server
+OSPlatform | string | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. Ausführliche Informationen finden Sie unter tvm-unterstützte Betriebssysteme und Plattformen. | Windows 10
+RbacGroupName | string | Die Rollenbasierte Zugriffssteuerungsgruppe (RBAC). Wenn dieses Gerät keiner RBAC-Gruppe zugewiesen ist, lautet der Wert "Nicht zugewiesen". Wenn die Organisation keine RBAC-Gruppen enthält, lautet der Wert "None". | Server
 RegistryPaths | Array[string] | Registrierungsnachweis, dass das Produkt auf dem Gerät installiert ist. | [ "HKEY_LOCAL_MACHINE \\ SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion Uninstall Microsoft \\ \\ Silverlight" ]
-SoftwareFirstSeenTimestamp | Zeichenfolge | Diese Software wurde zum ersten Mal auf dem Gerät angezeigt. | 2019-04-07 02:06:47
-SoftwareName | Zeichenfolge | Name des Softwareprodukts. | Silverlight
-SoftwareVendor | Zeichenfolge | Name des Softwareanbieters. | Microsoft
-SoftwareVersion | Zeichenfolge | Versionsnummer des Softwareprodukts. | 81.0.4044.138
+SoftwareFirstSeenTimestamp | string | Diese Software wurde zum ersten Mal auf dem Gerät angezeigt. | 2019-04-07 02:06:47
+SoftwareName | string | Name des Softwareprodukts. | Silverlight
+SoftwareVendor | string | Name des Softwareanbieters. | Microsoft
+SoftwareVersion | string | Versionsnummer des Softwareprodukts. | 81.0.4044.138
 
 ### <a name="16-examples"></a>1.6 Beispiele
 
@@ -231,7 +229,7 @@ Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Wei
 
 Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 ---|---|---
-Anwendung | Software.Read.All | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
+Application | Software.Read.All | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Software.Read | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
 
 ### <a name="23-url"></a>2.3 URL
@@ -257,7 +255,7 @@ GET /api/machines/SoftwareInventoryExport
 Eigenschaft (ID) | Datentyp | Beschreibung | Beispiel für einen zurückgegebenen Wert
 :---|:---|:---|:---
 Exportieren von Dateien | \[Arrayzeichenfolge\] | Eine Liste der Download-URLs für Dateien, die die aktuelle Momentaufnahme der Organisation enthalten | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
-GeneratedTime | Zeichenfolge | Die Zeit, zu der der Export generiert wurde. | 2021-05-20T08:00:00Z ]
+GeneratedTime | string | Die Zeit, zu der der Export generiert wurde. | 2021-05-20T08:00:00Z ]
 
 ### <a name="26-examples"></a>2.6 Beispiele
 
@@ -291,6 +289,6 @@ GET https://api.securitycenter.microsoft.com/api/machines/SoftwareInventoryExpor
 
 Andere verwandte
 
-- [Risikobasierte Bedrohungs-& Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
+- [Risikobasierte bedrohungsbasierte & Sicherheitsrisikomanagement](next-gen-threat-and-vuln-mgt.md)
 
 - [Sicherheitsrisiken in Ihrer Organisation](tvm-weaknesses.md)

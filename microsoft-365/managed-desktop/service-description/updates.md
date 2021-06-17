@@ -11,12 +11,12 @@ manager: laurawi
 ms.topic: article
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 6d93bf492f7cfea5a1ff863205085d853c4bbadb
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 5d78f695785cd81b51e20b90cdefbb3790cf6197
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52925431"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984736"
 ---
 # <a name="how-updates-are-handled-in-microsoft-managed-desktop"></a>Umgang mit Updates in Microsoft Managed Desktop
 
@@ -25,30 +25,28 @@ ms.locfileid: "52925431"
 
 <!--Update management -->
 
-Microsoft Managed Desktop verbindet alle Geräte mit einer modernen cloudbasierten Infrastruktur. Die Aktualisierung von Windows, Office, Treibern, Firmware und Microsoft Store für Unternehmen Anwendungen ist ein Gleichgewicht aus Geschwindigkeit und Stabilität. Bereitstellungsgruppen werden verwendet, um sicherzustellen, dass Betriebssystemupdates und -richtlinien auf sichere Weise bereitgestellt werden. Weitere Informationen finden Sie im Video [Microsoft Managed Desktop Änderungs- und Veröffentlichungsprozess.](https://www.microsoft.com/videoplayer/embed/RE4mWqP)
+Microsoft Managed Desktop verbindet alle Geräte mit einer modernen cloudbasierten Infrastruktur. Die Aktualisierung von Windows, Office, Treibern, Firmware und Microsoft Store für Unternehmen Anwendungen ist ein Gleichgewicht aus Geschwindigkeit und Stabilität. Wir verwenden Updategruppen, um sicherzustellen, dass Betriebssystemupdates und -richtlinien auf sichere Weise bereitgestellt werden. Weitere Informationen finden Sie im Video [Microsoft Managed Desktop Änderungs- und Veröffentlichungsprozess.](https://www.microsoft.com/videoplayer/embed/RE4mWqP) 
 
 Von Microsoft veröffentlichte Updates sind kumulativ und werden als Qualitäts- oder Funktionsupdates kategorisiert.
 Weitere Informationen finden Sie unter [Windows Update for Business: Updatetypen.](/windows/deployment/update/waas-manage-updates-wufb#update-types) 
 
 ## <a name="update-groups"></a>Gruppen aktualisieren
 
+
 Microsoft Managed Desktop verwendet vier Azure AD-Gruppen zum Verwalten von Updates:
 
-- **Test:** Wird verwendet, um Microsoft Managed Desktop Richtlinienänderungen, Betriebssystemupdates, Funktionsupdates und andere Änderungen zu überprüfen, die an den Mandanten übertragen werden. Es sollten keine Benutzer in der Testgruppe platziert werden. Die Testgruppe ist von allen vereinbarungen zum Servicelevel und vom Benutzersupport ausgenommen. Diese Gruppe kann verwendet werden, um die Kompatibilität von Anwendungen mit neuen Richtlinien oder Betriebssystemänderungen zu überprüfen.  
+- **Test:** Wird verwendet, um Microsoft Managed Desktop Richtlinienänderungen, Betriebssystemupdates, Funktionsupdates und andere Änderungen zu überprüfen, die an die Azure AD-Organisation ("Mandant") übertragen wurden. Am besten für Tests oder Benutzer, die frühzeitigEs Feedback geben können. Die Testgruppe ist von allen vereinbarungen zum Servicelevel und vom Benutzersupport ausgenommen. Diese Gruppe kann verwendet werden, um die Kompatibilität von Anwendungen mit neuen Richtlinien oder Betriebssystemänderungen zu überprüfen.  
 - **Erstens:** Enthält early software adopters and devices that could be subject to pre-release updates. Für Geräte in dieser Gruppe können Ausfälle auftreten, wenn es Szenarien gibt, die während der Tests im Testring nicht behandelt wurden.
 - **Schnell:** Priorisiert Geschwindigkeit gegenüber Stabilität. Nützlich zum Erkennen von Qualitätsproblemen, bevor sie der Gruppe "Allgemein" angeboten werden. Diese Gruppe dient als nächste Überprüfungsebene, ist aber in der Regel stabiler als die Gruppen "Test" und "First". 
-- **Allgemein:** Letzte Gruppe, für die Funktions- und Qualitätsupdates verfügbar sind. Diese Gruppe enthält die meisten Benutzer im Mandanten und bevorzugt daher Stabilität gegenüber der Geschwindigkeit bei der Bereitstellung. Das Testen von Apps sollte hier erfolgen, da die Umgebung am stabilsten ist. 
+- **Allgemein:** Letzte Gruppe, für die Funktions- und Qualitätsupdates verfügbar sind. Diese Gruppe enthält die meisten Benutzer in der Azure AD-Organisation und bevorzugt daher Stabilität gegenüber der Geschwindigkeit bei der Bereitstellung. Das Testen von Apps sollte hier erfolgen, da die Umgebung am stabilsten ist.
 
 ### <a name="moving-devices-between-update-groups"></a>Verschieben von Geräten zwischen Updategruppen
-Möglicherweise möchten Sie, dass einige Geräte zuletzt Updates erhalten, und andere Geräte, die Sie zuerst verwenden möchten. Um diese Geräte in die entsprechende Updategruppe zu verschieben, [senden Sie eine Administrator-Supportanfrage,](../working-with-managed-desktop/admin-support.md) und wir verschieben die Geräte für Sie. 
-
-> [!NOTE]
-> Wenn Sie einen Benutzer in eine andere Updategruppe verschieben müssen, senden Sie eine Supportanfrage. Verschieben Sie Geräte nicht selbst zwischen Updategruppen. Es gibt schwerwiegende Folgen, wenn ein Gerät falsch verschoben wird. Das Gerät könnte unerwartet aktualisiert werden, und Richtlinien können in Konflikt geraten und die Gerätekonfiguration ändern.
+Möglicherweise möchten Sie, dass einige Geräte zuletzt Updates erhalten, und andere Geräte, die Sie zuerst verwenden möchten. Informationen zum Verschieben dieser Geräte in die entsprechende Updategruppe finden Sie unter [Zuweisen von Geräten zu einer Bereitstellungsgruppe.](../working-with-managed-desktop/assign-deployment-group.md)
 
 Weitere Informationen zu Rollen und Zuständigkeiten innerhalb dieser Bereitstellungsgruppen finden Sie unter [Microsoft Managed Desktop Rollen und Zuständigkeiten](../intro/roles-and-responsibilities.md)
 
 ### <a name="using-microsoft-managed-desktop-update-groups"></a>Verwenden von Microsoft Managed Desktop Aktualisieren von Gruppen 
-Es gibt Teile des Diensts, die Sie verwalten, z. B. die App-Bereitstellung, in denen es erforderlich sein kann, alle verwalteten Geräte als Ziel zu verwenden. In diesen Fällen ist es sinnvoll, Aktualisierungsgruppen zu verwenden, um diese Benutzer mit dem Verständnis zu erreichen, dass Sie die Mitgliedschaft dieser Gruppen nicht hinzufügen, entfernen oder ändern können. 
+Es gibt Teile des Diensts, die Sie verwalten, z. B. die App-Bereitstellung, in denen es erforderlich sein kann, alle verwalteten Geräte als Ziel zu verwenden.
 
 ## <a name="how-update-deployment-works"></a>Funktionsweise der Updatebereitstellung:
 1. Microsoft Managed Desktop stellt ein neues Feature oder Qualitätsupdate gemäß dem in der folgenden Tabelle angegebenen Zeitplan bereit.
@@ -56,11 +54,9 @@ Es gibt Teile des Diensts, die Sie verwalten, z. B. die App-Bereitstellung, in d
     - Beispiel: Wenn beim Bereitstellen eines Qualitätsupdates für die erste Gruppe ein Problem erkannt wird, werden alle Bereitstellungen auf "First", "Fast" und "Broad" aktualisiert, bis das Problem behoben ist.
     - Sie können Kompatibilitätsprobleme melden, indem Sie ein Ticket im Microsoft Managed Desktop Admin-Portal einreichen.
     - Funktions- und Qualitätsupdates werden unabhängig voneinander angehalten. Die Unterbrechung ist standardmäßig 35 Tage gültig, kann jedoch je nachdem, ob das Problem behoben wird, reduziert oder verlängert werden.
-3. Sobald die Gruppen angehalten wurden, wird die Bereitstellung gemäß dem Zeitplan in der Tabelle fortgesetzt.
+3. Sobald die Gruppen nicht mehr angehalten wurden, wird die Bereitstellung gemäß dem Zeitplan in der Tabelle fortgesetzt.
 
 Dieser Bereitstellungsprozess gilt sowohl für Funktions- als auch für Qualitätsupdates, die Zeitachse variiert jedoch für jeden.
-
-
 
 
 <table>
@@ -88,4 +84,4 @@ Alle Geräte, die mit Windows Insider-Builds gefunden wurden, werden möglicherw
 
 ## <a name="bandwidth-management"></a>Bandbreitenverwaltung
 
-Wir verwenden [die Übermittlungsoptimierung](/windows/deployment/update/waas-delivery-optimization) für alle Betriebssystem- und Treiberupdates. Dadurch wird die Downloadgröße des Windows Updatediensts minimiert, indem Updates von Peers innerhalb des Unternehmensnetzwerks gesucht werden.
+Wir verwenden [die Übermittlungsoptimierung](/windows/deployment/update/waas-delivery-optimization) für alle Betriebssystem- und Treiberupdates. Die Übermittlungsoptimierung minimiert die Downloadgröße des Windows Updatediensts, indem Updates von Peers innerhalb des Unternehmensnetzwerks gesucht werden.

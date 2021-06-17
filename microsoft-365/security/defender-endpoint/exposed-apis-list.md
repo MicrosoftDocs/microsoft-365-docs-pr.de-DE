@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 61c7c8022ed89a4d10e5737e2dcdf92a4375bedd
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: d0efd97359440ffb3d4b39b6389b477203c56084
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52770409"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985000"
 ---
 # <a name="supported-microsoft-defender-for-endpoint-apis"></a>Unterstütze Microsoft Defender für Endpoint-APIs
 
@@ -30,7 +30,7 @@ ms.locfileid: "52770409"
 
 **Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 ## <a name="endpoint-uri-and-versioning"></a>Endpunkt-URI und Versionsverwaltung
 
@@ -62,7 +62,7 @@ Thema | Beschreibung
 :---|:---
 [Erweiterte Suche](run-advanced-query-api.md) | Führen Sie Abfragen aus der API aus.
 [Warnungsmethoden und Eigenschaften](alerts.md) | Führen Sie API-Aufrufe aus, z. \- B. Warnungen abrufen, Warnung erstellen, Warnung aktualisieren und vieles mehr.
-[Exportieren von Bewertungsmethoden und Eigenschaften pro Gerät](get-assessmnt-1methods-properties.md) | Führen Sie API-Aufrufe aus, z. B. die Bewertung der sicheren Konfiguration exportieren, die Bewertung des \- Softwarebestands exportieren und die Bewertung von Software-Sicherheitsrisiken exportieren.
+[Exportieren von Bewertungsmethoden und Eigenschaften pro Gerät](get-assessment-methods-properties.md) | Führen Sie API-Aufrufe aus, um Sicherheitsrisikobewertungen pro Gerät zu erfassen, z. B.: Exportieren der Bewertung der sicheren Konfiguration, Exportieren der Bewertung des \- Softwareinventars, Exportieren der Bewertung von Software-Sicherheitsrisiken und Bewertung von Software-Sicherheitsrisiken im Delta-Export.
 [Automatisierte Untersuchungsmethoden und -eigenschaften](investigation.md) | Führen Sie API-Aufrufe aus, \- z. B. abrufen einer Sammlung von Untersuchungen.
 [Domänenbezogene Benachrichtigungen erhalten](get-domain-related-alerts.md) | Führen Sie API-Aufrufe aus, z. \- B. abrufen von domänenbezogenen Geräten, Domänenstatistiken und mehr.
 [Dateimethoden und -eigenschaften](files.md) | Führen Sie API-Aufrufe aus, z. B. das Abrufen von \- Dateiinformationen, dateibezogenen Warnungen, dateibezogenen Geräten und Dateistatistiken.

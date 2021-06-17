@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 04c485db5f250dfc852faeeaeae669956b95a8c4
-ms.sourcegitcommit: ac3e9ccb7b43a42e600af8f44e6f30019533faeb
+ms.openlocfilehash: 44761199eea1cf2649a15b6a36ccc08eda99c570
+ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/15/2021
-ms.locfileid: "52932866"
+ms.locfileid: "52950059"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -268,7 +268,7 @@ Mithilfe der folgenden Tabelle können Sie anhand der Funktionen feststellen, ob
 
 **Fußnote:**
 
-<sup>\*</sup> Bei Aufbewahrungsbezeichnungen, die den Inhalt nicht als Datensatz oder gesetzlichen Datensatz kennzeichnen, beschränken sich die Überwachungsereignisse darauf, wenn auf ein Element in SharePoint eine Bezeichnung angewendet, geändert oder von diesem entfernt wird. Überwachungsdetails für Aufbewahrungsbezeichnungen finden Sie im Abschnitt [Aufbewahrungsaktionen für Überwachungsprotokolle](#auditing-retention-actions) auf dieser Seite.
+<sup>\*</sup> Bei Aufbewahrungsbezeichnungen, die den Inhalt nicht als Datensatz oder gesetzlichen Datensatz kennzeichnen, beschränken sich die Überwachungsereignisse darauf, wenn auf ein Element in SharePoint oder OneDrive eine Bezeichnung angewendet, geändert oder von diesem entfernt wird. Überwachungsdetails für Aufbewahrungsbezeichnungen finden Sie im Abschnitt [Aufbewahrungsaktionen für Überwachungsprotokolle](#auditing-retention-actions) auf dieser Seite.
 
 ### <a name="combining-retention-policies-and-retention-labels"></a>Kombinieren von Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -395,7 +395,7 @@ Die vollständige Liste der Überwachungsereignisse finden Sie unter [Aktivität
 
 Aufbewahrungsaktionen, die als Überwachungsereignisse protokolliert werden, sind nur für Aufbewahrungsbezeichnungen und nicht für Aufbewahrungsrichtlinien verfügbar:
 
-- Wenn eine Aufbewahrungsbezeichnung auf einem Element in SharePoint angewendet oder verändert oder von diesem entfernt wird:
+- Wenn eine Aufbewahrungsbezeichnung auf ein Element in SharePoint oder OneDrive angewendet oder verändert oder von diesem entfernt wird:
     - Wählen Sie unter **Datei- und Seitenaktivitäten** die Option **Aufbewahrungsbezeichnung für eine Datei geändert** aus. 
 
 - Wenn ein bezeichnetes Element in SharePoint als ein Datensatz markiert wird, und es von einem Benutzer entsperrt oder gesperrt wird:
@@ -404,7 +404,7 @@ Aufbewahrungsaktionen, die als Überwachungsereignisse protokolliert werden, sin
 - Wenn eine Aufbewahrungsbezeichnung, die Inhalte als Datensatz oder gesetzlichen Datensatz kennzeichnet, auf ein Element in Exchange angewendet wird:
     - Wählen Sie aus den **Exchange-Postfachaktivitäten** die Option **Nachricht als ein Datensatz bezeichnet** aus
 
-- Wenn ein bezeichnetes Element in SharePoint oder Exchange als Datensatz oder gesetzlicher Datensatz markiert ist, und es dauerhaft entfernt wird:
+- Wenn ein bezeichnetes Element in SharePoint, OneDrive oder Exchange als Datensatz oder gesetzlicher Datensatz markiert ist, und es dauerhaft entfernt wird:
     - Wählen Sie unter **Datei- und Seitenaktivitäten** die Option **Gelöschte Datei als Datensatz markiert** aus
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>PowerShell-Cmdlets für Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen

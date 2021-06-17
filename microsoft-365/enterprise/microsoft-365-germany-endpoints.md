@@ -22,20 +22,20 @@ description: In diesem Artikel finden Sie Endpunkte, die für Kunden mit Office 
 hideEdit: true
 ms.openlocfilehash: 27d7b3c895cb3a8cae148262ce3962f03fb417aa
 ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/14/2021
 ms.locfileid: "52925806"
 ---
 # <a name="office-365-germany-endpoints"></a>Endpunkte für Office 365 Deutschland
 
- *Gültig für Office 365 Admin*
+ *Gültig für Office 365 Admin*
 
 Office 365 setzt eine Internetverbindung voraus. Die folgenden Endpunkte sollten nur für Kunden mit **Office 365 Deutschland**-Plänen erreichbar sein.
 
 > [!NOTE]
 > Für Kunden, die sich im Übergang zur neuen Microsoft 365 Rechenzentrumsregion in Deutschland befinden, ändern sich die Endpunkte.
-> Weiter Informationen finden Sie in [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md).
+> Weiter Informationen finden Sie in [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md).
   
  **Office 365-Endpunkte:** [Weltweit (einschließlich GCC)](urls-and-ip-address-ranges.md)  | [Office 365, betrieben von 21Vianet](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 Deutschland* | [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   
@@ -43,11 +43,11 @@ Office 365 setzt eine Internetverbindung voraus. Die folgenden Endpunkte sollten
 
 **Download:** alle erforderlichen und optionalen Ziele in einer Liste im [JSON-Format](https://endpoints.office.com/endpoints/Germany?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).
 
-Beginnen Sie mit [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md), um unsere Empfehlungen zum Verwalten der Netzwerkverbindungen anhand dieser Daten zu verstehen. Endpunktdaten werden bei Bedarf zu Beginn jedes Monats 30 Tage vor ihrer Aktivierung mit neuen IP-Adressen und URLs aktualisiert und veröffentlicht. Auf diese Weise können Kunden, die noch nicht über automatisierte Updates verfügen, Ihre Prozesse abschließen, bevor eine neue Verbindung erforderlich ist. Endpunktdaten werden unter Umständen auch bei Bedarf aktualisiert, um Support-Probleme, Sicherheitsvorfälle oder andere sofortige betriebliche Erfordernisse zu adressieren. Sie können jederzeit auf das [Änderungsprotokoll-Abonnement](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7) zurückgreifen.
+Beginnen Sie mit [Verwalten von Office 365-Endpunkten](managing-office-365-endpoints.md), um unsere Empfehlungen für die Verwaltung der Netzwerkverbindung mit diesen Daten zu verstehen. Endpunktdaten werden zu Beginn jedes Monats nach Bedarf aktualisiert, wobei neue IP-Adressen und URLs 30 Tage vor der Aktivierung veröffentlicht werden. Dadurch können Kunden, die noch nicht über automatisierte Updates verfügen, ihre Prozesse abschließen, bevor neue Verbindungen erforderlich sind. Endpunkte können auch während des Monats aktualisiert werden, wenn dies erforderlich ist, um Supporteskalationen, Sicherheitsvorfälle oder andere sofortige betriebliche Anforderungen zu erfüllen. Sie können jederzeit auf das [Änderungsprotokollabonnement](https://endpoints.office.com/version/Germany?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)verweisen.
 
 Die auf dieser Seite unten angezeigten Daten werden alle aus den REST-basierten Webdiensten generiert. Wenn Sie für den Zugriff auf diese Daten ein Skript oder ein Netzwerkgerät verwenden, sollten Sie direkt zum [Webdienst](microsoft-365-ip-web-service.md) wechseln.
 
-Die nachstehenden Endpunktdaten zeigen die Voraussetzungen für die Verbindung vom Computer eines Benutzers zu Office 365 auf. Sie umfassen keine Netzwerkverbindungen von Microsoft mit einem Kundennetzwerk, manchmal auch als hybride oder eingehende Netzwerkverbindungen bezeichnet.
+In den Endpunktdaten unten sind Anforderungen für die Verbindung zwischen dem Computer eines Benutzers und Office 365 aufgelistet. Sie umfassen keine Netzwerkverbindungen von Microsoft mit einem Kundennetzwerk, manchmal auch als hybride oder eingehende Netzwerkverbindungen bezeichnet.
 
 Die Endpunkte sind in vier Dienstbereichen zusammengefasst. Die ersten drei Dienstbereiche können zu Konnektivitätszwecken unabhängig voneinander ausgewählt werden. Beim vierten Dienstbereich besteht eine gemeinsame Abhängigkeit (als Microsoft 365 Common und Office bezeichnet); er muss immer über Netzwerkkonnektivität verfügen.
 

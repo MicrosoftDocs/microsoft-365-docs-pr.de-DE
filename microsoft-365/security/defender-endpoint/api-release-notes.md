@@ -16,18 +16,18 @@ ms.collection: M365-security-compliance
 ms.topic: article
 MS.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4843894638ccf119c0cadcf003e159e793c18368
-ms.sourcegitcommit: 4fb1226d5875bf5b9b29252596855a6562cea9ae
+ms.openlocfilehash: a0191a52c64b32b314d4b2f2f36c85b060226ad6
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "52843734"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984652"
 ---
 # <a name="microsoft-defender-for-endpoint-api-release-notes"></a>Versionshinweise zur Microsoft Defender für Endpunkt-API
 
 **Gilt für:** [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 
-- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+- Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Die folgenden Informationen enthalten die Aktualisierungen, die an den Microsoft Defender für Endpunkt-APIs vorgenommen wurden, und das Datum, an dem sie vorgenommen wurden.
 
@@ -39,6 +39,10 @@ Die folgenden Informationen enthalten die Aktualisierungen, die an den Microsoft
 > ```
 
 ## <a name="release-notes---newest-to-oldest-ddmmyyyy"></a>Versionshinweise – neueste bis älteste (dd.mm.yyyyy)
+
+### <a name="06102021"></a>06.10.2021
+
+- Neue Exportbewertungs-API-Methode hinzugefügt– _OData_ [-Exportbewertungsmethoden und -eigenschaften pro Gerät](get-assessment-methods-properties.md).
 
 ### <a name="05252021"></a>05.25.2021
 

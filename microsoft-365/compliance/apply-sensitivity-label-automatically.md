@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: ad095db005421a58806d2775d4958cf3be5f474e
-ms.sourcegitcommit: 2cf7293d610a676726ac891b89366e23810d9142
+ms.openlocfilehash: 4215e6618c1cc6359755c2af1e7b9e93ca07b58d
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52866739"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984808"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -74,7 +74,7 @@ Es gibt zwei unterschiedliche Methoden für die automatische Anwendung einer Ver
     - Wenn Sie über Exchange-Mailflussregeln oder DLP-Richtlinien (Verhinderung von Datenverlust) verfügen, welche die IRM-Verschlüsselung anwenden: Wenn Inhalte durch diese Regeln oder Richtlinien und eine Richtlinie zum automatischen Bezeichnen identifiziert werden, wird die Bezeichnung angewendet. Wenn diese Bezeichnung Verschlüsselung anwendet, werden die IRM-Einstellungen aus den Exchange-E-Mail-Flussregeln oder DLP-Richtlinien ignoriert. Wenn diese Bezeichnung jedoch keine Verschlüsselung anwendet, werden die IRM-Einstellungen aus den E-Mail-Flussregeln oder DLP-Richtlinien zusätzlich zu der Bezeichnung angewendet.
     - E-Mails, die eine IRM-Verschlüsselung ohne Bezeichnung haben, werden durch eine Bezeichnung mit beliebigen Verschlüsselungseinstellungen ersetzt, wenn eine Übereinstimmung durch die Verwendung automatischer Bezeichnung vorliegt.
     - Eingehende E-Mails werden bezeichnet, wenn eine Übereinstimmung mit den Bedingungen für automatische Bezeichnungen vorliegt:
-        - Wenn die Bezeichnung für die [Verschlüsselung](encryption-sensitivity-labels.md) konfiguriert ist, wird diese Verschlüsselung angewendet. Diese Konfiguration wird derzeit jedoch nicht unterstützt.
+        - Rollout: Wenn die Bezeichnung für die [Verschlüsselung](encryption-sensitivity-labels.md)konfiguriert ist, wird diese Verschlüsselung nicht angewendet.
         - Wenn die Bezeichnung so konfiguriert ist, dass sie [dynamische Markierungen](sensitivity-labels-office-apps.md#dynamic-markings-with-variables)anwendet, beachten Sie, dass sich dadurch Namen von Personen außerhalb Ihrer Organisation ergeben können.
     - Wenn über die Bezeichnung Verschlüsselung angewendet wird, ist der [Rights Management-Aussteller und -Besitzer](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) jene Person, die diese E-Mail versendet. Derzeit gibt es keine Möglichkeit, einen Besitzer der Rechteverwaltung für alle eingehenden E-Mail-Nachrichten, die automatisch verschlüsselt werden, festzulegen.
     

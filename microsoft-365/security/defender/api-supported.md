@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: c10b2863503a5bda829cbf67379a606b687ac2e3
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: acd8ec28fb1d78e3724cb0ca0ebee48133e7310f
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730942"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985084"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>Unterstützte Microsoft 365 Defender-APIs 
 
@@ -41,26 +41,26 @@ ms.locfileid: "52730942"
 
 Artikel | Beschreibung
 -|-
-[Erweiterte Suche-API](api-advanced-hunting.md) | Führen Sie Erweiterte Suchabfragen aus.
-[Vorfall-APIs](api-incident.md) | Auflisten und Aktualisieren von Vorfällen sowie andere praktische Aufgaben.
-[Streaming-API](../defender-endpoint/raw-data-export.md) (Vorschau) | Senden von Echtzeitereignissen und -warnungen, die in einem einzelnen Datenstrom auftreten.
+[Erweiterte Bedrohungssuche-API](api-advanced-hunting.md) | Führen Sie Abfragen für die erweiterte Suche aus.
+[Vorfall-APIs](api-incident.md) | Auflisten und Aktualisieren von Vorfällen zusammen mit anderen praktischen Aufgaben.
+[Streaming-API](streaming-api.md) (Vorschau) | Versenden Sie Echtzeitereignisse und -warnungen, sobald sie in einem einzelnen Datenstrom auftreten.
 
 ### <a name="endpoint-uris"></a>Endpunkt-URIs
 
-Der Basis-URI für beide Haupt-APIs ist: https://api.security.microsoft.com . Verwenden Sie für eine bessere Leistung einen Server, der näher an Ihrer Geolocation ist:
+Der Basis-URI für beide Haupt-APIs lautet: https://api.security.microsoft.com . Um eine bessere Leistung zu erzielen, verwenden Sie einen Server, der sich näher an Ihrem Geolocation befindet:
 
-- Usa: api-us.security.microsoft.com
+- Vereinigte Staaten: api-us.security.microsoft.com
 - Europa: api-eu.security.microsoft.com
 - Vereinigtes Königreich: api-uk.security.microsoft.com
 
-Token können durch Zugriff auf erworben https://api.security.microsoft.com werden.
+Token können durch Zugriff auf abgerufen https://api.security.microsoft.com werden.
 
-Alle APIs entlang des `/api` Pfads verwenden das [OData-Protokoll,](/odata/overview) z. B. https://api.security.microsoft.com/api/incidents .
+Alle APIs entlang des `/api` Pfads verwenden das [OData-Protokoll,](/odata/overview) z. https://api.security.microsoft.com/api/incidents B. .
 
 ## <a name="related-articles"></a>Verwandte Artikel
 
-- [Microsoft 365 Übersicht über Defender-APIs](api-overview.md)
+- [Microsoft 365 Defender ÜBERSICHT ÜBER APIs](api-overview.md)
 - [Zugreifen auf die Microsoft 365 Defender-APIs](api-access.md)
-- [Streaming-API](../defender-endpoint/raw-data-export.md)
-- [Informationen zu API-Beschränkungen und -Lizenzierung](api-terms.md)
-- [Verstehen von Fehlercodes](api-error-codes.md)
+- [Streaming- API](../defender-endpoint/raw-data-export.md)
+- [Informationen zu API-Grenzwerten und Lizenzierung](api-terms.md)
+- [Grundlegendes zu Fehlercodes](api-error-codes.md)

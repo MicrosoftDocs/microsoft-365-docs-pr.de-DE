@@ -14,26 +14,25 @@ ms.author: deniseb
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 5d3cd7893af4c91807782c269231a280b413733e
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: a5fa8e46de0a6561d3377ce77e38bd59aa97f3c4
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861219"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984724"
 ---
 # <a name="evaluate-attack-surface-reduction-rules"></a>Auswerten der Regeln zur Verringerung der Angriffsfläche
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
->Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
+>Möchten Sie Microsoft Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
 
-Regeln zur Verringerung der Angriffsfläche tragen dazu bei, Aktionen zu verhindern, die in der Regel von Schadsoftware verwendet werden, um Geräte oder Netzwerke zu kompromittieren. Regeln zur Verringerung der Angriffsfläche helfen dabei, viele der gängigen Einstiegspunkte zu schließen, die von Schadsoftware und Ransomware verwendet werden. 
+Regeln zur Verringerung der Angriffsfläche tragen dazu bei, Aktionen zu verhindern, die in der Regel von Schadsoftware verwendet werden, um Geräte oder Netzwerke zu kompromittieren. Regeln zur Verringerung der Angriffsfläche helfen dabei, viele der gängigen Einstiegspunkte zu schließen, die von Schadsoftware und Ransomware verwendet werden.
 
 Legen Sie Regeln zur Verringerung der Angriffsfläche für Geräte fest, auf denen eine der folgenden Editionen und Versionen von Windows ausgeführt wird:
 
@@ -45,7 +44,7 @@ Legen Sie Regeln zur Verringerung der Angriffsfläche für Geräte fest, auf den
 > [!WARNING]
 > Das Aktivieren von Regeln zur Verringerung des Angriffsdiensts auf Windows Server 2016 kann zu unerwarteten Ergebnissen führen und sich auf die Serverleistung auswirken. Es wird nicht empfohlen, Regeln zur Verringerung der Angriffsfläche auf nicht unterstützten Plattformen zu aktivieren oder bereitzustellen.
 
-Erfahren Sie, wie Sie Regeln zur Verringerung der Angriffsfläche auswerten, indem Sie den Überwachungsmodus aktivieren, um das Feature direkt in Ihrer Organisation zu testen.
+Erfahren Sie, wie Sie Regeln zur Verringerung der Angriffsfläche auswerten, indem [Sie den Überwachungsmodus aktivieren,](audit-windows-defender.md) um das Feature direkt in Ihrer Organisation zu testen.
 
 > [!TIP]
 > Sie können auch die Microsoft Defender für Endpunkt-Demoszenario-Website unter [demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) besuchen, um zu bestätigen, dass das Feature funktioniert und wie es funktioniert.
@@ -91,6 +90,6 @@ Informationen zum Konfigurieren des Features mit Verwaltungstools, einschließli
 
 ## <a name="see-also"></a>Siehe auch
 
-* [Reduzieren von Angriffsflächen mit Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md)
-* [Verwenden des Überwachungsmodus zum Auswerten Windows Defender](audit-windows-defender.md)
-* [Häufig gestellte Fragen zur Verringerung der Angriffsfläche](attack-surface-reduction.md)
+- [Reduzieren von Angriffsflächen mit Regeln zur Verringerung der Angriffsfläche](attack-surface-reduction.md)
+- [Verwenden des Überwachungsmodus zum Auswerten Windows Defender](audit-windows-defender.md)
+- [Häufig gestellte Fragen zur Verringerung der Angriffsfläche](attack-surface-reduction.md)

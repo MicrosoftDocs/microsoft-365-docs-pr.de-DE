@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zur Funktionsweise einer Aufbewahrungsrichtlinien für Exchange.
-ms.openlocfilehash: efb95b22355bff292ef63c77fb77fb5a15d66722
-ms.sourcegitcommit: 3e971b31435d17ceeaa9871c01e88e25ead560fb
+ms.openlocfilehash: 29a07ca9c819939c32f9ec13205a821a45e03883
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52861131"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985432"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Informationen zu Aufbewahrungsrichtlinien für Exchange
 
@@ -34,7 +34,7 @@ Die Informationen in diesem Artikel ergänzen den Beitrag [Informationen zu Aufb
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Lieferumfang für Aufbewahrung und Löschung
 
-Die folgenden Exchange-Elemente können mithilfe von Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen beibehalten oder gelöscht werden: E-Mail-Nachrichten (einschließlich Entwürfe) mit sämtlichen Anlagen, Aufgaben mit einem Enddatum, sowie Notizen. 
+Die folgenden Exchange-Elemente aus Benutzerpostfächern und freigegebenen Postfächern können mithilfe von Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen aufbewahrt und gelöscht werden: E-Mail-Nachrichten (einschließlich empfangener Nachrichten, Entwürfe, gesendeter Nachrichten) mit allen Anlagen, Aufgaben, wenn sie ein Enddatum haben, und Notizen. 
 
 Kalenderelemente mit einem Enddatum werden in Aufbewahrungsrichtlinien unterstützt, aber nicht in Aufbewahrungsbezeichnungen.
 

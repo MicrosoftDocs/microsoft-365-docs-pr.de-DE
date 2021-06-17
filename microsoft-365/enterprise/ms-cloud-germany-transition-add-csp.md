@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Zusammenfassung: Zusätzliche, für die Migration aus der Microsoft Cloud Deutschland relevante Informationen für Cloudlösungsanbieter.'
-ms.openlocfilehash: 7a7c377d8e0b72a0179ff28a93018f88d22a5325
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
-ms.translationtype: HT
+ms.openlocfilehash: 843552c55acba57c5c2da4a1a885d65cb4e59d84
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52931049"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984916"
 ---
 # <a name="additional-information-for-cloud-solution-providers"></a>Zusätzliche Informationen für Cloudlösungsanbieter
 
@@ -37,6 +37,6 @@ CSP-Kundenmandanten werden in die neue deutsche Rechenzentrumsregion migriert un
 
 ## <a name="missing-subscriptions-in-azure"></a>Fehlende Abonnements in Azure
 
-Nachdem die [Abonnement- und Lizenzumstellung (Phase 3)](ms-cloud-germany-transition-phases.md#phase-9--10-azure-ad-finalization) abgeschlossen ist, haben Cloudlösungsanbieter keinen Zugriff mehr auf die Azure-Abonnements.
+Nachdem die [Abonnement- und Lizenzumstellung (Phase 3)](ms-cloud-germany-transition-phases.md#phase-3-subscription-transfer) abgeschlossen ist, haben Cloudlösungsanbieter keinen Zugriff mehr auf die Azure-Abonnements.
 
 Um den Zugriff wiederherzustellen, führen Sie diese Schritte aus, um [den Zugriff auf die Verwaltung aller Azure-Abonnements und Verwaltungsgruppen zu erhöhen](/azure/role-based-access-control/elevate-access-global-admin).

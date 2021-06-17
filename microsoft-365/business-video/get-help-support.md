@@ -8,7 +8,7 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - Adm_O365
 ms.custom:
@@ -18,17 +18,17 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Sie müssen administrator für ein Geschäftsabonnement sein, um Administratorhilfe oder Online- oder Telefonsupport in Microsoft 365 Business Premium.
-ms.openlocfilehash: e1250d5c291832e5a337f34e49ce0b7cf68fb08d
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
-ms.translationtype: MT
+description: Sie müssen Administrator für ein Business-Abonnement sein, um Administratorhilfe oder Online- oder Telefonsupport in Microsoft 365 Business Premium zu erhalten.
+ms.openlocfilehash: 254e01894f430bdf6a8f666d1425af8705968647
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635902"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984748"
 ---
 # <a name="get-support"></a>Anfordern von Support
 
-## <a name="watch-get-help-or-support"></a>Watch: Hilfe oder Support erhalten 
+## <a name="watch-get-help-or-support"></a>Ansehen: Anfordern von Hilfe oder Support 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOgo?autoplay=false]
 
@@ -258,6 +258,6 @@ Sie können auch die [Communityforen von Microsoft 365 for Business](https://go.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
-[Suchen von Dokumenten und Schulungen](find-help-answers.md) (Artikel)\
-[Mitarbeiter-Schnelleinrichtung](employee-quick-setup.md) (Artikel)\
-[Übersicht über Microsoft 365 Business Premium Setup](setup-overview.md) (Video)
+[Dokumente und Schulung suchen](find-help-answers.md) (Artikel)\
+[Mitarbeiter – Express-Setup](employee-quick-setup.md) (Artikel)\
+[Überblick über Microsoft 365 Business Premium](setup-overview.md) (video)

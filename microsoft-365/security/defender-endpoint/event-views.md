@@ -14,18 +14,19 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ff82819f4e168fc57b649411fbe5e9136b0e36f4
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: f8de3d8b2d7c07f8d783ecbe85b7e4a9c612aae5
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52769317"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52985459"
 ---
 # <a name="view-attack-surface-reduction-events"></a>Anzeigen der Ereignisse zur Verringerung der Angriffsfläche
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Gilt für:**
+
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -38,7 +39,7 @@ Das Überprüfen von Ereignissen ist praktisch, wenn Sie die Features auswerten.
 
 In diesem Artikel werden alle Ereignisse, die zugehörigen Features oder Einstellungen aufgelistet und beschrieben, wie Sie benutzerdefinierte Ansichten erstellen, um nach bestimmten Ereignissen zu filtern.
 
-Erhalten Sie detaillierte Berichte zu Ereignissen und Blöcken als Teil Windows-Sicherheit, wenn Sie über ein E5-Abonnement verfügen und [Microsoft Defender für Endpunkt](microsoft-defender-endpoint.md)verwenden.
+Erhalten Sie detaillierte Berichte zu Ereignissen, Blöcken und Warnungen als Teil Windows-Sicherheit, wenn Sie über ein E5-Abonnement verfügen und [Microsoft Defender für Endpunkt](microsoft-defender-endpoint.md)verwenden.
 
 ## <a name="use-custom-views-to-review-attack-surface-reduction-capabilities"></a>Verwenden von benutzerdefinierten Ansichten zum Überprüfen der Attack Surface Reduction-Funktionen
 
@@ -48,17 +49,18 @@ Sie können auch manuell zum Ereignisbereich navigieren, der dem Feature entspri
 
 ### <a name="import-an-existing-xml-custom-view"></a>Importieren einer vorhandenen benutzerdefinierten XML-Ansicht
 
-1. Erstellen Sie eine leere .txt datei, und kopieren Sie den XML-Code für die benutzerdefinierte Ansicht, die Sie verwenden möchten, in die datei .txt. Führen Sie dies für jede benutzerdefinierte Ansicht aus, die Sie verwenden möchten. Benennen Sie die Dateien wie folgt um (stellen Sie sicher, dass Sie den Typ von .txt in .xml ändern):
-    - Ereignisse für den kontrollierten Ordnerzugriff in der *benutzerdefinierten* Ansicht:cfa-events.xml
+1. Erstellen Sie eine leere .txt Datei, und kopieren Sie den XML-Code für die benutzerdefinierte Ansicht, die Sie verwenden möchten, in die .txt Datei. Führen Sie dies für jede benutzerdefinierte Ansicht aus, die Sie verwenden möchten. Benennen Sie die Dateien wie folgt um (stellen Sie sicher, dass Sie den Typ von .txt in .xml ändern):
+    - Ereignisse für den kontrollierten Ordnerzugriff in der benutzerdefinierten Ansicht: *cfa-events.xml*
     - Benutzerdefinierte Ansicht für Exploit-Schutz-Ereignisse: *ep-events.xml*
     - Benutzerdefinierte Ansicht für Attack Surface Reduction-Ereignisse: *asr-events.xml*
     - Benutzerdefinierte Ansicht für Netzwerk-/Schutzereignisse: *np-events.xml*
 
-2. Geben Sie die **Ereignisanzeige** im Startmenü ein, und öffnen **Sie die Ereignisanzeige.**
+2. Geben Sie die **Ereignisanzeige** in die Menü "Start" ein, und öffnen **Sie die Ereignisanzeige.**
 
 3. Auswählen der benutzerdefinierten Ansicht zum Importieren von   >  **Aktionen...**
 
-    ![Animation, die die benutzerdefinierte Ansicht importieren auf der linken Seite des Fensters "Gerade Anzeige" hervorhebt](/windows/security/threat-protection/images/events-import)
+  > [!div class="mx-imgBorder"]
+  > ![Animation, die die benutzerdefinierte Ansicht importieren auf der linken Seite des Fensters "Gerade Anzeige" hervorhebt](images/events-import.gif)
 
 4. Navigieren Sie zu der extrahierten XML-Datei für die gewünschte benutzerdefinierte Ansicht, und wählen Sie sie aus.
 
@@ -68,19 +70,18 @@ Sie können auch manuell zum Ereignisbereich navigieren, der dem Feature entspri
 
 ### <a name="copy-the-xml-directly"></a>Xml direkt kopieren
 
-1. Geben Sie die **Ereignisanzeige** im Startmenü ein, und öffnen Sie die Windows **Ereignisanzeige.**
+1. Geben Sie die **Ereignisanzeige** in die Menü "Start" ein, und öffnen Sie die Windows **Ereignisanzeige.**
 
 2. Wählen Sie im linken Bereich unter **"Aktionen"** die Option **"Benutzerdefinierte Ansicht erstellen" aus...**
 
-    ![Animation, die die Option "Benutzerdefinierte Ansicht erstellen" im Fenster "Ereignisanzeige" hervorhebt](/windows/security/threat-protection/images/events-create)
+  > [!div class="mx-imgBorder"]
+  > ![Animation, die die Option "Benutzerdefinierte Ansicht erstellen" im Fenster "Ereignisanzeige" hervorhebt](images/events-create.gif)
 
-3. Wechseln Sie zur XML-Registerkarte, und wählen Sie **Abfrage manuell bearbeiten** aus. Es wird eine Warnung angezeigt, dass Sie die Abfrage nicht mithilfe der Registerkarte **"Filter"** bearbeiten können, wenn Sie die XML-Option verwenden. Wählen Sie **Ja**.
+3. Wechseln Sie zur XML-Registerkarte, und wählen Sie **Abfrage manuell bearbeiten** aus. Es wird eine Warnung angezeigt, dass Sie die Abfrage nicht mithilfe der Registerkarte **"Filter"** bearbeiten können, wenn Sie die XML-Option verwenden. Wählen Sie **Ja** aus.
 
 4. Fügen Sie den XML-Code für das Feature, aus dem Sie Ereignisse filtern möchten, in den XML-Abschnitt ein.
 
-5. Wählen Sie **OK** aus. Geben Sie einen Namen für den Filter an.
-
-6. Es wird eine benutzerdefinierte Ansicht erstellt, die filtert, um nur die Ereignisse im Zusammenhang mit diesem Feature anzuzeigen.
+5. Wählen Sie **OK** aus. Geben Sie einen Namen für den Filter an. Dadurch wird eine benutzerdefinierte Ansicht erstellt, die filtert, um nur die Ereignisse im Zusammenhang mit diesem Feature anzuzeigen.
 
 ### <a name="xml-for-attack-surface-reduction-rule-events"></a>XML für Regelereignisse zur Verringerung der Angriffsfläche
 
@@ -142,39 +143,39 @@ Alle Ereignisse zur Verringerung der Angriffsfläche befinden sich unter **Anwen
 Sie können auf diese Ereignisse in Windows Ereignisanzeige zugreifen:
 
 1. Öffnen **Sie** das Startmenü, geben Sie **die Ereignisanzeige** ein, und wählen Sie dann das Ergebnis der **Ereignisanzeige** aus.
-2. Erweitern Sie **die Anwendungs- und Dienstprotokolle > Microsoft > Windows,** und wechseln Sie dann zu dem Ordner, der in der folgenden Tabelle unter **"Anbieter/Quelle"** aufgeführt ist.
+2. Erweitern Sie **die Anwendungs- und Dienstprotokolle > Microsoft > Windows,** und wechseln Sie dann zu dem Ordner, der in der tabelle unten unter **"Anbieter/Quelle"** aufgeführt ist.
 3. Doppelklicken Sie auf das Unterelement, um Ereignisse anzuzeigen. Scrollen Sie durch die Ereignisse, um das gesuchte Ereignis zu finden.
 
-   ![Animation mithilfe der Ereignisanzeige](/windows/security/threat-protection/images/event-viewer)
+   ![Animation mithilfe der Ereignisanzeige](images/event-viewer.gif)
 
 Feature | Anbieter/Quelle | Ereignis-ID | Beschreibung
 :-|:-|:-:|:-
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 1 | ACG-Überwachung
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 2 | ACG-Erzwingung
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 3 | Überwachung untergeordneter Prozesse nicht zulassen
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 4  | Blockieren untergeordneter Prozesse nicht zulassen
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 5  | Blockieren der Überwachung von Images mit niedriger Integrität
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 6  | Blockierung von Bildern mit niedriger Integrität
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 7  | Remoteimageüberwachung blockieren
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 8  | Blockieren von Remoteimages blockieren
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 9  | Deaktivieren der Überwachung von Win32k-Systemaufrufen
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 10 | Deaktivieren der Blockierung von win32k-Systemaufrufen
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 11 | Codeintegritätsüberwachung
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 12  | Codeintegritätsschutzblock
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 13 | EAF-Überwachung
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 14  | EAF-Erzwingung
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 15 | EAF+-Überwachung
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 16  | EAF+ erzwingen
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 17  | IAF-Überwachung
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 18  | IAF-Erzwingung
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 19 | ROP StackPivot-Überwachung
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 20 | Erzwingen von ROP StackPivot
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) |  21 | ROP CallerCheck-Überwachung
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 22 | Erzwingen von ROP CallerCheck
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 23 | ROP SimExec-Überwachung
-Exploit-Schutz. | Security-Mitigations (Kernelmodus/Benutzermodus) | 24 | ROP SimExec erzwingen
-Exploit-Schutz. | WER-Diagnostics | 5  | CFG-Block
-Exploit-Schutz. | Win32K (Betriebsbereit) | 260 | Nicht vertrauenswürdige Schriftart
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 1 | ACG-Überwachung
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 2 | ACG-Erzwingung
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 3 | Überwachung untergeordneter Prozesse nicht zulassen
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 4  | Blockieren untergeordneter Prozesse nicht zulassen
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 5  | Blockieren der Überwachung von Images mit niedriger Integrität
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 6  | Blockierung von Bildern mit niedriger Integrität
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 7  | Remoteimageüberwachung blockieren
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 8  | Blockieren von Remoteimages blockieren
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 9  | Deaktivieren der Überwachung von Win32k-Systemaufrufen
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 10 | Deaktivieren der Blockierung von win32k-Systemaufrufen
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 11 | Codeintegritätsüberwachung
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 12  | Codeintegritätsschutzblock
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 13 | EAF-Überwachung
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 14  | EAF-Erzwingung
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 15 | EAF+-Überwachung
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 16  | EAF+ erzwingen
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 17  | IAF-Überwachung
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 18  | IAF-Erzwingung
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 19 | ROP StackPivot-Überwachung
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 20 | Erzwingen von ROP StackPivot
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) |  21 | ROP CallerCheck-Überwachung
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 22 | Erzwingen von ROP CallerCheck
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 23 | ROP SimExec-Überwachung
+Exploit-Schutz | Security-Mitigations (Kernelmodus/Benutzermodus) | 24 | ROP SimExec erzwingen
+Exploit-Schutz | WER-Diagnostics | 5  | CFG-Block
+Exploit-Schutz | Win32K (Betriebsbereit) | 260 | Nicht vertrauenswürdige Schriftart
 Netzwerkschutz | Windows Defender (Betriebsbereit) | 5007 | Ereignis, wenn Einstellungen geändert werden
 Netzwerkschutz | Windows Defender (Betriebsbereit) | 1125 | Ereignis, wenn der Netzwerkschutz im Überwachungsmodus ausgelöst wird
 Netzwerkschutz | Windows Defender (Betriebsbereit) | 1126 | Ereignis beim Auslösen des Netzwerkschutzes im Blockierungsmodus

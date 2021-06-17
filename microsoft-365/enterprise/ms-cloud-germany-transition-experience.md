@@ -19,12 +19,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Zusammenfassung: Verstehen, was sich bei der Migration von Microsoft Cloud Germany (Microsoft Cloud Deutschland) zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen verändert hat.'
-ms.openlocfilehash: 74ad9a662d3ea7a68ef1f82961864eb4468f6098
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: e503df16cfdbe0985e635b07cb6b4a45bc55d367
+ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591780"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52930403"
 ---
 # <a name="what-will-change-after-the-migration-to-office-365-services-in-the-new-german-datacenter-regions"></a>Was wird sich nach der Migration zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen ändern
 
@@ -70,11 +70,17 @@ Zu beachtenden Überlegungen:
 
 ## <a name="exchange-online"></a>Exchange Online
 
-- Exchange-Ressource-URLs wechseln vom alten Deutschland-Endpunkt `outlook.office.de` zu den Office 365-Dienstendpunkt `outlook.office365.com` nach der Migration. Ihre Benutzer können auf ihr migriertes Postfach zugreifen, indem sie das alte URL benutzen, bis die Migration abgeschlossen ist. Kunden sollten möglichst bald nach der die Exchange-Migration anfängt Benutzer zu der neuen URL wechseln, um die Einstellung der Deutschland-Umgebung nicht negativ zu beeinflussen. Die URLS der Office 365-Dienste für Outlook-Dienste werden erst nach dem die Exchange-Migration angefangen hat zur Verfügung gestellt.
+- Exchange-Ressource-URLs wechseln vom alten Deutschland-Endpunkt `outlook.office.de` zu den Office 365-Dienstendpunkt `outlook.office365.com` nach der Migration. Ihre Benutzer können auf ihr migriertes Postfach zugreifen, indem sie das alte URL benutzen, bis die Migration abgeschlossen ist. Kunden sollten möglichst bald nach der die Exchange-Migration anfängt Benutzer zu der neuen URL wechseln, um die Einstellung der Deutschland-Umgebung nicht negativ zu beeinflussen. Die URLS der Office 365-Dienste für Outlook-Dienste werden erst nach dem die Exchange-Migration angefangen hat zur Verfügung gestellt.
 
-- Postfächer werden als Back-End-Prozess migriert. Benutzer in Ihrer Organisation befinden sich während des Übergangs entweder in Microsoft Cloud Deutschland oder in der Region Deutschland und sind Teil derselben Exchange-Organisation (in derselben globale Adressliste).
+- Postfächer werden als Backend-Prozess migriert. Benutzer in Ihrer Organisation befinden sich während des Übergangs entweder in Microsoft Cloud Deutschland oder in der Region Deutschland und sind Teil derselben Exchange-Organisation (in derselben globale Adressliste).
 
 - Benutzern der Outlook Web App, die auf den Dienst mittels URL, in der sich ihr Postfach nicht befindet, zugreifen, wird eine zusätzliche Authentifizierungsaufforderung angezeigt. Wenn z. B. das Postfach des Benutzers in den Office 365-Diensten ist und die Outlook Web App-Verbindung des Benutzers den alten Endpunkt `outlook.office.de` verwendet, wird sich der Benutzer erst bei `login.microsoftonline.de` und dann bei `login.microsoftonline.com` authentifizieren. Wenn die Migration abschlossen ist, kann der Benutzer auf die neue URL (`https://outlook.office365.com`) zugreifen, und ihm wird nur die einzige erwartete Anmeldeanforderung angezeigt. 
+
+## <a name="sharepoint-online"></a>SharePoint Online
+
+In SharePoint Online und OneDrive for Business können Sie Elemente über Outlook freigeben. Nach dem Klicken auf die Outlook-Schaltfläche wird ein Link für die Freigabe erstellt und in eine neue Nachricht in Outlook Web App eingefügt.
+
+Die Freigabe von Elementen in SharePoint Online und OneDrive for Business über Outlook funktioniert nach dem Abschluss der Migration von SharePoint Online nicht mehr. Dieses Problem ist bereits bekannt. Da diese Outlook-Funktion allerdings bereits veraltet ist, ist die Behebung des Problems erst geplant, wenn die Unterstützung beendet wurde.
 
 ## <a name="office-services"></a>Office-Dienste
 
@@ -103,7 +109,7 @@ Office 365 Video wird am 1. März 2021 eingestellt, und Office 365 Video wird na
 
 Erste Schritte:
 
-- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
+- [Migration von Microsoft Cloud Deutschland zu Office 365-Diensten in den neuen deutschen Rechenzentrumsregionen](ms-cloud-germany-transition.md)
 - [Hilfe zur Microsoft Cloud Deutschland-Migration Assistance](https://aka.ms/germanymigrateassist)
 - [So können Sie sich für die Migration anmelden](ms-cloud-germany-migration-opt-in.md)
 
@@ -111,7 +117,7 @@ Der Weg durch die Umstellung:
 
 - [Phasen, Aktionen und Auswirkungen der Migration](ms-cloud-germany-transition-phases.md)
 - [Zusätzliche Vorarbeit](ms-cloud-germany-transition-add-pre-work.md)
-- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
+- Zusätzliche Informationen zu [Azure AD](ms-cloud-germany-transition-azure-ad.md), [Geräte](ms-cloud-germany-transition-add-devices.md), [Erfahrungen](ms-cloud-germany-transition-add-experience.md) und [AD FS](ms-cloud-germany-transition-add-adfs.md).
 
 Cloud-Apps:
 

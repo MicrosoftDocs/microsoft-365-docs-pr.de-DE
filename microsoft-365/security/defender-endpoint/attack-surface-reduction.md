@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 58c2230d3a2e3323f7b9a315ca5d2a049f5f44fb
-ms.sourcegitcommit: 33d19853a38dfa4e6ed21b313976643670a14581
+ms.openlocfilehash: 409f6d0bbbcf9f8b50119e35bdb7852c4323bbf9
+ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "52903852"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52984988"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Verwenden von Regeln zur Verringerung der Angriffsfläche, um eine Infektion mit Schadsoftware zu verhindern
 
@@ -37,11 +37,11 @@ Die Angriffsfläche Ihrer Organisation umfasst alle Orte, an denen ein Angreifer
 
 Regeln zur Verringerung der Angriffsfläche zielen auf bestimmte Softwareverhalten ab, z. B.:
 
-- Starten von ausführbaren Dateien und Skripts, die versuchen, Dateien herunterzuladen oder auszuführen;
-- Ausführen verborgener oder anderweitig verdächtiger Skripts; Und
-- Ausführen von Verhaltensweisen, die Apps in der Regel nicht während der normalen täglichen Arbeit initiieren.
+- Starten von ausführbaren Dateien und Skripts, die versuchen, Dateien herunterzuladen oder auszuführen
+- Ausführen verborgener oder anderweitig verdächtiger Skripts
+- Ausführen von Verhaltensweisen, die Apps in der Regel während der normalen täglichen Arbeit nicht initiieren
 
-Solche Softwareverhaltensweisen werden manchmal in legitimen Anwendungen angezeigt. Diese Verhaltensweisen werden jedoch häufig als riskant betrachtet, da sie häufig von Angreifern durch Schadsoftware missbraucht werden. Regeln zur Verringerung der Angriffsfläche können riskante Verhaltensweisen einschränken und dazu beitragen, ihre Organisation zu schützen.
+Solche Softwareverhaltensweisen werden manchmal in legitimen Anwendungen angezeigt. Diese Verhaltensweisen werden jedoch häufig als riskant betrachtet, da sie häufig von Angreifern durch Schadsoftware missbraucht werden. Regeln zur Verringerung der Angriffsfläche können softwarebasierte riskante Verhaltensweisen einschränken und dazu beitragen, ihre Organisation zu schützen.
 
 Weitere Informationen zum Konfigurieren von Regeln zur Verringerung der Angriffsfläche finden Sie unter Aktivieren von [Regeln zur Verringerung der Angriffsfläche.](enable-attack-surface-reduction.md)
 
@@ -55,7 +55,7 @@ Sie können bewerten, wie sich eine Regel zur Verringerung der Angriffsfläche a
 
 ## <a name="audit-mode-for-evaluation"></a>Überwachungsmodus für die Auswertung
 
-Verwenden Sie [den Überwachungsmodus,](audit-windows-defender.md) um zu bewerten, wie sich Regeln zur Verringerung der Angriffsfläche auf Ihre Organisation auswirken würden, wenn sie aktiviert würden. Führen Sie zunächst alle Regeln im Überwachungsmodus aus, damit Sie verstehen können, wie sich diese auf Ihre Branchenanwendungen auswirken. Viele Branchenanwendungen sind mit eingeschränkten Sicherheitsbedenken geschrieben und führen möglicherweise Aufgaben auf ähnliche Weise wie Schadsoftware aus. Durch die Überwachung von Überwachungsdaten und [das Hinzufügen von Ausschlüssen](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) für erforderliche Anwendungen können Sie Regeln zur Verringerung der Angriffsfläche bereitstellen, ohne die Produktivität zu verringern.
+Verwenden Sie [den Überwachungsmodus,](audit-windows-defender.md) um zu bewerten, wie sich Regeln zur Verringerung der Angriffsfläche auf Ihre Organisation auswirken, wenn sie aktiviert sind. Führen Sie zunächst alle Regeln im Überwachungsmodus aus, damit Sie verstehen können, wie sich diese auf Ihre Branchenanwendungen auswirken. Viele Branchenanwendungen sind mit eingeschränkten Sicherheitsbedenken geschrieben und führen möglicherweise Aufgaben auf ähnliche Weise wie Schadsoftware aus. Durch die Überwachung von Überwachungsdaten und [das Hinzufügen von Ausschlüssen](enable-attack-surface-reduction.md#exclude-files-and-folders-from-asr-rules) für erforderliche Anwendungen können Sie Regeln zur Verringerung der Angriffsfläche bereitstellen, ohne die Produktivität zu verringern.
 
 ## <a name="warn-mode-for-users"></a>Warnmodus für Benutzer
 
@@ -70,7 +70,7 @@ Der Warnmodus wird auf Geräten unterstützt, auf denen die folgenden Versionen 
 - [Windows 10, Version 1809](/windows/whats-new/whats-new-windows-10-version-1809) oder höher
 - [Windows Server, Version 1809](/windows-server/get-started/whats-new-in-windows-server-1809) oder höher
 
-Microsoft Defender Antivirus müssen mit Echtzeitschutz im [aktiven Modus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)ausgeführt werden.
+Microsoft Defender Antivirus muss mit Echtzeitschutz im aktiven [Modus](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility#functionality-and-features-available-in-each-state)ausgeführt werden.
 
 Stellen Sie außerdem sicher, dass [Microsoft Defender Antivirus- und Antischadsoftwareupdates](/windows/security/threat-protection/microsoft-defender-antivirus/manage-updates-baselines-microsoft-defender-antivirus#monthly-platform-and-engine-versions) installiert sind.
 
@@ -95,7 +95,7 @@ Wenn eine Regel zur Verringerung der Angriffsfläche ausgelöst wird, wird eine 
 
 Wenn außerdem bestimmte Regeln zur Verringerung der Angriffsfläche ausgelöst werden, werden Warnungen generiert.
 
-Benachrichtigungen und generierte Warnungen können im Microsoft 365 Defender-Portal ( ) angezeigt werden [https://security.microsoft.com](https://security.microsoft.com) (früher [Microsoft Defender Security Center).](microsoft-defender-security-center.md)
+Benachrichtigungen und generierte Warnungen können im Microsoft 365 Defender-Portal ( ) angezeigt werden [https://security.microsoft.com](https://security.microsoft.com) (früher [als Microsoft Defender Security Center](microsoft-defender-security-center.md)bezeichnet).
 
 ## <a name="advanced-hunting-and-attack-surface-reduction-events"></a>Erweiterte Suche und Attack Surface Reduction-Ereignisse
 
@@ -114,9 +114,14 @@ Sie können Regeln zur Verringerung der Angriffsfläche für Geräte festlegen, 
 - Windows Server, [Version 1803 (Halbjährlicher Kanal)](/windows-server/get-started/whats-new-in-windows-server-1803) oder höher
 - [Windows Server 2019](/windows-server/get-started-19/whats-new-19)
 
-Obwohl Regeln zur Verringerung der Angriffsfläche keine [Windows E5-Lizenz](/windows/deployment/deploy-enterprise-licenses)erfordern, erhalten Sie, wenn Sie über Windows E5 verfügen, erweiterte Verwaltungsfunktionen. Zu diesen Funktionen, die nur in Windows E5 verfügbar sind, gehören Überwachung, Analysen und Workflows, die in [Defender für Endpunkt](microsoft-defender-endpoint.md)verfügbar sind, sowie Berichterstellungs- und Konfigurationsfunktionen in Microsoft 365 [Defender.](/microsoft-365/security/defender/overview-security-center) Diese erweiterten Funktionen sind nicht mit einer Windows Professional- oder Windows E3-Lizenz verfügbar. Wenn Sie jedoch über diese Lizenzen verfügen, können Sie die Ereignisanzeige und Microsoft Defender Antivirus Protokolle verwenden, um ihre Regelereignisse zur Verringerung der Angriffsfläche zu überprüfen.
+Obwohl die Regeln zur Verringerung der Angriffsfläche keine [Windows E5-Lizenz](/windows/deployment/deploy-enterprise-licenses)erfordern, erhalten Sie, wenn Sie über Windows E5 verfügen, erweiterte Verwaltungsfunktionen. Die erweiterten Funktionen – nur in Windows E5 verfügbar – umfassen:
 
-## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Überprüfen von Ereignissen zur Verringerung der Angriffsfläche im Microsoft 365 Defender-Portal
+- Überwachung, Analyse und Workflows, die in [Defender für Endpunkt](microsoft-defender-endpoint.md) verfügbar sind
+- Die Berichterstellungs- und Konfigurationsfunktionen in [Microsoft 365 Defender.](/microsoft-365/security/defender/overview-security-center)
+
+Diese erweiterten Funktionen sind mit einer Windows Professional- oder Windows E3-Lizenz nicht verfügbar. Wenn Sie jedoch über diese Lizenzen verfügen, können Sie die Ereignisanzeige und Microsoft Defender Antivirus Protokolle verwenden, um ihre Regelereignisse zur Verringerung der Angriffsfläche zu überprüfen.
+
+## <a name="review-attack-surface-reduction-events-in-the-microsoft-365-defender-portal"></a>Überprüfen von Attack Surface Reduction-Ereignissen im Microsoft 365 Defender Portal
 
 Defender für Endpunkt bietet detaillierte Berichte für Ereignisse und Blöcke im Rahmen von Warnungsuntersuchungsszenarien.
 
@@ -135,7 +140,7 @@ Sie können das Windows Ereignisprotokoll überprüfen, um Ereignisse anzuzeigen
 
 1. Laden Sie das [Evaluierungspaket herunter,](https://aka.ms/mp7z2w) und extrahieren Sie die Datei *cfa-events.xml* an einen leicht zugänglichen Speicherort auf dem Gerät.
 
-2. Geben Sie die Wörter *Ereignisanzeige* in das Startmenü ein, um die Windows Ereignisanzeige zu öffnen.
+2. Geben Sie die Wörter *Ereignisanzeige* in die Menü "Start" ein, um die Windows Ereignisanzeige zu öffnen.
 
 3. Wählen Sie unter **"Aktionen"** die Option **"Benutzerdefinierte Ansicht importieren" aus...**.
 
@@ -181,17 +186,17 @@ Wenn Sie Regeln zur Verringerung der Angriffsfläche mithilfe von Gruppenrichtli
 
 ### <a name="block-abuse-of-exploited-vulnerable-signed-drivers"></a>Blockieren des Missbrauchs von gefährdeten signierten Treibern
 
-Diese Regel verhindert, dass eine Anwendung einen anfälligen, signierten Treiber auf den Datenträger schreibt. Gefährdete signierte Treiber können von lokalen Anwendungen ausgenutzt werden, \- _die über ausreichende Berechtigungen_ für den Zugriff auf den Kernel \- verfügen. Anfällige signierte Treiber ermöglichen Es Angreifern, Sicherheitslösungen zu deaktivieren oder zu umgehen, was letztendlich zu Systemkompromittierungen führt.
+Diese Regel verhindert, dass eine Anwendung einen anfälligen signierten Treiber auf den Datenträger schreibt. Gefährdete signierte Treiber können von lokalen Anwendungen ausgenutzt werden, \- _die über ausreichende Berechtigungen_ für den Zugriff auf den Kernel \- verfügen. Anfällige signierte Treiber ermöglichen Es Angreifern, Sicherheitslösungen zu deaktivieren oder zu umgehen, was letztendlich zu Systemkompromittierungen führt.
 
-Diese Regel verhindert nicht, dass ein bereits auf dem System vorhandener Treiber geladen wird.
+Die Regel zum **Blockieren des Missbrauchs gefährdeter signierter Treiber** verhindert nicht, dass ein bereits auf dem System vorhandener Treiber geladen wird.
 
 >[!NOTE]
 >
-> Diese Regel kann mithilfe von [MEM-OMA-URI](enable-attack-surface-reduction.md#mem) für benutzerdefinierte Mem-OMA-URI-Regeln konfiguriert werden.
+> Sie können diese Regel mithilfe von [MEM-OMA-URI](enable-attack-surface-reduction.md#mem) für benutzerdefinierte Mem-OMA-URI-Regel-Prozedurinformationen konfigurieren.
 >
-> Diese Regel kann auch [mithilfe](enable-attack-surface-reduction.md#powershell)von PowerShell konfiguriert werden.
+> Sie können diese Regel auch mithilfe von [PowerShell](enable-attack-surface-reduction.md#powershell)konfigurieren.
 >
-> Sie können diese Website verwenden, um [einen Treiber für die Analyse zu übermitteln.](https://www.microsoft.com/en-us/wdsi/driversubmission)
+> Um einen Treiber untersuchen zu lassen, verwenden Sie diese Website, um [einen Treiber für die Analyse zu übermitteln.](https://www.microsoft.com/en-us/wdsi/driversubmission)
 
 Diese Regel wird in allen Versionen unterstützt, in denen ASR unterstützt wird. dies ist:
 
@@ -226,7 +231,7 @@ GUID: `7674ba52-37eb-4a4f-a9a1-f0f9a1619a2c`
 
 Diese Regel verhindert, dass Office Apps untergeordnete Prozesse erstellen. Office Apps umfassen Word, Excel, PowerPoint, OneNote und Access.
 
-Das Erstellen bösartiger untergeordneter Prozesse ist eine gängige Schadsoftwarestrategie. Schadsoftware, die Office als Vektor missbraucht, führt häufig VBA-Makros und Exploit-Code aus, um weitere Nutzlasten herunterzuladen und auszuführen. Einige seriöse Branchenanwendungen können jedoch auch untergeordnete Prozesse für unfreundliche Zwecke generieren, z. B. das Auslösen einer Eingabeaufforderung oder die Verwendung von PowerShell zum Konfigurieren von Registrierungseinstellungen.
+Das Erstellen bösartiger untergeordneter Prozesse ist eine gängige Schadsoftwarestrategie. Schadsoftware, die Office als Vektor missbraucht, führt häufig VBA-Makros und Exploit-Code aus, um weitere Nutzlasten herunterzuladen und auszuführen. Einige legitime Branchenanwendungen können jedoch auch untergeordnete Prozesse für unfreundliche Zwecke generieren. z. B. das Auslösen einer Eingabeaufforderung oder die Verwendung von PowerShell zum Konfigurieren von Registrierungseinstellungen.
 
 Diese Regel wurde eingeführt in:
 
@@ -265,10 +270,10 @@ GUID: `9e6c4e1f-7d60-472f-ba1a-a39ef669e4b2`
 
 ### <a name="block-executable-content-from-email-client-and-webmail"></a>Ausführbare Inhalte aus E-Mail-Client und Web-E-Mail blockieren
 
-Diese Regel verhindert, dass die folgenden Dateitypen von E-Mails gestartet werden, die in der Microsoft Outlook-Anwendung oder Outlook.com und anderen beliebten Webmailanbietern geöffnet wurden:
+Diese Regel verhindert, dass die folgenden Dateitypen von E-Mails gestartet werden, die in der Microsoft Outlook-Anwendung oder Outlook.com und anderen beliebten Webmailanbietern geöffnet werden:
 
 - Ausführbare Dateien (z. B. .exe, .dll oder SCR)
-- Skriptdateien (z. B. eine PowerShell-PS-, Visual Basic -VBS- oder JavaScript-.js datei)
+- Skriptdateien (z. B. eine PowerShell-PS-, Visual Basic-VBS- oder JavaScript-.js datei)
 
 Diese Regel wurde eingeführt in:
 
@@ -296,7 +301,7 @@ Diese Regel verhindert, dass die folgenden Dateitypen gestartet werden, es sei d
 
 - Ausführbare Dateien (z. B. .exe, .dll oder SCR)
 
-Das Starten nicht vertrauenswürdiger oder unbekannter ausführbarer Dateien kann riskant sein, da anfangs möglicherweise nicht klar ist, ob die Dateien bösartig sind.
+Das Starten nicht vertrauenswürdiger oder unbekannter ausführbarer Dateien kann riskant sein, da möglicherweise zunächst nicht klar ist, ob die Dateien bösartig sind.
 
 > [!IMPORTANT]
 > Sie müssen den über die [Cloud bereitgestellten Schutz aktivieren,](/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) um diese Regel verwenden zu können.
@@ -377,9 +382,9 @@ GUID: `3B576869-A4EC-4529-8536-B80A7769E899`
 
 ### <a name="block-office-applications-from-injecting-code-into-other-processes"></a>Office-Anwendungen am Einfügen von Code in untergeordnete Prozesse hindern
 
-Diese Regel blockiert Codeinjektionsversuche von Office Apps in andere Prozesse.
+Diese Regel blockiert Codeeinfügungsversuche von Office Apps in andere Prozesse.
 
-Angreifer versuchen möglicherweise, Office-Apps zu verwenden, um bösartigen Code durch Codeeinschleusung in andere Prozesse zu migrieren, damit sich der Code als sauberen Prozess maskieren kann.
+Angreifer versuchen möglicherweise, Office Apps zu verwenden, um bösartigen Code durch Codeeinschleusung in andere Prozesse zu migrieren, damit sich der Code als sauberen Prozess maskieren kann.
 
 Es gibt keine bekannten legitimen Geschäftszwecke für die Verwendung von Codeeinfügung.
 
@@ -400,12 +405,12 @@ GUID: `75668C1F-73B5-4CF0-BB93-3ECF5CB7CC84`
 
 ### <a name="block-office-communication-application-from-creating-child-processes"></a>Office-Kommunikationsanwendung am Erstellen von untergeordneten Prozessen hindern
 
-Diese Regel verhindert, dass Outlook untergeordnete Prozesse erstellen und gleichzeitig legitime Outlook Funktionen zulassen.
+Diese Regel verhindert, dass Outlook untergeordnete Prozesse erstellt und gleichzeitig legitime Outlook-Funktionen zulässt.
 
-Diese Regel schützt vor Social Engineering-Angriffen und verhindert, dass Code Sicherheitslücken in Outlook missbraucht. Es schützt auch vor [Outlook Regeln und Formularen,](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) die Angreifer verwenden können, wenn die Anmeldeinformationen eines Benutzers kompromittiert werden.
+Diese Regel schützt vor Social Engineering-Angriffen und verhindert, dass Code Sicherheitslücken in Outlook missbraucht. Es schützt auch vor [Outlook-Regeln und Formular-Exploits,](https://blogs.technet.microsoft.com/office365security/defending-against-rules-and-forms-injection/) die Angreifer verwenden können, wenn die Anmeldeinformationen eines Benutzers kompromittiert werden.
 
 > [!NOTE]
-> Diese Regel blockiert DLP-Richtlinientipps und QuickInfos in Outlook. Diese Regel gilt nur für Outlook und Outlook.com. 
+> Diese Regel blockiert DLP-Richtlinientipps und QuickInfos in Outlook. Diese Regel gilt nur für Outlook und Outlook.com.
 
 Diese Regel wurde eingeführt in:
 
@@ -519,5 +524,3 @@ Intune-Name: `Advanced ransomware protection`
 Configuration Manager-Name: `Use advanced protection against ransomware`
 
 GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
-
-

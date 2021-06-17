@@ -12,20 +12,17 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 04/28/2021
+ms.date: 06/15/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: ba0f2184ced21aea60b172d44936e3e2d36e5270
-ms.sourcegitcommit: 51b316c23e070ab402a687f927e8fa01cb719c74
+ms.openlocfilehash: 3a5f766e21afcb29d3503345a49637061b5f0e38
+ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52274952"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52964700"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Aktivieren von „Beim ersten Sichten blockieren“
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Gilt für:**
 
@@ -34,7 +31,7 @@ ms.locfileid: "52274952"
 Dieser Artikel beschreibt ein Antivirus-/Antimalware-Feature, die als „Beim ersten Sichten blockieren“ bekannt ist, und er beschreibt, wie Sie „Beim ersten Sichten blockieren“ für Ihre Organisation aktivieren. 
 
 > [!TIP]
-> Dieser Artikel ist für Unternehmensadministratoren und IT-Profis gedacht, welche die Sicherheitseinstellungen für Organisationen verwalten. Wenn Sie kein Unternehmensadministrator oder IT-Profi sind, aber Fragen bezüglich „Beim ersten Sichten blockieren“ haben, lesen Sie [Kein Unternehmensadministrator oder IT-Profi?](#not-an-enterprise-admin-or-it-pro).
+> Dieser Artikel ist für Unternehmensadministratoren und IT-Profis gedacht, welche die Sicherheitseinstellungen für Organisationen verwalten. Wenn Sie kein Unternehmensadministrator oder IT-Profi sind, aber Fragen bezüglich „Beim ersten Sichten blockieren“ haben, lesen Sie den Abschnitt [Kein Unternehmensadministrator oder IT-Profi?](#not-an-enterprise-admin-or-it-pro).
 
 ## <a name="what-is-block-at-first-sight"></a>Was ist „Beim ersten Sichten blockieren“?
 
@@ -55,7 +52,7 @@ Microsoft Defender Antivirus verwendet mehrere Erkennungs- und Präventionstechn
 ![Liste der Microsoft Defender Antiviren-Module](images/microsoft-defender-atp-next-generation-protection-engines.png)  
 
 > [!TIP]
-> Weitere Informationen finden Sie in diesem Blog: [Lernen Sie die fortschrittlichen Technologien kennen, die den Kern des Schutzes der nächsten Generation für Microsoft Defender für Endpunkt bilden](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
+> Weitere Informationen finden Sie unter [(Blog) Lernen Sie die fortschrittlichen Technologien kennen, die den Kern des Schutzes der nächsten Generation für Microsoft Defender für Endpunkt bilden](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/).
 
 ## <a name="a-few-things-to-know-about-block-at-first-sight"></a>Einige Dinge, die man über „Beim ersten Sichten blockieren“ wissen sollte
 
@@ -149,7 +146,9 @@ Mit der Windows-Sicherheit-App können Sie überprüfen, ob „Beim ersten Sicht
 
 ## <a name="validate-block-at-first-sight-is-working"></a>Validieren, dass „Beim ersten Sichten blockieren“ funktioniert
 
-Um zu validieren, dass das Feature funktioniert, folgen Sie der Anleitung in [Validieren der Verbindungen zwischen Ihrem Netzwerk und der Cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud).
+Um zu validieren, ob das Feature funktioniert, laden Sie die [Beispieldatei „Beim ersten Sichten blockieren“](https://demo.wd.microsoft.com/Page/BAFS) herunter. Zum Herunterladen der Datei benötigen Sie ein Konto in Azure AD, dem entweder die Rolle „Sicherheitsadministrator“ oder „Globaler Administrator“ zugewiesen ist.
+
+Um zu validieren, ob der Cloud-aktivierte Schutz funktioniert, folgen Sie der Anleitung in [Validieren der Verbindungen zwischen Ihrem Netzwerk und der Cloud](configure-network-connections-microsoft-defender-antivirus.md#validate-connections-between-your-network-and-the-cloud). 
 
 ## <a name="turn-off-block-at-first-sight"></a>Deaktivieren von „Beim ersten Sichten blockieren“
 
@@ -215,6 +214,6 @@ Wenn Sie ein persönliches Gerät haben, das nicht von einer Organisation verwal
 
 ## <a name="see-also"></a>Siehe auch
 
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
 - [Aus der Cloud bereitgestellten Schutz aktivieren](enable-cloud-protection-microsoft-defender-antivirus.md)
 - [Mit Windows-Sicherheit geschützt bleiben](https://support.microsoft.com/windows/stay-protected-with-windows-security-2ae0363d-0ada-c064-8b56-6a39afb6a963)
