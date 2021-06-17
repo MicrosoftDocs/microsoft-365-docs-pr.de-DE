@@ -116,7 +116,7 @@ Die folgenden Spoofingeinstellungen sind in Antiphishingrichtlinien in EOP und M
 
 - **Aktionen:** Für Nachrichten von blockierten gefälschten Absendern (automatisch durch Spoofintelligenz blockiert oder manuell in der Mandanten-Zulassungs-/Sperrliste blockiert) können Sie auch die Aktion angeben, die für die Nachrichten ausgeführt werden soll:
 
-  - **Verschieben von Nachrichten in die Junk-E-Mail-Ordner des Empfängers:** Dies ist der Standardwert. Die Nachricht wird an das Postfach übermittelt und in den Junk-E-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-E-Mail-Einstellungen für Exchange Online Postfächer in Microsoft 365.](configure-junk-email-settings-on-exo-mailboxes.md)
+  - **Verschieben von Nachrichten in die Junk-E-Mail-Ordner des Empfängers:** Dies ist der Standardwert. Die Nachricht wird an das Postfach übermittelt und in den Junk-E-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-E-Mail-Einstellungen für Exchange Online Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
 
   - **Die Nachricht unter Quarantäne** stellen: Sendet die Nachricht an die Quarantäne anstelle der vorgesehenen Empfänger. Informationen zur Quarantäne finden Sie in den folgenden Artikeln:
 
@@ -192,7 +192,7 @@ Die folgenden Identitätswechseleinstellungen sind nur in Antiphishingrichtlinie
 
   - **Umleiten der Nachricht an andere E-Mail-Adressen:** Sendet die Nachricht an die angegebenen Empfänger anstelle der vorgesehenen Empfänger.
 
-  - **Verschieben von Nachrichten in die Junk-E-Mail-Ordner des Empfängers:** Die Nachricht wird an das Postfach übermittelt und in den Junk-E-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-E-Mail-Einstellungen für Exchange Online Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Verschieben von Nachrichten in die Junk-E-Mail-Ordner des Empfängers:** Die Nachricht wird an das Postfach übermittelt und in den Junk-E-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-E-Mail-Einstellungen für Exchange Online Postfächer in Microsoft 365.](configure-junk-email-settings-on-exo-mailboxes.md)
 
   - **Die Nachricht unter Quarantäne** stellen: Sendet die Nachricht an die Quarantäne anstelle der vorgesehenen Empfänger. Informationen zur Quarantäne finden Sie in den folgenden Artikeln:
     - [Quarantäne in Microsoft 365](quarantine-email-messages.md)

@@ -48,7 +48,7 @@ Wenn Sie in Betracht ziehen, zu Defender für Endpunkt zu wechseln, haben wir An
 
 Teilen Sie uns Ihre Meinung mit! Übermitteln Sie Ihr Feedback am unteren Rand der Seite. Wir berücksichtigen Ihr Feedback, während wir uns weiter verbessern und unserem Migrationsleitfaden hinzufügen.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 - [Microsoft Defender für Endpunkt](/windows/security/threat-protection)
 - [Microsoft Defender für Office 365](/microsoft-365/security/office-365-security/office-365-atp)

@@ -39,11 +39,11 @@ Microsoft ist auf dem Weg, seine branchenführenden Endpunktsicherheitsfunktione
 
 Organisationen sind mit Bedrohungen auf einer Vielzahl von Plattformen und Geräten konfrontiert. Unsere Teams haben sich verpflichtet, Sicherheitslösungen nicht nur *für* Microsoft, sondern auch *von* Microsoft zu entwickeln, damit unsere Kunden ihre heterogenen Umgebungen schützen und schützen können. Wir hören auf Kundenfeedback und arbeiten eng mit unseren Kunden zusammen, um Lösungen zu erstellen, die ihren Anforderungen entsprechen.
 
-Mit Microsoft Defender für Endpunkt profitieren Kunden von einer einheitlichen Ansicht aller Bedrohungen und Warnungen in der Microsoft Defender Security Center, über Windows- und Nicht-Windows-Plattformen hinweg, sodass sie ein vollständiges Bild der Vorgänge in ihrer Umgebung erhalten, sodass sie Bedrohungen schneller bewerten und darauf reagieren können.
+Mit Microsoft Defender für Endpunkt profitieren Kunden von einer einheitlichen Ansicht aller Bedrohungen und Warnungen in der Microsoft Defender Security Center, über Windows- und Nicht-Windows-Plattformen hinweg, sodass sie ein vollständiges Bild davon erhalten können, was in ihrer Umgebung geschieht, sodass sie Bedrohungen schneller bewerten und darauf reagieren können.
 
 ## <a name="microsoft-defender-for-endpoint-on-macos"></a>Microsoft Defender für Endpunkt unter Mac OS 
 
-Microsoft Defender für Endpunkt unter macOS bietet Antivirus- und EDR(EDR)-Funktionen für die drei neuesten versionen von macOS. Kunden können die Lösung über Microsoft Endpoint Manager und Jamf bereitstellen und verwalten. Genau wie bei Microsoft Office-Anwendungen unter macOS wird Microsoft Auto Update zum Verwalten von Microsoft Defender für Endpunkt auf Mac-Updates verwendet. Informationen zu den wichtigsten Features und Vorteilen finden Sie in unseren [Ankündigungen.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)
+Microsoft Defender für Endpunkt unter macOS bietet Antivirus- und EDR(EDR)-Funktionen für die drei neuesten veröffentlichten Versionen von macOS. Kunden können die Lösung über Microsoft Endpoint Manager und Jamf bereitstellen und verwalten. Genau wie bei Microsoft Office-Anwendungen unter macOS wird Microsoft Auto Update zum Verwalten von Microsoft Defender für Endpunkt auf Mac-Updates verwendet. Informationen zu den wichtigsten Features und Vorteilen finden Sie in unseren [Ankündigungen.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)
 
 Weitere Informationen zu den ersten Schritten finden Sie in der [Dokumentation](microsoft-defender-endpoint-mac.md)zu Defender für Endpunkt unter macOS.
 

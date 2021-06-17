@@ -209,7 +209,7 @@ Stellen Sie Office Apps aus der Cloud bereit, mit der Möglichkeit, Ihre Install
 
 ### <a name="deploy-office-to-remote-users"></a>Bereitstellen von Office für Remotebenutzer
 
-Da remote arbeiten die Norm ist, müssen Benutzer die Office Einstellungen Ihrer Organisation erhalten, wenn sie nicht mit Ihrem internen Netzwerk verbunden sind oder ihre eigenen Geräte verwenden. 
+Da remote arbeiten jetzt die Norm ist, müssen Benutzer die Office Einstellungen Ihrer Organisation erhalten, wenn sie nicht mit Ihrem internen Netzwerk verbunden sind oder ihre eigenen Geräte verwenden. 
 
 Verwenden Sie die Anleitung zum [Bereitstellen von Office für Remotebenutzer,](https://aka.ms/officeremoteinstall) um eine angepasste Office Installation zu erstellen, und senden Sie benutzern dann ein generiertes PowerShell-Skript, das Office nahtlos mit Ihrer Konfiguration installiert.
 

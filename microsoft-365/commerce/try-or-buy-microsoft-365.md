@@ -28,7 +28,7 @@ ms.locfileid: "52950047"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Testen oder Kaufen eines Microsoft 365 business-Abonnements
 
-Microsoft 365 for Business ist ein Abonnementdienst, mit dem Sie Ihre Organisation in der Cloud ausführen können, während Microsoft die IT für Sie übernimmt. Microsoft verwaltet Geräte, schützt vor realen Bedrohungen und stellt Ihrer Organisation die neueste Geschäftssoftware zur Verfügung. Sie können sich für ein kostenloses Testabonnement für Microsoft 365 Business Standard, Microsoft 365 Business Premium oder Microsoft 365 Apps for Business registrieren und es 30 Tage testen.
+Microsoft 365 for Business ist ein Abonnementdienst, mit dem Sie Ihre Organisation in der Cloud ausführen können, während Microsoft die IT für Sie übernimmt. Microsoft verwaltet Geräte, schützt vor realen Bedrohungen und stellt Ihrer Organisation die neueste Geschäftssoftware zur Verfügung. Sie können sich für ein kostenloses Testabonnement für Microsoft 365 Business Standard, Microsoft 365 Business Premium oder Microsoft 365 Apps for Business registrieren und 30 Tage lang testen.
 
 > [!NOTE]
 > Sie müssen eine Kreditkarte verwenden, wenn Sie sich für eine kostenlose Testversion registrieren. Am Ende des kostenlosen Testzeitraums wird Ihr Testabonnement automatisch in ein kostenpflichtiges Abonnement umgewandelt. Ihre Kreditkarte wird erst nach Ablauf des Testzeitraums in Rechnung gestellt.
@@ -101,7 +101,7 @@ Wenn Sie ein Abonnement über die Microsoft 365 Admin Center hinzufügen, ist da
 
 ## <a name="buy-a-different-subscription"></a>Kaufen eines anderen Abonnements
 
-Wenn Sie bereits über ein Microsoft 365 business-Abonnement verfügen, können Sie die Microsoft 365 Admin Center durchlaufen, um ein anderes Abonnement für Ihre Organisation zu erwerben.
+Wenn Sie bereits über ein Microsoft 365 business-Abonnement verfügen, können Sie die Microsoft 365 Admin Center durchlaufen, um ein anderes Abonnement für Ihre Organisation zu kaufen.
 
 Wenn Sie ein anderes Abonnement über das Admin Center erwerben, ist das neue Abonnement derselben Organisation (Domänennamebereich) wie Ihr vorhandenes Abonnement zugeordnet. Dadurch wird es einfacher, Benutzer in Ihrer Organisation zwischen Abonnements zu verschieben oder ihnen eine Lizenz für das zusätzliche Abonnement zuzuweisen, das sie benötigen.
 

@@ -23,7 +23,7 @@ ms.locfileid: "52950023"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Microsoft Viva Topics – Übersicht 
 
-Viva Topics verwendet Microsoft AI-Technologie, Microsoft 365, Microsoft Graph, Suche und andere Komponenten und Dienste, um Ihren Benutzern Wissen in den Microsoft 365 Apps zu vermitteln, die sie täglich verwenden, beginnend mit SharePoint modernen Seiten, Microsoft Search und Suche in Word, PowerPoint, Outlook und Excel.
+Viva Topics verwendet Microsoft AI-Technologie, Microsoft 365, Microsoft Graph, Suche und andere Komponenten und Dienste, um Ihren Benutzern Wissen in den Microsoft 365 Apps bereitzustellen, die sie täglich verwenden, beginnend mit SharePoint modernen Seiten, Microsoft Search und Suche in Word, PowerPoint, Outlook und Excel.
 
 <br/>
 
@@ -52,7 +52,7 @@ Wenn ein Thema in Inhalten auf SharePoint-Nachrichten und -Seiten erwähnt wird,
 
 ### <a name="search-results"></a>Suchergebnisse
 
-Sie können eine [Themenantwort](search.md#topic-answer) in Suchergebnissen sehen, wenn Sie auf der SharePoint Startseite suchen, auf Office.com suchen oder auf einer SharePoint Website suchen, nachdem Sie den Suchbereich so geändert haben, dass er die gesamte Organisation einschließt. Die Themenantwort wird im Thema der Ergebnisliste angezeigt und enthält einen kurzen Satz von Informationen zu diesem Thema. 
+Sie können eine [Themenantwort](search.md#topic-answer) in Suchergebnissen anzeigen, wenn Sie auf der SharePoint Startseite suchen, auf Office.com suchen oder auf einer SharePoint Website suchen, nachdem Sie den Suchbereich so geändert haben, dass er die gesamte Organisation einschließt. Die Themenantwort wird im Thema der Ergebnisliste angezeigt und enthält einen kurzen Satz von Informationen zu diesem Thema. 
 
    ![Screenshot der Suchergebnisse einer SharePoint Websitesuche.](../media/knowledge-management/site-search-results.png) 
 

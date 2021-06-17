@@ -31,7 +31,7 @@ ms.locfileid: "52964897"
 
 ## <a name="use-microsoft-intune-to-configure-scanning-options"></a>Verwenden von Microsoft Intune zum Konfigurieren von Überprüfungsoptionen
 
-Weitere Informationen finden Sie unter [Konfigurieren von Geräteeinschränkungseinstellungen in Microsoft Intune](/intune/device-restrictions-configure) und Microsoft Defender Antivirus [Geräteeinschränkungseinstellungen für Windows 10 in Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) 
+Weitere Informationen finden Sie unter [Konfigurieren von Einstellungen für Geräteeinschränkungen in Microsoft Intune](/intune/device-restrictions-configure) und Microsoft Defender Antivirus [Geräteeinschränkungseinstellungen für Windows 10 in Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus) 
 
 ## <a name="use-microsoft-endpoint-manager-to-configure-scanning-options"></a>Verwenden von Microsoft Endpoint Manager zum Konfigurieren von Überprüfungsoptionen
 
@@ -86,15 +86,15 @@ Siehe [Windows Defender WMIv2-APIs.](/previous-versions/windows/desktop/defender
 
 ## <a name="email-scanning-limitations"></a>Einschränkungen bei der E-Mail-Überprüfung
 
-Die E-Mail-Überprüfung ermöglicht das Scannen von E-Mail-Dateien, die von Outlook und anderen E-Mail-Clients während bedarfsgesteuerter und geplanter Überprüfungen verwendet werden. Eingebettete Objekte in E-Mails (z. B. Anlagen und archivierte Dateien) werden ebenfalls gescannt. Die folgenden Dateiformattypen können gescannt und korrigiert werden:
+Die E-Mail-Überprüfung ermöglicht das Scannen von E-Mail-Dateien, die von Outlook und anderen E-Mail-Clients bei Bedarf und geplanten Scans verwendet werden. Eingebettete Objekte in E-Mails (z. B. Anlagen und archivierte Dateien) werden ebenfalls gescannt. Die folgenden Dateiformattypen können gescannt und korrigiert werden:
 
 - Dbx
 - Mbx
 - MIME
 
-PST-Dateien, die von Outlook 2003 oder älter verwendet werden (wobei der Archivtyp auf Nicht-Unicode festgelegt ist), werden ebenfalls gescannt, Microsoft Defender Antivirus können jedoch keine Bedrohungen beheben, die in PST-Dateien erkannt werden.
+PST-Dateien, die von Outlook 2003 oder älter verwendet werden (wobei der Archivtyp auf Nicht-Unicode festgelegt ist), werden ebenfalls gescannt, aber Microsoft Defender Antivirus können Bedrohungen, die in PST-Dateien erkannt werden, nicht beheben.
 
-Wenn Microsoft Defender Antivirus eine Bedrohung innerhalb einer E-Mail erkennt, werden ihnen die folgenden Informationen angezeigt, die Sie bei der Identifizierung der gefährdeten E-Mail unterstützen, damit Sie die Bedrohung manuell beheben können:
+Wenn Microsoft Defender Antivirus eine Bedrohung innerhalb einer E-Mail-Nachricht erkennt, werden ihnen die folgenden Informationen angezeigt, die Sie bei der Identifizierung der gefährdeten E-Mail unterstützen, damit Sie die Bedrohung manuell beheben können:
 
 - E-Mail-Betreff
 - Anlagenname
@@ -104,7 +104,7 @@ Wenn Microsoft Defender Antivirus eine Bedrohung innerhalb einer E-Mail erkennt,
 
 Auf jedem Betriebssystem werden nur die Netzwerklaufwerke gescannt, die auf Systemebene zugeordnet sind. Zugeordnete Netzlaufwerke auf Benutzerebene werden nicht gescannt. Zugeordnete Netzlaufwerke auf Benutzerebene sind die Laufwerke, die ein Benutzer in seiner Sitzung manuell und mithilfe seiner eigenen Anmeldeinformationen zuordbare.
 
-## <a name="see-also"></a>Siehe auch
+## <a name="see-also"></a>Weitere Artikel
 
 
 - [Anpassen, Initiieren und Überprüfen der Ergebnisse von Microsoft Defender Antivirus Überprüfungen und Korrekturen](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
