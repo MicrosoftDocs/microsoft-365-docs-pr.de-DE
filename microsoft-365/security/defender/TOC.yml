@@ -164,6 +164,8 @@
                   href: advanced-hunting-query-emails-devices.md
                 - name: Suche nach Ransomware
                   href: advanced-hunting-find-ransomware.md
+                - name: Beispiel für erweiterte Bedrohungssuche
+                  href: advanced-hunting-example.md
                 - name: Übergang von Defender für Endpunkt
                   href: advanced-hunting-migrate-from-mde.md
             - name: Arbeiten mit Abfrageergebnissen
