@@ -20,7 +20,7 @@ ms.custom:
 description: 'Zusammenfassung: Zusätzliche, für die Migration aus der Microsoft Cloud Deutschland relevante Informationen für Cloudlösungsanbieter.'
 ms.openlocfilehash: 843552c55acba57c5c2da4a1a885d65cb4e59d84
 ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/17/2021
 ms.locfileid: "52984916"
