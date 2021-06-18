@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen, um zu behalten, was Sie benötigen, und zu löschen, was Sie nicht benötigen.
-ms.openlocfilehash: 44761199eea1cf2649a15b6a36ccc08eda99c570
-ms.sourcegitcommit: 959c3c3633e40b7b0f5e2c8372409778005a24db
+ms.openlocfilehash: 65c9216e30c2db04b1981a17d73b3a9f0b5f1594
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "52950059"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007501"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informationen zu Aufbewahrungsrichtlinien und Aufbewahrungsbezeichnungen
 
@@ -373,9 +373,11 @@ Die Erhaltungssperre wird angewendet, nachdem die Aufbewahrungsrichtlinie oder A
 
 ## <a name="releasing-a-policy-for-retention"></a>Aufheben einer Richtlinie für die Aufbewahrung
 
-Sofern eine Aufbewahrungsrichtlinie keiner Erhaltungssperre unterliegt, können Sie sie jederzeit löschen. Dadurch werden die zuvor angewendeten Aufbewahrungseinstellungen effektiv deaktiviert. Sie können die Richtlinie auch beibehalten, jedoch eine Website für SharePoint oder ein Konto für OneDrive entfernen oder den Standortstatus auf "Aus" ändern oder die Richtlinie deaktivieren.
+Sofern eine Aufbewahrungsrichtlinie keiner Erhaltungssperre unterliegt, können Sie sie jederzeit löschen. Dadurch werden die zuvor angewendeten Aufbewahrungseinstellungen effektiv deaktiviert. Sie können die Richtlinie auch beibehalten, aber den Standortstatus in "Aus" ändern oder die Richtlinie deaktivieren. Wenn Ihre Richtlinie so konfiguriert ist, dass sie bestimmte Websites für SharePoint oder Konten für OneDrive enthält, können Sie die Richtlinie auch bearbeiten, um einen oder mehrere dieser Einträge zu entfernen, um die Richtlinie für diese Websites oder Konten freizugeben.
  
 Wenn Sie eine dieser Aktionen ausführen, werden alle SharePoint- oder OneDrive-Inhalte, die wegen der Richtlinie aufbewahrt werden müssen, 30 Tage lang aufbewahrt, um versehentlichen Datenverlust zu vermeiden. Während dieser 30-tägigen Nachfrist bleiben gelöschte Dateien weiterhin erhalten (Dateien werden weiterhin zum permanenten Dokumentarchiv hinzugefügt), aber der Zeitgeberauftrag, der das permanente Dokumentarchiv regelmäßig bereinigt, wird für diese Dateien aufbewahrt, sodass Sie sie bei Bedarf wiederherstellen können.
+
+Eine Ausnahme von dieser 30-tägigen Nachfrist ist, wenn Sie die Richtlinie aktualisieren, um eine oder mehrere Websites für SharePoint oder Konten für OneDrive auszuschließen. In diesem Fall löscht der Zeitgeberauftrag Dateien für diese Speicherorte im permanenten Dokumentarchiv ohne die Verzögerung von 30 Tagen.
 
 Weitere Informationen zum permanenten Dokumentarchiv finden Sie unter [Funktionsweise der Aufbewahrung für SharePoint und OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 

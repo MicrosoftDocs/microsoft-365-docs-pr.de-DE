@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: fafd3eed63e077ded41259d25f0d8a1a89802925
-ms.sourcegitcommit: 787fb30fdae6d49347a87f4baae3cd140067e573
+ms.openlocfilehash: 6884ec3b2bc7c24e4f7f6e62d9b24add3aeee2c0
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52998740"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007345"
 ---
 # <a name="plan-for-insider-risk-management"></a>Planen des Insider-Risikomanagements
 
@@ -48,8 +48,8 @@ Abhängig von der Struktur Ihres Compliance Management-Teams haben Sie Optionen,
 
 | **Rollengruppe** | **Rollenberechtigungen** |
 | :------------- | :------------------- |
-| **Insider-Risikomanagement** | Verwenden Sie diese Rollengruppe zum Verwalten des Risikomanagements für Ihr Unternehmen in einer einzigen Gruppe. Durch Hinzufügen aller Benutzerkonten für bestimmte Administratoren, Analysten, Ermittler und Auditoren können Sie Berechtigungen für das Insider-Risikomanagement in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für das Insider-Risikomanagement und zugehörige Berechtigungen. Diese Konfiguration ist die einfachste Möglichkeit, schnell mit dem Insider-Risikomanagement zu beginnen, und eignet sich gut für Organisationen, die keine separaten Berechtigungen benötigen, die für separate Benutzergruppen definiert sind. Wenn Sie diese Konfiguration verwenden, sollten Sie sicherstellen, dass immer mindestens ein Benutzer dieser Rolle zugewiesen ist, um sicherzustellen, dass Ihre Richtlinien wie erwartet funktionieren, damit der Benutzer Richtlinien erstellen und bearbeiten, Lösungseinstellungen konfigurieren und Warnungen zur Richtlinienintegrität überprüfen kann. |
-| **Administrator für Insider-Risikomanagement** | Verwenden Sie diese Rollengruppe, um zunächst das Insider-Risikomanagement zu konfigurieren und später Insider-Risikoadministratoren in eine definierte Gruppe zu unterteilen. Benutzer in dieser Rollengruppe können Analyseerkenntnisse aktivieren und anzeigen sowie Richtlinien für das Insider-Risikomanagement, globale Einstellungen und Rollengruppenzuweisungen erstellen, lesen, aktualisieren und löschen. Wenn Sie diese Konfiguration verwenden, sollten Sie sicherstellen, dass immer mindestens ein Benutzer dieser Rolle zugewiesen ist, um sicherzustellen, dass Ihre Richtlinien wie erwartet funktionieren, damit der Benutzer Richtlinien erstellen und bearbeiten, Lösungseinstellungen konfigurieren und Warnungen zur Richtlinienintegrität überprüfen kann. |
+| **Insider-Risikomanagement** | Verwenden Sie diese Rollengruppe zum Verwalten des Risikomanagements für Ihr Unternehmen in einer einzigen Gruppe. Durch Hinzufügen aller Benutzerkonten für bestimmte Administratoren, Analysten, Ermittler und Auditoren können Sie Berechtigungen für das Insider-Risikomanagement in einer einzigen Gruppe konfigurieren. Diese Rollengruppe enthält alle Berechtigungsrollen für das Insider-Risikomanagement und zugehörige Berechtigungen. Diese Konfiguration ist die einfachste Möglichkeit, schnell mit dem Insider-Risikomanagement zu beginnen, und eignet sich gut für Organisationen, die keine separaten Berechtigungen benötigen, die für separate Benutzergruppen definiert sind. Wenn Sie diese Konfiguration verwenden, sollten Sie sicherstellen, dass dieser Rollengruppe immer mindestens ein Benutzer zugewiesen ist, um sicherzustellen, dass Ihre Richtlinien wie erwartet funktionieren, damit der Benutzer Richtlinien erstellen und bearbeiten, Lösungseinstellungen konfigurieren und Warnungen zur Richtlinienintegrität überprüfen kann. |
+| **Administrator für Insider-Risikomanagement** | Verwenden Sie diese Rollengruppe, um zunächst das Insider-Risikomanagement zu konfigurieren und später Insider-Risikoadministratoren in eine definierte Gruppe zu untergliedern. Benutzer in dieser Rollengruppe können Analyseerkenntnisse aktivieren und anzeigen sowie Richtlinien für das Insider-Risikomanagement, globale Einstellungen und Rollengruppenzuweisungen erstellen, lesen, aktualisieren und löschen. Wenn Sie diese Konfiguration verwenden, sollten Sie sicherstellen, dass dieser Rollengruppe immer mindestens ein Benutzer zugewiesen ist, um sicherzustellen, dass Ihre Richtlinien wie erwartet funktionieren, damit der Benutzer Richtlinien erstellen und bearbeiten, Lösungseinstellungen konfigurieren und Warnungen zur Richtlinienintegrität überprüfen kann. |
 | **Insider-Risikomanagement-Analysten** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Analysten im Falle eines Insiderrisikos fungieren. Benutzer in dieser Rollengruppe können auf alle Warnungen, Fälle, Analyseerkenntnisse und Benachrichtigungsvorlagen des Insider-Risikomanagements zugreifen und diese anzeigen. Sie können nicht auf den Inhalts-Explorer für Insider-Risiken zugreifen. |
 | **Insider-Risikomanagement-Prüfer** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die als Datenprüfer für Insiderrisiken fungieren. Benutzer in dieser Rollengruppe können auf alle Warnungen, Fälle, Benachrichtigungsvorlagen und den Inhalts-Explorer für alle Fälle zugreifen. |
 | **Auditoren des Insider-Risikomanagements** | Verwenden Sie diese Gruppe, um Benutzern Berechtigungen zuzuweisen, die Aktivitäten des Insider-Risikomanagements überwachen. Benutzer in dieser Rollengruppe können auf das Überwachungsprotokoll für Insider-Risiken zugreifen. |

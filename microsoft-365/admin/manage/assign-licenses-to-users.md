@@ -23,12 +23,12 @@ ms.custom:
 search.appverid: MET150
 description: Weisen Sie Lizenzen zu, je nachdem, ob Sie bestimmten Benutzern Produktlizenzen oder Benutzerlizenzen für ein bestimmtes Produkt zuweisen möchten.
 ms.date: 04/26/2021
-ms.openlocfilehash: 707c1c952aa737f0aa91d886e9fa304eabe26321
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: c8e5c6a648f08aaba97fe05e19a5cfa0cada2174
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52537535"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007009"
 ---
 # <a name="assign-licenses-to-users"></a>Zuweisen von Lizenzen an Benutzer
 
@@ -129,11 +129,12 @@ Wenn Sie Lizenzen über die Seite **Aktive Benutzer** zuweisen, weisen Sie einze
 
 
 2. Aktivieren Sie die Kreise neben den Namen der Benutzer, denen Sie Lizenzen zuweisen möchten.
-3. Wählen Sie oben die drei Punkte (weitere Aktionen) und dann **Produktlizenzen verwalten** aus.
-4. Wählen Sie im Bereich **Produktlizenzen verwalten** die Optionen **Zu vorhandenen Produktlizenzzuweisungen hinzufügen** \> **Weiter** aus.
-5. Setzen Sie im Bereich **Zu vorhandenen Produktlizenzzuweisungen hinzufügen** die Umschaltfläche für die Lizenz, die der ausgewählten Benutzer erhalten soll, auf die Stellung **Ein**.\
-    Standardmäßig werden alle diesen Lizenzen zugeordneten Dienste dem Benutzer automatisch zugewiesen. Sie können die für die Benutzer verfügbaren Dienste einschränken. Setzen Sie die Umschaltfläche für die Dienste, die die Benutzer nicht erhalten sollen, auf die Stellung **Aus**.
-6. Wählen Sie am unteren Rand des Bereichs **Hinzufügen** \> **Schließen** aus.  
+3. Wählen Sie oben **Produktlizenzen verwalten** aus.
+4. Wählen Sie im Bereich **Produktlizenzen verwalten** die Option **Weitere zuweisen: Vorhandene Lizenzen beibehalten und weitere zuweisen** \> **Weiter**.
+5. Aktivieren Sie unter **Lizenzen** das Kontrollkästchen für die Lizenz(en), über die die ausgewählten Benutzer verfügen sollen.\
+    Standardmäßig werden alle diesen Lizenzen zugeordneten Dienste dem Benutzer automatisch zugewiesen. Sie können die für die Benutzer verfügbaren Dienste einschränken. Deaktivieren Sie die Kontrollkästchen für die Dienste, über die die Benutzer nicht verfügen sollen.
+6. Wählen Sie unten im Bereich **Änderungen speichern** aus.  
+    Möglicherweise müssen Sie zusätzliche Lizenzen erwerben, wenn Sie nicht über genügend Lizenzen für alle verfügen.
 
 
 > [!NOTE]

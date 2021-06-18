@@ -14,23 +14,21 @@ ms.topic: article
 ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 71df43639a719acb9436f64deba6b6c5cc9317f5
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 386e4499fec30bf1c564c1e0dc81cb8aaa5912a5
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924279"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007519"
 ---
 # <a name="configure-and-validate-exclusions-based-on-file-extension-and-folder-location"></a>Konfigurieren und Überprüfen von Ausschlüssen basierend auf der Dateierweiterung und dem Speicherort des Ordners
-
-
 
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 
 > [!IMPORTANT]
-> Microsoft Defender Antivirus Ausschlüsse gelten nicht für andere Microsoft Defender für Endpunkt-Funktionen, einschließlich [EDR (EDR),](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) [Attack Surface Reduction (ASR)-Regeln](/microsoft-365/security/defender-endpoint/attack-surface-reduction)und [kontrollierter Ordnerzugriff.](/microsoft-365/security/defender-endpoint/controlled-folders) Dateien, die Sie mithilfe der in diesem Artikel beschriebenen Methoden ausschließen, können weiterhin EDR Warnungen und andere Erkennungen auslösen. Um Dateien allgemein auszuschließen, fügen Sie sie den [benutzerdefinierten Indikatoren](/microsoft-365/security/defender-endpoint/manage-indicators)von Microsoft Defender für Endpunkt hinzu.
+> Microsoft Defender Antivirus Ausschlüsse gelten nicht für andere Microsoft Defender für Endpunkt-Funktionen, einschließlich [EDR (EDR),](/microsoft-365/security/defender-endpoint/overview-endpoint-detection-response) [AsR-Regeln (Attack Surface Reduction)](/microsoft-365/security/defender-endpoint/attack-surface-reduction)und [kontrollierter Ordnerzugriff.](/microsoft-365/security/defender-endpoint/controlled-folders) Dateien, die Sie mithilfe der in diesem Artikel beschriebenen Methoden ausschließen, können weiterhin EDR Warnungen und andere Erkennungen auslösen. Um Dateien allgemein auszuschließen, fügen Sie sie den [benutzerdefinierten Indikatoren](/microsoft-365/security/defender-endpoint/manage-indicators)von Microsoft Defender für Endpunkt hinzu.
 
 ## <a name="exclusion-lists"></a>Ausschlusslisten
 
@@ -66,7 +64,7 @@ Informationen zum Ausschließen von Dateien, die von einem bestimmten Prozess ge
 Die Ausschlüsse gelten für [geplante Scans,](scheduled-catch-up-scans-microsoft-defender-antivirus.md) [Scans bei Bedarf](run-scan-microsoft-defender-antivirus.md)und [Echtzeitschutz.](configure-real-time-protection-microsoft-defender-antivirus.md)
 
 > [!IMPORTANT]
-> Mit gruppenrichtlinien vorgenommene Ausschlusslistenänderungen werden in den Listen in der [Windows-Sicherheit-App](microsoft-defender-security-center-antivirus.md) **angezeigt.**
+> Mit der Gruppenrichtlinie vorgenommene Ausschlusslistenänderungen werden in den Listen in der [Windows-Sicherheit-App](microsoft-defender-security-center-antivirus.md) **angezeigt.**
 > In der Windows-Sicherheit App vorgenommene Änderungen werden nicht in den Gruppenrichtlinienlisten **angezeigt.**
 
 Standardmäßig werden lokale Änderungen, die an den Listen vorgenommen werden (von Benutzern mit Administratorrechten, einschließlich Änderungen, die mit PowerShell und WMI vorgenommen wurden) mit den Listen zusammengeführt, die durch Gruppenrichtlinien, Configuration Manager oder Intune definiert (und bereitgestellt) werden. Die Gruppenrichtlinienlisten haben Vorrang, wenn Konflikte vorliegen.
@@ -277,7 +275,7 @@ Sie können die Elemente in der Ausschlussliste mithilfe einer der folgenden Met
 - [Windows-Sicherheit-App](microsoft-defender-security-center-antivirus.md)
 
 >[!IMPORTANT]
->Mit gruppenrichtlinien vorgenommene Ausschlusslistenänderungen werden in den Listen in der [Windows-Sicherheit-App](microsoft-defender-security-center-antivirus.md) **angezeigt.**
+>Mit der Gruppenrichtlinie vorgenommene Ausschlusslistenänderungen werden in den Listen in der [Windows-Sicherheit-App](microsoft-defender-security-center-antivirus.md) **angezeigt.**
 >
 >In der Windows-Sicherheit App vorgenommene Änderungen werden nicht in den Gruppenrichtlinienlisten **angezeigt.**
 
@@ -310,7 +308,7 @@ Get-MpPreference
 
 Im folgenden Beispiel werden die in der Liste enthaltenen Elemente `ExclusionExtension` hervorgehoben:
 
-![PowerShell-Ausgabe für Get-MpPreference anzeigen der Ausschlussliste zusammen mit anderen Einstellungen](images/defender/wdav-powershell-get-exclusions-all.png)
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="PowerShell-Ausgabe für Get-MpPreference":::
 
 Weitere Informationen finden Sie unter [PowerShell-Cmdlets verwenden, um Microsoft Defender Antivirus zu konfigurieren und auszuführen](use-powershell-cmdlets-microsoft-defender-antivirus.md) und unter [Defender-Cmdlets](/powershell/module/defender/).
 
@@ -326,7 +324,7 @@ $WDAVprefs.ExclusionPath
 
 Im folgenden Beispiel wird die Liste für jede Verwendung des Cmdlets in neue Zeilen `Add-MpPreference` aufgeteilt:
 
-![PowerShell-Ausgabe mit nur den Einträgen in der Ausschlussliste](images/defender/wdav-powershell-get-exclusions-variable.png)
+:::image type="content" source="../../media/wdav-powershell-get-exclusions-variable.png" alt-text="PowerShell-Ausgabe mit nur den Einträgen in der Ausschlussliste":::
 
 Weitere Informationen finden Sie unter [PowerShell-Cmdlets verwenden, um Microsoft Defender Antivirus zu konfigurieren und auszuführen](use-powershell-cmdlets-microsoft-defender-antivirus.md) und unter [Defender-Cmdlets](/powershell/module/defender/).
 

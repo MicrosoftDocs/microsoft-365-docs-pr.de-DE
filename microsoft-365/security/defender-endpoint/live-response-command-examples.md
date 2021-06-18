@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 389d9ad4a3e5fc876e7bded89389202e95bfda45
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 248e08913e6210fabed26955a1015533e055dcb6
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52879120"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007069"
 ---
 # <a name="live-response-command-examples"></a>Kommandobeispiele für Liveantworten
 
@@ -32,7 +32,7 @@ ms.locfileid: "52879120"
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Möchten Sie Defender für Endpunkt erleben? [Registrieren Sie sich für eine kostenlose Testversion.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> Möchten Sie Defender für Endpunkt erfahren? [Registrieren Sie sich für eine kostenlose Testversion](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
 Erfahren Sie mehr über allgemeine Befehle, die in der Liveantwort verwendet werden, und sehen Sie sich Beispiele dazu an, wie sie in der Regel verwendet werden.
 
@@ -118,6 +118,18 @@ getfile c:\Users\user\Desktop\work.txt -auto
 > Diese Dateitypen **werden** von [PowerShell](/powershell/scripting/overview?view=powershell-6/?&preserve-view=true)unterstützt.
 >
 > Verwenden Sie PowerShell als Alternative, wenn Sie Probleme bei der Verwendung dieses Befehls in Live Response haben.
+
+## <a name="library"></a>Bibliothek
+
+```console
+# List files in the library
+library
+```
+
+```console
+# Delete a file from the library
+library delete script.ps1
+```
 
 ## <a name="processes"></a>Prozesse
 ```console
@@ -238,15 +250,3 @@ undo scheduledtask Microsoft\Windows\Subscription\LicenseAcquisition
 undo file c:\Users\user\Desktop\malware.exe
 ```
 
-
-## <a name="library"></a>Bibliothek
-
-```console
-# List files in the library
-library
-```
-
-```console
-# Delete a file from the library
-library delete script.ps1
-```

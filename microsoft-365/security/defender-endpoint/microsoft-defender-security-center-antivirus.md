@@ -1,6 +1,6 @@
 ---
 title: Microsoft Defender Antivirus in der Windows-Sicherheit-App
-description: Da Microsoft Defender Antivirus jetzt in der Windows-Sicherheit App enthalten ist, können Sie allgemeine Aufgaben überprüfen, vergleichen und ausführen.
+description: Da Microsoft Defender Antivirus jetzt in der Windows-Sicherheit-App enthalten sind, können Sie allgemeine Aufgaben überprüfen, vergleichen und ausführen.
 keywords: Wdav, Antivirus, Firewall, Sicherheit, Fenster
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,17 +15,14 @@ ms.custom: nextgen
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 48ab72e9700e45cd4eab520a43d6f3d9ef18e227
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: c15e68a74c9bf518822fce211d6c7d5c4dbc3f2c
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52926535"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007446"
 ---
 # <a name="microsoft-defender-antivirus-in-the-windows-security-app"></a>Microsoft Defender Antivirus in der Windows-Sicherheit-App
-
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Gilt für:**
 
@@ -39,16 +36,16 @@ Einstellungen, die zuvor Teil des Windows Defender-Clients und haupt-Windows Ein
 > Durch das Deaktivieren des Windows-Sicherheit Center-Diensts wird Microsoft Defender Antivirus oder [Windows Defender Firewall](/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)nicht deaktiviert. Diese werden automatisch deaktiviert, wenn ein Antiviren- oder Firewallprodukt eines Drittanbieters installiert und auf dem neuesten Stand gehalten wird.
 >
 > Wenn Sie den Windows-Sicherheit Center-Dienst deaktivieren oder die zugehörigen Gruppenrichtlinieneinstellungen konfigurieren, um zu verhindern, dass er gestartet oder ausgeführt wird, zeigt die Windows-Sicherheit App möglicherweise veraltete oder ungenaue Informationen zu antiviren- oder Firewallprodukten an, die Sie auf dem Gerät installiert haben.
-> Es kann auch verhindern, dass Microsoft Defender Antivirus sich selbst aktiviert, wenn Sie über ein altes oder veraltetes Antivirenprogramm eines Drittanbieters verfügen oder wenn Sie Antivirenprodukte von Drittanbietern deinstallieren, die Sie möglicherweise zuvor installiert haben.
+> Es kann auch verhindern, dass Microsoft Defender Antivirus sich selbst aktivieren, wenn Sie über ein altes oder veraltetes Antivirenprogramm eines Drittanbieters verfügen oder wenn Sie Antivirenprodukte von Drittanbietern deinstallieren, die Sie möglicherweise zuvor installiert haben.
 > Dies verringert den Schutz Ihres Geräts erheblich und kann zu einer Infektion mit Schadsoftware führen.
 
 Weitere Informationen zu anderen Windows Sicherheitsfeatures, die in der App überwacht werden können, finden Sie im [artikel](/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) Windows-Sicherheit.
 
-Die Windows-Sicherheit-App ist eine Clientschnittstelle auf Windows 10 Version 1703 und höher. Es ist nicht das Microsoft Defender Security Center Webportal, das zum Überprüfen und Verwalten von [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)verwendet wird.
+Die Windows-Sicherheit-App ist eine Clientschnittstelle auf Windows 10, Version 1703 und höher. Es ist nicht das Microsoft Defender Security Center Webportal, das zum Überprüfen und Verwalten von [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint)verwendet wird.
 
 ## <a name="review-virus-and-threat-protection-settings-in-the-windows-security-app"></a>Überprüfen der Viren- und Bedrohungsschutzeinstellungen in der Windows-Sicherheit-App
 
-![Screenshot der Bezeichnung für die Einstellungen des Viren- und Bedrohungsschutzes in der Windows-Sicherheit-App](images/defender/wdav-protection-settings-wdsc.png)
+:::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Viren- und Bedrohungsschutzeinstellungen in Windows-Sicherheit App":::
 
 1. Öffnen Sie die Windows-Sicherheit App, indem Sie auf das Schildsymbol in der Taskleiste klicken oder das Startmenü nach **Defender** durchsuchen.
 
@@ -69,7 +66,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie einige der gängigsten Au
 
 ## <a name="review-the-security-intelligence-update-version-and-download-the-latest-updates-in-the-windows-security-app"></a>Überprüfen Sie die Version des Security Intelligence-Updates, und laden Sie die neuesten Updates in der Windows-Sicherheit-App herunter.
 
-![Informationen zur Versionsnummer der Security Intelligence](images/defender/wdav-wdsc-defs.png)
+:::image type="content" source="../../media/wdav-wdsc-defs.png" alt-text="Versionsnummer der Security Intelligence":::
 
 1. Öffnen Sie die Windows-Sicherheit App, indem Sie im Startmenü nach *Sicherheit* suchen und dann **Windows-Sicherheit** auswählen.
 
@@ -85,7 +82,7 @@ In den folgenden Abschnitten wird beschrieben, wie Sie einige der gängigsten Au
 
 2. Wählen Sie die Kachel **"Viren- & Bedrohungsschutz"** (oder das Schildsymbol auf der linken Menüleiste) aus.
 
-3. Wählen Sie **Einstellungen für den Viren- & Bedrohungsschutz aus.**
+3. Wählen Sie **Einstellungen für den Viren- & Bedrohungsschutz** aus.
 
 4. Umschalten des **Echtzeitschutzschalters** auf **"Ein".**
 

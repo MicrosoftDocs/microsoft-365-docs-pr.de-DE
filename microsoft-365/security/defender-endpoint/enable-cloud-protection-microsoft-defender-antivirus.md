@@ -10,17 +10,17 @@ localization_priority: normal
 ms.topic: conceptual
 author: denisebmsft
 ms.author: deniseb
-ms.date: 05/18/2021
+ms.date: 06/17/2021
 ms.reviewer: ''
 manager: dansimp
 ms.custom: nextgen
 ms.technology: mde
-ms.openlocfilehash: e7b7a0ba5c301829633c27f3add8f7f7daa70dfd
-ms.sourcegitcommit: be929f79751c0c52dfa6bd98a854432a0c63faf0
+ms.openlocfilehash: 694c09c5136f874550fa4a47586f3268ee2d0833
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52924707"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007182"
 ---
 # <a name="turn-on-cloud-delivered-protection"></a>Über die Cloud bereitgestellten Netzwerkschutz aktivieren
 
@@ -31,7 +31,7 @@ ms.locfileid: "52924707"
 - [Microsoft Defender für Endpunkt](/microsoft-365/security/defender-endpoint/)
 
 > [!NOTE]
-> Der Microsoft Defender Antivirus Clouddienst ist ein Mechanismus für die Bereitstellung eines aktualisierten Schutzes für Ihr Netzwerk und Ihre Endpunkte. Obwohl er als Clouddienst bezeichnet wird, ist er nicht nur Schutz für Dateien, die in der Cloud gespeichert sind. Stattdessen werden verteilte Ressourcen und maschinelles Lernen verwendet, um Schutz für Ihre Endpunkte in einer Geschwindigkeit bereitzustellen, die viel schneller als herkömmliche Security Intelligence-Updates ist.
+> Der Microsoft Defender Antivirus Clouddienst ist ein Mechanismus zum Bereitstellen eines aktualisierten Schutzes für Ihr Netzwerk und Ihre Endpunkte. Obwohl er als Clouddienst bezeichnet wird, ist er nicht nur Schutz für Dateien, die in der Cloud gespeichert sind. Stattdessen werden verteilte Ressourcen und maschinelles Lernen verwendet, um Schutz für Ihre Endpunkte in einer Geschwindigkeit bereitzustellen, die viel schneller als herkömmliche Security Intelligence-Updates ist.
 
 Microsoft Defender Antivirus verwendet mehrere Erkennungs- und Verhinderungstechnologien, um präzisen, echtzeitbasierten und intelligenten Schutz zu bieten. [Lernen Sie die fortschrittlichen Technologien](https://www.microsoft.com/security/blog/2019/06/24/inside-out-get-to-know-the-advanced-technologies-at-the-core-of-microsoft-defender-atp-next-generation-protection/)kennen, die den Kern des Schutzes der nächsten Generation von Microsoft Defender für Endpunkt darstellen.
 
@@ -44,7 +44,7 @@ Sie können Microsoft Defender Antivirus über die Cloud bereitgestellten Schutz
 
  Sie können sie auch in einzelnen Clients mit der Windows-Sicherheit-App aktivieren oder deaktivieren.
 
-Eine Übersicht über Microsoft Defender Antivirus über die Cloud bereitgestellten Schutz finden Sie unter Verwenden des über die Cloud bereitgestellten Schutzes von [Microsoft.](cloud-protection-microsoft-defender-antivirus.md)
+Eine Übersicht über Microsoft Defender Antivirus über die Cloud bereitgestellten Schutz finden Sie unter ["Über](cloud-protection-microsoft-defender-antivirus.md) die Cloud bereitgestellten Schutz von Microsoft".
 
 Weitere Informationen zu den spezifischen Anforderungen an die Netzwerkkonnektivität, um sicherzustellen, dass Ihre Endpunkte eine Verbindung mit dem über die Cloud bereitgestellten Schutzdienst herstellen können, finden Sie unter [Konfigurieren und Überprüfen von Netzwerkverbindungen.](configure-network-connections-microsoft-defender-antivirus.md)
 
@@ -55,7 +55,7 @@ Weitere Informationen zu den spezifischen Anforderungen an die Netzwerkkonnektiv
 
 1. Wechseln Sie zum Microsoft Endpoint Manager Admin Center ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ), und melden Sie sich an.
 
-2. Wählen Sie im **Bereich "Start"** die Option **"Gerätekonfiguration > Profile" aus.**
+2. Wählen Sie im **Bereich "Start"** die **Gerätekonfiguration > Profile aus.**
 
 3. Wählen Sie den **Profiltyp "Geräteeinschränkungen"** aus, den Sie konfigurieren möchten. Wenn Sie einen neuen Profiltyp für **Geräteeinschränkungen** erstellen müssen, lesen Sie die Informationen unter [Konfigurieren von Einstellungen für Geräteeinschränkungen in Microsoft Intune.](/intune/device-restrictions-configure)
 
@@ -94,7 +94,7 @@ Weitere Informationen zum Konfigurieren von Microsoft Endpoint Configuration Man
 
 3. Wählen Sie **Administrative Vorlagen** aus.
 
-4. Erweitern Sie die Struktur bis Windows **Komponenten > Microsoft Defender Antivirus > MAPS**
+4. Erweitern Sie die Struktur, um **komponenten > Microsoft Defender Antivirus > MAPS zu Windows**
 
 5. Doppelklicken Sie auf **"Microsoft MAPS beitreten".** Stellen Sie sicher, dass die Option aktiviert ist, und legen Sie sie auf **Basic MAPS** oder **Advanced MAPS** fest. Wählen Sie **OK** aus.
 
@@ -146,7 +146,7 @@ Weitere Informationen zu zulässigen Parametern finden Sie unter [Windows Defend
 
 2. Wählen Sie die Kachel **"Viren- & Bedrohungsschutz"** (oder das Schildsymbol auf der linken Menüleiste) und dann die Bezeichnung **"Viren & Bedrohungsschutzeinstellungen"** aus:
 
-    ![Screenshot der Bezeichnung für die Einstellungen des Viren- und Bedrohungsschutzes in der Windows-Sicherheit-App](images/defender/wdav-protection-settings-wdsc.png)
+    :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Screenshot der Einstellungen für den Viren- & Bedrohungsschutz":::
 
 3. Vergewissern Sie sich, dass **cloudbasierter Schutz** und **automatische Beispielübermittlung** auf **"Ein"** umgestellt sind.
 
@@ -162,4 +162,4 @@ Weitere Informationen zu zulässigen Parametern finden Sie unter [Windows Defend
 - [Defender-Cmdlets](/powershell/module/defender/)
 - [Verwenden des über die Cloud bereitgestellten Microsoft-Schutzes in Microsoft Defender Antivirus](cloud-protection-microsoft-defender-antivirus.md)
 - [Erstellen und Bereitstellen von Antischadsoftwarerichtlinien: Cloud-Schutzdienst](/configmgr/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)
-- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

@@ -12,15 +12,15 @@ ms.author: deniseb
 ms.reviewer: marcmcc
 manager: dansimp
 ms.custom: nextgen
-ms.date: 06/15/2021
+ms.date: 06/17/2021
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 3a5f766e21afcb29d3503345a49637061b5f0e38
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: a6bcc023571e544819ae7f276e6c3af5c1fc1335
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964700"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007398"
 ---
 # <a name="turn-on-block-at-first-sight"></a>Aktivieren von „Beim ersten Sichten blockieren“
 
@@ -82,7 +82,7 @@ Microsoft Defender Antivirus verwendet mehrere Erkennungs- und Präventionstechn
    - **Zeitverlängerung für Dateiüberprüfung durch die Cloud**: 50
    - **Benutzer vor Stichprobenübermittlung auffordern**: Alle Daten ohne Aufforderung senden
 
-   ![Intune-Konfiguration](images/defender/intune-block-at-first-sight.png)
+   :::image type="content" source="../../media/intune-block-at-first-sight.png" alt-text="Intune-Konfiguration beim ersten Sichten blockieren":::
 
 4. Speichern Sie Ihre Einstellungen.
 
@@ -136,7 +136,7 @@ Mit der Windows-Sicherheit-App können Sie überprüfen, ob „Beim ersten Sicht
 
 2. Wählen Sie **Viren- & Bedrohungsschutz** und dann unter **Einstellungen für Viren- & Bedrohungsschutz** die Option **Einstellungen verwalten** aus.
 
-   ![Screenshot der Bezeichnung für die Einstellungen des Viren- und Bedrohungsschutzes in der Windows-Sicherheit-App](images/defender/wdav-protection-settings-wdsc.png)
+   :::image type="content" source="../../media/wdav-protection-settings-wdsc.png" alt-text="Screenshot der Bezeichnung für die Einstellungen des Viren- und Bedrohungsschutzes in der Windows-Sicherheit-App":::
 
 3. Bestätigen Sie, dass **Aus der Cloud bereitgestellter Schutz** und **Automatische Übermittlung von Stichproben** beide aktiviert sind.
 

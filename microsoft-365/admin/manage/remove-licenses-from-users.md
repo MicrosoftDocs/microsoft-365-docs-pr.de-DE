@@ -19,31 +19,31 @@ ms.custom:
 - manage_licenses
 - commerce_licensing
 search.appverid: MET150
-description: Die methode, die Sie verwenden, um Produktlizenzen zuzuweisen, hängt davon ab, ob Sie Lizenzen von bestimmten Benutzern oder von einem bestimmten Produkt zuweisen.
+description: Die Methode zum Aufheben der Zuweisung von Produktlizenzen hängt davon ab, ob Sie die Zuweisung von Lizenzen von bestimmten Benutzern oder von einem bestimmten Produkt aufheben.
 ms.date: 07/01/2020
-ms.openlocfilehash: f7624432590a5731b57c45c25e7e7dc458a5b8f5
-ms.sourcegitcommit: 686f192e1a650ec805fe8e908b46ca51771ed41f
+ms.openlocfilehash: f79ffecc22fe4531076ccacd83c25e44b81052a6
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52623589"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006973"
 ---
 # <a name="unassign-licenses-from-users"></a>Aufheben der Zuweisung von Benutzerlizenzen
 
-Sie können lizenzen von Benutzern entweder auf der Seite **Aktive** Benutzer oder auf der Seite **Lizenzen zuweisen.** Die methode, die Sie verwenden, hängt davon ab, ob Sie Produktlizenzen von bestimmten Benutzern oder Benutzerlizenzen von einem bestimmten Produkt zuweisen möchten.
+Sie können die Zuweisung von Lizenzen von Benutzern entweder auf der Seite **"Aktive Benutzer"** oder auf der Seite **"Lizenzen"** aufheben. Die verwendete Methode hängt davon ab, ob Sie die Zuweisung von Produktlizenzen von bestimmten Benutzern aufheben oder die Zuweisung von Benutzerlizenzen für ein bestimmtes Produkt aufheben möchten.
 
 > [!NOTE]
 > Als Administrator können Sie keine Lizenzen für ein Self-Service-Kaufabonnement zuweisen oder aufheben, die von einem Benutzer in Ihrer Organisation erworben wurden. Sie können ein [Self-Service-Kaufabonnement übernehmen](../../commerce/subscriptions/manage-self-service-purchases-admins.md#take-over-a-self-service-purchase-subscription)und dann Lizenzen zuweisen oder die Zuweisung von Lizenzen kündigen.
 
 ## <a name="before-you-begin"></a>Bevor Sie beginnen
 
-- Sie müssen ein globaler, Lizenz-, Benutzeradministrator sein, um Lizenzen zuzuweisen. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](../add-users/about-admin-roles.md).
+- Sie müssen ein globaler, Lizenz- und Benutzeradministrator sein, um die Zuweisung von Lizenzen aufzuheben. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen von Microsoft 365](../add-users/about-admin-roles.md).
 - Sie können [Lizenzen von Benutzerkonten mit Office 365 PowerShell entfernen](../../enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell.md).
-- Sie können auch [Benutzerkonten löschen,](../add-users/delete-a-user.md) denen eine Lizenz zugewiesen wurde, um ihre Lizenz anderen Benutzern zur Verfügung zu stellen. Wenn Sie ein Benutzerkonto löschen, steht deren Lizenz sofort zur Verfügung, um sie einer anderen Person zuzuordnen.
+- Sie können auch [Benutzerkonten löschen,](../add-users/delete-a-user.md) denen eine Lizenz zugewiesen wurde, um ihre Lizenz anderen Benutzern zur Verfügung zu stellen. Wenn Sie ein Benutzerkonto löschen, ist die Lizenz sofort verfügbar, um es einer anderen Person zuzuweisen.
 
-## <a name="use-the-licenses-page-to-unassign-licenses"></a>Verwenden der Seite Lizenzen zum Ensign von Lizenzen
+## <a name="use-the-licenses-page-to-unassign-licenses"></a>Verwenden der Seite "Lizenzen" zum Aufheben der Zuweisung von Lizenzen
 
-Wenn Sie die Seite **Lizenzen** zum Zuweisen von Lizenzen verwenden, wird die Zuzuweisen von Lizenzen für ein bestimmtes Produkt für bis zu 20 Benutzer entfernt.
+Wenn Sie die Seite **"Lizenzen"** verwenden, um die Zuweisung von Lizenzen aufzuheben, heben Sie die Zuweisung von Lizenzen für ein bestimmtes Produkt für bis zu 20 Benutzer auf.
 
 ::: moniker range="o365-worldwide"
 
@@ -63,16 +63,16 @@ Wenn Sie die Seite **Lizenzen** zum Zuweisen von Lizenzen verwenden, wird die Zu
 
 ::: moniker-end
 
-2. Wählen Sie das Produkt aus, für das Sie Lizenzen zuweisen möchten.
-3. Wählen Sie die Benutzer aus, für die Sie lizenzen nicht mehr zuweisen möchten.
-4. Wählen **Sie Lizenzen nicht zuweisen aus.**
-5. Wählen Sie **im Feld Lizenzen nicht zuweisen** die Option **Unassign aus.**
+2. Wählen Sie das Produkt aus, für das Sie die Zuweisung von Lizenzen aufheben möchten.
+3. Wählen Sie die Benutzer aus, für die Sie die Zuweisung von Lizenzen aufheben möchten.
+4. Wählen Sie **"Lizenzen aufheben" aus.**
+5. Wählen Sie im Feld **"Lizenzen aufheben"** die Option **"Zuweisung aufheben"** aus.
 
-## <a name="use-the-active-users-page-to-unassign-licenses"></a>Verwenden der Seite Aktive Benutzer zum Zuweisen von Lizenzen
+## <a name="use-the-active-users-page-to-unassign-licenses"></a>Verwenden der Seite "Aktive Benutzer" zum Aufheben der Zuweisung von Lizenzen
 
-Wenn Sie die Seite **Aktive Benutzer** verwenden, um lizenzen zuzuweisen, wird die Zuzuweisen von Produktlizenzen von Benutzern entfernt.
+Wenn Sie die Seite **"Aktive Benutzer"** verwenden, um die Zuweisung von Lizenzen aufzuheben, heben Sie die Zuweisung von Produktlizenzen von Benutzern auf.
 
-### <a name="unassign-licenses-from-one-user"></a>Zuweisen von Lizenzen von einem Benutzer
+### <a name="unassign-licenses-from-one-user"></a>Aufheben der Zuweisung von Lizenzen von einem Benutzer
 
 ::: moniker range="o365-worldwide"
 
@@ -92,11 +92,11 @@ Wenn Sie die Seite **Aktive Benutzer** verwenden, um lizenzen zuzuweisen, wird d
 
 ::: moniker-end
 
-2. Wählen Sie die Zeile des Benutzers aus, für den Sie die Lizenz zuweisen möchten.
+2. Wählen Sie die Zeile des Benutzers aus, für den Sie die Zuweisung einer Lizenz aufheben möchten.
 3. Wählen Sie im rechten Bereich **Lizenzen und Apps** aus.
-4. Erweitern Sie **den Abschnitt Lizenzen,** löschen Sie die Felder für die Lizenzen, die Sie zuweisen möchten, und wählen Sie **Dann Änderungen speichern aus.**
+4. Erweitern Sie den Abschnitt **"Lizenzen",** deaktivieren Sie die Felder für die Lizenzen, die Sie die Zuweisung aufheben möchten, und wählen Sie dann **"Änderungen speichern"** aus.
 
-### <a name="unassign-licenses-from-multiple-users"></a>Zuweisen von Lizenzen von mehreren Benutzern
+### <a name="unassign-licenses-from-multiple-users"></a>Aufheben der Zuweisung von Lizenzen von mehreren Benutzern
 
 ::: moniker range="o365-worldwide"
 
@@ -116,26 +116,26 @@ Wenn Sie die Seite **Aktive Benutzer** verwenden, um lizenzen zuzuweisen, wird d
 
 ::: moniker-end
 
-2. Wählen Sie die Kreise neben den Namen der Benutzer aus, für die Sie Lizenzen zuweisen möchten.
-3. Wählen Sie oben die drei Punkte (weitere Aktionen) und dann **Produktlizenzen verwalten** aus.
-4. Wählen Sie im Bereich **Produktlizenzen verwalten** nacheinander **Vorhandenen Produktlizenzzuweisungen ersetzen** \> **Weiter** aus.
-5. Aktivieren Sie unten im Bereich Vorhandene  Produkte **ersetzen** das Kontrollkästchen Alle Produktlizenzen aus dem ausgewählten Benutzer entfernen, und wählen Sie dann **Schließen** \> **ersetzen aus.**
+2. Wählen Sie die Kreise neben den Namen der Benutzer aus, für die Sie die Zuweisung von Lizenzen aufheben möchten.
+3. Wählen Sie oben die Option **"Produktlizenzen verwalten" aus.**
+4. Wählen Sie im Bereich **"Produktlizenzen verwalten"** die Option **"Alle**  >  **Änderungen speichern aufheben"** aus.
+5. Wählen Sie unten im Bereich **"Fertig"** aus.  
 
-## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Was geschieht mit den Daten eines Benutzers, wenn Sie die Lizenz entfernen?
+## <a name="what-happens-to-a-users-data-when-you-remove-their-license"></a>Was geschieht mit den Daten eines Benutzers, wenn Sie seine Lizenz entfernen?
 
-- Wenn eine Lizenz von einem Benutzer entfernt wird, Exchange Onlinedaten, die diesem Konto zugeordnet sind, 30 Tage lang gespeichert. Nach der 30-tägigen Nachfrist werden die Daten gelöscht und können nicht wiederhergestellt werden.
-- In der OneDrive for Business gespeicherte Dateien werden nur gelöscht, wenn der Benutzer aus dem Microsoft 365 Admin Center gelöscht oder über die Active Directory-Synchronisierung entfernt wird. Weitere Informationen finden Sie unter [OneDrive Aufbewahrung und Löschung](/onedrive/retention-and-deletion).
-- Wenn die Lizenz entfernt wird, kann das Postfach des Benutzers nicht mehr mit einem eDiscovery-Tool wie inhaltssuche oder Advanced eDiscovery. Weitere Informationen finden Sie unter "Suchen getrennter oder nicht lizenzierter [Postfächer" unter Inhaltssuche in Microsoft 365](../../compliance/content-search.md).
-- Wenn Sie über ein Enterprise wie Office 365 Enterprise E3 verfügen, können Exchange Online die Postfachdaten eines gelöschten Benutzerkontos mithilfe inaktiver Postfächer [beibehalten.](../../compliance/inactive-mailboxes-in-office-365.md) Weitere Informationen finden Sie unter [Create and manage inactive mailboxes in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
-- Informationen zum Blockieren des Zugriffs eines Benutzers auf Microsoft 365 Daten nach dem Entfernen der Lizenz und zum anschließenden Zugriff auf die Daten finden Sie unter Entfernen eines ehemaligen [Mitarbeiters](../add-users/remove-former-employee.md).
-- Wenn Sie die Lizenz eines Benutzers entfernen und weiterhin Office Installierte Apps installiert haben, werden in [Office unlizenzierte](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) Produkt- und Aktivierungsfehler angezeigt, wenn Office apps verwenden.
+- Wenn eine Lizenz von einem Benutzer entfernt wird, werden Exchange Onlinedaten, die diesem Konto zugeordnet sind, 30 Tage lang aufbewahrt. Nach Ablauf der 30-tägigen Nachfrist werden die Daten gelöscht und können nicht wiederhergestellt werden.
+- In OneDrive for Business gespeicherte Dateien werden nicht gelöscht, es sei denn, der Benutzer wird aus dem Microsoft 365 Admin Center gelöscht oder über die Active Directory-Synchronisierung entfernt. Weitere Informationen finden Sie unter [OneDrive Aufbewahrung und Löschung.](/onedrive/retention-and-deletion)
+- Wenn die Lizenz entfernt wird, kann das Postfach des Benutzers nicht mehr mithilfe eines eDiscovery-Tools wie inhaltssuche oder Advanced eDiscovery durchsucht werden. Weitere Informationen finden Sie unter "Durchsuchen getrennter oder nicht lizenzierter Postfächer" in der [Inhaltssuche in Microsoft 365](../../compliance/content-search.md).
+- Wenn Sie über ein Enterprise Abonnement verfügen, z. B. Office 365 Enterprise E3, können Sie Exchange Online die Postfachdaten eines gelöschten Benutzerkontos mithilfe [inaktiver Postfächer](../../compliance/inactive-mailboxes-in-office-365.md)beibehalten. Weitere Informationen finden Sie unter [Erstellen und Verwalten inaktiver Postfächer in Exchange Online](../../compliance/create-and-manage-inactive-mailboxes.md).
+- Informationen dazu, wie Sie den Zugriff eines Benutzers auf Microsoft 365 Daten blockieren, nachdem die Lizenz entfernt wurde, und wie Sie danach Zugriff auf die Daten erhalten, finden Sie unter [Entfernen eines ehemaligen Mitarbeiters.](../add-users/remove-former-employee.md)
+- Wenn Sie die Lizenz eines Benutzers entfernen und er weiterhin Office Apps installiert hat, werden Office fehler [beim](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380) Verwenden Office Apps angezeigt.
 
 ## <a name="next-steps"></a>Nächste Schritte
 
-Wenn Sie die nicht verwendeten Lizenzen nicht anderen Benutzern [](../../commerce/licenses/buy-licenses.md) erneut zuweisen [möchten,](../../managed-desktop/get-started/assign-licenses.md)sollten Sie die Lizenzen aus Ihrem Abonnement entfernen, damit Sie nicht für mehr Lizenzen bezahlen, als Sie benötigen.
+Wenn Sie [die nicht verwendeten Lizenzen](../../managed-desktop/get-started/assign-licenses.md)nicht anderen Benutzern zuweisen möchten, sollten Sie [die Lizenzen aus Ihrem Abonnement entfernen,](../../commerce/licenses/buy-licenses.md) damit Sie nicht mehr Lizenzen bezahlen, als Sie benötigen.
 
 ## <a name="related-content"></a>Verwandte Inhalte
 
 [Entfernen von Lizenzen aus Ihrem Abonnement](../../commerce/licenses/buy-licenses.md) (Artikel)\
 [Zuweisen von Lizenzen zu Benutzern ](assign-licenses-to-users.md) (Artikel)\
-[Verstehen von Abonnements und Lizenzen in Microsoft 365 Business](../../commerce/licenses/subscriptions-and-licenses.md) (Artikel)
+[Grundlegendes zu Abonnements und Lizenzen in Microsoft 365 for Business](../../commerce/licenses/subscriptions-and-licenses.md) (Artikel)

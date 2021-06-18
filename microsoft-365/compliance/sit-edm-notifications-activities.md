@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Benachrichtigungen für exakte Datenübereinstimmungsaktivitäten (Vorschau)
+title: Erstellen von Benachrichtigungen für genaue Datenübereinstimmungsaktivitäten
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -17,14 +17,14 @@ search.appverid:
 - MET150
 description: Erfahren Sie, wie Sie Benachrichtigungen für genaue Datenübereinstimmungsaktivitäten erstellen.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e2f67ef0f276211483519bd5e246e4e041b2b15
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 15aa8f2bda76d56d3e35af8e884193193bb78d40
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919361"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53007561"
 ---
-# <a name="create-notifications-for-exact-data-match-activities-preview"></a>Erstellen von Benachrichtigungen für exakte Datenübereinstimmungsaktivitäten (Vorschau)
+# <a name="create-notifications-for-exact-data-match-activities"></a>Erstellen von Benachrichtigungen für genaue Datenübereinstimmungsaktivitäten
 
 Wenn Sie [benutzerdefinierte vertrauliche Informationstypen mit exakter Datenübereinstimmung (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md) erstellen, werden im [Überwachungsprotokoll](search-the-audit-log-in-security-and-compliance.md#requirements-to-search-the-audit-log) eine Reihe von Aktivitäten erstellt. Mit dem PowerShell-Cmdlet [New-ProtectionAlert](/powershell/module/exchange/new-protectionalert?view=exchange-ps) können Sie Benachrichtigungen erstellen, die Sie über folgende Aktivitäten informieren:
 
@@ -33,9 +33,6 @@ Wenn Sie [benutzerdefinierte vertrauliche Informationstypen mit exakter Datenüb
 - RemoveSchema
 - UploadDataFailed
 - UploadDataCompleted
-
-> [!NOTE]
-> Die Möglichkeit, Benachrichtigungen für EDM-Aktivitäten zu erstellen, ist nur für die World Wide- und GCC-Clouds verfügbar.
 
 ## <a name="pre-requisites"></a>Voraussetzungen
 

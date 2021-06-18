@@ -21,16 +21,16 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Machen Sie Ihr Unternehmen sicherer gegen Kennwortangriffe, verbieten Sie gängige Kennwörter und aktivieren Sie die risikobasierte mehrstufige Authentifizierung.
-ms.openlocfilehash: f42905c6bf7769e558581338fd122f26d530423e
-ms.sourcegitcommit: 17f0aada83627d9defa0acf4db03a2d58e46842f
+ms.openlocfilehash: f580ed957b8231bc68c5f21ea9af990808478382
+ms.sourcegitcommit: bbad1938b6661d4a6bca99f235c44e521b1fb662
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52635974"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "53006925"
 ---
 # <a name="password-policy-recommendations"></a>Empfehlungen für Kennwortrichtlinien
 
-Als Administrator einer Organisation sind Sie für das Einrichten der Kennwortrichtlinie für Benutzer in Ihrer Organisation verantwortlich. das Festlegen der Kennwortrichtlinie kann kompliziert und verwirrend sein, und dieser Artikel enthält Empfehlungen, wie Sie Ihre Organisation besser vor Kennwortangriffen schützen können.
+Als Administrator einer Organisation sind Sie für das Festlegen der Kennwortrichtlinie für Benutzer in Ihrer Organisation verantwortlich. Das Festlegen der Kennwortrichtlinie kann kompliziert und verwirrend sein und dieser Artikel enthält Empfehlungen, um Ihre Organisation vor Kennwortangriffen zu schützen.
   
 Um zu ermitteln, wie oft Microsoft 365-Kennwörter in Ihrer Organisation ablaufen, lesen Sie die Informationen unter [Festlegen der Kennwortablaufrichtlinie für Microsoft 365](../manage/set-password-expiration-policy.md).
 
@@ -112,7 +112,7 @@ Im Gegensatz dazu finden Sie hier einige Empfehlungen zur Förderung der Kennwor
   
 ### <a name="ban-common-passwords"></a>Häufig verwendete Kennwörter sperren
 
-Die wichtigste Kennwortanforderung, die Sie Ihren Benutzern bei der Erstellung von Kennwörtern auferlegen sollten, besteht darin, die Verwendung häufig verwendeter Kennwörter zu verbieten, um die Anfälligkeit Ihres Unternehmens für Brute-Force-Kennwortangriffe zu verringern. Häufig verwendete Benutzerkennwörter sind beispielsweise **abcdefg**, **Kennwort**, **123456**.
+Die wichtigste Kennwortanforderung, die Sie Ihren Benutzern bei der Erstellung von Kennwörtern auferlegen sollten, besteht darin, die Verwendung häufig verwendeter Kennwörter zu verbieten, um die Anfälligkeit Ihres Unternehmens für Brute-Force-Kennwortangriffe zu verringern. Häufig verwendete Benutzerkennwörter sind beispielsweise **abcdefg**, **Kennwort**, **Affe**.
   
 ### <a name="educate-users-to-not-re-use-organization-passwords-anywhere-else"></a>Weisen Sie die Benutzer an, keine Kennwörter der Organisation an anderer Stelle wiederzuverwenden
 
@@ -131,6 +131,8 @@ Durch die risikobasierte mehrstufige Authentifizierung wird sichergestellt, dass
 ## <a name="next-steps"></a>Nächste Schritte
 
 Möchten Sie mehr über das Verwalten von Kennwörtern erfahren? Hier finden Sie Leseempfehlungen:
+
+- [Leitfaden zu Microsoft-Kennwörtern](https://www.microsoft.com/research/wp-content/uploads/2016/06/Microsoft_Password_Guidance-1.pdf)
 
 - [Können starke Webkennwörter etwas bewirken?](https://go.microsoft.com/fwlink/p/?linkid=861008)
 
