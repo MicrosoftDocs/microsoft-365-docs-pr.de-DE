@@ -1,0 +1,10 @@
+- name: Planer für Microsoft 365
+  href: scheduler-overview.md
+- name: Vertrauen und Datenschutz
+  href: scheduler-trust-privacy.md
+- name: Einrichten des Planers für Microsoft 365
+  href: scheduler-setup.md
+- name: So verwenden Sie den Planer in Microsoft 365
+  href: scheduler-using.md
+- name: Planer für Microsoft 365 – Häufig gestellte Fragen
+  href: scheduler-faqs.md

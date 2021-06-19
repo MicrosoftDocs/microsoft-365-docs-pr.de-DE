@@ -530,6 +530,8 @@
 ####### [Suchen von Computern nach Tag](find-machines-by-tag.md)
 ####### [Fehlende KBs](get-missing-kbs-machine.md)
 ####### [Setzen des Gerätewerts](set-device-value.md)
+####### [Computer aktualisieren](update-machine-method.md)
+
 
 
 ###### [Computeraktion]()

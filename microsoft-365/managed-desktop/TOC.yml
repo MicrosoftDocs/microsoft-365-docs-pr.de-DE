@@ -34,6 +34,8 @@
           href: service-description/device-services.md
         - name: Geräteprofile
           href: service-description/profiles.md
+        - name: Gerätebereitstellungsgruppen
+          href: service-description/deployment-groups.md
         - name: Gerätekonfiguration
           href: service-description/device-policies.md
         - name: Sicherheitstechnologien
@@ -157,6 +159,8 @@
           href: working-with-managed-desktop/work-with-app-control.md
         - name: Ändern des Geräteprofils
           href: working-with-managed-desktop/change-device-profile.md
+        - name: Zuweisen von Geräten zur Bereitstellung
+          href: working-with-managed-desktop/assign-deployment-group.md
         - name: Entfernen von Geräten
           href: working-with-managed-desktop/remove-devices.md
         - name: Konfigurierbare Einstellungen

@@ -328,6 +328,8 @@
                       href: streaming-api-event-hub.md
                     - name: Streaming von Ereignissen der erweiterten Bedrohungssuche an Ihr Speicherkonto
                       href: streaming-api-storage.md
+                    - name: Konfigurieren Ihres Event-Hubs
+                      href: configure-event-hub.md
                 - name: Erweiterte Bedrohungssuche-API
                   href: api-advanced-hunting.md
                 - name: APIs von Vorfällen
