@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Wenn Sie eine Vertraulichkeitsbezeichnung erstellen, können Sie eine Bezeichnung automatisch Dateien und E-Mails zuweisen oder die Benutzer dazu auffordern, die von Ihnen empfohlene Bezeichnung auszuwählen.
-ms.openlocfilehash: 4215e6618c1cc6359755c2af1e7b9e93ca07b58d
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 49f50b99d6c1b46394e26447bd33b6bf93e2917f
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984808"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029003"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Automatisches Anwenden einer Vertraulichkeitsbezeichnung auf Inhalte
 
@@ -369,3 +369,17 @@ Weitere Informationen zu den PowerShell-Cmdlets, die automatische Bezeichnungsri
 - [Remove-AutoSensitivityLabelRule](/powershell/module/exchange/remove-autosensitivitylabelrule)
 - [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
 - [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)
+
+## <a name="tips-to-increase-labeling-reach"></a>Tipps zum Erhöhen der Kennzeichnungsreichweite
+
+Obwohl das automatische Bezeichnen eine der effizientesten Methoden zum Klassifizieren, Bezeichnen, und Schützen von Office-Dateien ist, die Ihrer Organisation gehören, überprüfen Sie, ob Sie sie mit einer zusätzlichen Methoden ergänzen können, um Ihre Bezeichnungsreichweite zu erhöhen:
+
+- Wenn Sie den [einheitlichen Bezeichnungs-Assistenten von Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2) verwenden:
+    
+    - Für Dateien in lokalen Datenspeichern, wie z. B. Netzwerkfreigaben und SharePoint-Server-Bibliotheken: Verwenden Sie [Scanner](/azure/information-protection/deploy-aip-scanner), um vertrauliche Informationen in diesen Dateien zu ermitteln und sie entsprechend zu bezeichnen. Wenn Sie planen, diese Dateien in SharePoint in Microsoft 365 zu verschieben oder hochzuladen, verwenden Sie den Scanner, um die Dateien zu bezeichnen, bevor Sie sie in die Cloud verschieben.
+    
+    - Wenn Sie vor der Verwendung von Vertraulichkeitsbezeichnungen eine andere Bezeichnungslösung verwendet haben: Verwenden Sie PowerShell und [eine erweiterte Einstellung zum Wiederzuverwenden der Bezeichnungen](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#migrate-labels-from-secure-islands-and-other-labeling-solutions) aus diesen Lösungen.
+
+- Fördern Sie die [manuelle Bezeichnung](https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9), nachdem Sie die Benutzer darüber geschult haben, welche Bezeichnungen angewendet werden sollen. Wenn Sie sicher sind, dass Benutzer wissen, welche Bezeichnung angewendet werden soll, erwägen Sie eine Standardbezeichnung und das obligatorische Bezeichnen als [Richtlinieneinstellungen](sensitivity-labels.md#what-label-policies-can-do) zu konfigurieren. 
+
+Erwägen Sie außerdem die Einstellung [neue Dateien standardmäßig als vertraulich markieren](/sharepoint/sensitive-by-default) in SharePoint einzurichten, um Gäste daran zu hindern, auf neu hinzugefügte Dateien zuzugreifen, bis mindestens eine DLP-Richtlinie den Inhalt der Datei überprüft hat.

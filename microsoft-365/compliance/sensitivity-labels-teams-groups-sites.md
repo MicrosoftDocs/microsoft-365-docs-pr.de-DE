@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Verwenden Sie Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in SharePoint- und Microsoft Teams-Websites sowie in Microsoft 365-Gruppen.
-ms.openlocfilehash: 6baca2e24e50bd3ee418da994adcfbe7fca8338c
-ms.sourcegitcommit: 5377b00703b6f559092afe44fb61462e97968a60
+ms.openlocfilehash: 8c19853730376e36ffe7ac136e7fc6036b8b5f12
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694401"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028979"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Vertraulichkeitsbezeichnungen zum Schutz von Inhalten in Microsoft Teams, Microsoft 365-Gruppen und SharePoint-Websites verwenden
 
@@ -163,20 +163,6 @@ Nicht alle Apps unterstützen Authentifizierungskontexte. Wenn ein Benutzer mit 
     - Android: Wird noch nicht unterstützt
 
 Bekannte Einschränkungen bei dieser Vorschau:
-
-- Dieses Feature gilt weiterhin für einige Mandanten. Wenn die Richtlinie für den bedingten Zugriff mit dem ausgewählten Authentifizierungskontext nicht wirksam wird, wenn ein Benutzer auf die Website zugreift, können Sie mithilfe von PowerShell überprüfen, ob die Konfiguration korrekt ist und alle Voraussetzungen erfüllt sind. Sie müssen die Vertraulichkeitsbezeichnung von der Website entfernen und dann die Website für den Authentifizierungskontext konfigurieren, indem Sie das [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite)-Cmdlet aus der aktuellen [SharePoint Online Management Shell](/powershell/sharepoint/sharepoint-online/connect-sharepoint-online) verwenden. Wenn diese Methode funktioniert, warten Sie einige weitere Tage, bevor Sie erneut versuchen, die Vertraulichkeitsbezeichnung anzuwenden.
-    
-    So testen Sie den Authentifizierungskontext mithilfe von PowerShell:
-    
-    ```powershell
-    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName "Name of authentication context"
-    ```
-    
-    So entfernen Sie den Authentifizierungskontext, damit Sie versuchen können, die Vertraulichkeitsbezeichnung erneut anzuwenden:
-    
-    ```powershell
-    Set-SPOSite -Identity <site url> -ConditionalAccessPolicy AuthenticationContext -AuthenticationContextName ""
-    ```
 
 - Bei der OneDrive-Synchronisierungs-App: wird nur für OneDrive und nicht für andere Sites unterstützt.
 
@@ -429,13 +415,19 @@ Informationen zum Verwalten der Koexistenz von Vertraulichkeitsbezeichnungen und
 
 Wenn jemand ein Dokument auf eine Website hochlädt, die mit einer Vertraulichkeitsbezeichnung geschützt ist, und das Dokument eine Vertraulichkeitsbezeichnung mit [höherer Priorität](sensitivity-labels.md#label-priority-order-matters) als die auf die Website angewendete Vertraulichkeitsbezeichnung aufweist, wird diese Aktion nicht blockiert. Angenommen, Sie haben die Bezeichnung **Allgemein** auf eine SharePoint-Website angewendet, und jemand lädt ein Dokument mit der Bezeichnung **Vertraulich** auf diese Site hoch. Da eine Vertraulichkeitsbezeichnung mit einer höheren Priorität Inhalte kennzeichnet, die eine höhere Vertraulichkeitsstufe aufweisen, als Inhalte mit einer niedrigeren Priorität, könnte dies ein Sicherheitsrisiko darstellen.
 
-Obwohl die Aktion nicht blockiert ist, wird sie überwacht und generiert automatisch eine E-Mail-Nachricht an die Person, die das Dokument hochgeladen hat und den Websiteadministrator. Als Resultat können der Benutzer und der Administrator Dokumente mit abweichender Bezeichnungspriorität identifizieren und bei Bedarf Maßnahmen ergreifen. Löschen oder verschieben Sie zum Beispiel das hochgeladene Dokument von der Website.
+Obwohl die Aktion nicht blockiert ist, wird sie überwacht und generiert standardmäßig automatisch eine E-Mail-Nachricht an die Person, die das Dokument hochgeladen hat und den Websiteadministrator. Als Resultat können der Benutzer und der Administrator Dokumente mit abweichender Bezeichnungspriorität identifizieren und bei Bedarf Maßnahmen ergreifen. Löschen oder verschieben Sie zum Beispiel das hochgeladene Dokument von der Website.
 
 Es würde kein Sicherheitsrisiko darstellen, wenn die auf ein Dokument angewendete Vertraulichkeitsbezeichnung eine niedrigere Priorität aufweist als die auf die Website angewendete Vertraulichkeitsbezeichnung. Angenommen, ein Dokument, das als **Allgemein** bezeichnet ist, wird auf eine Website hochgeladen, die mit **Vertraulich** bezeichnet ist. In diesem Szenario wird kein Überwachungsereignis und keine E-Mail erzeugt.
 
 Um das Überwachungsprotokoll nach diesem Ereignis zu durchsuchen, suchen Sie nach **Konflikt in Bezug auf die Vertraulichkeitsbezeichnung eines Dokuments** aus der Kategorie **Datei- und Seitenaktivitäten**.
 
 Die automatisch generierte E-Mail-Nachricht enthält den Betreff **Inkompatible Vertraulichkeitskennzeichnung erkannt** und in der E-Mail-Nachricht wird der Konflikt der Kennzeichnung mit einem Link zum hochgeladenen Dokument und der Website erläutert. Sie enthält außerdem einen Link zur Dokumentation, in der erläutert wird, wie Benutzer die Vertraulichkeitskennzeichnung ändern können. Derzeit können diese automatisierten E-Mails nicht deaktiviert oder angepasst werden.
+
+Um diese automatisch generierte E-Mail zu verhindern, verwenden Sie den folgenden PowerShell-Befehl aus [Set-SPOSite-](/powershell/module/sharepoint-online/set-sposite):
+
+```PowerShell
+Set-SPOTenant -BlockSendLabelMismatchEmail $True
+```
 
 Wenn jemand einer Website oder Gruppe eine Vertraulichkeitsbezeichnung hinzufügt oder eine Vertraulichkeitsbezeichnung von einer Website oder Gruppe entfernt, werden diese Aktivitäten ebenfalls überwacht, jedoch wird nicht automatisch eine E-Mail erzeugt.
 
