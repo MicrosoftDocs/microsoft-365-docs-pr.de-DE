@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: a6e11aea14a7b8d99c0098b68951790328ec593e
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 567916e9e1a1d96d77bc6c187b384a1ec3be72a5
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782909"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022708"
 ---
 # <a name="investigate-alerts-in-microsoft-365-defender"></a>Untersuchen von Warnungen in Microsoft 365 Defender
 
@@ -38,15 +38,15 @@ ms.locfileid: "52782909"
 
 Warnungen sind die Basis aller Vorfälle und weisen auf das Auftreten bösartiger oder verdächtiger Ereignisse in Ihrer Umgebung hin. Warnungen sind in der Regel Teil eines umfassenderen Angriffs und liefern Hinweise zu einem Vorfall.
 
-In Microsoft 365 Defender werden verwandte Warnungen zu [Vorfällen](incidents-overview.md)zusammengefasst. Vorfälle bieten immer den umfassenderen Kontext eines Angriffs, die Analyse von Warnungen kann jedoch hilfreich sein, wenn eine ausführlichere Analyse erforderlich ist. 
+In Microsoft 365 Defender werden zugehörige Warnungen zu [Vorfällen](incidents-overview.md)zusammengefasst. Vorfälle bieten immer den umfassenderen Kontext eines Angriffs, die Analyse von Warnungen kann jedoch hilfreich sein, wenn eine ausführlichere Analyse erforderlich ist. 
 
-Die **Warnungswarteschlange** zeigt den aktuellen Satz von Warnungen an. Sie gelangen zur **Warnungswarteschlange von Vorfällen & Warnungen > Warnungen** in der Schnellstartleiste des Microsoft 365 Security Centers ([security.microsoft.com](https://security.microsoft.com)).
+Die **Warnungswarteschlange** zeigt den aktuellen Satz von Warnungen an. Sie gelangen in der Schnellstartleiste des Microsoft 365 Defender-Portals ( security.microsoft.com ) von **Vorfällen & Warnungen > Warnungen** in die Warnungswarteschlange.[](https://security.microsoft.com)
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Beispiel für die Warnungswarteschlange":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-queue.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-queue.png" alt-text="Beispiel für die Warnungswarteschlange":::
 
 Hier werden Warnungen von verschiedenen Microsoft-Sicherheitslösungen wie Microsoft Defender für Endpunkt, Microsoft Defender für Office 365 und Microsoft 365 Defender angezeigt.
 
-Standardmäßig zeigt die Warnungswarteschlange im Microsoft 365 Security Center die neuen und laufenden Warnungen der letzten 30 Tage an. Die letzte Warnung befindet sich oben in der Liste, sodass Sie sie zuerst sehen können. 
+Standardmäßig zeigt die Warnungswarteschlange im Microsoft 365 Defender-Portal die neuen und laufenden Warnungen der letzten 30 Tage an. Die letzte Warnung befindet sich oben in der Liste, sodass Sie sie zuerst sehen können. 
 
 In der Standardbenachrichtigungswarteschlange können Sie **Filter** auswählen, um einen **Filterbereich** anzuzeigen, aus dem Sie eine Teilmenge der Warnungen angeben können. Im Folgenden sehen Sie ein Beispiel.
 
@@ -66,7 +66,7 @@ Sie können Warnungen nach folgenden Kriterien filtern:
 
 Um die Hauptwarnungsseite anzuzeigen, wählen Sie den Namen der Warnung aus. Im Folgenden sehen Sie ein Beispiel.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Beispiel für die Detailseite einer Warnung im Microsoft 365 Security Center":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Beispiel für die Detailseite einer Warnung im Microsoft 365 Defender Portal":::
 
 Sie können auch die Aktion **"Hauptwarnungsseite öffnen"** im **Warnungsbereich "Verwalten"** auswählen.
 
@@ -75,12 +75,12 @@ Eine Warnungsseite besteht aus folgenden Abschnitten:
 - Warnungsartikel, bei dem es sich um die Kette von Ereignissen und Warnungen im Zusammenhang mit dieser Warnung in chronologischer Reihenfolge handelt
 - Zusammenfassungsdetails
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Beispiel für die Detailseite einer Warnung im Microsoft 365 Security Center":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-main.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-main.png" alt-text="Beispiel für die Detailseite einer Warnung im Microsoft 365 Defender Portal":::
 
 Auf einer Warnungsseite können Sie die Ellipsen (**...**) neben einer beliebigen Entität auswählen, um verfügbare Aktionen anzuzeigen, z. B. das Öffnen der Warnungsseite oder das Verknüpfen der Warnung mit einem anderen Vorfall.
 
 ### <a name="alert-sources"></a>Warnungsquellen
-Microsoft 365 Defender-Warnungen können von Lösungen wie Microsoft Defender für Endpunkt, Microsoft Defender für Office 365 und Microsoft Cloud App Security stammen. Möglicherweise werden Warnungen mit vorangestellten Zeichen in der Warnung angezeigt. Die folgende Tabelle enthält Anleitungen, die Ihnen dabei helfen, die Zuordnung von Warnungsquellen basierend auf dem vorangestellten Zeichen der Warnung zu verstehen.
+Microsoft 365 Defender Warnungen können von Lösungen wie Microsoft Defender für Endpunkt, Microsoft Defender für Office 365 und Microsoft Cloud App Security stammen. Möglicherweise werden Warnungen mit vorangestellten Zeichen in der Warnung angezeigt. Die folgende Tabelle enthält Anleitungen, die Ihnen dabei helfen, die Zuordnung von Warnungsquellen basierend auf dem vorangestellten Zeichen der Warnung zu verstehen.
 
 > [!NOTE]
 > - Die vorangestellten GUIDs sind nur für einheitliche Umgebungen wie einheitliche Warnungswarteschlange, Seite für einheitliche Warnungen, einheitliche Untersuchung und einheitliche Vorfälle spezifisch.<br>
@@ -94,13 +94,11 @@ Microsoft Defender für Endpunkt | `da` oder `ed` für benutzerdefinierte Erkenn
 Microsoft Defender for Identity | `aa{GUID}` <br> Beispiel: `aa123a456b-c789-1d2e-12f1g33h445h6i` 
 Microsoft Cloud App Security |`ca{GUID}` <br> Beispiel: `ca123a456b-c789-1d2e-12f1g33h445h6i` 
 
-
-
 ### <a name="analyze-affected-assets"></a>Analysieren betroffener Ressourcen
 
 Der Abschnitt **"Durchgeführte Aktionen"** enthält eine Liste der betroffenen Ressourcen, z. B. Postfächer, Geräte und Benutzer, die von dieser Warnung betroffen sind. 
 
-Sie können auch **im Info-Center** anzeigen auswählen, um die Registerkarte **"Verlauf"** des **Info-Centers** im Microsoft 365 Security Center anzuzeigen. 
+Sie können auch **im Info-Center** anzeigen auswählen, um die Registerkarte **"Verlauf"** des **Info-Centers** im Microsoft 365 Defender-Portal anzuzeigen. 
 
 ### <a name="trace-an-alerts-role-in-the-alert-story"></a>Nachverfolgen der Rolle einer Warnung im Warnungsartikel
 
@@ -143,7 +141,7 @@ In diesem Bereich können Sie auch die folgenden zusätzlichen Aktionen ausführ
 
 Im Folgenden sehen Sie ein Beispiel.
 
-:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Beispiel für die Aktionen für eine Warnung im Microsoft 365 Security Center":::
+:::image type="content" source="../../media/investigate-alerts/alerts-ss-alerts-actions.png" lightbox="../../media/investigate-alerts/alerts-ss-alerts-actions.png" alt-text="Beispiel für die Aktionen für eine Warnung im Microsoft 365 Defender Portal":::
 
 Die Liste der zusätzlichen Aktionen hängt vom Typ der Warnung ab.
 
@@ -151,7 +149,7 @@ Die Liste der zusätzlichen Aktionen hängt vom Typ der Warnung ab.
 
 Sobald Sie mit der Analyse einer Warnung fertig sind und sie aufgelöst werden kann, wechseln Sie zum **Warnungsbereich "Warnung verwalten"** für die Warnung, und markieren Sie den Status **"Gelöst",** und klassifizieren Sie sie als **"False"** oder **"True".** Geben Sie für echte Warnungen den Bedrohungstyp der Warnung im **Feld "Bestimmung"** an.
 
-Das Klassifizieren von Warnungen und die Angabe ihrer Bestimmung trägt dazu bei, Microsoft 365 Defender so zu optimieren, dass mehr echte und weniger falsche Warnungen bereitgestellt werden.
+Das Klassifizieren von Warnungen und die Angabe ihrer Bestimmung hilft bei der Optimierung Microsoft 365 Defender, um mehr echte und weniger falsche Warnungen bereitzustellen.
 
 ## <a name="next-steps"></a>Nächste Schritte
 

@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 5742c121b73eb8709e770c9b2c4da6dbfd942276
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: ad8b2030da4fb4815eb71ca53fb2dbac67a05d79
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984856"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022390"
 ---
 # <a name="export-secure-configuration-assessment-per-device"></a>Exportieren der Bewertung der sicheren Konfiguration pro Gerät
 
@@ -39,7 +39,7 @@ Gibt alle Konfigurationen und deren Status pro Gerät zurück.
 
 Es gibt verschiedene API-Aufrufe, um unterschiedliche Arten von Daten abzurufen. Da die Datenmenge groß sein kann, gibt es zwei Möglichkeiten, sie abzurufen:
 
-- [Exportieren Sie **OData**](#1-export-secure-configuration-assessment-odata)zur Bewertung der sicheren Konfiguration: Die API ruft alle Daten in Ihrer Organisation als JSON-Antworten nach dem OData-Protokoll ab. Diese Methode eignet sich am besten für _kleine Organisationen mit weniger als 100-K-Geräten._ Die Antwort ist paginiert, sodass Sie das \@ Feld odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen.
+- [Exportieren Der **JSON-Antwort** zur sicheren Konfigurationsbewertung:](#1-export-secure-configuration-assessment-json-response)Die API ruft alle Daten in Ihrer Organisation als JSON-Antworten ab. Diese Methode eignet sich am besten für _kleine Organisationen mit weniger als 100-K-Geräten._ Die Antwort ist paginiert, sodass Sie das \@ Feld odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen.
 
 - Exportieren der [Bewertung der sicheren Konfiguration **über Dateien:**](#2-export-secure-configuration-assessment-via-files)Diese API-Lösung ermöglicht das schnellere und zuverlässigere Abrufen größerer Datenmengen. Daher wird es für große Organisationen mit mehr als 100-K-Geräten empfohlen. Diese API ruft alle Daten in Ihrer Organisation als Downloaddateien ab. Die Antwort enthält URLs zum Herunterladen aller Daten aus Azure Storage. Mit dieser API können Sie alle Ihre Daten aus Azure Storage wie folgt herunterladen:
 
@@ -53,7 +53,7 @@ Daten, die gesammelt werden (entweder mit _OData_ oder _über Dateien),_ sind di
 >
 > Sofern nicht anders angegeben, sind alle aufgeführten Exportbewertungsmethoden **_vollständige Exporte_** und **_nach Gerät_** (auch als **_pro Gerät_** bezeichnet).
 
-## <a name="1-export-secure-configuration-assessment-odata"></a>1. Exportieren der Bewertung der sicheren Konfiguration (OData)
+## <a name="1-export-secure-configuration-assessment-json-response"></a>1. Exportieren der Bewertung der sicheren Konfiguration (JSON-Antwort)
 
 ### <a name="11-api-method-description"></a>1.1 API-Methodenbeschreibung
 
@@ -71,7 +71,7 @@ Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Wei
 
 Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 ---|---|---
-Application | Vulnerability.Read.All | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
+Anwendung | Vulnerability.Read.All | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Vulnerability.Read | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
 
 ### <a name="13-url"></a>1.3 URL
@@ -102,15 +102,15 @@ ConfigurationId | string | Eindeutiger Bezeichner für eine bestimmte Konfigurat
 ConfigurationImpact | string | Bewertung der Auswirkungen der Konfiguration auf die Gesamtkonfigurationsbewertung (1-10) | 9 
 ConfigurationName | string | Anzeigename der Konfiguration | Geräte in Microsoft Defender für Endpunkt onboarden
 ConfigurationSubcategory | string | Unterkategorie oder Untergruppe, zu der die Konfiguration gehört. In vielen Fällen beschreibt dies bestimmte Funktionen oder Features. | Onboarding von Geräten
-Deviceid | string | Eindeutiger Bezeichner für das Gerät im Dienst. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName | string | Vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des Geräts. | johnlaptop.europe.contoso.com
+Deviceid | Zeichenfolge | Eindeutiger Bezeichner für das Gerät im Dienst. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName | Zeichenfolge | Vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des Geräts. | johnlaptop.europe.contoso.com
 IsApplicable | bool | Gibt an, ob die Konfiguration oder Richtlinie anwendbar ist. | true
 IsCompliant | bool | Gibt an, ob die Konfiguration oder Richtlinie ordnungsgemäß konfiguriert ist | false
 IsExpectedUserImpact | bool | Gibt an, ob es Auswirkungen auf den Benutzer gibt, wenn die Konfiguration angewendet wird. | true
-OSPlatform | string | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. Ausführliche Informationen finden Sie unter tvm-unterstützte Betriebssysteme und Plattformen. | Windows 10
-RbacGroupName | string | Die Rollenbasierte Zugriffssteuerungsgruppe (RBAC). Wenn dieses Gerät keiner RBAC-Gruppe zugewiesen ist, lautet der Wert "Nicht zugewiesen". Wenn die Organisation keine RBAC-Gruppen enthält, lautet der Wert "None". | Server
-RecommendationReference | string | Ein Verweis auf die Empfehlungs-ID im Zusammenhang mit dieser Software. | sca-_-scid-20000
-Zeitstempel | string | Zeitpunkt, zu dem die Konfiguration zuletzt auf dem Gerät angezeigt wurde | 2020-11-03 10:13:34.8476880
+OSPlatform | Zeichenfolge | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. Ausführliche Informationen finden Sie unter tvm-unterstützte Betriebssysteme und Plattformen. | Windows 10
+RbacGroupName | Zeichenfolge | Die Rollenbasierte Zugriffssteuerungsgruppe (RBAC). Wenn dieses Gerät keiner RBAC-Gruppe zugewiesen ist, lautet der Wert "Nicht zugewiesen". Wenn die Organisation keine RBAC-Gruppen enthält, lautet der Wert "None". | Server
+RecommendationReference | Zeichenfolge | Ein Verweis auf die Empfehlungs-ID im Zusammenhang mit dieser Software. | sca-_-scid-20000
+Zeitstempel | Zeichenfolge | Zeitpunkt, zu dem die Konfiguration zuletzt auf dem Gerät angezeigt wurde | 2020-11-03 10:13:34.8476880
 
 ### <a name="16-examples"></a>1.6 Beispiele
 
@@ -232,7 +232,7 @@ Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Wei
 
 Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 ---|---|---
-Application | Vulnerability.Read.All | \'Sicherheitsrisikoinformationen "Bedrohungs- und Sicherheitsrisikomanagement" lesen\'
+Anwendung | Vulnerability.Read.All | \'Sicherheitsrisikoinformationen "Bedrohungs- und Sicherheitsrisikomanagement" lesen\'
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Vulnerability.Read | \'Sicherheitsrisikoinformationen "Bedrohungs- und Sicherheitsrisikomanagement" lesen\'
 
 ### <a name="23-url"></a>2.3 URL
@@ -258,7 +258,7 @@ GET /api/machines/SecureConfigurationsAssessmentExport
 Eigenschaft (ID) | Datentyp | Beschreibung | Beispiel für einen zurückgegebenen Wert
 :---|:---|:---|:---
 Exportieren von Dateien | \[Arrayzeichenfolge\] | Eine Liste der Download-URLs für Dateien, die die aktuelle Momentaufnahme der Organisation enthalten | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
-GeneratedTime | string | Die Zeit, zu der der Export generiert wurde. | 2021-05-20T08:00:00Z ]
+GeneratedTime | Zeichenfolge | Die Zeit, zu der der Export generiert wurde. | 2021-05-20T08:00:00Z ]
 
 ### <a name="26-examples"></a>2.6 Beispiele
 

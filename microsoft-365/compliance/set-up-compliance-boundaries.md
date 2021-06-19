@@ -19,18 +19,18 @@ search.appverid:
 ms.assetid: 1b45c82f-26c8-44fb-9f3b-b45436fe2271
 description: Erfahren Sie, wie Sie Compliance-Begrenzungen verwenden, um logische Grenzen zu erstellen, die die Speicherorte von Benutzerinhalten steuern, die ein eDiscovery-Manager in Microsoft 365 durchsuchen kann.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1a84bc77cb78a9da3cfe873849a4148e55501137
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 23ff50b9cd0ab0178962f7be9f1cedfbd6a7a1f7
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878028"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022342"
 ---
 # <a name="set-up-compliance-boundaries-for-ediscovery-investigations"></a>Einrichten von Compliancegrenzen für eDiscovery-Untersuchungen
 
 Die Anleitungen in diesem Artikel können angewendet werden, wenn Sie entweder Core eDiscovery oder Advanced eDiscovery verwenden, um Untersuchungen zu verwalten.
 
-Compliance-Begrenzungen erstellen logische Grenzen innerhalb einer Organisation, die die Speicherorte von Benutzerinhalten (z. B. Postfächer, OneDrive Konten und SharePoint Websites) steuern, die eDiscovery-Manager durchsuchen können. Außerdem steuern Compliance-Begrenzungen, wer auf eDiscovery-Fälle zugreifen kann, die zur Verwaltung der Rechts-, Personal- oder anderen Untersuchungen in Ihrer Organisation verwendet werden. Die Notwendigkeit von Compliance-Begrenzungen ist häufig für multinationale Unternehmen erforderlich, die geografische Aufsichtsbereiche und Vorschriften berücksichtigen müssen, und für Behörden, die häufig in verschiedene Behörden unterteilt sind. In Microsoft 365 helfen Ihnen Compliance-Grenzen, diese Anforderungen zu erfüllen, wenn Sie Inhaltssuchen durchführen und Untersuchungen mit eDiscovery-Fällen verwalten.
+Compliancegrenzen erstellen logische Grenzen innerhalb einer Organisation, die die Speicherorte von Benutzerinhalten (z. B. Postfächer, OneDrive Konten und SharePoint Websites) steuern, die eDiscovery-Manager durchsuchen können. Außerdem steuern Compliance-Begrenzungen, wer auf eDiscovery-Fälle zugreifen kann, die zur Verwaltung der Rechts-, Personal- oder anderen Untersuchungen in Ihrer Organisation verwendet werden. Die Notwendigkeit von Compliance-Begrenzungen ist häufig für multinationale Unternehmen erforderlich, die geografische Aufsichtsbereiche und Vorschriften berücksichtigen müssen, und für Behörden, die häufig in verschiedene Behörden unterteilt sind. In Microsoft 365 helfen Ihnen Compliance-Grenzen, diese Anforderungen zu erfüllen, wenn Sie Inhaltssuchen durchführen und Untersuchungen mit eDiscovery-Fällen verwalten.
   
 Wir verwenden das Beispiel in der folgenden Abbildung, um zu erläutern, wie Compliance-Grenzen funktionieren.
   
@@ -40,9 +40,9 @@ In diesem Beispiel ist Contoso LTD eine Organisation, die aus zwei Tochtergesell
   
 - Die Suchberechtigungsfilterfunktion in der Inhaltssuche steuert die Inhaltsspeicherorte, die eDiscovery-Manager und Ermittler durchsuchen können. Dies bedeutet, dass eDiscovery-Manager und -Ermittler in der Fourth Coffee-Organisation nur Inhaltsspeicherorte in der Fourth Coffee-Niederlassung durchsuchen können. Die gleiche Einschränkung gilt für die Coho Winery-Tochtergesellschaft.
 
-- Rollengruppen stellen die folgenden Funktionen für Compliancegrenzen bereit:
+- [Rollengruppen](assign-ediscovery-permissions.md#rbac-roles-related-to-ediscovery) stellen die folgenden Funktionen für Compliancegrenzen bereit:
 
-  - Steuern, wer die eDiscovery-Fälle im Security & Compliance Center sehen kann. Dies bedeutet, dass eDiscovery-Manager und -Ermittler nur eDiscovery-Fälle in ihrer Organisation anzeigen können.
+  - Steuern, wer die eDiscovery-Fälle im Microsoft 365 Compliance Center sehen kann. Dies bedeutet, dass eDiscovery-Manager und -Ermittler nur eDiscovery-Fälle in ihrer Organisation anzeigen können.
 
   - Steuern, wer Einem eDiscovery-Fall Mitglieder zuweisen kann. Dies bedeutet, dass eDiscovery-Manager und -Ermittler nur den Fällen, von denen sie Mitglied sind, Mitglieder zuordnen können.
 
@@ -52,29 +52,21 @@ Hier sehen Sie den Prozess zum Einrichten von Compliance-Begrenzungen:
   
 [Schritt 1: Identifizieren eines Benutzerattributs zum Definieren Ihrer Behörden](#step-1-identify-a-user-attribute-to-define-your-agencies)
 
-[Schritt 2: Senden einer Anforderung an den Microsoft-Support zum Synchronisieren des Benutzerattributs mit OneDrive Konten](#step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts)
+[Schritt 2: Erstellen einer Rollengruppe für jede Organisation](#step-2-create-a-role-group-for-each-agency)
 
-[Schritt 3: Erstellen einer Rollengruppe für jede Organisation](#step-3-create-a-role-group-for-each-agency)
+[Schritt 3: Erstellen eines Suchberechtigungsfilters zum Erzwingen der Compliancegrenze](#step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
 
-[Schritt 4: Erstellen eines Suchberechtigungsfilters zum Erzwingen der Compliancegrenze](#step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary)
-
-[Schritt 5: Erstellen eines eDiscovery-Falls für organisationsinterne Untersuchungen](#step-5-create-an-ediscovery-case-for-intra-agency-investigations)
+[Schritt 4: Erstellen eines eDiscovery-Falls für organisationsinterne Untersuchungen](#step-4-create-an-ediscovery-case-for-intra-agency-investigations)
 
 ## <a name="before-you-set-up-compliance-boundaries"></a>Vor dem Einrichten von Compliance-Begrenzungen
 
-Sie müssen die folgenden Voraussetzungen erfüllen, bevor das Azure Active Directory (Azure AD)-Attribut, das Sie (in Schritt 1) identifizieren, erfolgreich mit dem OneDrive Konto eines Benutzers (in Schritt 2) synchronisiert werden kann:
-
-- Benutzern müssen eine Exchange Online-Lizenz und eine SharePoint Onlinelizenz zugewiesen werden.
-
-- Benutzerpostfächer müssen mindestens 10 MB groß sein. Wenn das Postfach eines Benutzers weniger als 10 MB beträgt, wird das Attribut, das zum Definieren Ihrer Behörden verwendet wird, nicht mit dem OneDrive Konto des Benutzers synchronisiert.
-
-- Compliancegrenzen und die Zum Erstellen von Suchberechtigungsfiltern verwendeten Attribute erfordern, dass Azure Active Directory (Azure AD)-Attribute mit Benutzerpostfächern synchronisiert werden. Um zu überprüfen, ob die attribute, die Sie verwenden möchten, synchronisiert wurden, führen Sie das Cmdlet ["Get-User"](/powershell/module/exchange/get-user) in Exchange Online PowerShell aus. Die Ausgabe dieses Cmdlets zeigt die Azure AD-Attribute an, die mit Exchange Online synchronisiert sind.
+- Benutzern muss eine Exchange Online Lizenz zugewiesen werden. Um dies zu überprüfen, verwenden Sie das Cmdlet ["Get-User"](/powershell/module/exchange/get-user) in Exchange Online PowerShell.
 
 ## <a name="step-1-identify-a-user-attribute-to-define-your-agencies"></a>Schritt 1: Identifizieren eines Benutzerattributs zum Definieren Ihrer Behörden
 
-Der erste Schritt besteht darin, ein Azure AD-Attribut auszuwählen, das Ihre Behörden definiert. Dieses Attribut wird verwendet, um den Suchberechtigungsfilter zu erstellen, der einen eDiscovery-Manager so einschränkt, dass er nur die Inhaltsspeicherorte von Benutzern durchsucht, denen ein bestimmter Wert für dieses Attribut zugewiesen ist. Nehmen wir beispielsweise an, Contoso entscheidet sich für die Verwendung des **Department-Attributs.** Der Wert für dieses Attribut für Benutzer in der Fourth Coffee-Niederlassung wäre  `FourthCoffee`  und der Wert für Benutzer in der Coho-Niederlassung wäre `CohoWinery` . In Schritt 4 verwenden Sie dieses  `attribute:value`  Paar (z. B. *Department:FourthCoffee),* um die Speicherorte von Benutzerinhalten einzuschränken, die eDiscovery-Manager durchsuchen können. 
+Der erste Schritt besteht darin, ein Attribut auszuwählen, das Ihre Behörden definiert. Dieses Attribut wird verwendet, um den Suchberechtigungsfilter zu erstellen, der einen eDiscovery-Manager so einschränkt, dass er nur die Inhaltsspeicherorte von Benutzern durchsucht, denen ein bestimmter Wert für dieses Attribut zugewiesen ist. Nehmen wir beispielsweise an, Contoso entscheidet sich für die Verwendung des **Department-Attributs.** Der Wert für dieses Attribut für Benutzer in der Fourth Coffee-Niederlassung wäre  `FourthCoffee`  und der Wert für Benutzer in der Coho-Niederlassung wäre `CohoWinery` . In Schritt 3 verwenden Sie dieses  `attribute:value`  Paar (z. B. *Department:FourthCoffee),* um die Speicherorte von Benutzerinhalten einzuschränken, die eDiscovery-Manager durchsuchen können. 
   
-Hier ist eine Liste der Azure AD-Benutzerattribute, die Sie für Compliance-Grenzen verwenden können:
+Hier sind einige Beispiele für Benutzerattribute, die Sie für Compliance-Begrenzungen verwenden können:
   
 - Unternehmen
 
@@ -84,36 +76,13 @@ Hier ist eine Liste der Azure AD-Benutzerattribute, die Sie für Compliance-Gren
 
 - Büro
 
-- C (Aus zwei Buchstaben bestehender Ländercode) <sup>*</sup>
+- CountryOrRegion (aus zwei Buchstaben bestehender Ländercode)
 
-  > [!NOTE]
-  > <sup>*</sup>Dieses Attribut ist der CountryOrRegion-Eigenschaft zugeordnet, die durch Ausführen des Cmdlets **"Get-User"** in Exchange Online PowerShell zurückgegeben wird. Das Cmdlet gibt den lokalisierten Ländernamen zurück, der aus dem aus zwei Buchstaben bestehendem Ländercode übersetzt wird. Weitere Informationen finden Sie in der Beschreibung der Parameter "CountryOrRegion" im Referenzartikel zum [Cmdlet "Set-User".](/powershell/module/exchange/set-user)
+Eine vollständige Liste finden Sie in der vollständigen Liste der unterstützten [Postfachfilter.](/powershell/exchange/recipientfilter-properties#filterable-recipient-properties)
 
-Obwohl mehr Benutzerattribute verfügbar sind, insbesondere für Exchange Postfächer, sind die oben aufgeführten Attribute die einzigen, die derzeit von OneDrive unterstützt werden.
-  
-## <a name="step-2-file-a-request-with-microsoft-support-to-synchronize-the-user-attribute-to-onedrive-accounts"></a>Schritt 2: Senden einer Anforderung an den Microsoft-Support zum Synchronisieren des Benutzerattributs mit OneDrive Konten
+## <a name="step-2-create-a-role-group-for-each-agency"></a>Schritt 2: Erstellen einer Rollengruppe für jede Organisation
 
-> [!IMPORTANT]
-> Dieser Schritt ist nicht mehr erforderlich. Ab Juni 2021 gelten Postfachfilter für OneDrive for Business. Supportanfragen zum Synchronisieren des Attributs mit OneDrive werden abgelehnt, da dies nicht mehr erforderlich ist. Dieser Artikel wird in kürze aktualisiert.
-
-Der nächste Schritt besteht darin, eine Anforderung an den Microsoft-Support zu senden, um das azure AD-Attribut, das Sie in Schritt 1 ausgewählt haben, mit allen OneDrive Konten in Ihrer Organisation zu synchronisieren. Nach dieser Synchronisierung wird das Attribut (und sein Wert), das Sie in Schritt 1 ausgewählt haben, einer ausgeblendeten verwalteten Eigenschaft namens `ComplianceAttribute` zugeordnet. Mit diesem Attribut erstellen Sie den Suchberechtigungsfilter für OneDrive in Schritt 4.
-  
-Geben Sie die folgenden Informationen ein, wenn Sie die Anforderung an den Microsoft-Support senden:
-  
-- Der Standarddomänenname Ihrer Organisation
-
-- Der Name des Azure AD-Attributs (aus Schritt 1)
-
-- Der folgende Titel oder die Beschreibung des Zwecks der Supportanfrage: "Aktivieren OneDrive for Business Synchronisierung mit Azure AD für Compliancesicherheitsfilter". Dadurch wird die Anforderung an das eDiscovery-Entwicklungsteam weitergeleitet, das die Anforderung implementiert.
-
-Nachdem die Technische Änderung vorgenommen und das Attribut mit OneDrive synchronisiert wurde, sendet Ihnen der Microsoft-Support die Buildnummer, in der die Änderung vorgenommen wurde, und ein geschätztes Bereitstellungsdatum. Der Bereitstellungsprozess dauert in der Regel 4 bis 6 Wochen, nachdem Sie die Supportanfrage übermittelt haben.
-  
-> [!IMPORTANT]
-> Sie können die Schritte 3 bis 5 abschließen, bevor diese Attributänderung bereitgestellt wird. Beim Ausführen von Inhaltssuchen werden jedoch erst Dokumente aus OneDrive Konten zurückgegeben, die in einem Suchberechtigungsfilter angegeben sind, nachdem die Attributsynchronisierung bereitgestellt wurde.
-  
-## <a name="step-3-create-a-role-group-for-each-agency"></a>Schritt 3: Erstellen einer Rollengruppe für jede Organisation
-
-Der nächste Schritt besteht darin, die Rollengruppen im Security & Compliance Center zu erstellen, die mit Ihren Behörden abgestimmt sind. Es wird empfohlen, eine Rollengruppe zu erstellen, indem Sie die integrierte Gruppe der eDiscovery-Manager kopieren, die entsprechenden Mitglieder hinzufügen und Rollen entfernen, die möglicherweise nicht Ihren Anforderungen entsprechen. Weitere Informationen zu eDiscovery-bezogenen Rollen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen.](assign-ediscovery-permissions.md)
+Der nächste Schritt besteht darin, die Rollengruppen im Security & Compliance Center zu erstellen, die mit Ihren Behörden übereinstimmen. Es wird empfohlen, eine Rollengruppe zu erstellen, indem Sie die integrierte Gruppe der eDiscovery-Manager kopieren, die entsprechenden Mitglieder hinzufügen und Rollen entfernen, die möglicherweise nicht Ihren Anforderungen entsprechen. Weitere Informationen zu eDiscovery-bezogenen Rollen finden Sie unter [Zuweisen von eDiscovery-Berechtigungen.](assign-ediscovery-permissions.md)
   
 Um die Rollengruppen zu erstellen, wechseln Sie im Security & Compliance Center zur Seite **Berechtigungen**, und erstellen Sie eine Rollengruppe für jedes Team in jeder Organisation, die Compliance-Begrenzungen sowie eDiscovery-Fälle zum Verwalten von Untersuchungen verwendet.
   
@@ -129,14 +98,14 @@ Mithilfe des Contoso Compliance-Begrenzungsszenarios müssen vier Rollengruppen 
   
 Um die Anforderungen des Contoso Compliance-Begrenzungsszenarios zu erfüllen, würden Sie auch **die** Halte- und **Exportrollen** aus den Rollengruppen der Ermittler entfernen, um zu verhindern, dass Ermittler Haltebereiche für Inhaltsspeicherorte platzieren und Inhalte aus einem Fall exportieren.
 
-## <a name="step-4-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>Schritt 4: Erstellen eines Suchberechtigungsfilters zum Erzwingen der Compliancegrenze
+## <a name="step-3-create-a-search-permissions-filter-to-enforce-the-compliance-boundary"></a>Schritt 3: Erstellen eines Suchberechtigungsfilters zum Erzwingen der Compliancegrenze
 
 Nachdem Sie Rollengruppen für jede Organisation erstellt haben, besteht der nächste Schritt darin, die Suchberechtigungsfilter zu erstellen, die jede Rollengruppe der jeweiligen Organisation zuordnen und die Compliancegrenze selbst definieren. Sie müssen einen Suchberechtigungsfilter für jede Organisation erstellen. Weitere Informationen zum Erstellen von Sicherheitsberechtigungsfiltern finden Sie unter [Konfigurieren der Berechtigungsfilterung für die Inhaltssuche.](permissions-filtering-for-content-search.md)
   
 Dies ist die Syntax, die zum Erstellen eines Suchberechtigungsfilters verwendet wird, der für Compliancegrenzen verwendet wird.
 
 ```powershell
-New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_<ComplianceAttribute>  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'" -Action <Action >
+New-ComplianceSecurityFilter -FilterName <name of filter> -Users <role groups> -Filters "Mailbox_<MailboxPropertyName>  -eq '<Value> '", "Site_Path -like '<SharePointURL>*'" -Action <Action>
 ```
 
 Nachfolgend finden Sie eine Beschreibung der einzelnen Parameter im Befehl:
@@ -145,16 +114,14 @@ Nachfolgend finden Sie eine Beschreibung der einzelnen Parameter im Befehl:
 
 - `Users`: Gibt die Benutzer oder Gruppen an, die diesen Filter auf die von ihnen ausgeführten Suchaktionen anwenden. Für Compliancegrenzen gibt dieser Parameter die Rollengruppen (die Sie in Schritt 3 erstellt haben) in der Agentur an, für die Sie den Filter erstellen. Beachten Sie, dass es sich um einen mehrwertigen Parameter handelt, sodass Sie eine oder mehrere Rollengruppen durch Kommas getrennt einschließen können.
 
-- `Filters`: Gibt die Suchkriterien für den Filter an. Für die Compliancegrenzen definieren Sie die folgenden Filter. Jeder gilt für einen Inhaltsspeicherort. 
+- `Filters`: Gibt die Suchkriterien für den Filter an. Für die Compliancegrenzen definieren Sie die folgenden Filter. Jeder gilt für einen Inhaltsspeicherort.
 
-    - `Mailbox`: Gibt die Postfächer an, die von den im Parameter definierten Rollengruppen  `Users` durchsucht werden können. Für Compliance-Grenzen ist  *ComplianceAttribute*  dasselbe Attribut, das Sie in Schritt 1 identifiziert haben, und  *AttributeValue*  gibt die Agentur an. Mit diesem Filter können Mitglieder der Rollengruppe nur die Postfächer in einer bestimmten Organisation durchsuchen. Beispiel: `"Mailbox_Department -eq 'FourthCoffee'"` . 
-
-    - `Site`: Gibt die OneDrive Konten an, die von den im Parameter definierten Rollengruppen `Users` durchsucht werden können. Verwenden Sie für den OneDrive Filter die tatsächliche `ComplianceAttribute` Zeichenfolge. Dies ist demselben Attribut zugeordnet, das Sie in Schritt 1 identifiziert haben und das aufgrund der Supportanfrage, die Sie in Schritt 2 übermittelt haben, mit OneDrive Konten synchronisiert wird. *AttributeValue* gibt die Agentur an. Mit diesem Filter können Mitglieder der Rollengruppe nur die OneDrive Konten in einer bestimmten Organisation durchsuchen. Beispiel: `"Site_ComplianceAttribute -eq 'FourthCoffee'"` .
+    - `Mailbox`: Gibt die Postfächer oder OneDrive Konten an, die von den im Parameter definierten Rollengruppen `Users` durchsucht werden können. Mit diesem Filter können Mitglieder der Rollengruppe nur die Postfächer oder OneDrive Konten in einer bestimmten Organisation durchsuchen. Beispiel: `"Mailbox_Department -eq 'FourthCoffee'"` .
 
     - `Site_Path`: Gibt die SharePoint Websites an, die von den im Parameter definierten Rollengruppen `Users` durchsucht werden können. Die  *SharePointURL*  gibt die Websites in der Agentur an, die Mitglieder der Rollengruppe durchsuchen können. Zum Beispiel: `"Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'"`. Beachten Sie, dass die `Site` `Site_Path` Und-Filter durch einen **-or-Operator** verbunden sind.
 
      > [!NOTE]
-     > Die Syntax für den `Filters` Parameter enthält eine *Filterliste.* Eine Filterliste ist ein Filter, der einen Postfachfilter und einen durch ein Komma getrennten Websitefilter enthält. Beachten Sie im vorherigen Beispiel, dass ein Komma **Mailbox_ComplianceAttribute** und **Site_ComplianceAttribute** trennt: `-Filters "Mailbox_<ComplianceAttribute>  -eq '<AttributeVale> '", "Site_ComplianceAttribute  -eq '<AttributeValue>' -or Site_Path -like '<SharePointURL>*'"` . Wenn dieser Filter während der Ausführung einer Inhaltssuche verarbeitet wird, werden aus der Filterliste zwei Suchberechtigungsfilter erstellt: ein Postfachfilter und ein Websitefilter. Eine Alternative zur Verwendung einer Filterliste wäre das Erstellen von zwei separaten Suchberechtigungsfiltern für jede Organisation: ein Suchberechtigungsfilter für das Postfachattribut und ein Filter für die Websiteattribute. In beiden Fällen sind die Ergebnisse identisch. Die Verwendung einer Filterliste oder das Erstellen separater Suchberechtigungsfilter ist eine Frage der Präferenz.
+     > Die Syntax für den `Filters` Parameter enthält eine *Filterliste.* Eine Filterliste ist ein Filter, der einen Postfachfilter und einen durch ein Komma getrennten Websitepfadfilter enthält. Beachten Sie im vorherigen Beispiel, dass ein Komma **Mailbox_MailboxPropertyName** und **Site_Path** trennt: `-Filters "Mailbox_<MailboxPropertyName>  -eq '<Value> '", "Site_Path -like '<SharePointURL>*'"` . Wenn dieser Filter während der Ausführung einer Inhaltssuche verarbeitet wird, werden aus der Filterliste zwei Suchberechtigungsfilter erstellt: ein Postfachfilter und ein SharePoint Filter. Eine Alternative zur Verwendung einer Filterliste wäre das Erstellen von zwei separaten Suchberechtigungsfiltern für jede Organisation: ein Suchberechtigungsfilter für das Postfachattribut und ein Filter für die SharePoint Websiteattribute. In beiden Fällen sind die Ergebnisse identisch. Die Verwendung einer Filterliste oder das Erstellen separater Suchberechtigungsfilter ist eine Frage der Präferenz.
 
 - `Action`: Gibt den Typ der Suchaktion an, auf die der Filter angewendet wird. Würde beispielsweise  `-Action Search` den Filter nur anwenden, wenn Mitglieder der im Parameter definierten Rollengruppe eine Suche `Users` ausführen. In diesem Fall würde der Filter beim Exportieren von Suchergebnissen nicht angewendet. Verwenden Sie für Compliance-Begrenzungen,  `-Action All` dass der Filter auf alle Suchaktionen angewendet wird. 
 
@@ -165,22 +132,22 @@ Nachfolgend finden Sie Beispiele für die beiden Suchberechtigungsfilter, die zu
 ### <a name="fourth-coffee"></a>Fourth Coffee
 
 ```powershell
-New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_ComplianceAttribute -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL
+New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL
 ```
 
 ### <a name="coho-winery"></a>Coho-Weinfass
 
 ```powershell
-New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_ComplianceAttribute -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
+New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL
 ```
 
-## <a name="step-5-create-an-ediscovery-case-for-intra-agency-investigations"></a>Schritt 5: Erstellen eines eDiscovery-Falls für organisationsinterne Untersuchungen
+## <a name="step-4-create-an-ediscovery-case-for-intra-agency-investigations"></a>Schritt 4: Erstellen eines eDiscovery-Falls für organisationsinterne Untersuchungen
 
-Der letzte Schritt besteht darin, einen Core eDiscovery-Fall oder Advanced eDiscovery Fall im Microsoft 365 Compliance Center zu erstellen und dann die Rollengruppe hinzuzufügen, die Sie in Schritt 3 als Mitglied des Falls erstellt haben. Dies führt zu zwei wichtigen Merkmalen der Verwendung von Compliance-Begrenzungen:
+Der letzte Schritt besteht darin, einen Core eDiscovery-Fall oder Advanced eDiscovery Fall im Microsoft 365 Compliance Center zu erstellen und dann die Rollengruppe hinzuzufügen, die Sie in Schritt 2 als Mitglied des Falls erstellt haben. Dies führt zu zwei wichtigen Merkmalen der Verwendung von Compliance-Begrenzungen:
   
 - Nur Mitglieder der Rollengruppe, die dem Fall hinzugefügt wurden, können den Fall im Security & Compliance Center anzeigen und darauf zugreifen. Wenn beispielsweise die Rollengruppe "Fourth Coffee Investigators" das einzige Mitglied eines Falls ist, können Mitglieder der Rollengruppe "Fourth Coffee eDiscovery-Manager" (oder Mitglieder einer anderen Rollengruppe) den Fall nicht sehen oder darauf zugreifen.
 
-- Wenn ein Mitglied der Rollengruppe, die einem Fall zugewiesen ist, eine dem Fall zugeordnete Suche ausführt, kann er nur die Inhaltsspeicherorte in ihrer Organisation durchsuchen (die durch den Suchberechtigungsfilter definiert ist, den Sie in Schritt 4 erstellt haben).
+- Wenn ein Mitglied der Rollengruppe, die einem Fall zugewiesen ist, eine dem Fall zugeordnete Suche ausführt, kann er nur die Inhaltsspeicherorte in seiner Organisation durchsuchen (die durch den Suchberechtigungsfilter definiert wird, den Sie in Schritt 3 erstellt haben).
 
 So erstellen Sie einen Fall und weisen Mitglieder zu:
 
@@ -217,7 +184,7 @@ MitHilfe von Suchberechtigungsfiltern können Sie auch steuern, wo Inhalte für 
 
     Verwenden Sie einen der folgenden Werte für den Parameter **Region,** um den Rechenzentrumsspeicherort zu steuern, in dem suchvorgänge ausgeführt werden, wenn sie SharePoint Websites und OneDrive Konten durchsuchen. 
   
-    |**Übergebener Wert**|**Routingspeicherorte für Rechenzentren für SharePoint**|
+    |**Übergebener Wert**|**Rechenzentrumsroutingstandorte für SharePoint**|
     |:-----|:-----|
     |NAM  <br/> |Uns  <br/> |
     |EUR  <br/> |Europa  <br/> |
@@ -243,20 +210,20 @@ MitHilfe von Suchberechtigungsfiltern können Sie auch steuern, wo Inhalte für 
 Hier sind Beispiele für die Verwendung des Parameters **Region** beim Erstellen von Suchberechtigungsfiltern für Compliancegrenzen. Dabei wird davon ausgegangen, dass sich die vierte Coffee-Tochtergesellschaft in Nordamerika befindet und dass sich Coho Coffee in Europa befindet. 
   
 ```powershell
-New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'", "Site_Department -eq 'FourthCoffee' -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM
+New-ComplianceSecurityFilter -FilterName "Fourth Coffee Security Filter" -Users "Fourth Coffee eDiscovery Managers", "Fourth Coffee Investigators" -Filters "Mailbox_Department -eq 'FourthCoffee'" -or Site_Path -like 'https://contoso.sharepoint.com/sites/FourthCoffee*'" -Action ALL -Region NAM
 ```
 
 ```powershell
-New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'", "Site_Department -eq 'CohoWinery' -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
+New-ComplianceSecurityFilter -FilterName "Coho Winery Security Filter" -Users "Coho Winery eDiscovery Managers", "Coho Winery Investigators" -Filters "Mailbox_Department -eq 'CohoWinery'" -or Site_Path -like 'https://contoso.sharepoint.com/sites/CohoWinery*'" -Action ALL -Region EUR
 ```
 
 Beachten Sie beim Suchen und Exportieren von Inhalten in Multi-Geo-Umgebungen die folgenden Punkte.
   
-- Der Parameter **Region** steuert keine Suchvorgänge in Exchange-Postfächern. Alle Rechenzentren werden durchsucht, wenn Sie Postfächer durchsuchen. Um den Umfang zu beschränken, in dem Exchange Postfächer durchsucht werden, verwenden Sie **den** Filterparameter beim Erstellen oder Ändern eines Suchberechtigungsfilters. 
+- Der Parameter **Region** steuert keine Suchvorgänge in Exchange-Postfächern. Alle Rechenzentren werden durchsucht, wenn Sie Postfächer durchsuchen. Um den Umfang zu beschränken, in dem Exchange Postfächer durchsucht werden, verwenden Sie **den** Filterparameter beim Erstellen oder Ändern eines Suchberechtigungsfilters.
 
 - Wenn es für einen eDiscovery-Manager erforderlich ist, in mehreren SharePoint Regionen zu suchen, müssen Sie ein anderes Benutzerkonto für diesen eDiscovery-Manager erstellen, das im Suchberechtigungsfilter verwendet werden kann, um die Region anzugeben, in der sich die SharePoint Websites oder OneDrive-Konten befinden. Weitere Informationen zum Einrichten finden Sie im Abschnitt "Suchen nach Inhalten in einer SharePoint Multi-Geo Umgebung" in der [Inhaltssuche.](content-search-reference.md#searching-for-content-in-a-sharepoint-multi-geo-environment)
 
-- Bei der Suche nach Inhalten in SharePoint und OneDrive leitet der **Parameter** Region Suchvorgänge entweder an den primären oder Satellitenstandort weiter, an dem der eDiscovery-Manager eDiscovery-Untersuchungen durchführt. Wenn ein eDiscovery-Manager SharePoint sucht und Websites außerhalb der Region OneDrive, die im Suchberechtigungsfilter angegeben ist, werden keine Suchergebnisse zurückgegeben.
+- Bei der Suche nach Inhalten in SharePoint und OneDrive leitet der **Parameter "Region"** Suchvorgänge entweder an den primären oder Satellitenstandort weiter, an dem der eDiscovery-Manager eDiscovery-Untersuchungen durchführt. Wenn ein eDiscovery-Manager SharePoint und OneDrive Websites außerhalb der Region durchsucht, die im Suchberechtigungsfilter angegeben ist, werden keine Suchergebnisse zurückgegeben.
 
 - Beim Exportieren von Suchergebnissen werden Inhalte aus allen Inhaltsspeicherorten (einschließlich Exchange, Skype for Business, SharePoint, OneDrive und anderen Diensten, die Sie mit dem Tool für die Inhaltssuche durchsuchen können) in den Azure Storage Speicherort im Rechenzentrum hochgeladen, der durch den Parameter **Region** angegeben wird. Dies hilft Organisationen, die Compliance zu halten, indem inhalte nicht über kontrollierte Grenzen exportiert werden dürfen. Wenn im Suchberechtigungsfilter keine Region angegeben ist, werden Inhalte in das primäre Rechenzentrum der Organisation hochgeladen.
 
@@ -298,46 +265,40 @@ Beachten Sie beim Verwalten von eDiscovery-Fällen und -Untersuchungen, die Comp
 
 ## <a name="more-information"></a>Weitere Informationen
 
-- Wenn ein Postfach nicht mehr lizenziert oder vorläufig gelöscht wird, werden Azure AD-Attribute nicht mehr mit dem Postfach synchronisiert. Wenn beim Löschen des Postfachs eine Aufbewahrung aufgehoben wurde, unterliegt der im Postfach beibehaltene Inhalt weiterhin einer Compliance-Grenze oder einem Suchberechtigungsfilter basierend auf dem Zeitpunkt, zu dem die Azure AD-Attribute zuletzt synchronisiert wurden, bevor das Postfach gelöscht wurde. 
+- Wenn ein Postfach nicht mehr lizenziert oder vorläufig gelöscht wird, wird der Benutzer nicht mehr innerhalb der Compliance-Grenze berücksichtigt. Wenn beim Löschen des Postfachs eine Aufbewahrung aufgehoben wurde, unterliegt der im Postfach aufbewahrte Inhalt weiterhin einer Compliance-Grenze oder einem Suchberechtigungsfilter.
 
-    Darüber hinaus wird die Synchronisierung zwischen dem Postfach des Benutzers und OneDrive Konto eingestellt, wenn das Postfach nicht mehr lizenziert oder vorläufig gelöscht wird. Der letzte stempelte Wert des Complianceattributs für das OneDrive Konto bleibt in Kraft.
+- Wenn Compliance-Begrenzungen und Suchberechtigungsfilter für einen Benutzer implementiert sind, wird empfohlen, das Postfach eines Benutzers und nicht dessen OneDrive Konto nicht zu löschen. Mit anderen Worten: Wenn Sie das Postfach eines Benutzers löschen, sollten Sie auch das OneDrive Konto des Benutzers entfernen, da mailbox_RecipientFilter zum Erzwingen des Suchberechtigungsfilters für OneDrive verwendet wird.
 
-- Das Complianceattribut wird alle sieben Tage vom Exchange Postfach eines Benutzers mit dem OneDrive Konto synchronisiert. Wie bereits erwähnt, erfolgt diese Synchronisierung nur, wenn dem Benutzer eine Exchange Online und SharePoint Onlinelizenz zugewiesen ist und das Postfach des Benutzers mindestens 10 MB beträgt.
+- Compliance-Begrenzungen und Suchberechtigungsfilter hängen von Attributen ab, die für Inhalte in Exchange, OneDrive und SharePoint gestempelt werden, und von der nachfolgenden Indizierung dieses stempelten Inhalts.
 
-- Wenn Compliancegrenzen und Suchberechtigungsfilter sowohl für das Postfach eines Benutzers als auch für OneDrive Konto implementiert werden, wird empfohlen, das Postfach eines Benutzers nicht zu löschen und nicht das OneDrive Konto. Mit anderen Worten: Wenn Sie das Postfach eines Benutzers löschen, sollten Sie auch das OneDrive Konto des Benutzers entfernen.
-
-- Es gibt Situationen (z. B. einen zurückkehrenden Mitarbeiter), in denen ein Benutzer möglicherweise über zwei oder mehr OneDrive Konten verfügt. In diesen Fällen wird nur das primäre OneDrive Konto synchronisiert, das dem Benutzer in Azure AD zugeordnet ist.
-
-- Compliancegrenzen und Suchberechtigungsfilter hängen davon ab, dass Attribute für Inhalte in Exchange, OneDrive und SharePoint und die nachfolgende Indizierung dieses stempelten Inhalts gestempelt werden. 
-
-- Es wird nicht empfohlen, Ausschlussfilter (z. B. die Verwendung `-not()` in einem Suchberechtigungsfilter) für eine inhaltsbasierte Compliancegrenze zu verwenden. Die Verwendung eines Ausschlussfilters kann unerwartete Ergebnisse haben, wenn Inhalte mit kürzlich aktualisierten Attributen nicht indiziert wurden. 
+- Es wird nicht empfohlen, Ausschlussfilter (z. B. die Verwendung `-not()` in einem Suchberechtigungsfilter) für eine inhaltsbasierte Compliancegrenze zu verwenden. Die Verwendung eines Ausschlussfilters kann unerwartete Ergebnisse haben, wenn Inhalte mit kürzlich aktualisierten Attributen nicht indiziert wurden.
 
 ## <a name="frequently-asked-questions"></a>Häufig gestellte Fragen
 
-**Wer können Suchberechtigungsfilter erstellen und verwalten (mit New-ComplianceSecurityFilter und Set-ComplianceSecurityFilter Cmdlets)?**
+**Wer kann Suchberechtigungsfilter erstellen und verwalten (mit New-ComplianceSecurityFilter und Set-ComplianceSecurityFilter Cmdlets)?**
   
-Zum Erstellen, Anzeigen und Ändern von Suchberechtigungsfiltern müssen Sie Mitglied der Rollengruppe "Organisationsverwaltung" im Security & Compliance Center sein.
+Zum Erstellen, Anzeigen und Ändern von Suchberechtigungsfiltern müssen Sie Mitglied der Rollengruppe "Organisationsverwaltung" im Microsoft 365 Compliance Center sein.
   
 **Wenn ein eDiscovery-Manager mehr als einer Rollengruppe zugewiesen ist, die mehrere Behörden umfasst, wie wird nach Inhalten in einer Oder der anderen Agentur gesucht?**
   
-Der eDiscovery-Manager kann der Suchabfrage Parameter hinzufügen, die die Suche auf eine bestimmte Agentur beschränken. Wenn eine Organisation beispielsweise die **Eigenschaft CustomAttribute10** angegeben hat, um Behörden zu unterscheiden, können sie Folgendes an ihre Suchabfrage anfügen, um Postfächer und OneDrive Konten in einer bestimmten Organisation zu durchsuchen: `CustomAttribute10:<value> AND Site_ComplianceAttribute:<value>` .
+Der eDiscovery-Manager kann der Suchabfrage Parameter hinzufügen, die die Suche auf eine bestimmte Agentur beschränken. Wenn eine Organisation beispielsweise die **Eigenschaft CustomAttribute10** angegeben hat, um Behörden zu unterscheiden, können sie Folgendes an ihre Suchabfrage anfügen, um Postfächer und OneDrive-Konten in einer bestimmten Organisation zu durchsuchen:  `CustomAttribute10:<value>` .
   
 **Was geschieht, wenn der Wert des Attributs, das als Complianceattribut in einem Suchberechtigungsfilter verwendet wird, geändert wird?**
   
-Es dauert bis zu drei Tage, bis ein Suchberechtigungsfilter die Compliancegrenze erzwingt, wenn der Wert des im Filter verwendeten Attributs geändert wird. Nehmen wir beispielsweise im Contoso-Szenario an, dass ein Benutzer in der Fourth Coffee-Agentur in die Coho-Einrichtung übertragen wird. Daher wird der Wert des **Department-Attributs** für das Benutzerobjekt von *FourthCoffee* in *CohoWinery* geändert. In dieser Situation erhalten Fourth Coffee eDiscovery und Dies Suchergebnisse für diesen Benutzer für bis zu drei Tage, nachdem das Attribut geändert wurde. Ebenso dauert es bis zu drei Tage, bis eDiscovery-Manager und Ermittler von CohoDiscovery Suchergebnisse für den Benutzer erhalten.
+Es dauert bis zu drei Tage, bis ein Suchberechtigungsfilter die Compliancegrenze erzwingt, wenn der Wert des im Filter verwendeten Attributs geändert wird. Nehmen wir beispielsweise im Contoso-Szenario an, dass ein Benutzer in der Fourth Coffee-Agentur an die Coho-Einrichtung weitergeleitet wird. Daher wird der Wert des **Department-Attributs** für das Benutzerobjekt von *FourthCoffee* in *CohoWinery* geändert. In dieser Situation erhalten Fourth Coffee eDiscovery und Dies Suchergebnisse für diesen Benutzer für bis zu drei Tage, nachdem das Attribut geändert wurde. Ebenso dauert es bis zu drei Tage, bis eDiscovery-Manager und Ermittler von CohoDiscovery Suchergebnisse für den Benutzer erhalten.
   
 **Kann ein eDiscovery-Manager Inhalte von zwei separaten Compliance-Grenzen anzeigen?**
   
-Ja, dies kann beim Durchsuchen von Exchange Postfächern durch Hinzufügen des eDiscovery-Managers zu Rollengruppen erfolgen, die für beide Behörden sichtbar sind. Beim Durchsuchen SharePoint Websites und OneDrive Konten kann ein eDiscovery-Manager jedoch nur dann nach Inhalten in unterschiedlichen Compliance-Grenzen suchen, wenn sich die Behörden am selben Geografischen Standort befinden. **Hinweis:** Diese Einschränkung für Websites gilt nicht in Advanced eDiscovery, da die Suche nach Inhalten in SharePoint und OneDrive nicht an den geografischen Standort gebunden ist.
+Ja, dies kann beim Durchsuchen von Exchange-Postfächern durch Hinzufügen des eDiscovery-Managers zu Rollengruppen erfolgen, die für beide Behörden sichtbar sind. Beim Durchsuchen von SharePoint-Websites und OneDrive-Konten kann ein eDiscovery-Manager jedoch nur dann nach Inhalten in unterschiedlichen Compliance-Grenzen suchen, wenn sich die Behörden am selben Geografischen Standort befinden. **Hinweis:** Diese Einschränkung für Websites gilt nicht in Advanced eDiscovery, da die Suche nach Inhalten in SharePoint und OneDrive nicht an den geografischen Standort gebunden ist.
   
-**Funktionieren Suchberechtigungsfilter für eDiscovery-Fallarchive, Microsoft 365 Aufbewahrungsrichtlinien oder DLP?**
+**Funktionieren Suchberechtigungsfilter für eDiscovery-Fallarchive, Microsoft 365-Aufbewahrungsrichtlinien oder DLP?**
   
 Nein, nicht zu diesem Zeitpunkt.
   
-**Kann ich, wenn ich eine Region zum Steuern des Inhaltsexports angibt, aber keine SharePoint Organisation in dieser Region habe, weiterhin nach SharePoint suchen?**
+**Kann ich sharePoint weiterhin durchsuchen, wenn ich eine Region zum Steuern des Inhaltsexports angibt, aber keine SharePoint-Organisation in dieser Region habe?**
   
 Wenn die im Suchberechtigungsfilter angegebene Region in Ihrer Organisation nicht vorhanden ist, wird die Standardregion durchsucht.
   
 **Wie viele Suchberechtigungsfilter können maximal in einer Organisation erstellt werden?**
   
-Es gibt keine Beschränkung für die Anzahl der Suchberechtigungsfilter, die in einer Organisation erstellt werden können. Die Suchleistung wird jedoch beeinträchtigt, wenn mehr als 100 Suchberechtigungsfilter vorhanden sind. Um die Anzahl der Suchberechtigungsfilter in Ihrer Organisation so klein wie möglich zu halten, erstellen Sie Filter, die Regeln für Exchange, SharePoint und OneDrive in einem einzigen Suchberechtigungsfilter kombinieren, wann immer möglich.
+Es gibt keine Beschränkung für die Anzahl der Suchberechtigungsfilter, die in einer Organisation erstellt werden können. Die Suchleistung wird jedoch beeinträchtigt, wenn mehr als 100 Suchberechtigungsfilter vorhanden sind. Um die Anzahl der Suchberechtigungsfilter in Ihrer Organisation so klein wie möglich zu halten, erstellen Sie Filter, die Regeln für Exchange, SharePoint und OneDrive nach Möglichkeit in einem einzigen Suchberechtigungsfilter kombinieren.

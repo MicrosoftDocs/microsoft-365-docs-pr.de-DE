@@ -1,11 +1,11 @@
 - name: Microsoft 365-Compliance
   href: index.yml
+- name: Neuerungen in Microsoft 365 Compliance
+  href: whats-new.md
 - name: Erste Schritte
   items:
     - name: Schnelle Aufgaben für die ersten Schritte in Bezug auf die Compliance
       href: compliance-quick-tasks.md
-    - name: Neuerungen in Microsoft 365 Compliance
-      href: whats-new.md
     - name: Microsoft 365-Lösungskatalog
       href: microsoft-365-solution-catalog.md
     - name: Microsoft 365 Compliance Center

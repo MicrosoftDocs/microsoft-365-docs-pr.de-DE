@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: ea05d37ebcd0953dd109f524775a55cf8d6b3683
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 6243da415c5cc509be33eabffd12516367164bff
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984964"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022870"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Exportieren der Bewertung von Software-Sicherheitsrisiken pro Gerät
 
@@ -39,16 +39,16 @@ Gibt alle bekannten Softwarerisiken und deren Details für alle Geräte pro Ger�
 
 Es gibt verschiedene API-Aufrufe, um unterschiedliche Arten von Daten abzurufen. Da die Datenmenge sehr groß sein kann, gibt es zwei Möglichkeiten, sie abzurufen:
 
-1. [Exportieren von OData zur Bewertung von Software-Sicherheitsrisiken](#1-export-software-vulnerabilities-assessment-odata)  Die API ruft alle Daten in Ihrer Organisation als JSON-Antworten nach dem OData-Protokoll ab. Diese Methode eignet sich am besten für _kleine Organisationen mit weniger als 100 K-Geräten._ Die Antwort ist paginiert, sodass Sie das \@ Feld odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen.
+1. [ **JSON-Antwort zur** Bewertung von Software-Sicherheitsrisiken exportieren](#1-export-software-vulnerabilities-assessment-json-response)  Die API ruft alle Daten in Ihrer Organisation als JSON-Antworten ab. Diese Methode eignet sich am besten für _kleine Organisationen mit weniger als 100 K-Geräten._ Die Antwort ist paginiert, sodass Sie das \@ Feld odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen.
 
-2. Exportieren der [Bewertung von Software-Sicherheitsrisiken über Dateien](#2-export-software-vulnerabilities-assessment-via-files) Diese API-Lösung ermöglicht das schnellere und zuverlässigere Abrufen größerer Datenmengen. Via-Dateien werden für große Organisationen mit mehr als 100 K-Geräten empfohlen. Diese API ruft alle Daten in Ihrer Organisation als Downloaddateien ab. Die Antwort enthält URLs zum Herunterladen aller Daten aus Azure Storage. Mit dieser API können Sie alle Ihre Daten aus Azure Storage wie folgt herunterladen:
+2. Exportieren der [Bewertung von Software-Sicherheitsrisiken **über Dateien**](#2-export-software-vulnerabilities-assessment-via-files) Diese API-Lösung ermöglicht das schnellere und zuverlässigere Abrufen größerer Datenmengen. Via-Dateien werden für große Organisationen mit mehr als 100 K-Geräten empfohlen. Diese API ruft alle Daten in Ihrer Organisation als Downloaddateien ab. Die Antwort enthält URLs zum Herunterladen aller Daten aus Azure Storage. Mit dieser API können Sie alle Ihre Daten aus Azure Storage wie folgt herunterladen:
 
    - Rufen Sie die API auf, um eine Liste der Download-URLs mit allen Organisationsdaten abzurufen.
 
    - Laden Sie alle Dateien mithilfe der Download-URLs herunter, und verarbeiten Sie die Daten nach Bedarf.
 
-3. Bewertung von [Software-Sicherheitsrisiken im Delta-Export OData](#3-delta-export-software-vulnerabilities-assessment-odata)  Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination von: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId und EventTimestamp zurück.
-Die API ruft Daten in Ihrer Organisation als JSON-Antworten nach dem OData-Protokoll ab. Die Antwort ist paginiert, sodass Sie das Feld @odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen. <br><br> Im Gegensatz zur vollständigen Bewertung von Softwareschwachstellen (OData), die verwendet wird, um eine vollständige Momentaufnahme der Bewertung der Software-Sicherheitsrisiken Ihrer Organisation nach Gerät zu erhalten, wird der Deltaexport-OData-API-Aufruf verwendet, um nur die Änderungen abzurufen, die zwischen einem ausgewählten Datum und dem aktuellen Datum (dem "Delta"-API-Aufruf) aufgetreten sind. Anstatt jedes Mal einen vollständigen Export mit einer großen Datenmenge zu erhalten, erhalten Sie nur spezifische Informationen zu neuen, festen und aktualisierten Sicherheitsrisiken. Der Delta-Export-OData-API-Aufruf kann auch verwendet werden, um verschiedene KPIs zu berechnen, z. B. "wie viele Sicherheitsrisiken wurden behoben?" oder "wie viele neue Sicherheitsrisiken wurden zu meiner Organisation hinzugefügt?" <br><br> Da der Delta-Export-OData-API-Aufruf für Softwarerisiken nur Daten für einen Zieldatumsbereich zurückgibt, wird er nicht als _vollständiger Export_ betrachtet.
+3. [ **JSON-Antwort zur** Bewertung von Software-Sicherheitsrisiken im Delta-Export](#3-delta-export-software-vulnerabilities-assessment-json-response)  Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination von: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId und EventTimestamp zurück.
+Die API ruft Daten in Ihrer Organisation als JSON-Antworten ab. Die Antwort ist paginiert, sodass Sie das Feld @odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen. <br><br> Im Gegensatz zur vollständigen "Bewertung von Software-Sicherheitsrisiken (JSON-Antwort)" – die verwendet wird, um eine vollständige Momentaufnahme der Bewertung der Software-Sicherheitsrisiken Ihrer Organisation nach Gerät zu erhalten – wird der Delta-Export-OData-API-Aufruf verwendet, um nur die Änderungen abzurufen, die zwischen einem ausgewählten Datum und dem aktuellen Datum (dem "Delta"-API-Aufruf) aufgetreten sind. Anstatt jedes Mal einen vollständigen Export mit einer großen Datenmenge zu erhalten, erhalten Sie nur spezifische Informationen zu neuen, festen und aktualisierten Sicherheitsrisiken. Der JSON-Antwort-API-Aufruf des Deltaexports kann auch verwendet werden, um verschiedene KPIs zu berechnen, z. B. "wie viele Sicherheitsrisiken wurden behoben?" oder "wie viele neue Sicherheitsrisiken wurden zu meiner Organisation hinzugefügt?" <br><br> Da der JSON-Antwort-API-Aufruf des Delta-Exports für Softwarerisiken nur Daten für einen zielgerichteten Datumsbereich zurückgibt, wird er nicht als _vollständiger Export_ betrachtet.
 
 Daten, die gesammelt werden (entweder mit _OData_ oder _über Dateien),_ sind die aktuelle Momentaufnahme des aktuellen Zustands und enthalten keine historischen Daten. Um historische Daten zu sammeln, müssen Kunden die Daten in ihren eigenen Datenspeichern speichern.
 
@@ -56,17 +56,17 @@ Daten, die gesammelt werden (entweder mit _OData_ oder _über Dateien),_ sind di
 >
 > Sofern nicht anders angegeben, sind alle aufgeführten Exportbewertungsmethoden **_vollständige Exporte_** und **_nach Gerät_** (auch als **_pro Gerät_** bezeichnet).
 
-## <a name="1-export-software-vulnerabilities-assessment-odata"></a>1. Bewertung von Software-Sicherheitsrisiken exportieren (OData)
+## <a name="1-export-software-vulnerabilities-assessment-json-response"></a>1. Bewertung von Software-Sicherheitsrisiken exportieren (JSON-Antwort)
 
 ### <a name="11-api-method-description"></a>1.1 API-Methodenbeschreibung
 
 Diese API-Antwort enthält alle Daten der installierten Software pro Gerät. Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination aus DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CVEID zurück.
 
-#### <a name="limitations"></a>Einschränkungen
+#### <a name="111-limitations"></a>1.1.1 Einschränkungen
 
->- Die maximale Seitengröße beträgt 200.000.
->
->- Die Rateneinschränkungen für diese API liegen bei 30 Aufrufen pro Minute und 1.000 Aufrufen pro Stunde.
+- Die maximale Seitengröße beträgt 200.000.
+
+- Die Rateneinschränkungen für diese API liegen bei 30 Aufrufen pro Minute und 1.000 Aufrufen pro Stunde.
 
 ### <a name="12-permissions"></a>1.2 Berechtigungen
 
@@ -74,7 +74,7 @@ Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Wei
 
 Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 ---|---|---
-Application | Vulnerability.Read.All | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
+Anwendung | Vulnerability.Read.All | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Vulnerability.Read | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
 
 ### <a name="13-url"></a>1.3 URL
@@ -89,7 +89,7 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 - $top – Anzahl der zurückzugebenden Ergebnisse (gibt nicht @odata.nextLink zurück und ruft daher nicht alle Daten ab)
 
 ### <a name="15-properties"></a>1.5-Eigenschaften
->
+
 >[!Note]
 >
 >- Jeder Datensatz enthält ca. 1 KB Daten. Berücksichtigen Sie dies, wenn Sie den richtigen pageSize-Parameter für Sie auswählen.
@@ -97,29 +97,30 @@ GET /api/machines/SoftwareVulnerabilitiesByMachine
 >- Einige zusätzliche Spalten werden möglicherweise in der Antwort zurückgegeben. Diese Spalten sind temporär und können entfernt werden. Verwenden Sie nur die dokumentierten Spalten.
 >
 >- Die in der folgenden Tabelle definierten Eigenschaften werden alphabetisch nach Eigenschafts-ID aufgelistet.  Beim Ausführen dieser API wird die resultierende Ausgabe nicht notwendigerweise in der in dieser Tabelle aufgeführten Reihenfolge zurückgegeben.
->
+
+<br/>
 
 Eigenschaft (ID) | Datentyp | Beschreibung | Beispiel für einen zurückgegebenen Wert
 :---|:---|:---|:---
-CveId | string | Eindeutiger Bezeichner, der dem Sicherheitsrisiko unter dem System für allgemeine Sicherheitsrisiken und Sicherheitsrisiken (CVE) zugewiesen ist. | CVE-2020-15992
-CvssScore | string | Die CVSS-Bewertung des CVE. | 6.2
-Deviceid | string | Eindeutiger Bezeichner für das Gerät im Dienst. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName | string | Vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des Geräts. | johnlaptop.europe.contoso.com
+CveId | Zeichenfolge | Eindeutiger Bezeichner, der dem Sicherheitsrisiko unter dem System für allgemeine Sicherheitsrisiken und Sicherheitsrisiken (CVE) zugewiesen ist. | CVE-2020-15992
+CvssScore | Zeichenfolge | Die CVSS-Bewertung des CVE. | 6.2
+Deviceid | Zeichenfolge | Eindeutiger Bezeichner für das Gerät im Dienst. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName | Zeichenfolge | Vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des Geräts. | johnlaptop.europe.contoso.com
 DiskPaths  | \[Arrayzeichenfolge\] | Datenträgernachweis, dass das Produkt auf dem Gerät installiert ist. | [ "C:\Programme (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]
-ExploitabilityLevel | string | Die Ausnutzbarkeitsstufe dieser Sicherheitsanfälligkeit (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit) | ExploitIsInKit
-FirstSeenTimestamp | string | Die CVE dieses Produkts wurde zum ersten Mal auf dem Gerät angezeigt. | 2020-11-03 10:13:34.8476880
+ExploitabilityLevel | Zeichenfolge | Die Ausnutzbarkeitsstufe dieser Sicherheitsanfälligkeit (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit) | ExploitIsInKit
+FirstSeenTimestamp | Zeichenfolge | Die CVE dieses Produkts wurde zum ersten Mal auf dem Gerät angezeigt. | 2020-11-03 10:13:34.8476880
 Id | string | Eindeutiger Bezeichner für den Datensatz. | 123ABG55_573AG&mnp!
-LastSeenTimestamp | string | Das letzte Mal, als das CVE auf dem Gerät angezeigt wurde. | 2020-11-03 10:13:34.8476880
-OSPlatform | string | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Diese Eigenschaft gibt bestimmte Betriebssysteme an, einschließlich Variationen innerhalb derselben Familie, z. B. Windows 10 und Windows 7. Ausführliche Informationen finden Sie unter tvm-unterstützte Betriebssysteme und Plattformen. | Windows 10
-RbacGroupName  | string | Die Rollenbasierte Zugriffssteuerungsgruppe (RBAC). Wenn dieses Gerät keiner RBAC-Gruppe zugewiesen ist, lautet der Wert "Nicht zugewiesen". Wenn die Organisation keine RBAC-Gruppen enthält, lautet der Wert "None". | Server
-RecommendationReference | string | Ein Verweis auf die Empfehlungs-ID im Zusammenhang mit dieser Software. | va-_-microsoft-_-silverlight
-RecommendedSecurityUpdate (optional) | string | Name oder Beschreibung des sicherheitsrelevanten Updates, das vom Softwareanbieter bereitgestellt wurde, um die Sicherheitsanfälligkeit zu beheben. | Sicherheitsupdates vom April 2020
-RecommendedSecurityUpdateId (optional) | string | Bezeichner der anwendbaren Sicherheitsupdates oder bezeichner für die entsprechenden Anleitungen oder Knowledge Base (KB)-Artikel | 4550961
+LastSeenTimestamp | Zeichenfolge | Das letzte Mal, als das CVE auf dem Gerät angezeigt wurde. | 2020-11-03 10:13:34.8476880
+OSPlatform | Zeichenfolge | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Diese Eigenschaft gibt bestimmte Betriebssysteme an, einschließlich Variationen innerhalb derselben Familie, z. B. Windows 10 und Windows 7. Ausführliche Informationen finden Sie unter tvm-unterstützte Betriebssysteme und Plattformen. | Windows 10
+RbacGroupName  | Zeichenfolge | Die Rollenbasierte Zugriffssteuerungsgruppe (RBAC). Wenn dieses Gerät keiner RBAC-Gruppe zugewiesen ist, lautet der Wert "Nicht zugewiesen". Wenn die Organisation keine RBAC-Gruppen enthält, lautet der Wert "None". | Server
+RecommendationReference | Zeichenfolge | Ein Verweis auf die Empfehlungs-ID im Zusammenhang mit dieser Software. | va-_-microsoft-_-silverlight
+RecommendedSecurityUpdate (optional) | Zeichenfolge | Name oder Beschreibung des sicherheitsrelevanten Updates, das vom Softwareanbieter bereitgestellt wurde, um die Sicherheitsanfälligkeit zu beheben. | Sicherheitsupdates vom April 2020
+RecommendedSecurityUpdateId (optional) | Zeichenfolge | Bezeichner der anwendbaren Sicherheitsupdates oder bezeichner für die entsprechenden Anleitungen oder Knowledge Base (KB)-Artikel | 4550961
 RegistryPaths  | \[Arrayzeichenfolge\] | Registrierungsnachweis, dass das Produkt auf dem Gerät installiert ist. | [ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MicrosoftSilverlight" ]
-SoftwareName | string | Name des Softwareprodukts. | Chrome
-SoftwareVendor | string | Name des Softwareanbieters. | Google
-SoftwareVersion | string | Versionsnummer des Softwareprodukts. | 81.0.4044.138
-VulnerabilitySeverityLevel  | string | Schweregrad, der dem Sicherheitsrisiko zugewiesen ist, basierend auf der CVSS-Bewertung und dynamischen Faktoren, die von der Bedrohungslandschaft beeinflusst werden. | Mittel
+SoftwareName | Zeichenfolge | Name des Softwareprodukts. | Chrome
+SoftwareVendor | Zeichenfolge | Name des Softwareanbieters. | Google
+SoftwareVersion | Zeichenfolge | Versionsnummer des Softwareprodukts. | 81.0.4044.138
+VulnerabilitySeverityLevel  | Zeichenfolge | Schweregrad, der dem Sicherheitsrisiko zugewiesen ist, basierend auf der CVSS-Bewertung und dynamischen Faktoren, die von der Bedrohungslandschaft beeinflusst werden. | Mittel
 
 ### <a name="16-examples"></a>1.6 Beispiele
 
@@ -277,7 +278,7 @@ Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Wei
 
 Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 ---|---|---
-Application | Vulnerability.Read.All | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
+Anwendung | Vulnerability.Read.All | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Vulnerability.Read | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
 
 ### <a name="23-url"></a>2.3 URL
@@ -311,7 +312,7 @@ GET /api/machines/SoftwareVulnerabilitiesExport
 Eigenschaft (ID) | Datentyp | Beschreibung | Beispiel für einen zurückgegebenen Wert
 :---|:---|:---|:---
 Exportieren von Dateien | \[Arrayzeichenfolge\]  | Eine Liste der Download-URLs für Dateien, die die aktuelle Momentaufnahme der Organisation enthalten. | [  “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2”  ]
-GeneratedTime | string | Die Zeit, zu der der Export generiert wurde. | 2021-05-20T08:00:00Z
+GeneratedTime | Zeichenfolge | Die Zeit, zu der der Export generiert wurde. | 2021-05-20T08:00:00Z
 
 ### <a name="26-examples"></a>2.6 Beispiele
 
@@ -335,17 +336,17 @@ GET https://api-us.securitycenter.contoso.com/api/machines/SoftwareVulnerabiliti
 }
 ```
 
-## <a name="3-delta-export-software-vulnerabilities-assessment-odata"></a>3. Bewertung von Software-Sicherheitsrisiken im Delta-Export (OData)
+## <a name="3-delta-export-software-vulnerabilities-assessment-json-response"></a>3. Bewertung von Software-Sicherheitsrisiken im Delta-Export (JSON-Antwort)
 
 ### <a name="31-api-method-description"></a>3.1 API-Methodenbeschreibung
 
-Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination aus DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId zurück. Die API ruft Daten in Ihrer Organisation als JSON-Antworten nach dem OData-Protokoll ab. Die Antwort ist paginiert, sodass Sie das Feld @odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen. Im Gegensatz zur vollständigen Bewertung von Softwareschwachstellen (OData), die verwendet wird, um eine vollständige Momentaufnahme der Bewertung der Software-Sicherheitsrisiken Ihrer Organisation nach Gerät zu erhalten, wird der Deltaexport-OData-API-Aufruf verwendet, um nur die Änderungen abzurufen, die zwischen einem ausgewählten Datum und dem aktuellen Datum (dem "Delta"-API-Aufruf) aufgetreten sind. Anstatt jedes Mal einen vollständigen Export mit einer großen Datenmenge zu erhalten, erhalten Sie nur spezifische Informationen zu neuen, festen und aktualisierten Sicherheitsrisiken. Der Delta-Export-OData-API-Aufruf kann auch verwendet werden, um verschiedene KPIs zu berechnen, z. B. "wie viele Sicherheitsrisiken wurden behoben?" oder "wie viele neue Sicherheitsrisiken wurden zu meiner Organisation hinzugefügt?"
+Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination aus DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId zurück. Die API ruft Daten in Ihrer Organisation als JSON-Antworten ab. Die Antwort ist paginiert, sodass Sie das Feld @odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen. Im Gegensatz zur vollständigen Bewertung von Software-Sicherheitsrisiken (JSON-Antwort), die verwendet wird, um eine vollständige Momentaufnahme der Bewertung der Softwarerisiken Ihrer Organisation nach Gerät zu erhalten, wird der JSON-Antwort-API-Aufruf für den Deltaexport verwendet, um nur die Änderungen abzurufen, die zwischen einem ausgewählten Datum und dem aktuellen Datum (dem "Delta"-API-Aufruf) aufgetreten sind. Anstatt jedes Mal einen vollständigen Export mit einer großen Datenmenge zu erhalten, erhalten Sie nur spezifische Informationen zu neuen, festen und aktualisierten Sicherheitsrisiken. Der JSON-Antwort-API-Aufruf des Deltaexports kann auch verwendet werden, um verschiedene KPIs zu berechnen, z. B. "wie viele Sicherheitsrisiken wurden behoben?" oder "wie viele neue Sicherheitsrisiken wurden zu meiner Organisation hinzugefügt?"
 
 >[!NOTE]
 >
->Es wird dringend empfohlen, mindestens einmal pro Woche die vollständige Bewertung der Software-Sicherheitsrisiken nach Geräte-API-Aufruf zu verwenden, und diese zusätzlichen Exportsoftware-Sicherheitsrisiken ändern sich nach Geräte (Delta)-API-Aufruf alle anderen Tage der Woche.  Im Gegensatz zur anderen Bewertungs-OData-API ist der "Deltaexport" kein vollständiger Export. Der Deltaexport enthält nur die Änderungen, die zwischen einem ausgewählten Datum und dem aktuellen Datum (dem "Delta"-API-Aufruf) vorgenommen wurden.
+>Es wird dringend empfohlen, mindestens einmal pro Woche die vollständige Bewertung der Software-Sicherheitsrisiken nach Geräte-API-Aufruf zu verwenden, und diese zusätzlichen Exportsoftware-Sicherheitsrisiken ändern sich nach Geräte (Delta)-API-Aufruf alle anderen Tage der Woche.  Im Gegensatz zu den anderen JSON-Antwort-APIs für Bewertungen ist der "Deltaexport" kein vollständiger Export. Der Deltaexport enthält nur die Änderungen, die zwischen einem ausgewählten Datum und dem aktuellen Datum (dem "Delta"-API-Aufruf) vorgenommen wurden.
 
-#### <a name="limitations"></a>Einschränkungen
+#### <a name="311-limitations"></a>3.1.1 Einschränkungen
 
 - Die maximale Seitengröße beträgt 200.000.
 
@@ -359,7 +360,7 @@ Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Wei
 
 Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 ---|---|---
-Application | Vulnerability.Read.All | "Informationen zu Sicherheitsrisiken und Sicherheitsrisikoverwaltung lesen"
+Anwendung | Vulnerability.Read.All | "Informationen zu Sicherheitsrisiken und Sicherheitsrisikoverwaltung lesen"
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Vulnerability.Read | "Informationen zu Sicherheitsrisiken und Sicherheitsrisikoverwaltung lesen"
 
 ### <a name="33-url"></a>3.3 URL
@@ -379,44 +380,44 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 Jeder zurückgegebene Datensatz enthält alle Daten aus der Bewertung der Vollständigexportsoftware-Sicherheitsrisiken nach Der OData-API des Geräts sowie zwei zusätzliche Felder: _**EventTimestamp**_ und _**Status.**_
 
 >[!NOTE]
->-Einige zusätzliche Spalten werden möglicherweise in der Antwort zurückgegeben. Diese Spalten sind temporär und können entfernt werden. Verwenden Sie daher nur die dokumentierten Spalten.
+>- Einige zusätzliche Spalten werden möglicherweise in der Antwort zurückgegeben. Diese Spalten sind temporär und können entfernt werden. Verwenden Sie daher nur die dokumentierten Spalten.
 >
->-Die in der folgenden Tabelle definierten Eigenschaften werden alphabetisch nach Eigenschafts-ID aufgelistet.  Beim Ausführen dieser API wird die resultierende Ausgabe nicht notwendigerweise in der in dieser Tabelle aufgeführten Reihenfolge zurückgegeben.
-<br>
+>- Die in der folgenden Tabelle definierten Eigenschaften werden alphabetisch nach Eigenschafts-ID aufgelistet.  Beim Ausführen dieser API wird die resultierende Ausgabe nicht notwendigerweise in der in dieser Tabelle aufgeführten Reihenfolge zurückgegeben.
+<br><br/>
 
 Eigenschaft (ID) | Datentyp | Beschreibung | Beispiel für zurückgegebenen Wert
 :---|:---|:---|:---
-CveId | string | Eindeutiger Bezeichner, der dem Sicherheitsrisiko unter dem System für allgemeine Sicherheitsrisiken und Sicherheitsrisiken (CVE) zugewiesen ist. | CVE-2020-15992  
-CvssScore | string | Die CVSS-Bewertung des CVE. | 6.2  
-Deviceid | string | Eindeutiger Bezeichner für das Gerät im Dienst. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
-DeviceName | string | Vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des Geräts. | johnlaptop.europe.contoso.com  
+CveId | Zeichenfolge | Eindeutiger Bezeichner, der dem Sicherheitsrisiko unter dem System für allgemeine Sicherheitsrisiken und Sicherheitsrisiken (CVE) zugewiesen ist. | CVE-2020-15992  
+CvssScore | Zeichenfolge | Die CVSS-Bewertung des CVE. | 6.2  
+Deviceid | Zeichenfolge | Eindeutiger Bezeichner für das Gerät im Dienst. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
+DeviceName | Zeichenfolge | Vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des Geräts. | johnlaptop.europe.contoso.com  
 DiskPaths | Array[string] | Datenträgernachweis, dass das Produkt auf dem Gerät installiert ist. | [ "C:\Programme (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]  
 EventTimestamp | Zeichenfolge | Die Zeit, zu der dieses Delta-Ereignis gefunden wurde. | 2021-01-11T11:06:08.291Z
-ExploitabilityLevel | string | Die Ausnutzbarkeitsstufe dieser Sicherheitsanfälligkeit (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit) | ExploitIsInKit  
-FirstSeenTimestamp | string | Die CVE dieses Produkts wurde zum ersten Mal auf dem Gerät angezeigt. | 2020-11-03 10:13:34.8476880  
+ExploitabilityLevel | Zeichenfolge | Die Ausnutzbarkeitsstufe dieser Sicherheitsanfälligkeit (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit) | ExploitIsInKit  
+FirstSeenTimestamp | Zeichenfolge | Die CVE dieses Produkts wurde zum ersten Mal auf dem Gerät angezeigt. | 2020-11-03 10:13:34.8476880  
 Id | string | Eindeutiger Bezeichner für den Datensatz. | 123ABG55_573AG&mnp!  
-LastSeenTimestamp | string | Das letzte Mal, als das CVE auf dem Gerät angezeigt wurde. | 2020-11-03 10:13:34.8476880  
-OSPlatform | string | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. Ausführliche Informationen finden Sie unter tvm-unterstützte Betriebssysteme und Plattformen. | Windows 10  
-RbacGroupName | string | Die Rollenbasierte Zugriffssteuerungsgruppe (RBAC). Wenn dieses Gerät keiner RBAC-Gruppe zugewiesen ist, lautet der Wert "Nicht zugewiesen". Wenn die Organisation keine RBAC-Gruppen enthält, lautet der Wert "None". | Server  
-RecommendationReference | string | Ein Verweis auf die Empfehlungs-ID im Zusammenhang mit dieser Software. | va--microsoft--silverlight  
-RecommendedSecurityUpdate  | string | Name oder Beschreibung des sicherheitsrelevanten Updates, das vom Softwareanbieter bereitgestellt wurde, um die Sicherheitsanfälligkeit zu beheben. | Sicherheitsupdates vom April 2020  
-RecommendedSecurityUpdateId  | string | Bezeichner der anwendbaren Sicherheitsupdates oder bezeichner für die entsprechenden Anleitungen oder Knowledge Base (KB)-Artikel | 4550961  
+LastSeenTimestamp | Zeichenfolge | Das letzte Mal, als das CVE auf dem Gerät angezeigt wurde. | 2020-11-03 10:13:34.8476880  
+OSPlatform | Zeichenfolge | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. Ausführliche Informationen finden Sie unter tvm-unterstützte Betriebssysteme und Plattformen. | Windows 10  
+RbacGroupName | Zeichenfolge | Die Rollenbasierte Zugriffssteuerungsgruppe (RBAC). Wenn dieses Gerät keiner RBAC-Gruppe zugewiesen ist, lautet der Wert "Nicht zugewiesen". Wenn die Organisation keine RBAC-Gruppen enthält, lautet der Wert "None". | Server  
+RecommendationReference | Zeichenfolge | Ein Verweis auf die Empfehlungs-ID im Zusammenhang mit dieser Software. | va--microsoft--silverlight  
+RecommendedSecurityUpdate  | Zeichenfolge | Name oder Beschreibung des sicherheitsrelevanten Updates, das vom Softwareanbieter bereitgestellt wurde, um die Sicherheitsanfälligkeit zu beheben. | Sicherheitsupdates vom April 2020  
+RecommendedSecurityUpdateId  | Zeichenfolge | Bezeichner der anwendbaren Sicherheitsupdates oder bezeichner für die entsprechenden Anleitungen oder Knowledge Base (KB)-Artikel | 4550961  
 RegistryPaths  | Array[string] | Registrierungsnachweis, dass das Produkt auf dem Gerät installiert ist. | [ "HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Google Chrome" ]  
-SoftwareName | string | Name des Softwareprodukts. | Chrome  
-SoftwareVendor | string | Name des Softwareanbieters. | Google  
-SoftwareVersion | string | Versionsnummer des Softwareprodukts. | 81.0.4044.138  
+SoftwareName | Zeichenfolge | Name des Softwareprodukts. | Chrome  
+SoftwareVendor | Zeichenfolge | Name des Softwareanbieters. | Google  
+SoftwareVersion | Zeichenfolge | Versionsnummer des Softwareprodukts. | 81.0.4044.138  
 Status | Zeichenfolge | **Neu**   (für eine neue Sicherheitslücke, die auf einem Gerät eingeführt wurde)  (1) **Behoben**   (wenn diese Sicherheitslücke nicht mehr auf dem Gerät vorhanden ist, was bedeutet, dass sie behoben wurde). (2)  **Aktualisiert**   (Wenn sich eine Sicherheitslücke auf einem Gerät geändert hat. Die möglichen Änderungen sind: CVSS-Bewertung, Ausnutzbarkeitsgrad, Schweregrad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). | Fest
-VulnerabilitySeverityLevel | string | Schweregrad, der dem Sicherheitsrisiko zugewiesen ist, basierend auf der CVSS-Bewertung und dynamischen Faktoren, die von der Bedrohungslandschaft beeinflusst werden. | Mittel  
+VulnerabilitySeverityLevel | Zeichenfolge | Schweregrad, der dem Sicherheitsrisiko zugewiesen ist, basierend auf der CVSS-Bewertung und dynamischen Faktoren, die von der Bedrohungslandschaft beeinflusst werden. | Mittel  
 
 #### <a name="clarifications"></a>Klarstellungen
 
 - Wenn die Software von Version 1.0 auf Version 2.0 aktualisiert wurde und beide Versionen für CVE-A verfügbar gemacht werden, erhalten Sie zwei separate Ereignisse:  
-   a. Behoben – CVE-A in Version 1.0 wurde behoben  
-   b. Neu – CVE-A in Version 2.0 wurde hinzugefügt
+   1. Behoben – CVE-A in Version 1.0 wurde behoben  
+   1. Neu – CVE-A in Version 2.0 wurde hinzugefügt
 
 - Wenn eine bestimmte Sicherheitslücke (z. B. CVE-A) zu einem bestimmten Zeitpunkt (z. B. am 10. Januar) auf Software mit Version 1.0 angezeigt wurde und diese Software ein paar Tage später auf Version 2.0 aktualisiert wurde, die ebenfalls für die gleiche CVE-A verfügbar gemacht wurde, erhalten Sie diese beiden getrennten Ereignisse:  
-   a. Behoben – CVE-X, FirstSeenTimestamp 10. Januar, Version 1,0.  
-   b. Neu – CVE-X, FirstSeenTimestamp 10. Januar, Version 2.0.
+   1. Behoben – CVE-X, FirstSeenTimestamp 10. Januar, Version 1,0.  
+   1. Neu – CVE-X, FirstSeenTimestamp 10. Januar, Version 2.0.
 
 ### <a name="36-examples"></a>3.6 Beispiele
 

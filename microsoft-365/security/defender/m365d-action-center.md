@@ -20,12 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.openlocfilehash: df3ea2d4df0b7a5bedbbabf19e97d4fddc4c2646
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: ee075f34087d28fc9326d408622d05f363bba768
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782981"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022585"
 ---
 # <a name="the-action-center"></a>Das Info-Center
 
@@ -41,21 +41,21 @@ Das Info-Center bietet eine "einzelne Fenster"-Oberfläche für Vorfall- und War
 - Anzeigen eines Überwachungsprotokolls von bereits genehmigten Korrekturaktionen.
 - Überprüfen abgeschlossener Wartungsaktionen
 
-Da das Info-Center eine umfassende Übersicht über Microsoft 365 Defender at work bietet, kann Ihr Sicherheitsteam effektiver und effizienter arbeiten.
+Da das Info-Center eine umfassende Übersicht über Microsoft 365 Defender bei der Arbeit bietet, kann Ihr Sicherheitsteam effektiver und effizienter arbeiten.
 
 ## <a name="the-unified-action-center"></a>Das einheitliche Info-Center
 
-Das einheitliche Info-Center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) listet ausstehende und abgeschlossene Korrekturaktionen für Ihre Geräte, E-Mail-& Inhalte für die Zusammenarbeit und Identitäten an einem Ort auf.
+Das einheitliche Info-Center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) listet ausstehende und abgeschlossene Abhilfemaßnahmen für Ihre Geräte, E-Mail-& Inhalte für die Zusammenarbeit und Identitäten an einem Ort auf.
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Einheitliches Info-Center in Microsoft 365 Defender":::
 
 Beispiel: 
 
-- Wenn Sie zuvor das Office 365 Security & Compliance Center ( ) verwendet [https://protection.office.com](https://protection.office.com) haben, testen Sie das einheitliche Info-Center im Microsoft 365 Security Center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
-- Wenn Sie das Info-Center im Microsoft Defender Security Center ( ) verwendet [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) haben, versuchen Sie es mit dem einheitlichen Info-Center im Microsoft 365 Security Center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
-- Wenn Sie bereits das Microsoft 365 Security Center ( ) verwendet haben, [https://security.microsoft.com](https://security.microsoft.com) sehen Sie mehrere Verbesserungen im Info-Center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Wenn Sie zuvor das Office 365 Security & Compliance Center ( ) verwendet [https://protection.office.com](https://protection.office.com) haben, testen Sie das einheitliche Info-Center im Microsoft 365 Defender-Portal ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Wenn Sie das Info-Center im Microsoft Defender Security Center ( ) verwendet [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) haben, versuchen Sie es mit dem einheitlichen Info-Center im Microsoft 365 Defender-Portal ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Wenn Sie bereits das Microsoft 365 Defender-Portal ( ) verwendet haben, [https://security.microsoft.com](https://security.microsoft.com) sehen Sie mehrere Verbesserungen im Info-Center ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
 
-Das einheitliche Info-Center vereint Korrekturaktionen für Defender für Endpunkt und Defender für Office 365. Es definiert eine gemeinsame Sprache für alle Korrekturmaßnahmen und bietet eine einheitliche Untersuchungserfahrung. Ihr Sicherheitsteam verfügt über einen "einzigen Bereich" zum Anzeigen und Verwalten von Abhilfemaßnahmen.  
+Das einheitliche Info-Center vereint Korrekturaktionen in Defender für Endpunkt und Defender für Office 365. Es definiert eine gemeinsame Sprache für alle Korrekturmaßnahmen und bietet eine einheitliche Untersuchungserfahrung. Ihr Sicherheitsteam verfügt über einen "einzigen Bereich" zum Anzeigen und Verwalten von Abhilfemaßnahmen.  
 
 Sie können das einheitliche Info-Center verwenden, wenn Sie über die entsprechenden Berechtigungen und eines oder mehrere der folgenden Abonnements verfügen:
 
@@ -103,7 +103,7 @@ Alle Aktionen, unabhängig davon, ob die Genehmigung aussteht oder bereits ausge
 - Antivirusscan ausführen 
 - Beenden und Isolieren 
 
-Zusätzlich zu Korrekturmaßnahmen, die automatisch als Ergebnis [automatisierter Untersuchungen](m365d-autoir.md)durchgeführt werden, verfolgt das Info-Center auch Aktionen, die Ihr Sicherheitsteam ausgeführt hat, um erkannte Bedrohungen zu adressieren, und Aktionen, die als Ergebnis der Bedrohungsschutzfunktionen in Microsoft 365 Defender ausgeführt wurden. Weitere Informationen zu automatischen und manuellen Wartungsaktionen finden Sie unter ["Wartungsaktionen".](m365d-remediation-actions.md)
+Zusätzlich zu Korrekturmaßnahmen, die automatisch als Ergebnis [automatisierter Untersuchungen](m365d-autoir.md)durchgeführt werden, verfolgt das Info-Center auch Aktionen, die Ihr Sicherheitsteam ausgeführt hat, um erkannte Bedrohungen zu adressieren, und Aktionen, die als Ergebnis von Bedrohungsschutzfeatures in Microsoft 365 Defender ausgeführt wurden. Weitere Informationen zu automatischen und manuellen Wartungsaktionen finden Sie unter ["Wartungsaktionen".](m365d-remediation-actions.md)
 
 ## <a name="viewing-action-source-details"></a>Anzeigen von Details zur Aktionsquelle
 
@@ -126,12 +126,12 @@ Zum Ausführen von Aufgaben, z. B. das Genehmigen oder Ablehnen ausstehender Akt
 
 |Wartungsaktion |Erforderliche Rollen und Berechtigungen |
 |--|----|
-|Microsoft Defender für Endpunkt-Wartung (Geräte) |**Sicherheitsadministratorrolle,** die entweder in Azure Active Directory (Azure AD) ( [https://portal.azure.com](https://portal.azure.com) ) oder im Microsoft 365 Admin Center ( ) zugewiesen ist [https://admin.microsoft.com](https://admin.microsoft.com)<br/>--- oder ---<br/>**Rolle "Aktive Abhilfemaßnahmen"** in Microsoft Defender für Endpunkt zugewiesen <br/> <br/> Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Erstellen und Verwalten von Rollen für die rollenbasierte Zugriffssteuerung (Microsoft Defender für Endpunkt)](../defender-endpoint/user-roles.md)  |
-|Korrektur von Microsoft Defender für Office 365 (Office Inhalt und E-Mail)  |**Sicherheitsadministratorrolle,** die entweder in Azure AD ( [https://portal.azure.com](https://portal.azure.com) ) oder im Microsoft 365 Admin Center ( ) zugewiesen ist [https://admin.microsoft.com](https://admin.microsoft.com)<br/>--- und --- <br/>**Rolle "Suchen und Löschen"** im Security & Compliance Center ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**WICHTIG:** Wenn Ihnen die **Rolle "Sicherheitsadministrator"** nur im Office 365 Security & Compliance Center ( ) zugewiesen ist, [https://protection.office.com](https://protection.office.com) können Sie nicht auf das Info-Center oder Microsoft 365 Defender-Funktionen zugreifen. Ihnen muss die **Rolle "Sicherheitsadministrator"** in Azure AD oder im Microsoft 365 Admin Center zugewiesen sein. <br/><br/>Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Berechtigungen im Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender für Endpunkt-Wartung (Geräte) |**Sicherheitsadministratorrolle,** die entweder in Azure Active Directory (Azure AD) ( [https://portal.azure.com](https://portal.azure.com) ) oder der Microsoft 365 Admin Center ( ) zugewiesen ist [https://admin.microsoft.com](https://admin.microsoft.com)<br/>--- oder ---<br/>**Rolle "Aktive Abhilfemaßnahmen"** in Microsoft Defender für Endpunkt zugewiesen <br/> <br/> Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Erstellen und Verwalten von Rollen für die rollenbasierte Zugriffssteuerung (Microsoft Defender für Endpunkt)](../defender-endpoint/user-roles.md)  |
+|Korrektur von Microsoft Defender für Office 365 (Office Inhalt und E-Mail)  |**Sicherheitsadministratorrolle,** die entweder in Azure AD ( [https://portal.azure.com](https://portal.azure.com) ) oder der Microsoft 365 Admin Center ( ) zugewiesen ist [https://admin.microsoft.com](https://admin.microsoft.com)<br/>--- und --- <br/>Im Security & Compliance Center zugewiesene **Rolle "Suchen und Löschen"** ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**WICHTIG:** Wenn Ihnen die **Rolle "Sicherheitsadministrator"** nur im Office 365 Security & Compliance Center ( ) zugewiesen [https://protection.office.com](https://protection.office.com) ist, können Sie nicht auf das Info-Center oder Microsoft 365 Defender-Funktionen zugreifen. Ihnen muss die **Rolle "Sicherheitsadministrator"** in Azure AD oder dem Microsoft 365 Admin Center zugewiesen sein. <br/><br/>Weitere Informationen hierzu finden Sie in den folgenden Ressourcen: <br/>- [Administratorrollenberechtigungen in Azure AD](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Berechtigungen im Security & Compliance Center](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > Benutzer, denen die Rolle **"Globaler Administrator"** in Azure AD zugewiesen ist, können alle ausstehenden Aktionen im Info-Center genehmigen oder ablehnen. Als bewährte Methode sollte Ihre Organisation jedoch die Anzahl der Personen einschränken, denen die Rolle **"Globaler Administrator"** zugewiesen ist. Wir empfehlen die Verwendung der Rollen **"Sicherheitsadministrator",** **"Aktive Abhilfemaßnahmen"** und **"Suchen und Löschen",** die in der vorherigen Tabelle für Info-Center-Berechtigungen aufgeführt sind.
 
 ## <a name="next-step"></a>Nächster Schritt 
 
-- [Anzeigen und Verwalten von Wartungsaktionen](m365d-autoir-actions.md)
+- [Anzeigen und Genehmigen von Korrekturaktionen](m365d-autoir-actions.md)

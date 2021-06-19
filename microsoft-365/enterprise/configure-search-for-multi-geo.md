@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Erfahren Sie, wie Sie die Suche in einer Multi-Geo-Umgebung konfigurieren. Nur einige Clients, z. B. OneDrive for Business, können Ergebnisse in einer Multi-Geo-Umgebung zurückgeben.
-ms.openlocfilehash: b3a96b1d0652cb954c58ae410583befa078460d9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 31e0c4ae3fe73f2f6e113dbc38989726eb1ca590
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911162"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022330"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Konfigurieren der Suche für Microsoft 365 Multi-Geo
 
@@ -84,7 +84,7 @@ Einige Suchfunktionen, die Sie möglicherweise bereits kennen, funktionieren in 
 <tr class="odd">
 <td align="left"></td>
 <td align="left">Das dynamische Zuordnen von Buckets für numerische Einschränkungen wird von der Multi-Geo-Suche nicht unterstützt.</td>
-<td align="left">Verwenden Sie <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">den Parameter "Discretize" für</a> numerische Einschränkungen.</td>
+<td align="left">Verwenden Sie den <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">Parameter "Discretize"</a> für numerische Einschränkungen.</td>
 </tr>
 <tr class="even">
 <td align="left">Dokument-IDs</td>
@@ -131,7 +131,7 @@ Einige Suchfunktionen, die Sie möglicherweise bereits kennen, werden in einer M
 
 Alle Suchclients verwenden die vorhandenen SharePoint-Suche-REST-APIs für die Interaktion mit den Suchindizes.
 
-![Diagramm, in dem SharePoint Interaktion von SUCH-REST-APIs mit den Suchindizes dargestellt wird](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagramm, das zeigt, wie SharePoint Search-REST-APIs mit den Suchindizes interagieren](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Ein Suchclient ruft den REST-Endpunkt für die Suche mit der Abfrageeigenschaft „EnableMultiGeoSearch= true“ auf.
 2. Die Abfrage wird an alle geografischen Standorte im Mandanten gesendet.
@@ -155,7 +155,7 @@ Jedes Suchcenter verfügt über mehrere Suchsparten, und Sie müssen jede Sparte
 
 4. Bewegen Sie im Suchergebnisse-Webpart den Mauszeiger in die obere rechte Ecke des Webparts, klicken Sie auf den Pfeil, und klicken Sie dann im Menü auf **Webpart bearbeiten**. Der Toolbereich für das Suchergebnisse-Webpart wird unter dem Menüband oben rechts auf der Seite geöffnet.
 
-   ![Bearbeiten der Web part-Auswahl](../media/configure-search-for-multi-geo-image3.png)
+   ![Bearbeiten der Webpartauswahl](../media/configure-search-for-multi-geo-image3.png)
 
 5. Wählen Sie im Webpart-Toolbereich im Abschnitt **Einstellungen** unter **Einstellungen für das Ergebnissteuerelement** die Option **Multi-Geo-Ergebnisse anzeigen**, damit das Suchergebnisse-Webpart Ergebnisse von allen geografischen Standorten anzeigt.
 
@@ -324,5 +324,5 @@ Im Folgenden finden Sie ein Beispiel für eine CSOM-Abfrage, die für **alle** g
 var keywordQuery = new KeywordQuery(ctx);
 keywordQuery.QueryText = query.SearchQueryText;
 keywordQuery.ClientType = <enter a string here>;
-keywordQuery["EnableMultiGeoSearch"] = true;
+keywordQuery.Properties["EnableMultiGeoSearch"] = true;
 ```

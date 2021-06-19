@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 4f2e16acf474d6da8867a6bd392f9e90e0cf166e
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 639f850119498222684c4b3804b32a29dda3eac4
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984844"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022882"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exportieren der Softwareinventarisierungsbewertung pro Gerät
 
@@ -37,7 +37,7 @@ ms.locfileid: "52984844"
 >
 Es gibt verschiedene API-Aufrufe, um unterschiedliche Arten von Daten abzurufen. Da die Datenmenge groß sein kann, gibt es zwei Möglichkeiten, sie abzurufen:
 
-- [Exportieren von **OData** zur Softwareinventarisierungsbewertung](#1-export-software-inventory-assessment-odata)  Die API ruft alle Daten in Ihrer Organisation als JSON-Antworten nach dem OData-Protokoll ab. Diese Methode eignet sich am besten für _kleine Organisationen mit weniger als 100-K-Geräten._ Die Antwort ist paginiert, sodass Sie das \@ Feld odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen.
+- [Exportieren der **JSON-Antwort zur** Softwareinventarbewertung](#1-export-software-inventory-assessment-json-response) Die API ruft alle Daten in Ihrer Organisation als JSON-Antworten ab. Diese Methode eignet sich am besten für _kleine Organisationen mit weniger als 100-K-Geräten._ Die Antwort ist paginiert, sodass Sie das \@ Feld odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen.
 
 - Exportieren der [Softwareinventarisierungsbewertung **über Dateien**](#2-export-software-inventory-assessment-via-files)  Diese API-Lösung ermöglicht das schnellere und zuverlässigere Abrufen größerer Datenmengen. Daher wird es für große Organisationen mit mehr als 100-K-Geräten empfohlen. Diese API ruft alle Daten in Ihrer Organisation als Downloaddateien ab. Die Antwort enthält URLs zum Herunterladen aller Daten aus Azure Storage. Mit dieser API können Sie alle Ihre Daten aus Azure Storage wie folgt herunterladen:
 
@@ -51,7 +51,7 @@ Daten, die gesammelt werden (entweder mit _OData_ oder _über Dateien),_ sind di
 >
 > Sofern nicht anders angegeben, sind alle aufgeführten Exportbewertungsmethoden **_vollständige Exporte_** und **_nach Gerät_** (auch als **_pro Gerät_** bezeichnet).
 
-## <a name="1-export-software-inventory-assessment-odata"></a>1. Exportieren der Softwareinventarbewertung (OData)
+## <a name="1-export-software-inventory-assessment-json-response"></a>1. Exportieren der Softwareinventarisierungsbewertung (JSON-Antwort)
 
 ### <a name="11-api-method-description"></a>1.1 API-Methodenbeschreibung
 
@@ -69,7 +69,7 @@ Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Wei
 
 Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 ---|---|---
-Application | Software.Read.All | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
+Anwendung | Software.Read.All | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Software.Read | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
 
 ### <a name="13-url"></a>1.3 URL
@@ -88,28 +88,30 @@ GET /api/machines/SoftwareInventoryByMachine
 
 >[!NOTE]
 >
->-Jeder Datensatz enthält ca. 0,5 KB Daten. Berücksichtigen Sie dies, wenn Sie den richtigen pageSize-Parameter für Sie auswählen.
-
->-Die in der folgenden Tabelle definierten Eigenschaften werden alphabetisch nach Eigenschafts-ID aufgelistet. Beim Ausführen dieser API wird die resultierende Ausgabe nicht notwendigerweise in der in dieser Tabelle aufgeführten Reihenfolge zurückgegeben.
+>- Jeder Datensatz hat ca. 0,5 KB Daten. Berücksichtigen Sie dies, wenn Sie den richtigen pageSize-Parameter für Sie auswählen.
 >
->-Einige zusätzliche Spalten werden möglicherweise in der Antwort zurückgegeben. Diese Spalten sind temporär und können entfernt werden. Verwenden Sie nur die dokumentierten Spalten.
+>- Die in der folgenden Tabelle definierten Eigenschaften werden alphabetisch nach Eigenschafts-ID aufgelistet. Beim Ausführen dieser API wird die resultierende Ausgabe nicht notwendigerweise in der in dieser Tabelle aufgeführten Reihenfolge zurückgegeben.
+>
+>- Einige zusätzliche Spalten werden möglicherweise in der Antwort zurückgegeben. Diese Spalten sind temporär und können entfernt werden. Verwenden Sie nur die dokumentierten Spalten.
+
+<br/>
 
 Eigenschaft (ID) | Datentyp | Beschreibung | Beispiel für einen zurückgegebenen Wert
 :---|:---|:---|:---
-Deviceid | string | Eindeutiger Bezeichner für das Gerät im Dienst. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
-DeviceName | string | Vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des Geräts. | johnlaptop.europe.contoso.com
+Deviceid | Zeichenfolge | Eindeutiger Bezeichner für das Gerät im Dienst. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1
+DeviceName | Zeichenfolge | Vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des Geräts. | johnlaptop.europe.contoso.com
 DiskPaths | Array[string]  | Datenträgernachweis, dass das Produkt auf dem Gerät installiert ist. | [ "C: \\ Program Files (x86) \\ Microsoft \\ Silverlight Application \\ \\silverlight.exe" ]
-EndOfSupportDate | string | Das Datum, an dem die Unterstützung für diese Software endet oder endet. | 2020-12-30
-EndOfSupportStatus | string | Ende des Supportstatus. Kann diese möglichen Werte enthalten: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software. | Bevorstehende EOS
+EndOfSupportDate | Zeichenfolge | Das Datum, an dem die Unterstützung für diese Software endet oder endet. | 2020-12-30
+EndOfSupportStatus | Zeichenfolge | Ende des Supportstatus. Kann diese möglichen Werte enthalten: None, EOS Version, Upcoming EOS Version, EOS Software, Upcoming EOS Software. | Bevorstehende EOS
 Id | string | Eindeutiger Bezeichner für den Datensatz. | 123ABG55_573AG&mnp!
 NumberOfWeaknesses | int | Anzahl der Schwachstellen dieser Software auf diesem Gerät | 3
-OSPlatform | string | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. Ausführliche Informationen finden Sie unter tvm-unterstützte Betriebssysteme und Plattformen. | Windows 10
-RbacGroupName | string | Die Rollenbasierte Zugriffssteuerungsgruppe (RBAC). Wenn dieses Gerät keiner RBAC-Gruppe zugewiesen ist, lautet der Wert "Nicht zugewiesen". Wenn die Organisation keine RBAC-Gruppen enthält, lautet der Wert "None". | Server
+OSPlatform | Zeichenfolge | Plattform des Betriebssystems, das auf dem Gerät ausgeführt wird. Gibt spezifische Betriebssysteme an, einschließlich Variationen innerhalb der gleichen Familie, wie z. B. Windows 10 und Windows 7. Ausführliche Informationen finden Sie unter tvm-unterstützte Betriebssysteme und Plattformen. | Windows 10
+RbacGroupName | Zeichenfolge | Die Rollenbasierte Zugriffssteuerungsgruppe (RBAC). Wenn dieses Gerät keiner RBAC-Gruppe zugewiesen ist, lautet der Wert "Nicht zugewiesen". Wenn die Organisation keine RBAC-Gruppen enthält, lautet der Wert "None". | Server
 RegistryPaths | Array[string] | Registrierungsnachweis, dass das Produkt auf dem Gerät installiert ist. | [ "HKEY_LOCAL_MACHINE \\ SOFTWARE \\ WOW6432Node \\ Microsoft Windows \\ \\ CurrentVersion Uninstall Microsoft \\ \\ Silverlight" ]
-SoftwareFirstSeenTimestamp | string | Diese Software wurde zum ersten Mal auf dem Gerät angezeigt. | 2019-04-07 02:06:47
-SoftwareName | string | Name des Softwareprodukts. | Silverlight
-SoftwareVendor | string | Name des Softwareanbieters. | Microsoft
-SoftwareVersion | string | Versionsnummer des Softwareprodukts. | 81.0.4044.138
+SoftwareFirstSeenTimestamp | Zeichenfolge | Diese Software wurde zum ersten Mal auf dem Gerät angezeigt. | 2019-04-07 02:06:47
+SoftwareName | Zeichenfolge | Name des Softwareprodukts. | Silverlight
+SoftwareVendor | Zeichenfolge | Name des Softwareanbieters. | Microsoft
+SoftwareVersion | Zeichenfolge | Versionsnummer des Softwareprodukts. | 81.0.4044.138
 
 ### <a name="16-examples"></a>1.6 Beispiele
 
@@ -229,7 +231,7 @@ Eine der folgenden Berechtigungen ist erforderlich, um diese API aufzurufen. Wei
 
 Berechtigungstyp | Berechtigung | Anzeigename der Berechtigung
 ---|---|---
-Application | Software.Read.All | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
+Anwendung | Software.Read.All | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
 Delegiert (Geschäfts-, Schul- oder Unikonto) | Software.Read | \'Lesen von Sicherheitsrisiko- und Sicherheitsrisikoverwaltungsinformationen\'
 
 ### <a name="23-url"></a>2.3 URL
@@ -246,16 +248,18 @@ GET /api/machines/SoftwareInventoryExport
 
 >[!Note]
 >
->- Die Dateien werden & im mehrzeiligen JSON-Format gzipkomprimiert.
+>- Die Dateien werden im mehrzeiligen JSON-Format & gzipkomprimiert.
 >
 >- Die Download-URLs sind nur 3 Stunden gültig. Andernfalls können Sie den Parameter verwenden.
 >
->_ Für eine maximale Downloadgeschwindigkeit Ihrer Daten können Sie sicherstellen, dass Sie aus derselben Azure-Region herunterladen, in der sich Ihre Daten befinden.
->
+>- Für eine maximale Downloadgeschwindigkeit Ihrer Daten können Sie sicherstellen, dass Sie aus derselben Azure-Region herunterladen, in der sich Ihre Daten befinden.
+
+<br/><br/>
+
 Eigenschaft (ID) | Datentyp | Beschreibung | Beispiel für einen zurückgegebenen Wert
 :---|:---|:---|:---
 Exportieren von Dateien | \[Arrayzeichenfolge\] | Eine Liste der Download-URLs für Dateien, die die aktuelle Momentaufnahme der Organisation enthalten | [  Https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...1”, “https://tvmexportstrstgeus.blob.core.windows.net/tvm-export...2” ]
-GeneratedTime | string | Die Zeit, zu der der Export generiert wurde. | 2021-05-20T08:00:00Z ]
+GeneratedTime | Zeichenfolge | Die Zeit, zu der der Export generiert wurde. | 2021-05-20T08:00:00Z ]
 
 ### <a name="26-examples"></a>2.6 Beispiele
 
