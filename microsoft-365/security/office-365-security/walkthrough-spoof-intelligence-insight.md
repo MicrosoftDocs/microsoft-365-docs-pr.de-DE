@@ -19,12 +19,12 @@ description: Administratoren können erfahren, wie Sie die Spoof intelligence-Ri
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0e5c83bc50197e30c12f8f7aeedc83930d7ff5e
-ms.sourcegitcommit: f3d1009840513703c38bab99a6e13a3656eae5ee
+ms.openlocfilehash: a683ed93e4e483e63fe01281b32661f0b803d1ce
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52793208"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029297"
 ---
 # <a name="manage-spoofed-senders-using-the-spoof-intelligence-policy-and-spoof-intelligence-insight-in-eop"></a>Verwalten von gefälschten Absendern mithilfe der Spoofintelligenz-Richtlinie und des Einblicks in die Spoofintelligenz in EOP
 
@@ -37,11 +37,11 @@ ms.locfileid: "52793208"
 > [!NOTE]
 > In diesem Artikel wird die ältere Spoofing-Absenderverwaltung beschrieben, die ersetzt wird. Weitere Informationen zur neuen Oberfläche finden Sie unter [Spoof Intelligence Insight in EOP](learn-about-spoof-intelligence.md)
 
-In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP) ohne Exchange Online Postfächer werden eingehende E-Mail-Nachrichten ab Oktober 2018 automatisch vor Spoofing durch EOP geschützt. EOP verwendet **Spoofintelligenz** als Teil des allgemeinen Schutzes Ihrer Organisation gegen Phishing. Weitere Informationen finden Sie unter [Antispoofingschutz in EOP.](anti-spoofing-protection.md)
+In Microsoft 365 Organisationen mit Postfächern in Exchange Online oder eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online Postfächer werden eingehende E-Mail-Nachrichten ab Oktober 2018 automatisch vor Spoofing durch EOP geschützt. EOP verwendet **Spoofintelligenz** als Teil des allgemeinen Schutzes Ihrer Organisation gegen Phishing. Weitere Informationen finden Sie unter [Antispoofingschutz in EOP.](anti-spoofing-protection.md)
 
 Die standardmäßige (und nur) **Spoofintelligenz-Richtlinie** trägt dazu bei, sicherzustellen, dass die von legitimen Absendern gesendeten gefälschten E-Mails nicht in EOP-Spamfilter eingefangen werden, während Ihre Benutzer vor Spam- oder Phishingangriffen geschützt werden. Sie können auch den Einblick in die **Spoofintelligenz** verwenden, um schnell zu ermitteln, welche externen Absender Sie legitimerweise nicht authentifizierte E-Mails senden (Nachrichten von Domänen, die keine SPF-, DKIM- oder DMARC-Prüfungen bestehen).
 
-Sie können Spoofintelligenz im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständiger EOP PowerShell für Organisationen ohne Exchange Online Postfächer) verwalten.
+Sie können Spoofintelligenz im Security & Compliance Center oder in PowerShell (Exchange Online PowerShell für Microsoft 365 Organisationen mit Postfächern in Exchange Online, eigenständiger EOP PowerShell für Organisationen ohne Exchange Online Postfächer) verwalten.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Was sollten Sie wissen, bevor Sie beginnen?
 
@@ -67,7 +67,7 @@ Sie können Spoofintelligenz im Security & Compliance Center oder in PowerShell 
 - Sie können die Spoofintelligenz-Einstellungen in Antiphishingrichtlinien aktivieren, deaktivieren und konfigurieren. Anweisungen basierend auf Ihrem Abonnement finden Sie in einem der folgenden Themen:
 
   - [Konfigurieren von Antiphishingrichtlinien in EOP.](configure-anti-phishing-policies-eop.md)
-  - [Konfigurieren Von Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md).
+  - [Konfigurieren Von Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-mdo-anti-phishing-policies.md).
 
 - Unsere empfohlenen Einstellungen für Spoofintelligenz finden Sie unter [EOP Antiphishing-Richtlinieneinstellungen.](recommended-settings-for-eop-and-office365.md#eop-anti-phishing-policy-settings)
 
@@ -184,7 +184,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Set-Phis
 
 1. Wechseln Sie im Security & Compliance Center zum **Dashboard für die Bedrohungsverwaltung.** \> 
 
-2. Suchen Sie in der Zeile **"Insights"** nach einem der folgenden Elemente:
+2. Suchen Sie in der **zeile Insights** nach einem der folgenden Elemente:
 
    - **Wahrscheinlich gefälschte Domänen in den letzten sieben Tagen:** Diese Erkenntnisse deuten darauf hin, dass die Spoofintelligenz aktiviert ist (sie ist standardmäßig aktiviert).
    - **Spoofschutz aktivieren:** Dieser Einblick gibt an, dass die Spoofintelligenz deaktiviert ist, und wenn Sie auf den Einblick klicken, können Sie die Spoofintelligenz aktivieren.
@@ -233,7 +233,7 @@ Ausführliche Informationen zu Syntax und Parametern finden Sie unter ["Set-Phis
 
 Führen Sie einen der folgenden Schritte aus, um zu überprüfen, ob Sie die Spoofintelligenz mit Absendern konfiguriert haben, die Spoofing zulassen und nicht zulassen:
 
-- Wechseln Sie im Security & Compliance Center zu "Antispam-Richtlinie für **die Bedrohungsmanagementrichtlinie** \>  \>  \> erweitern **Spoofintelligenzrichtlinie"** und wählen Sie "Absender anzeigen" aus, die \> ich bereits überprüft **habe,** wählen Sie die Registerkarte \> **"Ihre Domänen"** oder **"Externe Domänen"** aus, und überprüfen Sie den Wert **"Spoofing zulassen".**
+- Wechseln Sie im Security & Compliance Center zu "Antispam-Richtlinie für die **Bedrohungsmanagementrichtlinie** \>  \>  \> erweitern **Spoofintelligenzrichtlinie"** und wählen Sie "Absender anzeigen" aus, die \> ich bereits überprüft **habe,** wählen Sie die Registerkarte \> **"Ihre Domänen"** oder **"Externe Domänen"** aus, und überprüfen Sie den Wert **"Spoofing zulassen"** für den Absender.
 
 - Führen Sie in PowerShell die folgenden Befehle aus, um die Absender anzuzeigen, die spoofen dürfen und nicht:
 

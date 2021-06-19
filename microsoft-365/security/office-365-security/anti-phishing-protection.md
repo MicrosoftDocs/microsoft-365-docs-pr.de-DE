@@ -18,15 +18,15 @@ ms.collection:
 ms.custom:
 - TopSMBIssues
 - seo-marvel-apr2020
-description: Administratoren können mehr über die Antiphishingschutzfunktionen in Exchange Online Protection (EOP) und Microsoft Defender for Office 365.
+description: Administratoren können sich über die Antiphishingschutzfeatures in Exchange Online Protection (EOP) und Microsoft Defender für Office 365 informieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 290f5f7797d987fb65a99e3f9e656bfec4cf83f3
-ms.sourcegitcommit: f780de91bc00caeb1598781e0076106c76234bad
+ms.openlocfilehash: 0e1539153282f14a13ddd9066350cbcdca2a074a
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52538339"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029237"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Antiphishingschutz in Microsoft 365
 
@@ -39,40 +39,40 @@ ms.locfileid: "52538339"
 
 Bei *Phishing* handelt es sich um E-Mail-Angriffe, bei denen versucht wird, vertrauliche Informationen mittels Nachrichten zu stehlen, die scheinbar von legitimen oder vertrauenswürdigen Absendern stammen. Es gibt bestimmte Kategorien von Phishing. Beispiel:
 
-- **Beim Phishing** werden gezielt angepasste Inhalte verwendet, die speziell auf die Zielempfänger zugeschnitten sind (in der Regel nach der Aufklärung der Empfänger durch den Angreifer).
+- **Spear-Phishing** verwendet fokussierte, angepasste Inhalte, die speziell auf die Zielempfänger zugeschnitten sind (in der Regel nach der Aufarbeitung der Empfänger durch den Angreifer).
 
-- **Der Walfang richtet** sich an Führungskräfte oder andere ziele mit hohem Wert innerhalb einer Organisation, um eine maximale Wirkung zu erzielen.
+- **Der Walfang** richtet sich an Führungskräfte oder andere ziele mit hohem Wert innerhalb einer Organisation, um eine maximale Wirkung zu erzielen.
 
-- **Business Email Compromise (BEC)** verwendet gefälschte vertrauenswürdige Absender (Finanzbeamte, Kunden, vertrauenswürdige Partner usw.), um Empfänger dazu zu verwenden, Zahlungen zu genehmigen, Geld zu übertragen oder Kundendaten offen zu stellen. Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2) ansehen.
+- **Business Email Compromise (BEC)** verwendet gefälschte vertrauenswürdige Absender (Finanzbeauftragte, Kunden, vertrauenswürdige Partner usw.), um Empfänger dazu zu bringen, Zahlungen zu genehmigen, Guthaben zu übertragen oder Kundendaten offenzulegen. Erfahren Sie mehr, in dem Sie [dieses Video](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2) ansehen.
 
-- **Ransomware,** die Ihre Daten verschlüsselt und zahlungen zur Entschlüsselung fordert, beginnt fast immer mit Phishingnachrichten. Antiphishingschutz hilft Ihnen nicht, verschlüsselte Dateien zu entschlüsseln, aber er kann dazu beitragen, die anfänglichen Phishingnachrichten zu erkennen, die der Ransomware-Kampagne zugeordnet sind. Weitere Informationen zum Wiederherstellen nach einem Ransomware-Angriff finden Sie unter [Recover from a ransomware attack in Microsoft 365](recover-from-ransomware.md).
+- **Ransomware,** die Ihre Daten verschlüsselt und eine Zahlung zur Entschlüsselung anfordert, beginnt fast immer in Phishing-Nachrichten. Der Antiphishingschutz kann Ihnen nicht helfen, verschlüsselte Dateien zu entschlüsseln, aber er kann ihnen helfen, die anfänglichen Phishingnachrichten zu erkennen, die der Ransomware-Kampagne zugeordnet sind. Weitere Informationen zur Wiederherstellung nach einem Ransomware-Angriff finden Sie unter ["Wiederherstellen nach einem Ransomware-Angriff in Microsoft 365".](recover-from-ransomware.md)
 
-Mit der zunehmenden Komplexität von Angriffen ist es für geschulte Benutzer sogar schwierig, anspruchsvolle Phishingnachrichten zu identifizieren. Glücklicherweise können Exchange Online Protection (EOP) und die zusätzlichen Features in Microsoft Defender for Office 365 helfen.
+Angesichts der zunehmenden Komplexität von Angriffen ist es für geschulte Benutzer sogar schwierig, komplexe Phishingnachrichten zu erkennen. Glücklicherweise können Exchange Online Protection (EOP) und die zusätzlichen Features in Microsoft Defender für Office 365 hilfreich sein.
 
 ## <a name="anti-phishing-protection-in-eop"></a>Antiphishingschutz in EOP
 
-EOP (d. h. Microsoft 365 Organisationen ohne Microsoft Defender for Office 365) enthält Features, die Ihre Organisation vor Phishingbedrohungen schützen können:
+EOP (d. h. Microsoft 365 Organisationen ohne Microsoft Defender für Office 365) enthält Features, die Ihre Organisation vor Phishingbedrohungen schützen können:
 
-- **Spoof intelligence**: Verwenden Sie die Spion-Intelligence-Einblicke, um erkannte gefälschte Absender in Nachrichten von externen und internen Domänen zu überprüfen und diese erkannten Absender manuell zu erlauben oder zu blockieren. Weitere Informationen finden Sie unter [Spoof Intelligence Insight in EOP](learn-about-spoof-intelligence.md).
+- **Spoofintelligenz:** Verwenden Sie den Einblick in die Spoofintelligenz, um erkannte gefälschte Absender in Nachrichten von externen und internen Domänen zu überprüfen und diese erkannten Absender manuell zuzulassen oder zu blockieren. Weitere Informationen finden Sie unter [Spoofintelligenz-Erkenntnisse in EOP](learn-about-spoof-intelligence.md).
 
-- **Antiphishingrichtlinien in EOP:** Aktivieren oder Deaktivieren der Spoofintelligenz, Aktivieren oder Deaktivieren der nicht authentifizierten Absenderidentifikation in Outlook ein oder aus, und geben Sie die Aktion für blockierte spoofierte Absender an. Weitere Informationen finden Sie unter [Konfigurieren von Antiphishingrichtlinien in EOP](configure-anti-phishing-policies-eop.md).
+- **Antiphishingrichtlinien in EOP:** Aktivieren oder Deaktivieren der Spoofintelligenz, Aktivieren oder Deaktivieren der nicht authentifizierten Absenderidentifikation in Outlook aktivieren oder deaktivieren und Angeben der Aktion für blockierte gefälschte Absender. Weitere Informationen finden Sie unter [Konfigurieren von Antiphishingrichtlinien in EOP.](configure-anti-phishing-policies-eop.md)
 
-- Zulassen oder Blockieren von gefälschten Absendern in der Mandanten zulassen/Blockieren-Liste: Wenn Sie das Urteil in der Spoof Intelligence-Einsicht außer Kraft setzen, wird der gefälschte Absender zu einem manuellen Zulassen oder Blockieren des **Eintrags,** der nur auf der Registerkarte **Spoof** in der Mandanten-Zulassen-/Sperrliste angezeigt wird. Sie können auch manuell Zulassen oder Blockieren von Einträgen für Spoof-Absender erstellen, bevor sie von spoof intelligence erkannt werden. Weitere Informationen finden Sie [unter Manage the Tenant Allow/Block List in EOP](tenant-allow-block-list.md).
+- **Zulassen oder Blockieren von Spoofingabsendern in der Liste Mandantenzulassungsliste/ -sperrliste**: Wenn Sie die Sicherheitsbewertung in dem Spoofintelligenz-Erkenntnis außer Kraft setzen, wird der Spoofingabsender zu einem manuellen zugelassenen oder blockierten Eintrag, die nur auf der Registerkarte **Spoofen** in der Mandantenzulassungsliste/ -sperrliste angezeigt wird. Sie können auch zugelassene oder blockierte Einträge für Spoofingabsender erstellen, bevor diese von der Spoofintelligenz erkannt werden. Weitere Informationen finden Sie unter [Verwalten der Mandantenzulassungsliste/ -sperrliste in EOP](tenant-allow-block-list.md).
 
-- Implizite E-Mail-Authentifizierung: EOP verbessert standardmäßige E-Mail-Authentifizierungsüberprüfungen für eingehende E-Mails ([SPF,](set-up-spf-in-office-365-to-help-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)und [DMARC](use-dmarc-to-validate-email.md)) mit Absenderverdingung, Absenderverlauf, Empfängerverlauf, Verhaltensanalyse und anderen erweiterten Techniken, um gefälschte Absender zu identifizieren. Weitere Informationen finden Sie unter [E-Mail-Authentifizierung in Microsoft 365](email-validation-and-authentication.md).
+- **Implizite E-Mail-Authentifizierung:** EOP verbessert standardmäßige E-Mail-Authentifizierungsprüfungen für eingehende E-Mails ([SPF](set-up-spf-in-office-365-to-help-prevent-spoofing.md), [DKIM](use-dkim-to-validate-outbound-email.md)und [DMARC](use-dmarc-to-validate-email.md)) mit Absenderzurückruf, Absenderverlauf, Empfängerverlauf, Verhaltensanalysen und anderen erweiterten Techniken, um gefälschte Absender zu identifizieren. Weitere Informationen finden Sie unter [E-Mail-Authentifizierung in Microsoft 365](email-validation-and-authentication.md).
 
 ## <a name="additional-anti-phishing-protection-in-microsoft-defender-for-office-365"></a>Zusätzlicher Antiphishingschutz in Microsoft Defender für Office 365
 
 Microsoft Defender für Office 365 enthält weitere und noch fortgeschrittenere Antiphishingfeatures:
 
-- **Antiphishingrichtlinien in Microsoft Defender for Office 365:** Konfigurieren von Identitätswechselschutzeinstellungen für bestimmte Nachrichtensender und Absenderdomänen, Postfachintelligenzeinstellungen und anpassbare erweiterte Phishingschwellenwerte. Weitere Informationen finden Sie unter [Configure anti-phishing policies in Microsoft Defender for Office 365](configure-atp-anti-phishing-policies.md). Weitere Informationen zu den Unterschieden zwischen Antiphishingrichtlinien in EOP und Antiphishingrichtlinien in Defender for Office 365 finden Sie unter [Antiphishingrichtlinien in Microsoft 365](set-up-anti-phishing-policies.md).
+- **Antiphishingrichtlinien in Microsoft Defender für Office 365:** Konfigurieren von Identitätswechselschutzeinstellungen für bestimmte Nachrichten- und Absenderdomänen, Postfachintelligenzeinstellungen und anpassbare erweiterte Phishing-Schwellenwerte. Weitere Informationen finden Sie unter [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365.](configure-mdo-anti-phishing-policies.md) Weitere Informationen zu den Unterschieden zwischen Antiphishingrichtlinien in EOP und Antiphishingrichtlinien in Defender für Office 365 finden Sie [unter Antiphishingrichtlinien in Microsoft 365](set-up-anti-phishing-policies.md).
 
-- **Kampagnenansichten:** Maschinelles Lernen und andere Heuristiken identifizieren und analysieren Nachrichten, die an koordinierten Phishingangriffen gegen den gesamten Dienst und Ihre Organisation beteiligt sind. Weitere Informationen finden Sie unter [Kampagnenansichten in Microsoft Defender for Office 365](campaigns.md).
+- **Kampagnenansichten:** Machine Learning und andere Heuristiken identifizieren und analysieren Nachrichten, die an koordinierten Phishingangriffen auf den gesamten Dienst und Ihre Organisation beteiligt sind. Weitere Informationen finden Sie unter [Kampagnenansichten in Microsoft Defender für Office 365](campaigns.md).
 
-- **Angriffssimulator:** Administratoren können gefälschte Phishingnachrichten erstellen und als Bildungstool an interne Benutzer senden. Weitere Informationen finden Sie unter [Attack Simulator in Microsoft Defender for Office 365](attack-simulator.md).
+- **Angriffssimulator:** Administratoren können gefälschte Phishingnachrichten erstellen und sie als Bildungstool an interne Benutzer senden. Weitere Informationen finden Sie unter [Angriffssimulator in Microsoft Defender für Office 365](attack-simulator.md).
 
 ## <a name="other-anti-phishing-resources"></a>Andere Antiphishingressourcen
 
-- Für Endbenutzer: [Schützen Sie sich vor Phishingschemas und anderen Formen von Onlinebetrug.](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593)
+- Für Endbenutzer: [Schützen Sie sich vor Phishing-Schemas und anderen Formen von Online-Betrug.](https://support.microsoft.com/office/be0de46a-29cd-4c59-aaaf-136cf177d593)
 
-- [Überprüfen Microsoft 365 Von-Adresse, um Phishing zu verhindern.](how-office-365-validates-the-from-address.md)
+- [So überprüft Microsoft 365 die Absenderadresse, um Phishing zu verhindern.](how-office-365-validates-the-from-address.md)

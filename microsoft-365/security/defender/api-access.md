@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 03fd82cd5dc24653b6d67fa47cc225d355bfac45
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 3cbd329c63d7cf1868083c66919773e14ed51156
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028799"
+ms.locfileid: "53029597"
 ---
 # <a name="access-the-microsoft-365-defender-apis"></a>Zugreifen auf die Microsoft 365 Defender-APIs
 
@@ -59,7 +59,7 @@ Verwenden Sie diesen Kontext für Apps, die ohne angemeldeten Benutzer ausgefüh
 2. Weisen Sie der Anwendung die gewünschten Berechtigungen zu.
 3. Erstellen Sie einen Schlüssel für die Anwendung.
 4. Rufen Sie ein Sicherheitstoken mithilfe der Anwendung und ihres Schlüssels ab.
-5. Verwenden Sie das Token, um auf Microsoft 365 Defender-API zuzugreifen.
+5. Verwenden Sie das Token, um auf die Microsoft 365 Defender-API zuzugreifen.
 
 Weitere Informationen finden Sie unter **[Erstellen einer App für den Zugriff auf Microsoft 365 Defender ohne Benutzer.](api-create-app-web.md)**
 
@@ -70,7 +70,7 @@ Verwenden Sie diesen Kontext, um Aktionen im Namen eines einzelnen Benutzers aus
 1. Erstellen Sie eine Azure Active Directory systemeigene Anwendung.
 2. Weisen Sie der Anwendung die gewünschte Berechtigung zu.
 3. Rufen Sie ein Sicherheitstoken mithilfe der Benutzeranmeldeinformationen für die Anwendung ab.
-4. Verwenden Sie das Token, um auf Microsoft 365 Defender-API zuzugreifen.
+4. Verwenden Sie das Token, um auf die Microsoft 365 Defender-API zuzugreifen.
 
 Weitere Informationen finden Sie unter **[Erstellen einer App für den Zugriff auf Microsoft 365 Defender APIs im Namen eines Benutzers.](api-create-app-user-context.md)**
 
@@ -82,9 +82,9 @@ Verwenden Sie diesen Kontext, wenn Sie vielen Benutzern über [mehrere Mandanten
 2. Weisen Sie der Anwendung die gewünschte Berechtigung zu.
 3. Holen Sie sich die [Administratorzustimmung](/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant) für die App von jedem Mandanten.
 4. Rufen Sie ein Sicherheitstoken mithilfe von Benutzeranmeldeinformationen basierend auf der Mandanten-ID eines Kunden ab.
-5. Verwenden Sie das Token, um auf Microsoft 365 Defender-API zuzugreifen.
+5. Verwenden Sie das Token, um auf die Microsoft 365 Defender-API zuzugreifen.
 
-Weitere Informationen finden Sie unter **[Erstellen einer App mit Partnerzugriff auf Microsoft 365 Defender APIs.](api-partner-access.md)**
+Weitere Informationen finden Sie unter **[Erstellen einer App mit Partnerzugriff auf Microsoft 365 Defender-APIs.](api-partner-access.md)**
 
 ## <a name="related-articles"></a>Verwandte Artikel
 

@@ -1,6 +1,6 @@
 ---
 title: Problembehandlung bei Microsoft 365 Defender Dienstproblemen
-description: Suchen von Lösungen und Problemumgehungen für bekannte Microsoft 365 Defender Probleme
+description: Suchen nach Lösungen und Problemumgehungen für bekannte Microsoft 365 Defender Probleme
 keywords: Problembehandlung Microsoft 365 Defender, Problembehandlung, Microsoft Defender for Identity, Probleme, Add-On, Einstellungsseite
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 14033ffeb3d08efad7f45eb4c319ac0401b7df09
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 7891d61de7581a896a6599004eae91a4e47e1581
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028470"
+ms.locfileid: "53029945"
 ---
 # <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Problembehandlung bei Microsoft 365 Defender Dienstproblemen
 
@@ -56,5 +56,3 @@ Um Microsoft 365 Defender zu aktivieren, greifen **Sie** über den Navigationsbe
 ## <a name="how-do-i-create-an-exception-for-my-fileurl"></a>Wie erstelle ich eine Ausnahme für meine Datei/URL?
 
 Ein falsch positives Ergebnis ist eine Datei oder URL, die als bösartig erkannt wird, aber keine Bedrohung darstellt. Sie können Indikatoren erstellen und Ausschlüsse definieren, um bestimmte Dateien/URLs zu entsperren und zuzulassen. Siehe ["Adresse falsch positive/negative Ergebnisse" in Defender für Endpunkt.](/microsoft-365/security/defender-endpoint/defender-endpoint-false-positives-negatives)
-
-

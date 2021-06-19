@@ -1,6 +1,6 @@
 ---
 title: Reihenfolge und Rangfolge des E-Mail-Schutzes
-keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Security Center, Microsoft 365 Defender-Portal, Microsoft Defender für Endpunkt, Microsoft Defender für Office 365, Microsoft Defender for Identity
+keywords: Sicherheit, Schadsoftware, Microsoft 365, M365, Security Center, Microsoft 365 Defender Portal, Microsoft Defender für Endpunkt, Microsoft Defender für Office 365, Microsoft Defender for Identity
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -14,15 +14,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Administratoren können mehr über die Anwendungsreihenfolge von Schutzmaßnahmen in Exchange Online Protection (EOP) erfahren und erfahren, wie der Prioritätswert in Schutzrichtlinien bestimmt, welche Richtlinie angewendet wird.
+description: Administratoren können sich über die Anwendungsreihenfolge der Schutzmaßnahmen in Exchange Online Protection (EOP) informieren und erfahren, wie der Prioritätswert in Schutzrichtlinien bestimmt, welche Richtlinie angewendet wird.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7243fd79287e19528e999774dbd0dd018fa86759
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: df40ca6efaed5a1884e6dc453f2053f9bc1a84f1
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877848"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029285"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Reihenfolge und Rangfolge des E-Mail-Schutzes
 
@@ -51,8 +51,8 @@ Es gibt zwei wichtige Faktoren, die bestimmen, welche Richtlinie auf eine Nachri
   |2|Phishing|CAT:PHSH|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |3|Spam mit hoher Vertrauenswürdigkeit|CAT:HSPM|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |4 |Spoofing|CAT:SPOOF|[Einblick in die Spoofintelligenz in EOP](learn-about-spoof-intelligence.md)|
-  |5<sup>\*</sup>|Benutzeridentitätswechsel (geschützte Benutzer)|UIMP|[Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md)|
-  |6<sup>\*</sup>|Domänenidentitätswechsel (geschützte Domänen)|DIMP|[Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md)|
+  |5<sup>\*</sup>|Benutzeridentitätswechsel (geschützte Benutzer)|UIMP|[Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-mdo-anti-phishing-policies.md)|
+  |6<sup>\*</sup>|Domänenidentitätswechsel (geschützte Domänen)|DIMP|[Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-mdo-anti-phishing-policies.md)|
   |7 |Spam|CAT:SPM|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |8 |Masse|CAT:BULK|[Konfigurieren von Antispamrichtlinien in EOP](configure-your-spam-filter-policies.md)|
   |
@@ -63,7 +63,7 @@ Es gibt zwei wichtige Faktoren, die bestimmen, welche Richtlinie auf eine Nachri
 
   Wenn ein Benutzer in mehreren Richtlinien desselben Typs definiert ist, wird nur die Richtlinie mit der höchsten Priorität auf sie angewendet. Alle verbleibenden Richtlinien dieses Typs werden für den Benutzer nicht ausgewertet (einschließlich der Standardrichtlinie).
 
-Betrachten Sie beispielsweise die folgenden Antiphishingrichtlinien in Microsoft Defender für Office 365, die für **dieselben Benutzer gelten,** und eine Nachricht, die sowohl als Identitätswechsel als auch als Spoofing identifiziert wird:
+Betrachten Sie beispielsweise die folgenden Antiphishingrichtlinien in Microsoft Defender für Office 365, die für **dieselben Benutzer gelten,** und eine Nachricht, die sowohl als Identitätswechsel als auch als Spoofing von Benutzern identifiziert wird:
 
 <br>
 

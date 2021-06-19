@@ -20,12 +20,12 @@ ms.custom:
 description: Administratoren können sich über den Einblick in die Spoofintelligenz in Exchange Online Protection (EOP) informieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94dc1e438f913c1103154afb8803ef4cf89f64af
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 08b9586edf565c4f69c51f732511d3a0956ae500
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028811"
+ms.locfileid: "53029249"
 ---
 # <a name="spoof-intelligence-insight-in-eop"></a>Einblick in die Spoofintelligenz in EOP
 
@@ -53,16 +53,13 @@ Wenn ein Absender eine E-Mail-Adresse spooft, scheint er ein Benutzer in einer d
   - Der Absender befindet sich in einer Mailingliste (auch als Diskussionsliste bezeichnet), und die Mailingliste leitet E-Mails vom ursprünglichen Absender an alle Teilnehmer in der Mailingliste weiter.
   - Ein externes Unternehmen sendet E-Mails im Auftrag eines anderen Unternehmens (z. B. einen automatisierten Bericht oder ein Software-as-a-Service-Unternehmen).
 
-
 Sie können den Einblick in die **Spoofintelligenz** im Microsoft 365 Defender Portal verwenden, um spoofierte Absender schnell zu identifizieren, die Ihnen legitimerweise nicht authentifizierte E-Mails senden (Nachrichten von Domänen, die keine SPF-, DKIM- oder DMARC-Prüfungen bestehen), und diese Absender manuell zulassen.
-
 
 Indem Sie bekannten Absendern erlauben, gefälschte Nachrichten von bekannten Speicherorten zu senden, können Sie falsch positive Ergebnisse reduzieren (gute E-Mails werden als "schlecht" markiert). Durch die Überwachung der zulässigen gefälschten Absender stellen Sie eine zusätzliche Sicherheitsebene bereit, um zu verhindern, dass unsichere Nachrichten in Ihrer Organisation eintreffen.
 
 Ebenso können Sie gefälschte Absender überprüfen, die durch Spoofintelligenz zugelassen wurden, und diese Absender manuell am Einblick in die Spoofintelligenz blockieren.
 
-Im restlichen Teil dieses Artikels wird erläutert, wie Sie den Einblick in die Spoofintelligenz im Microsoft 365 Defender-Portal und in PowerShell (Exchange Online PowerShell für Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständiger EOP PowerShell für Organisationen ohne Exchange Online Postfächer) verwenden.
-
+Im restlichen Teil dieses Artikels wird erläutert, wie Sie den Einblick in die Spoofintelligenz im Microsoft 365 Defender-Portal und in PowerShell verwenden (Exchange Online PowerShell für Microsoft 365 Organisationen mit Postfächern in Exchange Online; eigenständige EOP PowerShell für Organisationen ohne Exchange Online Postfächer).
 
 > [!NOTE]
 >
@@ -89,13 +86,13 @@ Im restlichen Teil dieses Artikels wird erläutert, wie Sie den Einblick in die 
   - Durch Hinzufügen von Benutzern zur entsprechenden Azure Active Directory-Rolle im Microsoft 365 Admin Center erhalten Benutzer die erforderlichen Berechtigungen _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
   - Die Rollengruppe **Organisationsverwaltung mit Leserechten** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups) ermöglicht auch einen schreibgeschützten Zugriff auf das Feature.
 
-- Sie aktivieren und deaktivieren Spoofintelligenz in Antiphishingrichtlinien in EOP und Microsoft Defender für Office 365. Spoofintelligenz ist standardmäßig aktiviert. Weitere Informationen finden Sie unter [Konfigurieren von Antiphishingrichtlinien in EOP](configure-anti-phishing-policies-eop.md) oder [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365.](configure-atp-anti-phishing-policies.md)
+- Sie aktivieren und deaktivieren Spoofintelligenz in Antiphishingrichtlinien in EOP und Microsoft Defender für Office 365. Spoofintelligenz ist standardmäßig aktiviert. Weitere Informationen finden Sie unter [Konfigurieren von Antiphishingrichtlinien in EOP](configure-anti-phishing-policies-eop.md) oder [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365.](configure-mdo-anti-phishing-policies.md)
 
 - Unsere empfohlenen Einstellungen für Spoofintelligenz finden Sie unter [EOP Antiphishing-Richtlinieneinstellungen.](recommended-settings-for-eop-and-office365-atp.md#eop-anti-phishing-policy-settings)
 
-## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Öffnen Sie den Einblick in die Spoofintelligenz im Microsoft 365 Defender Portal
+## <a name="open-the-spoof-intelligence-insight-in-the-microsoft-365-defender-portal"></a>Öffnen Des Einblicks in die Spoofintelligenz im Microsoft 365 Defender Portal
 
-1. Wechseln Sie im Portal Microsoft 365 Defender zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \>  \> **Regelbedrohungsrichtlinien** \>  im Abschnitt \> **"Antiphishing".**
+1. Wechseln Sie im Portal Microsoft 365 Defender zu **E-Mail-& Richtlinien** für die Zusammenarbeit & Richtlinien für \> **Bedrohungsrichtlinien** für Regeln \>  \>  \> **Antiphishing.**
 
 2. Auf der **Antiphishingseite** sieht der Einblick in die Spoofintelligenz wie folgt aus:
 
@@ -126,7 +123,7 @@ Auf der Seite mit den Einblicken zur **Spoofintelligenz,** die angezeigt wird, n
   - **Extern:** Der gefälschte Absender befindet sich in einer externen Domäne.
 - **Aktion:** Dieser Wert ist **zulässig** oder **blockiert:**
   - **Zulässig:** Die Domäne hat die explizite E-Mail-Authentifizierung überprüft [SPF,](how-office-365-uses-spf-to-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)und [DMARC](use-dmarc-to-validate-email.md)). Die Domäne hat jedoch unsere impliziten E-Mail-Authentifizierungsprüfungen[(zusammengesetzte Authentifizierung)](email-validation-and-authentication.md#composite-authentication)bestanden. Daher wurde keine Antispoofingaktion für die Nachricht ausgeführt.
-  - **Blockiert:** Nachrichten aus der Kombination aus der gefälschten Domäne _und_ der sendenden Infrastruktur werden durch Spoofintelligenz als "schlecht" gekennzeichnet. Die Aktion, die für gefälschte Nachrichten ausgeführt wird, wird durch die Standardmäßige Antiphishingrichtlinie oder benutzerdefinierte Antiphishingrichtlinien gesteuert (der Standardwert ist **"Nachricht in Junk-E-Mail-Ordner verschieben").** Weitere Informationen finden Sie unter [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365.](configure-atp-anti-phishing-policies.md)
+  - **Blockiert:** Nachrichten aus der Kombination aus der gefälschten Domäne _und_ der sendenden Infrastruktur werden durch Spoofintelligenz als "schlecht" gekennzeichnet. Die Aktion, die für gefälschte Nachrichten ausgeführt wird, wird durch die Standardmäßige Antiphishingrichtlinie oder benutzerdefinierte Antiphishingrichtlinien gesteuert (der Standardwert ist **"Nachricht in Junk-E-Mail-Ordner verschieben").** Weitere Informationen finden Sie unter [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365.](configure-mdo-anti-phishing-policies.md)
 
 Sie können auf ausgewählte Spaltenüberschriften klicken, um die Ergebnisse zu sortieren.
 
@@ -146,7 +143,7 @@ Wenn Sie einen Eintrag aus der Liste auswählen, wird ein Detail-Flyout mit den 
 - Was Sie tun müssen.
 - Eine Domänenzusammenfassung, die die meisten der gleichen Informationen von der Hauptseite der Spoofintelligenz enthält.
 - WhoIs-Daten über den Absender.
-- Ein Link zum Öffnen des [Bedrohungs-Explorers,](threat-explorer.md) um weitere Details zum Absender anzuzeigen (Microsoft Defender für Office 365).
+- Ein Link zum Öffnen [des Bedrohungs-Explorers,](threat-explorer.md) um weitere Details zum Absender anzuzeigen (Microsoft Defender für Office 365).
 - Ähnliche Nachrichten, die wir in Ihrem Mandanten vom gleichen Absender gesehen haben.
 
 ### <a name="about-allowed-spoofed-senders"></a>Informationen zu zulässigen gefälschten Absendern
@@ -158,7 +155,7 @@ Beispielsweise darf der folgende gefälschte Absender Spoofing ausführen:
 - **Domäne:** gmail.com
 - **Infrastruktur:** tms.mx.com
 
-Nur E-Mails von diesem Domänen-/Sendeinfrastrukturpaar dürfen Spoofing ausführen. Andere Absender, die versuchen, gmail.com zu spoofen, sind nicht automatisch zulässig. Nachrichten von Absendern in anderen Domänen, die von tms.mx.com stammen, werden weiterhin durch Spoofintelligenz überprüft und können blockiert werden.
+Nur E-Mails von diesem Domänen-/Sendeinfrastrukturpaar dürfen Spoofing ausführen. Andere Absender, die versuchen, gmail.com zu spoofen, sind nicht automatisch zulässig. Nachrichten von Absendern in anderen Domänen, die von tms.mx.com stammen, werden weiterhin durch Spoofing-Intelligence überprüft und können blockiert werden.
 
 ## <a name="use-the-spoof-intelligence-insight-in-exchange-online-powershell-or-standalone-eop-powershell"></a>Verwenden des Einblicks in die Spoofintelligenz in Exchange Online PowerShell oder der eigenständigen EOP-PowerShell
 

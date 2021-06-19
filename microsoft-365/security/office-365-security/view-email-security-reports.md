@@ -19,12 +19,12 @@ description: Administratoren können erfahren, wie Sie die E-Mail-Sicherheitsber
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f3dcf533c232a89adf0dc1ff3fcc7c2ca4fc5d8f
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: ad5a9f0d87902deb1985daebfa61cd733d22cbec
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022936"
+ms.locfileid: "53029577"
 ---
 # <a name="view-email-security-reports-in-the-microsoft-365-defender-portal"></a>Anzeigen von E-Mail-Sicherheitsberichten im Microsoft 365 Defender-Portal
 
@@ -157,7 +157,9 @@ To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **
 
 ### <a name="type-view-for-the-mailflow-status-report"></a>Typansicht für den Mailflow-Statusbericht
 
-Wenn Sie den Bericht  öffnen, ist standardmäßig die Registerkarte Typ ausgewählt. Standardmäßig enthält diese Ansicht ein Diagramm und eine Detailtabelle, die mit den folgenden Filtern konfiguriert ist:
+![Typansicht im Mailflow-Statusbericht](../../media/mail-flow-status-report-type-view.png)
+
+Auf der Seite **E-Mailflow-Statusbericht** ist die Registerkarte Typ standardmäßig ausgewählt.  Standardmäßig enthält diese Ansicht ein Diagramm und eine Detailtabelle, die mit den folgenden Filtern konfiguriert ist:
 
 - **Datum (UTC)** Die letzten 7 Tage.
 - **E-Mail-Richtung:**
@@ -175,7 +177,7 @@ Wenn Sie den Bericht  öffnen, ist standardmäßig die Registerkarte Typ ausgew�
 
 Das Diagramm ist nach den **Type-Werten** organisiert.
 
-Sie können diese Filter ändern, indem Sie auf **"Filter"** oder auf einen Wert in der Diagrammlegende klicken.
+Sie können diese Filter ändern, indem Sie auf **"Filter"** klicken.
 
 Die folgenden Informationen werden in der Detailtabelle unterhalb des Diagramms angezeigt:
 
@@ -200,9 +202,9 @@ Für die Detailansicht können Sie nur Daten für einen Tag exportieren. Wenn Si
 
 Jede exportierte .csv Datei ist auf 150.000 Zeilen beschränkt. Wenn die Daten für diesen Tag mehr als 150.000 Zeilen enthalten, werden mehrere .csv Dateien erstellt.
 
-![Typansicht im Mailflow-Statusbericht](../../media/mail-flow-status-report-type-view.png)
-
 ### <a name="direction-view-for-the-mailflow-status-report"></a>Richtungsansicht für den Mailflow-Statusbericht
+
+![Richtungsansicht im E-Mailflow-Statusbericht](../../media/mail-flow-status-report-direction-view.png)
 
 Wenn Sie auf die Registerkarte **"Richtung"** klicken, werden die gleichen Standardfilter aus der **Typansicht** verwendet.
 
@@ -220,11 +222,11 @@ Für die Detailansicht können Sie nur Daten für einen Tag exportieren. Wenn Si
 
 Jede exportierte .csv Datei ist auf 150.000 Zeilen beschränkt. Wenn die Daten für diesen Tag mehr als 150.000 Zeilen enthalten, werden mehrere .csv Dateien erstellt.
 
-![Richtungsansicht im E-Mailflow-Statusbericht](../../media/mail-flow-status-report-direction-view.png)
-
 ### <a name="funnel-view-for-the-mailflow-status-report"></a>Trichteransicht für den Mailflow-Statusbericht
 
 Die **Trichteransicht** zeigt Ihnen, wie die E-Mail-Bedrohungsschutzfeatures von Microsoft eingehende und ausgehende E-Mails in Ihrer Organisation filtern. Es enthält Details zur Gesamtzahl der E-Mails und dazu, wie sich die konfigurierten Bedrohungsschutzfeatures, einschließlich Edgeschutz, Antischadsoftware, Antiphishing, Antispam und Antispoofing, auf diese Anzahl auswirken.
+
+![Trichteransicht im Mailflow-Statusbericht](../../media/mail-flow-status-report-funnel-view.png)
 
 Wenn Sie auf die Registerkarte **"Trichter"** klicken, enthält diese Ansicht standardmäßig ein Diagramm und eine Detailtabelle, die mit den folgenden Filtern konfiguriert ist:
 
@@ -274,7 +276,7 @@ Die Detailtabelle enthält die folgenden Informationen, die in absteigender Datu
   - **Domänenidentitätswechsel:** Nachrichten, die aufgrund eines Versuchs gefiltert wurden, eine Domäne zu imitieren, die in den Identitätswechselschutzeinstellungen einer Antiphishingrichtlinie definiert ist.
 - **Datei- und URL-Detonation (Defender für Office 365):**
   - **Dateidetonation:** Nachrichten, die nach einer Safe Anlagenrichtlinie gefiltert sind.
-  - **URL-Detonation:** Nachricht, gefiltert nach einer Safe Links-Richtlinie.
+  - **URL-Detonation:** Nachricht, gefiltert nach einer Safe-Verknüpfungsrichtlinie.
 - **Schutz nach der Zustellung und ZAP (ATP) oder ZAP (EOP):** Automatische Nullstunde-Bereinigung (ZAP) für Schadsoftware, Spam und Phishing.
 
 Wenn Sie eine Zeile in der Detailtabelle auswählen, wird im Flyout eine weitere Aufschlüsselung der E-Mail-Anzahl angezeigt.
@@ -289,8 +291,6 @@ Nachdem Sie unter **"Optionen"** auf **"Exportieren"** geklickt haben, können S
 Wählen Sie unter **Datum** einen Bereich aus, und klicken Sie dann auf **Übernehmen .** Daten für die aktuellen Filter werden in eine .csv Datei exportiert.
 
 Jede exportierte .csv Datei ist auf 150.000 Zeilen beschränkt. Wenn die Daten mehr als 150.000 Zeilen enthalten, werden mehrere .csv Dateien erstellt.
-
-![Trichteransicht im Mailflow-Statusbericht](../../media/mail-flow-status-report-funnel-view.png)
 
 ### <a name="tech-view-for-the-mailflow-status-report"></a>Tech-Ansicht für den Mailflow-Statusbericht
 
@@ -384,7 +384,7 @@ In der Detailtabelle unterhalb des Diagramms sehen Sie die folgenden Details:
 
 ## <a name="mail-latency-report"></a>E-Mail-Latenzbericht
 
-Der **E-Mail-Latenzbericht** in Defender für Office 365 enthält Informationen zur E-Mail-Zustellungs- und Detonationslatenz, die in Ihrer Organisation aufgetreten sind. Weitere Informationen finden Sie im [E-Mail-Latenzbericht.](view-reports-for-mdo.md#mail-latency-report)
+Der **E-Mail-Latenzbericht** in Defender für Office 365 enthält Informationen zur E-Mail-Zustellungs- und Detonationslatenz in Ihrer Organisation. Weitere Informationen finden Sie im [E-Mail-Latenzbericht.](view-reports-for-mdo.md#mail-latency-report)
 
 ## <a name="spam-detections-report"></a>Spamerkennungsbericht
 
@@ -460,14 +460,23 @@ Das Diagramm zeigt die folgenden Informationen:
 Auf der Seite **"Übermittlungen"** können Sie sowohl das Diagramm als auch die Detailtabelle filtern, indem Sie auf **"Filtern"** klicken und einen oder mehrere der folgenden Werte auswählen:
 
 - **Gemeldetes Datum**: **Startzeit** und **Endzeit**
-- **Übermittlungstyp:** **E-Mail,** **URL** oder **Datei**
+- **Übermittlungstyp:**
+  - **E-Mail**
+  - **URL**
+  - **Datei**
 - **Übermittlungs-ID**
 - **Netzwerknachrichten-ID**
 - **Sender**
 - **Name**
 - **Übermittelt von**
-- **Grund für die Übermittlung:** **keine Junk-,** **Phishing-,** **Schadsoftware-** oder **Spam-Nachrichten**
-- **Status des erneuten Scannens:** **Ausstehend** oder **abgeschlossen**
+- **Grund für die Übermittlung:**
+  - **Kein Junk**
+  - **Phishing**
+  - **Schadsoftware**
+  - **Spam**
+- **Status des erneuten Scannens:**
+  - **Ausstehend**
+  - **Abgeschlossen**
 
 Die Detailtabelle unterhalb des Diagramms zeigt die gleichen Informationen und verfügt über die gleichen **Gruppen-** oder **Anpassungsspaltenoptionen** wie auf der Registerkarte **"Für Analyse übermittelt"** unter **"E-Mail &** \> **Übermittlungen zur** Zusammenarbeit". Weitere Informationen finden Sie unter [Anzeigen von Administratorübermittlungen an Microsoft.](admin-submission.md#view-admin-submissions-to-microsoft)
 
@@ -772,7 +781,7 @@ Wenn Sie auf **Filter** klicken, können Sie einen Datumsbereich mit **Startdatu
 
 ## <a name="url-threat-protection-report"></a>URL-Bedrohungsschutzbericht
 
-Der **URL-Bedrohungsschutzbericht** ist in Microsoft Defender für Office 365 verfügbar. Weitere Informationen finden Sie unter [URL Threat Protection Report](view-reports-for-mdo.md#url-threat-protection-report).
+Der **URL-Bedrohungsschutzbericht** ist nur in Microsoft Defender für Office 365 verfügbar. Weitere Informationen finden Sie unter [URL Threat Protection Report](view-reports-for-mdo.md#url-threat-protection-report).
 
 ## <a name="user-reported-messages-report"></a>Bericht über vom Benutzer gemeldete Nachrichten
 
@@ -781,7 +790,7 @@ Der **URL-Bedrohungsschutzbericht** ist in Microsoft Defender für Office 365 ve
 
 Der Bericht **"Vom Benutzer gemeldete Nachrichten"** enthält Informationen zu E-Mail-Nachrichten, die Benutzer mithilfe des [Add-Ins "Nachricht melden"](enable-the-report-message-add-in.md) oder des [Add-Ins "Phishing melden"](enable-the-report-phish-add-in.md)als Junk, Phishingversuche oder gute E-Mails gemeldet haben.
 
-To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** Email & collaboration \> **reports**. Suchen Sie auf der Seite **"E-Mail & Zusammenarbeitsberichte"** **nach von Benutzern gemeldeten Nachrichten,** und klicken Sie dann auf **"Details anzeigen".** Um direkt zum Bericht zu wechseln, öffnen Sie <https://security.microsoft.com/reports/userSubmissionReport> . Wenn Sie im Microsoft 365 Defender Portal zu [Administratorübermittlungen](admin-submission.md)wechseln möchten, klicken Sie auf **"Zu Übermittlungen wechseln".**
+To view the report in the Microsoft 365 Defender portal, go to **Reports** \> **Email & collaboration** Email & collaboration \> **reports**. Suchen Sie auf der Seite **"E-Mail & Berichte zur Zusammenarbeit"** **nach den vom Benutzer gemeldeten Nachrichten,** und klicken Sie dann auf **"Details anzeigen".** Um direkt zum Bericht zu wechseln, öffnen Sie <https://security.microsoft.com/reports/userSubmissionReport> . Wenn Sie im Microsoft 365 Defender Portal zu [Administratorübermittlungen](admin-submission.md)wechseln möchten, klicken Sie auf **"Zu Übermittlungen wechseln".**
 
 ![Vom Benutzer gemeldete Nachrichten-Widget auf der Seite "E-Mail & Zusammenarbeitsberichte"](../../media/user-reported-messages-widget.png)
 

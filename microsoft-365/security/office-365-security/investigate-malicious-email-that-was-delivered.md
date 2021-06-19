@@ -1,5 +1,5 @@
 ---
-title: Untersuchen schädlicher E-Mails, die in Office 365 zugestellt wurden, Suchen und Untersuchen bösartiger E-Mails
+title: Untersuchen schädlicher E-Mails, die in Microsoft 365 zugestellt wurden, Suchen und Untersuchen bösartiger E-Mails
 keywords: TIMailData-Inline, Sicherheitsvorfall, Vorfall, Microsoft Defender für Endpunkt PowerShell, E-Mail-Schadsoftware, kompromittierte Benutzer, E-Mail-Phishing, E-Mail-Schadsoftware, E-Mail-Kopfzeilen lesen, Kopfzeilen lesen, E-Mail-Header öffnen, spezielle Aktionen
 f1.keywords:
 - NOCSH
@@ -20,18 +20,18 @@ description: Erfahren Sie, wie Sie die Funktionen für die Untersuchung und Reak
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef29493bd68166b88bba3ef5905f0427823b4015
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: e99cda906e97db72a440c3daf509a767181e5342
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028851"
+ms.locfileid: "53029797"
 ---
-# <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Untersuchen bösartiger E-Mails, die in Office 365 zugestellt wurden
+# <a name="investigate-malicious-email-that-was-delivered-in-microsoft-365"></a>Untersuchen bösartiger E-Mails, die in Microsoft 365 zugestellt wurden
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-**Gilt für**
+**Gilt für:**
 
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
@@ -51,11 +51,13 @@ Stellen Sie sicher, dass folgende Anforderungen erfüllt sind:
 
 - Ihre Organisation hat Richtlinien für Antispam, Antischadsoftware, Antiphishing usw. definiert. Siehe ["Schutz vor Bedrohungen in Office 365.](protect-against-threats.md)
 
-- Sie sind ein globaler Administrator, oder Sie haben entweder den Sicherheitsadministrator oder die Rolle "Suchen und Löschen" in Microsoft 365 Defender zugewiesen. Siehe ["Berechtigungen" im Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md). Für einige Aktionen muss auch eine neue Vorschaurolle zugewiesen sein.
+- Sie sind ein globaler Administrator, oder Sie haben entweder den Sicherheitsadministrator oder die Rolle "Suchen und Löschen" im Microsoft 365 Defender Portal zugewiesen. Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender Portal.](permissions-microsoft-365-security-center.md) Für einige Aktionen muss ihnen auch die Vorschaurolle zugewiesen sein.
 
 ### <a name="preview-role-permissions"></a>Rollenberechtigungen in der Vorschau anzeigen
 
-Um bestimmte Aktionen auszuführen, z. B. das Anzeigen von Nachrichtenkopfzeilen oder das Herunterladen von E-Mail-Nachrichteninhalten, muss eine neue Rolle namens *"Vorschau"* zu einer anderen geeigneten Rollengruppe hinzugefügt werden. In der folgenden Tabelle werden die erforderlichen Rollen und Berechtigungen erläutert.
+Um bestimmte Aktionen auszuführen, z. B. das Anzeigen von Nachrichtenkopfzeilen oder das Herunterladen von E-Mail-Nachrichteninhalten, muss die *Vorschaurolle* einer anderen geeigneten Rollengruppe hinzugefügt werden. In der folgenden Tabelle werden die erforderlichen Rollen und Berechtigungen erläutert.
+
+<br>
 
 ****
 
@@ -67,25 +69,26 @@ Um bestimmte Aktionen auszuführen, z. B. das Anzeigen von Nachrichtenkopfzeilen
 |
 
 > [!NOTE]
-> *Die Vorschau* ist eine Rolle und keine Rollengruppe. Die Vorschaurolle muss einer vorhandenen Rollengruppe für Office 365 (unter ) hinzugefügt <https://security.microsoft.com> werden. Wechseln Sie zu **"Berechtigungen",** und bearbeiten Sie dann entweder eine vorhandene Rollengruppe, oder fügen Sie eine neue Rollengruppe hinzu, der die **Vorschaurolle** zugewiesen ist.
-> Die Rolle "Globaler Administrator" wird der Microsoft 365 Admin Center ( <https://admin.microsoft.com> ) zugewiesen, und die Rollen "Sicherheitsadministrator" und "Sicherheitsleseberechtigter" werden in Microsoft 365 Defender ( <https://security.microsoft.com> ) zugewiesen. Weitere Informationen zu Rollen und Berechtigungen finden Sie unter ["Berechtigungen" im Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
+> *Die Vorschau* ist eine Rolle, keine Rollengruppe. Die Rolle "Vorschau" muss einer vorhandenen Rollengruppe im Microsoft 365 Defender-Portal ( ) hinzugefügt <https://security.microsoft.com> werden. Wechseln Sie zu **"Berechtigungen",** und bearbeiten Sie dann entweder eine vorhandene Rollengruppe, oder fügen Sie eine neue Rollengruppe hinzu, der die **Vorschaurolle** zugewiesen ist.
+>
+> Der Rolle "Globaler Administrator" wird die Rolle Microsoft 365 Admin Center ( <https://admin.microsoft.com> ) zugewiesen, und die Rollen "Sicherheitsadministrator" und "Sicherheitsleseberechtigter" werden in Microsoft 365 Defender ( <https://security.microsoft.com> ) zugewiesen. Weitere Informationen zu Rollen und Berechtigungen finden Sie unter ["Berechtigungen" im Microsoft 365 Defender Portal.](permissions-microsoft-365-security-center.md)
 
-Wir wissen, dass das Anzeigen der Vorschau und das Herunterladen von E-Mails vertrauliche Aktivitäten sind, und daher ist die Überwachung für diese aktiviert. Sobald ein Administrator diese Aktivitäten für E-Mails durchführt, werden Überwachungsprotokolle für dasselbe generiert und können im Office 365 Microsoft 365 Defender ( ) angezeigt <https://security.microsoft.com> werden. Wechseln Sie zur **Suche** nach  >  **Überwachungsprotokollen,** und filtern Sie den Administratornamen im Abschnitt "Suche". Die gefilterten Ergebnisse zeigen Aktivität **AdminMailAccess** an. Wählen Sie eine Zeile aus, um Details im Abschnitt **"Weitere Informationen"** zu vorschaueten oder heruntergeladenen E-Mails anzuzeigen.
+Wir wissen, dass das Anzeigen der Vorschau und das Herunterladen von E-Mails vertrauliche Aktivitäten sind, und daher ist die Überwachung für diese aktiviert. Sobald ein Administrator diese Aktivitäten für E-Mails durchführt, werden Überwachungsprotokolle für dasselbe generiert und können im Office 365 Security & Compliance Center ( ) angezeigt <https://protection.office.com> werden. Wechseln Sie zur **Suche** nach  >  **Überwachungsprotokollen,** und filtern Sie den Administratornamen im Abschnitt "Suche". Die gefilterten Ergebnisse zeigen Aktivität **AdminMailAccess** an. Wählen Sie eine Zeile aus, um Details im Abschnitt **"Weitere Informationen"** zu vorschaueten oder heruntergeladenen E-Mails anzuzeigen.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Suchen nach verdächtigen E-Mails, die zugestellt wurden
 
 Der Bedrohungs-Explorer ist ein leistungsstarker Bericht, der mehreren Zwecken dienen kann, z. B. dem Suchen und Löschen von Nachrichten, der Identifizierung der IP-Adresse eines böswilligen E-Mail-Absenders oder dem Starten eines Vorfalls zur weiteren Untersuchung. Der Schwerpunkt des folgenden Verfahrens liegt auf der Verwendung von Explorer, um schädliche E-Mails aus den Postfächern des Empfängers zu suchen und zu löschen.
 
 > [!NOTE]
-> Standardmäßige Suchvorgänge im Explorer enthalten derzeit keine "Zapped"-Elemente.  Dies gilt für alle Ansichten, z. B. Schadsoftware- oder Phishingansichten. Um "Zapped"-Elemente einzuschließen, müssen Sie einen **Übermittlungsaktionssatz** hinzufügen, um **"Von ZAP entfernt" einzuschließen.** Wenn Sie alle Optionen einschließen, werden alle Ergebnisse der Übermittlungsaktion angezeigt, einschließlich "Zapped"-Elemente.
+> Standardmäßige Suchvorgänge im Explorer enthalten derzeit keine zugestellten Elemente, die vom automatischen Zero-Hour-Schutz (ZAP) aus dem Cloudpostfach entfernt wurden. Diese Einschränkung gilt für alle Ansichten (z. B. die **E-Mail-Schadsoftware- \>** oder **E-Mail-Phishing-Ansichten). \>** Um elemente einzuschließen, die von ZAP entfernt wurden, müssen Sie einen **Übermittlungsaktionssatz** hinzufügen, um **"Von ZAP entfernt" einzuschließen.** Wenn Sie alle Optionen einschließen, werden alle Ergebnisse der Zustellungsaktion angezeigt, einschließlich der von ZAP entfernten Elemente.
 
-1. **Navigieren Sie zum Bedrohungs-Explorer:** Rufen Sie <https://security.microsoft.com> Ihr Geschäfts-, Schul- oder Unikonto für Office 365 auf, und melden Sie sich an. Dadurch gelangen Sie zu Microsoft 365 Defender.
+1. Öffnen Sie das Microsoft 365 Defender-Portal, <https://security.microsoft.com> und melden Sie sich mit Ihrem Geschäfts-, Schul- oder Unikonto für Office 365 an.
 
-2. Wählen Sie im Linken Navigations-Schnellstart **E-Mail &** Zusammenarbeits-Explorer \> aus.
+2. Wechseln Sie zum **Bedrohungs-Explorer,** indem Sie im linken Navigationsbereich **"E-Mail &** \> **Zusammenarbeits-Explorer"** auswählen. Um direkt zum **Bedrohungs-Explorer** zu wechseln, verwenden Sie <https://security.microsoft.com/threatexplorer> .
 
-      Möglicherweise sehen Sie die neue Spalte **"Sonderaktionen".** Dieses Feature soll Administratoren das Ergebnis der Verarbeitung einer E-Mail mitteilen. Auf die Spalte **"Sonderaktionen"** kann an derselben Stelle wie die **Übermittlungsaktion** und der **Übermittlungsspeicherort** zugegriffen werden. Sonderaktionen können am Ende der E-Mail-Zeitachse des Bedrohungs-Explorers aktualisiert werden. Dies ist ein neues Feature, das darauf abzielt, die Suche für Administratoren zu verbessern.
+   Auf der **Explorer-Seite** zeigt die Spalte **"Zusätzliche Aktionen"** Administratoren das Ergebnis der Verarbeitung einer E-Mail an. Auf die Spalte **"Zusätzliche Aktionen"** kann am selben Ort wie die **Übermittlungsaktion** und der **Übermittlungsort** zugegriffen werden. Sonderaktionen können am Ende der E-Mail-Zeitachse des Bedrohungs-Explorers aktualisiert werden. Dies ist ein neues Feature, das darauf abzielt, die Suche für Administratoren zu verbessern.
 
-3. **Ansichten im Bedrohungs-Explorer:** Wählen Sie im Menü **"Ansicht"** die Option **"Alle E-Mails"** aus.
+3. Wählen Sie im Menü **"Ansicht"** in der Dropdownliste die Option **"Alle E-Mails** per \> **E-Mail** senden" aus.
 
     ![Ansichtsmenü des Bedrohungs-Explorers und E-Mail – Schadsoftware, Phishing, Übermittlungen und alle E-Mail-Optionen, auch Inhalt – Schadsoftware.](../../media/tp-InvestigateMalEmail-viewmenu.png)
 
@@ -105,11 +108,11 @@ Der Bedrohungs-Explorer ist ein leistungsstarker Bericht, der mehreren Zwecken d
 
 5. **Erweiterte Filter:** Mit diesen Filtern können Sie komplexe Abfragen erstellen und Ihren Datensatz filtern. Durch Klicken auf *"Erweiterte Filter"* wird ein Flyout mit Optionen geöffnet.
 
-   Die erweiterte Filterung ist eine hervorragende Ergänzung zu den Suchfunktionen. Ein boolescher **NOT-Filter** wurde für die Domäne *"Empfänger",* *"Absender"* und *"Absender"* eingeführt, um Administratoren die Untersuchung durch Ausschließen von Werten zu ermöglichen. Diese Option wird unter dem Auswahlparameter *"Contains none of"* angezeigt. **Nicht** zulassen, dass Administratoren Benachrichtigungspostfächer, Standardantwortpostfächer von ihren Untersuchungen ausschließen, und ist nützlich für Fälle, in denen Administratoren nach einem bestimmten Betreff suchen (subject="Attention"), in denen der Empfänger auf *keines der defaultMail-contoso.com \@* festgelegt werden kann. Dies ist eine genaue Wertesuche.
+   Die erweiterte Filterung ist eine hervorragende Ergänzung zu den Suchfunktionen. Ein boolescher WERT NICHT in den Domänenfiltern **"Empfänger",** **"Absender"** und **"Absender"** ermöglicht Administratoren die Untersuchung durch Ausschließen von Werten. Diese Option ist die Option **"Entspricht keiner Auswahl".** Mit dieser Option können Administratoren unerwünschte Postfächer von Untersuchungen ausschließen (z. B. Benachrichtigungspostfächer und Standardantwortpostfächer) und ist nützlich für Fälle, in denen Administratoren nach einem bestimmten Betreff (z. B. Aufmerksamkeit) suchen, bei dem der Empfänger auf *"Gleich"* festgelegt werden kann: defaultMail@contoso.com . Dies ist eine genaue Wertesuche.
 
    ![Der Erweiterte Filter "Recipients - Enthält keinen von".](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 
-   *Die Filterung nach Stunden* hilft dem Sicherheitsteam Ihrer Organisation, schnell einen Drilldown durchzuführen. Die kürzeste zulässige Zeitdauer beträgt 30 Minuten. Wenn Sie die verdächtige Aktion nach Zeitrahmen eingrenzen können (z. B. vor 3 Stunden), schränkt dies den Kontext ein und hilft, das Problem zu erkennen.
+   Das Hinzufügen eines Zeitfilters zum Start- und Enddatum hilft Ihrem Sicherheitsteam, schnell einen Drilldown durchzuführen. Die kürzeste zulässige Zeitdauer beträgt 30 Minuten. Wenn Sie die verdächtige Aktion nach Zeitrahmen eingrenzen können (z. B. vor 3 Stunden), schränkt dies den Kontext ein und hilft, das Problem zu erkennen.
 
    ![Die Option zum Filtern nach Stunden, um die Anzahl der zu verarbeitenden Datensicherheitsteams einzuschränken, deren kürzeste Dauer 30 Minuten beträgt.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
 
@@ -135,6 +138,8 @@ Der Bedrohungs-Explorer ist ein leistungsstarker Bericht, der mehreren Zwecken d
     **Richtungsabhängigkeit:** Mit dieser Option kann Ihr Sicherheitsteam nach der "Richtung" filtern, aus der eine E-Mail stammt oder die gerade ausgeführt wird. Direktionalitätswerte sind *eingehende,* *ausgehende* und organisationsinterne Nachrichten (entspricht *E-Mails,* die von außen in Ihre Organisation gelangen, von Ihrer Organisation gesendet oder intern an Ihre Organisation gesendet werden). Diese Informationen können Sicherheitsteams dabei helfen, Spoofing und Identitätswechsel zu erkennen, da ein Konflikt zwischen dem Directionality-Wert (z. B. *Eingehend)* und die Domäne des Absenders (die *scheinbar* eine interne Domäne ist) sind offensichtlich! Der Directionality-Wert ist getrennt und kann sich von der Nachrichtenablaufverfolgung unterscheiden. Ergebnisse können in eine Tabellenkalkulation exportiert werden.
 
     **Außerkraftsetzungen:** Dieser Filter akzeptiert Informationen, die auf der Registerkarte "Details" der E-Mail angezeigt werden, und macht damit offen, wo Organisations- oder Benutzerrichtlinien zum Zulassen und Blockieren von E-Mails *überschrieben* wurden. Das Wichtigste an diesem Filter ist, dass er dem Sicherheitsteam Ihrer Organisation hilft, zu sehen, wie viele verdächtige E-Mails aufgrund der Konfiguration zugestellt wurden. Dadurch haben sie die Möglichkeit, die Berechtigungen und Blöcke nach Bedarf zu ändern. Dieses Resultset dieses Filters kann in eine Tabellenkalkulation exportiert werden.
+
+    <br>
 
     ****
 
@@ -166,33 +171,23 @@ Im [Bedrohungs-Explorer (und Echtzeiterkennungen)](threat-explorer.md)verfügen 
 Der Übermittlungsstatus ist jetzt in zwei Spalten unterteilt:
 
 - **Zustellungsaktion** – Wie lautet der Status dieser E-Mail?
-
 - **Übermittlungsort** – Wo wurde diese E-Mail als Ergebnis weitergeleitet?
 
 Übermittlungsaktion ist die Aktion, die aufgrund vorhandener Richtlinien oder Erkennungen für eine E-Mail ausgeführt wird. Hier sind die möglichen Aktionen, die eine E-Mail ausführen kann:
 
 - **Zugestellt** – E-Mail wurde an den Posteingang oder Ordner eines Benutzers übermittelt, und der Benutzer kann direkt darauf zugreifen.
-
 - **Junk -** E-Mails wurden entweder an den Junk-Ordner des Benutzers oder an den gelöschten Ordner gesendet, und der Benutzer hat Zugriff auf E-Mail-Nachrichten im Junk- oder gelöschten Ordner.
-
 - **Blockiert** – alle E-Mail-Nachrichten, die isoliert sind, fehlgeschlagen sind oder verworfen wurden. (Der Benutzer kann nicht darauf zugreifen.)
-
 - **Ersetzt** – alle E-Mails, bei denen schädliche Anlagen durch .txt Dateien ersetzt werden, die angeben, dass die Anlage bösartig war.
 
 Der Übermittlungsort zeigt die Ergebnisse von Richtlinien und Erkennungen an, die nach der Zustellung ausgeführt werden. Es ist mit einer Übermittlungsaktion verknüpft. Dieses Feld wurde hinzugefügt, um Einblicke in die Aktion zu geben, die ausgeführt wird, wenn eine Problem-E-Mail gefunden wird. Hier sind die möglichen Werte des Übermittlungsorts:
 
 - **Posteingang oder Ordner** – Die E-Mail befindet sich im Posteingang oder in einem Ordner (gemäß Ihren E-Mail-Regeln).
-
 - **Lokal oder extern** – Das Postfach ist nicht in der Cloud vorhanden, sondern lokal.
-
 - **Junk-Ordner** – Die E-Mail befindet sich im Junk-Ordner eines Benutzers.
-
 - **Ordner "Gelöschte Elemente":** Die E-Mail befindet sich im Ordner "Gelöschte Elemente" eines Benutzers.
-
 - **Quarantäne** – Die E-Mail in Quarantäne und nicht im Postfach eines Benutzers.
-
 - **Fehlgeschlagen–** Die E-Mail konnte das Postfach nicht erreichen.
-
 - **Verworfen** – Die E-Mail geht an einer anderen Stelle im Nachrichtenfluss verloren.
 
 ### <a name="view-the-timeline-of-your-email"></a>Anzeigen der Zeitachse Ihrer E-Mail

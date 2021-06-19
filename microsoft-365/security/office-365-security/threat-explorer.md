@@ -19,12 +19,12 @@ description: Verwenden Sie Explorer- und Echtzeiterkennungen im Microsoft 365 Se
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 12fb7f757912a8f1c87a57c386c6f698d777752a
-ms.sourcegitcommit: 3d30ec03628870a22c54b6ec5d865cbe94f34245
+ms.openlocfilehash: a7e3620859dfbc5f3d55501a880cef233e0a0be3
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "52930295"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029585"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Bedrohungs-Explorer und Echtzeiterkennungen
 
@@ -186,7 +186,7 @@ Derzeit wird der Übermittlungsort im E-Mail-Raster und im E-Mail-Flyout angezei
 
 ### <a name="system-overrides"></a>Systemüberschreibungen
 
-*Mit Systemüberschreibungen* können Sie Ausnahmen vom vorgesehenen Übermittlungsort einer Nachricht machen. Sie überschreiben den vom System bereitgestellten Übermittlungsort basierend auf den Bedrohungen und anderen Vom Filterstapel identifizierten Erkennungen. Systemüberschreibungen können über eine Mandanten- oder Benutzerrichtlinie festgelegt werden, um die Nachricht wie in der Richtlinie vorgeschlagen zu übermitteln. Außerkraftsetzungen können die unbeabsichtigte Zustellung bösartiger Nachrichten aufgrund von Konfigurationslücken identifizieren, z. B. eine übermäßig breite Richtlinie für sichere Absender, die von einem Benutzer festgelegt wurde. Diese Außerkraftsetzungswerte können folgende sein:
+*Mit Systemüberschreibungen* können Sie Ausnahmen vom vorgesehenen Übermittlungsort einer Nachricht machen. Sie überschreiben den vom System bereitgestellten Übermittlungsort basierend auf den Bedrohungen und anderen Vom Filterstapel identifizierten Erkennungen. Systemüberschreibungen können über eine Mandanten- oder Benutzerrichtlinie festgelegt werden, um die Nachricht wie in der Richtlinie vorgeschlagen zu übermitteln. Außerkraftsetzungen können aufgrund von Konfigurationslücken die unbeabsichtigte Zustellung bösartiger Nachrichten identifizieren, z. B. eine übermäßig breite Safe Absenderrichtlinie, die von einem Benutzer festgelegt wurde. Diese Außerkraftsetzungswerte können folgende sein:
 
 - Zulässig durch Benutzerrichtlinien: Ein Benutzer erstellt Richtlinien auf Postfachebene, um Domänen oder Absender zuzulassen.
 
@@ -284,7 +284,7 @@ Sie können die Liste der Zielbenutzer bis zu einem Grenzwert von 3.000 sowie di
 
 ### <a name="exchange-transport-rules"></a>Exchange-Transportregeln
 
-Im Rahmen der Datenerweiterung können Sie alle unterschiedlichen Exchange Transportregeln (ETR) sehen, die auf eine Nachricht angewendet wurden. Diese Informationen sind in der Rasteransicht E-Mail verfügbar. Wählen Sie zum Anzeigen **spaltenoptionen** im Raster aus, und fügen Sie dann in den Spaltenoptionen **Exchange Transportregel** hinzu. Sie wird auch im  Detail-Flyout in der E-Mail angezeigt.
+Im Rahmen der Datenerweiterung können Sie alle unterschiedlichen Exchange Transportregeln (ETR) sehen, die auf eine Nachricht angewendet wurden. Diese Informationen sind in der Rasteransicht E-Mail verfügbar. Um sie anzuzeigen, wählen Sie **Spaltenoptionen** im Raster aus, und fügen Sie dann **Exchange Transportregel** aus den Spaltenoptionen hinzu. Sie wird auch im  Detail-Flyout in der E-Mail angezeigt.
 
 Sie können sowohl die GUID als auch den Namen der Transportregeln sehen, die auf die Nachricht angewendet wurden. Sie können mithilfe des Namens der Transportregel nach den Nachrichten suchen. Dies ist eine "Enthält"-Suche, was bedeutet, dass Sie auch teilsuchen können.
 
@@ -327,7 +327,7 @@ Um Phishingnachrichten zu überprüfen und nach imitierten Benutzern oder Domän
 
 In diesem Beispiel wird der Bedrohungs-Explorer verwendet.
 
-1. Wählen Sie im [Security & Compliance Center](https://protection.office.com) https://protection.office.com) (oder Echtzeiterkennungen) die Option "Bedrohungsverwaltung > Explorer" aus.
+1. Wählen Sie im [Security & Compliance Center](https://protection.office.com) https://protection.office.com) (threat management > Explorer (oder Echtzeiterkennungen) aus.
 
 2. Wählen Sie im Menü "Ansicht" die Option "E-Mail > Phishing" aus.
 
@@ -344,7 +344,7 @@ In diesem Beispiel wird der Bedrohungs-Explorer verwendet.
     Wählen Sie **"Imitierter Benutzer" aus,** und geben Sie die E-Mail-Adresse eines geschützten Benutzers in das Textfeld ein.
 
     > [!TIP]
-    > **Um optimale Ergebnisse** zu erzielen, verwenden Sie *vollständige E-Mail-Adressen,* um geschützte Benutzer zu durchsuchen. Sie werden Ihren geschützten Benutzer schneller und erfolgreicher finden, wenn Sie nach *firstname.lastname@contoso.com* suchen, z. B. beim Untersuchen des Benutzeridentitätswechsels. Bei der Suche nach einer geschützten Domäne wird die Stammdomäne (z. B. contoso.com) und der Domänenname (*contoso*) verwendet. Bei der Suche nach der *Stammdomäne contoso.com* werden sowohl der Identitätswechsel von *contoso.com* als auch der Domänenname *"contoso"* zurückgegeben.
+    > **Um optimale Ergebnisse** zu erzielen, verwenden Sie *vollständige E-Mail-Adressen,* um geschützte Benutzer zu durchsuchen. Sie werden Ihren geschützten Benutzer schneller und erfolgreicher finden, wenn Sie nach *firstname.lastname@contoso.com* suchen, z. B. bei der Untersuchung des Benutzeridentitätswechsels. Bei der Suche nach einer geschützten Domäne wird die Stammdomäne (z. B. contoso.com) und der Domänenname (*contoso*) verwendet. Bei der Suche nach der *Stammdomäne contoso.com* werden sowohl der Identitätswechsel von *contoso.com* als auch der Domänenname *"contoso"* zurückgegeben.
 
 5. Wählen Sie den **Betreff** einer Nachricht auf der **Registerkarte "Details" der Registerkarte "E-Mail"**  >   aus, um zusätzliche Identitätswechselinformationen über den Benutzer oder die Domäne und den *erkannten Speicherort anzuzeigen.*
 
@@ -372,7 +372,7 @@ Wie erfolgt dies? Der Übermittlungsstatus ist jetzt in zwei Spalten unterteilt:
 
 |Geliefert|Junked|Gesperrt|Ersetzt|
 |---|---|---|---|
-|E-Mails wurden an den Posteingang oder Ordner eines Benutzers übermittelt, und der Benutzer kann darauf zugreifen.|E-Mails wurden an den Junk- oder Deleted-Ordner des Benutzers gesendet, und der Benutzer kann darauf zugreifen.|E-Mails, die isoliert sind, fehlgeschlagen sind oder verworfen wurden. Auf diese E-Mails kann der Benutzer nicht zugreifen.|E-Mails mit schädlichen Anlagen wurden durch .txt Dateien ersetzt, die angeben, dass die Anlage bösartig war.|
+|E-Mails wurden an den Posteingang oder Ordner eines Benutzers übermittelt, und der Benutzer kann darauf zugreifen.|E-Mails wurden an den Junk- oder Deleted-Ordner des Benutzers gesendet, und der Benutzer kann darauf zugreifen.|E-Mails, die isoliert sind, fehlgeschlagen sind oder verworfen wurden. Auf diese E-Mails kann der Benutzer nicht zugreifen.|E-Mails hatten schädliche Anlagen durch .txt Dateien ersetzt, die angeben, dass die Anlage bösartig war.|
 |
 
 Dies ist das, was der Benutzer sehen kann und was nicht:
@@ -448,7 +448,7 @@ Der Bericht wird aktualisiert, um die Ergebnisse anzuzeigen, die Schadsoftware i
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Phishing-URL anzeigen und auf Bewertungsdaten klicken
 
-Angenommen, Sie möchten Phishingversuche über URLs in E-Mails anzeigen, einschließlich einer Liste der ZULÄSSIGen, blockierten und überschriebenen URLs. Um URLs zu identifizieren, auf die geklickt wurde, müssen [sichere Links](safe-links.md) konfiguriert sein. Stellen Sie sicher, dass Sie Richtlinien für [sichere Links](set-up-safe-links-policies.md) für Denkzeitschutz und Protokollierung von Klickbewertungen durch sichere Links einrichten.
+Angenommen, Sie möchten Phishingversuche über URLs in E-Mails anzeigen, einschließlich einer Liste der ZULÄSSIGen, blockierten und überschriebenen URLs. Um URLs zu identifizieren, auf die geklickt wurde, müssen [Safe Links](safe-links.md) konfiguriert werden. Stellen Sie sicher, dass Sie [Safe Links-Richtlinien](set-up-safe-links-policies.md) für den Time-of-Click-Schutz und die Protokollierung von Klickbewertungen durch Safe Links einrichten.
 
 Verwenden Sie die [ **E-Mail-Phishing-Ansicht**  > ](threat-explorer-views.md#email--phish) von Explorer- oder Echtzeiterkennungen, um Phishing-URLs in Nachrichten zu überprüfen und auf URLs in Phishingnachrichten zu klicken.
 
@@ -470,7 +470,7 @@ Verwenden Sie die [ **E-Mail-Phishing-Ansicht**  > ](threat-explorer-views.md#em
 
    - **Die häufigsten URLs** sind die URLs in den Nachrichten, nach denen Sie gefiltert haben, und die Anzahl der E-Mail-Zustellungsaktionen für jede URL. In der Phishing-E-Mail-Ansicht enthält diese Liste in der Regel legitime URLs. Angreifer enthalten eine Mischung aus guten und schlechten URLs in ihren Nachrichten, um zu versuchen, sie zuzustellen, aber sie machen die bösartigen Links interessanter. Die Tabelle der URLs wird nach der Gesamtzahl der E-Mails sortiert, aber diese Spalte ist ausgeblendet, um die Ansicht zu vereinfachen.
 
-   - **Die häufigsten Klicks** sind die mit sicheren Links umschlossenen URLs, auf die geklickt wurde, sortiert nach der Gesamtzahl der Klicks. Diese Spalte wird auch nicht angezeigt, um die Ansicht zu vereinfachen. Die Gesamtanzahl nach Spalte gibt die Anzahl der Klickbewertungen für sichere Links für jede angeklickte URL an. In der Phishing-E-Mail-Ansicht handelt es sich dabei in der Regel um verdächtige oder bösartige URLs. Die Ansicht kann jedoch URLs enthalten, die keine Bedrohungen sind, sondern sich in Phishing-Nachrichten befinden. URL-Klicks auf nicht gepackte Links werden hier nicht angezeigt.
+   - **Die häufigsten Klicks** sind die Safe mit Links umschlossenen URLs, auf die geklickt wurde, sortiert nach der Gesamtzahl der Klicks. Diese Spalte wird auch nicht angezeigt, um die Ansicht zu vereinfachen. Die Gesamtanzahl nach Spalte gibt die Anzahl der Safe links click-Bewertung für jede angeklickte URL an. In der Phishing-E-Mail-Ansicht handelt es sich dabei in der Regel um verdächtige oder bösartige URLs. Die Ansicht kann jedoch URLs enthalten, die keine Bedrohungen sind, sondern sich in Phishing-Nachrichten befinden. URL-Klicks auf nicht gepackte Links werden hier nicht angezeigt.
 
    In den beiden URL-Tabellen werden die wichtigsten URLs in Phishing-E-Mail-Nachrichten nach Zustellungsaktion und Speicherort angezeigt. Die Tabellen zeigen URL-Klicks, die trotz einer Warnung blockiert oder besucht wurden, sodass Sie sehen können, welche potenziellen fehlerhaften Links benutzern angezeigt wurden und auf welche der Benutzer geklickt hat. Von hier aus können Sie weitere Analysen durchführen. Unterhalb des Diagramms können Sie beispielsweise die wichtigsten URLs in E-Mail-Nachrichten anzeigen, die in der Umgebung Ihrer Organisation blockiert wurden.
 
@@ -513,12 +513,12 @@ Angenommen, Sie möchten E-Mail-Nachrichten anzeigen, die Benutzer in Ihrer Orga
    > [!div class="mx-imgBorder"]
    > ![Vom Benutzer gemeldeter Phishing](../../media/EmailUserReportedReportType.png)
 
-Der Bericht wird aktualisiert, um Daten zu E-Mail-Nachrichten anzuzeigen, die Personen in Ihrer Organisation als Phishingversuch gemeldet haben. Sie können diese Informationen verwenden, um weitere Analysen durchzuführen und bei Bedarf Ihre [Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md)anzupassen.
+Der Bericht wird aktualisiert, um Daten zu E-Mail-Nachrichten anzuzeigen, die Personen in Ihrer Organisation als Phishingversuch gemeldet haben. Sie können diese Informationen verwenden, um weitere Analysen durchzuführen und bei Bedarf Ihre [Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-mdo-anti-phishing-policies.md)anzupassen.
 
 ## <a name="start-automated-investigation-and-response"></a>Starten der automatisierten Untersuchung und Reaktion
 
 > [!NOTE]
-> Automatisierte Untersuchungs- und Reaktionsfunktionen sind in *Microsoft Defender für Office 365 Plan 2* und Office 365 *E5* verfügbar.
+> Automatisierte Untersuchungs- und Reaktionsfunktionen sind in *Microsoft Defender für Office 365 Plan 2* und *Office 365 E5* verfügbar.
 
 [Eine automatisierte Untersuchung und Reaktion](automated-investigation-response-office.md) kann Ihrem Sicherheitsteam Zeit und Mühe bei der Untersuchung und Minderung von Cyberangriffen ersparen. Zusätzlich zum Konfigurieren von Warnungen, die ein Sicherheits-Playbook auslösen können, können Sie einen automatisierten Untersuchungs- und Reaktionsprozess aus einer Ansicht im Explorer starten. Weitere Informationen finden Sie unter [Beispiel: Ein Sicherheitsadministrator löst eine Untersuchung im Explorer aus.](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
 
@@ -534,21 +534,21 @@ Zusätzlich zu den in diesem Artikel beschriebenen Szenarien stehen ihnen mit Ex
 
 ## <a name="required-licenses-and-permissions"></a>Erforderliche Lizenzen und Berechtigungen
 
-Sie benötigen [Microsoft Defender,](defender-for-office-365.md) damit Office 365 Explorer- oder Echtzeiterkennungen verwenden können.
+Sie benötigen [Microsoft Defender für Office 365,](defender-for-office-365.md) um Explorer- oder Echtzeiterkennungen verwenden zu können.
 
-- Der Explorer ist in Defender für Office 365 Plan 2 enthalten.
+- Explorer ist in Defender für Office 365 Plan 2 enthalten.
 - Der Bericht über Echtzeiterkennungen ist in Defender für Office 365 Plan 1 enthalten.
-- Planen Sie, Lizenzen für alle Benutzer zuzuweisen, die von Defender für Office 365 geschützt werden sollen. Explorer- und Echtzeiterkennungen zeigen Erkennungsdaten für lizenzierte Benutzer an.
+- Planen Sie, Lizenzen für alle Benutzer zuzuweisen, die durch Defender für Office 365 geschützt werden sollen. Explorer- und Echtzeiterkennungen zeigen Erkennungsdaten für lizenzierte Benutzer an.
 
 Um Explorer- oder Echtzeiterkennungen anzuzeigen und zu verwenden, benötigen Sie entsprechende Berechtigungen, z. B. die berechtigungen, die einem Sicherheitsadministrator oder Sicherheitsleseberechtigten erteilt wurden.
 
 - Für das Security & Compliance Center muss Ihnen eine der folgenden Rollen zugewiesen sein:
 
   - Organisationsverwaltung
-  - Sicherheitsadministrator (kann im Azure Active Directory Admin Center ( ) zugewiesen werden. <https://aad.portal.azure.com>
+  - Sicherheitsadministrator (kann im Azure Active Directory Admin Center zugewiesen werden ( <https://aad.portal.azure.com> )
   - Sicherheitsleseberechtigter
 
-- Für Exchange Online müssen Sie über eine der folgenden Rollen verfügen, entweder im Exchange Admin Center ( <https://admin.protection.outlook.com/ecp/> ) oder [Exchange Online PowerShell:](/powershell/exchange/exchange-online-powershell)
+- Für Exchange Online müssen Sie über eine der folgenden Rollen verfügen, die entweder im Exchange Admin Center ( <https://admin.protection.outlook.com/ecp/> ) oder in Exchange Online [PowerShell](/powershell/exchange/exchange-online-powershell)zugewiesen sind:
 
   - Organisationsverwaltung
   - Organisationsverwaltung – nur Leserechte
@@ -565,7 +565,7 @@ Weitere Informationen zu Rollen und Berechtigungen finden Sie in den folgenden R
 - Der Bericht über *Echtzeiterkennungen* ist in Defender für Office 365 Plan 1 verfügbar. *Der Bedrohungs-Explorer* ist in Defender für Office 365 Plan 2 verfügbar.
 - Mit dem Bericht über Echtzeiterkennungen können Sie Erkennungen in Echtzeit anzeigen. Der Bedrohungs-Explorer tut dies ebenfalls, bietet aber auch zusätzliche Details für einen bestimmten Angriff.
 - Eine *Ansicht "Alle E-Mails"* ist im Bedrohungs-Explorer, aber nicht im Bericht über Echtzeiterkennungen verfügbar.
-- Weitere Filterfunktionen und verfügbare Aktionen sind im Bedrohungs-Explorer enthalten. Weitere Informationen finden Sie unter [Microsoft Defender für Office 365 Dienstbeschreibung: Funktionsverfügbarkeit in Defender für Office 365-Plänen.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
+- Weitere Filterfunktionen und verfügbare Aktionen sind im Bedrohungs-Explorer enthalten. Weitere Informationen finden Sie unter [Microsoft Defender für Office 365 Service Description: Featureverfügbarkeit in Defender für Office 365-Plänen.](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
 
 ## <a name="other-articles"></a>Weitere Artikel
 

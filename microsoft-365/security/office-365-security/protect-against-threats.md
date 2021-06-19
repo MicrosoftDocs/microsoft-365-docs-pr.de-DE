@@ -20,12 +20,12 @@ description: Administratoren können mehr über den Bedrohungsschutz in Microsof
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d61b17fc4575249bb592fc4ca865c34a628361a
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 407838c815a85ce7c73322a0de176970ee93e537
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52878328"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029609"
 ---
 # <a name="protect-against-threats"></a>Schutz vor Bedrohungen
 
@@ -36,7 +36,7 @@ ms.locfileid: "52878328"
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Hier ist eine Schnellstartanleitung, in der die Konfiguration von Defender für Office 365 in Blöcke unterteilt wird. Wenn Sie in Office 365 noch keine Informationen zum Schutz vor Bedrohungen haben, nicht sicher sind, wo Sie beginnen sollen, oder wenn Sie am besten *lernen,* verwenden Sie diese Anleitung als Prüfliste und Ausgangspunkt.
+Hier ist eine Schnellstartanleitung, in der die Konfiguration von Defender für Office 365 in Abschnitte unterteilt wird. Wenn Sie in Office 365 noch keine Informationen zum Schutz vor Bedrohungen haben, nicht sicher sind, wo Sie beginnen sollen, oder wenn Sie am besten *lernen,* verwenden Sie diese Anleitung als Prüfliste und Ausgangspunkt.
 
 > [!IMPORTANT]
 > **Anfänglich empfohlene Einstellungen sind für jede Art von Richtlinie enthalten. Es stehen jedoch viele Optionen zur Verfügung, und Sie können Ihre Einstellungen an die Anforderungen Ihrer spezifischen Organisation anpassen.** Lassen Sie ungefähr 30 Minuten zu, bis Ihre Richtlinien oder Änderungen in Ihrem Rechenzentrum funktionieren.
@@ -48,7 +48,7 @@ Hier ist eine Schnellstartanleitung, in der die Konfiguration von Defender für 
 Bedrohungsschutzfeatures sind in *allen* Microsoft- oder Office 365-Abonnements enthalten. Einige Abonnements verfügen jedoch über erweiterte Features. In der folgenden Tabelle sind die in diesem Artikel enthaltenen Schutzfeatures zusammen mit den Mindestabonnementanforderungen aufgeführt.
 
 > [!TIP]
-> Beachten Sie, dass die *Schritte* über die Anweisungen zum Aktivieren der Überwachung hinaus Antischadsoftware, Antiphishing und Antispam starten, die als Teil von Office 365 Exchange Online Protection (**EOP**) gekennzeichnet sind. Dies kann in einem Defender für Office 365 Artikel ungerade erscheinen, bis Sie sich daran erinnern (**Defender für Office 365**) EOP enthält und darauf aufbaut.
+> Beachten Sie, dass die *Schritte* über die Anweisungen zum Aktivieren der Überwachung hinaus Antischadsoftware, Antiphishing und Antispam starten, die als Teil von Office 365 Exchange Online Protection (**EOP**) gekennzeichnet sind. Dies kann in einem Defender for Office 365-Artikel ungerade erscheinen, bis Sie sich daran erinnern (**Defender für Office 365**) EOP enthält und darauf aufbaut.
 
 <br>
 
@@ -61,8 +61,8 @@ Bedrohungsschutzfeatures sind in *allen* Microsoft- oder Office 365-Abonnements 
 |Antiphishingschutz|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Antispamschutz|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Automatische Bereinigung zur Nullstunde (für E-Mails)|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
-|Schutz vor bösartigen URLs und Dateien in E-Mails und Office Dokumenten (sichere Links und sichere Anlagen)|[Microsoft Defender für Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Aktivieren sicherer Anlagen für SharePoint-, OneDrive- und Microsoft Teams-Workloads|[Microsoft Defender für Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
+|Schutz vor bösartigen URLs und Dateien in E-Mails und Office Dokumenten (Safe Links und Safe Anlagen)|[Microsoft Defender für Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
+|Aktivieren Safe Anlagen für SharePoint-, OneDrive- und Microsoft Teams-Workloads|[Microsoft Defender für Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
 |Erweiterter Antiphishingschutz|[Microsoft Defender für Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Rollen und Berechtigungen
@@ -139,11 +139,12 @@ Im folgenden Verfahren wird beschrieben, wie Sie die Standardmäßige Antiphishi
        - **Wenn die Postfachintelligenz einen imitierten Benutzer erkennt:** <sup>\*</sup> Wählen Sie **"Nachricht in Junk-E-Mail-Ordner des Empfängers verschieben "** (Standard) oder **"Nachricht unter Quarantäne** stellen" (Streng) aus.
        - **Wenn die Nachricht als Spoofing erkannt wird:** Wählen Sie **"Nachricht in Junk-E-Mail-Ordner des Empfängers verschieben "** (Standard) oder **"Nachricht unter Quarantäne** stellen" (streng) aus.
      - **Sicherheitstipps & Indikatorenabschnitt:** Konfigurieren Sie die folgenden Einstellungen:
+       - **Ersten Kontakt anzeigen Sicherheitstipp:** Auswählen (aktivieren).
        - **Benutzeridentitätswechsel Sicherheitstipp** <sup>\*</sup> anzeigen: Auswählen (aktivieren).
        - Anzeigen des **Domänenidentitätswechsels Sicherheitstipp:** <sup>\*</sup> Auswählen (Aktivieren).
        - **Ungewöhnliche Zeichen für den Benutzeridentitätswechsel anzeigen Sicherheitstipp:** <sup>\*</sup> Auswählen (aktivieren).
        - **Show (?) for unauthenticated senders for spoof:** Select (turn on).
-       - **Show "via" tag:** Select (turn on) if this setting is available.
+       - **Show "via" tag:** Select (turn on).
 
      Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
@@ -151,7 +152,7 @@ Im folgenden Verfahren wird beschrieben, wie Sie die Standardmäßige Antiphishi
 
 4. Klicken Sie auf **"Speichern"** und dann auf **"Schließen".**
 
-Ausführliche Anweisungen zum Konfigurieren von Antiphishingrichtlinien finden Sie unter [Konfigurieren von Antiphishingrichtlinien in EOP](configure-anti-phishing-policies-eop.md) und [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365.](configure-atp-anti-phishing-policies.md)
+Ausführliche Anweisungen zum Konfigurieren von Antiphishingrichtlinien finden Sie unter [Konfigurieren von Antiphishingrichtlinien in EOP](configure-anti-phishing-policies-eop.md) und [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365.](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="part-3---anti-spam-protection-in-eop"></a>Teil 3 : Antispamschutz in EOP
 
@@ -169,22 +170,22 @@ Weitere Informationen zu den empfohlenen Einstellungen für Antispam finden Sie 
 
 Ausführliche Anweisungen zum Konfigurieren von Antispamrichtlinien finden Sie unter [Konfigurieren von Antispamrichtlinien in EOP.](configure-your-spam-filter-policies.md)
 
-## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Teil 4 – Schutz vor bösartigen URLs und Dateien (sichere Links und sichere Anlagen in Defender für Office 365)
+## <a name="part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365"></a>Teil 4 – Schutz vor bösartigen URLs und Dateien (Safe Links und Safe Anlagen in Defender für Office 365)
 
-Der Time-of-Click-Schutz vor bösartigen URLs und Dateien ist in Abonnements verfügbar, die [Microsoft Defender für Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)enthalten. Sie wird über [Richtlinien](safe-attachments.md) für sichere Anlagen und [sichere Links](safe-links.md) eingerichtet.
+Der Time-of-Click-Schutz vor bösartigen URLs und Dateien ist in Abonnements verfügbar, die [Microsoft Defender für Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)enthalten. Sie wird über [Safe Richtlinien](safe-attachments.md) für Anlagen und [Safe Links](safe-links.md) eingerichtet.
 
-### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Richtlinien für sichere Anlagen in Microsoft Defender für Office 365
+### <a name="safe-attachments-policies-in-microsoft-defender-for-office-365"></a>Safe Anlagenrichtlinien in Microsoft Defender für Office 365
 
-Um [sichere Anlagen](safe-attachments.md)einzurichten, erstellen Sie mindestens eine Richtlinie für sichere Links.
+Um [Safe Anlagen](safe-attachments.md)einzurichten, erstellen Sie mindestens eine Safe Verknüpfungsrichtlinie.
 
-1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)die Option **"Threat Management** \> **Policy** \> **ATP Safe Attachments" aus,** und klicken Sie dann auf **"Erstellen".**
+1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)die Atp-Richtlinie für die **Bedrohungsverwaltung** \>  \> **Safe Anlagen** aus, und klicken Sie dann auf **"Erstellen".**
 
-2. Konfigurieren Sie im **angezeigten** Assistenten für neue Richtlinien für sichere Anlagen die folgenden Einstellungen:
+2. Konfigurieren Sie im angezeigten Assistenten für neue **Safe Anlagenrichtlinien** die folgenden Einstellungen:
 
    - Geben Sie im **Feld "Name"** den Namen `Block malware` ein, und klicken Sie dann auf **"Weiter".**
 
    - Konfigurieren Sie auf der **Einstellungen** Seite die folgenden Einstellungen:
-     - Wählen Sie im Abschnitt **"Sichere Anlagen– unbekannte Schadsoftwareantwort"** die Option **"Blockieren"** aus.
+     - **Wählen** Sie im Abschnitt **Safe Anlagen unbekannte Schadsoftware antwortet,** block .
      - Wählen Sie im Abschnitt **"Umleitungsanlage"** die Option **"Umleitung aktivieren"** aus. Geben Sie die E-Mail-Adresse für den Sicherheitsadministrator oder -operator Ihrer Organisation an, der erkannte Dateien überprüft.
 
      Klicken Sie auf **Weiter**.
@@ -193,21 +194,21 @@ Um [sichere Anlagen](safe-attachments.md)einzurichten, erstellen Sie mindestens 
 
 4. Überprüfen Sie Ihre Einstellungen, und klicken Sie dann auf **"Fertig stellen".**
 
-### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Richtlinien für sichere Links in Microsoft Defender für Office 365
+### <a name="safe-links-policies-in-microsoft-defender-for-office-365"></a>Safe Verknüpfungsrichtlinien in Microsoft Defender für Office 365
 
-Um [sichere Links](safe-links.md)einzurichten, überprüfen und bearbeiten Sie Ihre globalen Einstellungen für sichere Links, und erstellen Sie mindestens eine Richtlinie für sichere Links.
+Um [Safe Links](safe-links.md)einzurichten, überprüfen und bearbeiten Sie Ihre globalen Einstellungen für Safe Links, und erstellen Sie mindestens eine Safe Linkrichtlinie.
 
-1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)die AtP-Richtlinie für sichere Links für die **Bedrohungsverwaltung** \> **aus,** klicken Sie auf \>  **"Globale Einstellungen",** und konfigurieren Sie dann die folgenden Einstellungen:
+1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)die ATP-Richtlinie für die **Bedrohungsverwaltung** Safe \>  \> **Links** aus, klicken Sie auf **"Globale Einstellungen",** und konfigurieren Sie dann die folgenden Einstellungen:
 
-   - Überprüfen **Sie die Verwendung von sicheren Links in: Office 365 Anwendungen** aktiviert ist: ![ Umschalten ](../../media/scc-toggle-on.png) .
-   - **Nicht nachverfolgen, wenn Benutzer auf "Sichere Links" klicken:** Deaktivieren Sie diese Einstellung, um Benutzerklicks nachzuverfolgen: ![ Umschalten ](../../media/scc-toggle-off.png) aus.
+   - Verify **Use Safe Links in: Office 365 applications** is turned on: ![ Toggle on ](../../media/scc-toggle-on.png) .
+   - **Nicht nachverfolgen, wenn Benutzer auf Safe Links klicken:** Deaktivieren Sie diese Einstellung, um Benutzerklicks nachzuverfolgen: ![ Umschalten ](../../media/scc-toggle-off.png) aus.
    - **Benutzer dürfen nicht durch sichere Links zur ursprünglichen URL klicken:** Überprüfen Sie, ob diese Einstellung aktiviert ist: ![ Umschalten ](../../media/scc-toggle-on.png) .
 
    Klicken Sie nach Abschluss des Vorgangs auf **Speichern**.
 
-2. Klicken Sie zurück auf der Hauptseite für sichere Links auf **"Erstellen".**
+2. Klicken Sie zurück auf der Hauptseite Safe Links auf **"Erstellen".**
 
-3. Konfigurieren **Sie** im angezeigten Assistenten zum Erstellen von Richtlinien für sichere Links die folgenden Einstellungen:
+3. Konfigurieren Sie im angezeigten Assistenten zum **Erstellen Safe Verknüpfungsrichtlinien** die folgenden Einstellungen:
 
    - Geben Sie im **Feld "Name"** einen Namen ein, z. B. `Safe Links` und klicken Sie dann auf **"Weiter".**
 
@@ -227,18 +228,18 @@ Um [sichere Links](safe-links.md)einzurichten, überprüfen und bearbeiten Sie I
 
 Weitere Informationen hierzu finden Sie unter [Einrichten einer Richtlinie für sichere Links](set-up-safe-links-policies.md).
 
-## <a name="part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Teil 5: Überprüfen, ob sichere Anlagen für SharePoint, OneDrive und Microsoft Teams aktiviert sind
+## <a name="part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on"></a>Teil 5: Überprüfen, ob Safe Anlagen für SharePoint, OneDrive und Microsoft Teams aktiviert ist
 
-Workloads wie SharePoint, OneDrive und Teams werden für die Zusammenarbeit erstellt. Die Verwendung von Defender für Office 365 hilft beim Blockieren und Erkennen von Dateien, die in Teamwebsites und Dokumentbibliotheken als bösartig eingestuft wurden. Weitere Informationen zur Funktionsweise finden Sie [hier.](mdo-for-spo-odb-and-teams.md)
+Workloads wie SharePoint, OneDrive und Teams werden für die Zusammenarbeit erstellt. Die Verwendung von Defender für Office 365 hilft beim Blockieren und Erkennen von Dateien, die in Teamwebsites und Dokumentbibliotheken als bösartig erkannt werden. Weitere Informationen zur Funktionsweise finden Sie [hier.](mdo-for-spo-odb-and-teams.md)
 
 > [!IMPORTANT]
 > **Bevor Sie mit diesem Verfahren beginnen, stellen Sie sicher, dass die Überwachungsprotokollierung für Ihre Microsoft 365 Umgebung bereits aktiviert ist.** Dies geschieht in der Regel von einer Person, der die Rolle "Überwachungsprotokolle" in Exchange Online zugewiesen ist. Weitere Informationen finden Sie unter Aktivieren oder Deaktivieren der [Überwachungsprotokollsuche!](../../compliance/turn-audit-log-search-on-or-off.md)
 
-1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)die Option **"Threat Management** \> **Policy** \> **ATP Safe Attachments" aus,** und klicken Sie dann auf **"Globale Einstellungen".**
+1. Wählen Sie im [Security & Compliance Center](https://protection.office.com)die **AtP-Richtlinie** für die Bedrohungsverwaltung Safe Anlagen \>  \> **aus,** und klicken Sie dann auf **"Globale Einstellungen".**
 
-2. Überprüfen Sie, ob sich der Umschalter **"Defender für Office 365 für SharePoint", "OneDrive" und Microsoft Teams** auf der rechten Seite befindet: ![ "Einschalten", ](../../media/scc-toggle-on.png) und klicken Sie dann auf **"Speichern".**
+2. Vergewissern Sie sich, dass sich der Umschalter **"Defender für Office 365 für SharePoint", "OneDrive" und "Microsoft Teams"** rechts befindet: ![ "Einschalten" ](../../media/scc-toggle-on.png) und klicken Sie dann auf **"Speichern".**
 
-3. Überprüfen (und ggf. bearbeiten) Sie die [Richtlinien für sichere Anlagen](set-up-safe-attachments-policies.md) und sichere [Links](set-up-safe-links-policies.md)In Ihrer Organisation.
+3. Überprüfen (und ggf. bearbeiten) Sie die [Safe Anlagenrichtlinien](set-up-safe-attachments-policies.md) Ihrer Organisation und [die Richtlinien für Safe Links.](set-up-safe-links-policies.md)
 
 4. (Empfohlen) Führen Sie als globaler Administrator oder SharePoint Onlineadministrator das Cmdlet **["Set-SPOTenant"](/powershell/module/sharepoint-online/Set-SPOTenant)** aus, wobei der Parameter _"DisallowInfectedFileDownload"_ auf ". `$true`
 
@@ -260,7 +261,7 @@ Um eine Benachrichtigung zu erhalten, wenn eine Datei in SharePoint Online, OneD
 
 3. Geben Sie einen Namen für die Warnung an. Sie können z. B. schädliche Dateien in Bibliotheken eingeben.
 
-4. Geben Sie eine Beschreibung für die Warnung ein. Sie können z. B. Administratoren benachrichtigen, wenn schädliche Dateien in SharePoint Online, OneDrive oder Microsoft Teams erkannt werden.
+4. Geben Sie eine Beschreibung für die Warnung ein. Sie können beispielsweise Administratoren benachrichtigen, wenn schädliche Dateien in SharePoint Online, OneDrive oder Microsoft Teams erkannt werden.
 
 5. Legen Sie im Abschnitt **"Send this alert when..."** Folgendes fest:
 

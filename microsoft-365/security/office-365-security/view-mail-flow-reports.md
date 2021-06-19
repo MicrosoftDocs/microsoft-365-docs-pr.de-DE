@@ -19,12 +19,12 @@ description: Administratoren können sich über die Nachrichtenflussberichte inf
 ms.custom: ''
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fd8f6c3da1c195fbd540638ae73674deccf2762a
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 5f2bdb32d2afde3d0d40261cd3ecf30740dc0ccf
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52985504"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029481"
 ---
 # <a name="view-mail-flow-reports-in-the-reports-dashboard-in-security--compliance-center"></a>Anzeigen von Nachrichtenflussberichten im Dashboard "Berichte" im Security & Compliance Center
 
@@ -34,6 +34,9 @@ ms.locfileid: "52985504"
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender für Office 365 Plan 1 und Plan 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
+
+> [!NOTE]
+> Die meisten der in diesem Thema beschriebenen Berichte sind im Exchange Admin Center (EAC) verfügbar. Weitere Informationen finden Sie [unter Nachrichtenflussberichte im neuen Exchange Admin Center.](/exchange/monitoring/mail-flow-reports/mail-flow-reports) Der [Exchange-Transportregelbericht](view-email-security-reports.md#exchange-transport-rule-report) ist im Microsoft 365 Defender-Portal verfügbar.
 
 Zusätzlich zu den Nachrichtenflussberichten, die im [Nachrichtenflussdashboard](mail-flow-insights-v2.md) im Security & Compliance Center verfügbar sind, stehen im Berichtsdashboard eine Vielzahl zusätzlicher Nachrichtenflussberichte zur Verfügung, die Ihnen bei der Überwachung Ihrer Microsoft 365-Organisation helfen.
 
@@ -166,7 +169,7 @@ Klicken Sie auf Bericht **anzeigen,** um zur Berichtsansicht zurückzukehren.
 
 ## <a name="forwarding-report"></a>Weiterleitungsbericht
 
-Der **Weiterleitungsbericht** zeigt die automatisch weitergeleiteten Nachrichten Ihrer Organisation aus Exchange Online-Postfächern an externe Domänen an. Weitergeleitete Nachrichten können ein Sicherheits- oder Compliancerisiko darstellen und auf ein kompromittiertes Konto hinweisen.
+Der **Weiterleitungsbericht** zeigt die automatisch weitergeleiteten Nachrichten Ihrer Organisation von Exchange Online Postfächern an externe Domänen an. Weitergeleitete Nachrichten können ein Sicherheits- oder Compliancerisiko darstellen und auf ein kompromittiertes Konto hinweisen.
 
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie zum **Berichtsdashboard,** \>  und wählen Sie **"Weiterleitungsbericht"** aus. Um direkt zum Bericht zu wechseln, öffnen Sie <https://protection.office.com/reportv2?id=MailFlowForwarding> .
 
@@ -214,7 +217,7 @@ Klicken Sie auf Bericht **anzeigen,** um zur Berichtsansicht zurückzukehren.
 
 ## <a name="mailflow-status-report"></a>E-Mailflow-Statusbericht
 
-Der **E-Mailflow-Statusbericht** ähnelt dem [Bericht "Gesendete und empfangene E-Mails"](#sent-and-received-email-report)mit zusätzlichen Informationen zu E-Mails, die am Edge zugelassen oder blockiert werden. Dies ist der einzige Bericht, der Edgeschutzinformationen enthält, und zeigt an, wie viele E-Mails blockiert werden, bevor sie zur Auswertung durch Exchange Online Protection (EOP) in den Dienst zugelassen werden. Es ist wichtig zu verstehen, dass eine Nachricht, die an fünf Empfänger gesendet wird, als fünf verschiedene Nachrichten und nicht als eine Nachricht gezählt wird.
+Der **E-Mailflow-Statusbericht** ähnelt dem [Bericht "Gesendete und empfangene E-Mails"](#sent-and-received-email-report)mit zusätzlichen Informationen zu E-Mails, die am Edge zugelassen oder blockiert werden. Dies ist der einzige Bericht, der Edge-Schutzinformationen enthält, und zeigt an, wie viele E-Mails blockiert werden, bevor sie zur Auswertung durch Exchange Online Protection (EOP) in den Dienst zugelassen werden. Es ist wichtig zu verstehen, dass eine Nachricht, die an fünf Empfänger gesendet wird, als fünf verschiedene Nachrichten und nicht als eine Nachricht gezählt wird.
 Öffnen Sie zum Anzeigen des Berichts das [Security & Compliance Center,](https://protection.office.com)wechseln Sie zum **Berichtsdashboard,** \>  und wählen Sie **Den E-Mail-Flussstatusbericht** aus. To go directly to the **Mail flow status report**, open <https://protection.office.com/mailflowStatusReport> .
 
 ![Nachrichtenflussstatusberichts-Widget im Dashboard "Berichte"](../../media/mail-flow-status-report-widget.png)
@@ -300,7 +303,7 @@ Wenn Sie auf die Registerkarte **"Trichter"** klicken, enthält diese Ansicht st
 
   - **Eingehende**
   - **Ausgehende**
-  - **Organisationsintern:** Diese Anzahl gilt für Nachrichten, die innerhalb eines Mandanten gesendet werden; d. h. absender abc@domain.com sendet an empfänger xyz@domain.com (getrennt von Ein- und Ausgehend gezählt).
+  - **Organisationsintern:** Diese Anzahl gilt für Nachrichten, die innerhalb eines Mandanten gesendet werden; d. h. Absender abc@domain.com sendet an Empfänger xyz@domain.com (separat von Ein- und Ausgehend gezählt).
 
 Die Aggregatansicht und die Datentabellenansicht ermöglichen eine Filterung von 90 Tagen.
 
@@ -340,7 +343,7 @@ Die Datentabelle enthält die folgenden Informationen, die in absteigender Datum
   - **Domänenidentitätswechsel:** Nachrichten, die aufgrund eines Versuchs gefiltert wurden, eine Domäne zu imitieren, die in den Identitätswechselschutzeinstellungen einer Antiphishingrichtlinie definiert ist.
 - **Datei- und URL-Detonation (Defender für Office 365):**
   - **Dateidetonation:** Nachrichten, die nach einer Safe Anlagenrichtlinie gefiltert sind.
-  - **URL-Detonation:** Nachricht, gefiltert nach einer Safe Links-Richtlinie.
+  - **URL-Detonation:** Nachricht, gefiltert nach einer Safe-Verknüpfungsrichtlinie.
 - **Schutz nach der Zustellung und ZAP (ATP) oder ZAP (EOP):** ZAP gibt die automatische Bereinigung zur Nullstunde an.
 
 Wenn Sie eine Zeile in der Datentabelle auswählen, wird im Flyout eine weitere Aufschlüsselung der E-Mail-Anzahl angezeigt.
@@ -421,7 +424,9 @@ Jede exportierte .csv Datei ist auf 150.000 Zeilen beschränkt. Wenn die Daten m
 
 ## <a name="sent-and-received-email-report"></a>Gesendeter und empfangener E-Mail-Bericht
 
-Der Bericht **"Gesendete und empfangene E-Mails"** ist ein intelligenter Bericht, der Informationen zu eingehenden und ausgehenden E-Mails anzeigt, einschließlich Spamerkennungen, Schadsoftware und E-Mails, die als "gut" gekennzeichnet sind. Der Unterschied zwischen diesem Bericht und dem [E-Mailflow-Statusbericht](#mailflow-status-report) besteht darin, dass dieser Bericht keine Daten zu Nachrichten enthält, die durch den Edgeschutz blockiert wurden. Es ist wichtig zu verstehen, dass eine Nachricht als eine Nachricht zählt, wenn sie an fünf Empfänger gesendet wird.
+Der Bericht **"Gesendete und empfangene E-Mails"** ist ein intelligenter Bericht, der Informationen zu eingehenden und ausgehenden E-Mails anzeigt, einschließlich Spamerkennungen, Schadsoftware und E-Mails, die als "gut" gekennzeichnet sind. Der Unterschied zwischen diesem Bericht und dem [E-Mailflow-Statusbericht](#mailflow-status-report) besteht darin, dass dieser Bericht keine Daten zu Nachrichten enthält, die durch den Edgeschutz blockiert wurden.
+
+**Hinweis:** Es ist wichtig zu verstehen, dass eine Nachricht als eine Nachricht zählt, wenn sie an fünf Empfänger gesendet wird.
 
 Die Aggregatansicht und die Detailansicht des Berichts ermöglichen eine Filterung von 90 Tagen.
 

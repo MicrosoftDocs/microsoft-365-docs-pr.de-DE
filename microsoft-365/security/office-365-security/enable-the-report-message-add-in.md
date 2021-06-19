@@ -17,12 +17,12 @@ ms.collection:
 description: Erfahren Sie, wie Sie die Add-Ins "Nachricht melden" oder "Phishing melden" für Outlook und Outlook im Web, für einzelne Benutzer oder für Ihre gesamte Organisation aktivieren.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c7e5136e6d1a118df2e0e91f09a79a9a63e88052
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 8949322b0b691d59e59e5f7b80d2b9650e4115d5
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028583"
+ms.locfileid: "53029909"
 ---
 # <a name="enable-the-report-message-or-the-report-phishing-add-ins"></a>Aktivieren der Add-Ins "Berichtnachricht" oder "Phishing melden"
 
@@ -34,17 +34,17 @@ ms.locfileid: "53028583"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
-> Wenn Sie ein Administrator in einer Microsoft 365 Organisation mit Exchange Online Postfächern sind, wird empfohlen, das Übermittlungsportal in Microsoft 365 Defender zu verwenden. Weitere Informationen finden Sie unter ["Verwenden der Administratorübermittlung" zum Übermitteln von verdächtigem Spam, Phishing, URLs und Dateien an Microsoft.](admin-submission.md)
+> Wenn Sie ein Administrator in einer Microsoft 365 Organisation mit Exchange Online Postfächern sind, wird empfohlen, das Übermittlungsportal im Microsoft 365 Defender-Portal zu verwenden. Weitere Informationen finden Sie unter ["Verwenden der Administratorübermittlung" zum Übermitteln von verdächtigem Spam, Phishing, URLs und Dateien an Microsoft.](admin-submission.md)
 
-Mit den Add-Ins "Nachricht melden" und "Phishing melden" für Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) können Benutzer einfach falsch positive Ergebnisse (als falsch markierte gute E-Mails) oder falsch negative (ungültige E-Mails sind zulässig) an Microsoft und seine Partner zur Analyse melden. 
+Mit den Add-Ins "Nachricht melden" und "Phishing melden" für Outlook und Outlook im Web (früher als Outlook Web App bezeichnet) können Benutzer einfach falsch positive Ergebnisse (als falsch markierte gute E-Mails) oder falsch negative (ungültige E-Mails sind zulässig) an Microsoft und seine Partner zur Analyse melden.
 
-Microsoft verwendet diese Übermittlungen, um die Effektivität von E-Mail-Schutztechnologien zu verbessern. Nehmen wir beispielsweise an, dass Viele Nachrichten mithilfe des Add-Ins "Phishing melden" gemeldet werden. Diese Informationen werden im Sicherheitsdashboard und anderen Berichten angezeigt. Das Sicherheitsteam Ihrer Organisation kann diese Informationen als Hinweis darauf verwenden, dass Antiphishingrichtlinien möglicherweise aktualisiert werden müssen. 
+Microsoft verwendet diese Übermittlungen, um die Effektivität von E-Mail-Schutztechnologien zu verbessern. Nehmen wir beispielsweise an, dass Viele Nachrichten mithilfe des Add-Ins "Phishing melden" gemeldet werden. Diese Informationen werden im Sicherheitsdashboard und anderen Berichten angezeigt. Das Sicherheitsteam Ihrer Organisation kann diese Informationen als Hinweis darauf verwenden, dass Antiphishingrichtlinien möglicherweise aktualisiert werden müssen.
 
-Sie können entweder das Add-In "Nachricht melden" oder "Phishing melden" installieren. Wenn Ihre Benutzer sowohl Spam- als auch Phishingnachrichten melden sollen, stellen Sie das Add-In "Nachricht melden" in Ihrer Organisation bereit. Weitere Informationen finden Sie unter Aktivieren des Add-Ins "Nachricht melden". 
+Sie können entweder das Add-In "Nachricht melden" oder "Phishing melden" installieren. Wenn Ihre Benutzer sowohl Spam- als auch Phishingnachrichten melden sollen, stellen Sie das Add-In "Nachricht melden" in Ihrer Organisation bereit. Weitere Informationen finden Sie unter Aktivieren des Add-Ins "Nachricht melden".
 
-Das Add-In "Nachricht melden" bietet die Möglichkeit, Sowohl Spam- als auch Phishingnachrichten zu melden. Administratoren können das Add-In "Nachricht melden" für die Organisation aktivieren, und einzelne Benutzer können es für sich selbst installieren. 
+Das Add-In "Nachricht melden" bietet die Möglichkeit, Sowohl Spam- als auch Phishingnachrichten zu melden. Administratoren können das Add-In "Nachricht melden" für die Organisation aktivieren, und einzelne Benutzer können es für sich selbst installieren.
 
-Das Add-In "Phishing melden" bietet die Möglichkeit, nur Phishingnachrichten zu melden. Administratoren können das Add-In "Phishing melden" für die Organisation aktivieren, und einzelne Benutzer können es für sich selbst installieren. 
+Das Add-In "Phishing melden" bietet die Möglichkeit, nur Phishingnachrichten zu melden. Administratoren können das Add-In "Phishing melden" für die Organisation aktivieren, und einzelne Benutzer können es für sich selbst installieren.
 
 Wenn Sie ein einzelner Benutzer sind, können Sie beide Add-Ins für sich selbst aktivieren.
 
@@ -65,7 +65,7 @@ Wenn Sie ein globaler Administrator oder ein Exchange Online-Administrator sind 
 
 - Für Organisationsinstallationen muss die Organisation für die Verwendung der OAuth-Authentifizierung konfiguriert werden. Weitere Informationen finden Sie unter [Ermitteln, ob die zentrale Bereitstellung von Add-Ins für Ihre Organisation funktioniert.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
-- Administratoren müssen Mitglied der Rollengruppe "Globale Administratoren" sein. Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender](permissions-in-the-security-and-compliance-center.md).
+- Administratoren müssen Mitglied der Rollengruppe "Globale Administratoren" sein. Weitere Informationen finden Sie unter [Berechtigungen im Microsoft 365 Defender Portal.](permissions-microsoft-365-security-center.md)
 
 - Weitere Informationen zum Melden einer Nachricht mithilfe des Berichtsnachrichtenfeatures finden Sie unter [Bericht falsch positive und falsch negative Ergebnisse in Outlook](report-false-positives-and-false-negatives.md).
 
@@ -74,7 +74,7 @@ Wenn Sie ein globaler Administrator oder ein Exchange Online-Administrator sind 
 
 ## <a name="get-the-report-message-add-in"></a>Abrufen des Add-Ins "Berichtnachricht"
 
-### <a name="get-the-add-in-for-yourself"></a>Abrufen des Add-Ins für sich selbst
+### <a name="get-the-report-message-add-in-for-yourself"></a>Abrufen des Add-Ins "Nachricht melden" für sich selbst
 
 1. Wechseln Sie zu Microsoft AppSource, <https://appsource.microsoft.com/marketplace/apps> und suchen Sie nach dem Add-In "Nachricht melden". To go directly to the Report Message add-in, go to <https://appsource.microsoft.com/product/office/wa104381180> .
 
@@ -98,7 +98,7 @@ Nachdem das Add-In installiert und aktiviert wurde, werden die folgenden Symbole
   > [!div class="mx-imgBorder"]
   > ![Outlook im Web Add-In-Symbol "Nachricht melden"](../../media/owa-report-message-icon.png)
 
-### <a name="get-the-add-in-for-your-organization"></a>Abrufen des Add-Ins für Ihre Organisation
+### <a name="get-the-report-message-add-in-for-your-organization"></a>Abrufen des Add-Ins "Berichtsnachricht" für Ihre Organisation
 
 > [!NOTE]
 > Es kann bis zu 12 Stunden dauern, bis das Add-In in Ihrer Organisation angezeigt wird.
@@ -124,13 +124,11 @@ Nachdem das Add-In installiert und aktiviert wurde, werden die folgenden Symbole
 7. Konfigurieren Sie auf der angezeigten Seite **"Add-In konfigurieren"** die folgenden Einstellungen:
 
    - **Zugewiesene Benutzer:** Wählen Sie einen der folgenden Werte aus:
-
      - **Jeder** (Standard)
      - **Bestimmte Benutzer/Gruppen**
      - **Nur ich**
 
    - **Bereitstellungsmethode:** Wählen Sie einen der folgenden Werte aus:
-
      - **Behoben (Standard):** Das Add-In wird automatisch für die angegebenen Benutzer bereitgestellt und kann nicht entfernt werden.
      - **Verfügbar:** Benutzer können das Add-In zu **Hause** \> **installieren. Add-Ins** werden \> **vom Administrator verwaltet.**
      - **Optional:** Das Add-In wird automatisch für die angegebenen Benutzer bereitgestellt, kann jedoch entfernt werden.
@@ -161,7 +159,7 @@ Nachdem das Add-In installiert und aktiviert wurde, werden die folgenden Symbole
 
 ## <a name="get-the-report-phishing-add-in"></a>Abrufen des Berichtsphishing-Add-Ins
 
-### <a name="get-the-add-in-for-yourself"></a>Abrufen des Add-Ins für sich selbst
+### <a name="get-the-report-phishing-add-in-for-yourself"></a>Abrufen des Berichtsphishing-Add-Ins für sich selbst
 
 1. Wechseln Sie zu Microsoft AppSource, <https://appsource.microsoft.com/marketplace/apps> und suchen Sie nach dem Add-In "Phishing melden".
 
@@ -182,12 +180,12 @@ Nachdem das Add-In installiert und aktiviert wurde, werden die folgenden Symbole
   > [!div class="mx-imgBorder"]
   > ![Outlook im Web Symbol "Phishing-Add-In melden"](../../media/OWA-ReportPhishing.png)
 
-### <a name="get-the-add-in-for-your-organization"></a>Abrufen des Add-Ins für Ihre Organisation
+### <a name="get-the-report-phishing-add-in-for-your-organization"></a>Abrufen des Berichtsphishing-Add-Ins für Ihre Organisation
 
 > [!NOTE]
 > Es kann bis zu 12 Stunden dauern, bis das Add-In in Ihrer Organisation angezeigt wird.
 
-1. Wechseln Sie im Microsoft 365 Admin Center zur **Seite Einstellungen** \> **Add-Ins** unter <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Wenn die **Add-In-Seite** nicht angezeigt wird, wechseln Sie zum Link **Einstellungen** \> **Integrierte** \> **Apps-Add-Ins** oben auf der Seite **"Integrierte Apps".**
+1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Einstellungen** \> **Add-Ins** unter <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Wenn die **Add-In-Seite** nicht angezeigt wird, wechseln Sie zum Link **Einstellungen** \> **Integrierte** \> **Apps-Add-Ins** oben auf der Seite **"Integrierte Apps".**
 
 2. Wählen Sie **"Add-In bereitstellen"** oben auf der Seite und dann **"Weiter"** aus.
 
@@ -206,13 +204,11 @@ Nachdem das Add-In installiert und aktiviert wurde, werden die folgenden Symbole
 7. Konfigurieren Sie auf der angezeigten Seite **"Add-In konfigurieren"** die folgenden Einstellungen:
 
    - **Zugewiesene Benutzer:** Wählen Sie einen der folgenden Werte aus:
-
      - **Jeder** (Standard)
      - **Bestimmte Benutzer/Gruppen**
      - **Nur ich**
 
    - **Bereitstellungsmethode:** Wählen Sie einen der folgenden Werte aus:
-
      - **Behoben (Standard):** Das Add-In wird automatisch für die angegebenen Benutzer bereitgestellt und kann nicht entfernt werden.
      - **Verfügbar:** Benutzer können das Add-In zu **Hause** \> **installieren. Add-Ins** werden \> **vom Administrator verwaltet.**
      - **Optional:** Das Add-In wird automatisch für die angegebenen Benutzer bereitgestellt, kann jedoch entfernt werden.
@@ -225,7 +221,7 @@ Nachdem das Add-In installiert und aktiviert wurde, werden die folgenden Symbole
 
 ## <a name="review-or-edit-settings-for-the-report-phishing-add-in"></a>Überprüfen oder Bearbeiten von Einstellungen für das Add-In "Phishing melden"
 
-1. Wechseln Sie im Microsoft 365 Admin Center zur **Seite Einstellungen** \> **Add-Ins** unter <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Wenn die **Add-In-Seite** nicht angezeigt wird, wechseln Sie zum Link **Einstellungen** \> **Integrierte** \> **Apps-Add-Ins** oben auf der Seite **"Integrierte Apps".**
+1. Wechseln Sie im Microsoft 365 Admin Center zur Seite **Einstellungen** \> **Add-Ins** unter <https://admin.microsoft.com/AdminPortal/Home#/Settings/AddIns> . Wenn die **Add-In-Seite** nicht angezeigt wird, wechseln Sie zum Link **Einstellungen** \> **Integrierte** \> **Apps-Add-Ins** oben auf der Seite **"Integrierte Apps".**
 
 2. Suchen Sie das **Add-In "Phishing melden",** und wählen Sie es aus.
 

@@ -17,12 +17,12 @@ ms.custom:
 description: Administratoren können sich über die Antiphishingrichtlinien informieren, die in Exchange Online Protection (EOP) und Microsoft Defender für Office 365 verfügbar sind.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0a0c7e9ffa37c5154b8a10b9642d484011674d6a
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 846043be72be741e60c09c85fba14dbf291612a1
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964885"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53029369"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Antiphishingrichtlinien in Microsoft 365
 
@@ -62,7 +62,7 @@ Informationen zum Konfigurieren von Antiphishingrichtlinien finden Sie in den fo
 
 - [Konfigurieren von Anti-Phishing-Richtlinien in EOP](configure-anti-phishing-policies-eop.md)
 
-- [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-atp-anti-phishing-policies.md)
+- [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365](configure-mdo-anti-phishing-policies.md)
 
 Der Rest dieses Artikels beschreibt die Einstellungen, die in Antiphishingrichtlinien in EOP und Defender für Office 365 verfügbar sind.
 
@@ -116,7 +116,7 @@ Die folgenden Spoofingeinstellungen sind in Antiphishingrichtlinien in EOP und M
 
 - **Aktionen:** Für Nachrichten von blockierten gefälschten Absendern (automatisch durch Spoofintelligenz blockiert oder manuell in der Mandanten-Zulassungs-/Sperrliste blockiert) können Sie auch die Aktion angeben, die für die Nachrichten ausgeführt werden soll:
 
-  - **Verschieben von Nachrichten in die Junk-E-Mail-Ordner des Empfängers:** Dies ist der Standardwert. Die Nachricht wird an das Postfach übermittelt und in den Junk-E-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-E-Mail-Einstellungen für Exchange Online Postfächer in Microsoft 365](configure-junk-email-settings-on-exo-mailboxes.md).
+  - **Verschieben von Nachrichten in die Junk-E-Mail-Ordner des Empfängers:** Dies ist der Standardwert. Die Nachricht wird an das Postfach übermittelt und in den Junk-E-Mail-Ordner verschoben. In Exchange Online wird die Nachricht in den Junk-E-Mail-Ordner verschoben, wenn die Junk-E-Mail-Regel für das Postfach aktiviert ist (sie ist standardmäßig aktiviert). Weitere Informationen finden Sie unter [Konfigurieren von Junk-E-Mail-Einstellungen für Exchange Online Postfächer in Microsoft 365.](configure-junk-email-settings-on-exo-mailboxes.md)
 
   - **Die Nachricht unter Quarantäne** stellen: Sendet die Nachricht an die Quarantäne anstelle der vorgesehenen Empfänger. Informationen zur Quarantäne finden Sie in den folgenden Artikeln:
 
@@ -131,9 +131,6 @@ Nicht authentifizierte Absendereinstellungen sind Teil der [Spoofingeinstellunge
 - **Aktivieren Sie das Fragezeichen (?) für nicht authentifizierte Absender?**: Wenn diese Einstellung aktiviert ist, wird dem Foto des Absenders im Feld "Von" ein Fragezeichen hinzugefügt, wenn die Nachricht keine SPF- oder DKIM-Prüfungen besteht **und** die Nachricht keine DMARC- oder [zusammengesetzte Authentifizierung](email-validation-and-authentication.md#composite-authentication)besteht. Wenn diese Einstellung deaktiviert ist, wird das Fragezeichen nicht zum Foto des Absenders hinzugefügt.
 
 - **Aktivieren Sie das "via"-Tag?** <sup>\*</sup> : Wenn diese Einstellung aktiviert ist, wird das Via-Tag (chris@contoso.com <u>über</u> fabrikam.com) im Feld "Von" hinzugefügt, wenn sich die Domäne in der Absenderadresse (der Absender der Nachricht, der in E-Mail-Clients angezeigt wird) von der Domäne in der DKIM-Signatur oder der **MAIL FROM-Adresse** unterscheidet. Weitere Informationen zu diesen Adressen finden Sie unter [Einer Übersicht über E-Mail-Nachrichtenstandards.](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
-
-> [!NOTE]
-> Derzeit ist die Einstellung **"Über" aktivieren** nicht in allen Organisationen verfügbar. Wenn Sie nicht über die Einstellung zum Aktivieren des **"via"-Tags verfügen,** werden das Fragezeichen **und** das Via-Tag sowohl durch die Einstellung **"Nicht authentifizierte Absender-Fragezeichen (?) aktivieren"** in Ihrer Organisation gesteuert.
 
 Um zu verhindern, dass das Fragezeichen oder tag nachrichten von bestimmten Absendern hinzugefügt wird, haben Sie die folgenden Optionen:
 

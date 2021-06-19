@@ -19,12 +19,12 @@ description: Administratoren können erfahren, wie der Identitätswechsel-Einbli
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b6aab20cc9050152b7ba9f86baed887969ad4da0
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 53baecd100851eb5ab05fe79751961baef3acd5c
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53029015"
+ms.locfileid: "53029669"
 ---
 # <a name="impersonation-insight-in-defender-for-office-365"></a>Identitätswechsel-Einblick in Defender für Office 365
 
@@ -53,7 +53,6 @@ Sie können den Identitätswechsel-Einblick im Microsoft 365 Defender Portal ver
 - Sie öffnen das Microsoft 365 Defender-Portal unter <https://security.microsoft.com>. Um direkt zum Identitätswechsel-Einblick auf der **Antiphishingseite** zu gelangen, verwenden Sie <https://security.microsoft.com/antiphishing> . Verwenden Sie die Folgendes, um direkt zur Seite **"Identitätswechsel-Einblick"** zu <https://security.microsoft.com/impersonationinsight> wechseln.
 
 - Bevor Sie die Verfahren in diesem Artikel ausführen können, müssen Ihnen im Microsoft 365 Defender Portal Berechtigungen zugewiesen werden:
-
   - **Organisationsverwaltung**
   - **Sicherheitsadministrator**
   - **Sicherheitsleseberechtigter**
@@ -63,7 +62,7 @@ Sie können den Identitätswechsel-Einblick im Microsoft 365 Defender Portal ver
 
   **Hinweis:** Das Hinzufügen von Benutzern zur entsprechenden Azure Active Directory Rolle im Microsoft 365 Admin Center bietet Benutzern die erforderlichen Berechtigungen im Microsoft 365 Defender-Portal _und_ Berechtigungen für andere Features in Microsoft 365. Weitere Informationen finden Sie unter [Informationen zu Administratorrollen](../../admin/add-users/about-admin-roles.md).
 
-- Sie aktivieren und konfigurieren den Identitätswechselschutz in Antiphishingrichtlinien in Microsoft Defender für Office 365. Der Identitätswechselschutz ist standardmäßig nicht aktiviert. Weitere Informationen finden Sie unter [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365.](configure-atp-anti-phishing-policies.md)
+- Sie aktivieren und konfigurieren den Identitätswechselschutz in Antiphishingrichtlinien in Microsoft Defender für Office 365. Der Identitätswechselschutz ist standardmäßig nicht aktiviert. Weitere Informationen finden Sie unter [Konfigurieren von Antiphishingrichtlinien in Microsoft Defender für Office 365.](configure-mdo-anti-phishing-policies.md)
 
 ## <a name="open-the-impersonation-insight-in-the-microsoft-365-defender-portal"></a>Öffnen Sie den Identitätswechsel-Einblick im Microsoft 365 Defender Portal
 
