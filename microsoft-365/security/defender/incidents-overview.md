@@ -1,6 +1,6 @@
 ---
 title: Vorfälle in Microsoft 365 Defender
-description: Untersuchen Sie Vorfälle, die auf Geräten, Benutzern und Postfächern im Microsoft 365 Defender Portal angezeigt werden.
+description: Untersuchen Sie Vorfälle, die auf Geräten, Benutzern und Postfächern im Microsoft 365 Defender-Portal angezeigt werden.
 keywords: Vorfälle, Warnungen, untersuchen, analysieren, Reagieren, Korrelation, Angriff, Computer, Geräte, Benutzer, Identitäten, Identität, Postfach, E-Mail, 365, Microsoft, m365, Reaktion auf Vorfälle, Cyberangriff
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 3dac22afb074a58ea2afdf842a9a62c6cee77dcc
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: b6830c77a0c5cc93ea202844a8793c5f69f07650
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022781"
+ms.locfileid: "53028523"
 ---
 # <a name="incidents-in-microsoft-365-defender"></a>Vorfälle in Microsoft 365 Defender
 
@@ -42,7 +42,7 @@ ms.locfileid: "53022781"
 
 Ein Vorfall in Microsoft 365 Defender ist eine Sammlung korrelierter Warnungen und zugehöriger Daten, die die Geschichte eines Angriffs bilden. 
 
-Microsoft 365 Dienste und Apps erstellen Warnungen, wenn sie ein verdächtiges oder bösartiges Ereignis oder eine schädliche Aktivität erkennen. Einzelne Warnungen liefern wertvolle Hinweise zu einem abgeschlossenen oder laufenden Angriff. Bei Angriffen werden jedoch in der Regel verschiedene Techniken gegen verschiedene Entitätstypen verwendet, z. B. Geräte, Benutzer und Postfächer. Das Ergebnis sind mehrere Warnungen für mehrere Entitäten in Ihrem Mandanten. 
+Microsoft 365 Dienste und Apps warnungen erstellen, wenn sie ein verdächtiges oder bösartiges Ereignis oder eine schädliche Aktivität erkennen. Einzelne Warnungen liefern wertvolle Hinweise zu einem abgeschlossenen oder laufenden Angriff. Bei Angriffen werden jedoch in der Regel verschiedene Techniken gegen verschiedene Entitätstypen verwendet, z. B. Geräte, Benutzer und Postfächer. Das Ergebnis sind mehrere Warnungen für mehrere Entitäten in Ihrem Mandanten. 
 
 Da es schwierig und zeitaufwändig sein kann, die einzelnen Warnungen zusammenzufassen, um Einblicke in einen Angriff zu erhalten, aggregiert Microsoft 365 Defender automatisch die Warnungen und die zugehörigen Informationen zu einem Vorfall.
 
@@ -72,7 +72,7 @@ Sie verwalten Vorfälle aus **Vorfällen & Warnungen > Vorfällen** im Schnellst
 
 Wenn Sie einen Vorfallnamen auswählen, wird eine Zusammenfassung des Vorfalls angezeigt und der Zugriff auf Registerkarten mit zusätzlichen Informationen ermöglicht.
 
-:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Beispiel für die Seite &quot;Zusammenfassung&quot; für einen Vorfall im Microsoft 365 Defender Portal":::
+:::image type="content" source="../../media/incidents-overview/incidents-ss-incident-summary.png" alt-text="Beispiel für die Seite &quot;Zusammenfassung&quot; für einen Vorfall im portal Microsoft 365 Defender":::
 
 Die zusätzlichen Registerkarten für einen Vorfall sind:
 
@@ -106,7 +106,7 @@ Die zusätzlichen Registerkarten für einen Vorfall sind:
 
 Hier sehen Sie die Beziehung zwischen einem Vorfall und seinen Daten sowie die Registerkarten eines Vorfalls im portal Microsoft 365 Defender.
 
-:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="Beziehung eines Vorfalls und seiner Daten zu den Registerkarten eines Vorfalls im Microsoft 365 Defender Portal":::
+:::image type="content" source="../../media/incidents-overview/incidents-security-center.png" alt-text="Die Beziehung eines Vorfalls und seiner Daten zu den Registerkarten eines Vorfalls im Microsoft 365 Defender Portal":::
 
 ## <a name="example-incident-response-workflow-for-microsoft-365-defender"></a>Beispielworkflow für die Reaktion auf Vorfälle für Microsoft 365 Defender
 
@@ -127,7 +127,7 @@ Identifizieren Sie fortlaufend die Vorfälle mit der höchsten Priorität für A
 
    1. Sammeln Sie bei Bedarf Informationen zu betroffenen Geräten, Benutzern und Postfächern (registerkarten **"Geräte",** **"Benutzer"** und **"Postfächer").**
 
-   1. Erfahren Sie, wie Microsoft 365 Defender [einige Warnungen automatisch behoben](m365d-autoir.md) hat (Registerkarte **"Untersuchungen").**
+   1. Erfahren Sie, wie Microsoft 365 Defender [einige Warnungen automatisch aufgelöst](m365d-autoir.md) hat (Registerkarte **"Untersuchungen").**
    
    1. Verwenden Sie bei Bedarf Informationen im Datensatz für den Vorfall, um weitere Informationen zu erhalten (registerkarte **"Nachweise und Reaktion").**
 
@@ -144,9 +144,11 @@ Identifizieren Sie fortlaufend die Vorfälle mit der höchsten Priorität für A
 
 Wenn Sie noch keine Informationen zur Sicherheitsanalyse haben, lesen Sie die Einführung in die [Reaktion auf Ihren ersten Vorfall,](incidents-overview.md) um weitere Informationen zu erhalten und einen Beispielvorfall durchzugehen.
 
+Weitere Informationen zur Behandlung von Sicherheitsvorfällen in Microsoft-Produkten finden Sie in [diesem Artikel.](/security/compass/incident-response-overview)
+
 ## <a name="example-security-operations-for-microsoft-365-defender"></a>Beispielsicherheitsvorgänge für Microsoft 365 Defender
 
-Hier ist ein Beispiel für Sicherheitsvorgänge für Microsoft 365 Defender.
+Hier ist ein Beispiel für Sicherheitsvorgänge (SecOps) für Microsoft 365 Defender.
 
 :::image type="content" source="../../media/incidents-overview/incidents-example-operations.png" alt-text="Ein Beispiel für Sicherheitsvorgänge für Microsoft 365 Defender":::
 
@@ -160,7 +162,7 @@ Tägliche Aufgaben können Folgendes umfassen:
 Monatliche Aufgaben können Folgendes umfassen:
 
 - Überprüfen von [AIR-Einstellungen](m365d-configure-auto-investigation-response.md)
-- Überprüfen der [Sicherheitsbewertung](microsoft-secure-score-improvement-actions.md) und [des Sicherheitsrisiko-&-Sicherheitsrisikomanagements](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
+- Überprüfen der [Sicherheitsbewertung](microsoft-secure-score-improvement-actions.md) und [& Sicherheitsrisikoverwaltung](../defender-endpoint/next-gen-threat-and-vuln-mgt.md)
 - Berichterstellung für Ihre IT-Sicherheitsverwaltungskette
 
 Vierteljährliche Aufgaben können einen Bericht und ein Briefing der Sicherheitsergebnisse an den Chief Information Security Officer (CISO) umfassen.
@@ -169,11 +171,19 @@ Jährliche Aufgaben können die Durchführung eines größeren Vorfalls oder ein
 
 Tägliche, monatliche, vierteljährliche und jährliche Aufgaben können verwendet werden, um Prozesse, Richtlinien und Sicherheitskonfigurationen zu aktualisieren oder zu verfeinern.
 
+### <a name="secops-resources-across-microsoft-products"></a>SecOps-Ressourcen in microsoftweiten Produkten
+
+Weitere Informationen zu SecOps in allen Microsoft-Produkten finden Sie in den folgenden Ressourcen:
+
+- [Capabilities](/security/compass/security-operations-capabilities)
+- [Bewährte Methoden](/security/compass/security-operations)
+- [Videos und Folien](/security/compass/security-operations-videos-and-decks)
+
 ## <a name="next-steps"></a>Nächste Schritte
 
 **Wenn Sie noch keine Informationen** zur Sicherheitsanalyse und zur Reaktion auf Sicherheitsvorfälle haben:
 
-- Sehen Sie sich die [exemplarische Vorgehensweise zum Reagieren auf Ihren ersten Vorfall](first-incident-overview.md) an, um eine Tour durch einen typischen Prozess der Analyse, Behebung und Überprüfung nach dem Vorfall im Microsoft 365 Defender-Portal mit einem Beispiel für einen Angriff zu erhalten.
+- Sehen Sie sich die [exemplarische Vorgehensweise zum Reagieren auf Ihren ersten Vorfall an,](first-incident-overview.md) um eine Führung durch einen typischen Prozess der Analyse, Behebung und Überprüfung nach dem Vorfall im Microsoft 365 Defender-Portal mit einem Beispielangriff zu erhalten.
 
 **Wenn Sie Erfahrung** mit Sicherheitsanalysen und der Reaktion auf Vorfälle haben:
 

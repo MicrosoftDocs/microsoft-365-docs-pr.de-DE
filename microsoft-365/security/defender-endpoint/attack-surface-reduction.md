@@ -16,19 +16,18 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 409f6d0bbbcf9f8b50119e35bdb7852c4323bbf9
-ms.sourcegitcommit: 34c06715e036255faa75c66ebf95c12a85f8ef42
+ms.openlocfilehash: 7360087e1863e81e4dc9e8acc2817e1320d6f4d8
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52984988"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028787"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Verwenden von Regeln zur Verringerung der Angriffsfläche, um eine Infektion mit Schadsoftware zu verhindern
 
 **Gilt für:**
 
 - [Microsoft Defender für Endpunkt](https://go.microsoft.com/fwlink/?linkid=2154037)
-
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>Warum Regeln zur Verringerung der Angriffsfläche wichtig sind
@@ -91,7 +90,7 @@ Darüber hinaus wird der Warnmodus auf Geräten mit älteren Versionen von Windo
 
 ## <a name="notifications-and-alerts"></a>Benachrichtigungen und Warnungen
 
-Wenn eine Regel zur Verringerung der Angriffsfläche ausgelöst wird, wird eine Benachrichtigung auf dem Gerät angezeigt. Sie können [die Benachrichtigung](customize-attack-surface-reduction.md#customize-the-notification) mit Ihren Unternehmensdetails und Kontaktinformationen anpassen.
+Wenn eine Regel zur Verringerung der Angriffsfläche ausgelöst wird, wird eine Benachrichtigung auf dem Gerät angezeigt. Mit Ihren Unternehmensdetails und Kontaktinformationen können Sie [die Benachrichtigung anpassen](customize-attack-surface-reduction.md#customize-the-notification).
 
 Wenn außerdem bestimmte Regeln zur Verringerung der Angriffsfläche ausgelöst werden, werden Warnungen generiert.
 
@@ -160,7 +159,7 @@ Die "Modulversion", die für Attack Surface Reduction-Ereignisse im Ereignisprot
 
 ## <a name="attack-surface-reduction-rules"></a>Regeln zur Verringerung der Angriffsfläche
 
-In der folgenden Tabelle und den unteren Abschnitten werden die einzelnen Regeln zur Verringerung der Angriffsfläche beschrieben. Die Regeln zur Verringerung der Angriffsfläche werden in alphabetischer Reihenfolge nach Regelname aufgelistet.
+In der folgenden Tabelle und den unteren Abschnitten werden die einzelnen Regeln zur Reduzierung der Angriffsfläche beschrieben. Die Regeln zur Verringerung der Angriffsfläche werden in alphabetischer Reihenfolge nach Regelname aufgelistet.
 
 Wenn Sie Regeln zur Verringerung der Angriffsfläche mithilfe von Gruppenrichtlinien oder PowerShell konfigurieren, benötigen Sie die GUIDs. Wenn Sie andererseits Microsoft Endpoint Manager oder Microsoft Intune verwenden, benötigen Sie die GUIDs nicht.
 
@@ -384,7 +383,7 @@ GUID: `3B576869-A4EC-4529-8536-B80A7769E899`
 
 Diese Regel blockiert Codeeinfügungsversuche von Office Apps in andere Prozesse.
 
-Angreifer versuchen möglicherweise, Office Apps zu verwenden, um bösartigen Code durch Codeeinschleusung in andere Prozesse zu migrieren, damit sich der Code als sauberen Prozess maskieren kann.
+Angreifer versuchen möglicherweise, Office-Apps zu verwenden, um bösartigen Code durch Codeeinschleusung in andere Prozesse zu migrieren, damit sich der Code als sauberen Prozess maskieren kann.
 
 Es gibt keine bekannten legitimen Geschäftszwecke für die Verwendung von Codeeinfügung.
 

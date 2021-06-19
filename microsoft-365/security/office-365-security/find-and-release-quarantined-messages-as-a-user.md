@@ -20,12 +20,12 @@ ms.custom:
 description: Benutzer können erfahren, wie sie in Exchange Online Protection (EOP) isolierte (unter Quarantäne gestellte) Nachrichten anzeigen und verwalten, die sie hätten empfangen sollen.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 60b319b81362b9d88afcd734021db227969b04d0
-ms.sourcegitcommit: 337e8d8a2fee112d799edd8a0e04b3a2f124f900
+ms.openlocfilehash: 02119130df847da48f0c25ba13cbb321c83f59dd
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877872"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028391"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Suchen und Freigeben von isolierten Nachrichten als Benutzer in EOP
 
@@ -38,18 +38,6 @@ ms.locfileid: "52877872"
 
 In Microsoft 365-Organisationen mit Postfächern in Exchange Online oder in eigenständigen Exchange Online Protection (EOP)-Organisationen ohne Exchange Online-Postfächer, enthält die Quarantäne potenziell gefährliche oder unerwünschte Nachrichten. Weitere Informationen finden Sie unter [Quarantäne in EOP](quarantine-email-messages.md).
 
-Als Empfänger einer Quarantänenachricht wird in der folgenden Tabelle beschrieben, was Sie als regulärer Benutzer mit der Nachricht tun können:
-
-<br>
-
-****
-
-|Quarantänegrund|Anzeigen|Freigabe|Löschen|
-|---|:---:|:---:|:---:|
-|Masse|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
-|Spam|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|![Häkchen](../../media/checkmark.png)|
-|Phishing (keine hohe Phishingwahrscheinlichkeit)|![Häkchen](../../media/checkmark.png)||![Häkchen](../../media/checkmark.png)|
-|
 
 Sie sehen und verwalten Ihre unter Quarantäne gestellten Nachrichten im Microsoft 365 Defender-Portal oder (wenn ein Administrator dies eingerichtet hat) in den [Spam-Benachrichtigungen für Endbenutzer](use-spam-notifications-to-release-and-report-quarantined-messages.md).
 

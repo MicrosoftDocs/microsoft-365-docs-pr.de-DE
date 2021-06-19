@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.prod: m365-security
 ms.technology: m365d
-ms.openlocfilehash: decc991ef1d4a1b92f4e843fd39d595b9a1f7107
-ms.sourcegitcommit: 1c11035dd4432e34603022740baef0c8f7ff4425
+ms.openlocfilehash: 15b1b152966c9c09bf77bea15b9b651f739c3566
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52964830"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028955"
 ---
 # <a name="microsoft-defender-for-office-365-in-microsoft-365-defender"></a>Microsoft Defender für Office 365 in Microsoft 365 Defender
 
@@ -34,7 +34,7 @@ ms.locfileid: "52964830"
 
 ## <a name="quick-reference"></a>Kurzübersicht
 
-In der folgenden Tabelle sind die Änderungen in der Navigation zwischen dem Office 365 Security & Compliance Center und dem Microsoft 365 Defender aufgeführt.
+In der folgenden Tabelle sind die Änderungen in der Navigation zwischen dem Office 365 Security & Compliance Center und Microsoft 365 Defender aufgeführt.
 
 <br>
 
@@ -59,7 +59,7 @@ In der folgenden Tabelle sind die Änderungen in der Navigation zwischen dem Off
 
 [Microsoft 365 Defender](./overview-security-center.md) at <https://security.microsoft.com> kombiniert Sicherheitsfunktionen aus vorhandenen Microsoft-Sicherheitsportalen, einschließlich des Office 365 Security & Compliance Centers. Dieses verbesserte Center unterstützt Sicherheitsteams dabei, ihre Organisationen effektiver und effizienter vor Bedrohungen zu schützen.
 
-Wenn Sie mit dem Office 365 Security and Compliance-Portal (protection.office.com) vertraut sind, werden in diesem Artikel einige änderungen und Verbesserungen in Microsoft 365 Defender beschrieben.
+Wenn Sie mit dem Office 365 Security and Compliance-Portal (protection.office.com) vertraut sind, werden in diesem Artikel einige der Änderungen und Verbesserungen in Microsoft 365 Defender beschrieben.
 
 Weitere Informationen zu den Vorteilen: [Übersicht über Microsoft 365 Defender](overview-security-center.md)
 
@@ -69,7 +69,7 @@ Wenn Sie nach Elementen im Zusammenhang mit der Compliance suchen, besuchen Sie 
 
 Die linke Navigationsleiste oder Schnellstartleiste wird Ihnen vertraut vorkommen. Dieses Sicherheitscenter enthält jedoch einige neue und aktualisierte Elemente.
 
-Mit der einheitlichen Microsoft 365 Defender Lösung können Sie die Bedrohungssignale zusammenfügen und den vollständigen Umfang und die Auswirkungen der Bedrohung sowie deren Auswirkungen auf die Organisation bestimmen.
+Mit der einheitlichen Microsoft 365 Defender Lösung können Sie die Bedrohungssignale zusammenfügen und den vollständigen Umfang und die Auswirkungen der Bedrohung sowie deren Auswirkungen auf die Organisation ermitteln.
 
 :::image type="content" source="../../media/M365-defender-converge-experience.png" alt-text="Abbildung Microsoft 365 Defender zusammengeführten Umgebung":::
 
@@ -136,7 +136,7 @@ Zeigen Sie Berichte an, und nehmen Sie Änderungen an Einstellungen und Benutzer
 
 ## <a name="whats-changed"></a>Änderungen
 
-Diese Tabelle ist eine Kurzübersicht zur Bedrohungsverwaltung, bei der änderungen zwischen dem **Security & Compliance Center** und dem **Microsoft 365 Defender-Portal** vorgenommen wurden. Klicken Sie auf die Links, um weitere Informationen zu diesen Bereichen zu lesen.
+Diese Tabelle ist eine Kurzübersicht zur Bedrohungsverwaltung, in der änderungen zwischen dem **Security & Compliance Center** und dem **Microsoft 365 Defender-Portal** vorgenommen wurden. Klicken Sie auf die Links, um weitere Informationen zu diesen Bereichen zu lesen.
 
 <br>
 
@@ -164,7 +164,7 @@ Lesen Sie auch den Abschnitt **Verwandte Informationen** am Ende dieses Artikels
 > Das Microsoft 365 Defender-Portal ( <https://security.microsoft.com> ) kombiniert Sicherheitsfeatures in <https://securitycenter.windows.com> und <https://protection.office.com> . Was Sie darin sehen, hängt jedoch von Ihrem Abonnement ab. Wenn Sie z. B. nur über Microsoft Defender für Office 365 Plan 1 oder 2 als eigenständige Abonnements verfügen, werden Sie keine Funktionen für die Sicherheit von Endpunkten sehen, und Kunden mit Defender für Office Plan 1 werden Elemente wie "Bedrohungsanalyse" nicht angezeigt.
 
 > [!TIP]
-> Alle funktionen Exchange Online Protection (EOP) werden in Microsoft 365 Defender einbezogen, da EOP ein Kernelement von Defender für Office 365 ist.
+> Alle Funktionen Exchange Online Protection (EOP) werden in Microsoft 365 Defender einbezogen, da EOP ein Kernelement von Defender für Office 365 ist.
 
 ## <a name="microsoft-365-defender-home-page"></a>Microsoft 365 Defender Startseite
 

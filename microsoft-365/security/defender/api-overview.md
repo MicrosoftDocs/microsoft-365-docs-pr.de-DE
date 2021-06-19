@@ -1,7 +1,7 @@
 ---
 title: Übersicht über Microsoft 365 Defender-APIs
 description: Erfahren Sie mehr über die verfügbaren APIs in Microsoft 365 Defender
-keywords: api, apis, overview, incident, incidents, threat hunting, microsoft 365 defender
+keywords: API, APIs, Übersicht, Vorfall, Vorfälle, Bedrohungssuche, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: b19a6072be5f97b90c117f053ccae4593587c43d
-ms.sourcegitcommit: e8f5d88f0fe54620308d3bec05263568f9da2931
+ms.openlocfilehash: 1ddb6da49e5e9f23aacf73caaeb91302ac9c19c9
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52730894"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028967"
 ---
-# <a name="overview-of--microsoft-365-defender-apis"></a>Übersicht über Microsoft 365 Defender-APIs
+# <a name="overview-of-microsoft-365-defender-apis"></a>Übersicht über Microsoft 365 Defender-APIs
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -38,36 +38,36 @@ ms.locfileid: "52730894"
 > [!IMPORTANT]
 > Einige Informationen beziehen sich auf Vorabversionen von Produkten, die vor der kommerziellen Veröffentlichung noch erheblich geändert werden können. Microsoft übernimmt mit diesen Informationen keinerlei Gewährleistung, sei sie ausdrücklich oder konkludent.
 
-Microsoft 365 Defender baut auf einer integrationsbereiten Plattform auf.
+Microsoft 365 Defender basiert auf einer integrationsfähigen Plattform.
 
-Verwenden Sie die Microsoft 365 Defender-APIs, um Workflows basierend auf dem freigegebenen Vorfall und erweiterten Nachschlagetabellen zu automatisieren.
+Verwenden Sie die Microsoft 365 Defender-APIs, um Workflows basierend auf den freigegebenen Vorfall- und erweiterten Suchtabellen zu automatisieren.
 
-- **[Warteschlange für kombinierte](api-incident.md)** Vorfälle – Konzentrieren Sie sich auf das Wichtige, indem Sie den vollständigen Angriffsbereich und alle sich auswirkenden Ressourcen unter der Vorfall-API gruppieren.
+- **[Kombinierte Vorfallwarteschlange](api-incident.md)** – Konzentrieren Sie sich auf das, was wichtig ist, indem Sie den gesamten Angriffsbereich und alle betroffenen Ressourcen unter der Vorfall-API gruppieren.
 
-- **[Produktübergreifende](api-advanced-hunting.md)** Bedrohungssuche : Nutzen Sie das Organisationswissen Ihres Sicherheitsteams, um nach Anzeichen von Kompromissen zu fahnen, indem Sie Eigene benutzerdefinierte Abfragen erstellen, um Rohdaten zu siften, die in mehreren Schutzprodukten gesammelt wurden.
+- **[Produktübergreifende Bedrohungssuche](api-advanced-hunting.md)** – Nutzen Sie das Organisationswissen Ihres Sicherheitsteams, um nach Gefährdungszeichen zu suchen, indem Sie Eigene benutzerdefinierte Abfragen erstellen, um rohe Daten zu durchsuchen, die über mehrere Schutzprodukte gesammelt werden.
 
-Verwenden Sie [die Streaming-API,](../defender-endpoint/raw-data-export.md) um Echtzeitereignisse und Warnungen von Instanzen zu senden, die innerhalb eines einzelnen Datenstroms auftreten.
+Verwenden Sie die [Streaming-API,](../defender-endpoint/raw-data-export.md) um Echtzeitereignisse und Warnungen von Instanzen zu versenden, sobald sie innerhalb eines einzelnen Datenstroms auftreten.
 
 
-Zusammen mit diesen Microsoft 365 defender-spezifischen APIs stellen unsere anderen Sicherheitsprodukte zusätzliche [APIs](api-articles.md) bereit, damit Sie ihre einzigartigen Funktionen nutzen können.
+Zusammen mit diesen Microsoft 365 Defender-spezifischen APIs macht jedes unserer anderen Sicherheitsprodukte [zusätzliche APIs](api-articles.md) verfügbar, die Ihnen dabei helfen, ihre einzigartigen Funktionen zu nutzen.
 
 
 > [!NOTE]
-> Der Übergang zum einheitlichen Portal sollte sich nicht auf die PowerBi-Dashboards auswirken, die auf Microsoft Defender for Endpoint-APIs basieren. Sie können unabhängig vom interaktiven Portalübergang weiterhin mit den vorhandenen APIs arbeiten.
+> Der Übergang zum einheitlichen Portal sollte sich nicht auf die PowerBi-Dashboards auswirken, die auf Microsoft Defender für Endpunkt-APIs basieren. Sie können weiterhin mit den vorhandenen APIs arbeiten, unabhängig vom Übergang zum interaktiven Portal.
 
 
 ## <a name="learn-more"></a>Weitere Informationen
 
-| **Informationen zum Zugriff auf die APIs** |
+| **Grundlegendes zum Zugriff auf die APIs** |
 |-|
-| [Informationen zu API-Kontingenten und -Lizenzierung](api-terms.md) |
+| [Informationen zu API-Kontingenten und Lizenzierung](api-terms.md) |
 | [Zugreifen auf die Microsoft 365 Defender-APIs](api-access.md) |
 | **Erstellen von Apps** |
-| [Erstellen einer "Hello world"-App](api-hello-world.md) |
+| [Erstellen einer "Hello World"-App](api-hello-world.md) |
 | [Erstellen einer App für den Zugriff auf Microsoft 365 Defender-APIs im Namen eines Benutzers](api-create-app-user-context.md) |
-| [Erstellen einer App für den Zugriff Microsoft 365 Defender ohne Benutzer](api-create-app-web.md) |
-| [Erstellen einer App mit Mehr-Mandanten-Partnerzugriff auf Microsoft 365 Defender-APIs](api-partner-access.md) |
-| **Problembehandlung und Wartung Ihrer Apps** |
-| [Verstehen von API-Fehlercodes](api-error-codes.md) |
-| [Verwalten von Geheimschlüsseln in Ihren Apps mit Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/) |
-| [Implementieren der OAuth 2.0-Autorisierung für die Benutzer-Anmeldung](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |
+| [Erstellen einer App für den Zugriff auf Microsoft 365 Defender ohne Benutzer](api-create-app-web.md) |
+| [Erstellen einer App mit mehrinstanzenfähigem Partnerzugriff auf Microsoft 365 Defender APIs](api-partner-access.md) |
+| **Problembehandlung und Verwaltung Ihrer Apps** |
+| [Grundlegendes zu API-Fehlercodes](api-error-codes.md) |
+| [Verwalten geheimer Schlüssel in Ihren Apps mit Azure Key Vault](/learn/modules/manage-secrets-with-azure-key-vault/) |
+| [Implementieren der OAuth 2.0-Autorisierung für die Benutzeranmeldung](/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) |

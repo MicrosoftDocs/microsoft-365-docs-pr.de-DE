@@ -1,6 +1,6 @@
 ---
-title: Problembehandlung bei Microsoft 365 Defender-Dienstproblemen
-description: Suchen von Lösungen und Problemumgehungen für bekannte Microsoft 365 Defender-Probleme
+title: Problembehandlung bei Microsoft 365 Defender Dienstproblemen
+description: Suchen von Lösungen und Problemumgehungen für bekannte Microsoft 365 Defender Probleme
 keywords: Problembehandlung Microsoft 365 Defender, Problembehandlung, Microsoft Defender for Identity, Probleme, Add-On, Einstellungsseite
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 81da6c6ef46798ac656e7d5f0f374bf2c722583d
-ms.sourcegitcommit: 3b9fab82d63aea41d5f544938868c5d2cbf52d7a
+ms.openlocfilehash: 14033ffeb3d08efad7f45eb4c319ac0401b7df09
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52782741"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028470"
 ---
-# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Problembehandlung bei Microsoft 365 Defender-Dienstproblemen
+# <a name="troubleshoot-microsoft-365-defender-service-issues"></a>Problembehandlung bei Microsoft 365 Defender Dienstproblemen
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -35,9 +35,9 @@ ms.locfileid: "52782741"
 **Gilt für:**
 - Microsoft 365 Defender
 
-In diesem Abschnitt werden Probleme behandelt, die auftreten können, wenn Sie den Microsoft 365 Defender-Dienst verwenden.
+In diesem Abschnitt werden Probleme behandelt, die bei der Verwendung des Microsoft 365 Defender Diensts auftreten können.
 
-## <a name="i-dont-see-microsoft-365-defender-content"></a>Ich sehe keine Microsoft 365 Defender-Inhalte
+## <a name="i-dont-see-microsoft-365-defender-content"></a>Ich sehe keine Microsoft 365 Defender Inhalte
 
 Wenn im Navigationsbereich keine Funktionen wie Vorfälle, Info-Center oder Suche in Ihrem Portal angezeigt werden, müssen Sie überprüfen, ob Ihr Mandant über die entsprechenden Lizenzen verfügt.
 
@@ -45,7 +45,7 @@ Weitere Informationen finden Sie unter [Voraussetzungen](prerequisites.md).
 
 ## <a name="microsoft-defender-for-identity-alerts-are-not-showing-up-in-the-microsoft-365-defender-incidents"></a>Microsoft Defender for Identity-Warnungen werden in den Microsoft 365 Defender-Vorfällen nicht angezeigt.
 
-Wenn Sie Microsoft Defender for Identity in Ihrer Umgebung bereitgestellt haben, ihnen aber im Rahmen Microsoft 365 Defender-Vorfälle keine Defender for Identity-Warnungen angezeigt werden, müssen Sie sicherstellen, dass die Microsoft Cloud App Security- und Defender for Identity-Integration aktiviert ist.
+Wenn Sie Microsoft Defender for Identity in Ihrer Umgebung bereitgestellt haben, ihnen aber im Rahmen Microsoft 365 Defender Vorfällen keine Defender for Identity-Warnungen angezeigt werden, müssen Sie sicherstellen, dass die integration von Microsoft Cloud App Security und Defender for Identity aktiviert ist.
 
 Weitere Informationen finden Sie unter [Microsoft Defender for Identity-Integration.](/cloud-app-security/mdi-integration)
 

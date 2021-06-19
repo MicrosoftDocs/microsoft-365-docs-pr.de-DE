@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 1240fbb8fb24b7231733db25e9a1859b2a84fd41
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 4d793d49d669510b722a72160ae396ee73ab9699
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022742"
+ms.locfileid: "53028511"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Priorisieren von Vorfällen in Microsoft 365 Defender
 
@@ -98,7 +98,7 @@ Nachdem Sie einen nützlichen Filter in der Vorfallwarteschlange konfiguriert ha
 - Vorfälle mit einer bestimmten zugehörigen Bedrohung
 - Vorfälle mit einem bestimmten Akteur
 
-Nachdem Sie Ihre Liste nützlicher Filteransichten als URLs kompiliert und gespeichert haben, können Sie sie verwenden, um die Vorfälle in Ihrer Warteschlange schnell zu verarbeiten und zu priorisieren und sie für die nachfolgende Analyse [zu verwalten.](manage-incidents.md)
+Nachdem Sie Ihre Liste nützlicher Filteransichten als URLs kompiliert und gespeichert haben, können Sie sie verwenden, um die Vorfälle in Ihrer Warteschlange schnell zu verarbeiten und zu priorisieren und für die nachfolgende Zuweisung und Analyse [zu verwalten.](manage-incidents.md)
 
 ## <a name="next-steps"></a>Nächste Schritte
 

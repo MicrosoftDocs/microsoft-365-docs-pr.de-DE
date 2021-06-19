@@ -1,6 +1,6 @@
 ---
-title: Streamen Microsoft 365 Defender-Ereignisse auf Ihr Storage Konto
-description: Erfahren Sie, wie Sie Microsoft 365 Defender so konfigurieren, dass Advanced Hunting-Ereignisse in Ihr Storage-Konto gestreamt werden.
+title: Streamen Microsoft 365 Defender Ereignisse auf Ihr Storage Konto
+description: Erfahren Sie, wie Sie Microsoft 365 Defender konfigurieren, um Advanced Hunting-Ereignisse in Ihr Storage-Konto zu streamen.
 keywords: Rohdatenexport, Streaming-API, API, Event Hubs, Azure Storage, Speicherkonto, Erweiterte Suche, Freigabe von Rohdaten
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a4e706bbb2246bd0629db721373ffcd4164d123d
-ms.sourcegitcommit: 5d8de3e9ee5f52a3eb4206f690365bb108a3247b
+ms.openlocfilehash: fa61e2fd0591d375a17bad6e166a76c1ca40862e
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "52772505"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028895"
 ---
-# <a name="configure--microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Konfigurieren von Microsoft 365 Defender zum Streamen von Advanced Hunting-Ereignissen auf Ihr Storage Konto
+# <a name="configure-microsoft-365-defender-to-stream-advanced-hunting-events-to-your-storage-account"></a>Konfigurieren Microsoft 365 Defender zum Streamen von Advanced Hunting-Ereignissen auf Ihr Storage Konto
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -44,7 +44,7 @@ ms.locfileid: "52772505"
 
 1. Melden Sie sich bei [Microsoft 365 Defender Security Center](https://security.microsoft.com) als * globaler **Administrator** _ oder _*_Sicherheitsadministrator_**an.
 
-2. Wechseln Sie zur [Seite "Datenexporteinstellungen"](https://security.microsoft.com/settings/mtp_settings/raw_data_export) in Microsoft Defender Security Center.
+2. Wechseln Sie zur [Seite "Einstellungen für den Datenexport"](https://security.microsoft.com/settings/mtp_settings/raw_data_export) in Microsoft Defender Security Center.
 
 3. Klicken Sie auf **"Datenexporteinstellungen hinzufügen".**
 
@@ -52,7 +52,7 @@ ms.locfileid: "52772505"
 
 5. Wählen Sie **"Forward"-Ereignisse aus, um Azure Storage .**
 
-6. Geben Sie Ihre **Storage Kontoressourcen-ID** ein. Um Ihre **Storage Kontoressourcen-ID** abzurufen, wechseln Sie zur Storage Kontoseite im [Azure-Portal](https://ms.portal.azure.com/) > Registerkarte "Eigenschaften", > kopieren Sie den Text unter **Storage Kontoressourcen-ID:**
+6. Geben Sie Ihre **Storage Kontoressourcen-ID** ein. Um Ihre **Storage Kontoressourcen-ID** abzurufen, wechseln Sie zu Ihrer Storage Kontoseite im [Azure-Portal](https://ms.portal.azure.com/) > Registerkarte "Eigenschaften", > kopieren Sie den Text unter **Storage Kontoressourcen-ID:**
 
    ![Abbildung der Event Hub-Ressourcen-ID1](../defender-endpoint/images/storage-account-resource-id.png)
 
@@ -103,5 +103,5 @@ Gehen Sie folgendermaßen vor, um die Datentypen für unsere Ereigniseigenschaft
 ## <a name="related-topics"></a>Verwandte Themen
 - [Übersicht über die erweiterte Suche](../defender/advanced-hunting-overview.md)
 - [Microsoft 365 Defender Streaming-API](streaming-api.md)
-- [Streamen Microsoft 365 Defender-Ereignisse auf Ihr Azure-Speicherkonto](streaming-api-storage.md)
+- [Streamen Microsoft 365 Defender Ereignisse auf Ihr Azure-Speicherkonto](streaming-api-storage.md)
 - [Azure Storage Kontodokumentation](/azure/storage/common/storage-account-overview)
