@@ -19,12 +19,12 @@ ms.assetid: c2112ce8-1c4b-424f-b200-59e161db2d21
 description: 'Zusammenfassung: Informationen zum Erstellen von öffentlichen, privaten, vertraulichen und streng vertraulichen SharePoint Online-Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne.'
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ba0eb1e3ff0539f9aec6993fb25fe576f08f84d5
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: fcba6e2f3939115d6dfbaae80d322246bdeadee9
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028775"
+ms.locfileid: "53029897"
 ---
 # <a name="create-team-sites-in-a-political-campaign-devtest-environment"></a>Erstellen von Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne
 
@@ -34,8 +34,8 @@ ms.locfileid: "53028775"
 
 - [Microsoft Defender für Office 365 – Plan 2](defender-for-office-365.md)
 
- **Zusammenfassung:** Informationen zum Erstellen von öffentlichen, privaten, vertraulichen und streng vertraulichen SharePoint Online-Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne. 
-   
+ **Zusammenfassung:** Informationen zum Erstellen von öffentlichen, privaten, vertraulichen und streng vertraulichen SharePoint Online-Teamwebsites in einer Entwicklungs-/Testumgebung für eine politische Kampagne.
+
 Verwenden Sie die Schritte in diesem Artikel zum Erstellen einer Entwicklungs-/Testumgebung mit vier verschiedenen Typen von SharePoint Online-Teamwebsites für die Lösung [Microsoft-Sicherheitsanleitungen für politische Kampagnen, gemeinnützige Organisationen und andere agile Organisationen](microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-o.md). Diese Websites werden im Thema 10 **SharePoint und OneDrive for Business** detailliert erläutert.
 
 ## <a name="phase-1-create-your-political-campaign-devtest-environment"></a>Phase 1: Erstellen der Entwicklungs-/Testumgebung für eine politische Kampagne
@@ -46,43 +46,46 @@ Befolgen Sie zunächst die Anweisungen unter [Konfigurieren von Gruppen und Benu
 
 In dieser Phase erstellen Sie die Bezeichnungen für die verschiedenen Sicherheitsstufen für Dokumentordner für SharePoint Online-Teamwebsites.
 
-1. Falls erforderlich, melden Sie sich mit den Anmeldeinformationen des globalen Administratorkontos für Ihr Testabonnement im Admin Center an. Hilfe finden Sie unter [Wo kann ich mich bei Microsoft 365 anmelden](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
+1. Melden Sie sich bei Bedarf beim Microsoft 365 Admin Center (<https://admin.microsoft.com>) mit den Anmeldeinformationen des globalen Administratorkontos Ihres Testabonnements an. Hilfe finden Sie unter [Wo Sie sich bei Microsoft 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)anmelden können.
 
-2. Klicken Sie auf der Registerkarte **Microsoft Office Home** auf die Kachel **Admin**.
+2. Klicken Sie auf der **Startseite**, auf der Sie beginnen, auf **Alle anzeigen**. Klicken Sie im **Admin Center** angezeigten Abschnitt auf **Compliance**.
 
-3. Klicken Sie auf der neuen Registerkarte **Microsoft 365 Admin Center** im Browser auf **Admin Center > Security & Compliance**.
+3. Wechseln Sie im Microsoft 365 Compliance Center auf der **Startseite** zum **Lösungen** Abschnitt \> **Information Protection**. Um direkt zur Seite **Information Protection** zu wechseln, verwenden Sie <https://compliance.microsoft.com//informationprotection>.
 
-4. Klicken Sie in der neuen Registerkarte **Startseite – Security & Compliance** des Browsers auf **Klassifizierungen > Bezeichnungen**.
+4. Überprüfen Sie auf der Seite **Information Protection**, ob das **Bezeichnungs**-Tag ausgewählt ist, und klicken Sie dann auf das ![Symbol "Bezeichnung erstellen",](../../media/m365-cc-sc-create-icon.png) **Bezeichnung erstellen**.
 
-5. Klicken Sie im Bereich **Start > Bezeichnungen** auf **Bezeichnung erstellen**.
+5. Der Assistent **Neue Vertraulichkeitsbezeichnung** wird geöffnet. Geben Sie im Schritt **Name & Description** die folgenden Werte ein:
+   - **Name**: Geben Sie **interne** ein.
+   - **Anzeigename**
+   - **Beschreibung für Benutzer**
 
-6. Geben Sie im Bereich **Name für Bezeichnung****Intern** ein, und klicken Sie dann auf **Weiter**.
+   Wenn Sie fertig sind, klicken Sie auf **Weiter**.
 
-7. Klicken Sie im Bereich **Bezeichnungseinstellungen** auf **Weiter**.
+6. Klicken Sie im Bereich **Bezeichnungseinstellungen** auf **Weiter**.
 
-8. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Bezeichnung erstellen**, und klicken Sie dann auf **Schließen**.
+7. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Bezeichnung erstellen**, und klicken Sie dann auf **Schließen**.
 
-9. Wiederholen Sie die Schritte 5 bis 8 für diese zusätzlichen Bezeichnungen:
+8. Wiederholen Sie die Schritte 5 bis 8 für diese zusätzlichen Bezeichnungen:
 
    - Private
    - Vertraulich
    - Streng vertraulich
 
-10. Klicken Sie im Bereich **Startseite > Bezeichnungen** auf **Bezeichnungen veröffentlichen**.
+9. Klicken Sie im Bereich **Startseite > Bezeichnungen** auf **Bezeichnungen veröffentlichen**.
 
-11. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Zu veröffentlichende Bezeichnungen wählen**
+10. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Zu veröffentlichende Bezeichnungen wählen**
 
-12. Klicken Sie im Bereich **Choose labels** (Bezeichnungen auswählen) auf **Hinzufügen**, wählen Sie alle vier Bezeichnungen aus.
+11. Klicken Sie im Bereich **Choose labels** (Bezeichnungen auswählen) auf **Hinzufügen**, wählen Sie alle vier Bezeichnungen aus.
 
-13. Klicken Sie auf **Fertig**.
+12. Klicken Sie auf **Fertig**.
 
-14. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Weiter**.
+13. Klicken Sie im Bereich **Zu veröffentlichende Bezeichnungen wählen** auf **Weiter**.
 
-15. Klicken Sie im Bereich **Speicherorte auswählen** auf **Weiter**.
+14. Klicken Sie im Bereich **Speicherorte auswählen** auf **Weiter**.
 
-16. Geben Sie im Bereich **Richtlinie benennen****Kampagne** unter **Name** ein, und klicken Sie dann auf **Weiter**.
+15. Geben Sie im Bereich **Richtlinie benennen****Kampagne** unter **Name** ein, und klicken Sie dann auf **Weiter**.
 
-17. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Bezeichnungen veröffentlichen**, und klicken Sie dann auf **Schließen**.
+16. Klicken Sie im Bereich **Einstellungen überprüfen** auf **Bezeichnungen veröffentlichen**, und klicken Sie dann auf **Schließen**.
 
 ## <a name="phase-3-create-your-sharepoint-online-team-sites"></a>Phase 3: Erstellen von SharePoint Online-Teamwebsites
 
