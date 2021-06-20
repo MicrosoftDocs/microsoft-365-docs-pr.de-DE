@@ -13,18 +13,18 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Erfahren Sie, wie Sie eine Vertraulichkeitsbezeichnung auf ein Modell in SharePoint Syntex anwenden.
-ms.openlocfilehash: 799ab3fa0fcdc9af9d227428056d2cd7abeaf539
-ms.sourcegitcommit: a05f61a291eb4595fa9313757a3815b7f217681d
+ms.openlocfilehash: 2ddfd6ffe11e8e01e32b6e1b5ddf65763e4ae381
+ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52706701"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53022414"
 ---
 # <a name="apply-a-sensitivity-label-to-a-model-in-microsoft-sharepoint-syntex"></a>Anwenden einer Vertraulichkeitsbezeichnung auf ein Modell in Microsoft SharePoint Syntex
 
 Sie können auf einfache Weise eine [Vertraulichkeitsbezeichnung](../compliance/sensitivity-labels.md) auf Dokumentverständnismodelle in Microsoft SharePoint Syntex anwenden. Dieses Feature ist in Formularverarbeitungsmodellen noch nicht verfügbar.
 
-Mit Vertraulichkeitsbezeichnungen können Sie Richtlinien für Verschlüsselung, Freigabe und bedingten Zugriff auf Dokumente anwenden, die Ihr Modell identifiziert. Sie möchten zum Beispiel, dass Ihr Modell nicht nur alle Finanzdokumente identifiziert, die Bankkontonummern oder Kreditkartennummern enthalten, die in Ihre Dokumentbibliothek hochgeladen werden, sondern auch eine Vertraulichkeitsbezeichnung für die *Verschlüsselung* auf diese Dokumente anwendet, um einzuschränken, wer auf diese Inhalte zugreifen kann und wie sie verwendet werden können.
+Mit Vertraulichkeitsbezeichnungen können Sie Richtlinien für Verschlüsselung, Freigabe und bedingten Zugriff auf Dokumente anwenden, die Ihr Modell identifiziert. Sie möchten zum Beispiel, dass Ihr Modell nicht nur alle Finanzdokumente identifiziert, die Bankkontonummern oder Kreditkartennummern enthalten, die in Ihre Dokumentbibliothek hochgeladen werden, sondern auch eine Vertraulichkeitsbezeichnung für die *Verschlüsselung* auf diese Dokumente anwendet, um einzuschränken, wer auf diese Inhalte zugreifen kann und wie sie verwendet werden können. Syntex-Modelle berücksichtigen die Regeln für die [Bezeichnungsreihenfolge](../compliance/apply-sensitivity-label-automatically.md?view=o365-worldwide#how-multiple-conditions-are-evaluated-when-they-apply-to-more-than-one-label) und überschreiben auch keine vorhandene Bezeichnung, die von einem Benutzer manuell auf die Datei angewendet wurde. 
 
 Über die Modelleinstellungen auf der Startseite Ihres Modells können Sie eine bereits vorhandene Vertraulichkeitsbezeichnung auf Ihr Modell anwenden. Die Bezeichnung muss bereits veröffentlicht sein, um für die Auswahl in „Modelleinstellungen“ verfügbar zu sein.
 
