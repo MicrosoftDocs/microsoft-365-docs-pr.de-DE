@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: a49fb83f9186541094910ec8842a09b5121ffb5b
-ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
+ms.openlocfilehash: d7625c5a577ff01544a2602092c4ee34875efdb6
+ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
 ms.translationtype: HT
 ms.contentlocale: de-DE
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51934393"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53028499"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Bestnote in Branchentests
 
@@ -43,7 +43,7 @@ Der Kern des MITRE-Testansatzes besteht darin, praxisbezogene Angriffe nachzuahm
 
 - ATT&CK-basierte Bewertung von Microsoft 365 Defender – Mai 2020: [Führend bei der Erkennung in der realen Welt](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
-    Microsoft 365 Defender bot eine nahezu 100-prozentige Abdeckung über die Stufen der Angriffskette hinweg. Es lieferte eine vorkonfigurierte Sichtbarkeit über die Aktivitäten von Angreifern. Die Sichtbarkeit hat die manuelle Arbeit für das Security Operations Center und für Anbieterlösungen, die auf bestimmten Konfigurationsänderungen beruhten, erheblich reduziert. Microsoft 365 Defender wies auch die wenigsten Lücken in der Sichtbarkeit auf, was die Möglichkeiten von Angreifern verringerte, unentdeckt zu bleiben.
+ Microsoft 365 Defender bot eine nahezu 100-prozentige Abdeckung über die Stufen der Angriffskette hinweg. Es lieferte eine vorkonfigurierte Sichtbarkeit über die Aktivitäten von Angreifern. Die Sichtbarkeit hat die manuelle Arbeit für das Security Operations Center und für Anbieterlösungen, die auf bestimmten Konfigurationsänderungen beruhten, erheblich reduziert. Microsoft 365 Defender wies auch die wenigsten Lücken in der Sichtbarkeit auf, was die Möglichkeiten von Angreifern verringerte, unentdeckt zu bleiben.
 
 ## <a name="next-generation-protection"></a>Schutz der nächsten Generation
 
@@ -57,7 +57,7 @@ Die AV-TEST-Überprüfung „Produktüberprüfung und Zertifizierungsbericht“ 
 
 - November – Dezember 2020 AV-TEST Geschäftsbenutzertest: [Schutzbewertung 6,0/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/december-2020/microsoft-defender-antivirus-4.18-205017/) <sup>**Neuste**</sup>
 
-    Microsoft Defender Antivirus hat eine perfekte Schutzbewertung von 6,0/6,0 erzielt, mit 100 % im November und Dezember. 11 382 Schadsoftwarebeispiele wurden verwendet.
+    Microsoft Defender Antivirus hat eine perfekte Schutzbewertung von 6,0/6,0 erzielt, mit 100 % im November und Dezember. 11 382 Schadsoftwarebeispiele wurden verwendet.
 
 - September – Oktober 2020 AV-TEST Geschäftsbenutzertest: [Schutzbewertung 6,0/6,0](https://www.av-test.org/en/antivirus/business-windows-client/windows-10/october-2020/microsoft-defender-antivirus-4.18-204116/)
 
@@ -89,7 +89,7 @@ SE Labs testet eine Reihe von Lösungen, die von Produkten und Diensten zur Erke
 
 - Endpunktschutz für Unternehmen Oktober – Dezember 2020: [AAA-Auszeichnung](https://selabs.uk/reports/enterprise-endpoint-protection-2020-q4/) <sup>**Neueste**</sup>
 
-    Das Microsoft-Schutzprodukt der nächsten Generation hat alle öffentlichen und gezielten Angriffe gestoppt. Microsoft Defender Antivirus erzielte diese guten Ergebnisse mit seiner Fähigkeit, bösartige URLs zu blockieren, Exploits zu behandeln und legitime Anwendungen und Websites korrekt zu klassifizieren.
+    Das Schutzprodukt der nächsten Generation von Microsoft hat alle öffentlichen und gezielten Angriffe gestoppt. Microsoft Defender Antivirus erzielte diese guten Ergebnisse mit seiner Fähigkeit, bösartige URLs zu blockieren, Exploits zu behandeln und legitime Anwendungen und Websites korrekt zu klassifizieren.
 
 - Endpunktschutz für Unternehmen Juli – September 2020: [AAA-Auszeichnung](https://selabs.uk/reports/epp-enterprise-20q3-security-testing/)
 
