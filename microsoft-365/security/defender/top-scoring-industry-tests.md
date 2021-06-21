@@ -15,12 +15,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: d7625c5a577ff01544a2602092c4ee34875efdb6
-ms.sourcegitcommit: d904f04958a13a514ce10219ed822b9e4f74ca2d
+ms.openlocfilehash: 4d49772eb3932ae98840d2be94c447183e94fade
+ms.sourcegitcommit: c70067b4ef9c6f8f04aca68c35bb5141857c4e4b
 ms.translationtype: HT
 ms.contentlocale: de-DE
 ms.lasthandoff: 06/19/2021
-ms.locfileid: "53028499"
+ms.locfileid: "53029621"
 ---
 # <a name="top-scoring-in-industry-tests"></a>Bestnote in Branchentests
 
@@ -39,7 +39,7 @@ Microsoft 365 Defender fasst die Funktionalitäten von [Microsoft Defender für 
 
 ### <a name="mitre-demonstrated-real-world-detection-response-and-protection-from-advanced-attacks"></a>MITRE: Das Produkt demonstrierte praxisbezogene Erkennung, Reaktion und Schutz vor fortgeschrittenen Angriffen
 
-Der Kern des MITRE-Testansatzes besteht darin, praxisbezogene Angriffe nachzuahmen, um zu verstehen, ob Lösungen sie angemessen erkennen und darauf reagieren können. Während sich der Test auf die Endpunkterkennung und -Reaktion konzentrierte, erstreckt sich der simulierte APT29-Angriff von MITRE über mehrere Angriffsdomänen und schafft Möglichkeiten, Verteidiger über den reinen Endpunktschutz hinaus zu befähigen. Mit Microsoft 365 Defender hat Microsoft das Sichtfeld eines Verteidigers über den Endpunkt hinaus erweitert.
+Der Kern des MITRE-Testansatzes besteht darin, praxisbezogene Angriffe nachzuahmen, um zu verstehen, ob Lösungen sie angemessen erkennen und darauf reagieren können. Während sich der Test auf Endpunkterkennung und Reaktion konzentrierte, erstreckt sich der simulierte APT29-Angriff von MITRE über mehrere Angriffsdomänen und schafft Möglichkeiten, Verteidiger über den reinen Endpunktschutz hinaus zu befähigen. Mit Microsoft 365 Defender hat Microsoft das Sichtfeld eines Verteidigers über den Endpunkt hinaus erweitert.
 
 - ATT&CK-basierte Bewertung von Microsoft 365 Defender – Mai 2020: [Führend bei der Erkennung in der realen Welt](https://www.microsoft.com/security/blog/2020/05/01/microsoft-threat-protection-leads-real-world-detection-mitre-attck-evaluation/)
 
@@ -79,7 +79,7 @@ Der Unternehmenssicherheitstest besteht aus drei Hauptteilen: dem praxisbezogene
 
 - Unternehmenssicherheitstest 2020 (März – Juni): [Praxisbezogene Schutzbewertung 99,7 %](https://www.av-comparatives.org/tests/business-security-test-2020-march-june/)
 
-- Unternehmenssicherheitstest 2019 (August – November): [Praxisbezogene Schutzbewertung 99,6 %](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/) 
+- Unternehmenssicherheitstest 2019 (August – November): [Praxisbezogene Schutzbewertung 99,6 %](https://www.av-comparatives.org/tests/business-security-test-2019-august-november/)
 
 - Unternehmenssicherheitstest 2019 (März – Juni): [Praxisbezogene Schutzbewertung 99,9 %](https://www.av-comparatives.org/tests/business-security-test-2019-march-june/) | [Analyse](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE3Esbl)
 
