@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 639f850119498222684c4b3804b32a29dda3eac4
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 6a0bc142d8fa353e7e5910b0a5eba4842cd7ff50
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022882"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053167"
 ---
 # <a name="export-software-inventory-assessment-per-device"></a>Exportieren der Softwareinventarisierungsbewertung pro Gerät
 
@@ -45,7 +45,7 @@ Es gibt verschiedene API-Aufrufe, um unterschiedliche Arten von Daten abzurufen.
 
   - Laden Sie alle Dateien mithilfe der Download-URLs herunter, und verarbeiten Sie die Daten nach Bedarf.
 
-Daten, die gesammelt werden (entweder mit _OData_ oder _über Dateien),_ sind die aktuelle Momentaufnahme des aktuellen Zustands und enthalten keine historischen Daten. Um historische Daten zu sammeln, müssen Kunden die Daten in ihren eigenen Datenspeichern speichern.
+Daten, die gesammelt werden (mithilfe der _JSON-Antwort_ oder _über Dateien),_ sind die aktuelle Momentaufnahme des aktuellen Zustands und enthalten keine historischen Daten. Um historische Daten zu sammeln, müssen Kunden die Daten in ihren eigenen Datenspeichern speichern.
 
 > [!Note]
 >

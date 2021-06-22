@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 6243da415c5cc509be33eabffd12516367164bff
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 87fb5c62b520168a686cc0b95a321becdd4656ba
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022870"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53052963"
 ---
 # <a name="export-software-vulnerabilities-assessment-per-device"></a>Exportieren der Bewertung von Software-Sicherheitsrisiken pro Gerät
 
@@ -48,9 +48,9 @@ Es gibt verschiedene API-Aufrufe, um unterschiedliche Arten von Daten abzurufen.
    - Laden Sie alle Dateien mithilfe der Download-URLs herunter, und verarbeiten Sie die Daten nach Bedarf.
 
 3. [ **JSON-Antwort zur** Bewertung von Software-Sicherheitsrisiken im Delta-Export](#3-delta-export-software-vulnerabilities-assessment-json-response)  Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination von: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId und EventTimestamp zurück.
-Die API ruft Daten in Ihrer Organisation als JSON-Antworten ab. Die Antwort ist paginiert, sodass Sie das Feld @odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen. <br><br> Im Gegensatz zur vollständigen "Bewertung von Software-Sicherheitsrisiken (JSON-Antwort)" – die verwendet wird, um eine vollständige Momentaufnahme der Bewertung der Software-Sicherheitsrisiken Ihrer Organisation nach Gerät zu erhalten – wird der Delta-Export-OData-API-Aufruf verwendet, um nur die Änderungen abzurufen, die zwischen einem ausgewählten Datum und dem aktuellen Datum (dem "Delta"-API-Aufruf) aufgetreten sind. Anstatt jedes Mal einen vollständigen Export mit einer großen Datenmenge zu erhalten, erhalten Sie nur spezifische Informationen zu neuen, festen und aktualisierten Sicherheitsrisiken. Der JSON-Antwort-API-Aufruf des Deltaexports kann auch verwendet werden, um verschiedene KPIs zu berechnen, z. B. "wie viele Sicherheitsrisiken wurden behoben?" oder "wie viele neue Sicherheitsrisiken wurden zu meiner Organisation hinzugefügt?" <br><br> Da der JSON-Antwort-API-Aufruf des Delta-Exports für Softwarerisiken nur Daten für einen zielgerichteten Datumsbereich zurückgibt, wird er nicht als _vollständiger Export_ betrachtet.
+Die API ruft Daten in Ihrer Organisation als JSON-Antworten ab. Die Antwort ist paginiert, sodass Sie das Feld @odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen. <br><br> Im Gegensatz zur vollständigen "Bewertung von Software-Sicherheitsrisiken (JSON-Antwort)" – die verwendet wird, um eine vollständige Momentaufnahme der Bewertung der Software-Sicherheitsrisiken Ihrer Organisation nach Gerät zu erhalten – wird der Delta-Export-API-Aufruf verwendet, um nur die Änderungen abzurufen, die zwischen einem ausgewählten Datum und dem aktuellen Datum (dem "Delta"-API-Aufruf) aufgetreten sind. Anstatt jedes Mal einen vollständigen Export mit einer großen Datenmenge zu erhalten, erhalten Sie nur spezifische Informationen zu neuen, festen und aktualisierten Sicherheitsrisiken. Der JSON-Antwort-API-Aufruf des Deltaexports kann auch verwendet werden, um verschiedene KPIs zu berechnen, z. B. "wie viele Sicherheitsrisiken wurden behoben?" oder "wie viele neue Sicherheitsrisiken wurden zu meiner Organisation hinzugefügt?" <br><br> Da der JSON-Antwort-API-Aufruf des Delta-Exports für Softwarerisiken nur Daten für einen zielgerichteten Datumsbereich zurückgibt, wird er nicht als _vollständiger Export_ betrachtet.
 
-Daten, die gesammelt werden (entweder mit _OData_ oder _über Dateien),_ sind die aktuelle Momentaufnahme des aktuellen Zustands und enthalten keine historischen Daten. Um historische Daten zu sammeln, müssen Kunden die Daten in ihren eigenen Datenspeichern speichern.
+Daten, die gesammelt werden (mithilfe der _JSON-Antwort_ oder _über Dateien),_ sind die aktuelle Momentaufnahme des aktuellen Zustands und enthalten keine historischen Daten. Um historische Daten zu sammeln, müssen Kunden die Daten in ihren eigenen Datenspeichern speichern.
 
 > [!Note]
 >
@@ -377,7 +377,7 @@ GET /api/machines/SoftwareVulnerabilityChangesByMachine
 
 ### <a name="35-properties"></a>3.5-Eigenschaften
 
-Jeder zurückgegebene Datensatz enthält alle Daten aus der Bewertung der Vollständigexportsoftware-Sicherheitsrisiken nach Der OData-API des Geräts sowie zwei zusätzliche Felder: _**EventTimestamp**_ und _**Status.**_
+Jeder zurückgegebene Datensatz enthält alle Daten aus der Bewertung von Software-Sicherheitsrisiken beim vollständigen Export nach Geräte-API sowie zwei zusätzliche Felder: _**EventTimestamp**_ und _**Status.**_
 
 >[!NOTE]
 >- Einige zusätzliche Spalten werden möglicherweise in der Antwort zurückgegeben. Diese Spalten sind temporär und können entfernt werden. Verwenden Sie daher nur die dokumentierten Spalten.
@@ -392,7 +392,7 @@ CvssScore | Zeichenfolge | Die CVSS-Bewertung des CVE. | 6.2 
 Deviceid | Zeichenfolge | Eindeutiger Bezeichner für das Gerät im Dienst. | 9eaf3a8b5962e0e6b1af9ec756664a9b823df2d1  
 DeviceName | Zeichenfolge | Vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des Geräts. | johnlaptop.europe.contoso.com  
 DiskPaths | Array[string] | Datenträgernachweis, dass das Produkt auf dem Gerät installiert ist. | [ "C:\Programme (x86)\Microsoft\Silverlight\Application\silverlight.exe" ]  
-EventTimestamp | Zeichenfolge | Die Zeit, zu der dieses Delta-Ereignis gefunden wurde. | 2021-01-11T11:06:08.291Z
+EventTimestamp | String | Die Zeit, zu der dieses Delta-Ereignis gefunden wurde. | 2021-01-11T11:06:08.291Z
 ExploitabilityLevel | Zeichenfolge | Die Ausnutzbarkeitsstufe dieser Sicherheitsanfälligkeit (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit) | ExploitIsInKit  
 FirstSeenTimestamp | Zeichenfolge | Die CVE dieses Produkts wurde zum ersten Mal auf dem Gerät angezeigt. | 2020-11-03 10:13:34.8476880  
 Id | string | Eindeutiger Bezeichner für den Datensatz. | 123ABG55_573AG&mnp!  
@@ -406,7 +406,7 @@ RegistryPaths  | Array[string] | Registrierungsnachweis, dass das Produkt auf 
 SoftwareName | Zeichenfolge | Name des Softwareprodukts. | Chrome  
 SoftwareVendor | Zeichenfolge | Name des Softwareanbieters. | Google  
 SoftwareVersion | Zeichenfolge | Versionsnummer des Softwareprodukts. | 81.0.4044.138  
-Status | Zeichenfolge | **Neu**   (für eine neue Sicherheitslücke, die auf einem Gerät eingeführt wurde)  (1) **Behoben**   (wenn diese Sicherheitslücke nicht mehr auf dem Gerät vorhanden ist, was bedeutet, dass sie behoben wurde). (2)  **Aktualisiert**   (Wenn sich eine Sicherheitslücke auf einem Gerät geändert hat. Die möglichen Änderungen sind: CVSS-Bewertung, Ausnutzbarkeitsgrad, Schweregrad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). | Fest
+Status | String | **Neu**   (für eine neue Sicherheitslücke, die auf einem Gerät eingeführt wurde)  (1) **Behoben**   (wenn diese Sicherheitslücke nicht mehr auf dem Gerät vorhanden ist, was bedeutet, dass sie behoben wurde). (2)  **Aktualisiert**   (Wenn sich eine Sicherheitslücke auf einem Gerät geändert hat. Die möglichen Änderungen sind: CVSS-Bewertung, Ausnutzbarkeitsgrad, Schweregrad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate). | Fest
 VulnerabilitySeverityLevel | Zeichenfolge | Schweregrad, der dem Sicherheitsrisiko zugewiesen ist, basierend auf der CVSS-Bewertung und dynamischen Faktoren, die von der Bedrohungslandschaft beeinflusst werden. | Mittel  
 
 #### <a name="clarifications"></a>Klarstellungen

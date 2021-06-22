@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
 ms.custom: api
-ms.openlocfilehash: 3e5a91a33a4207daa30f1054f03655c846d297ec
-ms.sourcegitcommit: bc64d9f619259bd0a94e43a9010aae5cffb4d6c4
+ms.openlocfilehash: 12a77441f283ed693eae31fff36a7197ff6f0506
+ms.sourcegitcommit: 4d26a57c37ff7efbb8d235452c78498b06a59714
 ms.translationtype: MT
 ms.contentlocale: de-DE
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53022438"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53053239"
 ---
 # <a name="export-assessment-methods-and-properties-per-device"></a>Exportieren von Bewertungsmethoden und Eigenschaften pro Gerät
 
@@ -148,7 +148,7 @@ Methode | Datentyp | Beschreibung
 :---|:---|:---
 Bewertung von Software-Sicherheitsrisiken **exportieren (JSON-Antwort)** | Untersuchungssammlung Siehe: [3.2 Eigenschaften (JSON-Antwort)](#32-properties-json-response) | Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination aus DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId zurück. Die API ruft alle Daten in Ihrer Organisation als JSON-Antworten ab. Diese Methode eignet sich am besten für kleine Organisationen mit weniger als 100-K-Geräten. Die Antwort ist paginiert, sodass Sie das Feld @odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen.
 Bewertung von Software-Sicherheitsrisiken **exportieren (über Dateien)** | Untersuchungsentität Siehe: [3.3 Eigenschaften (über Dateien)](#33-properties-via-files) | Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination aus DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId zurück. Diese API-Lösung ermöglicht das schnellere und zuverlässigere Abrufen größerer Datenmengen. Daher wird es für große Organisationen mit mehr als 100-K-Geräten empfohlen. Diese API ruft alle Daten in Ihrer Organisation als Downloaddateien ab. Die Antwort enthält URLs zum Herunterladen aller Daten aus Azure Storage. Mit dieser API können Sie alle Ihre Daten aus Azure Storage wie folgt herunterladen: 1.  Rufen Sie die API auf, um eine Liste der Download-URLs mit allen Organisationsdaten abzurufen. 2.  Laden Sie alle Dateien mithilfe der Download-URLs herunter, und verarbeiten Sie die Daten nach Bedarf.
-Bewertung von Software-Sicherheitsrisiken im **Delta-Export** **(JSON-Antwort)** | Untersuchungssammlung Siehe: [3.4 Properties Delta export (JSON response)](#34-properties-delta-export-json-response) | Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination von: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId und EventTimestamp zurück. <br><br> Die API ruft Daten in Ihrer Organisation als JSON-Antworten ab. Die Antwort ist paginiert, sodass Sie das Feld @odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen. Im Gegensatz zur vollständigen Bewertung von Software-Sicherheitsrisiken (JSON-Antwort), die verwendet wird, um eine vollständige Momentaufnahme der Bewertung der Software-Sicherheitsrisiken Ihrer Organisation nach Gerät zu erhalten, wird der Deltaexport-OData-API-Aufruf verwendet, um nur die Änderungen abzurufen, die zwischen einem ausgewählten Datum und dem aktuellen Datum (dem "Delta"-API-Aufruf) aufgetreten sind. Anstatt jedes Mal einen vollständigen Export mit einer großen Datenmenge zu erhalten, erhalten Sie nur spezifische Informationen zu neuen, festen und aktualisierten Sicherheitsrisiken. Der Delta-Export-OData-API-Aufruf kann auch verwendet werden, um verschiedene KPIs zu berechnen, z. B. "wie viele Sicherheitsrisiken wurden behoben?" oder "wie viele neue Sicherheitsrisiken wurden zu meiner Organisation hinzugefügt?"  <br><br> Da der Delta-Export-OData-API-Aufruf für Softwarerisiken nur Daten für einen Zieldatumsbereich zurückgibt, wird er nicht als _vollständiger Export_ betrachtet.
+Bewertung von Software-Sicherheitsrisiken im **Delta-Export** **(JSON-Antwort)** | Untersuchungssammlung Siehe: [3.4 Properties Delta export (JSON response)](#34-properties-delta-export-json-response) | Gibt eine Tabelle mit einem Eintrag für jede eindeutige Kombination von: DeviceId, SoftwareVendor, SoftwareName, SoftwareVersion, CveId und EventTimestamp zurück. <br><br> Die API ruft Daten in Ihrer Organisation als JSON-Antworten ab. Die Antwort ist paginiert, sodass Sie das Feld @odata.nextLink aus der Antwort verwenden können, um die nächsten Ergebnisse abzurufen. Im Gegensatz zur vollständigen Bewertung von Software-Sicherheitsrisiken (JSON-Antwort), die verwendet wird, um eine vollständige Momentaufnahme der Bewertung der Software-Sicherheitsrisiken Ihrer Organisation nach Gerät zu erhalten, wird der Delta-Export-API-Aufruf verwendet, um nur die Änderungen abzurufen, die zwischen einem ausgewählten Datum und dem aktuellen Datum (dem "Delta"-API-Aufruf) aufgetreten sind. Anstatt jedes Mal einen vollständigen Export mit einer großen Datenmenge zu erhalten, erhalten Sie nur spezifische Informationen zu neuen, festen und aktualisierten Sicherheitsrisiken. Der Delta-Export-API-Aufruf kann auch verwendet werden, um verschiedene KPIs zu berechnen, z. B. "wie viele Sicherheitsrisiken wurden behoben?" oder "wie viele neue Sicherheitsrisiken wurden zu meiner Organisation hinzugefügt?"  <br><br> Da der Delta-Export-API-Aufruf für Software-Sicherheitsrisiken nur Daten für einen zielgerichteten Datumsbereich zurückgibt, wird er nicht als _vollständiger Export_ betrachtet.
 
 ### <a name="32-properties-json-response"></a>3.2 Eigenschaften (JSON-Antwort)
 
@@ -190,7 +190,7 @@ CvssScore | Zeichenfolge | Die CVSS-Bewertung des CVE.
 Deviceid | Zeichenfolge | Eindeutiger Bezeichner für das Gerät im Dienst.
 DeviceName | Zeichenfolge | Vollqualifizierte Domänenname (Fully Qualified Domain Name, FQDN) des Geräts.
 DiskPaths | Array[string] | Datenträgernachweis, dass das Produkt auf dem Gerät installiert ist.
-EventTimestamp | Zeichenfolge | Die Zeit, zu der dieses Delta-Ereignis gefunden wurde.
+EventTimestamp | String | Die Zeit, zu der dieses Delta-Ereignis gefunden wurde.
 ExploitabilityLevel | Zeichenfolge | Die Ausnutzbarkeitsstufe dieser Sicherheitsanfälligkeit (NoExploit, ExploitIsPublic, ExploitIsVerified, ExploitIsInKit)
 FirstSeenTimestamp | Zeichenfolge | Die CVE dieses Produkts wurde zum ersten Mal auf dem Gerät angezeigt.
 Id | string | Eindeutiger Bezeichner für den Datensatz.  
@@ -204,7 +204,7 @@ RegistryPaths  | Array[string] | Registrierungsnachweis, dass das Produkt auf 
 SoftwareName | Zeichenfolge | Name des Softwareprodukts.
 SoftwareVendor | Zeichenfolge | Name des Softwareanbieters.
 SoftwareVersion | Zeichenfolge | Versionsnummer des Softwareprodukts.
-Status | Zeichenfolge | **Neu**   (für eine neue Sicherheitslücke, die auf einem Gerät eingeführt wurde).  **Behoben**   (für eine Sicherheitslücke, die auf dem Gerät nicht mehr vorhanden ist, was bedeutet, dass sie behoben wurde). **Aktualisiert**   (für eine Sicherheitslücke auf einem Gerät, das sich geändert hat. Die möglichen Änderungen sind: CVSS-Bewertung, Ausnutzbarkeitsgrad, Schweregrad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
+Status | String | **Neu**   (für eine neue Sicherheitslücke, die auf einem Gerät eingeführt wurde).  **Behoben**   (für eine Sicherheitslücke, die auf dem Gerät nicht mehr vorhanden ist, was bedeutet, dass sie behoben wurde). **Aktualisiert**   (für eine Sicherheitslücke auf einem Gerät, das sich geändert hat. Die möglichen Änderungen sind: CVSS-Bewertung, Ausnutzbarkeitsgrad, Schweregrad, DiskPaths, RegistryPaths, RecommendedSecurityUpdate).
 VulnerabilitySeverityLevel | Zeichenfolge | Schweregrad, der dem Sicherheitsrisiko zugewiesen ist, basierend auf der CVSS-Bewertung und dynamischen Faktoren, die von der Bedrohungslandschaft beeinflusst werden.
 
 ## <a name="see-also"></a>Siehe auch
